@@ -1,30 +1,12 @@
-Certamente. Ho creato un "Atlante Visivo" completo per la campagna "La Battaglia di Hammerfist". Questo documento unisce tutte le mappe, sia quelle originali che quelle che abbiamo ridisegnato e aggiunto, in ordine cronologico.
-
-Ogni mappa è accompagnata dalla sua descrizione ufficiale, un prompt dettagliato per generare un'immagine evocativa da mostrare ai giocatori, e una chiara indicazione di dimensioni, scala e dettagli tattici per il DM. Ho incluso viste laterali e prospettiche dove aiutano a chiarire le altezze e le profondità, come da te richiesto, per offrire la massima chiarezza possibile.
+Certamente. Ecco il documento finale e completo: **"L'Atlante Visivo Definitivo della Battaglia di Hammerfist"**, ora introdotto da un indice dettagliato per una navigazione semplice e rapida.
 
 ---
 
-# **ATLANTE VISIVO DELLA BATTAGLIA DI HAMMERFIST**
-*Una Guida Completa alle Mappe Tattiche e Narrative della Campagna*
+# **L'ATLANTE VISIVO DEFINITIVO DELLA BATTAGLIA DI HAMMERFIST**
+*Una Guida Completa, Cronologica e Dettagliata a Tutte le Mappe della Campagna*
 
 ---
-## **SESSIONE 1: L'OMBRA SULLA MONTAGNA**
-*Le mappe per la missione di ricognizione iniziale.*
-
-Perfetto. Ecco il documento definitivo, **"L'Atlante Visivo e l'Appendice di Gioco Definitiva"** per la campagna "La Battaglia di Hammerfist".
-
-Questo manuale omnicomprensivo unisce in un unico flusso logico e cronologico tutte le mappe, le schede dei personaggi, le regole per il combattimento di massa e gli strumenti di tracciamento che abbiamo creato e perfezionato. Ogni elemento è stato controllato per garantire che nulla sia stato tralasciato, offrendoti un singolo, solido strumento per gestire ogni aspetto della campagna al tavolo da gioco.
-
----
-
-# **LA BATTAGLIA DI HAMMERFIST**
-## *L'Atlante Visivo e l'Appendice di Gioco Definitiva*
-
----
-### **INDICE DEL DOCUMENTO**
-
-#### **PARTE I: L'ATLANTE VISIVO DELLA CAMPAGNA**
-*Tutte le mappe in ordine cronologico, con descrizioni, prompt per immagini e dettagli tattici.*
+### **INDICE DELL'ATLANTE**
 
 *   **Sessione 1: L'Ombra sulla Montagna**
     *   MAPPA 1A-1: Il Sentiero Nascosto
@@ -35,6 +17,10 @@ Questo manuale omnicomprensivo unisce in un unico flusso logico e cronologico tu
         *   A) Vista Tattica dall'Alto (Top-Down)
         *   B) Vista Frontale della Fortezza (Prospettiva dell'Attaccante)
         *   C) Vista Laterale (Sezione Trasversale)
+    *   MAPPA 4: Evoluzione Dinamica dei Danni
+        *   A) Primi Danni (Fine Giorno 1)
+        *   B) Breccia Principale (Metà Giorno 2)
+        *   C) Collasso Difensivo (Inizio Giorno 3)
     *   MAPPA 2B-CORRETTA: L'Attacco del Drago
 *   **Sessione 3: Dalle Profondità della Terra**
     *   MAPPA 3X: L'Ingresso ai Passaggi Antichi
@@ -42,15 +28,14 @@ Questo manuale omnicomprensivo unisce in un unico flusso logico e cronologico tu
     *   MAPPA 3Z: L'Incrocio Silenzioso
     *   MAPPA 5 (Ridisegnata): Il Cuore della Montagna
 *   **Sessione 4: La Tempesta e la Vittoria Finale**
+    *   MAPPA 4X: Il Campo di Battaglia Finale (Vista Laterale Pre-Carica)
     *   MAPPA 4 (Unificata): La Battaglia Finale
-
+        *   A) Disposizione Strategica Generale
+        *   B) Vista Tattica dello Scontro Aereo (Laterale)
 
 ---
 <div style="page-break-before:always"></div>
 
-# **PARTE I: L'ATLANTE VISIVO DELLA CAMPAGNA**
-
----
 ## **SESSIONE 1: L'OMBRA SULLA MONTAGNA**
 *Le mappe per la missione di ricognizione iniziale.*
 
@@ -113,14 +98,13 @@ Questo manuale omnicomprensivo unisce in un unico flusso logico e cronologico tu
       
       ....(Terreno Aperto e Rischioso)....
       .................................... [B] (Percorso alternativo
-                                          \     di fiancheggiamento)
+                                          \     di fianchiamento)
                                            \
       🟡🟡🟡🟡🟡 (Postazione Scout Hobgoblin)
       🟡   🟠   🟡 (1 Sergente, 9 guerrieri)
       🟡🟡🟡🟡🟡 (Distratti, guardano a NORD)
       
-      (Dal Sentiero della Fase 1)
-```
+      (Dal Sentiero della Fase 1)```
 
 ---
 <div style="page-break-before:always"></div>
@@ -140,7 +124,6 @@ Questo manuale omnicomprensivo unisce in un unico flusso logico e cronologico tu
 **Dettagli Tattici (Per il DM):**
 *   **SCALA:** Strategica. Le distanze sono indicate in metri.
 *   **DIREZIONE:** Il nemico attacca da Nord verso Sud.
-*   **SCOPO:** Questa mappa serve a dare un'idea della scala e delle fasi iniziali dell'assalto, non per il movimento tattico round per round.
 
 ```
                     ↑ NORD (Esercito Invasore)
@@ -189,8 +172,7 @@ Questo manuale omnicomprensivo unisce in un unico flusso logico e cronologico tu
 #### **A) Vista Tattica dall'Alto (Top-Down)**
 
 **Prompt per l'Immagine (Per i Giocatori):**
-> *"Mappa tattica isometrica di una fortezza nanica. Mostra un cancello principale protetto da un ponte levatoio su un fossato. Due grandi torri quadrate sono ai lati delle mura. Dietro le mura, due cortili, uno esterno per la mobilitazione e uno interno, più sicuro, dove si trova il comando. Si vedono chiaramente le rampe e le scale che portano ai bastioni."*
-```
+> *"Mappa tattica isometrica di una fortezza nanica. Mostra un cancello principale protetto da un ponte levatoio su un fossato. Due grandi torri quadrate sono ai lati delle mura. Dietro le mura, due cortili, uno esterno per la mobilitazione e uno interno, più sicuro, dove si trova il comando. Si vedono chiaramente le rampe e le scale che portano ai bastioni."*```
                   ↑ NORD (Verso il Cuore della Montagna) ↑
 #########################################################################
 # | R |.......BASTIONE NORD (Difesa Posteriore, +15m).......| R |.......#  (MONTAGNA)
@@ -242,8 +224,7 @@ TTTTTTTTTTTTTTT            | | [PONTE LEVATOIO] | |           TTTTTTTTTTTTTTT
            |            |     | |                          |  |    |           |            |
 ======================[██ CANCELLO PRINCIPALE ██]======================[PONTE LEVATOIO]====
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FOSSATO (6m largo, 3m profondo) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/////////////////////// TERRENO IN SALITA (Pendenza 15%) ///////////////////////
-```
+/////////////////////// TERRENO IN SALITA (Pendenza 15%) ///////////////////////```
 
 #### **C) Vista Laterale (Sezione Trasversale per Chiarezza)**
 *Questa vista chiarisce la profondità e i livelli della fortezza.*
@@ -260,6 +241,60 @@ TTTTTTTTTTTTTTT            | | [PONTE LEVATOIO] | |           TTTTTTTTTTTTTTT
 ~~~FOSSO~~~ |(Mura Sud, +12m)----------------|
 (-6m)       |                          
 (Terreno in Salita)
+```
+
+---
+<div style="page-break-before:always"></div>
+
+### **MAPPA 4: EVOLUZIONE DINAMICA DEI DANNI**
+
+**Descrizione (dal Manuale):**
+> *"L'alba del secondo giorno illumina un campo di battaglia trasformato. I giganti... hanno lavorato tutta la notte per creare una breccia... L'alba del terzo giorno è rossa come il sangue versato. Le difese esterne sono crollate..."*
+
+**Prompt per l'Immagine (Per i Giocatori):**
+> *Mostra una serie di tre schizzi della fortezza: il primo con crepe e fumo; il secondo con un'ampia breccia nel muro da cui sciamano gli orchi; il terzo con il cancello in frantumi e il cortile invaso.*
+
+**Dettagli Tattici (Per il DM):**
+*   Usa queste mappe per aggiornare i giocatori sullo stato della fortezza alla fine di ogni giornata di assedio.
+
+#### **A) Primi Danni (Fine Giorno 1)**
+*Dopo il bombardamento iniziale e i primi assalti.*
+```
+╔═══════════════════════════════════════╗
+║                                       ║
+║   MURA EST [DANNEGGIATE, -30% PF]     ║
+║   ═══════════ [CREPA] ═══════════     ║
+║                                       ║
+╠═════[CANCELLO DANNEGGIATO, -40% PF]═════╣
+║                                       ║
+╚═══════════════════════════════════════╝
+```
+
+#### **B) Breccia Principale (Metà Giorno 2)**
+*L'assalto concentrato di Gorthak e dei giganti ha successo.*
+```
+╔═══════════════════════════════════════╗
+║                                       ║
+║   MURA EST [BRECCIA DI 8 METRI]       ║
+║   ═════ XXX BRECCIA XXX ═════════     ║
+║         (ORCHI ENTRANO!)              ║
+╠══════════[CANCELLO SFONDATO]═══════════╣
+║                                       ║
+╚═══════════════════════════════════════╝
+```
+
+#### **C) Collasso Difensivo (Inizio Giorno 3)**
+*Le difese esterne sono perse. La lotta si sposta nei cortili.*
+```
+╔═══════════════════════════════════════╗
+║                                       ║
+║        🟡 ORCHI 🟡 🟠 HOBGOBLIN 🟠      ║
+║   ═════ XXX BRECCIA XXX ═════════     ║
+║         (NEMICI NEL CORTILE)          ║
+╠═════════[CANCELLO DISTRUTTO]══════════╣
+║      🛡️ [NANI IN RITIRATA VERSO     🛡️ ║
+║          LA PORTA INTERNA]            ║
+╚═══════════════════════════════════════╝
 ```
 
 ---
@@ -460,9 +495,40 @@ TTTTTTTTTTTTTTT            | | [PONTE LEVATOIO] | |           TTTTTTTTTTTTTTT
 <div style="page-break-before:always"></div>
 
 ## **SESSIONE 4: LA TEMPESTA E LA VITTORIA FINALE**
-*La mappa per lo scontro conclusivo fuori dalle mura.*
+*Le mappe per lo scontro conclusivo fuori dalle mura.*
 
 ---
+### **MAPPA 4X: IL CAMPO DI BATTAGLIA FINALE (Vista Laterale Pre-Carica)**
+
+**Descrizione (dal Manuale):**
+> *"Dai bastioni di Hammerfist, Re Thorek... si alza in piedi brandendo il suo martello ancestrale... 'FRATELLI! Oggi non moriamo - oggi VINCIAMO!' Il grido che si alza dai novanta nani superstiti è tale da far tremare le fondamenta della montagna."*
+
+**Prompt per l'Immagine (Per i Giocatori):**
+> *"Arte fantasy, D&D, inquadratura laterale. A sinistra, le mura di una fortezza nanica si ergono su un'altura. Un esercito di novanta nani, guidati da eroi scintillanti, è schierato appena fuori dal cancello, pronti a caricare giù per un pendio. A destra, a circa cento metri di distanza in una valle sottostante, i resti demoralizzati di un'armata di hobgoblin si preparano a ricevere l'impatto. Il cielo sopra di loro è nero e tempestoso."*
+
+**Dettagli Tattici (Per il DM):**
+*   **SCALA:** Orizzontale, indicata in metri. Verticale, indicata in metri.
+*   **PENDENZA:** La carica dei nani avverrà in discesa, negando il terreno difficile e fornendo loro bonus al movimento e all'impatto della carica.
+*   **DISTANZA:** La carica coprirà circa 100-120 metri di terreno.
+
+```
+(OVEST)                                                                    (EST)
+                                  
+🏰 HAMMERFIST (+15m)
+║
+║\
+║ \ (Pendenza del 15% in discesa per i Nani)
+║  \
+║   \
+║    \____________________________________________________________________
+║      (Campo di Battaglia - Valle Esterna, Livello 0m)          ||| ESERCITO
+║                                                                ||| MANO ROSSA
+║      <--------------------- 120 metri --------------------->   ||| (Resti)
+```
+
+---
+<div style="page-break-before:always"></div>
+
 ### **MAPPA 4 (Unificata): LA BATTAGLIA FINALE**
 
 **Descrizione (dal Manuale):**
@@ -518,8 +584,3 @@ ALTITUDINE
       =========================================================
       ↑↑↑ [PG a terra] + [Balestrieri] (Fuoco di supporto)
 ```
-
----
-<div style="page-break-before:always"></div>
-
-

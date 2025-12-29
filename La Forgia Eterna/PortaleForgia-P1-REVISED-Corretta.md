@@ -1,5 +1,7 @@
 # IL PORTALE DELLA FORGIA ETERNA
+
 ## PARTE 1 - La Stanza della Corona (REVISED - Post-Battaglia)
+
 ### Avventura D&D 3.5 - Livello 13 - Forgotten Realms
 
 ---
@@ -31,6 +33,7 @@
 ## 1. IL PARTY DEGLI AVVENTURIERI (SCHEDE CORRETTE)
 
 ### **THORIK GRRSKULLDARK**
+
 **Razza/Classe:** Nano Guerriero 13  
 **Allineamento:** Caotico Neutrale  
 **Età:** 127 anni  
@@ -38,6 +41,7 @@
 **Background:** Thorik è un guerriero veterano che ha combattuto aberrazioni per decenni. A differenza della maggioranza dei nani, il suo spirito è irrequieto, poco incline alle rigide tradizioni. Questo gli ha causato problemi con i clan conservatori, ma lo ha reso adattabile e pragmatico sul campo di battaglia. Combatte per proteggere, non per gloria.
 
 **Equipaggiamento Chiave:**
+
 - **Corona di Adamantio** (appena trovata, indossata) - artefatto divino incompiuto
 - **Aegis Fang** - Ascia da guerra nanica Dragondoom Ritornante +2
   - Materiale: Testa mithral, asta adamantio, gemme incrostate magicamente
@@ -52,6 +56,7 @@
 - Cintura del gigante delle colline (FOR +4)
 
 **Caratteristiche (stimate livello 13):**
+
 - **FOR** 20 (18 base +2 nano +2 cintura -2 età)
 - **DES** 10 (12 base -2 età)
 - **COS** 20 (16 base +2 nano +2 miglioramento)
@@ -71,6 +76,7 @@
 ---
 
 ### **TORDEK BLACKHAMMER**
+
 **Razza/Classe:** Nano Guerriero 4 / Monaco 9 (Livello Totale 13)  
 **Allineamento:** Legale Neutrale  
 **Età:** 98 anni
@@ -78,6 +84,7 @@
 **Background:** Tordek combinaunisce le capacità marziali tradizionali naniche con discipline monastiche apprese in monasteri sotterranei. Ha abbandonato il suo clan per cercare perfezione attraverso la lotta, credendo che Moradin forgi le anime tramite il conflitto.
 
 **Equipaggiamento Chiave:**
+
 - **Devastation Gauntlets** (Magic Item Compendium pag. 93)
   - **Proprietà:** Dopo confermare un critico, il portatore può spendere cariche per aggiungere danni extra:
     - 3 cariche: +4d6 danni
@@ -92,6 +99,7 @@
 - Periapt of Wisdom +2
 
 **Caratteristiche (stimate livello 13):**
+
 - **FOR** 14 (16 -2 età)
 - **DES** 18 (16 base +2 miglioramento)
 - **COS** 18 (16 base +2 nano)
@@ -105,6 +113,7 @@
 **Raffica Colpi:** +12/+12/+7/+2 (2d6+2 ciascuno)
 
 **Capacità Monaco (livello 9):**
+
 - Colpo Senz'Armi: 2d6 danni
 - CA Bonus: +3 (Saggezza) quando senz'armatura
 - Movimento Veloce: +30 ft (60 ft totale)
@@ -120,6 +129,7 @@
 ---
 
 ### **HELLA GRIMSDOTTIR** [MORTA - CORPO PRESERVATO]
+
 **Razza/Classe:** Nana Druida 12 / Ranger 1 (Livello Totale 13)  
 **Allineamento:** Neutrale Buono  
 **Età:** 89 anni  
@@ -129,18 +139,21 @@
 
 **Come È Morta:**
 Durante la battaglia nella Stanza della Corona contro half-illithid yochlol e alleati drow:
+
 1. Hella fu **stordita** da attacco psionico dell'half-illithid
 2. Mentre stordita, un **yochlol** (demone di Lolth con forma polimorfa) attaccò con spada a due lame
 3. **Colpo critico** confermato - spada attraversò armatura e cuore
 4. Hella morì istantaneamente, cadendo a terra
 
 **Corpo Attuale:**
+
 - Preservato con *Gentle Repose* (se Tordek o altro incantatore lo preparava)
 - OPPURE preservato dall'aura magica della Corona di Adamantio nella stanza
 - 10 giorni rimasti prima che decomposizione inizi
 - Spirito ancora legato debolmente al Piano Materiale (permette comunicazione limitata)
 
 **Equipaggiamento da Recuperare (sul corpo):**
+
 - Staff di legno pietrificato +1
 - Armatura di pelli +2
 - Amuleto di salute +2
@@ -148,21 +161,25 @@ Durante la battaglia nella Stanza della Corona contro half-illithid yochlol e al
 - Simbolo sacro druidico (quercia e martello intrecciati)
 
 **Caratteristiche (quando era viva):**
+
 - **FOR** 12, **DES** 14, **COS** 16 (14 +2 amuleto), **INT** 10, **SAG** 20 (16 base +2 miglioramento +2 livello), **CAR** 14
 
 **PF:** 12d8+1d8+52 = ~110 HP (quando viva)
 
 **Incantesimi Preparati Druida (livello 12):**
+
 - 6/6/5/5/4/3/2 slot giornalieri
 - Focus su crescita piante, parlare con pietra, evocare alleati naturali
 
 **Capacità Ranger (livello 1):**
+
 - Nemico prescelto: Aberrazioni +2
 - Seguire Tracce
 
 **Talenti:** Incantare in Combattimento, Incantesimi Focalizzati (Evocazione), Robustezza, Volontà di Ferro, Augment Summoning
 
 **Importanza Narrativa:**
+
 - La sua morte è il **catalizzatore emotivo** dell'avventura
 - I PG devono recuperare gemme per usare Cuore di Moradin e resuscitarla
 - I semi Treant che porta sono necessari per il rituale completo (connessione terra/vita)
@@ -170,6 +187,7 @@ Durante la battaglia nella Stanza della Corona contro half-illithid yochlol e al
 ---
 
 ### **ARTEMIS "IL SOPRAVVISSUTO"**
+
 **Razza/Classe:** Umano Warlock 13  
 **Allineamento:** Caotico Neutrale (DEVE rimanere CN per mantenere poteri warlock)  
 **Età:** 34 anni
@@ -177,6 +195,7 @@ Durante la battaglia nella Stanza della Corona contro half-illithid yochlol e al
 **Background AGGIORNATO:** Artemis ha scoperto il Ring of Chaotic Illumination **10 giorni fa**, nascosto come Anello di Protezione +3. Il Ring si è FUSO con lui (tendini d'ombra), cambiando inizialmente il suo allineamento in CB, cosa che lo avrebbe DISTRUTTO come warlock (i warlock CN/CE/LE/NE possono esistere, ma CB è problematico senza multiclasse).
 
 **La Cerebromorphosis e il Rifiuto:**
+
 - **8-5 giorni fa:** Artemis fu infettato da girino illithid impiantato da mezzi-illithid negli scontri precedenti
 - **5-2 giorni fa:** Attraversò crisi di cerebromorphosis - lotta tra:
   - Infezione aliena (voleva trasformarlo in mind flayer)
@@ -192,6 +211,7 @@ Durante la battaglia nella Stanza della Corona contro half-illithid yochlol e al
   - Lathander/Mask rispettarono scelta ma restano "osservatori interessati"
   
 **Ring of Chaotic Illumination - Stato Attuale:**
+
 - **Allineamento Ring:** Caotico Buono (intrinseco)
 - **Allineamento Artemis:** Caotico Neutrale (compromesso)
 - **Effetto:** Ring NON forza più allineamento (post-rifiuto), ma Artemis sente "tensione" tra CN e CB
@@ -202,6 +222,7 @@ Durante la battaglia nella Stanza della Corona contro half-illithid yochlol e al
   - Benedizione Twilight Sanctuary: **INATTIVA** (richiede CB per attivarla)
 
 **Equipaggiamento:**
+
 - **Ring of Chaotic Illumination** (FUSO al dito, impossibile rimuovere)
   - Ego 12, Int 14, Sag 12, Car 16
   - Comunica telepaticamente
@@ -212,6 +233,7 @@ Durante la battaglia nella Stanza della Corona contro half-illithid yochlol e al
 - Verga di metamagia (Quicken, 3 cariche)
 
 **Caratteristiche (livello 13):**
+
 - **FOR** 10, **DES** 16 (14 base +2 miglioramento), **COS** 14 (16 -2 cerebromorphosis residua), **INT** 14, **SAG** 12, **CAR** 18 (16 base +2 miglioramento)
 
 **PF:** 13d6+26 = ~70 HP (ridotti da cerebromorphosis)
@@ -219,6 +241,7 @@ Durante la battaglia nella Stanza della Corona contro half-illithid yochlol e al
 **Eldritch Blast:** 7d6 (livello 13)
 
 **Invocations Known (livello 13):** 7 invocazioni totali
+
 - **Least:** *Eldritch Spear*, *See the Unseen*
 - **Lesser:** *Flee the Scene*, *Voidsense*
 - **Greater:** *Chilling Tentacles*, *Word of Changing*
@@ -227,12 +250,14 @@ Durante la battaglia nella Stanza della Corona contro half-illithid yochlol e al
 **Talenti:** Ability Focus (Eldritch Blast), Point Blank Shot, Precise Shot, Quicken Spell-Like Ability (Eldritch Blast), Extra Invocation, Improved Initiative
 
 **Stato Attuale (Parte 1):**
+
 - **Fisicamente:** Esausto ma guarito (nessuna trasformazione illithid permanente)
 - **Mentalmente:** Determinato a rimanere indipendente, difensivo su scelta CN vs CB
 - **Ring:** Funziona ma "osserva" Artemis, occasionalmente sussurra suggerimenti da Lathander/Mask
 - **Cicatrici Residue:** Mal di testa occasionali, flash di "pensieri alieni" (cosmetic, no effetto meccanico)
 
 **Relazione con Party:**
+
 - **Thorik:** Rispetto reciproco, entrambi caotici e indipendenti
 - **Tordek:** Tensione filosofica (legale vs caotico), ma cooperano
 - **Hella:** Era amica, morte la colpisce duramente (senso colpa per non averla protetta)
@@ -244,11 +269,13 @@ Durante la battaglia nella Stanza della Corona contro half-illithid yochlol e al
 ### **Cosa È Appena Successo**
 
 I PG hanno appena combattuto una battaglia devastante nella **Stanza della Corona** contro:
+
 - **Half-Illithid Yochlol** (demone polimorfo di Lolth + innesti mind flayer)
 - **2 Yochlol** standard
 - **Guerriero Drow** corrotto psionicamente
 
 **Risultato Battaglia:**
+
 - ✅ Nemici sconfitti (tutti morti)
 - ❌ **Hella uccisa** - colpo critico da yochlol mentre stordita
 - ⚠️ Thorik HP 60/145 (~40% HP)
@@ -257,6 +284,7 @@ I PG hanno appena combattuto una battaglia devastante nella **Stanza della Coron
 - ✅ Risorse: Thorik (4/5 pozioni usate), Tordek (Purezze Corpo usata), Artemis (6/7 invocations spese)
 
 **Stato Emotivo Party:**
+
 - **Thorik:** Furioso con sé stesso (non ha protetto Hella), determinato a vendicarla
 - **Tordek:** In lutto controllato, cerca equilibrio spirituale, inizia meditazioni per contattare spirito Hella
 - **Artemis:** Senso di colpa (se avesse usato invocazioni diverse?), esausto da cerebromorphosis recente
@@ -281,6 +309,7 @@ I PG hanno appena combattuto una battaglia devastante nella **Stanza della Coron
 ### **Elementi Architettonici**
 
 **QUATTRO PILASTRI DI MITHRAL (Angoli Stanza):**
+
 - **Posizioni:** NW (D3-E4), NE (O3-P4), SW (D11-E12), SE (O11-P12)
 - **Dimensioni:** 3m x 3m base, 10m altezza (fino al soffitto)
 - **Superficie:** Incisa con scene di battaglie naniche vs creature Underdark
@@ -288,6 +317,7 @@ I PG hanno appena combattuto una battaglia devastante nella **Stanza della Coron
 - **Funzione:** Sostegni architettonici + simbolismo (i quattro pilastri del regno nanico: Forza, Onore, Artigianato, Famiglia)
 
 **TRONO CENTRALE (Pedana Rialzata):**
+
 - **Posizione:** Centro esatto stanza (H9-I10)
 - **Dimensioni:** 3m x 3m base, 1,5m altezza pedana + 2m altezza trono
 - **Materiale:** Adamantio puro (valore stimato 100.000+ mo)
@@ -295,6 +325,7 @@ I PG hanno appena combattuto una battaglia devastante nella **Stanza della Coron
 - **Corona:** Posata sulla sommità dello schienale del trono (non sulla seduta)
 
 **PORTA NORD (Ingresso):**
+
 - **Posizione:** J1-K2
 - **Dimensioni:** 3m larghezza x 5m altezza
 - **Materiale:** Pietra nera venata d'oro (stesso materiale pareti)
@@ -302,6 +333,7 @@ I PG hanno appena combattuto una battaglia devastante nella **Stanza della Coron
 - **Rune sopra porta:** "QUI GIACE IL SEGRETO DELLA MONTAGNA / QUI ATTENDE LA CORONA DELLA PIETRA ETERNA / SOLO IL PURO DI CUORE PUÒ PASSARE"
 
 **PORTA SUD (Verso Portale Forgia Eterna):**
+
 - **Posizione:** Parete sud, centro (J12-K13)
 - **Dimensioni:** 3m larghezza x 5m altezza
 - **Stato Iniziale:** **INVISIBILE** - sembra parete solida
@@ -316,6 +348,7 @@ I PG hanno appena combattuto una battaglia devastante nella **Stanza della Coron
 ### **Tracce di Battaglia (Per Immersione Narrativa)**
 
 **Sul Pavimento:**
+
 - Pozze di sangue nero (yochlol)
 - Sangue violaceo (half-illithid)
 - Sangue rosso (Hella e PG)
@@ -323,12 +356,14 @@ I PG hanno appena combattuto una battaglia devastante nella **Stanza della Coron
 - Armi rotte nemici (spade drow, tentacoli mozzati)
 
 **Odori:**
+
 - Metallo bruciato (eldritch blast di Artemis)
 - Ozono (magia psionica residua)
 - Sangue (ovvio)
 - Pietra bagnata (sempre presente in Underdark)
 
 **Suoni:**
+
 - Respiri affannati dei PG
 - Gocciolamento sangue
 - Ronzio sotterraneo costante (vibrazioni montagna)
@@ -355,13 +390,15 @@ I PG hanno appena combattuto una battaglia devastante nella **Stanza della Coron
 
 **Permettere ai giocatori di interpretare liberamente. Suggerimenti se esitano:**
 
-**Thorik:** 
+**Thorik:**
+
 - Si inginocchia accanto al corpo
 - Posa Aegis Fang accanto a lei con rispetto
 - Recita antica preghiera nanica per i caduti: *"Padre Moradin, accetta questa figlia della pietra. Forgiala di nuovo nelle tue sale eterne. E se degna... riportala a noi."*
 - **Meccanica:** Corona sulla sua fronte PULSA quando recita preghiera - Moradin ASCOLTA
 
 **Tordek:**
+
 - Tocca fronte di Hella con mano guantata (Devastation Gauntlet)
 - Chiude gli occhi, entra in meditazione breve (1 minuto)
 - **Prova Concentrazione CD 15**
@@ -369,10 +406,11 @@ I PG hanno appena combattuto una battaglia devastante nella **Stanza della Coron
   - **Fallimento:** Sente solo vuoto, ma sa che potrebbe ritentare dopo
 
 **Artemis:**
+
 - Si allontana, appoggiato a pilastro
 - Ring of Chaotic Illumination pulsa violentemente - cicla oro/argento rapidamente
 - Sussurra: *"Non doveva finire così. NESSUNO dovrebbe finire così."*
-- **Ring comunica (telepaticamente, solo lui sente):** 
+- **Ring comunica (telepaticamente, solo lui sente):**
   - **Mask (voce ironica ma gentile):** *"La morte è parte del ciclo, ragazzo. Ma non deve essere FINE. Hai amici potenti ora. Usali."*
   - **Lathander (voce calda):** *"Anche nell'oscurità più profonda, l'alba può sorgere. Non disperare."*
 
@@ -383,6 +421,7 @@ I PG hanno appena combattuto una battaglia devastante nella **Stanza della Coron
 **Opzioni:**
 
 **1. Se PG hanno *Gentle Repose* preparato:**
+
 - Tordek (Guerriero/Monaco) NON ha accesso
 - Artemis (Warlock) NON ha accesso
 - NESSUNO può lanciare!
@@ -401,6 +440,7 @@ Quando Thorik si avvicina al corpo di Hella mentre indossa la Corona:
 > **"Druida cadde difendendo i miei figli. Onorevole. Preserverò suo corpo fino a quando non completerete prova. 10 giorni avete. Non uno di più."**
 
 **Meccanica D&D 3.5:**
+
 - Corpo preservato come se sotto effetto *Gentle Repose* permanente
 - Durata: 10 giorni (240 ore)
 - Countdown inizia DA ORA
@@ -412,6 +452,7 @@ Quando Thorik si avvicina al corpo di Hella mentre indossa la Corona:
 ### **Decisione: Trasportare o Lasciare?**
 
 **Opzione A: Trasportare Corpo**
+
 - **Pro:** Party si sente "completo", presenza emotiva di Hella
 - **Contro:** Peso aggiuntivo (Hella pesa ~65kg), rischio danni durante combattimenti
 - **Meccanica:** Chi porta corpo (Thorik FOR 20 o Tordek FOR 14):
@@ -419,6 +460,7 @@ Quando Thorik si avvicina al corpo di Hella mentre indossa la Corona:
   - TS Tempra CD 12 ogni ora o affaticato
 
 **Opzione B: Lasciare nella Stanza Corona**
+
 - **Pro:** Sicuro (stanza è segreta, nessun nemico conosce posizione), nessuna penalità combattimento
 - **Contro:** Party si sente "incompleto", assenza emotiva
 - **Meccanica:** Nessuna penalità
@@ -440,6 +482,7 @@ Dopo aver preservato corpo Hella, i PG si rivolgono al VERO tesoro della stanza:
 > *È un cerchio perfetto di adamantio puro, largo circa 30 centimetri, spesso 2 centimetri. Non è ornata con gemme o decorazioni superflue - la sua bellezza è nella PERFEZIONE del metallo e delle rune incise.*
 >
 > *Tre INCAVI vuoti sono disposti a triangolo equilatero:*
+>
 > - **Incavo Superiore (fronte):** Ovale, dimensioni pugno, vuoto
 > - **Incavo Sinistro (tempia sinistra):** Ottagonale, vuoto
 > - **Incavo Destro (tempia destra):** Esagonale, vuoto
@@ -469,12 +512,15 @@ Dopo aver preservato corpo Hella, i PG si rivolgono al VERO tesoro della stanza:
 **Prove Conoscenze:**
 
 **Conoscenze (Arcane) CD 20:**
+
 - Successo: Corona è artefatto divino INCOMPIUTO. Le tre gemme devono essere recuperate da Piani Elementali (Fuoco, Terra, e un terzo non specificato). Solo completando Corona si sblocca vero potere.
 
 **Conoscenze (Storia) CD 25:**
+
 - Successo: Ricordate leggende naniche su "Corona della Pietra Eterna" - forgiata da Moradin nell'Anno -5000, permette "camminare attraverso tempo" e "riportare perduti da morte". Mai completata? O gemme furono rimosse in qualche momento della storia?
 
 **Conoscenze (Religioni) CD 18:**
+
 - Successo: Corona è sacra a Moradin. Indossarla senza permesso = sacrilegio. Ma se Moradin SCEGLIE portatore, diventa benedizione divina.
 
 ---
@@ -599,6 +645,7 @@ Possibili risposte e reazioni Moradin:
 > *Luce DORATA esplode dalla Corona, avvolgendoti completamente. Non accecante - abbracciante. Sentì calore che penetra ossa, muscoli, anima. E poi... la Corona STRINGE leggermente. Non dolorosamente. Solo... adattandosi. Diventando parte di te.*
 >
 > *E SENTI:*
+>
 > - *Presenza Moradin, costante sottofondo, come battito cardiaco secondario*
 > - *Connessione ad Aegis Fang amplificata - l'ascia CANTA nella tua mano*
 > - *Consapevolezza direzioni: sai ISTINTIVAMENTE dove sono Piani Elementali rispetto a te*
@@ -610,12 +657,14 @@ Possibili risposte e reazioni Moradin:
 ### **Effetti Meccanici Corona (Incompleta - Parte 1)**
 
 **Bonus Immediati:**
+
 - **+4 Carisma** (potenziamento)
 - **Immunità Paura** (magica e naturale)
 - **Scurovisione Migliorata:** 36 metri (anche se già 18m per nano)
 - **Aura di Comando:** 1/giorno, *Command* (CD 15) come capacità soprannaturale (CL 13)
 
 **Limitazioni:**
+
 - **NON rimovibile** finché non completata con 3 gemme (salvo *Remove Curse* CD 25)
 - **-2 Destrezza** (peso e restrizione movimenti testa)
 - **Guida di Moradin:** 1/giorno, portatore sente "sussurro" direzione verso obiettivo (gemme)
@@ -623,6 +672,7 @@ Possibili risposte e reazioni Moradin:
 ---
 
 **Aggiornamento Statistiche Thorik:**
+
 - **CAR:** 8 → 12 (+4 Corona)
 - **DES:** 10 → 8 (-2 Corona)
 - **Nuova CA:** 22 → 21 (-1 per DES ridotta)
@@ -658,26 +708,31 @@ Nel momento in cui Thorik indossa Corona, Aegis Fang (l'ascia nella sua mano) in
 **Effetti Meccanici Sinergia Corona + Aegis Fang:**
 
 **1. Risonanza Divina (Passiva, sempre attiva):**
+
 - **Thorik:** +2 sacro a TUTTI Tiri Salvezza (Tempra, Riflessi, Volontà)
 - **Bonus cumulativo:** Thorik adesso ha Volontà +7 base → +9 con Corona
 
 **2. Bane Draconico Potenziato (vs Draghi):**
+
 - Aegis Fang già ha +2d6 vs draghi (proprietà Dragondoom)
 - **CON Corona:** +3d6 vs draghi (upgrade!)
 - **Critico vs Draghi:** x3 diventa x4 (devastante!)
 
 **3. Richiamo Ancestrale (1/giorno, azione gratuita):**
+
 - Se Thorik disarmato, Aegis Fang VOLA automaticamente alla sua mano
 - Distanza massima: 30 metri
 - Non provoca attacco di opportunità
 - Come *Returning* ma istantaneo
 
 **4. Eco degli Eroi (1/combattimento, azione swift):**
+
 - Thorik attiva
 - Per 5 round: +2 morale ad attacco, +1d6 danni sacri
 - Rappresenta spiriti eroi nanici passato che combattono insieme a lui
 
 **Aggiornamento Aegis Fang:**
+
 - **Attacco:** +20/+15/+10 → +22/+17/+12 (con Eco Eroi attivo, +2 morale)
 - **Danno:** 1d10+7, crit x3 → 1d10+7+1d6 sacro+3d6 vs draghi, crit x4 vs draghi (con tutti bonus attivi)
 
@@ -700,6 +755,7 @@ Dopo risonanza iniziale, Aegis Fang condivide altra informazione:
 **Beneficio Futuro (Parte 6 - Battaglia Finale):**
 
 Quando Thorik affronterà Fauci di Palude (drago nero):
+
 - **Aegis Fang ottiene bonus extra:**
   - +4 attacco vs Fauci (invece +2 normale vs draghi)
   - +4d6 danni vs Fauci (invece +3d6 normale)
@@ -746,22 +802,26 @@ Dopo che Artemis rifiutò Lord of Sun and Shadow (e mantenne CN invece CB), il R
 **Quando Thorik (Corona) e Artemis (Ring) entro 9 metri:**
 
 **1. Dualità Armoniosa (Passiva):**
+
 - Ring ottiene **+1 carica uso giornaliero** (totale aumenta da 4 a 5)
 - Rappresenta energia ordinata Corona che stabilizza caos Ring
 
 **2. Visione Planare (1/giorno, azione standard):**
+
 - Artemis può "vedere" attraverso piani elementali per 1 round
 - Percepisce cosa succede nel Piano Fuoco o Terra (se portali esistono)
 - Raggio percezione: 300 metri nel piano bersaglio
 - **Utile per:** Navigazione, warnings, evitare trappole
 
 **3. Dissolvere Illusioni (1/giorno, azione swift):**
+
 - Raggio 9 metri centrato su Artemis
 - Automaticamente dissipa illusioni fino 5° livello
 - Per illusioni 6°+: prova livello incantatore 1d20+13 vs CD 11+livello incantesimo
 - **Anche dissipa inganni psionici** (mind flayer - UTILE dato background cerebromorphosis!)
 
 **4. Benedizione Paradossale (Passiva):**
+
 - Quando Thorik E Artemis entro 3 metri:
   - Thorik (ora Caotico Neutrale grazie Corona): +1 CA contro attacchi Legali
   - Artemis (Caotico Neutrale): +1 CA contro attacchi Legali
@@ -780,6 +840,7 @@ Quando Artemis si avvicina al corpo preservato di Hella con Ring attivo:
 > **MASK:** *"Druida era... interessante. Serviva natura, ma comprendeva necessità segreti. Protettiva come me. Compassionevole come Lathander. Merita tornare. Ma tu, ragazzo... tu devi AIUTARE compagni recuperare gemme. Non puoi farlo da solo. Nessuno può. Questa è lezione: cooperazione vince solitudine."*
 
 **Effetto Meccanico:**
+
 - Ring ottiene capacità TEMPORANEA (solo fino resurrezione Hella):
   - **1/giorno:** Artemis può lanciare *Speak with Dead* sul corpo Hella (CL 13, no componenti)
   - Permette comunicazione diretta se necessario (alternative a meditazione Tordek)
@@ -805,6 +866,7 @@ Dopo che Thorik indossa Corona e Aegis Fang canta, i PG devono capire: come ACCE
 Thorik o Tordek (automatico successo con Take 10):
 
 Ricordate **Canto della Pietra e del Fuoco** - cantico rituale nanico antichissimo, cantato durante:
+
 - Fondazione nuove fortezze
 - Accensione forge sacre
 - Matrimoni reali
@@ -849,6 +911,7 @@ Ricordate **Canto della Pietra e del Fuoco** - cantico rituale nanico antichissi
 ### **Eseguire il Rituale**
 
 **Requisiti:**
+
 - **Almeno 2 nani** (Thorik + Tordek)
 - **Portatore Corona** deve guidare (Thorik)
 - **Toccare parete sud centro** mentre si canta
@@ -908,6 +971,7 @@ E COMPLETA TUO DESTINO"
 **Permettere PG Prepararsi:**
 
 **Checklist Suggerita:**
+
 1. **Corpo Hella:** Trasportare o lasciare? (Discusso sopra)
 2. **Equipaggiamento:** Controllare HP, risorse rimanenti
    - Thorik: 60/145 HP (~40%)
@@ -925,6 +989,7 @@ E COMPLETA TUO DESTINO"
 ### **Consiglio DM:**
 
 **SE PG Vogliono Long Rest:**
+
 - Permetterlo - hanno appena combattuto battaglia dura + perso compagna
 - NARRAZIONE: Durante riposo, ognuno ha sogni:
   - **Thorik:** Sogna Moradin alla forgia, ripetendo "Veloce ma non affrettato"
@@ -932,6 +997,7 @@ E COMPLETA TUO DESTINO"
   - **Artemis:** Sogna alba e tramonto simultanei - Lathander e Mask che giocano scacchi cosmici, ridendo
 
 **SE PG Procedono Immediatamente:**
+
 - Coraggiosi! Dagli bonus morale +1 ad attacco per 1 ora (determinazione eroica)
 
 ---
@@ -991,6 +1057,7 @@ Quando PG sono pronti:
 *(Già incluso sopra)*
 
 **HANDOUT 3 - Rune Porta Sud (Post-Attivazione)**
+
 ```
 ╔════════════════════════════════════════════════════╗
 ║                                                      ║
@@ -1011,11 +1078,13 @@ Quando PG sono pronti:
 ### **Modifiche Rispetto Versione Originale**
 
 **RIMOSSO:**
+
 - ❌ Intero combattimento Parte 1 (già giocato)
 - ❌ Setup iniziale Re Thorek (già fatto)
 - ❌ Esplorazione tunnel Underdark (già fatto)
 
 **MANTENUTO:**
+
 - ✅ Morte Hella (background post-battaglia)
 - ✅ Scoperta Corona
 - ✅ Visione Moradin
@@ -1024,6 +1093,7 @@ Quando PG sono pronti:
 - ✅ Transizione Sala Forgia Eterna
 
 **AGGIORNATO:**
+
 - ✅ Party corretto (Thorik GRR 13, Tordek GRR4/Monaco9, Hella Druida12/Ranger1, Artemis Warlock13)
 - ✅ Aegis Fang = ASCIA (non martello)
 - ✅ Thorik porta ENTRAMBI Corona + Aegis Fang
@@ -1052,6 +1122,7 @@ Quando PG sono pronti:
 
 **Parte 2:** Sala della Forgia Eterna (già creata, richiede minor aggiornamenti)  
 **Modifiche Necessarie Parte 2:**
+
 - Rimuovere riferimenti a pozioni/protezioni magiche
 - Aggiungere Benedizioni di Moradin (sostituzione pozioni)
 - Confermare sinergie artefatti
@@ -1059,6 +1130,7 @@ Quando PG sono pronti:
 
 **Parte 3:** Piano Fuoco (richiede modifiche maggiori)  
 **Modifiche Necessarie Parte 3:**
+
 - NESSUNA protezione magica disponibile
 - Benedizioni Moradin = unica difesa vs calore
 - Potenziare elementali fuoco (compensare benedizioni)

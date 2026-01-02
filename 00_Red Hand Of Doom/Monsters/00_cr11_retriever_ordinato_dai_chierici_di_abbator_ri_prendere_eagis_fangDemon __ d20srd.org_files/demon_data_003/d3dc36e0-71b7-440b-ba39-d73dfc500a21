@@ -1,0 +1,204 @@
+function render_1928(nativeObj, targetId, _apnTargetDivCache) {
+    var _apnTargetDivCache = _apnTargetDivCache || [];
+function standardizeNativeObj (nativeObj) {
+    return {
+        type: nativeObj.type,
+        title: nativeObj.title,
+        body: nativeObj.body || nativeObj.desc,
+        desc2: nativeObj.desc2,
+        fullText: nativeObj.fullText || nativeObj.full_text,
+        icon: nativeObj.icon,
+        image: nativeObj.image || nativeObj.main_img,
+        cta: nativeObj.cta || nativeObj.ctatext,
+        sponsoredBy: nativeObj.sponsoredBy || nativeObj.sponsored,
+        impressionTrackers: nativeObj.impressionTrackers || nativeObj.impression_trackers,
+        clickTrackers: nativeObj.clickTrackers || (nativeObj.link && nativeObj.link.click_trackers),
+        clickUrl: nativeObj.clickUrl || (nativeObj.link && nativeObj.link.url),
+        clickFallbackUrl: nativeObj.clickFallbackUrl || (nativeObj.link && nativeObj.link.fallback_url),
+        javascriptTrackers: nativeObj.javascriptTrackers || nativeObj.javascript_trackers,
+        video: nativeObj.video,
+        privacyLink: nativeObj.privacyLink || nativeObj.privacy_link,
+        rating: nativeObj.rating,
+        displayUrl: nativeObj.displayUrl || nativeObj.displayurl,
+        likes: nativeObj.likes,
+        downloads: nativeObj.downloads,
+        price: nativeObj.price,
+        salePrice: nativeObj.salePrice || nativeObj.saleprice,
+        phone: nativeObj.phone,
+        address: nativeObj.address,
+
+        customTitle1: nativeObj.customTitle1 || nativeObj.title1,
+        customTitle2: nativeObj.customTitle2 || nativeObj.title2,
+        customTitle3: nativeObj.customTitle3 || nativeObj.title3,
+        customTitle4: nativeObj.customTitle4 || nativeObj.title4,
+        customTitle5: nativeObj.customTitle5 || nativeObj.title5,
+
+        customBody1: nativeObj.customBody1 || nativeObj.body1,
+        customBody2: nativeObj.customBody2 || nativeObj.body2,
+        customBody3: nativeObj.customBody3 || nativeObj.body3,
+        customBody4: nativeObj.customBody4 || nativeObj.body4,
+        customBody5: nativeObj.customBody5 || nativeObj.body5,
+
+        customCta1: nativeObj.customCta1 || nativeObj.ctatext1,
+        customCta2: nativeObj.customCta2 || nativeObj.ctatext2,
+        customCta3: nativeObj.customCta3 || nativeObj.ctatext3,
+        customCta4: nativeObj.customCta4 || nativeObj.ctatext4,
+        customCta5: nativeObj.customCta5 || nativeObj.ctatext5,
+
+        customDisplayUrl1: nativeObj.customDisplayUrl1 || nativeObj.displayurl1,
+        customDisplayUrl2: nativeObj.customDisplayUrl2 || nativeObj.displayurl2,
+        customDisplayUrl3: nativeObj.customDisplayUrl3 || nativeObj.displayurl3,
+        customDisplayUrl4: nativeObj.customDisplayUrl4 || nativeObj.displayurl4,
+        customDisplayUrl5: nativeObj.customDisplayUrl5 || nativeObj.displayurl5,
+
+        customSocialUrl1: nativeObj.customSocialUrl1 || nativeObj.socialurl1,
+        customSocialUrl2: nativeObj.customSocialUrl2 || nativeObj.socialurl2,
+        customSocialUrl3: nativeObj.customSocialUrl3 || nativeObj.socialurl3,
+        customSocialUrl4: nativeObj.customSocialUrl4 || nativeObj.socialurl4,
+        customSocialUrl5: nativeObj.customSocialUrl5 || nativeObj.socialurl5,
+
+        customImage1: nativeObj.customImage1 || nativeObj.image1,
+        customImage2: nativeObj.customImage2 || nativeObj.image2,
+        customImage3: nativeObj.customImage3 || nativeObj.image3,
+        customImage4: nativeObj.customImage4 || nativeObj.image4,
+        customImage5: nativeObj.customImage5 || nativeObj.image5,
+
+        customIcon1: nativeObj.customIcon1 || nativeObj.icon1,
+        customIcon2: nativeObj.customIcon2 || nativeObj.icon2,
+        customIcon3: nativeObj.customIcon3 || nativeObj.icon3,
+        customIcon4: nativeObj.customIcon4 || nativeObj.icon4,
+        customIcon5: nativeObj.customIcon5 || nativeObj.icon5,
+
+        customSocialIcon1: nativeObj.customSocialIcon1 || nativeObj.socialicon1,
+        customSocialIcon2: nativeObj.customSocialIcon2 || nativeObj.socialicon2,
+        customSocialIcon3: nativeObj.customSocialIcon3 || nativeObj.socialicon3,
+        customSocialIcon4: nativeObj.customSocialIcon4 || nativeObj.socialicon4,
+        customSocialIcon5: nativeObj.customSocialIcon5 || nativeObj.socialicon5
+    };
+}
+
+nativeObj = standardizeNativeObj(nativeObj || {});
+
+var content = '';
+var targetContainer = document.getElementById(targetId);
+var _getField = function(prop){
+    return prop.split('.').reduce(function(a, b) { return a ? a[b] : undefined; }, nativeObj) || '';
+};
+
+content += '\x3C!--Entire Ad--\>\n<div class=\"xandr-basic-img-left\">\n    \x3C!--All assets are links--\>\n      \x3C!--Icon--\>\n      <img class=\"xandr-icon\" src=\"'+ _getField('icon.url') + '\"/>\n      \x3C!--AdChoices--\>\n      <div class=\"adchoices\"> <img class=\"xandr-adchoices\" src=\"https://choices.trustarc.com/get?name=admarker-full-tl.png\"/> <\/div>\n      \x3C!--Image--\>\n      <img class=\"xandr-image\" src=\"'+ _getField('image.url') + '\"/>\n      \x3C!--Text Section--\>\n      <div class=\"xandr-txt-wrapper\">\n          \x3C!--Sponsored By--\>\n          <span class=\"xandr-sponsored-by\">Sponsored by: '+ _getField('sponsoredBy') + '<\/span>\n          \x3C!--Title--\>\n          <h1 class=\"xandr-title\">'+ _getField('title') + '<\/h1>\n          \x3C!--Body Text--\>\n          <p class=\"xandr-body\">'+ _getField('body') + '<\/p>\n      <\/div>\n<\/div>\n\n\x3C!--Trackers--\>\n\n\n';
+
+content += '<style>\/* Entire Ad */\n.xandr-basic-img-left {\n  display:inline-block;\n  font-family:Helvetica Neue, Helvetica, Arial, sans-serif;\n  max-width: 600px;\n  position: relative;\n  cursor: pointer;\n  background: #FFF;\n}\n\n/* Icon */\n.xandr-basic-img-left .xandr-icon {\n    position: absolute;\n    top: 5px;\n    left: 5px;\n    width: 20px;\n}\n\n/* AdChoices */\n.xandr-basic-img-left .xandr-adchoices {\n    position: absolute;\n    top: 0px;\n    right: 0px;\n    background: rgba(255, 255, 255);\n}\n\n/* Image */\n.xandr-basic-img-left .xandr-image {\n  float: left;\n  margin-right: 15px;\n  max-width: 40%;\n}\n\n/* Text Wrapper */\n.xandr-basic-img-left .xandr-txt-wrapper {\n  overflow: hidden;\n}\n\n/* Sponsored By */\n.xandr-basic-img-left .xandr-sponsored-by {\n  color: gray;\n  font-size: 12px;\n  font-weight: bold;\n}\n\n/* Title */\n.xandr-basic-img-left .xandr-title {\n  font-weight: bold;\n  color: black;\n  font-size: 18px;\n  margin: 4px 0 7px 0;\n}\n\n/* Body Text */\n.xandr-basic-img-left .xandr-body {\n  color: gray;\n  font-size: 12px;\n  margin: 0;\n}</style>';
+
+var _apnNewNodesContainer = document.createElement('div');
+_apnNewNodesContainer.innerHTML = content;
+
+var _apnChildren, _apnI;   // temp vars
+
+if (_apnTargetDivCache.length > 0) {
+    _apnChildren = Array.prototype.slice.call(targetContainer.childNodes);  // Duplicate children to avoid multiple live-DOM operations
+    for (_apnI = _apnTargetDivCache.length - 1; _apnI >= 0; _apnI--) {
+        var _apnRef = _apnTargetDivCache[_apnI];
+        var _apnIdx = _apnChildren.indexOf(_apnRef);
+        if (_apnIdx >= 0) {
+            targetContainer.removeChild(_apnChildren[_apnIdx]);
+        }
+        // we want to mutate the original adNodeCache[currentTag.targetId] array (aka _apnTargetDivCache) instead of redefining it
+        _apnTargetDivCache.pop();
+    }
+}
+
+// Slice children so that the childNodes.length doesn't get updated as we remove nodes from the container and append
+// it to targetContainer (note: appendChild removes nodes from newNodesContainer).
+_apnChildren = Array.prototype.slice.call(_apnNewNodesContainer.childNodes);
+while(_apnChildren.length) {
+    targetContainer.appendChild(_apnChildren[0]);
+    _apnTargetDivCache.push(_apnChildren[0]);
+    _apnChildren.shift();
+}
+
+const container = document.getElementById(targetId);
+    
+container.addEventListener('click', () => {
+  window.open(nativeObj.clickUrl, '_blank');
+});
+
+document.getElementsByClassName('adchoices')[0]
+        .addEventListener('click', function (event) {
+           window.open(nativeObj.privacyLink, '_blank'); 
+           event.stopPropagation();
+        });
+
+// If winning creative doesn't have one of these optional fields, 
+// remove corresponding section from the HTML
+
+// Winning creative doesn't include an icon
+if(nativeObj.icon === undefined || nativeObj.icon.url === undefined) {
+  const icon = container.querySelector('.xandr-icon');
+  icon.parentElement.removeChild(icon);
+}
+
+// Winning creative doesn't include a privacy link
+if(nativeObj.privacyLink === null || nativeObj.privacyLink === undefined || nativeObj.privacyLink === "") {
+  container.querySelector('.xandr-adchoices').style.display = "none";
+}
+;
+
+(function(impTrackers){
+    for(var i = 0; i < impTrackers.length; i++) {
+        var url = impTrackers[i];
+        var img = document.createElement('img');
+
+        img.src = url;
+        img.height = 1;
+        img.width = 1;
+        img.style.display = 'none';
+
+        document.body.appendChild(img);
+    }
+})(nativeObj.impressionTrackers || []);
+(function(javascriptTrackers){
+    var parseJsTrackers = function(str) {
+        var urls = [], regex = /(?:<script.+?)(?:src=\")(.+?)\".*?>(?:(?:<\/script>|<\/scr' \+ 'ipt>))/g, result;
+        while((result = regex.exec(str)) !== null) {
+            urls.push(result[1]);
+        }
+        return urls;
+    };
+
+    var jsTrackers = parseJsTrackers(javascriptTrackers) || [];
+
+    for(var i = 0; i < jsTrackers.length; i++) {
+        var d = document, scr = d.createElement('script'), tar = d.getElementsByTagName('head')[0];
+        scr.type = 'text/javascript'; scr.async = true;
+        scr.src = jsTrackers[i];
+        tar.insertBefore(scr, tar.firstChild);
+    }
+})(nativeObj.javascriptTrackers || '');
+(function(clickTrackers){
+    var fireRequest = function(url) {
+        var request = new XMLHttpRequest();
+        request.open('GET', url);
+        request.send();
+    };
+    targetContainer.addEventListener('click', function() {
+        for(var j = 0; j < clickTrackers.length; j++) {
+            fireRequest(clickTrackers[j]);
+        }
+    });
+})(nativeObj.clickTrackers || []);
+}
+
+if (window.apntag && window.apntag.registerRenderer) {
+    var adNodeCache = window.apnanc = (window.apnanc || {});
+    apntag.registerRenderer('1928', {
+        renderAd: function(currentTag, handleEventCallback){
+            var _apnTargetDivCache = adNodeCache[currentTag.targetId] = (adNodeCache[currentTag.targetId] || []);
+            var handler = function handler(adObj) {
+                render_1928(adObj['native'], adObj.targetId, _apnTargetDivCache);
+                apntag.offEvent('adLoaded', currentTag.targetId, handler);
+            }
+            apntag.onEvent('adLoaded', currentTag.targetId, handler);
+            handleEventCallback(currentTag.targetId, 'adLoaded');
+        }
+    });
+}

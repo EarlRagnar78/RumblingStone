@@ -1,0 +1,80 @@
+Adrick Garthun, male dwarf fighter 5/rogue 5:
+CR 11; 
+Medium humanoid (dwarf); HD 5d10+5d6+20;
+hp 68; In.it +2;
+Spd 20 ft.; 
+AC 18, touch 12, flat-footed 16; 
+Base Atk +8; Grp +12; Atk +14 melee (ld10+7/x3, +1
+dwarven wara.xe) or +10 ranged (ld8/19-20, light cross-
+bow); 
+Full Atk +14/+9 melee (ld10+7/x3, +1 dwarven wara.xe) or +10 ranged (ld8/19-20, light crossbow); SA sneak attack +2d6;
+SQ darkvision 60 ft., dwarf traits, evasion, trap sense +l, trapfinding, uncanny dodge; AL LE;
+
+SV Fort +7 (+11 against poison), Ref +7, Will +4; 
++2 vs incantesimi
+
+Str 18,Dex 15, Con 14, Int 11, Wis 11, Cha 14.
+
+Skills: Appraise +5, Balance +4, Climb +8, Diplomacy +4,
+Hide +7, Intimidate +11, Jump +10, Listen +1, Move Silently +11,
+Sense Motive +5, Spot +5, Swim +8, tumble +7.
+
+
+Feats: Cleave, Dodge, Great Cleave, Iron Will, Power
+Attack, Weapon Focus (dwarven waraxe), Weapon Specialization (dwarven waraxe).
+
+Lan9ua9es: Common, Dwarven.
+Possessions: +1 studded leather armor, +l light steel shield,
++1 dwarven wamxe, belt of giant strength +2, light crossbow with 10 bolts, 
+leather half-mask set with a black diamond (1,000 gp),2 potion cura ferite medie.
+Spell-Like Abilities: 1/day—enlarge person and invisibility as a wizard of twice the duergar’s class level (minimum caster level 3rd); these abilities affect only the duergar and whatever it carries.
+
+~ Daxavalt and Kerg, male dwarf fighter 6: CR 6; Me-
+dium humanoid (dwarf); HD 6d10+18; hp 62, 60; lnit +l;
+Spd 20 ft.; AC 19, touch 11, flat-footed 18; Base Atk +6;
+Grp +9; Atk +12 melee {ld8+7/x3, +2 dwarven ur.grosh) or
++7 ranged {ldl0/19-20, heavy crossbow); Full Atk +10/+5
+melee {ld8+7/x3, +2 d111arven ur9rosh) and +10 melee
+{ld6+5/x3, +2 d111arven llr.!Jrosh) or +10 ranged (ldS/19-20,
+light crossbow); SQ darkvision 60 ft., dwarf traits; AL
+LE; SY Fort +8 (+12 against poison), Ref +3, Will +3; Str
+16, Dex 13, Con 16, Int 8, Wis 12, Cha 8.
+Skills: Intimidate +4, Jump -4.
+Feats: Cleave, Dodge, Great Cleave, Power Attack, 1\vo-
+Weapon Fighting, Weapon Focus (dwarven urgrosh),
+Weapon Specialization (dwarven urgrosh).
+Languanes: Common, Dwarven.
+Possessions: Masterwork full plate armor, +2 d1varven
+11rgrosh, heavy crossbow with 10 bolts, pouch containing
+2d6 gems (worth 100 gp each).
+
+
+
+Zenith Splintershield, male dwarf fighter 7 /
+dwarven defender 3: CR 10; Medium humanoid; HD
+7dl0+24 plus 3d12+9; hp 88; Init +1; Spd 20 ft.; AC 24,
+touch 12, flat-footed 23; Base Atk +10; Grp +14; Atk +16
+melee (ld10+7/19-20/x3, +l d111arven waraxe); Full Atk
++16/+11 melee {ld10+7/19-20/x3, +l d111arven 111araxe);
+SA-; SQ dwarf traits, defensive stance 2/day, uncanny
+dodge; AL LE; SV Fort +11, Ref +4, Will +4; Str 19, Dex 13,
+Con 16, Int 10, Wis 8, Cha 12.
+Skr?ls: Intimidate +11, Jump +8, Sense Motive +2,
+Spot +2.
+Feats: Dodge, Endurance, Improved Critical (dwarven
+waraxe), Power Attack, Quick Draw, Toughness, Weapon
+Focus (dwarven
+waraxe),
+Weapon
+Specialization
+(dwarven wara:xe).
+Languages: Common, Dwarven.
+Defensive Stance: Zenith's defensive stance lasts for 8
+rounds. It gives him +2 to Slr, +4 to Con, +2 on saves,
+and +4 to AC. His stats change to hp 108; AC 28; Full Atk
++17/+12 melee {ldl0+8/19-20/x3, +1 dwarve11 111araxe);
+Fort +15, Ref +6, Will +6 (not factoring in Zenith's
+dwarven bonuses); Str 21, Con 20.
+Possessions: +lji1ll plate, +1 heavy steel shield, +1 d111arven
+111araxe, naur1tlets of 09re poiver +2, amulet of health +2,
+sphere of tl1e unseen.

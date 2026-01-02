@@ -1,0 +1,156 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body><script type="text/javascript">/*_hs_*/;!function () {
+	if (!window.sas_snippets) {
+		window.sas_snippets = {
+			"csync": "1"
+		};
+		if (navigator && navigator.platform) { {
+				var sasIsIosUiwebview = false;
+				if (navigator.platform.substr(0, 2) === 'iP') { {
+						var lte9 = /constructor/i.test(window.HTMLElement);
+						var nav = window.navigator,
+						ua = nav.userAgent,
+						idb = !!window.indexedDB;
+						if (ua.indexOf('Safari') !== -1 && ua.indexOf('Version') !== -1 && !nav.standalone) { {
+								sasIsIosUiwebview = false;
+
+							}
+						} else if ((!idb && lte9) || !window.statusbar.visible) { {
+								sasIsIosUiwebview = true;
+
+							}
+						} else if ((window.webkit && window.webkit.messageHandlers) || !lte9 || idb) { {
+								sasIsIosUiwebview = true;
+
+							}
+						}
+
+					}
+				}
+				if (!sasIsIosUiwebview) {
+					var iframe = document.createElement("iframe");
+					iframe.scrolling = 'no';
+					iframe.frameBorder = 0;
+					iframe.width = 0;
+					iframe.height = 0;
+					iframe.style.margin = 0;
+					iframe.style.padding = 0;
+					iframe.style.display = 'none';
+					iframe.style.width = '0px';
+					iframe.style.height = '0px';
+					iframe.style.visibility = 'hidden';
+					var dc_id = "14";
+					if (dc_id === "5") {
+						iframe.src = "https://secure-assets.rubiconproject.com/utils/xapi/multi-sync.html?p=smartadserver&endpoint=us-east";
+					}else if (dc_id === "8") {
+						iframe.src = "https://secure-assets.rubiconproject.com/utils/xapi/multi-sync.html?p=smartadserver&endpoint=apac";
+					} else {
+						iframe.src = "https://secure-assets.rubiconproject.com/utils/xapi/multi-sync.html?p=smartadserver&endpoint=eu";
+					}
+					document.body.appendChild(iframe);
+				}
+			}
+		}
+	}
+}
+();
+;var sas = sas || {};
+if(sas && sas.events && sas.events.fire && typeof sas.events.fire === "function" )
+        sas.events.fire("ad", { tagId: "1010-5e6a1604db8f36673d618adb", formatId: 82113 }, "1010-5e6a1604db8f36673d618adb");;/*_hs_*/(()=>{"use strict";var t={4084:(t,e)=>{Object.defineProperty(e,"__esModule",{value:!0}),e.LoadManager=void 0;class s{constructor(){this.scripts=new Map,this.callbacks=[]}static getUrls(t){const e=window.sas,s="string"==typeof t?[t]:t,a=e.utils.cdns[location.protocol]||e.utils.cdns["https:"]||"https://ced-ns.sascdn.com";return s.map((t=>a.replace(/\/+$/,"")+"/"+t.replace(/^\/+/,"")))}static loadLink(t){const e=document.createElement("link");e.rel="stylesheet",e.href=t,document.head.appendChild(e)}static loadLinkCdn(t){s.getUrls(t).forEach(s.loadLink)}loadScriptCdn(t,e){const a=s.getUrls(t);for(const t of a){let e=this.scripts.get(t);e||(e={url:t,loaded:!1},this.scripts.set(t,e),this.loadScript(e))}(null==e?void 0:e.onLoad)&&(this.callbacks.push({called:!1,dependencies:a,function:e.onLoad}),this.executeCallbacks())}onScriptLoad(t){t.loaded=!0,this.executeCallbacks()}loadScript(t){const e=document.currentScript,s=document.createElement("script");s.onload=()=>this.onScriptLoad(t),s.src=t.url,e?(e.insertAdjacentElement("afterend",s),window.sas.currentScript=e):document.head.appendChild(s)}executeCallbacks(){this.callbacks.forEach((t=>{!t.called&&t.dependencies.every((t=>{var e;return null===(e=this.scripts.get(t))||void 0===e?void 0:e.loaded}))&&(t.called=!0,t.function())})),this.callbacks=this.callbacks.filter((t=>!t.called))}}e.LoadManager=s}},e={};function s(a){var c=e[a];if(void 0!==c)return c.exports;var l=e[a]={exports:{}};return t[a](l,l.exports,s),l.exports}(()=>{const t=s(4084);window.sas=window.sas||{};const e=window.sas;e.utils=e.utils||{},e.utils.cdns=e.utils.cdns||{},e.utils._callbacks=e.utils._callbacks||{},e.events=e.events||{};const a=e.utils.loadManager||new t.LoadManager;e.utils.loadManager=a,e.utils.loadScriptCdn=a.loadScriptCdn.bind(a),e.utils.loadLinkCdn=t.LoadManager.loadLinkCdn})()})();
+
+(function(sas) {
+	var config = {
+		insertionId: Number(8894466),
+		pageId: '1142658',
+		pgDomain: 'http%3a%2f%2fwww.d20srd.org',
+		sessionId: new Date().getTime(),
+		baseUrl: 'http://www14.smartadserver.com',
+		formatId: Number(82113),
+		tagId: '1010-5e6a1604db8f36673d618adb',
+		oba: Number(0),
+		isAsync: window.sas_ajax || true,
+		customScript: String(''),
+		filePath: (document.location.protocol == 'https:' ? 'https://ced-ns.sascdn.com' : 'http://ced-ns.sascdn.com') + '/diff/templates/',
+		creative: {
+			id: Number(0),
+			url: '',
+			type: Number(0),
+			width: Number(('728' === '100%') ? 0 : '728'),
+			height: Number(('90' === '100%') ? 0 : '90'),
+			clickUrl: 'http://euw2.smartadserver.com/click?imgid=0&insid=8894466&pgid=1142658&fmtid=82113&ckid=2609903269625977245&uii=4804903859170415167&acd=1720129527243&opid=fef82c8c-82b1-4a8d-a05a-6948fa2706fe&opdt=1720129527243&tmstp=9496972984&tgt=%24dt%3d1t&systgt=%24qc%3d1307015077%3b%24ql%3dMedium%3b%24qpc%3d40121%3b%24qt%3d197_3234_86035t%3b%24dma%3d0%3b%24qo%3d5%3b%24b%3d12999%3b%24o%3d11100%3b%24wpc%3d3023%2c3962%2c4234%2c4238%2c8041%2c8260%2c8142%2c7900%2c8261%2c7983%2c8258%2c8643%2c8644%2c8646%2c8197%2c8259%2c8645%2c19086%2c21023%2c30017%2c21051%2c21052%2c21053%2c21055%2c21056%2c21057%2c21058%2c21059%2c21060%2c21061%2c21088%2c21089%2c20583%2c21024%2c21043%2c21085%2c21087%2c20592%2c20612%2c18975%2c18976%2c21344%2c21247%2c21338%2c21508%2c21510%2c21479%2c21506%2c21471%2c21478%2c21499%2c21514%2c21587%2c21593%2c21585%2c21594%2c21586%2c21584%2c30024%2c30022%2c30023%2c18382%2c18964%2c18965%2c18971%2c18973%2c18978%2c18980%2c18981%2c18988%2c18990%2c18993%2c18999%2c19024%2c19026%2c19028%2c19033%2c19035%2c19037%2c19039%2c19042%2c19048%2c19049%2c19052%2c19056%2c19057%2c19060%2c19061%2c19069%2c19079%2c19081%2c19082%2c19089%2c19099%2c19119%2c19121%2c19122%2c19127%2c19128%2c19130%2c19147%2c19150%2c19151%2c19153%2c19155%2c19158%2c19160%2c19162%2c19164%2c19166%2c19168%2c19170%2c19171%2c19174%2c19175%2c19178%2c19180%2c19181%2c19183%2c19185%2c19187%2c19190%2c19192%2c19193%2c19194%2c19196%2c19198%2c19200%2c19202%2c19205%2c19514%2c19516%2c20244%2c19658%2c19519%2c19473%2c19484%2c32128%2c32452%2c32467%2c32466%2c37534%2c38228%2c38906%2c38940%2c38914%2c39026%2c38923%2c39105%2c38926%2c39117%2c32133%2c11030%2c11031%2c8770%2c8736%2c8740%2c8823%2c8845%2c8878%2c8835%2c8876%2c8802%2c8798%2c8782%2c8820&envtype=0&imptype=0&bldv=17958&bid=1&bidnwid=3490&bidid=5257429103861908907&bidh=799a3cc134ba9ee1669f1665538d0704d0ed8f14&bidtime=638557263272506936&bidenv=0&gdpr=1&gdpr_consent=CQBOvwAQBOvwAEsACBENA7EoAP_gAEPgAAwIJhMR9C_sTSFDcX53KfskaY1P0LhwbsQxBhaBEwIFyJKQNJQEgGEhNAngBCACCBAEMFYBIQMAEAAAAVCAYIARJwAMYAwUIBJIJAAAAAEQGUQYCAAEgAEgUAIIgiC1EEQhkAiEUItISIgCgABGEACACCQgAIAAAgABAUIASAEIEAAEQDwQkAkAmAAAAgEAABBIAMAASCBAIAAAAQTrYj6F3YmkKG8PCvQ-ZIURqyoWAg1YBiACkCBgQBkSUgaQgBIMJGAJNAAEAAECAIQKgCQAIQABAAAKECgQAiTiAYABgAQCSQQAAAAEIgMIAgAAAJAAJAgAQTAEBMIIhTAhGIgRaEkBAEACAEIAEAEEAAAQAABAACIoQAkAIAAEAJgCgBIBIBMAAABAAAACCQAYAAkkAAQAAAAgAAAAABAA.f_wAAAAAAAA&pgDomain=http%3a%2f%2fwww.d20srd.org%2fsrd%2fmonsters%2fdemon.htm&cappid=2609903269625977245&eqs=5ffa4541b061cd4942ea8ca17a0f2d67808bd3b8&go=',
+			clickUrlArray: ["http://euw2.smartadserver.com/click?imgid=0&insid=8894466&pgid=1142658&fmtid=82113&ckid=2609903269625977245&uii=4804903859170415167&acd=1720129527243&opid=fef82c8c-82b1-4a8d-a05a-6948fa2706fe&opdt=1720129527243&tmstp=9496972984&tgt=%24dt%3d1t&systgt=%24qc%3d1307015077%3b%24ql%3dMedium%3b%24qpc%3d40121%3b%24qt%3d197_3234_86035t%3b%24dma%3d0%3b%24qo%3d5%3b%24b%3d12999%3b%24o%3d11100%3b%24wpc%3d3023%2c3962%2c4234%2c4238%2c8041%2c8260%2c8142%2c7900%2c8261%2c7983%2c8258%2c8643%2c8644%2c8646%2c8197%2c8259%2c8645%2c19086%2c21023%2c30017%2c21051%2c21052%2c21053%2c21055%2c21056%2c21057%2c21058%2c21059%2c21060%2c21061%2c21088%2c21089%2c20583%2c21024%2c21043%2c21085%2c21087%2c20592%2c20612%2c18975%2c18976%2c21344%2c21247%2c21338%2c21508%2c21510%2c21479%2c21506%2c21471%2c21478%2c21499%2c21514%2c21587%2c21593%2c21585%2c21594%2c21586%2c21584%2c30024%2c30022%2c30023%2c18382%2c18964%2c18965%2c18971%2c18973%2c18978%2c18980%2c18981%2c18988%2c18990%2c18993%2c18999%2c19024%2c19026%2c19028%2c19033%2c19035%2c19037%2c19039%2c19042%2c19048%2c19049%2c19052%2c19056%2c19057%2c19060%2c19061%2c19069%2c19079%2c19081%2c19082%2c19089%2c19099%2c19119%2c19121%2c19122%2c19127%2c19128%2c19130%2c19147%2c19150%2c19151%2c19153%2c19155%2c19158%2c19160%2c19162%2c19164%2c19166%2c19168%2c19170%2c19171%2c19174%2c19175%2c19178%2c19180%2c19181%2c19183%2c19185%2c19187%2c19190%2c19192%2c19193%2c19194%2c19196%2c19198%2c19200%2c19202%2c19205%2c19514%2c19516%2c20244%2c19658%2c19519%2c19473%2c19484%2c32128%2c32452%2c32467%2c32466%2c37534%2c38228%2c38906%2c38940%2c38914%2c39026%2c38923%2c39105%2c38926%2c39117%2c32133%2c11030%2c11031%2c8770%2c8736%2c8740%2c8823%2c8845%2c8878%2c8835%2c8876%2c8802%2c8798%2c8782%2c8820&envtype=0&imptype=0&bldv=17958&bid=1&bidnwid=3490&bidid=5257429103861908907&bidh=799a3cc134ba9ee1669f1665538d0704d0ed8f14&bidtime=638557263272506936&bidenv=0&gdpr=1&gdpr_consent=CQBOvwAQBOvwAEsACBENA7EoAP_gAEPgAAwIJhMR9C_sTSFDcX53KfskaY1P0LhwbsQxBhaBEwIFyJKQNJQEgGEhNAngBCACCBAEMFYBIQMAEAAAAVCAYIARJwAMYAwUIBJIJAAAAAEQGUQYCAAEgAEgUAIIgiC1EEQhkAiEUItISIgCgABGEACACCQgAIAAAgABAUIASAEIEAAEQDwQkAkAmAAAAgEAABBIAMAASCBAIAAAAQTrYj6F3YmkKG8PCvQ-ZIURqyoWAg1YBiACkCBgQBkSUgaQgBIMJGAJNAAEAAECAIQKgCQAIQABAAAKECgQAiTiAYABgAQCSQQAAAAEIgMIAgAAAJAAJAgAQTAEBMIIhTAhGIgRaEkBAEACAEIAEAEEAAAQAABAACIoQAkAIAAEAJgCgBIBIBMAAABAAAACCQAYAAkkAAQAAAAgAAAAABAA.f_wAAAAAAAA&pgDomain=http%3a%2f%2fwww.d20srd.org%2fsrd%2fmonsters%2fdemon.htm&cappid=2609903269625977245&eqs=5ffa4541b061cd4942ea8ca17a0f2d67808bd3b8&go="],
+			oryginalClickUrl: '',
+			clickTarget: '_blank',
+			agencyCode: String('<img src=\'http://euw2.smartadserver.com/h/aip?uii=4804903859170415167&amp;tmstp=9496972984&amp;ckid=2609903269625977245&amp;systgt=%24qc%3d1307015077%3b%24ql%3dMedium%3b%24qpc%3d40121%3b%24qt%3d197_3234_86035t%3b%24dma%3d0%3b%24qo%3d5%3b%24b%3d12999%3b%24o%3d11100%3b%24wpc%3d3023%2c3962%2c4234%2c4238%2c8041%2c8260%2c8142%2c7900%2c8261%2c7983%2c8258%2c8643%2c8644%2c8646%2c8197%2c8259%2c8645%2c19086%2c21023%2c30017%2c21051%2c21052%2c21053%2c21055%2c21056%2c21057%2c21058%2c21059%2c21060%2c21061%2c21088%2c21089%2c20583%2c21024%2c21043%2c21085%2c21087%2c20592%2c20612%2c18975%2c18976%2c21344%2c21247%2c21338%2c21508%2c21510%2c21479%2c21506%2c21471%2c21478%2c21499%2c21514%2c21587%2c21593%2c21585%2c21594%2c21586%2c21584%2c30024%2c30022%2c30023%2c18382%2c18964%2c18965%2c18971%2c18973%2c18978%2c18980%2c18981%2c18988%2c18990%2c18993%2c18999%2c19024%2c19026%2c19028%2c19033%2c19035%2c19037%2c19039%2c19042%2c19048%2c19049%2c19052%2c19056%2c19057%2c19060%2c19061%2c19069%2c19079%2c19081%2c19082%2c19089%2c19099%2c19119%2c19121%2c19122%2c19127%2c19128%2c19130%2c19147%2c19150%2c19151%2c19153%2c19155%2c19158%2c19160%2c19162%2c19164%2c19166%2c19168%2c19170%2c19171%2c19174%2c19175%2c19178%2c19180%2c19181%2c19183%2c19185%2c19187%2c19190%2c19192%2c19193%2c19194%2c19196%2c19198%2c19200%2c19202%2c19205%2c19514%2c19516%2c20244%2c19658%2c19519%2c19473%2c19484%2c32128%2c32452%2c32467%2c32466%2c37534%2c38228%2c38906%2c38940%2c38914%2c39026%2c38923%2c39105%2c38926%2c39117%2c32133%2c11030%2c11031%2c8770%2c8736%2c8740%2c8823%2c8845%2c8878%2c8835%2c8876%2c8802%2c8798%2c8782%2c8820&amp;acd=1720129527243&amp;envtype=0&amp;opid=fef82c8c-82b1-4a8d-a05a-6948fa2706fe&amp;opdt=1720129527243&amp;siteid=320796&amp;tgt=%24dt%3d1t&amp;gdpr=1&amp;gdpr_consent=CQBOvwAQBOvwAEsACBENA7EoAP_gAEPgAAwIJhMR9C_sTSFDcX53KfskaY1P0LhwbsQxBhaBEwIFyJKQNJQEgGEhNAngBCACCBAEMFYBIQMAEAAAAVCAYIARJwAMYAwUIBJIJAAAAAEQGUQYCAAEgAEgUAIIgiC1EEQhkAiEUItISIgCgABGEACACCQgAIAAAgABAUIASAEIEAAEQDwQkAkAmAAAAgEAABBIAMAASCBAIAAAAQTrYj6F3YmkKG8PCvQ-ZIURqyoWAg1YBiACkCBgQBkSUgaQgBIMJGAJNAAEAAECAIQKgCQAIQABAAAKECgQAiTiAYABgAQCSQQAAAAEIgMIAgAAAJAAJAgAQTAEBMIIhTAhGIgRaEkBAEACAEIAEAEEAAAQAABAACIoQAkAIAAEAJgCgBIBIBMAAABAAAACCQAYAAkkAAQAAAAgAAAAABAA.f_wAAAAAAAA&amp;bldv=17958&amp;visit=S&amp;statid=1&amp;imptype=0&amp;intgtype=3&amp;pgDomain=http%3a%2f%2fwww.d20srd.org%2fsrd%2fmonsters%2fdemon.htm&amp;cappid=2609903269625977245&amp;capp=0&amp;mcrdbt=0&amp;insid=8894466&amp;imgid=0&amp;pgid=1142658&amp;fmtid=82113&amp;isLazy=0&amp;rtb=1&amp;rtbnid=3490&amp;rtbbid=5257429103861908907&amp;rtbh=799a3cc134ba9ee1669f1665538d0704d0ed8f14&amp;rtblt=638557263272506936&amp;rtbet=0&amp;rtbptnid=22&amp;cftgid=ee0c55ffdb13\' border=\'0\' width=\'0\' height=\'0\' style=\'display:none\'/><iframe src=\'https://apps.sascdn.com/rtb/transparency/handler/st.min.html?%7b%22bid%22%3a%224a8b2bc3-0693-418f-97b5-23d001890908%22%2c%22adomain%22%3a%22powbet.com%22%2c%22page%22%3a%221142658%22%2c%22format%22%3a%2282113%22%2c%22crid%22%3a%2274315679%22%2c%22dsp%22%3a%2222%22%2c%22buyer%22%3a%22258445%22%2c%22cid%22%3a%223288393%22%2c%22adid%22%3a%2274315679%22%2c%22hash%22%3a%221411958480765484275%22%7d\' width=\'0\' scrolling=\'no\' height=\'0\' frameborder=\'0\' style=\'display: none;\'></iframe><scr'+'ipt type=\'text/javascript\' src=\'https://track.adform.net/adfscript/?bn=74315679;rtbwp=hMwqdoovWlMQkV63RgB2a9VLTX1c_S4FGoHTIA;rtbdata=RA4tnP8_8B9HF8AV6qUPEnZJZHnHD0MKkorjYiB_1uanY89KZeMCdNkA530ZCkpMxTE492rUIb3tFlC3z5djaem-zeLbDTN8NnxqzmyCaOJtyxiB1KG_OEPgox5EzDqmtr_IrXVVnnqSQv0mC4kpMskBYGjxU5uVSsaOCn48E32W48ugEgwd2zKZ02JNErjR0uORqBm4s7QM9ed9tqYIPE9WHA2pQJbGCSk1H46EV4QCXHYZH_ERZS-IrW5zpTgt1o3j0wEUceqv_QYLGGtEGdjhtom-BNgDi6LQD9PN2xLAh9dL5n6_Cc7-AhJ5uggc8c1XWMI9brWQPKttd80wbHs5Lp6MLYfEfQocQQO7qbGYEqjuzG8kYLCC8TFGMRySFiiKhlexN98Q-BGzMAxsKQRb1KdB0lkKa0b8CmUtV3QncC6aflbCRGASjYzVbd8p7wdN8UmDpRXp9w75tqAnTHsWmmakTP6Yu12sI2XtusmzX0ElK3vcEPYyepqEVefn3ybpcDZ9G6YR7Pn548zpoW8DwmZ4CrcCKNk2ehmYr2psRWPjD439aXAJUoGdrwq3bJky0_7du2d9mmTMTTWCJ3qW0dpJayui0JoOyguv1oJ1cafKM8wlqZykr2QvvRthVaoDYVJhePmizE_21T8XoUiO21uIwdLKWShbbL1h-bxai_VnVB-Pv9nOYIVCIeZhj5GxkGOV6K1VZ6B44ftIHVTgmpw_K3yTOPArz-Ij_VjESM5cvwtlNEx-T76y7xfNFo3UYFz9W3MHTkVDAV_LOfHx1nicn3lviltXlSpzYr3XaCs_oAPZkUD199hxQNwPoR4wv8sN_NyazbuisKnRq15zDBwehlwiBxmerISsM7r5Rd-91CFTotW0K25yBWK646JI0emYY6saMUmqDVcveEOIANFqADVNQGZV0EN2RWMzVYiCMWPTTCbUcjDjp92h4mGPdgKRYfJ6aIRQuwhu6zO7cyb0tiHEwAFcC04ZvwI1\'></scr'+'ipt>'),
+			creativeCountPixelUrl: 'http://euw2.smartadserver.com/h/aip?uii=4804903859170415167&tmstp=9496972984&ckid=2609903269625977245&systgt=%24qc%3d1307015077%3b%24ql%3dMedium%3b%24qpc%3d40121%3b%24qt%3d197_3234_86035t%3b%24dma%3d0%3b%24qo%3d5%3b%24b%3d12999%3b%24o%3d11100%3b%24wpc%3d3023%2c3962%2c4234%2c4238%2c8041%2c8260%2c8142%2c7900%2c8261%2c7983%2c8258%2c8643%2c8644%2c8646%2c8197%2c8259%2c8645%2c19086%2c21023%2c30017%2c21051%2c21052%2c21053%2c21055%2c21056%2c21057%2c21058%2c21059%2c21060%2c21061%2c21088%2c21089%2c20583%2c21024%2c21043%2c21085%2c21087%2c20592%2c20612%2c18975%2c18976%2c21344%2c21247%2c21338%2c21508%2c21510%2c21479%2c21506%2c21471%2c21478%2c21499%2c21514%2c21587%2c21593%2c21585%2c21594%2c21586%2c21584%2c30024%2c30022%2c30023%2c18382%2c18964%2c18965%2c18971%2c18973%2c18978%2c18980%2c18981%2c18988%2c18990%2c18993%2c18999%2c19024%2c19026%2c19028%2c19033%2c19035%2c19037%2c19039%2c19042%2c19048%2c19049%2c19052%2c19056%2c19057%2c19060%2c19061%2c19069%2c19079%2c19081%2c19082%2c19089%2c19099%2c19119%2c19121%2c19122%2c19127%2c19128%2c19130%2c19147%2c19150%2c19151%2c19153%2c19155%2c19158%2c19160%2c19162%2c19164%2c19166%2c19168%2c19170%2c19171%2c19174%2c19175%2c19178%2c19180%2c19181%2c19183%2c19185%2c19187%2c19190%2c19192%2c19193%2c19194%2c19196%2c19198%2c19200%2c19202%2c19205%2c19514%2c19516%2c20244%2c19658%2c19519%2c19473%2c19484%2c32128%2c32452%2c32467%2c32466%2c37534%2c38228%2c38906%2c38940%2c38914%2c39026%2c38923%2c39105%2c38926%2c39117%2c32133%2c11030%2c11031%2c8770%2c8736%2c8740%2c8823%2c8845%2c8878%2c8835%2c8876%2c8802%2c8798%2c8782%2c8820&acd=1720129527243&envtype=0&opid=fef82c8c-82b1-4a8d-a05a-6948fa2706fe&opdt=1720129527243&siteid=320796&tgt=%24dt%3d1t&gdpr=1&gdpr_consent=CQBOvwAQBOvwAEsACBENA7EoAP_gAEPgAAwIJhMR9C_sTSFDcX53KfskaY1P0LhwbsQxBhaBEwIFyJKQNJQEgGEhNAngBCACCBAEMFYBIQMAEAAAAVCAYIARJwAMYAwUIBJIJAAAAAEQGUQYCAAEgAEgUAIIgiC1EEQhkAiEUItISIgCgABGEACACCQgAIAAAgABAUIASAEIEAAEQDwQkAkAmAAAAgEAABBIAMAASCBAIAAAAQTrYj6F3YmkKG8PCvQ-ZIURqyoWAg1YBiACkCBgQBkSUgaQgBIMJGAJNAAEAAECAIQKgCQAIQABAAAKECgQAiTiAYABgAQCSQQAAAAEIgMIAgAAAJAAJAgAQTAEBMIIhTAhGIgRaEkBAEACAEIAEAEEAAAQAABAACIoQAkAIAAEAJgCgBIBIBMAAABAAAACCQAYAAkkAAQAAAAgAAAAABAA.f_wAAAAAAAA&bldv=17958&visit=S&statid=1&imptype=0&intgtype=3&pgDomain=http%3a%2f%2fwww.d20srd.org%2fsrd%2fmonsters%2fdemon.htm&cappid=2609903269625977245&capp=0&mcrdbt=0&insid=8894466&imgid=0&pgid=1142658&fmtid=82113&isLazy=0&rtb=1&rtbnid=3490&rtbbid=5257429103861908907&rtbh=799a3cc134ba9ee1669f1665538d0704d0ed8f14&rtblt=638557263272506936&rtbet=0&rtbptnid=22&cftgid=ee0c55ffdb13&rtbnc=nc',
+			creativeClickCountPixelUrl: 0 ? 'http://euw2.smartadserver.com/h/cp?imgid=0&insid=8894466&pgid=1142658&fmtid=82113&ckid=2609903269625977245&uii=4804903859170415167&acd=1720129527243&opid=fef82c8c-82b1-4a8d-a05a-6948fa2706fe&opdt=1720129527243&tmstp=9496972984&tgt=%24dt%3d1t&systgt=%24qc%3d1307015077%3b%24ql%3dMedium%3b%24qpc%3d40121%3b%24qt%3d197_3234_86035t%3b%24dma%3d0%3b%24qo%3d5%3b%24b%3d12999%3b%24o%3d11100%3b%24wpc%3d3023%2c3962%2c4234%2c4238%2c8041%2c8260%2c8142%2c7900%2c8261%2c7983%2c8258%2c8643%2c8644%2c8646%2c8197%2c8259%2c8645%2c19086%2c21023%2c30017%2c21051%2c21052%2c21053%2c21055%2c21056%2c21057%2c21058%2c21059%2c21060%2c21061%2c21088%2c21089%2c20583%2c21024%2c21043%2c21085%2c21087%2c20592%2c20612%2c18975%2c18976%2c21344%2c21247%2c21338%2c21508%2c21510%2c21479%2c21506%2c21471%2c21478%2c21499%2c21514%2c21587%2c21593%2c21585%2c21594%2c21586%2c21584%2c30024%2c30022%2c30023%2c18382%2c18964%2c18965%2c18971%2c18973%2c18978%2c18980%2c18981%2c18988%2c18990%2c18993%2c18999%2c19024%2c19026%2c19028%2c19033%2c19035%2c19037%2c19039%2c19042%2c19048%2c19049%2c19052%2c19056%2c19057%2c19060%2c19061%2c19069%2c19079%2c19081%2c19082%2c19089%2c19099%2c19119%2c19121%2c19122%2c19127%2c19128%2c19130%2c19147%2c19150%2c19151%2c19153%2c19155%2c19158%2c19160%2c19162%2c19164%2c19166%2c19168%2c19170%2c19171%2c19174%2c19175%2c19178%2c19180%2c19181%2c19183%2c19185%2c19187%2c19190%2c19192%2c19193%2c19194%2c19196%2c19198%2c19200%2c19202%2c19205%2c19514%2c19516%2c20244%2c19658%2c19519%2c19473%2c19484%2c32128%2c32452%2c32467%2c32466%2c37534%2c38228%2c38906%2c38940%2c38914%2c39026%2c38923%2c39105%2c38926%2c39117%2c32133%2c11030%2c11031%2c8770%2c8736%2c8740%2c8823%2c8845%2c8878%2c8835%2c8876%2c8802%2c8798%2c8782%2c8820&envtype=0&imptype=0&bldv=17958&bid=1&bidnwid=3490&bidid=5257429103861908907&bidh=799a3cc134ba9ee1669f1665538d0704d0ed8f14&bidtime=638557263272506936&bidenv=0&gdpr=1&gdpr_consent=CQBOvwAQBOvwAEsACBENA7EoAP_gAEPgAAwIJhMR9C_sTSFDcX53KfskaY1P0LhwbsQxBhaBEwIFyJKQNJQEgGEhNAngBCACCBAEMFYBIQMAEAAAAVCAYIARJwAMYAwUIBJIJAAAAAEQGUQYCAAEgAEgUAIIgiC1EEQhkAiEUItISIgCgABGEACACCQgAIAAAgABAUIASAEIEAAEQDwQkAkAmAAAAgEAABBIAMAASCBAIAAAAQTrYj6F3YmkKG8PCvQ-ZIURqyoWAg1YBiACkCBgQBkSUgaQgBIMJGAJNAAEAAECAIQKgCQAIQABAAAKECgQAiTiAYABgAQCSQQAAAAEIgMIAgAAAJAAJAgAQTAEBMIIhTAhGIgRaEkBAEACAEIAEAEEAAAQAABAACIoQAkAIAAEAJgCgBIBIBMAAABAAAACCQAYAAkkAAQAAAAgAAAAABAA.f_wAAAAAAAA&pgDomain=http%3a%2f%2fwww.d20srd.org%2fsrd%2fmonsters%2fdemon.htm&cappid=2609903269625977245&eqs=5ffa4541b061cd4942ea8ca17a0f2d67808bd3b8' : 'http://euw2.smartadserver.com/h/micp?imgid=0&insid=8894466&pgid=1142658&fmtid=82113&ckid=2609903269625977245&uii=4804903859170415167&acd=1720129527243&opid=fef82c8c-82b1-4a8d-a05a-6948fa2706fe&opdt=1720129527243&tmstp=9496972984&tgt=%24dt%3d1t&systgt=%24qc%3d1307015077%3b%24ql%3dMedium%3b%24qpc%3d40121%3b%24qt%3d197_3234_86035t%3b%24dma%3d0%3b%24qo%3d5%3b%24b%3d12999%3b%24o%3d11100%3b%24wpc%3d3023%2c3962%2c4234%2c4238%2c8041%2c8260%2c8142%2c7900%2c8261%2c7983%2c8258%2c8643%2c8644%2c8646%2c8197%2c8259%2c8645%2c19086%2c21023%2c30017%2c21051%2c21052%2c21053%2c21055%2c21056%2c21057%2c21058%2c21059%2c21060%2c21061%2c21088%2c21089%2c20583%2c21024%2c21043%2c21085%2c21087%2c20592%2c20612%2c18975%2c18976%2c21344%2c21247%2c21338%2c21508%2c21510%2c21479%2c21506%2c21471%2c21478%2c21499%2c21514%2c21587%2c21593%2c21585%2c21594%2c21586%2c21584%2c30024%2c30022%2c30023%2c18382%2c18964%2c18965%2c18971%2c18973%2c18978%2c18980%2c18981%2c18988%2c18990%2c18993%2c18999%2c19024%2c19026%2c19028%2c19033%2c19035%2c19037%2c19039%2c19042%2c19048%2c19049%2c19052%2c19056%2c19057%2c19060%2c19061%2c19069%2c19079%2c19081%2c19082%2c19089%2c19099%2c19119%2c19121%2c19122%2c19127%2c19128%2c19130%2c19147%2c19150%2c19151%2c19153%2c19155%2c19158%2c19160%2c19162%2c19164%2c19166%2c19168%2c19170%2c19171%2c19174%2c19175%2c19178%2c19180%2c19181%2c19183%2c19185%2c19187%2c19190%2c19192%2c19193%2c19194%2c19196%2c19198%2c19200%2c19202%2c19205%2c19514%2c19516%2c20244%2c19658%2c19519%2c19473%2c19484%2c32128%2c32452%2c32467%2c32466%2c37534%2c38228%2c38906%2c38940%2c38914%2c39026%2c38923%2c39105%2c38926%2c39117%2c32133%2c11030%2c11031%2c8770%2c8736%2c8740%2c8823%2c8845%2c8878%2c8835%2c8876%2c8802%2c8798%2c8782%2c8820&envtype=0&imptype=0&bldv=17958&bid=1&bidnwid=3490&bidid=5257429103861908907&bidh=799a3cc134ba9ee1669f1665538d0704d0ed8f14&bidtime=638557263272506936&bidenv=0&gdpr=1&gdpr_consent=CQBOvwAQBOvwAEsACBENA7EoAP_gAEPgAAwIJhMR9C_sTSFDcX53KfskaY1P0LhwbsQxBhaBEwIFyJKQNJQEgGEhNAngBCACCBAEMFYBIQMAEAAAAVCAYIARJwAMYAwUIBJIJAAAAAEQGUQYCAAEgAEgUAIIgiC1EEQhkAiEUItISIgCgABGEACACCQgAIAAAgABAUIASAEIEAAEQDwQkAkAmAAAAgEAABBIAMAASCBAIAAAAQTrYj6F3YmkKG8PCvQ-ZIURqyoWAg1YBiACkCBgQBkSUgaQgBIMJGAJNAAEAAECAIQKgCQAIQABAAAKECgQAiTiAYABgAQCSQQAAAAEIgMIAgAAAJAAJAgAQTAEBMIIhTAhGIgRaEkBAEACAEIAEAEEAAAQAABAACIoQAkAIAAEAJgCgBIBIBMAAABAAAACCQAYAAkkAAQAAAAgAAAAABAA.f_wAAAAAAAA&pgDomain=http%3a%2f%2fwww.d20srd.org%2fsrd%2fmonsters%2fdemon.htm&cappid=2609903269625977245&eqs=5ffa4541b061cd4942ea8ca17a0f2d67808bd3b8',
+			safeFrame: Boolean(0)
+		},
+        autorefresh: {
+            enable: Boolean(0),
+            duration: Number(30),
+            viewabilityThreshold: Number(50),
+            refreshNb: Number(),
+            keywordTargeting: String('$dt=1t')
+        },
+		statisticTracking: {
+			rtbbid: '5257429103861908907',
+			rtbet: '0',
+			rtblt: '638557263272506936',
+			rtbnid: '3490',
+			rtbh: '799a3cc134ba9ee1669f1665538d0704d0ed8f14',
+            rtbDealId: '0',
+            rtbCreativeId: '74315679',
+            rtbBuyerId: '258445'
+		}
+	};
+	sas.utils.cdns['http:'] = 'http://ced-ns.sascdn.com';
+	sas.utils.cdns['https:'] = 'https://ced-ns.sascdn.com';
+	//sas.utils.cdns['http:'] = sas.utils.cdns['https:'] = '//demo.smartadserver.com/shared';
+        sas.utils.loadScriptCdn('/diff/templates/ts/dist/banner/sas-banner-1.7.js', {
+		async: config.isAsync, onLoad: function() {
+			newObj8894466 = new Banner(config, Boolean(0));
+			newObj8894466.init();
+		}
+	});
+})(window.sas);</script><div id="1010-5e6a1604db8f36673d618adb"><!--TagID--><div id="equativ_feedback_82113"><div id="equativ_feedback_closeButton_82113" data-exclude-click=""><a class="closeFeedback" data-exclude-click=""></a></div><style type="text/css">
+            #equativ_feedback_82113 {
+              width: 728px;
+              left: 0px;
+              position: relative;
+              top: 28px;
+              font-size: 14px;
+              z-index: 1;
+            }
+            #equativ_feedback_closeButton_82113 {
+              position: initial;
+              top: unset;
+              right: unset;
+              margin: -25px 5px 0 0;
+              width: 15px;
+              height: 15px;
+              float: right;
+              cursor: pointer;
+            }
+            .closeFeedback {
+              position: relative;
+              opacity: 1;
+              width: 18px;
+              height: 18px !important;
+              cursor: pointer;
+              margin-left: 5px !important;
+            }
+            .closeFeedback:before, .closeFeedback:after {
+              position: absolute;
+              content: ' ';
+              height: 15px;
+              width: 2px;
+              background-color: #05b1f5;
+            }
+            .closeFeedback:before {
+              transform: rotate(45deg);
+            }
+            .closeFeedback:after {
+              transform: rotate(-45deg);
+            }
+          </style></div><iframe src="demon_data/demon_data/a_data/a_data/a_002.htm" width="728" height="90" frameborder="0" allow="autoplay;fullscreen;" scrolling="no" marginheight="0" marginwidth="0" id="1010-5e6a1604db8f36673d618adb_iframe" style="width: 728px; height: 90px;"></iframe></div><script src="demon_data/sas-banner-1.7.js"></script><iframe scrolling="no" frameborder="0" width="0" height="0" style="margin: 0px; padding: 0px; display: none; width: 0px; height: 0px; visibility: hidden;" src="https://secure-assets.rubiconproject.com/utils/xapi/multi-sync.html?p=smartadserver&amp;endpoint=eu"></iframe></body></html>

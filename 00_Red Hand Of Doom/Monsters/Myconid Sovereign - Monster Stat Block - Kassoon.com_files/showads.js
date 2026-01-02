@@ -1,0 +1,1 @@
+try{document.getElementById(divid).style.display='none';}catch{}

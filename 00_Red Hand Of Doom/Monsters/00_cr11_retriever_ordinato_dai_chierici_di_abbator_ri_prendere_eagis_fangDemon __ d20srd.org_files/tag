@@ -1,0 +1,17 @@
+(function(w, d) {
+  try {
+    d = w.top.document || d; w = w.top.document ? w.top : w;
+  } catch (e) {}
+  var ttag = function() {
+    w.teads.page(86489).placement(93680, {slider: {allow_corner_position: true, allow_top_position: true}, "css":"margin: 14.4px auto; max-width: 550px;","format":"inread","slot":{"selector":"ul, p, h4","minimum":3}}).serve();
+    w.teads.page(86489).placement(112599, {slider: {allow_corner_position: true, allow_top_position: true}, "css":"margin: 20px auto; max-width: 640px;","format":"inread","slot":{"selector":"ul, p, h4","minimum":5}}).serve();
+  };
+  if (w.teads && w.teads.page) { ttag(); }
+  else if (!w.teadsscript) {
+    var s = document.createElement('script');
+    s.src = 'https://a.teads.tv/static/for-5827/media/format/v3/teads-format.min.js';
+    s.async = true; s.onload = ttag; w.teadsscript = d.getElementsByTagName('head')[0].appendChild(s);
+  } else {
+    w.teadsscript.addEventListener('load', ttag);
+  }
+})(window, document);

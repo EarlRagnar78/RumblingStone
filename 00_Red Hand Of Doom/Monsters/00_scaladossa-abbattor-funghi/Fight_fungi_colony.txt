@@ -1,0 +1,120 @@
+Sure! For a party of level 10, we'll slightly adjust the composition and abilities of the fungi monsters to provide an appropriate challenge.
+Updated Fungi Monster Encounter
+
+Fungi Monster Types:
+
+    Myconid Sovereign
+    Myconid Elite Guards
+    Myconid Guards
+    Myconid Workers
+
+1. Myconid Sovereign
+
+    Size/Type: Large Plant
+    Hit Dice: 14d8+56 (119 hp)
+    Initiative: +0
+    Speed: 20 ft.
+    Armor Class: 20 (-1 size, +11 natural), touch 9, flat-footed 20
+    Base Attack/Grapple: +10/+22
+    Attack: Slam +17 melee (2d6+8)
+    Full Attack: Slam +17 melee (2d6+8)
+    Space/Reach: 10 ft./10 ft.
+    Special Attacks: Spore cloud, telepathic spores, stunning spores
+    Special Qualities: Darkvision 60 ft., low-light vision, plant traits, spell resistance 20
+    Saves: Fort +14, Ref +5, Will +8
+    Abilities: Str 26, Dex 10, Con 18, Int 14, Wis 16, Cha 16
+    Skills: Knowledge (nature) +18, Listen +19, Spot +19, Survival +15
+    Feats: Great Fortitude, Iron Will, Power Attack, Improved Bull Rush, Alertness, Improved Initiative
+    Challenge Rating: 12
+
+Spore Cloud (Ex): Once per day, the Myconid Sovereign can release a cloud of spores in a 30-foot radius. All creatures within the area must succeed on a DC 22 Fortitude save or be paralyzed for 1d4 rounds.
+
+Telepathic Spores (Ex): The Myconid Sovereign can communicate telepathically with any creature within 100 feet through the use of spores. The spores allow telepathic communication for up to 1 hour.
+
+Stunning Spores (Ex): Once per day, the Myconid Sovereign can release a cloud of stunning spores in a 20-foot radius. All creatures within the area must succeed on a DC 22 Fortitude save or be stunned for 1d4 rounds.
+
+Tactics: The Myconid Sovereign will first try to communicate using its telepathic spores, warning the intruders to leave. If the intruders do not comply, the Sovereign will use its Spore Cloud to incapacitate them and then its Stunning Spores before moving in to attack with its powerful slam attacks.
+2. Myconid Elite Guards
+
+    Size/Type: Medium Plant
+    Hit Dice: 10d8+40 (85 hp)
+    Initiative: +2
+    Speed: 20 ft.
+    Armor Class: 19 (+2 Dex, +7 natural), touch 12, flat-footed 17
+    Base Attack/Grapple: +7/+14
+    Attack: Slam +14 melee (1d8+7)
+    Full Attack: Slam +14 melee (1d8+7)
+    Special Attacks: Spore cloud, telepathic spores, stunning spores
+    Special Qualities: Darkvision 60 ft., low-light vision, plant traits
+    Saves: Fort +11, Ref +5, Will +6
+    Abilities: Str 20, Dex 14, Con 18, Int 10, Wis 14, Cha 12
+    Skills: Listen +13, Spot +13, Intimidate +12
+    Feats: Alertness, Power Attack, Cleave, Improved Initiative
+    Challenge Rating: 9
+
+Spore Cloud (Ex): Once per day, the Myconid Elite Guard can release a cloud of spores in a 10-foot radius. All creatures within the area must succeed on a DC 19 Fortitude save or be blinded for 1d4 rounds.
+
+Telepathic Spores (Ex): The Myconid Elite Guard can communicate telepathically with any creature within 100 feet through the use of spores. The spores allow telepathic communication for up to 1 hour.
+
+Stunning Spores (Ex): Once per day, the Myconid Elite Guard can release a cloud of stunning spores in a 10-foot radius. All creatures within the area must succeed on a DC 19 Fortitude save or be stunned for 1d4 rounds.
+
+Tactics: The Myconid Elite Guards will first try to use telepathic spores to warn off intruders. If this fails, they will use their Spore Cloud to blind opponents, followed by Stunning Spores, then engage in melee combat using Power Attack and Cleave.
+3. Myconid Guards
+
+    Size/Type: Medium Plant
+    Hit Dice: 8d8+32 (68 hp)
+    Initiative: +1
+    Speed: 20 ft.
+    Armor Class: 17 (+1 Dex, +6 natural), touch 11, flat-footed 16
+    Base Attack/Grapple: +6/+12
+    Attack: Slam +12 melee (1d8+6)
+    Full Attack: Slam +12 melee (1d8+6)
+    Special Attacks: Spore cloud, telepathic spores
+    Special Qualities: Darkvision 60 ft., low-light vision, plant traits
+    Saves: Fort +9, Ref +3, Will +4
+    Abilities: Str 18, Dex 12, Con 16, Int 10, Wis 14, Cha 12
+    Skills: Listen +11, Spot +11, Intimidate +10
+    Feats: Alertness, Power Attack, Cleave
+    Challenge Rating: 7
+
+Spore Cloud (Ex): Once per day, the Myconid Guard can release a cloud of spores in a 10-foot radius. All creatures within the area must succeed on a DC 17 Fortitude save or be blinded for 1d4 rounds.
+
+Telepathic Spores (Ex): The Myconid Guard can communicate telepathically with any creature within 100 feet through the use of spores. The spores allow telepathic communication for up to 1 hour.
+
+Tactics: The Myconid Guards will first try to use telepathic spores to warn off intruders. If this fails, they will use their Spore Cloud to blind opponents, then engage in melee combat using Power Attack and Cleave to deal with multiple foes.
+4. Myconid Workers
+
+    Size/Type: Small Plant
+    Hit Dice: 4d8+16 (34 hp)
+    Initiative: +0
+    Speed: 20 ft.
+    Armor Class: 15 (+1 size, +4 natural), touch 11, flat-footed 15
+    Base Attack/Grapple: +3/+0
+    Attack: Slam +5 melee (1d4+1)
+    Full Attack: Slam +5 melee (1d4+1)
+    Special Attacks: Spore cloud, telepathic spores
+    Special Qualities: Darkvision 60 ft., low-light vision, plant traits
+    Saves: Fort +6, Ref +1, Will +2
+    Abilities: Str 12, Dex 10, Con 14, Int 8, Wis 12, Cha 10
+    Skills: Listen +6, Spot +6
+    Feats: Alertness, Endurance
+    Challenge Rating: 3
+
+Spore Cloud (Ex): Once per day, the Myconid Worker can release a cloud of spores in a 5-foot radius. All creatures within the area must succeed on a DC 14 Fortitude save or be confused for 1d4 rounds.
+
+Telepathic Spores (Ex): The Myconid Worker can communicate telepathically with any creature within 50 feet through the use of spores. The spores allow telepathic communication for up to 1 hour.
+
+Tactics: The Myconid Workers will first attempt to communicate using telepathic spores. If this fails, they will use their Spore Cloud to confuse opponents and then attack with their slam attacks. They will try to stay out of direct combat, supporting the Sovereign, Elite Guards, and Guards.
+Encounter Setup
+
+Location: The encounter takes place in the fungi community's lair, which is a series of interconnected caverns filled with bioluminescent fungi, thick fungal stalks, and spore-filled air.
+
+Initial Interaction: Upon entering the lair, the party is immediately met with a telepathic message from the Myconid Sovereign, warning them to leave. This message is accompanied by a sense of urgency and the image of a symbol of Abbathor.
+
+Combat: If the party ignores the warning and proceeds, the fungi monsters will release their spore clouds in an attempt to incapacitate the intruders before engaging in melee combat.
+XP Calculation
+
+    Myconid Sovereign (CR 12): 7,200 XP
+    Myconid Elite Guards x2 (CR 9 each): 13,500 XP
+    Myconid Guards x2 (CR 7 each): 7,200 XP
+    Myconid Workers x4 (CR 3 each): 3,600 XP

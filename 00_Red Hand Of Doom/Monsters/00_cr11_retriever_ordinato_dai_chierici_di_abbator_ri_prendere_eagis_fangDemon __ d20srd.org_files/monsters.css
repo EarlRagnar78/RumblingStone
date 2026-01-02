@@ -1,0 +1,66 @@
+@import "srd.css";
+
+table.statBlock {
+	width: auto;
+	border: none;
+}
+
+table.statBlock td {
+	white-space: normal;
+	border: none;
+}
+
+table.statBlock th {
+	text-align: right;
+	vertical-align: top;
+	background-color: transparent;
+	color: #000000;
+	border: none;
+	padding-right: 2px;
+}
+
+table.statBlock tr.even td {
+	background-color: transparent;
+	background-image: url(../images/tables/even.png);
+}
+
+table.statBlock tr.odd td {
+	background-color: transparent;
+	background-image: url(../images/tables/odd.png);
+}
+
+tr.colHead th {
+	vertical-align: bottom;
+	text-align: left;
+}
+
+table.statBlock th a:link, table.statBlock th a:visited {
+	color: #000066;
+	text-decoration: none;
+}
+
+table.statBlock + table.statBlock {
+	margin-top: 20px;
+}
+
+a.monsterImage {
+	background-image: none;
+}
+
+.monsterImage img {
+	border-color: #333399;
+	border-width: 1px;
+	border-style: solid;
+}
+
+a {
+	white-space: nowrap;
+}
+
+@media print {
+
+a.monsterImage {
+	display: none;
+}
+
+}

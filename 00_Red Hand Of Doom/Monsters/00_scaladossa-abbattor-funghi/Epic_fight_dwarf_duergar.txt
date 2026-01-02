@@ -1,0 +1,234 @@
+Treasure and Trap
+
+The treasure includes various items, potions, and scrolls to match the wealth guidelines. Additionally, a Level 9 trap will be included.
+Detailed Stat Blocks with Gear and Treasure
+Evil Dwarf Cleric of Abbathor (Level 11)
+
+Encounter Composition:
+
+    Evil Dwarf Cleric of Abbathor (CR 11)
+    Two Evil Antipaladin Knights (CR 10 each)
+    Three Duergar Mage/Rogue (CR 8 each) uno è quello fuggito
+
+
+Race: Dwarf
+Class: Cleric 11
+Alignment: Lawful Evil
+Domains: Trickery, Evil
+
+Abilities:
+
+    Str 16
+    Dex 10
+    Con 16
+    Int 12
+    Wis 18
+    Cha 14
+
+HP: 84 (11d8+33)
+AC: 24 (10 + 8 full plate + 2 shield + 1 dex + 3 natural)
+Speed: 20 ft
+
+Saves:
+
+    Fort +11
+    Ref +5
+    Will +13
+
+Feats:
+
+    Improved Initiative
+    Combat Casting
+    Spell Penetration
+    Greater Spell Penetration
+    Quicken Spell
+    Scribe Scroll
+
+Special Abilities:
+
+    Turn Undead 6/day
+    Dwarf racial traits
+
+Spells Prepared (DC = 14 + spell level):
+
+    Level 0: Detect Magic, Read Magic, Resistance, Guidance, Light, Create Water
+    Level 1: Shield of Faith, Divine Favor, Command, Protection from Good, Bless, Disguise Self (D)
+    Level 2: Hold Person, Silence, Bull's Strength, Resist Energy, Spiritual Weapon, Undetectable Alignment (D)
+    Level 3: Dispel Magic, Invisibility Purge, Magic Circle Against Good, Bestow Curse, Animate Dead (D)
+    Level 4: Divine Power, Freedom of Movement, Imbue with Spell Ability, Poison (D)
+    Level 5: Flame Strike, Slay Living, True Seeing (D)
+    Level 6: Harm, Mislead (D)
+
+Equipment:
+
+    +2 Full Plate (8,350 gp)
+    +2 Heavy Steel Shield (4,170 gp)
+    +1 Morningstar (2,308 gp)
+    Cloak of Resistance +1 (1,000 gp)
+    Amulet of Natural Armor +1 (2,000 gp)
+    Wand of Cure Moderate Wounds (50 charges) (4,500 gp)
+    Potion of Cure Serious Wounds x2 (1,500 gp)
+    Scroll of Harm (1,650 gp)
+    Scroll of Greater Command (1,125 gp)
+    Various gems and coins (2,000 gp)
+
+Evil Antipaladin Knights (Level 10)
+
+Race: Human
+Class: Blackguard 10
+Alignment: Lawful Evil
+
+Abilities:
+
+    Str 18
+    Dex 12
+    Con 14
+    Int 10
+    Wis 12
+    Cha 16
+
+HP: 98 (10d10+30)
+AC: 25 (10 + 8 full plate + 2 shield + 1 dex + 2 deflection + 2 natural)
+Speed: 20 ft
+
+Saves:
+
+    Fort +11
+    Ref +7
+    Will +9
+
+Feats:
+
+    Power Attack
+    Cleave
+    Improved Sunder
+    Mounted Combat
+    Ride-By Attack
+    Spirited Charge
+
+Special Abilities:
+
+    Aura of Despair
+    Smite Good 2/day
+    Lay on Hands (30 HP/day)
+    Sneak Attack +3d6
+    Poison Use
+
+Spells Prepared (DC = 13 + spell level):
+
+    Level 1: Corrupt Weapon, Inflict Light Wounds, Cause Fear
+    Level 2: Inflict Moderate Wounds, Bull's Strength
+
+Equipment:
+
+    +2 Full Plate (8,350 gp)
+    +2 Heavy Steel Shield (4,170 gp)
+    +1 Unholy Longsword (8,315 gp)
+    Cloak of Resistance +1 (1,000 gp)
+    Amulet of Natural Armor +1 (2,000 gp)
+    Potion of Cure Moderate Wounds x2 (600 gp)
+    Potion of Bull's Strength x2 (600 gp)
+    Various gems and coins (1,500 gp)
+
+Duergar Mage/Rogue (Level 8)
+
+Race: Duergar
+Class: Rogue 3 / Wizard 5
+Alignment: Lawful Evil
+
+Abilities:
+
+    Str 14
+    Dex 16
+    Con 14
+    Int 18
+    Wis 12
+    Cha 10
+
+HP: 48 (3d6+6 + 5d4+10)
+AC: 18 (10 + 3 dex + 5 armor)
+Speed: 20 ft
+
+Saves:
+
+    Fort +5
+    Ref +9
+    Will +8
+
+Feats:
+
+    Weapon Finesse
+    Improved Initiative
+    Silent Spell
+    Still Spell
+
+Special Abilities:
+
+    Duergar racial traits
+    Sneak Attack +2d6
+    Evasion
+    Uncanny Dodge
+
+Spells Prepared (DC = 14 + spell level):
+
+    Level 0: Detect Magic, Read Magic, Mage Hand, Ghost Sound
+    Level 1: Mage Armor, Magic Missile, Shield, Silent Image
+    Level 2: Invisibility, Mirror Image, Web
+    Level 3: Fireball, Displacement
+
+Equipment:
+
+    +1 Studded Leather (1,175 gp)
+    +1 Short Sword (2,310 gp)
+    Wand of Magic Missile (5th level, 20 charges) (4,500 gp)
+    Cloak of Resistance +1 (1,000 gp)
+    Ring of Protection +1 (2,000 gp)
+    Potion of Invisibility x2 (600 gp)
+    Potion of Cure Moderate Wounds x2 (600 gp)
+    Various gems and coins (1,815 gp)
+
+Level 9 Trap
+
+Type: Poison Dart Trap
+Search DC: 30
+Disable Device DC: 30
+Effects:
+
+    Attack Bonus: +20 ranged (dart)
+    Damage: 1d4 + poison (Black Lotus Extract)
+    Poison: DC 20 Fortitude save, initial damage 3d6 Con, secondary damage 3d6 Con
+
+Tactical Overview:
+
+    Initial Setup:
+        The evil cleric casts Bless, Shield of Faith, and Protection from Good on himself and his allies before combat begins.
+        The antipaladins use Corrupt Weapon and Bull's Strength to boost their damage.
+        The duergar use Invisibility to set up ambushes and Mage Armor for defense.
+
+    Combat Tactics:
+        The cleric focuses on debuffing the party with Hold Person, Bestow Curse, and Greater Command while healing allies as needed.
+        The antipaladins charge the front lines, using their smite and cleave abilities to deal significant damage to the fighter and monk/fighter.
+        The duergar target the warlock and druid with Magic Missile, Fireball, and Displacement while using Sneak Attack whenever possible.
+
+    Mid-Combat Adjustments:
+        The cleric uses Harm and Flame Strike to deal heavy damage if the party starts gaining the upper hand.
+        The antipaladins switch to defensive tactics using Lay on Hands and Inflict Wounds spells if their health drops.
+        The duergar use Mirror Image and Web to control the battlefield and protect themselves from counterattacks.
+
+Updated PNG Files:
+
+I'll prepare and update the PNG files to reflect these changes.
+
+I hope this encounter provides a thrilling challenge for your party! Let me know if you need any further adjustments or details.
+
+Suggested Image for the Encounter:
+
+For an encounter located deep underground on a platform made of bones and tendons, consider an image that evokes a dark, eerie, and foreboding atmosphere. Here are some ideas:
+
+    Bones and Tendons Platform: Look for images that depict a grotesque, skeletal structure with fleshy tendons. The platform should appear unstable and macabre, emphasizing the evil nature of the setting.
+
+    Underground Cavern: An image of a dark, cavernous space with eerie lighting, shadows, and bone structures. This can give the sense of being deep underground in a place that is both ancient and sinister.
+
+    Dark Ritual Area: Images of a dark ritual site with symbols, bones, and perhaps some glowing, magical elements that highlight the presence of evil forces at work.
+	
+	

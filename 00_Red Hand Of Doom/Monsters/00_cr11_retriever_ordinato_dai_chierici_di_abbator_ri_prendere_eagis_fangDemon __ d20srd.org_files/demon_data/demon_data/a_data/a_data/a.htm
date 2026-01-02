@@ -1,0 +1,437 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta name="color-scheme" content="light only"><style>/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */:root{color-scheme: light only;}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+}
+body {
+  border-radius: var(--border-r, 0px);
+  overflow: hidden;
+}
+#container {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.video-holder {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.video-holder video#video-player {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  cursor: pointer;
+}
+.video-holder video#video-player.cover {
+  width: auto;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-holder video#video-player.cover-x {
+  width: auto;
+  height: 100%;
+}
+.video-holder video#video-player.cover-y {
+  width: 100%;
+  height: auto;
+}
+#poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+#poster.cover {
+  background-size: cover;
+}
+.imageGeneratorMode #play-pause-overlay,
+.imageGeneratorMode #video-controls {
+  display: none !important;
+}
+#container:hover #video-controls {
+  opacity: 1;
+}
+#container.isPaused #video-controls {
+  opacity: 1;
+}
+#play-pause-overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+#play-pause-overlay.show {
+  display: block;
+}
+#play-pause-overlay.hide {
+  display: none !important;
+}
+#play-pause-overlay.show-pause .pause {
+  display: block;
+}
+#play-pause-overlay.show-play .play {
+  display: block;
+}
+#play-pause-overlay svg {
+  display: none;
+  width: 40%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  opacity: 0.5;
+  transform: translate(-50%, -50%);
+  fill: rgba(255,255,255,0.5);
+  stroke: rgba(0,0,0,0.7);
+  stroke-width: 1px;
+  padding: 2px;
+  transition: opacity 0.2s ease-in-out;
+}
+#play-pause-overlay svg * {
+  fill: inherit;
+}
+#play-pause-overlay svg:hover {
+  opacity: 1 !important;
+}
+#video-controls {
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  position: absolute;
+  bottom: 0px;
+  opacity: 0;
+  user-select: none;
+  transition: opacity 0.2s ease-in-out;
+  display: none;
+  z-index: 3;
+}
+#video-controls.show {
+  display: flex;
+}
+#video-controls >div:not(#progress) {
+  float: left;
+  width: 25px;
+  height: 30px;
+  vertical-align: middle;
+  text-align: center;
+}
+#video-controls >div:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+#video-controls svg {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  fill: #fff;
+}
+#playback {
+  width: 30px !important;
+}
+#playback.isPaused .icon-play {
+  display: inline-block;
+}
+#playback.isPlaying .icon-pause {
+  display: inline-block;
+}
+#playback .icon-pause {
+  display: none;
+}
+#playback .icon-play {
+  display: none;
+}
+#progress-bar {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-grow: 5;
+  margin-right: 10px;
+}
+#progress-bar #progress-timer {
+  width: 87px;
+  text-align: center;
+  font-size: 11px;
+  padding-right: 5px;
+}
+#progress-bar #progress {
+  width: 100%;
+  height: 7px;
+  position: relative;
+  cursor: pointer;
+  background: rgba(255,255,255,0.4);
+  border-radius: 10px;
+}
+#progress-bar #progress span {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 10px;
+}
+#progress-bar #progress #timeBar {
+  z-index: 10;
+  width: 0;
+  background: rgba(255,255,255,0.8);
+  height: 100%;
+  vertical-align: middle;
+  transition: width 0.1s;
+}
+#progress-bar #progress #bufferBar {
+  z-index: 5;
+  width: 0;
+  background: rgba(255,255,255,0.2);
+}
+#volume {
+  position: relative;
+  flex-grow: 1;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 5px;
+}
+#volume.mobile-volume {
+  flex-grow: 0;
+}
+#volume #volume-value {
+  z-index: 10;
+  width: 0;
+  background: rgba(255,255,255,0.8);
+  height: 100%;
+  vertical-align: middle;
+  transition: width 0.2s;
+  border-radius: 10px;
+}
+#volume #volume-icon {
+  width: 25px;
+  float: left;
+  margin-right: 3px;
+}
+#volume #volume-controller {
+  width: 80%;
+  height: 7px;
+  float: left;
+  position: relative;
+  cursor: pointer;
+  vertical-align: middle;
+  background: rgba(255,255,255,0.4);
+  border-radius: 10px;
+}
+#volume #volume-icon svg {
+  display: none;
+  width: 20px;
+  height: 20px;
+}
+#volume #volume-icon.muted svg.muted {
+  display: block;
+}
+#volume #volume-icon.unmuted svg.unmuted {
+  display: block;
+}
+#fullscreen {
+  text-align: center;
+  display: none !important;
+}
+#fullscreen svg {
+  width: 14px;
+  margin-right: 3px;
+}
+#volumeToggle {
+  position: absolute;
+  z-index: 4;
+  width: 10%;
+  height: 10%;
+  cursor: pointer;
+}
+#volumeToggle.muted svg.muted {
+  display: block;
+}
+#volumeToggle.unmuted svg.unmuted {
+  display: block;
+}
+#volumeToggle svg {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+}
+#volumeToggle svg * {
+  fill: inherit;
+}
+@media (max-width: 290px) {
+  #progress-timer {
+    display: none;
+  }
+}
+@media (max-width: 200px) {
+  #video-controls #volume-icon {
+    width: auto;
+  }
+  #video-controls #volume-controller {
+    display: none;
+  }
+}
+#instructions {
+  position: absolute;
+  z-index: 99;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #f7f7f7;
+  text-align: center;
+  vertical-align: center;
+  background: #363636;
+}
+
+#instructions strong {
+  font-size: 1.1rem;
+}
+
+#instructions.show {
+  display: flex;
+}
+
+video::-webkit-media-controls-fullscreen-button {
+  display: none;
+}
+video::-webkit-media-controls {
+  display: none !important;
+}
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+video::-internal-media-controls-download-button {
+  display: none;
+}
+video::-webkit-media-controls-enclosure {
+  overflow: hidden;
+}
+video::-webkit-media-controls-panel {
+  width: calc(100% + 30px); /* Adjust as needed */
+}
+
+#play-pause-overlay.onHover .pause {
+  opacity: 0;
+}
+#play-pause-overlay.onHover .pause:hover {
+  opacity: 1;
+}</style></head><body><div id="container" style="opacity: 1;" class="isPaused">
+    <div id="instructions">
+        <strong>Video player</strong><br>Enter a URL in the URL property or select feed with video URL.
+    </div>
+    <div id="play-pause-overlay" class="onHover show-play">
+        <svg class="pause" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="640px" height="640px" viewBox="0 0 640 640" enable-background="new 0 0 640 640" xml:space="preserve" style="width: 40%;">
+            <g id="Layer_1">
+                <rect x="-80" y="-80" display="none" stroke="#000000" stroke-miterlimit="10" width="800" height="800"></rect> 
+                <path fill="#FFFFFF" d="M546.273,93.726C485.834,33.286,405.476,0,320,0C234.525,0,154.166,33.286,93.726,93.726S0,234.525,0,320
+                            c0,85.476,33.286,165.834,93.726,226.273C154.166,606.714,234.524,640,320,640s165.835-33.286,226.273-93.727
+                            C606.714,485.835,640,405.476,640,320S606.714,154.166,546.273,93.726z M320,582C175.533,582,58,464.467,58,320
+                            C58,175.533,175.533,58,320,58c144.467,0,262,117.533,262,262C582,464.467,464.467,582,320,582z"></path>
+                <polygon display="none" fill="#FFFFFF" points="243.289,320 243.289,188.698 357,254.35 470.711,320 357,385.651 243.289,451.302"></polygon>
+                <g>
+                    <rect x="375" y="192.854" fill="#FFFFFF" width="52.486" height="254.291"></rect>
+                    <rect x="215" y="192.854" fill="#FFFFFF" width="52.486" height="254.291"></rect>
+                </g>
+            </g>
+        </svg>
+        
+        <svg class="play" version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="640px" height="640px" viewBox="0 0 640 640" enable-background="new 0 0 640 640" xml:space="preserve" style="width: 40%;">
+            <g id="Layer_1">
+                <rect x="-80" y="-80" display="none" stroke="#000000" stroke-miterlimit="10" width="800" height="800"></rect>
+                <path fill="#FFFFFF" d="M546.273,93.726C485.834,33.286,405.476,0,320,0C234.525,0,154.166,33.286,93.726,93.726S0,234.525,0,320
+                        c0,85.476,33.286,165.834,93.726,226.273C154.166,606.714,234.524,640,320,640s165.835-33.286,226.273-93.727
+                        C606.714,485.835,640,405.476,640,320S606.714,154.166,546.273,93.726z M320,582C175.533,582,58,464.467,58,320
+                        C58,175.533,175.533,58,320,58c144.467,0,262,117.533,262,262C582,464.467,464.467,582,320,582z"></path>
+                <polygon fill="#FFFFFF" points="243.289,320 243.289,188.698 357,254.35 470.711,320 357,385.651 243.289,451.302"></polygon>
+                <g display="none">
+                    <rect x="375" y="192.854" display="inline" fill="#FFFFFF" width="52.486" height="254.291"></rect>
+                    <rect x="215" y="192.854" display="inline" fill="#FFFFFF" width="52.486" height="254.291"></rect>
+                </g>
+            </g>
+            <g id="Layer_2" display="none"></g>
+        </svg>
+    </div>
+    <div id="video-controls">
+        <div id="playback" class="isPaused">
+            <svg class="icon-pause" version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 640 640" enable-background="new 0 0 640 640" xml:space="preserve">
+                <g id="Layer_1"><rect x="-80" y="-80" display="none" stroke="#000000" stroke-miterlimit="10" width="800" height="800"></rect><g><rect x="375" y="192.854" fill="#FFFFFF" width="52.486" height="254.291"></rect><rect x="215" y="192.854" fill="#FFFFFF" width="52.486" height="254.291"></rect></g></g><g id="Layer_2" display="none"></g></svg>
+            <svg class="icon-play" version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 640 640" enable-background="new 0 0 640 640" xml:space="preserve">
+                <g id="Layer_1"><rect x="-80" y="-80" display="none" stroke="#000000" stroke-miterlimit="10" width="800" height="800"></rect><polygon fill="#FFFFFF" points="243.289,320 243.289,188.698 357,254.35 470.711,320 357,385.651 243.289,451.302 "></polygon><g display="none"><rect x="375" y="192.854" display="inline" fill="#FFFFFF" width="52.486" height="254.291"></rect><rect x="215" y="192.854" display="inline" fill="#FFFFFF" width="52.486" height="254.291"></rect></g></g><g id="Layer_2" display="none"></g>
+            </svg>
+        </div>
+        <div id="progress-bar">
+            <span id="progress-timer">0:05 / 0:06</span>
+            <div id="progress">
+                <span id="bufferBar"></span>
+                <span id="timeBar" style="width: 84%;"></span>
+            </div>
+        </div>
+        <div id="volume">
+            <span id="volume-icon" class="muted">
+                <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-100 -0 1000 1000" class="unmuted">
+                    <g transform="matrix(1 0 0 -1 0 819)"><path fill="currentColor" d="M126 441l252 189h63v-630h-63l-252 189h-126v252h126zM531 405v-1c24 -27 36 -58 36 -90s-12 -64 -36 -89c-15 -15 -33 -11 -44 1s-16 30 -1 45c25 24 25 64 0 88c-15 15 -10 33 1 45s29 16 44 1zM619 492v-3c51 -51 74 -110 74 -178s-23 -127 -74 -178 c-13 -15 -32 -11 -43 0s-16 30 -1 45c38 39 55 83 55 134s-17 95 -55 134c-15 15 -10 34 1 45s30 14 43 1zM709 579v4c74 -78 110 -166 110 -268s-36 -190 -110 -268c-15 -15 -33 -11 -44 0s-16 30 -1 45c64 64 93 137 93 221s-29 157 -93 221c-15 15 -10 34 1 45 s29 15 44 0z"></path></g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-100 -0 1000 1000" class="muted">
+                    <g transform="matrix(1 0 0 -1 0 819)"><path fill="currentColor" d="M126 441l252 189h63v-630h-63l-252 189h-126v252h126zM851 410l-95 -95l95 -94l-63 -63l-95 94l-94 -94l-63 63l94 94l-94 95l63 63l94 -95l95 95z"></path></g>
+                </svg>
+            </span>
+            <div id="volume-controller">
+                <div id="volume-value" style="width: 0px;"></div>
+            </div>
+        </div>
+        <div id="fullscreen" style="display: none;">
+            <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1411 541l-355 355 355 355 144-144q29-31 70-14 39 17 39 59v448q0 26-19 45t-45 19h-448q-42 0-59-40-17-39 14-69l144-144-355-355-355 355 144 144q31 30 14 69-17 40-59 40h-448q-26 0-45-19t-19-45v-448q0-42 40-59 39-17 69 14l144 144 355-355-355-355-144 144q-19 19-45 19-12 0-24-5-40-17-40-59v-448q0-26 19-45t45-19h448q42 0 59 40 17 39-14 69l-144 144 355 355 355-355-144-144q-31-30-14-69 17-40 59-40h448q26 0 45 19t19 45v448q0 42-39 59-13 5-25 5-26 0-45-19z" fill="#fff"></path>
+            </svg>
+        </div>
+    </div>
+    <div id="poster" style="background-image: url(&quot;https://c.bannerflow.net/io/api/image/optimize?u=https%3A%2F%2Fc.bannerflow.net%2Faccounts%2Fsoft2bet%2F63e10827ee6588a96cb203e2%2Fimages%2Fbeed61d4-8f31-4b12-8f70-08986d296008.jpg&amp;w=728&amp;h=90&amp;q=85&amp;f=webp&amp;rt=cover&quot;); display: none;" class="cover"></div>
+    <span id="volumeToggle" class="muted" style="display: none; top: 5%; left: 5%; width: 0px; height: 0px;">
+        <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-100 -0 1000 1000" class="unmuted" style="fill: rgb(255, 255, 255);">
+            <g transform="matrix(1 0 0 -1 0 819)"><path fill="currentColor" d="M126 441l252 189h63v-630h-63l-252 189h-126v252h126zM531 405v-1c24 -27 36 -58 36 -90s-12 -64 -36 -89c-15 -15 -33 -11 -44 1s-16 30 -1 45c25 24 25 64 0 88c-15 15 -10 33 1 45s29 16 44 1zM619 492v-3c51 -51 74 -110 74 -178s-23 -127 -74 -178 c-13 -15 -32 -11 -43 0s-16 30 -1 45c38 39 55 83 55 134s-17 95 -55 134c-15 15 -10 34 1 45s30 14 43 1zM709 579v4c74 -78 110 -166 110 -268s-36 -190 -110 -268c-15 -15 -33 -11 -44 0s-16 30 -1 45c64 64 93 137 93 221s-29 157 -93 221c-15 15 -10 34 1 45 s29 15 44 0z"></path></g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-100 -0 1000 1000" class="muted" style="fill: rgb(255, 255, 255);">
+            <g transform="matrix(1 0 0 -1 0 819)"><path fill="currentColor" d="M126 441l252 189h63v-630h-63l-252 189h-126v252h126zM851 410l-95 -95l95 -94l-63 -63l-95 94l-94 -94l-63 63l94 94l-94 95l63 63l94 -95l95 95z"></path></g>
+        </svg>
+    </span>
+    <div class="video-holder"><video id="video-player" preload="auto" playsinline="" class="cover cover-x" style="display: block; background-color: rgba(0, 0, 0, 0); filter: grayscale(0%);"><source src="a_data/728x90-334b399ce32d41c7b1c50f3dc36aab7c.mp4" type="video/mp4"></video></div>
+</div>
+<style id="custom-styles"></style></body></html>

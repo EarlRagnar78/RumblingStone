@@ -1,0 +1,9 @@
+Adform=window.Adform||{};
+Adform.host="https://track.adform.net";
+Adform.shost="https://s1.adform.net";
+Adform.scriptBase=Adform.shost+"/banners/scripts/";
+Adform.cache="632";
+Adform.ADFBannerData={"URL":"https://track.adform.net/adfserve/?CC=1&bn=74315679;rtbwp=hMwqdoovWlMQkV63RgB2a9VLTX1c_S4FGoHTIA;rtbdata=RA4tnP8_8B9HF8AV6qUPEnZJZHnHD0MKkorjYiB_1uanY89KZeMCdNkA530ZCkpMxTE492rUIb3tFlC3z5djaem-zeLbDTN8NnxqzmyCaOJtyxiB1KG_OEPgox5EzDqmtr_IrXVVnnqSQv0mC4kpMskBYGjxU5uVSsaOCn48E32W48ugEgwd2zKZ02JNErjR0uORqBm4s7QM9ed9tqYIPE9WHA2pQJbGCSk1H46EV4QCXHYZH_ERZS-IrW5zpTgt1o3j0wEUceqv_QYLGGtEGdjhtom-BNgDi6LQD9PN2xLAh9dL5n6_Cc7-AhJ5uggc8c1XWMI9brWQPKttd80wbHs5Lp6MLYfEfQocQQO7qbGYEqjuzG8kYLCC8TFGMRySFiiKhlexN98Q-BGzMAxsKQRb1KdB0lkKa0b8CmUtV3QncC6aflbCRGASjYzVbd8p7wdN8UmDpRXp9w75tqAnTHsWmmakTP6Yu12sI2XtusmzX0ElK3vcEPYyepqEVefn3ybpcDZ9G6YR7Pn548zpoW8DwmZ4CrcCKNk2ehmYr2psRWPjD439aXAJUoGdrwq3bJky0_7du2d9mmTMTTWCJ3qW0dpJayui0JoOyguv1oJ1cafKM8wlqZykr2QvvRthVaoDYVJhePmizE_21T8XoUiO21uIwdLKWShbbL1h-bxai_VnVB-Pv9nOYIVCIeZhj5GxkGOV6K1VZ6B44ftIHVTgmpw_K3yTOPArz-Ij_VjESM5cvwtlNEx-T76y7xfNFo3UYFz9W3MHTkVDAV_LOfHx1nicn3lviltXlSpzYr3XaCs_oAPZkUD199hxQNwPoR4wv8sN_NyazbuisKnRq15zDBwehlwiBxmerISsM7r5Rd-91CFTotW0K25yBWK646JI0emYY6saMUmqDVcveEOIANFqADVNQGZV0EN2RWMzVYiCMWPTTCbUcjDjp92h4mGPdgKRYfJ6aIRQuwhu6zO7cyb0tiHEwAFcC04ZvwI1","CREFURL":"http%3a%2f%2fwww.d20srd.org%2f","BN":74315679,"READ_CONSENT":false};
+if(!Adform.ADFBannerParams)Adform.ADFBannerParams=[];
+Adform.ADFBannerParams.push(Adform.ADFBannerData);
+typeof Adform.ADFUtilInstance=="undefined"?document.write('<scr'+'ipt type="text/javascript" src="https://s1.adform.net/mink/632/s1.adform.net/bootstrap.js"></scr'+'ipt>'):new Adform.ADFBanner();

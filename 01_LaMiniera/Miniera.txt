@@ -1,0 +1,377 @@
+Originally built by the dwarves of Clan Melairkyn, the Citadel of Belkram’s Fall
+served as a base.of operations for drow seeking a new foothold in Undermountain until
+the recent earthquake collapsed the cavern around the structure. The passages leading to the Citadel, meanwhile, have become home to a small colony of grells.
+
+A group of PCs should reach 6th level by the end of this chapter, even if they bypass or fail at some of the included combat encounters. Most of the tactical encounters for this chapter are challenging, and fool hardy PCs might bite off more than they can chew. Don't hesitate to remind the players that their characters can run away if the danger is too great. A secret group also operates on this level of the dungeon, and has so far been able to keep its presence hidden from the drow and grells. A large band of dwarves dedicated to an evil god of luck and trickery seeks to take control of the Citadel and the area around it. The dwarves have constructed a massive scaffolding of bone to connect the different layers of this level. The bone scaffolding is a masterpiece of necromantic magic, an undead construction under the control of dwarf priests.
+When Halaster died, the earthquake that heralded his death caused the cavern around the Citadel to collapse, resulting in a mass exodus of spiders loyal to the drow from the area. The drow, too, fled the Citadel cavern, taking up residence near the trading post at the mouth of Belkram’s Fall. A trading post operated’chiefly by gnomes has sprung up in the massive cavern at the mouth of Belkram’s Fall. It expanded almost overnight into a large shantytown as drow survivors emerged from below to take refuge here following the earthquake. Accompanied by an entourage of derro and goblin slaves, the drow have begun calling the expanded settlement Spiderhaven—and the name is sticking. Currently, the gnomes maintain control of the trading post and nominally keep order in the newly formed town. They encourage the drow to move on, but so far the dark elves have shown little urgency to do so.
+While the drow rebuild in Spiderhaven and the dwarves work to make a new home in the depths of their ancient stronghold, neither group is aware that a portal has opened in the base of Belkram’s Fall. The portal links the lava tube to the Elemental Plane of Fire, from which an inferno spider has emerged.
+As if this were not enough, Belkram himself has awakened within his hidden tomb. Guardian of a great dwarven legacy, Belkram cannot rest until he is certain that his home has been made secure once again, or until a worthy champion has claimed the legacy he has guarded for so long.
+
+Possible reasons that the PCs might venture down into Belkram’s Fall might include one or more of the following.
+
+DWARVEN LEGACY
+Gyudd, owner of Gyudd’s Distillery in Skullport and heir to the royal Melairkyn bloodline, has been tormented by strange dreams of late. In them, he is being called to find the legacy of his family within Belkram’s Fall. He has decided to sell his business and use the money to recruit able adventurers who are willing to assist him in discovering the source of his strange dreams. In his dreams, he sees a plain black crown bearing a single, blood-red gem. He always wakes from this dream with a blazing headache. Gyudd (NG male dwarf fighter 3) prefers to accompany the PCs on the trip down to Belkram’s Fall rather than sit idly by and wait for them to return.
+
+GYUDD, HEIR TO KING MELAIR IV
+
+If Gyudd accompanies the PCs, use the statistics provided here. He should by no means be the main fighter in the group, though he certainly contributes. It should become clear that the dwarf is extremely devout, in that he prays each day. When Gyudd advances in level over the course of the adventure, he takes levels of cleric.
+-----
+
+EXPLORING Belkram Fall
+
+Like a great yawning void, the massive lava tube reaches down into the heart of the world. A nearly perfect circle that extends through the earth like a massive path to oblivion, it stands before you, a faint breeze slowly drifting out of its terminus. The air that issues from the void smells faintly of rotten meat and freshly turned earth.
+
+Massive stone doors separate the area of Spiderhaven on the banks of the River Sargauth from the chamber that houses the lava tube known as Belkram’s Fall (also known as the Shaft, and shown as such on the map at right). The stone doors open easily on ancient hinges that operate as if they were hung yesterday; the portal was built to last.
+
+PROPERTIES OF BELKRAM’S FALL
+
+Unless otherwise noted, the chambers within Belkram’s Fall (as well as the lave tube itself) are completely dark, offering total concealment to those who operate without light. Anyone who descends into the shaft must bring sufficient light to carry them through any given descent.
+
+Approximately 120 feet in diameter, the walls of Belkram’s Fall are sheer and thus require numerous DC 20 Climb checks to navigate without additional assistance. It is important to note that PCs who choose to descend into the massive lava tube on their own power are not likely to make it very far without climbing kits and a lot of rope at the very least, or better yet, some kind of magic assistance.
+
+Lifts
+
+The Melairkyn clan dwarves did leave behind a series of lifts that operate on a complex system of levers and pulleys. However, the years have not been kind to this marvel of dwarf engineering, though this isn’t readily apparent at first glance. The stone platforms are sturdy enough, as is the steel-wound rope that connects them to the pulleys. Each platform can hold as much as a thousand pounds, and if bearing at least 400 pounds they readily descend into the shaft without failure. However, the pulleys and wheels that make up the lift system are rusted and prone to stick. They have a 20% chance per minute of use of becoming jammed when used to ascend the shaft. A jammed lift platform strands its passengers within the tube.
+
+Each platform features a pedestal with a pair of levers that can be manipulated to cause the lift to lower and rise. The levers have a catch that is flipped in one direction to ascend and in the opposite direction to descend. Once the catch is flipped, the operator must continuously pump the levers back and forth ina scissorlike manner to make the platform rise or fall. Any creature that has a Strength score of 12 or higher is capable of working the levers to make the lift operate smoothly.
+
+A creature that attempts to manipulate the pulleys without having a Strength score of 12 or higher causes the ride to be progressively less smooth, as the operator struggles with controlling the system. When ascending, the chance of the pulleys and wheels jamming increases by 10% for every 2 points lower than 12 the operator’s Strength score is. Ifa lift jams while ascending, a successful DC 20 Strength check is required to get it moving again. It is possible for as many as two PCs to work together to make this check.
+
+Rune-Ward Braces
+
+Constructed by the Melairkyn clan dwarves, the rune-ward braces safeguard the temple and tomb far below. These five circular tunnel braces are made primarily of mithral and affixed to the inside of Belkram’s Fall with massive adamantine spikes. The central hub of each brace is engraved with runes of power that are inlaid with alchemical silver. These braces project a field of energy that disrupts the use of arcane and divine magic within 50 feet (above and below) each brace. This area is treated as though under the effect of an antimagic field cast at 20th level.
+
+These braces ultimately became a warding for each level of Belkram’s Fall, breaking the shaft down into five one-miledeep segments. It is important to keep in mind that while a character might fly (using magic) down into one area of antimagic and fall through to an area where the magic once again works, someone can't use magic to fly back up through that area. That, and an inability to use teleportation magic within Undermountain, can make traversing Belkram’s Fall in an upward direction treacherous at best.
+
+Initially, the PCs must descend just over a mile into Belkram’s Fall to get to the upper terrace. Just prior to reaching the guard stations located there, they must pass by the first rune-ward brace. If they are using a light source, read:
+
+As you descend into the depths of Belkram’s Fall, something on the wall of the shaft catches your eye. A great mithral brace rings the inside of the lava tube, held in place by adamantine rods that appear to have been driven straight into the rock wall. Massive runes inlaid with silver are etched into the surface of the mithral.
+
+It is important that as the PCs come within 50 feet of a rune-ward brace, 7 you describe the visible effects that the = antimagic field might have on them. Magical sources of light wink out, and enchantments in effect disappear. Spellcasters and other characters who regularly use magic (arcane or divine) feel the small hairs on the back of their necks rise as they temporarily lose the connection to the source of their powers. A rune-ward brace gives off a faint illumination, casting a dim glow that allows the PCs to see it even if they lose their light sources.
+
+A character who makes a successful DC 26 Spellcraft check recognizes the effects of an antimagic field.
+
+A character who makes a successful DC 15 Knowledge (architecture and engineering) check recognizes the mithral band as a brace, likely set in place to reinforce the natural structure of the lava tube.
+
+When the PCs are 50 feet below a rune-ward brace, magical effects whose durations have not expired resume.
+
+GUARDIANS OF THE UPPER TERRACE
+
+The first lift completes its descent at a stone platform approximately 100 feet below the first rune-ward brace. These are the guard stations originally constructed by the Melairkyn clan dwarves. There are three tiers of guard stations, with each one being a triangular formation of three stations each. The stations are visually identical, with a battlement (complete with crenellated wall) facing the inside of the lava tube. Though their construction is superficially the same, it is important to note that each of the stations was outfitted with various traps designed to keep out attackers arriving from the lava tube.
+
+In addition to the traps laid down by the Melairkyn clan dwarves, the guard stations are now home toa small colony of grells. Approximately a dozen of the creatures inhabit these ruins, along with a trio of grell philosophers to guide them in their hunting efforts. Until recently, the grells of this colony have been content to hunt spiders and the occasional dark elf brave enough to ascend this far above the Citadel. However, the recent destruction of the Citadel and the resulting mass exodus of spiders into the caverns above have caused the grells to expand their hunting grounds. Because of this, the PCs might hear rumors of “horrors with tentacles” that have been preying upon the goblin and derro servants of the drow refugees of Spiderhaven. Since each of the nine guard stations is laid out the same, only a single description is given for the lot of them. However, notations for where traps are placed among them are given associated with each one’s corresponding letter (A through I). Dwarves are nothing if not systematic. Though the traps themselves vary, their locations do not. The traps placed by the dwarves reside in the battlement, yard, and gallery only (as described below).
+
+Since the grells are not prone to dwelling in any given area of their home for any considerable length of time, they are not placed in static locations throughout this structure. The grells do tend to hunt in pairs, however. The exception to this is the grell philosophers, who each inhabits one of the three lower guard stations in solitude.
+
+In order for the PCs to proceed deeper into Belkram’s Fall, it is necessary for them to make their way from the top guard stations to the bottom guard stations, where they can find another lift. Although it is possible for PCs to use ropes to climb down the outer surface of the battlements (100 feet between each level of guard stations), or perhaps even fly if they have the appropriate spells or items, doing so has a cumulative 20% chance of attracting a pair of grells each minute. As natural flyers, the grells have the clear advantage in this situation, and are happy to hunt those foolish enough to make such an attempt. Assuming, however, that the PCs choose to explore the guard stations, it is possible for them to encounter grells as they are hunting.
+
+Tactical Encounters: More information regarding these encounters (as well as chances for having them) can be found in tactical encounters 4—1, Eaters of the Living (page 126) and 4—2, Aberrant Huntmaster (page 128). A grell philosopher resides in each of the bottom three guard stations. If the PCs traverse through any one of those guard stations, refer to tactical encounter 4—3, Philosophical Gourmet
+
+(page 130).
+
+GSI: THE BATTLEMENT
+
+Carved out of the stone of the lava tube, a crenellated wall stretches across the mouth of this cavelike structure. An empty courtyard extends beyond the wall, away from the shaft, and a series of shallow stone steps rise to double doors made of stone, each of which is carved with the visage of a leering gargoyle.
+
+The leering gargoyles in the doors of the respective courtyards are each armed with a spell turret. Although each essentially operates the same, the selection of spells used in them changes from guard station to guard station, based largely upon the preference of the wizard who originally constructed each turret. Any creature that isn’t a dwarf that moves to within 15 feet of the doors triggers the spell turrets. A creature must be walking on the ground in order to trigger the trap, though the trigger itself isn’t mechanical in nature. Since the grells always fly, they don’t run the risk of setting off this trap. It is important to note that it is possible to disarm this trap only at the doors. The ceilings throughout the guard stations are 10 feet high, except where noted.
+
+Stone Doors: 4 inches thick; hardness 8; hp 60; break DC 20 (partially stuck).
+
+Guard Station Spell Turrets (1st-level wizard spells): CR 2; Diminutive magic device; visual trigger (true seeing); automatic reset; four different spell effects cast once per round in set order, no spells cast every fifth round but spell turret self-repairs 4d8+20 hp; Search DC 26; Disable Device DC 26; AC 7; hardness 8; hp 200.
+
+Stations A, E, I Spells: cause fear (DC 12), grease (DC 12), ray of enfeeblement (+5 ranged touch), magic missile.
+
+Stations B, D, H Spells: color spray (DC 12), grease (DC 12), sleep (DC 12), magic missile.
+
+Stations C, F, G Spells: magic missile, grease (DC 12), burning hands (DC 12), magic missile.
+
+A particular spell turret (one per door) targets the closest unrecognized creature and has a 360-degree arc of fire. The order in which a turret casts its spells is set; it cycles through
+them in the same order each time, healing and resetting itself every 5 rounds.
+
+GS2: THE YARD
+
+The floor of this oddly shaped chamber has a slight downward slope. Offset walls narrow to a 10-foot-wide doorway that leads away from the great yawning pit and deeper into the structure.
+
+The yard was built as a fallback point where the dwarves could easily fortify, since the sloped walls create an easily defensible chokepoint. Two 10-foot squares set directly adjacent to one another serve as triggers for a pair of traps that automatically reset every 5 rounds. Since the grell do not walk, they have never set off the traps in these areas. The traps used in the yard of any given guard station vary as follows.
+
+Tripping Chain Traps (2) (Stations A, D, G): CR 2; mechanical; location trigger; automatic reset; multiple targets (tripping and melee attack); Atk +15 melee touch (trip; +6 opposed Strength check), Atk +15 melee (2d4+2, spiked chain); Search DC 15; Disable Device DC 18.
+
+Note: This trap is really one trap that trips and a second trap that attacks with a spiked chain. If the trip attack succeeds, a +4 bonus applies to the spiked chain attack because the opponent is prone.
+
+Camouflaged Pit Traps (2) (Stations B, E, F): CR 2; mechanical; location trigger; automatic reset; Reflex DC 20 avoids; 20 ft. deep (2d6 falling damage); multiple targets (first target in each of two adjacent 5-foot squares); Search DC 24; Disable Device DC 19.
+
+Floor Blade Traps (2) (Stations C, H, I): CR 1; mechanical; touch trigger; automatic reset; Atk +10 melee (2d4/x4, scythe); Search DC 22; Disable Device DC 22.
+
+GS3: THE GALLERY
+
+The ceiling in this chamber is vaulted, rising to a height of 20 feet in the immediate entryway. A sheer 10-foot wall blocks further progress, though a pair of sturdylooking iron ladders are built into the floor on either side of the chamber, allowing passage up to the other half of the gallery.
+
+It is important to note that although there is 20 feet of space between the ceiling and the floor in the first half of the room, the ceiling is only 10 feet from the floor in the back half of this chamber (where the room rises to a gallery that is 10 feet higher than the floor of the entryway). The gallery was used by the dwarves as an additional fallback point where they could employ ranged weapons from above against attackers that pursued them into this chamber. Climbing the wall to the upper gallery requires a DC 20 Climb check without additional assistance. If the PCs employ a grappling hook, there is nothing for it to catch onto, aside from the ladders.
+
+Anyone who makes a successful DC 20 Spot check while within 5 feet of a ladder notices an odd coloration in the metal about 5 feet up. The odd coloration is due to scorching caused by the burning hands trap set on each ladder. Anyone who climbs a ladder without disarming this trap is subject to its effect.
+
+Burning Hands Trap: CR 3; magic device; proximity trigger (alarm); automatic reset; spell effect (burning hands, Sth-level wizard, 5d4, Reflex DC 12 half); Search DC 26; Disable Device DC 26.
+
+GS4: THE BARRACKS
+
+A series of sturdy-looking triple bunks is spaced evenly throughout this room. A thick layer of dust and cobwebs make homes for dozens of spiders that populate the chamber.
+
+Other than the spiders, which are harmless and skitter away from anyone who approaches, there isn’t much to find in these chambers. Though not terribly comfortable, the bunks are in working condition and can be used if the PCs need a place to rest.
+
+A successful DC 15 Search check reveals a sizable engraving in the back wall of the chamber, hidden under dust and behind cobwebs. It appears to be a faceted gem floating inside a mountain. Anyone making a successful DC 15 Knowledge (religion) check identifies this as the holy symbol of a dwarf god. If anyone presses on the engraving of the gem, it gives way, depressing slightly into the wall, and releasing the secret door in the back of the chamber. When this is done, the secret door slides open. Even if the PCs do not press the engraving, a successful DC 20 Search check reveals the secret door, though knowing it is there doesn’t allow a PC to understand the mechanism for opening it.
+
+GS5: OFFICER'S QUARTERS
+
+This sparsely furnished room holds a pair of old beds that might once have been of fine quality, though time has taken its toll. A pair of aged desks, each with a sturdy-looking chair, rests against the far wall. An engraving of a faceted gem floating inside a mountain adorns the wall between the desks.
+
+This room used to be the officers’ quarters for the guard station, housing a single warrior and either a cleric or wizard. Though the beds in this chamber might appear to be more comfortable than the bunks in the barracks, lying on them causes them to collapse. The same is true for the chairs, which are equally unreliable.
+
+As in the barracks, the space on the back wall hides a secret door. Anyone making a successful DC 15 Knowledge (religion) check identifies the engraving as the holy symbol of a dwarf god. If anyone presses on the engraving of the gem, it
+
+gives way, depressing slightly into the wall and releasing the secret door in the back of the chamber. Once this is done, the secret door slides open. Even if the PCs do not press the engraving, a successful DC 20 Search check reveals the secret door, though knowing it is there doesn’t allow a PC to understand the mechanism for opening it.
+
+A thorough search of the desks in one of the stations (Search DC 15) uncovers a potion of cure moderate wounds and a +1 dagger in the back of a stuck drawer.
+
+GS6: ARSENAL AND STOREROOM
+
+A narrow hall leads to a wider passage that seems to double back upon itself. Numerous weapon and armor racks rest against one side of the passage, while dozens of crates, barrels, and boxes line the other.
+
+The weapons remaining on the racks (axes of various sizes, as well as the occasional warhammer) are no longer in serviceable condition, having rusted and deteriorated with the passage of time. The armor (chainmail and chain shirts mostly) is in similarly poor condition, and would be considered unusable except perhaps as a disguise. The foodstuffs and supplies in the boxes and crates are neither edible nor usable, and the ale in barrels is no longer drinkable. However, the substance formerly knownas ale, being of dwarven stock, is still highly flammable, and as such can be treated as particularly smelly oil. It creates a black, acrid-smelling smoke when lit on fire and burns twice as fast as actual oil. Each guard station has 3d4 15-gallon kegs, and each keg holds the equivalent of 120 flasks of oil.
+
+
+
+TOMB KEYS
+
+Hidden throughout the guard stations are the keys needed to enter the tomb of Belkram. These keys are cleverly hidden as the gem-shaped buttons that open the secret doors in each guard station. Every gem-key is adorned with the holy symbol of one of nine ancient dwarf deities.
+
+When the PCs examine the engraving, a successful DC 20 Spot check allows them to notice that the button can be removed.
+
+Once discovered, each key can be removed by making a DC 20 Disable Device check. It is important to note that while the PCs might notice these symbols on some of the buttons, and might even identify them, it is likely that they do not realize their significance until they reach the temple below. They might have to return to the guard stations to retrieve them. The table below shows which symbol can be found on each key and where they are located within the guard stations.
+
+A successful DC 20 Search check reveals the secret door in this passage. Each is marked with a dwarven holy symbol (a faceted gem floating inside a mountain) that when pressed causes the respective secret door to slide open. This leads directly to a set of spiral stairs that connects the guard stations in threes (A—D—G, B—E-H, and C-—F-]).
+
+Note: The outer walkway on the bottom layer of guard stations has a lift identical to the one described on page 118 that can carry the PCs down to the Citadel.
+
+Guard Station Symbol Location 
+A Two silver rings GS6 
+B Open book GS4 
+C Bronze mask flame eyes GS5
+D Gold piece GS4
+E Hammer and anvil GS6
+F Flame rising from needle GS5
+G Sword wrapped in spirals of fire GS4
+H Unadorned gem GS5
+I Two crossed battleaxes GS6
+
+REALMSLORE: ABBATHOR
+
+In a ForgotTten REALMS campaign, this band of dwarves worships Abbathor, a neutral evil god of luck and trickery. Abbathor’s holy symbol is a diamond-bladed dagger. If you use the gods described in the Player’s Handbook in your campaign, then these dwarves are dedicated to Erythnul, a chaotic evil god of slaughter and trickery. In the latter case, the band of dwarves has a slightly darker outlook on the world, but in both cases they follow an evil god, utilize undead, and seek to take control of a portion of Undermountain.
+
+
+
+The Citadel
+
+The second lift takes the PCs about a mile farther down Belkram’s Fall, past another rune-ward brace, to the level that houses the ruins of the Citadel. When Halaster died, an earthquake erupted, triggered by the opening of a gate to the Elemental Plane of Fire in the base of the lava tube. The Citadel suffered the most damage in this event. Anything that was living in the Citadel died at that time, with the exception of a swarm of monstrous spiders that managed to flee just prior to the destruction. All that remains of the once-proud Citadel is a relatively shallow cavern of ruins.
+
+The lift descends into a cavern whose opening circles the entire perimeter of Belkram’s Fall. A low 4-foot crenellated wall stands between the lift and what must once have been a proud underground city. Widespread destruction shows that this cavern suffered from some terrible catastrophe, since ruined structures can be seen throughout. The smell of decaying flesh hangs in the air, as does an almost palpable silence.
+
+If the PCs have the means to see across to the other side of Belkram’s Fall, they spot another lift that they can use to descend deeper into the shaft. Unless they can fly or otherwise transport themselves across the shaft, they must disembark and travel around the perimeter of the lava tube to reach the other lift.
+
+The PCs might wish to explore this area. If so, for every 10 minutes they spend picking through they rubble, they have a cumulative 10% chance of attracting the attention of the undead creatures that now inhabit these ruins. Whenever this occurs, there are three possible encounters to choose from. You can either pick one that you like or determine the encounter randomly. Either way, the longer the PCs remain in the area, the more likely they are to attract the attention of undead (See Tactical Encounters, below).
+
+Searching the ruins isn’t entirely without the possibility of reward, however. For every 10 minutes spent searching in the ruins, there is a 10% chance that a PC might find something. Roll on the Citadel Treasure Table to determine what the PC finds. At the same time, this is a great place to seed items, maps, notes, and other such story-driving objects as befits your campaign. The Citadel has seen the rise and fall of two great civilizations, so the possibilities for providing adventure hooks in the form of such items are practically endless.
+
+CITADEL TREASURE TABLE
+
+d% Treasure
+
+01-11 3d10 cp
+12-21 4d12 sp
+22-31 1d6 gp
+32-41 1d8 pp
+42-51 Gem. Roll once on Table 3-6, DMG 55
+52-61 Art. Roll once on Table 3-7, DMG 55 
+62—98 Mundane Item. Roll once on Table 3-8, DMG 56 
+99-100 Minor Item. Roll once on Table 7-1, DMG 216
+
+Coins the PCs find in the ruins are either of drow (75%) or dwarf (25%) manufacture, bearing symbols of a large spider or a faceted gem floating inside a mountain as appropriate. Any art found has a 50% chance of being worth only half the value indicated on DMG Table 3-7, due to damage sustained in the earthquake. The same chance exists for any magic item that is breakable, such as a potion ina bottle. If a magic item is determined to be damaged, it is essentially worthless and unusable.
+
+Tactical Encounters: The three tactical encounters that can occur at this juncture of the adventure are 4—4, Losing Face (page 131); 4—5, Dire Guardians (page 132); and 4—6, Reaching Darkness (page 133). Each of these encounters can occur multiple times, since there is essentially no limit as to how many undead of the types given roam the ruins of the Citadel. Note that prior to the destruction, tunnels led away from the Citadel to other parts of Undermountain and the Underdark. These tunnels were sealed and are no longer accessible from Belkram’s Fall.
+
+
+--------------
+SKELETAL SCAFFOLD
+
+Originally, the third lift could take passengers down as far as the temple, two miles below the level of the Citadel. However, those riding the lift now must stop somewhat short of that destination. A group of dwarves dedicated to an evil god of luck and trickery secretly made their way into Belkram’s Fall about a year ago. Since arriving, they have constructed a massive series of platforms and walkways made almost entirely out of bone. The lift deposits riders on the first platform, since the scaffold blocks further descent.
+
+These platforms and walkways exist in a strange state of undeath that makes them responsive to those capable of either turning or rebuking undead. The walkways extend and retract to connect the platforms. The only connection between the fourth and fifth platforms, however, is by way of a large natural cavern that the dwarves discovered during construction and incorporated into their plans.
+
+The high priest controls the scaffold and directs additional construction from the ninth (lowest) platform. Clerics operate and continue to build the scaffold, while knights have been posted to stand guard while they work.
+
+PROPERTIES OF THE SKELETAL SCAFFOLD
+
+Each of the walkways rolls up to the higher of the two platforms to which it connects. In order to get a walkway to roll down, a cleric must use either a turning or rebuking attempt. No check is required for the attempt, but if the cleric is turning (as opposed to rebuking), he or she must be on the top platform, which causes the walkway to extend out, rolling away from the cleric. The walkway remains in place for 10 rounds (1 minute), just as though it had been turned normally.
+
+Only clerics who are capable of rebuking undead can cause a given walkway to roll toward them. If the PCs do not have a character who is capable of turning or rebuking undead, they might have a difficult time negotiating the scaffold. Additionally, if the cleric in the party isn’t capable of rebuking undead, once the PCs have traversed a given walkway and it has rolled itself back to its topmost platform, they cannot use that walkway to ascend back to the higher platform.
+
+Since the scaffolding was constructed by clerics of an evil god of luck and trickery, they have special privileges when it comes to rebuking the walkways. A cleric of that same god can, when using a rebuking attempt to manipulate a bone walkway, cause a bone walkway up to two platforms away to telescope out to reach him or her. When a cleric does this, the walkway is reduced in structural strength so that it can bear the weight of only a single Medium creature (or two Small creatures) at a time.
+
+For example, if a cleric of the evil god of luck and trickery is standing on Platform 3, he can use a rebuking attempt to call a walkway from Platforms 1 or 2. Likewise, the cleric could direct the walkway on Platform 3 to extend to either platform 4 or 5.
+
+CREATURES
+
+The platforms are populated by a band of dwarves who have devoted their entire existence to an evil god of luck and trickery. The band follows Drexlyn Darrowdelve, an ancient dwarf cleric who also happens to be a vampire bent on taking control of Belkram’s Fall. A small colony of myconids ln, occupies the cavern that con- T nects Platforms 4 and 5. i These stalwart plant creatures arent fond of the > dwarves who have taken up residence outside their home, but they are wary of the strange powers the dwarves possess. Drexlyn promised that he and the other dwarves would leave the myconids alone, í provided they are allowed occasional passage through the area. For this concession, the myconids have agreed to forbid passage to anyone who doesn’t
+bear a holy symbol of the evil god. 
+
+PI: LANDING ZONE 
+
+The lift descends to an octagonal platform constructed entirely of bone, lashed together with tendons and ligaments. The platform is affixed to the side of the lava tube with great steel rods that have been driven directly into the stone. What appears to be some kind of extendable bone walkway or bridge lies rolled up to one side of the platform.
+
+This is the first platform the dwarves constructed. Initially, depending on visual acuity and light sources, the PCs might not see where the walkway extends to. PCs who approach the rolled-up walkway and look over the edge can see Platform 2 below them in the darkness. When this occurs, they are also noticed by the dwarves who stand guard on the lower platform.
+
+Tactical Encounter: 4-7, Unholy Protectors (page 134).
+
+P2: GUARD STATION
+
+This platform looks the same as Platform 1, except for the quartet of dwarf knights and their cleric commander residing here. A small bone table and chairs have been constructed, and the knights and their commander sit and play the Three-Dragon Ante card game to pass the time. Tactical Encounter: 4—7, Unholy Protectors (page 134).
+
+P3: BARRICADE
+
+A barricade of bone faces the direction of the descending walkway from Platform 2. Several dwarves peek out from behind the AÑ barricade, and you can see that } y ò they wield loaded crossbows that =) are pointed in your direction.
+
+When the cleric commander who was previously on Platform 2 arrives, he instructs the knights here to stand in defense, even as he rebukes the walkway back to Platform 2. He then rebukes the walkway attached to Platform 3, directing it to Platform 5 where he can continue his descent to warn others of the intruders on the platforms above.
+
+Tactical Encounter:
+
+4—8, Barricade (page 135).
+
+P4: CAVERN PORTAL
+
+Though Platform 4 is empty, it does lead directly into a cave in the side of the lava tube wall. The 20-foot walkway that leads from Platform 4 to the cavern is permanent; it does not require a turning or rebuking attempt in order to use it to pass from the platform to the cavern.
+
+The cavern beyond this platform sheds a dull radiance all its own. Fungus of all types grows from every surface of this large natural cavern, giving off a heady scent that you can smell even from the far end of the walkway. The cavern has a rather steep decline as it curves away from sight. You notice giant walking mushrooms with eyes and arms moving around inside the cavern.
+
+The cave is home to a small village of myconids that are charged with the following task: “Do not allow anyone who seeks to harm Abbathor’s [or whichever evil god you are using] good work to pass.” Most of the myconids here are rather small and underdeveloped, so it might be possible for the PCs to simply eradicate the lot of them. However, it is also possible for the PCs to attempt to communicate peaceful intentions (should they be so inclined) and pass through the cave without a fight.
+
+If the PCs do not immediately attack, an elder worker approaches them and attempts to open up a dialogue by releasing a cloud of rapport spores. Any PC who fails a DC 15 Fortitude save (willingly or otherwise) can communicate with the myconids telepathically thereafter. The elder worker speaks for his people, demanding to know why the PCs have come. He has no intention of allowing them to pass, since he assumes they are here to cause harm either to the elder worker’s people or to the dwarf god (else why would the dwarves stipulate otherwise in their agreement?), and thus they must be turned away.
+
+Ifthe PCs can convince the elder worker that they have no intention of harming the myconids and promise that they are not here to harm the good works of the dwarf god (a task that requires them to make a successful DC 20 Diplomacy check or a DC 25 Bluff check), the myconids allow the PCs to pass through the caverns unmolested. Only PCs capable of communicating with the myconids (those who failed their Fortitude save against the rapport spores) can assist with this task. The myconids do not respond well to PCs who attempt to communicate through hand gestures and body language, since they view that type of language as crude and uncivilized. Additionally, since the myconid language is telepathic in nature, spells such as comprehend languages and tongues are of little use to the PCs in this encounter.
+
+Deeper within the chamber, closer to the exit and to Platform 5, the ground grows extremely swampy as a natural spring wells up from the stone floor and has created a miniature marsh. The ground here is quite slippery and difficult to navigate without falling in the water. More information about this area can be found in the tactical encounter.
+
+Tactical Encounter: If the PCs choose to attack the myconids at any time, refer to tactical encounter 4—9, Ferocious Fungus (page 136).
+
+P5: STAGING AREA
+
+Long, narrow bones are stacked neatly in a series of tall piles on this platform. Open sacks containing bundles of the long, stringy filaments used to bind the platforms together lie next to the stacks of bones.
+
+Other then the supplies described above, this platform stands empty. The dwarves use this platform as a staging area for further construction. At some point they plan to use the bones found here to complete construction of the walkway from Platform 9 down to the temple below.
+
+P6: READY, SET, DIE!
+
+This platform is empty, except for the rolled-up walkway leading to Platform 7. However, assuming the commander from Platform 2 made a successful escape from the PCs in that encounter, a deadly ambush awaits the characters here. Once the PCs turn or rebuke the walkway leading from Platform 6 down to Platform 7 and begin heading down that walkway, a hooded pupil of the evil god on Platform 8 rebukes his walkway and links it to Platform 6. When this occurs, the hooded pupil moves to attack, and both clerics hope to catch the PCs between them on the walkway. Tactical Encounter: 4—10, Ready, Set, Die! (page 137).
+
+P7 AND P8: EMPTY
+
+Assuming the attack on Platform 6 occurs as described, these two platforms are essentially empty, though Platform 7 has another bone table and chairs. Ifthe PCs managed to stop the cleric on Platform 2 from making his escape, then Platform 7 is empty, and only a single cleric stands guard on Platform 8. In this case, the cleric casts invisibility when he sees the PCs coming and then rebukes the bridge leading down to Platform 9, fleeing to warn Drexlyn of the intruders.
+
+P9: DREXLYN’S LAIR
+
+This octagonal bone platform is much larger than those above it. A large throne constructed entirely of bone sits at one end of the platform and glows with a pale luminescence, clearly lighting the entire platform. Upon the throne sits a dwarf with skin like porcelain. His luxurious black beard is tied into one long braid that hangs below his belt, and his black armor seems to absorb light from the surrounding area. He might be mistaken for a statue, until his blood-red eyes flutter open, and his face twists in a snarl of pure hatred.
+
+Drexlyn, the vampire dwarf cleric who leads this band, is insane with hatred for the drow who originally drove his beloved masters from Belkram’s Fall. Though the PCs might not be drow, the dwarfisn’t too picky upon who he takes his vengeance. Drexlyn’s coffin is hidden in the base of his large bone throne. If the PCs cause him to flee, they can notice that his gaseous form slips between the bones making up the throne, and they might see his coffin among the shadows within (Spot DC 20). Tactical Encounter: 4—11, Drexlyn’s Lair (page 138).
+
+Incontri 
+
+ENCOUNTER 4-1
+
+EATERS OF THE LIVING
+
+Encounter level 6
+Use this tactical encounter with the room description on page 119.
+
+As the PCs explore guard stations A-F, there is the distinct possibility that they encounter a pair of grells. Run just one encounter per guard station, if a grell hunting patrol is present, as indicated by a random check.
+
+There is a 25% chance that the PCs encounter grells in guard stations A, B, and C. The chance increases to 75% in guard stations D, E, and F.
+
+In guard stations A, B, and C; roll again if an encounter is called for to determine which of the two tactical encounters to use: 01-75, encounter 4—1; 76—100, encountet 4—-2;
+
+If the roll indicates Encounter 4-1, read the following as the grells sweep into the area:
+
+Two creatures float into the room. They resemble massive brains with raptorlike beaks, floating above a tangle of long, writhing tentacles. The warble of some strange language issues from their beaks as they approach.
+
+TACTICS
+
+Determine which area of the guard station the grell encounter takes place (01-40, GS1; 41-75, GS2; 76-100, GS3). The grells’ tactics change, depending on where the attack occurs.
+
+GS1: If attacking the PCs from the battlement, the Selis swoop in from the lava tube outside Belkram’s Fall. They are aware of the spell turret here and take advantage of the confusion it creates, waiting until the PCs set off wigs spell before swooping in to attack.
+
+GS2: The grells wait until the PCs have either encountered or are in the midst of disabling the traps in this area before attacking. They take advantage of their flight capabilities in and around the pit traps, trying to draw the PCs unto the traps while hovering above them.
+
+GS3: Here, the grells. attack the PCs while they're attempting to navigate the ladders or otherwise climb the stone wall to the gallery above. The grells use their ability to fly to their advantage, attacking when the PCs are most vulnerable and less capable of fully defending themselves. While climbing, a PC loses his or her Dexterity bonus to AC (if any) and can't use a shield. A climbing character can pause to free one hand to cast a spell or use a weapon.
+
+TRAPS
+
+Each guard station features a number of traps designed to slow progress and weaken any intruders. These are described below.
+
+GSI: Spell Turrets
+
+Guard Station Spell Turrets (1st-level wizard spells): CR 2; Diminutive magic device; visual trigger (true seeing); automatic reset; four different spell effects cast once per round in set order, no spells cast every fifth round but spell turret self-repairs 4d8+20 hp; Search DC 26; Disable Device DC 26; AC 7; hardness 8; hp 200.
+
+Stations A and E Spells: cause fear (DC 12), grease (DC 12), ray of enfeeblement (+5 ranged touch), magic missile.
+
+Stations B and D Spells: color spray (DC 12), grease (DC 12), sleep (DC 12), magic missile.
+
+Stations C and F Spells: magic missile, grease (DC 12), burning hands (DC 12), magic missile.
+
+A particular spell turret (one per door) targets the closest unrecognized creature and has a 360-degree arc of fire. The order in which a turret casts its spells is set; it cycles through them in the same order each time, healing and re-setting itself every five rounds 
+
+GS2: Traps
+
+The yard here is covered by two 10-foot traps, each triggered by stepping into these areas. The traps reset automatically every 5 rounds.
+
+Tripping Chain Traps (2) (Stations A and D): CR 2; mechanical; location trigger; automatic reset; multiple targets (tripping and melee attack); Atk +15 melee touch (trip; +6 opposed Strength check), Atk +15 melee (2d4+2, spiked chain); Search DC 15; Disable Device DC 18.
+
+Note: This trap is really one trap that trips and a second trap that attacks with a spiked chain. If the trip attack succeeds, a +4 bonus applies to the spiked chain attack because the opponent is prone.
+
+Camouflaged Pit Traps (2) (Stations B and F): CR 2; mechanical; location trigger; automatic reset; Reflex DC 20 avoids; 20 ft. deep (2d6 falling damage); multiple targets (first target in each of two adjacent 5-foot squares); Search DC 24; Disable Device DC 19.
+
+Floor Blade Traps (2) (Stations C and E): CR 1; mechanical; touch trigger; automatic reset; Atk +10 melee (2d4/x4, scythe); Search DC 22; Disable Device DC 22.
+
+GS3: Ladder Trap
+
+Anyone who makes a DC 20 Spot check when within 5 feet of a ladder notices an odd coloration in the metal about five feet up. The odd coloration is due to scorching caused by the burning hands trap set on each ladder. Anyone who climbs a ladder without disarming this trap is subject to its effect. Burning Hands Trap: CR 3; magic device; proximity trigger (alarm); automatic reset; spell effect (burning hands, Sth-level wizard, 5d4, Reflex DC 12 half); Search DC 26; Disable Device DC 26.
+
+CONCLUSION
+
+The PCs must defeat or drive off the hunting grells to pass through this area and find the path down to the next guard: station.
+
+Ifa grell is reduced to 10 hit points or less, it attempts to flee in order to alert the rest of the colony. A fleeing grell immediately proceeds to the nearest grell philosopher to report on the status of the intruders.
+
+If a grell manages to escape, the PCs have 1d4 minutes to leave the guard station before either a pair of grells or a grell huntmaster and two gricks arrive to deal with them.
+
+
+TacticaAL Map DETAILS
+
+Details on the tactical map are described below. - Creatures: Place the srells (once the PCs notice them) anywhere within the area where the encounter takes place. Traps: See the notes in this encounter for details on the traps designed to slow, hinder, and weaken intruders (such as the PCs) trying to pass through the area. Darkness: There is no light source in this area. PCs must employ their own light sources or use senses such as darkvision (if they have them). Otherwise, they are effectively blind.
+
+
+ABERRANT HUNTMASTER
+
+Encounter Level 7 
+
+Use this tactical encounter with the room description on page 119
+
+
+As the PCs explore guard stations A—F, there is the distinct 
+
+possibility that they encounter a grell huntmaster and its  pair of grick “hounds.” Run just one encounter per guard station, if a grell huntmaster patrol is present, as indicated by a random check. There is a 25% chance that the PCs encounter grells in guard stations A, B, and C. The chance increases to 75% in guard stations D, E, and F. 
+In guard stations A, B, and C, roll again if an encounter is called for to determine which encounter to use: 
+01-75, encounter 4—1;
+76—100, encounter 4-2. 
+
+In guard stations D, E, and F, the encounter is always with a grell huntmaster (use this encounter).
+
+If the roll indicates encounter 4-2, read the following as the grell huntmaster and its gricks sweep into the area: 
+
+Two wormlike creatures with four tentacles sprout- do get this bonus on their Hide checks for the purpose ing from their heads have slithered into the chamber. Another creature follows closely behind them. It resembles a massive brain with a raptorlike beak that floating atop a mass of long, writhing tentacles. It holds a long; slender silver tube in one tentacle. The tube crackles with electricity.

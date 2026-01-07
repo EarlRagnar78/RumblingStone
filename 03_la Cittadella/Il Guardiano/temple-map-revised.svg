@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Sfondo grigio chiaro per il tempio -->
+  <rect x="50" y="50" width="700" height="500" fill="#f0f0f0" stroke="#000" stroke-width="2"/>
+  
+  <!-- Arco del soffitto -->
+  <path d="M50,50 Q400,-100 750,50" fill="none" stroke="#000" stroke-width="2"/>
+  
+  <!-- Pavimento -->
+  <line x1="50" y1="550" x2="750" y2="550" stroke="#000" stroke-width="3"/>
+  
+  <!-- Pilastri solo laterali (4 per lato) -->
+  <!-- Pilastri a sinistra -->
+  <circle cx="125" cy="175" r="20" fill="#999" stroke="#000" stroke-width="1"/>
+  <line x1="125" y1="175" x2="125" y2="550" stroke="#999" stroke-width="40"/>
+  
+  <circle cx="125" cy="275" r="20" fill="#999" stroke="#000" stroke-width="1"/>
+  <line x1="125" y1="275" x2="125" y2="550" stroke="#999" stroke-width="40"/>
+  
+  <circle cx="125" cy="375" r="20" fill="#999" stroke="#000" stroke-width="1"/>
+  <line x1="125" y1="375" x2="125" y2="550" stroke="#999" stroke-width="40"/>
+  
+  <circle cx="125" cy="475" r="20" fill="#999" stroke="#000" stroke-width="1"/>
+  <line x1="125" y1="475" x2="125" y2="550" stroke="#999" stroke-width="40"/>
+  
+  <!-- Pilastri a destra -->
+  <circle cx="675" cy="175" r="20" fill="#999" stroke="#000" stroke-width="1"/>
+  <line x1="675" y1="175" x2="675" y2="550" stroke="#999" stroke-width="40"/>
+  
+  <circle cx="675" cy="275" r="20" fill="#999" stroke="#000" stroke-width="1"/>
+  <line x1="675" y1="275" x2="675" y2="550" stroke="#999" stroke-width="40"/>
+  
+  <circle cx="675" cy="375" r="20" fill="#999" stroke="#000" stroke-width="1"/>
+  <line x1="675" y1="375" x2="675" y2="550" stroke="#999" stroke-width="40"/>
+  
+  <circle cx="675" cy="475" r="20" fill="#999" stroke="#000" stroke-width="1"/>
+  <line x1="675" y1="475" x2="675" y2="550" stroke="#999" stroke-width="40"/>
+  
+  <!-- Navata centrale libera -->
+  <rect x="150" y="60" width="500" height="490" fill="#f0f0f0" stroke="none"/>
+  
+  <!-- Entrata -->
+  <rect x="50" y="450" width="100" height="100" fill="#8b4513" stroke="#000" stroke-width="2"/>
+  <text x="100" y="500" font-family="Arial" font-size="14" fill="#000" text-anchor="middle">ENTRATA</text>
+  
+  <!-- Death Tyrant (Beholder) nascosto -->
+  <circle cx="630" cy="230" r="25" fill="#800080" stroke="#000" stroke-width="2"/>
+  <text x="630" y="235" font-family="Arial" font-size="14" fill="#fff" text-anchor="middle">DT</text>
+  
+  <!-- Wraiths nascosti dietro i pilastri -->
+  <circle cx="675" cy="175" r="15" fill="#6495ed" stroke="#000" stroke-width="1" opacity="0.7"/>
+  <text x="675" y="180" font-family="Arial" font-size="12" fill="#000" text-anchor="middle">W1</text>
+  
+  <circle cx="125" cy="375" r="15" fill="#6495ed" stroke="#000" stroke-width="1" opacity="0.7"/>
+  <text x="125" y="380" font-family="Arial" font-size="12" fill="#000" text-anchor="middle">W2</text>
+  
+  <circle cx="675" cy="475" r="15" fill="#6495ed" stroke="#000" stroke-width="1" opacity="0.7"/>
+  <text x="675" y="480" font-family="Arial" font-size="12" fill="#000" text-anchor="middle">W3</text>
+  
+  <!-- Drow Warlock nascosto -->
+  <circle cx="530" cy="525" r="15" fill="#000" stroke="#fff" stroke-width="1"/>
+  <text x="530" y="530" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">DW</text>
+  
+  <!-- Campo visivo del Death Tyrant (ridotto) -->
+  <path d="M630,230 L575,180 L575,280 Z" fill="rgba(255,0,0,0.2)" stroke="none"/>
+  <text x="590" y="230" font-family="Arial" font-size="12" fill="#f00" text-anchor="middle">Vista</text>
+  
+  <!-- Ombre e zone nascoste -->
+  <rect x="600" y="210" width="60" height="40" fill="rgba(0,0,0,0.3)" stroke="none"/>
+  <rect x="500" y="500" width="60" height="40" fill="rgba(0,0,0,0.3)" stroke="none"/>
+  <rect x="675" y="155" width="40" height="40" fill="rgba(0,0,0,0.3)" stroke="none"/>
+  <rect x="125" y="355" width="40" height="40" fill="rgba(0,0,0,0.3)" stroke="none"/>
+  <rect x="675" y="455" width="40" height="40" fill="rgba(0,0,0,0.3)" stroke="none"/>
+  
+  <!-- Scala -->
+  <line x1="650" y1="580" x2="750" y2="580" stroke="#000" stroke-width="2"/>
+  <text x="700" y="595" font-family="Arial" font-size="12" fill="#000" text-anchor="middle">15 metri</text>
+  
+  <!-- Legenda -->
+  <text x="50" y="30" font-family="Arial" font-size="16" fill="#000" font-weight="bold">Vista Laterale del Tempio Nanico Rivista</text>
+  <text x="650" y="30" font-family="Arial" font-size="14" fill="#000">Legenda:</text>
+  <rect x="650" y="40" width="15" height="15" fill="#800080"/>
+  <text x="675" y="53" font-family="Arial" font-size="12" fill="#000">Death Tyrant</text>
+  <rect x="650" y="60" width="15" height="15" fill="#6495ed" opacity="0.7"/>
+  <text x="675" y="73" font-family="Arial" font-size="12" fill="#000">Wraith</text>
+  <rect x="650" y="80" width="15" height="15" fill="#000"/>
+  <text x="675" y="93" font-family="Arial" font-size="12" fill="#000">Drow Warlock</text>
+  <rect x="650" y="100" width="15" height="15" fill="rgba(0,0,0,0.3)"/>
+  <text x="675" y="113" font-family="Arial" font-size="12" fill="#000">Zone d'ombra</text>
+  
+  <!-- Vista superiore del tempio (più piccola) -->
+  <rect x="50" y="350" width="250" height="175" fill="#f0f0f0" stroke="#000" stroke-width="2"/>
+  <text x="175" y="345" font-family="Arial" font-size="14" fill="#000" font-weight="bold">Vista dall'Alto</text>
+  
+  <!-- Pilastri laterali (vista dall'alto) -->
+  <circle cx="80" cy="380" r="5" fill="#999"/>
+  <circle cx="80" cy="410" r="5" fill="#999"/>
+  <circle cx="80" cy="440" r="5" fill="#999"/>
+  <circle cx="80" cy="470" r="5" fill="#999"/>
+  
+  <circle cx="270" cy="380" r="5" fill="#999"/>
+  <circle cx="270" cy="410" r="5" fill="#999"/>
+  <circle cx="270" cy="440" r="5" fill="#999"/>
+  <circle cx="270" cy="470" r="5" fill="#999"/>
+  
+  <!-- Entrata (vista dall'alto) -->
+  <rect x="50" y="500" width="25" height="25" fill="#8b4513"/>
+  
+  <!-- Death Tyrant (vista dall'alto) - nascosto -->
+  <circle cx="250" cy="400" r="8" fill="#800080"/>
+  
+  <!-- Wraiths (vista dall'alto) - nascosti -->
+  <circle cx="270" cy="380" r="5" fill="#6495ed" opacity="0.7"/>
+  <circle cx="80" cy="440" r="5" fill="#6495ed" opacity="0.7"/>
+  <circle cx="270" cy="470" r="5" fill="#6495ed" opacity="0.7"/>
+  
+  <!-- Drow Warlock (vista dall'alto) - nascosto -->
+  <circle cx="220" cy="500" r="5" fill="#000"/>
+  
+  <!-- Misure del tempio -->
+  <text x="25" y="300" font-family="Arial" font-size="14" fill="#000" text-anchor="middle" transform="rotate(-90, 25, 300)">24 metri (altezza)</text>
+  <text x="400" y="570" font-family="Arial" font-size="14" fill="#000" text-anchor="middle">30 metri (profondità)</text>
+  <text x="400" y="40" font-family="Arial" font-size="14" fill="#000" text-anchor="middle">15 metri (larghezza)</text>
+</svg>

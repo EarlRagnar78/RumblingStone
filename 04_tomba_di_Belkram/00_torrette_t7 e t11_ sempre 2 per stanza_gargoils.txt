@@ -1,0 +1,194 @@
+given this trap for Dungeond and dragons 3.5  version can update the trap for a cr 10 group of 4 pg (given also stats for monster evocated): 
+Spell Turrets (2): CR33 Diminutive magic device; visual
+trigger (true seeing); automatic reset; four dtfferent spell effects
+cast once per round in set order, no spells cast every fifth
+round but spell turret self-repairs 4d8 +20 hp  Search DC 27;
+Disable Device DC 27; AC 7; hardness 8; hp 200.
+T7 Spells (and-level cleric spells ); sound burst (DC 13),
+summon monster II (Medium fiendish monstrous spider),
+hold person (DC 13), summon monster II (Medium fiendish
+monstrous spider).
+T 1l spells (znd-level wizard spells): web (DC 13 ), summon
+swarm(spiders;duration 4 rounds), darkness,summon monster II
+1/ (Medium fiendish monstrous spider).
+
+
+------------------------
+Torrette difensive area t7(chierico) e area t11 (mago)
+Enhanced Spell Turrets Trap (For a CR 10 Encounter)
+General Characteristics
+
+    Number: 2 Spell Turrets
+
+    Nature: Diminutive magical constructs that masquerade as innocuous decorative elements until activated.
+
+    Trigger: A visual trigger (e.g., when a creature with true seeing or magical detection comes within 30 feet) sets them off.
+
+    Reset: They automatically reset (every 24 hours) after an encounter.
+
+    Self-Repair: Every fifth round, instead of casting a spell, each turret repairs itself by regaining 4d8 + 20 HP.
+
+Updated Stats
+
+    Effective CR: Each turret is now roughly CR 6, so as a pair they represent a well-rounded threat for a level‑10 party.
+
+    AC: 18 (up from 7)
+
+    Hardness: 8 (unchanged)
+
+    HP: 350 (up from 200)
+
+    Search DC: 31 (up from 27)
+
+    Disable Device DC: 31 (up from 27)
+
+Spell Sequences
+
+Each turret maintains two distinct spell sequences—one representing a set of cleric-based spells (T7 spells) and the other wizard-based spells (T11 spells). In a fixed cycle, a turret casts one spell per round in the order given; no spell is cast on the fifth round, as that round is devoted to self-repair. The cycle then repeats.
+Enhanced T7 Spells (Cleric-Based)
+
+    Enhanced Sound Burst:
+
+        Effect: A booming sonic explosion fills a 20‑foot radius.
+
+        Save: Reflex DC 17 for half damage.
+
+        Damage: Deals 6d6 thunder damage.
+
+    Enhanced Summon Monster II:
+
+        Effect: Conjures a Medium fiendish monstrous spider with venomous capabilities.
+
+        Additional Abilities: Its bite deals 2d8 poison damage on a failed Fortitude save (DC 17).
+
+    Enhanced Hold Person:
+
+        Effect: Paralyzes a humanoid target temporarily.
+
+        Save: Will DC 17 negates the effect.
+
+    Second Summon Monster II:
+
+        Effect: Summons another Medium fiendish monstrous spider, similar in ability to the first.
+
+Enhanced T11 Spells (Wizard-Based)
+
+    Enhanced Web:
+
+        Effect: Conjures a sticky web in a 20‑foot square area.
+
+        Save: Reflex DC 17 to avoid being entangled.
+
+    Enhanced Summon Swarm:
+
+        Effect: Summons a swarm of spiders that lasts for 4 rounds.
+
+        Save/Effect: Affected targets must make a Reflex save (DC 17) to reduce the swarm’s damage, which averages 2d6.
+
+    Enhanced Darkness:
+
+        Effect: Creates a magical darkness (30‑foot radius) that even darkvision cannot penetrate, lasting for 1 minute.
+
+    Third Summon Monster II:
+
+        Effect: Summons yet another Medium fiendish monstrous spider with enhanced abilities (as detailed above).
+        
+  //////////////////////////
+  
+  Elite Fiendish Monstrous Spider (CR 9 Version)
+
+Type: Medium Magical Beast (Extraplanar, Fiendish)
+Size: Medium (space 5 ft./5 ft.)
+
+Hit Dice: 10d8+28 (average ≈79 HP)
+(Increased HD represents advanced creature power rather than a change in physical size.)
+
+Initiative: +3
+(A slightly sharper Dexterity bonus for quicker reactions.)
+
+Speed: 30 ft. (6 squares); Climb 20 ft.
+
+Armor Class: 18
+
+    Touch: 14
+
+    Flat-footed: 15
+    (Improved natural armor and Dexterity help it avoid hits.)
+
+Base Attack/Grapple: +8 / +12
+Attacks
+
+    Bite:
+
+        Attack Bonus: +7 melee
+
+        Damage: 2d6+4 piercing
+
+        Special: The bite delivers a potent poison
+
+Poison (Ex)
+
+    Save: Fortitude DC 16
+
+    Effect:
+
+        On a failed save, the target takes 2d6 points of Strength damage immediately and suffers an additional 2d6 Strength damage as secondary damage after 1 round.
+
+        In addition, the victim becomes staggered for 1 round as the venom disrupts muscle control.
+
+        A successful save halves both damage components and prevents the stagger.
+
+(The enhanced poison (higher DC and damage) makes a failed save far more debilitating.)
+Special Qualities
+
+    Tremorsense: 60 ft.
+
+    Darkvision: 60 ft.
+
+    Web (Ex) [Optional]:
+
+        Can use a web attack to entangle foes (similar to a net attack).
+
+        Targets caught in the web must succeed on an Escape Artist check (DC 16) or a Strength check (DC 20) to break free.
+
+(You can incorporate the web ability to add area control without altering the creature’s size.)
+Saves
+
+    Fortitude: +7
+
+    Reflex: +8
+
+    Will: +4
+
+(Reflecting its improved Constitution and overall combat durability.)
+Ability Scores
+
+    Strength: 15
+
+    Dexterity: 18
+
+    Constitution: 14
+
+    Intelligence: 3
+
+    Wisdom: 10
+
+    Charisma: 2
+
+(Upgraded physical scores increase its melee damage, AC, and hit points.)
+Skills & Feats
+
+    Skills: Climb +14, Hide +7, Spot +4
+
+    Feats: Weapon Finesse (applied to its bite), Improved Initiative, and any other feats that emphasize survivability or combat prowess.
+
+Tactical Considerations
+
+    Damage Threat: A bite that not only deals higher base damage (2d6+4) but also a crippling poison effect forces PCs to manage their resources (such as spells or healing) to overcome the Strength loss and stagger condition.
+
+    Durability: With roughly 104 HP and improved saves, the spider can endure multiple rounds of combat, pressuring the party with persistent threat.
+
+    Area Control: The optional web attack can hinder PC movement, setting up further strikes or isolating vulnerable party members.
+
+This enhanced stat block preserves the creature’s Medium size and basic theme while scaling its threat level to be a formidable opponent for a CR 10 party.
+        

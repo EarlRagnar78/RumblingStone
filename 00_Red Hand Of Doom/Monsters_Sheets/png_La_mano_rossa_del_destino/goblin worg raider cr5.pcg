@@ -1,0 +1,227 @@
+PCGVERSION:2.0
+
+# System Information
+CAMPAIGN:Faiths and Pantheons|CAMPAIGN:Drow of the Underdark|CAMPAIGN:Magic Item Compendium|CAMPAIGN:Fiendish Codex II|CAMPAIGN:Cityscape (WotC)|CAMPAIGN:Complete Champion|CAMPAIGN:Complete Mage|CAMPAIGN:Stormwrack|CAMPAIGN:Dragon Magic|CAMPAIGN:Player's Handbook II|CAMPAIGN:Tome of Magic|CAMPAIGN:Races of the Dragon|CAMPAIGN:Spell Compendium|CAMPAIGN:Champions of Valor|CAMPAIGN:City of Splendors: Waterdeep|CAMPAIGN:Champions of Ruin|CAMPAIGN:Sandstorm|CAMPAIGN:Lost Empires of Faerun|CAMPAIGN:Complete Adventurer|CAMPAIGN:Races of Destiny|CAMPAIGN:Complete Arcane|CAMPAIGN:Draconomicon|CAMPAIGN:Shining South|CAMPAIGN:Libris Mortis|CAMPAIGN:Frostburn|CAMPAIGN:Monster Manual III|CAMPAIGN:Races of Stone|CAMPAIGN:Races of the Wild|CAMPAIGN:Complete Divine|CAMPAIGN:Player's Guide to Faerun|CAMPAIGN:Races of Faerun (35e)|CAMPAIGN:Races of Faerun (3e)|CAMPAIGN:Complete Warrior|CAMPAIGN:Dungeon Master's Guide II|CAMPAIGN:Fiend Folio|CAMPAIGN:3.5e ~ Heroes of Horror|CAMPAIGN:Underdark|CAMPAIGN:Book of Exalted Deeds|CAMPAIGN:Unapproachable East|CAMPAIGN:3.5e ~ Book of Vile Darkness|CAMPAIGN:Magic of Faerun|CAMPAIGN:Monster Compendium - Monsters of Faerun|CAMPAIGN:Dungeonscape|CAMPAIGN:Dungeons & Dragons - Core Books
+VERSION:6.08.00 RC8
+ROLLMETHOD:2|EXPRESSION:high campagn
+PURCHASEPOINTS:Y|TYPE:high campagn
+CHARACTERTYPE:PC
+PREVIEWSHEET:statblock4.htm
+POOLPOINTS:25
+POOLPOINTSAVAIL:28
+GAMEMODE:35e
+TABLABEL:0
+AUTOSPELLS:Y
+USEHIGHERKNOWN:N
+USEHIGHERPREPPED:N
+LOADCOMPANIONS:N
+USETEMPMODS:Y
+AUTOSORTGEAR:Y
+SKILLSOUTPUTORDER:0
+SKILLFILTER:2
+IGNORECOST:N
+ALLOWDEBT:N
+AUTORESIZEGEAR:Y
+
+# Character Bio
+CHARACTERNAME:goblin worg raider cr5
+TABNAME:
+PLAYERNAME:
+HEIGHT:0
+WEIGHT:0
+AGE:0
+GENDER:Male
+HANDED:Right
+SKINCOLOR:
+EYECOLOR:
+HAIRCOLOR:
+HAIRSTYLE:
+LOCATION:
+CITY:
+BIRTHDAY:
+BIRTHPLACE:
+PERSONALITYTRAIT1:
+PERSONALITYTRAIT2:
+SPEECHPATTERN:
+PHOBIAS:
+INTERESTS:
+CATCHPHRASE:
+PORTRAIT:
+
+# Character Attributes
+STAT:STR|SCORE:13
+STAT:DEX|SCORE:16
+STAT:CON|SCORE:14
+STAT:INT|SCORE:12
+STAT:WIS|SCORE:10
+STAT:CHA|SCORE:8
+ALIGN:LE
+RACE:Goblin
+
+# Character Class(es)
+CLASS:Fighter|LEVEL:5|SKILLPOOL:0|SPELLBASE:None|CANCASTPERDAY:
+CLASSABILITIESLEVEL:Fighter=1|HITPOINTS:10|SKILLSGAINED:12|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Fighter=2|HITPOINTS:6|SKILLSGAINED:3|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Fighter=3|HITPOINTS:5|SKILLSGAINED:3|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Fighter=4|HITPOINTS:6|PRESTAT:DEX=1|SKILLSGAINED:3|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Fighter=5|HITPOINTS:5|SKILLSGAINED:3|SKILLSREMAINING:0
+
+# Character Experience
+EXPERIENCE:10000
+EXPERIENCETABLE:Default
+
+# Character Templates
+TEMPLATESAPPLIED:[NAME:Base Race Type]
+TEMPLATESAPPLIED:[NAME:First Level|APPLIEDTO:First Level ~ Fighter]
+TEMPLATESAPPLIED:[NAME:First Level ~ Fighter|CHOSENTEMPLATE:[NAME:Funds - NPC]]
+TEMPLATESAPPLIED:[NAME:Funds - NPC]
+TEMPLATESAPPLIED:[NAME:Goblinoid Region ~ Earthfast Mountains Region]
+
+# Character Region
+REGION:Earthfast Mountains
+
+# Character Skills
+SKILL:Appraise|OUTPUTORDER:1|
+SKILL:Balance|OUTPUTORDER:2|
+SKILL:Bluff|OUTPUTORDER:3|
+SKILL:Climb|OUTPUTORDER:4|
+SKILL:Concentration|OUTPUTORDER:5|
+SKILL:Control Shape|OUTPUTORDER:6|
+SKILL:Craft (Untrained)|OUTPUTORDER:7|
+SKILL:Diplomacy|OUTPUTORDER:8|
+SKILL:Diplomacy (Red Dragons)|OUTPUTORDER:9|
+SKILL:Disguise|OUTPUTORDER:10|
+SKILL:Escape Artist|OUTPUTORDER:11|
+SKILL:Forgery|OUTPUTORDER:12|
+SKILL:Gather Information|OUTPUTORDER:13|
+SKILL:Handle Animal|OUTPUTORDER:14|CLASSBOUGHT:[CLASS:Fighter|RANKS:5.0|COST:1|CLASSSKILL:Y]
+SKILL:Heal|OUTPUTORDER:15|
+SKILL:Hide|OUTPUTORDER:16|CLASSBOUGHT:[CLASS:Fighter|RANKS:1.0|COST:2|CLASSSKILL:N]
+SKILL:Hide (Forested Areas)|OUTPUTORDER:17|
+SKILL:Intimidate|OUTPUTORDER:18|
+SKILL:Intimidate (Demoralize opponent)|OUTPUTORDER:19|
+SKILL:Jump|OUTPUTORDER:20|
+SKILL:Knowledge (Untrained)|OUTPUTORDER:21|
+SKILL:Listen|OUTPUTORDER:22|CLASSBOUGHT:[CLASS:Fighter|RANKS:1.0|COST:2|CLASSSKILL:N]
+SKILL:Literacy|OUTPUTORDER:23|
+SKILL:Move Silently|OUTPUTORDER:24|CLASSBOUGHT:[CLASS:Fighter|RANKS:1.0|COST:2|CLASSSKILL:N]
+SKILL:Move Silently (Forested Areas)|OUTPUTORDER:25|
+SKILL:Ride|OUTPUTORDER:26|CLASSBOUGHT:[CLASS:Fighter|RANKS:7.0|COST:1|CLASSSKILL:Y]
+SKILL:Search|OUTPUTORDER:27|
+SKILL:Sense Motive|OUTPUTORDER:28|
+SKILL:Spot|OUTPUTORDER:29|CLASSBOUGHT:[CLASS:Fighter|RANKS:3.0|COST:2|CLASSSKILL:N]
+SKILL:Survival|OUTPUTORDER:30|
+SKILL:Swim|OUTPUTORDER:31|
+SKILL:Use Rope|OUTPUTORDER:32|
+
+# Character Languages
+LANGUAGE:Common|LANGUAGE:Draconic|LANGUAGE:Goblin
+
+# Character Feats
+FEATPOOL:0.0
+
+# Character Abilities
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Mounted Combat|TYPE:General.Fighter.ViolentKnowledge|DESC:You are skilled in mounted combat.
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Precise Shot|TYPE:General.Fighter.AttackOption.ChampionOfTheWildArchery.ViolentKnowledge|DESC:You are skilled at timing and aiming ranged attacks.
+USERPOOL:FEAT|POOLPOINTS:0.0
+ABILITY:Fighter Feat|TYPE:NORMAL|CATEGORY:FEAT|KEY:Mounted Archery|TYPE:General.Fighter.Dragonrider.ViolentKnowledge|DESC:You are skilled at using ranged weapons while mounted.
+ABILITY:Fighter Feat|TYPE:NORMAL|CATEGORY:FEAT|KEY:Point Blank Shot|TYPE:General.Fighter.AttackOption.ChampionOfTheWildArchery.ViolentKnowledge|DESC:You are skilled at making well-placed shots with ranged weapons at close range.
+ABILITY:Fighter Feat|TYPE:NORMAL|CATEGORY:FEAT|KEY:Weapon Focus|APPLIEDTO:Shortbow|TYPE:General.Fighter.Dragonrider.DivineChampion.ShadowThief.ViolentKnowledge|DESC:You are especially good at using this specified weapon.&pipe;!PRERULE&colon;1,DisplayFullFeat|DESC:Choose one type of weapon, such as greataxe. You can also choose unarmed strike or grapple (or ray, if you are a spellcaster) as your weapon for purposes of this feat. You are especially good at using this weapon. (If you have chosen ray, you are especially good with rays, such as the one produced by the ray of frost spell.)&pipe;PRERULE&colon;1,DisplayFullFeat
+USERPOOL:Fighter Feat|POOLPOINTS:0.0
+ABILITY:First Level Feat|TYPE:NORMAL|CATEGORY:Internal|KEY:Select First Level Feat|APPLIEDTO:CATEGORY=FEAT&pipe;+1 Feat to feat pool&pipe;|TYPE:FirstLevelFeatOnly|DESC:This will allow choices of First Level Only Feats the character would qualify for normally. The feat will be displayed on the export or preview only.
+USERPOOL:First Level Feat|POOLPOINTS:0.0
+ABILITY:Region|TYPE:NORMAL|CATEGORY:Regional|KEY:Goblinoid Region ~ Earthfast Mountains Region|TYPE:Region.FaerunRegion|DESC:Goblins, hobgoblins, and bugbears plague the Earthfast Mountains between the Vast and Damara.  &amp;nl; Favored Deities&colon; Hruggek, Maglubiyet
+USERPOOL:Region|POOLPOINTS:0.0
+
+# Character Weapon proficiencies
+WEAPONPROF:[WEAPON:Aspergillum (Heavy)|WEAPON:Axe (Throwing)|WEAPON:Bash|WEAPON:Battle Gauntlet|WEAPON:Battleaxe|WEAPON:Blowgun|WEAPON:Club|WEAPON:Crossbow (Heavy)|WEAPON:Crossbow (Light)|WEAPON:Cutlass]
+WEAPONPROF:[WEAPON:Dagger|WEAPON:Dagger (Punching)|WEAPON:Dart|WEAPON:Dart Thruster|WEAPON:Darts (Barbed)|WEAPON:Falchion|WEAPON:Flail|WEAPON:Flail (Heavy)|WEAPON:Gauntlet|WEAPON:Gauntlet (Spiked)]
+WEAPONPROF:[WEAPON:Glaive|WEAPON:Goblin Stick|WEAPON:Grapple|WEAPON:Greataxe|WEAPON:Greatclub|WEAPON:Greatsword|WEAPON:Guisarme|WEAPON:Halberd|WEAPON:Hammer (Light)|WEAPON:Handaxe]
+WEAPONPROF:[WEAPON:Ice Axe|WEAPON:Javelin|WEAPON:Katana|WEAPON:Kukri|WEAPON:Lance|WEAPON:Lance (Flight)|WEAPON:Lance (Heavy)|WEAPON:Longbow|WEAPON:Longspear|WEAPON:Longsword]
+WEAPONPROF:[WEAPON:Mace (Heavy)|WEAPON:Mace (Light)|WEAPON:Maul|WEAPON:Morningstar|WEAPON:Pick (Dire)|WEAPON:Pick (Heavy)|WEAPON:Pick (Light)|WEAPON:Quarterstaff|WEAPON:Ranged Spell|WEAPON:Ranseur]
+WEAPONPROF:[WEAPON:Rapier|WEAPON:Saber|WEAPON:Sap|WEAPON:Scimitar|WEAPON:Scythe|WEAPON:Shieldbash|WEAPON:Shortbow|WEAPON:Shortspear|WEAPON:Sickle|WEAPON:Sling]
+WEAPONPROF:[WEAPON:Spear|WEAPON:Spells (Ray)|WEAPON:Spells (Touch)|WEAPON:Spiked Armor|WEAPON:Strike (Unarmed)|WEAPON:Sword (Bastard)|WEAPON:Sword (Cutlass)|WEAPON:Sword (Saber)|WEAPON:Sword (Short)|WEAPON:Trident]
+WEAPONPROF:[WEAPON:Truncheon|WEAPON:Unarmed Strike|WEAPON:Wakizashi|WEAPON:Warhammer|WEAPON:Warmace]
+
+# Character Equipment
+MONEY:166.659999999999996589394868351519107818603515625
+EQUIPNAME:Alexandrite|OUTPUTORDER:11|COST:500|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Angelar's Skin|OUTPUTORDER:18|COST:100|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Arrow (20) (Small)|OUTPUTORDER:4|COST:1.0|WT:1.5|QUANTITY:2.0|NOTE:|CUSTOMIZATION:[BASEITEM:Arrow (20)|DATA:NAME=Arrow (20) (Small)$KEY=AUTOSIZESArrow (20)$SIZE=S$EQMOD=STEEL.WOOD]
+EQUIPNAME:Aventurine|OUTPUTORDER:10|COST:50|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Bandoleer, Masterwork|OUTPUTORDER:5|COST:50|WT:0.5|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Bandoleer (Masterwork)|DATA:KEY=Bandoleer (Masterwork)]
+EQUIPNAME:Coin (Copper)|OUTPUTORDER:9|COST:0.01|WT:0.02|QUANTITY:2.0|NOTE:
+EQUIPNAME:Coin (Gold)|OUTPUTORDER:8|COST:1|WT:0.02|QUANTITY:6.0|NOTE:
+EQUIPNAME:Coin (Platinum)|OUTPUTORDER:7|COST:10|WT:0.02|QUANTITY:7.0|NOTE:
+EQUIPNAME:Darkwood Buckler (Small)|OUTPUTORDER:23|COST:180.0|WT:1.25|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Darkwood Buckler|DATA:NAME=Darkwood Buckler (Small)$KEY=AUTOSIZESDarkwood Buckler$SIZE=S$EQMOD=DARK]
+EQUIPNAME:Explorer's Outfit (Small)|OUTPUTORDER:2|COST:0|WT:2.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Explorer's Outfit|DATA:NAME=Explorer's Outfit (Small)$KEY=Explorer_s Outfit (Small)$SIZE=S$COSTMOD=-10]
+EQUIPNAME:Fluorspar|OUTPUTORDER:20|COST:10|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Masterwork Scimitar (Small)|OUTPUTORDER:22|COST:315.0|WT:2.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Scimitar|DATA:NAME=Masterwork Scimitar (Small)$SIZE=S$EQMOD=STEEL.Masterwork (Weapon)]
+EQUIPNAME:Masterwork Shortbow, Composite (Small)|OUTPUTORDER:1|COST:375.0|WT:1.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Shortbow (Composite)|DATA:NAME=Masterwork Shortbow, Composite (Small)$KEY=Masterwork Shortbow (Composite/Small)$SIZE=S$EQMOD=WOOD.Masterwork (Weapon)]
+EQUIPNAME:Oil (1 Pt. Flask)|OUTPUTORDER:6|COST:0.1|WT:1.0|QUANTITY:2.0|NOTE:
+EQUIPNAME:Pearl (Pink)|OUTPUTORDER:21|COST:100|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Potion (Barkskin +2)|OUTPUTORDER:16|COST:300|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Potion (Cure Moderate Wounds)|OUTPUTORDER:15|COST:300|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Potion (Cure Serious Wounds)|OUTPUTORDER:14|COST:750|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Potion Belt, Masterwork|OUTPUTORDER:13|COST:60|WT:1.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Potion Belt (Masterwork)|DATA:KEY=Potion Belt (Masterwork)]
+EQUIPNAME:Sack (Small)|OUTPUTORDER:17|COST:0.1|WT:0.125|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Sack|DATA:NAME=Sack (Small)$KEY=AUTOSIZESSack$SIZE=S]
+EQUIPNAME:Studded Leather +1 (Small)|OUTPUTORDER:3|COST:1175.0|WT:10.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Studded Leather|DATA:NAME=Studded Leather +1 (Small)$SIZE=S$EQMOD=STEEL.PLUS1A]
+EQUIPNAME:Torch|OUTPUTORDER:19|COST:0.01|WT:1.0|QUANTITY:2.0|NOTE:
+EQUIPNAME:Tourmaline (Silver pearl)|OUTPUTORDER:12|COST:100|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPSET:Insieme di default|ID:0.1|USETEMPMODS:Y
+EQUIPSET:Body|ID:0.1.02|VALUE:Studded Leather +1 (Small)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Both Hands|ID:0.1.03|VALUE:Masterwork Shortbow, Composite (Small)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.04|VALUE:Masterwork Scimitar (Small)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.05|VALUE:Arrow (20) (Small)|QUANTITY:2.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.06|VALUE:Bandoleer, Masterwork|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Bandoleer, Masterwork|ID:0.1.06.01|VALUE:Oil (1 Pt. Flask)|QUANTITY:2.0|USETEMPMODS:Y
+EQUIPSET:Bandoleer, Masterwork|ID:0.1.06.02|VALUE:Coin (Platinum)|QUANTITY:7.0|USETEMPMODS:Y
+EQUIPSET:Bandoleer, Masterwork|ID:0.1.06.03|VALUE:Coin (Gold)|QUANTITY:6.0|USETEMPMODS:Y
+EQUIPSET:Bandoleer, Masterwork|ID:0.1.06.04|VALUE:Coin (Copper)|QUANTITY:2.0|USETEMPMODS:Y
+EQUIPSET:Bandoleer, Masterwork|ID:0.1.06.05|VALUE:Aventurine|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Bandoleer, Masterwork|ID:0.1.06.06|VALUE:Alexandrite|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Bandoleer, Masterwork|ID:0.1.06.07|VALUE:Tourmaline (Silver pearl)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.07|VALUE:Potion Belt, Masterwork|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Potion Belt, Masterwork|ID:0.1.07.01|VALUE:Potion (Cure Serious Wounds)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Potion Belt, Masterwork|ID:0.1.07.02|VALUE:Potion (Cure Moderate Wounds)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Potion Belt, Masterwork|ID:0.1.07.03|VALUE:Potion (Barkskin +2)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.08|VALUE:Sack (Small)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Sack (Small)|ID:0.1.08.01|VALUE:Angelar's Skin|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Clothing|ID:0.1.09|VALUE:Explorer's Outfit (Small)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.10|VALUE:Darkwood Buckler (Small)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.11|VALUE:Torch|QUANTITY:2.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.12|VALUE:Fluorspar|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.13|VALUE:Pearl (Pink)|QUANTITY:1.0|USETEMPMODS:Y
+CALCEQUIPSET:0.1
+
+# Temporary Bonuses
+
+# EquipSet Temp Bonuses
+
+# Character Deity/Domain
+
+# Character Spells Information
+
+# Character Description/Bio/History
+CHARACTERBIO:
+CHARACTERDESC:
+CHARACTERCOMP:
+CHARACTERASSET:
+CHARACTERMAGIC:
+CHARACTERDMNOTES:
+
+# Kits
+KIT:MW short sword
+
+# Character Master/Follower
+
+# Character Notes Tab
+
+# Age Set Selections
+AGESET:0:0:0:0:0:0:0:0:0:0
+
+# Campaign History
+
+# Suppressed Biography Fields
+SUPPRESSBIOFIELDS:
+

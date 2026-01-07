@@ -1,0 +1,42 @@
+Well‑Camouflaged Pit and Pendulum Trap (Revised CR 10)
+
+    Type: Mechanical trap with a location trigger and automatic reset (every 24 hours)
+
+    Trigger: When a creature steps on a concealed pressure plate, the trap is activated.
+
+Trap Components
+
+    The Pit:
+
+        Description: A seemingly solid floor gives way to reveal a deep, hidden pit.
+
+        Depth: 30 feet deep
+
+        Falling Damage: On a failed Reflex save, a creature falls 30 feet, taking 3d6 points of falling damage (averaging about 10.5 damage).
+
+    The Pendulum:
+
+        Description: Simultaneously with the pit opening, a massive pendulum—suspiciously camouflaged to blend with the environment—swings down from above along a 25‑foot arc.
+
+        Attack: The pendulum makes a melee “attack” with an effective bonus of +25.
+
+        Damage: On a hit, it deals 4d10+20 points of bludgeoning damage.
+
+        Additional Effect: A critical hit (as determined by the trap’s design) might leave the target dazed for 1 round, representing the disorienting blow.
+
+Saving Throws & Skill Checks
+
+    Reflex Save (to avoid the pit): DC 27
+
+        A successful save means the creature evades falling into the pit. (It might still be subjected to the pendulum if its area of effect overlaps the escape route.)
+
+    Search Check (to notice the trap): DC 34
+
+        Characters can use their Spot or Search skills to detect the well-camouflaged nature of the pit and any subtle signs of the pendulum mechanism.
+
+    Disable Device Check (to disarm the trap): DC 27
+
+        With careful work, a character can disable the pressure plate or interrupt the pendulum mechanism before it activates.
+        
+        
+        

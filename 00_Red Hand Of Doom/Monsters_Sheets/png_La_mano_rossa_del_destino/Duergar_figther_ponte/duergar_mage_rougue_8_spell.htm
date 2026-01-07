@@ -1,0 +1,1544 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+PCGen Character Sheet Template
+==============================
+Author: Richard O'Doherty-Gregg
+Email: OdGregg@bigpond.com
+Modifications by: arcady
+Email: arcady0@yahoo.com
+Revisions: Barak  10/15/02
+Email: barak@voyager.net
+$Revision$
+$Author$
+$Date$
+-->
+<head>
+<meta http-equiv="content-type" content="text-html; charset=utf-8" />
+<title>Unnamed 2 [0 Points]</title>
+<style type="text/css">
+	.font4 {  
+		font-family: Arial, sans-serif; 
+		font-size:4pt; 
+	}
+	.font5 {  
+		font-family: Arial, sans-serif; 
+		font-size:5pt; 
+	}
+	.font6 {  
+		font-family: Arial, sans-serif; 
+		font-size:6pt;
+	}
+	.font7 {  
+		font-family: Arial, sans-serif; 
+		font-size:7pt;
+	}
+	.font8 {  
+		font-family: Arial, sans-serif; 
+		font-size:8pt;
+	}
+	.font9 {  
+		font-family: Arial, sans-serif; 
+		font-size:9pt;
+	}
+	.h { 
+		font-family: Arial, sans-serif; 
+		font-size:12pt; 
+		vertical-align: bottom;
+	}
+	.ab { 
+		font-family: Arial, sans-serif; 
+		font-size:12pt; 
+		text-align:center; 
+		color:white; 
+		background:black;
+	}
+	.ablable { 
+		font-family: Arial, sans-serif; 
+		font-size:8pt; 
+		text-align:center; 
+		color:white; 
+		background:black;
+	}
+	.abb { 
+		font-family: Arial, sans-serif; 
+		font-size:12pt; 
+		text-align:center; 
+		font-weight:bold; 
+		border: 1px solid black;
+	}
+	.abt { 
+		font-family: Arial, sans-serif; 
+		font-size:12pt; 
+		text-align:center; 
+		font-weight:bold; 
+		border: 5px solid #CCCCCC;
+	}
+	.sign { 
+		font-family: Arial, sans-serif; 
+		font-size:10pt;
+	}
+	.item { 
+		font-family: Arial, sans-serif; 
+		font-size:16pt; 
+		text-align:center; 
+		color:white; 
+		background:black;
+	}
+	.sptab { 
+		font-family: Arial, sans-serif; 
+		vertical-align:top; 
+		text-align:center;
+		font-size:8pt;
+	}
+	.sptab1 { 
+		font-family: Arial, sans-serif; 
+		vertical-align:top; 
+		text-align:left;
+		font-size:8pt;
+	}
+	.sptab2 { 
+		font-family: Arial, sans-serif; 
+		vertical-align:top; 
+		text-align:right;
+		font-size:8pt;
+	}
+	.notetab { 
+		font-family: Arial, sans-serif; 
+		vertical-align:top;
+		border: 1px solid black; 
+		text-align:left;
+		font-size:8pt;
+	}
+	.skl { 
+		font-family: Arial, sans-serif; 
+		font-size: 9pt; 
+		font-weight:bold; 
+		text-align:center; 
+		vertical-align:middle; 
+		border: 4px solid black;
+	}
+	.skill { 
+		font-family: Arial, sans-serif; 
+		font-size: 10pt; 
+	}
+	.skillValue {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: black;
+	}
+	.topline {
+		border-top-width:1px; 
+		border-top: 1pt solid black; 
+		font-family: Arial, sans-serif; 
+		font-size:6pt; 
+	}
+	.spname { 
+		font-family: Arial, sans-serif; 
+		vertical-align:top; 
+		text-align:left;
+		font-size:8pt;
+	}
+	.sptop { 
+		font-family: Arial, sans-serif; 
+		vertical-align:top;
+		border: 1px solid black; 
+		text-align:center;
+		font-size:8pt; 
+		color:white;
+	}
+	.splevel {  
+		font-family: Arial, sans-serif; 
+		background:black; 
+		text-align:center;
+		font-size:9pt; 
+		color:white;
+	}
+	.sphead {  
+		font-family: Arial, sans-serif; 
+		background:black; 
+		text-align:center;
+		font-size:12pt; 
+		color:white;
+	}
+	.notehead {  
+		font-family: Arial, sans-serif; 
+		background:black; 
+		text-align:center;
+		font-size:12pt; 
+		color:white;
+	}
+	.biodata { 
+		font-family: Arial, sans-serif; 
+		vertical-align:bottom; 
+		text-align:left;
+		font-size:9pt;
+	}
+	.border { 
+		border: 1px solid black; 
+	}
+	.border4 { 
+		font-family: Arial, sans-serif; 
+		border: 1px solid black; 
+		font-size:4pt; 
+	}
+	.border7 {
+		font-family: Arial, sans-serif; 
+		border: 1px solid black;
+		font-size:7pt; }
+	.border8 {
+		font-family: Arial, sans-serif; 
+		border: 1px solid black;
+		font-size:8pt;
+	}
+	.border9 {
+		font-family: Arial, sans-serif; 
+		border: 1px solid black;
+		font-size:9pt;
+	}
+	.border10 {
+		font-family: Arial, sans-serif; 
+		border: 1px solid black;
+		font-size:10pt;
+	}
+	.tempborder {
+		border: 5px solid lightgray;
+	}
+	.borderbottom {
+		border-bottom-width:1px;
+		border-bottom: 1pt solid black;
+	}
+	.borderbottom8 {
+		border-bottom-width:1px;
+		border-bottom: 1pt solid black;
+		font-size:8pt;
+	}
+	span.notes p {
+		margin-top:0; 
+		margin-bottom:0;
+	}
+	.lable {  
+		font-family: Arial, sans-serif; 
+		font-size:6pt; 
+	}
+</style>
+<style type="text/css">
+<!--
+.key {
+		font-family: Arial, sans-serif; 
+		font-size:10pt;
+}
+-->
+</style>
+</head>
+<body bgcolor="white">
+<center><font size="-1">Created using <a href="http://pcgen.org/">PCGen</a> 6.08.00 RC10 on 19 lug 2024 <br>Player: ; Character Name: Unnamed 2</font></center><br />
+<!-- START Top Character Data -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="35%"   class="h">Unnamed 2</td>
+    <td width="15%"   class="h">None</td>
+    <td width="15%"   class="h">Uomo</td>
+    <td width="35%"   class="h">Dwarf (Duergar)</td>
+  </tr>
+  <tr>
+    <td class="topline">CHARACTER NAME</td>
+    <td class="topline">ALIGNMENT</td>
+    <td class="topline">GENDER</td>
+    <td class="topline">RACE</td>
+  </tr>
+  <tr>
+    <td class="h"></td>
+    <td class="h">28000</td>
+    <td class="h">7</td>
+    <td class="h">Rogue3 Wizard4</td>
+  </tr>
+  <tr>
+    <td class="topline">PLAYER</td>
+    <td class="topline">EXPERIENCE</td>
+    <td class="topline">LEVEL</td>
+    <td class="topline">CLASS</td>
+  </tr>
+</table>  <!-- STOP Top Character Data -->
+<!-- START Domain Table -->
+
+<!-- STOP Domain Table -->
+<!-- Start Prepared Spells -->
+<!-- Start Innate Prepared -->
+
+<br />
+<table width="100%" cellspacing="0" cellpadding="2" summary="Spell List">
+ <tr>
+  <td colspan="11" align="center" bgcolor="black"><font color="white"><b>Racial Innate</b></font></td>
+ </tr>
+ <tr>
+  <td valign="top">
+   <table>
+    <tr>
+     <td align="right"><font style="font-size: 11pt">
+&#9744;</font>
+     </td>
+     <td class="font9"><b>Enlarge Person</b> (DC:15)</td>
+    </tr>
+    <tr>
+     <td align="right"><font style="font-size: 11pt">
+&#9744;</font>
+     </td>
+     <td class="font9"><b>Invisibility</b> (DC:16)</td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr>
+  <td colspan="11" bgcolor="black"><font style="font-size: 8pt" color="white"><br /></font></td>
+ </tr>
+</table>
+
+<br />
+
+
+<table width="100%" cellspacing="0" cellpadding="2" summary="Spell List">
+ <tr>
+  <td colspan="11" align="center" bgcolor="black"><font color="white"><b>Magic Item Spells</b></font></td>
+ </tr>
+  <td valign="top">
+   <table>
+    <tr>
+     <td align="right"><font style="font-size: 11pt">
+&#9744;</font>
+     </td>
+     <td class="font9"><b>Invisibility</b> (DC:10)</td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr>
+  <td colspan="11" bgcolor="black"><font style="font-size: 8pt" color="white"><br /></font></td>
+ </tr>
+</table>
+
+<br />
+<!-- End Innate Prepared -->
+<!-- Start Regular Prepared -->
+<!-- Either we do not have a innate race, or if we do we do not have any 0 level spell for the innate race -->
+<br />
+<table width="100%" cellspacing="0" cellpadding="2" summary="Spell List">
+ <tr>
+  <td colspan="11" align="center" bgcolor="black"><font color="white"><b>Prepared Spells</b></font></td>
+ </tr>
+
+ <tr>
+  <td align="center" bgcolor="#DDDDDD" colspan="11"><font style="font-size: 9pt" color="black">Wizard</font></td>
+ </tr>
+ <tr>
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 2 0 -->
+  </td>
+  <td valign="top">
+   <table summary="Spell List">
+    <tr>
+     <td valign="top" align="center" colspan="2"><font style="font-size: 9pt" color="black"><u>Level 1</u></font></td>
+    </tr>
+    <tr>
+     <td align="right"><font style="font-size: 11pt">
+&#9744;</font>
+     </td>
+     <td class="font9"><b> Mage Armor</b> (DC:15)</td>
+    </tr>
+    <tr>
+     <td align="right"><font style="font-size: 11pt">
+&#9744;</font>
+     </td>
+     <td class="font9"><b> Magic Missile</b> (DC:)</td>
+    </tr>
+    <tr>
+     <td align="right"><font style="font-size: 11pt">
+&#9744;</font>
+     </td>
+     <td class="font9"><b> Ray of Enfeeblement</b> (DC:)</td>
+    </tr>
+    <tr>
+     <td align="right"><font style="font-size: 11pt">
+&#9744;</font>
+     </td>
+     <td class="font9"><b> Shocking Grasp</b> (DC:)</td>
+    </tr>
+   </table>
+  </td>
+  <td valign="top">
+   <table summary="Spell List">
+    <tr>
+     <td valign="top" align="center" colspan="2"><font style="font-size: 9pt" color="black"><u>Level 2</u></font></td>
+    </tr>
+    <tr>
+     <td align="right"><font style="font-size: 11pt">
+&#9744;</font>
+     </td>
+     <td class="font9"><b> Invisibility</b> (DC:16)</td>
+    </tr>
+    <tr>
+     <td align="right"><font style="font-size: 11pt">
+&#9744;</font>
+     </td>
+     <td class="font9"><b> Mirror Image</b> (DC:)</td>
+    </tr>
+    <tr>
+     <td align="right"><font style="font-size: 11pt">
+&#9744;</font>
+     </td>
+     <td class="font9"><b> Scorching Ray</b> (DC:)</td>
+    </tr>
+   </table>
+  </td>
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 2 3 -->
+  </td>
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 2 4 -->
+  </td>
+<tr>
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 2 5 -->
+  </td>
+<!-- END FOR,%spellcount,COUNT[SPELLSINBOOK.1.2.0],COUNT[SPELLSINBOOK.1.2.0],1,0 -->
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 2 6 -->
+  </td>
+<!-- END FOR,%spellcount,COUNT[SPELLSINBOOK.1.2.0],COUNT[SPELLSINBOOK.1.2.0],1,0 -->
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 2 7 -->
+  </td>
+<!-- END FOR,%spellcount,COUNT[SPELLSINBOOK.1.2.0],COUNT[SPELLSINBOOK.1.2.0],1,0 -->
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 2 8 -->
+  </td>
+<!-- END FOR,%spellcount,COUNT[SPELLSINBOOK.1.2.0],COUNT[SPELLSINBOOK.1.2.0],1,0 -->
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 2 9 -->
+  </td>
+<!-- END FOR,%spellcount,COUNT[SPELLSINBOOK.1.2.0],COUNT[SPELLSINBOOK.1.2.0],1,0 -->
+<!-- END SPELLLISTCLASS.1 -->
+
+<!-- END FOR,1,COUNT[SPELLRACE],COUNT[SPELLRACE]+COUNT[CLASSES]-1,1,1 -->
+
+<!-- END FOR,2,COUNT[SPELLRACE],COUNT[SPELLRACE]+COUNT[CLASSES]-1,1,1 -->
+ <tr>
+  <td colspan="11" bgcolor="black"><font style="font-size: 8pt" color="white">* = Domain/Specialty Spell</font></td>
+ </tr>
+</table>
+<!-- END FOR,0,COUNT[SPELLSINBOOK0.2.0],COUNT[SPELLSINBOOK0.2.0],1,1 -->
+<!-- END FOR,1,COUNT[SPELLRACE],COUNT[SPELLRACE],1,1 -->
+<!-- END FOR,2,2,COUNT[SPELLBOOKS]-1,1,0 -->
+<!-- Either we do not have a innate race, or if we do we do not have any 0 level spell for the innate race -->
+<br />
+<table width="100%" cellspacing="0" cellpadding="2" summary="Spell List">
+ <tr>
+  <td colspan="11" align="center" bgcolor="black"><font color="white"><b>Magic Item</b></font></td>
+ </tr>
+
+ <tr>
+  <td align="center" bgcolor="#DDDDDD" colspan="11"><font style="font-size: 9pt" color="black">Wizard</font></td>
+ </tr>
+ <tr>
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 3 0 -->
+  </td>
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 3 1 -->
+  </td>
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 3 2 -->
+  </td>
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 3 3 -->
+  </td>
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 3 4 -->
+  </td>
+<tr>
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 3 5 -->
+  </td>
+<!-- END FOR,%spellcount,COUNT[SPELLSINBOOK.1.3.0],COUNT[SPELLSINBOOK.1.3.0],1,0 -->
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 3 6 -->
+  </td>
+<!-- END FOR,%spellcount,COUNT[SPELLSINBOOK.1.3.0],COUNT[SPELLSINBOOK.1.3.0],1,0 -->
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 3 7 -->
+  </td>
+<!-- END FOR,%spellcount,COUNT[SPELLSINBOOK.1.3.0],COUNT[SPELLSINBOOK.1.3.0],1,0 -->
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 3 8 -->
+  </td>
+<!-- END FOR,%spellcount,COUNT[SPELLSINBOOK.1.3.0],COUNT[SPELLSINBOOK.1.3.0],1,0 -->
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 3 9 -->
+  </td>
+<!-- END FOR,%spellcount,COUNT[SPELLSINBOOK.1.3.0],COUNT[SPELLSINBOOK.1.3.0],1,0 -->
+<!-- END SPELLLISTCLASS.1 -->
+
+<!-- END FOR,1,COUNT[SPELLRACE],COUNT[SPELLRACE]+COUNT[CLASSES]-1,1,1 -->
+
+<!-- END FOR,2,COUNT[SPELLRACE],COUNT[SPELLRACE]+COUNT[CLASSES]-1,1,1 -->
+ <tr>
+  <td colspan="11" bgcolor="black"><font style="font-size: 8pt" color="white">* = Domain/Specialty Spell</font></td>
+ </tr>
+</table>
+<!-- END FOR,0,COUNT[SPELLSINBOOK0.3.0],COUNT[SPELLSINBOOK0.3.0],1,1 -->
+<!-- END FOR,1,COUNT[SPELLRACE],COUNT[SPELLRACE],1,1 -->
+<!-- END FOR,3,2,COUNT[SPELLBOOKS]-1,1,0 -->
+<!-- ### END class Spellbook memorized spells ### -->
+<!-- START FALSE IIF(3:0) -->
+<!-- ### END MEMORIZED ### -->
+<!-- End Prepared Spells -->
+<!-- Start Racial Innate Spells -->
+<br />
+
+<!-- START Spell list Header Table (Racial Innate) -->
+<table width="100%" cellspacing="0" cellpadding="2" summary="Spell List">
+ <tr>
+  <td colspan="11" class="sphead"><b>Innate Spell-like Abilities</b></td>
+ </tr>
+</table>
+<!-- End Spell List Header Table (Racial Innate) -->
+<!-- Start Racial Innate Spell listing -->
+<table width="100%" cellspacing="0" cellpadding="2" summary="Spell List">
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b>Enlarge Person</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 15<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Fortitude negates<br /></td>
+  <td class="sptab"><i>Time:</i> 1 round, 
+1/Day
+   <br /></td>
+  <td class="sptab"><i>Duration:</i> 14 minutes [D]<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (60 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, M<br /></td>
+  <td class="sptab"><i>SR:</i> Yes<br /></td>
+  <td class="sptab"><i>School:</i> Transmutation<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="7" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Creatures size increases to next category<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.226<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="7" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; One humanoid creature<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i> 14<br /></td>
+   </tr>
+<tr bgcolor="white">
+  <td class="spname"><b>Invisibility</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 16<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will negates (harmless) or Will negates (harmless, object)<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action, 
+1/Day
+   <br /></td>
+  <td class="sptab"><i>Duration:</i> 14 minutes [D]<br /></td>
+  <td class="sptab"><i>Rng:</i> Personal or touch<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, M/DF<br /></td>
+  <td class="sptab"><i>SR:</i> Yes (harmless) or Yes (harmless, object)<br /></td>
+  <td class="sptab"><i>School:</i> Illusion<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="7" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Subject is invisible for 14 minutes or until it attacks.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.245<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="7" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; You or a creature or object weighing no more than 1400 lbs<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i> 14<br /></td>
+   </tr>
+ <tr>
+  <td colspan="9" bgcolor="black"><br /></td>
+ </tr>
+</table>
+
+<!-- End Racial Innate Spells -->
+<!-- Start Other Innate Spells -->
+
+
+<!-- START Spell list Header Table (Other Innate) -->
+<br />
+<table width="100%" cellspacing="0" cellpadding="2" summary="Spell List">
+ <tr>
+  <td colspan="9" class="sphead"><b>Magic Item Spell-like Abilities</b></font></td>
+ </tr>
+</table>
+<table width="100%" cellspacing="0" cellpadding="2" summary="Spell List">
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b>Invisibility</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 10<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will negates (harmless) or Will negates (harmless, object)<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action, 
+1/Day
+   <br /></td>
+  <td class="sptab"><i>Duration:</i> 3 minutes [D]<br /></td>
+  <td class="sptab"><i>Rng:</i> Personal or touch<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, M/DF<br /></td>
+  <td class="sptab"><i>SR:</i> Yes (harmless) or Yes (harmless, object)<br /></td>
+  <td class="sptab"><i>School:</i> Illusion<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="7" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Subject is invisible for 3 minutes or until it attacks.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.245<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="7" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; You or a creature or object weighing no more than 300 lbs<br /></td>
+  <td class="sptab2" colspan="2"><i>Caster Level:</i> 3<br /></td>
+ </tr>
+ <tr>
+  <td colspan="9" bgcolor="black"><font style="font-size: 8pt" color="white"><br /></font></td>
+ </tr>
+</table>
+
+<!-- End Other Innate Spells -->
+<!-- End Innate Spells -->
+<br />
+
+<!-- START Spell list Header Table (Known) -->
+<table width="100%" cellspacing="0" cellpadding="2" summary="Spell List">
+ <tr>
+  <td colspan="11" class="sphead"><b>Wizard
+                Spells
+</b></td>
+ </tr>
+ <tr>
+  <td bgcolor="black" class="sptop"><b>LEVEL</b></td>
+  <td bgcolor="black" class="sptop"><b>0</b></td>
+  <td bgcolor="black" class="sptop"><b>1</b></td>
+  <td bgcolor="black" class="sptop"><b>2</b></td>
+  <td bgcolor="black" class="sptop"><b>3</b></td>
+  <td bgcolor="black" class="sptop"><b>4</b></td>
+  <td bgcolor="black" class="sptop"><b>5</b></td>
+  <td bgcolor="black" class="sptop"><b>6</b></td>
+  <td bgcolor="black" class="sptop"><b>7</b></td>
+  <td bgcolor="black" class="sptop"><b>8</b></td>
+  <td bgcolor="black" class="sptop"><b>9</b></td>
+ </tr>
+ <tr>
+  <td class="sptab"><b>KNOWN</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+ </tr>
+ <tr bgcolor="#DDDDDD">
+  <td class="sptab"><b>PER DAY</b></td>
+  <td class="sptab"><b>4</b></td>
+  <td class="sptab"><b>4</b></td>
+  <td class="sptab"><b>3</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+ </tr>
+</table>
+<!-- End Spell List Header Table (Known) -->
+<!-- Start Known Spells -->
+<table width="100%" cellspacing="0" cellpadding="2" summary="Spell List">
+ <tr>
+  <td colspan="10" class="splevel"><b>LEVEL 0</b></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Acid Splash</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Instantaneous<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (35 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Conjuration<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Orb deals 1d3 acid damage.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.196<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; One missile of acid
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Amanuensis</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 14<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will negates [object]<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 10 minute/level<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (35 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> V,S<br /></td>
+  <td class="sptab"><i>SR:</i> Yes [object]<br /></td>
+  <td class="sptab"><i>School:</i> Transmutation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Copies 250 words per minute.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.9<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Object or objects with writing
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Arcane Mark</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Permanent<br /></td>
+  <td class="sptab"><i>Rng:</i> 0 ft.<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Universal<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Inscribes a personal rune [visible or invisible].<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.201<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; One personal rune or mark, all of which must fit within 1 sq. ft.
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Caltrops</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> <br />
+  	</td>
+  <td class="sptab"><i>Save:</i> <br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 1 round/level<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (35 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> V,S<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Conjuration<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Caltrops cover one 5-foot-by-5-foot square, attack roll +0 for all creatures moving in the square [Creatures AC is Base + Dex + [Foot Wear +2] for purpose of the caltrop attack] dealing 1 pt of damage and land speed reduced by half.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.42<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; See text
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Dancing Lights</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 1 minute [D]<br /></td>
+  <td class="sptab"><i>Rng:</i> Medium (140 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Evocation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Creates torches or other lights.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.216<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Up to four lights, all within a 10- ft.-radius area
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Daze</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 14<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will negates<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 1 round<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (35 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, M<br /></td>
+  <td class="sptab"><i>SR:</i> Yes<br /></td>
+  <td class="sptab"><i>School:</i> Enchantment<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Humanoid creature of 4 HD or less loses next action.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.217<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; One humanoid creature of 4 HD or less
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Detect Magic</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Concentration, up to 4 minutes [D]<br /></td>
+  <td class="sptab"><i>Rng:</i> 60 ft.<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Divination<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Detects spells and magic items within 60 ft.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.219<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Cone-shaped emanation
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Detect Poison</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Instantaneous<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (35 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Divination<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Detects poison in one creature or small object.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.219<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; One creature, one object, or a 5-ft. cube
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Disrupt Undead</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Instantaneous<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (35 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> Yes<br /></td>
+  <td class="sptab"><i>School:</i> Necromancy<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Deals 1d6 damage to one undead.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.223<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Ray
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Electric Jolt</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> <br />
+  	</td>
+  <td class="sptab"><i>Save:</i> <br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Instantaneous<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (35 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> V,S<br /></td>
+  <td class="sptab"><i>SR:</i> Yes<br /></td>
+  <td class="sptab"><i>School:</i> Evocation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Ranged touch attack delivers 1d3 electric damage.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.78<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Ray
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Flare</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 14<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Fortitude negates<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Instantaneous<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (35 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> V<br /></td>
+  <td class="sptab"><i>SR:</i> Yes<br /></td>
+  <td class="sptab"><i>School:</i> Evocation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Dazzles one creature [-1 on attack rolls].<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.232<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Burst of light
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Ghost Sound</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 14<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will disbelief (if interacted with)<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 4 rounds [D]<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (35 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, M<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Illusion<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Figment sounds.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.235<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Illusory sounds
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Launch Bolt</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> <br />
+  	</td>
+  <td class="sptab"><i>Save:</i> <br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Instantaneous<br /></td>
+  <td class="sptab"><i>Rng:</i> Touch<br /></td>
+  <td class="sptab"><i>Comp:</i> V,S,M<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Transmutation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Treat bolt as if fired from a light crossbow, including any bonuses, feats or enchantments.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.130<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; One crossbow bolt in your possession
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Launch Item</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> <br />
+  	</td>
+  <td class="sptab"><i>Save:</i> <br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Instantaneous<br /></td>
+  <td class="sptab"><i>Rng:</i> Touch<br /></td>
+  <td class="sptab"><i>Comp:</i> S<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Transmutation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Launch an item safely to the target you specify where it will act normally upon impact.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.130<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; One Fine item in your possession, weighing up to 10lbs
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Light</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 40 minutes [D]<br /></td>
+  <td class="sptab"><i>Rng:</i> Touch<br /></td>
+  <td class="sptab"><i>Comp:</i> V, M/DF<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Evocation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Object shines like a torch.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.248<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Object touched
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Mage Hand</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Concentration<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (35 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Transmutation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;5-pound telekinesis.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.249<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; One nonmagical, unattended object weighing up to 5 lb.
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Mending</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 14<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will negates (harmless, object)<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Instantaneous<br /></td>
+  <td class="sptab"><i>Rng:</i> 10 ft.<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> Yes (harmless, object)<br /></td>
+  <td class="sptab"><i>School:</i> Transmutation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Makes minor repairs on an object.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.253<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; One object of up to 1 lb.
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Message</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 40 minutes<br /></td>
+  <td class="sptab"><i>Rng:</i> Medium (140 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, F<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Transmutation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Whispered conversation at distance.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.253<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; 4 creatures
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Open/Close</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 14<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will negates (object)<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Instantaneous<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (35 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, F<br /></td>
+  <td class="sptab"><i>SR:</i> Yes  (object)<br /></td>
+  <td class="sptab"><i>School:</i> Transmutation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Opens or closes small or light things.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.258<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Object weighing up to 30 lb. or portal that can be opened or closed
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Prestidigitation</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 14<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> See text<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 1 hour<br /></td>
+  <td class="sptab"><i>Rng:</i> 10 ft.<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Universal<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Performs minor tricks.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.264<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; See text
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Ray of Frost</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Instantaneous<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (35 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> Yes<br /></td>
+  <td class="sptab"><i>School:</i> Evocation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Ray deals 1d3 cold damage.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.269<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Ray
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Read Magic</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 40 minutes<br /></td>
+  <td class="sptab"><i>Rng:</i> Personal<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, F<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Divination<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Read scrolls and spellbooks.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.269<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; You
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Repair Minor Damage</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> <br />
+  	</td>
+  <td class="sptab"><i>Save:</i> <br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Instantaneous<br /></td>
+  <td class="sptab"><i>Rng:</i> Touch<br /></td>
+  <td class="sptab"><i>Comp:</i> V,S<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Transmutation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Repair a construct 1 point of damage.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.173<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Construct touched
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Resistance</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 14<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will negates (harmless)<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 1 minute<br /></td>
+  <td class="sptab"><i>Rng:</i> Touch<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, M/DF<br /></td>
+  <td class="sptab"><i>SR:</i> Yes (harmless)<br /></td>
+  <td class="sptab"><i>School:</i> Abjuration<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Subject gains +1 on saving throws.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.272<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Creature touched
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Silent Portal</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 14<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will negates [object]<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 1 minute/level [D]<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (35 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> S<br /></td>
+  <td class="sptab"><i>SR:</i> Yes [object]<br /></td>
+  <td class="sptab"><i>School:</i> Illusion<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Negates the sound of opening/closing any portal [door,window,etc.].<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.190<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; One portal
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Sonic Snap</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 14<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will partial<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Instantaneous<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (35 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> V,S<br /></td>
+  <td class="sptab"><i>SR:</i> Yes<br /></td>
+  <td class="sptab"><i>School:</i> Evocation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Deal 1 pt of damage and target must save or be deafened for 1 round.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.195<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; One creature or object
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Stick</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 14<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will negates [object]<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Instantaneous<br /></td>
+  <td class="sptab"><i>Rng:</i> Touch<br /></td>
+  <td class="sptab"><i>Comp:</i> V,S,M<br /></td>
+  <td class="sptab"><i>SR:</i> Yes [object]<br /></td>
+  <td class="sptab"><i>School:</i> Transmutation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Sticks one object to another; see text.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.206<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Nonmagical, unattended object weighing up to 5lbs
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Touch of Fatigue</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 14<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Fortitude negates<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 4 rounds<br /></td>
+  <td class="sptab"><i>Rng:</i> Touch<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, M<br /></td>
+  <td class="sptab"><i>SR:</i> Yes<br /></td>
+  <td class="sptab"><i>School:</i> Necromancy<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Touch attack fatigues target.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.294<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Creature touched
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+ <tr>
+  <td colspan="10" class="splevel"><b>LEVEL 1</b></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Expeditious Retreat</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 4 minutes [D]<br /></td>
+  <td class="sptab"><i>Rng:</i> Personal<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Transmutation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Your speed increases by 30 ft.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.228<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; You
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Mage Armor</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 15<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will negates (harmless)<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 4 hours [D]<br /></td>
+  <td class="sptab"><i>Rng:</i> Touch<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, F<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Conjuration<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Gives subject +4 armor bonus.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.249<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Creature touched
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Magic Missile</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Instantaneous<br /></td>
+  <td class="sptab"><i>Rng:</i> Medium (140 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> Yes<br /></td>
+  <td class="sptab"><i>School:</i> Evocation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;2 missiles that do 1d4+1 damage each.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.251<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Up to five creatures, no two of which can be more than 15 ft. apart
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Ray of Enfeeblement</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 4 minutes<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (35 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> Yes<br /></td>
+  <td class="sptab"><i>School:</i> Necromancy<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Ray deals 1d6 +2 Str damage.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.269<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Ray
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Shocking Grasp</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Instantaneous<br /></td>
+  <td class="sptab"><i>Rng:</i> Touch<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> Yes<br /></td>
+  <td class="sptab"><i>School:</i> Evocation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Touch delivers 4d6 electricity damage.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.279<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Creature or object touched
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+ <tr>
+  <td colspan="10" class="splevel"><b>LEVEL 2</b></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Melf&#39;s Acid Arrow</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 2 rounds<br /></td>
+  <td class="sptab"><i>Rng:</i> Long (560 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, M, F<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Conjuration<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Ranged touch attack; 2d4 damage for 2 rounds.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.253<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; One arrow of acid
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Invisibility</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 16<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will negates (harmless) or Will negates (harmless, object)<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 4 minutes [D]<br /></td>
+  <td class="sptab"><i>Rng:</i> Personal or touch<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, M/DF<br /></td>
+  <td class="sptab"><i>SR:</i> Yes (harmless) or Yes (harmless, object)<br /></td>
+  <td class="sptab"><i>School:</i> Illusion<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Subject is invisible for 4 minutes or until it attacks.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.245<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; You or a creature or object weighing no more than 400 lbs
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Mirror Image</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 4 minutes [D]<br /></td>
+  <td class="sptab"><i>Rng:</i> Personal; see text<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Illusion<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Creates decoy duplicates of you [1d4 +1, max 8].<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.254<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; You
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Scorching Ray</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Instantaneous<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (35 ft.)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> Yes<br /></td>
+  <td class="sptab"><i>School:</i> Evocation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;1 rays, ranged touch attack deals 4d6 fire damage.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.274<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; 1 rays
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 4<br /></td>
+ </tr>
+ <tr>
+  <td colspan="10" bgcolor="#FFFFFF" class="ablable" align="left">* = Domain/Specialty Spell</td>
+ </tr>
+</table>
+<br />
+
+
+<!-- End Known Spells -->
+<!-- ================================================================ -->
+<br /><center><font size="-1">Created using <a href="http://pcgen.org/">PCGen</a> 6.08.00 RC10 on 19 lug 2024</font></center>
+</body>
+</html>

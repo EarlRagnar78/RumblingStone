@@ -1,0 +1,208 @@
+PCGVERSION:2.0
+
+# System Information
+CAMPAIGN:Faiths and Pantheons|CAMPAIGN:Drow of the Underdark|CAMPAIGN:Magic Item Compendium|CAMPAIGN:Stormwrack|CAMPAIGN:Player's Handbook II|CAMPAIGN:Races of the Dragon|CAMPAIGN:Magic of Incarnum|CAMPAIGN:3.5e ~ Heroes of Battle|CAMPAIGN:Sandstorm|CAMPAIGN:Complete Adventurer|CAMPAIGN:Races of Destiny|CAMPAIGN:Complete Arcane|CAMPAIGN:Shining South|CAMPAIGN:Libris Mortis|CAMPAIGN:Frostburn|CAMPAIGN:Monster Manual III|CAMPAIGN:Races of Stone|CAMPAIGN:Races of the Wild|CAMPAIGN:Complete Divine|CAMPAIGN:Player's Guide to Faerun|CAMPAIGN:Races of Faerun (35e)|CAMPAIGN:Dungeon Master's Guide II|CAMPAIGN:Complete Warrior|CAMPAIGN:3.5e ~ Heroes of Horror|CAMPAIGN:Underdark|CAMPAIGN:Monster Compendium - Monsters of Faerun|CAMPAIGN:Spellbook Archive|CAMPAIGN:Dragons of Faerun - Web Enhancement - City of Wyrmshadows|CAMPAIGN:Swiftblade|CAMPAIGN:Dungeons & Dragons - Core Books
+VERSION:6.08.00 RC8
+ROLLMETHOD:0|EXPRESSION:0
+PURCHASEPOINTS:N
+CHARACTERTYPE:PC
+PREVIEWSHEET:Standard.htm.ftl
+POOLPOINTS:0
+POOLPOINTSAVAIL:-1
+GAMEMODE:Bahamut35e
+TABLABEL:0
+AUTOSPELLS:Y
+USEHIGHERKNOWN:N
+USEHIGHERPREPPED:N
+LOADCOMPANIONS:N
+USETEMPMODS:Y
+AUTOSORTGEAR:Y
+SKILLSOUTPUTORDER:0
+SKILLFILTER:2
+IGNORECOST:N
+ALLOWDEBT:N
+AUTORESIZEGEAR:Y
+
+# Character Bio
+CHARACTERNAME:Underdark cleric cr5 Ainin
+TABNAME:
+PLAYERNAME:
+HEIGHT:0
+WEIGHT:0
+AGE:0
+GENDER:Male
+HANDED:Right
+SKINCOLOR:
+EYECOLOR:
+HAIRCOLOR:
+HAIRSTYLE:
+LOCATION:
+CITY:
+BIRTHDAY:
+BIRTHPLACE:
+PERSONALITYTRAIT1:
+PERSONALITYTRAIT2:
+SPEECHPATTERN:
+PHOBIAS:
+INTERESTS:
+CATCHPHRASE:
+PORTRAIT:
+
+# Character Attributes
+STAT:STR|SCORE:13
+STAT:DEX|SCORE:8
+STAT:CON|SCORE:14
+STAT:INT|SCORE:10
+STAT:WIS|SCORE:16
+STAT:CHA|SCORE:12
+ALIGN:LN
+RACE:Dwarf
+
+# Character Class(es)
+CLASS:Cleric|LEVEL:5|SKILLPOOL:0
+CLASSABILITIESLEVEL:Cleric=1|SUBSTITUTIONLEVEL:Dwarf Cleric|HITPOINTS:8|SKILLSGAINED:8|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Cleric=2|HITPOINTS:5|SKILLSGAINED:2|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Cleric=3|HITPOINTS:4|SKILLSGAINED:2|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Cleric=4|SUBSTITUTIONLEVEL:Dwarf Cleric|HITPOINTS:5|PRESTAT:WIS=1|SKILLSGAINED:2|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Cleric=5|HITPOINTS:4|SKILLSGAINED:2|SKILLSREMAINING:0
+
+# Character Experience
+EXPERIENCE:10000
+EXPERIENCETABLE:Default
+
+# Character Templates
+TEMPLATESAPPLIED:[NAME:Base Race Type|CHOSENTEMPLATE:[NAME:Base Race Type ~ Humanoid]]
+TEMPLATESAPPLIED:[NAME:Base Race Type ~ Humanoid]
+TEMPLATESAPPLIED:[NAME:Hill Dwarf]
+TEMPLATESAPPLIED:[NAME:Favored Class ~ Fighter]
+TEMPLATESAPPLIED:[NAME:RighteousMightDR]
+TEMPLATESAPPLIED:[NAME:First Level|APPLIEDTO:First Level ~ Cleric]
+TEMPLATESAPPLIED:[NAME:First Level ~ Cleric|CHOSENTEMPLATE:[NAME:Funds - NPC]]
+TEMPLATESAPPLIED:[NAME:Funds - NPC]
+
+# Character Region
+REGION:None
+
+# Character Skills
+SKILL:Appraise|OUTPUTORDER:1|
+SKILL:Balance|OUTPUTORDER:2|
+SKILL:Bluff|OUTPUTORDER:3|
+SKILL:Climb|OUTPUTORDER:4|
+SKILL:Concentration|OUTPUTORDER:5|CLASSBOUGHT:[CLASS:Cleric|RANKS:8.0|COST:1|CLASSSKILL:Y]
+SKILL:Control Shape|OUTPUTORDER:6|
+SKILL:Craft (Untrained)|OUTPUTORDER:7|
+SKILL:Diplomacy|OUTPUTORDER:8|
+SKILL:Diplomacy (Red Dragons)|OUTPUTORDER:9|
+SKILL:Disguise|OUTPUTORDER:10|
+SKILL:Escape Artist|OUTPUTORDER:11|
+SKILL:Forgery|OUTPUTORDER:12|
+SKILL:Gather Information|OUTPUTORDER:13|
+SKILL:Heal|OUTPUTORDER:14|
+SKILL:Hide|OUTPUTORDER:15|
+SKILL:Intimidate|OUTPUTORDER:16|
+SKILL:Jump|OUTPUTORDER:17|
+SKILL:Knowledge (Religion)|OUTPUTORDER:18|CLASSBOUGHT:[CLASS:Cleric|RANKS:4.0|COST:1|CLASSSKILL:Y]
+SKILL:Knowledge (Untrained)|OUTPUTORDER:19|
+SKILL:Listen|OUTPUTORDER:20|
+SKILL:Literacy|OUTPUTORDER:21|
+SKILL:Move Silently|OUTPUTORDER:22|
+SKILL:Ride|OUTPUTORDER:23|
+SKILL:Search|OUTPUTORDER:24|
+SKILL:Sense Motive|OUTPUTORDER:25|
+SKILL:Spellcraft|CLASSBOUGHT:[CLASS:Cleric|RANKS:4.0|COST:1|CLASSSKILL:Y]
+SKILL:Spot|OUTPUTORDER:26|
+SKILL:Survival|OUTPUTORDER:27|
+SKILL:Swim|OUTPUTORDER:28|
+SKILL:Use Rope|OUTPUTORDER:29|
+
+# Character Languages
+LANGUAGE:Common|LANGUAGE:Dwarven
+
+# Character Feats
+FEATPOOL:0.0
+
+# Character Abilities
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Combat Casting|TYPE:General|DESC:You are adept at casting spells in combat.
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Weapon Focus|APPLIEDTO:Warhammer|TYPE:General.Fighter.DivineChampion.ShadowThief|DESC:You are especially good at using this specified weapon.&pipe;!PRERULE&colon;1,DisplayFullFeat|DESC:Choose one type of weapon, such as greataxe. You can also choose unarmed strike or grapple (or ray, if you are a spellcaster) as your weapon for purposes of this feat. You are especially good at using this weapon. (If you have chosen ray, you are especially good with rays, such as the one produced by the ray of frost spell.)&pipe;PRERULE&colon;1,DisplayFullFeat
+USERPOOL:FEAT|POOLPOINTS:0.0
+ABILITY:First Level Feat|TYPE:NORMAL|CATEGORY:Internal|KEY:Select First Level Feat|APPLIEDTO:CATEGORY=FEAT&pipe;+1 Feat to feat pool&pipe;|TYPE:FirstLevelFeatOnly|DESC:This will allow choices of First Level Only Feats the character would qualify for normally. The feat will be displayed on the export or preview only.
+USERPOOL:First Level Feat|POOLPOINTS:0.0
+
+# Character Weapon proficiencies
+WEAPONPROF:[WEAPON:Aspergillum (Heavy)|WEAPON:Battle Gauntlet|WEAPON:Blowgun|WEAPON:Club|WEAPON:Crossbow (Heavy)|WEAPON:Crossbow (Light)|WEAPON:Dagger|WEAPON:Dagger (Punching)|WEAPON:Dart|WEAPON:Darts (Barbed)]
+WEAPONPROF:[WEAPON:Gauntlet|WEAPON:Gauntlet (Spiked)|WEAPON:Grapple|WEAPON:Javelin|WEAPON:Longspear|WEAPON:Mace (Heavy)|WEAPON:Mace (Light)|WEAPON:Morningstar|WEAPON:Quarterstaff|WEAPON:Ranged Spell]
+WEAPONPROF:[WEAPON:Shortspear|WEAPON:Sickle|WEAPON:Sling|WEAPON:Spear|WEAPON:Spells (Ray)|WEAPON:Spells (Touch)|WEAPON:Strike (Unarmed)|WEAPON:Unarmed Strike|WEAPON:Warhammer]
+
+# Character Equipment
+MONEY:0.00
+EQUIPNAME:Full Plate|OUTPUTORDER:2|COST:1500.0|WT:50.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Full Plate|DATA:EQMOD=STEEL]
+EQUIPNAME:Heavy Metal Shield +1|OUTPUTORDER:3|COST:1170.0|WT:15.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Shield (Heavy/Metal)|DATA:NAME=Heavy Metal Shield +1$KEY=Shield +1 (Heavy/Metal)$EQMOD=STEEL.PLUS1S]
+EQUIPNAME:Masterwork Warhammer|OUTPUTORDER:1|COST:312.0|WT:5.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Warhammer|DATA:NAME=Masterwork Warhammer$EQMOD=STEEL.Masterwork (Weapon)]
+EQUIPNAME:Potion (Cure Light Wounds)|OUTPUTORDER:4|COST:50|WT:0.0|QUANTITY:3.0|NOTE:
+EQUIPNAME:Potion (Cure Moderate Wounds)|OUTPUTORDER:5|COST:300|WT:0.0|QUANTITY:2.0|NOTE:
+EQUIPNAME:Potion (Remove Blindness/Deafness)|OUTPUTORDER:6|COST:750|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Scroll (Remove Blindness/Deafness)|OUTPUTORDER:7|COST:375|WT:0.01|QUANTITY:1.0|NOTE:
+EQUIPNAME:Scroll (Remove Disease)|OUTPUTORDER:8|COST:375|WT:0.01|QUANTITY:1.0|NOTE:
+EQUIPNAME:Wand (Cure Light Wounds)|OUTPUTORDER:9|COST:750.0|WT:0.0625|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Wand|DATA:NAME=Wand (Cure Light Wounds)$EQMOD=SPL_CHRG&pipe;SPELLNAME&lbracket;Cure Light Wounds&rbracket;SPELLLEVEL&lbracket;1&rbracket;CASTERLEVEL&lbracket;1&rbracket;CHARGES&lbracket;50&rbracket;$SPROP=Cures 1d8+1 damage (PH P.215)]
+EQUIPSET:Insieme di default|ID:0.1|USETEMPMODS:Y
+EQUIPSET:Body|ID:0.1.01|VALUE:Full Plate|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Primary Hand|ID:0.1.02|VALUE:Masterwork Warhammer|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Shield|ID:0.1.03|VALUE:Heavy Metal Shield +1|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.04|VALUE:Potion (Cure Light Wounds)|QUANTITY:3.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.05|VALUE:Potion (Cure Moderate Wounds)|QUANTITY:2.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.06|VALUE:Potion (Remove Blindness/Deafness)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.07|VALUE:Scroll (Remove Blindness/Deafness)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.08|VALUE:Scroll (Remove Disease)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.09|VALUE:Wand (Cure Light Wounds)|QUANTITY:1.0|USETEMPMODS:Y
+CALCEQUIPSET:0.1
+
+# Temporary Bonuses
+
+# EquipSet Temp Bonuses
+
+# Character Deity/Domain
+DEITY:Moradin|DEITYDOMAINS:[DOMAIN:Craft|DOMAIN:Dwarf|DOMAIN:Earth|DOMAIN:Good|DOMAIN:Law|DOMAIN:Protection]|ALIGNALLOW:|DESC:Moradin (M)|DEITYFAVWEAP:[WEAPON:Warhammer]|DEITYALIGN:LG
+DOMAIN:Protection|DOMAINGRANTS:You can generate a protective ward as a supernatural ability. Grant someone you touch a resistance bonus equal to your cleric level on his or her next saving throw. Activating this power is a standard action. The protective ward is an abjuration effect with a duration of 1 hour that is usable once per day.|SOURCE:[TYPE:PCClass|NAME:Cleric|LEVEL:1]
+DOMAIN:Dwarf|DOMAINGRANTS:You gain Great Fortitude as bonus feat.|SOURCE:[TYPE:PCClass|NAME:Cleric|LEVEL:1]
+
+# Character Spells Information
+SPELLBOOK:Prepared Spells|TYPE:2
+SPELLNAME:Bear's Endurance|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:2|SOURCE:[TYPE:DOMAIN|NAME:Dwarf]
+SPELLNAME:Bless|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:1|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Cure Minor Wounds|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Detect Magic|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Detect Poison|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Divine Favor|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:1|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Inflict Light Wounds|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:1|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Inflict Moderate Wounds|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:2|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Magic Vestment|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:3|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Magic Weapon|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:1|SOURCE:[TYPE:DOMAIN|NAME:Dwarf]
+SPELLNAME:Protection from Energy|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:3|SOURCE:[TYPE:DOMAIN|NAME:Protection]
+SPELLNAME:Purify Food and Drink|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Read Magic|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Ring of Blades|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:3|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Shield of Faith|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:1|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Spiritual Weapon|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:2|SOURCE:[TYPE:CLASS|NAME:Cleric]
+
+# Character Description/Bio/History
+CHARACTERBIO:
+CHARACTERDESC:
+CHARACTERCOMP:
+CHARACTERASSET:
+CHARACTERMAGIC:
+CHARACTERDMNOTES:
+
+# Kits
+
+# Character Master/Follower
+
+# Character Notes Tab
+
+# Age Set Selections
+AGESET:0:0:0:0:0:0:0:0:0:0
+
+# Campaign History
+
+# Suppressed Biography Fields
+SUPPRESSBIOFIELDS:
+

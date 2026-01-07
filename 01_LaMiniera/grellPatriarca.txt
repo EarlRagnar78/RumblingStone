@@ -1,0 +1,105 @@
+Grell Patriarch:
+Grell wizard 7; CR 10; Large aberration;
+HD 12d8+48 plus 7d4+28; hp 147;
+Init +6; Spd 5 ft., fl y 30 ft.(perfect);
+AC 24, touch 13, flat-footed 22;
+Base Atk +12; Grp +30; 
+Atk +16 melee (1d6+4 plus paralyzation, tentacle) or +13
+ranged touch (5d6 electricity, greater lightning lance);
+Full Atk +16 melee (1d6+4 plus paralyzation, 10 tentacles) and
++10 melee (1d8+2, bite), or +13 ranged touch (5d6 electricity,
+greater lightning lance);
+SA constrict, expert grappler, improved grab, paralysis, spells;
+SQ blindsight 60 ft., fl ight,
+immunity to electricity, immunity to paralyzation, sightless; 
+AL NE;
+SV Fort +10, Ref +8, Will +14;
+Str 18, Dex 14, Con 18, Int 18,Wis 13, Cha 12.
+Skills and Feats: Concentration +16 (+20 casting defensively),
+Hide +15, Knowledge (arcana) +10, Knowledge (dungeoneer-
+ing) +10, Knowledge (nature) +10, Listen +16, Move Silently
++19, Search +6, Sense Motive +4, Spellcraft +15, Spot +11,
+Survival +1 (+3 underground); 
+Brew PotionB, Combat Casting, Combat Reflexes, Flyby Attack, Grell Alchemy†, Improved
+Initiative, Improved Natural Armor, Scribe ScrollB, Weapon
+Focus (tentacle).
+† New feat described on page 114.
+Languages: Grell, Undercommon, Common, Draconic,
+Elven.
+Constrict (Ex): On a successful grapple check, a grell patriarch
+deals 1d8+4 points of damage.
+
+Expert Grappler (Ex): A grell that chooses to grapple with
+one tentacle and remain ungrappled itself takes a –10 penalty
+on its grapple checks instead of the normal –20 penalty
+(see Improved Grab, page 310 of the Monster Manual, for
+details).
+Grell patriarchs have a +10 racial bonus on grapple checks.
+(Paralyzed foes automatically lose grapple checks.)
+
+Improved Grab (Ex): To use this ability, a grell must hit an
+opponent of its size or smaller with a tentacle attack. It can
+then attempt to start a grapple as a free action without pro-
+voking attacks of opportunity. If it wins the grapple check, it
+establishes a hold and can constrict.
+
+Paralysis (Ex): Any creature hit by a grell patriarch’s tentacle
+must make a DC 16 Fortitude save or be paralyzed for 2d4
+rounds. Each additional tentacle that hits the same creature
+that round increases the save DC by 1.
+
+Sightless (Ex): A grell patriarch is immune to gaze attacks,
+visual effects, illusions, and other attack forms that rely on
+sight.
+
+Wizard Spells Prepared (caster level 7th): 0—detect magic, mage
+hand, ray of frost (+13 ranged touch), read magic; 1st—charm
+person (DC 15), grease (DC 15), mage armor*, obscuring mist, ray of
+enfeeblement (+13 ranged touch); 2nd—invisibility, protection from
+arrows, touch of idiocy (+15 melee touch), web (DC 16); 3rd—dispel
+magic, protection from energy, slow (DC 17); 4th—greater invis-
+ibility, summon monster IV.
+*Already cast.
+
+Spellbook: as above plus: 0—acid splash, daze, flare, resistance;
+1st—color spray, detect secret doors, magic missile, protection from
+good; 2nd—blur, daze monster, scorching ray, summon monster
+II; 3rd—blink, hold person, lightning bolt, nondetection, summon
+monster III; 4th—confusion, polymorph, solid fog.
+Possessions: Brooch of shielding, ring of protection +2, greater
+lightning lance.
+
+
+Greater Lightning Lance
+A larger and more powerful version of the lightning lance,
+a greater lightning lance is found in the tentacles of the
+philosophers and patriarchs. It resembles a slender silver tube 5
+feet long. This weapon deals 5d6 points of electricity damage (no
+save) to a single enemy with a successful ranged touch
+attack (range 60 feet). If this touch attack hits, the electricity bolt then arcs to a second
+target of the user’s choice within 30 feet of the primary target,
+dealing 5d6 points of damage (no save) to the secondary target
+with a second successful ranged touch attack.
+A greater lightning lance usually functions only in the grasp
+of a grell, although a DC 25 Use Magic Device check allows
+a character of a different race to employ the weapon. A greater
+lightning lance has 7 charges. Spent charges are renewed each day,
+so a wielder can expend up to 7 charges in any 24-hour period.
+Faint evocation; CL 5th; Grell Alchemy, shocking grasp; Price
+18,000 gp.
+
+The patriarch is inclined to stand its ground against all
+but the most dangerous enemies. It uses greater invisibility
+early in the fight and attacks brazenly, seeking to overcome
+intruders with a sudden assault. If the heroes seem capable
+of defeating its invisibility, the monster uses web or slow to
+hinder the party while picking on lone characters who are
+far from help.
+The patriarch has naturally claimed the lion’s share of
+the treasure discovered in and around the ruins of Sangkon
+Bhet. Its loot consists of 3,700 sp, 2,900 gp, 55 pp, a fine
+jade statuette worth 650 gp, two rubies worth 300 gp each,
+and three small diamonds worth 230 gp each. The explor-
+ers’ belongings include a suit of +2 studded leather armor,
+a +1 flaming short sword, a cloak of elvenkind, and a scroll of
+neutralize poison.

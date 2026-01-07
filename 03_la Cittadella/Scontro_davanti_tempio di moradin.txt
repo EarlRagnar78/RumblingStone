@@ -1,0 +1,41 @@
+1 house capitain
+3 guerrieri drown 
+1 duergar mago scappato
+1 zanna
+orrore palustre 
+con 110 pf 
+ca 21 
+un potere in meno nessun livello negativo 
+
+
+incontro level 14
+
+
+veleno delle guardie:
+DARKLIGHT ORE
+Darklight ore is a rare and dangerous substance found in the
+Underdark. It occurs only in formations of heavy metal ore. A
+darklight lode’s inherent properties cause it to give off a milky,
+purple glow that is equal to a torch for the purpose of illumina-
+tion. However, this radiation is poisonous. Of all the Underdark
+races, only the drow have been known to mine the ore and har-
+ness its power, using lead-shielded equipment.
+Anyone who comes within 60 feet of a darklight lode without
+appropriate armor or shielding (such as that provided by a
+stone wall) is immediately exposed to darklight poisoning. For
+all purposes, darklight poisoning functions as regular poison.
+The Fortitude save to resist darklight poisoning is DC 18. The
+initial effect is 1d6 points of Constitution damage. The second-
+ary effect is a disease that is similar to mummy rot. However,
+this disease is not magical, so a paladin’s divine health and a
+monk’s purity of body allow those characters to resist its effect.
+Furthermore, a victim who dies of darklight poisoning does not
+shrivel into dust. A caster level check is required for a healing
+spell to work on a victim of darklight poisoning, but this limita-
+tion is overcome by a neutralize poison spell rather than break
+enchantment or remove curse.
+Some sages have theorized a connection between darklight
+ore radiation and the existence of the mutated fungus com-
+monly known as violet fungus. No link has been proven yet,
+but violet fungus appears to be impervious to the effect of the
+radiation

@@ -1,0 +1,222 @@
+PCGVERSION:2.0
+
+# System Information
+CAMPAIGN:Faiths and Pantheons|CAMPAIGN:Drow of the Underdark|CAMPAIGN:Magic Item Compendium|CAMPAIGN:Fiendish Codex II|CAMPAIGN:Cityscape (WotC)|CAMPAIGN:Complete Champion|CAMPAIGN:Complete Mage|CAMPAIGN:Stormwrack|CAMPAIGN:Dragon Magic|CAMPAIGN:Player's Handbook II|CAMPAIGN:Tome of Magic|CAMPAIGN:Races of the Dragon|CAMPAIGN:Spell Compendium|CAMPAIGN:Champions of Valor|CAMPAIGN:City of Splendors: Waterdeep|CAMPAIGN:Champions of Ruin|CAMPAIGN:Sandstorm|CAMPAIGN:Lost Empires of Faerun|CAMPAIGN:Complete Adventurer|CAMPAIGN:Races of Destiny|CAMPAIGN:Complete Arcane|CAMPAIGN:Draconomicon|CAMPAIGN:Shining South|CAMPAIGN:Libris Mortis|CAMPAIGN:Frostburn|CAMPAIGN:Monster Manual III|CAMPAIGN:Races of Stone|CAMPAIGN:Races of the Wild|CAMPAIGN:Complete Divine|CAMPAIGN:Player's Guide to Faerun|CAMPAIGN:Races of Faerun (35e)|CAMPAIGN:Races of Faerun (3e)|CAMPAIGN:Complete Warrior|CAMPAIGN:Dungeon Master's Guide II|CAMPAIGN:Fiend Folio|CAMPAIGN:3.5e ~ Heroes of Horror|CAMPAIGN:Underdark|CAMPAIGN:Book of Exalted Deeds|CAMPAIGN:Unapproachable East|CAMPAIGN:3.5e ~ Book of Vile Darkness|CAMPAIGN:Magic of Faerun|CAMPAIGN:Monster Compendium - Monsters of Faerun|CAMPAIGN:Dungeonscape|CAMPAIGN:Dungeons & Dragons - Core Books
+VERSION:6.08.00 RC8
+ROLLMETHOD:2|EXPRESSION:high campagn
+PURCHASEPOINTS:Y|TYPE:high campagn
+CHARACTERTYPE:NPC
+PREVIEWSHEET:statblock4.htm
+POOLPOINTS:25
+POOLPOINTSAVAIL:28
+GAMEMODE:35e
+TABLABEL:0
+AUTOSPELLS:Y
+USEHIGHERKNOWN:N
+USEHIGHERPREPPED:N
+LOADCOMPANIONS:N
+USETEMPMODS:Y
+AUTOSORTGEAR:Y
+SKILLSOUTPUTORDER:0
+SKILLFILTER:2
+IGNORECOST:N
+ALLOWDEBT:N
+AUTORESIZEGEAR:Y
+
+# Character Bio
+CHARACTERNAME:Rurik Gorunn
+TABNAME:
+PLAYERNAME:
+HEIGHT:0
+WEIGHT:0
+AGE:51
+GENDER:Male
+HANDED:Right
+SKINCOLOR:
+EYECOLOR:
+HAIRCOLOR:
+HAIRSTYLE:
+LOCATION:
+CITY:
+BIRTHDAY:
+BIRTHPLACE:
+PERSONALITYTRAIT1:
+PERSONALITYTRAIT2:
+SPEECHPATTERN:
+PHOBIAS:
+INTERESTS:
+CATCHPHRASE:
+PORTRAIT:
+
+# Character Attributes
+STAT:STR|SCORE:14
+STAT:DEX|SCORE:8
+STAT:CON|SCORE:12
+STAT:INT|SCORE:10
+STAT:WIS|SCORE:14
+STAT:CHA|SCORE:16
+ALIGN:LG
+RACE:Dwarf
+
+# Character Class(es)
+CLASS:Paladin|LEVEL:8|SKILLPOOL:0
+CLASS:Hammer of Moradin|LEVEL:2|SKILLPOOL:0|SPELLBASE:None|CANCASTPERDAY:
+CLASSABILITIESLEVEL:Paladin=1|HITPOINTS:10|SKILLSGAINED:8|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Paladin=2|HITPOINTS:6|SKILLSGAINED:2|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Paladin=3|HITPOINTS:5|SKILLSGAINED:2|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Paladin=4|HITPOINTS:6|PRESTAT:WIS=1|SKILLSGAINED:2|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Paladin=5|HITPOINTS:5|SKILLSGAINED:2|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Paladin=6|HITPOINTS:6|SKILLSGAINED:2|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Paladin=7|HITPOINTS:5|SKILLSGAINED:2|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Paladin=8|HITPOINTS:6|PRESTAT:CHA=1|SKILLSGAINED:2|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Hammer of Moradin=1|HITPOINTS:5|SKILLSGAINED:2|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Hammer of Moradin=2|HITPOINTS:6|SKILLSGAINED:2|SKILLSREMAINING:0
+
+# Character Experience
+EXPERIENCE:45000
+EXPERIENCETABLE:Default
+
+# Character Templates
+TEMPLATESAPPLIED:[NAME:Base Race Type|CHOSENTEMPLATE:[NAME:Base Race Type ~ Humanoid]]
+TEMPLATESAPPLIED:[NAME:Base Race Type ~ Humanoid]
+TEMPLATESAPPLIED:[NAME:Hill Dwarf]
+TEMPLATESAPPLIED:[NAME:Favored Class ~ Fighter]
+TEMPLATESAPPLIED:[NAME:First Level|APPLIEDTO:First Level ~ Paladin]
+TEMPLATESAPPLIED:[NAME:First Level ~ Paladin|CHOSENTEMPLATE:[NAME:Funds - NPC]]
+TEMPLATESAPPLIED:[NAME:Funds - NPC]
+TEMPLATESAPPLIED:[NAME:Dwarf Region ~ Smoking Mountains Region]
+
+# Character Region
+REGION:Smoking Mountains
+
+# Character Skills
+SKILL:Appraise|OUTPUTORDER:1|
+SKILL:Balance|OUTPUTORDER:2|
+SKILL:Bluff|OUTPUTORDER:3|
+SKILL:Climb|OUTPUTORDER:4|
+SKILL:Concentration|OUTPUTORDER:5|CLASSBOUGHT:[CLASS:Hammer of Moradin|RANKS:1.0|COST:1|CLASSSKILL:Y]CLASSBOUGHT:[CLASS:Paladin|RANKS:5.0|COST:1|CLASSSKILL:Y]
+SKILL:Control Shape|OUTPUTORDER:6|
+SKILL:Craft (Untrained)|OUTPUTORDER:7|
+SKILL:Craft (Weaponsmithing)|OUTPUTORDER:8|CLASSBOUGHT:[CLASS:Paladin|RANKS:10.0|COST:1|CLASSSKILL:Y]
+SKILL:Diplomacy|OUTPUTORDER:9|
+SKILL:Diplomacy (Red Dragons)|OUTPUTORDER:10|
+SKILL:Disguise|OUTPUTORDER:11|
+SKILL:Escape Artist|OUTPUTORDER:12|
+SKILL:Forgery|OUTPUTORDER:13|
+SKILL:Gather Information|OUTPUTORDER:14|
+SKILL:Heal|OUTPUTORDER:15|CLASSBOUGHT:[CLASS:Hammer of Moradin|RANKS:1.0|COST:1|CLASSSKILL:Y]CLASSBOUGHT:[CLASS:Paladin|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Hide|OUTPUTORDER:16|
+SKILL:Hide (Forested Areas)|OUTPUTORDER:17|
+SKILL:Intimidate|OUTPUTORDER:18|
+SKILL:Intimidate (Demoralize opponent)|OUTPUTORDER:19|
+SKILL:Jump|OUTPUTORDER:20|
+SKILL:Knowledge (Religion)|OUTPUTORDER:21|CLASSBOUGHT:[CLASS:Hammer of Moradin|RANKS:1.0|COST:1|CLASSSKILL:Y]CLASSBOUGHT:[CLASS:Paladin|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Knowledge (Untrained)|OUTPUTORDER:22|
+SKILL:Listen|OUTPUTORDER:23|
+SKILL:Literacy|OUTPUTORDER:24|
+SKILL:Move Silently|OUTPUTORDER:25|
+SKILL:Move Silently (Forested Areas)|OUTPUTORDER:26|
+SKILL:Ride|OUTPUTORDER:27|CLASSBOUGHT:[CLASS:Paladin|RANKS:5.0|COST:1|CLASSSKILL:Y]
+SKILL:Search|OUTPUTORDER:28|
+SKILL:Sense Motive|OUTPUTORDER:29|
+SKILL:Spellcraft|CLASSBOUGHT:[CLASS:Hammer of Moradin|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Spot|OUTPUTORDER:30|
+SKILL:Survival|OUTPUTORDER:31|
+SKILL:Swim|OUTPUTORDER:32|
+SKILL:Use Rope|OUTPUTORDER:33|
+
+# Character Languages
+LANGUAGE:Common|LANGUAGE:Dwarven
+
+# Character Feats
+FEATPOOL:0.0
+
+# Character Abilities
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Celestial Mount|TYPE:Exalted|DESC:Your special mount is a true creature of the heavens.
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Divine Armor|TYPE:Divine|DESC:You call upon your deity to protect you in your hour of need by wreathing you in divine power that wards off your enemies' attacks.
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Iron Will|TYPE:General|DESC:You have a stronger will than normal.
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Weapon Focus|APPLIEDTO:Warhammer|TYPE:General.Fighter.Dragonrider.DivineChampion.ShadowThief.ViolentKnowledge|DESC:You are especially good at using this specified weapon.&pipe;!PRERULE&colon;1,DisplayFullFeat|DESC:Choose one type of weapon, such as greataxe. You can also choose unarmed strike or grapple (or ray, if you are a spellcaster) as your weapon for purposes of this feat. You are especially good at using this weapon. (If you have chosen ray, you are especially good with rays, such as the one produced by the ray of frost spell.)&pipe;PRERULE&colon;1,DisplayFullFeat
+USERPOOL:FEAT|POOLPOINTS:0.0
+ABILITY:First Level Feat|TYPE:NORMAL|CATEGORY:Internal|KEY:Select First Level Feat|APPLIEDTO:CATEGORY=FEAT&pipe;+1 Feat to feat pool&pipe;|TYPE:FirstLevelFeatOnly|DESC:This will allow choices of First Level Only Feats the character would qualify for normally. The feat will be displayed on the export or preview only.
+USERPOOL:First Level Feat|POOLPOINTS:0.0
+ABILITY:Paladin Class|TYPE:NORMAL|CATEGORY:Internal|KEY:Standard Paladin|TYPE:PaladinClass
+USERPOOL:Paladin Class|POOLPOINTS:0.0
+ABILITY:Region|TYPE:NORMAL|CATEGORY:Regional|KEY:Dwarf Region ~ Smoking Mountains Region|TYPE:Region.FaerunRegion|DESC:The gold dwarves of the Great Rift have established strongholds, foundries, and smelters near the volcanic fi res of the Smoking Mountains and the Black Ash Plain of Unther.  &amp;nl; Favored Deities&colon; Dwarven pantheon
+USERPOOL:Region|POOLPOINTS:0.0
+ABILITY:Special Mount Selection|TYPE:NORMAL|CATEGORY:Internal|KEY:Expanded Selection ~ Special Mount|TYPE:SpecialMountSelection.SpecialMountAlternate
+USERPOOL:Special Mount Selection|POOLPOINTS:0.0
+
+# Character Weapon proficiencies
+WEAPONPROF:[WEAPON:Aspergillum (Heavy)|WEAPON:Axe (Throwing)|WEAPON:Bash|WEAPON:Battle Gauntlet|WEAPON:Battleaxe|WEAPON:Blowgun|WEAPON:Club|WEAPON:Crossbow (Heavy)|WEAPON:Crossbow (Light)|WEAPON:Cutlass]
+WEAPONPROF:[WEAPON:Dagger|WEAPON:Dagger (Punching)|WEAPON:Dart|WEAPON:Dart Thruster|WEAPON:Darts (Barbed)|WEAPON:Falchion|WEAPON:Flail|WEAPON:Flail (Heavy)|WEAPON:Gauntlet|WEAPON:Gauntlet (Spiked)]
+WEAPONPROF:[WEAPON:Glaive|WEAPON:Goblin Stick|WEAPON:Grapple|WEAPON:Greataxe|WEAPON:Greatclub|WEAPON:Greatsword|WEAPON:Guisarme|WEAPON:Halberd|WEAPON:Hammer (Light)|WEAPON:Handaxe]
+WEAPONPROF:[WEAPON:Ice Axe|WEAPON:Javelin|WEAPON:Katana|WEAPON:Kukri|WEAPON:Lance|WEAPON:Lance (Flight)|WEAPON:Lance (Heavy)|WEAPON:Longbow|WEAPON:Longspear|WEAPON:Longsword]
+WEAPONPROF:[WEAPON:Mace (Heavy)|WEAPON:Mace (Light)|WEAPON:Maul|WEAPON:Morningstar|WEAPON:Pick (Dire)|WEAPON:Pick (Heavy)|WEAPON:Pick (Light)|WEAPON:Quarterstaff|WEAPON:Ranged Spell|WEAPON:Ranseur]
+WEAPONPROF:[WEAPON:Rapier|WEAPON:Saber|WEAPON:Sap|WEAPON:Scimitar|WEAPON:Scythe|WEAPON:Shieldbash|WEAPON:Shortbow|WEAPON:Shortspear|WEAPON:Sickle|WEAPON:Sling]
+WEAPONPROF:[WEAPON:Spear|WEAPON:Spells (Ray)|WEAPON:Spells (Touch)|WEAPON:Spiked Armor|WEAPON:Strike (Unarmed)|WEAPON:Sword (Bastard)|WEAPON:Sword (Cutlass)|WEAPON:Sword (Saber)|WEAPON:Sword (Short)|WEAPON:Trident]
+WEAPONPROF:[WEAPON:Truncheon|WEAPON:Unarmed Strike|WEAPON:Urgrosh (Dwarven)|WEAPON:Wakizashi|WEAPON:Waraxe (Dwarven)|WEAPON:Warhammer|WEAPON:Warmace]
+
+# Character Equipment
+MONEY:0.00
+EQUIPNAME:Coin (Gold)|OUTPUTORDER:10|COST:1|WT:0.02|QUANTITY:8.0|NOTE:
+EQUIPNAME:Coin (Platinum)|OUTPUTORDER:11|COST:10|WT:0.02|QUANTITY:6.0|NOTE:
+EQUIPNAME:Full Plate +1|OUTPUTORDER:3|COST:2650.0|WT:50.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Full Plate|DATA:NAME=Full Plate +1$EQMOD=STEEL.PLUS1A]
+EQUIPNAME:Heavy Metal Shield +1|OUTPUTORDER:5|COST:1170.0|WT:15.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Shield (Heavy/Metal)|DATA:NAME=Heavy Metal Shield +1$KEY=Shield +1 (Heavy/Metal)$EQMOD=STEEL.PLUS1S]
+EQUIPNAME:Potion (Cure Moderate Wounds)|OUTPUTORDER:8|COST:300|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Potion (Cure Serious Wounds)|OUTPUTORDER:7|COST:750|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Potion (Fly)|OUTPUTORDER:6|COST:750|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Ring of Protection +1|OUTPUTORDER:2|COST:2000|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Traveler's Outfit|OUTPUTORDER:4|COST:0|WT:5.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Traveler_s Outfit|DATA:KEY=Traveler_s Outfit$COSTMOD=-1]
+EQUIPNAME:Wand (Cure Light Wounds)|OUTPUTORDER:9|COST:750.0|WT:0.0625|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Wand|DATA:NAME=Wand (Cure Light Wounds)$EQMOD=SPL_CHRG&pipe;SPELLNAME&lbracket;Cure Light Wounds&rbracket;SPELLLEVEL&lbracket;1&rbracket;CASTERLEVEL&lbracket;1&rbracket;CHARGES&lbracket;50&rbracket;$SPROP=Cures 1d8+1 damage (PH P.215)]
+EQUIPNAME:Warhammer +1 (Frost)|OUTPUTORDER:1|COST:8312.0|WT:5.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Warhammer|DATA:NAME=Warhammer +1 (Frost)$EQMOD=STEEL.PLUS1W.Frost (Weapon/Melee)]
+EQUIPSET:Insieme di default|ID:0.1|USETEMPMODS:Y
+EQUIPSET:Primary Hand|ID:0.1.01|VALUE:Warhammer +1 (Frost)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Shield|ID:0.1.02|VALUE:Heavy Metal Shield +1|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Body|ID:0.1.03|VALUE:Full Plate +1|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Fingers|ID:0.1.04|VALUE:Ring of Protection +1|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Clothing|ID:0.1.05|VALUE:Traveler's Outfit|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.06|VALUE:Potion (Fly)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.07|VALUE:Potion (Cure Serious Wounds)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.08|VALUE:Potion (Cure Moderate Wounds)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.09|VALUE:Wand (Cure Light Wounds)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.10|VALUE:Coin (Gold)|QUANTITY:8.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.11|VALUE:Coin (Platinum)|QUANTITY:6.0|USETEMPMODS:Y
+CALCEQUIPSET:0.1
+
+# Temporary Bonuses
+
+# EquipSet Temp Bonuses
+
+# Character Deity/Domain
+DEITY:Moradin|DEITYDOMAINS:[DOMAIN:Craft|DOMAIN:Dwarf|DOMAIN:Earth|DOMAIN:Good|DOMAIN:Law|DOMAIN:Protection]|ALIGNALLOW:|DESC:Moradin (M)|DEITYFAVWEAP:[WEAPON:Warhammer]|DEITYALIGN:LG
+
+# Character Spells Information
+SPELLBOOK:Prepared Spells|TYPE:2
+SPELLNAME:Bless Weapon|TIMES:1|CLASS:Paladin|BOOK:Prepared Spells|SPELLLEVEL:1|SOURCE:[TYPE:CLASS|NAME:Paladin]
+SPELLNAME:Divine Favor|TIMES:1|CLASS:Paladin|BOOK:Prepared Spells|SPELLLEVEL:1|SOURCE:[TYPE:CLASS|NAME:Paladin]
+SPELLNAME:Resist Energy|TIMES:1|CLASS:Paladin|BOOK:Prepared Spells|SPELLLEVEL:2|SOURCE:[TYPE:CLASS|NAME:Paladin]
+
+# Character Description/Bio/History
+CHARACTERBIO:
+CHARACTERDESC:
+CHARACTERCOMP:
+CHARACTERASSET:
+CHARACTERMAGIC:
+CHARACTERDMNOTES:
+
+# Kits
+KIT:Wand of cure light wounds
+
+# Character Master/Follower
+FOLLOWER:Unnamed 4|TYPE:Special Mount|RACE:COMPANION ~ HORSE (WARHORSE HEAVY)|HITDICE:0|FILE:regolari/cavalcatura da paladino del mrtello di moradin.pcg
+
+# Character Notes Tab
+
+# Age Set Selections
+AGESET:0:0:1:0:0:0:0:0:0:0
+
+# Campaign History
+
+# Suppressed Biography Fields
+SUPPRESSBIOFIELDS:
+

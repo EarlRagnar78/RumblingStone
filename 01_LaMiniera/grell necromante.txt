@@ -1,0 +1,125 @@
+HIDDEN TEMPLE (EL 8)
+A landing of damp, uneven stone blocks overlooks a large,
+impressive chamber made of dressed stone. Four pillars carved
+like snakes support a ceiling 20 feet high, and a large alcove at
+the northern end of the chamber holds a great stone idol—a six-
+armed snake-woman with various deadly weapons in her grasp.
+The paving blocks of the floor have cracked and settled badly
+enough for a stream to run through the middle of the chamber.
+The water flows from a passage in the north wall and vanishes
+into a narrow dark fissure in the south wall. A masonry passage
+in the east wall leads down into darkness.
+The floor of the room is littered with strange odds and ends—
+heaps of white sand, old bronze urns filled with dark oils, sacks
+of roots and tubers, and stone workbenches on which lie sharp,
+silver implements.
+This room was formerly a hidden shrine of the Sangkon priests,
+used for the darkest and most secret of their foul rites.
+The passage leading from this room to area 6 is blocked by
+a grell crystal wall, but the wall features a small culvert (1 foot
+diameter) that permits the stream to pass through.
+A grell philosopher appropriated the shrine as its workspace
+and living quarters. This philosopher specializes in the study
+of necromantic magic, and it used its command undead spells
+to assume control over several gnoll skeletons left here long
+ago by the evil priests.
+The necrophilosopher is fully aware of the advantage its
+flight ability offers. It hovers near the ceiling, using its spells
+(summon monster III, summon swarm, ray of enfeeblement, and
+ray of exhaustion) to wear down a party of dangerous enemies
+while its skeleton minions attack. It joins the battle only when
+its enemies have been weakened.
+Several large stone urns in the northwest corner of the room
+hold 175 sp, 855 gp, a pouch containing five small agates worth
+25 gp each, and two scrolls: invisibility and fire shield.
+
+Grell Necrophilosopher: 
+Grell necromancer 5; CR 7; Medium aberration; 
+HD 5d8+20 plus 5d4+20; hp 76; 
+Init +4; 
+Spd 5 ft.,fly 30 ft. (perfect); 
+AC 22, touch 14, flat-footed 18; 
+Base Atk +5; Grp +16; 
+Atk +9 melee (1d4+1 plus paralyzation, tentacle); 
+Full Atk +9 melee (1d4+1 plus paralyzation, 10 tentacles) and +4
+melee (2d4, bite); 
+SA constrict, expert grappler, improved grab,paralysis;
+SQ blindsight 60 ft.,
+flight, immunity to electricity, immunity to paralyzation, sightless; AL NE; 
+SV Fort +6, Ref +6, Will +9; 
+Str 12, Dex 18, Con 19, Int 16, Wis 12, Cha 6.
+Skills and Feats: Concentration +12 (+16 casting defensively),
+Hide +14, Knowledge (arcana) +6, Knowledge (dungeoneering)
++6, Knowledge (nature) +6, Listen +5, Move Silently +14, Search
++5, Sense Motive +3, Spellcraft +6, Spot +5; 
+Combat Casting,Flyby Attack, Grell Alchemy†B, Scribe ScrollB, Spell Focus
+(necromancy), Weapon Finesse.
+† New feat described on page 114.
+Languages: Grell, Undercommon, Common, Draconic.
+
+Constrict (Ex): On a successful grapple check, the grell
+necrophilosopher deals 1d6+1 points of damage.
+
+Expert Grappler (Ex): A grell that chooses to grapple with
+one tentacle and remain ungrappled itself takes a –10 penalty
+on its grapple checks instead of the normal –20 penalty (see
+Improved Grab, page 310 of the Monster Manual, for details).
+
+The grell necrophilosopher has a +10 racial bonus on grapple
+checks. (Paralyzed foes automatically lose grapple checks.)
+
+Improved Grab (Ex): To use this ability, the grell must hit
+an opponent of its size or smaller with a tentacle attack. It
+can then attempt to start a grapple as a free action without
+provoking attacks of opportunity. If it wins the grapple check,
+it establishes a hold and can constrict.
+
+Paralysis (Ex): Any creature hit by the grell necrophilosopher’s
+tentacle must make a DC 12 Fortitude save or be paralyzed for
+2d4 rounds. Each additional tentacle that hits the same creature
+that round increases the save DC by 1.
+
+Sightless (Ex): The grell necrophilosopher has immunity to
+gaze attacks, visual effects, illusions, and other attack forms
+that rely on sight.
+
+Wizard Spells Prepared (caster level 5th; prohibited schools
+evocation and illusion): 0—acid splash (+9 ranged touch),
+detect magic, disrupt undead (+9 ranged touch), mage hand, read
+magic; 1st—cause fear (DC 15), mage armor*, obscuring mist, ray
+of enfeeblement (+9 ranged touch), true strike; 2nd—command
+undead (DC 16), detect thoughts (DC 15), resist energy, summon
+swarm; 3rd—blink, ray of exhaustion (+9 ranged touch; DC 17),
+summon monster III.
+*Already cast.
+
+Spellbook: as above plus 0—all except evocation and illu-
+sion; 1st—chill touch, detect undead, protection from good, sleep;
+2nd—daze monster, fog cloud, ghoul touch, scare; 3rd—dispel magic,
+hold person, lightning bolt, water breathing.
+Possessions: amulet of health +2.
+
+Gnoll Skeleton (3): CR 1; Medium undead; HD 2d12; hp 13 each; 
+Init +5; 
+Spd 30 ft.; 
+AC 13, touch 11, flat-footed 12; 
+Base Atk +1; Grp +3;
+Atk or Full Atk +3 melee (1d10+3/×3, halberd);
+SQ damage reduction 5/bludgeoning,
+darkvision 60 ft., 
+immunity to cold, undead traits; AL NE; 
+SV Fort +0, Ref +1, Will +3; 
+Str 15, Dex 12, Con —, Int —, Wis 10, Cha 1.
+Skills and Feats: Improved Initiative.
+Languages: N/A.
+
+Undead Traits: 
+A skeleton is immune to mind-affecting spells
+and abilities, poison, sleep effects, paralysis, stunning, disease,
+death effects, and any effect that requires a Fortitude save
+unless it also works on objects or is harmless. It is not subject
+to extra damage from critical hits, nonlethal damage, ability
+damage to its physical ability scores, ability drain, energy drain,
+fatigue, exhaustion, or death from massive damage. It cannot
+be raised, and resurrection only works if it is willing. Darkvision
+60 ft

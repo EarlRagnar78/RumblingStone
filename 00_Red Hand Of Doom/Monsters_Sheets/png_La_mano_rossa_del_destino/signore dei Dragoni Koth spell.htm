@@ -1,0 +1,939 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!--
+PCGen Character Sheet Template
+==============================
+Author: Richard O'Doherty-Gregg
+Email: OdGregg@bigpond.com
+Modifications by: arcady
+Email: arcady0@yahoo.com
+Revisions: Barak  10/15/02
+Email: barak@voyager.net
+$Revision$
+$Author$
+$Date$
+-->
+<head>
+<meta http-equiv="content-type" content="text-html; charset=utf-8" />
+<title>signore dei Dragoni Koth [27 Points]</title>
+<style type="text/css">
+	.font4 {  
+		font-family: Arial, sans-serif; 
+		font-size:4pt; 
+	}
+	.font5 {  
+		font-family: Arial, sans-serif; 
+		font-size:5pt; 
+	}
+	.font6 {  
+		font-family: Arial, sans-serif; 
+		font-size:6pt;
+	}
+	.font7 {  
+		font-family: Arial, sans-serif; 
+		font-size:7pt;
+	}
+	.font8 {  
+		font-family: Arial, sans-serif; 
+		font-size:8pt;
+	}
+	.font9 {  
+		font-family: Arial, sans-serif; 
+		font-size:9pt;
+	}
+	.h { 
+		font-family: Arial, sans-serif; 
+		font-size:12pt; 
+		vertical-align: bottom;
+	}
+	.ab { 
+		font-family: Arial, sans-serif; 
+		font-size:12pt; 
+		text-align:center; 
+		color:white; 
+		background:black;
+	}
+	.ablable { 
+		font-family: Arial, sans-serif; 
+		font-size:8pt; 
+		text-align:center; 
+		color:white; 
+		background:black;
+	}
+	.abb { 
+		font-family: Arial, sans-serif; 
+		font-size:12pt; 
+		text-align:center; 
+		font-weight:bold; 
+		border: 1px solid black;
+	}
+	.abt { 
+		font-family: Arial, sans-serif; 
+		font-size:12pt; 
+		text-align:center; 
+		font-weight:bold; 
+		border: 5px solid #CCCCCC;
+	}
+	.sign { 
+		font-family: Arial, sans-serif; 
+		font-size:10pt;
+	}
+	.item { 
+		font-family: Arial, sans-serif; 
+		font-size:16pt; 
+		text-align:center; 
+		color:white; 
+		background:black;
+	}
+	.sptab { 
+		font-family: Arial, sans-serif; 
+		vertical-align:top; 
+		text-align:center;
+		font-size:8pt;
+	}
+	.sptab1 { 
+		font-family: Arial, sans-serif; 
+		vertical-align:top; 
+		text-align:left;
+		font-size:8pt;
+	}
+	.sptab2 { 
+		font-family: Arial, sans-serif; 
+		vertical-align:top; 
+		text-align:right;
+		font-size:8pt;
+	}
+	.notetab { 
+		font-family: Arial, sans-serif; 
+		vertical-align:top;
+		border: 1px solid black; 
+		text-align:left;
+		font-size:8pt;
+	}
+	.skl { 
+		font-family: Arial, sans-serif; 
+		font-size: 9pt; 
+		font-weight:bold; 
+		text-align:center; 
+		vertical-align:middle; 
+		border: 4px solid black;
+	}
+	.skill { 
+		font-family: Arial, sans-serif; 
+		font-size: 10pt; 
+	}
+	.skillValue {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: black;
+	}
+	.topline {
+		border-top-width:1px; 
+		border-top: 1pt solid black; 
+		font-family: Arial, sans-serif; 
+		font-size:6pt; 
+	}
+	.spname { 
+		font-family: Arial, sans-serif; 
+		vertical-align:top; 
+		text-align:left;
+		font-size:8pt;
+	}
+	.sptop { 
+		font-family: Arial, sans-serif; 
+		vertical-align:top;
+		border: 1px solid black; 
+		text-align:center;
+		font-size:8pt; 
+		color:white;
+	}
+	.splevel {  
+		font-family: Arial, sans-serif; 
+		background:black; 
+		text-align:center;
+		font-size:9pt; 
+		color:white;
+	}
+	.sphead {  
+		font-family: Arial, sans-serif; 
+		background:black; 
+		text-align:center;
+		font-size:12pt; 
+		color:white;
+	}
+	.notehead {  
+		font-family: Arial, sans-serif; 
+		background:black; 
+		text-align:center;
+		font-size:12pt; 
+		color:white;
+	}
+	.biodata { 
+		font-family: Arial, sans-serif; 
+		vertical-align:bottom; 
+		text-align:left;
+		font-size:9pt;
+	}
+	.border { 
+		border: 1px solid black; 
+	}
+	.border4 { 
+		font-family: Arial, sans-serif; 
+		border: 1px solid black; 
+		font-size:4pt; 
+	}
+	.border7 {
+		font-family: Arial, sans-serif; 
+		border: 1px solid black;
+		font-size:7pt; }
+	.border8 {
+		font-family: Arial, sans-serif; 
+		border: 1px solid black;
+		font-size:8pt;
+	}
+	.border9 {
+		font-family: Arial, sans-serif; 
+		border: 1px solid black;
+		font-size:9pt;
+	}
+	.border10 {
+		font-family: Arial, sans-serif; 
+		border: 1px solid black;
+		font-size:10pt;
+	}
+	.tempborder {
+		border: 5px solid lightgray;
+	}
+	.borderbottom {
+		border-bottom-width:1px;
+		border-bottom: 1pt solid black;
+	}
+	.borderbottom8 {
+		border-bottom-width:1px;
+		border-bottom: 1pt solid black;
+		font-size:8pt;
+	}
+	span.notes p {
+		margin-top:0; 
+		margin-bottom:0;
+	}
+	.lable {  
+		font-family: Arial, sans-serif; 
+		font-size:6pt; 
+	}
+</style>
+<style type="text/css">
+<!--
+.key {
+		font-family: Arial, sans-serif; 
+		font-size:10pt;
+}
+-->
+</style>
+</head>
+<body bgcolor="white">
+<center><font size="-1">Created using <a href="http://pcgen.org/">PCGen</a> 6.08.00 RC8 on 8 dic 2021 <br>Player: ; Character Name: signore dei Dragoni Koth</font></center><br />
+<!-- START Top Character Data -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="35%"   class="h">signore dei Dragoni Koth</td>
+    <td width="15%"   class="h">Lawful Evil</td>
+    <td width="15%"   class="h">Uomo</td>
+    <td width="35%"   class="h">Bugbear</td>
+  </tr>
+  <tr>
+    <td class="topline">CHARACTER NAME</td>
+    <td class="topline">ALIGNMENT</td>
+    <td class="topline">GENDER</td>
+    <td class="topline">RACE</td>
+  </tr>
+  <tr>
+    <td class="h"></td>
+    <td class="h">55000</td>
+    <td class="h">11</td>
+    <td class="h">Humanoid3 Sorcerer8</td>
+  </tr>
+  <tr>
+    <td class="topline">PLAYER</td>
+    <td class="topline">EXPERIENCE</td>
+    <td class="topline">LEVEL</td>
+    <td class="topline">CLASS</td>
+  </tr>
+</table>  <!-- STOP Top Character Data -->
+<!-- START Domain Table -->
+
+<!-- STOP Domain Table -->
+<!-- Start Prepared Spells -->
+<!-- Start Innate Prepared -->
+
+<br />
+
+<table width="100%" cellspacing="0" cellpadding="2" summary="Spell List">
+ <tr>
+  <td colspan="11" align="center" bgcolor="black"><font color="white"><b>Magic Item Spells</b></font></td>
+ </tr>
+  <td valign="top">
+   <table>
+    <tr>
+     <td align="right"><font style="font-size: 11pt">
+&#9744;</font>
+     </td>
+     <td class="font9"><b>Glitterdust</b> (DC:10)</td>
+    </tr>
+    <tr>
+     <td align="right"><font style="font-size: 11pt">
+&#9744;</font>
+     </td>
+     <td class="font9"><b>Mount</b> (DC:)</td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr>
+  <td colspan="11" bgcolor="black"><font style="font-size: 8pt" color="white"><br /></font></td>
+ </tr>
+</table>
+
+<br />
+<!-- End Innate Prepared -->
+<!-- Start Regular Prepared -->
+<!-- Either we do not have a innate race, or if we do we do not have any 0 level spell for the innate race -->
+<br />
+<table width="100%" cellspacing="0" cellpadding="2" summary="Spell List">
+ <tr>
+  <td colspan="11" align="center" bgcolor="black"><font color="white"><b>Magic Item</b></font></td>
+ </tr>
+
+ <tr>
+  <td align="center" bgcolor="#DDDDDD" colspan="11"><font style="font-size: 9pt" color="black">Sorcerer</font></td>
+ </tr>
+ <tr>
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 2 0 -->
+  </td>
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 2 1 -->
+  </td>
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 2 2 -->
+  </td>
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 2 3 -->
+  </td>
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 2 4 -->
+  </td>
+<tr>
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 2 5 -->
+  </td>
+<!-- END FOR,%spellcount,COUNT[SPELLSINBOOK.1.2.0],COUNT[SPELLSINBOOK.1.2.0],1,0 -->
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 2 6 -->
+  </td>
+<!-- END FOR,%spellcount,COUNT[SPELLSINBOOK.1.2.0],COUNT[SPELLSINBOOK.1.2.0],1,0 -->
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 2 7 -->
+  </td>
+<!-- END FOR,%spellcount,COUNT[SPELLSINBOOK.1.2.0],COUNT[SPELLSINBOOK.1.2.0],1,0 -->
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 2 8 -->
+  </td>
+<!-- END FOR,%spellcount,COUNT[SPELLSINBOOK.1.2.0],COUNT[SPELLSINBOOK.1.2.0],1,0 -->
+  <td valign="top">
+<!-- no memorized spells for SPELLSINBOOK.1 2 9 -->
+  </td>
+<!-- END FOR,%spellcount,COUNT[SPELLSINBOOK.1.2.0],COUNT[SPELLSINBOOK.1.2.0],1,0 -->
+<!-- END SPELLLISTCLASS.1 -->
+
+<!-- END FOR,1,COUNT[SPELLRACE],COUNT[SPELLRACE]+COUNT[CLASSES]-1,1,1 -->
+
+<!-- END FOR,2,COUNT[SPELLRACE],COUNT[SPELLRACE]+COUNT[CLASSES]-1,1,1 -->
+ <tr>
+  <td colspan="11" bgcolor="black"><font style="font-size: 8pt" color="white">* = Domain/Specialty Spell</font></td>
+ </tr>
+</table>
+<!-- END FOR,0,COUNT[SPELLSINBOOK0.2.0],COUNT[SPELLSINBOOK0.2.0],1,1 -->
+<!-- END FOR,1,COUNT[SPELLRACE],COUNT[SPELLRACE],1,1 -->
+<!-- END FOR,2,2,COUNT[SPELLBOOKS]-1,1,0 -->
+<!-- ### END class Spellbook memorized spells ### -->
+<!-- START FALSE IIF(2:0) -->
+<!-- ### END MEMORIZED ### -->
+<!-- End Prepared Spells -->
+<!-- Start Racial Innate Spells -->
+<br />
+
+<!-- End Racial Innate Spells -->
+<!-- Start Other Innate Spells -->
+
+<!-- START Spell list Header Table (Other Innate) -->
+<br />
+<table width="100%" cellspacing="0" cellpadding="2" summary="Spell List">
+ <tr>
+  <td colspan="9" class="sphead"><b>Magic Item Spell-like Abilities</b></font></td>
+ </tr>
+</table>
+<table width="100%" cellspacing="0" cellpadding="2" summary="Spell List">
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b>Glitterdust</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 10<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will negates (blinding only)<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action, 
+1/Day
+   <br /></td>
+  <td class="sptab"><i>Duration:</i> 3 rounds<br /></td>
+  <td class="sptab"><i>Rng:</i> Medium (39 m)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, M<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Conjuration<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="7" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;A cloud of golden particles covers everyone and everything in the area, causing creatures to become blinded and visibly outlining invisible things for the duration of the spell. All within the area are covered by the dust, which cannot be removed and continues to sparkle until it fades. Any creature covered by the dust takes a -40 penalty on Hide checks. Material Component: Ground mica.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.236<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="7" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Creatures and objects within 10-ft.-radius spread<br /></td>
+  <td class="sptab2" colspan="2"><i>Caster Level:</i> 3<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b>Mount</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 round, 
+1/Day
+   <br /></td>
+  <td class="sptab"><i>Duration:</i> 2 hours [D]<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (7,5 m)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, M<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Conjuration<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="7" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;You summon a light horse or a pony [your choice] to serve you as a mount. The steed serves willingly and well. The mount comes with a bit and bridle and a riding saddle. Material Component: A bit of horse hair.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.256<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="7" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; One mount<br /></td>
+  <td class="sptab2" colspan="2"><i>Caster Level:</i> 1<br /></td>
+ </tr>
+ <tr>
+  <td colspan="9" bgcolor="black"><font style="font-size: 8pt" color="white"><br /></font></td>
+ </tr>
+</table>
+
+<!-- End Other Innate Spells -->
+<!-- End Innate Spells -->
+<br />
+
+<!-- START Spell list Header Table (Known) -->
+<table width="100%" cellspacing="0" cellpadding="2" summary="Spell List">
+ <tr>
+  <td colspan="11" class="sphead"><b>Sorcerer
+                Spells
+</b></td>
+ </tr>
+ <tr>
+  <td bgcolor="black" class="sptop"><b>LEVEL</b></td>
+  <td bgcolor="black" class="sptop"><b>0</b></td>
+  <td bgcolor="black" class="sptop"><b>1</b></td>
+  <td bgcolor="black" class="sptop"><b>2</b></td>
+  <td bgcolor="black" class="sptop"><b>3</b></td>
+  <td bgcolor="black" class="sptop"><b>4</b></td>
+  <td bgcolor="black" class="sptop"><b>5</b></td>
+  <td bgcolor="black" class="sptop"><b>6</b></td>
+  <td bgcolor="black" class="sptop"><b>7</b></td>
+  <td bgcolor="black" class="sptop"><b>8</b></td>
+  <td bgcolor="black" class="sptop"><b>9</b></td>
+ </tr>
+ <tr>
+  <td class="sptab"><b>KNOWN</b></td>
+  <td class="sptab"><b>8</b></td>
+  <td class="sptab"><b>5</b></td>
+  <td class="sptab"><b>3</b></td>
+  <td class="sptab"><b>2</b></td>
+  <td class="sptab"><b>1</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+ </tr>
+ <tr bgcolor="#DDDDDD">
+  <td class="sptab"><b>PER DAY</b></td>
+  <td class="sptab"><b>6</b></td>
+  <td class="sptab"><b>7</b></td>
+  <td class="sptab"><b>7</b></td>
+  <td class="sptab"><b>6</b></td>
+  <td class="sptab"><b>3</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+  <td class="sptab"><b>0</b></td>
+ </tr>
+</table>
+<!-- End Spell List Header Table (Known) -->
+<!-- Start Known Spells -->
+<table width="100%" cellspacing="0" cellpadding="2" summary="Spell List">
+ <tr>
+  <td colspan="10" class="splevel"><b>LEVEL 0</b></td>
+ </tr>
+ <tr>
+  <td colspan="10" class="splevel"><b>
+
+  </b></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Acid Splash</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 action<br /></td>
+  <td class="sptab"><i>Duration:</i> Instantaneous<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (13,5 m)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> Yes<br /></td>
+  <td class="sptab"><i>School:</i> Conjuration<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;You fire a small orb of acid at the target. You must succeed at a ranged touch attack to hit your target. If you miss, there is no splash effect. The spell deals 1d3 points of acid damage. You fire a small orb of acid at the target. You must succeed on a ranged touch attack to hit your target. The orb deals 1d3 points of acid damage.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.76<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; One missile of acid
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 8<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Ghost Sound</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 13<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will disbelief (if interacted with)<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 8 rounds [D]<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (13,5 m)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, M<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Illusion<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Ghost sound allows you to create a volume of sound that rises, recedes, approaches, or remains at a fixed place. You choose what type of sound ghost sound creates when casting it and cannot thereafter change the sound&#39;s basic character. The volume of sound created depends on your level. You can produce as much noise as four normal humans per caster level [maximum twenty humans]. Thus, talking, singing, shouting, walking, marching, or running sounds can be created. The noise a ghost sound spell produces can be virtually any type of sound within the volume limit. A horde of rats running and squeaking is about the same volume as eight humans running and shouting. A roaring lion is equal to the noise from sixteen humans, while a roaring dire tiger is equal to the noise from twenty humans. Ghost sound can enhance the effectiveness of a silent image spell. Ghost sound can be made permanent with a permanency spell. Material Component: A bit of wool or a small lump of wax.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.235<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Illusory sounds
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 8<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Mage Hand</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Concentration<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (13,5 m)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Transmutation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;You point your finger at an object and can lift it and move it at will from a distance. As a move action, you can propel the object as far as 15 feet in any direction, though the spell ends if the distance between you and the object ever exceeds the spell&#39;s range.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.249<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; One nonmagical, unattended object weighing up to 5 lb.
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 8<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Message</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 80 minutes<br /></td>
+  <td class="sptab"><i>Rng:</i> Medium (54 m)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, F<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Transmutation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;You can whisper messages and receive whispered replies with little chance of being overheard. You point your finger at each creature you want to receive the message. When you whisper, the whispered message is audible to all targeted creatures within range. Magical silence, 1 foot of stone, 1 inch of common metal [or a thin sheet of lead], or 3 feet of wood or dirt blocks the spell. The message does not have to travel in a straight line. It can circumvent a barrier if there is an open path between you and the subject, and the path&#39;s entire length lies within the spell&#39;s range. The creatures that receive the message can whisper a reply that you hear. The spell transmits sound, not meaning. It doesn&#39;t transcend language barriers. Note: to speak a message, you must mouth the words and whisper, possibly allowing observers the opportunity to read your lips. Focus: A short piece of copper wire.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.253<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; 8 creatures
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 8<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Open/Close</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 13<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will negates (object)<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Instantaneous<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (13,5 m)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, F<br /></td>
+  <td class="sptab"><i>SR:</i> Yes  (object)<br /></td>
+  <td class="sptab"><i>School:</i> Transmutation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;You can open or close [your choice] a door, chest, box, window, bag, pouch, bottle, barrel, or other container. If anything resists this activity [such as a bar on a door or a lock on a chest], the spell fails. In addition, the spell can only open and close things weighing 30 pounds or less. Thus, doors, chests, and similar objects sized for enormous creatures may be beyond this spell&#39;s ability to affect. Focus: A brass key.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.258<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Object weighing up to 30 lb. or portal that can be opened or closed
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 8<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Read Magic</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 80 minutes<br /></td>
+  <td class="sptab"><i>Rng:</i> Personal<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, F<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Divination<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;By means of read magic, you can decipher magical inscriptions on objects-books, scrolls, weapons, and the like-that would otherwise be unintelligible. This deciphering does not normally invoke the magic contained in the writing, although it may do so in the case of a cursed scroll. Furthermore, once the spell is cast and you have read the magical inscription, you are thereafter able to read that particular writing without recourse to the use of read magic. You can read at the rate of one page [250 words] per minute. The spell allows you to identify a glyph of warding with a DC 13 Spellcraft check, a greater glyph of warding with a DC 16 Spellcraft check, or any symbol spell with a Spellcraft check [DC 10 + spell level]. Read magic can be made permanent with a permanency spell. Focus: A clear crystal or mineral prism.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.269<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; You
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 8<br /></td>
+ </tr>
+ <tr>
+  <td colspan="10" class="splevel"><b>LEVEL 1</b></td>
+ </tr>
+ <tr>
+  <td colspan="10" class="splevel"><b>
+
+  </b></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Charm Person</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 14<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will negates<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 8 hours<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (13,5 m)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> Yes<br /></td>
+  <td class="sptab"><i>School:</i> Enchantment<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;This charm makes a humanoid creature regard you as its trusted friend and ally [treat the target&#39;s attitude as friendly]. If the creature is currently being threatened or attacked by you or your allies, however, it receives a +5 bonus on its saving throw. The spell does not enable you to control the charmed person as if it were an automaton, but it perceives your words and actions in the most favorable way. You can try to give the subject orders, but you must win an opposed Charisma check to convince it to do anything it wouldn&#39;t ordinarily do. [Retries are not allowed.] An affected creature never obeys suicidal or obviously harmful orders, but it might be convinced that something very dangerous is worth doing.  Any act by you or your apparent allies that threatens the charmed person breaks the spell. You must speak the person&#39;s language to communicate your commands, or else be good at pantomiming.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.209<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; One humanoid creature
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 8<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Mage Armor</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 14<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will negates (harmless)<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 8 hours [D]<br /></td>
+  <td class="sptab"><i>Rng:</i> Touch<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, F<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Conjuration<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;An invisible but tangible field of force surrounds the subject of a mage armor spell, providing a +4 armor bonus to AC. Unlike mundane armor, mage armor entails no armor check penalty, arcane spell failure chance, or speed reduction. Since mage armor is made of force, incorporeal creatures can&#39;t bypass it the way they do normal armor. Focus: A piece of cured leather.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.249<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Creature touched
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 8<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Magic Missile</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Instantaneous<br /></td>
+  <td class="sptab"><i>Rng:</i> Medium (54 m)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> Yes<br /></td>
+  <td class="sptab"><i>School:</i> Evocation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;A missile of magical energy darts forth from your fingertip and strikes its target, dealing 1d4+1 points of force damage. The missile strikes unerringly, even if the target is in melee combat or has less than total cover or total concealment. Specific parts of a creature can&#39;t be singled out. Inanimate objects are not damaged by the spell. For every two caster levels beyond 1st, you gain an additional missile-two at 3rd level, three at 5th, four at 7th, and the maximum of five missiles at 9th level or higher. If you shoot multiple missiles, you can have them strike a single creature or several creatures. A single missile can strike only one creature. You must designate targets before you check for spell resistance or roll damage.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.251<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Up to five creatures, no two of which can be more than 15 ft. apart
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 8<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Ray of Enfeeblement</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 8 minutes<br /></td>
+  <td class="sptab"><i>Rng:</i> Close (13,5 m)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> Yes<br /></td>
+  <td class="sptab"><i>School:</i> Necromancy<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;A coruscating ray springs from your hand. You must succeed on a ranged touch attack to strike a target. The subject takes a penalty to Strength equal to 1d6+1 per two caster levels [maximum 1d6+5]. The subject&#39;s Strength score cannot drop below 1.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.269<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Ray
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 8<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Shield</b><br /></td>
+  <td class="sptab">
+  	</td>
+  <td class="sptab"><i>Save:</i> None<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 8 minutes [D]<br /></td>
+  <td class="sptab"><i>Rng:</i> Personal<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Abjuration<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;Shield creates an invisible, tower shield-sized mobile disk of force that hovers in front of you. It negates magic missile attacks directed at you. The disk also provides a +4 shield bonus to AC. This bonus applies against incorporeal touch attacks, since it is a force effect. The shield has no armor check penalty or arcane spell failure chance. Unlike with a normal tower shield, you can&#39;t use the shield spell for cover.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.278<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; You
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 8<br /></td>
+ </tr>
+ <tr>
+  <td colspan="10" class="splevel"><b>LEVEL 2</b></td>
+ </tr>
+ <tr>
+  <td colspan="10" class="splevel"><b>
+
+  </b></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Blindness/Deafness</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 15<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Fortitude negates<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Permanent [D]<br /></td>
+  <td class="sptab"><i>Rng:</i> Medium (54 m)<br /></td>
+  <td class="sptab"><i>Comp:</i> V<br /></td>
+  <td class="sptab"><i>SR:</i> Yes<br /></td>
+  <td class="sptab"><i>School:</i> Necromancy<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;You call upon the powers of unlife to render the subject blinded or deafened, as you choose.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.206<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; One living creature
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 8<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Detect Thoughts</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 15<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will negates; see text<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Concentration, up to 8 minutes [D]<br /></td>
+  <td class="sptab"><i>Rng:</i> 60 ft.<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, F/DF<br /></td>
+  <td class="sptab"><i>SR:</i> No<br /></td>
+  <td class="sptab"><i>School:</i> Divination<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;<p>You detect surface thoughts. The amount of information revealed depends on how long you study a particular area or subject. </p>
+<p>1st Round: Presence or absence of thoughts [from conscious creatures with Intelligence scores of 1 or higher]. </p>
+<p>2nd Round: Number of thinking minds and the Intelligence score of each. If the highest Intelligence is 26 or higher [and at least 10 points higher than your own Intelligence score], you are stunned for 1 round and the spell ends. This spell does not let you determine the location of the thinking minds if you can&#39;t see the creatures whose thoughts you are detecting. </p>
+<p>3rd Round: Surface thoughts of any mind in the area. A target&#39;s Will save prevents you from reading its thoughts, and you must cast detect thoughts again to have another chance. Creatures of animal intelligence [Int 1 or 2] have simple, instinctual thoughts that you can pick up. </p>
+<p>Each round, you can turn to detect thoughts in a new area. The spell can penetrate barriers, but 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt blocks it. Arcane Focus: A copper piece.</p><br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.220<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Cone-shaped emanation
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 8<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Flaming Sphere</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 15<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Reflex negates<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 8 rounds<br /></td>
+  <td class="sptab"><i>Rng:</i> Medium (54 m)<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, M/DF<br /></td>
+  <td class="sptab"><i>SR:</i> Yes<br /></td>
+  <td class="sptab"><i>School:</i> Evocation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;A burning globe of fire rolls in whichever direction you point and burns those it strikes. It moves 30 feet per round. As part of this movement, it can ascend or jump up to 30 feet to strike a target. If it enters a space with a creature, it stops moving for the round and deals 2d6 points of fire damage to that creature, though a successful Reflex save negates that damage. A flaming sphere rolls over barriers less than 4 feet tall. It ignites flammable substances it touches and illuminates the same area as a torch would. The sphere moves as long as you actively direct it [a move action for you]; otherwise, it merely stays at rest and burns. It can be extinguished by any means that would put out a normal fire of its size. The surface of the sphere has a spongy, yielding consistency and so does not cause damage except by its flame. It cannot push aside unwilling creatures or batter down large obstacles. A flaming sphere winks out if it exceeds the spell&#39;s range. Arcane Material Component: A bit of tallow, a pinch of brimstone, and a dusting of powdered iron.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.232<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; 5-ft.-diameter sphere
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 8<br /></td>
+ </tr>
+ <tr>
+  <td colspan="10" class="splevel"><b>LEVEL 3</b></td>
+ </tr>
+ <tr>
+  <td colspan="10" class="splevel"><b>
+
+  </b></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Fly</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 16<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will negates (harmless)<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 8 minutes<br /></td>
+  <td class="sptab"><i>Rng:</i> Touch<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, F/DF<br /></td>
+  <td class="sptab"><i>SR:</i> Yes (harmless)<br /></td>
+  <td class="sptab"><i>School:</i> Transmutation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;The subject can fly at a speed of 60 feet [or 40 feet if it wears medium or heavy armor, or if it carries a medium or heavy load]. It can ascend at half speed and descend at double speed, and its maneuverability is good. Using a fly spell requires only as much concentration as walking, so the subject can attack or cast spells normally. The subject of a fly spell can charge but not run, and it cannot carry aloft more weight than its maximum load, plus any armor it wears. Should the spell duration expire while the subject is still aloft, the magic fails slowly. The subject floats downward 60 feet per round for 1d6 rounds. If it reaches the ground in that amount of time, it lands safely. If not, it falls the rest of the distance, taking 1d6 points of damage per 10 feet of fall. Since dispelling a spell effectively ends it, the subject also descends in this way if the fly spell is dispelled, but not if it is negated by an antimagic field. Arcane Focus: A wing feather from any bird.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.232<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; Creature touched
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 8<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td class="spname"><b> Lightning Bolt</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 16<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Reflex half<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> Instantaneous<br /></td>
+  <td class="sptab"><i>Rng:</i> 120 ft.<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S, M<br /></td>
+  <td class="sptab"><i>SR:</i> Yes<br /></td>
+  <td class="sptab"><i>School:</i> Evocation<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;You release a powerful stroke of electrical energy that deals 1d6 points of electricity damage per caster level [8d6] [maximum 10d6] to each creature within its area. The bolt begins at your fingertips. The lightning bolt sets fire to combustibles and damages objects in its path. It can melt metals with a low melting point, such as lead, gold, copper, silver, or bronze. If the damage caused to an interposing barrier shatters or breaks through it, the bolt may continue beyond the barrier if the spell&#39;s range permits; otherwise, it stops at the barrier just as any other spell effect does. Material Component: A bit of fur and an amber, crystal, or glass rod.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.248<br /></td>
+ </tr>
+<tr bgcolor="white">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; 120-ft. line
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 8<br /></td>
+ </tr>
+ <tr>
+  <td colspan="10" class="splevel"><b>LEVEL 4</b></td>
+ </tr>
+ <tr>
+  <td colspan="10" class="splevel"><b>
+
+  </b></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td class="spname"><b> Invisibility, Greater</b><br /></td>
+  <td class="sptab">
+  <i>DC:</i> 17<br />
+  	</td>
+  <td class="sptab"><i>Save:</i> Will negates (harmless)<br /></td>
+  <td class="sptab"><i>Time:</i> 1 standard action<br /></td>
+  <td class="sptab"><i>Duration:</i> 8 rounds [D]<br /></td>
+  <td class="sptab"><i>Rng:</i> Personal or touch<br /></td>
+  <td class="sptab"><i>Comp:</i> V, S<br /></td>
+  <td class="sptab"><i>SR:</i> Yes (harmless) or Yes (harmless, object)<br /></td>
+  <td class="sptab"><i>School:</i> Illusion<br /></td>
+  <td class="sptab">
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Effect:</i>&nbsp;&nbsp;The creature or object touched becomes invisible, vanishing from sight, even from darkvision. If the recipient is a creature carrying gear, that vanishes, too. If you cast the spell on someone else, neither you nor your allies can see the subject, unless you can normally see invisible things or you employ magic to do so. Items dropped or put down by an invisible creature become visible; items picked up disappear if tucked into the clothing or pouches worn by the creature. Light, however, never becomes invisible, although a source of light can become so [thus, the effect is that of a light with no visible source]. Any part of an item that the subject carries but that extends more than 10 feet from it becomes visible. Of course, the subject is not magically silenced, and certain other conditions can render the recipient detectable [such as stepping in a puddle]. Unlike the standard Invisibility spell, Greater Invisibility does not end if the subject attacks any creature!.  Invisibility can be made permanent [on objects only] with a permanency spell. Arcane Material Component: An eyelash encased in a bit of gum arabic.<br /></td>
+  <td colspan="2" class="sptab2"><i>Source:</i>&nbsp;&nbsp;p.245<br /></td>
+ </tr>
+<tr bgcolor="#DDDDDD">
+  <td colspan="8" class="sptab1"><i>Target Area:</i>&nbsp;&nbsp; You or creature touched
+  &nbsp;&nbsp; <i>Spell Point Cost:</i>&nbsp;&nbsp; 
+<br /></td>
+  <td colspan="2" class="sptab2"><i>Caster Level:</i>&nbsp;&nbsp; 8<br /></td>
+ </tr>
+ <tr>
+  <td colspan="10" bgcolor="#FFFFFF" class="ablable" align="left">* = Domain/Specialty Spell</td>
+ </tr>
+</table>
+<br />
+
+
+<!-- End Known Spells -->
+<!-- ================================================================ -->
+<br /><center><font size="-1">Created using <a href="http://pcgen.org/">PCGen</a> 6.08.00 RC8 on 8 dic 2021</font></center>
+</body>
+</html>

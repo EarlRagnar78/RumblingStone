@@ -1,0 +1,216 @@
+PCGVERSION:2.0
+
+# System Information
+CAMPAIGN:Faiths and Pantheons|CAMPAIGN:Drow of the Underdark|CAMPAIGN:Magic Item Compendium|CAMPAIGN:Complete Scoundrel|CAMPAIGN:Fiendish Codex II|CAMPAIGN:Cityscape (WotC)|CAMPAIGN:Complete Champion|CAMPAIGN:Complete Mage|CAMPAIGN:Complete Psionic|CAMPAIGN:Stormwrack|CAMPAIGN:Dragon Magic|CAMPAIGN:Tome of Battle: The Book of Nine Swords|CAMPAIGN:Player's Handbook II|CAMPAIGN:Tome of Magic|CAMPAIGN:Races of the Dragon|CAMPAIGN:Spell Compendium|CAMPAIGN:Champions of Valor|CAMPAIGN:Lords of Madness|CAMPAIGN:Magic of Incarnum|CAMPAIGN:Weapons of Legacy|CAMPAIGN:City of Splendors: Waterdeep|CAMPAIGN:Champions of Ruin|CAMPAIGN:3.5e ~ Heroes of Battle|CAMPAIGN:Sandstorm|CAMPAIGN:Lost Empires of Faerun|CAMPAIGN:Complete Adventurer|CAMPAIGN:Races of Destiny|CAMPAIGN:Complete Arcane|CAMPAIGN:Draconomicon|CAMPAIGN:Shining South|CAMPAIGN:Libris Mortis|CAMPAIGN:Frostburn|CAMPAIGN:Races of Stone|CAMPAIGN:Races of the Wild|CAMPAIGN:Complete Divine|CAMPAIGN:Expanded Psionics Handbook|CAMPAIGN:Player's Guide to Faerun|CAMPAIGN:Races of Faerun (35e)|CAMPAIGN:Races of Faerun (3e)|CAMPAIGN:Unearthed Arcana (Complete)|CAMPAIGN:Complete Warrior|CAMPAIGN:Dungeon Master's Guide II|CAMPAIGN:Fiend Folio|CAMPAIGN:3.5e ~ Heroes of Horror|CAMPAIGN:Underdark|CAMPAIGN:Book of Exalted Deeds|CAMPAIGN:Miniatures Handbook|CAMPAIGN:Unapproachable East|CAMPAIGN:3.5e ~ Book of Vile Darkness|CAMPAIGN:Monster Manual II|CAMPAIGN:Epic Level Handbook|CAMPAIGN:Magic of Faerun|CAMPAIGN:Monster Compendium - Monsters of Faerun|CAMPAIGN:Dragons of Faerun - Web Enhancement - City of Wyrmshadows|CAMPAIGN:Dungeonscape|CAMPAIGN:Dungeons & Dragons - Core Books
+VERSION:6.08.00 RC8
+ROLLMETHOD:2|EXPRESSION:high campagn
+PURCHASEPOINTS:Y|TYPE:high campagn
+CHARACTERTYPE:NPC
+PREVIEWSHEET:statblock4.htm
+POOLPOINTS:25
+POOLPOINTSAVAIL:28
+GAMEMODE:35e
+TABLABEL:0
+AUTOSPELLS:Y
+USEHIGHERKNOWN:N
+USEHIGHERPREPPED:N
+LOADCOMPANIONS:N
+USETEMPMODS:Y
+AUTOSORTGEAR:Y
+SKILLSOUTPUTORDER:0
+SKILLFILTER:2
+IGNORECOST:N
+ALLOWDEBT:N
+AUTORESIZEGEAR:Y
+
+# Character Bio
+CHARACTERNAME:capitan loranna anitah
+TABNAME:
+PLAYERNAME:
+HEIGHT:0
+WEIGHT:0
+AGE:34
+GENDER:Female
+HANDED:Right
+SKINCOLOR:
+EYECOLOR:
+HAIRCOLOR:
+HAIRSTYLE:
+LOCATION:
+CITY:
+BIRTHDAY:
+BIRTHPLACE:
+PERSONALITYTRAIT1:
+PERSONALITYTRAIT2:
+SPEECHPATTERN:
+PHOBIAS:
+INTERESTS:
+CATCHPHRASE:
+PORTRAIT:
+
+# Character Attributes
+STAT:STR|SCORE:13
+STAT:DEX|SCORE:16
+STAT:CON|SCORE:12
+STAT:INT|SCORE:10
+STAT:WIS|SCORE:8
+STAT:CHA|SCORE:14
+ALIGN:CG
+RACE:Human
+
+# Character Class(es)
+CLASS:Fighter|LEVEL:5|SKILLPOOL:0|SPELLBASE:None|CANCASTPERDAY:
+CLASS:Order of the Bow Initiate|LEVEL:2|SKILLPOOL:0|SPELLBASE:None|CANCASTPERDAY:
+CLASSABILITIESLEVEL:Fighter=1|HITPOINTS:10|SKILLSGAINED:12|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Fighter=2|HITPOINTS:6|SKILLSGAINED:3|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Fighter=3|HITPOINTS:5|SKILLSGAINED:3|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Fighter=4|HITPOINTS:6|PRESTAT:DEX=1|SKILLSGAINED:3|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Fighter=5|HITPOINTS:5|SKILLSGAINED:3|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Order of the Bow Initiate=1|HITPOINTS:5|SKILLSGAINED:3|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Order of the Bow Initiate=2|HITPOINTS:4|PRESTAT:STR=-1|PRESTAT:CHA=1|SKILLSGAINED:3|SKILLSREMAINING:0
+
+# Character Experience
+EXPERIENCE:21000
+EXPERIENCETABLE:Default
+
+# Character Templates
+TEMPLATESAPPLIED:[NAME:Base Race Type|CHOSENTEMPLATE:[NAME:Base Race Type ~ Humanoid]]
+TEMPLATESAPPLIED:[NAME:Human Base]
+TEMPLATESAPPLIED:[NAME:Favored Class ~ HIGHESTLEVELCLASS]
+TEMPLATESAPPLIED:[NAME:First Level|APPLIEDTO:First Level ~ Fighter]
+TEMPLATESAPPLIED:[NAME:First Level ~ Fighter|CHOSENTEMPLATE:[NAME:Funds - NPC]]
+TEMPLATESAPPLIED:[NAME:Base Race Type ~ Humanoid]
+TEMPLATESAPPLIED:[NAME:Human Region ~ Shaar Region]
+TEMPLATESAPPLIED:[NAME:Ethnicity ~ Shaaran]
+TEMPLATESAPPLIED:[NAME:Funds - NPC]
+
+# Character Region
+REGION:Shaar
+
+# Character Skills
+SKILL:Appraise|OUTPUTORDER:1|
+SKILL:Balance|OUTPUTORDER:2|
+SKILL:Bluff|OUTPUTORDER:3|
+SKILL:Climb|OUTPUTORDER:4|
+SKILL:Concentration|OUTPUTORDER:5|
+SKILL:Control Shape|OUTPUTORDER:6|
+SKILL:Craft (Bowmaking)|OUTPUTORDER:7|CLASSBOUGHT:[CLASS:Fighter|RANKS:5.0|COST:1|CLASSSKILL:Y]
+SKILL:Craft (Untrained)|OUTPUTORDER:8|
+SKILL:Diplomacy|OUTPUTORDER:9|
+SKILL:Diplomacy (Red Dragons)|OUTPUTORDER:10|
+SKILL:Disguise|OUTPUTORDER:11|
+SKILL:Escape Artist|OUTPUTORDER:12|
+SKILL:Forgery|OUTPUTORDER:13|
+SKILL:Gather Information|OUTPUTORDER:14|
+SKILL:Heal|OUTPUTORDER:15|
+SKILL:Hide|OUTPUTORDER:16|
+SKILL:Hide (Forested Areas)|OUTPUTORDER:17|
+SKILL:Intimidate|OUTPUTORDER:18|
+SKILL:Intimidate (Demoralize opponent)|OUTPUTORDER:19|
+SKILL:Jump|OUTPUTORDER:20|
+SKILL:Knowledge (Religion)|OUTPUTORDER:21|CLASSBOUGHT:[CLASS:Fighter|RANKS:2.0|COST:2|CLASSSKILL:N]
+SKILL:Knowledge (Untrained)|OUTPUTORDER:22|
+SKILL:Listen|OUTPUTORDER:23|CLASSBOUGHT:[CLASS:Fighter|RANKS:3.0|COST:2|CLASSSKILL:N]CLASSBOUGHT:[CLASS:Order of the Bow Initiate|RANKS:1.0|COST:2|CLASSSKILL:N]
+SKILL:Literacy|OUTPUTORDER:24|
+SKILL:Move Silently|OUTPUTORDER:25|
+SKILL:Move Silently (Forested Areas)|OUTPUTORDER:26|
+SKILL:Ride|OUTPUTORDER:27|CLASSBOUGHT:[CLASS:Fighter|RANKS:3.0|COST:1|CLASSSKILL:Y]CLASSBOUGHT:[CLASS:Order of the Bow Initiate|RANKS:2.0|COST:1|CLASSSKILL:Y]
+SKILL:Search|OUTPUTORDER:28|
+SKILL:Sense Motive|OUTPUTORDER:29|
+SKILL:Spot|OUTPUTORDER:30|CLASSBOUGHT:[CLASS:Fighter|RANKS:3.0|COST:2|CLASSSKILL:N]CLASSBOUGHT:[CLASS:Order of the Bow Initiate|RANKS:2.0|COST:1|CLASSSKILL:Y]
+SKILL:Survival|OUTPUTORDER:31|
+SKILL:Swim|OUTPUTORDER:32|
+SKILL:Use Rope|OUTPUTORDER:33|
+
+# Character Languages
+LANGUAGE:Common|LANGUAGE:Shaaran
+
+# Character Feats
+FEATPOOL:0.0
+
+# Character Abilities
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Plunging Shot|TYPE:General|DESC:You can use the force of gravity to make your ranged attacks deal extra damage if your target is below you.
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Point Blank Shot|TYPE:General.Fighter.AttackOption.ChampionOfTheWildArchery.ViolentKnowledge|DESC:You are skilled at making well-placed shots with ranged weapons at close range.
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Precise Shot|TYPE:General.Fighter.AttackOption.ChampionOfTheWildArchery.ViolentKnowledge|DESC:You are skilled at timing and aiming ranged attacks.
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Rapid Shot|TYPE:General.Fighter.AttackOption.ViolentKnowledge|DESC:You can use ranged weapons with exceptional speed.
+USERPOOL:FEAT|POOLPOINTS:0.0
+ABILITY:Fighter Feat|TYPE:NORMAL|CATEGORY:FEAT|KEY:Sharp-Shooting|TYPE:General.Fighter.ChampionOfTheWildArchery
+ABILITY:Fighter Feat|TYPE:NORMAL|CATEGORY:FEAT|KEY:Weapon Focus|APPLIEDTO:Longbow|TYPE:General.Fighter.Dragonrider.DivineChampion.ShadowThief.ViolentKnowledge|DESC:You are especially good at using this specified weapon.&pipe;!PRERULE&colon;1,DisplayFullFeat|DESC:Choose one type of weapon, such as greataxe. You can also choose unarmed strike or grapple (or ray, if you are a spellcaster) as your weapon for purposes of this feat. You are especially good at using this weapon. (If you have chosen ray, you are especially good with rays, such as the one produced by the ray of frost spell.)&pipe;PRERULE&colon;1,DisplayFullFeat
+ABILITY:Fighter Feat|TYPE:NORMAL|CATEGORY:FEAT|KEY:Weapon Specialization|APPLIEDTO:Longbow|TYPE:Special.Fighter.Dragonrider.ViolentKnowledge|DESC:Choose one type of weapon, such as greataxe, for which you have already selected the Weapon Focus feat. You can also choose unarmed strike or grapple as your weapon for purposes of this feat. You deal extra damage when using this weapon.
+USERPOOL:Fighter Feat|POOLPOINTS:0.0
+ABILITY:First Level Feat|TYPE:NORMAL|CATEGORY:Internal|KEY:+1 Feat to feat pool|APPLIEDTO:|TYPE:FirstLevelFeatOnly|DESC:Use this to bypass a First Level Only Feat, and pick any non-First Level only feats from the regular pool instead.
+ABILITY:First Level Feat|TYPE:NORMAL|CATEGORY:Internal|KEY:Select First Level Feat|APPLIEDTO:CATEGORY=FEAT&pipe;+1 Feat to feat pool&pipe;|TYPE:FirstLevelFeatOnly|DESC:This will allow choices of First Level Only Feats the character would qualify for normally. The feat will be displayed on the export or preview only.
+USERPOOL:First Level Feat|POOLPOINTS:0.0
+ABILITY:Human Ethnicity|TYPE:NORMAL|CATEGORY:Internal|KEY:Human Ethnicity ~ Shaaran|TYPE:Human Ethnicity.Faerun Ethnicity|DESC:The grasslands of the Shaar are home to nomadic tribes of long-faced, yellow-skinned humans. Conquered by the armies of Calimshan at the height of the Shoon Empire,the Shaarans of the eastern grasslands reverted to their nomadic ways once the Shoon Empire collapsed, while those who dwelt along the shores of the Shining Sea and the Lake of Steam settled in cities and founded such realms as Lapaliiya and the ever-changing Border Kingdoms. Today, Shaarans are found as far west as Calimshan and as far north as the Vilhon Reach. The inhabitants of Sespech are largely of Shaaran descent, having been brought north to serve in Jhaamdath's armies centuries ago. Speakers of Shaaran employ an alphabet of Dethek runes, adopted from the gold dwarf traders of the Great Rift before the rise of the Shoon Empire. If there ever was a Shaaran pantheon, it was long ago subsumed by the more powerful Jhamdaathan and Calishite cultures. Little record exist of Shaaran culture before it was assimilated by its more powerful neighbors, for Shaarans have long maintained a nomadic way of life and an oral history.
+USERPOOL:Human Ethnicity|POOLPOINTS:0.0
+ABILITY:Region|TYPE:NORMAL|CATEGORY:Regional|KEY:Human Region ~ Shaar Region|TYPE:Region.FaerunRegion|DESC:This vast savanna stretches for more than 1,000 miles across southern Faerun. The Shaar is home to numerous nomadic tribes, though it also supports a handful of more permanent settlements.  &amp;nl; Favored Deities&colon; Akadi, Mask, Shar, Tempus
+USERPOOL:Region|POOLPOINTS:0.0
+
+# Character Weapon proficiencies
+WEAPONPROF:[WEAPON:Aspergillum (Heavy)|WEAPON:Axe (Throwing)|WEAPON:Bash|WEAPON:Battle Gauntlet|WEAPON:Battleaxe|WEAPON:Blowgun|WEAPON:Boulder|WEAPON:Club|WEAPON:Crossbow (Heavy)|WEAPON:Crossbow (Light)]
+WEAPONPROF:[WEAPON:Cutlass|WEAPON:Dagger|WEAPON:Dagger (Punching)|WEAPON:Dart|WEAPON:Dart Thruster|WEAPON:Darts (Barbed)|WEAPON:Falchion|WEAPON:Flail|WEAPON:Flail (Heavy)|WEAPON:Gauntlet]
+WEAPONPROF:[WEAPON:Gauntlet (Spiked)|WEAPON:Glaive|WEAPON:Goblin Stick|WEAPON:Grapple|WEAPON:Greataxe|WEAPON:Greatclub|WEAPON:Greatsword|WEAPON:Guisarme|WEAPON:Halberd|WEAPON:Hammer (Light)]
+WEAPONPROF:[WEAPON:Handaxe|WEAPON:Ice Axe|WEAPON:Javelin|WEAPON:Katana|WEAPON:Kukri|WEAPON:Lance|WEAPON:Lance (Flight)|WEAPON:Lance (Heavy)|WEAPON:Longbow|WEAPON:Longspear]
+WEAPONPROF:[WEAPON:Longsword|WEAPON:Mace (Heavy)|WEAPON:Mace (Light)|WEAPON:Maul|WEAPON:Morningstar|WEAPON:Pick (Dire)|WEAPON:Pick (Heavy)|WEAPON:Pick (Light)|WEAPON:Quarterstaff|WEAPON:Ranged Spell]
+WEAPONPROF:[WEAPON:Ranseur|WEAPON:Rapier|WEAPON:Saber|WEAPON:Sap|WEAPON:Scimitar|WEAPON:Scythe|WEAPON:Shieldbash|WEAPON:Shortbow|WEAPON:Shortspear|WEAPON:Sickle]
+WEAPONPROF:[WEAPON:Sling|WEAPON:Spear|WEAPON:Spells (Ray)|WEAPON:Spells (Touch)|WEAPON:Spiked Armor|WEAPON:Strike (Unarmed)|WEAPON:Sword (Bastard)|WEAPON:Sword (Cutlass)|WEAPON:Sword (Saber)|WEAPON:Sword (Short)]
+WEAPONPROF:[WEAPON:Trident|WEAPON:Truncheon|WEAPON:Unarmed Strike|WEAPON:Wakizashi|WEAPON:Warhammer|WEAPON:Warmace]
+
+# Character Equipment
+MONEY:6.00
+EQUIPNAME:Angelar's Skin|OUTPUTORDER:7|COST:100|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Aventurine|OUTPUTORDER:8|COST:50|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Breastplate +1 (SpellObject)|OUTPUTORDER:3|COST:1350.0|WT:30.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Breastplate|DATA:NAME=Breastplate +1 (SpellObject)$EQMOD=STEEL.PLUS1A.ADDTYPE&pipe;SpellObject]
+EQUIPNAME:Explorer's Outfit|OUTPUTORDER:4|COST:10|WT:8.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Fluorspar|OUTPUTORDER:9|COST:10|WT:0.0|QUANTITY:2.0|NOTE:
+EQUIPNAME:Light Metal Shield|OUTPUTORDER:11|COST:9.0|WT:6.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Shield (Light/Metal)|DATA:NAME=Light Metal Shield$KEY=Shield (Light/Metal)$EQMOD=STEEL]
+EQUIPNAME:Longbow, Composite +1 (+2)|OUTPUTORDER:2|COST:2600.0|WT:3.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Longbow (Composite)|DATA:NAME=Longbow, Composite +1 (+2)$KEY=Longbow +1 (Composite/+2)$EQMOD=WOOD.BOWSTR&pipe;+2.PLUS1W]
+EQUIPNAME:Masterwork Longsword|OUTPUTORDER:10|COST:315.0|WT:4.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Longsword|DATA:NAME=Masterwork Longsword$EQMOD=STEEL.Masterwork (Weapon)]
+EQUIPNAME:Potion (Cure Moderate Wounds)|OUTPUTORDER:6|COST:300|WT:0.0|QUANTITY:2.0|NOTE:
+EQUIPNAME:Potion (Darkvision)|OUTPUTORDER:5|COST:300|WT:0.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Potion (Darkness)|DATA:NAME=Potion (Darkvision)$KEY=Potion (Darkness)]
+EQUIPNAME:Ring of Protection +1|OUTPUTORDER:1|COST:2000|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPSET:Insieme di default|ID:0.1|USETEMPMODS:Y
+EQUIPSET:Body|ID:0.1.02|VALUE:Breastplate +1 (SpellObject)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Clothing|ID:0.1.03|VALUE:Explorer's Outfit|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Fingers|ID:0.1.04|VALUE:Ring of Protection +1|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.05|VALUE:Masterwork Longsword|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.07|VALUE:Potion (Darkvision)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.08|VALUE:Potion (Cure Moderate Wounds)|QUANTITY:2.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.09|VALUE:Light Metal Shield|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Both Hands|ID:0.1.10|VALUE:Longbow, Composite +1 (+2)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.11|VALUE:Angelar's Skin|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.12|VALUE:Aventurine|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.13|VALUE:Fluorspar|QUANTITY:2.0|USETEMPMODS:Y
+CALCEQUIPSET:0.1
+
+# Temporary Bonuses
+
+# EquipSet Temp Bonuses
+
+# Character Deity/Domain
+
+# Character Spells Information
+
+# Character Description/Bio/History
+CHARACTERBIO:
+CHARACTERDESC:
+CHARACTERCOMP:
+CHARACTERASSET:
+CHARACTERMAGIC:
+CHARACTERDMNOTES:
+
+# Kits
+KIT:Extra gold
+
+# Character Master/Follower
+
+# Character Notes Tab
+
+# Age Set Selections
+AGESET:0:0:0:1:0:0:0:0:0:0
+
+# Campaign History
+
+# Suppressed Biography Fields
+SUPPRESSBIOFIELDS:
+

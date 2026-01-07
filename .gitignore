@@ -264,3 +264,16 @@ Thumbs.db
 *.vob
 *.wmv
 *.webm
+*.jpeg
+*.jpg
+*.gif
+*.bmp
+*.tiff
+*.tif
+*.ico
+*.psd
+
+
+#Pdf_da_estrarre
+Script/
+

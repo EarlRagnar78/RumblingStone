@@ -1,0 +1,193 @@
+PCGVERSION:2.0
+
+# System Information
+CAMPAIGN:Monster Manual III|CAMPAIGN:Spellbook Archive|CAMPAIGN:The Mind's Eye|CAMPAIGN:Fey Feature|CAMPAIGN:Magic of Faerun|CAMPAIGN:Monster Compendium - Monsters of Faerun|CAMPAIGN:Races of the Dragon|CAMPAIGN:3.5e ~ Book of Vile Darkness|CAMPAIGN:Dragons of Faerun - Web Enhancement - City of Wyrmshadows|CAMPAIGN:Fiend Folio|CAMPAIGN:Fiendish Codex II|CAMPAIGN:Dungeon Master's Guide II|CAMPAIGN:Complete Adventurer|CAMPAIGN:Complete Arcane|CAMPAIGN:Complete Divine|CAMPAIGN:Complete Warrior|CAMPAIGN:Drow of the Underdark|CAMPAIGN:Expanded Psionics Handbook|CAMPAIGN:Complete Scoundrel|CAMPAIGN:Faiths and Pantheons|CAMPAIGN:Player's Guide to Faerun|CAMPAIGN:Races of Faerun (35e)|CAMPAIGN:Shining South|CAMPAIGN:Underdark|CAMPAIGN:Frostburn|CAMPAIGN:3.5e ~ Heroes of Horror|CAMPAIGN:Libris Mortis|CAMPAIGN:Lords of Madness|CAMPAIGN:Magic Item Compendium|CAMPAIGN:Monster Manual II|CAMPAIGN:Player's Handbook II|CAMPAIGN:Races of Destiny|CAMPAIGN:Races of Stone|CAMPAIGN:Races of the Wild|CAMPAIGN:Sandstorm|CAMPAIGN:Savage Species|CAMPAIGN:Spell Compendium|CAMPAIGN:Champions of Ruin|CAMPAIGN:Champions of Valor|CAMPAIGN:Epic Level Handbook|CAMPAIGN:Draconomicon|CAMPAIGN:Book of Exalted Deeds|CAMPAIGN:City of Splendors: Waterdeep|CAMPAIGN:Lost Empires of Faerun|CAMPAIGN:Complete Mage|CAMPAIGN:Stormwrack|CAMPAIGN:Arms and Equipment Guide|CAMPAIGN:Dungeons & Dragons - Core Books
+VERSION:6.08.00 RC4
+ROLLMETHOD:2|EXPRESSION:high level
+PURCHASEPOINTS:Y|TYPE:high level
+CHARACTERTYPE:PC
+PREVIEWSHEET:Standard.htm.ftl
+POOLPOINTS:15
+POOLPOINTSAVAIL:25
+GAMEMODE:35e
+TABLABEL:0
+AUTOSPELLS:Y
+USEHIGHERKNOWN:N
+USEHIGHERPREPPED:N
+LOADCOMPANIONS:N
+USETEMPMODS:Y
+AUTOSORTGEAR:Y
+SKILLSOUTPUTORDER:0
+SKILLFILTER:2
+IGNORECOST:N
+ALLOWDEBT:N
+AUTORESIZEGEAR:Y
+
+# Character Bio
+CHARACTERNAME:hobgoblin veterans 6 liv
+TABNAME:
+PLAYERNAME:
+HEIGHT:0
+WEIGHT:0
+AGE:0
+GENDER:Male
+HANDED:Right
+SKINCOLOR:
+EYECOLOR:
+HAIRCOLOR:
+HAIRSTYLE:
+LOCATION:
+CITY:
+BIRTHDAY:
+BIRTHPLACE:
+PERSONALITYTRAIT1:
+PERSONALITYTRAIT2:
+SPEECHPATTERN:
+PHOBIAS:
+INTERESTS:
+CATCHPHRASE:
+PORTRAIT:
+
+# Character Attributes
+STAT:STR|SCORE:14
+STAT:DEX|SCORE:11
+STAT:CON|SCORE:12
+STAT:INT|SCORE:10
+STAT:WIS|SCORE:9
+STAT:CHA|SCORE:8
+ALIGN:LE
+RACE:Hobgoblin
+
+# Character Class(es)
+CLASS:Warrior|LEVEL:6|SKILLPOOL:0|SPELLBASE:None|CANCASTPERDAY:
+CLASSABILITIESLEVEL:Warrior=1|HITPOINTS:8|SKILLSGAINED:8|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Warrior=2|HITPOINTS:5|SKILLSGAINED:2|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Warrior=3|HITPOINTS:4|SKILLSGAINED:2|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Warrior=4|HITPOINTS:5|PRESTAT:STR=1|SKILLSGAINED:2|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Warrior=5|HITPOINTS:4|SKILLSGAINED:2|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Warrior=6|HITPOINTS:5|SKILLSGAINED:2|SKILLSREMAINING:0
+
+# Character Experience
+EXPERIENCE:21000
+EXPERIENCETABLE:Default
+
+# Character Templates
+TEMPLATESAPPLIED:[NAME:Base Race Type]
+TEMPLATESAPPLIED:[NAME:First Level|APPLIEDTO:First Level ~ Not Listed]
+TEMPLATESAPPLIED:[NAME:Goblinoid Region ~ Earthfast Mountains Region]
+TEMPLATESAPPLIED:[NAME:First Level ~ Not Listed|CHOSENTEMPLATE:[NAME:Funds - None]]
+TEMPLATESAPPLIED:[NAME:Funds - None]
+
+# Character Region
+REGION:The North
+
+# Character Skills
+SKILL:Appraise|OUTPUTORDER:1|
+SKILL:Balance|OUTPUTORDER:2|
+SKILL:Bluff|OUTPUTORDER:3|
+SKILL:Climb|OUTPUTORDER:4|
+SKILL:Concentration|OUTPUTORDER:5|
+SKILL:Concentration (Cast defensively)|OUTPUTORDER:6|
+SKILL:Control Shape|OUTPUTORDER:7|
+SKILL:Craft (Untrained)|OUTPUTORDER:8|
+SKILL:Diplomacy|OUTPUTORDER:9|
+SKILL:Diplomacy (Red Dragons)|OUTPUTORDER:10|
+SKILL:Disguise|OUTPUTORDER:11|
+SKILL:Escape Artist|OUTPUTORDER:12|
+SKILL:Forgery|OUTPUTORDER:13|
+SKILL:Gather Information|OUTPUTORDER:14|
+SKILL:Handle Animal|OUTPUTORDER:15|CLASSBOUGHT:[CLASS:Warrior|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Heal|OUTPUTORDER:16|
+SKILL:Hide|OUTPUTORDER:17|CLASSBOUGHT:[CLASS:Warrior|RANKS:1.0|COST:2|CLASSSKILL:N]
+SKILL:Hide (Forested Areas)|OUTPUTORDER:18|
+SKILL:Intimidate|OUTPUTORDER:19|CLASSBOUGHT:[CLASS:Warrior|RANKS:3.0|COST:1|CLASSSKILL:Y]
+SKILL:Jump|OUTPUTORDER:20|
+SKILL:Knowledge (Untrained)|OUTPUTORDER:21|
+SKILL:Listen|OUTPUTORDER:22|CLASSBOUGHT:[CLASS:Warrior|RANKS:2.0|COST:2|CLASSSKILL:N]
+SKILL:Literacy|OUTPUTORDER:23|
+SKILL:Move Silently|OUTPUTORDER:24|CLASSBOUGHT:[CLASS:Warrior|RANKS:2.0|COST:2|CLASSSKILL:N]
+SKILL:Move Silently (Forested Areas)|OUTPUTORDER:25|
+SKILL:Ride|OUTPUTORDER:26|
+SKILL:Search|OUTPUTORDER:27|
+SKILL:Sense Motive|OUTPUTORDER:28|
+SKILL:Spot|OUTPUTORDER:29|CLASSBOUGHT:[CLASS:Warrior|RANKS:2.0|COST:2|CLASSSKILL:N]
+SKILL:Survival|OUTPUTORDER:30|
+SKILL:Swim|OUTPUTORDER:31|
+SKILL:Use Rope|OUTPUTORDER:32|
+
+# Character Languages
+LANGUAGE:Common|LANGUAGE:Goblin
+
+# Character Feats
+FEATPOOL:0.0
+
+# Character Abilities
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Alertness|TYPE:General.ShadowThief|DESC:You have finely tuned senses.
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Power Critical|APPLIEDTO:|TYPE:General.Fighter
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Weapon Focus|APPLIEDTO:Longsword|TYPE:General.Fighter.ViolentKnowledge.DivineChampion.ShadowThief.Dragonrider|DESC:You are especially good at using this specified weapon.&pipe;!PRERULE&colon;1,DisplayFullFeat|DESC:Choose one type of weapon, such as greataxe. You can also choose unarmed strike or grapple (or ray, if you are a spellcaster) as your weapon for purposes of this feat. You are especially good at using this weapon. (If you have chosen ray, you are especially good with rays, such as the one produced by the ray of frost spell.)&pipe;PRERULE&colon;1,DisplayFullFeat
+USERPOOL:FEAT|POOLPOINTS:0.0
+ABILITY:First Level Feat|TYPE:NORMAL|CATEGORY:Internal|KEY:Select First Level Feat|APPLIEDTO:CATEGORY=FEAT&pipe;+1 Feat to feat pool&pipe;|TYPE:FirstLevelFeatOnly|DESC:This will allow choices of First Level Only Feats the character would qualify for normally. The feat will be displayed on the export or preview only.
+USERPOOL:First Level Feat|POOLPOINTS:0.0
+ABILITY:Region|TYPE:NORMAL|CATEGORY:Regional|KEY:Goblinoid Region ~ Earthfast Mountains Region|TYPE:Region.FaerunRegion|DESC:Goblins, hobgoblins, and bugbears plague the Earthfast Mountains between the Vast and Damara.  &amp;nl; Favored Deities&colon; Hruggek, Maglubiyet
+USERPOOL:Region|POOLPOINTS:0.0
+
+# Character Weapon proficiencies
+WEAPONPROF:[WEAPON:Aspergillum (Heavy)|WEAPON:Axe (Throwing)|WEAPON:Bash|WEAPON:Battle Gauntlet|WEAPON:Battleaxe|WEAPON:Blowgun|WEAPON:Boulder|WEAPON:Club|WEAPON:Crossbow (Heavy)|WEAPON:Crossbow (Light)]
+WEAPONPROF:[WEAPON:Cutlass|WEAPON:Dagger|WEAPON:Dagger (Punching)|WEAPON:Dart|WEAPON:Dart Thruster|WEAPON:Falchion|WEAPON:Flail|WEAPON:Flail (Heavy)|WEAPON:Gauntlet|WEAPON:Gauntlet (Spiked)]
+WEAPONPROF:[WEAPON:Glaive|WEAPON:Goblin Stick|WEAPON:Grapple|WEAPON:Greataxe|WEAPON:Greatclub|WEAPON:Greatsword|WEAPON:Guisarme|WEAPON:Halberd|WEAPON:Hammer (Light)|WEAPON:Handaxe]
+WEAPONPROF:[WEAPON:Ice Axe|WEAPON:Javelin|WEAPON:Katana|WEAPON:Kukri|WEAPON:Lance|WEAPON:Lance (Flight)|WEAPON:Longbow|WEAPON:Longspear|WEAPON:Longsword|WEAPON:Lucerne Hammer]
+WEAPONPROF:[WEAPON:Mace (Heavy)|WEAPON:Mace (Light)|WEAPON:Maul|WEAPON:Morningstar|WEAPON:Pick (Dire)|WEAPON:Pick (Heavy)|WEAPON:Pick (Light)|WEAPON:Quarterstaff|WEAPON:Ranged Spell|WEAPON:Ranseur]
+WEAPONPROF:[WEAPON:Rapier|WEAPON:Saber|WEAPON:Sap|WEAPON:Scimitar|WEAPON:Scythe|WEAPON:Shieldbash|WEAPON:Shortbow|WEAPON:Shortspear|WEAPON:Sickle|WEAPON:Sling]
+WEAPONPROF:[WEAPON:Spear|WEAPON:Spells (Ray)|WEAPON:Spells (Touch)|WEAPON:Spiked Armor|WEAPON:Strike (Unarmed)|WEAPON:Sword (Bastard)|WEAPON:Sword (Cutlass)|WEAPON:Sword (Saber)|WEAPON:Sword (Short)|WEAPON:Trident]
+WEAPONPROF:[WEAPON:Truncheon|WEAPON:Unarmed Strike|WEAPON:Wakizashi|WEAPON:Warhammer|WEAPON:Warmace]
+
+# Character Equipment
+MONEY:15.00
+EQUIPNAME:Cloak of Resistance +1|OUTPUTORDER:4|COST:1000|WT:1.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Explorer's Outfit|OUTPUTORDER:3|COST:0|WT:8.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Explorer's Outfit|DATA:NAME=Explorer's Outfit$KEY=Explorer_s Outfit$COSTMOD=-10]
+EQUIPNAME:Heavy Metal Shield +1|OUTPUTORDER:2|COST:1170.0|WT:15.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Shield (Heavy/Metal)|DATA:NAME=Heavy Metal Shield +1$KEY=Shield +1 (Heavy/Metal)$EQMOD=STEEL.PLUS1S]
+EQUIPNAME:Longbow, Composite (+1)|OUTPUTORDER:7|COST:200.0|WT:3.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Longbow (Composite)|DATA:NAME=Longbow, Composite (+1)$KEY=Longbow (Composite/+1)$EQMOD=WOOD.BOWSTR&pipe;+1]
+EQUIPNAME:Masterwork Chainmail|OUTPUTORDER:5|COST:300.0|WT:40.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Chainmail|DATA:NAME=Masterwork Chainmail$EQMOD=STEEL.Masterwork (Armor)]
+EQUIPNAME:Masterwork Longsword|OUTPUTORDER:1|COST:315.0|WT:4.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Longsword|DATA:NAME=Masterwork Longsword$EQMOD=STEEL.Masterwork (Weapon)]
+EQUIPNAME:Potion (Cure Moderate Wounds)|OUTPUTORDER:6|COST:300|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPSET:Default Set|ID:0.1|USETEMPMODS:Y
+EQUIPSET:Clothing|ID:0.1.01|VALUE:Explorer's Outfit|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Primary Hand|ID:0.1.02|VALUE:Masterwork Longsword|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Shoulders|ID:0.1.03|VALUE:Cloak of Resistance +1|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Body|ID:0.1.04|VALUE:Masterwork Chainmail|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Secondary Hand|ID:0.1.05|VALUE:Heavy Metal Shield +1|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.06|VALUE:Longbow, Composite (+1)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.07|VALUE:Potion (Cure Moderate Wounds)|QUANTITY:1.0|USETEMPMODS:Y
+CALCEQUIPSET:0.1
+
+# Temporary Bonuses
+
+# EquipSet Temp Bonuses
+
+# Character Deity/Domain
+
+# Character Spells Information
+
+# Character Description/Bio/History
+CHARACTERBIO:
+CHARACTERDESC:
+CHARACTERCOMP:
+CHARACTERASSET:
+CHARACTERMAGIC:
+CHARACTERDMNOTES:
+
+# Kits
+KIT:Extra gold
+
+# Character Master/Follower
+
+# Character Notes Tab
+
+# Age Set Selections
+AGESET:0:0:0:0:0:0:0:0:0:0
+
+# Campaign History
+
+# Suppressed Biography Fields
+SUPPRESSBIOFIELDS:
+

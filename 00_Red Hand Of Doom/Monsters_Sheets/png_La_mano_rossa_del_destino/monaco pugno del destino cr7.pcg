@@ -1,0 +1,164 @@
+PCGVERSION:2.0
+
+# System Information
+CAMPAIGN:Faiths and Pantheons|CAMPAIGN:Drow of the Underdark|CAMPAIGN:Magic Item Compendium|CAMPAIGN:Fiendish Codex II|CAMPAIGN:Cityscape (WotC)|CAMPAIGN:Complete Champion|CAMPAIGN:Complete Mage|CAMPAIGN:Stormwrack|CAMPAIGN:Dragon Magic|CAMPAIGN:Player's Handbook II|CAMPAIGN:Tome of Magic|CAMPAIGN:Races of the Dragon|CAMPAIGN:Spell Compendium|CAMPAIGN:Champions of Valor|CAMPAIGN:City of Splendors: Waterdeep|CAMPAIGN:Champions of Ruin|CAMPAIGN:Sandstorm|CAMPAIGN:Lost Empires of Faerun|CAMPAIGN:Complete Adventurer|CAMPAIGN:Races of Destiny|CAMPAIGN:Complete Arcane|CAMPAIGN:Draconomicon|CAMPAIGN:Shining South|CAMPAIGN:Libris Mortis|CAMPAIGN:Frostburn|CAMPAIGN:Monster Manual III|CAMPAIGN:Races of Stone|CAMPAIGN:Races of the Wild|CAMPAIGN:Complete Divine|CAMPAIGN:Player's Guide to Faerun|CAMPAIGN:Races of Faerun (35e)|CAMPAIGN:Races of Faerun (3e)|CAMPAIGN:Complete Warrior|CAMPAIGN:Dungeon Master's Guide II|CAMPAIGN:Fiend Folio|CAMPAIGN:3.5e ~ Heroes of Horror|CAMPAIGN:Underdark|CAMPAIGN:Book of Exalted Deeds|CAMPAIGN:Unapproachable East|CAMPAIGN:3.5e ~ Book of Vile Darkness|CAMPAIGN:Magic of Faerun|CAMPAIGN:Monster Compendium - Monsters of Faerun|CAMPAIGN:Dungeonscape|CAMPAIGN:Dungeons & Dragons - Core Books
+VERSION:6.08.00 RC8
+ROLLMETHOD:0|EXPRESSION:0
+PURCHASEPOINTS:N
+CHARACTERTYPE:PC
+PREVIEWSHEET:Standard.htm.ftl
+POOLPOINTS:0
+POOLPOINTSAVAIL:-1
+GAMEMODE:35e
+TABLABEL:0
+AUTOSPELLS:Y
+USEHIGHERKNOWN:N
+USEHIGHERPREPPED:N
+LOADCOMPANIONS:N
+USETEMPMODS:Y
+AUTOSORTGEAR:Y
+SKILLSOUTPUTORDER:0
+SKILLFILTER:2
+IGNORECOST:N
+ALLOWDEBT:N
+AUTORESIZEGEAR:Y
+
+# Character Bio
+CHARACTERNAME:monaco pugno del destino cr7
+TABNAME:
+PLAYERNAME:
+HEIGHT:0
+WEIGHT:0
+AGE:0
+GENDER:Male
+HANDED:Right
+SKINCOLOR:
+EYECOLOR:
+HAIRCOLOR:
+HAIRSTYLE:
+LOCATION:
+CITY:
+BIRTHDAY:
+BIRTHPLACE:
+PERSONALITYTRAIT1:
+PERSONALITYTRAIT2:
+SPEECHPATTERN:
+PHOBIAS:
+INTERESTS:
+CATCHPHRASE:
+PORTRAIT:
+
+# Character Attributes
+STAT:STR|SCORE:16
+STAT:DEX|SCORE:12
+STAT:CON|SCORE:13
+STAT:INT|SCORE:10
+STAT:WIS|SCORE:14
+STAT:CHA|SCORE:8
+ALIGN:LE
+RACE:Hobgoblin
+
+# Character Class(es)
+CLASS:Monk|LEVEL:7|SKILLPOOL:40|SPELLBASE:None|CANCASTPERDAY:
+CLASSABILITIESLEVEL:Monk=1|HITPOINTS:8|SKILLSGAINED:16|SKILLSREMAINING:16
+CLASSABILITIESLEVEL:Monk=2|HITPOINTS:5|SKILLSGAINED:4|SKILLSREMAINING:4
+CLASSABILITIESLEVEL:Monk=3|HITPOINTS:5|SKILLSGAINED:4|SKILLSREMAINING:4
+CLASSABILITIESLEVEL:Monk=4|HITPOINTS:5|PRESTAT:STR=1|SKILLSGAINED:4|SKILLSREMAINING:4
+CLASSABILITIESLEVEL:Monk=5|HITPOINTS:5|SKILLSGAINED:4|SKILLSREMAINING:4
+CLASSABILITIESLEVEL:Monk=6|HITPOINTS:5|SKILLSGAINED:4|SKILLSREMAINING:4
+CLASSABILITIESLEVEL:Monk=7|HITPOINTS:5|SKILLSGAINED:4|SKILLSREMAINING:4
+
+# Character Experience
+EXPERIENCE:28000
+EXPERIENCETABLE:Default
+
+# Character Templates
+TEMPLATESAPPLIED:[NAME:Base Race Type]
+TEMPLATESAPPLIED:[NAME:First Level|APPLIEDTO:First Level ~ Monk]
+TEMPLATESAPPLIED:[NAME:First Level ~ Monk|CHOSENTEMPLATE:[NAME:Funds - NPC]]
+TEMPLATESAPPLIED:[NAME:Funds - NPC]
+
+# Character Region
+REGION:None
+
+# Character Skills
+
+# Character Languages
+LANGUAGE:Common|LANGUAGE:Goblin
+
+# Character Feats
+FEATPOOL:0.0
+
+# Character Abilities
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Dodge|TYPE:General.Fighter.ModifyAC.ViolentKnowledge|DESC:You are adept at dodging blows.
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Exotic Weapon Proficiency|APPLIEDTO:Chain (Spiked)|TYPE:General.Fighter.DivineChampion.ShadowThief.ViolentKnowledge|DESC:You understand how to use the specified type of exotic weapon in combat.&pipe;PREVAREQ&colon;DisplayFullFeat,1|DESC:Choose a type of exotic weapon, such as dire flail or shuriken (see Table 7-5&colon; Weapons, page 116, for a list of exotic weapons). You understand how to use that type of exotic weapon in combat.&pipe;PREVAREQ&colon;DisplayFullFeat,1
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Improved Grapple|TYPE:General.Fighter|DESC:You are skilled in martial arts that emphasize holds and throws.
+USERPOOL:FEAT|POOLPOINTS:0.0
+ABILITY:First Level Feat|TYPE:NORMAL|CATEGORY:Internal|KEY:Select First Level Feat|APPLIEDTO:CATEGORY=FEAT&pipe;+1 Feat to feat pool&pipe;|TYPE:FirstLevelFeatOnly|DESC:This will allow choices of First Level Only Feats the character would qualify for normally. The feat will be displayed on the export or preview only.
+USERPOOL:First Level Feat|POOLPOINTS:0.0
+ABILITY:Monk Feat LVL 1|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Monk Bonus Feat ~ Stunning Fist|TYPE:MonkBonusFeat.MonkBonusFeatLVL1
+USERPOOL:Monk Feat LVL 1|POOLPOINTS:0.0
+ABILITY:Monk Feat LVL 2|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Monk Bonus Feat ~ Combat Reflexes|TYPE:MonkBonusFeat.MonkBonusFeatLVL2
+USERPOOL:Monk Feat LVL 2|POOLPOINTS:0.0
+ABILITY:Monk Feat LVL 6|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Monk Bonus Feat ~ Improved Trip|TYPE:MonkBonusFeat.MonkBonusFeatLVL6
+USERPOOL:Monk Feat LVL 6|POOLPOINTS:0.0
+
+# Character Weapon proficiencies
+WEAPONPROF:[WEAPON:Aspergillum (Heavy)|WEAPON:Battle Gauntlet|WEAPON:Blowgun|WEAPON:Chain (Spiked)|WEAPON:Club|WEAPON:Crossbow (Heavy)|WEAPON:Crossbow (Light)|WEAPON:Dagger|WEAPON:Dagger (Punching)|WEAPON:Dart]
+WEAPONPROF:[WEAPON:Darts (Barbed)|WEAPON:Gauntlet|WEAPON:Gauntlet (Spiked)|WEAPON:Grapple|WEAPON:Handaxe|WEAPON:Javelin|WEAPON:Kama|WEAPON:Longspear|WEAPON:Mace (Heavy)|WEAPON:Mace (Light)]
+WEAPONPROF:[WEAPON:Morningstar|WEAPON:Nekode|WEAPON:Nunchaku|WEAPON:Quarterstaff|WEAPON:Ranged Spell|WEAPON:Sai|WEAPON:Shortspear|WEAPON:Shuriken|WEAPON:Siangham|WEAPON:Sickle]
+WEAPONPROF:[WEAPON:Sling|WEAPON:Spear|WEAPON:Spells (Ray)|WEAPON:Spells (Touch)|WEAPON:Steel Fins|WEAPON:Strike (Unarmed)|WEAPON:Unarmed Strike]
+
+# Character Equipment
+MONEY:0.00
+EQUIPNAME:Bracers of Armor +2|OUTPUTORDER:1|COST:4000|WT:1.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Coin (Gold)|OUTPUTORDER:5|COST:1|WT:0.02|QUANTITY:5.0|NOTE:
+EQUIPNAME:Coin (Platinum)|OUTPUTORDER:4|COST:10|WT:0.02|QUANTITY:7.0|NOTE:
+EQUIPNAME:Flurry of Blows|OUTPUTORDER:6|COST:0|WT:0.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Flurry of Blows|DATA:NAME=Flurry of Blows]
+EQUIPNAME:Masterwork Chain, Spiked|OUTPUTORDER:2|COST:325.0|WT:10.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Chain (Spiked)|DATA:NAME=Masterwork Chain, Spiked$KEY=Masterwork Chain (Spiked)$EQMOD=STEEL.Masterwork (Weapon)]
+EQUIPNAME:Potion (Cure Light Wounds)|OUTPUTORDER:0|COST:50|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Potion (Haste)|OUTPUTORDER:0|COST:750|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Ring of Protection +1|OUTPUTORDER:3|COST:2000|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPSET:Insieme di default|ID:0.1|USETEMPMODS:Y
+EQUIPSET:Arms|ID:0.1.02|VALUE:Bracers of Armor +2|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Both Hands|ID:0.1.03|VALUE:Masterwork Chain, Spiked|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Fingers|ID:0.1.04|VALUE:Ring of Protection +1|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.05|VALUE:Potion (Haste)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.06|VALUE:Potion (Cure Light Wounds)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.07|VALUE:Coin (Platinum)|QUANTITY:7.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.08|VALUE:Coin (Gold)|QUANTITY:5.0|USETEMPMODS:Y
+EQUIPSET:Carried|ID:0.1.1|VALUE:Flurry of Blows|QUANTITY:1.0|USETEMPMODS:Y
+CALCEQUIPSET:0.1
+
+# Temporary Bonuses
+TEMPBONUS:SPELL=Haste|TBTARGET:PC|TBBONUS:COMBAT&pipe;AC&pipe;1&pipe;TYPE=DODGE|TBBONUS:COMBAT&pipe;ATTACKS&pipe;1&pipe;TYPE=TEMPORARY|TBBONUS:COMBAT&pipe;TOHIT&pipe;1&pipe;TYPE=TEMPORARY|TBBONUS:POSTMOVEADD&pipe;TYPE.WALK,TYPE.FLY,TYPE.BURROW,TYPE.SWIM,TYPE.CLIMB&pipe;MIN(MOVEBASE,30)&pipe;TYPE=ENHANCEMENT|TBBONUS:SAVE&pipe;REFLEX&pipe;1&pipe;TYPE=DODGE
+
+# EquipSet Temp Bonuses
+
+# Character Deity/Domain
+DEITY:Tiamat|DEITYDOMAINS:[DOMAIN:Destruction|DOMAIN:Dragon|DOMAIN:Evil|DOMAIN:Greed|DOMAIN:Hatred|DOMAIN:Law|DOMAIN:Scalykind|DOMAIN:Trickery|DOMAIN:Tyranny]|ALIGNALLOW:|DEITYFAVWEAP:[WEAPON:Pick (Heavy)|WEAPON:Bite]|DEITYALIGN:LE
+
+# Character Spells Information
+
+# Character Description/Bio/History
+CHARACTERBIO:
+CHARACTERDESC:
+CHARACTERCOMP:
+CHARACTERASSET:
+CHARACTERMAGIC:
+CHARACTERDMNOTES:
+
+# Kits
+
+# Character Master/Follower
+
+# Character Notes Tab
+
+# Age Set Selections
+AGESET:0:0:0:0:0:0:0:0:0:0
+
+# Campaign History
+
+# Suppressed Biography Fields
+SUPPRESSBIOFIELDS:
+

@@ -1,0 +1,195 @@
+Understood! Here is the complete, final, and fully synthesized document for the *Corona di Adamantio*, incorporating all previous sections, refinements, Moradin interactions, and DM notes. This document is designed to be comprehensive for the DM while detailing the player's journey and choices.
+
+---
+
+# ⚒️ **Corona di Adamantio (Crown of Eternal Stone)**
+### *A Divine Artifact & Legacy Item of Moradin, Father of Forges*
+
+**Type:** Artifact (Legacy Item)
+**Aura:** Overwhelming Abjuration, Conjuration, Transmutation, and Divination
+**Caster Level:** 20th
+**Weight:** 3 lb
+**Material:** Pure Adamantine, embedded with crystalline living stone and the glowing dust of the shattered Gem of Time
+**Alignment:** Lawful Good (Moradin’s Forge)
+**Intelligence:** Dormant until united with *Aegis Fang*; thereafter becomes sentient (Int 16, Wis 17, Cha 18, Ego 20).
+**Intended Bearer:** Dwarven or Moradin-Faithful Hero
+
+---
+
+## ✦ **Legend and Purpose**
+
+Forged in the Primeval Age from the very heart of the world, the *Corona di Adamantio* was Moradin’s gift to his High King of Stone, a conduit for his chosen to reshape not just stone, but fate itself. Lost for ages in a deep dwarven shrine corrupted by drow and illithid, it stirs once more as orcs, drow, and abominations unite to annihilate the surface clans.
+
+The desperate war on the surface **has already begun** while the bearer of *Aegis Fang* delves into the Underdark. Through vivid dreams and spiritual projections granted by *Aegis Fang*, Moradin links the hero's spirit across space and time. These experiences serve as ominous foreshadowing, allowing fleeting moments of intervention in the battle, and preparing the hero's soul for the ultimate act: to wield the *Corona di Adamantio* to rewrite history and save dwarvenkind from extinction.
+
+---
+
+## ⚙️ **Requirements**
+
+*   **Race:** Dwarf or Half-Dwarf.
+*   **Base Attack Bonus (BAB):** +5.
+*   **Divine Connection:** Ability to cast at least one Divine spell (Divination school preferred) or possess the Divine Grace class feature.
+*   **Feat:** True Believer (Moradin).
+*   **Ritual Completion:** Must successfully perform all *Legacy Rituals of Stone*.
+*   **Faith Trial:** Must pledge to Moradin’s Forge Oath: “I will forge, defend, and remember.”
+*   **Synergy:** Owning *Aegis Fang* removes XP and permanent ability score loss costs when using the crown's temporal or divine powers.
+
+---
+
+## 🔨 **Legacy Rituals of Stone**
+
+These four rituals are central to awakening the *Corona di Adamantio*'s full power, deepening Moradin's trust, and preparing the hero for the ultimate temporal intervention. They unfold naturally as part of the campaign’s Underdark-to-surface story arc. Each ritual requires a significant act, a personal or material cost, and unlocks specific powers of the crown and its integrated gems.
+
+| **Ritual Name**                       | **Quest Requirement (Player Experience)**                                                                                                                                                                                                                                                               | **Cost / Challenge**                                                                                                                                                                                                                                                                          | **Powers Unlocked**                                                                                                                                                                                           |
+| :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Forge’s Defense (First Dream)**  | During rest, *Aegis Fang* sends a vivid dream-vision of the surface siege. The bearer's spirit projects into the battle for 10 rounds (as *Greater Projection*), tasked with defeating or severely wounding a key enemy warlord or commander (CR +2 villain).                                            | **Sacrifice:** 2,500 gp offering of crafted silver or weaponry upon awakening. The projection leaves a physical "Forge Mark" on the bearer's arm, a mark of fate.                                                                                                                              | **Crown Power:** *Stone’s Awareness*. **Passive:** *Crown of Protection +2* (deflection bonus to AC). This marks the crown's initial awakening.                                                          |
+| **2. Trial of the Deep Hall**         | Deep in the Underdark, the bearer must free or defeat a cursed dwarven favored soul enslaved by drow/illithid cultists in the corrupted shrine where the crown is held. This typically involves confronting and overcoming the cultists to retrieve the artifact.                                    | **Sacrifice:** 12,500 gp in gemstones or one week spent forging prayers and a masterwork offering.                                                                                                                                                                                                           | **Crown Power:** *Moradin’s Insight*. **Gem Attunement:** Attunes the **Gem of Immutable Time**, allowing it to be used.                                                                             |
+| **3. Anvil of the World**             | Reach the deepest Earth Node, withstand its crushing gravity and elemental energies, commune with Moradin's echo for three days, and accept a severe divine price (e.g., permanent ability score loss, accelerated aging, or sacrifice of a powerful relic).                                     | **Sacrifice:** 40,500 gp offering in relic-crafting or the chosen divine cost. *(DM Note: Moradin will appear here to negotiate/guide the sacrifice. See "Moradin's Interventions" section below.)*                                                                                              | **Crown Powers:** *Adamantine Will*, *Mantle of Stone and Spirit*. **Gem Attunement:** Full attunement of all three Divine Gems, enabling the *Aura of the Eternal Forge* to manifest when truly needed. *Aegis Fang*'s dream projections cease, the crown now holds the full temporal link. |
+| **4. Siege of the Eternal Forge (Final Ritual)** | After acquiring the *Corona di Adamantio* and fully attuning to all Gems, the hero activates the **Gem of Immutable Time** to return to the surface at the precise moment the dwarven siege began (as foreseen in earlier visions). The hero must then lead and defend the dwarven clans until sunrise. | **Cost:** Temporal strain (ages 1d10 years permanently). **Divine Price:** Moradin’s Sacrifice if non-believers are brought through time. The **Gem of Immutable Time is permanently destroyed** upon use for this ritual.                                                                    | **Final Power:** *Aura of the Eternal Forge*. **Artifact Completion:** Permanently empowers *Aegis Fang* and seals dwarven victory. The bearer is recognized as **Forgemind of Moradin**.                           |
+
+---
+
+## 🪔 **Interlude Power (During Underdark Questing, Before Final Ritual)**
+
+Before the *Corona di Adamantio* is fully activated for time travel, *Aegis Fang* provides critical foresight and limited intervention. This power is active between Ritual 1 and Ritual 3.
+
+### **Aegis Fang’s Dream Projection (Su)**
+*   **Frequency:** Once per week (until Ritual 3 completed).
+*   **Effect:** Functions as *Project Image* (CL 20) with these key differences:
+    *   **Range:** Cross-planar (Underdark to surface, or other divinely significant locations).
+    *   **Duration:** 1 minute per level (max 10 rounds at CL 20).
+    *   **Interaction:** The hero’s actions and damage apply spiritually; any damage dealt by the projection appears as glowing, divine fire on the battlefield, causing real harm. This allows the hero to wound or defeat a key villain or rally a small group of defenders, even if temporarily.
+*   **Forge Mark:** Upon returning from a dream projection, a glowing **Forge Mark** appears on the player’s arm, fading over 24 hours. This mark is proof that fate awaits correction and serves as a physical reminder of the impending doom and the hero's ultimate task. These encounters serve as omens and story foreshadowing, revealing what must be undone when the *Gem of Time* is truly used.
+
+---
+
+## 💎 **Corona di Adamantio — Unified Powers (by Legacy Progression)**
+
+*(All powers are considered extraordinary (Ex) or supernatural (Su) unless specified as spell-like (Sp))*
+
+| **Level** | **Ability**                                  | **Description**                                                                                                                                                                                                                                                        |
+| :-------- | :------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 5th       | **Stone’s Awareness (Su)**                   | Grants *Comprehend Languages* (at will) and *Detect Secret Doors* (at will). While touching natural ground or stone, gain a +1 morale bonus on attack and damage rolls and a +2 insight bonus to AC.                                                                        |
+| 6th       | **Crown of Protection +2 (Ex)**              | Grants a +2 deflection bonus to AC while worn. (This bonus increases to +3 after the "Siege of the Eternal Forge" is completed).                                                                                                                                         |
+| 13th      | **Moradin’s Insight (Su)**                   | Once per day, the bearer may use *True Seeing* (Sp) for 10 minutes. Additionally, gain a +4 insight bonus to all Craft (Smithing) checks. When used underground, visions appear through crystal veins or molten rock, revealing hidden truths of stone and faith.           |
+| 15th      | **Adamantine Will (Su)**                     | While touching natural ground or stone, the bearer gains immunity to all charm and compulsion effects, and a +4 racial bonus on saves vs. mind-affecting effects.                                                                                                            |
+| 17th      | **Mantle of Stone and Spirit (Su)**          | Grants a continuous *Mind Blank* effect (Su) while the crown is worn. If used within an Earth Node, allows a *Commune with Moradin* effect (Sp) once per month (as spell, 3 questions, no material component).                                                          |
+| 20th      | **Aura of the Eternal Forge (Final Power)**  | (See below for detailed description.)                                                                                                                                                                                                                                  |
+
+---
+
+## 🔱 **The Three Divine Gems (Integrated)**
+
+These sacred gems are integrated into the crown, each representing a unique aspect of Moradin's divine power, granted only after the appropriate rituals.
+
+### 1️⃣ **Gem of Immutable Time (Topaz of the Eternal Forge)**
+**Power (Su, 1/month, Earth Node only):**
+When within a living Earth Node, the bearer may invoke Moradin’s power to **Rewind Time and Space**. This transports the wearer and up to 8 willing creatures through the node’s essence to a past "forgepoint" predetermined by divine intent – specifically, the moment before the fall of a dwarven clan or forge. Time reverts fully, and travelers appear physically in that era. This temporal gate opens only within natural earth or stone (an Earth Node).
+
+*   **Divine Conditions for Allies (Moradin's Bargain):**
+    *   Activation is only possible *after* the bearer has witnessed at least one vision through *Aegis Fang’s Dream Projection*.
+    *   Moradin’s voice manifests through the Earth Node, asking: *"You have seen what was lost. Will you forge anew with hammer and heart alike? What will you sacrifice to save your kin, and those you deem worthy, from oblivion?"*
+    *   To bring **non-Moradin faithful companions**, the bearer must intercede with Moradin through fervent prayer. At this point, **Moradin directly manifests** (as a deep, booming voice echoing from the stone, or a vision of a colossal magma golem, or a shimmering spiritual forge). He will ask the bearer, in a moment where time seems to stand still for others:
+        > *"Child of the deep, your allies carry not the mark of my faith. To bring them through the crucible of time, a balance must be struck. What will you offer from your very being, or from the hoards you command, to prove their worth in this sacred task?"*
+    *   The bearer may offer one of the following:
+        *   Lose **1 permanent point of Constitution** (a deep, personal sacrifice of vitality).
+        *   Sacrifice a **dwarven relic or personal treasure** worth at least 5,000 gp (a tangible offering of value).
+        *   **Pledge a future service** to Moradin, defined in a mini-quest by the DM (e.g., "Recover the Lost Hammer of Thundarr," "Cleanse the Corrupted Spring of Glimmerdeep," "Establish a new dwarven outpost in blighted lands"). Moradin will accept if the pledge is sincere and significant.
+    *   If the sacrifice is not paid, unblessed companions must make a **Fortitude save DC 25** or suffer **minor petrification** (stone veins under the skin, movement –10 ft, –2 Dex) until cured by *Stone to Flesh*, *Greater Restoration*, or a *Heal* spell cast by a CL 15+ divine caster. This effect is noticeable but reversible, offering a consequence without being crippling.
+    *   Refusing to make a sacrifice or intercede bars activation for a month.
+*   **Costs:** The wielder ages **1d10 years permanently** per use.
+*   **Purpose:** The Gem is not for personal gain but solely to correct a great dwarven calamity or preserve a bloodline forged by Moradin. Its use in the "Siege of the Eternal Forge" is its primary divine purpose, consuming the gem in the process.
+
+### 2️⃣ **Gem of True Earth (Emerald of the Deep Core)**
+**Power (Sp, 1/week):**
+Channel the living heart of Toril to shape, mend, or defend dwarven lands. The user may choose one of the following upon activation (standard action):
+*   **Earth's Bastion:** Instantly raise a 30-ft-thick *Wall of Mountain* (as *Wall of Stone*, CL 20, up to 500 cubic feet). This wall can be shaped with up to two curves or angles.
+*   **Forge of Life:** Restore fertility to blighted mines or stone (acts as *Hallow* or *Consecrate* for 24 hours, but permanent on natural stone, 100 ft radius, requires 1 hour of channeling).
+*   **Mountain's Judgment:** Call forth a controlled *Localized Earthquake* (Sp) (as spell, CL 20, 50-ft radius, centered within sight, Reflex DC 22 for ½ damage and to avoid falling) that spares dwarves and dwarven architecture within its effect.
+**Cost:** Must bury a gem or masterwork crafted weapon worth at least 1,000 gp in the soil as an offering to the earth.
+
+### 3️⃣ **Gem of Dwarven Might (Ruby of the Soulforge)**
+**Power (Su, 1/week):**
+As a swift action, envelops the wearer and all allies within 30 ft in divine forge-light for 10 rounds:
+*   **Bearer's Might:** The bearer gains *Righteous Might* (as spell, CL 20) and *Stoneskin* (DR 10/adamantine, CL 20).
+*   **Allied Courage:** All allies within 30 ft gain *Stoneskin* (DR 10/adamantine, 10/min per level) and *Inspiring Courage* (as bardic music, providing a +4 morale bonus to attack rolls, saves vs. fear, and weapon damage rolls).
+**Cost:** The bearer suffers –2 Strength for 24 hours (divine exhaustion) due to channeling such immense power.
+
+---
+
+## 🌋 **Aura of the Eternal Forge (Final Power)**
+
+This ultimate power is the culmination of Moradin's blessing, activated during the "Siege of the Eternal Forge" ritual. Its power, tied to the **Gem of Immutable Time**, is exhausted in this singular, epic act of salvation. The crown retains its other established powers and the synergy with *Aegis Fang*, but the "Aura of the Eternal Forge" as a recurring ability does not persist beyond this final ritual.
+
+**Activation:** Automatically upon arrival at the start of the final siege battle (when the Gem of Immutable Time is activated for the *final time*).
+*   **Healing & Empowerment (Self & Time-Travelers):** The bearer and all allies who traveled through time with the crown are instantly **healed to full hit points**. They also gain *Righteous Might* (CL 20) and *Protection from Evil* (CL 20) for the duration.
+*   **Divine Empowerment (All Dwarves):** All dwarves within 100 ft gain:
+    *   *Righteous Might* (as spell, CL 20).
+    *   *Protection from Evil* (as spell, CL 20).
+    *   *Bless* (as spell, CL 20).
+    *   *Stone Shape* (as spell, CL 20, usable once during the aura’s duration, swift action).
+*   **Wielder's Radiance:** The wielder glows with the forge-light of Moradin, radiating a +4 morale bonus to attack rolls and saving throws for all dwarves in sight. Enemies of dwarves must make a Will save (DC 20) or be *shaken* for 1 minute.
+*   **Duration:** Lasts until dawn.
+*   **Consequence:** At dawn, the aura fades, and the **Gem of Immutable Time disintegrates**, its glowing dust permanently embedding itself in the crown. The battle's outcome becomes fixed in history, and no further time travel is possible.
+
+---
+
+## 🪓 **Synergy with Aegis Fang (Post-Completion)**
+
+When both the *Corona di Adamantio* and *Aegis Fang* are wielded by the Forgemind of Moradin:
+*   **Awakened Crown:** The crown is now a sentient artifact (Int 16, Wis 17, Cha 18, Ego 20). The wielder gains immunity to domination and mind-control effects.
+*   **Empowered Axe:** *Aegis Fang* functions as a **+4 Holy Returning Dwarven Waraxe** and deals an additional +2d6 holy damage against aberrations, undead, and dragons.
+*   **Divine Conduit:** Once per day, the wielder may strike the ground with *Aegis Fang* to channel *Heal* (Sp, CL 15) to all dwarves within 30 ft.
+*   **Telepathy:** The bearer gains telepathic communication with all dwarves within 300 ft during battle.
+*   **Fearless Presence:** The bearer’s presence radiates Moradin’s blessing, rendering all nearby dwarves immune to fear.
+*   **Forgemind Transformation:** While within an Earth Node or during the *Gem of Immutable Time* activation (before its destruction), *Aegis Fang* and the crown temporarily merge into the **Hammer of the Eternal Forge**, a direct conduit for Moradin’s intervention (his voice may speak directly to the wielder).
+
+---
+
+## ⚔️ **Completion: The Forgemind of Moradin**
+
+Upon victory in the "Siege of the Eternal Forge," the *Gem of Immutable Time* shatters into glowing dust, permanently embedding itself in the crown as the "Eternal Forge Light" (flavor only, no further time travel). The *Corona di Adamantio* fuses permanently with *Aegis Fang*’s runes, marking the bearer as **Forgemind of Moradin**, a living symbol of dwarven endurance, destiny, and divine will. The bearer becomes a legend, forever etched in dwarven history as the one who turned back time to save their people.
+
+---
+
+## 🪓 **Bearer’s Oath (After Completion)**
+
+> *“I am the stone that remembers,
+> the forge that endures,
+> the hammer that rebuilds.
+> By Moradin’s light I defend,
+> and by his anvil I am reforged.”*
+
+---
+
+## 🌄 **Divine Encounters & DM Notes (Moradin's Interventions)**
+
+Moradin is a watchful, active deity when his most sacred artifacts are at stake. His presence should be felt throughout the quest, culminating in direct interactions at critical junctures.
+
+*   **Initial Guidance (Passive):**
+    *   **First Dream (Ritual 1):** *Aegis Fang's* visions aren't random. Moradin guides them, showing the most impactful enemy or the most desperate dwarven plight. He imparts a sense of urgency and foreshadows the true scale of the threat.
+    *   **Whispers of the Deep:** As the bearer delves deeper into the Underdark, especially near dwarven ruins or Earth Nodes, the player might hear faint sounds of distant hammers, feel subtle vibrations in the stone, or experience a sense of being watched by a benevolent, ancient force.
+
+*   **The Bargain at the Earth Node (Ritual 3 - Anvil of the World):**
+    *   When the bearer arrives at the deepest Earth Node to complete the "Anvil of the World" ritual, Moradin's presence becomes overwhelming. The air itself might thicken with the scent of ozone and molten metal, the ground vibrating with rhythmic, unseen hammering.
+    *   **Moradin's Manifestation:** This is a crucial encounter. Moradin might appear as a colossal entity of glowing magma and obsidian, a shimmering spirit formed of pure light and adamant, or simply a voice that shakes the very bedrock.
+    *   **The Test:** Moradin will test the hero's resolve and understanding of sacrifice. He will not demand blindly, but present the choice with solemn gravity.
+        > *"Child of my making, you stand at the Anvil of the World. To wield the heart of time itself, a price must be paid – not of gold, but of being. Will you offer a measure of your life's vigor, relinquish a treasure that binds you to the fleeting mortal world, or pledge your very future to the defense of my forge-children?"*
+    *   **Consequences of Refusal:** If the player completely refuses a sacrifice, Moradin will sigh (a sound like grinding mountains) and withdraw his full blessing. The ritual is *not* completed, and the Gems cannot be fully attuned. The crown will revert to a dormant state, requiring a new, more arduous quest (DM's discretion) to regain Moradin's favor. This should feel like a true failure, not merely a missed opportunity.
+    *   **Encouraging Sacrifice (DM Tools):**
+        *   **Emotional Stakes:** Moradin can project images of suffering dwarves – children freezing, warriors falling, entire strongholds crumbling – to emphasize the urgency and necessity of the sacrifice.
+        *   **Relic Value:** If a relic is chosen, Moradin might momentarily infuse it with an ancient glory, showing its true worth and the weight of its loss.
+        *   **Future Pledge:** If the player pledges service, Moradin might outline a vague but compelling quest, hinting at great rewards or the salvation of other dwarven clans, making the "cost" feel like a future adventure hook.
+
+*   **The Gem of Immutable Time Activation (During Ritual 4 - Siege of the Eternal Forge):**
+    *   As the hero attempts to activate the Gem to bring non-believers, Moradin intervenes again.
+    *   **Moradin's Question:**
+        > *"You have seen what was lost. Will you forge anew with hammer and heart alike? What will you sacrifice to save your kin, and those you deem worthy, from oblivion?"*
+    *   **Consequences of Refusal/Inaction:** If the player refuses the sacrifice for allies, Moradin’s presence will manifest as a protective barrier around the non-believers, causing the minor petrification effect. This is a clear sign of divine displeasure but also Moradin's pragmatic allowance for his champion's choices. He will not stop the time travel, but he will ensure his terms are met.
+
+*   **The Final Siege (Ritual 4):**
+    *   **Moradin's Blessing:** The *Aura of the Eternal Forge* is Moradin's direct, overwhelming intervention. It signifies his complete trust and commitment to his champion.
+    *   **Moment of Doubt/Failure:** Should the player falter significantly during the siege, or even be slain (temporarily, perhaps through a *Miracle* or *True Resurrection* effect tied to Moradin's will), Moradin might appear on the battlefield himself (a titanic figure of magma and adamantine) to strike a final, decisive blow against the enemy warlord, before fading, leaving the crown upon the hero’s brow as a symbol of sacrifice and enduring legacy. This ensures success while still emphasizing the cost.
+
+---
+This comprehensive document should fully equip you to run a truly epic D&D 3.5 campaign centered around the *Corona di Adamantio* and its destined bearer!

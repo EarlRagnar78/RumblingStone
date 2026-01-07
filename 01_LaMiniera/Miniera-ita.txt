@@ -1,0 +1,345 @@
+https://archive.org/details/expedition-to-undermountain/page/n125/mode/2up
+e lord of madness
+
+Originariamente costruita dai nani del Clan Melairkyn, la Cittadella della Caduta di Belkram serviva da base operativa per i drow che cercavano una nuova presa nell'Undermountain, fino a quando il recente terremoto ha fatto crollare la caverna intorno alla struttura. Nel frattempo, i passaggi che portano alla Cittadella sono diventati la dimora di una piccola colonia di grells.
+
+Un gruppo di PG dovrebbe raggiungere il 6º livello entro la fine di questo capitolo, anche se evitano o falliscono alcuni degli incontri di combattimento inclusi. La maggior parte degli incontri tattici di questo capitolo è impegnativa, e PG avventati potrebbero mettersi in situazioni troppo difficili. Non esitate a ricordare ai giocatori che i loro personaggi possono fuggire se il pericolo è troppo grande. Un gruppo segreto opera anche su questo livello del dungeon, riuscendo finora a mantenere nascita la sua presenza dai drow e dai grells. Un grande gruppo di nani devoti a un dio malvagio della fortuna e dell'inganno cerca di prendere il controllo della Cittadella e dell'area circostante. I nani hanno costruito un massiccio ponteggio di ossa per collegare i diversi strati di questo livello. Il ponteggio di ossa è un capolavoro di magia necromantica, una costruzione non morta sotto il controllo dei sacerdoti nani.
+Quando Halaster morì, il terremoto che annunciò la sua morte fece crollare la caverna intorno alla Cittadella, causando una massiccia fuga di ragni leali ai drow dalla zona. Anche i drow fuggirono dalla caverna della Cittadella, stabilendosi vicino al posto di scambio all'imboccatura della Caduta di Belkram. Un post di scambio gestito principalmente da gnomi è sorto nella massiccia caverna all'imboccatura della Caduta di Belkram. Si è espanso quasi da un giorno all'altro in un grande accampamento di baracche mentre i sopravvissuti drow emersero dal basso per rifugiarsi qui dopo il terremoto. Accompagnati da un seguito di derro e schiavi goblin, i drow hanno iniziato a chiamare l'insediamento espanso Spiderhaven—e il nome sta attaccando. Attualmente, gli gnomi mantengono il controllo del posto di scambio e nominalmente mantengono l'ordine nella città appena formata. Incoraggiano i drow a spostarsi, ma finora gli elfi scuri hanno mostrato poca urgenza nel farlo.
+Mentre i drow ricostruiscono a Spiderhaven e i nani lavorano per creare una nuova casa nelle profondità della loro antica roccaforte, nessuno dei due gruppi è consapevole che un portale si è aperto alla base della Caduta di Belkram. Il portale collega il tubo di lava al Piano Elementale del Fuoco, da cui è emerso un ragno infernale.
+Come se non bastasse, Belkram stesso si è risvegliato nella sua tomba nascosta. Custode di una grande eredità nanica, Belkram non può riposare finché non è certo che la sua casa sia stata resa sicura ancora una volta, o finché un campione degno non ha reclamato l'eredità che ha custodito per così tanto tempo.
+
+Possibili motivi per cui i PG potrebbero avventurarsi nella Caduta di Belkram potrebbero includere uno o più dei seguenti.
+
+EREDITÀ NANICA
+Gyudd, proprietario di Gyudd's Distillery a Skullport ed erede del sangue reale di Melairkyn, è stato tormentato da strani sogni ultimamente. In essi, viene chiamato a trovare l'eredità della sua famiglia all'interno della Caduta di Belkram. Ha deciso di vendere la sua attività e usare i soldi per reclutare avventurieri capaci disposti ad aiutarlo a scoprire la fonte dei suoi strani sogni. Nei suoi sogni, vede una semplice corona nera con un singolo gioiello rosso sangue. Si sveglia sempre da questo sogno con un mal di testa acuto. Gyudd (nano maschio NG guerriero 3) preferisce accompagnare i PG nel viaggio verso la Caduta di Belkram piuttosto che rimanere inattivo ad aspettare il loro ritorno.
+
+GYUDD, EREDITIERO DI RE MELAIR IV
+
+Se Gyudd accompagna i PG, utilizza le statistiche fornite qui. Non dovrebbe essere il combattente principale nel gruppo, anche se contribuisce certamente. Dovrebbe diventare chiaro che il nano è estremamente devoto, poiché prega ogni giorno. Quando Gyudd avanza di livello nel corso dell'avventura, assume livelli di chierico.
+
+ESPLORAZIONE della Caduta di Belkram
+
+Come un grande vuoto che si spalanca, il massiccio tubo di lava scende nel cuore del mondo. Un cerchio quasi perfetto che si estende attraverso la terra come un enorme sentiero verso l'oblio, si erge davanti a te, una leggera brezza che fuoriesce lentamente dalla sua terminazione. L'aria che fuoriesce dal vuoto odora debolmente di carne marcia e terra appena rivoltata.
+
+Massicce porte di pietra separano l'area di Spiderhaven sulle rive del fiume Sargauth dalla camera che ospita il tubo di lava noto come la Caduta di Belkram (nota anche come lo Scivolo, e indicato come tale sulla mappa a destra). Le porte di pietra si aprono facilmente su antichi cardini che funzionano come se fossero stati appesi ieri; il portale è stato costruito per durare.
+
+PROPRIETÀ DELLA CADUTA DI BELKRAM
+
+A meno che non sia diversamente specificato, le camere all'interno della Caduta di Belkram (così come il tubo di lava stesso) sono completamente buie, offrendo occultamento totale a coloro che operano senza luce. Chiunque scenda nel tubo deve portare con sé una sufficiente fonte di luce per attraversare ogni discesa.
+
+Con un diametro di circa 120 piedi, le pareti della Caduta di Belkram sono perpendicolari e richiedono quindi numerosi controlli di arrampicata con DC 20 per essere attraversate senza assistenza aggiuntiva. È importante notare che i PG che scelgono di scendere nel massiccio tubo di lava con le proprie forze avranno difficoltà a procedere molto lontano senza kit di arrampicata e molta corda, o meglio ancora, un qualche tipo di assistenza magica.
+
+Ascensori
+
+I nani del Clan Melairkyn hanno lasciato dietro di sé una serie di ascensori che funzionano con un complesso sistema di leve e carrucole. Tuttavia, gli anni non sono stati gentili con questa meraviglia dell'ingegneria nana, anche se questo non è immediatamente evidente a prima vista. Le piattaforme di pietra sono abbastanza robuste, così come la corda avvolta d'acciaio che le collega alle carrucole. Ogni piattaforma può sostenere fino a mille libbre, e se ne regge almeno 400, scende facilmente nel tubo senza problemi. Tuttavia, le carrucole e le ruote che compongono il sistema di ascensori sono arrugginite e inclini a incepparsi. Hanno una probabilità del 20% per minuto di utilizzo di incepparsi quando vengono usate per salire nel tubo. Una piattaforma di ascensore inceppata intrappola i suoi passeggeri all'interno del tubo.
+
+Ogni piattaforma presenta un piedistallo con una coppia di leve che possono essere manovrate per far scendere e salire l'ascensore. Le leve hanno un fermo che viene girato in una direzione per salire e in direzione opposta per scendere. Una volta che il fermo è girato, l'operatore deve continuamente pompare le leve avanti e indietro in modo simile a una forbice per far salire o scendere la piattaforma. Qualsiasi creatura con una Forza pari o superiore a 12 è in grado di far funzionare le leve per far funzionare l'ascensore senza intoppi.
+
+Una creatura che tenta di manipolare le carrucole senza avere una Forza pari o superiore a 12 fa sì che il viaggio diventi progressivamente meno scorrevole, poiché l'operatore lotta nel controllare il sistema. Quando si sale, la probabilità che le carrucole e le ruote si inceppino aumenta del 10% ogni 2 punti in meno di 12 che è il punteggio di Forza dell'operatore. Se un ascensore si inceppa durante la salita, è richiesto un successivo Tiro Salvezza su Forza DC 20 per farlo ripartire. È possibile che fino a due PG lavorino insieme per effettuare questo controllo.
+
+Staffe Rune-Protettive
+
+Costruite dai nani del Clan Melairkyn, le staffe rune-protettive proteggono il tempio e la tomba molto più in basso. Queste cinque staffe circolari del tunnel sono fatte principalmente di mithral e fissate all'interno della Caduta di Belkram con massicci chiodi di adamantio. Il mozzo centrale di ogni staffa è inciso con rune di potere incastonate con argento alchemico. Queste staffe proiettano un campo di energia che interrompe l'uso di magia arcana e divina entro 50 piedi (sopra e sotto) ciascuna staffa. Questa area è trattata come se fosse sotto l'effetto di un campo antimagia lanciato al livello 20.
+
+Queste staffe sono diventate alla fine un'azione difensiva per ogni livello della Caduta di Belkram, spezzando il tubo in cinque segmenti di una profondità di una miglio. È importante tenere presente che mentre un personaggio potrebbe volare (usando la magia) in una zona di antimagia e cadere in un'area in cui la magia funziona di nuovo, non può usare la magia per volare di nuovo su attraverso quell'area. Questo, e l'incapacità di utilizzare la magia di teletrasporto all'interno dell'Undermountain, può rendere pericoloso attraversare la Caduta di Belkram in direzione ascendente, al massimo.
+
+Inizialmente, i PG devono scendere di poco più di un miglio nella Caduta di Belkram per arrivare alla terrazza superiore. Appena prima di raggiungere le stazioni di guardia lì situate, devono passare davanti alla prima staffa rune-protettive. Se stanno usando una fonte di luce, leggi:
+
+Man mano che scendi nelle profondità della Caduta di Belkram, qualcosa sulla parete del tubo attira la tua attenzione. Una grande staffa di mithral circonda l'interno del tubo di lava, mantenuta in posizione da stanghe di adamantio che sembrano essere state infisse direttamente nel muro di roccia. Rune massicce incastonate con argento sono incise sulla superficie del mithral.
+
+È importante che quando i PG si avvicinano a meno di 50 piedi da una staffa rune-protettiva, descrivi gli effetti visibili che il campo antimagia potrebbe avere su di loro. Le fonti di luce magiche si spengono, e gli incantesimi in corso scompaiono. I lanciatori di incantesimi e altri personaggi che usano regolarmente la magia (arcana o divina) sentono i peli sul retro del collo sollevarsi mentre perdono temporaneamente la connessione alla fonte dei loro poteri. Una staffa rune-protettiva emette una fioca illuminazione, proiettando una luce tenue che consente ai PG di vederla anche se perdono le loro fonti di luce.
+
+Un personaggio che effettua con successo un tiro di Spellcraft con DC 26 riconosce gli effetti di un campo antimagia.
+
+Un personaggio che effettua con successo un tiro di Conoscenza (architettura e ingegneria) con DC 15 riconosce la fascia di mithral come un'asticella, probabilmente posizionata per rinforzare la struttura naturale del tubo di lava.
+
+Quando i PG si trovano a 50 piedi sotto una staffa runica, gli effetti magici il cui periodo di durata non è scaduto riprendono.
+
+GUARDIANI DELLA TERRAZZA SUPERIORE
+
+Il primo ascensore completa la sua discesa su una piattaforma di pietra a circa 100 piedi sotto la prima staffa rune-protettiva. Queste sono le stazioni di guardia originariamente costruite dai nani del Clan Melairkyn. Ci sono tre livelli di stazioni di guardia, ognuno dei quali è una formazione triangolare di tre stazioni ciascuna. Le stazioni sono visivamente identiche, con un merlato (completo di muro con merli) rivolto verso l'interno del tubo di lava. Sebbene la loro costruzione sia superficialmente la stessa, è importante notare che ciascuna delle stazioni era dotata di varie trappole progettate per tenere fuori gli attaccanti provenienti dal tubo di lava.
+
+Oltre alle trappole posizionate dai nani del Clan Melairkyn, le stazioni di guardia sono ora la casa di una piccola colonia di grell. Circa una dozzina di creature abitano queste rovine, insieme a un trio di filosofi grell per guidarli nei loro sforzi di caccia. Fino a poco tempo fa, i grell di questa colonia erano contenti di cacciare ragni e l'occasionale elfo oscuro abbastanza coraggioso da risalire così in alto dalla Cittadella. Tuttavia, la recente distruzione della Cittadella e la conseguente fuga di massa dei ragni nelle caverne sopra di essa hanno spinto i grell a espandere i loro territori di caccia. A causa di questo, i PG potrebbero sentire voci su "orrori con tentacoli" che hanno predato i servi goblin e derro dei rifugiati elfi oscuri di Spiderhaven. Poiché ognuna delle nove stazioni di guardia è strutturata allo stesso modo, viene fornita una sola descrizione per l'intero gruppo. Tuttavia, sono fornite annotazioni su dove sono posizionate le trappole tra di loro, associate con la lettera corrispondente di ciascuna (A attraverso I). I nani non sono altro se non sistematici. Anche se le trappole stesse variano, le loro posizioni no.
+
+Poiché i grell non sono inclini a dimorare in una data area della loro casa per un periodo considerevole, non sono posizionati in posizioni statiche all'interno di questa struttura. I grell tendono comunque a cacciare in coppia. L'eccezione a ciò sono i filosofi grell, ognuno dei quali abita una delle tre stazioni di guardia più basse in solitudine.
+
+Perché i PG possano procedere più in profondità nella Caduta di Belkram, è necessario per loro passare dalle stazioni di guardia superiori a quelle inferiori, dove possono trovare un altro ascensore. Anche se è possibile per i PG usare delle corde per scendere sulla superficie esterna dei merli (100 piedi tra ogni livello di stazioni di guardia), o forse persino volare se dispongono degli incantesimi o degli oggetti appropriati, farlo ha una probabilità cumulativa del 20% di attirare una coppia di grell ogni minuto. Essendo volatori naturali, i grell hanno il chiaro vantaggio in questa situazione e sono felici di cacciare coloro abbastanza folli da tentare un tale tentativo. Supponendo, tuttavia, che i PG scelgano di esplorare le stazioni di guardia, è possibile che incontrino i grell mentre stanno cacciando.
+
+Incontri Tattici: Maggiori informazioni su questi incontri (nonché le probabilità di averli) si trovano negli incontri tattici 4—1, Mangiatori di Viventi (pagina 126) e 4—2, Cacciatore Anomalo (pagina 128). Un filosofo grell risiede in ognuna delle tre stazioni di guardia più basse. Se i PG attraversano una qualsiasi di quelle stazioni di guardia, consulta l'incontro tattico 4—3, Gourmet Filosofico (pagina 130).
+
+GSI: I MERLATI
+
+Intagliato nella pietra del tubo di lava, un muro merlato si estende attraverso l'ingresso di questa struttura simile a una caverna. Un cortile vuoto si estende oltre il muro, lontano dal tubo, e una serie di scalini di pietra si alza verso delle porte doppie fatte di pietra, ognuna delle quali è intagliata con il volto di un gargoyle che fa una smorfia.
+
+I gargoyle sghignazzanti nelle porte dei rispettivi cortili sono ognuno armato di torretta magica. Anche se ognuno funziona essenzialmente allo stesso modo, la selezione degli incantesimi usati cambia da stazione di guardia a stazione di guardia, basandosi principalmente sulle preferenze del mago che ha originariamente costruito ciascuna torretta. Qualsiasi creatura che non sia un nano che si avvicina a meno di 15 piedi dalle porte attiva le torrette magiche. Una creatura deve camminare a terra per attivare la trappola, anche se il trigger stesso non è di natura meccanica. Poiché i grell volano sempre, non corrono il rischio di attivare questa trappola. È importante notare che è possibile disinnescare questa trappola solo alle porte stesse. I soffitti in tutte le stazioni di guardia sono alti 10 piedi, tranne dove indicato.
+
+Porte in Pietra: Spesse 4 pollici; durezza 8; hp 60; DC di rottura 20 (parzialmente incastrate).
+
+Torrette Magiche della Stazione di Guardia (incantesimi da mago di 1º livello): CR 2; Dispositivo magico diminutivo; attivazione visiva (true seeing); reset automatico; quattro diversi effetti magici lanciati una volta per round in un ordine prestabilito, nessun incantesimo lanciato ogni quinto round, ma la torretta magica si auto-ripara 4d8+20 hp; Ricerca DC 26; Disattivazione Dispositivo DC 26; CA 7; durezza 8; hp 200.
+
+Incantesimi per le Stazioni A, E, I: cause fear (DC 12), grease (DC 12), ray of enfeeblement (+5 tocco a distanza), magic missile.
+
+Incantesimi per le Stazioni B, D, H: color spray (DC 12), grease (DC 12), sleep (DC 12), magic missile.
+
+Incantesimi per le Stazioni C, F, G: magic missile, grease (DC 12), burning hands (DC 12), magic missile.
+
+Una particolare torretta magica (una per porta) mira alla creatura non riconosciuta più vicina e ha un arco di fuoco di 360 gradi. L'ordine in cui una torretta lancia gli incantesimi è prestabilito; li cicla nello stesso ordine ogni volta, guarisce e si resetta ogni 5 round.
+
+GS2: IL CORTILE
+
+Il pavimento di questa stanza dalla forma strana ha una leggera pendenza verso il basso. Le pareti sfalsate si restringono in una porta larga 10 piedi che conduce lontano dalla grande voragine e più in profondità nella struttura.
+
+Il cortile è stato costruito come punto di ritirata dove i nani potevano facilmente fortificarsi, poiché le pareti inclinate creano un punto di strozzatura facilmente difendibile. Due quadrati di 10 piedi posti direttamente adiacenti l'uno all'altro fungono da grilletti per una coppia di trappole che si azionano automaticamente ogni 5 round. Poiché i grell non camminano, non hanno mai attivato le trappole in queste aree. Le trappole utilizzate nel cortile di una qualsiasi stazione di guardia variano come segue.
+
+Trappole a Catena Triplice (2) (Stazioni A, D, G): CR 2; meccaniche; grilletto di posizione; reset automatico; bersagli multipli (trippamento e attacco corpo a corpo); Attacco +15 tocco corpo a corpo (trip; +6 controprova Forza), Attacco +15 corpo a corpo (2d4+2, catena chiodata); Ricerca DC 15; Disattivazione Dispositivo DC 18.
+
+Nota: Questa trappola è effettivamente composta da una parte che causa il trip e una seconda parte che attacca con una catena chiodata. Se l'attacco di trip riesce, si applica un bonus di +4 all'attacco con la catena chiodata perché l'avversario è prono.
+
+Trappole a Buca Mimetizzata (2) (Stazioni B, E, F): CR 2; meccaniche; grilletto di posizione; reset automatico; Riflessi DC 20 per evitare; 20 piedi di profondità (danno da caduta 2d6); bersagli multipli (primo bersaglio in ciascuno dei due quadrati adiacenti di 5 piedi); Ricerca DC 24; Disattivazione Dispositivo DC 19.
+
+Trappole a Lama a Pavimento (2) (Stazioni C, H, I): CR 1; meccaniche; grilletto di tocco; reset automatico; Attacco +10 corpo a corpo (2d4/x4, falce); Ricerca DC 22; Disattivazione Dispositivo DC 22.
+
+GS3: LA GALLERIA
+
+Il soffitto in questa stanza è a volta, si alza fino a un'altezza di 20 piedi nell'ingresso immediato. Un'alta parete di 10 piedi blocca il progresso ulteriore, anche se una coppia di robuste scale di ferro è incorporata nel pavimento su entrambi i lati della stanza, consentendo il passaggio all'altra metà della galleria.
+
+È importante notare che anche se c'è uno spazio di 20 piedi tra il soffitto e il pavimento nella prima metà della stanza, il soffitto è distante solo 10 piedi dal pavimento nella seconda metà di questa stanza (dove la stanza si eleva formando una galleria che è 10 piedi più alta del pavimento dell'ingresso). La galleria veniva utilizzata dai nani come ulteriore punto di ritirata in cui potevano usare armi a distanza dall'alto contro gli attaccanti che li inseguivano in questa stanza. Arrampicarsi sulla parete per salire alla galleria superiore richiede un Tiro Salita DC 20 senza assistenza aggiuntiva. Se i PG utilizzano un rampino, non c'è nulla su cui agganciarlo, a parte le scale.
+
+Chiunque faccia un controllo Spot DC 20 con successo entro 5 piedi da una scala nota una colorazione strana nel metallo a circa 5 piedi di altezza. La colorazione strana è dovuta alla bruciatura causata dalla trappola delle mani infuocate impostata su ogni scala. Chiunque salga una scala senza disinnescare questa trappola è soggetto al suo effetto.
+
+Trappola delle Mani Infuocate: CR 3; dispositivo magico; grilletto di prossimità (allarme); reset automatico; effetto magico (mano infuocata, mago di 5º livello, 5d4, Riflessi DC 12 metà); Ricerca DC 26; Disattivazione Dispositivo DC 26.
+
+GS4: LE BARACCHE
+
+Una serie di robusti letti a castello è distribuita uniformemente in tutta questa stanza. Uno spesso strato di polvere e ragnatele fa da rifugio a dozzine di ragni che popolano la camera.
+
+Oltre ai ragni, che sono innocui e scappano da chiunque si avvicini, non c'è molto da trovare in queste stanze. Sebbene non siano particolarmente confortevoli, i letti sono in buone condizioni e possono essere utilizzati se i PG hanno bisogno di un posto per riposare.
+
+Un controllo Ricerca DC 15 riuscito rivela un'incisione di dimensioni considerevoli nella parete di fondo della camera, nascosta sotto la polvere e dietro le ragnatele. Sembra essere un gioiello sfaccettato che fluttua all'interno di una montagna. Chiunque faccia un controllo Conoscenza (religione) DC 15 riuscito identifica questo come il simbolo sacro di un dio nano. Se qualcuno preme sull'incisione del gioiello, si abbassa leggermente nella parete, rilasciando la porta segreta sul retro della stanza. Quando ciò viene fatto, la porta segreta si apre. Anche se i PG non premono l'incisione, un controllo Ricerca DC 20 riuscito rivela la porta segreta, anche se sapere che è lì non permette a un PG di capire il meccanismo per aprirla.
+
+GS5: ALLOGGIO DELL'UFFICIALE
+
+Questa stanza scarsamente arredata contiene un paio di vecchi letti che una volta potrebbero essere stati di ottima qualità, anche se il tempo ha fatto il suo corso. Un paio di scrivanie invecchiate, ognuna con una sedia dall'aspetto robusto, si appoggia contro la parete lontana. Un'incisione di un gioiello sfaccettato che fluttua all'interno di una montagna adorna la parete tra le scrivanie.
+
+Questa stanza era un tempo l'alloggio degli ufficiali della stazione di guardia, ospitando un singolo guerriero e o un chierico o un mago. Anche se i letti in questa camera sembrano essere più confortevoli dei letti nelle baracche, distendersi su di essi fa sì che collassino. Lo stesso vale per le sedie, che sono altrettanto poco affidabili.
+
+Come nelle baracche, lo spazio sulla parete di fondo nasconde una porta segreta. Chiunque faccia un controllo Conoscenza (religione) DC 15 con successo identifica l'incisione come il simbolo sacro di un dio nano. Se qualcuno preme sull'incisione del gioiello, essa si abbassa leggermente nella parete e rilascia la porta segreta sul retro della stanza. Una volta fatto ciò, la porta segreta scorre verso l'apertura. Anche se i PG non premono l'incisione, un controllo Ricerca DC 20 con successo rivela la porta segreta, anche se sapere che è lì non permette a un PG di capire il meccanismo per aprirla.
+
+Una ricerca accurata delle scrivanie in una delle stazioni (Ricerca DC 15) scopre una pozione di cura delle ferite moderate e un pugnale +1 nel retro di un cassetto bloccato.
+
+GS6: ARSENALE E RIPOSTIGLIO
+
+Un corridoio stretto conduce a un passaggio più ampio che sembra tornare indietro su se stesso. Numerose rastrelliere per armi e armature si appoggiano a un lato del passaggio, mentre decine di casse, barili e scatole si allineano dall'altro.
+
+Le armi rimaste sulle rastrelliere (ascie di varie dimensioni, così come il martello da guerra occasionale) non sono più in condizioni di poter essere utilizzate, essendo arrugginite e deteriorate con il passare del tempo. Le armature (in gran parte maglie e camicie di maglia) sono in condizioni simili, e sarebbero considerate inutilizzabili tranne forse come travestimento. Gli alimenti e le forniture nelle scatole e casse non sono né commestibili né utilizzabili, e la birra in botti non è più potabile. Tuttavia, la sostanza precedentemente nota come birra, essendo di origine nana, è ancora altamente infiammabile e, come tale, può essere trattata come un olio particolarmente puzzolente. Crea un fumo nero e pungente quando acceso e brucia il doppio della velocità rispetto all'olio effettivo. Ogni stazione di guardia ha 3d4 botti da 15 galloni, e ogni botte contiene l'equivalente di 120 fiale d'olio.
+
+CHIAVI DELLA TOMBA
+
+Nascoste in tutta la stazione di guardia ci sono le chiavi necessarie per entrare nella tomba di Belkram. Queste chiavi sono astutamente nascoste come i pulsanti a forma di gemma che aprono le porte segrete in ogni stazione di guardia. Ogni gemma-chiave è adornata con il simbolo sacro di uno dei nove antichi dèi nani.
+
+Quando i PG esaminano l'incisione, un controllo Spot DC 20 riuscito consente loro di notare che il pulsante può essere rimosso.
+
+Una volta scoperte, ogni chiave può essere rimossa effettuando un controllo Disabilita Dispositivo DC 20. È importante notare che, sebbene i PG possano notare questi simboli su alcuni pulsanti, e possano anche identificarli, è probabile che non ne comprendano la significatività fino a quando non raggiungono il tempio sottostante. Potrebbero dover tornare alle stazioni di guardia per recuperarle. La tabella di seguito mostra quale simbolo può essere trovato su ciascuna chiave e dove sono posizionate all'interno delle stazioni di guardia.
+
+Un controllo Ricerca DC 20 riuscito rivela la porta segreta in questo passaggio. Ciascuna è contrassegnata con un simbolo sacro nano (un gioiello sfaccettato che fluttua all'interno di una montagna) che, quando premuto, fa scivolare aperta la rispettiva porta segreta. Questo porta direttamente a una scala a chiocciola che collega le stazioni di guardia a gruppi di tre (A-D-G, B-E-H e C-F-I).
+
+Nota: La passerella esterna sul livello inferiore delle stazioni di guardia ha un ascensore identico a quello descritto a pagina 118 che può trasportare i PG fino alla Cittadella.
+
+Le chiavi della tomba sono collocate nelle seguenti stazioni di guardia:
+
+    A: Due anelli d'argento, GS6
+    B: Libro aperto, GS4
+    C: Maschera di bronzo con occhi fiammeggianti, GS5
+    D: Pezzo d'oro, GS4
+    E: Martello e incudine, GS6
+    F: Fiamma che sorge da un ago, GS5
+    G: Spada avvolta in spirali di fuoco, GS4
+    H: Gemma non adornata, GS5
+    I: Due asce da battaglia incrociate, GS6
+
+REALMSLORE: ABBATHOR
+
+In una campagna di Forgotten Realms, questo gruppo di nani venera Abbathor, un dio malvagio neutrale della fortuna e dell'astuzia. Il simbolo sacro di Abbathor è un pugnale a lama di diamante. Se si utilizzano gli dèi descritti nell'Handbook del Giocatore nella propria campagna, allora questi nani sono dedicati a Erythnul, un dio caotico malvagio della strage e dell'astuzia. In quest'ultimo caso, il gruppo di nani ha un'opinione leggermente più cupa del mondo, ma in entrambi i casi seguono un dio malvagio, utilizzano non morti e cercano di prendere il controllo di una parte di Undermountain.
+
+THE CITADEL
+
+Il secondo ascensore porta i PG circa un miglio più in basso lungo Belkram’s Fall, oltre un'altra staffa runica, al livello che ospita le rovine della Cittadella. Quando Halaster morì, un terremoto scoppiò, innescato dall'apertura di un portale al Piano Elementale del Fuoco alla base del tubo di lava. La Cittadella subì i danni maggiori in questo evento. Tutto ciò che viveva nella Cittadella morì in quel momento, con l'eccezione di uno sciame di ragni mostruosi che riuscirono a fuggire appena prima della distruzione. Tutto ciò che rimane dell'una volta orgogliosa Cittadella è una caverna relativamente superficiale di rovine.
+
+L'ascensore scende in una caverna la cui apertura circonda l'intero perimetro di Belkram’s Fall. Un basso muro merlato di 4 piedi si erge tra l'ascensore e ciò che doveva essere una volta una fiera città sotterranea. Una distruzione diffusa mostra che questa caverna ha sofferto a causa di una terribile catastrofe, poiché le strutture in rovina sono visibili ovunque. L'odore di carne in decomposizione si avverte nell'aria, così come un silenzio quasi tangibile.
+
+Se i PG hanno i mezzi per vedere dall'altra parte di Belkram’s Fall, individuano un altro ascensore che possono usare per scendere più in profondità nel pozzo. A meno che non possano volare o trasportarsi in altro modo attraverso il pozzo, devono sbarcare e viaggiare attorno al perimetro del tubo di lava per raggiungere l'altro ascensore.
+
+I PG potrebbero desiderare di esplorare questa area. In tal caso, per ogni 10 minuti trascorsi tra le macerie, hanno una probabilità cumulativa del 10% di attirare l'attenzione delle creature non morte che ora abitano queste rovine. Ogni volta che ciò accade, ci sono tre possibili incontri tra cui scegliere. Puoi sceglierne uno che ti piace o determinare l'incontro in modo casuale. In entrambi i casi, più a lungo i PG rimangono nell'area, più è probabile che attirino l'attenzione dei non morti (vedi gli Incontri Tattici, di seguito).
+
+Cercare tra le rovine non è del tutto privo della possibilità di ricompensa, tuttavia. Ogni 10 minuti trascorsi a cercare nelle rovine, c'è una probabilità del 10% che un personaggio giocante possa trovare qualcosa. Tira sul Tavolo del Tesoro della Cittadella per determinare cosa trova il personaggio giocante. Allo stesso tempo, questo è un ottimo luogo per seminare oggetti, mappe, appunti e altri oggetti di storia simili, come si addice alla tua campagna. La Cittadella ha visto la nascita e la caduta di due grandi civiltà, quindi le possibilità di fornire stimoli d'avventura sotto forma di tali oggetti sono praticamente infinite.
+
+
+CITADEL TREASURE TABLE
+
+d% Tesoro
+
+01-11 3d10 cp
+12-21 4d12 sp
+22-31 1d6 gp
+32-41 1d8 pp
+42-51 Gemma. Tira una volta sulla Tabella 3-6, DMG 55
+52-61 Arte. Tira una volta sulla Tabella 3-7, DMG 55
+62—98 Oggetto Ordinario. Tira una volta sulla Tabella 3-8, DMG 56
+99-100 Oggetto Minore. Tira una volta sulla Tabella 7-1, DMG 216
+
+Le monete che i PG trovano tra le rovine sono di manifattura drow (75%) o nana (25%), recanti simboli di un ragno grande o di una gemma sfaccettata che fluttua dentro una montagna, a seconda del caso. Qualsiasi arte trovata ha il 50% di probabilità di valere solo la metà del valore indicato sulla Tabella 3-7 del DMG, a causa dei danni subiti nel terremoto. La stessa possibilità esiste per qualsiasi oggetto magico che sia rompibile, come una pozione in una bottiglia. Se si determina che un oggetto magico è danneggiato, è essenzialmente privo di valore e inutilizzabile.
+
+Incontri Tattici: I tre incontri tattici che possono verificarsi in questo punto dell'avventura sono 4—4, Perdere la Faccia (pagina 131); 4—5, Guardiani Dirigenziali (pagina 132); e 4—6, Oscurità che Avanza (pagina 133). Ogniuno di questi incontri può accadere più volte, poiché in pratica non c'è limite al numero di non morti dei tipi indicati che vagano tra le rovine della Cittadella. Si noti che prima della distruzione, i tunnel conducevano via dalla Cittadella verso altre parti di Undermountain e l'Ombra Profonda. Questi tunnel sono stati sigillati e non sono più accessibili da Belkram’s Fall.
+
+SOSTEGNO SCHELETRICO
+
+In origine, il terzo ascensore poteva trasportare i passeggeri fino al tempio, a due miglia al di sotto del livello della Cittadella. Tuttavia, coloro che viaggiano sull'ascensore devono ora fermarsi un po' prima di quella destinazione. Circa un anno fa, un gruppo di nani devoti a un dio malvagio della fortuna e dell'astuzia si è infiltrato segretamente in Belkram’s Fall. Da quando sono arrivati, hanno costruito una massiccia serie di piattaforme e passerelle fatte quasi interamente di ossa. L'ascensore deposita i viaggiatori sulla prima piattaforma, poiché lo scheletro blocca la discesa ulteriore.
+
+Queste piattaforme e passerelle esistono in uno strano stato di non morte che le rende sensibili a coloro capaci di respingere o sottomettere non morti. Le passerelle si estendono e si ritraggono per collegare le piattaforme. Tuttavia, l'unico collegamento tra la quarta e la quinta piattaforma è attraverso una grande caverna naturale che i nani hanno scoperto durante la costruzione e incorporato nei loro piani.
+
+L'alto sacerdote controlla il sostegno e dirige la costruzione aggiuntiva dalla nona (più bassa) piattaforma. I chierici operano e continuano a costruire il sostegno, mentre i cavalieri sono stati posti di guardia mentre lavorano.
+
+PROPRIETÀ DEL SOSTEGNO SCHELETRICO
+
+Ciascuna delle passerelle si arrotola fino alla piattaforma più alta delle due a cui è collegata. Per far sì che una passerella si arrotoli verso il basso, un chierico deve usare un tentativo di respingere o sottomettere non morti. Non è richiesto alcun controllo per il tentativo, ma se il chierico sta respingendo (invece di sottomettere), deve trovarsi sulla piattaforma superiore, causando la fuoriuscita della passerella, arrotolandosi lontano dal chierico. La passerella rimane in posizione per 10 round (1 minuto), come se fosse stata normalmente respinta.
+
+Solo i chierici capaci di sottomettere i non morti possono far sì che una data passerella si arrotoli verso di loro. Se i PG non hanno un personaggio capace di respingere o sottomettere i non morti, potrebbero avere difficoltà a negoziare il sostegno. Inoltre, se il chierico nel gruppo non è in grado di sottomettere i non morti, una volta che i PG hanno attraversato una determinata passerella e questa si è arrotolata di nuovo alla sua piattaforma più alta, non possono utilizzare quella passerella per risalire alla piattaforma superiore.
+
+Poiché le impalcature sono state costruite dai chierici di un dio malvagio della fortuna e dell'inganno, essi hanno privilegi speciali quando si tratta di respingere le passerelle. Un chierico di quel dio, quando utilizza un tentativo di respingere per manipolare una passerella ossea, può far estendere una passerella ossea fino a due piattaforme di distanza per raggiungerlo. Quando un chierico fa ciò, la passerella è ridotta in resistenza strutturale in modo che possa sopportare il peso di un solo essere di taglia Media (o due creature di taglia Piccola) alla volta.
+
+Ad esempio, se un chierico del dio malvagio della fortuna e dell'inganno si trova sulla Piattaforma 3, può utilizzare un tentativo di respingere per richiamare una passerella dalle Piattaforme 1 o 2. Allo stesso modo, il chierico potrebbe dirigere la passerella sulla Piattaforma 3 per estendersi fino a una delle piattaforme 4 o 5.
+
+CREATURES
+
+Le piattaforme sono popolate da una banda di nani che hanno dedicato la loro intera esistenza a un dio malvagio della fortuna e dell'inganno. La banda segue Drexlyn Darrowdelve, un antico nano chierico che è anche un vampiro deciso a prendere il controllo di Belkram's Fall. Una piccola colonia di micoidi di tendenza legale neutrale occupa la caverna che collega le Piattaforme 4 e 5. Queste robuste creature vegetali non sono affezionate ai nani che hanno preso dimora fuori dalla loro casa, ma sono caute nei confronti dei poteri strani che i nani possiedono. Drexlyn ha promesso che lui e gli altri nani lascerebbero in pace i micoidi, a patto che venga loro permesso di attraversare occasionalmente l'area. Per questa concessione, i micoidi hanno accettato di vietare il passaggio a chiunque non porti un simbolo sacro del dio malvagio.
+
+PI: ZONA DI ATTERAGGIO
+
+L'ascensore scende su una piattaforma ottagonale costruita interamente di osso, legato insieme con tendini e legamenti. La piattaforma è fissata al lato del tubo lavico con grandi barre d'acciaio che sono state conficcate direttamente nella pietra. Quello che sembra essere una sorta di passerella ossea o ponte estensibile giace arrotolato da un lato della piattaforma.
+
+Questa è la prima piattaforma che i nani hanno costruito. Inizialmente, a seconda dell'acutezza visiva e delle fonti di luce, i PG potrebbero non vedere dove si estende la passerella. I PG che si avvicinano alla passerella arrotolata e guardano oltre il bordo possono vedere la Piattaforma 2 sotto di loro nell'oscurità. Quando ciò accade, vengono anche notati dai nani che stanno di guardia sulla piattaforma inferiore.
+
+Incontro Tattico: 4-7, Protettori Profani (pagina 134).
+
+P2: STAZIONE DI GUARDIA
+
+Questa piattaforma assomiglia alla Piattaforma 1, tranne per il quartetto di cavalieri nani e il loro comandante chierico che risiedono qui. È stata costruita una piccola tavola e sedie di osso, e i cavalieri e il loro comandante siedono e giocano a Three-Dragon Ante per passare il tempo. Incontro Tattico: 4-7, Protettori Profani (pagina 134).
+
+P3: BARRIERA
+
+Una barricata di osso si affaccia nella direzione della passerella in discesa dalla Piattaforma 2. Diversi nani sbirciano da dietro la barricata, e puoi vedere che impugnano archi balestrati carichi puntati nella tua direzione.
+
+Quando il comandante chierico che era precedentemente sulla Piattaforma 2 arriva, istruisce i cavalieri qui a stare in difesa, anche mentre respinge la passerella tornando alla Piattaforma 2. Respingerà quindi la passerella collegata alla Piattaforma 3, dirigendola verso la Piattaforma 5 dove può continuare la sua discesa per avvertire gli altri degli intrusi sulle piattaforme superiori.
+
+Incontro Tattico:
+
+4-8, Barricata (pagina 135).
+
+P4: PORTALE DELLA CAVERNA
+
+Sebbene la Piattaforma 4 sia vuota, porta direttamente in una grotta nel fianco del muro del tubo lavico. La passerella di 20 piedi che va dalla Piattaforma 4 alla caverna è permanente; non richiede un tentativo di girare o respingere per utilizzarla per passare dalla piattaforma alla caverna.
+
+La caverna oltre questa piattaforma emana una radianza opaca tutta sua. Funghi di ogni tipo crescono su ogni superficie di questa grande caverna naturale, emanando un profumo avvolgente che si può percepire anche dalla fine della passerella. La caverna ha una pendenza piuttosto ripida mentre si curva fuori dalla vista. Notate dei funghi giganti che camminano con occhi e braccia muoversi all'interno della caverna.
+
+La caverna è la casa di un piccolo villaggio di micoidi a cui è affidato il compito seguente: "Non permettere a chiunque cerchi di danneggiare il buon lavoro di Abbathor [o qualsiasi dio malvagio tu stia usando] di passare". La maggior parte dei micoidi qui è piuttosto piccola e sottosviluppata, quindi potrebbe essere possibile per i PG semplicemente eliminarli tutti. Tuttavia, è anche possibile che i PG cerchino di comunicare intenzioni pacifiche (se lo desiderano) e passino attraverso la caverna senza combattere.
+
+Se i PG non attaccano immediatamente, un anziano lavoratore si avvicina a loro e cerca di aprire un dialogo rilasciando una nuvola di spore di relazione. Qualsiasi PG che fallisca un tiro salvezza di Tempra DC 15 (volontariamente o meno) può comunicare telepaticamente con i micoidi in seguito. L'anziano lavoratore parla per il suo popolo, chiedendo di sapere perché i PG siano venuti. Non ha intenzione di permettere loro di passare, poiché presume che siano qui per arrecare danno ai suoi simili o al dio nano (altrimenti perché i nani stabilirebbero diversamente nel loro accordo?), e quindi devono essere respinti.
+
+Se i PG riescono a convincere l'anziano lavoratore che non hanno intenzione di nuocere ai micoidi e promettono che non sono qui per danneggiare i buoni lavori del dio nano (un compito che richiede loro di superare un controllo di Diplomazia DC 20 o un controllo di Bluff DC 25), i micoidi permettono ai PG di passare attraverso le caverne indisturbati. Solo i PG capaci di comunicare con i micoidi (quelli che hanno fallito il loro tiro salvezza contro le spore di relazione) possono assistere in questo compito. I micoidi non rispondono bene ai PG che cercano di comunicare attraverso gesti e linguaggio del corpo, poiché considerano quel tipo di linguaggio come rozzo e incivile. Inoltre, poiché il linguaggio dei micoidi è di natura telepatica, incantesimi come comprendere le lingue e lingue sono di scarsa utilità per i PG in questo incontro.
+
+Più in profondità nella camera, più vicino all'uscita e alla Piattaforma 5, il terreno diventa estremamente paludoso mentre una sorgente naturale sgorga dal pavimento di pietra e ha creato una palude in miniatura. Il terreno qui è piuttosto scivoloso e difficile da attraversare senza cadere nell'acqua. Ulteriori informazioni su questa area possono essere trovate nell'incontro tattico.
+
+Incontro Tattico: Se i PG scelgono di attaccare i micoidi in qualsiasi momento, fare riferimento all'incontro tattico 4-9, Funghi Feroci (pagina 136).
+
+P5: AREA DI STAGING
+
+Lunghe ossa strette sono impilate ordinatamente in una serie di mucchi alti su questa piattaforma. Sacchi aperti contenenti fasci dei lunghi filamenti appiccicosi usati per legare insieme le piattaforme giacciono accanto agli ammassi di ossa.
+
+Oltre agli approvvigionamenti descritti sopra, questa piattaforma è vuota. I nani usano questa piattaforma come area di stoccaggio per ulteriori costruzioni. A un certo punto, pianificano di utilizzare le ossa trovate qui per completare la costruzione della passerella dalla Piattaforma 9 al tempio sottostante.
+
+P6: PRONTI, ATTENZIONE, MUORI!
+
+Questa piattaforma è vuota, tranne per la passerella arrotolata che conduce alla Piattaforma 7. Tuttavia, presumendo che il comandante dalla Piattaforma 2 abbia avuto successo nella fuga dai PG in quell'incontro, una trappola mortale attende i personaggi qui. Una volta che i PG girano o respingono la passerella che va dalla Piattaforma 6 alla Piattaforma 7 e iniziano a scendere quella passerella, un allievo incappucciato del dio malvagio sulla Piattaforma 8 respinge la sua passerella e la collega alla Piattaforma 6. Quando ciò accade, l'allievo incappucciato si muove per attaccare, e entrambi i chierici sperano di sorprendere i PG tra di loro sulla passerella. Incontro Tattico: 4-10, Pronti, Attenzione, Muori! (pagina 137).
+
+P7 E P8: VUOTE
+
+Presumendo che l'attacco sulla Piattaforma 6 si verifichi come descritto, queste due piattaforme sono essenzialmente vuote, anche se la Piattaforma 7 ha un'altra tavola e sedie di osso. Se i PG sono riusciti a impedire al chierico sulla Piattaforma 2 di fuggire, allora la Piattaforma 7 è vuota, e solo un singolo chierico sta di guardia sulla Piattaforma 8. In questo caso, il chierico lancia l'invisibilità quando vede avvicinarsi i PG e poi respinge il ponte che porta giù alla Piattaforma 9, fuggendo per avvertire Drexlyn degli intrusi.
+
+P9: NASCONDIGLIO DI DREXLYN
+
+Questa piattaforma ottagonale di osso è molto più grande di quelle sopra di essa. Un grande trono costruito interamente di osso si trova ad un'estremità della piattaforma e splende di una luminescenza pallida, illuminando chiaramente l'intera piattaforma. Sul trono siede un nano con la pelle simile a porcellana. La sua lussureggiante barba nera è legata in una lunga treccia che scende sotto la cintura, e la sua armatura nera sembra assorbire la luce dall'area circostante. Potrebbe essere scambiato per una statua, fino a quando i suoi occhi rosso sangue si schiudono, e il suo volto si contorce in un ringhio di puro odio.
+
+Drexlyn, il nano vampiro chierico che guida questa banda, è pazzo d'odio per i drow che originariamente hanno cacciato i suoi amati signori da Belkram’s Fall. Sebbene i PG potrebbero non essere drow, il nano non è troppo esigente su chi prende la sua vendetta. La bara di Drexlyn è nascosta alla base del suo grande trono di osso. Se i PG lo costringono alla fuga, possono notare che la sua forma gassosa si insinua tra le ossa che compongono il trono, e potrebbero vedere la sua bara tra le ombre all'interno (Controllo Avvistamento DC 20). Incontro Tattico: 4-11, Nascondiglio di Drexlyn (pagina 138).
+--------------------------
+Incontri
+
+INCONTRO 4-1
+
+MANGIATORI DEI VIVI
+
+Livello dell'incontro 6
+Usa questo incontro tattico con la descrizione della stanza a pagina 119.
+
+Mentre i PG esplorano le stazioni di guardia A-F, c'è la distinta possibilità che si scontrino con una coppia di grell. Conduci un solo incontro per stazione di guardia, se è presente una pattuglia di caccia di grell, come indicato da un controllo casuale.
+
+C'è una probabilità del 25% che i PG si scontrino con grell nelle stazioni di guardia A, B e C. La probabilità aumenta al 75% nelle stazioni di guardia D, E e F.
+
+Nelle stazioni di guardia A, B e C; tira nuovamente se si verifica uno scontro per determinare quale dei due incontri tattici utilizzare: 01-75, incontro 4-1; 76-100, incontro 4-2;
+
+Se il tiro indica l'incontro 4-1, leggi quanto segue mentre i grell si avvicinano all'area:
+
+Due creature fluttuano nella stanza. Assomigliano a cervelli massicci con becchi simili a raptor, che fluttuano sopra un groviglio di lunghi tentacoli ondulanti. Un canto in una strana lingua si emette dai loro becchi mentre si avvicinano.
+
+TATTICHE
+
+Determina in quale area della stazione di guardia avviene lo scontro con i grell (01-40, GS1; 41-75, GS2; 76-100, GS3). Le tattiche dei grell cambiano a seconda di dove avviene l'attacco.
+
+GS1: Se attaccano i PG dalla merlatura, i Selis planano dal tubo lavico al di fuori di Belkram's Fall. Sono consapevoli della torretta incantesimo qui e approfittano della confusione che crea, aspettando che i PG attivino l'incantesimo prima di scendere in picchiata per attaccare.
+
+GS2: I grell aspettano che i PG abbiano incontrato o siano nel bel mezzo di disattivare le trappole in questa area prima di attaccare. Approfittano delle loro capacità di volo dentro e intorno alle trappole a fossa, cercando di attirare i PG sulle trappole mentre fluttuano sopra di loro.
+
+GS3: Qui, i grell attaccano i PG mentre cercano di navigare sulle scale o scalare il muro di pietra per raggiungere la galleria sopra. I grell utilizzano la loro capacità di volare a loro vantaggio, attaccando quando i PG sono più vulnerabili e meno capaci di difendersi appieno. Mentre scalano, un PG perde il bonus di Destrezza alla CA (se presente) e non può usare uno scudo. Un personaggio che scala può mettersi in pausa per liberare una mano per lanciare un incantesimo o usare un'arma.
+
+TRAPPOLA
+
+Ogni stazione di guardia presenta una serie di trappole progettate per rallentare il progresso e indebolire eventuali intrusi. Queste sono descritte di seguito.
+
+GS1: Torrette Incantesimo
+
+Torrette Incantesimo della Stazione di Guardia (incantesimi del mago di 1° livello): CR 2; Dispositivo magico Diminutivo; innesco visivo (vero vedere); ripristino automatico; quattro effetti di incantesimi diversi lanciati una volta al round in un ordine prestabilito, nessun incantesimo lanciato ogni quinto round ma la torretta incantesimo si autoripara 4d8+20 pv; Ricerca DC 26; Disabilita Dispositivo DC 26; CA 7; durezza 8; pv 200.
+
+Stazioni A ed E Incantesimi: causare paura (CD 12), ingrassare (CD 12), raggio di indebolimento (tocco a distanza +5), dardo magico.
+
+Stazioni B e D Incantesimi: spruzzo di colore (CD 12), ingrassare (CD 12), sonno (CD 12), dardo magico.
+
+Stazioni C e F Incantesimi: dardo magico, ingrassare (CD 12), mani ustionanti (CD 12), dardo magico.
+
+Una particolare torretta incantesimo (una per porta) mira al creatura non riconosciuta più vicina e ha un arco di fuoco di 360 gradi. L'ordine in cui una torretta lancia i suoi incantesimi è stabilito; li cicla nell'ordine uguale ogni volta, curandosi e ripristinandosi ogni cinque round.
+
+GS2: Trappole
+
+Il cortile qui è coperto da due trappole da 10 piedi, attivate entrando in queste aree. Le trappole si reimpostano automaticamente ogni 5 round.
+
+Trappole a Catena per Inciampo (2) (Stazioni A e D): CR 2; meccanico; innesco di posizione; ripristino automatico; bersagli multipli (inciampo e attacco corpo a corpo); Attacco +15 corpo a corpo (inciampo; +6 contro controllo di Forza), Attacco +15 corpo a corpo (2d4+2, catena chiodata); Ricerca DC 15; Disabilita Dispositivo DC 18.
+
+Nota: Questa trappola è effettivamente una trappola che fa inciampare e una seconda trappola che attacca con una catena chiodata. Se l'attacco da inciampo ha successo, si applica un bonus di +4 all'attacco con la catena chiodata perché l'avversario è prono.
+
+Trappole a Fossa Mimetizzata (2) (Stazioni B e F): CR 2; meccanico; innesco di posizione; ripristino automatico; Riflessi DC 20 per evitare; 20 piedi di profondità (danni da caduta 2d6); bersagli multipli (primo bersaglio in ciascuno dei due quadrati adiacenti da 5 piedi); Ricerca DC 24; Disabilita Dispositivo DC 19.
+
+Trappole a Lama da Pavimento (2) (Stazioni C ed E): CR 1; meccanico; innesco di tocco; ripristino automatico; Attacco +10 corpo a corpo (2d4/x4, falce); Ricerca DC 22; Disabilita Dispositivo DC 22.
+
+GS3: Trappola della Scala
+
+Chiunque faccia un Controllo Avvistamento DC 20 quando è entro 5 piedi da una scala nota una colorazione strana nel metallo a circa cinque piedi di altezza. La strana colorazione è causata dalla scottatura provocata dalla trappola delle mani ustionanti impostata su ogni scala. Chiunque salga una scala senza disattivare questa trappola è soggetto al suo effetto. Trappola delle Mani Ustionanti: CR 3; dispositivo magico; innesco di prossimità (allarme); ripristino automatico; effetto magico (mani ustionanti, mago di 5° livello, 5d4, Riflessi DC 12 metà); Ricerca DC 26; Disabilita Dispositivo DC 26.
+
+CONCLUSIONE
+
+I PG devono sconfiggere o respingere i grell cacciatori per passare attraverso questa area e trovare il percorso verso la stazione di guardia successiva.
+
+Se un grell viene ridotto a 10 punti ferita o meno, cerca di fuggire per avvisare il resto della colonia. Un grell in fuga si dirige immediatamente al filosofo grell più vicino per riferire lo stato degli intrusi.
+
+Se un grell riesce a scappare, i PG hanno 1d4 minuti per lasciare la stazione di guardia prima che arrivi una coppia di grell o un capo cacciatore di grell e due grick per occuparsi di loro.
+
+DETTAGLI SULLA MAPPA TATTICA
+
+I dettagli sulla mappa tattica sono descritti di seguito. - Creature: Posiziona i grell (una volta che i PG li notano) ovunque nell'area in cui si svolge lo scontro. Trappole: Consulta le note in questo incontro per i dettagli sulle trappole progettate per rallentare, ostacolare e indebolire gli intrusi (come i PG) che cercano di attraversare l'area. Buio: Non c'è alcuna fonte di luce in questa area. I PG devono utilizzare le proprie fonti di luce o usare sensi come la visione notturna (se li hanno). In caso contrario, sono effettivamente accecati.

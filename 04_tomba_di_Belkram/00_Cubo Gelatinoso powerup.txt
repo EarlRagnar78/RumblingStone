@@ -1,0 +1,32 @@
+Cubo Gelatinoso powerup 
+
+Updated (12 HD)
+Size/Type	Large Ooze	Large Ooze
+Hit Dice	12d10+96 (162 hp)
+Initiative	-5	-5
+Speed	15 ft.	15 ft.
+Armor Class	8 (-1 size, -5 Dex, +4 natural), touch 8
+Base Attack/Grapple		+9/+17
+Attack		Slam +9 melee (2d6 + 2d6 acid)
+Full Attack	2 Slam +9 melee (2d6 + 2d6 acid)
+Space/Reach	10 ft./5 ft.
+Special Attacks	        Acid, engulf, paralysis
+Special Qualities	Blindsight 60 ft., immunity to electricity, ooze traits, transparent
+Saves		Fort +15, Ref -1, Will -1
+Abilities       Str 14, Dex 1, Con 28, Int Ø, Wis 1, Cha 1
+Skills	—	—
+Feats	—	—
+Environment	Underground	Underground
+Organization	Solitary	Solitary
+Challenge Rating		CR 8
+Treasure	As original	As original
+Alignment	Always neutral	Always neutral
+Changes and Explanations
+
+Special Abilities
+
+No changes were made to the cube’s special abilities (Acid, Engulf, Paralysis), but their save DCs scale with its HD:
+
+    Save DCs for Engulf and Paralysis are now DC25.
+
+

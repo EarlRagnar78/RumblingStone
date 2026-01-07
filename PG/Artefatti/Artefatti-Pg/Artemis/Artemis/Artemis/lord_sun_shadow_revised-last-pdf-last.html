@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lord of Sun and Shadow - Prestige Class</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0.5in;
+        }
+        
+        body {
+            font-family: 'Times New Roman', serif;
+            font-size: 10pt;
+            line-height: 1.3;
+            color: #2c1810;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f8f6f0 0%, #ede8dc 100%);
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #8B4513;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .class-title {
+            font-size: 24pt;
+            font-weight: bold;
+            color: #8B4513;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .subtitle {
+            font-size: 12pt;
+            font-style: italic;
+            color: #5d4e37;
+            margin: 5px 0;
+        }
+        
+        .quote {
+            font-style: italic;
+            text-align: center;
+            color: #5d4e37;
+            font-size: 11pt;
+            margin: 15px 0;
+            padding: 10px;
+            border-left: 3px solid #daa520;
+            background: rgba(218, 165, 32, 0.1);
+        }
+        
+        h2 {
+            color: #8B4513;
+            font-size: 14pt;
+            font-weight: bold;
+            border-bottom: 2px solid #daa520;
+            padding-bottom: 3px;
+            margin: 20px 0 10px 0;
+            text-transform: uppercase;
+        }
+        
+        h3 {
+            color: #5d4e37;
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 15px 0 8px 0;
+        }
+        
+        .ability-name {
+            font-weight: bold;
+            color: #8B4513;
+        }
+        
+        .ability-type {
+            font-style: italic;
+            color: #5d4e37;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 9pt;
+        }
+        
+        th {
+            background: linear-gradient(135deg, #8B4513, #a0522d);
+            color: white;
+            padding: 8px 4px;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid #654321;
+        }
+        
+        td {
+            padding: 6px 4px;
+            text-align: center;
+            border: 1px solid #daa520;
+            background: rgba(248, 246, 240, 0.8);
+        }
+        
+        tr:nth-child(even) td {
+            background: rgba(237, 232, 220, 0.8);
+        }
+        
+        .requirements {
+            background: rgba(139, 69, 19, 0.1);
+            border: 2px solid #8B4513;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .requirements h3 {
+            margin-top: 0;
+            color: #8B4513;
+        }
+        
+        ul {
+            margin: 8px 0;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin: 4px 0;
+        }
+        
+        .spell-list {
+            column-count: 2;
+            column-gap: 20px;
+            font-size: 9pt;
+        }
+        
+        .spell-level {
+            font-weight: bold;
+            color: #8B4513;
+            break-after: avoid;
+        }
+        
+        .invocation-list {
+            column-count: 2;
+            column-gap: 20px;
+            font-size: 9pt;
+        }
+        
+        .invocation-grade {
+            font-weight: bold;
+            color: #8B4513;
+            break-after: avoid;
+            margin-top: 10px;
+        }
+        
+        .page-break {
+            page-break-before: always;
+        }
+        
+        .two-column {
+            column-count: 2;
+            column-gap: 20px;
+            text-align: justify;
+        }
+        
+        .hit-die {
+            font-weight: bold;
+            color: #8B4513;
+            font-size: 11pt;
+        }
+        
+        .balance-note {
+            background: rgba(218, 165, 32, 0.2);
+            border: 2px solid #daa520;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-style: italic;
+        }
+        
+        .trading-note {
+            background: rgba(139, 69, 19, 0.2);
+            border: 2px solid #8B4513;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .trading-note h3 {
+            margin-top: 0;
+            color: #8B4513;
+        }
+        
+        .invocation-expansion {
+            background: rgba(75, 0, 130, 0.1);
+            border: 2px solid #4B0082;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .invocation-expansion h3 {
+            margin-top: 0;
+            color: #4B0082;
+        }
+        
+        .conflict-note {
+            background: rgba(255, 99, 71, 0.1);
+            border: 2px solid #FF6347;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .conflict-note h3 {
+            margin-top: 0;
+            color: #FF6347;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="class-title">Lord of Sun and Shadow</h1>
+        <div class="subtitle">Prestige Class</div>
+    </div>
+    
+    <div class="quote">
+        "In the breaking dawn, I cast both light and shadow. My path walks between Lathander's radiance and Mask's mysteries, for in duality lies true power."
+    </div>
+    
+    <h2>Description</h2>
+    <div class="two-column">
+        <p>The Lord of Sun and Shadow represents a rare spiritual awakening among those who channel eldritch power. These warlocks have discovered that true power comes not from darkness alone, but from embracing both the brilliant dawn of Lathander and the mysterious shadows of Mask. Their magic blends divine radiance with shadowy intrigue, creating a unique fusion that allows them to walk between worlds.</p>
+        
+        <p>Most warlocks are drawn to darker powers, making the Lord of Sun and Shadow an anomaly. Their journey begins when they experience a transformative vision—often during dawn or dusk—where both Lathander and Mask reveal complementary truths about the universe. They learn that light defines shadow, and shadow accentuates light; one cannot exist without the other.</p>
+        
+        <p>These enlightened warlocks channel their eldritch power through this philosophical duality. Their invocations take on aspects of both divine radiance and shadowy stealth. Their presence can be as blinding as the morning sun or as subtle as a thief in the night, depending on the need of the moment.</p>
+    </div>
+    
+    <div class="requirements">
+        <h3>Requirements</h3>
+        To qualify to become a Lord of Sun and Shadow, a character must fulfill the following criteria:
+        <ul>
+            <li><strong>Alignment:</strong> Chaotic Good</li>
+            <li><strong>Class:</strong> Warlock 5+</li>
+            <li><strong>Skills:</strong> Knowledge (arcana) 8 ranks, Knowledge (religion) 8 ranks</li>
+            <li><strong>Invocations:</strong> Must know at least one dark invocation</li>
+            <li><strong>Special:</strong> Must have performed a special ritual at dawn while wearing or carrying a symbol of Lathander, and another ritual at dusk while wearing or carrying a symbol of Mask. These rituals require spending at least 500 gp in offerings to each deity.</li>
+        </ul>
+    </div>
+
+    <div class="balance-note">
+        <h3>Alignment Change Consequences</h3>
+        <p><strong>Lost Powers:</strong> When a warlock changes alignment to Chaotic Good to take this class, they lose access to any Evil-aligned invocations (such as <em>curse of despair</em>, <em>wall of perilous flame</em>, or <em>dark discorporation</em>). They also lose 1 invocation known of their choice.</p>
+        
+        <p><strong>Gained Powers:</strong> They gain resistance to negative energy equal to their Charisma modifier, and can select from an expanded invocation list that includes Good-aligned options when they gain new invocations.</p>
+    </div>
+    
+    <div class="page-break"> </div>
+
+    
+    <div class="invocation-expansion">
+        <h3>Expanded Invocation List</h3>
+        <p>Lords of Sun and Shadow gain access to the following additional invocations, carefully designed to avoid overlap with standard warlock abilities, prestige class features, and the Ring of Chaotic Illumination:</p>
+        
+        <div class="invocation-list">
+            <div class="invocation-grade">Least Invocations:</div>
+            <em>Dawn's Warmth</em> - Your touch grants fast healing 1 for 3 rounds, usable 3 times per day.<br>
+            <em>Secret's Weight</em> - Sense if a creature is carrying significant secrets or lies about their identity.<br>
+            <em>Shrouded Steps</em> - Gain +4 competence bonus to Move Silently checks and leave no tracks.<br>
+            <em>Morning's Courage</em> - Grant +2 morale bonus against fear to all allies within 30 feet for 10 minutes.<br>
+            <em>Thief's Instinct</em> - Automatically detect traps within 10 feet, gain +4 bonus to Disable Device.
+            
+            <div class="invocation-grade">Lesser Invocations:</div>
+            <em>Renewal's Touch</em> - Remove one negative level or temporary ability damage, once per day.<br>
+            <em>Past Echoes</em> - Learn the history of a location by touching the ground for 1 minute.<br>
+            <em>False Dawn</em> - Create false sensory impressions in a 20-foot radius for 1 hour.<br>
+            <em>Mask's Timing</em> - Delay any one action for up to 3 rounds, then execute it perfectly.<br>
+            <em>Sacred Sanctuary</em> - Become untrackable by non-magical means for 24 hours.
+            
+            <div class="invocation-grade">Greater Invocations:</div>
+            <em>Lathander's Blessing</em> - Heal 3d8+level hp and remove all conditions except permanent ones.<br>
+            <em>Shadow Network</em> - Send messages through shadows to anyone you've met within 10 miles.<br>
+            <em>Divine Inquisition</em> - Force a creature to answer three questions truthfully (Will negates).<br>
+            <em>Master's Sleight</em> - Perform any Sleight of Hand, Disable Device, or Open Lock as if you rolled 20.<br>
+            <em>Twilight Refuge</em> - Create a 20-foot dimensional pocket accessible only to you and allies.
+            
+            <div class="invocation-grade">Dark Invocations:</div>
+            <em>Solar Wrath</em> - Create a 20-foot burst dealing 1d8 divine damage per 2 levels (max 10d8).<br>
+            <em>Shadow Dominion</em> - Control weather within 1 mile, but only at dawn or dusk.<br>
+            <em>Morning's Judgment</em> - Curse target with inability to benefit from concealment or invisibility.<br>
+            <em>Omniscient Eyes</em> - Know the location and condition of all creatures within 1 mile for 1 minute.<br>
+            <em>Duality Transcendent</em> - Gain immunity to all mind-affecting effects and energy drain for 1 hour.
+        </div>
+        
+        <p><strong>Special Note:</strong> Lords of Sun and Shadow can only select these invocations when they would normally gain a new invocation. They still must meet the grade requirements based on their effective warlock level.</p>
+    </div>
+   
+    <h2>Class Information</h2>
+    <p><span class="hit-die">Hit Die:</span> d8</p>
+    
+    <h3>Class Skills</h3>
+    <p>The Lord of Sun and Shadow's class skills (and the key ability for each skill) are: Bluff (Cha), Concentration (Con), Craft (Int), Diplomacy (Cha), Disguise (Cha), Gather Information (Cha), Heal (Wis), Hide (Dex), Intimidate (Cha), Jump (Str), Knowledge (arcana) (Int), Knowledge (religion) (Int), Knowledge (the planes) (Int), Knowledge (history) (Int), Listen (Wis), Move Silently (Dex), Profession (Wis), Search (Int), Sense Motive (Wis), Sleight of Hand (Dex), Spellcraft (Int), Spot (Wis), Tumble (Dex), Use Magic Device (Cha).</p>
+    
+    <p><strong>Skill Points at Each Level:</strong> 4 + Int modifier</p>
+    
+    <h2>Class Features</h2>
+    
+    <h3>Weapon and Armor Proficiency</h3>
+    <p>Lords of Sun and Shadow gain no additional weapon proficiencies, but they do gain proficiency with light armor if they don't already have it.</p>
+    
+    <h3><span class="ability-name">Light Armor Mastery</span> <span class="ability-type">(Ex)</span></h3>
+    <p>At 1st level, a Lord of Sun and Shadow can cast spells and use invocations while wearing light armor without incurring the normal arcane spell failure chance.</p>
+    
+    <h3><span class="ability-name">Radiant Blast</span> <span class="ability-type">(Su)</span></h3>
+    <p>At 1st level, a Lord of Sun and Shadow's eldritch blast undergoes a fundamental transformation. The blast becomes infused with divine radiance from Lathander. The damage becomes <strong>radiant energy</strong>—a unique damage type that follows these specific rules:</p>
+    
+    <ul>
+        <li><strong>Against Living Creatures:</strong> Deals damage normally (does not heal)</li>
+        <li><strong>Against Undead:</strong> Deals full damage plus 1 additional point per die rolled</li>
+        <li><strong>Against Evil Outsiders:</strong> Overcomes damage reduction as if it were both good-aligned and divine</li>
+        <li><strong>Resistance/Immunity:</strong> Creatures with positive energy resistance apply only half that resistance to radiant damage. Creatures immune to positive energy take half damage from radiant energy instead of none</li>
+        <li><strong>Vulnerability:</strong> Creatures vulnerable to positive energy take +50% damage from radiant energy</li>
+    </ul>
+    
+    <p><strong>Important:</strong> Radiant energy is <em>not</em> positive energy and does not heal living creatures. It is a damaging force that draws upon divine power to harm enemies while being particularly effective against undead and evil creatures.</p>
+    
+    <div class="balance-note">
+        <p><strong>Example:</strong> A 7th level Lord of Sun and Shadow (Warlock 5/Lord 2) deals 4d6 radiant blast damage. Against a skeleton, they would deal 4d6+4 radiant damage. Against a creature with positive energy resistance 10, the resistance would only reduce damage by 5. Against a living human, it deals 4d6 damage normally without healing.</p>
+    </div>
+    
+    <h3><span class="ability-name">Whispered Truths</span> <span class="ability-type">(Su)</span></h3>
+    <p>At 2nd level, the Lord gains Mask's gift for uncovering secrets. Once per day per class level, as a standard action, you can focus on a creature within 30 feet that you can see. Make a Sense Motive check opposed by the target's Bluff check. Success reveals one piece of significant information about the target: either their true identity (if disguised), their current primary goal, their greatest fear, or one secret they are actively trying to hide. This is a divination effect.</p>
+    
+    <h3><span class="ability-name">Dawn's Resilience</span> <span class="ability-type">(Su)</span></h3>
+    <p>At 3rd level, a Lord of Sun and Shadow gains Lathander's protection against corruption. They gain resistance to negative energy equal to their class level + their Charisma modifier. Additionally, they gain a +2 sacred bonus on saving throws against death effects, energy drain, disease, and necromancy spells or effects. They also become immune to supernatural fear effects.</p>
+    
+    <h3><span class="ability-name">Balanced Insights</span> <span class="ability-type">(Ex)</span></h3>
+    <p>At 4th level, drawing from both deities' wisdom, a Lord of Sun and Shadow gains enhanced understanding. They gain a +2 competence bonus to Diplomacy, Gather Information, Heal, Knowledge (religion), Search, and Sense Motive checks. These bonuses increase by +1 for every two additional Lord of Sun and Shadow levels beyond 4th (to a maximum of +5 at 10th level).</p>
+    
+    <h3><span class="ability-name">Enhanced Radiant Blast</span> <span class="ability-type">(Su)</span></h3>
+    <p>At 5th level, your Radiant Blast becomes more potent. Choose one of the following enhancements when you attain 5th level:</p>
+    <ul>
+        <li><strong>Purifying Ray:</strong> Your eldritch blast removes one ongoing negative effect (such as poison, disease, or curse) from the target if they fail a Fortitude save (DC 10 + half your class level + Charisma modifier). This only works on willing targets or creatures at 0 hit points or below.</li>
+        <li><strong>Revealing Light:</strong> Your eldritch blast dispels illusions and reveals true forms. Target must make a Will save or have all illusion effects on them dispelled and be unable to benefit from concealment for 1 round.</li>
+        <li><strong>Consecrating Strike:</strong> Your eldritch blast consecrates the ground where it strikes. The 5-foot square becomes consecrated (as <em>consecrate</em>) for 1 minute, providing bonuses to good creatures and penalties to undead.</li>
+    </ul>
+    <div class="page-break"> </div>
+    <h3><span class="ability-name">Illuminating Presence</span> <span class="ability-type">(Su)</span></h3>
+    <p>At 5th level, once per day, a Lord of Sun and Shadow can invoke divine radiance as a standard action. This creates bright illumination (not daylight) in a 30-foot radius centered on you for 1 round per class level. This light reveals the true nature of all creatures and objects within the area, dispels illusions of 3rd level or lower automatically, and grants all allies within the light a +2 morale bonus to attack rolls and saving throws. The light moves with you.</p>
+    
+    <h3><span class="ability-name">Twilight Invocation</span> <span class="ability-type">(Su)</span></h3>
+    <p>At 6th level, once per day, when using any warlock invocation that targets a creature, you can enhance it with the dual blessing of your patrons. The invocation's save DC increases by +2, and if the target fails their save, they are also affected by either <em>bless</em> (if they are not hostile to you) or <em>bane</em> (if they are hostile) for 1 minute. At 9th level, this ability can be used twice per day.</p>
+    
+    <h3><span class="ability-name">Sanctuary of Dusk</span> <span class="ability-type">(Su)</span></h3>
+    <p>At 7th level, three times per day as a swift action, a Lord of Sun and Shadow can invoke divine protection for 1 round per class level. This grants a +4 sacred bonus to AC and saves, immunity to charm and compulsion effects, and concealment (20% miss chance) against attacks from evil creatures. The effect ends if you make an attack against a non-evil creature or use a harmful invocation against an innocent.</p>
+    
+    <h3><span class="ability-name">Radiant Burst</span> <span class="ability-type">(Su)</span></h3>
+    <p>At 8th level, once per day as a full-round action, a Lord of Sun and Shadow can create a burst of purifying radiance. This affects a 20-foot radius centered on you. Creatures in the area take 2d6 points of radiant damage per class level (Reflex save for half damage, DC 10 + class level + Charisma modifier). Additionally, all negative effects (poisons, diseases, curses, negative levels) in the area are subject to targeted <em>greater dispel magic</em> (caster level equals your character level). You and your allies are immune to the damage but benefit from the cleansing effect.</p>
+    
+    <h3><span class="ability-name">Truth's Sanctuary</span> <span class="ability-type">(Su)</span></h3>
+    <p>At 9th level, once per day, a Lord of Sun and Shadow can create a zone of absolute truth. This functions as a combination of <em>zone of truth</em> and <em>detect thoughts</em> in a 20-foot radius for 1 minute per level. All creatures in the area cannot lie (Will save to negate initially, new save each round to resist), and you can read the surface thoughts of any creature that fails their save. Additionally, the area becomes consecrated ground for the duration.</p>
+    
+    <h3><span class="ability-name">Avatar of Balance</span> <span class="ability-type">(Su)</span></h3>
+    <p>At 10th level, once per day as a swift action, you can transform into an Avatar of Balance for 5 rounds. While in this form, you gain the following benefits:</p>
+    <ul>
+        <li>Your Radiant Blast damage increases by 2d6</li>
+        <li>You can use Whispered Truths as a move action and it affects all creatures within 30 feet</li>
+        <li>You gain damage reduction 10/evil and spell resistance equal to 10 + your character level</li>
+        <li>You gain immunity to negative energy and death effects</li>
+        <li>Your movement speed increases by 30 feet and you can move through difficult terrain freely</li>
+        <li>All your spells and invocations have their save DCs increased by +2</li>
+    </ul>
+    <div class="page-break"> </div>
+    <h3>Invocations</h3>
+    <p>At 3rd, 6th, and 9th level, a Lord of Sun and Shadow gains new invocations known as if he had also gained a level in the warlock class. The grade of invocations you can learn is determined by your effective warlock level (warlock level + half Lord of Sun and Shadow level, rounded down). <strong>When gaining new invocations, Lords of Sun and Shadow may choose from their expanded invocation list in addition to the standard warlock invocations available to their alignment.</strong></p>
+    
+    <h3>Spells</h3>
+    <p>Beginning at 2nd level, a Lord of Sun and Shadow gains the ability to cast a small number of divine spells. To cast a spell, you must have a Charisma score of at least 10 + the spell's level. Saving throws against these spells have a DC of 10 + spell level + your Charisma modifier. You cast spells as a favored soul of your Lord of Sun and Shadow level.</p>
+    
+    <p><strong>Spells Known:</strong> You learn spells according to the progression shown in the class table. When you gain access to a new spell level, you automatically learn one spell of that level from the Lord of Sun and Shadow spell list. At subsequent levels, you may learn additional spells as shown on the table.</p>
+  
+    
+    
+    <h2>Class Table</h2>
+    <table>
+        <tr>
+            <th>Level</th>
+            <th>BAB</th>
+            <th>Fort</th>
+            <th>Ref</th>
+            <th>Will</th>
+            <th>Special</th>
+            <th>Invocations</th>
+            <th>1st</th>
+            <th>2nd</th>
+            <th>3rd</th>
+            <th>4th</th>
+            <th>Spells Known</th>
+        </tr>
+        <tr>
+            <td>1st</td>
+            <td>+0</td>
+            <td>+0</td>
+            <td>+0</td>
+            <td>+2</td>
+            <td>Radiant Blast 1d6, Light Armor Mastery</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td>2nd</td>
+            <td>+1</td>
+            <td>+0</td>
+            <td>+0</td>
+            <td>+3</td>
+            <td>Whispered Truths</td>
+            <td>—</td>
+            <td>2</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>3rd</td>
+            <td>+2</td>
+            <td>+1</td>
+            <td>+1</td>
+            <td>+3</td>
+            <td>Dawn's Resilience</td>
+            <td>+1</td>
+            <td>3</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>4th</td>
+            <td>+3</td>
+            <td>+1</td>
+            <td>+1</td>
+            <td>+4</td>
+            <td>Balanced Insights</td>
+            <td>—</td>
+            <td>3</td>
+            <td>2</td>
+            <td>—</td>
+            <td>—</td>
+            <td>2/1</td>
+        </tr>
+        <tr>
+            <td>5th</td>
+            <td>+3</td>
+            <td>+1</td>
+            <td>+1</td>
+            <td>+4</td>
+            <td>Radiant Blast 3d6, Enhanced Radiant Blast, Illuminating Presence</td>
+            <td>—</td>
+            <td>3</td>
+            <td>3</td>
+            <td>—</td>
+            <td>—</td>
+            <td>3/2</td>
+        </tr>
+        <tr>
+            <td>6th</td>
+            <td>+4</td>
+            <td>+2</td>
+            <td>+2</td>
+            <td>+5</td>
+            <td>Twilight Invocation</td>
+            <td>+1</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>—</td>
+            <td>3/2/1</td>
+        </tr>
+        <tr>
+            <td>7th</td>
+            <td>+5</td>
+            <td>+2</td>
+            <td>+2</td>
+            <td>+5</td>
+            <td>Sanctuary of Dusk</td>
+            <td>—</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>—</td>
+            <td>4/3/2</td>
+        </tr>
+        <tr>
+            <td>8th</td>
+            <td>+6</td>
+            <td>+2</td>
+            <td>+2</td>
+            <td>+6</td>
+            <td>Radiant Burst</td>
+            <td>—</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>4/3/2/1</td>
+        </tr>
+        <tr>
+            <td>9th</td>
+            <td>+6</td>
+            <td>+3</td>
+            <td>+3</td>
+            <td>+6</td>
+            <td>Radiant Blast 5d6, Truth's Sanctuary</td>
+            <td>+1</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>5/4/3/2</td>
+        </tr>
+        <tr>
+            <td>10th</td>
+            <td>+7</td>
+            <td>+3</td>
+            <td>+3</td>
+            <td>+7</td>
+            <td>Avatar of Balance</td>
+            <td>—</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>5/4/3/2</td>
+    </table>
+  
+   
+    <h2>Spell List</h2>
+    <p>Lords of Sun and Shadow choose their spells from the following carefully curated list, drawn from Lathander's and Mask's portfolios while avoiding overlap with warlock invocations and class abilities:</p>
+    
+    <div class="spell-list">
+        <div class="spell-level">1st Level:</div>
+        <em>bless</em>, <em>comprehend languages</em>, <em>cure light wounds</em>, <em>detect secret doors</em>, <em>divine favor</em>, <em>endure elements</em>, <em>entropic shield</em>, <em>hide from undead</em>, <em>protection from evil</em>, <em>remove fear</em>, <em>sanctuary</em>, <em>shield of faith</em>, <em>undetectable alignment</em>
+        
+        <div class="spell-level">2nd Level:</div>
+        <em>aid</em>, <em>augury</em>, <em>cure moderate wounds</em>, <em>delay poison</em>, <em>find traps</em>, <em>gentle repose</em>, <em>lesser restoration</em>, <em>locate object</em>, <em>resist energy</em>, <em>status</em>, <em>zone of truth</em>
+        
+        <div class="spell-level">3rd Level:</div>
+        <em>create food and water</em>, <em>cure serious wounds</em>, <em>dispel magic</em>, <em>glyph of warding</em>, <em>magic circle against evil</em>, <em>prayer</em>, <em>protection from energy</em>, <em>remove blindness/deafness</em>, <em>remove curse</em>, <em>remove disease</em>, <em>speak with dead</em>
+        
+        <div class="spell-level">4th Level:</div>
+        <em>break enchantment</em>, <em>cure critical wounds</em>, <em>death ward</em>, <em>dimensional anchor</em>, <em>discern lies</em>, <em>divination</em>, <em>freedom of movement</em>, <em>neutralize poison</em>, <em>restoration</em>, <em>sending</em>, <em>spell immunity</em>, <em>tongues</em>
+    </div>
+
+    <div class="page-break"> </div>
+    <h2>Expanded Invocation Descriptions</h2>
+    
+    <div class="invocation-expansion">
+        <h3>Detailed Invocation Descriptions</h3>
+        
+        <p><strong>Dawn's Warmth</strong> (Least): Lathander's gentle healing flows through your touch. As a standard action, you can touch a living creature to grant them fast healing 1 for 3 rounds. This invocation can be used 3 times per day and does not work on undead or constructs.</p>
+        
+        <p><strong>Secret's Weight</strong> (Least): Mask grants you insight into hidden burdens. As a standard action, you can focus on a creature within 30 feet. You sense if they are carrying significant secrets, using a false identity, or actively deceiving others about their nature or intentions.</p>
+        
+        <p><strong>Shrouded Steps</strong> (Least): You move with supernatural stealth. You gain a +4 competence bonus to Move Silently checks and leave no tracks or scent trail. This effect lasts for 1 hour and can be activated a number of times per day equal to your Charisma modifier.</p>
+        
+        <p><strong>Morning's Courage</strong> (Least): Lathander's inspiring presence flows through you. All allies within 30 feet gain a +2 morale bonus on saves against fear effects for 10 minutes. This is a mind-affecting effect that can be used once per hour.</p>
+        
+        <p><strong>Thief's Instinct</strong> (Least): Mask sharpens your awareness of danger. You automatically detect mechanical traps within 10 feet (as if you had searched) and gain a +4 insight bonus to Disable Device checks. This awareness is always active.</p>
+        
+        <p><strong>Renewal's Touch</strong> (Lesser): The Morninglord's power restores what was lost. Once per day, you can touch a creature to remove one negative level or restore 1d4 points of temporary ability damage to one ability score of your choice.</p>
+        
+        <p><strong>Past Echoes</strong> (Lesser): Shadows remember what they have witnessed. By touching the ground and concentrating for 1 minute, you can learn what significant events occurred in this location within the past week. You see brief, silent visions of important moments.</p>
+        
+        <p><strong>False Dawn</strong> (Lesser): You create convincing illusions that affect multiple senses. This functions as <em>minor image</em> but affects a 20-foot radius and includes sound, smell, and tactile sensations. The illusion lasts for 1 hour or until dispelled.</p>
+        
+        <p><strong>Mask's Timing</strong> (Lesser): Perfect timing is the essence of both theft and divine intervention. Once per day, you can delay any single action (attack, spell, movement, etc.) for up to 3 rounds, then execute it with perfect timing for maximum effect (+2 bonus to the action's result).</p>
+        
+        <p><strong>Sacred Sanctuary</strong> (Lesser): Both deities hide your passage from mundane pursuit. For 24 hours, you cannot be tracked by non-magical means, leave no physical evidence of your presence, and gain a +10 bonus to Hide checks when not moving.</p>
+        
+        <p><strong>Lathander's Blessing</strong> (Greater): The Morninglord's full favor flows through you. You can touch a creature to heal 3d8 + your level hit points and remove all temporary negative conditions (fatigue, nausea, etc.) except permanent disabilities. This can be used once per day.</p>
+        
+        <p><strong>Shadow Network</strong> (Greater): You can send messages through the shadow realm. You can send a brief message (25 words or less) to any person you have met, regardless of distance, as long as they are on the same plane. The message appears as whispered words in shadows near the recipient.</p>
+        
+        <p><strong>Divine Inquisition</strong> (Greater): Both deities compel truth from the guilty. Target creature must make a Will save (DC 15 + your Charisma modifier) or be compelled to answer three questions truthfully. The target is aware of the compulsion but cannot resist if they fail the save.</p>
+        
+        <p><strong>Master's Sleight</strong> (Greater): Mask grants perfect skill to his faithful. Once per day, when making a Sleight of Hand, Disable Device, or Open Lock check, you can choose to treat your roll as if you had rolled a natural 20, regardless of the actual result.</p>
+        <div class="page-break"> </div>
+        <p><strong>Twilight Refuge</strong> (Greater): You create a sanctuary between worlds. This creates a 20-foot diameter extradimensional space accessible through shadows. The space exists for 8 hours and can house up to 8 Medium creatures. Time passes normally, but the space is undetectable from outside.</p>
+        
+        <p><strong>Solar Wrath</strong> (Dark): You channel Lathander's righteous fury. Create a 20-foot radius burst of radiant energy that deals 1d8 radiant damage per 2 caster levels (maximum 10d8). Evil creatures take maximum damage on their dice. This can be used once per day.</p>
+        
+        <p><strong>Shadow Dominion</strong> (Dark): You gain limited control over natural forces during liminal times. You can use <em>control weather</em> within a 1-mile radius, but only during the hour of dawn or dusk. The weather change reflects your emotional state and lasts for 4 hours.</p>
+        
+        <p><strong>Morning's Judgment</strong> (Dark): You curse enemies with Lathander's disfavor. Target creature cannot benefit from concealment, invisibility, or illusion effects for 24 hours. Additionally, they shed dim light in a 5-foot radius and cannot hide their emotions or intentions. Will save negates.</p>
+        
+        <p><strong>Omniscient Eyes</strong> (Dark): Perfect awareness flows through Mask's network of shadows. For 1 minute, you know the exact location, current hit points, and general condition of all creatures within 1 mile. This information updates in real-time but provides no details about abilities or intentions.</p>
+        
+        <p><strong>Duality Transcendent</strong> (Dark): You briefly achieve perfect balance between light and shadow. For 1 hour, you gain immunity to charm, compulsion, fear, and energy drain effects. Additionally, you can see and interact normally with creatures on the Ethereal Plane. Usable once per day.</p>
+    </div>
+ 
+    
+    <h2>Playing a Lord of Sun and Shadow</h2>
+    
+    <p><strong>Combat:</strong> In battle, you serve as a versatile support combatant. Your Radiant Blast provides consistent damage that's particularly effective against undead and evil creatures. Use your divine spells for healing and protection while your class abilities provide battlefield control through illumination and truth-revealing effects. Your expanded invocations offer unique tactical options unavailable to other warlocks.</p>
+    
+    <p><strong>Advancement:</strong> Prioritize Charisma for both invocation power and divine spellcasting effectiveness. Wisdom enhances your skill bonuses from Balanced Insights. Valuable feats include Ability Focus (Eldritch Blast), Extra Invocation, Spell Focus (Enchantment), and Augment Healing. Consider Sacred Healing and Divine Vigor if available.</p>
+    
+    <p><strong>Resources:</strong> Temples of Lathander may provide healing services and guidance on your divine aspects, while careful contact with Mask's followers can offer information networks and training in investigative techniques. Balance these relationships carefully, as extremists from either faith may question your dual devotion.</p>
+    
+    <div class="trading-note">
+        <h3>Warlock Level Trading (Optional Rule)</h3>
+        <p><strong>Trading Mechanism:</strong> Warlocks who fully embrace the Lord of Sun and Shadow path may permanently trade existing warlock levels for prestige class levels on a 1:1 basis, representing their fundamental transformation toward balance.</p>
+        
+        <p><strong>Requirements for Trading:</strong></p>
+        <ul>
+            <li>Must have at least 3 levels in Lord of Sun and Shadow</li>
+            <li>Must perform a special dawn-to-dusk ritual (24 hours) costing 1,000 gp per traded level</li>
+            <li>Must have the blessing of a high priest of both Lathander and Mask</li>
+            <li>Character must maintain Chaotic Good alignment</li>
+        </ul>
+        
+        <p><strong>Trading Benefits:</strong> Traded warlock levels become Lord of Sun and Shadow levels while maintaining total character progression. Eldritch blast advancement continues seamlessly, and invocations known are preserved (subject to alignment restrictions).</p>
+        <div class="page-break"> </div>
+        <p><strong>Restrictions:</strong> Cannot trade below Warlock 5. Trading is permanent and irreversible. Alignment changes result in loss of all traded levels.</p>
+    </div>
+    
+    <h2>Organizations and NPCs</h2>
+    
+    <p><strong>The Twilight Covenant:</strong> A secretive organization of Lords of Sun and Shadow who meet at dawn and dusk to share knowledge and coordinate efforts against threats to cosmic balance. Members identify each other through a ritual handshake that creates both radiant light and gentle shadow.</p>
+    
+    <p><strong>Notable NPCs:</strong></p>
+    <ul>
+        <li><strong>Miraleth the Balanced:</strong> The legendary founder who achieved perfect equilibrium between light and shadow, now serving as a spiritual guide who appears during moments of great moral crisis.</li>
+        <li><strong>Brother Dawnwhisper:</strong> A reformed warlock who maintains secret shrines to both deities in major cities, serving as a contact point for new Lords seeking guidance.</li>
+        <li><strong>The Truthseeker:</strong> A mysterious figure who tests potential Lords through elaborate scenarios that challenge their commitment to both justice and necessary secrecy.</li>
+    </ul>
+    
+    <h2>Multiclassing and Advancement</h2>
+    
+    <p><strong>Ex-Lords of Sun and Shadow:</strong> A Lord who changes alignment away from Chaotic Good loses all supernatural and spell-like class abilities but retains skills and proficiencies. They cannot advance further until they return to Chaotic Good alignment through appropriate atonement.</p>
+    
+    <p><strong>Prestige Class Synergy:</strong> Lords of Sun and Shadow work well with Divine Oracle, Contemplative, or classes that emphasize investigation and divine magic. The balanced nature of their abilities makes them excellent candidates for unique regional prestige classes that serve dual-natured deities or cosmic balance.</p>
+    
+    <h2>Epic Level Progression</h2>
+    
+    <div class="trading-note">
+        <h3>Beyond 10th Level</h3>
+        <p>For epic-level Lords of Sun and Shadow (11th level and beyond):</p>
+        <ul>
+            <li><strong>Epic Attack Bonus:</strong> +1 every two levels after 10th</li>
+            <li><strong>Epic Saves:</strong> +1 every three levels after 10th</li>
+            <li><strong>Bonus Feats:</strong> Every three levels after 10th from the Epic Warlock list</li>
+            <li><strong>Avatar Enhancement:</strong> At 15th level, Avatar of Balance duration increases to 10 rounds and grants immunity to all energy types</li>
+            <li><strong>Perfect Equilibrium:</strong> At 20th level, can use any Good or Neutral invocation regardless of normal restrictions and gain immunity to alignment-based effects and compulsions</li>
+        </ul>
+    </div>
+    
+    <h2>Lore and Legends</h2>
+    
+    <div class="quote">
+        "She stood between the charging demon and the cowering villagers, radiance flowing from one hand while shadows gathered in the other. In that moment, I understood that true power comes not from choosing a side, but from understanding that some battles require both the mercy of dawn and the protection of night."<br>
+        —Tomas Brightblade, Paladin of Lathander
+    </div>
+    
+    <p>Lords of Sun and Shadow often serve as mediators in conflicts where both truth and discretion are required. Their unique perspective on morality—understanding that good sometimes requires secrecy and that truth must sometimes be tempered with compassion—makes them valuable allies to those who fight evil while protecting innocents.</p>
+    
+    <p>The first Lord of Sun and Shadow, Miraleth, is said to have experienced her dual vision during a rare astronomical event when Lathander's sunrise coincided with Mask's holy darkness during a solar eclipse. This moment of perfect balance revealed to her that the cosmic struggle between light and dark was not opposition but cooperation—each force defining and strengthening the other.</p>
+    
+    <p>Modern Lords continue this tradition, often becoming specialized investigators who can uncover truth without destroying lives, healers who can preserve necessary secrets, and guardians who protect both the innocent and the information that keeps them safe. They are particularly effective against aberrations and undead, as their balanced radiant energy disrupts the unnatural forces that animate such creatures.</p>
+—

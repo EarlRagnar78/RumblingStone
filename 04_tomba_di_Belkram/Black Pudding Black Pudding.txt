@@ -1,0 +1,26 @@
+Black Pudding
+	Black Pudding 	Elder Black Pudding
+Size/Type: 	Huge Ooze 	Gargantuan Ooze
+Hit Dice: 	10d10+60 (115 hp) 	20d10+180 (290 hp)
+Initiative: 	-5 	-5
+Speed: 	20 ft. (4 squares), climb 20 ft. 	20 ft. (4 squares), climb 20 ft.
+Armor Class: 	3 (-2 size, -5 Dex), touch 3, flat-footed 3 	1 (-4 size, -5 Dex), touch 1, flat-footed 1
+Base Attack/Grapple: 	+7/+18 	+15/+35
+Attack: 	Slam +8 melee (2d6+4 plus 2d6 acid) 	Slam +19 melee (3d6+12 plus 3d6 acid)
+Full Attack: 	Slam +8 melee (2d6+4 plus 2d6 acid) 	Slam +19 melee (3d6+12 plus 3d6 acid)
+Space/Reach: 	15 ft./10 ft. 	20 ft./20 ft.
+Special Attacks: 	Acid, constrict 2d6+4 plus 2d6 acid, improved grab 	Acid, constrict 2d8+12 plus 2d6 acid, improved grab
+Special Qualities: 	Blindsight 60 ft., split, ooze traits 	Blindsight 60 ft., split, ooze traits
+Saves: 	Fort +9, Ref -2, Will -2 	Fort +15, Ref +1, Will +1
+Abilities: 	Str 17, Dex 1, Con 22, Int Ø, Wis 1, Cha 1 	Str 26, Dex 1, Con 28, Int Ø, Wis 1, Cha 1
+Skills: 	Climb +11 	Climb +16
+Feats: 	— 	—
+Environment: 	Underground 	Underground
+Organization: 	Solitary 	Solitary
+Challenge Rating: 	7 	12
+Treasure: 	None 	None
+Alignment: 	Always neutral 	Always neutral
+Advancement: 	11-15 HD (Huge); 16-30 HD (Gargantuan) 	—
+Level Adjustment: 	— 	—
+
+The typical black pudding measures 15 feet across and 2 feet thick. It weighs about 18,000 pounds. 

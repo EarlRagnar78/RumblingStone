@@ -1,0 +1,107 @@
+You are absolutely right. The previous player sheet was too sparse on the "how-to" and "what's active" aspects, leaving the player in the dark about their legacy item progression. For a D&D 3.5 legacy item, this information is crucial for player engagement and goal-setting.
+
+Let's refine the player sheet to clearly indicate:
+1.  **Currently Active Powers:** Explicitly state what powers are available *now*.
+2.  **Ritual Paths for Unlocking:** Give clear hints or descriptions of what kind of challenges unlock subsequent powers/gems, without spoiling the exact details of the DM's campaign.
+3.  **Gem Power Hints:** Offer enticing flavor text and *potential* capabilities for the gems, indicating they are "attuned through trials."
+
+Here is the revised player sheet, designed for gradual discovery and player-driven progression:
+
+---
+
+# ⚒️ **Corona di Adamantio (Crown of Eternal Stone)**
+*A Divine Legacy Crown (Artifact) of Moradin, Father of Forges*
+
+> *“Forged in the deep heart of the world by Moradin’s own flame, the Crown of Eternal Stone stands as the unyielding spirit of dwarves made manifest.”*
+
+---
+
+### **Artifact Type:** Legacy Crown
+
+**Aura:** Overwhelming Evocation, Divination, and Abjuration
+**Caster Level:** 20th
+**Weight:** 3 lb
+**Material:** Adamantine and crystal of the deep earth
+**Alignment:** Lawful Good
+**Bearer Prerequisites:** Dwarf or Half-Dwarf, Base Attack Bonus +5, able to cast at least one divine spell, True Believer (Moradin)
+
+---
+
+### **Currently Active Powers**
+*(These powers are active as long as you meet the prerequisites and wear the crown.)*
+
+**Stone’s Awareness (Supernatural):**
+While touching natural ground or stone, you gain a **+1 morale bonus on attack and damage rolls** and a **+2 insight bonus to AC**. You may *detect secret doors* at will and *comprehend languages* at will.
+
+**Crown of Protection +2 (Extraordinary):**
+While worn, this crown provides a **+2 deflection bonus to your Armor Class**.
+
+---
+
+### **Powers Yet to Awaken**
+*(The following powers are part of the Corona di Adamantio but require further trials and devotion to Moradin to unlock.)*
+
+**Moradin’s Insight (Supernatural):**
+This power will eventually allow you to use *True Seeing* once per day and grant a significant bonus to Craft (Smithing) checks, revealing hidden truths within stone. *(Awaiting discovery through **The Deep Hall Trial**)*
+
+**Adamantine Will (Supernatural):**
+Once awakened, this power will grant you immense mental fortitude, making you immune to charm and compulsion effects while touching the earth, and strengthening your mind against all mental attacks. *(Awaiting discovery through **The Anvil of the World Ritual**)*
+
+**Mantle of Stone and Spirit (Supernatural):**
+This ultimate mental protection will eventually bestow a continuous *Mind Blank* effect upon you while worn, safeguarding your thoughts and presence from all forms of magical detection and intrusion. It also hints at direct communication with Moradin in sacred places. *(Awaiting discovery through **The Anvil of the World Ritual**)*
+
+---
+
+### **Integrated Sacred Gems (Attuned Through Trials)**
+
+The *Corona di Adamantio* contains three sacred gems. While physically present in the crown, their true powers require attunement through specific acts of faith and heroism.
+
+**1. Gem of Immutable Time (Topaz of the Eternal Forge):**
+This ancient topaz shimmers with an impossible light, hinting at the ability to manipulate time itself. You sense that this gem can open a path to a **past "forgepoint"** to correct a great wrong for dwarvenkind, but this power requires the deepest devotion and a great cost, especially to protect non-believing allies. It speaks of a momentous, singular act that will change history. *(Requires attunement through **The Deep Hall Trial** for initial use, and **The Anvil of the World Ritual** for full potential)*
+
+**2. Gem of True Earth (Emerald of the Deep Core):**
+This deep green emerald pulses with the living heart of Toril, promising control over the very stone beneath your feet. It speaks of power to reshape lands, mend blight, or unleash mountain's judgment in defense of dwarven homes. *(Requires attunement through **The Anvil of the World Ritual**)*
+
+**3. Gem of Dwarven Might (Ruby of the Soulforge):**
+A fiery ruby that radiates raw strength and courage, promising to envelop you and your allies in divine forge-light, bestowing immense personal power and inspiring unwavering bravery in battle. *(Requires attunement through **The Anvil of the World Ritual**)*
+
+---
+
+### **The Path of the Forgemind (Legacy Rituals)**
+
+The *Corona di Adamantio* is a legacy item; its full power is unlocked through performing sacred **Legacy Rituals of Stone**. Your journey, guided by Moradin, will lead you to these crucial moments:
+
+1.  **Forge’s Defense (Completed):** You have already completed this first trial, likely during a vivid dream-vision where you spiritually fought on a distant battlefield. This awakened the crown's initial protective and awareness powers.
+2.  **Trial of the Deep Hall:** You must embark on a quest deep into the Underdark, where you will face corruption and a forsaken dwarven soul. Overcoming this challenge will unlock further powers of the crown and begin the attunement of the **Gem of Immutable Time**.
+3.  **Anvil of the World:** This ultimate pilgrimage will lead you to the deepest Earth Node, a place of immense divine power. Here, you will commune with Moradin's essence and accept a great personal sacrifice, fully attuning all three sacred gems and awakening the crown's most potent protective abilities.
+4.  **Siege of the Eternal Forge:** The final, climactic ritual. With the crown and gems fully attuned, you must activate the **Gem of Immutable Time** to travel to the moment of dwarvenkind's greatest peril and lead them to victory. This act will fully realize the crown's destiny.
+
+---
+
+### **Aura of the Eternal Forge (Ultimate Destiny)**
+
+A legendary power whispered in the deepest chants of Moradin's priests. It is said to manifest only during the **Siege of the Eternal Forge** – a singular, world-altering event where the crown's full might will turn the tide of history, healing allies, empowering dwarves, and ensuring their survival. After this epic act, its power is consumed, forever etched into history.
+
+---
+
+### **Synergy with Aegis Fang (As Discovered)**
+
+If you wield both the Crown of Eternal Stone and *Aegis Fang*, a profound bond is forged:
+
+*   The crown awakens to full sentience, granting you immunity to domination and mind-control.
+*   *Aegis Fang* becomes a **+4 Holy Returning Dwarven Waraxe**, dealing extra damage against aberrations, undead, and dragons.
+*   Once per day, you can strike the ground to channel a *Heal* spell (CL 15) to all dwarves within 30 ft.
+*   You gain telepathic communication with all dwarves within 300 ft during battle, and your presence renders them immune to fear.
+*   In moments of ultimate need or within an Earth Node, *Aegis Fang* and the crown may merge into the **Hammer of the Eternal Forge**, a direct conduit for Moradin’s will.
+
+---
+
+### **Bearer’s Oath**
+
+> *“I am the stone that remembers,
+> the forge that endures,
+> the hammer that rebuilds.
+> By Moradin’s light I defend,
+> and by his anvil I am reforged.”*
+
+---

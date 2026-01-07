@@ -1,0 +1,57 @@
+J
+
+dato questo mostro : https://www.realmshelps.net/monsters/block/Beholder,_Death_Tyrant quale è la tattica migliore per muverlo ed attaccare al meglio considerando che posto a difesa dei livelli sottostanti di un tempio alto 24 metri e largo 15  profondo 30 metri . lui si trova a 9 metri da terra a circa 15 metri dall' entrata con lui ci sono 3 wraith che volano e a terra a circa 25 metri dall entrata c'e un drow warlock che lancia raggi appena vede nemici
+
+
+
+
+Ho modificato la mappa del tempio secondo le tue indicazioni, con le seguenti modifiche:
+
+Layout dei pilastri:
+
+Ho rimosso i pilastri centrali
+Ho posizionato 4 pilastri solo lungo le pareti laterali destra e sinistra
+Questo crea una navata centrale libera, ma anche molte zone d'ombra laterali
+
+
+Riposizionamento delle creature:
+
+Death Tyrant: Ora si trova nascosto nell'ombra vicino a un pilastro sul lato destro, a circa 9 metri d'altezza e 22-23 metri dall'entrata
+Wraith 1: Nascosto dietro/dentro il primo pilastro destro
+Wraith 2: Nascosto dietro/dentro un pilastro sinistro a metà tempio
+Wraith 3: Nascosto dietro/dentro l'ultimo pilastro destro vicino al fondo
+Drow Warlock: Nascosto nell'ombra sul lato destro in fondo al tempio
+
+
+Zone d'ombra:
+
+Ho aggiunto delle zone d'ombra (aree grigie semitrasparenti) dove le creature possono nascondersi
+Queste rappresentano punti strategici dove gli avversari avranno difficoltà a individuare i mostri
+
+
+
+Con questa disposizione, i mostri risultano molto più difficili da individuare:
+
+Per il Death Tyrant:
+
+È posizionato nell'ombra vicino a un pilastro
+I personaggi che entrano dovrebbero effettuare prove di Percezione (Saggezza) con CD elevata per notarlo
+Dal suo rifugio, può usare i raggi oculari senza esporsi completamente
+
+
+Per i Wraith:
+
+Sono incorporei, quindi possono letteralmente nascondersi dentro i pilastri
+Possono emergere improvvisamente per attaccare e poi ritornare al riparo
+Possono aspettare che il gruppo si addentri nel tempio prima di rivelare la loro presenza
+
+
+Per il Drow Warlock:
+
+È posizionato nell'ombra in fondo al tempio
+Ha una visuale completa dell'entrata, ma è difficile da vedere
+Può lanciare incantesimi da lunga distanza rimanendo parzialmente nascosto
+
+
+
+Questa configurazione offre un vantaggio tattico significativo ai difensori e richiederà un'attenta esplorazione e osservazione da parte degli avventurieri per non cadere in un'imboscata.

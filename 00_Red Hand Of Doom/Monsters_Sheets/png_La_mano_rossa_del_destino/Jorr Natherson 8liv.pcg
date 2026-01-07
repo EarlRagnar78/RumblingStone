@@ -1,0 +1,213 @@
+PCGVERSION:2.0
+
+# System Information
+CAMPAIGN:Faiths and Pantheons|CAMPAIGN:Drow of the Underdark|CAMPAIGN:Magic Item Compendium|CAMPAIGN:Complete Scoundrel|CAMPAIGN:Fiendish Codex II|CAMPAIGN:Cityscape (WotC)|CAMPAIGN:Complete Champion|CAMPAIGN:Complete Mage|CAMPAIGN:Complete Psionic|CAMPAIGN:Stormwrack|CAMPAIGN:Dragon Magic|CAMPAIGN:Tome of Battle: The Book of Nine Swords|CAMPAIGN:Player's Handbook II|CAMPAIGN:Tome of Magic|CAMPAIGN:Races of the Dragon|CAMPAIGN:Spell Compendium|CAMPAIGN:Champions of Valor|CAMPAIGN:Lords of Madness|CAMPAIGN:Magic of Incarnum|CAMPAIGN:Weapons of Legacy|CAMPAIGN:City of Splendors: Waterdeep|CAMPAIGN:Champions of Ruin|CAMPAIGN:3.5e ~ Heroes of Battle|CAMPAIGN:Sandstorm|CAMPAIGN:Lost Empires of Faerun|CAMPAIGN:Complete Adventurer|CAMPAIGN:Races of Destiny|CAMPAIGN:Complete Arcane|CAMPAIGN:Draconomicon|CAMPAIGN:Shining South|CAMPAIGN:Libris Mortis|CAMPAIGN:Frostburn|CAMPAIGN:Races of Stone|CAMPAIGN:Races of the Wild|CAMPAIGN:Complete Divine|CAMPAIGN:Expanded Psionics Handbook|CAMPAIGN:Player's Guide to Faerun|CAMPAIGN:Races of Faerun (35e)|CAMPAIGN:Races of Faerun (3e)|CAMPAIGN:Unearthed Arcana (Complete)|CAMPAIGN:Complete Warrior|CAMPAIGN:Dungeon Master's Guide II|CAMPAIGN:Fiend Folio|CAMPAIGN:3.5e ~ Heroes of Horror|CAMPAIGN:Underdark|CAMPAIGN:Book of Exalted Deeds|CAMPAIGN:Miniatures Handbook|CAMPAIGN:Unapproachable East|CAMPAIGN:3.5e ~ Book of Vile Darkness|CAMPAIGN:Monster Manual II|CAMPAIGN:Epic Level Handbook|CAMPAIGN:Magic of Faerun|CAMPAIGN:Monster Compendium - Monsters of Faerun|CAMPAIGN:Dragons of Faerun - Web Enhancement - City of Wyrmshadows|CAMPAIGN:Dungeonscape|CAMPAIGN:Dungeons & Dragons - Core Books
+VERSION:6.08.00 RC8
+ROLLMETHOD:0|EXPRESSION:0
+PURCHASEPOINTS:N
+CHARACTERTYPE:NPC
+PREVIEWSHEET:statblock4.htm
+POOLPOINTS:0
+POOLPOINTSAVAIL:28
+GAMEMODE:35e
+TABLABEL:0
+AUTOSPELLS:Y
+USEHIGHERKNOWN:N
+USEHIGHERPREPPED:N
+LOADCOMPANIONS:N
+USETEMPMODS:Y
+AUTOSORTGEAR:Y
+SKILLSOUTPUTORDER:0
+SKILLFILTER:2
+IGNORECOST:N
+ALLOWDEBT:N
+AUTORESIZEGEAR:Y
+
+# Character Bio
+CHARACTERNAME:Jorr Natherson
+TABNAME:
+PLAYERNAME:
+HEIGHT:0
+WEIGHT:0
+AGE:28
+GENDER:Male
+HANDED:Right
+SKINCOLOR:
+EYECOLOR:
+HAIRCOLOR:
+HAIRSTYLE:
+LOCATION:
+CITY:
+BIRTHDAY:
+BIRTHPLACE:
+PERSONALITYTRAIT1:
+PERSONALITYTRAIT2:
+SPEECHPATTERN:
+PHOBIAS:
+INTERESTS:
+CATCHPHRASE:
+PORTRAIT:
+
+# Character Attributes
+STAT:STR|SCORE:10
+STAT:DEX|SCORE:16
+STAT:CON|SCORE:14
+STAT:INT|SCORE:13
+STAT:WIS|SCORE:13
+STAT:CHA|SCORE:8
+ALIGN:CG
+RACE:Human
+
+# Character Class(es)
+CLASS:Ranger|LEVEL:5|SKILLPOOL:0
+CLASS:Rogue|LEVEL:3|SKILLPOOL:0|SPELLBASE:None|CANCASTPERDAY:
+CLASSABILITIESLEVEL:Ranger=1|HITPOINTS:8|SKILLSGAINED:32|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Ranger=2|HITPOINTS:5|SKILLSGAINED:8|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Ranger=3|HITPOINTS:4|SKILLSGAINED:8|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Rogue=1|HITPOINTS:4|PRESTAT:DEX=1|SKILLSGAINED:10|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Rogue=2|HITPOINTS:3|SKILLSGAINED:10|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Ranger=4|HITPOINTS:5|SKILLSGAINED:8|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Rogue=3|HITPOINTS:3|SKILLSGAINED:10|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Ranger=5|HITPOINTS:5|PRESTAT:WIS=1|SKILLSGAINED:8|SKILLSREMAINING:0
+
+# Character Experience
+EXPERIENCE:28000
+EXPERIENCETABLE:Default
+
+# Character Templates
+TEMPLATESAPPLIED:[NAME:Base Race Type|CHOSENTEMPLATE:[NAME:Base Race Type ~ Humanoid]]
+TEMPLATESAPPLIED:[NAME:Human Base]
+TEMPLATESAPPLIED:[NAME:Favored Class ~ HIGHESTLEVELCLASS]
+TEMPLATESAPPLIED:[NAME:First Level|APPLIEDTO:First Level ~ Ranger]
+TEMPLATESAPPLIED:[NAME:First Level ~ Ranger|CHOSENTEMPLATE:[NAME:Funds - NPC]]
+TEMPLATESAPPLIED:[NAME:Base Race Type ~ Humanoid]
+TEMPLATESAPPLIED:[NAME:Human Region ~ Shaar Region]
+TEMPLATESAPPLIED:[NAME:Ethnicity ~ Shaaran]
+TEMPLATESAPPLIED:[NAME:Funds - NPC]
+
+# Character Region
+REGION:Shaar
+
+# Character Skills
+SKILL:Appraise|OUTPUTORDER:1|
+SKILL:Balance|OUTPUTORDER:2|
+SKILL:Bluff|OUTPUTORDER:3|
+SKILL:Climb|OUTPUTORDER:4|
+SKILL:Concentration|OUTPUTORDER:5|CLASSBOUGHT:[CLASS:Ranger|RANKS:5.0|COST:1|CLASSSKILL:Y]
+SKILL:Control Shape|OUTPUTORDER:6|
+SKILL:Craft (Untrained)|OUTPUTORDER:7|
+SKILL:Diplomacy|OUTPUTORDER:8|
+SKILL:Diplomacy (Red Dragons)|OUTPUTORDER:9|
+SKILL:Disable Device|CLASSBOUGHT:[CLASS:Rogue|RANKS:7.0|COST:1|CLASSSKILL:Y]
+SKILL:Disguise|OUTPUTORDER:10|
+SKILL:Escape Artist|OUTPUTORDER:11|
+SKILL:Forgery|OUTPUTORDER:12|
+SKILL:Gather Information|OUTPUTORDER:13|
+SKILL:Handle Animal|OUTPUTORDER:14|CLASSBOUGHT:[CLASS:Ranger|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Heal|OUTPUTORDER:15|
+SKILL:Hide|OUTPUTORDER:16|CLASSBOUGHT:[CLASS:Ranger|RANKS:8.0|COST:1|CLASSSKILL:Y]CLASSBOUGHT:[CLASS:Rogue|RANKS:3.0|COST:1|CLASSSKILL:Y]
+SKILL:Hide (Forested Areas)|OUTPUTORDER:17|
+SKILL:Intimidate|OUTPUTORDER:18|
+SKILL:Intimidate (Demoralize opponent)|OUTPUTORDER:19|
+SKILL:Jump|OUTPUTORDER:20|
+SKILL:Knowledge (Geography)|OUTPUTORDER:21|CLASSBOUGHT:[CLASS:Ranger|RANKS:6.0|COST:1|CLASSSKILL:Y]
+SKILL:Knowledge (Local)|OUTPUTORDER:22|CLASSBOUGHT:[CLASS:Rogue|RANKS:6.0|COST:1|CLASSSKILL:Y]
+SKILL:Knowledge (Nature)|OUTPUTORDER:23|CLASSBOUGHT:[CLASS:Ranger|RANKS:6.0|COST:1|CLASSSKILL:Y]
+SKILL:Knowledge (Untrained)|OUTPUTORDER:24|
+SKILL:Listen|OUTPUTORDER:25|CLASSBOUGHT:[CLASS:Ranger|RANKS:8.0|COST:1|CLASSSKILL:Y]CLASSBOUGHT:[CLASS:Rogue|RANKS:3.0|COST:1|CLASSSKILL:Y]
+SKILL:Literacy|OUTPUTORDER:26|
+SKILL:Move Silently|OUTPUTORDER:27|CLASSBOUGHT:[CLASS:Ranger|RANKS:8.0|COST:1|CLASSSKILL:Y]CLASSBOUGHT:[CLASS:Rogue|RANKS:3.0|COST:1|CLASSSKILL:Y]
+SKILL:Move Silently (Forested Areas)|OUTPUTORDER:28|
+SKILL:Ride|OUTPUTORDER:29|
+SKILL:Search|OUTPUTORDER:30|CLASSBOUGHT:[CLASS:Ranger|RANKS:5.0|COST:1|CLASSSKILL:Y]CLASSBOUGHT:[CLASS:Rogue|RANKS:6.0|COST:1|CLASSSKILL:Y]
+SKILL:Sense Motive|OUTPUTORDER:31|
+SKILL:Spot|OUTPUTORDER:32|CLASSBOUGHT:[CLASS:Ranger|RANKS:6.0|COST:1|CLASSSKILL:Y]CLASSBOUGHT:[CLASS:Rogue|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Survival|OUTPUTORDER:33|CLASSBOUGHT:[CLASS:Ranger|RANKS:7.0|COST:1|CLASSSKILL:Y]
+SKILL:Swim|OUTPUTORDER:34|
+SKILL:Use Rope|OUTPUTORDER:35|CLASSBOUGHT:[CLASS:Rogue|RANKS:1.0|COST:1|CLASSSKILL:Y]CLASSBOUGHT:[CLASS:Ranger|RANKS:4.0|COST:1|CLASSSKILL:Y]
+
+# Character Languages
+LANGUAGE:Common|LANGUAGE:Shaaran
+
+# Character Feats
+FEATPOOL:0.0
+
+# Character Abilities
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Improved Initiative|TYPE:General.Fighter.DivineChampion.WizardDiviner.ViolentKnowledge|DESC:You can react more quickly than normal in a fight.
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Self-Sufficient|TYPE:General|DESC:You can take care of yourself in harsh environments and situations.
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Stealthy|TYPE:General.ShadowThief|DESC:You are particularly good at avoiding notice.
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Weapon Focus|APPLIEDTO:Longbow|TYPE:General.Fighter.Dragonrider.DivineChampion.ShadowThief.ViolentKnowledge|DESC:You are especially good at using this specified weapon.&pipe;!PRERULE&colon;1,DisplayFullFeat|DESC:Choose one type of weapon, such as greataxe. You can also choose unarmed strike or grapple (or ray, if you are a spellcaster) as your weapon for purposes of this feat. You are especially good at using this weapon. (If you have chosen ray, you are especially good with rays, such as the one produced by the ray of frost spell.)&pipe;PRERULE&colon;1,DisplayFullFeat
+USERPOOL:FEAT|POOLPOINTS:0.0
+ABILITY:Favored Enemy|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Favored Enemy ~ Giant|TYPE:Class Feature.Ranger Class Feature.FavoredEnemy.Extraordinary.SpecialAttack|DESC:Gain a +%1 bonus on Bluff, Listen, Sense Motive, Spot, and Survival checks when using these skills against creatures of this type. Likewise, he gets a +%1 bonus on weapon damage rolls against such creatures.&pipe;FavoredEnemyBonusGiant
+ABILITY:Favored Enemy|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Favored Enemy ~ Humanoid (Goblinoid)|TYPE:Class Feature.Ranger Class Feature.FavoredEnemy.Extraordinary.SpecialAttack.Favored Enemy Humanoid|DESC:Gain a +%1 bonus on Bluff, Listen, Sense Motive, Spot, and Survival checks when using these skills against creatures of this type. Likewise, he gets a +%1 bonus on weapon damage rolls against such creatures.&pipe;FavoredEnemyBonusHumanoidGoblinoid
+USERPOOL:Favored Enemy|POOLPOINTS:0.0
+ABILITY:Favored Enemy Bonus|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Favored Enemy Bonus ~ Giant|APPLIEDTO:|TYPE:FavoredEnemyBonus
+USERPOOL:Favored Enemy Bonus|POOLPOINTS:0.0
+ABILITY:First Level Feat|TYPE:NORMAL|CATEGORY:Internal|KEY:Select First Level Feat|APPLIEDTO:CATEGORY=FEAT&pipe;+1 Feat to feat pool&pipe;,CATEGORY=FEAT&pipe;+1 Feat to feat pool&pipe;|TYPE:FirstLevelFeatOnly|DESC:This will allow choices of First Level Only Feats the character would qualify for normally. The feat will be displayed on the export or preview only.
+USERPOOL:First Level Feat|POOLPOINTS:0.0
+ABILITY:Human Ethnicity|TYPE:NORMAL|CATEGORY:Internal|KEY:Human Ethnicity ~ Shaaran|TYPE:Human Ethnicity.Faerun Ethnicity|DESC:The grasslands of the Shaar are home to nomadic tribes of long-faced, yellow-skinned humans. Conquered by the armies of Calimshan at the height of the Shoon Empire,the Shaarans of the eastern grasslands reverted to their nomadic ways once the Shoon Empire collapsed, while those who dwelt along the shores of the Shining Sea and the Lake of Steam settled in cities and founded such realms as Lapaliiya and the ever-changing Border Kingdoms. Today, Shaarans are found as far west as Calimshan and as far north as the Vilhon Reach. The inhabitants of Sespech are largely of Shaaran descent, having been brought north to serve in Jhaamdath's armies centuries ago. Speakers of Shaaran employ an alphabet of Dethek runes, adopted from the gold dwarf traders of the Great Rift before the rise of the Shoon Empire. If there ever was a Shaaran pantheon, it was long ago subsumed by the more powerful Jhamdaathan and Calishite cultures. Little record exist of Shaaran culture before it was assimilated by its more powerful neighbors, for Shaarans have long maintained a nomadic way of life and an oral history.
+USERPOOL:Human Ethnicity|POOLPOINTS:0.0
+ABILITY:Ranger Class|TYPE:NORMAL|CATEGORY:Internal|KEY:Standard Ranger|TYPE:RangerClass
+USERPOOL:Ranger Class|POOLPOINTS:0.0
+ABILITY:Ranger Combat Style|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Combat Style ~ Archery|TYPE:Class Feature.Ranger Class Feature.SpecialQuality.RangerCombatStyle|DESC:The Ranger has chosen to specialise in Archery
+USERPOOL:Ranger Combat Style|POOLPOINTS:0.0
+ABILITY:Region|TYPE:NORMAL|CATEGORY:Regional|KEY:Human Region ~ Shaar Region|TYPE:Region.FaerunRegion|DESC:This vast savanna stretches for more than 1,000 miles across southern Faerun. The Shaar is home to numerous nomadic tribes, though it also supports a handful of more permanent settlements.  &amp;nl; Favored Deities&colon; Akadi, Mask, Shar, Tempus
+USERPOOL:Region|POOLPOINTS:0.0
+
+# Character Weapon proficiencies
+WEAPONPROF:[WEAPON:Aspergillum (Heavy)|WEAPON:Axe (Throwing)|WEAPON:Bash|WEAPON:Battle Gauntlet|WEAPON:Battleaxe|WEAPON:Blowgun|WEAPON:Boulder|WEAPON:Club|WEAPON:Crossbow (Hand)|WEAPON:Crossbow (Heavy)]
+WEAPONPROF:[WEAPON:Crossbow (Light)|WEAPON:Cutlass|WEAPON:Dagger|WEAPON:Dagger (Punching)|WEAPON:Dart|WEAPON:Dart Thruster|WEAPON:Darts (Barbed)|WEAPON:Falchion|WEAPON:Flail|WEAPON:Flail (Heavy)]
+WEAPONPROF:[WEAPON:Gauntlet|WEAPON:Gauntlet (Spiked)|WEAPON:Glaive|WEAPON:Goblin Stick|WEAPON:Grapple|WEAPON:Greataxe|WEAPON:Greatclub|WEAPON:Greatsword|WEAPON:Guisarme|WEAPON:Halberd]
+WEAPONPROF:[WEAPON:Hammer (Light)|WEAPON:Handaxe|WEAPON:Ice Axe|WEAPON:Javelin|WEAPON:Katana|WEAPON:Kukri|WEAPON:Lance|WEAPON:Lance (Flight)|WEAPON:Lance (Heavy)|WEAPON:Longbow]
+WEAPONPROF:[WEAPON:Longspear|WEAPON:Longsword|WEAPON:Mace (Heavy)|WEAPON:Mace (Light)|WEAPON:Maul|WEAPON:Morningstar|WEAPON:NoProfReq|WEAPON:Pick (Dire)|WEAPON:Pick (Heavy)|WEAPON:Pick (Light)]
+WEAPONPROF:[WEAPON:Quarterstaff|WEAPON:Ranged Spell|WEAPON:Ranseur|WEAPON:Rapier|WEAPON:Saber|WEAPON:Sap|WEAPON:Scimitar|WEAPON:Scythe|WEAPON:Shieldbash|WEAPON:Shortbow]
+WEAPONPROF:[WEAPON:Shortspear|WEAPON:Sickle|WEAPON:Sling|WEAPON:Spear|WEAPON:Spells (Ray)|WEAPON:Spells (Touch)|WEAPON:Spiked Armor|WEAPON:Strike (Unarmed)|WEAPON:Sword (Bastard)|WEAPON:Sword (Cutlass)]
+WEAPONPROF:[WEAPON:Sword (Saber)|WEAPON:Sword (Short)|WEAPON:Trident|WEAPON:Truncheon|WEAPON:Unarmed Strike|WEAPON:Wakizashi|WEAPON:Warhammer|WEAPON:Warmace]
+
+# Character Equipment
+MONEY:649.00
+EQUIPNAME:Amulet of Natural Armor +1|OUTPUTORDER:0|COST:2000|WT:0.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Arrow (20)|OUTPUTORDER:3|COST:1.0|WT:3.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Arrow (20)|DATA:NAME=Arrow (20)$EQMOD=STEEL.WOOD]
+EQUIPNAME:Explorer's Outfit|OUTPUTORDER:0|COST:10|WT:8.0|QUANTITY:1.0|NOTE:
+EQUIPNAME:Longbow +1|OUTPUTORDER:1|COST:2375.0|WT:3.0|QUANTITY:1.0|NOTE:|CUSTOMIZATION:[BASEITEM:Longbow|DATA:NAME=Longbow +1$EQMOD=WOOD.PLUS1W]
+EQUIPNAME:Studded Leather +1 (Medium)|OUTPUTORDER:2|COST:1162.5|WT:10.0|QUANTITY:2.0|NOTE:|CUSTOMIZATION:[BASEITEM:Desmodu ~ Studded Leather|DATA:NAME=Studded Leather +1 (Medium)$KEY=Desmodu _ Studded Leather +1 (Medium)$SIZE=M$EQMOD=STEEL.PLUS1A]
+EQUIPSET:Insieme di default|ID:0.1|USETEMPMODS:Y
+EQUIPSET:Both Hands|ID:0.1.01|VALUE:Longbow +1|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Equipped|ID:0.1.02|VALUE:Arrow (20)|QUANTITY:1.0|USETEMPMODS:Y
+EQUIPSET:Body|ID:0.1.03|VALUE:Studded Leather +1 (Medium)|QUANTITY:2.0|USETEMPMODS:Y
+CALCEQUIPSET:0.1
+
+# Temporary Bonuses
+
+# EquipSet Temp Bonuses
+
+# Character Deity/Domain
+DEITY:Eilistraee|DEITYDOMAINS:[DOMAIN:Chaos|DOMAIN:Charm|DOMAIN:Drow|DOMAIN:Elf|DOMAIN:Good|DOMAIN:Moon|DOMAIN:Portal]|ALIGNALLOW:|DESC:Eilistraee (F)|DEITYFAVWEAP:[WEAPON:Sword (Bastard)]|DEITYALIGN:CG
+
+# Character Spells Information
+SPELLBOOK:Prepared Spells|TYPE:2
+SPELLNAME:Embrace the Wild|TIMES:1|CLASS:Ranger|BOOK:Prepared Spells|SPELLLEVEL:1|SOURCE:[TYPE:CLASS|NAME:Ranger]
+
+# Character Description/Bio/History
+CHARACTERBIO:
+CHARACTERDESC:
+CHARACTERCOMP:
+CHARACTERASSET:
+CHARACTERMAGIC:
+CHARACTERDMNOTES:
+
+# Kits
+KIT:Extra gold
+
+# Character Master/Follower
+
+# Character Notes Tab
+
+# Age Set Selections
+AGESET:0:0:0:1:0:0:0:0:0:0
+
+# Campaign History
+
+# Suppressed Biography Fields
+SUPPRESSBIOFIELDS:
+

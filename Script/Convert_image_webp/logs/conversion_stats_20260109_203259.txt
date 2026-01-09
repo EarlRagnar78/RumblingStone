@@ -1,0 +1,4 @@
+WebP Conversion Report - ven 9 gen 2026, 20:37:14, CET
+Total: 320 | Processed: 531 | Failed: 0 | Archived: 531 | Skipped: 515
+Original Size: 236M
+WebP Size:     98M

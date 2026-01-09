@@ -272,7 +272,7 @@ Thumbs.db
 *.tif
 *.ico
 *.psd
-
+*.webp
 
 #Pdf_da_estrarre
 Script/Pdf_To_extract

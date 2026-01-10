@@ -279,3 +279,11 @@ Script/Pdf_To_extract
 Script/SoundTrack
 Script/avventura_con_modifiche
 Script/ImageBackup
+
+#vscode
+.vscode/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd

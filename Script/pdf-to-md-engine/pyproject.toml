@@ -9,14 +9,16 @@ dependencies = [
     "tqdm",
     "torch",
     "torchvision",
-    # OCR engines for better performance
-    "onnxruntime",
+    "psutil",
+    # High-precision OCR engines
     "easyocr",
-    "tesserocr",
-    # GPU acceleration
-    "onnxruntime-gpu",
+    "pytesseract",
+    "tesseract",
+    "paddlepaddle",
+    "paddleocr",
     # Additional performance packages
     "numpy",
     "pillow",
-    "opencv-python"
+    "opencv-python",
+    "scikit-image"
 ]

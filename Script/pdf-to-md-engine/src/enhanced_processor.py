@@ -631,37 +631,44 @@ def process_pdf_enhanced(pdf_path: Path):
         # Method 3: Docling conversion (GOOD for complex layouts)
         logger.info(f"Using docling conversion (reason: {extraction_method})")
         
-        def setup_converter(resource_manager):
-            pipeline_options = PdfPipelineOptions()
-            pipeline_options.do_ocr = pdf_characteristics.is_scanned
-            pipeline_options.do_table_structure = pdf_characteristics.table_count > 0
+        try:
+            def setup_converter(resource_manager):
+                pipeline_options = PdfPipelineOptions()
+                pipeline_options.do_ocr = pdf_characteristics.is_scanned
+                pipeline_options.do_table_structure = pdf_characteristics.table_count > 0
+                
+                return DocumentConverter(
+                    format_options={
+                        InputFormat.PDF: pipeline_options
+                    }
+                )
             
-            return DocumentConverter(
-                format_options={
-                    InputFormat.PDF: pipeline_options
-                }
-            )
-        
-        gc.collect()
-        if resource_manager.gpu_info["available"]:
-            torch.cuda.empty_cache()
-        
-        converter = setup_converter(resource_manager)
-        
-        with tqdm(desc="Converting PDF", unit="page") as pbar:
-            try:
+            gc.collect()
+            if resource_manager.gpu_info["available"]:
+                torch.cuda.empty_cache()
+            
+            converter = setup_converter(resource_manager)
+            
+            with tqdm(desc="Converting PDF", unit="page") as pbar:
                 result = converter.convert(pdf_path)
                 doc = result.document
                 full_md = doc.export_to_markdown()
                 # Apply markitdown-inspired post-processing
                 full_md = _merge_partial_numbering_lines(full_md)
                 pbar.update(1)
-            except Exception as e:
-                logger.error(f"PDF conversion failed: {e}")
-                # Final fallback to OCR
-                extraction_method = "ocr_primary"
-                full_md = "# OCR Processing Required\n\nDocument requires OCR processing."
-                doc = None
+                
+        except Exception as e:
+            logger.error(f"PDF conversion failed: {e}")
+            # Final fallback to enhanced text
+            extraction_method = "enhanced_text"
+            if extracted_text:
+                enhanced_text = clean_extracted_text(extracted_text)
+                enhanced_text = transform_text_enhanced(enhanced_text)
+                full_md = process_enhanced_text(enhanced_text)
+                logger.info(f"✅ Fallback to enhanced text: {len(full_md)} characters")
+            else:
+                full_md = "# Document Processing Failed\n\nUnable to extract text from this PDF."
+            doc = None
         
         if 'converter' in locals():
             del converter

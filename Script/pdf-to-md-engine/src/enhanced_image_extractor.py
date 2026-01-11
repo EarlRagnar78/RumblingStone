@@ -41,147 +41,16 @@ class EnhancedImageExtractor:
             self.doc.close()
     
     def extract_all_images(self) -> List[ExtractedImage]:
-        """Extract all quality images from PDF with merging"""
+        """Extract all quality images from PDF"""
         extracted_images = []
         
         for page_num in range(len(self.doc)):
             page_images = self._extract_page_images(page_num)
             extracted_images.extend(page_images)
         
-        # Merge adjacent images that might be parts of larger images
-        merged_images = self._merge_adjacent_images(extracted_images)
-        
-        logger.info(f"Extracted {len(extracted_images)} images, merged to {len(merged_images)}")
-        return merged_images
-    
-    def _merge_adjacent_images(self, images: List[ExtractedImage]) -> List[ExtractedImage]:
-        """Merge related images on same page with position analysis"""
-        if len(images) < 2:
-            return images
-        
-        # Group by page
-        pages = {}
-        for img in images:
-            if img.page_num not in pages:
-                pages[img.page_num] = []
-            pages[img.page_num].append(img)
-        
-        merged = []
-        for page_num, page_images in pages.items():
-            merged.extend(self._merge_page_images(page_images, page_num))
-        
-        return merged
-    
-    def _merge_page_images(self, page_images: List[ExtractedImage], page_num: int) -> List[ExtractedImage]:
-        """Merge related images on single page"""
-        if len(page_images) < 2:
-            return page_images
-        
-        merged = []
-        processed = set()
-        
-        for i, img in enumerate(page_images):
-            if i in processed:
-                continue
-            
-            group = [img]
-            group_indices = {i}
-            
-            # Find spatially related images
-            for j, other in enumerate(page_images):
-                if j in processed or j == i:
-                    continue
-                if self._are_related(img, other):
-                    group.append(other)
-                    group_indices.add(j)
-            
-            processed.update(group_indices)
-            
-            if len(group) > 1:
-                merged_img = self._create_merged_image(group, page_num)
-                merged.append(merged_img if merged_img else group[0])
-            else:
-                merged.append(img)
-        
-        return merged
-    
-    def _are_related(self, img1: ExtractedImage, img2: ExtractedImage) -> bool:
-        """Check if images are spatially related"""
-        x1, y1, x2, y2 = img1.bbox
-        x3, y3, x4, y4 = img2.bbox
-        
-        # Adjacent horizontally or vertically
-        h_gap = min(abs(x2 - x3), abs(x4 - x1))
-        v_gap = min(abs(y2 - y3), abs(y4 - y1))
-        h_aligned = abs((y1 + y2)/2 - (y3 + y4)/2) < 15
-        v_aligned = abs((x1 + x2)/2 - (x3 + x4)/2) < 15
-        
-        return (h_aligned and h_gap < 20) or (v_aligned and v_gap < 20)
-    
-    def _create_merged_image(self, images: List[ExtractedImage], page_num: int) -> Optional[ExtractedImage]:
-        """Create merged image with position metadata"""
-        try:
-            from PIL import Image
-            import json
-            
-            # Calculate canvas
-            min_x = min(img.bbox[0] for img in images)
-            min_y = min(img.bbox[1] for img in images)
-            max_x = max(img.bbox[2] for img in images)
-            max_y = max(img.bbox[3] for img in images)
-            
-            canvas_width = int(max_x - min_x)
-            canvas_height = int(max_y - min_y)
-            merged_img = Image.new('RGB', (canvas_width, canvas_height), 'white')
-            
-            # Track sources
-            sources = []
-            
-            # Place images
-            for img in images:
-                pil_img = Image.open(img.path)
-                rel_x = int(img.bbox[0] - min_x)
-                rel_y = int(img.bbox[1] - min_y)
-                merged_img.paste(pil_img, (rel_x, rel_y))
-                
-                sources.append({
-                    'file': img.path.name,
-                    'position': (rel_x, rel_y),
-                    'size': (img.width, img.height),
-                    'pdf_bbox': img.bbox
-                })
-                pil_img.close()
-            
-            # Save merged image and metadata
-            merged_path = self.output_dir / f"merged_p{page_num:03d}_{len(images)}imgs.png"
-            merged_img.save(merged_path)
-            merged_img.close()
-            
-            # Save metadata
-            with open(merged_path.with_suffix('.json'), 'w') as f:
-                json.dump({
-                    'page': page_num,
-                    'sources': sources,
-                    'canvas': (canvas_width, canvas_height),
-                    'pdf_bbox': (min_x, min_y, max_x, max_y)
-                }, f, indent=2)
-            
-            # Clean up originals
-            for img in images:
-                img.path.unlink(missing_ok=True)
-            
-            return ExtractedImage(
-                path=merged_path,
-                bbox=(min_x, min_y, max_x, max_y),
-                page_num=page_num,
-                image_type='merged',
-                width=canvas_width,
-                height=canvas_height
-            )
-            
-        except Exception as e:
-            logger.error(f"Merge failed: {e}")
-            return None
+        logger.info(f"Extracted {len(extracted_images)} images")
+        return extracted_images
+
     
     def _extract_page_images(self, page_num: int) -> List[ExtractedImage]:
         """Extract images from a single page"""
@@ -302,7 +171,7 @@ class EnhancedImageExtractor:
             return 'unknown'
     
     def generate_markdown_references(self, images: List[ExtractedImage]) -> str:
-        """Generate markdown with merge info"""
+        """Generate markdown references for images"""
         if not images:
             return ""
         
@@ -321,40 +190,13 @@ class EnhancedImageExtractor:
             
             for img in page_images:
                 rel_path = f"assets/{img.path.name}"
-                
-                if img.image_type == 'merged':
-                    metadata_path = img.path.with_suffix('.json')
-                    if metadata_path.exists():
-                        try:
-                            import json
-                            with open(metadata_path) as f:
-                                data = json.load(f)
-                            
-                            source_count = len(data.get('sources', []))
-                            markdown_parts.append(f"![Merged Image]({rel_path})")
-                            markdown_parts.append(f"*Merged from {source_count} images - {img.width}x{img.height}px*")
-                            
-                            markdown_parts.append("\n**Sources:**")
-                            for i, src in enumerate(data.get('sources', []), 1):
-                                pos = src.get('position', (0, 0))
-                                size = src.get('size', (0, 0))
-                                markdown_parts.append(f"- {i}. {src.get('file', 'unknown')} at ({pos[0]}, {pos[1]}) - {size[0]}x{size[1]}px")
-                            markdown_parts.append("")
-                            
-                        except Exception:
-                            markdown_parts.append(f"![{img.image_type.title()}]({rel_path})")
-                            markdown_parts.append(f"*{img.image_type.title()} - {img.width}x{img.height}px*\n")
-                    else:
-                        markdown_parts.append(f"![{img.image_type.title()}]({rel_path})")
-                        markdown_parts.append(f"*{img.image_type.title()} - {img.width}x{img.height}px*\n")
-                else:
-                    markdown_parts.append(f"![{img.image_type.title()}]({rel_path})")
-                    markdown_parts.append(f"*{img.image_type.title()} - {img.width}x{img.height}px*\n")
+                markdown_parts.append(f"![{img.image_type.title()}]({rel_path})")
+                markdown_parts.append(f"*{img.image_type.title()} - {img.width}x{img.height}px*\n")
         
         return "\n".join(markdown_parts)
 
 def extract_images_enhanced(pdf_path: Path, output_dir: Path) -> Tuple[List[ExtractedImage], str]:
-    """Enhanced image extraction with classification and markdown generation"""
+    """Enhanced image extraction with classification"""
     try:
         with EnhancedImageExtractor(pdf_path, output_dir) as extractor:
             images = extractor.extract_all_images()

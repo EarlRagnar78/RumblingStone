@@ -117,12 +117,28 @@ def install_system_dependencies():
     return True
 
 def setup_python_environment():
-    """Setup Python virtual environment and install dependencies"""
-    print("\n🐍 Setting up Python environment...")
+    """Setup Python virtual environment with Python 3.12 for full compatibility"""
+    print("\n🐍 Setting up Python environment with Python 3.12...")
     
-    # Create virtual environment
+    # Check if python3.12 is available
+    python312_cmd = None
+    for cmd in ["python3.12", "/usr/bin/python3.12", "python3"]:
+        try:
+            result = subprocess.run([cmd, "--version"], capture_output=True, text=True)
+            if "3.12" in result.stdout:
+                python312_cmd = cmd
+                print(f"✅ Found Python 3.12: {cmd}")
+                break
+        except:
+            continue
+    
+    if not python312_cmd:
+        print("⚠️  Python 3.12 not found, using system Python (may have compatibility issues)")
+        python312_cmd = sys.executable
+    
+    # Create virtual environment with Python 3.12
     if not Path("venv").exists():
-        if not run_command(f"{sys.executable} -m venv venv", "Creating virtual environment"):
+        if not run_command(f"{python312_cmd} -m venv venv", "Creating Python 3.12 virtual environment"):
             return False
     
     # Determine pip command
@@ -134,18 +150,49 @@ def setup_python_environment():
     # Upgrade pip
     run_command(f"{pip_cmd} install --upgrade pip", "Upgrading pip")
     
-    # Install requirements with fallbacks for optional dependencies
-    print("📦 Installing core dependencies...")
-    run_command(f"{pip_cmd} install -r requirements.txt", "Installing all dependencies", ignore_errors=True)
-    
-    # Install optional dependencies with fallbacks
-    optional_deps = [
-        "magika>=0.5.0",
-        "easyocr>=1.7.0",
-        "scikit-image>=0.21.0",
-        "numba>=0.57.0"
+    # Install core dependencies first
+    core_deps = [
+        "cryptography>=3.0.0",
+        "pdfminer.six>=20220319",
+        "PyMuPDF>=1.23.0",
+        "pdfplumber>=0.10.0",
+        "pydantic>=2.0.0",
+        "pydantic-settings>=2.0.0",
+        "loguru>=0.7.0",
+        "tqdm>=4.65.0",
+        "jinja2>=3.1.0",
+        "psutil>=5.9.0",
+        "Pillow>=10.0.0",
+        "numpy>=1.24.0",
+        "chardet>=5.0.0",
+        "ftfy>=6.1.0"
     ]
     
+    print("📦 Installing core dependencies...")
+    for dep in core_deps:
+        run_command(f"{pip_cmd} install '{dep}'", f"Installing {dep.split('>=')[0]}", ignore_errors=True)
+    
+    # Install all optional dependencies (now compatible with Python 3.12)
+    optional_deps = [
+        "docling>=2.0.0",
+        "torch>=2.0.0",
+        "torchvision>=0.15.0",
+        "magika>=0.5.0",
+        "easyocr>=1.7.0",
+        "pytesseract>=0.3.10",
+        "opencv-python>=4.8.0",
+        "scikit-image>=0.21.0",
+        "numba>=0.57.0",
+        "scipy>=1.10.0",
+        "charset-normalizer>=3.0.0",
+        "requests>=2.28.0",
+        "beautifulsoup4>=4.11.0",
+        "lxml>=4.9.0",
+        "sympy>=1.11.0",
+        "tabulate>=0.9.0"
+    ]
+    
+    print("📦 Installing all optional dependencies...")
     for dep in optional_deps:
         run_command(f"{pip_cmd} install '{dep}'", f"Installing {dep.split('>=')[0]} (optional)", ignore_errors=True)
     
@@ -161,7 +208,7 @@ def verify_installation():
     else:
         python_cmd = "venv/bin/python"
     
-    # Test core imports
+    # Test all imports including optional
     test_imports = [
         ("docling", "Docling PDF processing"),
         ("fitz", "PyMuPDF"),
@@ -169,7 +216,14 @@ def verify_installation():
         ("torch", "PyTorch"),
         ("PIL", "Pillow"),
         ("numpy", "NumPy"),
-        ("loguru", "Loguru logging")
+        ("loguru", "Loguru logging"),
+        ("magika", "Magika content detection"),
+        ("easyocr", "EasyOCR engine"),
+        ("pytesseract", "Tesseract Python wrapper"),
+        ("cv2", "OpenCV"),
+        ("skimage", "Scikit-image"),
+        ("numba", "Numba JIT compiler"),
+        ("scipy", "SciPy")
     ]
     
     success_count = 0
@@ -191,7 +245,7 @@ def verify_installation():
     run_command(cmd, "Testing enhanced features", ignore_errors=True)
     
     print(f"\n📊 Installation Summary:")
-    print(f"   Core dependencies: {success_count}/{len(test_imports)} working")
+    print(f"   Dependencies: {success_count}/{len(test_imports)} working")
     
     return success_count >= len(test_imports) * 0.8
 

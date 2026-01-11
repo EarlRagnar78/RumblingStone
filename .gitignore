@@ -287,3 +287,5 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+Script/pdf-to-md-engine/data
+venv/

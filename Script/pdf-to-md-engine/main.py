@@ -1,7 +1,7 @@
 import sys
 from loguru import logger
 from src.config import settings
-from src.processor import process_pdf
+from src.enhanced_processor import process_pdf
 
 def main():
     logger.add(sys.stderr, format="{time} {level} {message}", level=settings.LOG_LEVEL)

@@ -11,5 +11,13 @@ def get_file_hash(file_path: Path) -> str:
     return sha256_hash.hexdigest()
 
 def clean_filename(text: str) -> str:
-    """Sanitize strings to be safe filenames."""
-    return "".join([c if c.isalnum() else "_" for c in text]).strip("_").lower()
+    """Sanitize strings to be safe filenames with length limit."""
+    # Limit length first
+    if len(text) > 50:
+        text = text[:50]
+    # Clean characters
+    cleaned = "".join([c if c.isalnum() or c in " -_" else "_" for c in text])
+    # Remove multiple underscores and trim
+    import re
+    cleaned = re.sub(r'_+', '_', cleaned).strip('_').lower()
+    return cleaned or "chapter"

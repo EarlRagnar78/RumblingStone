@@ -1,0 +1,50 @@
+# PDF to Markdown Engine v2.0 - Enhanced Requirements
+# Core dependencies for enhanced PDF processing
+
+# Crypto and Security (required by pdfplumber)
+cryptography>=3.0.0
+pdfminer.six>=20220319
+
+# PDF Processing & Text Extraction
+docling>=2.0.0
+PyMuPDF>=1.23.0
+pdfplumber>=0.10.0
+
+# Configuration Management
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# Logging and Progress
+loguru>=0.7.0
+tqdm>=4.65.0
+
+# Template Engine
+jinja2>=3.1.0
+
+# System Monitoring
+psutil>=5.9.0
+
+# Machine Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Image Processing
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# OCR Dependencies (install based on your needs)
+# EasyOCR (GPU-accelerated, recommended for high-performance systems)
+easyocr>=1.7.0
+opencv-python>=4.8.0
+
+# Tesseract (lightweight, good for CPU-only systems)
+pytesseract>=0.3.10
+
+# Text Processing & Encoding
+chardet>=5.0.0
+ftfy>=6.1.0
+
+# Development tools (optional)
+# pytest>=7.0.0
+# black>=23.0.0
+# isort>=5.12.0

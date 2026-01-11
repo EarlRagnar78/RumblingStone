@@ -531,7 +531,7 @@ def process_pdf_enhanced(pdf_path: Path):
     cpu_percent = psutil.cpu_percent()
     memory_percent = psutil.virtual_memory().percent
     available_gb = psutil.virtual_memory().available / (1024**3)
-    logger.info(f"Initial state - CPU: {cpu_percent:.1f}%, Memory: {memory_percent:.1f}%, Available: {available_gb:.1f}GB")
+    logger.info(f"📄 Processing PDF: {pdf_path.name}")
     
     # Enhanced PDF validation
     if not PDFUtilities.validate_pdf(pdf_path):
@@ -598,16 +598,21 @@ def process_pdf_enhanced(pdf_path: Path):
     
     if extraction_method == "layout_preserving" and has_text_layer:
         # Method 1: Layout-preserving extraction (BEST for structured documents)
-        layout_text = extract_pdf_with_layout(pdf_path)
-        if layout_text and len(layout_text) > 1000:  # Meaningful content
-            # Apply enhanced transformations and processing
-            layout_text = transform_text_enhanced(layout_text)
-            full_md = process_enhanced_text(layout_text)
-            logger.info(f"✅ Using layout-preserving extraction: {len(full_md)} characters")
-        else:
-            # Fallback to next best method
-            extraction_method = extraction_strategy['fallback_methods'][0]
-            logger.info(f"Layout extraction insufficient, falling back to {extraction_method}")
+        try:
+            from .layout_processor import extract_pdf_with_layout
+            layout_text = extract_pdf_with_layout(pdf_path)
+            if layout_text and len(layout_text) > 1000:  # Meaningful content
+                # Apply enhanced transformations and processing
+                layout_text = transform_text_enhanced(layout_text)
+                full_md = process_enhanced_text(layout_text)
+                logger.info(f"✅ Using layout-preserving extraction: {len(full_md)} characters")
+            else:
+                # Fallback to next best method
+                extraction_method = extraction_strategy['fallback_methods'][0]
+                logger.info(f"Layout extraction insufficient, falling back to {extraction_method}")
+        except Exception as e:
+            logger.error(f"Layout extraction failed: {e}")
+            extraction_method = "enhanced_text"
     
     if extraction_method == "enhanced_text" and has_text_layer:
         # Method 2: Enhanced text extraction (GOOD for text-heavy documents)

@@ -677,16 +677,8 @@ def process_pdf_enhanced(pdf_path: Path):
             try:
                 def setup_converter(resource_manager):
                     try:
-                        # Create PdfPipelineOptions with available attributes only
-                        pipeline_options = PdfPipelineOptions()
-                        pipeline_options.do_ocr = pdf_characteristics.is_scanned
-                        pipeline_options.do_table_structure = pdf_characteristics.table_count > 0
-                        
-                        converter = DocumentConverter(
-                            format_options={
-                                InputFormat.PDF: pipeline_options
-                            }
-                        )
+                        # Use basic DocumentConverter to avoid backend attribute issues
+                        converter = DocumentConverter()
                         logger.debug("DocumentConverter created successfully")
                         return converter
                     except Exception as e:

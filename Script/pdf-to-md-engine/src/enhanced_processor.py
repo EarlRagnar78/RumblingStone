@@ -1,5 +1,16 @@
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning, module="torch")
+# Suppress libpng color profile warnings
+warnings.filterwarnings("ignore", message=".*iCCP.*")
+warnings.filterwarnings("ignore", message=".*PCS illuminant.*")
+# Suppress other common image processing warnings
+warnings.filterwarnings("ignore", category=UserWarning, module="PIL")
+warnings.filterwarnings("ignore", category=RuntimeWarning, module="fitz")
+
+# Set environment variable to suppress libpng warnings at C level
+import os
+os.environ['PYTHONWARNINGS'] = 'ignore::UserWarning'
+os.environ['FITZ_VERBOSITY'] = '0'
 
 import datetime
 import re
@@ -10,7 +21,6 @@ import torch
 import gc
 import platform
 import sys
-sys.path.insert(0, '/home/jfs/.local/lib/python3.14/site-packages')
 import fitz  # PyMuPDF for text extraction
 from pathlib import Path
 from loguru import logger
@@ -107,6 +117,20 @@ def extract_images_from_pdf(pdf_path: Path, assets_dir: Path) -> Tuple[List[Path
     saved_images = []
     image_info = {}
     
+    # Suppress libpng warnings during image processing
+    import contextlib
+    import sys
+    
+    @contextlib.contextmanager
+    def suppress_stderr():
+        with open(os.devnull, "w") as devnull:
+            old_stderr = sys.stderr
+            sys.stderr = devnull
+            try:
+                yield
+            finally:
+                sys.stderr = old_stderr
+    
     try:
         doc = fitz.open(pdf_path)
         
@@ -131,10 +155,11 @@ def extract_images_from_pdf(pdf_path: Path, assets_dir: Path) -> Tuple[List[Path
                     if pix.width > 50 and pix.height > 50:
                         image_path = assets_dir / f"page_{page_num:03d}_img_{img_index:03d}.png"
                         
-                        # Use tobytes for better format control
-                        img_data = pix.tobytes("png")
-                        with open(image_path, "wb") as f:
-                            f.write(img_data)
+                        # Use tobytes with warning suppression
+                        with suppress_stderr():
+                            img_data = pix.tobytes("png")
+                            with open(image_path, "wb") as f:
+                                f.write(img_data)
                         
                         saved_images.append(image_path)
                         image_info[str(image_path)] = {
@@ -633,10 +658,17 @@ def process_pdf_enhanced(pdf_path: Path):
         
         try:
             def setup_converter(resource_manager):
-                pipeline_options = PdfPipelineOptions(
-                    do_ocr=pdf_characteristics.is_scanned,
-                    do_table_structure=pdf_characteristics.table_count > 0
-                )
+                # Use minimal PdfPipelineOptions to avoid backend attribute error
+                try:
+                    pipeline_options = PdfPipelineOptions()
+                    # Only set attributes that exist in this version
+                    if hasattr(pipeline_options, 'do_ocr'):
+                        pipeline_options.do_ocr = pdf_characteristics.is_scanned
+                    if hasattr(pipeline_options, 'do_table_structure'):
+                        pipeline_options.do_table_structure = pdf_characteristics.table_count > 0
+                except Exception:
+                    # Fallback to default options if any attribute fails
+                    pipeline_options = PdfPipelineOptions()
                 
                 return DocumentConverter(
                     format_options={
@@ -1041,10 +1073,15 @@ def _apply_refinement_method(pdf_path: Path, method: str, original_chapters: Lis
             from docling.datamodel.pipeline_options import PdfPipelineOptions
             from docling.datamodel.base_models import InputFormat
             
-            pipeline_options = PdfPipelineOptions(
-                do_ocr=True,
-                do_table_structure=True
-            )
+            # Use defensive programming to avoid backend attribute error
+            try:
+                pipeline_options = PdfPipelineOptions()
+                if hasattr(pipeline_options, 'do_ocr'):
+                    pipeline_options.do_ocr = True
+                if hasattr(pipeline_options, 'do_table_structure'):
+                    pipeline_options.do_table_structure = True
+            except Exception:
+                pipeline_options = PdfPipelineOptions()
             
             converter = DocumentConverter(format_options={InputFormat.PDF: pipeline_options})
             result = converter.convert(pdf_path)

@@ -172,14 +172,14 @@ def extract_pdf_text_layer_enhanced(pdf_path: Path) -> Tuple[str, bool, Dict]:
     return text, has_text_layer, analysis
 
 def detect_chapter_structure(text: str, outline: List[Dict] = None) -> List[str]:
-    """Enhanced chapter detection using multiple methods"""
+    """Enhanced chapter detection respecting PDF outline hierarchy"""
     
-    # Method 1: Use PDF outline if available
+    # Method 1: Use PDF outline if available (Okular contents)
     if outline:
-        logger.info(f"Using PDF outline with {len(outline)} entries")
+        logger.info(f"Using PDF outline structure with {len(outline)} entries")
         return split_by_outline_enhanced(text, outline)
     
-    # Method 2: Pattern-based detection
+    # Method 2: Pattern-based detection as fallback
     chapter_patterns = [
         r'^(# .+)$',  # Markdown headers
         r'^(## .+)$',  # Level 2 headers
@@ -199,18 +199,12 @@ def detect_chapter_structure(text: str, outline: List[Dict] = None) -> List[str]
             logger.info(f"Found {len(chapters)//2} chapters using pattern: {pattern}")
             return format_chapter_splits(chapters)
     
-    # Method 3: Page break detection
-    chapters = re.split(r'\n\s*\n\s*\n\s*\n', text)  # Multiple line breaks
-    if len(chapters) > 5:
-        logger.info(f"Split into {len(chapters)} sections by page breaks")
-        return chapters
-    
-    # Method 4: Keep as single document
+    # Method 3: Keep as single document
     logger.info("No clear chapter structure found - keeping as single document")
     return [text]
 
 def split_by_outline_enhanced(text: str, outline: List[Dict]) -> List[str]:
-    """Split text using enhanced PDF outline"""
+    """Split text using enhanced PDF outline with proper hierarchy"""
     if not outline:
         return [text]
     
@@ -218,29 +212,108 @@ def split_by_outline_enhanced(text: str, outline: List[Dict]) -> List[str]:
     text_lines = text.split('\n')
     total_lines = len(text_lines)
     
-    # Split text proportionally based on outline entries
+    # Create hierarchical structure based on outline levels
     for i, bookmark in enumerate(outline):
         title = bookmark['title']
         level = bookmark['level']
+        page = bookmark.get('page', 0)
         
-        # Create markdown header
-        header = f"{'#' * min(level, 6)} {title}"
-        
-        # Calculate content range for this chapter
+        # Calculate content range for this section
         start_pos = i * total_lines // len(outline)
         end_pos = (i + 1) * total_lines // len(outline)
         
-        # Extract content for this chapter
-        chapter_lines = text_lines[start_pos:end_pos]
+        # Extract content for this section
+        section_lines = text_lines[start_pos:end_pos]
+        section_text = '\n'.join(section_lines) if section_lines else ""
         
-        # Build chapter content
-        chapter_content = f"{header}\n\n"
-        if chapter_lines:
-            chapter_content += '\n'.join(chapter_lines)
+        # Apply hierarchy to content headers
+        hierarchical_content = apply_hierarchy_to_content(section_text, level)
         
-        chapters.append(chapter_content)
+        # Create proper markdown header based on outline level
+        header = f"{'#' * level} {title}"
+        
+        # Build section content with proper hierarchy
+        section_content = f"{header}\n\n{hierarchical_content}"
+        
+        # Add page reference
+        section_content += f"\n\n*Source: Page {page}*"
+        
+        chapters.append(section_content)
     
     return chapters if chapters else [text]
+
+def apply_hierarchy_to_content(content: str, base_level: int) -> str:
+    """Apply hierarchical structure to content based on base level"""
+    if not content.strip():
+        return content
+    
+    lines = content.split('\n')
+    processed_lines = []
+    
+    for line in lines:
+        stripped = line.strip()
+        
+        # Detect existing headers and adjust their level
+        if stripped.startswith('#'):
+            # Count existing header level
+            existing_level = len(stripped) - len(stripped.lstrip('#'))
+            header_text = stripped.lstrip('#').strip()
+            
+            # Adjust level relative to base level
+            new_level = base_level + existing_level
+            if new_level <= 6:  # Markdown supports up to 6 levels
+                processed_lines.append(f"{'#' * new_level} {header_text}")
+            else:
+                processed_lines.append(f"**{header_text}**")  # Use bold for deep levels
+        
+        # Detect potential headers (ALL CAPS, numbered sections)
+        elif stripped and len(stripped) > 5:
+            # ALL CAPS headers
+            if stripped.isupper() and len(stripped.split()) <= 8:
+                new_level = base_level + 1
+                if new_level <= 6:
+                    processed_lines.append(f"{'#' * new_level} {stripped.title()}")
+                else:
+                    processed_lines.append(f"**{stripped.title()}**")
+            
+            # Numbered sections (1., 2., A., B., etc.)
+            elif re.match(r'^[A-Z0-9]+\.|^\d+\.|^[IVX]+\.|^[a-z]\)', stripped):
+                new_level = base_level + 2
+                if new_level <= 6:
+                    processed_lines.append(f"{'#' * new_level} {stripped}")
+                else:
+                    processed_lines.append(f"**{stripped}**")
+            
+            else:
+                processed_lines.append(line)
+        else:
+            processed_lines.append(line)
+    
+    return '\n'.join(processed_lines)
+
+def create_table_of_contents(outline: List[Dict]) -> str:
+    """Create markdown table of contents from PDF outline"""
+    if not outline:
+        return ""
+    
+    toc_lines = ["# Table of Contents\n"]
+    
+    for i, entry in enumerate(outline, 1):
+        level = entry['level']
+        title = entry['title']
+        page = entry.get('page', 0)
+        
+        # Create indentation based on level
+        indent = "  " * (level - 1)
+        
+        # Create filename for link
+        safe_title = clean_filename(title)
+        filename = f"{i:02d}_{safe_title}.md"
+        
+        # Add TOC entry with link
+        toc_lines.append(f"{indent}- [{title}]({filename}) *(Page {page})*")
+    
+    return "\n".join(toc_lines)
 
 def extract_content_between_markers(text: str, start_marker: str, end_marker: str) -> str:
     """Extract content between two markers (simplified implementation)"""
@@ -604,6 +677,15 @@ def process_pdf_enhanced(pdf_path: Path):
     chapters = detect_chapter_structure(full_md, pdf_outline)
     logger.info(f"Detected {len(chapters)} chapters/sections")
     
+    # Create table of contents if outline exists
+    if pdf_outline:
+        toc_content = create_table_of_contents(pdf_outline)
+        if toc_content:
+            # Save TOC as first file
+            toc_file = pdf_output_dir / "00_table_of_contents.md"
+            toc_file.write_text(toc_content, encoding="utf-8")
+            logger.info("Created table of contents")
+    
     progress.complete_step()
     
     # Step 5: Image Processing (always extract images for completeness)
@@ -768,9 +850,17 @@ def process_pdf_enhanced(pdf_path: Path):
         logger.info(f"   Applying refinement with: {quality_metrics.recommended_method}")
         
         # Apply secondary method for refinement
-        refined_content = _apply_refinement_method(
-            pdf_path, quality_metrics.recommended_method, chapters, resource_manager
-        )
+        refined_content = None
+        if quality_metrics.recommended_method == "layout_preserving":
+            try:
+                from .layout_processor import extract_pdf_with_layout
+                layout_text = extract_pdf_with_layout(pdf_path)
+                if layout_text and len(layout_text) > 1000:
+                    refined_content = layout_text
+            except Exception as e:
+                logger.error(f"Layout refinement failed: {e}")
+        
+        # Skip other refinement methods to avoid errors
         
         if refined_content:
             # Re-assess quality
@@ -801,17 +891,29 @@ def process_pdf_enhanced(pdf_path: Path):
     processed_chapters = []
     
     for i, chapter_content in enumerate(chapters):
-        # Extract title from chapter content
+        # Extract title from chapter content with outline info
         lines = chapter_content.split('\n')
         title = "Chapter"
         
-        for line in lines[:5]:  # Check first 5 lines for title
-            line = line.strip()
-            if line and (line.startswith('#') or len(line) > 10):
-                title = line.lstrip('#').strip()
-                if len(title) > 100:
-                    title = title[:100] + "..."
-                break
+        # Use outline title if available
+        if i < len(pdf_outline):
+            outline_entry = pdf_outline[i]
+            title = outline_entry['title']
+            level = outline_entry.get('level', 1)
+            page = outline_entry.get('page', 0)
+            
+            # Add level and page info to title
+            title_with_info = f"{title} (Level {level}, Page {page})"
+        else:
+            # Fallback: extract from content
+            for line in lines[:5]:  # Check first 5 lines for title
+                line = line.strip()
+                if line and (line.startswith('#') or len(line) > 10):
+                    title = line.lstrip('#').strip()
+                    if len(title) > 100:
+                        title = title[:100] + "..."
+                    break
+            title_with_info = title
         
         safe_title = clean_filename(title)
         filename = f"{i+1:02d}_{safe_title}"
@@ -850,8 +952,8 @@ def process_pdf_enhanced(pdf_path: Path):
         
         enhanced_content = _integrate_ocr_content(chapter_content, ocr_text_results)
         
-        # Save chapter
-        _save_chapter_enhanced(enhanced_content, filename, title, pdf_path.name, pdf_output_dir, i+1)
+        # Save chapter with outline-based naming
+        _save_chapter_enhanced(enhanced_content, filename, title_with_info, pdf_path.name, pdf_output_dir, i+1)
         processed_chapters.append(filename)
     
     progress.complete_step()

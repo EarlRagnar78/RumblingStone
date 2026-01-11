@@ -83,9 +83,13 @@ class EnhancedImageExtractor:
                 image_path = self.output_dir / f"page_{page_num:03d}_img_{img_index:03d}.png"
                 
                 # Use tobytes with PNG format for better compatibility
-                img_data = pix.tobytes("png")
-                with open(image_path, "wb") as f:
-                    f.write(img_data)
+                try:
+                    img_data = pix.tobytes("png")
+                    with open(image_path, "wb") as f:
+                        f.write(img_data)
+                except Exception:
+                    # Fallback: save without color profile
+                    pix.save(image_path)
                 
                 # Get image position on page
                 img_rects = page.get_image_rects(xref)

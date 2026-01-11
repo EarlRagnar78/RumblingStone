@@ -39,10 +39,6 @@ except ImportError:
     PERFORMANCE_LIBS_AVAILABLE = False
     logger.warning("Performance libraries not available")
 
-from docling.document_converter import DocumentConverter
-from docling.datamodel.pipeline_options import PdfPipelineOptions
-from docling.datamodel.base_models import InputFormat
-
 # OCR imports with fallback handling
 try:
     import easyocr
@@ -58,6 +54,16 @@ try:
 except ImportError:
     TESSERACT_AVAILABLE = False
     logger.warning("Tesseract not available")
+
+# Docling imports with fallback handling
+try:
+    from docling.document_converter import DocumentConverter
+    from docling.datamodel.base_models import InputFormat
+    from docling.datamodel.pipeline_options import PdfPipelineOptions
+    DOCLING_AVAILABLE = True
+except ImportError:
+    DOCLING_AVAILABLE = False
+    logger.warning("Docling not available - will use alternative methods")
 
 from src.config import settings
 from src.utils import get_file_hash, clean_filename
@@ -654,45 +660,8 @@ def process_pdf_enhanced(pdf_path: Path):
     
     elif extraction_method == "docling_conversion" or not has_text_layer:
         # Method 3: Docling conversion (GOOD for complex layouts)
-        logger.info(f"Using docling conversion (reason: {extraction_method})")
-        
-        try:
-            def setup_converter(resource_manager):
-                # Use minimal PdfPipelineOptions to avoid backend attribute error
-                try:
-                    pipeline_options = PdfPipelineOptions()
-                    # Only set attributes that exist in this version
-                    if hasattr(pipeline_options, 'do_ocr'):
-                        pipeline_options.do_ocr = pdf_characteristics.is_scanned
-                    if hasattr(pipeline_options, 'do_table_structure'):
-                        pipeline_options.do_table_structure = pdf_characteristics.table_count > 0
-                except Exception:
-                    # Fallback to default options if any attribute fails
-                    pipeline_options = PdfPipelineOptions()
-                
-                return DocumentConverter(
-                    format_options={
-                        InputFormat.PDF: pipeline_options
-                    }
-                )
-            
-            gc.collect()
-            if resource_manager.gpu_info["available"]:
-                torch.cuda.empty_cache()
-            
-            converter = setup_converter(resource_manager)
-            
-            with tqdm(desc="Converting PDF", unit="page") as pbar:
-                result = converter.convert(pdf_path)
-                doc = result.document
-                full_md = doc.export_to_markdown()
-                # Apply markitdown-inspired post-processing
-                full_md = _merge_partial_numbering_lines(full_md)
-                pbar.update(1)
-                
-        except Exception as e:
-            logger.error(f"PDF conversion failed: {e}")
-            # Final fallback to enhanced text
+        if not DOCLING_AVAILABLE:
+            logger.warning("Docling not available - falling back to enhanced text")
             extraction_method = "enhanced_text"
             if extracted_text:
                 enhanced_text = clean_extracted_text(extracted_text)
@@ -702,6 +671,55 @@ def process_pdf_enhanced(pdf_path: Path):
             else:
                 full_md = "# Document Processing Failed\n\nUnable to extract text from this PDF."
             doc = None
+        else:
+            logger.info(f"Using docling conversion (reason: {extraction_method})")
+            
+            try:
+                def setup_converter(resource_manager):
+                    try:
+                        # Create PdfPipelineOptions with available attributes only
+                        pipeline_options = PdfPipelineOptions()
+                        pipeline_options.do_ocr = pdf_characteristics.is_scanned
+                        pipeline_options.do_table_structure = pdf_characteristics.table_count > 0
+                        
+                        converter = DocumentConverter(
+                            format_options={
+                                InputFormat.PDF: pipeline_options
+                            }
+                        )
+                        logger.debug("DocumentConverter created successfully")
+                        return converter
+                    except Exception as e:
+                        logger.error(f"DocumentConverter creation failed: {e}")
+                        # Fallback to basic converter
+                        return DocumentConverter()
+                
+                gc.collect()
+                if resource_manager.gpu_info["available"]:
+                    torch.cuda.empty_cache()
+                
+                converter = setup_converter(resource_manager)
+                
+                with tqdm(desc="Converting PDF", unit="page") as pbar:
+                    result = converter.convert(pdf_path)
+                    doc = result.document
+                    full_md = doc.export_to_markdown()
+                    # Apply markitdown-inspired post-processing
+                    full_md = _merge_partial_numbering_lines(full_md)
+                    pbar.update(1)
+                    
+            except Exception as e:
+                logger.error(f"PDF conversion failed: {e}")
+                # Final fallback to enhanced text
+                extraction_method = "enhanced_text"
+                if extracted_text:
+                    enhanced_text = clean_extracted_text(extracted_text)
+                    enhanced_text = transform_text_enhanced(enhanced_text)
+                    full_md = process_enhanced_text(enhanced_text)
+                    logger.info(f"✅ Fallback to enhanced text: {len(full_md)} characters")
+                else:
+                    full_md = "# Document Processing Failed\n\nUnable to extract text from this PDF."
+                doc = None
         
         if 'converter' in locals():
             del converter

@@ -633,9 +633,10 @@ def process_pdf_enhanced(pdf_path: Path):
         
         try:
             def setup_converter(resource_manager):
-                pipeline_options = PdfPipelineOptions()
-                pipeline_options.do_ocr = pdf_characteristics.is_scanned
-                pipeline_options.do_table_structure = pdf_characteristics.table_count > 0
+                pipeline_options = PdfPipelineOptions(
+                    do_ocr=pdf_characteristics.is_scanned,
+                    do_table_structure=pdf_characteristics.table_count > 0
+                )
                 
                 return DocumentConverter(
                     format_options={
@@ -1040,9 +1041,10 @@ def _apply_refinement_method(pdf_path: Path, method: str, original_chapters: Lis
             from docling.datamodel.pipeline_options import PdfPipelineOptions
             from docling.datamodel.base_models import InputFormat
             
-            pipeline_options = PdfPipelineOptions()
-            pipeline_options.do_ocr = True
-            pipeline_options.do_table_structure = True
+            pipeline_options = PdfPipelineOptions(
+                do_ocr=True,
+                do_table_structure=True
+            )
             
             converter = DocumentConverter(format_options={InputFormat.PDF: pipeline_options})
             result = converter.convert(pdf_path)

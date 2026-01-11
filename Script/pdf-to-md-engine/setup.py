@@ -277,6 +277,7 @@ def main():
         print("3. Run: python main.py")
     
     print("\n📚 Enhanced Features:")
+    print("   • Quality assessment and iterative refinement")
     print("   • Stream-based processing (markitdown)")
     print("   • Form-style table detection")
     print("   • Partial numbering merge")

@@ -12,6 +12,7 @@ def main():
         logger.warning(f"No PDFs found in {settings.INPUT_DIR}")
         return
 
+    logger.info(f"🚀 PDF-to-MD Engine v2.1 with Quality Assessment")
     logger.info(f"Found {len(pdfs)} PDFs to process.")
     
     for pdf in pdfs:

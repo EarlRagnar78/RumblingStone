@@ -1,6 +1,6 @@
 # PDF to Markdown Engine v2.1 - Enhanced Edition
 
-🚀 **Intelligent PDF to Markdown converter** integrating best practices from **pdfmd**, **markitdown**, and **docling** projects for superior text extraction, table detection, and document processing.
+🚀 **Intelligent PDF to Markdown converter** with **quality assessment and iterative refinement** integrating best practices from **pdfmd**, **markitdown**, and **docling** projects for superior text extraction, table detection, and document processing.
 
 ## ✨ Key Features
 
@@ -12,7 +12,8 @@
 - **🧠 Intelligent Resource Management** - Auto-detects system capabilities and optimizes performance
 - **⚡ GPU Acceleration** - CUDA support with conservative memory management
 - **📊 Real-time Monitoring** - System resource tracking with adaptive throttling
-- **🎯 Quality Assessment** - Text quality analysis and encoding fixes
+- **🎯 Quality Assessment** - **NEW v2.1** - Automatic quality scoring and iterative refinement
+- **🔄 Iterative Refinement** - **NEW v2.1** - Applies secondary methods when quality < 75%
 - **🔄 Parallel Processing** - Multi-threaded with dynamic worker allocation
 
 ## 🏗️ Architecture Integration
@@ -115,21 +116,15 @@ result = convert_pdf_enhanced("document.pdf")
 print(f"Method: {result.extraction_method}, Confidence: {result.confidence}")
 ```
 
-### Configuration
-Create/edit `.env` file:
-```bash
-# Paths
-INPUT_DIR=data/input
-OUTPUT_DIR=data/output
+### Quality Assessment (New)
+```python
+from src.quality_assessor import assess_extraction_quality
 
-# Processing
-MAX_WORKERS=auto
-USE_GPU=auto
-OCR_ENGINE=auto
-
-# OCR Settings
-OCR_LANGUAGES=en
-OCR_CONFIDENCE_THRESHOLD=0.7
+# Assess extraction quality
+quality = assess_extraction_quality(markdown_content, metadata)
+print(f"Overall Score: {quality.overall_score:.2f}")
+print(f"Needs Refinement: {quality.needs_refinement}")
+print(f"Recommended Method: {quality.recommended_method}")
 ```
 
 ## 🔍 Enhanced Features v2.1
@@ -273,6 +268,12 @@ The `.receipt` file includes:
 - OCR enhancement details
 
 ## 🆕 What's New in v2.1
+
+### Quality Assessment & Iterative Refinement
+- **Automatic Quality Scoring** - Comprehensive 4-metric assessment (text, structure, tables, images)
+- **Intelligent Refinement** - Applies secondary extraction methods when quality < 75%
+- **Quality Improvement Tracking** - Logs before/after scores, only keeps improvements
+- **Enhanced Logging** - Shows detailed quality metrics and final rating (EXCELLENT/GOOD/ACCEPTABLE)
 
 ### Stream Processing Integration
 - Unified interface for files, streams, and URLs

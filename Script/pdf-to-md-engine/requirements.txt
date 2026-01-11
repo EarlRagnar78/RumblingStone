@@ -1,11 +1,11 @@
 # PDF to Markdown Engine v2.0 - Enhanced Requirements
-# Core dependencies for enhanced PDF processing
+# Integrating best practices from pdfmd and markitdown projects
 
-# Crypto and Security (required by pdfplumber)
+# Core dependencies for enhanced PDF processing
 cryptography>=3.0.0
 pdfminer.six>=20220319
 
-# PDF Processing & Text Extraction
+# PDF Processing & Text Extraction (Enhanced)
 docling>=2.0.0
 PyMuPDF>=1.23.0
 pdfplumber>=0.10.0
@@ -34,12 +34,8 @@ numpy>=1.24.0
 opencv-python>=4.8.0
 scikit-image>=0.21.0
 
-# OCR Dependencies (install based on your needs)
-# EasyOCR (GPU-accelerated, recommended for high-performance systems)
+# OCR Dependencies
 easyocr>=1.7.0
-opencv-python>=4.8.0
-
-# Tesseract (lightweight, good for CPU-only systems)
 pytesseract>=0.3.10
 
 # Text Processing & Encoding
@@ -48,7 +44,23 @@ ftfy>=6.1.0
 numba>=0.57.0
 scipy>=1.10.0
 
-# Development tools (optional)
-# pytest>=7.0.0
-# black>=23.0.0
-# isort>=5.12.0
+# Enhanced features from analyzed repositories
+# Content detection and format analysis (markitdown inspired)
+magika>=0.5.0
+charset-normalizer>=3.0.0
+
+# HTTP handling for web content
+requests>=2.28.0
+
+# Advanced document processing
+beautifulsoup4>=4.11.0
+lxml>=4.9.0
+
+# Math and equation processing (from pdfmd)
+sympy>=1.11.0
+
+# Table processing enhancements
+tabulate>=0.9.0
+
+# Quality assessment and iterative refinement (v2.1)
+from src.quality_assessor import assess_extraction_quality

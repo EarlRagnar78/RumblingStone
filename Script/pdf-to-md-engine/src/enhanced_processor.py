@@ -52,6 +52,8 @@ except ImportError:
 from src.config import settings
 from src.utils import get_file_hash, clean_filename
 from src.pdf_utilities import PDFUtilities
+from src.enhanced_text_transformer import transform_text_enhanced
+from src.enhanced_table_detector import detect_tables_enhanced, format_table_markdown
 from src.enhanced_text_extractor import (
     extract_pdf_text_hybrid, 
     extract_pdf_outline_enhanced,
@@ -61,6 +63,40 @@ from src.enhanced_text_extractor import (
 from src.layout_processor import extract_pdf_with_layout
 from src.enhanced_image_extractor import extract_images_enhanced
 from src.pdf_analyzer import analyze_pdf_characteristics, get_extraction_strategy
+from src.math_processor import process_enhanced_text
+from src.quality_assessor import assess_extraction_quality, QualityMetrics
+
+# Markitdown-inspired text processing
+def _merge_partial_numbering_lines(text: str) -> str:
+    """Merge MasterFormat-style partial numbering with following text"""
+    import re
+    partial_pattern = re.compile(r"^\.\d+$")
+    lines = text.split("\n")
+    result_lines = []
+    i = 0
+    
+    while i < len(lines):
+        line = lines[i]
+        stripped = line.strip()
+        
+        if partial_pattern.match(stripped):
+            # Look for next non-empty line to merge
+            j = i + 1
+            while j < len(lines) and not lines[j].strip():
+                j += 1
+            
+            if j < len(lines):
+                next_line = lines[j].strip()
+                result_lines.append(f"{stripped} {next_line}")
+                i = j + 1
+            else:
+                result_lines.append(line)
+                i += 1
+        else:
+            result_lines.append(line)
+            i += 1
+    
+    return "\n".join(result_lines)
 
 # Initialize Jinja2
 template_env = Environment(loader=FileSystemLoader("src/templates"))
@@ -414,7 +450,7 @@ def process_pdf_enhanced(pdf_path: Path):
                 time.sleep(min(sleep_time, 2.0))  # Cap at 2 seconds
     
     # Initialize systems
-    progress = ProgressTracker(8)  # Added text enhancement step
+    progress = ProgressTracker(9)  # Added quality assessment step
     resource_manager = SystemResourceManager()
     
     # Step 1: Hash Check & Setup
@@ -491,7 +527,9 @@ def process_pdf_enhanced(pdf_path: Path):
         # Method 1: Layout-preserving extraction (BEST for structured documents)
         layout_text = extract_pdf_with_layout(pdf_path)
         if layout_text and len(layout_text) > 1000:  # Meaningful content
-            full_md = layout_text
+            # Apply enhanced transformations and processing
+            layout_text = transform_text_enhanced(layout_text)
+            full_md = process_enhanced_text(layout_text)
             logger.info(f"✅ Using layout-preserving extraction: {len(full_md)} characters")
         else:
             # Fallback to next best method
@@ -505,7 +543,9 @@ def process_pdf_enhanced(pdf_path: Path):
         else:
             enhanced_text = clean_extracted_text(extracted_text)
         
-        full_md = enhanced_text
+        # Apply enhanced transformations and processing
+        enhanced_text = transform_text_enhanced(enhanced_text)
+        full_md = process_enhanced_text(enhanced_text)
         logger.info(f"✅ Using enhanced text extraction: {len(full_md)} characters")
         doc = None  # Skip docling conversion
     
@@ -535,6 +575,8 @@ def process_pdf_enhanced(pdf_path: Path):
                 result = converter.convert(pdf_path)
                 doc = result.document
                 full_md = doc.export_to_markdown()
+                # Apply markitdown-inspired post-processing
+                full_md = _merge_partial_numbering_lines(full_md)
                 pbar.update(1)
             except Exception as e:
                 logger.error(f"PDF conversion failed: {e}")
@@ -700,7 +742,59 @@ def process_pdf_enhanced(pdf_path: Path):
     
     progress.complete_step()
     
-    # Step 7: Chapter Processing
+    # Step 8: Quality Assessment & Refinement
+    progress.start_step("Quality Assessment & Refinement")
+    
+    # Assess quality of extracted content
+    combined_content = "\n\n".join([chapter_content for chapter_content in chapters])
+    quality_metrics = assess_extraction_quality(combined_content, {
+        'pdf_characteristics': {
+            'page_count': pdf_characteristics.page_count,
+            'has_images': pdf_characteristics.has_images,
+        },
+        'text_analysis': text_analysis,
+        'extraction_strategy': {'method_used': extraction_method},
+        'ocr_text_results': len(ocr_text_results)
+    })
+    
+    logger.info(f"📊 Quality Assessment:")
+    logger.info(f"   Overall Score: {quality_metrics.overall_score:.2f}")
+    logger.info(f"   Text: {quality_metrics.text_completeness:.2f}, Structure: {quality_metrics.structure_preservation:.2f}")
+    logger.info(f"   Tables: {quality_metrics.table_quality:.2f}, Images: {quality_metrics.image_coverage:.2f}")
+    
+    # Apply refinement if needed
+    if quality_metrics.needs_refinement and quality_metrics.recommended_method:
+        logger.info(f"🔄 Quality below threshold ({quality_metrics.overall_score:.2f} < 0.75)")
+        logger.info(f"   Applying refinement with: {quality_metrics.recommended_method}")
+        
+        # Apply secondary method for refinement
+        refined_content = _apply_refinement_method(
+            pdf_path, quality_metrics.recommended_method, chapters, resource_manager
+        )
+        
+        if refined_content:
+            # Re-assess quality
+            refined_quality = assess_extraction_quality(refined_content, {
+                'pdf_characteristics': {'page_count': pdf_characteristics.page_count, 'has_images': pdf_characteristics.has_images},
+                'text_analysis': text_analysis,
+                'extraction_strategy': {'method_used': f"{extraction_method}+{quality_metrics.recommended_method}"},
+                'ocr_text_results': len(ocr_text_results)
+            })
+            
+            # Use refined content if quality improved
+            if refined_quality.overall_score > quality_metrics.overall_score:
+                chapters = refined_content.split("\n\n---\n\n")
+                quality_metrics = refined_quality
+                extraction_method = f"{extraction_method}+{quality_metrics.recommended_method}"
+                logger.success(f"✅ Refinement improved quality: {refined_quality.overall_score:.2f}")
+            else:
+                logger.info(f"⚠️ Refinement did not improve quality, keeping original")
+    else:
+        logger.success(f"✅ Quality acceptable: {quality_metrics.overall_score:.2f}")
+    
+    progress.complete_step()
+    
+    # Step 9: Chapter Processing
     progress.start_step("Chapter Processing")
     
     # Process chapters with better naming
@@ -762,7 +856,7 @@ def process_pdf_enhanced(pdf_path: Path):
     
     progress.complete_step()
     
-    # Step 8: Finalization
+    # Step 10: Finalization
     progress.start_step("Finalizing")
     
     # Save enhanced metadata with PDF analysis
@@ -793,6 +887,14 @@ def process_pdf_enhanced(pdf_path: Path):
         "outline_entries": len(pdf_outline),
         "ocr_engine": ocr_engine.engine_type,
         "ocr_text_results": len(ocr_text_results),
+        "quality_metrics": {
+            "overall_score": quality_metrics.overall_score,
+            "text_completeness": quality_metrics.text_completeness,
+            "structure_preservation": quality_metrics.structure_preservation,
+            "table_quality": quality_metrics.table_quality,
+            "image_coverage": quality_metrics.image_coverage,
+            "refinement_applied": quality_metrics.needs_refinement
+        },
         "system_info": {
             "cpu_cores": resource_manager.cpu_count,
             "memory_gb": resource_manager.total_memory,
@@ -814,6 +916,39 @@ def process_pdf_enhanced(pdf_path: Path):
     logger.info(f"📈 PDF: {pdf_characteristics.version}, {pdf_characteristics.creation_method}, {pdf_characteristics.pdf_standard}")
     logger.info(f"🎯 Method: {extraction_method} (confidence: {pdf_characteristics.extraction_confidence:.2f})")
     logger.info(f"📁 Chapters: {len(chapters)}, OCR text: {len(ocr_text_results)} extracts")
+    logger.info(f"🏆 Final Quality Score: {quality_metrics.overall_score:.2f} ({'EXCELLENT' if quality_metrics.overall_score > 0.9 else 'GOOD' if quality_metrics.overall_score > 0.75 else 'ACCEPTABLE' if quality_metrics.overall_score > 0.6 else 'NEEDS IMPROVEMENT'})")
+
+def _apply_refinement_method(pdf_path: Path, method: str, original_chapters: List[str], resource_manager) -> Optional[str]:
+    """Apply secondary extraction method for quality refinement"""
+    try:
+        if method == "docling_conversion":
+            from docling.document_converter import DocumentConverter
+            from docling.datamodel.pipeline_options import PdfPipelineOptions
+            from docling.datamodel.base_models import InputFormat
+            
+            pipeline_options = PdfPipelineOptions()
+            pipeline_options.do_ocr = True
+            pipeline_options.do_table_structure = True
+            
+            converter = DocumentConverter(format_options={InputFormat.PDF: pipeline_options})
+            result = converter.convert(pdf_path)
+            refined_md = result.document.export_to_markdown()
+            return _merge_partial_numbering_lines(refined_md)
+            
+        elif method == "layout_preserving":
+            layout_text = extract_pdf_with_layout(pdf_path)
+            if layout_text:
+                return process_enhanced_text(transform_text_enhanced(layout_text))
+                
+        elif method == "enhanced_text":
+            text, analysis = extract_pdf_text_hybrid(pdf_path)
+            if text:
+                return process_enhanced_text(transform_text_enhanced(clean_extracted_text(text)))
+                
+    except Exception as e:
+        logger.warning(f"Refinement method {method} failed: {e}")
+    
+    return None
 
 def _save_chapter_enhanced(content, filename, title, source, output_dir, index=0):
     """Enhanced chapter saving with better formatting"""

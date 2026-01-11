@@ -1,17 +1,33 @@
-# PDF to Markdown Engine v2.0 - Enhanced Edition
+# PDF to Markdown Engine v2.1 - Enhanced Edition
 
-🚀 **Intelligent PDF to Markdown converter** with enhanced text extraction, OCR integration, and better chapter detection.
+🚀 **Intelligent PDF to Markdown converter** integrating best practices from **pdfmd**, **markitdown**, and **docling** projects for superior text extraction, table detection, and document processing.
 
 ## ✨ Key Features
 
-- **🔍 Enhanced Text Extraction** - Hybrid approach using PyMuPDF + pdfplumber for better text quality
-- **📖 Smart Chapter Detection** - Uses PDF outline/bookmarks for accurate chapter structure
-- **🔧 OCR Enhancement** - Improves existing text layers instead of replacing them
+- **🔍 Multi-Strategy Text Extraction** - Combines PyMuPDF, pdfplumber, and docling with intelligent method selection
+- **📊 Enhanced Table Detection** - Form-style, bordered, and ASCII table detection inspired by markitdown
+- **🌊 Stream Processing** - Unified interface for files, streams, and URLs with intelligent content detection
+- **📖 Smart Chapter Detection** - PDF outline/bookmarks with pattern-based fallbacks
+- **🔧 OCR Enhancement** - Selective text layer improvement with confidence scoring
 - **🧠 Intelligent Resource Management** - Auto-detects system capabilities and optimizes performance
 - **⚡ GPU Acceleration** - CUDA support with conservative memory management
 - **📊 Real-time Monitoring** - System resource tracking with adaptive throttling
 - **🎯 Quality Assessment** - Text quality analysis and encoding fixes
 - **🔄 Parallel Processing** - Multi-threaded with dynamic worker allocation
+
+## 🏗️ Architecture Integration
+
+### **Integrated Projects**
+- **[pdfmd](https://github.com/VikParuchuri/pdfmd)** - Modular pipeline architecture, mathematical content processing
+- **[markitdown](https://github.com/microsoft/markitdown)** - Stream processing, form-style table detection, content analysis
+- **[docling](https://github.com/DS4SD/docling)** - Advanced PDF parsing, layout analysis, OCR integration
+
+### **Best Practices Applied**
+- **Stream-based processing** with intelligent content detection
+- **Multi-strategy table detection** for various document types
+- **Partial numbering merge** for MasterFormat-style documents
+- **Modular converter architecture** with priority-based selection
+- **Graceful fallbacks** for optional dependencies
 
 ## 🖥️ System Requirements
 
@@ -29,16 +45,32 @@
 
 ## 📦 Installation
 
-### 1. Install Dependencies
+### Quick Setup (Recommended)
 ```bash
-# Install core dependencies
-pip install -r requirements.txt
+# Automated setup with dependency management
+python setup.py
 
-# For development
-pip install -e .
+# Activate environment
+source activate.sh  # Linux/macOS
+# or
+activate.bat        # Windows
 ```
 
-### 2. System-Specific Setup
+### Manual Installation
+```bash
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/macOS
+# or venv\Scripts\activate  # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Install optional dependencies
+pip install magika easyocr scikit-image numba  # Optional but recommended
+```
+
+### System Dependencies
 
 #### Ubuntu/Debian
 ```bash
@@ -53,7 +85,7 @@ brew install tesseract
 ```
 
 #### Windows
-Download and install Tesseract from: https://github.com/UB-Mannheim/tesseract/wiki
+Download Tesseract from: https://github.com/UB-Mannheim/tesseract/wiki
 
 ## 🚀 Quick Start
 
@@ -62,11 +94,25 @@ Download and install Tesseract from: https://github.com/UB-Mannheim/tesseract/wi
 # Process PDFs in input directory
 python main.py
 
-# Use enhanced processing
+# Use enhanced processing with verbose output
 python run_enhanced.py
 
-# Test enhanced extraction
+# Test enhanced extraction features
 python test_enhanced_extraction.py
+```
+
+### Stream Processing (New)
+```python
+from src.stream_converter import convert_pdf_stream
+from src.unified_converter import convert_pdf_enhanced
+
+# Stream-based conversion
+result = convert_pdf_stream("document.pdf")
+print(result.markdown)
+
+# Enhanced conversion with analysis
+result = convert_pdf_enhanced("document.pdf")
+print(f"Method: {result.extraction_method}, Confidence: {result.confidence}")
 ```
 
 ### Configuration
@@ -86,47 +132,62 @@ OCR_LANGUAGES=en
 OCR_CONFIDENCE_THRESHOLD=0.7
 ```
 
-## 🔍 Enhanced Features
+## 🔍 Enhanced Features v2.1
 
-### Text Extraction Improvements
-- **Hybrid Extraction**: Combines PyMuPDF and pdfplumber for best results
-- **Encoding Fixes**: Handles ligatures (ﬁ→fi), smart quotes, and UTF-8 issues
-- **Quality Analysis**: Assesses text quality and recommends OCR enhancement
-- **Text Cleaning**: Removes artifacts and normalizes formatting
+### Stream-Based Processing (markitdown inspired)
+- **Unified Interface**: Handles files, streams, URLs uniformly
+- **Content Detection**: Uses magika for intelligent format detection
+- **Graceful Fallbacks**: Works without optional dependencies
+- **Metadata Preservation**: Rich metadata throughout pipeline
 
-### Chapter Detection Enhancements
-- **PDF Outline Support**: Uses PDF bookmarks for accurate chapter structure
-- **Pattern Recognition**: Detects various chapter formats (Chapter X, Part I, etc.)
-- **Smart Splitting**: Handles complex document structures
-- **Title Extraction**: Automatically extracts meaningful chapter titles
+### Enhanced Table Detection
+- **Form-Style Detection**: Analyzes word positions for borderless tables
+- **Multi-Strategy Approach**: Form → Bordered → ASCII tables
+- **Content Classification**: Distinguishes tables from paragraphs
+- **Confidence Scoring**: Quality assessment for each detection
 
-### OCR Enhancement
-- **Layer Improvement**: Enhances existing text instead of replacing it
-- **Selective Processing**: Only processes problematic text areas
-- **Quality Scoring**: Confidence-based text inclusion
-- **Artifact Detection**: Identifies and fixes OCR issues
+### Text Processing Improvements
+- **Partial Numbering Merge**: Handles MasterFormat-style documents (`.1`, `.2`)
+- **Mathematical Content**: Unicode to LaTeX conversion (α→\alpha, ∫→\int)
+- **Header/Footer Removal**: Intelligent pattern detection
+- **Encoding Fixes**: Handles ligatures, smart quotes, UTF-8 issues
+
+### Intelligent Method Selection
+- **PDF Analysis**: Comprehensive document characteristics detection
+- **Strategy Selection**: Optimal method based on PDF properties
+- **Fallback Chain**: Multiple methods with confidence scoring
+- **Performance Optimization**: Resource-aware processing
 
 ## 📊 Project Structure
 
 ```
 pdf-to-md-engine/
 ├── src/
-│   ├── config.py                    # Configuration management
-│   ├── enhanced_processor.py        # Main enhanced processing pipeline
-│   ├── enhanced_text_extractor.py   # Enhanced text extraction
-│   ├── pdf_text_analyzer.py         # Text quality analysis
-│   ├── utils.py                     # Utility functions
+│   ├── config.py                     # Configuration management
+│   ├── enhanced_processor.py         # Main processing pipeline
+│   ├── enhanced_text_extractor.py    # Multi-method text extraction
+│   ├── enhanced_table_detector.py    # Form-style table detection
+│   ├── stream_converter.py           # Stream-based processing
+│   ├── unified_converter.py          # Unified conversion interface
+│   ├── pdf_analyzer.py               # PDF characteristics analysis
+│   ├── layout_processor.py           # Layout-preserving extraction
+│   ├── math_processor.py             # Mathematical content processing
+│   ├── enhanced_image_extractor.py   # Advanced image extraction
+│   ├── pdf_utilities.py              # Ghostscript integration
 │   └── templates/
-│       └── chapter.md.j2            # Chapter template
+│       └── chapter.md.j2             # Chapter template
 ├── data/
-│   ├── input/                       # Input PDFs
-│   ├── output/                      # Generated markdown
-│   └── processing/                  # Temporary files
-├── main.py                          # Main entry point
-├── run_enhanced.py                  # Enhanced processing script
-├── test_enhanced_extraction.py      # Test enhanced features
-├── requirements.txt                 # Dependencies
-└── README.md                        # This file
+│   ├── input/                        # Input PDFs
+│   ├── output/                       # Generated markdown
+│   └── processing/                   # Temporary files
+├── main.py                           # Main entry point
+├── run_enhanced.py                   # Enhanced processing script
+├── setup.py                          # Automated setup
+├── requirements.txt                  # Dependencies
+├── README.md                         # This file
+├── TROUBLESHOOTING.md                # Troubleshooting guide
+├── MARKITDOWN_INTEGRATION.md         # Integration details
+└── CHANGELOG.md                      # Version history
 ```
 
 ## 🛠️ Troubleshooting
@@ -138,22 +199,19 @@ pdf-to-md-engine/
 # Missing dependencies
 pip install -r requirements.txt
 
-# PyMuPDF installation issues
-pip install --upgrade PyMuPDF
-
-# pdfplumber issues
-pip install --upgrade pdfplumber
+# Optional dependencies
+pip install magika easyocr scikit-image numba
 ```
 
 #### 2. OCR Engine Issues
 ```bash
-# EasyOCR not available
-pip install easyocr opencv-python
-
 # Tesseract not found
 # Ubuntu: sudo apt install tesseract-ocr
 # macOS: brew install tesseract
 # Windows: Download from GitHub releases
+
+# EasyOCR issues
+pip install easyocr opencv-python
 ```
 
 #### 3. GPU Memory Issues
@@ -163,35 +221,16 @@ export GPU_MEMORY_LIMIT_GB=2.0
 export OCR_GPU_MEMORY_PER_BATCH=1.0
 ```
 
-#### 4. Text Extraction Issues
-```bash
-# Poor text quality
-# The enhanced engine automatically detects and fixes common issues:
-# - Encoding problems (ligatures, smart quotes)
-# - OCR artifacts
-# - Formatting inconsistencies
-```
+#### 4. Performance Optimization
 
-#### 5. Chapter Detection Problems
-```bash
-# No chapters detected
-# The enhanced engine tries multiple methods:
-# 1. PDF outline/bookmarks (most accurate)
-# 2. Pattern-based detection
-# 3. Page break analysis
-# 4. Single document fallback
-```
-
-### Performance Optimization
-
-#### For Low-Memory Systems (< 8GB RAM)
+**For Low-Memory Systems (< 8GB RAM)**
 ```bash
 export MEMORY_USAGE_THRESHOLD=70
 export MAX_WORKERS=2
 export OCR_ENGINE=tesseract
 ```
 
-#### For High-Performance Systems (16GB+ RAM)
+**For High-Performance Systems (16GB+ RAM)**
 ```bash
 export CPU_USAGE_THRESHOLD=90
 export OCR_BATCH_SIZE=8
@@ -201,13 +240,14 @@ export OCR_ENGINE=easyocr
 ### Debug Mode
 ```bash
 # Enable detailed logging
-python main.py --log-level DEBUG
+export LOG_LEVEL=DEBUG
+python main.py
 
-# Test text extraction
+# Test enhanced features
 python test_enhanced_extraction.py
 
-# Check system capabilities
-python -c "from src.enhanced_processor import SystemResourceManager; rm = SystemResourceManager(); print(f'System: {rm.cpu_count} cores, {rm.total_memory:.1f}GB RAM')"
+# Verify installation
+python verify_project.py
 ```
 
 ## 🔄 Output Structure
@@ -225,45 +265,54 @@ output/
 ```
 
 ### Enhanced Metadata
-The `.receipt` file now includes:
-- Text quality analysis
-- Chapter detection method used
-- OCR enhancement results
+The `.receipt` file includes:
+- PDF characteristics analysis
+- Extraction method used and confidence
 - Processing performance metrics
+- Table detection results
+- OCR enhancement details
 
-## 🆕 What's New in v2.0
+## 🆕 What's New in v2.1
 
-### Enhanced Text Extraction
-- Hybrid PyMuPDF + pdfplumber approach
-- Automatic encoding issue detection and fixing
-- Text quality scoring and analysis
-- Smart OCR enhancement recommendations
+### Stream Processing Integration
+- Unified interface for files, streams, and URLs
+- Intelligent content detection with magika
+- Graceful fallbacks for optional dependencies
+- Rich metadata preservation
 
-### Better Chapter Detection
-- PDF outline/bookmark support
-- Multiple detection strategies
-- Improved title extraction
-- Better handling of complex document structures
+### Enhanced Table Detection
+- Form-style table detection for borderless tables
+- Multi-strategy approach with confidence scoring
+- Better content classification
+- Improved markdown formatting
 
-### Improved OCR Integration
-- Text layer enhancement instead of replacement
-- Selective processing of problematic areas
-- Better confidence scoring
-- Reduced false positives
+### Text Processing Improvements
+- Partial numbering merge for MasterFormat documents
+- Mathematical content processing with Unicode conversion
+- Better header/footer detection and removal
+- Enhanced encoding issue handling
 
-### Performance Improvements
-- More efficient resource usage
-- Better memory management
-- Faster processing for text-heavy documents
-- Reduced OCR overhead
+### Architecture Enhancements
+- Modular converter architecture
+- Priority-based method selection
+- Comprehensive PDF analysis
+- Resource-aware processing
 
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Install development dependencies: `pip install -r requirements.txt`
+2. Install development dependencies: `python setup.py`
 3. Make your changes
 4. Test with: `python test_enhanced_extraction.py`
 5. Submit a pull request
+
+## 📚 References
+
+- **[pdfmd](https://github.com/VikParuchuri/pdfmd)** - Modular PDF processing pipeline
+- **[markitdown](https://github.com/microsoft/markitdown)** - Microsoft's document conversion toolkit
+- **[docling](https://github.com/DS4SD/docling)** - IBM's document understanding library
+- **[PyMuPDF](https://github.com/pymupdf/PyMuPDF)** - PDF manipulation library
+- **[pdfplumber](https://github.com/jsvine/pdfplumber)** - PDF text and table extraction
 
 ## 📄 License
 
@@ -273,6 +322,7 @@ MIT License - see LICENSE file for details.
 
 For issues and questions:
 1. Check the troubleshooting section above
-2. Run debug mode for detailed logs
-3. Test with `test_enhanced_extraction.py`
-4. Check system requirements and dependencies
+2. Run debug mode: `LOG_LEVEL=DEBUG python main.py`
+3. Test with: `python test_enhanced_extraction.py`
+4. Review `TROUBLESHOOTING.md` for detailed solutions
+5. Check system requirements and dependencies

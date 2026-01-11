@@ -19,6 +19,16 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 from typing import Optional, Tuple, Dict, Any, List
 
+# Performance optimizations
+try:
+    import numba
+    from scipy import ndimage
+    from skimage import filters, morphology
+    PERFORMANCE_LIBS_AVAILABLE = True
+except ImportError:
+    PERFORMANCE_LIBS_AVAILABLE = False
+    logger.warning("Performance libraries not available")
+
 from docling.document_converter import DocumentConverter
 from docling.datamodel.pipeline_options import PdfPipelineOptions
 from docling.datamodel.base_models import InputFormat
@@ -41,19 +51,23 @@ except ImportError:
 
 from src.config import settings
 from src.utils import get_file_hash, clean_filename
+from src.pdf_utilities import PDFUtilities
 from src.enhanced_text_extractor import (
     extract_pdf_text_hybrid, 
     extract_pdf_outline_enhanced,
     should_use_ocr_enhancement,
     clean_extracted_text
 )
+from src.layout_processor import extract_pdf_with_layout
+from src.enhanced_image_extractor import extract_images_enhanced
+from src.pdf_analyzer import analyze_pdf_characteristics, get_extraction_strategy
 
 # Initialize Jinja2
 template_env = Environment(loader=FileSystemLoader("src/templates"))
 template = template_env.get_template("chapter.md.j2")
 
 def extract_images_from_pdf(pdf_path: Path, assets_dir: Path) -> Tuple[List[Path], Dict]:
-    """Extract images directly from PDF using PyMuPDF"""
+    """Extract images directly from PDF using PyMuPDF with colorspace handling"""
     saved_images = []
     image_info = {}
     
@@ -65,23 +79,41 @@ def extract_images_from_pdf(pdf_path: Path, assets_dir: Path) -> Tuple[List[Path
             image_list = page.get_images(full=True)
             
             for img_index, img in enumerate(image_list):
-                xref = img[0]
-                pix = fitz.Pixmap(doc, xref)
-                
-                if pix.n - pix.alpha < 4:  # GRAY or RGB
-                    image_path = assets_dir / f"page_{page_num:03d}_img_{img_index:03d}.png"
-                    pix.save(str(image_path))
+                try:
+                    xref = img[0]
+                    pix = fitz.Pixmap(doc, xref)
                     
-                    saved_images.append(image_path)
-                    image_info[str(image_path)] = {
-                        'path': image_path,
-                        'page': page_num,
-                        'index': img_index,
-                        'width': pix.width,
-                        'height': pix.height
-                    }
-                
-                pix = None
+                    # Handle colorspace conversion
+                    if pix.n - pix.alpha > 3:  # CMYK or other complex colorspace
+                        # Convert to RGB
+                        pix = fitz.Pixmap(fitz.csRGB, pix)
+                    elif pix.n - pix.alpha == 1:  # Grayscale
+                        # Convert to RGB for consistency
+                        pix = fitz.Pixmap(fitz.csRGB, pix)
+                    
+                    # Only save quality images
+                    if pix.width > 50 and pix.height > 50:
+                        image_path = assets_dir / f"page_{page_num:03d}_img_{img_index:03d}.png"
+                        
+                        # Use tobytes for better format control
+                        img_data = pix.tobytes("png")
+                        with open(image_path, "wb") as f:
+                            f.write(img_data)
+                        
+                        saved_images.append(image_path)
+                        image_info[str(image_path)] = {
+                            'path': image_path,
+                            'page': page_num,
+                            'index': img_index,
+                            'width': pix.width,
+                            'height': pix.height
+                        }
+                    
+                    pix = None
+                    
+                except Exception as e:
+                    logger.debug(f"Skipped image {img_index} from page {page_num}: {e}")
+                    continue
         
         doc.close()
         
@@ -350,11 +382,8 @@ def process_pdf_enhanced(pdf_path: Path):
             return {"available": False, "name": "None", "memory_gb": 0}
         
         def _select_ocr_engine(self):
-            if EASYOCR_AVAILABLE and self.gpu_info["available"]:
-                return "easyocr"
-            elif TESSERACT_AVAILABLE:
-                return "tesseract"
-            return "none"
+            # Priority: Layout processor > EasyOCR > Tesseract > None
+            return "layout_first"  # Always try layout preservation first
         
         def should_use_gpu(self, memory_gb_needed):
             return (self.gpu_info["available"] and 
@@ -395,7 +424,14 @@ def process_pdf_enhanced(pdf_path: Path):
     available_gb = psutil.virtual_memory().available / (1024**3)
     logger.info(f"Initial state - CPU: {cpu_percent:.1f}%, Memory: {memory_percent:.1f}%, Available: {available_gb:.1f}GB")
     
-    file_hash = get_file_hash(pdf_path)
+    # Enhanced PDF validation
+    if not PDFUtilities.validate_pdf(pdf_path):
+        logger.error(f"Invalid PDF file: {pdf_path}")
+        return
+    
+    file_hash = PDFUtilities.get_pdf_checksum(pdf_path)
+    page_count = PDFUtilities.get_page_count(pdf_path)
+    logger.info(f"PDF: {page_count} pages, checksum: {file_hash}")
     safe_name = clean_filename(pdf_path.stem)
     pdf_output_dir = settings.OUTPUT_DIR / safe_name
     assets_dir = pdf_output_dir / "assets"
@@ -417,8 +453,22 @@ def process_pdf_enhanced(pdf_path: Path):
     
     progress.complete_step()
     
-    # Step 2: Enhanced Text Analysis
-    progress.start_step("Enhanced Text Analysis")
+    # Step 2: PDF Analysis & Strategy Selection
+    progress.start_step("PDF Analysis & Strategy Selection")
+    
+    # Comprehensive PDF analysis
+    pdf_characteristics = analyze_pdf_characteristics(pdf_path)
+    extraction_strategy = get_extraction_strategy(pdf_characteristics)
+    
+    logger.info(f"📋 PDF Analysis Results:")
+    logger.info(f"   Version: {pdf_characteristics.version}")
+    logger.info(f"   Pages: {pdf_characteristics.page_count}")
+    logger.info(f"   Text Layer: {pdf_characteristics.has_text_layer}")
+    logger.info(f"   Scanned: {pdf_characteristics.is_scanned}")
+    logger.info(f"   Tables: {pdf_characteristics.table_count}")
+    logger.info(f"   Creation: {pdf_characteristics.creation_method}")
+    logger.info(f"   Standard: {pdf_characteristics.pdf_standard}")
+    logger.info(f"   Optimal Method: {pdf_characteristics.optimal_extraction_method} (confidence: {pdf_characteristics.extraction_confidence:.2f})")
     
     # Extract PDF outline first
     pdf_outline = extract_pdf_outline_enhanced(pdf_path)
@@ -431,28 +481,42 @@ def process_pdf_enhanced(pdf_path: Path):
     
     progress.complete_step()
     
-    # Step 3: Text Enhancement (if needed)
-    progress.start_step("Text Enhancement")
+    # Step 3: Intelligent Method Selection & Text Enhancement
+    progress.start_step("Intelligent Method Selection & Text Enhancement")
     
-    if has_text_layer:
+    # Use PDF characteristics to select optimal method
+    extraction_method = pdf_characteristics.optimal_extraction_method
+    
+    if extraction_method == "layout_preserving" and has_text_layer:
+        # Method 1: Layout-preserving extraction (BEST for structured documents)
+        layout_text = extract_pdf_with_layout(pdf_path)
+        if layout_text and len(layout_text) > 1000:  # Meaningful content
+            full_md = layout_text
+            logger.info(f"✅ Using layout-preserving extraction: {len(full_md)} characters")
+        else:
+            # Fallback to next best method
+            extraction_method = extraction_strategy['fallback_methods'][0]
+            logger.info(f"Layout extraction insufficient, falling back to {extraction_method}")
+    
+    if extraction_method == "enhanced_text" and has_text_layer:
+        # Method 2: Enhanced text extraction (GOOD for text-heavy documents)
         if text_analysis.get("needs_ocr_enhancement", False):
-            logger.info("Enhancing text layer with OCR")
             enhanced_text = ocr_engine.enhance_text_with_ocr(extracted_text, pdf_path)
         else:
             enhanced_text = clean_extracted_text(extracted_text)
         
-        # Use enhanced text as markdown
         full_md = enhanced_text
+        logger.info(f"✅ Using enhanced text extraction: {len(full_md)} characters")
         doc = None  # Skip docling conversion
-        logger.info(f"Using enhanced text layer: {len(full_md)} characters")
-    else:
-        logger.info("No usable text layer - using docling conversion")
-        # Fall back to docling processing
+    
+    elif extraction_method == "docling_conversion" or not has_text_layer:
+        # Method 3: Docling conversion (GOOD for complex layouts)
+        logger.info(f"Using docling conversion (reason: {extraction_method})")
+        
         def setup_converter(resource_manager):
-            """Setup docling converter with optimal settings"""
             pipeline_options = PdfPipelineOptions()
-            pipeline_options.do_ocr = False  # We handle OCR separately
-            pipeline_options.do_table_structure = True
+            pipeline_options.do_ocr = pdf_characteristics.is_scanned
+            pipeline_options.do_table_structure = pdf_characteristics.table_count > 0
             
             return DocumentConverter(
                 format_options={
@@ -474,10 +538,21 @@ def process_pdf_enhanced(pdf_path: Path):
                 pbar.update(1)
             except Exception as e:
                 logger.error(f"PDF conversion failed: {e}")
-                raise
+                # Final fallback to OCR
+                extraction_method = "ocr_primary"
+                full_md = "# OCR Processing Required\n\nDocument requires OCR processing."
+                doc = None
         
-        del converter
+        if 'converter' in locals():
+            del converter
         gc.collect()
+    
+    else:
+        # Method 4: OCR Primary (for scanned documents)
+        logger.info("Using OCR primary method for scanned document")
+        extraction_method = "ocr_primary"
+        full_md = "# Scanned Document\n\nProcessing with OCR..."
+        doc = None
     
     progress.complete_step()
     
@@ -549,148 +624,79 @@ def process_pdf_enhanced(pdf_path: Path):
         saved_images, image_info = process_images_parallel(doc, assets_dir, resource_manager, progress)
         gc.collect()
     else:
-        # Extract images directly from PDF using PyMuPDF
-        logger.info("Extracting images directly from PDF")
-        saved_images, image_info = extract_images_from_pdf(pdf_path, assets_dir)
+        # Use enhanced image extraction
+        extracted_images, image_markdown = extract_images_enhanced(pdf_path, assets_dir)
+        saved_images = [img.path for img in extracted_images]
+        image_info = {str(img.path): {
+            'path': img.path,
+            'bbox': img.bbox,
+            'page': img.page_num,
+            'type': img.image_type,
+            'width': img.width,
+            'height': img.height
+        } for img in extracted_images}
     
     logger.info(f"Extracted {len(saved_images)} images")
     
     progress.complete_step()
     
-    # Step 6: OCR Processing
-    progress.start_step("OCR Processing")
+    # Step 6: Smart OCR Processing (Text Only)
+    progress.start_step("Smart OCR Processing (Text Only)")
     
-    if image_info:
-        # Helper function for OCR processing
-        def process_single_image_ocr(image_path, image_info, ocr_engine):
-            """Process OCR for a single image with table and text detection"""
+    # Only extract TEXT from images, not save images
+    ocr_text_results = {}
+    
+    if extraction_method != "layout_preserving" and image_info:
+        # OCR for text extraction only when layout preservation failed
+        def extract_text_from_image_ocr(image_path, ocr_engine):
+            """Extract only text from image, don't save image"""
             try:
                 if ocr_engine.engine_type == "easyocr" and ocr_engine.ocr_reader:
                     results = ocr_engine.ocr_reader.readtext(str(image_path))
                     
-                    # Sort by position for table detection
-                    sorted_results = sorted(results, key=lambda x: (x[0][0][1], x[0][0][0]))
-                    
-                    text_parts = []
-                    confidences = []
-                    
-                    # Detect table structure by grouping similar Y coordinates
-                    rows = []
-                    current_row = []
-                    last_y = None
-                    
-                    for (bbox, text, confidence) in sorted_results:
-                        if confidence > 0.5 and len(text.strip()) > 1:
+                    # Extract text with position for layout preservation
+                    text_blocks = []
+                    for (bbox, text, confidence) in results:
+                        if confidence > 0.6 and len(text.strip()) > 2:
                             y_pos = bbox[0][1]
-                            
-                            # Group into rows (tolerance of 10 pixels)
-                            if last_y is None or abs(y_pos - last_y) < 10:
-                                current_row.append((bbox[0][0], text.strip()))
-                            else:
-                                if current_row:
-                                    rows.append(sorted(current_row, key=lambda x: x[0]))
-                                current_row = [(bbox[0][0], text.strip())]
-                            
-                            last_y = y_pos
-                            confidences.append(confidence)
+                            x_pos = bbox[0][0]
+                            text_blocks.append((y_pos, x_pos, text.strip()))
                     
-                    if current_row:
-                        rows.append(sorted(current_row, key=lambda x: x[0]))
+                    # Sort by position (top-to-bottom, left-to-right)
+                    text_blocks.sort(key=lambda x: (x[0], x[1]))
                     
-                    # Format as table if multiple columns detected
-                    if len(rows) > 1 and any(len(row) > 2 for row in rows):
-                        for row in rows:
-                            row_text = ' | '.join([item[1] for item in row])
-                            text_parts.append(row_text)
-                    else:
-                        # Regular text extraction
-                        for (bbox, text, confidence) in sorted_results:
-                            if confidence > 0.5 and len(text.strip()) > 1:
-                                text_parts.append(text.strip())
+                    # Combine text preserving layout
+                    combined_text = '\n'.join([block[2] for block in text_blocks])
+                    avg_confidence = sum(r[2] for r in results) / len(results) if results else 0
                     
-                    if text_parts:
-                        combined_text = '\n'.join(text_parts)
-                        avg_confidence = sum(confidences) / len(confidences)
-                        return combined_text, avg_confidence
+                    return combined_text, avg_confidence
                 
                 elif ocr_engine.engine_type == "tesseract":
                     from PIL import Image
                     img = Image.open(image_path)
-                    text = pytesseract.image_to_string(img)
+                    text = pytesseract.image_to_string(img, config='--psm 6')
                     confidence = 0.8 if len(text.strip()) > 10 else 0.5
                     return text.strip(), confidence
                 
                 return "", 0.0
                 
             except Exception as e:
-                logger.error(f"OCR processing failed for {image_path}: {e}")
+                logger.error(f"OCR text extraction failed for {image_path}: {e}")
                 return "", 0.0
         
-        def process_ocr_parallel(image_info, ocr_engine, resource_manager):
-            """Process OCR on images with parallel processing and quality control"""
-            ocr_results = {}
-            
-            if not image_info or ocr_engine.engine_type == "none":
-                return ocr_results
-            
-            # Determine optimal batch size based on system resources
-            batch_size = min(4, max(1, resource_manager.cpu_count // 2))
-            if ocr_engine.engine_type == "easyocr" and resource_manager.gpu_info["available"]:
-                batch_size = min(8, int(resource_manager.gpu_info["memory_gb"] // 2))
-            
-            image_paths = list(image_info.keys())
-            
-            # Process in batches to manage memory
-            for i in range(0, len(image_paths), batch_size):
-                batch_paths = image_paths[i:i + batch_size]
-                
-                # Check system resources before processing batch
-                memory_usage = psutil.virtual_memory().percent
-                if memory_usage > 85:
-                    logger.warning(f"High memory usage ({memory_usage:.1f}%), reducing batch size")
-                    batch_paths = batch_paths[:max(1, len(batch_paths)//2)]
-                
-                # Process batch with threading
-                max_workers = min(batch_size, 4)
-                with ThreadPoolExecutor(max_workers=max_workers) as executor:
-                    future_to_path = {}
-                    
-                    for image_path in batch_paths:
-                        future = executor.submit(process_single_image_ocr, 
-                                               image_path, image_info[image_path], ocr_engine)
-                        future_to_path[future] = image_path
-                    
-                    for future in as_completed(future_to_path):
-                        image_path = future_to_path[future]
-                        try:
-                            ocr_text, confidence = future.result()
-                            if ocr_text and confidence > settings.OCR_CONFIDENCE_THRESHOLD:
-                                ocr_results[image_path] = {
-                                    'text': ocr_text,
-                                    'confidence': confidence,
-                                    'method': ocr_engine.engine_type
-                                }
-                        except Exception as e:
-                            logger.warning(f"OCR failed for {image_path}: {e}")
-                
-                # Memory cleanup between batches
-                gc.collect()
-                if resource_manager.gpu_info["available"]:
-                    torch.cuda.empty_cache()
-            
-            return ocr_results
+        # Process OCR for text extraction only
+        for image_path in list(image_info.keys())[:5]:  # Limit to first 5 images
+            ocr_text, confidence = extract_text_from_image_ocr(image_path, ocr_engine)
+            if ocr_text and confidence > 0.6:
+                ocr_text_results[image_path] = {
+                    'text': ocr_text,
+                    'confidence': confidence,
+                    'method': ocr_engine.engine_type
+                }
         
-        gc.collect()
-        if resource_manager.gpu_info["available"]:
-            torch.cuda.empty_cache()
-        
-        ocr_results = process_ocr_parallel(image_info, ocr_engine, resource_manager)
-        logger.info(f"OCR extracted text from {len(ocr_results)} images")
-        
-        resource_manager.cleanup_gpu_memory()
-        gc.collect()
+        logger.info(f"Extracted text from {len(ocr_text_results)} images via OCR")
     else:
-        ocr_results = {}
+        logger.info(f"Skipping OCR - using {extraction_method} method")
     
     progress.complete_step()
     
@@ -718,51 +724,37 @@ def process_pdf_enhanced(pdf_path: Path):
         
         # Integrate OCR content
         def _integrate_ocr_content(chapter_content, ocr_results):
-            """Integrate OCR results into chapter content with quality control"""
+            """Integrate OCR text results into chapter content"""
             if not ocr_results:
                 return chapter_content
             
-            # Filter high-quality OCR results
+            # Add OCR text section only if we have meaningful content
             quality_results = {}
             for image_path, result in ocr_results.items():
-                if isinstance(result, dict):
-                    text = result.get('text', '')
-                    confidence = result.get('confidence', 0)
-                    method = result.get('method', 'unknown')
-                else:
-                    text = str(result)
-                    confidence = 0.7
-                    method = 'legacy'
+                text = result.get('text', '')
+                confidence = result.get('confidence', 0)
                 
-                # Only include high-quality, meaningful text
-                if (confidence > settings.OCR_CONFIDENCE_THRESHOLD and 
-                    len(text.strip()) >= settings.OCR_MIN_TEXT_LENGTH):
-                    quality_results[image_path] = {
-                        'text': text.strip(),
-                        'confidence': confidence,
-                        'method': method
-                    }
+                if confidence > 0.6 and len(text.strip()) >= 10:
+                    quality_results[image_path] = result
             
             if not quality_results:
                 return chapter_content
             
-            # Add OCR content section
-            ocr_section = "\n\n---\n\n## 📷 Extracted Image Text\n\n"
-            ocr_section += "*The following text was extracted from images using OCR technology:*\n\n"
+            # Add OCR text section
+            ocr_section = "\n\n---\n\n## 📝 Additional Text Content\n\n"
+            ocr_section += "*Text extracted from document images:*\n\n"
             
             for image_path, result in quality_results.items():
-                image_name = Path(image_path).name
                 text = result['text']
                 confidence = result['confidence']
                 method = result['method']
                 
-                ocr_section += f"### 🖼️ {image_name}\n\n"
-                ocr_section += f"**Method:** {method.upper()} | **Confidence:** {confidence:.2f}\n\n"
-                ocr_section += f"> {text}\n\n"
+                ocr_section += f"**{method.upper()}** (confidence: {confidence:.2f}):\n\n"
+                ocr_section += f"{text}\n\n"
             
             return chapter_content + ocr_section
         
-        enhanced_content = _integrate_ocr_content(chapter_content, ocr_results)
+        enhanced_content = _integrate_ocr_content(chapter_content, ocr_text_results)
         
         # Save chapter
         _save_chapter_enhanced(enhanced_content, filename, title, pdf_path.name, pdf_output_dir, i+1)
@@ -773,15 +765,34 @@ def process_pdf_enhanced(pdf_path: Path):
     # Step 8: Finalization
     progress.start_step("Finalizing")
     
-    # Save enhanced metadata
+    # Save enhanced metadata with PDF analysis
     metadata = {
         "file_hash": file_hash,
         "processing_time": time.time() - progress.start_time,
+        "pdf_characteristics": {
+            "version": pdf_characteristics.version,
+            "page_count": pdf_characteristics.page_count,
+            "has_text_layer": pdf_characteristics.has_text_layer,
+            "is_scanned": pdf_characteristics.is_scanned,
+            "table_count": pdf_characteristics.table_count,
+            "creation_method": pdf_characteristics.creation_method,
+            "pdf_standard": pdf_characteristics.pdf_standard,
+            "accessibility_compliant": pdf_characteristics.accessibility_compliant,
+            "text_coverage": pdf_characteristics.text_coverage,
+            "image_coverage": pdf_characteristics.image_coverage
+        },
+        "extraction_strategy": {
+            "method_used": extraction_method,
+            "optimal_method": pdf_characteristics.optimal_extraction_method,
+            "confidence": pdf_characteristics.extraction_confidence,
+            "expected_quality": extraction_strategy['expected_quality'],
+            "fallback_methods": extraction_strategy['fallback_methods']
+        },
         "text_analysis": text_analysis,
         "chapters_detected": len(chapters),
         "outline_entries": len(pdf_outline),
         "ocr_engine": ocr_engine.engine_type,
-        "ocr_results_count": len(ocr_results),
+        "ocr_text_results": len(ocr_text_results),
         "system_info": {
             "cpu_cores": resource_manager.cpu_count,
             "memory_gb": resource_manager.total_memory,
@@ -800,8 +811,9 @@ def process_pdf_enhanced(pdf_path: Path):
     progress.complete_step()
     
     logger.success(f"✅ Enhanced processing completed for {pdf_path.name} in {total_time:.1f}s")
-    logger.info(f"📊 Text quality: {text_analysis.get('text_quality', 0):.2f}")
-    logger.info(f"📑 Chapters: {len(chapters)}, OCR enhanced: {len(ocr_results)} images")
+    logger.info(f"📈 PDF: {pdf_characteristics.version}, {pdf_characteristics.creation_method}, {pdf_characteristics.pdf_standard}")
+    logger.info(f"🎯 Method: {extraction_method} (confidence: {pdf_characteristics.extraction_confidence:.2f})")
+    logger.info(f"📁 Chapters: {len(chapters)}, OCR text: {len(ocr_text_results)} extracts")
 
 def _save_chapter_enhanced(content, filename, title, source, output_dir, index=0):
     """Enhanced chapter saving with better formatting"""

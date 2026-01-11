@@ -196,7 +196,10 @@ def setup_python_environment():
         "Pillow>=10.0.0",
         "numpy>=1.24.0",
         "chardet>=5.0.0",
-        "ftfy>=6.1.0"
+        "ftfy>=6.1.0",
+        "scikit-image>=0.21.0",
+        "numba>=0.57.0",
+        "scipy>=1.10.0"
     ]
     
     print("📦 Installing core dependencies...")
@@ -241,7 +244,10 @@ def verify_installation():
         ("numpy", "NumPy"),
         ("loguru", "Loguru logging"),
         ("pydantic", "Pydantic"),
-        ("jinja2", "Jinja2 templates")
+        ("jinja2", "Jinja2 templates"),
+        ("skimage", "scikit-image"),
+        ("numba", "Numba JIT"),
+        ("scipy", "SciPy")
     ]
     
     success_count = 0

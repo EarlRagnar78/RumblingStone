@@ -1,0 +1,4 @@
+# Additional optimizations for best performance
+scikit-image>=0.21.0  # Advanced image processing
+numba>=0.57.0         # JIT compilation for speed
+scipy>=1.10.0         # Scientific computing optimizations

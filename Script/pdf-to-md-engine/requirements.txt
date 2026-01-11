@@ -31,6 +31,8 @@ torchvision>=0.15.0
 # Image Processing
 Pillow>=10.0.0
 numpy>=1.24.0
+opencv-python>=4.8.0
+scikit-image>=0.21.0
 
 # OCR Dependencies (install based on your needs)
 # EasyOCR (GPU-accelerated, recommended for high-performance systems)
@@ -43,6 +45,8 @@ pytesseract>=0.3.10
 # Text Processing & Encoding
 chardet>=5.0.0
 ftfy>=6.1.0
+numba>=0.57.0
+scipy>=1.10.0
 
 # Development tools (optional)
 # pytest>=7.0.0

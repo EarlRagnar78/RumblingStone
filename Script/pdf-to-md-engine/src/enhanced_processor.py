@@ -81,6 +81,8 @@ from src.enhanced_image_extractor import extract_images_enhanced
 from src.pdf_analyzer import analyze_pdf_characteristics, get_extraction_strategy
 from src.math_processor import process_enhanced_text
 from src.quality_assessor import assess_extraction_quality, QualityMetrics
+from src.ai_enhancer import apply_ai_enhancement
+from src.intelligent_selector import get_optimal_config, monitor_resources, should_use_gpu
 
 # Markitdown-inspired text processing
 def _merge_partial_numbering_lines(text: str) -> str:
@@ -504,6 +506,8 @@ def process_pdf_enhanced(pdf_path: Path):
     
     class SystemResourceManager:
         def __init__(self):
+            # Use intelligent selector for optimal configuration
+            self.optimal_config = get_optimal_config()
             self.cpu_count = psutil.cpu_count()
             self.total_memory = psutil.virtual_memory().total / (1024**3)
             self.gpu_info = self._detect_gpu()
@@ -522,12 +526,12 @@ def process_pdf_enhanced(pdf_path: Path):
             return {"available": False, "name": "None", "memory_gb": 0}
         
         def _select_ocr_engine(self):
-            # Priority: Layout processor > EasyOCR > Tesseract > None
-            return "layout_first"  # Always try layout preservation first
+            # Use intelligent selector's OCR configuration
+            ocr_config = self.optimal_config.get("ocr_config", {})
+            return ocr_config.get("primary_engine", "layout_first")
         
         def should_use_gpu(self, memory_gb_needed):
-            return (self.gpu_info["available"] and 
-                   self.gpu_info["memory_gb"] > memory_gb_needed)
+            return should_use_gpu() and self.gpu_info["memory_gb"] > memory_gb_needed
         
         def cleanup_gpu_memory(self):
             if self.gpu_info["available"]:
@@ -535,21 +539,13 @@ def process_pdf_enhanced(pdf_path: Path):
                 gc.collect()
         
         def monitor_resources(self):
-            """Monitor current system resource usage"""
-            cpu_percent = psutil.cpu_percent(interval=1)
-            memory = psutil.virtual_memory()
-            
-            return {
-                'cpu_percent': cpu_percent,
-                'memory_percent': memory.percent,
-                'memory_available_gb': memory.available / (1024**3),
-                'should_throttle': cpu_percent > 85 or memory.percent > 80
-            }
+            """Monitor current system resource usage using intelligent selector"""
+            return monitor_resources()
         
         def adaptive_sleep(self, base_delay=0.1):
             """Adaptive sleep based on system load"""
             resources = self.monitor_resources()
-            if resources['should_throttle']:
+            if resources['cpu_percent'] > 85 or resources['memory_percent'] > 80:
                 sleep_time = base_delay * (1 + resources['cpu_percent'] / 100)
                 time.sleep(min(sleep_time, 2.0))  # Cap at 2 seconds
     
@@ -879,12 +875,30 @@ def process_pdf_enhanced(pdf_path: Path):
     
     progress.complete_step()
     
-    # Step 8: Quality Assessment & Refinement
-    progress.start_step("Quality Assessment & Refinement")
+    # Step 8: AI Enhancement & Quality Assessment
+    progress.start_step("AI Enhancement & Quality Assessment")
     
     # Assess quality of extracted content
     combined_content = "\n\n".join([chapter_content for chapter_content in chapters])
-    quality_metrics = assess_extraction_quality(combined_content, {
+    
+    # Apply AI enhancement if quality is below threshold
+    try:
+        enhanced_content = apply_ai_enhancement(combined_content, {
+            'pdf_characteristics': pdf_characteristics.__dict__,
+            'extraction_method': extraction_method
+        })
+        
+        if len(enhanced_content) > len(combined_content) * 0.8:  # Sanity check
+            chapters = enhanced_content.split("\n\n---\n\n") if "\n\n---\n\n" in enhanced_content else [enhanced_content]
+            logger.info(f"🤖 AI enhancement applied: {len(enhanced_content)} chars")
+        else:
+            logger.info("🤖 AI enhancement skipped (insufficient improvement)")
+    except Exception as e:
+        logger.warning(f"AI enhancement failed: {e}")
+    
+    # Re-assess quality after enhancement
+    final_content = "\n\n".join([chapter_content for chapter_content in chapters])
+    quality_metrics = assess_extraction_quality(final_content, {
         'pdf_characteristics': {
             'page_count': pdf_characteristics.page_count,
             'has_images': pdf_characteristics.has_images,

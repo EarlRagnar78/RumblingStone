@@ -189,7 +189,13 @@ def setup_python_environment():
         "beautifulsoup4>=4.11.0",
         "lxml>=4.9.0",
         "sympy>=1.11.0",
-        "tabulate>=0.9.0"
+        "tabulate>=0.9.0",
+        # Free AI tools
+        "transformers>=4.35.0",
+        "language-tool-python>=2.7.1",
+        "spacy>=3.7.0",
+        "nltk>=3.8.1",
+        "scikit-learn>=1.3.0"
     ]
     
     print("📦 Installing all optional dependencies...")
@@ -223,7 +229,12 @@ def verify_installation():
         ("cv2", "OpenCV"),
         ("skimage", "Scikit-image"),
         ("numba", "Numba JIT compiler"),
-        ("scipy", "SciPy")
+        ("scipy", "SciPy"),
+        # Free AI tools
+        ("transformers", "Hugging Face Transformers"),
+        ("spacy", "spaCy NLP"),
+        ("nltk", "NLTK"),
+        ("sklearn", "Scikit-learn")
     ]
     
     success_count = 0

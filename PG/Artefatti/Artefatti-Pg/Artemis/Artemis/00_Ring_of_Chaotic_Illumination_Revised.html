@@ -55,6 +55,16 @@
             background: rgba(218, 165, 32, 0.1);
         }
 
+        .infernal {
+            font-family: 'Crimson Text', serif;
+            /* Fallback to serif */
+            color: #8B0000;
+            text-shadow: 0 0 2px #FF4500;
+            font-weight: bold;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+
         h2 {
             color: #8B4513;
             font-size: 14pt;
@@ -139,6 +149,16 @@
             margin: 15px 0;
             border-radius: 5px;
         }
+
+        .artifact-image {
+            display: block;
+            margin: 0 auto 20px auto;
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #8B4513;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
     </style>
 </head>
 
@@ -149,9 +169,9 @@
         <div class="subtitle">Reforged Artifact of Balance</div>
     </div>
 
-    <div class="quote">
-        "True power comes from Chaos. But true wisdom comes from forging that Chaos into Destiny."
-    </div>
+    <!-- Requested Image -->
+    <img src="../../ringOfChaoticIllumination/ring-left-compressed.webp" alt="Ring of Chaotic Illumination"
+        class="artifact-image">
 
     <!-- Stats Table similar to Aura line -->
     <table>
@@ -163,45 +183,62 @@
             <th>Market Price</th>
         </tr>
         <tr>
-            <td>Strong Transmutation & Illusion [Chaotic]</td>
+            <td>Strong Transmutation & Illusion [Chaotic, Good]</td>
             <td>15th</td>
             <td>Ring</td>
             <td>-</td>
-            <td>172,000 gp (Calculated)</td>
+            <td>163,400 gp (Unique Artifact)</td>
         </tr>
     </table>
 
     <div class="two-column">
         <h2>Physical Description</h2>
-        <p>The ring appears as a circle of obsidian pulsing with an inner violet light. Following the bearer's
+        <p>The ring appears as a band of polished obsidian pulsating with an inner violet light. Following the bearer's
             interaction with the <strong>Eternal Forge</strong> and their rejection of the <em>Lord of Sun and
-                Shadow</em> path to forge their own destiny, the ring has physically changed.</p>
+                Shadow</em> path to forge their own destiny, the ring has physically evolved to reflect this balance.
+        </p>
         <ul>
-            <li><strong>Gold Veins:</strong> Thin veins of Lathander's gold now run through the black stone.</li>
-            <li><strong>Silver Glyphs:</strong> Mask's silver sigils shift and dance along the rim.</li>
-            <li><strong>Violet Core:</strong> The warlock's chaotic essence binds them together.</li>
+            <li><strong>Gold Veins:</strong> Thin veins of Lathander's gold now run through the black stone, symbolizing
+                the light of dawn.</li>
+            <li><strong>Silver Glyphs:</strong> Mask's silver sigils shift and dance along the rim, representing the
+                shadows.</li>
+            <li><strong>Violet Core:</strong> The warlock's chaotic essence binds them together, visible as a deep
+                violet glow.</li>
+            <li><strong>Inscription:</strong> When touched by a chaotic warlock, infernal inscriptions manifest on its
+                surface, reading <span class="infernal">"True power comes from Chaos and Light"</span> in Infernal
+                script. To all others, it appears as a simple cobalt blue aquamarine ring.</li>
         </ul>
-        <p>When active, it projects a faint, harmonious hum—the sound of order (Forge) and chaos (Warlock) in perfect
-            tension.</p>
 
         <h2>History & Awakening</h2>
-        <p>Originally forged during the Era of Torments, the ring was recently re-awakened in the <strong>Hall of the
-                Eternal Forge</strong>. The bearer, Artemis, refused the easy path of a Prestige Class offered by the
-            gods, choosing instead to rely on his own chaotic nature. Recognizing this resolve, the ring absorbed the
-            essence of the <strong>Mithral Column of Unity</strong> and the <strong>Dual Flames</strong> of the Forge,
-            evolving into a true artifact of balance.</p>
+        <p>Originally forged during the <strong>Era of Torments</strong>, when the gods walked Toril, this ring was
+            created during a crucial battle between divine forces. Centuries later, it was recovered by the powerful
+            Netherese mage <strong>Vess'ith Shadowweaver</strong>, retaining fragments of its original divine power.</p>
+        <p>Recently, the ring was re-awakened in the <strong>Hall of the Eternal Forge</strong>. The bearer,
+            <strong>Artemis</strong>, refused the path to become a blazing symbol of two gods, choosing instead to rely
+            on his own chaotic nature. Recognizing this resolve, the ring absorbed the essence of the <strong>Mithral
+                Column of Unity</strong> and the <strong>Dual Flames</strong> of the Forge, evolving into a true
+            artifact of balance.</p>
     </div>
 
     <h2>Powers</h2>
 
     <div class="requirements">
-        <h3>Constant Powers (Always Active)</h3>
+        <h3>Constant Powers (Su)</h3>
+        <p>These powers are active as long as the ring is fused with the chosen owner.</p>
         <ul>
-            <li><strong>Enhanced Vision:</strong> Superior Darkvision 120 ft, See through Magical Darkness (60 ft),
-                Low-light vision.</li>
-            <li><strong>Mental Bastion:</strong> +3 Resistance bonus to Saving Throws (Base Ring property).</li>
-            <li><strong>Forged Knowledge:</strong> The ring whispers secrets. <strong>+8 Competence Bonus</strong> to
-                Knowledge (Arcana) and Knowledge (Religion).</li>
+            <li><strong>Enhanced Vision:</strong>
+                <ul>
+                    <li>Superior Darkvision 120 ft.</li>
+                    <li><strong>Devil's Sight:</strong> See in Magical Darkness (60 ft).</li>
+                    <li>Low-light vision.</li>
+                </ul>
+            </li>
+            <li><strong>Forged Knowledge:</strong> The ring whispers secrets.
+                <ul>
+                    <li><strong>+8 Competence Bonus</strong> to Knowledge (Arcana).</li>
+                    <li><strong>+8 Competence Bonus</strong> to Knowledge (Religion).</li>
+                </ul>
+            </li>
             <li><strong>Aura of Diplomacy:</strong> The essence of the Mithral Column grants a <strong>+2 Competence
                     Bonus to Diplomacy</strong>.</li>
         </ul>
@@ -210,77 +247,88 @@
         <ul>
             <li><strong>Dual Flame Blessing:</strong> Fire Resistance 10.</li>
             <li><strong>Eldritch Empowerment:</strong> Your <em>Eldritch Blast</em> deals an additional <strong>+1d6
-                    Fire</strong> and <strong>+1d6 Cold</strong> damage. (Cumulative with base).</li>
+                    Fire</strong> and <strong>+1d6 Cold</strong> damage. (Stacks with base).</li>
         </ul>
     </div>
 
     <h2>Activated Powers</h2>
 
-    <h3><span class="ability-name">Wings of Shadow</span> <span class="ability-type">(At-Will)</span></h3>
-    <p><strong>Action:</strong> Free action (Summon/Dismiss). Summons ethereal wings of shadow and violet lightning.
-        Grants <strong>Fly speed 60 ft</strong> (Good) and the <strong>Flyby Attack</strong> feat while active.</p>
+    <h3><span class="ability-name">1. Wings of Shadow</span> <span class="ability-type">(At-Will)</span></h3>
+    <p><strong>Action:</strong> Free action. <strong>Effect:</strong> Summons ethereal wings of shadow and violet
+        lightning.
+        <strong>Benefit:</strong> <strong>Fly speed 60 ft</strong> (Good) and <strong>Flyby Attack</strong> feat.
+    </p>
 
-    <h3><span class="ability-name">Shadow Step</span> <span class="ability-type">(1/5 Rounds)</span></h3>
-    <p><strong>Action:</strong> Move action. Teleport up to 60 ft between shadows.</p>
+    <h3><span class="ability-name">2. Shadow Step</span> <span class="ability-type">(Su)</span></h3>
+    <p><strong>Action:</strong> Move action. <strong>Frequency:</strong> 1/5 rounds. <strong>Effect:</strong> Teleport
+        up to <strong>60 ft</strong> between shadows (as <em>Dimension Door</em>, requires shadow/dim light).</p>
 
-    <h3><span class="ability-name">Light of Lathander</span> <span class="ability-type">(1/Day)</span></h3>
-    <p><strong>Action:</strong> Swift action. You emanate <em>Daylight</em> in an 18m (60 ft) radius for 10 minutes.
-        <strong>Hope:</strong> Allies within radius gain <strong>+2 Morale Bonus</strong> to Attack Rolls for 3 rounds.
+    <h3><span class="ability-name">3. Light of Lathander</span> <span class="ability-type">(Sp)</span></h3>
+    <p><strong>Action:</strong> Swift action. <strong>Frequency:</strong> 1/Day.
+        <strong>Effect:</strong> Emanate <em>Daylight</em> (CL 15) in 60 ft radius for 10 minutes.
+        <strong>Hope:</strong> Allies in radius gain <strong>+2 Morale Bonus</strong> to Attack Rolls for 3 rounds.
         <strong>Scourge:</strong> Light-sensitive enemies (e.g., Black Dragons) suffer <strong>-2 to
             Attack/Damage</strong>.
     </p>
 
-    <h3><span class="ability-name">Shadow of Mask</span> <span class="ability-type">(1/Day)</span></h3>
-    <p><strong>Action:</strong> Swift action. Casts <em>Greater Invisibility</em> on yourself AND one ally you touch for
-        5 rounds. Does <strong>not</strong> require Concentration.</p>
+    <h3><span class="ability-name">4. Shadow of Mask</span> <span class="ability-type">(Sp)</span></h3>
+    <p><strong>Action:</strong> Swift action. <strong>Frequency:</strong> 1/Day.
+        <strong>Effect:</strong> Casts <em>Greater Invisibility</em> (CL 15) on yourself <strong>AND</strong> one
+        touched ally for <strong>5 rounds</strong>. No Concentration required.
+    </p>
 
-    <h3><span class="ability-name">Unity's Gift</span> <span class="ability-type">(1/Day)</span></h3>
-    <p><strong>Action:</strong> Swift action. Grant one ally within 9m (30 ft) an <strong>Extra Standard Action</strong>
-        to be taken immediately (even if not their turn).</p>
+    <h3><span class="ability-name">5. Unity's Gift</span> <span class="ability-type">(Su)</span></h3>
+    <p><strong>Action:</strong> Swift action. <strong>Frequency:</strong> 1/Day.
+        <strong>Effect:</strong> Grant one ally within 30 ft (9m) an <strong>Extra Standard Action</strong> immediately.
+    </p>
 
-    <h3><span class="ability-name">Firestorm Invocation</span> <span class="ability-type">(1/Day)</span></h3>
-    <p><strong>Action:</strong> Standard action. Unleash a 9m (30 ft) radius burst dealing <strong>8d6 Fire
-            damage</strong> (Reflex DC 19 half). Allies are immune.</p>
+    <h3><span class="ability-name">6. Firestorm Invocation</span> <span class="ability-type">(Sp)</span></h3>
+    <p><strong>Action:</strong> Standard action. <strong>Frequency:</strong> 1/Day.
+        <strong>Effect:</strong> 30 ft (9m) radius burst dealing <strong>8d6 Fire damage</strong> (Reflex DC 19 half).
+        Allies are immune.
+    </p>
 
     <h2>Crisis Activated Powers</h2>
-    <p><em>Activate only during involuntary transformation (Cerebromorphosis, etc.)</em></p>
+    <p><em>Activate only during involuntary transformation (Cerebromorphosis, Lycanthropy, etc.)</em></p>
     <ul>
-        <li><strong>Dawn's Defiance:</strong> Automatically triggers <em>Break Enchantment</em> and mental immunity.
-        </li>
-        <li><strong>Solar Purge:</strong> Deals 1d6 Divine Damage/HD to aberrations in 30 ft when Dawn's Defiance
-            triggers.</li>
+        <li><strong>Dawn's Defiance (Su):</strong> Immediate Action (Automatic). Triggers <em>Break Enchantment</em> and
+            mental immunity (24h) upon failing a save vs transformation.</li>
+        <li><strong>Solar Purge (Su):</strong> Free Action (Optional). Deals <strong>1d6 Divine Damage/HD</strong> to
+            aberrations within 30 ft when Dawn's Defiance triggers. Cost: Loses all powers for 24h.</li>
     </ul>
 
     <div class="synergy-box">
         <h2>Artifact Synergies</h2>
-        <p><em>Resonates with Crown of Adamantio and Aegis Fang.</em></p>
+        <p><em>Resonates with Crown of Adamantio, Aegis Fang, Gauntlets of Tordek.</em></p>
 
         <h3>1. Crown + Ring (Passive)</h3>
-        <p>If Thorik and Artemis are within 3m (10 ft), both gain <strong>+1 Dodge Bonus to AC</strong> vs Lawful
-            creatures.</p>
+        <p>Requirement: Within 30 ft. <strong>Paradox Blessing:</strong> If within 10 ft (3m) of each other, both gain
+            <strong>+1 Dodge Bonus to AC</strong> vs Lawful creatures.</p>
 
         <h3>2. Crown + Ring (Active)</h3>
         <ul>
-            <li><strong>Planar Vision (1/Day):</strong> Artemis can see through Elemental Portals (Swift).</li>
-            <li><strong>Dispel Illusion (1/Day):</strong> Artemis creates 9m burst to dispel illusions (Swift).</li>
+            <li><strong>Planar Vision (1/Day):</strong> See through Elemental Portals (Swift).</li>
+            <li><strong>Dispel Illusion (1/Day):</strong> 30 ft burst to dispel illusions (Swift).</li>
         </ul>
 
-        <h3>3. Aegis + Ring (Dark Dawn Strike)</h3>
-        <p><strong>1/Day Combined Attack:</strong> If Artemis casts <em>Light of Lathander</em> on an enemy and Thorik
-            attacks it in the same round, Thorik gains <strong>+2 Attack</strong> and <strong>+2d6 Sacred
+        <h3>3. Aegis + Ring (Combined Attack)</h3>
+        <p><strong>Dark Dawn Strike (1/Day):</strong> Requires coordination. If Ring casts <em>Light of Lathander</em>
+            on enemy and Thorik attacks in same round: Thorik gains <strong>+2 Attack</strong> and <strong>+2d6 Sacred
                 Damage</strong>.</p>
 
-        <h3>4. Divine Trinity (Crown + Aegis + Ring + Gauntlets)</h3>
-        <p><strong>1/Day (5 Rounds):</strong> Requires activation by Thorik, Artemis, and Tordek within 9m. Grants:</p>
+        <h3>4. Divine Trinity (Crown + Ring + Gauntlets)</h3>
+        <p><strong>Activation:</strong> Move Action (All 3). <strong>Duration:</strong> 5 Rounds (1/Day).
+            <strong>Effect:</strong>
         <ul>
             <li><strong>Immunity:</strong> Fear and Charm.</li>
             <li><strong>Defense:</strong> +4 Sacred Bonus to Saves, +2 Sacred Deflection to AC.</li>
             <li><strong>Offense:</strong> Damage overcomes "Good" and "Lawful" DR.</li>
-            <li><strong>Aura:</strong> Enemies within 18m must save (Will DC 20) or be <strong>Shaken</strong>.</li>
+            <li><strong>Aura:</strong> Enemies within 60 ft must save (Will DC 20) or be <strong>Shaken</strong>.</li>
         </ul>
+        </p>
     </div>
 
-    <h2>Cost Calculation (D&D 3.5 Estimated)</h2>
+    <h2>Market Price Calculation</h2>
     <table>
         <tr>
             <th>Ability</th>
@@ -289,48 +337,53 @@
         </tr>
         <tr>
             <td>Base Ring Powers</td>
-            <td>Resistance +3, Darkvision, Flight</td>
-            <td>62,000 gp</td>
+            <td>Darkvision (Su), Fly (At-will)</td>
+            <td>53,000 gp</td>
         </tr>
         <tr>
-            <td>Skill Bonuses (+8 x2)</td>
-            <td>Custom</td>
-            <td>12,800 gp</td>
+            <td>Skill Bonuses</td>
+            <td>Know(Arc/Rel) +8x2 + Dip+2</td>
+            <td>13,200 gp</td>
         </tr>
         <tr>
             <td>Greater Invisibility (Swift)</td>
-            <td>Spell Lvl 4 x CL 7 x 2000 (Swift)</td>
+            <td>Spell Lvl 4 x CL 7 x 2000 (Swift tax approx)</td>
             <td>25,000 gp</td>
         </tr>
         <tr>
             <td>Daylight + Buff (Swift)</td>
-            <td>Spell Lvl 3+ Effect</td>
+            <td>Spell Lvl 3 Equivalent + Morale Effect</td>
             <td>15,000 gp</td>
         </tr>
         <tr>
-            <td>Eldritch Blast Bonus</td>
-            <td>Greater Chasuble equivalent</td>
+            <td>Eldritch Blast Bonus (+2d6)</td>
+            <td>Greater Chasuble of Fell Power</td>
             <td>18,000 gp</td>
         </tr>
         <tr>
-            <td>Energy Resistance</td>
-            <td>Minor Ring equivalent</td>
+            <td>Energy Resistance (Fire 10)</td>
+            <td>Ring of Energy Resistance (Minor)</td>
             <td>12,000 gp</td>
         </tr>
         <tr>
-            <td>Firestorm / Extra Action</td>
-            <td>Spell equivalents</td>
-            <td>18,000 gp</td>
+            <td>Firestorm (1/Day)</td>
+            <td>Fireball (Lvl 3) Daily Item</td>
+            <td>6,000 gp</td>
+        </tr>
+        <tr>
+            <td>Extra Action (Unity)</td>
+            <td>Belt of Battle (Partial)</td>
+            <td>12,000 gp</td>
         </tr>
         <tr>
             <td>Multiple Effect Tax</td>
-            <td>+50% on secondary powers</td>
+            <td>+50% on secondary abilities</td>
             <td>~10,000 gp</td>
         </tr>
         <tr>
-            <td><strong>TOTAL</strong></td>
+            <td><strong>TOTAL MARKET PRICE</strong></td>
             <td></td>
-            <td><strong>~172,000 gp</strong></td>
+            <td><strong>~163,400 gp</strong></td>
         </tr>
     </table>
 

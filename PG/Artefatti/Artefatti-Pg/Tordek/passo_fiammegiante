@@ -1,0 +1,110 @@
+Salto Fiammegiante (Su) – versione Hulk/Wonder Woman
+
+Utilizzi: 3/giorno
+Azione: azione di movimento (serve un attimo per “caricare” il fuoco sotto di te)
+Descrizione
+
+Ti fermi un istante, piantando i piedi a terra mentre il calore si concentra sotto di te, vapore e scintille che salgono in colonne rosso-arancio.
+Poi il fuoco esplode, proiettandoti in aria in un singolo salto impossibile, molto oltre i limiti normali, e atterri in un boato che genera un anello di fiamme di 3 m attorno al punto d’impatto.
+Passo Fiammeggiante – regole di salto
+
+1) Quando attivi Passo Fiammeggiante:
+
+    Fai un solo tiro di dado:
+    - 1d20 + modificatore di Forza + gradi nella skill Saltare.
+
+        A questo risultato applichi anche un bonus di “fuoco condensato” pari a 1.5 m o 3m  X Saggezza (modificatore di Sag del PG) – rappresenta il controllo del ki e del potere elementale.
+
+Niente regole normali di Saltare:
+
+    Non usi le tabelle standard di salto.
+
+    Non applichi penalità di armatura, velocità ridotta, corsa, ecc.
+
+    Questo potere sostituisce le regole normali per questo salto.
+
+Dal risultato finale ricavi due valori distinti:
+
+    Salto verticale massimo:
+
+        Per ogni 10 punti interi nel risultato, ottieni +1,5 m di altezza massima.
+
+        A cui sommi il controllo del ki e del potere elementale del fuoco
+
+            Controllo ki per salto verticale
+                (1,5 m×mod. Sag)
+
+        Formula per il salto Verticale massima finale:
+            (1,5 m×⌊tiro/10⌋)+(1,5 m×mod. Sag)
+
+
+    Salto orizzontale massimo:
+
+        Per ogni 10 punti interi nel risultato, ottieni +3 m di distanza massima.
+
+        A cui sommi il controllo del ki e del potere elementale del fuoco
+
+            Controllo ki per salto verticale
+                (3 m×mod. Sag)
+
+
+        Formula per il salto Orizzontale massima finale:
+            (3 m×⌊tiro/10⌋)+(3 m×mod. Sag)
+
+
+
+2) Anello di Fuoco all’arrivo
+
+Quando atterri usando Passo Fiammeggiante:
+
+    Generi un anello di fiamme in un raggio di 3 m (2 quadretti) attorno al punto di atterraggio.
+
+    Tutte le creature (tranne te) nell’area:
+
+        Subiscono 2d6 danni da fuoco.
+
+        Possono effettuare un Tiro Salvezza sui Riflessi con CD:
+        CD=10+1/2livello del personaggio+modificatore di Saggezza
+
+
+        Se superano il TS, subiscono metà dei danni.
+
+
+
+Esempio veloce:
+
+    Tiro totale (1d20 + For + Saltare) = 27 → 2 “blocchi” da 10.
+
+    Mod. Sag = +3.
+
+Verticale max:
+
+    Base: 1,5 m × 2 = 3 m.
+
+    Bonus Sag: 1,5 m × 3 = 4,5 m.
+
+    Totale: 7,5 m.
+
+Orizzontale max:
+
+    Base: 3 m × 2 = 6 m.
+
+    Bonus Sag: 3 m × 3 = 9 m.
+
+    Totale: 15 m.
+
+Anello di Fuoco all’arrivo
+
+Quando atterri usando Passo Fiammeggiante:
+
+    Generi un anello di fiamme in un raggio di 3 m (2 quadretti) attorno al punto di atterraggio.
+
+    Tutte le creature (tranne te) nell’area:
+
+        Subiscono 2d6 danni da fuoco.
+
+        Possono effettuare un Tiro Salvezza sui Riflessi con CD:
+        CD=10+1/2livello del personaggio+modificatore di Saggezza
+
+        Se superano il TS, subiscono metà dei danni.
+

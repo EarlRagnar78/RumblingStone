@@ -106,7 +106,7 @@ Quando il Golem arriva a 0 PF, non cade semplicemente. Si ferma. Il petto si apr
 ## 5. Il Risveglio Completo: La Visione della Pietra
 
 > Con il crollo della Sentinella, la stanza tace. Il ronzio magnetico muore con un ultimo gemito elettrico.
-> Thorik cade dalla parete con un clangore di metallo, libero. Artemis crolla a terra, boccheggiando mentre la gravità torna normale.
+> Thorik cade dalla parete con un clangore di metallo, libero. Artemis si rialza da terra, boccheggiando mentre la gravità torna normale.
 >
 > Ma per te, Tordek, il mondo non torna normale. Il mondo scompare.
 >
@@ -147,8 +147,8 @@ Quando il Golem arriva a 0 PF, non cade semplicemente. Si ferma. Il petto si apr
 >
 > Guardi le tue mani.
 > I guanti sono cambiati. L'adamantio annerito è ora striato di leghe sconosciute, vene d'argento e smeraldo che corrono lungo l'avambraccio.
-> Sul destro, il Topazio del Fuoco pulsa con rabbia impaziente.
-> Sul sinistro, il Geode della Terra brilla con calma eterna.
+> Sul sinistro, il Topazio del Fuoco pulsa con rabbia impaziente.
+> Sul destro, il Geode della Terra brilla con calma eterna.
 >
 > Unisci i pugni.
 > *BOOOM.*

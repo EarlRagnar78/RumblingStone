@@ -15,8 +15,8 @@
 > *"Una forgia senza fuoco non crea."*
 
 Coppia di guanti di adamantio annerito, lavorati come piastre sovrapposte a imitare nocche e falangi di un gigantesco pugno nanico.
-*   **Guanto Destro:** Sul dorso è incastonata una gemma **Topazio-Fuoco**, pulsante come una fornace.
-*   **Guanto Sinistro:** Il dorso presenta un incavo vuoto e scuro, in attesa di essere riempito.
+*   **Guanto Sinistro:** Sul dorso è incastonata una gemma **Topazio-Fuoco**, pulsante come una fornace.
+*   **Guanto Destro:** Il dorso presenta un incavo vuoto e scuro, in attesa di essere riempito.
 
 *   **Rune:** Iscrizioni naniche circondano le gemme, brillando di un bagliore bronzeo quando il portatore chiude i pugni.
 *   **Sensazione:** Al tocco non scottano, ma emanano un calore secco e costante. Indossarli trasmette una sensazione di calma inflessibile, come un vecchio fabbro che osserva il lavoro in silenzio.
@@ -40,33 +40,76 @@ Questi poteri sono sempre attivi finché i guanti sono indossati da un nano degn
     *   Contro draghi (e sottotipo drago), il bonus di potenziamento sale di **+2** e infliggi **+2d6 danni** extra.
 *   **Maestria dell'Attacco Poderoso:**
     *   Quando usi Attacco Poderoso con colpi senz'armi o armi naniche, riduci la penalità al tiro per colpire di **1**. (*Esempio: dichiari -4, tiri come -3, ma danni come -4*).
+*   **Cariche di Devastazione:**
+    *   I guanti possiedono 3 cariche di devastazione rinnovabili ogni giorno al tramonto (o dopo 8 ore di riposo forgiato nella preghiera a Moradin).
+    *   Ogni volta che il portatore conferma un critico in mischia, può scegliere di spendere 1 o più cariche per aumentare il danno:
+        *   1 carica: **+2d6 danni da forza**.
+        *   2 cariche: **+3d6 danni da forza**.
+        *   3 cariche: **+4d6 danni da forza**.
+    *   Dopo aver speso cariche, il guanto “chiede” altro sangue: il Possessore del l'ogetto tira subito un nuovo d20. Se il risultato è 18-20 naturale, il guanto assorbe la furia della battaglia e ricarica gratuitamente 1 carica (non può superare il massimo giornaliero di 3).
 *   **Cuore di Brace:**
     *   Ottieni **Resistenza al Fuoco 10**.
     *   Ignori gli effetti ambientali da calore eccessivo (forgie, magma, ecc.) finché il danno per round non supera 10.
 *   **Bonus Atletico:**
-    *   Ottieni un bonus di competenza **+10 alle prove di Saltare**.
+    *   Ottieni un bonus di competenza **+10 alle prove di Saltare** finquando hai a disposizione 1 uso di **Salto Infuocato** (Vedi in basso per Dettagli).
+    
 
 ### Poteri Attivati (Combattimento)
 
-#### 1. Pugno di Moradin (3/Giorno)
-*   **Azione:** Veloce (Swift).
-*   **Effetto:** Per **1 round**, i tuoi colpi ardono di potere divino.
-    *   Aggiungi il tuo **Bonus Saggezza** come danno Sacro a tutti i colpi senz'armi.
-    *   I nemici colpiti devono superare **TS Tempra CD 18** o essere spinti indietro di 1,5 metri.
+#### 1. Corsa della Forgia
+*   **+3 m** alla velocità base di movimento a terra.
+*   Quando effettui una carica a colpi senz’armi contro una creatura entro 9 m e la colpisci, infliggi **+1d6 danni da fuoco** addizionali.
 
 #### 2. Colpi del Fuoco (3/Giorno)
 *   **Azione:** Standard (Attacco in mischia).
 *   **Effetto:** Un colpo devastante che libera l'energia del Piano del Fuoco.
-    *   **Danni:** Colpo normale + **4d6 Fuoco**.
+    *   **Danni:** Colpo normale + **3d6 Fuoco**.
     *   **Impatto:** Bersaglio deve superare **TS Tempra CD 18** o essere spinto 1,5m.
     *   **Esplosione:** Tutte le creature adiacenti al bersaglio subiscono **2d6 Fuoco** (Riflessi CD 18 dimezza).
 
-#### 3. Salto Infuocato (3/Giorno)
-*   **Azione:** Movimento.
-*   **Descrizione:** Ti carichi come una molla, concentrando calore sotto i piedi, poi esplodi in un salto impossibile.
-*   **Meccanica:** Fai un unico tiro (d20 + Forza + Gradi Saltare + Saggezza).
-    *   **Distanza:** Calcoli la distanza massima verticale/orizzontale in base al risultato (senza rincorsa).
-    *   **Atterraggio:** Generi un **Anello di Fuoco** (raggio 3m). Danni **2d6 Fuoco** a tutti i nemici nell'area (Riflessi dimezza).
+#### 3. Salto Fiammegiante (Su) 
+
+*   **Utilizzi:** 3/giorno
+*   **Azione:** Azione di movimento (serve un attimo per “convogliare” le **energie del piano del fuoco** sotto di te)
+
+**Descrizione:**
+Ti fermi un istante, piantando i piedi a terra mentre il calore si concentra sotto di te, vapore e scintille che salgono in colonne rosso-arancio. Poi il fuoco esplode, proiettandoti in aria in un singolo salto impossibile, molto oltre i limiti normali, e atterri in un boato che genera un anello di fiamme di 3 m attorno al punto d’impatto.
+
+---
+
+##### Dettagli del Potere: Passo Fiammeggiante
+
+**1) Attivazione e Tiro**
+Quando attivi il potere, ignora le normali regole di Saltare (niente penalità armatura, velocità, rincorsa, ecc.). Fai un **unico tiro di dado**:
+> **1d20 + Mod. Forza + Gradi in Saltare**
+
+**2) Calcolo della Distanza**
+Il risultato del tiro determina la potenza base, a cui aggiungi il controllo del Ki (Mod. Saggezza).
+
+*   **Salto Verticale Massimo:**
+    *   **Base:** +1,5 m per ogni 10 punti del risultato del tiro.
+    *   **Bonus Ki:** +1,5 m per ogni punto del Mod. Saggezza.
+    *   **Formula:** `(1,5 m × ⌊tiro/10⌋) + (1,5 m × Mod. Sag)`
+
+*   **Salto Orizzontale Massimo:**
+    *   **Base:** +3 m per ogni 10 punti del risultato del tiro.
+    *   **Bonus Ki:** +3 m per ogni punto del Mod. Saggezza.
+    *   **Formula:** `(3 m × ⌊tiro/10⌋) + (3 m × Mod. Sag)`
+
+**3) Anello di Fuoco all’Arrivo**
+Quando atterri, generi un'esplosione di fiamme:
+*   **Area:** Raggio di 3 m (2 quadretti) dal punto di impatto.
+*   **Danni:** **2d6 Fuoco** a tutte le creature nell'area (tranne te).
+*   **Tiro Salvezza:** Riflessi dimezza. **CD = 10 + 1/2 Livello + Mod. Saggezza**.
+
+---
+
+**Esempio Pratico:**
+*   **Livello:** Monaco - Livello 10 
+*   **Dati:** Tiro Totale (1d20+For+Saltare) = **27** (quindi 2 blocchi completi da 10). Mod. Saggezza = **+3**.
+*   **Salto Verticale:** (1,5m × 2) + (1,5m × 3) = 3m + 4,5m = **7,5 m**
+*   **Salto Orizzontale:** (3m × 2) + (3m × 3) = 6m + 9m = **15 m**
+*   **Impatto:** Atterrando, infliggi 2d6 fuoco in un raggio di 3m **CD = 10 + (10 Livello)/2 + 3 Mod. Saggezza**.
 
 ---
 

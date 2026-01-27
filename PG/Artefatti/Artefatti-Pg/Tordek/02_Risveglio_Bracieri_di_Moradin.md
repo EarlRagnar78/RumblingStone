@@ -9,9 +9,9 @@ Ha appena sconfitto l'**Elementale del Fuoco Anziano** (Boss di Fine Parte 3) su
 ## 1. La Quiete dopo la Tempesta
 
 **Descrizione (Da leggere o parafrasare):**
-> L’aria della Forgia Adamantina ribolle ancora, un sudario di calore che distorce la vista. I resti incandescenti dell’anziano elementale non sono cadaveri di carne, ma collassano in un vortice di brace e luce che svanisce nel pavimento di metallo, come se il cuore stesso del Piano del Fuoco stesse ritirando il suo respiro.
+> L’aria ribolle ancora, un sudario di calore che distorce la vista. I resti incandescenti degli elementali non sono cadaveri di carne, ma collassano in un vortice di brace e luce che svanisce nel pavimento di metallo, come se il cuore stesso del Piano del Fuoco stesse ritirando il suo respiro.
 >
-> Il tuo respiro è rauco, la gola arsa dal fumo. Le ustioni sulla tua pelle pulsano all'unisono con il calore ambientale. Accanto a te, il tiefling che hai strappato alla morte trema, non per il freddo, ma per il terrore della potenza che hai appena scatenato.
+> Il tuo respiro è rauco, la gola arsa dal fumo. Le ustioni sulla tua pelle pulsano all'unisono con il calore ambientale. Accanto a te, la tiefling che hai strappato alla morte trema, non per il freddo, ma per il terrore della potenza che hai appena scatenato.
 >
 > Ma non è finita.
 > Fra gli schizzi di lava che si ritirano e le lingue di fiamma che muoiono, qualcosa resta. Sospeso sopra il pozzo di magma centrale, un oggetto sfida la gravità e la logica del fuoco.
@@ -75,16 +75,16 @@ Quando il PG tocca la gemma (o se la gemma tocca lui):
 
 ## 4. Il Risveglio
 
-> La pressione svanisce. Il calore, che un attimo fa minacciava di incenerirti, ora ti pesa sulle ossa in modo familiare. Ti ricorda la gravità del Nodo della Terra, ma è diverso: è velocità, è slancio, è la promessa di un'esplosione cinetica.
+> La pressione svanisce. Il calore, che un attimo fa minacciava di incenerirti, ora ti pesa sulle ossa in modo familiare : è velocità, è slancio, è la promessa di un'esplosione cinetica.
 >
-> Guardi le tue mani. Rune di fuoco liquido fiammeggiano attorno alle tue nocche, formando per un istante il simbolo dell'Incudine e del Martello, poi si fissano in un disegno stabile. Un anello di rune naniche ora abbraccia la nuova gemma, incastonata profondamente nel dorso del guanto destro, pulsante come una piccola fornace portatile. La gemma gemella sul sinistro risponde con lo stesso ritmo.
+> Guardi le tue mani. Rune di fuoco liquido fiammeggiano attorno alle tue nocche, formando per un istante il simbolo dell'Incudine e del Martello, poi si fissano in un disegno stabile. Un anello di rune naniche ora abbraccia la nuova gemma, incastonata profondamente nel dorso del guanto sinistro, pulsante come una piccola fornace portatile. Nel guanto destro si apre un incavo vuoto  pronto ad accogliere forse una altra gemma del potere.
 >
 > Poi il mondo torna.
 > L'odore di zolfo. Il calore della lava sotto la catwalk di mithral. Il ruggito lontano del fiume di magma del Corridoio del Fuoco. Il sudore che cola sulla tua fronte.
 >
 > E un nuovo peso, cosciente, attorno alle tue mani.
 >
-> I guanti ti stanno osservando. Non con occhi, ma con una presenza tangibile. La sensazione non è di giudizio, ma di riconoscimento. Come un vecchio fabbro burbero che, dopo anni di silenzio, annuisce finalmente al garzone, riconoscendolo come maestro della sua stessa bottega.
+> I guanti ti stanno osservando. Non con occhi, ma con una presenza tangibile. La sensazione non è di giudizio, ma di riconoscimento. Come un vecchio fabbro burbero che, dopo anni di silenzio, annuisce finalmente al garzone.
 
 **Stato dell'Artefatto:**
 I *Guanti della Devastazione* sono ora i **Bracieri Gemelli di Moradin** (Stato Fuoco Risvegliato).

@@ -43,35 +43,40 @@ La presenza della Terra stabilizza la furia del Fuoco, concedendo protezioni sup
 
 ### Poteri Attivati (La Danza degli Elementi)
 
-#### 1. Pugno Frana (3/Giorno) - *NUOVO*
+#### 1. Pugno di Moradin (3/Giorno)
+*   **Azione:** Veloce (Swift).
+*   **Effetto:** Per **1 round**, i tuoi colpi ardono di potere divino.
+    *   Aggiungi il tuo **Bonus Saggezza** come danno Sacro a tutti i colpi senz'armi.
+    *   I nemici colpiti devono superare **TS Tempra CD 18** o essere spinti indietro di 1,5 metri.
+
+
+#### 2. Pugno Frana (3/Giorno)
 *   **Azione:** Standard.
 *   **Effetto:** Colpisci con la forza di una valanga.
     *   **Danni:** Colpo normale + **4d6 Contundenti**.
     *   **Impatto:** Bersaglio deve superare **TS Riflessi CD 19** o cadere **Prono**.
     *   **Onda d'Urto:** Nemici adiacenti: prova Equilibrio CD 15 o cadono Proni.
 
-#### 2. Colpi del Fuoco (3/Giorno)
+#### 3. Colpi del Fuoco (3/Giorno)
 *   **Azione:** Standard.
 *   **Effetto:** Colpo esplosivo.
     *   **Danni:** Colpo normale + **4d6 Fuoco**.
     *   **Spinta:** TS Tempra CD 18 o spinto 1,5m indietro.
     *   **Adiacenti:** 2d6 Fuoco (Riflessi CD 18 dimezza).
 
-#### 3. Tremore del Forgiatore (1/Giorno) - *NUOVO*
+#### 4. Tremore del Forgiatore (1/Giorno)
 *   **Azione:** Standard (Colpisci il terreno).
 *   **Effetto:** Terremoto localizzato (Raggio 6m).
     *   Creature a terra: **TS Riflessi CD 18** o cadono **Prone** e subiscono **2d6 Contundenti**.
     *   Strutture fragili subiscono danni doppi.
 
-#### 4. Ancoraggio della Montagna (2/Giorno) - *NUOVO*
+#### 5. Ancoraggio della Montagna (2/Giorno)
 *   **Azione:** Immediata.
 *   **Effetto:** Quando verresti spinto/mosso contro volontà, diventi inamovibile.
     *   Ignori il movimento forzato.
     *   +4 TS contro l'effetto scatenante.
 
-#### 5. Pugno di Moradin (3/Giorno)
-*   **Azione:** Veloce.
-*   **Effetto:** **+Bonus Saggezza** ai danni (Sacri) per 1 round. Spinta (Tempra CD 18).
+
 
 #### 6. Salto Infuocato (3/Giorno)
 *   **Azione:** Movimento.

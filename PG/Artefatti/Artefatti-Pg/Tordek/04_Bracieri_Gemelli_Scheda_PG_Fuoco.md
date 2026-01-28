@@ -35,35 +35,38 @@ Questi guanti, dimenticati per eoni, sono stati recuperati e portati nel **Piano
 ### Poteri Costanti (Passivi)
 Questi poteri sono sempre attivi finché i guanti sono indossati da un nano degno.
 
-*   **Castigo del Drago (Dragon Doom):**
+*   **Castigo del Drago (Dragon Doom) (Su):**
     *   I guanti possiedono la proprietà *Nemesi dei Draghi*.
     *   Contro draghi (e sottotipo drago), il bonus di potenziamento sale di **+2** e infliggi **+2d6 danni** extra.
-*   **Maestria dell'Attacco Poderoso:**
+*   **Maestria dell'Attacco Poderoso (Ex):**
     *   Quando usi Attacco Poderoso con colpi senz'armi o armi naniche, riduci la penalità al tiro per colpire di **1**. (*Esempio: dichiari -4, tiri come -3, ma danni come -4*).
-*   **Cariche di Devastazione:**
+*   **Cariche di Devastazione (Su):**
     *   I guanti possiedono 3 cariche di devastazione rinnovabili ogni giorno al tramonto (o dopo 8 ore di riposo forgiato nella preghiera a Moradin).
     *   Ogni volta che il portatore conferma un critico in mischia, può scegliere di spendere 1 o più cariche per aumentare il danno:
         *   1 carica: **+2d6 danni da forza**.
         *   2 cariche: **+3d6 danni da forza**.
         *   3 cariche: **+4d6 danni da forza**.
     *   Dopo aver speso cariche, il guanto “chiede” altro sangue: il Possessore del l'ogetto tira subito un nuovo d20. Se il risultato è 18-20 naturale, il guanto assorbe la furia della battaglia e ricarica gratuitamente 1 carica (non può superare il massimo giornaliero di 3).
-*   **Cuore di Brace:**
+*   **Cuore di Brace (Su):**
     *   Ottieni **Resistenza al Fuoco 10**.
     *   Ignori gli effetti ambientali da calore eccessivo (forgie, magma, ecc.) finché il danno per round non supera 10.
-*   **Bonus Atletico:**
-    *   Ottieni un bonus di competenza **+10 alle prove di Saltare** finquando hai a disposizione 1 uso di **Salto Infuocato** (Vedi in basso per Dettagli).
+*   **Passo di Brace (Ember Step) (Su):**
+    *   Ottieni un bonus di potenziamento di **+3 m** alla velocità base di movimento a terra finquando hai a disposizione almeno 1 uso di **Salto Fiammegiante**.
     
 
 ### Poteri Attivati (Combattimento)
 
-#### 1. Corsa della Forgia
-*   **+3 m** alla velocità base di movimento a terra.
-*   Quando effettui una carica a colpi senz’armi contro una creatura entro 9 m e la colpisci, infliggi **+1d6 danni da fuoco** addizionali.
+#### 1. Pugni di Magma (Su) (3/Giorno)
+*   **Azione:** Veloce (Swift).
+*   **Effetto:** Per **1 round**, i tuoi colpi grondano magma.
+    *   Aggiungi il tuo **Bonus Saggezza** come danni da **Fuoco** a tutti i colpi senz'armi.
+    *   I nemici colpiti devono superare **TS Tempra CD 18** o essere **Infermi (Sickened)** per 1 round (causa fumo e calore).
 
-#### 2. Colpi del Fuoco (3/Giorno)
+
+#### 2. Colpi del Fuoco (Su) (3/Giorno)
 *   **Azione:** Standard (Attacco in mischia).
 *   **Effetto:** Un colpo devastante che libera l'energia del Piano del Fuoco.
-    *   **Danni:** Colpo normale + **3d6 Fuoco**.
+    *   **Danni:** Colpo normale + **4d6 Fuoco**.
     *   **Impatto:** Bersaglio deve superare **TS Tempra CD 18** o essere spinto 1,5m.
     *   **Esplosione:** Tutte le creature adiacenti al bersaglio subiscono **2d6 Fuoco** (Riflessi CD 18 dimezza).
 
@@ -77,24 +80,14 @@ Ti fermi un istante, piantando i piedi a terra mentre il calore si concentra sot
 
 ---
 
-##### Dettagli del Potere: Passo Fiammeggiante
+##### Dettagli del Potere: Salto Fiammeggiante
 
 **1) Attivazione e Tiro**
-Quando attivi il potere, ignora le normali regole di Saltare (niente penalità armatura, velocità, rincorsa, ecc.). Fai un **unico tiro di dado**:
-> **1d20 + Mod. Forza + Gradi in Saltare**
+Ignora regole normali. Unico tiro: **1d20 + Mod. Forza + Gradi in Saltare**.
 
 **2) Calcolo della Distanza**
-Il risultato del tiro determina la potenza base, a cui aggiungi il controllo del Ki (Mod. Saggezza).
-
-*   **Salto Verticale Massimo:**
-    *   **Base:** +1,5 m per ogni 10 punti del risultato del tiro.
-    *   **Bonus Ki:** +1,5 m per ogni punto del Mod. Saggezza.
-    *   **Formula:** `(1,5 m × ⌊tiro/10⌋) + (1,5 m × Mod. Sag)`
-
-*   **Salto Orizzontale Massimo:**
-    *   **Base:** +3 m per ogni 10 punti del risultato del tiro.
-    *   **Bonus Ki:** +3 m per ogni punto del Mod. Saggezza.
-    *   **Formula:** `(3 m × ⌊tiro/10⌋) + (3 m × Mod. Sag)`
+*   **Salto Verticale:** `(1,5 m × ⌊tiro/10⌋) + (1,5 m × Mod. Sag) + (1,5 m x (per ogni 3m di velocità oltre i 12m))`
+*   **Salto Orizzontale:** `(3 m × ⌊tiro/10⌋) + (3 m × Mod. Sag) + (3 m x (per ogni 3m di velocità oltre i 12m))`
 
 **3) Anello di Fuoco all’Arrivo**
 Quando atterri, generi un'esplosione di fiamme:
@@ -105,10 +98,10 @@ Quando atterri, generi un'esplosione di fiamme:
 ---
 
 **Esempio Pratico:**
-*   **Livello:** Monaco - Livello 10 
+*   **Livello:** Monaco - Livello 10 - velocita 9 + 6 metri di incremento
 *   **Dati:** Tiro Totale (1d20+For+Saltare) = **27** (quindi 2 blocchi completi da 10). Mod. Saggezza = **+3**.
-*   **Salto Verticale:** (1,5m × 2) + (1,5m × 3) = 3m + 4,5m = **7,5 m**
-*   **Salto Orizzontale:** (3m × 2) + (3m × 3) = 6m + 9m = **15 m**
+*   **Salto Verticale:** (1,5m × 2) + (1,5m × 3) + (1,5m x ((15-12)/3)) = 3m + 4,5m + 1,5m  = **9 m**
+*   **Salto Orizzontale:** (3m × 2) + (3m × 3) + (3m x ((15-12)/3)) = 6m + 9m + 3m = **18 m**
 *   **Impatto:** Atterrando, infliggi 2d6 fuoco in un raggio di 3m **CD = 10 + (10 Livello)/2 + 3 Mod. Saggezza**.
 
 ---

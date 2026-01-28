@@ -79,7 +79,7 @@ Therisol non prega più per i suoi incantesimi. Il cristallo nel suo petto agisc
 **Incantesimi Conosciuti & Slot:**
 *   **Livello 0 (3/giorno):** *Creare Acqua* (condensa l'aria), *Individuazione del Magico*, *Lettura del Magico*, *Guida* (la voce del fratello).
 *   **Livello 1 (5/giorno):** *Cura Ferite Leggere* (cauterizzazione fredda), *Benedizione*, *Comando* (voce draconica), *Foschia Occultante* (vapore gelido).
-*   **Livello 2 (4/giorno):** *Aiuto*, *Vedere Invisibilità*, *Ristorazione Inferiore*.
+*   **Livello 2 (4/giorno):** *Aiuto*, *Cura Ferite Moderate*, *Ristorazione Inferiore*.
 
 #### **2. Egida del Fuoco Inverso (Capacità Soprannaturale Unica)**
 Questa è l'abilità che si è manifestata durante la sua trasformazione ("Awakening").

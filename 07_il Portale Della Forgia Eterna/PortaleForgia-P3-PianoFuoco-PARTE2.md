@@ -7,6 +7,10 @@
 **Questo documento continua da PortaleForgia-P3-PianoFuoco-PARTE1.md**
 
 ---
+> **NOTA DM (LIVELLO 13+):** Per gruppi ottimizzati di livello alto (come Thorik, Tordek, Artemis), gli scontri standard qui descritti potrebbero risultare banali.
+> È disponibile un **ADDENDUM: RIBILANCIAMENTO SCONTRI** in fondo a questo documento che trasforma il finale in una sfida Epica (CR 14+), con mappa modificata e meccaniche di eruzione vulcanica.
+> **Vedi Sezione 11: ADDENDUM** in fondo al file.
+---
 
 ## 7. INCONTRO 3: SALAMANDRA NOBILE E SCHIAVI (CR 12)
 
@@ -1131,3 +1135,81 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 **Progressione Storia:** ✅ 1/3 Gemme Recuperate  
 
 Party è PRONTO per Piano Elementale della Terra!
+---
+
+## 11. ADDENDUM: RIBILANCIAMENTO SCONTRI (LIVELLO 13+)
+
+> **QUESTA SEZIONE È OPZIONALE:** Progettata per gruppi di Livello 13+ altamente ottimizzati (come Thorik con Corona e Aegis Fang, Tordek Monaco Voto Povertà, Artemis Warlock). Sostituisce gli Incontri, la Mappa Finale e il Rituale standard.
+
+### 11A. IL CORRIDOIO DI LAVA (Alternative Incontro 2)
+
+**Nemici:** 4x **Advanced Huge Fire Elementals** (CR 9 ciascuno)
+**Modifiche:**
+*   **HP:** 152 ciascuno (21 DV).
+*   **Immersioni:** Si curano di 8d6/round se immersi nella lava.
+*   **Tattica:** GEYSER SINCRONIZZATI. Ogni 1d4+1 round, 3 geyser esplodono sotto i PG (8d6 fuoco, Riflessi CD 22, + Prono).
+
+---
+
+### 11B. SCENA FINALE: LA SCALINATA DELL'INFERNO (Hell's Staircase)
+
+**Descrizione Ambientale:**
+La Piramide Rovesciata non è solo una piattaforma. È un **Tempio-Vulcano** sospeso.
+
+> *Davanti a voi si erge la "Scalinata dell'Inferno". Non gradini umani. GRADONI DI OSSIDIANA alti 3 metri ciascuno. Dovete scalarli uno a uno.*
+> *Avete già superato i primi 12. Ne rimangono altri 12 per raggiungere la vetta.*
+> *Ogni gradone che superate, il calore aumenta esponenzialmente. Rune Ignan compaiono sulla pietra nera, brillando di luce bianca accecante.*
+> *Sotto di voi? Non c'è terra. La piramide è cava al centro: state scalando il bordo di un CAMINO VULCANICO attivo.*
+
+**Meccanica di Scalata (Avvicinamento):**
+*   **12 Gradoni (36m dislivello):** Richiedono prove Scalare (CD 15) o salti enormi (Tordek/Salto Fiammegiante).
+*   **Rune Ignan:** Infliggono 2d6 danni fuoco a chi tocca i gradoni senza protezione/benedizione.
+
+---
+
+### 11C. BOSS FIGHT: L'AVATAR DELL'INFERNO
+
+**Mappa Tattica RIVISTA: L'Isola sul Camino**
+La piattaforma finale non è solida. È un'"Isola" di roccia nera sospesa direttamente sopra il nucleo del vulcano.
+*   **Dimensioni:** 60m x 60m (come originale), MA...
+*   **Venature di Lava:** Il pavimento è spaccato. Fiumi di lava irregolari lo attraversano. Calpestare una vena = 10d6 danni.
+*   **Instabilità:** La piattaforma trema ogni round.
+
+**BOSS: ELDER FIRE ELEMENTAL - AVATAR (CR 14)**
+*   **HP:** 380 (Rigenerazione Lava Suprema).
+*   **Fasi:**
+    1.  **Emersione:** Esplode dal camino centrale. Aura Calore (6d6 round).
+    2.  **Vortice Infernale:** Si trasforma in tornado di fuoco. Tordek può entrare per meditare (Prova Eroica CD 24).
+    3.  **Evocazioni:** Chiama 2 Huge Elementals dalla lava circostante.
+
+---
+
+### 11D. EVENTO POST-BOSS: PROTOCOLLO ERUZIONE
+
+**IMPORTANTE:** Uccidere il Guardiano non porta pace. Porta il CAOS.
+Il Guardiano *stabilizzava* il vulcano. Morto lui, il camino collassa.
+
+**TRIGGER:** Appena il Boss muore (HP 0).
+
+**Narrazione:**
+> *Il mostro urla e si dissolve in cenere. Ma non c'è silenzio. Un BOATO sismico scuote l'intera piramide. Le venature di lava sulla piattaforma si spalancano. Il magma sotto di voi sale. La piramide sta per eruttare.*
+> *Avete POCHISSIMO TEMPO.*
+
+**TAVOLA DEL CONTO ALLA ROVESCIA (Reale o Round):**
+Avete **10 Round** (o 1 Minuto reale di descrizione frenetica) per completare il Rituale del Topazio prima del TPK.
+
+| Round | Evento Ambientale | Effetto Meccanico |
+| :--- | :--- | :--- |
+| **1-2** | **Tremore** | TS Riflessi CD 20 ogni round o Proni. Le rune Ignan bruciano (4d6 danni/round). |
+| **3-5** | **Frattura** | La piattaforma si spacca in 3 pezzi. Dovete saltare tra i pezzi per raggiungere l'Altare (Saltare CD 25). |
+| **6-8** | **Eruzione Parziale** | Geyser di magma coprono il 50% della mappa. 10d6 danni fuoco in quelle aree. |
+| **9** | **Collasso** | L'Altare inizia a scivolare nel vulcano. Serve prova di FORZA (Thorik) per tenerlo fermo mentre Artemis canalizza. |
+| **10** | **ERUZIONE TOTALE** | La piramide esplode. 200d6 danni. Game Over (a meno che non siate nel Portale). |
+
+**Il Rituale in Extremis:**
+Deve essere completato DURANTE questi eventi.
+*   **Thorik:** Deve proteggere fisicamente l'altare dai detriti/collasso.
+*   **Artemis:** Deve canalizzare senza interrompersi (Concentrazione CD 25+danni).
+*   **Tordek:** Deve correre a recuperare il Topazio appena appare, prima che cada nella lava.
+
+Questo finale trasforma la vittoria in una fuga rocambolesca, degna di un finale di atto.

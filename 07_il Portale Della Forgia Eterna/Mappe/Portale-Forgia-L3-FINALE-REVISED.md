@@ -1,375 +1,165 @@
-# PORTALE DELLA FORGIA ETERNA - LOTTO 3 FINALE (REVISED ULTRA-CLEAR)
-## Parte 5-7: Caverne Terra + Nodo Terra + Cuore Montagna | Griglie 1.5m Complete
+# 🗺️ PIANO DELLA TERRA - PORTALE FORGIA ETERNA - L3 FINALE REVISED
+
+### ("Hard Mode" - CR 14-16)
+
+> [!WARNING] **REGOLE AMBIENTALI: GRAVITÀ IRACONDA (x2)**
+>
+> * **Movimento:** Dimezzato (chi vola deve atterrare ogni round o fare prova Volare CD 20 per non precipitare).
+> * **Caduta:** Danni brutalmente aumentati a **1d10 per ogni 3m** (assumere cadute in questo piano come quasi letali).
+> * **NPC Therysol (Supporto):** Soffre pesantemente l'ambiente. Movimento ridotto a 6m, subisce un clamoroso -4 ai TxC in mischia. Mantenere come ruolo di supporto (Balestra e Cure/Buff) o morirà qui nei primi round.
 
 ---
 
-## MAPPA PF-5: CAVERNE DELLA TERRA (Earth Gauntlet)
-**Dimensioni:** 120m × 30m (80 colonne × 20 righe, 1.5m/quadrato)  
-**Incontro:** 4 Earth Elementals + Heavy Gravity + Geodes
+## 🟢 MAPPA 1: L'AGGUATO DELLE FAUCI DI DIAMANTE (CR 14)
 
-### 🎯 COMPRENSIONE: Caverna irregolare winding, gravità ×1.5, stalattiti pericolose, geodi giganti
+> **Lettura per i Giocatori (Testo Descrittivo):**
+> *Camminate incerti tra giganteschi prismi di cristallo alti oltre 50 metri. La gelida luce azzurra viene frammentata in un caleidoscopio stordente, mentre l'aria densa e la gravità schiacciante rallentano enormemente i vostri passi. Improvvisamente, senza alcun suono se non un sordo digrignare, la roccia solida sotto tre metri da voi letteralmente esplode verso l'alto. Tre creature tozze, provviste di tre gambe e un'enorme fauce circolare orlata di denti spietati, emergono dalla pietra fusa come se stessero emergendo dalle onde.*
 
----
+### Griglia Tattica Visuale: Foresta di Cristallo
 
-### VISTA 1: GRID COMPLETA CON COORDINATE (80×20)
+```text
+════════════════════════════════════════════════════════════════════════════════
+                  AREA BOSCHIVA: FORESTA DI CRISTALLO GIGANTE
+════════════════════════════════════════════════════════════════════════════════
+    1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
+A   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
+B   .  C  C  C  .  .  .  .  .  .  .  .  C  C  C  .  .  .  .  . 
+C   C  C  C  C  .  .  . [X1].  .  .  C  C  C  C  .  .  .  .  . 
+D   .  C  C  .  .  .  .  .  .  .  .  .  .  C  .  .  .  .  .  . 
+E   .  .  .  .  . [Th]. [A] .  .  .  .  .  .  .  .  .  .  .  . 
+F   .  .  .  .  .  . [Tr].  .  .  .  .  .  .  .  .  .  .  .  . 
+G   .  .  .  .  .  .  .  .  .  .  . [X2].  .  .  .  .  .  .  . 
+H   .  C  C  C  .  .  .  .  .  .  C  C  C  .  .  .  .  .  .  . 
+I   C  C  C  C  .  . [XD].  .  .  C  C  C  C  .  .  .  .  .  . 
+J   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 
 
-```
-═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-NORD ↑ (Da Portal Terra)                                                           CAVERNE DELLA TERRA 120m × 30m                                                         GRIGLIA 80 COLONNE × 20 RIGHE                                         SUD ↓ (Nodo Terra)
-═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-
-COLONNE →  A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R  S  T  U  V  W  X  Y  Z AA AB AC AD AE AF AG AH AI AJ AK AL AM AN AO [continua 01-80]
-RIGHE ↓    │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │  │
-
---- INGRESSO NORD + WINDING PATH START (Righe 01-05) ---
-01    │ 🚪 🚪 🚪 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ [80 cols]
-      │ └───┘ Porta Nord 4.5m (Col A-C)
-02    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
-03    │ ⬛ ⬛ ⬛ 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
-      │       └────────────┘ Path 3m wide (Righe 03-04, Col D-M) - START WINDING
-04    │ ⬛ ⬛ ⬛ 🟩 🟩 🟩 🔵 🟩 🟩 🟩 🟩 🟩 🟩 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
-      │             └─┘ PG Start (Col G, Riga 04)
-05    │ ⬛ ⬛ ⬛ ⬛ 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
-
---- GEODE 1 + TURN EAST (Righe 06-10, Col K-T) ---
-06    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟩 🟩 🟩 🟩 🟩 🟩 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
-07    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟩 🟩 🟩 🟩 🟩 🟩 💎 💎 💎 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
-      │                                  └────────┘ GEODE 1 (Col O-Q, Righe 07-09, 4.5m × 4.5m)
-08    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟩 🟩 🟩 🟩 🟩 💎 💎 💎 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
-      │                                  💎 💎 💎 HP 150, AC 18, Hardness 8 (Crystal)
-09    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟩 🟩 🟩 🟩 💎 💎 💎 🟩 🟩 🟩 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
-10    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
-      │                         └────────────────┘ Path widens, turns East (Col L-T)
-
---- STALACTITES ZONE + EARTH ELEMENTAL 1 (Righe 11-14, Col U-AD) ---
-11    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
-12    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
-      │                               🪨       🪨     🪨       🪨    🪨 ← Stalactites Ceiling (random 15+ above path)
-13    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🔴 🟩 🟩 🟩 🟩 🟩 🟩 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
-      │                                                     └─┘ Earth Elemental 1 (Col V, Riga 13) - Path Block!
-14    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
-
---- FISSURE 1 + GEODES 2-3 (Righe 15-17, Col AE-AM) ---
-15    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
-16    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟩 🟩 🟩 🔥 🔥 🟩 🟩 🟩 🟩 🟩 🟩 🟩 💎 💎 💎 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
-      │                                              └────┘ FISSURE 1 (Col U-V, Righe 16-17, 3m crack)   └────────┘ GEODE 2
-      │                                              Lava 9m below! (3d6 se cade)                         (Col AD-AF, 4.5m × 4.5m)
-17    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟩 🟩 🔥 🔥 🟩 🟩 🟩 🟩 💎 💎 💎 💎 💎 💎 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
-18    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟩 🟩 🟩 🟩 🟩 🟩 💎 💎 💎 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
-      │                                                        └────────┘ GEODE 3 (Col Z-AB, Righe 17-19, 4.5m × 4.5m)
-19    │ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟩 🟩 🟩 🟩 🟩 💎 💎 💎 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
-
---- CONTINUAZIONE PATH SUD + GEODES 4-6 (Righe 20-80 similar pattern, mostro key points) ---
-
-[Colonna AO = 50m da nord]
---- EARTH ELEMENTAL 2 + GEODE 4 (Righe 30-34) ---
-30    │ ...🟩 🟩 🟩 🟩 🟩 💎 💎 💎 🟩 🟩 🟩 🟩 🟩 🔴 🟩 🟩...
-      │                └────────┘ GEODE 4              └─┘ Earth Elem 2 (Col AN30)
-
-[Colonna AY = 70m da nord]
---- FISSURE 2 + EARTH ELEMENTAL 3 (Righe 45-50) ---
-45    │ ...🟩 🟩 🟩 🔥 🔥 🔥 🟩 🟩 🟩 🔴 🟩 💎 💎 💎 🟩...
-      │          └────────┘ FISSURE 2       └─┘ Elem 3   └────────┘ GEODE 5
-      │          (Col AW-AY, Righe 45-48)   (Col BA45)   (Col BD-BF)
-
-[Colonna BO = 90m da nord]
---- FINAL STRETCH + EARTH ELEMENTAL 4 (Righe 55-60) ---
-55    │ ...🟩 🟩 💎 💎 💎 🟩 🟩 🟩 🔴 🟩 🟩 🟩 🟩...
-      │       └────────┘ GEODE 6       └─┘ Elem 4 (Col BO55) - Guard Exit!
-      │       (Col BM-BO, 4.5m × 4.5m)
-
---- USCITA SUD (Righe 75-80, Verso Nodo Terra) ---
-78    │ ...⬛ ⬛ ⬛ 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🟩 🚪 🚪 🚪 ⬛ ⬛ ⬛...
-      │                                  └───┘ Porta Sud (Col BX-BZ, 4.5m wide)
-79-80 │ ...⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛...
-
-═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+LEGENDA MAPPA (Ogni quadrato = 1.5m / 5ft):
+. = Terreno Roccioso (Terreno Difficile, Movimento ulteriormente dimezzato)
+C = Cristallo Gigante (Copertura Totale Line-of-Sight, Indistruttibile)
+[Th] = Thorik | [Tr] = Tordek | [A] = Artemis (con Therysol vicino)
+[X1], [X2] = Xorn Anziani Standard (HP: 52, CA: 24, DR: 5/Contundente)
+[XD] = Xorn Anziano Boss "Fauci di Diamante" (HP: 180, CA: 28, DR: 10/Adamantio)
+════════════════════════════════════════════════════════════════════════════════
 ```
 
-### VISTA 2: SEZIONE VERTICALE + GRAVITÀ EFFETTO
+### 🧠 Tattiche DM: Earth Glide & Agguati
 
-```
-VISTA LATERALE (Mostra Gravità ×1.5 Effect)
-
-CEILING (15m alto, +10 quadrati verticali)
-🪨🪨🪨🪨🪨🪨 Stalactites appese (random 15+ pcs)
-│││││││││││ Se Earthshake spell → cadono 3d6 piercing!
-│││││││││││
-
-GROUND LEVEL (Path 3m wide winding)
-🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 120m lunghezza S-curve
-🔴        💎💎💎       🔴         💎💎💎    ← Geodes + Elementals
-Elem 1    Geode 1     Elem 2     Geode 2
-
-🔥🔥 FISSURES (2 totali, 3m wide cracks)
-│││ 9m deep to lava pocket
-└── Caduta = 9d6 falling + 3d6 fire/round
-
-GRAVITÀ EFFETTO (×1.5 Normal):
-- Movimento: ×0.5 speed (30ft → 15ft, 9m → 4.5m/round!)
-- Jump: ×0.5 distance (10ft jump → 5ft only!)
-- Climb: DC +5 (harder pull against gravity)
-- Fort DC 15 ogni ora or Fatigued (exhaustion faster)
-- Advantage: Falling deals +50% damage (1.5× dice)!
-```
+- **Morsa dalla Terra (Hit & Run):** Gli Xorn sfruttano il loro *Earth Glide* (Nuotare nella Terra). **Non restano MAI in superficie a prendere colpi per 2 round di fila**. Si tuffano nella roccia densa (Ottenendo Copertura Totale, Invisibili al target) e sbucano di nuovo.
+* **Counter-play dei PG (Obbligatorio):** I PG dovranno rapidamente imparare a usare l'Azione di **Preparare un'azione** (Ready Action) per colpire quando gli Xorn emergono a fauci spalancate per mordere.
+* **Priority Target degli Xorn:**
+  * **[XD] Boss Fauci di Diamante:** Punta esclusivamente **Thorik**. Usa l'attacco Morso (magico: ignora durezze <20) per abbattere e tranciare le difese. Se colpisce, usa la prova **Spezzare (+26)**. Se l'armatura o un oggetto a sua scelta si rompe, [XD] si cura istantaneamente di **30 HP**.
+  * **[X1 / X2] Minions:** Sentono la densità cristallina della magia in **Therysol** (specialmente se indossa oggetti divini e cura). Lo aggrediscono. Se portati a <15 HP, si lasciano sprofondare nella terra cercando disperatamente la fuga.
+* **Vile Sopravvivenza Fase 2:** Quando o se [XD] "Fauci di Diamante" scende sotto 50 HP (Heavy Damage), userà il suo movimento per scivolare parzialmente **dentro una colonna di cristallo Gigante [C]**. La usa come vera e propria "armatura potenziata ambientale" guadagnando un formidabile **+4 CA** in copertura parziale, attaccando dal suo interno in completa sicurezza.
 
 ---
 
-### 📍 POSIZIONI PRECISE:
+## 🟢 MAPPA 2: I CRISTALLI VIVENTI (SKILL CHALLENGE CR 12)
 
-**PATH WINDING 🟩:**
-- **Larghezza:** 3m (2 quadrati) - narrow, single file molti punti!
-- **Lunghezza:** 120m (80 quadrati) - S-curve pattern
-- **Pattern:** Start Nord → Curve Est → Curve Sud → Zigzag → Exit Sud
-- **Terrain:** Difficult (×0.5 speed already, gravità compounded!)
+> **Lettura per i Giocatori (Testo Descrittivo):**
+> *Riemergendo dal macabro boschetto, il panorama si estende dinanzi a voi. Vi trovate in un immenso giardino luminoso. Migliaia di piccoli cristalli - spessi come fusti di pianta e alti qualche metro - punteggiano una piana formando schemi perfetti. Il loro scintillio è abbinato a qualcosa di inusitato per questo piano di muto terrore: cantano. O perlomeno producono un suono puro e vibrante, un accordo tonale impossibile che pare suonarvi e vibrare dentro le ossa stesse.*
+> *Dinanzi alla foresta armonica svetta lei; "Madre Cristallo". Una massa slanciata e brillante di 5 metri che emette un possente fremito telepatico nella vostra mente:*
+> *"Intrusi carne-morbida... Perché osate disturbare il giardino eterno del nostro riposo? Parlate, e sarete giudicati..."*
 
-**6 GEODI GIGANTI 💎 (Giant Crystal Formations):**
-1. **Geode 1:** Col O-Q, Righe 07-09 (4.5m × 4.5m = 3×3 quadrati)
-2. **Geode 2:** Col AD-AF, Righe 16-18
-3. **Geode 3:** Col Z-AB, Righe 17-19
-4. **Geode 4:** Col AO-AQ, Righe 30-32
-5. **Geode 5:** Col BD-BF, Righe 45-47
-6. **Geode 6:** Col BM-BO, Righe 55-57
-- **Material:** Crystal/Emerald formations
-- **HP:** 150 each, AC 18, Hardness 8
-- **Effect:** Block path (must go around = +3m detour)
-- **Loot:** Se distrutti = 500gp gems shards
+### 🎲 Prove della Skill Challenge
 
-**STALATTITI CEILING 🪨 (15+ Random Above Path):**
-- **Positions:** Random scatter Col L-BA, Ceiling 15m alto
-- **Trigger:** Earthshake OR sonic damage loud (>100db)
-- **Effect:** Cadono 3d6 piercing damage, Reflex DC 18 avoid
-- **Area:** 3m radius impact (2 quadrati)
+*(I Giocatori spiegano il loro approccio narrativo, il DM applica la CD corrispondente e spunta il risultato)*
 
-**2 FISSURE CRACKS 🔥:**
-1. **Fissure 1:** Col U-V, Righe 16-17 (3m wide × 3m long = 2×2 quadrati)
-2. **Fissure 2:** Col AW-AY, Righe 45-48 (3m wide × 6m long = 2×4 quadrati)
-- **Depth:** 9m giù (6 quadrati verticali)
-- **Bottom:** Lava pocket (3d6 fire/round se dentro)
-- **Cross:** Jump DC 15 (but gravità ×1.5 = DC 20 effective!)
+| Tipo di Abilità | Base (CD) | Esito (Successi & Note) |
+| :--- | :---: | :--- |
+| **🗣️ Diplomazia** (Thorik/Tordek) | **CD 20** | Richiesta lealtà e spiegare l'altruismo della missione (Salvare clan).<br>**Successo:** +1 Punto |
+| **🧠 Dungeoneering / Natura** | **CD 18** | Dimostrare rispetto per la genesi e l'ecosistema cristallino locale.<br>**Successo:** +1 Punto. **Fallimento:** -1 Punto (Scetticismo dei Cristalli). |
+| **🎶 Intrattenere (Canto / Armonia)** | **CD 22** | Riuscire a modulare i suoni o cantare sul ritmo dell'accordo roccioso.<br>*(Abilità difficie ma estremamente premiante se superata)*<br>**Successo C.:** +2 Punti! **Fallimento C.:** Dissonanza violenta (-1 P.)|
+| **✨ Utilizzare Oggetti Magici** (Artemis)| **CD 15** | Usare le reliquie, mostrare Aegis Fang per richiamo primordiale.<br>**Successo:** +1 Punto. |
+| **❤️ Guarigione Speciale** | **Auto!** | Un occhio acuto (Osservare CD 18) scova cristalli franti/malati.<br>Lanciare magie o *Vigore della Forgia* curando l'ambiente.<br>**Vittoria Narrativa:** +2 Punti automatici! Commossa in lacrime di quarzo. |
 
-**4 EARTH ELEMENTALS LARGE 🔴:**
-1. **EE1:** Col V, Riga 13 (path block, ambush from walls!)
-2. **EE2:** Col AN, Riga 30 (near geode 4)
-3. **EE3:** Col BA, Riga 45 (near fissure 2, dangerous!)
-4. **EE4:** Col BO, Riga 55 (guard exit, last obstacle)
-- **Tactics:** Earth Glide (burrow through walls 6m/round)
-- **Ambush:** Emerge under PG feet (surprise!)
-- **Earthshake:** Topple stalactites (area attack!)
+### 🏆 Risoluzione Campo dei Cristalli
 
-**PG START 🔵:**
-- **Entry:** Col G, Riga 04 (nord path start)
-- **Objective:** Reach exit Col BX-BZ, Riga 78 (120m distant!)
-- **Challenge:** Navigate winding path WHILE gravità slows, elementals ambush, stalactites threaten
+(Vittoria a **6 Successi**. Fallimento completo a **3 Prove Fallite**).
+
+* ❌ **FALLIMENTO DRAMMATICO (Crollo Armonico):** Al 3° Fallimento, i cristalli si sdegnano e avviano una vibrazione di rigetto nota come *Urlo Sismico*. Purtroppo per voi causerà immediato danno: **10d6 Sonico a TUTTI (Nessun Tiro Salvezza)**. Peggio: l'onda viaggerà fino alla stanza del Boss, pre-allertando *Terros* della vostra venuta (nessuna sorpresa possibile e turni tattici anticipati).
+* ✅ **SUCCESSO EPICO (Il Favore della Madre):** Si apre un morbido passaggio incontaminato senza sbalzi o Hazards.
+  * **Loot di Aiuto (Frequenza Boss):** La telepatia vi infonde confidenzialmente la "Frequenza Suono Confusione"; nel primo round contro il Boss Terros, godrete di un colossale **Target +4 ai TxC e Abilità** per stordirlo dal canto.
+  * **Loot Tangibile:** La roccia partorisce un pezzo del *Diapason Armonico* consumabile (Se impiegato durante la battaglia del Boss, genera uno stun **auto-hit da 1 round su Terros**, annullando il suo turno letale).
+* 💬 **Intermezzo Narrativo (Hella's Whisper):** Lo spirito defunto - ma attivo - della Druida s'intromette nella linea telepatica della Madre Cristallo, recando una profezia vitale: *"Sento fioriture dove non dovrebbe essercene... Portate i semi di Treant che nascondo ed infondeteli in questo medesimo suolo quando il mio corpo risorgerà... Formate il ponte e lasciate la traccia della vita..."*
 
 ---
 
-### 🎯 TATTICA ATTRAVERSAMENTO:
+## 🟢 MAPPA 3: IL TEMPIO MITHRAL & BOSS FINALE (CR 16)
 
-**HEAVY GRAVITY PENALTY (×1.5):**
-- Normal 30ft move → 15ft (9m → 4.5m) per round
-- 120m distance ÷ 4.5m = **27 rounds movimento!** (very slow)
-- Fort DC 15 ogni 10 rounds or Fatigued (stacking!)
+> [!NOTE] EVENTO OSTACOLO PRE-BOSS (SENTINELLA GOLEM)
+> *Prima di varcare le soglie mortali dell'ultimo bastione, la narrazione richiede il completamento dello stallo con il Golem. Far riferimento e integrare da documento: `/PG/Artefatti/Artefatti-Pg/03_Risveglio_Completo_Bracieri_Terra.md`.*
 
-**EARTH ELEMENTAL AMBUSHES:**
-- Round 8-10: EE1 emerge path (Col V13)
-- Round 18-20: EE2 ambush from geode 4
-- Round 28-30: EE3 near fissure (shove tactic = caduta lava!)
-- Round 35-40: EE4 final guardian exit
+> **Lettura per i Giocatori (Testo Descrittivo):**
+> *Superata l'anomalia gravitazionale del Portale INFERIORE (un vertiginoso crollo mentale di orientamento "sotto-sopra"), venite espulsi con incedere fluttuante all'interno di una incredibile camera sferica di 60 metri di diametro, costruita in puro Mithral argenteo specchiante.*
+> *In questa vasta aria rarefatta, **la gravità è annullata in un disorientante Zero-G (Spazio Vuoto)**. Al centro esatto della sfera immensa batte il cuore dell'anomalia: un altare sacrificale che sembra disporre di un proprio campo di gravità. Lì brilla solitario lo scintillante Smeraldo della Forza.*
+> *A protezione della gemma, placido e titanico, giace addormentato un ammasso informe di ogni minerale conosciuto ai Reami, la cui sola mole sgranocchiante oscura parzialmente la stanza erigendosi dalla singolarità dell'altare.*
+> *È **Terros, L'Incudine del Mondo**, un Elementale della Terra Anziano Taglia Colossale.*
 
-**STALACTITE HAZARD:**
-- If combat loud (Earthshake spell, explosions)
-- 1d4 stalactites fall random 3m radius
-- PG must Reflex DC 18 avoid 3d6 piercing each
+### Griglia Tattica Visuale: Camera Sferica (Zero Gravity)
 
----
+*In questo ambiente aperto e sferico, Terros occupa una letale Taglia di 4x4 Caselle (O superiore) ed è radicato al proprio pilastro dell'altare per curarsi*.
 
-## MAPPA PF-6: NODO DELLA TERRA (Boss Mithral Golem)
-**Dimensioni:** 80m diameter sphere (53 colonne × 53 righe, 1.5m/quadrato circular)  
-**Incontro:** Mithral Golem (CR 16 Boss HUGE!) + Crystal Sphere Environment
-
-### 🎯 COMPRENSIONE: Camera sferica perfetta, altare smeraldo levitante centro, golem colossale, mithral floor
-
----
-
-### VISTA 1: GRID COMPLETA SFERICA (53×53 SIMPLIFIED - Mostra Layers)
-
-```
-═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-NORD ↑ (Crystal Bridge Entry)                              NODO DELLA TERRA (Sphere Arena 80m Diameter)                                   GRIGLIA 53 COLONNE × 53 RIGHE (Sphere Trim)
-═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-
-COLONNE →  A--E  F--J  K--O  P--T  U--Y  Z--AD AE--AI AJ--AN AO--AS AT--AX AY--BC BD--BH BI--BM BN--BR BS--BW BX--CB [53 cols total]
-RIGHE ↓    │     │     │     │     │     │     │      │      │      │      │      │      │      │      │      │      │
-
---- RIGA 01-10: CALOTTA NORD (Crystal Sphere Ceiling) ---
-01-10 │ 💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠 [Transparent Crystal Dome, Bright Bioluminescence]
-
---- RIGA 11-15: CRYSTAL BRIDGE NORTH (Entry PG) ---
-11    │ 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠
-12    │ 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠
-13    │ 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 🟦 🟦 🟦 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠
-      │                                              └──────┘ PONTE CRISTALLO (Col Z, Righe 01-13, 3m wide)
-14    │ 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 🟦 🟦 🟦 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠
-15    │ 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 🔵 🟦 🟦 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠
-      │                                              └─┘ PG Entry Point (Col Z, Riga 15)
-
---- RIGA 16-23: UPPER MITHRAL FLOOR + PIATTAFORME ---
-16    │ 💠 💠 💠 💠 💠 💠 💠 💠 💠 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠 💠
-      │                      └───────────────── Mithral Floor (Silver, entire sphere inner surface) ─────────────────┘
-17    │ 💠 💠 💠 💠 💠 💠 💠 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 💠 💠 💠 💠 💠 💠 💠 💠
-18    │ 💠 💠 💠 💠 💠 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 💠 💠 💠 💠 💠 💠
-19    │ 💠 💠 💠 💠 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 💠 💠 💠 💠 💠
-20    │ 💠 💠 💠 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🟫 🟫 🟫 🟫 🟫 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🟫 🟫 🟫 🟫 🟫 ⬜ ⬜ ⬜ ⬜ ⬜ 💠 💠 💠 💠
-      │                      └──────────┘ Piattaforma OVEST (+3m elevata)                 └──────────┘ Piattaforma EST (+3m)
-21    │ 💠 💠 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🟫 🟫 🟫 🟫 🟫 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🟫 🟫 🟫 🟫 🟫 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 💠 💠 💠
-22    │ 💠 💠 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🟫 🟫 🟫 🟫 🟫 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🟫 🟫 🟫 🟫 🟫 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 💠 💠 💠
-23    │ 💠 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🟫 🟫 🟫 🟫 🟫 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🟫 🟫 🟫 🟫 🟫 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 💠 💠
-      │                      Col J-N, Righe 20-25 (9m × 9m)                               Col AR-AV, Righe 20-25 (9m × 9m)
-
---- RIGA 24-30: CENTRO + ALTARE SMERALDO LEVITANTE ---
-24    │ 💠 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🟫 🟫 🟫 🟫 🟫 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🟫 🟫 🟫 🟫 🟫 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 💠 💠
-25    │ 💠 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🟫 🟫 🟫 🟫 🟫 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🟫 🟫 🟫 🟫 🟫 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 💠 💠
-26    │ 💠 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🌟 🌟 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 💠 💠
-      │                                              └────┘ ALTARE SMERALDO (Col Z-AB, Righe 26-28, +15m levitating!)
-27    │ 💠 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🌟 🌟 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 💠 💠
-      │                                                  💎 SMERALDO GEM Center (+15m altitude above floor!)
-28    │ 💠 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🌟 🌟 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 💠 💠
-29    │ 💠 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🔴 🔴 🔴 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 💠 💠
-      │                                          └──────────┘ MITHRAL GOLEM HUGE (Col X-AA, Righe 27-31, 9m × 7.5m!)
-30    │ 💠 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🔴 🔴 🔴 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 💠 💠
-      │                                          🔴 🔴 🔴 Size: 6×6 quadrati (9m × 9m footprint!)
-31    │ 💠 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🔴 🔴 🔴 ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 💠 💠
-
---- RIGA 32-53: LOWER HEMISPHERE (Simmetrico Righe 01-22 mirror) ---
-[Pattern riflesso verticalmente, piattaforme, mithral floor, crystal walls]
-53    │ 💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠💠 [CALOTTA SUD]
-
-═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+```text
+════════════════════════════════════════════════════════════════════════════════
+                        CAMERA SFERICA BOSS (SEZIONE 2D LATERALE)
+════════════════════════════════════════════════════════════════════════════════
+                       / ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ \
+                     /      (SPAZIO APERTO ZERO-G)   \
+                   /                                   \
+                 /          FLUTTUAZIONE DEI PG          \
+                |                  [A][A]                 |
+                |               [A][TE][TE][A]            | <-- Piattaforma  
+                |               [A][TE][TE][A]            |     dell'Altare
+                |                  [A][A]                 |     (L'Unico punto 
+                |                                         |      con Gravità 
+                |                                         |      Standard)
+                 \                                       /
+                   \    (Th)               (Tr)        /  <-- Thorik e Tordek
+                     \             [P]               /    <-- [P] Portale di Ingresso
+                       \ _ _ _ _ _ _ _ _ _ _ _ _ _ /          (Artemis In Dietro / Supporto Caster)
+════════════════════════════════════════════════════════════════════════════════
 ```
 
-### VISTA 2: SEZIONE VERTICALE SPHERE
+### 💀 TATTICHE FINALI: TERROS L'ANTICO (CR 16)
 
-```
-VISTA LATERALE SFERA (Mostra Altezze)
+**Boss Gargantuesco Avanzato**
 
-              💠 CRYSTAL DOME Top (+40m)
-             ╱   ╲
-           ╱       ╲ Transparent crystal sphere
-         ╱           ╲ 80m diameter (40m radius)
-       ╱   🟦 Entry   ╲
-      │    Ponte      │
-     │     Crystal    │
-    │                 │
-   │   +15m 💎💎💎     │ ← SMERALDO ALTARE Levitante!
-  │        │││        │    4.5m circle (3×3 quadrati)
- │         ▼▼▼        │    Green glow bright 30m radius
-│      🔴🔴🔴🔴🔴🔴     │ ← MITHRAL GOLEM Ground Level
-│      GOLEM 9m×9m    │    Huge size, 430 HP, DR 15/adamantine
-│      6×6 quadrati   │
-│                     │
-│  🟫 Piattaforma    🟫│ ← 2 Piattaforme Elevate +3m
-│  Ovest 9m×9m   Est  │    Col J-N, AR-AV
-│                     │
-│  ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜  │ ← MITHRAL FLOOR (entire inner)
-│  Silver smooth      │    Non-slip, fireproof
-│                     │
- ╲                   ╱
-  ╲                 ╱
-   ╲               ╱
-    ╲             ╱
-     ╲   💠💠💠   ╱
-      ╲ Calotta ╱
-       ╲ Sud  ╱
-        ╲   ╱
-         ╲╱ Bottom (-40m)
-```
+* **HP:** 380 | **CA:** 28 (-4 Taglia, +22 Naturale)
+* **DR:** 15/- (Una resistenza impossibile da bucare: ogni colpo fisico perde min 15 danni) | **Tocco:** 7
+* **Vulnerabilità:** Sonico (+50% Danni inflitti dalla magia/effetti ad onde o canti).
+
+* **Iniziativa e Disarmo Elementale [Zero-G]:** Tutti i PG che NON dispongono di una spinta di *Volare* Magico subiscono l'inerzia galleggiante della stanza. Si muovono a velocità dimezzata o devono sfruttare spinte d'appoggio balistico calcandosi dai bordi lisci delle pareti tramite Prove Acrobazia.
+* **Attacchi Base dello Schianto (Colossale):** Avendo enorme portata e massa (Portata 9m), batte i polsi sulle pareti vibranti: 2x Schianti Titani +32 mischia (4d10+16 contundenti + Meccanica Push: Scatta immediatamente una "Respinta di 3metri indietro" [Tempra Resist CD 30] se il bersaglio viene colpito. Terros si lancia addosso ad un piccolo nano volpeggiante, tentanto di defenestrarlo lontano).
+* **💥 Lair Action (Pulsazioni Gravity - Ricarica 1d3 turni):** Terros agisce e decide i destini dei mortali su un momento di Iniziativa 20. Seleziona mentalmente una direzione cardinale (es: "Soffitto", "Lato Destro"). Lo Zero-G muta istantaneamente in una schiacciante **gravità 10X** verso quella parete. Interrompe istantaneamente tutti gli scontri corpo a corpo. I PG si ritrovano trascinati dalla forza colossale e "**cadono per 30 metri**", schiantandosi rovinosamente a parete assieme ai detriti. **Danno Schianto Istantaneo Parete: 8d6 Danni!**
+* **Aura Pietrificante (Always On - Raggio 9 metri):** Molto letale per caster ed elusivi (Artemis/Therysol). Se un bersaglio si azzarda a finire o iniziare il turno a contatto/vicino a Terros o al suo altare base, sente un irrigidimento violento nelle ossa: **TS Tempra salvifico (CD 24)**. Al tragico e puntuale fallimento, il giocatore subisce la perdita permanente e non ristabilita spontaneamente di **1d4 DES**. (A DES = 0 subentra inesorabile lo stato irredimibile di 'Pietrificato Indistruttibile', fine del gioco temporale).
+* **🛡️ L'Assorbimento Terrestre (La tattica per vincerlo):** Questo golem primigenio non si sta semplicemente appoggiando sulla gemma del sacro piedistallo. Fino alla fine dei secoli, fin tanto che riposa incastonato a l'Altare Centrale (unico punto di vera e propria Terra), è alimentato dalla linfa tellurica del pianeta intero e gode di un'aberrente rigenerazione attiva (**Cura di 20 HP ogni round regolarmente all'inizio turno**).
+  * **Counterplay Richiesto ai PG (Spingere / Tirare):** Non possono vincere al logoramento dei Danni (Con la DR 15/-). Devono usare pura manovalanza di spinte e bull-rush. Tordek **dovrà agire in sinergia (Spingere, Talenti sbilanciare e salti)** per tentare la folle impresa di sradicare/respingere l'Inarrestabile Colosso oltre il bordo dell'Altare buttandolo **nel vuoto a Zero Gravità** della Sfera!
+  * Lontano dalla roccia stabile, Terros diventa momentaneamente una balena disperata ed indifesa a mezz'aria (**Perde Earth Mastery Supremo:** subendo un patetico -2 ai TxC ed ai Danni, e perdendo l'odiosa Curagione di HP Base per quel round in attesa di rimetterci mani e piedi sopra ritornandoci nuotando goffamente nel vuoto cosmico).
 
 ---
 
-### 📍 POSIZIONI PRECISE:
+## 👑 EPILOGO: RITUALE DELLO SMERALDO - "ANVIL OF THE WORLD"
 
-**CRYSTAL SPHERE WALLS 💠:**
-- **Diameter:** 80m (53 quadrati)
-- **Radius:** 40m from center
-- **Material:** Transparent crystal, DR 20/adamantine, HP 500
-- **Effect:** Bright bioluminescent blue-white light (NO shadows entire sphere!)
-- **Gravity:** Normal (1G) inside sphere perfect
+Sconfitto sotto innumerevoli tremori o per i pugni sonori, le giunture della titanica figura cristallina si deflagrano in un implodente gorgo di polvere astrale e ghiaia rinfrescante, liberando al suo torace cavo un bagliore intenso accecante: **L'eterno Smeraldo della Forza**. Inizia al momento il compimento definitivo e ritualistico del destino nanico.
 
-**MITHRAL FLOOR ⬜:**
-- **Coverage:** Entire inner surface sphere (all Col/Righe dentro perimeter)
-- **Material:** Mithral (silver, smooth, non-slip)
-- **Walkable:** 360° surface (can walk "up" walls like Gravity Sphere!)
-- **Effect:** Immune fire, acid, electricity
+> *Moradin Padre di tutti tuona dalle volte del piano svuotato di ossigeno e di pietra:*
+> *"Hai umilmente compreso oggi fanciullo di tempra? La VERA forza delle Montagne non si sottrae mascherandosi per difetti e debolezze altrui... La si prende stoicamente unicamente sulle TUE proprie spalle. Caricati di questo fardello... Mettiti sotto questo peso, e mostrami ora come si riesce a sostenere un intero mondo che ti crolla incontro!"*
 
-**ALTARE SMERALDO LEVITANTE 🌟💎:**
-- **Position:** Col Z-AB, Righe 26-28 (Center sphere exact)
-- **Size:** 4.5m circle (3×3 quadrati)
-- **Elevation:** +15m above floor (10 quadrati verticali levitante!)
-- **Gem:** Smeraldo 1.5m diameter center altare (+17m total altitude)
-- **Access:** MUST fly/levitate (no stairs, platforms too low)
-- **Glow:** Bright green light 30m radius
+**Le Assegnazioni Sacrificali del Party:**
+Ognuno dei PG presenti gioca una fase fondamentale.
 
-**2 PIATTAFORME ELEVATE 🟫:**
-1. **Ovest:** Col J-N, Righe 20-25 (9m × 9m = 6×4 quadrati)
-   - Elevation: +3m above main floor
-   - Material: Stone adamantine-infused
-   
-2. **Est:** Col AR-AV, Righe 20-25 (9m × 9m = 6×4 quadrati)
-   - Mirror ovest platform
-   
-- **Purpose:** Elevated position ranged attacks (+1 AC, +2 attack vs ground)
-- **Access:** Stairs 3m wide da mithral floor
+| Ruolo Attivo | Fede Tattica e Azione Pratica del PG | Effetto Risolto (Costo Finale) |
+| :--- | :--- | :--- |
+| **THORIK** <br>*(Il Portatore dell'Oceano di roccia)* | Deve ricevere il Dono Sacrificale caricandosi il peso del manufatto. | 🔸 **Dono:** **+2 Costituzione MAX Permanente** (Ossa irrobustite come solido incasso e sangue infuso come l'Adamantio).<br>🔹 **Costo Eterno:** **-2 Destrezza MAX Permanente** (Il prezzo divintà calcifica e irrigidsce le articolazioni del guerriero. Scambio d'equivalenza per tutta la vita futura del personaggio). |
+| **TORDEK** <br>*(Il Ritmo Ancestrale)* | Fornisce il Supporto Ritmico e cadenzato all'Altare con le armi. | Usando ripetutamente e all'unisono impalmando i novelli *Bracieri Gemelli*, infonde colpi ritmici al tempio (Prova di attacco fisica pura: **TxC contro una solida CD 25 per 3 Turni consecutivi**). Forgia la stabilità vibrazionale di una vita che impedirà all'onda letale dello smeraldo di collassare incenerendo il corpo di Thorik. |
+| **ARTEMIS** <br>*(Il Freddo Manipolatore)*| Controllo chirurgico e preciso delle Dissonanze Magiche residue. | Tende e costringe mentalmente una sottilissima barriera incantesimo come *Dissolvi Magie* controllata a pochi mlimetri sul corpo di Thorik, agendo da disperato "Tubo di Sfogo Arcruato". L'incanto alza scudi dissipatori che lasceranno fuoriuscire i vapori termici distruttivi (Se non usata come valvola, l'energia impazzita lo pietrificherebbe polverizzandogli il petto dall'interno fino ad uno status *Instant Kill Death*). |
 
-**MITHRAL GOLEM (Boss) 🔴:**
-- **Position Start:** Col X-AA, Righe 27-31 (CENTER sphere!)
-- **Size:** Gargantuan (6×6 quadrati = 9m × 9m footprint!)
-- **Height:** 12m tall (8 quadrati verticali) - MASSIVE!
-- **Reach:** 6m (4 quadrati) - threatens HUGE area!
-- **HP:** 430, AC 33, DR 15/adamantine
-- **Movement:** 12m/round ground OR slow fly 9m/round (heavy!)
-- **Tactics:** Guard altare, slam attacks 3d12+13 each (2 slams full attack)
+**Chiosa Eroica:**
+Incassato prepotentemente nell'alloggiamento di tempia Sinistra della stupenda reliquia e calata brutalmente sopra l'elmo, un violento urto smeraldino ed una colomba di luce sfonda pareti spirituali e d'assestamento balzando sui correntati PG, in grado di dotarli temporalmente di un'agognata immunità corporea da divinità stessa: una barriera fisica di **DR 10 / Adamantio** che persisterà a pelle ed indumenti della durata piena di 1 ora.
+Con due inestimabili gemme incastonate a fatica mortale e un potere esorbitante tra le dita salde:
 
-**PONTE CRISTALLO NORD 🟦:**
-- **Position:** Col Z, Righe 01-15 (entry from caverns)
-- **Width:** 3m (2 quadrati)
-- **Length:** 22.5m (15 quadrati) from dome edge to mithral floor
-- **Material:** Crystal transparent, stable
+**Il Portale della Terra subisce fine a se stesso.**
+Ed ecco, si riapre strisciando, offrendo l'unica faticosa e meritata via di fuga e teletrasporto dalla pressione sanguinosa.
+La clessidra infame del destino nanico presente nella maestosa mappa d'affresco alle calcagna della vostra capitale *Hammerfist*, non vi concederà respiro vitale una volta usciti nel mondo. L'assedio immane di quella infernale orda sanguinaria infiamma tutto lo skyline visibile, ed è tragicamente venuta l'ora di fare il resoconto del salvabile, poco prima che tutto il regno che amate collassi sotto pesi infami.
 
-**PG START 🔵:**
-- **Entry:** Col Z, Riga 15 (ponte nord end, mithral floor edge)
-- **Formation:** Single file ponte (3m wide)
-- **Objective:** Reach smeraldo Col Z-AB, Riga 26-28 (+15m altitude!)
-- **Challenge:** Defeat 9m × 9m golem MENTRE volando verso altare!
-
----
-
-### 🎯 TATTICA BOSS FINALE:
-
-**FASE 1 - APPROACH (Round 1-3):**
-- PG: Entrano ponte (Col Z Riga 01) → Mithral floor (Z15)
-- Golem: Awareness, turns towards PG (size intimidating!)
-- PG: Spread piattaforme Est/Ovest (+3m elevation bonus)
-
-**FASE 2 - GROUND ENGAGEMENT (Round 4-8):**
-- Golem: Charges PG ground (30m/round = 20 quadrati!)
-- Slam attacks: +33 hit, 3d12+13 damage each (devastating!)
-- DR 15/adamantine: ONLY adamantine weapons bypass (Corona needed!)
-- PG: Focus fire, use elevation advantage platforms
-
-**FASE 3 - ALTARE ASCENT (Round 9-12):**
-- PG Flying: *Fly* spell → Reach altare +15m (needs 3 rounds ascending)
-- Golem: Slow fly 9m/round pursues (can reach altare Round 11!)
-- Ranged: Golem throws mithral shards +25, 2d8+13 piercing
-
-**FASE 4 - SMERALDO EXTRACTION (Round 13+):**
-- PG: Reach altare (Col Z-AB, Riga 26-28 +15m)
-- Grab Smeraldo: Standard action (AO from golem if within reach!)
-- Golem: Final desperation slam attempts (2 attacks +33)
-- Success: Smeraldo grabbed → Portale opens (escape)
-
-**DIFFICULTY:** Golem 430 HP, DR 15 = ~25-30 rounds combat! (VERY long fight)
-
----
-
-Continua prossimo file con **Hammerfist Lotto 3 Revised** (Fuga + Cuore + Battaglia Finale)!
+*(La Quest si aggiorna a **P5: Il Regno dell'Acqua** - Qualora ci sia tempo - o un disperato **Ritorno al Tempio del Sacrificio** e alla trice battaglia difensiva per un regno in fiamme)*

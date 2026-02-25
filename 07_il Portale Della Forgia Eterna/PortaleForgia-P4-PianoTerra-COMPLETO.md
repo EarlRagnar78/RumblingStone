@@ -1,5 +1,7 @@
 # IL PORTALE DELLA FORGIA ETERNA
+
 ## PARTE 4 - Piano Elementale della Terra
+
 ### Avventura D&D 3.5 - Livello 13 - Forgotten Realms
 
 ---
@@ -89,6 +91,7 @@ o."*
 **MORADIN concede benedizione extra temporanea:**
 
 **FORZA DELLA MONTAGNA (Specifica Piano Terra):**
+
 - **Effetto:** Ignorare penalità gravità aumentata fino 2x normale
 - **Durata:** Permanente finché in Piano Terra
 - **Bonus:** +2 competenza FOR (solo per prove contrastare gravità: Scalare, Saltare, trasportare)
@@ -149,6 +152,7 @@ o."*
 **Orizzonte Visibile:**
 
 > *Davanti (direzione Aegis Fang indica):*
+>
 > - **Immediato (0-30m):** Piattaforme cristallo simile, collegate da "ponti" pietra galleggiante
 > - **Medio (30-300m):** Foresta cristalli giganti - alti 30-60m, spessi come torri, brillano internamente
 > - **Lontano (300m-2km):** Oceano ROCCIA. Non metafora. Roccia liquida grigia scorre lentamente, impossibilmente
@@ -159,16 +163,19 @@ o."*
 ### **Effetti Sensoriali**
 
 **Suoni:**
+
 - Silenzio quasi TOTALE (inquietante dopo crepitio Piano Fuoco)
 - Occasionalmente: BOOM profondo lontano (cristalli giganti risuonano)
 - Respiro proprio amplificato (aria densa)
 
 **Odori:**
+
 - Pietra bagnata (come caverna)
 - Ozono leggero (magia elementale)
 - Terra ricca (come dopo pioggia, ma senza umidità)
 
 **Tattile:**
+
 - Aria DENSA sulla pelle (pressione costante)
 - Gravità tira continuamente (2x normale con Benedizione = 1x percepito)
 - Cristalli freddi al tocco (ma non ghiacciati)
@@ -210,6 +217,7 @@ o."*
 ### **Cadute in Gravità Aumentata**
 
 **Danno Caduta:** Standard D&D 3.5 (1d6 per 3m), MA:
+
 - Velocità terminale raggiunta PRIMA (gravità tira più forte)
 - **Caduta 6m+:** Aggiungere +1d6 extra (impatto più violento)
 - **Caduta 12m+:** +2d6 extra
@@ -286,19 +294,23 @@ o."*
 **Touch:** 10, Flat-Footed: 24
 
 **Attacchi:**
+
 - **Morso:** +9 mischia (4d6+3)
 - **3x Artigli:** +4 mischia (1d4+1 ciascuno)
 
 **Attacco Completo:**
+
 - Morso +9 (4d6+3) E 3 artigli +4/+4/+4 (1d4+1 ciascuno)
 
 **Spazio/Portata:** 1,5m / 1,5m
 
 **Attacchi Speciali:**
+
 - **Mangiare Metallo:** Preferiscono mangiare metalli preziosi (mithral, adamantio)
 - **Multiattacco:** Nessuna penalità attacchi naturali multipli
 
 **Qualità Speciali:**
+
 - **Immunità:** Freddo, Fuoco
 - **DR:** 5/bludgeoning (armi taglio/perforazione infliggono -5 danni)
 - **Resistenza Elementale:** Elettricità 10
@@ -308,19 +320,23 @@ o."*
 - **Onnidirezionale:** 3 occhi (1 per braccio) = impossibile flanking, mai sorpreso
 
 **Tiri Salvezza:**
+
 - **Tempra:** +8 (+5 base, +3 COS)
 - **Riflessi:** +5 (+5 base, +0 DES)
 - **Volontà:** +5 (+5 base, +0 SAG)
 
 **Caratteristiche:**
+
 - FOR 17 (+3), DES 10 (+0), COS 17 (+3), INT 10 (+0), SAG 11 (+0), CAR 10 (+0)
 
 **Abilità:**
+
 - Ascoltare +6, Nascondersi +6 (in pietra +14), Osservare +10, Sapienza Magica +6, Sopravvivenza +6
 
 **Linguaggi:** Terran
 
 **Tattiche:**
+
 - Emergono sotto/dietro party (sorpresa se possibile)
 - 1 Xorn per PG (distribuiti)
 - Morso priorità equipaggiamento metallico (armature, armi)
@@ -335,6 +351,7 @@ o."*
 **Opzione A: COMBATTIMENTO**
 
 Standard, ma difficile:
+
 - **AC 24:** Molto alta! Thorik +21 attacco serve 3+, Tordek +12 serve 12+, Artemis touch bypass
 - **DR 5/bludgeoning:** Aegis Fang (ascia) e colpi Tordek (bludgeoning) funzionano bene
 
@@ -343,6 +360,7 @@ Standard, ma difficile:
 Xorn intelligenti (INT 10), parlano Terran.
 
 **Procedura:**
+
 - Parlare Terran O usare gesti (Diplomazia CD 18)
 - Offrire metallo alternativo (gemme, monete, metallo non-equipaggiamento)
 - **Successo:** Xorn accettano tributo, lasciano passare
@@ -360,18 +378,21 @@ Xorn burrowing = possono seguire attraverso pietra. Difficile scappare.
 **ROUND 1:**
 
 **Iniziativa:**
+
 - Xorn: 10 (DES +0, roll 10)
 - Artemis: 18
 - Tordek: 16
 - Thorik: 12
 
 **Artemis:**
+
 - Eldritch Blast vs Xorn 1
 - Attacco: +16 ranged touch vs Touch AC 10 = HIT automatico
 - Danno: 8d6 = ~28 danni
 - Xorn 1 HP: 52 -28 = **24 HP**
 
 **Tordek:**
+
 - Raffica Colpi vs Xorn 2
 - Attacchi: +12/+12/+7/+2 vs AC 24
   - Primo: Serve 12+ = ~45%, possibile HIT, danno 2d6+2 = ~9
@@ -381,12 +402,14 @@ Xorn burrowing = possono seguire attraverso pietra. Difficile scappare.
 - Xorn 2 HP: 52 -12 (media) = **40 HP**
 
 **Thorik:**
+
 - Attacco vs Xorn 3
 - Attacco: +21 vs AC 24 = serve 3+ = ~90% HIT
 - Danno: 1d10+3d6+7 (base) = ~28 danni
 - Xorn 3 HP: 52 -28 = **24 HP**
 
 **Xorn 1 (24 HP):**
+
 - Attacco Completo vs Artemis (più vicino)
 - Morso +9 vs AC 16: Serve 7+ = ~70% HIT
   - Danno: 4d6+3 = ~17 danni
@@ -396,11 +419,13 @@ Xorn burrowing = possono seguire attraverso pietra. Difficile scappare.
   - Artemis HP: 53 -6 = **47 HP**
 
 **Xorn 2 (40 HP):**
+
 - Attacco vs Tordek
 - Morso +9 vs AC 27: Serve 18+ = ~15% (molto difficile)
   - Probabilmente MISS
 
 **Xorn 3 (24 HP):**
+
 - Attacco vs Thorik
 - Morso +9 vs AC 21: Serve 12+ = ~45%
   - Se HIT: 4d6+3 = ~17 danni
@@ -413,6 +438,7 @@ Xorn burrowing = possono seguire attraverso pietra. Difficile scappare.
 **ROUND 2-3:** Combattimento continua similarmente. Xorn con HP < 15 scavano via (2-3 probabilmente fuggono). Party vince ma con risorse spese.
 
 **Risultato Tipico:**
+
 - 1 Xorn ucciso
 - 2 Xorn fuggono (HP critici)
 - Party: Artemis ~30 HP, Thorik ~110 HP, Tordek intatto
@@ -422,14 +448,17 @@ Xorn burrowing = possono seguire attraverso pietra. Difficile scappare.
 ### **Dopo Combattimento/Negoziazione**
 
 **XP Assegnati:** 2.100 XP totali (700 per PG)
+
 - 3 Xorn CR 6 ciascuno = 2.100 XP (anche se 2 fuggono, XP pieno per sconfitta)
 
 **Tesoro (Se Xorn Uccisi):**
+
 - **Geodi Cristallo:** 3x geodi (400 mo ciascuno, 1.200 mo totali)
   - Dentro: cristalli ametista grezzi
   - Utilizzabili come focus incantesimi terra/pietra
 
 **Se Negoziazione Successo:**
+
 - Xorn condividono informazione utile (parlano Terran):
   - "Tempio Mithral pericoloso. Guardiano schiaccia intrusi. Ma Cristalli Viventi... se aiuti loro, aiutano te. Trova Madre Cristallo. Lei saggia."
 
@@ -484,26 +513,31 @@ Xorn burrowing = possono seguire attraverso pietra. Difficile scappare.
 **ABILITÀ UTILIZZABILI:**
 
 **1. Diplomazia (CD 20) - Thorik/Tordek:**
+
 - Spiegare missione nobile (salvare Hammerfist, resuscitare Hella)
 - **Successo:** Cristalli apprezzano sacrificio altruistico (+1 successo)
 - **Fallimento:** Cristalli scettici motivazioni carne-morbida
 
 **2. Conoscenze (Natura o Dungeoneering) (CD 18) - Chiunque:**
+
 - Dimostrare comprensione ecosistema Piano Terra
 - **Successo:** Cristalli rispettano conoscenza (+1 successo)
 - **Fallimento:** Informazioni sbagliate, Cristalli correggono annoiati
 
 **3. Intrattenere (Canto) (CD 22) - Difficile:**
+
 - Cantare armonia con canto cristalli
 - **Successo:** Cristalli AFFASCINATI, considerano party "quasi-fratelli pietra" (+2 successi!)
 - **Fallimento:** Stonatura, cristalli infastiditi (-1 successo esistente)
 
 **4. Utilizzare Oggetti Magici (CD 15) - Artemis/Thorik:**
+
 - Mostrare Corona/Ring/Aegis Fang come prova benedizione divina
 - **Successo:** Cristalli riconoscono potere Moradin, alleato Piano Terra (+1 successo)
 - **Fallimento:** Nessun effetto
 
 **5. Guarire/Aiutare Cristalli (azione speciale):**
+
 - **Osservare CD 18:** Notare alcuni cristalli piccoli danneggiati/crepati
 - **Azione:** Usare Vigore Forgia (1 carica) curare cristallo
   - Normalmente cura organici, ma Moradin benedice azione → cura cristallo
@@ -516,18 +550,21 @@ Xorn burrowing = possono seguire attraverso pietra. Difficile scappare.
 **Round 1:**
 
 **Thorik (Diplomazia):**
+
 - Spiega: "Cerchiamo salvare città nani, Hammerfist. Migliaia vite. Compagna morta. Dobbiamo recuperare Smeraldo resuscitarla."
 - Tira: 1d20 +1 (CAR base, Thorik CAR 8 -1, ma Corona +4 = +3) = 1d20+3 vs CD 20
   - Serve 17+ = difficile, ~20%
   - **Assumendo Fallimento:** Cristalli freddi, "Carne muore sempre. Perché importante?"
 
 **Tordek (Conoscenze Dungeoneering):**
+
 - Ha bonus +5 (cross-class ma monaco studia)
 - Spiega ciclo formazione cristalli, rispetto ecosistema
 - Tira: 1d20+5 vs CD 18 = serve 13+ = ~40%
 - **Assumendo Successo:** +1 successo (1/6)
 
 **Artemis (Utilizzare Oggetti - Mostra Ring):**
+
 - Ring brilla, Lathander/Mask energie visibili
 - Auto-successo narrativo
 - **+1 successo (2/6)**
@@ -535,6 +572,7 @@ Xorn burrowing = possono seguire attraverso pietra. Difficile scappare.
 **Round 2:**
 
 **Thorik (Osserva cristalli danneggiati):**
+
 - Osservare +2 vs CD 18: Serve 16+ = difficile
 - **MA:** Aegis Fang sussurra "Là, figlio, cristallo crepato. Aiuta."
 - Auto-trova cristallo
@@ -544,12 +582,14 @@ Xorn burrowing = possono seguire attraverso pietra. Difficile scappare.
 - **+2 successi (4/6)**
 
 **Tordek (Tenta Canto - rischioso):**
+
 - Intrattenere Canto: Monaco non ha skill, base +0
 - Tira: 1d20+0 vs CD 22 = serve 22 = ~5% (Nat 20 solo)
 - **Fallimento:** Stonatura, cristalli dissonanza
 - **-1 successo (3/6), +1 fallimento (1/3)**
 
 **Artemis (Diplomazia aiuto):**
+
 - Spiega Ring è unione Luce/Ombra, equilibrio necessario universo
 - Diplomazia +6 (CAR +4, +2 Ring)
 - Tira: 1d20+6 vs CD 20 = serve 14+ = ~35%
@@ -558,11 +598,13 @@ Xorn burrowing = possono seguire attraverso pietra. Difficile scappare.
 **Round 3:**
 
 **Thorik (Mostra Corona Topazio):**
+
 - "Prima gemma recuperata. Proviamo degni."
 - Auto-successo
 - **+1 successo (5/6)**
 
 **Tordek (Medita con cristalli):**
+
 - Concentrazione +13 vs CD 15 = auto-successo
 - Sincronizza ki con risonanza cristalli
 - **+1 successo (6/6) - COMPLETO!**
@@ -627,6 +669,7 @@ Xorn burrowing = possono seguire attraverso pietra. Difficile scappare.
 **Step 1: Identificare Gravità Variabile**
 
 **Prova Conoscenze (Arcane) CD 18 O Osservare CD 20:**
+
 - Notare detriti piccoli orbitano Tempio in pattern specifici
 - Realizzare: Tempio ha PROPRIA gravità, attrae oggetti
 - **Successo:** Capire che saltando verso Tempio, gravità Tempio "catturerà"
@@ -634,6 +677,7 @@ Xorn burrowing = possono seguire attraverso pietra. Difficile scappare.
 **Step 2: Salto Fede (Letterale)**
 
 **Chi:** Tordek (Monaco, Saltare migliore)
+
 - **Saltare Check:** CD 25 (difficilissimo)
   - Tordek: +10 (Monaco speed boost, +2 FOR Benedizione, +4 competenza Saltare) = +16
   - Serve: 9+ con Take 10 = 26 → **AUTO-SUCCESSO**
@@ -646,6 +690,7 @@ Xorn burrowing = possono seguire attraverso pietra. Difficile scappare.
 **Step 3: Corda Aiuto**
 
 **Chi:** Tordek (ormai su Tempio)
+
 - Lancia corda giù (o su? prospettive confuse) verso Thorik/Artemis
 - **Scalare CD 15:** Thorik e Artemis salgono corda
   - Gravità transizione quando raggiungono ~25m (metà strada)
@@ -674,6 +719,7 @@ Xorn burrowing = possono seguire attraverso pietra. Difficile scappare.
 **Non serve mappa complessa - corridoi guidano automaticamente centro (design intenzionale).**
 
 **Hazard Minori (Opzionali):**
+
 - **Trabocchetti Gravità:** TS Riflessi CD 15 o cadere "su" (1d6 danni, disorientamento)
 - **Rune Magiche:** Arcane check DC 18 disattivare (se fallisce, 2d6 forza magica)
 
@@ -718,6 +764,7 @@ Xorn burrowing = possono seguire attraverso pietra. Difficile scappare.
 **Opzione A: USARE FREQUENZA (Scelta Intelligente)**
 
 **Procedura:**
+
 1. Prima entrare camera, party decide: chi canterà frequenza?
    - Migliore: TUTTI e 3 simultaneamente (armonia)
 2. Entrano cantando/ronzando tono memorizzato
@@ -762,6 +809,7 @@ Terros sveglia normale, combattimento completo piena forza.
 **Touch:** 7, Flat-Footed: 22
 
 **Attacchi:**
+
 - **Schianto:** +30 mischia (2d10+12 più Push)
   - Push: Colpo spinge target 3m indietro, TS FOR CD 30 nega
 
@@ -770,6 +818,7 @@ Terros sveglia normale, combattimento completo piena forza.
 **Spazio/Portata:** 4,5m / 4,5m
 
 **Attacchi Speciali:**
+
 - **Push (Spingere):** Ogni colpo riuscito, TS FOR CD 30 o spinto 3m indietro
   - In camera zero-G = spinto verso muro (crash 2d6 contundente)
 - **Earth Mastery:** +1 attacco/danni se sia lui che nemico toccano terra
@@ -779,28 +828,34 @@ Terros sveglia normale, combattimento completo piena forza.
   - Raggio: 18m
 
 **Qualità Speciali:**
+
 - **Immunità:** Acido
 - **Vulnerabilità:** Sonic (danni sonori x1,5) [UTILE! Frequenza Confusione è sonic-based]
 - **DR:** 10/— (armi magiche superano)
 - **Earth Glide:** Può passare attraverso pietra/terra come se etereo (non lascia tunnel)
 
 **Tiri Salvezza:**
+
 - **Tempra:** +22 (+16 base, +6 COS)
 - **Riflessi:** +13 (+16 base, -3 DES... errore. Correzione: Earth ha DES 8 = -1, quindi +15)
 - **Volontà:** +10 (+8 base, +2 SAG)
 
 **Caratteristiche:**
+
 - FOR 35 (+12), DES 8 (-1), COS 23 (+6), INT 10 (+0), SAG 15 (+2), CAR 11 (+0)
 
 **Abilità:**
+
 - Ascoltare +21, Intimidire +19, Osservare +21, Sapienza Magica +19
 
 **Talenti:**
+
 - Arma Focalizzata (schianto), Attacco Poderoso, Incalzare, Fendente Poderoso, Iniziativa Migliorata, Critico Migliorato (schianto), Volontà di Ferro
 
 **Linguaggi:** Terran
 
 **Tattiche Boss:**
+
 1. **Round 1 (Se Confuso):** Tremor disperato (tentativo disorientare intrusi)
    - Penalità -4 attacco/AC ancora attive
 2. **Round 2+ (Normale):** Attacco Poderoso moderato (-4/+8), Double Slam target prioritario
@@ -862,12 +917,14 @@ Terros sveglia normale, combattimento completo piena forza.
 **Setup:** Party su Altare, canta frequenza, Terros sveglia confuso
 
 **Iniziativa:**
+
 - Artemis: 18
 - Tordek: 16
 - Terros: 13 (DES -1, Iniz +4, roll 10)
 - Thorik: 12
 
 **Artemis:**
+
 - **Decisione:** Sfruttare vulnerabilità Sonic!
   - Artemis ha invocazione? No standard. MA Ring può aiutare?
   - **Improvvisazione:** Eldritch Blast + Ring potenzia con energia sonora (1 carica Ring)
@@ -876,6 +933,7 @@ Terros sveglia normale, combattimento completo piena forza.
 - Terros HP: 252 -42 = **210 HP**
 
 **Tordek:**
+
 - Raffica Colpi
 - Attacchi: +12/+12/+7/+2 vs AC 18 (22 -4 confusione)
   - Tutti hit probabili!
@@ -883,6 +941,7 @@ Terros sveglia normale, combattimento completo piena forza.
 - Terros HP: 210 -36 = **174 HP**
 
 **Terros (Confuso, -4 attacco/AC):**
+
 - **Azione:** Tremor (disperazione)
   - Tutti su Altare: TS Riflessi CD 24 o proni + stunned 1 round
   - Thorik Riflessi +6 (+4 Trinità se attiva) = +10, serve 14+ = ~35%
@@ -893,6 +952,7 @@ Terros sveglia normale, combattimento completo piena forza.
     - 50-50
 
 **Thorik (Se Stunned):**
+
 - Non può agire questo round (stunned)
 
 **Fine Round 1:** Terros 174/252 HP (~69%), Thorik stunned 1 round
@@ -902,6 +962,7 @@ Terros sveglia normale, combattimento completo piena forza.
 **ROUND 2:**
 
 **Terros (Recupera, confusione finisce):**
+
 - **Attacco Completo:** 2 schianti vs Thorik (minaccia)
   - Attacco: +30 vs AC 21 = serve -9 = HIT automatico
   - Primo Schianto: 2d10+12 = ~23 danni + Push
@@ -911,6 +972,7 @@ Terros sveglia normale, combattimento completo piena forza.
     - Terros lancia frammento pietra (improvised ranged)
 
 **Thorik (In Zero-G, Prono):**
+
 - **Problema:** Movimento zero-G richiede DES check o Volo
   - Thorik NO Volo, DES basso
   - **Soluzione:** Aegis Fang LANCIA verso Altare (azione move)
@@ -923,11 +985,13 @@ Terros sveglia normale, combattimento completo piena forza.
   - Terros: 174 -28 = **146 HP**
 
 **Artemis:**
+
 - Eldritch Blast (sonic potenziato di nuovo)
 - Danno: ~42
 - Terros: 146 -42 = **104 HP**
 
 **Tordek:**
+
 - Raffica Colpi
 - Danno: ~36
 - Terros: 104 -36 = **68 HP** (CRITICO!)
@@ -950,68 +1014,54 @@ Terros sveglia normale, combattimento completo piena forza.
 
 ---
 
-## 9. IL RITUALE DELLO SMERALDO DELLA FORZA
+## 9. IL RITUALE DELLO SMERALDO: "ANVIL OF THE WORLD"
 
 ### **Dopo Sconfitta Guardiano**
 
-**Procedura Rituale (Simile Topazio, ma variazioni):**
+**Procedura Rituale (Skill Challenge Ad Alta Tensione):**
 
-**STEP 1: Stabilizzare Gravità (5 min)**
-- **Tordek:** Meditare centro Altare, sincronizzare ki con gravità artificiale
-- **CD 18 Concentrazione:** Successo stabilizza
+**FASE 1: IL PESO DEL MONDO (Il Costo Divino & Il Legame di Hella)**
+L'Altare aumenta la gravità a livelli intollerabili. Thorik si inginocchia sotto la pressione.
+Moradin parla attraverso l'Altare:
+> *"La Forza non si prende. Si sostiene. Sei disposto a portare il peso della montagna per gli altri, figlio mio?"*
 
-**STEP 2: Estrarre Essenza Terra (10 min)**
-- **Thorik:** Usare Corona + Aegis Fang assorbire energia terra circostante
-- **CD 20 FOR check:** Energia PESANTE, richiede forza tirare
-- Successo: Energia canalizza Altare
+**Opzione A (Sacrificio Materiale):** Offrire gemme/metallo per **40.500 mo**.
+- *Loot Disponibile:* Geode Titanico (5k) + Diamanti Xorn (1.2k) = 6.2k. Non basta. Devono sacrificare praticamente tutto il proprio equipaggiamento magico personale.
 
-**STEP 3: Cristallizzare Forma (5 min)**
-- **Artemis:** Ring canalizza energia, forma pattern geometrico
-- **CD 18 Concentrazione**
-- Successo: Energia solidifica forma cristallo
+**Opzione B (Sacrificio Personale - Il Vero Pathos):** Thorik accetta il "Peso".
+> *Sotto la gravità demoniaca, Thorik sente le ossa scricchiolare. Il dolore è accecante. Poi... una sensazione fredda e rassicurante alle spalle. Una luce verde tenue avvolge la grotta. Lo spirito di Hella si stringe a lui telepaticamente: "Non sei solo a portare questo peso, Thorik. Mai più solo." La pressione si stabilizza grazie a lei.*
+- Thorik perde permanentemente **2 punti Destrezza** (le sue articolazioni fondono con la pietra, indurendosi dolorosamente).
+- Guadagna permanentemente **+2 Costituzione** (scambio equivalente).
 
-**STEP 4: Forgiare Smeraldo (Tutti)**
-- Coordinazione finale
-- **CD 15 Volontà tutti e 3, almeno 2 successi**
-- Successo: **SMERALDO DELLA FORZA manifesta**
+**FASE 2: FORGIARE LA CONNESSIONE (Il Gruppo Unito)**
+- **Thorik:** Tiene la Corona sull'Altare mentre la pietra risale le sue braccia. Deve superare **TS Tempra CD 25** ogni round per 3 round. Ogni fallimento = 1 livello di indebolimento.
+- **Tordek:** Usa il ki (e i Bracieri) per colpire l'Altare a ritmo, creando vibrazioni che contrastano la gravità opprimente. **Prova Concentrazione o TxC CD 25**.
+- **Artemis:** Deve usare *Eldritch Blast* (o canalizzare il Ring) per dissipare l'energia in eccesso che stritolerebbe Thorik.
 
----
-
-**Narrazione Successo:**
-
-> *Luce VERDE esplode Altare. E quando dissipa...*
->
-> *SMERALDO. Perfetto. Dimensioni pugno, forma esagonale. Verde smeraldo profondo, trasparente ma con INCLUSIONI - sembrano fili adamantio interni, rete cristallina.*
->
-> *Toccandolo, sentite... FORZA. Non metaforica. LETTERALE. Muscoli irrigidiscono temporaneamente. È potere terra pura condensato.*
->
-> *Vola verso Corona automaticamente, si inserisce incavo sinistro (tempia). CLICK.*
->
-> ***SECONDA GEMMA ATTIVATA.***
+**FASE 3: L'INCASTONATURA E LA VISIONE**
+Se sopravvivono, lo Smeraldo vola e si incastra nella tempia sinistra della Corona.
+**Effetto Epico:** Un'onda d'urto smeraldo vi investe. Per un'ora, la vostra carne diventa "pietra vivente" (DR 10/Adamantio gratis). E Thorik, toccando la gemma, sente che l'ancoraggio dello spirito di Hella si è cristallizzato: ora è **impossibile** perderla.
 
 ---
 
-### **Effetti Smeraldo della Forza (Attivato)**
+### **Effetti Smeraldo della Forza (Attivato in Corona)**
 
-**Poteri Sbloccati:**
+**Poteri Sbloccati (Sinergia con la Scheda Artefatto):**
 
-**1. Forza Titanica (1/giorno, azione swift):**
-- Thorik: +8 potenziamento FOR per 5 round
-- FOR 22 → 30 (+10 modificatore!)
-- Attacco/danno aumentano drammaticamente
+**1. Volontà Adamantina (Adamantine Will):**
 
-**2. Pelle Adamantio (Passivo):**
-- DR 5/— (cumulativo con altri DR)
-- Resistenza +2 vs effetti fisici (spinte, trips, bull rush)
+- **Attivazione:** Passiva.
+- **Effetto Personale:** Conferisce immunità totale agli effetti di *charme* e *compulsione* ogniqualvolta Thorik tocca fisicamente il terreno nudo o la nuda roccia.
 
-**3. Prerequisito Viaggio Temporale:**
-- Smeraldo + Topazio necessari ENTRAMBI per Affresco A6
-- Con 2 gemme: Portale Anno -1000 attivabile
+**2. Gemma della Vera Terra:**
+
+- **Potere Originale (Mag., 1/settimana):** Permette di creare un possente muro di pietra (*Wall of Stone*), curare profondamente il terreno corrotto, o scatenare un Terremoto controllato (*Earthquake*).
+- **Restrizioni:** Ogni utilizzo richiede una preghiera e un'offerta (danno materiale di **1.000 mo** spesi per Moradin).
+- **Prerequisito Missione Principale:** Assieme al Topazio, lo Smeraldo stabilizza la matrice del tempo, rendendo possibile l'attivazione sicura del Viaggio Temporale per l'anno -1000.
 
 **Corona Aggiornata (2/3 Gemme):**
-- **Aspetto:** Topazio (fronte) + Smeraldo (tempia sinistra) brillano
-- **Potere:** Tutti effetti Corona +1 bonus extra
-- **Sinergia Gemme:** Topazio (tempo) + Smeraldo (forza) = percezione rallentata (quasi *slow time* visuale)
+
+- **Nuova Apparenza:** Gemma oro-arancio (fronte) palesa il tempo, Gemma verde profondo (tempia sinistra) emana solidità inamovibile.
 
 ---
 

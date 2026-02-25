@@ -1,260 +1,388 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Therysol - Character Sheet</title>
+    <title>Scheda: Therysol</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <style>
+        /* BASE SETTINGS & VARIABLES */
+        :root {
+            --primary-color: #191970;
+            /* Midnight Blue */
+            --secondary-color: #4682B4;
+            /* Steel Blue */
+            --accent-color: #008B8B;
+            /* Dark Cyan */
+            --bg-gradient-start: #f0f8ff;
+            --bg-gradient-end: #e6e6fa;
+            --font-main: 'Lora', serif;
+            --font-display: 'Cinzel', serif;
+            --font-deco: 'Cinzel Decorative', cursive;
+        }
+
+        /* PRINT SETTINGS - CRITICAL FOR A4 */
         @page {
-            size: A4;
-            margin: 0.4in;
-        }
-
-        body {
-            font-family: 'Times New Roman', serif;
-            font-size: 11pt;
-            line-height: 1.3;
-            color: #1a2a3a; /* Dark Blue-Gray text */
-            margin: 0;
-            padding: 20px;
-            /* Ice/Frost Gradient Background */
-            background: linear-gradient(135deg, #f0f8ff 0%, #e6e6fa 50%, #f0ffff 100%);
-        }
-
-        .header {
-            text-align: center;
-            border-bottom: 3px solid #4682B4; /* Steel Blue */
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-        }
-
-        .char-title {
-            font-family: 'Cinzel Decorative', cursive;
-            font-size: 26pt;
-            font-weight: bold;
-            color: #191970; /* Midnight Blue */
-            margin: 0;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-shadow: 0 0 2px #B0C4DE;
-        }
-
-        .subtitle {
-            font-family: 'Cinzel', serif;
-            font-size: 14pt;
-            font-weight: bold;
-            font-style: italic;
-            color: #4682B4; /* Steel Blue */
-            margin: 5px 0;
-        }
-
-        .flavor-text {
-            font-style: italic;
-            text-align: center;
-            color: #2F4F4F; /* Dark Slate Gray */
-            font-size: 10.5pt;
-            margin: 10px 0;
-            padding: 8px;
-            border-left: 3px solid #87CEEB; /* Sky Blue */
-            border-right: 3px solid #87CEEB;
-            background: rgba(135, 206, 235, 0.15);
-            border-radius: 10px;
-        }
-
-        .draconic {
-            font-family: 'Cinzel Decorative', cursive;
-            font-size: 12pt;
-            color: #008B8B; /* Dark Cyan */
-            text-shadow: 0 0 3px #E0FFFF;
-            font-weight: bold;
-            letter-spacing: 1px;
-            text-align: center;
-            margin-top: 5px;
-        }
-
-        h2 {
-            color: #191970; /* Midnight Blue */
-            font-family: 'Cinzel', serif;
-            font-size: 16pt;
-            font-weight: bold;
-            border-bottom: 2px solid #87CEEB;
-            padding-bottom: 2px;
-            margin: 15px 0 8px 0;
-            text-transform: uppercase;
-        }
-
-        h3, h4 {
-            color: #008B8B; /* Dark Cyan */
-            font-family: 'Cinzel', serif;
-            font-size: 13pt;
-            font-weight: bold;
-            margin: 10px 0 5px 0;
-        }
-        
-        h4 {
-            font-size: 12pt;
-            border-bottom: 1px dashed #B0C4DE;
-            display: inline-block;
-        }
-
-        strong {
-            color: #000080; /* Navy */
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 10px 0;
-            font-size: 10pt;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        th {
-            background: linear-gradient(135deg, #4682B4, #5F9EA0);
-            color: white;
-            padding: 6px 4px;
-            text-align: center;
-            font-weight: bold;
-            border: 1px solid #2F4F4F;
-            font-family: 'Cinzel', serif;
-        }
-
-        td {
-            padding: 4px 6px;
-            text-align: left;
-            border: 1px solid #B0C4DE;
-            background: rgba(255, 255, 255, 0.7);
-        }
-
-        tr:nth-child(even) td {
-            background: rgba(240, 248, 255, 0.7); /* Alice Blue */
-        }
-
-        .stat-block {
-            background: rgba(224, 255, 255, 0.2); /* Light Cyan */
-            border: 2px solid #4682B4;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 8px;
-        }
-
-        ul {
-            margin: 5px 0;
-            padding-left: 20px;
-        }
-
-        li {
-            margin: 3px 0;
-        }
-
-        .two-column {
-            column-count: 2;
-            column-gap: 25px;
-            text-align: justify;
-        }
-        
-        .section-break {
-            break-inside: avoid;
-            page-break-inside: avoid;
-        }
-
-        /* Metadata Block */
-        .meta-table td {
-            background: none;
-            border: none;
-            padding: 2px;
-            font-size: 11pt;
-        }
-        .meta-table {
-            box-shadow: none;
-            margin-bottom: 15px;
+            size: A4 portrait;
+            margin: 1.5cm;
+            /* Safe margin for most printers */
         }
 
         @media print {
-            body { 
-                background: white; 
-                padding: 0;
+            body {
+                background: white !important;
+                -webkit-print-color-adjust: exact !important;
+                /* Chrome/Safari */
+                print-color-adjust: exact !important;
+                /* Firefox/Standard */
             }
-            .stat-block, table, h2, h3, h4, .flavor-text {
+
+            .no-print {
+                display: none;
+            }
+
+            .section-break {
                 break-inside: avoid;
                 page-break-inside: avoid;
             }
-            .header {
-                border-bottom-color: #000;
-            }
+        }
+
+        /* GENERAL STYLES */
+        body {
+            font-family: var(--font-main);
+            font-size: 11pt;
+            line-height: 1.4;
+            color: #1a2a3a;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+            max-width: 210mm;
+            /* A4 width sim on screen */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* HEADER */
+        .header {
+            text-align: center;
+            border-bottom: 3px double var(--secondary-color);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .char-title {
+            font-family: var(--font-deco);
+            font-size: 28pt;
+            color: var(--primary-color);
+            margin: 0;
+            text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+        }
+
+        .subtitle {
+            font-family: var(--font-display);
+            font-size: 14pt;
+            color: var(--secondary-color);
+            font-weight: 700;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        .quote-box {
+            font-style: italic;
+            color: #555;
+            font-size: 10pt;
+            margin-top: 5px;
+        }
+
+        /* FLAVOR TEXT BOX */
+        .flavor-text {
+            background: rgba(255, 255, 255, 0.6);
+            border-left: 4px solid var(--accent-color);
+            padding: 10px 15px;
+            font-style: italic;
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            font-size: 10pt;
+            text-align: justify;
+        }
+
+        /* METADATA GRID */
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 5px;
+        }
+
+        .meta-item strong {
+            color: var(--primary-color);
+            font-family: var(--font-display);
+        }
+
+        /* COLUMN LAYOUT */
+        .columns-container {
+            column-count: 2;
+            column-gap: 0.8cm;
+        }
+
+        /* SECTION STYLING */
+        .section-break {
+            break-inside: avoid;
+            /* Standard */
+            -webkit-column-break-inside: avoid;
+            /* Chrome */
+            page-break-inside: avoid;
+            /* Legacy */
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.4);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            display: inline-block;
+            /* Fix for column locking */
+            width: 100%;
+            /* Fix for inline-block width */
+            box-sizing: border-box;
+        }
+
+        h2 {
+            font-family: var(--font-display);
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            font-size: 16pt;
+            margin-top: 0;
+        }
+
+        h3,
+        h4 {
+            font-family: var(--font-display);
+            color: var(--secondary-color);
+            margin: 10px 0 5px 0;
+            font-size: 12pt;
+        }
+
+        /* TABLES */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9.5pt;
+        }
+
+        th {
+            background: var(--secondary-color);
+            color: white;
+            padding: 4px;
+            text-align: left;
+            font-family: var(--font-display);
+        }
+
+        td {
+            border-bottom: 1px solid #ddd;
+            padding: 4px;
+        }
+
+        ul {
+            padding-left: 18px;
+            margin: 5px 0;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        /* STAT BLOCK HIGHLIGHT */
+        .stats-kv {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dotted #ccc;
+            padding: 2px 0;
+        }
+
+        .stats-kv strong {
+            color: var(--primary-color);
         }
     </style>
 </head>
+
 <body>
 
     <div class="header">
-        <h1 class="char-title">Therysol (ex Ysolde)</h1>
+        <div class="char-title">Therysol (ex Ysolde)</div>
         <div class="subtitle">La Custode del Cristallo Infranto</div>
-        <div class="draconic">"Theron non se n'è andato..."</div>
+        <div class="quote-box">"Theron non se n'è andato... sentite il freddo che porta?"</div>
     </div>
 
-    <!-- Metadata Table -->
-    <table class="meta-table">
-        <tr>
-            <td><strong>Razza:</strong> Tiefling Mezzo-Drago (Bianco)</td>
-            <td><strong>Classe:</strong> Esperto 2 / Acolita 6 (Livello 8)</td>
-        </tr>
-        <tr>
-            <td><strong>Allineamento:</strong> Caotico Buono</td>
-            <td><strong>Tipo:</strong> Esterno (Nativo, Potenziato)</td>
-        </tr>
-        <tr>
-            <td colspan="2"><strong>GS:</strong> 9</td>
-        </tr>
-    </table>
-
+    <!-- Intro Narrative -->
     <div class="flavor-text">
-        <p>Ysolde cade in ginocchio tra le ceneri ancora calde, il respiro spezzato dal fumo e dal terrore, mentre davanti a lei non resta più un corpo, solo resti anneriti e distorti, dove un tempo c’era suo fratello Theron. Il silenzio del Piano Elementale del Fuoco è rotto solo dal suo singhiozzo strozzato.</p><p> Le mani le tremano quando tocca ciò che rimane di lui. Trova un mezzo cristallo, liscio e tagliente come quarzo, incastonato tra la cenere e l’osso, che pulsa di una luce pallida azzurra.<br> «Theron…?»<br> Il cristallo vibra. Quando Ysolde lo stringe, il mezzo quarzo si fonde nel suo petto. Non è una benedizione: è una ferita. La luce azzurra esplode, respingendo il calore del fuoco con un’onda d’urto gelida.</p><p> La trasformazione è furia. Da un lato del corpo, la pelle si incrina come vetro; compaiono scaglie bianche come neve, con riflessi lattiginosi. Il braccio destro diventa un arto draconico con artigli di ghiaccio pietrificato. L'altro lato resta Tiefling, ma percorso da venature elettriche. I capelli diventano per metà cristallini, brillando come spade di ghiaccio intrise di fulmine.</p><p> Ysolde sente un secondo respiro dentro il proprio.<br> «Non…» inspira, e il respiro esce in una nuvola di brina. «Non li perderemo… non ancora.»<br> I suoi passi descrivono una linea attorno al gruppo, e dal petto si espande un’onda fredda: un cerchio azzurro che respinge le fiamme.<br> «Theron non se n’è andato… Chiamatemi… **Therysol**.»</p>
+        Ysolde cade in ginocchio tra le ceneri ancora calde... trova un mezzo cristallo, liscio e tagliente come
+        quarzo... Il cristallo vibra... si fonde nel suo petto. Non è una benedizione: è una ferita...
+        <br><br>
+        La trasformazione è furia. Pelle come vetro, scaglie bianche, braccio draconico. Ysolde sente un secondo
+        respiro...
+        <br>
+        <strong>«Non li perderemo... non ancora. Chiamatemi Therysol.»</strong>
     </div>
 
-    <div class="two-column">
-        
+    <!-- Meta Data -->
+    <div class="meta-grid">
+        <div class="meta-item"><strong>Razza:</strong> Tiefling Mezzo-Drago (Bianco)</div>
+        <div class="meta-item"><strong>Classe:</strong> Esperto 2 / Acolita 6 (Liv 8)</div>
+        <div class="meta-item"><strong>Allineamento:</strong> Caotico Buono</div>
+        <div class="meta-item"><strong>Tipo:</strong> Esterno (Nativo, Potenziato)</div>
+        <div class="meta-item" style="grid-column: span 2; text-align: center; background: #e0f7fa;"><strong>Grado Sfida
+                (GS): 9</strong></div>
+    </div>
+
+    <div class="columns-container">
+
+        <!-- Caratteristiche -->
         <div class="section-break">
-            <h2>Punteggi Caratteristica</h2>
-            <table><thead><tr><th>Caratteristica</th><th>Valore</th><th>Mod.</th><th>Note</th></tr></thead><tbody><tr><td>**Forza**</td><td style='font-weight:bold; font-size:1.1em;'>**16**</td><td>+3</td><td>(Base 8 + 8 Template) Forza draconica sopita</td></tr><tr><td>**Destrezza**</td><td style='font-weight:bold; font-size:1.1em;'>**18**</td><td>+4</td><td>(Base 14 + 2 Razza + 2 Livelli) Movimenti fluidi e scattanti</td></tr><tr><td>**Costituzione**</td><td style='font-weight:bold; font-size:1.1em;'>**14**</td><td>+2</td><td>(Base 12 + 2 Template) Resilienza innaturale</td></tr><tr><td>**Intelligenza**</td><td style='font-weight:bold; font-size:1.1em;'>**14**</td><td>+2</td><td>(Base 10 + 2 Razza + 2 Template) Astuzia commerciale</td></tr><tr><td>**Saggezza**</td><td style='font-weight:bold; font-size:1.1em;'>**13**</td><td>+1</td><td>(Base 13) Istinto di sopravvivenza</td></tr><tr><td>**Carisma**</td><td style='font-weight:bold; font-size:1.1em;'>**18**</td><td>+4</td><td>(Base 15 - 2 Razza + 2 Template + 3 Potenziamento) Presenza Magnetica</td></tr></tbody></table>
+            <h2>Caratteristiche</h2>
+            <table>
+                <tr>
+                    <th>Car</th>
+                    <th>Val</th>
+                    <th>Mod</th>
+                    <th>Note</th>
+                </tr>
+                <tr style="background:#e8f4f8;">
+                    <td><strong>FOR</strong></td>
+                    <td><strong>16</strong></td>
+                    <td>+3</td>
+                    <td>Draconica</td>
+                </tr>
+                <tr>
+                    <td><strong>DES</strong></td>
+                    <td><strong>18</strong></td>
+                    <td>+4</td>
+                    <td>Fluida</td>
+                </tr>
+                <tr style="background:#e8f4f8;">
+                    <td><strong>COS</strong></td>
+                    <td><strong>14</strong></td>
+                    <td>+2</td>
+                    <td>Resiliente</td>
+                </tr>
+                <tr>
+                    <td><strong>INT</strong></td>
+                    <td><strong>14</strong></td>
+                    <td>+2</td>
+                    <td>Astuta</td>
+                </tr>
+                <tr style="background:#e8f4f8;">
+                    <td><strong>SAG</strong></td>
+                    <td><strong>13</strong></td>
+                    <td>+1</td>
+                    <td>Istintiva</td>
+                </tr>
+                <tr>
+                    <td><strong>CAR</strong></td>
+                    <td><strong>18</strong></td>
+                    <td>+4</td>
+                    <td>Magnetica</td>
+                </tr>
+            </table>
         </div>
 
+        <!-- Combattimento -->
         <div class="section-break">
-            <h2>Combattimento & Difesa</h2>
-            <div class="stat-block">
-                <div><strong>Punti Ferita (PF):</strong> **44** (8 DV: 2d6+6d6 + 16 Cos)</div><div><strong>Iniziativa:</strong> **+8** (+4 Des, +4 Talento)</div><div><strong>Velocità:</strong> 9 m (Terra) / *Ali vestigiali (non atte al volo, usate per intimidire)*</div><div><strong>Classe Armatura (CA):</strong> **20**</div><div>*(10 + 4 Des + 4 Naturale [Scaglie] + 1 Amuleto Armatura Naturale + 1 Anello Deviazione)*</div><div>*Contatto: 15 / Colto alla sprovvista: 16*</div><div><strong>Tiri Salvezza:</strong></div><div>&#8226;   <strong>Tempra:</strong> +4 (+2 Base, +2 Cos)</div><div>&#8226;   <strong>Riflessi:</strong> +6 (+2 Base, +4 Des) *(Opzionale: -2 vs Fuoco per trauma psicologico)*</div><div>&#8226;   <strong>Volontà:</strong> +11 (+8 Base, +1 Sag, +2 Talento)</div><div><strong>Attacchi:</strong></div><div>&#8226;   <strong>Mischia (Completo):</strong> 2 Artigli +7 (1d4+3) e 1 Morso +2 (1d6+1)</div><div>&#8226;   <strong>Distanza:</strong> Balestra Leggera Perfetta +9 (1d8, 19-20/x2)</div><div>---</div>
+            <h2>Combattimento</h2>
+            <div class="stats-kv"><strong>HP:</strong> <span>44 (8 DV)</span></div>
+            <div class="stats-kv"><strong>Iniziativa:</strong> <span>+8 (Des+Tal)</span></div>
+            <div class="stats-kv"><strong>Velocità:</strong> <span>9m / Ali (no volo)</span></div>
+            <div class="stats-kv"><strong>CA:</strong> <span>20 (Contatto 15, Flat 16)</span></div>
+            <br>
+            <strong>Tiri Salvezza:</strong>
+            <div class="stats-kv">Tempra: <span>+4</span></div>
+            <div class="stats-kv">Riflessi: <span>+6</span></div>
+            <div class="stats-kv">Volontà: <span>+11</span></div>
+            <br>
+            <strong>Attacchi:</strong>
+            <ul>
+                <li><strong>Artigli/Morso:</strong> +7 (1d4+3) / +2 (1d6+1)</li>
+                <li><strong>Balestra Perfetta:</strong> +9 (1d8, 19-20)</li>
+            </ul>
+        </div>
+
+        <!-- Magia -->
+        <div class="section-break">
+            <h2>Magia (Innata)</h2>
+            <p style="font-size:9pt; font-style:italic;">Lancia spontaneamente come Stregone (su Carisma). No componenti
+                materiali.</p>
+            <div class="stats-kv"><strong>CD Base:</strong> <span>14 + Livello</span></div>
+            <ul>
+                <li><strong>Liv 0 (3/day):</strong> Creare Acqua, Individuazione Magico, Lettura Magico, Guida.</li>
+                <li><strong>Liv 1 (5/day):</strong> Cura Ferite Leggere, Benedizione, Comando, Foschia Occultante.</li>
+                <li><strong>Liv 2 (4/day):</strong> Aiuto, Cura Ferite Moderate, Ristorazione Inferiore.</li>
+            </ul>
+        </div>
+
+        <!-- Capacità Speciali -->
+        <div class="section-break">
+            <h2>Poteri Speciali</h2>
+
+            <h4>Egida del Fuoco Inverso (Sop)</h4>
+            <p style="font-size:9.5pt;">Aura di 6m centrata su sé stessa.
+                <strong>Effetto:</strong> Conferisce <strong>Resistenza Fuoco 20</strong> a tutti gli alleati nell'area.
+                Blocca elementali del fuoco.<br>
+                <strong>Usi:</strong> 3/giorno (10 min).
+            </p>
+
+            <h4>Soffio del Drago (Sop)</h4>
+            <p style="font-size:9.5pt;">Cono di 9m. <strong>Danni:</strong> 6d8 Freddo. <strong>CD Riflessi:</strong> 16
+                dimezza. <strong>Uso:</strong> 1/giorno.</p>
+
+            <h4>Tratti Razziali</h4>
+            <p style="font-size:9pt;">Immunità Freddo/Sonno/Paralisi. Resistenza 5 Elettricità/Fuoco. Scurovisione 18m.
+            </p>
+        </div>
+
+        <!-- Talenti & Abilità -->
+        <div class="section-break">
+            <h2>Talenti & Abilità</h2>
+            <ul>
+                <li><strong>Escludere Materiali</strong></li>
+                <li><strong>Iniziativa Migliorata</strong></li>
+                <li><strong>Volontà di Ferro</strong></li>
+            </ul>
+            <div style="font-size: 9pt; border-top: 1px solid #ccc; padding-top:4px;">
+                <strong>Skills:</strong> Raggirare +16, Diplomazia +15, Valutare +14, Percepire Intenzioni +12.
             </div>
         </div>
 
-        <div class="section-break">
-            <h2>Abilità (Skills)</h2>
-            <table><thead><tr><th>Abilità</th><th>Totale</th><th>Gradi</th><th>Car</th><th>Note</th></tr></thead><tbody><tr><td>**Valutare**</td><td>**+14**</td><td>12</td><td>+2</td><td>Esperta di gemme e merci drow</td></tr><tr><td>**Raggirare**</td><td>**+16**</td><td>10</td><td>+4</td><td>+2 Razziale incluso</td></tr><tr><td>**Diplomazia**</td><td>**+15**</td><td>9</td><td>+4</td><td>+2 Sinergia (Raggirare)</td></tr><tr><td>**Percepire Intenzioni**</td><td>**+12**</td><td>11</td><td>+1</td><td>Per evitare truffe</td></tr><tr><td>**Conoscenze (Locali - Sottosuolo)**</td><td>**+8**</td><td>6</td><td>+2</td><td>Sa chi comanda a Menzoberranzan</td></tr><tr><td>**Conoscenze (Religioni)**</td><td>**+6**</td><td>4</td><td>+2</td><td>Vecchi studi da accolita</td></tr><tr><td>**Guarire**</td><td>**+7**</td><td>6</td><td>+1</td><td>Primo soccorso</td></tr><tr><td>**Nascondersi**</td><td>**+6**</td><td>0</td><td>+4</td><td>+2 Razziale</td></tr></tbody></table>
-        </div>
-
-        <div class="section-break">
-            <h2>Capacità Speciali & Magia</h2>
-            <h4>1. L'Eredità del Cristallo (Incantesimi Innati)</h4><p>Therisol non prega più per i suoi incantesimi. Il cristallo nel suo petto agisce come un catalizzatore, permettendole di lanciare incantesimi divini dalla lista dell'Acolita <em>spontaneamente</em> (come uno Stregone), usando il <strong>Carisma</strong> per determinare le CD e gli slot bonus.</p><ul><li>  <strong>CD Incantesimi:</strong> 14 + Livello Incantesimo.</li><li>  <strong>Componenti:</strong> Ignora tutte le componenti materiali (Talento <em>Escludere Materiali</em>).</li></ul><p><strong>Incantesimi Conosciuti & Slot:</strong></p><ul><li>  <strong>Livello 0 (3/giorno):</strong> <em>Creare Acqua</em> (condensa l'aria), <em>Individuazione del Magico</em>, <em>Lettura del Magico</em>, <em>Guida</em> (la voce del fratello).</li><li>  <strong>Livello 1 (5/giorno):</strong> <em>Cura Ferite Leggere</em> (cauterizzazione fredda), <em>Benedizione</em>, <em>Comando</em> (voce draconica), <em>Foschia Occultante</em> (vapore gelido).</li><li>  <strong>Livello 2 (4/giorno):</strong> <em>Aiuto</em>, <em>Cura Ferite Moderate</em>, <em>Ristorazione Inferiore</em>.</li></ul><h4>2. Egida del Fuoco Inverso (Capacità Soprannaturale Unica)</h4><p>Questa è l'abilità che si è manifestata durante la sua trasformazione ("Awakening").</p><ul><li>  <strong>Effetto:</strong> Therisol può attivare un'aura protettiva pulsante di 6 metri (20 ft) centrata su se stessa.</li><li>  <strong>Meccanica:</strong> Funziona come un incantesimo <em>Cerchio Magico contro il Male</em>, ma invece di proteggere dall'allineamento, fornisce i benefici di <strong>Protezione dall'Energia (Fuoco)</strong> di massa.</li><li>  <strong>Bonus:</strong> Tutte le creature amiche all'interno dell'area ottengono <strong>Resistenza al Fuoco 20</strong>. L'aura impedisce inoltre alle creature elementali del fuoco evocate di entrare nell'area (se falliscono la RI).</li><li>  <strong>Durata:</strong> 10 minuti per utilizzo.</li><li>  <strong>Usi:</strong> 3 volte al giorno (Azione Standard).</li><li>  <strong>Descrizione Visiva:</strong> Un anello di brina e rune azzurre si forma sul terreno, muovendosi con lei.</li></ul><h4>3. Soffio del Drago (Sop)</h4><ul><li>  <strong>Effetto:</strong> Cono di 9 metri.</li><li>  <strong>Danno:</strong> 6d8 (Freddo/Elettricità - <em>trattato come Freddo per meccaniche</em>).</li><li>  <strong>CD:</strong> Riflessi CD 16 dimezza.</li><li>  <strong>Usi:</strong> 1 volta al giorno.</li></ul><h4>4. Tratti Razziali</h4><ul><li>  Immunità al <strong>Freddo</strong>, Sonno, Paralisi.</li><li>  Resistenza 5 a Elettricità e Fuoco (da Tiefling).</li><li>  Scurovisione 18 m.</li></ul><p>---</p>
-        </div>
-
-        <div class="section-break">
-            <h2>Talenti</h2>
-            <ul><li><strong>Escludere Materiali (Eschew Materials):</strong> Lancia incantesimi senza bisogno di componenti fisiche.</li><li><strong>Iniziativa Migliorata:</strong> (+4 Iniz) Reazione fulminea.</li><li><strong>Volontà di Ferro:</strong> (+2 TS Volontà) La sua mente è temprata dal trauma e dalla fusione con l'anima del fratello.</li></ul>
-        </div>
-
+        <!-- Equipaggiamento -->
         <div class="section-break">
             <h2>Equipaggiamento</h2>
-            <ul><li><strong>Talismano del Gelo Perenne (Amuleto Armatura Naturale +1):</strong> Un frammento di ghiaccio che non si scioglie mai, fuso visivamente con le scaglie del collo.</li><li><strong>Anello del Patto (Anello di Deviazione +1):</strong> Un semplice anello d'argento drow.</li><li><strong>Balestra Leggera Perfetta:</strong> Legno scuro, intarsiata in madreperla (Danno 1d8).</li><li><strong>Vestiario:</strong> Tunica di seta di ragno grigia e viola (stile sottosuolo), strappata sulla spalla destra per far spazio alle scaglie e alle escrescenze cristalline.</li><li><strong>Diario di Theron:</strong> Un piccolo libro bruciacchiato con le note commerciali e schizzi del fratello.</li></ul>
+            <ul>
+                <li>Talismano Gelo Perenne (+1 Arm. Nat)</li>
+                <li>Anello del Patto (+1 Deviazione)</li>
+                <li>Balestra Leggera Perfetta</li>
+                <li>Diario di Theron (Bruciato)</li>
+            </ul>
         </div>
-        
-    </div>
-    
-    <div class="section-break" style="margin-top: 15px; border-top: 2px dashed #4682B4; padding-top: 10px;">
-        <h3>Note per il DM</h3>
-        <ul><li><strong>Doppia Voce:</strong> Quando usa l'abilità *Egida del Fuoco Inverso* o il *Soffio*, la sua voce si sovrappone a quella maschile del fratello defunto.</li><li><strong>Trauma dal Fuoco:</strong> Nonostante la resistenza, il fuoco la terrorizza. Attiva la sua Egida al primo segno di fiamme magiche, anche se strategicamente non ottimale (es. contro un semplice dardo di fuoco), gridando ordini difensivi ai compagni.</li><li><strong>Agile ma Fragile:</strong> Con 44 PF a livello 8, non può reggere uno scontro prolungato in prima linea. Usa la sua alta CA (20) e mobilità per entrare in posizione, scaricare il soffio o attivare l'Egida per proteggere i "tank" del gruppo, e poi ritirarsi usando la balestra o incantesimi di supporto.</li></ul>
+
+    </div> <!-- End Columns -->
+
+    <!-- Footer Note -->
+    <div class="section-break" style="margin-top: 20px; border: 2px dashed var(--secondary-color); background: #fff;">
+        <h3>Note Tattiche</h3>
+        <p style="font-size:10pt;">
+            <strong>Paura del Fuoco:</strong> Attiva l'Egida al primo segno di fiamme, anche se non ottimale.<br>
+            <strong>Fragile:</strong> Ha solo 44 HP. Deve usare la mobilità e l'Egida per proteggere gli altri, non
+            tankare.
+        </p>
     </div>
 
 </body>
+
 </html>

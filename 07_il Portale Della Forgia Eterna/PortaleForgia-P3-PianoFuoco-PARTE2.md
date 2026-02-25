@@ -1,5 +1,7 @@
 # IL PORTALE DELLA FORGIA ETERNA
+
 ## PARTE 3 - Piano Elementale del Fuoco (PARTE 2/2 - COMPLETAMENTO)
+
 ### Avventura D&D 3.5 - Livello 13 - Forgotten Realms
 
 ---
@@ -51,6 +53,7 @@
 Salamandra è intelligente (INT 14), non bestia. Può ragionare.
 
 **Prova Diplomazia CD 20:**
+
 - **Successo:** Salamandra accetta lasciarvi passare SE fate compito
   - **Compito:** Liberare schiavi = NO (li vuole)
   - **Compito ALTERNATIVO:** Portarle pepita mithral puro da Piano Terra (future quest)
@@ -58,6 +61,7 @@ Salamandra è intelligente (INT 14), non bestia. Può ragionare.
 - **Fallimento:** Salamandra offesa, attacca
 
 **Bonus Diplomazia:**
+
 - Mostrare rispetto (inchino, parlare Ignan): +2
 - Offrire oggetto metallico subito (non tributo pieno): +2
 - Minacciare o insultare: Fallimento automatico
@@ -69,6 +73,7 @@ Liberare schiavi richiede sconfiggere salamandra.
 **Opzione C: FURTIVITÀ (Molto Difficile)**
 
 Aggirare isola senza farsi vedere:
+
 - Nascondersi CD 25 (tutti PG)
 - Muoversi Silenziosamente CD 22
 - Salamandra Osservare +11, Ascoltare +8
@@ -90,22 +95,26 @@ Aggirare isola senza farsi vedere:
 **Touch:** 11, Flat-Footed: 19
 
 **Attacchi:**
+
 - **Lancia Adamantio Fuoco +1:** +15/+10 mischia (1d8+6 più 1d6 fuoco, crit x3)
 - **Coda:** +10 mischia (2d6+2 più 1d6 fuoco e aggrappo)
 - **Stretta (se aggrappo):** 2d6+4 automatico per round
 
 **Attacco Completo:**
+
 - Lancia +15/+10 (1d8+6+1d6 fuoco) E Coda +10 (2d6+2+1d6 fuoco)
 
 **Spazio/Portata:** 1,5m / 1,5m (lancia 3m reach)
 
 **Attacchi Speciali:**
+
 - **Bruciare:** Colpi fuoco richiedono TS Riflessi CD 18 o prende fuoco (1d6 fuoco/round)
 - **Aggrappo Migliorato:** Coda aggancia senza provocare AoO
 - **Stretta:** Una volta aggrappato, 2d6+4 danni automatici per round
 - **Soffio Fuoco (1/1d4 round):** Cono 6m, 6d6 fuoco, TS Riflessi CD 18 dimezza
 
 **Qualità Speciali:**
+
 - **Immunità:** Fuoco
 - **Vulnerabilità:** Freddo (danni x1,5)
 - **DR:** 10/magia e freddo (armi non-magiche O freddo superano)
@@ -114,14 +123,17 @@ Aggirare isola senza farsi vedere:
 - **Percezione Calore:** Individua creature sangue caldo entro 18m (come scurovisione ma vs calore)
 
 **Tiri Salvezza:**
+
 - **Tempra:** +11 (+8 base, +3 COS)
 - **Riflessi:** +8 (+8 base, +0 DES) [Errore originale MM, corretto +1 DES = +9]
 - **Volontà:** +9 (+8 base, +1 SAG)
 
 **Caratteristiche:**
+
 - FOR 18 (+4), DES 13 (+1), COS 16 (+3), INT 14 (+2), SAG 13 (+1), CAR 13 (+1)
 
 **Abilità:**
+
 - Artigianato (forgiatura) +12
 - Ascoltare +8
 - Intimidire +8
@@ -130,6 +142,7 @@ Aggirare isola senza farsi vedere:
 - Sapienza Magica +7
 
 **Talenti:**
+
 - Arma Focalizzata (lancia)
 - Attacco Poderoso
 - Incalzare
@@ -139,12 +152,14 @@ Aggirare isola senza farsi vedere:
 **Linguaggi:** Ignan (nativo), Comune
 
 **Equipaggiamento:**
+
 - Lancia adamantio +1 fuoco (8.000 mo valore)
 - Armatura bronzo +1 (1.500 mo)
 - Collana amuleto protezione +1 (1.000 mo)
 - Borsa con 300 mo gemme (rubini grezzi)
 
 **Tattiche Combattimento:**
+
 - **Round 1:** Soffio fuoco vs gruppo (6d6 cono 6m)
 - **Round 2+:** Carica su target prioritario (Artemis caster)
   - Attacca con lancia (reach 3m)
@@ -160,17 +175,20 @@ Aggirare isola senza farsi vedere:
 **Non Combattenti:** Schiavi NON aiutano combattimento (terrorizzati, malnutriti)
 
 **Descrizione:**
+
 - 3 Tiefling (mezzo-demoni pelle grigia, piccole corna)
 - Nomi: Kazimir (♂), Ysolde (♀), Theron (♂)
 - Catturati durante raid Piano Materiale anni fa
 - Costretti forgiare armi per salamandre
 
 **Se Liberati:**
+
 - Implorano aiuto tornare Piano Materiale
 - Non hanno modo tornare da soli (nessuna magia)
 - Offrono ricompensa modesta (informazioni + gemme nascoste valore 200 mo)
 
 **Informazioni Utili (Se Interrogati):**
+
 - Descrivono Altare Tempo: "Piramide nera invertita, guardiano elementale enorme vive là"
 - Avvertono: "Guardiano dorme ma sveglia se tocchi Altare senza permesso"
 - Suggeriscono: "Cantare Canto Ignan Primordiale calma guardiano? Non sicuri, solo leggenda."
@@ -227,6 +245,7 @@ Aggirare isola senza farsi vedere:
 ```
 
 **Terreno:**
+
 - Isola roccia solida (no terreno difficile)
 - Fucina: Blocca linea vista, copertura totale (+8 CA) se completamente dietro
 - Muri bassi: Altezza 90cm, copertura bassa (+2 CA, +1 Riflessi)
@@ -241,12 +260,14 @@ Aggirare isola senza farsi vedere:
 **ROUND 1:**
 
 **Iniziativa:**
+
 - Salamandra: 15 (DES +1, roll 14)
 - Artemis: 18 (vince)
 - Tordek: 16
 - Thorik: 12
 
 **Artemis:**
+
 - Azione: Eldritch Blast vs Salamandra (distanza 18m)
 - Attacco: +16 ranged touch vs Touch AC 11 = HIT automatico
 - Danno: 8d6 (7d6 base +1d6 fuoco Benedizione) = ~28 danni
@@ -255,6 +276,7 @@ Aggirare isola senza farsi vedere:
   - Assumendo supera RI
 
 **Tordek:**
+
 - Movimento: Avanzare 18m (velocità Monaco) verso Salamandra
 - Azione: Raffica Colpi
   - Distanza: Raggiunge corpo a corpo
@@ -267,11 +289,13 @@ Aggirare isola senza farsi vedere:
   - Salamandra HP: 62 -20 (media) = **42 HP**
 
 **Thorik:**
+
 - Movimento: Avanzare 6m (armatura pesante limita)
 - Azione: Non raggiunge corpo a corpo (troppo lento)
 - Azione Alternativa: Prepara azione - "Se Salamandra si avvicina, attacco"
 
 **Salamandra (42 HP, Ferita ma Combatte):**
+
 - **Decisione Tattica:** Eliminare minaccia primaria (Artemis caster)
 - Azione: Movimento 6m verso Artemis + **Soffio Fuoco**
   - Posizionamento: Cono 6m include Artemis + possibilmente Thorik
@@ -288,11 +312,13 @@ Aggirare isola senza farsi vedere:
 **ROUND 2:**
 
 **Artemis:**
+
 - Eldritch Blast vs Salamandra
 - HIT, 8d6 = ~28 danni
 - Salamandra HP: 42 -28 = **14 HP** (GRAVEMENTE FERITA)
 
 **Tordek:**
+
 - Raffica Colpi
 - Due colpi hit = ~18 danni
 - Salamandra HP: 14 -18 = **-4 HP → MORTA**
@@ -304,11 +330,13 @@ Aggirare isola senza farsi vedere:
 ### **Dopo Combattimento**
 
 **XP Assegnati:** 2.400 XP totali (600 per PG)
+
 - Salamandra Nobile CR 9 (4.800 XP base) ÷ 2 (party 3 PG invece 4) = ~2.400 XP
 
 **Danni Subiti Party:** Minimi (Resist Fuoco 20 nega soffio quasi completamente)
 
 **Tesoro Salamandra:**
+
 - Lancia Adamantio +1 Fuoco (8.000 mo) - **OTTIMO per Thorik!**
   - Può sostituire Aegis Fang temporaneamente? NO - Aegis Fang sacra, ma può vendere
 - Armatura bronzo +1 Media (1.500 mo) - Vendibile
@@ -335,16 +363,19 @@ Aggirare isola senza farsi vedere:
 **Opzioni:**
 
 **A) Promettere Riportarli Sala Forgia Eterna (poi Piano Materiale):**
+
 - Schiavi seguono party (rallentano movimento -50%, ma gestibile)
 - **Complicazione:** Schiavi non combattenti, vulnerabili (AC 10, 10 HP)
 - **Beneficio:** Gratitudine profonda, informazioni dettagliate Piramide
 
 **B) Dire Attendere Qui Fino Ritorno:**
+
 - Party completa missione, poi torna prenderli
 - Schiavi timorosi ma accettano
 - **Rischio:** Altre salamandre potrebbero trovare isola (10% chance per ora)
 
 **C) Dare Loro Acqua + Direzione, Lasciarli Arrangiarsi:**
+
 - Schiavi cercano tornare portale da soli
 - **Probabilità Successo:** 20% (bassissima, Piano Fuoco mortale)
 - Party guadagna Karma negativo (azione Caotica Neutrale tendente Male)
@@ -415,6 +446,7 @@ Avvicinarsi Altare → Elementale sveglia → Boss Fight
 Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 
 **Procedura:**
+
 1. PG deve conoscere/improvvisare canto Ignan (Intrattenere Canto CD 25)
 2. Cantare mentre si avvicina Altare
 3. **Se successo:** Elementale sveglia MA non ostile, permette rituale se PG dimostra rispetto
@@ -441,6 +473,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 **Touch:** 13, Flat-Footed: 16  
 
 **Attacchi:**
+
 - **Schianto:** +28 mischia (2d8+9 più 2d8 fuoco)
   - BAB +24, FOR +9, taglia -2 = +31... Errore? Corretto: +24 +9 -2 +Arma Foc = +28 OK
 
@@ -449,11 +482,13 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 **Spazio/Portata:** 4,5m / 4,5m (occupa 9 quadretti, reach 3 quadretti)
 
 **Attacchi Speciali:**
+
 - **Burn (Bruciare):** Ogni colpo richiede TS Riflessi CD 26 o prende fuoco (2d8 fuoco/round fino estinto)
 - **Infuocato (Aura):** Creature entro 1,5m prendono 2d6 fuoco automaticamente ogni round (no TS)
   - Resist Fuoco 20 riduce a 0 (party protetto!)
 
 **Qualità Speciali:**
+
 - **Immunità:** Fuoco (ovviamente)
 - **Vulnerabilità:** Freddo (x1,5 danni)
 - **DR:** 10/— (qualsiasi arma magica supera)
@@ -461,20 +496,24 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 - **Percezione Calore:** 18m (vede creature sangue caldo attraverso oscurità/invisibilità)
 
 **Tiri Salvezza:**
+
 - **Tempra:** +19 (+16 base, +3 COS)
 - **Riflessi:** +19 (+16 base, +3 DES) [Errore MM: DES +5 non +3, corretto +21]
 - **Volontà:** +10 (+8 base, +2 SAG)
 
 **Caratteristiche:**
+
 - FOR 28 (+9), DES 21 (+5), COS 16 (+3), INT 10 (+0), SAG 15 (+2), CAR 11 (+0)
 
 **Abilità:**
+
 - Ascoltare +21
 - Intimidire +19
 - Osservare +21
 - Sapienza Magica +19
 
 **Talenti:**
+
 - Arma Focalizzata (schianto)
 - Attacco Poderoso
 - Incalzare
@@ -487,6 +526,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 **Linguaggi:** Ignan
 
 **Tattiche Boss:**
+
 1. **Round 1 (Sveglia):** Alza, ruggisce (Intimidire vs party, TS Volontà CD 20 o Scosso -2 attacco/TS per 3 round), carica su PG più vicino (Thorik probabilmente)
 2. **Round 2+:** Attacco Poderoso massimo (-5 attacco, +10 danni), Schianto doppio target prioritario
 3. **Se flanked:** Fendente Poderoso (attacco cleave colpisce due nemici adiacenti)
@@ -564,12 +604,14 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 > *Iniziativa.*
 
 **Iniziativa:**
+
 - Elementale: 25 (DES +5, Iniz.Migl +4, roll 16)
 - Artemis: 18
 - Tordek: 16
 - Thorik: 12
 
 **Elementale (Primo Turno):**
+
 - **Intimidire (Azione Gratuita):** Ruggito Terrificante
   - Tutti PG: TS Volontà CD 20 o Scosso -2 attacco/TS per 3 round
   - Thorik Volontà +7 (+4 Trinità se attiva) = serve 13+ (40-70%)
@@ -590,6 +632,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
   - Thorik HP: 145 -20 = **125 HP**
 
 **Artemis:**
+
 - **Decisione:** Attaccare Boss O attivare Trinità?
   - **Trinità:** Azione swift condivisa con Thorik (entrambi dichiarano)
   - Beneficio: +4 TS, +2 CA, immunità paura/charme
@@ -602,6 +645,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
   - Elementale HP: 228 -28 = **200 HP**
 
 **Tordek:**
+
 - **Movimento:** 18m (Monaco veloce) raggiunge Elementale
 - **Azione:** Raffica Colpi
   - Attacchi: +12/+12/+7/+2 vs AC 21
@@ -615,6 +659,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
   - Elementale HP: 200 -20 (media) = **180 HP**
 
 **Thorik (Scosso -2 attacco, MA Trinità compensa +4 TS):**
+
 - **Posizione:** Corpo a corpo con Boss (caricato su lui)
 - **Azione:** Attivare Eco Eroi (azione swift) + Attacco Poderoso
   - **Eco Eroi:** +2 morale attacco, +1d6 danni, 5 round
@@ -632,6 +677,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 **ROUND 2:**
 
 **Elementale (148 HP):**
+
 - **Attacco Completo:** 2 schianti su Thorik (minaccia principale)
   - **Attacco Poderoso:** -5 attacco, +10 danni (massimo)
   - Primo Schianto: +28 -5 = +23 vs AC 21 (Thorik, Trinità +2 = 23)
@@ -645,11 +691,13 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
   - Thorik HP: 125 -56 = **69 HP** (CRITICO!)
 
 **Artemis:**
+
 - Eldritch Blast
 - Danno: 8d6 = ~28
 - Elementale: 148 -28 = **120 HP**
 
 **Tordek:**
+
 - Raffica Colpi + **Colpo Stordente** (tentativo)
   - Primo colpo: HIT, danno 2d6+2 = ~9
     - **Colpo Stordente:** Elementale TS Tempra CD 19 o stordito 1 round
@@ -658,6 +706,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
   - Elementale: 120 -18 = **102 HP**
 
 **Thorik (69 HP - CRITICO!):**
+
 - **Decisione:** Continuare attaccare O curare?
   - Vigore Forgia: 1 carica, 3d8+10 = ~24 HP (azione standard)
   - Aegis Fang *Cure Moderate*: 2d8+13 = ~22 HP (azione standard)
@@ -674,6 +723,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 **ROUND 3:**
 
 **Elementale (102 HP, sotto 50% → Ritira su Altare):**
+
 - **Tattica Cambio:** Movimento 18m verso Altare
 - **Azione Standard:** Assorbe potere Altare (capacità speciale guardiano)
   - Cura: 20 HP
@@ -681,18 +731,21 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 - **Nota:** Questo dà 1 round respiro party
 
 **Artemis:**
+
 - **Movimento:** Avvicina (entro 30m Altare)
 - **Azione:** Eldritch Blast
 - Danno: 8d6 = ~28
 - Elementale: 122 -28 = **94 HP**
 
 **Tordek:**
+
 - **Movimento:** Segue Elementale (18m)
 - **Azione:** Raffica Colpi
 - Danni: ~20
 - Elementale: 94 -20 = **74 HP**
 
 **Thorik:**
+
 - **Movimento:** Avanza verso Elementale (6m)
 - **Azione:** Attacco singolo
   - Attacco: +19 (Scosso finito ora, Eco ancora attivo)
@@ -706,6 +759,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 **ROUND 4 - FINALE:**
 
 **Elementale (42 HP - Disperato):**
+
 - **Attacco Suicida:** Attacco Poderoso MASSIMO (-8 attacco, +16 danni)
   - Target: Tordek (più vicino)
   - Due schianti: +28 -8 = +20 vs AC 27 (Tordek)
@@ -716,11 +770,13 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
       - Tordek HP: 110 -34 = **76 HP**
 
 **Artemis:**
+
 - Eldritch Blast
 - Danno: 8d6 = ~28
 - Elementale: 42 -28 = **14 HP** (QUASI MORTO!)
 
 **Tordek (76 HP):**
+
 - Raffica Colpi
 - Primo colpo: 2d6+2 = ~9
 - Elementale: 14 -9 = **5 HP**
@@ -734,19 +790,23 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 ### **Dopo Boss Fight**
 
 **XP Assegnati:** 3.000 XP totali (750 per PG)
+
 - Elementale Anziano CR 12 solo (9.600 XP) ÷ 3 PG = ~3.000 XP
 
 **Danni Subiti Party:**
+
 - Thorik: 145 → 93 HP (~64%)
 - Tordek: 110 → 76 HP (~69%)
 - Artemis: 70 → 70 HP (100% - ranged sicuro!)
 
 **Risorse Spese:**
+
 - Thorik: 1 carica Vigore Forgia (2 rimaste)
 - Thorik: Eco Eroi usato (1/combattimento, speso)
 - Trinità Divina: Usata (cooldown 24 ore)
 
 **Tesoro Boss:**
+
 - Elementale dissolvendosi lascia **Nucleo Fuoco Puro** (gemma rubino gigante 3.000 mo)
 - Nucleo può alimentare forgia magica o vendere
 
@@ -843,6 +903,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 > *Centro piedistallo, incavo non più vuoto. Dentro: GEMMA.*
 >
 > *Topazio. Ma non topazio normale. Topazio che CONTIENE tempo stesso. Guardandolo, vedete riflessi IMPOSSIBILI:*
+>
 > - *Voi stessi neonati*
 > - *Voi stessi anziani*
 > - *Voi stessi MAI NATI*
@@ -861,11 +922,13 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 **Poteri Sbloccati:**
 
 **1. Visione Temporale (Passiva):**
+
 - Thorik occasionalmente vede "echi" eventi passati luoghi visita
 - Esempio: Cammina campo battaglia, vede fantasmi combattere (eventi 100 anni fa)
 - **Uso Narrativo:** DM può rivelare informazioni background attraverso visioni
 
 **2. Rallentare Tempo (1/giorno, azione swift):**
+
 - Per 3 round, Thorik agisce come sotto *Haste*:
   - +1 attacco completo extra (non iterativo)
   - +1 schivare AC
@@ -874,11 +937,13 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 - **Non affecta:** Altri (solo Thorik)
 
 **3. Prerequisito Viaggio Temporale:**
+
 - Topazio necessario per attivare Affresco A6 (Viaggio Anno -1000)
 - Senza Topazio: Affresco inerte
 - Con Topazio: Affresco diventa portale funzionante
 
 **Corona Aggiornata (1/3 Gemme):**
+
 - **Nuova Apparenza:** Gemma oro-arancio brilla fronte (prima vuoto)
 - **Potere Aumentato:** +1 bonus tutti poteri Corona esistenti
 - **Countdown Hammerfist:** Topazio permette "sentire" urgenza (Thorik sa esattamente quante ore rimangono = meta-knowledge giustificato)
@@ -906,6 +971,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 **Se Party Promesse Tornare:**
 
 **Procedura:**
+
 1. Attraversare portale ritorno → Arrivano Sala Forgia Eterna
 2. Riposare breve (1 ora)
 3. Ri-attraversare portale Piano Fuoco
@@ -916,6 +982,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 **Totale Tempo:** +2 ore countdown Hammerfist (accettabile se party efficiente)
 
 **Schiavi Riconoscenza:**
+
 - Kazimir dona **Anello Protezione +1** (famiglia possedeva, unica cosa valore)
 - Ysolde condivide **mappa grezza Piano Terra** (disegnata memoria, +2 Navigazione Piano Terra)
 - Theron offre servigi futuri (contatto Piano Materiale, può aiutare ricerche/acquisti)
@@ -943,6 +1010,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 > *Materializza davanti occhi (30 secondi processo): Cornice oro/adamantio, poi superficie, poi immagine.*
 >
 > *Vedete Piano Elementale Terra:*
+>
 > - *Cristalli giganti grandi torri*
 > - *Gravità distorta - rocce galleggiano*
 > - *Geodi brillano luce interna*
@@ -959,6 +1027,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 > *"Figli. Ben fatto Piano Fuoco. Ma stanchi. Ferite. Risorse esaurite. RIPOSATE. Sala è sicura. Tempo passa, sì - Hammerfist countdown continua - ma party morto aiuta nessuno. Otto ore. Dormite. Recuperate. POI affrontate Terra."*
 
 **Benefici Long Rest (8 Ore):**
+
 - HP completi (cure naturali + Benedizioni)
 - Incantesimi/capacità giornaliere reset
 - Vigore Forgia: 3 cariche rinnovate
@@ -968,6 +1037,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 - **Countdown Hammerfist:** -8 ore (4 giorni 10 ore → 4 giorni 2 ore) [Ancora gestibile!]
 
 **Durante Riposo:**
+
 - Tordek sogna Hella (comunicazione spirituale, Hella felice progresso)
 - Thorik vede visioni Topazio (flash Anno -1000, anticipa Parte 5)
 - Artemis Ring pulsa gentilmente (Lathander/Mask soddisfatti)
@@ -993,9 +1063,11 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 | **TOTALE** | | **15.950 mo** | Eccellente! |
 
 **Divisione (Se Party Divide Equamente):**
+
 - 15.950 ÷ 3 = ~5.316 mo per PG
 
 **Oggetti Equipaggiabili:**
+
 - **Lancia Adamantio +1 Fuoco:** Thorik potrebbe usare? NO - Aegis Fang migliore (sentimentale + poteri). VENDERE.
 - **Amuleto Protezione +1:** Sostituire amuleti esistenti? Thorik/Artemis potrebbero.
 - **Anello Protezione +1 (da Kazimir):** Utile backup.
@@ -1016,6 +1088,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 | **TOTALE** | | **9.000 XP** | **3.000 XP/PG** |
 
 **Progressione Livello:**
+
 - Livello 13 → 14: Richiede 91.000 XP
 - Party probabilmente aveva ~78.000 XP pre-avventura
 - Dopo Parte 1-2-3: +3.000 (Parte 3) + probabilmente ~2.000 (Parti 1-2) = +5.000 XP totali
@@ -1048,10 +1121,12 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 ### **Bilanciamento Difficoltà**
 
 **Benedizioni Moradin Rendono Party Forte vs Fuoco:**
+
 - Resist Fuoco 20 nega MAGGIORANZA danni elementali
 - Immunità calore ambientale elimina attrition
 
 **COMPENSAZIONI Applicate:**
+
 - Elementali hanno +2 DV (più HP)
 - Boss ha tattica aggressiva (Attacco Poderoso massimo)
 - Hazards ambientali ancora pericolosi (cadute lava)
@@ -1064,11 +1139,13 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 ### **Adattamenti se Party Struggling**
 
 **Se Party HP Critici Pre-Boss:**
+
 1. Moradin interviene: Benedizione extra +1 uso Vigore Forgia
 2. Elementale Anziano inizia combattimento con HP ridotti (180 invece 228)
 3. Permettere short rest prima Boss senza penalty tempo
 
 **Se Party Domina Troppo Facilmente:**
+
 1. Aggiungere Elementali Medi (2x) come rinforzi Boss Round 3
 2. Boss usa tattica più intelligente (kiting, cover)
 3. Hazard random durante Boss (geyser fuoco improvviso)
@@ -1078,6 +1155,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 ### **Foreshadowing Parte 4 (Piano Terra)**
 
 **Durante Parte 3, Seminare Hints:**
+
 - Schiavi menzionano "Piano Terra ancora più pericoloso - gravità schiaccia"
 - Aegis Fang commenta "Prossima gemma: Smeraldo Forza. Testerà resistenza fisica."
 - Topazio Visioni: Thorik vede flash cristalli viventi, peso opprimente
@@ -1087,6 +1165,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 ### **Emotional Beats**
 
 **Parte 3 Deve Essere:**
+
 - **Eroica:** Party sconfigge guardiano millenario, recupera artefatto leggendario
 - **Soddisfacente:** Ricompense tangibili (tesoro, XP, Topazio)
 - **Urgente:** Countdown Hammerfist sempre presente (Affresco A7 aggiorna)
@@ -1101,16 +1180,19 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 ### **Aggiornamenti dopo Long Rest**
 
 **Tutti PG:**
+
 - **HP:** Completi (145 Thorik, 110 Tordek, 70 Artemis)
 - **Benedizioni:** Rinnovate (tutte 24h duration)
 - **Capacità Giornaliere:** Reset
 
 **Thorik Specifico:**
+
 - **Corona:** +1 gemma (Topazio Tempo attivato)
   - Nuovi poteri: Visione Temporale, Rallentare Tempo 1/giorno
 - **Equipaggiamento Possibile:** Amuleto Protezione +1 (se slot libero)
 
 **Risorse Disponibili:**
+
 - Vigore Forgia: 3/3 cariche (tutti)
 - Aegis Fang: 3/3 *Cure Moderate*
 - Devastation Gauntlets: 4/4 cariche
@@ -1134,7 +1216,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 **Tesori Appropriati:** ✅ 15.950 mo totali  
 **Progressione Storia:** ✅ 1/3 Gemme Recuperate  
 
-Party è PRONTO per Piano Elementale della Terra!
+Party è PRONTO per Piano Elementale della Terra
 ---
 
 ## 11. ADDENDUM: RIBILANCIAMENTO SCONTRI (LIVELLO 13+)
@@ -1145,9 +1227,9 @@ Party è PRONTO per Piano Elementale della Terra!
 
 **Nemici:** 4x **Advanced Huge Fire Elementals** (CR 9 ciascuno)
 **Modifiche:**
-*   **HP:** 152 ciascuno (21 DV).
-*   **Immersioni:** Si curano di 8d6/round se immersi nella lava.
-*   **Tattica:** GEYSER SINCRONIZZATI. Ogni 1d4+1 round, 3 geyser esplodono sotto i PG (8d6 fuoco, Riflessi CD 22, + Prono).
+- **HP:** 152 ciascuno (21 DV).
+- **Immersioni:** Si curano di 8d6/round se immersi nella lava.
+- **Tattica:** GEYSER SINCRONIZZATI. Ogni 1d4+1 round, 3 geyser esplodono sotto i PG (8d6 fuoco, Riflessi CD 22, + Prono).
 
 ---
 
@@ -1162,8 +1244,8 @@ La Piramide Rovesciata non è solo una piattaforma. È un **Tempio-Vulcano** sos
 > *Sotto di voi? Non c'è terra. La piramide è cava al centro: state scalando il bordo di un CAMINO VULCANICO attivo.*
 
 **Meccanica di Scalata (Avvicinamento):**
-*   **12 Gradoni (36m dislivello):** Richiedono prove Scalare (CD 15) o salti enormi (Tordek/Salto Fiammegiante).
-*   **Rune Ignan:** Infliggono 2d6 danni fuoco a chi tocca i gradoni senza protezione/benedizione.
+- **12 Gradoni (36m dislivello):** Richiedono prove Scalare (CD 15) o salti enormi (Tordek/Salto Fiammegiante).
+- **Rune Ignan:** Infliggono 2d6 danni fuoco a chi tocca i gradoni senza protezione/benedizione.
 
 ---
 
@@ -1171,16 +1253,16 @@ La Piramide Rovesciata non è solo una piattaforma. È un **Tempio-Vulcano** sos
 
 **Mappa Tattica RIVISTA: L'Isola sul Camino**
 La piattaforma finale non è solida. È un'"Isola" di roccia nera sospesa direttamente sopra il nucleo del vulcano.
-*   **Dimensioni:** 60m x 60m (come originale), MA...
-*   **Venature di Lava:** Il pavimento è spaccato. Fiumi di lava irregolari lo attraversano. Calpestare una vena = 10d6 danni.
-*   **Instabilità:** La piattaforma trema ogni round.
+- **Dimensioni:** 60m x 60m (come originale), MA...
+- **Venature di Lava:** Il pavimento è spaccato. Fiumi di lava irregolari lo attraversano. Calpestare una vena = 10d6 danni.
+- **Instabilità:** La piattaforma trema ogni round.
 
 **BOSS: ELDER FIRE ELEMENTAL - AVATAR (CR 14)**
-*   **HP:** 380 (Rigenerazione Lava Suprema).
-*   **Fasi:**
-    1.  **Emersione:** Esplode dal camino centrale. Aura Calore (6d6 round).
-    2.  **Vortice Infernale:** Si trasforma in tornado di fuoco. Tordek può entrare per meditare (Prova Eroica CD 24).
-    3.  **Evocazioni:** Chiama 2 Huge Elementals dalla lava circostante.
+- **HP:** 380 (Rigenerazione Lava Suprema).
+- **Fasi:**
+    1. **Emersione:** Esplode dal camino centrale. Aura Calore (6d6 round).
+    2. **Vortice Infernale:** Si trasforma in tornado di fuoco. Tordek può entrare per meditare (Prova Eroica CD 24).
+    3. **Evocazioni:** Chiama 2 Huge Elementals dalla lava circostante.
 
 ---
 
@@ -1208,8 +1290,8 @@ Avete **10 Round** (o 1 Minuto reale di descrizione frenetica) per completare il
 
 **Il Rituale in Extremis:**
 Deve essere completato DURANTE questi eventi.
-*   **Thorik:** Deve proteggere fisicamente l'altare dai detriti/collasso.
-*   **Artemis:** Deve canalizzare senza interrompersi (Concentrazione CD 25+danni).
-*   **Tordek:** Deve correre a recuperare il Topazio appena appare, prima che cada nella lava.
+- **Thorik:** Deve proteggere fisicamente l'altare dai detriti/collasso.
+- **Artemis:** Deve canalizzare senza interrompersi (Concentrazione CD 25+danni).
+- **Tordek:** Deve correre a recuperare il Topazio appena appare, prima che cada nella lava.
 
 Questo finale trasforma la vittoria in una fuga rocambolesca, degna di un finale di atto.

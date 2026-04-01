@@ -289,3 +289,31 @@ __pycache__/
 *.pyd
 Script/pdf-to-md-engine/data
 venv/
+
+# RumblingStone .gitignore
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+*~
+
+# Private session notes (keep drafts local)
+campaign/sessions/*.draft.md
+
+# PDF scans of physical books (copyrighted, never commit)
+*.pdf
+*.PDF
+
+# Editor configs (personal preference)
+.vscode/settings.json
+.idea/
+
+# Temp files
+*.tmp
+*.bak
+
+# Node / Python (if any tools are added)
+node_modules/
+__pycache__/
+*.pyc
+.env

@@ -1,0 +1,356 @@
+# RumblingStone Campaign — Artifacts Reference (D&D 3.5)
+
+This file documents all **campaign-specific artifacts** created for the RumblingStone campaign.
+These are custom items not found in any published sourcebook. For canonical FR artifacts, see `fr-artifacts.md`.
+
+Sources: Campaign files in `PG/Artefatti/`, arc documents `06_`–`09_`
+
+---
+
+## ARTIFACT 1: AEGIS FANG (Thorik's Axe)
+
+**Type:** Legendary Weapon (Artifact)
+**Slot:** Main hand
+**Owner:** Thorik (Dwarf Fighter 13)
+**Source Files:** `PG/Artefatti/Artefatti-Pg/Aegis Fang/`
+
+### Description
+
+Adapted from Forgotten Realms lore (originally Wulfgar's warhammer). In this campaign, Aegis Fang is a **dwarven waraxe** that bonded with Thorik during his death and resurrection at Drellin's Ferry. The weapon is a divine instrument of Moradin.
+
+### Current Stats (Pre-Full Awakening)
+
+- **Type:** +2 Dwarven Waraxe, Returning
+- **Special:** Bonded to Thorik; cannot be permanently lost; returns when thrown (as Returning)
+- **Alignment:** Lawful Good
+- **Weight:** 4 kg
+
+### Full Awakening (After Siege of the Eternal Forge Ritual)
+
+When Corona di Adamantio is fully awakened and Thorik completes all Legacy Rituals:
+
+- Becomes **+4 Dwarven Waraxe, Sacred, Returning**
+- +2d6 Sacred damage vs. aberrations, undead, and dragons
+- CL 18; telepathy with dwarves (90m range)
+- Thorik's presence makes dwarven allies immune to Fear
+
+### Synergies
+
+- **With Corona di Adamantio:** Full weapon awakening (see above)
+- **With Ring of Chaotic Illumination (Dark Dawn Strike):** 1/day, coordinated attack: +2 attack, +2d6 sacred damage when Artemis casts Light of Lathander on same target
+
+---
+
+## ARTIFACT 2: CORONA DI ADAMANTIO (Crown of Adamantine)
+
+**Type:** Legendary Crown (Major Artifact)
+**Slot:** Head
+**Owner:** Thorik (Dwarf Fighter 13)
+**Source Files:** `PG/Artefatti/Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/` (18 files)
+
+### Description
+
+Forged by Moradin from a shard of creation — not merely a crown of power but "an anchor for dwarven history itself." Found in the deep Underdark mine adapted from Belkram's Fall (Expedition to Undermountain). Contains three sacred gems that must be activated through planar rituals.
+
+### Stats
+
+- **Aura:** Overwhelming Invocation, Divination, Abjuration
+- **Caster Level:** 20th
+- **Weight:** 1.5 kg
+- **Material:** Adamantine and deep crystal
+- **Alignment:** Lawful Good
+- **Prerequisites:** Dwarf or Half-Dwarf, BAB +5, True Faith in Moradin OR bonded with Aegis Fang
+
+### Active Powers (Currently Available)
+
+1. **Stone's Awareness (Su, CL 5):** On natural ground: +1 morale to attack/damage; detect secret doors and traps at will
+2. **Crown of Protection (Ex, CL 6):** +2 deflection bonus to AC while worn
+
+### Powers To Awaken (Via Legacy Rituals)
+
+3. **Moradin's Insight (Su):** True Seeing 1/day; +4 insight to Craft (Blacksmith). *Unlocked by: Trial of the Deep Hall*
+2. **Adamantine Will (Su):** Counter charm/compulsion on natural ground. *Unlocked by: Anvil of the World*
+3. **Mantle of Stone and Spirit (Su):** Continuous Mind Blank; epic/evil DR. *Unlocked by: Siege of the Eternal Forge*
+
+### Three Sacred Gems
+
+| Gem | Color | Ritual to Activate | Status | Power |
+|---|---|---|---|---|
+| **Immutable Time** | Topaz | Fire Plane ritual | ✅ ACTIVATED | Time travel 1/month from Earth Node; costs 1d10 years aging |
+| **True Earth** | Emerald | Earth Plane ritual | ⏳  ACTIVATED AFTER ANVIL OF THE WORLD | Wall of Stone / Heal Earth / Controlled Earthquake 1/week (costs 1,000 gp) |
+| **Dwarven Might** | Ruby | Battle at -1000 | ⏳ ACTIVATES AT DAWN | Buff self+allies with strength/courage 1/week; -2 STR for 24h after |
+
+### Legacy Rituals (Sequential)
+
+1. **Forge's Defense** — ✅ COMPLETED (vision of Hammerfist battle on wearing)
+2. **Trial of the Deep Hall** — ✅ COMPLETED (Underdark profane temple quest)
+3. **Anvil of the World** — ⏳ In progress (Eternal Forge Earth/Fire Planes)
+4. **Siege of the Eternal Forge** — ⏳ Final ritual (time-travel battle, year -1000)
+
+---
+
+## ARTIFACT 3: RING OF CHAOTIC ILLUMINATION (Reforged)
+
+**Type:** Unique Artifact Ring
+**Slot:** Ring
+**Owner:** Artemis (Human Warlock 13)
+**Source Files:** `PG/Artefatti/Ring of Chaotic Illumination.md` (original), `PG/Artefatti/Artefatti-Pg/ringOfChaoticIllumination/00_Ring_of_Chaotic_Illumination_Revised.md` (reforged)
+
+### Description
+
+Originally forged during the Era of Torments (Time of Troubles, 1358 DR) when gods walked Toril. Recovered by Netherese mage Vess'ith Shadowweaver. Re-awakened in the Hall of the Belkram's Fall Tomb (cerebromorphosis room - stanza_celebromorfosi.md) when Artemis **rejected** the Lord of Sun and Shadow prestige class, choosing to forge his own chaotic path. The ring absorbed the Mithral Column of Unity and the Dual Flames.
+
+### Physical Appearance (Reforged)
+
+Band of polished obsidian with gold veins (Lathander), silver glyphs (Mask), and violet core (warlock's chaos). To non-chosen, it appears as a simple cobalt blue aquamarine ring.
+
+### Stats
+
+- **Aura:** Strong Transmutation and Illusion [Chaotic, Good]
+- **Caster Level:** 15th
+- **Market Price:** 163,400 gp (Unique)
+
+### Constant Powers
+
+- **Superior Darkvision:** 120 ft; see through magical darkness 60 ft; Low-Light Vision
+- **Forged Knowledge:** +8 competence to Knowledge (Arcana) and Knowledge (Religion)
+- **Aura of Diplomacy:** +2 competence to Diplomacy
+- **Dual Flame Blessing:** Fire Resistance 10; Eldritch Blast +1d6 Fire +1d6 Cold
+
+### Activated Powers
+
+1. **Wings of Shadow (At-will):** Fly 60 ft (Good), Flyby Attack feat. Free action toggle.
+2. **Shadow Step (Su, 1/5 rounds):** Teleport 60 ft between shadows. Move action.
+3. **Light of Lathander (Sp, 1/day):** Daylight 60 ft for 10 min + allies +2 morale to attack 3 rounds + enemies with light sensitivity -2 attack/damage. Swift action.
+4. **Shadow of Mask (Sp, 1/day):** Greater Invisibility (CL 15) on self + 1 ally for 5 rounds. Swift action.
+5. **Unity's Gift (Su, 1/day):** Grant 1 ally within 30 ft an extra Standard Action immediately. Swift action.
+6. **Firestorm Invocation (Sp, 1/day):** 8d6 fire in 30 ft burst, Reflex DC 19 half, allies immune. Standard action.
+
+### Crisis Powers (Involuntary Transformation Only)
+
+- **Dawn's Defiance (Su):** Auto-Break Enchantment (CL 15) when failing vs. mind-affecting transformation + 24h mental immunity
+- **Solar Purge (Su):** 1d6 divine/HD to all aberrations in 30 ft (no save). Ring powers lost 24h after.
+
+### Artifact Synergies
+
+- **Crown + Ring (Passive):** +1 Dodge AC vs Lawful when within 10 ft
+- **Crown + Ring (Active, 1/day):** Planar Vision (see through elemental portals) + Dispel Illusion 30 ft burst
+- **Aegis + Ring (Dark Dawn Strike, 1/day):** Coordinated: Artemis casts Daylight→Thorik attacks→+2 attack, +2d6 sacred
+- **Divine Trinity (Crown + Ring + Bracieri, 1/day, 5 rounds):** See campaign-party.md
+
+---
+
+## ARTIFACT 4: BRACIERI GEMELLI DI MORADIN (Twin Hearth-Gauntlets)
+
+**Type:** Legendary Gauntlets (Artifact)
+**Slot:** Hands
+**Owner:** Tordek Durinheart (Dwarf Fighter 4 / Monk 9)
+**Source Files:** `PG/Artefatti/Artefatti-Pg/Tordek/` (14 files)
+
+### Description
+
+Forged by Moradin from two blocks of adamantine — immersed in Fire Plane magma, then chained to Earth Plane's mountain heart. Called "Twin Hearth-Gauntlets" because they burn with two flames: one that consumes and one that sustains. Legend says a dwarf monk once taught an ancient dragon the difference between possessing a mountain and deserving it — while wearing these.
+
+### Stats
+
+- **Aura:** Overwhelming Evocation, Abjuration, Invocation, Transmutation (CL 20)
+- **Weight:** 2.5 kg
+- **Material:** Pure adamantine, fused with mithral slag, fire topazes + emerald geodes
+- **Alignment:** Lawful Good
+- **Intelligence (Full):** INT 14, WIS 16, CHA 16, Ego 18
+- **Prerequisites:** Dwarf, non-evil/non-chaotic, BAB +11, unarmed or dwarf bludgeon style, honors Moradin
+
+### Fire Phase Powers (✅ AWAKENED — Baptism of Flames)
+
+1. **Dragon Bane (Dragon Doom):** +2 attack, +2d6 damage vs. dragons
+2. **Power Attack Mastery:** Reduce PA penalty by 1 (min 0)
+3. **Pugno di Moradin (3/day, Su):** Swift; +WIS sacred damage to unarmed, push 5 ft on hit (Fort DC 18)
+4. **Colpi del Fuoco (3/day, Su):** Standard attack, +4d6 fire, push 5 ft (Fort DC 18), adjacent 2d6 fire (Ref DC 18)
+5. **Cuore di Brace:** Fire Resistance 10 (continuous)
+6. **Salto Infuocato (3/day, Su):** Move action; special jump (d20 + STR + Jump ranks + WIS), landing deals 2d6 fire in 3m radius
+7. **Jump Bonus:** +10 competence to Jump (passive while charges remain)
+8. **Sentient Voice:** Whispers dwarven advice; refuses powers if wielder betrays dwarven ideals
+
+### Earth Phase Powers (⏳ COMPLETING — Trial of the Deep Gallery)
+
+9. **Pelle di Scorie e Pietra:** DR 5/adamantine (continuous)
+2. **Pugno Frana (3/day, Su):** Standard attack, +4d6 bludgeoning, target prone (Ref DC 19), adjacent must Balance DC 15 or prone
+3. **Ancoraggio della Montagna (2/day, Su):** Immediate; immune to forced movement, +4 saves vs displacement
+4. **Tremore del Forgiatore (1/day, Su):** Standard; 6m AoE: prone + 2d6 bludgeoning (Ref DC 18)
+5. **Vista della Galleria:** Auto-perceive cracks, traps, secret passages in stone within 9m; +4 checks
+
+### Combined Powers (Fire + Earth)
+
+14. **Martello di Fuoco e Pietra:** On confirmed critical with Power Attack unarmed: free Colpi del Fuoco OR Pugno Frana effect (no charge spent)
+2. **Cammino nella Tempesta di Macerie:** Always stable on stone/rubble difficult terrain; +2 saves vs Bull Rush/Trip on rock
+
+### Total Value
+
+- Fire Phase: ~60,400 gp
+- Full (Fire + Earth): ~94,900 gp
+
+---
+
+## ARTIFACT 5: COLLANA DEI SEMI ETERNI (Necklace of Eternal Seeds)
+
+**Type:** Artifact Necklace
+**Slot:** Neck
+**Owner:** Hella Oakenshield (Dwarf Ranger 1 / Druid 12, Level 13 post-resurrection, Treant Hybrid)
+**Source Files:** `07_il Portale Della Forgia Eterna/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`, `PortaleForgia-P3B-ResurrezioneHella-RICALIBRATO.md`
+
+### Description
+
+Created during Hella's resurrection ritual from 3 Treant seeds that germinated and fused with her body through Moradin's divine intervention. The seeds absorbed the sacrifices of each party member (Thorik's blood/HP, Tordek's Ki/XP, Artemis's invocation slot) and formed a living torc of wood and metal.
+
+### Stats
+
+- **Slot:** Neck (Artifact)
+- **Origin:** Resurrection ritual in the Sala della Forgia Eterna
+
+### Powers
+
+1. **Saggezza della Terra:** +4 Wisdom (Enhancement)
+2. **Armatura Naturale:** +3 Natural AC
+3. **Avatar della Radice (1/day):** Transform into Huge Treant/Dwarf hybrid for 10 rounds (+8 STR, reach, slam attacks)
+4. **Evocazione dei Guardiani (3/day):** Summon an Adamantine Treant (see below). Standard action, lasts 1 hour. Max 1 active; or 3 together as "Nova" (destroys necklace for 1 month)
+
+### Adamantine Treant (Summoned)
+
+- **Size:** Large (Construct/Plant)
+- **HP:** 90 (DR 10/Adamantine)
+- **AC:** 24 (-1 size, +15 natural)
+- **Speed:** 30 ft
+- **Attacks:** 2 Slams +18 (2d8+9)
+- **Siegebreaker:** Double damage to objects/structures (ignores hardness <20)
+- **Adamantine Traits:** Attacks count as adamantine for DR
+
+### Hella's Resurrection Gifts (Permanent, from party sacrifices)
+
+- **Pelle di Adamantio:** DR 3/- (from Thorik's blood sacrifice)
+- **Timeless Body:** Immunity to poison, disease, aging (from Tordek's Ki sacrifice)
+- **Spontaneous Rebirth (1/day):** Auto-stabilize + temp HP when reaching 0 HP (from Artemis's chaos spark)
+
+### Treant Hybrid Template (Permanent Transformation)
+
+- **Dual Type:** Humanoid (Dwarf) / Plant (Treant Hybrid)
+- **Fire Vulnerability:** Fire damage ×1.5
+- **Cold Resistance 10**
+- **Regeneration 1:** 1 HP/round while touching natural earth/stone (negated by fire damage)
+- **Plant Empathy:** Wild Empathy works on plants; +4 to plant creature interactions
+- **Photosynthesis:** 1 hour in sunlight = heal 2d8 HP (1/day); half normal food requirement
+- **Root Anchoring (1/day, Sp):** Standard action; immune to trip/bull rush/push for 5 rounds; rooted in place
+
+---
+
+## ARTIFACT 6: CUORE DI MORADIN (Heart of Moradin)
+
+**Type:** Artifact (Divine Relic)
+**Slot:** None (altar-bound, activatable)
+**Owner:** The Corona di Adamantio set (functionally Thorik's)
+**Source Files:** `07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md`, Sala della Forgia Eterna sections
+
+### Description
+An ancient mithral altar hiding the **Cuore di Moradin** (Heart of Moradin) — a divine relic concealed inside a perfectly sealed reliquary at the center of the **Sala della Forgia Eterna** (hub room in the Eternal Forge complex). The Heart is not worn but activated through ritual at the Altare. It is functionally part of the Corona di Adamantio artifact set, serving as the catalyst that enables Hella's resurrection and bridges the gap between the gem activation rituals.
+
+### Activation
+Activated via the **Rituale Cuore di Moradin** (performed between Fire Plane Part 3 and Earth Plane Part 4, in the Sala). This is a separate ritual from the gem activations.
+
+### Powers
+1. **Resurrection Enabler:** When activated, the Cuore di Moradin makes the resurrection of a recently deceased ally possible within the Sala della Forgia Eterna — even without standard Raise Dead/Resurrection spells — at the cost of permanent sacrifices from each party member.
+2. **Moradin's Presence:** While active, the Cuore radiates Moradin's divine aura throughout the Sala, granting:
+   - +2 sacred bonus to all saves within the Sala
+   - Consecrate effect (as spell) on the Sala floor
+   - Communication with Moradin's divine will (visions, guidance)
+3. **Gem Synergy Catalyst:** The Cuore must be active before the Temporal Portal (Part 5) can open — it provides the divine energy bridge between the Topaz and Emerald gems.
+
+### Status
+✅ ACTIVATED (Rituale Cuore di Moradin completed between Parts 3 and 4)
+
+### Relationship to Other Artifacts
+- Part of the Corona di Adamantio set (functionally)
+- Required for Hella's resurrection (prerequisite)
+- Required for Temporal Portal opening (Part 5)
+- NOT a wearable item — altar-bound divine relic
+
+---
+
+## NARRATIVE CONNECTIONS
+
+### Il Collezionista's Artifact Trade
+The Rakshasa known as **Il Collezionista**, who escaped the Minotaur Lair encounter (Pre-Arc 01), has since formed an alliance with Sonjak's drow faction. He provides **strange and pure evil artifacts** to the drow — possibly the same artifacts the drow seek during the Night of the Drow assault on Rethmar's temple (Arc 09, Phase 0). His basilisk-powered macabre statue trade continues to fund these operations.
+
+### Therysol's Origin
+The NPC **Therysol** (found in the Fire Plane, Arc 07) was originally a slave sold — with her brother — by drow traders affiliated with Il Collezionista's guild to salamanders in the Fire Elemental Plane. Her brother died and left a crystal that fused with Therysol, transforming her into an unicum. She hates salamanders and the elemental plane. After helping the party in the Fire Node and guarding Hella's corpse during the resurrection, Therysol descends deeper underground seeking revenge against Il Collezionista's drow guild. She may appear as an NPC ally during the Notte dei Drow at Rethmar (Arc 09, Phase 0).
+
+---
+
+## ARTIFACT 7: ORBE DELLE OTTO PORTE (Orb of Eight Gates)
+
+**Owner:** Tordek Durinheart (scenic — used during Dauth Tournament)
+**Type:** Wondrous Item (unique, scenic artifact)
+**Aura:** Strong transmutation + necromancy | **CL:** 20th
+**Source:** `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-OTTO-PORTE*.md`
+
+### Description
+
+A mystical orb that channels the user's life force through progressively dangerous "chakra gates" (inspired by Naruto's Eight Gates). Each gate temporarily unlocks superhuman martial power at the cost of the user's body. The artifact is **scenic** — it exists to create dramatic moments in the Tournament arc and is not a standard lootable item.
+
+### Mechanics (D&D 3.5)
+
+**Activation:** Free action (one gate per round)
+**Effect per gate:**
+- +2 morale bonus to STR and DEX
+- +2 morale bonus to all saving throws
+- Duration: 1 round per gate
+
+**Cost per gate:**
+- 1d4 temporary CON damage (cumulative)
+- Fatigued condition after all gates close
+- Concentration check DC 20 + number of gates already opened to activate safely
+- Failed check: gate opens but user is Stunned for 1 round
+
+**Gate Progression:**
+
+| Gate | Cumulative Bonus | Cumulative CON Drain (avg) | Risk |
+|---|---|---|---|
+| 1st | +2 STR/DEX, +2 saves | ~2.5 | Low |
+| 2nd | +4 STR/DEX, +4 saves | ~5 | Moderate |
+| 3rd | +6 STR/DEX, +6 saves | ~7.5 | High |
+| 4th | +8 STR/DEX, +8 saves | ~10 | Very High |
+| 5th | +10 STR/DEX, +10 saves | ~12.5 | Extreme |
+| 6th | +12 STR/DEX, +12 saves | ~15 | Near-fatal |
+| 7th | +14 STR/DEX, +14 saves | ~17.5 | **LETHAL** |
+| 8th (Final) | +16 STR/DEX, +16 saves | — | **DISINTEGRATION** |
+
+**Collapse:** When total CON drain reaches or exceeds current CON score, the user collapses (unconscious, dying).
+**8th Gate:** If opened, the user gains godlike power for 1 round, then their body **disintegrates** (no save, no resurrection short of *Wish* + *True Resurrection*). This is Tordek's ultimate sacrifice option.
+
+### Narrative Role
+
+- Creates Dragon Ball / Naruto-style escalating tension in tournament fights
+- Each gate opening is a dramatic moment (read-aloud text, physical transformation description)
+- **Tordek's Chakra Enlightenment:** Through the tournament and Orb interaction, Tordek gains permanent martial spiritual awareness — 7 soul gates of jujitsu combat. The powers come with physical costs and strain; the final power leads to disintegration if used.
+
+---
+
+## ARTIFACT SYNERGY CHART
+
+All synergies activate when artifact bearers are within 30 ft (9m) of each other.
+
+| Combination | Trigger | Effect | Frequency |
+|---|---|---|---|
+| **Corona + Ring** (Passive) | Within 10 ft | +1 Dodge AC vs Lawful | Constant |
+| **Corona + Ring** (Active) | Swift action | Planar Vision + Dispel Illusion 30 ft | 1/day |
+| **Aegis + Ring** (Dark Dawn Strike) | Coordinated same-round | +2 attack, +2d6 sacred to Thorik | 1/day |
+| **Divine Trinity** (Crown+Ring+Bracieri) | All 3 spend Move action | Fear/Charm immunity, +4 sacred saves, +2 sacred AC, Good/Lawful DR bypass, Aura of Awe DC 20 | 1/day, 5 rounds |
+
+---
+
+## REJECTED/ALTERNATE PATHS
+
+### Lord of Sun and Shadow (Custom Prestige Class — REJECTED)
+
+**Offered to:** Artemis (Warlock)
+**Offered by:** Lathander and Mask (dual divine patronage)
+**Source:** `PG/Artefatti/Artefatti-Pg/PrestigeClass/lord_sun_shadow/`
+**Outcome:** Artemis **rejected** this path, choosing to remain a warlock and forge his own destiny. The Ring of Chaotic Illumination evolved as a result, absorbing the divine essences differently.

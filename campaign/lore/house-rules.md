@@ -88,7 +88,7 @@ Tiamat crusade, coordinating with the Cult of the Dragon for a beachhead in the 
 - **Contested items**: Roll-off (d20 + relevant ability mod); winner gets +1 priority on next
   contested roll, so no one always wins
 - **Crafting**: Allowed between sessions at standard time/cost; must have downtime narrative
-- **NPC shops in Rethmar**: See `campaign/lore/cressfall-shops.md` when created
+- **NPC shops in Rethmar**: See `campaign/lore/rethmar-shops.md` when created
 
 ---
 

@@ -57,6 +57,16 @@ Secondary sources: **Forgotten Realms Wiki** (fandom.com/wiki/Forgotten_Realms_W
 | **Branching quests + DM toolkit** — quest trees, artifact chains, villain expansion, faction tracker | `references/dm-expansion-toolkit.md` |
 | **All sources + URLs** — dndtools.one, realmshelps.net, orbitalflower Wayback patterns | `references/resources.md` |
 
+#### Campaign-Specific (RumblingStone)
+
+| Question domain | Load file |
+|---|---|
+| **Party composition** — Thorik, Tordek, Hella, Artemis, Rumbling Stone group, PCs | `references/campaign-party.md` |
+| **Campaign artifacts** — Aegis Fang, Corona di Adamantio, Ring of Chaotic Illumination, Bracieri Gemelli, Collana dei Semi Eterni, Cuore di Moradin | `references/campaign-artifacts.md` |
+| **Campaign story arcs** — Timeline, what happened, what's next, current state, arc index, villain/ally tracker | `references/campaign-story-arcs.md` |
+| **Campaign factions** — Il Collezionista, Sonjak, Githyanki, Circle of Eight, Hammerfist | `references/fr-factions.md` (campaign section) |
+| **Underdark geography** — Eternal Forge, dungeon chain, Fire/Earth/Temporal planes | `references/fr-cannath-vale.md` (Underdark section) |
+
 #### Decision Logic for FR Questions
 - "Who is the god of X?" → `fr-deities-complete.md`
 - "What domains does deity X grant?" → `fr-deities-complete.md`
@@ -71,6 +81,13 @@ Secondary sources: **Forgotten Realms Wiki** (fandom.com/wiki/Forgotten_Realms_W
 - "Generate a monster image / token" → `dm-expansion-toolkit.md`
 - "Give me a quest for [artifact] / [villain]" → `dm-expansion-toolkit.md`
 - "How do I use dndtools.one / realmshelps.net / the WotC archive?" → `resources.md`
+- "Who is Thorik / Tordek / Hella / Artemis?" → `campaign-party.md`
+- "What does the Corona / Ring / Bracieri / Collana do?" → `campaign-artifacts.md`
+- "What happened at the Mine / Fungi Tower / Eternal Forge?" → `fr-cannath-vale.md` (Underdark)
+- "Who is Il Collezionista / Sonjak?" → `fr-factions.md` (campaign section)
+- "What arc is the party in?" / "What's next?" / "Campaign timeline" → `campaign-story-arcs.md`
+- "What happened after Drellin's Ferry / Hammerfist / the Underdark?" → `campaign-story-arcs.md`
+- "Who is Therysol / Zalkatar?" → `campaign-party.md` (NPCs section)
 
 ---
 

@@ -2,10 +2,10 @@
 
 ## MAP ATTRIBUTION
 
-**Map by**: Arne Haschen (antariuk@gmail.com)
+**Map by**: Arne Haschen (<antariuk@gmail.com>)
 **Based on**: Elsir Vale map by Mike Schley, *Red Hand of Doom* (Jacobs & Wyatt, 2006)
 **Tools**: Adobe Photoshop CS3; notebook; pencils
-**Source**: https://cdna.artstation.com/p/assets/images/images/001/044/588/large/arne-haschen-red-hand-of-doom-cannath-vale-map-gm.jpg
+**Source**: <https://cdna.artstation.com/p/assets/images/images/001/044/588/large/arne-haschen-red-hand-of-doom-cannath-vale-map-gm.jpg>
 **Parchment texture**: coyotemax.deviantart.com
 
 Two versions: **GM map** (shows Vraath Keep, Ghostlord's Lair, Fane of Tiamat, Lhesper)
@@ -59,7 +59,7 @@ All names below are extracted directly from the GM map image.
 | Name on Map | = RHoD Original | Role | Notes |
 |---|---|---|---|
 | **Lhesper** | Rhest | Ruined flooded city | N of Lake Lhespen; in Lhespenbog; Wyrmlord Koth's base |
-| **Kormul** | *(Khormul — present!)* | Town | Center-west; **IS on map** despite some sources saying removed |
+| **Kormul** | *(Khormul — present and destroyed by Red Hand Army!)* | Town | Center-west; **IS on map** despite some sources saying removed |
 | **Skull Gorge** | Skull Gorge Bridge | Adventure site | On The Lhescreek; bridge destruction Chapter 1 climax |
 | **Vraath Keep** | Vraath Keep | Ruined keep | SW of Skull Gorge; name **retained** |
 | **Fane of Tiamat** | Fane of Tiamat | Temple | Far west in Wyrmbones; name **retained**; final dungeon |
@@ -71,7 +71,7 @@ All names below are extracted directly from the GM map image.
 
 | Name on Map | = RHoD Original | Notes |
 |---|---|---|
-| **Rethmar** | Brindol | MAIN CITY; center of the vale; Lord Jarmaath's seat |
+| **Rethmar** | Brindol (RHoD original) | MAIN CITY; center of the vale; Lord Jarmaath's seat |
 | **Cannathgate** | Dennovar | Eastern gateway; largest city after Rethmar |
 | **Talar** | Talar | Center, west of Rethmar; river namesake village |
 | **Drellin's Ferry** | Drellin's Ferry | *(square; listed above)* |
@@ -130,16 +130,19 @@ Always use the correct map names below.
 ## GEOGRAPHIC NOTES FOR DM USE
 
 ### Position in Faerûn
+
 Cannath Vale sits in the region known as **Channath Vale / Lhespenar** in the FRCS and
 Shining South sourcebooks — south of the Shining Plains, north of the Shaar proper.
 The vale is bounded by The Wyrmbones (west), Rathgaunt Hills (NE), The North Wall (south).
 
 ### The Shaar
+
 Appears on both the NW and NE edges of the map. The vale effectively sits as a settled
 pocket within the broader Shaar grassland belt. The **Shaar River** drains north out of
 the map; the **Talar River** drains south into the Bandit Wastes.
 
 ### Kormul — Important
+
 Kormul is labeled on the map as a square (significant settlement) west of Skull Gorge,
 in the foothills of The Wyrmbones near the Dwarfroad. It does not appear in the original
 RHoD module text — it comes from the FR map's pre-existing Khormul location. The DM
@@ -147,27 +150,31 @@ should decide: is Kormul abandoned ruins (as in FR history), a struggling fronti
 or an active settlement? Its position on the Dwarfroad makes it a natural waystation.
 
 ### The Swagdar and Brown Hills
+
 These appear on the eastern and southeastern edge of the map respectively. Both are FR
 canonical region names from the Shining South era. The Swagdar is a dry, sparsely
 populated region east of Cannathgate. Brown Hills are foothills of The North Wall.
 
 ### Shaarcah Forest — Spelling
+
 The map clearly spells this **Shaarcah** (not "Shaareach" or "Shaareach Forest").
 This is the forest in the center of the vale; the Tiri Kitor elves live here in RHoD.
 In this Cannath Vale adaptation, they are Sy'Tel'Quessir (wild elves) worshipping
 Rillifane Rallathil.
 
 ### The Witchstream
+
 Flows through Shaarcah Forest east-to-west. The village of Witchcross sits at its ford.
 
 ---
 
 ## WEATHER IN CANNATH VALE
 
-Live weather tool: https://www.realmshelps.net/faerun/weather.shtml
+Live weather tool: <https://www.realmshelps.net/faerun/weather.shtml>
 Use **Dalelands** or **Shining South** region as proxy.
 
 Campaign season (Flamerule/Eleasis, 1372 DR):
+
 - Temperature: 22–32°C by day; fog in Lhespenbog mornings (Spot +4 DC until midmorning)
 - Wyrmbones weather: Afternoon storms 30% chance; thunder heard nightly from that range
 - Shaar winds: Hot, dry southeastern winds; dust in the Bandit Wastes
@@ -188,3 +195,113 @@ Campaign season (Flamerule/Eleasis, 1372 DR):
 | Nimon Gap → Rethmar | ~20 miles | Dawn Way | ~1 day |
 
 *Mounted: halve travel time on roads. Lhespenbog terrain: ×3 on foot, ×4 mounted.*
+
+---
+
+## UNDERDARK ACCESS & DEEP LOCATIONS
+
+The RumblingStone campaign includes extensive Underdark content beneath Hammerfist Holds.
+These locations are accessed from **The North Wall** mountains (Hammerfist area).
+
+### Dungeon Chain (Sequential, Arcs 01–07)
+
+The party descended through these locations in order, connected by passages and portals:
+
+```
+[Hammerfist Holds (Surface)]
+        ↓
+[Minotaur Lair — Pre-Arc 01, unnumbered]
+  └── First Underdark area below Hammerfist
+  └── Maur (Underdark native, CR ~10, defeated)
+  └── Il Collezionista (Rakshasa + basilisk, ESCAPED)
+  └── Cristal Warriors (from Underdark p.93)
+  └── Adapted from Expedition to Undermountain (p.165) and Underdark sourcebook
+        ↓
+[01_LaMiniera — Ancient Mine]
+  └── Grell Necromancer lair, Grell Patriarch
+  └── Cristal Warriors also encountered in early mine rooms
+        ↓
+[02_scaladossa-abbattor-funghi — Neverlight Grove (Adapted)]
+  └── Fungi Tower (2+ levels): drow-modified myconid research lab
+  └── Web spider infestations, drow aberration researchers
+  └── Demonweb Pits creatures (Expedition to the Demonweb Pits p.67)
+  └── Connection to Sonjak's drow faction (undiscovered by party)
+  └── Portal to deeper levels (used by escaping drow)
+        ↓
+[03_la Cittadella — Abandoned Citadel]
+  └── Moradin Temple with Undead Beholder
+  └── Runic frescoes (Corona di Adamantio clues)
+        ↓
+[04_tomba_di_Belkram — Belkram's Tomb]
+  └── Adapted from Expedition to Undermountain, Belkram's Fall
+  └── Xorn encounters, Gelatinous Cube, gargoyle turrets
+  └── Illithid worm encounter → Artemis cerebromorphosis crisis
+  └── Ring of Chaotic Illumination first major activation
+        ↓
+[05_aa-stanza-runica — Runic Room]
+  └── Puzzle room with ancient dwarven runes
+        ↓
+[06_Stanza-corona-di-adamantio — Crown Chamber]
+  └── Boss battle for the Corona di Adamantio
+  └── Hella Oakenshield dies here
+  └── Party opens portal to Eternal Forge
+        ↓
+[07_il Portale Della Forgia Eterna — Eternal Forge Portal]
+  └── Sala della Forgia Eterna (hub room)
+  └── Altare del Cuore di Moradin (Cuore Moradin artifact)
+  └── Portal to Fire Plane (Part 3)
+  └── Portal to Earth Plane (Part 4)
+  └── Temporal Portal (Part 5, requires 2+ gems)
+  └── Hella Resurrection Ritual (Part 3B)
+```
+
+### The Eternal Forge — Planar Geography
+
+**Sala della Forgia Eterna (Hub)**
+Central chamber in deep Underdark. Contains the Altare del Cuore di Moradin — an ancient
+mithral altar hiding the Cuore di Moradin (Heart of Moradin) artifact inside a perfectly
+concealed reliquary. This room connects to elemental planes via portals.
+
+**Fire Plane Node (Part 3)**
+Accessed via fire portal from Sala. Standard Fire Plane environmental rules apply.
+Contains:
+
+- Elemental fire combats
+- Rituale Gemma del Tempo → activates Corona's Topaz gem
+- Location where Tordek found Bracieri Gemelli di Moradin (Fire Phase)
+- Location where party found NPC Therysol
+
+**Earth Plane Node (Part 4)**
+Accessed via earth portal from Sala. Features:
+
+- Forest of Living Crystal (current party location)
+- Mithral Golem encounter (Tordek's Earth trial)
+- Rituale Gemma Terra → activates Corona's Emerald gem
+- Tordek's Bracieri Earth awakening completion
+
+**Temporal Void (Part 5)**
+Requires Topaz + Emerald gems activated. Opens portal to **Year -1000 DR**.
+Party travels to ancient Hammerfist to fight in a historical battle.
+Ruby gem activates at dawn during this temporal battle.
+
+### Neverlight Grove Adaptation Notes
+
+The Neverlight Grove content is adapted from **Out of the Abyss** (D&D 5e) converted to 3.5:
+- The giant mushroom tower and its crazed inhabitants are retained
+- The drow experiments replace the 5e demon influence with **Lolth-sanctioned fleshcrafting**
+- Creatures from **Expedition to the Demonweb Pits** (p.67) are used by the drow researchers
+- Sonjak (Drow Matrona) and her researchers occupy the upper levels
+- Il Collezionista (Rakshasa) operated from the minotaur lair area nearby (Pre-Arc 01)
+- Portal in the fungi tower connects to the deeper citadel levels
+
+### Key Underdark Villains
+
+| Villain | Race/Type | CR | Status | Location |
+|---|---|---|---|---|
+| Grell Patriarch | Aberration | ~8 | Defeated | 01_LaMiniera |
+| Il Collezionista | Rakshasa | ~12 | **ESCAPED** | Unknown — allied with drow, provides evil artifacts (Pre-01) |
+| Maur | Underdark native | ~10 | Defeated | Minotaur Lair (Pre-Arc 01) |
+| Cristal Warriors | Construct/Elemental | ~7 | Defeated | Minotaur Lair + 01_LaMiniera (from *Underdark* p.93) |
+| Sonjak | Drow Cleric Matrona | ~14 | Active | Underdark/Surface ops |
+| Undead Beholder | Undead | ~13 | Defeated | 03_la Cittadella |
+| Zalkatar | Illithid Warlock Drow | 13 | Active | Invisible Tower (Arc 09-P2A) |

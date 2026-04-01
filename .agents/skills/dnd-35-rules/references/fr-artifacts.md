@@ -182,3 +182,26 @@ When creating custom items for the RumblingStone campaign, consider:
 - Tiamat cult items: Black/red coloration; fire or shadow attuned
 
 **Pricing reference**: See `references/items.md` for standard pricing formulas.
+
+---
+
+## CAMPAIGN-SPECIFIC ARTIFACTS (RumblingStone)
+
+The RumblingStone campaign has **5 custom PC artifacts** with full stat blocks and evolving powers.
+For complete stats, synergies, and activation details, see → `references/campaign-artifacts.md`
+
+### Quick Reference
+
+| Artifact | Owner | Type | Est. Value | Status |
+|---|---|---|---|---|
+| **Aegis Fang** | Thorik (Fighter) | Dwarven Waraxe (evolving) | ~50,000 gp (pre-awakening) | Bonded, pre-full awakening |
+| **Corona di Adamantio** | Thorik (Fighter) | Crown, 3 sacred gems | Priceless (CL 20 artifact) | 2/3 gems activated |
+| **Ring of Chaotic Illumination (Reforged)** | Artemis (Warlock) | Ring, dual divine essence | 163,400 gp | Fully reforged |
+| **Bracieri Gemelli di Moradin** | Tordek (Monk/Fighter) | Gauntlets, sentient | ~94,900 gp (complete) | Fire done, Earth in progress |
+| **Collana dei Semi Eterni** | Hella (Druid) | Necklace, formed at resurrection | Priceless | Active |
+
+### Key Interactions
+- **Aegis Fang + Corona:** Weapon fully awakens when all Crown rituals complete
+- **Ring + Corona:** Passive dodges and active planar vision
+- **Divine Trinity (Crown + Ring + Bracieri):** 5-round party buff with fear/charm immunity, sacred saves, Aura of Awe
+- All artifacts resonate with Moradin's divine essence through the Eternal Forge

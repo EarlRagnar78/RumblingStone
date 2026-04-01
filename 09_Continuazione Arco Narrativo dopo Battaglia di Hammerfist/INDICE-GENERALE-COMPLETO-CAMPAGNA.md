@@ -1,299 +1,510 @@
-# INDICE GENERALE COMPLETO - ARCO POST-HAMMERFIST CAMPAGNA
-## La Mano Rossa Avanza: Quest Personali + Missioni Secondarie + Battaglia Finale Brindol
-## PG Livello 13 | Timeline Day 19-42 | Red Hand of Doom Integration
+# INDICE GENERALE COMPLETO — ARCO POST-HAMMERFIST CAMPAGNA
+
+## La Mano Rossa Avanza: Quest Personali + Missioni Secondarie + Battaglia Finale Rethmar
+
+## PG Livello 13 | Timeline Day 19–42 | Red Hand of Doom Integration
+
+---
+
+## 🗂️ FILE REFERENCE
+
+This directory contains **74 markdown files** + **6 image files**.
+All location names use Cannath Vale equivalents (Rethmar, Shaarcah Forest, etc.).
+See `skills/dnd-35-rules/references/fr-cannath-vale.md` for the full RHoD→Cannath Vale mapping.
+
+**Legend:** ✅ = Content complete | 📝 = Empty placeholder (TODO) | ⚠️ = Needs integration
 
 ---
 
 ## 📋 STRUTTURA CAMPAGNA COMPLETA
 
-### PARTE 0: SETUP & TIMELINE
-- **File:** Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md
-- Timeline Red Hand of Doom (Day 19-42)
-- Mappa Elsir Vale hex
+### PARTE 0: SETUP, TIMELINE & CONTESTO
+
+| File | Contenuto |
+|---|---|
+| `inizio.md` | Brainstorming iniziale, schema arco narrativo, struttura 4 atti, missioni parallele |
+| `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md` | Timeline Red Hand of Doom (Day 19–42), mappa hex Cannath Vale, contesto Hammerfist (vittoria PG, fortezza danneggiata), sistema urgenza |
+
+**Contenuti Setup:**
+
+- Timeline Red Hand of Doom (Day 19–42)
+- Mappa Cannath Vale hex
 - Contesto Hammerfist (vittoria PG, fortezza danneggiata)
 - Sistema urgenza: devastazione orda progressiva
 - Scelte PG: quest personali vs missioni secondarie
 
 ---
 
-## PARTE 1: QUEST PERSONALE - HELLAS (Druida)
-### ✅ COMPLETATA (3 File)
+## PARTE 1: QUEST PERSONALE — HELLA (Druida)
+
+### ✅ COMPLETATA (7 File + Supplemento + Errata)
 
 #### PARTE 1A: Viaggio e Primi Incontri
-- **File:** Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md
-- **Durata:** Day 20 (8 ore)
-- **Contenuti:**
-  - Timeline corretta (Day 19 start)
-  - Mappa hex Witchwood
-  - Viaggio Cerchio Sacro (30km)
-  - Incontro Refugees (EL 6 roleplay)
-  - Combattimento Drow Pyromancers (EL 9) - Battle stats completi
-  - Interazioni artefatti: Aegis Fang, Corona, Ring, Collana Semi
-  - Mappa tattica sentiero 80m×40m (scala 1.5m/sq)
+
+| File | Tipo |
+|---|---|
+| `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md` | Testo + Timeline |
+| `Arco-Post-Hammerfist-P1-MAPPE-COMPLETO.md` | Mappe regionali |
+
+**Contenuti:**
+
+- Timeline corretta (Day 19 start)
+- Mappa hex Shaarcah Forest
+- Viaggio Cerchio Sacro (30km)
+- Incontro Refugees (EL 6 roleplay)
+- Combattimento Drow Pyromancers (EL 9) — battle stats completi
+- Interazioni artefatti: Aegis Fang, Corona, Ring, Collana Semi
+- Mappa tattica sentiero 80m×40m (scala 1.5m/sq)
 
 #### PARTE 1B: Cerchio Sacro e Treant Boss
-- **File:** Arco-Post-Hammerfist-P1B-Cerchio-Treant-COMPLETO.md
-- **Durata:** Day 20 sera (2-3 ore)
-- **Contenuti:**
-  - Mappa hex regionale Witchwood completa
-  - Mappa tattica Cerchio Sacro 60m diameter (40×40 grid)
-  - Boss: Treant Corrotto (CR 11) - Stats completi
-  - Sistema purificazione (3 outcome)
-  - Summons: Fire Elementals, Animated Trees
-  - Interazioni artefatti Ultimate abilities
-  - Scale sempre specificate 1.5m/quadrato
+
+| File | Tipo |
+|---|---|
+| `Arco-Post-Hammerfist-P1B-Cerchio-Treant-COMPLETO.md` | Testo principale |
+| `Arco-Post-Hammerfist-P1B-Cerchio-Treant-COMPLETO-maps.md` | Mappe tattiche |
+
+**Contenuti:**
+
+- Mappa hex regionale Shaarcah Forest completa
+- Mappa tattica Cerchio Sacro 60m diameter (40×40 grid)
+- Boss: Treant Corrotto (CR 11) — Stats completi
+- Sistema purificazione (3 outcome)
+- Summons: Fire Elementals, Animated Trees
+- Interazioni artefatti Ultimate abilities
+- Scale sempre specificate 1.5m/quadrato
 
 #### PARTE 1C: Rituale Trasformazione (3 Fasi + 3 Ondate)
-- **File:** Arco-Post-Hammerfist-P1C-Rituale-COMPLETO-SCALE.md
-- **Durata:** Day 21 mattina (3 ore)
-- **Contenuti:**
-  - Collana Semi Treant: piantare Seedlings
-  - FASE 1: Purificazione (15 min) + Ondata 1 Drow Raiders (EL 9)
-  - FASE 2: Evocazione Elementale (15 min) + Ondata 2 Elite Strike (EL 11)
-    - Drow Assassin (Death Attack!)
-    - 2 Drow Clerics (Flame Strike spam)
-    - 4 Drow Veterans
-  - FASE 3: Fusione (15 min) + Ondata 3 Final Assault (EL 12)
-    - Wyrmlord Lieutenant (CR 12 Boss)
-    - Greater Fire Elemental
-    - 2 Ogre Brutes
-    - 10 Drow Warriors
-  - Trasformazione Hellas: Elementale Natura completo (statistiche)
-  - Interazioni Ultimate artefatti (Aegis Fang Intercept, Corona Sanctuary, Ring Barrier)
-  - Mappe tattiche complete tutte fasi
+
+| File | Tipo |
+|---|---|
+| `Arco-Post-Hammerfist-P1C-Rituale-COMPLETO-SCALE.md` | Testo principale + scale |
+| `Arco-Post-Hammerfist-P1C-Rituale-COMPLETO-SCALE-fight.md` | Dettagli combattimento |
+
+**Contenuti:**
+
+- Collana Semi Treant: piantare Seedlings
+- FASE 1: Purificazione (15 min) + Ondata 1 Drow Raiders (EL 9)
+- FASE 2: Evocazione Elementale (15 min) + Ondata 2 Elite Strike (EL 11)
+  - Drow Assassin (Death Attack!)
+  - 2 Drow Clerics (Flame Strike spam)
+  - 4 Drow Veterans
+- FASE 3: Fusione (15 min) + Ondata 3 Final Assault (EL 12)
+  - Wyrmlord Lieutenant (CR 12 Boss)
+  - Greater Fire Elemental
+  - 2 Ogre Brutes
+  - 10 Drow Warriors
+- Trasformazione Hella: Elementale Natura completo (statistiche)
+- Interazioni Ultimate artefatti (Aegis Fang Intercept, Corona Sanctuary, Ring Barrier)
+- Mappe tattiche complete tutte fasi
 
 #### SUPPLEMENTO: Campi Drow Sabotaggio
-- **File:** SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md
-- **Contenuti:**
-  - Legenda universale simboli mappe
-  - Campo Drow 1: Burning Ops (80m×60m, 30 drow, EL 12)
-  - Campo Drow 2: Forward Base (120m×80m, 43 forze, EL 14)
-  - Campo Drow 3: Scout Hidden (60m×40m, 25 elite, EL 11)
-  - Tattiche sabotaggio dettagliate
-  - Consequences riduzione orda
+
+| File | Tipo |
+|---|---|
+| `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md` | Mappe + dettagli tattici |
+| `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO-Description.md` | Descrizioni narrative |
+
+**Contenuti:**
+
+- Legenda universale simboli mappe
+- Campo Drow 1: Burning Ops (80m×60m, 30 drow, EL 12)
+- Campo Drow 2: Forward Base (120m×80m, 43 forze, EL 14)
+- Campo Drow 3: Scout Hidden (60m×40m, 25 elite, EL 11)
+- Tattiche sabotaggio dettagliate
+- Consequences riduzione orda
+
+#### QUEST HELLAS — File Originale & Errata
+
+| File | Tipo |
+|---|---|
+| `Quest 1 – Druida Hellas: Il Cerchio Sacro della Foresta.md` | Versione originale quest |
+| `ERRATA-PARTE1-Quest-Hellas-35-Verification.md` | Correzioni 3.5 SRD — stat blocks, action economy (bonus action→swift), Touch/FF AC, BAB/Grapple |
 
 ---
 
-## PARTE 2: QUEST PERSONALI ARTEMIS & TORDEK + MISSIONI SECONDARIE
+## PARTE 2: QUEST PERSONALI — ARTEMIS & TORDEK
 
-### PARTE 2A: Quest Artemis Warlock - Torre Invisibile
-- **File:** Arco-Post-Hammerfist-P2A-Quest-Artemis-Torre-COMPLETO.md
-- **Durata:** 2-3 sessioni (Day 21-23)
-- **Contenuti:**
-  - Trigger: Ring Chaotic Illumination richiama
-  - Location: Torre Invisibile Old North Road
-  - Boss: Illithid Warlock Drow antico (CR 13)
-  - Struttura: 5 Livelli torre + golem difensori
-  - Enigmi arcani + portali dimensionali
-  - Risveglio poteri Ring: Ultimate Chaos abilities
-  - Conseguenze battaglia finale: Alleati illithid rinnegati?
+### PARTE 2A: Quest Artemis Warlock — Torre Invisibile (4 Livelli + Boss)
 
-### PARTE 2B: Quest Tordek Monaco - Torneo Epico Dauth
-- **File:** Arco-Post-Hammerfist-P2B-Quest-Tordek-Torneo-COMPLETO.md
-- **Durata:** 2-3 sessioni (Day 22-24)
-- **Contenuti:**
-  - Struttura Dragon Ball style: 16 combattenti, bracket eliminatorio
-  - Location: Arena Dauth (mappa 60m×60m)
-  - 4 Round combattimenti 1v1 (opponents CR 11-13)
-  - Finale improvviso: Ghitianki attack! (draghi rossi, artefatto Gith)
-  - Prove abilità marziali (equilibrio, resistenza, kata)
-  - Conseguenze: Fama, alleanze politiche, artefatti combattimento
+**Durata:** 2–3 sessioni (Day 21–23)
 
-### PARTE 2C: Missioni Secondarie Red Hand - Brevi (1 sessione)
-- **File:** Arco-Post-Hammerfist-P2C-Missioni-Brevi-RHoD.md
-- **Contenuti livellati liv. 13:**
-  - Easy Skirmish (pag 43) - EL 9 upgraded
-  - Dirty Rotten Looters (pag 43) - EL 8
-  - Mercenary Gold (pag 44) - EL 10
-  - The Not-so-Sick Spy (pag 44) - Roleplay/Investigation
-  - Barghest Reavers (pag 46) - EL 11
-  - Marked for Death (pag 46) - EL 10
-  - Goblin Raid (pag 37) - EL 9
-  - Chimera Attack (pag 38) - EL 11
-- Ogni missione: 2-4 ore gioco, ricompense, effetti su orda
+| File | Tipo | Livello Torre |
+|---|---|---|
+| `Arco-Post-Hammerfist-P2A-Torre-PARTE1.md` | Testo | Livello 1 — Foyer, specchi, sigilli |
+| `Arco-Post-Hammerfist-P2A-Torre-PARTE1-STATBLOCCHI.md` | Stat blocks | Livello 1 |
+| `Arco-Post-Hammerfist-P2A-Torre-PARTE1-MAPPE.md` | Mappe | Livello 1 |
+| `Arco-Post-Hammerfist-P2A-Torre-PARTE2-Livelli2-3.md` | Testo | Livelli 2–3 — Corridoi dimensionali |
+| `Arco-Post-Hammerfist-P2A-Torre-PARTE2-STATBLOCCHI-Livelli2-3.md` | Stat blocks | Livelli 2–3 |
+| `Arco-Post-Hammerfist-P2A-Torre-PARTE2-MAPPE-Livelli2-3.md` | Mappe | Livelli 2–3 |
+| `Arco-Post-Hammerfist-P2A-Torre-PARTE3-Livello4.md` | Testo | Livello 4 — Pre-boss |
+| `Arco-Post-Hammerfist-P2A-Torre-PARTE3-STATBLOCCHI-Livello4.md` | Stat blocks | Livello 4 |
+| `Arco-Post-Hammerfist-P2A-Torre-PARTE3-MAPPE-Livello4.md` | Mappe | Livello 4 |
+| `Arco-Post-Hammerfist-P2A-Torre-PARTE4-FINALE-Boss-Zalkatar.md` | Testo | Boss — Zalkatar fight |
+| `Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` | Stat blocks | Zalkatar (CR 13) |
+| `Arco-Post-Hammerfist-P2A-Torre-PARTE4-MAPPE-Boss-Zalkatar.md` | Mappe | Boss arena |
+
+**Contenuti:**
+
+- Trigger: Ring Chaotic Illumination richiama
+- Location: Torre Invisibile, Old North Road
+- Boss: **Zalkatar** — Illithid Warlock Drow antico (CR 13), previous Ring owner
+- Struttura: 4 Livelli torre + golem difensori
+- Enigmi arcani + portali dimensionali
+- Risveglio poteri Ring: Ultimate Chaos abilities
+- Ring +4 saves vs Zalkatar's psionics, purifica 1 spell
+- Se Zalkatar sconfitto: Ring reaches Ultimate Chaos form
+- Se Zalkatar escapes (Greater Teleport <10% HP): può apparire come wildcard a Rethmar
+
+**Immagine:** `tower_structure.png`
+
+### PARTE 2 — Rhest: Città Sommersa & Drago Nero
+
+**Source:** Red Hand pag 67–80 | **Durata:** 2–3 sessioni (Day 23–25)
+
+| File | Tipo | Status |
+|---|---|---|
+| `Arco-Post-Hammerfist-P2-RHEST-OVERVIEW.md` | Overview struttura quest | ✅ |
+| `Arco-Post-Hammerfist-P2-RHEST-FASE1-ARRIVO-BLACKFENS.md` | Fase 1 — Arrivo nelle Blackfens | ✅ |
+| `Arco-Post-Hammerfist-P2-RHEST-FASE2-PALUDE-RAZORFIEND.md` | Fase 2 — Palude e Razorfiend encounter | ✅ |
+| `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-RAZORFIEND-NIDO.md` | Encounter — Razorfiend nido | ✅ |
+| `Arco-Post-Hammerfist-P2-RHEST-FASE3-INTRUSIONE-EDIFICI-RHEST.md` | Fase 3 — Intrusione rovine sommerse | ✅ |
+| `Arco-Post-Hammerfist-P2-RHEST-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md` | Fase 4 — Boss: Wyrmlord Saarvith + Regiarax | ✅ |
+| `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | Stat blocks boss | ✅ |
+| `Arco-Post-Hammerfist-P2-RHEST-CONSEGUENZE-ESITI.md` | Conseguenze ed esiti | ✅ |
+
+**Contenuti pianificati (livellati liv. 13):**
+
+- Lake Rhest esplorazione (barche, underwater)
+- Città rovine sommerse (mappa hex acqua)
+- Razorfiend encounters nella palude
+- Wyrmlord Saarvith (CR 12 fighter/dragon disciple)
+- Boss Finale: **Regiarax** Adult Black Dragon (CR 13!)
+- Sabotaggio ponte/supply lines orda
+- Conseguenze: Rallenta orda 3 giorni, intel prezioso
+
+### PARTE 2B: Quest Tordek Monaco — Torneo Epico Dauth
+
+**Durata:** 2–3 sessioni (Day 22–24)
+
+| File | Tipo | Status |
+|---|---|---|
+| `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-to-Be_integrated.md` | Testo principale — narrativa completa, Orbe Otto Porte, chakra gates | ⚠️ DA INTEGRARE |
+| `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-Giorno1-Preliminari.md` | Giorno 1 — Preliminari torneo | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-Round1.md` | Dettaglio Round 1 | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE2-Giorno2-Semifinali.md` | Giorno 2 — Semifinali | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE3-Giorno3-Finale-e-Invasione.md` | Giorno 3 — Finale + Githyanki invasion | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-Tordek-OTTO-PORTE.md` | Otto Porte mechanic | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-Tordek-OTTO-PORTE-e-ORBE.md` | Orbe delle Otto Porte artifact detail | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-Tordek-BATTLE-STATS-e-FRASE-IMPATTO.md` | Battle stats + frasi impatto | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-Tordek-BATTLE-STATS-e-VILLAIN-ICONICI.md` | Villain iconici stats | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-Tordek-BATTLE-STATS-e-VILLAIN-ICONICI-Parte2.md` | Villain iconici stats (parte 2) | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-Tordek-CHEAT-SHEET-Round-e-Porte.md` | DM cheat sheet — round sequence + porte | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-Tordek-MINIMAPPA-TIMELINE-ALLEANZE.md` | Minimappa + timeline + alleanze | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-Tordek-RUMBLING-STONE-SIDEMISSIONS.md` | Side missions per altri PG durante torneo | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md` | Stat blocks tutti partecipanti | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-MAPPE-COMPLETO.md` | Mappe arena | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-MAPPE-COMPLETO-2.md` | Mappe arena addizionali | ✅ |
+
+**Contenuti:**
+
+- Struttura Dragon Ball / Naruto style: bracket eliminatorio
+- Location: Arena Dauth (mappa 60m×60m)
+- **Orbe delle Otto Porte (Orb of Eight Gates):** scenic artifact, chakra gate mechanics
+  - Each gate: +2 STR/DEX morale, +2 saves for 1 round
+  - Cost: cumulative 1d4 CON temp damage + fatigued
+  - Final gate: if used, leads to Tordek's disintegration
+- 4 Round combattimenti 1v1 (opponents CR 11–14)
+  - Key opponents: Tetsu "Serpente di Vento" (Monk 12), Grandmaster Rihan (Monk 14), Thrain Ironfist (Fighter 13), Grom Skullcrusher (Barbarian 14)
+- **Finale improvviso:** Githyanki Red Dragon attack! Artefatto Gith da rubare al sage monk
+  - Xal'thor Illithid Commander (psionic, multi-phase boss)
+  - Arena diventa campo di battaglia: proteggere pubblico + distruggere nucleo psionico
+- **Tordek's Chakra Enlightenment:** 7 soul gates of jujitsu combat (Naruto-inspired)
+  - Powers with physical costs, strain to final power → disintegration if used
+- Conseguenze: Fama, 300 dwarf mercenaries sent to Rethmar, artefatti combattimento
+
+**Immagini:** `tournament_map.png`, `arena_map.png`, `semifinali_map.png`, `finale_map.png`, `tactical_map.png`
 
 ---
 
-## PARTE 3: MISSIONI SECONDARIE MAGGIORI RED HAND
+## PARTE 3: MISSIONI SECONDARIE + BATTAGLIA FINALE RETHMAR
 
-### PARTE 3A: Starsong Hill - Alleanza Elfi Tiri Kitor
-- **File:** Arco-Post-Hammerfist-P3A-Starsong-Hill-COMPLETO.md
-- **Durata:** 1-2 sessioni (Day 21-22)
-- **Source:** Red Hand pag 54-66
-- **Contenuti livellati liv. 13:**
-  - Viaggio Tiri Kitor forest
-  - Diplomazia elfi (prove Charisma/Wisdom)
-  - Minaccia wyvern/manticore upgraded (CR 10-11)
-  - Alleanza guadagnata: 50 elfi rangers + 10 giant owls battaglia finale
-  - Mappa foresta 80m×60m
+### PARTE 3 — Starsong Hill: Alleanza Elfi Tiri Kitor
 
-### PARTE 3B: Rhest - Città Sommersa & Drago Nero
-- **File:** Arco-Post-Hammerfist-P3B-Rhest-COMPLETO.md
-- **Durata:** 2-3 sessioni (Day 23-25)
-- **Source:** Red Hand pag 67-80
-- **Contenuti livellati liv. 13:**
-  - Lake Rhest esplorazione (barche, underwater)
-  - Città rovine sommerse (mappa hex acqua)
-  - Wyrmlord Saarvith (CR 12 fighter/dragon disciple)
-  - Boss Finale: Regiarax Adult Black Dragon (CR 13!)
-  - Sabotaggio ponte/supply lines orda
-  - Conseguenze: Rallenta orda 3 giorni, intel prezioso
+**Source:** Red Hand pag 54–66 | **Durata:** 1–2 sessioni
 
-### PARTE 3C: Ghostlord - Thornwaste Lich
-- **File:** Arco-Post-Hammerfist-P3C-Ghostlord-COMPLETO.md
-- **Durata:** 2 sessioni (Day 24-26)
-- **Source:** Red Hand pag 82-95
-- **Contenuti livellati liv. 13:**
-  - Thornwaste desert trek
-  - Ghostlord Lich lair (CR 14 optional combat OR diplomacy!)
-  - Wyrmlord Ulwai (CR 11 ranger/blackguard)
-  - Ghostlord phylactery quest (moral choice)
-  - Alleanza: Ghostlord ritira supporto da Red Hand (200 undead in meno!)
-  - Mappa dungeon lich 60m×80m
+| File | Tipo |
+|---|---|
+| `Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-TESTO.md` | Testo narrativo |
+| `Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-STATBLOCCHI.md` | Stat blocks |
+| `Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-MAPPE.md` | Mappe |
 
-### PARTE 3D: Missioni Opzionali Infiltrazione
-- **File:** Arco-Post-Hammerfist-P3D-Infiltrazione-Horde.md
-- **Source:** Red Hand pag 47-48
-- **Contenuti:**
-  - Captured! (pag 47) - PG catturati scenario, escape
-  - Into the Horde (pag 48) - Infiltrazione campo nemico principale
-  - Sabotaggio interno: supply wagons, morale, assassinio commanders
-  - MOLTO pericoloso (EL 15+ se scoperti!)
-  - Ricompense enormi: intel completo, riduzione 20% forza orda
+**Contenuti (livellati liv. 13):**
+
+- Viaggio Tiri Kitor forest (Blackfens)
+- Diplomazia elfi (prove Charisma/Wisdom) — Killiar Arrowswift, Sellyria Starsinger
+- Quest di prova: vendicare Lanikar / difendere Starsong
+- Minaccia wyvern/manticore upgraded (CR 10–11)
+- Alleanza guadagnata: 50 elfi rangers + 10 giant owls → battaglia finale
+- VP impact sulla Battle of Rethmar
+
+### PARTE 3 — Ghostlord: Lich Druidico del Thornwaste
+
+**Source:** Red Hand pag 82–95 | **Durata:** 2 sessioni
+
+| File | Tipo |
+|---|---|
+| `Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-TESTO.md` | Testo narrativo |
+| `Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-STATBLOCCHI.md` | Stat blocks |
+| `Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-MAPPE.md` | Mappe |
+
+**Contenuti (livellati liv. 13):**
+
+- Thornwaste desert trek
+- Ghostlord Lich lair (CR 14 optional combat OR diplomacy!)
+- Philactery quest (moral choice: restituire, distruggere, o vincolare)
+- Alleanza: Ghostlord ritira supporto da Red Hand (200 undead in meno)
+- Mappa dungeon lich "leone di pietra" 60m×80m
+
+### PARTE 3 — Sabotaggio Campi Drow (3 Missioni)
+
+| File | Tipo |
+|---|---|
+| `Arco-Post-Hammerfist-P3-Sabotaggio-Campi-Drow-TESTO.md` | Testo narrativo (3 missioni) |
+| `Arco-Post-Hammerfist-P3-Sabotaggio-Campi-Drow-STATBLOCCHI.md` | Stat blocks |
+| `Arco-Post-Hammerfist-P3-Sabotaggio-Campi-Drow-MAPPE.md` | Mappe |
+| `Arco-Post-Hammerfist-P3-Sabotaggio-Campi-Drow-Upscale-CR12.md` | Upscaled encounters CR12 |
+
+**Contenuti:**
+
+- Drow-1: "Fuoco nel Grano" — sabotare campi fungini e granai sotterranei
+- Drow-2: "Tagliare le Viscere" — distruggere tunnel rifornimento
+- Drow-3: "La Tela del Traditore" — eliminare/convertire Xilthra Vel'ssin (comandante drow)
+- Impact: riduzione logistica orda, meno caster oscuri a Rethmar
+
+### PARTE 3 — Missioni Brevi CR12 (6 Missioni Pool)
+
+| File | Tipo |
+|---|---|
+| `Arco-Post-Hammerfist-P3-MISSIONI-BREVI-CR12-TESTO.md` | Testo 6 missioni |
+| `Arco-Post-Hammerfist-P3-MISSIONI-BREVI-CR12-STATBLOCCHI-FUNGHI-GITH-DROW.md` | Stat blocks |
+
+**Contenuti (ogni missione 1 sessione rapida):**
+
+- MB-1: Avanguardia Githyanki (Knight + Magus + aberrazione planare)
+- MB-2: Rovine del Patto (Drow + Funghi, Nodo Micotico)
+- MB-3: Scorta di Prigionieri (Gith + Drow, cervello fungino telepatico)
+- MB-4: Semi di Corruzione (foresta infestata, Cuore di Madre Fungo)
+- MB-5: Torre d'Ascolto Githyanki (torre planare, cristallo comunicazione)
+- MB-6: Ultimo Nido Drow (rituale disperato, Avatar minore Madre Funghi)
 
 ---
 
-## PARTE 4: BATTAGLIA FINALE BRINDOL
+## PARTE 4: BATTAGLIA FINALE DI RETHMAR
 
-### PARTE 4A: Preparazione Difese (Day 38-41)
-- **File:** Arco-Post-Hammerfist-P4A-Prep-Brindol.md
-- **Contenuti:**
-  - Arrival Brindol Day 38
-  - Lord Jarmaath council war
-  - Placement rinforzi (nani Hammerfist, elfi, treants, ecc)
-  - Fortificazioni: mura, trappole, catapulte
-  - Assignazione PG ruoli tattici
-  - Intel finale orda composition
+### Struttura Generale
 
-### PARTE 4B: Day 42 - Assedio Iniziale
-- **File:** Arco-Post-Hammerfist-P4B-Assedio-Giorno1.md
-- **Contenuti:**
-  - Orda arriva: 10,000+ combattenti
-  - Draghi comandanti (5 Adult Red Dragons CR 15)
-  - Giants assedio (Hill Giants CR 10 ×20)
-  - Ondate 1-3: hobgoblin legions, ogre brutes, worg cavalry
-  - Meccaniche massa combattimento (Hammerfist style)
-  - PG missioni critiche: uccidere draghi, sabotare siege engines
+| File | Tipo |
+|---|---|
+| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAN-STRUTTURA.md` | Overview completa 5 fasi |
+| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md` | Stat blocks epici (Azarr Kul CR 15, Avatar Tiamat CR 17, Erinni, Arcimaghi, Ghostlord ally, 300 nani, Githyanki Knights) |
+| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ESITI-CONSEGUENZE.md` | Sistema VP, esiti A–F, conseguenze PG, epilogo |
+| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-MYTHAL-FOCUS-PG-SCENA-EROICA.md` | Scene eroiche PG-specifiche durante Mythal |
 
-### PARTE 4C: Day 42 Sera - Breach & Wyrmlord Assault
-- **File:** Arco-Post-Hammerfist-P4C-Breach-Wyrmlords.md
-- **Contenuti:**
-  - Mura breach settore nord
-  - 4 Wyrmlords coordinati attack (CR 11-13 each)
-  - Elite hobgoblin bladebearer (CR 10 ×30)
-  - PG devono tenere breach OR città cade!
-  - Cinematic combattimento urbano
+### FASE 0: Notte dei Drow (Infiltrazione Interna)
 
-### PARTE 4D: Day 43 Alba - Azarr Kul Final Boss
-- **File:** Arco-Post-Hammerfist-P4D-Final-Boss-Azarr-Kul.md
-- **Contenuti:**
-  - Azarr Kul appare (CR 17 Cleric/Dragon Disciple)
-  - Cavalca Tyrgarun Very Old Red Dragon (CR 20!)
-  - Circolo degli Otto: Mythal barrier (solo PG possono reach Azarr Kul)
-  - Final Boss Battle: Multi-phase epic
-    - Phase 1: Aerial dragon combat
-    - Phase 2: Azarr Kul melee ground
-    - Phase 3: Portal Avernus tentativo (se time scade)
-  - Victory conditions: Kill Azarr Kul OR destroy phylactery OR dispel portal
-  - Consequences vittoria: Orda routs, Elsir Vale saved!
+| File | Tipo |
+|---|---|
+| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE0-NOTTE-DEI-DROW-TESTO.md` | Testo narrativo |
+| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE0-NOTTE-DEI-DROW-MAPPA.md` | Mappa tempio |
 
-### PARTE 4E: Epilogo & Ricompense
-- **File:** Arco-Post-Hammerfist-P4E-Epilogo.md
-- **Contenuti:**
-  - Casualties count
-  - PG celebrati eroi (titles, lands, magic items)
-  - Hellas: forma elementale permanent? (DM choice)
-  - Tordek: Fondazione scuola monastica Dauth
-  - Artemis: Ring Chaotic Illumination mastery completa
-  - Borin: Aegis Fang diventa legacy weapon famiglia
-  - Future hooks: Tiamat revenge? Infernal debts? Ghostlord?
+**Contenuti:**
+
+- Commando drow + aberrazioni fungine entra dal sottosuolo, notte prima dell'assedio
+- Obiettivo: rubare **Artefatto Maligno** dalle cripte del Tempio di Rethmar
+- PG difendono il tempio dall'interno
+- **Therysol** (NPC) può apparire come alleata, attaccando i drow da dentro
+- Esito impatta Phase 3: artefatto rubato = Avatar +2 RI +20 HP; distrutto = Avatar indebolito
+
+### FASE 1: Assedio Esterno
+
+| File | Tipo |
+|---|---|
+| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE1-ASSEDIO-TESTO.md` | Testo narrativo |
+| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE1-ASSEDIO-MAPPA.md` | Mappa assedio |
+
+**Contenuti:**
+
+- Orda arriva: 10,000+ combattenti
+- Draghi comandanti (5 Adult Dragons di vari colori CR 15)
+- Giants assedio (Hill Giants CR 10 ×20)
+- Ondate 1–3: hobgoblin legions, ogre brutes, worg cavalry
+- Meccaniche massa combattimento (Hammerfist style)
+- PG missioni critiche: uccidere draghi, sabotare siege engines
+
+### FASE 2: Ritualisti Draconici
+
+| File | Tipo |
+|---|---|
+| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE2-RITUALISTI-TESTO.md` | Testo narrativo |
+| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE2-RITUALISTI-MAPPA.md` | Mappa rituale |
+
+**Contenuti:**
+
+- Stregoni draconici eseguono rituale 10 round per invocare Avatar di Tiamat
+- PG devono interrompere — ogni round completato rinforza Avatar
+  - 0–4 round: Niente Avatar pieno (Manifestazione d'Ombra)
+  - 5–8 round: Avatar parziale (pf ridotti, soffii limitati)
+  - 9–10 round: Avatar pieno
+- Incontro con erinni/abishai e guardie ritualiste
+
+### FASE 3: Azarr Kul & Avatar di Tiamat (Boss Fight)
+
+| File | Tipo |
+|---|---|
+| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE3-AZARRKUL-AVATAR-TESTO.md` | Testo narrativo |
+| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE3-AZARRKUL-AVATAR-MAPPA.md` | Mappa boss arena |
+
+**Contenuti:**
+
+- **Azarr Kul** appare (CR 15 Cleric 10/Fighter 4, hobgoblin mezzo-drago blu)
+- Cavalca **Tyrgarun**, Very Old Blue Dragon (CR 20!)
+- Final Boss Battle multi-phase epic:
+  - Sotto-fase A: Avvicinamento, Azarr Kul + guardia scelta (CR 16)
+  - Sotto-fase B: Avatar di Tiamat manifesto (CR 17, 3 teste attive, soffi elementali)
+  - Sotto-fase C: Punto di rottura, intervento Circolo degli Otto
+- Victory conditions: Kill Azarr Kul OR destroy Avatar OR hold until Mythal completes
+
+### FASE 4: Circolo degli Otto & Mythal + Statue Golem
+
+| File | Tipo |
+|---|---|
+| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE4-CIRCOLO-MYTHAL-STATUE-TESTO.md` | Testo narrativo |
+| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE4-CIRCOLO-MYTHAL-STATUE-MAPPA.md` | Mappa finale |
+
+**Contenuti:**
+
+- **Circolo degli Otto** (8 arcimaghi/arci-druidi): Mythal barrier in 7 round concentrazione
+- PG devono proteggere il Circolo da ondate finali
+- **Statue animate:** se Mythal si completa, le statue cittadine si animano come Stone Golem (Harry Potter Battle of Hogwarts style!)
+- Solo PG possono raggiungere Azarr Kul attraverso il Mythal
+- Ultimo bastione della difesa
+
+### Esiti & Epilogo
+
+| File | Tipo |
+|---|---|
+| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ESITI-CONSEGUENZE.md` | Sistema VP completo |
+
+**Sistema Victory Points:**
+
+| Fattore | Completato | Parziale | Fallito |
+|---|---|---|---|
+| Fase 0: Artefatto Maligno | +2 VP | 0 | –2 VP |
+| Fase 1: Assedio | +2 VP | +1 VP | –1 VP |
+| Fase 2: Ritualisti | +3 VP | +1 VP | –2 VP |
+| Fase 3: Azarr Kul & Avatar | +3 VP | +2 VP | –3 VP |
+| Fase 4: Mythal & PG Focus | +2 VP | +1 VP | –3 VP |
+| Alleati strategici | +3 VP | +1 VP | 0 |
+
+**Esiti:**
+
+- VP ≥ +10: **Vittoria Epica** — Rethmar città sacra, Mythal permanente, statue custodi eterni
+- VP +5 a +9: **Vittoria Tattica** — salvata ma ferita, Mythal temporaneo 1–2 anni
+- VP 0 a +4: **Pareggio Glorioso** — guerra fredda, Mythal instabile
+- VP –1 a –4: **Sconfitta Parziale** — Rethmar cade, liberazione futura
+- VP –5 a –9: **Sconfitta Strategica** — disastro totale, resistenza
+- VP ≤ –10: **Annientamento** — campagna finita o reset generazionale
+
+**Epilogo PG:**
+
+- Hella: forma elementale permanente? (DM choice)
+- Tordek: fondazione scuola monastica Dauth
+- Artemis: Ring Chaotic Illumination mastery completa
+- Thorik: Aegis Fang diventa legacy weapon famiglia
+- Future hooks: Tiamat revenge, Infernal debts, Ghostlord
 
 ---
 
 ## APPENDICI
 
 ### APPENDICE A: Tabelle Quick Reference
-- Timeline Day-by-Day (Day 19-42)
+
+- Timeline Day-by-Day (Day 19–42)
 - Orda composition totale
-- Alleati disponibili per battaglia
+- Alleati disponibili per battaglia (Hammerfist dwarves, Tiri Kitor, Druid Circle, Ghostlord, 300 mercenarios)
 - Magic items campagna
 - XP totale breakdown
 
-### APPENDICE B: Mappe Master Collection
-- Tutte mappe hex regional
-- Tutte mappe tattiche (scala 1.5m/sq)
-- Brindol city map
-- Orda camp layouts
+### APPENDICE B: Immagini & Mappe
 
-### APPENDICE C: NPCs & Monsters Statblocks
-- Tutti boss CR 11-17
-- Wyrmlords (4)
-- Draghi (6 total)
-- Azarr Kul full stats
-- Alleati stats (Treants, Elfi, Nani)
+| File | Contenuto |
+|---|---|
+| `tower_structure.png` | Struttura Torre Invisibile (Artemis quest) |
+| `tournament_map.png` | Mappa torneo generale (Tordek quest) |
+| `arena_map.png` | Arena combattimento (Tordek quest) |
+| `semifinali_map.png` | Mappa semifinali (Tordek quest) |
+| `finale_map.png` | Mappa finale torneo (Tordek quest) |
+| `tactical_map.png` | Mappa tattica generale |
 
-### APPENDICE D: Handouts Giocatori
-- Mappe senza segreti DM
-- Tactical maps player version
-- Lettere/documenti in-game
-- Prophecies/lore
+Tutte mappe tattiche nei file `*-MAPPE*.md` usano scala 1.5m/sq.
 
 ---
 
 ## 📊 STATISTICHE CAMPAGNA
 
 ### Durata Totale Stimata
-- **Quest Personali (3):** 6-9 sessioni (18-27 ore)
-- **Missioni Secondarie Brevi (8):** 4-6 sessioni (12-18 ore)
-- **Missioni Secondarie Maggiori (3):** 5-8 sessioni (15-24 ore)
-- **Battaglia Finale (4 parti):** 4-6 sessioni (12-18 ore)
-- **TOTALE:** 19-29 sessioni (57-87 ore gioco!)
+
+- **Quest Personali (3):** 6–9 sessioni (18–27 ore)
+- **Missioni Secondarie & Sabotaggio:** 4–8 sessioni (12–24 ore)
+- **Alleanze (Starsong + Ghostlord):** 3–5 sessioni (9–15 ore)
+- **Battaglia Finale (5 fasi):** 4–6 sessioni (12–18 ore)
+- **TOTALE:** 17–28 sessioni (51–84 ore gioco!)
 
 ### XP Totale Stimato
+
 - Quest completate: ~80,000 XP
 - Combattimenti: ~120,000 XP
 - Roleplay/Objectives: ~50,000 XP
 - **TOTALE:** ~250,000 XP (sufficiente 13→16 livello)
 
 ### Loot Totale
+
 - Oro: ~50,000gp
-- Magic Items: 15-20 items (vari rarity)
-- Artifacts: 3-4 legacy items (Aegis Fang, Corona, Ring, + nuovo?)
+- Magic Items: 15–20 items (vari rarity)
+- Artifacts: 5 legacy items (Aegis Fang, Corona, Ring, Bracieri, Collana)
 
 ---
 
 ## 🎯 TRACKING GIOCATORI
 
 ### Checklist Quest Completate
-- [ ] Quest Hellas - Cerchio Sacro
-- [ ] Quest Artemis - Torre Invisibile
-- [ ] Quest Tordek - Torneo Dauth
-- [ ] Sabotaggio Campi Drow (1-3)
-- [ ] Starsong Hill - Alleanza Elfi
-- [ ] Rhest - Wyrmlord Saarvith & Regiarax
-- [ ] Ghostlord - Lich Alleanza
-- [ ] Missioni Brevi (0-8 completate)
-- [ ] Battaglia Finale Brindol - VITTORIA!
+
+- [ ] Quest Hella — Cerchio Sacro Shaarcah Forest
+- [ ] Quest Artemis — Torre Invisibile (vs Zalkatar)
+- [ ] Rhest — Wyrmlord Saarvith & Regiarax (📝 NEW)
+- [ ] Quest Tordek — Torneo Epico Dauth
+- [ ] Sabotaggio Campi Drow (1–3)
+- [ ] Starsong Hill — Alleanza Elfi Tiri Kitor
+- [ ] Ghostlord — Lich Alleanza/Neutralità
+- [ ] Missioni Brevi (0–6 completate)
+- [ ] Battaglia Finale Rethmar — Fase 0 Notte dei Drow
+- [ ] Battaglia Finale Rethmar — Fase 1 Assedio
+- [ ] Battaglia Finale Rethmar — Fase 2 Ritualisti
+- [ ] Battaglia Finale Rethmar — Fase 3 Azarr Kul & Avatar
+- [ ] Battaglia Finale Rethmar — Fase 4 Mythal & Statue
+- [ ] **VITTORIA!**
 
 ### Timeline Tracking
+
 - **Day Corrente:** _____
-- **Giorni Rimanenti a Brindol (Day 42):** _____
-- **Orda Progress:** Terrelton → Nimon's Gap → Talar → Brindol
+- **Giorni Rimanenti a Rethmar (Day 42):** _____
+- **Orda Progress:** Terrelton → Nimon's Gap → Talar → Rethmar
 - **Forza Orda Ridotta:** ____% (sabotaggio effects)
 
 ---
 
-**INIZIO CAMPAGNA: Parte 1A - Quest Hellas!**
-**FINE CAMPAGNA: Parte 4E - Epilogo Vittoria!**
+**INIZIO CAMPAGNA: Parte 1A — Quest Hella!**
+**FINE CAMPAGNA: Parte 4 Fase 4 — Mythal & Vittoria!**
 
-*Tutti i file divisi per gestibilità chat, scale 1.5m/sq universale, timeline precisa Day 19-42*
+*Tutti i file divisi per gestibilità, scale 1.5m/sq universale, timeline precisa Day 19–42.*
+*Location names: Cannath Vale equivalents (see fr-cannath-vale.md for mapping).*

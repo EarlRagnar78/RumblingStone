@@ -253,3 +253,103 @@ Enforces the city's arcane use regulations.
 ### The Halruaan Mages (no formal name — all Halruaan mages)
 A society where ALL powerful people are mages. No formal organization needed — Halruaa itself
 is the organization.
+
+---
+
+## CAMPAIGN-SPECIFIC FACTIONS (RumblingStone)
+
+These factions are unique to the RumblingStone campaign and do not appear in published sourcebooks.
+
+### The Drow Experimental Faction (Underdark)
+
+**Alignment**: CE/NE
+**Leaders**:
+- **Sonjak** — Drow Cleric Matrona of Lolth. Obsessed with mixing and creating new forms of
+  aberrations. Her current research focus is on **fungal aberrations**: hybridizing myconid
+  creatures with drow fleshcrafting. Has made a **pact with the Mother of Fungi** (a daemon
+  aberration) in Lolth's name, creating an unholy alliance between drow religious authority
+  and demonic fungal corruption.
+- **Il Collezionista** — A **Rakshasa** that delights in turning living enemies into macabre
+  statues (using a bonded basilisk) and **selling them to evil villains** as trophies and
+  decorations. Escaped from the minotaur lair encounter in the Underdark. **Recurring villain**
+  who has not yet been caught or killed.
+
+**Operations**:
+- Modified Neverlight Grove into a drow research lab (tower fungi infested with web spiders,
+  drow-modified creatures, and specialized aberration researchers)
+- Created portal networks connecting underground experiments to surface operations
+- Lurk during night phases of major battles to exploit chaos (e.g., Night of the Drow at
+  Battle of Rethmar — sabotage temples to retrieve powerful evil artifacts)
+- Use orcs and hobgoblins as disposable troops (standard drow proxy warfare)
+
+**Campaign Connections**:
+- Linked to arcs: Minotaur Lair (Pre-Arc 01), `02_scaladossa-abbattor-funghi`, `03_la Cittadella`
+- Reappear at Battle of Rethmar (arc 09, P3 phases) as a third faction attacking during the siege
+- Il Collezionista and Sonjak are connected but the party has NOT yet discovered the
+  relationship between the Mother of Fungi and the drow architect Sonjak
+- **Il Collezionista's evil artifact trade:** After escaping the Minotaur Lair, Il Collezionista
+  formed an alliance with Sonjak's drow guild, providing **strange and pure evil artifacts** —
+  possibly the same artifacts the drow seek during the Notte dei Drow temple assault at Rethmar
+- **Expedition to the Demonweb Pits** (p.67) creatures used by the drow researchers in the
+  fungi tower experiments
+- **NPC Therysol** — Originally a slave sold by drow traders affiliated with Il Collezionista's
+  guild to salamanders in the Fire Elemental Plane. After helping the party in the Fire Node
+  (Arc 07), she goes underground seeking revenge against Il Collezionista's drow guild. May
+  appear as an **NPC ally during the Notte dei Drow** at Rethmar, attacking the drow from within.
+
+**Status (Current)**: Active. Il Collezionista escaped. Sonjak's forces operational. The party
+missed the connection between the fungi experiments and the drow leadership during their
+Underdark journey.
+
+---
+
+### Githyanki Dragon-Rider Faction
+
+**Alignment**: LE
+**Forces**: Githyanki warriors mounted on red dragons
+**Goals**: Steal powerful artifacts from the mortal plane; the party's accumulated artifacts
+(especially the sage monk's artifact at Dauth) have drawn their attention
+**Campaign Role**: Interrupt Tordek's tournament at Dauth with a devastating aerial assault
+**Connections**: Allied with the Red Hand horde's dragon contingent if not defeated at the tournament
+**Status (Current)**: Approaching. Will strike during the tournament arc (09, P2B).
+
+---
+
+### Circle of Eight Mages (Circolo degli Otto)
+
+**Alignment**: LN/NG
+**Composition**: 8 powerful arcane casters
+**Role**: Create a **mythal-like barrier** during the Battle of Rethmar to deflect enemy
+spells and revive ancient stone statues within the city (similar to the Battle of Hogwarts
+animated statues defending the castle)
+**Narrative Purpose**: Provide the large-scale magical defense that allows the PCs to focus
+on personal combat against enemy commanders rather than being overwhelmed by horde magic
+**Status**: Arrive at Rethmar before the final battle. Active during arc 09, P3 phases.
+
+---
+
+### Hammerfist Dwarven Kingdom
+
+**Alignment**: LG
+**Location**: Hammerfist Holds (The North Wall mountains)
+**Leader**: The Hammerfist King (quest-giver for the Corona di Adamantio quest)
+**Role**: Commissioned the Rumbling Stone party to find the Corona di Adamantio based on
+oracle/cleric visions of Moradin. Provided base of operations for Underdark descent.
+**Military**: Dwarven army that fights alongside the party at the Battle of Hammerfist (arc 08)
+and sends reinforcements to the Battle of Rethmar (arc 09) — fuse with city militia
+**Connections**: Central to arcs 01–08; source of divine guidance through Moradin
+**Status**: Damaged but standing after Battle of Hammerfist. Sending aid to Rethmar.
+
+---
+
+### Druid Circle of Nature
+
+**Alignment**: N
+**Role**: If Hella completes her Sacred Forest ritual challenges (arc 09, P1 — Cerchio Sacro
+della Foresta), the druid circle offers their nature power for the Battle of Rethmar:
+- Invocation of animals (summons)
+- Shape-shifting transformations (like Beorn in The Hobbit)
+- Temporary nature avatar forms for allied combatants
+**Condition**: Hella must pass the ritual. If she fails, the circle remains neutral.
+**Status**: Awaiting Hella's ritual completion.
+

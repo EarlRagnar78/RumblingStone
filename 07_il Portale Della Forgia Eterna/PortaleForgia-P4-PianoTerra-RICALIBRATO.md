@@ -7,9 +7,9 @@
 ---
 
 **Sistema:** Dungeons & Dragons 3.5 Edition  
-**Livello Party:** 14° (Thorik, Tordek, Artemis) + NPC Therysol (Lv 8 Support)  
+**Livello Party:** 14° (Thorik, Tordek, Artemis) - *Senza Guaritore (Hella assente)*  
 **Obiettivo:** Recuperare lo **Smeraldo della Forza** (Seconda Gemma).  
-**Difficoltà:** Molto Alta (CR 16 Boss). La fisica stesse del piano è un nemico.
+**Difficoltà:** Molto Alta (CR 15 Boss). La fisica stessa del piano è un nemico.
 
 ---
 
@@ -36,7 +36,6 @@ Anche con la *Benedizione Forza Montagna* di Moradin, il piano resiste alla vost
 
 * **Movimento:** Dimezzato (chi vola deve atterrare ogni round o fare CD 20 Fly per non cadere).
 * **Caduta:** Danni aumentati a **1d10 per 3m**.
-* **Effetto Therysol:** L'NPC soffre. Velocità ridotta a 6m. Se entra in mischia, subisce -4 ai TxC. Il suo ruolo è strettamente di supporto (balestra/cura).
 
 ---
 
@@ -55,12 +54,12 @@ Anche con la *Benedizione Forza Montagna* di Moradin, il piano resiste alla vost
       . C C . . . . . . C C . . .   Legenda:
       C C C . . X1. . . C C . . .   . = Terreno Difficile (Roccia frastagliata)
       . C . . . . . . . . C . . .   C = Cristallo Gigante (Copertura Totale, Indistruttibile)
-      . . . . T h . A . . . . . .   T = Thorik
-      . . . . . T r . . . . . . .   h = Therysol (protetto al centro)
-      . . . . . . . . . . . X2. .   r = Tordek
-      . C C . . . . . . C C . . .   A = Artemis
-      C C C . . XD. . . C C . . .   X1, X2 = Xorn Standard
-      . . . . . . . . . . . . . .   XD = Xorn "Fauci di Diamante" (Boss)
+      . . . . T . . A . . . . . .   T = Thorik
+      . . . . . T r . . . . . . .   r = Tordek
+      . . . . . . . . . . . X2. .   A = Artemis
+      . C C . . . . . . C C . . .   X1, X2 = Xorn Standard
+      C C C . . XD. . . C C . . .   XD = Xorn "Fauci di Diamante" (Boss)
+      . . . . . . . . . . . . . .   
 ```
 
 ### **Tattiche Nemici:**
@@ -68,7 +67,7 @@ Anche con la *Benedizione Forza Montagna* di Moradin, il piano resiste alla vost
 1. **Earth Glide (Passaggio nella Pietra):** Non restano mai in superficie 2 round di fila. Emergono, colpiscono, e si rituffano nella roccia (Copertura Totale). I PG devono preparare le azioni (*Ready Action*).
 2. **Targeting:**
     * **XD (Fauci di Diamante):** Punta Thorik. Il suo morso è incantato per *ignorare la durezza*. Tenta di spezzare l'armatura (Sunder).
-    * **X1/X2:** Puntano Therysol (sentono le gemme nel suo petto).
+    * **X1/X2:** Puntano Artemis (il bersaglio più leggero).
 3. **Fase Critica:** Se XD scende sotto 50 HP, si ritira dentro un Cristallo Gigante e lo usa come armatura potenziata (+4 CA), attaccando da dentro.
 
 ---
@@ -93,7 +92,7 @@ Cubo perfetto sospeso nel vuoto. Ingresso dal basso.
 
 ---
 
-## 5. BOSS FIGHT: TERROS, L'INCUDINE DEL MONDO (CR 16)
+## 5. BOSS FIGHT: TERROS, L'INCUDINE DEL MONDO (CR 15)
 
 **Luogo:** Camera Sferica Centrale.
 **Condizione:** **Gravità Zero**. I movimenti sono come nuotare nell'aria. Chi non ha Volare o appigli si muove goffamente.
@@ -115,29 +114,32 @@ Cubo perfetto sospeso nel vuoto. Ingresso dal basso.
 
 ### **Statistiche Boss: TERROS L'ANTICO**
 
-*Elementale della Terra Titanico (Avanzato)*
+*Elementale della Terra Anziano (Avanzato 30 HD)*
 
-* **HP:** 380 (DR 15/-)
-* **CA:** 28 (-4 Taglia, +22 Naturale)
-* **Velocità:** Volare 18m (perfetta ma "nuota" nella roccia/aria).
-* **Attacchi:** 2 Schianti +32 (Danno: 4d10+16 / Crit 19-20/x2).
-* **Portata:** 9m (Enorme).
+* **HP:** 345 (DR 10/—)
+* **CA:** 26 (-2 Taglia Enorme, +18 Naturale. Touch 8, Flat 26)
+* **Velocità:** 6m terra, *Earth Glide* 6m. (Non vola: in zero-G si spinge dai muri con CD 10 Equilibrio).
+* **Attacchi:** 2 Schianti +30 (Danno: 2d10+10 / Crit 19-20/x2).
+* **Portata:** 4.5m (15 ft).
 
-**Capacità Speciali (Lair Actions):**
+**Capacità Speciali (Regole SRD Ricalibrate):**
 
-1. **Gravity Pulse (Pulsazione Gravitazionale):** Ogni 1d3 round. Terros sceglie una direzione ("Su", "Giù", "Sinistra"). La gravità diventa 10x in quella direzione.
-    * Tutti i PG "cadono" 30m in quella direzione. Danno schianto contro muro: 8d6.
-2. **Petrification Aura (Aura Pietrificante):** Raggio 9m. Chi finisce il turno vicino a lui: TS Tempra CD 24 o perde 1d4 Destrezza (pelle indurisce). Se DES arriva a 0 = Statua.
-3. **Earth Mastery Supremo:** +2 TxC e Danni se il bersaglio tocca una superficie solida (muro o altare). Volare nel vuoto è più sicuro!
+1. **Vulnerabilità Sonica:** I danni sonici infliggono x1.5 danni. *(Nota: Tordek utilizza il suo attacco Frantumare per sfruttare questa debolezza critica come principale fonte DPS).*
+2. **Earth Mastery:** +1 TxC e danni se il bersaglio tocca la pietra/l'Altare. -4 TxC e danni se combatte contro nemici volanti/fluttuanti.
+3. **Assorbimento Terrestre:** Se Terros tocca il pavimento (Altare), rigenera 15 HP a round. I PG devono tenerlo *in aria* o staccarlo dal suolo (usando *Pugno Frana* di Tordek per buttarlo prono/lontano o spingerlo).
 
-4. **Gravità Inversa (Iniziativa 20):** Terros batte i pugni. La gravità cambia direzione. Tutti devono fare TS Riflessi CD 22 o "cadere" verso il soffitto/parete (4d6 danni) e cadere proni.
-5. **Pioggia di Stalattiti (Ricarica 5-6):** Esplosione di pietre. Area 12m. 10d6 danni (Riflessi CD 24 dimezza).
-6. **Assorbimento Terrestre:** Se Terros tocca il pavimento (Altare), rigenera 20 HP a round. I PG devono tenerlo *in aria* o staccarlo dal suolo (Spingere, Telecinesi, Colpi di Tordek che lo fanno volare).
-**Strategia e Tattiche:**
+**Lair Actions (1 a round al conteggio Iniziativa 20):**
 
-* Round 1: *Gravity Pulse* verso l'alto per schiacciare tutti sul soffitto lontani dall'Altare.
-* Round 2: Carica Thorik. Tenta una prova di Spingere (+36) per incastrarlo nel muro e maciullarlo con bonus *Earth Mastery*.
-* Reazione a Magia: Se colpito da incantesimi, usa *Earth Glide* per entrare nella parete della sfera e uscire alle spalle del caster (Artemis).
+A. **Gravity Pulse (Ricarica 1d4 round):** Terros sceglie una direzione ("Su", "Giù", "Sinistra"). La gravità diventa normale o si inverte temporaneamente. Tutti cadono di 9m: TS Riflessi CD 22 o 4d6 contundenti e cadono proni contro superfici.
+B. **Pioggia di Stalattiti (Ricarica 5-6):** Raggio 9m. 8d6 danni contundenti/perforanti (Riflessi CD 22 dimezza).
+C. **Tremore (Ricarica 1d3 round):** Solo sull'Altare o muri: TS Riflessi CD 22 o cadere proni con 2d6 danni. Chi è in zero-G è immune.
+
+**Strategia e Sinergie dei PG:**
+
+* **Tordek (Awakened Bracieri Terra):** La sua **RD 5/Adamantio** è vitale per mitigare i colpi, e il suo **Pugno Frana** o raffiche sonic-infused **(Frantumare)** sono essenziali per sgretolare la CA di Terros.
+* **Thorik:** Cerca di tenere il Boss sull'Altare (subendo i tremori) proteggendo Artemis o intraprendendo mosse acrobatiche con Aegis Fang (Ritorno) prestandosi da ancora gravitazionale.
+* **Artemis:** Con *Wings of Shadow* rimane immune al Tremore e subisce meno danni grazie alla penalità di Terros contro bersagli volanti. Può bersagliare agilmente dall'alto.
+* **Reazione del Boss:** Usa *Earth Glide* nell'Altare per nascondersi, emergendo alle spalle di bersagli a terra per sferrare letali pugni o Tremori.
 
 ---
 
@@ -163,11 +165,27 @@ Moradin parla, voce che fa tremare le ossa:
 * Thorik perde permanentemente **2 punti Destrezza** (le sue articolazioni fondono con la pietra, indurendosi dolorosamente).
 * Guadagna permanentemente **+2 Costituzione** (scambio equivalente).
 
-**FASE 2: FORGIARE LA CONNESSIONE (Il Gruppo Unito)**
+**FASE 2: FORGIARE LA CONNESSIONE (Skill Challenge di Gruppo - 3 Round)**
 
-* **Thorik:** Tiene la Corona sull'Altare mentre la pietra risale le sue braccia. Deve superare **TS Tempra CD 25** ogni round per 3 round. Ogni fallimento = 1 livello di indebolimento (esausto > barcollante > svenuto). Se cade, l'energia lo stritola.
-* **Tordek:** Usa i nuovi Bracieri per colpire l'Altare a ritmo, creando vibrazioni che contrastano la gravità opprimente. **Prova TxC CD 25** (Colpire le rune esatte durante il sisma).
-* **Artemis / Therysol:** Devono usare la magia ( *Dissolvi Magie* o cure pesanti di Therysol) per assorbire lo scarto energetico che ucciderebbe Thorik.
+> *Con l'ultimo colpo, Terros non muore semplicemente: frana. Il suo titanico corpo si sgretola. Dal suo torace distrutto, rimasto a galleggiare magneticamente sul centro dell'Altare, emerge un nucleo di luce verde concentrata: lo **Smeraldo della Forza**. La gemma non fluttua leggermente; è talmente densa da piegare la gravità attorno a sé. Per completare il rituale, la Corona deve essere forzata fisicamente contro lo Smeraldo nudo, ma la reazione di fusione di queste energie divine minaccia di tramutare l'intero gruppo in statue di roccia solida.*
+
+Il rituale dura **3 Round consecutivi**. Tutti i personaggi agiscono contemporaneamente in ogni round per creare una sinergia contro un ambiente letteralmente letale.
+
+* **Thorik (Il Ricettacolo):**
+  * *Azione:* Deve mantenere il contatto tra la Corona e lo Smeraldo a mani nude, sopportando la forza disgregante del Piano della Terra che cerca di fossilizzare il suo sangue.
+  * **La Prova:** **TS Tempra o Prova di Forza CD 26** ogni round.
+  * **Il Malus (Se Fallisce):** La sua carne inizia a tramutarsi in granito grigio vivente. Subisce progressivamente e in modo cumulativo il "Peso": *1° Fallimento* = Diventa Esausto; *2° Fallimento* = Diventa Barcollante; *3° Fallimento* = Crolla Prono ed è Stordito col fiato bloccato (l'energia lo stritola causando 4d6 danni).
+
+* **Tordek (Il Sisma Contrario):**
+  * *Azione:* Usa i suoi nuovi *Bracieri (Risveglio Terra)* per battere i pugni sull'Altare di mithral al ritmo esatto del cuore di Thorik. Sta dominando un terremoto indotto, generando un'onda d'urto uguale e contraria alla gravità dello Smeraldo.
+  * **La Prova:** **Prova di Attacco (Mischia) CD 25** o **Saggezza (Concentrazione) CD 25** contro la dura superficie dell'Altare.
+  * **Il Vantaggio (Se Riesce):** La perfetta risonanza nanica assorbe lo sforzo fisico, abbassando drasticamente la **CD della Tempra di Thorik di 10 punti** (rendendola una gestibile CD 16 per quel round).
+  * **Il Malus (Se Fallisce):** L'onda d'urto va fuori sincrono. Il pavimento esplode in scaglie verso l'alto; sia Tordek che Thorik subiscono **3d6 danni perforanti/contundenti** dalla frammentazione.
+
+* **Artemis (La Valvola di Sfogo):**
+  * *Azione:* Il surplus di energia verde massiccia sprizza come plasma ustionante dalla fusione tra Gemma e Corona. Artemis si frappone come parafulmine, usando le sue aure caotiche e le sinergie dell'Anello per intercettare e disperdere queste scorie.
+  * **La Prova:** **Utilizzare Oggetti Magici (Anello) CD 25** oppure **Eldritch Blast (TxC di Contatto a Distanza) CD 25** usato "involutamente" come scudo respingente.
+  * **Il Malus (Se Fallisce):** La pressione letale non viene deviata. Scarica su entrambi! Artemis viene sbalzato all'indietro violently (**Cade prono e subisce 2d6 danni da Forza**). Thorik viene investito dai residui subendo un irrigidimento automatico (**1d4 danni DES temporanei da calcificazione**).
 
 **FASE 3: L'INCASTONATURA E LA VISIONE**
 Se sopravvivono, lo Smeraldo della Forza, verde e pulsante come la linfa vitale della terra, si incastella nella tempia sinistra della Corona.
@@ -188,19 +206,19 @@ Se sopravvivono, lo Smeraldo della Forza, verde e pulsante come la linfa vitale 
 * **TS:** Tempra +16, Riflessi +6, Volontà +16.
 * **Speciale:** Se morde un'arma/scudo magico, fa prova di Spezzare (+26). Se riesce, l'oggetto è distrutto e lo Xorn cura 30 HP.
 
-### **TERROS L'ANTICO (CR 16)**
+### **TERROS L'ANTICO (CR 15)**
 
-*Titanico Elementale della Terra*
+*Elementale della Terra Anziano*
 
-* **Taglia:** Colossale (virtualmente, occupa mezza stanza)
-* **HP:** 380
-* **CA:** 28
-* **DR:** 15/-
-* **Immunità:** Elementale, Acido, Veleno, Critici.
-* **Debolezza:** Sonico (prende il 50% di danni in più).
+* **Taglia:** Enorme (Huge: 4.5m x 4.5m)
+* **HP:** 345
+* **CA:** 26 (-2 Taglia, +18 Naturale)
+* **DR:** 10/-
+* **Immunità:** Elementale, Acido, Veleno, Sonno, Paralisi, Critici.
+* **Debolezza:** Sonico (Frantumare di Tordek infligge 1.5x Danni).
 * **Attacchi:**
-  * *Schianto Titanico:* +32 mischia (4d10+16).
-  * *Lancio Roccia:* +25 distanza (3d10+16).
+  * *Schianto:* +30 mischia (2d10+10).
+  * *Lancio Roccia:* +19 distanza (2d8+10).
 
 ---
 

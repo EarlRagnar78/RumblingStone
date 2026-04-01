@@ -1,0 +1,306 @@
+OnlineMarkdown.com
+
+1 di 4
+
+https://onlinemarkdown.com/
+
+Sinergie Artefatti Quick Reference
+╔═══════════════════════════════════════════════════════════╗
+║
+
+║
+
+║
+
+SINERGIE ARTEFATTI - QUICK REFERENCE
+
+║
+
+║
+║
+
+║
+═══════════════════════════════════════════════════════
+
+║
+
+║
+
+CORONA + AEGIS FANG (Thorik, sempre attivo)
+
+║
+
+║
+
+- +2 sacro tutti TS
+
+║
+
+║
+
+- +1d6 danno sacro vs CE/CN/male
+
+║
+
+║
+
+║
+
+-.-║
+
+- Richiamo Ancestrale (1/giorno): ascia vola mano
+
+║
+
+║
+
+║
+
+║
+║
+
+║
+─────────────────────────────────────────────────────
+
+║
+
+║
+║
+
+║
+CORONA + RING (Thorik + Artemis entro 9m)
+
+║
+
+║
+
+║
+
+║
+
+- +1 CA vs Legali (quando entro 3m)
+
+║
+
+║
+
+- Visione Planare (1/giorno, Artemis)
+
+║
+
+║
+
+- Dissolvere Illusioni (1/giorno, Artemis, 9m burst)
+
+║
+
+║
+║
+
+║
+─────────────────────────────────────────────────────
+
+║
+
+║
+
+║
+
+║
+
+AEGIS + RING (Thorik + Artemis, coordinato)
+
+║
+
+║
+
+- Colpo Alba Oscura (1/giorno):
+
+║
+
+║
+
+Artemis: Daylight su nemico
+
+║
+
+║
+
+Thorik: +2 attacco, +2d6 danni vs stesso nemico
+
+║
+
+║
+║
+
+║
+─────────────────────────────────────────────────────
+
+║
+
+║
+
+║
+
+║
+
+TRINITÀ DIVINA (Thorik + Artemis + Thordek entro 9m)
+
+║
+
+║
+
+- 1/giorno
+
+║
+
+║
+
+- Azione movimento coordinata da ogni PG, dura 5 round
+
+║
+
+║
+
+- +3 sacro tutti TS
+
+║
+
+║
+
+- Immunità paura/charme
+
+║
+
+║
+
+- +2 deflection CA
+
+║
+
+║
+
+- Danni contano "bene" e "legge" per RD
+
+║
+
+║
+
+- Nemici entro 18m: TS Volontà CD 20 o Scossi 1rd
+
+║
+
+║
+
+- Cooldown: 24 ore
+
+║
+
+║
+║
+
+╚═══════════════════════════════════════════════════════════╝
+
+16/01/26, 19:58
+
+OnlineMarkdown.com
+
+2 di 4
+
+https://onlinemarkdown.com/
+
+Corona di Adamantio + Ring of Chaotic Illumination
+Distanza Attivazione: 9 metri (6 quadretti) tra Thorik e Artemis
+Eﬀetti Passivi (Quando Entrambi Entro 9m):
+2. Benedizione Paradossale:
+• Quando Thorik E Artemis entro 3 metri:
+◦ Entrambi: +1 schivare CA contro attacchi da creature Legali (LN/LB/LM)
+◦ Rappresenta protezione reciproca attraverso condivisione ﬁlosoﬁca caotica (CN
+entrambi ora)
+Eﬀetti Attivi (1/giorno ciascuno, azione swift):
+3. Visione Planare (Artemis attiva):
+• Azione: Swift (Artemis concentra Ring)
+• Durata: 1 round (6 secondi)
+• Eﬀetto: Artemis "vede" attraverso piani elementali
+◦ Se Portale Piano Fuoco aperto: vede cosa accade là entro 300m raggio
+◦ Se Portale Piano Terra aperto: idem
+◦ Percezione: visiva + uditiva (come Clairaudience/Clairvoyance)
+• Uso Tattico: Scout area pericolosa prima entrare, evitare imboscate
+Meccanica D&D 3.5:
+• CL eﬀettivo 13°
+• Bloccabile da Screen o eﬀetti anti-divinazione CL 14+
+• Visione non permette interazione (solo osservazione)
+4. Dissolvere Illusioni (Artemis attiva):
+• Azione: Swift
+• Raggio: 9m burst centrato su Artemis
+• Eﬀetto:
+◦ Illusioni ﬁno 5° livello: dissipate AUTOMATICAMENTE
+◦ Illusioni 6°+: prova livello incantatore 1d20+13 vs CD 11+livello incantesimo
+▪ Esempio: illusione 7° livello, CD 18, Artemis tira 1d20+13, serve 5+ per dissipare
+◦ Include inganni psionici (mind ﬂayer) - trattati come illusioni livello = potere psionico
+diviso 2
+• Uso Tattico: Rivelare nemici invisibili, dissipare trappole illusorie, smascherare inganni
+
+16/01/26, 19:58
+
+OnlineMarkdown.com
+
+3 di 4
+
+https://onlinemarkdown.com/
+
+Meccanica D&D 3.5:
+• Come Greater Dispel Magic ma solo vs illusioni, raggio limitato
+
+Colpo dell'Alba Oscura (1/giorno, azione coordinata):
+Distanza Attivazione: Coordinazione tattica (Artemis + Thorik devono agire stesso round)
+Procedura:
+1. Round X, Turno Artemis: Artemis lancia Daylight (capacità Ring) centrato su NEMICO
+scelto
+◦ Raggio: 18m
+◦ Nemico target: accecato se sensibile luce (TS Tempra CD Warlock)
+◦ Altri nemici nel raggio: -1 attacco se sensibili luce
+2. Round X, Turno Thorik (dopo Artemis): Thorik attacca STESSO nemico accecato
+◦ Bonus: +2 attacco (nemico accecato = perde bonus DES CA, +2 per attaccante vede)
+◦ Danno: Se colpisce, +2d6 danni extra (luce divina ampliﬁca impatto Aegis Fang)
+Requisiti:
+• Entrambi devono dichiarare coordinazione PRIMA turno inizia
+• Artemis deve agire prima Thorik (iniziativa o Ready Action)
+• Nemico deve essere visibile entrambi
+
+TRIPLICE RISONANZA - Tutti e 3 Artefatti Attivi Simultaneamente
+Distanza Attivazione: TUTTI e 3 portatori (Thorik+Tordek+Artemis) entro 9m l'uno dall'altro
+Eﬀetto: Trinità Divina (1/giorno, azione swift condivisa):
+Procedura Attivazione:
+1. Thorik e Artemis e Tordeck dichiarano attivazione simultanea (coordinazione verbale)
+2. Entrambi spendono azione movimento (stesso round)
+3. Eﬀetto parte immediatamente, dura 5 round
+Eﬀetti Durante Trinità (Su ENTRAMBI Portatori):
+Difensivi:
+• +4 sacro a TUTTI TS (Tempra, Riﬂessi, Volontà)
+• Immunità Paura e Charme (magici e naturali)
+• +2 deﬂection CA (sacro)
+
+16/01/26, 19:58
+
+OnlineMarkdown.com
+
+4 di 4
+
+https://onlinemarkdown.com/
+
+Oﬀensivi:
+• Danni inﬂitti considerati "bene" e "legge" per superare RD
+• Aura Intimidazione: Nemici entro 18m (prima volta vedono aura)
+◦ TS Volontà CD 20 o Scossi (-2 attacco/TS/abilità) per 1 round
+◦ Salvezza 1 volta per nemico per combattimento
+Eﬀetto Visivo (Narrativo ma Impressionante):
+• Triangolo luce dorata connette Corona → Bracciali Della Devastazione → Ring
+• Musica eterea: coro nanico distante + campane argentee
+• Aria trema leggermente (risonanza dimensionale)
+Limitazione:
+• Dopo uso, artefatti devono "ricaricarsi" - Trinità non riattivabile per 24 ore
+
+16/01/26, 19:58
+
+

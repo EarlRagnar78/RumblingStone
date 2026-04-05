@@ -37,7 +37,7 @@ Il Collezionista indossa l'**Amuleto dell'Eclissi Planare** (Artefatto Minore):
 
 Varis offre ad Artemis lo scambio: il **Mantello dei Tiri Salvezza Elevati** (un oggetto che Artemis brama) in cambio del furto di un registro/reliquia dal caveau inviolabile del clan Ironforge (che cadrà sotto le macerie domani).
 
-* **Meccanica:** Richiede prove multiple di Raggirare (CD 25 per deviare guardie), Disattivare Congegni (CD 32 sulle serrature meccanomagiche antiche) e Utilizzare Oggetti Magici (CD 30 per craccare la barriera runica). Esalta la build skill-monkey di Artemis. Rende Artemis ricco ma moralmente compromesso.
+* **Meccanica:** Richiede prove multiple di Raggirare (CD 25 per deviare guardie), Artemis non ha Disattivare Congegni (CD 32 sulle serrature meccanomagiche antiche) ovviando con incantesimi e pergamene vendute da Varis stesso e Utilizzare Oggetti Magici (CD 30 per craccare la barriera runica). Esalta la build skill-monkey di Artemis. Rende Artemis ricco ma moralmente compromesso.
 
 ### Il Dilemma per THORIK (Il Manager)
 
@@ -49,7 +49,7 @@ Varis offre a Thorik un'arma: i "Fuochi di Baator", alabarde incendiarie o canno
 
 Tordek non deve "comprare" da Varis. Può notare i **Cristalli di Risonanza** (esplosivi sonici nanici antichi rubati da Varis).
 
-* **Meccanica:** Tordek può usare *Artigianato (Ingegneria/Fabbricare Trappole) CD 28* e *Conoscenze (Architettura/Ingegneria) CD 25* per "hackerare" i forzieri dimensionali di Varis e rubare gli esplosivi mentre Artemis lo distrae. Tordek usa i propri pugni per alterare la frequenza vibratoria del cristallo di chiusura. Risalta la sua natura anarchica/costruttiva.
+* **Meccanica:** Tordek non può usare *Artigianato (Ingegneria/Fabbricare Trappole) CD 28* e non puo usare *Conoscenze (Architettura/Ingegneria) CD 25* per "hackerare" ovviare con metodi non convenzionali per aprire i forzieri dimensionali di Varis e rubare gli esplosivi mentre Artemis lo distrae. Tordek usa i propri pugni per alterare la frequenza vibratoria del cristallo di chiusura. Risalta la sua natura anarchica/costruttiva.
 
 ### La Sfida Etica per HELLA (La Bussola Morale)
 
@@ -63,3 +63,6 @@ Varis rifiuta di curare una sezione di nani feriti (rifugiati) perché non posso
 
 * **Mai attaccare.** Se attaccato, Varis sorride, attiva una contingenza (*Parola del Ritiro* o *Porta Dimensionale*) e svanisce, dicendo: *"Il mercato libero si è chiuso in anticipo oggi, signori. I tassi di interesse sul vostro orgoglio saranno letali."*
 * **Sottigliezza.** Parla con voce calma, vellutata. Offre sempre tè esotici, tratta i PG come "esimi clienti" anche quando li sta insultando velatamente. Usa sempre scappatoie legali nei patti che stringe.
+
+* **Il piano di Varis:**
+ha un piano per far si che i PG si uccidano tra di loro. e che poi lui possa depredare i cadaveri dagli artefatti dei PG e venderli al miglior offerente.ha una gilda di ladri ed assassini che lavora per lui (simile al libro di R.A. Salvatore per la parte del capo della gilda di ladri).Ha un clone di se stesso incontrato dai pg all'inizio della campagna nel minotaur lair che poi si rivelerà essere stato inviato per fare affari con i drow e la regina dei funghi.

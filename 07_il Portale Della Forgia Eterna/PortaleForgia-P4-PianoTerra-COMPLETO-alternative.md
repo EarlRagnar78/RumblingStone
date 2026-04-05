@@ -265,19 +265,30 @@ o."*
 
 ### **Descrizione Incontro**
 
+### **Descrizione Incontro (Il Momento di Tordek & Thorik)**
+
 **Narrazione:**
 
-> *Camminate tra cristalli giganti. Sono... magnifici. Alti 40-50 metri, spessi 10m diametro. Superfici sfaccettate riflettono luce interna come caleidoscopio vivente. E CANTANO - risonanza profonda subsonica, senti nel petto non orecchie.*
+> *Camminate tra cristalli giganti. Sono magnifici, ma instabili. Uno di questi enormi pilastri, convergente verso un abisso di lava fredda, è corroso alla base.*
 >
-> *Tordek, con sensibilità monaco a vibrazioni, ti fermi improvvisamente. "Qualcosa si muove. SOTTO."*
+> *Tordek, il tuo occhio ingegneristico nota un difetto strutturale critico. Qualcosa sta "scavando" le fondamenta del pilastro. Se cade, creerà un ponte perfetto sopra l'abisso... ma travolgerà chiunque si trovi sotto.*
 >
-> *E cristallo alla tua destra ESPLODE (non letteralmente - frammenti volano). Da interno emergono TRE creature.*
->
-> *XORN. Mai visti prima, ma riconoscete da descrizioni: corpi roccia simmetrici radiali, tre gambe, tre braccia, bocca circolare piena denti cristallini. Occhi: uno per braccio = tre totali, indipendenti. Altezza: ~1,5m ma massa DENSA (pesano 500kg ciascuno).*
->
-> *Non parlano. Non minacciano verbalmente. Solo... AVANZANO. Bocche aperte. Vedete denti masticare vuoto. Intento chiaro: MANGIARVI. O meglio, mangiare vostro equipaggiamento metallico.*
->
-> *Iniziativa.*
+> *E sotto ci sono loro: TRE XORN. Corpi radiali, mangiatori di pietra e magia. Stanno divorando le vene di mithral che reggono la struttura.*
+
+**Opzioni Tattiche ("Agency" e Non-Binario):**
+
+**Opzione A: Demolizione Ingegneristica (Tordek Shine Time)**
+Tordek intravede la fisica del disastro. Non serve combattere a testa bassa.
+
+- **Sfida:** Prova di Conoscenze (Ingegneria/Dungeoneering) CD 18 per calcolare l'angolo di rottura, seguita da un colpo mirato (Forza o Attacco) CD 20 sul punto di stress.
+- **Risultato:** Il pilastro crolla sugli Xorn! Infligge 10d6 danni (Riflessi CD 22 dimezza) e crea un ponte sicuro. Zero fatica, massima soddisfazione per il giocatore Ingegnere.
+
+**Opzione B: Ordine Tattico (Thorik Shine Time)**
+Thorik valuta il terreno. Ordinare a Tordek di abbattere il ponte sacrificherebbe il prezioso loot di mithral che gli Xorn stanno staccando.
+
+- **Scelta:** Thorik può usare un'Azione di Comando (Intimidire/Diplomazia tattica) per circondare gli Xorn e tendere un'imboscata perfetta (-2 CA ai nemici, +2 TxC al party), sacrificando il ponte ma salvando il tesoro per Artemis.
+
+**Iniziativa (Se si combatte):**
 
 ---
 
@@ -490,15 +501,26 @@ Xorn burrowing = possono seguire attraverso pietra. Difficile scappare.
 >
 > *E parla. Non voce - PENSIERO proiettato menti:*
 >
-> **MADRE CRISTALLO (telepatia):** *"Intrusi carne-morbida. Perché disturbare giardino nostro? Perché violare Piano Terra? Parlate. Giudicheremo."*
+> **MADRE CRISTALLO (telepatia):** *"Intrusi carne-morbida. Perché disturbare giardino nostro? O forse... siete qui per il Sovversivo?"*
 
 ---
 
-### **La Sfida: Convincere Cristalli Viventi**
+### **La Sfida Ramificata: Il Mercante, L'Etica e La Trattativa**
 
-**Obiettivo:** Ottenere permesso/aiuto Madre Cristallo attraversare campo sicuri  
-**Alternativa:** Combattere (MOLTO difficile - centinaia cristalli)  
-**Metodo:** Skill Challenge estesa
+**Evento Subdolo per ARTEMIS (L'Hacking Magico & Il Mercante):**  
+Proprio sotto la Madre Cristallo, Artemis sente il suo Anello dell'Illuminazione Caotica vibrare. Capta un segnale di contrabbando: una Runa Planare parassita installata da **Varis "Seta-Argento"** (il Mercante Opportunista desiderato da Artemis). Varis sta "hackerando" la rete dei Cristalli Viventi per rubare frammenti di mana da vendere sui Mercati Oscuri.
+Tramite la runa, Varis contatta Artemis telepaticamente: *"Vedo che hai un Anello interessante, incantatore. Se non riveli la mia runa alla Madre Cristallo e mi lasci finire l'estrazione, ti garantisco uno sconto vitale per il Mantello dei Tiri Salvezza, e una via per vendere il tuo loot del Sottosuolo. Affare?"*
+
+**Bivio Morale per il Gruppo (Nessuna Scelta è "Sbagliata"):**
+
+- **Scelta 1: Complicità di Artemis (Intrigo)**
+  Artemis sabota l'analisi di Thorik, facendo una prova Contrapposta di *Raggirare / Sapienza Magica* contro la Madre Cristallo (CD 22) per nascondere il furto.
+  - *Vantaggio:* Varis sblocca una "Falla Dimensionale" permanente come Mercato Sicuro (Shop accessibile). Artemis brilla nel suo ruolo di opportunista astuto.
+  - *Rischio:* Se scoperti, i Cristalli attaccano immediatamente (Combattimento infernale).
+- **Scelta 2: Giustizia del Paladino (Thorik comanda, Hella consiglia dal regno degli spiriti)**
+  Thorik o Hella (se contattata) si impongono per denunciare il parassita magico.
+  - *Esito:* Il gruppo estirpa la runa per la Madre Cristallo (Skill Challenge o Tordek spacca fisicamente la runa con CD 22 Forza).
+  - *Vantaggio:* Madre Cristallo diventa alleata fedele. Fornisce percorsi sicuri, scudi passivi (+2 TS contro Terros) e informazioni intime del boss. Varis perde il suo collegamento (e si ricorderà dell'affronto per storie future).
 
 ---
 
@@ -615,30 +637,19 @@ Xorn burrowing = possono seguire attraverso pietra. Difficile scappare.
 
 **Narrazione:**
 
-> *Madre Cristallo brilla intensamente. Pensiero proiezione intensifica:*
->
-> **MADRE CRISTALLO:** *"Carne-morbida... degni. Rare, ma esistono. Voi sacrificate. Voi rispettate. Voi GUARITE fratello nostro ferito. Questo... tocca cuore pietra."*
->
-> *(Pausa. Migliaia cristalli piccoli risuonano accordo MAGGIORE - felice?)*
->
-> **MADRE CRISTALLO:** *"Aiuteremo. Percorso sicuro attraverso campo. E dono: conoscenza Tempio Mithral. Guardiano là... Terros Anziano. Potente. Ma ha debolezza. SUONO. Se cantate frequenza corretta, confonderete. Frequenza è..."*
->
-> *(Proietta SENSAZIONE tono - non udibile, ma SENTITO. PG memorizzano istintivamente)*
->
-> **MADRE CRISTALLO:** *"Usate saggiamente. E... messaggio spirito druida vostra. Ci ha contattato. Dice: 'Semi Treant portiamo sono chiave. Quando resuscita, piantare qui Piano Terra. Ponte vita pietra.' Comprendete?"*
+**Narrazione Assunta (Se Scelta la Giustizia):**
 
-**Benefici Guadagnati:**
+> *Madre Cristallo brilla intensamente, ripulita dal parassita magico. Pensiero proiezione intensifica:*
+>
+> **MADRE CRISTALLO:** *"Carne-morbida... onesti. Rari. Voi pulite la corruzione da questo giardino."*
+>
+> **MADRE CRISTALLO:** *"Aiuteremo. Percorso sicuro attraverso campo. E dono: conoscenza Tempio Mithral. Guardiano là... Terros Anziano. Potente. Ma vulnerabile alla Risonanza Sonica (Informazione per Tordek)."*
+>
+> *(Pausa. Il legame dimensionale si apre un istante)*
+>
+> **MADRE CRISTALLO:** *"E... messaggio spirito druida vostra (Hella). Ci ha contattato. Dice che il cuore della pietra ha abbracciato le ossa del suo caduto. Noi prepareremo il guscio. Voi portate la Forza."*
 
-1. **Percorso Sicuro:** Campo cristalli apre "strada" 3m larga, attraversamento rapido (no hazards)
-2. **Informazione Boss:** Frequenza Suono Confusione (bonus +4 primo round vs Terros)
-3. **Messaggio Hella:** Spirito comunica attraverso Cristalli (conferma lei consciente, attende)
-4. **Amicizia:** Cristalli Viventi ora alleati (possibili aiuti futuri)
-
-**XP:** 1.800 XP totali (600 per PG) - Skill Challenge CR 11
-
----
-
-## 7. INCONTRO 3: IL TEMPIO MITHRAL - PUZZLE GRAVITAZIONALE
+**(Nota per il Master):** Indirizzare alla sezione "*La Piramide Ricalibrata / Il Tempio Mithral CO-OP*" per procedere con la sfida dell'Anti-Gravità, in cui Artemis, Tordek e Thorik collaboreranno equamente come "Traghettatore, Navigatore e Ancora".
 
 ### **Arrivo al Tempio**
 
@@ -1026,21 +1037,32 @@ Moradin parla attraverso l'Altare:
 > *"La Forza non si prende. Si sostiene. Sei disposto a portare il peso della montagna per gli altri, figlio mio?"*
 
 **Opzione A (Sacrificio Materiale):** Offrire gemme/metallo per **40.500 mo**.
+
 - *Loot Disponibile:* Geode Titanico (5k) + Diamanti Xorn (1.2k) = 6.2k. Non basta. Devono sacrificare praticamente tutto il proprio equipaggiamento magico personale.
 
 **Opzione B (Sacrificio Personale - Il Vero Pathos):** Thorik accetta il "Peso".
 > *Sotto la gravità demoniaca, Thorik sente le ossa scricchiolare. Il dolore è accecante. Poi... una sensazione fredda e rassicurante alle spalle. Una luce verde tenue avvolge la grotta. Lo spirito di Hella si stringe a lui telepaticamente: "Non sei solo a portare questo peso, Thorik. Mai più solo." La pressione si stabilizza grazie a lei.*
+
 - Thorik perde permanentemente **2 punti Destrezza** (le sue articolazioni fondono con la pietra, indurendosi dolorosamente).
 - Guadagna permanentemente **+2 Costituzione** (scambio equivalente).
 
 **FASE 2: FORGIARE LA CONNESSIONE (Il Gruppo Unito)**
+
 - **Thorik:** Tiene la Corona sull'Altare mentre la pietra risale le sue braccia. Deve superare **TS Tempra CD 25** ogni round per 3 round. Ogni fallimento = 1 livello di indebolimento.
 - **Tordek:** Usa il ki (e i Bracieri) per colpire l'Altare a ritmo, creando vibrazioni che contrastano la gravità opprimente. **Prova Concentrazione o TxC CD 25**.
 - **Artemis:** Deve usare *Eldritch Blast* (o canalizzare il Ring) per dissipare l'energia in eccesso che stritolerebbe Thorik.
 
-**FASE 3: L'INCASTONATURA E LA VISIONE**
-Se sopravvivono, lo Smeraldo vola e si incastra nella tempia sinistra della Corona.
-**Effetto Epico:** Un'onda d'urto smeraldo vi investe. Per un'ora, la vostra carne diventa "pietra vivente" (DR 10/Adamantio gratis). E Thorik, toccando la gemma, sente che l'ancoraggio dello spirito di Hella si è cristallizzato: ora è **impossibile** perderla.
+**FASE 3: L'INCASTONATURA, IL CANE DA GALOPPO E IL RITORNO DI HELLA**
+L'apice emotivo e meccanico della giocata di Hella.
+Lo Smeraldo vola e si incastra nella tempia sinistra della Corona. L'onda d'urto smeraldo vi investe.
+
+> *Per un'ora, la vostra carne diventa "pietra vivente" (DR 10/Adamantio gratis). Thorik sente che l'ancoraggio dello spirito di Hella si fissa alla Gemma.*
+> *Invece di terminare qui, il Portale della Forgia ha una vibrazione sismica di Assestamento. La polvere di Terros e i cristalli strappati dal Piano collassano insieme in un vortice gravitazionale accanto all'Altare.*
+> *La materia inanimata prende forma, guidata dallo spirito di Hella che preme sul mondo dei vivi prima del tempo. Le enormi fauci, le zampe massicce... Il Cane da Guerra animato.*
+>
+> **IL CANE DA Galoppo (COSTRUTTO):** *"Il fedele animale di Hella, morto battaglie fa, non la lascerà più. Ricostruito interamente in granito infuso d'adamantio, i suoi occhi brillano di verde smeraldo."*
+
+Quando Thorik concluderà la successiva resurrezione completa di Hella fuori da qui, ella riceverà indietro il suo fido animale nelle vesti di **Compagno Animale di Pietra** (Statistiche base Cane da Guerra crudelmente potenziate: DR 5/Adamantio, Durezza permanente, immune ai critici). Per la giocatrice (Responsabile Didattica), rappresenta il premio viscerale ed etico controbilanciato dal puro potere strategico che serviva al gruppo in mischia.
 
 ---
 

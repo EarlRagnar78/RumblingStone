@@ -42,7 +42,7 @@ Essendo tu un Senior System Engineer, affrontiamo il design della campagna come 
 
 * **Problema:** Attualmente morta/assente come veicolo o priva di mordente offensivo dopo la morte del compagno.
 * **La Soluzione (Sottotrama e Rituale del Ritorno):**
-  * **La Rinascita Epica:** Quando Thorik finisce il rituale nel piano della terra e resuscita Hella, mandala in rampa di lancio! Quando rinasce, ha assimilato parte della Terra. Il suo vecchio compagno animale non è "sostituito", ma **il suo spirito ritorna, incarnato nella pietra solida infusa di cristalli**. Diventa un costrutto/cane da guerra vivente di pietra (guadagna DR 5/Adamantio e si fissa al suo Fianco).
+  * **La Rinascita Epica:** Quando Thorik finisce il rituale nel piano della terra e resuscita Hella, mandala in rampa di lancio! Quando rinasce, ha assimilato parte della Terra. Il suo vecchio compagno animale non è "sostituito", ma **il suo spirito ritorna, incarnato nella pietra solida infusa di cristalli**. Diventa un costrutto/cane da galoppo vivente di pietra (guadagna DR 5/Adamantio e si fissa al suo Fianco).
   * **L'Ascolto della Storia:** Sarà la persona a cui si rivolgono gli NPC indifesi o le forze della natura. Offri bivi etici dove Thorik penserebbe "Li salviamo perché conviene" ma Hella dice "Li salviamo perché è GIUSTO". Cerca l'intrigo Morale. Le due fazioni avversarie potrebbero avere entrambe le proprie ragioni etiche diserate dal rancore. Lei deciderà da che parte sta la bilancia.
 
 ---

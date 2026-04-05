@@ -1,98 +1,52 @@
-# ⚔️ RumblingStone
+# Rumbling Stone
 
-*A custom D&D 3.5 campaign based on Red Hand of Doom.*  
-Setting: Forgotten Realms / The Dalelands • Era: 1372 DR • System: D&D 3.5 SRD
+## Campaign Arcs
 
----
+### 1. The Awakening
+Overview of the first arc where heroes begin their journey.
 
-## Repo Structure
+### 2. The Rising Threat
+Focus on the emerging conflicts and new adversaries.
 
-```
-RumblingStone/
-├── AGENTS.md                          ← AI agent instructions (universal)
-├── campaign/
-│   ├── sessions/                      ← Session logs (YYYY-MM-DD_session-N.md)
-│   ├── npcs/                          ← NPC cards
-│   ├── locations/                     ← Location descriptions
-│   ├── encounters/                    ← Custom encounter files
-│   └── lore/
-│       ├── house-rules.md             ← Active house rules
-│       └── rhod-adaptations.md        ← Red Hand of Doom → Dalelands mappings
-│
-├── skills/dnd-35-rules/               ← CANONICAL skill source
-│   ├── SKILL.md
-│   └── references/                    ← Per-domain rule references
-│
-├── .claude/skills/dnd-35-rules/       ← Claude Code (auto-discovered)
-├── .agents/skills/dnd-35-rules/       ← OpenAI Codex (auto-discovered)
-├── .cursor/skills/dnd-35-rules/       ← Cursor (auto-discovered)
-├── .windsurf/skills/dnd-35-rules/     ← Windsurf (auto-discovered)
-├── .github/copilot/skills/dnd-35-rules/ ← GitHub Copilot (auto-discovered)
-│
-└── scripts/
-    ├── deploy-skills.sh               ← Install skills to user-level agent paths
-    └── sync-skills.sh                 ← Propagate changes from canonical to agent paths
-```
+### 3. The Gathering Storm
+Details on alliances formed and battles prepared.
 
----
+### 4. The Crossroads
+Exploration of pivotal choices impacting the campaign.
 
-## Setup for New Collaborators
+### 5. The Convergence
+A detailed account of climactic events as arcs intertwine.
 
-### 1. Clone the repo
-```bash
-git clone git@github.com:EarlRagnar78/RumblingStone.git
-cd RumblingStone
-```
+### 6. The Fall
+Discussion on the severe challenges faced by heroes.
 
-### 2. Deploy skills to your local agent paths (one-time)
-```bash
-./scripts/deploy-skills.sh
-```
+### 7. The Resolution
+Summarization of conflict resolutions and character growth.
 
-This installs the D&D 3.5 skill to:
-- `~/.claude/skills/` (Claude Code)
-- `~/.codex/skills/` (OpenAI Codex)
-- `~/.cursor/skills/` (Cursor)
-- `~/.windsurf/skills/` (Windsurf)
+### 8. The Legacy
+Understanding the impact of decisions on the future world.
 
-### 3. Verify skill is loaded
+### 9. New Beginnings
+A look into what lies ahead after the campaign’s end.
 
-**Claude Code:**
-```
-/skills
-```
+## Character Directories
 
-**Codex CLI:**
-```bash
-codex --list-skills
-```
+### PG/
+- **Hero Name 1**: Description and role in campaigns.
+- **Hero Name 2**: Description and role in campaigns.
 
-**Cursor / GitHub Copilot:** The skill is auto-discovered from `.claude/skills/` and `.github/copilot/skills/` respectively when you open the repo.
+### PNG/
+- **Antagonist Name 1**: Description and motivations.
+- **Antagonist Name 2**: Description and motivations.
 
----
+## Agent Support Infrastructure
+An overview of the agents supporting the campaigns and their roles.
 
-## Updating Skills
+## Setup Instructions
 
-Edit the canonical source in `skills/dnd-35-rules/`, then sync:
-```bash
-./scripts/sync-skills.sh
-git add . && git commit -m "chore: sync dnd-35-rules skill"
-```
+1. Clone the repository: `git clone [git-url]`
+2. Install dependencies: `npm install` or relevant command based on project.
+3. Follow additional setup steps as per documentation.
 
----
-
-## ChatGPT / Gemini
-
-These platforms don't auto-read repo files.  
-Use the condensed system prompt in `skills/dnd-35-rules/SKILL.md` as the base for:
-- A **Custom GPT** (ChatGPT) — paste SKILL.md content into "Instructions"
-- A **Gem** (Gemini) — paste into the Gem system prompt
-- Any **API-based agent** — inject as system message
-
----
-
-## License
-
-Campaign content: privately owned (based on *Red Hand of Doom* © Wizards of the Coast).  
-D&D 3.5 rules content in `skills/dnd-35-rules/`: Open Game License (OGL 1.0a).  
-See `skills/dnd-35-rules/references/resources.md` for OGL details.
+## Licensing Information
+This project is licensed under the MIT License. See the LICENSE file for more information.

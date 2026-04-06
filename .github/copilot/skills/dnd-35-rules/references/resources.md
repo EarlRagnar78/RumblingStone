@@ -289,3 +289,19 @@ Flag non-SRD content. Do not invent mechanics."
 - **Archived WotC articles**: Free to read; do not reproduce in bulk
 - **realmshelps.net, forgottenrealms.fandom.com**: Fan sites; for personal/educational use
 - OGL full text: https://www.d20srd.org/ogl.htm
+
+---
+
+## SOURCE 7 — Dripping Quill RHoD Archive
+
+**URL**: https://drippingquill.com/RHOD-Archive.html
+**Scope**: An extensive collection of resources created for a Red Hand of Doom campaign run over 14 months.
+**Why use it**: While the stat block conversions are tailored for Pathfinder rather than D&D 3.5, this archive provides valuable, system-agnostic GM resources that are incredibly useful for running the campaign on a VTT or in-person.
+
+### Categories of Useful Content
+
+- **Maps**: Gridded and ungridded maps for key RHoD encounters (Drellin's Ferry, Marauder Attack, Vraath Keep, Skull Gorge Bridge, The Witchwood, etc.).
+- **Audio Effects**: Hand-picked ambient audio and combat sound effects correctly themed for specific encounters (e.g., Cinder Hill Horde, Hydra roars).
+- **3D Models**: STL links for 3D-printing monsters encountered in the campaign.
+- **Images & Tokens**: NPC and monster reference tokens (top-down view) to be used on VTTs or printed.
+- **GM Screen & Cheatsheets**: Handy Timeline and Victory Points calculators ready to be printed or used digitally.

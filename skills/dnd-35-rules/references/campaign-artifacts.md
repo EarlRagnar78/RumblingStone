@@ -68,7 +68,7 @@ Forged by Moradin from a shard of creation — not merely a crown of power but "
 
 ### Powers To Awaken (Via Legacy Rituals)
 
-3. **Moradin's Insight (Su):** True Seeing 1/day; +4 insight to Craft (Blacksmith). *Unlocked by: Trial of the Deep Hall*
+1. **Moradin's Insight (Su):** True Seeing 1/day; +4 insight to Craft (Blacksmith). *Unlocked by: Trial of the Deep Hall*
 2. **Adamantine Will (Su):** Counter charm/compulsion on natural ground. *Unlocked by: Anvil of the World*
 3. **Mantle of Stone and Spirit (Su):** Continuous Mind Blank; epic/evil DR. *Unlocked by: Siege of the Eternal Forge*
 
@@ -173,7 +173,7 @@ Forged by Moradin from two blocks of adamantine — immersed in Fire Plane magma
 
 ### Earth Phase Powers (⏳ COMPLETING — Trial of the Deep Gallery)
 
-9. **Pelle di Scorie e Pietra:** DR 5/adamantine (continuous)
+1. **Pelle di Scorie e Pietra:** DR 5/adamantine (continuous)
 2. **Pugno Frana (3/day, Su):** Standard attack, +4d6 bludgeoning, target prone (Ref DC 19), adjacent must Balance DC 15 or prone
 3. **Ancoraggio della Montagna (2/day, Su):** Immediate; immune to forced movement, +4 saves vs displacement
 4. **Tremore del Forgiatore (1/day, Su):** Standard; 6m AoE: prone + 2d6 bludgeoning (Ref DC 18)
@@ -181,7 +181,7 @@ Forged by Moradin from two blocks of adamantine — immersed in Fire Plane magma
 
 ### Combined Powers (Fire + Earth)
 
-14. **Martello di Fuoco e Pietra:** On confirmed critical with Power Attack unarmed: free Colpi del Fuoco OR Pugno Frana effect (no charge spent)
+1. **Martello di Fuoco e Pietra:** On confirmed critical with Power Attack unarmed: free Colpi del Fuoco OR Pugno Frana effect (no charge spent)
 2. **Cammino nella Tempesta di Macerie:** Always stable on stone/rubble difficult terrain; +2 saves vs Bull Rush/Trip on rock
 
 ### Total Value
@@ -250,12 +250,15 @@ Created during Hella's resurrection ritual from 3 Treant seeds that germinated a
 **Source Files:** `07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md`, Sala della Forgia Eterna sections
 
 ### Description
+
 An ancient mithral altar hiding the **Cuore di Moradin** (Heart of Moradin) — a divine relic concealed inside a perfectly sealed reliquary at the center of the **Sala della Forgia Eterna** (hub room in the Eternal Forge complex). The Heart is not worn but activated through ritual at the Altare. It is functionally part of the Corona di Adamantio artifact set, serving as the catalyst that enables Hella's resurrection and bridges the gap between the gem activation rituals.
 
 ### Activation
+
 Activated via the **Rituale Cuore di Moradin** (performed between Fire Plane Part 3 and Earth Plane Part 4, in the Sala). This is a separate ritual from the gem activations.
 
 ### Powers
+
 1. **Resurrection Enabler:** When activated, the Cuore di Moradin makes the resurrection of a recently deceased ally possible within the Sala della Forgia Eterna — even without standard Raise Dead/Resurrection spells — at the cost of permanent sacrifices from each party member.
 2. **Moradin's Presence:** While active, the Cuore radiates Moradin's divine aura throughout the Sala, granting:
    - +2 sacred bonus to all saves within the Sala
@@ -264,9 +267,11 @@ Activated via the **Rituale Cuore di Moradin** (performed between Fire Plane Par
 3. **Gem Synergy Catalyst:** The Cuore must be active before the Temporal Portal (Part 5) can open — it provides the divine energy bridge between the Topaz and Emerald gems.
 
 ### Status
+
 ✅ ACTIVATED (Rituale Cuore di Moradin completed between Parts 3 and 4)
 
 ### Relationship to Other Artifacts
+
 - Part of the Corona di Adamantio set (functionally)
 - Required for Hella's resurrection (prerequisite)
 - Required for Temporal Portal opening (Part 5)
@@ -277,9 +282,11 @@ Activated via the **Rituale Cuore di Moradin** (performed between Fire Plane Par
 ## NARRATIVE CONNECTIONS
 
 ### Il Collezionista's Artifact Trade
+
 The Rakshasa known as **Il Collezionista**, who escaped the Minotaur Lair encounter (Pre-Arc 01), has since formed an alliance with Sonjak's drow faction. He provides **strange and pure evil artifacts** to the drow — possibly the same artifacts the drow seek during the Night of the Drow assault on Rethmar's temple (Arc 09, Phase 0). His basilisk-powered macabre statue trade continues to fund these operations.
 
 ### Therysol's Origin
+
 The NPC **Therysol** (found in the Fire Plane, Arc 07) was originally a slave sold — with her brother — by drow traders affiliated with Il Collezionista's guild to salamanders in the Fire Elemental Plane. Her brother died and left a crystal that fused with Therysol, transforming her into an unicum. She hates salamanders and the elemental plane. After helping the party in the Fire Node and guarding Hella's corpse during the resurrection, Therysol descends deeper underground seeking revenge against Il Collezionista's drow guild. She may appear as an NPC ally during the Notte dei Drow at Rethmar (Arc 09, Phase 0).
 
 ---
@@ -299,11 +306,13 @@ A mystical orb that channels the user's life force through progressively dangero
 
 **Activation:** Free action (one gate per round)
 **Effect per gate:**
+
 - +2 morale bonus to STR and DEX
 - +2 morale bonus to all saving throws
 - Duration: 1 round per gate
 
 **Cost per gate:**
+
 - 1d4 temporary CON damage (cumulative)
 - Fatigued condition after all gates close
 - Concentration check DC 20 + number of gates already opened to activate safely

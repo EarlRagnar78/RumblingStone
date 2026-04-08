@@ -42,7 +42,8 @@ for rel in "${AGENT_DIRS[@]}"; do
     continue
   fi
   mkdir -p "$dest"
-  rsync -a --delete "${CANONICAL}/" "${dest}/"
+  rm -rf "${dest}"
+  cp -R "${CANONICAL}" "${dest}"
   info "  Synced → ${rel}"
 done
 

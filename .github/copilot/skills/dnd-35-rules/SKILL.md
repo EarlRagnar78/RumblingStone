@@ -62,12 +62,14 @@ Secondary sources: **Forgotten Realms Wiki** (fandom.com/wiki/Forgotten_Realms_W
 | Question domain | Load file |
 |---|---|
 | **Party composition** — Thorik, Tordek, Hella, Artemis, Rumbling Stone group, PCs | `references/campaign-party.md` |
+| **Player profiles & DM Strategy** — Adult player profiles, Shine Time, State Machine, Triangolo di Rischio, encountering design for Thorik/Artemis/Tordek/Hella | `references/campaign-dm-strategy.md` |
 | **Campaign artifacts** — Aegis Fang, Corona di Adamantio, Ring of Chaotic Illumination, Bracieri Gemelli, Collana dei Semi Eterni, Cuore di Moradin | `references/campaign-artifacts.md` |
 | **Campaign story arcs** — Timeline, what happened, what's next, current state, arc index, villain/ally tracker | `references/campaign-story-arcs.md` |
 | **Campaign factions** — Il Collezionista, Sonjak, Githyanki, Circle of Eight, Hammerfist | `references/fr-factions.md` (campaign section) |
 | **Underdark geography** — Eternal Forge, dungeon chain, Fire/Earth/Temporal planes | `references/fr-cannath-vale.md` (Underdark section) |
 
 #### Decision Logic for FR Questions
+
 - "Who is the god of X?" → `fr-deities-complete.md`
 - "What domains does deity X grant?" → `fr-deities-complete.md`
 - "Tell me about Waterdeep / Thay / Rashemen / Menzoberranzan" → `fr-regions-complete.md`
@@ -81,7 +83,8 @@ Secondary sources: **Forgotten Realms Wiki** (fandom.com/wiki/Forgotten_Realms_W
 - "Generate a monster image / token" → `dm-expansion-toolkit.md`
 - "Give me a quest for [artifact] / [villain]" → `dm-expansion-toolkit.md`
 - "How do I use dndtools.one / realmshelps.net / the WotC archive?" → `resources.md`
-- "Who is Thorik / Tordek / Hella / Artemis?" → `campaign-party.md`
+- "Who is Thorik / Tordek / Hella / Artemis?" / "What are their stats?" → `campaign-party.md`
+- "How do I DM for Thorik / Artemis / Tordek / Hella?" / "What is Shine Time / State Machine?" → `campaign-dm-strategy.md`
 - "What does the Corona / Ring / Bracieri / Collana do?" → `campaign-artifacts.md`
 - "What happened at the Mine / Fungi Tower / Eternal Forge?" → `fr-cannath-vale.md` (Underdark)
 - "Who is Il Collezionista / Sonjak?" → `fr-factions.md` (campaign section)
@@ -94,12 +97,14 @@ Secondary sources: **Forgotten Realms Wiki** (fandom.com/wiki/Forgotten_Realms_W
 ## Core Principles for Rules Adjudication
 
 ### The d20 System Contract
+
 - **Roll d20 + modifier vs. DC or opponent's AC/save.** Everything resolves this way.
 - **Specific overrides General.** A class feature that says "you may" trumps a general rule that says "you may not."
 - **Actions cost action economy.** Always clarify: Standard / Move / Free / Swift / Immediate / Full-Round.
 - **RAW vs. RAI.** State which you're providing. If ambiguous, give both interpretations.
 
 ### Ability Scores
+
 | Score | Modifier formula |
 |---|---|
 | 1 | −5 |
@@ -117,7 +122,9 @@ Secondary sources: **Forgotten Realms Wiki** (fandom.com/wiki/Forgotten_Realms_W
 **Formula:** `floor((score − 10) / 2)`
 
 ### The Six Saves
+
 3.5 has **three** saving throws (not five):
+
 - **Fortitude** (CON) — poison, disease, death effects, massive damage
 - **Reflex** (DEX) — traps, area spells, falls
 - **Will** (WIS) — mind-affecting, illusions, enchantments
@@ -196,6 +203,7 @@ EL = CR of single monster, or combined CR for groups (every doubling = +2 EL)
 ## Non-SRD Content Policy
 
 When answering questions about **non-SRD content** (e.g., Tome of Battle, Complete series, Unearthed Arcana variants, Forgotten Realms Campaign Setting prestige classes):
+
 1. State clearly: *"This is non-SRD content from [Book Name]."*
 2. Describe mechanics accurately if known from training data.
 3. Recommend the user verify against their physical/PDF source.
@@ -231,6 +239,7 @@ Always prefer fetching live SRD pages over relying on training data for exact ru
 ## Response Format Guidelines
 
 **For rules questions:**
+
 ```
 **Rule:** [concise answer]
 **Source:** SRD p. X / [Book] p. Y / d20srd.org/srd/...
@@ -239,6 +248,7 @@ Always prefer fetching live SRD pages over relying on training data for exact ru
 ```
 
 **For spell lookups:**
+
 ```
 [Spell Name]
 School: [school] ([subschool]) [descriptor]
@@ -255,6 +265,7 @@ Description: [...]
 **For monster stat blocks**, use the standard SRD block format.
 
 **For lore / Forgotten Realms:**
+
 - Lead with the canonical answer
 - Note the canonical source (FR Campaign Setting 3.5, FRCS, Faiths & Pantheons, etc.)
 - Distinguish 3.5-era canon from 4e/5e retcons explicitly

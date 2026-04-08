@@ -1,5 +1,7 @@
 # IL PORTALE DELLA FORGIA ETERNA
+
 ## PARTE 5 - VIAGGIO TEMPORALE ANNO -1000
+
 ### PARTE 1/2 - Infiltrazione e Preparazione Battaglia
 
 **Versione Definitiva D&D 3.5 - Livello 13 - Stile R.A. Salvatore**
@@ -380,6 +382,14 @@ Se Thorik usa potere Cuore Moradin (Benedizione della Forgia - crea aura luce do
   *- +1 bonus morale TS Tempra contro morte*
   *- Protezione contro Evil (aura)*
 
+**L'Incontro con il Costruttore (Seme Narrativo: Il Signore dei Fantasmi):**
+
+*Mentre i nani preparano le armi, il party incrocia il Mastro Costruttore di Hammerfist: **Arcano Zeth**, un insolito mezz'elfo nanico dagli occhi colmi di stanchezza febbrile. Non sta preparando armi, ma tracciando fitte rune sulle pareti del tunnel principale.*
+
+*'Le mura di Re Thorek potrebbero cedere,' sussurra Zeth, fermandosi a guardare Hella, percependo il suo legame con la pietra e la sua natura. 'Ma ho preparato un rituale estremo. Legherò la mia anima alla montagna in una "Consecration". I miei leoni di pietra e il mio spirito proteggeranno queste gallerie per sempre. Un misterioso chierico incappucciato mi ha appena consegnato i componenti perfetti.'*
+
+*(Nota per il DM: Questo è Zeth, il futuro **Ghostlord / Zeth il Murato**. I "componenti" serviranno in realtà per una Lichificazione, inflittagli originiarmente dalla fazione legata al Collezionista che viaggia tra i piani e le epoche. Questo incontro pianta i semi per il profondo dilemma etico di Hella riguardo a Zeth nell'arco post-Hammerfist).*
+
 **Hella Preparazione Speciale:**
 
 *Hella realizza ha **3 Semi Treant** (da Parte 1 - ne ha portati nel suo zaino druidico magico che trasferisce attraverso portali).*
@@ -446,25 +456,29 @@ Se Thorik usa potere Cuore Moradin (Benedizione della Forgia - crea aura luce do
 ### Interazioni Divine - Parte 1/2
 
 **CORONA DI ADAMANTIO (Thorik):**
+
 - Riconosce Durin istantaneamente (leggenda nanico)
 - Parla a Thorik mentalmente ("Portatore, siamo arrivati. Destino ci aspetta")
 - Topazio + Smeraldo brillano (2 gemme attivate da Parte 4)
 
 **AEGIS FANG (Thorik):**
+
 - Vibra quando Skulldark circola sopra (ascia sente drago nemico primordiale)
 - "Drago. Sangue drago. Sarà battaglia. Io GIOISCO." - voce rara, eccitata
 
 **RING OF CHAOTIC ILLUMINATION (Artemis):**
+
 - Post-cerebromorphosis, ring è STABILIZZATO da Lathander/Mask dual nature
 - Ring brillerà quando Skulldark appare (reazione Ring a energia drago primordiale = distrazione interessante ma non utile)
 - Artemis riceverà visione: "Scelta tua nella notte sarà cruciale. Caos ha due facce. Scegli bene quale mostra."
 
 **CINTURA DELLA DEVASTAZIONE (Tordek - formerly Devastation Gauntlets):**
+
 - Tordek sente "peso dell'onore" indossando cintura in Hammerfist ancestrale
 - Cintura whisper: "Monaco, sacrificio è venuto primo ora. Cintura dà forza. Ma forza senza saggezza è rovina."
 
 **HELLA (Treant + Druidica):**
+
 - Spirito Hella è VICINO ora - da resurrezione Parte 3B, anima sua è "prossima" temporalmente
 - Treant rispondono sua volontà perfettamente (no ritual requirement, pure bonding spirituale)
 - Hella sente "Sorpresa. Sorpresa che posso stare così lungo nel corpo-mondo. Ma è giusto. È battaglia. Io COMBATTO."
-

@@ -84,11 +84,19 @@ Anche con la *Benedizione Forza Montagna* di Moradin, il piano resiste alla vost
 
 ---
 
-## 4. IL TEMPIO MITHRAL & RISVEGLIO DEI BRACIERI
+## 4. IL TEMPIO MITHRAL & VISITA IN ZERO-G (SHINE TIME COOP)
 
 **Mappa Tattica B: Tempio Mithral (Parte Esterna)**
-Cubo perfetto sospeso nel vuoto. Ingresso dal basso.
-> **NOTA DM:** Seguire qui il file `03_Risveglio_Completo_Bracieri_Terra.md` per lo scontro con la Sentinella Golem.
+Cubo perfetto sospeso nel vuoto oceanico di roccia liquida. Ingresso dal basso. L'area intorno al tempio è caratterizzata da Gravità Zero e detriti fluttuanti.
+
+**Sfida Cooperativa ("Il Traghettatore, il Navigatore e L'Ancora"):**
+L'attraversamento dello spazio vuoto non richiede un semplice tiro di Saltare, bensì uno sforzo combinato che valorizza ogni PG:
+
+1. **L'Ancora (Thorik):** Rimane sul bordo della roccia salda. Grazie alla sua pura Forza ed Equipaggiamento, pianta saldamente i piedi a terra (o conficca l'Aegis Fang) fungendo da perno di salvataggio. Se qualcosa va storto nei tiri successivi, interviene lui per fermare la deriva nel vuoto (Prova di Forza CD 20 invece di perdersi nel piano).
+2. **Il Traghettatore (Artemis):** Usando le *Ali dell'Ombra*, ignora i rischi della gravità invertita. Vola portando un cavo mithral (o magico) agganciato a Thorik, superando il vuoto agevolmente.
+3. **Il Navigatore (Tordek):** Sfrutta la sua immensa Attaccare/Saltare da Monaco. Balza tra gli asteroidi fluttuanti fino al Cubo per colpire meccanicamente la serie di **Rune di Attracco** esterne, stabilizzando l'ingresso gravitazionale per far attraccare Artemis e trainare Thorik in sicurezza.
+
+> **NOTA DM:** All'ingresso, prima dello scontro finale, seguire qui il file `03_Risveglio_Completo_Bracieri_Terra.md` per lo scontro con la Sentinella Golem.
 
 ---
 
@@ -126,20 +134,20 @@ Cubo perfetto sospeso nel vuoto. Ingresso dal basso.
 
 1. **Vulnerabilità Sonica:** I danni sonici infliggono x1.5 danni. *(Nota: Tordek utilizza il suo attacco Frantumare per sfruttare questa debolezza critica come principale fonte DPS).*
 2. **Earth Mastery:** +1 TxC e danni se il bersaglio tocca la pietra/l'Altare. -4 TxC e danni se combatte contro nemici volanti/fluttuanti.
-3. **Assorbimento Terrestre:** Se Terros tocca il pavimento (Altare), rigenera 15 HP a round. I PG devono tenerlo *in aria* o staccarlo dal suolo (usando *Pugno Frana* di Tordek per buttarlo prono/lontano o spingerlo).
+3. **Assorbimento Terrestre:** Se Terros tocca il pavimento (Altare), rigenera 15 HP a round. I PG devono tenerlo *in aria* o staccarlo dal suolo.
 
 **Lair Actions (1 a round al conteggio Iniziativa 20):**
 
 A. **Gravity Pulse (Ricarica 1d4 round):** Terros sceglie una direzione ("Su", "Giù", "Sinistra"). La gravità diventa normale o si inverte temporaneamente. Tutti cadono di 9m: TS Riflessi CD 22 o 4d6 contundenti e cadono proni contro superfici.
-B. **Pioggia di Stalattiti (Ricarica 5-6):** Raggio 9m. 8d6 danni contundenti/perforanti (Riflessi CD 22 dimezza).
-C. **Tremore (Ricarica 1d3 round):** Solo sull'Altare o muri: TS Riflessi CD 22 o cadere proni con 2d6 danni. Chi è in zero-G è immune.
+B. **Pioggia di Stalattiti a Ricerca (Ricarica 5-6):** Massi massicci vengono sparati contro Thorik e Tordek (8d6 danni). **(Momento Artemis - "Difesa Soverchiante"):** Artemis può usare un'Azione Veloce o Reazione per scatenare Blast multipli e disintegrare le stalattiti a mezz'aria (Eldritch Blast vs CA Touch dei massi 12), annullando completamente i danni per i compagni.
+C. **Scudo di Geodi (Passivo di Lair / 1d3 turni):** Terros solleva lastre di diamante dal pavimento, ottenendo +4 CA e Negando i Critici. **(Momento Tordek - "Shatter-Strike"):** Tordek può eseguire una prova di Sapienza Strutturale (appoggiata ad attacco da Monaco e Bracieri) cercando la Risonanza. Se colpisce infliggendo danno Sonico sufficiente (>15 danni sonici in un colpo), manda in frantumi lo scudo e lascia Terros *Frastornato* per il round di Thorik.
 
-**Strategia e Sinergie dei PG:**
+**Strategia e Sinergie dei PG ("Shine Time"):**
 
-* **Tordek (Awakened Bracieri Terra):** La sua **RD 5/Adamantio** è vitale per mitigare i colpi, e il suo **Pugno Frana** o raffiche sonic-infused **(Frantumare)** sono essenziali per sgretolare la CA di Terros.
-* **Thorik:** Cerca di tenere il Boss sull'Altare (subendo i tremori) proteggendo Artemis o intraprendendo mosse acrobatiche con Aegis Fang (Ritorno) prestandosi da ancora gravitazionale.
-* **Artemis:** Con *Wings of Shadow* rimane immune al Tremore e subisce meno danni grazie alla penalità di Terros contro bersagli volanti. Può bersagliare agilmente dall'alto.
-* **Reazione del Boss:** Usa *Earth Glide* nell'Altare per nascondersi, emergendo alle spalle di bersagli a terra per sferrare letali pugni o Tremori.
+* **Tordek (Awakened Bracieri Terra / Lo Scassa-Scudi):** La sua **RD 5/Adamantio** è vitale contro gli schianti minimi, ma il suo vero ruolo è sfruttare la mobilità Zero-G balzando sui muri e usare l'onda sonica dei pugni per frantumare le difese Geode di Terros, aprendo la visuale tattica.
+* **Artemis (Artigliere Antiaereo / L'Occhio di Lathander):** Con *Wings of Shadow* rimane totalmente fuori dalla mischia caotica ed è immune al Gravity Pulse se in volo controllato. I suoi Blast si fondono con Ring of Chaotic Illumination per intercettare minacce (stalattiti) fungendo da scudo a reazione vitale per permettere ai picchiatori di restare concentrati sui danni ignorando la fisica dei detriti.
+* **Thorik (L'Ancora di Adamantio):** Invece di dover solo inseguire il boss lento come un sasso, Thorik ottiene il controllo del terreno. **(Momento Thorik - "Ground Zero"):** Quando Terros cerca di inabissarsi (*Earth Glide*) per sfuggire o ricaricarsi, Thorik può attivare una prova di Forza bruta contrapposta, conficcando fisicamente l'Aegis Fang sulle crepe aperte dal Boss per prosciugare la magia della terra sotto di lui e bloccarlo in superficie come un insetto su uno spillo. Subisce di conseguenza la concentrazione degli attacchi del boss, ma il suo scudo (+Aegis) è la barriera finale inamovibile.
+* **Reazione del Boss:** Una furia devastatrice bloccata tra il martello incontrollabile (Thorik) e due zanzare letali e intoccabili (Tordek, Artemis) che lentamente lo sfiancano disabilitando le sue potenti manipolazioni ambientali.
 
 ---
 

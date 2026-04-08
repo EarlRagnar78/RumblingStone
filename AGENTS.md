@@ -30,6 +30,7 @@ This repo ships a full **D&D 3.5 rules skill** in `skills/dnd-35-rules/`.
 AI agents that support the SKILL.md standard will automatically use it.
 
 When any agent answers a D&D 3.5 rules question:
+
 - Load `skills/dnd-35-rules/SKILL.md` first
 - Use the domain routing table inside it to load the correct reference file
 - Cite sources: SRD section, or `[Private — Red Hand of Doom, p.X]` for non-SRD content
@@ -40,11 +41,13 @@ When any agent answers a D&D 3.5 rules question:
 ## Campaign-Specific Conventions
 
 ### File naming
+
 - Sessions: `campaign/sessions/YYYY-MM-DD_session-N.md`
 - NPCs: `campaign/npcs/[name-kebab-case].md`
 - Encounters: `campaign/encounters/[location-name]_encounter.md`
 
 ### NPC file format
+
 ```markdown
 # [NPC Name]
 **Role**: [villain / ally / neutral]
@@ -57,6 +60,7 @@ When any agent answers a D&D 3.5 rules question:
 ```
 
 ### Session log format
+
 ```markdown
 # Session N — [Title] (YYYY-MM-DD)
 **Players present**: [list]
@@ -69,6 +73,7 @@ When any agent answers a D&D 3.5 rules question:
 ```
 
 ### Encounter file format
+
 ```markdown
 # Encounter: [Name]
 **Location**: [room/area]
@@ -88,6 +93,7 @@ When any agent answers a D&D 3.5 rules question:
 3. **House rules** live in `campaign/lore/house-rules.md` — always check before ruling
 4. **RAW vs RAI**: state which you're providing; give both if ambiguous
 5. **Red Hand of Doom adaptations**: documented in `campaign/lore/rhod-adaptations.md`
+6. **DM Strategy & Player Profiles**: For adult-oriented, non-linear sessions (Shine Time, State Machine design), always consult `campaign/lore/csmpaign players.md` (or the equivalent agent skill reference `campaign-dm-strategy.md`).
 
 ---
 
@@ -107,6 +113,7 @@ When any agent answers a D&D 3.5 rules question:
 ## Supported Agents
 
 This repo is configured for automatic skill discovery by:
+
 - **Claude Code** → `.claude/skills/dnd-35-rules/`
 - **OpenAI Codex** → `.agents/skills/dnd-35-rules/`
 - **GitHub Copilot** → `.github/copilot/skills/dnd-35-rules/`

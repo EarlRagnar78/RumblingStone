@@ -173,6 +173,7 @@ The Rumbling Stone has **no rogue**. They handle challenges through:
 | **Zalkatar** | Illithid Warlock Drow (CR 13), previous Ring of Chaotic Illumination owner. Boss of Invisible Tower quest (Arc 09-P2A). | Active — awaiting in Invisible Tower | `09_.../Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` |
 
 ### Therysol — Full Background
+
 Originally a slave (with her brother) sold by drow traders affiliated with Il Collezionista's guild to salamanders in the Fire Elemental Plane, forced to serve at the forge. Her brother died and left a crystal that fused with her, transforming her into the being she is now — an unicum. She hates salamanders and the elemental plane. Helped the PGs during the Fire Node quests. Was guarding Hella's corpse in the Sala della Forgia Eterna; after Hella's resurrection, she goes deeper underground seeking the origin of her destiny — which is Il Collezionista's drow guild — to find revenge. Can appear as an NPC ally during the Notte dei Drow assault on Rethmar (Arc 09, Phase 0), attacking drow from within.
 
 ---
@@ -180,8 +181,10 @@ Originally a slave (with her brother) sold by drow traders affiliated with Il Co
 ## Campaign Progression Summary
 
 ### Underdark Detour (Pre-01 through 07, Levels 4–13)
+
 After the destruction of Drellin's Ferry (where Thorik died and was resurrected), the party went to Hammerfist Hills. Guided by Moradin's visions and dwarven oracles, they descended into the Underdark to find the Corona di Adamantio. This took them through:
 0. **Minotaur Lair** (Pre-Arc 01, unnumbered) — First Underdark area below Hammerfist. Maur defeated; **Il Collezionista** (Rakshasa + basilisk) **ESCAPED** (recurring villain, now allied with drow). Cristal Warriors encountered (from *Underdark* p.93).
+
 1. **01_LaMiniera** — Ancient dwarven mine, Grell Necromancer/Patriarch. Cristal Warriors also encountered in early mine rooms after portal arrival.
 2. **02_scaladossa-abbattor-funghi** — Neverlight Grove adaptation (drow-modified fungi tower, aberrations, connection to Sonjak/Mother of Fungi — undiscovered by party)
 3. **03_la Cittadella** — Abandoned citadel, Moradin temple with undead beholder
@@ -192,7 +195,7 @@ After the destruction of Drellin's Ferry (where Thorik died and was resurrected)
 
 ### Return to RHoD Mainline (Arcs 08–09, Level 13+)
 
-8. **08_La Battaglia Di Hammerfist** — Mass combat at Hammerfist (adapted RHoD battle mechanics) - Using time shift before the events of 7.5 and some other png moved by to make it more interesting and make the battle result impactful to 7.5. that is the **08_La Battaglia Di Hammerfist** will be played by png guided by players and the event and victory or defeat will be impactful to 7.5 section arrival. after the 7.5 section arrival the players will be back to the present and will have to deal with the consequences of their actions as png.  
+1. **08_La Battaglia Di Hammerfist** — Mass combat at Hammerfist (adapted RHoD battle mechanics) - Using time shift before the events of 7.5 and some other png moved by to make it more interesting and make the battle result impactful to 7.5. that is the **08_La Battaglia Di Hammerfist** will be played by png guided by players and the event and victory or defeat will be impactful to 7.5 section arrival. after the 7.5 section arrival the players will be back to the present and will have to deal with the consequences of their actions as png.  
 
 1. **09_Continuazione Arco Narrativo** — Post-Hammerfist: 3 personal quests + Battle of Rethmar (planned)
 
@@ -204,13 +207,11 @@ After the destruction of Drellin's Ferry (where Thorik died and was resurrected)
 - After Earth Node: Hella resurrection ritual → Battle of Hammerfist at year -1000 → return to present
 - Then: personal quests → Battle of Rethmar
 
-
 ### Personal Quests (Arc 09, Post-Hammerfist)
 
 1. **Hella — Il Cerchio Sacro della Foresta (P1):** Druid ritual in the Sacred Forest to become Avatar della Natura. 3 phases with escalating drow attacks (EL 9→11→12). If she passes: Druid Circle offers nature power at Rethmar (animal summons, shapeshifting warriors like Beorn in The Hobbit). If she fails: Circle remains neutral.
 2. **Artemis — Torre Invisibile (P2A):** Confronts Zalkatar (Illithid Warlock Drow, CR 13) in a 5-level invisible tower. Ring of Chaotic Illumination reaches Ultimate Chaos form if victorious. Zalkatar may escape via Greater Teleport.
-3. **Tordek — Torneo Epico di Dauth (P2B):** 3-day martial arts tournament (Dragon Ball / Naruto vibes). Features the Orbe delle Otto Porte (chakra gate mechanics). Day 3 finale vs Grandmaster Rihan interrupted by **Githyanki Red Dragon aerial attack** to steal the sage monk's artifact. Tordek gains chakra enlightenment (7 soul gates). If tournament won: 300 dwarf mercenaries sent to Rethmar.
-
+3. **Tordek — Torneo Epico di Dauth (P2B):** 3-day martial arts tournament (Dragon Ball / Naruto vibes). Features the Orbe delle Otto Porte (chakra gate mechanics). Day 3 finale vs Grandmaster Rihan interrupted by **Githyanki Red Dragon aerial attack** to steal the sage monk's artifact. Tordek gains chakra enlightenment (7 soul gates). If tournament won: 150 dwarf mercenaries survivors sent to Rethmar.
 
 ### Battle of Rethmar (Arc 09-P3, Final Battle)
 

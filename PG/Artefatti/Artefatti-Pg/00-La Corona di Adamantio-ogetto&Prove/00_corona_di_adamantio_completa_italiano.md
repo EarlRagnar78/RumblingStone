@@ -105,7 +105,7 @@ Permette di scegliere uno dei seguenti effetti (azione standard):
 ### 3️⃣ **Gem: Gem of Dwarven Might (Gemma della Potenza Nanica) (Rubino)**
 **Potere (Sopran., 1/settimana):**
 Come azione rapida, avvolge il portatore e gli alleati entro 9 metri in una luce divina per 10 round:
-*   **Potenza del Portatore:** Ottiene *Possenza Divina* e *Pelle di Pietra* (RD 10/adamantio).
+*   **Potenza del Portatore:** Ottiene *Potere Divino* e *Pelle di Pietra* (RD 10/adamantio).
 *   **Coraggio Alleato:** Gli alleati ottengono *Pelle di Pietra* e *Ispirare Coraggio* (+4 di morale ad attacco, salvezze sulla paura e danni).
 *   **Costo:** Il portatore subisce -2 alla Forza per 24 ore (esaurimento divino).
 

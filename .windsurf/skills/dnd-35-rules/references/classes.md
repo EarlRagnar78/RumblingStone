@@ -27,11 +27,11 @@ SRD URL pattern: `https://www.d20srd.org/srd/classes/[className].htm`
 
 ## Barbarian
 
-**Special Features:** Fast movement (+10 ft), Illiteracy (starts), Rage, Uncanny Dodge, Trap Sense, Improved Uncanny Dodge, Damage Reduction (10th+), Greater Rage (11th), Indomitable Will (14th), Tireless Rage (17th), Mighty Rage (20th)
+**Special Features:** Fast movement (+10 ft), Illiteracy (starts), Rage, Uncanny Dodge, Trap Sense, Improved Uncanny Dodge, DR (10th+), Greater Rage (11th), Indomitable Will (14th), Tireless Rage (17th), Mighty Rage (20th)
 
 **Rage:** +4 STR, +4 CON, +2 Will saves, −2 AC; duration = 3 + CON mod rounds; once/day at 1st, +1/day at 4th, 8th, 12th, 16th, 20th. Fatigued for 2× rage duration after.
 
-**Damage Reduction**: DR 1/− at 7th; improves by 1 every 3 levels to DR 5/− at 19th.
+**DR**: DR 1/− at 7th; improves by 1 every 3 levels to DR 5/− at 19th.
 
 ---
 
@@ -42,19 +42,19 @@ SRD URL pattern: `https://www.d20srd.org/srd/classes/[className].htm`
 
 **Special Features:** Bardic Music (Inspire Courage/Competence/Greatness/Heroics, Countersong, Fascinate, Inspire Courage, Suggestion, Song of Freedom, Inspire Heroics, Mass Suggestion), Bardic Knowledge, Countersong, Fascinate
 
-**Inspire Courage**: +1 morale bonus to attack/damage/saves vs. fear at 1st; +2 at 8th; +3 at 14th; +4 at 20th
+**Inspire Courage**: +1 morale bon to attack/damage/saves vs. fear at 1st; +2 at 8th; +3 at 14th; +4 at 20th
 
 ---
 
 ## Cleric
 
 **Divine spells** (all cleric spells known, WIS-based, prepared from prayer)
-**Turn/Rebuke Undead**: CHA-based; 3+CHA mod times/day
-**Domains**: Choose 2; gain special powers and extra domain spells per level
+**Turn/Rebuke Undead**: CHA-based; 3+CHA mod ×/day
+**Domains**: Choose 2; gain special powers and extra domain spells /lvl
 **Spontaneous Casting**: Sacrifice prepared spell for Cure (Good) or Inflict (Evil) of same level
 
 **Key Domains** (SRD):
-Air, Animal, Chaos, Death, Destruction, Earth, Evil, Fire, Good, Healing, Knowledge, Law, Luck, Magic, Plant, Protection, Strength, Sun, Travel, Trickery, War, Water
+Air, Animal, Chaos, Death, Destruction, Earth, Evil, Fire, Good, Healing, Knowledge, Law, Luck, Magic, Plant, Protection, STR, Sun, Travel, Trickery, War, Water
 
 ---
 
@@ -65,24 +65,24 @@ Air, Animal, Chaos, Death, Destruction, Earth, Evil, Fire, Good, Healing, Knowle
 
 Wild Shape size progression:
 - 5th: Small/Medium animal
-- 6th: Large animal (2nd use/day)  
+- 6th: Large animal (2nd use/day)
 - 8th: Tiny animal (3rd/day)
 - 9th: Plant form; 4th use
 - 11th: Huge animal; 5th use
 - 12th: Elemental (Small) 1/day; 6th animal use
 - 16th: Huge elemental; unlimited animal
 
-**Animal Companion**: Bonus HD and special abilities scale with druid level
+**Animal Companion**: bon HD and special abilities scale with druid level
 **Woodland Stride, Trackless Step, Resist Nature's Lure, Venom Immunity, Timeless Body, A Thousand Faces**
 
 ---
 
 ## Fighter
 
-**Bonus Feats**: Every even level (2nd, 4th, 6th… 20th) = 11 bonus combat feats total
+**bon Feats**: Every even level (2nd, 4th, 6th… 20th) = 11 bon combat feats total
 **Class Skills**: Climb, Craft, Handle Animal, Intimidate, Jump, Ride, Swim
 
-Fighter is the feat factory. No special class features beyond bonus feats and strong BAB/saves.
+Fighter is the feat factory. No special class features beyond bon feats and strong BAB/saves.
 
 ---
 
@@ -100,9 +100,9 @@ Fighter is the feat factory. No special class features beyond bonus feats and st
 
 **Special Features:** Flurry of Blows (−2/−2 at 1st, improves), Evasion, Still Mind, Ki Strike (magic 4th, lawful 10th, adamantine 16th), Slow Fall, Purity of Body, Wholeness of Body, Diamond Body/Soul, Empty Body, Perfect Self (outsider at 20th)
 
-**AC Bonus**: +WIS mod to AC when unarmored (if WIS positive)
+**AC bon**: +WIS mod to AC when unarmored (if WIS positive)
 
-**Monk Speed Bonus**: +10 ft/5 levels (unarmored)
+**Monk Speed bon**: +10 ft/5 levels (unarmored)
 
 **Alignment**: Must be Lawful
 
@@ -111,7 +111,7 @@ Fighter is the feat factory. No special class features beyond bonus feats and st
 ## Paladin
 
 **Divine Grace**: Add CHA mod to all saving throws
-**Lay on Hands**: CHA mod × paladin level HP per day
+**Lay on Hands**: CHA mod × paladin level HP /day
 **Aura of Courage**: Immune to fear; allies within 10 ft get +4 vs. fear
 **Smite Evil**: 1/day at 1st (+1/5 levels); +CHA to attack, +paladin level to damage vs. evil
 **Turn Undead**: As cleric of (paladin level − 2)
@@ -128,9 +128,9 @@ Fighter is the feat factory. No special class features beyond bonus feats and st
 **Two Combat Styles** (chosen at 2nd level):
 - **Archery**: Rapid Shot at 2nd, Manyshot at 6th, Improved Precise Shot at 11th
 - **Two-Weapon Combat**: Two-Weapon Fighting at 2nd, Improved TWF at 6th, Greater TWF at 11th
-  (No prerequisites needed for these bonus feats)
+  (No prerequisites needed for these bon feats)
 
-**Favored Enemy**: +2 bonus at 1st; additional enemy every 5 levels; +2 to chosen enemy every 5 levels
+**Favored Enemy**: +2 bon at 1st; additional enemy every 5 levels; +2 to chosen enemy every 5 levels
 **Wild Empathy, Endurance (3rd), Animal Companion (4th), Woodland Stride (7th), Swift Tracker (8th), Evasion (9th), Camouflage (13th), Hide in Plain Sight (17th)**
 **Spellcasting**: Divine, 1st–4th level, WIS-based, prepared; starts at 4th level
 
@@ -167,9 +167,9 @@ Fighter is the feat factory. No special class features beyond bonus feats and st
 
 **Arcane spells** (INT-based, prepared from spellbook; any in spellbook)
 **Spellbook**: Starts with 3+INT mod spells; add 2/level
-**Specialist**: Gain extra spell/day per level of school; must give up 2 opposing schools
+**Specialist**: Gain extra spell/day /lvl of school; must give up 2 opposing schools
 **Familiar**: At 1st level; options include cat, hawk, owl, rat, raven, tiny viper, toad, weasel
-**Bonus Feats**: Scribe Scroll (1st), metamagic/item creation feats at 5th, 10th, 15th, 20th
+**bon Feats**: Scribe Scroll (1st), metamagic/item creation feats at 5th, 10th, 15th, 20th
 
 **Schools of Magic**: Abjuration, Conjuration, Divination, Enchantment, Evocation, Illusion, Necromancy, Transmutation
 
@@ -185,4 +185,4 @@ Fighter is the feat factory. No special class features beyond bonus feats and st
 
 **Prestige Classes**: Require prerequisites; do not count as base class for multiclass penalty.
 
-**Spellcaster multiclassing**: Caster level ≠ character level; calculate separately per class.
+**Spellcaster multiclassing**: CL ≠ char_lvl; calculate separately per class.

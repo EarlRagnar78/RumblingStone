@@ -1,0 +1,182 @@
+{
+  "skill": "unknown",
+  "desc": "",
+  "rules": {
+    "Damage Reduction": "DR 1/− at 7th; improves by 1 every 3 levels to DR 5/− at 19th.",
+    "Inspire Courage": "+1 morale bonus to attack/damage/saves vs. fear at 1st; +2 at 8th; +3 at 14th; +4 at 20th",
+    "Turn/Rebuke Undead": "CHA-based; 3+CHA mod times/day",
+    "Domains": "Choose 2; gain special powers and extra domain spells per level",
+    "Spontaneous Casting": "Sacrifice prepared spell for Cure (Good) or Inflict (Evil) of same level",
+    "Wild Shape": "At 5th level; Medium or smaller animal; 1/day + 1/day per 2 levels; duration = 1 hr/level",
+    "Animal Companion": "Bonus HD and special abilities scale with druid level",
+    "Bonus Feats": "Scribe Scroll (1st), metamagic/item creation feats at 5th, 10th, 15th, 20th",
+    "Class Skills": "Climb, Craft, Handle Animal, Intimidate, Jump, Ride, Swim",
+    "AC Bonus": "+WIS mod to AC when unarmored (if WIS positive)",
+    "Monk Speed Bonus": "+10 ft/5 levels (unarmored)",
+    "Alignment": "Lawful Good only",
+    "Divine Grace": "Add CHA mod to all saving throws",
+    "Lay on Hands": "CHA mod × paladin level HP per day",
+    "Aura of Courage": "Immune to fear; allies within 10 ft get +4 vs. fear",
+    "Smite Evil": "1/day at 1st (+1/5 levels); +CHA to attack, +paladin level to damage vs. evil",
+    "Turn Undead": "As cleric of (paladin level − 2)",
+    "Remove Disease": "1/week per 3 levels (6th+)",
+    "Spellcasting": "Divine, 1st–4th level, WIS-based, prepared; starts at 4th level",
+    "Special Mount": "5th level",
+    "Archery": "Rapid Shot at 2nd, Manyshot at 6th, Improved Precise Shot at 11th",
+    "Two-Weapon Combat": "Two-Weapon Fighting at 2nd, Improved TWF at 6th, Greater TWF at 11th",
+    "Favored Enemy": "+2 bonus at 1st; additional enemy every 5 levels; +2 to chosen enemy every 5 levels",
+    "Sneak Attack": "+1d6 per 2 rogue levels; applies when flanking or target denied DEX",
+    "Trapfinding": "Find/disarm magical traps (Search/Disable Device)",
+    "Key Skills": "Bluff, Climb, Craft, Decipher Script, Diplomacy, Disable Device, Disguise, Escape Artist, Forgery, Gather Info, Hide, Intimidate, Jump, Knowledge (local), Listen, Move Silently, Open Lock, Perform, Search, Sense Motive, Sleight of Hand, Spot, Swim, Tumble, Use Magic Device, Use Rope",
+    "Familiar": "At 1st level; options include cat, hawk, owl, rat, raven, tiny viper, toad, weasel",
+    "Spellbook": "Starts with 3+INT mod spells; add 2/level",
+    "Specialist": "Gain extra spell/day per level of school; must give up 2 opposing schools",
+    "Schools of Magic": "Abjuration, Conjuration, Divination, Enchantment, Evocation, Illusion, Necromancy, Transmutation",
+    "Opposition Schools": "Conjuration ↔ Transmutation; Divination ↔ Illusion; Enchantment ↔ Evocation; Necromancy ↔ Abjuration (standard pairings)",
+    "XP Penalties": "If any class is 2+ levels ahead of others (except favored class), −20% XP penalty per mismatched pair.",
+    "Favored Class": "Highest class; ignores for multiclass penalty. Humans: any 1 class designated. Half-elves: any 1. Other races: fixed (e.g., Halfling = Rogue, Dwarf = Fighter).",
+    "Prestige Classes": "Require prerequisites; do not count as base class for multiclass penalty.",
+    "Spellcaster multiclassing": "Caster level ≠ character level; calculate separately per class."
+  },
+  "tables": [
+    {
+      "Class": "Barbarian",
+      "HD": "d12",
+      "BAB": "Full",
+      "Good Saves": "Fort",
+      "Skills/Level": "4+INT",
+      "Key Ability": "STR"
+    },
+    {
+      "Class": "Bard",
+      "HD": "d6",
+      "BAB": "¾",
+      "Good Saves": "Ref, Will",
+      "Skills/Level": "6+INT",
+      "Key Ability": "CHA"
+    },
+    {
+      "Class": "Cleric",
+      "HD": "d8",
+      "BAB": "¾",
+      "Good Saves": "Fort, Will",
+      "Skills/Level": "2+INT",
+      "Key Ability": "WIS"
+    },
+    {
+      "Class": "Druid",
+      "HD": "d8",
+      "BAB": "¾",
+      "Good Saves": "Fort, Will",
+      "Skills/Level": "4+INT",
+      "Key Ability": "WIS"
+    },
+    {
+      "Class": "Fighter",
+      "HD": "d10",
+      "BAB": "Full",
+      "Good Saves": "Fort",
+      "Skills/Level": "2+INT",
+      "Key Ability": "STR"
+    },
+    {
+      "Class": "Monk",
+      "HD": "d8",
+      "BAB": "¾",
+      "Good Saves": "All three",
+      "Skills/Level": "4+INT",
+      "Key Ability": "WIS"
+    },
+    {
+      "Class": "Paladin",
+      "HD": "d10",
+      "BAB": "Full",
+      "Good Saves": "Fort",
+      "Skills/Level": "2+INT",
+      "Key Ability": "CHA"
+    },
+    {
+      "Class": "Ranger",
+      "HD": "d8",
+      "BAB": "Full",
+      "Good Saves": "Fort, Ref",
+      "Skills/Level": "6+INT",
+      "Key Ability": "DEX/STR"
+    },
+    {
+      "Class": "Rogue",
+      "HD": "d6",
+      "BAB": "¾",
+      "Good Saves": "Ref",
+      "Skills/Level": "8+INT",
+      "Key Ability": "DEX"
+    },
+    {
+      "Class": "Sorcerer",
+      "HD": "d4",
+      "BAB": "½",
+      "Good Saves": "Will",
+      "Skills/Level": "2+INT",
+      "Key Ability": "CHA"
+    },
+    {
+      "Class": "Wizard",
+      "HD": "d4",
+      "BAB": "½",
+      "Good Saves": "Will",
+      "Skills/Level": "2+INT",
+      "Key Ability": "INT"
+    },
+    {
+      "Level": "1–3",
+      "Small": "d4",
+      "Medium": "d6"
+    },
+    {
+      "Level": "4–7",
+      "Small": "d6",
+      "Medium": "d8"
+    },
+    {
+      "Level": "8–11",
+      "Small": "d8",
+      "Medium": "d10"
+    },
+    {
+      "Level": "12–15",
+      "Small": "d10",
+      "Medium": "2d6"
+    },
+    {
+      "Level": "16–19",
+      "Small": "2d6",
+      "Medium": "2d8"
+    },
+    {
+      "Level": "20",
+      "Small": "2d8",
+      "Medium": "2d10"
+    },
+    {
+      "Level": "1",
+      "Spells/Day (slots)": "5/3",
+      "Spells Known": "4 cantrips, 2 1st"
+    },
+    {
+      "Level": "5",
+      "Spells/Day (slots)": "6/6/5/4",
+      "Spells Known": "4/3/2/1"
+    },
+    {
+      "Level": "10",
+      "Spells/Day (slots)": "6/6/6/6/6/5/3",
+      "Spells Known": "4/4/3/3/2/2/1"
+    },
+    {
+      "Level": "20",
+      "Spells/Day (slots)": "6/6/6/6/6/6/6/6/6/6",
+      "Spells Known": "9+5 each"
+    }
+  ],
+  "body": "# Base Classes — D&D 3.5 SRD Reference\n\nSource: d20srd.org/srd/classes/\n\nAll 11 SRD base classes listed. For full class tables, fetch the SRD page.\nSRD URL pattern: `https://www.d20srd.org/srd/classes/[className].htm`\n\n---\n\n## Class Summary Table\n\n| Class | HD | BAB | Good Saves | Skills/Level | Key Ability |\n|---|---|---|---|---|---|\n| Barbarian | d12 | Full | Fort | 4+INT | STR |\n| Bard | d6 | ¾ | Ref, Will | 6+INT | CHA |\n| Cleric | d8 | ¾ | Fort, Will | 2+INT | WIS |\n| Druid | d8 | ¾ | Fort, Will | 4+INT | WIS |\n| Fighter | d10 | Full | Fort | 2+INT | STR |\n| Monk | d8 | ¾ | All three | 4+INT | WIS |\n| Paladin | d10 | Full | Fort | 2+INT | CHA |\n| Ranger | d8 | Full | Fort, Ref | 6+INT | DEX/STR |\n| Rogue | d6 | ¾ | Ref | 8+INT | DEX |\n| Sorcerer | d4 | ½ | Will | 2+INT | CHA |\n| Wizard | d4 | ½ | Will | 2+INT | INT |\n\n---\n\n## Barbarian\n\n**Special Features:** Fast movement (+10 ft), Illiteracy (starts), Rage, Uncanny Dodge, Trap Sense, Improved Uncanny Dodge, DR (10th+), Greater Rage (11th), Indomitable Will (14th), Tireless Rage (17th), Mighty Rage (20th)\n\n**Rage:** +4 STR, +4 CON, +2 Will saves, −2 AC; duration = 3 + CON mod rounds; once/day at 1st, +1/day at 4th, 8th, 12th, 16th, 20th. Fatigued for 2× rage duration after.\n\n**DR**: DR 1/− at 7th; improves by 1 every 3 levels to DR 5/− at 19th.\n\n---\n\n## Bard\n\n**Arcane spells** (up to 6th level, CHA-based, no preparation needed)\n**Bard Spell Slots** (levels 1–20 in SRD; key: 6 spells known at 20th of each level)\n\n**Special Features:** Bardic Music (Inspire Courage/Competence/Greatness/Heroics, Countersong, Fascinate, Inspire Courage, Suggestion, Song of Freedom, Inspire Heroics, Mass Suggestion), Bardic Knowledge, Countersong, Fascinate\n\n**Inspire Courage**: +1 morale bon to attack/damage/saves vs. fear at 1st; +2 at 8th; +3 at 14th; +4 at 20th\n\n---\n\n## Cleric\n\n**Divine spells** (all cleric spells known, WIS-based, prepared from prayer)\n**Turn/Rebuke Undead**: CHA-based; 3+CHA mod ×/day\n**Domains**: Choose 2; gain special powers and extra domain spells /lvl\n**Spontaneous Casting**: Sacrifice prepared spell for Cure (Good) or Inflict (Evil) of same level\n\n**Key Domains** (SRD):\nAir, Animal, Chaos, Death, Destruction, Earth, Evil, Fire, Good, Healing, Knowledge, Law, Luck, Magic, Plant, Protection, STR, Sun, Travel, Trickery, War, Water\n\n---\n\n## Druid\n\n**Divine spells** (WIS-based, prepared)\n**Wild Shape**: At 5th level; Medium or smaller animal; 1/day + 1/day per 2 levels; duration = 1 hr/level\n\nWild Shape size progression:\n- 5th: Small/Medium animal\n- 6th: Large animal (2nd use/day)\n- 8th: Tiny animal (3rd/day)\n- 9th: Plant form; 4th use\n- 11th: Huge animal; 5th use\n- 12th: Elemental (Small) 1/day; 6th animal use\n- 16th: Huge elemental; unlimited animal\n\n**Animal Companion**: bon HD and special abilities scale with druid level\n**Woodland Stride, Trackless Step, Resist Nature's Lure, Venom Immunity, Timeless Body, A Thousand Faces**\n\n---\n\n## Fighter\n\n**bon Feats**: Every even level (2nd, 4th, 6th… 20th) = 11 bon combat feats total\n**Class Skills**: Climb, Craft, Handle Animal, Intimidate, Jump, Ride, Swim\n\nFighter is the feat factory. No special class features beyond bon feats and strong BAB/saves.\n\n---\n\n## Monk\n\n**Unarmed Damage Progression:**\n| Level | Small | Medium |\n|---|---|---|\n| 1–3 | d4 | d6 |\n| 4–7 | d6 | d8 |\n| 8–11 | d8 | d10 |\n| 12–15 | d10 | 2d6 |\n| 16–19 | 2d6 | 2d8 |\n| 20 | 2d8 | 2d10 |\n\n**Special Features:** Flurry of Blows (−2/−2 at 1st, improves), Evasion, Still Mind, Ki Strike (magic 4th, lawful 10th, adamantine 16th), Slow Fall, Purity of Body, Wholeness of Body, Diamond Body/Soul, Empty Body, Perfect Self (outsider at 20th)\n\n**AC bon**: +WIS mod to AC when unarmored (if WIS positive)\n\n**Monk Speed bon**: +10 ft/5 levels (unarmored)\n\n**Alignment**: Must be Lawful\n\n---\n\n## Paladin\n\n**Divine Grace**: Add CHA mod to all saving throws\n**Lay on Hands**: CHA mod × paladin level HP /day\n**Aura of Courage**: Immune to fear; allies within 10 ft get +4 vs. fear\n**Smite Evil**: 1/day at 1st (+1/5 levels); +CHA to attack, +paladin level to damage vs. evil\n**Turn Undead**: As cleric of (paladin level − 2)\n**Remove Disease**: 1/week per 3 levels (6th+)\n**Spellcasting**: Divine, 1st–4th level spells, CHA-based, prepared; starts at 4th level\n**Special Mount**: 5th level\n\n**Alignment**: Lawful Good only\n\n---\n\n## Ranger\n\n**Two Combat Styles** (chosen at 2nd level):\n- **Archery**: Rapid Shot at 2nd, Manyshot at 6th, Improved Precise Shot at 11th\n- **Two-Weapon Combat**: Two-Weapon Fighting at 2nd, Improved TWF at 6th, Greater TWF at 11th\n  (No prerequisites needed for these bon feats)\n\n**Favored Enemy**: +2 bon at 1st; additional enemy every 5 levels; +2 to chosen enemy every 5 levels\n**Wild Empathy, Endurance (3rd), Animal Companion (4th), Woodland Stride (7th), Swift Tracker (8th), Evasion (9th), Camouflage (13th), Hide in Plain Sight (17th)**\n**Spellcasting**: Divine, 1st–4th level, WIS-based, prepared; starts at 4th level\n\n---\n\n## Rogue\n\n**Sneak Attack**: +1d6 per 2 rogue levels; applies when flanking or target denied DEX\n**Trapfinding**: Find/disarm magical traps (Search/Disable Device)\n**Evasion** (2nd); **Trap Sense** (3rd, +1/3 levels); **Uncanny Dodge** (4th); **Improved Uncanny Dodge** (8th)\n**Special Abilities** (every 2 levels from 10th): Crippling Strike, Defensive Roll, Feat, Improved Evasion, Opportunist, Skill Mastery, Slippery Mind\n\n**Key Skills**: Bluff, Climb, Craft, Decipher Script, Diplomacy, Disable Device, Disguise, Escape Artist, Forgery, Gather Info, Hide, Intimidate, Jump, Knowledge (local), Listen, Move Silently, Open Lock, Perform, Search, Sense Motive, Sleight of Hand, Spot, Swim, Tumble, Use Magic Device, Use Rope\n\n---\n\n## Sorcerer\n\n**Arcane spells** (CHA-based, no preparation — all slots flexible, known spells only)\n**Spells Known** at 20th: 9 (0-level) + 5 each levels 1–9\n\n| Level | Spells/Day (slots) | Spells Known |\n|---|---|---|\n| 1 | 5/3 | 4 cantrips, 2 1st |\n| 5 | 6/6/5/4 | 4/3/2/1 |\n| 10 | 6/6/6/6/6/5/3 | 4/4/3/3/2/2/1 |\n| 20 | 6/6/6/6/6/6/6/6/6/6 | 9+5 each |\n\n**Familiar**: Same as wizard familiar\n\n---\n\n## Wizard\n\n**Arcane spells** (INT-based, prepared from spellbook; any in spellbook)\n**Spellbook**: Starts with 3+INT mod spells; add 2/level\n**Specialist**: Gain extra spell/day /lvl of school; must give up 2 opposing schools\n**Familiar**: At 1st level; options include cat, hawk, owl, rat, raven, tiny viper, toad, weasel\n**bon Feats**: Scribe Scroll (1st), metamagic/item creation feats at 5th, 10th, 15th, 20th\n\n**Schools of Magic**: Abjuration, Conjuration, Divination, Enchantment, Evocation, Illusion, Necromancy, Transmutation\n\n**Opposition Schools**: Conjuration ↔ Transmutation; Divination ↔ Illusion; Enchantment ↔ Evocation; Necromancy ↔ Abjuration (standard pairings)\n\n---\n\n## Multiclassing\n\n**XP Penalties**: If any class is 2+ levels ahead of others (except favored class), −20% XP penalty per mismatched pair.\n\n**Favored Class**: Highest class; ignores for multiclass penalty. Humans: any 1 class designated. Half-elves: any 1. Other races: fixed (e.g., Halfling = Rogue, Dwarf = Fighter).\n\n**Prestige Classes**: Require prerequisites; do not count as base class for multiclass penalty.\n\n**Spellcaster multiclassing**: CL ≠ char_lvl; calculate separately per class."
+}

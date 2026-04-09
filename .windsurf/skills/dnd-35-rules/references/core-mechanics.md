@@ -6,26 +6,26 @@ Source: d20srd.org/srd/theBasics.htm and related pages
 
 ## The d20 Roll
 
-**Attack roll:** d20 + BAB + STR mod (melee) or DEX mod (ranged) + size modifier + misc
+**Attack roll:** d20 + BAB + STR mod (mel) or DEX mod (rng) + size mod + misc
 **Skill check:** d20 + skill ranks + ability mod + misc
-**Saving throw:** d20 + base save + ability mod + magic bonuses + misc
-**Ability check:** d20 + ability modifier (no ranks added)
+**Save:** d20 + base save + ability mod + magic bonuses + misc
+**Ability check:** d20 + ability mod (no ranks added)
 
 **Natural 20:** Always hits (attack) / always succeeds (skill, threat of crit on attack)
 **Natural 1:** Always misses (attack) / auto-fails (save)
-Note: Natural 1/20 do NOT auto-fail/succeed skill checks in RAW 3.5.
+Natural 1/20 do NOT auto-fail/succeed skill checks in RAW 3.5.
 
 ---
 
-## Armor Class
+## AC
 
-**AC = 10 + armor bonus + shield bonus + DEX mod + size mod + natural armor + deflection + dodge + misc**
+**AC = 10 + armor bon + shield bon + DEX mod + size mod + natural armor + deflection + dodge + misc**
 
 | AC Component | Applies vs. touch? | Applies flat-footed? |
 |---|---|---|
-| Armor bonus | No | Yes |
-| Shield bonus | No | Yes |
-| DEX modifier | No | No |
+| Armor bon | No | Yes |
+| Shield bon | No | Yes |
+| DEX mod | No | No |
 | Natural armor | No | Yes |
 | Deflection | Yes | Yes |
 | Dodge | Yes | No |
@@ -55,7 +55,7 @@ Note: Natural 1/20 do NOT auto-fail/succeed skill checks in RAW 3.5.
 ## Skills (Complete SRD List)
 
 ### Key Skill Rules
-- **Synergy:** +2 bonus when you have 5+ ranks in a synergistic skill (see each skill entry)
+- **Synergy:** +2 bon when you have 5+ ranks in a synergistic skill (see each skill entry)
 - **Armor Check Penalty (ACP):** Applies to: Balance, Climb, Escape Artist, Hide, Jump, Move Silently, Sleight of Hand, Swim, Tumble
 - **Encumbrance** applies its own ACP on top of armor ACP for physical skills
 
@@ -106,7 +106,7 @@ Note: Natural 1/20 do NOT auto-fail/succeed skill checks in RAW 3.5.
 
 ## Feats: Key Categories
 
-**Fighter Bonus Feats** (subset): Combat Expertise, Dodge, Great Cleave, Improved Critical, Power Attack, Spring Attack, Weapon Finesse, Weapon Focus, Weapon Specialization…
+**Fighter bon Feats** (subset): Combat Expertise, Dodge, Great Cleave, Improved Critical, Power Attack, Spring Attack, Weapon Finesse, Weapon Focus, Weapon Specialization…
 
 **Metamagic Feats**: Empower Spell (+2 levels), Enlarge Spell (+1), Extend Spell (+1), Heighten Spell (variable), Maximize Spell (+3), Quicken Spell (+4), Silent Spell (+1), Still Spell (+1)
 
@@ -117,12 +117,12 @@ Note: Natural 1/20 do NOT auto-fail/succeed skill checks in RAW 3.5.
 ## Ability Score Increases
 
 **Every 4 character levels** (4th, 8th, 12th, 16th, 20th): +1 to any one ability score
-**Permanent ability damage** (ability drain): Requires restoration or greater restoration
-**Temporary ability damage**: Heals at 1 point per full rest per ability per day
+**perm ability damage** (ability drain): req: restoration or greater restoration
+**temp ability damage**: Heals at 1 point per full rest per ability /day
 
 ---
 
-## Experience Points and Level Progression
+## XP and Level Progression
 
 | Level | XP (Standard) | Slow | Fast |
 |---|---|---|---|

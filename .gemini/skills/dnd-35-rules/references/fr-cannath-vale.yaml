@@ -1,0 +1,428 @@
+skill: unknown
+description: ''
+sections:
+  overview: '# Cannath Vale — Campaign Setting Reference'
+  map_attribution: '**Map by**: Arne Haschen (<antariuk@gmail.com>)
+
+    **Based on**: Elsir Vale map by Mike Schley, *Red Hand of Doom* (Jacobs & Wyatt,
+    2006)
+
+    **Tools**: Adobe Photoshop CS3; notebook; pencils
+
+    **Source**: <https://cdna.artstation.com/p/assets/images/images/001/044/588/large/arne-haschen-red-hand-of-doom-cannath-vale-map-gm.jpg>
+
+    **Parchment texture**: coyotemax.deviantart.com
+
+
+    Two versions: **GM map** (shows Vraath Keep, Ghostlord''s Lair, Fane of Tiamat,
+    Lhesper)
+
+    and **Player map** (adventure sites hidden).
+
+
+    All names below are extracted directly from the GM map image.
+
+
+    ---'
+  complete_map_label_extraction_(canonical,_image-verified): '### Geographic Regions
+
+
+    | Name on Map | Type | = RHoD Equivalent | Notes |
+
+    |---|---|---|---|
+
+    | **Cannath Vale** | Valley / setting name | Elsir Vale | The vale itself |
+
+    | **The Shaar** | Open plains | The Endless Plains | Appears NW *and* NE of the
+    vale |
+
+    | **The Misty Vale** | Forest | The Westdeep | Far west; extremely xenophobic
+    elves |
+
+    | **The Wyrmbones** | Mountain range | Wyrmsmoke Mountains | West; Red Hand horde
+    origin |
+
+    | **Lhespenbog** | Swamp | The Blackfens | Central-north; Lhesper ruins within
+    |
+
+    | **Shaarcah Forest** | Forest | The Witchwood | Center; Tiri Kitor territory
+    — spell: **Shaarcah** not "Shaareach" |
+
+    | **Cannathwood** | Forest | Marth Forest | East |
+
+    | **Rathgaunt Hills** | Hills | Giantshield Mountains | Far northeast; giant clans
+    |
+
+    | **Bandit Wastes** | Badlands | The Thornwaste | South-center; Ghostlord''s domain
+    |
+
+    | **The Swagdar** | Region | *(no RHoD equivalent)* | Far east; FR canonical region
+    name |
+
+    | **Brown Hills** | Hills | *(no RHoD equivalent)* | Southeast; FR addition |
+
+    | **The North Wall** | Mountain range | Wyvernwatch Mountains | South — **NOT**
+    "North Hills"; Hammerfist Holds within |
+
+
+    ### Water Features
+
+
+    | Name on Map | Type | = RHoD Equivalent | Notes |
+
+    |---|---|---|---|
+
+    | **Lake Lhespen** | Lake | Lake Rhestin | Central-north; large blue lake |
+
+    | **Shaar River** | River | *(no RHoD named equiv.)* | Northern river; flows NE
+    off map |
+
+    | **Talar River** | River | Elsir River (west branch) | West; flows south — **"Talar
+    River"** not "River Talar" |
+
+    | **The Lhescreek** | Creek | Skull Gorge stream | Central; flows south from lake
+    toward Skull Gorge |
+
+    | **The Witchstream** | Stream | Witchstream | Through Shaarcah Forest |
+
+    | **Cannath River** | River | Elsir River (east branch) | Center-east; labeled
+    east of Rethmar |
+
+    | **Lhesper Trail** | Trail | *(unnamed in RHoD)* | Northeast of lake; track to
+    Lhesper ruins |
+
+
+    ### Roads
+
+
+    | Name on Map | Type | Notes |
+
+    |---|---|---|
+
+    | **Old North Road** | Major road (red) | Main N-S artery through center of the
+    vale |
+
+    | **The Dwarfroad** | Road (red) | Goes west from Skull Gorge area toward The
+    Misty Vale |
+
+    | **The Dawn Way** | Road (red) | Goes east past Rethmar toward Cannathgate |
+
+
+    ### Settlements — Squares (Major Locations / Adventure Sites)
+
+
+    | Name on Map | = RHoD Original | Role | Notes |
+
+    |---|---|---|---|
+
+    | **Lhesper** | Rhest | Ruined flooded city | N of Lake Lhespen; in Lhespenbog;
+    Wyrmlord Koth''s base |
+
+    | **Kormul** | *(Khormul — present and destroyed by Red Hand Army!)* | Town |
+    Center-west; **IS on map** despite some sources saying removed |
+
+    | **Skull Gorge** | Skull Gorge Bridge | Adventure site | On The Lhescreek; bridge
+    destruction Chapter 1 climax |
+
+    | **Vraath Keep** | Vraath Keep | Ruined keep | SW of Skull Gorge; name **retained**
+    |
+
+    | **Fane of Tiamat** | Fane of Tiamat | Temple | Far west in Wyrmbones; name **retained**;
+    final dungeon |
+
+    | **Drellin''s Ferry** | Drellin''s Ferry | River crossing town | On Old North
+    Road; name **retained**; Chapter 1 opener |
+
+    | **Hammerfist Holds** | Hammerfist Holds | Dwarven clanholds | South-center in
+    The North Wall; name **retained** |
+
+    | **Ghostlord''s Lair** | Ghostlord''s Lair | Lair / dungeon | South in Bandit
+    Wastes; name **retained** |
+
+
+    ### Settlements — Circles (Villages / Towns)
+
+
+    | Name on Map | = RHoD Original | Notes |
+
+    |---|---|---|
+
+    | **Rethmar** | Brindol (RHoD original) | MAIN CITY; center of the vale; Lord
+    Jarmaath''s seat |
+
+    | **Cannathgate** | Dennovar | Eastern gateway; largest city after Rethmar |
+
+    | **Talar** | Talar | Center, west of Rethmar; river namesake village |
+
+    | **Drellin''s Ferry** | Drellin''s Ferry | *(square; listed above)* |
+
+    | **Terrelton** | Terrelton | Center; name retained |
+
+    | **Nimon Gap** | Nimon Gap | Center; name retained; road through Wyrmbones |
+
+    | **Witchcross** | Witchcross | East of Shaarcah; name retained |
+
+    | **Cannathcross** | Elsircross | East; renamed from "Elsircross" |
+
+    | **Marthon** | Marthton | Far east; **spelling: "Marthon"** — no second ''t''
+    |
+
+    | **Prosser** | Prosser | East-center; name retained |
+
+    | **Dauth** | Dauth | South-center; name retained |
+
+    | **Hillwatch** | Hillwatch | Southeast; name retained |
+
+    | **Red Rock** | Red Rock | Northeast in Rathgaunt Hills; name retained |
+
+    | **Assardoth** | *(no equivalent)* | Far SW; **custom addition** by Antariuk;
+    no RHoD counterpart |
+
+
+    ---'
+  corrections_from_previous_version_(important): 'These names were invented in previous
+    skill versions and **do not appear on the map**.
+
+    Always use the correct map names below.
+
+
+    | ❌ Invented (do not use) | ✅ Correct map name |
+
+    |---|---|
+
+    | Cressfall | **Rethmar** |
+
+    | Tarrenmark | **Cannathgate** |
+
+    | Greymist Gap | **Nimon Gap** |
+
+    | The Greymantle | **Shaarcah Forest** |
+
+    | The Murkmere | **Lhespenbog** |
+
+    | Thunder Peaks | **The Wyrmbones** |
+
+    | Caer Rhest | **Lhesper** |
+
+    | Bridge of Ashwood | **Skull Gorge** |
+
+    | Harrowmere | *(not on map)* |
+
+    | Orvast Crossing | *(not on map — use Drellin''s Ferry)* |
+
+    | The Desertsmouth Mountains | **The North Wall** |
+
+    | Andar Road | **The Dawn Way** (E) / **Old North Road** (N-S) |
+
+    | Vraath Hold | **Vraath Keep** |
+
+    | Marthton | **Marthon** (no second ''t'') |
+
+
+    ---'
+  chapter-by-chapter_location_guide: '| RHoD Chapter | Key Location | Cannath Vale
+    Name | Road Access |
+
+    |---|---|---|---|
+
+    | Ch. 1 — Opening | River crossing town | **Drellin''s Ferry** | Old North Road
+    |
+
+    | Ch. 1 — Climax | Destroy the bridge | **Skull Gorge** | Via The Lhescreek |
+
+    | Ch. 1 — Side | Ruined tower | **Vraath Keep** | Dwarfroad / off-road |
+
+    | Ch. 2 — Hub | War council city | **Rethmar** | The Dawn Way |
+
+    | Ch. 2 — Swamp | Wyrmlord Koth | **Lhesper** (in Lhespenbog) | Lhesper Trail
+    |
+
+    | Ch. 3 — Wasteland | Ghostlord''s bargain | **Ghostlord''s Lair** | Bandit Wastes,
+    off-road |
+
+    | Ch. 4 — Siege | Final defense | **Rethmar** | All roads converge |
+
+    | Epilogue | Tiamat''s temple | **Fane of Tiamat** | Dwarfroad west into Wyrmbones
+    |
+
+
+    ---'
+  geographic_notes_for_dm_use: '### Position in Faerûn
+
+
+    Cannath Vale sits in the region known as **Channath Vale / Lhespenar** in the
+    FRCS and
+
+    Shining South sourcebooks — south of the Shining Plains, north of the Shaar proper.
+
+    The vale is bounded by The Wyrmbones (west), Rathgaunt Hills (NE), The North Wall
+    (south).
+
+
+    ### The Shaar
+
+
+    Appears on both the NW and NE edges of the map. The vale effectively sits as a
+    settled
+
+    pocket within the broader Shaar grassland belt. The **Shaar River** drains north
+    out of
+
+    the map; the **Talar River** drains south into the Bandit Wastes.
+
+
+    ### Kormul — Important
+
+
+    Kormul is labeled on the map as a square (significant settlement) west of Skull
+    Gorge,
+
+    in the foothills of The Wyrmbones near the Dwarfroad. It does not appear in the
+    original
+
+    RHoD module text — it comes from the FR map''s pre-existing Khormul location.
+    The DM
+
+    should decide: is Kormul abandoned ruins (as in FR history), a struggling frontier
+    town,
+
+    or an active settlement? Its position on the Dwarfroad makes it a natural waystation.
+
+
+    ### The Swagdar and Brown Hills
+
+
+    These appear on the eastern and southeastern edge of the map respectively. Both
+    are FR
+
+    canonical region names from the Shining South era. The Swagdar is a dry, sparsely
+
+    populated region east of Cannathgate. Brown Hills are foothills of The North Wall.
+
+
+    ### Shaarcah Forest — Spelling
+
+
+    The map clearly spells this **Shaarcah** (not "Shaareach" or "Shaareach Forest").
+
+    This is the forest in the center of the vale; the Tiri Kitor elves live here in
+    RHoD.
+
+    In this Cannath Vale adaptation, they are Sy''Tel''Quessir (wild elves) worshipping
+
+    Rillifane Rallathil.
+
+
+    ### The Witchstream
+
+
+    Flows through Shaarcah Forest east-to-west. The village of Witchcross sits at
+    its ford.
+
+
+    ---'
+  weather_in_cannath_vale: 'Live weather tool: <https://www.realmshelps.net/faerun/weather.shtml>
+
+    Use **Dalelands** or **Shining South** region as proxy.
+
+
+    Campaign season (Flamerule/Eleasis, 1372 DR):
+
+
+    - Temperature: 22–32°C by day; fog in Lhespenbog mornings (Spot +4 DC until midmorning)
+
+    - Wyrmbones weather: Afternoon storms 30% chance; thunder heard nightly from that
+    range
+
+    - Shaar winds: Hot, dry southeastern winds; dust in the Bandit Wastes
+
+    - The North Wall: Cold even in summer; Hammerfist Holds have snow year-round above
+    3,000 ft
+
+
+    ---'
+  travel_distances_(approximate,_from_map_scale:_0–10–40–80_miles): '| Route | Distance
+    | Road? | Travel Time (on foot) |
+
+    |---|---|---|---|
+
+    | Drellin''s Ferry → Skull Gorge | ~15 miles | Off-road | ~6 hours |
+
+    | Drellin''s Ferry → Rethmar | ~50 miles | Dawn Way | ~2 days |
+
+    | Rethmar → Lhesper | ~60 miles | Lhesper Trail (partial) | ~3 days |
+
+    | Rethmar → Cannathgate | ~35 miles | Dawn Way | ~1.5 days |
+
+    | Rethmar → Ghostlord''s Lair | ~55 miles | Off-road (Bandit Wastes) | ~3 days
+    |
+
+    | Skull Gorge → Rethmar | ~35 miles | Mixed | ~1.5 days |
+
+    | Nimon Gap → Rethmar | ~20 miles | Dawn Way | ~1 day |
+
+
+    *Mounted: halve travel time on roads. Lhespenbog terrain: ×3 on foot, ×4 mounted.*
+
+
+    ---'
+  underdark_access_&_deep_locations: "The RumblingStone campaign includes extensive\
+    \ Underdark content beneath Hammerfist Holds.\nThese locations are accessed from\
+    \ **The North Wall** mountains (Hammerfist area).\n\n### Dungeon Chain (Sequential,\
+    \ Arcs 01–07)\n\nThe party descended through these locations in order, connected\
+    \ by passages and portals:\n\n```\n[Hammerfist Holds (Surface)]\n        ↓\n[Minotaur\
+    \ Lair — Pre-Arc 01, unnumbered]\n  └── First Underdark area below Hammerfist\n\
+    \  └── Maur (Underdark native, CR ~10, defeated)\n  └── Il Collezionista (Rakshasa\
+    \ + basilisk, ESCAPED)\n  └── Cristal Warriors (from Underdark p.93)\n  └── Adapted\
+    \ from Expedition to Undermountain (p.165) and Underdark sourcebook\n        ↓\n\
+    [01_LaMiniera — Ancient Mine]\n  └── Grell Necromancer lair, Grell Patriarch\n\
+    \  └── Cristal Warriors also encountered in early mine rooms\n        ↓\n[02_scaladossa-abbattor-funghi\
+    \ — Neverlight Grove (Adapted)]\n  └── Fungi Tower (2+ levels): drow-modified\
+    \ myconid research lab\n  └── Web spider infestations, drow aberration researchers\n\
+    \  └── Demonweb Pits creatures (Expedition to the Demonweb Pits p.67)\n  └── Connection\
+    \ to Sonjak's drow faction (undiscovered by party)\n  └── Portal to deeper levels\
+    \ (used by escaping drow)\n        ↓\n[03_la Cittadella — Abandoned Citadel]\n\
+    \  └── Moradin Temple with Undead Beholder\n  └── Runic frescoes (Corona di Adamantio\
+    \ clues)\n        ↓\n[04_tomba_di_Belkram — Belkram's Tomb]\n  └── Adapted from\
+    \ Expedition to Undermountain, Belkram's Fall\n  └── Xorn encounters, Gelatinous\
+    \ Cube, gargoyle turrets\n  └── Illithid worm encounter → Artemis cerebromorphosis\
+    \ crisis\n  └── Ring of Chaotic Illumination first major activation\n        ↓\n\
+    [05_aa-stanza-runica — Runic Room]\n  └── Puzzle room with ancient dwarven runes\n\
+    \        ↓\n[06_Stanza-corona-di-adamantio — Crown Chamber]\n  └── Boss battle\
+    \ for the Corona di Adamantio\n  └── Hella Oakenshield dies here\n  └── Party\
+    \ opens portal to Eternal Forge\n        ↓\n[07_il Portale Della Forgia Eterna\
+    \ — Eternal Forge Portal]\n  └── Sala della Forgia Eterna (hub room)\n  └── Altare\
+    \ del Cuore di Moradin (Cuore Moradin artifact)\n  └── Portal to Fire Plane (Part\
+    \ 3)\n  └── Portal to Earth Plane (Part 4)\n  └── Temporal Portal (Part 5, requires\
+    \ 2+ gems)\n  └── Hella Resurrection Ritual (Part 3B)\n```\n\n### The Eternal\
+    \ Forge — Planar Geography\n\n**Sala della Forgia Eterna (Hub)**\nCentral chamber\
+    \ in deep Underdark. Contains the Altare del Cuore di Moradin — an ancient\nmithral\
+    \ altar hiding the Cuore di Moradin (Heart of Moradin) artifact inside a perfectly\n\
+    concealed reliquary. This room connects to elemental planes via portals.\n\n**Fire\
+    \ Plane Node (Part 3)**\nAccessed via fire portal from Sala. Standard Fire Plane\
+    \ environmental rules apply.\nContains:\n\n- Elemental fire combats\n- Rituale\
+    \ Gemma del Tempo → activates Corona's Topaz gem\n- Location where Tordek found\
+    \ Bracieri Gemelli di Moradin (Fire Phase)\n- Location where party found NPC Therysol\n\
+    \n**Earth Plane Node (Part 4)**\nAccessed via earth portal from Sala. Features:\n\
+    \n- Forest of Living Crystal (current party location)\n- Mithral Golem encounter\
+    \ (Tordek's Earth trial)\n- Rituale Gemma Terra → activates Corona's Emerald gem\n\
+    - Tordek's Bracieri Earth awakening completion\n\n**Temporal Void (Part 5)**\n\
+    Requires Topaz + Emerald gems activated. Opens portal to **Year -1000 DR**.\n\
+    Party travels to ancient Hammerfist to fight in a historical battle.\nRuby gem\
+    \ activates at dawn during this temporal battle.\n\n### Neverlight Grove Adaptation\
+    \ Notes\n\nThe Neverlight Grove content is adapted from **Out of the Abyss** (D&D\
+    \ 5e) converted to 3.5:\n- The giant mushroom tower and its crazed inhabitants\
+    \ are retained\n- The drow experiments replace the 5e demon influence with **Lolth-sanctioned\
+    \ fleshcrafting**\n- Creatures from **Expedition to the Demonweb Pits** (p.67)\
+    \ are used by the drow researchers\n- Sonjak (Drow Matrona) and her researchers\
+    \ occupy the upper levels\n- Il Collezionista (Rakshasa) operated from the minotaur\
+    \ lair area nearby (Pre-Arc 01)\n- Portal in the fungi tower connects to the deeper\
+    \ citadel levels\n\n### Key Underdark Villains\n\n| Villain | Race/Type | CR |\
+    \ Status | Location |\n|---|---|---|---|---|\n| Grell Patriarch | Aberration |\
+    \ ~8 | Defeated | 01_LaMiniera |\n| Il Collezionista | Rakshasa | ~12 | **ESCAPED**\
+    \ | Unknown — allied with drow, provides evil artifacts (Pre-01) |\n| Maur | Underdark\
+    \ native | ~10 | Defeated | Minotaur Lair (Pre-Arc 01) |\n| Cristal Warriors |\
+    \ Construct/Elemental | ~7 | Defeated | Minotaur Lair + 01_LaMiniera (from *Underdark*\
+    \ p.93) |\n| Sonjak | Drow Cleric Matrona | ~14 | Active | Underdark/Surface ops\
+    \ |\n| Undead Beholder | Undead | ~13 | Defeated | 03_la Cittadella |\n| Zalkatar\
+    \ | Illithid Warlock Drow | 13 | Active | Invisible Tower (Arc 09-P2A) |"

@@ -1,0 +1,327 @@
+{
+  "skill": "unknown",
+  "desc": "",
+  "rules": {
+    "Sun Elf": "+2 INT, −2 CON; Favored class: Wizard; rarer, haughty",
+    "Wild Elf": "+2 DEX, −2 INT; Favored class: Sorcerer; forest-dwelling",
+    "Drow": "+2 DEX, −2 CON, +2 INT, +2 CHA; SR 11+level; light sensitivity; Favored class: Wizard (F) or Cleric (M)",
+    "Shield Dwarf": "STD dwarf stats; Favored class: Fighter",
+    "Strongheart Halfling": "Bonus feat at 1st (replaces +1 to saves)",
+    "Ghostwise Halfling": "Telepathy 100 ft (can't speak aloud) — Faerun-exclusive",
+    "The Weave": "The fabric of magic in Faerûn, maintained by Mystra. Spellcasters tap into it.",
+    "Shadow Weave": "Shar's corruption; used by followers. +1 caster level to Illusion/Enchantment/Darkness; −2 to Evocation/Transmutation; cannot learn Divination. (See Shadow Weave Magic feat, FRCS)",
+    "Dead Magic Zones": "Areas where the Weave is destroyed. No magic functions.",
+    "Wild Magic Zones": "The Weave is unstable. Roll on wild surge table.",
+    "Waterdeep": "The City of Splendors. Pop. ~132,000 (city) to 1.3M (total). Ruled by hidden Lords. Guilds dominate commerce. Castle Waterdeep; Undermountain beneath.",
+    "Baldur's Gate": "Seat of the Flaming Fist mercenary company. Major trade hub. Two dukes + council of four.",
+    "Neverwinter": "The City of Skilled Hands. Famous for craftsmanship. Near Mount Hotenow (volcano).",
+    "Menzoberranzan": "Drow city of 20,000+. Ruled by noble houses; House Baenre at top. Location: Northdark Underdark.",
+    "Myth Drannor": "Ancient elven city; now ruins haunted by fiends. Recently reclaimed partially by elves (post-1369 DR events).",
+    "Undermountain": "Megadungeon beneath Waterdeep; created by Halaster Blackcloak; 23+ known levels."
+  },
+  "tables": [
+    {
+      "Region": "The Sword Coast",
+      "Character": "Trade, adventure, diversity",
+      "Notable Cities": "Waterdeep, Baldur's Gate, Neverwinter"
+    },
+    {
+      "Region": "The Heartlands",
+      "Character": "Central, safe, cosmopolitan",
+      "Notable Cities": "Suzail, Eveningstar, Arabel (Cormyr)"
+    },
+    {
+      "Region": "Anauroch",
+      "Character": "Desert wasteland; Netheril ruins",
+      "Notable Cities": "Shade Enclave (floating city returned)"
+    },
+    {
+      "Region": "The Moonsea",
+      "Character": "Harsh, tyrants, war",
+      "Notable Cities": "Phlan, Zhentil Keep, Hillsfar, Mulmaster"
+    },
+    {
+      "Region": "The Dalelands",
+      "Character": "Rural, Elven allies, frontier",
+      "Notable Cities": "Shadowdale, Mistledale, Essembra"
+    },
+    {
+      "Region": "The Underdark",
+      "Character": "Underground civilization",
+      "Notable Cities": "Menzoberranzan, Blingdenstone, Gracklstugh"
+    },
+    {
+      "Region": "Calimshan",
+      "Character": "Southern empire, ancient, corrupt",
+      "Notable Cities": "Calimport, Memnon"
+    },
+    {
+      "Region": "Thay",
+      "Character": "Theocracy of Red Wizards",
+      "Notable Cities": "Eltabbar, Bezantur"
+    },
+    {
+      "Region": "Waterdeep",
+      "Character": "City of Splendors; cosmopolitan",
+      "Notable Cities": "Waterdeep (pop. ~1.3M)"
+    },
+    {
+      "Region": "Amn",
+      "Character": "Merchant nation; oligarchy",
+      "Notable Cities": "Athkatla"
+    },
+    {
+      "Region": "Chessenta",
+      "Character": "City-states; gladiatorial",
+      "Notable Cities": "Cimbar"
+    },
+    {
+      "Region": "The Unapproachable East",
+      "Character": "Exotic; Rashemen, Aglarond",
+      "Notable Cities": "Velprintalar, Immilmar"
+    },
+    {
+      "Deity": "Ao",
+      "Alignment": "—",
+      "Portfolio": "Overgod (not worshipped)",
+      "Symbol": "—"
+    },
+    {
+      "Deity": "Mystra",
+      "Alignment": "NG",
+      "Portfolio": "Magic, spells, the Weave",
+      "Symbol": "Seven stars / blue flame"
+    },
+    {
+      "Deity": "Torm",
+      "Alignment": "LG",
+      "Portfolio": "Duty, loyalty, obedience",
+      "Symbol": "Armored right gauntlet"
+    },
+    {
+      "Deity": "Helm",
+      "Alignment": "LN",
+      "Portfolio": "Guardians, protection, watchers",
+      "Symbol": "Eye on upright gauntlet"
+    },
+    {
+      "Deity": "Tempus",
+      "Alignment": "CN",
+      "Portfolio": "War, battle, warriors",
+      "Symbol": "Flaming sword / white gloves"
+    },
+    {
+      "Deity": "Chauntea",
+      "Alignment": "NG",
+      "Portfolio": "Nature, agriculture, farmers",
+      "Symbol": "Wheat-like flower in a sunburst"
+    },
+    {
+      "Deity": "Selûne",
+      "Alignment": "CG",
+      "Portfolio": "Moon, stars, navigation",
+      "Symbol": "Pair of eyes surrounded by seven stars"
+    },
+    {
+      "Deity": "Shar",
+      "Alignment": "NE",
+      "Portfolio": "Dark, night, loss, secrets",
+      "Symbol": "Black disk with purple border"
+    },
+    {
+      "Deity": "Lathander",
+      "Alignment": "NG",
+      "Portfolio": "Birth, renewal, spring, youth",
+      "Symbol": "Sunrise in rosy hues"
+    },
+    {
+      "Deity": "Kelemvor",
+      "Alignment": "LN",
+      "Portfolio": "Death, the dead",
+      "Symbol": "Upright skeletal arm holding balanced scales"
+    },
+    {
+      "Deity": "Azuth",
+      "Alignment": "LN",
+      "Portfolio": "Wizards, mages, spells"
+    },
+    {
+      "Deity": "Bane",
+      "Alignment": "LE",
+      "Portfolio": "Strife, hatred, tyranny, fear"
+    },
+    {
+      "Deity": "Cyric",
+      "Alignment": "CE",
+      "Portfolio": "Murder, lies, intrigue, illusions"
+    },
+    {
+      "Deity": "Ilmater",
+      "Alignment": "LG",
+      "Portfolio": "Endurance, suffering, martyrdom"
+    },
+    {
+      "Deity": "Oghma",
+      "Alignment": "N",
+      "Portfolio": "Knowledge, invention, inspiration"
+    },
+    {
+      "Deity": "Silvanus",
+      "Alignment": "N",
+      "Portfolio": "Wild nature, druids"
+    },
+    {
+      "Deity": "Talos",
+      "Alignment": "CE",
+      "Portfolio": "Storms, destruction"
+    },
+    {
+      "Deity": "Tymora",
+      "Alignment": "CG",
+      "Portfolio": "Good fortune, skill, victory"
+    },
+    {
+      "Deity": "Umberlee",
+      "Alignment": "CE",
+      "Portfolio": "Seas, oceans, underwater hazards"
+    },
+    {
+      "Deity": "Waukeen",
+      "Alignment": "N",
+      "Portfolio": "Trade, money, merchants"
+    },
+    {
+      "Deity": "Corellon Larethian (CG)",
+      "Portfolio": "Chief elven god; magic, music, arts"
+    },
+    {
+      "Deity": "Angharradh (CG)",
+      "Portfolio": "Triune goddess; spring, fertility"
+    },
+    {
+      "Deity": "Hanali Celanil (CG)",
+      "Portfolio": "Love, beauty, romance"
+    },
+    {
+      "Deity": "Labelas Enoreth (CG)",
+      "Portfolio": "Time, longevity, history"
+    },
+    {
+      "Deity": "Rillifane Rallathil (CG)",
+      "Portfolio": "Woodlands, druids, wild elves"
+    },
+    {
+      "Deity": "Sehanine Moonbow (CG)",
+      "Portfolio": "Dreams, death, journeys"
+    },
+    {
+      "Deity": "Solonor Thelandira (CG)",
+      "Portfolio": "Archery, hunting"
+    },
+    {
+      "Deity": "Moradin (LG)",
+      "Portfolio": "Chief dwarven god; creation, smithing"
+    },
+    {
+      "Deity": "Clangeddin Silverbeard (LG)",
+      "Portfolio": "Battle, war, valor"
+    },
+    {
+      "Deity": "Dumathoin (N)",
+      "Portfolio": "Buried wealth, mining, silence"
+    },
+    {
+      "Deity": "Vergadain (N)",
+      "Portfolio": "Wealth, luck, trickery"
+    },
+    {
+      "Organization": "Harpers",
+      "Alignment": "CG/NG",
+      "Base": "Hidden",
+      "Purpose": "Balance of power; oppose tyranny"
+    },
+    {
+      "Organization": "Zhentarim (Black Network)",
+      "Alignment": "LE",
+      "Base": "Zhentil Keep / Darkhold",
+      "Purpose": "Trade monopoly; regional domination"
+    },
+    {
+      "Organization": "Red Wizards of Thay",
+      "Alignment": "NE",
+      "Base": "Thay",
+      "Purpose": "Magical domination of Faerûn"
+    },
+    {
+      "Organization": "The Chosen of Mystra",
+      "Alignment": "Varies",
+      "Base": "Scattered",
+      "Purpose": "Guardians of the Weave"
+    },
+    {
+      "Organization": "The Lords' Alliance",
+      "Alignment": "LN",
+      "Base": "Waterdeep",
+      "Purpose": "Mutual defense; trade"
+    },
+    {
+      "Organization": "The Emerald Enclave",
+      "Alignment": "N",
+      "Base": "Deepwild",
+      "Purpose": "Protect civilized areas from nature"
+    },
+    {
+      "Organization": "Bregan D'aerthe",
+      "Alignment": "CE/CN",
+      "Base": "Menzoberranzan",
+      "Purpose": "Drow mercenary company"
+    },
+    {
+      "Organization": "Force Grey (Grey Hands)",
+      "Alignment": "LN/LG",
+      "Base": "Waterdeep",
+      "Purpose": "Elite agents of Waterdeep's Lords"
+    },
+    {
+      "Prestige Class": "Harper Scout",
+      "Requirements": "Bard 1 or Ranger 2; Knowledge (local) 4 ranks",
+      "Special": "Bard spells, stealth"
+    },
+    {
+      "Prestige Class": "Purple Dragon Knight",
+      "Requirements": "Fighter 4; Diplomacy 4",
+      "Special": "Leadership-focused martial"
+    },
+    {
+      "Prestige Class": "Red Wizard",
+      "Requirements": "Wizard 5, Spellcraft 7",
+      "Special": "Specialist power; item creation"
+    },
+    {
+      "Prestige Class": "Shadow Adept",
+      "Requirements": "Knowledge (arcana) 8, any metamagic",
+      "Special": "Shadow Weave; illusion power"
+    },
+    {
+      "Prestige Class": "Hathran",
+      "Requirements": "Druid 3 or Wizard 3; Rashemen female only",
+      "Special": "Rashemen witch collective"
+    },
+    {
+      "Prestige Class": "Arcane Devotee",
+      "Requirements": "Knowledge (religion) 4, arcane caster",
+      "Special": "Deity-focused spellcasting"
+    },
+    {
+      "Prestige Class": "Divine Champion",
+      "Requirements": "Base attack +7; patron deity",
+      "Special": "Smite; martyr abilities"
+    },
+    {
+      "Prestige Class": "Divine Disciple",
+      "Requirements": "Cleric; Knowledge (religion) 9",
+      "Special": "Demigod transformation"
+    }
+  ],
+  "body": "# FR — D&D 3.5 Lore Reference\n\nSource: FR Campaign Setting 3.5 (FRCS, 2001), Player's Guide to Faerûn (2004),\nFaiths & Pantheons (2002), Races of Faerûn (2003), Unapproachable East (2003)\nLive lookup: https://forgottenrealms.fandom.com/wiki/\n\n---\n\n## The World of Faerûn\n\n**Toril** is the planet. **Faerûn** is the main continent.\n**The FR Campaign Setting (FRCS)** is the canonical source for 3.5e.\nTimeline anchor: **1372 DR** (Dale Reckoning) = present day in base 3.5 FR.\n\n---\n\n## Major Regions of Faerûn\n\n| Region | Character | Notable Cities |\n|---|---|---|\n| The Sword Coast | Trade, adventure, diversity | Waterdeep, Baldur's Gate, Neverwinter |\n| The Heartlands | Central, safe, cosmopolitan | Suzail, Eveningstar, Arabel (Cormyr) |\n| Anauroch | Desert wasteland; Netheril ruins | Shade Enclave (floating city returned) |\n| The Moonsea | Harsh, tyrants, war | Phlan, Zhentil Keep, Hillsfar, Mulmaster |\n| The Dalelands | Rural, Elven allies, frontier | Shadowdale, Mistledale, Essembra |\n| The Underdark | Underground civilization | Menzoberranzan, Blingdenstone, Gracklstugh |\n| Calimshan | Southern empire, ancient, corrupt | Calimport, Memnon |\n| Thay | Theocracy of Red Wizards | Eltabbar, Bezantur |\n| Waterdeep | City of Splendors; cosmopolitan | Waterdeep (pop. ~1.3M) |\n| Amn | Merchant nation; oligarchy | Athkatla |\n| Chessenta | City-states; gladiatorial | Cimbar |\n| The Unapproachable East | Exotic; Rashemen, Aglarond | Velprintalar, Immilmar |\n\n---\n\n## The Deities of Faerûn (Key Entries)\n\n### Greater Deities\n| Deity | Alignment | Portfolio | Symbol |\n|---|---|---|---|\n| Ao | — | Overgod (not worshipped) | — |\n| Mystra | NG | Magic, spells, the Weave | Seven stars / blue flame |\n| Torm | LG | Duty, loyalty, obedience | Armored right gauntlet |\n| Helm | LN | Guardians, protection, watchers | Eye on upright gauntlet |\n| Tempus | CN | War, battle, warriors | Flaming sword / white gloves |\n| Chauntea | NG | Nature, agriculture, farmers | Wheat-like flower in a sunburst |\n| Selûne | CG | Moon, stars, navigation | Pair of eyes surrounded by seven stars |\n| Shar | NE | Dark, night, loss, secrets | Black disk with purple border |\n| Lathander | NG | Birth, renewal, spring, youth | Sunrise in rosy hues |\n| Kelemvor | LN | Death, the dead | Upright skeletal arm holding balanced scales |\n\n### Intermediate Deities\n| Deity | Alignment | Portfolio |\n|---|---|---|\n| Azuth | LN | Wizards, mages, spells |\n| Bane | LE | Strife, hatred, tyranny, fear |\n| Cyric | CE | Murder, lies, intrigue, illusions |\n| Ilmater | LG | Endurance, suffering, martyrdom |\n| Oghma | N | Knowledge, invention, inspiration |\n| Silvanus | N | Wild nature, druids |\n| Talos | CE | Storms, destruction |\n| Tymora | CG | Good fortune, skill, victory |\n| Umberlee | CE | Seas, oceans, underwater hazards |\n| Waukeen | N | Trade, money, merchants |\n\n### Elven Pantheon\n| Deity | Portfolio |\n|---|---|\n| Corellon Larethian (CG) | Chief elven god; magic, music, arts |\n| Angharradh (CG) | Triune goddess; spring, fertility |\n| Hanali Celanil (CG) | Love, beauty, romance |\n| Labelas Enoreth (CG) | Time, longevity, history |\n| Rillifane Rallathil (CG) | Woodlands, druids, wild elves |\n| Sehanine Moonbow (CG) | Dreams, death, journeys |\n| Solonor Thelandira (CG) | Archery, hunting |\n\n### Dwarven Pantheon\n| Deity | Portfolio |\n|---|---|\n| Moradin (LG) | Chief dwarven god; creation, smithing |\n| Clangeddin Silverbeard (LG) | Battle, war, valor |\n| Dumathoin (N) | Buried wealth, mining, silence |\n| Vergadain (N) | Wealth, luck, trickery |\n\n---\n\n## Races of Faerûn (FRCS + Races of Faerûn)\n\n### Standard Races (PHB rules apply)\nHuman, Dwarf (Shield/Gold), Elf (Moon/Sun/Wood/Wild/Sea/Drow), Gnome (Rock/Forest/Svirfneblin), Halfling (Lightfoot/Strongheart/Ghostwise), Half-Elf, Half-Orc\n\n### Faerûn-Specific Subraces\n**Moon Elf** (most common surface elf): +2 DEX, −2 CON; Favored class: Wizard\n**Sun Elf**: +2 INT, −2 CON; Favored class: Wizard; rarer, haughty\n**Wild Elf**: +2 DEX, −2 INT; Favored class: Sorcerer; forest-dwelling\n**Drow**: +2 DEX, −2 CON, +2 INT, +2 CHA; SR 11+level; light sensitivity; Favored class: Wizard (F) or Cleric (M)\n\n**Shield Dwarf**: STD dwarf stats; Favored class: Fighter\n**Gold Dwarf** (Stout): +2 CON, −2 DEX (not STR as common misread)\n\n**Strongheart Halfling**: bon feat at 1st (replaces +1 to saves)\n**Ghostwise Halfling**: Telepathy 100 ft (can't speak aloud) — Faerun-exclusive\n\n---\n\n## Organizations\n\n| Organization | Alignment | Base | Purpose |\n|---|---|---|---|\n| Harpers | CG/NG | Hidden | Balance of power; oppose tyranny |\n| Zhentarim (Black Network) | LE | Zhentil Keep / Darkhold | Trade monopoly; regional domination |\n| Red Wizards of Thay | NE | Thay | Magical domination of Faerûn |\n| The Chosen of Mystra | Varies | Scattered | Guardians of the Weave |\n| The Lords' Alliance | LN | Waterdeep | Mutual defense; trade |\n| The Emerald Enclave | N | Deepwild | Protect civilized areas from nature |\n| Bregan D'aerthe | CE/CN | Menzoberranzan | Drow mercenary company |\n| Force Grey (Grey Hands) | LN/LG | Waterdeep | Elite agents of Waterdeep's Lords |\n\n---\n\n## The Weave and the Shadow Weave\n\n**The Weave**: The fabric of magic in Faerûn, maintained by Mystra. Spellcasters tap into it.\n**Shadow Weave**: Shar's corruption; used by followers. +1 CL to Illusion/Enchantment/Darkness; −2 to Evocation/Transmutation; cannot learn Divination. (See Shadow Weave Magic feat, FRCS)\n\n**Dead Magic Zones**: Areas where the Weave is destroyed. No magic functions.\n**Wild Magic Zones**: The Weave is unstable. Roll on wild surge table.\n\n---\n\n## Key Prestige Classes (FRCS / OGL)\n\n| Prestige Class | Requirements | Special |\n|---|---|---|\n| Harper Scout | Bard 1 or Ranger 2; Knowledge (local) 4 ranks | Bard spells, stealth |\n| Purple Dragon Knight | Fighter 4; Diplomacy 4 | Leadership-focused martial |\n| Red Wizard | Wizard 5, Spellcraft 7 | Specialist power; item creation |\n| Shadow Adept | Knowledge (arcana) 8, any metamagic | Shadow Weave; illusion power |\n| Hathran | Druid 3 or Wizard 3; Rashemen female only | Rashemen witch collective |\n| Arcane Devotee | Knowledge (religion) 4, arcane caster | Deity-focused spellcasting |\n| Divine Champion | Base attack +7; patron deity | Smite; martyr abilities |\n| Divine Disciple | Cleric; Knowledge (religion) 9 | Demigod transformation |\n\n---\n\n## Notable Locations\n\n**Waterdeep**: The City of Splendors. Pop. ~132,000 (city) to 1.3M (total). Ruled by hidden Lords. Guilds dominate commerce. Castle Waterdeep; Undermountain beneath.\n\n**Baldur's Gate**: Seat of the Flaming Fist mercenary company. Major trade hub. Two dukes + council of four.\n\n**Neverwinter**: The City of Skilled Hands. Famous for craftsmanship. Near Mount Hotenow (volcano).\n\n**Menzoberranzan**: Drow city of 20,000+. Ruled by noble houses; House Baenre at top. Location: Northdark Underdark.\n\n**Myth Drannor**: Ancient elven city; now ruins haunted by fiends. Recently reclaimed partially by elves (post-1369 DR events).\n\n**Undermountain**: Megadungeon beneath Waterdeep; created by Halaster Blackcloak; 23+ known levels.\n\n---\n\n## The Spellplague Warning (4e retcon — ignore for 3.5 play)\nThe Spellplague (1385 DR) is a **4th Edition event**. In a 3.5 campaign set in 1372 DR:\n- Mystra lives\n- The Weave is intact\n- Toril and Abeir are separate\n- Do NOT incorporate 4e/5e lore unless the player explicitly wants it\n\n---\n\n## Calendar of Harptos (Faerûn)\n\n12 months of 30 days + 5 intercalary days (6 in leap years every 4 years):\nHammer, Midwinter (festival), Alturiak, Ches, Tarsakh, Greengrass, Mirtul, Kythorn, Flamerule, Shieldmeet (leap), Eleasis, Eleint, Highharvestide, Marpenoth, Uktar, Feast of the Moon, Nightal\n\n**1 tenday = 10 days** (not weeks; no 7-day week in Faerûn)"
+}

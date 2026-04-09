@@ -1,0 +1,316 @@
+{
+  "skill": "unknown",
+  "desc": "",
+  "rules": {
+    "Regional Human Traits": "Humans gain 1 regional feat for free at 1st level based on homeland."
+  },
+  "tables": [
+    {
+      "Human Subrace": "Calishite",
+      "Origin Regions": "Calimshan, Tethyr",
+      "Favored Class": "Sorcerer",
+      "Notes": "Olive/dark complexion; tend toward magic bloodlines"
+    },
+    {
+      "Human Subrace": "Chondathan",
+      "Origin Regions": "Heartlands, Dales, Cormyr, Sembia",
+      "Favored Class": "Rogue",
+      "Notes": "Most common \"generic\" Faerûnian"
+    },
+    {
+      "Human Subrace": "Chultan",
+      "Origin Regions": "Chult",
+      "Favored Class": "Barbarian",
+      "Notes": "Dark complexion; tribal traditions"
+    },
+    {
+      "Human Subrace": "Damaran",
+      "Origin Regions": "Damara, Vaasa, Moonsea, Thesk",
+      "Favored Class": "Warrior",
+      "Notes": "Northern; hardy; Slavic analog"
+    },
+    {
+      "Human Subrace": "Illuskan",
+      "Origin Regions": "Luskan, Icewind Dale, Moonshae Isles",
+      "Favored Class": "Barbarian",
+      "Notes": "Norse analog; pale, tall"
+    },
+    {
+      "Human Subrace": "Mulan",
+      "Origin Regions": "Thay, Mulhorand, Unther",
+      "Favored Class": "Wizard",
+      "Notes": "Tan/shaved-head; ancient culture; most are enslaved"
+    },
+    {
+      "Human Subrace": "Rashemi",
+      "Origin Regions": "Rashemen",
+      "Favored Class": "Fighter",
+      "Notes": "Short, stocky; fierce; female mages, male warriors"
+    },
+    {
+      "Human Subrace": "Shaaran",
+      "Origin Regions": "The Shaar",
+      "Favored Class": "Barbarian",
+      "Notes": "Dark; nomadic; excellent riders"
+    },
+    {
+      "Human Subrace": "Shou",
+      "Origin Regions": "Kara-Tur (eastern continent)",
+      "Favored Class": "Fighter",
+      "Notes": "Far eastern; rare in Faerûn proper"
+    },
+    {
+      "Human Subrace": "Tethyrian",
+      "Origin Regions": "Tethyr, Amn, Calimshan",
+      "Favored Class": "Paladin",
+      "Notes": "Mix of Chondathan/Calishite"
+    },
+    {
+      "Human Subrace": "Turami",
+      "Origin Regions": "Turmish, Lake of Steam",
+      "Favored Class": "Rogue",
+      "Notes": "Dark; Mediterranean analog"
+    },
+    {
+      "Race": "Human",
+      "STR": "—",
+      "DEX": "—",
+      "CON": "—",
+      "INT": "—",
+      "WIS": "—",
+      "CHA": "—",
+      "LA": "—"
+    },
+    {
+      "Race": "Moon Elf",
+      "STR": "—",
+      "DEX": "+2",
+      "CON": "−2",
+      "INT": "—",
+      "WIS": "—",
+      "CHA": "—",
+      "LA": "—"
+    },
+    {
+      "Race": "Sun Elf",
+      "STR": "—",
+      "DEX": "—",
+      "CON": "−2",
+      "INT": "+2",
+      "WIS": "—",
+      "CHA": "—",
+      "LA": "—"
+    },
+    {
+      "Race": "Wild Elf",
+      "STR": "—",
+      "DEX": "+2",
+      "CON": "—",
+      "INT": "−2",
+      "WIS": "—",
+      "CHA": "—",
+      "LA": "—"
+    },
+    {
+      "Race": "Wood Elf",
+      "STR": "+2",
+      "DEX": "+2",
+      "CON": "—",
+      "INT": "−2",
+      "WIS": "—",
+      "CHA": "−2",
+      "LA": "—"
+    },
+    {
+      "Race": "Sea Elf",
+      "STR": "—",
+      "DEX": "+2",
+      "CON": "—",
+      "INT": "−2",
+      "WIS": "—",
+      "CHA": "—",
+      "LA": "—"
+    },
+    {
+      "Race": "Drow",
+      "STR": "—",
+      "DEX": "+2",
+      "CON": "−2",
+      "INT": "+2",
+      "WIS": "—",
+      "CHA": "+2",
+      "LA": "+2"
+    },
+    {
+      "Race": "Shield Dwarf",
+      "STR": "—",
+      "DEX": "—",
+      "CON": "+2",
+      "INT": "—",
+      "WIS": "—",
+      "CHA": "−2",
+      "LA": "—"
+    },
+    {
+      "Race": "Gold Dwarf",
+      "STR": "—",
+      "DEX": "−2",
+      "CON": "+2",
+      "INT": "—",
+      "WIS": "—",
+      "CHA": "—",
+      "LA": "—"
+    },
+    {
+      "Race": "Duergar",
+      "STR": "—",
+      "DEX": "—",
+      "CON": "+2",
+      "INT": "—",
+      "WIS": "—",
+      "CHA": "−4",
+      "LA": "+1"
+    },
+    {
+      "Race": "Rock Gnome",
+      "STR": "−2",
+      "DEX": "—",
+      "CON": "+2",
+      "INT": "+2",
+      "WIS": "−2",
+      "CHA": "—",
+      "LA": "—"
+    },
+    {
+      "Race": "Forest Gnome",
+      "STR": "−4",
+      "DEX": "+2",
+      "CON": "+2",
+      "INT": "+2",
+      "WIS": "+2",
+      "CHA": "−2",
+      "LA": "—"
+    },
+    {
+      "Race": "Svirfneblin",
+      "STR": "−2",
+      "DEX": "+2",
+      "CON": "—",
+      "INT": "—",
+      "WIS": "+2",
+      "CHA": "−4",
+      "LA": "+3"
+    },
+    {
+      "Race": "Lightfoot Halfling",
+      "STR": "−2",
+      "DEX": "+2",
+      "CON": "—",
+      "INT": "—",
+      "WIS": "—",
+      "CHA": "—",
+      "LA": "—"
+    },
+    {
+      "Race": "Strongheart Halfling",
+      "STR": "−2",
+      "DEX": "+2",
+      "CON": "—",
+      "INT": "—",
+      "WIS": "—",
+      "CHA": "—",
+      "LA": "—"
+    },
+    {
+      "Race": "Ghostwise Halfling",
+      "STR": "−2",
+      "DEX": "+2",
+      "CON": "—",
+      "INT": "—",
+      "WIS": "+2",
+      "CHA": "—",
+      "LA": "—"
+    },
+    {
+      "Race": "Half-Elf",
+      "STR": "—",
+      "DEX": "—",
+      "CON": "—",
+      "INT": "—",
+      "WIS": "—",
+      "CHA": "—",
+      "LA": "—"
+    },
+    {
+      "Race": "Half-Orc",
+      "STR": "+2",
+      "DEX": "—",
+      "CON": "—",
+      "INT": "−2",
+      "WIS": "—",
+      "CHA": "−2",
+      "LA": "—"
+    },
+    {
+      "Race": "Aasimar",
+      "STR": "—",
+      "DEX": "—",
+      "CON": "—",
+      "INT": "—",
+      "WIS": "+2",
+      "CHA": "+2",
+      "LA": "+1"
+    },
+    {
+      "Race": "Tiefling",
+      "STR": "—",
+      "DEX": "+2",
+      "CON": "—",
+      "INT": "+2",
+      "WIS": "—",
+      "CHA": "−2",
+      "LA": "+1"
+    },
+    {
+      "Race": "Air Genasi",
+      "STR": "+2",
+      "DEX": "+2",
+      "CON": "—",
+      "INT": "—",
+      "WIS": "−2",
+      "CHA": "−2",
+      "LA": "+1"
+    },
+    {
+      "Race": "Earth Genasi",
+      "STR": "+2",
+      "DEX": "—",
+      "CON": "+2",
+      "INT": "—",
+      "WIS": "−2",
+      "CHA": "−2",
+      "LA": "+1"
+    },
+    {
+      "Race": "Fire Genasi",
+      "STR": "—",
+      "DEX": "—",
+      "CON": "—",
+      "INT": "+2",
+      "WIS": "—",
+      "CHA": "−2",
+      "LA": "+1"
+    },
+    {
+      "Race": "Water Genasi",
+      "STR": "—",
+      "DEX": "—",
+      "CON": "+2",
+      "INT": "—",
+      "WIS": "—",
+      "CHA": "−2",
+      "LA": "+1"
+    }
+  ],
+  "body": "# FR — Races & Subraces Complete (D&D 3.5)\n\nSources: Races of Faerûn (2003), FRCS (2001), Player's Guide to Faerûn (2004),\nUnderdark (2003), Serpent Kingdoms (2004)\n\nFormat: Racial modifiers / Size / Speed / Favored class / Special abilities / Region\n\n---\n\n## HUMANS OF FAERÛN\n\nAll human subraces use standard human stats (+1 feat at 1st, +4 skill points at 1st, +1/level)\nbut have cultural/regional differences and different favored classes.\n\n| Human Subrace | Origin Regions | Favored Class | Notes |\n|---|---|---|---|\n| Calishite | Calimshan, Tethyr | Sorcerer | Olive/dark complexion; tend toward magic bloodlines |\n| Chondathan | Heartlands, Dales, Cormyr, Sembia | Rogue | Most common \"generic\" Faerûnian |\n| Chultan | Chult | Barbarian | Dark complexion; tribal traditions |\n| Damaran | Damara, Vaasa, Moonsea, Thesk | Warrior | Northern; hardy; Slavic analog |\n| Illuskan | Luskan, Icewind Dale, Moonshae Isles | Barbarian | Norse analog; pale, tall |\n| Mulan | Thay, Mulhorand, Unther | Wizard | Tan/shaved-head; ancient culture; most are enslaved |\n| Rashemi | Rashemen | Fighter | Short, stocky; fierce; female mages, male warriors |\n| Shaaran | The Shaar | Barbarian | Dark; nomadic; excellent riders |\n| Shou | Kara-Tur (eastern continent) | Fighter | Far eastern; rare in Faerûn proper |\n| Tethyrian | Tethyr, Amn, Calimshan | Paladin | Mix of Chondathan/Calishite |\n| Turami | Turmish, Lake of Steam | Rogue | Dark; Mediterranean analog |\n\n**Regional Human Traits**: Humans gain 1 regional feat for free at 1st level based on homeland.\n\n---\n\n## ELVES\n\n### Moon Elf (Teu'Tel'Quessir — the People)\n**Most common surface elf subrace in Faerûn**\nAbility: +2 DEX, −2 CON\nSize: Medium | Speed: 30 ft\nFavored Class: Wizard\nAutomatic languages: Common, Elven\nSpecial (all elves): Immune to sleep; +2 save vs. enchantment; Low-light vision;\nWeapon Proficiency (longsword, rapier, longbow, shortbow, composite versions);\n+2 Spot/Listen/Search; free Search near secret doors\nRegion: Evermeet, the forests of the North, scattered\n\n### Sun Elf (Gold Elf, Tel'Quessir)\nAbility: +2 INT, −2 CON\nFavored Class: Wizard\nNotes: Haughty, rare on the surface; most common on Evermeet. Consider themselves\nsuperior to other elves. Prefer arcane magic. Average height slightly taller than moon elf.\nRegion: Evermeet primarily; scattered nobles in major cities\n\n### Wood Elf (Sylvan Elf, Sy'Tel'Quessir)\nAbility: +2 STR, +2 DEX, −2 INT, −2 CHA\nFavored Class: Ranger\nSpeed: 30 ft\nNotes: Reclusive forest-dwellers. More primitive. Often found in the High Forest, Cormanthor.\nOften confuse with wild elves (slightly different). Some sources merge these.\n\n### Wild Elf (Green Elf, Sy'Tel'Quessir)\nAbility: +2 DEX, −2 INT\nFavored Class: Sorcerer\nNotes: Most primitive; distrust civilization; paint themselves for war. Found in deep old forests.\nRegion: The High Forest, Misty Forest, Forest of Amtar\n\n### Sea Elf (Alu'Tel'Quessir)\nAbility: +2 DEX, −2 INT\nSpeed: 30 ft land, 40 ft swim\nFavored Class: Fighter\nExtra: Gills (can breathe water + air); primary weapon Trident or spear\nRegion: Underwater near coastlines; Sea of Fallen Stars\n\n### Drow (Dark Elf, Ssri'Tel'Quessir)\nAbility: +2 DEX, −2 CON, +2 INT, +2 CHA\nFavored Class: Wizard (female) or Cleric (male) — gender matters in drow society\nSpecial: Darkvision 120 ft; SR = 11 + char_lvl; SR;\nDrow Sp Abilities (Faerie Fire, Darkness 1/day each; Dancing Lights at will);\nLight Blindness (blinded 1 round in bright light, −1 attack/checks in shadowy areas);\nWeapon Proficiency (rapier, hand crossbow, short sword)\nLevel Adjustment: +2\nNotes: This is a powerful race requiring DM approval. Female drow are dominant in society.\nMale drow are second-class citizens except in Eilistraee and Vhaeraun worship.\nRegion: Underdark; especially Menzoberranzan\n\n### Avariel (Winged Elf) [non-SRD]\nAbility: +2 DEX, −2 CON, +2 WIS\nSpeed: 30 ft; fly 50 ft (good maneuverability)\nLevel Adjustment: +2\nNotes: Extremely rare. Delicate bones (fragile in combat). Most live in isolated mountain aeries.\nRegion: High mountain peaks, Aerie of the Snow Eagles near Evermeet\n\n### Lythari (Elven Lycanthropes) [NPC race]\nNeutral good elves who are natural werewolves. Not playable in standard campaigns.\n\n---\n\n## DWARVES\n\n### Shield Dwarf (Gold Dwarf of the North — most common)\nAbility: +2 CON, −2 CHA\nSize: Medium | Speed: 20 ft (not reduced by armor)\nFavored Class: Fighter\nSpecial (all dwarves): Darkvision 60 ft; +2 save vs. poison/spells/Sp; +4 dodge vs. giants;\n+2 Appraise/Craft (stone/metal); Stonecunning (+2 Search underground, notice unusual stonework)\nWeapon Familiarity: Dwarven waraxe + urgrosh as martial\nRegion: Shield dwarves in the North, the Underdark, the East\n\n### Gold Dwarf (Hill Dwarf of the South)\nAbility: +2 CON, −2 DEX (this is the actual southern variant; not STR based)\nFavored Class: Fighter\nNotes: More gregarious than shield dwarves; live in the Great Rift (chasm in the Shaar).\nMaintain trade with surface nations. Less isolated.\nRegion: The Great Rift, Underhome (beneath the Shaar)\n\n### Duergar (Gray Dwarf)\nAbility: +2 CON, −4 CHA (and −2 to INT for some treatments)\nFavored Class: Fighter\nSpecial: Darkvision 120 ft; Immune to paralysis, phantasms, poison; +2 save vs. spells;\nLight Sensitivity (−1 attack in bright light); Enlarge Person + Invisibility (1/day each as Sp);\n+4 Racial bon to Move Silently and Spot; +2 vs. spells and Sp abilities\nLevel Adjustment: +1\nRegion: Underdark; Gracklstugh\nAlignment: Usually LE\n\n### Arctic Dwarf (Icerim Dwarf)\nAbility: +2 CON, −2 CHA\nSpecial: Cold Resistance 5; Favored class: Barbarian instead of Fighter\nRegion: The Great Glacier, Novularond (far north)\n\n---\n\n## GNOMES\n\n### Rock Gnome (Standard, PHB)\nAbility: −2 STR, +2 CON, +2 INT, −2 WIS\nSize: Small | Speed: 20 ft\nFavored Class: Bard (or Illusionist/Wizard)\nSpecial: Low-light vision; +2 Listen; +1 save vs. illusions; Speak with Animals (burrowing, 1/day);\nDancing Lights, Ghost Sound, Prestidigitation (1/day each); +4 AC vs. giants; +2 Craft/Profession alchemy\nWeapon Familiarity: Gnome hooked hammer as martial\nRegion: Gnomish enclaves in major cities; Lantan; the Western Heartlands\n\n### Forest Gnome\nAbility: −4 STR, +2 DEX, +2 CON, +2 INT, +2 WIS, −2 CHA\nSize: Small | Speed: 20 ft | Favored Class: Ranger\nSpecial: Low-light vision; +2 Listen; Speak with Animals (any, at will); +2 save vs. spells;\nPass Without Trace at will (only in natural settings); Improved Innate Spells\nNotes: Extremely reclusive; rarely seen outside of deep forests. Most isolationist of gnomes.\n\n### Svirfneblin (Deep Gnome)\nAbility: −2 STR, +2 DEX, +2 WIS, −4 CHA (and INT is not modified but perception is higher)\nSpecial: Darkvision 120 ft; SR = 11 + char_lvl; +2 save vs. illusions; Innate abilities:\nBlindsight 30 ft; Blur 1/day; Blindness/Deafness 1/day; Change Self 1/day;\n+2 Hide underground; +4 Hide when still; +2 Craft (stone); Move Silently +2\nLevel Adjustment: +3\nRegion: Underdark; Blingdenstone (destroyed); various deep gnome enclaves\nAlignment: Usually NG\n\n---\n\n## HALFLINGS\n\n### Lightfoot Halfling (Most Common, PHB)\nAbility: −2 STR, +2 DEX\nSize: Small | Speed: 20 ft | Favored Class: Rogue\nSpecial: +1 attack with thrown weapons/slings; +2 Listen/Jump; Fearlessness (+2 saves vs. fear);\nLucky (+1 all saves); +2 Climb/Move Silently\n\n### Strongheart Halfling (Faerûn variant)\nAbility: −2 STR, +2 DEX\nFavored Class: Fighter (not Rogue)\nSpecial: **bon feat at 1st level** (replaces the +1 saves of lightfoot);\n+2 Listen; Fearlessness; Lucky\nRegion: Luiren, the Heartlands\n\n### Ghostwise Halfling (Faerûn-exclusive)\nAbility: −2 STR, +2 DEX, +2 WIS\nFavored Class: Barbarian\nSpecial: Telepathy 100 ft (with chosen target; wordless communication); Cannot speak normally;\nFearlessness; Lucky; +2 Listen\nNotes: Most primitive halfling subrace. Cannot be heard if they don't want to be. Live in deep\nforest communities. Very rare outside Luiren.\n\n---\n\n## HALF-RACES\n\n### Half-Elf (Standard PHB)\nAbility: None\nSpecial: Immune to sleep; +2 save vs. enchantment; Low-light vision; +1 Diplomacy/Gather Info;\nElven Blood (counts as elf for effects favoring elves); +2 bon to one skill (varies)\nFavored Class: Any\nNotes: Extremely common in Aglarond (due to the Yuirwood elves). Common in major cities.\n\n### Half-Orc (Standard PHB)\nAbility: +2 STR, −2 INT, −2 CHA\nSpecial: Darkvision 60 ft; Orc Blood (counts as orc for effects)\nFavored Class: Barbarian\nNotes: Common in the Moonsea region (Thesk, after the Orc Wars). Also in the North.\n\n---\n\n## PLANETOUCHED RACES\n\n### Aasimar\nAbility: +2 WIS, +2 CHA\nSpecial: Darkvision 60 ft; Resist acid/cold/electricity 5; +2 saves vs. poison and disease;\nDaylight 1/day; +2 Spot/Listen; Outsider blood\nFavored Class: Paladin | Level Adjustment: +1\nNotes: Have celestial (angel/archon/eladrin) blood in ancestry. Usually 1–4 generations back.\nCommon in: Mulhorand (due to deific bloodlines), Waterdeep, large cities generally.\n\n### Tiefling\nAbility: +2 DEX, +2 INT, −2 CHA\nSpecial: Darkvision 60 ft; Resist cold/electricity/fire 5; +2 Bluff/Hide;\nDarkness 1/day; Outsider blood\nFavored Class: Rogue | Level Adjustment: +1\nNotes: Fiendish bloodline (usually devil or demon in ancestry). Distrusted everywhere.\n\n### Air Genasi\nAbility: +2 STR, +2 DEX, −2 WIS, −2 CHA\nSpecial: Darkvision 60 ft; +1 save vs. air/electricity spells; Breathe Air (never suffocate);\nLevitate 1/day; Outsider blood\nFavored Class: Fighter | Level Adjustment: +1\nNotes: Djinn bloodlines; common in Calimshan (historical djinn rule). Also in Anauroch.\n\n### Earth Genasi\nAbility: +2 STR, +2 CON, −2 WIS, −2 CHA\nSpecial: Darkvision 60 ft; +1 save vs. earth/acid spells; Pass Without Trace (stone and soil, 1/day);\nOutsider blood; Stone's Endurance (1/day, reduce damage next hit by 10)\nFavored Class: Fighter | Level Adjustment: +1\n\n### Fire Genasi\nAbility: +2 INT, −2 CHA\nSpecial: Darkvision 60 ft; Resist fire 5; Control Flame (Dancing Lights using fire, at will);\n+1 save vs. fire spells; produce flame 1/day\nFavored Class: Fighter | Level Adjustment: +1\nNotes: Common in Unther and Mulhorand (fire genasi heritage from gods of fire).\n\n### Water Genasi\nAbility: +2 CON, −2 CHA\nSpecial: Darkvision 60 ft; Breathe Water; Create Water 1/day;\n+1 save vs. water/cold spells; Swim speed 30 ft\nFavored Class: Fighter | Level Adjustment: +1\n\n### Chaos Gnome (Chaos Spriggan) [rare]\nExotic; strongly chaotic; not typically playable without DM approval.\n\n---\n\n## MONSTROUS / EXOTIC PLAYABLE RACES\n\n### Centaur\nSize: Large | Level Adjustment: +2 (effectively)\nSpecial: Natural armor +3; Trample; 4 legs (speed 50 ft); Multiple attacks\n\n### Drow (see above, LA +2)\n\n### Lizardfolk (Humanoid/Reptilian)\nAbility: +2 STR, +2 CON, −2 INT, −2 WIS\nSpecial: +5 Natural armor; Hold Breath; Primary attacks: 2 claws 1d4 + bite 1d4\nLevel Adjustment: +1\n\n### Ogre\nNot typically playable without special campaign permission (too many racial HD + LA).\n\n### Yuan-ti Pureblood [very rare PC option]\nAbility: +2 DEX, +2 INT, +2 CHA\nSpecial: Poison immunity; +2 saves vs. spells; Alternate Form (humanoid to snake-like);\nDetect Poison at will; Produce Acid 1/day\nLevel Adjustment: +2\nNotes: Serpent Kingdoms details yuan-ti extensively.\n\n---\n\n## UNIQUE FAERÛNIAN BEINGS\n\n### The Chosen (templates, not races)\nMystra's Chosen: Near-immortal; can use spellfire; +4 save vs. spells; various other powers.\nAo has never created Chosen; it's a deity-specific power.\nThe Seven Sisters are all Chosen of Mystra (Storm Silverhand, Alustriel, the Simbul, etc.)\n\n### Shades (Netherese Shadow Beings)\nShadow Weave users who survived centuries in the plane of shadow. Treated as outsiders.\nUnique stat block; not a PC race. Can be used as major villains/NPCs.\n\n---\n\n## RACIAL ABILITY SCORE SUMMARY TABLE\n\n| Race | STR | DEX | CON | INT | WIS | CHA | LA |\n|---|---|---|---|---|---|---|---|\n| Human | — | — | — | — | — | — | — |\n| Moon Elf | — | +2 | −2 | — | — | — | — |\n| Sun Elf | — | — | −2 | +2 | — | — | — |\n| Wild Elf | — | +2 | — | −2 | — | — | — |\n| Wood Elf | +2 | +2 | — | −2 | — | −2 | — |\n| Sea Elf | — | +2 | — | −2 | — | — | — |\n| Drow | — | +2 | −2 | +2 | — | +2 | +2 |\n| Shield Dwarf | — | — | +2 | — | — | −2 | — |\n| Gold Dwarf | — | −2 | +2 | — | — | — | — |\n| Duergar | — | — | +2 | — | — | −4 | +1 |\n| Rock Gnome | −2 | — | +2 | +2 | −2 | — | — |\n| Forest Gnome | −4 | +2 | +2 | +2 | +2 | −2 | — |\n| Svirfneblin | −2 | +2 | — | — | +2 | −4 | +3 |\n| Lightfoot Halfling | −2 | +2 | — | — | — | — | — |\n| Strongheart Halfling | −2 | +2 | — | — | — | — | — |\n| Ghostwise Halfling | −2 | +2 | — | — | +2 | — | — |\n| Half-Elf | — | — | — | — | — | — | — |\n| Half-Orc | +2 | — | — | −2 | — | −2 | — |\n| Aasimar | — | — | — | — | +2 | +2 | +1 |\n| Tiefling | — | +2 | — | +2 | — | −2 | +1 |\n| Air Genasi | +2 | +2 | — | — | −2 | −2 | +1 |\n| Earth Genasi | +2 | — | +2 | — | −2 | −2 | +1 |\n| Fire Genasi | — | — | — | +2 | — | −2 | +1 |\n| Water Genasi | — | — | +2 | — | — | −2 | +1 |"
+}

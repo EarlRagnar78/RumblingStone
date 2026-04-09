@@ -1,4 +1,4 @@
-# Forgotten Realms — History & Timeline (D&D 3.5)
+# FR — History & Timeline (D&D 3.5)
 
 Sources: FRCS (2001), Lost Empires of Faerûn (2005), Player's Guide to Faerûn (2004),
 The Grand History of the Realms (2007)
@@ -47,7 +47,7 @@ Key events:
   He briefly replaces Mystryl (original Mystra). The system overloads; Mystryl dies; all magic fails.
   Most flying cities crash; the empire collapses. The phaerimm beneath Anauroch begin draining
   the land. One city, Shade Enclave, flees to the Shadowfell and survives.
-  
+
 The Fall of Netheril directly creates the Anauroch Desert and scatters the Netherese survivors
 who become the Halruaans, Bedine, and various other cultures.
 
@@ -174,7 +174,7 @@ worlds and imported humans as slaves (ancestors of the Mulan). Eventually overth
 
 ### Illefarn (−17,600 to −1,100 DR)
 Ancient elven empire covering what is now the Sword Coast North. Capital was Aelinthaldaar
-(buried under Waterdeep). Left the Forgotten Realms when the elves departed for Evermeet.
+(buried under Waterdeep). Left the FR when the elves departed for Evermeet.
 
 ### Eaerlann (−4,500 to −882 DR)
 Elven realm in the High Forest. Alliances with dwarves of Ammarindar. Destroyed by tanar'ri

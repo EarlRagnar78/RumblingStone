@@ -1,4 +1,4 @@
-# Forgotten Realms — Deities Complete Reference (D&D 3.5)
+# FR — Deities Complete Reference (D&D 3.5)
 
 Primary source: Faiths & Pantheons (2002), FRCS (2001), Player's Guide to Faerûn (2004)
 Live lookup: https://forgottenrealms.fandom.com/wiki/[Deity_Name]
@@ -81,7 +81,7 @@ Notes: Claims credit for all natural disasters. Among the oldest powers. Known a
 
 **Tempus** (TEM-pus)
 AL: CN | Portfolio: War, battle, warriors, combat, soldiers
-Domains: Chaos, Protection, Strength, War
+Domains: Chaos, Protection, STR, War
 Favored Weapon: Battleaxe | Symbol: Flaming sword or white gauntlet
 Worshippers: Warriors, soldiers, mercenaries, generals, anyone who fights
 Clergy: Called Battleguards. Worship through combat; temples are training grounds. Equal respect for
@@ -91,7 +91,7 @@ Does not prefer victory over defeat — only that battle be fought with courage.
 
 **Torm** (TORM)
 AL: LG | Portfolio: Duty, loyalty, obedience, paladins
-Domains: Good, Healing, Law, Protection, Strength
+Domains: Good, Healing, Law, Protection, STR
 Favored Weapon: Greatsword | Symbol: Armored right gauntlet upraised
 Worshippers: Paladins, soldiers, city guards, those who value duty and honor
 Clergy: Called Triadic Templars (alongside Ilmater and Tyr). Strict hierarchy, lawful behavior.
@@ -105,7 +105,7 @@ Favored Weapon: Longsword | Symbol: Balanced scales resting on a warhammer
 Worshippers: Judges, paladins, lawyers, magistrates, city watch, anyone who values justice
 Clergy: Called Tyrrans. Maintain courts and law. Combat evil with force when necessary.
 Notes: The Maimed God. Lost his hand to the wolf Kezef Chaos-Hound as part of a deal. Works closely
-with Torm and Ilmater (the Triad). Blind (sacrificed eyes for wisdom).
+with Torm and Ilmater (the Triad). Blind (sacrificed eyes for WIS).
 
 ---
 
@@ -150,28 +150,28 @@ Notes: Patron of artisans. Gondsman (construct) servants. Temple in Lantan.
 
 **Helm** (HELM)
 AL: LN | Portfolio: Guardians, protectors, protection, watchers
-Domains: Law, Planning, Protection, Strength
+Domains: Law, Planning, Protection, STR
 Favored Weapon: Bastard sword or greatsword | Symbol: Staring eye on an upright armored gauntlet
-Notes: The Vigilant One. Required to guard at all times; never allowed to break duty. Ancient deity.
+Notes: The Vigilant One. Required to guard at all ×; never allowed to break duty. Ancient deity.
 Mythal keepers of old were sometimes Helm worshippers. In Cormyr, Helm has many temple-fortresses.
 
 **Ilmater** (ill-MAY-ter)
 AL: LG | Portfolio: Endurance, suffering, martyrdom, perseverance, the oppressed
-Domains: Good, Healing, Law, Strength, Suffering
+Domains: Good, Healing, Law, STR, Suffering
 Favored Weapon: Unarmed strike | Symbol: Pair of hands bound at the wrist with red cord
 Notes: The Crying God. Worshippers suffer willingly to ease others' pain. Part of the Triad.
 Popular among the poor and suffering. Most popular in the Eastern Heartlands, Calimshan, and Turmish.
 
 **Lathander** (lah-THAN-der)
 AL: NG | Portfolio: Beginnings, birth, spring, athletics, vitality, self-perfection, youth
-Domains: Good, Healing, Nobility, Protection, Renewal, Strength, Sun
+Domains: Good, Healing, Nobility, Protection, Renewal, STR, Sun
 Favored Weapon: Heavy or light mace | Symbol: Rosy pink disk
 Notes: The Morninglord. Extremely popular; one of the most widely worshipped. Many temples.
 Paladins may take Lathander as patron. Strong presence in Waterdeep, Baldur's Gate, Cormyr.
 
 **Malar** (MAY-lar)
 AL: CE | Portfolio: Hunters, bloodlust, evil lycanthropes, blood
-Domains: Animal, Chaos, Evil, Moon, Strength
+Domains: Animal, Chaos, Evil, Moon, STR
 Favored Weapon: Claw bracer (treat as kama) | Symbol: Bestial claw with blood-red talons
 Notes: The Beastlord. Patron of evil hunters and lycanthropes. Rival of Nobanion and Lurue.
 
@@ -238,7 +238,7 @@ AL: CG | Portfolio: Good fortune, skill, victory, adventurers
 Domains: Chaos, Good, Luck, Protection, Travel
 Favored Weapon: Shuriken | Symbol: Silver disk (coin face-up)
 Notes: Lady Luck. Most popular deity among adventurers. "Tymora's favor" is a common toast.
-She was once an aspect of Tyche (broken into Tymora + Beshaba during ancient times).
+She was once an aspect of Tyche (broken into Tymora + Beshaba during ancient ×).
 
 **Umberlee** (UM-ber-lee)
 AL: CE | Portfolio: Oceans, currents, waves, sea winds, sailors (as extortion victim)
@@ -264,7 +264,7 @@ Favored Weapon: Bastard sword
 
 **Garagos** (gah-RAH-gos)
 AL: CE | Portfolio: War, skill-at-arms, destruction
-Domains: Chaos, Destruction, Strength, War
+Domains: Chaos, Destruction, STR, War
 Notes: Older war god deposed by Tempus. Worshipped in Unther (alongside Anhur).
 
 **Gargauth** (GAR-gawth)
@@ -294,7 +294,7 @@ Favored Weapon: Shuriken (thrown)
 
 **Loviatar** (LOV-ee-ah-tar)
 AL: LE | Portfolio: Pain, hurt, agony, torment, suffering, torture
-Domains: Evil, Law, Retribution, Strength, Suffering
+Domains: Evil, Law, Retribution, STR, Suffering
 Notes: The Maiden of Pain. Rival of Ilmater. Worshippers in gladiatorial arenas.
 
 **Lurue** (loo-ROO-ay)
@@ -412,7 +412,7 @@ Notes: Creator of the elven race. Father of the Seldarine (mostly). Fought Gruum
 Gruumsh lost an eye. Core elf deity. His blood fell to Toril and became the first elves.
 
 **Angharradh** (ANG-hah-radh)
-AL: CG | Portfolio: Spring, fertility, planting, birth, defense, wisdom
+AL: CG | Portfolio: Spring, fertility, planting, birth, defense, WIS
 Domains: Chaos, Good, Knowledge, Plant, Protection, Renewal
 Notes: Triune goddess composed of Aerdrie Faenya, Hanali Celanil, and Sehanine Moonbow.
 Consort of Corellon. Primary female elf deity.
@@ -476,7 +476,7 @@ Consort of Moradin.
 
 **Clangeddin Silverbeard** (KLAN-geh-din)
 AL: LG | Portfolio: Battle, war, valor, bravery, honor in battle
-Domains: Dwarf, Good, Law, Strength, War
+Domains: Dwarf, Good, Law, STR, War
 Favored Weapon: Battleaxe (paired)
 
 **Dugmaren Brightmantle** (DUG-mah-ren)
@@ -573,15 +573,15 @@ Domains: Air, Charm, Halfling, Plant
 ## Orcish Pantheon
 
 **Gruumsh** (GROOMSH) — Greater Deity
-AL: CE | Portfolio: Orcs, conquest, survival, strength, territory
-Domains: Cavern, Chaos, Evil, Orc, Strength, War
+AL: CE | Portfolio: Orcs, conquest, survival, STR, territory
+Domains: Cavern, Chaos, Evil, Orc, STR, War
 Symbol: Unblinking eye (lost to Corellon)
 Notes: The One-Eyed God. Lost an eye (accounts vary: to Corellon or to a rival). Commands orcs
 to expand and destroy.
 
 **Bahgtru** (BAH-groo)
-AL: CE | Portfolio: Loyalty, stupidity, brute strength
-Domains: Chaos, Evil, Orc, Strength
+AL: CE | Portfolio: Loyalty, stupidity, brute STR
+Domains: Chaos, Evil, Orc, STR
 
 **Ilneval** (IL-neh-val)
 AL: NE | Portfolio: War, strategy, hordes, overwhelming numbers
@@ -618,7 +618,7 @@ Full coverage in FR Wiki: forgottenrealms.fandom.com/wiki/Giant_pantheon
 **Io** (EE-oh) — Overgod of Dragonkind. Neutral. Created both Bahamut and Tiamat.
 
 **Bahamut** (bah-HAH-mut)
-AL: LG | Portfolio: Good dragons, wisdom, justice, wind
+AL: LG | Portfolio: Good dragons, WIS, justice, wind
 Domains: Air, Good, Law, Luck, Protection
 Notes: Platinum Dragon. Five great wyrm gold dragons serve as advisors. Takes humanoid form often.
 
@@ -635,13 +635,13 @@ Other dragon deities: **Aasterinian** (invention, pleasure, WN), **Chronepsis** 
 
 ## Notes on Domain Assignment (3.5)
 
-Domains grant 1 spell per spell level AND 1 granted power. Clerics get 2 domains.
+Domains grant 1 spell per SL AND 1 granted power. Clerics get 2 domains.
 
 **Uncommon domains** (non-SRD, from FR sources):
 Cavern (Stoneshape 1/day / Darkvision), Craft (Repair damage), Drow (Clairaudience/Clairvoyance 1/day),
 Dwarf (+4 Dodge vs. giants), Fate (Uncanny Dodge), Halfling (+1 attack 1/day), Metal (Rust resistance),
-Moon (Turn lycanthropes), Nobility (Leadership bonus feat), Ocean (Water breathing 1/day),
-Orc (Blind-fight bonus feat), Planning (Extend Spell metamagic free 1/day), Portal (Dimension door 1/day),
+Moon (Turn lycanthropes), Nobility (Leadership bon feat), Ocean (Water breathing 1/day),
+Orc (Blind-fight bon feat), Planning (Extend Spell metamagic free 1/day), Portal (Dimension door 1/day),
 Renewal (Reborn on death once/day), Retribution (Smite 1/day), Scalykind (+2 save vs. reptile),
 Spell (Imbue with Spell Ability 1/day), Spider (Poison 1/day), Suffering (Pain touch 1/day),
 Time (Haste 1/day), Trade (1/day +4 Appraise/Bluff/Diplomacy/Forgery), Tyranny (Domination),

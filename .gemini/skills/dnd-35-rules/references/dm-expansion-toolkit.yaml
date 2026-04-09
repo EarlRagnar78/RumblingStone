@@ -1,0 +1,438 @@
+skill: unknown
+description: ''
+sections:
+  overview: '# DM Expansion Toolkit — RumblingStone Campaign
+
+
+    This file is the **DM''s scratchpad and expansion layer**. It contains:
+
+    1. Monster art generation prompts (PNG upscale-ready)
+
+    2. Branching quest trees for artifacts, villains, and factions
+
+    3. Secondary objective and side quest bank
+
+    4. Villain expansion templates
+
+    5. Faction alliance/opposition tracker
+
+    6. DM "add your own" section
+
+
+    ---'
+  part_1_—_monster_art_generation: "### How to Generate Monster Art\n\nUse any of\
+    \ these free/open tools to generate visual references for monsters at the table:\n\
+    \n**Free AI art tools (2026):**\n- **Stable Diffusion** (local, free): https://github.com/AUTOMATIC1111/stable-diffusion-webui\n\
+    \  Models: SDXL + realistic_vision for monster art; fantasy_worlds for environments\n\
+    - **Comfy UI** (local, free): https://github.com/comfyanonymous/ComfyUI — more\
+    \ control\n- **Bing Image Creator** (free, web): https://www.bing.com/create —\
+    \ DALL-E based\n- **Leonardo.ai** (free tier): https://leonardo.ai — good for\
+    \ fantasy subjects\n\n**Upscaling free tools:**\n- **Real-ESRGAN** (local): https://github.com/xinntao/Real-ESRGAN\
+    \ — 4× upscale, open source\n- **Upscayl** (desktop app, free): https://upscayl.org\
+    \ — GUI wrapper for ESRGAN\n- **Topaz Gigapixel** (paid) — best quality for print\n\
+    \n**Recommended workflow:**\n```\n1. Generate base image with SD/DALL-E (512×512\
+    \ or 768×768)\n2. Upscale 4× with Real-ESRGAN or Upscayl → 2048×2048\n3. Crop\
+    \ to monster only; remove background (remove.bg or GIMP)\n4. Save as PNG with\
+    \ transparency → use as VTT token in Owlbear Rodeo or Roll20\n```\n\n---\n\n###\
+    \ Monster Art Prompt Templates\n\nUse these prompts in Stable Diffusion (SDXL)\
+    \ or DALL-E. Adjust details as needed.\n\n**General structure:**\n```\n[creature\
+    \ type], [key physical features], [posture/action], [color palette],\n[lighting],\
+    \ [art style], [quality tags]\n```\n\n**Quality tags to always append (Stable\
+    \ Diffusion):**\n```\nhighly detailed, D&D 3.5 monster manual art style, fantasy\
+    \ illustration,\nprofessional concept art, dramatic lighting, no background, transparent\
+    \ background\n```\n\n#### Red Hand of Doom / Cannath Vale Monsters\n\n**Hobgoblin\
+    \ Warrior (Standard Soldier)**\n```\nhobgoblin warrior in red-lacquered iron armor,\
+    \ battle-scarred face with orange skin and\namber eyes, holding a glaive, aggressive\
+    \ combat stance, red and black color scheme,\ntorchlight from below, D&D monster\
+    \ manual style, full body, no background\n```\n\n**Hobgoblin Wyrmlord (Elite Leader)**\n\
+    ```\nhobgoblin warlord in ornate black plate armor with dragon motifs, cloak of\
+    \ deep crimson,\none eye replaced by a glowing red gem, commanding pose, five-headed\
+    \ dragon standard behind him,\ndramatic backlit sunset, D&D fantasy illustration\
+    \ style, full body portrait\n```\n\n**Azarr Kul (High Wyrmlord, BBEG)**\n```\n\
+    powerful hobgoblin warpriest, muscular, wearing full plate engraved with Tiamat's\
+    \ five heads,\nhorned helm, cloak of iridescent black scales, wielding a dragon-headed\
+    \ morningstar,\ncrackling with five-colored elemental energy, throne room background\
+    \ of stone and dragon\nskull trophies, epic fantasy art style, vertical portrait\n\
+    ```\n\n**Regiarix (Adult Black Dragon)**\n```\nadult black dragon, massive obsidian\
+    \ scales dripping with swamp water, acid dripping from\ncurved fangs, enormous\
+    \ wingspan, perched on a half-submerged stone ruin emerging from a\nbog, yellow\
+    \ eyes with vertical pupils, dramatic overcast sky, dark fantasy style, full body\n\
+    ```\n\n**Saarvith (Green Dragon Wyrmlord, wyvern-rider)**\n```\nhobgoblin ranger\
+    \ in green leather armor, lean and cunning expression, bow slung across back,\n\
+    riding a wyvern through forest canopy, green scale cloak, poison vials on belt,\
+    \ dappled\nforest light, D&D fantasy illustration, dynamic pose\n```\n\n**Tiri\
+    \ Kitor Wild Elf Scout (Shaarcah Forest Conclave)**\n```\nwild elf ranger, bare-footed,\
+    \ wearing leaf-weave leather armor with natural camouflage\npatterns, green-grey\
+    \ body paint, bow drawn, crouching in dense undergrowth, alert amber eyes,\ndappled\
+    \ forest light filtering through canopy, D&D 3.5 art style, full body\n```\n\n\
+    **The Lich of Vraath Keep (The Ghostlord adaptation)**\n```\nancient lich in tattered\
+    \ Netherese scholar's robes, skeletal hands visible, phylactery pendant\nof carved\
+    \ bone, surrounded by floating necrotic runes in Draconic script, haunted stone\n\
+    fortress hall with collapsed ceiling, green-black energy emanating from eye sockets,\
+    \ high\nfantasy undead aesthetic, vertical portrait\n```\n\n**Black Exarch (Koth\
+    \ the Mudwing, Wyrmlord)**\n```\nheavyset hobgoblin in swamp-crusted black iron\
+    \ armor, alligator skull pauldrons, wielding\na great flail with barbed chains,\
+    \ standing knee-deep in murky swamp water, mist at ankles,\novercast grey sky,\
+    \ sinister expression, D&D fantasy art\n```\n\n#### Standard Monsters (Reusable)\n\
+    \n**Ogre Shock Trooper**\n```\nenormous ogre in crude iron plate armor reinforced\
+    \ with scrap metal, wielding an iron-bound\nclub the size of a tree trunk, war\
+    \ paint on grey-green skin, one eye blind and scarred,\nbellowing war cry, battlefield\
+    \ with smoke, D&D monster manual style\n```\n\n**Manticore Rider**\n```\ngoblin\
+    \ cavalry riding a manticore in mid-flight, the manticore's lion body with iron-tip\n\
+    tail spines, wings spread wide against a stormy sky, goblin rider in chainmail\
+    \ lashing with\na short whip, dramatic aerial angle, D&D fantasy illustration\n\
+    ```\n\n**Will-o-Wisp Cluster (Lhespenbog)**\n```\nthree spectral floating lights\
+    \ hovering above dark swamp water at night, pale blue-white\nethereal glow, surrounding\
+    \ a half-sunken stone tower, fog at water level, eerie silence,\ndark fantasy\
+    \ illustration, hauntingly beautiful\n```\n\n---\n\n### Token Generation for VTT\n\
+    \nFor Roll20 / Owlbear Rodeo tokens, use this Stable Diffusion config:\n```\n\
+    Aspect ratio: 1:1 (square)\nResolution: 512×512 → upscale to 1024×1024\nStyle:\
+    \ bust portrait, circular frame, solid dark background\nPrompt suffix: \"token\
+    \ art, circular frame, top-down perspective, game token\"\n```\n\nThen in Owlbear\
+    \ Rodeo: Upload PNG → Set as token image → Set size to match grid\n\n---"
+  part_2_—_branching_quest_trees: "### Quest Structure Format\n\n```\nQUEST: [Name]\n\
+    Type: [Main / Side / Artifact / Faction / Villain]\nHook: [How the party discovers\
+    \ this]\nStage 1: [Initial goal + condition to advance]\n  → Branch A: [If PCs\
+    \ succeed in X]\n  → Branch B: [If PCs fail X or take different approach]\nStage\
+    \ 2: [Second goal; may differ by branch]\nStage 3: [Climax / resolution]\nRewards:\
+    \ [XP / loot / story rewards]\nConnections: [Links to other quests]\n```\n\n---\n\
+    \n### MAIN QUEST TREE — The Red Hand of Tiamat\n\n```\nQUEST: The Red Hand Marches\n\
+    Type: Main AP\nHook: Session 1 opening — the PCs are in Rethmar or on the Old\
+    \ North Road / The Dawn Way when the first\n      hobgoblin raids strike.\n\n\
+    Stage 1: Stop the Advance Guard\n  Goal: Defeat/route the hobgoblin advance and\
+    \ close Nimon Gap temporarily\n  → Branch A (success): Gain 2 weeks before main\
+    \ horde arrives; Shaarcah Forest elves willing to talk\n  → Branch B (partial):\
+    \ Gap only slowed; lose 1 week; elves remain neutral\n  → Branch C (failure):\
+    \ Horde arrives early; Drellin's Ferry area burns AND Witchcross; start at −1\
+    \ week\n\nStage 2A: The Skull Gorge\n  Goal: Destroy or hold the Bridge (Skull\
+    \ Gorge equivalent)\n  → Success: Horde must spend 5 days finding another crossing;\
+    \ party gains time for allies\n  → Failure: Horde crosses; Drellin's Ferry is\
+    \ next target immediately\n  Note: Even on failure, a partial success (slowing\
+    \ the horde) is valuable.\n\nStage 2B (parallel): Lhesper\n  Goal: Eliminate Wyrmlord\
+    \ Koth in the Lhespenbog before he flanks Rethmar\n  → Success: Lose the black\
+    \ dragon support; lizardfolk may flip to neutral\n  → Failure: Koth flanks Rethmar\
+    \ during the final battle; adds +20% horde strength\n\nStage 3: The Ghostlord's\
+    \ Bargain\n  Goal: Deal with the Lich of Vraath Keep\n  → Diplomacy (DC 30 with\
+    \ preparation, DC 35 cold): Lich withdraws from the pact → loses 40\n    wyverns\
+    \ from horde roster\n  → Combat: Kill Wyrm Cultists guarding the lich's phylactery;\
+    \ destroy it; lich destroyed\n  → Bad deal: Give him a living lion (his heart,\
+    \ original RHoD), but narrative cost: lich\n    remains in the vale post-campaign\
+    \ as a neutral (and unpredictable) power\n\nStage 4: Battle of Rethmar\n  Goal:\
+    \ Survive the assault; defeat Azarr Kul\n  → Full victory: Azarr Kul slain; horde\
+    \ fragments; Tiamat's plan set back decades\n  → Pyrrhic victory: Kul slain but\
+    \ Rethmar burns; survivors rebuild; vale scarred\n  → Partial: Kul escapes; campaign\
+    \ continues with follow-up (see Villain Expansion below)\n\nRewards (full completion):\
+    \ +6,000 XP/PC; \"Defenders of Cannath Vale\" title; Vale Council grant\n```\n\
+    \n---\n\n### ARTIFACT QUEST CHAINS\n\n#### Quest Chain A — The Phylactery of Vraath\
+    \ Keep\n\n```\nQUEST: The Lich's Secret Heart\nType: Artifact (Major)\nArtifact:\
+    \ Phylactery of the Lich of Vraath Keep\n  A glass-and-bone orb, 6 inches diameter,\
+    \ warm to the touch, containing a spark of greenish\n  witchfire. If the lich\
+    \ is destroyed while the phylactery exists, he reforms in 1d10 days.\n  If destroyed,\
+    \ the lich dies permanently but releases 4d6×10 years of stored necrotic energy\n\
+    \  (everyone within 30 ft takes 10d6 negative energy damage, Fort DC 22 half).\n\
+    \nHook: Found in stage 3 of main quest (Vraath Keep) OR purchased from an underground\
+    \ dealer in\n      Cannathgate for 12,000 gp (he doesn't know what it is).\n\n\
+    Stage 1: Identify the Phylactery\n  → Spellcraft DC 28 or Legend Lore → reveals\
+    \ its nature and the lich's location\n  → Branch A: Party wants to destroy it\
+    \ → Stage 2\n  → Branch B: Party tries to use it as leverage → Diplomacy branch\
+    \ (see main quest Stage 3)\n  → Branch C: Party sells it (!) → The buyer is a\
+    \ Red Wizard agent → Villain hook\n\nStage 2: The Destruction Ritual\n  Goal:\
+    \ The phylactery cannot be destroyed by mundane means. Options:\n  → Holy site\
+    \ destruction: Bring it to the Moonwatch Hill and have Sertieren perform a 3-hour\n\
+    \    ritual (requires 500 gp in components, party must defend against 3 waves\
+    \ of lich's undead)\n  → Divine request: A cleric of Kelemvor or Torm of 9th+\
+    \ level can destroy it with a special\n    casting of Dispel Evil + Consecrate\
+    \ (combined effect) — costs 1,500 XP\n  → Throw it into lava: There's no volcano\
+    \ nearby. Finding one is a separate mini-quest.\n\nStage 3: Consequence\n  → Phylactery\
+    \ destroyed: Lich permanently dead; 500 XP per PC; lich's hoard (7,000 gp\n  \
+    \  equivalent in gems and scrolls) now safely accessible in Vraath Keep\n  → Lich\
+    \ freed from pact (diplomacy branch): He gives the party one free casting of a\
+    \ 7th-level\n    spell (his choice) and withdraws from the vale. The phylactery\
+    \ remains hidden — unknown\n    variable in future campaigns.\n\nConnections:\
+    \ Main Quest Stage 3; Faction (Red Wizard agent Branch C)\n```\n\n#### Quest Chain\
+    \ B — The Five-Headed Talisman\n\n```\nQUEST: Azarr Kul's War-Standard\nType:\
+    \ Artifact (Minor)\nArtifact: The Talisman of Five Fangs\n  A medallion of black\
+    \ iron inlaid with five gemstones (black, blue, green, red, white)\n  arranged\
+    \ like Tiamat's heads. Functions as a minor artifact:\n  - +4 Charisma to anyone\
+    \ who worships Tiamat (evil only)\n  - +2 Charisma to all others\n  - 3/day: Command\
+    \ (as spell, DC 16) targeting non-Tiamat worshippers\n  - 1/day: Cause Fear (DC\
+    \ 15) in a 20-ft burst\n  - Curse: Non-evil wearers must make Will DC 18 each\
+    \ week or become increasingly obsessed\n    with power and begin making suboptimal\
+    \ choices for personal gain\n\nHook: Found on Azarr Kul's body at the Battle of\
+    \ Rethmar (if he falls there)\n      OR looted from his command tent in the Fane\
+    \ of Tiamat approach\n\nStage 1: What Is This?\n  Identify (Spellcraft DC 25,\
+    \ Legend Lore, or consult Sertieren): Reveals talisman is a\n  material anchor\
+    \ — destroying it here weakens Tiamat's direct influence on this crusade but\n\
+    \  does not destroy the horde.\n  → Keep it: The curse begins; DM tracks weekly\
+    \ Will saves\n  → Consecrate it: 2,000 gp + cleric of Torm/Tyr at 10th+ level;\
+    \ removes curse; item becomes\n    a standard +2 CHA item that loses all special\
+    \ properties\n  → Destroy it: See Stage 2\n\nStage 2: Destroying the Anchor\n\
+    \  Options (parallel to phylactery destruction logic):\n  → Submerge in blessed\
+    \ water at a temple of Selûne: Temple of Selûne in Cannathgate has a\n    blessed\
+    \ spring; 3-hour ritual; Tiamat cultists will try to stop it (8 fanatics + 1 cleric)\n\
+    \  → Counter-ritual at the Shaarcah Forest's heart: Elves offer to unmake it through\
+    \ forest magic;\n    requires party to return the elves' stolen sacred idol (Side\
+    \ Quest: The Taken Idol)\n\nStage 3: Consequence\n  → Talisman destroyed: Horde\
+    \ loses morale cohesion bonus; in the final battle, EL drops by 2\n  → Talisman\
+    \ kept and cursed PC: Eventually acts as a plot driver for a follow-up campaign\n\
+    \  → Talisman given to Red Wizard (mistake): Szass Tam now has a direct Tiamat\
+    \ connection\n\nConnections: Main Quest Stage 4; Side Quest: The Taken Idol; Faction:\
+    \ Tiamat's Cult\n```\n\n---\n\n### SECONDARY OBJECTIVE BANK\n\nUse these as \"\
+    B-plot\" sessions, downtime adventures, or parallel tracks:\n\n```\n[1] THE TAKEN\
+    \ IDOL\nA Shaarcah Forest elf sacred idol (a carved moonwood owl, worth 300 gp,\
+    \ divine focus for Rillifane\nRallathil) was stolen by hobgoblin scouts in Kythorn.\
+    \ The Conclave won't negotiate until it's\nreturned. The idol is in Wyrmlord Saarvith's\
+    \ tent in the western The Wyrmbones base camp (CR 10 encounter).\nReward: Shaarcah\
+    \ Forest Conclave becomes Allied (provides 12 scouts + forest intel for final\
+    \ battle)\n\n[2] THE CRESSFALL ORPHANS\n20 children from burned Drellin's Ferry\
+    \ area are sheltered in Rethmar's mill, under the care of a\ntraumatized halfling\
+    \ woman (Exp 1). Commander Sorann wants them evacuated to Cannathgate\nbefore\
+    \ the main assault. Escort mission — 3 days on the Old North Road / The Dawn Way,\
+    \ 2 random encounters.\nReward: 600 XP; the halfling's uncle is a fence in Cannathgate\
+    \ who will identify items for free\n\n[3] THE MURKMERE RIVER RUNNERS\nA band of\
+    \ lizardfolk (8 warriors, Cpt at Ftr 3) is opportunistically raiding both sides\
+    \ —\nthey hate the hobgoblins as much as the humans. A PC with Handle Animal or\
+    \ Diplomacy (DC 22)\ncan recruit them as irregular allies. The catch: they demand\
+    \ 400 gp in \"river toll\" payment.\nReward (recruited): 800 XP; 8 lizardfolk\
+    \ skirmishers for the Battle of Rethmar (AC 15, 2 attacks)\n\n[4] THE DESERTER'S\
+    \ CACHE\nA hobgoblin sergeant named Grakh has deserted. He has his unit's logistical\
+    \ plans (maps of\nsupply depots, encoded in hobgoblin military script). Tracking\
+    \ him (Survival DC 18) and\nconvincing him to defect or extracting the plans is\
+    \ worth 2 weeks' advance intelligence:\nDM may reveal one encounter from the next\
+    \ chapter before it occurs.\nReward: 700 XP; pre-knowledge of one upcoming encounter\n\
+    \n[5] THE RED WIZARD OBSERVER\nA Red Wizard named Zara Vel (Wiz 9, NE, Thay) is\
+    \ in Cannathgate, quietly observing the invasion.\nShe is NOT helping the horde\
+    \ — she's evaluating whether Thay can exploit the chaos afterward.\nApproach options:\
+    \ Ignore (she leaves; no consequence); Confront (she defends herself; CR 9);\n\
+    Negotiate (she'll share intelligence on the horde's logistics for a favor owed\
+    \ to Thay — moral\nweight here; accepting makes the party indebted to a Red Wizard)\n\
+    Reward: Varies by approach; intel is worth 600 XP equivalent if extracted diplomatically\n\
+    \n[6] THE MOONWATCH HILL RITUAL\nSertieren the Wise is trying to cast a sending\
+    \ to Silverymoon but the hobgoblin warcaster\n(Wiz 7 equivalent) is running a\
+    \ magical interference ritual from the The Wyrmbones. The party\nmust reach and\
+    \ disrupt the interference site (a 2-day climb into the foothills; CR 8 encounter\n\
+    with the warcaster and 4 gnoll bodyguards) so Sertieren's sending goes through.\n\
+    Reward: 900 XP; Silverymoon responds with a wand of cure moderate wounds (21 charges)\
+    \ and\na promise to send a 10th-level wizard advisor within 2 weeks\n\n[7] THE\
+    \ CULT OF THE DRAGON ADVANCE AGENT\nA half-dragon (human base) Cult of the Dragon\
+    \ agent (Rgr 4 / Dragon Disciple 3) is in the vale,\ncreating a network of \"\
+    safe houses\" for surviving Wyrmlords to use after the campaign ends.\nFinding\
+    \ the network (Investigation over 2 sessions) and dismantling it is a meta-campaign\n\
+    objective that pays off in reduced difficulty in a potential follow-up campaign.\n\
+    Reward: 1,000 XP; a Cult communication crystal worth 800 gp as an item; intel\
+    \ on the follow-up\n\n[8] VRAATH HOLD'S VAULT (Exploration)\nVraath Keep is a\
+    \ ruin — but the original owners buried a vault beneath the courtyard. Finding\n\
+    it requires: Research in Rethmar's mill-archive (Knowledge: History DC 18), then\
+    \ excavation\n(8 hours, 4+ people), then bypassing a 100-year-old arcane lock\
+    \ (Disable Device DC 30 or\nKnock). Inside: 3,200 gp in old Cormyrean coin, a\
+    \ +2 light fortification breastplate (old\nPurple Dragon style), and a partial\
+    \ spellbook (3 2nd-level, 2 3rd-level spells; DM chooses).\n```\n\n---"
+  part_3_—_villain_expansion_templates: "### Template Format\nEach villain has a **base**\
+    \ (from RHoD) and an **expansion layer** (FR-integrated, harder).\n\n---\n\n**AZARR\
+    \ KUL — EXPANDED**\n\nBase (RHoD): High Wyrmlord; final boss; Cleric 11 / Fighter\
+    \ 2\nFR Expansion:\n- **Tiamat's Voice**: 1/day, Azarr Kul can speak as Tiamat's\
+    \ direct mouthpiece; all creatures\n  within 60 ft that hear the Voice must save\
+    \ (Will DC 22) or be Shaken for 1 minute\n- **Five Aspects**: Each of his five\
+    \ chromatic dragon scale pauldrons grants a 1/day effect:\n  Black=Acid Splash\
+    \ (4d6), Blue=Call Lightning (7d6), Green=Suggestion (DC 18),\n  Red=Fireball\
+    \ (10d6 DC 19), White=Ice Storm (at CL 12)\n- **Escape Contingency**: If reduced\
+    \ below 30 HP, Dimension Door to the Fane of Tiamat\n  (inner sanctum); requires\
+    \ the party to fight through the Fane to finish the job\n- **If He Escapes**:\
+    \ See follow-up hooks below.\n\nFollow-up hooks if Azarr Kul escapes:\n1. He retreats\
+    \ to a black site in the The Wyrmbones; begins rebuilding the horde (6-month timer)\n\
+    2. He makes contact with Szass Tam — offers Tiamat's blessing in exchange for\
+    \ Thayan military support\n3. He sends assassins (Worg-riding hobgoblin Rgr 6\
+    \ pairs) to eliminate the PCs over the next month\n\n---\n\n**THE LICH OF VRAATH\
+    \ HOLD — EXPANDED**\n\nThe original \"Ghostlord\" was an old lion-themed druid.\
+    \ The Cannath Vale version is a\n**Netherese-era lich** who made a pact with Azuth\
+    \ (not Lolth or a demon) for immortality\nthrough an arcane adaptation of lichdom\
+    \ — he is Lawful Neutral, not evil. He was paid in\nthe promise that his knowledge\
+    \ would never be lost. The horde's Cult of Dragon agent tricked\nhim into the\
+    \ pact with Azarr Kul by presenting forged documents claiming Mystra endorsed\
+    \ it.\n\n**Personality**: Cold, academic, occasionally sardonic. Not a murderer\
+    \ — just pragmatic.\n**Motivation**: He wants his phylactery protected and his\
+    \ knowledge to persist. He would\nrather have the party end the horde (disrupting\
+    \ his forced alliance) than continue.\n\n**Expanded Negotiation** (replaces combat\
+    \ if PCs discover the deception):\n- DC 15 Diplomacy to open dialogue (he's skeptical\
+    \ of living creatures)\n- DC 22 Diplomacy to reveal the forged documents to him\
+    \ (party must find them first — in the\n  Fane's war room, a side objective)\n\
+    - If deception revealed: Lich immediately breaks the pact; withdraws support;\
+    \ tells party\n  the Fane's layout in detail (tactical advantage: remove one ambush\
+    \ from the Fane)\n- He asks only one thing: the party swears a magical oath (Geas,\
+    \ cast by him) to protect\n  his library (100 unique 3rd–8th level arcane scrolls\
+    \ in Vraath Keep's vault)\n\n---\n\n**SAARVITH — EXPANDED (Surviving Wyrmlord)**\n\
+    \nIf Saarvith survives the campaign (not unusual given his ambush/escape tactics),\
+    \ he becomes\na recurring antagonist:\n- Retreats to the Shaarcah Forest's eastern\
+    \ edge; begins a guerrilla campaign\n- Recruits the remaining Koth lizardfolk\
+    \ as a small but effective swamp-raider force\n- Has a personal grudge against\
+    \ any PC who killed his wyvern\n- Will eventually seek employment from the Zhentarim\
+    \ (offers intelligence on the vale's\n  defenses in exchange for protection and\
+    \ resources)\n- Can be found and confronted 3 months post-campaign (Survival DC\
+    \ 22 to track into the\n  Lhespenbog; CR 12 encounter with 12 lizardfolk + Saarvith\
+    \ at Rgr 8)\n\n---"
+  part_4_—_faction_alliance___opposition_tracker: 'Copy this into each session log
+    and update after major interactions:
+
+
+    ```markdown'
+  faction_status_—_session_[n]: '| Faction | Standing | Notes |
+
+    |---|---|---|
+
+    | Vale Council (Rethmar) | Neutral | Need military credibility first |
+
+    | Shaarcah Forest Conclave (elves) | Hostile | Will shift if idol returned |
+
+    | Lizardfolk (Lhespenbog) | Neutral | Mercenary; 400gp would buy them |
+
+    | Red Wizard (Zara Vel) | Neutral | Observing; can be leveraged |
+
+    | Zhentarim (Cannathgate agent) | Neutral | Watching; could be enemy or tool |
+
+    | The Lich of Vraath Keep | Hostile (pact) | Shift possible if deception revealed
+    |
+
+    | Silverymoon (distant) | Friendly | Sertieren''s contact; slow to respond |
+
+    | Cult of the Dragon (local) | Enemy | Advance agent active; don''t know PCs yet
+    |
+
+    | Harper Cell (Cannathgate) | Friendly | Overwhelmed; need PC support to act |
+
+
+    Faction Scales: Hostile / Unfriendly / Neutral / Friendly / Allied
+
+    Allied factions provide active military or logistical support in the Battle of
+    Rethmar.
+
+    ```
+
+
+    **Battle of Rethmar modifiers by Allied factions:**
+
+    - Vale Council + militia: +50 defenders (included by default)
+
+    - Shaarcah Forest Conclave: +12 elf scouts (ranged; devastating in the approach)
+
+    - Lizardfolk: +8 irregular skirmishers (melee; unreliable; may break if casualties
+    are high)
+
+    - Silverymoon wizard: +1 high-level arcane caster (10th level Wiz) for the final
+    battle
+
+    - Harper Cell activated: Intelligence on horde''s approach route → first round
+    of battle is not a surprise
+
+
+    ---'
+  part_5_—_dm_"add_your_own"_section: '### How to Add a New Quest
+
+
+    Copy this template into `campaign/encounters/` or `campaign/sessions/` as `quest-[name].md`:
+
+
+    ```markdown
+
+    # QUEST: [Name]
+
+    **Type**: Main / Side / Artifact / Faction / Villain
+
+    **Suggested party level**: [N]
+
+    **Status**: Not started / Active / Complete'
+  hook: '[How do the PCs learn about this? Be specific: who tells them, where, when.]'
+  stage_1:_[name]: '**Goal**: [What the PCs need to do]
+
+    **DC / CR**: [If applicable]
+
+
+    ### Branch A: [If PCs succeed / take approach 1]
+
+    → [Consequence + next stage]
+
+
+    ### Branch B: [If PCs fail / take approach 2]
+
+    → [Consequence + next stage]'
+  stage_2:_[name]: '[Repeat as needed]'
+  climax: '[Final confrontation or resolution scene]'
+  rewards: '- XP: [N] per PC
+
+    - Gold: [N] gp or equivalent
+
+    - Items: [Specific items]
+
+    - Story: [What changes in the world]'
+  connections: '- Links to: [Quest names]
+
+    - Affects faction: [Faction name + how]
+
+    - Unlocks: [If this quest opens another]'
+  dm_notes: '[Private; not for player view]
+
+    ```
+
+
+    ### How to Add a New Encounter Location
+
+
+    Create `campaign/encounters/[location-name].md`:
+
+
+    ```markdown
+
+    # Encounter: [Location Name]
+
+    **Map reference**: [link to image file or "hand-drawn"]
+
+    **EL**: [N] | **CR breakdown**: [monster list]
+
+    **Terrain**: [description]
+
+    **Lighting**: [bright / dim / dark]'
+  stats_(d&d_3.5): '**Race/Class**: [race, class N]
+
+    **CR**: [N]
+
+    **HP**: [N] | **AC**: [N] | **Initiative**: +[N]
+
+    **Attack**: [primary attack +N melee/ranged (Nd6+N damage)]
+
+    **Saves**: Fort +N / Ref +N / Will +N
+
+    **Special**: [key ability]'
+  personality: '[2-3 sentences: voice, mannerisms, goals]'
+  relationship_to_pcs: '[How they know the PCs; attitude; what they want from them]'
+  plot_hooks_attached_to_this_npc: '- [Hook 1]
+
+    - [Hook 2]'
+  setup___boxed_text: '> [Read-aloud description for players — keep to 3-4 sentences]'
+  tactical_map_notes: '- [Key features: difficult terrain, cover, elevation]
+
+    - [Monster starting positions]
+
+    - [Environmental hazards]'
+  monster_tactics: '[What each group does on Round 1, Round 2, and on when reduced
+    to 25% HP]'
+  treasure: '[What''s here to find after the encounter]'
+  adaptations_from_rhod: '[Any changes from the original module]'
+  wayback_machine___map_source: '[If using a WotC Map-A-Week map: orbitalflower archive
+    URL + Wayback link]
+
+    ```
+
+
+    ---'
+  notes_on_using_the_orbitalflower_archive_for_maps: "The **Map-A-Week** series from\
+    \ WotC produced hundreds of grid maps (dungeon rooms, wilderness,\nencounter sites)\
+    \ in GIF/JPG format, ideal for VTT play.\n\n### Finding and Using a Map\n\n1.\
+    \ Load https://orbitalflower.github.io/rpg/wizards-3e-archive.html\n2. Ctrl+F\
+    \ for \"Map-A-Week\" — find the index section\n3. Click the original Wizards URL\
+    \ → paste into Wayback Machine search:\n   `https://web.archive.org/web/*/[original-url]`\n\
+    4. Select a 2003–2006 snapshot → download the GIF/JPG\n5. Import into Roll20 or\
+    \ Owlbear Rodeo as the battle map\n6. Set grid to match (most WotC maps use 5-ft\
+    \ squares at approximately 50 or 100px/square)\n\n### Recommended Map-A-Week archives\
+    \ for Cannath Vale\n\nSearch these terms in the orbitalflower index:\n- \"swamp\"\
+    \ → for Lhespenbog encounters\n- \"bridge\" → for Skull Gorge\n- \"fortress ruins\"\
+    \ → for Vraath Keep\n- \"town\" → for Rethmar scenes\n- \"mountain pass\" → for\
+    \ Nimon Gap\n- \"forest\" → for Shaarcah Forest encounters"

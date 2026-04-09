@@ -17,7 +17,7 @@ When an AI agent needs to look up rules or lore, follow this order:
 
 ---
 
-## SOURCE 1 — d20srd.org (System Reference Document 3.5)
+## SOURCE 1 — d20srd.org (SRD 3.5)
 
 **URL**: https://www.d20srd.org
 **License**: Open Game License (OGL 1.0a) — freely reproducible
@@ -42,7 +42,7 @@ https://www.d20srd.org/ogl.htm
 
 **URL**: https://dndtools.one
 **What it is**: Major update/overhaul of dndtools.pw and dndtools.eu. Contains everything from
-the old databases plus additional data added by hand during site creation, including all powers
+the old databases + additional data added by hand during site creation, including all powers
 from pretty much every published 3.5 edition material.
 **Content**: Classes, Feats (1,600+ general), Feat Categories, Traits, Flaws, Skills, Skill Tricks,
 Deities, Languages, Spells (5,000+), Spell Schools, Descriptors, Shadow Casting, Invocations,
@@ -106,7 +106,7 @@ https://dndtools.one/magical/
 
 ---
 
-## SOURCE 3 — Forgotten Realms Helps (realmshelps.net)
+## SOURCE 3 — FR Helps (realmshelps.net)
 
 **URL**: https://www.realmshelps.net
 **Scope**: All information pertains to the Realms prior to 1374 DR. No novel-only info, no 4e changes.
@@ -159,7 +159,7 @@ https://www.realmshelps.net/faerun/weather.shtml
 
 ---
 
-## SOURCE 4 — Forgotten Realms Wiki (fandom)
+## SOURCE 4 — FR Wiki (fandom)
 
 **URL**: https://forgottenrealms.fandom.com/wiki/[Article_Name]
 (use underscores for spaces; percent-encode special chars)
@@ -193,7 +193,7 @@ Adventure Builder, Vicious Venues, Tactics and Tips, Save My Game, Steal This Ho
 Downloads: Original Adventures, Map-A-Week, Web enhancement archive, Art gallery archive,
 D&D character sheets, Map gallery archive, D&D 3.5 accessory update booklets
 
-Forgotten Realms Archives: Elminster Speaks, Realmslore, Perilous Gateways, Rand's Travelogue,
+FR Archives: Elminster Speaks, Realmslore, Perilous Gateways, Rand's Travelogue,
 Wyrms of the North, Realms Personalities, Magic Books of Faerûn, Class Chronicles, Border
 Kingdoms, Return to Undermountain, Waterdeep News, Adventure Locales
 
@@ -260,7 +260,7 @@ docker run -d -p 3000:8080 \
 # Upload: FRCS.pdf, RHoD.pdf, PHB.pdf → connect to Ollama
 
 # System prompt for 3.5 rules agent:
-"You are a strict D&D 3.5 Edition rules referee for the Forgotten Realms.
+"You are a strict D&D 3.5 Edition rules referee for the FR.
 Cite every rule as [Book, page]. Distinguish RAW from RAI explicitly.
 Flag non-SRD content. Do not invent mechanics."
 ```

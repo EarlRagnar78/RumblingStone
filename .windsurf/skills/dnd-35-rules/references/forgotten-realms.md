@@ -1,6 +1,6 @@
-# Forgotten Realms — D&D 3.5 Lore Reference
+# FR — D&D 3.5 Lore Reference
 
-Source: Forgotten Realms Campaign Setting 3.5 (FRCS, 2001), Player's Guide to Faerûn (2004),
+Source: FR Campaign Setting 3.5 (FRCS, 2001), Player's Guide to Faerûn (2004),
 Faiths & Pantheons (2002), Races of Faerûn (2003), Unapproachable East (2003)
 Live lookup: https://forgottenrealms.fandom.com/wiki/
 
@@ -9,7 +9,7 @@ Live lookup: https://forgottenrealms.fandom.com/wiki/
 ## The World of Faerûn
 
 **Toril** is the planet. **Faerûn** is the main continent.
-**The Forgotten Realms Campaign Setting (FRCS)** is the canonical source for 3.5e.
+**The FR Campaign Setting (FRCS)** is the canonical source for 3.5e.
 Timeline anchor: **1372 DR** (Dale Reckoning) = present day in base 3.5 FR.
 
 ---
@@ -98,7 +98,7 @@ Human, Dwarf (Shield/Gold), Elf (Moon/Sun/Wood/Wild/Sea/Drow), Gnome (Rock/Fores
 **Shield Dwarf**: STD dwarf stats; Favored class: Fighter
 **Gold Dwarf** (Stout): +2 CON, −2 DEX (not STR as common misread)
 
-**Strongheart Halfling**: Bonus feat at 1st (replaces +1 to saves)
+**Strongheart Halfling**: bon feat at 1st (replaces +1 to saves)
 **Ghostwise Halfling**: Telepathy 100 ft (can't speak aloud) — Faerun-exclusive
 
 ---
@@ -121,7 +121,7 @@ Human, Dwarf (Shield/Gold), Elf (Moon/Sun/Wood/Wild/Sea/Drow), Gnome (Rock/Fores
 ## The Weave and the Shadow Weave
 
 **The Weave**: The fabric of magic in Faerûn, maintained by Mystra. Spellcasters tap into it.
-**Shadow Weave**: Shar's corruption; used by followers. +1 caster level to Illusion/Enchantment/Darkness; −2 to Evocation/Transmutation; cannot learn Divination. (See Shadow Weave Magic feat, FRCS)
+**Shadow Weave**: Shar's corruption; used by followers. +1 CL to Illusion/Enchantment/Darkness; −2 to Evocation/Transmutation; cannot learn Divination. (See Shadow Weave Magic feat, FRCS)
 
 **Dead Magic Zones**: Areas where the Weave is destroyed. No magic functions.
 **Wild Magic Zones**: The Weave is unstable. Roll on wild surge table.

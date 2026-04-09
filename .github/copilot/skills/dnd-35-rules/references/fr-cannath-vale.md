@@ -251,7 +251,7 @@ The party descended through these locations in order, connected by passages and 
   └── Altare del Cuore di Moradin (Cuore Moradin artifact)
   └── Portal to Fire Plane (Part 3)
   └── Portal to Earth Plane (Part 4)
-  └── Temporal Portal (Part 5, requires 2+ gems)
+  └── Temporal Portal (Part 5, req: 2+ gems)
   └── Hella Resurrection Ritual (Part 3B)
 ```
 
@@ -280,7 +280,7 @@ Accessed via earth portal from Sala. Features:
 - Tordek's Bracieri Earth awakening completion
 
 **Temporal Void (Part 5)**
-Requires Topaz + Emerald gems activated. Opens portal to **Year -1000 DR**.
+req: Topaz + Emerald gems activated. Opens portal to **Year -1000 DR**.
 Party travels to ancient Hammerfist to fight in a historical battle.
 Ruby gem activates at dawn during this temporal battle.
 

@@ -32,12 +32,12 @@ Secondary sources: **Forgotten Realms Wiki** (fandom.com/wiki/Forgotten_Realms_W
 | Question domain | Load file |
 |---|---|
 | Core mechanics, ability scores, skills, saves, XP, encumbrance | `references/core-mechanics.md` |
-| Base classes, multiclassing, class features, level tables | `references/classes.md` |
-| Spells, spell slots, metamagic, schools, key spell list | `references/spells.md` |
-| Combat, actions, conditions, AoO, grapple, terrain | `references/combat.md` |
-| Monsters, creature types, CR, templates, encounter distance | `references/monsters.md` |
-| Magic items, crafting, pricing, wondrous items, wands/scrolls | `references/items.md` |
-| Free/open tools, d20srd.org URLs, VTT, local AI RAG setup | `references/resources.md` |
+| Base & expanded classes, multiclassing, Psionics, level tables | `references/classes.md` |
+| Spells, spell slots, metamagic, schools, psionic powers | `references/spells.md` |
+| Combat, actions, conditions, AoO, grapple, terrain, environments | `references/combat.md` |
+| Monsters, CR, templates, Draconomicon, Libris Mortis, environment series | `references/monsters.md` |
+| Magic & psionic items, crafting, Gith gear, wondrous items, wands | `references/items.md` |
+| Free/open tools, d20srd.org URLs, VTT, dndtools.one, resources | `references/resources.md` |
 
 #### Forgotten Realms — Lore & Setting
 
@@ -48,7 +48,7 @@ Secondary sources: **Forgotten Realms Wiki** (fandom.com/wiki/Forgotten_Realms_W
 | **All regions** — Sword Coast, Heartlands, North, Moonsea, Dalelands, East, South, Underdark | `references/fr-regions-complete.md` |
 | **All races & subraces** — Human variants, elf subraces, drow, duergar, genasi, planetouched | `references/fr-races-complete.md` |
 | **Factions & organizations** — Harpers, Zhentarim, Red Wizards, cults, guilds, knightly orders | `references/fr-factions.md` |
-| **Prestige classes** — FR-specific PrCs from FRCS, Races of FR, Unapproachable East, etc. | `references/fr-prestige-classes.md` |
+| **Prestige classes** — FR PrCs, Complete Series, Psionics, Draconomicon, Libris Mortis | `references/fr-prestige-classes.md` |
 | **Feats** — Regional feats, Divine feats, FR-specific general and metamagic feats | `references/fr-feats.md` |
 | **History & timeline** — Ancient empires, Time of Troubles, key events 1–1372 DR | `references/fr-history.md` |
 | **Artifacts & legendary items** — Nether Scrolls, Moonblades, Tablets of Fate, named items | `references/fr-artifacts.md` |
@@ -74,6 +74,8 @@ Secondary sources: **Forgotten Realms Wiki** (fandom.com/wiki/Forgotten_Realms_W
 - "What domains does deity X grant?" → `fr-deities-complete.md`
 - "Tell me about Waterdeep / Thay / Rashemen / Menzoberranzan" → `fr-regions-complete.md`
 - "What prestige class should a [class] take in FR?" → `fr-prestige-classes.md` + `classes.md`
+- "How do psionic powers, manifester levels, or mantles work?" → `classes.md` + `resources.md`
+- "Give me a monster/template from Draconomicon/Libris Mortis/Expanded books" → `monsters.md`
 - "What feats are available from the Dalelands?" → `fr-feats.md`
 - "Tell me about the Harpers / Zhentarim / Red Wizards" → `fr-factions.md`
 - "What happened during the Time of Troubles?" → `fr-history.md`
@@ -202,7 +204,7 @@ EL = CR of single monster, or combined CR for groups (every doubling = +2 EL)
 
 ## Non-SRD Content Policy
 
-When answering questions about **non-SRD content** (e.g., Tome of Battle, Complete series, Unearthed Arcana variants, Forgotten Realms Campaign Setting prestige classes):
+When answering questions about **non-SRD content** (e.g., Tome of Battle, Complete series, Expanded Psionics Handbook, Draconomicon, Libris Mortis, Environment series, Forgotten Realms Campaign Setting):
 
 1. State clearly: *"This is non-SRD content from [Book Name]."*
 2. Describe mechanics accurately if known from training data.

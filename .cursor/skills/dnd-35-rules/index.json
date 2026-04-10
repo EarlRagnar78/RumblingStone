@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generated": "2026-04-10T08:34:06.000911+00:00",
+    "generated": "2026-04-10T08:48:54.588550+00:00",
     "total_files": 23,
     "total_domains": 27,
     "usage": "Query 'domain_index' to find files for a topic. Query 'keyword_index' for term lookup. Use 'agent_routing' to select format per agent."
@@ -10,32 +10,33 @@
       "file": "SKILL.md",
       "stem": "SKILL",
       "domains": [
-        "factions",
-        "prestige_classes",
-        "monsters",
-        "party",
-        "items",
-        "core_mechanics",
-        "fr_feats",
-        "deities",
-        "dm_tools",
-        "spells",
-        "combat",
-        "history",
-        "story_arcs",
-        "resources",
-        "artifacts_fr",
-        "classes",
-        "campaign_artifacts",
-        "dm_strategy",
-        "navigation",
-        "races",
-        "regions",
-        "skills_system",
         "feats",
-        "meta",
+        "races",
+        "factions",
+        "items",
+        "classes",
+        "artifacts_fr",
+        "navigation",
+        "map_locations",
+        "core_mechanics",
+        "dm_strategy",
+        "campaign_artifacts",
+        "resources",
+        "spells",
+        "fr_feats",
+        "dm_tools",
+        "skills_system",
+        "story_arcs",
+        "history",
+        "regions",
+        "party",
+        "combat",
+        "prestige_classes",
         "npcs",
-        "map_locations"
+        "psionics",
+        "meta",
+        "monsters",
+        "deities"
       ],
       "headings": [
         "D&D 3.5 Edition Rules Reference",
@@ -115,27 +116,27 @@
         "structured.yaml",
         "machine.json"
       ],
-      "chars": 11428
+      "chars": 11688
     },
     "campaign-artifacts": {
       "file": "campaign-artifacts.md",
       "stem": "campaign-artifacts",
       "domains": [
-        "races",
-        "deities",
-        "skills_system",
-        "monsters",
-        "party",
-        "spells",
-        "combat",
-        "items",
-        "core_mechanics",
-        "history",
-        "story_arcs",
-        "npcs",
-        "classes",
         "campaign_artifacts",
-        "map_locations"
+        "spells",
+        "races",
+        "combat",
+        "skills_system",
+        "story_arcs",
+        "items",
+        "classes",
+        "npcs",
+        "map_locations",
+        "monsters",
+        "history",
+        "core_mechanics",
+        "deities",
+        "party"
       ],
       "headings": [
         "RumblingStone Campaign — Artifacts Reference (D&D 3.5)",
@@ -259,9 +260,9 @@
       "stem": "campaign-dm-strategy",
       "domains": [
         "classes",
-        "dm_strategy",
         "core_mechanics",
-        "party"
+        "party",
+        "dm_strategy"
       ],
       "headings": [
         "Masterizzare per Adulti (Over 40) - Profilo Giocatori e Design della Campagna",
@@ -307,23 +308,23 @@
       "file": "campaign-party.md",
       "stem": "campaign-party",
       "domains": [
-        "races",
-        "psionics",
-        "deities",
-        "prestige_classes",
-        "dm_tools",
-        "monsters",
-        "party",
-        "spells",
-        "combat",
-        "items",
-        "core_mechanics",
-        "history",
-        "npcs",
-        "story_arcs",
-        "classes",
         "campaign_artifacts",
-        "map_locations"
+        "spells",
+        "races",
+        "dm_tools",
+        "combat",
+        "prestige_classes",
+        "story_arcs",
+        "items",
+        "npcs",
+        "classes",
+        "map_locations",
+        "psionics",
+        "monsters",
+        "history",
+        "core_mechanics",
+        "deities",
+        "party"
       ],
       "headings": [
         "The Rumbling Stone — Party Reference (D&D 3.5)",
@@ -409,18 +410,18 @@
       "file": "campaign-story-arcs.md",
       "stem": "campaign-story-arcs",
       "domains": [
-        "races",
-        "psionics",
-        "dm_tools",
-        "monsters",
-        "party",
-        "combat",
-        "core_mechanics",
-        "story_arcs",
-        "npcs",
-        "classes",
         "campaign_artifacts",
-        "map_locations"
+        "races",
+        "dm_tools",
+        "combat",
+        "story_arcs",
+        "classes",
+        "npcs",
+        "map_locations",
+        "psionics",
+        "monsters",
+        "core_mechanics",
+        "party"
       ],
       "headings": [
         "RumblingStone Campaign — Story Arc Reference (Agent Navigation)",
@@ -464,19 +465,19 @@
       "file": "classes.md",
       "stem": "classes",
       "domains": [
+        "feats",
+        "spells",
         "races",
-        "deities",
-        "regions",
+        "combat",
         "prestige_classes",
         "skills_system",
-        "feats",
-        "monsters",
-        "spells",
-        "combat",
-        "items",
-        "core_mechanics",
         "story_arcs",
-        "classes"
+        "items",
+        "classes",
+        "regions",
+        "monsters",
+        "core_mechanics",
+        "deities"
       ],
       "headings": [
         "Base Classes — D&D 3.5 SRD Reference",
@@ -570,12 +571,12 @@
       "file": "combat.md",
       "stem": "combat",
       "domains": [
+        "spells",
+        "combat",
         "skills_system",
         "items",
-        "combat",
-        "spells",
-        "core_mechanics",
-        "classes"
+        "classes",
+        "core_mechanics"
       ],
       "headings": [
         "Combat — D&D 3.5 SRD Reference",
@@ -625,9 +626,9 @@
       "stem": "core-mechanics",
       "domains": [
         "feats",
-        "skills_system",
         "spells",
         "combat",
+        "skills_system",
         "items",
         "core_mechanics"
       ],
@@ -669,21 +670,21 @@
       "file": "dm-expansion-toolkit.md",
       "stem": "dm-expansion-toolkit",
       "domains": [
-        "races",
-        "factions",
-        "deities",
-        "dm_tools",
-        "regions",
-        "prestige_classes",
-        "monsters",
         "spells",
+        "races",
+        "dm_tools",
         "combat",
-        "items",
-        "core_mechanics",
+        "factions",
+        "prestige_classes",
         "story_arcs",
-        "resources",
+        "items",
         "classes",
-        "map_locations"
+        "regions",
+        "map_locations",
+        "monsters",
+        "core_mechanics",
+        "deities",
+        "resources"
       ],
       "headings": [
         "DM Expansion Toolkit — RumblingStone Campaign",
@@ -760,20 +761,20 @@
       "file": "forgotten-realms.md",
       "stem": "forgotten-realms",
       "domains": [
-        "races",
-        "factions",
-        "deities",
-        "regions",
-        "prestige_classes",
-        "skills_system",
         "feats",
         "spells",
-        "items",
+        "races",
         "core_mechanics",
-        "history",
+        "factions",
+        "prestige_classes",
+        "skills_system",
         "story_arcs",
-        "resources",
-        "classes"
+        "items",
+        "classes",
+        "history",
+        "regions",
+        "deities",
+        "resources"
       ],
       "headings": [
         "Forgotten Realms — D&D 3.5 Lore Reference",
@@ -819,22 +820,22 @@
       "file": "fr-artifacts.md",
       "stem": "fr-artifacts",
       "domains": [
-        "races",
-        "factions",
-        "deities",
-        "regions",
-        "prestige_classes",
-        "monsters",
-        "party",
-        "artifacts_fr",
-        "items",
-        "combat",
+        "campaign_artifacts",
         "spells",
-        "core_mechanics",
-        "history",
+        "races",
+        "combat",
+        "factions",
+        "prestige_classes",
         "story_arcs",
+        "items",
         "classes",
-        "campaign_artifacts"
+        "regions",
+        "artifacts_fr",
+        "monsters",
+        "history",
+        "core_mechanics",
+        "deities",
+        "party"
       ],
       "headings": [
         "Forgotten Realms — Artifacts & Unique Magic Items (D&D 3.5)",
@@ -880,20 +881,20 @@
       "file": "fr-cannath-vale.md",
       "stem": "fr-cannath-vale",
       "domains": [
-        "races",
-        "deities",
-        "regions",
-        "dm_tools",
-        "monsters",
-        "party",
-        "spells",
-        "combat",
-        "core_mechanics",
-        "story_arcs",
-        "history",
-        "npcs",
         "campaign_artifacts",
-        "map_locations"
+        "spells",
+        "races",
+        "dm_tools",
+        "combat",
+        "story_arcs",
+        "npcs",
+        "regions",
+        "map_locations",
+        "monsters",
+        "history",
+        "core_mechanics",
+        "deities",
+        "party"
       ],
       "headings": [
         "Cannath Vale — Campaign Setting Reference",
@@ -986,20 +987,20 @@
       "file": "fr-deities-complete.md",
       "stem": "fr-deities-complete",
       "domains": [
-        "races",
-        "deities",
-        "regions",
         "feats",
-        "monsters",
-        "artifacts_fr",
         "spells",
+        "races",
         "combat",
-        "items",
-        "core_mechanics",
-        "history",
         "story_arcs",
-        "resources",
-        "classes"
+        "items",
+        "classes",
+        "regions",
+        "artifacts_fr",
+        "monsters",
+        "history",
+        "core_mechanics",
+        "deities",
+        "resources"
       ],
       "headings": [
         "Forgotten Realms — Deities Complete Reference (D&D 3.5)",
@@ -1122,25 +1123,25 @@
       "file": "fr-factions.md",
       "stem": "fr-factions",
       "domains": [
-        "factions",
-        "prestige_classes",
-        "monsters",
-        "party",
-        "items",
-        "core_mechanics",
-        "deities",
-        "dm_tools",
-        "spells",
-        "combat",
-        "history",
-        "story_arcs",
-        "artifacts_fr",
-        "classes",
         "races",
-        "regions",
+        "factions",
+        "items",
+        "classes",
+        "artifacts_fr",
+        "map_locations",
+        "core_mechanics",
+        "spells",
+        "dm_tools",
         "skills_system",
+        "story_arcs",
+        "history",
+        "regions",
+        "party",
+        "combat",
+        "prestige_classes",
         "npcs",
-        "map_locations"
+        "monsters",
+        "deities"
       ],
       "headings": [
         "Forgotten Realms — Factions & Organizations (D&D 3.5)",
@@ -1203,20 +1204,20 @@
       "file": "fr-feats.md",
       "stem": "fr-feats",
       "domains": [
-        "races",
-        "factions",
+        "feats",
+        "spells",
         "fr_feats",
-        "deities",
-        "regions",
+        "races",
+        "combat",
+        "factions",
         "prestige_classes",
         "skills_system",
-        "feats",
-        "monsters",
-        "spells",
-        "combat",
         "items",
+        "classes",
+        "regions",
+        "monsters",
         "core_mechanics",
-        "classes"
+        "deities"
       ],
       "headings": [
         "Forgotten Realms — Feats Complete Reference (D&D 3.5)",
@@ -1297,18 +1298,18 @@
       "file": "fr-history.md",
       "stem": "fr-history",
       "domains": [
+        "feats",
+        "spells",
         "races",
         "factions",
-        "deities",
-        "regions",
-        "feats",
-        "monsters",
-        "artifacts_fr",
+        "story_arcs",
         "items",
-        "spells",
-        "core_mechanics",
+        "regions",
+        "artifacts_fr",
+        "monsters",
         "history",
-        "story_arcs"
+        "core_mechanics",
+        "deities"
       ],
       "headings": [
         "Forgotten Realms — History & Timeline (D&D 3.5)",
@@ -1362,24 +1363,24 @@
       "file": "fr-prestige-classes.md",
       "stem": "fr-prestige-classes",
       "domains": [
-        "races",
-        "factions",
-        "psionics",
-        "fr_feats",
-        "deities",
-        "prestige_classes",
-        "regions",
-        "skills_system",
         "feats",
-        "monsters",
-        "artifacts_fr",
         "spells",
+        "fr_feats",
+        "races",
         "combat",
-        "items",
-        "core_mechanics",
+        "factions",
+        "prestige_classes",
+        "skills_system",
         "story_arcs",
+        "items",
+        "classes",
         "npcs",
-        "classes"
+        "regions",
+        "artifacts_fr",
+        "psionics",
+        "monsters",
+        "core_mechanics",
+        "deities"
       ],
       "headings": [
         "Forgotten Realms — Prestige Classes (D&D 3.5)",
@@ -1444,19 +1445,19 @@
       "file": "fr-races-complete.md",
       "stem": "fr-races-complete",
       "domains": [
-        "races",
-        "fr_feats",
-        "deities",
-        "regions",
-        "skills_system",
         "feats",
-        "monsters",
         "spells",
+        "fr_feats",
+        "races",
         "combat",
-        "items",
-        "core_mechanics",
+        "skills_system",
         "story_arcs",
-        "classes"
+        "items",
+        "classes",
+        "regions",
+        "monsters",
+        "core_mechanics",
+        "deities"
       ],
       "headings": [
         "Forgotten Realms — Races & Subraces Complete (D&D 3.5)",
@@ -1481,23 +1482,23 @@
       "file": "fr-regions-complete.md",
       "stem": "fr-regions-complete",
       "domains": [
-        "races",
-        "factions",
+        "feats",
+        "spells",
         "fr_feats",
+        "races",
+        "core_mechanics",
+        "combat",
+        "factions",
+        "prestige_classes",
+        "story_arcs",
+        "items",
+        "classes",
+        "artifacts_fr",
+        "monsters",
+        "history",
         "regions",
         "deities",
-        "prestige_classes",
-        "feats",
-        "monsters",
-        "artifacts_fr",
-        "spells",
-        "combat",
-        "items",
-        "core_mechanics",
-        "history",
-        "story_arcs",
-        "resources",
-        "classes"
+        "resources"
       ],
       "headings": [
         "Forgotten Realms — Regions Complete Reference (D&D 3.5)",
@@ -1525,16 +1526,16 @@
       "file": "items.md",
       "stem": "items",
       "domains": [
-        "psionics",
         "feats",
-        "monsters",
         "spells",
         "combat",
-        "items",
-        "core_mechanics",
         "story_arcs",
+        "items",
         "npcs",
-        "map_locations"
+        "map_locations",
+        "psionics",
+        "monsters",
+        "core_mechanics"
       ],
       "headings": [
         "Magic Items — D&D 3.5 SRD Reference",
@@ -1586,18 +1587,18 @@
       "file": "monsters.md",
       "stem": "monsters",
       "domains": [
+        "feats",
+        "spells",
         "races",
+        "combat",
+        "skills_system",
+        "story_arcs",
+        "items",
+        "npcs",
+        "map_locations",
         "psionics",
         "monsters",
-        "feats",
-        "skills_system",
-        "spells",
-        "combat",
-        "items",
-        "core_mechanics",
-        "story_arcs",
-        "npcs",
-        "map_locations"
+        "core_mechanics"
       ],
       "headings": [
         "Monsters — D&D 3.5 SRD Reference",
@@ -1669,22 +1670,22 @@
       "file": "resources.md",
       "stem": "resources",
       "domains": [
-        "races",
-        "deities",
-        "regions",
-        "dm_tools",
-        "skills_system",
         "feats",
-        "monsters",
         "spells",
+        "races",
+        "dm_tools",
         "combat",
-        "items",
-        "core_mechanics",
-        "history",
+        "skills_system",
         "story_arcs",
-        "resources",
+        "items",
         "classes",
-        "map_locations"
+        "regions",
+        "map_locations",
+        "monsters",
+        "history",
+        "core_mechanics",
+        "deities",
+        "resources"
       ],
       "headings": [
         "Free & Open Resources for D&D 3.5 — 2026 Reference",
@@ -1747,14 +1748,14 @@
       "file": "spells.md",
       "stem": "spells",
       "domains": [
-        "races",
-        "monsters",
-        "items",
-        "combat",
         "spells",
+        "races",
+        "combat",
+        "items",
+        "classes",
+        "monsters",
         "core_mechanics",
-        "resources",
-        "classes"
+        "resources"
       ],
       "headings": [
         "Spells — D&D 3.5 SRD Reference",
@@ -1838,6 +1839,42 @@
     }
   },
   "domain_index": {
+    "feats": [
+      "SKILL",
+      "classes",
+      "core-mechanics",
+      "forgotten-realms",
+      "fr-deities-complete",
+      "fr-feats",
+      "fr-history",
+      "fr-prestige-classes",
+      "fr-races-complete",
+      "fr-regions-complete",
+      "items",
+      "monsters",
+      "resources"
+    ],
+    "races": [
+      "SKILL",
+      "campaign-artifacts",
+      "campaign-party",
+      "campaign-story-arcs",
+      "classes",
+      "dm-expansion-toolkit",
+      "forgotten-realms",
+      "fr-artifacts",
+      "fr-cannath-vale",
+      "fr-deities-complete",
+      "fr-factions",
+      "fr-feats",
+      "fr-history",
+      "fr-prestige-classes",
+      "fr-races-complete",
+      "fr-regions-complete",
+      "monsters",
+      "resources",
+      "spells"
+    ],
     "factions": [
       "SKILL",
       "dm-expansion-toolkit",
@@ -1848,49 +1885,6 @@
       "fr-history",
       "fr-prestige-classes",
       "fr-regions-complete"
-    ],
-    "prestige_classes": [
-      "SKILL",
-      "campaign-party",
-      "classes",
-      "dm-expansion-toolkit",
-      "forgotten-realms",
-      "fr-artifacts",
-      "fr-factions",
-      "fr-feats",
-      "fr-prestige-classes",
-      "fr-regions-complete"
-    ],
-    "monsters": [
-      "SKILL",
-      "campaign-artifacts",
-      "campaign-party",
-      "campaign-story-arcs",
-      "classes",
-      "dm-expansion-toolkit",
-      "fr-artifacts",
-      "fr-cannath-vale",
-      "fr-deities-complete",
-      "fr-factions",
-      "fr-feats",
-      "fr-history",
-      "fr-prestige-classes",
-      "fr-races-complete",
-      "fr-regions-complete",
-      "items",
-      "monsters",
-      "resources",
-      "spells"
-    ],
-    "party": [
-      "SKILL",
-      "campaign-artifacts",
-      "campaign-dm-strategy",
-      "campaign-party",
-      "campaign-story-arcs",
-      "fr-artifacts",
-      "fr-cannath-vale",
-      "fr-factions"
     ],
     "items": [
       "SKILL",
@@ -1913,6 +1907,50 @@
       "monsters",
       "resources",
       "spells"
+    ],
+    "classes": [
+      "SKILL",
+      "campaign-artifacts",
+      "campaign-dm-strategy",
+      "campaign-party",
+      "campaign-story-arcs",
+      "classes",
+      "combat",
+      "dm-expansion-toolkit",
+      "forgotten-realms",
+      "fr-artifacts",
+      "fr-deities-complete",
+      "fr-factions",
+      "fr-feats",
+      "fr-prestige-classes",
+      "fr-races-complete",
+      "fr-regions-complete",
+      "resources",
+      "spells"
+    ],
+    "artifacts_fr": [
+      "SKILL",
+      "fr-artifacts",
+      "fr-deities-complete",
+      "fr-factions",
+      "fr-history",
+      "fr-prestige-classes",
+      "fr-regions-complete"
+    ],
+    "navigation": [
+      "SKILL"
+    ],
+    "map_locations": [
+      "SKILL",
+      "campaign-artifacts",
+      "campaign-party",
+      "campaign-story-arcs",
+      "dm-expansion-toolkit",
+      "fr-cannath-vale",
+      "fr-factions",
+      "items",
+      "monsters",
+      "resources"
     ],
     "core_mechanics": [
       "SKILL",
@@ -1939,39 +1977,26 @@
       "resources",
       "spells"
     ],
-    "fr_feats": [
+    "dm_strategy": [
       "SKILL",
-      "fr-feats",
-      "fr-prestige-classes",
-      "fr-races-complete",
-      "fr-regions-complete"
+      "campaign-dm-strategy"
     ],
-    "deities": [
+    "campaign_artifacts": [
       "SKILL",
       "campaign-artifacts",
       "campaign-party",
-      "classes",
+      "campaign-story-arcs",
+      "fr-artifacts",
+      "fr-cannath-vale"
+    ],
+    "resources": [
+      "SKILL",
       "dm-expansion-toolkit",
       "forgotten-realms",
-      "fr-artifacts",
-      "fr-cannath-vale",
       "fr-deities-complete",
-      "fr-factions",
-      "fr-feats",
-      "fr-history",
-      "fr-prestige-classes",
-      "fr-races-complete",
       "fr-regions-complete",
-      "resources"
-    ],
-    "dm_tools": [
-      "SKILL",
-      "campaign-party",
-      "campaign-story-arcs",
-      "dm-expansion-toolkit",
-      "fr-cannath-vale",
-      "fr-factions",
-      "resources"
+      "resources",
+      "spells"
     ],
     "spells": [
       "SKILL",
@@ -1996,39 +2021,34 @@
       "resources",
       "spells"
     ],
-    "combat": [
+    "fr_feats": [
       "SKILL",
-      "campaign-artifacts",
+      "fr-feats",
+      "fr-prestige-classes",
+      "fr-races-complete",
+      "fr-regions-complete"
+    ],
+    "dm_tools": [
+      "SKILL",
       "campaign-party",
       "campaign-story-arcs",
+      "dm-expansion-toolkit",
+      "fr-cannath-vale",
+      "fr-factions",
+      "resources"
+    ],
+    "skills_system": [
+      "SKILL",
+      "campaign-artifacts",
       "classes",
       "combat",
       "core-mechanics",
-      "dm-expansion-toolkit",
-      "fr-artifacts",
-      "fr-cannath-vale",
-      "fr-deities-complete",
+      "forgotten-realms",
       "fr-factions",
       "fr-feats",
       "fr-prestige-classes",
       "fr-races-complete",
-      "fr-regions-complete",
-      "items",
       "monsters",
-      "resources",
-      "spells"
-    ],
-    "history": [
-      "SKILL",
-      "campaign-artifacts",
-      "campaign-party",
-      "forgotten-realms",
-      "fr-artifacts",
-      "fr-cannath-vale",
-      "fr-deities-complete",
-      "fr-factions",
-      "fr-history",
-      "fr-regions-complete",
       "resources"
     ],
     "story_arcs": [
@@ -2051,79 +2071,18 @@
       "monsters",
       "resources"
     ],
-    "resources": [
-      "SKILL",
-      "dm-expansion-toolkit",
-      "forgotten-realms",
-      "fr-deities-complete",
-      "fr-regions-complete",
-      "resources",
-      "spells"
-    ],
-    "artifacts_fr": [
-      "SKILL",
-      "fr-artifacts",
-      "fr-deities-complete",
-      "fr-factions",
-      "fr-history",
-      "fr-prestige-classes",
-      "fr-regions-complete"
-    ],
-    "classes": [
-      "SKILL",
-      "campaign-artifacts",
-      "campaign-dm-strategy",
-      "campaign-party",
-      "campaign-story-arcs",
-      "classes",
-      "combat",
-      "dm-expansion-toolkit",
-      "forgotten-realms",
-      "fr-artifacts",
-      "fr-deities-complete",
-      "fr-factions",
-      "fr-feats",
-      "fr-prestige-classes",
-      "fr-races-complete",
-      "fr-regions-complete",
-      "resources",
-      "spells"
-    ],
-    "campaign_artifacts": [
+    "history": [
       "SKILL",
       "campaign-artifacts",
       "campaign-party",
-      "campaign-story-arcs",
-      "fr-artifacts",
-      "fr-cannath-vale"
-    ],
-    "dm_strategy": [
-      "SKILL",
-      "campaign-dm-strategy"
-    ],
-    "navigation": [
-      "SKILL"
-    ],
-    "races": [
-      "SKILL",
-      "campaign-artifacts",
-      "campaign-party",
-      "campaign-story-arcs",
-      "classes",
-      "dm-expansion-toolkit",
       "forgotten-realms",
       "fr-artifacts",
       "fr-cannath-vale",
       "fr-deities-complete",
       "fr-factions",
-      "fr-feats",
       "fr-history",
-      "fr-prestige-classes",
-      "fr-races-complete",
       "fr-regions-complete",
-      "monsters",
-      "resources",
-      "spells"
+      "resources"
     ],
     "regions": [
       "SKILL",
@@ -2141,37 +2100,49 @@
       "fr-regions-complete",
       "resources"
     ],
-    "skills_system": [
+    "party": [
       "SKILL",
       "campaign-artifacts",
+      "campaign-dm-strategy",
+      "campaign-party",
+      "campaign-story-arcs",
+      "fr-artifacts",
+      "fr-cannath-vale",
+      "fr-factions"
+    ],
+    "combat": [
+      "SKILL",
+      "campaign-artifacts",
+      "campaign-party",
+      "campaign-story-arcs",
       "classes",
       "combat",
       "core-mechanics",
-      "forgotten-realms",
+      "dm-expansion-toolkit",
+      "fr-artifacts",
+      "fr-cannath-vale",
+      "fr-deities-complete",
       "fr-factions",
       "fr-feats",
-      "fr-prestige-classes",
-      "fr-races-complete",
-      "monsters",
-      "resources"
-    ],
-    "feats": [
-      "SKILL",
-      "classes",
-      "core-mechanics",
-      "forgotten-realms",
-      "fr-deities-complete",
-      "fr-feats",
-      "fr-history",
       "fr-prestige-classes",
       "fr-races-complete",
       "fr-regions-complete",
       "items",
       "monsters",
-      "resources"
+      "resources",
+      "spells"
     ],
-    "meta": [
-      "SKILL"
+    "prestige_classes": [
+      "SKILL",
+      "campaign-party",
+      "classes",
+      "dm-expansion-toolkit",
+      "forgotten-realms",
+      "fr-artifacts",
+      "fr-factions",
+      "fr-feats",
+      "fr-prestige-classes",
+      "fr-regions-complete"
     ],
     "npcs": [
       "SKILL",
@@ -2184,24 +2155,55 @@
       "items",
       "monsters"
     ],
-    "map_locations": [
-      "SKILL",
-      "campaign-artifacts",
-      "campaign-party",
-      "campaign-story-arcs",
-      "dm-expansion-toolkit",
-      "fr-cannath-vale",
-      "fr-factions",
-      "items",
-      "monsters",
-      "resources"
-    ],
     "psionics": [
+      "SKILL",
       "campaign-party",
       "campaign-story-arcs",
       "fr-prestige-classes",
       "items",
       "monsters"
+    ],
+    "meta": [
+      "SKILL"
+    ],
+    "monsters": [
+      "SKILL",
+      "campaign-artifacts",
+      "campaign-party",
+      "campaign-story-arcs",
+      "classes",
+      "dm-expansion-toolkit",
+      "fr-artifacts",
+      "fr-cannath-vale",
+      "fr-deities-complete",
+      "fr-factions",
+      "fr-feats",
+      "fr-history",
+      "fr-prestige-classes",
+      "fr-races-complete",
+      "fr-regions-complete",
+      "items",
+      "monsters",
+      "resources",
+      "spells"
+    ],
+    "deities": [
+      "SKILL",
+      "campaign-artifacts",
+      "campaign-party",
+      "classes",
+      "dm-expansion-toolkit",
+      "forgotten-realms",
+      "fr-artifacts",
+      "fr-cannath-vale",
+      "fr-deities-complete",
+      "fr-factions",
+      "fr-feats",
+      "fr-history",
+      "fr-prestige-classes",
+      "fr-races-complete",
+      "fr-regions-complete",
+      "resources"
     ]
   },
   "keyword_index": {
@@ -2428,6 +2430,27 @@
     "for lore / forgotten realms:": [
       "SKILL"
     ],
+    "races": [
+      "SKILL",
+      "campaign-artifacts",
+      "campaign-party",
+      "campaign-story-arcs",
+      "classes",
+      "dm-expansion-toolkit",
+      "forgotten-realms",
+      "fr-artifacts",
+      "fr-cannath-vale",
+      "fr-deities-complete",
+      "fr-factions",
+      "fr-feats",
+      "fr-history",
+      "fr-prestige-classes",
+      "fr-races-complete",
+      "fr-regions-complete",
+      "monsters",
+      "resources",
+      "spells"
+    ],
     "factions": [
       "SKILL",
       "dm-expansion-toolkit",
@@ -2438,49 +2461,6 @@
       "fr-history",
       "fr-prestige-classes",
       "fr-regions-complete"
-    ],
-    "prestige_classes": [
-      "SKILL",
-      "campaign-party",
-      "classes",
-      "dm-expansion-toolkit",
-      "forgotten-realms",
-      "fr-artifacts",
-      "fr-factions",
-      "fr-feats",
-      "fr-prestige-classes",
-      "fr-regions-complete"
-    ],
-    "monsters": [
-      "SKILL",
-      "campaign-artifacts",
-      "campaign-party",
-      "campaign-story-arcs",
-      "classes",
-      "dm-expansion-toolkit",
-      "fr-artifacts",
-      "fr-cannath-vale",
-      "fr-deities-complete",
-      "fr-factions",
-      "fr-feats",
-      "fr-history",
-      "fr-prestige-classes",
-      "fr-races-complete",
-      "fr-regions-complete",
-      "items",
-      "monsters",
-      "resources",
-      "spells"
-    ],
-    "party": [
-      "SKILL",
-      "campaign-artifacts",
-      "campaign-dm-strategy",
-      "campaign-party",
-      "campaign-story-arcs",
-      "fr-artifacts",
-      "fr-cannath-vale",
-      "fr-factions"
     ],
     "items": [
       "SKILL",
@@ -2503,6 +2483,50 @@
       "monsters",
       "resources",
       "spells"
+    ],
+    "classes": [
+      "SKILL",
+      "campaign-artifacts",
+      "campaign-dm-strategy",
+      "campaign-party",
+      "campaign-story-arcs",
+      "classes",
+      "combat",
+      "dm-expansion-toolkit",
+      "forgotten-realms",
+      "fr-artifacts",
+      "fr-deities-complete",
+      "fr-factions",
+      "fr-feats",
+      "fr-prestige-classes",
+      "fr-races-complete",
+      "fr-regions-complete",
+      "resources",
+      "spells"
+    ],
+    "artifacts_fr": [
+      "SKILL",
+      "fr-artifacts",
+      "fr-deities-complete",
+      "fr-factions",
+      "fr-history",
+      "fr-prestige-classes",
+      "fr-regions-complete"
+    ],
+    "navigation": [
+      "SKILL"
+    ],
+    "map_locations": [
+      "SKILL",
+      "campaign-artifacts",
+      "campaign-party",
+      "campaign-story-arcs",
+      "dm-expansion-toolkit",
+      "fr-cannath-vale",
+      "fr-factions",
+      "items",
+      "monsters",
+      "resources"
     ],
     "core_mechanics": [
       "SKILL",
@@ -2529,39 +2553,27 @@
       "resources",
       "spells"
     ],
-    "fr_feats": [
+    "dm_strategy": [
       "SKILL",
-      "fr-feats",
-      "fr-prestige-classes",
-      "fr-races-complete",
-      "fr-regions-complete"
+      "campaign-dm-strategy"
     ],
-    "deities": [
+    "campaign_artifacts": [
       "SKILL",
       "campaign-artifacts",
       "campaign-party",
-      "classes",
+      "campaign-story-arcs",
+      "fr-artifacts",
+      "fr-cannath-vale"
+    ],
+    "resources": [
+      "SKILL",
       "dm-expansion-toolkit",
       "forgotten-realms",
-      "fr-artifacts",
-      "fr-cannath-vale",
       "fr-deities-complete",
       "fr-factions",
-      "fr-feats",
-      "fr-history",
-      "fr-prestige-classes",
-      "fr-races-complete",
       "fr-regions-complete",
-      "resources"
-    ],
-    "dm_tools": [
-      "SKILL",
-      "campaign-party",
-      "campaign-story-arcs",
-      "dm-expansion-toolkit",
-      "fr-cannath-vale",
-      "fr-factions",
-      "resources"
+      "resources",
+      "spells"
     ],
     "spells": [
       "SKILL",
@@ -2586,39 +2598,34 @@
       "resources",
       "spells"
     ],
-    "combat": [
+    "fr_feats": [
       "SKILL",
-      "campaign-artifacts",
+      "fr-feats",
+      "fr-prestige-classes",
+      "fr-races-complete",
+      "fr-regions-complete"
+    ],
+    "dm_tools": [
+      "SKILL",
       "campaign-party",
       "campaign-story-arcs",
+      "dm-expansion-toolkit",
+      "fr-cannath-vale",
+      "fr-factions",
+      "resources"
+    ],
+    "skills_system": [
+      "SKILL",
+      "campaign-artifacts",
       "classes",
       "combat",
       "core-mechanics",
-      "dm-expansion-toolkit",
-      "fr-artifacts",
-      "fr-cannath-vale",
-      "fr-deities-complete",
+      "forgotten-realms",
       "fr-factions",
       "fr-feats",
       "fr-prestige-classes",
       "fr-races-complete",
-      "fr-regions-complete",
-      "items",
       "monsters",
-      "resources",
-      "spells"
-    ],
-    "history": [
-      "SKILL",
-      "campaign-artifacts",
-      "campaign-party",
-      "forgotten-realms",
-      "fr-artifacts",
-      "fr-cannath-vale",
-      "fr-deities-complete",
-      "fr-factions",
-      "fr-history",
-      "fr-regions-complete",
       "resources"
     ],
     "story_arcs": [
@@ -2641,80 +2648,18 @@
       "monsters",
       "resources"
     ],
-    "resources": [
-      "SKILL",
-      "dm-expansion-toolkit",
-      "forgotten-realms",
-      "fr-deities-complete",
-      "fr-factions",
-      "fr-regions-complete",
-      "resources",
-      "spells"
-    ],
-    "artifacts_fr": [
-      "SKILL",
-      "fr-artifacts",
-      "fr-deities-complete",
-      "fr-factions",
-      "fr-history",
-      "fr-prestige-classes",
-      "fr-regions-complete"
-    ],
-    "classes": [
-      "SKILL",
-      "campaign-artifacts",
-      "campaign-dm-strategy",
-      "campaign-party",
-      "campaign-story-arcs",
-      "classes",
-      "combat",
-      "dm-expansion-toolkit",
-      "forgotten-realms",
-      "fr-artifacts",
-      "fr-deities-complete",
-      "fr-factions",
-      "fr-feats",
-      "fr-prestige-classes",
-      "fr-races-complete",
-      "fr-regions-complete",
-      "resources",
-      "spells"
-    ],
-    "campaign_artifacts": [
+    "history": [
       "SKILL",
       "campaign-artifacts",
       "campaign-party",
-      "campaign-story-arcs",
-      "fr-artifacts",
-      "fr-cannath-vale"
-    ],
-    "dm_strategy": [
-      "SKILL",
-      "campaign-dm-strategy"
-    ],
-    "navigation": [
-      "SKILL"
-    ],
-    "races": [
-      "SKILL",
-      "campaign-artifacts",
-      "campaign-party",
-      "campaign-story-arcs",
-      "classes",
-      "dm-expansion-toolkit",
       "forgotten-realms",
       "fr-artifacts",
       "fr-cannath-vale",
       "fr-deities-complete",
       "fr-factions",
-      "fr-feats",
       "fr-history",
-      "fr-prestige-classes",
-      "fr-races-complete",
       "fr-regions-complete",
-      "monsters",
-      "resources",
-      "spells"
+      "resources"
     ],
     "regions": [
       "SKILL",
@@ -2732,22 +2677,49 @@
       "fr-regions-complete",
       "resources"
     ],
-    "skills_system": [
+    "party": [
       "SKILL",
       "campaign-artifacts",
+      "campaign-dm-strategy",
+      "campaign-party",
+      "campaign-story-arcs",
+      "fr-artifacts",
+      "fr-cannath-vale",
+      "fr-factions"
+    ],
+    "combat": [
+      "SKILL",
+      "campaign-artifacts",
+      "campaign-party",
+      "campaign-story-arcs",
       "classes",
       "combat",
       "core-mechanics",
-      "forgotten-realms",
+      "dm-expansion-toolkit",
+      "fr-artifacts",
+      "fr-cannath-vale",
+      "fr-deities-complete",
       "fr-factions",
       "fr-feats",
       "fr-prestige-classes",
       "fr-races-complete",
+      "fr-regions-complete",
+      "items",
       "monsters",
-      "resources"
+      "resources",
+      "spells"
     ],
-    "meta": [
-      "SKILL"
+    "prestige_classes": [
+      "SKILL",
+      "campaign-party",
+      "classes",
+      "dm-expansion-toolkit",
+      "forgotten-realms",
+      "fr-artifacts",
+      "fr-factions",
+      "fr-feats",
+      "fr-prestige-classes",
+      "fr-regions-complete"
     ],
     "npcs": [
       "SKILL",
@@ -2760,16 +2732,54 @@
       "items",
       "monsters"
     ],
-    "map_locations": [
+    "psionics": [
+      "SKILL",
+      "campaign-party",
+      "campaign-story-arcs",
+      "fr-prestige-classes",
+      "items",
+      "monsters"
+    ],
+    "meta": [
+      "SKILL"
+    ],
+    "monsters": [
       "SKILL",
       "campaign-artifacts",
       "campaign-party",
       "campaign-story-arcs",
+      "classes",
       "dm-expansion-toolkit",
+      "fr-artifacts",
       "fr-cannath-vale",
+      "fr-deities-complete",
       "fr-factions",
+      "fr-feats",
+      "fr-history",
+      "fr-prestige-classes",
+      "fr-races-complete",
+      "fr-regions-complete",
       "items",
       "monsters",
+      "resources",
+      "spells"
+    ],
+    "deities": [
+      "SKILL",
+      "campaign-artifacts",
+      "campaign-party",
+      "classes",
+      "dm-expansion-toolkit",
+      "forgotten-realms",
+      "fr-artifacts",
+      "fr-cannath-vale",
+      "fr-deities-complete",
+      "fr-factions",
+      "fr-feats",
+      "fr-history",
+      "fr-prestige-classes",
+      "fr-races-complete",
+      "fr-regions-complete",
       "resources"
     ],
     "rumblingstone campaign — artifacts reference (d&d 3.5)": [
@@ -3411,13 +3421,6 @@
     ],
     "allied reinforcements:": [
       "campaign-party"
-    ],
-    "psionics": [
-      "campaign-party",
-      "campaign-story-arcs",
-      "fr-prestige-classes",
-      "items",
-      "monsters"
     ],
     "rumblingstone campaign — story arc reference (agent navigation)": [
       "campaign-story-arcs"

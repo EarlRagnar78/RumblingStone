@@ -32,9 +32,10 @@ DOMAIN_KEYWORDS = {
     "skills_system": ["skills", "skill", "check", "ranks", "trained"],
     "feats": ["feats", "feat", "bonus feat", "regional feat", "divine feat"],
     "items": ["items", "magic items", "weapon", "armor", "wondrous", "ring", "wand", "scroll"],
-    "monsters": ["monsters", "monster", "cr", "challenge rating", "template", "creature type"],
+    "monsters": ["monsters", "monster", "cr", "challenge rating", "template", "creature type", "aberration", "undead"],
     "core_mechanics": ["core", "mechanics", "ability score", "saving throw", "ac", "armor class",
                        "initiative", "xp", "experience", "level"],
+    "psionics": ["psionic", "illithid", "mind flayer", "githyanki", "githzerai", "telepath", "astral", "soulbow"],
 
     # FR Lore
     "deities": ["deity", "god", "pantheon", "domain", "moradin", "lathander", "lolth",
@@ -137,7 +138,8 @@ def build_file_entry(md_file: Path, build_dir: Path) -> dict[str, Any]:
     """Build an index entry for a single source file."""
     content = md_file.read_text(encoding='utf-8')
     headings = extract_headings(content)
-    bold_terms = extract_bold_terms(content)[:20]  # top 20 terms
+    # Extract unique bold terms up to 100 to ensure we capture newly appended splatbook items at the bottom of files
+    bold_terms = list(dict.fromkeys(extract_bold_terms(content)))[:100]
     domains = infer_domains_from_content(md_file.name, content)
 
     # Check which compressed formats exist

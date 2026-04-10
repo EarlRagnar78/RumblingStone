@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "generated": "2026-04-09T13:21:35.695409+00:00",
+    "generated": "2026-04-10T08:34:06.000911+00:00",
     "total_files": 23,
-    "total_domains": 26,
+    "total_domains": 27,
     "usage": "Query 'domain_index' to find files for a topic. Query 'keyword_index' for term lookup. Use 'agent_routing' to select format per agent."
   },
   "files": {
@@ -10,32 +10,32 @@
       "file": "SKILL.md",
       "stem": "SKILL",
       "domains": [
-        "classes",
-        "dm_tools",
-        "monsters",
-        "combat",
-        "regions",
-        "artifacts_fr",
-        "fr_feats",
-        "feats",
-        "core_mechanics",
-        "history",
-        "resources",
-        "prestige_classes",
-        "map_locations",
-        "spells",
-        "meta",
-        "items",
-        "deities",
-        "story_arcs",
-        "party",
-        "npcs",
-        "skills_system",
         "factions",
+        "prestige_classes",
+        "monsters",
+        "party",
+        "items",
+        "core_mechanics",
+        "fr_feats",
+        "deities",
+        "dm_tools",
+        "spells",
+        "combat",
+        "history",
+        "story_arcs",
+        "resources",
+        "artifacts_fr",
+        "classes",
         "campaign_artifacts",
         "dm_strategy",
         "navigation",
-        "races"
+        "races",
+        "regions",
+        "skills_system",
+        "feats",
+        "meta",
+        "npcs",
+        "map_locations"
       ],
       "headings": [
         "D&D 3.5 Edition Rules Reference",
@@ -69,7 +69,46 @@
         "Monster art + upscaling",
         "Branching quests + DM toolkit",
         "All sources + URLs",
-        "Party composition"
+        "Party composition",
+        "Player profiles & DM Strategy",
+        "Campaign artifacts",
+        "Campaign story arcs",
+        "Campaign factions",
+        "Underdark geography",
+        " Everything resolves this way.\n- ",
+        "Actions cost action economy.",
+        "RAW vs. RAI.",
+        "Formula:",
+        "three",
+        "Fortitude",
+        "Reflex",
+        "Will",
+        "Choose race",
+        "Assign ability scores",
+        "Choose class(es)",
+        "Apply racial modifiers",
+        "Allocate skill points",
+        "Choose feats",
+        "Buy equipment",
+        "Calculate derived stats",
+        "Iterative attacks",
+        "Class skill",
+        "Cross-class skill",
+        "Cost",
+        "Untrained",
+        "Take 10",
+        "Take 20",
+        "non-SRD content",
+        "exact SRD text",
+        "spell/feat not in training data",
+        "For rules questions:",
+        "Rule:",
+        "Source:",
+        "Example:",
+        "Edge cases / common mistakes:",
+        "For spell lookups:",
+        "For monster stat blocks",
+        "For lore / Forgotten Realms:"
       ],
       "formats": [
         "compact.md",
@@ -82,21 +121,21 @@
       "file": "campaign-artifacts.md",
       "stem": "campaign-artifacts",
       "domains": [
-        "story_arcs",
-        "party",
-        "classes",
-        "npcs",
-        "monsters",
-        "combat",
-        "skills_system",
-        "core_mechanics",
-        "map_locations",
-        "spells",
-        "campaign_artifacts",
-        "items",
-        "history",
+        "races",
         "deities",
-        "races"
+        "skills_system",
+        "monsters",
+        "party",
+        "spells",
+        "combat",
+        "items",
+        "core_mechanics",
+        "history",
+        "story_arcs",
+        "npcs",
+        "classes",
+        "campaign_artifacts",
+        "map_locations"
       ],
       "headings": [
         "RumblingStone Campaign — Artifacts Reference (D&D 3.5)",
@@ -117,20 +156,100 @@
         "Owner:",
         "Source Files:",
         "dwarven waraxe",
-        "Type:",
         "Special:",
         "Alignment:",
         "Weight:",
         "+4 Dwarven Waraxe, Sacred, Returning",
         "With Corona di Adamantio:",
-        "Type:",
-        "Slot:",
-        "Owner:",
-        "Source Files:",
         "Aura:",
         "Caster Level:",
-        "Weight:",
-        "Material:"
+        "Material:",
+        "Prerequisites:",
+        "Stone's Awareness (Su, CL 5):",
+        "Crown of Protection (Ex, CL 6):",
+        "Moradin's Insight (Su):",
+        "Adamantine Will (Su):",
+        "Mantle of Stone and Spirit (Su):",
+        "Immutable Time",
+        "True Earth",
+        "Dwarven Might",
+        "Forge's Defense",
+        "Trial of the Deep Hall",
+        "Anvil of the World",
+        "Siege of the Eternal Forge",
+        "rejected",
+        "Market Price:",
+        "Superior Darkvision:",
+        "Forged Knowledge:",
+        "Aura of Diplomacy:",
+        "Dual Flame Blessing:",
+        "Wings of Shadow (At-will):",
+        "Shadow Step (Su, 1/5 rounds):",
+        "Light of Lathander (Sp, 1/day):",
+        "Shadow of Mask (Sp, 1/day):",
+        "Unity's Gift (Su, 1/day):",
+        "Firestorm Invocation (Sp, 1/day):",
+        "Dawn's Defiance (Su):",
+        "Solar Purge (Su):",
+        "Crown + Ring (Passive):",
+        "Crown + Ring (Active, 1/day):",
+        "Aegis + Ring (Dark Dawn Strike, 1/day):",
+        "Intelligence (Full):",
+        "Dragon Bane (Dragon Doom):",
+        "Power Attack Mastery:",
+        "Pugno di Moradin (3/day, Su):",
+        "Colpi del Fuoco (3/day, Su):",
+        "Cuore di Brace:",
+        "Salto Infuocato (3/day, Su):",
+        "Jump Bonus:",
+        "Sentient Voice:",
+        "Pelle di Scorie e Pietra:",
+        "Pugno Frana (3/day, Su):",
+        "Ancoraggio della Montagna (2/day, Su):",
+        "Tremore del Forgiatore (1/day, Su):",
+        "Vista della Galleria:",
+        "Martello di Fuoco e Pietra:",
+        "Cammino nella Tempesta di Macerie:",
+        "Origin:",
+        "Saggezza della Terra:",
+        "Armatura Naturale:",
+        "Avatar della Radice (1/day):",
+        "Evocazione dei Guardiani (3/day):",
+        "Size:",
+        "HP:",
+        "AC:",
+        "Speed:",
+        "Attacks:",
+        "Siegebreaker:",
+        "Adamantine Traits:",
+        "Pelle di Adamantio:",
+        "Timeless Body:",
+        "Spontaneous Rebirth (1/day):",
+        "Dual Type:",
+        "Fire Vulnerability:",
+        "Cold Resistance 10",
+        "Regeneration 1:",
+        "Plant Empathy:",
+        "Photosynthesis:",
+        "Root Anchoring (1/day, Sp):",
+        "Cuore di Moradin",
+        "Sala della Forgia Eterna",
+        "Rituale Cuore di Moradin",
+        "Resurrection Enabler:",
+        "Moradin's Presence:",
+        "Gem Synergy Catalyst:",
+        "Il Collezionista",
+        "strange and pure evil artifacts",
+        "Therysol",
+        "CL:",
+        "Source:",
+        "scenic",
+        "Activation:",
+        "Effect per gate:",
+        "Cost per gate:",
+        "Gate Progression:",
+        "LETHAL",
+        "DISINTEGRATION"
       ],
       "formats": [],
       "chars": 18837
@@ -139,9 +258,9 @@
       "file": "campaign-dm-strategy.md",
       "stem": "campaign-dm-strategy",
       "domains": [
+        "classes",
         "dm_strategy",
         "core_mechanics",
-        "classes",
         "party"
       ],
       "headings": [
@@ -166,17 +285,20 @@
         "Maestro Varis \"Seta-Argento\"",
         "L'Intrigo dell'Artefatto:",
         "Furtività e Tattica:",
-        "Profilo Giocatore:",
-        "Problema:",
-        "La Soluzione (Sottotrama e Roleplay):",
         "Scelte di Comando:",
         "La Faccia Diplomatica:",
-        "Profilo Giocatore:",
-        "Problema:",
         "Ambienti Distruttibili:",
         "Il Loot \"Sporco\":",
-        "Profilo Giocatore:",
-        "Problema:"
+        "La Rinascita Epica:",
+        "L'Ascolto della Storia:",
+        "Vivid Experience",
+        "che non possono abbattere con le spade",
+        "Esempio pratico (Il Conte Valerius):",
+        "ERRATO",
+        "Design a Dilemma (Triangolo di Rischio):",
+        "Paga l'Artefatto della Terra:",
+        "Resurrezione & Shop:",
+        "Il Ritorno Sociale:"
       ],
       "formats": [],
       "chars": 8761
@@ -185,22 +307,23 @@
       "file": "campaign-party.md",
       "stem": "campaign-party",
       "domains": [
-        "story_arcs",
-        "party",
+        "races",
+        "psionics",
+        "deities",
         "prestige_classes",
-        "classes",
-        "npcs",
         "dm_tools",
         "monsters",
-        "combat",
-        "core_mechanics",
-        "map_locations",
+        "party",
         "spells",
-        "campaign_artifacts",
+        "combat",
         "items",
+        "core_mechanics",
         "history",
-        "deities",
-        "races"
+        "npcs",
+        "story_arcs",
+        "classes",
+        "campaign_artifacts",
+        "map_locations"
       ],
       "headings": [
         "The Rumbling Stone — Party Reference (D&D 3.5)",
@@ -229,12 +352,55 @@
         "Corona di Adamantio",
         "Key Events:",
         "Combat Notes:",
-        "Role:",
-        "Race:",
-        "Alignment:",
-        "Fighting Style:",
-        "Status:",
-        "Key Artifact:"
+        "Key Artifact:",
+        "Bracieri Gemelli di Moradin",
+        "Upcoming — Tournament at Dauth:",
+        "Orbe delle Otto Porte",
+        "Githyanki Red Dragon aerial attack",
+        "chakra enlightenment",
+        "Salto Infuocato",
+        "Treant Hybrid",
+        "Collana dei Semi Eterni",
+        "Nano/Treant Hybrid",
+        "Ring of Chaotic Illumination (Reforged)",
+        "Upcoming — Invisible Tower quest:",
+        "Zalkatar",
+        "no rogue",
+        "Trap detection/bypass:",
+        "Arcane needs:",
+        "Divine power:",
+        "Tank mode:",
+        "Healing emergency:",
+        "Front:",
+        "Mid:",
+        "Back:",
+        "Divine Trinity",
+        "Dark Dawn Strike",
+        "Paradox Blessing",
+        "Therysol",
+        "Moradin",
+        "Hammerfist King",
+        "Minotaur Lair",
+        "Il Collezionista",
+        "ESCAPED",
+        "01_LaMiniera",
+        "02_scaladossa-abbattor-funghi",
+        "03_la Cittadella",
+        "04_tomba_di_Belkram",
+        "05_aa-stanza-runica",
+        "06_Stanza-corona-di-adamantio",
+        "07_il Portale Della Forgia Eterna",
+        "08_La Battaglia Di Hammerfist",
+        "09_Continuazione Arco Narrativo",
+        "Earth Node",
+        "Artemis — Torre Invisibile (P2A):",
+        "Tordek — Torneo Epico di Dauth (P2B):",
+        "Phase 0 — Notte dei Drow:",
+        "Phase 1 — Assedio:",
+        "Phase 2 — Ritualisti Draconici:",
+        "Phase 3 — Azarr Kul & Avatar:",
+        "Phase 4 — Circolo degli Otto & Mythal:",
+        "Allied reinforcements:"
       ],
       "formats": [],
       "chars": 14892
@@ -243,17 +409,18 @@
       "file": "campaign-story-arcs.md",
       "stem": "campaign-story-arcs",
       "domains": [
-        "story_arcs",
-        "party",
-        "classes",
-        "npcs",
+        "races",
+        "psionics",
         "dm_tools",
         "monsters",
+        "party",
         "combat",
         "core_mechanics",
-        "map_locations",
+        "story_arcs",
+        "npcs",
+        "classes",
         "campaign_artifacts",
-        "races"
+        "map_locations"
       ],
       "headings": [
         "RumblingStone Campaign — Story Arc Reference (Agent Navigation)",
@@ -275,19 +442,20 @@
         "Upcoming:",
         "Hella dies",
         "ESCAPED",
-        "ESCAPED",
         "Conditional",
-        "Conditional",
-        "ACTIVE",
-        "ACTIVE",
-        "ACTIVE",
-        "ACTIVE",
-        "APPROACHING",
-        "ACTIVE",
         "ACTIVE",
         "APPROACHING",
         "Yes:",
-        "No:"
+        "No:",
+        "Win:",
+        "Interrupted by Githyanki:",
+        "Pass:",
+        "Fail:",
+        "Zalkatar defeated:",
+        "Zalkatar escapes:",
+        "Defended:",
+        "Stolen:",
+        "Destroyed:"
       ],
       "formats": [],
       "chars": 9337
@@ -296,14 +464,19 @@
       "file": "classes.md",
       "stem": "classes",
       "domains": [
-        "classes",
-        "combat",
-        "feats",
+        "races",
+        "deities",
+        "regions",
+        "prestige_classes",
         "skills_system",
-        "core_mechanics",
+        "feats",
+        "monsters",
         "spells",
+        "combat",
         "items",
-        "races"
+        "core_mechanics",
+        "story_arcs",
+        "classes"
       ],
       "headings": [
         "Base Classes — D&D 3.5 SRD Reference",
@@ -323,35 +496,86 @@
         "Damage Reduction",
         "Arcane spells",
         "Bard Spell Slots",
-        "Special Features:",
         "Inspire Courage",
         "Divine spells",
         "Turn/Rebuke Undead",
         "Domains",
         "Spontaneous Casting",
         "Key Domains",
-        "Divine spells",
         "Wild Shape",
         "Animal Companion",
         "\n\n---\n\n## Fighter\n\n",
         "Class Skills",
         "Unarmed Damage Progression:",
-        "Special Features:",
-        "AC Bonus"
+        "AC Bonus",
+        "Monk Speed Bonus",
+        "Alignment",
+        "Divine Grace",
+        "Lay on Hands",
+        "Aura of Courage",
+        "Smite Evil",
+        "Turn Undead",
+        "Remove Disease",
+        "Spellcasting",
+        "Special Mount",
+        "Two Combat Styles",
+        "Archery",
+        "Two-Weapon Combat",
+        "Favored Enemy",
+        "Sneak Attack",
+        "Trapfinding",
+        "Evasion",
+        "Trap Sense",
+        "Uncanny Dodge",
+        "Improved Uncanny Dodge",
+        "Special Abilities",
+        "Key Skills",
+        "Spells Known",
+        "Familiar",
+        "HD",
+        "BAB",
+        "Good Saves",
+        "Weapons & Armor",
+        "Bonus Languages",
+        "Skills",
+        "Spellbook",
+        "Specialist",
+        "Bonus Feats",
+        "Schools of Magic",
+        "Opposition Schools",
+        "Spells per Day",
+        "XP Penalties",
+        "Favored Class",
+        "Prestige Classes",
+        "Spellcaster multiclassing",
+        "Warlock",
+        "Warmage",
+        "Wu Jen",
+        "Favored Soul",
+        "Shugenja",
+        "Spirit Shaman",
+        "Hexblade",
+        "Samurai",
+        "Swashbuckler",
+        "Archivist",
+        "Dread Necromancer",
+        "Ardent",
+        "Divine Mind",
+        "Erudite"
       ],
       "formats": [],
-      "chars": 7382
+      "chars": 12393
     },
     "combat": {
       "file": "combat.md",
       "stem": "combat",
       "domains": [
-        "classes",
-        "combat",
         "skills_system",
-        "core_mechanics",
+        "items",
+        "combat",
         "spells",
-        "items"
+        "core_mechanics",
+        "classes"
       ],
       "headings": [
         "Combat — D&D 3.5 SRD Reference",
@@ -385,7 +609,13 @@
         "5-foot step",
         "While grappling (Full-Round to do one):",
         "Charge",
-        "Run"
+        "Run",
+        "Cover:",
+        "Concealment (miss chance):",
+        "Massive Damage Rule (optional)",
+        "Stabilize",
+        "Natural Stabilization",
+        "Recovery"
       ],
       "formats": [],
       "chars": 7553
@@ -394,12 +624,12 @@
       "file": "core-mechanics.md",
       "stem": "core-mechanics",
       "domains": [
-        "combat",
         "feats",
         "skills_system",
-        "core_mechanics",
         "spells",
-        "items"
+        "combat",
+        "items",
+        "core_mechanics"
       ],
       "headings": [
         "Core Mechanics — D&D 3.5 SRD Reference",
@@ -439,21 +669,21 @@
       "file": "dm-expansion-toolkit.md",
       "stem": "dm-expansion-toolkit",
       "domains": [
-        "story_arcs",
-        "prestige_classes",
-        "classes",
-        "dm_tools",
-        "monsters",
-        "combat",
+        "races",
         "factions",
-        "core_mechanics",
-        "regions",
-        "spells",
-        "map_locations",
-        "items",
-        "resources",
         "deities",
-        "races"
+        "dm_tools",
+        "regions",
+        "prestige_classes",
+        "monsters",
+        "spells",
+        "combat",
+        "items",
+        "core_mechanics",
+        "story_arcs",
+        "resources",
+        "classes",
+        "map_locations"
       ],
       "headings": [
         "DM Expansion Toolkit — RumblingStone Campaign",
@@ -487,7 +717,41 @@
         "Ogre Shock Trooper",
         "Manticore Rider",
         "Will-o-Wisp Cluster (Lhespenbog)",
-        "base"
+        "base",
+        "expansion layer",
+        "AZARR KUL — EXPANDED",
+        "Tiamat's Voice",
+        "Five Aspects",
+        "Escape Contingency",
+        "If He Escapes",
+        "THE LICH OF VRAATH HOLD — EXPANDED",
+        "Netherese-era lich",
+        "Personality",
+        "Motivation",
+        "Expanded Negotiation",
+        "SAARVITH — EXPANDED (Surviving Wyrmlord)",
+        "Type",
+        "Suggested party level",
+        "Status",
+        "Goal",
+        "DC / CR",
+        "Role",
+        "Location",
+        "Secret",
+        "Race/Class",
+        "CR",
+        "HP",
+        "AC",
+        "Initiative",
+        "Attack",
+        "Saves",
+        "Special",
+        "Map reference",
+        "EL",
+        "CR breakdown",
+        "Terrain",
+        "Lighting",
+        "Map-A-Week"
       ],
       "formats": [],
       "chars": 25106
@@ -496,20 +760,20 @@
       "file": "forgotten-realms.md",
       "stem": "forgotten-realms",
       "domains": [
-        "story_arcs",
+        "races",
+        "factions",
+        "deities",
+        "regions",
         "prestige_classes",
-        "classes",
         "skills_system",
         "feats",
-        "regions",
-        "core_mechanics",
         "spells",
-        "factions",
-        "history",
         "items",
+        "core_mechanics",
+        "history",
+        "story_arcs",
         "resources",
-        "deities",
-        "races"
+        "classes"
       ],
       "headings": [
         "Forgotten Realms — D&D 3.5 Lore Reference",
@@ -543,7 +807,10 @@
         "Baldur's Gate",
         "Neverwinter",
         "Menzoberranzan",
-        "Myth Drannor"
+        "Myth Drannor",
+        "Undermountain",
+        "4th Edition event",
+        "1 tenday = 10 days"
       ],
       "formats": [],
       "chars": 7798
@@ -552,21 +819,22 @@
       "file": "fr-artifacts.md",
       "stem": "fr-artifacts",
       "domains": [
-        "story_arcs",
-        "prestige_classes",
-        "party",
-        "classes",
-        "combat",
+        "races",
         "factions",
-        "core_mechanics",
+        "deities",
         "regions",
-        "spells",
-        "campaign_artifacts",
+        "prestige_classes",
+        "monsters",
+        "party",
         "artifacts_fr",
         "items",
+        "combat",
+        "spells",
+        "core_mechanics",
         "history",
-        "deities",
-        "races"
+        "story_arcs",
+        "classes",
+        "campaign_artifacts"
       ],
       "headings": [
         "Forgotten Realms — Artifacts & Unique Magic Items (D&D 3.5)",
@@ -587,20 +855,23 @@
         "Powers",
         "Location (1372 DR)",
         "Destruction",
-        "Type",
-        "Origin",
-        "Appearance",
-        "Powers",
-        "Location (1372 DR)",
         "Significance",
-        "Type",
-        "Powers",
         "Price",
         "Note",
-        "Type",
-        "Origin",
-        "Appearance",
-        "Powers"
+        "Location",
+        "Bonding",
+        "Powers (example — Arilyn Moonblade)",
+        "Cultural markers",
+        "Red Hand of Doom specific items",
+        "Pricing reference",
+        "5 custom PC artifacts",
+        "Aegis Fang",
+        "Corona di Adamantio",
+        "Ring of Chaotic Illumination (Reforged)",
+        "Bracieri Gemelli di Moradin",
+        "Collana dei Semi Eterni",
+        "Aegis Fang + Corona:",
+        "Ring + Corona:"
       ],
       "formats": [],
       "chars": 10443
@@ -609,19 +880,20 @@
       "file": "fr-cannath-vale.md",
       "stem": "fr-cannath-vale",
       "domains": [
-        "story_arcs",
-        "party",
-        "npcs",
-        "dm_tools",
-        "combat",
-        "map_locations",
-        "core_mechanics",
-        "spells",
-        "regions",
-        "history",
-        "campaign_artifacts",
+        "races",
         "deities",
-        "races"
+        "regions",
+        "dm_tools",
+        "monsters",
+        "party",
+        "spells",
+        "combat",
+        "core_mechanics",
+        "story_arcs",
+        "history",
+        "npcs",
+        "campaign_artifacts",
+        "map_locations"
       ],
       "headings": [
         "Cannath Vale — Campaign Setting Reference",
@@ -655,7 +927,57 @@
         "Bandit Wastes",
         "The Swagdar",
         "Brown Hills",
-        "The North Wall"
+        "The North Wall",
+        "NOT",
+        "Lake Lhespen",
+        "Shaar River",
+        "Talar River",
+        "\"Talar River\"",
+        "The Lhescreek",
+        "The Witchstream",
+        "Cannath River",
+        "Lhesper Trail",
+        "Old North Road",
+        "The Dwarfroad",
+        "The Dawn Way",
+        "Lhesper",
+        "Kormul",
+        "IS on map",
+        "Skull Gorge",
+        "Vraath Keep",
+        "retained",
+        "Fane of Tiamat",
+        "Drellin's Ferry",
+        "Hammerfist Holds",
+        "Ghostlord's Lair",
+        "Rethmar",
+        "Cannathgate",
+        "Talar",
+        "Terrelton",
+        "Nimon Gap",
+        "Witchcross",
+        "Cannathcross",
+        "Marthon",
+        "spelling: \"Marthon\"",
+        "Prosser",
+        "Dauth",
+        "Hillwatch",
+        "Red Rock",
+        "Assardoth",
+        "custom addition",
+        "do not appear on the map",
+        "Channath Vale / Lhespenar",
+        "Dalelands",
+        "Shining South",
+        "Sala della Forgia Eterna (Hub)",
+        "Fire Plane Node (Part 3)",
+        "Earth Plane Node (Part 4)",
+        "Temporal Void (Part 5)",
+        "Year -1000 DR",
+        "Out of the Abyss",
+        "Lolth-sanctioned fleshcrafting",
+        "Expedition to the Demonweb Pits",
+        "ESCAPED"
       ],
       "formats": [],
       "chars": 14279
@@ -664,19 +986,20 @@
       "file": "fr-deities-complete.md",
       "stem": "fr-deities-complete",
       "domains": [
-        "story_arcs",
-        "classes",
-        "combat",
-        "feats",
-        "core_mechanics",
-        "regions",
-        "spells",
-        "items",
-        "history",
-        "artifacts_fr",
-        "resources",
+        "races",
         "deities",
-        "races"
+        "regions",
+        "feats",
+        "monsters",
+        "artifacts_fr",
+        "spells",
+        "combat",
+        "items",
+        "core_mechanics",
+        "history",
+        "story_arcs",
+        "resources",
+        "classes"
       ],
       "headings": [
         "Forgotten Realms — Deities Complete Reference (D&D 3.5)",
@@ -710,7 +1033,87 @@
         "Gond",
         "Helm",
         "Ilmater",
-        "Lathander"
+        "Lathander",
+        "Malar",
+        "Mask",
+        "Milil",
+        "Nobanion",
+        "Oghma",
+        "Red Knight",
+        "Savras",
+        "Selûne",
+        "Sune",
+        "Talona",
+        "Tymora",
+        "Umberlee",
+        "Waukeen",
+        "Finder Wyvernspur",
+        "Garagos",
+        "Gargauth",
+        "Gwaeron Windstrom",
+        "Hoar",
+        "Jergal",
+        "Lliira",
+        "Loviatar",
+        "Lurue",
+        "Mielikki",
+        "Sharess",
+        "Shaundakul",
+        "Shiallia",
+        "Siamorphe",
+        "Ulutiu",
+        "Urogalan",
+        "Valkur",
+        "Velsharoon",
+        "Bhaal",
+        "Myrkul",
+        "Moander",
+        "Iyachtu Xvim",
+        "Lolth",
+        "Eilistraee",
+        "Ghaunadaur",
+        "Kiaransalee",
+        "Selvetarm",
+        "Vhaeraun",
+        "Corellon Larethian",
+        "Angharradh",
+        "Aerdrie Faenya",
+        "Deep Sashelas",
+        "Erevan Ilesere",
+        "Fenmarel Mestarine",
+        "Hanali Celanil",
+        "Labelas Enoreth",
+        "Rillifane Rallathil",
+        "Sehanine Moonbow",
+        "Shevarash",
+        "Solonor Thelandira",
+        "Moradin",
+        "Berronar Truesilver",
+        "Clangeddin Silverbeard",
+        "Dugmaren Brightmantle",
+        "Dumathoin",
+        "Gorm Gulthyn",
+        "Haela Brightaxe",
+        "Marthammor Duin",
+        "Thard Harr",
+        "Vergadain",
+        "Garl Glittergold",
+        "Baravar Cloakshadow",
+        "Callarduran Smoothhands",
+        "Flandal Steelskin",
+        "Gaerdal Ironhand",
+        "Segojan Earthcaller",
+        "Urdlen",
+        "Yondalla",
+        "Arvoreen",
+        "Brandobaris",
+        "Cyrrollalee",
+        "Sheela Peryroyl",
+        "Gruumsh",
+        "Bahgtru",
+        "Ilneval",
+        "Luthic",
+        "Shargaas"
       ],
       "formats": [],
       "chars": 28884
@@ -719,24 +1122,25 @@
       "file": "fr-factions.md",
       "stem": "fr-factions",
       "domains": [
-        "story_arcs",
-        "prestige_classes",
-        "party",
-        "classes",
-        "npcs",
-        "dm_tools",
-        "combat",
-        "skills_system",
         "factions",
-        "core_mechanics",
-        "regions",
-        "spells",
-        "map_locations",
+        "prestige_classes",
+        "monsters",
+        "party",
         "items",
-        "history",
-        "artifacts_fr",
+        "core_mechanics",
         "deities",
-        "races"
+        "dm_tools",
+        "spells",
+        "combat",
+        "history",
+        "story_arcs",
+        "artifacts_fr",
+        "classes",
+        "races",
+        "regions",
+        "skills_system",
+        "npcs",
+        "map_locations"
       ],
       "headings": [
         "Forgotten Realms — Factions & Organizations (D&D 3.5)",
@@ -761,16 +1165,36 @@
         "Magic",
         "Status (1372 DR)",
         "Enemies",
-        "Alignment",
-        "Goals",
-        "Founded",
-        "Headquarters",
-        "Symbol",
-        "Structure",
-        "Notable Members",
         "Operations",
-        "Status (1372 DR)",
-        "Resources"
+        "Resources",
+        "Members",
+        "Leaders",
+        "Sonjak",
+        "fungal aberrations",
+        "pact with the Mother of Fungi",
+        "Il Collezionista",
+        "Rakshasa",
+        "selling them to evil villains",
+        "Recurring villain",
+        "Campaign Connections",
+        "Il Collezionista's evil artifact trade:",
+        "strange and pure evil artifacts",
+        "Expedition to the Demonweb Pits",
+        "NPC Therysol",
+        "NPC ally during the Notte dei Drow",
+        "Status (Current)",
+        "Forces",
+        "Campaign Role",
+        "Connections",
+        "Composition",
+        "Role",
+        "mythal-like barrier",
+        "Narrative Purpose",
+        "Status",
+        "Location",
+        "Leader",
+        "Military",
+        "Condition"
       ],
       "formats": [],
       "chars": 17991
@@ -779,19 +1203,20 @@
       "file": "fr-feats.md",
       "stem": "fr-feats",
       "domains": [
+        "races",
+        "factions",
+        "fr_feats",
+        "deities",
+        "regions",
         "prestige_classes",
-        "classes",
-        "combat",
         "skills_system",
         "feats",
-        "core_mechanics",
-        "regions",
+        "monsters",
         "spells",
-        "factions",
+        "combat",
         "items",
-        "deities",
-        "fr_feats",
-        "races"
+        "core_mechanics",
+        "classes"
       ],
       "headings": [
         "Forgotten Realms — Feats Complete Reference (D&D 3.5)",
@@ -825,7 +1250,45 @@
         "Magical Artisan",
         "Spellwise",
         "Arcane Preparation",
-        "Militia (Impiltur)"
+        "Militia (Impiltur)",
+        "Ffolk Heritage",
+        "Northman Heritage",
+        "Heroic Destiny",
+        "Blooded",
+        "Rashemi Elemental Affinity",
+        "Spirit Speaker",
+        "Shaaryan Mounted Combat",
+        "Track (Regional)",
+        "Tattoo Focus",
+        "Arcane Schooling",
+        "Waterdhavian Noble",
+        "Militia (various towns)",
+        "Divine Cleansing",
+        "Divine Resistance",
+        "Divine Shield",
+        "Divine Might",
+        "Extra Turning",
+        "Sacred Vengeance",
+        "Anchoring Aura",
+        "Disciple of the Sun",
+        "Empower Turning",
+        "Holy Radiance",
+        "Initiate of Mystra",
+        "Initiate of Tempus",
+        "Initiate of Lathander",
+        "FR-specific metamagic:",
+        "Innate Spell",
+        "Cooperative Spell",
+        "FR-specific item creation:",
+        "Scribe Tattoo",
+        "Craft Magical Tattoo",
+        "Cavalry builds (Purple Dragon Knight)",
+        "Dwarven defensive builds",
+        "Zhentarim enforcer builds",
+        "Regional feats and multiclassing",
+        "Tattoos (Red Wizard / Thay)",
+        "Shadow Weave and Mystra's Weave",
+        "Initiate feats and worship requirement"
       ],
       "formats": [],
       "chars": 11012
@@ -834,17 +1297,18 @@
       "file": "fr-history.md",
       "stem": "fr-history",
       "domains": [
-        "story_arcs",
-        "feats",
+        "races",
         "factions",
-        "core_mechanics",
-        "regions",
-        "spells",
-        "history",
-        "items",
-        "artifacts_fr",
         "deities",
-        "races"
+        "regions",
+        "feats",
+        "monsters",
+        "artifacts_fr",
+        "items",
+        "spells",
+        "core_mechanics",
+        "history",
+        "story_arcs"
       ],
       "headings": [
         "Forgotten Realms — History & Timeline (D&D 3.5)",
@@ -878,7 +1342,18 @@
         "Day names",
         "Major Festival Days",
         "Midwinter",
-        "Greengrass"
+        "Greengrass",
+        "Midsummer",
+        "Shieldmeet",
+        "Highharvestide",
+        "Feast of the Moon",
+        "The Grand History of the Realms",
+        "Volo's Guide to...",
+        "Elminster's Ecologies",
+        "Candlekeep Chronicles",
+        "The Nether Scrolls",
+        "The Tablets of Fate",
+        "The Cyrinishad"
       ],
       "formats": [],
       "chars": 11561
@@ -887,21 +1362,24 @@
       "file": "fr-prestige-classes.md",
       "stem": "fr-prestige-classes",
       "domains": [
-        "story_arcs",
+        "races",
+        "factions",
+        "psionics",
+        "fr_feats",
+        "deities",
         "prestige_classes",
-        "classes",
-        "combat",
+        "regions",
         "skills_system",
         "feats",
-        "core_mechanics",
-        "regions",
-        "spells",
-        "factions",
-        "items",
+        "monsters",
         "artifacts_fr",
-        "deities",
-        "fr_feats",
-        "races"
+        "spells",
+        "combat",
+        "items",
+        "core_mechanics",
+        "story_arcs",
+        "npcs",
+        "classes"
       ],
       "headings": [
         "Forgotten Realms — Prestige Classes (D&D 3.5)",
@@ -916,28 +1394,69 @@
         "Hierophant (SRD)"
       ],
       "key_terms": [
-        "Initiate Feats"
+        "Initiate Feats",
+        "Initiate of the Sevenfold Veil",
+        "Mage of the Arcane Order",
+        "Blood Magus",
+        "Fatespinner",
+        "Mindbender",
+        "Contemplative",
+        "Divine Oracle",
+        "Sacred Fist",
+        "Cavalier",
+        "Dervish",
+        "Frenzied Berserker",
+        "Kensai",
+        "Master Thrower",
+        "Avenging Executioner",
+        "Malconvoker",
+        "Mountebank",
+        "Anarchic Initiate",
+        "Flayerspawn Psychic",
+        "Soulbow",
+        "Illithid Slayer",
+        "War Weaver",
+        "Combat Medic",
+        "Tainted Scholar",
+        "Fiend-blooded",
+        "Fleshwarper",
+        "Dragonsong Lyrist",
+        "Initiate of the Draconic Mysteries",
+        "Stormsinger",
+        "Walker in the Waste",
+        "Sand Shaper",
+        "Stormcaster",
+        "Scarlet Corsair",
+        "Dirgesinger",
+        "Master of Radiance",
+        "Pale Master",
+        "Entropist",
+        "Runesmith",
+        "Deepwarden",
+        "Chameleon",
+        "Arcane Hierophant",
+        "Prime Underdark Guide"
       ],
       "formats": [],
-      "chars": 12171
+      "chars": 20262
     },
     "fr-races-complete": {
       "file": "fr-races-complete.md",
       "stem": "fr-races-complete",
       "domains": [
-        "story_arcs",
-        "classes",
-        "monsters",
-        "combat",
+        "races",
+        "fr_feats",
+        "deities",
+        "regions",
         "skills_system",
         "feats",
-        "core_mechanics",
-        "regions",
+        "monsters",
         "spells",
+        "combat",
         "items",
-        "deities",
-        "fr_feats",
-        "races"
+        "core_mechanics",
+        "story_arcs",
+        "classes"
       ],
       "headings": [
         "Forgotten Realms — Races & Subraces Complete (D&D 3.5)",
@@ -962,23 +1481,23 @@
       "file": "fr-regions-complete.md",
       "stem": "fr-regions-complete",
       "domains": [
-        "story_arcs",
-        "prestige_classes",
-        "classes",
-        "monsters",
-        "combat",
-        "feats",
+        "races",
         "factions",
-        "regions",
-        "core_mechanics",
-        "spells",
-        "items",
-        "history",
-        "artifacts_fr",
-        "resources",
-        "deities",
         "fr_feats",
-        "races"
+        "regions",
+        "deities",
+        "prestige_classes",
+        "feats",
+        "monsters",
+        "artifacts_fr",
+        "spells",
+        "combat",
+        "items",
+        "core_mechanics",
+        "history",
+        "story_arcs",
+        "resources",
+        "classes"
       ],
       "headings": [
         "Forgotten Realms — Regions Complete Reference (D&D 3.5)",
@@ -1006,10 +1525,16 @@
       "file": "items.md",
       "stem": "items",
       "domains": [
-        "items",
+        "psionics",
+        "feats",
+        "monsters",
+        "spells",
         "combat",
+        "items",
         "core_mechanics",
-        "spells"
+        "story_arcs",
+        "npcs",
+        "map_locations"
       ],
       "headings": [
         "Magic Items — D&D 3.5 SRD Reference",
@@ -1035,24 +1560,44 @@
         "Failure",
         "Arcane vs Divine",
         "Pricing",
-        "Pricing",
         "Use Magic Device",
-        "Ego"
+        "Ego",
+        "Dragondoom (Artifact)",
+        "Dragonbane Weapons / Dragonfang Weapons",
+        "Bands of the Blood Glass",
+        "Goggles of Draconic Vision",
+        "Nightstick",
+        "Cloak of Turn Resistance",
+        "Undead Grafts",
+        "Goggles of Day / Lenses of the Desert",
+        "Wasteland Clothing / Hydration Suit",
+        "Stormwalker's Cloak",
+        "Piwafwi (Drow Cloak)",
+        "House Insignias",
+        "Silithar Blood/Bone Grafts",
+        "Crystal Masks",
+        "Githyanki Silver Swords",
+        "Astral Skiffs"
       ],
       "formats": [],
-      "chars": 5204
+      "chars": 8386
     },
     "monsters": {
       "file": "monsters.md",
       "stem": "monsters",
       "domains": [
+        "races",
+        "psionics",
         "monsters",
-        "combat",
-        "skills_system",
         "feats",
-        "core_mechanics",
+        "skills_system",
         "spells",
-        "items"
+        "combat",
+        "items",
+        "core_mechanics",
+        "story_arcs",
+        "npcs",
+        "map_locations"
       ],
       "headings": [
         "Monsters — D&D 3.5 SRD Reference",
@@ -1062,7 +1607,9 @@
         "CR Quick Reference (Common Monsters)",
         "Dragons — Age Categories and CR",
         "Templates",
-        "Encounter Distance (Surprise Rules)"
+        "Encounter Distance (Surprise Rules)",
+        "Expanded Splatbook Monsters (Cannath Vale Setting)",
+        "The Wyrmbones & Red Hand Horde"
       ],
       "key_terms": [
         "Darkvision",
@@ -1084,31 +1631,60 @@
         "Base CRs",
         "Half-Dragon",
         "Half-Fiend",
-        "Half-Celestial"
+        "Half-Celestial",
+        "Vampire",
+        "Lich",
+        "Skeleton",
+        "Zombie",
+        "Adding a template",
+        "Abishai (White/Black/Green/Blue/Red)",
+        "Dracotaur",
+        "Dragonnels",
+        "Boneclaw",
+        "Boneyard",
+        "Blaspheme",
+        "Visage",
+        "Ashen Husk",
+        "Wastestrider",
+        "Salt Mummy / Dry Lich Templates",
+        "Bog Imp",
+        "Merrow",
+        "Chuul",
+        "Tainted Minion",
+        "Grell & Grell Patriarch",
+        "Chitine & Choldrith",
+        "Fleshwarped Creatures",
+        "Myconid Sovereign",
+        "Crystalline Creatures",
+        "Xorn",
+        "Mithral Golem",
+        "Magma Ooze",
+        "Githyanki Knights / Gish",
+        "Githzerai Monks"
       ],
       "formats": [],
-      "chars": 6150
+      "chars": 9127
     },
     "resources": {
       "file": "resources.md",
       "stem": "resources",
       "domains": [
-        "story_arcs",
-        "classes",
+        "races",
+        "deities",
+        "regions",
         "dm_tools",
-        "monsters",
-        "combat",
         "skills_system",
         "feats",
-        "core_mechanics",
-        "regions",
+        "monsters",
         "spells",
-        "map_locations",
-        "resources",
+        "combat",
         "items",
+        "core_mechanics",
         "history",
-        "deities",
-        "races"
+        "story_arcs",
+        "resources",
+        "classes",
+        "map_locations"
       ],
       "headings": [
         "Free & Open Resources for D&D 3.5 — 2026 Reference",
@@ -1130,19 +1706,39 @@
         "imarvintpa.com",
         "URL",
         "License",
-        "URL",
         "What it is",
         "Content",
         "Why use it",
-        "URL",
         "Scope",
-        "Why use it",
         "Session weather",
         "NPC lookup",
         "Regional encounters",
         "History",
         "Shopping",
-        "URL"
+        "Caution",
+        "Index",
+        "Elminster Speaks",
+        "Realmslore",
+        "Wyrms of the North",
+        "Realms Personalities",
+        "Map-A-Week",
+        "Elite Opponents",
+        "Rules of the Game",
+        "Villain Builder",
+        "Vicious Venues",
+        "Perilous Gateways",
+        "Magic Books of Faerûn",
+        "Art gallery archive",
+        "Pattern",
+        "Use",
+        "d20srd.org content",
+        "Non-SRD books",
+        "Archived WotC articles",
+        "Maps",
+        "Audio Effects",
+        "3D Models",
+        "Images & Tokens",
+        "GM Screen & Cheatsheets"
       ],
       "formats": [],
       "chars": 12091
@@ -1151,14 +1747,14 @@
       "file": "spells.md",
       "stem": "spells",
       "domains": [
-        "classes",
+        "races",
         "monsters",
-        "combat",
-        "core_mechanics",
-        "spells",
         "items",
+        "combat",
+        "spells",
+        "core_mechanics",
         "resources",
-        "races"
+        "classes"
       ],
       "headings": [
         "Spells — D&D 3.5 SRD Reference",
@@ -1192,68 +1788,92 @@
         "Bull's Strength",
         "Darkness",
         "Hold Person",
-        "Invisibility"
+        "Invisibility",
+        "Knock",
+        "Mirror Image",
+        "Scorching Ray",
+        "Dispel Magic",
+        "Fireball",
+        "Fly",
+        "Haste",
+        "Lightning Bolt",
+        "Slow",
+        "Confusion",
+        "Dimension Door",
+        "Enervation",
+        "Greater Invisibility",
+        "Ice Storm",
+        "Cone of Cold",
+        "Dominate Person",
+        "Hold Monster",
+        "Teleport",
+        "Wall of Force",
+        "Chain Lightning",
+        "Contingency",
+        "Disintegrate",
+        "Globe of Invulnerability",
+        "True Seeing",
+        "Finger of Death",
+        "Limited Wish",
+        "Reverse Gravity",
+        "Spell Turning",
+        "Horrid Wilting",
+        "Incendiary Cloud",
+        "Mind Blank",
+        "Power Word Stun",
+        "Gate",
+        "Imprisonment",
+        "Meteor Swarm",
+        "Power Word Kill",
+        "Time Stop",
+        "Wish",
+        "Sorcerers/Bards with metamagic",
+        "Prepared casters",
+        "Stacking",
+        "Antimagic Field",
+        "Dead Magic Zone"
       ],
       "formats": [],
       "chars": 7731
     }
   },
   "domain_index": {
-    "classes": [
+    "factions": [
       "SKILL",
-      "campaign-artifacts",
-      "campaign-dm-strategy",
-      "campaign-party",
-      "campaign-story-arcs",
-      "classes",
-      "combat",
       "dm-expansion-toolkit",
       "forgotten-realms",
       "fr-artifacts",
-      "fr-deities-complete",
+      "fr-factions",
+      "fr-feats",
+      "fr-history",
+      "fr-prestige-classes",
+      "fr-regions-complete"
+    ],
+    "prestige_classes": [
+      "SKILL",
+      "campaign-party",
+      "classes",
+      "dm-expansion-toolkit",
+      "forgotten-realms",
+      "fr-artifacts",
       "fr-factions",
       "fr-feats",
       "fr-prestige-classes",
-      "fr-races-complete",
-      "fr-regions-complete",
-      "resources",
-      "spells"
-    ],
-    "dm_tools": [
-      "SKILL",
-      "campaign-party",
-      "campaign-story-arcs",
-      "dm-expansion-toolkit",
-      "fr-cannath-vale",
-      "fr-factions",
-      "resources"
+      "fr-regions-complete"
     ],
     "monsters": [
       "SKILL",
       "campaign-artifacts",
       "campaign-party",
       "campaign-story-arcs",
-      "dm-expansion-toolkit",
-      "fr-races-complete",
-      "fr-regions-complete",
-      "monsters",
-      "resources",
-      "spells"
-    ],
-    "combat": [
-      "SKILL",
-      "campaign-artifacts",
-      "campaign-party",
-      "campaign-story-arcs",
       "classes",
-      "combat",
-      "core-mechanics",
       "dm-expansion-toolkit",
       "fr-artifacts",
       "fr-cannath-vale",
       "fr-deities-complete",
       "fr-factions",
       "fr-feats",
+      "fr-history",
       "fr-prestige-classes",
       "fr-races-complete",
       "fr-regions-complete",
@@ -1262,12 +1882,26 @@
       "resources",
       "spells"
     ],
-    "regions": [
+    "party": [
       "SKILL",
+      "campaign-artifacts",
+      "campaign-dm-strategy",
+      "campaign-party",
+      "campaign-story-arcs",
+      "fr-artifacts",
+      "fr-cannath-vale",
+      "fr-factions"
+    ],
+    "items": [
+      "SKILL",
+      "campaign-artifacts",
+      "campaign-party",
+      "classes",
+      "combat",
+      "core-mechanics",
       "dm-expansion-toolkit",
       "forgotten-realms",
       "fr-artifacts",
-      "fr-cannath-vale",
       "fr-deities-complete",
       "fr-factions",
       "fr-feats",
@@ -1275,37 +1909,10 @@
       "fr-prestige-classes",
       "fr-races-complete",
       "fr-regions-complete",
-      "resources"
-    ],
-    "artifacts_fr": [
-      "SKILL",
-      "fr-artifacts",
-      "fr-deities-complete",
-      "fr-factions",
-      "fr-history",
-      "fr-prestige-classes",
-      "fr-regions-complete"
-    ],
-    "fr_feats": [
-      "SKILL",
-      "fr-feats",
-      "fr-prestige-classes",
-      "fr-races-complete",
-      "fr-regions-complete"
-    ],
-    "feats": [
-      "SKILL",
-      "classes",
-      "core-mechanics",
-      "forgotten-realms",
-      "fr-deities-complete",
-      "fr-feats",
-      "fr-history",
-      "fr-prestige-classes",
-      "fr-races-complete",
-      "fr-regions-complete",
+      "items",
       "monsters",
-      "resources"
+      "resources",
+      "spells"
     ],
     "core_mechanics": [
       "SKILL",
@@ -1332,42 +1939,33 @@
       "resources",
       "spells"
     ],
-    "history": [
+    "fr_feats": [
+      "SKILL",
+      "fr-feats",
+      "fr-prestige-classes",
+      "fr-races-complete",
+      "fr-regions-complete"
+    ],
+    "deities": [
       "SKILL",
       "campaign-artifacts",
       "campaign-party",
+      "classes",
+      "dm-expansion-toolkit",
       "forgotten-realms",
       "fr-artifacts",
       "fr-cannath-vale",
       "fr-deities-complete",
       "fr-factions",
+      "fr-feats",
       "fr-history",
+      "fr-prestige-classes",
+      "fr-races-complete",
       "fr-regions-complete",
       "resources"
     ],
-    "resources": [
+    "dm_tools": [
       "SKILL",
-      "dm-expansion-toolkit",
-      "forgotten-realms",
-      "fr-deities-complete",
-      "fr-regions-complete",
-      "resources",
-      "spells"
-    ],
-    "prestige_classes": [
-      "SKILL",
-      "campaign-party",
-      "dm-expansion-toolkit",
-      "forgotten-realms",
-      "fr-artifacts",
-      "fr-factions",
-      "fr-feats",
-      "fr-prestige-classes",
-      "fr-regions-complete"
-    ],
-    "map_locations": [
-      "SKILL",
-      "campaign-artifacts",
       "campaign-party",
       "campaign-story-arcs",
       "dm-expansion-toolkit",
@@ -1398,23 +1996,20 @@
       "resources",
       "spells"
     ],
-    "meta": [
-      "SKILL"
-    ],
-    "items": [
+    "combat": [
       "SKILL",
       "campaign-artifacts",
       "campaign-party",
+      "campaign-story-arcs",
       "classes",
       "combat",
       "core-mechanics",
       "dm-expansion-toolkit",
-      "forgotten-realms",
       "fr-artifacts",
+      "fr-cannath-vale",
       "fr-deities-complete",
       "fr-factions",
       "fr-feats",
-      "fr-history",
       "fr-prestige-classes",
       "fr-races-complete",
       "fr-regions-complete",
@@ -1423,20 +2018,16 @@
       "resources",
       "spells"
     ],
-    "deities": [
+    "history": [
       "SKILL",
       "campaign-artifacts",
       "campaign-party",
-      "dm-expansion-toolkit",
       "forgotten-realms",
       "fr-artifacts",
       "fr-cannath-vale",
       "fr-deities-complete",
       "fr-factions",
-      "fr-feats",
       "fr-history",
-      "fr-prestige-classes",
-      "fr-races-complete",
       "fr-regions-complete",
       "resources"
     ],
@@ -1445,6 +2036,7 @@
       "campaign-artifacts",
       "campaign-party",
       "campaign-story-arcs",
+      "classes",
       "dm-expansion-toolkit",
       "forgotten-realms",
       "fr-artifacts",
@@ -1455,50 +2047,47 @@
       "fr-prestige-classes",
       "fr-races-complete",
       "fr-regions-complete",
+      "items",
+      "monsters",
       "resources"
     ],
-    "party": [
+    "resources": [
+      "SKILL",
+      "dm-expansion-toolkit",
+      "forgotten-realms",
+      "fr-deities-complete",
+      "fr-regions-complete",
+      "resources",
+      "spells"
+    ],
+    "artifacts_fr": [
+      "SKILL",
+      "fr-artifacts",
+      "fr-deities-complete",
+      "fr-factions",
+      "fr-history",
+      "fr-prestige-classes",
+      "fr-regions-complete"
+    ],
+    "classes": [
       "SKILL",
       "campaign-artifacts",
       "campaign-dm-strategy",
       "campaign-party",
       "campaign-story-arcs",
-      "fr-artifacts",
-      "fr-cannath-vale",
-      "fr-factions"
-    ],
-    "npcs": [
-      "SKILL",
-      "campaign-artifacts",
-      "campaign-party",
-      "campaign-story-arcs",
-      "fr-cannath-vale",
-      "fr-factions"
-    ],
-    "skills_system": [
-      "SKILL",
-      "campaign-artifacts",
       "classes",
       "combat",
-      "core-mechanics",
+      "dm-expansion-toolkit",
       "forgotten-realms",
+      "fr-artifacts",
+      "fr-deities-complete",
       "fr-factions",
       "fr-feats",
       "fr-prestige-classes",
       "fr-races-complete",
-      "monsters",
-      "resources"
-    ],
-    "factions": [
-      "SKILL",
-      "dm-expansion-toolkit",
-      "forgotten-realms",
-      "fr-artifacts",
-      "fr-factions",
-      "fr-feats",
-      "fr-history",
-      "fr-prestige-classes",
-      "fr-regions-complete"
+      "fr-regions-complete",
+      "resources",
+      "spells"
     ],
     "campaign_artifacts": [
       "SKILL",
@@ -1532,8 +2121,87 @@
       "fr-prestige-classes",
       "fr-races-complete",
       "fr-regions-complete",
+      "monsters",
       "resources",
       "spells"
+    ],
+    "regions": [
+      "SKILL",
+      "classes",
+      "dm-expansion-toolkit",
+      "forgotten-realms",
+      "fr-artifacts",
+      "fr-cannath-vale",
+      "fr-deities-complete",
+      "fr-factions",
+      "fr-feats",
+      "fr-history",
+      "fr-prestige-classes",
+      "fr-races-complete",
+      "fr-regions-complete",
+      "resources"
+    ],
+    "skills_system": [
+      "SKILL",
+      "campaign-artifacts",
+      "classes",
+      "combat",
+      "core-mechanics",
+      "forgotten-realms",
+      "fr-factions",
+      "fr-feats",
+      "fr-prestige-classes",
+      "fr-races-complete",
+      "monsters",
+      "resources"
+    ],
+    "feats": [
+      "SKILL",
+      "classes",
+      "core-mechanics",
+      "forgotten-realms",
+      "fr-deities-complete",
+      "fr-feats",
+      "fr-history",
+      "fr-prestige-classes",
+      "fr-races-complete",
+      "fr-regions-complete",
+      "items",
+      "monsters",
+      "resources"
+    ],
+    "meta": [
+      "SKILL"
+    ],
+    "npcs": [
+      "SKILL",
+      "campaign-artifacts",
+      "campaign-party",
+      "campaign-story-arcs",
+      "fr-cannath-vale",
+      "fr-factions",
+      "fr-prestige-classes",
+      "items",
+      "monsters"
+    ],
+    "map_locations": [
+      "SKILL",
+      "campaign-artifacts",
+      "campaign-party",
+      "campaign-story-arcs",
+      "dm-expansion-toolkit",
+      "fr-cannath-vale",
+      "fr-factions",
+      "items",
+      "monsters",
+      "resources"
+    ],
+    "psionics": [
+      "campaign-party",
+      "campaign-story-arcs",
+      "fr-prestige-classes",
+      "items",
+      "monsters"
     ]
   },
   "keyword_index": {
@@ -1601,7 +2269,8 @@
       "SKILL"
     ],
     "prestige classes": [
-      "SKILL"
+      "SKILL",
+      "classes"
     ],
     "feats": [
       "SKILL",
@@ -1614,6 +2283,7 @@
       "fr-prestige-classes",
       "fr-races-complete",
       "fr-regions-complete",
+      "items",
       "monsters",
       "resources"
     ],
@@ -1639,61 +2309,161 @@
       "SKILL",
       "campaign-party"
     ],
-    "classes": [
+    "player profiles & dm strategy": [
+      "SKILL"
+    ],
+    "campaign artifacts": [
+      "SKILL"
+    ],
+    "campaign story arcs": [
+      "SKILL"
+    ],
+    "campaign factions": [
+      "SKILL"
+    ],
+    "underdark geography": [
+      "SKILL"
+    ],
+    "everything resolves this way.\n-": [
+      "SKILL"
+    ],
+    "actions cost action economy.": [
+      "SKILL"
+    ],
+    "raw vs. rai.": [
+      "SKILL"
+    ],
+    "formula:": [
+      "SKILL"
+    ],
+    "three": [
+      "SKILL"
+    ],
+    "fortitude": [
+      "SKILL"
+    ],
+    "reflex": [
+      "SKILL"
+    ],
+    "will": [
+      "SKILL"
+    ],
+    "choose race": [
+      "SKILL"
+    ],
+    "assign ability scores": [
+      "SKILL"
+    ],
+    "choose class(es)": [
+      "SKILL"
+    ],
+    "apply racial modifiers": [
+      "SKILL"
+    ],
+    "allocate skill points": [
+      "SKILL"
+    ],
+    "choose feats": [
+      "SKILL"
+    ],
+    "buy equipment": [
+      "SKILL"
+    ],
+    "calculate derived stats": [
+      "SKILL"
+    ],
+    "iterative attacks": [
+      "SKILL"
+    ],
+    "class skill": [
+      "SKILL"
+    ],
+    "cross-class skill": [
+      "SKILL"
+    ],
+    "cost": [
       "SKILL",
-      "campaign-artifacts",
-      "campaign-dm-strategy",
-      "campaign-party",
-      "campaign-story-arcs",
-      "classes",
-      "combat",
+      "items"
+    ],
+    "untrained": [
+      "SKILL"
+    ],
+    "take 10": [
+      "SKILL"
+    ],
+    "take 20": [
+      "SKILL"
+    ],
+    "non-srd content": [
+      "SKILL"
+    ],
+    "exact srd text": [
+      "SKILL"
+    ],
+    "spell/feat not in training data": [
+      "SKILL"
+    ],
+    "for rules questions:": [
+      "SKILL"
+    ],
+    "rule:": [
+      "SKILL"
+    ],
+    "source:": [
+      "SKILL",
+      "campaign-artifacts"
+    ],
+    "example:": [
+      "SKILL"
+    ],
+    "edge cases / common mistakes:": [
+      "SKILL"
+    ],
+    "for spell lookups:": [
+      "SKILL"
+    ],
+    "for monster stat blocks": [
+      "SKILL"
+    ],
+    "for lore / forgotten realms:": [
+      "SKILL"
+    ],
+    "factions": [
+      "SKILL",
       "dm-expansion-toolkit",
       "forgotten-realms",
       "fr-artifacts",
-      "fr-deities-complete",
+      "fr-factions",
+      "fr-feats",
+      "fr-history",
+      "fr-prestige-classes",
+      "fr-regions-complete"
+    ],
+    "prestige_classes": [
+      "SKILL",
+      "campaign-party",
+      "classes",
+      "dm-expansion-toolkit",
+      "forgotten-realms",
+      "fr-artifacts",
       "fr-factions",
       "fr-feats",
       "fr-prestige-classes",
-      "fr-races-complete",
-      "fr-regions-complete",
-      "resources",
-      "spells"
-    ],
-    "dm_tools": [
-      "SKILL",
-      "campaign-party",
-      "campaign-story-arcs",
-      "dm-expansion-toolkit",
-      "fr-cannath-vale",
-      "fr-factions",
-      "resources"
+      "fr-regions-complete"
     ],
     "monsters": [
       "SKILL",
       "campaign-artifacts",
       "campaign-party",
       "campaign-story-arcs",
-      "dm-expansion-toolkit",
-      "fr-races-complete",
-      "fr-regions-complete",
-      "monsters",
-      "resources",
-      "spells"
-    ],
-    "combat": [
-      "SKILL",
-      "campaign-artifacts",
-      "campaign-party",
-      "campaign-story-arcs",
       "classes",
-      "combat",
-      "core-mechanics",
       "dm-expansion-toolkit",
       "fr-artifacts",
       "fr-cannath-vale",
       "fr-deities-complete",
       "fr-factions",
       "fr-feats",
+      "fr-history",
       "fr-prestige-classes",
       "fr-races-complete",
       "fr-regions-complete",
@@ -1702,12 +2472,26 @@
       "resources",
       "spells"
     ],
-    "regions": [
+    "party": [
       "SKILL",
+      "campaign-artifacts",
+      "campaign-dm-strategy",
+      "campaign-party",
+      "campaign-story-arcs",
+      "fr-artifacts",
+      "fr-cannath-vale",
+      "fr-factions"
+    ],
+    "items": [
+      "SKILL",
+      "campaign-artifacts",
+      "campaign-party",
+      "classes",
+      "combat",
+      "core-mechanics",
       "dm-expansion-toolkit",
       "forgotten-realms",
       "fr-artifacts",
-      "fr-cannath-vale",
       "fr-deities-complete",
       "fr-factions",
       "fr-feats",
@@ -1715,23 +2499,10 @@
       "fr-prestige-classes",
       "fr-races-complete",
       "fr-regions-complete",
-      "resources"
-    ],
-    "artifacts_fr": [
-      "SKILL",
-      "fr-artifacts",
-      "fr-deities-complete",
-      "fr-factions",
-      "fr-history",
-      "fr-prestige-classes",
-      "fr-regions-complete"
-    ],
-    "fr_feats": [
-      "SKILL",
-      "fr-feats",
-      "fr-prestige-classes",
-      "fr-races-complete",
-      "fr-regions-complete"
+      "items",
+      "monsters",
+      "resources",
+      "spells"
     ],
     "core_mechanics": [
       "SKILL",
@@ -1758,43 +2529,33 @@
       "resources",
       "spells"
     ],
-    "history": [
+    "fr_feats": [
+      "SKILL",
+      "fr-feats",
+      "fr-prestige-classes",
+      "fr-races-complete",
+      "fr-regions-complete"
+    ],
+    "deities": [
       "SKILL",
       "campaign-artifacts",
       "campaign-party",
+      "classes",
+      "dm-expansion-toolkit",
       "forgotten-realms",
       "fr-artifacts",
       "fr-cannath-vale",
       "fr-deities-complete",
       "fr-factions",
+      "fr-feats",
       "fr-history",
+      "fr-prestige-classes",
+      "fr-races-complete",
       "fr-regions-complete",
       "resources"
     ],
-    "resources": [
+    "dm_tools": [
       "SKILL",
-      "dm-expansion-toolkit",
-      "forgotten-realms",
-      "fr-deities-complete",
-      "fr-factions",
-      "fr-regions-complete",
-      "resources",
-      "spells"
-    ],
-    "prestige_classes": [
-      "SKILL",
-      "campaign-party",
-      "dm-expansion-toolkit",
-      "forgotten-realms",
-      "fr-artifacts",
-      "fr-factions",
-      "fr-feats",
-      "fr-prestige-classes",
-      "fr-regions-complete"
-    ],
-    "map_locations": [
-      "SKILL",
-      "campaign-artifacts",
       "campaign-party",
       "campaign-story-arcs",
       "dm-expansion-toolkit",
@@ -1825,23 +2586,20 @@
       "resources",
       "spells"
     ],
-    "meta": [
-      "SKILL"
-    ],
-    "items": [
+    "combat": [
       "SKILL",
       "campaign-artifacts",
       "campaign-party",
+      "campaign-story-arcs",
       "classes",
       "combat",
       "core-mechanics",
       "dm-expansion-toolkit",
-      "forgotten-realms",
       "fr-artifacts",
+      "fr-cannath-vale",
       "fr-deities-complete",
       "fr-factions",
       "fr-feats",
-      "fr-history",
       "fr-prestige-classes",
       "fr-races-complete",
       "fr-regions-complete",
@@ -1850,20 +2608,16 @@
       "resources",
       "spells"
     ],
-    "deities": [
+    "history": [
       "SKILL",
       "campaign-artifacts",
       "campaign-party",
-      "dm-expansion-toolkit",
       "forgotten-realms",
       "fr-artifacts",
       "fr-cannath-vale",
       "fr-deities-complete",
       "fr-factions",
-      "fr-feats",
       "fr-history",
-      "fr-prestige-classes",
-      "fr-races-complete",
       "fr-regions-complete",
       "resources"
     ],
@@ -1872,6 +2626,7 @@
       "campaign-artifacts",
       "campaign-party",
       "campaign-story-arcs",
+      "classes",
       "dm-expansion-toolkit",
       "forgotten-realms",
       "fr-artifacts",
@@ -1882,50 +2637,48 @@
       "fr-prestige-classes",
       "fr-races-complete",
       "fr-regions-complete",
+      "items",
+      "monsters",
       "resources"
     ],
-    "party": [
+    "resources": [
+      "SKILL",
+      "dm-expansion-toolkit",
+      "forgotten-realms",
+      "fr-deities-complete",
+      "fr-factions",
+      "fr-regions-complete",
+      "resources",
+      "spells"
+    ],
+    "artifacts_fr": [
+      "SKILL",
+      "fr-artifacts",
+      "fr-deities-complete",
+      "fr-factions",
+      "fr-history",
+      "fr-prestige-classes",
+      "fr-regions-complete"
+    ],
+    "classes": [
       "SKILL",
       "campaign-artifacts",
       "campaign-dm-strategy",
       "campaign-party",
       "campaign-story-arcs",
-      "fr-artifacts",
-      "fr-cannath-vale",
-      "fr-factions"
-    ],
-    "npcs": [
-      "SKILL",
-      "campaign-artifacts",
-      "campaign-party",
-      "campaign-story-arcs",
-      "fr-cannath-vale",
-      "fr-factions"
-    ],
-    "skills_system": [
-      "SKILL",
-      "campaign-artifacts",
       "classes",
       "combat",
-      "core-mechanics",
+      "dm-expansion-toolkit",
       "forgotten-realms",
+      "fr-artifacts",
+      "fr-deities-complete",
       "fr-factions",
       "fr-feats",
       "fr-prestige-classes",
       "fr-races-complete",
-      "monsters",
-      "resources"
-    ],
-    "factions": [
-      "SKILL",
-      "dm-expansion-toolkit",
-      "forgotten-realms",
-      "fr-artifacts",
-      "fr-factions",
-      "fr-feats",
-      "fr-history",
-      "fr-prestige-classes",
-      "fr-regions-complete"
+      "fr-regions-complete",
+      "resources",
+      "spells"
     ],
     "campaign_artifacts": [
       "SKILL",
@@ -1959,8 +2712,65 @@
       "fr-prestige-classes",
       "fr-races-complete",
       "fr-regions-complete",
+      "monsters",
       "resources",
       "spells"
+    ],
+    "regions": [
+      "SKILL",
+      "classes",
+      "dm-expansion-toolkit",
+      "forgotten-realms",
+      "fr-artifacts",
+      "fr-cannath-vale",
+      "fr-deities-complete",
+      "fr-factions",
+      "fr-feats",
+      "fr-history",
+      "fr-prestige-classes",
+      "fr-races-complete",
+      "fr-regions-complete",
+      "resources"
+    ],
+    "skills_system": [
+      "SKILL",
+      "campaign-artifacts",
+      "classes",
+      "combat",
+      "core-mechanics",
+      "forgotten-realms",
+      "fr-factions",
+      "fr-feats",
+      "fr-prestige-classes",
+      "fr-races-complete",
+      "monsters",
+      "resources"
+    ],
+    "meta": [
+      "SKILL"
+    ],
+    "npcs": [
+      "SKILL",
+      "campaign-artifacts",
+      "campaign-party",
+      "campaign-story-arcs",
+      "fr-cannath-vale",
+      "fr-factions",
+      "fr-prestige-classes",
+      "items",
+      "monsters"
+    ],
+    "map_locations": [
+      "SKILL",
+      "campaign-artifacts",
+      "campaign-party",
+      "campaign-story-arcs",
+      "dm-expansion-toolkit",
+      "fr-cannath-vale",
+      "fr-factions",
+      "items",
+      "monsters",
+      "resources"
     ],
     "rumblingstone campaign — artifacts reference (d&d 3.5)": [
       "campaign-artifacts"
@@ -2032,6 +2842,265 @@
     "material:": [
       "campaign-artifacts"
     ],
+    "prerequisites:": [
+      "campaign-artifacts"
+    ],
+    "stone's awareness (su, cl 5):": [
+      "campaign-artifacts"
+    ],
+    "crown of protection (ex, cl 6):": [
+      "campaign-artifacts"
+    ],
+    "moradin's insight (su):": [
+      "campaign-artifacts"
+    ],
+    "adamantine will (su):": [
+      "campaign-artifacts"
+    ],
+    "mantle of stone and spirit (su):": [
+      "campaign-artifacts"
+    ],
+    "immutable time": [
+      "campaign-artifacts"
+    ],
+    "true earth": [
+      "campaign-artifacts"
+    ],
+    "dwarven might": [
+      "campaign-artifacts"
+    ],
+    "forge's defense": [
+      "campaign-artifacts"
+    ],
+    "trial of the deep hall": [
+      "campaign-artifacts"
+    ],
+    "anvil of the world": [
+      "campaign-artifacts"
+    ],
+    "siege of the eternal forge": [
+      "campaign-artifacts"
+    ],
+    "rejected": [
+      "campaign-artifacts"
+    ],
+    "market price:": [
+      "campaign-artifacts"
+    ],
+    "superior darkvision:": [
+      "campaign-artifacts"
+    ],
+    "forged knowledge:": [
+      "campaign-artifacts"
+    ],
+    "aura of diplomacy:": [
+      "campaign-artifacts"
+    ],
+    "dual flame blessing:": [
+      "campaign-artifacts"
+    ],
+    "wings of shadow (at-will):": [
+      "campaign-artifacts"
+    ],
+    "shadow step (su, 1/5 rounds):": [
+      "campaign-artifacts"
+    ],
+    "light of lathander (sp, 1/day):": [
+      "campaign-artifacts"
+    ],
+    "shadow of mask (sp, 1/day):": [
+      "campaign-artifacts"
+    ],
+    "unity's gift (su, 1/day):": [
+      "campaign-artifacts"
+    ],
+    "firestorm invocation (sp, 1/day):": [
+      "campaign-artifacts"
+    ],
+    "dawn's defiance (su):": [
+      "campaign-artifacts"
+    ],
+    "solar purge (su):": [
+      "campaign-artifacts"
+    ],
+    "crown + ring (passive):": [
+      "campaign-artifacts"
+    ],
+    "crown + ring (active, 1/day):": [
+      "campaign-artifacts"
+    ],
+    "aegis + ring (dark dawn strike, 1/day):": [
+      "campaign-artifacts"
+    ],
+    "intelligence (full):": [
+      "campaign-artifacts"
+    ],
+    "dragon bane (dragon doom):": [
+      "campaign-artifacts"
+    ],
+    "power attack mastery:": [
+      "campaign-artifacts"
+    ],
+    "pugno di moradin (3/day, su):": [
+      "campaign-artifacts"
+    ],
+    "colpi del fuoco (3/day, su):": [
+      "campaign-artifacts"
+    ],
+    "cuore di brace:": [
+      "campaign-artifacts"
+    ],
+    "salto infuocato (3/day, su):": [
+      "campaign-artifacts"
+    ],
+    "jump bonus:": [
+      "campaign-artifacts"
+    ],
+    "sentient voice:": [
+      "campaign-artifacts"
+    ],
+    "pelle di scorie e pietra:": [
+      "campaign-artifacts"
+    ],
+    "pugno frana (3/day, su):": [
+      "campaign-artifacts"
+    ],
+    "ancoraggio della montagna (2/day, su):": [
+      "campaign-artifacts"
+    ],
+    "tremore del forgiatore (1/day, su):": [
+      "campaign-artifacts"
+    ],
+    "vista della galleria:": [
+      "campaign-artifacts"
+    ],
+    "martello di fuoco e pietra:": [
+      "campaign-artifacts"
+    ],
+    "cammino nella tempesta di macerie:": [
+      "campaign-artifacts"
+    ],
+    "origin:": [
+      "campaign-artifacts"
+    ],
+    "saggezza della terra:": [
+      "campaign-artifacts"
+    ],
+    "armatura naturale:": [
+      "campaign-artifacts"
+    ],
+    "avatar della radice (1/day):": [
+      "campaign-artifacts"
+    ],
+    "evocazione dei guardiani (3/day):": [
+      "campaign-artifacts"
+    ],
+    "size:": [
+      "campaign-artifacts"
+    ],
+    "hp:": [
+      "campaign-artifacts"
+    ],
+    "ac:": [
+      "campaign-artifacts"
+    ],
+    "speed:": [
+      "campaign-artifacts"
+    ],
+    "attacks:": [
+      "campaign-artifacts"
+    ],
+    "siegebreaker:": [
+      "campaign-artifacts"
+    ],
+    "adamantine traits:": [
+      "campaign-artifacts"
+    ],
+    "pelle di adamantio:": [
+      "campaign-artifacts"
+    ],
+    "timeless body:": [
+      "campaign-artifacts"
+    ],
+    "spontaneous rebirth (1/day):": [
+      "campaign-artifacts"
+    ],
+    "dual type:": [
+      "campaign-artifacts"
+    ],
+    "fire vulnerability:": [
+      "campaign-artifacts"
+    ],
+    "cold resistance 10": [
+      "campaign-artifacts"
+    ],
+    "regeneration 1:": [
+      "campaign-artifacts"
+    ],
+    "plant empathy:": [
+      "campaign-artifacts"
+    ],
+    "photosynthesis:": [
+      "campaign-artifacts"
+    ],
+    "root anchoring (1/day, sp):": [
+      "campaign-artifacts"
+    ],
+    "cuore di moradin": [
+      "campaign-artifacts"
+    ],
+    "sala della forgia eterna": [
+      "campaign-artifacts"
+    ],
+    "rituale cuore di moradin": [
+      "campaign-artifacts"
+    ],
+    "resurrection enabler:": [
+      "campaign-artifacts"
+    ],
+    "moradin's presence:": [
+      "campaign-artifacts"
+    ],
+    "gem synergy catalyst:": [
+      "campaign-artifacts"
+    ],
+    "il collezionista": [
+      "campaign-artifacts",
+      "campaign-party",
+      "fr-factions"
+    ],
+    "strange and pure evil artifacts": [
+      "campaign-artifacts",
+      "fr-factions"
+    ],
+    "therysol": [
+      "campaign-artifacts",
+      "campaign-party"
+    ],
+    "cl:": [
+      "campaign-artifacts"
+    ],
+    "scenic": [
+      "campaign-artifacts"
+    ],
+    "activation:": [
+      "campaign-artifacts"
+    ],
+    "effect per gate:": [
+      "campaign-artifacts"
+    ],
+    "cost per gate:": [
+      "campaign-artifacts"
+    ],
+    "gate progression:": [
+      "campaign-artifacts"
+    ],
+    "lethal": [
+      "campaign-artifacts"
+    ],
+    "disintegration": [
+      "campaign-artifacts"
+    ],
     "masterizzare per adulti (over 40) - profilo giocatori e design della campagna": [
       "campaign-dm-strategy"
     ],
@@ -2101,6 +3170,36 @@
     "il loot \"sporco\":": [
       "campaign-dm-strategy"
     ],
+    "la rinascita epica:": [
+      "campaign-dm-strategy"
+    ],
+    "l'ascolto della storia:": [
+      "campaign-dm-strategy"
+    ],
+    "vivid experience": [
+      "campaign-dm-strategy"
+    ],
+    "che non possono abbattere con le spade": [
+      "campaign-dm-strategy"
+    ],
+    "esempio pratico (il conte valerius):": [
+      "campaign-dm-strategy"
+    ],
+    "errato": [
+      "campaign-dm-strategy"
+    ],
+    "design a dilemma (triangolo di rischio):": [
+      "campaign-dm-strategy"
+    ],
+    "paga l'artefatto della terra:": [
+      "campaign-dm-strategy"
+    ],
+    "resurrezione & shop:": [
+      "campaign-dm-strategy"
+    ],
+    "il ritorno sociale:": [
+      "campaign-dm-strategy"
+    ],
     "the rumbling stone — party reference (d&d 3.5)": [
       "campaign-party"
     ],
@@ -2153,10 +3252,12 @@
       "campaign-party"
     ],
     "aegis fang": [
-      "campaign-party"
+      "campaign-party",
+      "fr-artifacts"
     ],
     "corona di adamantio": [
-      "campaign-party"
+      "campaign-party",
+      "fr-artifacts"
     ],
     "key events:": [
       "campaign-party"
@@ -2166,6 +3267,157 @@
     ],
     "key artifact:": [
       "campaign-party"
+    ],
+    "bracieri gemelli di moradin": [
+      "campaign-party",
+      "fr-artifacts"
+    ],
+    "upcoming — tournament at dauth:": [
+      "campaign-party"
+    ],
+    "orbe delle otto porte": [
+      "campaign-party"
+    ],
+    "githyanki red dragon aerial attack": [
+      "campaign-party"
+    ],
+    "chakra enlightenment": [
+      "campaign-party"
+    ],
+    "salto infuocato": [
+      "campaign-party"
+    ],
+    "treant hybrid": [
+      "campaign-party"
+    ],
+    "collana dei semi eterni": [
+      "campaign-party",
+      "fr-artifacts"
+    ],
+    "nano/treant hybrid": [
+      "campaign-party"
+    ],
+    "ring of chaotic illumination (reforged)": [
+      "campaign-party",
+      "fr-artifacts"
+    ],
+    "upcoming — invisible tower quest:": [
+      "campaign-party"
+    ],
+    "zalkatar": [
+      "campaign-party"
+    ],
+    "no rogue": [
+      "campaign-party"
+    ],
+    "trap detection/bypass:": [
+      "campaign-party"
+    ],
+    "arcane needs:": [
+      "campaign-party"
+    ],
+    "divine power:": [
+      "campaign-party"
+    ],
+    "tank mode:": [
+      "campaign-party"
+    ],
+    "healing emergency:": [
+      "campaign-party"
+    ],
+    "front:": [
+      "campaign-party"
+    ],
+    "mid:": [
+      "campaign-party"
+    ],
+    "back:": [
+      "campaign-party"
+    ],
+    "divine trinity": [
+      "campaign-party"
+    ],
+    "dark dawn strike": [
+      "campaign-party"
+    ],
+    "paradox blessing": [
+      "campaign-party"
+    ],
+    "moradin": [
+      "campaign-party",
+      "fr-deities-complete"
+    ],
+    "hammerfist king": [
+      "campaign-party"
+    ],
+    "minotaur lair": [
+      "campaign-party"
+    ],
+    "escaped": [
+      "campaign-party",
+      "campaign-story-arcs",
+      "fr-cannath-vale"
+    ],
+    "01_laminiera": [
+      "campaign-party"
+    ],
+    "02_scaladossa-abbattor-funghi": [
+      "campaign-party"
+    ],
+    "03_la cittadella": [
+      "campaign-party"
+    ],
+    "04_tomba_di_belkram": [
+      "campaign-party"
+    ],
+    "05_aa-stanza-runica": [
+      "campaign-party"
+    ],
+    "06_stanza-corona-di-adamantio": [
+      "campaign-party"
+    ],
+    "07_il portale della forgia eterna": [
+      "campaign-party"
+    ],
+    "08_la battaglia di hammerfist": [
+      "campaign-party"
+    ],
+    "09_continuazione arco narrativo": [
+      "campaign-party"
+    ],
+    "earth node": [
+      "campaign-party"
+    ],
+    "artemis — torre invisibile (p2a):": [
+      "campaign-party"
+    ],
+    "tordek — torneo epico di dauth (p2b):": [
+      "campaign-party"
+    ],
+    "phase 0 — notte dei drow:": [
+      "campaign-party"
+    ],
+    "phase 1 — assedio:": [
+      "campaign-party"
+    ],
+    "phase 2 — ritualisti draconici:": [
+      "campaign-party"
+    ],
+    "phase 3 — azarr kul & avatar:": [
+      "campaign-party"
+    ],
+    "phase 4 — circolo degli otto & mythal:": [
+      "campaign-party"
+    ],
+    "allied reinforcements:": [
+      "campaign-party"
+    ],
+    "psionics": [
+      "campaign-party",
+      "campaign-story-arcs",
+      "fr-prestige-classes",
+      "items",
+      "monsters"
     ],
     "rumblingstone campaign — story arc reference (agent navigation)": [
       "campaign-story-arcs"
@@ -2215,9 +3467,6 @@
     "hella dies": [
       "campaign-story-arcs"
     ],
-    "escaped": [
-      "campaign-story-arcs"
-    ],
     "conditional": [
       "campaign-story-arcs"
     ],
@@ -2231,6 +3480,33 @@
       "campaign-story-arcs"
     ],
     "no:": [
+      "campaign-story-arcs"
+    ],
+    "win:": [
+      "campaign-story-arcs"
+    ],
+    "interrupted by githyanki:": [
+      "campaign-story-arcs"
+    ],
+    "pass:": [
+      "campaign-story-arcs"
+    ],
+    "fail:": [
+      "campaign-story-arcs"
+    ],
+    "zalkatar defeated:": [
+      "campaign-story-arcs"
+    ],
+    "zalkatar escapes:": [
+      "campaign-story-arcs"
+    ],
+    "defended:": [
+      "campaign-story-arcs"
+    ],
+    "stolen:": [
+      "campaign-story-arcs"
+    ],
+    "destroyed:": [
       "campaign-story-arcs"
     ],
     "base classes — d&d 3.5 srd reference": [
@@ -2312,6 +3588,164 @@
       "classes"
     ],
     "ac bonus": [
+      "classes"
+    ],
+    "monk speed bonus": [
+      "classes"
+    ],
+    "alignment": [
+      "classes",
+      "fr-factions"
+    ],
+    "divine grace": [
+      "classes"
+    ],
+    "lay on hands": [
+      "classes"
+    ],
+    "aura of courage": [
+      "classes"
+    ],
+    "smite evil": [
+      "classes"
+    ],
+    "turn undead": [
+      "classes"
+    ],
+    "remove disease": [
+      "classes"
+    ],
+    "spellcasting": [
+      "classes"
+    ],
+    "special mount": [
+      "classes"
+    ],
+    "two combat styles": [
+      "classes"
+    ],
+    "archery": [
+      "classes"
+    ],
+    "two-weapon combat": [
+      "classes"
+    ],
+    "favored enemy": [
+      "classes"
+    ],
+    "sneak attack": [
+      "classes"
+    ],
+    "trapfinding": [
+      "classes"
+    ],
+    "evasion": [
+      "classes"
+    ],
+    "trap sense": [
+      "classes"
+    ],
+    "uncanny dodge": [
+      "classes"
+    ],
+    "improved uncanny dodge": [
+      "classes"
+    ],
+    "special abilities": [
+      "classes"
+    ],
+    "key skills": [
+      "classes"
+    ],
+    "spells known": [
+      "classes"
+    ],
+    "familiar": [
+      "classes"
+    ],
+    "bab": [
+      "classes"
+    ],
+    "good saves": [
+      "classes"
+    ],
+    "weapons & armor": [
+      "classes"
+    ],
+    "bonus languages": [
+      "classes"
+    ],
+    "skills": [
+      "classes"
+    ],
+    "spellbook": [
+      "classes"
+    ],
+    "specialist": [
+      "classes"
+    ],
+    "bonus feats": [
+      "classes"
+    ],
+    "schools of magic": [
+      "classes",
+      "spells"
+    ],
+    "opposition schools": [
+      "classes"
+    ],
+    "spells per day": [
+      "classes"
+    ],
+    "xp penalties": [
+      "classes"
+    ],
+    "favored class": [
+      "classes"
+    ],
+    "spellcaster multiclassing": [
+      "classes"
+    ],
+    "warlock": [
+      "classes"
+    ],
+    "warmage": [
+      "classes"
+    ],
+    "wu jen": [
+      "classes"
+    ],
+    "favored soul": [
+      "classes"
+    ],
+    "shugenja": [
+      "classes"
+    ],
+    "spirit shaman": [
+      "classes"
+    ],
+    "hexblade": [
+      "classes"
+    ],
+    "samurai": [
+      "classes"
+    ],
+    "swashbuckler": [
+      "classes"
+    ],
+    "archivist": [
+      "classes"
+    ],
+    "dread necromancer": [
+      "classes"
+    ],
+    "ardent": [
+      "classes"
+    ],
+    "divine mind": [
+      "classes"
+    ],
+    "erudite": [
       "classes"
     ],
     "combat — d&d 3.5 srd reference": [
@@ -2399,6 +3833,24 @@
       "combat"
     ],
     "run": [
+      "combat"
+    ],
+    "cover:": [
+      "combat"
+    ],
+    "concealment (miss chance):": [
+      "combat"
+    ],
+    "massive damage rule (optional)": [
+      "combat"
+    ],
+    "stabilize": [
+      "combat"
+    ],
+    "natural stabilization": [
+      "combat"
+    ],
+    "recovery": [
       "combat"
     ],
     "core mechanics — d&d 3.5 srd reference": [
@@ -2572,6 +4024,102 @@
     "base": [
       "dm-expansion-toolkit"
     ],
+    "expansion layer": [
+      "dm-expansion-toolkit"
+    ],
+    "azarr kul — expanded": [
+      "dm-expansion-toolkit"
+    ],
+    "tiamat's voice": [
+      "dm-expansion-toolkit"
+    ],
+    "five aspects": [
+      "dm-expansion-toolkit"
+    ],
+    "escape contingency": [
+      "dm-expansion-toolkit"
+    ],
+    "if he escapes": [
+      "dm-expansion-toolkit"
+    ],
+    "the lich of vraath hold — expanded": [
+      "dm-expansion-toolkit"
+    ],
+    "netherese-era lich": [
+      "dm-expansion-toolkit"
+    ],
+    "personality": [
+      "dm-expansion-toolkit"
+    ],
+    "motivation": [
+      "dm-expansion-toolkit"
+    ],
+    "expanded negotiation": [
+      "dm-expansion-toolkit"
+    ],
+    "saarvith — expanded (surviving wyrmlord)": [
+      "dm-expansion-toolkit"
+    ],
+    "type": [
+      "dm-expansion-toolkit",
+      "fr-artifacts"
+    ],
+    "suggested party level": [
+      "dm-expansion-toolkit"
+    ],
+    "status": [
+      "dm-expansion-toolkit",
+      "fr-factions"
+    ],
+    "goal": [
+      "dm-expansion-toolkit"
+    ],
+    "dc / cr": [
+      "dm-expansion-toolkit"
+    ],
+    "role": [
+      "dm-expansion-toolkit",
+      "fr-factions"
+    ],
+    "location": [
+      "dm-expansion-toolkit",
+      "fr-artifacts",
+      "fr-factions"
+    ],
+    "secret": [
+      "dm-expansion-toolkit"
+    ],
+    "race/class": [
+      "dm-expansion-toolkit"
+    ],
+    "initiative": [
+      "dm-expansion-toolkit"
+    ],
+    "attack": [
+      "dm-expansion-toolkit"
+    ],
+    "saves": [
+      "dm-expansion-toolkit"
+    ],
+    "special": [
+      "dm-expansion-toolkit"
+    ],
+    "map reference": [
+      "dm-expansion-toolkit"
+    ],
+    "cr breakdown": [
+      "dm-expansion-toolkit"
+    ],
+    "terrain": [
+      "dm-expansion-toolkit"
+    ],
+    "lighting": [
+      "dm-expansion-toolkit"
+    ],
+    "map-a-week": [
+      "dm-expansion-toolkit",
+      "resources"
+    ],
     "forgotten realms — d&d 3.5 lore reference": [
       "forgotten-realms"
     ],
@@ -2666,6 +4214,15 @@
     "myth drannor": [
       "forgotten-realms"
     ],
+    "undermountain": [
+      "forgotten-realms"
+    ],
+    "4th edition event": [
+      "forgotten-realms"
+    ],
+    "1 tenday = 10 days": [
+      "forgotten-realms"
+    ],
     "forgotten realms — artifacts & unique magic items (d&d 3.5)": [
       "fr-artifacts"
     ],
@@ -2673,10 +4230,12 @@
       "fr-artifacts"
     ],
     "the nether scrolls": [
-      "fr-artifacts"
+      "fr-artifacts",
+      "fr-history"
     ],
     "the tablets of fate": [
-      "fr-artifacts"
+      "fr-artifacts",
+      "fr-history"
     ],
     "the hand and eye of vecna": [
       "fr-artifacts"
@@ -2694,9 +4253,6 @@
       "fr-artifacts"
     ],
     "selûne's tear": [
-      "fr-artifacts"
-    ],
-    "type": [
       "fr-artifacts"
     ],
     "origin": [
@@ -2721,6 +4277,30 @@
       "fr-artifacts"
     ],
     "note": [
+      "fr-artifacts"
+    ],
+    "bonding": [
+      "fr-artifacts"
+    ],
+    "powers (example — arilyn moonblade)": [
+      "fr-artifacts"
+    ],
+    "cultural markers": [
+      "fr-artifacts"
+    ],
+    "red hand of doom specific items": [
+      "fr-artifacts"
+    ],
+    "pricing reference": [
+      "fr-artifacts"
+    ],
+    "5 custom pc artifacts": [
+      "fr-artifacts"
+    ],
+    "aegis fang + corona:": [
+      "fr-artifacts"
+    ],
+    "ring + corona:": [
       "fr-artifacts"
     ],
     "cannath vale — campaign setting reference": [
@@ -2813,6 +4393,155 @@
     "the north wall": [
       "fr-cannath-vale"
     ],
+    "not": [
+      "fr-cannath-vale"
+    ],
+    "lake lhespen": [
+      "fr-cannath-vale"
+    ],
+    "shaar river": [
+      "fr-cannath-vale"
+    ],
+    "talar river": [
+      "fr-cannath-vale"
+    ],
+    "\"talar river\"": [
+      "fr-cannath-vale"
+    ],
+    "the lhescreek": [
+      "fr-cannath-vale"
+    ],
+    "the witchstream": [
+      "fr-cannath-vale"
+    ],
+    "cannath river": [
+      "fr-cannath-vale"
+    ],
+    "lhesper trail": [
+      "fr-cannath-vale"
+    ],
+    "old north road": [
+      "fr-cannath-vale"
+    ],
+    "the dwarfroad": [
+      "fr-cannath-vale"
+    ],
+    "the dawn way": [
+      "fr-cannath-vale"
+    ],
+    "lhesper": [
+      "fr-cannath-vale"
+    ],
+    "kormul": [
+      "fr-cannath-vale"
+    ],
+    "is on map": [
+      "fr-cannath-vale"
+    ],
+    "skull gorge": [
+      "fr-cannath-vale"
+    ],
+    "vraath keep": [
+      "fr-cannath-vale"
+    ],
+    "retained": [
+      "fr-cannath-vale"
+    ],
+    "fane of tiamat": [
+      "fr-cannath-vale"
+    ],
+    "drellin's ferry": [
+      "fr-cannath-vale"
+    ],
+    "hammerfist holds": [
+      "fr-cannath-vale"
+    ],
+    "ghostlord's lair": [
+      "fr-cannath-vale"
+    ],
+    "rethmar": [
+      "fr-cannath-vale"
+    ],
+    "cannathgate": [
+      "fr-cannath-vale"
+    ],
+    "talar": [
+      "fr-cannath-vale"
+    ],
+    "terrelton": [
+      "fr-cannath-vale"
+    ],
+    "nimon gap": [
+      "fr-cannath-vale"
+    ],
+    "witchcross": [
+      "fr-cannath-vale"
+    ],
+    "cannathcross": [
+      "fr-cannath-vale"
+    ],
+    "marthon": [
+      "fr-cannath-vale"
+    ],
+    "spelling: \"marthon\"": [
+      "fr-cannath-vale"
+    ],
+    "prosser": [
+      "fr-cannath-vale"
+    ],
+    "dauth": [
+      "fr-cannath-vale"
+    ],
+    "hillwatch": [
+      "fr-cannath-vale"
+    ],
+    "red rock": [
+      "fr-cannath-vale"
+    ],
+    "assardoth": [
+      "fr-cannath-vale"
+    ],
+    "custom addition": [
+      "fr-cannath-vale"
+    ],
+    "do not appear on the map": [
+      "fr-cannath-vale"
+    ],
+    "channath vale / lhespenar": [
+      "fr-cannath-vale"
+    ],
+    "dalelands": [
+      "fr-cannath-vale",
+      "fr-feats"
+    ],
+    "shining south": [
+      "fr-cannath-vale"
+    ],
+    "sala della forgia eterna (hub)": [
+      "fr-cannath-vale"
+    ],
+    "fire plane node (part 3)": [
+      "fr-cannath-vale"
+    ],
+    "earth plane node (part 4)": [
+      "fr-cannath-vale"
+    ],
+    "temporal void (part 5)": [
+      "fr-cannath-vale"
+    ],
+    "year -1000 dr": [
+      "fr-cannath-vale"
+    ],
+    "out of the abyss": [
+      "fr-cannath-vale"
+    ],
+    "lolth-sanctioned fleshcrafting": [
+      "fr-cannath-vale"
+    ],
+    "expedition to the demonweb pits": [
+      "fr-cannath-vale",
+      "fr-factions"
+    ],
     "forgotten realms — deities complete reference (d&d 3.5)": [
       "fr-deities-complete"
     ],
@@ -2894,6 +4623,243 @@
     "lathander": [
       "fr-deities-complete"
     ],
+    "malar": [
+      "fr-deities-complete"
+    ],
+    "mask": [
+      "fr-deities-complete"
+    ],
+    "milil": [
+      "fr-deities-complete"
+    ],
+    "nobanion": [
+      "fr-deities-complete"
+    ],
+    "oghma": [
+      "fr-deities-complete"
+    ],
+    "red knight": [
+      "fr-deities-complete"
+    ],
+    "savras": [
+      "fr-deities-complete"
+    ],
+    "selûne": [
+      "fr-deities-complete"
+    ],
+    "sune": [
+      "fr-deities-complete"
+    ],
+    "talona": [
+      "fr-deities-complete"
+    ],
+    "tymora": [
+      "fr-deities-complete"
+    ],
+    "umberlee": [
+      "fr-deities-complete"
+    ],
+    "waukeen": [
+      "fr-deities-complete"
+    ],
+    "finder wyvernspur": [
+      "fr-deities-complete"
+    ],
+    "garagos": [
+      "fr-deities-complete"
+    ],
+    "gargauth": [
+      "fr-deities-complete"
+    ],
+    "gwaeron windstrom": [
+      "fr-deities-complete"
+    ],
+    "hoar": [
+      "fr-deities-complete"
+    ],
+    "jergal": [
+      "fr-deities-complete"
+    ],
+    "lliira": [
+      "fr-deities-complete"
+    ],
+    "loviatar": [
+      "fr-deities-complete"
+    ],
+    "lurue": [
+      "fr-deities-complete"
+    ],
+    "mielikki": [
+      "fr-deities-complete"
+    ],
+    "sharess": [
+      "fr-deities-complete"
+    ],
+    "shaundakul": [
+      "fr-deities-complete"
+    ],
+    "shiallia": [
+      "fr-deities-complete"
+    ],
+    "siamorphe": [
+      "fr-deities-complete"
+    ],
+    "ulutiu": [
+      "fr-deities-complete"
+    ],
+    "urogalan": [
+      "fr-deities-complete"
+    ],
+    "valkur": [
+      "fr-deities-complete"
+    ],
+    "velsharoon": [
+      "fr-deities-complete"
+    ],
+    "bhaal": [
+      "fr-deities-complete"
+    ],
+    "myrkul": [
+      "fr-deities-complete"
+    ],
+    "moander": [
+      "fr-deities-complete"
+    ],
+    "iyachtu xvim": [
+      "fr-deities-complete"
+    ],
+    "lolth": [
+      "fr-deities-complete"
+    ],
+    "eilistraee": [
+      "fr-deities-complete"
+    ],
+    "ghaunadaur": [
+      "fr-deities-complete"
+    ],
+    "kiaransalee": [
+      "fr-deities-complete"
+    ],
+    "selvetarm": [
+      "fr-deities-complete"
+    ],
+    "vhaeraun": [
+      "fr-deities-complete"
+    ],
+    "corellon larethian": [
+      "fr-deities-complete"
+    ],
+    "angharradh": [
+      "fr-deities-complete"
+    ],
+    "aerdrie faenya": [
+      "fr-deities-complete"
+    ],
+    "deep sashelas": [
+      "fr-deities-complete"
+    ],
+    "erevan ilesere": [
+      "fr-deities-complete"
+    ],
+    "fenmarel mestarine": [
+      "fr-deities-complete"
+    ],
+    "hanali celanil": [
+      "fr-deities-complete"
+    ],
+    "labelas enoreth": [
+      "fr-deities-complete"
+    ],
+    "rillifane rallathil": [
+      "fr-deities-complete"
+    ],
+    "sehanine moonbow": [
+      "fr-deities-complete"
+    ],
+    "shevarash": [
+      "fr-deities-complete"
+    ],
+    "solonor thelandira": [
+      "fr-deities-complete"
+    ],
+    "berronar truesilver": [
+      "fr-deities-complete"
+    ],
+    "clangeddin silverbeard": [
+      "fr-deities-complete"
+    ],
+    "dugmaren brightmantle": [
+      "fr-deities-complete"
+    ],
+    "dumathoin": [
+      "fr-deities-complete"
+    ],
+    "gorm gulthyn": [
+      "fr-deities-complete"
+    ],
+    "haela brightaxe": [
+      "fr-deities-complete"
+    ],
+    "marthammor duin": [
+      "fr-deities-complete"
+    ],
+    "thard harr": [
+      "fr-deities-complete"
+    ],
+    "vergadain": [
+      "fr-deities-complete"
+    ],
+    "garl glittergold": [
+      "fr-deities-complete"
+    ],
+    "baravar cloakshadow": [
+      "fr-deities-complete"
+    ],
+    "callarduran smoothhands": [
+      "fr-deities-complete"
+    ],
+    "flandal steelskin": [
+      "fr-deities-complete"
+    ],
+    "gaerdal ironhand": [
+      "fr-deities-complete"
+    ],
+    "segojan earthcaller": [
+      "fr-deities-complete"
+    ],
+    "urdlen": [
+      "fr-deities-complete"
+    ],
+    "yondalla": [
+      "fr-deities-complete"
+    ],
+    "arvoreen": [
+      "fr-deities-complete"
+    ],
+    "brandobaris": [
+      "fr-deities-complete"
+    ],
+    "cyrrollalee": [
+      "fr-deities-complete"
+    ],
+    "sheela peryroyl": [
+      "fr-deities-complete"
+    ],
+    "gruumsh": [
+      "fr-deities-complete"
+    ],
+    "bahgtru": [
+      "fr-deities-complete"
+    ],
+    "ilneval": [
+      "fr-deities-complete"
+    ],
+    "luthic": [
+      "fr-deities-complete"
+    ],
+    "shargaas": [
+      "fr-deities-complete"
+    ],
     "forgotten realms — factions & organizations (d&d 3.5)": [
       "fr-factions"
     ],
@@ -2922,9 +4888,6 @@
       "fr-factions"
     ],
     "the order of the gauntlet (historical precursor)": [
-      "fr-factions"
-    ],
-    "alignment": [
       "fr-factions"
     ],
     "goals": [
@@ -2957,6 +4920,72 @@
     "operations": [
       "fr-factions"
     ],
+    "members": [
+      "fr-factions"
+    ],
+    "leaders": [
+      "fr-factions"
+    ],
+    "sonjak": [
+      "fr-factions"
+    ],
+    "fungal aberrations": [
+      "fr-factions"
+    ],
+    "pact with the mother of fungi": [
+      "fr-factions"
+    ],
+    "rakshasa": [
+      "fr-factions"
+    ],
+    "selling them to evil villains": [
+      "fr-factions"
+    ],
+    "recurring villain": [
+      "fr-factions"
+    ],
+    "campaign connections": [
+      "fr-factions"
+    ],
+    "il collezionista's evil artifact trade:": [
+      "fr-factions"
+    ],
+    "npc therysol": [
+      "fr-factions"
+    ],
+    "npc ally during the notte dei drow": [
+      "fr-factions"
+    ],
+    "status (current)": [
+      "fr-factions"
+    ],
+    "forces": [
+      "fr-factions"
+    ],
+    "campaign role": [
+      "fr-factions"
+    ],
+    "connections": [
+      "fr-factions"
+    ],
+    "composition": [
+      "fr-factions"
+    ],
+    "mythal-like barrier": [
+      "fr-factions"
+    ],
+    "narrative purpose": [
+      "fr-factions"
+    ],
+    "leader": [
+      "fr-factions"
+    ],
+    "military": [
+      "fr-factions"
+    ],
+    "condition": [
+      "fr-factions"
+    ],
     "forgotten realms — feats complete reference (d&d 3.5)": [
       "fr-feats"
     ],
@@ -2979,9 +5008,6 @@
       "fr-feats"
     ],
     "cormyr": [
-      "fr-feats"
-    ],
-    "dalelands": [
       "fr-feats"
     ],
     "dragon coast": [
@@ -3045,6 +5071,120 @@
       "fr-feats"
     ],
     "militia (impiltur)": [
+      "fr-feats"
+    ],
+    "ffolk heritage": [
+      "fr-feats"
+    ],
+    "northman heritage": [
+      "fr-feats"
+    ],
+    "heroic destiny": [
+      "fr-feats"
+    ],
+    "blooded": [
+      "fr-feats"
+    ],
+    "rashemi elemental affinity": [
+      "fr-feats"
+    ],
+    "spirit speaker": [
+      "fr-feats"
+    ],
+    "shaaryan mounted combat": [
+      "fr-feats"
+    ],
+    "track (regional)": [
+      "fr-feats"
+    ],
+    "tattoo focus": [
+      "fr-feats"
+    ],
+    "arcane schooling": [
+      "fr-feats"
+    ],
+    "waterdhavian noble": [
+      "fr-feats"
+    ],
+    "militia (various towns)": [
+      "fr-feats"
+    ],
+    "divine cleansing": [
+      "fr-feats"
+    ],
+    "divine resistance": [
+      "fr-feats"
+    ],
+    "divine shield": [
+      "fr-feats"
+    ],
+    "divine might": [
+      "fr-feats"
+    ],
+    "extra turning": [
+      "fr-feats"
+    ],
+    "sacred vengeance": [
+      "fr-feats"
+    ],
+    "anchoring aura": [
+      "fr-feats"
+    ],
+    "disciple of the sun": [
+      "fr-feats"
+    ],
+    "empower turning": [
+      "fr-feats"
+    ],
+    "holy radiance": [
+      "fr-feats"
+    ],
+    "initiate of mystra": [
+      "fr-feats"
+    ],
+    "initiate of tempus": [
+      "fr-feats"
+    ],
+    "initiate of lathander": [
+      "fr-feats"
+    ],
+    "fr-specific metamagic:": [
+      "fr-feats"
+    ],
+    "innate spell": [
+      "fr-feats"
+    ],
+    "cooperative spell": [
+      "fr-feats"
+    ],
+    "fr-specific item creation:": [
+      "fr-feats"
+    ],
+    "scribe tattoo": [
+      "fr-feats"
+    ],
+    "craft magical tattoo": [
+      "fr-feats"
+    ],
+    "cavalry builds (purple dragon knight)": [
+      "fr-feats"
+    ],
+    "dwarven defensive builds": [
+      "fr-feats"
+    ],
+    "zhentarim enforcer builds": [
+      "fr-feats"
+    ],
+    "regional feats and multiclassing": [
+      "fr-feats"
+    ],
+    "tattoos (red wizard / thay)": [
+      "fr-feats"
+    ],
+    "shadow weave and mystra's weave": [
+      "fr-feats"
+    ],
+    "initiate feats and worship requirement": [
       "fr-feats"
     ],
     "forgotten realms — history & timeline (d&d 3.5)": [
@@ -3137,6 +5277,33 @@
     "greengrass": [
       "fr-history"
     ],
+    "midsummer": [
+      "fr-history"
+    ],
+    "shieldmeet": [
+      "fr-history"
+    ],
+    "highharvestide": [
+      "fr-history"
+    ],
+    "feast of the moon": [
+      "fr-history"
+    ],
+    "the grand history of the realms": [
+      "fr-history"
+    ],
+    "volo's guide to...": [
+      "fr-history"
+    ],
+    "elminster's ecologies": [
+      "fr-history"
+    ],
+    "candlekeep chronicles": [
+      "fr-history"
+    ],
+    "the cyrinishad": [
+      "fr-history"
+    ],
     "forgotten realms — prestige classes (d&d 3.5)": [
       "fr-prestige-classes"
     ],
@@ -3168,6 +5335,129 @@
       "fr-prestige-classes"
     ],
     "initiate feats": [
+      "fr-prestige-classes"
+    ],
+    "initiate of the sevenfold veil": [
+      "fr-prestige-classes"
+    ],
+    "mage of the arcane order": [
+      "fr-prestige-classes"
+    ],
+    "blood magus": [
+      "fr-prestige-classes"
+    ],
+    "fatespinner": [
+      "fr-prestige-classes"
+    ],
+    "mindbender": [
+      "fr-prestige-classes"
+    ],
+    "contemplative": [
+      "fr-prestige-classes"
+    ],
+    "divine oracle": [
+      "fr-prestige-classes"
+    ],
+    "sacred fist": [
+      "fr-prestige-classes"
+    ],
+    "cavalier": [
+      "fr-prestige-classes"
+    ],
+    "dervish": [
+      "fr-prestige-classes"
+    ],
+    "frenzied berserker": [
+      "fr-prestige-classes"
+    ],
+    "kensai": [
+      "fr-prestige-classes"
+    ],
+    "master thrower": [
+      "fr-prestige-classes"
+    ],
+    "avenging executioner": [
+      "fr-prestige-classes"
+    ],
+    "malconvoker": [
+      "fr-prestige-classes"
+    ],
+    "mountebank": [
+      "fr-prestige-classes"
+    ],
+    "anarchic initiate": [
+      "fr-prestige-classes"
+    ],
+    "flayerspawn psychic": [
+      "fr-prestige-classes"
+    ],
+    "soulbow": [
+      "fr-prestige-classes"
+    ],
+    "illithid slayer": [
+      "fr-prestige-classes"
+    ],
+    "war weaver": [
+      "fr-prestige-classes"
+    ],
+    "combat medic": [
+      "fr-prestige-classes"
+    ],
+    "tainted scholar": [
+      "fr-prestige-classes"
+    ],
+    "fiend-blooded": [
+      "fr-prestige-classes"
+    ],
+    "fleshwarper": [
+      "fr-prestige-classes"
+    ],
+    "dragonsong lyrist": [
+      "fr-prestige-classes"
+    ],
+    "initiate of the draconic mysteries": [
+      "fr-prestige-classes"
+    ],
+    "stormsinger": [
+      "fr-prestige-classes"
+    ],
+    "walker in the waste": [
+      "fr-prestige-classes"
+    ],
+    "sand shaper": [
+      "fr-prestige-classes"
+    ],
+    "stormcaster": [
+      "fr-prestige-classes"
+    ],
+    "scarlet corsair": [
+      "fr-prestige-classes"
+    ],
+    "dirgesinger": [
+      "fr-prestige-classes"
+    ],
+    "master of radiance": [
+      "fr-prestige-classes"
+    ],
+    "pale master": [
+      "fr-prestige-classes"
+    ],
+    "entropist": [
+      "fr-prestige-classes"
+    ],
+    "runesmith": [
+      "fr-prestige-classes"
+    ],
+    "deepwarden": [
+      "fr-prestige-classes"
+    ],
+    "chameleon": [
+      "fr-prestige-classes"
+    ],
+    "arcane hierophant": [
+      "fr-prestige-classes"
+    ],
+    "prime underdark guide": [
       "fr-prestige-classes"
     ],
     "forgotten realms — races & subraces complete (d&d 3.5)": [
@@ -3275,9 +5565,6 @@
     "intelligent items": [
       "items"
     ],
-    "cost": [
-      "items"
-    ],
     "time": [
       "items"
     ],
@@ -3314,6 +5601,54 @@
     "ego": [
       "items"
     ],
+    "dragondoom (artifact)": [
+      "items"
+    ],
+    "dragonbane weapons / dragonfang weapons": [
+      "items"
+    ],
+    "bands of the blood glass": [
+      "items"
+    ],
+    "goggles of draconic vision": [
+      "items"
+    ],
+    "nightstick": [
+      "items"
+    ],
+    "cloak of turn resistance": [
+      "items"
+    ],
+    "undead grafts": [
+      "items"
+    ],
+    "goggles of day / lenses of the desert": [
+      "items"
+    ],
+    "wasteland clothing / hydration suit": [
+      "items"
+    ],
+    "stormwalker's cloak": [
+      "items"
+    ],
+    "piwafwi (drow cloak)": [
+      "items"
+    ],
+    "house insignias": [
+      "items"
+    ],
+    "silithar blood/bone grafts": [
+      "items"
+    ],
+    "crystal masks": [
+      "items"
+    ],
+    "githyanki silver swords": [
+      "items"
+    ],
+    "astral skiffs": [
+      "items"
+    ],
     "monsters — d&d 3.5 srd reference": [
       "monsters"
     ],
@@ -3336,6 +5671,12 @@
       "monsters"
     ],
     "encounter distance (surprise rules)": [
+      "monsters"
+    ],
+    "expanded splatbook monsters (cannath vale setting)": [
+      "monsters"
+    ],
+    "the wyrmbones & red hand horde": [
       "monsters"
     ],
     "darkvision": [
@@ -3396,6 +5737,93 @@
       "monsters"
     ],
     "half-celestial": [
+      "monsters"
+    ],
+    "vampire": [
+      "monsters"
+    ],
+    "lich": [
+      "monsters"
+    ],
+    "skeleton": [
+      "monsters"
+    ],
+    "zombie": [
+      "monsters"
+    ],
+    "adding a template": [
+      "monsters"
+    ],
+    "abishai (white/black/green/blue/red)": [
+      "monsters"
+    ],
+    "dracotaur": [
+      "monsters"
+    ],
+    "dragonnels": [
+      "monsters"
+    ],
+    "boneclaw": [
+      "monsters"
+    ],
+    "boneyard": [
+      "monsters"
+    ],
+    "blaspheme": [
+      "monsters"
+    ],
+    "visage": [
+      "monsters"
+    ],
+    "ashen husk": [
+      "monsters"
+    ],
+    "wastestrider": [
+      "monsters"
+    ],
+    "salt mummy / dry lich templates": [
+      "monsters"
+    ],
+    "bog imp": [
+      "monsters"
+    ],
+    "merrow": [
+      "monsters"
+    ],
+    "chuul": [
+      "monsters"
+    ],
+    "tainted minion": [
+      "monsters"
+    ],
+    "grell & grell patriarch": [
+      "monsters"
+    ],
+    "chitine & choldrith": [
+      "monsters"
+    ],
+    "fleshwarped creatures": [
+      "monsters"
+    ],
+    "myconid sovereign": [
+      "monsters"
+    ],
+    "crystalline creatures": [
+      "monsters"
+    ],
+    "xorn": [
+      "monsters"
+    ],
+    "mithral golem": [
+      "monsters"
+    ],
+    "magma ooze": [
+      "monsters"
+    ],
+    "githyanki knights / gish": [
+      "monsters"
+    ],
+    "githzerai monks": [
       "monsters"
     ],
     "free & open resources for d&d 3.5 — 2026 reference": [
@@ -3473,6 +5901,75 @@
     "shopping": [
       "resources"
     ],
+    "caution": [
+      "resources"
+    ],
+    "index": [
+      "resources"
+    ],
+    "elminster speaks": [
+      "resources"
+    ],
+    "realmslore": [
+      "resources"
+    ],
+    "wyrms of the north": [
+      "resources"
+    ],
+    "realms personalities": [
+      "resources"
+    ],
+    "elite opponents": [
+      "resources"
+    ],
+    "rules of the game": [
+      "resources"
+    ],
+    "villain builder": [
+      "resources"
+    ],
+    "vicious venues": [
+      "resources"
+    ],
+    "perilous gateways": [
+      "resources"
+    ],
+    "magic books of faerûn": [
+      "resources"
+    ],
+    "art gallery archive": [
+      "resources"
+    ],
+    "pattern": [
+      "resources"
+    ],
+    "use": [
+      "resources"
+    ],
+    "d20srd.org content": [
+      "resources"
+    ],
+    "non-srd books": [
+      "resources"
+    ],
+    "archived wotc articles": [
+      "resources"
+    ],
+    "maps": [
+      "resources"
+    ],
+    "audio effects": [
+      "resources"
+    ],
+    "3d models": [
+      "resources"
+    ],
+    "images & tokens": [
+      "resources"
+    ],
+    "gm screen & cheatsheets": [
+      "resources"
+    ],
     "spells — d&d 3.5 srd reference": [
       "spells"
     ],
@@ -3492,9 +5989,6 @@
       "spells"
     ],
     "spell descriptors": [
-      "spells"
-    ],
-    "schools of magic": [
       "spells"
     ],
     "key spells by level (srd core)": [
@@ -3561,6 +6055,135 @@
       "spells"
     ],
     "invisibility": [
+      "spells"
+    ],
+    "knock": [
+      "spells"
+    ],
+    "mirror image": [
+      "spells"
+    ],
+    "scorching ray": [
+      "spells"
+    ],
+    "dispel magic": [
+      "spells"
+    ],
+    "fireball": [
+      "spells"
+    ],
+    "fly": [
+      "spells"
+    ],
+    "haste": [
+      "spells"
+    ],
+    "lightning bolt": [
+      "spells"
+    ],
+    "slow": [
+      "spells"
+    ],
+    "confusion": [
+      "spells"
+    ],
+    "dimension door": [
+      "spells"
+    ],
+    "enervation": [
+      "spells"
+    ],
+    "greater invisibility": [
+      "spells"
+    ],
+    "ice storm": [
+      "spells"
+    ],
+    "cone of cold": [
+      "spells"
+    ],
+    "dominate person": [
+      "spells"
+    ],
+    "hold monster": [
+      "spells"
+    ],
+    "teleport": [
+      "spells"
+    ],
+    "wall of force": [
+      "spells"
+    ],
+    "chain lightning": [
+      "spells"
+    ],
+    "contingency": [
+      "spells"
+    ],
+    "disintegrate": [
+      "spells"
+    ],
+    "globe of invulnerability": [
+      "spells"
+    ],
+    "true seeing": [
+      "spells"
+    ],
+    "finger of death": [
+      "spells"
+    ],
+    "limited wish": [
+      "spells"
+    ],
+    "reverse gravity": [
+      "spells"
+    ],
+    "spell turning": [
+      "spells"
+    ],
+    "horrid wilting": [
+      "spells"
+    ],
+    "incendiary cloud": [
+      "spells"
+    ],
+    "mind blank": [
+      "spells"
+    ],
+    "power word stun": [
+      "spells"
+    ],
+    "gate": [
+      "spells"
+    ],
+    "imprisonment": [
+      "spells"
+    ],
+    "meteor swarm": [
+      "spells"
+    ],
+    "power word kill": [
+      "spells"
+    ],
+    "time stop": [
+      "spells"
+    ],
+    "wish": [
+      "spells"
+    ],
+    "sorcerers/bards with metamagic": [
+      "spells"
+    ],
+    "prepared casters": [
+      "spells"
+    ],
+    "stacking": [
+      "spells"
+    ],
+    "antimagic field": [
+      "spells"
+    ],
+    "dead magic zone": [
       "spells"
     ]
   },

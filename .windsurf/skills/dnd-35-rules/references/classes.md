@@ -165,15 +165,30 @@ Fighter is the feat factory. No special class features beyond bon feats and stro
 
 ## Wizard
 
+**HD**: d4 | **BAB**: ½ | **Good Saves**: Will
+**Weapons & Armor**: Club, dagger, heavy/light crossbow, quarterstaff. No armor or shields.
+**bon Languages**: Draconic.
+**Skills**: 2 + INT (Craft, Decipher Script, Knowledge [all], Profession, Spellcraft).
+
 **Arcane spells** (INT-based, prepared from spellbook; any in spellbook)
 **Spellbook**: Starts with 3+INT mod spells; add 2/level
-**Specialist**: Gain extra spell/day /lvl of school; must give up 2 opposing schools
+**Specialist**: Gain extra spell/day /lvl of chosen school; must give up 2 opposing schools (Divination only req: giving up 1).
 **Familiar**: At 1st level; options include cat, hawk, owl, rat, raven, tiny viper, toad, weasel
 **bon Feats**: Scribe Scroll (1st), metamagic/item creation feats at 5th, 10th, 15th, 20th
 
 **Schools of Magic**: Abjuration, Conjuration, Divination, Enchantment, Evocation, Illusion, Necromancy, Transmutation
 
 **Opposition Schools**: Conjuration ↔ Transmutation; Divination ↔ Illusion; Enchantment ↔ Evocation; Necromancy ↔ Abjuration (standard pairings)
+
+**Spells /day**:
+| Level | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | 3 | 1 | - | - | - | - | - | - | - | - |
+| 5 | 4 | 3 | 2 | 1 | - | - | - | - | - | - |
+| 10| 4 | 4 | 4 | 3 | 3 | 2 | - | - | - | - |
+| 15| 4 | 4 | 4 | 4 | 4 | 4 | 3 | 2 | 1 | - |
+| 20| 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 |
+*(Note: Specialists get +1 spell slot of their school for every SL they can cast)*
 
 ---
 
@@ -186,3 +201,31 @@ Fighter is the feat factory. No special class features beyond bon feats and stro
 **Prestige Classes**: Require prerequisites; do not count as base class for multiclass penalty.
 
 **Spellcaster multiclassing**: CL ≠ char_lvl; calculate separately per class.
+
+---
+
+## Expanded Base Classes
+
+### Complete Arcane
+- **Warlock**: (HD d6, BAB ¾, Good Saves: Fort, Will). Eldritch Blast (at-will magical ray), Invocations (at-will Sp abilities, no somatic failure in light armor), DR (cold iron), Fiendish Resilience. *(FR Lore: Often draw power from fey pacts, fiends, or ancient Netherese binding rituals).*
+- **Warmage**: (HD d6, BAB ½, Good Saves: Will). Spontaneous arcane casting focused exclusively on Evocation/damage. Warmage Edge (+INT to damage). Armored Mage (light, eventually medium armor). *(FR Lore: Mainstay of Cormyr's War Wizards and Thay's elite destructive contingents).*
+- **Wu Jen**: (HD d4, BAB ½, Good Saves: Will). Arcane preparation caster with elemental focus (Earth, Fire, Metal, Water, Wood). Subject to Taboos (e.g. cannot wear a certain color, must eat specific food) to gain spell secrets. *(FR Lore: Traditional to Kara-Tur; those in Faerûn are often travelers or students of Shou expatriates).*
+
+### Complete Divine
+- **Favored Soul**: (HD d8, BAB ¾, Good Saves: All). Spontaneous divine caster (like a Sorcerer but for Cleric list). Energy resistance, eventual weapon focus/specialization in deity's favored weapon, and wings at high levels. *(FR Lore: Direct Chosen or deeply touched mortals of specific deities, requiring no formal church training).*
+- **Shugenja**: (HD d6, BAB ½, Good Saves: Will). Spontaneous divine caster focused on elements. Sense elements. *(FR Lore: Predominantly from Kara-Tur/Shou Lung, filling the role of clerics for eastern deities or animist spirits).*
+- **Spirit Shaman**: (HD d8, BAB ¾, Good Saves: Fort, Will). Unique casting (retrieves specific spells daily from Druid list, casts them spontaneously). Spirit Guide, abilities to see/harm/ward against incorporeal and fey creatures. *(FR Lore: Common in Rashemen (Wychlaran/Hathran allies) and among the Uthgardt barbarians).*
+
+### Complete Warrior
+- **Hexblade**: (HD d10, BAB Full, Good Saves: Will). Arcane cursing martial class. Hexblade's Curse (lowers enemy saves/attacks), Mettle (evasion for Fort/Will), CHA-based arcane half-casting. *(FR Lore: Often aligned with Beshaba or wandering mercenaries).*
+- **Samurai**: (HD d10, BAB Full, Good Saves: Fort). Daisho focus (bastard sword/short sword), automatic Two-Weapon Fighting via class features, Kiai smite (+CHA to attack and damage), mass stare/intimidation. *(FR Lore: Noble warriors of Kara-Tur/Kozakura, fiercely loyal to their lord/daimyo).*
+- **Swashbuckler**: (HD d10, BAB Full, Good Saves: Fort). Finesse fighter. Weapon Finesse, Insightful Strike (+INT to damage), Acrobatic Charge, good skills. *(FR Lore: Extremely common in Waterdeep, Luskan, Baldur's Gate, and Amn).*
+
+### Heroes of Horror
+- **Archivist**: (HD d6, BAB ½, Good Saves: Fort, Will). INT-based divine preparation caster. Uses a "prayerbook" (like a wizard's spellbook but for divine spells). Dark Knowledge (identifies weaknesses in aberrations, undead, fiends to grant party bonuses). *(FR Lore: Scribes of Oghma, Jergal, or Kelemvor seeking out forbidden or obscure divine lore).*
+- **Dread Necromancer**: (HD d6, BAB ½, Good Saves: Will). CHA-based spontaneous arcane caster. Casts exclusively from a specific necromantic/evil list. Charnel Touch, Rebuke Undead, eventual transformation into a Lich. *(FR Lore: Cultists of Myrkul (remnants), Shar, or Velsharoon).*
+
+### Complete Psionic (Faerûn / DM Allowed Only)
+- **Ardent**: (HD d6, BAB ¾, Good Saves: Will). WIS-based psionic manifester based on mantles (philosophical concepts/domains). Can learn higher level powers based on manifester level rather than class level. *(FR Lore: Monastic wanderers seeking universal truths, sometimes loosely tied to Oghma or Ilmater).*
+- **Divine Mind**: (HD d10, BAB ¾, Good Saves: Fort, Will). Psionic paladin-equivalent focused on projecting auras to buff allies from chosen psionic mantles. *(FR Lore: Rare; usually psychic champions of specific deities).*
+- **Erudite**: (HD d4, BAB ½, Good Saves: Will). Psionic equivalent of a wizard. Learns unlimited powers like a spellbook but can only manifest a fixed number of *unique* powers /day. *(FR Lore: Deep scholars of the Invisible Art, often found in Candlekeep or hidden Underdark enclaves).*

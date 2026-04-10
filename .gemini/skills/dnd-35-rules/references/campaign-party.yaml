@@ -144,16 +144,18 @@ sections:
     ---
 
 
-    ### Hella Oakenshield — Dwarf Ranger 1 / Druid 12 (Level 13, The Healer/Caster)
+    ### Hella Oakenshield — Dream Dwarf Ranger 1 / Druid 12 (Level 13, The Healer/Caster)
 
 
-    **Role:** Divine caster, healer ("ospedaliera"), nature magic, summoner
+    **Role:** Divine caster, healer ("ospedaliera"), nature magic, summoner, moral
+    compass
 
-    **Race:** Shield Dwarf / Gold Dwarf (female) — now **Treant Hybrid** post-resurrection
+    **Race:** **Dream Dwarf** (female) — *Races of Stone* subrace — now **Treant Hybrid**
+    post-resurrection
 
     **Alignment:** Neutral Good
 
-    **Fighting Style:** Full plate (draconic), scimitar + shield; primarily casts
+    **Fighting Style:** Hide armor +2, scimitar + shield; primarily casts
 
     **Status:** ✅ Alive — DIED in Corona di Adamantio room battle → RESURRECTED at
     level 13 (Treant Hybrid template, -1 level from death → restored by story XP to
@@ -166,6 +168,47 @@ sections:
     ritual from 3 Treant seeds
 
 
+    **Dream Dwarf Racial Traits** (*Races of Stone*, non-SRD):
+
+
+    - +2 CON, −2 DEX (same as Gold Dwarf mechanically)
+
+    - **Darkvision 90 ft** (extended, not standard 60 ft)
+
+    - **Earth Dream**: Innate meditative connection to the collective subconscious
+    of the earth — Dream Dwarves spend time in deep contemplation, perceiving the
+    world as a resting giant of immense power
+
+    - **Earth Connection**: +2 racial bonus on Diplomacy checks with creatures of
+    the Earth subtype
+
+    - **Intuition**: Senses approximate depth underground naturally (like sensing
+    which way is up)
+
+    - Stonecunning, Stability (+4 vs bull rush/trip), Weapon Familiarity (waraxe,
+    urgrosh as martial)
+
+    - Speed 20 ft (not reduced by armor/load)
+
+    - Favored Class: Barbarian
+
+
+    **Ranger 1 Class Features:**
+
+
+    - **Favored Enemy: Aberrations +2** — chosen after early Underdark encounters;
+    +2 Bluff/Listen/Sense Motive/Spot/Survival and +2 weapon damage vs aberrations
+
+    - **Track**: Bonus feat (Track) — represents her origin as a tracker before becoming
+    a druid
+
+    - **Wild Empathy**: Stacks with Druid Wild Empathy (total class levels + CHA mod)
+
+    - **Character arc significance**: Hella started as a tracker/survivalist (Ranger)
+    who learned to *follow* the natural world before she learned to *protect* it (Druid).
+    The Ranger level represents her pragmatic, grounded roots.
+
+
     **Key Events:**
 
 
@@ -175,11 +218,20 @@ sections:
 
     - Resurrected through Moradin''s divine intervention + party sacrifices
 
-    - Transformation: **Nano/Treant Hybrid** — greenish skin, amber-gold eyes, bark-textured
-    hair
+    - During resurrection: her spirit walked the **Soglia della Forgia** (Threshold
+    of the Forge) — a liminal space that resonates with the Dream Dwarf Earth Dream.
+    Passed three trials concurrent with P4 Earth Plane events.
 
-    - Post-resurrection has vulnerability to fire, Cold Resistance 10, Regeneration
-    1 (on natural earth)
+    - Transformation: **Dream Dwarf / Treant Hybrid** — greenish skin, amber-gold
+    eyes, bark-textured hair
+
+    - Post-resurrection: Earth Dream connection is **permanently amplified** by the
+    Soglia experience. Vulnerability to fire, Cold Resistance 10, Regeneration 1 (on
+    natural earth)
+
+    - Post-resurrection companion: **Nymeria Riforgiato** (Stone Guardian, Magical
+    Beast 10-14 HD) — her dead riding dog reforged from Terros dust and Crystal fragments
+    during the Emerald Ritual
 
     - Currently completing the post-Hammerfist Sacred Forest druid ritual for nature
     avatar form
@@ -189,10 +241,15 @@ sections:
 
 
     - Collana dei Semi Eterni grants: +4 WIS, +3 natural AC, Avatar of Root (Huge
-    Treant form 1/day), summon Adamantine Treant (3/day)
+    Treant form 1/day), summon Adamantine Treant (3/day); 3rd seed summons Nymeria
+    instead of generic Treant
 
     - Additional resurrection gifts: DR 3/- (Pelle di Adamantio), Timeless Body, Spontaneous
     Rebirth (1/day auto-stabilize at 0 HP)
+
+    - Viaggio Onirico gifts (variable based on trial outcomes): Marchio della Veritade,
+    perception abilities, Via della Guardia (DR 2/—) or Via della Radice (Resist Cold
+    15 + Regen on sacred ground)
 
     - Primary healer via Cure spells and Wand of Cure Moderate Wounds
 
@@ -200,6 +257,11 @@ sections:
     wild-shaped
 
     - Animal companion: Advanced Brown Bear (corteccia parziale from Treant affinity)
+
+    - Nymeria (supernatural companion): Magical Beast with DR 5/Adamantine, Tremorsense
+    18m, telepathic link with Hella within 18m
+
+    - Caster level: **12** (Druid only; Ranger 1 does not add to druid CL)
 
 
     ---

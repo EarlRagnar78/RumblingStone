@@ -10,12 +10,12 @@ Monster URL: https://www.d20srd.org/srd/monsters/[monsterName].htm
 ```
 [Monster Name]
 Size/Type: [Size] [Type] [(Subtype)]
-Hit Dice: [N]d[HD]+[CON bonus] ([avg HP] hp)
+Hit Dice: [N]d[HD]+[CON bon] ([avg HP] hp)
 Initiative: +[mod]
 Speed: [N] ft. (N squares)[, fly N ft. (maneuverability)]
-Armor Class: [N] ([breakdown]), touch [N], flat-footed [N]
+AC: [N] ([breakdown]), touch [N], flat-footed [N]
 Base Attack/Grapple: +[BAB]/+[grapple]
-Attack: [weapon] +[mod] melee/ranged ([damage]/[crit])
+Attack: [weapon] +[mod] mel/rng ([damage]/[crit])
 Full Attack: [all attacks]
 Space/Reach: [N] ft./[N] ft.
 Special Attacks: [list]
@@ -26,7 +26,7 @@ Skills: [skill] +[N], ...
 Feats: [list]
 Environment: [terrain]
 Organization: [solitary/pair/group (N–N)]
-Challenge Rating: [N]
+CR: [N]
 Treasure: [type]
 Alignment: [alignment]
 Advancement: [N–N HD (Size)]
@@ -49,7 +49,7 @@ Level Adjustment: [N or —]
 | Humanoid | d8 | ¾ | Varies | — |
 | Magical Beast | d10 | Full | Fort, Ref | Low-light, darkvision |
 | Monstrous Humanoid | d8 | Full | Ref, Will | Darkvision 60 ft |
-| Ooze | d10 | ¾ | — | Blind; immune to mind/gaze/visual; no Dex bonus to AC |
+| Ooze | d10 | ¾ | — | Blind; immune to mind/gaze/visual; no Dex bon to AC |
 | Outsider | d8 | Full | Fort, Ref, Will | Darkvision 60 ft; don't need to eat/sleep |
 | Plant | d8 | ¾ | Fort | Immune to mind/poison/sleep/paralysis/stun/polymorph |
 | Undead | d12 | ¾ | Will | No Con; immune to mind/sleep/paralysis/stun/disease/poison; CR: turn check |
@@ -65,18 +65,18 @@ Level Adjustment: [N or —]
 **Tremorsense**: Detect vibrations in contact with ground up to N ft.
 **Blindsight**: Perceive surroundings without vision up to N ft.
 
-**Damage Reduction (DR N/type)**: Reduce damage by N unless weapon has bypass type (magic, silver, cold iron, adamantine, alignment, etc.)
-**Spell Resistance (SR N)**: Attacker must beat d20+caster level vs. SR to affect with spell.
+**DR (DR N/type)**: Reduce damage by N unless weapon has bypass type (magic, silver, cold iron, adamantine, alignment, etc.)
+**SR (SR N)**: Attacker must beat d20+CL vs. SR to affect with spell.
 **Energy Resistance N (type)**: Reduce that energy type damage by N per attack.
 **Energy Immunity**: Completely immune to that energy type.
-**Fast Healing N**: Regain N HP per round automatically (does not work if dead or at 0).
+**Fast Healing N**: Regain N HP /rnd automatically (does not work if dead or at 0).
 **Regeneration N**: As fast healing but also regrows lost limbs; certain damage (often fire/acid) deals lethal even to this creature.
 
 **Poison**: Two saves required (Fort); initial and secondary effect (usually 1 min apart).
 **Disease**: Fort save or contract; incubation period then recurring damage.
 **Paralysis**: Fort save or paralyzed for duration.
 **Petrification**: Fort save or turned to stone.
-**Swallow Whole**: Melee attack; grapple check; swallowed take crushing+acid each round; can cut free from inside.
+**Swallow Whole**: mel attack; grapple check; swallowed take crushing+acid each round; can cut free from inside.
 
 ---
 
@@ -103,7 +103,7 @@ Level Adjustment: [N or —]
 
 ## Dragons — Age Categories and CR
 
-| Age Category | Size | CR modifier | Key SR | Breath Weapon |
+| Age Category | Size | CR mod | Key SR | Breath Weapon |
 |---|---|---|---|---|
 | Wyrmling | Small | Base | 15 | 2d dice |
 | Very Young | Medium | Base+1 | 16 | 4d dice |
@@ -125,8 +125,8 @@ Level Adjustment: [N or —]
 ## Templates
 
 **Half-Dragon**: +2 STR, +2 INT/CHA; gain energy immunity; breath weapon; NA +4; LA +3
-**Half-Fiend**: +4 STR/CON, +2 INT/WIS/CHA; SR 11+HD; DR 5/magic; spell-like abilities; wings; LA +4
-**Half-Celestial**: +4 STR/CON, +2 INT/WIS/CHA; SR 11+HD; DR 5/magic; spell-like abilities; wings; LA +4
+**Half-Fiend**: +4 STR/CON, +2 INT/WIS/CHA; SR 11+HD; DR 5/magic; Sp abilities; wings; LA +4
+**Half-Celestial**: +4 STR/CON, +2 INT/WIS/CHA; SR 11+HD; DR 5/magic; Sp abilities; wings; LA +4
 **Vampire**: Undead type; +6 STR, +2 DEX, +4 INT/WIS/CHA; +8 NA; energy drain; blood drain; dominate; mist form; weaknesses (sunlight, running water, stake); LA +8
 **Lich**: Undead type; +2 INT/WIS/CHA; touch paralysis; phylactery; CR +2; LA +4
 **Skeleton**: Undead; lose all; gain DR 5/bludgeoning; darkvision 60 ft; CR varies
@@ -148,3 +148,42 @@ Level Adjustment: [N or —]
 | Desert | 6d6 × 10 ft |
 
 Perception (Listen/Spot) vs. Stealth (Hide/Move Silently) determines surprise.
+
+---
+
+## Expanded Splatbook Monsters (Cannath Vale Setting)
+
+### The Wyrmbones & Red Hand Horde
+*Sourced mainly from Draconomicon, Monster Manual III, and IV.*
+- **Abishai (White/Black/Green/Blue/Red)** (*MM IV*): Tiamat's draconic/fiendish shock troops. Excellent for the Fane of Tiamat or as elite liege-lords in the Wyrmbones.
+- **Dracotaur** (*MM III*) & **Dragonnels** (*Draconomicon*): Scaly draconic cavalry heavily utilized by the Red Hand when wargs are not enough.
+- **Hobgoblin Warsinger / Duskblade / Spellscourge** (*MM III / MM IV*): The elite tactical spellcasters acting as officers of the Red Hand horde.
+
+### Bandit Wastes & Ghostlord's Lair
+*Sourced mainly from Libris Mortis, Sandstorm, and Heroes of Horror.*
+- **Boneclaw** & **Boneyard** (*Libris Mortis*): Huge, hulking monstrosities created by the Ghostlord to guard his territory. Boneclaws have Ex reach and vicious claws.
+- **Blaspheme** & **Visage** (*Libris Mortis*): Advanced undead focused on infiltration and sheer terror.
+- **Ashen Husk** & **Wastestrider** (*Sandstorm*): Desert-themed undead wandering the arid desolations of the Bandit Wastes.
+- **Salt Mummy / Dry Lich Templates** (*Sandstorm*): Alternate advanced templates for the Ghostlord's elite lieutenants.
+
+### Lhespenbog & Ruins of Lhesper
+*Sourced mainly from Stormwrack, Underdark, and Heroes of Horror.*
+- **Bog Imp** & **Merrow** (Aquatic ogres) (*Stormwrack / MM*): Aquatic ambushers lurking in the drowned ruins.
+- **Chuul** & **Tainted Minion** (*Heroes of Horror*): Aberrations corrupted by Regiarix (the black dragon) and the ambient taint of the swamp.
+
+### The North Wall & Underdark Depths
+*Sourced mainly from Lords of Madness and Underdark.*
+- **Grell & Grell Patriarch** (*Lords of Madness*): Tentacled terrors featured in ancient mines (like Arc 01 La Miniera).
+- **Chitine & Choldrith** (*Underdark*): Lolth-sworn spider-humanoid researchers often found in Fungi Towers (e.g., Sonjak's researchers).
+- **Fleshwarped Creatures** (*Lords of Madness*): Grotesque, failed drow experiments dumped in the Neverlight Grove.
+- **Myconid Sovereign** (*Underdark*): Denizens of the great fungi towers, wielding powerful spores.
+
+### Eternal Forge & Planar Nodes
+*Sourced mainly from Monster Manual and Manual of the Planes.*
+- **Crystalline Creatures** & **Xorn** (*Underdark / SRD*): Exploring the elemental Earth Node and the Forest of Living Crystal.
+- **Mithral Golem** & **Magma Ooze**: Mighty constructs and slimes bridging the Fire and Earth planar nodes.
+
+### Astral & Transitive Planes
+*Sourced from Expanded Psionics Handbook and Monster Manual.*
+- **Githyanki Knights / Gish**: Astral raiders riding red dragon mounts. They might appear in the Faerûn skies or the Underdark hunting down mind flayer enclaves (like Zalkatar's) or retrieving stolen silver swords.
+- **Githzerai Monks**: ascetic psionic monks from Limbo who also hunt illithids, but often clash with their Githyanki cousins.

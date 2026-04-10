@@ -1,4 +1,4 @@
-# Forgotten Realms — Races & Subraces Complete (D&D 3.5)
+# FR — Races & Subraces Complete (D&D 3.5)
 
 Sources: Races of Faerûn (2003), FRCS (2001), Player's Guide to Faerûn (2004),
 Underdark (2003), Serpent Kingdoms (2004)
@@ -73,8 +73,8 @@ Region: Underwater near coastlines; Sea of Fallen Stars
 ### Drow (Dark Elf, Ssri'Tel'Quessir)
 Ability: +2 DEX, −2 CON, +2 INT, +2 CHA
 Favored Class: Wizard (female) or Cleric (male) — gender matters in drow society
-Special: Darkvision 120 ft; SR = 11 + character level; Spell Resistance;
-Drow Spell-like Abilities (Faerie Fire, Darkness 1/day each; Dancing Lights at will);
+Special: Darkvision 120 ft; SR = 11 + char_lvl; SR;
+Drow Sp Abilities (Faerie Fire, Darkness 1/day each; Dancing Lights at will);
 Light Blindness (blinded 1 round in bright light, −1 attack/checks in shadowy areas);
 Weapon Proficiency (rapier, hand crossbow, short sword)
 Level Adjustment: +2
@@ -100,7 +100,7 @@ Neutral good elves who are natural werewolves. Not playable in standard campaign
 Ability: +2 CON, −2 CHA
 Size: Medium | Speed: 20 ft (not reduced by armor)
 Favored Class: Fighter
-Special (all dwarves): Darkvision 60 ft; +2 save vs. poison/spells/spell-like; +4 dodge vs. giants;
+Special (all dwarves): Darkvision 60 ft; +2 save vs. poison/spells/Sp; +4 dodge vs. giants;
 +2 Appraise/Craft (stone/metal); Stonecunning (+2 Search underground, notice unusual stonework)
 Weapon Familiarity: Dwarven waraxe + urgrosh as martial
 Region: Shield dwarves in the North, the Underdark, the East
@@ -116,8 +116,8 @@ Region: The Great Rift, Underhome (beneath the Shaar)
 Ability: +2 CON, −4 CHA (and −2 to INT for some treatments)
 Favored Class: Fighter
 Special: Darkvision 120 ft; Immune to paralysis, phantasms, poison; +2 save vs. spells;
-Light Sensitivity (−1 attack in bright light); Enlarge Person + Invisibility (1/day each as spell-like);
-+4 Racial bonus to Move Silently and Spot; +2 vs. spells and spell-like abilities
+Light Sensitivity (−1 attack in bright light); Enlarge Person + Invisibility (1/day each as Sp);
++4 Racial bon to Move Silently and Spot; +2 vs. spells and Sp abilities
 Level Adjustment: +1
 Region: Underdark; Gracklstugh
 Alignment: Usually LE
@@ -149,7 +149,7 @@ Notes: Extremely reclusive; rarely seen outside of deep forests. Most isolationi
 
 ### Svirfneblin (Deep Gnome)
 Ability: −2 STR, +2 DEX, +2 WIS, −4 CHA (and INT is not modified but perception is higher)
-Special: Darkvision 120 ft; SR = 11 + character level; +2 save vs. illusions; Innate abilities:
+Special: Darkvision 120 ft; SR = 11 + char_lvl; +2 save vs. illusions; Innate abilities:
 Blindsight 30 ft; Blur 1/day; Blindness/Deafness 1/day; Change Self 1/day;
 +2 Hide underground; +4 Hide when still; +2 Craft (stone); Move Silently +2
 Level Adjustment: +3
@@ -169,7 +169,7 @@ Lucky (+1 all saves); +2 Climb/Move Silently
 ### Strongheart Halfling (Faerûn variant)
 Ability: −2 STR, +2 DEX
 Favored Class: Fighter (not Rogue)
-Special: **Bonus feat at 1st level** (replaces the +1 saves of lightfoot);
+Special: **bon feat at 1st level** (replaces the +1 saves of lightfoot);
 +2 Listen; Fearlessness; Lucky
 Region: Luiren, the Heartlands
 
@@ -188,7 +188,7 @@ forest communities. Very rare outside Luiren.
 ### Half-Elf (Standard PHB)
 Ability: None
 Special: Immune to sleep; +2 save vs. enchantment; Low-light vision; +1 Diplomacy/Gather Info;
-Elven Blood (counts as elf for effects favoring elves); +2 bonus to one skill (varies)
+Elven Blood (counts as elf for effects favoring elves); +2 bon to one skill (varies)
 Favored Class: Any
 Notes: Extremely common in Aglarond (due to the Yuirwood elves). Common in major cities.
 

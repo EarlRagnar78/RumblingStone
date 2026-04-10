@@ -1,0 +1,393 @@
+{
+  "skill": "unknown",
+  "desc": "",
+  "rules": {},
+  "tables": [
+    {
+      "Arc": "Pre-01",
+      "Directory": "*(unnumbered)*",
+      "Title": "Minotaur Lair",
+      "Levels": "6–7",
+      "Status": "✅ Done",
+      "Summary": "Underdark entry; Maur defeated; Il Collezionista ESCAPED; Cristal Warriors"
+    },
+    {
+      "Arc": "00",
+      "Directory": "`00_Red Hand Of Doom/`",
+      "Title": "Red Hand Opening",
+      "Levels": "4–6",
+      "Status": "✅ Done",
+      "Summary": "Drellin's Ferry assault; Thorik dies & is resurrected with Aegis Fang"
+    },
+    {
+      "Arc": "Pre-02",
+      "Directory": "*(in 02 dir)*",
+      "Title": "Neverlight Grove / Fungi Tower",
+      "Levels": "7–8",
+      "Status": "✅ Done",
+      "Summary": "Drow-modified myconid lab; Sonjak connection (undiscovered); portal to deeper levels"
+    },
+    {
+      "Arc": "01",
+      "Directory": "`01_LaMiniera/`",
+      "Title": "La Miniera (Ancient Mine)",
+      "Levels": "8",
+      "Status": "✅ Done",
+      "Summary": "Grell Patriarch lair; Cristal Warriors in early mine rooms after portal arrival"
+    },
+    {
+      "Arc": "02",
+      "Directory": "`02_scaladossa-abbattor-funghi/`",
+      "Title": "Scaladossa (Skeletal Scaffold)",
+      "Levels": "8–9",
+      "Status": "✅ Done",
+      "Summary": "Evil dwarven necromancer of Abbathor; **Ring of Chaotic Illumination found → bonds with Artemis**"
+    },
+    {
+      "Arc": "03",
+      "Directory": "`03_la Cittadella/`",
+      "Title": "La Cittadella",
+      "Levels": "9–10",
+      "Status": "✅ Done",
+      "Summary": "Moradin temple; Undead Beholder; Corona clues; drow slavers + retriever (defeated)"
+    },
+    {
+      "Arc": "04",
+      "Directory": "`04_tomba_di_Belkram/`",
+      "Title": "Tomba di Belkram",
+      "Levels": "10–11",
+      "Status": "✅ Done",
+      "Summary": "Cerebromorphosis crisis; Ring Dawn's Defiance activation; PrC rejection"
+    },
+    {
+      "Arc": "05",
+      "Directory": "`05_aa-stanza-runica/`",
+      "Title": "Stanza Runica",
+      "Levels": "11",
+      "Status": "✅ Done",
+      "Summary": "Dwarven rune puzzle room"
+    },
+    {
+      "Arc": "06",
+      "Directory": "`06_Stanza-corona-di-adamantio/`",
+      "Title": "Crown Chamber",
+      "Levels": "11–12",
+      "Status": "✅ Done",
+      "Summary": "Corona di Adamantio found; **Hella dies**; portal opened"
+    },
+    {
+      "Arc": "07",
+      "Directory": "`07_il Portale Della Forgia Eterna/`",
+      "Title": "Eternal Forge Portal",
+      "Levels": "12–13",
+      "Status": "✅ Done",
+      "Summary": "Fire/Earth/Temporal planes; gem rituals; Hella resurrection; Therysol found"
+    },
+    {
+      "Arc": "08",
+      "Directory": "`08_La Battaglia Di Hammerfist/`",
+      "Title": "Battle of Hammerfist",
+      "Levels": "13",
+      "Status": "✅ Done",
+      "Summary": "4-session siege; 900 horde vs 300 dwarves; Rumbling Stones emerge; 210 dwarves killed"
+    },
+    {
+      "Arc": "09",
+      "Directory": "`09_Continuazione Arco Narrativo.../`",
+      "Title": "Post-Hammerfist & Rethmar",
+      "Levels": "13+",
+      "Status": "🔄 In Progress",
+      "Summary": "Personal quests + Rhest + Torneo + Battle of Rethmar (74 files)"
+    },
+    {
+      "Villain": "Grell Patriarch",
+      "Type": "Aberration",
+      "CR": "~8",
+      "Status": "☠️ Defeated",
+      "Last Seen": "01_LaMiniera",
+      "Arc": "01"
+    },
+    {
+      "Villain": "Maur",
+      "Type": "Underdark native",
+      "CR": "~10",
+      "Status": "☠️ Defeated",
+      "Last Seen": "Minotaur Lair",
+      "Arc": "Pre-01"
+    },
+    {
+      "Villain": "Il Collezionista",
+      "Type": "Rakshasa",
+      "CR": "~12",
+      "Status": "🏃 **ESCAPED**",
+      "Last Seen": "Minotaur Lair → Drow alliance",
+      "Arc": "Pre-01 → 09"
+    },
+    {
+      "Villain": "Undead Beholder",
+      "Type": "Undead",
+      "CR": "~13",
+      "Status": "☠️ Defeated",
+      "Last Seen": "03_la Cittadella",
+      "Arc": "03"
+    },
+    {
+      "Villain": "Drow Sorcerer + Retriever",
+      "Type": "Drow slaver",
+      "CR": "~11",
+      "Status": "☠️ Defeated",
+      "Last Seen": "03_la Cittadella",
+      "Arc": "03"
+    },
+    {
+      "Villain": "Fauci di Palude",
+      "Type": "Black Dragon (Adult Advanced)",
+      "CR": "15",
+      "Status": "🏃 **ESCAPED** (gravely wounded)",
+      "Last Seen": "Fled Battle of Hammerfist",
+      "Arc": "08"
+    },
+    {
+      "Villain": "Generale Grimjaw",
+      "Type": "Orog Fighter 10/Warlord 3",
+      "CR": "14",
+      "Status": "☠️/🏃 **Conditional**",
+      "Last Seen": "Battle of Hammerfist",
+      "Arc": "08"
+    },
+    {
+      "Villain": "Gorthak il Trifronte",
+      "Type": "3-Headed Ettin",
+      "CR": "12",
+      "Status": "☠️/🏃 **Conditional**",
+      "Last Seen": "Battle of Hammerfist",
+      "Arc": "08"
+    },
+    {
+      "Villain": "Sonjak",
+      "Type": "Drow Cleric Matrona",
+      "CR": "~14",
+      "Status": "🔴 **ACTIVE**",
+      "Last Seen": "Underdark/Surface ops",
+      "Arc": "Pre-02 → 09"
+    },
+    {
+      "Villain": "Zalkatar",
+      "Type": "Illithid Warlock Drow",
+      "CR": "13",
+      "Status": "🔴 **ACTIVE**",
+      "Last Seen": "Invisible Tower (Dauth)",
+      "Arc": "09-P2A"
+    },
+    {
+      "Villain": "Wyrmlord Saarvith",
+      "Type": "Fighter/Dragon Disciple",
+      "CR": "12",
+      "Status": "🔴 **ACTIVE**",
+      "Last Seen": "Lake Rhest ruins",
+      "Arc": "09-P2"
+    },
+    {
+      "Villain": "Regiarax",
+      "Type": "Adult Black Dragon",
+      "CR": "13",
+      "Status": "🔴 **ACTIVE**",
+      "Last Seen": "Lake Rhest",
+      "Arc": "09-P2"
+    },
+    {
+      "Villain": "Xal'thor",
+      "Type": "Illithid Commander (Psionic)",
+      "CR": "~14",
+      "Status": "🔴 **APPROACHING**",
+      "Last Seen": "With Githyanki fleet",
+      "Arc": "09-P2B"
+    },
+    {
+      "Villain": "Azarr Kul",
+      "Type": "High Wyrmlord (half-blue-dragon)",
+      "CR": "15",
+      "Status": "🔴 **ACTIVE**",
+      "Last Seen": "With the horde",
+      "Arc": "09-P3"
+    },
+    {
+      "Villain": "Tyrgarun",
+      "Type": "Very Old Blue Dragon",
+      "CR": "20",
+      "Status": "🔴 **ACTIVE**",
+      "Last Seen": "With Azarr Kul",
+      "Arc": "09-P3"
+    },
+    {
+      "Villain": "Githyanki Dragon-Rider Faction",
+      "Type": "LE military",
+      "CR": "~15",
+      "Status": "🔴 **APPROACHING**",
+      "Last Seen": "En route to Dauth",
+      "Arc": "09-P2B"
+    },
+    {
+      "Ally": "Re Thorek Hammerfist",
+      "Type": "Dwarf King (Fighter 15/Noble 2, CR 16)",
+      "Status": "Active",
+      "Condition": "Survived siege; 90 dwarves remain; named PCs Custodi Eterni",
+      "Arc": "08–09"
+    },
+    {
+      "Ally": "Dana Forgiapietra",
+      "Type": "Madre Superiora (Cleric 12/Divine Singer 3, CR 14)",
+      "Status": "Active",
+      "Condition": "Survived siege; leads healing",
+      "Arc": "08–09"
+    },
+    {
+      "Ally": "Cantitrici della Pietra",
+      "Type": "5 Bard/Clerics (CR 11 each)",
+      "Status": "Active",
+      "Condition": "Group ability: Coro della Montagna",
+      "Arc": "08"
+    },
+    {
+      "Ally": "Signore Ventolesto",
+      "Type": "Celestial Giant Owl (CR 8)",
+      "Status": "Allied",
+      "Condition": "Departed after Hammerfist; may return",
+      "Arc": "08"
+    },
+    {
+      "Ally": "12 Ranger Elfici su Gufi",
+      "Type": "Elf Rangers (CR 8)",
+      "Status": "Allied",
+      "Condition": "Departed; some wounded",
+      "Arc": "08"
+    },
+    {
+      "Ally": "Orion Pelleorsa",
+      "Type": "Druid 14 (CR 14)",
+      "Status": "Allied",
+      "Condition": "Departed north after Hammerfist",
+      "Arc": "08"
+    },
+    {
+      "Ally": "Maestro Tempestas",
+      "Type": "Bard 12/Archmage 2 (CR 14)",
+      "Status": "Allied",
+      "Condition": "Departed after Hammerfist",
+      "Arc": "08"
+    },
+    {
+      "Ally": "Therysol",
+      "Type": "Tiefling Half-Dragon NPC",
+      "Status": "Active",
+      "Condition": "Underground, seeking revenge on Il Collezionista's guild",
+      "Arc": "07 → 09"
+    },
+    {
+      "Ally": "Moradin",
+      "Type": "Divine patron",
+      "Status": "Active",
+      "Condition": "Speaks through Crown/Aegis artifacts",
+      "Arc": "All"
+    },
+    {
+      "Ally": "Circle of Eight Mages",
+      "Type": "8 archmages",
+      "Status": "Arriving",
+      "Condition": "Create mythal barrier at Rethmar",
+      "Arc": "09-P3"
+    },
+    {
+      "Ally": "Druid Circle",
+      "Type": "Nature druids",
+      "Status": "Conditional",
+      "Condition": "Help only if Hella passes Sacred Forest ritual",
+      "Arc": "09-P1"
+    },
+    {
+      "Ally": "Tiri Kitor Elves",
+      "Type": "Wild elf scouts",
+      "Status": "Conditional",
+      "Condition": "Help only if Starsong Hill quest completed",
+      "Arc": "09-P3"
+    },
+    {
+      "Ally": "Ghostlord (Lich)",
+      "Type": "LN Lich",
+      "Status": "Negotiable",
+      "Condition": "Can become ally or enemy depending on party choices",
+      "Arc": "09-P3"
+    },
+    {
+      "Artifact": "Aegis Fang",
+      "Owner": "Thorik",
+      "Status": "Active (pre-full awakening)",
+      "Key Detail": "Becomes +4 Sacred Returning after full Corona awakening"
+    },
+    {
+      "Artifact": "Corona di Adamantio",
+      "Owner": "Thorik",
+      "Status": "Active (3/3 gems lit)",
+      "Key Detail": "Topaz ✅, Emerald ✅, Ruby ✅ (activated at year -1000 battle)"
+    },
+    {
+      "Artifact": "Ring of Chaotic Illumination",
+      "Owner": "Artemis",
+      "Status": "Reforged",
+      "Key Detail": "Full powers after Eternal Forge; further evolution at Invisible Tower"
+    },
+    {
+      "Artifact": "Bracieri Gemelli di Moradin",
+      "Owner": "Tordek",
+      "Status": "Fire ✅ / Earth ✅",
+      "Key Detail": "Both phases complete"
+    },
+    {
+      "Artifact": "Collana dei Semi Eterni",
+      "Owner": "Hella",
+      "Status": "Active (post-resurrection)",
+      "Key Detail": "Treant summoning, Avatar form, party sacrifice gifts"
+    },
+    {
+      "Artifact": "Cuore di Moradin",
+      "Owner": "Crown set",
+      "Status": "Activated",
+      "Key Detail": "Separate artifact at Altare; enabled resurrection ritual"
+    },
+    {
+      "Artifact": "Orbe delle Otto Porte",
+      "Owner": "Tordek (scenic)",
+      "Status": "At Tournament",
+      "Key Detail": "Naruto-style chakra gate artifact: +2 STR/DEX morale per gate, 1d4 CON drain cumulative, final gate = disintegration"
+    },
+    {
+      "Need to know about...": "Party stats and combat details",
+      "Load file": "`references/campaign-party.md`"
+    },
+    {
+      "Need to know about...": "Artifact mechanics and synergies",
+      "Load file": "`references/campaign-artifacts.md`"
+    },
+    {
+      "Need to know about...": "Cannath Vale map and locations",
+      "Load file": "`references/fr-cannath-vale.md`"
+    },
+    {
+      "Need to know about...": "All factions (canonical + custom)",
+      "Load file": "`references/fr-factions.md`"
+    },
+    {
+      "Need to know about...": "DM tools, quests, monster art",
+      "Load file": "`references/dm-expansion-toolkit.md`"
+    },
+    {
+      "Need to know about...": "Full narrative history",
+      "Load file": "`campaign/lore/campaign-history.md`"
+    },
+    {
+      "Need to know about...": "House rules",
+      "Load file": "`campaign/lore/house-rules.md`"
+    }
+  ],
+  "body": "# RumblingStone Campaign — Story Arc Reference (Agent Navigation)\n\nQuick-lookup reference for AI agents needing campaign state, arc progression, and narrative context.\nFor full narrative details, see `campaign/lore/campaign-history.md`.\n\n---\n\n## CURRENT STATE (as of last update)\n\n- **Party Level:** 13\n- **Party Location:** Post-Hammerfist, preparing personal quests + march to Rethmar\n- **Last Completed:** Arc 08 — Battle of Hammerfist (victory, heavy losses)\n- **Active Quests:** P1 Hella's Sacred Forest, P2A Artemis's Invisible Tower, P2 Rhest, P2B Tordek's Tournament\n- **Upcoming:** Personal quests (parallel) → Battle of Rethmar (5 phases)\n\n---\n\n## ARC INDEX (Sequential)\n\n| Arc | Directory | Title | Levels | Status | Summary |\n|---|---|---|---|---|---|\n| Pre-01 | *(unnumbered)* | Minotaur Lair | 6–7 | ✅ Done | Underdark entry; Maur defeated; Il Collezionista ESCAPED; Cristal Warriors |\n| 00 | `00_Red Hand Of Doom/` | Red Hand Opening | 4–6 | ✅ Done | Drellin's Ferry assault; Thorik dies & is resurrected with Aegis Fang |\n| Pre-02 | *(in 02 dir)* | Neverlight Grove / Fungi Tower | 7–8 | ✅ Done | Drow-modified myconid lab; Sonjak connection (undiscovered); portal to deeper levels |\n| 01 | `01_LaMiniera/` | La Miniera (Ancient Mine) | 8 | ✅ Done | Grell Patriarch lair; Cristal Warriors in early mine rooms after portal arrival |\n| 02 | `02_scaladossa-abbattor-funghi/` | Scaladossa (Skeletal Scaffold) | 8–9 | ✅ Done | Evil dwarven necromancer of Abbathor; **Ring of Chaotic Illumination found → bonds with Artemis** |\n| 03 | `03_la Cittadella/` | La Cittadella | 9–10 | ✅ Done | Moradin temple; Undead Beholder; Corona clues; drow slavers + retriever (defeated) |\n| 04 | `04_tomba_di_Belkram/` | Tomba di Belkram | 10–11 | ✅ Done | Cerebromorphosis crisis; Ring Dawn's Defiance activation; PrC rejection |\n| 05 | `05_aa-stanza-runica/` | Stanza Runica | 11 | ✅ Done | Dwarven rune puzzle room |\n| 06 | `06_Stanza-corona-di-adamantio/` | Crown Chamber | 11–12 | ✅ Done | Corona di Adamantio found; **Hella dies**; portal opened |\n| 07 | `07_il Portale Della Forgia Eterna/` | Eternal Forge Portal | 12–13 | ✅ Done | Fire/Earth/Temporal planes; gem rituals; Hella resurrection; Therysol found |\n| 08 | `08_La Battaglia Di Hammerfist/` | Battle of Hammerfist | 13 | ✅ Done | 4-session siege; 900 horde vs 300 dwarves; Rumbling Stones emerge; 210 dwarves killed |\n| 09 | `09_Continuazione Arco Narrativo.../` | Post-Hammerfist & Rethmar | 13+ | 🔄 In Progress | Personal quests + Rhest + Torneo + Battle of Rethmar (74 files) |\n\n---\n\n## VILLAIN STATUS TRACKER\n\n| Villain | Type | CR | Status | Last Seen | Arc |\n|---|---|---|---|---|---|\n| Grell Patriarch | Aberration | ~8 | ☠️ Defeated | 01_LaMiniera | 01 |\n| Maur | Underdark native | ~10 | ☠️ Defeated | Minotaur Lair | Pre-01 |\n| Il Collezionista | Rakshasa | ~12 | 🏃 **ESCAPED** | Minotaur Lair → Drow alliance | Pre-01 → 09 |\n| Undead Beholder | Undead | ~13 | ☠️ Defeated | 03_la Cittadella | 03 |\n| Drow Sorcerer + Retriever | Drow slaver | ~11 | ☠️ Defeated | 03_la Cittadella | 03 |\n| Fauci di Palude | Black Dragon (Adult Advanced) | 15 | 🏃 **ESCAPED** (gravely wounded) | Fled Battle of Hammerfist | 08 |\n| Generale Grimjaw | Orog Fighter 10/Warlord 3 | 14 | ☠️/🏃 **Conditional** | Battle of Hammerfist | 08 |\n| Gorthak il Trifronte | 3-Headed Ettin | 12 | ☠️/🏃 **Conditional** | Battle of Hammerfist | 08 |\n| Sonjak | Drow Cleric Matrona | ~14 | 🔴 **ACTIVE** | Underdark/Surface ops | Pre-02 → 09 |\n| Zalkatar | Illithid Warlock Drow | 13 | 🔴 **ACTIVE** | Invisible Tower (Dauth) | 09-P2A |\n| Wyrmlord Saarvith | Fighter/Dragon Disciple | 12 | 🔴 **ACTIVE** | Lake Rhest ruins | 09-P2 |\n| Regiarax | Adult Black Dragon | 13 | 🔴 **ACTIVE** | Lake Rhest | 09-P2 |\n| Xal'thor | Illithid Commander (Psionic) | ~14 | 🔴 **APPROACHING** | With Githyanki fleet | 09-P2B |\n| Azarr Kul | High Wyrmlord (half-blue-dragon) | 15 | 🔴 **ACTIVE** | With the horde | 09-P3 |\n| Tyrgarun | Very Old Blue Dragon | 20 | 🔴 **ACTIVE** | With Azarr Kul | 09-P3 |\n| Githyanki Dragon-Rider Faction | LE military | ~15 | 🔴 **APPROACHING** | En route to Dauth | 09-P2B |\n\n---\n\n## ALLY STATUS TRACKER\n\n| Ally | Type | Status | Condition | Arc |\n|---|---|---|---|---|\n| Re Thorek Hammerfist | Dwarf King (Fighter 15/Noble 2, CR 16) | Active | Survived siege; 90 dwarves remain; named PCs Custodi Eterni | 08–09 |\n| Dana Forgiapietra | Madre Superiora (Cleric 12/Divine Singer 3, CR 14) | Active | Survived siege; leads healing | 08–09 |\n| Cantitrici della Pietra | 5 Bard/Clerics (CR 11 each) | Active | Group ability: Coro della Montagna | 08 |\n| Signore Ventolesto | Celestial Giant Owl (CR 8) | Allied | Departed after Hammerfist; may return | 08 |\n| 12 Ranger Elfici su Gufi | Elf Rangers (CR 8) | Allied | Departed; some wounded | 08 |\n| Orion Pelleorsa | Druid 14 (CR 14) | Allied | Departed north after Hammerfist | 08 |\n| Maestro Tempestas | Bard 12/Archmage 2 (CR 14) | Allied | Departed after Hammerfist | 08 |\n| Therysol | Tiefling Half-Dragon NPC | Active | Underground, seeking revenge on Il Collezionista's guild | 07 → 09 |\n| Moradin | Divine patron | Active | Speaks through Crown/Aegis artifacts | All |\n| Circle of Eight Mages | 8 archmages | Arriving | Create mythal barrier at Rethmar | 09-P3 |\n| Druid Circle | Nature druids | Conditional | Help only if Hella passes Sacred Forest ritual | 09-P1 |\n| Tiri Kitor Elves | Wild elf scouts | Conditional | Help only if Starsong Hill quest completed | 09-P3 |\n| Ghostlord (Lich) | LN Lich | Negotiable | Can become ally or enemy depending on party choices | 09-P3 |\n\n---\n\n## ARTIFACT STATUS\n\n| Artifact | Owner | Status | Key Detail |\n|---|---|---|---|\n| Aegis Fang | Thorik | Active (pre-full awakening) | Becomes +4 Sacred Returning after full Corona awakening |\n| Corona di Adamantio | Thorik | Active (3/3 gems lit) | Topaz ✅, Emerald ✅, Ruby ✅ (activated at year -1000 battle) |\n| Ring of Chaotic Illumination | Artemis | Reforged | Full powers after Eternal Forge; further evolution at Invisible Tower |\n| Bracieri Gemelli di Moradin | Tordek | Fire ✅ / Earth ✅ | Both phases complete |\n| Collana dei Semi Eterni | Hella | Active (post-resurrection) | Treant summoning, Avatar form, party sacrifice gifts |\n| Cuore di Moradin | Crown set | Activated | Separate artifact at Altare; enabled resurrection ritual |\n| Orbe delle Otto Porte | Tordek (scenic) | At Tournament | Naruto-style chakra gate artifact: +2 STR/DEX morale per gate, 1d4 CON drain cumulative, final gate = disintegration |\n\n---\n\n## FUTURE ARC SUMMARY (What's Next)\n\n```\n[COMPLETED] Arcs 00–08 (Underdark + Eternal Forge + Hammerfist Battle)\n    ↓\n[CURRENT] Post-Hammerfist Personal Quests (Arc 09, parallel):\n    ├── P1: Hella — Sacred Forest druid ritual (Avatar transformation)\n    ├── P2A: Artemis — Invisible Tower (vs Zalkatar CR 13, Ring evolution)\n    ├── P2: Rhest — Sunken City (Wyrmlord Saarvith + Regiarax Black Dragon CR 13)\n    ├── P2B: Tordek — Tournament at Dauth (Otto Porte chakra gates + Githyanki attack)\n    │   └── Day 3 interrupted by Githyanki Red Dragon + Xal'thor Illithid Commander\n    └── P3 Alliances: Starsong Hill elves, Ghostlord negotiation, Sabotaggio Drow\n    ↓\nBattle of Rethmar (Arc 09-P3, 5 Phases):\n    Phase 0: Night of the Drow (temple sabotage — Sonjak/Il Collezionista faction)\n    Phase 1: Siege (horde + Giants + Githyanki + drow; multiple dragon colors)\n    Phase 2: Draconic ritualists (10-round Avatar of Tiamat summoning)\n    Phase 3: Azarr Kul (CR 15) + Tyrgarun Very Old Blue Dragon (CR 20)\n    Phase 4: Circle of Eight Mythal (7 rounds) + animated city statues\n```\n\n---\n\n## BRANCHING DECISIONS (DM Reference)\n\n### Hella Resurrection\n- **Yes:** Party proceeds at full STR; Hella gains Treant Hybrid template, Collana dei Semi Eterni\n- **No:** Party continues with 3 PCs; Hella's artifact powers are lost; druid circle cannot be recruited\n\n### Tordek Tournament Outcome\n- **Win:** 150 dwarf mercenaries sent as reinforcements to Rethmar; chakra enlightenment\n- **Interrupted by Githyanki:** Tournament becomes combat encounter; Githyanki dragon-rider faction STR at Rethmar depends on outcome here\n\n### Hella Sacred Forest Ritual\n- **Pass:** Druid circle offers nature power at Rethmar (summons, shapeshifting warriors)\n- **Fail:** Circle remains neutral; no nature allies at final battle\n\n### Artemis vs Zalkatar\n- **Zalkatar defeated:** Ring reaches Ultimate Chaos form; no illithid interference at Rethmar\n- **Zalkatar escapes:** Ring powers partially awakened; Zalkatar may appear as wildcard at Rethmar\n\n### Night of the Drow Artifact\n- **Defended:** Temple strong, morale high; Avatar of Tiamat weakened\n- **Stolen:** Avatar +2 RI, +20 HP; Mythal effectiveness reduced\n- **Destroyed:** Avatar loses catalyst; Circle of Eight Mythal strengthened\n\n---\n\n## CROSS-REFERENCES\n\n| Need to know about... | Load file |\n|---|---|\n| Party stats and combat details | `references/campaign-party.md` |\n| Artifact mechanics and synergies | `references/campaign-artifacts.md` |\n| Cannath Vale map and locations | `references/fr-cannath-vale.md` |\n| All factions (canonical + custom) | `references/fr-factions.md` |\n| DM tools, quests, monster art | `references/dm-expansion-toolkit.md` |\n| Full narrative history | `campaign/lore/campaign-history.md` |\n| House rules | `campaign/lore/house-rules.md` |"
+}

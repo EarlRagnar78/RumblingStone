@@ -1,4 +1,4 @@
-# Forgotten Realms — Regions Complete Reference (D&D 3.5)
+# FR — Regions Complete Reference (D&D 3.5)
 
 Sources: FRCS (2001), Silver Marches (2002), Unapproachable East (2003), Shining South (2004),
 Serpent Kingdoms (2004), Lands of Intrigue (1997)
@@ -355,7 +355,7 @@ inventions and firearms (gonne) experimented here. Ships powered by wind-catcher
 
 ## REGIONAL FEATS (Player's Guide to Faerûn)
 
-Each character from a specific region may take 1 bonus Regional feat at character creation
+Each character from a specific region may take 1 bon Regional feat at character creation
 (in addition to standard feats). These require the specific birthplace/upbringing.
 
 | Region | Sample Regional Feats |

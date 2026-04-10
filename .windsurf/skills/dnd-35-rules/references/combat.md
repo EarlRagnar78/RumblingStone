@@ -6,26 +6,26 @@ Source: d20srd.org/srd/combat/
 
 ## Combat Sequence
 
-1. **Roll Initiative**: d20 + DEX modifier (+ misc bonuses like Improved Initiative)
-2. **Surprise round** (if applicable): only aware combatants act; only standard OR move action
+1. **Roll Initiative**: d20 + DEX mod (+ misc bonuses like Improved Initiative)
+2. **Surprise round** (if applicable): only aware combatants act; only standard OR MvA
 3. **Combat rounds** (6 seconds each): all combatants act in initiative order
 
-**Flat-footed**: Before your first action in combat (or if caught unaware). Lose DEX bonus to AC; cannot use Dodge bonus; cannot make attacks of opportunity.
+**Flat-footed**: Before your first action in combat (or if caught unaware). Lose DEX bon to AC; cannot use Dodge bon; cannot make attacks of opportunity.
 
 ---
 
-## Action Types per Round
+## Action Types /rnd
 
-| Action Type | Count per Round | Examples |
+| Action Type | Count /rnd | Examples |
 |---|---|---|
 | Standard | 1 | Attack, cast most spells, activate item |
 | Move | 1 | Move speed, draw weapon, stand from prone |
 | Full-Round | Replaces std+move | Full attack, charge (at speed), run |
 | Free | Unlimited (GM discretion) | Drop item, speak phrase, cease concentration |
-| Swift | 1 per round | Some spells/abilities (Complete Adventurer) |
-| Immediate | 1 per round* | Immediate-action spells (uses next round's swift) |
+| Swift | 1 /rnd | Some spells/abilities (Complete Adventurer) |
+| Immediate | 1 /rnd* | Immediate-action spells (uses next round's swift) |
 
-*Only 1 immediate + 0 swift, OR 0 immediate + 1 swift per round.
+*Only 1 immediate + 0 swift, OR 0 immediate + 1 swift /rnd.
 
 **Convert actions downward**: Standard → Move; Full-Round → Standard+Move
 
@@ -33,7 +33,7 @@ Source: d20srd.org/srd/combat/
 
 ## The Full Attack
 
-A character who has multiple attacks from high BAB MUST take a Full-Round Action to use all of them. Moving AND attacking (single strike) = Standard Action only (no iteratives).
+A character who has multiple attacks from high BAB MUST take a FRA to use all of them. Moving AND attacking (single strike) = StdA only (no iteratives).
 
 **Two-Weapon Fighting penalties (base):**
 - Primary hand: −6
@@ -44,24 +44,24 @@ A character who has multiple attacks from high BAB MUST take a Full-Round Action
 
 ---
 
-## Attack Bonus Calculation
+## Attack bon Calculation
 
-**Melee attack:** BAB + STR mod + size mod + misc
-**Ranged attack:** BAB + DEX mod + range penalty + size mod + misc
-**Touch attack:** BAB + STR/DEX mod + size mod (ignores armor/natural/shield bonus to AC)
-**Ranged touch attack:** as above, range penalty applies
+**mel attack:** BAB + STR mod + size mod + misc
+**rng attack:** BAB + DEX mod + range penalty + size mod + misc
+**Touch attack:** BAB + STR/DEX mod + size mod (ignores armor/natural/shield bon to AC)
+**rng touch attack:** as above, range penalty applies
 
-**Power Attack**: Before attack roll, declare penalty to attack (up to BAB) → equal bonus to damage (two-handed: 2× damage bonus)
+**Power Attack**: Before attack roll, declare penalty to attack (up to BAB) → equal bon to damage (two-handed: 2× damage bon)
 
-**Combat Expertise**: Before attack roll, declare penalty (up to 5) → equal dodge bonus to AC until next turn (requires INT 13)
+**Combat Expertise**: Before attack roll, declare penalty (up to 5) → equal dodge bon to AC until next turn (req: INT 13)
 
 ---
 
 ## Damage
 
-**Damage roll** = weapon die + STR mod (melee / thrown) + magic + misc
+**Damage roll** = weapon die + STR mod (mel / thrown) + magic + misc
 - Two-handed weapon: STR × 1.5 (round down)
-- Off-hand weapon: STR × 0.5 (minimum +0 from strength, but penalties apply fully)
+- Off-hand weapon: STR × 0.5 (min +0 from STR, but penalties apply fully)
 
 **Critical Hits**:
 1. Roll within threat range (e.g., 18–20 for scimitar) → threat
@@ -81,9 +81,9 @@ A character who has multiple attacks from high BAB MUST take a Full-Round Action
 | Dazzled | −1 attack rolls, Spot checks |
 | Dead | Dead |
 | Deafened | −4 Initiative; 20% spell failure; −4 Listen |
-| Dying | −1 to −9 HP; unconscious; lose 1 HP/round; save DC 10 at −1, +1 per round |
-| Energy Drained | −1 effective level per negative level; −1 all d20 rolls per level |
-| Entangled | −2 attacks, −4 DEX; move at half speed; spells need Concentration DC 15+spell level |
+| Dying | −1 to −9 HP; unconscious; lose 1 HP/round; save DC 10 at −1, +1 /rnd |
+| Energy Drained | −1 effective level per negative level; −1 all d20 rolls /lvl |
+| Entangled | −2 attacks, −4 DEX; move at half speed; spells need Concentration DC 15+SL |
 | Exhausted | STR/DEX −6; half speed; becomes fatigued after rest |
 | Fascinated | Flat-footed; only Spot/Listen as free actions |
 | Fatigued | STR/DEX −2; cannot run/charge |
@@ -93,12 +93,12 @@ A character who has multiple attacks from high BAB MUST take a Full-Round Action
 | Helpless | DEX 0; attackers get +4 to hit; adjacent gets coup de grace |
 | Incorporeal | Immune to nonmagic/mundane; 50% with magic; own attacks only affect incorporeal/ethereal |
 | Invisible | +2 attacks; defenders lose DEX; 50% miss |
-| Nauseated | Only move action; no attack/cast/concentration |
+| Nauseated | Only MvA; no attack/cast/concentration |
 | Panicked | Drop items; flee; −2 attacks/saves/checks |
 | Paralyzed | STR/DEX 0; helpless; falls prone |
 | Petrified | Object; retain INT; immune to everything practically |
 | Pinned | Held in grapple; only escape attempt; −4 AC vs. grappler; cannot cast (usually) |
-| Prone | −4 melee attacks; +4 AC vs. ranged; −4 AC vs. melee; move = crawl (5 ft/move action) |
+| Prone | −4 mel attacks; +4 AC vs. rng; −4 AC vs. mel; move = crawl (5 ft/MvA) |
 | Shaken | −2 attacks/saves/checks (not as severe as frightened/panicked) |
 | Sickened | −2 attacks/damage/saves/checks |
 | Stable | Dying but no longer losing HP; still unconscious |
@@ -111,18 +111,18 @@ A character who has multiple attacks from high BAB MUST take a Full-Round Action
 
 ## Attacks of Opportunity (AoO)
 
-**Provoked by (in melee threatened area):**
+**Provoked by (in mel threatened area):**
 - Moving out of a threatened square (not a 5-ft step)
-- Making a ranged attack
-- Casting a spell with Verbal/Somatic components (unless defensively: Concentration DC 15+spell level)
-- Using a skill in melee (some skills)
+- Making a rng attack
+- Casting a spell with Verbal/Somatic components (unless defensively: Concentration DC 15+SL)
+- Using a skill in mel (some skills)
 - Standing from prone
 - Drawing a weapon without Improved Draw / Quick Draw
 - Retrieving a stored item
 
 **AoO does NOT provoke unless stated otherwise.**
 
-**Combat Reflexes feat**: DEX mod extra AoOs per round (still only 1 per triggering creature per round)
+**Combat Reflexes feat**: DEX mod extra AoOs /rnd (still only 1 per triggering creature /rnd)
 
 **5-foot step**: Free; does not provoke; only if you haven't moved otherwise this round.
 
@@ -131,7 +131,7 @@ A character who has multiple attacks from high BAB MUST take a Full-Round Action
 ## Grapple
 
 1. Provoke AoO (unless you have Improved Grapple feat)
-2. Make melee touch attack vs. opponent
+2. Make mel touch attack vs. opponent
 3. If hits: opposed Grapple checks: d20 + BAB + STR mod + size mod
 4. Success → grappling; both are grappled
 
@@ -166,9 +166,9 @@ A character who has multiple attacks from high BAB MUST take a Full-Round Action
 ## Cover and Concealment
 
 **Cover:**
-- Soft cover (other creatures): +4 AC vs. ranged
-- Standard cover (half): +4 AC, +2 Reflex
-- Improved cover (¾): +8 AC, +4 Reflex
+- Soft cover (other creatures): +4 AC vs. rng
+- Standard cover (half): +4 AC, +2 Ref
+- Improved cover (¾): +8 AC, +4 Ref
 - Total cover: Cannot be targeted directly
 
 **Concealment (miss chance):**
@@ -189,8 +189,8 @@ A character who has multiple attacks from high BAB MUST take a Full-Round Action
 
 **Massive Damage Rule (optional)**: Taking 50+ damage in one hit → Fort save DC 15 or die.
 
-**Stabilize**: Someone adjacent can use a DC 15 Heal check (standard action) to stabilize a dying character. Also: Heal spell, healing magic.
+**Stabilize**: Someone adjacent can use a DC 15 Heal check (StdA) to stabilize a dying character. Also: Heal spell, healing magic.
 
-**Natural Stabilization**: 10% chance per round to stabilize naturally.
+**Natural Stabilization**: 10% chance /rnd to stabilize naturally.
 
 **Recovery**: Stable character wakes after d% hours unconscious; starts recovering at 1 HP/day with complete rest.

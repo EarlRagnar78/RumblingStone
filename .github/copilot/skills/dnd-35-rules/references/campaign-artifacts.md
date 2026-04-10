@@ -16,7 +16,7 @@ Sources: Campaign files in `PG/Artefatti/`, arc documents `06_`–`09_`
 
 ### Description
 
-Adapted from Forgotten Realms lore (originally Wulfgar's warhammer). In this campaign, Aegis Fang is a **dwarven waraxe** that bonded with Thorik during his death and resurrection at Drellin's Ferry. The weapon is a divine instrument of Moradin.
+Adapted from FR lore (originally Wulfgar's warhammer). In this campaign, Aegis Fang is a **dwarven waraxe** that bonded with Thorik during his death and resurrection at Drellin's Ferry. The weapon is a divine instrument of Moradin.
 
 ### Current Stats (Pre-Full Awakening)
 
@@ -55,7 +55,7 @@ Forged by Moradin from a shard of creation — not merely a crown of power but "
 ### Stats
 
 - **Aura:** Overwhelming Invocation, Divination, Abjuration
-- **Caster Level:** 20th
+- **CL:** 20th
 - **Weight:** 1.5 kg
 - **Material:** Adamantine and deep crystal
 - **Alignment:** Lawful Good
@@ -64,13 +64,13 @@ Forged by Moradin from a shard of creation — not merely a crown of power but "
 ### Active Powers (Currently Available)
 
 1. **Stone's Awareness (Su, CL 5):** On natural ground: +1 morale to attack/damage; detect secret doors and traps at will
-2. **Crown of Protection (Ex, CL 6):** +2 deflection bonus to AC while worn
+2. **Crown of Protection (Ex, CL 6):** +2 deflection bon to AC while worn
 
 ### Powers To Awaken (Via Legacy Rituals)
 
-3. **Moradin's Insight (Su):** True Seeing 1/day; +4 insight to Craft (Blacksmith). *Unlocked by: Trial of the Deep Hall*
+1. **Moradin's Insight (Su):** True Seeing 1/day; +4 insight to Craft (Blacksmith). *Unlocked by: Trial of the Deep Hall*
 2. **Adamantine Will (Su):** Counter charm/compulsion on natural ground. *Unlocked by: Anvil of the World*
-3. **Mantle of Stone and Spirit (Su):** Continuous Mind Blank; epic/evil DR. *Unlocked by: Siege of the Eternal Forge*
+3. **Mantle of Stone and Spirit (Su):** cont Mind Blank; epic/evil DR. *Unlocked by: Siege of the Eternal Forge*
 
 ### Three Sacred Gems
 
@@ -78,7 +78,7 @@ Forged by Moradin from a shard of creation — not merely a crown of power but "
 |---|---|---|---|---|
 | **Immutable Time** | Topaz | Fire Plane ritual | ✅ ACTIVATED | Time travel 1/month from Earth Node; costs 1d10 years aging |
 | **True Earth** | Emerald | Earth Plane ritual | ⏳  ACTIVATED AFTER ANVIL OF THE WORLD | Wall of Stone / Heal Earth / Controlled Earthquake 1/week (costs 1,000 gp) |
-| **Dwarven Might** | Ruby | Battle at -1000 | ⏳ ACTIVATES AT DAWN | Buff self+allies with strength/courage 1/week; -2 STR for 24h after |
+| **Dwarven Might** | Ruby | Battle at -1000 | ⏳ ACTIVATES AT DAWN | Buff self+allies with STR/courage 1/week; -2 STR for 24h after |
 
 ### Legacy Rituals (Sequential)
 
@@ -107,7 +107,7 @@ Band of polished obsidian with gold veins (Lathander), silver glyphs (Mask), and
 ### Stats
 
 - **Aura:** Strong Transmutation and Illusion [Chaotic, Good]
-- **Caster Level:** 15th
+- **CL:** 15th
 - **Market Price:** 163,400 gp (Unique)
 
 ### Constant Powers
@@ -119,12 +119,12 @@ Band of polished obsidian with gold veins (Lathander), silver glyphs (Mask), and
 
 ### Activated Powers
 
-1. **Wings of Shadow (At-will):** Fly 60 ft (Good), Flyby Attack feat. Free action toggle.
-2. **Shadow Step (Su, 1/5 rounds):** Teleport 60 ft between shadows. Move action.
-3. **Light of Lathander (Sp, 1/day):** Daylight 60 ft for 10 min + allies +2 morale to attack 3 rounds + enemies with light sensitivity -2 attack/damage. Swift action.
-4. **Shadow of Mask (Sp, 1/day):** Greater Invisibility (CL 15) on self + 1 ally for 5 rounds. Swift action.
-5. **Unity's Gift (Su, 1/day):** Grant 1 ally within 30 ft an extra Standard Action immediately. Swift action.
-6. **Firestorm Invocation (Sp, 1/day):** 8d6 fire in 30 ft burst, Reflex DC 19 half, allies immune. Standard action.
+1. **Wings of Shadow (At-will):** Fly 60 ft (Good), Flyby Attack feat. FreeA toggle.
+2. **Shadow Step (Su, 1/5 rounds):** Teleport 60 ft between shadows. MvA.
+3. **Light of Lathander (Sp, 1/day):** Daylight 60 ft for 10 min + allies +2 morale to attack 3 rounds + enemies with light sensitivity -2 attack/damage. SwiA.
+4. **Shadow of Mask (Sp, 1/day):** Greater Invisibility (CL 15) on self + 1 ally for 5 rounds. SwiA.
+5. **Unity's Gift (Su, 1/day):** Grant 1 ally within 30 ft an extra StdA immediately. SwiA.
+6. **Firestorm Invocation (Sp, 1/day):** 8d6 fire in 30 ft burst, Ref DC 19 half, allies immune. StdA.
 
 ### Crisis Powers (Involuntary Transformation Only)
 
@@ -157,7 +157,7 @@ Forged by Moradin from two blocks of adamantine — immersed in Fire Plane magma
 - **Weight:** 2.5 kg
 - **Material:** Pure adamantine, fused with mithral slag, fire topazes + emerald geodes
 - **Alignment:** Lawful Good
-- **Intelligence (Full):** INT 14, WIS 16, CHA 16, Ego 18
+- **INT (Full):** INT 14, WIS 16, CHA 16, Ego 18
 - **Prerequisites:** Dwarf, non-evil/non-chaotic, BAB +11, unarmed or dwarf bludgeon style, honors Moradin
 
 ### Fire Phase Powers (✅ AWAKENED — Baptism of Flames)
@@ -166,14 +166,14 @@ Forged by Moradin from two blocks of adamantine — immersed in Fire Plane magma
 2. **Power Attack Mastery:** Reduce PA penalty by 1 (min 0)
 3. **Pugno di Moradin (3/day, Su):** Swift; +WIS sacred damage to unarmed, push 5 ft on hit (Fort DC 18)
 4. **Colpi del Fuoco (3/day, Su):** Standard attack, +4d6 fire, push 5 ft (Fort DC 18), adjacent 2d6 fire (Ref DC 18)
-5. **Cuore di Brace:** Fire Resistance 10 (continuous)
-6. **Salto Infuocato (3/day, Su):** Move action; special jump (d20 + STR + Jump ranks + WIS), landing deals 2d6 fire in 3m radius
-7. **Jump Bonus:** +10 competence to Jump (passive while charges remain)
+5. **Cuore di Brace:** Fire Resistance 10 (cont)
+6. **Salto Infuocato (3/day, Su):** MvA; special jump (d20 + STR + Jump ranks + WIS), landing deals 2d6 fire in 3m radius
+7. **Jump bon:** +10 competence to Jump (passive while charges remain)
 8. **Sentient Voice:** Whispers dwarven advice; refuses powers if wielder betrays dwarven ideals
 
 ### Earth Phase Powers (⏳ COMPLETING — Trial of the Deep Gallery)
 
-9. **Pelle di Scorie e Pietra:** DR 5/adamantine (continuous)
+1. **Pelle di Scorie e Pietra:** DR 5/adamantine (cont)
 2. **Pugno Frana (3/day, Su):** Standard attack, +4d6 bludgeoning, target prone (Ref DC 19), adjacent must Balance DC 15 or prone
 3. **Ancoraggio della Montagna (2/day, Su):** Immediate; immune to forced movement, +4 saves vs displacement
 4. **Tremore del Forgiatore (1/day, Su):** Standard; 6m AoE: prone + 2d6 bludgeoning (Ref DC 18)
@@ -181,7 +181,7 @@ Forged by Moradin from two blocks of adamantine — immersed in Fire Plane magma
 
 ### Combined Powers (Fire + Earth)
 
-14. **Martello di Fuoco e Pietra:** On confirmed critical with Power Attack unarmed: free Colpi del Fuoco OR Pugno Frana effect (no charge spent)
+1. **Martello di Fuoco e Pietra:** On confirmed critical with Power Attack unarmed: free Colpi del Fuoco OR Pugno Frana effect (no charge spent)
 2. **Cammino nella Tempesta di Macerie:** Always stable on stone/rubble difficult terrain; +2 saves vs Bull Rush/Trip on rock
 
 ### Total Value
@@ -209,10 +209,10 @@ Created during Hella's resurrection ritual from 3 Treant seeds that germinated a
 
 ### Powers
 
-1. **Saggezza della Terra:** +4 Wisdom (Enhancement)
+1. **Saggezza della Terra:** +4 WIS (Enhancement)
 2. **Armatura Naturale:** +3 Natural AC
 3. **Avatar della Radice (1/day):** Transform into Huge Treant/Dwarf hybrid for 10 rounds (+8 STR, reach, slam attacks)
-4. **Evocazione dei Guardiani (3/day):** Summon an Adamantine Treant (see below). Standard action, lasts 1 hour. Max 1 active; or 3 together as "Nova" (destroys necklace for 1 month)
+4. **Evocazione dei Guardiani (3/day):** Summon an Adamantine Treant (see below). StdA, lasts 1 hour. Max 1 active; or 3 together as "Nova" (destroys necklace for 1 month)
 
 ### Adamantine Treant (Summoned)
 
@@ -224,13 +224,13 @@ Created during Hella's resurrection ritual from 3 Treant seeds that germinated a
 - **Siegebreaker:** Double damage to objects/structures (ignores hardness <20)
 - **Adamantine Traits:** Attacks count as adamantine for DR
 
-### Hella's Resurrection Gifts (Permanent, from party sacrifices)
+### Hella's Resurrection Gifts (perm, from party sacrifices)
 
 - **Pelle di Adamantio:** DR 3/- (from Thorik's blood sacrifice)
 - **Timeless Body:** Immunity to poison, disease, aging (from Tordek's Ki sacrifice)
 - **Spontaneous Rebirth (1/day):** Auto-stabilize + temp HP when reaching 0 HP (from Artemis's chaos spark)
 
-### Treant Hybrid Template (Permanent Transformation)
+### Treant Hybrid Template (perm Transformation)
 
 - **Dual Type:** Humanoid (Dwarf) / Plant (Treant Hybrid)
 - **Fire Vulnerability:** Fire damage ×1.5
@@ -238,7 +238,7 @@ Created during Hella's resurrection ritual from 3 Treant seeds that germinated a
 - **Regeneration 1:** 1 HP/round while touching natural earth/stone (negated by fire damage)
 - **Plant Empathy:** Wild Empathy works on plants; +4 to plant creature interactions
 - **Photosynthesis:** 1 hour in sunlight = heal 2d8 HP (1/day); half normal food requirement
-- **Root Anchoring (1/day, Sp):** Standard action; immune to trip/bull rush/push for 5 rounds; rooted in place
+- **Root Anchoring (1/day, Sp):** StdA; immune to trip/bull rush/push for 5 rounds; rooted in place
 
 ---
 
@@ -250,23 +250,28 @@ Created during Hella's resurrection ritual from 3 Treant seeds that germinated a
 **Source Files:** `07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md`, Sala della Forgia Eterna sections
 
 ### Description
+
 An ancient mithral altar hiding the **Cuore di Moradin** (Heart of Moradin) — a divine relic concealed inside a perfectly sealed reliquary at the center of the **Sala della Forgia Eterna** (hub room in the Eternal Forge complex). The Heart is not worn but activated through ritual at the Altare. It is functionally part of the Corona di Adamantio artifact set, serving as the catalyst that enables Hella's resurrection and bridges the gap between the gem activation rituals.
 
 ### Activation
+
 Activated via the **Rituale Cuore di Moradin** (performed between Fire Plane Part 3 and Earth Plane Part 4, in the Sala). This is a separate ritual from the gem activations.
 
 ### Powers
-1. **Resurrection Enabler:** When activated, the Cuore di Moradin makes the resurrection of a recently deceased ally possible within the Sala della Forgia Eterna — even without standard Raise Dead/Resurrection spells — at the cost of permanent sacrifices from each party member.
+
+1. **Resurrection Enabler:** When activated, the Cuore di Moradin makes the resurrection of a recently deceased ally possible within the Sala della Forgia Eterna — even without standard Raise Dead/Resurrection spells — at the cost of perm sacrifices from each party member.
 2. **Moradin's Presence:** While active, the Cuore radiates Moradin's divine aura throughout the Sala, granting:
-   - +2 sacred bonus to all saves within the Sala
+   - +2 sacred bon to all saves within the Sala
    - Consecrate effect (as spell) on the Sala floor
    - Communication with Moradin's divine will (visions, guidance)
 3. **Gem Synergy Catalyst:** The Cuore must be active before the Temporal Portal (Part 5) can open — it provides the divine energy bridge between the Topaz and Emerald gems.
 
 ### Status
+
 ✅ ACTIVATED (Rituale Cuore di Moradin completed between Parts 3 and 4)
 
 ### Relationship to Other Artifacts
+
 - Part of the Corona di Adamantio set (functionally)
 - Required for Hella's resurrection (prerequisite)
 - Required for Temporal Portal opening (Part 5)
@@ -277,9 +282,11 @@ Activated via the **Rituale Cuore di Moradin** (performed between Fire Plane Par
 ## NARRATIVE CONNECTIONS
 
 ### Il Collezionista's Artifact Trade
+
 The Rakshasa known as **Il Collezionista**, who escaped the Minotaur Lair encounter (Pre-Arc 01), has since formed an alliance with Sonjak's drow faction. He provides **strange and pure evil artifacts** to the drow — possibly the same artifacts the drow seek during the Night of the Drow assault on Rethmar's temple (Arc 09, Phase 0). His basilisk-powered macabre statue trade continues to fund these operations.
 
 ### Therysol's Origin
+
 The NPC **Therysol** (found in the Fire Plane, Arc 07) was originally a slave sold — with her brother — by drow traders affiliated with Il Collezionista's guild to salamanders in the Fire Elemental Plane. Her brother died and left a crystal that fused with Therysol, transforming her into an unicum. She hates salamanders and the elemental plane. After helping the party in the Fire Node and guarding Hella's corpse during the resurrection, Therysol descends deeper underground seeking revenge against Il Collezionista's drow guild. She may appear as an NPC ally during the Notte dei Drow at Rethmar (Arc 09, Phase 0).
 
 ---
@@ -297,21 +304,23 @@ A mystical orb that channels the user's life force through progressively dangero
 
 ### Mechanics (D&D 3.5)
 
-**Activation:** Free action (one gate per round)
+**Activation:** FreeA (one gate /rnd)
 **Effect per gate:**
-- +2 morale bonus to STR and DEX
-- +2 morale bonus to all saving throws
+
+- +2 morale bon to STR and DEX
+- +2 morale bon to all saving throws
 - Duration: 1 round per gate
 
 **Cost per gate:**
-- 1d4 temporary CON damage (cumulative)
+
+- 1d4 temp CON damage (cumulative)
 - Fatigued condition after all gates close
 - Concentration check DC 20 + number of gates already opened to activate safely
 - Failed check: gate opens but user is Stunned for 1 round
 
 **Gate Progression:**
 
-| Gate | Cumulative Bonus | Cumulative CON Drain (avg) | Risk |
+| Gate | Cumulative bon | Cumulative CON Drain (avg) | Risk |
 |---|---|---|---|
 | 1st | +2 STR/DEX, +2 saves | ~2.5 | Low |
 | 2nd | +4 STR/DEX, +4 saves | ~5 | Moderate |
@@ -329,7 +338,7 @@ A mystical orb that channels the user's life force through progressively dangero
 
 - Creates Dragon Ball / Naruto-style escalating tension in tournament fights
 - Each gate opening is a dramatic moment (read-aloud text, physical transformation description)
-- **Tordek's Chakra Enlightenment:** Through the tournament and Orb interaction, Tordek gains permanent martial spiritual awareness — 7 soul gates of jujitsu combat. The powers come with physical costs and strain; the final power leads to disintegration if used.
+- **Tordek's Chakra Enlightenment:** Through the tournament and Orb interaction, Tordek gains perm martial spiritual awareness — 7 soul gates of jujitsu combat. The powers come with physical costs and strain; the final power → disintegration if used.
 
 ---
 
@@ -340,9 +349,9 @@ All synergies activate when artifact bearers are within 30 ft (9m) of each other
 | Combination | Trigger | Effect | Frequency |
 |---|---|---|---|
 | **Corona + Ring** (Passive) | Within 10 ft | +1 Dodge AC vs Lawful | Constant |
-| **Corona + Ring** (Active) | Swift action | Planar Vision + Dispel Illusion 30 ft | 1/day |
+| **Corona + Ring** (Active) | SwiA | Planar Vision + Dispel Illusion 30 ft | 1/day |
 | **Aegis + Ring** (Dark Dawn Strike) | Coordinated same-round | +2 attack, +2d6 sacred to Thorik | 1/day |
-| **Divine Trinity** (Crown+Ring+Bracieri) | All 3 spend Move action | Fear/Charm immunity, +4 sacred saves, +2 sacred AC, Good/Lawful DR bypass, Aura of Awe DC 20 | 1/day, 5 rounds |
+| **Divine Trinity** (Crown+Ring+Bracieri) | All 3 spend MvA | Fear/Charm immunity, +4 sacred saves, +2 sacred AC, Good/Lawful DR bypass, Aura of Awe DC 20 | 1/day, 5 rounds |
 
 ---
 

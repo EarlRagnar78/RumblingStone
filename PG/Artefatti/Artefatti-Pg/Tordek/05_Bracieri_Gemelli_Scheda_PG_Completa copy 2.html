@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bracieri Gemelli di Moradin — Scheda Completa</title>
+    <meta name="description" content="Scheda completa dei Bracieri Gemelli di Moradin (Twin Hearth-Gauntlets of Moradin) per D&D 3.5. Include tutti i poteri di Fuoco e Terra, lore, rituale di risveglio e statistiche.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@400;600&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        /* ── Page Setup ── */
+        @page { size: A4; margin: 0.5in; }
+
+        *, *::before, *::after { box-sizing: border-box; }
+
+        body {
+            font-family: 'IM Fell English', 'Times New Roman', serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: #1e100a;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(160deg, #f9f5ee 0%, #ede6d3 100%);
+        }
+
+        /* ── Typography ── */
+        h1, h2, h3, h4 { font-family: 'Cinzel', serif; }
+
+        .class-title {
+            font-family: 'Cinzel Decorative', cursive;
+            font-size: 22pt;
+            font-weight: 700;
+            color: #6b1c07;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 3px rgba(139,45,10,0.25);
+        }
+
+        .subtitle {
+            font-family: 'Cinzel', serif;
+            font-size: 12pt;
+            color: #4a2e1a;
+            margin: 4px 0;
+            letter-spacing: 1px;
+        }
+
+        .dwarven {
+            font-family: 'Cinzel Decorative', cursive;
+            font-size: 10.5pt;
+            color: #8b1a00;
+            text-shadow: 0 0 4px rgba(255,80,0,0.3);
+            font-weight: 700;
+            text-align: center;
+            margin-top: 6px;
+            letter-spacing: 0.5px;
+            font-style: italic;
+        }
+
+        h2 {
+            font-size: 13.5pt;
+            font-weight: 600;
+            color: #6b1c07;
+            border-bottom: 2px solid #c08020;
+            padding-bottom: 3px;
+            margin: 18px 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            font-size: 11.5pt;
+            font-weight: 600;
+            color: #3d1f0a;
+            margin: 14px 0 6px 0;
+        }
+
+        /* ── Layout ── */
+        .header {
+            text-align: center;
+            border-bottom: 3px double #8b4513;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 14px;
+        }
+
+        /* ── Artifact Image ── */
+        .artifact-image {
+            display: block;
+            margin: 0 auto 14px auto;
+            max-width: 22%;
+            height: auto;
+            border: 4px solid #8b4513;
+            border-radius: 10px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.45);
+        }
+
+        /* ── Stat / Info Blocks ── */
+        .stat-block {
+            background: rgba(139,69,19,0.05);
+            border: 1px solid #8b4513;
+            border-left: 4px solid #8b4513;
+            padding: 10px 12px;
+            margin-bottom: 14px;
+            border-radius: 4px;
+            font-size: 10.5pt;
+        }
+
+        .lore-block {
+            background: rgba(100,50,10,0.04);
+            border: 1px dashed #a06020;
+            border-left: 4px solid #c08020;
+            padding: 10px 14px;
+            margin-bottom: 14px;
+            border-radius: 4px;
+            font-style: italic;
+            font-size: 10pt;
+            color: #3a1f08;
+        }
+
+        .req-block {
+            background: rgba(70,20,0,0.06);
+            border: 1px solid #8b2500;
+            border-left: 4px solid #8b2500;
+            padding: 10px 12px;
+            margin-bottom: 14px;
+            border-radius: 4px;
+            font-size: 10pt;
+        }
+
+        .req-block ul { margin: 4px 0; padding-left: 18px; }
+        .req-block li { margin: 3px 0; }
+
+        .warning-box {
+            background: rgba(180,30,0,0.07);
+            border: 1px solid #8b2500;
+            padding: 7px 12px;
+            border-radius: 4px;
+            font-size: 10pt;
+            margin-top: 8px;
+            color: #6b1000;
+        }
+
+        /* ── Tables ── */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 10pt;
+        }
+
+        th {
+            background: linear-gradient(135deg, #6b1c07, #9b3a0f);
+            color: #f5e6c8;
+            padding: 6px 8px;
+            text-align: center;
+            font-weight: 600;
+            border: 1px solid #4a1205;
+            font-family: 'Cinzel', serif;
+            font-size: 9.5pt;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            padding: 5px 7px;
+            text-align: left;
+            border: 1px solid #c09050;
+            background: rgba(252,248,238,0.85);
+            vertical-align: top;
+        }
+
+        tr:nth-child(even) td { background: rgba(240,228,200,0.85); }
+
+        /* ── Power Tables (Attivabili) ── */
+        .table-attivabili th {
+            background: linear-gradient(135deg, #7a0000, #c03000);
+            color: #fff5e0;
+            border-color: #5a0000;
+        }
+
+        .table-attivabili td {
+            border-color: #c06030;
+            background: rgba(255,248,240,0.9);
+        }
+
+        .table-attivabili tr:nth-child(even) td {
+            background: rgba(255,235,215,0.9);
+        }
+
+        /* ── Earth Power Table ── */
+        .table-terra th {
+            background: linear-gradient(135deg, #2d5a1b, #4a8c2a);
+            color: #ffffdf;
+            border-color: #1a3d0d;
+        }
+
+        .table-terra td {
+            border-color: #6a9a40;
+            background: rgba(240,252,235,0.9);
+        }
+
+        .table-terra tr:nth-child(even) td {
+            background: rgba(220,240,210,0.9);
+        }
+
+        /* ── Passive Table ── */
+        .table-passivi th {
+            background: linear-gradient(135deg, #1a4070, #2d6aaa);
+            color: #e8f0ff;
+            border-color: #0d2a55;
+        }
+
+        .table-passivi td {
+            border-color: #3060a0;
+            background: rgba(235,243,255,0.9);
+        }
+
+        .table-passivi tr:nth-child(even) td {
+            background: rgba(215,230,255,0.9);
+        }
+
+        /* ── CSS helper classes replacing inline styles ── */
+        .row-title { font-weight: bold; color: #8b0000; }
+        .row-center { text-align: center; }
+        .row-center-green { text-align: center; color: #1a4010; font-weight: bold; }
+
+        /* ── Synergy Box ── */
+        .synergy-box {
+            background: rgba(0,80,0,0.05);
+            border: 2px solid #2d7a1a;
+            padding: 12px 14px;
+            margin: 14px 0;
+            border-radius: 6px;
+        }
+
+        .synergy-title {
+            font-family: 'Cinzel', serif;
+            font-weight: 600;
+            font-size: 11pt;
+            color: #1a4a0a;
+            margin-bottom: 6px;
+        }
+
+        /* ── Blessing Box ── */
+        .blessing-box {
+            background: rgba(180,100,0,0.06);
+            border: 2px solid #c08020;
+            padding: 12px 14px;
+            margin: 14px 0;
+            border-radius: 6px;
+        }
+
+        .blessing-title {
+            font-family: 'Cinzel', serif;
+            font-weight: 600;
+            font-size: 11pt;
+            color: #7a4800;
+            margin-bottom: 6px;
+        }
+
+        /* ── Jump Detail Box ── */
+        .jump-details {
+            border: 2px solid #daa520;
+            padding: 14px;
+            background: rgba(255,215,0,0.05);
+            border-radius: 8px;
+            margin-bottom: 18px;
+            page-break-inside: avoid;
+        }
+
+        .jump-title {
+            margin-top: 0;
+            border-bottom: 1px solid #daa520;
+            color: #b8860b;
+            padding-bottom: 5px;
+            font-size: 11pt;
+            font-family: 'Cinzel', serif;
+        }
+
+        .details-paragraph { margin-bottom: 5px; }
+
+        .details-list {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+
+        .details-list-item { margin-bottom: 5px; }
+
+        .details-list-zero { margin-top: 0; }
+
+        .example-box {
+            font-size: 0.9em;
+            background: rgba(255,255,255,0.65);
+            padding: 9px;
+            border-radius: 4px;
+            border: 1px dashed #daa520;
+            margin-top: 10px;
+        }
+
+        /* ── Cheat Sheet ── */
+        .cheat-sheet {
+            border: 2px solid #8b4513;
+            border-radius: 6px;
+            padding: 12px;
+            margin-top: 18px;
+            background: rgba(254,250,244,0.9);
+            page-break-inside: avoid;
+        }
+
+        .cheat-sheet-title {
+            text-align: center;
+            margin: 0 0 10px 0;
+            color: #6b1c07;
+            border-bottom: 1px solid #8b4513;
+            padding-bottom: 5px;
+            font-family: 'Cinzel', serif;
+            font-size: 11pt;
+        }
+
+        /* ── Senzienza Box ── */
+        .senzienza-box {
+            background: rgba(50,0,80,0.05);
+            border: 1px solid #600080;
+            border-left: 4px solid #800090;
+            padding: 10px 12px;
+            margin-bottom: 14px;
+            border-radius: 4px;
+            font-size: 10.5pt;
+        }
+
+        /* ── Lists ── */
+        ul { margin: 5px 0; padding-left: 20px; }
+        li { margin: 3px 0; }
+
+        /* ── Value Table ── */
+        .value-block {
+            background: rgba(139,69,19,0.04);
+            border: 1px solid #b08030;
+            padding: 10px 14px;
+            border-radius: 6px;
+            margin-bottom: 14px;
+        }
+
+        .value-header {
+            font-family: 'Cinzel', serif;
+            font-weight: 600;
+            font-size: 10.5pt;
+            color: #6b3010;
+            margin: 0 0 6px 0;
+        }
+
+        .value-content { font-size: 10pt; }
+
+        /* ── Section divider ── */
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 12pt;
+            font-weight: 600;
+            color: #fff5e0;
+            background: linear-gradient(135deg, #6b1c07, #9b3a0f);
+            padding: 5px 12px;
+            border-radius: 4px;
+            margin: 18px 0 8px 0;
+            letter-spacing: 0.5px;
+        }
+
+        .section-title-earth {
+            font-family: 'Cinzel', serif;
+            font-size: 12pt;
+            font-weight: 600;
+            color: #e8ffd8;
+            background: linear-gradient(135deg, #2d5a1b, #4a8c2a);
+            padding: 5px 12px;
+            border-radius: 4px;
+            margin: 18px 0 8px 0;
+            letter-spacing: 0.5px;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 9pt;
+            background: rgba(0,0,0,0.06);
+            padding: 1px 4px;
+            border-radius: 3px;
+        }
+
+        /* ── Print ── */
+        @media print {
+            body { font-size: 10pt; padding: 0; background: white; }
+            .artifact-image { max-width: 20%; }
+            table, .stat-block, h2, h3, h4,
+            .synergy-box, .cheat-sheet, .jump-details,
+            .lore-block, .req-block, .blessing-box { break-inside: avoid; page-break-inside: avoid; }
+            .header { border-bottom: 2px solid #8b4513; margin-bottom: 14px; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ════════════════════════════════════════════════════════
+         HEADER
+    ════════════════════════════════════════════════════════ -->
+    <div class="header">
+        <h1 class="class-title">Bracieri Gemelli di Moradin</h1>
+        <div class="subtitle">Twin Hearth-Gauntlets of Moradin</div>
+        <div class="subtitle">Stato: Risveglio Completo (Fuoco &amp; Terra) — Artefatto Legale Buono</div>
+        <div class="dwarven">«Una forgia senza fuoco non crea, ma un fuoco senza pietra non dura.»</div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════
+         DESCRIZIONE FISICA & LORE
+    ════════════════════════════════════════════════════════ -->
+    <h2>Aspetto &amp; Lore</h2>
+
+    <div class="lore-block">
+        <p>Prima che la Forgia Eterna fosse una sala, prima che la Corona di Adamantio fosse posata su una fronte mortale,
+        Moradin sollevò dalla roccia due blocchi di adamantio ancora rovente. Li immerse nel magma del Piano del Fuoco finché
+        non bevvero la furia delle fiamme, poi li incatenò al cuore del Piano della Terra perché imparassero il peso della montagna.</p>
+        <p>Quando emersero dall'Incudine del Mondo, non erano più semplici placche di metallo, ma <strong>pugni</strong>.
+        Pugni foggiati per coloro che scelgono di combattere con il proprio corpo, come se ogni osso fosse un martello e ogni
+        muscolo una morsa.</p>
+        <p>I nani li chiamano <em>Bracieri Gemelli di Moradin</em>, perché bruciano con due fiamme: quella che consuma e quella
+        che sostiene. Leggenda narra che, nelle ere in cui i draghi credevano di dominare sia il cielo che la roccia, un solo
+        nano monaco si alzò in piedi con i pugni avvolti da questi guanti e insegnò a un drago antico la differenza tra
+        possedere una montagna e meritarla.</p>
+    </div>
+
+    <div class="stat-block">
+        <strong>Guanto Sinistro:</strong> Dorso con gemma <em>Topazio-Fuoco</em> — pulsante come una fornace. Rune naniche
+        di Moradin brillano di bagliore bronzeo quando chiudi il pugno.<br>
+        <strong>Guanto Destro:</strong> Dorso con <em>Geode di Smeraldo</em> — luce verde profonda, calma come la montagna.
+        Vene d'argento e smeraldo corrono lungo l'avambraccio.<br>
+        <strong>Sensazione:</strong> Calore secco e costante. Indossarli trasmette calma inflessibile, come un vecchio fabbro
+        che osserva il lavoro in silenzio. Quando colpiscono, lasciano scie di scintille nell'aria.
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════
+         STATISTICHE TECNICHE
+    ════════════════════════════════════════════════════════ -->
+    <h2>Statistiche dell'Artefatto</h2>
+
+    <table>
+        <tbody>
+        <tr>
+            <th>Campo</th>
+            <th>Valore</th>
+            <th>Campo</th>
+            <th>Valore</th>
+        </tr>
+        <tr>
+            <td><strong>Tipo</strong></td>
+            <td>Artefatto Legale Buono</td>
+            <td><strong>Slot</strong></td>
+            <td>Mani</td>
+        </tr>
+        <tr>
+            <td><strong>Aura</strong></td>
+            <td>Travolgente (Evocazione, Abiurazione, Invocazione, Trasmutazione)</td>
+            <td><strong>Livello Incantatore</strong></td>
+            <td>20°</td>
+        </tr>
+        <tr>
+            <td><strong>Materiale</strong></td>
+            <td>Adamantio + scorie mithral + Topazio del Fuoco + Geode di Smeraldo</td>
+            <td><strong>Peso</strong></td>
+            <td>2,5 kg</td>
+        </tr>
+        <tr>
+            <td><strong>Ego (Pieno Risveglio)</strong></td>
+            <td>18 — Intelligenza 14, Saggezza 16, Carisma 16</td>
+            <td><strong>TS Propri</strong></td>
+            <td>Tempra 20 / Riflessi 14 / Volontà 18</td>
+        </tr>
+        <tr>
+            <td><strong>Identificare le Scuole</strong></td>
+            <td>CD 30 (Identificare Magia)</td>
+            <td><strong>Valore Stimato (Completo)</strong></td>
+            <td>~94.900 mo (non vendibile — artefatto)</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- ════════════════════════════════════════════════════════
+         REQUISITI PORTATORE
+    ════════════════════════════════════════════════════════ -->
+    <h2>Requisiti del Portatore</h2>
+
+    <div class="req-block">
+        <p>Per ottenere e mantenere i poteri completi, il portatore deve soddisfare <strong>tutti</strong> i seguenti requisiti:</p>
+        <ul>
+            <li><strong>Razza:</strong> Nano.</li>
+            <li><strong>Allineamento:</strong> Qualsiasi non malvagio, non caotico puro.</li>
+            <li><strong>Bonus di Attacco Base:</strong> +11 o superiore.</li>
+            <li><strong>Stile di combattimento:</strong> Colpi senz'armi o armi contundenti naniche (martelli, asce da guerra usate a impatto, ecc.).</li>
+            <li><strong>Fede:</strong> Riconoscere Moradin come divinità maggiore e onorare regolarmente forge, templi e clan.</li>
+        </ul>
+        <div class="warning-box">
+            ⚠ <strong>Attenzione:</strong> Se uno di questi requisiti viene meno, i guanti si riducono a semplici guanti di adamantio senza poteri magici. L'artefatto è molto esigente: allearsi con forze caotiche o malvagie porta alla perdita immediata dei poteri. La voce nella forgia può anche rifiutare i poteri se il portatore fugge o disonora la forgia.
+        </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════
+         SENZIENZA
+    ════════════════════════════════════════════════════════ -->
+    <h2>Senzienza: La Voce nella Forgia</h2>
+
+    <div class="senzienza-box">
+        <strong>Ego 18.</strong> I guanti possiedono una coscienza potente. Non parlano costantemente, ma trasmettono
+        <em>concetti</em>: <em>disciplina, calore, martello, pazienza</em>. Occasionalmente sussurrano suggerimenti brevi
+        in nanico antico — voce di un vecchio fabbro burbero.<br><br>
+        <strong>Stato Fuoco (primo risveglio):</strong> Int 10, Sag 14, Car 14, Ego 12.<br>
+        <strong>Stato Terra+Fuoco (pieno risveglio):</strong> Int 14, Sag 16, Car 16, Ego 18.<br><br>
+        <strong>Scopi:</strong> Difendere i nani, punire draghi arroganti, proteggere le forge.<br>
+        <strong>Tratti:</strong> Parla poco, diretto. Ammira coraggio e disciplina. Disprezza indecisione e codardia.
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════
+         POTERI COSTANTI (PASSIVI)
+    ════════════════════════════════════════════════════════ -->
+    <div class="section-title">Poteri Costanti (Passivi) — Sempre Attivi</div>
+    <p>La presenza della Terra stabilizza la furia del Fuoco, mentre il Fuoco infonde energia nella pietra immobile.
+    Questi poteri sono sempre attivi mentre i guanti sono indossati da un portatore degno.</p>
+
+    <table class="table-passivi">
+        <tbody>
+        <tr>
+            <th>Potere</th>
+            <th>Tipo</th>
+            <th>Effetto</th>
+        </tr>
+        <tr>
+            <td><strong>Pelle di Scorie e Pietra</strong></td>
+            <td class="row-center">(Su)</td>
+            <td>La tua pelle assume la durezza della roccia viva. Ottieni <strong>RD 5/adamantio</strong> (riduzione del danno fisico).</td>
+        </tr>
+        <tr>
+            <td><strong>Cuore di Brace</strong></td>
+            <td class="row-center">(Su)</td>
+            <td><strong>Resistenza al Fuoco 10</strong>. Ignori gli effetti ambientali da calore eccessivo (forgie, magma, geyser, ecc.) finché il danno per round non supera 10.</td>
+        </tr>
+        <tr>
+            <td><strong>Castigo del Drago</strong></td>
+            <td class="row-center">(Su)</td>
+            <td>Proprietà <em>Nemesi dei Draghi (Dragon Bane)</em>. Contro draghi o creature con sottotipo drago: <strong>+2 potenziamento al TxC</strong> e <strong>+2d6 danni</strong> extra.</td>
+        </tr>
+        <tr>
+            <td><strong>Maestria dell'Attacco Poderoso</strong></td>
+            <td class="row-center">(Ex)</td>
+            <td>Quando usi Attacco Poderoso con colpi senz'armi o armi contundenti naniche, riduci la penalità al TxC di <strong>1</strong> (i danni rimangono pieni). <em>Es.: dichiari -4, tiri come -3, ma ottieni il danno da -4.</em></td>
+        </tr>
+        <tr>
+            <td><strong>Cariche di Devastazione</strong></td>
+            <td class="row-center">(Su)</td>
+            <td>I guanti possiedono <strong>3 Cariche/giorno</strong> (rinnovano all'alba o dopo 8 ore di riposo con preghiera a Moradin). Quando <strong>confermi un critico</strong> in mischia, puoi spendere cariche: <strong>1 carica → +2d6 forza · 2 cariche → +3d6 forza · 3 cariche → +4d6 forza.</strong><br>Dopo aver speso cariche, tira 1d20: su <strong>18–20 naturale</strong>, recuperi 1 carica gratuitamente (non supera il massimo di 3).</td>
+        </tr>
+        <tr>
+            <td><strong>Passo di Brace</strong></td>
+            <td class="row-center">(Su)</td>
+            <td>Finché hai almeno 1 uso di <em>Salto Fiammegiante</em> rimasto, ottieni <strong>+3 m alla velocità base di movimento</strong> a terra. Perdi questo bonus se esaurisci tutti gli usi di Salto Fiammegiante.</td>
+        </tr>
+        <tr>
+            <td><strong>Vista della Galleria</strong></td>
+            <td class="row-center">(Ex)</td>
+            <td>Entro <strong>9 m</strong>, percepisci automaticamente crepe, instabilità e cavità nella pietra. <strong>+4 competenza</strong> alle prove per notare trappole, corridoi segreti e instabilità che coinvolgono roccia.</td>
+        </tr>
+        <tr>
+            <td><strong>Cammino nella Tempesta</strong></td>
+            <td class="row-center">(Ex)</td>
+            <td>Sei considerato sempre stabile su terreno difficile di pietra, detriti o macerie. Nessuna penalità di movimento su roccia/pietra. <strong>+2 ai TS e prove</strong> contro Spingere e Sbilanciare mentre stai su roccia.</td>
+        </tr>
+        <tr>
+            <td><strong>Benedizione della Forgia — Frantumare</strong></td>
+            <td class="row-center">(Su)</td>
+            <td><strong>1/Giorno:</strong> Dopo aver colpito con un critico confermato, puoi lanciare <em>Shatter</em> (CL 13, CD 16) centrato sul nemico colpito — <strong>azione gratuita</strong>. Devastante contro strutture e oggetti fragili (danno doppio al cristallo). Infligge 1d6 sonoro per CL vs creature con parti cristalline.</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- ════════════════════════════════════════════════════════
+         POTERI ATTIVABILI — FUOCO
+    ════════════════════════════════════════════════════════ -->
+    <div class="section-title">La Danza degli Elementi — Poteri Attivabili</div>
+
+    <table class="table-attivabili">
+        <tbody>
+        <tr>
+            <th>Potere</th>
+            <th>Usi</th>
+            <th>Azione</th>
+            <th>Effetto</th>
+        </tr>
+        <tr>
+            <td class="row-title">1. Pugni di Magma (Su)</td>
+            <td class="row-center">3/Giorno</td>
+            <td class="row-center">Azione Veloce (Swift)</td>
+            <td>Per <strong>1 round</strong>, aggiungi il tuo <strong>Bonus Saggezza come danni da Fuoco</strong> a tutti i colpi senz'armi. I nemici colpiti devono superare <strong>TS Tempra CD 18</strong> o essere <strong>Infermi (Sickened)</strong> per 1 round (calore e fumo).</td>
+        </tr>
+        <tr>
+            <td class="row-title">2. Pugno Frana (Su)</td>
+            <td class="row-center">3/Giorno</td>
+            <td class="row-center">Azione Standard</td>
+            <td>Colpo + <strong>+4d6 Contundenti</strong>. Bersaglio: <strong>TS Riflessi CD 19</strong> o cade <strong>Prono</strong>. Tutte le creature adiacenti al bersaglio: <strong>Equilibrio CD 15</strong> o cadono prone.</td>
+        </tr>
+        <tr>
+            <td class="row-title">3. Tremore del Forgiatore (Su)</td>
+            <td class="row-center">1/Giorno</td>
+            <td class="row-center">Azione Standard</td>
+            <td>Colpisci il terreno con entrambi i pugni. Sisma locale in un raggio di <strong>6 m</strong> centrato su di te: tutte le creature devono superare <strong>TS Riflessi CD 18</strong> o cadono <strong>Prone e subiscono 2d6 danni Contundenti</strong> (dimezza se salvo). Strutture e oggetti fragili possono subire danni. Danno doppio sulle strutture.</td>
+        </tr>
+        <tr>
+            <td class="row-title">4. Colpi del Fuoco (Su)</td>
+            <td class="row-center">3/Giorno</td>
+            <td class="row-center">Azione Standard</td>
+            <td>Colpo + <strong>+4d6 Fuoco</strong>. Impatto: <strong>TS Tempra CD 18</strong> o spinto 1,5 m. Esplosione: tutte le creature adiacenti subiscono <strong>2d6 Fuoco</strong> (Riflessi CD 18 dimezza).</td>
+        </tr>
+        <tr>
+            <td class="row-title">5. Ancoraggio della Montagna (Su)</td>
+            <td class="row-center">2/Giorno</td>
+            <td class="row-center">Azione Immediata</td>
+            <td>Quando verresti spinto, sbilanciato, trascinato o sollevato contro la tua volontà: <strong>ignori il movimento forzato</strong>. Ottieni <strong>+4 ai Tiri Salvezza</strong> contro quell'effetto e ogni altro che tenti di spostarti nello stesso round.</td>
+        </tr>
+        <tr>
+            <td class="row-title">6. Salto Fiammegiante (Su)</td>
+            <td class="row-center">3/Giorno</td>
+            <td class="row-center">Azione di Movimento</td>
+            <td>Salto soprannaturale potenziato dalla forza del Piano del Fuoco. All'atterraggio, genera un anello di fiamme di <strong>3 m di raggio</strong>: <strong>2d6 Fuoco</strong> (Riflessi dimezza, CD = 10 + ½ Livello + Mod. Saggezza). Vedi dettagli completi sotto. <em>Bonus Passivo: fin quando hai ≥1 uso rimasto, +10 competenza alle prove normali di Saltare e +3 m velocità (Passo di Brace).</em></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- ════════════════════════════════════════════════════════
+         DETTAGLI SALTO FIAMMEGIANTE
+    ════════════════════════════════════════════════════════ -->
+    <div class="jump-details">
+        <h3 class="jump-title">Dettagli del Potere: Salto Fiammegiante (Su)</h3>
+
+        <p class="details-paragraph"><strong>1) Attivazione e Tiro:</strong> Ignora le normali regole di salto. Unico tiro:
+            <strong>1d20 + Mod. Forza + Gradi in Saltare</strong>.
+            Nessuna rincorsa necessaria, nessun limite di altezza standard, nessun danno da caduta.
+        </p>
+
+        <p class="details-paragraph"><strong>2) Calcolo della Distanza:</strong></p>
+        <ul class="details-list">
+            <li class="details-list-item">
+                <strong>Salto Verticale:</strong>
+                <code>(1,5 m &times; &lfloor;tiro/10&rfloor;) + (1,5 m &times; Mod. Sag) + (1,5 m &times; ogni 3m di velocità oltre i 12m)</code>
+            </li>
+            <li class="details-list-item">
+                <strong>Salto Orizzontale:</strong>
+                <code>(3 m &times; &lfloor;tiro/10&rfloor;) + (3 m &times; Mod. Sag) + (3 m &times; ogni 3m di velocità oltre i 12m)</code>
+            </li>
+        </ul>
+        <p style="font-size:0.9em; color:#555;">Puoi distribuire il salto come preferisci entro i massimali (es. tutto orizzontale, tutto verticale, o misto).</p>
+
+        <p class="details-paragraph"><strong>3) Anello di Fuoco all'Atterraggio:</strong></p>
+        <ul class="details-list-zero">
+            <li><strong>Area:</strong> Raggio di 3 m dal punto di impatto.</li>
+            <li><strong>Danni:</strong> <strong>2d6 Fuoco</strong> a tutte le creature nell'area (tranne il portatore).</li>
+            <li><strong>TS:</strong> Riflessi dimezza — <strong>CD = 10 + ½ Livello + Mod. Saggezza</strong>.</li>
+        </ul>
+
+        <div class="example-box">
+            <strong>Esempio Pratico:</strong><br>
+            <strong>Livello:</strong> Monaco 10 — velocità 9m + 6m di incremento = 15m totali (Passo di Brace incluso).<br>
+            <strong>Dati:</strong> Tiro Totale (1d20 + For + Saltare) = <strong>27</strong> (2 blocchi da 10). Mod. Saggezza = <strong>+3</strong>.<br>
+            <strong>Salto Verticale:</strong> (1,5m &times; 2) + (1,5m &times; 3) + (1,5m &times; ((15&minus;12)/3)) = 3m + 4,5m + 1,5m = <strong>9 m</strong>.<br>
+            <strong>Salto Orizzontale:</strong> (3m &times; 2) + (3m &times; 3) + (3m &times; ((15&minus;12)/3)) = 6m + 9m + 3m = <strong>18 m</strong>.<br>
+            <strong>Impatto:</strong> Atterrando, infliggi 2d6 fuoco in un raggio di 3m — <strong>CD = 10 + 5 + 3 = 18</strong>.
+        </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════
+         SINERGIA ELEMENTALE
+    ════════════════════════════════════════════════════════ -->
+    <h2>Sinergia Elementale</h2>
+
+    <div class="synergy-box">
+        <div class="synergy-title">Martello di Fuoco e Pietra (Su)</div>
+        <p>Su <strong>Critico Confermato</strong> con Attacco Poderoso usando colpi senz'armi (1/round):
+            spendi <strong>1 Carica di Devastazione</strong> per attivare <em>gratuitamente</em> (senza consumare usi giornalieri) uno dei seguenti effetti:</p>
+        <ul>
+            <li><strong>🔥 Fuoco:</strong> Effetto completo di <em>Colpi del Fuoco</em> (4d6 fuoco + AoE 2d6 adiacenti + TS spinta).</li>
+            <li><strong>🪨 Pietra:</strong> Effetto completo di <em>Pugno Frana</em> (4d6 contundenti + TS Prono bersaglio + AoE Equilibrio adiacenti).</li>
+        </ul>
+        <p><em>Nota: questo non consuma l'uso giornaliero del potere attivato — consuma solo 1 Carica di Devastazione.</em></p>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════
+         BENEDIZIONE DELLA FORGIA ETERNA (Moradin)
+    ════════════════════════════════════════════════════════ -->
+    <h2>Benedizione della Forgia Eterna (Moradin)</h2>
+    <p>Dopo il contatto con l'Altare del Cuore di Moradin nella Sala della Forgia Eterna, i guanti ricevono un potenziamento temporaneo (dura fino al completamento dell'avventura):</p>
+
+    <div class="blessing-box">
+        <div class="blessing-title">Potenziamento Devastation Gauntlets — Benedizione Moradin</div>
+        <ul>
+            <li><strong>Cariche giornaliere:</strong> 3/giorno → <strong>4/giorno</strong> (ricaricano all'alba).</li>
+            <li><strong>Bonus Critico:</strong> Quando confermi un critico, <em>prima</em> di spendere Cariche, tira 1d20:
+                su <strong>18–20 naturale</strong>, 1 Carica è gratuita (non viene consumata, ottieni il danno bonus senza costo).</li>
+            <li><strong>Frantumare (Shatter) 1/Giorno:</strong> Dopo un critico confermato, lancia <em>Shatter</em> (CL 13, CD 16) sull'avversario
+                colpito — <strong>azione gratuita</strong>. Devastante contro strutture. (Già incluso tra i poteri passivi.)</li>
+        </ul>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════
+         VALORE MAGICO E COSTRUTTIVO
+    ════════════════════════════════════════════════════════ -->
+    <h2>Valore Magico e Costruttivo Teorico</h2>
+
+    <div class="two-col">
+        <div class="value-block">
+            <p class="value-header">Stato Fuoco — Primo Risveglio (~60.400 mo)</p>
+            <div class="value-content">
+                <table>
+                    <tbody>
+                    <tr><th>Capacità</th><th>Stima</th></tr>
+                    <tr><td>Castigo del Drago (Dragon Bane)</td><td>~8.000 mo</td></tr>
+                    <tr><td>Maestria Attacco Poderoso</td><td>~5.000 mo</td></tr>
+                    <tr><td>Pugni di Magma (3/g Swift)</td><td>~5.400 mo</td></tr>
+                    <tr><td>Colpi del Fuoco (3/g)</td><td>~3.000 mo</td></tr>
+                    <tr><td>Cuore di Brace (Res. Fuoco 10)</td><td>~24.000 mo</td></tr>
+                    <tr><td>Salto Fiammegiante (3/g)</td><td>~10.000 mo</td></tr>
+                    <tr><td>Bonus Saltare +10</td><td>~5.000 mo</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="value-block">
+            <p class="value-header">Aggiunte Stato Terra — Pieno Risveglio (+34.500 mo)</p>
+            <div class="value-content">
+                <table>
+                    <tbody>
+                    <tr><th>Capacità Aggiunta</th><th>Stima</th></tr>
+                    <tr><td>RD 5/Adamantio (continua)</td><td>~10.000 mo</td></tr>
+                    <tr><td>Pugno Frana (3/g)</td><td>~5.000 mo</td></tr>
+                    <tr><td>Ancoraggio della Montagna (2/g)</td><td>~4.000 mo</td></tr>
+                    <tr><td>Tremore del Forgiatore (1/g)</td><td>~3.000 mo</td></tr>
+                    <tr><td>Vista della Galleria (continua)</td><td>~2.500 mo</td></tr>
+                    <tr><td>Sinergie su Critico (free action)</td><td>~10.000 mo</td></tr>
+                    <tr><td><strong>TOTALE COMPLETO</strong></td><td><strong>~94.900 mo</strong></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════
+         RITUALI DI RISVEGLIO (LORE DM)
+    ════════════════════════════════════════════════════════ -->
+    <h2>Rituali di Risveglio (Lore)</h2>
+
+    <table>
+        <tbody>
+        <tr>
+            <th>Rituale</th>
+            <th>Innesco</th>
+            <th>Requisito</th>
+            <th>Sacrificio</th>
+            <th>Premio</th>
+        </tr>
+        <tr>
+            <td><strong>1. Battesimo delle Fiamme</strong></td>
+            <td>Sconfitta dell'Elementale del Fuoco Anziano (Forgia Adamantina)</td>
+            <td>Non usare altri artefatti maggiori per il colpo di grazia</td>
+            <td>5.000 mo in metalli preziosi alla forgia</td>
+            <td>Sblocco Stato Fuoco (Ego 12) — Topazio nel guanto sinistro</td>
+        </tr>
+        <tr>
+            <td><strong>2. Prova della Galleria Profonda</strong></td>
+            <td>Vittoria sulla Sentinella di Mithral (Nodo della Terra)</td>
+            <td>Usare i pugni per rompere il nucleo del Golem</td>
+            <td>Seppellire un oggetto magico caro (~10.000 mo)</td>
+            <td>Sblocco Stato Terra (Ego 18) — Geode di Smeraldo nel guanto destro</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- ════════════════════════════════════════════════════════
+         CHEAT SHEET TATTICO
+    ════════════════════════════════════════════════════════ -->
+    <div class="cheat-sheet">
+        <h4 class="cheat-sheet-title">Riepilogo Tattico (Cheat Sheet)</h4>
+        <table>
+            <tbody>
+            <tr>
+                <th>Potere</th>
+                <th>Azione</th>
+                <th>Usi</th>
+                <th>Effetto Rapido</th>
+            </tr>
+            <tr>
+                <td><strong>Pugni di Magma</strong></td>
+                <td>Swift</td>
+                <td>3/gg</td>
+                <td>+Sag danni Fuoco su tutti i colpi; TS Tempra CD 18 o Infermo 1 round.</td>
+            </tr>
+            <tr>
+                <td><strong>Pugno Frana</strong></td>
+                <td>Standard</td>
+                <td>3/gg</td>
+                <td>+4d6 Contundenti; TS Rif CD 19 o Prono + AoE Equilibrio CD 15 adiacenti.</td>
+            </tr>
+            <tr>
+                <td><strong>Colpi del Fuoco</strong></td>
+                <td>Standard</td>
+                <td>3/gg</td>
+                <td>+4d6 Fuoco; Spinta 1,5m (Temp CD 18); AoE 2d6 Fuoco adiacenti (Rif CD 18 dimezza).</td>
+            </tr>
+            <tr>
+                <td><strong>Tremore Forgiatore</strong></td>
+                <td>Standard</td>
+                <td>1/gg</td>
+                <td>AoE 6m: 2d6 Contundenti + Prono (Rif CD 18). Danno doppio strutture.</td>
+            </tr>
+            <tr>
+                <td><strong>Ancoraggio Montagna</strong></td>
+                <td>Immediata</td>
+                <td>2/gg</td>
+                <td>Nega movimento forzato. +4 TS vs quell'effetto.</td>
+            </tr>
+            <tr>
+                <td><strong>Salto Fiammegiante</strong></td>
+                <td>Movimento</td>
+                <td>3/gg</td>
+                <td>Super Salto (1d20+For+Saltare). AoE 3m Fuoco all'arrivo 2d6 (Rif dimezza).</td>
+            </tr>
+            <tr>
+                <td><strong>Martello (Sinergia)</strong></td>
+                <td>Gratuita</td>
+                <td>1/round su critico</td>
+                <td>Spendi 1 Carica → attiva effetto Colpi del Fuoco o Pugno Frana senza consumare usi.</td>
+            </tr>
+            <tr>
+                <td><strong>Cariche Devastazione</strong></td>
+                <td>Gratuita</td>
+                <td>3 (4 benedetto)/gg</td>
+                <td>Su critico: 1C→+2d6F / 2C→+3d6F / 3C→+4d6F. Su 18–20 nat: 1 carica gratis.</td>
+            </tr>
+            <tr>
+                <td><strong>Frantumare (Shatter)</strong></td>
+                <td>Gratuita</td>
+                <td>1/gg</td>
+                <td>Dopo critico: Shatter CL13 CD16 sul nemico. Devastante vs strutture/cristallo.</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

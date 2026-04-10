@@ -1,0 +1,473 @@
+{
+  "skill": "unknown",
+  "desc": "",
+  "rules": {
+    "Metamagic Feats": "Empower Spell (+2 levels), Enlarge Spell (+1), Extend Spell (+1), Heighten Spell (variable), Maximize Spell (+3), Quicken Spell (+4), Silent Spell (+1), Still Spell (+1)",
+    "Item Creation Feats": "Brew Potion (CL 3+), Craft Magic Arms/Armor (CL 5+), Craft Rod (CL 9+), Craft Staff (CL 12+), Craft Wand (CL 5+), Craft Wondrous Item (CL 3+), Forge Ring (CL 12+), Scribe Scroll (CL 1+)",
+    "Temporary ability damage": "Heals at 1 point per full rest per ability per day"
+  },
+  "tables": [
+    {
+      "AC Component": "Armor bonus",
+      "Applies vs. touch?": "No",
+      "Applies flat-footed?": "Yes"
+    },
+    {
+      "AC Component": "Shield bonus",
+      "Applies vs. touch?": "No",
+      "Applies flat-footed?": "Yes"
+    },
+    {
+      "AC Component": "DEX modifier",
+      "Applies vs. touch?": "No",
+      "Applies flat-footed?": "No"
+    },
+    {
+      "AC Component": "Natural armor",
+      "Applies vs. touch?": "No",
+      "Applies flat-footed?": "Yes"
+    },
+    {
+      "AC Component": "Deflection",
+      "Applies vs. touch?": "Yes",
+      "Applies flat-footed?": "Yes"
+    },
+    {
+      "AC Component": "Dodge",
+      "Applies vs. touch?": "Yes",
+      "Applies flat-footed?": "No"
+    },
+    {
+      "AC Component": "Insight / Sacred / Profane",
+      "Applies vs. touch?": "Yes",
+      "Applies flat-footed?": "Varies"
+    },
+    {
+      "Size": "Fine",
+      "AC/Attack mod": "+8",
+      "Grapple mod": "−16",
+      "Hide mod": "+16"
+    },
+    {
+      "Size": "Diminutive",
+      "AC/Attack mod": "+4",
+      "Grapple mod": "−12",
+      "Hide mod": "+12"
+    },
+    {
+      "Size": "Tiny",
+      "AC/Attack mod": "+2",
+      "Grapple mod": "−8",
+      "Hide mod": "+8"
+    },
+    {
+      "Size": "Small",
+      "AC/Attack mod": "+1",
+      "Grapple mod": "−4",
+      "Hide mod": "+4"
+    },
+    {
+      "Size": "Medium",
+      "AC/Attack mod": "+0",
+      "Grapple mod": "+0",
+      "Hide mod": "+0"
+    },
+    {
+      "Size": "Large",
+      "AC/Attack mod": "−1",
+      "Grapple mod": "+4",
+      "Hide mod": "−4"
+    },
+    {
+      "Size": "Huge",
+      "AC/Attack mod": "−2",
+      "Grapple mod": "+8",
+      "Hide mod": "−8"
+    },
+    {
+      "Size": "Gargantuan",
+      "AC/Attack mod": "−4",
+      "Grapple mod": "+12",
+      "Hide mod": "−12"
+    },
+    {
+      "Size": "Colossal",
+      "AC/Attack mod": "−8",
+      "Grapple mod": "+16",
+      "Hide mod": "−16"
+    },
+    {
+      "Skill": "Appraise",
+      "Key Ability": "INT",
+      "Trained Only": "No",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Balance",
+      "Key Ability": "DEX",
+      "Trained Only": "No",
+      "Armor Check": "Yes"
+    },
+    {
+      "Skill": "Bluff",
+      "Key Ability": "CHA",
+      "Trained Only": "No",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Climb",
+      "Key Ability": "STR",
+      "Trained Only": "No",
+      "Armor Check": "Yes"
+    },
+    {
+      "Skill": "Concentration",
+      "Key Ability": "CON",
+      "Trained Only": "No",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Craft (any)",
+      "Key Ability": "INT",
+      "Trained Only": "No",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Decipher Script",
+      "Key Ability": "INT",
+      "Trained Only": "Yes",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Diplomacy",
+      "Key Ability": "CHA",
+      "Trained Only": "No",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Disable Device",
+      "Key Ability": "INT",
+      "Trained Only": "Yes",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Disguise",
+      "Key Ability": "CHA",
+      "Trained Only": "No",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Escape Artist",
+      "Key Ability": "DEX",
+      "Trained Only": "No",
+      "Armor Check": "Yes"
+    },
+    {
+      "Skill": "Forgery",
+      "Key Ability": "INT",
+      "Trained Only": "No",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Gather Information",
+      "Key Ability": "CHA",
+      "Trained Only": "No",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Handle Animal",
+      "Key Ability": "CHA",
+      "Trained Only": "Yes",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Heal",
+      "Key Ability": "WIS",
+      "Trained Only": "No",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Hide",
+      "Key Ability": "DEX",
+      "Trained Only": "No",
+      "Armor Check": "Yes"
+    },
+    {
+      "Skill": "Intimidate",
+      "Key Ability": "CHA",
+      "Trained Only": "No",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Jump",
+      "Key Ability": "STR",
+      "Trained Only": "No",
+      "Armor Check": "Yes"
+    },
+    {
+      "Skill": "Knowledge (all)",
+      "Key Ability": "INT",
+      "Trained Only": "Yes",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Listen",
+      "Key Ability": "WIS",
+      "Trained Only": "No",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Move Silently",
+      "Key Ability": "DEX",
+      "Trained Only": "No",
+      "Armor Check": "Yes"
+    },
+    {
+      "Skill": "Open Lock",
+      "Key Ability": "DEX",
+      "Trained Only": "Yes",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Perform (any)",
+      "Key Ability": "CHA",
+      "Trained Only": "No",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Profession (any)",
+      "Key Ability": "WIS",
+      "Trained Only": "Yes",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Ride",
+      "Key Ability": "DEX",
+      "Trained Only": "No",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Search",
+      "Key Ability": "INT",
+      "Trained Only": "No",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Sense Motive",
+      "Key Ability": "WIS",
+      "Trained Only": "No",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Sleight of Hand",
+      "Key Ability": "DEX",
+      "Trained Only": "Yes",
+      "Armor Check": "Yes"
+    },
+    {
+      "Skill": "Speak Language",
+      "Key Ability": "—",
+      "Trained Only": "Yes",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Spellcraft",
+      "Key Ability": "INT",
+      "Trained Only": "Yes",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Spot",
+      "Key Ability": "WIS",
+      "Trained Only": "No",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Survival",
+      "Key Ability": "WIS",
+      "Trained Only": "No",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Swim",
+      "Key Ability": "STR",
+      "Trained Only": "No",
+      "Armor Check": "Yes*"
+    },
+    {
+      "Skill": "Tumble",
+      "Key Ability": "DEX",
+      "Trained Only": "Yes",
+      "Armor Check": "Yes"
+    },
+    {
+      "Skill": "Use Magic Device",
+      "Key Ability": "CHA",
+      "Trained Only": "Yes",
+      "Armor Check": "No"
+    },
+    {
+      "Skill": "Use Rope",
+      "Key Ability": "DEX",
+      "Trained Only": "No",
+      "Armor Check": "No"
+    },
+    {
+      "Level": "1",
+      "XP (Standard)": "0",
+      "Slow": "0",
+      "Fast": "0"
+    },
+    {
+      "Level": "2",
+      "XP (Standard)": "1,000",
+      "Slow": "1,500",
+      "Fast": "750"
+    },
+    {
+      "Level": "3",
+      "XP (Standard)": "3,000",
+      "Slow": "4,500",
+      "Fast": "2,250"
+    },
+    {
+      "Level": "4",
+      "XP (Standard)": "6,000",
+      "Slow": "9,000",
+      "Fast": "4,500"
+    },
+    {
+      "Level": "5",
+      "XP (Standard)": "10,000",
+      "Slow": "15,000",
+      "Fast": "7,500"
+    },
+    {
+      "Level": "6",
+      "XP (Standard)": "15,000",
+      "Slow": "22,500",
+      "Fast": "11,250"
+    },
+    {
+      "Level": "7",
+      "XP (Standard)": "21,000",
+      "Slow": "31,500",
+      "Fast": "15,750"
+    },
+    {
+      "Level": "8",
+      "XP (Standard)": "28,000",
+      "Slow": "42,000",
+      "Fast": "21,000"
+    },
+    {
+      "Level": "9",
+      "XP (Standard)": "36,000",
+      "Slow": "54,000",
+      "Fast": "27,000"
+    },
+    {
+      "Level": "10",
+      "XP (Standard)": "45,000",
+      "Slow": "67,500",
+      "Fast": "33,750"
+    },
+    {
+      "Level": "11",
+      "XP (Standard)": "55,000",
+      "Slow": "82,500",
+      "Fast": "41,250"
+    },
+    {
+      "Level": "12",
+      "XP (Standard)": "66,000",
+      "Slow": "99,000",
+      "Fast": "49,500"
+    },
+    {
+      "Level": "13",
+      "XP (Standard)": "78,000",
+      "Slow": "117,000",
+      "Fast": "58,500"
+    },
+    {
+      "Level": "14",
+      "XP (Standard)": "91,000",
+      "Slow": "136,500",
+      "Fast": "68,250"
+    },
+    {
+      "Level": "15",
+      "XP (Standard)": "105,000",
+      "Slow": "157,500",
+      "Fast": "78,750"
+    },
+    {
+      "Level": "16",
+      "XP (Standard)": "120,000",
+      "Slow": "180,000",
+      "Fast": "90,000"
+    },
+    {
+      "Level": "17",
+      "XP (Standard)": "136,000",
+      "Slow": "204,000",
+      "Fast": "102,000"
+    },
+    {
+      "Level": "18",
+      "XP (Standard)": "153,000",
+      "Slow": "229,500",
+      "Fast": "114,750"
+    },
+    {
+      "Level": "19",
+      "XP (Standard)": "171,000",
+      "Slow": "256,500",
+      "Fast": "128,250"
+    },
+    {
+      "Level": "20",
+      "XP (Standard)": "190,000",
+      "Slow": "285,000",
+      "Fast": "142,500"
+    },
+    {
+      "STR": "10",
+      "Light": "≤33 lb",
+      "Medium": "34–66 lb",
+      "Heavy": "67–100 lb"
+    },
+    {
+      "STR": "12",
+      "Light": "≤43 lb",
+      "Medium": "44–86 lb",
+      "Heavy": "87–130 lb"
+    },
+    {
+      "STR": "14",
+      "Light": "≤58 lb",
+      "Medium": "59–116 lb",
+      "Heavy": "117–175 lb"
+    },
+    {
+      "STR": "16",
+      "Light": "≤76 lb",
+      "Medium": "77–153 lb",
+      "Heavy": "154–230 lb"
+    },
+    {
+      "STR": "18",
+      "Light": "≤100 lb",
+      "Medium": "101–200 lb",
+      "Heavy": "201–300 lb"
+    },
+    {
+      "STR": "20",
+      "Light": "≤133 lb",
+      "Medium": "134–266 lb",
+      "Heavy": "267–400 lb"
+    }
+  ],
+  "body": "# Core Mechanics — D&D 3.5 SRD Reference\n\nSource: d20srd.org/srd/theBasics.htm and related pages\n\n---\n\n## The d20 Roll\n\n**Attack roll:** d20 + BAB + STR mod (mel) or DEX mod (rng) + size mod + misc\n**Skill check:** d20 + skill ranks + ability mod + misc\n**Save:** d20 + base save + ability mod + magic bonuses + misc\n**Ability check:** d20 + ability mod (no ranks added)\n\n**Natural 20:** Always hits (attack) / always succeeds (skill, threat of crit on attack)\n**Natural 1:** Always misses (attack) / auto-fails (save)\nNatural 1/20 do NOT auto-fail/succeed skill checks in RAW 3.5.\n\n---\n\n## AC\n\n**AC = 10 + armor bon + shield bon + DEX mod + size mod + natural armor + deflection + dodge + misc**\n\n| AC Component | Applies vs. touch? | Applies flat-footed? |\n|---|---|---|\n| Armor bon | No | Yes |\n| Shield bon | No | Yes |\n| DEX mod | No | No |\n| Natural armor | No | Yes |\n| Deflection | Yes | Yes |\n| Dodge | Yes | No |\n| Insight / Sacred / Profane | Yes | Varies |\n\n**Touch AC** = 10 + DEX + deflection + dodge + size (no armor/shield/natural)\n**Flat-footed AC** = 10 + armor + shield + natural + deflection + size (no DEX/dodge)\n\n---\n\n## Size Modifiers\n\n| Size | AC/Attack mod | Grapple mod | Hide mod |\n|---|---|---|---|\n| Fine | +8 | −16 | +16 |\n| Diminutive | +4 | −12 | +12 |\n| Tiny | +2 | −8 | +8 |\n| Small | +1 | −4 | +4 |\n| Medium | +0 | +0 | +0 |\n| Large | −1 | +4 | −4 |\n| Huge | −2 | +8 | −8 |\n| Gargantuan | −4 | +12 | −12 |\n| Colossal | −8 | +16 | −16 |\n\n---\n\n## Skills (Complete SRD List)\n\n### Key Skill Rules\n- **Synergy:** +2 bon when you have 5+ ranks in a synergistic skill (see each skill entry)\n- **Armor Check Penalty (ACP):** Applies to: Balance, Climb, Escape Artist, Hide, Jump, Move Silently, Sleight of Hand, Swim, Tumble\n- **Encumbrance** applies its own ACP on top of armor ACP for physical skills\n\n### Core Skills (SRD)\n\n| Skill | Key Ability | Trained Only | Armor Check |\n|---|---|---|---|\n| Appraise | INT | No | No |\n| Balance | DEX | No | Yes |\n| Bluff | CHA | No | No |\n| Climb | STR | No | Yes |\n| Concentration | CON | No | No |\n| Craft (any) | INT | No | No |\n| Decipher Script | INT | Yes | No |\n| Diplomacy | CHA | No | No |\n| Disable Device | INT | Yes | No |\n| Disguise | CHA | No | No |\n| Escape Artist | DEX | No | Yes |\n| Forgery | INT | No | No |\n| Gather Information | CHA | No | No |\n| Handle Animal | CHA | Yes | No |\n| Heal | WIS | No | No |\n| Hide | DEX | No | Yes |\n| Intimidate | CHA | No | No |\n| Jump | STR | No | Yes |\n| Knowledge (all) | INT | Yes | No |\n| Listen | WIS | No | No |\n| Move Silently | DEX | No | Yes |\n| Open Lock | DEX | Yes | No |\n| Perform (any) | CHA | No | No |\n| Profession (any) | WIS | Yes | No |\n| Ride | DEX | No | No |\n| Search | INT | No | No |\n| Sense Motive | WIS | No | No |\n| Sleight of Hand | DEX | Yes | Yes |\n| Speak Language | — | Yes | No |\n| Spellcraft | INT | Yes | No |\n| Spot | WIS | No | No |\n| Survival | WIS | No | No |\n| Swim | STR | No | Yes* |\n| Tumble | DEX | Yes | Yes |\n| Use Magic Device | CHA | Yes | No |\n| Use Rope | DEX | No | No |\n\n*Double ACP for Swim\n\n---\n\n## Feats: Key Categories\n\n**Fighter bon Feats** (subset): Combat Expertise, Dodge, Great Cleave, Improved Critical, Power Attack, Spring Attack, Weapon Finesse, Weapon Focus, Weapon Specialization…\n\n**Metamagic Feats**: Empower Spell (+2 levels), Enlarge Spell (+1), Extend Spell (+1), Heighten Spell (variable), Maximize Spell (+3), Quicken Spell (+4), Silent Spell (+1), Still Spell (+1)\n\n**Item Creation Feats**: Brew Potion (CL 3+), Craft Magic Arms/Armor (CL 5+), Craft Rod (CL 9+), Craft Staff (CL 12+), Craft Wand (CL 5+), Craft Wondrous Item (CL 3+), Forge Ring (CL 12+), Scribe Scroll (CL 1+)\n\n---\n\n## Ability Score Increases\n\n**Every 4 character levels** (4th, 8th, 12th, 16th, 20th): +1 to any one ability score\n**perm ability damage** (ability drain): req: restoration or greater restoration\n**temp ability damage**: Heals at 1 point per full rest per ability /day\n\n---\n\n## XP and Level Progression\n\n| Level | XP (Standard) | Slow | Fast |\n|---|---|---|---|\n| 1 | 0 | 0 | 0 |\n| 2 | 1,000 | 1,500 | 750 |\n| 3 | 3,000 | 4,500 | 2,250 |\n| 4 | 6,000 | 9,000 | 4,500 |\n| 5 | 10,000 | 15,000 | 7,500 |\n| 6 | 15,000 | 22,500 | 11,250 |\n| 7 | 21,000 | 31,500 | 15,750 |\n| 8 | 28,000 | 42,000 | 21,000 |\n| 9 | 36,000 | 54,000 | 27,000 |\n| 10 | 45,000 | 67,500 | 33,750 |\n| 11 | 55,000 | 82,500 | 41,250 |\n| 12 | 66,000 | 99,000 | 49,500 |\n| 13 | 78,000 | 117,000 | 58,500 |\n| 14 | 91,000 | 136,500 | 68,250 |\n| 15 | 105,000 | 157,500 | 78,750 |\n| 16 | 120,000 | 180,000 | 90,000 |\n| 17 | 136,000 | 204,000 | 102,000 |\n| 18 | 153,000 | 229,500 | 114,750 |\n| 19 | 171,000 | 256,500 | 128,250 |\n| 20 | 190,000 | 285,000 | 142,500 |\n\n---\n\n## Carrying Capacity (Medium Creature, STR-based)\n\n| STR | Light | Medium | Heavy |\n|---|---|---|---|\n| 10 | ≤33 lb | 34–66 lb | 67–100 lb |\n| 12 | ≤43 lb | 44–86 lb | 87–130 lb |\n| 14 | ≤58 lb | 59–116 lb | 117–175 lb |\n| 16 | ≤76 lb | 77–153 lb | 154–230 lb |\n| 18 | ≤100 lb | 101–200 lb | 201–300 lb |\n| 20 | ≤133 lb | 134–266 lb | 267–400 lb |\n\nFor other sizes: Fine ÷8, Diminutive ÷4, Tiny ÷2, Small ×¾, Large ×2, Huge ×4, Gargantuan ×8, Colossal ×16"
+}

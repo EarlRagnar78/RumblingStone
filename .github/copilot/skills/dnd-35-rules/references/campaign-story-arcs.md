@@ -117,12 +117,12 @@ Battle of Rethmar (Arc 09-P3, 5 Phases):
 ## BRANCHING DECISIONS (DM Reference)
 
 ### Hella Resurrection
-- **Yes:** Party proceeds at full strength; Hella gains Treant Hybrid template, Collana dei Semi Eterni
+- **Yes:** Party proceeds at full STR; Hella gains Treant Hybrid template, Collana dei Semi Eterni
 - **No:** Party continues with 3 PCs; Hella's artifact powers are lost; druid circle cannot be recruited
 
 ### Tordek Tournament Outcome
 - **Win:** 150 dwarf mercenaries sent as reinforcements to Rethmar; chakra enlightenment
-- **Interrupted by Githyanki:** Tournament becomes combat encounter; Githyanki dragon-rider faction strength at Rethmar depends on outcome here
+- **Interrupted by Githyanki:** Tournament becomes combat encounter; Githyanki dragon-rider faction STR at Rethmar depends on outcome here
 
 ### Hella Sacred Forest Ritual
 - **Pass:** Druid circle offers nature power at Rethmar (summons, shapeshifting warriors)

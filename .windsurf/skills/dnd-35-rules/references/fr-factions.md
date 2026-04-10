@@ -1,4 +1,4 @@
-# Forgotten Realms — Factions & Organizations (D&D 3.5)
+# FR — Factions & Organizations (D&D 3.5)
 
 Sources: FRCS (2001), Lords of Darkness (2003), Power of Faerûn (2006), various sourcebooks
 
@@ -145,7 +145,7 @@ entertainment and the acquisition of interesting items and experiences.
 **Symbol**: None publicly; internal recognition signs
 **Notable Members**: Jarlaxle (charismatic leader, profligate user of wands and hats),
 Arathis (second), various drow male mercenaries (many escaped noble houses)
-**Operations**: Intelligence services, assassination, escorting merchants through the Underdark,
+**Operations**: INT services, assassination, escorting merchants through the Underdark,
 surface infiltration operations
 **Status (1372 DR)**: Thriving. Jarlaxle is one of the most interesting and unpredictable
 power brokers in Faerûn. Has surface operations posing as merchants.
@@ -349,7 +349,6 @@ and sends reinforcements to the Battle of Rethmar (arc 09) — fuse with city mi
 della Foresta), the druid circle offers their nature power for the Battle of Rethmar:
 - Invocation of animals (summons)
 - Shape-shifting transformations (like Beorn in The Hobbit)
-- Temporary nature avatar forms for allied combatants
+- temp nature avatar forms for allied combatants
 **Condition**: Hella must pass the ritual. If she fails, the circle remains neutral.
 **Status**: Awaiting Hella's ritual completion.
-

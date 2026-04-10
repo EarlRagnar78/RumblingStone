@@ -1,6 +1,6 @@
 # The Rumbling Stone — Party Reference (D&D 3.5)
 
-Campaign: RumblingStone (Red Hand of Doom adaptation, Cannath Vale / Forgotten Realms 1372 DR)
+Campaign: RumblingStone (Red Hand of Doom adaptation, Cannath Vale / FR 1372 DR)
 Current party level: **13** | Party size: **4 PCs**
 
 ---
@@ -31,11 +31,11 @@ Current party level: **13** | Party size: **4 PCs**
 - Resurrected through divine intervention, bonded with Aegis Fang
 - Passed the Trial of the Deep Hall to wear the Corona di Adamantio
 - Led the party through the Eternal Forge portal quests
-- Not yet sacrificed 2 permanent HP for Hella's resurrection ritual
+- Not yet sacrificed 2 perm HP for Hella's resurrection ritual
 
 **Combat Notes:**
 
-- Extremely high AC (heavy armor + shield + Corona deflection bonus +2)
+- Extremely high AC (heavy armor + shield + Corona deflection bon +2)
 - Aegis Fang synergizes with Corona (becomes +4 Sacred Returning Dwarven Waraxe after full awakening)
 - Crown grants Stone's Awareness (+1 morale attack/damage on natural ground), True Seeing 1/day
 - With full gem activation: time travel (1/month), earthquake control (1/week), dwarven might buff (1/week)
@@ -44,7 +44,7 @@ Current party level: **13** | Party size: **4 PCs**
 
 ### Tordek Durinheart — Dwarf Fighter 4 / Monk 9 (The Skirmisher)
 
-**Role:** Melee DPS, mobility, trap handler (via high saves)
+**Role:** mel DPS, mobility, trap handler (via high saves)
 **Race:** Shield Dwarf (male)
 **Alignment:** Lawful Neutral
 **Fighting Style:** Unarmed combat — **jump + charge + flying kick + Power Attack** combo for devastating single-target damage
@@ -60,7 +60,7 @@ Current party level: **13** | Party size: **4 PCs**
 - Currently completing the Trial of the Deep Gallery (Earth Node, Forest of Living Crystal)
 - Sacrificed 500 XP for Hella's resurrection ritual
 - Closest companion to Hella (romantic bond implied)
-- **Upcoming — Tournament at Dauth:** Dragon Ball / Naruto-style martial arts tournament (3 days). Features the **Orbe delle Otto Porte** (Orb of Eight Gates) — a scenic artifact with chakra gate mechanics: each gate grants +2 STR/DEX morale and +2 saves for 1 round but costs cumulative 1d4 CON temporary damage + fatigued. Culminates in a **Githyanki Red Dragon aerial attack** that interrupts the finale. Tordek gains **chakra enlightenment** (7 soul gates of jujitsu combat, Naruto-inspired spiritual martial awareness).
+- **Upcoming — Tournament at Dauth:** Dragon Ball / Naruto-style martial arts tournament (3 days). Features the **Orbe delle Otto Porte** (Orb of Eight Gates) — a scenic artifact with chakra gate mechanics: each gate grants +2 STR/DEX morale and +2 saves for 1 round but costs cumulative 1d4 CON temp damage + fatigued. Culminates in a **Githyanki Red Dragon aerial attack** that interrupts the finale. Tordek gains **chakra enlightenment** (7 soul gates of jujitsu combat, Naruto-inspired spiritual martial awareness).
 - Key tournament opponents: Tetsu "Serpente di Vento" (Monk 12), Grandmaster Rihan (Monk 14), Thrain Ironfist (Dwarf Fighter 13), Grom Skullcrusher (Barbarian 14)
 
 **Combat Notes:**
@@ -70,7 +70,7 @@ Current party level: **13** | Party size: **4 PCs**
 - **Salto Infuocato** (Inferno Leap, 3/day): explosive jump attack dealing 2d6 fire on landing
 - Dragon Bane property on unarmed strikes (+2 attack, +2d6 vs. dragons)
 - Fire Resistance 10, DR 5/adamantine (after Earth awakening)
-- +10 competence bonus to Jump checks (passive from Bracieri)
+- +10 competence bon to Jump checks (passive from Bracieri)
 - **The party uses Tordek's high Monk saves to handle traps** (no rogue in the party)
 
 ---
@@ -107,7 +107,7 @@ Current party level: **13** | Party size: **4 PCs**
 
 ### Artemis — Human Warlock 13 (The Arcane Striker)
 
-**Role:** Arcane damage, utility, ranged combat, knowledge
+**Role:** Arcane damage, utility, rng combat, knowledge
 **Race:** Human (male)
 **Alignment:** Chaotic Neutral
 **Fighting Style:** Eldritch Blast + Ring of Chaotic Illumination powers
@@ -131,7 +131,7 @@ Current party level: **13** | Party size: **4 PCs**
 - Wings of Shadow (fly 60 ft, at-will), Shadow Step (teleport 60 ft, every 5 rounds)
 - Light of Lathander (1/day): Daylight + morale buff allies, debuff light-sensitive enemies
 - Shadow of Mask (1/day): Greater Invisibility on self + 1 ally
-- Unity's Gift (1/day): Grant ally an extra standard action
+- Unity's Gift (1/day): Grant ally an extra StdA
 - Firestorm Invocation (1/day): 8d6 fire AoE, allies immune
 - Knowledge (Arcana) +8, Knowledge (Religion) +8 from Ring
 
@@ -143,7 +143,7 @@ Current party level: **13** | Party size: **4 PCs**
 
 The Rumbling Stone has **no rogue**. They handle challenges through:
 
-- **Trap detection/bypass:** Tordek's high Monk saves (Reflex/Will) — they trigger traps and rely on saving throws rather than disabling
+- **Trap detection/bypass:** Tordek's high Monk saves (Ref/Will) — they trigger traps and rely on saving throws rather than disabling
 - **Arcane needs:** Artemis (Warlock) — limited but effective; Ring provides utility (invisibility, vision, teleport)
 - **Divine power:** Hella (Druid) — healing, restoration, summons, utility spells
 - **Tank mode:** Thorik draws aggro; Tordek flanks as skirmisher
@@ -173,6 +173,7 @@ The Rumbling Stone has **no rogue**. They handle challenges through:
 | **Zalkatar** | Illithid Warlock Drow (CR 13), previous Ring of Chaotic Illumination owner. Boss of Invisible Tower quest (Arc 09-P2A). | Active — awaiting in Invisible Tower | `09_.../Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` |
 
 ### Therysol — Full Background
+
 Originally a slave (with her brother) sold by drow traders affiliated with Il Collezionista's guild to salamanders in the Fire Elemental Plane, forced to serve at the forge. Her brother died and left a crystal that fused with her, transforming her into the being she is now — an unicum. She hates salamanders and the elemental plane. Helped the PGs during the Fire Node quests. Was guarding Hella's corpse in the Sala della Forgia Eterna; after Hella's resurrection, she goes deeper underground seeking the origin of her destiny — which is Il Collezionista's drow guild — to find revenge. Can appear as an NPC ally during the Notte dei Drow assault on Rethmar (Arc 09, Phase 0), attacking drow from within.
 
 ---
@@ -180,8 +181,10 @@ Originally a slave (with her brother) sold by drow traders affiliated with Il Co
 ## Campaign Progression Summary
 
 ### Underdark Detour (Pre-01 through 07, Levels 4–13)
+
 After the destruction of Drellin's Ferry (where Thorik died and was resurrected), the party went to Hammerfist Hills. Guided by Moradin's visions and dwarven oracles, they descended into the Underdark to find the Corona di Adamantio. This took them through:
 0. **Minotaur Lair** (Pre-Arc 01, unnumbered) — First Underdark area below Hammerfist. Maur defeated; **Il Collezionista** (Rakshasa + basilisk) **ESCAPED** (recurring villain, now allied with drow). Cristal Warriors encountered (from *Underdark* p.93).
+
 1. **01_LaMiniera** — Ancient dwarven mine, Grell Necromancer/Patriarch. Cristal Warriors also encountered in early mine rooms after portal arrival.
 2. **02_scaladossa-abbattor-funghi** — Neverlight Grove adaptation (drow-modified fungi tower, aberrations, connection to Sonjak/Mother of Fungi — undiscovered by party)
 3. **03_la Cittadella** — Abandoned citadel, Moradin temple with undead beholder
@@ -192,7 +195,7 @@ After the destruction of Drellin's Ferry (where Thorik died and was resurrected)
 
 ### Return to RHoD Mainline (Arcs 08–09, Level 13+)
 
-8. **08_La Battaglia Di Hammerfist** — Mass combat at Hammerfist (adapted RHoD battle mechanics) - Using time shift before the events of 7.5 and some other png moved by to make it more interesting and make the battle result impactful to 7.5. that is the **08_La Battaglia Di Hammerfist** will be played by png guided by players and the event and victory or defeat will be impactful to 7.5 section arrival. after the 7.5 section arrival the players will be back to the present and will have to deal with the consequences of their actions as png.  
+1. **08_La Battaglia Di Hammerfist** — Mass combat at Hammerfist (adapted RHoD battle mechanics) - Using time shift before the events of 7.5 and some other png moved by to make it more interesting and make the battle result impactful to 7.5. that is the **08_La Battaglia Di Hammerfist** will be played by png guided by players and the event and victory or defeat will be impactful to 7.5 section arrival. after the 7.5 section arrival the players will be back to the present and will have to deal with the consequences of their actions as png.
 
 1. **09_Continuazione Arco Narrativo** — Post-Hammerfist: 3 personal quests + Battle of Rethmar (planned)
 
@@ -204,13 +207,11 @@ After the destruction of Drellin's Ferry (where Thorik died and was resurrected)
 - After Earth Node: Hella resurrection ritual → Battle of Hammerfist at year -1000 → return to present
 - Then: personal quests → Battle of Rethmar
 
-
 ### Personal Quests (Arc 09, Post-Hammerfist)
 
 1. **Hella — Il Cerchio Sacro della Foresta (P1):** Druid ritual in the Sacred Forest to become Avatar della Natura. 3 phases with escalating drow attacks (EL 9→11→12). If she passes: Druid Circle offers nature power at Rethmar (animal summons, shapeshifting warriors like Beorn in The Hobbit). If she fails: Circle remains neutral.
 2. **Artemis — Torre Invisibile (P2A):** Confronts Zalkatar (Illithid Warlock Drow, CR 13) in a 5-level invisible tower. Ring of Chaotic Illumination reaches Ultimate Chaos form if victorious. Zalkatar may escape via Greater Teleport.
-3. **Tordek — Torneo Epico di Dauth (P2B):** 3-day martial arts tournament (Dragon Ball / Naruto vibes). Features the Orbe delle Otto Porte (chakra gate mechanics). Day 3 finale vs Grandmaster Rihan interrupted by **Githyanki Red Dragon aerial attack** to steal the sage monk's artifact. Tordek gains chakra enlightenment (7 soul gates). If tournament won: 300 dwarf mercenaries sent to Rethmar.
-
+3. **Tordek — Torneo Epico di Dauth (P2B):** 3-day martial arts tournament (Dragon Ball / Naruto vibes). Features the Orbe delle Otto Porte (chakra gate mechanics). Day 3 finale vs Grandmaster Rihan interrupted by **Githyanki Red Dragon aerial attack** to steal the sage monk's artifact. Tordek gains chakra enlightenment (7 soul gates). If tournament won: 150 dwarf mercenaries survivors sent to Rethmar.
 
 ### Battle of Rethmar (Arc 09-P3, Final Battle)
 

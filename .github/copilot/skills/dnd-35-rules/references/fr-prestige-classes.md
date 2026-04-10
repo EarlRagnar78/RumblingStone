@@ -1,4 +1,4 @@
-# Forgotten Realms — Prestige Classes (D&D 3.5)
+# FR — Prestige Classes (D&D 3.5)
 
 Sources: FRCS (2001), Player's Guide to Faerûn (2004), Champions of Valor (2005),
 Champions of Ruin (2005), Races of Faerûn (2003), various FR splatbooks.
@@ -12,13 +12,13 @@ Format: Requirements → Key features → Notes
 ### Arcane Devotee
 Requirements: Knowledge (religion) 4 ranks; ability to cast 2nd-level arcane spells
 HD: d4 | BAB: ½ | Saves: Will good
-Key features: Bonus domain spell (arcane version), Sacred Defense +2 per 2 levels, spellcasting +1/level
-Spellcasting: +1 arcane caster level per level (advances existing class)
+Key features: bon domain spell (arcane version), Sacred Defense +2 per 2 levels, spellcasting +1/level
+Spellcasting: +1 arcane CL /lvl (advances existing class)
 Notes: Allows arcane casters to serve a deity and gain domain access.
 
 ### Arcane Trickster (SRD + FR variant)
 Requirements: Sneak Attack +2d6; ability to cast mage hand; arcane caster
-HD: d4 | Key features: Ranged legerdemain, sneak attack advances, spellcasting advances
+HD: d4 | Key features: rng legerdemain, sneak attack advances, spellcasting advances
 
 ### Church Inquisitor
 Requirements: BAB +4; must worship a lawful deity; Knowledge (religion) 6 ranks
@@ -75,11 +75,11 @@ Notes: Cormyrean military prestige class. Focuses on battlefield leadership.
 Requirements: Wizard 5; Region (Thay) or must join Thay; Spellcraft 7 ranks; Wizard specialist;
 cannot be barred from using tattoos; must shave head
 HD: d4 | BAB: ½ | Good save: Will
-Key features: Specialist Defense (specialist bonus to saves), Spell Power (+1 caster level per 2 levels),
-Bonus Feat (item creation/metamagic), Scribe Tattoo (magical tattoos as magic items),
-Enhanced Specialization, Wizard Spell Power (bonus spell slot per specialist level)
+Key features: Specialist Defense (specialist bon to saves), Spell Power (+1 CL per 2 levels),
+bon Feat (item creation/metamagic), Scribe Tattoo (magical tattoos as magic items),
+Enhanced Specialization, Wizard Spell Power (bon spell slot per specialist level)
 Alignment: Any nongood
-Notes: Most powerful arcane caster PrC in FR. Requires significant backstory investment.
+Notes: Most powerful arcane caster PrC in FR. req: significant backstory investment.
 Red Wizards trade magic items via enclaves throughout Faerûn — a major economic power.
 
 ### Shadow Adept
@@ -87,8 +87,8 @@ Requirements: Any metamagic feat; Knowledge (arcana) 8 ranks; ability to cast 4t
 HD: d4 | BAB: ½ | Good save: Will
 Key features: Shadow Weave Magic (using Shar's Shadow Weave instead of Mystra's), Spellcasting +1/level,
 Tendrils of Darkness (free obscuring mist), Shadow Double (mirror image 1/day), Spell Power +1
-Benefits: +1 caster level for Enchantment, Illusion, and Darkness spells
-Penalties: −2 caster level for Divination; −2 caster level for Evocation and Transmutation;
+Benefits: +1 CL for Enchantment, Illusion, and Darkness spells
+Penalties: −2 CL for Divination; −2 CL for Evocation and Transmutation;
 cannot use Divination spells from the Weave at all
 Alignment: Usually NE or LE (Shar worshippers)
 Notes: Shadow Weave users cannot learn Divination beyond 1st level. This is a significant trade-off.
@@ -153,7 +153,7 @@ Key features: Elven weapon training, low-light vision, Elven Blood (treated as e
 
 ### Shield Dwarf Defender
 Requirements: Shield dwarf; Fighter 4; Toughness feat
-Key features: Improved Damage Reduction, Dwarven Battleskill (+2 attack vs. giants and orcs)
+Key features: Improved DR, Dwarven Battleskill (+2 attack vs. giants and orcs)
 
 ---
 
@@ -164,14 +164,14 @@ Requirements: Female human; Rashemen origin; ability to cast 3rd-level arcane an
 must be a member of the Wychlaran (Hathran society)
 HD: d6 | BAB: ½ | Good saves: Fort, Ref, Will (unusual)
 Key features: Cohort of the Land (spirit companion), Circle (join spellcasting circles with other
-Hathrans for vastly increased power), Special Arcane Ability (bonus power per level),
+Hathrans for vastly increased power), Special Arcane Ability (bon power /lvl),
 Spellcasting +1/level (both arcane and divine)
 Notes: Unique dual-progression caster (advances BOTH wizard and cleric caster levels simultaneously).
 Extremely powerful for gestalt-style builds. Must remain in Rashemen or powers are weakened.
 
 ### Runescarred Berserker
 Requirements: Rashemi barbarian; BAB +6; 5 runes (magical tattoos) already scarred
-Key features: Runic Power (each rune grants a spell-like ability, 1/day), Rage enhancement,
+Key features: Runic Power (each rune grants a Sp ability, 1/day), Rage enhancement,
 Improved Uncanny Dodge
 
 ### Taer (Rashemi Warrior)
@@ -180,7 +180,7 @@ Key features: Taer's Rage (enhanced barbarian rage), Two-weapon style training
 
 ### Mage Hunter (Theskian)
 Requirements: BAB +4; Spellcraft 6 ranks (to identify spells to counter); no arcane spellcasting
-Key features: Dispel (as dispel magic 1/day per level), Spell Resistance (growing from 10 to 20+)
+Key features: Dispel (as dispel magic 1/day /lvl), SR (growing from 10 to 20+)
 
 ---
 
@@ -196,7 +196,7 @@ Key features: Frightful attack (target must save or become shaken), Death Attack
 
 ### Morninglord of Lathander
 Requirements: Cleric of Lathander; Knowledge (religion) 8 ranks; BAB +4
-Key features: Sunbolt (ranged divine attack), Restoration 1/day, Undead Revulsion (turn bonus)
+Key features: Sunbolt (rng divine attack), Restoration 1/day, Undead Revulsion (turn bon)
 
 ### Wavemistress / Sailor of Umberlee
 Requirements: Worship Umberlee; BAB +4; Swim 6 ranks
@@ -207,21 +207,21 @@ Key features: Water Breathing, Stormcall (call a storm 1/day), Drown (grapple �
 ## Other Notable PrCs
 
 ### Shou Disciple (Kara-Tur cultural link)
-Requires: Far East / Shou origin; Improved Unarmed Strike; multiple martial feats
+req:: Far East / Shou origin; Improved Unarmed Strike; multiple martial feats
 Key features: Ki pool (as monk), specific eastern martial art style
 
 ### Dweomerkeeper (divine magic specialist)
-Requires: Knowledge (arcana) 10 ranks; cleric 5; ability to cast 4th-level divine
-Key features: Spontaneous Domain Spells, Alter Spell (apply one metamagic free per day)
+req:: Knowledge (arcana) 10 ranks; cleric 5; ability to cast 4th-level divine
+Key features: Spontaneous Domain Spells, Alter Spell (apply one metamagic free /day)
 
 ### Loremaster (SRD, but common in FR)
 Requirements: Knowledge (any two) 10 ranks; ability to cast 7th-level spells
-Key features: Secrets (one bonus feat or ability per level), Lore (combined bardic+wizard knowledge check)
+Key features: Secrets (one bon feat or ability /lvl), Lore (combined bardic+wizard knowledge check)
 
 ### Archmage (SRD, used in FR)
 Requirements: Arcane caster; ability to cast 7th-level arcane; 4 metamagic feats; Spellcraft 15
 Key features: High Arcana abilities (Arcane Fire, Arcane Reach, Mastery of Counterspelling,
-Mastery of Elements, Mastery of Shaping, Spell Power, Spell-Like Ability)
+Mastery of Elements, Mastery of Shaping, Spell Power, Sp Ability)
 Notes: Elminster-level PrC for NPC archmages.
 
 ---
@@ -232,18 +232,84 @@ Rather than PrCs, many deities grant **Initiate Feats** to qualifying clergy:
 
 | Deity | Initiate Feat Benefit |
 |---|---|
-| Cyric | +1 caster level for Enchantment/Illusion; can Rebuke undead as LE cleric |
-| Eilistraee | Sword dancing bonus; +1d6 sacred damage with longswords |
+| Cyric | +1 CL for Enchantment/Illusion; can Rebuke undead as LE cleric |
+| Eilistraee | Sword dancing bon; +1d6 sacred damage with longswords |
 | Gond | Craft magic items at 75% cost; +2 Craft checks |
-| Helm | +2 AC bonus when guarding another; free Combat Reflexes |
+| Helm | +2 AC bon when guarding another; free Combat Reflexes |
 | Kelemvor | Detect Undead at will; Turn Undead +2 levels |
-| Lathander | +2 hit points per level; free Empower Spell for healing |
+| Lathander | +2 HP /lvl; free Empower Spell for healing |
 | Mielikki | Speak with Animals 3/day; +2 Handle Animal |
 | Mystra | Arcane Insight (+2 Spellcraft/Knowledge [arcana]); detect magic at will |
-| Oghma | 3 extra skill points per level; bardic knowledge if not bard |
+| Oghma | 3 extra skill points /lvl; bardic knowledge if not bard |
 | Selûne | Low-light vision; +2 Navigation and Survival |
 | Shar | Shadow Walk 1/day; Blind-Fight free feat |
 | Silvanus | Wild Shape 1/day (as druid 5); +2 to nature-related skill |
-| Torm | +2 sacred bonus on saves when protecting someone; Turn Undead bonus |
+| Torm | +2 sacred bon on saves when protecting someone; Turn Undead bon |
 | Tempus | +1 attack when fighting alongside allies; Weapon Focus (deity's weapon) |
-| Tymora | +2 luck on one check per day; reroll one die per day |
+| Tymora | +2 luck on one check /day; reroll one die /day |
+
+---
+
+## Expanded Sourcebooks — Prestige Classes (FR Context)
+
+### Complete Arcane
+- **Initiate of the Sevenfold Veil**: Abjurers who master the prismatic spectrum, creating protective wards of various colors. *(FR Lore: Popular in Halruaa and Silverymoon).*
+- **Mage of the Arcane Order**: Spellcasters tied to a magical guild who can pull spells they haven't prepared from a "Spellpool." *(FR Lore: Easily adapted to the Watchful Order of Magists and Protectors in Waterdeep, or the Conclave of Silverymoon).*
+- **Blood Magus**: Mages who have died and been resurrected, discovering power in blood. *(FR Lore: Common among Thayan exiles, or followers of Velsharoon and Shar).*
+- **Fatespinner**: Mages mastering probability, saving "spin" to alter d20 rolls. *(FR Lore: Close ties to the church of Tymora or Beshaba).*
+- **Mindbender**: Enchanter/Telepath focused on mind control and thralls. *(FR Lore: Zhentarim agents or Thayans).*
+
+### Complete Divine
+- **Contemplative**: Dedicated clerics who gain direct contact with their deity, bon domains, and immunity to disease/poison. *(FR Lore: The highest echelon of priests of any major faith, often seers or high priests/priestesses).*
+- **Divine Oracle**: Prophets who gain divination bonuses, evasion in medium armor, and uncanny dodge. *(FR Lore: Worshippers of Savras, Mystra, or Oghma).*
+- **Radiant Servant of Lathander (adapted from Pelor)**: The ultimate anti-undead healer. Extra greater turning, empowered/maximized healing. *(FR Lore: The elite Dawnbringers of Lathander's church).*
+- **Sacred Fist**: Monks who blend unarmed combat with divine spellcasting. *(FR Lore: Orders dedicated to Ilmater (Broken Ones) or Selûne (Sun Soul)).*
+
+### Complete Warrior
+- **Cavalier**: Elite mounted knights who deal devastating lance charge damage. *(FR Lore: Cormyrean Purple Dragons, Waterdhavian nobility, or knights of the Silver Chalice).*
+- **Dervish**: Lightly armored moving-attack specialists performing "Dervish Dances" with slashing weapons. *(FR Lore: Seen in Calimshan, or among specialized dancers of Sharess and Eilistraee).*
+- **Frenzied Berserker**: Barbarians with an uncontrollable "Frenzy," gaining extra attacks and the ability to ignore death, but liable to attack their own party. *(FR Lore: Bloodriders of the Tuigan, Uthgardt tribes (especially Black Lion/Griffon), or worshipers of Malar/Garagos).*
+- **Kensai**: Martial artists who pledge an oath of service and imbue their signature weapon with magical enhancements. *(FR Lore: Shou weapon masters, elite single-combatants).*
+- **Master Thrower**: rng specialists with thrown weapons, exploiting weak spots (touch attacks) and trip tricks. *(FR Lore: Halfling outriders or urban rogues/gladiators).*
+
+### Complete Scoundrel
+- **Avenging Executioner**: Rogues who use fear and sudden strikes to terrorize those who wronged them. *(FR Lore: Hoar's faithful).*
+- **Malconvoker**: Casters who summon evil creatures (fiends) to use them against evil, bypassing standard alignment restrictions. *(FR Lore: Mavericks often hunted by the church of Tyr or Torm, but secretly employed by the Harpers).*
+- **Mountebank**: Charismatic tricksters using deceptive magic, often dealing with infernal forces for their powers.
+
+### Complete Psionic & Expanded Psionics Handbook
+- **Anarchic Initiate**: Psionicists channeling the raw chaos of the Outer Planes (Limbo) into their powers.
+- **Flayerspawn Psychic**: Telepaths who embrace Illithid heritage, slowly turning into mind flayers. *(FR Lore: Underdark defectors or victims of illithid experimentation).*
+- **Soulbow**: Soulknives who shape their mind blades into arrows. *(FR Lore: Common among the hidden kalashtar/psionic sects if integrated, or isolated monasteries).*
+- **Illithid Slayer**: Martial psionicists dedicated to hunting mind flayers, immune to mind control, tracking aberration psionics. *(FR Lore: Frequently elite Githyanki/Githzerai strike teams hunting the likes of Zalkatar across the Underdark/Astral Plane, or vengeful Underdark races).*
+
+### Heroes of Battle & Heroes of Horror
+- **War Weaver** (*HoB*): Weaves a magical tapestry to cast touch-range buffs on the entire party at once. *(FR Lore: Cormyrean War Wizards).*
+- **Combat Medic** (*HoB*): Battlefield healers with sanctuary effects and spontaneous heals.
+- **Tainted Scholar** (*HoH*): spellcasters utilizing the horrific Taint (corruption/depravity) to cast magic using CON/WIS instead of normal stats. *(FR Lore: Found in the Shadow Weave or tainted regions like the ruins of Myth Drannor or Thay).*
+- **Fiend-blooded** (*HoH*): Sorcerers embracing a fiendish heritage for stat boosts and expanded spell lists.
+
+### Lords of Madness & Draconomicon
+- **Fleshwarper** (*LoM*): Grafting aberrant parts onto themselves and their familiar. *(FR Lore: Aboleth servants or isolated Underdark wizards).*
+- **Dragonsong Lyrist** (*Draconomicon*): Bards singing in Draconic for powerful fear and buffing effects. *(FR Lore: Cult of the Dragon or followers of Bahamut).*
+- **Initiate of the Draconic Mysteries** (*Draconomicon*): Martial artists (usually monks) who mimic the physical perfection of dragons. They gain natural armor, claws, energy resistance, dragon immunities, and the ability to manifest draconic might in unarmed combat. *(FR Lore: Elite ascetic orders hidden in dragon-inhabited peaks, such as sects in the Earthfast Mountains or secret monasteries dedicated to Bahamut/Tiamat in Damara and Chessenta).*
+
+### Environmental Series (Stormwrack, Sandstorm, Frostburn)
+- **Stormsinger** (*Frostburn*): Bards weaving the power of storms into their music, controlling winds and calling lightning. *(FR Lore: Skalds from the High Ice, Sossal, or wandering followers of Auril and Talos in the Moonshaes).*
+- **Walker in the Waste** (*Sandstorm*): Desert casters preserving the harsh waste, eventually becoming fearsome Dry Liches. *(FR Lore: Bedine clerics of Anauroch corrupted by Netherese paths, or ancient followers of Jergal).*
+- **Sand Shaper** (*Sandstorm*): Arcane casters drawing magic from the desert sands to craft physical objects and powerful spells. *(FR Lore: Calimshan sorcerers, runaway genasi, or wandering Anauroch mages).*
+- **Stormcaster** (*Stormwrack*): Elemental mages specializing in devastating wind, storm, thunder, and lightning magic. *(FR Lore: Worshippers of Talos, or battle-wizards on the Sea of Fallen Stars).*
+- **Scarlet Corsair** (*Stormwrack*): Fearsome pirates who use sneak attacks and terrifying reputation mechanics on the high seas. *(FR Lore: Pirates of the Inner Sea, Nelanther Isles corsairs, or infamous Luskan captains).*
+
+### Libris Mortis
+- **Dirgesinger**: Undead-focused bards who sing a requiem to debuff enemies and reanimate the dead. *(FR Lore: Followers of Myrkul or Velsharoon).*
+- **Master of Radiance**: Divine casters focused entirely on sunlight and purging undead. *(FR Lore: Lathander's church).*
+- **Pale Master**: Arcane necromancers with a grafted undead arm. *(FR Lore: Cult of the Dragon, Thayan Necromancers).*
+
+### Faerûnian Specific / Races Series & Underdark
+- **Entropist** (*Lords of Darkness*): Clerics of Entropy (Tiamat aspect) who control spheres of annihilation, negate arcane magic, and resist body-altering effects. *(FR Lore: Luthcheq / Chessenta aristocrats, fiercely anti-wizard).*
+- **Runesmith** (*Races of Stone*): Dwarven wizards casting spells via runes engraved on stones, bypassing arcane spell failure to wear heavy armor. *(FR Lore: Shield dwarfs of the North/Mithral Hall).*
+- **Deepwarden** (*Races of Stone*): Dwarven rangers acting as subterranean sentinels, using CON to AC instead of DEX.
+- **Chameleon** (*Races of Destiny*): Humans/Doppelgangers who can change their class capabilities (arcane, divine, martial, stealth) every day.
+- **Arcane Hierophant** (*Races of the Wild*): Arcane/Druid hybrid. The familiar and animal companion merge into a "Familiar Companion."
+- **Prime Underdark Guide** (*Underdark*): The ultimate subterranean survivalists, leading expeditions through the darkest reaches of Faerûn.

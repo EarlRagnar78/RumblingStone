@@ -1,8 +1,8 @@
-# Forgotten Realms — Artifacts & Unique Magic Items (D&D 3.5)
+# FR — Artifacts & Unique Magic Items (D&D 3.5)
 
 Sources: FRCS (2001), Faiths & Pantheons (2002), various FR sourcebooks
 
-Note: Artifacts cannot be created by mortal means and cannot be destroyed by normal means.
+Artifacts cannot be created by mortal means and cannot be destroyed by normal means.
 Each has a listed method of destruction. Minor artifacts are less powerful than major ones.
 All values listed are lore-accurate from 3.5 publications; no copyrighted text is reproduced verbatim.
 
@@ -68,14 +68,14 @@ Moander's essence is imprisoned in a monolith form.
 **Type**: Minor artifact
 **Origin**: Wept by Selûne during her first battle with Shar
 **Appearance**: A clear teardrop-shaped gem that glows faintly
-**Powers**: Grants the wielder protection against undead; +4 sacred bonus to Turn Undead;
+**Powers**: Grants the wielder protection against undead; +4 sacred bon to Turn Undead;
 Selûne's Blessing (Protection from Evil 3/day); can locate lycanthropes within 1 mile
 
 ### The Darkbolt of Shar
 **Type**: Minor artifact (several may exist)
 **Appearance**: A bolt of dark metal with a purple sheen
 **Powers**: When fired from any crossbow, deals 3d6 shadow damage + 3d6 against good
-creatures; on a critical hit, the target must save vs. permanent blindness
+creatures; on a critical hit, the target must save vs. perm blindness
 
 ---
 
@@ -108,7 +108,7 @@ innocent beings; Detect Magic, Identify at will for wielder; the Weave speaks to
 **Note**: Multiple swords of this type exist; given by Mystra to worthy champions
 
 ### The Dragon's Eye (unique dagger)
-**Powers**: +3 dagger; see invisibility (continuous); detect poison at will; held by a thief
+**Powers**: +3 dagger; see invisibility (cont); detect poison at will; held by a thief
 lord in various FR novels; now lost/scattered
 
 ---
@@ -136,14 +136,14 @@ Simple silver crescent-and-harp pins worn by Harpers. Functions:
 - Identify the wearer as a Harper to other Harpers (Sense Motive DC 15 to identify without training)
 - Act as a mild curse to anyone who steals one and wears it without being a Harper (Feeblemind 1/week check)
 - Some rare versions are also Minor Sending devices (can send messages as per Sending to another
-specific pin, once per day)
+specific pin, once /day)
 
 ### Red Wizard Tattoos (Thayan)
 Magical tattoos created through the Scribe Tattoo feat. Not artifacts, but notable:
 - Each tattoo occupies the "skin" magic item slot
 - A Red Wizard may have up to 5 tattoos simultaneously (DM may vary)
 - Typical effects: +1 CL for specialist school, resistance to one energy type, ability score
-enhancements, minor spell-like abilities
+enhancements, minor Sp abilities
 - Removing a tattoo deals 3d6 damage; restoring a removed tattoo costs the full creation price
 
 ### Zhentarim Talisman

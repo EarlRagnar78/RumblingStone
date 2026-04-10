@@ -195,7 +195,7 @@ Stage 2A: The Skull Gorge
 Stage 2B (parallel): Lhesper
   Goal: Eliminate Wyrmlord Koth in the Lhespenbog before he flanks Rethmar
   → Success: Lose the black dragon support; lizardfolk may flip to neutral
-  → Failure: Koth flanks Rethmar during the final battle; adds +20% horde strength
+  → Failure: Koth flanks Rethmar during the final battle; adds +20% horde STR
 
 Stage 3: The Ghostlord's Bargain
   Goal: Deal with the Lich of Vraath Keep
@@ -241,7 +241,7 @@ Stage 1: Identify the Phylactery
 Stage 2: The Destruction Ritual
   Goal: The phylactery cannot be destroyed by mundane means. Options:
   → Holy site destruction: Bring it to the Moonwatch Hill and have Sertieren perform a 3-hour
-    ritual (requires 500 gp in components, party must defend against 3 waves of lich's undead)
+    ritual (req: 500 gp in components, party must defend against 3 waves of lich's undead)
   → Divine request: A cleric of Kelemvor or Torm of 9th+ level can destroy it with a special
     casting of Dispel Evil + Consecrate (combined effect) — costs 1,500 XP
   → Throw it into lava: There's no volcano nearby. Finding one is a separate mini-quest.
@@ -264,8 +264,8 @@ Type: Artifact (Minor)
 Artifact: The Talisman of Five Fangs
   A medallion of black iron inlaid with five gemstones (black, blue, green, red, white)
   arranged like Tiamat's heads. Functions as a minor artifact:
-  - +4 Charisma to anyone who worships Tiamat (evil only)
-  - +2 Charisma to all others
+  - +4 CHA to anyone who worships Tiamat (evil only)
+  - +2 CHA to all others
   - 3/day: Command (as spell, DC 16) targeting non-Tiamat worshippers
   - 1/day: Cause Fear (DC 15) in a 20-ft burst
   - Curse: Non-evil wearers must make Will DC 18 each week or become increasingly obsessed
@@ -288,10 +288,10 @@ Stage 2: Destroying the Anchor
   → Submerge in blessed water at a temple of Selûne: Temple of Selûne in Cannathgate has a
     blessed spring; 3-hour ritual; Tiamat cultists will try to stop it (8 fanatics + 1 cleric)
   → Counter-ritual at the Shaarcah Forest's heart: Elves offer to unmake it through forest magic;
-    requires party to return the elves' stolen sacred idol (Side Quest: The Taken Idol)
+    req: party to return the elves' stolen sacred idol (Side Quest: The Taken Idol)
 
 Stage 3: Consequence
-  → Talisman destroyed: Horde loses morale cohesion bonus; in the final battle, EL drops by 2
+  → Talisman destroyed: Horde loses morale cohesion bon; in the final battle, EL drops by 2
   → Talisman kept and cursed PC: Eventually acts as a plot driver for a follow-up campaign
   → Talisman given to Red Wizard (mistake): Szass Tam now has a direct Tiamat connection
 
@@ -326,7 +326,7 @@ Reward (recruited): 800 XP; 8 lizardfolk skirmishers for the Battle of Rethmar (
 [4] THE DESERTER'S CACHE
 A hobgoblin sergeant named Grakh has deserted. He has his unit's logistical plans (maps of
 supply depots, encoded in hobgoblin military script). Tracking him (Survival DC 18) and
-convincing him to defect or extracting the plans is worth 2 weeks' advance intelligence:
+convincing him to defect or extracting the plans is worth 2 weeks' advance INT:
 DM may reveal one encounter from the next chapter before it occurs.
 Reward: 700 XP; pre-knowledge of one upcoming encounter
 
@@ -334,7 +334,7 @@ Reward: 700 XP; pre-knowledge of one upcoming encounter
 A Red Wizard named Zara Vel (Wiz 9, NE, Thay) is in Cannathgate, quietly observing the invasion.
 She is NOT helping the horde — she's evaluating whether Thay can exploit the chaos afterward.
 Approach options: Ignore (she leaves; no consequence); Confront (she defends herself; CR 9);
-Negotiate (she'll share intelligence on the horde's logistics for a favor owed to Thay — moral
+Negotiate (she'll share INT on the horde's logistics for a favor owed to Thay — moral
 weight here; accepting makes the party indebted to a Red Wizard)
 Reward: Varies by approach; intel is worth 600 XP equivalent if extracted diplomatically
 
@@ -355,7 +355,7 @@ Reward: 1,000 XP; a Cult communication crystal worth 800 gp as an item; intel on
 
 [8] VRAATH HOLD'S VAULT (Exploration)
 Vraath Keep is a ruin — but the original owners buried a vault beneath the courtyard. Finding
-it requires: Research in Rethmar's mill-archive (Knowledge: History DC 18), then excavation
+it req:: Research in Rethmar's mill-archive (Knowledge: History DC 18), then excavation
 (8 hours, 4+ people), then bypassing a 100-year-old arcane lock (Disable Device DC 30 or
 Knock). Inside: 3,200 gp in old Cormyrean coin, a +2 light fortification breastplate (old
 Purple Dragon style), and a partial spellbook (3 2nd-level, 2 3rd-level spells; DM chooses).
@@ -380,7 +380,7 @@ FR Expansion:
   Black=Acid Splash (4d6), Blue=Call Lightning (7d6), Green=Suggestion (DC 18),
   Red=Fireball (10d6 DC 19), White=Ice Storm (at CL 12)
 - **Escape Contingency**: If reduced below 30 HP, Dimension Door to the Fane of Tiamat
-  (inner sanctum); requires the party to fight through the Fane to finish the job
+  (inner sanctum); req: the party to fight through the Fane to finish the job
 - **If He Escapes**: See follow-up hooks below.
 
 Follow-up hooks if Azarr Kul escapes:
@@ -420,7 +420,7 @@ a recurring antagonist:
 - Retreats to the Shaarcah Forest's eastern edge; begins a guerrilla campaign
 - Recruits the remaining Koth lizardfolk as a small but effective swamp-raider force
 - Has a personal grudge against any PC who killed his wyvern
-- Will eventually seek employment from the Zhentarim (offers intelligence on the vale's
+- Will eventually seek employment from the Zhentarim (offers INT on the vale's
   defenses in exchange for protection and resources)
 - Can be found and confronted 3 months post-campaign (Survival DC 22 to track into the
   Lhespenbog; CR 12 encounter with 12 lizardfolk + Saarvith at Rgr 8)
@@ -452,10 +452,10 @@ Allied factions provide active military or logistical support in the Battle of R
 
 **Battle of Rethmar modifiers by Allied factions:**
 - Vale Council + militia: +50 defenders (included by default)
-- Shaarcah Forest Conclave: +12 elf scouts (ranged; devastating in the approach)
-- Lizardfolk: +8 irregular skirmishers (melee; unreliable; may break if casualties are high)
+- Shaarcah Forest Conclave: +12 elf scouts (rng; devastating in the approach)
+- Lizardfolk: +8 irregular skirmishers (mel; unreliable; may break if casualties are high)
 - Silverymoon wizard: +1 high-level arcane caster (10th level Wiz) for the final battle
-- Harper Cell activated: Intelligence on horde's approach route → first round of battle is not a surprise
+- Harper Cell activated: INT on horde's approach route → first round of battle is not a surprise
 
 ---
 
@@ -521,7 +521,7 @@ Create `campaign/npcs/[name-kebab-case].md`:
 **Race/Class**: [race, class N]
 **CR**: [N]
 **HP**: [N] | **AC**: [N] | **Initiative**: +[N]
-**Attack**: [primary attack +N melee/ranged (Nd6+N damage)]
+**Attack**: [primary attack +N mel/rng (Nd6+N damage)]
 **Saves**: Fort +N / Ref +N / Will +N
 **Special**: [key ability]
 

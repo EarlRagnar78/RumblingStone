@@ -14,7 +14,6 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
-SKILL_NAME="dnd-35-rules"
 DRY_RUN=false
 NO_BUILD=false
 
@@ -32,19 +31,24 @@ done
 
 $DRY_RUN && warn "DRY RUN mode"
 
-# ── In-repo agent paths (committed to git) ───────────────────────────────────
-# Format: agent_id:repo_relative_path:preferred_format
+# ── In-repo agent path roots (NOT committed; see .gitignore) ────────────────
+# Format: agent_id:repo_relative_root:preferred_format
+# Each skill becomes <root>/<skill_name>/.
 declare -a AGENT_ENTRIES=(
-  "claude:.claude/skills/${SKILL_NAME}:compact.md"
-  "codex:.agents/skills/${SKILL_NAME}:machine.json"
-  "cursor:.cursor/skills/${SKILL_NAME}:machine.json"
-  "windsurf:.windsurf/skills/${SKILL_NAME}:compact.md"
-  "copilot:.github/copilot/skills/${SKILL_NAME}:compact.md"
-  "chatgpt:.chatgpt/skills/${SKILL_NAME}:compact.md"
-  "gemini:.gemini/skills/${SKILL_NAME}:structured.yaml"
+  "claude:.claude/skills:compact.md"
+  "codex:.agents/skills:machine.json"
+  "cursor:.cursor/skills:machine.json"
+  "windsurf:.windsurf/skills:compact.md"
+  "copilot:.github/copilot/skills:compact.md"
+  "chatgpt:.chatgpt/skills:compact.md"
+  "gemini:.gemini/skills:structured.yaml"
 )
 
-BUILD_DIR="${REPO_ROOT}/build/${SKILL_NAME}"
+# Discover all skills (any skills/* with a SKILL.md)
+declare -a SKILL_NAMES=()
+for d in "${REPO_ROOT}/skills"/*/; do
+  [[ -f "${d}SKILL.md" ]] && SKILL_NAMES+=("$(basename "${d%/}")")
+done
 
 echo ""
 echo "══════════════════════════════════════════════════════"
@@ -74,32 +78,30 @@ echo ""
 info "Syncing agent-specific packages to in-repo paths..."
 
 for entry in "${AGENT_ENTRIES[@]}"; do
-  IFS=':' read -r agent rel_path fmt <<< "${entry}"
-  dest="${REPO_ROOT}/${rel_path}"
-  pkg="${BUILD_DIR}/packages/${agent}"
+  IFS=':' read -r agent rel_root fmt <<< "${entry}"
+  for skill_name in "${SKILL_NAMES[@]}"; do
+    dest="${REPO_ROOT}/${rel_root}/${skill_name}"
+    pkg="${REPO_ROOT}/build/${skill_name}/packages/${agent}"
 
-  if $DRY_RUN; then
-    warn "  [dry] ${agent} (${fmt}) → ${rel_path}"
-    continue
-  fi
+    if $DRY_RUN; then
+      warn "  [dry] ${agent} (${fmt}) ${skill_name} → ${rel_root}/${skill_name}"
+      continue
+    fi
 
-  if [[ ! -d "${pkg}" ]]; then
-    warn "  ${agent}: package not found at ${pkg} — skipped"
-    continue
-  fi
+    if [[ ! -d "${pkg}" ]]; then
+      warn "  ${agent}/${skill_name}: package not found at ${pkg} — skipped"
+      continue
+    fi
 
-  mkdir -p "$(dirname "${dest}")"
-  rm -rf "${dest}"
-  cp -R "${pkg}" "${dest}"
-  info "  ${agent} (${fmt}) → ${rel_path}"
+    mkdir -p "$(dirname "${dest}")"
+    rm -rf "${dest}"
+    cp -R "${pkg}" "${dest}"
+    info "  ${agent} (${fmt}) ${skill_name} → ${rel_root}/${skill_name}"
+  done
 done
 
 echo ""
 if ! $DRY_RUN; then
-  info "Sync complete. Commit the changes:"
-  echo ""
-  echo "  git add .claude .agents .cursor .windsurf .github .chatgpt .gemini"
-  echo "  git commit -m 'chore: sync optimized skill formats for all agents'"
-  echo ""
-  info "Token savings vs. raw copy: see build/${SKILL_NAME}/formats/_compression_summary.json"
+  info "Sync complete (local mirrors only — these are gitignored)."
+  info "To deploy to user-level agent dirs: ./scripts/build-skills.sh"
 fi

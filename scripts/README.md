@@ -1,90 +1,96 @@
-# RumblingStone — Skill Optimization Pipeline
+# RumblingStone — Skill Build & Sync Pipeline
 
 ## What This Does
 
-**Problem:** AI agents load entire skill trees → wasteful token usage (~50K tokens/query).
-**Solution:** Build pipeline that produces per-agent optimized formats + retrieval index.
+Compresses, indexes, and packages the `skills/*` source trees into per-agent
+formats and (optionally) deploys to user-level skill directories.
 
-## Token Savings Summary
+## Skills
 
-| Technique | Savings | Where it applies |
-|---|---|---|
-| Selective loading via index | **60–80%** | All queries (primary lever) |
-| Prose stripping | 10–15% | campaign-*.md, dm-strategy.md |
-| DSL abbreviations | 5–10% | combat.md, core-mechanics.md |
-| Per-agent format (YAML/JSON) | 5–15% | Structured reference files |
+The repo ships **three skills** as canonical sources, plus one legacy
+meta-router for backwards compatibility:
 
-**Total effective reduction per query: 70–85%** vs loading all skills raw.
+| Skill | Scope |
+|---|---|
+| `skills/dnd-35-srd/` | Pure d20 SRD mechanics (no setting bias) |
+| `skills/forgotten-realms-lore/` | Faerûn 1372 DR canon |
+| `skills/rumblingstone-campaign/` | Custom campaign — PCs, artifacts, arcs, coherence |
+| `skills/dnd-35-rules/` | Meta-router that points to the three above (legacy compat) |
+
+The build pipeline auto-discovers anything under `skills/` that has a
+`SKILL.md` file.
 
 ## Pipeline
 
 ```
 RAW .md → compress_skills.py → compact.md / structured.yaml / machine.json
                              ↓
-                       index_skills.py → index.json (domain→file mapping)
+                      index_skills.py → build/<skill>/index.json
                              ↓
-                      build-skills.sh → per-agent packages
+                      build-skills.sh → packages/<agent>/
                              ↓
-                      sync-skills.sh → in-repo agent paths + user ~/.agent/skills/
+              user-level deploy OR sync-skills.sh (in-repo mirrors)
 ```
 
 ## Quickstart
 
 ```bash
-# Build everything (compress + index + package + deploy)
-./build-skills.sh --measure
-
-# Dry run first
-./build-skills.sh --dry-run
-
-# Build + sync to repo paths (for git commit)
-./scripts/sync-skills.sh
-
-# Build without user-level deploy (CI/CD)
-./build-skills.sh --no-deploy
+./scripts/build-skills.sh                     # build all skills + deploy to ~/.<agent>/skills/
+./scripts/build-skills.sh --no-deploy         # build only (CI)
+./scripts/build-skills.sh --skill=dnd-35-srd  # build a single skill
+./scripts/build-skills.sh --measure           # report compression numbers
+./scripts/build-skills.sh --dry-run           # see what would happen
+./scripts/sync-skills.sh                      # populate in-repo mirrors (gitignored)
 ```
 
-## Agent Format Routing
+## What is NOT committed
+
+Per-agent mirrors (`.claude/skills/`, `.agents/skills/`, `.cursor/skills/`,
+`.windsurf/skills/`, `.chatgpt/skills/`, `.gemini/skills/`,
+`.github/copilot/skills/`) and `build/` are all gitignored. They are
+deterministic outputs of the canonical `skills/*` source. Each developer
+runs the pipeline locally.
+
+This was changed because committing the mirrors caused ~3MB of duplication
+and silent drift between agents.
+
+## Per-Agent Format Routing
 
 | Agent | Format | Why |
 |---|---|---|
-| Claude | compact.md | Best at structured markdown, DSL-aware |
-| Gemini | structured.yaml | Handles YAML key-value natively |
-| Codex / Cursor | machine.json | Deterministic parsing, no ambiguity |
+| Claude | compact.md | Reads markdown natively |
+| Windsurf | compact.md | Same loader family as Claude |
 | ChatGPT | compact.md | Mixed NL + structure |
-| Windsurf | compact.md | Similar to Claude Code |
+| Copilot | compact.md | Conservative default |
+| Gemini | structured.yaml | Native YAML parsing |
+| Codex | machine.json | Deterministic |
+| Cursor | machine.json | Deterministic |
 
-## Selective Loading (How the Index Works)
+## index.json — Honest Note
 
-Instead of loading all 15+ reference files (~50K tokens), agent loads index.json first,
-identifies the 1-3 relevant domain files, loads only those (~5-10K tokens):
+`index.json` is generated under `build/<skill>/index.json` and is intended
+for selective loading. **No mainstream agent loader currently consumes it
+automatically.** It is therefore *not* copied into per-agent packages —
+shipping it would only inflate token cost.
 
-```python
-# Agent pseudo-code
-index = load("index.json")  # ~500 tokens
-relevant_files = index["domain_index"]["combat"]  # → ["combat"]
-content = load(f"references/combat.compact.md")  # ~2000 tokens
-# Total: ~2500 tokens vs ~50000 = 95% reduction
-```
+It remains useful for:
 
-## Scripts
+- Custom scripts that want to do their own retrieval.
+- Developers writing prompts that want to point at specific files.
+- Future agents whose loaders gain index.json support (add their name to
+  `AGENT_INDEX_AWARE` in `build-skills.sh`).
 
-| Script | Purpose |
-|---|---|
-| `build-skills.sh` | Main pipeline: compress → index → package → deploy |
-| `scripts/compress_skills.py` | Multi-format compressor (md/yaml/json) |
-| `scripts/index_skills.py` | Builds domain+keyword retrieval index |
-| `scripts/sync-skills.sh` | Format-aware repo sync (replaces blind cp -R) |
+## Adding a New Skill
 
-## Adding a New Skill File
-
-1. Add `skills/dnd-35-rules/references/my-new-file.md`
-2. Add entry to `FILE_DOMAINS` dict in `index_skills.py`
-3. Add domain keywords to `DOMAIN_KEYWORDS` if needed
-4. Run `./build-skills.sh`
+1. Create `skills/<new-skill>/SKILL.md` (must contain a YAML frontmatter
+   block with `name:` and `description:`).
+2. Add reference files under `skills/<new-skill>/references/`.
+3. (Optional) Add domain keywords to `DOMAIN_KEYWORDS` in `index_skills.py`
+   for richer index coverage.
+4. Run `./scripts/build-skills.sh` — auto-discovers and builds it.
 
 ## Why compact.md > JSON for Claude
 
-JSON adds structural overhead (+quotes, +braces) that costs tokens for Claude's parser.
-Claude reads markdown natively — tables, headers, and bullet structures parse efficiently.
-JSON is best for code-oriented agents (Codex, Cursor) that already work in JSON.
+JSON adds structural overhead (quotes, braces, commas) that costs tokens for
+text-native models. Claude reads markdown tables and headers efficiently.
+JSON is best for code-oriented agents (Codex, Cursor) that already parse JSON.

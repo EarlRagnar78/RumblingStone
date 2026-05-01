@@ -292,6 +292,18 @@ venv/
 
 # RumblingStone .gitignore
 
+# Generated agent skill mirrors — produced by scripts/build-skills.sh from
+# canonical skills/ source. Never commit these; they cause drift, bloat the
+# repo (~3MB per mirror), and the per-agent format is reproducible from source.
+.claude/skills/
+.agents/skills/
+.cursor/skills/
+.windsurf/skills/
+.chatgpt/skills/
+.gemini/skills/
+.github/copilot/skills/
+build/
+
 # OS artifacts
 .DS_Store
 Thumbs.db

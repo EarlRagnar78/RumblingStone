@@ -93,7 +93,9 @@ When any agent answers a D&D 3.5 rules question:
 3. **House rules** live in `campaign/lore/house-rules.md` — always check before ruling
 4. **RAW vs RAI**: state which you're providing; give both if ambiguous
 5. **Red Hand of Doom adaptations**: documented in `campaign/lore/rhod-adaptations.md`
-6. **DM Strategy & Player Profiles**: For adult-oriented, non-linear sessions (Shine Time, State Machine design), always consult `campaign/lore/csmpaign players.md` (or the equivalent agent skill reference `campaign-dm-strategy.md`).
+6. **DM Strategy & Player Profiles**: For adult-oriented, non-linear sessions (Shine Time, State Machine design), consult `skills/dnd-35-rules/references/campaign-dm-strategy.md` (canonical). The lore folder file `campaign/lore/dm-player-strategy.md` is now a pointer to that canonical source.
+7. **Living world state**: Before describing what NPCs know, where parties/villains currently are, or what threads are open, load `campaign/state.md`. It is the single source of truth for *current* world state (changes per session).
+8. **Coherence**: Before introducing artifact powers, NPC knowledge, or callbacks to past PG actions, consult `skills/dnd-35-rules/references/campaign-coherence.md`.
 
 ---
 
@@ -112,13 +114,26 @@ When any agent answers a D&D 3.5 rules question:
 
 ## Supported Agents
 
-This repo is configured for automatic skill discovery by:
+The canonical skill source is `skills/dnd-35-rules/`. Per-agent mirrors are
+**generated artifacts**, not committed to git (see `.gitignore`). Each
+developer/CI runs the build pipeline locally:
 
-- **Claude Code** → `.claude/skills/dnd-35-rules/`
-- **OpenAI Codex** → `.agents/skills/dnd-35-rules/`
-- **GitHub Copilot** → `.github/copilot/skills/dnd-35-rules/`
-- **Cursor** → `.cursor/skills/dnd-35-rules/`
-- **Windsurf** → `.windsurf/skills/dnd-35-rules/`
+- **Claude Code** → `.claude/skills/dnd-35-rules/` (compact.md format)
+- **OpenAI Codex** → `.agents/skills/dnd-35-rules/` (machine.json)
+- **GitHub Copilot** → `.github/copilot/skills/dnd-35-rules/` (compact.md)
+- **Cursor** → `.cursor/skills/dnd-35-rules/` (machine.json)
+- **Windsurf** → `.windsurf/skills/dnd-35-rules/` (compact.md)
+- **Gemini** → `.gemini/skills/dnd-35-rules/` (structured.yaml)
+- **ChatGPT** → `.chatgpt/skills/dnd-35-rules/` (compact.md)
 
-Run `./scripts/deploy-skills.sh` to install skills to your local user-level paths.
-Run `./scripts/sync-skills.sh` to update all agent paths from the canonical `skills/` source.
+Build commands:
+
+```
+./scripts/build-skills.sh           # build + deploy to ~/.<agent>/skills/
+./scripts/build-skills.sh --no-deploy  # build only (CI)
+./scripts/sync-skills.sh            # build + populate in-repo mirrors locally
+```
+
+Why mirrors aren't committed: they are 6× the source size (~3MB), drift over
+time, and any agent that needs them can regenerate deterministically from
+`skills/`. Treat `skills/` as the only thing humans edit.

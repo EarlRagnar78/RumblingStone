@@ -49,7 +49,7 @@ This campaign uses a **Reactive State Machine Design**. It emphasizes severe con
 ## Setup Instructions
 
 1. Clone the repository to your local machine.
-2. If using AI Agents (Claude Code, Cursor, Windsurf), run `./scripts/deploy-skills.sh` to install the `dnd-35-rules` skill to your user-level paths.
+2. If using AI Agents (Claude Code, Cursor, Windsurf), run `./scripts/build-skills.sh` to build per-agent skill packages and deploy them to your user-level paths. Per-agent mirrors are not committed to git — regenerate them locally.
 3. Review `AGENTS.md` to understand campaign conventions and agent instructions.
 
 ## Licensing Information

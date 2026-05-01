@@ -18,23 +18,36 @@ campaign/
 └── lore/           # House rules, world adaptations, timeline
 
 skills/
-└── dnd-35-rules/   # D&D 3.5 Agent Skill — CANONICAL SOURCE
-                    # All agent-specific paths symlink here (or copy via deploy.sh)
+├── dnd-35-srd/             # D&D 3.5 SRD mechanics (no setting bias)
+├── forgotten-realms-lore/  # Faerûn 1372 DR canon
+├── rumblingstone-campaign/ # custom campaign + coherence rules
+└── dnd-35-rules/           # legacy meta-router (points to the three above)
 ```
+
+Per-agent mirrors (`.claude/skills/`, `.cursor/skills/`, etc.) are
+generated artifacts of `scripts/build-skills.sh` and are gitignored.
 
 ---
 
-## D&D 3.5 Rules Skill
+## Skills (three of them)
 
-This repo ships a full **D&D 3.5 rules skill** in `skills/dnd-35-rules/`.
-AI agents that support the SKILL.md standard will automatically use it.
+This repo ships **three** focused D&D 3.5 skills plus one legacy meta-router.
+AI agents that support SKILL.md will discover them automatically:
 
-When any agent answers a D&D 3.5 rules question:
+- `skills/dnd-35-srd/` — pure d20 SRD mechanics
+- `skills/forgotten-realms-lore/` — Faerûn 1372 DR canon
+- `skills/rumblingstone-campaign/` — this campaign (PCs, artifacts, arcs, coherence)
+- `skills/dnd-35-rules/` — legacy meta-router; points to the three above
 
-- Load `skills/dnd-35-rules/SKILL.md` first
-- Use the domain routing table inside it to load the correct reference file
-- Cite sources: SRD section, or `[Private — Red Hand of Doom, p.X]` for non-SRD content
-- **Never invent stat blocks or spell effects** — fetch from d20srd.org or flag as uncertain
+When any agent answers a question:
+
+1. Match the question to the skill (rules / lore / campaign).
+2. Load that skill's `SKILL.md` first; follow its routing table.
+3. For campaign questions, also load `campaign/state.md` and
+   `skills/rumblingstone-campaign/references/campaign-coherence.md`.
+4. Cite sources: SRD section, FRCS p.X, or `[Private — Red Hand of Doom, p.X]`.
+5. **Never invent** stat blocks, spell effects, NPC stats, or artifact powers.
+   Flag as `[INFERRED — needs DM confirmation]` instead.
 
 ---
 

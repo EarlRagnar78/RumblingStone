@@ -33,7 +33,13 @@ Important non-player characters and antagonists (Detailed in `PNG/` and `campaig
 - **Maestro Varis "Seta-Argento"**: Opportunistic planar merchant, urban broker in Rethmar, CR 6.
 - **Conte Valerius**: Nobility entangled in funding the enemy, demanding social/political finesse to defeat.
 - **Il Collezionista (Rakshasa)**: A deadly collector of rare artifacts and secrets, the shadow mastermind, GS 17–19.
-- **Salvatore "Sal" della Luna d'Argento** (`PNG/Salvatore/`): Temporal spy and soul-harvester. A flamboyant planar merchant in the Shaar desert, secretly the "Ladro d'Ombra" who witnessed the PCs at Hammerfist 1000 years ago. Bard 8 / Sublime Chord 1 / Spy 5, GS 14. Serves both Il Collezionista and Matrona Sajak (Drow). Supplier of the "living statues" to Varis. Introduced Day 28–32 before Rethmar (Arc 09, P2C).
+- **Salvatore "Sal" della Luna d'Argento** (`PNG/Salvatore/`): Temporal spy and soul-harvester. Flamboyant desert merchant, secretly "Vatore" who witnessed the PCs at Hammerfist -1000 DR. Bard 8/Sublime Chord 1/Spy 5, GS 14. Supplies living statues to Varis. Introduced Day 28–32, Arc 09 P2C.
+- **Azarr Kul** (`PNG/Azarr_Kul/`): High Wyrmlord of Tiamat. Half-Blue-Dragon Hobgoblin, Cleric 10/Fighter 4, GS 15. Commands the Red Hand horde; rides Tyrgarun (Ancient Blue Dragon CR 20). Boss of Rethmar Phase 3.
+- **Sonjak / Matrona Sajak** (`PNG/Sonjak/`): Drow Cleric Matrona. Cleric 10/Matrona 3, GS 13. Commands underground Drow forces in Cannath Vale; Sal's employer on the surface. Clock 4/8 — triggers Phase 0 Night of the Drow.
+- **Conte Valerius** (`PNG/Conte_Valerius/`): Political villain. Expert 4/Aristocrat 4. Legally finances the Red Hand horde through "patriotic emergency loans." Cannot be defeated in combat — requires political/investigative approach. Clock 2/8.
+- **Maestro Varis "Seta-Argento"** (`PNG/Varis_Seta_Argento/`): Urban broker in Rethmar. Rogue 4/Expert 4, CR 6. Knowingly sells petrified living creatures as artwork. Potential ally for Artemis; key link in the statue supply chain. Distinct from Sal (who is the field agent/supplier).
+- **Ghostlord / Arcano Zeth il Murato** (`PNG/Ghostlord/`): Druidic Lich of the Thornwaste. Druid 13/Lich, GS 13. Ancient master builder of Hammerfist, tricked into lichdom. Ally or enemy depending on party choices; Hella's key NPC. Holds 20 spectral lions as potential reinforcements at Rethmar.
+- **Xal'thor** (`PNG/Xal_thor/`): Illithid Githyanki Commander. Psion 6 (effective GS 14). Targets Tordek's Bracieri as planar keys to the Eternal Forge. Fixed trigger: attacks Dauth Tournament Day 3 regardless of party action. Potential wildcard at Rethmar if not stopped.
 - **Therysol** (`PNG/Therysol/`): Tiefling Half-Dragon, former Underdark merchant, hunting Il Collezionista. Ally NPC, GS 9.
 
 ## Repository Layout & Agent Support

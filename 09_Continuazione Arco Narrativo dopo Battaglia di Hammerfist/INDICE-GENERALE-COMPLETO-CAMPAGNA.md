@@ -16,6 +16,33 @@ See `skills/dnd-35-rules/references/fr-cannath-vale.md` for the full RHoD→Cann
 
 ---
 
+## 🧑‍🤝‍🧑 REGISTRO PNG — TUTTI I VILLAIN E NPC PRINCIPALI
+
+File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D 3.5, agenda, tattiche, note DM).
+
+| NPC / Villain | File | GS | Ruolo | Clock |
+|---|---|---|---|---|
+| **Il Collezionista (Rakshasa)** | `PNG/Il_Collezionista_Rakshasa.md` | 17–19 | Shadow mastermind; manipola Varis, Sal, Sonjak | 5/8 |
+| **Salvatore "Sal" / Vatore** | `PNG/Salvatore/Salvatore.md` | 14 | Spia temporale; mercante del deserto; fornitore statue vive | 0/6 |
+| **Azarr Kul** | `PNG/Azarr_Kul/Azarr_Kul.md` | 15 | Alto Wyrmlord di Tiamat; boss Fase 3 Rethmar; monta Tyrgarun | 9/18 |
+| **Sonjak / Matrona Sajak** | `PNG/Sonjak/Sonjak.md` | 13 | Matrona Drow, comanda forze sotterranee; datore di lavoro di Sal | 4/8 |
+| **Conte Valerius** | `PNG/Conte_Valerius/Conte_Valerius.md` | 6/14★ | Villain politico; finanzia la Mano Rossa; non si batte in combat | 2/8 |
+| **Maestro Varis "Seta-Argento"** | `PNG/Varis_Seta_Argento/Varis_Seta_Argento.md` | 6 | Broker urbano Rethmar; anello della catena statue vive | — |
+| **Ghostlord / Zeth il Murato** | `PNG/Ghostlord/Ghostlord.md` | 13 | Lich druidico Thornwaste; alleato o nemico; NPC di Hella | — |
+| **Xal'thor** | `PNG/Xal_thor/Xal_thor.md` | 14 | Comandante Illithid Githyanki; attacca Torneo Giorno 3 (fisso) | Fixed |
+| **Therysol** | `PNG/Therysol/Therysol.md` | 9 | Alleata Tiefling Mezzo-Drago; caccia Il Collezionista | — |
+
+★ Conte Valerius GS 6 in combattimento fisico / GS 14 effettivo come villain politico-legale
+
+**Villain minori con stat nei file di arco (no cartella dedicata):**
+- Zalkatar (Illithid Warlock, CR 13): `Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md`
+- Wyrmlord Saarvith + Regiarax (CR 12/13): `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`
+- Zarim (Illithid luogotenente, CR 12): `Arco-Post-Hammerfist-P2B-Torneo-Tordek-BATTLE-STATS-e-VILLAIN-ICONICI.md`
+- Avversari Torneo (12+ nomi): `Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md`
+- Azarr Kul + Avatar Tiamat (stat epiche): `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md`
+
+---
+
 ## 📋 STRUTTURA CAMPAGNA COMPLETA
 
 ### PARTE 0: SETUP, TIMELINE & CONTESTO

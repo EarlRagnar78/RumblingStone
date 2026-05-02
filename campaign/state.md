@@ -134,6 +134,10 @@ changelog with the resolution.
 - Does the Ghostlord become ally or enemy at Rethmar (depends on Sacred Forest outcome)?
 - Conte Valerius — political defeat path vs. assassination path?
 - Does Artemis confront the Mask cult before the Ring fully evolves?
+- **[CONSIGLIO]** Will the party remove Halveth before Day 33 Seduta 2? (If not: +1 CR Phase 0, resa vote passes by Kaal's double vote)
+- **[CONSIGLIO]** Can the party convince Lady Kaal with a credible military plan? (Diplomacy CD 22 + allied faction list required)
+- **[LORANA]** Will the party reconnect with Lorana and use her field intel for Thorik's Rethmar defense plan? (-1 CR Phase 1 if yes)
+- **[LORANA]** Will the party ask Lorana to mobilize the refugees as emergency reserve? (Moral cost — requires face-to-face before the request)
 
 ---
 

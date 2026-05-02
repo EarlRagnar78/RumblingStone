@@ -41,6 +41,8 @@ Important non-player characters and antagonists (Detailed in `PNG/` and `campaig
 - **Ghostlord / Arcano Zeth il Murato** (`PNG/Ghostlord/`): Druidic Lich of the Thornwaste. Druid 13/Lich, GS 13. Ancient master builder of Hammerfist, tricked into lichdom. Ally or enemy depending on party choices; Hella's key NPC. Holds 20 spectral lions as potential reinforcements at Rethmar.
 - **Xal'thor** (`PNG/Xal_thor/`): Illithid Githyanki Commander. Psion 6 (effective GS 14). Targets Tordek's Bracieri as planar keys to the Eternal Forge. Fixed trigger: attacks Dauth Tournament Day 3 regardless of party action. Potential wildcard at Rethmar if not stopped.
 - **Therysol** (`PNG/Therysol/`): Tiefling Half-Dragon, former Underdark merchant, hunting Il Collezionista. Ally NPC, GS 9.
+- **Capitana Lorana** (`PNG/Lorana/`): Secondary NPC, GS 7. Fighter 6/Expert 2. Survivor of the initial Red Hand attack (Arc 00), led ~800 refugees to Rethmar. Non-official Council voice; her field intel is worth -1 CR to Phase 1 if shared with Thorik. Key reconnection NPC for all four PCs.
+- **Consiglio di Rethmar** (`PNG/Consiglio_Rethmar/`): 7-member political body (Lady Kaal, Halveth, Jarmaath, Sorvane, Pyriel, Thornwall, Lorana). Default vote = surrender without party intervention. Three council sessions (Day 30/33/35) with concrete battle impact on all Rethmar phases. Halveth active during Phase 0 → +1 CR (drow know temple layout).
 
 ## Repository Layout & Agent Support
 

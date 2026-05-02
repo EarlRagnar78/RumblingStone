@@ -8,7 +8,7 @@
 
 ## 🗂️ FILE REFERENCE
 
-This directory contains **74 markdown files** + **6 image files**.
+This directory contains **74 markdown files** + **6 image files** (+ 2 new PNG files in `/PNG/Lorana/` and `/PNG/Consiglio_Rethmar/`).
 All location names use Cannath Vale equivalents (Rethmar, Shaarcah Forest, etc.).
 See `skills/dnd-35-rules/references/fr-cannath-vale.md` for the full RHoD→Cannath Vale mapping.
 
@@ -31,6 +31,8 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 | **Ghostlord / Zeth il Murato** | `PNG/Ghostlord/Ghostlord.md` | 13 | Lich druidico Thornwaste; alleato o nemico; NPC di Hella | — |
 | **Xal'thor** | `PNG/Xal_thor/Xal_thor.md` | 14 | Comandante Illithid Githyanki; attacca Torneo Giorno 3 (fisso) | Fixed |
 | **Therysol** | `PNG/Therysol/Therysol.md` | 9 | Alleata Tiefling Mezzo-Drago; caccia Il Collezionista | — |
+| **Capitana Lorana** | `PNG/Lorana/Lorana.md` | 7 | PNG secondaria; guida rifugiati; voce non ufficiale Consiglio; NPC di riconnessione Arc 00 | — |
+| **Consiglio di Rethmar** | `PNG/Consiglio_Rethmar/Consiglio_Rethmar.md` | — | Organo collegiale 7 membri; 3 sedute Day 30/33/35; resa default senza intervento PG | — |
 
 ★ Conte Valerius GS 6 in combattimento fisico / GS 14 effettivo come villain politico-legale
 
@@ -349,6 +351,24 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 - MB-4: Semi di Corruzione (foresta infestata, Cuore di Madre Fungo)
 - MB-5: Torre d'Ascolto Githyanki (torre planare, cristallo comunicazione)
 - MB-6: Ultimo Nido Drow (rituale disperato, Avatar minore Madre Funghi)
+
+### PARTE 3 — Arrivo a Rethmar: Politica e Riconnessioni (Day 30–35)
+
+*Fase politica pre-assedio. Si svolge in parallelo alle ultime missioni secondarie.*
+
+| File | Tipo |
+|---|---|
+| `PNG/Consiglio_Rethmar/Consiglio_Rethmar.md` | Scheda organo collegiale — 7 membri, agende, meccanica voto |
+| `PNG/Lorana/Lorana.md` | Scheda PNG secondaria — capitana rifugiati, voce campo |
+
+**Contenuti:**
+
+- Tre sedute del Consiglio (Day 30, 33, 35) con voto difesa vs resa
+- Default senza intervento PG: **resa vince** per doppio voto di Kaal
+- Halveth attivo durante Fase 0: drow conoscono la pianta del tempio → **+1 CR Fase 0**
+- Azioni party → tabella impatti concreti su CR di ogni fase (7 azioni mappate)
+- Lorana: riconnessione NPC Arc 00, intel campo vale -1 CR Fase 1 se condivisa con Thorik
+- Mobilitazione rifugiati: +150 fanteria civile (costo morale — richiede faccia a faccia)
 
 ---
 

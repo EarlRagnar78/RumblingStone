@@ -42,7 +42,8 @@ the listed consequence triggers.
 
 | Villain | Where | Agenda | Clock | Trigger if filled |
 |---|---|---|---|---|
-| Sonjak (Drow Cleric Matrona) | Underdark, Cannath Vale border | Subvert dwarven citadel from below; coordinate with Il Collezionista | 4/8 | Drow night-raid on Hammerfist temple (sets up Phase 0 of Rethmar) |
+| Sonjak (Drow Cleric Matrona) — also "Matrona Sajak" in Sal's operative code | Underdark, Cannath Vale border | Subvert dwarven citadel from below; coordinate with Il Collezionista; manage Sal as surface field agent | 4/8 | Drow night-raid on Hammerfist temple (sets up Phase 0 of Rethmar) |
+| Salvatore "Sal" della Luna d'Argento | Desert road, Cannath Vale → Rethmar (Shaar) | Profile party's artifacts and magical defenses; plant Sabotage Oil on weapons before Rethmar; deliver living statues to Varis | 0/6 | Sabotage Oil applied — weapon TS failure risk at Phase 3 boss; Phase 4 statue activation proceeds at full strength |
 | Il Collezionista (Rakshasa) | Mobile — last seen brokering with drow | Acquire the Crown's spare gem before party can use it; manipulate Conte Valerius | 5/8 | Sponsors anti-party legal pressure; Conte Valerius freezes assets |
 | Zalkatar (Illithid Warlock) | Invisible Tower, Dauth region | Mind-strip a captured githyanki for fleet intel | 6/8 | Tower goes mobile; harder to find next session |
 | Wyrmlord Saarvith + Regiarax | Lake Rhest ruins | Rebuild dragonrider corps from black dragon spawn | 3/8 | Rhest becomes a fortified war camp; CR +1 to assault |
@@ -60,11 +61,18 @@ the listed consequence triggers.
 
 | NPC | Knows that... | Learned how / when |
 |---|---|---|
-| Sonjak | The party freed the Cristal Warriors but does NOT know they have all 3 Crown gems | Drow scouts witnessed the mine assault |
+| Sonjak (= Matrona Sajak) | The party freed the Cristal Warriors but does NOT know they have all 3 Crown gems | Drow scouts witnessed the mine assault |
+| Sonjak | Sal is operating on the desert road toward Rethmar; does NOT know Sal's temporal identity (Vatore) | Standard briefing to field agent |
+| Ghostlord / Zeth il Murato | Party existence unknown; aware of Red Hand using his lair as undead factory | Sensed via lair's magical senses |
+| Conte Valerius | The party visited Hammerfist; does NOT know about the Crown or Sal | Public dispatches — updated 2026-05-02 |
+| Azarr Kul | Party are Custodi Eterni; does NOT know artifact details | General intelligence from Red Hand scouts |
+| Xal'thor | Tordek carries the Twin Braziers (planar keys to Eternal Forge) | Planar observation; cross-referenced with Forgia Eterna records |
+| Varis "Seta-Argento" | Some statues might be alive; does NOT know Sal is the supplier chain origin | Involuntary observation 3 months ago |
 | Il Collezionista | Artemis carries the Ring of Chaotic Illumination | Witnessed at minotaur lair; sent guild operatives to track |
 | Il Collezionista | Therysol is alive and hunting him | Inferred from missing guild operatives in Underdark |
 | Re Thorek Hammerfist | The party are now Custodi Eterni; he has named them so | Awarded post-siege |
 | Maestro Varis "Seta-Argento" | Artemis is a buyer of Underdark relics; willing to broker | Three transactions to date |
+| Salvatore "Sal" | The party are Custodi Eterni carrying major divine artifacts; knows their names, abilities, and routes | Briefed by Il Collezionista before deploying to desert road |
 | Conte Valerius | The party visited Hammerfist; does NOT yet know about the Crown | Public dispatches |
 | Druid Circle of the Sacred Forest | Hella is approaching for the ritual; reserves judgment | Hella's letter, sent two days ago |
 | Therysol | Il Collezionista's guild has a hidden cell in Dauth | Captured guild operative interrogated |
@@ -120,10 +128,16 @@ Bullet list of unresolved questions. When a thread closes, move it to the
 changelog with the resolution.
 
 - Will the party defend the Hammerfist temple (Phase 0 of Rethmar) before or after personal quests?
+- Will the party encounter Sal on the desert road (Day 28–32) and identify him before he plants his sabotage traps?
+- If the party frees Sal's living statues, the nano di Hammerfist recognizes Sal as Vatore — will the party connect Sal's past to his present identity?
 - Does Tordek's chakra enlightenment carry into the Battle of Rethmar?
 - Does the Ghostlord become ally or enemy at Rethmar (depends on Sacred Forest outcome)?
 - Conte Valerius — political defeat path vs. assassination path?
 - Does Artemis confront the Mask cult before the Ring fully evolves?
+- **[CONSIGLIO]** Will the party remove Halveth before Day 33 Seduta 2? (If not: +1 CR Phase 0, resa vote passes by Kaal's double vote)
+- **[CONSIGLIO]** Can the party convince Lady Kaal with a credible military plan? (Diplomacy CD 22 + allied faction list required)
+- **[LORANA]** Will the party reconnect with Lorana and use her field intel for Thorik's Rethmar defense plan? (-1 CR Phase 1 if yes)
+- **[LORANA]** Will the party ask Lorana to mobilize the refugees as emergency reserve? (Moral cost — requires face-to-face before the request)
 
 ---
 
@@ -136,4 +150,17 @@ entries — they become campaign history.
 2026-05-01  Initial state.md created (extracted from campaign-story-arcs.md
             + post-Hammerfist arc notes). Baseline = end of Hammerfist battle,
             party at Hammerfist Holds, Custodi Eterni granted.
+2026-05-02  Added Salvatore "Sal" della Luna d'Argento as active villain thread
+            (clock 0/6). Added to NPC knowledge table and open narrative threads.
+            Files: PNG/Salvatore/Salvatore.md,
+            09_Continuazione.../Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md
+2026-05-02  Full PNG audit: created dedicated character sheets for all major
+            villains/NPCs previously missing from PNG/. Files created:
+            PNG/Azarr_Kul/Azarr_Kul.md (GS 15, boss Rethmar Phase 3),
+            PNG/Sonjak/Sonjak.md (GS 13, Drow Matrona; clarified = Matrona Sajak),
+            PNG/Conte_Valerius/Conte_Valerius.md (GS 6 combat / GS 14 political),
+            PNG/Varis_Seta_Argento/Varis_Seta_Argento.md (CR 6, urban broker),
+            PNG/Ghostlord/Ghostlord.md (GS 13, Lich druidico Thornwaste),
+            PNG/Xal_thor/Xal_thor.md (GS 14, Illithid Githyanki commander).
+            NPC knowledge table and open threads updated accordingly.
 ```

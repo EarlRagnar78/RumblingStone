@@ -226,6 +226,32 @@ See `skills/dnd-35-rules/references/fr-cannath-vale.md` for the full RHoD→Cann
 
 ---
 
+### PARTE 2C: Incontro con Salvatore "Sal" della Luna d'Argento (Intermezzo Desertico)
+
+**Timing:** Day 28–32 — sulla strada Cannath Vale → Rethmar (dopo le quest personali)
+**Durata:** 1 sessione (sociale + eventuale combattimento fuga)
+**NPC:** `PNG/Salvatore/Salvatore.md` — Bardo 8 / Accordo Sublime 1 / Spia 5 (GS 14)
+
+| File | Tipo | Status |
+|---|---|---|
+| `Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md` | Testo incontro, hook per PG, gestione confronto | ✅ |
+
+**Contenuti:**
+
+- Hook: carro di seta blu nel deserto, ballata che cita le gesta dei PG per nome
+- Test della Brocca Invisibile (profila Artemis + Tordek)
+- Interazioni specifiche per PG: Thorik (intel Rethmar), Tordek (dreno risonanza Bracieri), Artemis (tripla schermatura anti-warlock), Hella (sensore biologico / statue vive)
+- Trappole di sabotaggio: Olio di Manutenzione (armi), Sali da Bagno (Ring)
+- Gestione del confronto e fuga
+- Statue Vive nel carro (de-petrificazione → testimone di Hammerfist -1000 DR)
+- Collegamento diretto con Fase 4 Mythal-Statue (Rethmar)
+
+**Connessioni NPC:** Serve sia il **Collezionista (Rakshasa)** che la **Matrona Sajak (Drow)** — agente di campo doppio. È il fornitore a monte di **Maestro Varis "Seta-Argento"** (le statue del suo carro diventano le "sculture" nelle case dei nobili di Rethmar).
+
+**Differenziazione da Varis:** Varis = broker urbano CR 6, semi-inconsapevole. Sal = spia temporale GS 14, pienamente consapevole, attivo nel deserto PRIMA che i PG arrivino in città.
+
+---
+
 ## PARTE 3: MISSIONI SECONDARIE + BATTAGLIA FINALE RETHMAR
 
 ### PARTE 3 — Starsong Hill: Alleanza Elfi Tiri Kitor

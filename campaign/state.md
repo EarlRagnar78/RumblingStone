@@ -43,6 +43,7 @@ the listed consequence triggers.
 | Villain | Where | Agenda | Clock | Trigger if filled |
 |---|---|---|---|---|
 | Sonjak (Drow Cleric Matrona) | Underdark, Cannath Vale border | Subvert dwarven citadel from below; coordinate with Il Collezionista | 4/8 | Drow night-raid on Hammerfist temple (sets up Phase 0 of Rethmar) |
+| Salvatore "Sal" della Luna d'Argento | Desert road, Cannath Vale → Rethmar (Shaar) | Profile party's artifacts and magical defenses; plant Sabotage Oil on weapons before Rethmar; deliver living statues to Varis | 0/6 | Sabotage Oil applied — weapon TS failure risk at Phase 3 boss; Phase 4 statue activation proceeds at full strength |
 | Il Collezionista (Rakshasa) | Mobile — last seen brokering with drow | Acquire the Crown's spare gem before party can use it; manipulate Conte Valerius | 5/8 | Sponsors anti-party legal pressure; Conte Valerius freezes assets |
 | Zalkatar (Illithid Warlock) | Invisible Tower, Dauth region | Mind-strip a captured githyanki for fleet intel | 6/8 | Tower goes mobile; harder to find next session |
 | Wyrmlord Saarvith + Regiarax | Lake Rhest ruins | Rebuild dragonrider corps from black dragon spawn | 3/8 | Rhest becomes a fortified war camp; CR +1 to assault |
@@ -65,6 +66,7 @@ the listed consequence triggers.
 | Il Collezionista | Therysol is alive and hunting him | Inferred from missing guild operatives in Underdark |
 | Re Thorek Hammerfist | The party are now Custodi Eterni; he has named them so | Awarded post-siege |
 | Maestro Varis "Seta-Argento" | Artemis is a buyer of Underdark relics; willing to broker | Three transactions to date |
+| Salvatore "Sal" | The party are Custodi Eterni carrying major divine artifacts; knows their names, abilities, and routes | Briefed by Il Collezionista before deploying to desert road |
 | Conte Valerius | The party visited Hammerfist; does NOT yet know about the Crown | Public dispatches |
 | Druid Circle of the Sacred Forest | Hella is approaching for the ritual; reserves judgment | Hella's letter, sent two days ago |
 | Therysol | Il Collezionista's guild has a hidden cell in Dauth | Captured guild operative interrogated |
@@ -120,6 +122,8 @@ Bullet list of unresolved questions. When a thread closes, move it to the
 changelog with the resolution.
 
 - Will the party defend the Hammerfist temple (Phase 0 of Rethmar) before or after personal quests?
+- Will the party encounter Sal on the desert road (Day 28–32) and identify him before he plants his sabotage traps?
+- If the party frees Sal's living statues, the nano di Hammerfist recognizes Sal as Vatore — will the party connect Sal's past to his present identity?
 - Does Tordek's chakra enlightenment carry into the Battle of Rethmar?
 - Does the Ghostlord become ally or enemy at Rethmar (depends on Sacred Forest outcome)?
 - Conte Valerius — political defeat path vs. assassination path?
@@ -136,4 +140,8 @@ entries — they become campaign history.
 2026-05-01  Initial state.md created (extracted from campaign-story-arcs.md
             + post-Hammerfist arc notes). Baseline = end of Hammerfist battle,
             party at Hammerfist Holds, Custodi Eterni granted.
+2026-05-02  Added Salvatore "Sal" della Luna d'Argento as active villain thread
+            (clock 0/6). Added to NPC knowledge table and open narrative threads.
+            Files: PNG/Salvatore/Salvatore.md,
+            09_Continuazione.../Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md
 ```

@@ -30,9 +30,11 @@ The core heroes of the campaign (Detailed in `PG/`):
 
 ### PNG (NPCs & Villains)
 Important non-player characters and antagonists (Detailed in `PNG/` and `campaign/npcs/`):
-- **Maestro Varis "Seta-Argento"**: Opportunistic planar merchant.
+- **Maestro Varis "Seta-Argento"**: Opportunistic planar merchant, urban broker in Rethmar, CR 6.
 - **Conte Valerius**: Nobility entangled in funding the enemy, demanding social/political finesse to defeat.
-- **Il Collezionista (Rakshasa)**: A deadly collector of rare artifacts and secrets.
+- **Il Collezionista (Rakshasa)**: A deadly collector of rare artifacts and secrets, the shadow mastermind, GS 17–19.
+- **Salvatore "Sal" della Luna d'Argento** (`PNG/Salvatore/`): Temporal spy and soul-harvester. A flamboyant planar merchant in the Shaar desert, secretly the "Ladro d'Ombra" who witnessed the PCs at Hammerfist 1000 years ago. Bard 8 / Sublime Chord 1 / Spy 5, GS 14. Serves both Il Collezionista and Matrona Sajak (Drow). Supplier of the "living statues" to Varis. Introduced Day 28–32 before Rethmar (Arc 09, P2C).
+- **Therysol** (`PNG/Therysol/`): Tiefling Half-Dragon, former Underdark merchant, hunting Il Collezionista. Ally NPC, GS 9.
 
 ## Repository Layout & Agent Support
 

@@ -16,9 +16,9 @@ Piazza centrale, piattaforma rotante, introduzione all’Orbe
 
 ---
 
-## Visione Githyanki – Eco delle Fenditure (Trigger: 1° apertura della Porta 1 via Orbe) — `[INFERRED]`
+## Visione Githyanki – Eco delle Fenditure (Trigger: 1° apertura della Porta 1 via Orbe)
 
-> **[INFERRED — needs DM confirmation]** Cutscene e meccanica proposte; non sono canone fisso. Vedi `OTTO-PORTE-e-ORBE.md` §2.1.1 per il disclaimer completo sull’origine Githyanki dell’Orbe e per la possibilità di rimuovere o sostituire questa lore. Le regole numeriche di sotto sono qui solo per leggibilità in scena: la **fonte autoritativa** del Clock Githyanki avanzato è `OTTO-PORTE-e-ORBE.md` §2.1.3.
+> Origine Githyanki dell’Orbe = canone di campagna RumblingStone (vedi `OTTO-PORTE-e-ORBE.md` §2.1.1). La **fonte autoritativa** della regola del Clock Githyanki avanzato è `OTTO-PORTE-e-ORBE.md` §2.1.3 — qui sotto è ripresa solo per leggibilità in scena.
 
 **Quando si attiva:** la primissima volta che il PG monaco (Tordek) attiva una Porta tramite l’Orbe, l’artefatto risuona con frammenti della propria storia planare.
 

@@ -114,7 +114,7 @@ full mechanics. This table is current truth only.
 | Bracieri Gemelli di Moradin | Tordek | Fire ✅ + Earth ✅ | Salto Infuocato 3/day, Fire Resist 10, DR 5/adamantine, Jump +10 |
 | Collana dei Semi Eterni | Hella | Active post-resurrection | Treant summoning (limited), Avatar form (1/day), party gift slots (unspent: 3) |
 | Cuore di Moradin | Crown set (altar) | Activated | Resurrection ritual catalyst — single-use, expended for Hella |
-| Orbe delle Otto Porte | Tournament prize, not yet held | Awaits Tournament outcome | N/A until Tordek wins |
+| Orbe delle Otto Porte (Githyanki artifact, campaign canon) | Tournament prize, not yet held | Awaits Tournament outcome | N/A until Tordek wins |
 
 **Spent / single-use already burned:**
 - Ruby gem of the Crown (used at year -1000 battle)
@@ -168,6 +168,16 @@ entries — they become campaign history.
             PNG/Ghostlord/Ghostlord.md (GS 13, Lich druidico Thornwaste),
             PNG/Xal_thor/Xal_thor.md (GS 14, Illithid Githyanki commander).
             NPC knowledge table and open threads updated accordingly.
+2026-05-03  DM confirmation: the Orbe delle Otto Porte is established
+            as a **Githyanki artifact** (campaign canon, RumblingStone —
+            not SRD/RHoD). [INFERRED — needs DM confirmation] markers
+            removed from OTTO-PORTE-e-ORBE §2.1.1/2.1.2/2.1.3 and PARTE1.
+            Origin promoted to canon in
+            skills/rumblingstone-campaign/references/campaign-artifacts.md
+            and §5 of state.md. All downstream mechanics (Vaereth's claim,
+            Sethrax's "seme di Porta" extraction, Githyanki clock-advance
+            rule, Eco delle Fenditure vision) are now established
+            campaign canon.
 2026-05-03  Code-review fixes on the Tournament ↔ Torre integration:
             - Typos in PNG/Sethrax_il_Velato/Sethrax.md (article gender,
               "priorità alla ritirata").

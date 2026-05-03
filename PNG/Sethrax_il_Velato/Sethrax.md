@@ -5,10 +5,17 @@
 **Classe:** Psion 5 (Telepath) — DV totali 8d8 + 5d4 + 26 → CR 12
 **Allineamento:** Legale Malvagio (servizio metodico, non zelo)
 **Identità di copertura:** *Kethran “Mano di Pietra”* — monaco errante umano, presunto Monk 11.
-**Patrono:** **Zalkatar**, Illithid Warlock Drow del **Torre Invisibile** (vedi `Arco-Post-Hammerfist-P2A-Torre-PARTE4-FINALE-Boss-Zalkatar.md`).
+**Patrono:** **Zalkatar**, Illithid Warlock Drow della **Torre Invisibile** (vedi `Arco-Post-Hammerfist-P2A-Torre-PARTE4-FINALE-Boss-Zalkatar.md`).
 **Ruolo:** Emissario covert al Torneo di Dauth (Arco 09 P2B). Missione: estrarre un “seme di Porta” dall’Orbe delle Otto Porte per gli esperimenti planari di Zalkatar.
 **Countdown Clock:** Sincronizzato con il Torneo (eventi automatici Giorni 1–3). Esito finale impatta il clock di Zalkatar (P2A).
 **File correlati:** `09_Continuazione.../Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE2-Giorno2-Semifinali.md`, `…-PARTE3-Giorno3-Finale-e-Invasione.md`, `…-STATBLOCCHI-COMPLETO.md` voce **10**, `…-OTTO-PORTE-e-ORBE.md` §2.1.1, `PNG/Xal_thor/Xal_thor.md` (fazione rivale).
+
+> **Questo file è la FONTE AUTORITATIVA per:**
+> - tutti i **trigger di smascheramento** (vedi sezione *Disguise Self psionico*),
+> - i **limiti d'uso dei poteri psionici** (vedi sezione *Poteri Psionici*),
+> - la **tabella esiti / impatto cross-arco** su Zalkatar nel finale di Artemis (sezione *ESITI E IMPATTO CROSS-ARCO*).
+>
+> Tutti gli altri file (PARTE2, PARTE3, MINIMAPPA, STATBLOCCHI voce 10) **rimandano qui**. In caso di divergenza vince questo file.
 
 ---
 
@@ -141,7 +148,7 @@ Se libero di canalizzare: continua. PF residui sul piedistallo lo lasciano vulne
 
 ### Atteggiamento verso il PG monaco
 - Se il PG **lo ignora e va su Xal’thor**: Sethrax gli lancia *Mental Barrier* opportunista (+4 CA 1 round contro un attacco di Xal’thor). Telepatica: *“Il tuo nemico è il mio nemico. Per ora.”*
-- Se il PG **lo attacca direttamente**: combatte normalmente, priorità ritirata. Telepatica: *“Scelta interessante. La tua specie è sempre stata sentimentale con i propri giocattoli.”*
+- Se il PG **lo attacca direttamente**: combatte normalmente, priorità alla ritirata. Telepatica: *“Scelta interessante. La tua specie è sempre stata sentimentale con i propri giocattoli.”*
 
 ---
 

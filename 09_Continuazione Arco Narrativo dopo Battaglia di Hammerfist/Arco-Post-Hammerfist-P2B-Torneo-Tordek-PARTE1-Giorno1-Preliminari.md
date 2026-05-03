@@ -18,6 +18,8 @@ Piazza centrale, piattaforma rotante, introduzione all’Orbe
 
 ## Visione Githyanki – Eco delle Fenditure (Trigger: 1° apertura della Porta 1 via Orbe)
 
+> Origine Githyanki dell’Orbe = canone di campagna RumblingStone (vedi `OTTO-PORTE-e-ORBE.md` §2.1.1). La **fonte autoritativa** della regola del Clock Githyanki avanzato è `OTTO-PORTE-e-ORBE.md` §2.1.3 — qui sotto è ripresa solo per leggibilità in scena.
+
 **Quando si attiva:** la primissima volta che il PG monaco (Tordek) attiva una Porta tramite l’Orbe, l’artefatto risuona con frammenti della propria storia planare.
 
 **Effetto narrativo (cutscene di 30 secondi reali):** Tordek perde fuoco di campo per metà round. Davanti agli occhi gli si apre una **visione psionica** trasmessa dall’Orbe stessa:
@@ -34,7 +36,7 @@ Piazza centrale, piattaforma rotante, introduzione all’Orbe
 **Foreshadowing (cosa il DM sta seminando):**
 - L’Orbe **fu forgiata o usata in passato dai Githyanki** come arma planare. Le “Otto Porte” erano in origine **otto risonanze ki-psioniche** create per cavalieri-draghi in coordinamento. Per i Githyanki, l’Orbe è proprietà legittima del Popolo delle Fenditure.
 - I draghi rossi del Giorno 3 (Vaereth + flotta) **non arrivano per caso**: sentono l’Orbe attiva nel Piano Materiale come una campana di richiamo. Più Tordek apre Porte, più rapidamente convergono.
-- Conseguenza opzionale (DM): per ogni 2 usi totali della Porta 2+ tramite l’Orbe nei Giorni 1–2, il **Clock Githyanki anticipa di 1 turno** la fase di Vaereth (il drago-cavaliere arriva 1 round prima del previsto in Fase 3).
+- Conseguenza opzionale (DM) — **fonte autoritativa: `OTTO-PORTE-e-ORBE.md` §2.1.3**. In sintesi: ogni 2 usi totali della Porta 2+ tramite l’Orbe nei Giorni 1–2, il **Clock Githyanki anticipa di 1 turno** la fase di Vaereth (max –3 turni). Per dettagli e casi limite vedi la fonte.
 
 **Reazione del pubblico e di Tordek-organizzatore:**
 - Nessuno nel pubblico vede la visione. Tordek (organizzatore, non il PG) **lo nota** come breve assenza, e a fine match domanderà: *“Cosa ti ha mostrato?”* — Lui sa che l’Orbe parla a chi la apre, ma non a tutti dice **cosa**.

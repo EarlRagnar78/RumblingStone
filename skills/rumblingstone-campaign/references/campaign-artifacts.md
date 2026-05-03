@@ -295,12 +295,18 @@ The NPC **Therysol** (found in the Fire Plane, Arc 07) was originally a slave so
 
 **Owner:** Tordek Durinheart (scenic — used during Dauth Tournament)
 **Type:** Wondrous Item (unique, scenic artifact)
+**Origin:** **Githyanki artifact** (campaign canon, RumblingStone). Forged on the Astral Plane as a ki-psionic resonator for Githyanki dragon-riders; the "Eight Gates" are originally eight rider–red-dragon synchronization frequencies. Lost in a planar raid, buried on the Material Plane, later reinterpreted by a monk lineage as a body-discipline tool.
 **Aura:** Strong transmutation + necromancy | **CL:** 20th
-**Source:** `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-OTTO-PORTE*.md`
+**Source:** `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-OTTO-PORTE*.md` §2.1.1 (origin), §2.1.3 (Githyanki clock-advance rule).
 
 ### Description
 
 A mystical orb that channels the user's life force through progressively dangerous "chakra gates" (inspired by Naruto's Eight Gates). Each gate temporarily unlocks superhuman martial power at the cost of the user's body. The artifact is **scenic** — it exists to create dramatic moments in the Tournament arc and is not a standard lootable item.
+
+**Active narrative consequences:**
+- Free Githyanki forces (led by Vaereth "Lama della Fenditura") arrive on red dragons during Day 3 of the Tournament to **reclaim the Orb** as ancestral property.
+- Two illithid conclaves take notice: **Zalkatar** (Invisible Tower, Artemis's P2A arc) sends emissary **Sethrax il Velato** to extract a "Seme di Porta" for planar experiments; **Xal'thor** has no interest in the Orb (his target is Tordek's Bracieri).
+- Each pair of Porta-2-or-higher openings during Days 1–2 advances the Githyanki arrival clock by 1 turn (max –3, see OTTO-PORTE §2.1.3).
 
 ### Mechanics (D&D 3.5)
 

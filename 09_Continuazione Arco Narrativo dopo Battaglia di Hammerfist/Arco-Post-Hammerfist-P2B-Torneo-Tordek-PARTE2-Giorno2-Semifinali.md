@@ -50,10 +50,12 @@ Distribuisci **uno o due** indizi per round, mai tutti insieme:
 
 ### Prove per smascherarlo prima del Giorno 3
 
+> **Fonte autoritativa dei trigger di smascheramento: `PNG/Sethrax_il_Velato/Sethrax.md` → "Disguise Self psionico" + sezione tattiche.** Le righe sotto sono un riassunto rapido per il DM in scena; in caso di conflitto vince la PNG card.
+
 - Conoscenze (arcane) o Sapienza Magica CD 22 → riconoscere il pattern di un’*alter self* psionico stabile.
 - Percezione passiva CD 24 (round vicino) → notare i 4 punti di pressione anomali sotto le maniche.
 - Diplomazia / Raggirare CD 25 contro l’allievo (slave) → l’allievo balbetta, gli si forma sangue dal naso, fugge.
-- *Detect Thoughts* o *True Seeing* → smaschera istantaneamente. Sethrax reagisce: tenta di scomparire (Psionic Dimension Door 1/giorno) o di silenziare il testimone (*Suggestion* CD 16).
+- *Detect Thoughts* o *True Seeing* → smaschera istantaneamente. Sethrax reagisce: tenta di scomparire (*Psionic Dimension Door* — 3/giorno, vedi PNG card) o di silenziare il testimone (*Suggestion* CD 16).
 
 > **Nota DM:** se i PG lo smascherano nel Giorno 2, Sethrax **non combatte apertamente**: si dichiara “costretto al ritiro per ferita”, sparisce, e tenta il colpo all’Orbe la notte tra Giorno 2 e 3 (mini-furto / scena di infiltrazione, opzionale). Se NON viene smascherato, prosegue verso la finale e si rivela nel Giorno 3 (vedi `PARTE3`).
 

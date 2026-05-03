@@ -63,7 +63,7 @@ A questo punto il Giorno 3 ha **tre poli ostili tra loro**:
 
 | Fazione | Obiettivo | Atteggiamento verso il PG |
 |---|---|---|
-| **Xal’thor** (Illithid militare, flotta githyanki dominata) | Bracieri di Tordek (chiavi planari Forgia Eterna) + dominio | Ostile / strumentale |
+| **Xal’thor** (Illithid militare; comanda schiavi psionici, larve e un piccolo nucleo di Githyanki **dominati** — NON la forza githyanki libera di Vaereth) | **Solo** i Bracieri Gemelli di Tordek (chiavi planari per la Forgia Eterna). **Non** è interessato all’Orbe. | Ostile / strumentale |
 | **Sethrax il Velato** (Illithid covert, emissario di **Zalkatar** dalla Torre Invisibile) | Estrarre un “seme di Porta” dall’Orbe per gli **esperimenti planari** di Zalkatar | Cinico / disposto ad alleanza temporanea contro Xal’thor |
 | **Vaereth + Cavalieri Githyanki su draghi rossi** (vedi MINIMAPPA Fase 3) | Recuperare l’Orbe (proprietà ancestrale del Popolo delle Fenditure) | Tregua armata anti-Illithid (entrambi gli Illithid) |
 
@@ -134,12 +134,12 @@ A questo punto il Giorno 3 ha **tre poli ostili tra loro**:
 
 ### Esiti possibili (impatto su Arco P2A di Artemis)
 
-| Esito di Sethrax al Torneo | Conseguenza per Torre Invisibile / Artemis |
-|---|---|
-| **Ucciso in arena** | Zalkatar perde il suo emissario di campo. Clock Zalkatar **+1** (rallenta di 1 turno l’avanzamento; meno reattivo agli intrusi). Il “seme di Porta” cade come loot — può essere distrutto o portato in Torre come prova schiacciante. |
-| **Catturato vivo** | Interrogato (Diplomazia CD 28 / Intimidazione CD 26 / *Detect Thoughts*): rivela **mappa parziale del Livello 4 della Torre** + nome di **Zalkatar**. Sostanzialmente –1 CR all’incontro finale di Artemis (P2A PARTE4). |
-| **Fugge con il “seme di Porta”** | Zalkatar potenzia la Torre con un nodo psionico nuovo. P2A PARTE4: Zalkatar guadagna **+2 CR effettivo** in Fase 3 e nuova capacità *Mind Blast* tematica derivata dall’Orbe. Per Artemis è uno scenario molto più duro. |
-| **Fugge senza il seme** | Status quo per Zalkatar; ma Sethrax sopravvive come futuro NPC ricorrente (può tornare come spia in altri archi, anche post-Rethmar). |
+> **Fonte autoritativa della tabella esiti cross-arco: `PNG/Sethrax_il_Velato/Sethrax.md` → sezione "ESITI E IMPATTO CROSS-ARCO".** In caso di divergenza vince la PNG card. Riassunto qui per consultazione rapida in scena.
+
+- **Ucciso in arena** → Clock Zalkatar rallenta; “seme di Porta” come loot.
+- **Catturato vivo** → –1 CR all’incontro finale di Artemis (P2A PARTE4).
+- **Fugge senza il seme** → status quo, Sethrax come NPC ricorrente.
+- **Fugge con il seme** → +2 CR effettivo a Zalkatar in P2A PARTE4.
 
 > **Per il DM:** comunica chiaramente al party (anche fuori scena) che Sethrax è **la chiave del prossimo arco di Artemis**. La sua sorte al Torneo di Dauth determina la difficoltà del raid alla Torre Invisibile.
 

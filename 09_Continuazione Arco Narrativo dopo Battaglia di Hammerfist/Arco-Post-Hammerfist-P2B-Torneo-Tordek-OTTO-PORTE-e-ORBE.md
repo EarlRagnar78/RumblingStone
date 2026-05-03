@@ -24,24 +24,35 @@ Ogni cerchio rappresenta una Porta: quando si apre, un anello dell’Orbe ruota,
 - Solo chi possiede la disciplina del **Monaco** (o simile tradizione di ki) può entrare in sintonia completa.  
 - Durante il torneo, l’Orbe è “tarata” su Tordek: non può esplodere il pubblico, ma può spingere il corpo del monaco oltre il limite.
 
-### 2.1.1 Origine planare (lore — semina al Giorno 1, conferma al Giorno 3)
+### 2.1.1 Origine planare (canone di campagna RumblingStone)
+
+> **Status:** regola di campagna confermata dal DM (changelog 2026-05-03). L’Orbe delle Otto Porte è un **artefatto Githyanki** della campagna RumblingStone. Non SRD/RHoD canon; **canone privato della campagna**. Tutti i file dell’arco P2B trattano questa origine come fatto stabilito.
 
 L’Orbe **non è di fattura terrestre**. Fu costruita in epoca remota dai **Githyanki** del Piano Astrale come **risonatore ki-psionico** per i loro cavalieri-draghi: le “Otto Porte” non erano in origine canali del corpo monastico, ma **otto frequenze di sincronizzazione tra cavaliere e drago rosso** durante le incursioni planari. Persa in un raid, finì sepolta nel Piano Materiale e venne reinterpretata da una linea monastica come strumento di disciplina del ki.
 
 **Conseguenze attive in campagna:**
 
 - **I Githyanki la rivogliono.** Vaereth “Lama della Fenditura” (Giorno 3, vedi MINIMAPPA) arriva su drago rosso esattamente per questo motivo. Per loro, l’Orbe è **proprietà ancestrale**.
-- **Risonanza tracciabile.** Più si aprono Porte, più la firma psionica dell’Orbe è udibile in piani vicini. Ogni 2 usi totali di Porta 2+ nei Giorni 1–2 → il **Clock Githyanki** anticipa di 1 turno l’arrivo di Vaereth in Fase 3.
-- **Anche gli Illithid se ne accorgono.** Due conclavi rivali la cercano per ragioni opposte:
-  - **Xal’thor** (Giorno 3, militare) — la considera bottino di guerra utile per dominare la flotta githyanki che la insegue.
-  - **Zalkatar** (Torre Invisibile, Arco P2A — quest di Artemis) — la vuole per **estrarne un “seme di Porta”** da usare nei suoi **esperimenti planari**. Manda l’emissario **Sethrax il Velato** (alias “Kethran Mano di Pietra”, vedi `STATBLOCCHI-COMPLETO`) infiltrato come concorrente.
+- **Risonanza tracciabile.** Vedi §2.1.3 per la regola unica del Clock Githyanki.
+- **Una sola fazione illithid è interessata all’Orbe in sé:**
+  - **Zalkatar** (Torre Invisibile, Arco P2A — quest di Artemis) — la vuole per **estrarne un “seme di Porta”** da usare nei suoi **esperimenti planari**. Manda l’emissario **Sethrax il Velato** (alias “Kethran Mano di Pietra”, vedi `PNG/Sethrax_il_Velato/Sethrax.md`) infiltrato come concorrente.
+  - **Xal’thor** (Giorno 3, militare) **NON è interessato all’Orbe.** Il suo unico obiettivo al Torneo sono i **Bracieri Gemelli di Moradin** di Tordek (chiavi planari per la Forgia Eterna — vedi `PNG/Xal_thor/Xal_thor.md`). Eventuale interazione con l’Orbe è solo collaterale al caos del Round 7.
 - **Per Tordek:** la visione “Eco delle Fenditure” (vedi `PARTE1-Giorno1-Preliminari` → sezione *Visione Githyanki*) è la prima rivelazione di tutto questo.
 
-### 2.1.2 Regola opzionale: la Visione (Eco delle Fenditure)
+### 2.1.2 La Visione (Eco delle Fenditure)
 
 - **Trigger:** prima volta che il PG apre una Porta tramite l’Orbe.
 - **Effetto:** breve cutscene psionica (vedi `PARTE1` per il testo completo). TS Volontà CD 14 (auto-passato con Still Mind del Monaco). In caso di fallimento, **distratto** 1 round.
 - **Effetto narrativo permanente:** ogni successiva apertura di Porta concede 1 dettaglio aggiuntivo della visione (numero draghi, simboli araldici, rune corrispondenti a quelle dell’Orbe). Il DM costruisce così il foreshadowing senza mai svelare nomi (Vaereth e Sethrax restano segreti fino al loro ingresso in scena).
+
+### 2.1.3 Regola unica: Clock Githyanki avanzato dall’uso dell’Orbe
+
+> Questa è la **fonte autoritativa** di questa regola; tutti gli altri file (PARTE1, MINIMAPPA) devono rinviare qui per evitare divergenze.
+
+- **Trigger:** uso dell’Orbe per aprire Porta **2 o superiore** durante i Giorni 1–2.
+- **Effetto cumulativo:** ogni **2 usi totali** di Porta 2+ → il **Clock Githyanki** (arrivo di Vaereth) anticipa di **1 turno** l’ingresso in Fase 3 del Giorno 3.
+- **Tetto:** massimo –3 turni cumulativi (Vaereth non può arrivare prima del Round 5 reale del Giorno 3).
+- **Reset:** l’uso della sola Porta 1 non avanza il clock. Aperture chiuse senza completamento (concentrazione fallita) **contano comunque** come 1 uso.
 
 ### 2.2 Funzionamento base
 

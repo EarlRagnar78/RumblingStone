@@ -47,7 +47,7 @@ the listed consequence triggers.
 | Il Collezionista (Rakshasa) | Mobile — last seen brokering with drow | Acquire the Crown's spare gem before party can use it; manipulate Conte Valerius | 5/8 | Sponsors anti-party legal pressure; Conte Valerius freezes assets |
 | Zalkatar (Illithid Warlock) | Invisible Tower, Dauth region | Mind-strip a captured githyanki for fleet intel | 6/8 | Tower goes mobile; harder to find next session |
 | Wyrmlord Saarvith + Regiarax | Lake Rhest ruins | Rebuild dragonrider corps from black dragon spawn | 3/8 | Rhest becomes a fortified war camp; CR +1 to assault |
-| Xal'thor (Illithid Commander, psionic) | En route with Githyanki fleet | Coordinate dragon-rider attack on Dauth Tournament Day 3 | Fixed: triggers Day 3 of Tournament regardless | Tournament becomes combat encounter |
+| Xal'thor (Illithid Coordinator, psionic) | En route with an Illithid invasion force (psionic thralls, larvae, a small core of dominated Githyanki — NOT the free Githyanki dragon-rider force led by Vaereth, which is a separate and hostile faction) | Day 3 fixed assault on the Dauth Tournament to seize Tordek's **Bracieri Gemelli** (planar keys to the Eternal Forge); does NOT target the Orbe delle Otto Porte | Fixed: triggers Day 3 of Tournament regardless | Tournament becomes combat encounter |
 | Sethrax il Velato (Illithid emissary, Zalkatar's conclave) | Dauth — infiltrated as tournament finalist "Kethran Mano di Pietra" | Extract a "Seme di Porta" from the Orbe delle Otto Porte during the Tournament's peak resonance, deliver it to Zalkatar at the Invisible Tower | Sync to Tournament (Day 1 = arrival; Day 2 = entered as finalist; Day 3 Round 7 = forced unmasking by Xal'thor's portal) | Sethrax flees to Invisible Tower with the seed → Zalkatar gains +2 effective CR + new orb-derived Mind Blast in P2A finale (Artemis's quest) |
 | Azarr Kul (High Wyrmlord) | With main horde, marching | Reach Rethmar in 18 in-world days | 9/18 days | Siege of Rethmar begins |
 | Conte Valerius (manipulator) | Capital city | Legalize horde funding via "patriotic emergency" loans | 2/8 | Party loses access to legitimate guild merchants |
@@ -114,7 +114,7 @@ full mechanics. This table is current truth only.
 | Bracieri Gemelli di Moradin | Tordek | Fire ✅ + Earth ✅ | Salto Infuocato 3/day, Fire Resist 10, DR 5/adamantine, Jump +10 |
 | Collana dei Semi Eterni | Hella | Active post-resurrection | Treant summoning (limited), Avatar form (1/day), party gift slots (unspent: 3) |
 | Cuore di Moradin | Crown set (altar) | Activated | Resurrection ritual catalyst — single-use, expended for Hella |
-| Orbe delle Otto Porte | Tournament prize, not yet held | Awaits Tournament outcome | N/A until Tordek wins |
+| Orbe delle Otto Porte (Githyanki artifact, campaign canon) | Tournament prize, not yet held | Awaits Tournament outcome | N/A until Tordek wins |
 
 **Spent / single-use already burned:**
 - Ruby gem of the Crown (used at year -1000 battle)
@@ -168,6 +168,40 @@ entries — they become campaign history.
             PNG/Ghostlord/Ghostlord.md (GS 13, Lich druidico Thornwaste),
             PNG/Xal_thor/Xal_thor.md (GS 14, Illithid Githyanki commander).
             NPC knowledge table and open threads updated accordingly.
+2026-05-03  DM confirmation: the Orbe delle Otto Porte is established
+            as a **Githyanki artifact** (campaign canon, RumblingStone —
+            not SRD/RHoD). [INFERRED — needs DM confirmation] markers
+            removed from OTTO-PORTE-e-ORBE §2.1.1/2.1.2/2.1.3 and PARTE1.
+            Origin promoted to canon in
+            skills/rumblingstone-campaign/references/campaign-artifacts.md
+            and §5 of state.md. All downstream mechanics (Vaereth's claim,
+            Sethrax's "seme di Porta" extraction, Githyanki clock-advance
+            rule, Eco delle Fenditure vision) are now established
+            campaign canon.
+2026-05-03  Code-review fixes on the Tournament ↔ Torre integration:
+            - Typos in PNG/Sethrax_il_Velato/Sethrax.md (article gender,
+              "priorità alla ritirata").
+            - Sethrax's *Psionic Dimension Door* aligned to **3/giorno**
+              across PARTE2 (was inconsistently 1/giorno) — PNG card and
+              STATBLOCCHI now agree.
+            - Xal'thor's role and motivation clarified in PNG/Xal_thor,
+              state.md, PARTE3, and OTTO-PORTE-e-ORBE: he commands an
+              **Illithid** invasion (psionic thralls + a small core of
+              dominated Githyanki), NOT the free Githyanki dragon-rider
+              force (that's Vaereth — separate and hostile). His unique
+              tournament target is the **Bracieri Gemelli** of Tordek;
+              he is NOT interested in the Orbe (that's Sethrax/Zalkatar
+              and Vaereth) — removes the duplicate-motivation issue.
+            - All inferred lore flagged with [INFERRED — needs DM
+              confirmation] per AGENTS.md policy: Orb's Githyanki origin
+              (OTTO-PORTE §2.1.1), the "Eco delle Fenditure" vision and
+              the clock-advance rule (PARTE1 + OTTO-PORTE §2.1.2/2.1.3).
+            - Consolidation: Sethrax.md is now the authoritative source
+              for unmask triggers, psionic power limits, and cross-arc
+              outcome table; OTTO-PORTE-e-ORBE §2.1.3 is the authoritative
+              source for the Githyanki clock-advance rule. PARTE1, PARTE2,
+              PARTE3, MINIMAPPA, STATBLOCCHI voce 10 now point to those
+              sources instead of duplicating mechanics.
 2026-05-03  Tournament ↔ Torre Invisibile integration. Added:
             - "Visione Githyanki — Eco delle Fenditure" mechanic (Day 1
               first-Porta-opening cutscene foreshadowing Day 3 Vaereth arrival)

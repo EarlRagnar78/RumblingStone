@@ -188,6 +188,8 @@ Tutti i valori sono pensati per un party di livello 11–12. Adatta leggermente 
 
 ## 10. Sethrax il Velato – Mind Flayer / Psion 5 / Telepath – CR 12
 
+> **Fonte autoritativa: `PNG/Sethrax_il_Velato/Sethrax.md`.** Questa voce è un riassunto da tavolo per i numeri di combattimento; per **trigger di smascheramento, limiti dei poteri psionici e tabella esiti cross-arco** consulta sempre la PNG card. In caso di conflitto vince la PNG card.
+
 **Identità di copertura al Torneo:** *Kethran “Mano di Pietra”*, monaco errante umano (Monk 11 finto).
 **Identità reale:** Mind Flayer adulto, **emissario diretto di Zalkatar** (Illithid Warlock Drow, Torre Invisibile, arco P2A).
 **File correlati:** `PNG/Sethrax_il_Velato/Sethrax.md`, `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE2/PARTE3-*.md`, `Arco-Post-Hammerfist-P2A-Torre-PARTE4-FINALE-Boss-Zalkatar.md`.

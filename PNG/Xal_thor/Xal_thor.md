@@ -1,13 +1,13 @@
-# XAL'THOR — COMANDANTE ILLITHID DELLA FLOTTA GITHYANKI
-## *Il Collezionista di Menti, Coordinatore dell'Invasione Planare*
+# XAL'THOR — COORDINATORE ILLITHID DELL'INVASIONE PLANARE
+## *Il Collezionista di Menti, Cacciatore dei Bracieri di Moradin*
 
 **Razza/Tipo:** Illithid (Mind Flayer — Aberrazione Medio)
 **Classe:** Psion 6 (con capacità innate Illithid) — Livello effettivo 14
 **Grado di Sfida (GS):** 14
 **Allineamento:** Legale Malvagio
-**Ruolo:** Comandante militare della forza Githyanki che invade il Torneo di Dauth (Day 3 fisso); insegue i Bracieri Gemelli di Moradin come chiavi planari verso la Forgia Eterna; boss della Fase 3 del Torneo di Tordek.
+**Ruolo:** Coordinatore di un'invasione **illithid** al Torneo di Dauth (Day 3 fisso). Comanda **schiavi psionici, larve, cultisti dominati e un piccolo nucleo di Githyanki dominati** (NON l'intera razza githyanki: la **forza githyanki libera** che arriva in Fase 3 — capitanata da **Vaereth "Lama della Fenditura"** su draghi rossi — è un **soggetto separato e ostile** a Xal'thor, vedi `Arco-Post-Hammerfist-P2B-Torneo-Tordek-MINIMAPPA-TIMELINE-ALLEANZE.md` Fase 3). **Unico bersaglio al Torneo:** i **Bracieri Gemelli di Moradin** di Tordek come chiavi planari verso la Forgia Eterna. **Non** è interessato all'Orbe delle Otto Porte (quello è obiettivo di Sethrax/Zalkatar e di Vaereth — vedi `OTTO-PORTE-e-ORBE.md` §2.1.1). Boss della Fase 3 del Torneo di Tordek.
 **Countdown Clock:** Fixed trigger — attacca il Torneo il Giorno 3 indipendentemente dalle azioni del party
-**File correlati:** `Arco-Post-Hammerfist-P2B-Torneo-*.md`, `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-*.md`
+**File correlati:** `Arco-Post-Hammerfist-P2B-Torneo-*.md`, `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-*.md`, `PNG/Sethrax_il_Velato/Sethrax.md` (fazione illithid rivale)
 
 ---
 
@@ -162,6 +162,6 @@ Xal'thor **non è l'unico Illithid presente al Torneo di Dauth**. Un secondo con
 **Conseguenze tattiche al Giorno 3:**
 - Quando Xal'thor apre il portale psionico (Round 7), la pressione **smaschera automaticamente** Sethrax. I due si riconoscono e diventano antagonisti immediati.
 - Mind Blast contro Mind Blast: per 1 round i loro coni si neutralizzano in mezz'aria (descrivere come due onde ceramiche che si infrangono — momento spettacolare).
-- Sethrax tenta di estrarre un "seme di Porta" dall'Orbe per Zalkatar; Xal'thor cerca i Bracieri di Tordek per la flotta githyanki dominata. Obiettivi incompatibili → si ostacolano.
+- Sethrax tenta di estrarre un "seme di Porta" dall'Orbe per Zalkatar; Xal'thor caccia esclusivamente i **Bracieri Gemelli** di Tordek (chiavi planari per la Forgia Eterna). Obiettivi diversi ma area d'azione sovrapposta → si ostacolano per disprezzo settario, non per competere sullo stesso bottino.
 
 **Per il DM:** la presenza di due fazioni illithid rivali al Torneo trasforma il Giorno 3 in un **triangolo a 3 (anzi 4 con i Githyanki di Vaereth)** invece di un duello PG vs Boss. Il PG monaco può sfruttare il conflitto interno illithid per dare la spallata decisiva a Xal'thor. Vedi `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE3-Giorno3-Finale-e-Invasione.md` sezione **Triangolo di fazioni**.

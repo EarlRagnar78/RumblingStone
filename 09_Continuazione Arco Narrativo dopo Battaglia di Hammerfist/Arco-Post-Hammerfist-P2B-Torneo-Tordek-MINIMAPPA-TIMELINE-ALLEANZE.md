@@ -251,14 +251,9 @@ Possibili esiti:
 
 ## 6. Cross-arco: il Torneo come trampolino per la Torre Invisibile (Artemis – P2A)
 
-| Esito di Sethrax | Effetto su Arco P2A (Artemis vs Zalkatar) |
-|---|---|
-| Ucciso al Torneo | Clock Zalkatar +1 turno (rallenta). “Seme di Porta” distruggibile o portabile come prova alla Torre. |
-| Catturato vivo | –1 CR a Zalkatar (P2A PARTE4). Mappa parziale Livello 4. |
-| Fugge senza il “seme” | Status quo. Sethrax NPC ricorrente. |
-| Fugge **con il “seme”** | +2 CR a Zalkatar in Fase 3 della Torre. Nuova capacità *Mind Blast* derivata dall’Orbe. |
+> **Fonte autoritativa della tabella esiti: `PNG/Sethrax_il_Velato/Sethrax.md` → "ESITI E IMPATTO CROSS-ARCO".** In caso di conflitto vince la PNG card.
 
-> Tordek e Artemis convergono narrativamente: l’Orbe del Torneo e la Torre Invisibile sono **due nodi della stessa cospirazione planare**.
+In sintesi: l’esito di Sethrax al Torneo (ucciso, catturato, fuga, fuga col seme) modifica il CR effettivo del finale di Artemis alla Torre Invisibile. Tordek e Artemis convergono narrativamente: l’Orbe del Torneo e la Torre Invisibile sono **due nodi della stessa cospirazione planare**.
 
 ---
 

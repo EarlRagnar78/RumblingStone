@@ -48,6 +48,7 @@ the listed consequence triggers.
 | Zalkatar (Illithid Warlock) | Invisible Tower, Dauth region | Mind-strip a captured githyanki for fleet intel | 6/8 | Tower goes mobile; harder to find next session |
 | Wyrmlord Saarvith + Regiarax | Lake Rhest ruins | Rebuild dragonrider corps from black dragon spawn | 3/8 | Rhest becomes a fortified war camp; CR +1 to assault |
 | Xal'thor (Illithid Commander, psionic) | En route with Githyanki fleet | Coordinate dragon-rider attack on Dauth Tournament Day 3 | Fixed: triggers Day 3 of Tournament regardless | Tournament becomes combat encounter |
+| Sethrax il Velato (Illithid emissary, Zalkatar's conclave) | Dauth — infiltrated as tournament finalist "Kethran Mano di Pietra" | Extract a "Seme di Porta" from the Orbe delle Otto Porte during the Tournament's peak resonance, deliver it to Zalkatar at the Invisible Tower | Sync to Tournament (Day 1 = arrival; Day 2 = entered as finalist; Day 3 Round 7 = forced unmasking by Xal'thor's portal) | Sethrax flees to Invisible Tower with the seed → Zalkatar gains +2 effective CR + new orb-derived Mind Blast in P2A finale (Artemis's quest) |
 | Azarr Kul (High Wyrmlord) | With main horde, marching | Reach Rethmar in 18 in-world days | 9/18 days | Siege of Rethmar begins |
 | Conte Valerius (manipulator) | Capital city | Legalize horde funding via "patriotic emergency" loans | 2/8 | Party loses access to legitimate guild merchants |
 
@@ -67,6 +68,8 @@ the listed consequence triggers.
 | Conte Valerius | The party visited Hammerfist; does NOT know about the Crown or Sal | Public dispatches — updated 2026-05-02 |
 | Azarr Kul | Party are Custodi Eterni; does NOT know artifact details | General intelligence from Red Hand scouts |
 | Xal'thor | Tordek carries the Twin Braziers (planar keys to Eternal Forge) | Planar observation; cross-referenced with Forgia Eterna records |
+| Zalkatar (via Sethrax) | The Orbe delle Otto Porte at Dauth Tournament has Githyanki planar origin and emits a "Seme di Porta" extractable at peak resonance | Telepathic dispatch from Sethrax (covert) — refreshed daily; updated 2026-05-03 |
+| Sethrax il Velato | Tordek is the orb's primary attuned monk; the orb's first opening triggers a Githyanki "Eco delle Fenditure" vision; does NOT yet know Xal'thor's separate invasion plan | Direct observation Day 1–2 of Tournament |
 | Varis "Seta-Argento" | Some statues might be alive; does NOT know Sal is the supplier chain origin | Involuntary observation 3 months ago |
 | Il Collezionista | Artemis carries the Ring of Chaotic Illumination | Witnessed at minotaur lair; sent guild operatives to track |
 | Il Collezionista | Therysol is alive and hunting him | Inferred from missing guild operatives in Underdark |
@@ -134,6 +137,8 @@ changelog with the resolution.
 - Does the Ghostlord become ally or enemy at Rethmar (depends on Sacred Forest outcome)?
 - Conte Valerius — political defeat path vs. assassination path?
 - Does Artemis confront the Mask cult before the Ring fully evolves?
+- **[TORNEO ↔ TORRE]** Will the party unmask Sethrax (a.k.a. "Kethran Mano di Pietra") at Dauth before Day 3 Round 7? (If unmasked early or killed: Zalkatar's clock slows; if Sethrax escapes with the "Seme di Porta": Zalkatar gains +2 effective CR for Artemis's P2A finale)
+- **[TORNEO]** Will Tordek interpret the "Eco delle Fenditure" vision and warn Artemis (or vice versa) of the Githyanki–Illithid–Illithid triangle around the Orbe?
 - **[CONSIGLIO]** Will the party remove Halveth before Day 33 Seduta 2? (If not: +1 CR Phase 0, resa vote passes by Kaal's double vote)
 - **[CONSIGLIO]** Can the party convince Lady Kaal with a credible military plan? (Diplomacy CD 22 + allied faction list required)
 - **[LORANA]** Will the party reconnect with Lorana and use her field intel for Thorik's Rethmar defense plan? (-1 CR Phase 1 if yes)
@@ -163,4 +168,25 @@ entries — they become campaign history.
             PNG/Ghostlord/Ghostlord.md (GS 13, Lich druidico Thornwaste),
             PNG/Xal_thor/Xal_thor.md (GS 14, Illithid Githyanki commander).
             NPC knowledge table and open threads updated accordingly.
+2026-05-03  Tournament ↔ Torre Invisibile integration. Added:
+            - "Visione Githyanki — Eco delle Fenditure" mechanic (Day 1
+              first-Porta-opening cutscene foreshadowing Day 3 Vaereth arrival)
+              in PARTE1-Giorno1-Preliminari.md.
+            - Orb's Githyanki planar origin lore (it was a ki-psionic resonator
+              for Githyanki dragon-riders) in OTTO-PORTE-e-ORBE.md §2.1.1.
+            - New PNG: Sethrax il Velato (CR 12, Mind Flayer Psion 5,
+              Zalkatar's emissary), infiltrated as masked finalist "Kethran
+              Mano di Pietra". Files: PNG/Sethrax_il_Velato/Sethrax.md,
+              statblock in STATBLOCCHI-COMPLETO.md voce 10, hooks in
+              PARTE2-Giorno2-Semifinali.md (introduction + clues),
+              PARTE3-Giorno3-Finale-e-Invasione.md (auto-unmask Round 7,
+              triangle of factions), MINIMAPPA-TIMELINE-ALLEANZE.md.
+            - Updated PNG/Xal_thor/Xal_thor.md with rival illithid faction
+              section (two illithid conclaves do NOT collaborate at Dauth).
+            - New villain clock: Sethrax (sync to Tournament).
+            - New NPC knowledge rows (Zalkatar via Sethrax; Sethrax's
+              own observations of Tordek + Orb).
+            - New open narrative thread: cross-arc Tournament ↔ Torre
+              Invisibile (Sethrax's fate determines Zalkatar's CR for
+              Artemis's P2A finale).
 ```

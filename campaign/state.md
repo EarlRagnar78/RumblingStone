@@ -31,6 +31,7 @@
 **Active companions:**
 - Hella's stone rhinoceros companion (DR 5/adamantine, animated post-resurrection)
 - Therysol (Tiefling Half-Dragon NPC, traveling separately, hunting Il Collezionista's guild)
+- **Maestro Tempestas** (Half-elf Bard 12/Arcmage 2, GS 14, recurring messenger of Rethmar; canonized 2026-05-04 as the "bard storm caller" who helped the party escape Lorana's city in Arc 00 — vedi `PNG/Tempestas/Tempestas.md`). Not constantly present; drops in via *Shadow Walk* every 1–2 sessions with intel.
 
 ---
 
@@ -78,6 +79,9 @@ the listed consequence triggers.
 | Salvatore "Sal" | The party are Custodi Eterni carrying major divine artifacts; knows their names, abilities, and routes | Briefed by Il Collezionista before deploying to desert road |
 | Conte Valerius | The party visited Hammerfist; does NOT yet know about the Crown | Public dispatches |
 | Druid Circle of the Sacred Forest | Hella is approaching for the ritual; reserves judgment | Hella's letter, sent two days ago |
+| Capitana Lythiel Alar-Wen (Wood Elf Ranger 8, Sacred Forest scout, GS 8) | Hella is the druidess Saraah promised the Acorn of the Circle to | Direct recognition during Hammerfist Battle Sessione 4; canonized 2026-05-04 |
+| Maestro Tempestas (Half-elf Bard 12/Arcmage 2, GS 14, Rethmar messenger) | The party survived Lorana's city (Arco 00); they are Custodi Eterni; he carries 4 letters/seals on Day 22; intercepted drow conversation about "il dottore della torre invisibile" wanting "il portatore dell'anello caotico" | Intercepted via accidental Shadow Walk side-emergence; canonized 2026-05-04 |
+| Brenna Sorvane (Consigliere militare Rethmar) | Hammerfist defeated Red Hand vanguard; Custodi Eterni include Thorik who is a battle-tested commander; Halveth is corrupt by Conte Valerius; Lorana is alive in Rethmar | Reports from Tempestas (her primary messenger); canonized 2026-05-04 via her sealed letter to Thorik |
 | Therysol | Il Collezionista's guild has a hidden cell in Dauth | Captured guild operative interrogated |
 | Tiri Kitor wild elves | Nothing yet — first contact pending Starsong Hill | — |
 
@@ -143,6 +147,12 @@ changelog with the resolution.
 - **[CONSIGLIO]** Can the party convince Lady Kaal with a credible military plan? (Diplomacy CD 22 + allied faction list required)
 - **[LORANA]** Will the party reconnect with Lorana and use her field intel for Thorik's Rethmar defense plan? (-1 CR Phase 1 if yes)
 - **[LORANA]** Will the party ask Lorana to mobilize the refugees as emergency reserve? (Moral cost — requires face-to-face before the request)
+- **[HOOKS ↔ HELLA]** Will Hella plant Lythiel's Ghianda del Cerchio at the Cerchio della Quercia Vecchia during her ritual? Without it: ritual at default CDs and no second Druid Circle reinforcement at Rethmar Phase 1. With it: −4 CDs + reinforcement (3 druids + 6 minor Treants).
+- **[HOOKS ↔ HELLA]** Will Hella accept Tempestas's Shadow Walk shortcut to the Sacred Forest on Day 22 (−1 to all rolls for first 12h + Tempestas mental erosion tick) or travel by foot/cavalry (3 days; 4 peripheral nodes of the Circle fall during transit, reducing Acorn rigeneration by −1 Cos)?
+- **[HOOKS ↔ TORDEK]** Does Tordek accept the official Dauth seal from Tempestas? Refusal cancels the political cover for the 150 King Thorek lances; they remain at Hammerfist; Wyrmlord Karruk gains +1 effective CR at Phase 1 of Rethmar.
+- **[HOOKS ↔ ARTEMIS]** Does Artemis accept Tempestas's drow-camp map? Branches: early Tower (skip Beriah / Tournament sub-quest) / Dauth-then-Tower / split via Shadow Walk on Day 33. Each affects intel, sub-quest eligibility, and the "Tower walks" timing of Zalkatar.
+- **[HOOKS ↔ THORIK]** Does Thorik accept Brenna Sorvane's letter and bring an alliance proposal to King Thorek? Determines Halveth's grip on the Rethmar Council, Lorana's reception of the party, and Phase 0 (Notte dei Drow) baseline difficulty.
+- **[HOOKS ↔ TEMPESTAS]** Will the party invest in Tempestas as long-term ally (defending him from drow assassins, acknowledging the Lorana debt, supporting his mental erosion)? Affects whether the Polvere di Tonante 5-charge channel stays usable and whether he appears as flying caster ally at Rethmar Phase 1 (Cantata della Tempesta Tonante 1/incontro narrativo).
 
 ---
 
@@ -223,4 +233,45 @@ entries — they become campaign history.
             - New open narrative thread: cross-arc Tournament ↔ Torre
               Invisibile (Sethrax's fate determines Zalkatar's CR for
               Artemis's P2A finale).
+2026-05-04  Post-Hammerfist hooks integration. Canonized two recurring NPCs
+            and four PG-personal hook scenes that tie each PG's quest
+            track into the Red Hand of Doom timeline (anchored to Azarr
+            Kul Clock 9/18 and the Vanguard distaccamento Day 28→33).
+            Files added (09_Continuazione.../):
+            - HOOKS-INTEGRATION-MASTER.md (DM canonical schedule:
+              Hammerfist → Day 22 4 letters → Day 23 split → Day 33
+              double climax → Day 38 Rethmar; Sal explicitly NOT used
+              as messenger to avoid leak to Sonjak)
+            - HOOKS-Hella-SacredForest.md (Lythiel Day 19 Acorn drop +
+              Tempestas Day 22 white ash + 3 travel choices)
+            - HOOKS-Tordek-DauthInvitation.md (Tempestas delivers
+              official Dauth Tournament seal from Magister Veylan +
+              Sovrintendente Tordek; refusal cancels 150 lances)
+            - HOOKS-Artemis-TorreInvisibile.md (Tempestas's leather
+              map of Cannath Vale north + intercepted drow chatter
+              about "il dottore della torre invisibile" wanting "il
+              portatore dell'anello caotico"; deliberately avoids
+              Day 3 overload — keeps Beriah/Mask cult only at Dauth)
+            - HOOKS-Thorik-RethmarLetter.md (Brenna Sorvane's private
+              sealed letter: 3-4 Council split, Halveth corrupt,
+              Lorana alive, request for King Thorek alliance + 150
+              lances + Thorik in person)
+            New PNG cards:
+            - PNG/Tempestas/Tempestas.md (canonized as the "bard
+              storm caller" who helped the party escape Lorana's
+              city in Arco 00; multi-arc messenger via Shadow Walk;
+              GS 14; Cantata della Tempesta Tonante; mental erosion
+              vulnerability; 5-charge Polvere di Tonante channel)
+            - PNG/Lythiel/Lythiel.md (Wood Elf Ranger 8, Sacred
+              Forest druidess-mancata, one of the 12 elven rangers
+              on giant owls at Hammerfist Sessione 4 final phase;
+              keeper of Saraah's Acorn for Hella; CR 8)
+            New active companion entry in §1: Tempestas (recurring,
+            not constant). New NPC knowledge rows in §3 (Lythiel,
+            Tempestas, Brenna). New open narrative threads in §6:
+            6 [HOOKS ↔ *] threads.
+            Decision documented: Salvatore "Sal" is NOT used as
+            tournament-invitation messenger because he is compromised
+            (employed by Il Collezionista + Sonjak); Tempestas serves
+            that role exclusively.
 ```

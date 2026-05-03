@@ -148,3 +148,20 @@ Se viene catturato e interrogato (non ucciso):
 - La sua ambiguità narrativa (sta mentendo sul Piano della Terra?) dovrebbe rimanere irrisolta almeno fino alla Fase 3 del Torneo. Se i PG vogliono indagare, richiedono prove che non possono ottenere durante un combattimento in arena.
 - Il momento di maggiore impatto: quando Tordek capisce che Xal'thor conosce il suo nome, la storia dei Bracieri, i dettagli della Forgia Eterna. L'Illithid ha letto qualcuno che sapeva tutto questo. Chi?
 - **Dorn "il Campione Caduto"** (Monk 10/Fighter 2 dominato) può apparire come boss onda prima di Xal'thor — il momento in cui Dorn si libera per 1 round e dice *"Spegnete il nucleo... prima che prenda anche voi..."* è uno dei picchi emotivi del Torneo.
+
+---
+
+## FAZIONE RIVALE: SETHRAX IL VELATO (CONCLAVE DI ZALKATAR)
+
+Xal'thor **non è l'unico Illithid presente al Torneo di Dauth**. Un secondo conclave illithid — quello di **Zalkatar** dalla **Torre Invisibile** (vedi `PNG/Sethrax_il_Velato/Sethrax.md` e arco P2A di Artemis) — ha infiltrato come finalista mascherato un proprio emissario, **Sethrax il Velato** (alias *Kethran "Mano di Pietra"*).
+
+**I due conclavi non collaborano.** Si disprezzano:
+- Xal'thor considera Zalkatar un "biologo da torre", debole, ossessionato da esperimenti sterili.
+- Zalkatar (via Sethrax) considera Xal'thor un "cacciatore di mandria", primitivo, che sciupa risorse planari.
+
+**Conseguenze tattiche al Giorno 3:**
+- Quando Xal'thor apre il portale psionico (Round 7), la pressione **smaschera automaticamente** Sethrax. I due si riconoscono e diventano antagonisti immediati.
+- Mind Blast contro Mind Blast: per 1 round i loro coni si neutralizzano in mezz'aria (descrivere come due onde ceramiche che si infrangono — momento spettacolare).
+- Sethrax tenta di estrarre un "seme di Porta" dall'Orbe per Zalkatar; Xal'thor cerca i Bracieri di Tordek per la flotta githyanki dominata. Obiettivi incompatibili → si ostacolano.
+
+**Per il DM:** la presenza di due fazioni illithid rivali al Torneo trasforma il Giorno 3 in un **triangolo a 3 (anzi 4 con i Githyanki di Vaereth)** invece di un duello PG vs Boss. Il PG monaco può sfruttare il conflitto interno illithid per dare la spallata decisiva a Xal'thor. Vedi `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE3-Giorno3-Finale-e-Invasione.md` sezione **Triangolo di fazioni**.

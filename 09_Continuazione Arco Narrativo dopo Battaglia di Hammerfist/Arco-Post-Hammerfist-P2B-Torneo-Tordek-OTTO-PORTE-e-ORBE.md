@@ -24,6 +24,25 @@ Ogni cerchio rappresenta una Porta: quando si apre, un anello dell’Orbe ruota,
 - Solo chi possiede la disciplina del **Monaco** (o simile tradizione di ki) può entrare in sintonia completa.  
 - Durante il torneo, l’Orbe è “tarata” su Tordek: non può esplodere il pubblico, ma può spingere il corpo del monaco oltre il limite.
 
+### 2.1.1 Origine planare (lore — semina al Giorno 1, conferma al Giorno 3)
+
+L’Orbe **non è di fattura terrestre**. Fu costruita in epoca remota dai **Githyanki** del Piano Astrale come **risonatore ki-psionico** per i loro cavalieri-draghi: le “Otto Porte” non erano in origine canali del corpo monastico, ma **otto frequenze di sincronizzazione tra cavaliere e drago rosso** durante le incursioni planari. Persa in un raid, finì sepolta nel Piano Materiale e venne reinterpretata da una linea monastica come strumento di disciplina del ki.
+
+**Conseguenze attive in campagna:**
+
+- **I Githyanki la rivogliono.** Vaereth “Lama della Fenditura” (Giorno 3, vedi MINIMAPPA) arriva su drago rosso esattamente per questo motivo. Per loro, l’Orbe è **proprietà ancestrale**.
+- **Risonanza tracciabile.** Più si aprono Porte, più la firma psionica dell’Orbe è udibile in piani vicini. Ogni 2 usi totali di Porta 2+ nei Giorni 1–2 → il **Clock Githyanki** anticipa di 1 turno l’arrivo di Vaereth in Fase 3.
+- **Anche gli Illithid se ne accorgono.** Due conclavi rivali la cercano per ragioni opposte:
+  - **Xal’thor** (Giorno 3, militare) — la considera bottino di guerra utile per dominare la flotta githyanki che la insegue.
+  - **Zalkatar** (Torre Invisibile, Arco P2A — quest di Artemis) — la vuole per **estrarne un “seme di Porta”** da usare nei suoi **esperimenti planari**. Manda l’emissario **Sethrax il Velato** (alias “Kethran Mano di Pietra”, vedi `STATBLOCCHI-COMPLETO`) infiltrato come concorrente.
+- **Per Tordek:** la visione “Eco delle Fenditure” (vedi `PARTE1-Giorno1-Preliminari` → sezione *Visione Githyanki*) è la prima rivelazione di tutto questo.
+
+### 2.1.2 Regola opzionale: la Visione (Eco delle Fenditure)
+
+- **Trigger:** prima volta che il PG apre una Porta tramite l’Orbe.
+- **Effetto:** breve cutscene psionica (vedi `PARTE1` per il testo completo). TS Volontà CD 14 (auto-passato con Still Mind del Monaco). In caso di fallimento, **distratto** 1 round.
+- **Effetto narrativo permanente:** ogni successiva apertura di Porta concede 1 dettaglio aggiuntivo della visione (numero draghi, simboli araldici, rune corrispondenti a quelle dell’Orbe). Il DM costruisce così il foreshadowing senza mai svelare nomi (Vaereth e Sethrax restano segreti fino al loro ingresso in scena).
+
 ### 2.2 Funzionamento base
 
 L’Orbe può:
@@ -274,6 +293,7 @@ Uso tipico: colpo disperato contro Rihan o Xal’thor.
 - **Mistress of Mirrors** – Sorcerer 10 / Rogue 2: regina di illusioni.  
 - **Grandmaster Rihan** – Monk 14: Sevenfold Strike, Parry Master, Calligrafia del movimento.  
 - **Xal’thor** – Illithid boss: dominate, mind blast, 3 fasi col nucleo psionico.  
+- **Sethrax il Velato (alias “Kethran Mano di Pietra”)** – Mind Flayer / Psion 5, CR 12, **emissario di Zalkatar dalla Torre Invisibile**: si infiltra come finalista mascherato, vuole estrarre un “seme di Porta” dall’Orbe; gancio diretto con l’arco P2A di Artemis.
 - **Thug spettatore/sicario** – Guerriero 3.  
 - **Pillar Golem** – costrutto 6 DV.
 

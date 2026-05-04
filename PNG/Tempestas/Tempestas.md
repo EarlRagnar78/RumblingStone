@@ -106,23 +106,67 @@ Diplomazia +24, Conoscenze (Locali, Storia, Geografia, Nobiltà, Religione) +14 
 
 ---
 
-## RUOLO COME MESSAGGERO RICORRENTE
+## RUOLO COME AGENTE DI INTELLIGENCE DI RETHMAR
+
+> **Revisione 2026-05-04 v2 — IMPORTANTE.** La versione precedente di questo file rappresentava Tempestas come "messaggero universale" che consegna 4 lettere a 4 PG. **Quella versione era poco coerente con la sua professione.** Tempestas è **un agente di intelligence**, non un fattorino. Il suo lavoro è **raccogliere informazioni** per Rethmar, non distribuirle ai 4 PG.
+>
+> **Mission profile rivisto:**
 
 ### Patroni e datori di lavoro
 
-1. **Brenna Sorvane** (Consigliere di Rethmar, militare) — il suo datore di lavoro principale. Lo paga in oro, libri rari, e aiuto familiare (Tempestas ha una nipote orfana che Brenna fa crescere a Rethmar).
-2. **Magister Veylan** (Arcimago di Dauth) — gli passa libri arcani in cambio di intel.
-3. **Re Thorek Hammerfist** — non lo conosce ancora bene; lo userà dopo gli archi P1–P2.
+1. **Brenna Sorvane** (Consigliere militare di Rethmar) — datore di lavoro **principale**. Brenna lo paga in oro, libri rari, e aiuto familiare (Tempestas ha una nipote orfana che Brenna fa crescere a Rethmar).
+2. **Magister Veylan** (Arcimago di Dauth) — datore di lavoro secondario, scambio di libri arcani per intel sul Cannath Vale settentrionale.
+3. **Re Thorek Hammerfist** — non lo conosce ancora bene; **possibile cliente futuro** se la collaborazione di Tempestas con Hammerfist va bene.
 4. **Druid Circle del Sacred Forest** — clienti occasionali per messaggi non magici.
 
-### Cosa Tempestas sa (al inizio dell'arco P1, post-Hammerfist)
+### Mission a Hammerfist alla Cerimonia delle 100 Asce (Giorno 21)
 
+> Brenna Sorvane gli ha dato **due missioni esplicite**:
+
+**Missione 1 — Diplomatica:** onorare i caduti di Hammerfist a nome del Consiglio militare di Rethmar. Gesto di solidarietà tra le due roccaforti del Cannath Vale che resistono al Red Hand.
+
+**Missione 2 — Intelligence:** **raccogliere informazioni** sui movimenti del Red Hand dai veterani della Battaglia di Hammerfist. Tempestas è venuto **per ascoltare**, non per parlare.
+
+**Missione 3 (privata):** consegnare **una sola lettera privata di Brenna a Thorik**. Brenna vuole creare un canale **non ufficiale** Hammerfist–Rethmar che bypassi il Consiglio formale di Rethmar (dove Halveth, corrotto, intercettarebbe). Tempestas è il **canale fisico** di questa diplomazia segreta.
+
+> **Cosa Tempestas NON fa:**
+> - **NON** consegna lettere a Tordek, Artemis o Hella. Quelle non sono di sua competenza.
+> - **NON** è il messaggero del Sovrintendente Tordek di Dauth. La Confraternita di Dauth ha **i propri messaggeri** (vedi `PNG/Maewen/Maewen.md`).
+> - **NON** intercetta conversazioni drow specificamente su Artemis. Quel tipo di intel è raro e fortuito — vedi sotto.
+
+### Cosa Tempestas sa al Giorno 21 (e cosa NON sa)
+
+**SA:**
 - L'orda Red Hand sta convergendo su Rethmar. Tempi: ~28 giorni in-world (canon: Azarr Kul Clock 9/18 in `state.md`).
-- **Brenna Sorvane sta cercando di raccogliere alleati** prima dell'assedio. Ha mandato 4 messaggi separati ai 4 PG (consegnati simultaneamente da Tempestas in una visita a Hammerfist).
-- **Ha sentito voci di una "torre invisibile"** vicino a Dauth — voci passate da agenti drow. Non sa cosa contenga, sa solo che è collegata a un Mind Flayer locale chiamato **Zalkatar**.
-- **Conosce gli inviti al Torneo di Dauth** — il Magister Veylan gli ha consegnato un sigillo del torneo destinato a Tordek.
-- **Ha visto un Cerchio del Sacred Forest in fumo a 3 giorni di marcia da Hammerfist** — non sa se sia cerimonia rituale o incendio. Ha mandato un messaggio anonimo al Druid Circle. Hella troverà la conferma quando ci arriverà.
-- **Capitana Lorana è viva a Rethmar** — questo è il messaggio più personale per i PG.
+- **Brenna Sorvane sta cercando alleati** prima dell'assedio. Ha bisogno di Hammerfist.
+- Il **Consiglio di Rethmar è 3-4 contro la difesa**. Halveth è corrotto.
+- **Capitana Lorana è viva a Rethmar** con 800 sopravvissuti (informazione che Tempestas porta privatamente al party come gesto personale, ricordando il debito di Lorana's city).
+- **Conversazione drow intercettata 3 settimane fa** (in emersione laterale di Shadow Walk, Cannath Vale settentrionale, fiume con tre rapide): due voci drow (uno maschile, una femminile) — frase chiave: *"il dottore della torre invisibile vuole il portatore dell'anello caotico"* + *"aspetterà fino a fine Mirtul, poi la torre cammina"*. **Tempestas allora pensò fosse codice mercantile irrilevante.** Adesso, sentendo Artemis vibrare con l'Anello, capisce che era importante. **Conferma materiale al hook dell'Anello — vedi `…HOOKS-Artemis-TorreInvisibile.md` §3.2.** Tempestas può anche disegnare una **mappa approssimativa** della zona di emersione (handout fisico).
+- Sa del **Torneo di Dauth** in arrivo (è notizia pubblica — Magister Veylan ne parla aperta) ma **NON consegna l'invito**. Quello è competenza della Confraternita Monastica.
+
+**NON sa:**
+- Identità di Zalkatar.
+- Identità di Sethrax.
+- Esistenza di Vaereth o flotta Githyanki.
+- Posizione precisa della Torre Invisibile.
+- Il Mask cult di Beriah (cellula a Dauth, non a Rethmar).
+
+### Lo scambio bidirezionale con Thorik (cuore della scena)
+
+> Tempestas non chiede informazioni in modo trasparente. Le offre **uno scambio professionale**.
+
+Quando consegna la lettera di Brenna a Thorik, Tempestas dice esplicitamente:
+> *"Comandante. Sono qui per due missioni. Una è onorare i vostri morti — quello l'ho fatto. L'altra è chiedervi di prestarci ascolto. Brenna mi ha mandato con una lettera privata. La leggete, decidete, mi rispondete. **In più**, se avete intel sulle posizioni del Red Hand — quello che gli scout di Hammerfist hanno visto, le rotte della Vanguard, i comandanti che avete identificato — vi ringrazierei a nome di Rethmar. **In cambio**, vi restituiamo informazioni utili a voi su Halveth corrotto e Conte Valerius. Scambio di pari, non favori."*
+
+**Punto chiave:** Tempestas è **collettore di intel** (per Rethmar). Thorik gli dà info sulla Vanguard / orda → Tempestas le porta a Brenna. Brenna in cambio offre intel su politica corrotta del Cannath Vale. **Scambio simmetrico**, non delivery service.
+
+### Bonus per il gruppo intero (la Polvere di Tonante)
+
+Tempestas, prima di partire, lascia ai PG **una piccola fiala di Polvere di Tonante** (5 cariche). Questo è un **gesto personale** legato al debito di Lorana's city, non parte della missione ufficiale. Funziona come canale di emergenza:
+
+> *"Se vi serve un canale veloce con Rethmar, mandatemi un messaggio bruciandolo nella forgia con questa polvere. Lo riceverò ovunque sia, entro 24 ore. Non chiedete due volte la stessa cosa nello stesso giorno."*
+
+**Effetto:** i PG hanno una "torre delle bandiere" magica verso Rethmar. 1 messaggio/giorno, fino a 50 parole.
 
 ---
 
@@ -142,35 +186,36 @@ Diplomazia +24, Conoscenze (Locali, Storia, Geografia, Nobiltà, Religione) +14 
 
 ## INTERAZIONI CON I PG (al post-Hammerfist)
 
-### Per Tordek (Monaco) — *La Lettera del Torneo*
+> **Revisione 2026-05-04 v2:** la versione precedente di questa sezione descriveva 4 consegne specifiche da Tempestas a 4 PG. Quel design era poco realistico (vedi §RUOLO COME AGENTE DI INTELLIGENCE sopra). Adesso Tempestas interagisce **principalmente con Thorik** (mission diplomatica + scambio intel) e **secondariamente** con il resto del party come **debitore personale** (debito di Lorana's city).
 
-> Vedi `Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md` per la scena giocabile completa.
-
-Tempestas consegna a Tordek un **sigillo di pergamena del Torneo di Dauth** — invito ufficiale del Magister Veylan e firmato dal Sovrintendente Tordek (l'organizzatore dello stesso nome). L'invito è formalmente vincolante: se Tordek accetta, parte il Clock di 5 giorni per arrivare. *(Vedi `state.md` §4 — già canonizzato.)*
-
-### Per Hella (Druida) — *Il Cerchio in Fumo*
-
-> Vedi `Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md` per la scena giocabile completa.
-
-Tempestas riferisce a Hella di aver visto un Cerchio druidico **fumante** a 3 giorni di marcia. Le mostra una **cenere bianca** raccolta — Hella riconosce immediatamente la **runa di un nodo di potere ancora attivo** (Sapienza Naturale CD 16). Tempestas è arrivato troppo tardi. Hella deve andare. Questa scena CONFERMA il hook della **Capitana Lythiel** che è già seminato a Hammerfist (vedi sotto).
-
-### Per Artemis (Warlock) — *Voci della Torre*
-
-> Vedi `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md` per la scena giocabile completa.
-
-Tempestas ha intercettato (durante uno *Shadow Walk*) una **conversazione drow** in un piano laterale. Due drow parlavano di "il dottore della torre invisibile" che vuole "il portatore dell'anello caotico". Tempestas non sa di più — ma offre ad Artemis **una mappa parziale del Cannath Vale settentrionale** dove ha visto le tracce dei drow scout. **Niente Mask cult coinvolto a questo livello** (la complessità Mask è gestita dalla subquest del Torneo, non qui).
-
-### Per Thorik (Guerriero) — *La Lettera di Brenna*
+### Per Thorik (Guerriero) — *La Lettera di Brenna* + Scambio intel
 
 > Vedi `Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md` per la scena giocabile completa.
 
-Brenna Sorvane manda a Thorik **una lettera sigillata** col sigillo di Rethmar. Contiene: stato delle difese, identità dei consiglieri (compresa la sospetta corruzione di Halveth), una **proposta di alleanza formale** con Hammerfist, e una richiesta personale: *"Hai liberato Hammerfist. Liberaci tu da una resa che non vogliamo."*
+**Centro della visita di Tempestas a Hammerfist.** Brenna Sorvane manda a Thorik **una lettera sigillata privata** (NON col sigillo ufficiale di Rethmar, per evitare intercezione di Halveth). Contiene: stato delle difese, sospetta corruzione di Halveth, proposta di alleanza Rethmar–Hammerfist, e una richiesta personale.
 
-### Bonus per il gruppo intero
+**Lo scambio bidirezionale:** Tempestas chiede a Thorik intel sui movimenti del Red Hand (rotte della Vanguard, comandanti identificati a Hammerfist). Offre in cambio: dettagli su Halveth corrotto, situazione del Consiglio di Rethmar, posizione di Lorana.
 
-Tempestas, a fine consegna, dice: *"Se vi serve un canale veloce con Rethmar, mandatemi un messaggio bruciandolo nella forgia di Hammerfist con questa polvere [consegna piccola fiala di **Polvere di Tonante**]. Lo riceverò ovunque sia, entro 24 ore. Non chiedete due volte la stessa cosa nello stesso giorno."*
+### Per gli altri PG (Tordek, Hella, Artemis) — *Cortesia di passaggio*
 
-**Effetto:** i PG hanno **una "torre delle bandiere" magica** verso Rethmar. 1 messaggio/giorno, fino a 50 parole. Polvere ha 5 cariche.
+> Tempestas **NON consegna lettere o sigilli** a Tordek, Hella o Artemis. I loro hook personali atterrano altrove (vedi MASTER §3):
+> - **Hella:** Lythiel alla Cerimonia delle 100 Asce + Saraah al Sacred Forest.
+> - **Tordek:** Maewen al Sacred Forest.
+> - **Artemis:** vibrazione dell'Anello durante la Cerimonia.
+
+Tempestas può tuttavia interagire con loro a livello informale (cena alla cittadella, conversazioni post-cerimonia, ecc.). **Cosa offre se interrogato:**
+
+- **Tordek:** ricorda di Lorana's city, gli racconta brevemente del valore di Tordek in quel momento. Se Tordek menziona il Torneo, Tempestas conferma che il Magister Veylan ne parla aperta. Niente sigillo.
+- **Hella:** se Hella menziona Sacred Forest, Tempestas conferma di averlo sorvolato di recente — *"Sentivo un peso al cuore. Non sapevo cosa fosse. Forse il vostro Cerchio lo sa."* Niente cenere materiale (quella era invenzione contrived della v1).
+- **Artemis:** se Artemis chiede esplicitamente di torri / draghi drow, OR se Tempestas nota l'**Anello che brilla** durante la cena (Sapienza Magica CD 14, automatico per un Bardo 12), tira fuori la **conversazione drow intercettata 3 settimane fa**: *"il dottore della torre invisibile vuole il portatore dell'anello caotico" + "fine Mirtul, poi la torre cammina"*. Offre anche una **mappa approssimativa** del Cannath Vale settentrionale (zona del fiume con tre rapide). Vedi `…HOOKS-Artemis-TorreInvisibile.md` §3.2. **Conferma materiale**, non hook iniziale (il hook è la vibrazione dell'Anello + il sogno di Lathander/Mask).
+
+### Bonus per il gruppo intero — *La Polvere di Tonante*
+
+Tempestas, prima di partire (mattina del Giorno 22), lascia ai PG una piccola fiala di **Polvere di Tonante** (5 cariche). Questo è un **gesto personale** legato al debito di Lorana's city, **non** parte della missione ufficiale per Brenna.
+
+> *"Se vi serve un canale veloce con Rethmar, mandatemi un messaggio bruciandolo nella forgia di Hammerfist con questa polvere. Lo riceverò ovunque sia, entro 24 ore. Non chiedete due volte la stessa cosa nello stesso giorno."*
+
+**Effetto:** i PG hanno una "torre delle bandiere" magica verso Rethmar. 1 messaggio/giorno, fino a 50 parole. Polvere ha 5 cariche.
 
 ---
 

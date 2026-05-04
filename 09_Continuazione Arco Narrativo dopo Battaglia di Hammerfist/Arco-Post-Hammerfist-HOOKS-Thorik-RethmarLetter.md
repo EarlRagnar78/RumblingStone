@@ -1,12 +1,16 @@
 Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md
 ===================================================
 
-# Hook Thorik — *La Lettera di Brenna*
-## *Tono: Andor (alleanze politiche fragili) + Tolkien (la richiesta che pesa).*
+# Hook Thorik — *La Lettera di Brenna* (con scambio bidirezionale di intel)
+## *Tono: Andor (alleanze politiche fragili, intelligence sotto pressione) + Tolkien (la richiesta che pesa).*
 
-> **Status:** canone di campagna RumblingStone. Master reference: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §3.
+> **Status:** canone di campagna RumblingStone (2026-05-04, **rivisto 2026-05-04 v2**). Master reference: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §3.
 >
-> Thorik riceve da Tempestas **una lettera sigillata di Brenna Sorvane** — Consigliere militare di Rethmar, voce moderata del Consiglio. La lettera è una **proposta di alleanza formale Rethmar–Hammerfist** ma anche un **avvertimento personale** sui consiglieri corrotti.
+> **Cambio di design (rispetto alla v1):** Tempestas non viene "solo per consegnare la lettera" come fattorino. Viene per **due missioni dichiarate** (onorare i caduti + scambio intel) e una privata (consegnare la lettera). La scena resta uguale; la **motivazione di Tempestas** è ora coerente col suo ruolo di **agente di intelligence di Rethmar** (vedi `PNG/Tempestas/Tempestas.md` §RUOLO COME AGENTE DI INTELLIGENCE).
+>
+> Thorik riceve da Tempestas **una lettera sigillata privata di Brenna Sorvane** — Consigliere militare di Rethmar, voce moderata del Consiglio. La lettera è una **proposta di alleanza informale Rethmar–Hammerfist** ma anche un **avvertimento personale** sui consiglieri corrotti.
+>
+> **Lo scambio di intel** è il vero cuore della scena: Tempestas chiede a Thorik info sulla Vanguard del Red Hand; offre in cambio info su Halveth corrotto e Conte Valerius. **Pari, non favori.**
 
 ---
 
@@ -26,11 +30,11 @@ Brenna ha sentito di Hammerfist (gli uccelli messaggeri sono arrivati il Giorno 
 
 > *Tempestas si ferma sulla soglia, aspetta che il cartografo si volti, poi avanza. Cammina come un soldato che è abituato a entrare in tende militari diverse ogni notte. Si presenta:*
 >
-> *"Comandante Thorik. Tempestas, messaggero di Rethmar. Vi ho cercato. Brenna Sorvane mi ha consegnato questa per voi. Mi ha detto: 'A Thorik per primo. Non agli altri'."*
+> *"Comandante Thorik. Tempestas, agente del Consiglio militare di Rethmar. Sono qui per due missioni dichiarate e una privata."*
 >
-> *Vi consegna una busta di pelle di vitello, sigillata con cera scura. **Niente sigillo araldico ufficiale** — solo un'impressione di un dito (presumibilmente Brenna stessa). Il messaggero aggiunge:*
+> *"Le due dichiarate: onorare i vostri caduti a nome di Rethmar — quello l'ho fatto. E raccogliere intelligence sui movimenti del Red Hand dai vostri scout. Quando avete tempo per parlarmene, vi ascolto."*
 >
-> *"Non l'ho letta. È sotto sigillo personale. Ma posso dirvi: lei vi aspetta. La situazione lì è meno semplice di come sembra dalle staffette ufficiali. Quando avete letto, se volete chiedermi qualcosa, sono qui per la cena."*
+> *"La privata: questa."* — Vi consegna una busta di pelle di vitello, sigillata con cera scura. **Niente sigillo araldico ufficiale** — solo un'impressione di un dito (presumibilmente Brenna stessa). — *"Non l'ho letta. È sotto sigillo personale. Brenna Sorvane mi ha detto: 'A Thorik per primo. Non agli altri'. Quando avete letto, se volete rispondere, mi trovate fino a domani mattina."*
 
 ### 2.2 Il contenuto della lettera
 
@@ -159,6 +163,33 @@ Thorik decide che Hammerfist viene prima di Rethmar. Non manda la lettera, non m
 - **Capitana Lorana**, quando i PG arrivano a Rethmar, **non li riconosce**. La sua disperazione l'ha portata a mobilitare i 800 rifugiati senza l'autorità del Consiglio. Diventa una **comandante autonoma in rotta col Consiglio**. Eco RP: la prima scena con Lorana è **glaciale**.
 
 > **DM Tono:** la Via DARK è una scelta legittima per un Thorik che mette **il suo popolo al primo posto**. Non sgridare, ma fai sentire le conseguenze emergere lente. Re Thorek non lo punisce, ma una sera, mentre cenano, gli dice: *"Ti ho dato tutto. Sai cosa significa esserti dato tutto, e non averti tutto?"*
+
+---
+
+## 3.5 Lo scambio di intel (separato dalla lettera)
+
+> Indipendentemente dalla scelta di Thorik sulla lettera, Tempestas resta a Hammerfist fino al mattino successivo per **scambio bidirezionale di intelligence**. Questa è la sua missione **dichiarata** principale.
+
+### 3.5.1 Cosa Tempestas vuole sapere (per Brenna)
+
+- **Posizioni della Vanguard del Red Hand** osservate dagli scout di Hammerfist (rotte, dimensioni, comandanti identificati).
+- **Identità dei Wyrmlords** già noti al party (Saarvith a Lake Rhest, Karruk Tagliarossa che si stacca per Dauth).
+- **Stima del tempo di marcia** dell'orda principale di Azarr Kul.
+- **Stato delle difese di Hammerfist** (per coordinarsi se servisse rinforzo reciproco).
+
+### 3.5.2 Cosa Tempestas offre in cambio (per Thorik)
+
+- **Halveth è corrotto** dal Conte Valerius (vedi anche la lettera di Brenna). Brenna ha **prove** ma non pubblicabili senza scandalo.
+- **Lady Kaal vuole la resa** — è guidata da paura, non corruzione.
+- **Il Consiglio è 3-4 contro la difesa**.
+- **Lorana è viva a Rethmar** con 800 sopravvissuti.
+- **Conte Valerius** sta cercando di finanziare politicamente la guerra del Red Hand passando per "patriotic emergency loans" (canon: vedi `state.md` §2 Clock 2/8).
+
+### 3.5.3 Effetto meccanico dello scambio
+
+- Se Thorik dà a Tempestas **intel completa** su Vanguard + Wyrmlords + Azarr Kul: a Rethmar Phase 1 → **Brenna ha posizionato le difese in modo informato** → +2 al primo TS Iniziativa di **tutti** i difensori (incluso il party se presente). **Eco rispetto al PR del Torneo:** la Vanguard di Karruk a Dauth NON è influenzata (Dauth ha fonti separate).
+- Se Thorik **non dà intel** (sfiducia o pigrizia): nessun bonus.
+- Se Thorik **inganna** Tempestas (info false intenzionali): a Rethmar le difese di Brenna sono mal posizionate → +1 CR effettivo Phase 1. Tempestas se ne accorgerà a posteriori — perdita di fiducia. **Eco RP: l'amicizia con Tempestas è rotta.**
 
 ---
 

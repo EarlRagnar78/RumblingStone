@@ -126,6 +126,59 @@ Lythiel resta a Hammerfist 24 ore. Dorme con Inathiel sui bastioni. La mattina d
 
 ---
 
+## 2.5 Hook secondario al Sacred Forest — *La Divinazione di Saraah* (Giorno 25, mattina dopo l'arrivo del party)
+
+> **Trigger:** il giorno **dopo** l'arrivo del party al Sacred Forest (Giorno 25, mattina). Saraah dei Faggi-grigi (Arcidruidessa, vedi `Lythiel.md` §3.1) **convoca Hella** all'altare centrale del Cerchio della Quercia Vecchia. Vuole eseguire un **rito di divinazione di terza vista** — Hella partecipa come tributaria.
+
+### 2.5.1 Setup del rito
+
+- **Quattro druidi anziani** del Cerchio si dispongono ai punti cardinali. Saraah al centro. Hella in **quinta posizione** (innovazione — la quinta corrente, "il viaggiatore").
+- Componenti: **acqua di fonte Sacred** (1 gallone), **cenere di quercia bruciata** (Saraah ne ha già; non serve quella di Tempestas), **una goccia di sangue di ognuno dei 5 partecipanti**.
+- Tempo: 1 ora reale (1 ora in-world).
+
+### 2.5.2 Cosa la divinazione rivela
+
+> **Risultato del rito** (Sapienza Religiosa CD 18 per interpretare le visioni — Saraah lo fa automaticamente, Hella ottiene comprensione parziale):
+
+#### Visione 1 — Una base del Red Hand a Rhest
+- **Vivido:** un'antica città lacustre semisommersa con torri rotte. Sopra le torri **stendardi rossi del Red Hand**. Una grande ombra di **drago nero** vola nel cielo basso. **Hobgoblin guerrieri** patrugliano in gruppi da 8.
+- **Saraah dice:** *"Rhest. Non avevo capito che fosse occupata. I miei esploratori l'hanno solo sorvolata di recente — hanno detto 'razorfiend nelle paludi, niente di anomalo'. Ma il rito mostra di più. C'è una **base operativa** del Red Hand. Hanno un comandante che cavalca un drago nero adulto."*
+- **Sapienza Locale CD 16 (Hella o un PG presente):** Rhest è un'antica città elfica caduta secoli fa, ora rovine. **Lake Rhest** è famosa nel Cannath Vale.
+- **NOTA DM:** questa è la **base canonica di Wyrmlord Saarvith + Regiarax** (vedi `Arco-Post-Hammerfist-P2-RHEST-*.md` esistenti). La divinazione conferma quello che la canonica esistente già dice. Il **valore narrativo** è dare al party un hook **proattivo** (non aspettano di arrivarci, sanno).
+- **Cosa Saraah chiede:** *"Se il vostro cammino vi porta vicino a Rhest, prendetevi un giorno per disturbarli. Anche solo un'incursione. Indebolirli ora vale dieci volte più di affrontarli al fianco di Azarr Kul."*
+
+#### Visione 2 — L'ombra scura sul Cerchio
+- **Vivido:** una **ombra senza forma** si arrampica dal sottosuolo. Ha **molti piccoli occhi** che brillano come funghi luminescenti. Si avvolge sotto la Quercia Vecchia, intorno alle radici, **soffocandole**.
+- **Saraah si fa pallida.** *"Questo non l'avevo previsto. Qualcosa di aberrante è sotto di noi. Non un nemico onesto. Qualcosa che pensa con bocche multiple."*
+- **Sapienza Naturale CD 20 (Hella):** corrisponde alla descrizione di una **spora di Mother of Fungi** (vedi cross-link al `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md` — Hella ha già visto il pattern al Boschetto fuori Dauth, **se** ha completato quella sub-quest).
+- **Sapienza Religiosa CD 22 (Saraah o Hella):** è connessa alla **Mother of Fungi** — una potente entità aberrante del sottosuolo associata a **Sonjak** (Drow Cleric Matrona, vedi `state.md` §2). I drow di Sonjak hanno **piantato un seme** sotto il Cerchio.
+- **Cosa Saraah chiede:** *"Devo trovarlo prima che si schiuda. Hella, **sai cosa cercare**? Vieni con me sotto, dopo questo rito. Solo tu e me."*
+- **Effetto opzionale:** Hella scende con Saraah sotto la Quercia Vecchia (pozzi sotterranei naturali). **Encounter:** EL 11 — 2 Fungal Crawler giovani (CR 5 ciascuno) + 1 Drow Necromancer (CR 7) che sta innaffiando il seme. Sconfiggerli **purifica il Cerchio** prima del rito di Hella → Sacred Forest ritual riceve **+2 al bonus base** (la Ghianda di Lythiel raddoppia di efficacia: –6 alle CD invece di –4).
+
+#### Visione 3 (opzionale, se Saraah spinge il rito al massimo)
+- **Vivido:** una **città in fiamme** vista dall'alto. **Stendardi del Red Hand** marciano fra le rovine. La città è piccola, fortificata. Hella riconosce **stemmi nani sui portali**.
+- **Saraah:** *"Una città è caduta. Fra cinque o sei giorni. Non capisco se è già successo o sta per succedere. La visione del Cerchio è imprecisa."*
+- **Conoscenze (Geografia/Storia) CD 18 (Hella o un PG):** la descrizione corrisponde a **Talar** (saccheggiata Day 21 secondo il calendario canonico — vedi `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md`). Quindi la visione mostra qualcosa **già accaduto 4 giorni fa** ma di cui i druidi non sapevano.
+- **Implicazione:** la cintura di insediamenti tra Hammerfist e Dauth **sta cadendo**. Refugees in fuga (vedi `Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md`) verranno incontrati durante il viaggio.
+
+### 2.5.3 Costo del rito
+
+- Saraah paga **1 livello caster temporaneo** (Druid 13 → 12 per 24 ore). Lo accetta.
+- Hella, per partecipare: **1d3 Sag temporanea** (recuperabile con riposo di 24h o Restoration). Hella paga volentieri se chiede info specifiche.
+- I 4 druidi anziani: **affaticati** per il resto della giornata.
+
+### 2.5.4 Cosa cambia per il party
+
+| Decisione | Conseguenza |
+|---|---|
+| Hella accetta il rito di Saraah | Le 3 visioni (Rhest, Mother of Fungi, Talar) sono date al party |
+| Hella + party scendono sotto la Quercia per Mother of Fungi | EL 11 encounter; purificazione → Sacred Forest ritual +2 bonus aggiuntivo |
+| Party ignora Mother of Fungi | Spora rimane; Hella's ritual ha solo Acorn bonus standard |
+| Party prende sul serio Rhest | Possibile diversione tra Sacred Forest e Dauth/Tower (3 giorni extra) → costa tempo, ma scaglia avanti l'arco P2 (Rhest sub-arc) |
+| Party ignora Rhest | Saarvith cavalca al Rethmar Phase 1 con dragonrider corps integro (Saarvith Clock 3/8 si riempie senza opposizione) → +1 CR effettivo ondata draconica |
+
+---
+
 ## 3. Cosa cambia se i due hook arrivano coerenti
 
 Se Hella ha sia la Ghianda (Lythiel) sia la cenere (Tempestas), il DM può preparare:

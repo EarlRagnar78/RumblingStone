@@ -4,9 +4,9 @@
 **Razza/Tipo:** Mezzelfo (Umanoide Medio)
 **Classe:** Bardo 12 / Arcimago 2 — GS 14
 **Allineamento:** Neutrale Buono
-**Ruolo:** PNG ricorrente. **Messaggero ufficiale del Consiglio di Rethmar** (Brenna Sorvane è la sua patrona). Si muove tra le città dell'Elsir Vale e del Cannath Vale via *Shadow Walk* per portare informazioni che le caravane impiegherebbero settimane a recapitare. Veterano alleato dei PG.
+**Ruolo:** PNG ricorrente. **Messaggero ufficiale del Consiglio di Rethmar** (Brenna Sorvane è la sua patrona). Si muove tra le città dell'Elsir Vale e del Cannath Vale via *Shadow Walk* per portare informazioni che le carovane impiegherebbero settimane a recapitare. Veterano alleato dei PG.
 **Primo incontro (canone retroattivo):** **Arco 00 — Red Hand of Doom opening** — la città-guarnigione di Capitana Lorana sotto attacco. Tempestas era in viaggio diplomatico, si è ritrovato dentro l'assedio, ha aiutato i PG e Lorana a evacuare i sopravvissuti. Da allora è in debito personale con il party.
-**File correlati:** `PNG/Lorana/Lorana.md`; `08_La Battaglia Di Hammerfist/00_Final_hammerfist_battle-La_Mano_Rossa_del_Destino-Guida_Completa_del_DM.md` (Sessione 4 alleati aerei); `09_Continuazione.../Arco-Post-Hammerfist-HOOKS-*.md`.
+**File correlati:** `PNG/Lorana/Lorana.md`; `08_La Battaglia Di Hammerfist/00_Final_hammerfist_battle-La_Mano_Rossa_del_Destino-Guida_Completa_del_DM.md` (Sessione 4 alleati aerei); `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-*.md`.
 
 > **[CANON-RETCON 2026-05-04]** Tempestas è il "bardo storm caller" che il party ha incontrato realmente in sessione durante l'attacco iniziale del Red Hand alla città di Lorana (Arco 00). Quel ricordo è stato canonizzato qui.
 
@@ -96,9 +96,9 @@ Diplomazia +24, Conoscenze (Locali, Storia, Geografia, Nobiltà, Religione) +14 
 **Cosa significa in pratica:**
 - Può portarsi a 80 km dalla destinazione **in 1 ora di viaggio nel Piano dell'Ombra** (poi camminata normale alle ultime 8 km, perché *Shadow Walk* è impreciso).
 - Tempi di viaggio canonici:
-  - Hammerfist → Rethmar: 5 ore (di cui 4 in Ombra). Caravana normale: 12 giorni.
-  - Hammerfist → Dauth: 6 ore. Caravana: 14 giorni.
-  - Rethmar → Dauth: 4 ore. Caravana: 10 giorni.
+  - Hammerfist → Rethmar: 5 ore (di cui 4 in Ombra). Carovana normale: 12 giorni.
+  - Hammerfist → Dauth: 6 ore. Carovana: 14 giorni.
+  - Rethmar → Dauth: 4 ore. Carovana: 10 giorni.
 - **Limite:** può portare con sé **fino a 4 alleati toccati** (incantesimo standard). Quando lo fa, tutti subiscono –1 a tutti i tiri per 12 ore (effetto del Piano d'Ombra).
 - **Costo:** la sua salute mentale si è erosa col tempo. Periodicamente (DM tira 1d20 settimanale, su 1 si manifesta), Tempestas ha **vuoti di memoria** di 1d6 ore o **vede ombre di persone vive** che lui sa essere altrove. Questo lo distingue dal mezzelfo medio del Cannath Vale.
 
@@ -141,7 +141,7 @@ Diplomazia +24, Conoscenze (Locali, Storia, Geografia, Nobiltà, Religione) +14 
 - **Brenna Sorvane sta cercando alleati** prima dell'assedio. Ha bisogno di Hammerfist.
 - Il **Consiglio di Rethmar è 3-4 contro la difesa**. Halveth è corrotto.
 - **Capitana Lorana è viva a Rethmar** con 800 sopravvissuti (informazione che Tempestas porta privatamente al party come gesto personale, ricordando il debito di Lorana's city).
-- **Conversazione drow intercettata 3 settimane fa** (in emersione laterale di Shadow Walk, Cannath Vale settentrionale, fiume con tre rapide): due voci drow (uno maschile, una femminile) — frase chiave: *"il dottore della torre invisibile vuole il portatore dell'anello caotico"* + *"aspetterà fino a fine Mirtul, poi la torre cammina"*. **Tempestas allora pensò fosse codice mercantile irrilevante.** Adesso, sentendo Artemis vibrare con l'Anello, capisce che era importante. **Conferma materiale al hook dell'Anello — vedi `…HOOKS-Artemis-TorreInvisibile.md` §3.2.** Tempestas può anche disegnare una **mappa approssimativa** della zona di emersione (handout fisico).
+- **Conversazione drow intercettata 3 settimane fa** (in emersione laterale di Shadow Walk, Cannath Vale settentrionale, fiume con tre rapide): due voci drow (uno maschile, una femminile) — frase chiave: *"il dottore della torre invisibile vuole il portatore dell'anello caotico"* + *"aspetterà fino a fine Mirtul, poi la torre cammina"*. **Tempestas allora pensò fosse codice mercantile irrilevante.** Adesso, sentendo Artemis vibrare con l'Anello, capisce che era importante. **Conferma materiale al hook dell'Anello — vedi `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md` §3.2.** Tempestas può anche disegnare una **mappa approssimativa** della zona di emersione (handout fisico).
 - Sa del **Torneo di Dauth** in arrivo (è notizia pubblica — Magister Veylan ne parla aperta) ma **NON consegna l'invito**. Quello è competenza della Confraternita Monastica.
 
 **NON sa:**
@@ -207,7 +207,7 @@ Tempestas può tuttavia interagire con loro a livello informale (cena alla citta
 
 - **Tordek:** ricorda di Lorana's city, gli racconta brevemente del valore di Tordek in quel momento. Se Tordek menziona il Torneo, Tempestas conferma che il Magister Veylan ne parla aperta. Niente sigillo.
 - **Hella:** se Hella menziona Sacred Forest, Tempestas conferma di averlo sorvolato di recente — *"Sentivo un peso al cuore. Non sapevo cosa fosse. Forse il vostro Cerchio lo sa."* Niente cenere materiale (quella era invenzione contrived della v1).
-- **Artemis:** se Artemis chiede esplicitamente di torri / draghi drow, OR se Tempestas nota l'**Anello che brilla** durante la cena (Sapienza Magica CD 14, automatico per un Bardo 12), tira fuori la **conversazione drow intercettata 3 settimane fa**: *"il dottore della torre invisibile vuole il portatore dell'anello caotico" + "fine Mirtul, poi la torre cammina"*. Offre anche una **mappa approssimativa** del Cannath Vale settentrionale (zona del fiume con tre rapide). Vedi `…HOOKS-Artemis-TorreInvisibile.md` §3.2. **Conferma materiale**, non hook iniziale (il hook è la vibrazione dell'Anello + il sogno di Lathander/Mask).
+- **Artemis:** se Artemis chiede esplicitamente di torri / draghi drow, OR se Tempestas nota l'**Anello che brilla** durante la cena (Sapienza Magica CD 14, automatico per un Bardo 12), tira fuori la **conversazione drow intercettata 3 settimane fa**: *"il dottore della torre invisibile vuole il portatore dell'anello caotico" + "fine Mirtul, poi la torre cammina"*. Offre anche una **mappa approssimativa** del Cannath Vale settentrionale (zona del fiume con tre rapide). Vedi `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md` §3.2. **Conferma materiale**, non hook iniziale (il hook è la vibrazione dell'Anello + il sogno di Lathander/Mask).
 
 ### Bonus per il gruppo intero — *La Polvere di Tonante*
 

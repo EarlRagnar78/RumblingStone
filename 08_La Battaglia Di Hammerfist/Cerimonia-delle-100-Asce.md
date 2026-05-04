@@ -83,13 +83,13 @@ Cerimonia-delle-100-Asce.md
 >
 > Tordek riceve l'invito al Torneo **solo se** il party va al Sacred Forest insieme (o almeno se Tordek è con Hella) — vedi `Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md`. Questo è **intenzionale**: rende il hook organico (la convocazione arriva dove un guerriero rinomato si troverebbe), non meccanico.
 >
-> Conseguenza: **se il party si separa il Giorno 22** (Tordek va a Dauth da solo, Hella va al Sacred Forest), Tordek **non ha modo formale** di sapere del Torneo prima di arrivarci. Possibili compensazioni narrative del DM: voci di osteria, un secondo invito tardivo, oppure Tordek decide comunque di passare per Dauth e scopre del Torneo all'arrivo (ma senza l'autorità del sigillo formale, le 150 lance restano in caserma — vedi `HOOKS-Tordek-DauthInvitation.md` Via DARK).
+> Conseguenza: **se il party si separa il Giorno 22** (Tordek va a Dauth da solo, Hella va al Sacred Forest), Tordek **non ha modo formale** di sapere del Torneo prima di arrivarci. Possibili compensazioni narrative del DM: voci di osteria, un secondo invito tardivo, oppure Tordek decide comunque di passare per Dauth e scopre del Torneo all'arrivo (ma senza l'autorità del sigillo formale, le 150 lance restano in caserma — vedi `Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md` Via DARK).
 
 ---
 
 ## 4. Cosa NON succede alla cerimonia (per evitare overload)
 
-- **NON viene consegnata** la mappa drow ad Artemis — quella scena è **separata** (vedi §5 sotto e `HOOKS-Artemis-TorreInvisibile.md`).
+- **NON viene consegnata** la mappa drow ad Artemis — quella scena è **separata** (vedi §5 sotto e `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md`).
 - **NON vengono date** 4 lettere a 4 PG. Solo **Thorik riceve una lettera** (Brenna). **Hella riceve la Ghianda** ma è un oggetto cerimoniale, non corrispondenza. **Tordek e Artemis non ricevono nulla a Hammerfist** — i loro hook atterrano altrove (Sacred Forest per Tordek; Anello che vibra durante il rito stesso per Artemis).
 - **NON viene rivelata** la corruzione di Halveth pubblicamente. È nella lettera privata di Brenna.
 - **NON ci sono combattimenti.** Anche se hobgoblin esploratori dovessero apparire (improbabile), il rito tiene la pace. Eventuali scontri si svolgono **dopo** la cerimonia.
@@ -123,8 +123,8 @@ Durante l'Atto 3 (mentre Re Thorek consegna le rune di pietra), **l'Anello di Ch
 > **Filosofia:** Artemis non riceve intel dall'esterno. **L'Anello stesso** si è risvegliato perché Zalkatar, alla Torre, sta **preparando il movimento mensile** della Torre. L'Anello sente il suo precedente padrone. Questo è hook **interno e organico**, non un messaggero contrived.
 
 **Trigger secondari (dopo la Cerimonia):**
-- **Notte 22 o 23**: **sogno della Doppia Maschera** — Lathander e Mask appaiono in sogno e rivelano l'identità di Zalkatar (ex-chierico di Mask) + movente (lettura sperimentale dell'Anello, non uccisione). Vedi `…HOOKS-Artemis-TorreInvisibile.md` §3.4.
-- **Cena di Hammerfist (Giorno 21 sera)**: se Tempestas nota l'Anello brillare di Artemis (Sapienza Magica CD 14, automatico), si avvicina e rivela la **conversazione drow intercettata 3 settimane fa** (*"il dottore della torre invisibile vuole il portatore dell'anello caotico" + "fine Mirtul, poi la torre cammina"*) + offre **mappa approssimativa** del Cannath Vale settentrionale. Vedi `…HOOKS-Artemis-TorreInvisibile.md` §3.2.
+- **Notte 22 o 23**: **sogno della Doppia Maschera** — Lathander e Mask appaiono in sogno e rivelano l'identità di Zalkatar (ex-chierico di Mask) + movente (lettura sperimentale dell'Anello, non uccisione). Vedi `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md` §3.4.
+- **Cena di Hammerfist (Giorno 21 sera)**: se Tempestas nota l'Anello brillare di Artemis (Sapienza Magica CD 14, automatico), si avvicina e rivela la **conversazione drow intercettata 3 settimane fa** (*"il dottore della torre invisibile vuole il portatore dell'anello caotico" + "fine Mirtul, poi la torre cammina"*) + offre **mappa approssimativa** del Cannath Vale settentrionale. Vedi `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md` §3.2.
 
 ### 5.4 Per Thorik — *La Lettera*
 
@@ -142,7 +142,7 @@ Tempestas attende che il banchetto si calmi. Avvicina Thorik in un'alcova. **Non
 
 ### 6.1 Hella — Cenere bianca dal Cerchio (Giorno 23–25)
 
-Lungo il viaggio, **Hella sente prima del party** il fumo di un cerchio druidico bruciato. La conferma di ciò che Lythiel le aveva accennato. Tempestas può apparire qui (non è obbligato — può anche essere il PG-druidic-sense di Hella sola) per consegnare un fazzoletto con cenere bianca raccolta volando di sopra (vedi `HOOKS-Hella-SacredForest.md` Atto 2).
+Lungo il viaggio, **Hella sente prima del party** il fumo di un cerchio druidico bruciato. La conferma di ciò che Lythiel le aveva accennato. Tempestas può apparire qui (non è obbligato — può anche essere il PG-druidic-sense di Hella sola) per consegnare un fazzoletto con cenere bianca raccolta volando di sopra (vedi `Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md` Atto 2).
 
 ### 6.2 Tordek — Voci della strada (Giorno 24–27)
 

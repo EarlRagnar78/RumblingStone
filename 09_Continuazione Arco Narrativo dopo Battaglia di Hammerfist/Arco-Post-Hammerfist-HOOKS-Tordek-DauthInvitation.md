@@ -2,6 +2,13 @@ Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md
 =====================================================
 
 # Hook Tordek — *Il Messo al Sacred Forest*
+
+> **TL;DR (DM cheat-sheet):**
+> - **Day 24** Sacred Forest → Sorella Maewen (`PNG/Maewen/Maewen.md`) atterra cercando Aeleth Verdebronzo (morto). Riconosce Tordek dalla runa Custode Eterno.
+> - **Tournament**: una volta ogni 100 anni, allineamento delle stelle dell'Iride, **fra 4 giorni**, aperto a guerrieri valorosi che superano preliminari monastici (non-monaci svantaggiati — vedi `PNG/Maewen/Maewen.md` §REGOLE PRELIMINARI).
+> - **Da Sacred Forest a Dauth**: 3 giorni a cavallo + 1 di assestamento.
+> - **4 vie**: Accetta + parte solo / Accetta + party intero a Dauth / Accetta + altri PG partecipano (PG vs PG bracket) / Rifiuta (–150 lance, +1 CR Wyrmlord Phase 1).
+> - **Se Tordek NON è al Sacred Forest il Day 24**: Maewen non lo trova → niente sigillo formale → 150 lance senza copertura politica.
 ## *Tono: House of David (la chiamata che arriva da una porta laterale) + Tolkien (il messaggero che cerca un altro e trova te).*
 
 > **Status:** canone di campagna RumblingStone (2026-05-04, **rivisto 2026-05-04 v2**). Master reference: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §3.

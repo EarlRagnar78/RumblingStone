@@ -12,6 +12,64 @@ Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md
 
 ---
 
+## TL;DR — DM Quick Reference (1 pagina)
+
+```
+WHEN → WHERE → WHAT → WHO
+─────────────────────────────────────────────────────────────
+Day 19  Hammerfist battle won (Sessione 4).
+        Lythiel arrives with elven rangers on giant owls.
+
+Day 21  CERIMONIA DELLE 100 ASCE (Hammerfist).
+        ├─ Hella    → Acorn from Lythiel (post-cerimonia, intimate)
+        ├─ Thorik   → Brenna's private letter from Tempestas + intel exchange
+        ├─ Artemis  → Ring of Chaotic Illumination vibrates (Atto 3)
+        └─ Tordek   → no formal hook — only Custode Eterno rune
+
+Day 22-23 (notte) — Artemis: Sogno della Doppia Maschera
+        (Lathander + Mask reveal Zalkatar's identity)
+
+Day 22  Tempestas departs. Party decides PATH (split / together / hybrid).
+
+Day 24  SACRED FOREST arrival (for those who go).
+        ├─ Tordek   → Sorella Maewen offers Tournament invite
+        │            (mythic 100-year cadence, 4 days notice)
+        └─ Optional: drow scout encounter for Artemis if heading to Tower
+
+Day 25  Saraah's RITO DI DIVINAZIONE.
+        ├─ Hella   → 3 visions: Rhest base / Mother of Fungi / Talar in fiamme
+        ├─ Hella   → optional EL-11 descent under Quercia Vecchia
+        └─ Artemis → optional 4th confirmation of Tower direction
+
+Day 23-28 (anywhere on the road)
+        └─ All PG  → Ghostlord refugee caravan (Ren Casadipietra + 30)
+                     heading for Talar (which is already sacked)
+
+Day 28-32  Tournament Days 1-3 at Dauth (P2B arc).
+Day 32     Vanguard Karruk siege of Dauth (parallel to Day 3 Tournament).
+Day 33-35  Hella ritual / Artemis Tower fight.
+Day 36+    Convergence on Rethmar.
+Day 38-42  Phase 0-4 of Rethmar.
+
+PATHS (party choice):
+  PATH-A   split classico (efficient, no support)
+  PATH-B   together-sequential (united, but timing-stretched)
+  PATH-C   hybrid 2+2 or 3+1 (compromise)
+
+DELIVERY DESIGN (fixed by v2):
+  • Tempestas — INTEL AGENT for Rethmar. Carries ONLY Brenna's letter
+    to Thorik. Drow chatter for Artemis is MATERIAL CONFIRMATION (not
+    initiation), surfaced when Artemis asks or when Tempestas notes
+    the Ring glow at the cena.
+  • Sal — explicitly NOT a messenger (compromised by Il Collezionista).
+  • Lythiel — Hella only (druidic affinity).
+  • Maewen — Tordek only (coincidentally found at Sacred Forest).
+  • Anello + Sogno + Lathander/Mask — Artemis only (internal + divine).
+  • Ren Casadipietra — whole party (encounter-on-road).
+```
+
+---
+
 ## 1. Cornice strategica — Il calendario del Red Hand
 
 > Tutto il calendario degli hook è ancorato al **Clock di Azarr Kul (9/18 giorni)** in `campaign/state.md`. L'orda principale arriva a Rethmar al riempimento del clock. Ogni hook deve essere consegnato **prima** che gli archi convergano verso Rethmar (P3).
@@ -93,13 +151,13 @@ Giorno 42  Mythal & finale (Phase 4).
 **Cosa atterra alla Cerimonia:**
 - **Hella** riceve la Ghianda da Lythiel (post-cerimonia, intima).
 - **Thorik** riceve la lettera privata di Brenna da Tempestas + scambio intel bidirezionale (sala-mappa, prima della cerimonia o durante banchetto).
-- **Artemis** sente la vibrazione dell'Anello (Atto 3, durante il riconoscimento del Custode Eterno) — voce drow antica: *"Lui sta camminando. Vieni."* La notte successiva, sogno di **Lathander + Mask** (vedi `…HOOKS-Artemis-TorreInvisibile.md` §3.4) che rivela identità e movente di Zalkatar. **Tempestas confermerà materialmente** con la conversazione drow intercettata 3 settimane fa, **se** Artemis lo cerca o se Tempestas nota l'Anello brillare alla cena.
+- **Artemis** sente la vibrazione dell'Anello (Atto 3, durante il riconoscimento del Custode Eterno) — voce drow antica: *"Lui sta camminando. Vieni."* La notte successiva, sogno di **Lathander + Mask** (vedi `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md` §3.4) che rivela identità e movente di Zalkatar. **Tempestas confermerà materialmente** con la conversazione drow intercettata 3 settimane fa, **se** Artemis lo cerca o se Tempestas nota l'Anello brillare alla cena.
 - **Tordek** non riceve hook formale — solo la runa di Custode Eterno (atto pubblico).
 
 **Cosa NON atterra qui:**
 - L'invito di Tordek al Torneo (arriva al Sacred Forest, vedi §5).
-- I drow scout per Artemis (vedi `HOOKS-Artemis-TorreInvisibile.md`).
-- La carovana profughi (sulla strada, vedi `HOOKS-Ghostlord-Refugees.md`).
+- I drow scout per Artemis (vedi `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md`).
+- La carovana profughi (sulla strada, vedi `Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md`).
 
 ---
 

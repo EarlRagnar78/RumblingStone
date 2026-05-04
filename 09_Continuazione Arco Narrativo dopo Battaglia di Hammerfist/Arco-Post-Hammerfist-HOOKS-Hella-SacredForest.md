@@ -2,6 +2,13 @@ Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md
 =================================================
 
 # Hook Hella — *La Ghianda e la Cenere*
+
+> **TL;DR (DM cheat-sheet):**
+> - **Day 21** Cerimonia 100 Asce (Hammerfist) → Lythiel consegna **Ghianda del Cerchio** a Hella (mecc.: vedi `PNG/Lythiel/Lythiel.md`).
+> - **Day 22 sera (opz.)** Tempestas conferma Cerchio in fumo via cenere (opz. Shadow Walk shortcut: vedi `PNG/Tempestas/Tempestas.md` §SHADOW WALK).
+> - **Day 25** Sacred Forest → Saraah's RITO DI DIVINAZIONE: 3 visioni (Rhest / Mother of Fungi sotto la Quercia / Talar in fiamme).
+> - **Optional** Day 25 — descent EL 11 sotto la Quercia per purificare MoF spore (raddoppia bonus Acorn).
+> - **3 vie principali per Hella**: Shadow Walk veloce / 3-day march / rinuncia. Vedi §2.4.
 ## *Tono: Tolkien (Mirkwood). Due voci dalla foresta che ti trovano dove sei.*
 
 > **Status:** canone di campagna RumblingStone. Master reference: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §3.
@@ -55,15 +62,9 @@ Vedi `PNG/Lythiel/Lythiel.md` per statblock. In sintesi:
 
 ### 1.5 Le proprietà della Ghianda (canonizzate)
 
-> Vedi `PNG/Lythiel/Lythiel.md` §LA GHIANDA DEL CERCHIO.
+> **Fonte autoritativa unica:** `PNG/Lythiel/Lythiel.md` §LA GHIANDA DEL CERCHIO. **Tutte le meccaniche numeriche** (CD, Cos, eco a Rethmar, limite "per Hella") sono lì. **Non duplicare in questo file** per evitare drift; in caso di conflitto, vince la PNG card.
 
-In sintesi: piantata al centro del Cerchio durante il rituale di Hella (P1C):
-- –4 alle CD delle 3 fasi del rituale.
-- 1d4 Cos rigenerata a Hella all'inizio del rituale.
-- Treant alleati arrivano già a portata.
-- **Eco a Rethmar**: secondo gruppo druidico (3 druidi 8° + 6 Treant minori) a Phase 1 se rituale completato.
-
-**LIMITE CRITICO:** la Ghianda è **per Hella**. Se altri PG la prendono per loro, diventa inerte. Se Hella la usa fuori dal Cerchio Sacro, diventa inerte.
+**Riassunto operativo (per consultazione rapida al tavolo):** piantata al centro del Cerchio durante il rituale di Hella, la Ghianda riduce le CD del rituale, rigenera Cos, e attiva un secondo gruppo druidico a Rethmar Phase 1 se il rituale è completato. **È personale di Hella** — inerte per altri PG o fuori dal Cerchio.
 
 ### 1.6 Partenza di Lythiel
 
@@ -101,7 +102,7 @@ Lythiel resta a Hammerfist 24 ore. Dorme con Inathiel sui bastioni. La mattina d
 
 - **Sa:** ha visto il Cerchio dal cielo (durante uno *Shadow Walk* aveva emerso temporaneamente). Era ancora caldo. Niente druidi visibili in terra. Forse 8–12 piromanti drow attivi nella zona. La direzione del fumo suggerisce **incendio doloso** (non rituale).
 - **Non sa:** chi ha guidato l'attacco. Cosa c'è sotto il Cerchio. Se Saraah è viva.
-- **Offre:** *Shadow Walk* a Hella + 3 alleati per portarla al Sacred Forest in 4 ore (invece di 3 giorni di marcia). **Costo:** Hella e i suoi alleati subiscono –1 a tutti i tiri per 12 ore (effetto Piano d'Ombra).
+- **Offre:** *Shadow Walk* a Hella + 3 alleati per portarla al Sacred Forest in 4 ore (invece di 3 giorni di marcia). **Costo per i passeggeri e per Tempestas:** vedi fonte autoritativa unica `PNG/Tempestas/Tempestas.md` §SHADOW WALK COME STILE DI VITA (in sintesi: –1 ai tiri 12h ai passeggeri; tick di erosione mentale a Tempestas).
 
 ### 2.4 La scelta
 
@@ -109,7 +110,7 @@ Lythiel resta a Hammerfist 24 ore. Dorme con Inathiel sui bastioni. La mattina d
 
 #### Via A — Accetta il viaggio veloce di Tempestas
 - Arriva al Sacred Forest il Giorno 22 sera, riposo notturno, può iniziare il rituale il Giorno 23.
-- **Costo:** –1 a tutti i tiri per le prime 12 ore al Sacred Forest. Tempestas accumula 1 punto di erosione mentale (vedi `PNG/Tempestas/Tempestas.md` §Vulnerabilità).
+- **Costo:** vedi fonte autoritativa `PNG/Tempestas/Tempestas.md` §SHADOW WALK COME STILE DI VITA (–1 ai tiri 12h, +1 tick erosione mentale Tempestas).
 - **Beneficio:** salva tempo. Permette al party di non separarsi del tutto fino al Giorno 22.
 
 #### Via B — Rifiuta lo Shadow Walk; va a piedi/cavallo

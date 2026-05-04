@@ -4,6 +4,13 @@ Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md
 # Hook Ghostlord — *La Carovana dei Profughi*
 ## *Tono: Tolkien (la fuga di una fellowship piccola) + House of David (la verità che pesa) + Andor (le città che cadono in silenzio).*
 
+> **TL;DR (DM cheat-sheet):**
+> - **Hook del PARTY (non singolo PG)**. Scena: incontro di strada, Day 23-28 (DM sceglie il momento).
+> - **Carovana**: Ren Casadipietra (ex-guardia, leader) + Sira (madre adottiva di Tobi orfano) + Joran (ex-druido, riconoscerà Hella) + 5 armati + ~22 civili. Da Loccatella, fuggono ondate non-morti dal Thornwaste.
+> - **Diretti a Talar** — saccheggiata 2 giorni fa, profughi NON lo sanno. Rivelazione difficile.
+> - **4 vie**: Scorta a città sicura (Dauth/Brindol/Hammerfist/Sacred Forest) / Indagare Thornwaste (apertura precoce arco Ghostlord, sacrifica Torneo+Torre) / Aiuto parziale (provviste, info, tirare 1d20+5) / Ignorare (DARK, eco RP).
+> - **Eco**: scorta = +30 alla Riserva di Lorana a Rethmar + Joran CR 5 alleato Phase 1 + reputazione regionale; ignorare = niente meccanico, eco RP forte.
+
 > **Status:** canone di campagna RumblingStone (2026-05-04). Master reference: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §3.
 >
 > **Hook personale:** non è di un singolo PG. È del **party intero** (incontro su strada). Si attiva durante uno dei viaggi del Giorno 23-28 attraverso la regione tra Hammerfist e Dauth (passando vicino al **Thornwaste** del Ghostlord).
@@ -75,7 +82,7 @@ I villaggi vicini al Thornwaste **stanno fuggendo**. Una di queste **carovane di
 
 ### 3.4 La rivelazione difficile su Talar
 
-> **Se il party ha la visione di Saraah** (vedi `HOOKS-Hella-SacredForest.md` §2.5.2 Visione 3), o ha incrociato altri viaggiatori che lo sapevano, o ha intel da Tempestas/Brenna: **sa che Talar è caduta**.
+> **Se il party ha la visione di Saraah** (vedi `Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md` §2.5.2 Visione 3), o ha incrociato altri viaggiatori che lo sapevano, o ha intel da Tempestas/Brenna: **sa che Talar è caduta**.
 >
 > **Se non lo sa**, può scoprirlo con una prova passiva di Conoscenze Locali CD 18 (un PG ricorda da dispacci recenti) o **rimanere all'oscuro** finché non arriva a Talar a vederlo direttamente.
 

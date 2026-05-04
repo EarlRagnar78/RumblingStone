@@ -2,6 +2,14 @@ Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md
 ======================================================
 
 # Hook Artemis — *L'Anello che Vibra*
+
+> **TL;DR (DM cheat-sheet):**
+> - **Day 21** Cerimonia 100 Asce Atto 3 → Anello vibra, voce drow antica: *"Lui sta camminando. Vieni."*
+> - **Notte 22 o 23** → Sogno della Doppia Maschera: Lathander + Mask appaiono come osservatori, rivelano identità di Zalkatar (3-secoli ex-chierico di Mask, Mind Flayer per scelta) e movente (lettura sperimentale dell'Anello, non uccisione).
+> - **Day 21-22 (opz.)** Tempestas conferma con conversazione drow intercettata 3 settimane fa nel Cannath Vale Nord (fiume con tre rapide) + mappa approssimativa.
+> - **Day 25 (opz.)** Saraah conferma direzione Torre via rito druidico al Sacred Forest.
+> - **Bonus meccanici sogno**: +2 TS Vol vs Zalkatar psionics; +1d6 al primo attacco/round Fase 3 (+2d6 se incontrata anche la donna cieca al mercato di Dauth, vedi `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Artemis.md` Atto 2).
+> - **Mirtul deadline**: Torre cammina ~Day 30. 4 vie (Torre presto solo / Sacred Forest poi Torre / Dauth poi Torre / DARK ignora).
 ## *Tono: House of David (la chiamata dall'oggetto sacro stesso) + Tolkien (il sogno che cresce notte dopo notte).*
 
 > **Status:** canone di campagna RumblingStone (2026-05-04, **rivisto 2026-05-04 v2**). Master reference: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §3.
@@ -104,7 +112,7 @@ Per ogni notte di viaggio, Artemis ha un sogno **leggermente più nitido**:
 
 ### 3.3 Conferma da Saraah / Druid Circle (opzionale, Giorno 25)
 
-> Se Artemis è andato al Sacred Forest col party (PATH-B o PATH-C, vedi MASTER §4), può chiedere a Saraah o a Joran (se la Carovana profughi è stata aiutata, vedi `…HOOKS-Ghostlord-Refugees.md`) di **divinare** sull'Anello.
+> Se Artemis è andato al Sacred Forest col party (PATH-B o PATH-C, vedi MASTER §4), può chiedere a Saraah o a Joran (se la Carovana profughi è stata aiutata, vedi `Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md`) di **divinare** sull'Anello.
 
 - **Rito di Saraah:** 30 minuti. Costa 1 incantesimo druidico di livello 4 (Sai-druidico-equivalente). Risultato: conferma che l'Anello è **mentalmente connesso** a un'entità planare in **una struttura mobile a nord-ovest del Cannath Vale**. Non più preciso di così, ma utile.
 - **Costo:** Hella perde l'attenzione di Saraah per un'ora del rito. Eco minore.

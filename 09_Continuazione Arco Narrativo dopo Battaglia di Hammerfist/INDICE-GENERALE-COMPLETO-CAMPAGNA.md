@@ -8,11 +8,40 @@
 
 ## 🗂️ FILE REFERENCE
 
-This directory contains **74 markdown files** + **6 image files**.
+This directory contains **74 markdown files** + **6 image files** (+ 2 new PNG files in `/PNG/Lorana/` and `/PNG/Consiglio_Rethmar/`).
 All location names use Cannath Vale equivalents (Rethmar, Shaarcah Forest, etc.).
 See `skills/dnd-35-rules/references/fr-cannath-vale.md` for the full RHoD→Cannath Vale mapping.
 
 **Legend:** ✅ = Content complete | 📝 = Empty placeholder (TODO) | ⚠️ = Needs integration
+
+---
+
+## 🧑‍🤝‍🧑 REGISTRO PNG — TUTTI I VILLAIN E NPC PRINCIPALI
+
+File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D 3.5, agenda, tattiche, note DM).
+
+| NPC / Villain | File | GS | Ruolo | Clock |
+|---|---|---|---|---|
+| **Il Collezionista (Rakshasa)** | `PNG/Il_Collezionista_Rakshasa.md` | 17–19 | Shadow mastermind; manipola Varis, Sal, Sonjak | 5/8 |
+| **Salvatore "Sal" / Vatore** | `PNG/Salvatore/Salvatore.md` | 14 | Spia temporale; mercante del deserto; fornitore statue vive | 0/6 |
+| **Azarr Kul** | `PNG/Azarr_Kul/Azarr_Kul.md` | 15 | Alto Wyrmlord di Tiamat; boss Fase 3 Rethmar; monta Tyrgarun | 9/18 |
+| **Sonjak / Matrona Sajak** | `PNG/Sonjak/Sonjak.md` | 13 | Matrona Drow, comanda forze sotterranee; datore di lavoro di Sal | 4/8 |
+| **Conte Valerius** | `PNG/Conte_Valerius/Conte_Valerius.md` | 6/14★ | Villain politico; finanzia la Mano Rossa; non si batte in combat | 2/8 |
+| **Maestro Varis "Seta-Argento"** | `PNG/Varis_Seta_Argento/Varis_Seta_Argento.md` | 6 | Broker urbano Rethmar; anello della catena statue vive | — |
+| **Ghostlord / Zeth il Murato** | `PNG/Ghostlord/Ghostlord.md` | 13 | Lich druidico Thornwaste; alleato o nemico; NPC di Hella | — |
+| **Xal'thor** | `PNG/Xal_thor/Xal_thor.md` | 14 | Comandante Illithid Githyanki; attacca Torneo Giorno 3 (fisso) | Fixed |
+| **Therysol** | `PNG/Therysol/Therysol.md` | 9 | Alleata Tiefling Mezzo-Drago; caccia Il Collezionista | — |
+| **Capitana Lorana** | `PNG/Lorana/Lorana.md` | 7 | PNG secondaria; guida rifugiati; voce non ufficiale Consiglio; NPC di riconnessione Arc 00 | — |
+| **Consiglio di Rethmar** | `PNG/Consiglio_Rethmar/Consiglio_Rethmar.md` | — | Organo collegiale 7 membri; 3 sedute Day 30/33/35; resa default senza intervento PG | — |
+
+★ Conte Valerius GS 6 in combattimento fisico / GS 14 effettivo come villain politico-legale
+
+**Villain minori con stat nei file di arco (no cartella dedicata):**
+- Zalkatar (Illithid Warlock, CR 13): `Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md`
+- Wyrmlord Saarvith + Regiarax (CR 12/13): `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`
+- Zarim (Illithid luogotenente, CR 12): `Arco-Post-Hammerfist-P2B-Torneo-Tordek-BATTLE-STATS-e-VILLAIN-ICONICI.md`
+- Avversari Torneo (12+ nomi): `Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md`
+- Azarr Kul + Avatar Tiamat (stat epiche): `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md`
 
 ---
 
@@ -226,6 +255,32 @@ See `skills/dnd-35-rules/references/fr-cannath-vale.md` for the full RHoD→Cann
 
 ---
 
+### PARTE 2C: Incontro con Salvatore "Sal" della Luna d'Argento (Intermezzo Desertico)
+
+**Timing:** Day 28–32 — sulla strada Cannath Vale → Rethmar (dopo le quest personali)
+**Durata:** 1 sessione (sociale + eventuale combattimento fuga)
+**NPC:** `PNG/Salvatore/Salvatore.md` — Bardo 8 / Accordo Sublime 1 / Spia 5 (GS 14)
+
+| File | Tipo | Status |
+|---|---|---|
+| `Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md` | Testo incontro, hook per PG, gestione confronto | ✅ |
+
+**Contenuti:**
+
+- Hook: carro di seta blu nel deserto, ballata che cita le gesta dei PG per nome
+- Test della Brocca Invisibile (profila Artemis + Tordek)
+- Interazioni specifiche per PG: Thorik (intel Rethmar), Tordek (dreno risonanza Bracieri), Artemis (tripla schermatura anti-warlock), Hella (sensore biologico / statue vive)
+- Trappole di sabotaggio: Olio di Manutenzione (armi), Sali da Bagno (Ring)
+- Gestione del confronto e fuga
+- Statue Vive nel carro (de-petrificazione → testimone di Hammerfist -1000 DR)
+- Collegamento diretto con Fase 4 Mythal-Statue (Rethmar)
+
+**Connessioni NPC:** Serve sia il **Collezionista (Rakshasa)** che la **Matrona Sajak (Drow)** — agente di campo doppio. È il fornitore a monte di **Maestro Varis "Seta-Argento"** (le statue del suo carro diventano le "sculture" nelle case dei nobili di Rethmar).
+
+**Differenziazione da Varis:** Varis = broker urbano CR 6, semi-inconsapevole. Sal = spia temporale GS 14, pienamente consapevole, attivo nel deserto PRIMA che i PG arrivino in città.
+
+---
+
 ## PARTE 3: MISSIONI SECONDARIE + BATTAGLIA FINALE RETHMAR
 
 ### PARTE 3 — Starsong Hill: Alleanza Elfi Tiri Kitor
@@ -296,6 +351,24 @@ See `skills/dnd-35-rules/references/fr-cannath-vale.md` for the full RHoD→Cann
 - MB-4: Semi di Corruzione (foresta infestata, Cuore di Madre Fungo)
 - MB-5: Torre d'Ascolto Githyanki (torre planare, cristallo comunicazione)
 - MB-6: Ultimo Nido Drow (rituale disperato, Avatar minore Madre Funghi)
+
+### PARTE 3 — Arrivo a Rethmar: Politica e Riconnessioni (Day 30–35)
+
+*Fase politica pre-assedio. Si svolge in parallelo alle ultime missioni secondarie.*
+
+| File | Tipo |
+|---|---|
+| `PNG/Consiglio_Rethmar/Consiglio_Rethmar.md` | Scheda organo collegiale — 7 membri, agende, meccanica voto |
+| `PNG/Lorana/Lorana.md` | Scheda PNG secondaria — capitana rifugiati, voce campo |
+
+**Contenuti:**
+
+- Tre sedute del Consiglio (Day 30, 33, 35) con voto difesa vs resa
+- Default senza intervento PG: **resa vince** per doppio voto di Kaal
+- Halveth attivo durante Fase 0: drow conoscono la pianta del tempio → **+1 CR Fase 0**
+- Azioni party → tabella impatti concreti su CR di ogni fase (7 azioni mappate)
+- Lorana: riconnessione NPC Arc 00, intel campo vale -1 CR Fase 1 se condivisa con Thorik
+- Mobilitazione rifugiati: +150 fanteria civile (costo morale — richiede faccia a faccia)
 
 ---
 

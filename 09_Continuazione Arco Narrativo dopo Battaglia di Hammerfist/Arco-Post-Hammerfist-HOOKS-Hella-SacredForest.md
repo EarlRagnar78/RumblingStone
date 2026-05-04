@@ -1,0 +1,226 @@
+Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md
+=================================================
+
+# Hook Hella — *La Ghianda e la Cenere*
+
+> **TL;DR (DM cheat-sheet):**
+> - **Day 21** Cerimonia 100 Asce (Hammerfist) → Lythiel consegna **Ghianda del Cerchio** a Hella (mecc.: vedi `PNG/Lythiel/Lythiel.md`).
+> - **Day 22 sera (opz.)** Tempestas conferma Cerchio in fumo via cenere (opz. Shadow Walk shortcut: vedi `PNG/Tempestas/Tempestas.md` §SHADOW WALK).
+> - **Day 25** Sacred Forest → Saraah's RITO DI DIVINAZIONE: 3 visioni (Rhest / Mother of Fungi sotto la Quercia / Talar in fiamme).
+> - **Optional** Day 25 — descent EL 11 sotto la Quercia per purificare MoF spore (raddoppia bonus Acorn).
+> - **3 vie principali per Hella**: Shadow Walk veloce / 3-day march / rinuncia. Vedi §2.4.
+## *Tono: Tolkien (Mirkwood). Due voci dalla foresta che ti trovano dove sei.*
+
+> **Status:** canone di campagna RumblingStone. Master reference: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §3.
+>
+> Hella riceve **due hook in cascata** verso il Sacred Forest:
+> 1. **Giorno 19** — Capitana Lythiel (PNG) consegna la **Ghianda del Cerchio** alla fine della Battaglia di Hammerfist (Sessione 4).
+> 2. **Giorno 22** — Tempestas (PNG) consegna **cenere bianca** dal Cerchio fumante.
+>
+> Insieme costruiscono l'urgenza dell'arco P1 senza forzare la mano.
+
+---
+
+## 1. Hook Primario — Lythiel alla Battaglia di Hammerfist (Giorno 19)
+
+> **Quando:** ultime tre ondate della Sessione 4, dopo che il Signore Ventolesto ha decimato i giganti del fuoco. Lythiel atterra dal proprio gufo Inathiel su un punto vicino a Hella (DM scelga il momento di massimo impatto narrativo: Hella ferita, Hella in mezzo a un combattimento difficile, o Hella appena uscita da un round critico).
+
+### 1.1 La scena dell'atterraggio
+
+**Read-aloud (DM):**
+> *La schiena di un gufo gigante celestiale si china sopra la torre. Una figura snella scende, due cicatrici parallele sulla guancia destra che la luce della battaglia rivela. Atterra a tre passi da te, Hella, e ti guarda. Niente saluto. Niente parole. Soltanto un cenno piccolo, come a dire: "ti riconosco". Poi tira fuori dall'arco una freccia di legno noce nero e mira al primo druido drow corrotto che vede. Lo abbatte. Si volta verso di te e dice solo, in un comune con cadenza elfica: "So riconoscere chi ascolta gli alberi. Tu li ascolti più di me."*
+
+### 1.2 Cosa fa Lythiel durante il combattimento
+
+Vedi `PNG/Lythiel/Lythiel.md` per statblock. In sintesi:
+- Combatte da arciera con bersagli prioritari = caster nemici (druidi corrotti, piromanti drow se presenti).
+- **Se Hella è ferita gravemente (sotto 25% PF):** le consegna **una pozione Cure Serious Wounds** (+3d8+12) come azione standard.
+- **Inathiel resta con Hella** se Hella è caduta — proteggendola con artigli +8/+8.
+
+### 1.3 Dopo la battaglia — la consegna della Ghianda
+
+**Setting:** la cittadella di Hammerfist tornata in silenzio. Cadaveri in ordine. Tempestas non è ancora arrivato (lui arriva il Giorno 22). Lythiel raggiunge Hella in un cortile interno o sui bastioni — un luogo tranquillo.
+
+**Read-aloud (DM):**
+> *Lythiel cammina verso di te senza fretta. Tira fuori dalla cintura una piccola ghianda — viva, calda, con un guscio dorato. La porge con due mani. Non parla finché tu non la prendi.*
+>
+> *"Saraah me l'ha consegnata sei mesi fa. Ha detto: 'Quando incontrerai una druida che sa già le cose, dagliela. Non c'è bisogno che spieghi'. Tu sei lei."*
+
+**Cosa Hella riconosce (test automatici):**
+- Sapienza Naturale (Hella ha gradi da druida → CD 14 → automatico): la ghianda è **un seme attivo del Cerchio Sacro**. Solo un arcidruido può consacrarla.
+- Sapienza Religiosa CD 18: identifica il nome di **Saraah dei Faggi-grigi** (l'arcidruidessa del Sacred Forest, la maestra che Hella incontrerà nell'arco P1).
+- Intuizione Hella (RP): Lythiel è una **druidessa-mancata** (la sua aura ha echi del Cerchio ma è stata "interrotta").
+
+### 1.4 Cosa Hella può chiedere a Lythiel
+
+> Tutte queste sono opzionali. La scena vale anche se Hella prende la Ghianda in silenzio.
+
+- *"Cos'è successo nel Cerchio?"* → Lythiel: *"Saraah è viva. Stanca. La sua Sapienza è caduta di due punti negli ultimi sei mesi. Devi affrettarti."*
+- *"Cosa ti è successo?"* → Lythiel: *"Ho lasciato il Cerchio per amore di un ranger umano caduto in guerra. Non potei tornare. Ora giro col gufo. È meno di quanto Saraah sperasse, ma è ciò che sono."*
+- *"Posso fare qualcosa per te?"* → Lythiel: *"No. Pagami tornando viva e con la corteccia ancora calda."*
+- *"Dimmi cosa ti aspetta nel Cerchio."* → Lythiel le anticipa: piromanti drow di passaggio, Treant Corrotti (catturati e contaminati — purificabili con dispel CD 25), e una minaccia sotterranea che lei non può specificare ("un seme aberrante, sotto la Quercia Vecchia").
+
+### 1.5 Le proprietà della Ghianda (canonizzate)
+
+> **Fonte autoritativa unica:** `PNG/Lythiel/Lythiel.md` §LA GHIANDA DEL CERCHIO. **Tutte le meccaniche numeriche** (CD, Cos, eco a Rethmar, limite "per Hella") sono lì. **Non duplicare in questo file** per evitare drift; in caso di conflitto, vince la PNG card.
+
+**Riassunto operativo (per consultazione rapida al tavolo):** piantata al centro del Cerchio durante il rituale di Hella, la Ghianda riduce le CD del rituale, rigenera Cos, e attiva un secondo gruppo druidico a Rethmar Phase 1 se il rituale è completato. **È personale di Hella** — inerte per altri PG o fuori dal Cerchio.
+
+### 1.6 Partenza di Lythiel
+
+Lythiel resta a Hammerfist 24 ore. Dorme con Inathiel sui bastioni. La mattina del Giorno 20 vola via verso il Sacred Forest. Prima di partire, dice a Hella:
+> *"Quando vedi Saraah, dille che ho mantenuto la promessa. La capirai."*
+
+> Per l'eco di lungo periodo (Lythiel a Rethmar Phase 1) vedi master reference §8.2.
+
+---
+
+## 2. Hook Secondario — Tempestas con la cenere bianca (Giorno 22)
+
+> **Quando:** Giorno 22, pomeriggio. Tempestas è appena arrivato a Hammerfist con le 4 lettere. La consegna a Hella è **l'ultima delle quattro** (vedi master reference §3.1) — perché Tempestas vuole che Hella sia in stato d'animo ricettivo.
+
+### 2.1 La scena
+
+**Setting:** ai cancelli della cittadella, mentre Hella sta controllando il rinoceronte di pietra. Il sole sta calando.
+
+**Read-aloud (DM):**
+> *Un mezzelfo si avvicina senza fare rumore — strano per un uomo della sua corporatura. Indossa una camicia con l'emblema di Rethmar (un sole nascente sopra una torre) sopra la cotta di maglia, e una lira di corno di drago blu è legata in spalla. I suoi occhi sono grigio cenere stasera, ma quando ti guarda ti sembra che sotto si muova qualcosa di blu elettrico.*
+>
+> *"Hella dei Boschi. Mi chiamo Tempestas, e voi mi avete salvato la vita molti anni fa, alla città di Lorana. Lo ricordate? Forse no. Io sì. Ho una cosa per voi."*
+>
+> *Tira fuori da una piega del mantello un piccolo fazzoletto bianco di lino, lo dispiega con cura — e dentro c'è un pugno di **cenere bianca**, intessuta di filamenti dorati che si muovono ancora come piccoli vermi vivi.*
+>
+> *"L'ho raccolta tre giorni fa, a tre giorni di marcia da qui, sopra un cerchio di pietre. Non sapevo cosa farne. Voi sì."*
+
+### 2.2 Cosa Hella riconosce
+
+- **Sapienza Naturale CD 16** (Hella automatico): è cenere di **un nodo druidico ancora attivo**. Significa che il Cerchio è stato **bruciato di recente**, ma non distrutto — la radice è ancora viva.
+- **Sapienza Religiosa CD 18:** la firma magica corrisponde a una **runa specifica del Cerchio della Quercia Vecchia** (lo stesso che la Ghianda di Lythiel è stata consacrata). Conferma che il Sacred Forest **sta brucianendo proprio ora**.
+- **Intuizione (Hella, automatico):** Tempestas non sapeva di Lythiel. Lui ha trovato la cenere indipendentemente. **Due fonti diverse confermano la stessa minaccia.**
+
+### 2.3 Cosa Tempestas sa e cosa no
+
+- **Sa:** ha visto il Cerchio dal cielo (durante uno *Shadow Walk* aveva emerso temporaneamente). Era ancora caldo. Niente druidi visibili in terra. Forse 8–12 piromanti drow attivi nella zona. La direzione del fumo suggerisce **incendio doloso** (non rituale).
+- **Non sa:** chi ha guidato l'attacco. Cosa c'è sotto il Cerchio. Se Saraah è viva.
+- **Offre:** *Shadow Walk* a Hella + 3 alleati per portarla al Sacred Forest in 4 ore (invece di 3 giorni di marcia). **Costo per i passeggeri e per Tempestas:** vedi fonte autoritativa unica `PNG/Tempestas/Tempestas.md` §SHADOW WALK COME STILE DI VITA (in sintesi: –1 ai tiri 12h ai passeggeri; tick di erosione mentale a Tempestas).
+
+### 2.4 La scelta
+
+> **Tre vie per Hella:**
+
+#### Via A — Accetta il viaggio veloce di Tempestas
+- Arriva al Sacred Forest il Giorno 22 sera, riposo notturno, può iniziare il rituale il Giorno 23.
+- **Costo:** vedi fonte autoritativa `PNG/Tempestas/Tempestas.md` §SHADOW WALK COME STILE DI VITA (–1 ai tiri 12h, +1 tick erosione mentale Tempestas).
+- **Beneficio:** salva tempo. Permette al party di non separarsi del tutto fino al Giorno 22.
+
+#### Via B — Rifiuta lo Shadow Walk; va a piedi/cavallo
+- 3 giorni di viaggio. Arriva al Sacred Forest il Giorno 25.
+- **Costo narrativo:** durante il viaggio, **Hella sente nel sogno** la voce di Saraah che canta una vecchia canzone ad ogni notte. Quando arriva, scopre che 4 nodi periferici del Cerchio **sono caduti** (incendi terminati) — riducendo i bonus della Ghianda di –1 alla Cos rigenerata.
+- **Beneficio:** Tempestas è disponibile per altre scene; nessuna erosione.
+
+#### Via C — Rifiuta l'urgenza, rimane a Hammerfist con il party
+- Hella decide che il momento del Cerchio è secondario rispetto al gruppo. Resta. Va al Sacred Forest dopo Dauth (Giorno 36+).
+- **Costo:** **gravissimo.** Saraah muore. Il Cerchio cade. Mother of Fungi prende il controllo del nodo. **Eco a Rethmar:** Mother of Fungi avanza il Clock di +2 turni; –1 al CR effettivo del party in Phase 0.
+- **Beneficio:** zero meccanico. Hella ha scelto la coesione del gruppo sull'eredità druidica. Eco RP a lungo termine: Hella **sogna ogni notte** Saraah morente per 6 mesi in-game.
+
+> **Tono per il DM:** non sgridare Hella per Via C. È una scelta legittima. Lascia che le conseguenze emergano lente. *Tolkien* mode: la sconfitta non si vede subito.
+
+---
+
+## 2.5 Hook secondario al Sacred Forest — *La Divinazione di Saraah* (Giorno 25, mattina dopo l'arrivo del party)
+
+> **Trigger:** il giorno **dopo** l'arrivo del party al Sacred Forest (Giorno 25, mattina). Saraah dei Faggi-grigi (Arcidruidessa, vedi `Lythiel.md` §3.1) **convoca Hella** all'altare centrale del Cerchio della Quercia Vecchia. Vuole eseguire un **rito di divinazione di terza vista** — Hella partecipa come tributaria.
+
+### 2.5.1 Setup del rito
+
+- **Quattro druidi anziani** del Cerchio si dispongono ai punti cardinali. Saraah al centro. Hella in **quinta posizione** (innovazione — la quinta corrente, "il viaggiatore").
+- Componenti: **acqua di fonte Sacred** (1 gallone), **cenere di quercia bruciata** (Saraah ne ha già; non serve quella di Tempestas), **una goccia di sangue di ognuno dei 5 partecipanti**.
+- Tempo: 1 ora reale (1 ora in-world).
+
+### 2.5.2 Cosa la divinazione rivela
+
+> **Risultato del rito** (Sapienza Religiosa CD 18 per interpretare le visioni — Saraah lo fa automaticamente, Hella ottiene comprensione parziale):
+
+#### Visione 1 — Una base del Red Hand a Rhest
+- **Vivido:** un'antica città lacustre semisommersa con torri rotte. Sopra le torri **stendardi rossi del Red Hand**. Una grande ombra di **drago nero** vola nel cielo basso. **Hobgoblin guerrieri** patrugliano in gruppi da 8.
+- **Saraah dice:** *"Rhest. Non avevo capito che fosse occupata. I miei esploratori l'hanno solo sorvolata di recente — hanno detto 'razorfiend nelle paludi, niente di anomalo'. Ma il rito mostra di più. C'è una **base operativa** del Red Hand. Hanno un comandante che cavalca un drago nero adulto."*
+- **Sapienza Locale CD 16 (Hella o un PG presente):** Rhest è un'antica città elfica caduta secoli fa, ora rovine. **Lake Rhest** è famosa nel Cannath Vale.
+- **NOTA DM:** questa è la **base canonica di Wyrmlord Saarvith + Regiarax** (vedi `Arco-Post-Hammerfist-P2-RHEST-*.md` esistenti). La divinazione conferma quello che la canonica esistente già dice. Il **valore narrativo** è dare al party un hook **proattivo** (non aspettano di arrivarci, sanno).
+- **Cosa Saraah chiede:** *"Se il vostro cammino vi porta vicino a Rhest, prendetevi un giorno per disturbarli. Anche solo un'incursione. Indebolirli ora vale dieci volte più di affrontarli al fianco di Azarr Kul."*
+
+#### Visione 2 — L'ombra scura sul Cerchio
+- **Vivido:** una **ombra senza forma** si arrampica dal sottosuolo. Ha **molti piccoli occhi** che brillano come funghi luminescenti. Si avvolge sotto la Quercia Vecchia, intorno alle radici, **soffocandole**.
+- **Saraah si fa pallida.** *"Questo non l'avevo previsto. Qualcosa di aberrante è sotto di noi. Non un nemico onesto. Qualcosa che pensa con bocche multiple."*
+- **Sapienza Naturale CD 20 (Hella):** corrisponde alla descrizione di una **spora di Mother of Fungi** (vedi cross-link al `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md` — Hella ha già visto il pattern al Boschetto fuori Dauth, **se** ha completato quella sub-quest).
+- **Sapienza Religiosa CD 22 (Saraah o Hella):** è connessa alla **Mother of Fungi** — una potente entità aberrante del sottosuolo associata a **Sonjak** (Drow Cleric Matrona, vedi `state.md` §2). I drow di Sonjak hanno **piantato un seme** sotto il Cerchio.
+- **Cosa Saraah chiede:** *"Devo trovarlo prima che si schiuda. Hella, **sai cosa cercare**? Vieni con me sotto, dopo questo rito. Solo tu e me."*
+- **Effetto opzionale:** Hella scende con Saraah sotto la Quercia Vecchia (pozzi sotterranei naturali). **Encounter:** EL 11 — 2 Fungal Crawler giovani (CR 5 ciascuno) + 1 Drow Necromancer (CR 7) che sta innaffiando il seme. Sconfiggerli **purifica il Cerchio** prima del rito di Hella → Sacred Forest ritual riceve **+2 al bonus base** (la Ghianda di Lythiel raddoppia di efficacia: –6 alle CD invece di –4).
+
+#### Visione 3 (opzionale, se Saraah spinge il rito al massimo)
+- **Vivido:** una **città in fiamme** vista dall'alto. **Stendardi del Red Hand** marciano fra le rovine. La città è piccola, fortificata. Hella riconosce **stemmi nani sui portali**.
+- **Saraah:** *"Una città è caduta. Fra cinque o sei giorni. Non capisco se è già successo o sta per succedere. La visione del Cerchio è imprecisa."*
+- **Conoscenze (Geografia/Storia) CD 18 (Hella o un PG):** la descrizione corrisponde a **Talar** (saccheggiata Day 21 secondo il calendario canonico — vedi `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md`). Quindi la visione mostra qualcosa **già accaduto 4 giorni fa** ma di cui i druidi non sapevano.
+- **Implicazione:** la cintura di insediamenti tra Hammerfist e Dauth **sta cadendo**. Refugees in fuga (vedi `Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md`) verranno incontrati durante il viaggio.
+
+### 2.5.3 Costo del rito
+
+- Saraah paga **1 livello caster temporaneo** (Druid 13 → 12 per 24 ore). Lo accetta.
+- Hella, per partecipare: **1d3 Sag temporanea** (recuperabile con riposo di 24h o Restoration). Hella paga volentieri se chiede info specifiche.
+- I 4 druidi anziani: **affaticati** per il resto della giornata.
+
+### 2.5.4 Cosa cambia per il party
+
+| Decisione | Conseguenza |
+|---|---|
+| Hella accetta il rito di Saraah | Le 3 visioni (Rhest, Mother of Fungi, Talar) sono date al party |
+| Hella + party scendono sotto la Quercia per Mother of Fungi | EL 11 encounter; purificazione → Sacred Forest ritual +2 bonus aggiuntivo |
+| Party ignora Mother of Fungi | Spora rimane; Hella's ritual ha solo Acorn bonus standard |
+| Party prende sul serio Rhest | Possibile diversione tra Sacred Forest e Dauth/Tower (3 giorni extra) → costa tempo, ma scaglia avanti l'arco P2 (Rhest sub-arc) |
+| Party ignora Rhest | Saarvith cavalca al Rethmar Phase 1 con dragonrider corps integro (Saarvith Clock 3/8 si riempie senza opposizione) → +1 CR effettivo ondata draconica |
+
+---
+
+## 3. Cosa cambia se i due hook arrivano coerenti
+
+Se Hella ha sia la Ghianda (Lythiel) sia la cenere (Tempestas), il DM può preparare:
+
+- **Una scena introspettiva al Giorno 22 notte** (slot tra le due fasi). Hella mette la Ghianda sopra la cenere e **sente per un istante la voce di Saraah** in lingua druidica. Dura 2 secondi. Saraah dice: *"Vieni o lascia. Non si rimanda."* Effetto: Hella ottiene **+1 al primo tiro di Concentrazione** del rituale (gift narrative).
+- **Una scena con Tempestas e Lythiel insieme** (improbabile — Lythiel è già partita) può essere **giocata via lettera**: Lythiel ha lasciato un **messaggio breve** sul gufo che lo riporterà a Saraah: *"Il mezzelfo della tempesta è vivo. Conferma che il Cerchio brucia. Vado avanti."* Tempestas riconosce l'inchiostro e lo consegna a Hella. Conferma il pattern: tutti convergono sullo stesso punto.
+
+---
+
+## 4. Echi a lungo periodo
+
+> Per la fonte autoritativa completa: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §8.
+
+Sintesi:
+
+| Decisione di Hella | Eco al Sacred Forest | Eco a Rethmar |
+|---|---|---|
+| Ghianda accettata + Via A (veloce) | Saraah viva; rituale CD –4; reinforcement druidico a Rethmar | +1 squadrone (Lythiel) Phase 1 |
+| Ghianda accettata + Via B (lenta) | Saraah viva ma 4 nodi caduti; rituale CD –4 ma Cos rigenerata –1 | reinforcement druidico ridotto |
+| Ghianda accettata + Via C (rifiuta) | Cerchio cade; rituale impossibile | Mother of Fungi +2 Clock; Phase 0 +1 difficoltà |
+| Ghianda rifiutata | Cerchio severo; rituale CD +4 | Nessun reinforcement druidico |
+| Lythiel ringraziata sinceramente | — | Lythiel + 2 ranger arrivano in difesa Phase 1 |
+
+---
+
+## 5. Note tonali per il DM
+
+- **Lythiel parla poco.** Non riempire i silenzi a forza. Se Hella non parla, Lythiel non insiste.
+- **Tempestas è gentile, ma fragile.** Non farne un super-eroe. La sua urgenza nel consegnare la cenere è in parte **paura personale**: lui sa che il Sacred Forest è importante per Brenna Sorvane (sua patrona) ma anche per qualcosa di più grande della politica.
+- **La Ghianda non è oggetto magico standard.** È **un permesso del Cerchio**. Se Hella la perde, la usa male, o la regala, il Cerchio se ne accorge entro 24 ore.
+- **La cenere bianca** è un elemento sensoriale. Descrivila col profumo (muschio bagnato, fumo dolce). Se i giocatori la annusano, descrivila come "la primavera di un anno fa".
+- **Se Hella accetta lo Shadow Walk**: descrivi il Piano d'Ombra come una passeggiata su un sentiero che gli alberi guardano in silenzio. Non un orrore. Una **ferita di natura**, non una caverna infernale.
+
+---
+
+## 6. Cross-link
+
+- **Master reference**: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md`
+- **Lythiel PNG**: `PNG/Lythiel/Lythiel.md`
+- **Tempestas PNG**: `PNG/Tempestas/Tempestas.md`
+- **Sacred Forest quest (P1A timeline)**: `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md`
+- **Sacred Forest battle (P1C ritual)**: `Arco-Post-Hammerfist-P1C-Rituale-COMPLETO-SCALE.md`
+- **Hella PG card**: `skills/rumblingstone-campaign/references/campaign-party.md` Hella section
+- **Sister hook (Tournament arc — Hella's `boschetto morente` subquest)**: `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md`

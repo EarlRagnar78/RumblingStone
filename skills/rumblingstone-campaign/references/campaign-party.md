@@ -1,6 +1,6 @@
 # The Rumbling Stone — Party Reference (D&D 3.5)
 
-Campaign: RumblingStone (Red Hand of Doom adaptation, Cannath Vale / FR 1372 DR)
+Campaign: RumblingStone (Red Hand of Doom adaptation, Cannath Vale / Forgotten Realms 1372 DR)
 Current party level: **13** | Party size: **4 PCs**
 
 ---
@@ -31,11 +31,11 @@ Current party level: **13** | Party size: **4 PCs**
 - Resurrected through divine intervention, bonded with Aegis Fang
 - Passed the Trial of the Deep Hall to wear the Corona di Adamantio
 - Led the party through the Eternal Forge portal quests
-- Not yet sacrificed 2 perm HP for Hella's resurrection ritual
+- Not yet sacrificed 2 permanent HP for Hella's resurrection ritual
 
 **Combat Notes:**
 
-- Extremely high AC (heavy armor + shield + Corona deflection bon +2)
+- Extremely high AC (heavy armor + shield + Corona deflection bonus +2)
 - Aegis Fang synergizes with Corona (becomes +4 Sacred Returning Dwarven Waraxe after full awakening)
 - Crown grants Stone's Awareness (+1 morale attack/damage on natural ground), True Seeing 1/day
 - With full gem activation: time travel (1/month), earthquake control (1/week), dwarven might buff (1/week)
@@ -44,7 +44,7 @@ Current party level: **13** | Party size: **4 PCs**
 
 ### Tordek Durinheart — Dwarf Fighter 4 / Monk 9 (The Skirmisher)
 
-**Role:** mel DPS, mobility, trap handler (via high saves)
+**Role:** Melee DPS, mobility, trap handler (via high saves)
 **Race:** Shield Dwarf (male)
 **Alignment:** Lawful Neutral
 **Fighting Style:** Unarmed combat — **jump + charge + flying kick + Power Attack** combo for devastating single-target damage
@@ -60,7 +60,7 @@ Current party level: **13** | Party size: **4 PCs**
 - Currently completing the Trial of the Deep Gallery (Earth Node, Forest of Living Crystal)
 - Sacrificed 500 XP for Hella's resurrection ritual
 - Closest companion to Hella (romantic bond implied)
-- **Upcoming — Tournament at Dauth:** Dragon Ball / Naruto-style martial arts tournament (3 days). Features the **Orbe delle Otto Porte** (Orb of Eight Gates) — a scenic artifact with chakra gate mechanics: each gate grants +2 STR/DEX morale and +2 saves for 1 round but costs cumulative 1d4 CON temp damage + fatigued. Culminates in a **Githyanki Red Dragon aerial attack** that interrupts the finale. Tordek gains **chakra enlightenment** (7 soul gates of jujitsu combat, Naruto-inspired spiritual martial awareness).
+- **Upcoming — Tournament at Dauth:** Dragon Ball / Naruto-style martial arts tournament (3 days). Features the **Orbe delle Otto Porte** (Orb of Eight Gates) — a scenic artifact with chakra gate mechanics: each gate grants +2 STR/DEX morale and +2 saves for 1 round but costs cumulative 1d4 CON temporary damage + fatigued. Culminates in a **Githyanki Red Dragon aerial attack** that interrupts the finale. Tordek gains **chakra enlightenment** (7 soul gates of jujitsu combat, Naruto-inspired spiritual martial awareness).
 - Key tournament opponents: Tetsu "Serpente di Vento" (Monk 12), Grandmaster Rihan (Monk 14), Thrain Ironfist (Dwarf Fighter 13), Grom Skullcrusher (Barbarian 14)
 
 **Combat Notes:**
@@ -70,7 +70,7 @@ Current party level: **13** | Party size: **4 PCs**
 - **Salto Infuocato** (Inferno Leap, 3/day): explosive jump attack dealing 2d6 fire on landing
 - Dragon Bane property on unarmed strikes (+2 attack, +2d6 vs. dragons)
 - Fire Resistance 10, DR 5/adamantine (after Earth awakening)
-- +10 competence bon to Jump checks (passive from Bracieri)
+- +10 competence bonus to Jump checks (passive from Bracieri)
 - **The party uses Tordek's high Monk saves to handle traps** (no rogue in the party)
 
 ---
@@ -91,7 +91,7 @@ Current party level: **13** | Party size: **4 PCs**
 - +2 CON, −2 DEX (same as Gold Dwarf mechanically)
 - **Darkvision 90 ft** (extended, not standard 60 ft)
 - **Earth Dream**: Innate meditative connection to the collective subconscious of the earth — Dream Dwarves spend time in deep contemplation, perceiving the world as a resting giant of immense power
-- **Earth Connection**: +2 racial bon on Diplomacy checks with creatures of the Earth subtype
+- **Earth Connection**: +2 racial bonus on Diplomacy checks with creatures of the Earth subtype
 - **Intuition**: Senses approximate depth underground naturally (like sensing which way is up)
 - Stonecunning, Stability (+4 vs bull rush/trip), Weapon Familiarity (waraxe, urgrosh as martial)
 - Speed 20 ft (not reduced by armor/load)
@@ -100,7 +100,7 @@ Current party level: **13** | Party size: **4 PCs**
 **Ranger 1 Class Features:**
 
 - **Favored Enemy: Aberrations +2** — chosen after early Underdark encounters; +2 Bluff/Listen/Sense Motive/Spot/Survival and +2 weapon damage vs aberrations
-- **Track**: bon feat (Track) — represents her origin as a tracker before becoming a druid
+- **Track**: Bonus feat (Track) — represents her origin as a tracker before becoming a druid
 - **Wild Empathy**: Stacks with Druid Wild Empathy (total class levels + CHA mod)
 - **Character arc significance**: Hella started as a tracker/survivalist (Ranger) who learned to *follow* the natural world before she learned to *protect* it (Druid). The Ranger level represents her pragmatic, grounded roots.
 
@@ -124,13 +124,13 @@ Current party level: **13** | Party size: **4 PCs**
 - Augment Summoning + Natural Spell + Power of Nature for powerful summons while wild-shaped
 - Animal companion: Advanced Brown Bear (corteccia parziale from Treant affinity)
 - Nymeria (supernatural companion): Magical Beast with DR 5/Adamantine, Tremorsense 18m, telepathic link with Hella within 18m
-- CL: **12** (Druid only; Ranger 1 does not add to druid CL)
+- Caster level: **12** (Druid only; Ranger 1 does not add to druid CL)
 
 ---
 
 ### Artemis — Human Warlock 13 (The Arcane Striker)
 
-**Role:** Arcane damage, utility, rng combat, knowledge
+**Role:** Arcane damage, utility, ranged combat, knowledge
 **Race:** Human (male)
 **Alignment:** Chaotic Neutral
 **Fighting Style:** Eldritch Blast + Ring of Chaotic Illumination powers
@@ -154,7 +154,7 @@ Current party level: **13** | Party size: **4 PCs**
 - Wings of Shadow (fly 60 ft, at-will), Shadow Step (teleport 60 ft, every 5 rounds)
 - Light of Lathander (1/day): Daylight + morale buff allies, debuff light-sensitive enemies
 - Shadow of Mask (1/day): Greater Invisibility on self + 1 ally
-- Unity's Gift (1/day): Grant ally an extra StdA
+- Unity's Gift (1/day): Grant ally an extra standard action
 - Firestorm Invocation (1/day): 8d6 fire AoE, allies immune
 - Knowledge (Arcana) +8, Knowledge (Religion) +8 from Ring
 
@@ -166,7 +166,7 @@ Current party level: **13** | Party size: **4 PCs**
 
 The Rumbling Stone has **no rogue**. They handle challenges through:
 
-- **Trap detection/bypass:** Tordek's high Monk saves (Ref/Will) — they trigger traps and rely on saving throws rather than disabling
+- **Trap detection/bypass:** Tordek's high Monk saves (Reflex/Will) — they trigger traps and rely on saving throws rather than disabling
 - **Arcane needs:** Artemis (Warlock) — limited but effective; Ring provides utility (invisibility, vision, teleport)
 - **Divine power:** Hella (Druid) — healing, restoration, summons, utility spells
 - **Tank mode:** Thorik draws aggro; Tordek flanks as skirmisher
@@ -218,7 +218,7 @@ After the destruction of Drellin's Ferry (where Thorik died and was resurrected)
 
 ### Return to RHoD Mainline (Arcs 08–09, Level 13+)
 
-1. **08_La Battaglia Di Hammerfist** — Mass combat at Hammerfist (adapted RHoD battle mechanics) - Using time shift before the events of 7.5 and some other png moved by to make it more interesting and make the battle result impactful to 7.5. that is the **08_La Battaglia Di Hammerfist** will be played by png guided by players and the event and victory or defeat will be impactful to 7.5 section arrival. after the 7.5 section arrival the players will be back to the present and will have to deal with the consequences of their actions as png.
+1. **08_La Battaglia Di Hammerfist** — Mass combat at Hammerfist (adapted RHoD battle mechanics) - Using time shift before the events of 7.5 and some other png moved by to make it more interesting and make the battle result impactful to 7.5. that is the **08_La Battaglia Di Hammerfist** will be played by png guided by players and the event and victory or defeat will be impactful to 7.5 section arrival. after the 7.5 section arrival the players will be back to the present and will have to deal with the consequences of their actions as png.  
 
 1. **09_Continuazione Arco Narrativo** — Post-Hammerfist: 3 personal quests + Battle of Rethmar (planned)
 

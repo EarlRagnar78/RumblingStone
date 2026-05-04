@@ -42,7 +42,8 @@ The party has no rogue. They handle traps via Tordek's high Monk saves, arcane u
 - The party begins on the Dawn Way. The Red Hand horde invades Cannath Vale.
 - **Drellin's Ferry Assault:** The town is attacked and ultimately destroyed by the horde.
 - **Thorik dies** defending Drellin's Ferry. He is resurrected through divine intervention of Moradin and bonds with the artifact **Aegis Fang** (a dwarven waraxe adapted from FR lore).
-- Source files: `00_Red Hand Of Doom/`, `PG/Artefatti/Artefatti-Pg/Aegis Fang/`
+- **Capitana Lorana's garrison falls** during the same opening assault wave. The party meets Lorana there for the first time. **A travelling half-elf bard, Maestro Tempestas (canonized 2026-05-04)**, is caught in the assault while passing through on diplomatic business for Rethmar. He uses *Shadow Walk* and *Sleep* to help the party + Lorana evacuate ~23 civilians from a collapsing district. Tempestas considers himself in **lifelong debt** to the party from this moment. He reappears as a recurring messenger NPC in Arc 09 (post-Hammerfist hooks). See `PNG/Tempestas/Tempestas.md`.
+- Source files: `00_Red Hand Of Doom/`, `PG/Artefatti/Artefatti-Pg/Aegis Fang/`, `PNG/Lorana/Lorana.md`, `PNG/Tempestas/Tempestas.md`
 
 ### Phase B: Hammerfist Hills & The Quest for the Corona (Levels 6–8)
 
@@ -248,7 +249,7 @@ The party descends through a chain of connected underground locations:
 **Epilogue — L'Eredità della Battaglia:**
 
 - Hammerfist rebuilt with draconic steel (from Fauci di Palude's scales)
-- 210 axes planted blade-up as memorial (Cerimonia delle Asce)
+- **Cerimonia delle 100 Asce** (Day 21 post-Hammerfist, canonical closing event of Arc 08): Re Thorek formally honors the 210 dead with 100 ceremonial adamantine axes (one per unit/notable warrior), pronounces all 210 names with elder cantillation, and concludes with the Giuramento delle 90 (the surviving 90 + 9 of Drellin's Ferry + 92 from prior months). The 4 PCs are publicly recognized as **Custodi Eterni** with rune di pietra di adamantio. Three external visitors arrive coordinated but discreet: **Maestro Tempestas** (Rethmar intelligence agent, brings Brenna Sorvane's private letter to Thorik + intel exchange mission), **Capitana Lythiel** (Sacred Forest druid-ranger, presents Saraah's Acorn of the Circle to Hella post-cerimonia). During Atto 3 of the rite (rune handover), **Artemis's Ring of Chaotic Illumination vibrates** — Zalkatar at the Invisible Tower is preparing the monthly relocation; the Ring senses its previous owner. **Lathander + Mask** subsequently appear in Artemis's dream (Notte 22-23) revealing Zalkatar's identity (3-century ex-cleric of Mask turned Mind Flayer by choice) and movente (lettura sperimentale, not killing). Detail file: `08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md`. **Tordek's Tournament invitation does NOT arrive at the Cerimonia** — it arrives later at the Sacred Forest from **Sorella Maewen** (Confraternita Monastica di Dauth, see `PNG/Maewen/Maewen.md`).
 - Fauci di Palude alive = future threat hook
 - Red Hand remnants may seek revenge
 - Re Thorek names PCs "Custodi Eterni di Hammerfist"

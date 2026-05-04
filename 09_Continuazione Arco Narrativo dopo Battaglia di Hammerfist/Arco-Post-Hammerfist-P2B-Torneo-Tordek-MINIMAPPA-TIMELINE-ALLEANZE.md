@@ -16,8 +16,9 @@ Percorso del PG, nemici iconici e alleanze improvvise
 - PG vs Kael (rogue/monk agile).
 - Scopo: mostrare superiorità del PG sui concorrenti “normali”.
 - Orbe: demo Porta 1, 1 uso gratuito senza danno Cos.
+- **Trigger speciale:** prima apertura della Porta 1 → **Visione Githyanki “Eco delle Fenditure”** (vedi `PARTE1-Giorno1-Preliminari`). Cavalieri Githyanki su draghi rossi assediano una città-fortezza per recuperare un’Orbe identica a questa. Foreshadowing della Fase 3 del Giorno 3.
 
-> Nota scena: Tetsu e Lady Koryn visibili nel pubblico, studiano il PG.
+> Nota scena: Tetsu e Lady Koryn visibili nel pubblico, studiano il PG. Tordek (organizzatore) nota la breve assenza del PG e a fine match domanderà cosa ha visto.
 
 ---
 
@@ -48,6 +49,11 @@ Percorso del PG, nemici iconici e alleanze improvvise
 
 - Arena Specchi/Nebbia.  
 - Arena Colonne Fluttuanti.
+
+**Iscrizione tardiva (mattina Giorno 2):**
+
+- Si presenta al bracket un nuovo finalista: **“Kethran Mano di Pietra”** (umano monaco, mascherato per “voto di anonimato”). In realtà è **Sethrax il Velato**, Mind Flayer **emissario di Zalkatar dalla Torre Invisibile** — vedi `PARTE2 – Mattina` e `STATBLOCCHI-COMPLETO` voce 10.
+- DM secco: 1–2 indizi a round (PG che non bevvono nessun occhio, Orbe che lampeggia di bianco diverso, allievo che non sbatte mai gli occhi). Smascheramento facoltativo prima del Giorno 3.
 
 ---
 
@@ -93,9 +99,9 @@ Percorso del PG, nemici iconici e alleanze improvvise
 **Fasi principali:**
 
 1) Duello PG vs Grandmaster Rihan.  
-2) Invasione Illithid (Xal’thor, Zarim, schiavi psionici).  
-3) Arrivo dei Githyanki su draghi rossi → alleanza momentanea.  
-4) Assalto congiunto per distruggere il nucleo psionico e salvare l’Orbe.
+2) **Doppio reveal: invasione Illithid di Xal’thor + smascheramento di “Kethran” → Sethrax il Velato** (emissario rivale di Zalkatar). Triangolo a 3 fazioni: Xal’thor / Sethrax / PG.  
+3) Arrivo dei Githyanki su draghi rossi (Vaereth) — ora la “visione” del Giorno 1 si realizza letteralmente. Quarta fazione, ostile a entrambi gli Illithid.  
+4) Assalto congiunto per distruggere il nucleo psionico e salvare l’Orbe; sorte di Sethrax = sorte di Artemis nella Torre Invisibile (P2A).
 
 ---
 
@@ -112,13 +118,15 @@ Percorso del PG, nemici iconici e alleanze improvvise
 
 ---
 
-### Fase 2 – Caos Illithid (Xal’thor & Zarim)
+### Fase 2 – Caos Illithid (Xal’thor & Zarim) + Smascheramento di Sethrax
 
 - Il portale psionico si apre sopra l’Orbe.
+- **Doppio reveal istantaneo:** la pressione psionica di Xal’thor sovraccarica il *Disguise Self* di Kethran → Sethrax appare in piena forma Mind Flayer a bordo arena. Pubblico in panico, le fazioni illithid si studiano, capiscono di **non essere alleate**.
 - Nemici:
   - Zarim “Collezionista di Cervelli” come mini‑boss iniziale.
   - Schiavi psionici e thugs dominati.
   - Xal’thor entra in Fase 1–2 (dominio/ Mind Blast, proiezioni).
+  - **Sethrax il Velato** (CR 12, vedi `STATBLOCCHI-COMPLETO` voce 10): NON è un nemico “puro” del PG. Tenta di **estrarre un seme di Porta** dall’Orbe (azione di canalizzazione) e poi *Plane Shift* verso la Torre Invisibile. Combatte Xal’thor preferenzialmente.
 
 - PG + Rihan collaborano:
   - Rihan: tiene a bada ondate e protegge civili.
@@ -223,18 +231,29 @@ Possibili esiti:
 1. Giorno 1:
    - Dimostra talento superiore, attira lo sguardo di Tetsu/Rihan/Tordek.  
    - Scopre la Porta 1 (e la fatigue).
+   - **Riceve la Visione Githyanki “Eco delle Fenditure”**: foreshadowing dei cavalieri-draghi del Giorno 3.
 
 2. Giorno 2:
    - Sconfigge illusionisti (Mistress + Koryn).  
    - Supera i “muri” fisici (Ironclad + Kragar/Shen).  
    - Sperimenta Porta 2 (e forse intravede Porta 3).
+   - **Incontra (e potenzialmente smaschera)** il finalista misterioso “Kethran Mano di Pietra” = **Sethrax il Velato**, emissario di Zalkatar dalla Torre Invisibile.
 
 3. Giorno 3:
    - Duella da pari con Rihan (porta 3).  
-   - Viene travolto nel conflitto Illithid vs Githyanki.  
+   - Viene travolto nel conflitto **Illithid vs Illithid vs Githyanki** (Xal’thor, Sethrax, Vaereth).  
    - Si allea con Tetsu **“vero”** e con Vaereth + drago rosso.  
+   - Decide se fermare Sethrax (impatta direttamente l’arco di Artemis alla Torre Invisibile).  
    - Usa (o rifiuta di usare) Porta 4 per distruggere Xal’thor/nucleo.  
    - Decide il destino dell’Orbe con/contro i Githyanki.
+
+---
+
+## 6. Cross-arco: il Torneo come trampolino per la Torre Invisibile (Artemis – P2A)
+
+> **Fonte autoritativa della tabella esiti: `PNG/Sethrax_il_Velato/Sethrax.md` → "ESITI E IMPATTO CROSS-ARCO".** In caso di conflitto vince la PNG card.
+
+In sintesi: l’esito di Sethrax al Torneo (ucciso, catturato, fuga, fuga col seme) modifica il CR effettivo del finale di Artemis alla Torre Invisibile. Tordek e Artemis convergono narrativamente: l’Orbe del Torneo e la Torre Invisibile sono **due nodi della stessa cospirazione planare**.
 
 ---
 

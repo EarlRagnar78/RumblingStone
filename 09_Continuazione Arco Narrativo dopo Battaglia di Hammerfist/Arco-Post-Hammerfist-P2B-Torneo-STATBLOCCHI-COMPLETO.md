@@ -186,6 +186,85 @@ Tutti i valori sono pensati per un party di livello 11–12. Adatta leggermente 
 
 ---
 
+## 10. Sethrax il Velato – Mind Flayer / Psion 5 / Telepath – CR 12
+
+> **Fonte autoritativa: `PNG/Sethrax_il_Velato/Sethrax.md`.** Questa voce è un riassunto da tavolo per i numeri di combattimento; per **trigger di smascheramento, limiti dei poteri psionici e tabella esiti cross-arco** consulta sempre la PNG card. In caso di conflitto vince la PNG card.
+
+**Identità di copertura al Torneo:** *Kethran “Mano di Pietra”*, monaco errante umano (Monk 11 finto).
+**Identità reale:** Mind Flayer adulto, **emissario diretto di Zalkatar** (Illithid Warlock Drow, Torre Invisibile, arco P2A).
+**File correlati:** `PNG/Sethrax_il_Velato/Sethrax.md`, `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE2/PARTE3-*.md`, `Arco-Post-Hammerfist-P2A-Torre-PARTE4-FINALE-Boss-Zalkatar.md`.
+
+### Statblocco reale (sotto la maschera)
+
+- Taglia/Tipo: Aberrazione Medio (Mind Flayer).
+- DV: 8d8 + 5d4 + 26 (pf medi 70).
+- Iniziativa: +5 (+1 Des, +4 Improved Initiative).
+- Velocità: 9 m.
+- CA: 22 (10 base, +1 Des, +3 Armatura [tuta psicoadattiva], +4 Naturale, +4 Deflessione [scudo psionico passivo, swift action 3/giorno]).
+  - Touch 15 / Flat-footed 21.
+- BAB/Grapple: +7 / +8.
+- Attacchi (forma reale rivelata):
+  - 4 Tentacoli +9 (1d4+1 ciascuno; se 4 colpiscono lo stesso bersaglio → grapple → estrazione cervello al round successivo, TS Tempra CD 18 o morte).
+  - In forma “Kethran”: pugno senz’armi +12/+7 (1d8+3) — danno medio per simulare un Monk 11 (in realtà i tentacoli incappucciati eseguono i colpi).
+- Caratteristiche: For 12 (+1), Des 12 (+1), Cos 14 (+2), **Int 20 (+5)**, Sag 17 (+3), Car 15 (+2).
+- TS: Temp +5, Rif +5, Vol +11.
+- RI 21.
+- Abilità chiave: Bluff +12, Conoscenze (arcane, planari, dungeoneering) +18 ciascuna, Camuffare +14 (+22 con *Disguise Self* psionico), Diplomazia +12, Percezione (Ascoltare/Osservare) +14, Psicocrafting +18.
+- Talenti: Improved Initiative, Combat Casting, Psicocrafter, Inner Strength, Iron Will.
+
+### Capacità speciali
+
+- **Mind Blast** (Su, iconico Illithid): cono 18 m, 1d4 round storditi, TS Volontà CD 17, ricarica 1d4 round.
+- **Detect Thoughts** (Su, sempre attivo entro 18 m, **filtrato** in modalità covert: il bersaglio percepisce solo un vago disagio invece della pressione mentale tipica).
+- **Disguise Self psionico** (Su, sempre attivo, manifestazione gratuita): aspetto umano realistico. Annullato istantaneamente se subisce 30+ danni in un singolo colpo, se il *Disguise* viene investito da *True Seeing* / *Greater Dispel Magic* CL 11+, o se l’Orbe delle Otto Porte viene aperta a Porta 3+ entro 9 m.
+- **Slave Psionico (allievo)**: lo accompagna sempre. È un monaco umano (Adept 1) con cervello già parzialmente cerebromorfizzato — funge da “voce” per Sethrax e da bersaglio sacrificabile. Statistiche pari a un Adept 1 (PF 6, AC 12, parla con voce piatta).
+
+### Poteri psionici (5° livello, PP 33)
+
+- *Charm Monster* (Vol CD 17), 3/giorno — usato in arena travestito come “Stunning Fist” mentale.
+- *Suggestion* (Vol CD 16), 3/giorno.
+- *Mental Barrier* (+4 CA come azione immediata), 3/giorno.
+- *Psionic Dimension Door*, 3/giorno — fuga rapida.
+- *Psionic Plane Shift*, 1/giorno — fuga di emergenza verso la **Torre Invisibile** (questo è il dettaglio che dà il primo indizio chiave ad Artemis).
+- *Detect Thoughts*, *Concealing Amorpha*, *Force Screen* — utility.
+
+### Statblocco di copertura (durante incontri pubblici, prima dello smascheramento)
+
+Quando Sethrax combatte come “Kethran Mano di Pietra” senza svelarsi, usa **questi numeri ridotti** per credibilità (Monk 11 generico):
+- PF 70 (uguali, ma narrativamente “regge da monaco”).
+- CA 24 (10 base, +5 Des “simulato”, +3 Sag, +1 Dodge, +4 bonus monaco, +1 Mental Barrier passivo).
+- BAB +8/+3 (finto), Unarmed +13/+8 (1d10+3) — tentacoli camuffati come pugni.
+- TS finti annunciati: Temp +9, Rif +11, Vol +9 (i Volontà reali sono +11, ma li dichiara come Sag-driven da monaco).
+- **Non usa Mind Blast.** Non usa tentacoli visibili. Non usa estrazione cervello.
+
+### Trigger di smascheramento (priorità per il DM)
+
+1. **Automatico:** quando Xal’thor apre il portale psionico (Round 7 del Giorno 3, vedi `PARTE3`).
+2. Manuale: PG infligge 30+ danni singoli, o usa *True Seeing*, o usa Porta 3+ dell’Orbe entro 9 m.
+3. Investigativo: combinazione di indizi del Giorno 2 (vedi `PARTE2 – Mattina` per la lista).
+
+### Tattiche di combattimento (forma reale rivelata)
+
+- **Round 1 post-reveal:** *Mental Barrier* su sé stesso, poi *Psionic Dimension Door* fino al piedistallo dell’Orbe → tenta estrazione del “seme di Porta” (azione standard, prova Use Magic Device CD 25 + 1d6 round di canalizzazione).
+- **Round 2:** se interrotto, lancia Mind Blast — ma **non** sul party del PG monaco se questo sta bene combattendo Xal’thor. Preferisce coni che colpiscano **anche schiavi di Xal’thor** (alleato di convenienza).
+- **Round 3:** se sotto il 30% pf o se ha estratto il seme → *Psionic Plane Shift* verso la Torre Invisibile. Richiede 1 round di canalizzazione (vulnerabile a counterspell / readied attack).
+- **Mai** combatte fino alla morte. Sethrax è un **agente**, non un fanatico. Si arrende se ridotto a 1 pf da un colpo non letale (utile per la cattura → grosso indizio per Artemis).
+
+### Frasi (telepatiche)
+
+- Smascheramento forzato: *“Non oggi, fratello del cielo. Non per la tua flotta sciatta. Quest’Orbe ha un padrone più paziente.”*
+- A Tordek mentre tenta di toccare l’Orbe: *“Tu apri le sue porte come un bambino apre un giocattolo. Io le studio. Differenza filosofica, vorrei spiegartela. Ma il tempo manca.”*
+- Al PG monaco se riceve aiuto contro Xal’thor: *“Considera questo un acconto. La Torre paga sempre i suoi debiti — di solito in scoperte di anatomia.”*
+- Prima di *Plane Shift*: *“Il Padrone vorrà conoscere il vostro nome. E poi il resto.”*
+
+### Note per il Master
+
+- Sethrax è il **gancio narrativo** che **collega l’Arco P2B (Tordek/Torneo) all’Arco P2A (Artemis/Torre)**. Il suo destino al Torneo determina la difficoltà dell’incontro finale di Artemis con Zalkatar.
+- È deliberatamente **CR 12** (sotto Xal’thor CR 14 e Zalkatar CR 13): è un emissario, non un boss. Va trattato come **scena tattica + indizio**, non come scontro definitivo.
+- Tono: Sethrax è **lucido, sarcastico, professionale**. Opposto del fanatismo militare di Xal’thor. Aiuta a far sentire ai PG che il “mondo Illithid” non è monolitico — diversi conclavi vogliono cose diverse, e i PG sono dentro a una guerra per procura.
+
+---
+
 ## 8. Swarm di Pseudodraconici Gith (opzionale, caotico)
 
 Per la fase di massimo caos, puoi usare uno *swarm* personalizzato:

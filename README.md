@@ -30,9 +30,19 @@ The core heroes of the campaign (Detailed in `PG/`):
 
 ### PNG (NPCs & Villains)
 Important non-player characters and antagonists (Detailed in `PNG/` and `campaign/npcs/`):
-- **Maestro Varis "Seta-Argento"**: Opportunistic planar merchant.
+- **Maestro Varis "Seta-Argento"**: Opportunistic planar merchant, urban broker in Rethmar, CR 6.
 - **Conte Valerius**: Nobility entangled in funding the enemy, demanding social/political finesse to defeat.
-- **Il Collezionista (Rakshasa)**: A deadly collector of rare artifacts and secrets.
+- **Il Collezionista (Rakshasa)**: A deadly collector of rare artifacts and secrets, the shadow mastermind, GS 17–19.
+- **Salvatore "Sal" della Luna d'Argento** (`PNG/Salvatore/`): Temporal spy and soul-harvester. Flamboyant desert merchant, secretly "Vatore" who witnessed the PCs at Hammerfist -1000 DR. Bard 8/Sublime Chord 1/Spy 5, GS 14. Supplies living statues to Varis. Introduced Day 28–32, Arc 09 P2C.
+- **Azarr Kul** (`PNG/Azarr_Kul/`): High Wyrmlord of Tiamat. Half-Blue-Dragon Hobgoblin, Cleric 10/Fighter 4, GS 15. Commands the Red Hand horde; rides Tyrgarun (Ancient Blue Dragon CR 20). Boss of Rethmar Phase 3.
+- **Sonjak / Matrona Sajak** (`PNG/Sonjak/`): Drow Cleric Matrona. Cleric 10/Matrona 3, GS 13. Commands underground Drow forces in Cannath Vale; Sal's employer on the surface. Clock 4/8 — triggers Phase 0 Night of the Drow.
+- **Conte Valerius** (`PNG/Conte_Valerius/`): Political villain. Expert 4/Aristocrat 4. Legally finances the Red Hand horde through "patriotic emergency loans." Cannot be defeated in combat — requires political/investigative approach. Clock 2/8.
+- **Maestro Varis "Seta-Argento"** (`PNG/Varis_Seta_Argento/`): Urban broker in Rethmar. Rogue 4/Expert 4, CR 6. Knowingly sells petrified living creatures as artwork. Potential ally for Artemis; key link in the statue supply chain. Distinct from Sal (who is the field agent/supplier).
+- **Ghostlord / Arcano Zeth il Murato** (`PNG/Ghostlord/`): Druidic Lich of the Thornwaste. Druid 13/Lich, GS 13. Ancient master builder of Hammerfist, tricked into lichdom. Ally or enemy depending on party choices; Hella's key NPC. Holds 20 spectral lions as potential reinforcements at Rethmar.
+- **Xal'thor** (`PNG/Xal_thor/`): Illithid Githyanki Commander. Psion 6 (effective GS 14). Targets Tordek's Bracieri as planar keys to the Eternal Forge. Fixed trigger: attacks Dauth Tournament Day 3 regardless of party action. Potential wildcard at Rethmar if not stopped.
+- **Therysol** (`PNG/Therysol/`): Tiefling Half-Dragon, former Underdark merchant, hunting Il Collezionista. Ally NPC, GS 9.
+- **Capitana Lorana** (`PNG/Lorana/`): Secondary NPC, GS 7. Fighter 6/Expert 2. Survivor of the initial Red Hand attack (Arc 00), led ~800 refugees to Rethmar. Non-official Council voice; her field intel is worth -1 CR to Phase 1 if shared with Thorik. Key reconnection NPC for all four PCs.
+- **Consiglio di Rethmar** (`PNG/Consiglio_Rethmar/`): 7-member political body (Lady Kaal, Halveth, Jarmaath, Sorvane, Pyriel, Thornwall, Lorana). Default vote = surrender without party intervention. Three council sessions (Day 30/33/35) with concrete battle impact on all Rethmar phases. Halveth active during Phase 0 → +1 CR (drow know temple layout).
 
 ## Repository Layout & Agent Support
 
@@ -49,7 +59,7 @@ This campaign uses a **Reactive State Machine Design**. It emphasizes severe con
 ## Setup Instructions
 
 1. Clone the repository to your local machine.
-2. If using AI Agents (Claude Code, Cursor, Windsurf), run `./scripts/deploy-skills.sh` to install the `dnd-35-rules` skill to your user-level paths.
+2. If using AI Agents (Claude Code, Cursor, Windsurf), run `./scripts/build-skills.sh` to build per-agent skill packages and deploy them to your user-level paths. Per-agent mirrors are not committed to git — regenerate them locally.
 3. Review `AGENTS.md` to understand campaign conventions and agent instructions.
 
 ## Licensing Information

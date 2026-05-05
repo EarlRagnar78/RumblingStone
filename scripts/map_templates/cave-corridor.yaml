@@ -1,0 +1,31 @@
+name: Cave Corridor
+environment: cave
+type: corridor
+size: 24x10
+legend:
+  "#": "Cave wall (solid rock)"
+  ".": "Cave floor (rough but passable)"
+  "^": "Stalagmite (cover +4, difficult terrain)"
+  "o": "Rubble (difficult terrain)"
+  "~": "Pool (DC 10 Swim, 10ft deep)"
+  "P": "PC entry"
+  "A": "Enemy position"
+  "B": "Boss chamber"
+  "D": "Iron door (hard 10, hp 60, break DC 28)"
+grid: |
+  # # # # # # # # # # # # # # # # # # # # # # # #
+  # # . . . . . . . . . . . . . . . . . . . . # #
+  # P . . . . o . . . . A . . . . . . ^ . . . # #
+  # P . . . . . . . . . . . . . . . . . . B . D .
+  # P . . . . ^ . . . . . . . . . . . . . B . D .
+  # P . . . . . . . . . A . . . . . . ^ . . . # #
+  # # . . . . o . . . . . . . . . . . . . . . # #
+  # # # # # # . . ~ ~ ~ . . . . # # # # # # # # #
+  # # # # # # . . ~ ~ ~ . . . . # # # # # # # # #
+  # # # # # # # # # # # # # # # # # # # # # # # #
+notes:
+  - "20ft-wide corridor opens into a boss chamber (right)."
+  - "Stalagmites (^) give +4 cover; useful for casters."
+  - "Pool (~): 10ft deep, aquatic ambush possible."
+  - "Door D locked from boss side; alarm spell recommended."
+  - "Scale: lengthen corridor by 4 cols per +2 CR in chase scenes."

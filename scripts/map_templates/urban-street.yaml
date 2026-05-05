@@ -1,0 +1,36 @@
+name: Urban Street
+environment: urban
+type: street
+size: 30x14
+legend:
+  "#": "Building wall"
+  ".": "Cobblestone street"
+  ",": "Alley (narrow, 5ft)"
+  "W": "Market stall / cart (cover, climb DC 10)"
+  "B": "Barrel / crate (cover +4, hp 5)"
+  "F": "Fountain (difficult, 2ft deep)"
+  "P": "PC entry"
+  "A": "Enemy ambusher (rooftop or alley)"
+  "E": "Elite / leader"
+  "D": "Door into shop"
+grid: |
+  # # # # # D # # # # # # # # # # # D # # # # # # # D # # # #
+  # . . . . . . . . . . # . . . . . . . . . # . . . . . . . #
+  # . . . . . . . . . . # . . . . . . . . . # . . . . . . . #
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  . . . . . . . . . , , , . . . . . . , , . . . . . . . . . .
+  . P . W . . . B . , A , . . F F . . , , . B . . . . E . . .
+  . P . W . . . B . , , , . . F F . . , , . B . . . . E . . .
+  . . . . . . . . . , , , . . . . . . , , . . . . . . . . . .
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  # . . . . . . . . . . # . . . . . . . . . # . . . . . . . #
+  # . . . . . . . . . . # . . . . . . . . . # . . . . . . . #
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+notes:
+  - "Street is 4 squares wide; alleys (,) are 1 square (single file)."
+  - "Stalls (W) & barrels (B) give +4 cover; climb DC 10 to use as platform."
+  - "Fountain (F): 2ft deep, difficult terrain, no swim."
+  - "Ambush: A in alley or rooftop (above grid, +20ft high)."
+  - "Classic scenarios: assassin hit, street brawl, chase scene."

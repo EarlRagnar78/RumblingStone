@@ -1,0 +1,39 @@
+name: Swamp Islands
+environment: swamp
+type: scattered
+size: 24x18
+legend:
+  "~": "Deep water / mire (swim DC 15, difficult)"
+  ":": "Shallow marsh (difficult terrain, concealment)"
+  ".": "Dry hummock (normal terrain)"
+  "T": "Dead tree (cover)"
+  "r": "Reeds (concealment)"
+  "P": "PC entry"
+  "A": "Lurker (hidden in reeds)"
+  "B": "Boss lair (island)"
+  "L": "Loot / shrine"
+grid: |
+  ~ ~ ~ ~ ~ r r ~ ~ ~ ~ ~ ~ ~ ~ ~ r r ~ ~ ~ ~ ~ ~
+  ~ : : : ~ r A ~ ~ ~ ~ : : : ~ ~ r A ~ ~ ~ : : ~
+  ~ : . . : ~ ~ ~ : : : . . T : ~ ~ ~ ~ : : . . :
+  ~ : . P . : ~ : . . . . . . : ~ ~ : : . . . . :
+  ~ : . P . : : : . T . . . . : : : . . . B B . :
+  ~ : . . . . . . . . . . L . . . . . . . B B . :
+  ~ : : . . . : ~ ~ : . . . . : ~ ~ : : . . . . :
+  ~ ~ : : : ~ ~ ~ ~ ~ : : T : ~ ~ ~ ~ : : : : : :
+  ~ ~ ~ ~ ~ ~ ~ r ~ ~ ~ : : ~ ~ ~ r r ~ ~ ~ ~ ~ ~
+  ~ ~ r r ~ ~ r A ~ ~ ~ ~ ~ ~ ~ ~ r A ~ ~ ~ ~ ~ ~
+  ~ ~ r ~ ~ ~ ~ ~ ~ : : : ~ ~ ~ ~ ~ ~ ~ ~ : : ~ ~
+  ~ : : : : ~ ~ : : . . . : : ~ ~ ~ : : : . . : ~
+  ~ : . . . : : : . . T . . : : ~ ~ : . . . . : ~
+  ~ : . . . . . . . . . . . . . : : : . . . . : ~
+  ~ : . . . : : : . . . . . . : : ~ ~ : . . . : ~
+  ~ : : : : ~ ~ : : . T . . : : ~ ~ ~ : : : : : ~
+  ~ ~ ~ ~ ~ ~ ~ ~ ~ : : : ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+  ~ ~ r r ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ r r ~ ~ ~ ~ ~ ~
+notes:
+  - "Non-linear approach: PCs must pick island-hop route."
+  - "Swim DC 15 in ~; marsh (:) halves speed + gives concealment (20%)."
+  - "Lurkers (A) in reeds start Hidden; favor razorfiends, lizardfolk."
+  - "Boss (B) on central island; loot (L) nearby."
+  - "For Blackfens/Rhest-style use: flavor reeds as cattails, add mist."

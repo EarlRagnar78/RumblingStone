@@ -1,0 +1,37 @@
+# Forest ambush — D&D 3.5 tactical grid (5ft square)
+name: Forest Ambush
+environment: forest
+type: ambush
+size: 20x15
+legend:
+  T: "Tree (blocks LoS/LoE; cover)"
+  t: "Sapling (cover +2 AC)"
+  ".": "Undergrowth (difficult terrain, move ×2)"
+  ",": "Path (normal movement)"
+  "~": "Stream (swim DC 10, 5ft wide)"
+  P: "PC expected entry zone"
+  A: "Enemy ambush position (concealed)"
+  B: "Boss / leader"
+  R: "Ranged attacker perch"
+  L: "Loot / quest marker"
+grid: |
+  T T T t . . . . . . . . . . . . t T T T
+  T t . . . A . . , , , , . . R . . . t T
+  T . . . . . . , , P P , , . . . . . . T
+  T . . . . . . , , P P , , . . . . . . T
+  T t . . . A . . , , , , . . . . B . t T
+  T T . . . . . . , , , , . . . . . . T T
+  T . . ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ . . . . T
+  T . . . . . . . . . . . . . . . . . . T
+  T t . R . . . . . . . . . . A . . . t T
+  T . . . . . . . . . L . . . . . . . . T
+  T . . . . . . . . . . . . . . . . . . T
+  T t . . . . . . . . . . . . . . . . t T
+  T . . . . . . . . . . . . . . . . . . T
+  T T T t t . . . . . . . . . t t T T T T
+notes:
+  - "PCs enter at P marks; enemies at A have Hide (start surprise round)."
+  - "Stream: DC 10 Swim or Jump DC 15 to cross (5 ft wide)."
+  - "R perches grant +1 cover, favor archers/casters."
+  - "Difficult terrain (.): halves speed; charge blocked."
+  - "Scale up: duplicate pattern E/W; add canopy for flying enemies."

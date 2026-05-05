@@ -80,7 +80,9 @@ the listed consequence triggers.
 | Conte Valerius | The party visited Hammerfist; does NOT yet know about the Crown | Public dispatches |
 | Druid Circle of the Sacred Forest | Hella is approaching for the ritual; reserves judgment | Hella's letter, sent two days ago |
 | Capitana Lythiel Alar-Wen (Wood Elf Ranger 8, Sacred Forest scout, GS 8) | Hella is the druidess Saraah promised the Acorn of the Circle to | Direct recognition during Hammerfist Battle Sessione 4; canonized 2026-05-04 |
-| Maestro Tempestas (Half-elf Bard 12/Arcmage 2, GS 14, Rethmar messenger) | The party survived Lorana's city (Arco 00); they are Custodi Eterni; he carries 4 letters/seals on Day 22; intercepted drow conversation about "il dottore della torre invisibile" wanting "il portatore dell'anello caotico" | Intercepted via accidental Shadow Walk side-emergence; canonized 2026-05-04 |
+| Maestro Tempestas (Half-elf Bard 12/Arcmage 2, GS 14, Rethmar **intelligence agent** — NOT delivery service) | The party survived Lorana's city (Arco 00); they are Custodi Eterni; he carries **only one letter** (Brenna Sorvane → Thorik) on Day 21 + intel exchange mission; intercepted drow conversation 3 weeks ago about "il dottore della torre invisibile vuole il portatore dell'anello caotico" + "fine Mirtul, poi la torre cammina" — relevance recognized only when Artemis's Ring vibrates | Intercepted via accidental Shadow Walk side-emergence near Cannath Vale Nord (fiume con tre rapide); revised v2 2026-05-04 (Tempestas role narrowed to intel agent; he no longer delivers Tordek/Hella/Artemis personal hooks) |
+| Sorella Maewen "Pugno-di-Cedro" (Mezza-elfa Monk 9/Cleric 2 of Ilmater, GS 10, monk-courier of Confraternita Monastica di Dauth) | Aeleth Verdebronzo is dead (will discover on arrival); Tordek matches the description of the 4th tournament invitee "Pugno di Pietra del Nord" (recognizable by Custode Eterno rune) | Travels Cannath Vale with 5 tournament invites; arrives Sacred Forest Day 24 looking for Aeleth; canonized 2026-05-04 |
+| Lathander + Mask (divine, divinatory) | Artemis rejected the Lord of Sun and Shadow PrC at Belkram (Arco 04); the Ring he carries is Zalkatar's research instrument; Zalkatar is a 3-century-old ex-cleric of Mask who became Mind Flayer by choice; both deities OBSERVE without intervening unless Artemis explicitly requests post-Tower "courtesy" | Direct divine awareness; activates as dream visitation Notte 22-23 of post-Hammerfist; canonized 2026-05-04 |
 | Brenna Sorvane (Consigliere militare Rethmar) | Hammerfist defeated Red Hand vanguard; Custodi Eterni include Thorik who is a battle-tested commander; Halveth is corrupt by Conte Valerius; Lorana is alive in Rethmar | Reports from Tempestas (her primary messenger); canonized 2026-05-04 via her sealed letter to Thorik |
 | Therysol | Il Collezionista's guild has a hidden cell in Dauth | Captured guild operative interrogated |
 | Tiri Kitor wild elves | Nothing yet — first contact pending Starsong Hill | — |
@@ -274,4 +276,78 @@ entries — they become campaign history.
             tournament-invitation messenger because he is compromised
             (employed by Il Collezionista + Sonjak); Tempestas serves
             that role exclusively.
+2026-05-04  Hooks integration v2 — major refactor of motivation
+            and delivery (per DM critique: "why would Tempestas
+            deliver letters that aren't his job?"). Changes:
+            - Tempestas's mission narrowed: he is an INTELLIGENCE
+              AGENT for Rethmar (Brenna Sorvane), not a delivery
+              service. Carries ONLY one letter (Brenna → Thorik).
+              Primary mission at Hammerfist: honor the dead +
+              gather Red Hand intel from Thorik (bidirectional
+              exchange: he offers Halveth corruption + Lorana alive
+              in return). The drow chatter intel (intercepted 3
+              weeks ago in Shadow Walk, Cannath Vale Nord) is
+              MAINTAINED but reframed as material confirmation
+              for Artemis's Ring vibration, surfaced only when
+              Artemis asks OR when Tempestas notes the Ring glow
+              at the cena di Hammerfist (Sapienza Magica CD 14).
+            - Tordek hook RELOCATED: invitation no longer comes
+              from Tempestas at Hammerfist. Comes from new NPC
+              Sorella Maewen "Pugno-di-Cedro" (Mezza-elfa Monk 9/
+              Cleric 2 of Ilmater, GS 10) — Confraternita
+              Monastica di Dauth courier who arrives at Sacred
+              Forest Day 24 looking for Aeleth Verdebronzo (dead),
+              recognizes Tordek by Custode Eterno rune as the
+              4th invitee on her list. Tournament reframed as
+              MYTHIC: once every 100 years at Iride star
+              alignment, 4 days notice, open to all valorous
+              warriors who pass monastic preliminaries (non-
+              monks at disadvantage with documented CD modifiers).
+              Files: PNG/Maewen/Maewen.md (full PNG card with
+              5-invitee list as worldbuilding datapoints).
+            - Artemis hook fully INTERNAL: Ring of Chaotic
+              Illumination vibrates during Cerimonia delle 100
+              Asce Atto 3 (Re Thorek hands runa di pietra). Voice
+              "Lui sta camminando. Vieni." in drow antico. Plus
+              new SOGNO DELLA DOPPIA MASCHERA Notte 22-23: both
+              Lathander and Mask appear in dream with insight on
+              Zalkatar (3-century ex-cleric of Mask, became Mind
+              Flayer by choice, wants to READ Artemis not kill
+              him). Mechanical bonus: +2 TS Vol vs Zalkatar
+              psionics; +1d6 first attack each round Phase 3 of
+              Tower fight (+2d6 if Atto 2 sub-quest done).
+              Tempestas drow chatter MAINTAINED as material
+              confirmation. Saraah druidic divination at Sacred
+              Forest is third optional confirmation.
+            - Hella hook EXTENDED: Lythiel Acorn at Cerimonia
+              (canon, kept) + Saraah's RITO DI DIVINAZIONE Day 25
+              at Sacred Forest revealing 3 visions (Red Hand base
+              at Rhest with Wyrmlord/black dragon; dark shadow
+              under the Quercia Vecchia = Mother of Fungi spore
+              by Sonjak's drow; Talar in fiamme = already
+              destroyed). Optional Mother of Fungi descent
+              encounter EL 11. Bonus narrative: Sacred Forest
+              ritual base bonus DOUBLES if MoF purified.
+            - NEW: HOOKS-Ghostlord-Refugees.md — refugee caravan
+              from Loccatella (fled Lich's undead waves out of
+              Thornwaste) heads to Talar not knowing it's been
+              sacked. 4 PG-party choices (escort to safe city /
+              investigate Thornwaste = early Ghostlord arc /
+              partial aid / ignore). Echoes: +30 to Lorana's
+              Riserva at Rethmar; possible Joran ex-druid CR 5
+              ally; Tobi child as RP callback.
+            - Master Integration v2: 3 architectures (PATH-A
+              split / PATH-B together-sequential / PATH-C hybrid)
+              with explicit costs. No railroad. Cerimonia delle
+              100 Asce becomes the canonical landing zone for
+              Hella + Thorik + Artemis hooks (3 of 4); Tordek's
+              landing zone is Sacred Forest.
+            - Cerimonia delle 100 Asce canonized as Day 21 closing
+              event of Arc 08, file in 08_La Battaglia Di
+              Hammerfist/Cerimonia-delle-100-Asce.md (210 dead
+              honored with 100 ceremonial axes; party formally
+              recognized as Custodi Eterni with rune di pietra).
+            New NPC knowledge rows in §3: Maewen, Lathander+Mask
+            divine awareness. Tempestas row revised. New PNG
+            cards: PNG/Maewen/Maewen.md.
 ```

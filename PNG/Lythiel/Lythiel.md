@@ -152,7 +152,7 @@ Niente subito. Solo: *"Quando vedi Saraah, dille che ho mantenuto la promessa. L
 
 - Atterraggio dopo battaglia (a Hella): *"Se vivi, vivi anche per chi non c'è. So che lo sai. Le mie braccia hanno tre cicatrici per chi non c'è più."*
 - Consegnando la Ghianda: *"Saraah me l'ha consegnata sei mesi fa. Ha detto: 'Quando incontrerai una druida che sa già le cose, dagliela. Non c'è bisogno che spieghi'. Tu sei lei."*
-- Su Inathiel: *"Inathiel mi ha tenuta in vita per dodici anni. Quando vado, va. Non è un cavalcatura. È mia sorella."*
+- Su Inathiel: *"Inathiel mi ha tenuta in vita per dodici anni. Quando vado, va. Non è una cavalcatura. È mia sorella."*
 - Se Hella tenta di darle qualcosa in cambio: *"No. Non funziona così. Pagami tornando viva e con la corteccia ancora calda."*
 - Se Hella le chiede se Saraah la riprende come druida: *"Lei vuole. Io no. Una volta che si è scelto un corno per la lama [allusione a Inathiel], non si torna alla pietra."*
 - Vento finale, prima di partire: *"Non si dice 'arrivederci' tra ranger e druide. Si dice 'cammina dove è meno asciutto'. Ti aspetto al Cerchio."*

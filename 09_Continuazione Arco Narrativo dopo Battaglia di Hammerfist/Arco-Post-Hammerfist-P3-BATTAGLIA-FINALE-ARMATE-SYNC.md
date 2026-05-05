@@ -19,29 +19,43 @@
 
 ## 2. Composizione Orda in Arrivo a Rethmar (Day 40)
 
+Riferimento dettagliato: `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.md` §2.1-§2.4.
+
 | Blocco | Baseline Day 1 | Perdite attese Day 1→40 | Arrivo Day 40 (baseline) |
 |---|---:|---:|---:|
-| Hobgoblin regolari (Hand of Doom core) | 6.600 | 20–30% (attrito + assedi) | 4.600–5.300 |
-| Bugbear / Worg riders / Ogre supporto | 430 | 15–25% | 320–370 |
-| Alleati goblin/orchi/gnoll (Channath) | 2.910 | 30–45% (usati come prima linea) | 1.600–2.050 |
-| Draghi nominati (5): Abithriax, Regiarix, Ozyrrandion, Tyrgarun, Fauci di Palude | 5 | 0–1 (Fauci ferito da Hammerfist) | 4–5 |
-| Razorfiend Draconic Spawn (8, colori Tiamat) sui Wyrmlord upscalati | 8 | 0–2 | 6–8 |
-| Non-morti Ghostlord (se NEMICO intero) | ~1.000 | 5% | ~950 |
-| Non-morti Ghostlord (se NEUTRALIZZATO — solo distaccamento) | ~200-400 | 5% | ~190-380 |
-| Non-morti Ghostlord (se ALLEATO PG) | 0 in arrivo | — | 0 (anzi, colpiscono retroguardia) |
-| Mercenari drow (se patto non sabotato) | ~300 | 10% | ~270 |
-| **TOTALE BASELINE (Ghostlord nemico)** | **~11.250** | — | **~7.200** |
-| **TOTALE BASELINE (Ghostlord neutralizzato)** | **~10.500** | — | **~6.600** |
-| **TOTALE WORST CASE PG (Ghostlord intero + drow intatti + nessuna quest)** | **~11.250** | — | **~7.400** |
-| **TOTALE BEST CASE PG (tutti gli hook completati)** | **~10.000** | — | **~5.800** |
+| **Nucleo Red Hand** (hobgoblin Fighter/Warrior, goblin, orchi, worg riders) | 6.600 | 20–30% | 4.600–5.300 |
+| **Supporto** (giganti delle colline, ogre, ettin, manticore, wyvern, hell hound, chimera, war adepts, blue, warpriest Tiamat) | 430 | 15–25% | 320–370 |
+| **Fazione Drow — Compagnia di Sonjak** (Matrona Sajak; infiltrazione Underdark + distaccamento Fase 0 Notte dei Drow) | 305 | 10% | ~275 (o -100 se Sabotaggio Drow Arc-09/P3 eseguito) |
+| **Fazione Githyanki — Corps di Vaereth** (dragonrider + reclute su cavalcature alate) | 375 | 15% | ~320 |
+| **Fazione Gnoll — 3 tribù dei Wyrmbones/Dun Hills** (Flinderoso 500 + Abbattitori 350 + Artigli Neri 250) | 1.100 | 25–35% (prima linea) | 715–825 |
+| **Loxo schiavizzati** (dal Shaar occidentale, catturati dai Wyrmlord) | 200 | 40% (scudi umani) | ~120 **— OPPURE** 0 se Loxo Revolt trigger PG |
+| **Centauri schiavizzati** (tribù Shaaryan catturate, cavalleria forzata) | 280 | 40% | ~170 **— OPPURE** 0 + -150 Orda se Revolt trigger PG |
+| **Compagnia del Teschio Nero** (umani Thay/Mulhorand: heavy infantry 650 + 6 Red Robes wizard 7 + comandante CR 10) — composizione canonica AP, NON modificata | 650 | 10% (riserva élite) | ~585 |
+| **Draghi nominati** (5: Abithriax/Regiarix/Ozyrrandion/Tyrgarun/Fauci di Palude — vedi §2.1) | 5 | 0–1 | 4–5 |
+| **Razorfiend Draconic Spawn** (8, colori Tiamat, sui Wyrmlord upscalati — vedi §2.1) | 8 | 0–2 | 6–8 |
+| **Non-morti Ghostlord** (se NEMICO intero, dalla Bandit Wastes) | ~1.000 | 5% | ~950 |
+| **Non-morti Ghostlord** (se NEUTRALIZZATO — solo distaccamento) | 200–400 | 5% | 190–380 |
+| **Non-morti Ghostlord** (se ALLEATO PG) | 0 in arrivo | — | 0 (colpiscono retroguardia) |
+| **Il Collezionista** + cultisti Rakshasa (condizionale) | 0–300 | 0% | 0–300 |
+| **TOTALE WORST CASE** (Ghostlord intero + Sonjak + Collezionista + schiavi intatti + nessuna quest PG) | ~12.700 | — | **~7.800–8.100** |
+| **TOTALE BASELINE** (Ghostlord nemico, nessuno schiavo liberato) | ~11.250 | — | **~7.200** |
+| **TOTALE MEDIO** (Ghostlord neutralizzato, 2-3 quest PG) | ~10.500 | — | **~6.400** |
+| **TOTALE BEST CASE** (tutti gli hook completati + schiavi liberati + Ghostlord alleato) | ~10.000 | — | **~5.800** |
 
-> Numeri sono **effettivi da combattimento**, esclusi non-combattenti (schiavi, saccheggiatori civili, carovane logistiche).
+> Numeri sono **effettivi da combattimento**, esclusi non-combattenti (carovane logistiche, saccheggiatori civili).
 
-**Composizione qualitativa fissa**:
+### 2.1 Composizione qualitativa fissa
 
-- **5 draghi**: Abithriax (rosso adulto, Wyrmlord Azarr Kul-fedele), Regiarix (verde giovane, legato a Saarvith — *già morto se Arc-09/P2 completato*), Ozyrrandion (rosso giovane), Tyrgarun (blu adulto), Fauci di Palude (nero adulto, ferito da Hammerfist ma presente).
-- **8 Razorfiend Draconic Spawn** (colori metallici/cromatici di Tiamat) montati/abbinati ai Wyrmlord upscalati (Koth, Ulwai Stormcaller, Saarvith se vivo, Azarr Kul in riserva).
-- **Compagnia del Teschio Nero** (élite hobgoblin + veterani) — **NON modificata**, resta canonica come da AP.
+- **5 draghi**: **Abithriax** (red adult — Skull Gorge guardian → riserva Rethmar), **Regiarix** (black young adult — Rhest/Saarvith, *morto se Arc-09/P2 completato*), **Ozyrrandion** (blue adult — Torre Invisibile/Zalkatar, *morto se P2A completato*), **Tyrgarun** (black adult — riserva aerea Rethmar), **Fauci di Palude** (black adult — Vanguard Hammerfist, *annientato a Hammerfist Day 19*, quindi **4 vivi** al Day 19 pre-Rethmar).
+- **8 Razorfiend Draconic Spawn** (colori Tiamat: 2 black/2 red/1 blue/1 white/2 green) assegnati ai Wyrmlord upscalati (Koth, Ulwai Stormcaller, Saarvith se vivo, Karruk, Zalkatar se vivo, riserva Azarr Kul).
+- **Compagnia del Teschio Nero** (mercenari umani Thay/Mulhorand) — composizione canonica AP, riserva élite di Azarr Kul, **NON modificata**.
+
+### 2.2 Fazioni con dinamica narrativa
+
+- **Drow di Sonjak** (Matrona Sajak): agiscono principalmente in Fase 0 (Notte dei Drow, infiltrazione cripte Tempio di Rethman). Se Sabotaggio Drow Arc-09/P3 eseguito, forza Fase 0 ridotta da 25-30 drow + 1 Aberrazione Fungina Alfa a 5-8 drow senza Alfa.
+- **Gnoll 3 tribù** (Flinderoso, Abbattitori, Artigli Neri): provenienti da Wyrmbones e Dun Hills (vedi mappa Cannath Vale). Usati come prima linea in Fase 1 Ondata 1. Perdite attese 25-35%.
+- **Loxo + Centauri schiavizzati**: razze nomadi del Shaar catturate dai Wyrmlord durante la marcia Day 8-15. Usati come **scudi umani** (Loxo) e **cavalleria forzata** (Centauri). **Trigger PG — Revolt**: se i PG riescono a contattarli (diplomazia CD 25, Conoscenze Natura CD 20, oppure incontro dedicato durante Arc-09), possono rivoltarsi contro l'Orda Day 38-39, eliminando 480 unità + disruption logistica -100 attrition. **[INFERRED — needs DM: encounter di liberazione da scrivere se DM vuole aprire il branch]**.
+- **Compagnia del Teschio Nero**: riserva élite, non impegnata fino a Fase 3-4 (Avatar/Mythal).
 
 ---
 
@@ -96,20 +110,42 @@ Compie **~60%** dell'Orda presente. Distribuzione tipica (scenario C):
 
 ---
 
-## 5. Sync con il March Clock (AP Day 1→40)
+## 5. Sync con il March Clock (AP Day 1→40) — Toponimi Cannath Vale
 
-| Day | Evento AP | Effetto su Orda | Trigger Rethmar |
-|---:|---|---|---|
-| 1 | Vraath Keep mobilizes | Baseline 10.000 | — |
-| 5 | Skull Gorge Bridge (PG **non** interferiscono) | Nessun ritardo | — |
-| 8–12 | Drellin's Ferry equivalent (già caduta Arc-00) | Saccheggio, +150 attrito | — |
-| 15 | Marth (Talar minore equivalente) cade | -300 prima linea, +100 morale | — |
-| **19** | **Terrelton (Channath Vale) cade = Hammerfist battle ends** | -800 Orda totale, **SYNC POINT** | Rethmar riceve profughi Terrelton |
-| 24 | Ghostlord contattato (Azarr Kul) | +1.000 se nemico / +250 se distaccamento / 0 se alleato | — |
-| 28 | Forks equivalent (checkpoint logistico) | -200 attrito | Rethmar chiude porte |
-| 32 | Avanguardia a 2 giorni da Rethmar | -400 imboscate Lions of Brindol locali | Ultimo convoglio civile |
-| 36 | Accampamento assedio | -150 malattie | Fase 0 Notte dei Drow (se innescata) |
-| **40** | **Arrivo a Rethmar = Fase 1 Assedio** | Totale in §3 | Battaglia finale |
+**Riferimento geografico**: mappa `00_Red Hand Of Doom/Immagini/Area Map/Red Hand of Doom -Maps/ForgottenRealms/Shaar-ChannathVale/cannath-vale-gm-versia3ys4.webp` e `skills/forgotten-realms-lore/references/fr-cannath-vale.md`.
+
+**Mapping adattamento RHoD → Cannath Vale**:
+
+- Brindol → **Rethmar** (war council + battaglia finale)
+- Elsir Vale → **Cannath Vale**
+- Wyrmsmoke Mts → **The Wyrmbones** (origine Orda)
+- Witchwood → **Shaarcah Forest** (Tiri Kitor / elfi Starsong Hill)
+- Blackfens → **Lhespenbog** (Rhest/Lhesper)
+- Rhest → **Lhesper** (Wyrmlord Koth / Saarvith Arc-09/P2)
+- Dennovar → **Cannathgate** (gateway orientale)
+- Giantshield → **Rathgaunt Hills**
+- The Thornwaste → **Bandit Wastes** (Ghostlord's Lair)
+- Elsir River → **Talar River** (ovest) + **Cannath River** (est)
+- Hammerfist Holds → **Hammerfist Holds** (The North Wall south) — **qui si svolge la Battaglia di Hammerfist (Arc-08)**.
+
+| Day | Evento AP | Località (Cannath Vale) | Effetto su Orda | Trigger Rethmar |
+|---:|---|---|---|---|
+| 1 | Mobilizzazione Orda | **Vraath Keep** (Wyrmbones) | Baseline 10.000 | — |
+| 5 | PG **non** interferiscono | **Skull Gorge** (Lhescreek) | Nessun ritardo | — |
+| 8–12 | Saccheggio | **Drellin's Ferry** (Old North Road, già caduta Arc-00) | +150 attrito | — |
+| 13 | Drellin's Ferry burned | Drellin's Ferry | — | Profughi +1.500 Rethmar |
+| 15 | Marcia nord-est, scontri partigiani | Margini Shaarcah Forest | -80 | — |
+| **19** | **Battaglia di Hammerfist ENDS simultaneamente** | **Hammerfist Holds** (The North Wall) + **Terrelton cade** | -900 vanguard Hammerfist perso (Fauci di Palude ferito), -250 Terrelton | 🎯 **SYNC POINT** — Rethmar riceve profughi Terrelton |
+| 20 | Nimon Gap cade | **Nimon Gap** (center, road through Wyrmbones) | -120 | — |
+| 21 | Saccheggio | **Talar** (village, Talar River) | -200, +100 morale | Brindol/Rethmar panico |
+| 22–24 | Marcia post-Hammerfist, morale -2 | Old North Road → Dawn Way | -120 attrito | — |
+| 24 | Azarr Kul contatta Ghostlord | **Ghostlord's Lair** (Bandit Wastes) | +1.000 se nemico / +250 se distaccamento / 0 se alleato | — |
+| 25 | Marth Fen / Razorfiend nest | **Lhespenbog** (Rhest area) | Saarvith consolida (se vivo) | — |
+| 28 | Checkpoint logistico | **Kormul** (Dwarfroad) | -200 attrito | Rethmar chiude porte |
+| 32 | Avanguardia a 2 giorni | Dawn Way, 40mi da Rethmar | -400 imboscate Lions of Rethmar | Ultimo convoglio civile |
+| 35 | Witchcross cade | **Witchcross** (east Shaarcah) | -150 (difensori elfici se Tiri-Kitor alleati) | — |
+| 36 | Accampamento assedio | Pianura N-O di Rethmar | -150 malattie | Fase 0 Notte dei Drow (se innescata) |
+| **40** | **Arrivo a Rethmar = Fase 1 Assedio** | **Rethmar** (Dawn Way) | Totale in §3 | Battaglia finale |
 
 ---
 
@@ -146,3 +182,4 @@ Ogni hook completato **prima del Day 40** modula i numeri di §3. Riferimento: `
 ## 8. Changelog
 
 - **2026-05-05** — Creato file v1 (allineamento v2 armate post-chiarimenti utente: 10k baseline, 5 draghi, 8 Razorfiend, Compagnia Teschio Nero invariata, battaglia persa senza PG, Ghostlord-neutralizzato-= piccolo distaccamento, no sabotaggio Skull Gorge, no alleanza giganti PG, Day 19 sync Terrelton↔Hammerfist, Day 40 arrivo Rethmar).
+- **2026-05-05 (rev.b)** — §2 espansa con fazioni esplicite (Drow di Sonjak, Githyanki di Vaereth, Gnoll 3 tribù, Loxo schiavizzati, Centauri schiavizzati, Compagnia del Teschio Nero, Il Collezionista condizionale); §2.2 aggiunta meccanica Revolt per schiavi Loxo/Centauri; §5 toponimi Cannath Vale sincronizzati con mappa `cannath-vale-gm-versia3ys4.webp` e `fr-cannath-vale.md` (Brindol→Rethmar, Wyrmsmoke→Wyrmbones, Witchwood→Shaarcah Forest, Blackfens→Lhespenbog, Rhest→Lhesper, Dennovar→Cannathgate, Giantshield→Rathgaunt Hills, Thornwaste→Bandit Wastes, Elsir River→Talar/Cannath River, Hammerfist Holds confermato su The North Wall).

@@ -391,7 +391,7 @@ def build_encounter(pool, target_el, size, rng, forced: list[dict] | None = None
         [(max(1,target_el-4), min(size,4))],
         [(max(1,target_el-1), 1), (max(1, target_el-3), 2), (max(1, target_el-5), max(0,size-3))],
     ]
-    best = None
+    best: dict | None = None
     for strat in strategies:
         mix, crs, ok = [], [], True
         # include forced NPCs first

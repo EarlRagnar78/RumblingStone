@@ -192,6 +192,49 @@ Every in-world day, advance the relevant villain clock in `state.md` §2 by
 1 (or by the rate listed). This happens whether or not the party is doing
 anything related. Players feel the cost of inaction.
 
+#### 5.2.bis Red Hand dual-clock (March + Ritual)
+
+The Red Hand of Doom arc uses **two independent** clocks:
+
+1. **March Clock** (Day 1 → Day 40): AP-deterministic waypoint ledger
+   (`00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` §2). Ticks
+   +1 per in-world day. Governs **when** the Horde arrives and with which
+   numbers (baseline ~10.000 → ~5.800–7.400 at Rethmar depending on PG
+   interference).
+2. **Ritual Clock** Azarr Kul (`/18`, `state.md` §2): governs **whether**
+   the Avatar of Tiamat manifests in Fase 3 of the Rethmar battle.
+
+Both clocks advance **independently**. PG actions that affect one do not
+automatically affect the other unless explicitly listed.
+
+**Locked sync points** (do not reframe):
+
+- **Day 19** = Terrelton (Channath Vale) falls **=** Battle of Hammerfist
+  ends. This is canonical and cannot be retimed.
+- **Day 40** = Horde arrives at Rethmar = Fase 1 Assedio begins.
+
+**PG did NOT do at Red Hand AP** (campaign canon, not hypothetical):
+
+- Did **not** sabotage Skull Gorge Bridge (no Day-5 delay).
+- Did **not** broker the giant alliance (giants march with the Horde, not
+  against it).
+
+**Ghostlord rule** (user-confirmed 2026-05-05): if Ghostlord is
+neutralized/allied before Day ~28, Azarr Kul still sends a **small
+detachment** of lesser undead (~200–400), not the full undead army
+(~1.000). Neutralized ≠ absent.
+
+Force composition is locked to:
+
+- **5 named dragons**: Abithriax, Regiarix (dies if Arc-09/P2 completed),
+  Ozyrrandion, Tyrgarun, Fauci di Palude (wounded from Hammerfist).
+- **8 Razorfiend Draconic Spawn** (Tiamat colors) mounted on upscaled
+  Wyrmlords.
+- **Compagnia del Teschio Nero**: unchanged from AP canon.
+
+See `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md` for the
+full force-balance table across the 5 PG scenarios.
+
 ### 5.3 No bivio binario (binary-fork)
 
 Never present "Door A or Door B." Always offer a triangolo di rischio:
@@ -231,4 +274,11 @@ explicit `[COHERENCE WARNING: <which rule>]` so the DM can adjudicate.
             Source ranking, history-locks, artifact-locks, NPC knowledge
             discipline, PC bonds, R.A. Salvatore tone, sandbox triangolo
             rules, agent self-check protocol.
+2026-05-05  Added §5.2.bis Red Hand dual-clock (March Clock Day 1→40 +
+            Ritual Clock /18, independent). Locked sync points: Day 19
+            Terrelton = Hammerfist end; Day 40 Rethmar arrival. Locked
+            force composition: 5 named dragons, 8 Razorfiend Draconic
+            Spawn, Compagnia del Teschio Nero unchanged. Ghostlord
+            neutralized = small detachment rule. PG did NOT sabotage
+            Skull Gorge, did NOT ally giants.
 ```

@@ -1,634 +1,212 @@
-# ARMATE — CALCOLI ESERCITI DINAMICI
-## Campagna RumblingStone — Red Hand of Doom (Livello 8 partenza, Faerûn/Cannath Vale)
+# Armate — Calcoli Eserciti Dinamici (v2 — 2026-05-05)
 
-> **Documento di riferimento per il DM.**  
-> Tutti i numeri sono calibrati per un gruppo che parte al livello 8 (+2 rispetto al modulo originale).  
-> Tutte le città/villaggi sono nella categoria superiore rispetto all'originale.  
-> Unità nemiche: tutti +2 livello rispetto al modulo.  
-> La battaglia di Hammerfist è già avvenuta (900 Mano Rossa vs 300 Nani, 210 nani caduti).
+> **Versione**: v2 (rescaled ~10.000 baseline, dual-clock, AP-canon 5 dragons).
+> **Supersede**: v1 (6.161 baseline, AP-original scaling). Storia in git.
+> **Canonical references**: `campaign/state.md` §2; `Armate-SINCRONIZZAZIONE-CAMPAGNA.md`;
+> `09_Continuazione.../Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md`.
 
 ---
 
-## 1. COMPOSIZIONE INIZIALE — ORDA DELLA MANO ROSSA
+## 1. Principi di Calibrazione
 
-### 1.1 Forze Nucleari Hobgoblin (scala ×1,5 sul modulo originale)
-
-| Nome Unità | Livello Unità | #Iniziali | Note |
-|---|---|---|---|
-| Guerriero Hobgoblin (Fanteria) | Warrior 5 (+2) | 2.000 | Dorsale dell'esercito |
-| Soldato d'Élite Hobgoblin | Fighter 6 (+2) | 500 | Vanguardia e d'assalto |
-| Arciere Hobgoblin | Warrior 5 (+2) | 300 | Copertura a distanza |
-| Sergente Hobgoblin | Fighter 7 (+2) | 80 | 1 ogni 40 fanti |
-| **Subtotale Hobgoblin** | | **2.880** | |
-
-### 1.2 Ausiliari Gobblinoidi
-
-| Nome Unità | Livello Unità | #Iniziali | Note |
-|---|---|---|---|
-| Bugbear Shock Trooper | Barbarian 4 (+2) | 250 | Assalto alle mura |
-| Goblin Skirmisher | Warrior 4 (+2) | 400 | Molestia e ricognizione |
-| Goblin Wolf Rider | Warrior 5 (+2) | 200 | Cavalleria leggera |
-| Orc Ausiliario (schiavo) | Warrior 4 (+2) | 350 | Fanteria pesante di impatto |
-| **Subtotale Ausiliari** | | **1.200** | |
-
-### 1.3 Creature Pesanti e Mostri
-
-| Nome Unità | Livello / GS | #Iniziali | Note |
-|---|---|---|---|
-| Ogre da guerra | GS 5 (+2 = GS 7) | 50 | Arieti viventi |
-| Gigante delle Colline | GS 7 (+2 = GS 9) | 20 | Artiglieria biologica |
-| Gigante di Pietra | GS 9 (+2 = GS 11) | 8 | Élite assedio |
-| Gigante del Fuoco (mercenario) | GS 11 (+2 = GS 13) | 5 | Mercenari rari |
-| Troll | GS 5 (+2 = GS 7) | 30 | Rigenerazione, terrore |
-| Ettin (incluso Gorthak il Trifronte) | GS 10 (+2 = GS 12) | 4 | Gorthak + 3 altri |
-| **Subtotale Creature Pesanti** | | **117** | |
-
-### 1.4 Creature Volanti
-
-| Nome Unità | GS | #Iniziali | Note |
-|---|---|---|---|
-| Wyvern (Ghostlord) | GS 7 (+2 = GS 9) | 18 | Pegno del Lich |
-| Manticore | GS 5 (+2 = GS 7) | 12 | Ricognizione armata |
-| Barghest | GS 5 | 25 | Possessione e terrore |
-| Lupo Terribile | GS 5 | 50 | Cavalleria/ricognizione |
-| **Subtotale Volanti** | | **105** | |
-
-### 1.5 Supporto Magico Nucleare
-
-| Nome Unità | Livello | #Iniziali | Note |
-|---|---|---|---|
-| War Adept (Stregone) | Sorcerer 7 (+2) | 18 | Artiglieria magica |
-| Warpriest di Tiamat | Cleric 8 (+2) | 12 | Guarigione e dominio |
-| Sciamano Draconico | Druid 7 (+2) | 9 | Controllo bestie |
-| **Subtotale Supporto Magico** | | **39** | |
-
-### **TOTALE FORZE NUCLEARI: 4.341**
+1. **Size target**: ~10.000 unità baseline, coerente con le città di
+   Channath Vale/Elsir Vale upscaled della campagna RumblingStone. Il
+   numero AP originale (~6.000) è stato ritenuto sottodimensionato per
+   la devastazione narrativa richiesta.
+2. **Defender ratio**: prendiamo come riferimento il rapporto canonico
+   della **Battaglia di Hammerfist (900/300 = 3:1)**. A Rethmar, lo
+   spettro va da ~5.8:1 (disastro garantito, PG inattivi) a ~1.36:1
+   (leggendario, tutte le quest PG completate con successo).
+3. **PG-driven**: le scelte dei PG devono **materialmente** cambiare la
+   bilancia delle forze. Senza di loro, Rethmar cade. Con loro al
+   massimo del potenziale, la battaglia è durissima ma vincibile.
+4. **AP canon respected**: 5 dragoni (nomi AP), Wyrmlord upscaled,
+   draconic spawn = Razorfiend (colori di Tiamat).
+5. **No invent rule**: nessuna statistica nuova; tutto punta a MM/SRD o
+   a file esistenti. Contingenti nuovi ("Compagnia del Teschio Nero")
+   sono concettuali, stat blocks restano a cura del DM o [INFERRED].
 
 ---
 
-## 2. FAZIONI ALLEATE (Aggiunte Campagna Custom)
+## 2. Composizione Iniziale Dettagliata (Baseline ~9.900)
 
-### 2.1 Fazione Drow (Sonjak/Matrona Sajak)
+### 2.1 Nucleo Red Hand (7.028)
 
-| Nome Unità | Livello/GS | #Iniziali | Note |
+| Unità | Numero | Fonte statblock |
+|---|---|---|
+| Hobgoblin Fanteria standard (Warrior 1/Fighter 1) | 3.600 | MM Hobgoblin + Warrior class |
+| Hobgoblin Veterani (Fighter 3) | 900 | MM + PHB |
+| Hobgoblin Sergenti (Fighter 5) | 240 | MM + PHB |
+| Hobgoblin Warrior-3 élite (capitani di compagnia) | 60 | RHoD upscaled |
+| Goblin Fanteria (Warrior 1) | 800 | MM |
+| Orchi (Warrior 2) | 700 | MM |
+| Worg Riders (goblin su worg) | 300 | MM |
+| **Subtotale core** | **6.600** | |
+| Giganti delle Colline (3 drudi/clan) | 80 | MM |
+| Ogre (assortiti) | 70 | MM |
+| Ettin (coppie comando) | 30 | MM |
+| Manticore | 40 | MM |
+| Wyvern (non-Ghostlord, selvatiche addestrate) | 50 | MM |
+| Hell Hound (demoni minori) | 30 | MM |
+| Chimera | 20 | MM |
+| War Adepts (Adept 5) | 25 | DMG |
+| Blue (psionic goblinoid casters) | 10 | MM II |
+| Warpriests di Tiamat (Cleric 7) | 20 | PHB |
+| **Subtotale supporto** | **375 + 55 = 430** | |
+
+### 2.2 Dragoni (5, AP-original upscaled)
+
+| Drago | Ruolo campagna | Arco | Stato |
 |---|---|---|---|
-| Guerriero Drow d'Élite | Fighter 4 | 250 | Armatura di mithral, scudo |
-| Chierico/Mago Drow | Cleric 8 / Wizard 7 | 40 | Supporto magico avanzato |
-| Drider (Cavaliere) | GS 7 | 15 | Cavalleria demoniaca |
-| **Subtotale Drow** | | **305** | |
+| **Abithriax** (Red adult) | Skull Gorge guardian → Rethmar Fase 1 | AP canon | Vivo |
+| **Regiarix** (Black young adult) | Rhest/Saarvith, P2 Arco-09 | AP canon | **A rischio PG** (P2-RHEST-FASE4) |
+| **Ozyrrandion** (Blue adult) | Torre Invisibile / Wyrmlord Tower | AP canon | **A rischio PG** (P2A-Torre-Zalkatar) |
+| **Tyrgarun** (Black adult, hell-themed reserve) | Riserva aerea Rethmar | AP upscaled | Vivo |
+| **Fauci di Palude** (Black adult) | Vanguard Hammerfist | Canon campagna | **Annientato a Hammerfist (Day 19)** |
 
-### 2.2 Fazione Githyanki
+**Note**: Abithriax, Regiarix, Ozyrrandion, Tyrgarun sono i 4 dragoni
+AP originali (Regiarix young + 3 adults). Fauci di Palude è la 5ª
+presenza canonica già introdotta nella campagna a Hammerfist.
 
-| Nome Unità | Livello/GS | #Iniziali | Note |
-|---|---|---|---|
-| Cavaliere Githyanki (su drago) | Fighter 8 | 200 | Cavalleria aerea d'élite |
-| Guerriero Githyanki | Fighter 7 | 150 | Spade argentate |
-| Psion Githyanki | Psion 9 | 25 | Guerra psichica |
-| **Subtotale Githyanki** | | **375** | |
+### 2.3 Razorfiend — Draconic Spawn (8 totali)
 
-> **Nota:** I Githyanki sono una fazione semi-autonoma. Rispondono ad Azarr Kul per convenienza, non per fedeltà. L'Operazione Dauth è interamente affidata a loro.
+Varianti colore Tiamat (nero/rosso/blu/bianco/verde). Assegnati come
+guardie dei Wyrmlord upscaled.
 
-### 2.3 Schiavi da Guerra — Loxo (Elefanti da Guerra)
+| Colore | Numero | Assegnato a |
+|---|---|---|
+| Black Razorfiend | 2 | Saarvith/Regiarix (Rhest, P2) — **rimossi se PG vincono** |
+| Red Razorfiend | 2 | Wyrmlord Karruk (assalto Rethmar Fase 1) |
+| Blue Razorfiend | 1 | Ozyrrandion/Tower (rimosso se Zalkatar cade) |
+| White Razorfiend | 1 | Azarr Kul guard (Rethmar Fase 3) |
+| Green Razorfiend | 2 | Azarr Kul avatar support (Rethmar Fase 3) |
 
-| Nome Unità | GS | #Iniziali | Note |
-|---|---|---|---|
-| Loxo da Guerra (schiavo) | GS 8 (+2 = GS 10) | 40 | Arieti viventi, capacità di sfondamento |
-| **Subtotale Loxo** | | **40** | |
+### 2.4 Forze Alleate / Mercenari (2.530)
 
-> **Nota Loxo:** I Loxo sono stati catturati durante le razzie nello Shaar meridionale. Sono intelligenti (umanoidi) ma tenuti in catene magiche. Se le catene vengono distrutte o i PG li liberano, **vedi Sezione 5.3 — Rivolta dei Loxo**.
+| Contingente | Numero | Stato / Note |
+|---|---|---|
+| Compagnia Drow di **Sonjak** (Matrona Sajak) | 305 | Sotto Hammerfist (infiltrazione) + distaccamento Rethmar Fase 0 (Notte dei Drow) |
+| **Githyanki di Vaereth** | 375 | Dragonrider corps (cavaliere + 1 dragon red young + reclute) |
+| **Gnoll mercenari — 3 tribù** | 1.100 | Flinderoso (500) + Abbattitori (350) + Artigli Neri (250) |
+| **Loxo + Centauri corrotti** (Shaar) | 480 | ❓ Revolt trigger se PG diplomazia |
+| **Compagnia del Teschio Nero** (umani malvagi mercenari Thay/Mulhorand) | 650 | Heavy infantry + 6 casters Thayan (Wizard 7 red robes minori) + comandante CR 10 |
+| **Subtotale alleati** | **2.910** | |
 
-### 2.4 Schiavi da Guerra — Centauri
+### 2.5 Totale Baseline
 
-| Nome Unità | Livello | #Iniziali | Note |
-|---|---|---|---|
-| Centauro Guerriero (schiavo) | Warrior 4 | 350 | Cavalleria pesante |
-| Centauro Esploratore (schiavo) | Ranger 4 | 50 | Ricognizione avanzata |
-| **Subtotale Centauri** | | **400** | |
+| Categoria | Unità |
+|---|---|
+| Core Red Hand + ausiliari | 6.600 |
+| Supporto (giganti, alati, casters) | 430 |
+| Alleati/mercenari | 2.910 |
+| **BASELINE (creature addestrate)** | **9.940** |
+| Dragoni + Razorfiend (non sommati a "unità") | 5 + 8 |
 
-> **Nota Centauri:** Catturati durante la marcia attraverso le pianure dello Shaar. Cavalieri formidabili ma fondamentalmente prigionieri. **Vedi Sezione 5.2 — Rivolta dei Centauri.**  
-> Il fatto che i Centauri siano schiacciati nella marcia **rallenta la colonna del 15–20%** (risentimento, resistenza passiva, necessità di più guardie).
-
-### 2.5 Mercenari Gnoll
-
-| Nome Unità | Livello/GS | #Iniziali | Note |
-|---|---|---|---|
-| Guerriero Gnoll | Warrior 3 | 600 | Affidabili ma brutali |
-| Pack Lord Gnoll | Fighter 6 | 60 | 1 ogni 10 guerrieri |
-| Sciamano Gnoll | Cleric 4 | 40 | Guarigione tribale |
-| **Subtotale Gnoll** | | **700** | |
-
-### **TOTALE FORZE ALLEATE: 1.820**
+Approssimato a **~10.000** come target narrativo.
 
 ---
 
-## 3. RIEPILOGO FORZA INIZIALE TOTALE
+## 3. Distaccamenti Deviati (pre-Rethmar)
 
-| Categoria | Numero |
-|---|---|
-| Forze Nucleari Hobgoblin | 2.880 |
-| Ausiliari Gobblinoidi | 1.200 |
-| Creature Pesanti | 117 |
-| Creature Volanti | 105 |
-| Supporto Magico | 39 |
-| Drow (fazione Sonjak) | 305 |
-| Githyanki | 375 |
-| Loxo da Guerra | 40 |
-| Centauri (schiavi) | 400 |
-| Gnoll (mercenari) | 700 |
-| **TOTALE ORDA INIZIALE** | **6.161** |
-
-> **Nota di scala:** L'ODS originale riportava 3.848 "da aggiornare (liv5)". Questo valore era calibrato per un gruppo di livello 5. Per un gruppo che inizia al livello 8 con +2 a tutti i livelli di unità, il totale corretto è **6.161** (incremento ×1,60). Il numero si avvicina a quello dell'orda originale del modulo a piena potenza (~5.000-6.000), ma arricchito dalle fazioni custom.
-
----
-
-## 4. DISTACCAMENTI E DISPIEGAMENTI
-
-### 4.1 Distaccamento A — Assedio di Hammerfist (già avvenuto)
-
-Inviato **prima** della marcia principale, per eliminare le Miniere Hammerfist come minaccia al fianco.
-
-| Unità | Numero Inviato | Caduti in Battaglia | Sopravvissuti |
+| Distaccamento | Unità | Destino | Stato canonico |
 |---|---|---|---|
-| Fanteria Hobgoblin | 500 | 195 | 305 |
-| Orc Ausiliari | 100 | 40 | 60 |
-| Bugbear | 80 | 30 | 50 |
-| Wolf Rider | 50 | 15 | 35 |
-| Ogre | 15 | 5 | 10 |
-| Giganti delle Colline | 8 | 3 | 5 |
-| Ettin (incluso Gorthak) | 2 | 1 (Gorthak — condizionale) | 0-1 |
-| Troll | 10 | 4 | 6 |
-| Barghest | 15 | 8 | 7 |
-| War Adept | 8 | 3 | 5 |
-| Warpriest | 4 | 2 | 2 |
-| Fauci di Palude (drago nero) | 1 | 0 (fuggito gravemente ferito) | — |
-| **TOTALE HAMMERFIST** | **793 + drago** | **~306** | **~486** |
+| **Vanguard Hammerfist** (Fauci di Palude + 900 unità) | 900 | Hammerfist | **Distrutto Day 19** (vedi file Arc 08) |
+| **Contingente Rhest** (Saarvith + Regiarix + 200 drow/goblin + 2 Razorfiend) | 200 | Lake Rhest | **A rischio** P2 Arc-09 |
+| **Contingente Torre** (Zalkatar + Ozyrrandion + 150 Illithid thralls + 1 Razorfiend) | 150 | Invisible Tower | **A rischio** P2A Arc-09 |
+| **Cellula Dauth** (Xal'thor + 100 Illithid psionic + thralls) | 100 | Dauth | **Day 3 Tournament fixed assault** |
 
-> **Esito Hammerfist:** 300 nani iniziali, 210 caduti. L'orda ha perso ~306 unità (38% del distaccamento). I ~486 sopravvissuti si ritirano e **raggiungono la colonna principale entro la settimana 2 della marcia** (riducendo le perdite nette permanenti a 306).
+**Totale deviato dal main body**: ~1.350 unità.
+**Main body marciante attuale**: ~9.940 − 1.350 = **~8.590** (prima di
+Hammerfist).
 
-### 4.2 Distaccamento B — Operazione Dauth (Githyanki + supporto)
-
-Forze speciali inviate in parallelo verso Dauth per missione strategica separata (Githyanki fleet operations, torneo come copertura, operazioni psioniche).
-
-| Unità | Numero Inviato | Caduti | Sopravvissuti |
-|---|---|---|---|
-| Cavalieri Githyanki | 200 | 50 | 150 |
-| Guerrieri Githyanki | 150 | 40 | 110 |
-| Psion Githyanki | 25 | 5 | 20 |
-| Drow di supporto | 100 | 20 | 80 |
-| Scorta Hobgoblin d'Élite | 100 | 20 | 80 |
-| **TOTALE DAUTH** | **575** | **~135** | **~440** |
-
-> **Nota:** I sopravvissuti Githyanki **si ricongiungono all'orda alla settimana 3** della marcia, prima dell'assedio di Rethmar. Le perdite variano in base alle azioni dei PG al torneo di Dauth.
-
-### 4.3 Corpo Principale (in marcia verso Rethmar)
-
-Forza disponibile per la marcia diretta:
-- Totale iniziale: **6.161**
-- Meno Distaccamento Hammerfist: **−793**
-- Meno Distaccamento Dauth: **−575**
-- **Corpo Principale iniziale: 4.793**
+**Post-Hammerfist (Day 19)**: Vanguard annientato (900 unità perse,
+parte già contate). Main body perde ulteriori ~100 per attrition/battle
+ricollegato → **~8.490 attivi**.
 
 ---
 
-## 5. DINAMICA DELLA MARCIA — SETTIMANA PER SETTIMANA
+## 4. Additivi Condizionali (applicati a Rethmar)
 
-### Fattori di Attrito Standard
+Trigger ⇒ modifica al totale orda a Rethmar:
 
-| Fattore | Perdita Stimata per Settimana |
+| Condizione | Modifica |
 |---|---|
-| Malattia e infortuni da terreno | 1,5% del corpo in marcia |
-| Diserzione (elementi inaffidabili) | 0,5% per settimana |
-| Scontri con avamposti/milizie | 0,3% per settimana |
-| Logistica insufficiente (fame) | 0,5% se supply line interrotta |
-
-**Attrito standard: ~2,5% per settimana sul corpo principale.**
+| **Ghostlord NON neutralizzato** (default AP) | +2.400 non-morti Fase 2 |
+| **Ghostlord neutralizzato dai PG** | solo +400 non-morti (piccolo distaccamento pre-inviato) |
+| **Ghostlord redento** (branch raro) | 0 non-morti ostili; +600 non-morti "buoni" fra i difensori |
+| **Xal'thor allea con Mano Rossa** | +400 Illithid thralls |
+| **Il Collezionista interviene** | +300 cultisti Rakshasa |
+| PG vincono a Rhest (Regiarix + Saarvith) | −200 unità, −1 drago, −2 Razorfiend |
+| PG vincono Torre (Zalkatar + Ozyrrandion) | −150 unità, −1 drago, −1 Razorfiend |
+| PG catalizzano Loxo/Centaur revolt | −480 unità + disruption logistica −100 |
+| PG sabotano rifornimenti Cannath Vale | −300 attrition |
 
 ---
 
-### 5.1 SETTIMANA 1 — Wyrmbones → Traghetto di Drellin
+## 5. Difensori — Tabelle PG-Dipendenti
 
-**Situazione:** Il corpo principale di 4.793 lascia le Wyrmbones e avanza verso il Traghetto di Drellin attraverso i Nimon Gap. I centauri rallentano la colonna del 15%.
+### 5.1 Garantiti (2.200)
 
-| Evento | Impatto |
+| Contingente | Numero |
 |---|---|
-| Attrito standard (2,5% di 4.793) | −120 |
-| Azione PG al Traghetto di Drellin | −30 (difensori locali) o 0 se abbandonato |
-| Eventuale distruzione del Ponte di Skull Gorge | −200 (se distrutto: perdite al guado alternativo) |
-| Rallentamento centauri (già incluso nel timing) | +2 giorni extra di marcia |
+| Guarnigione Rethmar (Valerius + milizia urbana) | 1.200 |
+| Rifugiati armati da villaggi caduti (Vraath/Drellin/Terrelton ecc.) | 600 |
+| Truppe Consiglio Rethmar (se Thorik/Brenna hook OK) | 400 |
 
-**Forza a fine Settimana 1:**
-- Senza distruzione ponte: **4.643**
-- Con distruzione ponte: **4.443**
+### 5.2 Condizionali (max +2.250)
 
-### 5.2 EVENTUALE — Rivolta dei Centauri
-
-*Si attiva se i PG sabotano i collari magici, liberano capi tribù, o i centauri vedono un momento di debolezza.*
-
-| Fase Rivolta | Descrizione | Perdite Mano Rossa | Perdite Centauri |
-|---|---|---|---|
-| **Innesco** | I 400 centauri rompono le catene durante la marcia | 0 | 0 |
-| **Battaglia di 2-4 ore** | Centauri combattono per la libertà; guardie hobgoblin ingaggiate | −180 hobgoblin/orc uccisi | −280 centauri uccisi |
-| **Fuga** | 120 centauri superstiti fuggono nelle pianure dello Shaar | 0 | 120 fuggiti, liberi |
-| **Riassestamento** | L'orda perde tempo a riorganizzarsi: +1 giorno extra di marcia | — | — |
-
-**Effetti netti della Rivolta:**
-- Mano Rossa: **−180 combattenti** + −400 centauri (non più disponibili)
-- Tempo di marcia: **+1 giorno**
-- Morale hobgoblin: **−1 alle unità vicine per 24h** (testimoni dell'ammutinamento)
-- Possibile BONUS NARRATIVO: i 120 centauri fuggiti potrebbero raggiungere Rethmar e portare informazioni sull'orda (DM discrezione)
-
-### 5.3 EVENTUALE — Rivolta dei Loxo
-
-*Si attiva se i PG distruggono i controlli magici, o i Loxo vengono troppo maltrattati (DM: trigger al 3° atto di crudeltà estrema).*
-
-| Fase | Descrizione | Perdite Mano Rossa | Perdite Loxo |
-|---|---|---|---|
-| **Scatenamento** | 40 Loxo in berserk si scagliano sulla colonna | 0 | 0 |
-| **Stampede (1-2 ore)** | Gli elefanti da guerra si scatenano su tutto ciò che è vicino | −120 (calpestati/uccisi) | −15 Loxo abbattuti |
-| **Contenimento** | I war adepts e sciamani draconici ricontrollano 25 Loxo | — | 25 ri-domati |
-| **Conseguenze** | 25 Loxo rimasti (meno efficaci, trauma magico) | — | — |
-
-**Effetti netti della Rivolta Loxo:**
-- Mano Rossa: **−120 combattenti** + i Loxo disponibili scendono a 25 con efficacia ridotta
-- Terrore: colonne vicine devono superare prove morale (Volontà CD 16)
-
-### 5.4 SETTIMANA 2 — Skull Gorge → Valle Centrale
-
-| Evento | Impatto |
-|---|---|
-| Attrito standard (2,5% della forza residua) | ~−110 |
-| Ricongiungimento sopravvissuti Hammerfist (+486) | **+486** |
-| Azioni PG a Terrelton/Witchcross | −50 a −150 (dipende dalle sabotage) |
-| Incursioni druidiche (se Hella ha completato il rituale) | −50 |
-
-**Forza stimata a fine Settimana 2:**
-- Base (senza rivolta centauri, senza Loxo): **~4.800–5.000** (con ritorno Hammerfist)
-- Con Rivolta Centauri: **~4.500–4.700**
-- Con Rivolta Loxo aggiuntiva: **~4.350–4.550**
-
-### 5.5 SETTIMANA 3 — Nimon Gap → Approccio a Rethmar
-
-| Evento | Impatto |
-|---|---|
-| Attrito standard (2,0%) | ~−95 |
-| Ricongiungimento distaccamento Dauth (+440) | **+440** |
-| Sabotaggio Campi Drow (se PG lo fanno) | −100 a −250 (Drow) |
-| Missioni brevi PG (Gith/Funghi) | −50 a −150 |
-| Missione Ghostlord (se PG trattano) | −18 wyvern (torna al Lich) |
-| Ambuscata al Passo di Nimon (se PG la organizzano) | −100 a −300 |
+| Alleanza | Contributo | Condizione (file Arc-09) |
+|---|---|---|
+| Elfi Starsong Hill | +500 | `Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-*.md` — quest completata |
+| Nani di Dauth | +400 | `Arco-Post-Hammerfist-P2B-Torneo-*.md` — Tordek vince |
+| Druidi Cerchio Sacro + Treant | +150 | `Arco-Post-Hammerfist-P1B-Cerchio-Treant-*.md` — Hella ritual OK |
+| Ghostlord alleato (branch raro) | +600 non-morti buoni | `Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-*.md` — redenzione |
+| Mercenari Salvatore (rischio) | ±300 | Salvatore smascherato → ±0 (tradisce), non smascherato → +300 instabili |
+| Hammerfist 150 lance | +150 | Thorik wins at Dauth/diplomacy |
 
 ---
 
-## 6. DIMENSIONE DINAMICA — TABELLA DI STATO CAMPAGNA
+## 6. Tabella Scenari Finali (ratio target)
 
-| Fase Campagna | Corpo Principale | Hammerfist | Dauth | Centauri | Loxo | TOTALE ATTIVO |
-|---|---|---|---|---|---|---|
-| **T-0: Assemblaggio** | 4.793 | 793 | 575 | 400 | 40 | **6.161** |
-| **T-1: Fine Sett. 1 (pont. intatto)** | 4.643 | *in battaglia* | *in operazione* | 0-400 | 0-40 | *variabile* |
-| **T-1b: Fine Sett. 1 (pont. distrutto)** | 4.443 | *in battaglia* | *in operazione* | 0-400 | 0-40 | *variabile* |
-| **T-2: Dopo Rivolta Centauri** | −180 | — | — | **0** (fuggiti) | — | −580 totale |
-| **T-2b: Dopo Rivolta Loxo** | −120 aggiuntivi | — | — | — | **25** (ridotti) | −120 aggiuntivi |
-| **T-2c: Fine Sett. 2 (ritorno Hammerfist)** | +486 | rientrati | *in operazione* | — | — | +486 |
-| **T-3: Fine Sett. 3 (ritorno Dauth)** | +440 | — | rientrati | — | — | +440 |
-| **T-Final: Assedio Rethmar** | *vedi sotto* | — | — | — | — | *vedi sotto* |
-
----
-
-## 7. FORZA ALLA BATTAGLIA DI RETHMAR
-
-### Scenario A — Minimo (tutto va bene per i PG)
-
-*Ponte distrutto + Rivolta Centauri + Rivolta Loxo + Sabotaggio Drow + Ambuscata Nimon + Ghostlord ritirato*
-
-| Fonte | Numero |
-|---|---|
-| Corpo principale (3 settimane attrition + tutti gli eventi) | 3.800 |
-| Ritorno Hammerfist (ridotto da scontri) | +350 |
-| Ritorno Dauth (ridotto da sabotaggio PG) | +250 |
-| Drow residui (dopo sabotaggio) | +120 |
-| **TOTALE SCENARIO A** | **4.520** |
-
-### Scenario B — Medio (alcune azioni PG riuscite)
-
-*Ponte distrutto + nessuna rivolta razziale + Sabotaggio parziale Drow*
-
-| Fonte | Numero |
-|---|---|
-| Corpo principale (2,5 sett. attrition standard) | 4.350 |
-| Ritorno Hammerfist | +486 |
-| Ritorno Dauth | +440 |
-| Drow residui | +200 |
-| Gnoll (perso ~100 per attrition) | 600 rimanenti inclusi sopra |
-| **TOTALE SCENARIO B** | **5.476** |
-
-### Scenario C — Massimo (PG non interferiscono)
-
-*Nessun sabotaggio, nessuna rivolta, ponte intatto*
-
-| Fonte | Numero |
-|---|---|
-| Corpo principale (attrition minima) | 4.580 |
-| Ritorno Hammerfist | +486 |
-| Ritorno Dauth | +440 |
-| **TOTALE SCENARIO C** | **5.506** |
-
-### RAPPORTO DI FORZE A RETHMAR
-
-| Scenario | Mano Rossa | Difensori Rethmar (miglior caso) | Difensori (peggior caso) | Rapporto (medio) |
+| Scenario | Orda | Difensori | Rapporto | Esito probabile |
 |---|---|---|---|---|
-| A (PG attivi) | 4.520 | 2.400 | 1.050 | 2:1 |
-| B (PG parzialmente attivi) | 5.476 | 2.400 | 1.050 | 2,8:1 |
-| C (PG inattivi) | 5.506 | 1.050 | 1.050 | 5,2:1 |
+| **Worst** (Ghostlord ostile, Xal'thor allea, 0 quest) | ~12.700 | 2.200 | **5.8:1** | Rethmar cade |
+| **Baseline** (Ghostlord morto/neutrale, 0 quest) | ~9.400 | 2.200 | **4.3:1** | Sconfitta quasi certa |
+| **Medio** (2-3 quest + sabotaggi parziali) | ~8.000 | 3.100 | **2.6:1** | Difficile ma vincibile con PG eroici |
+| **Ottimale** (tutte quest + Rhest + Tower) | ~6.800 | 4.100 | **1.66:1** | Vittoria con perdite |
+| **Leggendario** (ottimale + Ghostlord redento + Collezionista stop) | ~6.400 | 4.700 | **1.36:1** | Vittoria decisiva |
+
+**Baseline narrativo**: Hammerfist = 900/300 = **3:1**, vinta con
+sacrifici (210 nani caduti su 300). Rethmar deve essere percepita come
+**peggio di Hammerfist** senza PG, **alla pari con Hammerfist** con
+sforzo medio, **meglio di Hammerfist** solo se i PG eccellono.
 
 ---
 
-## 8. DIFENSORI — CITTÀ E VILLAGGI
+## 7. Interazione con March Clock (AP ufficiale)
 
-### 8.1 Rethmar (Brindol — Grande Città, ~40.000 mo limite ricchezza)
+Dettagli completi in `Armate-SINCRONIZZAZIONE-CAMPAGNA.md` §2 (waypoint
+ledger AP Day 1→40).
 
-**Popolazione stimata:** 14.000–16.000  
-**Categoria insediamento:** Grande Città (Large City, DMG 3.5)
+**Sync Point Day 19**: Terrelton equivalent cade *simultaneamente* alla
+fine della Battaglia di Hammerfist. Questo è il **punto di sincronia
+canonica** per tutta l'Arco-09.
 
-| Unità Difensore | Livello | Numero | Note |
-|---|---|---|---|
-| Guardia Urbana Regolare | Fighter 3 | 400 | Pattuglie giornaliere |
-| Guardia d'Élite (Lord Jarmaath) | Fighter 5 | 100 | Difesa del palazzo |
-| Milizia Armata (emergenza) | Warrior 1 | 300 | Cittadini mobilitati |
-| Arcieri sulle Mura | Ranger 4 / Warrior 3 | 150 | Torri di guardia |
-| Cavalleria Cittadina | Ranger 4 | 80 | Ricognizione e flank |
-| Maghi da Guerra di Rethmar | Wizard 7 / Sorcerer 6 | 20 | Supporto arcano |
-| Capitana Brenna Sorvane (PNG) | Fighter 10 | 1 | Comandante militare |
-| **TOTALE RETHMAR (guarnigione fissa)** | | **1.051** | |
+**Days 20-39**: window PG per Arc-09 (Hella, Tordek, Artemis, Thorik
+quest + Rhest + Tower + eventuale Ghostlord).
 
-> **Nota Consiglio:** Il Consigliere Halveth è corrotto da Conte Valerius. Se i PG non lo rimuovono prima della battaglia, −50 guardie (deviazioni di risorse) e +1 CR effettivo Fase 0.
-
-### 8.2 Cannathgate (Dennovar — Grande Città, ~40.000 mo)
-
-**Popolazione stimata:** 12.000–15.000
-
-| Unità Difensore | Livello | Numero | Note |
-|---|---|---|---|
-| Guardia Urbana | Fighter 3 | 350 | Difesa locale |
-| Milizia | Warrior 1 | 250 | Emergenza |
-| Cavalleria Cannathgate | Fighter 4 | 60 | Supporto stradale |
-| **TOTALE CANNATHGATE** | | **660** | Difficilmente si spostano; max 150 inviano a Rethmar |
-
-### 8.3 Rifugi di Hammerfist (Piccola Città, ~15.000 mo)
-
-**STATO POST-BATTAGLIA:**
-
-| Categoria | Numero | Note |
-|---|---|---|
-| Guerrieri Nani iniziali | 300 | Prima della battaglia |
-| Caduti in battaglia | −210 | 70% di perdita |
-| **Sopravvissuti guarnigione** | **90** | Feriti/guaritori |
-| 150 Lance del Re (se Tordek vince torneo) | +150 | Fighter 4–6, élite nanica |
-| **TOTALE HAMMERFIST** | **240** (senza 150 lance) / **390** (con le lance) | |
-
-> Le **150 Lance Naniche** sono il premio narrativo del Torneo di Tordek. Se il torneo è completato con successo, Re Thorek le invia a Rethmar come forza di élite. Arrivano **Giorno 35** (5 giorni prima del picco dell'assedio).
-
-### 8.4 Accampamento Tiri Kitor (Grande Paese, ~3.000 mo)
-
-**Popolazione:** ~2.000 elfi selvatici  
-**Esito dipendente dalla Quest Starsong Hill:**
-
-| Scenario | Forza Disponibile |
-|---|---|
-| Alleanza piena (quest completata) | 300 Esploratori Elfi + 50 Ranger Montati su Civette (GS 8) |
-| Alleanza parziale | 150 esploratori, nessun montato |
-| Nessuna alleanza | 0 |
-
-### 8.5 Traghetto di Drellin (Grande Paese, max 3.000 mo / 5.000 durante la fiera)
-
-| Unità | Numero | Destino |
-|---|---|---|
-| Milizia locale | 120 | La maggior parte evacua prima dell'arrivo dell'orda |
-| Magister e armati | 80 | Tentano resistenza simbolica o evacuano |
-| **Utili per Rethmar** | **0–50** | Solo se PG organizzano evacuazione armata |
-
-### 8.6 Terrelton (Grande Paese, ~3.000 mo)
-
-| Unità | Numero | Destino |
-|---|---|---|
-| Milizia | 80 | Evacuano verso Rethmar (portano rifornimenti) |
-| **Utili per Rethmar** | **30–50** | Volontari rimasti |
-
-### 8.7 Fosso di Nimon / Nimon Gap (Villaggio, ~200 mo)
-
-| Unità | Numero | Note |
-|---|---|---|
-| Milizia | 25 | Evacuano o si nascondono |
-| Valore tattico | Passo stretto | Utile per ambuscata PG |
-
-### 8.8 Talar (Piccolo Paese)
-
-| Unità | Numero | Note |
-|---|---|---|
-| Milizia | 35 | Evacuano verso Rethmar |
-| Messaggero druidico | 1 PNG speciale | Connessione con il Circolo di Witchcross |
-
-### 8.9 Guado delle Streghe / Witchcross (Grande Paese, ~3.000 mo)
-
-**Speciale:** Il Circolo di Druidi dei Custodi di Eth è in questa foresta.
-
-| Unità | Numero | Condizione |
-|---|---|---|
-| Milizia di Witchcross | 80 | Evacuano |
-| Druidi del Circolo (Custodi di Eth) | 12–15 | Se Hella completa il rituale |
-| Treant alleati | 4–6 | Se Hella pianta il Ghianda del Cerchio |
-| Animali compagni (orsi, leoni, grandi rapaci) | ~30 | Per ogni druido |
-| **Valore a Rethmar** | ~60–120 equivalenti combattenti | Solo se Hella ha successo |
+**Day 40**: orda arriva a Rethmar e si accampa. Fase 0 (Notte dei Drow)
+parte quella notte.
 
 ---
 
-## 9. COALIZIONE DEI DIFENSORI — RETHMAR (BATTAGLIA FINALE)
+## 8. Note di Transizione da v1
 
-### 9.1 Forze Sempre Disponibili (Garantite)
-
-| Unità | Numero | Fonte |
-|---|---|---|
-| Guarnigione Rethmar (fissa) | 1.051 | Sezione 8.1 |
-| Rifugiati armati (Terrelton, Talar ecc.) | 80 | Evacuati mobilitati |
-| **Subtotale garantito** | **1.131** | |
-
-### 9.2 Forze Condizionate da Scelte e Quest dei PG
-
-| Condizione | Forza Aggiuntiva | Requisito |
-|---|---|---|
-| 150 Lance Naniche di Re Thorek | +150 (Fighter 4–6) | Tordek vince il Torneo |
-| Rinforzi Cannathgate | +150 | Diplomatica (Diplomacy CD 20 o Thorik presenta piano) |
-| Cavalieri Tiri Kitor (su civette giganti) | +350 (300 esploratori + 50 montati) | Quest Starsong Hill completata |
-| Circolo Druidico + Treant + animali | +80 equivalenti | Hella completa il rituale del Bosco Sacro |
-| 12 Ranger Elfici su Gufi (post-Hammerfist) | +12 (Capitano Lunapiena incluso) | Già disponibili (arrivati da Hammerfist) |
-| Ghostlord (alleato) — Undead | +300 non-morti (leoni spettrali, scheletri) | PG negoziano con il Lich (Diplomacy CD 30–35) |
-| Orion Pelleorsa (PNG druido, GS 14) | +1 (ma potenzia animali e treant) | Partì da Hammerfist; ritorna se avvisato |
-| Maestro Tempestas (PNG bardo/arcimago) | +1 (Cantata della Tempesta Tonante) | Se PG lo hanno supportato come alleato |
-| Circolo degli Otto (Arcimaghi) | +8 arcimaghi (solo rituale Mythal) | Arrivano fissi Giorno 38 |
-
-### 9.3 Riepilogo Coalizione per Scenario
-
-| Scenario | Forze Difensori | Note |
-|---|---|---|
-| **Miglior caso** (tutti i requisiti soddisfatti) | **~2.282** | Tutto: 150 lance + Cannathgate + Tiri Kitor + Druidi + 12 ranger + Ghostlord |
-| **Caso medio** (metà delle alleanze) | **~1.700** | 150 lance + Tiri Kitor + Druidi o solo alcuni |
-| **Peggior caso** (nessuna alleanza) | **~1.131** | Solo guarnigione + rifugiati |
-
----
-
-## 10. IMPATTO DELLE RAZZE SCHIAVIZZATE SULLA MARCIA
-
-### Effetto Rallentamento
-
-| Razza | Fattore | Impatto |
-|---|---|---|
-| Centauri (400, resistenza passiva) | −15% velocità marcia | +2-3 giorni per arrivare a Rethmar |
-| Loxo (40, difficili da controllare) | −5% velocità + logistica extra | +0,5-1 giorno; mangiano molto |
-| Entrambi in rivolta | +4-5 giorni totali | Azarr Kul's Clock rallenta di 4-5 giorni |
-
-**Significato narrativo:** Se i PG provocano entrambe le rivolte nella settimana 1, guadagnano ~5 giorni extra per le quest personali (Sacro Bosco, Torre Invisibile, Rhest, Torneo) prima che l'orda arrivi a Rethmar.
-
-### Impatto sul Clock di Azarr Kul
-
-Il clock di Azarr Kul è attualmente a **9/18 giorni**.  
-
-| Condizioni | Giorni rimasti prima dell'assedio |
-|---|---|
-| Nessuna interferenza PG | **9 giorni** |
-| Solo rivolta centauri | **+2** → 11 giorni |
-| Solo rivolta loxo | **+1** → 10 giorni |
-| Entrambe le rivolte | **+3** → 12 giorni |
-| Ponte di Skull Gorge distrutto | **+2-3** → 11-12 giorni |
-| Tutte le interferenze | **+5-6** → 14-15 giorni |
-
----
-
-## 11. COMPOSIZIONE VOLO E UNITÀ SPECIALI ALL'ASSEDIO DI RETHMAR
-
-### Forze Aeree della Mano Rossa (all'assedio)
-
-| Unità | Numero iniziale | Stimato all'Assedio | Note |
-|---|---|---|---|
-| Wyvern (se Ghostlord non trattato) | 18 | 14-16 | Persi 2-4 nella marcia |
-| Manticore | 12 | 10 | |
-| Cavalieri Githyanki su Drago | 150-200 | 100-150 | Dipende dal torneo di Dauth |
-| Draghi Giovani Adulti (alleati Azarr Kul) | 2-3 | 2 | Non inclusi nei numeri sopra |
-| Fauci di Palude (Drago Nero) | 1 | **0** | Fuggito ferito da Hammerfist — non rientra |
-
-### Forze d'Assedio (artiglieria)
-
-| Tipo | Numero | Note |
-|---|---|---|
-| Catapulte da assedio | 8 | Costruite durante la marcia (legname delle foreste) |
-| Arieti | 4 | Per ogni grande porta |
-| Torri d'assedio | 3 | Costruzione richiede 5 giorni di sosta |
-
-> **Nota:** Se i PG sabotano le catapulte o incendiano i legni durante la marcia, il numero scende a 4-5 catapulte e 2 torri.
-
----
-
-## 12. STRUTTURA COMANDO MANO ROSSA
-
-| Comandante | Ruolo | GS | Stato |
-|---|---|---|---|
-| **Azarr Kul** (Mezzo-drago Hobgoblin) | Alto Wyrmlord, comandante supremo | 15 | Attivo — Fase 3 Rethmar |
-| **Tyrgarun** (Drago Blu Molto Vecchio) | Drago personale di Azarr Kul | 20 | Attivo — Fase 3 Rethmar |
-| **Saarvith** (Wyrmlord) | Wyrmlord di Lhesper, settore est | 12 | Attivo (Rhest) |
-| **Koth "Fauci di Palude"** | Wyrmlord drago nero (ferito) | — | **Fuggito da Hammerfist** |
-| **Generale Grimjaw** | Comandante campo (Orog) | 14 | Condizionale (Hammerfist) |
-| **Matrona Sonjak** | Comandante Drow (Fase 0) | 14 | Attiva |
-| Comandante Githyanki | Comandante Dauth-Rethmar | ~13 | Attivo |
-
----
-
-## 13. FORZE A DAUTH — ARCO POST-HAMMERFIST
-
-Dauth è teatro di due operazioni **simultanee e distinte** nella fase post-Hammerfist mentre i PG svolgono le quest personali.
-
-### 13.1 Distaccamento della Mano Rossa a Dauth (575 totali)
-
-Questi rientrano nel Distaccamento B già conteggiato, ma la loro presenza è critica per la narrativa del torneo.
-
-| Unità | Numero | Ruolo a Dauth |
-|---|---|---|
-| Cavalieri Githyanki (alleati Red Hand) | 200 | Forza di pressione militare; Vaereth li guida verso Dauth |
-| Guerrieri Githyanki | 150 | Fanteria alleata Githyanki |
-| Psion Githyanki | 25 | Guerra mentale, ricognizione psichica |
-| Drow di Sonjak (copertura) | 100 | Ricognizione infiltrata; supporto operazione Zalkatar |
-| Scorta Hobgoblin d'Élite | 100 | Protezione distaccamento |
-| **TOTALE DAUTH** | **575** | |
-
-### 13.2 Fazioni Separate a Dauth (NON parte dell'esercito Red Hand)
-
-> **ATTENZIONE DM:** Queste forze sono **indipendenti** dall'orda della Mano Rossa. Sono opportunisti, alleati di convenienza, o nemici nascosti.
-
-| Fazione | Forza | Relazione con Red Hand | Note |
-|---|---|---|---|
-| Githyanki "Liberi" (drago-cavalieri di Vaereth) | ~80 cavalieri su drago | Separati dai 375 Githyanki dell'orda | Vaereth ha agenda propria: Orbe delle Otto Porte |
-| Xal'thor (Illithid) + Githyanki dominati | ~40 thrall + 1 comandante | **NON alleati** — rivali degli altri Githyanki | Obiettivo: Bracieri Gemelli di Tordek |
-| Sethrax il Velato (infiltrato) | 1 Mind Flayer Psion | Collegato a Zalkatar/Torre Invisibile | Si finge finalista al torneo ("Kethran Mano di Pietra") |
-| Zalkatar (Torre Invisibile, vicino Dauth) | ~30 servi + 1 Illithid Warlock | Nemico dei PG (obiettivo quest Artemis) | Clock a 6/8 — torre sta per diventare mobile |
-
-### 13.3 Rientro delle Forze di Dauth a Rethmar
-
-**Cosa rientra e quando:**
-
-| Condizione Torneo | Forze che rientrano a Rethmar | Timing |
-|---|---|---|
-| Torneo interrotto dal Githyanki (standard) | 440 (85% del distaccamento) | Settimana 3 della marcia |
-| PG battono Xal'thor E Sethrax | 440 + Vaereth possibilmente neutrale | Settimana 3; Vaereth non attacca |
-| Sethrax scappa con Seme di Porta → Zalkatar | Rientrano 440, ma Zalkatar +2 CR per Artemis | — |
-| PG perdono torneo (Tordek sconfitto) | 350 (150 lances NON inviate) | 150 Lance Naniche non arrivano |
-
-**Nota critica:** Il rientro del distaccamento Dauth non è automatico — dipende dall'esito del torneo e dalle azioni dei PG. In un'eventualità estrema (Githyanki si ribellano completamente), potrebbero non rientrare e diventare una terza forza ostile sia alla Mano Rossa che ai difensori.
-
----
-
-## 15. NOTE PER IL DM — COERENZA NARRATIVA
-
-### Perché 6.161 è "impressionante ma reale"
-
-- Un'orda di questa dimensione è plausibile per una campagna militare in Faerûn nel 1372 DR
-- Le tribù di Wyrmbones hanno impiegato **anni** a raccogliere queste forze sotto Azarr Kul
-- I mercenari Gnoll dello Shaar sono stati assoldati con il bottino delle razzie
-- I Centauri e Loxo sono stati catturati in una campagna di 2 anni prima del modulo
-- I Drow e Githyanki hanno accordi di reciproca convenienza, non fedeltà
-- **Perdite realistiche:** Anche in uno scenario "perfetto", l'orda perde ~10-15% PRIMA di Rethmar, il che la porta a 5.000-5.500 combattenti
-
-### Perché i Centauri e Loxo rallentano davvero
-
-- 400 esseri senzienti schiavizzati richiedono **guardie dedicate** (circa 800 hobgoblin su turni)
-- I Loxo mangiano 4-5 volte il cibo di un hobgoblin
-- La resistenza passiva (sabotaggio silenzioso, rifiuto di obbedire) causa attriti continui
-- Questo è realismo militare: anche i migliori eserciti medievali avevano problemi simili con prigionieri e animali da guerra
-
-### Usi Narrativi
-
-1. **Gancio per i PG:** Un centauro catturato potrebbe chiedere aiuto ai PG durante un'ambuscata sull'orda
-2. **Informazioni:** I Loxo liberati potrebbero portare la loro esperienza riguardo la collocazione delle catapulte
-3. **Scena drammatica:** I centauri in rivolta durante la battaglia di Rethmar (se non liberati prima) potrebbero rovesciarsi contro ENTRAMBI gli schieramenti
-4. **Scelta morale:** Liberare le razze schiavizzate aiuta i difensori ma mette a rischio i PG se catturati dall'orda
-
----
-
-## 16. TABELLA RAPIDA DM — STATO DINAMICO
-
-*Aggiornare questa tabella ogni 2-3 sessioni come riflesso dello stato campagna.*
-
-| Campo | Valore Corrente | Ultima Modifica |
-|---|---|---|
-| Forza Corpo Principale (attuale) | 4.793 → da aggiornare | Inizio marcia |
-| Hammerfist sopravvissuti (rientrano) | 486 (W2) | Post-battaglia |
-| Dauth sopravvissuti (rientrano) | 440 (W3) | Post-Dauth |
-| Centauri ancora nell'orda | 400 (0 se rivolta) | Da aggiornare |
-| Loxo ancora nell'orda | 40 (25 se rivolta) | Da aggiornare |
-| Giorni al primo ondata Rethmar | 9 → da aggiornare | Dal clock |
-| Difensori Rethmar (garantiti) | 1.131 | Fisso |
-| Alleanze attivate | 0/6 | Dipende da PG |
-| Lance Naniche in arrivo | 0 (se Tordek non ha vinto) | Dipende da torneo |
-| Ghostlord: alleato/neutrale/nemico | ? | Da decidere |
-
----
-
-*Documento generato per la campagna RumblingStone — Mirtul 1372 DR.*  
-*Calibrato per: Gruppo livello 8 → 13, 4 PG, D&D 3.5, Ambientazione Faerûn/Cannath Vale.*  
-*Coerente con: Arco 08 (Hammerfist), Arco 09 (Post-Hammerfist), campaign/state.md.*
+- **v1** (commit `9a623a8`/`cad0dea`, 6.161 baseline) resta nel git
+  history. Le calcolazioni v1 assumevano scaling di livello 8 per i PG;
+  **v2 assume APL 13 post-Hammerfist**.
+- L'ODS (`Armate-AGGIORNATO.ods`) richiede rebuild separato (non
+  gestito in questo commit — [INFERRED — needs DM: rebuild ODS
+  manuale o script a parte]).
+- La refugee flow table in v1 è integrata qui (§5.1) e in
+  `Armate-SINCRONIZZAZIONE-CAMPAGNA.md` con waypoint AP corretti.

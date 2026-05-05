@@ -1,449 +1,162 @@
-# ARMATE — SINCRONIZZAZIONE CON L'ARCO DI CAMPAGNA
-## Campagna RumblingStone — Registro Battaglie, Rifugiati e Tracker Dinamico
+# Armate — Sincronizzazione Campagna (v2 — March Clock AP, 2026-05-05)
 
-> **Fonte di verità unica per il DM.**  
-> Ogni battaglia, devastazione di insediamento e flusso di rifugiati aggiorna il totale  
-> dell'orda e dei difensori a Rethmar. Mantenere sincronizzato con `campaign/state.md`.  
-> In-world date attuale: **Mirtul 1372 DR — Giorno 9/18 della marcia di Azarr Kul**
-
----
-
-## LEGENDA STATI
-
-| Simbolo | Significato |
-|---|---|
-| ✅ | Evento avvenuto — numeri confermati |
-| 🔄 | In corso / imminente |
-| ⏳ | Non ancora accaduto |
-| ❓ | Condizionato da scelte PG |
-| 💀 | Unità eliminate (caduti permanenti) |
-| 🏃 | Rifugiati in fuga verso Rethmar |
+> **Versione**: v2 (AP-canon March Clock Day 1→40, sync point Day 19 =
+> Hammerfist end = Terrelton falls). Supersede v1 refugee-flow draft.
+> **Cross-reference**: `Armate-CALCOLI-ESERCITI-DINAMICI.md` §2-§3;
+> `campaign/state.md` §2.1.
 
 ---
 
-## PARTE 1 — REGISTRO BATTAGLIE DELL'ORDA (marcia da Wyrmbones a Rethmar)
+## 1. Dual-Clock Model (canon 2026-05-05)
 
-### Stato Corrente del Corpo Principale (Giorno 9 di marcia)
+Due orologi **indipendenti** governano la campagna da post-Hammerfist:
 
-| Campo | Valore | Fonte |
-|---|---|---|
-| Corpo principale a inizio marcia | 4.793 | Sezione 4.3 Composizione |
-| Perdite accumulate fino a Giorno 9 | −308 | Registro sotto |
-| Corpo principale attuale | **4.485** | Da aggiornare ogni sessione |
-| Distaccamento Hammerfist (torna Giorno ~14) | 486 in attesa | ✅ sopravvissuti confermati |
-| Distaccamento Dauth (torna Giorno ~16-17) | 440 in attesa | ⏳ |
-| **TOTALE FORZA AZARR KUL (Giorno 9)** | **5.411** | Incluso ritorno future |
+### MARCH CLOCK (AP ufficiale)
 
----
+- Traccia la posizione fisica dell'orda della Mano Rossa.
+- Waypoint deterministici dalla AP RHoD, adattati a Channath Vale.
+- Run: **Day 1 → Day 40**.
+- **Day corrente**: **19** (Terrelton appena caduta / Hammerfist appena
+  conclusa).
 
-### 1.1 GIORNO 1-3 — Partenza dalle Wyrmbones / Nimon Gap
+### RITUAL CLOCK (Azarr Kul /18)
 
-**Stato:** ✅ Avvenuto  
-**Effetto sul territorio:** Il passo di Nimon Gap è sorvegliato; la piccola milizia locale non oppone resistenza organizzata.
+- Traccia **solo** i progressi rituali di Azarr Kul al Fane of Tiamat.
+- **NON avanza** con la marcia.
+- Avanza solo su trigger rituali (sacrifici, congiunzioni planari).
+- **Stato corrente**: `9/18`.
 
-| Evento | Perdite Mano Rossa | Perdite Difensori | Note |
-|---|---|---|---|
-| Attrito terreno montano (2% di 4.793) | 💀 −96 | — | Malattia, cadute, freddo |
-| Milizia di Nimon Gap (25 uomini) | 💀 −5 | 💀 −20 fuggono/cadono | 5 fanno resistenza simbolica |
-| **Totale Giorno 1-3** | **−101** | **−20** | |
-
-**Rifugiati in fuga:** 🏃 ~180 abitanti di Nimon Gap → direzione Rethmar (ETA: Giorno 4-5 a Rethmar)
+**Regola di coerenza**: ogni volta che un DM/agent avanza la Ritual
+Clock, deve tracciare il trigger rituale nel changelog. Non si tira
+"+1 ritual clock per ogni giorno di marcia".
 
 ---
 
-### 1.2 GIORNO 4-7 — Traghetto di Drellin
+## 2. March Clock — Waypoint Ledger AP Day 1→40
 
-**Stato:** ✅ Avvenuto (il clock di Azarr Kul è a 9/18, quindi Drellin è passata)  
-**Effetto sul territorio:** Cittadina bruciata. Rappresenta il primo grande shock per la Valle.
+Adattamento AP RHoD → Channath Vale/Elsir Vale 1372 DR.
 
-| Evento | Perdite Mano Rossa | Perdite Difensori | Note |
-|---|---|---|---|
-| Attrito marcia settimana (1,5%) | 💀 −68 | — | In pianura |
-| Difesa del Magistrato + milizia | 💀 −30 | 💀 −80 (caduti o catturati) | Resistenza disperata |
-| Razzia e incendio | 💀 −5 (incidenti) | — | Insediamento distrutto |
-| **Totale Giorno 4-7** | **−103** | **−80** | |
+| Day | Waypoint AP originale | Equivalente campagna | Evento | Status |
+|---|---|---|---|---|
+| 1 | Horde lascia Fane of Tiamat | idem (Shaar) | Marcia inizia | ✅ |
+| 6 | Vraath Keep occupata | **Vraath equivalent (Channath Vale)** | Base operativa Wyrmlord Koth | ✅ |
+| 8 | Skull Gorge bridge | **Skull Gorge bridge** (nome canonizzato) | Attraversato intatto (**PG non sabotano**, confermato 2026-05-05) | ✅ |
+| 9 | Horde supera ravine | idem | Forze principali passate | ✅ |
+| 12 | Drellin's Ferry assalto | **Drellin eq.** | Villaggio assaltato | ✅ |
+| 13 | Drellin's Ferry cade | idem | Villaggio bruciato | ✅ |
+| **19** | **Terrelton cade** | **Terrelton eq. (Channath Vale city)** | **SYNC POINT: Battaglia di Hammerfist si conclude simultaneamente** | 🎯 **NOW** |
+| 25 | Marth Fen sweep | **Blackfens / Rhest area** | Razorfiend nest active; Saarvith consolidates | ⏳ |
+| 30 | Vanguard raids continue | Raid minori Channath settentrionale | Distaccamenti locali | ⏳ |
+| 33 | Elsir Crossroads | **Channath Crocevia** | Horde si riunisce | ⏳ |
+| 35 | Last supply consolidation | Witchcross fall | Druidi caduti; bosco bruciato | ⏳ |
+| 38 | Advance scouts at Brindol | Scout drow a Rethmar (Notte dei Drow) | Fase 0 inizia | ⏳ |
+| **40** | **Horde arrives Brindol & encamps** | **Horde arriva Rethmar & encamps** | **Rethmar assault Fase 1** | ⏳ |
 
-**Rifugiati in fuga da Drellin's Ferry:** 🏃 ~1.500 su ~2.000 abitanti  
-- Partiti prima/durante l'attacco: ~1.100 → **già a Rethmar (Giorno 6-8)**  
-- Partiti durante il caos: ~400 → **in cammino, arrivano Giorno 9-11**  
-- Catturati/uccisi: ~500
-
-**Armati di Drellin uniti alla difesa di Rethmar:** +110 (guardie cittadine + miliziani)
-
----
-
-### 1.3 GIORNO 7-10 — Passo di Skull Gorge *(BIFORCAZIONE)*
-
-**Stato:** 🔄 In corso / appena avvenuto
-
-#### Scenario A — Ponte distrutto dai PG ❓
-| Evento | Perdite Mano Rossa | Note |
-|---|---|---|
-| Guado alternativo sotto frecce/magie | 💀 −200 | Ingegneri costruiscono zattera |
-| Ritardo: +2-3 giorni di marcia | — | Clock Azarr Kul: aggiungere +2-3 a giorni rimasti |
-| **Totale Skull Gorge (ponte distrutto)** | **−200** | |
-
-#### Scenario B — Ponte intatto
-| Evento | Perdite Mano Rossa | Note |
-|---|---|---|
-| Attraversamento ordinato | 💀 −10 (incidenti) | Nessuna resistenza |
-| **Totale Skull Gorge (intatto)** | **−10** | |
-
-**Segnare qui il risultato:** `[ ] Distrutto −200  [ ] Intatto −10`
+**Window PG per Arc-09**: **Day 20-39** (20 giorni per: Hella Sacred
+Forest, Tordek Dauth Tournament, Artemis Tower, Thorik Rethmar letter,
+P2 Rhest, P3 Ghostlord, eventuali quest secondarie).
 
 ---
 
-### 1.4 GIORNO 8-12 — Talar e Countryside centrale
+## 3. Attrition Ledger (perdite orda per waypoint)
 
-**Stato:** ⏳ Non ancora avvenuto
+Numeri baseline partendo da **9.940 iniziali** (vedi
+`Armate-CALCOLI-ESERCITI-DINAMICI.md` §2.5).
 
-| Evento | Perdite Mano Rossa | Perdite Difensori | Note |
-|---|---|---|---|
-| Attrito marcia (1,5%) | 💀 −67 | — | |
-| Razzia Talar | 💀 −10 | 💀 −25 | Poca resistenza |
-| Colpi di mano Tiri Kitor (se alleati) | 💀 −30 to −80 | 💀 −10 elfi | ❓ Dipende da Starsong Hill |
-| Incursione druidica da Witchcross | 💀 −30 to −50 | 💀 −3 druidi | ❓ Dipende da quest Hella |
-| **Totale Giorno 8-12 (stima)** | **−107 to −207** | **−35 to −45** | |
+| Day | Evento | Perdite | Acquisti | Orda residua |
+|---|---|---|---|---|
+| 1 | Partenza Fane | 0 | — | 9.940 |
+| 6 | Vraath Keep occupata (scaramuccia) | −40 | +20 (gnoll locali si uniscono) | 9.920 |
+| 8-9 | Skull Gorge crossing (attrito naturale) | −30 | — | 9.890 |
+| 12-13 | Drellin's Ferry assalto + saccheggio | −150 | +60 (orchi locali) | 9.800 |
+| 15-17 | Marcia + scontri con partigiani | −80 | — | 9.720 |
+| **19** | **Terrelton assalto + Hammerfist catastrofe simultanea** | −250 (Terrelton) **−900 (Hammerfist vanguard intero)** | +40 (schiavi armati) | **8.610** |
+| 20-24 | Marcia post-Hammerfist, morale −2 | −120 | — | 8.490 |
+| 25 | Blackfens sweep (Razorfiend kills own) | −60 | — | 8.430 |
+| 27-32 | Marcia Channath centrale, attrition | −130 | +200 (Compagnia del Teschio Nero si unisce finalmente) | 8.500 |
+| 33-35 | Elsir Crossroads + Witchcross | −90 | — | 8.410 |
+| 38 | Advance scouts consolidate Rethmar area | −30 | — | 8.380 |
+| **40** | **Arrivo Rethmar** | −30 | +?? (additivi condizionali, vedi §4) | **~8.350 baseline** |
 
-**Rifugiati da Talar:** 🏃 ~400 su ~500 → **arrivano a Rethmar Giorno 10-13**  
-**Armati di Talar:** +35 miliziani
+**Baseline pre-additivi a Rethmar**: **~8.350**.
 
----
+**+ Additivi condizionali** (vedi `Armate-CALCOLI-ESERCITI-DINAMICI.md`
+§4):
 
-### 1.5 GIORNO 9-13 — Terrelton e Guado delle Streghe/Witchcross
+- Ghostlord ostile: +2.400 → 10.750
+- Xal'thor allea: +400
+- Collezionista: +300
+- PG sabotaggi: −200 a −800
 
-**Stato:** ⏳ Non ancora avvenuto
-
-| Evento | Perdite Mano Rossa | Perdite Difensori | Note |
-|---|---|---|---|
-| Terrelton (città in gran parte evacuata) | 💀 −15 | 💀 −30 retroguardia | Bruciata |
-| Circolo Druidi — Azione rallentamento | 💀 −50 | 💀 −4 druidi | Se Hella ha successo; treant e animali |
-| Attrito marcia continuo | 💀 −60 | — | |
-| Sabotaggio PG (approvvigionamenti) | 💀 −50 to −150 | — | ❓ Missioni secondarie |
-| **Totale Giorno 9-13** | **−175 to −275** | | |
-
-**Rifugiati da Terrelton:** 🏃 ~1.600 su ~2.000 → **arrivano a Rethmar Giorno 11-15**  
-**Armati di Terrelton:** +65 miliziani  
-**Rifugiati da Witchcross:** 🏃 ~1.200 su ~2.000 → **arrivano Giorno 12-15** (i druidi rimangono)  
-**Armati di Witchcross:** +60 miliziani
+**Range a Rethmar**: **6.800 (PG ottimali) ↔ 12.700 (worst case)**.
 
 ---
 
-### 1.6 GIORNO 14 — Ricongiungimento Distaccamento Hammerfist
+## 4. Refugee Flow Ledger (verso Rethmar)
 
-**Stato:** ⏳ Imminente (Giorno ~14 di marcia)
+Villaggi/città caduti ⇒ rifugiati verso Rethmar (contribuiscono ai
+difensori armati via §5.1 di `Armate-CALCOLI-ESERCITI-DINAMICI.md`).
 
-| Evento | Cambio Forza MR |
-|---|---|
-| 486 sopravvissuti Hammerfist rientrano | **+486** |
-| Condizioni: feriti lievi, equipaggiamento ridotto | −30 (effettivamente combat-ready) |
-| **Netti aggiunti** | **+456** |
+| Settlement (campagna) | Day caduta | Civili fuggiti | Armati reintegrabili | Arrivo Rethmar |
+|---|---|---|---|---|
+| Vraath eq. | 6 | ~180 | +25 Warrior 1 | ✅ Day 10 (già a Rethmar) |
+| Drellin's Ferry eq. | 12-13 | ~1.500 | +110 misti | ✅ Day 17 |
+| **Terrelton eq.** | **19** | **~1.600** | **+65 Warrior 1** | ⏳ Day 25-28 |
+| Talar | ~22 | ~400 | +35 Warrior 1 | ⏳ Day 28-30 |
+| Witchcross | ~35 | ~1.200 (druidi restano) | +60 Warrior 1 | ⏳ Day 37-39 |
+| Prosser/Hillwatch (est, più sicuri) | ~30 | ~300 | +50 | ⏳ Day 37 |
 
----
+**Totale civili in Rethmar a Day 40**: ~5.180 (sovraffollamento
+logistico, +rischio igiene/cibo).
+**Totale armati reintegrabili**: **~345** (integra il contingente
+"Rifugiati armati" di 600 garantiti).
 
-### 1.7 GIORNO 10-15 — EVENTI RIVOLTA (se PG intervengono) ❓
-
-#### Rivolta Centauri *(se attivata da PG)*
-
-| Fase | Perdite MR | Stato Centauri | Clock |
-|---|---|---|---|
-| Battaglia (2-4h) | 💀 −180 | 280 uccisi | +2 giorni |
-| Fuga sopravvissuti | 0 | 120 liberi (verso Rethmar?) | — |
-| **Risultato** | **−180** | **0 centauri rimasti** | **+2 gg** |
-
-`[ ] RIVOLTA AVVENUTA  [ ] NON AVVENUTA`  
-**Se avvenuta, segnare giorno:** _______
-
-#### Rivolta Loxo *(se attivata da PG)*
-
-| Fase | Perdite MR | Stato Loxo | Clock |
-|---|---|---|---|
-| Stampede (1-2h) | 💀 −120 | 15 uccisi, 25 controllati | +1 giorno |
-| **Risultato** | **−120** | **25 loxo residui** | **+1 gg** |
-
-`[ ] RIVOLTA AVVENUTA  [ ] NON AVVENUTA`
+**Attenzione**: nell'ondata ci sono **3-5 infiltrati Mano Rossa**
+(hobgoblin travestiti + drow + gnoll). Rilevamento: Sense Motive CD
+18 / Detect Magic. Se passano: +1 CR Fase 0 + 20 difensori avvelenati.
 
 ---
 
-### 1.8 GIORNO 14-16 — Sabotaggio Campi Drow (Quest PG) ❓
+## 5. Checklist di Session per il DM
 
-| Risultato Sabotaggio | Perdite Drow | Perdite MR (fuoco amico/collasso) |
-|---|---|---|
-| Sabotaggio pieno (campi + tunnel) | 💀 −200 drow | 💀 −30 |
-| Sabotaggio parziale | 💀 −100 drow | 💀 −15 |
-| Nessun sabotaggio | 0 | 0 |
+Ogni sessione Arc-09, aggiornare (in ordine):
 
-`[ ] Pieno −200 Drow  [ ] Parziale −100  [ ] Nessuno`
-
----
-
-### 1.9 GIORNO 16-17 — Ricongiungimento Distaccamento Dauth
-
-**Stato:** ⏳
-
-| Evento | Cambio Forza MR |
-|---|---|
-| 440 sopravvissuti Dauth rientrano | **+440** |
-| Se Xal'thor sconfitto: Githyanki ridotti | −50 (perdite in più al torneo) |
-| Se Sethrax scappa: Zalkatar +2 CR (non influenza numero) | — |
-| **Netti aggiunti** | **+390 to +440** |
+1. **March Clock**: day attuale (quale waypoint è il successivo?).
+2. **Ritual Clock**: `/18` — avanzato questa sessione? perché?
+3. **Orda residua**: applicare perdite da eventi di sessione.
+4. **PG sabotaggi**: Rhest? Tower? Ghostlord? Loxo/Centaur?
+5. **Alleanze**: nuovi contributi difensori (Starsong, Dauth, Druidi,
+   Ghostlord redento).
+6. **Rifugiati**: nuove ondate arrivate? infiltrati rivelati?
+7. **Scenario corrente**: quale dei 5 scenari (worst/baseline/medio/
+   ottimale/leggendario) è più vicino al momento?
+8. **Aggiornare `campaign/state.md` §2**.
 
 ---
 
-### 1.10 GIORNO 17-18 — Approccio Finale a Rethmar
+## 6. Integration Hooks con Arc-09
 
-| Evento | Perdite MR |
-|---|---|
-| Attrito finale, marcia forzata | 💀 −40 |
-| Missioni brevi PG (ricognizione, sabotaggio) | 💀 −50 to −150 ❓ |
-| Ambuscata organizzata da Rethmar (se Thorik prepara) | 💀 −100 to −300 ❓ |
+File Arc-09 che consumano questo ledger:
 
----
-
-## PARTE 2 — TABELLA CUMULATIVA PERDITE MANO ROSSA
-
-*Aggiornare questa tabella ogni sessione. È la fonte di verità per il totale all'assedio.*
-
-| Fase | Perdite Min | Perdite Max | Stato | Cumulativo Min | Cumulativo Max |
-|---|---|---|---|---|---|
-| Giorno 1-3 (partenza + Nimon) | −101 | −101 | ✅ | −101 | −101 |
-| Giorno 4-7 (Drellin's Ferry) | −103 | −103 | ✅ | −204 | −204 |
-| Skull Gorge (ponte) | −10 | −200 | 🔄❓ | −214 | −404 |
-| Hammerfist rientro (+456) | +456 | +456 | ⏳ | +242 | +52 |
-| Giorno 8-12 (Talar, countryside) | −107 | −207 | ⏳ | +135 | −155 |
-| Rivolta Centauri | 0 | −180 | ❓ | +135 | −335 |
-| Rivolta Loxo | 0 | −120 | ❓ | +135 | −455 |
-| Giorno 9-13 (Terrelton, Witchcross) | −175 | −275 | ⏳ | −40 | −730 |
-| Sabotaggio Drow | 0 | −230 | ❓ | −40 | −960 |
-| Dauth rientro (+390) | +390 | +440 | ⏳ | +350 | −520 |
-| Approccio finale | −90 | −490 | ⏳ | +260 | −1010 |
-
-**Forza alla battaglia di Rethmar (partendo da 4.793):**
-
-| Scenario | Delta totale | Forza Finale |
-|---|---|---|
-| Miglior caso per i PG (max perdite MR) | −1.010 | **3.783** |
-| Caso medio | −375 | **4.418** |
-| Peggio per i PG (min perdite MR) | +260 | **5.053** |
-
-> *Nota: questi numeri includono i rientri di Hammerfist (+456) e Dauth (+390-440). Il picco "miglior caso" include tutte le interferenze PG, entrambe le rivolte, e il sabotaggio completo.*
+- `Arco-Post-Hammerfist-P2-RHEST-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md`
+  → −1 drago, −2 Razorfiend, −200 unità se PG vincono.
+- `Arco-Post-Hammerfist-P2A-Torre-PARTE4-FINALE-Boss-Zalkatar.md`
+  → −1 drago, −1 Razorfiend, −150 unità se PG vincono.
+- `Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-TESTO.md` → decide
+  Ghostlord branch (ostile / neutralizzato / redento).
+- `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md` → consolida
+  numeri finali per la battaglia.
+- `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAN-STRUTTURA.md` →
+  riceve i totali per il briefing DM di battaglia.
 
 ---
 
-## PARTE 3 — FLUSSO RIFUGIATI E MILIZIE VERSO RETHMAR
+## 7. Note v1 → v2
 
-### 3.1 Tabella Flusso Rifugiati (tutti i valori sono stime DM)
-
-| Insediamento | Popolazione | Abitanti in fuga | ETA Rethmar | Armati che si uniscono | Civili a Rethmar | Avvisi |
-|---|---|---|---|---|---|---|
-| **Nimon Gap** | ~200 | ~180 | Giorno 4-5 ✅ | +25 miliziani | ~155 | Primi a partire |
-| **Traghetto di Drellin** | ~2.000 | ~1.500 | Giorno 6-11 ✅/🔄 | +110 guardie + milizia | ~1.390 | 500 catturati/uccisi |
-| **Talar** | ~500 | ~400 | Giorno 10-13 ⏳ | +35 miliziani | ~365 | |
-| **Terrelton** | ~2.000 | ~1.600 | Giorno 11-15 ⏳ | +65 miliziani | ~1.535 | |
-| **Witchcross/Guado delle Streghe** | ~2.000 | ~1.200 | Giorno 12-15 ⏳ | +60 miliziani | ~1.140 | I druidi rimangono |
-| **Prosser** (est, meno colpita) | ~600 | ~200 | Giorno 14-16 ⏳ | +30 | ~170 | Parziale evacuazione |
-| **Hillwatch** (sudest, più sicura) | ~400 | ~100 | Giorno 15-17 ⏳ | +20 | ~80 | Solo se percepiscono il pericolo |
-| **Cannathgate** (non cade) | ~12.000 | 0 (non evacuano) | — | +150 soldati regolari | 0 | Invia forze, non rifugiati |
-| **Centauri fuggiti dalla rivolta** (se avviene) | — | ~120 centauri liberi | Giorno 11-14 ❓ | +120 (cavalieri) | 0 | Potrebbero combattere PER Rethmar |
-| **TOTALE** | | **~5.300 civili** | vari | **~495 + 120 centauri** | **~4.835** | |
-
----
-
-### 3.2 Impatto dei Rifugiati su Rethmar
-
-**Popolazione di Rethmar prima dell'assedio:** ~15.000  
-**Rifugiati stimati in arrivo:** ~5.300  
-**Popolazione durante l'assedio:** ~20.300
-
-#### Effetti Positivi dei Rifugiati
-| Categoria | Beneficio | Quantità |
-|---|---|---|
-| Milizia aggiuntiva (armati fuggiti) | +combattenti extra | +495 Warrior 1 |
-| Centauri fuggiti (se rivolta avvenuta) | +cavalleria pesante | +120 Centaur Warrior 4 |
-| Lavoratori civili per difese | +barricate, pozzi, turni guardia | ~2.000 validi |
-| Artigiani (fabbri, carpentieri di Drellin) | +riparazione armi/mura | ~80 specialisti |
-| Rifornimenti portati da Terrelton | +cibo per assedio prolungato | +2 settimane viveri |
-
-#### Effetti Negativi dei Rifugiati
-| Categoria | Problema | Impatto |
-|---|---|---|
-| Sovraffollamento | Malattia, panico | −1 morale difensori per ogni settimana assedio > 2 |
-| Consumo cibo accelerato | Scorte ridotte | −1 settimana autonomia ogni 1.000 rifugiati extra |
-| Gestione civili durante battaglia | Distrae guardie | −50 guardie su compiti ordine pubblico |
-| Spie potenziali (infiltrati nell'orda) | Rischio sabotaggio | DM: 1-3 agenti drow/hobgoblin mascherati da rifugiati |
-
----
-
-### 3.3 Forza Difensiva Effettiva a Rethmar (con i Rifugiati)
-
-| Categoria | Numero | Livello/Qualità | Condizione |
-|---|---|---|---|
-| Guardia Regolare Rethmar | 400 | Fighter 3 | Garantita |
-| Guardia d'Élite + Lord Jarmaath | 100 | Fighter 5 | Garantita |
-| Milizia Armata Rethmar | 300 | Warrior 1 | Garantita |
-| Arcieri sulle Mura | 150 | Ranger 4 / Warrior 3 | Garantita |
-| Cavalleria Cittadina | 80 | Ranger 4 | Garantita |
-| Maghi da Guerra | 20 | Wizard 7 / Sorc 6 | Garantita |
-| Capitana Brenna Sorvane | 1 | Fighter 10 | Garantita |
-| 12 Ranger Elfici su Gufi | 12 | Ranger 8 | Quasi garantita |
-| Rifugiati armati (Drellin, Nimon, Talar) | 170 | Warrior 1 | Garantita (già arrivati) |
-| Rifugiati armati (Terrelton, Witchcross, altri) | 155 | Warrior 1 | ⏳ Giorni 11-16 |
-| Milizia Rethmar extra (emergenza) | 200 | Warrior 1 | Garantita |
-| **SUBTOTALE GARANTITO** | **1.588** | | |
-| **CONDIZIONATI DA QUEST** | | | |
-| 150 Lance Naniche (se Tordek vince) | 150 | Fighter 4-6 | ❓ Giorno 35 |
-| Rinforzi Cannathgate | 150 | Fighter 3 | ❓ Diplomazia |
-| Esploratori + Cavalieri Tiri Kitor | 350 | Ranger 6 / GS 8 | ❓ Starsong Hill |
-| Circolo Druidi + Treant + animali | 96 | Druid 8-10 / GS 9 | ❓ Quest Hella |
-| Ghostlord — Non Morti | 300 | Vari | ❓ Negoziazione |
-| Centauri fuggiti (se rivolta e PG li convincono) | 120 | Warrior 4 | ❓ Doppia condizione |
-| Orion Pelleorsa + Tempestas (PNG) | 2 | GS 14 | ❓ |
-| **SUBTOTALE CONDIZIONATO** | **1.168** | | |
-| **TOTALE MIGLIOR CASO** | **2.756** | | |
-| **TOTALE GARANTITO** | **1.588** | | |
-
-> **Nota chiave:** Il contributo dei **rifugiati armati (+495 garantiti nel tempo)** aumenta la forza garantita da 1.143 (precedente stima) a **1.588**. La differenza è significativa — queste sono persone arrabbiate che hanno visto le loro case bruciare.
-
----
-
-## PARTE 4 — DEVASTAZIONE DELL'ORDA: CRONOLOGIA DEI VILLAGGI
-
-*Per ogni insediamento: stato prima, durante e dopo il passaggio dell'orda.*
-
-### Traghetto di Drellin ✅ DISTRUTTO (Giorno 4-7)
-- **Prima:** 2.000 abitanti, porto fluviale attivo, mercato bisettimanale
-- **Durante:** Resistenza disperata di ~80 guardie e miliziani; 500 civili non fanno in tempo a fuggire
-- **Dopo:** Bruciato. I magazzini di grano saccheggiati (+2 settimane rifornimenti per l'orda). Il porto demolito.
-- **Impatto sul morale a Rethmar:** I sopravvissuti portano storie di atrocità → +1 rabbia difensori (bonus morale in difesa), −1 morale generale (paura)
-
-### Nimon Gap ✅ ABBANDONATO (Giorno 1-3)
-- **Prima:** ~200 abitanti, posto di tappa sulla strada dorata
-- **Durante:** Evacuazione quasi totale. L'orda passa senza nemmeno fermarsi
-- **Dopo:** Devastato ma non incendiato (non vale il tempo). Il passo è ora presidiato da una guarnigione di 50 hobgoblin.
-
-### Talar ⏳ PROSSIMO (Giorno 8-12)
-- **Prima:** ~500 abitanti, piccolo mercato, connessione druidica (messaggero del circolo)
-- **Durante:** Attacco leggero; la maggior parte ha evacuato. Retroguardia di ~35 miliziani
-- **Dopo:** Bruciato. L'altare druidico nella piazza devastato (innesca possibile azione druidi)
-- **Possibile gancio PG:** Il messaggero druidico di Talar portava una reliquia del Circolo. Se i PG lo salvano prima dell'attacco, il Circolo ottiene un bonus al rituale di Hella.
-
-### Terrelton ⏳ PROSSIMO (Giorno 9-13)
-- **Prima:** ~2.000 abitanti, crocevia commerciale, magazzini di grano
-- **Durante:** 65 miliziani fanno retroguardia mentre i civili fuggono. Resistenza per 2-4 ore
-- **Dopo:** Raso al suolo. Perdita dei magazzini = l'orda si rifornisce MA Rethmar perde i rifornimenti di emergenza del granaro esterno
-- **Impatto logistico MR:** L'orda guadagna +10 giorni di cibo (ritarda pressione fame)
-- **Impatto su Rethmar:** −5 giorni di riserve alimentari autonome (a meno che PG non abbiano trasferito il grano in anticipo)
-
-### Guado delle Streghe / Witchcross ⏳ PROSSIMO (Giorno 9-13)
-- **Prima:** ~2.000 abitanti, bosco druidico adiacente, circolo dei Custodi di Eth
-- **Durante:** I druidi non evacuano — si difendono con animali e magia naturale. Rallentano l'orda di quasi 1 giorno
-- **Dopo:** Insediamento bruciato. Il bosco sacro NON viene toccato (i soldati hobgoblin sono superstziosi; un ordine esplicito di Azarr Kul è necessario per attaccarlo)
-- **Gancio:** Se Hella ha completato il rituale, i druidi hanno già lasciato per Rethmar. Se no, 3-4 druidi muoiono qui difendendo il bosco.
-
----
-
-## PARTE 5 — TRACKER DINAMICO SESSIONE PER SESSIONE
-
-*Il DM compila questa tabella all'inizio/fine di ogni sessione. È sincronizzata con campaign/state.md.*
-
-### STATO CORRENTE (da aggiornare ogni sessione)
-
-| Campo | Valore | Ultima Sessione |
-|---|---|---|
-| **Data in-world** | Mirtul, 1372 DR | — |
-| **Giorno di marcia Azarr Kul** | 9/18 | Aggiornare |
-| **Giorni rimasti all'assedio** | 9 | Aggiornare |
-| **Clock modificato da interferenze PG** | +0 giorni | Aggiornare |
-| **Giorni effettivi rimasti** | 9 | Calcolare |
-| | | |
-| **ORDA — FORZE** | | |
-| Corpo principale (attuale) | 4.485 | Perdite GG 1-7 −308 |
-| Perdite accumulate | −308 | Drellin + Nimon + attrito |
-| Hammerfist (rientrano GG 14) | +486 | ⏳ |
-| Dauth (rientrano GG 16-17) | +440 | ⏳ |
-| Centauri nell'orda | 400 | ❓ (rivolta?) |
-| Loxo nell'orda | 40 | ❓ (rivolta?) |
-| **Forza totale stimata a Rethmar** | **~5.053** (caso base) | Calcolare |
-| | | |
-| **DIFENSORI — FORZE** | | |
-| Guarnigione Rethmar | 1.051 | Fisso |
-| Rifugiati armati già arrivati | +135 | Nimon + parte Drellin |
-| Rifugiati armati in arrivo | +360 | ⏳ Talar, Terrelton, ecc. |
-| Alleanze attivate | 0/6 | Aggiornare |
-| Lance Naniche (condiz.) | 0/150 | ❓ Torneo |
-| Tiri Kitor (condiz.) | 0/350 | ❓ Starsong |
-| Druidi + Treant (condiz.) | 0/96 | ❓ Hella |
-| Ghostlord (condiz.) | 0/300 | ❓ |
-| Centauri fuggiti dall'orda (condiz.) | 0/120 | ❓ se rivolta |
-| **Forza garantita a Rethmar** | **1.588** | Base attuale |
-| **Forza potenziale massima** | **2.756** | Con tutte le alleanze |
-
----
-
-### Checklist Sessione per Sessione
-
-Al termine di ogni sessione, aggiornare i seguenti campi:
-
-```
-SESSIONE N. ___    DATA IN-WORLD: ____________    GIORNO MARCIA: ___/18
-
-ORDA:
- [ ] Perdite questa sessione: −____
- [ ] Corpo principale aggiornato: ____
- [ ] Distaccamenti rientrati: [ ] Hammerfist +486  [ ] Dauth +440
- [ ] Rivolta Centauri: [ ] Sì −180 e −400  [ ] No
- [ ] Rivolta Loxo: [ ] Sì −120  [ ] No
- [ ] Wyvern Ghostlord: [ ] Rimangono 18  [ ] Ritirate 0
- [ ] Drow dopo sabotaggio: ____  (da 305)
- [ ] Clock modificato: +____ giorni
-
-RIFUGIATI:
- [ ] Nimon Gap arrivati: +25 armati, +155 civili
- [ ] Drellin's Ferry arrivati: +110 armati, +1.390 civili
- [ ] Talar arrivati: [ ] Sì +35 armati  [ ] No
- [ ] Terrelton arrivati: [ ] Sì +65 armati  [ ] No
- [ ] Witchcross arrivati: [ ] Sì +60 armati  [ ] No
- [ ] Centauri fuggiti (se rivolta): [ ] Sì +120  [ ] No
-
-ALLEANZE:
- [ ] Lance Naniche (torneo): [ ] Sì +150  [ ] No
- [ ] Cannathgate (diplomazia): [ ] Sì +150  [ ] No
- [ ] Tiri Kitor (Starsong): [ ] Sì +350  [ ] No
- [ ] Druidi/Treant (Hella): [ ] Sì +96  [ ] No
- [ ] Ghostlord (negoziazione): [ ] Sì +300  [ ] No/Nemico
-
-RETHMAR TOTALE:
- Forza garantita: ____
- Forza con alleanze: ____
- Rapporto MR/Difensori: ____:1
-```
-
----
-
-## PARTE 6 — NOTA SULL'INFILTRAZIONE (Agenti Nell'Onda di Rifugiati)
-
-*Un dettaglio realistico e narrativamente ricco.*
-
-**L'orda invia 3-5 agenti mascherati da rifugiati** per infiltrare Rethmar prima dell'assedio. Questi sono:
-- 1-2 hobgoblin con magia di glamour (Disguise Self)
-- 1 drow con un Velo (Veil spell) da Sonjak
-- 1-2 gnoll che fingono di essere mercanti umani feriti
-
-**Obiettivi degli infiltrati:**
-1. Aprire una porta laterale durante la Fase 0 (Notte dei Drow)
-2. Avvelenare le scorte d'acqua del quartiere meridionale (−20 difensori per malattia)
-3. Identificare la posizione del Circolo degli Otto per Azarr Kul
-
-**Come i PG possono scoprirli:**
-- Sense Motive CD 18 durante l'afflusso di rifugiati
-- Detect Magic CD facile (il glamour è rilevabile)
-- Testimonianza di un rifugiato di Drellin che riconosce strane incongruenze
-
-**Se scoperti e neutralizzati:** Fase 0 perde il gancio interno → −2 al CR effettivo della Fase 0.  
-**Se non scoperti:** Porta laterale aperta → +1 CR Fase 0 + 20 difensori avvelenati.
-
----
-
-*Documento creato per RumblingStone — Mirtul 1372 DR.*  
-*Sincronizzato con: `campaign/state.md` §2 (villain clocks), §8 (forces tracker).*  
-*Coerente con: `Armate-CALCOLI-ESERCITI-DINAMICI.md`, `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAN-STRUTTURA.md`.*
+- **v1 (cad0dea)** assumeva clock singolo `/18` combinato march+ritual.
+  v2 li separa (canon 2026-05-05).
+- **v1** riportava perdite confermate −308 a Day 9. v2 riassorbe quel
+  dato nella tabella §3 come parte della fase Drellin.
+- **v1** mancava sync point Hammerfist↔Terrelton. v2 lo canonizza.
+- **v1** non aveva la Compagnia del Teschio Nero. v2 la integra Day
+  27-32.

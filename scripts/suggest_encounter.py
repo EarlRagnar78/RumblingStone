@@ -413,7 +413,7 @@ def build_encounter(pool, target_el, size, rng, forced: list[dict] | None = None
         if not ok or not mix: continue
         el = combine_el(crs)
         score = -abs(el - target_el)
-        if best is None or score > best["score"]:
+        if best is None or score > best["score"]:  # type: ignore[index]
             best = {"mix": mix, "el": el, "score": score}
     return best
 

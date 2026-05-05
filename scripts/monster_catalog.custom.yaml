@@ -1,0 +1,4 @@
+# monster_catalog.custom.yaml — user-edited append-only list.
+# Same schema as monster_catalog.yaml. Merged at read-time by
+# suggest_encounter.py. Not overwritten by build_monster_catalog.py.
+monsters: []

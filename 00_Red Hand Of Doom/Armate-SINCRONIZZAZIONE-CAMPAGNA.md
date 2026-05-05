@@ -1,5 +1,12 @@
 # Armate — Sincronizzazione Campagna (v2 — March Clock AP, 2026-05-05)
 
+> **🛡️ Canonizzazione 2026-05-05**: tutte le unità epiche in §4b
+> (Karruk, Saarvith, Zalkatar, Xal'thor, Zarim, Emissario, Azarr Kul,
+> Tiamat Avatar, Il Collezionista, Ondata Giganti, Warpriest élite,
+> Hobgoblin Captain, Ghost Lion) sono **accettate come canone DM**.
+> Flag: `[ACCEPTED — DM-canon 2026-05-05]`. I trigger scheduling sono
+> vincolanti per l'Arco-09 salvo override esplicito in session log.
+
 > **Versione**: v2 (AP-canon March Clock Day 1→40, sync point Day 19 =
 > Hammerfist end = Terrelton falls). Supersede v1 refugee-flow draft.
 > **Cross-reference**: `Armate-CALCOLI-ESERCITI-DINAMICI.md` §2-§3;
@@ -114,6 +121,50 @@ logistico, +rischio igiene/cibo).
 **Attenzione**: nell'ondata ci sono **3-5 infiltrati Mano Rossa**
 (hobgoblin travestiti + drow + gnoll). Rilevamento: Sense Motive CD
 18 / Detect Magic. Se passano: +1 CR Fase 0 + 20 difensori avvelenati.
+
+---
+
+## 4b. Epic Unit Apparition Triggers (CR 10-18)
+
+> Quando compaiono i boss ad alto-CR sul **March Clock** e/o **Ritual
+> Clock**. Usa questa tabella come *scheduling* narrativo: ogni
+> apparizione sposta la pressione sui PG. Cross-ref:
+> `Armate-CALCOLI-ESERCITI-DINAMICI.md` §2.6 e
+> `Armate-COMPOSIZIONE-DETTAGLIATA.md` §16a-d.
+
+| Day / Trigger | Unità (CR) | Dove | Effetto narrativo |
+|---|---|---|---|
+| **Day 19** (Hammerfist end) | Fauci di Palude (drago CR 15) **morto** | Hammerfist | Rimosso dall'orda; −1 drago |
+| **Day 20-22** | Wyrmlord Karruk (CR 10) si palesa pubblicamente | Channath settentrionale | Voci arrivano a Rethmar: "un nuovo comandante guida la Mano Rossa" |
+| **Day 22-25** | Saarvith + Regiarix (CR 11 + dragon 10) attivi | Rhest / Blackfens | Window PG per P2 Rhest |
+| **Day 24-26** | Zalkatar + Ozyrrandion (CR 13 + dragon 14) attivi | Torre Invisibile | Window PG per P2A Torre |
+| **Day 25-27** | Ghost Lion Spettrali (CR 8, ~6-12) | Ghostlord pride, Thornwaste | Prima apparizione se P3 Ghostlord non agganciato |
+| **Day 26-30** | Xal'thor (CR 14) + Zarim (CR 12) | Dauth (Torneo P2B) | **Fixed**: Day 2 torneo = Zarim; Day 3 = Xal'thor (invasione) |
+| **Day 28-32** | Emissario Red Hand (CR 12) | Ghostlord lair | **Conditional**: parley branch — se PG non intervengono, Ghostlord firma alleanza → +2.400 non-morti a Fase 2 |
+| **Day 30-35** | Il Collezionista (CR 18) — prime tracce | Rethmar shadow / nobiltà | **Conditional shadow branch**: se Valerius hook attivo, Collezionista muove pedine via socialità |
+| **Day 35-38** | Warpriest élite di Tiamat (CR 11, ~6) radunati | Fane di Tiamat | Ritual Clock: **+1 → `10/18`** se sacrificio di massa riuscito |
+| **Day 38-39** | Hobgoblin Captains (CR 8, ~24) coordinano assalto | Avanguardia Rethmar | Promozione visibile: "ogni compagnia ha un capitano draconico" |
+| **Day 40 (Fase 1)** | Abithriax (CR 15) + Wyrmlord Karruk (CR 10) + Ondata Giganti (EL 15, wave ×1) | Rethmar mura | Assalto inaugurale Fase 1 |
+| **Day 40+1 (Fase 2)** | Warpriest élite CR 11 (×6) + non-morti Ghostlord (se ostile) | Circolo Mythal / statue | Ritualisti tentano di rompere il Mythal |
+| **Day 40+2 (Fase 3)** | Azarr Kul (CR 15) + Tyrgarun (drago 13) + Ondata Giganti wave ×2 | Rethmar breccia | Boss-fight principale |
+| **Ritual Clock `/18 = 18`** | **Avatar di Tiamat (CR 17)** evocato | Sopra Rethmar | **Climax conditional**: solo se Ritual Clock completa |
+| **Ritual Clock `/18 ≥ 15` + Collezionista alleato** | Il Collezionista (CR 18) interviene | Rethmar interno (politica) | **Climax shadow**: non encounter ordinario — social/stealth |
+
+**Regola di scheduling**: il DM può anticipare/ritardare di ±2 giorni
+per ragioni di pacing, ma i *fixed* (Day 26-30 Dauth, Day 40 Abithriax,
+Day 40+2 Azarr Kul) sono sync-canon e non vanno spostati senza
+aggiornare anche `campaign/state.md` §2.
+
+**Interazione con Ritual Clock (`/18`, attualmente 9)**:
+
+- Ogni **Warpriest élite sacrificio di massa** (Day 35-38): +1
+- **Ondata Giganti wave ×1** a Fase 1 riuscita (sfonda mura): +2
+- **Ondata Giganti wave ×2** a Fase 3 (breccia finale): +3
+- **Azarr Kul rituale completo** a Fase 3: +3
+- **PG disruzione rituali** (ogni scena di sabotaggio): −1 a −2
+
+Se Ritual Clock arriva a `18/18` → **Avatar di Tiamat** evocato
+(irreversibile, climax Fase 4).
 
 ---
 

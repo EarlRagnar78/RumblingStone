@@ -1,5 +1,11 @@
 # Armate — Calcoli Eserciti Dinamici (v2 — 2026-05-05)
 
+> **🛡️ Canonizzazione 2026-05-05**: il DM ha **accettato** tutte le
+> derivazioni `[INFERRED]` delle unità (file in `Armate-UNITA-NUOVE/`)
+> e tutti i puntatori NPC a `PNG/`. I conteggi §2.x e §2.6 sono canone
+> di campagna; le unità sono valide per encounter/mass-combat
+> immediato. Flag globale: `[ACCEPTED — DM-canon 2026-05-05]`.
+
 > **Versione**: v2 (rescaled ~10.000 baseline, dual-clock, AP-canon 5 dragons).
 > **Supersede**: v1 (6.161 baseline, AP-original scaling). Storia in git.
 > **Canonical references**: `campaign/state.md` §2; `Armate-SINCRONIZZAZIONE-CAMPAGNA.md`;
@@ -24,7 +30,7 @@
    draconic spawn = Razorfiend (colori di Tiamat).
 5. **No invent rule**: nessuna statistica nuova; tutto punta a MM/SRD o
    a file esistenti. Contingenti nuovi ("Compagnia del Teschio Nero")
-   sono concettuali, stat blocks restano a cura del DM o [INFERRED].
+   sono concettuali, stat blocks restano a cura del DM o [ACCEPTED].
 
 ---
 
@@ -103,6 +109,46 @@ guardie dei Wyrmlord upscaled.
 | Dragoni + Razorfiend (non sommati a "unità") | 5 + 8 |
 
 Approssimato a **~10.000** come target narrativo.
+
+### 2.6 Endgame Elite & Epic Tier (Arc 09 Fase 2-3)
+
+> Unità ad alto-CR (8-17) **già incluse** nei totali §2.1-§2.5 (non
+> sommare due volte). Questa tabella ne esplicita il *conteggio* e il
+> *deployment* per la fase endgame, quando i PG sono livello 13-15.
+> Cross-ref: `Armate-COMPOSIZIONE-DETTAGLIATA.md` §16a-d. Tutti
+> `[ACCEPTED — DM-canon 2026-05-05]` salvo nominati AP.
+
+| Unità | CR | Numero | Fonte file | Deployment (arc/fase) |
+|---|---|---|---|---|
+| Hobgoblin Captain (company commander élite) | 8 | ~24 | `Armate-UNITA-NUOVE/hobgoblin-captain-cr8.md` | Promossi dai 60 Warrior-3 §2.1 (1 per compagnia, Fase 1-3) |
+| Warpriest di Tiamat élite (upscale da CR7) | 11 | ~6 | `Armate-UNITA-NUOVE/tiamat-warpriest-elite-cr11.md` | Sottogruppo dei 20 Warpriest §2.1, Fase 2 ritualisti |
+| Emissario Red Hand | 12 | 1-3 | `Armate-UNITA-NUOVE/emissario-red-hand-cr12.md` | **Conditional** (Ghostlord branch; P3 Ghostlord alleanza) |
+| Zarim (Illithid luogotenente) | 12 | ×1 | `Armate-UNITA-NUOVE/zarim-illithid-luogotenente-cr12.md` | Torneo Dauth P2B Day 2 (fixed) |
+| Xal'thor (Illithid Commander) | 14 | ×1 | `PNG/Xal_thor/Xal_thor.md` (pointer) | Torneo Dauth P2B Day 3 (fixed) |
+| Saarvith | 11 | ×1 | `09_.../P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | Rhest P2 (PG deviabile) |
+| Zalkatar | 13 | ×1 | `09_.../P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` | Torre Invisibile P2A (PG deviabile) |
+| Wyrmlord Karruk | 10 | ×1 | `Armate-UNITA-NUOVE/wyrmlord-karruk-cr10.md` | Rethmar Fase 1 assault leader |
+| Ondata Giganti — mass wave | 15 (EL) | ×2 ondate | `Armate-UNITA-NUOVE/ondata-giganti-fanteria-cr15.md` | Rethmar Fase 1 (prima ondata) + Fase 3 (rinforzo) — assorbe gli 80 Hill Giant §2.1 + ogre/ettin supporto |
+| Azarr Kul (finale) | 15 | ×1 | `09_.../P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md` | Rethmar Fase 3 (arrivo Day 40+2) |
+| Avatar di Tiamat (climax) | 17 | ×1 | `Armate-UNITA-NUOVE/avatar-tiamat-cr17.md` | **Conditional**: evocato solo se Ritual Clock ≥18 (Fase 3-4 climax) |
+| Il Collezionista (Rakshasa) | 18 | ×1 | `PNG/Il_Collezionista_Rakshasa.md` (pointer) | **Conditional** shadow branch (non encounter ordinario) |
+| Xal'thor allied thralls (Illithid psion/guerrieri) | 6-8 | ~30-50 | (da `Armate-UNITA-NUOVE/zarim-*` + MM) | **Conditional** se Xal'thor allea Mano Rossa (+400 unità §4) |
+| Ghost Lion Spettrale | 8 | ~6-12 | `Armate-UNITA-NUOVE/ghost-lion-spettrale-cr8.md` | Ghostlord pride (Fase 2 se ostile) |
+
+**Note di coerenza**:
+
+- Gli "Hobgoblin Captain CR 8" (~24) sono una **promozione** dei 60
+  Warrior-3 élite già in §2.1 — non un'addizione. Circa 1 su 2-3 delle
+  compagnie ha ricevuto l'upgrade post-Hammerfist (morale stretch).
+- I "Warpriest élite CR 11" (~6) sono i **più alti ranghi** dei 20
+  Warpriest CR 7 di §2.1, non un nuovo contingente.
+- L'**Ondata Giganti CR 15** è una *unità composita di mass-combat*
+  (Hill Giants + Ogre Skullcrusher + Ettin comando) già conteggiati
+  in §2.1; serve solo per encounter-scaling di battaglia.
+- Xal'thor, Zarim, Zalkatar, Saarvith, Karruk non stanno nell'orda
+  marciante: sono *distaccamenti deviati* (vedi §3) o boss ambientati.
+- **Avatar di Tiamat e Il Collezionista sono eventi di climax**
+  narrativi, non vanno contati nei ratio §6.
 
 ---
 

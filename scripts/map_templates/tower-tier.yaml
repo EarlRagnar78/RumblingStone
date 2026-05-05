@@ -1,0 +1,44 @@
+name: Tower Tier
+environment: dungeon
+type: tower-level
+size: 18x18
+legend:
+  "#": "Outer wall"
+  ".": "Floor"
+  "S": "Spiral staircase up/down"
+  "D": "Door (reinforced, hp 20, DC 23)"
+  "W": "Window / arrow slit (cover for defender, -4 AC)"
+  "B": "Bookshelf / desk (cover)"
+  "C": "Circle / runic ward (trigger spell)"
+  "P": "PC entry (from stairs below)"
+  "A": "Guardian"
+  "E": "Wizard / elite"
+  "L": "Loot / spell component"
+grid: |
+  # # # # # W W W W W W W W W W # # # #
+  # . . . . . . . . . . . . . . . . . #
+  # . . . . . . . . . . . . . . . . . #
+  # . . B . . . . . . . . . . . B . . W
+  # . . B . . . . . . . . . . . B . . W
+  # . . . . . . . . . . . . . . . . . W
+  # . . . . . . C C C . . . . . . . . W
+  # . . . . . C C E C C . . A . . . . W
+  # . . A . . C E E E C . . . . . . . W
+  # . . . . . C E E E C . . . . . . . W
+  # . . . . . C C E C C . . . . L . . W
+  # . . . . . . C C C . . . . . . . . W
+  # . . . . . . . . . . . . . . . . . W
+  # . . . . . . . . . . . . . . . . . W
+  # . . B . . . . . . . . . . . B . . W
+  # . . B . . . . S S . . . . . B . . #
+  # . . . . . . . S S . . . . . . . . #
+  # . . . . . . . D D . . . . . . . . #
+  # # # # # # # # P P # # # # # # # # #
+notes:
+  - "Circular tower floor; PCs enter via stair S from below (P mark)."
+  - "Central runic circle (C) = summoning/teleport ward; DC 25 Spellcraft."
+  - "Wizard (E) is in center; 2 guardians (A); minions around."
+  - "Arrow slits (W) on 3 sides: enemies outside can fire in (-8 to hit due to
+    cover)."
+  - "Stack multiple copies of this tile for Zalkatar-tower-style dungeon."
+  - "Each level is 80ft wide; stairs S connect to next tier."

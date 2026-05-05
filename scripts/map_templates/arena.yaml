@@ -1,0 +1,41 @@
+name: Tournament Arena
+environment: urban
+type: arena
+size: 26x20
+legend:
+  "#": "Arena wall (climb DC 20, 15ft)"
+  ".": "Sand floor"
+  "o": "Obstacle (barrel, log — cover)"
+  "T": "Trap door (opens to pit 20ft, spikes 2d6)"
+  "S": "Spectator stands (elevated, off-grid)"
+  "P": "PC champion start (south gate)"
+  "A": "Opponent start (north gate)"
+  "G": "Portcullis gate (release monsters)"
+  "C": "Central dais / weapon rack"
+grid: |
+  S S S S S S S S S S S S S S S S S S S S S S S S S S
+  # # # # # # # # # # G G # # # # # # # # # # # # # #
+  # . . . . . . . . . . . . . . . . . . . . . . . . #
+  # . . . . . . . . . A A . . . . . . . . . . . . . #
+  # . . . . o . . . . . . . . . . . . . o . . . . . #
+  # . . . . . . . . . . . . . . . . . . . . . . . . #
+  # . . . . . . . . . . . . . . . . . . . . . . . . #
+  # . . . . . . . T . . . . . . . T . . . . . . . . #
+  # . . . . . . . . . . . . . . . . . . . . . . . . #
+  # . . . . . . . . . . C C . . . . . . . . . . . . #
+  # . . o . . . . . . . C C . . . . . . . . . o . . #
+  # . . . . . . . . . . . . . . . . . . . . . . . . #
+  # . . . . . . . T . . . . . . . T . . . . . . . . #
+  # . . . . . . . . . . . . . . . . . . . . . . . . #
+  # . . . . . . . . . . . . . . . . . . . . . . . . #
+  # . . . . o . . . . . . . . . . . . . o . . . . . #
+  # . . . . . . . . . P P . . . . . . . . . . . . . #
+  # . . . . . . . . . . . . . . . . . . . . . . . . #
+  # # # # # # # # # # G G # # # # # # # # # # # # # #
+  S S S S S S S S S S S S S S S S S S S S S S . . . .
+notes:
+  - "Oval arena, 120×100 ft. Spectators (S) above, 15ft up."
+  - "4 trap doors (T): DM may trigger mid-round (Reflex DC 15)."
+  - "Central dais (C) holds weapons/relics — grants bonus if reached."
+  - "Gates G (N/S) open to monster corridors — use for waves."
+  - "Classic Tordek tournament setup; scale for 1v1 duels or 4v4 melee."

@@ -1,0 +1,72 @@
+# loot_tables.yaml — DMG 3.5 Table 3-5 Treasure by Encounter Level
+# Consumed by scripts/suggest_loot.py
+#
+# Values are the standard "treasure per encounter" totals (gp equivalent)
+# from Dungeon Master's Guide 3.5, p.51, Table 3-5.
+# Distribution: coins / goods (gems+art) / items (mundane+magic).
+#
+# Note: in 3.5 the table is per encounter (not per PC) and assumes 13.3 encounters
+# per level. For a 4-PC party APL N, each EL-N encounter yields the row amount.
+
+treasure_by_el:
+  1: { gp: 300, coins_pct: 42, goods_pct: 22, items_pct: 36 }
+  2: { gp: 600, coins_pct: 42, goods_pct: 22, items_pct: 36 }
+  3: { gp: 900, coins_pct: 40, goods_pct: 25, items_pct: 35 }
+  4: { gp: 1200, coins_pct: 40, goods_pct: 25, items_pct: 35 }
+  5: { gp: 1600, coins_pct: 38, goods_pct: 27, items_pct: 35 }
+  6: { gp: 2000, coins_pct: 38, goods_pct: 27, items_pct: 35 }
+  7: { gp: 2600, coins_pct: 35, goods_pct: 28, items_pct: 37 }
+  8: { gp: 3400, coins_pct: 35, goods_pct: 28, items_pct: 37 }
+  9: { gp: 4500, coins_pct: 33, goods_pct: 30, items_pct: 37 }
+  10: { gp: 5800, coins_pct: 33, goods_pct: 30, items_pct: 37 }
+  11: { gp: 7500, coins_pct: 30, goods_pct: 32, items_pct: 38 }
+  12: { gp: 9800, coins_pct: 30, goods_pct: 32, items_pct: 38 }
+  13: { gp: 13000, coins_pct: 28, goods_pct: 32, items_pct: 40 }
+  14: { gp: 17000, coins_pct: 28, goods_pct: 32, items_pct: 40 }
+  15: { gp: 22000, coins_pct: 25, goods_pct: 33, items_pct: 42 }
+  16: { gp: 28000, coins_pct: 25, goods_pct: 33, items_pct: 42 }
+  17: { gp: 36000, coins_pct: 22, goods_pct: 35, items_pct: 43 }
+  18: { gp: 47000, coins_pct: 22, goods_pct: 35, items_pct: 43 }
+  19: { gp: 60000, coins_pct: 20, goods_pct: 36, items_pct: 44 }
+  20: { gp: 80000, coins_pct: 20, goods_pct: 36, items_pct: 44 }
+
+# Price tier → which EL range it's appropriate for
+# Used to gate magic item pools.
+magic_item_tiers:
+  minor_lesser: { el_min: 1, el_max: 6, price_min: 0, price_max: 1000 }
+  minor_greater: { el_min: 4, el_max: 10, price_min: 1000, price_max: 5000 }
+  medium_lesser: { el_min: 7, el_max: 13, price_min: 2500, price_max: 10000 }
+  medium_greater: { el_min: 10, el_max: 16, price_min: 8000, price_max: 20000 }
+  major_lesser: { el_min: 13, el_max: 18, price_min: 15000, price_max: 40000 }
+  major_greater: { el_min: 16, el_max: 20, price_min: 30000, price_max: 100000 }
+
+# Gems & art objects (DMG p.53) — SRD-safe numeric tiers.
+gems:
+  - { price_avg: 10, name: "Agata / corniola / azzurrite" }
+  - { price_avg: 50, name: "Quarzo affumicato / malachite / giada minore" }
+  - { price_avg: 100, name: "Ametista / lapislazzuli / ambra" }
+  - { price_avg: 500, name: "Giada / perla / topazio" }
+  - { price_avg: 1000, name: "Zaffiro minore / opale di fuoco" }
+  - { price_avg: 5000, name: "Diamante minore / rubino / smeraldo" }
+  - { price_avg: 10000, name: "Diamante grande / ambra solare" }
+
+art:
+  - { price_avg: 50, name: "Calice d'argento inciso" }
+  - { price_avg: 250, name: "Statuina in avorio (12 cm)" }
+  - { price_avg: 750, name: "Corona di bronzo tempestata di pietre dure" }
+  - { price_avg: 2500, name: "Arazzo di seta di Rashemen (3x4 m)" }
+  - { price_avg: 7500, name: "Icona sacra d'oro massiccio" }
+
+mundane:
+  - { price_avg: 15, name: "Armi/armature masterwork componenti (1d4 pezzi)" }
+  - { price_avg: 60, name: "Balestra pesante masterwork" }
+  - { price_avg: 100, name: "Veleno debole (dose: purple worm poison, ecc.)" }
+  - { price_avg: 150, name: "Pozione di cura moderata (CL 3)" }
+  - { price_avg: 300, name: "Pergamena arcana 3rd lvl (SRD)" }
+  - { price_avg: 750, name: "Pergamena arcana 5th lvl (SRD)" }
+
+# Density modifiers: --dense = +25%, --sparse = -25%
+density_modifiers:
+  dense: 1.25
+  sparse: 0.75
+  normal: 1.00

@@ -1,0 +1,38 @@
+name: Open Ruins
+environment: ruins
+type: open
+size: 20x20
+legend:
+  "#": "Ruined wall (cover, climb DC 15)"
+  ".": "Flagstone (normal)"
+  "o": "Rubble (difficult terrain)"
+  "C": "Column (total cover from 1 direction)"
+  "P": "PC entry"
+  "A": "Enemy position"
+  "B": "Boss / altar"
+  "L": "Loot / McGuffin"
+grid: |
+  # # # # # # . . . . . . . . # # # # # #
+  # . . . . # . . . . . . . . # . . . . #
+  # . C . . # . . o o o o . . # . . C . #
+  # . . . . . . . . . . . . . . . . . . #
+  # . . . A . . . . . . . . . . . A . . #
+  # . . . . . . . . . . . . . . . . . . #
+  # # # . . . . . . C . C . . . . . . # #
+  . . # . . . . . . . . . . . . . . # . .
+  . . # . . . . . . B L . . . . . . # . .
+  . . # . . . . . . . . . . . . . . # . .
+  . . # . . . . . . C . C . . . . . # . .
+  # # # . . . . . . . . . . . . . . # # #
+  # . . . . . . . . . . . . . . . . . . #
+  # . . . A . . . . . . . . . . . A . . #
+  # . . . . . . . . . . . . . . . . . . #
+  # . C . . # . . o o o o . . # . . C . #
+  # . . . . # . . . . . . . . # . . . . #
+  # # # # # # . . P P P P . . # # # # # #
+notes:
+  - "Roofless; flying enemies viable."
+  - "4 entrances (N/S/E/W); PCs marked P come from South."
+  - "Columns (C) provide total cover from one 90° arc."
+  - "Rubble (o) difficult terrain; useful for kiting."
+  - "Altar (B) is centered: classic boss staging."

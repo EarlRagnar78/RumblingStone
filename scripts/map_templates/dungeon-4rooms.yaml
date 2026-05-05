@@ -1,0 +1,44 @@
+name: Four-Room Dungeon
+environment: dungeon
+type: complex
+size: 30x20
+legend:
+  "#": "Stone wall"
+  ".": "Smooth floor"
+  "D": "Door (wood, hp 15, DC 20)"
+  "S": "Secret door (Search DC 20)"
+  "+": "Portcullis / bars"
+  "T": "Trap marker (see notes)"
+  "P": "PC entry"
+  "A": "Guard / patrol"
+  "E": "Elite / caster"
+  "B": "Boss room"
+  "L": "Loot chest"
+grid: |
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  # . . . . . . . # . . . . . . . # . . . . . . . . . . . #
+  # . . P . . . . D . . A . . . . D . . . E . . . . . . . #
+  # . . . . . . . # . . . . . . . # . . . . . . . . . . . #
+  # . . . . . . . # . . T . . . . # . . . . . . . . . . . #
+  # . . . . . . . # . . . . . . . # . . . L . . . . . . . #
+  # # # D # # # # # # # # # # # # # # # # # # # # # # # # #
+  # . . . . . . . . . . . . . . # . . . . . . . . . . . . #
+  # . . . . . . . . . . . . . . # . . . . . . . . . . . . #
+  # . . . . . . . . . . A . . . S . . . . . . . . . . . . #
+  # . . . . . . . . . . . . . . # . . . . . . . . . . . . #
+  # . . . . . . . . . . . . . . # . . . . . . . . . . . . #
+  # # # # # # # # # # # # + # # # # # # # # # # # # # # # #
+  # . . . . . . . . . . . . . . . . . . . . . . . . . . . #
+  # . . . . . . . . . . . . . . . . . . . . . . . . . . . #
+  # . . . . . . . . . . . E . . . . . . . B . . . . . . . #
+  # . . . . . . . . . . . . . . . . . . . . . . . . . . . #
+  # . . . . . . . . . . . . . . . . . . . . . . . . . . . #
+  # . . . . . . . . . . . . . . . . . . . . . . . . . . . #
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+notes:
+  - "Room 1 (P): entry/rest point."
+  - "Room 2: guard room with T = pit trap (DC 20 Reflex, 2d6)."
+  - "Room 3: elite with loot; door from 2→3 may be locked."
+  - "Secret door S from room 2 → corridor to boss."
+  - "Portcullis + can be raised by lever in boss room."
+  - "Room 4 (B): boss encounter, 20x5 staging area."

@@ -1,0 +1,45 @@
+name: Underdark Cavern
+environment: underdark
+type: large-room
+size: 28x20
+legend:
+  "#": "Cavern wall"
+  ".": "Cavern floor"
+  "^": "Stalagmite (cover, difficult)"
+  "v": "Stalactite (can be dropped as attack, DC 15)"
+  "o": "Rubble"
+  "~": "Underground pool (DC 10 swim, may contain aquatic)"
+  "F": "Fungus grove (concealment, some poisonous)"
+  "L": "Lichen shelf (climb DC 15, 15ft high)"
+  "P": "PC entry (from tunnel)"
+  "A": "Drow scout / lurker"
+  "E": "Drow priestess / caster"
+  "B": "Boss (matron / drider / demon)"
+grid: |
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  # # . . . . . . . . . . . . . . . . . . . . . . . . . # # #
+  # . . . ^ . . . . . F F . . . . . v . . . . . . . ^ . . . #
+  # . P . . . . . . . F F . . . . . . . . . . . . . . . . . #
+  # . P . . . . . A . . . . . . o o . . . . . A . . . . . . #
+  # . . . . . . . . . . . . . . o o . . . . . . . . . . . . #
+  # . . ^ . . . . . . . . . . . . . . . . . . . . . ^ . . . #
+  # . . . . . . . . . . ~ ~ ~ . . . . . . . . . . . . . . . #
+  # . . . . . . . . . ~ ~ ~ ~ ~ . . . . . . . . . . . . . . #
+  # . . . . . . . . ~ ~ ~ ~ ~ ~ . . . . E . . . . . . . . . #
+  # . . . . . . . . ~ ~ ~ ~ ~ ~ . . . . . . . . . . B B . . #
+  # . . . . . . . . ~ ~ ~ ~ ~ ~ . . . . . . . . . . B B . . #
+  # . . . . . . . . . ~ ~ ~ ~ ~ . . . . E . . . . . . . . . #
+  # . . . ^ . . . . . . ~ ~ ~ . . . . . . . . . . . ^ . . . #
+  # . . . . . . . . . . . . . . . . . . . . . . . . . . . . #
+  # . . . . . . . . L L . . . . . . v . . . L L . . . . . . #
+  # . . . . . . . . L L . . . . . . . . . . L L . . . . . . #
+  # . . . . . . . . . . . . F F F . . . . . . . . . . . . . #
+  # # . . . . . . . . . . . F F F . . . . . . . . . . . . # #
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+notes:
+  - "Large cavern; 120ft × 100ft. Suitable for CR 10-14 encounters."
+  - "Lichen shelves (L) elevate ranged/caster threats 15ft up (climb DC 15)."
+  - "Pool (~) may host aquatic ambushers (aboleth, giant squid)."
+  - "Stalactites (v): PC or enemy can try to drop them (DC 15 attack, 3d6)."
+  - "Drow faerie fire drops concealment; bring countermeasures."
+  - "Scale up: add bridge/ledge to split vertical combat."

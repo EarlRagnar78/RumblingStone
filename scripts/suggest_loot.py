@@ -91,9 +91,11 @@ def split_treasure(row: dict, density: float):
 
 def format_coins(gp: float) -> str:
     # split coins: 30% pp, 40% gp, 30% sp roughly
-    pp = int(gp * 0.02)       # pp = 10gp each → small component
-    gold = int(gp * 0.70)
-    sp = int((gp - pp*10 - gold) * 10)
+    # Use round() before int() to avoid floating-point truncation errors
+    # (e.g. 30.999999999999996 → 30 instead of 31).
+    pp = int(round(gp * 0.02))       # pp = 10gp each → small component
+    gold = int(round(gp * 0.70))
+    sp = int(round((gp - pp * 10 - gold) * 10))
     if sp < 0: sp = 0
     parts = []
     if pp: parts.append(f"{pp} pp")

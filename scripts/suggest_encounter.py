@@ -18,7 +18,9 @@ Output:
   Markdown proposals con tag `loot: structured` (fazioni) o `loot: none` (wild),
   consumabile da scripts/suggest_loot.py (STANDALONE, non integrato qui).
 
-DMG 3.5 EL math:  EL ≈ log2(Σ 2^CR)
+DMG 3.5 EL math:  EL ≈ 2 · log2(Σ 2^(CR/2))
+  (Doubling the number of equal-CR creatures increases EL by +2 in 3.5,
+   NOT +1 as in 4e/5e. Power scales as 2^(CR/2).)
 """
 from __future__ import annotations
 import sys, argparse, random, math, re
@@ -270,18 +272,35 @@ def _parse_list(lines, i, indent):
 
 # ───────────────────────── EL / CR math ─────────────────────────
 def combine_el(crs: list[float]) -> float:
+    """Combine CRs into an Encounter Level per D&D 3.5 DMG.
+
+    In 3.5 doubling the number of equal-CR creatures raises EL by +2
+    (not +1 as in 4e/5e). Power therefore scales as 2^(CR/2) and the
+    combined EL is:
+
+        EL = 2 · log2( Σ 2^(CR/2) )
+
+    Example: two CR 10 creatures → 2·log2(2·2^5) = 2·log2(64) = 12 ✓
+    """
     if not crs: return 0.0
-    return math.log2(sum(2**c for c in crs))
+    return 2.0 * math.log2(sum(2 ** (c / 2.0) for c in crs))
 
 def _cr_num(v):
     if v is None: return None
     if isinstance(v, (int, float)): return float(v)
     s = str(v).strip().replace("CR", "").strip()
     if "/" in s:
-        try: a,b = s.split("/"); return float(a)/float(b)
-        except: return None
+        try:
+            a, b = s.split("/")
+            num, den = float(a), float(b)
+            if den == 0:
+                return None
+            return num / den
+        except Exception:
+            return None
     try: return float(s)
     except: return None
+
 
 
 # ───────────────────────── Catalog ─────────────────────────
@@ -372,7 +391,7 @@ def build_encounter(pool, target_el, size, rng, forced: list[dict] | None = None
         [(max(1,target_el-4), min(size,4))],
         [(max(1,target_el-1), 1), (max(1, target_el-3), 2), (max(1, target_el-5), max(0,size-3))],
     ]
-    best = None
+    best: dict | None = None
     for strat in strategies:
         mix, crs, ok = [], [], True
         # include forced NPCs first
@@ -394,7 +413,7 @@ def build_encounter(pool, target_el, size, rng, forced: list[dict] | None = None
         if not ok or not mix: continue
         el = combine_el(crs)
         score = -abs(el - target_el)
-        if best is None or score > best["score"]:
+        if best is None or score > best["score"]:  # type: ignore[index]
             best = {"mix": mix, "el": el, "score": score}
     return best
 

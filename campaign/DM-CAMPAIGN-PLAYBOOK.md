@@ -39,6 +39,7 @@ Apri i file in questo ordine:
 | 4 | `campaign/state.md` §7 | Open narrative threads attivi | 1 min |
 | 5 | `campaign/sessions/ultima-sessione.md` | Sezione **Next session hooks** | 2 min |
 | 6 | File dell'arco corrente (es. `09_.../Arco-Post-Hammerfist-P1B-...`) | Fase attiva, encounter previsti | 3 min |
+| 6b | (opz.) `scripts/suggest_encounter.py` → `scripts/suggest_loot.py` pipe | Generare encounter+loot proposti | 3 min |
 | 7 | `PNG/<nome>/<nome>.md` (PNG in scena previsti) | Motivazione + segreti + stato | 2 min |
 | 8 | `skills/rumblingstone-campaign/references/campaign-coherence.md` | Solo se vuoi rivedere regole coerenza | 2 min |
 
@@ -140,6 +141,42 @@ git push origin main   # oppure il tuo branch-gruppo (vedi §7)
 ```
 
 **Fatto.** Lo stato è consolidato. Alla prossima sessione §2 ti riporta esattamente qui.
+
+### 4.6 — Recap per i player (1-2 giorni prima della prossima sessione)
+
+Genera un preludio/recap in italiano, **spoiler-safe**, con tono R.A. Salvatore,
+da mandare ai giocatori via chat prima della prossima sessione per tenere
+viva l'epica della campagna.
+
+```bash
+# Solo markdown (campaign/recaps/recap-YYYY-MM-DD.md)
+python3 scripts/session_recap.py --last-n 1
+
+# Con PDF A4 (richiede pandoc + xelatex installati)
+python3 scripts/session_recap.py --last-n 1 --pdf
+
+# Ultime 2 sessioni se il gruppo ha saltato una settimana
+python3 scripts/session_recap.py --last-n 2
+```
+
+**Cosa fa**:
+
+- Legge gli ultimi N file `campaign/sessions/*.md` + `campaign/state.md`.
+- Estrae **solo** `Summary`, `Key decisions`, `XP awarded`, `Loot distributed`,
+  `World events triggered`, `Next session hooks`.
+- **Taglia automaticamente** tutto ciò che segue `## DM notes (private — optional)`.
+- Dal dashboard `§0` di `state.md` include solo righe ✅ (completato) e
+  🟡 (in corso); le righe ⬜ (archi futuri non rivelati) sono filtrate.
+- Produce 6 sezioni in prosa evocativa italiana: *Il Respiro del Mondo*,
+  *Dove siete in questo istante*, *Negli episodi precedenti*, *Il mondo
+  attorno a voi*, *Sussurri nel vento*, *La prossima alba*.
+- Output deterministico (nessun LLM): template curati. Usa `--seed N` per
+  rigenerare output identico, oppure nessun seed per variare la prosa.
+
+**Regola d'oro prima di inviare**: dai uno sguardo al `.md` prodotto.
+Se vedi qualcosa che i player non dovrebbero sapere ancora, è perché
+l'hai scritto **sopra** la linea `## DM notes` nel session log — spostalo
+sotto e rigenera.
 
 ---
 
@@ -400,9 +437,24 @@ Esiste (o va creato): `scripts/new-campaign-group.sh` che automatizza 7.1 e 7.2 
 - **Fazioni FR**: `skills/forgotten-realms-lore/references/fr-factions.md`
 - **Cannath Vale mappa**: `skills/forgotten-realms-lore/references/fr-cannath-vale.md`
 - **AP originale**: `00_Red Hand Of Doom/` (read-only canon)
+- **DM Quickstart Arc-09**: `campaign/DM-QUICKSTART-ARC09.md` (indice di tutti gli script + scheduling Arc-09)
+
+### Script di automazione (cartella `scripts/`)
+
+| Script | Quando usarlo | Dove in questo playbook |
+|---|---|---|
+| `scripts/build_monster_catalog.py` | Dopo aver aggiunto statblock nuovi | — (indicizzato in DM-QUICKSTART §4) |
+| `scripts/suggest_encounter.py --el N --alliance X --env Y [--inject-npc N] [--narrative] [--wild]` | Pre-session §2 (preparare encounter fazioni/alleanze o wild) | §2 |
+| `scripts/suggest_loot.py --from-encounter FILE.md --pcs N [--include-fr-themed]` | Pre-session §2 (loot standalone SRD-only; rispetta `loot: none` per wild) | §2 |
+| `scripts/suggest_map.py --template NAME` | Pre-session §2 (mappa tattica) | §2 |
+| `scripts/update_xp.py --el N --pcs N --apl N` | Post-session §4 (assegnare XP) | §4 |
+| `scripts/state_sync.py` | Post-session §4 (aggiornare dashboard §0) | §4.2 |
+| `scripts/session_recap.py --last-n N [--pdf]` | **1-2 giorni prima** della prossima sessione (recap player spoiler-safe, tono R.A. Salvatore) | **§4.6** |
+| `scripts/new-campaign-group.sh` | Reset per nuovo gruppo mantenendo tutto il resto | §7.4 |
 
 ---
 
 ## §10 — Changelog (questo playbook)
 
 - **2026-05-05** — Creato file v1: workflow pre/during/post-session, worked examples per file sessione e diff state.md, reset procedure per nuovo gruppo (branch-per-gruppo), dual clock quick reference, red flags.
+- **2026-05-05** — Aggiunto §4.6 "Recap per i player" con integrazione di `scripts/session_recap.py` (generatore markdown/PDF A4 italiano spoiler-safe, tono R.A. Salvatore). Aggiunta tabella script in §9.

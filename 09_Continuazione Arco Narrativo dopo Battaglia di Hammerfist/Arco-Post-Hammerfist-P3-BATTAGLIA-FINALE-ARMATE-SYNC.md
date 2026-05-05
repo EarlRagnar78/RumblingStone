@@ -26,6 +26,7 @@ Riferimento dettagliato: `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.m
 | **Nucleo Red Hand** (hobgoblin Fighter/Warrior, goblin, orchi, worg riders) | 6.600 | 20–30% | 4.600–5.300 |
 | **Supporto** (giganti delle colline, ogre, ettin, manticore, wyvern, hell hound, chimera, war adepts, blue, warpriest Tiamat) | 430 | 15–25% | 320–370 |
 | **Fazione Drow — Compagnia di Sonjak** (Matrona Sajak; infiltrazione Underdark + distaccamento Fase 0 Notte dei Drow) | 305 | 10% | ~275 (o -100 se Sabotaggio Drow Arc-09/P3 eseguito) |
+| **Esperimenti Fungini Drow** (bio-arma Sonjak: ~20-25 Drow Fungal Minions CR 6-7 + ~3-5 Aberrazioni Fungine CR 10-11 + 2 Aberrazioni Fungine Alfa CR 12 — instabili alla luce solare, vedi §2.1) | 35–50 | 30–40% (degrado solare) | ~25–30 (o ~5 se Sabotaggio Campi Drow P3 eseguito) |
 | **Fazione Githyanki — Corps di Vaereth** (dragonrider + reclute su cavalcature alate) | 375 | 15% | ~320 |
 | **Fazione Gnoll — 3 tribù dei Wyrmbones/Dun Hills** (Flinderoso 500 + Abbattitori 350 + Artigli Neri 250) | 1.100 | 25–35% (prima linea) | 715–825 |
 | **Loxo schiavizzati** (dal Shaar occidentale, catturati dai Wyrmlord) | 200 | 40% (scudi umani) | ~120 **— OPPURE** 0 se Loxo Revolt trigger PG |
@@ -49,12 +50,14 @@ Riferimento dettagliato: `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.m
 - **5 draghi**: **Abithriax** (red adult — Skull Gorge guardian → riserva Rethmar), **Regiarix** (black young adult — Rhest/Saarvith, *morto se Arc-09/P2 completato*), **Ozyrrandion** (blue adult — Torre Invisibile/Zalkatar, *morto se P2A completato*), **Tyrgarun** (black adult — riserva aerea Rethmar), **Fauci di Palude** (black adult — Vanguard Hammerfist, *annientato a Hammerfist Day 19*, quindi **4 vivi** al Day 19 pre-Rethmar).
 - **8 Razorfiend Draconic Spawn** (colori Tiamat: 2 black/2 red/1 blue/1 white/2 green) assegnati ai Wyrmlord upscalati (Koth, Ulwai Stormcaller, Saarvith se vivo, Karruk, Zalkatar se vivo, riserva Azarr Kul).
 - **Compagnia del Teschio Nero** (mercenari umani Thay/Mulhorand) — composizione canonica AP, riserva élite di Azarr Kul, **NON modificata**.
+- **Esperimenti Fungini** (fotofobia): Aberrazioni Fungine e Fungal Minions subiscono **-2 attacco, -4 Will in luce solare diretta**. Svantaggio annullato in Fase 0 (notturna), Fase 2-4 se la battaglia si prolunga oltre il crepuscolo, o in interni (tempio/cripte). Dispiego ottimale: Ondata 4 al tramonto, Fase 0 cripte.
 
 ### 2.2 Fazioni con dinamica narrativa
 
 - **Drow di Sonjak** (Matrona Sajak): agiscono principalmente in Fase 0 (Notte dei Drow, infiltrazione cripte Tempio di Rethman). Se Sabotaggio Drow Arc-09/P3 eseguito, forza Fase 0 ridotta da 25-30 drow + 1 Aberrazione Fungina Alfa a 5-8 drow senza Alfa.
 - **Gnoll 3 tribù** (Flinderoso, Abbattitori, Artigli Neri): provenienti da Wyrmbones e Dun Hills (vedi mappa Cannath Vale). Usati come prima linea in Fase 1 Ondata 1. Perdite attese 25-35%.
 - **Loxo + Centauri schiavizzati**: razze nomadi del Shaar catturate dai Wyrmlord durante la marcia Day 8-15. Usati come **scudi umani** (Loxo) e **cavalleria forzata** (Centauri). **Trigger PG — Revolt**: se i PG riescono a contattarli (diplomazia CD 25, Conoscenze Natura CD 20, oppure incontro dedicato durante Arc-09), possono rivoltarsi contro l'Orda Day 38-39, eliminando 480 unità + disruption logistica -100 attrition. **[INFERRED — needs DM: encounter di liberazione da scrivere se DM vuole aprire il branch]**.
+- **Esperimenti Fungini Drow**: bio-arma sviluppata da Matrona Sajak nei laboratori ipogei (campi-laboratorio Arc-09/P3 Sabotaggio Drow, vedi `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW`). Statblock in `Arco-Post-Hammerfist-P3-MISSIONI-BREVI-CR12-STATBLOCCHI-FUNGHI-GITH-DROW.md`. **Trigger PG — Sabotaggio Campi Drow**: se la quest P3-Sabotaggio-Campi-Drow è completata prima del Day 36, rimuovere **tutti** gli Esperimenti Fungini dall'Orda tranne ~5 Minions già dispiegati col commando di Sonjak al Day 1. Uso tattico: **Fase 0** (1 Alfa come ariete vivente contro cripte Tempio di Rethman, 4 Minions di supporto); **Fase 1 Ondata 4** (3-5 Aberrazioni come breaker di mura + 15-20 Minions di rincalzo col residuo drow); **riserva** (1 Alfa conservata per Fase 2-3 se Ondata 4 fallisce). **[INFERRED — statblocchi confermati, numeri di dispiegamento da tarare DM-side]**.
 - **Compagnia del Teschio Nero**: riserva élite, non impegnata fino a Fase 3-4 (Avatar/Mythal).
 
 ---
@@ -89,7 +92,7 @@ Compie **~60%** dell'Orda presente. Distribuzione tipica (scenario C):
 - **Ondata 1 (Fanteria & Giganti)**: ~2.000 hobgoblin + 80 bugbear + 15-20 giganti (hill/stone) + 12 catapulte. CR 14-15.
 - **Ondata 2 (Draghi & Githyanki)**: 2 draghi (Ozyrrandion + Tyrgarun tipicamente) + 3-4 Razorfiend + 40-60 Githyanki Knight su cavalcature alate. CR 15-16.
 - **Ondata 3 (Non-Morti Ghostlord)**: assente (scenario C, Ghostlord neutralizzato = distaccamento piccolo dirottato altrove); ~950 non-morti se A/B. CR 15 se presente.
-- **Ondata 4 (Drow residui)**: 0-30 unità se Sabotaggio eseguito, ~200-300 altrimenti. CR 14 se presente.
+- **Ondata 4 (Drow residui + Esperimenti Fungini)**: se Sabotaggio Campi Drow **non** eseguito → ~200-300 drow + 3-5 Aberrazioni Fungine (breaker mura) + 15-20 Fungal Minions + 1 Alfa di riserva, CR 15 (fotofobia neutralizzata al tramonto); se Sabotaggio eseguito → 0-30 unità residue, no Aberrazioni, CR 13.
 - **Riserva trattenuta** per Fase 2-3: ~2.500 + 2-3 draghi + Azarr Kul + Compagnia del Teschio Nero.
 
 ### Fase 2 — Ritualisti Draconici (10 round narrativi)
@@ -162,7 +165,7 @@ Ogni hook completato **prima del Day 40** modula i numeri di §3. Riferimento: `
 | P2C — Salvatore Mercante | Day ~36 | +conversione 1 Wyrmlord **OR** -1 carovana logistica (-300 attrito su Orda) |
 | P3 — Starsong Hill (Tiri-Kitor) | Day ~35 | +Cavalleria civette (neutralizza superiorità aerea Githyanki) |
 | P3 — Ghostlord | Day ~28 | Vedi §3 (nemico / distaccamento / alleato) |
-| P3 — Sabotaggio Drow | Day ~36 | -Fase 0 critical mass; -Ondata 4 drow |
+| P3 — Sabotaggio Drow / Campi Drow | Day ~36 | -Fase 0 critical mass (no Alfa in cripte); -35-45 Esperimenti Fungini (Minions + Aberrazioni + 1 Alfa riserva); -Ondata 4 drow ridotta |
 | P3 — Missioni Brevi CR12 (funghi/gith/drow) | Day ~35 | -singole ondate specifiche Fase 1 |
 
 ---
@@ -183,3 +186,4 @@ Ogni hook completato **prima del Day 40** modula i numeri di §3. Riferimento: `
 
 - **2026-05-05** — Creato file v1 (allineamento v2 armate post-chiarimenti utente: 10k baseline, 5 draghi, 8 Razorfiend, Compagnia Teschio Nero invariata, battaglia persa senza PG, Ghostlord-neutralizzato-= piccolo distaccamento, no sabotaggio Skull Gorge, no alleanza giganti PG, Day 19 sync Terrelton↔Hammerfist, Day 40 arrivo Rethmar).
 - **2026-05-05 (rev.b)** — §2 espansa con fazioni esplicite (Drow di Sonjak, Githyanki di Vaereth, Gnoll 3 tribù, Loxo schiavizzati, Centauri schiavizzati, Compagnia del Teschio Nero, Il Collezionista condizionale); §2.2 aggiunta meccanica Revolt per schiavi Loxo/Centauri; §5 toponimi Cannath Vale sincronizzati con mappa `cannath-vale-gm-versia3ys4.webp` e `fr-cannath-vale.md` (Brindol→Rethmar, Wyrmsmoke→Wyrmbones, Witchwood→Shaarcah Forest, Blackfens→Lhespenbog, Rhest→Lhesper, Dennovar→Cannathgate, Giantshield→Rathgaunt Hills, Thornwaste→Bandit Wastes, Elsir River→Talar/Cannath River, Hammerfist Holds confermato su The North Wall).
+- **2026-05-05 (rev.c)** — aggiunti Esperimenti Fungini Drow all'Orda principale: §2 nuova riga (35-50 unità: ~20-25 Fungal Minions CR 6-7 + ~3-5 Aberrazioni Fungine CR 10-11 + 2 Alfa CR 12); §2.1 regola fotofobia (-2 atk / -4 Will in luce solare); §2.2 dispiego tattico per fase + trigger Sabotaggio Campi Drow (P3) che rimuove quasi tutti gli esperimenti; §4 Fase 1 Ondata 4 espansa con Aberrazioni breaker + Minions; §6 hook Sabotaggio Drow aggiornato con effetti espliciti.

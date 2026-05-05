@@ -17,6 +17,42 @@
 **Party APL:** 13
 **Sessions completed:** post-Hammerfist, pre-Rethmar (Arc 09 in progress)
 
+> **DM workflow**: per la procedura di aggiornamento fine-sessione e per
+> far partire un nuovo gruppo senza perdere niente, vedi
+> [`campaign/DM-CAMPAIGN-PLAYBOOK.md`](DM-CAMPAIGN-PLAYBOOK.md).
+
+---
+
+## §0 Campaign Status At-a-Glance
+
+Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per dettaglio.
+
+| Arc | Fase | Stato | March Clock | PG Lv | Note |
+|---|---|---|---|---|---|
+| 00 Setup RHoD | ✅ | completato | Day 0 | 5 | — |
+| 01 Miniera | ✅ | completato | — | 6 | — |
+| 02 Scaladossa-abbattor-funghi | ✅ | completato | — | 7 | — |
+| 03 La Cittadella | ✅ | completato | — | 8 | — |
+| 04 Tomba di Belkram | ✅ | completato | — | 9 | — |
+| 05 Stanza Runica | ✅ | completato | — | 10 | — |
+| 06 Corona di Adamantio | ✅ | completato | — | 11 | — |
+| 07 Portale della Forgia Eterna | ✅ | completato | — | 12 | — |
+| 08 Battaglia di Hammerfist | ✅ | completato | **Day 19 (sync)** | 12→13 | Cerimonia 100 Asce, Custodi Eterni |
+| 09 P1A Quest Hellas (Cerchio Sacro) | 🟡 | in arrivo | Day 20-30 window | 13 | Deadline Day 30 |
+| 09 P1B Cerchio Treant | 🟡 | pianificato | Day 22-28 | 13 | — |
+| 09 P1C Rituale Hellas | 🟡 | pianificato | Day 25-30 | 13 | — |
+| 09 P2 Rhest (Saarvith + Regiarix) | ⬜ | non iniziato | Day 25-32 | 13 | -1 drago se fatto |
+| 09 P2A Torre Invisibile (Zalkatar) | ⬜ | non iniziato | Day 28-35 | 13 | -1 drago se fatto |
+| 09 P2B Torneo di Dauth (Tordek) | ⬜ | non iniziato | Day 25-34 | 13 | +300 mercenari nani |
+| 09 P2C Salvatore Mercante | ⬜ | non iniziato | Day 28-36 | 13 | Sal clock 0/6 |
+| 09 P3 Starsong Hill (Tiri-Kitor) | ⬜ | non iniziato | Day 30-35 | 13-14 | +cavalleria civette |
+| 09 P3 Ghostlord | ⬜ | non iniziato | Day 25-32 | 13-14 | 3 branch: ostile/neutralizzato/alleato |
+| 09 P3 Sabotaggio Campi Drow | ⬜ | non iniziato | Day 30-36 | 13-14 | -Fase 0 + -45 esperimenti fungini |
+| 09 P3 Missioni Brevi CR12 | ⬜ | non iniziato | Day 30-38 | 13-14 | — |
+| **09 P3 Battaglia Finale Rethmar** | ⬜ | target | **Day 40** | 14 | Fase 0-4 |
+
+**Legenda**: ✅ completato · 🟡 in corso / imminente · ⬜ non iniziato · ❌ fallito · ⏸ sospeso
+
 ---
 
 ## 1. Party — Current Position & Condition
@@ -157,7 +193,6 @@ gnoll disguised). Detect: Sense Motive CD 18 / Detect Magic. If caught:
 | Marth Fen area | ⏳ Day 25 sweep | ~300 | +50 |
 | Hammerfist Holds | ✅ Held (+90 survivors; 150 lances conditional) | 0 civilians | +150 ❓ if Tordek wins Dauth |
 | Cannathgate | ✅ Not attacked | 0 | +150 ❓ diplomacy |
-
 
 ---
 
@@ -527,4 +562,12 @@ entries — they become campaign history.
               (include rifugiati armati da Nimon+Drellin già arrivati).
             Current confirmed losses MR: −308 (Days 1-9, Nimon+Drellin
             +attrition). Main body: 4.793 → 4.485 active.
+2026-05-05  Created DM-CAMPAIGN-PLAYBOOK.md (operational DM guide):
+            pre/during/post-session workflow with 2 worked examples
+            (session file + state.md diff), dual-clock quick reference,
+            reset procedure for new groups (branch-per-group strategy),
+            red flags. Added §0 Campaign Status At-a-Glance dashboard
+            to state.md. Created templates (state-blank.md,
+            session-template.md) and helper script
+            scripts/new-campaign-group.sh for one-command group reset.
 ```

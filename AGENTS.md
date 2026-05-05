@@ -11,11 +11,14 @@ based on *Red Hand of Doom* (Jacobs & Wyatt, 2006). Content is privately owned.
 
 ```
 campaign/
-├── sessions/       # Session logs (YYYY-MM-DD.md format)
-├── npcs/           # NPC cards (name, stat block, motivation, status)
-├── locations/      # Location descriptions and maps metadata
-├── encounters/     # Custom encounter files (CR, monsters, tactics)
-└── lore/           # House rules, world adaptations, timeline
+├── DM-CAMPAIGN-PLAYBOOK.md  # DM operational guide (workflow + examples + reset)
+├── state.md                 # Living world state (§0 dashboard first)
+├── sessions/                # Session logs (YYYY-MM-DD_session-N.md)
+├── npcs/                    # NPC cards (name, stat block, motivation, status)
+├── locations/               # Location descriptions and maps metadata
+├── encounters/              # Custom encounter files (CR, monsters, tactics)
+├── templates/               # Blank state + session templates for new groups
+└── lore/                    # House rules, world adaptations, timeline
 
 skills/
 ├── dnd-35-srd/             # D&D 3.5 SRD mechanics (no setting bias)
@@ -26,6 +29,12 @@ skills/
 
 Per-agent mirrors (`.claude/skills/`, `.cursor/skills/`, etc.) are
 generated artifacts of `scripts/build-skills.sh` and are gitignored.
+
+> **DMs: start with `campaign/DM-CAMPAIGN-PLAYBOOK.md`.** It contains the
+> pre/during/post-session workflow, worked examples for session files and
+> `state.md` diffs, the `§0 Campaign Status At-a-Glance` dashboard, and the
+> branch-per-group reset procedure (`scripts/new-campaign-group.sh`) for
+> running this campaign with a new group.
 
 ---
 

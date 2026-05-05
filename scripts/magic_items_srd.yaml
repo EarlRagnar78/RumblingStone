@@ -1,0 +1,411 @@
+# magic_items_srd.yaml — Magic item pools for suggest_loot.py
+#
+# Two sections:
+#  1. srd_items: pure SRD (DMG 3.5 Chapter 7) magic items, grouped by tier.
+#  2. faction_signatures: campaign-custom items BUILT FROM SRD meccaniche
+#     (spell DC, enchant bonus, creation rules). Flavor text originale.
+#     NESSUN contenuto FRCS/MM/RHoD riprodotto verbatim.
+#  3. fr_themed_mild: oggetti Forgotten Realms-themed LITE (flavor lore FR ma
+#     meccaniche SRD, potere moderato, non game-breaking per APL 13).
+#
+# Each item has:
+#   name, price (gp), tier, desc (flavor, original),
+#   srd_basis (list of SRD building-blocks used — REQUIRED for faction + FR items)
+
+srd_items:
+  # ─── MINOR LESSER (0-1000 gp) ───
+  minor_lesser:
+    - {
+        name: "Pozione di Cura Moderata",
+        price: 300,
+        desc: "Cura 2d8+3 (SRD Cure Moderate Wounds, CL 3).",
+      }
+    - {
+        name: "Pergamena Arcana di Dispel Magic",
+        price: 375,
+        desc: "SRD Dispel Magic, CL 5.",
+      }
+    - {
+        name: "Mantello di Resistenza +1",
+        price: 1000,
+        desc: "+1 a tutti i TS (SRD Cloak of Resistance).",
+      }
+    - {
+        name: "Amuleto di Armatura Naturale +1",
+        price: 2000,
+        desc: "(SRD) bonus Armatura Naturale +1.",
+      }
+    - { name: "Bracers of Armor +1", price: 1000, desc: "SRD, +1 armor bonus." }
+    - {
+        name: "Wand of Magic Missile (CL 5)",
+        price: 750,
+        desc: "SRD wand, 50 charges.",
+      }
+  # ─── MINOR GREATER (1000-5000 gp) ───
+  minor_greater:
+    - {
+        name: "Mantello di Resistenza +2",
+        price: 4000,
+        desc: "+2 a tutti i TS (SRD).",
+      }
+    - {
+        name: "Anello di Protezione +2",
+        price: 8000,
+        desc: "(SRD) deflection +2 AC.",
+      }
+    - {
+        name: "Gloves of Dexterity +2",
+        price: 4000,
+        desc: "(SRD) enhancement +2 Dex.",
+      }
+    - {
+        name: "Wand of Cure Light Wounds (CL 1, 50)",
+        price: 750,
+        desc: "SRD wand.",
+      }
+    - { name: "Bag of Holding I", price: 2500, desc: "SRD, 250 lb, 30 ft³." }
+    - {
+        name: "Goggles of Minute Seeing",
+        price: 1250,
+        desc: "SRD, +5 Search circumstance.",
+      }
+  # ─── MEDIUM LESSER (2500-10000 gp) ───
+  medium_lesser:
+    - { name: "Mantello di Resistenza +3", price: 9000, desc: "SRD." }
+    - {
+        name: "+1 Flaming Longsword",
+        price: 8315,
+        desc: "SRD +1 + Flaming property (+1d6 fire).",
+      }
+    - { name: "+2 Chain Shirt", price: 4250, desc: "SRD enhancement +2." }
+    - {
+        name: "Ring of Sustenance",
+        price: 2500,
+        desc: "SRD, no food/water needed, 2h sleep.",
+      }
+    - {
+        name: "Wand of Lightning Bolt (CL 5)",
+        price: 11250,
+        desc: "SRD wand (50 charges, 5d6).",
+      }
+    - {
+        name: "Scroll pack di Fireball ×3 (CL 5)",
+        price: 1125,
+        desc: "3× SRD Fireball 3rd lvl.",
+      }
+    - { name: "Amuleto di Armatura Naturale +2", price: 8000, desc: "SRD." }
+  # ─── MEDIUM GREATER (8000-20000 gp) ───
+  medium_greater:
+    - {
+        name: "+2 Composite Longbow (Str +2)",
+        price: 8700,
+        desc: "SRD, enhancement +2, Str bonus +2.",
+      }
+    - {
+        name: "Boots of Striding and Springing",
+        price: 5500,
+        desc: "SRD, +10 ft speed, +5 Jump.",
+      }
+    - {
+        name: "Headband of Intellect +4",
+        price: 16000,
+        desc: "SRD enhancement +4 Int.",
+      }
+    - {
+        name: "Belt of Giant Strength +4",
+        price: 16000,
+        desc: "SRD enhancement +4 Str.",
+      }
+    - {
+        name: "+2 Flaming Burst Battleaxe",
+        price: 18315,
+        desc: "SRD +2 + Flaming Burst (+1d6 fire, +1d10 on crit).",
+      }
+    - { name: "Wand of Fireball (CL 10)", price: 22500, desc: "SRD wand, 10d6." }
+  # ─── MAJOR LESSER (15000-40000 gp) ───
+  major_lesser:
+    - {
+        name: "+3 Keen Rapier",
+        price: 18320,
+        desc: "SRD +3 + Keen (19-20/×2 threat).",
+      }
+    - {
+        name: "Armor of the Sea (+3 Breastplate)",
+        price: 9350,
+        desc: "SRD +3, no special. Plain noble gear.",
+      }
+    - { name: "Cloak of Resistance +4", price: 16000, desc: "SRD." }
+    - { name: "Rod of Lesser Quicken Metamagic", price: 35000, desc: "SRD rod." }
+    - {
+        name: "Ring of Freedom of Movement",
+        price: 40000,
+        desc: "SRD, continuous Freedom of Movement.",
+      }
+  # ─── MAJOR GREATER (30000+ gp) ───
+  major_greater:
+    - {
+        name: "+4 Holy Greatsword",
+        price: 50350,
+        desc: "SRD +4 + Holy (+2d6 vs evil).",
+      }
+    - {
+        name: "Staff of Fire",
+        price: 29200,
+        desc: "SRD staff (Burning Hands/Fireball/Wall of Fire).",
+      }
+    - {
+        name: "Manual of Bodily Health +3",
+        price: 82500,
+        desc: "SRD tome, permanent +3 Con. One-shot.",
+      }
+
+# ─────────────────────────────────────────────────────────────
+# FACTION SIGNATURE ITEMS — costruiti ESCLUSIVAMENTE da blocchi SRD.
+# Ogni item cita le spell/meccaniche SRD da cui deriva il potere.
+# Niente contenuto copyrighted FRCS/MM/RHoD.
+# ─────────────────────────────────────────────────────────────
+faction_signatures:
+  drow-sonjak:
+    - name: "Piwafwi della Nebbia"
+      price: 8500
+      tier: medium_lesser
+      desc: "Mantello drow nero-inchiostro tessuto nelle gallerie profonde. +2 a tutti
+        i TS; 1/giorno come standard action evoca una nube di foschia (vedi SRD
+        Obscuring Mist, CL 5) attorno al portatore."
+      srd_basis:
+        [
+          "Cloak of Resistance +2 (SRD DMG)",
+          "Obscuring Mist 1st lvl SRD (1/day CL 5)",
+        ]
+    - name: "Lama-ragno di Sonjak"
+      price: 10315
+      tier: medium_lesser
+      desc: "Rapier drow con rune a forma di ragno. +1 keen. Avvelenata 1/giorno come
+        Greater Magic Weapon: il colpo infligge Drow Poison (SRD: Con 1 dose)."
+      srd_basis: [ "+1 Keen Rapier (SRD)", "Drow Poison (SRD DMG p.297)" ]
+    - name: "Anello di Ragnatela"
+      price: 5400
+      tier: minor_greater
+      desc: "1/giorno lancia Web (SRD 2nd lvl, CL 5). Centrato sul portatore."
+      srd_basis: [ "Web 2nd lvl SRD (1/day CL 5)" ]
+
+  red-hand:
+    - name: "Lama del Ruggito (Roaring Blade)"
+      price: 8315
+      tier: medium_lesser
+      desc: "Longsword hobgoblin marchiata con la mano rossa di Tiamat. +1 Flaming: il
+        colpo divampa di fuoco draconico."
+      srd_basis: [ "+1 Flaming Longsword (SRD)" ]
+    - name: "Elmo del Wyrmlord"
+      price: 12000
+      tier: medium_greater
+      desc: "Elmo cornuto. +2 Fear Aura 1/giorno (gli alleati Red Hand immuni): gli
+        avversari entro 30 ft devono TS Volontà CD 14 o sono scossi per 3d6
+        turni. Basato su Cause Fear SRD."
+      srd_basis: [ "Cause Fear 1st lvl SRD (1/day CL 5)", "+2 helmet slot" ]
+
+  drow-sonjak-ritual:
+    # more expensive Sonjak/Sajak signature
+    - name: "Teschio-reliquiario di Lolth"
+      price: 22000
+      tier: major_lesser
+      desc: "Teschio di drow trasformato in focus divino. 3/giorno: Bestow Curse (SRD
+        4th lvl). Richiede evil alignment."
+      srd_basis: [ "Bestow Curse SRD (3/day CL 9)" ]
+
+  githyanki-vaereth:
+    - name: "Frammento di Silver Sword"
+      price: 18000
+      tier: major_lesser
+      desc: "Scheggia argentea di lama githyanki. +2 Greatsword, Bane vs Outsiders
+        (SRD bane: +2 enhancement ulteriore + 2d6 extra vs Outsiders, inclusi
+        devils e demons)."
+      srd_basis: [ "+2 Greatsword (SRD)", "Bane weapon property vs Outsiders (SRD DMG)" ]
+    - name: "Plate Astrale"
+      price: 15000
+      tier: medium_greater
+      desc: "Plate +2 con rune githyanki. Aura Resistance 10 acid 1/giorno (SRD Resist
+        Energy)."
+      srd_basis: [ "+2 Full Plate (SRD)", "Resist Energy SRD 2nd lvl (1/day)" ]
+
+  rakshasa:
+    - name: "Velo del Collezionista"
+      price: 6800
+      tier: medium_lesser
+      desc: "Maschera di seta-argento ricamata. Funziona come Hat of Disguise SRD +
+        1/giorno Nondetection (SRD 3rd lvl, CL 5)."
+      srd_basis: [ "Hat of Disguise (SRD DMG)", "Nondetection SRD 3rd lvl (1/day CL 5)" ]
+    - name: "Tiger-Claw Gauntlets"
+      price: 4000
+      tier: minor_greater
+      desc: "Guanti d'artiglio. +1 enhancement claw attack naturale (2d4)."
+      srd_basis: [ "Weapon Enhancement +1 on natural claw (SRD)" ]
+
+  ghostlord-undead:
+    - name: "Ossa del Thornwaste"
+      price: 12800
+      tier: medium_greater
+      desc: "Bracciale di ossa di leone legato al Ghostlord. Amulet of Natural Armor
+        +2. In più: Turn Resistance +4 per undead vicini entro 10 ft (SRD undead
+        trait)."
+      srd_basis:
+        [
+          "Amulet of Natural Armor +2 (SRD)",
+          "Turn Resistance +4 SRD undead property",
+        ]
+    - name: "Bastone del Lich Druidico"
+      price: 22000
+      tier: major_lesser
+      desc: "Bastone nodoso. Contiene 10 cariche: 1 carica = Inflict Serious Wounds
+        (SRD 3rd lvl), 3 cariche = Animate Dead (SRD 3rd lvl)."
+      srd_basis:
+        [
+          "Staff of charges SRD schema",
+          "Inflict Serious Wounds 3rd SRD",
+          "Animate Dead 3rd SRD",
+        ]
+
+  teschio-nero-thay:
+    - name: "Tomo del Fuoco Rosso"
+      price: 3375
+      tier: medium_lesser
+      desc: "Libro rilegato in cuoio cremisi. Contiene 3× Fireball (SRD 3rd lvl, CL 5)
+        + 2× Scorching Ray (CL 5)."
+      srd_basis: [ "3× Scroll Fireball 3rd SRD", "2× Scroll Scorching Ray 2nd SRD" ]
+    - name: "Anello del Red Wizard"
+      price: 11000
+      tier: medium_greater
+      desc: "Anello tatuato. +2 CL per tutti gli effetti di evocazione ed evocatore
+        evocazione fuoco (fireball, scorching ray). Basato su homebrew schema
+        Rod of Enlarge Metamagic SRD."
+      srd_basis: [ "SRD Metamagic Rod base (lesser Enlarge) price x1.1 for narrow theme" ]
+
+  cerchio-druid:
+    - name: "Bastone di Quercia di Hellas"
+      price: 6800
+      tier: medium_lesser
+      desc: "Quarterstaff +1 con vena verde. 1/giorno Barkskin (SRD 2nd lvl, CL 5, +3
+        natural AC)."
+      srd_basis: [ "+1 Quarterstaff (SRD)", "Barkskin SRD 2nd lvl (1/day CL 5)" ]
+    - name: "Bracciale dell'Orso"
+      price: 4000
+      tier: minor_greater
+      desc: "Bracciale d'osso. 1/giorno Bear's Endurance (SRD 2nd lvl, +4 Con 5 min)."
+      srd_basis: [ "Bear's Endurance SRD 2nd lvl (1/day CL 5)" ]
+
+  starsong-elf:
+    - name: "Arco Lunare dei Tiri-Kitor"
+      price: 9300
+      tier: medium_lesser
+      desc: "Composite longbow +2 (Str +1) in legno chiaro. I dardi brillano di luce
+        lunare (SRD Light, continuous, 20 ft)."
+      srd_basis: [ "+2 Composite Longbow Str +1 (SRD)", "Light SRD 0-lvl continuous" ]
+    - name: "Piuma del Gufo Celestiale"
+      price: 3000
+      tier: minor_greater
+      desc: "Amuleto. 1/giorno Owl's Wisdom (SRD 2nd lvl, +4 Wis 5 min) + Feather Fall
+        continuous."
+      srd_basis: [ "Owl's Wisdom SRD 2nd lvl (1/day)", "Feather Fall SRD 1st continuous" ]
+
+  dauth-defender:
+    - name: "Martello di Moradin (replica)"
+      price: 12000
+      tier: medium_greater
+      desc: "Warhammer +2. Ruba-male: +1d6 danni extra vs Gigante (Bane SRD vs Giant
+        subtype)."
+      srd_basis: [ "+1 Warhammer Bane vs Giant (SRD) price calc" ]
+    - name: "Barda del Difensore"
+      price: 4650
+      tier: medium_lesser
+      desc: "Full Plate +1 con dwarvencraft. Peso −10%. Reduces check penalty by 1
+        (SRD dwarvencraft SRD variant)."
+      srd_basis: [ "+1 Full Plate (SRD)", "Dwarvencraft quality (SRD equivalent)" ]
+
+  rethmar-defender:
+    - name: "Torcia del Tonante"
+      price: 3000
+      tier: minor_greater
+      desc: "Bastone d'argento di Tempestas. 3/giorno: Shocking Grasp (SRD 1st, CL 5,
+        1d6+5/lvl max +5)."
+      srd_basis: [ "Wand-equivalent Shocking Grasp SRD 1st (3/day CL 5)" ]
+    - name: "Brassard di Lorana"
+      price: 6000
+      tier: medium_lesser
+      desc: "Bracciale araldico del Consiglio di Rethmar. +2 Sacred bonus vs fear (SRD
+        Bless continuous-like effect, limited)."
+      srd_basis: [ "Cloak of Resistance equivalent narrow vs fear (SRD schema)" ]
+
+  hammerfist-hero:
+    - name: "Elmo Ferropugno"
+      price: 8000
+      tier: medium_lesser
+      desc: "Elmo d'acciaio. +2 enhancement Con (SRD Amulet of Health effect nel
+        headgear slot, prezzo x1.5 per off-slot)."
+      srd_basis: [ "Amulet of Health +2 SRD (off-slot x1.5)" ]
+
+# ─────────────────────────────────────────────────────────────
+# FR-THEMED MILD — oggetti con flavor Forgotten Realms ma poteri SRD-compatibili.
+# Solo roba LITE e non game-breaking per un party APL 13.
+# Flavor ispirato (non riprodotto) da FR lore 1372 DR. Meccaniche = SRD.
+# ─────────────────────────────────────────────────────────────
+fr_themed_mild:
+  - name: "Lama di Corellon (replica rituale)"
+    price: 9000
+    tier: medium_lesser
+    faction_tags: [ starsong-elf, cerchio-druid ]
+    desc: "Longsword +1 con lama incisa con rune elfiche. Keen (19-20 threat) +
+      1/giorno Bless Weapon (SRD 1st lvl paladin) self-cast."
+    srd_basis: [ "+1 Keen Longsword (SRD)", "Bless Weapon SRD 1st lvl (1/day CL 5)" ]
+  - name: "Medaglione di Tyr"
+    price: 6000
+    tier: medium_lesser
+    faction_tags: [ rethmar-defender, dauth-defender ]
+    desc: "Medaglione di giustizia. +1 Cloak-slot deflection AC. 1/giorno Zone of
+      Truth (SRD 2nd lvl, CL 3)."
+    srd_basis: [ "Ring of Protection +1 variant (SRD)", "Zone of Truth SRD 2nd lvl (1/day)" ]
+  - name: "Flauto di Oghma"
+    price: 3500
+    tier: minor_greater
+    faction_tags: [ rethmar-defender ]
+    desc: "Flauto d'avorio. +4 Perform (wind instruments). 2/giorno: Comprehend
+      Languages (SRD 1st)."
+    srd_basis: [ "Skill item +4 Perform (SRD)", "Comprehend Languages SRD 1st (2/day CL 3)" ]
+  - name: "Moneta di Waukeen"
+    price: 2500
+    tier: minor_greater
+    faction_tags: [ rakshasa, rethmar-defender ]
+    desc: "Moneta d'oro trasmutata. +4 Appraise, +2 Diplomacy in contesti
+      mercantili."
+    srd_basis: [ "Skill item +4 Appraise + +2 Diplomacy (SRD)" ]
+  - name: "Bastone di Mystra (frammento minore)"
+    price: 14000
+    tier: medium_greater
+    faction_tags: [ teschio-nero-thay, rakshasa ]
+    desc: "Bastone cristallino. Funziona come Pearl of Power (SRD, 3rd lvl spell,
+      1/day) + +1 CL per spell arcane di Evocation (Scuola)."
+    srd_basis:
+      [
+        "Pearl of Power III (SRD)",
+        "Orange Ioun Stone +1 CL narrow Evocation (SRD schema price x1.2)",
+      ]
+  - name: "Talismano di Selûne"
+    price: 4000
+    tier: minor_greater
+    faction_tags: [ starsong-elf, cerchio-druid, rethmar-defender ]
+    desc: "Disco argenteo. Brilla come candela 1/giorno Moonbeam (homebrew: SRD
+      Faerie Fire 1st + SRD Light continuous)."
+    srd_basis: [ "Faerie Fire SRD 1st (1/day)", "Light SRD 0-lvl continuous" ]
+  - name: "Anello di Lathander"
+    price: 5000
+    tier: minor_greater
+    faction_tags: [ rethmar-defender, hammerfist-hero ]
+    desc: "Anello di rame aurato. 1/giorno all'alba: Aid (SRD 2nd lvl, +1 attack,
+      +1d8+CL temp HP, +1 vs fear)."
+    srd_basis: [ "Aid SRD 2nd lvl (1/day dawn-only CL 3)" ]
+  - name: "Fascia di Mielikki"
+    price: 8000
+    tier: medium_lesser
+    faction_tags: [ cerchio-druid, starsong-elf ]
+    desc: "Fascia di cuoio intrecciato. +2 enhancement Wis (SRD Periapt of Wisdom
+      effect)."
+    srd_basis: [ "Periapt of Wisdom +2 (SRD)" ]

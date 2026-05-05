@@ -1,0 +1,32 @@
+name: Bridge Chokepoint
+environment: any
+type: chokepoint
+size: 30x12
+legend:
+  "=": "Stone bridge (5ft wide squares)"
+  "~": "River / chasm (fall 60ft)"
+  ".": "Shore / cliff edge"
+  "#": "Tower wall"
+  "P": "PC entry (west shore)"
+  "A": "Enemy blockade"
+  "B": "Boss / commander"
+  "R": "Archer tower"
+grid: |
+  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+  . . P . . . . . . . . . . . . . . . . . . . . . . . . B . .
+  . . P . . . . . . . . . . . . . . . . . . . . . . . . B . .
+  . . . . . . . . . . = = = = = = = = = = . . . . . . . . . .
+  . . . . . . . . . . = = . A . . A . = = . . . . . . # # . .
+  ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ = = . . . . . . = = ~ ~ ~ ~ ~ ~ # R . .
+  ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ = = . . A . . . = = ~ ~ ~ ~ ~ ~ # R . .
+  . . . . . . . . . . = = = = = = = = = = . . . . . . # # . .
+  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+notes:
+  - "Bridge is 20ft long × 10ft wide; 4 squares wide (2 single-file lanes)."
+  - "River/chasm 60ft drop: bull rush → 6d6 fall damage or swim DC 15."
+  - "Archer tower (R) on east end: +1 cover, 30ft up."
+  - "Classic setup: 2-3 defenders on bridge, boss + archers east shore."
+  - "Scale: widen bridge (+1 col per square) for mass combat."

@@ -1,0 +1,48 @@
+name: Dragon Lair
+environment: cave
+type: boss-lair
+size: 30x24
+legend:
+  "#": "Rough cavern wall (climb DC 25)"
+  ".": "Cavern floor (rough)"
+  "^": "Stalagmite (cover)"
+  "v": "Stalactite (hazard)"
+  "o": "Rubble"
+  "$": "Hoard (gold/gems, difficult terrain, noise)"
+  "~": "Molten fissure (1d6 fire/round if adjacent)"
+  "L": "Ledge (15ft high, climb DC 20)"
+  "P": "PC entry tunnel"
+  "A": "Cultist / kobold minion"
+  "B": "Dragon boss (Huge = 3x3)"
+grid: |
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  # # # . . . . . . . . . . . . . . . . . . . . . . . . # # #
+  # . . . . . . . . . . . . . . . . . . . . . . . . . . . . #
+  # . P . . . . . . . . . . ^ . . . . . . . . . . . . . . . #
+  # . P . . . . . . . . . . . . . . . . . A . . . . . . . . #
+  # . . . . . ^ . . . . . . . . . . . . . . . . . . v . . . #
+  # . . . . . . . . . . . . . . . . . . . . . . . . . . . . #
+  # . . . . . . . . . . . . . . . . . . . . . . . . . . . . #
+  # . . . . . . . A . . . . . . . . . . . . . . . . . . . . #
+  # . . . . . . . . . . . . . . . $ $ $ . . . . . . . . . . #
+  # . . . . . . . . . . . . . . $ $ $ $ $ . . . . . . . . . #
+  # . . . . . . . . . . . . . $ $ B B B $ . . . L L . . . . #
+  # . . . ^ . . . . . . . . . $ $ B B B $ . . . L L . . . . #
+  # . . . . . . . . . . . . . $ $ B B B $ . . . . . . . . . #
+  # . . . . . . . . . . . . . . $ $ $ $ . . . . . . . . . . #
+  # . . . . . . . . . . . . . . . $ $ $ . . . . . . . . . . #
+  # . . . . . . . . . . . . . . . . . . . . . . . . . . . . #
+  # . . . . . . . . . . . A . . . . . . . . . . . . . . . . #
+  # . . . . ~ ~ ~ . . . . . . . . . . . . . . ~ ~ ~ . . . . #
+  # . . . ~ ~ ~ ~ ~ . . . . . . . . . . . . ~ ~ ~ ~ ~ . . . #
+  # . . . . ~ ~ ~ . . . . . . . . . . . . . . ~ ~ ~ . . . . #
+  # . . . . . . . . . . . . . . . . . . . . . . . . . . . . #
+  # # . . . . . . . . . . . . . . . . . . . . . . . . . . # #
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+notes:
+  - "Dragon (Huge, 3x3 squares) rests on hoard ($). Noise: DC 15 Move Silent."
+  - "Hoard is difficult terrain + grants bonus if claimed."
+  - "Molten fissures (~): 1d6 fire damage if adjacent, jump DC 15 (5ft wide)."
+  - "Ledges (L) allow high ground; dragon can fly to them."
+  - "3-4 minions (A) scattered; use to lure PCs into breath weapon line."
+  - "Cavern is 150×120 ft: enough room for Huge dragon flight."

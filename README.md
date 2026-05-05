@@ -1,7 +1,7 @@
 # Rumbling Stone
 
-**RumblingStone** is a custom D&D 3.5 campaign set in the Forgotten Realms (Faerûn, 1372 DR). 
-It is heavily based on *Red Hand of Doom* (Jacobs & Wyatt, 2006) and adapted from the Elsir Vale to the Dalelands region. 
+**RumblingStone** is a custom D&D 3.5 campaign set in the Forgotten Realms (Faerûn, 1372 DR).
+It is heavily based on *Red Hand of Doom* (Jacobs & Wyatt, 2006) and adapted from the Elsir Vale to the Dalelands region.
 This repository contains session logs, NPC data, encounters, lore, and custom mechanics tailored for an adult gaming group (emphasizing "Premium Design" and "Shine Time" mechanics).
 
 ## Campaign Arcs (Directory Structure)
@@ -22,14 +22,18 @@ The campaign is organized into chronological and locational arcs:
 ## Characters
 
 ### PG (Player Characters)
+
 The core heroes of the campaign (Detailed in `PG/`):
+
 - **Artemis** (Warlock 13): The analytical "Senior Developer," focused on stealth, tactical exploitation, and planar commerce.
 - **Thorik** (Guerriero 13): The strategic "Manager," navigating military tactics and political diplomacy.
 - **Tordek** (Guerriero 4 / Monaco 9): The out-of-the-box "Engineer," manipulating the battlefield environment and hunting ancient loot.
 - **Hella** (Ranger / Druido): The moral compass, bound to a stone-infused rhinoceros companion, anchoring the group's ethics.
 
 ### PNG (NPCs & Villains)
+
 Important non-player characters and antagonists (Detailed in `PNG/` and `campaign/npcs/`):
+
 - **Maestro Varis "Seta-Argento"**: Opportunistic planar merchant, urban broker in Rethmar, CR 6.
 - **Conte Valerius**: Nobility entangled in funding the enemy, demanding social/political finesse to defeat.
 - **Il Collezionista (Rakshasa)**: A deadly collector of rare artifacts and secrets, the shadow mastermind, GS 17–19.
@@ -54,7 +58,25 @@ Important non-player characters and antagonists (Detailed in `PNG/` and `campaig
 - **`skills/dnd-35-rules/`**: This repo ships a full D&D 3.5 rules skill for AI agents. It ensures rules are sourced from the d20 SRD and accurately adjudicates D&D 3.5 mechanics.
 
 ## Design Philosophy (Mastering for Adults)
+
 This campaign uses a **Reactive State Machine Design**. It emphasizes severe consequences for actions, intense political intrigue, destructible environments, and "Shine Time" personalized hooks for each player character to eliminate railroading and maximize player agency.
+
+## For DMs — Start Here
+
+If you are running (or planning to run) this campaign, read
+**[`campaign/DM-CAMPAIGN-PLAYBOOK.md`](campaign/DM-CAMPAIGN-PLAYBOOK.md)** first.
+It covers:
+
+- The 3-level state model (Canonico / Scenario / Vivo) and how to avoid losing progress
+- Pre-session, during-session, and post-session workflow checklists
+- Worked example of a `YYYY-MM-DD_session-N.md` file
+- Worked diff example of how to update `campaign/state.md` after a session
+- `§0 Campaign Status At-a-Glance` dashboard template (see top of `campaign/state.md`)
+- Dual-clock reference (March Clock + Ritual Clock)
+- **Reset procedure** to start the campaign with a new group (branch-per-group,
+  via `scripts/new-campaign-group.sh`)
+
+Blank templates for a fresh group live in `campaign/templates/`.
 
 ## Setup Instructions
 
@@ -63,4 +85,5 @@ This campaign uses a **Reactive State Machine Design**. It emphasizes severe con
 3. Review `AGENTS.md` to understand campaign conventions and agent instructions.
 
 ## Licensing Information
+
 This project contains private lore adaptations based on *Red Hand of Doom*. Mechanical content belongs to the respective owners of the D&D 3.5 OGL/SRD.

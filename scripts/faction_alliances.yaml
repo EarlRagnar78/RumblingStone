@@ -1,0 +1,278 @@
+# faction_alliances.yaml — Canonical faction + alliance matrix for RumblingStone.
+# Consumed by scripts/suggest_encounter.py v2.
+#
+# Sources:
+#   - campaign/state.md §2.2 (14 canonical factions)
+#   - campaign/lore/rhod-adaptations.md (RHoD canon)
+#   - Post-Hammerfist arc files (09_Continuazione.../Arco-Post-Hammerfist-*)
+#
+# Schema:
+#   factions:            list of canonical faction ids + labels + baseline env
+#   alliances:           canonical faction groupings (narrative + tactical)
+#   incompatible_pairs:  fazioni che NON possono combattere insieme
+#   rival_subfactions:   sotto-fazioni rivali interne alla stessa macro-fazione
+#   wild_encounter_tables: fauna/undead selvaggi per environment (faction=wild, loot=none)
+
+# ─────────────────────────────────────────────────────────────
+# 14 FAZIONI CANONICHE
+# ─────────────────────────────────────────────────────────────
+factions:
+  - id: red-hand
+    label: "Mano Rossa del Destino"
+    baseline_env: [ mountain, plain, any ]
+    leader: "Azarr Kul (Alto Wyrmlord di Tiamat)"
+  - id: drow-sonjak
+    label: "Casata Sonjak (Drow)"
+    baseline_env: [ underdark ]
+    leader: "Matrona Sajak Sonjak"
+  - id: gnoll
+    label: "Artigli Neri (Gnoll di Yeenoghu)"
+    baseline_env: [ plain, forest ]
+    leader: "Gnoll Chieftain"
+  - id: loxo-centaur-corrupted
+    label: "Loxo & Centauri Corrotti"
+    baseline_env: [ plain, forest ]
+    leader: "Centaur Chieftain corrotto"
+  - id: githyanki-vaereth
+    label: "Githyanki di Vaereth"
+    baseline_env: [ any, aerial ]
+    leader: "Vaereth (Githyanki Captain Gish)"
+  - id: teschio-nero-thay
+    label: "Teschio Nero di Thay"
+    baseline_env: [ any, urban ]
+    leader: "Teschio Nero Commander"
+  - id: rakshasa
+    label: "Il Collezionista e cultisti"
+    baseline_env: [ urban, any ]
+    leader: "Maestro Varis Seta-Argento (Il Collezionista)"
+  - id: ghostlord-undead
+    label: "Ghostlord / Lich del Thornwaste"
+    baseline_env: [ forest, any ]
+    leader: "Arcano Zeth il Murato (Ghostlord)"
+  - id: rethmar-defender
+    label: "Difensori di Rethmar"
+    baseline_env: [ urban ]
+    leader: "Consiglio di Rethmar / Capitana Lorana"
+  - id: dauth-defender
+    label: "Nani Difensori di Dauth"
+    baseline_env: [ mountain, any ]
+    leader: "Thorek / Tordek (Martelli di Moradin)"
+  - id: cerchio-druid
+    label: "Cerchio Sacro (druidi di Hella)"
+    baseline_env: [ forest ]
+    leader: "Hella (Arci-Druida)"
+  - id: starsong-elf
+    label: "Elfi Tiri-Kitor di Starsong Hill"
+    baseline_env: [ forest ]
+    leader: "Capitana Lythiel Alar-Wen"
+  - id: hammerfist-hero
+    label: "Eroi di Hammerfist"
+    baseline_env: [ mountain, any ]
+    leader: "Borin Ferropugno"
+  - id: aberration
+    label: "Aberrazioni (illithid, grell, beholder, mind flayer)"
+    baseline_env: [ underdark, dungeon ]
+    leader: "Xal'thor / Zalkatar / Sethrax (conclavi illithid rivali)"
+
+# ─────────────────────────────────────────────────────────────
+# 17 ALLEANZE CANONICHE
+# ─────────────────────────────────────────────────────────────
+alliances:
+  - id: red-hand-standard
+    label: "Mano Rossa — orda standard RHoD"
+    factions: [ red-hand ]
+    narrative: "Orda hobgoblin regolare con supporto draconico. Tattica: numeri +
+      wyrmlord + razorfiend."
+  - id: red-hand-drow-pact
+    label: "Mano Rossa + Patto Drow"
+    factions: [ red-hand, drow-sonjak ]
+    narrative: "Sajak Sonjak fornisce supporto arcano e infiltrazione underdark in
+      cambio di prigionieri."
+  - id: red-hand-gnoll-mercenary
+    label: "Mano Rossa + Gnoll mercenari"
+    factions: [ red-hand, gnoll ]
+    narrative: "Artigli Neri ingaggiati come skirmisher. Instabili: possono tradire
+      per bottino."
+  - id: red-hand-dragon
+    label: "Mano Rossa + draghi di Tiamat"
+    factions: [ red-hand, dragon ]
+    narrative: "Razorfiend + adult dragon al servizio di Azarr Kul. Core RHoD."
+  - id: red-hand-loxo-centaur
+    label: "Mano Rossa + Loxo/Centauri corrotti"
+    factions: [ red-hand, loxo-centaur-corrupted ]
+    narrative: "Tribù corrotte da rituali hobgoblin. Skirmisher di pianura."
+  - id: red-hand-teschio-nero
+    label: "Mano Rossa + Teschio Nero (Thay)"
+    factions: [ red-hand, teschio-nero-thay ]
+    narrative: "Red Wizard forniscono supporto arcano di alto livello. Evocatori e
+      necromanti."
+  - id: red-hand-ghostlord-undead
+    label: "Mano Rossa + Ghostlord (pre-redenzione)"
+    factions: [ red-hand, ghostlord-undead ]
+    narrative: "Patto ricattato: il lich fornisce undead in cambio delle ossa del
+      proprio leone. Rotto se PG liberano il vincolo."
+  - id: rakshasa-teschio-nero
+    label: "Collezionista + Teschio Nero"
+    factions: [ rakshasa, teschio-nero-thay ]
+    narrative: "Il Collezionista finanzia ricerche arcane in cambio di artefatti rubati."
+  - id: rakshasa-drow
+    label: "Collezionista + Drow Sonjak"
+    factions: [ rakshasa, drow-sonjak ]
+    narrative: "Scambio di schiavi e veleni. Solo in missioni urbane notturne."
+  - id: zalkatar-sethrax
+    label: "Conclave illithid Zalkatar + Sethrax"
+    factions: [ aberration ]
+    narrative: "Alleanza interna fra due emissari illithid. Rivali di Xal'thor."
+  - id: xalthor-illithid-githyanki
+    label: "Xal'thor + Githyanki di Vaereth"
+    factions: [ aberration, githyanki-vaereth ]
+    narrative: "Xal'thor ha stretto patto coi githyanki per colpire i suoi rivali
+      illithid. Rara e fragile."
+  - id: rethmar-standard
+    label: "Rethmar — difensori cittadini"
+    factions: [ rethmar-defender ]
+    narrative: "Milizia + Capitana Lorana + mago Tempestas. Difesa urbana standard."
+  - id: rethmar-dauth-alliance
+    label: "Rethmar + Dauth (Martelli di Moradin)"
+    factions: [ rethmar-defender, dauth-defender ]
+    narrative: "Dopo il Torneo di Tordek: contingente nanico ufficiale schierato a
+      Rethmar."
+  - id: rethmar-starsong
+    label: "Rethmar + Elfi Tiri-Kitor"
+    factions: [ rethmar-defender, starsong-elf ]
+    narrative: "Alleanza post-Starsong Hill. Arcieri e cavalleria di gufo."
+  - id: rethmar-cerchio
+    label: "Rethmar + Cerchio Sacro"
+    factions: [ rethmar-defender, cerchio-druid ]
+    narrative: "Dopo la Quest di Hellas: druidi benedicono le mura con
+      Barkskin/Plant Growth."
+  - id: rethmar-hammerfist-heroes
+    label: "Rethmar + Eroi di Hammerfist"
+    factions: [ rethmar-defender, hammerfist-hero, dauth-defender ]
+    narrative: "Alleanza piena post-Hammerfist. Roster completo di veterani."
+  - id: ghostlord-redeemed
+    label: "Ghostlord redento + alleati"
+    factions: [ ghostlord-undead, cerchio-druid ]
+    narrative: "Se i PG liberano le ossa del leone: il Ghostlord rompe il patto con
+      Azarr Kul e sostiene Rethmar."
+
+# ─────────────────────────────────────────────────────────────
+# 13 COPPIE INCOMPATIBILI (non possono combattere dalla stessa parte)
+# ─────────────────────────────────────────────────────────────
+incompatible_pairs:
+  - [ rethmar-defender, red-hand ]
+  - [ rethmar-defender, drow-sonjak ]
+  - [ rethmar-defender, gnoll ]
+  - [ rethmar-defender, teschio-nero-thay ]
+  - [ rethmar-defender, rakshasa ]
+  - [ cerchio-druid, ghostlord-undead ] # eccetto redeemed (gestito via alleanza esplicita)
+  - [ cerchio-druid, red-hand ]
+  - [ starsong-elf, drow-sonjak ]
+  - [ starsong-elf, red-hand ]
+  - [ dauth-defender, red-hand ]
+  - [ hammerfist-hero, red-hand ]
+  - [ hammerfist-hero, aberration ]
+  - [ cerchio-druid, loxo-centaur-corrupted ]
+
+# ─────────────────────────────────────────────────────────────
+# RIVAL SUBFACTIONS (stessa macro-fazione ma in guerra interna)
+# ─────────────────────────────────────────────────────────────
+rival_subfactions:
+  - group: aberration
+    rivals:
+      - [ xal-thor, zalkatar ]
+      - [ xal-thor, sethrax ]
+    note: |
+      I conclavi illithid Xal'thor e Zalkatar+Sethrax sono in guerra fredda.
+      Possono apparire in scontri triangolari ma NON come alleati diretti.
+
+# ─────────────────────────────────────────────────────────────
+# WILD ENCOUNTER TABLES — fauna/undead errante per environment.
+# faction: wild (pseudo). loot: none (solo tesoro naturale: pelli, gemme stomaco).
+# Usato da --wild in suggest_encounter.py.
+# ─────────────────────────────────────────────────────────────
+wild_encounter_tables:
+  swamp:
+    narrative: "Cannath Vale, paludi di Blackfens. Razorfiend feriti, predatori
+      opportunisti."
+    monsters:
+      - {
+          name: "Razorfiend ferito (selvatico)",
+          cr: 7,
+          srd_ref: "MM Half-Dragon template on crocodile",
+        }
+      - {
+          name: "Giant Constrictor Snake",
+          cr: 5,
+          srd_ref: "SRD Giant Constrictor Snake",
+        }
+      - { name: "Shambling Mound", cr: 6, srd_ref: "SRD Shambling Mound" }
+      - { name: "Will-o'-Wisp", cr: 6, srd_ref: "SRD Will-o'-Wisp" }
+      - {
+          name: "Undead opportunista (bog mummy)",
+          cr: 5,
+          srd_ref: "SRD Mummy variant",
+        }
+      - { name: "Hydra 7-head", cr: 8, srd_ref: "SRD Hydra" }
+  forest:
+    narrative: "Foreste del Cerchio Sacro (non-corrotte), predatori naturali."
+    monsters:
+      - { name: "Dire Wolf pack leader", cr: 3, srd_ref: "SRD Dire Wolf" }
+      - { name: "Owlbear", cr: 4, srd_ref: "SRD Owlbear" }
+      - { name: "Treant ostile (non-Cerchio)", cr: 8, srd_ref: "SRD Treant" }
+      - {
+          name: "Giant Spider Monstrous Huge",
+          cr: 5,
+          srd_ref: "SRD Monstrous Spider",
+        }
+      - { name: "Dire Bear", cr: 7, srd_ref: "SRD Dire Bear" }
+      - { name: "Ettercap coven", cr: 3, srd_ref: "SRD Ettercap" }
+  mountain:
+    narrative: "Picchi delle Tombe Rosse e Hammerfist, bestie aeree e giganti raminghi."
+    monsters:
+      - { name: "Manticore", cr: 5, srd_ref: "SRD Manticore" }
+      - { name: "Harpy flight", cr: 4, srd_ref: "SRD Harpy" }
+      - { name: "Hill Giant rogue", cr: 7, srd_ref: "SRD Hill Giant" }
+      - { name: "Griffon", cr: 4, srd_ref: "SRD Griffon" }
+      - { name: "Stone Giant hermit", cr: 8, srd_ref: "SRD Stone Giant" }
+      - { name: "Frost Giant bandit", cr: 9, srd_ref: "SRD Frost Giant" }
+  underdark:
+    narrative: "Gallerie non-controllate da Sonjak. Aberrazioni e vermi."
+    monsters:
+      - { name: "Grell selvatico", cr: 3, srd_ref: "SRD Grell (MM2 but SRD-listed)" }
+      - { name: "Cloaker", cr: 5, srd_ref: "SRD Cloaker" }
+      - { name: "Monstrous Spider Huge", cr: 5, srd_ref: "SRD Monstrous Spider" }
+      - { name: "Ochre Jelly", cr: 5, srd_ref: "SRD Ochre Jelly" }
+      - { name: "Roper", cr: 12, srd_ref: "SRD Roper" }
+      - { name: "Umber Hulk", cr: 7, srd_ref: "SRD Umber Hulk" }
+      - { name: "Purple Worm", cr: 12, srd_ref: "SRD Purple Worm" }
+  plain:
+    narrative: "Pianure di Rethmar, predatori non-legati a tribù gnoll."
+    monsters:
+      - { name: "Dire Lion", cr: 5, srd_ref: "SRD Dire Lion" }
+      - { name: "Ankheg", cr: 3, srd_ref: "SRD Ankheg" }
+      - { name: "Girallon", cr: 6, srd_ref: "SRD Girallon" }
+      - { name: "Bulette", cr: 7, srd_ref: "SRD Bulette" }
+  aerial:
+    narrative: "Cieli sopra Cannath Vale, predatori alati."
+    monsters:
+      - { name: "Wyvern", cr: 6, srd_ref: "SRD Wyvern" }
+      - { name: "Chimera", cr: 7, srd_ref: "SRD Chimera" }
+      - { name: "Roc", cr: 9, srd_ref: "SRD Roc" }
+      - { name: "Giant Eagle", cr: 3, srd_ref: "SRD Giant Eagle" }
+  dungeon:
+    narrative: "Tombe e rovine (Belkram, Torre Invisibile periferie). Undead e
+      costrutti erranti."
+    monsters:
+      - { name: "Wight", cr: 3, srd_ref: "SRD Wight" }
+      - { name: "Wraith", cr: 5, srd_ref: "SRD Wraith" }
+      - { name: "Gargoyle", cr: 4, srd_ref: "SRD Gargoyle" }
+      - { name: "Mummy", cr: 5, srd_ref: "SRD Mummy" }
+      - { name: "Stone Golem", cr: 11, srd_ref: "SRD Stone Golem" }
+  urban:
+    narrative: "Vicoli di Rethmar notturni, banditi e bestie da scantinato."
+    monsters:
+      - { name: "Dire Rat swarm", cr: 2, srd_ref: "SRD Dire Rat / Rat Swarm" }
+      - { name: "Wererat lone", cr: 3, srd_ref: "SRD Wererat" }
+      - { name: "Shadow", cr: 3, srd_ref: "SRD Shadow" }
+      - { name: "Allip", cr: 3, srd_ref: "SRD Allip" }

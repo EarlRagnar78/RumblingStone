@@ -28,7 +28,7 @@
 | 07 | Portale della Forgia Eterna — Piani Elementali | `08_ARC07_portale-forgia-eterna.md` | 1 video intro + 6 immagini sessione |
 | 08 | Battaglia di Hammerfist — La Mano Rossa del Destino | `09_ARC08_battaglia-hammerfist.md` | 1 video intro + 5 immagini sessione |
 | 09 | Post-Hammerfist — Quest Personali & Rethmar | `10_ARC09_post-hammerfist.md` | 1 video intro + 16 immagini sessione |
-| 10 | Atlante Visivo — Personaggi Giocanti e Villain Principali | `11_PG_E_VILLAIN_PROMPTS.md` | Ritratti e concept art (4 Eroi, 4 Villain) |
+| 10 | Atlante Visivo — Personaggi Giocanti e Villain Principali | `11_PG_E_VILLAIN_PROMPTS.md` | Ritratti e concept art (23 PG/NPC/Creature) |
 
 ---
 
@@ -77,8 +77,8 @@
 |------|----------------|
 | Video Intro (per arco) | 10 |
 | Immagini Sessione | ~53 |
-| Ritratti PG/Villain | 8 |
-| **Totale Asset** | **~71** |
+| Ritratti PG/NPC/Creature| 23 |
+| **Totale Asset** | **~86** |
 
 ---
 

@@ -499,6 +499,25 @@ organic shapes, mystical lighting.
 [ASPECT RATIO] 4:3 (Portrait)
 ```
 
+### 📸 5.5 — IL GREENSPAWN RAZORFIEND (L'Orrore delle Paludi)
+*Il Prestigioso Cacciatore di Rhest*
+
+```
+[PROMPT IMMAGINE BASE]
+A horrifying, draconic swamp monster known as a Greenspawn Razorfiend. 
+It has the sleek, muscular, bipedal body of a raptor dinosaur, covered 
+in dark, mottled green and black reptilian scales. Its head is crocodilian 
+with glowing yellow slit-eyes. Its most terrifying features are its front 
+limbs: instead of hands, it has massive, razor-sharp, scythe-like bone blades 
+dripping with swamp water and blood. A sharp dorsal fin runs down its back. 
+It is violently lunging out of murky, fog-covered swamp water toward the viewer.
+
+[STILE] Creature design, Jurassic Park horror meets D&D dragon-kin, 
+dynamic lunge action, splash of swamp water.
+
+[ASPECT RATIO] 16:9 (Landscape for action pose)
+```
+
 ---
 
 ## 6. COME USARE QUESTI PROMPT INSIEME AI PROMPT DI SESSIONE

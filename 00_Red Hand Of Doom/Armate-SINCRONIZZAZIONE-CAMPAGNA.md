@@ -7,8 +7,8 @@
 > Flag: `[ACCEPTED — DM-canon 2026-05-05]`. I trigger scheduling sono
 > vincolanti per l'Arco-09 salvo override esplicito in session log.
 
-> **Versione**: v2 (AP-canon March Clock Day 1→40, sync point Day 19 =
-> Hammerfist end = Terrelton falls). Supersede v1 refugee-flow draft.
+> **Versione**: v2.1 (AP-canon March Clock Day 1→42, sync point Day 19 =
+> Hammerfist end = Terrelton falls; +2gg Sonjak halt Day 35-37). Supersede v1 refugee-flow draft.
 > **Cross-reference**: `Armate-CALCOLI-ESERCITI-DINAMICI.md` §2-§3;
 > `campaign/state.md` §2.1.
 
@@ -22,7 +22,7 @@ Due orologi **indipendenti** governano la campagna da post-Hammerfist:
 
 - Traccia la posizione fisica dell'orda della Mano Rossa.
 - Waypoint deterministici dalla AP RHoD, adattati a Channath Vale.
-- Run: **Day 1 → Day 40**.
+- Run: **Day 1 → Day 42**.
 - **Day corrente**: **19** (Terrelton appena caduta / Hammerfist appena
   conclusa).
 
@@ -55,11 +55,12 @@ Adattamento AP RHoD → Channath Vale/Elsir Vale 1372 DR.
 | 25 | Marth Fen sweep | **Blackfens / Rhest area** | Razorfiend nest active; Saarvith consolidates | ⏳ |
 | 30 | Vanguard raids continue | Raid minori Channath settentrionale | Distaccamenti locali | ⏳ |
 | 33 | Elsir Crossroads | **Channath Crocevia** | Horde si riunisce | ⏳ |
-| 35 | Last supply consolidation | Witchcross fall | Druidi caduti; bosco bruciato | ⏳ |
-| 38 | Advance scouts at Brindol | Scout drow a Rethmar (Notte dei Drow) | Fase 0 inizia | ⏳ |
-| **40** | **Horde arrives Brindol & encamps** | **Horde arriva Rethmar & encamps** | **Rethmar assault Fase 1** | ⏳ |
+| 35 | Last supply consolidation | Witchcross fall | Druidi caduti; bosco bruciato — resistenza druidica +1 giorno | ⏳ |
+| 35-37 | **SOSTA SONJAK — Aberrazioni + Logistica** | Rovine Witchcross | Esperimenti fungini (Servitori Spora, Sporeborn, Guardiani Neri); attesa convogli rifornimento dalle Wyrmbones (35-40 t/gg per 11.000 truppe) | ⏳ |
+| 40 | Advance scouts at Brindol | Scout drow a Rethmar (Notte dei Drow) | Fase 0 inizia | ⏳ |
+| **42** | **Horde arrives Brindol & encamps** | **Horde arriva Rethmar & encamps** | **Rethmar assault Fase 1** | ⏳ |
 
-**Window PG per Arc-09**: **Day 20-39** (20 giorni per: Hella Sacred
+**Window PG per Arc-09**: **Day 20-41** (22 giorni per: Hella Sacred
 Forest, Tordek Dauth Tournament, Artemis Tower, Thorik Rethmar letter,
 P2 Rhest, P3 Ghostlord, eventuali quest secondarie).
 
@@ -81,9 +82,10 @@ Numeri baseline partendo da **9.940 iniziali** (vedi
 | 20-24 | Marcia post-Hammerfist, morale −2 | −120 | — | 8.490 |
 | 25 | Blackfens sweep (Razorfiend kills own) | −60 | — | 8.430 |
 | 27-32 | Marcia Channath centrale, attrition | −130 | +200 (Compagnia del Teschio Nero si unisce finalmente) | 8.500 |
-| 33-35 | Elsir Crossroads + Witchcross | −90 | — | 8.410 |
-| 38 | Advance scouts consolidate Rethmar area | −30 | — | 8.380 |
-| **40** | **Arrivo Rethmar** | −30 | +?? (additivi condizionali, vedi §4) | **~8.350 baseline** |
+| 33-35 | Elsir Crossroads + Witchcross (resistenza druidica) | −110 | — | 8.390 |
+| 35-37 | **Sosta Sonjak** (aberrazioni + rifornimenti) | −20 (attrito sosta) | +83 aberrazioni (Sonjak) | **8.453** |
+| 40 | Advance scouts consolidate Rethmar area | −30 | — | 8.423 |
+| **42** | **Arrivo Rethmar** | −30 | +?? (additivi condizionali, vedi §4) | **~8.390 baseline** |
 
 **Baseline pre-additivi a Rethmar**: **~8.350**.
 

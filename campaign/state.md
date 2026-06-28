@@ -49,7 +49,7 @@ Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per det
 | 09 P3 Ghostlord | ⬜ | non iniziato | Day 25-32 | 13-14 | 3 branch: ostile/neutralizzato/alleato |
 | 09 P3 Sabotaggio Campi Drow | ⬜ | non iniziato | Day 30-36 | 13-14 | -Fase 0 + -45 esperimenti fungini |
 | 09 P3 Missioni Brevi CR12 | ⬜ | non iniziato | Day 30-38 | 13-14 | — |
-| **09 P3 Battaglia Finale Rethmar** | ⬜ | target | **Day 40** | 14 | Fase 0-4 |
+| **09 P3 Battaglia Finale Rethmar** | ⬜ | target | **Day 42** | 14 | Fase 0-4 |
 
 **Legenda**: ✅ completato · 🟡 in corso / imminente · ⬜ non iniziato · ❌ fallito · ⏸ sospeso
 
@@ -88,7 +88,7 @@ Two independent clocks drive Arc 09:
 
 1. **MARCH CLOCK** — the official AP (RHoD) campaign timeline for the
    physical march of the horde. Deterministic waypoints (except where
-   PG have already shifted them). Runs **Day 1 → Day 40**.
+   PG have already shifted them). Runs **Day 1 → Day 42**.
 2. **RITUAL CLOCK (Azarr Kul)** — rituals at the Fane of Tiamat,
    independent of marching distance. Still `/18`. **Does NOT advance
    with march days.** Advances only on ritual triggers (see §3).
@@ -104,10 +104,12 @@ Two independent clocks drive Arc 09:
 | **19** | **Terrelton equivalent falls** | 🎯 **SYNC POINT = End of Battle of Hammerfist** |
 | 25 | Marth Fen / Blackfens (Rhest area) | ⏳ Pending |
 | 33–35 | Elsir Crossroads / Channath Crocevia | ⏳ Pending |
-| **40** | **Horde arrives at Rethmar (ex-Brindol) and encamps** | 🎯 **Rethmar assault begins** |
+| 35-37 | **Sonjak halt** — aberrazioni experiments + supply convoy wait | ⏳ Pending |
+| 40 | Notte dei Drow / advance scout phase (Fase 0 begins) | ⏳ Pending |
+| **42** | **Horde arrives at Rethmar (ex-Brindol) and encamps** | 🎯 **Rethmar assault begins** |
 
 **Current March Day:** **19** (Terrelton just fell as Hammerfist ended).
-**Days remaining to Rethmar:** **21** (PG-quest window = Arc 09).
+**Days remaining to Rethmar:** **23** (PG-quest window = Arc 09, Days 20-41).
 
 ### 2.2 Red Hand of Doom — Horde Composition (Baseline ~10,000)
 

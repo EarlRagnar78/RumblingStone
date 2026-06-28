@@ -98,6 +98,26 @@ guardie dei Wyrmlord upscaled.
 | **Compagnia del Teschio Nero** (umani malvagi mercenari Thay/Mulhorand) | 650 | Heavy infantry + 6 casters Thayan (Wizard 7 red robes minori) + comandante CR 10 |
 | **Subtotale alleati** | **2.910** | |
 
+### 2.4a Esperimenti Aberranti di Sonjak — Unità Speciali (create Giorni 35-37)
+
+> Matrona Sonjak utilizza la sosta logistica post-Witchcross per condurre
+> esperimenti con spore fungine dell'Underdark e modificazioni aberranti
+> su Drow volontari e prigionieri catturati. Il risultato: unità d'assalto
+> che nessun difensore si aspetta. Già referenziate come "−45 esperimenti
+> fungini" nel sabotaggio dei Campi Drow (`campaign/state.md` §arc-09).
+
+| Unità | GS | Numero | Descrizione |
+|---|---|---|---|
+| **Sporeborn** (Drow ibridati con spore fungine) | 6 | 30 | Drow volontari infettati: Str +4, immunità al dolore, berserk mode — rischio fuoco amico 1/10 round se non controllati |
+| **Servitori della Spora** (umanoidi infetti) | 3 | 45 | Druidi e civili di Witchcross trasformati: carica suicida, veleno da contatto CD 16, mindless — unità monouso |
+| **Guardiani Neri** (esperimenti d'élite con innesti aberranti) | 9 | 8 | Grafi occhio-beholder + tentacolo illithid su corpi Drow potenziati; lenti ma devastanti |
+| **Subtotale Aberrazioni Sonjak** | | **83** | Distrutte se PG sabotano i Campi Drow (−45 Servitori, −30 Sporeborn) |
+
+> **Nota DM:** Se i PG sabotano i Campi Drow (missione Arc-09 P3), gli
+> esperimenti di Sonjak vengono distrutti — perdita di 83 unità aberranti
+> **e** +1 giorno di ritardo per Sonjak (morale blow). L'assalto rimane
+> a Day 42 ma la Fase 0 (Notte dei Drow) è indebolita.
+
 ### 2.5 Totale Baseline
 
 | Categoria | Unità |
@@ -232,17 +252,27 @@ sforzo medio, **meglio di Hammerfist** solo se i PG eccellono.
 ## 7. Interazione con March Clock (AP ufficiale)
 
 Dettagli completi in `Armate-SINCRONIZZAZIONE-CAMPAGNA.md` §2 (waypoint
-ledger AP Day 1→40).
+ledger AP Day 1→42).
 
 **Sync Point Day 19**: Terrelton equivalent cade *simultaneamente* alla
 fine della Battaglia di Hammerfist. Questo è il **punto di sincronia
 canonica** per tutta l'Arco-09.
 
-**Days 20-39**: window PG per Arc-09 (Hella, Tordek, Artemis, Thorik
+**Days 20-41**: window PG per Arc-09 (Hella, Tordek, Artemis, Thorik
 quest + Rhest + Tower + eventuale Ghostlord).
 
-**Day 40**: orda arriva a Rethmar e si accampa. Fase 0 (Notte dei Drow)
-parte quella notte.
+**Day 35-37 — Sosta di Sonjak (aberrazioni + catena rifornimenti):**
+Dopo la caduta di Witchcross, l'orda si ferma per 2 giorni obbligatori:
+(a) Matrona Sonjak conduce i suoi esperimenti sulle spore fungine sui
+prigionieri catturati — vedi §2.4a; (b) la catena logistica dei
+rifornimenti è esaurita: 11.000 truppe consumano 35-40 t/giorno e i
+villaggi saccheggiati non bastano — Azarr Kul aspetta i convogli dalle
+Wyrmbones. Questo ritardo è tattico oltre che logistico: il comandante
+supremo vuole presentarsi a Rethmar alla massima potenza.
+
+**Day 42**: orda arriva a Rethmar e si accampa. Fase 0 (Notte dei Drow)
+parte nella notte del Giorno 40-41, anticipo tattico. L'assalto
+principale inizia al **Giorno 42**.
 
 ---
 

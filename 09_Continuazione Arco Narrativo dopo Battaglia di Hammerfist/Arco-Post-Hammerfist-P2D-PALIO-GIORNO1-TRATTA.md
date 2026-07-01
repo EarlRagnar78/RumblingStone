@@ -45,7 +45,11 @@ di campagna**. È il momento in cui i giocatori **scelgono la loro bandiera**.
 
 > **Come gestire la scelta** (Master §5): 1) le proposte; 2) la **discussione tattica** fra
 > i PG (roleplay!); 3) la **Prova**; 4) al successo, il **Fazzoletto della Contrada** e il
-> titolo di *Protettori* del rione per i giorni del Palio. Le altre 6/7 diventano rivali.
+> titolo di *Protettori* del rione per i giorni del Palio. Le altre 7 diventano rivali.
+>
+> **▶ Le 8 Prove sono giocate scena per scena** (setup, beat con DC, complicazioni, esiti
+> Successo/Parziale/Fallimento, aggancio di campagna) in
+> **`Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md`**. La tabella qui sotto è il riepilogo.
 
 ### 1.2 Il rito del Fazzoletto (tutte le contrade)
 Superata la Prova, la Dirigenza consegna ai PG il fazzoletto e chiede il **Giuramento sul

@@ -17,6 +17,7 @@ Questo file è l'**HUB**. I contenuti di dettaglio sono negli allegati:
 | `...P2D-PALIO-CONTRADE-STEMMI-CANTI.md` | Le **8 contrade**, stemmi (SVG), motti, canti con **bonus/malus**, rivalità, upgrade grafico |
 | `...P2D-PALIO-BALLATE.md` | **Testi completi delle 8 ballate** giocabili (ritornello, strofa d'attacco, scherno, effetti) |
 | `...P2D-PALIO-GIORNO1-TRATTA.md` | Giorno 1: mercato degli emissari, Prove d'Ammissione, la **Tratta** truccabile |
+| `...P2D-PALIO-PROVE-AMMISSIONE.md` | **Le 8 Prove d'Ammissione giocate scena per scena** (beat, DC, complicazioni, esiti, agganci) |
 | `...P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md` | Giorno 2: i **Partiti**, la **Cena della Prova**, guerra delle ballate, stalla/fantino, drow |
 | `...P2D-PALIO-GIORNO3-4-CORSA-ESITI.md` | Giorni 3–4: benedizione, **Mossa**, la **Corsa** (Chase), esiti e cavalcata di soccorso |
 | `...P2D-PALIO-STATBLOCCHI.md` | Fantino Cavaliere/Ladro, sicari drow, PNG chiave, cavalli (bombolone/brenna) |

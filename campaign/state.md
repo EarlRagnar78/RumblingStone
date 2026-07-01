@@ -47,7 +47,7 @@ Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per det
 | 09 P2C Salvatore Mercante | ⬜ | non iniziato | Day 28-36 | 13 | Sal clock 0/6 |
 | 09 P3 Starsong Hill (Tiri-Kitor) | ⬜ | non iniziato | Day 30-35 | 13-14 | +cavalleria civette |
 | 09 P3 Ghostlord | ⬜ | non iniziato | Day 25-32 | 13-14 | 3 branch: ostile/neutralizzato/alleato |
-| 09 P3 Sabotaggio Campi Drow | ⬜ | non iniziato | Day 30-36 | 13-14 | -Fase 0 + -45 esperimenti fungini |
+| 09 P3 Sabotaggio Campi Drow | ⬜ | non iniziato | Day 30-36 | 13-14 | -Fase 0 + -75 esperimenti fungini (45 Servitori + 30 Sporeborn; 8 Guardiani Neri sopravvivono) |
 | 09 P3 Missioni Brevi CR12 | ⬜ | non iniziato | Day 30-38 | 13-14 | — |
 | **09 P3 Battaglia Finale Rethmar** | ⬜ | target | **Day 42** | 14 | Fase 0-4 |
 

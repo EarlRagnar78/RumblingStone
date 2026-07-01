@@ -103,20 +103,23 @@ guardie dei Wyrmlord upscaled.
 > Matrona Sonjak utilizza la sosta logistica post-Witchcross per condurre
 > esperimenti con spore fungine dell'Underdark e modificazioni aberranti
 > su Drow volontari e prigionieri catturati. Il risultato: unità d'assalto
-> che nessun difensore si aspetta. Già referenziate come "−45 esperimenti
-> fungini" nel sabotaggio dei Campi Drow (`campaign/state.md` §arc-09).
+> che nessun difensore si aspetta. Il sabotaggio dei Campi Drow
+> (`campaign/state.md` §arc-09) ne distrugge **75** (Servitori + Sporeborn,
+> il laboratorio brucia); gli **8 Guardiani Neri d'élite sopravvivono**
+> perché deployati con la scorta personale di Sonjak, non nel lab.
 
 | Unità | GS | Numero | Descrizione |
 |---|---|---|---|
 | **Sporeborn** (Drow ibridati con spore fungine) | 6 | 30 | Drow volontari infettati: Str +4, immunità al dolore, berserk mode — rischio fuoco amico 1/10 round se non controllati |
 | **Servitori della Spora** (umanoidi infetti) | 3 | 45 | Druidi e civili di Witchcross trasformati: carica suicida, veleno da contatto CD 16, mindless — unità monouso |
 | **Guardiani Neri** (esperimenti d'élite con innesti aberranti) | 9 | 8 | Grafi occhio-beholder + tentacolo illithid su corpi Drow potenziati; lenti ma devastanti |
-| **Subtotale Aberrazioni Sonjak** | | **83** | Distrutte se PG sabotano i Campi Drow (−45 Servitori, −30 Sporeborn) |
+| **Subtotale Aberrazioni Sonjak** | | **83** | Sabotaggio Campi Drow distrugge **75** (−45 Servitori, −30 Sporeborn); gli **8 Guardiani Neri** sopravvivono (scorta di Sonjak) e combattono comunque a Rethmar |
 
-> **Nota DM:** Se i PG sabotano i Campi Drow (missione Arc-09 P3), gli
-> esperimenti di Sonjak vengono distrutti — perdita di 83 unità aberranti
-> **e** +1 giorno di ritardo per Sonjak (morale blow). L'assalto rimane
-> a Day 42 ma la Fase 0 (Notte dei Drow) è indebolita.
+> **Nota DM:** Se i PG sabotano i Campi Drow (missione Arc-09 P3), il
+> laboratorio brucia — perdita di **75 unità aberranti** (45 Servitori +
+> 30 Sporeborn); gli **8 Guardiani Neri sopravvivono** (deployati con la
+> scorta di Sonjak) **e** +1 giorno di ritardo per Sonjak (morale blow).
+> L'assalto rimane a Day 42 ma la Fase 0 (Notte dei Drow) è indebolita.
 
 ### 2.5 Totale Baseline
 

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240" role="img" aria-label="Stemma Contrada della Torre">
+  <defs><clipPath id="s2"><path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z"/></clipPath></defs>
+  <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="#8a1f2b" stroke="#26364d" stroke-width="6"/>
+  <g clip-path="url(#s2)">
+    <path d="M20 150 L100 175 L180 150 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="#26364d"/>
+    <path d="M20 90 H180 V110 H20 Z" fill="#f2efe6" opacity="0.9"/>
+    <!-- torre-bastione originale (no elefante): mastio merlato con pugno guantato -->
+    <g transform="translate(100,60)">
+      <rect x="-26" y="40" width="52" height="60" fill="#d9d2c2" stroke="#3a2f22" stroke-width="2"/>
+      <rect x="-30" y="30" width="60" height="14" fill="#c7bfae" stroke="#3a2f22" stroke-width="2"/>
+      <rect x="-30" y="18" width="10" height="12" fill="#c7bfae" stroke="#3a2f22" stroke-width="2"/>
+      <rect x="-5" y="18" width="10" height="12" fill="#c7bfae" stroke="#3a2f22" stroke-width="2"/>
+      <rect x="20" y="18" width="10" height="12" fill="#c7bfae" stroke="#3a2f22" stroke-width="2"/>
+      <rect x="-8" y="66" width="16" height="34" fill="#3a2f22"/>
+      <!-- pugno guantato (Torm/Tempus) -->
+      <path d="M-10 12 q10 -14 20 0 q6 -2 4 8 l-2 6 h-24 l-2 -6 q-2 -10 4 -8z" fill="#e9c24a" stroke="#6b5200" stroke-width="1.5"/>
+    </g>
+  </g>
+  <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="none" stroke="#26364d" stroke-width="6"/>
+  <rect x="30" y="182" width="140" height="26" rx="4" fill="#0d1b2a" opacity="0.82"/>
+  <text x="100" y="200" font-family="Georgia,serif" font-size="12" fill="#e9c24a" text-anchor="middle" font-style="italic">Oltre il ferro, la volontà</text>
+  <text x="100" y="14" font-family="Georgia,serif" font-size="12" fill="#26364d" text-anchor="middle" font-weight="bold">LA TORRE · Torm/Tempus</text>
+</svg>

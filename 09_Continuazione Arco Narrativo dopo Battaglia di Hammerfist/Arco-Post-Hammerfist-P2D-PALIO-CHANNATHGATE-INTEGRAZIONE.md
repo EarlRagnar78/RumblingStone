@@ -83,6 +83,7 @@ diventano *patroni di contrada*. Mappatura definitiva:
 | **Il Drago** | **Maester Pyriel** (sapere/magia) | Mystra | Astensione | Requisire componenti magici → **barriera anti-drago** |
 | **La Civetta** | **Conte Valerius** (nobiltà decaduta) | Shar | *(esterno)* | Coprire i "prestiti patriottici" alla Mano Rossa, insabbiare i registri |
 | **L'Unicorno** | **Aldric Thornwall** (gilde/ceto medio) | Sune/Milil | Volatile | Status quo; logistica e fortificazioni; sopravvivere |
+| **L'Onda** *(NEW)* | **Gonfaloniere + Gilda dei Barcaioli** (contrada di casa) | Valkur/Selûne | *(host city)* | Onore del porto; **firma il Decreto** se vince; alleata segreta dell'Istrice |
 
 > **Halveth (LE, corrotto)** non ha contrada propria: **finanzia in segreto l'Oca**
 > (fazione resa) col medesimo denaro del Collezionista. Smascherarlo al Palio (§3)
@@ -203,6 +204,7 @@ l'unica che risveglia i Golem**; il Drago è l'unico che dà il Mythal anti-drag
 | **Il Bruco** (Varis) | **Piaga Chimica dei Canali** *(variante)* | Chiuse alchemiche gnomiche: fossati di fuoco liquido/gas acido; assassini decapitano la catena di comando nemica. **−GS avanguardia** Fase 1; **−1 comandante** (Karruk?) a inizio assedio. |
 | **L'Unicorno** (Thornwall/Sorvane) | **Arpa della Tempesta Bardica** *(variante)* | Struttura sonora sulla torre alta: **Ispirare Coraggio di massa** (+ ai TS vs paura a tutti i difensori) + fulmini sonici sugli scalatori. |
 | **La Civetta** (Valerius) | **Muri Illusori del Disorientamento** *(variante)* | Illusione di massa: mura in posizioni errate, catapulte a vuoto, cariche in vicoli-trappola. **Ambiguo**: potente ma Valerius resta un traditore (§6.4). |
+| **L'Onda** (Gonfaloniere) | **La Marea Montante** *(variante, NEW)* | Flotta fluviale (+~250 marinai-arcieri, rifornimenti garantiti) scende il Cannath a Rethmar; barcaioli **allagano le vie d'approccio** ai guadi. **−1 GS Fase 1** + **evacuazione civili** (riduce pressione Fase 3). Firma immediata del Decreto. |
 | **L'Oca** (Kaal) | **— (nessuna Meraviglia)** | La vittoria dell'Oca = **RESA** (§6.5): niente Meraviglia, branch disastro. |
 
 ---
@@ -334,6 +336,7 @@ Da aggiungere quando il DM adotta il modulo (non applicata automaticamente):
 | **Drago** | Difesa | pergamene/pozioni | −1 aeree Fase 1, −1/−2 Ritual Fase 2 | Quasi-Mythal Perfetto |
 | **Bruco** | grigio | intel + sconto 30% | −GS Fase 1 (logistica) | Piaga Chimica Canali |
 | **Unicorno** | Difesa di misura | +logistica/fortificazioni | +TS vs paura (Arpa) | Arpa Bardica |
+| **Onda** | Difesa (Decreto imm.) | +250 marinai + rifornimenti + evacuazione civili | −1 Fase 1 (guadi allagati) | Marea Montante |
 | **Civetta** | grigio/rischio | Muri Illusori ma traditore | ambiguo | Muri Illusori |
 | **Oca** | **RESA** | branch disastro (~5,8:1) | guerriglia urbana | nessuna |
 | **Ignorato** | RESA di misura (default) | nessuno sblocco | Mythal a rischio (35% rottura) | nessuna |

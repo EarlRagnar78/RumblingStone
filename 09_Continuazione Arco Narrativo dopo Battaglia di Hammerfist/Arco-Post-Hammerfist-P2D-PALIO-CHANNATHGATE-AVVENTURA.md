@@ -49,7 +49,12 @@ Ogni contrada ha una struttura di governo (il **Seggio**/Deputazione). Assegna i
 
 ---
 
-## 1. Le Contrade (7 fazioni + rivalità)
+> **⚠️ ESPANSIONE v2 (2026-07-01)**: questo file resta valido come *regole-base*, ma
+> l'arco è stato espanso a **8 contrade** (aggiunta **l'Onda**), **3–4 sessioni**, mappe e
+> stemmi. Punto d'ingresso aggiornato: **`Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md`**.
+> Contrade complete (con stemmi/canti): `...P2D-PALIO-CONTRADE-STEMMI-CANTI.md`.
+
+## 1. Le Contrade (8 fazioni + rivalità)
 
 Ogni Contrada è una fazione **iper-religiosa e paramilitare** con un proprio *Oratorio*
 (chiesa), un Santo Patrono (qui: divinità di Faerûn), un carattere e una **rivale
@@ -104,9 +109,20 @@ sul Drappellone per attivare la Meraviglia (vedi INTEGRAZIONE §4–§5).
 - **Anima**: nobiltà decaduta, burocrati, parassiti di corte. Corre per la **vendetta politica**. **Rivale**: il Bruco / il Drago.
 
 #### 7 — L'Unicorno *(Contrada del Leocorno)* → **Sune / Milil** (bellezza, canto)
-- **Motto**: *"Fiede e risana al par l'arma c'ho in fronte"* ("ferisce e risana, come il corno che porto in fronte"). *Alt. araldico*: *"Humberti Regis Gratia"*.
-- **Stemma**: unicorno rampante su scudo d'argento bordato d'azzurro. **Colori**: bianco e arancio listati d'azzurro.
+- **Motto** *(originale, ispirato)*: *"Ferisce e sana il corno che porto"*.
+- **Stemma**: unicorno rampante, corno a spirale d'arpa (`P2D-Palio-Allegati/stemmi/07-unicorno.svg`). **Colori**: bianco e arancio listati d'azzurro.
 - **Anima**: artigiani, sarti, ceto medio. Corre per il **prestigio culturale**. **Rivale**: nessuna fissa (**ago della bilancia**).
+
+#### 8 — L'Onda *(NUOVA — contrada di casa di Channathgate)* → **Valkur / Selûne** (marinai, luna)
+- **Motto** *(originale)*: *"Il cielo mi colora, il fiume mi arma"*.
+- **Stemma**: luccio fluviale saltante su tre onde sotto la falce di Selûne (`P2D-Palio-Allegati/stemmi/08-onda.svg`). **Colori**: bianco e celeste.
+- **Anima**: barcaioli, pescatori, portuali del Fiume Cannath — la **contrada di casa**,
+  patrocinata dal **Gonfaloniere** e dalla **Gilda dei Barcaioli**. Molti sono gli stessi
+  che traghettarono i profughi: **alleanza segreta con l'Istrice**. Corre per l'**onore del
+  porto**. **Rivale**: nessuna storica (disprezza l'Oca per i dazi).
+- **Meraviglia a Rethmar**: **La Marea Montante** (flotta fluviale + allagamento delle vie
+  d'approccio + evacuazione civili). Dettaglio in `...P2D-PALIO-CONTRADE-STEMMI-CANTI.md` §8
+  e `...P2D-PALIO-CONSEGUENZE-ECHI.md` §2.4.
 
 ---
 

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240" role="img" aria-label="Stemma Contrada dell'Istrice">
+  <defs><clipPath id="s4"><path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z"/></clipPath></defs>
+  <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="#f2efe6" stroke="#7a1f1f" stroke-width="6"/>
+  <g clip-path="url(#s4)">
+    <!-- arabeschi rosso/nero/azzurro -->
+    <path d="M20 40 q40 20 0 40 q40 20 0 40 q40 20 0 40" stroke="#8a1f2b" stroke-width="3" fill="none" opacity="0.5"/>
+    <path d="M180 40 q-40 20 0 40 q-40 20 0 40 q-40 20 0 40" stroke="#26364d" stroke-width="3" fill="none" opacity="0.5"/>
+    <!-- catene spezzate (profughi liberati) -->
+    <g stroke="#555" stroke-width="3" fill="none"><circle cx="50" cy="168" r="5"/><circle cx="60" cy="172" r="5"/><circle cx="150" cy="168" r="5"/><circle cx="140" cy="172" r="5"/></g>
+    <!-- istrice originale: corpo tozzo, aculei eretti -->
+    <g transform="translate(100,120)">
+      <ellipse cx="0" cy="10" rx="34" ry="20" fill="#3a2f22"/>
+      <g stroke="#1a1410" stroke-width="2.5">
+        <line x1="-28" y1="-2" x2="-40" y2="-26"/><line x1="-18" y1="-8" x2="-24" y2="-34"/><line x1="-6" y1="-10" x2="-8" y2="-38"/>
+        <line x1="6" y1="-10" x2="8" y2="-38"/><line x1="18" y1="-8" x2="24" y2="-34"/><line x1="28" y1="-2" x2="40" y2="-26"/>
+      </g>
+      <path d="M28 12 q18 -2 22 8 q-10 6 -22 2z" fill="#3a2f22"/>
+      <circle cx="42" cy="12" r="2.5" fill="#e9c24a"/>
+    </g>
+  </g>
+  <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="none" stroke="#7a1f1f" stroke-width="6"/>
+  <rect x="24" y="182" width="152" height="26" rx="4" fill="#0d1b2a" opacity="0.85"/>
+  <text x="100" y="200" font-family="Georgia,serif" font-size="11.5" fill="#e9c24a" text-anchor="middle" font-style="italic">Pungo solo chi mi assale</text>
+  <text x="100" y="14" font-family="Georgia,serif" font-size="12" fill="#7a1f1f" text-anchor="middle" font-weight="bold">L'ISTRICE · Ilmater</text>
+</svg>

@@ -87,7 +87,7 @@ Numeri baseline partendo da **9.940 iniziali** (vedi
 | 40 | Advance scouts consolidate Rethmar area | −30 | — | 8.423 |
 | **42** | **Arrivo Rethmar** | −30 | +?? (additivi condizionali, vedi §4) | **~8.390 baseline** |
 
-**Baseline pre-additivi a Rethmar**: **~8.350**.
+**Baseline pre-additivi a Rethmar**: **~8.390**.
 
 **+ Additivi condizionali** (vedi `Armate-CALCOLI-ESERCITI-DINAMICI.md`
 §4):

@@ -76,10 +76,23 @@ sguarnire la città. Presiede la Tratta e firma il **Decreto d'Intervento**. **N
 corrompibile con l'oro**, ma con **prove** (che Rethmar può reggere) o **paura maggiore**
 (che l'orda verrà comunque a Channathgate dopo). Diplomazia DC 24 per muoverlo.
 
-### 4.2 I sette Capitani di contrada (PNG rapidi)
-Ognuno GS 6–8, allineato al patrono (CONTRADE). Statistiche da PNG sociali: alte in
-Diplomazia/Raggirare/Intuizione. Il **Capitano dell'Oca** (agente di Kaal, LE) e il
-**Capitano della Civetta** (uomo di Valerius, NE) sono i veri antagonisti politici.
+### 4.2 Gli 8 Capitani di contrada (statline rapide, GS 6–8)
+PNG sociali: base **CA** 15, **PF** 40–55; abilità sociali alte. Uso principale: **partiti**
+(Giorno 2). "Asso" = la loro mossa negoziale/sleale caratteristica.
+
+| Contrada | Capitano | All. | Abilità chiave | Asso nei Partiti |
+|---|---|---|---|---|
+| **Oca** | **Ser Aldovrando Pesa-Oro** (agente di Kaal) | LM | Diplomazia +16, Raggirare +14 | Compra i partiti con oro; onora solo finché conviene |
+| **Torre** | **Capitano Bruna Ferrante** (veterana di Hammerfist) | LB | Intimidire +13, Con.(guerra) +12 | Parola d'onore ferrea; non tradisce mai un patto |
+| **Bruco** | **"Zecca" Voll** (uomo di Varis) | NM | Raggirare +16, Furtività +15 | Vende informazioni vere… e una falsa; doppio gioco |
+| **Istrice** | **Mira del Traghetto** (profuga, luogotenente di Lorana) | NB | Intuizione +14, Sopravvivenza +12 | Non ha nulla da offrire tranne fedeltà assoluta; commuove |
+| **Drago** | **Magister Orivel** (mago di corte) | LN | Sapienza Magica +16, Con.(arcane) +15 | *Individua le bugie* (magia) durante la trattativa |
+| **Civetta** | **Conte-cadetto Sethis Vhal** (uomo di Valerius) | ME | Raggirare +17, Con.(nobiltà) +14 | Promette e tradisce quasi sempre; ricatta con segreti |
+| **Unicorno** | **Maestra Liun, corifea delle gilde** | NB | Intrattenere +18, Diplomazia +15 | Si vende al vincitore; il partito migliore ha la sua parola |
+| **Onda** | **Nonno Barca, decano dei barcaioli** | CB | Prof.(marinaio) +16, Intuizione +13 | Mantiene la parola con chi ha salvato profughi (Istrice) |
+
+**Antagonisti politici primari**: Pesa-Oro (Oca → resa) e Sethis Vhal (Civetta → Valerius/
+Collezionista). **Alleati naturali dei PG**: Ferrante (Torre), Mira (Istrice), Nonno Barca (Onda).
 
 ### 4.3 Il Fantino della Nonna (spettro, opzionale — GS 10)
 Se il DM usa la maledizione (GIORNO2 §4): spettro di un fantino morto ai canapi decenni

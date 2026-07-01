@@ -83,8 +83,15 @@ tipico · CANTO (con effetto meccanico) · aggancio a Rethmar (Meraviglia)**.
   Drellin's Ferry. *Effetto*: se vinto, **+2 Morale** e **cura 1d8 "morale"** al rione;
   fa **piangere la piazza** (Diplomazia +2 verso i popolani per una scena).
 - **A Rethmar**: **Mythal della Selva Viva** (radici/spine dalle mura, trincee semoventi) +
-  **800 profughi** a tenaglia. Se **Ghostlord alleato**, canalizza anch'egli (+600 non-morti
-  "buoni"). Se l'Istrice **vince**, Lorana ottiene **seggio permanente** → voto Difesa.
+  **800 profughi** a tenaglia. Se l'Istrice **vince**, Lorana ottiene **seggio permanente** → voto Difesa.
+- **⚠️ Sub-ramo Ghostlord (+600 non-morti "buoni") — condizionale e gated**: il Ghostlord
+  **non aiuta i profughi** (non gliene importa: è un lich). Canalizza la Selva Viva **solo se
+  i PG hanno già stretto il PATTO** in `...P3-Ghostlord-LICH-ALLEANZA-TESTO.md` — cioè
+  possiedono la sua **filatteria** e lo trattano da **alleato, non da schiavo soggiogato**.
+  Motivo in-fiction: è un **lich druidico**, affine a un Mythal *di natura*, e onora il patto
+  (non la pietà). Senza quel ramo, la Selva Viva funziona **coi soli arcidruidi del Circolo
+  degli Otto** — nessun +600. Se il Ghostlord è ostile/soggiogato/insultato, **niente
+  contributo** (e, come da suo arco, l'Orda guadagna semmai ondate di non-morti).
 - **Nota Salvatore**: la loro forza è la disperazione, che è anche la loro rovina — il
   fantino profugo potrebbe **uccidere** un rivale per vendetta, non solo disarcionarlo.
 
@@ -180,6 +187,29 @@ Usa le rivalità per i **partiti**: proporre a un rione di **far perdere il suo 
 spesso più efficace che offrirgli di vincere.
 
 ---
+
+## Nota grafica — upgrade delle figure degli stemmi (opzionale)
+Gli scudi (`P2D-Palio-Allegati/stemmi/*.svg`) sono **originali** e ridisegnati in stile
+araldico piatto unificato. Se vuoi figure **ancora più rifinite mantenendo lo stesso stile
+fantasy e senza problemi di copyright**, l'opzione migliore e coerente è **game-icons.net**:
+migliaia di icone SVG monocromatiche, **stesso tratto**, licenza **CC BY 3.0** (gratis, con
+**attribuzione**). Sono `<path>` che si incollano dentro gli scudi al posto della figura
+attuale. Mappatura consigliata:
+
+| Contrada | Icona game-icons.net (nome) | Autore tipico |
+|---|---|---|
+| Oca | `goose` / `duck` | Delapouite |
+| Torre | `tower` / `defensive-wall` | Delapouite / Lorc |
+| Bruco | `caterpillar` / `worms` | Lorc |
+| Istrice | `hedgehog` / `porcupine` | Delapouite |
+| Drago | `dragon-head` / `spiked-dragon-head` | Lorc |
+| Civetta | `owl` | Delapouite |
+| Unicorno | `unicorn` | Delapouite / Caro Asercion |
+| Onda | `jumping-dog`→ meglio `salmon`/`fish` + `moon` | Delapouite / Lorc |
+
+**Attribuzione da includere** (es. in un `CREDITS.md`): *"Alcune icone da game-icons.net
+(Lorc, Delapouite, Caro Asercion), CC BY 3.0."* — Dimmi "usa game-icons" e le integro io
+negli scudi (scarico i path e li incastono, tenendo cornici e colori attuali).
 
 ## Nota IP (ripetuta qui per chiarezza)
 Nomi delle contrade e riferimenti al Palio = **fatti storico-culturali** citati come

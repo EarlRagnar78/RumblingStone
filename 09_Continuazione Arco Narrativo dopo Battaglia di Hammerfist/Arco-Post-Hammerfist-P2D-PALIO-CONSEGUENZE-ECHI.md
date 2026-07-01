@@ -36,8 +36,10 @@ Tre variabili:
 ### 2.2 ISTRICE — "i dimenticati vincono"
 - **Consiglio**: Lorana ottiene **seggio permanente e voto decisivo** → DIFESA.
 - **Difensori**: **+150 fanteria civile** + **+2 morale** (riscatto); tenaglia sui fianchi.
-- **Meraviglia**: **Mythal della Selva Viva** (radici/spine, trincee semoventi). Se
-  **Ghostlord alleato** → +600 non-morti "buoni".
+- **Meraviglia**: **Mythal della Selva Viva** (radici/spine, trincee semoventi). **Solo se
+  i PG hanno il PATTO col Ghostlord** (filatteria, ramo alleato di `...P3-Ghostlord`, **non**
+  soggiogato) → il lich druidico canalizza e aggiunge **+600 non-morti "buoni"**. Altrimenti
+  la Selva Viva è opera dei soli arcidruidi del Circolo (nessun +600).
 - **Eco**: i profughi diventano cittadini; nasce una nuova nobiltà popolare. Il fantino
   profugo (se sopravvive) diventa un eroe cittadino — o un martire, se è morto vendicandosi.
 - **Salvatore**: la vittoria più commovente e la più amara — il prezzo del riscatto è alto.

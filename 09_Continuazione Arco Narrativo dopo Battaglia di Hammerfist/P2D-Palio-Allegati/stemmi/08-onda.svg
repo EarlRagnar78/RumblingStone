@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240" role="img" aria-label="Stemma Contrada dell'Onda">
-  <defs><clipPath id="s8"><path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z"/></clipPath></defs>
+  <defs><clipPath id="o8"><path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z"/></clipPath></defs>
   <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="#eef6fb" stroke="#1f6f8a" stroke-width="6"/>
-  <g clip-path="url(#s8)">
-    <!-- onde celesti -->
-    <path d="M20 60 q20 -12 40 0 q20 12 40 0 q20 -12 40 0 q20 12 40 0 V232 H20 Z" fill="#5fb2d6"/>
-    <path d="M20 96 q20 -12 40 0 q20 12 40 0 q20 -12 40 0 q20 12 40 0 V232 H20 Z" fill="#3a91bd"/>
-    <path d="M20 132 q20 -12 40 0 q20 12 40 0 q20 -12 40 0 q20 12 40 0 V232 H20 Z" fill="#1f6f8a"/>
-    <!-- pesce-luccio fluviale saltante (originale) invece del delfino -->
-    <g transform="translate(100,96)" fill="#eef6fb" stroke="#0d3a4a" stroke-width="2">
-      <path d="M-34 20 q10 -30 40 -30 q22 0 34 14 q-14 2 -18 10 q14 0 20 8 q-16 8 -34 4 q-24 -4 -42 -6z"/>
-      <path d="M32 -14 q12 -8 18 -4 q-4 8 -12 12z"/>
-      <circle cx="26" cy="-8" r="2.5" fill="#0d3a4a"/>
+  <g clip-path="url(#o8)">
+    <!-- bande d'onda -->
+    <path d="M20 118 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 V232 H20 Z" fill="#5fb2d6"/>
+    <path d="M20 150 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 V232 H20 Z" fill="#2f8fb8"/>
+    <path d="M20 182 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 V232 H20 Z" fill="#1f6f8a"/>
+    <!-- falce di Selûne -->
+    <path d="M150 44 a13 13 0 1 0 5 22 a10 10 0 1 1 -5 -22z" fill="#f3f0d8" stroke="#b8b28a" stroke-width="1.5"/>
+    <!-- pesce saltante araldico, argento -->
+    <g stroke="#0d3a4a" stroke-width="2.5" stroke-linejoin="round" fill="#eef6fb">
+      <path d="M60 118 q4 -46 44 -52 q30 -4 44 16 q-16 4 -18 12 q14 2 18 12 q-18 8 -40 2 q-10 20 -34 26 q10 -20 6 -34 q-12 4 -20 10z"/>
+      <path d="M104 66 q10 -14 20 -12 q-4 12 -14 18z" />
+      <circle cx="122" cy="78" r="3" fill="#0d3a4a"/>
     </g>
-    <!-- falce lunare di Selûne sopra -->
-    <path d="M150 46 a12 12 0 1 0 4 20 a9 9 0 1 1 -4 -20z" fill="#f3f0d8" stroke="#b8b28a" stroke-width="1"/>
   </g>
   <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="none" stroke="#1f6f8a" stroke-width="6"/>
   <rect x="18" y="182" width="164" height="26" rx="4" fill="#062230" opacity="0.85"/>

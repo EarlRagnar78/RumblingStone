@@ -70,9 +70,26 @@ Il fantino è un mercenario: **corruttibile**. Durante la Cena:
   (combattimento urbano notturno, GS 10–11: 2–3 sicari + 1 mago di supporto).
 
 ### 3.3 Fronte C — La Stalla e i Drow di Sonjak *(aggancio campagna)*
+
+> **Perché i drow sono a Channathgate (l'oscuro collegamento)** — non è un assalto casuale.
+> Da canone (`PNG/Sonjak`, `PNG/Conte_Valerius`): Sonjak è coordinata con **Il Collezionista**;
+> **Sal** è il suo agente di superficie; l'operazione è il **contrabbando di statue di anime
+> pietrificate** e le coordinate del **Prisma di Halveth**. Il **mercante di Channathgate**
+> (quello visto da Lorana con le statue) è nella rete del Collezionista → **il porto di
+> Channathgate è lo snodo del traffico**. I drow sono qui per **due obiettivi collegati**:
+> 1. **Proteggere la pipeline**: le statue escono dalla **darsena** (Onda) tramite il
+>    **mercante della Civetta**; il caos del Palio è copertura, ma i PG che indagano sono un rischio.
+> 2. **Strangolare la coalizione alla fonte**: il Palio decide i rinforzi di Rethmar.
+>    Accecare le contrade pro-difesa (avvelenare i cavalli di **Istrice/Torre**, corrompere i
+>    fantini) e spingere alla vittoria dell'**Oca (resa)** = **Rethmar cade senza combattere**.
+>
+> **La ragnatela**: **Halveth** (finanzia l'Oca) ↔ **Collezionista/Sal** (traffico statue) ↔
+> **Sonjak** (drow) ↔ **Oca/resa**. Il Palio è dove questi fili affiorano: seguendo i drow, i
+> PG possono **risalire** all'intera rete (e ottenere le lettere che inchiodano Halveth).
+
 Il **Barbaresco PG** difende il cavallo. Questa notte, **Matrona Sonjak** (clock 4/8)
-invia **sicari drow** a Channathgate per **avvelenare** il cavallo dell'Istrice/Torre o
-**paralizzare la coalizione** prima ancora dell'assedio.
+invia **sicari drow** a Channathgate per **avvelenare** il cavallo dell'Istrice/Torre,
+**corrompere/rapire** il fantino e **coprire** il trasbordo notturno delle statue al porto.
 
 - **L'incontro** (GS 11–12, mappa stalla in MAPPE): **2 Drow Assassini** (GS 9) + **1 Drow
   Chierica di Lolth** (GS 10) + un **innesto fungino** (Servitore della Spora, GS 3) come

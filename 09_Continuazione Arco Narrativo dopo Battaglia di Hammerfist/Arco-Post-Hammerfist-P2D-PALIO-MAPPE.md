@@ -50,16 +50,16 @@ La **sincronizzazione** col fronte (INTEGRAZIONE §3): due vie per i rinforzi vi
 
 ---
 
-## 4. Schema stalla (assalto drow, Giorno 2 notte)
-Mappa tattica minima (usa un riquadro 6×8 quadretti):
-```
-  ┌───────────────────────────┐
-  │  fieno   fieno    [uscita] │
-  │        ▓ POSTA CAVALLO ▓   │   ▓ = box del cavallo (obiettivo drow)
-  │  secchi        abbeveratoio│   • = botola/fogna (ingresso drow)
-  │ • ........................ │   ► porta principale (scorta PG)
-  └───────────────────────────┘
-```
-- I drow entrano dalla **botola/fogna** (•) con *Oscurità*; puntano al box (▓).
-- Il **Barbaresco** dorme accanto al cavallo (sorpresa se non di guardia: Ascoltare DC 20).
-- Illuminazione: buio (torce spente dai drow). **Scurovisione** o luce = cruciale.
+## 4. Stalla — mappa tattica dell'assalto drow (Giorno 2 notte)
+**File**: `P2D-Palio-Allegati/mappe/stalla-assalto-drow.svg`
+
+![Stalla — assalto drow](P2D-Palio-Allegati/mappe/stalla-assalto-drow.svg)
+
+Griglia **1 quadretto = 5 ft**, GS 11–12 (statblocchi in `...P2D-PALIO-STATBLOCCHI.md` §3).
+- I drow entrano dalla **botola/fogna** (angolo SO) con *Oscurità*; puntano al **BOX** del
+  cavallo (obiettivo: avvelenarlo), usano *Silenzio* per soffocare gli allarmi.
+- Il **Barbaresco (B)** è accanto al cavallo; la **scorta PG (P)** copre la porta principale.
+  Sorpresa se non di guardia: Ascoltare DC 20.
+- Buio totale (torce spente): **Scurovisione**/luce = cruciale.
+- Token in mappa: **D** Drow Assassino · **C** Chierica di Lolth · **S** Servitore della Spora.
+- **Catturare un drow vivo** = intel Fase 0 Rethmar **−1 clock Sonjak** (INTEGRAZIONE §3.2).

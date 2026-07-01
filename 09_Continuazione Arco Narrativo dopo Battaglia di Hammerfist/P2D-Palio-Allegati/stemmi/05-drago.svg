@@ -1,16 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240" role="img" aria-label="Stemma Contrada del Drago">
-  <defs><clipPath id="s5"><path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z"/></clipPath></defs>
+  <defs><clipPath id="d5"><path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z"/></clipPath></defs>
   <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="#c56a8f" stroke="#e0b400" stroke-width="6"/>
-  <g clip-path="url(#s5)">
-    <path d="M20 20 H180 V232 H20 Z" fill="#2f7d4f" opacity="0.28"/>
+  <g clip-path="url(#d5)">
+    <path d="M100 20 H180 V150 Q180 210 100 232 Z" fill="#2f7d4f"/>
     <!-- stella di Mystra -->
-    <g transform="translate(100,72)" fill="#f6e27a"><path d="M0 -18 L5 -5 L18 -5 L7 3 L11 16 L0 8 L-11 16 L-7 3 L-18 -5 L-5 -5 Z"/></g>
-    <!-- drago originale avvolto attorno alla stella -->
-    <g transform="translate(100,120)" fill="#1e5f2e" stroke="#0f3a1c" stroke-width="2">
-      <path d="M-40 20 q-6 -34 30 -40 q30 -5 44 16 q8 12 -2 22 q-8 8 -18 2 q6 8 -4 14 q-12 6 -22 -4 q10 12 -6 18 q-18 6 -22 -14 q-2 -12 22 -14 q-18 -2 -22 -18z"/>
-      <circle cx="30" cy="-18" r="3" fill="#f6e27a"/>
-      <path d="M40 -8 l12 -6 l-6 10z"/>
+    <g transform="translate(128,150)" fill="#f6e27a" stroke="#b89a2a" stroke-width="1"><path d="M0 -16 L4.5 -4.5 L16 -4.5 L6.5 3 L10 15 L0 7.5 L-10 15 L-6.5 3 L-16 -4.5 L-4.5 -4.5 Z"/></g>
+    <!-- testa di drago araldica in profilo che soffia verso la stella, oro -->
+    <g stroke="#5a4410" stroke-width="2.5" stroke-linejoin="round" fill="#e9c24a">
+      <path d="M60 150 q-8 -30 14 -50 q18 -16 42 -12 q-6 8 -4 16 q10 -4 18 2 q-6 8 -14 8 q6 8 0 16 q-10 -2 -16 -8 q-2 14 -16 20 q6 10 -4 16 q-12 4 -20 -8 q-4 -4 0 -8z"/>
+      <circle cx="92" cy="112" r="3.5" fill="#5a4410"/>
+      <path d="M74 100 q-10 -8 -18 -4 q8 6 16 8z"/>
     </g>
+    <!-- soffio verso la stella -->
+    <path d="M118 134 q10 6 8 14" fill="none" stroke="#f6e27a" stroke-width="3" stroke-dasharray="3 3"/>
   </g>
   <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="none" stroke="#e0b400" stroke-width="6"/>
   <rect x="22" y="182" width="156" height="26" rx="4" fill="#0d1b2a" opacity="0.85"/>

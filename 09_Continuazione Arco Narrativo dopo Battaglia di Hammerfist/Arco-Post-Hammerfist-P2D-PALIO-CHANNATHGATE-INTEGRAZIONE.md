@@ -146,12 +146,20 @@ peggiore, coerente col principio "senza i PG, Rethmar cade".
 
 ## 4. Il Drappellone = la Matrice del Mythal ("La Tessitura")
 
-### 4.1 Il legame
+### 4.1 L'Antica Meraviglia di Rethmar
 
-Nelle **fondamenta di Rethmar** giace un **Quasi-Mythal dormiente**. Il **Circolo degli
-Otto** (arcimaghi + arcidruidi, incl. **Pyriel** e — se redento — il **Ghostlord**) è
-pronto nei sotterranei, **ma manca la Matrice di Intersezione**: le coordinate per
-intrecciare l'energia senza che il Mythal *esploda o impazzisca*.
+Nelle **fondamenta di Rethmar** giace **l'Antica Meraviglia**: un **Quasi-Mythal
+dormiente** intrecciato alla rete di **statue-guardiane** della città (le stesse che,
+in Fase 4 canonica, si animano in **Golem di Pietra colossali**). Questa Meraviglia
+**esiste già nel canone** — non la inventiamo. Il **Circolo degli Otto** (arcimaghi +
+arcidruidi, incl. **Pyriel** e — se redento — il **Ghostlord**) è pronto nei sotterranei
+a risvegliarla, **ma manca la Matrice di Intersezione**: le coordinate per intrecciare
+l'energia senza che il Mythal *esploda o impazzisca*.
+
+**Il legame col Palio**: la Matrice si forgia **solo** a Channathgate, e la sua *forma*
+è decisa dal **Sigillo** della contrada che vince il Palio. Ecco perché l'Antica
+Meraviglia di Rethmar è **connessa al Palio di Channathgate**: senza la corsa, il
+Circolo degli Otto non ha le coordinate e non può accenderla in sicurezza.
 
 Il **Drappellone** intessuto per il Palio **non è solo seta**: porta **rune d'argento
 di sincronizzazione planare** legate alla griglia di Rethmar. La **contrada vincente**
@@ -174,11 +182,18 @@ Sigillo scelto **determina forma, allineamento ed effetto** del Mythal.
 
 ---
 
-## 5. Le Meraviglie (Wonders) per contrada vincente
+## 5. Le Meraviglie (Wonders) — **una per contrada, esclusiva**
 
-La contrada vincente sblocca **una Meraviglia** che si attiva a Rethmar al bisogno. Le
-prime due (**Torre** e **Drago/Istrice**) sono **le canoniche già presenti** (golem +
-Mythal): il Palio ne sceglie la *forma*. Le altre sono **varianti opzionali** nuove.
+**Regola di esclusività**: ogni Meraviglia è legata al **Sigillo di UNA sola contrada**.
+Vincere il Palio con quella contrada sblocca **quella** Meraviglia e **nessun'altra** —
+è questo che rende la scelta della contrada (AVVENTURA §2) una **decisione pesante e
+irreversibile** per i PG. Non si "collezionano" le Meraviglie: se ne ottiene **una**,
+quella della bandiera che i PG hanno baciato e fatto vincere.
+
+La Meraviglia della **Torre** (Golem) e quelle di **Drago/Istrice** (varianti del Mythal)
+sono **canoniche** (l'Antica Meraviglia, §4.1): il Palio ne sceglie la *forma*. Le altre
+(Bruco, Unicorno, Civetta) sono **varianti opzionali** nuove ma coerenti. **La Torre è
+l'unica che risveglia i Golem**; il Drago è l'unico che dà il Mythal anti-drago; ecc.
 
 | Contrada vincente | Meraviglia | Effetto all'assedio (Fase / modificatore) |
 |---|---|---|

@@ -24,11 +24,28 @@ I PG non sono avventurieri erranti che capitano in città: diventano la **Dirige
 (il vertice decisionale) di una Contrada, per 3 giorni, con in mano l'onore del rione,
 un budget per corrompere, un fantino da sorvegliare e un cavallo da proteggere.
 
-**Ruoli alla Dirigenza** (assegnabili ai PG secondo classe/inclinazione):
-- **Il Capitano** (Guerriero/Cavaliere/Paladino): decisioni finali, budget, patti d'onore.
-- **I Mangini** (Ladro/Bardo/Investigatore): agenti d'ombra — spiano, intercettano, sorvegliano il fantino.
-- **Il Barbaresco** (Ranger/Druido): accudisce il cavallo giorno e notte, lo difende da veleni, filtri e maledizioni.
-- **Il Fantino** (PNG mercenario, o PC destrissimo): vedi §4.
+### 0.1 La Gerarchia della Contrada (ruoli reali senesi → posti PG)
+
+Ogni contrada ha una struttura di governo (il **Seggio**/Deputazione). Assegna i posti
+"caldi" ai PG secondo classe/inclinazione; gli altri sono PNG del rione.
+
+| Ruolo reale | Funzione | Chi lo gioca |
+|---|---|---|
+| **Priore** *(Governatore nell'Oca, Rettore nel Bruco)* | Capo della contrada; vita civica/religiosa tutto l'anno, cerimonie, rapporti ufficiali. | PNG anziano (il "capo contrada") — dà i compiti ai PG |
+| **Vicario** | Vice del Priore; lo sostituisce e rappresenta in sua assenza. | PNG (o PG "diplomatico") |
+| **Capitano** | L'altra autorità suprema: **comanda tutto il Palio**, assume pieni poteri nei giorni della corsa. Tratta strategia e **partiti** (patti segreti). | **PG leader** (Guerriero/Cavaliere/Paladino) |
+| **Mangini / Tenenti** (2) | Braccio destro del Capitano; seguono cavalli e fantini, **stipulano i partiti**. | **PG agenti** (Ladro/Bardo/Investigatore) |
+| **Barbaresco** | Custode e stalliere del cavallo: lo accudisce, lo alloggia e **lo sorveglia** in stalla giorno e notte (veleni, filtri, maledizioni). | **PG guardiano** (Ranger/Druido) |
+| **Scorta al Fantino** *(uomini di fiducia del Capitano)* | Non è una carica fissa: contradaioli fidati che **scortano e sorvegliano il fantino** nei giorni del Palio, perché la corruzione è endemica. | **PG/PNG** (guardia del corpo) |
+| **Fantino** | Il **cavaliere mercenario** (di solito non del rione); corre **a pelo** (senza sella). Corruttibile. | PNG mercenario, o PC destrissimo — vedi §4 |
+| **Alfieri e Tamburino** | Sbandieratori e tamburino della *comparsa* storica (cerimoniale). | PNG (spotlight Bardo PG) |
+| **Duce** | Comanda il gruppo in corteo, sfila in armatura; figura di testa della comparsa. | PNG |
+| *Cancelliere, Camarlengo, Economo, Bilanciere, Archivista* | Segretario, tesoriere, dispensiere/chiavi, contabile, archivista. | PNG di supporto |
+| **Protettori / Popolo (contradaioli)** | Sostenitori registrati e il popolo del rione: la comunità vivente. | Sfondo corale |
+
+> I tre pilastri giocabili sono **Capitano** (decide e stringe i partiti), **Mangini**
+> (agenti d'ombra), **Barbaresco** (custode del cavallo). Attorno a questi ruota il
+> fulcro dell'avventura: **proteggere cavallo e fantino, e vincere i partiti.**
 
 ---
 
@@ -42,19 +59,54 @@ e confraternite laiche: non erano mai atee, ma di una religiosità **civica e fe
 
 > **Nota di conversione (Golarion → Faerûn)**: la campagna è ambientata nei Reami.
 > Le divinità sono state riconvertite dal pantheon di Golarion a quello faerûniano.
+>
+> **Nota patrimonio/IP**: i **motti** e gli **stemmi** qui riportati sono quelli
+> **storici e reali** delle contrade di Siena (patrimonio civico-culturale dei sec.
+> XV–XIX, fatti storici di pubblico dominio), usati come **ispirazione**. Non riprodurre
+> grafica/loghi ufficiali moderni: il *Consorzio per la Tutela del Palio* tutela
+> l'iconografia moderna. Per uso non commerciale al tavolo va benissimo citare i motti
+> e descrivere l'araldica a parole (come qui) e usare arte originale propria.
 
-| # | Contrada | Divinità (Faerûn) | Anima del rione | Rivale storica |
-|---|---|---|---|---|
-| 1 | **L'Oca** | Waukeen (commercio, oro) | Aristocrazia terriera e banchieri. Corre per il **potere temporale**. | La Torre |
-| 2 | **La Torre** | Torm / Tempus (onore, guerra) | Veterani, milizia pesante, fabbri d'armi. Corre per l'**onore marziale**. | L'Oca |
-| 3 | **Il Bruco** | Mask (ombre, furto, segreti) | Ricettatori e malavita urbana. Corre per **l'oro delle scommesse**. | La Civetta |
-| 4 | **L'Istrice** | Ilmater / Chauntea (sofferenza, comunità) | Disperati, profughi, lavoratori umili. Corre per il **riscatto sociale**. | L'Oca |
-| 5 | **Il Drago** | Mystra (magia) | Speziali, alchimisti, accademia arcana. Corre per il **dominio della conoscenza**. | La Civetta |
-| 6 | **La Civetta** | Shar (perdita, vendetta, segreti) | Nobiltà decaduta, burocrati, parassiti di corte. Corre per la **vendetta politica**. | Il Bruco / Il Drago |
-| 7 | **L'Unicorno** | Sune / Milil (bellezza, canto) | Artigiani, sarti, ceto medio urbano. Corre per il **prestigio culturale**. | Nessuna fissa (ago della bilancia) |
+Ogni contrada ha un **motto** (reale senese), uno **stemma**, dei **colori**, una
+**ballata di guerra**, una **chiave araldica d'argento** (il *Sigillo*), un **Oratorio**
+e un **fantino ingaggiato** (vedi §4). Il *Sigillo* è ciò che, in campagna, si imprime
+sul Drappellone per attivare la Meraviglia (vedi INTEGRAZIONE §4–§5).
 
-Ogni contrada ha una **ballata di guerra**, una **chiave araldica d'argento** (il
-*Sigillo*), un **Oratorio** e un **fantino ingaggiato** (vedi §4).
+#### 1 — L'Oca *(Nobile Contrada dell'Oca)* → **Waukeen** (commercio, oro)
+- **Motto**: *"Clangit ad arma"* ("suona la chiamata alle armi" — ironico: qui suona la resa).
+- **Stemma**: oca coronata (corona sabauda), nastro azzurro al collo. **Colori**: verde e bianco bordati di rosso.
+- **Anima**: aristocrazia terriera e banchieri. Corre per il **potere temporale**. **Rivale**: la Torre.
+
+#### 2 — La Torre *(Contrada della Torre)* → **Torm / Tempus** (onore, guerra)
+- **Motto**: *"Oltre la forza la potenza"*.
+- **Stemma**: elefante con gualdrappa rossa e croce bianca, che porta una torre sul dorso. **Colori**: amaranto listato di bianco e azzurro.
+- **Anima**: veterani, milizia pesante, fabbri d'armi. Corre per l'**onore marziale**. **Rivale**: l'Oca.
+- **→ È la contrada dei GOLEM** (vedi INTEGRAZIONE §5): il suo Sigillo risveglia i Golem d'Assedio di Rethmar.
+
+#### 3 — Il Bruco *(Nobil Contrada del Bruco)* → **Mask** (ombre, furto, segreti)
+- **Motto**: *"Come rivoluzion suona il mio nome"* (riferito alla rivolta popolare del 1371).
+- **Stemma**: bruco coronato (corona granducale) su ramo di rosa. **Colori**: giallo e verde listati d'azzurro.
+- **Anima**: ricettatori e malavita urbana. Corre per **l'oro delle scommesse**. **Rivale**: la Civetta.
+
+#### 4 — L'Istrice *(Contrada Sovrana dell'Istrice)* → **Ilmater / Chauntea** (sofferenza, comunità)
+- **Motto**: *"Sol per difesa io pungo"* — **perfetto per i profughi difensori**.
+- **Stemma**: istrice armato su base erbosa, rose rosse, nodo sabaudo, croce di Malta. **Colori**: bianco con arabeschi rosso, nero e azzurro.
+- **Anima**: disperati, profughi, umili. Corre per il **riscatto sociale**. **Rivale**: l'Oca. *(Unica contrada "Sovrana".)*
+
+#### 5 — Il Drago *(Contrada del Drago)* → **Mystra** (magia)
+- **Motto**: *"Il cor che m'arde divien fiamma in bocca"*.
+- **Stemma**: drago coronato ad ali spiegate con pennone e corona reale. **Colori**: rosa/rosso e verde listati di giallo.
+- **Anima**: speziali, alchimisti, accademia arcana. Corre per il **dominio della conoscenza**. **Rivale**: la Civetta.
+
+#### 6 — La Civetta *(Contrada Priora della Civetta)* → **Shar** (perdita, vendetta, segreti)
+- **Motto**: *"Vedo nella notte"* — **perfetto per spie e nobiltà d'ombra**.
+- **Stemma**: civetta coronata su ramo, scudo partito nero e rosso, iniziali "U" e "M". **Colori**: nero e rosso listati di bianco.
+- **Anima**: nobiltà decaduta, burocrati, parassiti di corte. Corre per la **vendetta politica**. **Rivale**: il Bruco / il Drago.
+
+#### 7 — L'Unicorno *(Contrada del Leocorno)* → **Sune / Milil** (bellezza, canto)
+- **Motto**: *"Fiede e risana al par l'arma c'ho in fronte"* ("ferisce e risana, come il corno che porto in fronte"). *Alt. araldico*: *"Humberti Regis Gratia"*.
+- **Stemma**: unicorno rampante su scudo d'argento bordato d'azzurro. **Colori**: bianco e arancio listati d'azzurro.
+- **Anima**: artigiani, sarti, ceto medio. Corre per il **prestigio culturale**. **Rivale**: nessuna fissa (**ago della bilancia**).
 
 ---
 

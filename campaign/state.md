@@ -36,7 +36,7 @@ Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per det
 | 04 Tomba di Belkram | ✅ | completato | — | 9 | — |
 | 05 Stanza Runica | ✅ | completato | — | 10 | — |
 | 06 Corona di Adamantio | ✅ | completato | — | 11 | — |
-| 07 Portale della Forgia Eterna | ✅ | completato | — | 12 | — |
+| 07 Portale della Forgia Eterna | 🟡 | in corso (P4 Terra; poi P3B→P5) | — | 13 | livello 13° (D8); "completato" era scritto in avanti → A0 |
 | 08 Battaglia di Hammerfist | ✅ | completato | **Day 19 (sync)** | 12→13 | Cerimonia 100 Asce, Custodi Eterni |
 | 09 P1A Quest Hellas (Cerchio Sacro) | 🟡 | in arrivo | Day 20-30 window | 13 | Deadline Day 30 |
 | 09 P1B Cerchio Treant | 🟡 | pianificato | Day 22-28 | 13 | — |
@@ -762,4 +762,17 @@ entries — they become campaign history.
             "bis-bisnonno". Genealogia unica: Skullcrusher = capostipite della
             stirpe, Fauci = discendente diretto. Label "Anno -1000" ridefinita una
             volta nei file P5 come conteggio nanico relativo.
+2026-07-02  PIANO-REVISIONE-ARC07 Sessioni 3-8 (A6,B2,B3,B4,A3,A4,A5,A11):
+            consolidamento e contenuti. A6: matrice versioni + master eletti.
+            A11: compagno di Hella = Durik (maschio) ovunque (anche
+            campaign-party.md). B2: master P3B eletto (COMPLETO) coi doni pieni
+            del viaggio giocato, Thorik -2 CON, Cuore di Moradin speso, Cintura
+            (D17). B3: creato P5-FASTPLAY (formato veloce D1). B4: tabella
+            carry-over "la Forgia ricorda le ferite" (esito duello Skullcrusher
+            -> effetto su Fauci GS 15 ARC-08); statblock ARC-08 di Fauci rimanda
+            alla tabella. A3: deprecata la sezione "1372" di P6 (superata
+            dall'ARC-08). A4: sequenza gemme D5/D16 (portale = Topazio+Smeraldo,
+            Rubino alla vittoria antica). A5: livello arco = **13°** in §0
+            (era 12, scritto in avanti); Terros ricalibrato su 3 PG/APL 12/no
+            Therysol (D15). Valori meccanici nuovi tutti [INFERRED] in attesa DM.
 ```

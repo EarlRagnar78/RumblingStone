@@ -9,14 +9,24 @@
 
 ## Analysis Context
 
-| Factor | Value |
+> ⚠️ **CORREZIONE D8+D15 (A5)**: la tabella originale assumeva Livello 14 e
+> "3 PC + 1 NPC Therysol Support" — **entrambi sbagliati**. Canone: party di
+> **13°** (D8) e **3 PG SENZA Therysol** (D15 — Therysol veglia il corpo di
+> Hella, non scende). Valori corretti sotto. La **ricalibrazione numerica del
+> boss** su questa base (target CR, statblock BAB/TS/CD) si chiude in **B5**.
+
+| Factor | Value (corretto D8/D15) |
 |---|---|
-| **Party Level** | 14 (as per RICALIBRATO file header) |
-| **Party Size** | 3 PCs + 1 NPC (Therysol Lv 8 Support) |
+| **Party Level** | **13** (D8) — non 14 |
+| **Party Size** | **3 PG, NESSUN supporto** (D15: Therysol veglia il corpo) |
 | **Active Artifact** | Corona di Adamantio (Topaz ✅, Emerald ✅ after this fight) |
 | **Hella** | ❌ **NOT present** (dead, body carried, spirit only) |
-| **Effective Party Strength** | ~3.5 PCs (Therysol is -4 TxC in melee, ranged/heal only) |
-| **APL Calculation** | Level 14, 3 PCs = APL 14 − 1 (for 3-man) = **effective APL 13** |
+| **Effective Party Strength** | **~3 PC** (nessun PNG di supporto) |
+| **APL Calculation** | 3 PG di 13° = APL 13 − 1 (for 3-man) = **effective APL 12** |
+
+> Conseguenza: con **APL effettivo 12** (più debole di quanto stimato prima),
+> il CR-target va abbassato di conseguenza — la vecchia analisi "CR 16 troppo
+> alto per APL 13" vale a maggior ragione. Numeri finali in B5.
 
 ---
 

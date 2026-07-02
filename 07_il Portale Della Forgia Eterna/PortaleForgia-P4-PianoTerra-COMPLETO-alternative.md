@@ -4,6 +4,14 @@
 
 ### Avventura D&D 3.5 - Livello 13 - Forgotten Realms
 
+> **Livello & artefatti (D8/D15, A5)**: party di **13°**, **3 PG** (Artemis,
+> Tordek, Thorik — **niente Therysol**, D15). Ciò che giustifica gli EL alti
+> NON è il livello ma lo **stato artefatti (D8)**: Bracieri di Tordek
+> RISVEGLIATI (Fuoco+Terra) + **Cintura della Devastazione** (D17), Corona IN
+> RISVEGLIO (solo **Topazio** acceso qui; lo Smeraldo si prende in questo P4),
+> Aegis Fang pre-risveglio pieno, Anello riforgiato. APL effettivo **12** (3
+> PG). Ricalibrazione boss (Terros) su questa base: **B5**.
+>
 > **Ordine di gioco (D2)**: si gioca PRIMA della resurrezione di Hella
 > (P3B) e del viaggio temporale (P5) — è la parte IN CORSO al tavolo. Vedi
 > `PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md` §0 D2.

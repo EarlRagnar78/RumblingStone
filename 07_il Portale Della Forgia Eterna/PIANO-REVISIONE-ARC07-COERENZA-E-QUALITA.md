@@ -196,6 +196,14 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
 - **Accettazione**: una sola sequenza di attivazione delle 3 gemme nel
   repo; la Corona arriva ad ARC-08/09 nello stato che ARC-09 assume; il
   ponte ARC-08 B2 cita D16.
+- **✅ FATTO (2026-07-02, sessione 8)**: corretta l'unica riga che
+  attribuiva l'apertura del portale al Rubino (P2-PARTE1, tabella nitidezza)
+  → modello **D5/D16**: portale aperto da **Topazio+Smeraldo** dopo il Piano
+  Terra, **Rubino si accende SOLO alla vittoria antica** come motore del
+  ritorno. Aggiunto blocco-canone con rimando a `LaCorona_di_Adamantio-DM.md`,
+  state.md §6, `campaign-artifacts.md` (Rubino single-use, già coerenti) e al
+  ponte ARC-08 B2 (cucitura Sala→Cuore, D16). Il P5-FASTPLAY Scena 6 già
+  esprime la stessa sequenza. Una sola sequenza in tutto il repo.
 
 ### A5. Livello e composizione del party — applicare D8+D15
 - **Problema**: le dichiarazioni cambiano da file a file (P3B "livello
@@ -215,6 +223,17 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   già decisa (suo D9: Hammerfist consolida il 13°).
 - **Accettazione**: una sola dichiarazione di livello per parte; Terros
   ricalibrato per 3 PG senza supporto; budget delle parti future annotati.
+- **✅ FATTO (2026-07-02, sessione 8)**: `state.md §0` riga ARC-07 → **13°**
+  (e stato "in corso", il "completato" era scritto in avanti → A0).
+  `La_Piramide` r.417 "Livello 14" → 13° + nota D15 su Therysol (che veglia
+  il corpo). `P3-PianoFuoco-PARTE2` r.1097 (party al 14° "durante Parte 6") →
+  resta 13° per l'arco, il 14° matura nell'ARC-08. **Terros** ricalibrato
+  nella base: da "Livello 14, 3 PC + Therysol Support" a **13°, 3 PG senza
+  supporto, APL effettivo 12** (numeri finali del boss → B5). Aggiunta la
+  nota stato-artefatti **D8** all'intestazione del master P4 (giustifica gli
+  EL alti). Le due ricalibrazioni "Livello 14" (P4-RICALIBRATO, P5-RICALIBRATO)
+  hanno già il banner A6 che le riporta al 13° canonico. Dadi-soglia "14+"
+  lasciati (non sono livelli). Le parti giocate non ribilanciate.
 
 ### A6. Generazioni multiple mai riconciliate (P3B ×2, P4 ×4, P5 ×4 + 3 doc di ricalibrazione)
 - **Problema**: il tavolo ci sta giocando DENTRO e i file si sovrappongono:
@@ -631,7 +650,7 @@ la checklist qui sotto.
 
 ### Checklist avanzamento
 
-- [x] A1 · [x] A2 · [x] A3 · [ ] A4 · [ ] A5 · [x] A6 · [x] A7 ·
+- [x] A1 · [x] A2 · [x] A3 · [x] A4 · [x] A5 · [x] A6 · [x] A7 ·
   [ ] A8 · [x] A9 · [ ] A10 · [x] A11
 - [x] B2 · [x] B3 · [x] B4 · [ ] B1 · [ ] B5 · [ ] B6 · [ ] B7 ·
   [ ] B8 · [~] B9 — **parziale (2026-07-02)**: Collana ✅ e

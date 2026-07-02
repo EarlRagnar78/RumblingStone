@@ -1094,7 +1094,10 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 - Dopo Parte 1-2-3: +3.000 (Parte 3) + probabilmente ~2.000 (Parti 1-2) = +5.000 XP totali
 - **Nuovo Totale:** ~83.000 XP (ancora livello 13, ma progredendo)
 
-**Nota:** Party raggiungerà livello 14 probabilmente DOPO Piano Terra (Parte 4) o durante Battaglia Finale (Parte 6).
+**Nota:** il party resta di **13°** per tutto l'ARC-07 (D8: gli artefatti
+risvegliati, non il livello, giustificano gli EL alti). L'eventuale passaggio
+al 14° matura nell'**ARC-08** (la "Battaglia Finale" del 1372 è quell'arco,
+non una "Parte 6").
 
 ---
 

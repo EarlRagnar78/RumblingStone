@@ -1006,8 +1006,16 @@ Quando PG tornano con Topazio attivato:
 |------|-----------|
 | Parte 2 | Molto sfocato (10%) |
 | Dopo Rituale Cuore | 50% - due battaglie separate visibili |
-| Dopo Piano Terra | 80% - portale temporale dorato centro visibile |
-| Quando Rubino attiva | 100% + portale aperto Anno -1000 |
+| Dopo Piano Terra (**Topazio + Smeraldo**) | 80% - il **portale temporale si apre** con le due gemme (D5): si viaggia ad Anno -1000 |
+| **Alla vittoria antica** | 100% - il **Rubino si accende** ("Cuore della Leggenda", D5/D16) e diventa il **motore del ritorno** al 1372 |
+
+> **Attivazione gemme (canone D5/D16)**: il portale del viaggio è aperto da
+> **Topazio + Smeraldo** (dopo il Piano della Terra); il **Rubino NON apre il
+> portale** — si accende **solo alla vittoria della battaglia antica** e
+> riporta i PG al 1372 (riemersione al Cuore della Montagna, cucitura scritta
+> nel ponte **ARC-08 B2**, `ARC08-PONTE-ARRIVO.md`). Coerente con
+> `PG/Artefatti/LaCorona_di_Adamantio-DM.md`, state.md §6 e
+> `campaign-artifacts.md` (Rubino single-use, speso dopo questo arco).
 
 ---
 

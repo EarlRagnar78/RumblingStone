@@ -412,9 +412,12 @@
 
 * **Incontri e Boss:** 16.000 XP totali.
 * **Bonus Rituale e Sopravvivenza:** +2.000 XP.
-* **Divisione Party (4 membri):** Thorik, Tordek, Artemis + **Therysol** (PNG Livello 9).
-  * **Totale per PG:** 4.500 XP.
-* **Livello:** I PG dovrebbero essere vicini o aver raggiunto il Livello 14.
+* **Divisione Party:** Thorik, Tordek, Artemis. ⚠️ (D15: **Therysol veglia il
+  corpo di Hella** nella Sala e NON scende ai Piani — la composizione da
+  spedizione è di **3 PG**; se questo finale del Fuoco fu giocato con Therysol,
+  annotarlo come giocato, senza retcon della divisione XP.)
+* **Livello:** i PG sono di **13°** (D8), non 14. Se al tavolo si era saliti a
+  14, annotare il livello reale di gioco senza ribilanciare la parte giocata.
 
 **Prossima Tappa:**
 Affresco Est della Sala della Forgia. Il **Piano Elementale della Terra**.

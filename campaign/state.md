@@ -717,4 +717,12 @@ entries — they become campaign history.
             riscritto a blue Old CR 18 (era rimasto "black adult CR 13", unica
             scheda ancora fuori allineamento); aggiornati monster_catalog.yaml,
             Armate-COMPOSIZIONE-DETTAGLIATA §5, Armate-UNITA-NUOVE/README.
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto C, sessione 19 (C3+C4): contenuto di
+            modulo, non stato del mondo. C3: sidebar "SE FALLISCONO" uniforme in
+            P1C, P2A-PARTE4, P2B-PARTE3, RHEST-FASE4, Ghostlord-TESTO + nota unica
+            §8.5 "Risorse di resurrezione nel Vale" in DM-QUICKSTART-ARC09
+            (protocollo morte PG: fonti raise Rethmar/Ilmater/Circolo, "in 3.5 in
+            battaglia non si resuscita", ogni raise = debito; Cuore di Moradin
+            ribadito speso, §6). C4: MYTHAL-FOCUS §8 varianti per stato dei 4
+            PG-focus coerenti con §6 (nessun potere teorico/speso).
 ```

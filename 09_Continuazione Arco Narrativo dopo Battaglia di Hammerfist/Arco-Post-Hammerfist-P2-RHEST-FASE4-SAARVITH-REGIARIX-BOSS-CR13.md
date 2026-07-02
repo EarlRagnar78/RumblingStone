@@ -163,3 +163,29 @@ canonico: `campaign/state.md` §2.3.
 - [ ] Offerte le **sinergie d'artefatto attuali** (senza far riusare poteri spesi)?
 - [ ] Applicato il **trigger di fuga di Saarvith** (Regiarix giù o Saarvith <30%)?
 - [ ] Registrato l'esito esatto (morti/fuggiti) per il conteggio **−1 drago/−2 Razorfiend**?
+
+---
+
+## 9. SIDEBAR — SE FALLISCONO (C3)
+
+> **Lotto C3 (2026-07-02).** Uniforma l'esito "Fuga PG / sconfitta" già in §7 al
+> formato standard dell'arco. Fallimento a metà = costo, non stop. Protocollo
+> morte PG: `campaign/DM-QUICKSTART-ARC09.md` §"Risorse di resurrezione nel Vale".
+
+**Se i PG si ritirano o perdono a Rhest (Regiarix vivo, Saarvith fugge)**:
+- **Non scatta il −1 drago/−2 Razorfiend** (state.md §2.3): l'Orda arriva a
+  Rethmar con Regiarix e i Razorfiend interi → uno scenario ARMATE-SYNC §3 più
+  duro (+1 CR a un'ondata di Fase 1).
+- **Rhest resta fortezza** (clock Saarvith 3/8→pieno, state.md §3): +1 CR e i
+  Tiri-Kitor restano **tiepidi** (nessun eco-vendetta di Lanikar, B1.5).
+- **Costo, non blocco**: i PG possono aggirare Rhest e affrontarne le conseguenze
+  a Rethmar, oppure tornare in una finestra Day ≤32 per un secondo tentativo (con
+  Rhest ora **in allerta** = niente sorpresa, +2 alle difese di Saarvith).
+
+**Fallimento parziale (Regiarix ucciso ma Saarvith fugge)**: −1 drago **sì**,
+−2 Razorfiend **no** (Saarvith li riassegna); a Rethmar arriva come Wyrmlord
+minore con 2 Razorfiend.
+
+**Morte di un PG nell'arena a 3 quote**: protocollo unico (DM-QUICKSTART). Occhio
+alle **cadute in acqua/vuoto**: recuperare un corpo dal fondo del lago è parte del
+costo narrativo prima di poter anche solo tentare un raise.

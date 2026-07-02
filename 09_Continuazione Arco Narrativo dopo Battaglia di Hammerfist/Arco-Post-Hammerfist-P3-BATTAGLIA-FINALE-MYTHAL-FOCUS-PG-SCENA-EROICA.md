@@ -253,3 +253,88 @@ Quindi, anche se sullo sfondo si vedono **grandi maghi, druidi, statue colossali
 - dalle radici eterne della Collana dei Semi,
 
 cioè dai 4 PG che hanno deciso coscientemente di reggere il peso del Mythal.
+
+---
+
+## 8. Varianti per stato del PG (audit di coerenza C4)
+
+> **Lotto C4 (2026-07-02).** Audit: la scena eroica del cerchio (§6) va giocata
+> con i **poteri attuali** degli artefatti (`campaign/state.md` §6) e con l'esito
+> dei rami di quest, non con la loro forma teorica. Sotto, per ogni PG-focus, le
+> **2-3 varianti** possibili con cosa cambia nel rituale. **Regola §0.3**: niente
+> potere d'artefatto inventato o "riusato" oltre §6; i single-use bruciati
+> (Rubino della Corona, Cuore di Moradin) **non** ricompaiono.
+
+### PG 1 — Thorik (Corona di Adamantio + Aegis Fang)
+
+Stato §6: Corona con **3 gemme accese** (Rubino **già speso** al −1000 DR),
+Topazio *time-travel* 1/mese, Smeraldo *earthquake* 1/settimana, +2 CA deflessione,
+Stone's Awareness; Aegis Fang **pre-risveglio** (+2 Returning). Nota: **−2 CON
+permanente** (sacrificio per Hella, mai ripristinato) → i suoi TS Tempra nel
+rituale partono da lì.
+
+- **Variante A — Smeraldo carico** (non usato nell'ultima settimana): può
+  spendere l'*earthquake* 1/settimana come "ancoraggio della Montagna" (§2 PG1)
+  → il Circolo lo converte in **+2 alla resistenza strutturale di mura/statue**
+  per il resto della battaglia (non un secondo terremoto). Se già speso in Fase
+  1-2 (probabile): l'ancoraggio è **solo narrativo**, nessun bonus extra.
+- **Variante B — Rubino** (§7 del giocatore che chiede "uso la gemma rossa"):
+  **rifiutare** — è bruciato (§6). È un **catch di coerenza** da segnalare al
+  tavolo, non un'opzione.
+
+### PG 2 — Tordek (Bracieri Gemelli di Moradin; Orbe delle Otto Porte)
+
+Stato §6: Bracieri **Fuoco ✅ + Terra ✅** (Salto Infuocato 3/giorno, Fire Resist
+10, RD 5/adamantine); Orbe delle Otto Porte **posseduto solo se vince il Torneo**.
+
+- **Variante A — Orbe vinto (Torneo OK), 4ª Porta aperta**: Tordek incanala il
+  Ki attraverso l'Orbe come **secondo focus planare** → rafforza la sezione
+  "spirituale" del Mythal (§2 PG2): **+1 al numero di round che il Circolo può
+  fallire** senza perdere il rituale (margine 6/8 → di fatto 5/8 per un round).
+- **Variante B — Orbe vinto ma Porte non aperte / o Sethrax ha estratto il Seme**:
+  l'Orbe è instabile → nessun bonus di margine; il "rumore" planare **attira 1
+  ondata extra** di Githyanki sul cerchio (Vaereth ne rivendica il possesso).
+- **Variante C — Torneo perso / non giocato**: Tordek reggo solo coi Bracieri
+  (Fuoco+Terra); ruolo pieno ma senza il bonus di margine.
+
+### PG 3 — Artemis (Ring of Chaotic Illumination)
+
+Stato §6: Anello **riforgiato**, poteri base pieni, **attende evoluzione alla
+Torre Invisibile**.
+
+- **Variante A — Torre completata, Zalkatar sconfitto (Anello evoluto)**:
+  l'Anello ha raggiunto lo stadio successivo → la "scintilla caotica" (§2 PG3)
+  **taglia i legami extraplanari dell'Avatar un round prima** (il Mythal
+  raggiunge l'effetto "niente evocazioni" già al round 6 invece del 7).
+- **Variante B — Torre non fatta / Zalkatar vivo (Anello base)**: ruolo pieno ma
+  l'effetto anti-evocazione parte solo all'accensione (round 7); se **Sethrax è
+  fuggito col Seme di Porta** (state.md §3), Zalkatar/Avatar hanno +2 RI → il
+  taglio dei legami è **più difficile** (Artemis tira Concentrazione CD +2).
+- **Nota Mask/Lathander**: le due divinità **osservano** (state.md §4) — nel
+  rituale i loro sussurri sono colore (§6, round 3-4), **non** un intervento
+  meccanico, a meno che Artemis non abbia chiesto la "cortesia" post-Torre.
+
+### PG 4 — Hella (Collana dei Semi Eterni)
+
+Stato §6: Collana **attiva post-resurrezione** — Treant summoning (limitato),
+**forma d'Avatar 1/giorno**, slot dono party (3 inutilizzati). Hella ha già il
+**template Treant Hybrid** attivo (state.md §1). Il Cuore di Moradin è **speso**.
+
+- **Variante A — Forma d'Avatar disponibile (1/giorno non ancora usata oggi)**:
+  entra nel cerchio **in forma d'Avatar della Natura** (§2 PG4, §6 conferma che è
+  già 1/giorno, **non** condizionata a una quest futura) → collega il Mythal al
+  **terreno** (radici che fermano giganti, venti che deviano soffi): il Circolo
+  ottiene il bonus "la natura respinge l'Orda sui fianchi" (colore + 1 Ondata di
+  Fase 1 gestita off-screen dagli alleati naturali).
+- **Variante B — Forma d'Avatar già spesa in battaglia**: regge da druida/Treant
+  Hybrid; ruolo pieno ma **senza** il bonus terreno; i Treant evocati (limitati)
+  coprono comunque il perimetro.
+- **Variante C — Sacred Forest approfondito (MoF purificata, HOOKS-Hella §2.5)**:
+  se ha **raddoppiato** il bonus rituale al Cerchio Sacro, la sua forma d'Avatar
+  nel Mythal è più stabile → **1 round in meno** di TS di prosciugamento (§6) per
+  lei sola. Se **non** ha fatto Sacred Forest: nessun cerchio druidico di rinforzo
+  arriva (state.md §7), e Hella subisce i TS pieni.
+
+**Accettazione C4**: ogni PG-focus ha 2-3 varianti che rispettano §6 (nessun
+potere teorico o speso); i rami principali (Orbe/Porta 4, Anello evoluto,
+forma d'Avatar spesa/disponibile, Sacred Forest sì/no) hanno effetto esplicito.

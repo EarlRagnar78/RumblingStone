@@ -185,3 +185,32 @@ quarto rigo è il **default ostile** (PG senza filatteria, o che insultano Zeth)
 - [ ] Rivelato (se meritato) che i leoni sono **le anime di Hammerfist** (Arco 08)?
 - [ ] Offerti i **3 rami della filatteria** senza railroad verso il combattimento?
 - [ ] Registrato l'esito nel tracker: Rethmar (D7) **+** epilogo **+** hook ARC-10 (§7)?
+
+---
+
+## 9. SIDEBAR — SE FALLISCONO (C3)
+
+> **Lotto C3 (2026-07-02).** Uniforma i 3 rami già presenti (§7) al formato
+> standard "fallimento a metà". Protocollo morte PG:
+> `campaign/DM-QUICKSTART-ARC09.md` §"Risorse di resurrezione nel Vale".
+
+**Se la trattativa col Ghostlord fallisce a metà** (audizione morale andata male,
+i PG attaccano e poi si ritirano, filatteria né restituita né distrutta né
+vincolata):
+- **Default ostile** (state.md §2.3, D7): il Lich resta nemico → **+2.400
+  non-morti** a Rethmar in Fase 2. È l'esito peggiore, ma **non un vicolo cieco**.
+- Se i PG lo **feriscono ma fuggono**: il Ghostlord ricorda il volto di chi lo ha
+  attaccato → a Rethmar la sua ondata **punta ai PG-focus del Mythal** (eco
+  personale, non solo massa).
+- **Costo, non blocco**: la scelta sulla filatteria resta aperta fino a Day 32;
+  Hella (o chi ha toccato il santuario) può tornare per chiudere il ramo, a CD +2
+  perché la fiducia è incrinata.
+
+**Ramo "neutralizzato senza redenzione"** (i PG vincolano la filatteria ma senza
+la scena morale piena): **+400** invece di **+600** difensori — l'esito
+intermedio conta come **parziale**, non fallimento.
+
+**Morte di un PG nella tana**: protocollo unico (DM-QUICKSTART). Nota: un PG
+ucciso nella tana del Lich rischia di **rialzarsi come non-morto** sotto il
+controllo del Ghostlord se il corpo non è recuperato subito — costo narrativo
+pesante prima del raise.

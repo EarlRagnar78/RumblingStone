@@ -512,12 +512,16 @@ checklist qui sotto.
 
 - [x] A1 · [x] A2 · [x] A3 · [x] A4 · [x] A5 · [x] A6 · [x] A7 ·
   [x] A8 · [x] A9 · [x] A10 · [x] A11 · [x] A12 · [x] A13 —
-  **Lotto A completo (6 sessioni/commit, 2026-07-02).** Nota A8: uno
-  scan repo-wide ha trovato altri 5 link rotti oltre ai 3 nominati
-  esplicitamente (SUBQUEST-Artemis, SUBQUEST-Hella, DAY3-DAUTH-CITY-
-  SIEGE + 2 duplicati) che puntano a sotto-quest mai scritte, non solo
-  rinominate — richiedono contenuto narrativo nuovo, documentati nel
-  changelog di state.md, lasciati per una sessione dedicata.
+  **Lotto A completo (2026-07-02).** A8 chiuso con l'**opzione (a)
+  preferita**: creati DAUTH-DM-MASTER-REFERENCE (HUB), DAUTH-CONSEGUENZE-
+  ECHI-LUNGO-PERIODO e DAUTH-SUBQUEST-Thorik consolidando contenuti
+  esistenti. I 5 riferimenti orfani a sotto-quest mai scritte
+  (SUBQUEST-Artemis/Hella, DAY3-CITY-SIEGE) sono stati ripuntati ai
+  file che portano il materiale (HUB §5 con flag [INFERRED — Lotto B]),
+  **senza inventare sotto-quest nuove**. Verifica: `grep` di ogni
+  `Arco-*.md` citato → **zero link rotti operativi** (restano solo i
+  riferimenti del piano stesso ai deliverable futuri B4/B7/C7 e alla
+  nota storica del rename RETHMAN→RETHMAR).
 - [ ] B1.1 · [ ] B1.2 · [ ] B1.3 · [ ] B1.4 · [ ] B1.5 · [ ] B2 · [ ] B3 ·
   [ ] B4 · [ ] B5 · [ ] B6 · [ ] B7
 - [ ] C1 · [ ] C2 · [ ] C3 · [ ] C4 · [ ] C5 · [ ] C6 · [ ] C7 (event deck)

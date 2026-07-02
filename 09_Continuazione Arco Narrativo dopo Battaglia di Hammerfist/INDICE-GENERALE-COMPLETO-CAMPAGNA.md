@@ -217,6 +217,9 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 
 | File | Tipo | Status |
 |---|---|---|
+| `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md` | **HUB del Torneo** — indice, calendario, esiti, checklist DM | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-CONSEGUENZE-ECHI-LUNGO-PERIODO.md` | Esiti × scelte PG; echi a Rethmar e post-campagna | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Thorik.md` | Sub-quest delle 150 lance di Re Thorek (D10) | ✅ |
 | `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-to-Be_integrated.md` | ⚠️ storico/deprecato — bozza pre-canone (Tetsu/Rihan adottati altrove, resto superato da OTTO-PORTE-e-ORBE + PARTE1-3) | ⚠️ storico/deprecato |
 | `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-Giorno1-Preliminari.md` | Giorno 1 — Preliminari torneo | ✅ |
 | `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-Round1.md` | Dettaglio Round 1 | ✅ |

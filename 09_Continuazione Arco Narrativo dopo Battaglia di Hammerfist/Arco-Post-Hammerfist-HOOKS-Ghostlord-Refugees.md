@@ -158,7 +158,7 @@ Il party prosegue. Ren e i 30 vanno a Talar. Trovano ceneri. Probabilmente la me
 
 ### 5.2 Se il party ha completato la sub-quest del Boschetto (Tournament arc)
 
-> Allora hanno già **affrontato Mother of Fungi spore** (vedi `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md`). Possono **riconoscere il pattern** di non-morti aberranti se ne incontrano sulla strada. **Encounter sui non-morti vaganti diventa più tattico** — Hella sa cosa cercare per disinnescare.
+> Allora hanno già **affrontato Mother of Fungi spore** (sub-quest del "boschetto morente" fuori Dauth — vedi `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md` §5 `[INFERRED — da scrivere in Lotto B]`). Possono **riconoscere il pattern** di non-morti aberranti se ne incontrano sulla strada. **Encounter sui non-morti vaganti diventa più tattico** — Hella sa cosa cercare per disinnescare.
 
 ### 5.3 Se il Ghostlord ha già "sentito" il party (improbabile a questo punto)
 
@@ -227,5 +227,5 @@ Il party prosegue. Ren e i 30 vanno a Talar. Trovano ceneri. Probabilmente la me
 - **Ghostlord arc files:** `Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-TESTO.md`, `…MAPPE.md`, `…STATBLOCCHI.md`
 - **Capitana Lorana (Riserva dei Rifugiati a Rethmar):** `PNG/Lorana/Lorana.md`
 - **Talar (caduta):** menzionata in `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md` Day 21
-- **Mother of Fungi connection (Hella sub-quest Boschetto):** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md`
+- **Mother of Fungi connection (Hella sub-quest Boschetto):** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md` §5 `[INFERRED — sub-quest da scrivere in Lotto B]`
 - **Stato campagna:** `campaign/state.md`

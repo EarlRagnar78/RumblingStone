@@ -662,4 +662,18 @@ entries — they become campaign history.
             .github/copilot), campaign-history.md, README.md. D12:
             debito Tordek in state.md §5 riformulato "entro il Day 29,
             vigilia delle preliminari" (era "5 giorni", ambiguo).
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto A, completamento A8 opzione (a):
+            no canon change (consolidamento di contenuti esistenti).
+            Creati i 3 file "fonte autoritativa" che il piano preferiva
+            (prima solo ripuntati come opzione b): DAUTH-DM-MASTER-
+            REFERENCE (HUB del Torneo, tono Palio), DAUTH-CONSEGUENZE-
+            ECHI-LUNGO-PERIODO (echi ×scelte), DAUTH-SUBQUEST-Thorik
+            (150 lance, D10). Un secondo scan link ha trovato altri
+            riferimenti orfani a sotto-quest mai scritte (SUBQUEST-
+            Artemis/Hella, DAY3-CITY-SIEGE): ripuntati ai file esistenti
+            che portano il materiale (HUB §5 con flag [INFERRED — Lotto
+            B], SUBQUEST-Thorik §4 per lo schieramento lance), senza
+            inventare sotto-quest nuove. Risultato: **zero link rotti
+            operativi** (restano solo i riferimenti del piano a
+            deliverable futuri B4/B7/C7). INDICE aggiornato con i 3 file.
 ```

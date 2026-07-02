@@ -352,7 +352,7 @@
 ## 📚 FONTI CANONICHE
 
 Informazioni estratte da:
-- `00_Final_hammerfist_battle-La_Mano_Rossa_del_Destino-Guida_Completa_del_DM.md`  
+- `ARC08-01-GUIDA-DM.md`  
 - `PortaleForgia-FINAL-P6.md` + `P6-CORREZIONE-Arrivo.md`  
 - `PortaleForgia-FINAL-P5.md` (connessione Skullcrusher)  
 

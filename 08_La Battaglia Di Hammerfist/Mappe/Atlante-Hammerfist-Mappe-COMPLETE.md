@@ -1,18 +1,74 @@
 # LA BATTAGLIA DI HAMMERFIST
 ## ATLANTE VISIVO COMPLETO - MAPPE TATTICHE ILLUSTRATE
 
+> **Stato**: canonico — **MASTER VISIVO** dell'arco (piano ARC-08 A8,
+> 2026-07-02). Canone di trama in `campaign/state.md`, non ancora
+> giocato (piano ARC-08 A0). **Ultima revisione**: 2026-07-02.
+> **⚠️ Disambiguazione nomi (A10, D2)**: **Thorin** Runaforte = pregen
+> chierico (agisce SOLO nel flashback D6, poi come PNG); **Thorik** =
+> PG guerriero (compare SOLO dal finale, D6/E6, mai prima); **Thorek**
+> = Re di Hammerfist (comandante difensore per tutta la battaglia).
+> Tre persone diverse — mai fonderle (audit occorrenza-per-occorrenza
+> 2026-07-02: refusi corretti, vedi changelog).
+> **🖼️ Immagini reali (C3)**: i riferimenti "**Immagine:** [NNN]
+> `hammerfist-*.png`" sotto sono placeholder. Le immagini **reali**
+> (webp in `immagini/`) sono classificate in
+> `ARC08-14-ATLANTE-IMMAGINI.md`; le corrispondenze certe sono citate
+> nella voce di ogni mappa qui sotto.
+
 ---
 
-## 📚 INDICE COMPLETO MAPPE (16 TOTALI)
+## 📖 MATRICE DI CONTENUTO (A8) — chi ha cosa, cosa è master
+
+Quattro generazioni di atlante e due generazioni di mappe tattiche
+sono confluite qui. Questo file è il **master visivo** (narrativo,
+descrizioni, prompt immagine, dettagli tattici da tavolo) per
+**tutte** le mappe dell'arco. I tre file `Hammerfist-L{1,2,3}-REVISED-
+Ultra-Clear.md` restano **master tattici** ma **solo** per le tre
+mappe ad altissima densità di coordinate che coprono (griglia
+numerata, viste multiple) — per tutto il resto, e per la lettura
+narrativa, questo file è la fonte.
+
+| # | Mappa | Generazioni 00_ (a/b/c) | Lotto-N | Tattico dedicato | Master |
+|---|---|---|---|---|---|
+| 1 | 1A-1 Il Sentiero Nascosto | a✅ b✅ c✅ (DEPRECATED) | Lotto-1 ✅ (DEPRECATED) | — | **questo file** |
+| 2 | 1A-2 Il Torrione di Vedetta | a✅ b✅ c✅ (DEPRECATED) | Lotto-1 ✅ (DEPRECATED) | `Hammerfist-L1-REVISED-Ultra-Clear.md` (griglia) | **questo file** (narrativo) + L1-REVISED (griglia) |
+| 3 | 1A-3 Campo della Mano Rossa | — | Lotto-1 ✅ (DEPRECATED) | — | **questo file** |
+| 4 | MAPPA 1 Disposizione Generale G1 | a✅ b✅ c✅ (DEPRECATED) | — | — | **questo file** |
+| 5 | MAPPA 2A/2B/2C Fortezza (top-down/frontale/laterale) | a/b/c avevano un'unica "MAPPA 2 Unificata" (DEPRECATED) — qui riorganizzata in 3 viste | Lotto-2 ✅ (2A/2B/2C, DEPRECATED) | `Hammerfist-L2-REVISED-Ultra-Clear.md` (griglia, solo 2A) | **questo file** (narrativo) + L2-REVISED (griglia 2A) |
+| 6 | MAPPA 2 Schieramento Difensivo Truppe | — | — | — | **questo file** |
+| 7 | MAPPA 3 Movimenti e Fasi Assalto | — | Lotto-2 ✅ (DEPRECATED) | — | **questo file** |
+| 8 | MAPPA 4 Evoluzione Danni (Giorni 1-3) | c✅ (DEPRECATED) | Lotto-2 ✅ (DEPRECATED) | — | **questo file** |
+| 9 | MAPPA 2B-Corretta Attacco del Drago | a✅ b✅ c✅ (DEPRECATED) | Lotto-2 ✅ (DEPRECATED) | — | **questo file** |
+| 10 | MAPPA 3X Ingresso Passaggi Antichi | a✅ b✅ c✅ (DEPRECATED) | Lotto-3 ✅ (DEPRECATED) | `Hammerfist-L3-REVISED-Ultra-Clear.md` (griglia, come H3-1) | **questo file** (narrativo) + L3-REVISED (griglia) |
+| 11 | MAPPA 3Y Il Ponte Sospeso | b✅ c✅ (DEPRECATED) — **mancava qui, migrata in A8** | — | — | **questo file** |
+| 12 | MAPPA 3Z Incrocio Silenzioso | b✅ c✅ (DEPRECATED; a❌ mancante) | Lotto-3 ✅ (DEPRECATED) | — | **questo file** |
+| 13 | MAPPA 5 Cuore della Montagna | a✅ b✅ c✅ (DEPRECATED) | Lotto-3 ✅ (DEPRECATED) | — | **questo file** |
+| 14 | MAPPA 4X Campo Battaglia Finale (laterale) | c✅ (DEPRECATED) | Lotto-3 ✅ (DEPRECATED) | — | **questo file** |
+| 15 | MAPPA 4 Battaglia Finale Aerea e Terrestre | a✅ b✅ c✅ (DEPRECATED) | Lotto-3 ✅ (DEPRECATED) | — | **questo file** |
+
+**File deprecati da questa matrice** (banner DEPRECATED aggiunto, D12 — puntano tutti qui):
+`ARC08-90-DEPRECATO-battle-stats-maps.md` (a), `ARC08-91-DEPRECATO-atlante-visivo-v2.md` (b),
+`ARC08-92-DEPRECATO-atlante-visivo-v3-complete.md` (c),
+`Mappe/Hammerfist-Lotto-1-Ricognizione.md`, `Mappe/Hammerfist-Lotto-2-Assedio.md`, `Mappe/Hammerfist-Lotto-3-FINALE.md`.
+
+**File NON deprecati** (master tattici di categoria diversa, non sovrapposti):
+`Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md`, `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md`,
+`Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` — coprono in griglia-precisa solo 1A-2, 2A e 3X/H3-1;
+per tutte le altre mappe (e per la lettura narrativa) restare su questo file.
+
+---
+
+## 📚 INDICE COMPLETO MAPPE (17 TOTALI)
 
 ### 🔍 SESSIONE 1: L'OMBRA SULLA MONTAGNA - Ricognizione (3 mappe)
 1. Mappa 1A-1 - Il Sentiero Nascosto
-2. Mappa 1A-2 - Il Torrione di Vedetta
+2. Mappa 1A-2 - Il Torrione di Vedetta (griglia precisa: `Hammerfist-L1-REVISED-Ultra-Clear.md`)
 3. Mappa 1A-3 - Campo della Mano Rossa (Vista Aerea)
 
 ### ⚔️ SESSIONE 2: TRE GIORNI DI SANGUE E FERRO - Assedio (7 mappe)
 4. Mappa 1 - Disposizione Generale Battaglia Giorno 1
-5. Mappa 2A - Fortezza Hammerfist Vista dall'Alto
+5. Mappa 2A - Fortezza Hammerfist Vista dall'Alto (griglia precisa: `Hammerfist-L2-REVISED-Ultra-Clear.md`)
 6. Mappa 2B - Fortezza Vista Frontale (Prospettiva Attaccante)
 7. Mappa 2C - Fortezza Sezione Laterale
 8. Mappa 2 - Schieramento Difensivo Truppe
@@ -20,24 +76,26 @@
 10. Mappa 4 - Evoluzione Danni (Giorni 1-3)
 11. Mappa 2B-Corretta - Attacco del Drago
 
-### 🏃 SESSIONE 3: DALLE PROFONDITÀ DELLA TERRA - Fuga (3 mappe)
-12. Mappa 3X - Ingresso Passaggi Antichi
-13. Mappa 3Z - Incrocio Silenzioso
-14. Mappa 5 - Cuore della Montagna
+### 🏃 SESSIONE 3: DALLE PROFONDITÀ DELLA TERRA - Fuga (4 mappe)
+12. Mappa 3X - Ingresso Passaggi Antichi (griglia precisa: `Hammerfist-L3-REVISED-Ultra-Clear.md`)
+13. Mappa 3Y - Il Ponte Sospeso
+14. Mappa 3Z - Incrocio Silenzioso
+15. Mappa 5 - Cuore della Montagna
 
 ### 🏆 SESSIONE 4: LA TEMPESTA E LA VITTORIA FINALE (2 mappe)
-15. Mappa 4X - Campo Battaglia Finale (Vista Laterale)
-16. Mappa 4 - Battaglia Finale Aerea e Terrestre
+16. Mappa 4X - Campo Battaglia Finale (Vista Laterale)
+17. Mappa 4 - Battaglia Finale Aerea e Terrestre
 
 ---
 
 ## 🔍 SESSIONE 1: L'OMBRA SULLA MONTAGNA
 
 ### MAPPA 1A-1: IL SENTIERO NASCOSTO
-**Immagine:** [148] `hammerfist-1a1.png`
+**Immagine:** [148] `hammerfist-1a1.png` — **reale (C3)**: `immagini/13.webp` (mappa tattica), `immagini/sentieroNascosto.webp` + `immagini/00_PM.webp` (arte)
 
 **Tipo:** Infiltrazione tattica  
 **Scala:** 1 quadrato = 3 metri  
+  ⚠️ **[A4: deviazione dalla convenzione repo 1,5m/quadretto]** griglia ASCII originale disegnata a questa scala; non ridisegnata per evitare di alterare posizioni/distanze già usate nel testo (soffio, portate, velocità). DM: non mischiare quadretti di mappe a scale diverse nella stessa sessione.
 **Livello Sfida:** CD 5-12 (variabile approccio)
 
 **Descrizione Scenario:**
@@ -73,10 +131,11 @@ SUD ↓
 ---
 
 ### MAPPA 1A-2: IL TORRIONE DI VEDETTA
-**Immagine:** [149] `hammerfist-1a2.png`
+**Immagine:** [149] `hammerfist-1a2.png` — **reale (C3)**: `immagini/torreVedetta.webp` + `immagini/01.webp` (arte), `immagini/Generated Image October 03, 2025 - 6_09PM.webp` (mappa tattica)
 
 **Tipo:** Osservazione tattica  
 **Scala:** 1 quadrato = 3 metri  
+  ⚠️ **[A4: deviazione dalla convenzione repo 1,5m/quadretto]** griglia ASCII originale disegnata a questa scala; non ridisegnata per evitare di alterare posizioni/distanze già usate nel testo (soffio, portate, velocità). DM: non mischiare quadretti di mappe a scale diverse nella stessa sessione.
 **Altezza:** Torrione 18m, Dirupo 40m caduta
 
 **Descrizione Scenario:**
@@ -127,10 +186,11 @@ Antica torre di guardia in pietra (rovina) si erge sul bordo di un dirupo scosce
 ---
 
 ### MAPPA 1A-3: CAMPO DELLA MANO ROSSA
-**Immagine:** [150] `hammerfist-1a3.png`
+**Immagine:** [150] `hammerfist-1a3.png` — **reale (C3)**: `immagini/03.webp` (orda schierata)
 
 **Tipo:** Vista strategica narrativa  
 **Scala:** Non tattica (400m distanza)  
+  ⚠️ **Vista strategica — NON è una griglia di combattimento.**
 **Visione:** Cannocchiale Dara dal Torrione
 
 **Descrizione Scenario:**
@@ -181,6 +241,7 @@ Rappresentazione visiva di ciò che Dara vede con cannocchiale masterwork. Non �
 
 **Tipo:** Overview strategico  
 **Scala:** Distanze marcate 60m-300m  
+  ⚠️ **Vista strategica — NON è una griglia di combattimento.**
 **Funzione:** DM overview posizioni iniziali tutte forze
 
 **Descrizione Scenario:**
@@ -233,10 +294,11 @@ Reference quick distanze e formazioni. Aggiorna posizioni mentre battaglia proce
 ---
 
 ### MAPPA 2A: FORTEZZA HAMMERFIST VISTA DALL'ALTO
-**Immagine:** [152] `hammerfist-map2a.png`
+**Immagine:** [152] `hammerfist-map2a.png` — **reale (C3)**: `immagini/04.webp`, `immagini/Generated Image October 03, 2025 - 5_44PM.webp`, `immagini/new_maps/Generated Image October 03, 2025 - 6_14PM.webp` (mappe iso); `immagini/05.webp` (arte)
 
 **Tipo:** Mappa tattica isometrica top-down  
 **Scala:** 1 quadrato = 3×3 metri  
+  ⚠️ **[A4: deviazione dalla convenzione repo 1,5m/quadretto]** griglia ASCII originale disegnata a questa scala; non ridisegnata per evitare di alterare posizioni/distanze già usate nel testo (soffio, portate, velocità). DM: non mischiare quadretti di mappe a scale diverse nella stessa sessione.
 **Dettaglio:** Massimo, tutte strutture visibili
 
 **Descrizione Scenario:**
@@ -303,6 +365,7 @@ Vista dall'alto completa fortezza nanica Hammerfist. Mostra layout strategico da
 
 **Tipo:** Vista prospettica dal basso  
 **Scala:** Non griglia, visuale artistica  
+  ⚠️ **Vista prospettica artistica — NON è una griglia di combattimento.**
 **Prospettiva:** Attaccante guardando verso l'alto
 
 **Descrizione Scenario:**
@@ -363,6 +426,7 @@ Vista from below rende fortezza appear **INESPUGNABILE**. Attaccanti devono:
 
 **Tipo:** Cutaway cross-section  
 **Scala:** Verticale 3m/livello, Orizzontale 20m/sezione  
+  ⚠️ **Misure architettoniche (altezza piani/sezione) — NON è una griglia di combattimento.**
 **Funzione:** Chiarire profondità e altezze
 
 **Descrizione Scenario:**
@@ -423,6 +487,7 @@ Linee vista verticali:
 
 **Tipo:** Schema posizioni unità  
 **Scala:** Simboli unità posizioni  
+  ⚠️ **Schema posizionale — NON è una griglia di combattimento a quadretti.**
 **Funzione:** DM tracking truppe durante battaglia
 
 **Descrizione Scenario:**
@@ -490,6 +555,7 @@ DM aggiorna posizioni quando:
 
 **Tipo:** Diagramma tattico fasi  
 **Scala:** Strategica con frecce movimento  
+  ⚠️ **Diagramma strategico di fase — NON è una griglia di combattimento.**
 **Funzione:** Visualizzare progressione attacco nemico
 
 **Descrizione Scenario:**
@@ -549,7 +615,7 @@ Mappa mostra tre fasi distinte attacco coordinato Mano Rossa Giorno 1. Frecce in
 
 **Fauci di Palude:** Inizia sorvoli (Preparazione picchiata Giorno 2)
 - Quota: 45m (Fuori gittata baliste 120m)
-- Vola sopra bastioni, torri (Intimidazione, Presenza Terrificante DC 25)
+- Vola sopra bastioni, torri (Intimidazione, Presenza Terrificante CD 25)
 - Soffio occasionale: 1 volta ogni 1d4 round, linea 24m acido, 14d4 danni
   - Target priorità: Concentrazioni difensori, baliste crew
 
@@ -597,6 +663,7 @@ Timeline Fase helps DM trackare:
 
 **Tipo:** Three-panel progression  
 **Scala:** Panoramica fortezza  
+  ⚠️ **Vista panoramica — NON è una griglia di combattimento.**
 **Funzione:** Mostrare giocatori deterioramento strutturale
 
 **Descrizione Scenario:**
@@ -682,10 +749,11 @@ Visual aid helps players understand stakes without calculating PF numericamente.
 ---
 
 ### MAPPA 2B-CORRETTA: ATTACCO DEL DRAGO
-**Immagine:** [156] `hammerfist-dragon.png`
+**Immagine:** [156] `hammerfist-dragon.png` — **reale (C3)**: `immagini/07.webp` + `immagini/fauciDiPalude.webp` + `immagini/new_maps/Generated Image October 03, 2025 - 6_22PM.webp`
 
 **Tipo:** Moment cinematico  
 **Scala:** Non griglia (Visual drama)  
+  ⚠️ **Scena cinematica — NON è una griglia di combattimento.**
 **Timing:** Giorno 2, Round speciale
 
 **Descrizione Scenario:**
@@ -737,7 +805,7 @@ Momento ICONICO campagna: Fauci di Palude dragon dive attack vs Re Thorek sui ba
   - Guardie (PF 42 media): 6-8 KO instant (Failed save = death)
   - Re Thorek (PF 195): Survives (Resistenza + items), heavily wounded
   - Borin (PG): Tough call (Depends save)
-  - Thorin (PG): Likely survive (Chierico AC alto)
+  - Thorin (pregen, non ancora PG in questa scena — D6/D2): Likely survive (Chierico AC alto)
 
 **Controffensive Possibili:**
 - **Dara (Torre Ovest):** Crossbow Heavy +1 attack (Extreme range -6, +19 final = +13)
@@ -754,10 +822,11 @@ Questo è **TURNING POINT** Giorno 2. Soffio drago devastates leadership nanico,
 ## 🏃 SESSIONE 3: DALLE PROFONDITÀ DELLA TERRA
 
 ### MAPPA 3X: INGRESSO PASSAGGI ANTICHI
-**Immagine:** [157] `hammerfist-3x.png`
+**Immagine:** [157] `hammerfist-3x.png` — **reale (C3)**: `immagini/08.webp` (mappa evacuazione)
 
 **Tipo:** Escape tactical  
 **Scala:** 1 quadrato = 2 metri  
+  ⚠️ **[A4: deviazione dalla convenzione repo 1,5m/quadretto]** griglia ASCII originale disegnata a questa scala; non ridisegnata per evitare di alterare posizioni/distanze già usate nel testo (soffio, portate, velocità). DM: non mischiare quadretti di mappe a scale diverse nella stessa sessione.
 **Timing:** Immediatamente post-soffio drago
 
 **Descrizione Scenario:**
@@ -796,7 +865,7 @@ Cortile Interno ridotto inferno fumante. Pozze acido verde corrosivo steam ovunq
   - Distance: 50m iniziale (2 round before reach cortile)
   - Velocity: 30m/round (Aggressive pursuit)
 - **Warchief Orchesco:** Leading charge
-  - Challenge bellow: "Nani codardi fuggire!" (Intimidate DC 18)
+  - Challenge bellow: "Nani codardi fuggire!" (Intimidate CD 18)
 
 **Objective:** Evacuate ALL 90 nani attraverso ingresso segreto PRIMA orchi reach.
 
@@ -834,11 +903,47 @@ Cortile Interno ridotto inferno fumante. Pozze acido verde corrosivo steam ovunq
 
 ---
 
+### MAPPA 3Y: IL PONTE SOSPESO
+**Immagine:** [157b] `hammerfist-3y.png` — **reale (C3)**: `immagini/09.webp` (Borin al ponte) — `[INFERRED — numero immagine non
+ancora assegnato, migrato da 00_ATLANTE VISIVO...-complete.md — A8]`
+
+**Tipo:** Retroguardia / difesa a strozzatura
+**Scala:** 1 quadrato = 1,5 metri
+**Timing:** Subito dopo l'evacuazione di MAPPA 3X, prima dell'incrocio di MAPPA 3Z
+
+**Descrizione Scenario:**
+Il tunnel si allarga in una caverna divisa in due da un baratro buio e
+profondo. L'unico passaggio è un ponte di pietra stretto (3m) e senza
+parapetti: punto perfetto per una difesa disperata di retroguardia
+mentre il resto dei nani continua l'evacuazione verso MAPPA 3Z e
+MAPPA 5.
+
+**Prompt per l'Immagine:**
+> *"Arte fantasy, D&D. Una vasta caverna sotterranea. Un ponte di
+> pietra stretto e antico, senza ringhiere, attraversa un abisso
+> oscuro da cui non si vede il fondo. Sulla sponda opposta, un
+> guerriero nano corazzato si erge a difesa del ponte, la sua ascia
+> pronta a respingere l'orda di inseguitori che sta per raggiungerlo."*
+
+**Elementi Mappa:**
+- **Piattaforma Rocciosa (Nord):** Dara (arco) e Thorin (supporto divino) in posizione di copertura
+- **Ponte di Pietra (Centro, largo 3m):** Borin tiene la strozzatura in mischia
+- **Baratro Profondo (ambo i lati):** una creatura spinta oltre il bordo tenta un TS Riflessi CD 18 per aggrapparsi, altrimenti cade nell'oscurità (20d6 danni da caduta)
+- **Inseguitori (Sud):** Orchi e Hobgoblin in arrivo dai tunnel di MAPPA 3X
+
+**Meccaniche Chiave:**
+- Combattimento a un-contro-uno forzato dalla larghezza del ponte (nessun fiancheggiamento per gli inseguitori)
+- TS Riflessi CD 18 per non cadere se spinto/respinto oltre il bordo
+- Caduta nel baratro: 20d6 danni (letale quasi certa a questo livello di party PNG)
+
+---
+
 ### MAPPA 3Z: INCROCIO SILENZIOSO
 **Immagine:** [158] `hammerfist-3z.png`
 
 **Tipo:** Ambush encounter  
 **Scala:** 1 quadrato = 2 metri  
+  ⚠️ **[A4: deviazione dalla convenzione repo 1,5m/quadretto]** griglia ASCII originale disegnata a questa scala; non ridisegnata per evitare di alterare posizioni/distanze già usate nel testo (soffio, portate, velocità). DM: non mischiare quadretti di mappe a scale diverse nella stessa sessione.
 **Timing:** 30 minuti dopo tunnel ingresso
 
 **Descrizione Scenario:**
@@ -866,10 +971,10 @@ Tunnel principale apre caverna più ampia piena stalagmiti proiettano ombre lung
 **IMBOSCATA BUGBEAR (Est + Ovest):**
 - **8 Bugbear Assassini Totali:** Rogue 5/Assassin 2, CR 7 ciascuno
 - **Tattiche:**
-  - Hide in Shadows: Bonus +12 (Darkness tunnel + racial)
-  - Observe: Spot CD 25 notarli PRIMA attaccano
+  - Nascondersi in Ombra: Bonus +12 (Darkness tunnel + racial)
+  - Osservare CD 25 per notarli PRIMA che attacchino
   - Target: Isolated creatures O Re Thorek (High-value)
-  - Death Attack: DC 16 Fort O paralysis 1d6+2 round
+  - Death Attack: CD 16 Fort O paralysis 1d6+2 round
   - Sneak Attack: +5d6 damage FIRST strike
 - **Trigger:** Attaccano quando nani al centro (Maximum targets vulnerable)
 
@@ -893,13 +998,13 @@ Multi-threat simultaneous:
 **Tattiche PG:**
 
 **BORIN:**
-- Spot Check CD 25: Notice Bugbear PRIMA strike (Critical!)
+- Osservare CD 25: nota i Bugbear PRIMA che colpiscano (Critico!)
 - Se notice: Intercept (Move + Ready attack vs emerging)
 - Se miss: React post-attack (Damage already done)
 
 **DARA:**
 - Ranger Favored Enemy (Goblinoids): +4 vs Hobgoblin/Bugbear
-- Position: Elevated stalagmite (Climb CD 10, +2m height advantage)
+- Position: Elevated stalagmite (Scalare CD 10, +2 di circostanza per il terreno rialzato)
 - Precise Shot: Target Bugbear mixed melee
 
 **THORIN:**
@@ -918,10 +1023,11 @@ Multi-threat simultaneous:
 ---
 
 ### MAPPA 5: CUORE DELLA MONTAGNA
-**Immagine:** [159] `hammerfist-map5.png`
+**Immagine:** [159] `hammerfist-map5.png` — **reale (C3)**: `immagini/sala-interna-hammerfist.webp`
 
 **Tipo:** Sanctuary + Epic reveal  
 **Scala:** 1 quadrato = 3 metri  
+  ⚠️ **[A4: deviazione dalla convenzione repo 1,5m/quadretto]** griglia ASCII originale disegnata a questa scala; non ridisegnata per evitare di alterare posizioni/distanze già usate nel testo (soffio, portate, velocità). DM: non mischiare quadretti di mappe a scale diverse nella stessa sessione.
 **Timing:** Sessione 3 Incontro 3B (CLIMAX!)
 
 **Descrizione Scenario:**
@@ -961,7 +1067,7 @@ Caverna naturale bellezza mozzafiato, cathedral-like grandezza. Soffitto 40m alt
   - Conscious but weak (Can speak, cannot fight)
   - Position: Center altare (Surrounded protectors)
 - **Momento Drammatico:** Quando PG appear, Thorek occhi aprono
-  - Riconosce Thorik SkullDark (Stesso bloodline, Corona recognizes)
+  - Riconosce Thorik (Stesso bloodline, Corona recognizes)
   - Ultime parole prima collassare: "Moradin ha... ascoltato... la Forgia... eterna..."
 
 **TUNNEL INGRESSO (Nord):**
@@ -997,14 +1103,14 @@ Caverna naturale bellezza mozzafiato, cathedral-like grandezza. Soffitto 40m alt
 - Focus: Tenere nani engaged mentre ondata 3 arrives
 
 **Ondata 3 (Round 6-8): 15 BUGBEAR ASSASSINI**
-- Stealth approach (Hide +12)
+- Stealth approach (Nascondersi +12)
 - Target: Leaders + Re Thorek (Assassination attempts)
 - **Interrupted:** PG apparizione Round 8 = Surprise reversed!
 
 **Ondata Finale (Round 9-10): GRIMJAW + 10 OROG**
 - **Se Grimjaw vede situazione (PG arrived, morale swing):** 
   - Option A: Retreat strategic (Live fight another day)
-  - Option B: Personal challenge Thorik SkullDark (Arrogance)
+  - Option B: Personal challenge Thorik (Arrogance)
 - **Se Grimjaw morto già Sessione 2:** Sostituisci Capitano Hobgoblin minore (Auto-retreat)
 
 **EVENTO CLIMAX (Round 8):**
@@ -1028,6 +1134,7 @@ Caverna naturale bellezza mozzafiato, cathedral-like grandezza. Soffitto 40m alt
 
 **Tipo:** Pre-charge elevation diagram  
 **Scala:** Horizontal meters marked, Vertical meters elevation  
+  ⚠️ **Misure architettoniche (elevazione) — NON è una griglia di combattimento.**
 **Timing:** Post-Cuore Montagna rally, prima carica finale
 
 **Descrizione Scenario:**
@@ -1062,7 +1169,7 @@ Vista laterale (side profile) mostra vantaggio tattico geografico nani: Hammerfi
 - **Re Thorek XIII:** Rear position (Healed 100 HP via Dana, still weak)
 - **Madre Dana + Cantitrici:** Support rear (Buff spells, healing ready)
 - **4 PG (Rumbling Stones):** **TIP OF SPEAR** (Leading charge!)
-  - Thorik SkullDark: Punto cuneo, Corona blazing, Aegis-Fang ready
+  - Thorik: Punto cuneo, Corona blazing, Aegis-Fang ready
   - Tordek Ironfist: Left flank Thorik, ki aura visible
   - Artemis Blackrock: Airborne (Ali Ombra), 15m altitude
   - Hella Stonebloom: Right flank, 2 Treant Adamantino already summoned
@@ -1076,7 +1183,7 @@ Vista laterale (side profile) mostra vantaggio tattico geografico nani: Hammerfi
 **Vantaggio Carica Downhill:**
 - **Velocity:** +50% movement (90 nani reach 100m in 2 round instead 3)
 - **Impact:** +2 damage all charge attacks (Momentum)
-- **Morale:** +2 additional (Psychological advantage)
+- **Morale:** +2 aggiuntivo (bonus di circostanza psicologico da carica in discesa)
 - **Enemy Penalty:** -2 AC caught off-guard (Retreat mentality)
 
 **Countdown Charge:**
@@ -1085,10 +1192,11 @@ This map shows MOMENT BEFORE. Next map (4 Unified) shows DURING charge + aerial 
 ---
 
 ### MAPPA 4: BATTAGLIA FINALE AEREA E TERRESTRE
-**Immagine:** [161] `hammerfist-final.png`
+**Immagine:** [161] `hammerfist-final.png` — **reale (C3)**: `immagini/10.webp` + `immagini/scontro-finale.webp` (arte), `immagini/11.webp` (mappa 4A) + `immagini/12.webp` (vista aerea)
 
 **Tipo:** Epic cinematic dual-front  
 **Scala:** Strategic overview  
+  ⚠️ **Vista strategica — NON è una griglia di combattimento.**
 **Timing:** Climax Sessione 4, Round 11-23
 
 **Descrizione Scenario:**
@@ -1101,7 +1209,7 @@ Rappresenta absolute APEX campagna - every element converges single moment glory
 **BATTAGLIA TERRESTRE (Ground):**
 
 **Carica Nanica (Wedge Formation):**
-- **Tip:** Thorik SkullDark (Corona 3 gemme blazing tricolor)
+- **Tip:** Thorik (Corona 3 gemme blazing tricolor)
   - Aegis-Fang spinning thrown (Hits Gorthak, returns)
   - Aura: 30m radius, alleati +4 morale/att
 - **Left Wing:** Tordek Ironfist + 30 guerrieri
@@ -1129,7 +1237,7 @@ Rappresenta absolute APEX campagna - every element converges single moment glory
 - **Maestro Tempestas:** Altitude 60m, conducts storm
   - *Control Weather* + *Call Lightning Storm* combo
   - Fulmini: 10d6 electrical, 1/round auto-target Fauci
-  - Nubi nere: Oscurano drago visibility (-4 Spot)
+  - Nubi nere: Oscurano drago visibility (-4 Osservare)
 
 **Fauci di Palude (Desperate):**
 - **Altitude:** Variable 30-45m (Evading gufi)
@@ -1171,12 +1279,25 @@ Rappresenta absolute APEX campagna - every element converges single moment glory
 - **Support:** Tordek joins (Flurry Blows), Artemis continues blast
 - **Fauci Desperate:** Full Attack Thorik (Morso+Artigli+Ali+Coda)
 - **Thorik Heroic:** Aegis-Fang throw (Crit 19-20/×3) + *Smite Evil*
-  - **Killing Blow:** Aegis-Fang embedded skull (Penetra sclale adamantine)
-  - Drago collassa (0 HP), earthquake tremor impatto
 
-**CONSEGUENZA IMMEDIATA:**
-- **Orda vede:** Drago morto = ROUT completo
-- **400 Superstiti:** Flee panic (100% casualties se pursued O 80% escape)
+> **Esito — ramo condizionale, non un fatto compiuto (D10, piano
+> ARC-08 A1)**: quando Fauci scende **sotto i 50 PF** il **default**
+> è che tenta la fuga (Tattiche già previste nello statblock,
+> `00_Schede_dei_Personaggi...md` §1) — rottura del grapple di Orion,
+> decollo disperato verso le montagne meridionali, gravemente ferito
+> ma vivo (può tornare, hook nemesi). **Solo se i PG lo bloccano
+> attivamente e continuano ad attaccarlo oltre quel punto** (es.
+> Tordek/Artemis lo tengono a terra mentre Thorik finisce il colpo)
+> arriva a 0 PF ed è **ucciso** — Aegis-Fang che si conficca nel
+> teschio è l'immagine giusta SOLO per questo ramo alternativo.
+> Nessuno dei due esiti è deciso qui: si risolve al tavolo.
+
+**CONSEGUENZA IMMEDIATA (dipende dal ramo sopra):**
+- **Se Fauci fugge (default):** l'orda vede il drago ritirarsi ferito,
+  non morto — morale nemico comunque crolla (il drago non li protegge
+  più), ma niente "drago morto" nella narrazione ai superstiti.
+- **Se Fauci è ucciso (ramo alternativo):** **Orda vede:** Drago morto = ROUT completo.
+- **400 Superstiti:** Flee panic (100% casualties se pursued O 80% escape) — invariato in entrambi i rami.
 - **Gorthak:** Surrender O death (PG choice)
 - **Grimjaw:** Fled già (Se vivo) O corpse (Se morto Sessione 2-3)
 
@@ -1231,7 +1352,10 @@ Banner Hammerfist re-raised mura. Nani cheer. PG heroes celebrated. Campagna con
 
 ### Per VTT Online:
 - Importa PNG diretto Roll20/Foundry VTT
-- Grid già ottimizzato standard D&D (5ft/1,5m)
+- ⚠️ Grid **NON uniforme**: le mappe tattiche usano scale miste (1,5m/2m/3m
+  per quadrato a seconda della mappa — vedi il flag A4 nell'intestazione
+  di ciascuna). Verifica la scala dichiarata PRIMA di importare su
+  Roll20/Foundry, non assumere 5ft/1,5m per tutte.
 - Lighting layer: Usa darkness/illumination descritta mappe
 - Dynamic tokens: Aggiorna HP visualmente
 
@@ -1239,9 +1363,10 @@ Banner Hammerfist re-raised mura. Nani cheer. PG heroes celebrated. Campagna con
 
 ## ✅ CHECKLIST COMPLETEZZA
 
-- ✅ Tutte location principali coperte (16 mappe)
+- ✅ Tutte location principali coperte (17 mappe — MAPPA 3Y migrata, A8)
 - ✅ Progression logica narrativa (Sessione 1→4)
-- ✅ Scale tattiche appropriate (2-10m per quadrato)
+- ⚠️ Scale tattiche **non uniformi** (1,5m/2m/3m a seconda della mappa,
+  flag esplicito A4 su ogni mappa che devia da 1,5m — convenzione repo)
 - ✅ Codici colore consistenti (Rosso=pericolo, Verde=alleati, etc)
 - ✅ Boss fights have dedicated maps (Drago, Gorthak, etc)
 - ✅ Climax moments visualized (Apparizione PG, Carica finale)
@@ -1264,7 +1389,7 @@ Banner Hammerfist re-raised mura. Nani cheer. PG heroes celebrated. Campagna con
 ## 🏆 CAMPAGNA COMPLETA
 
 **"La Battaglia di Hammerfist"** ora ha supporto visuale completo! Combina con:
-- **00_Final_hammerfist_battle.md** (Statistiche, regole)
+- **ARC08-01-GUIDA-DM.md** (Statistiche, regole)
 - **Atlante Visivo** (Descrizioni dettagliate mappe)
 - **Queste 16 immagini** (Visual aid giocatori)
 

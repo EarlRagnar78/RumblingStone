@@ -78,7 +78,7 @@ Numeri baseline partendo da **9.940 iniziali** (vedi
 | 8-9 | Skull Gorge crossing (attrito naturale) | −30 | — | 9.890 |
 | 12-13 | Drellin's Ferry assalto + saccheggio | −150 | +60 (orchi locali) | 9.800 |
 | 15-17 | Marcia + scontri con partigiani | −80 | — | 9.720 |
-| **19** | **Terrelton assalto + Hammerfist catastrofe simultanea** | −250 (Terrelton) **−900 (Hammerfist vanguard intero)** | +40 (schiavi armati) | **8.610** |
+| **19** | **Terrelton assalto + Hammerfist catastrofe simultanea** | −250 (Terrelton) **−900 (Hammerfist vanguard: ~500 morti + ~400 dispersi in rotta, non si ricongiungono — piano ARC-08 D11, scenario di vittoria default)** | +40 (schiavi armati) | **8.610** |
 | 20-24 | Marcia post-Hammerfist, morale −2 | −120 | — | 8.490 |
 | 25 | Blackfens sweep (Razorfiend kills own) | −60 | — | 8.430 |
 | 27-32 | Marcia Channath centrale, attrition | −130 | +200 (Compagnia del Teschio Nero si unisce finalmente) | 8.500 |
@@ -136,7 +136,7 @@ logistico, +rischio igiene/cibo).
 
 | Day / Trigger | Unità (CR) | Dove | Effetto narrativo |
 |---|---|---|---|
-| **Day 19** (Hammerfist end) | Fauci di Palude (drago CR 15) **morto** | Hammerfist | Rimosso dall'orda; −1 drago |
+| **Day 19** (Hammerfist end) | Fauci di Palude (drago CR 15) — **ramo condizionale, non ancora deciso** (D10): default = fugge gravemente ferito, può tornare; alternativa = ucciso dai PG | Hammerfist | Default: resta nel pool draghi ma assente da Rethmar salvo ritorno narrativo. Alternativa: rimosso dall'orda, −1 drago |
 | **Day 20-22** | Wyrmlord Karruk (CR 10) si palesa pubblicamente | Channath settentrionale | Voci arrivano a Rethmar: "un nuovo comandante guida la Mano Rossa" |
 | **Day 22-25** | Saarvith + Regiarix (CR 11 + dragon 10) attivi | Rhest / Blackfens | Window PG per P2 Rhest |
 | **Day 24-26** | Zalkatar + Ozyrrandion (CR 13 + dragon 14) attivi | Torre Invisibile | Window PG per P2A Torre |

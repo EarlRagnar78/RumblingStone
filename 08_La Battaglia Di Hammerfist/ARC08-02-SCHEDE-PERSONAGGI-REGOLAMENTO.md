@@ -1,9 +1,16 @@
-Assolutamente. Ecco il documento unificato, "LA BATTAGLIA DI HAMMERFIST - APPENDICE DI GIOCO", che raccoglie e ordina tutte le sezioni che abbiamo generato. È stato formattato con interruzioni di pagina per renderlo pronto per la stampa e l'uso diretto al tavolo da gioco.
-
----
-
 # **LA BATTAGLIA DI HAMMERFIST - APPENDICE DI GIOCO**
 ## *Schede dei Personaggi, Unità e Regolamento di Battaglia*
+
+> **Scopo**: appendice di gioco pronta da tavolo — schede dei PNG
+> nemici, unità di massa e regolamento di battaglia dell'Arco 08.
+> **Stato**: canonico (materiale di modulo; canone di trama in
+> `campaign/state.md`, non ancora giocato — vedi piano ARC-08 A0).
+> **Ultima revisione**: 2026-07-02.
+> **⚠️ Disambiguazione nomi (A10, D2)**: **Thorin** Runaforte = pregen
+> chierico (agisce SOLO nel flashback D6, poi come PNG); **Thorik** =
+> PG guerriero (compare SOLO dal finale, D6/E6); **Thorek** = Re di
+> Hammerfist (comandante difensore per tutta la battaglia). Tre
+> persone diverse — mai fonderle.
 
 ### **INDICE DELLE APPENDICI**
 
@@ -74,7 +81,7 @@ Assolutamente. Ecco il documento unificato, "LA BATTAGLIA DI HAMMERFIST - APPEND
 
 **Attacchi Speciali:**
 *   **Soffio (Sop):** Linea di 24m di acido, 1/1d4 round. Danno 14d4 acido, TS Riflessi CD 29 dimezza.
-*   **Soffio a Cono (Str):** 1/giorno, può spendere un'azione di round completo per preparare un soffio a cono di 18m.
+*   **Soffio a Cono (Str):** 1/giorno, può spendere un'azione di round completo per preparare un soffio a cono di 18m. ⚠️ *Errata B5 — HOUSE-RULE*: i draghi neri SRD hanno **solo il soffio in linea**; il cono non è 3.5 standard. Mantenuto come house-rule per la scena della picchiata (Sessione 2); se il DM preferisce l'aderenza SRD, rimuovere e usare solo il soffio in linea.
 *   **Presenza Terrificante (Str):** Raggio 90m, TS Volontà CD 25 o spaventato/scosso.
 *   **Corrompere Acqua (Mag):** A volontà.
 *   **Incantesimi:** Come Stregone di 7° liv. (CL 7°).
@@ -86,6 +93,18 @@ Assolutamente. Ecco il documento unificato, "LA BATTAGLIA DI HAMMERFIST - APPEND
 **Talenti:** Allerta, Attacco in Volo, Critico Migliorato (Morso), Iniziativa Migliorata, Multiattacco, Volontà di Ferro.
 
 **Tattiche:** Inizia con *Armatura Magica* e *Scudo*. Usa il Soffio e incantesimi di controllo (*Nube Maleodorante*) dall'alto. Atterra solo se gravemente ferito (<100 PF) o per finire un bersaglio importante. Fugge sotto i 50 PF.
+
+> **Esito della battaglia — ramo condizionale (D10, non un fatto compiuto)**:
+> **default** = sotto i 50 PF fugge gravemente ferito verso le montagne
+> meridionali (come da Tattiche sopra); resta rimosso dall'assedio ma
+> può ricomparire più avanti (hook nemesi, non garantito — vedi piano
+> ARC-08 C2/EVENT-DECK, non ancora scritto). **Alternativa** = se i PG
+> lo abbattono (0 PF) prima che fugga, è **ucciso**: −1 drago nel pool
+> di Rethmar (`campaign/state.md` §2.3 Conditional Additives). Nessuno
+> dei due rami è ancora deciso — si risolve solo al tavolo.
+> I numeri di partenza di questo statblock potrebbero essere modificati
+> dalla tabella di carry-over dell'eredità di Skullcrusher (ARC-07 B4,
+> non ancora consegnata — piano ARC-08 A12): non anticipare valori qui.
 
 ---
 <div style="page-break-before:always"></div>
@@ -107,9 +126,13 @@ Assolutamente. Ecco il documento unificato, "LA BATTAGLIA DI HAMMERFIST - APPEND
 **Caratteristiche:** For 18, Des 13, Cos 16, Int 12, Sag 10, Car 14
 
 **Attacchi Speciali:**
-*   **Punire il Bene (Sop):** 2/giorno. Aggiunge +2 (Car) al tiro per colpire e +10 (livello) ai danni contro un bersaglio buono.
-*   **Aura di Disperazione (Sop):** Nemici entro 3m subiscono una penalità di -2 a tutti i tiri salvezza.
+*   **Punire il Bene (Sop):** **1/giorno** (2/giorno solo dal 5° livello di Guardia Nera). Aggiunge +2 (Car) al tiro per colpire e **+2 (livello di Guardia Nera)** ai danni contro un bersaglio buono. *(Errata B5: era "2/giorno ... +10 danni" — in 3.5 il bonus ai danni è pari al livello di Guardia Nera, quindi +2 a GN 2°.)*
+*   **Attacco Furtivo +1d6:** dal 2° livello di Guardia Nera (colti alla sprovvista o fiancheggiati).
 *   **Comando Tattico (Str):** Fornisce +2 morale agli attacchi degli alleati hobgoblin entro 9m.
+
+> *Errata B5 — Aura di Disperazione RIMOSSA*: si ottiene al **3°**
+> livello di Guardia Nera, non al 2°. Se il DM la vuole comunque, è
+> una **house-rule** esplicita, non 3.5 SRD.
 
 **Equipaggiamento:** *Armatura Completa +1*, *Scudo Leggero in Acciaio +1*, *Lancia da Cavaliere +1*, *Spada Bastarda +1*, *Anello di Protezione +1*.
 
@@ -311,6 +334,16 @@ Assolutamente. Ecco il documento unificato, "LA BATTAGLIA DI HAMMERFIST - APPEND
 
 **Tattiche:** Il Capitano Lunapiena è un leader e un cacciatore di mostri. Userà il Corno del Valhalla per creare un diversivo a terra. In aria, si concentra esclusivamente su Fauci di Palude, usando le sue Frecce della Morte dei Draghi per tentare di porre fine rapidamente allo scontro.
 
+> **Chi sono i suoi Ranger Elfici — D13 (piano ARC-08 A11)**: la
+> compagnia di Lunapiena è **indipendente**, dell'Elsir Vale (né Tiri
+> Kitor né Sacred Forest); **resta di presidio a Hammerfist** dopo la
+> battaglia e **NON si somma** ai difensori di Rethmar in ARC-09
+> ARMATE-SYNC. È un comando elfico **distinto** dalla Capitana Lythiel
+> Alar-Wen (Sacred Forest), che compare solo nella sessione finale e
+> alla Cerimonia delle 100 Asce (E7) — Lythiel resta l'unico canale col
+> Sacred Forest. Le due presenze non si sono mai incrociate in scena:
+> nessun doppio conteggio, nessuna fusione dei due comandi.
+
 ---
 <div style="page-break-before:always"></div>
 
@@ -481,6 +514,13 @@ Assolutamente. Ecco il documento unificato, "LA BATTAGLIA DI HAMMERFIST - APPEND
 
 ## **4. GUIDA RAPIDA AL COMBATTIMENTO DI MASSA**
 *Un sistema semplice per gestire grandi battaglie senza rallentare il gioco.*
+
+> **📌 Questa è la quick-reference da tavolo del sistema canonico
+> AU/DU/PFU.** La **fonte normativa completa** (filosofia, morale,
+> danni strutturali, esempi, raccordo con ARC-09) è
+> `mass_combat_guide_Dm.md` (piano ARC-08 C1). In caso di dubbio o
+> conflitto, vince quel file. La risoluzione qui sotto (1d20 + AU vs
+> DU) è quella **canonica** ereditata da ARC-09.
 
 ### **Concetti Base**
 1.  **Unità:** Un'unità è un gruppo di 10 creature simili. Ha le proprie statistiche semplificate.

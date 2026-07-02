@@ -1,7 +1,7 @@
 # hobgoblin-captain-cr8 [ACCEPTED — DM-canon 2026-05-05]
 
 **Faction**: red-hand | **Role**: elite-officer | **Environment**: any | **CR**: 8
-**Source**: AP RHoD hobgoblin + Fighter 6 → 08_La Battaglia Di Hammerfist/00_Schede_dei_Personaggi_Unità_e_Regolamento_di_Battaglia.md
+**Source**: AP RHoD hobgoblin + Fighter 6 → 08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md
 **Status**: inferred — base template only; DM should finalize exact stats at the table.
 
 ## Summary

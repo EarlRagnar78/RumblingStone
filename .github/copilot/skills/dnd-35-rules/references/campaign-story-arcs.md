@@ -43,7 +43,7 @@ For full narrative details, see `campaign/lore/campaign-history.md`.
 | Il Collezionista | Rakshasa | ~12 | 🏃 **ESCAPED** | Minotaur Lair → Drow alliance | Pre-01 → 09 |
 | Undead Beholder | Undead | ~13 | ☠️ Defeated | 03_la Cittadella | 03 |
 | Drow Sorcerer + Retriever | Drow slaver | ~11 | ☠️ Defeated | 03_la Cittadella | 03 |
-| Fauci di Palude | Black Dragon (Adult Advanced) | 15 | 🏃 **ESCAPED** (gravely wounded) | Fled Battle of Hammerfist | 08 |
+| Fauci di Palude | Black Dragon (Adult Advanced) | 15 | ☠️/🏃 **Conditional** (D10: default flees <50hp gravely wounded, may return; PG-kill branch = dies) | Battle of Hammerfist | 08 |
 | Generale Grimjaw | Orog Fighter 10/Warlord 3 | 14 | ☠️/🏃 **Conditional** | Battle of Hammerfist | 08 |
 | Gorthak il Trifronte | 3-Headed Ettin | 12 | ☠️/🏃 **Conditional** | Battle of Hammerfist | 08 |
 | Sonjak | Drow Cleric Matrona | ~14 | 🔴 **ACTIVE** | Underdark/Surface ops | Pre-02 → 09 |

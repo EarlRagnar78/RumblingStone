@@ -1,11 +1,15 @@
-Certamente. Ho creato un "Atlante Visivo" completo per la campagna "La Battaglia di Hammerfist". Questo documento unisce tutte le mappe, sia quelle originali che quelle che abbiamo ridisegnato e aggiunto, in ordine cronologico.
-
-Ogni mappa è accompagnata dalla sua descrizione ufficiale, un prompt dettagliato per generare un'immagine evocativa da mostrare ai giocatori, e una chiara indicazione di dimensioni, scala e dettagli tattici per il DM. Ho incluso viste laterali e prospettiche dove aiutano a chiarire le altezze e le profondità, come da te richiesto, per offrire la massima chiarezza possibile.
-
----
+> ⚠️ **DEPRECATED (2026-07)** — piano ARC-08 A8: sottoinsieme superato
+> dell'atlante visivo. **Master**:
+> `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` (matrice di contenuto in
+> testa a quel file). Contenuto mantenuto per storico (D12), non
+> cancellato.
 
 # **ATLANTE VISIVO DELLA BATTAGLIA DI HAMMERFIST**
 *Una Guida Completa alle Mappe Tattiche e Narrative della Campagna*
+
+> **Stato**: DEPRECATO — vedi banner sopra. Canone di trama in
+> `campaign/state.md`, non ancora giocato (piano ARC-08 A0).
+> **Ultima revisione**: 2026-07-02.
 
 ---
 ## **SESSIONE 1: L'OMBRA SULLA MONTAGNA**

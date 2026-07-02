@@ -126,7 +126,7 @@ di tutte le fasi).
 
 | Day | Epic Event |
 |---|---|
-| 19 | Hammerfist end — Fauci morto |
+| 19 | Hammerfist end — Fauci di Palude: ramo condizionale (D10), non ancora deciso — default fugge ferito, alternativa ucciso |
 | 20-22 | Karruk CR 10 pubblico |
 | 22-26 | Saarvith/Zalkatar finestre PG (Rhest, Torre) |
 | 26-30 | **Dauth fixed**: Zarim CR 12 Day 2, Xal'thor CR 14 Day 3 |
@@ -222,7 +222,7 @@ ripetibile: nessun agente/PG può "riusarlo" (violazione di coerenza da flaggare
 ✅ **Recap player spoiler-safe** → `scripts/session_recap.py` (+ opzionale PDF A4)
 ✅ **Reset nuovo gruppo** → `scripts/new-campaign-group.sh`
 ✅ **Narrative files Arc-09** → 70+ file in `09_Continuazione.../`
-✅ **Hammerfist guide (rif.)** → `08_.../00_Final_hammerfist_battle-Guida_Completa_del_DM.md`
+✅ **Hammerfist guide (rif.)** → `08_.../ARC08-01-GUIDA-DM.md`
 ✅ **Skills per domande** → `skills/` (4 skills)
 
 **Gaps noti** (documentati):

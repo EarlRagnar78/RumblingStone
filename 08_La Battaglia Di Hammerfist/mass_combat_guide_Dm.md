@@ -1,6 +1,51 @@
 # GUIDA GESTIONE COMBATTIMENTI DI MASSA
 ## *Strumenti Pratici per DM - Battaglie Epiche Senza Rallentamenti*
 
+> **📌 FONTE UNICA DEL SISTEMA DI MASSA (piano ARC-08 C1, 2026-07-02).**
+> Questo file è la **fonte normativa** del combattimento di massa della
+> campagna. Le altre copie sono **puntatori** qui:
+> `ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` §4 (quick-reference da
+> tavolo), la Guida DM `ARC08-01` §appendici, il registro
+> `ARC08-03-REGISTRO-PERDITE.md`. ARC-09 (`STRUTTURA` §9, "il Fronte")
+> è il **discendente** di questo sistema — vedi §RACCORDO in fondo.
+> **Stato**: canonico. **Ultima revisione**: 2026-07-02.
+
+---
+
+## ⚖️ SISTEMA DI RISOLUZIONE — leggi PRIMA (riconciliazione C1)
+
+> Storicamente questo file e `ARC08-02` §4 usavano **due dadi diversi**
+> per la stessa battaglia. C1 li riconcilia: **una risoluzione
+> canonica**, una variante rapida opzionale.
+
+**CANONICO — AU/DU/PFU (1d20)**: è la risoluzione **canonica** della
+campagna, quella che **ARC-09 ha ereditato** (STRUTTURA §9) e che la
+verifica 3.5 ha validato (`ERRATA-ARC08-35-Verification.md` §4).
+- **Unità** = 10 creature. **PFU** = 10 (ogni PFU perso = 1 creatura
+  eliminata; a 0 PFU l'unità è distrutta).
+- **AU** (Attacco Unità) / **DU** (Difesa Unità) = valori medi.
+- **Risoluzione**: **1d20 + AU vs DU**. Successo = 1 PFU; superare la DU
+  di +5 = 2 PFU; di +10 = 3 PFU.
+- **Morale**: scala **−5..+5** (applicata ad AU e DU).
+- Interazione PG: attacco ad area = 1d4 PFU (con TS); singolo colpo ≥25
+  danni = 1 PFU; comandare un'unità = azione + prova Car CD 15 → +2 AU.
+- Tabella completa in `ARC08-02` §4 (quick-reference stampabile).
+
+**VARIANTE RAPIDA OPZIONALE — 2d6** (le sezioni sottostanti di questo
+file): un motore 2d6 alternativo (PF 1-10 per unità dove 1 "Danno
+Unità" = 25 pf individuali; morale −4..+4). **NON è** la risoluzione
+che ARC-09 ha ereditato: usala solo se preferisci un motore 2d6 e
+**resta coerente** entro la singola battaglia. Mappa rapida tra i due:
+
+| Concetto | Canonico (AU/DU/PFU, d20) | Variante 2d6 |
+|---|---|---|
+| Salute unità | PFU 10 (1 PFU = 1 creatura) | PF 1-10 (1 Danno = 25 pf individuali) |
+| Tiro | 1d20 + AU vs DU | 2d6 + Bonus Attacco vs CA Unità |
+| Morale | −5..+5 | −4..+4 |
+
+> **Regola d'oro**: scegli **un** motore per la battaglia e non
+> mischiarli. Per l'aggancio ad ARC-09, usa il **canonico**.
+
 ---
 
 # **🎯 FILOSOFIA DEL SISTEMA**
@@ -578,5 +623,42 @@ MORALE AGGIORNATO:
 ---
 
 **"Con questi strumenti, anche la battaglia più epica diventa gestibile. I tuoi giocatori vivranno momenti eroici senza perdere tempo in calcoli noiosi!"**
+
+---
+
+## 🔗 RACCORDO CON ARC-09 (C1) — cosa STRUTTURA §9 ha ereditato e cambiato
+
+Il sistema di massa di Rethmar (`09_.../Arco-Post-Hammerfist-P3-
+BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md` §9, "Cornice leggera d'assedio",
+D13) è il **discendente diretto** di questo. Perché i due non divergano
+in silenzio:
+
+**Cosa ARC-09 ha EREDITATO da qui**:
+- L'astrazione a unità (10 creature) e il tracciamento perdite
+  (PFU/registro stampabile → `ARC08-03-REGISTRO-PERDITE.md`).
+- La scala di **Morale** come modificatore dinamico agli esiti.
+- Il principio che **i PG restano protagonisti** e influenzano la massa
+  (spotlight, comando, magia di battaglia).
+- I **danni strutturali** alle fortificazioni.
+
+**Cosa ARC-09 ha CAMBIATO/aggiunto**:
+- **VP nascosti** ("il Fronte"): a Rethmar il tracker di battaglia è
+  **lato DM**, i giocatori **non lo vedono** (D13) — qui invece il DM
+  gioca le unità apertamente. A Rethmar si sente solo la conseguenza
+  narrata.
+- **Eventi scelti dai PG via carte** (EVENT-DECK): la battaglia di
+  Rethmar è vissuta tramite carte-crisi che i PG scelgono, non come
+  wargame di unità. Qui le unità sono in primo piano; là sono sfondo.
+- **Ruoli di comando formalizzati** (Comandante / Fulcro Arcano /
+  Salvatore) e **check di Morale per ondata** (1d20 + Fronte vs CD) →
+  una sintesi del Morale + comando di questo file, spostata a un layer
+  per-ondata anziché per-unità.
+
+**In una frase**: Hammerfist gioca la massa **in primo piano** (i PG
+guidano una battaglia di unità); Rethmar la mette **sullo sfondo** (i PG
+vivono crisi scelte, il motore di massa gira nascosto). Stesso DNA,
+diverso zoom.
+
+---
 
 *- Fine Guida Gestione Combattimenti di Massa -*

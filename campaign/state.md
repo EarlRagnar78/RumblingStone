@@ -1094,4 +1094,22 @@ entries — they become campaign history.
             d'ingresso ARC-08 marcata [INFERRED] (dipende da quanto
             bancato in 01-07). INDICE aggiornato (B4/B5 nella tabella
             canonica; numerazione §7 corretta).
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto C, sessione 15 (C1): sistema di
+            combattimento di massa consolidato in fonte unica.
+            `mass_combat_guide_Dm.md` eletto **fonte normativa**. Sanato
+            un conflitto reale: il master usava un motore **2d6** (PF
+            1-10), mentre `ARC08-02` §4 usa **AU/DU/PFU (1d20)** — ed è
+            quest'ultimo che ARC-09 ha ereditato (STRUTTURA §9) e che B5
+            ha verificato 3.5-compatibile. Riconciliazione: dichiarata
+            **canonica la risoluzione AU/DU/PFU (1d20)**; il 2d6 resta
+            come variante rapida opzionale esplicitamente flaggata (con
+            tabella di mappatura tra i due). Aggiunto in fondo al master
+            il **raccordo con ARC-09** (cosa STRUTTURA §9 ha ereditato:
+            unità/PFU/morale/spotlight/danni strutturali; cosa ha
+            cambiato: VP nascosti "il Fronte", eventi scelti via
+            EVENT-DECK, ruoli di comando, check morale per ondata — la
+            massa da primo piano a Hammerfist diventa sfondo a Rethmar).
+            Le altre 3 copie ora puntano al master: `ARC08-02` §4
+            (quick-reference), Guida DM Appendice A, `ARC08-03`
+            (registro di tracciamento). INDICE aggiornato.
 ```

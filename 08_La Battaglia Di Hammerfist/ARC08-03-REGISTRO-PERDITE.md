@@ -4,7 +4,9 @@
 > **Scopo**: strumento operativo da tavolo per il DM — schede a
 > griglia per il combattimento di massa (Attaccanti, Difensori,
 > Rinforzi/Eroi), con tracciamento perdite (PFU) e stato di ogni
-> unità.
+> unità. **Regole (C1)**: fonte normativa `mass_combat_guide_Dm.md`;
+> quick-reference `ARC08-02` §4. Questo file è il **foglio di
+> tracciamento** del sistema canonico AU/DU/PFU.
 > **Stato**: canonico (materiale di modulo; canone di trama in
 > `campaign/state.md`, non ancora giocato — vedi piano ARC-08 A0).
 > **Ultima revisione**: 2026-07-02.

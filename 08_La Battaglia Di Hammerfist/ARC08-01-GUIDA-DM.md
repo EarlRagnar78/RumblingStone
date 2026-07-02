@@ -3027,6 +3027,12 @@ ATTACCANTE
 
 ### **APPENDICE A: GUIDA RAPIDA AL COMBATTIMENTO DI MASSA**
 
+> **📌 Puntatore (C1)**: la **fonte normativa** del sistema di massa è
+> `mass_combat_guide_Dm.md`; la quick-reference stampabile è
+> `ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` §4. Questa appendice è un
+> riassunto: in caso di conflitto vince la fonte normativa. Risoluzione
+> canonica = **1d20 + AU vs DU** (quella ereditata da ARC-09).
+
 Questo sistema semplifica il combattimento tra grandi gruppi per mantenere il gioco fluido.
 
 **1. Unità:** Un'unità rappresenta 10 creature. Ha PF Unità (di solito 10), una CA media e un attacco medio.

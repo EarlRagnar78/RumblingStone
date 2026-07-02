@@ -515,6 +515,13 @@
 ## **4. GUIDA RAPIDA AL COMBATTIMENTO DI MASSA**
 *Un sistema semplice per gestire grandi battaglie senza rallentare il gioco.*
 
+> **📌 Questa è la quick-reference da tavolo del sistema canonico
+> AU/DU/PFU.** La **fonte normativa completa** (filosofia, morale,
+> danni strutturali, esempi, raccordo con ARC-09) è
+> `mass_combat_guide_Dm.md` (piano ARC-08 C1). In caso di dubbio o
+> conflitto, vince quel file. La risoluzione qui sotto (1d20 + AU vs
+> DU) è quella **canonica** ereditata da ARC-09.
+
 ### **Concetti Base**
 1.  **Unità:** Un'unità è un gruppo di 10 creature simili. Ha le proprie statistiche semplificate.
 2.  **PF Unità (PFU):** Ogni unità ha 10 Punti Ferita Unità. Ogni PFU perso rappresenta una creatura dell'unità eliminata. Quando un'unità arriva a 0 PFU, è distrutta.

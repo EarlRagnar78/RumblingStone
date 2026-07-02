@@ -88,7 +88,7 @@ master** rilevanti alla sessione.
 | `ERRATA-ARC08-35-Verification.md` | Verifica meccanica 3.5 (B5) | Canonico |
 | `Cerimonia-delle-100-Asce.md` | Chiusura arco + hook ARC-09 (D3) | Canonico (benchmark, NON riscrivere) |
 | `hammerfist_encounters-...-final.md` | Guida agli scontri | Canonico |
-| `mass_combat_guide_Dm.md` | Sistema di combattimento di massa | Canonico (fonte unica prevista in C1) |
+| `mass_combat_guide_Dm.md` | Sistema di combattimento di massa | Canonico (**fonte unica normativa**, C1; raccordo ARC-09) |
 | `combat_prompts_guide.md` | Sequenza di prompt per il combattimento di massa | Canonico (di supporto) |
 | `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` | **Master visivo** (17 mappe, matrice in testa) | Canonico (master, A8) |
 | `Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md` | Griglia di precisione 1A-2 | Canonico (master tattico, A8) |

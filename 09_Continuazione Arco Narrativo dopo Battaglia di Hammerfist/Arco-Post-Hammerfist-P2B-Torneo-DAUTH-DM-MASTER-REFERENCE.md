@@ -121,26 +121,30 @@ Il Torneo è la scena di Tordek, ma gli altri PG hanno agganci propri. Stato att
 
 - **Thorik — le 150 lance di Re Thorek**: `...DAUTH-SUBQUEST-Thorik.md` (scritta;
   consolidata da HOOKS-Tordek-DauthInvitation §4 e HOOKS-Thorik).
-- **Artemis — Beriah / culto della Maschera** `[INFERRED — sub-quest da
-  dettagliare in Lotto B]`: al mercato di Dauth Artemis può incontrare una
-  "donna cieca" (avatar di Lathander) e, in un ramo cupo, il patto della
-  Maschera. I **beat** e i **bonus** già canonici sono in
+- **Artemis — Beriah / culto della Maschera**: **scritta** (Lotto B, 2026-07-02) →
+  `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Artemis.md`. Al Mercato Basso di
+  Dauth Artemis incontra la cellula del Mascherato (patto della Maschera di Beriah)
+  e la "donna cieca" (avatar di Lathander). Consolida i beat/bonus già canonici di
   `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md` (sogno Lathander+Mask,
-  §3.4; bonus +2 TS Vol e +1d6/+2d6 alla Fase 3 della Torre). Il pieno svolgimento
-  scena-per-scena è ancora da scrivere: finché non esiste, usare i beat descritti
-  nell'hook di Artemis.
-- **Hella — il boschetto morente / Mother of Fungi** `[INFERRED — sub-quest da
-  dettagliare in Lotto B]`: in un boschetto fuori Dauth Hella può affrontare le
-  spore di una **Mother of Fungi**, imparando a riconoscerne il pattern (utile
-  contro i non-morti aberranti sulla strada del Ghostlord). Il materiale canonico
-  è in `Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md` (Mother of Fungi sotto
-  la Quercia) e `Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md`. Il pieno
-  svolgimento è ancora da scrivere.
+  §3.4; +2 TS Vol e +1d6/+2d6 alla Fase 3 della Torre): la sub-quest ne è la
+  **sorgente giocata**, non introduce bonus nuovi in conflitto.
+- **Hella — il boschetto morente / Mother of Fungi**: **scritta** (Lotto B,
+  2026-07-02) → `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md`. Fuori dalle
+  mura ovest Hella affronta una **Spora-Madre** piantata da una cellula drow di
+  Sonjak, imparando a riconoscerne il pattern (payoff canonico: Sacred Forest
+  Visione 2 + non-morti aberranti sulla strada del Ghostlord). Materiale sorgente:
+  `Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md` §2.5.2 e
+  `Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md` §5.2.
+- **Assedio Vanguard di Dauth (Giorno 3)**: **scritto** (Lotto B, 2026-07-02) →
+  `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DAY3-CITY-SIEGE.md`. È dove i PG **non
+  finalisti** (Thorik/Artemis/Hella) combattono mentre Tordek è in arena: menù di
+  carte-crisi (D13), prototipo giocabile dell'EVENT-DECK di Rethmar (C7). Assorbe e
+  promuove a modulo il vecchio riferimento orfano `DAY3-CITY-SIEGE`.
 
-> **Nota (regola §0.3 del piano)**: le due sub-quest marcate `[INFERRED]` non sono
-> ancora state progettate. NON inventarle al volo come canone: usare i beat già
-> esistenti negli hook citati e marcare come inferenza qualunque dettaglio nuovo,
-> in attesa di scriverle in un lotto generativo dedicato.
+> **Nota (regola §0.3 del piano)**: le sub-quest sono ora **progettate**. I dettagli
+> **nuovi** introdotti (PNG di servizio, toponimi, bonus minori) sono marcati
+> `[INFERRED]` nei rispettivi file, in attesa di conferma DM; i **beat e bonus
+> canonici** restano quelli degli hook sorgente, che vincono in caso di conflitto.
 
 ---
 

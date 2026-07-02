@@ -685,4 +685,25 @@ entries — they become campaign history.
             −2 Razorfiend) e §2.4 (D9: 100 ranger + 20 gufi); gli statblock
             restano nei file ENCOUNTER esistenti. Nessun potere d'artefatto
             "riusato" (rispettata §6, poteri attuali).
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto A, chiusura orfani sotto-quest:
+            no canon change di stato-mondo (contenuto di modulo). I 3
+            riferimenti orfani rimasti (prima solo ripuntati) sono ora
+            **scritti** come file autonomi a standard Palio, sciogliendo i
+            flag [INFERRED — da scrivere in Lotto B] dell'HUB §5:
+            - DAUTH-SUBQUEST-Artemis (Beriah / culto della Maschera al
+              Mercato di Dauth): sorgente giocata dei bonus già canonici
+              in HOOKS-Artemis §3.4 (donna cieca → +2d6 Fase 3 Torre;
+              maschera autorizzata da Mask → rottura senza eco). PNG di
+              servizio (Vashet) e bonus minori marcati [INFERRED].
+            - DAUTH-SUBQUEST-Hella (boschetto morente / Spora-Madre di
+              Sonjak fuori Dauth): payoff = pattern Mother of Fungi
+              (HOOKS-Hella §2.5.2, HOOKS-Ghostlord-Refugees §5.2); scelta
+              purifica/brucia; agganci a cisterne di Dauth e Rethmar Fase 0.
+            - DAUTH-DAY3-CITY-SIEGE (promuove a modulo il vecchio orfano
+              DAY3-CITY-SIEGE, prima assorbito in SUBQUEST-Thorik §4):
+              assedio Vanguard di Dauth in stile carte-crisi (D13),
+              prototipo giocabile dell'EVENT-DECK di Rethmar (C7); riusa
+              statblock da Armate-UNITA-NUOVE; Karruk/draghi restano
+              riservati a Rethmar. HUB §5, SUBQUEST-Thorik §4, INDICE
+              aggiornati; zero link rotti operativi residui per gli orfani.
 ```

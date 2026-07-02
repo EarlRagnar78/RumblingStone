@@ -522,8 +522,16 @@ checklist qui sotto.
   `Arco-*.md` citato → **zero link rotti operativi** (restano solo i
   riferimenti del piano stesso ai deliverable futuri B4/B7/C7 e alla
   nota storica del rename RETHMAN→RETHMAR).
+  **Aggiornamento (2026-07-02) — orfani sotto-quest scritti.** I 3
+  riferimenti orfani sono ora **file autonomi a standard Palio**, non più
+  solo ripuntati: `...DAUTH-SUBQUEST-Artemis.md` (Beriah / culto della
+  Maschera), `...DAUTH-SUBQUEST-Hella.md` (boschetto morente / Spora-Madre
+  di Sonjak), `...DAUTH-DAY3-CITY-SIEGE.md` (assedio Vanguard di Dauth,
+  carte-crisi D13 — prototipo dell'EVENT-DECK C7). HUB §5, SUBQUEST-Thorik
+  §4, INDICE e changelog di state.md allineati; nessun bonus in conflitto
+  con gli hook sorgente (le sub-quest ne sono la *sorgente giocata*).
 - [x] B1.1 · [x] B1.2 · [x] B1.3 · [x] B1.4 · [x] B1.5 · [x] B2 · [x] B3 ·
-  [x] B4 · [ ] B5 · [ ] B6 · [ ] B7 —
+  [x] B4 · [x] B5 · [x] B6 · [x] B7 — **LOTTO B COMPLETO (2026-07-02).**
   **B1 (Rhest) completo (2026-07-02)**: 5 file FASE portati da scheletro
   (~1–4 KB) a standard Palio (read-aloud, viaggio a esagoni, tabella
   incontri d12, regole subacquee SRD, arena a 3 quote, sinergia artefatti
@@ -547,6 +555,35 @@ checklist qui sotto.
   mappa in pelle Tempestas, bracket Torneo, volantino Palio a 8 contrade — nota:
   il piano diceva 7, pre-espansione —, 3 carte-visione di Saraah), ognuno con
   "quando darlo". Prossimo: B5 (errata 3.5 P2/P3 + boss upscale).
+  **B5 (Errata 3.5 P2/P3 + boss upscale) completo (2026-07-02)**: creato
+  `ERRATA-PARTE2-3-35-Verification.md` (gemello della P1). **Boss finale
+  upscalato in place**: Azarr Kul da Chierico 10/Guerriero 4 (~119 pf, CR 15)
+  a **Chierico 12/Guerriero 4 (~155 pf, CR 17)** con tabella buff pre-cast
+  (durate a CL 14) e 2 effetti a innesco; scena con l'Avatar resta CR 18 (CR
+  non additivi). Verifiche puntuali: attacchi naturali di Regiarix (morso +29,
+  secondari a −5, coda 1d8+12), taglia Piccola di Saarvith (CA 23/contatto 15,
+  Lotta +8), CA contatto/colto mancanti in P2A/P2B, RI non cumulativa (Zalkatar),
+  pointer PNG per Xal'thor/Sethrax. **Catch di coerenza**: rimosso "mounts
+  Tyrgarun" da `azarr-kul-final-cr15.md` (contraddiceva D11 v2/A7). Prossimo: B6.
+  **B6 (Tesoro/WBL) completo (2026-07-02)**: creato
+  `Arco-Post-Hammerfist-TESORO-WBL-AUDIT.md`. Corretto il gap ~8× dell'INDICE
+  §Loot (~50k → **~380.000 mo equivalenti** distribuiti, coerente WBL 13→16
+  ±20%). Tabella tesoro per quest/incontro (stile Paizo): pesatura su Rhest
+  hoard (~90k), Torre di Zalkatar (~70k), Torneo (~45k), Rethmar/bottino +
+  ricompense civiche (~45k), resto sulle side-quest. Dettaglio dei due
+  contenitori-chiave (hoard di Regiarix, laboratorio di Zalkatar) tutto
+  SRD/DMG; plot item marcati [INFERRED]. Chiarito che i 5 artefatti legacy
+  sono ricchezza d'ingresso (non colmano il delta) e che rendite/titoli di
+  dominio (C6) si contano a parte. INDICE §Loot riscritto. Prossimo: B7.
+  **B7 (Incontri di viaggio) completo (2026-07-02)**: creato
+  `Arco-Post-Hammerfist-INCONTRI-VIAGGIO-CANNATH-VALE.md`. 4 macro-zone
+  (Witchwood/Sacred Forest, Strada del Deserto/Shaar, Vale Centrale/Dauth,
+  Thornwaste) × 2 finestre (Day 20-30 / 31-42, la seconda più cattiva con
+  meno civili — March Clock D6). Tabelle d% con EL dichiarato (9-13) e
+  **≥1/3 voci non-combat** (profughi, Sal, disertori gnoll, pattuglie da
+  interrogare, emissari Ghostlord). Riusa MISSIONI-BREVI (MB-1…6) e gli
+  statblock di Armate-UNITA-NUOVE (tutti verificati esistenti); echi agli
+  archi esistenti (Sal, Lorana, Therysol, Collezionista, Zalkatar wildcard).
 - [ ] C1 · [ ] C2 · [ ] C3 · [ ] C4 · [ ] C5 · [ ] C6 · [ ] C7 (event deck)
 - [x] Q1 (→D9) · [x] Q2 (→D10) · [x] Q3 (→D11) · [x] Q4 (→D12) ·
   [x] Q5 (→D8) — **tutte le risposte DM acquisite 2026-07-02**

@@ -6,7 +6,7 @@
 
 ## Summary
 
-Alto Wyrmlord of Tiamat; boss Phase 3 Rethmar; mounts Tyrgarun. Full warpriest spell progression; +2 dmg channeled rage; divine shield 15/— vs non-good. Ritual Clock linked. Source: Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md §1.
+Alto Wyrmlord of Tiamat; boss Phase 3 Rethmar. **Does NOT mount Tyrgarun** (D11 v2: Tyrgarun is the separate sky-terror, grounded by the Mythal in Phase 4). Full warpriest spell progression; +2 dmg channeled rage; divine shield 15/— vs non-good. Ritual Clock linked. Source: Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md §1. **B5 (2026-07-02): the played boss is the upscaled Cleric 12/Fighter 4, ~155 hp, CR 17 — see ERRATA-PARTE2-3-35-Verification.md §1; CR 15 here is the base template.**
 
 ## Notes
 

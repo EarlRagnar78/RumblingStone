@@ -149,6 +149,9 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 |---|---|
 | `Quest 1 – Druida Hellas: Il Cerchio Sacro della Foresta.md` | ⚠️ storico/deprecato — Versione originale quest |
 | `ERRATA-PARTE1-Quest-Hellas-35-Verification.md` | Correzioni 3.5 SRD — stat blocks, action economy (bonus action→swift), Touch/FF AC, BAB/Grapple |
+| `ERRATA-PARTE2-3-35-Verification.md` | Verifica 3.5 di P2A/P2B/RHEST/P3 + **upscale del boss finale** (Azarr Kul → Chierico 12/Guerriero 4, CR 17); attacchi naturali Regiarix, taglia Saarvith, catch coerenza Tyrgarun |
+| `Arco-Post-Hammerfist-TESORO-WBL-AUDIT.md` | **Audit tesoro (WBL 3.5)** — distribuzione ~380k mo eq. per incontro (Rhest hoard, Torre, Torneo, Rethmar); corregge il gap ~8× dell'INDICE §Loot |
+| `Arco-Post-Hammerfist-INCONTRI-VIAGGIO-CANNATH-VALE.md` | **Tabelle d% incontri di viaggio** — 4 macro-zone × 2 finestre (Day 20-30 / 31-42), EL 9-13, ≥1/3 non-combat; riusa MISSIONI-BREVI e Armate-UNITA-NUOVE |
 
 ---
 
@@ -221,6 +224,9 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 | `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md` | **HUB del Torneo** — indice, calendario, esiti, checklist DM | ✅ |
 | `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-CONSEGUENZE-ECHI-LUNGO-PERIODO.md` | Esiti × scelte PG; echi a Rethmar e post-campagna | ✅ |
 | `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Thorik.md` | Sub-quest delle 150 lance di Re Thorek (D10) | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Artemis.md` | Sub-quest di Artemis — Beriah e il culto della Maschera (Mercato di Dauth) | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md` | Sub-quest di Hella — il boschetto morente / Spora-Madre (fuori Dauth) | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DAY3-CITY-SIEGE.md` | Assedio Vanguard di Dauth (Giorno 3) — carte-crisi D13 per i PG non finalisti | ✅ |
 | `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-to-Be_integrated.md` | ⚠️ storico/deprecato — bozza pre-canone (Tetsu/Rihan adottati altrove, resto superato da OTTO-PORTE-e-ORBE + PARTE1-3) | ⚠️ storico/deprecato |
 | `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-Giorno1-Preliminari.md` | Giorno 1 — Preliminari torneo | ✅ |
 | `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-Round1.md` | Dettaglio Round 1 | ✅ |
@@ -546,11 +552,20 @@ Tutte mappe tattiche nei file `*-MAPPE*.md` usano scala 1.5m/sq.
 - Roleplay/Objectives: ~50,000 XP
 - **TOTALE:** ~250,000 XP (sufficiente 13→16 livello)
 
-### Loot Totale
+### Loot Totale (rivisto B6 — WBL 3.5)
 
-- Oro: ~50,000gp
-- Magic Items: 15–20 items (vari rarity)
-- Artifacts: 5 legacy items (Aegis Fang, Corona, Ring, Bracieri, Collana)
+> **⚠️ Aggiornato B6 (2026-07-02):** la stima precedente (~50.000 mo) era **sotto il
+> WBL di ~8×**. Audit completo e distribuzione per incontro in
+> `Arco-Post-Hammerfist-TESORO-WBL-AUDIT.md`.
+
+- Oro / valore liquidabile: **~380.000 mo equivalenti** distribuiti sull'arco
+  (coin + gemme + arte + oggetti), coerente col WBL 13→16 (±20%). Pesatura:
+  Rhest hoard (~90k) · Torre di Zalkatar (~70k) · Torneo (~45k) · Rethmar/bottino
+  + ricompense civiche (~45k) · resto sulle side-quest.
+- Magic Items: **~20–28 items** (l'hoard di Rhest + la Torre ne portano ~8–10 da soli).
+- Rendite/titoli di dominio (C6): contati **a parte** dal WBL liquido (utili ARC-10).
+- Artifacts: 5 legacy items (Aegis Fang, Corona, Ring, Bracieri, Collana) — **già
+  posseduti al 13°**: ricchezza d'ingresso, non colmano il delta dell'arco.
 
 ---
 

@@ -1147,4 +1147,19 @@ entries — they become campaign history.
             file allo schema `hammerfist-sNN-*` **differita** (nessun
             .md li referenzia per nome → passata dedicata a basso
             rischio, dopo il pin a vista delle 14 generazioni).
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto C, sessione 18 (C4) — CHIUSURA
+            DEL LOTTO C e dell'intero piano ARC-08 (A0-C4 completati;
+            resta solo A12, bloccato su ARC-07 B4). Creato
+            `ARC08-15-HANDOUTS-GIOCATORE.md` (gemello dell'ARC-09
+            HANDOUTS): (1) i 4 pregen "Eroi di Hammerfist" resi
+            stampabili 1 pagina l'uno, giocabili senza aprire i file
+            00_/ARC08-01/02 (stat verificate B5); (2) la runa dei
+            Custodi Eterni (descrizione + effetto C2 §6.2 + prompt
+            immagine); (3) il canto della cantillazione ("ricordato…"
+            + Giuramento delle 90); (4) la mappa giocatore della
+            fortezza (versione lato giocatore della MAPPA 2A, privata
+            di tunnel segreto/imboscate/meccanismi — nessuna info lato
+            DM). Ogni handout con "quando darlo". INDICE aggiornato
+            (ARC08-14/15 nella tabella canonica; §6 riscritta a "Lotti
+            A/B/C completati", resta solo A12 + coda C3 non bloccante).
 ```

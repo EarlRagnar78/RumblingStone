@@ -85,6 +85,8 @@ master** rilevanti alla sessione.
 | `ARC08-11-PONTE-ARRIVO.md` | Cucitura D16, passaggio pregen→PG (B2) | Canonico |
 | `ARC08-12-CRONOLOGIA-MARCH-CLOCK.md` | Cronologia Day X→19 (B6) | Canonico |
 | `ARC08-13-TESORO-WBL-AUDIT.md` | Audit tesoro/WBL 13°, handoff ARC-09 (B4) | Canonico |
+| `ARC08-14-ATLANTE-IMMAGINI.md` | Classificazione immagini→scene→prompt (C3) | Canonico |
+| `ARC08-15-HANDOUTS-GIOCATORE.md` | Handout stampabili: pregen, runa, canto, mappa giocatore (C4) | Canonico |
 | `ERRATA-ARC08-35-Verification.md` | Verifica meccanica 3.5 (B5) | Canonico |
 | `Cerimonia-delle-100-Asce.md` | Chiusura arco + hook ARC-09 (D3) | Canonico (benchmark, NON riscrivere) |
 | `hammerfist_encounters-...-final.md` | Guida agli scontri | Canonico |
@@ -141,13 +143,18 @@ stat puntate alle appendici, campo "esiti possibili"):
 Cast già schedato altrove: `PNG/Lythiel/Lythiel.md` (Sacred Forest, E7),
 `PNG/Tempestas/Tempestas.md` (bardo tempeste).
 
-## 6. Deliverable ancora da produrre (Lotto C)
+## 6. Deliverable — stato
 
-- **C1** — consolidamento del sistema di massa (fonte unica).
-- **C2** — conseguenze a lungo periodo (sezione in `ARC08-10`).
-- **C3** — atlante immagini (tabella + rinomina).
-- **C4** — handout giocatore (pregen stampabili, runa, mappa giocatore).
-- **A12** — eredità Skullcrusher su Fauci (attende ARC-07 B4).
+Lotti **A, B, C completati** (2026-07-02). Resta aperto solo:
+
+- **A12** — eredità Skullcrusher su Fauci: **bloccato**, attende la
+  tabella di carry-over ARC-07 **B4** (non ancora consegnata). Lo
+  statblock di Fauci (`ARC08-02` §1) e la matrice esiti (`ARC08-10` §4)
+  hanno già i **ganci** pronti; quando ARC-07 B4 arriva, si integrano i
+  valori.
+- **Coda C3** (non bloccante): pin a vista delle 14 generazioni immagine
+  "October 2025" + rinomina file allo schema `hammerfist-sNN-*`
+  (`ARC08-14` §6).
 
 ---
 

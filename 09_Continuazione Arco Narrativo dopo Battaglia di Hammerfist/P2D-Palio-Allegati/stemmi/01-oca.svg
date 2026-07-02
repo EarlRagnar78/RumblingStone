@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240" role="img" aria-label="Stemma Contrada dell'Oca">
+  <defs><clipPath id="g1"><path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z"/></clipPath></defs>
+  <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="#1f7a44" stroke="#7a1f1f" stroke-width="6"/>
+  <g clip-path="url(#g1)">
+    <path d="M100 20 H180 V150 Q180 210 100 232 Z" fill="#1a6b3b"/>
+    <!-- oca araldica in profilo, argento; collo a S pulito -->
+    <g stroke="#123" stroke-width="2.5" stroke-linejoin="round" fill="#f5f5ef">
+      <path d="M96 168 q-26 -6 -30 -34 q-3 -22 16 -30 q-14 -10 -6 -26 q6 -12 18 -8 q-4 -12 8 -16 q10 -2 12 10 q16 2 18 20 q2 16 -12 22 q16 8 12 30 q-4 24 -32 30 q6 12 -4 16 q-8 2 -10 -8z"/>
+    </g>
+    <circle cx="112" cy="66" r="3.5" fill="#123"/>
+    <path d="M124 68 l14 -4 l-12 10z" fill="#e0a500" stroke="#7a5a00" stroke-width="1"/>
+    <!-- corona d'oro sul capo (Waukeen) -->
+    <path d="M100 50 h24 l-4 -10 -6 5 -6 -8 -6 8 -6 -5z" fill="#e9c24a" stroke="#8a6b00" stroke-width="1.5"/>
+    <!-- moneta di Waukeen -->
+    <circle cx="60" cy="150" r="11" fill="#e9c24a" stroke="#8a6b00" stroke-width="2"/><text x="60" y="155" font-family="Georgia,serif" font-size="13" text-anchor="middle" fill="#6b5200">W</text>
+  </g>
+  <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="none" stroke="#7a1f1f" stroke-width="6"/>
+  <rect x="30" y="182" width="140" height="26" rx="4" fill="#0d1b2a" opacity="0.82"/>
+  <text x="100" y="200" font-family="Georgia,serif" font-size="12" fill="#e9c24a" text-anchor="middle" font-style="italic">Al suono dell'oro, all'armi</text>
+  <text x="100" y="14" font-family="Georgia,serif" font-size="12" fill="#123" text-anchor="middle" font-weight="bold">L'OCA · Waukeen</text>
+</svg>

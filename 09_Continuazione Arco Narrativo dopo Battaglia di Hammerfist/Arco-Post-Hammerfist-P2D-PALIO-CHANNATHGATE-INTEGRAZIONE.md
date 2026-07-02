@@ -17,7 +17,7 @@ Tre vincoli di coerenza, risolti a monte:
 
 1. **TIMING — il Palio è PRIMA dell'assedio.** Se i PG fossero a Channathgate *durante*
    la battaglia, non potrebbero difendere Rethmar (Fasi 0–4). Quindi il Palio è
-   **P2D**, una quest della finestra PG **Giorni 28–36**. I PG lo vincono, mettono al
+   **P2D**, una quest della finestra PG **Giorni 27–36**. I PG lo vincono, mettono al
    sicuro rinforzi + **Matrice del Mythal**, e **tornano a Rethmar in tempo per il Day
    42**. La struttura canonica dell'assedio **non cambia**.
 
@@ -52,15 +52,18 @@ che sblocca quel contributo — e molto altro.
   Ricchissima, fortificata, **restia a sguarnirsi** per paura di restare indifesa.
 - **Cultura "Bard's Tale"**: metropoli di **gilde bardiche**, teatri all'aperto, piazze di
   pietra. La politica si fa **a suon di musica e propaganda** (vedi §7).
-- **Contrade**: 7 rioni storici (le contrade dell'AVVENTURA §1), nati come compagnie
+- **Contrade**: 8 rioni storici (le contrade dell'AVVENTURA §1), nati come compagnie
   militari di quartiere — un dettaglio che ne giustifica la mobilitazione bellica.
 - **Aggancio corruzione esistente**: il **mercante anonimo di Channathgate** (rete de
   *Il Collezionista*, avvistato da Lorana con statue pietrificate 3 settimane prima di
   Hammerfist) è **della Contrada della Civetta** (Valerius/Shar). Filo diretto col
   contrabbando di statue e col Mythal (le statue-golem!).
 
-**Perché il Palio decide la guerra**: i delegati del **Consiglio di Rethmar** sono fuggiti
-o hanno inviato **inviati** a Channathgate a mendicare aiuto. Il Consiglio di Channathgate,
+**Perché il Palio decide la guerra**: i membri del **Consiglio di Rethmar restano a
+Rethmar** (le sedute canoniche Day 30/33/35 si tengono lì) — a Channathgate operano i loro
+**emissari e agenti** (Pesa-Oro per Kaal, Sethis Vhal per Valerius, Mira per Lorana, ecc.:
+vedi STATBLOCCHI §4.2), venuti a mendicare aiuto e a comprare il Palio ciascuno per la
+propria fazione. Il Consiglio di Channathgate,
 **paralizzato dalla paura**, emette il **Decreto**: *chi vince il Palio ottiene il
 mandato supremo di difesa* — cioè il diritto di muovere l'esercito, le casse e le
 Meraviglie della città. Così si evita di "dissanguare le truppe con una faida" **e** si
@@ -68,7 +71,7 @@ scarica la decisione sul rito.
 
 ---
 
-## 2. Le 7 Contrade ↔ il Consiglio di Rethmar (riconciliazione)
+## 2. Le 8 Contrade ↔ il Consiglio di Rethmar (riconciliazione)
 
 Il Consiglio reale ha **7 voti** (Kaal, Halveth, Jarmaath, Sorvane, Pyriel, Thornwall,
 Lorana-non ufficiale) + due **broker esterni** (Varis, Valerius) che a Channathgate
@@ -83,6 +86,7 @@ diventano *patroni di contrada*. Mappatura definitiva:
 | **Il Drago** | **Maester Pyriel** (sapere/magia) | Mystra | Astensione | Requisire componenti magici → **barriera anti-drago** |
 | **La Civetta** | **Conte Valerius** (nobiltà decaduta) | Shar | *(esterno)* | Coprire i "prestiti patriottici" alla Mano Rossa, insabbiare i registri |
 | **L'Unicorno** | **Aldric Thornwall** (gilde/ceto medio) | Sune/Milil | Volatile | Status quo; logistica e fortificazioni; sopravvivere |
+| **L'Onda** *(NEW)* | **Gonfaloniere + Gilda dei Barcaioli** (contrada di casa) | Valkur/Selûne | *(host city)* | Onore del porto; **firma il Decreto** se vince; alleata segreta dell'Istrice |
 
 > **Halveth (LE, corrotto)** non ha contrada propria: **finanzia in segreto l'Oca**
 > (fazione resa) col medesimo denaro del Collezionista. Smascherarlo al Palio (§3)
@@ -101,27 +105,42 @@ diventano *patroni di contrada*. Mappatura definitiva:
 
 ### 3.1 Collocazione sul March Clock
 
-Il Palio occupa **Giorni 28–36** (dentro la finestra PG 20–41), **parallelo** a P2A
-Torre / P2B Dauth / P2C Salvatore. **Deadline dura: Day 40.** I rinforzi sbloccati
+Il Palio occupa la **finestra Giorni 27–36** (dentro la finestra PG 20–41), **parallelo**
+a P2A Torre / P2B Dauth / P2C Salvatore. **Deadline dura: Day 40.** I rinforzi sbloccati
 devono partire da Channathgate **entro Day 37–38** per coprire ~1,5 gg di marcia e
 schierarsi a Rethmar entro il **Day 42** (Fase 1). Se i PG vincono **dopo** il Day 38,
 i rinforzi **arrivano a Fase 2–3** (metà effetto) invece che a Fase 1.
 
+**⚠️ Calendario consigliato (per non perdere le Sedute del Consiglio).** Le sedute
+canoniche del Consiglio di Rethmar cadono **Day 30 / 33 / 35** (`Consiglio_Rethmar.md`),
+e Channathgate dista **1,5 giorni**. Il calendario che tiene insieme tutto:
+
 ```
- Day 28 ─ Day 29 ──────── Day 30 ─ Day 31 ── Day 32 ─────────► Day 42
- (Giorno 1:      (Giorno 2:            (Giorno 3:          (Assedio Rethmar
-  Tratta)         Cena + Drow)          Palio + esito)      Fasi 0-4)
-    │                │                     │                     ▲
- staffetta 1     staffetta 2           staffetta 3      rinforzi + Meraviglia
- dal fronte      (Tyrgarun brucia      (esito → decreto   arrivano se vinto
-                  i granai)             → rinforzi)        entro Day 38
+ Day 27 ── Day 28 ── Day 29 ──── Day 30-31 ── Day 31-32 ── Day 33 ────► Day 42
+ (Giorno 0:  (Giorno 1:  (Giorno 2:   (Giorni 3-4:   (viaggio di    (PG a Rethmar:  (Assedio
+  arrivo +    Tratta +    Partiti +    Corsa, Decreto, ritorno sulla  SEDUTA 2 del    Fasi 0-4)
+  emissari)   batterie)   Cena + Drow) Drappellone)    Dawn Way)      Consiglio!)
 ```
 
-> **Le staffette dal fronte**: ogni giorno del Palio arriva un messaggero trafelato da
-> Rethmar ("La prima cerchia è caduta!", "Il drago blu ha bruciato i granai!") — crea la
-> "festa sull'orlo del baratro" e tiene i PG sotto pressione **senza** rimuoverli dal
-> Palio. Sono **narrativi** (non anticipano il Day 42): rappresentano scaramucce di
-> avanguardia, non l'assalto principale.
+- Con questo schema i PG **mancano solo la Seduta 1 (Day 30)** — poco grave: possono
+  farsi rappresentare (Lorana/Thorik via lettera) o accettarne l'esito interlocutorio —
+  e **rientrano in tempo per la Seduta 2 (Day 33), quella decisiva** (voto difesa/resa),
+  **con in mano** l'esito del Palio: la leva politica perfetta.
+- Se i PG ritardano (Palio giocato Day 30-34), avvisali del costo: **Seduta 2 persa** =
+  vale la regola "nessun intervento" del Consiglio, salvo delegati.
+- **Split-party** lecito: metà gruppo al Palio, metà alle sedute (stile P2B Dauth).
+
+> **Le staffette dal fronte (coerenti col March Clock)**: ogni giorno del Palio arriva un
+> messaggero sfinito lungo la Dawn Way — pressione senza falsi allarmi. Ai Giorni 27–31
+> l'orda **non è ancora a Rethmar** (arriva al Day 42): le notizie giuste sono l'avanzata,
+> non l'assedio. Esempi calibrati:
+> - **Day 27-28**: *"Terrelton è caduta da giorni — i suoi profughi intasano la Dawn Way."*
+> - **Day 29-30**: *"I casali del Channath centrale bruciano; i razziatori worg colpiscono i convogli."*
+> - **Day 30-31**: *"L'orda converge sul Crocevia del Channath — sarà lì entro due giorni."* (canone: Day 33)
+> - **Colore**: *"Dicono che a Witchcross i druidi preparino una resistenza disperata."* (cade ~Day 35)
+> **Non usare** "le mura cadono / Rethmar brucia": contraddice il clock. E il drago **blu**
+> è **Ozyrrandion** (impegnato alla Torre Invisibile, P2A); **Tyrgarun è nero e in riserva**
+> fino alla Fase 3 — nessuno dei due bombarda granai durante il Palio.
 
 ### 3.2 Impatto sui Clock dei Villain
 
@@ -180,6 +199,25 @@ Sigillo scelto **determina forma, allineamento ed effetto** del Mythal.
 > Questo aggancia il Palio alla **Fase 4 già scritta** (`...FASE4-CIRCOLO-MYTHAL-STATUE-*`)
 > senza riscriverla: aggiunge solo il **modificatore Matrice**.
 
+### 4.3 Mappatura sui Victory Points dell'assedio
+
+L'esito del Palio entra nella **matrice VP canonica** delle Fasi 0–4 così:
+
+| Esito Palio | VP |
+|---|---|
+| Meraviglia attiva (qualsiasi contrada "difesa" vince entro Day 38) | **+1 VP** |
+| Vittoria dopo il Day 38 (rinforzi a metà effetto) | +0 VP (solo modificatori GS) |
+| Palio ignorato (Mythal a rischio, §3.3) | −1 VP *(in aggiunta al tiro di rottura)* |
+| **Vittoria dell'Oca** (branch resa) | **−2 VP** e la Fase 0-bis di guerriglia (§6.5) |
+
+### 4.4 Nota di allineamento canone (Day-42 shift)
+
+`Consiglio_Rethmar.md` chiama ancora la **Seduta 3 "Day 35 (Notte dei Drow)"** — è un
+residuo pre-shift: col March Clock aggiornato la **Notte dei Drow è al Day 40** e
+l'assalto al **Day 42**. Leggi la Seduta 3 come **"Day 35 — emergenza pre-assedio"**
+(razionamenti, evacuazioni, riserve) e sposta la risposta alla Notte dei Drow alla sera
+del **Day 40**. Il veto di Halveth e il bonus Lorana (+4 guardie) si applicano lì.
+
 ---
 
 ## 5. Le Meraviglie (Wonders) — **una per contrada, esclusiva**
@@ -199,10 +237,11 @@ l'unica che risveglia i Golem**; il Drago è l'unico che dà il Mythal anti-drag
 |---|---|---|
 | **La Torre** (Jarmaath) | **Risveglio dei Golem d'Assedio** *(canonico)* | Le statue → Golem di Pietra colossali (Fase 4). Il Palio le rende **attive dalla Fase 1** invece che solo Fase 4. **+cavalleria pesante di Channathgate** (vedi §6). |
 | **Il Drago** (Pyriel) | **Quasi-Mythal Perfetto** *(variante canonica)* | Cupola argentea: **blocca i bombardamenti** e **inchioda a terra Tyrgarun/draghi**. **−1 GS** alle ondate aeree di Fase 1; **−1/−2** al Ritual Clock in Fase 2. |
-| **L'Istrice** (Lorana + Ghostlord) | **Mythal della Selva Viva** *(variante)* | Radici/spine dalle mura; trincee semoventi inghiottono battaglioni. **+800 profughi** a tenaglia (Fase 1). Se **Ghostlord alleato**: canalizza anche lui → +600 non-morti "buoni". |
+| **L'Istrice** (Lorana) | **Mythal della Selva Viva** *(variante)* | Radici/spine dalle mura; trincee semoventi inghiottono battaglioni. **+800 profughi** a tenaglia (Fase 1). **Solo se il Ghostlord è REDENTO tramite PATTO** (filatteria, ramo alleato di `P3-Ghostlord` — mai per pietà, mai se soggiogato): il lich druidico canalizza → +600 non-morti "buoni". Altrimenti la Selva Viva è opera dei soli arcidruidi. |
 | **Il Bruco** (Varis) | **Piaga Chimica dei Canali** *(variante)* | Chiuse alchemiche gnomiche: fossati di fuoco liquido/gas acido; assassini decapitano la catena di comando nemica. **−GS avanguardia** Fase 1; **−1 comandante** (Karruk?) a inizio assedio. |
 | **L'Unicorno** (Thornwall/Sorvane) | **Arpa della Tempesta Bardica** *(variante)* | Struttura sonora sulla torre alta: **Ispirare Coraggio di massa** (+ ai TS vs paura a tutti i difensori) + fulmini sonici sugli scalatori. |
 | **La Civetta** (Valerius) | **Muri Illusori del Disorientamento** *(variante)* | Illusione di massa: mura in posizioni errate, catapulte a vuoto, cariche in vicoli-trappola. **Ambiguo**: potente ma Valerius resta un traditore (§6.4). |
+| **L'Onda** (Gonfaloniere) | **La Marea Montante** *(variante, NEW)* | Flotta fluviale (+~250 marinai-arcieri, rifornimenti garantiti) scende il Cannath a Rethmar; barcaioli **allagano le vie d'approccio** ai guadi. **−1 GS Fase 1** + **evacuazione civili** (riduce pressione Fase 3). Firma immediata del Decreto. |
 | **L'Oca** (Kaal) | **— (nessuna Meraviglia)** | La vittoria dell'Oca = **RESA** (§6.5): niente Meraviglia, branch disastro. |
 
 ---
@@ -223,7 +262,8 @@ Consiglio**. Riepilogo per esito:
 - Lorana ottiene **seggio permanente e voto decisivo** → Consiglio vota **DIFESA**.
 - **+800 profughi** milizia fanatica (barricate interne, manovra a tenaglia).
 - Traduci come **+150 fanteria civile** garantita + **+2 morale** (riscatto).
-- Se **Ghostlord alleato**: +600 non-morti "buoni" (leva più grande, vedi P3-Ghostlord).
+- **Solo col Ghostlord redento tramite patto** (filatteria, `P3-Ghostlord` ramo alleato):
+  +600 non-morti "buoni". Il lich onora il patto, non i profughi — senza patto, niente.
 
 ### 6.3 Vittoria DRAGO (maghi — esito anti-drago)
 - Consiglio: Pyriel esce dall'astensione → **DIFESA** (se affiancato da Torre/Istrice).
@@ -306,7 +346,7 @@ Da aggiungere quando il DM adotta il modulo (non applicata automaticamente):
 
 **§ Arc tracker (nuova riga quest, finestra PG):**
 ```
-| 09 P2D Palio di Channathgate | ⬜ | non iniziato | Day 28-36 | 13 | esito → voto Consiglio + Meraviglia + Matrice Mythal |
+| 09 P2D Palio di Channathgate | ⬜ | non iniziato | Day 27-36 | 13 | esito → voto Consiglio + Meraviglia + Matrice Mythal |
 ```
 
 **§2 Clock dei villain (nuovo clock evento):**
@@ -330,15 +370,16 @@ Da aggiungere quando il DM adotta il modulo (non applicata automaticamente):
 | Esito Palio | Voto Consiglio | Difensori (Δ vs baseline) | GS assedio | Meraviglia |
 |---|---|---|---|---|
 | **Torre** | Difesa compatta | +300 cav. élite, +intel | −1 Fase 0, −1 Fase 1, Golem da Fase 1 | Golem d'Assedio |
-| **Istrice** | Difesa (Lorana seggio) | +150 civili + morale (+600 se Ghostlord) | Selva Viva Fase 1 | Mythal Selva Viva |
+| **Istrice** | Difesa (Lorana seggio) | +150 civili + morale (+600 solo con patto Ghostlord) | Selva Viva Fase 1 | Mythal Selva Viva |
 | **Drago** | Difesa | pergamene/pozioni | −1 aeree Fase 1, −1/−2 Ritual Fase 2 | Quasi-Mythal Perfetto |
 | **Bruco** | grigio | intel + sconto 30% | −GS Fase 1 (logistica) | Piaga Chimica Canali |
 | **Unicorno** | Difesa di misura | +logistica/fortificazioni | +TS vs paura (Arpa) | Arpa Bardica |
+| **Onda** | Difesa (Decreto imm.) | +250 marinai + rifornimenti + evacuazione civili | −1 Fase 1 (guadi allagati) | Marea Montante |
 | **Civetta** | grigio/rischio | Muri Illusori ma traditore | ambiguo | Muri Illusori |
 | **Oca** | **RESA** | branch disastro (~5,8:1) | guerriglia urbana | nessuna |
 | **Ignorato** | RESA di misura (default) | nessuno sblocco | Mythal a rischio (35% rottura) | nessuna |
 
-> **Bottom line**: il Palio è una **quest ad alto impatto della finestra Day 28–36** che
+> **Bottom line**: il Palio è una **quest ad alto impatto della finestra Day 27–36** che
 > può spostare i difensori di **+150 a +900** e regalare una **Meraviglia** d'assedio,
 > il tutto **senza toccare** la struttura canonica delle Fasi 0–4. Coerente con
 > RumblingStone; ampliante, non stravolgente.

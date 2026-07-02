@@ -529,7 +529,13 @@ checklist qui sotto.
   incontri d12, regole subacquee SRD, arena a 3 quote, sinergia artefatti
   state.md §6, conseguenze allineate a state.md §2.3 −1 drago/−2 Razorfiend,
   eco Lanikar/+VP, intel −1 CR). Statblock delegati ai file ENCOUNTER
-  esistenti. CD (non DC) come da §0.7. Prossimo: B2 (Starsong).
+  esistenti. CD (non DC) come da §0.7.
+  **B2 (Starsong) completo (2026-07-02)**: skill challenge formale a 3 atti
+  (arrivo/funerale di Lanikar/consiglio, 3 successi su 3 fallimenti, CD
+  20–26), read-aloud del funerale, tabella "cosa impressiona i Tiri‑Kitor"
+  per classe PG, esiti a 3 rami con numeri D9 (piena 100+20 / parziale
+  ~40+6 / rifiuto 0) mappati sugli scenari ARMATE-SYNC §3, sinergia con
+  l'eco Lanikar di Rhest (B1.5). Prossimo: B3 (Ghostlord).
 - [ ] C1 · [ ] C2 · [ ] C3 · [ ] C4 · [ ] C5 · [ ] C6 · [ ] C7 (event deck)
 - [x] Q1 (→D9) · [x] Q2 (→D10) · [x] Q3 (→D11) · [x] Q4 (→D12) ·
   [x] Q5 (→D8) — **tutte le risposte DM acquisite 2026-07-02**

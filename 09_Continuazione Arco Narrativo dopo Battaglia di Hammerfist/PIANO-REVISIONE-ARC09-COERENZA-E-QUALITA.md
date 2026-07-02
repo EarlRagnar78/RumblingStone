@@ -531,7 +531,7 @@ checklist qui sotto.
   §4, INDICE e changelog di state.md allineati; nessun bonus in conflitto
   con gli hook sorgente (le sub-quest ne sono la *sorgente giocata*).
 - [x] B1.1 · [x] B1.2 · [x] B1.3 · [x] B1.4 · [x] B1.5 · [x] B2 · [x] B3 ·
-  [x] B4 · [x] B5 · [ ] B6 · [ ] B7 —
+  [x] B4 · [x] B5 · [x] B6 · [ ] B7 —
   **B1 (Rhest) completo (2026-07-02)**: 5 file FASE portati da scheletro
   (~1–4 KB) a standard Palio (read-aloud, viaggio a esagoni, tabella
   incontri d12, regole subacquee SRD, arena a 3 quote, sinergia artefatti
@@ -565,6 +565,16 @@ checklist qui sotto.
   Lotta +8), CA contatto/colto mancanti in P2A/P2B, RI non cumulativa (Zalkatar),
   pointer PNG per Xal'thor/Sethrax. **Catch di coerenza**: rimosso "mounts
   Tyrgarun" da `azarr-kul-final-cr15.md` (contraddiceva D11 v2/A7). Prossimo: B6.
+  **B6 (Tesoro/WBL) completo (2026-07-02)**: creato
+  `Arco-Post-Hammerfist-TESORO-WBL-AUDIT.md`. Corretto il gap ~8× dell'INDICE
+  §Loot (~50k → **~380.000 mo equivalenti** distribuiti, coerente WBL 13→16
+  ±20%). Tabella tesoro per quest/incontro (stile Paizo): pesatura su Rhest
+  hoard (~90k), Torre di Zalkatar (~70k), Torneo (~45k), Rethmar/bottino +
+  ricompense civiche (~45k), resto sulle side-quest. Dettaglio dei due
+  contenitori-chiave (hoard di Regiarix, laboratorio di Zalkatar) tutto
+  SRD/DMG; plot item marcati [INFERRED]. Chiarito che i 5 artefatti legacy
+  sono ricchezza d'ingresso (non colmano il delta) e che rendite/titoli di
+  dominio (C6) si contano a parte. INDICE §Loot riscritto. Prossimo: B7.
 - [ ] C1 · [ ] C2 · [ ] C3 · [ ] C4 · [ ] C5 · [ ] C6 · [ ] C7 (event deck)
 - [x] Q1 (→D9) · [x] Q2 (→D10) · [x] Q3 (→D11) · [x] Q4 (→D12) ·
   [x] Q5 (→D8) — **tutte le risposte DM acquisite 2026-07-02**

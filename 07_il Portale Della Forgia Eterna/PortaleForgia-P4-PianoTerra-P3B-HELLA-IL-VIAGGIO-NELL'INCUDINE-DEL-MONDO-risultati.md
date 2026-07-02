@@ -84,10 +84,10 @@ bonus di chiarezza spirituale post-mortem (+2 ai TS del viaggio).
 - La giocatrice ha scelto il **Percorso B — Via della Radice**:
   "Io li tengo ancorati" (protezione come rete, non come muro).
 - **TS Volontà CD 20: SUPERATO** → il voto è sancito.
-- Prova associata Conoscenze (religioni) CD 15: **esito non registrato**
-  `[needs DM confirmation — se superata, vale anche il "bonus
-  Knowledge" di v2 §5; se non tirata, il voto resta sancito senza
-  quel bonus]`.
+- **Prova Conoscenze (religioni) CD 15: SUPERATA** (conferma DM
+  2026-07-02) → Hella ha capito che Moradin approva entrambi i percorsi:
+  il voto è sancito **nella versione piena** — si applicano integralmente
+  i doni "Radici del Mondo" di v2 §9, senza riduzioni.
 
 **Effetti acquisiti (permanenti, post-resurrezione):**
 
@@ -104,15 +104,22 @@ bonus di chiarezza spirituale post-mortem (+2 ai TS del viaggio).
   differenziale). La velocità resta INVARIATA (il costo −1,5 m è solo
   della Via della Guardia, non scelta).
 
-## 5. LA DOMANDA AGGIUNTIVA DI MORADIN — DA REGISTRARE
+## 5. LA DOMANDA AGGIUNTIVA DI MORADIN — REGISTRATA
 
 *"Cosa deve proteggere Durik? Chi è, nella sua nuova forma?"* (v2 §5).
 
-La risposta della giocatrice determina l'**aspetto** di Durik Riforgiato
-tra i 4 della tabella v2 §6 (granito/difesa gruppo, mithral/difesa di
-Hella, cristallo/scout, ossidiana/vendetta).
-`[needs DM confirmation — risposta non presente negli appunti: registrarla
-qui appena disponibile]`.
+**Risposta canonica (DM 2026-07-02)**: Durik è **una creatura che
+protegge LEI** — aspetto della tabella v2 §6, riga "Protegge Hella
+(focus personale)":
+
+> *Mithral intrecciato alla pietra scura, occhi di topazio; si muove
+> sempre tra Hella e la fonte di pericolo percepita.*
+
+È l'aspetto più affine alle risposte date dal personaggio nel viaggio
+(la testa appoggiata sul petto della Prova I; la ferita aperta tenuta
+vicina, non razionalizzata, della Prova II): il legame è personale prima
+che tattico. *(Se in sessione la giocatrice desse una sfumatura diversa,
+vince il tavolo — annotarla qui.)*
 
 ## 6. RIGA APPLICABILE DELLA TAVOLA DELLE CONSEGUENZE (v2 §7)
 

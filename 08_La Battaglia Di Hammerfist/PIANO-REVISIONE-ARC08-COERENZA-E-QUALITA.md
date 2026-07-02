@@ -378,13 +378,17 @@
 - **Azione**: creare `ARC08-PONTE-ARRIVO.md` (snello): (1) puntatore al
   master P3B di ARC-07 per la resurrezione (stato in uscita: Hella viva con
   template Treant, Thorik −2 CON, Cuore di Moradin speso, Corona a 3 gemme);
-  (2) il viaggio e l'aggancio con l'assedio in corso (perché arrivano
-  proprio allora — le visioni della Forgia? il canto di Aegis Fang che
-  "sente" Fauci? `[INFERRED — needs DM confirmation]`); (3) la regia del
-  **passaggio pregen→PG** (D6): quando i giocatori lasciano gli Eroi, come
-  il flashback si salda al presente, cosa sanno i PG di ciò che i pregen
-  hanno visto, e l'ingresso "da riscossa" (E6) con spotlight per ciascun PG.
-  È il momento registico più delicato dell'arco.
+  (2) **il salto d'arrivo — fonte ARC-07 D16 (verificata)**: alla vittoria
+  della battaglia antica il **Rubino** si accende e riporta i PG al 1372
+  (P5-DEFINITIVO §4.3); i Rumbling Stones **riemergono al Cuore della
+  Montagna sotto Hammerfist, Giorno 3 dell'assedio** (P6 r.621-660,
+  Incontro 3B: Re Thorek morente a 8 pf, 90 guerrieri, porte di mithral
+  che cedono) — la **cucitura Sala della Forgia → Cuore della Montagna
+  si scrive QUI**, col Rubino/Corona come motore del passaggio; (3) la
+  regia del **passaggio pregen→PG** (D6): quando i giocatori lasciano gli
+  Eroi, come il flashback si salda al presente, cosa sanno i PG di ciò che
+  i pregen hanno visto, e l'ingresso "da riscossa" (E6) con spotlight per
+  ciascun PG. È il momento registico più delicato dell'arco.
 - **Accettazione**: la sequenza D8→E6 è giocabile senza improvvisare;
   nessuna duplicazione col P3B di ARC-07; meccaniche 3.5 esplicite; ogni
   invenzione flaggata.

@@ -64,7 +64,7 @@
 | G1 | P1-P2: ingresso e Sala della Forgia Eterna (affreschi, prove); il corpo di Hella è custodito nella Sala (da Therysol — history r.176) | ✅ giocato — fatti da raccogliere (B1) |
 | G2 | P3: Piano del Fuoco — Topazio del Tempo recuperato | ✅ giocato |
 | G2b | **Il viaggio dello spirito di Hella nell'Incudine del Mondo è GIÀ GIOCATO**: esiti canonici registrati in `PortaleForgia-P4-PianoTerra-P3B-HELLA-IL-VIAGGIO-NELL'INCUDINE-DEL-MONDO-risultati.md` (creato 2026-07-02 dagli appunti DM): **Verità Piena / Ferita Aperta / Via della Radice — tutti i TS superati**; il compagno è **DURIK (maschio)** — rinomina di "Nymeria" dei file di design (task A11); riga applicabile della tavola v2 §7: Resist freddo 15, Regen 1 (terra), Percepire Intenzioni +2, vuln. fuoco, Durik 12 DV | ✅ giocato e REGISTRATO — DM 2026-07-02 |
-| G3 | P4: Piano della Terra — **IN CORSO al tavolo** (Smeraldo della Forza in palio; boss Terros/Mithral Golem; Therysol PNG di supporto) | 🟡 in corso |
+| G3 | P4: Piano della Terra — **IN CORSO al tavolo** (Smeraldo in palio; boss Terros/Mithral Golem). **Composizione reale D15**: Artemis + Tordek + Thorik (3 PG, 13°); **Therysol NON presente** (veglia il corpo di Hella); tentazioni Lathander/Mask solo su Artemis; nessun inviato del Collezionista incontrato | 🟡 in corso |
 | G4 | P3B: rituale di resurrezione di Hella (il corpo + lo spirito provato dal viaggio) — si gioca **dopo la Terra** (D2), nonostante la numerazione "3B" | ⬜ da giocare |
 | G5 | P5: viaggio temporale, assedio di Hammerfist di **1.000 anni prima** (D7), antenato di Fauci di Palude — **da giocare in modo VELOCE** (D1) | ⬜ da giocare |
 | G6 | P6/raccordo: ritorno al 1372 e transizione verso l'Arco 08 | ⬜ da giocare (sezione 1372 di P6 superata da ARC-08: vedi A3) |
@@ -95,11 +95,13 @@ ulteriori risposte DM del 2026-07-02 sono registrate qui:
 | D12 (ex-Q6) | Gli esiti del viaggio dello spirito sono canonizzati in `...IL-VIAGGIO-NELL'INCUDINE-DEL-MONDO-risultati.md` (creato dagli appunti DM: Durik maschio; Verità Piena, Ferita Aperta, Via della Radice, TS tutti superati) | DM 2026-07-02 → file creato |
 | D13 | **Belkram e Urialle sono ENTRAMBI MORTI** (stato finale post-ARC-06) — le loro schede PNG (B9) si scrivono con Status: morto | DM 2026-07-02 |
 | D14 | Il compagno di Hella si chiama **DURIK (maschio)** — "Nymeria" dei file di design va rinominato ovunque (task A11) | DM 2026-07-02 |
+| D15 | **Composizione REALE del gruppo nel Piano della Terra (P4)**: **3 PG** — Artemis (Ring of Chaotic Illumination; subquest/tentazioni **solo sue**, dalle due divinità contrapposte Lathander e Mask), Tordek (Bracieri Gemelli), Thorik (Aegis Fang + Corona con **UNA gemma attiva: il Topazio**). **Therysol NON è con loro**: veglia sul corpo di Hella nella Sala della Forgia (deciso dai PG — coerente con campaign-history r.176). **Nessun inviato del Collezionista né altre figure** hanno avvicinato il resto del gruppo. ⚠️ Corregge `Terros.md` ("3 PCs **+ 1 NPC Therysol Support**" è SBAGLIATO → il boss va ricalibrato per 3 PG di 13° SENZA supporto, APL effettivo 12) | DM 2026-07-02 (risposta diretta) |
+| D16 | **Sequenza gemme della Corona (verificata sui file)**: Topazio ✅ attivo (dal Piano del Fuoco) → **Smeraldo si attiva nel Piano della Terra (P4)** → **Rubino si accende alla VITTORIA della battaglia di 1.000 anni fa** e, come *Gem of Immutable Time* + aggancio del Cuore di Moradin, **è il veicolo del ritorno al 1372** (P5-DEFINITIVO-PARTE2 §4.3 r.361-363). I Rumbling Stones **riemergono al Cuore della Montagna sotto Hammerfist, Giorno 3 dell'assedio** (P6 r.621-660, Incontro 3B). **CUCITURA MANCANTE**: P5 li riporta alla *Sala della Forgia*, P6 li fa arrivare al *Cuore della Montagna* — il salto Forgia→Hammerfist (col Rubino come motore) **non è scritto da nessuna parte**: si scrive nel ponte (ARC-08 B2, con questo D16 come fonte) | DM 2026-07-02 ("mi sembra, da verificare") + verifica sui file eseguita 2026-07-02 |
 
-Residuo minore dentro D12 (non bloccante): l'esito della prova Conoscenze
-(religioni) CD 15 della Via della Radice e la risposta alla Domanda
-Aggiuntiva di Moradin (aspetto di Durik) non erano negli appunti —
-flaggati `[needs DM]` nel file risultati, da registrare appena disponibili.
+Residui minori di D12 **risolti** (DM 2026-07-02): prova Conoscenze
+(religioni) **superata** (voto della Radice in versione piena) e aspetto
+di Durik = **"Protegge Hella"** (mithral e pietra scura, occhi di topazio)
+— già registrati nel file risultati.
 
 ---
 
@@ -173,13 +175,17 @@ flaggati `[needs DM]` nel file risultati, da registrare appena disponibili.
   (P5-DEFINITIVO-PARTE2 §4.2). Il Rubino ha anche un'eco morale ("nessuna
   pietà", r.167) che il P2 ignora.
 - **Azione**: correggere la tabella affreschi/attivazioni di P2 (r.982-1007,
-  r.1072) al modello D5; verificare la coerenza con
-  `LaCorona_di_Adamantio-DM.md` (citato da P5-DEFINITIVO-PARTE2 r.361) e con
+  r.1072) al modello D5/**D16** (Topazio dal Fuoco → Smeraldo dalla Terra →
+  Rubino alla vittoria antica, motore del ritorno); scrivere la **cucitura
+  D16** (salto Sala della Forgia → Cuore della Montagna) nel ponte ARC-08
+  B2, non qui; verificare la coerenza con `LaCorona_di_Adamantio-DM.md`
+  (citato da P5-DEFINITIVO-PARTE2 r.361) e con
   `campaign-artifacts.md`/state.md §6 (il piano ARC-09 C4 tratta già il
   "Rubino Corona" come single-use SPESO dopo questo arco: la catena
   P5→ARC-09 deve tornare). Nota di changelog se il canone artefatti cambia.
 - **Accettazione**: una sola sequenza di attivazione delle 3 gemme in tutto
-  il repo; la Corona arriva all'ARC-08/09 nello stato che ARC-09 assume.
+  il repo; la Corona arriva all'ARC-08/09 nello stato che ARC-09 assume;
+  il ponte ARC-08 B2 cita D16 come fonte del "riemergere".
 
 ### A5. Livello del party dichiarato: 12 vs 13 vs 14 "God Mode" — applicare D8 (livello 13)
 - **Problema**: le dichiarazioni cambiano da file a file (P3B "livello 13",
@@ -188,10 +194,12 @@ flaggati `[needs DM]` nel file risultati, da registrare appena disponibili.
   §0 assegna all'arco il livello 12. Il canone deciso (D8) è: **party al
   13°**. Per le parti ancora da giocare (P3B, P5) il numero sbagliato =
   incontri sbagliati.
-- **Azione**: applicare **D8**: uniformare le intestazioni di TUTTI i file
-  dell'arco a "13°" e ricontrollare i budget GS delle parti future col
-  metodo di Terros (APL effettivo 12 con 3 PG finché Hella non torna;
-  +Therysol come supporto; APL 13 pieno dal P5 con Hella "DMPC completa").
+- **Azione**: applicare **D8 + D15**: uniformare le intestazioni di TUTTI i
+  file dell'arco a "13°" e ricontrollare i budget GS delle parti future col
+  metodo di Terros CORRETTO da D15 (APL effettivo 12 con 3 PG finché Hella
+  non torna; **SENZA Therysol**, che veglia il corpo — l'assunzione "+1 NPC
+  Support" di Terros.md è sbagliata e il boss va ricalibrato; APL 13 pieno
+  dal P5 con Hella di nuovo attiva).
   Annotare lo stato artefatti D8 (Bracieri risvegliati, Corona in risveglio)
   nelle intestazioni dei master, perché è ciò che giustifica gli EL alti
   (l'EL 17 dell'ARC-06 contro un party di 13° era già questo pattern).
@@ -282,9 +290,14 @@ flaggati `[needs DM]` nel file risultati, da registrare appena disponibili.
   ARC-06); eleggere il master del Ring (proposta: `..._Revised.md`, con
   `Old/` e i file sciolti marcati); ripulire il residuo OnlineMarkdown;
   `git mv` dei filename con refusi; verificare che lo stato dichiarato nei
-  master corrisponda a D8 (Bracieri Fuoco+Terra ✅; Corona: gemme accese =
-  quelle realmente giocate, non le 3 del §6 forward-written) e che i
-  puntatori di state.md §6 e `campaign-artifacts.md` risolvano sui master.
+  master corrisponda a D8/D16 (Bracieri Fuoco+Terra ✅; Corona: **solo il
+  Topazio acceso oggi al tavolo**, non le 3 gemme del §6 forward-written) e
+  che i puntatori di state.md §6 e `campaign-artifacts.md` risolvano sui
+  master. **Catch aggiuntivo**: P2 r.482 cita i "Devastation Gauntlets" e
+  P5-DEFINITIVO-PARTE2 r.371+ una "Cintura della Devastazione" di Tordek —
+  oggetto assente da state.md §6 e dall'inventario dichiarato dal DM
+  (D15: Tordek ha i Bracieri): chiarire se esiste (guanti? cintura? nulla?)
+  e allineare o deprecare le menzioni `[needs DM confirmation]`.
 - **Accettazione**: un solo file canonico per artefatto; le copie marcate;
   `grep -rn "OnlineMarkdown"` = 0; stato gemme/bracieri coerente col tavolo
   in tutto il repo.
@@ -571,9 +584,12 @@ criterio di accettazione, commit, riga di changelog in state.md se il canone
 - [x] D1 · [x] D2 · [x] D3 · [x] D4 · [x] D5 · [x] D6 (Skullcrusher) ·
   [x] D7 (1.000 anni) · [x] D8 (livello 13, artefatti) · [x] D9
   (PG/Artefatti canonico) · [x] D10 (deprecare) · [x] D11 (Oakenshield) ·
-  [x] D12 (risultati viaggio) · [x] D13 (Belkram e Urialle morti) ·
-  [x] D14 (Durik) — **tutte le decisioni acquisite 2026-07-02; nessuna
-  domanda aperta bloccante**
+  [x] D12 (risultati viaggio, completati con Conoscenze superata e aspetto
+  di Durik "protegge Hella") · [x] D13 (Belkram e Urialle morti) ·
+  [x] D14 (Durik) · [x] D15 (P4 = 3 PG senza Therysol; Terros.md da
+  ricalibrare) · [x] D16 (sequenza gemme verificata; cucitura
+  Forgia→Cuore della Montagna da scrivere in ARC-08 B2) — **tutte le
+  decisioni acquisite 2026-07-02; nessuna domanda aperta bloccante**
 
 ---
 

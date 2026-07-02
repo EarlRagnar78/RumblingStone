@@ -46,6 +46,7 @@
 | D10 | Nani a Rethmar: **300 mercenari da Dauth** (torneo vinto) + **150 lance di Re Thorek** come flusso separato condizionato dagli hook politici (sigillo Maewen + lettera Thorik). Totale max 450. Correggere state.md §2.4 (400 → 300) | DM 2026-07-02 |
 | D11 **v2** | **Tyrgarun = drago BLU antico (Old), CR 18 — il TERRORE DEI CIELI della battaglia, NON cavalcatura di Azarr Kul.** Non sta "in riserva": è la ragione per cui i difensori non possono tenere i cieli. Script a scalini: **Fase 1** = set-piece di bombardamento (soffio sui bastioni come *hazard* con contromosse — balliste, gufi Tiri Kitor, missione-esca dei PG — NON scontro frontale: a CR 18 in volo è imbattibile per design); **Fasi 2-3** = copertura aerea mobile dei ritualisti (minaccia a orologeria); **Fase 4** = il Mythal completato **lo inchioda a terra** (già canone: P2D-INTEGRAZIONE r.201) → solo allora diventa uccidibile dal party+alleati, oppure fugge (nemesi ARC-10). Azarr Kul combatte comunque a terra con l'Avatar (STRUTTURA §6): il drago è un incontro separato, sbloccato dal Mythal. Correggere INDICE r.27/443 ("monta Tyrgarun" via; "Very Old CR 20" → "Old CR 18") e ARMATE-SYNC §2.1 ("black adult" → "blue old") | DM 2026-07-02, **rivista su obiezione DM: "se il drago non si usa, perché alzare il Mythal? deve essere spaventoso"** |
 | D12 | Debito di Tordek (state.md §5): riformulare in **"presentarsi a Dauth entro il Day 29 (vigilia delle preliminari del Torneo)"** — coerente con HOOKS v2 (invito Day 24, arrivo 28, torneo 30-32) | DM 2026-07-02 |
+| D13 | **La battaglia di Rethmar si gioca A EVENTI, in stile cinematografico/Critical Role** — remix della catena di eventi della Battle of Brindol (RHoD Parte 4, [Private source]): i PG vivono la battaglia come sequenza di **scene discrete ad alta posta che SCELGONO loro** (menù di crisi simultanee: ne scegli 2, le altre si risolvono male off-screen = conseguenza), NON come wargame. **Esclusa** la gestione armate alla Kingmaker/Ultimate Campaign (astrae i PG, sessioni bibliche). Le meccaniche di massa di Hammerfist e i calcoli ARMATE-* restano **solo lato DM** come sfondo strategico che alimenta la narrazione — mai portati al tavolo. I **VP restano ma nascosti**: tracker del DM ("il Fronte") che colora le descrizioni e determina l'esito, mai un punteggio mostrato ai giocatori. Heroes of Battle si riduce a: 1 check di morale per ondata + ruoli di comando PG come azioni di scena | DM 2026-07-02, su domanda "eventi RHoD presenti? VP snatura? Kingmaker o eventi scelti dai PG?" |
 
 ### Decisioni di canone da chiedere al DM
 
@@ -317,12 +318,16 @@ di §4 senza ulteriori input dal DM.
 > (assedio), CotCT (morale cittadino), Kingmaker (ricompense di dominio),
 > War for the Crown (sandbox politico — già parzialmente coperto dal Palio).
 
-### C1. Sotto-sistema d'assedio formalizzato (Heroes of Battle)
+### C1. Cornice leggera d'assedio (Heroes of Battle ridotto — al servizio di C7)
 - Oggi le ondate di Fase 1 sono "blocchi narrativi" (STATBLOCCHI-EPICI §9).
+- **Vincolo D13**: questa cornice è **sfondo lato DM**, non un wargame al
+  tavolo. Massimo 1 pagina; tutto ciò che i giocatori vedono passa per gli
+  eventi di C7.
 - **Azione**: 1 pagina di regole in STRUTTURA: (a) **Victory Points** già
   esistenti → collegarli a check di **Morale** per ondata (difensori tirano
-  1d20 + VP correnti vs CD ondata; fallimento = un settore cede); (b) **ruoli
-  di comando PG** per round di battaglia (Comandante/Campione/Fulcro Arcano/
+  1d20 + VP correnti vs CD ondata; fallimento = un settore cede) — **VP
+  nascosti**: il DM li traccia, i giocatori sentono solo le conseguenze
+  narrate; (b) **ruoli di comando PG** per round di battaglia (Comandante/Campione/Fulcro Arcano/
   Salvatore — azioni da 10 minuti con effetti quantificati, es. Thorik
   Comandante: +2 morale a un settore); (c) tabella d12 **eventi di battaglia**
   per fase (breccia, incendio, eroismo PNG, duello richiesto...). Riusa il
@@ -390,6 +395,49 @@ di §4 senza ulteriori input dal DM.
   10 PNG di servizio + 1.000 mo/mese di rendita") — utile per ARC-10.
 - **Accettazione**: tabella esito×PG compilata.
 
+### C7. IL MAZZO EVENTI DI RETHMAR — la battaglia a scene scelte dai PG (D13)
+- **Gap**: la Battle of Brindol originale (RHoD Parte 4, [Private source]) non
+  è "ondate": è una **catena di eventi discreti** — combattimenti di strada,
+  il drago sulle mura, l'assassino che punta al comandante della città, la
+  difesa della cappella/ospedale, la breccia, il duello col Wyrmlord — con
+  pause di recupero scandite. Nei file attuali di Rethmar esiste lo scheletro
+  a Fasi 0-4 (i macro-eventi) ma la Fase 1-2 è a ondate generiche: **gli
+  eventi in stile Brindol non ci sono ancora**. Questo lotto li porta,
+  potenziati, sui 3 giorni (Day 40-42).
+- **Azione**: creare `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md`:
+  1. **12-16 carte evento** distribuite sui 3 giorni (Fase 0 → 4). Ogni carta:
+     trigger (quando/dove), read-aloud di 3 righe, scena (EL, mappa o zona),
+     posta in gioco, **spotlight PG designato**, conseguenza su Fronte/VP se
+     vinta/persa/ignorata. Rifare in chiave Rethmar gli archetipi Brindol
+     (mapparli dalla copia RHoD del DM, non riprodurre testo): barricate di
+     strada coi civili, **il cecchino/assassino che punta a Lady Kaal o
+     Brenna** (eco di Halveth se non rimosso), la breccia da richiudere,
+     la difesa del Tempio-ospedale (eco Fase 0), il duello chiamato dal
+     Wyrmlord Karruk, il salvataggio del convoglio di Lorana, il set-piece
+     Tyrgarun (già in C1.d — qui solo la carta), il crollo del campanile,
+     i sotterranei drow riaperti (eco Sabotaggio). Eventi in più rispetto a
+     Brindol = i punti dove l'assedio di 3 giorni è PIÙ grande dell'originale.
+  2. **Menù di crisi (anti-dispersione)**: a ogni "campana" (2-3 per giorno)
+     il DM presenta 3-4 crisi simultanee → i PG ne scelgono 1-2 (possono
+     dividersi); le non scelte si risolvono **off-screen con la tabella delle
+     conseguenze** (perdite, morale, -CR o +CR alle fasi successive). Nessun
+     evento è obbligatorio: la pressione nasce dallo scegliere a chi non
+     rispondere. È la struttura che rende la battaglia "Critical Role":
+     scene brevi, poste personali, montaggio incrociato.
+  3. **Ritmo dei 3 giorni**: Day 40 notte (Fase 0) = 2-3 carte infiltrazione;
+     Day 41 (arrivo orda in vista, ultimi preparativi) = carte di crisi civile
+     e sabotaggio interno + 1 riposo lungo scandito; Day 42 (Fasi 1-4) =
+     campane serrate, riposi solo brevi, carte sempre più gravi. Tenere il
+     conteggio risorse onesto (slot, pf) — la scarsità è parte del climax.
+  4. **Cosa NON fare (D13)**: niente sistema armate alla Kingmaker; niente
+     griglia con 200 miniature; la battaglia Hammerfist resta il precedente
+     narrativo ma il suo impianto di massa NON si porta al tavolo — l'engine
+     deve anzi estrarne le 3-4 scene migliori e convertirle in carte evento.
+- **Accettazione**: file EVENT-DECK con ≥12 carte complete; ogni carta ≤ 1
+  pagina; ogni PG ha ≥2 carte spotlight; ogni carta ha conseguenza off-screen
+  quantificata; STRUTTURA e FASE1/FASE2-TESTO aggiornati per puntare al deck
+  (le ondate diventano lo sfondo tra le campane).
+
 ---
 
 ## §4 — ORDINE DI ESECUZIONE E BUDGET (per non bruciare crediti)
@@ -415,6 +463,7 @@ brevi; B/C sono generativi e vanno spezzati.
 | 18 | C1 + C2 (assedio + morale) | generativo | A2 |
 | 19 | C3 + C4 | editing | — |
 | 20 | C5 + C6 | generativo | A2 (fasi Day 40-42 fissate) |
+| 21-22 | **C7 (Event Deck Rethmar, 6-8 carte per sessione)** | generativo — il lotto più importante del Lotto C | C1, C5, D13; il DM tiene sottomano la sua copia RHoD Parte 4 per mappare gli archetipi eventi |
 
 **Regole anti-spreco**: (1) passa all'engine SOLO questo file + i file del
 lotto corrente + state.md §0-§3; (2) niente riletture dell'intero arco;
@@ -428,7 +477,7 @@ checklist qui sotto.
   [ ] A8 · [ ] A9 · [ ] A10 · [ ] A11 · [ ] A12 · [ ] A13
 - [ ] B1.1 · [ ] B1.2 · [ ] B1.3 · [ ] B1.4 · [ ] B1.5 · [ ] B2 · [ ] B3 ·
   [ ] B4 · [ ] B5 · [ ] B6 · [ ] B7
-- [ ] C1 · [ ] C2 · [ ] C3 · [ ] C4 · [ ] C5 · [ ] C6
+- [ ] C1 · [ ] C2 · [ ] C3 · [ ] C4 · [ ] C5 · [ ] C6 · [ ] C7 (event deck)
 - [x] Q1 (→D9) · [x] Q2 (→D10) · [x] Q3 (→D11) · [x] Q4 (→D12) ·
   [x] Q5 (→D8) — **tutte le risposte DM acquisite 2026-07-02**
 

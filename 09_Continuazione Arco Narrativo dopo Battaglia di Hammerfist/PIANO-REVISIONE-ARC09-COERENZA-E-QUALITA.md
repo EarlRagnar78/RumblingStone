@@ -522,8 +522,14 @@ checklist qui sotto.
   `Arco-*.md` citato → **zero link rotti operativi** (restano solo i
   riferimenti del piano stesso ai deliverable futuri B4/B7/C7 e alla
   nota storica del rename RETHMAN→RETHMAR).
-- [ ] B1.1 · [ ] B1.2 · [ ] B1.3 · [ ] B1.4 · [ ] B1.5 · [ ] B2 · [ ] B3 ·
-  [ ] B4 · [ ] B5 · [ ] B6 · [ ] B7
+- [x] B1.1 · [x] B1.2 · [x] B1.3 · [x] B1.4 · [x] B1.5 · [ ] B2 · [ ] B3 ·
+  [ ] B4 · [ ] B5 · [ ] B6 · [ ] B7 —
+  **B1 (Rhest) completo (2026-07-02)**: 5 file FASE portati da scheletro
+  (~1–4 KB) a standard Palio (read-aloud, viaggio a esagoni, tabella
+  incontri d12, regole subacquee SRD, arena a 3 quote, sinergia artefatti
+  state.md §6, conseguenze allineate a state.md §2.3 −1 drago/−2 Razorfiend,
+  eco Lanikar/+VP, intel −1 CR). Statblock delegati ai file ENCOUNTER
+  esistenti. CD (non DC) come da §0.7. Prossimo: B2 (Starsong).
 - [ ] C1 · [ ] C2 · [ ] C3 · [ ] C4 · [ ] C5 · [ ] C6 · [ ] C7 (event deck)
 - [x] Q1 (→D9) · [x] Q2 (→D10) · [x] Q3 (→D11) · [x] Q4 (→D12) ·
   [x] Q5 (→D8) — **tutte le risposte DM acquisite 2026-07-02**

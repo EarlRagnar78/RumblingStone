@@ -15,14 +15,14 @@ Arco-Post-Hammerfist-P2-RHEST-CONSEGUENZE-ESITI.md
 
 > Questi valori **vincono** su qualunque stima generica nel resto del file.
 
-| Esito a Rhest | Effetto sull'Orda a Rethmar (`state.md` §2.3) |
+| Esito a Rhest | Effetto sull'Orda a Rethmar (`campaign/state.md` §2.3) |
 |---|---|
 | **Regiarix ucciso** (+ nido distrutto in Fase 2) | **−1 drago, −2 Razorfiend** |
 | **Regiarix fuggito** (tuffo sotto ~30% pf) | Nessuna riduzione del drago (può ricomparire) |
 | **Nido distrutto ma drago fuggito** | −2 Razorfiend soltanto |
 | **Rhest fallita** | Nessuna riduzione; +ondata Razorfiend possibile |
 
-Effetto sull'alleanza Tiri‑Kitor (numeri D9, `state.md` §2.4): l'appoggio pieno
+Effetto sull'alleanza Tiri‑Kitor (numeri D9, `campaign/state.md` §2.4): l'appoggio pieno
 vale **100 ranger elfici + 20 gufi giganti** a Rethmar. Rhest è la prova che
 sblocca/consolida quell'appoggio (vedi §8).
 
@@ -202,7 +202,7 @@ dell'alleanza (vedi `Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-TESTO.m
 - [ ] Registrato l'esito esatto: Saarvith (vivo/morto/fuggito), Regiarix
       (vivo/morto/fuggito), nido (distrutto/parziale/intatto)?
 - [ ] Applicato il conteggio canonico **−1 drago / −2 Razorfiend** (§0) al
-      tracker dell'Orda di `state.md` §2.3?
+      tracker dell'Orda di `campaign/state.md` §2.3?
 - [ ] Documenti d'assedio: assegnato (o negato) il bonus **−1 CR** a una fase
       di Rethmar (§7)?
 - [ ] Eco Lanikar: aggiornato il **morale/VP Tiri‑Kitor** e lo stato

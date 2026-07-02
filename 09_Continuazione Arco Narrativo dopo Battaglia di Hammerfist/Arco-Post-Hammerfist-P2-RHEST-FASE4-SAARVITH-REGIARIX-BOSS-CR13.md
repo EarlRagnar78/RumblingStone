@@ -147,7 +147,7 @@ canonico: `campaign/state.md` §2.3.
 
 | Esito | Effetto a Rethmar |
 |---|---|
-| **Saarvith e Regiarix uccisi** + nido distrutto (Fase 2) | **−1 drago, −2 Razorfiend** all'Orda (`state.md` §2.3); Rhest non è più un avamposto; Tiri‑Kitor al pieno appoggio. |
+| **Saarvith e Regiarix uccisi** + nido distrutto (Fase 2) | **−1 drago, −2 Razorfiend** all'Orda (`campaign/state.md` §2.3); Rhest non è più un avamposto; Tiri‑Kitor al pieno appoggio. |
 | **Regiarix morto, Saarvith fuggito** | −1 drago; Saarvith torna come **cecchino** a Rethmar; alleanza elfica forte ma prudente. |
 | **Regiarix fuggito** (sotto ~30% pf, tuffo) | Il drago **non** è tolto dal conteggio: può comparire a Rethmar come rinforzo aereo. |
 | **Fuga PG / sconfitta** | Rhest resta fortezza Mano Rossa: ondata Razorfiend + drago a Rethmar; Tiri‑Kitor tiepidi. |

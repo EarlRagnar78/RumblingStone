@@ -127,5 +127,5 @@ Allineate a `campaign/state.md` §2.3 e a
 - [ ] Applicate le penalità **subacquee** a chi finisce in acqua?
 - [ ] Presentata la **scelta bozzoli** (difendersi vs distruggere la covata)?
 - [ ] Registrato l'esito del nido (distrutto / parziale / intatto) per
-      CONSEGUENZE e per il conteggio **−2 Razorfiend** di `state.md` §2.3?
+      CONSEGUENZE e per il conteggio **−2 Razorfiend** di `campaign/state.md` §2.3?
 - [ ] Un Razorfiend fuggito? Annotato come possibile superstite a Rethmar?

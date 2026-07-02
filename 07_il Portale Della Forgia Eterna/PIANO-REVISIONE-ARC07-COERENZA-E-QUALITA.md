@@ -419,6 +419,16 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   post-A0 di state.md man mano.
 - **Accettazione**: ogni sessione giocata ha un log; la morte di Hella ha
   data, luogo e causa IN un log; zero invenzioni non flaggate.
+- **✅ FATTO parziale (2026-07-02, sessione 11)**: creato
+  `campaign/sessions/RETROATTIVI-ARC07-INFERRED.md` con 5 log retroattivi in
+  formato AGENTS.md — R0 finale ARC-06 (morte di Hella: Yochlol di Sonjak +
+  Urialle, Belkram redento; luogo = Stanza della Corona; causa registrata),
+  R1 Sala Forgia, R2 Fuoco/Topazio, R3 viaggio dello spirito (agganciato al
+  file-risultati, **canone non-INFERRED**), R4 Terra in corso (D15). Ogni
+  lacuna marcata `[INFERRED]`. ⚠️ **Resta l'intervista al DM** per date,
+  giocatori, XP/loot reali (l'engine non può inventarli): il file è una
+  ricostruzione dichiarata, da validare. Nodo aperto flaggato: compagno
+  animale (rinoceronte/orso/Durik).
 
 ### B2. Master della resurrezione di Hella (P3B) — [CROSS-ARC]
 - **Evidenza**: quattro trattamenti della stessa scena-cardine
@@ -673,7 +683,7 @@ la checklist qui sotto.
 
 - [x] A1 · [x] A2 · [x] A3 · [x] A4 · [x] A5 · [x] A6 · [x] A7 ·
   [x] A8 · [x] A9 · [x] A10 · [x] A11 — **LOTTO A COMPLETO**
-- [x] B2 · [x] B3 · [x] B4 · [ ] B1 · [ ] B5 · [ ] B6 · [ ] B7 ·
+- [x] B2 · [x] B3 · [x] B4 · [~] B1 (log ricostruiti; attende intervista DM) · [ ] B5 · [ ] B6 · [ ] B7 ·
   [ ] B8 · [~] B9 — **parziale (2026-07-02)**: Collana ✅ e
   file-risultati ✅; restano Sonjak, schede Belkram/Urialle, collegamenti
 - [ ] C1 · [ ] C2 · [ ] C3

@@ -1,7 +1,7 @@
 Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE0-NOTTE-DEI-DROW-MAPPA.md
 =====================================================================
 
-# Mappa – Tempio di Rethman, Notte dei Drow
+# Mappa – Tempio di Rethmar, Notte dei Drow
 
 ## 1. Piano Terra – Navata del Tempio
 

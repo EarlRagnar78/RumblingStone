@@ -259,14 +259,14 @@ of the Githyanki sword, dark red dragon scales, chaotic shadows.
 ---
 
 ### 📸 IMMAGINE 3.9 — "La Città Sommersa di Rhest" (Quest Rhest)
-*Per: esplorazione del Lago Rhest e scontro con Saarvith e Regiarax*
+*Per: esplorazione del Lago Rhest e scontro con Saarvith e Regiarix*
 
 ```
 [PROMPT IMMAGINE]
 A murky, fog-covered swamp lake where the ancient ruins of a sunken 
 city emerge from the dark water. Decaying stone towers and half-submerged 
 buildings are covered in moss and hanging vines. In the center, perched 
-on the roof of a large sunken town hall, is Regiarax — a sleek, terrifying 
+on the roof of a large sunken town hall, is Regiarix — a sleek, terrifying 
 Adult Black Dragon with glowing yellow eyes and acid dripping from its maw. 
 Beside the dragon stands Wyrmlord Saarvith, a goblin ranger holding a 
 nocked longbow. In the water below, razorfiends (vicious reptilian 

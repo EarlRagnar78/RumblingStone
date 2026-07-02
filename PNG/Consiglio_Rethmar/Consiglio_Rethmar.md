@@ -35,7 +35,7 @@
 
 Ha contatti segreti con Wyrmlord Saarvith. L'accordo: Rethmar si rende, paga tributi, mantiene autonomia interna. Nessuno muore nell'assedio. Kaal *non è pazza né malvagia* — ha fatto i calcoli e senza un piano credibile di vittoria ha matematicamente ragione.
 
-**Cosa la cambia:** I PG devono mostrarle un piano militare credibile (Diplomatia CD 22 + lista alleati reclutati) OPPURE rivelare che Saarvith non può garantire ciò che promette (intel dal party su Regiarax/Rhest). Se convinta, diventa il più efficace alleato politico del party — gestisce la logistica civile con precisione chirurgica.
+**Cosa la cambia:** I PG devono mostrarle un piano militare credibile (Diplomatia CD 22 + lista alleati reclutati) OPPURE rivelare che Saarvith non può garantire ciò che promette (intel dal party su Regiarix/Rhest). Se convinta, diventa il più efficace alleato politico del party — gestisce la logistica civile con precisione chirurgica.
 
 **Connessione Halveth:** Kaal non sa che Halveth ha venduto informazioni ai drow. Se lo scopre, il suo calcolo cambia — un accordo con la Red Hand che include drow corrotti non è un accordo sicuro.
 

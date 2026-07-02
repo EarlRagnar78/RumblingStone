@@ -7,7 +7,7 @@ Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE3-AZARRKUL-AVATAR-MAPPA.md
 
 Puoi riusare/trasformare la mappa del pianoro rituale (Fase 2) oppure spostare il fight:
 
-- davanti alle mura di Rethman,  
+- davanti alle mura di Rethmar,  
 - in una grande piazza esterna devastata,  
 - o su una collina‑altare visibile dalla città.
 

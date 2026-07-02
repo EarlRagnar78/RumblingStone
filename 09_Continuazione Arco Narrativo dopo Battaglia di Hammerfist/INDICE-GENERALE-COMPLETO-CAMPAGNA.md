@@ -38,7 +38,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 
 **Villain minori con stat nei file di arco (no cartella dedicata):**
 - Zalkatar (Illithid Warlock, CR 13): `Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md`
-- Wyrmlord Saarvith + Regiarax (CR 12/13): `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`
+- Wyrmlord Saarvith + Regiarix (CR 12/13): `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`
 - Zarim (Illithid luogotenente, CR 12): `Arco-Post-Hammerfist-P2B-Torneo-Tordek-BATTLE-STATS-e-VILLAIN-ICONICI.md`
 - Avversari Torneo (12+ nomi): `Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md`
 - Azarr Kul + Avatar Tiamat (stat epiche): `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md`
@@ -197,7 +197,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 | `Arco-Post-Hammerfist-P2-RHEST-FASE2-PALUDE-RAZORFIEND.md` | Fase 2 — Palude e Razorfiend encounter | ✅ |
 | `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-RAZORFIEND-NIDO.md` | Encounter — Razorfiend nido | ✅ |
 | `Arco-Post-Hammerfist-P2-RHEST-FASE3-INTRUSIONE-EDIFICI-RHEST.md` | Fase 3 — Intrusione rovine sommerse | ✅ |
-| `Arco-Post-Hammerfist-P2-RHEST-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md` | Fase 4 — Boss: Wyrmlord Saarvith + Regiarax | ✅ |
+| `Arco-Post-Hammerfist-P2-RHEST-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md` | Fase 4 — Boss: Wyrmlord Saarvith + Regiarix | ✅ |
 | `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | Stat blocks boss | ✅ |
 | `Arco-Post-Hammerfist-P2-RHEST-CONSEGUENZE-ESITI.md` | Conseguenze ed esiti | ✅ |
 
@@ -207,7 +207,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 - Città rovine sommerse (mappa hex acqua)
 - Razorfiend encounters nella palude
 - Wyrmlord Saarvith (CR 12 fighter/dragon disciple)
-- Boss Finale: **Regiarax** Adult Black Dragon (CR 13!)
+- Boss Finale: **Regiarix** Adult Black Dragon (CR 13!)
 - Sabotaggio ponte/supply lines orda
 - Conseguenze: Rallenta orda 3 giorni, intel prezioso
 
@@ -378,7 +378,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 
 | File | Tipo |
 |---|---|
-| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAN-STRUTTURA.md` | Overview completa 5 fasi |
+| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md` | Overview completa 5 fasi |
 | `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md` | Stat blocks epici (Azarr Kul CR 15, Avatar Tiamat CR 17, Erinni, Arcimaghi, Ghostlord ally, 300 nani, Githyanki Knights) |
 | `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ESITI-CONSEGUENZE.md` | Sistema VP, esiti A–F, conseguenze PG, epilogo |
 | `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-MYTHAL-FOCUS-PG-SCENA-EROICA.md` | Scene eroiche PG-specifiche durante Mythal |
@@ -554,7 +554,7 @@ Tutte mappe tattiche nei file `*-MAPPE*.md` usano scala 1.5m/sq.
 
 - [ ] Quest Hella — Cerchio Sacro Shaarcah Forest
 - [ ] Quest Artemis — Torre Invisibile (vs Zalkatar)
-- [ ] Rhest — Wyrmlord Saarvith & Regiarax (📝 NEW)
+- [ ] Rhest — Wyrmlord Saarvith & Regiarix (📝 NEW)
 - [ ] Quest Tordek — Torneo Epico Dauth
 - [ ] Sabotaggio Campi Drow (1–3)
 - [ ] Starsong Hill — Alleanza Elfi Tiri Kitor

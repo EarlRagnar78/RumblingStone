@@ -1,6 +1,6 @@
 # Battaglia Finale di Rethmar — Sincronizzazione Armate (v2)
 
-**Scopo**: allineare i numeri dell'Orda della Mano Rossa che raggiungono Rethmar al **Day 40** del March Clock ufficiale RHoD (adattato Channath Vale / Dalelands, 1372 DR) con la struttura di battaglia in `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAN-STRUTTURA.md`, i calcoli di `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.md` v2 e il cronoprogramma di `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` v2.
+**Scopo**: allineare i numeri dell'Orda della Mano Rossa che raggiungono Rethmar al **Day 40** del March Clock ufficiale RHoD (adattato Channath Vale / Dalelands, 1372 DR) con la struttura di battaglia in `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md`, i calcoli di `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.md` v2 e il cronoprogramma di `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` v2.
 
 > **Regola dual-clock**: *March Clock* (Day 1→40, AP ufficiale, deterministico) governa **quando** arriva l'Orda; *Ritual Clock* Azarr Kul (`/18`) governa **se** l'Avatar di Tiamat si manifesta. I due procedono **indipendenti** salvo interventi PG esplicitamente registrati.
 
@@ -54,10 +54,10 @@ Riferimento dettagliato: `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.m
 
 ### 2.2 Fazioni con dinamica narrativa
 
-- **Drow di Sonjak** (Matrona Sajak): agiscono principalmente in Fase 0 (Notte dei Drow, infiltrazione cripte Tempio di Rethman). Se Sabotaggio Drow Arc-09/P3 eseguito, forza Fase 0 ridotta da 25-30 drow + 1 Aberrazione Fungina Alfa a 5-8 drow senza Alfa.
+- **Drow di Sonjak** (Matrona Sajak): agiscono principalmente in Fase 0 (Notte dei Drow, infiltrazione cripte Tempio di Rethmar). Se Sabotaggio Drow Arc-09/P3 eseguito, forza Fase 0 ridotta da 25-30 drow + 1 Aberrazione Fungina Alfa a 5-8 drow senza Alfa.
 - **Gnoll 3 tribù** (Flinderoso, Abbattitori, Artigli Neri): provenienti da Wyrmbones e Dun Hills (vedi mappa Cannath Vale). Usati come prima linea in Fase 1 Ondata 1. Perdite attese 25-35%.
 - **Loxo + Centauri schiavizzati**: razze nomadi del Shaar catturate dai Wyrmlord durante la marcia Day 8-15. Usati come **scudi umani** (Loxo) e **cavalleria forzata** (Centauri). **Trigger PG — Revolt**: se i PG riescono a contattarli (diplomazia CD 25, Conoscenze Natura CD 20, oppure incontro dedicato durante Arc-09), possono rivoltarsi contro l'Orda Day 38-39, eliminando 480 unità + disruption logistica -100 attrition. **[INFERRED — needs DM: encounter di liberazione da scrivere se DM vuole aprire il branch]**.
-- **Esperimenti Fungini Drow**: bio-arma sviluppata da Matrona Sajak nei laboratori ipogei (campi-laboratorio Arc-09/P3 Sabotaggio Drow, vedi `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW`). Statblock in `Arco-Post-Hammerfist-P3-MISSIONI-BREVI-CR12-STATBLOCCHI-FUNGHI-GITH-DROW.md`. **Trigger PG — Sabotaggio Campi Drow**: se la quest P3-Sabotaggio-Campi-Drow è completata prima del Day 36, rimuovere **tutti** gli Esperimenti Fungini dall'Orda tranne ~5 Minions già dispiegati col commando di Sonjak al Day 1. Uso tattico: **Fase 0** (1 Alfa come ariete vivente contro cripte Tempio di Rethman, 4 Minions di supporto); **Fase 1 Ondata 4** (3-5 Aberrazioni come breaker di mura + 15-20 Minions di rincalzo col residuo drow); **riserva** (1 Alfa conservata per Fase 2-3 se Ondata 4 fallisce). **[INFERRED — statblocchi confermati, numeri di dispiegamento da tarare DM-side]**.
+- **Esperimenti Fungini Drow**: bio-arma sviluppata da Matrona Sajak nei laboratori ipogei (campi-laboratorio Arc-09/P3 Sabotaggio Drow, vedi `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW`). Statblock in `Arco-Post-Hammerfist-P3-MISSIONI-BREVI-CR12-STATBLOCCHI-FUNGHI-GITH-DROW.md`. **Trigger PG — Sabotaggio Campi Drow**: se la quest P3-Sabotaggio-Campi-Drow è completata prima del Day 36, rimuovere **tutti** gli Esperimenti Fungini dall'Orda tranne ~5 Minions già dispiegati col commando di Sonjak al Day 1. Uso tattico: **Fase 0** (1 Alfa come ariete vivente contro cripte Tempio di Rethmar, 4 Minions di supporto); **Fase 1 Ondata 4** (3-5 Aberrazioni come breaker di mura + 15-20 Minions di rincalzo col residuo drow); **riserva** (1 Alfa conservata per Fase 2-3 se Ondata 4 fallisce). **[INFERRED — statblocchi confermati, numeri di dispiegamento da tarare DM-side]**.
 - **Compagnia del Teschio Nero**: riserva élite, non impegnata fino a Fase 3-4 (Avatar/Mythal).
 
 ---
@@ -78,7 +78,7 @@ Riferimento dettagliato: `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.m
 
 ## 4. Composizione Forza per Fase della Battaglia
 
-Riferimento struttura: `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAN-STRUTTURA.md` §2-§7.
+Riferimento struttura: `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md` §2-§7.
 
 ### Fase 0 — Notte dei Drow (pre-assedio, T-1)
 

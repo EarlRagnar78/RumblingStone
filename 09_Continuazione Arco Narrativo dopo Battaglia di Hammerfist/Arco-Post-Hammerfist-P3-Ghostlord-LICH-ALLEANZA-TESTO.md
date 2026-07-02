@@ -123,7 +123,7 @@ Sfida: combattimento CR 13–14 tosto.
 ## 6. Impatto sulla campagna
 
 - Se il Ghostlord NON aiuta l’Orda:  
-  - Nella battaglia finale stile Brindol/Rethman, una **grossa ondata di non morti** prevista dal piano militare della Red Hand è annullata o fortemente ridotta (CR dell’assalto totale diminuisce di 1–2 step).[web:78][web:101]  
+  - Nella battaglia finale stile Brindol/Rethmar, una **grossa ondata di non morti** prevista dal piano militare della Red Hand è annullata o fortemente ridotta (CR dell’assalto totale diminuisce di 1–2 step).[web:78][web:101]  
 - Se viene distrutto prima che l’Orda lo usi:  
   - Effetto simile, ma senza possibilità di futuri favori.  
 - Se si schiera con la Red Hand (PG falliscono/lo insultano):  

@@ -3,11 +3,11 @@ Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE0-NOTTE-DEI-DROW-TESTO.md
 
 # Battaglia Finale – Fase 0  
 
-Notte dei Drow al Tempio di Rethman (CR 14–15)
+Notte dei Drow al Tempio di Rethmar (CR 14–15)
 
 ## 1. Premessa
 
-La notte prima dell’assedio completo, un commando drow e aberrazioni fungine emerge dai tunnel sotterranei sotto Rethman per colpire dall’interno il **Tempio principale**.[web:86][web:92]  
+La notte prima dell’assedio completo, un commando drow e aberrazioni fungine emerge dai tunnel sotterranei sotto Rethmar per colpire dall’interno il **Tempio principale**.[web:86][web:92]  
 Obiettivo nemico: distruggere/sacrileggiare il tempio, uccidere i chierici e rubare un **Artefatto Maligno** custodito nelle cripte, legato ai piani di Tiamat/Madre dei Funghi.[web:74][web:88]
 
 I PG sono in città a preparare difese, dormire o pianificare quando scatta l’allarme (campane del tempio, grida, tremore dalle fondamenta).

@@ -49,7 +49,7 @@ For full narrative details, see `campaign/lore/campaign-history.md`.
 | Sonjak | Drow Cleric Matrona | ~14 | 🔴 **ACTIVE** | Underdark/Surface ops | Pre-02 → 09 |
 | Zalkatar | Illithid Warlock Drow | 13 | 🔴 **ACTIVE** | Invisible Tower (Dauth) | 09-P2A |
 | Wyrmlord Saarvith | Fighter/Dragon Disciple | 12 | 🔴 **ACTIVE** | Lake Rhest ruins | 09-P2 |
-| Regiarax | Adult Black Dragon | 13 | 🔴 **ACTIVE** | Lake Rhest | 09-P2 |
+| Regiarix | Adult Black Dragon | 13 | 🔴 **ACTIVE** | Lake Rhest | 09-P2 |
 | Xal'thor | Illithid Commander (Psionic) | ~14 | 🔴 **APPROACHING** | With Githyanki fleet | 09-P2B |
 | Azarr Kul | High Wyrmlord (half-blue-dragon) | 15 | 🔴 **ACTIVE** | With the horde | 09-P3 |
 | Tyrgarun | Very Old Blue Dragon | 20 | 🔴 **ACTIVE** | With Azarr Kul | 09-P3 |
@@ -99,7 +99,7 @@ For full narrative details, see `campaign/lore/campaign-history.md`.
 [CURRENT] Post-Hammerfist Personal Quests (Arc 09, parallel):
     ├── P1: Hella — Sacred Forest druid ritual (Avatar transformation)
     ├── P2A: Artemis — Invisible Tower (vs Zalkatar CR 13, Ring evolution)
-    ├── P2: Rhest — Sunken City (Wyrmlord Saarvith + Regiarax Black Dragon CR 13)
+    ├── P2: Rhest — Sunken City (Wyrmlord Saarvith + Regiarix Black Dragon CR 13)
     ├── P2B: Tordek — Tournament at Dauth (Otto Porte chakra gates + Githyanki attack)
     │   └── Day 3 interrupted by Githyanki Red Dragon + Xal'thor Illithid Commander
     └── P3 Alliances: Starsong Hill elves, Ghostlord negotiation, Sabotaggio Drow

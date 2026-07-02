@@ -145,7 +145,7 @@ Lythiel resta a Hammerfist 24 ore. Dorme con Inathiel sui bastioni. La mattina d
 - **Vivido:** un'antica città lacustre semisommersa con torri rotte. Sopra le torri **stendardi rossi del Red Hand**. Una grande ombra di **drago nero** vola nel cielo basso. **Hobgoblin guerrieri** patrugliano in gruppi da 8.
 - **Saraah dice:** *"Rhest. Non avevo capito che fosse occupata. I miei esploratori l'hanno solo sorvolata di recente — hanno detto 'razorfiend nelle paludi, niente di anomalo'. Ma il rito mostra di più. C'è una **base operativa** del Red Hand. Hanno un comandante che cavalca un drago nero adulto."*
 - **Sapienza Locale CD 16 (Hella o un PG presente):** Rhest è un'antica città elfica caduta secoli fa, ora rovine. **Lake Rhest** è famosa nel Cannath Vale.
-- **NOTA DM:** questa è la **base canonica di Wyrmlord Saarvith + Regiarax** (vedi `Arco-Post-Hammerfist-P2-RHEST-*.md` esistenti). La divinazione conferma quello che la canonica esistente già dice. Il **valore narrativo** è dare al party un hook **proattivo** (non aspettano di arrivarci, sanno).
+- **NOTA DM:** questa è la **base canonica di Wyrmlord Saarvith + Regiarix** (vedi `Arco-Post-Hammerfist-P2-RHEST-*.md` esistenti). La divinazione conferma quello che la canonica esistente già dice. Il **valore narrativo** è dare al party un hook **proattivo** (non aspettano di arrivarci, sanno).
 - **Cosa Saraah chiede:** *"Se il vostro cammino vi porta vicino a Rhest, prendetevi un giorno per disturbarli. Anche solo un'incursione. Indebolirli ora vale dieci volte più di affrontarli al fianco di Azarr Kul."*
 
 #### Visione 2 — L'ombra scura sul Cerchio

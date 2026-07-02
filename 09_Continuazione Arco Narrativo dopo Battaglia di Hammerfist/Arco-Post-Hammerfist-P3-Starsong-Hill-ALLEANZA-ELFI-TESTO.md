@@ -105,7 +105,7 @@ Sistema semplice in stile “Victory Points” Red Hand:[web:86]
 
 - Alleanza piena:
   - I Tiri‑Kitor forniscono **cavalleria su civette giganti** nella battaglia finale (bonus significativo, equivalente a +5 VP nel modulo).[web:86]  
-  - Supportano anche azioni su Rhest (informazioni su Saarvith/Regiarax) e intercettano messaggi.
+  - Supportano anche azioni su Rhest (informazioni su Saarvith/Regiarix) e intercettano messaggi.
 
 - Alleanza parziale:
   - Supporto limitato (es. solo pattuglie di ricognizione, 1 piccolo contingente alla battaglia finale).
@@ -117,6 +117,6 @@ Sistema semplice in stile “Victory Points” Red Hand:[web:86]
 
 ## 7. Collegamenti
 
-- Rhest: Tiri‑Kitor conoscono bene le rovine e i movimenti di Regiarax, possono dare vantaggi su approccio e sorprese.  
+- Rhest: Tiri‑Kitor conoscono bene le rovine e i movimenti di Regiarix, possono dare vantaggi su approccio e sorprese.  
 - Ghostlord: informazioni sulle rotte della Red Hand verso il Thornwaste.  
-- Battaglia finale (Rethman/Brindol): cavalleria volante elfica per contrastare draghi, manticore e unità volanti dell’Orda.[web:86]
+- Battaglia finale (Rethmar/Brindol): cavalleria volante elfica per contrastare draghi, manticore e unità volanti dell’Orda.[web:86]

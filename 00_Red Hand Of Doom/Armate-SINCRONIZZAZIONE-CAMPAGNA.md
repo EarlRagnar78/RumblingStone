@@ -199,7 +199,7 @@ File Arc-09 che consumano questo ledger:
   Ghostlord branch (ostile / neutralizzato / redento).
 - `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md` → consolida
   numeri finali per la battaglia.
-- `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAN-STRUTTURA.md` →
+- `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md` →
   riceve i totali per il briefing DM di battaglia.
 
 ---

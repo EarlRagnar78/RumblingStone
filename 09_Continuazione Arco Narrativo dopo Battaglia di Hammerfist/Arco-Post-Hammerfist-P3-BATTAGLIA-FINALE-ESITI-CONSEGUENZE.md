@@ -1,7 +1,7 @@
 Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ESITI-CONSEGUENZE.md
 =============================================================
 
-# Esiti della Battaglia di Rethman  
+# Esiti della Battaglia di Rethmar  
 
 Conseguenze positive e negative
 
@@ -45,15 +45,15 @@ Prima di dichiarare una vittoria/sconfitta, valuta questi fattori:
 - Azarr Kul e l'Avatar di Tiamat sono definitivamente sconfitti:
   - Avatar disperso nei piani (non è morto, ma non tornerà per anni),  
   - Azarr Kul muore gloriosamente/vergognosamente (a scelta del DM).  
-- Il Mythal si stabilizza permanentemente intorno a Rethman, proteggendo la città.  
+- Il Mythal si stabilizza permanentemente intorno a Rethmar, proteggendo la città.  
 - Le Statue‑Golem rimangono svegle come custodi eternali.  
 - Tutte le ondate della Red Hand si disperdono; solo sacche isolate rimangono (possono essere pulite in poche settimane).
 
 **Conseguenze immediate**:
 
-- Rethman diventa **città sancta**, punto di luce magica sulla mappa (–2 CD a incantesimi di protezione/cura lanciati lì).  
+- Rethmar diventa **città sancta**, punto di luce magica sulla mappa (–2 CD a incantesimi di protezione/cura lanciati lì).  
 - Il Circolo degli Otto rimane per consolidare il Mythal, almeno 1 anno.  
-- I PG guadagnano fama epica: **Eroi di Rethman**, titoli locali, eventualmente terre/titoli di nobiltà.
+- I PG guadagnano fama epica: **Eroi di Rethmar**, titoli locali, eventualmente terre/titoli di nobiltà.
 
 **Conseguenze a lungo termine** (campagna continua):
 
@@ -85,7 +85,7 @@ Gancio narrativo:
 
 **Conseguenze immediate**:
 
-- Rethman è salvata ma ferita: quartieri bruciati, popolazione traumatizzata.  
+- Rethmar è salvata ma ferita: quartieri bruciati, popolazione traumatizzata.  
 - Ricostruzione necessaria (6–12 mesi).  
 - I PG sono riconosciuti come eroi, ma con tono più "sopravvissuti" che "conquistatori".
 
@@ -115,7 +115,7 @@ Gancio narrativo:
 
 **Conseguenze immediate**:
 
-- Rethman è salvata per il momento, ma non è festa totale: la gente sa che potrebbe tornare.  
+- Rethmar è salvata per il momento, ma non è festa totale: la gente sa che potrebbe tornare.  
 - Truppe rimangono mobilitate sulle mura per mesi.  
 - I PG sono esausti, molti alleati sono feriti/morti.
 
@@ -125,7 +125,7 @@ Gancio narrativo:
 - Il Mythal necessita di rinnovamento rituale ogni mese (i PG devono offrire risorse o sacrifici ripetutamente).  
 - La campagna può continuare con:
   - **Ricerca e distruzione della Red Hand nei sotterranei/montagne**.  
-  - **Difesa progressiva di Rethman dalle infiltrazioni**.  
+  - **Difesa progressiva di Rethmar dalle infiltrazioni**.  
   - **Gara contro il tempo prima che il Mythal crolli**.
 
 Gancio narrativo:
@@ -148,13 +148,13 @@ Gancio narrativo:
 
 **Conseguenze immediate**:
 
-- **Rethman cade** o diventa città occupata.  
+- **Rethmar cade** o diventa città occupata.  
 - I PG sono costretti a ritirata tattica, perdita della base di operazioni.  
 - Civili sfrattati, alcuni dei PNG importanti (Tordek, chierici, sindaco, ecc.) muoiono o sono catturati.
 
 **Conseguenze a lungo termine**:
 
-- Intera ramificazione narrativa **"Liberazione di Rethman"**:
+- Intera ramificazione narrativa **"Liberazione di Rethmar"**:
   - I PG devono guerreggiare per mesi/anni per riconquistare la città.  
   - Possibile tradimento interno, presenza di spie/corrotti nella resistenza.  
   - Azarr Kul stabilisce un **Fane permanente** dedicato a Tiamat in città, amplificando il suo potere.
@@ -166,7 +166,7 @@ Gancio narrativo:
 
 Gancio narrativo:
 
-- "Avete fallito. Rethman è sotto il talone della Red Hand. Ma… non è finita. Nel sottosuolo, una resistenza si raduna. Vi cercano. Siete ancora gli ultimi eroi rimasti?"
+- "Avete fallito. Rethmar è sotto il talone della Red Hand. Ma… non è finita. Nel sottosuolo, una resistenza si raduna. Vi cercano. Siete ancora gli ultimi eroi rimasti?"
 
 ---
 
@@ -177,7 +177,7 @@ Gancio narrativo:
 **Cosa accade**:
 
 - Avatar trionfa; Azarr Kul diventa essenzialmente un semidio locale.  
-- Rethman è rasa al suolo o completamente corrotta.  
+- Rethmar è rasa al suolo o completamente corrotta.  
 - Il Circolo degli Otto è **annientato** (nessun Mythal).  
 - La Red Hand non si ritira: marcia verso obiettivi maggiori (Dauth, il regno intero).
 
@@ -200,7 +200,7 @@ Alternativa più cruda:
 
 Gancio narrativo:
 
-- "Rethman brucia dietro di voi. Potete sentire il canto di Tiamat che echeggia dalle statue profanate. La Red Hand ha vinto. Ma… nei boschi a est, dicono che c'è una comunità di druidi che non si piega. Forse non è finita. Forse."
+- "Rethmar brucia dietro di voi. Potete sentire il canto di Tiamat che echeggia dalle statue profanate. La Red Hand ha vinto. Ma… nei boschi a est, dicono che c'è una comunità di druidi che non si piega. Forse non è finita. Forse."
 
 ---
 
@@ -210,7 +210,7 @@ Gancio narrativo:
 
 **Cosa accade**:
 
-- Non solo i PG perdono; Rethman viene letteralmente distrutta e consacrata a Tiamat.  
+- Non solo i PG perdono; Rethmar viene letteralmente distrutta e consacrata a Tiamat.  
 - Circolo degli Otto: **tutti morti**.  
 - Alleati principali (Tordek, Artemis, Tiri‑Kitor) decimati o schiavizzati.  
 - L'Avatar rimane sulla piana come **sigillo permanente** di Tiamat sul mondo.
@@ -251,7 +251,7 @@ Gancio narrativo:
   - Guadagna la capacità permanente di trasformarsi in **avatar elementale minore** 1 volta/settimana (costi spirituali).  
   - La Collana non è più solo oggetto: diventa parte del suo corpo magico.  
   - Comunione mensile con gli spiriti della natura.  
-  - Potrebbe diventare **Avatar custode di Rethman**, con doveri rituali annuali.
+  - Potrebbe diventare **Avatar custode di Rethmar**, con doveri rituali annuali.
 
 - Se non ha completato la quest:  
   - Ultima chance durante il Mythal: il Circolo offre accesso alla vera apoteosi se sacrifica altro (vedi sotto).
@@ -292,7 +292,7 @@ Possibile nuovo nemico:
 
 ## 7. Conseguenze ambientali e sociali
 
-### Su Rethman
+### Su Rethmar
 
 - **Esiti positivi**: La città diventa **centro di luce magica**, attrae avventurieri, commercianti, pellegrini. Economia fiorisce. Popolazione guarda ai PG come eroi locali.
 
@@ -301,7 +301,7 @@ Possibile nuovo nemico:
 ### Su alleati principali
 
 - **Tordek** (Tiri‑Kitor):
-  - Se vittoria: diventa ambasciatore ufficiale a Rethman, apre nuove rotte commerciali.  
+  - Se vittoria: diventa ambasciatore ufficiale a Rethmar, apre nuove rotte commerciali.  
   - Se sconfitta: muore gloriosa-mente oppure ritirata disgustata (relazione con PG tesa).
 
 - **Artemis Learmount** (Dauth):
@@ -374,12 +374,12 @@ Possibile nuovo nemico:
 
 ### Vittoria Epica
 
-> "Mentre l'ultimo grido dell'Avatar si disperde nei piani, vedete il cielo rasserenato. Le Statue di Rethman brillano di luce propria, custodi eterni contro il caos. Il Circolo degli Otto si inginocchia dinanzi a voi, non per reverenza, ma per gratitudine. 'Avete salvato non solo una città', dice l'arcidruida anziana, 'ma l'intera regione. Il vostro nome risuonerà nei secoli.'  
+> "Mentre l'ultimo grido dell'Avatar si disperde nei piani, vedete il cielo rasserenato. Le Statue di Rethmar brillano di luce propria, custodi eterni contro il caos. Il Circolo degli Otto si inginocchia dinanzi a voi, non per reverenza, ma per gratitudine. 'Avete salvato non solo una città', dice l'arcidruida anziana, 'ma l'intera regione. Il vostro nome risuonerà nei secoli.'  
 > Ma sentite ancora, nel profondo, un sussurro caldo e antico: la voce di Tiamat che vi maledice e promette ritorno. Non è finita. È soltanto… sospeso."
 
 ### Vittoria Tattica
 
-> "Rethman è salva, ma lo prezzo è alto. Quartieri interi ancora in fiamme, migliaia di morti, il Mythal palpita fragile come un battito di cuore appena ripreso. Il Circolo è esausto. 'Abbiamo vinto', dice Artemis Learmount col volto stravagato, 'ma quanto a lungo potremo tenere? Vi servirà vigilanza… per sempre.'  
+> "Rethmar è salva, ma lo prezzo è alto. Quartieri interi ancora in fiamme, migliaia di morti, il Mythal palpita fragile come un battito di cuore appena ripreso. Il Circolo è esausto. 'Abbiamo vinto', dice Artemis Learmount col volto stravagato, 'ma quanto a lungo potremo tenere? Vi servirà vigilanza… per sempre.'  
 > Mentre guardate l'orizzonte, vedete fuochi lontani: il resto della Red Hand che si ritira. Sanno che torneranno. E voi lo sapete."
 
 ### Pareggio Glorioso
@@ -389,12 +389,12 @@ Possibile nuovo nemico:
 
 ### Sconfitta Parziale
 
-> "Rethman brucia. Azarr Kul cammina sulle mura, proclamando la vittoria di Tiamat. L'Avatar attende sopra la piazza, immobile, immortale. Avete fallito.  
+> "Rethmar brucia. Azarr Kul cammina sulle mura, proclamando la vittoria di Tiamat. L'Avatar attende sopra la piazza, immobile, immortale. Avete fallito.  
 > Ma nei sotterranei, nel bosco a est, fra i rifugiati che fuggono, una voce sussurra: 'Non è finita. La resistenza continua. Tornerete?'  
 > Potete scegliere di fuggire, di tornare una notte e sabotare da dentro, di scappare per cercare armi più potenti. La storia non è finita. È solo cambiata di forma."
 
 ### Sconfitta Strategica
 
-> "Il cielo è rosso sangue. Rethman è un cumulo di macerie consacrate. L'Avatar siede come una montagna di pietra nera nel centro della piazza, e il canto di Tiamat echeggia dai crepacci della terra. Avete perso.  
+> "Il cielo è rosso sangue. Rethmar è un cumulo di macerie consacrate. L'Avatar siede come una montagna di pietra nera nel centro della piazza, e il canto di Tiamat echeggia dai crepacci della terra. Avete perso.  
 > Ma ascoltate: lontano, nei boschi, il suono di un corno da guerra. Una comunità di elfi resiste ancora. Druidi sconosciuti raccolgono i sopravvissuti. La resistenza non è morta.  
 > La domanda è: lo siete?"

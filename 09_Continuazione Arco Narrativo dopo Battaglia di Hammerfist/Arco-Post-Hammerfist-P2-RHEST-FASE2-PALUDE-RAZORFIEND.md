@@ -27,6 +27,6 @@ Arco-Post-Hammerfist-P2-RHEST-FASE2-PALUDE-RAZORFIEND.md
 ## 3. Impatto narrativo
 
 - Distruggere il nido/larve = importante colpo alla Red Hand:
-  - toglie un’arma d’assedio biologica dalla futura Battaglia di Rethman.  
+  - toglie un’arma d’assedio biologica dalla futura Battaglia di Rethmar.  
 - Se i PG falliscono o ignorano il nido:
   - puoi usare **razorfiend supplementari** come parte delle ondate nella Battaglia Finale.

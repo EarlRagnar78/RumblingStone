@@ -1,7 +1,7 @@
 Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md
 =============================================================
 
-# Stat blocchi epici – Battaglia Finale Rethman (D&D 3.5)
+# Stat blocchi epici – Battaglia Finale Rethmar (D&D 3.5)
 
 Pensati per PG livello 13–15, CR scena 16–18.  
 Adatta leggermente pf o incantesimi alla potenza reale del tuo gruppo.

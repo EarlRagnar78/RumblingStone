@@ -121,7 +121,7 @@ Setup iniziale:
 ### Regiarix ucciso, Saarvith fugge
 
 - Saarvith può tornare più avanti come:
-  - sniper contro incantatori nella Battaglia di Rethman,  
+  - sniper contro incantatori nella Battaglia di Rethmar,  
   - emissario di un nuovo drago nero se rigenera alleanze.  
 - Red Hand perde una risorsa grossa ma non tutta la rete di comando nord.
 

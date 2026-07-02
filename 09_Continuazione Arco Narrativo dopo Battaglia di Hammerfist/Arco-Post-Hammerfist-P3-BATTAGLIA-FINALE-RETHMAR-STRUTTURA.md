@@ -1,7 +1,7 @@
-Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAN-STRUTTURA.md
+Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md
 =============================================================
 
-# Battaglia Finale di Rethman (Brindol Remix) – CR 16–18  
+# Battaglia Finale di Rethmar (Brindol Remix) – CR 16–18  
 
 Basata sulla struttura della Battle of Brindol di Red Hand of Doom[web:86][web:105]
 
@@ -26,7 +26,7 @@ Basata sulla struttura della Battle of Brindol di Red Hand of Doom[web:86][web:1
 ## 2. Fasi della Battaglia (vista d’insieme)
 
 1. **Fase 0 – Notte dei Drow**  
-   - Attacco drow interno con aberrazioni fungine al Tempio di Rethman per rubare un artefatto maligno.  
+   - Attacco drow interno con aberrazioni fungine al Tempio di Rethmar per rubare un artefatto maligno.  
 2. **Fase 1 – Assedio Esterno**  
    - Orda Red Hand: hobgoblin, giganti, draghi, Githyanki e supporto aereo.  
 3. **Fase 2 – Ritualisti Draconici**  
@@ -46,7 +46,7 @@ Ogni fase può essere una “scena” di 1 sessione o più, a tua scelta.
 ### Obiettivo nemico
 
 - Un commando drow + aberrazioni fungine entra **dal sottosuolo** durante la notte, prima dell’assedio, per:
-  - penetrare nelle cripte sotto il Tempio di Rethman,  
+  - penetrare nelle cripte sotto il Tempio di Rethmar,  
   - distruggere/sacrilegiare il tempio,  
   - rubare un **Artefatto Maligno** (cuore di drago nero, reliquia di demonio, ecc.) da consegnare a Madre dei Funghi o alla Red Hand.
 
@@ -173,7 +173,7 @@ allora puoi **ridurre** un po’ l’Avatar (meno pf, qualche potere limitato) p
 
 Questo scontro difensivo può essere CR 16–18 a seconda di quanti rinforzi l’Avatar lancia contro i ritualisti.
 
-### Attivazione delle Statue di Rethman
+### Attivazione delle Statue di Rethmar
 
 - Una volta completato il Mythal, gli 8 canalizzano potere nelle grandi statue della città (eroi, santi, re, guardiani), trasformandole in:
 

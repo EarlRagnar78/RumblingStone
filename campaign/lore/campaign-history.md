@@ -281,7 +281,7 @@ The party descends through a chain of connected underground locations:
 - Lake Rhest exploration — sunken city ruins, boat/underwater mechanics
 - Razorfiend encounters in the swamp
 - **Wyrmlord Saarvith** (CR 12, fighter/dragon disciple) commands the area
-- Boss: **Regiarax** Adult Black Dragon (CR 13)
+- Boss: **Regiarix** Adult Black Dragon (CR 13)
 - Consequences: Slows horde 3 days, critical intelligence gathered
 - Source: `Arco-Post-Hammerfist-P2-RHEST-*` (8 files)
 
@@ -408,7 +408,7 @@ and back to the surface for the Red Hand campaign mainline.
   ├── P1: Hella's Quest — Cerchio Sacro della Foresta
   ├── P2A: Artemis's Quest — Torre Invisibile (vs Zalkatar)
   ├── P2B: Tordek's Quest — Torneo Epico di Dauth
-  ├── P2 Rhest: Città Sommersa & Regiarax (Black Dragon)
+  ├── P2 Rhest: Città Sommersa & Regiarix (Black Dragon)
   ├── P3 Alliances: Starsong Hill, Ghostlord, Sabotaggio Drow
   └── P3 FINALE: Battle of Rethmar (5 phases → Azarr Kul + Avatar of Tiamat)
 ```

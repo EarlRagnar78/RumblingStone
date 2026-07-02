@@ -793,4 +793,23 @@ entries — they become campaign history.
             Materiale narrativo/meccanico degli archi 08-09 NON toccato:
             resta preparazione valida (piano ARC-08 A0, criterio di
             accettazione).
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto A, sessione 2 (A7+A6): igiene
+            file, nessun cambio di canone. A7: rimosse le code
+            conversazionali AI in testa a 5 file 00_ dell'arco
+            (Schede_dei_Personaggi, SCHEDE_DI_BATTAGLIA_E_REGISTRO_
+            PERDITE, ATLANTE VISIVO ×2, battle_stats_maps-final) e da
+            un blocco di riepilogo AI in coda a
+            Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md; sostituite con
+            header standard (scopo/stato/data revisione). A6: `01_`
+            riscritto da stub generico in inglese (inventava "Castle
+            Red"/"River Styx"/"Ruins of Eldor") a scheda logistica
+            canonica dell'avanguardia di Fauci di Palude (900 unità,
+            E8): punto di distacco dall'orda al Fane di Tiamat Day 1
+            `[INFERRED]`, composizione a 4 linee + aereo + fianchi
+            (riuso Guida DM), opportunità di interferenza per il
+            gruppo di ricognizione del flashback D6 (Mappe/Hammerfist-
+            Lotto-1-Ricognizione.md), ancoraggio Day 19 (E3, rimando a
+            B6 per la cronologia completa). `03_` deprecato con banner
+            (D12), contenuto non toccato. Buco di numerazione `02_`
+            lasciato aperto per lo schema di rinomina A9.
 ```

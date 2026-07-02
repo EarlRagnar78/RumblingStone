@@ -547,7 +547,7 @@ canone è cambiato; (4) aggiorna la checklist qui sotto.
 
 ### Checklist avanzamento
 
-- [x] A0 (2026-07-02) · [ ] A1 · [ ] A2 · [ ] A3 · [ ] A4 · [ ] A5 · [ ] A6 · [ ] A7 ·
+- [x] A0 (2026-07-02) · [ ] A1 · [ ] A2 · [ ] A3 · [ ] A4 · [ ] A5 · [x] A6 (2026-07-02) · [x] A7 (2026-07-02) ·
   [ ] A8 · [ ] A9 · [ ] A10 · [ ] A11 · [ ] A12 (attende ARC-07 B4)
 - [ ] B1 · [ ] B2 (attende ARC-07 B2) · [ ] B3 · [ ] B4 · [ ] B5 ·
   [ ] B6 · [ ] B7

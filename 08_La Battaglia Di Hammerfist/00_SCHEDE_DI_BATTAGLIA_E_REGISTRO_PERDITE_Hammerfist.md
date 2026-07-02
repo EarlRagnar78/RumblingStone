@@ -1,13 +1,13 @@
-Certamente. Ho compreso perfettamente la necessità: creare uno strumento operativo per il Dungeon Master per gestire la battaglia in modo rapido e visivo, senza dover consultare continuamente le schede complete.
-
-Basandomi sulle migliori pratiche trovate online per la gestione di battaglie campali (spesso ispirate a schede di wargame o a layout di "DM Screen"), ho preparato delle schede di battaglia a griglia. Queste schede raggruppano le unità per tipo, permettendoti di vedere a colpo d'occhio le statistiche chiave e di tracciare le perdite (PFU) e lo stato di ogni singola unità.
-
-Il layout è diviso in tre sezioni chiare: Attaccanti, Difensori e Rinforzi/Eroi, pronte per essere stampate.
-
----
-
 # **SCHEDE DI BATTAGLIA E REGISTRO PERDITE**
 ## *La Battaglia di Hammerfist*
+
+> **Scopo**: strumento operativo da tavolo per il DM — schede a
+> griglia per il combattimento di massa (Attaccanti, Difensori,
+> Rinforzi/Eroi), con tracciamento perdite (PFU) e stato di ogni
+> unità.
+> **Stato**: canonico (materiale di modulo; canone di trama in
+> `campaign/state.md`, non ancora giocato — vedi piano ARC-08 A0).
+> **Ultima revisione**: 2026-07-02.
 
 ### **Come Usare Queste Schede**
 Queste schede sono progettate per velocizzare il combattimento di massa.

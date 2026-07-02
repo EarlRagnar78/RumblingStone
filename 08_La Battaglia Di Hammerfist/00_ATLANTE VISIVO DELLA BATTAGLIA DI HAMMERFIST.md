@@ -1,19 +1,19 @@
-Certamente. Ho creato un "Atlante Visivo" completo per la campagna "La Battaglia di Hammerfist". Questo documento unisce tutte le mappe, sia quelle originali che quelle che abbiamo ridisegnato e aggiunto, in ordine cronologico.
-
-Ogni mappa è accompagnata dalla sua descrizione ufficiale, un prompt dettagliato per generare un'immagine evocativa da mostrare ai giocatori, e una chiara indicazione di dimensioni, scala e dettagli tattici per il DM. Ho incluso viste laterali e prospettiche dove aiutano a chiarire le altezze e le profondità, come da te richiesto, per offrire la massima chiarezza possibile.
-
----
-
 # **ATLANTE VISIVO DELLA BATTAGLIA DI HAMMERFIST**
 *Una Guida Completa alle Mappe Tattiche e Narrative della Campagna*
+
+> **Scopo**: atlante visivo cronologico delle mappe tattiche e
+> narrative dell'arco (descrizioni, prompt immagine, scala, dettagli
+> tattici per il DM); include anche l'appendice di gioco definitiva
+> (schede, regolamento di massa, strumenti di tracciamento) unita in
+> un unico flusso — vedi A8 per la matrice di sovrapposizione con gli
+> altri atlanti del repo.
+> **Stato**: canonico (materiale di modulo; canone di trama in
+> `campaign/state.md`, non ancora giocato — vedi piano ARC-08 A0).
+> **Ultima revisione**: 2026-07-02.
 
 ---
 ## **SESSIONE 1: L'OMBRA SULLA MONTAGNA**
 *Le mappe per la missione di ricognizione iniziale.*
-
-Perfetto. Ecco il documento definitivo, **"L'Atlante Visivo e l'Appendice di Gioco Definitiva"** per la campagna "La Battaglia di Hammerfist".
-
-Questo manuale omnicomprensivo unisce in un unico flusso logico e cronologico tutte le mappe, le schede dei personaggi, le regole per il combattimento di massa e gli strumenti di tracciamento che abbiamo creato e perfezionato. Ogni elemento è stato controllato per garantire che nulla sia stato tralasciato, offrendoti un singolo, solido strumento per gestire ogni aspetto della campagna al tavolo da gioco.
 
 ---
 

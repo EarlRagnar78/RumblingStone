@@ -1,9 +1,13 @@
-Certamente. Ecco il documento finale e completo: **"L'Atlante Visivo Definitivo della Battaglia di Hammerfist"**, ora introdotto da un indice dettagliato per una navigazione semplice e rapida.
-
----
-
 # **L'ATLANTE VISIVO DEFINITIVO DELLA BATTAGLIA DI HAMMERFIST**
 *Una Guida Completa, Cronologica e Dettagliata a Tutte le Mappe della Campagna*
+
+> **Scopo**: atlante visivo completo e cronologico di tutte le mappe
+> della campagna, con indice dettagliato di navigazione.
+> **Stato**: canonico (materiale di modulo; possibile sovrapposizione
+> con altri atlanti del repo — vedi A8 per la matrice ed il master
+> eletto). Canone di trama in `campaign/state.md`, non ancora giocato
+> (piano ARC-08 A0).
+> **Ultima revisione**: 2026-07-02.
 
 ---
 ### **INDICE DELL'ATLANTE**

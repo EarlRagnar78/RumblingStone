@@ -1,9 +1,11 @@
-Assolutamente. Ecco il documento unificato, "LA BATTAGLIA DI HAMMERFIST - APPENDICE DI GIOCO", che raccoglie e ordina tutte le sezioni che abbiamo generato. È stato formattato con interruzioni di pagina per renderlo pronto per la stampa e l'uso diretto al tavolo da gioco.
-
----
-
 # **LA BATTAGLIA DI HAMMERFIST - APPENDICE DI GIOCO**
 ## *Schede dei Personaggi, Unità e Regolamento di Battaglia*
+
+> **Scopo**: appendice di gioco pronta da tavolo — schede dei PNG
+> nemici, unità di massa e regolamento di battaglia dell'Arco 08.
+> **Stato**: canonico (materiale di modulo; canone di trama in
+> `campaign/state.md`, non ancora giocato — vedi piano ARC-08 A0).
+> **Ultima revisione**: 2026-07-02.
 
 ### **INDICE DELLE APPENDICI**
 

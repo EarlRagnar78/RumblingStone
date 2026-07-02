@@ -3055,28 +3055,33 @@ Il morale è un valore da -5 a +5 che si applica ai tiri per colpire e ai tiri s
 
 ### **APPENDICE C: RIASSUNTO XP E RICOMPENSE**
 
-### **SESSIONE 1:**
-- **Ricognizione:** 3.600 XP
-- **Preparazione Difese:** 2.400 XP  
-- **TOTALE:** 6.000 XP (1.500 per PG)
+> **Applica D9** (piano ARC-08) — stessa logica di
+> `hammerfist_encounters-...-final.md`, fonte unica per i dettagli:
+> le Sessioni 1-2 e la prima metà della Sessione 3 ("Ultima
+> Resistenza") si giocano coi **pregen** "Eroi di Hammerfist" (D6) —
+> **zero PX ai Rumbling Stones**, solo bonus quantificati per il
+> finale (tabella di conversione: piano ARC-08 B1, non ancora
+> scritta). Solo da metà Sessione 3 ("Rumbling Stones", D6/E6) i
+> giocatori impersonano i PG reali.
 
-### **SESSIONE 2:**
-- **Assedio Mura:** 4.800 XP
-- **Soffio Drago:** 5.700 XP
-- **TOTALE:** 10.500 XP (2.625 per PG)
+### **SESSIONE 1 (pregen):** 0 PX ai Rumbling Stones (D9) — bonus per il finale in B1
+### **SESSIONE 2 (pregen):** 0 PX ai Rumbling Stones (D9) — bonus per il finale in B1
+### **SESSIONE 3a — Ultima Resistenza (pregen):** 0 PX ai Rumbling Stones (D9) — bonus per il finale in B1
 
-### **SESSIONE 3:**  
-- **Ultima Resistenza:** 4.800 XP
-- **Rumbling Stones:** 5.100 XP
-- **TOTALE:** 9.900 XP (2.475 per PG)
+### **SESSIONE 3b — Rumbling Stones:**
+- **TOTALE:** 2.600 XP (650 per PG) `[INFERRED — proposta dosata, da
+  verificare al tavolo contro la XP reale bancata dal party]`
 
-### **SESSIONE 4:**
-- **Battaglia Finale:** 6.000 XP
-- **Bonus Narrativo:** 2.000 XP
-- **TOTALE:** 8.000 XP (2.000 per PG)
+### **SESSIONE 4 (Rumbling Stones):**
+- **TOTALE:** 4.600 XP (1.150 per PG) `[INFERRED — stessa riserva]`
 
-### **GRAN TOTALE:** 34.400 XP (8.600 per PG)
-*Abbastanza per portare PG da 13° a 15° livello*
+### **GRAN TOTALE PX REALE (solo Rumbling Stones):** 7.200 XP (1.800 per PG)
+*Party APL 13 in ingresso (ARC-07 D8) → resta 13° a fine arco (D9:
+"Hammerfist consolida il 13°"); il grosso dell'esperienza matura
+nelle quest personali di ARC-09. **Nessun passaggio 13°→15°.**
+Nota di verifica EL (finale dichiarato EL 20 su APL 13, precedente
+ARC-06 EL 17): vedi `hammerfist_encounters-...-final.md` §RIASSUNTO
+XP per il dettaglio — rimando a piano ARC-08 B5.*
 *   **Ricompense Materiali Finali:** 50.000 mo in gemme e metalli preziosi per PG, titoli nobiliari di "Thane di Hammerfist", fortezza personale, e un oggetto magico personalizzato creato dai mastri fabbri nanici.
 
 

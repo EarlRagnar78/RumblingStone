@@ -856,4 +856,32 @@ entries — they become campaign history.
             Day 19), già segnalata nel file come legacy in attesa del
             ricalcolo autoritativo di ARMATE-SYNC/B1 — fuori scope per
             questo lotto meccanico.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto A, sessione 4 (A3+A5): nessun
+            cambio di canone di trama, solo XP/terminologia. A3 (D9):
+            la sezione "RIASSUNTO XP E RICOMPENSE" (duplicata in
+            `hammerfist_encounters-...-final.md` e nella Guida DM
+            Appendice C) prometteva 34.400 XP totali (8.600/PG),
+            "abbastanza per portare PG da 13° a 15°" — contraddice D9
+            (party arriva ED esce al 13°, Hammerfist lo consolida).
+            Riscritta in entrambi i file: Sessioni 1-2 + prima metà
+            Sessione 3 ("Ultima Resistenza") = **zero PX** ai Rumbling
+            Stones (si giocano coi pregen, D6) con bonus da quantificare
+            in B1 (non ancora scritto); solo da metà Sessione 3
+            ("Rumbling Stones", passaggio di testimone) e Sessione 4 i
+            PG reali maturano PX, dosati a **7.200 XP totali (1.800/PG)**
+            `[INFERRED — proposta conservativa, da verificare al tavolo
+            contro la XP reale bancata dal party]`, esplicitamente non
+            sufficienti per il 14°. Aggiunta nota di verifica EL
+            (finale dichiarato EL 20 su APL 13, oltre il precedente
+            ARC-06 EL 17 — verifica completa rimandata a B5).
+            A5: terminologia 5e/inglese ripulita nei file `Mappe/`:
+            34 occorrenze `DC n` → `CD n`; skill inglesi (Spot, Hide,
+            Climb, Balance, Strength) → nomi italiani 3.5 (Osservare,
+            Nascondersi, Scalare, Equilibrio, Forza) nei check
+            meccanici; 3 "advantage" colloquiali riformulati in bonus
+            di circostanza espliciti. Non toccata la prosa descrittiva
+            mista IT/EN pura (es. "nowhere hide" come flavor text) né
+            il contenuto di `03_` (deprecato con banner, D12, contenuto
+            non toccato per policy A6) — fuori scope per questo lotto
+            terminologico.
 ```

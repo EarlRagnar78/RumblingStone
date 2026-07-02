@@ -131,7 +131,7 @@ SUD ↓ (Nemici Approcciano)
 | **Bastione G2 Est** | 85-88 | 65-67 | 6m × 4.5m | 40 nani + 2 baliste |
 | **Cancello Principale** | 58-61 | 72-73 | 6m × 3m | HP 120, punto focale |
 | **Ponte Levatoio** | 57-62 | 74-76 | 9m × 4.5m | HP 80, abbassato |
-| **Fossato** | 13-87 | 76-79 | 111m × 6m | 3m profondo, nuotare DC 15 |
+| **Fossato** | 13-87 | 76-79 | 111m × 6m | 3m profondo, nuotare CD 15 |
 
 ---
 

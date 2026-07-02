@@ -221,7 +221,7 @@ S5: P12-Q13 | S6: P21-Q22 | S7: M17-N18 | S8: T17-U18
 
 ### AMBUSH TRIGGERS & POSITIONS:
 
-**8 Bugbear Assassini 🟥 (Hidden, Spot DC 25):**
+**8 Bugbear Assassini 🟥 (Hidden, Osservare CD 25):**
 - **East Tunnel (4):** Y16-Z19 (Wait darkness, observe)
   - Target: Re Thorek (assassination priority)
 - **West Tunnel (4):** H16-I19 (Mirror east)
@@ -237,7 +237,7 @@ S5: P12-Q13 | S6: P21-Q22 | S7: M17-N18 | S8: T17-U18
 - Round 2: Bugbears strike simultaneously E+W (Death Attacks)
 
 **PG Roles:**
-- **Borin (P17):** Spot DC 25 detect bugbears BEFORE strike
+- **Borin (P17):** Osservare CD 25 detect bugbears BEFORE strike
 - **Dara (Q15):** Elevated stalagmite S5, Precise Shot
 - **Thorin (P18):** *Blade Barrier* block tunnel, *Mass Cure*
 - **Nala (O17):** *Glitterdust* reveal bugbears, Countersong

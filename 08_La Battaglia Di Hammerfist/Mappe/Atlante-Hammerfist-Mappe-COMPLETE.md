@@ -549,7 +549,7 @@ Mappa mostra tre fasi distinte attacco coordinato Mano Rossa Giorno 1. Frecce in
 
 **Fauci di Palude:** Inizia sorvoli (Preparazione picchiata Giorno 2)
 - Quota: 45m (Fuori gittata baliste 120m)
-- Vola sopra bastioni, torri (Intimidazione, Presenza Terrificante DC 25)
+- Vola sopra bastioni, torri (Intimidazione, Presenza Terrificante CD 25)
 - Soffio occasionale: 1 volta ogni 1d4 round, linea 24m acido, 14d4 danni
   - Target priorità: Concentrazioni difensori, baliste crew
 
@@ -796,7 +796,7 @@ Cortile Interno ridotto inferno fumante. Pozze acido verde corrosivo steam ovunq
   - Distance: 50m iniziale (2 round before reach cortile)
   - Velocity: 30m/round (Aggressive pursuit)
 - **Warchief Orchesco:** Leading charge
-  - Challenge bellow: "Nani codardi fuggire!" (Intimidate DC 18)
+  - Challenge bellow: "Nani codardi fuggire!" (Intimidate CD 18)
 
 **Objective:** Evacuate ALL 90 nani attraverso ingresso segreto PRIMA orchi reach.
 
@@ -866,10 +866,10 @@ Tunnel principale apre caverna più ampia piena stalagmiti proiettano ombre lung
 **IMBOSCATA BUGBEAR (Est + Ovest):**
 - **8 Bugbear Assassini Totali:** Rogue 5/Assassin 2, CR 7 ciascuno
 - **Tattiche:**
-  - Hide in Shadows: Bonus +12 (Darkness tunnel + racial)
-  - Observe: Spot CD 25 notarli PRIMA attaccano
+  - Nascondersi in Ombra: Bonus +12 (Darkness tunnel + racial)
+  - Osservare CD 25 per notarli PRIMA che attacchino
   - Target: Isolated creatures O Re Thorek (High-value)
-  - Death Attack: DC 16 Fort O paralysis 1d6+2 round
+  - Death Attack: CD 16 Fort O paralysis 1d6+2 round
   - Sneak Attack: +5d6 damage FIRST strike
 - **Trigger:** Attaccano quando nani al centro (Maximum targets vulnerable)
 
@@ -893,13 +893,13 @@ Multi-threat simultaneous:
 **Tattiche PG:**
 
 **BORIN:**
-- Spot Check CD 25: Notice Bugbear PRIMA strike (Critical!)
+- Osservare CD 25: nota i Bugbear PRIMA che colpiscano (Critico!)
 - Se notice: Intercept (Move + Ready attack vs emerging)
 - Se miss: React post-attack (Damage already done)
 
 **DARA:**
 - Ranger Favored Enemy (Goblinoids): +4 vs Hobgoblin/Bugbear
-- Position: Elevated stalagmite (Climb CD 10, +2m height advantage)
+- Position: Elevated stalagmite (Scalare CD 10, +2 di circostanza per il terreno rialzato)
 - Precise Shot: Target Bugbear mixed melee
 
 **THORIN:**
@@ -997,7 +997,7 @@ Caverna naturale bellezza mozzafiato, cathedral-like grandezza. Soffitto 40m alt
 - Focus: Tenere nani engaged mentre ondata 3 arrives
 
 **Ondata 3 (Round 6-8): 15 BUGBEAR ASSASSINI**
-- Stealth approach (Hide +12)
+- Stealth approach (Nascondersi +12)
 - Target: Leaders + Re Thorek (Assassination attempts)
 - **Interrupted:** PG apparizione Round 8 = Surprise reversed!
 
@@ -1076,7 +1076,7 @@ Vista laterale (side profile) mostra vantaggio tattico geografico nani: Hammerfi
 **Vantaggio Carica Downhill:**
 - **Velocity:** +50% movement (90 nani reach 100m in 2 round instead 3)
 - **Impact:** +2 damage all charge attacks (Momentum)
-- **Morale:** +2 additional (Psychological advantage)
+- **Morale:** +2 aggiuntivo (bonus di circostanza psicologico da carica in discesa)
 - **Enemy Penalty:** -2 AC caught off-guard (Retreat mentality)
 
 **Countdown Charge:**
@@ -1129,7 +1129,7 @@ Rappresenta absolute APEX campagna - every element converges single moment glory
 - **Maestro Tempestas:** Altitude 60m, conducts storm
   - *Control Weather* + *Call Lightning Storm* combo
   - Fulmini: 10d6 electrical, 1/round auto-target Fauci
-  - Nubi nere: Oscurano drago visibility (-4 Spot)
+  - Nubi nere: Oscurano drago visibility (-4 Osservare)
 
 **Fauci di Palude (Desperate):**
 - **Altitude:** Variable 30-45m (Evading gufi)

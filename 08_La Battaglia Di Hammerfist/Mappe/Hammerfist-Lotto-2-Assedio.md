@@ -95,7 +95,7 @@ NORD ↑ (Verso Montagna)                                     GRIGLIA 120 COLONN
 78 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩
 79 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩
 80 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩
-   └──────────────────────────────┘ Fossato: 6m largo, 3m profondo, Nuotare DC 15
+   └──────────────────────────────┘ Fossato: 6m largo, 3m profondo, Nuotare CD 15
 
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 SUD ↓ (Nemici Approcciano)
@@ -140,7 +140,7 @@ SUD ↓ (Nemici Approcciano)
 **FOSSATO:**
 - Width: Colonne A77-AZ79 (intero sud, 6m largo)
 - Profondità: 3m
-- Acqua corrente: Nuotare DC 15 o annegare
+- Acqua corrente: Nuotare CD 15 o annegare
 - Through: 2 rounds (1 nuotare, 1 scalare uscita)
 
 **CORTILE ESTERNO (Zona Combattimento):**
@@ -371,7 +371,7 @@ VISTA DAL BASSO (Bastioni) GUARDANDO ALTO ↑
 **Meccaniche Momento:**
 - Area: Cono 18m (copre TUTTA walkway bastioni)
 - Danni: 14d4 acido (Media 35)
-- TS: Riflessi DC 29 dimezza (VERY hard!)
+- TS: Riflessi CD 29 dimezza (VERY hard!)
 - Targets: Re Thorek + 10 Guardie + Borin + Thorin (13 totali)
 
 **Risultato Probabile:**
@@ -397,7 +397,7 @@ FASE 1: BOMBARDAMENTO (Round 1-5)
 
          🐉 Drago Circola 300m (Intimidazione)
          │
-         ▼ Presenza Terrificante DC 25
+         ▼ Presenza Terrificante CD 25
          
 200m → 🎯🎯🎯🎯🎯🎯🎯🎯 8 Giganti Lanciano Massi
        │ │ │ │ │ │ │ │ (3d8 each, vs Torri/Mura)

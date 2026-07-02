@@ -1031,4 +1031,14 @@ entries — they become campaign history.
             stato in uscita bloccato in state.md/D8, non la prosa del
             master P3B (che ARC-07 B2 rifinirà); il pointer narrativo
             potrà guadagnare dettaglio, la cucitura no.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto B, sessione 11 (B7): contenuto
+            di modulo nuovo, non stato del mondo. Creato
+            `ARC08-00-INDICE.md`: posizione nella campagna (dopo ARC-07
+            D2/D16, sync Day 19), struttura a due tempi D6/D9 con
+            disambiguazione nomi D2, ordine di lettura per il DM (10
+            passi), cosa stampare, tabella file→ruolo→stato (canonici /
+            deprecati / servizio, dalla matrice A8), elenco deliverable
+            ancora da produrre (B3/B4/B5/C1-C4/A12), nota
+            branch-per-group. Riempie il buco di numerazione 00_ (dopo
+            A9) col deliverable previsto, senza file riempitivi.
 ```

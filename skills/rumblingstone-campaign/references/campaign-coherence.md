@@ -47,8 +47,8 @@ of events.
 | Hella dies in Crown Chamber | 06 | Died, then resurrected at Eternal Forge with cost |
 | Cuore di Moradin spent for Hella's resurrection | 07 | Single-use artifact; cannot be re-used |
 | Ruby gem of Corona spent at year -1000 battle | 07 | Single-use already expended |
-| Hammerfist siege: 210 dwarves killed, 90 survive | 08 | Death toll fixed; named survivors fixed (Re Thorek, Dana Forgiapietra) |
-| Fauci di Palude (black dragon) escapes Hammerfist gravely wounded | 08 | Escaped; can return wounded |
+| Hammerfist siege: 210 dwarves killed, 90 survive | 08 | Design target — **canone PREPARATO, non ancora giocato** (Arc 08 is ⬜ pianificato as of 2026-07-02, table stopped at Arc 07 in progress; see `campaign/state.md` §0/§8). Locks for real only once the arc is actually played at the table |
+| Fauci di Palude (black dragon) escapes Hammerfist gravely wounded | 08 | Design default branch — **canone PREPARATO, non ancora giocato** (same caveat as above; see piano ARC-08 D10 for the conditional-branch treatment) |
 
 ### Adding to history (allowed)
 

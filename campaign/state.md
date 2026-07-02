@@ -14,8 +14,16 @@
 
 **Last updated:** 2026-05-01 (session marker — DM updates)
 **In-world date:** Mirtul, 1372 DR
-**Party APL:** 13
-**Sessions completed:** post-Hammerfist, pre-Rethmar (Arc 09 in progress)
+**Party APL:** 13 (ARC-07 D8 — livello reale già raggiunto durante l'Arco 07)
+**Sessions completed:** Arco 07 **in corso** al tavolo — giocati: Sala
+della Forgia Eterna (P1-P2), Piano del Fuoco con Topazio recuperato (P3),
+viaggio spirituale di Hella nell'Incudine del Mondo con Durik (P3B-spirito,
+registrato); **in corso: Piano della Terra (P4)**, Smeraldo in palio.
+Restano da giocare: resurrezione fisica di Hella (P3B), viaggio ai
+1.000 anni fa (P5), raccordo al 1372 (D16) — **poi** l'Arco 08 (Battaglia
+di Hammerfist). **Tutto ciò che questo file dice dell'Arco 08 e
+dell'Arco 09 è canone preparato (design), non ancora giocato al tavolo**
+(corretto 2026-07-02, piano ARC-08 A0 — vedi changelog).
 
 > **DM workflow**: per la procedura di aggiornamento fine-sessione e per
 > far partire un nuovo gruppo senza perdere niente, vedi
@@ -36,20 +44,21 @@ Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per det
 | 04 Tomba di Belkram | ✅ | completato | — | 9 | — |
 | 05 Stanza Runica | ✅ | completato | — | 10 | — |
 | 06 Corona di Adamantio | ✅ | completato | — | 11 | — |
-| 07 Portale della Forgia Eterna | ✅ | completato | — | 12 | — |
-| 08 Battaglia di Hammerfist | ✅ | completato | **Day 19 (sync)** | 12→13 | Cerimonia 100 Asce, Custodi Eterni |
-| 09 P1A Quest Hellas (Cerchio Sacro) | 🟡 | in arrivo | Day 20-30 window | 13 | Deadline Day 30 |
-| 09 P1B Cerchio Treant | 🟡 | pianificato | Day 22-28 | 13 | — |
-| 09 P1C Rituale Hellas | 🟡 | pianificato | Day 25-30 | 13 | — |
-| 09 P2 Rhest (Saarvith + Regiarix) | ⬜ | non iniziato | Day 25-32 | 13 | -1 drago se fatto |
-| 09 P2A Torre Invisibile (Zalkatar) | ⬜ | non iniziato | Day 28-35 | 13 | -1 drago se fatto |
-| 09 P2B Torneo di Dauth (Tordek) | ⬜ | non iniziato | Day 25-34 | 13 | +300 mercenari nani |
-| 09 P2C Salvatore Mercante | ⬜ | non iniziato | Day 28-36 | 13 | Sal clock 0/6 |
-| 09 P3 Starsong Hill (Tiri-Kitor) | ⬜ | non iniziato | Day 30-35 | 13-14 | +cavalleria civette |
-| 09 P3 Ghostlord | ⬜ | non iniziato | Day 25-32 | 13-14 | 3 branch: ostile/neutralizzato/alleato |
-| 09 P3 Sabotaggio Campi Drow | ⬜ | non iniziato | Day 30-36 | 13-14 | -Fase 0 + -75 esperimenti fungini (45 Servitori + 30 Sporeborn; 8 Guardiani Neri sopravvivono) |
-| 09 P3 Missioni Brevi CR12 | ⬜ | non iniziato | Day 30-38 | 13-14 | — |
-| **09 P3 Battaglia Finale Rethmar** | ⬜ | target | **Day 42** | 14 | Fase 0-4 |
+| 07 Portale della Forgia Eterna | 🟡 | **in corso** | — | 13 (D8) | Giocati: Forgia (P1-P2), Piano del Fuoco/Topazio (P3), viaggio spirituale Hella+Durik (P3B-spirito); **in corso: Piano della Terra (P4)** |
+| 07 P3B Resurrezione di Hella + P5 Viaggio 1.000 anni | ⬜ | da giocare | — | 13 | Si gioca DOPO la Terra (ARC-07 D2); raccordo D16 (Rubino) riporta i PG al 1372, Cuore della Montagna → ARC-08 |
+| 08 Battaglia di Hammerfist | ⬜ | **pianificato — canone preparato, NON giocato** | **Day 19 (target sync)** | 13 (consolida, D9) | Esito atteso: vittoria, Cerimonia 100 Asce, Custodi Eterni (piano ARC-08 §0, E1-E8) |
+| 09 P1A Quest Hellas (Cerchio Sacro) | ⬜ | **preparato in anticipo** | Day 20-30 window | 13 | Deadline Day 30 |
+| 09 P1B Cerchio Treant | ⬜ | **preparato in anticipo** | Day 22-28 | 13 | — |
+| 09 P1C Rituale Hellas | ⬜ | **preparato in anticipo** | Day 25-30 | 13 | — |
+| 09 P2 Rhest (Saarvith + Regiarix) | ⬜ | **preparato in anticipo** | Day 25-32 | 13 | -1 drago se fatto |
+| 09 P2A Torre Invisibile (Zalkatar) | ⬜ | **preparato in anticipo** | Day 28-35 | 13 | -1 drago se fatto |
+| 09 P2B Torneo di Dauth (Tordek) | ⬜ | **preparato in anticipo** | Day 25-34 | 13 | +300 mercenari nani |
+| 09 P2C Salvatore Mercante | ⬜ | **preparato in anticipo** | Day 28-36 | 13 | Sal clock 0/6 |
+| 09 P3 Starsong Hill (Tiri-Kitor) | ⬜ | **preparato in anticipo** | Day 30-35 | 13-14 | +cavalleria civette |
+| 09 P3 Ghostlord | ⬜ | **preparato in anticipo** | Day 25-32 | 13-14 | 3 branch: ostile/neutralizzato/alleato |
+| 09 P3 Sabotaggio Campi Drow | ⬜ | **preparato in anticipo** | Day 30-36 | 13-14 | -Fase 0 + -75 esperimenti fungini (45 Servitori + 30 Sporeborn; 8 Guardiani Neri sopravvivono) |
+| 09 P3 Missioni Brevi CR12 | ⬜ | **preparato in anticipo** | Day 30-38 | 13-14 | — |
+| **09 P3 Battaglia Finale Rethmar** | ⬜ | **preparato in anticipo** | **Day 42** | 14 | Fase 0-4 |
 
 **Legenda**: ✅ completato · 🟡 in corso / imminente · ⬜ non iniziato · ❌ fallito · ⏸ sospeso
 
@@ -746,4 +755,42 @@ entries — they become campaign history.
             §2/§4, FASE1/FASE2-TESTO e INDICE aggiornati per puntare al deck
             (ondate = sfondo). Con il Lotto C l'arco passa da "coerente/completo"
             (A+B) a "memorabile" (piano §5).
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto A, task A0 (REGOLA ZERO — priorità
+            assoluta, eseguito per primo): il cruscotto §0 e l'intestazione
+            segnavano l'arco come già giocato ("00-08 ✅ completato",
+            "Sessions completed: post-Hammerfist", tutte le righe 09
+            "in arrivo/pianificato"), mentre il tavolo reale è fermo
+            all'Arco 07 (Piano della Terra, P4, IN CORSO — vedi piano
+            ARC-07 tabella G0-G6): restano da giocare la resurrezione di
+            Hella (P3B), il viaggio ai 1.000 anni fa (P5) e il raccordo
+            col Rubino (D16) PRIMA della Battaglia di Hammerfist. Nessun
+            cambio di canone di design: solo correzione del cruscotto.
+            Modifiche:
+            - §0: riga 07 → 🟡 in corso (Piano della Terra in corso,
+              livello reale 13 già raggiunto per ARC-07 D8); nuova riga
+              propria "07 P3B Resurrezione di Hella + P5 Viaggio 1.000
+              anni" ⬜ da giocare (ARC-07 D2); riga 08 → ⬜ pianificato
+              — canone preparato, NON giocato, March Clock Day 19
+              etichettato "target sync" invece che fatto compiuto; tutte
+              le righe 09 → ⬜ preparato in anticipo (erano un mix di
+              🟡/⬜ senza criterio).
+            - Intestazione: "Party APL" chiarito come da ARC-07 D8 (già
+              13 durante il Piano della Terra); "Sessions completed"
+              riscritta con il giocato reale (Forgia, Piano del Fuoco/
+              Topazio, viaggio spirituale di Hella+Durik, Piano della
+              Terra in corso) e nota esplicita che tutto l'Arco 08 e
+              l'Arco 09 in questo file sono canone preparato.
+            - `campaign/sessions/2026-05-03_session-3.md` (racconta una
+              sessione Day 19-20 post-Hammerfist mai giocata): aggiunto
+              banner "⚠️ SCRITTO IN ANTICIPO — sessione non giocata" in
+              testa, senza toccare il contenuto (resta bozza di design
+              valida per quando si giocherà davvero).
+            - `skills/rumblingstone-campaign/references/campaign-
+              coherence.md` §"Locked events": annotate le due righe
+              dell'Arco 08 (morti di Hammerfist, fuga di Fauci di
+              Palude) come canone PREPARATO — si bloccano solo quando
+              l'arco verrà effettivamente giocato, non prima.
+            Materiale narrativo/meccanico degli archi 08-09 NON toccato:
+            resta preparazione valida (piano ARC-08 A0, criterio di
+            accettazione).
 ```

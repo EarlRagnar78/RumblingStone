@@ -604,4 +604,17 @@ entries — they become campaign history.
             separare le due fazioni Day-3 fuse per errore (Xal'thor
             Illithid vs Vaereth Githyanki, D5), aggiunto lo smascheramento
             di Sethrax al Round 7.
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto A, sessione 4 (A4+A12): no canon
+            change. A4: ESITI-CONSEGUENZE §7 usava nomi di PG (Tordek,
+            Artemis) come PNG — artefatto di generazione. Sostituiti con
+            Sellyria Starsinger/Killiar Arrowswift (leader Tiri-Kitor,
+            già canonici in Starsong-TESTO), Magister Veylan [INFERRED]
+            (Dauth) e Borin Tozzefort [INFERRED] (comandante 300 nani
+            mercenari), incluso il monologo "Vittoria Tattica" che citava
+            "Artemis Learmount" come parlante. Corretti anche i refusi
+            della sezione (gloriosa-mente, nega-zia, complètamente, lo
+            prezzo, stravagato). A12: banner DEPRECATED aggiunto a
+            inizio.md e Quest 1 – Druida Hellas (brainstorm storico
+            pre-canone, code conversazionali AI rimosse), INDICE li
+            etichetta "storico/deprecato".
 ```

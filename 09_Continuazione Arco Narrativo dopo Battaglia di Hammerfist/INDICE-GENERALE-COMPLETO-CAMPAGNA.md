@@ -51,7 +51,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 
 | File | Contenuto |
 |---|---|
-| `inizio.md` | Brainstorming iniziale, schema arco narrativo, struttura 4 atti, missioni parallele |
+| `inizio.md` | ⚠️ storico/deprecato — Brainstorming iniziale, schema arco narrativo, struttura 4 atti, missioni parallele |
 | `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md` | Timeline Red Hand of Doom (Day 19–42), mappa hex Cannath Vale, contesto Hammerfist (vittoria PG, fortezza danneggiata), sistema urgenza |
 
 **Contenuti Setup:**
@@ -146,7 +146,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 
 | File | Tipo |
 |---|---|
-| `Quest 1 – Druida Hellas: Il Cerchio Sacro della Foresta.md` | Versione originale quest |
+| `Quest 1 – Druida Hellas: Il Cerchio Sacro della Foresta.md` | ⚠️ storico/deprecato — Versione originale quest |
 | `ERRATA-PARTE1-Quest-Hellas-35-Verification.md` | Correzioni 3.5 SRD — stat blocks, action economy (bonus action→swift), Touch/FF AC, BAB/Grapple |
 
 ---

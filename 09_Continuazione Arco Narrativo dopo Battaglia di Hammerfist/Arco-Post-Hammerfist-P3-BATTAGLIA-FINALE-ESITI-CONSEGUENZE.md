@@ -278,7 +278,7 @@ Gancio narrativo:
 Possibile nuovo nemico:
 
 - Se Azarr Kul è vivo ma in fuga: ritorno futuro, possibile nemesi personale con i PG.  
-- Se complètamente morto: il ruolo di "paladino di Tiamat" rimane vacante; tiamat potrebbe inviare un **nuovo campione** mesi dopo.
+- Se completamente morto: il ruolo di "paladino di Tiamat" rimane vacante; Tiamat potrebbe inviare un **nuovo campione** mesi dopo.
 
 ### Se Avatar/Azarr Kul vincono o si ritirano (Esiti D, E, F)
 
@@ -300,16 +300,16 @@ Possibile nuovo nemico:
 
 ### Su alleati principali
 
-- **Tordek** (Tiri‑Kitor):
+- **Sellyria Starsinger / Killiar Arrowswift** (Tiri‑Kitor):
   - Se vittoria: diventa ambasciatore ufficiale a Rethmar, apre nuove rotte commerciali.  
-  - Se sconfitta: muore gloriosa-mente oppure ritirata disgustata (relazione con PG tesa).
+  - Se sconfitta: muore gloriosamente oppure ritirata disgustata (relazione con PG tesa).
 
-- **Artemis Learmount** (Dauth):
+- **Magister Veylan** `[INFERRED — needs DM confirmation]` (Dauth):
   - Se vittoria: stabilisce grande fortezza di Dauth, riconosce i PG come alleati permanenti.  
-  - Se sconfitta: Dauth cade, Artemis è prigioniera/esiliata (gancio per rescue mission).
+  - Se sconfitta: Dauth cade, il Magister è prigioniero/esiliato (gancio per rescue mission).
 
-- **Tordek Tozzefort** (300 nani):
-  - Se vittoria: Hammerfist invia ambasciatore permanente, nega-zia basi logistiche nei PG.  
+- **Borin Tozzefort** `[INFERRED — needs DM confirmation]` (300 nani mercenari di Dauth):
+  - Se vittoria: Hammerfist invia ambasciatore permanente, negozia basi logistiche per i PG.  
   - Se sconfitta: Hammerfist si chiude, invia solo un corpo di ricerca per recuperare i caduti.
 
 - **Ghostlord**:
@@ -379,7 +379,7 @@ Possibile nuovo nemico:
 
 ### Vittoria Tattica
 
-> "Rethmar è salva, ma lo prezzo è alto. Quartieri interi ancora in fiamme, migliaia di morti, il Mythal palpita fragile come un battito di cuore appena ripreso. Il Circolo è esausto. 'Abbiamo vinto', dice Artemis Learmount col volto stravagato, 'ma quanto a lungo potremo tenere? Vi servirà vigilanza… per sempre.'  
+> "Rethmar è salva, ma il prezzo è alto. Quartieri interi ancora in fiamme, migliaia di morti, il Mythal palpita fragile come un battito di cuore appena ripreso. Il Circolo è esausto. 'Abbiamo vinto', dice il Magister Veylan col volto stravolto, 'ma quanto a lungo potremo tenere? Vi servirà vigilanza… per sempre.'  
 > Mentre guardate l'orizzonte, vedete fuochi lontani: il resto della Red Hand che si ritira. Sanno che torneranno. E voi lo sapete."
 
 ### Pareggio Glorioso

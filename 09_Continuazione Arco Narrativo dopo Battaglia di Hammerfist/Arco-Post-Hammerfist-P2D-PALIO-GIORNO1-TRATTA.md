@@ -70,7 +70,9 @@ cavalli**, dall'altra le **contrade**. Ogni abbinamento è gioia o tragedia.
 > petti. — 'Alla Contrada dell'Istrice… tocca…' — e la pausa dura un'era."*
 
 ### 2.1 I cavalli (bomboloni e brenne)
-Prepara **10 cavalli** con un valore-corsa (statblock in STATBLOCCHI). Esempi:
+Prepara **10 cavalli** con un valore-corsa (statblock in STATBLOCCHI) — *10 nomi nelle
+urne, ma con 8 contrade ne corrono 8: i 2 non estratti restano di riserva (utile se un
+cavallo viene avvelenato)*. Esempi:
 - **"Fulmine del Guado"** — *bombolone* (il migliore): Cavalcare-mod alto, +2 velocità.
 - **"Vento"**, **"Bragia"**, **"Saetta"** — buoni.
 - **"Rospo"**, **"Zoppino"** — *brenne* (scarsi).
@@ -117,8 +119,10 @@ Ogni truffa/rischio alza il **Sospetto** della contrada dei PG. Effetti:
 ---
 
 ## 4. Ganci di fine Giorno 1
-- La **prima staffetta** da Rethmar arriva sfinita: *"Le avanguardie hanno passato il
-  Cannath. Il Consiglio… litiga ancora."* → parte il **timer** (INTEGRAZIONE §3).
+- La **prima staffetta** da Rethmar arriva sfinita: *"Terrelton è caduta da giorni — i
+  profughi intasano la Dawn Way. E il Consiglio… litiga ancora."* → parte il **timer**
+  (INTEGRAZIONE §3.1; usa **solo** notizie coerenti col March Clock: al Day 27-31 l'orda
+  marcia nel Channath centrale, l'assedio è al Day 42).
 - Un **barcaiolo dell'Onda** riconosce nei PG (o in Lorana) i volti di Hammerfist → aggancio
   all'alleanza segreta Onda~Istrice.
 - **Sal** (se P2C attivo) compare come **bookmaker** delle scommesse: offre "una pozione

@@ -15,6 +15,35 @@ all'esito (Master §3.2 tabella): Trionfo/Vittoria/Pari/Sconfitta/Disfatta.
 
 ---
 
+## Il Duello di Canto a 3 Scambi (regola completa, stile *Ultimate Intrigue*)
+
+Per i duelli che meritano una scena intera (la Cena, la piazza del Corteo), sostituisci il
+tiro secco con **tre scambi**. Ogni contendente parte con **Determinazione = 3 + mod. Car**
+(la "voce" che gli resta). Il pubblico è l'arena: chi finisce la Determinazione ammutolisce.
+
+**Ogni scambio**: scegli una **tattica**, poi prova di Intrattenere contrapposta (la
+tattica applica i suoi mod.). Chi perde lo scambio perde **1 Determinazione** (2 se perde
+di 10+). Dopo 3 scambi — o quando uno resta a 0 — si applica la tabella esiti del Master §3.2
+(0 Determinazione = **Disfatta**).
+
+| Tattica | Mod. | Effetto speciale |
+|---|---|---|
+| **Ritornello** (trascini la piazza) | +0 | Se vinci, il pubblico canta con te: **+2 al prossimo scambio** |
+| **Mordente** (satira feroce, il verso di scherno) | −2 | Se vinci, il rivale perde **2** Determinazione; se perdi, la piazza fischia **te** (−1 tua) |
+| **Allegoria** (doppio senso politico) | +0 | Se vinci, pianti un **indizio/messaggio** in chiaro davanti a tutti senza esporti (Intuizione DC 20 per i soli destinatari) |
+| **Controcanto** (rubi la melodia del rivale) | −4 | Se vinci, **annulli** l'effetto dell'ultima tattica avversaria e la rigiri (suo malus) |
+| **Voce del rione** (chiami il coro dei contradaioli) | +2* | *Solo se Morale del Rione ≥ 6; se perdi lo scambio, il rione perde 1 Morale |
+
+**Assist dei PG non-bardi**: 1 per scambio — il Capitano intimidisce un disturbatore
+(Intimidire DC 18), il Mangino suggerisce il verso giusto (Con. locali DC 18), il chierico
+"accende" le candele del tavolo al momento del ritornello (scenografia, +1). Ogni assist
+riuscito: **+1** allo scambio.
+
+> **Al tavolo**: chi recita o improvvisa *davvero* un verso (anche brutto ma sentito)
+> prende **+2**. Il duello a scambi dura 5 minuti reali e vale una scena intera.
+
+---
+
 ## 1 · L'OCA — "L'Aria dei Conti"
 *(elegante, quasi liturgica; il canto dei banchieri)*
 **Ritornello**

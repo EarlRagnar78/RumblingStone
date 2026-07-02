@@ -18,7 +18,7 @@
     <circle r="46" fill="#1f6f8a"/><circle r="46" fill="none" stroke="#0d3a4a" stroke-width="3"/>
     <text y="-6" font-family="Georgia,serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">CHANNATH-</text>
     <text y="10" font-family="Georgia,serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">GATE</text>
-    <text y="26" font-family="Georgia,serif" font-size="9" fill="#dff2fb" text-anchor="middle">il Palio · Day 28-32</text>
+    <text y="26" font-family="Georgia,serif" font-size="9" fill="#dff2fb" text-anchor="middle">il Palio · Day 27-31</text>
   </g>
 
   <!-- strada Dawn Way -->
@@ -31,7 +31,7 @@
 
   <!-- staffette -->
   <g font-family="Georgia,serif" font-size="10" fill="#7a1f1f">
-    <text x="340" y="300" text-anchor="middle">◀ staffette ferite dal fronte (ogni giorno del Palio: "le mura cadono!")</text>
+    <text x="340" y="300" text-anchor="middle">◀ staffette dal fronte (notizie dell'avanzata: Terrelton caduta, orda al Crocevia — l'assedio è al Day 42)</text>
     <text x="340" y="320" text-anchor="middle" fill="#1f7a44">▶ se il Palio è vinto entro Day 38: rinforzi + Meraviglia arrivano per la Fase 1</text>
     <text x="340" y="338" text-anchor="middle" fill="#8a5a1f">▶ se vinto Day 39-40: arrivano a Fase 2-3 (metà effetto)</text>
   </g>

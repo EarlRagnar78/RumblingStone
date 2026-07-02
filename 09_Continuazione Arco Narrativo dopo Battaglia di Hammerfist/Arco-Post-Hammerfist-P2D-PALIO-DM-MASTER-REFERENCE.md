@@ -59,9 +59,10 @@ Barbaresco) e ne reggono l'onore per 3–4 giorni. Ogni loro scelta ha un **prez
 6. **Il Corteo Storico e gli Sbandieratori.** Sfilata di **comparse** in armatura
    (il **Duce**), **tamburini** e **alfieri/sbandieratori** (*sbandierata*): non è
    coreografia, è **propaganda e morale** (vedi §3).
-7. **La Mossa.** Nove cavalli fra i **canapi** (funi); il **decimo** entra "di rincorsa"
-   e decide quando lanciarsi: attimo di **finte, nerbate e psicologia** che può fare
-   la corsa. Gestita con **Iniziative contrapposte** + Raggirare.
+7. **La Mossa.** Sette cavalli fra i **canapi** (funi); l'**ottavo** entra "di rincorsa"
+   e decide quando lanciarsi *(8 contrade in corsa; il "nove più uno" storico vale nei
+   Palii a dieci)*: attimo di **finte, nerbate e psicologia** che può fare la corsa.
+   Gestita con **Iniziative contrapposte** + Raggirare.
 8. **La Corsa.** Tre giri della piazza a conchiglia, curve mortali, nerbate legali,
    cadute, il cavallo scosso. Chase Rules (Giorno 3).
 9. **Il Drappellone.** Il "cencio" dipinto: premio sacro. In campagna = **Matrice del
@@ -180,8 +181,17 @@ grigie**: nessuna contrada è del tutto pulita, nemmeno quella dei PG.
 ## 7. Checklist di sessione (DM)
 
 1. Aggiorna **Morale del Rione** e **Onore del Fantino**.
-2. Segna **Sospetto** (truffe) e i **Partiti** attivi.
-3. Applica i **canti** vinti/persi ai fantini.
-4. Verifica il **timer** (staffette da Rethmar) e la **deadline Day 38** per i rinforzi.
-5. A fine arco: determina **contrada vincente** → CONSEGUENZE-ECHI → aggiorna
-   `campaign/state.md` (clock Palio, voto Consiglio, difensori Rethmar).
+2. Segna **Sospetto** (truffe), i **Partiti** attivi e l'**Influenza 0–5** per Capitano
+   (GIORNO2 §1.1).
+3. Applica i **canti** vinti/persi (duello a 3 scambi: BALLATE) e i punti **Masgalano**
+   della comparsa (GIORNO3-4 §2).
+4. Aggiorna le **quote delle scommesse** (GIORNO2 §1.3) — il libro di Sal *anticipa* i
+   sabotaggi.
+5. Verifica il **timer** (staffette coerenti col March Clock, INTEGRAZIONE §3.1), il
+   **calendario consigliato Day 27-31** (rientro per la Seduta 2 del Day 33) e la
+   **deadline Day 38** per i rinforzi.
+6. In corsa: traccia le **Lunghezze** (GIORNO3-4 §4.1), un **evento di giro** (d10, §8) e
+   **un'azione da bordo pista per PG per giro** (§7).
+7. A fine arco: determina **contrada vincente** → CONSEGUENZE-ECHI (incl. **ricompense/XP
+   §7** e **VP assedio**) → aggiorna `campaign/state.md` (clock Palio, voto Consiglio,
+   difensori Rethmar).

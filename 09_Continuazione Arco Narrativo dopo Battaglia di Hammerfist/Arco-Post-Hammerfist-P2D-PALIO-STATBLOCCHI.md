@@ -27,6 +27,29 @@ Mezzelfo Ladro 8. **CA** 19 · **PF** 44 · **Des** 18. **TS** Temp +4 Rifl +10 
 
 ---
 
+### 1.3 Il Roster — gli 8 fantini con nome (personalità, prezzo, leve)
+
+Usa l'archetipo (§1.1/§1.2) per le statistiche; qui trovi **chi sono**. *Onore* = TS contro
+la corruzione (Master §3.3); *Leva* = come comprarli o blindarli.
+
+| Contrada | Fantino | Archetipo | Onore | Vizio / Leva |
+|---|---|---|---|---|
+| **Oca** | **Ser Malco "Speron d'Oro"** | Cavaliere | 4 | Vanitoso: vendibile solo a chi lo tratta da leggenda; teme di invecchiare |
+| **Torre** | **Berta Chiodo** (ex sergente) | Cavaliere | 8 | Incorruttibile con l'oro; ricattabile SOLO con la vita del fratello prigioniero |
+| **Bruco** | **"Ago" Fenzi** | Ladro | 2 | Doppiogiochista nato: resta comprato… dall'ultimo offerente |
+| **Istrice** | **Tessa del Traghetto** (16 anni, profuga) | Ladro (leggera, a pelo) | 9 | Corre per i morti di Drellin: incorruttibile, ma **imprudente** (rischia la vita in curva) |
+| **Drago** | **Magister Ippolito** | Cavaliere (pozioni) | 5 | Dipende dalle sue pozioni: sequestragliele e crolla; scoprilo e rischia squalifica |
+| **Civetta** | **"Il Cortese"** (mai un nome) | Ladro | 3 | Sicario in prestito di Valerius: il SUO prezzo è un segreto sui PG |
+| **Unicorno** | **Fiordaliso** (acrobata di circo) | Ladro (schiva, non colpisce) | 6 | Farebbe qualunque cosa per un ingaggio a teatro dopo la guerra |
+| **Onda** | **Remo Nonnobarca** (nipote del Capitano) | Cavaliere (fondo bagnato +2) | 7 | Il nonno è la sua leva: chi salva/onora i barcaioli lo ha fedele |
+
+> **Uso al tavolo**: i fantini sono i "gladiatori rivali" dell'arco — dagli una battuta
+> ciascuno alla Tratta e alle batterie. **Tessa** (Istrice) e **Berta** (Torre) sono
+> calamite empatiche per i PG; **"Ago"** e **"Il Cortese"** i traditori seriali da
+> sorvegliare; **Malco** l'antagonista da umiliare in pista.
+
+---
+
 ## 2. I Cavalli (bomboloni e brenne)
 
 Statistiche-corsa astratte (mod. applicato ai tiri di Zona del fantino):

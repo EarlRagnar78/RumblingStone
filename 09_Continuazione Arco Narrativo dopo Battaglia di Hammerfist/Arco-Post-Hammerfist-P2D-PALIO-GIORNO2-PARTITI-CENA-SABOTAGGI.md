@@ -10,9 +10,29 @@
 I "partiti" sono **accordi segreti** fra Capitani, stipulati in luoghi discreti (cripte,
 retrobotteghe, chiatte). È qui che i PG-Capitano e i PG-Mangini lavorano.
 
-### 1.1 Meccanica — Skill Challenge dei Partiti
-Ogni partito è una **contrattazione** (Diplomazia/Raggirare/Intuizione/Conoscenze locali,
-DC 20–26 secondo la posta). Struttura di un partito:
+### 1.1 Meccanica — INFLUENZA e Skill Challenge dei Partiti
+
+**Il tracciato d'Influenza (stile *War for the Crown*).** Per ogni Capitano rivale tieni
+un punteggio di **Influenza 0–5** della contrada dei PG presso di lui:
+
+| Influenza | Cosa sblocca |
+|---|---|
+| 0–1 | Porta chiusa: solo convenevoli (o insulti) |
+| **2** | **Ascolto**: il Capitano tratta; puoi proporre partiti |
+| **3** | **Patto**: firma un partito e (di norma) lo onora |
+| **4** | **Confidenza**: ti passa un segreto vero sul Palio |
+| **5** | **Fedeltà**: onora il patto anche sotto pressione (persino la Civetta ci pensa due volte) |
+
+**Come si guadagna**: +1 per prova sociale riuscita in un incontro dedicato (Diplomazia/
+Raggirare/Intimidire, DC 20–26 secondo il Capitano — vedi STATBLOCCHI §4.2); +1 per un
+**favore concreto** (un'informazione, un servizio, la vittoria in un canto contro il suo
+rivale); **−2** per un tradimento o un'umiliazione pubblica. **Tetti caratteriali**: la
+**Civetta** non supera mai 3 (tradisce oltre); l'**Oca** vale l'Influenza *solo finché
+paghi*; **Torre/Istrice/Onda** una volta a 3 non scendono per voci non provate.
+
+Ogni partito resta una **contrattazione** (DC 20–26 secondo la posta), ma richiede
+**Influenza 2+** per sedersi al tavolo e **3+** perché il patto regga da solo. Struttura
+di un partito:
 
 > *"Se il tuo fantino **ostacola la Torre** alla Curva del Mercante, noi ti cediamo
 > [contropartita]."*
@@ -33,6 +53,31 @@ DC 20–26 secondo la posta). Struttura di un partito:
 ### 1.2 La leva delle rivalità
 Ricorda (CONTRADE §Rivalità): a un rione conviene spesso **far perdere il suo nemico** più
 che vincere. Offrire all'Onda di **umiliare l'Oca** (dazi del porto) costa meno che offrire oro.
+
+### 1.3 Il Banco delle Scommesse (e il libro truccato di Sal)
+
+Le scommesse muovono più oro del Drappellone. **Quote di apertura** (dopo la Tratta):
+
+| Cavallo/contrada | Quota | Nota |
+|---|---|---|
+| Chi ha il **bombolone** (Fulmine del Guado) | **2:1** | favorito d'obbligo |
+| Cavalli buoni (Vento, Bragia, Saetta) | 4:1 | |
+| Cavalli medi | 6:1 | |
+| Le **brenne** (Rospo, Zoppino) | **12:1** | la scommessa dei poeti |
+| Piazzato (nei primi 3) | metà quota | |
+| "Disgrazia" (una contrada NON finisce la corsa) | 3:1 | il mercato dei sicari |
+
+**Regole per i PG**: puntata massima al banco ufficiale 500 mo; ai banchi clandestini del
+Bruco nessun limite (ma incassare è un'avventura a sé). Vincite = oro immediato per
+equipaggiamento o partiti.
+
+**Il libro truccato (indizio meccanico!)**: **Sal** tiene il banco clandestino più ricco.
+Le sue quote **si muovono prima dei fatti**: se la quota di un fantino *sale* senza motivo,
+Sal **sa** che è stato comprato o sarà sabotato. Un PG che studia il registro (Professione
+scommettitore / Intuizione **DC 20**, o Conoscenze locali DC 22) **legge il futuro del
+Palio nelle quote** — è il modo più elegante per fiutare la corruzione del proprio fantino
+o il colpo drow in arrivo. Sal lo usa anche come esca: quote "generose" ai PG in cambio di
+piccoli favori (clock Sal, P2C).
 
 ---
 

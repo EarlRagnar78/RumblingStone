@@ -111,7 +111,7 @@ politiche** post-assedio. Meraviglia: quella della contrada che **ha effettivame
 
 ## 5. Patch a `campaign/state.md` (proposta)
 ```
-| 09 P2D Palio di Channathgate | ⬜ | non iniziato | Day 28-36 | 13 | esito → voto Consiglio + Meraviglia + Matrice Mythal; contrada vincente decide i rinforzi |
+| 09 P2D Palio di Channathgate | ⬜ | non iniziato | Day 27-36 | 13 | esito → voto Consiglio + Meraviglia + Matrice Mythal; contrada vincente decide i rinforzi |
 
 # §2 clock
 | Palio di Channathgate | 0/3 | vinto entro Day 38 = rinforzi/Meraviglia pieni; Day 39-40 = metà; Oca vince = RESA |
@@ -131,11 +131,52 @@ politiche** post-assedio. Meraviglia: quella della contrada che **ha effettivame
 | Vince | Voto | Difensori (Δ) | GS assedio | Meraviglia | Note |
 |---|---|---|---|---|---|
 | Torre | Difesa | +300 cav. | −1 F0/F1, Golem da F1 | Golem d'Assedio | autorità militare ai PG |
-| Istrice | Difesa | +150 + morale (+600 Ghostlord) | Selva Viva F1 | Mythal Selva Viva | riscatto profughi |
+| Istrice | Difesa | +150 + morale (+600 **solo con patto** Ghostlord) | Selva Viva F1 | Mythal Selva Viva | riscatto profughi |
 | Drago | Difesa | pergamene | −1 aeree F1, −1/−2 Ritual F2 | Quasi-Mythal | anti-drago |
 | Onda | Difesa mod. | +250 + rifornimenti + evacuazione | −1 F1 | Marea Montante | salva i civili |
 | Unicorno | Difesa misura | +logistica | + vs paura | Arpa Bardica | tiepida |
 | Bruco | grigio | intel + sconto | −GS F1 | Piaga Canali | +clock Collezionista |
 | Civetta | grigio | Muri Illusori | ambiguo (breccia!) | Muri Illusori | traditore |
 | Oca | **RESA** | disastro | peggiore | — | guerriglia urbana |
+
+**Victory Points dell'assedio** (dettaglio in INTEGRAZIONE §4.3): Meraviglia attiva entro
+Day 38 = **+1 VP** · vittoria tardiva = +0 · Palio ignorato = **−1 VP** (più il tiro di
+rottura del Mythal) · vittoria dell'Oca = **−2 VP** + Fase 0-bis.
+
+---
+
+## 7. Ricompense, Tesoro e XP (APL 13)
+
+> Il Palio non paga in dungeon-loot: paga in **oro politico, favori e leggenda**. Ma i
+> numeri servono (WBL 3.5). Riepilogo concreto:
+
+### 7.1 Oro e beni
+| Fonte | Valore |
+|---|---|
+| **Borsa dei partiti** (patti onorati a fine corsa) | 2.000–6.000 mo totali (secondo Influenza e patti) |
+| **Vincite scommesse** (se i PG puntano bene) | puntata × quota (banco ufficiale max 500 mo/puntata; clandestino senza limiti, incasso "avventuroso") |
+| **Premio della Dirigenza** (contrada dei PG vince) | 4.000 mo + un oggetto della cripta del rione (vedi 7.2) |
+| **Masgalano** (miglior comparsa) | scudo d'argento cesellato (1.200 mo) + favore del Gonfaloniere |
+| **Gratitudine dei salvati** (cavallo/fantino protetti, drow respinti) | pozioni/pergamene per ~1.500 mo dal tempio del rione |
+
+### 7.2 Oggetti-premio per contrada (uno, alla vittoria)
+| Contrada | Oggetto della cripta |
+|---|---|
+| Torre | *Fazzoletto-gorgiera della Torre*: +1 CA deviazione e +2 TS vs paura (mura di Rethmar) |
+| Istrice | *Spilla delle Catene Spezzate*: 1/g *Libertà di Movimento* (3 round) |
+| Drago | 2 pergamene arcane di 5°–6° a scelta di Orivel |
+| Onda | *Remo di Valkur* (bastone): 1/g *Camminare sull'Acqua*, +5 Nuotare |
+| Unicorno | *Corno d'arpa*: 1/g *Ispirare Coraggio* +2 anche per non-bardi |
+| Bruco | credito di 5.000 mo sul mercato nero (sconto 30% già incluso) |
+| Civetta | un **segreto ricattatorio** a scelta del DM (vale quanto un oggetto…) |
+| Oca | 6.000 mo sonanti — con vincoli che si scoprono dopo |
+
+### 7.3 XP (a milestone, consigliato)
+- Fine **Giorno 1** (contrada scelta + Prova + Tratta): quota di un incontro **EL 12**.
+- Fine **Giorno 2** (partiti + Cena + stalla drow GS 11-12): quota **EL 13**.
+- Fine **Corsa + Decreto**: quota **EL 14** (piena se l'esito evita la resa).
+- Bonus da story-award: maledizione della Nonna spezzata, rete Halveth scoperta, drow
+  catturato vivo — **EL 11** ciascuno.
+- Totale atteso: ~metà del fabbisogno del 13°→14° livello, coerente con l'arrivo al
+  **livello 14 per la Battaglia di Rethmar** (come da arc tracker).
 | (Palio ignorato) | RESA default | nessuno | Mythal a rischio 35% | — | scenario peggiore |

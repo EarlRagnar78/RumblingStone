@@ -36,7 +36,7 @@
 | **P5** — Viaggio 1.000 anni | `PortaleForgia-P5-DEFINITIVO-PARTE1.md` + `-PARTE2.md` | atto completo | **MASTER lungo** (fonte per il fast-play B3) |
 | P5 — versione precedente | `PortaleForgia-FINAL-P5.md` | prima stesura completa | ~~DEPRECATO~~ (superato da DEFINITIVO) |
 | P5 — sintesi | `PortaleForgia-P5-RICALIBRATO.md` | sintesi "God Mode" | *ricalibrazione/sintesi* → base tono per B3 |
-| P5 — fast-play | `PortaleForgia-P5-FASTPLAY.md` | da creare | **B3** (formato veloce D1) |
+| P5 — fast-play | `PortaleForgia-P5-FASTPLAY.md` | formato veloce D1 | **MASTER da tavolo** (creato in B3) |
 | **P6** — Integrazione | `PortaleForgia-P6-INTEGRAZIONE-Completa.md` | battaglia antica (viva) + finale 1372 (superato) | **MASTER parziale** (sezione 1372 deprecata in A3) |
 | Boss Fauci — correzione | `CORREZIONE-Boss-Fauci.md` | statblock Fauci, doppio profilo GS15/GS12 | *ricalibrazione* (doppio profilo → A3/B5) |
 

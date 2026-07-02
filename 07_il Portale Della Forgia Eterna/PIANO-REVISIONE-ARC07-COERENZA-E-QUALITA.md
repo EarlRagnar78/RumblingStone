@@ -416,6 +416,16 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   esito fisso; (4) puntatori al DEFINITIVO per la versione lunga.
 - **Accettazione**: P5 giocabile in una sessione senza aprire altri file;
   il duello ha mappa+statblock+3 esiti; ogni scena produce un dato per B4.
+- **✅ FATTO (2026-07-02, sessione 5)**: creato
+  `PortaleForgia-P5-FASTPLAY.md` (~6 pagine, master da tavolo D1). 6 scene
+  (Cronache → Thorgrim → infiltrazione+Zog'tar → mura → **duello
+  Skullcrusher** su MAP 7 → Rubino/ritorno), ognuna con read-aloud di 3 righe,
+  prova/scontro ed **► Esito registrato**. Regola di montaggio (prove di
+  gruppo CD fisse, party di 4/APL 13). Duello = unico scontro tattico:
+  mappa (MAP 7 TACTICAL-GRIDS), statblock giocabile GS 12 `[verifica B5]`, **3
+  esiti aperti** (ucciso/ferito grave/fuggito) + conteggio ferite per B4.
+  Puntatori al DEFINITIVO. La Cintura rifiuta di spendere cariche (coerenza
+  Fauci 1372).
 
 ### B4. Il ponte meccanico "La Forgia ricorda le ferite" — [CROSS-ARC, il task più importante]
 - **Evidenza**: P5-DEFINITIVO-PARTE2 r.285: *"Ogni ferita che infliggi ora
@@ -604,7 +614,7 @@ la checklist qui sotto.
 
 - [x] A1 · [x] A2 · [ ] A3 · [ ] A4 · [ ] A5 · [x] A6 · [x] A7 ·
   [ ] A8 · [x] A9 · [ ] A10 · [x] A11
-- [x] B2 · [ ] B1 · [ ] B3 · [ ] B4 · [ ] B5 · [ ] B6 · [ ] B7 ·
+- [x] B2 · [x] B3 · [ ] B1 · [ ] B4 · [ ] B5 · [ ] B6 · [ ] B7 ·
   [ ] B8 · [~] B9 — **parziale (2026-07-02)**: Collana ✅ e
   file-risultati ✅; restano Sonjak, schede Belkram/Urialle, collegamenti
 - [ ] C1 · [ ] C2 · [ ] C3

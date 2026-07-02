@@ -117,3 +117,67 @@ I PG possono:
   - Avatar come statblock ridotto al massimo,  
   - Azarr Kul completamente potenziato,  
   - eventuale sfruttamento dell’Artefatto Maligno se rubato in Fase 0.
+
+---
+
+## 8. IL "QUINTO ATTO" PORTATO IN CAMPO (C5 — potenziamento)
+
+> **Lotto C5 (2026-07-02).** Per **decisione DM D8** non c'è un atto giocato al
+> Fane di Tiamat nel Shaar: **questo rituale È il Fane portato in campo**. Perché
+> regga quel peso, l'altare campale va giocato come **mini-location mappata** con
+> posta, non come "3 stregoni da uccidere". Mappa base:
+> `...FASE2-RITUALISTI-MAPPA.md` (griglia 40×30, scala 1,5 m/q).
+
+### 8.1 — L'altare campale come mini-location (3 anelli)
+
+Riprende i 3 anelli di §5 e li fissa come **incontro completo** (EL ~15-16):
+
+| Anello | Guardie (riuso statblock) | Terreno / hazard |
+|---|---|---|
+| **Esterno** (trincee) | 8-12 hobgoblin (massa) + 1-2 `githyanki-knight-elite-cr10.md` come ufficiali | copertura totale/parziale; buche TS Riflessi CD 15 |
+| **Medio** (guardiani) | 1 drago guardiano (`Abithriax` tipicamente, ARMATE-SYNC §4-Fase2) + 2-4 cultisti draconici (`warpriest-tiamat-cr7.md`) | rocce/menhir = copertura media; il drago si libra a 6-9 m |
+| **Interno** (cerchio) | 3-5 ritualisti (`tiamat-warpriest-elite-cr11.md`) + eventuale artefatto | cerchio runico: entrare = Will CD 18 o 2d6 elementale/round finché il rituale è attivo |
+
+### 8.2 — I 3 foci distruttibili (pf/CD espliciti)
+
+Ogni focus è un altare elementale **distruttibile**. Statistiche fisse (SRD-style,
+oggetti magici rinforzati):
+
+| Focus | CA | pf | RD / difese | Se distrutto |
+|---|---|---|---|---|
+| **Fuoco (rosso)** — NO | 5 (immobile) | **60** | RD 10/magia; RI 18 vs *dispel* | l'Avatar perde il **soffio di fuoco**; −1 round riuscito |
+| **Acido (nero)** — NE | 5 | **60** | RD 10/magia; RI 18 | l'Avatar perde il **soffio di acido**; −1 round riuscito |
+| **Elettricità (blu)** — S | 5 | **60** | RD 10/magia; RI 18 | l'Avatar perde il **soffio di elettricità**; −1 round riuscito |
+| **Cerchio centrale** (non un focus separato: il "cuore") | — | — | si spegne solo se **2 dei 3 foci** sono giù **o** tutti i ritualisti sono neutralizzati | il rituale **collassa** (conta come 0-4 round riusciti) |
+
+- **Distruzione fisica**: pf sopra, RD 10/magia. **Dissolvi magie**: *greater
+  dispel magic* riuscito (contro RI 18) = "annulla 1 round riuscito" (max 1/round
+  per focus), **non** distrugge il focus.
+- **Artefatto Maligno rubato in Fase 0** (se i PG hanno perso Fase 0): è posto su
+  un **4° piedistallo** accanto al cerchio → **+2 CD** a tutti i TS del rituale e
+  **+20 pf** ai foci (80 invece di 60). Distruggerlo/dissacrarlo (Will CD 22 o
+  *dispel evil*/fuoco divino) rimuove il bonus e conta come **−2 round riusciti**.
+
+### 8.3 — LA SCELTA TATTICA ESPLICITA: rompere il rituale **o** tenere le mura
+
+Questo è il cuore di "quinto atto". La squadra speciale che va **oltre le linee**
+per l'altare **non può** contemporaneamente tenere i settori delle mura:
+
+- **Se i PG vanno all'altare**: mentre sono lì, i settori-muro che presidiavano
+  **perdono i loro bonus di comando** → il DM tira i check di Morale (STRUTTURA
+  §9.1) a **−2** per quei settori, o li risolve off-screen (EVENT-DECK §5). Il
+  Fronte può **scendere** mentre il rituale viene interrotto.
+- **Trade-off quantificato**: interrompere il rituale (0-4 round) evita l'Avatar
+  a piena potenza (Fase 3 CR 15-16 invece di 17-18) **ma** costa 1-2 settori-muro
+  (−1/−2 Fronte). Tenere le mura salva il Fronte **ma** lascia salire il rituale
+  (Avatar pieno in Fase 3).
+- **Come si fa "entrambe"**: **solo con alleati**. Se i PG hanno reclutato
+  abbastanza (Tiri-Kitor per l'aria, nani per i varchi, druidi-orsi per i fianchi,
+  Ghostlord per la retroguardia), possono **delegare la tenuta delle mura** agli
+  alleati (ARMATE-SYNC §4) e andare all'altare **senza** il malus. È la ricompensa
+  concreta di aver fatto le quest Arc-09: non "+X numeri", ma **la libertà di
+  essere in due posti insieme**.
+
+**Accettazione C5(1)**: la Fase 2 ha mappa (già §MAPPA), statistiche dei foci
+(pf/CD sopra) e **costi di scelta espliciti** (interrompere vs tenere, entrambe
+solo con alleati).

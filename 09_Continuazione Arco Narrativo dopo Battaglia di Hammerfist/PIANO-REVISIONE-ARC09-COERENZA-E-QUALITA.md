@@ -584,7 +584,20 @@ checklist qui sotto.
   interrogare, emissari Ghostlord). Riusa MISSIONI-BREVI (MB-1…6) e gli
   statblock di Armate-UNITA-NUOVE (tutti verificati esistenti); echi agli
   archi esistenti (Sal, Lorana, Therysol, Collezionista, Zalkatar wildcard).
-- [x] C1 · [x] C2 · [x] C3 · [x] C4 · [ ] C5 · [ ] C6 · [ ] C7 (event deck)
+- [x] C1 · [x] C2 · [x] C3 · [x] C4 · [x] C5 · [x] C6 · [ ] C7 (event deck)
+  **C5+C6 (sessione 20) completo (2026-07-02).** **C5(1)**: FASE2-RITUALISTI-TESTO
+  §8 "quinto atto portato in campo" — altare campale come mini-location (3 anelli
+  con statblock di riuso), **3 foci con pf/CD espliciti** (CA 5, 60 pf, RD 10/magia,
+  RI 18; distrutto = −1 soffio Avatar + −1 round), Artefatto Maligno di Fase 0 come
+  4° focus (+2 CD/+20 pf se rubato), e la **scelta tattica esplicita** rompere il
+  rituale **vs** tenere le mura (trade-off Fronte quantificato; "entrambe" solo
+  delegando agli alleati Arc-09). **C5(2)**: ESITI §11 epilogo **giocato** — 4
+  scene con scelta reale (Thorik/Tordek/Hella/Artemis) + ultima decisione
+  collettiva sul Fane nel Shaar come hook ARC-10 + read-aloud di chiusura. **C6**:
+  ESITI §12 tabella **ricompense di dominio esito×PG** (Custode di Rethmar /
+  Scuola Monastica / Cerchio Sacro urbano / Ambasciatore Arcano) con 1 beneficio
+  meccanico ciascuno (rendita/seguaci/santuario/biblioteca), ridotti in Esito B/C,
+  nulli in D/E/F. Prossimo: C7 (Event Deck).
   **C3+C4 (sessione 19) completo (2026-07-02).** **C3**: sidebar uniforme
   "SE FALLISCONO" in coda a P1C-Rituale-SCALE, P2A-Torre-PARTE4-Boss-Zalkatar,
   P2B-PARTE3-Giorno3, P2-RHEST-FASE4, Ghostlord-TESTO (i 3 rami già presenti in

@@ -398,3 +398,90 @@ Possibile nuovo nemico:
 > "Il cielo è rosso sangue. Rethmar è un cumulo di macerie consacrate. L'Avatar siede come una montagna di pietra nera nel centro della piazza, e il canto di Tiamat echeggia dai crepacci della terra. Avete perso.  
 > Ma ascoltate: lontano, nei boschi, il suono di un corno da guerra. Una comunità di elfi resiste ancora. Druidi sconosciuti raccolgono i sopravvissuti. La resistenza non è morta.  
 > La domanda è: lo siete?"
+
+---
+
+## 11. EPILOGO GIOCATO (C5) — una scena per ogni PG + la scelta sul Fane
+
+> **Lotto C5 (2026-07-02).** Finora l'epilogo era **solo narrato** (monologhi §10).
+> Qui diventa **giocato**: una scena breve per ciascun PG (read-aloud + un beat
+> di scelta reale) da usare **negli Esiti A/B/C** (vittoria), più un'ultima
+> **decisione collettiva** sul destino del Fane nel Shaar come hook per ARC-10.
+
+### 11.1 — Le quattro scene (giocate, non lette)
+
+Ogni scena è ~5-10 minuti al tavolo: un'immagine, una domanda, una **scelta con
+conseguenza** (non decorativa). Ampliano gli abbozzi di §5 e §7.
+
+**Thorik — la Pietra e il Titolo.** *Sulle mura all'alba, i muratori già rialzano
+i conci. Lady Kaal ti porge un rotolo: il Consiglio ti offre un seggio e le terre
+a nord della città.* **Scelta**: accettare (→ C6, Custode di Rethmar) / declinare
+per tornare a Hammerfist da Re Thorek / delegare a Brenna Sorvane (rafforza la
+milizia, hook politico). *Ogni ramo cambia chi comanda Rethmar in ARC-10.*
+
+**Tordek — il Chiostro sul Campo.** *Tra i feriti, alcuni monaci sopravvissuti di
+Ilmater ti guardano come si guarda un maestro. Sorella Maewen: "Il Nord non ha una
+scuola. Tu potresti fondarne una."* **Scelta**: fondare una **scuola monastica**
+(→ C6) / consegnare l'Orbe delle Otto Porte alla Confraternita / tenere l'Orbe e
+proseguire il cammino dei chakra. *Determina se l'Orbe resta col party in ARC-10.*
+
+**Hella — il Seme nella Cenere.** *Dove il soffio dell'Avatar ha bruciato la
+piazza, tu affondi le mani nella cenere e senti qualcosa muoversi. La Collana
+pulsa.* **Scelta**: piantare un **Cerchio Sacro urbano** a Rethmar (→ C6, custode
+druidico) / portare il seme alla Foresta Sacra (rafforza i Tiri-Kitor/druidi) /
+consacrarlo alla memoria dei caduti (bonus morale cittadino permanente). *Definisce
+il legame di Hella con Rethmar.*
+
+**Artemis — la Luce che Litiga.** *Nel silenzio dopo la battaglia, l'Anello è
+tiepido. Due voci — una d'alba, una d'ombra — non litigano più: aspettano.* **Scelta**
+(dipende da MYTHAL-FOCUS §8 PG3 e dalla Torre): scegliere un **patto più leggero**
+/ accettare la profezia di Lathander ("tornerai quando la Luce avrà bisogno") /
+inseguire Zalkatar se fuggito. *Apre o chiude il ramo Mask/Lathander di ARC-10.*
+
+### 11.2 — L'ultima decisione collettiva: il Fane nel Shaar (hook ARC-10)
+
+Il Fane di Tiamat nel Shaar **esiste ancora** (state.md §2.1, Day 1: l'orda ne è
+partita). Con l'Avatar respinto ma non il Fane distrutto, il party affronta una
+**scelta collettiva narrata** (non giocata ora — è il gancio della prossima
+campagna):
+
+- **Lasciarlo** e vegliare (Rethmar come sentinella): ARC-10 = difesa/spionaggio.
+- **Montare una spedizione** al Fane (portare la guerra a casa di Tiamat): ARC-10 =
+  campagna offensiva nel Shaar.
+- **Sigillarlo** cercando un antico rito/arma (ramo "Risveglio di Tiamat" §8):
+  ARC-10 = quest di ricerca.
+
+> **Read-aloud di chiusura (qualunque esito vittorioso)**: *"L'Avatar è disperso,
+> ma nel profondo del Shaar il Fane respira ancora, paziente come la pietra. Avete
+> vinto una battaglia dentro una guerra più antica di voi. Stanotte Rethmar canta.
+> Domani deciderete cosa farne, di quel respiro lontano."*
+
+**Accettazione C5(2)**: la campagna ha una **chiusura giocata** (4 scene con
+scelta reale), non solo letta; il Fane resta come hook esplicito per ARC-10.
+
+---
+
+## 12. RICOMPENSE DI DOMINIO / TITOLO (C6 — benchmark Kingmaker)
+
+> **Lotto C6 (2026-07-02).** §7-8 accennavano a titoli/ambasciate senza meccanica.
+> Qui: per **Esito A/B** (vittoria), cosa ottiene **concretamente** ogni PG, con
+> **1 beneficio meccanico** ciascuno — utile da spendere in ARC-10. Contano
+> **oltre** la ricchezza WBL (`...TESORO-WBL-AUDIT.md`): sono rendite/domini, non
+> loot, e si sommano ai poteri d'artefatto risvegliati di §5.
+
+| PG | Titolo / dominio (Esito A) | Beneficio meccanico | Esito B (ridotto) |
+|---|---|---|---|
+| **Thorik** | **Custode di Rethmar** — seggio nel Consiglio + terre a nord | Ospitalità permanente a Rethmar + **10 PNG di servizio** (guardie/artigiani, GS 1-3) + **1.000 mo/mese di rendita**; 1/mese può convocare **50 miliziani** per una missione | Titolo onorario senza terre: ospitalità + 3 PNG di servizio, niente rendita |
+| **Tordek** | **Fondatore della Scuola Monastica del Nord** (ramo della Confraternita di Ilmater) | Una **scuola** come base: 1/settimana addestramento che dà a un alleato +2 a una prova per 24h; **4 allievi monaci** (Monaco 3) come seguaci; accesso a *raise dead* di Ilmater a costo di favore (C3/DM-QUICKSTART §8.5) | Solo maestro riconosciuto: 2 allievi, nessuna base fissa |
+| **Hella** | **Custode del Cerchio Sacro di Rethmar** (bosco urbano consacrato) | Un **boschetto-santuario** in città: recupero risorse druidiche accelerato lì; **3 druidi minori** (Druido 5) del cerchio; il Morale Cittadino (C2) parte +1 in ogni crisi futura a Rethmar | Legame informale col cerchio: 1 druido, niente santuario stabile |
+| **Artemis** | **Ambasciatore Arcano di Rethmar** (o seggio presso il Circolo degli Otto se resta) | Accesso alla **biblioteca/laboratorio** del Circolo (ricerca incantesimi a costo −25%); **1 contatto arcimago** (Mago 17) consultabile 1/mese; se l'Anello è evoluto, riconoscimento presso i culti di Lathander | Ospite tollerato: consultazione 1/trimestre, niente sconto ricerca |
+
+- **Esito C (Pareggio Glorioso)**: i titoli sono **promessi ma non ancora
+  formalizzati** (la città è troppo fragile) → i benefici meccanici valgono a
+  **metà** e vanno riconfermati in ARC-10 quando Rethmar si stabilizza.
+- **Esiti D/E/F (sconfitta)**: nessun dominio (la città è caduta/occupata); i
+  titoli diventano al più **rivendicazioni** da riconquistare (ramo "Liberazione
+  di Rethmar", §4).
+
+**Accettazione C6**: tabella esito×PG compilata, 1 beneficio meccanico ciascuno,
+spendibile in ARC-10.

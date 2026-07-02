@@ -725,4 +725,14 @@ entries — they become campaign history.
             battaglia non si resuscita", ogni raise = debito; Cuore di Moradin
             ribadito speso, §6). C4: MYTHAL-FOCUS §8 varianti per stato dei 4
             PG-focus coerenti con §6 (nessun potere teorico/speso).
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto C, sessione 20 (C5+C6): contenuto di
+            modulo, non stato del mondo. C5(1): FASE2-RITUALISTI-TESTO §8 —
+            altare campale mappato (3 anelli, 3 foci con pf/CD espliciti,
+            Artefatto Maligno come 4° focus, scelta esplicita rompere-rituale vs
+            tenere-mura con trade-off Fronte). C5(2): ESITI §11 epilogo giocato
+            (4 scene con scelta per PG + decisione collettiva sul Fane nel Shaar,
+            hook ARC-10). C6: ESITI §12 tabella ricompense di dominio esito×PG
+            (Custode di Rethmar / Scuola Monastica / Cerchio Sacro / Ambasciatore
+            Arcano, 1 beneficio meccanico ciascuno). Nessun potere d'artefatto
+            speso "riusato" (§6 rispettata).
 ```

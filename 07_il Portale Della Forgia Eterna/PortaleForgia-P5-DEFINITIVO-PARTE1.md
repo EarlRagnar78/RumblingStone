@@ -19,9 +19,9 @@
 
 **Prima di attraversare portale Anno -1000 (Affresco A6 Sala Forgia), Moradin/Corona/Aegis Fang parlano (voce echeggia ovunque):**
 
-*\"Ascoltat attenti, figli. Ciò che farete ora è delicato. Viaggerete 2.372 anni nel passato. Anno -1000. Non alternate timeline - è PASSATO vero. Reale. Immutabile.*
+*\"Ascoltat attenti, figli. Ciò che farete ora è delicato. Viaggerete 1.000 anni nel passato (≈372 DR). Anno -1000 (conteggio nanico: 1.000 anni prima del 1372). Non alternate timeline - è PASSATO vero. Reale. Immutabile.*
 
-*Cronache Thorgrim menzionano 'Quattro eroi dal futuro salvano Hammerfist dalla Mano Rossa e dal drago Skulldark il Nero'. Quelle cronache ESISTONO perché VOI scriverete. Paradosso Bootstrap. Effetto precede causa. Causa crea effetto. Ciclo chiuso.*
+*Cronache Thorgrim menzionano 'Quattro eroi dal futuro salvano Hammerfist dalla Mano Rossa e dal drago Skullcrusher il Nero'. Quelle cronache ESISTONO perché VOI scriverete. Paradosso Bootstrap. Effetto precede causa. Causa crea effetto. Ciclo chiuso.*
 
 *È confusing, lo so. Ma così DEVE funzionare. Tempo non è linea - è tessuto. E ora siete filo che lo cuce insieme.*
 
@@ -231,9 +231,9 @@ Se Thorik usa potere Cuore Moradin (Benedizione della Forgia - crea aura luce do
 
 *Durante cavalcata, Durin parla (Thorik traduce per altri):*
 
-*'Orda arriva alba. 10.000 nemici. Drago... drago è peggior nemico. Skulldark il Nero - nome suo era antico. È Padre di tutti draghi neri, leggenda dice. 50 anni passati, nonno mio cadde suo attacco. Tutti credevano dopo vittoria Skulldark, no more drago. Ma... era discendente Skulldark, Skullcrusher, che è arrivato due settimane fa sotto comando Zog'tar.*
+*'Orda arriva alba. 10.000 nemici. Drago... drago è peggior nemico. Skullcrusher il Nero - nome suo è già antico e temuto. Dicono discenda dai primi draghi neri delle paludi. 50 anni passati, nonno mio cadde sotto i suoi colpi. Ora è tornato, due settimane fa, sotto comando Zog'tar.*
 
-*Queste informazioni sono CRUCIALI - Skulldark è effettivamente antenato Fauci di Palude 1372!*
+*Queste informazioni sono CRUCIALI - Skullcrusher è il capostipite della stirpe di Fauci di Palude, il drago che assedierà Hammerfist nel 1372!*
 
 *Durin continua: 'Re Thorek ha 800 guerrieri. Sufficienti per muri, maybe. But if drago... if drago breaks gates... is over. Hammerfist cadrà. And will lose hope for millennia.'*
 
@@ -295,7 +295,7 @@ Se Thorik usa potere Cuore Moradin (Benedizione della Forgia - crea aura luce do
 
 *Voce sua è profonda come terremoto:*
 
-*'Durin dice porti artefatto leggendario. Corona di Adamantio. Quella che nonno mio perse 50 anni fa in battaglia contro primo Skulldark. Se true... mostramela, straniero.'*
+*'Durin dice porti artefatto leggendario. Corona di Adamantio. Quella che nonno mio perse 50 anni fa in battaglia contro Skullcrusher. Se true... mostramela, straniero.'*
 
 ---
 
@@ -361,7 +361,7 @@ Se Thorik usa potere Cuore Moradin (Benedizione della Forgia - crea aura luce do
 ║         PIANO BATTAGLIA HAMMERFIST ANNO -1000              ║
 ║         (Dalla Sala dei Consiglio Re Thorek I)             ║
 ║                                                            ║
-║  ═══════════════════════════════════════════════════════  ║\n║                                                            ║\n║  FORZE AMICHE HAMMERFIST:                                  ║\n║    - 800 Guerrieri Nanici Veterani (Grr 4-8)             ║\n║    - 200 Cittadini Armati (Exp 1-3, disperati)          ║\n║    - 50 Chierici di Moradin (Clr 3-6, supporto)         ║\n║    - Re Thorek I (Grr 16) + 15 Guardia Reale (Grr 10-12)║\n║    - VOI QUATTRO (Livello 13 - speranza nascosta!)      ║\n║                                                            ║\n║  FORZE NEMICHE - ORDA DELLA MANO ROSSA:                  ║\n║    - 7.000 Orchi Guerrieri (Bers 2-6)                    ║\n║    - 2.000 Goblin Guerrieri (Warr 1-3)                   ║\n║    - 800 Hobgoblin Soldati (Ftr 3-5)                     ║\n║    - 200 Ogre Mercenari (standard)                       ║\n║    - Zog'tar Deatheye (Barbaro/Warlord, GS 14) - BOSS 1  ║\n║    - Skulldark il Nero (Drago Nero Adulto, GS 12) - BOSS║\n║                                                            ║\n║  OBIETTIVI PRIMARI (VOI QUATTRO):                         ║\n║    1. Infiltrare Campo Nemico (invisibilità + stealth)  ║\n║    2. Raggiungere Tenda Zog'tar senza essere rilevati   ║\n║    3. Uccidere Zog'tar (elimina leader orda)            ║\n║    4. Affrontare Skulldark (drago arriva sente morte)  ║\n║    5. Sopravvivere fino alba (trigger Rubino + ritorno) ║\n║                                                            ║\n║  STRATEGIA GENERALE:                                      ║\n║    Fase 1 (Notte): Voi infiltrate, eliminate Zog'tar    ║\n║    Fase 2 (Alba): Drago arriva furibondo, combattimento ║\n║    Fase 3 (Mattina): Nani attaccano (distrazione + carica║\n║    Fase 4 (Vittoria): Orda collassa senza leader        ║\n║                                                            ║\n║  EQUIPAGGIAMENTO RICEVUTO DA RE THOREK:                   ║\n║    - 4 x Pozione Invisibilità (CL 12, 120 min)           ║\n║    - 4 x Benedizione Moradin (+2 att/danni, 12 ore)     ║\n║    - 4 x Benedizione Protezione Divina                   ║\n║    - Mappa Accampamento Orda (accurata)                  ║\n║                                                            ║\n║  RICOMPENSE SE SUCCEDETE:                                 ║\n║    - Salva Hammerfist anno -1000                         ║\n║    - Salva indirectly Hammerfist anno 1372              ║\n║    - Leggenda eterna in Cronache Thorgrim               ║\n║    - XP massimo (battaglia critica)                      ║\n║    - Rubino si attiva (3/3 gemme Corona)                ║\n║    - Ritorno automatico anno 1372                        ║\n║                                                            ║\n║  ═══════════════════════════════════════════════════════  ║\n║                                                            ║\n║  \"Dalle tenebre, luce nasce.                             ║\n║   Dalla disperazione, speranza sorge.                    ║\n║   Voi siete speranza. Siete luce. Siete Hammerfist.\"   ║\n║                                                            ║\n║                - Re Thorek I, Anno -1000 -                ║\n║                                                            ║\n╚═══════════════════════════════════════════════════════════╝
+║  ═══════════════════════════════════════════════════════  ║\n║                                                            ║\n║  FORZE AMICHE HAMMERFIST:                                  ║\n║    - 800 Guerrieri Nanici Veterani (Grr 4-8)             ║\n║    - 200 Cittadini Armati (Exp 1-3, disperati)          ║\n║    - 50 Chierici di Moradin (Clr 3-6, supporto)         ║\n║    - Re Thorek I (Grr 16) + 15 Guardia Reale (Grr 10-12)║\n║    - VOI QUATTRO (Livello 13 - speranza nascosta!)      ║\n║                                                            ║\n║  FORZE NEMICHE - ORDA DELLA MANO ROSSA:                  ║\n║    - 7.000 Orchi Guerrieri (Bers 2-6)                    ║\n║    - 2.000 Goblin Guerrieri (Warr 1-3)                   ║\n║    - 800 Hobgoblin Soldati (Ftr 3-5)                     ║\n║    - 200 Ogre Mercenari (standard)                       ║\n║    - Zog'tar Deatheye (Barbaro/Warlord, GS 14) - BOSS 1  ║\n║    - Skullcrusher il Nero (Drago Nero Adulto, GS 12) - BOSS║\n║                                                            ║\n║  OBIETTIVI PRIMARI (VOI QUATTRO):                         ║\n║    1. Infiltrare Campo Nemico (invisibilità + stealth)  ║\n║    2. Raggiungere Tenda Zog'tar senza essere rilevati   ║\n║    3. Uccidere Zog'tar (elimina leader orda)            ║\n║    4. Affrontare Skullcrusher (drago arriva sente morte)  ║\n║    5. Sopravvivere fino alba (trigger Rubino + ritorno) ║\n║                                                            ║\n║  STRATEGIA GENERALE:                                      ║\n║    Fase 1 (Notte): Voi infiltrate, eliminate Zog'tar    ║\n║    Fase 2 (Alba): Drago arriva furibondo, combattimento ║\n║    Fase 3 (Mattina): Nani attaccano (distrazione + carica║\n║    Fase 4 (Vittoria): Orda collassa senza leader        ║\n║                                                            ║\n║  EQUIPAGGIAMENTO RICEVUTO DA RE THOREK:                   ║\n║    - 4 x Pozione Invisibilità (CL 12, 120 min)           ║\n║    - 4 x Benedizione Moradin (+2 att/danni, 12 ore)     ║\n║    - 4 x Benedizione Protezione Divina                   ║\n║    - Mappa Accampamento Orda (accurata)                  ║\n║                                                            ║\n║  RICOMPENSE SE SUCCEDETE:                                 ║\n║    - Salva Hammerfist anno -1000                         ║\n║    - Salva indirectly Hammerfist anno 1372              ║\n║    - Leggenda eterna in Cronache Thorgrim               ║\n║    - XP massimo (battaglia critica)                      ║\n║    - Rubino si attiva (3/3 gemme Corona)                ║\n║    - Ritorno automatico anno 1372                        ║\n║                                                            ║\n║  ═══════════════════════════════════════════════════════  ║\n║                                                            ║\n║  \"Dalle tenebre, luce nasce.                             ║\n║   Dalla disperazione, speranza sorge.                    ║\n║   Voi siete speranza. Siete luce. Siete Hammerfist.\"   ║\n║                                                            ║\n║                - Re Thorek I, Anno -1000 -                ║\n║                                                            ║\n╚═══════════════════════════════════════════════════════════╝
 ```
 
 ---
@@ -440,7 +440,7 @@ Se Thorik usa potere Cuore Moradin (Benedizione della Forgia - crea aura luce do
 
 **FINE PARTE 1/2**
 
-**Prossima: Parte 2 - Infiltrazione Campo Nemico, Boss Zog'tar, Drago Skulldark, Battaglia Finale**
+**Prossima: Parte 2 - Infiltrazione Campo Nemico, Boss Zog'tar, Drago Skullcrusher, Battaglia Finale**
 
 ---
 
@@ -468,13 +468,13 @@ Se Thorik usa potere Cuore Moradin (Benedizione della Forgia - crea aura luce do
 
 **AEGIS FANG (Thorik):**
 
-- Vibra quando Skulldark circola sopra (ascia sente drago nemico primordiale)
+- Vibra quando Skullcrusher circola sopra (ascia sente drago nemico primordiale)
 - "Drago. Sangue drago. Sarà battaglia. Io GIOISCO." - voce rara, eccitata
 
 **RING OF CHAOTIC ILLUMINATION (Artemis):**
 
 - Post-cerebromorphosis, ring è STABILIZZATO da Lathander/Mask dual nature
-- Ring brillerà quando Skulldark appare (reazione Ring a energia drago primordiale = distrazione interessante ma non utile)
+- Ring brillerà quando Skullcrusher appare (reazione Ring a energia drago primordiale = distrazione interessante ma non utile)
 - Artemis riceverà visione: "Scelta tua nella notte sarà cruciale. Caos ha due facce. Scegli bene quale mostra."
 
 **CINTURA DELLA DEVASTAZIONE (Tordek - formerly Devastation Gauntlets):**

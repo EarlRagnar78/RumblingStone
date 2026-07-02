@@ -347,7 +347,7 @@ Zogtar cade (0 HP). Urla finale echeggia campo:
 **Narrazione:**
 > *"Quando drago emerge, **Aegis Fang ESPLODE potere**. Rune brillano così forte da ACCECARE. Voce ascia - metallica, furiosa - echeggia:*  
 >  
-> ***"DRAGO! Sangue Skullcrusher riconosco! Antenato Fauci di Palude! Ho ucciso bis-bisnonno tuo 500 anni fa! Ora uccido TE! THORIK, LANCIA! LASCIAMI VOLARE!"***
+> ***"DRAGO! Sangue Skullcrusher riconosco! Capostipite Fauci di Palude! Ho ucciso il capostipite di tua stirpe mille anni fa! Ora uccido TE! THORIK, LANCIA! LASCIAMI VOLARE!"***
 
 **Meccanica:**
 - Thorik può **lanciare Aegis Fang** (azione standard, ritornante)  

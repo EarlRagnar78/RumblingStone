@@ -744,11 +744,11 @@ Dopo risonanza iniziale, Aegis Fang condivide altra informazione:
 
 **AEGIS FANG:**
 
-> *"Portatore. Sento presenza DRAGO vicino. Non qui - sopra. Lontano. Ma... familiare. Sangue suo scorre nelle mie venature. Millenni fa, antenato suo - Infernotooth Giovane - cadde sotto miei colpi quando Thorgrim Barbadiferro mi impugnava. Questo drago... è NIPOTE di Infernotooth. Nome suo: FAUCI DI PALUDE. Drago nero adulto. Signore dell'orda che assedia Hammerfist."*
+> *"Portatore. Sento presenza DRAGO vicino. Non qui - sopra. Lontano. Ma... familiare. Sangue suo scorre nelle mie venature. Mille anni fa, il capostipite della sua stirpe - Skullcrusher il Nero - cadde sotto miei colpi quando Thorgrim Barbadiferro mi impugnava. Questo drago... è discendente di Skullcrusher. Nome suo: FAUCI DI PALUDE. Drago nero adulto. Signore dell'orda che assedia Hammerfist."*
 
 *(Pausa. Tono diventa predatorio, quasi affamato)*
 
-> *"Quando lo incontreremo - e lo incontreremo - io CANTERÒ canto di morte draghi. Le mie rune BRUCERANNO. Il mio metallo BRAMERÀ il suo sangue. E tu, portatore, lo abbatterai. Come Thorgrim abbatté Infernotooth. Questa è promessa."*
+> *"Quando lo incontreremo - e lo incontreremo - io CANTERÒ canto di morte draghi. Le mie rune BRUCERANNO. Il mio metallo BRAMERÀ il suo sangue. E tu, portatore, lo abbatterai. Come Thorgrim abbatté Skullcrusher. Questa è promessa."*
 
 ---
 

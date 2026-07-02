@@ -78,14 +78,14 @@ Forged by Moradin from a shard of creation — not merely a crown of power but "
 |---|---|---|---|---|
 | **Immutable Time** | Topaz | Fire Plane ritual | ✅ ACTIVATED | Time travel 1/month from Earth Node; costs 1d10 years aging |
 | **True Earth** | Emerald | Earth Plane ritual | ⏳  ACTIVATED AFTER ANVIL OF THE WORLD | Wall of Stone / Heal Earth / Controlled Earthquake 1/week (costs 1,000 gp) |
-| **Dwarven Might** | Ruby | Battle at -1000 | ⏳ ACTIVATES AT DAWN | Buff self+allies with strength/courage 1/week; -2 STR for 24h after |
+| **Dwarven Might** | Ruby | Battle 1,000 yrs before (≈372 DR) | ⏳ ACTIVATES AT DAWN | Buff self+allies with strength/courage 1/week; -2 STR for 24h after |
 
 ### Legacy Rituals (Sequential)
 
 1. **Forge's Defense** — ✅ COMPLETED (vision of Hammerfist battle on wearing)
 2. **Trial of the Deep Hall** — ✅ COMPLETED (Underdark profane temple quest)
 3. **Anvil of the World** — ⏳ In progress (Eternal Forge Earth/Fire Planes)
-4. **Siege of the Eternal Forge** — ⏳ Final ritual (time-travel battle, year -1000)
+4. **Siege of the Eternal Forge** — ⏳ Final ritual (time-travel battle, 1,000 years before ≈372 DR)
 
 ---
 

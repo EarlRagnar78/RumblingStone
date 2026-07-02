@@ -12,7 +12,7 @@
 
 **Prima di attraversare portale Anno -1000, Moradin spiega (tramite Corona/Aegis):**
 
-*"Ascoltate attenti, figli. Ciò che farete ora è... delicato. Viaggiate Anno -1000. 2.372 anni passato. Ma non 'alternate timeline'. Passato VERO. Reale. Le azioni vostre là hanno GIÀ influenzato presente.*
+*"Ascoltate attenti, figli. Ciò che farete ora è... delicato. Viaggiate Anno -1000 (conteggio nanico: 1.000 anni prima del 1372, ≈372 DR). 1.000 anni nel passato. Ma non 'alternate timeline'. Passato VERO. Reale. Le azioni vostre là hanno GIÀ influenzato presente.*
 
 *Cronache Thorgrim menzionano 'Quattro eroi dal futuro salvano Hammerfist'. Quelle cronache esistono perché VOI scriverete. È... loop temporale. Bootstrap paradox. Effetto precede causa, causa crea effetto. Mente mortale fa fatica capire. Ma fidatevi: è così che tempo DEVE funzionare.*
 
@@ -34,7 +34,7 @@
 
 *TUTTO CAMBIA.*
 
-*Colori invertono un istante. Suoni riproducono all'indietro. Vedete VITE intere lampeggiare davanti occhi - nani nascere, vivere, morire in secondi. Vedete Hammerfist costruita, crollare, ricostruita, crollare ancora. Cicli infiniti. E sentite... peso. Peso STORIA. Peso 2.372 anni compressi in singolo momento.*
+*Colori invertono un istante. Suoni riproducono all'indietro. Vedete VITE intere lampeggiare davanti occhi - nani nascere, vivere, morire in secondi. Vedete Hammerfist costruita, crollare, ricostruita, crollare ancora. Cicli infiniti. E sentite... peso. Peso STORIA. Peso 1.000 anni compressi in singolo momento.*
 
 *Poi... THUD. Atterrate. Terra solida. E attorno... Hammerfist. Ma diversa."*
 
@@ -377,7 +377,7 @@ Ogni PG: **Muoversi Silenziosamente CD 20** O **Nascondersi CD 22**
 
 Aegis Fang CANTA. Non ronzo - CANTO guerra glorioso. Voce metallica echeggia:
 
-*"DRAGO! Sangue Skullcrusher riconosco! Antenato Fauci Palude! Ho ucciso bis-bisnonno tuo 500 anni fa! Ora uccido TE! THORIK, LANCIA! LASCIAMI VOLARE!"*
+*"DRAGO! Sangue Skullcrusher riconosco! Capostipite Fauci Palude! Ho ucciso il capostipite di tua stirpe mille anni fa! Ora uccido TE! THORIK, LANCIA! LASCIAMI VOLARE!"*
 
 **Thorik può LANCIARE Aegis Fang (azione standard):**
 - Range incremento 30m (può colpire drago volante 45m con -2 penalità)  

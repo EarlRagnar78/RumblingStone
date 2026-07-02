@@ -111,6 +111,13 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   eredita nel ponte B4).
 - **Accettazione**: `grep -rn "Skulldark\|Infernotooth"` = 0 fuori da
   banner e note storiche; un solo nome (+epiteto dichiarato) ovunque.
+- **✅ FATTO (2026-07-02, sessione 2)**: `grep` = 0 in tutto l'arco (fuori
+  dal testo di questo piano). Sostituiti "Skulldark" (P5-DEFINITIVO ×2,
+  RICALIBRATO) e "Infernotooth Giovane" (P1, P2) con **Skullcrusher il
+  Nero**. Risolto il doppio-drago di P5-DEFINITIVO-PARTE1 r.234-236 (Skulldark
+  "padre" vs Skullcrusher "discendente" → un solo drago, Skullcrusher, che è
+  il capostipite della stirpe di Fauci). Epiteto "il Nero" usato in forma
+  piena come nome. Changelog in state.md.
 
 ### A2. Profondità temporale — applicare D7 (1.000 anni prima, ≈372 DR)
 - **Problema**: i file dicono quattro cose diverse: "Anno −1000" come data
@@ -127,6 +134,17 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   Barbadiferro** (P1 r.704-751, P2 r.858, P5, P6 r.977).
 - **Accettazione**: una sola profondità temporale (1.000 anni) e una sola
   genealogia in tutto il repo; changelog in state.md.
+- **✅ FATTO (2026-07-02, sessione 2)**: corretti tutti i valori in
+  conflitto — "2.372 anni" (FINAL-P5 r.15/r.37, DEFINITIVO-PARTE1 r.22,
+  DEFINITIVO-PARTE2 r.288), "500 anni fa" + "bis-bisnonno" (FINAL-P5 r.380,
+  P6 r.350) → **1.000 anni** / capostipite. Etichetta "Anno -1000" mantenuta
+  ma **ridefinita una volta** nei file P5 (conteggio nanico relativo = 1.000
+  anni prima del 1372, ≈372 DR). Le occorrenze figurate di "millenni" (forgia
+  che arde, corona che attende) restano: non riguardano la profondità del
+  viaggio. Normalizzati anche state.md §6 e campaign-artifacts.md
+  ("-1000 DR"/"year -1000" → "1,000 years before, ≈372 DR"). Genealogia
+  unica: Skullcrusher capostipite → Fauci discendente diretto. Changelog in
+  state.md.
 
 ### A3. P6 contiene una "battaglia finale 1372" superata dagli Archi 08-09 — [CROSS-ARC]
 - **Problema** (il più importante dell'arco):
@@ -556,7 +574,7 @@ la checklist qui sotto.
 
 ### Checklist avanzamento
 
-- [ ] A1 · [ ] A2 · [ ] A3 · [ ] A4 · [ ] A5 · [ ] A6 · [x] A7 ·
+- [x] A1 · [x] A2 · [ ] A3 · [ ] A4 · [ ] A5 · [ ] A6 · [x] A7 ·
   [ ] A8 · [x] A9 · [ ] A10 · [ ] A11
 - [ ] B1 · [ ] B2 · [ ] B3 · [ ] B4 · [ ] B5 · [ ] B6 · [ ] B7 ·
   [ ] B8 · [~] B9 — **parziale (2026-07-02)**: Collana ✅ e

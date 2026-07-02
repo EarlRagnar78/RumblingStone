@@ -284,7 +284,7 @@ full mechanics. This table is current truth only.
 | Artifact | Holder | State | Currently usable powers |
 |---|---|---|---|
 | Aegis Fang | Thorik | Pre-full-awakening | +2 Returning Dwarven Waraxe; bonded |
-| Corona di Adamantio | Thorik | All 3 gems lit | Stone's Awareness, +2 deflection AC, Topaz time-travel 1/month, Emerald earthquake 1/week, Ruby (single-use already spent at -1000 DR battle) |
+| Corona di Adamantio | Thorik | All 3 gems lit | Stone's Awareness, +2 deflection AC, Topaz time-travel 1/month, Emerald earthquake 1/week, Ruby (single-use already spent at the battle 1,000 years before, ≈372 DR) |
 | Ring of Chaotic Illumination | Artemis | Reforged at Eternal Forge | Full base powers; awaits further evolution at Invisible Tower |
 | Bracieri Gemelli di Moradin | Tordek | Fire ✅ + Earth ✅ | Salto Infuocato 3/day, Fire Resist 10, DR 5/adamantine, Jump +10 |
 | Collana dei Semi Eterni | Hella | Active post-resurrection | Treant summoning (limited), Avatar form (1/day), party gift slots (unspent: 3) |
@@ -293,7 +293,7 @@ full mechanics. This table is current truth only.
 
 **Spent / single-use already burned:**
 
-- Ruby gem of the Crown (used at year -1000 battle)
+- Ruby gem of the Crown (used at the battle 1,000 years before, ≈372 DR)
 - Cuore di Moradin (used to resurrect Hella)
 
 If any agent ever has a character "use" one of these again, that is a
@@ -746,4 +746,20 @@ entries — they become campaign history.
             §2/§4, FASE1/FASE2-TESTO e INDICE aggiornati per puntare al deck
             (ondate = sfondo). Con il Lotto C l'arco passa da "coerente/completo"
             (A+B) a "memorabile" (piano §5).
+2026-07-02  PIANO-REVISIONE-ARC07 Sessione 1 (A7+A9): igiene file e ordine di
+            gioco. A7: rimosso temp_sinergie.txt; stub Atlante-Visivo-Mappe.md;
+            ripulite coda AI (RicalibrazioneScontriPianoDelFuoco) e 17 watermark
+            "OnlineMarkdown.com" (LaCorona_di_Adamantio-DM); git mv filename rotti
+            (spazio interno file viaggio Hella; casing Portaleforgia-P6 ->
+            PortaleForgia-P6). A9: dichiarato ordine D2 (Terra->resurrezione->
+            viaggio) in testa a tutte le versioni P3B/P4/P5. Editoriale.
+2026-07-02  PIANO-REVISIONE-ARC07 Sessione 2 (A1+A2): CANONE. A1: il nome
+            dell'antenato di Fauci di Palude entra nel canone come **SKULLCRUSHER
+            il Nero**; rimossi "Skulldark" (doppio-drago spurio in P5-DEFINITIVO-
+            PARTE1) e "Infernotooth Giovane" (P1/P2). L'ARC-08 eredita il nome nel
+            ponte "la Forgia ricorda" (B4). A2: profondità temporale uniformata a
+            **1.000 anni prima (≈372 DR)**; corretti "2.372 anni", "500 anni fa",
+            "bis-bisnonno". Genealogia unica: Skullcrusher = capostipite della
+            stirpe, Fauci = discendente diretto. Label "Anno -1000" ridefinita una
+            volta nei file P5 come conteggio nanico relativo.
 ```

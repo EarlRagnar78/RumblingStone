@@ -27,7 +27,7 @@ Con il **Topazio del Tempo** (recuperato nel Fuoco) e lo **Smeraldo della Forza*
 
 **L'Arrivo (Anno -1000):**
 Atterrate in un bosco antico, 500m fuori dalle mura di una Hammerfist "giovane". Le mura sono nuove, nere, lucenti. Ma l'assedio è reale.
-**Il Nemico:** L'Orda della Mano Rossa originale. 10.000 orchi. E sopra di loro, **Skulldark il Nero** (Antenato di Fauci di Palude).
+**Il Nemico:** L'Orda della Mano Rossa originale. 10.000 orchi. E sopra di loro, **Skullcrusher il Nero** (Antenato di Fauci di Palude).
 
 ---
 
@@ -86,11 +86,11 @@ Zog'tar non è un semplice orco. È un **Mezzo-Drago/Orco Barbaro/Warblade**.
 
 ## 5. BOSS 2: L'OMBRA DI SKULLDARK (CR ??)
 
-Appena Zog'tar muore, **Skulldark il Nero** (Drago Nero Adulto Avanzato/Antico) atterra sulla tenda, schiacciandola.
+Appena Zog'tar muore, **Skullcrusher il Nero** (Drago Nero Adulto Avanzato/Antico) atterra sulla tenda, schiacciandola.
 **NON è una battaglia a morte.** È un "Survival Event". Rimanete vivi per 5 round finché i rinforzi di Hella (Treant) arrivano.
 
 **Azione Speciale: "Marchiare la Storia"**
-*   **Thorik con Aegis Fang:** Se riesce a colpire Skulldark e fare almeno 30 danni in un colpo, lascia una **Cicatrice Permanente** a forma di martello sulle scaglie.
+*   **Thorik con Aegis Fang:** Se riesce a colpire Skullcrusher e fare almeno 30 danni in un colpo, lascia una **Cicatrice Permanente** a forma di martello sulle scaglie.
     *   *Effetto Futuro:* Quando affronteranno il discendente (Fauci di Palude) nel 1372, quella cicatrice sarà un punto debole (Crit range 18-20 su quella zona).
 *   **Artemis:** Con il Ring, può tentare di rubare un frammento d'anima del drago.
 

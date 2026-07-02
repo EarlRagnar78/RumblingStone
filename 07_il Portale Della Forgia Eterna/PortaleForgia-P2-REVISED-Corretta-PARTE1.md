@@ -1116,7 +1116,7 @@ Artemis acquisisce 2 nuovi poteri:
 >
 > **AEGIS FANG (Voce Metallica, Vendicativa):**
 >
-> *"DRAGO. Vedo drago. Fauci di Palude. Sangue suo scorre mie venature. Millenni fa, antenato - Infernotooth Giovane - cadde sotto miei colpi impugnata da Thorgrim Barbadiferro. Questo è NIPOTE quel drago. Sangue riconosce sangue attraverso generazioni."*
+> *"DRAGO. Vedo drago. Fauci di Palude. Sangue suo scorre mie venature. Mille anni fa, il capostipite di sua stirpe - Skullcrusher il Nero - cadde sotto miei colpi impugnata da Thorgrim Barbadiferro. Questo è discendente di quel drago. Sangue riconosce sangue attraverso generazioni."*
 >
 > *"Quando incontrerai, portatore, io SENTIRÒ presenza. Rune canteranno. Metallo bramerà sangue. Ti darò forza abbatterlo. Come feci antenato. Come farò OGNI drago minaccia figli pietra."*
 >

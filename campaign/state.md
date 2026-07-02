@@ -905,4 +905,22 @@ entries — they become campaign history.
             `01_MANO_ROSSA_MARCIA_VERSO_HAMMERFIST.md` (scritto in A6,
             puntava ai Lotto-N deprecati) e la lista file Arc-08 di
             `campaign-history.md`.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto A, sessione 6 (A4, sui soli
+            master post-A8): il master visivo dichiarava scale
+            incoerenti ("1 quadrato = 3 metri" su alcune mappe, "Grid
+            già ottimizzato standard D&D 1,5m" nel riepilogo finale —
+            falso, mai stata una griglia uniforme). Corretto senza
+            ridisegnare le griglie ASCII (rischio di disallineare
+            distanze già citate nel testo — soffio, portate,
+            velocità): le 6 mappe tattiche a scala 2m/3m (1A-1, 1A-2,
+            2A, 3X, 3Z, 5) ora portano un flag esplicito di deviazione
+            dalla convenzione repo (1,5m); le 10 viste non-griglia
+            (strategiche/schematiche/cinematiche/architettoniche) ora
+            dichiarano esplicitamente "NON è una griglia di
+            combattimento"; MAPPA 3Y (migrata in A8) era già a 1,5m,
+            nessuna modifica. Riepilogo finale del master corretto
+            (16→17 mappe; rimossa l'affermazione falsa di griglia
+            uniforme 1,5m). I tre master tattici `L{1,2,3}-REVISED-
+            Ultra-Clear` erano già coerenti a 1,5m/quadrato, nessuna
+            modifica necessaria.
 ```

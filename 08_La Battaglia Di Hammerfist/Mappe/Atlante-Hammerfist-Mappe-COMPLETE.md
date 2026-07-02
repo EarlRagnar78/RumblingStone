@@ -84,6 +84,7 @@ per tutte le altre mappe (e per la lettura narrativa) restare su questo file.
 
 **Tipo:** Infiltrazione tattica  
 **Scala:** 1 quadrato = 3 metri  
+  ⚠️ **[A4: deviazione dalla convenzione repo 1,5m/quadretto]** griglia ASCII originale disegnata a questa scala; non ridisegnata per evitare di alterare posizioni/distanze già usate nel testo (soffio, portate, velocità). DM: non mischiare quadretti di mappe a scale diverse nella stessa sessione.
 **Livello Sfida:** CD 5-12 (variabile approccio)
 
 **Descrizione Scenario:**
@@ -123,6 +124,7 @@ SUD ↓
 
 **Tipo:** Osservazione tattica  
 **Scala:** 1 quadrato = 3 metri  
+  ⚠️ **[A4: deviazione dalla convenzione repo 1,5m/quadretto]** griglia ASCII originale disegnata a questa scala; non ridisegnata per evitare di alterare posizioni/distanze già usate nel testo (soffio, portate, velocità). DM: non mischiare quadretti di mappe a scale diverse nella stessa sessione.
 **Altezza:** Torrione 18m, Dirupo 40m caduta
 
 **Descrizione Scenario:**
@@ -177,6 +179,7 @@ Antica torre di guardia in pietra (rovina) si erge sul bordo di un dirupo scosce
 
 **Tipo:** Vista strategica narrativa  
 **Scala:** Non tattica (400m distanza)  
+  ⚠️ **Vista strategica — NON è una griglia di combattimento.**
 **Visione:** Cannocchiale Dara dal Torrione
 
 **Descrizione Scenario:**
@@ -227,6 +230,7 @@ Rappresentazione visiva di ciò che Dara vede con cannocchiale masterwork. Non �
 
 **Tipo:** Overview strategico  
 **Scala:** Distanze marcate 60m-300m  
+  ⚠️ **Vista strategica — NON è una griglia di combattimento.**
 **Funzione:** DM overview posizioni iniziali tutte forze
 
 **Descrizione Scenario:**
@@ -283,6 +287,7 @@ Reference quick distanze e formazioni. Aggiorna posizioni mentre battaglia proce
 
 **Tipo:** Mappa tattica isometrica top-down  
 **Scala:** 1 quadrato = 3×3 metri  
+  ⚠️ **[A4: deviazione dalla convenzione repo 1,5m/quadretto]** griglia ASCII originale disegnata a questa scala; non ridisegnata per evitare di alterare posizioni/distanze già usate nel testo (soffio, portate, velocità). DM: non mischiare quadretti di mappe a scale diverse nella stessa sessione.
 **Dettaglio:** Massimo, tutte strutture visibili
 
 **Descrizione Scenario:**
@@ -349,6 +354,7 @@ Vista dall'alto completa fortezza nanica Hammerfist. Mostra layout strategico da
 
 **Tipo:** Vista prospettica dal basso  
 **Scala:** Non griglia, visuale artistica  
+  ⚠️ **Vista prospettica artistica — NON è una griglia di combattimento.**
 **Prospettiva:** Attaccante guardando verso l'alto
 
 **Descrizione Scenario:**
@@ -409,6 +415,7 @@ Vista from below rende fortezza appear **INESPUGNABILE**. Attaccanti devono:
 
 **Tipo:** Cutaway cross-section  
 **Scala:** Verticale 3m/livello, Orizzontale 20m/sezione  
+  ⚠️ **Misure architettoniche (altezza piani/sezione) — NON è una griglia di combattimento.**
 **Funzione:** Chiarire profondità e altezze
 
 **Descrizione Scenario:**
@@ -469,6 +476,7 @@ Linee vista verticali:
 
 **Tipo:** Schema posizioni unità  
 **Scala:** Simboli unità posizioni  
+  ⚠️ **Schema posizionale — NON è una griglia di combattimento a quadretti.**
 **Funzione:** DM tracking truppe durante battaglia
 
 **Descrizione Scenario:**
@@ -536,6 +544,7 @@ DM aggiorna posizioni quando:
 
 **Tipo:** Diagramma tattico fasi  
 **Scala:** Strategica con frecce movimento  
+  ⚠️ **Diagramma strategico di fase — NON è una griglia di combattimento.**
 **Funzione:** Visualizzare progressione attacco nemico
 
 **Descrizione Scenario:**
@@ -643,6 +652,7 @@ Timeline Fase helps DM trackare:
 
 **Tipo:** Three-panel progression  
 **Scala:** Panoramica fortezza  
+  ⚠️ **Vista panoramica — NON è una griglia di combattimento.**
 **Funzione:** Mostrare giocatori deterioramento strutturale
 
 **Descrizione Scenario:**
@@ -732,6 +742,7 @@ Visual aid helps players understand stakes without calculating PF numericamente.
 
 **Tipo:** Moment cinematico  
 **Scala:** Non griglia (Visual drama)  
+  ⚠️ **Scena cinematica — NON è una griglia di combattimento.**
 **Timing:** Giorno 2, Round speciale
 
 **Descrizione Scenario:**
@@ -804,6 +815,7 @@ Questo è **TURNING POINT** Giorno 2. Soffio drago devastates leadership nanico,
 
 **Tipo:** Escape tactical  
 **Scala:** 1 quadrato = 2 metri  
+  ⚠️ **[A4: deviazione dalla convenzione repo 1,5m/quadretto]** griglia ASCII originale disegnata a questa scala; non ridisegnata per evitare di alterare posizioni/distanze già usate nel testo (soffio, portate, velocità). DM: non mischiare quadretti di mappe a scale diverse nella stessa sessione.
 **Timing:** Immediatamente post-soffio drago
 
 **Descrizione Scenario:**
@@ -920,6 +932,7 @@ MAPPA 5.
 
 **Tipo:** Ambush encounter  
 **Scala:** 1 quadrato = 2 metri  
+  ⚠️ **[A4: deviazione dalla convenzione repo 1,5m/quadretto]** griglia ASCII originale disegnata a questa scala; non ridisegnata per evitare di alterare posizioni/distanze già usate nel testo (soffio, portate, velocità). DM: non mischiare quadretti di mappe a scale diverse nella stessa sessione.
 **Timing:** 30 minuti dopo tunnel ingresso
 
 **Descrizione Scenario:**
@@ -1003,6 +1016,7 @@ Multi-threat simultaneous:
 
 **Tipo:** Sanctuary + Epic reveal  
 **Scala:** 1 quadrato = 3 metri  
+  ⚠️ **[A4: deviazione dalla convenzione repo 1,5m/quadretto]** griglia ASCII originale disegnata a questa scala; non ridisegnata per evitare di alterare posizioni/distanze già usate nel testo (soffio, portate, velocità). DM: non mischiare quadretti di mappe a scale diverse nella stessa sessione.
 **Timing:** Sessione 3 Incontro 3B (CLIMAX!)
 
 **Descrizione Scenario:**
@@ -1109,6 +1123,7 @@ Caverna naturale bellezza mozzafiato, cathedral-like grandezza. Soffitto 40m alt
 
 **Tipo:** Pre-charge elevation diagram  
 **Scala:** Horizontal meters marked, Vertical meters elevation  
+  ⚠️ **Misure architettoniche (elevazione) — NON è una griglia di combattimento.**
 **Timing:** Post-Cuore Montagna rally, prima carica finale
 
 **Descrizione Scenario:**
@@ -1170,6 +1185,7 @@ This map shows MOMENT BEFORE. Next map (4 Unified) shows DURING charge + aerial 
 
 **Tipo:** Epic cinematic dual-front  
 **Scala:** Strategic overview  
+  ⚠️ **Vista strategica — NON è una griglia di combattimento.**
 **Timing:** Climax Sessione 4, Round 11-23
 
 **Descrizione Scenario:**
@@ -1312,7 +1328,10 @@ Banner Hammerfist re-raised mura. Nani cheer. PG heroes celebrated. Campagna con
 
 ### Per VTT Online:
 - Importa PNG diretto Roll20/Foundry VTT
-- Grid già ottimizzato standard D&D (5ft/1,5m)
+- ⚠️ Grid **NON uniforme**: le mappe tattiche usano scale miste (1,5m/2m/3m
+  per quadrato a seconda della mappa — vedi il flag A4 nell'intestazione
+  di ciascuna). Verifica la scala dichiarata PRIMA di importare su
+  Roll20/Foundry, non assumere 5ft/1,5m per tutte.
 - Lighting layer: Usa darkness/illumination descritta mappe
 - Dynamic tokens: Aggiorna HP visualmente
 
@@ -1320,9 +1339,10 @@ Banner Hammerfist re-raised mura. Nani cheer. PG heroes celebrated. Campagna con
 
 ## ✅ CHECKLIST COMPLETEZZA
 
-- ✅ Tutte location principali coperte (16 mappe)
+- ✅ Tutte location principali coperte (17 mappe — MAPPA 3Y migrata, A8)
 - ✅ Progression logica narrativa (Sessione 1→4)
-- ✅ Scale tattiche appropriate (2-10m per quadrato)
+- ⚠️ Scale tattiche **non uniformi** (1,5m/2m/3m a seconda della mappa,
+  flag esplicito A4 su ogni mappa che devia da 1,5m — convenzione repo)
 - ✅ Codici colore consistenti (Rosso=pericolo, Verde=alleati, etc)
 - ✅ Boss fights have dedicated maps (Drago, Gorthak, etc)
 - ✅ Climax moments visualized (Apparizione PG, Carica finale)

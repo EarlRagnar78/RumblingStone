@@ -413,7 +413,33 @@ di §4 senza ulteriori input dal DM.
      campana), tattiche nemiche, posta in gioco, **spotlight PG designato**,
      e **3 esiti aperti** (vittoria / parziale / sconfitta — l'esito lo
      decidono i dadi, mai la trama) ognuno con conseguenza su Fronte/VP;
-     più la conseguenza "ignorata" se la carta non viene scelta. Rifare in chiave Rethmar gli archetipi Brindol
+     più la conseguenza "ignorata" se la carta non viene scelta.
+
+     **REGOLA DELLE TRE SORGENTI (vincolante — riusa > espandi > inventa):**
+     ogni carta dichiara la propria sorgente in testa:
+     - **[S1 — RHoD upscalato]** (~5-6 carte): gli eventi della Battle of
+       Brindol originale, presi dalla copia del DM ([Private source], mai
+       riprodurre testo), **espansi a APL 14 e riallineati all'esercito
+       RumblingStone v2** (10k orda, 5 draghi, drow di Sonjak, Githyanki,
+       Teschio Nero): la breccia, il drago sulle mura (→ carta Tyrgarun,
+       C1.d), il cecchino sul comandante, la difesa della cappella/ospedale,
+       il duello col Wyrmlord, i combattimenti di strada coi civili.
+     - **[S2 — echi di campagna]** (~5-6 carte): eventi in cui i PG
+       interagiscono con ciò che l'arco ha GIÀ costruito — materiale
+       esistente, mai doppiato: l'Olio di Sabotaggio di Sal che cede al
+       momento peggiore (clock Sal, state.md §3), le statue vive/Mythal
+       (Fase 4 + filiera Sal→Varis), il tradimento di Halveth se non
+       rimosso (Consiglio), il convoglio-riserva di Lorana, Zalkatar
+       wildcard se fuggito dalla Torre (<10% pf), l'eco di Sethrax/Orbe,
+       Therysol contro la cellula del Collezionista, Tempestas caster
+       volante (se investito), i leoni spettrali del Ghostlord (ramo).
+     - **[S3 — nuove, solo per i buchi]** (~2-4 carte): inventate SOLO dove
+       né S1 né S2 coprono un momento necessario del ritmo dei 3 giorni
+       (es. una carta di crisi civile Day 41), mantenendo lo stesso piglio:
+       PG protagonisti nel bene e nel male, posta personale, esito ai dadi.
+     L'engine deve compilare una **tabella di mappatura carta→sorgente→file
+     riusato** in testa all'EVENT-DECK: se una carta S3 duplica qualcosa di
+     esistente, è un errore da correggere. Rifare in chiave Rethmar gli archetipi Brindol
      (mapparli dalla copia RHoD del DM, non riprodurre testo): barricate di
      strada coi civili, **il cecchino/assassino che punta a Lady Kaal o
      Brenna** (eco di Halveth se non rimosso), la breccia da richiudere,
@@ -444,8 +470,10 @@ di §4 senza ulteriori input dal DM.
   pagina + mappa; **ogni carta è giocabile come incontro tattico senza
   preparazione aggiuntiva** (mappa in scala + statblock/puntatore + tattiche);
   ogni carta ha i 3 esiti aperti + la conseguenza off-screen se ignorata;
-  ogni PG ha ≥2 carte spotlight; STRUTTURA e FASE1/FASE2-TESTO aggiornati per
-  puntare al deck (le ondate diventano lo sfondo tra le campane).
+  ogni PG ha ≥2 carte spotlight; **tabella carta→sorgente→file riusato
+  presente, con mix ~S1:5-6 / S2:5-6 / S3:2-4 e nessun doppione di materiale
+  esistente**; STRUTTURA e FASE1/FASE2-TESTO aggiornati per puntare al deck
+  (le ondate diventano lo sfondo tra le campane).
 
 ---
 

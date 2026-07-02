@@ -447,6 +447,17 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
 - **Accettazione**: ogni esito possibile del P5 ha un effetto scritto e
   quantificato sul boss dell'ARC-08; lo statblock ARC-08 rimanda alla
   tabella; zero meccaniche ambigue tra sistemi.
+- **✅ FATTO (2026-07-02, sessione 6)**: creato
+  `PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`. Tabella esito→effetto
+  quantificata **sullo statblock reale di Fauci** (GS 15, 312 PF): UCCISO =
+  −10% PF (→281) + Presenza CD 25→23 vs portatori; FERITO GRAVE = −1 uso
+  soffio (cono indisponibile) + CD −2 al primo soffio; FUGGITO = +2 iniz. a
+  Fauci ma ritirata a 75 PF invece di 50. Bonus per N ferite ancestrali
+  (+1 TxC o +1d6, cap 3) + cicatrice d'ala (−2 Volare, +2 circostanza in
+  volo). Gancio inverso: Aegis Fang "sente" Fauci = +2 circostanza a Thorik
+  + preavviso del soffio. Tutti bonus 3.5 tipizzati, **niente 5e**; tutto
+  `[INFERRED]`. Lo **statblock ARC-08 di Fauci rimanda alla tabella**; ARC-08
+  A12 annotato "consegnato".
 
 ### B5. Errata meccanica 3.5 dell'arco
 - **Evidenza**: a campione: `CORREZIONE-Boss-Fauci.md` r.334 assegna a un
@@ -614,7 +625,7 @@ la checklist qui sotto.
 
 - [x] A1 · [x] A2 · [ ] A3 · [ ] A4 · [ ] A5 · [x] A6 · [x] A7 ·
   [ ] A8 · [x] A9 · [ ] A10 · [x] A11
-- [x] B2 · [x] B3 · [ ] B1 · [ ] B4 · [ ] B5 · [ ] B6 · [ ] B7 ·
+- [x] B2 · [x] B3 · [x] B4 · [ ] B1 · [ ] B5 · [ ] B6 · [ ] B7 ·
   [ ] B8 · [~] B9 — **parziale (2026-07-02)**: Collana ✅ e
   file-risultati ✅; restano Sonjak, schede Belkram/Urialle, collegamenti
 - [ ] C1 · [ ] C2 · [ ] C3

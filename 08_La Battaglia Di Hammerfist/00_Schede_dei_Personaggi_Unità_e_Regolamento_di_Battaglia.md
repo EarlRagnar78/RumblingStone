@@ -56,6 +56,14 @@ Assolutamente. Ecco il documento unificato, "LA BATTAGLIA DI HAMMERFIST - APPEND
 ---
 ### **FAUCI DI PALUDE**
 *Drago Nero Adulto Avanzato, GS 15*
+
+> **⚔️ Carry-over dal viaggio ARC-07 (ponte "la Forgia ricorda le ferite")**:
+> l'esito del duello con **Skullcrusher** (capostipite di Fauci) nel P5
+> modifica questo statblock — PF, CD del soffio/Presenza, iniziativa, soglia
+> di ritirata e bonus dei portatori d'artefatto. **Applicare la tabella prima
+> della battaglia**: `07_.../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`
+> (valori `[INFERRED — needs DM confirmation]`). Se il gruppo NON ha giocato
+> il P5, usa lo statblock qui sotto invariato.
 **NM Drago Enorme (Acqua)**
 **Iniziativa:** +4; **Sensi:** Vista Cieca 18m, Scurovisione 36m, Visione Crepuscolare; Ascoltare +29, Osservare +29
 

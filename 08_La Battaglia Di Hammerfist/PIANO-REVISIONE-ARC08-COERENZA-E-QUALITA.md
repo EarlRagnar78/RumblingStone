@@ -309,6 +309,12 @@ mancante che emerga si flagga `[INFERRED — needs DM confirmation]`.
 - **Accettazione**: lo statblock di Fauci rimanda alla tabella; ogni esito
   del P5 ha un effetto visibile a Hammerfist; zero valori duplicati tra i
   due archi.
+- **➡️ ARC-07 B4 CONSEGNATO (2026-07-02)**: la tabella di carry-over esiste
+  (`07_.../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`) e lo **statblock
+  di Fauci (Schede §FAUCI) rimanda già ad essa**. Restano da fare, lato
+  ARC-08: la riga nella matrice esiti **B1** e la menzione nel read-aloud del
+  primo avvistamento. I valori sono in ARC-07 B4 (non duplicarli qui),
+  `[INFERRED]` in attesa di validazione DM.
 
 ---
 

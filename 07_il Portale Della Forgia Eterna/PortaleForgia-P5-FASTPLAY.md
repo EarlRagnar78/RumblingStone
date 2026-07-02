@@ -183,6 +183,7 @@ dipende da come è finito il duello (eco C3). Corona ora a 3 gemme accese.
 
 Gli esiti registrati sopra (soprattutto la **Scena 5**: esito del duello +
 numero di ferite/segni) alimentano il **ponte "la Forgia ricorda le ferite"**.
-La tabella esito→effetto su Fauci di Palude nel 1372 è in coda a questo file
-(sezione B4) / o nel file dedicato del task B4. Lì ogni esito ha un effetto
-scritto e quantificato sullo statblock ARC-08 di Fauci.
+La tabella esito→effetto su Fauci di Palude nel 1372 è nel file dedicato:
+**`PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`** (task B4). Lì ogni esito
+ha un effetto scritto e quantificato sullo statblock ARC-08 di Fauci, e
+l'ARC-08 rimanda a quella tabella dallo statblock stesso.

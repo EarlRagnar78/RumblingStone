@@ -339,6 +339,13 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   rinominare i file di design (solo il testo).
 - **Accettazione**: `grep -rn "Nymeria"` = 0 fuori dai banner/note
   storiche; genere coerente ovunque.
+- **✅ FATTO (2026-07-02, sessione 4)**: `Nymeria` → `Durik` propagato in
+  v1 e v2 del viaggio (55/57 occorrenze), in `campaign-party.md` (skills +
+  mirror copilot), in `index.json` copilot. Genere: il testo era già in gran
+  parte maschile ("il cane", "compagno", "Riforgiato", "morto"); i possessivi
+  italiani ("la sua testa", "la polvere dispersa") concordano col nome
+  posseduto, non col cane → nessuna correzione spuria. Residui "Nymeria" solo
+  nelle note di rinomina (risultati §0, Collana r.69). `grep` pulito.
 
 ---
 
@@ -382,8 +389,18 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
 - **Accettazione**: un solo master P3B; risultati del viaggio integrati;
   stato artefatti in uscita = quello che ARC-08/09 assumono; ARC-08 B2
   punta qui.
-
-### B3. Fast-play del viaggio a 1.000 anni prima (P5) — applicare D1
+- **✅ FATTO (2026-07-02, sessione 4)**: eletto master =
+  `PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` (banner ⭐ MASTER;
+  l'alternativa RICALIBRATO deprecata). Aggiunta la sezione **INTEGRAZIONE
+  B2** che riporta i **doni pieni** del viaggio giocato (Resist Freddo 15,
+  Marchio della Veritade, Radice Silenziosa, Radici del Mondo, Durik
+  "Protegge Hella") sovrascrivendo i doni generici del testo storico.
+  Correzioni inline: Thorik **−2 CON** permanente (era "−2 pf"), **Cuore di
+  Moradin SPESO** (era "ritornato nell'Altare"), **Cintura della
+  Devastazione** (era "Devastation Gauntlets"), timing **D2** (era "tra P5 e
+  P6"), classe Hella Ranger 1/Druida 12, Resist Freddo 15 nei due punti del
+  testo. `ARC-08 B2` ora punta al file per nome. ⚠️ Flag [INFERRED]:
+  discrepanza compagno animale (rhinoceros/orso/Durik) da chiudere in A0/B1.
 - **Evidenza**: il P5 esiste come atto completo (DEFINITIVO ×2 = 52 KB) e
   come sintesi "God Mode" (RICALIBRATO, 5,9 KB). La decisione D1 è
   giocarlo VELOCE: serve il formato di mezzo.
@@ -586,8 +603,8 @@ la checklist qui sotto.
 ### Checklist avanzamento
 
 - [x] A1 · [x] A2 · [ ] A3 · [ ] A4 · [ ] A5 · [x] A6 · [x] A7 ·
-  [ ] A8 · [x] A9 · [ ] A10 · [ ] A11
-- [ ] B1 · [ ] B2 · [ ] B3 · [ ] B4 · [ ] B5 · [ ] B6 · [ ] B7 ·
+  [ ] A8 · [x] A9 · [ ] A10 · [x] A11
+- [x] B2 · [ ] B1 · [ ] B3 · [ ] B4 · [ ] B5 · [ ] B6 · [ ] B7 ·
   [ ] B8 · [~] B9 — **parziale (2026-07-02)**: Collana ✅ e
   file-risultati ✅; restano Sonjak, schede Belkram/Urialle, collegamenti
 - [ ] C1 · [ ] C2 · [ ] C3

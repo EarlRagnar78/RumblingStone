@@ -112,18 +112,18 @@ Current party level: **13** | Party size: **4 PCs**
 - During resurrection: her spirit walked the **Soglia della Forgia** (Threshold of the Forge) — a liminal space that resonates with the Dream Dwarf Earth Dream. Passed three trials concurrent with P4 Earth Plane events.
 - Transformation: **Dream Dwarf / Treant Hybrid** — greenish skin, amber-gold eyes, bark-textured hair
 - Post-resurrection: Earth Dream connection is **permanently amplified** by the Soglia experience. Vulnerability to fire, Cold Resistance 10, Regeneration 1 (on natural earth)
-- Post-resurrection companion: **Nymeria Riforgiato** (Stone Guardian, Magical Beast 10-14 HD) — her dead riding dog reforged from Terros dust and Crystal fragments during the Emerald Ritual
+- Post-resurrection companion: **Durik Riforgiato** (Stone Guardian, Magical Beast 10-14 HD) — her dead riding dog reforged from Terros dust and Crystal fragments during the Emerald Ritual
 - Currently completing the post-Hammerfist Sacred Forest druid ritual for nature avatar form
 
 **Combat Notes:**
 
-- Collana dei Semi Eterni grants: +4 WIS, +3 natural AC, Avatar of Root (Huge Treant form 1/day), summon Adamantine Treant (3/day); 3rd seed summons Nymeria instead of generic Treant
+- Collana dei Semi Eterni grants: +4 WIS, +3 natural AC, Avatar of Root (Huge Treant form 1/day), summon Adamantine Treant (3/day); 3rd seed summons Durik instead of generic Treant
 - Additional resurrection gifts: DR 3/- (Pelle di Adamantio), Timeless Body, Spontaneous Rebirth (1/day auto-stabilize at 0 HP)
 - Viaggio Onirico gifts (variable based on trial outcomes): Marchio della Veritade, perception abilities, Via della Guardia (DR 2/—) or Via della Radice (Resist Cold 15 + Regen on sacred ground)
 - Primary healer via Cure spells and Wand of Cure Moderate Wounds
 - Augment Summoning + Natural Spell + Power of Nature for powerful summons while wild-shaped
 - Animal companion: Advanced Brown Bear (corteccia parziale from Treant affinity)
-- Nymeria (supernatural companion): Magical Beast with DR 5/Adamantine, Tremorsense 18m, telepathic link with Hella within 18m
+- Durik (supernatural companion): Magical Beast with DR 5/Adamantine, Tremorsense 18m, telepathic link with Hella within 18m
 - Caster level: **12** (Druid only; Ranger 1 does not add to druid CL)
 
 ---

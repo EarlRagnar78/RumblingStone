@@ -351,9 +351,11 @@ mancante che emerga si flagga `[INFERRED — needs DM confirmation]`.
   Forgia → Cuore della Montagna non è scritta da nessuna parte**, e
   nessun file dice come si gioca il passaggio dai pregen ai PG.
 - **Azione**: creare `ARC08-PONTE-ARRIVO.md` (snello): (1) puntatore al
-  master P3B ARC-07 (stato in uscita: Hella viva col template e la
-  Collana/Durik, Thorik −2 CON, Cuore di Moradin speso, Corona a 3
-  gemme); (2) la **cucitura D16**: il salto col Rubino come motore, il
+  master P3B ARC-07 = `07_.../PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`
+  (eletto in ARC-07 B2, §INTEGRAZIONE B2) — stato in uscita: Hella viva col
+  template Ibrido Treant e la Collana/Durik (doni pieni del viaggio), Thorik
+  −2 CON, Cuore di Moradin speso, Corona a 3 gemme; (2) la **cucitura D16**:
+  il salto col Rubino come motore, il
   riemergere al Cuore della Montagna al momento più nero (regia
   dell'Incontro 3B, riusando P6 r.621-753 come fonte); (3) la regia del
   **passaggio pregen→PG** (D6): quando i giocatori lasciano gli Eroi,

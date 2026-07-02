@@ -31,8 +31,8 @@
 | Viaggio di Hella — v1 | `PortaleForgia-P4-PianoTerra-P3B-HELLA-...-MONDO.md` | viaggio dello spirito, v1 | ~~DEPRECATO~~ (sostituito da v2) |
 | Viaggio di Hella — risultati | `PortaleForgia-P4-PianoTerra-P3B-HELLA-...-MONDO-risultati.md` | esiti giocati | **CANONE** (D12) |
 | Viaggio di Hella — appunti | `PortaleForgia-P4-pianoTerra-P3b-Hella-...-risultati.md` (minuscolo) | appunti grezzi DM | ~~DEPRECATO~~ (A7) |
-| **P3B** — Resurrezione Hella | `PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` | rituale completo | master candidato → **eletto in B2** |
-| P3B — merge breve | `PortaleForgia-P3B-ResurrezioneHella-RICALIBRATO-alternative.md` | merge sintetico | alternativa → banner in B2 |
+| **P3B** — Resurrezione Hella | `PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` | rituale completo | **MASTER** (eletto in B2, integra il viaggio giocato) |
+| P3B — merge breve | `PortaleForgia-P3B-ResurrezioneHella-RICALIBRATO-alternative.md` | merge sintetico | ~~DEPRECATO~~ (B2) |
 | **P5** — Viaggio 1.000 anni | `PortaleForgia-P5-DEFINITIVO-PARTE1.md` + `-PARTE2.md` | atto completo | **MASTER lungo** (fonte per il fast-play B3) |
 | P5 — versione precedente | `PortaleForgia-FINAL-P5.md` | prima stesura completa | ~~DEPRECATO~~ (superato da DEFINITIVO) |
 | P5 — sintesi | `PortaleForgia-P5-RICALIBRATO.md` | sintesi "God Mode" | *ricalibrazione/sintesi* → base tono per B3 |

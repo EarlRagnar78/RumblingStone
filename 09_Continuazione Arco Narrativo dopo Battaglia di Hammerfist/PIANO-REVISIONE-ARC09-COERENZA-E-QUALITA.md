@@ -42,16 +42,17 @@
 | D6 | March Clock: Day 19 = sync Hammerfist/Terrelton; **Day 40 = Notte dei Drow (Fase 0); Day 42 = assalto a Rethmar (Fasi 1-4)** | state.md §2.1 (vince per regola 1) |
 | D7 | Ghostlord: ostile default = +2.400 non morti; neutralizzato = +400; redento = +600 pro-difensori | state.md §2.3 |
 | D8 | **Nessun "5° atto" al Fane di Tiamat** (decisione DM 2026-07-02). L'Avatar di Tiamat viene richiamato **durante** la battaglia di Rethmar (che copre ~3 giorni, Day 40-42) tramite il rituale a 10 round dei chierici/ritualisti draconici della Mano Rossa (Fase 2). Il Fane nel Shaar resta solo origine dell'orda e sede del Ritual Clock — non una location giocata | DM, questa revisione |
+| D9 | Alleanza Tiri Kitor riuscita = **100 ranger elfici + 20 gufi giganti** a Rethmar (la tribù è ~500 anime: ne invia un quinto come forza da guerra; il resto difende Starsong). Correggere state.md §2.4 (+500 → +120) e INDICE (50+10 → 100+20) | DM 2026-07-02 |
+| D10 | Nani a Rethmar: **300 mercenari da Dauth** (torneo vinto) + **150 lance di Re Thorek** come flusso separato condizionato dagli hook politici (sigillo Maewen + lettera Thorik). Totale max 450. Correggere state.md §2.4 (400 → 300) | DM 2026-07-02 |
+| D11 | **Tyrgarun = drago BLU adulto, CR 15, riserva aerea** dell'orda — NON cavalcatura di Azarr Kul. Azarr Kul combatte a terra con l'Avatar come da STRUTTURA §6. Correggere INDICE r.27/443 ("Very Old Blue CR 20, monta Tyrgarun") e ARMATE-SYNC §2.1 ("black adult" → "blue adult") | DM 2026-07-02 |
+| D12 | Debito di Tordek (state.md §5): riformulare in **"presentarsi a Dauth entro il Day 29 (vigilia delle preliminari del Torneo)"** — coerente con HOOKS v2 (invito Day 24, arrivo 28, torneo 30-32) | DM 2026-07-02 |
 
-### Decisioni di canone DA CHIEDERE AL DM (l'engine NON deve deciderle da solo)
+### Decisioni di canone da chiedere al DM
 
-| # | Questione | Opzioni in conflitto |
-|---|---|---|
-| Q1 | **Quanti elfi Tiri Kitor** arrivano a Rethmar? | +500 (state.md §2.4) vs 50 ranger + 10 gufi giganti (INDICE r.302). Proposta: 500 = popolazione totale (Starsong TESTO r.53), forza inviata = **100 ranger + 20 gufi** (via di mezzo credibile per una tribù di 500) |
-| Q2 | **Quanti nani** dal Torneo di Dauth? | 300 mercenari (quasi tutti i file) vs +400 (state.md §2.4). Le **150 lance di Re Thorek** sono un flusso separato (hook Thorik/Maewen). Proposta: canonizzare **300 (Dauth) + 150 (lance Hammerfist)** e correggere state.md §2.4 in 300 |
-| Q3 | **Tyrgarun**: che drago è? | "Very Old Blue CR 20 cavalcato da Azarr Kul" (INDICE r.443) vs "black adult, riserva aerea" (ARMATE-SYNC §2.1) vs assente dalla Fase 3 (STRUTTURA §6, STATBLOCCHI-EPICI). Con APL 14, un CR 20 in groppa al boss rompe il budget CR 16-18. Proposta: **blue adult CR 15 in riserva aerea, NON cavalcatura** — Azarr Kul combatte a terra con Avatar come da STRUTTURA |
-| Q4 | Il debito di Tordek "presentarsi a Dauth entro 5 giorni" (state.md §5) è compatibile col torneo che inizia Day 30 (HOOKS §1.1)? Proposta: riformulare in "entro il Day 29 (vigilia delle preliminari)" |
-| ~~Q5~~ | ~~Epilogo giocabile al Fane come ARC-10?~~ **RISOLTA → D8: no.** L'epilogo giocabile va costruito dentro/dopo Rethmar (vedi C5) | DM 2026-07-02 |
+**✅ TUTTE RISOLTE (2026-07-02).** Q1→D9 (elfi), Q2→D10 (nani), Q3→D11
+(Tyrgarun), Q4→D12 (debito Tordek), Q5→D8 (niente atto al Fane).
+Il piano non ha più blocchi: l'engine può eseguire tutti i lotti nell'ordine
+di §4 senza ulteriori input dal DM.
 
 ---
 
@@ -113,19 +114,26 @@
 - **Accettazione**: i tre rami (ostile/neutralizzato/redento) con numeri identici
   in INDICE, TESTO e state.md.
 
-### A6. Alleati elfi e nani: numeri contraddittori
-- **Problema**: vedi Q1/Q2. Elfi: +500 vs 50+10. Nani: 300 vs 400 (+150 lance
-  come flusso separato in 5 file HOOKS).
-- **Azione**: BLOCCATO da Q1/Q2 — chiedere al DM, poi propagare il numero scelto
-  in: state.md §2.4, INDICE r.302/252/507, STRUTTURA §8, ARMATE-SYNC §2/§3,
-  ESITI, STATBLOCCHI-EPICI §7.
-- **Accettazione**: un solo numero per fazione in tutto il repo + changelog.
+### A6. Alleati elfi e nani: numeri contraddittori — RISOLTO da D9/D10
+- **Problema**: Elfi: +500 vs 50+10. Nani: 300 vs 400 (+150 lance come flusso
+  separato in 5 file HOOKS).
+- **Azione**: applicare **D9** (elfi = 100 ranger + 20 gufi giganti) e **D10**
+  (nani = 300 Dauth + 150 lance separate) propagando in: state.md §2.4
+  (+500→+120; 400→300), INDICE r.302/252/507, STRUTTURA §8, ARMATE-SYNC §2/§3
+  (ricalcolare i 5 scenari difensori con i nuovi totali), ESITI,
+  STATBLOCCHI-EPICI §7. Riga di changelog in state.md.
+- **Accettazione**: un solo numero per fazione in tutto il repo + changelog;
+  scenari ARMATE-SYNC ricalcolati.
 
-### A7. Tyrgarun: identità e ruolo incoerenti
-- **Problema**: vedi Q3 (colore, età, CR 20 vs budget CR 16-18, cavalcatura sì/no).
-- **Azione**: BLOCCATO da Q3 — poi correggere INDICE r.27/443, ARMATE-SYNC §2.1,
-  STRUTTURA §6 e la scheda `PNG/Azarr_Kul/Azarr_Kul.md`.
-- **Accettazione**: colore/età/CR/ruolo identici ovunque; Fase 3 resta CR 16-18.
+### A7. Tyrgarun: identità e ruolo incoerenti — RISOLTO da D11
+- **Problema**: colore, età, CR 20 vs budget CR 16-18, cavalcatura sì/no.
+- **Azione**: applicare **D11** (blue adult CR 15, riserva aerea, NON
+  cavalcatura): correggere INDICE r.27/443, ARMATE-SYNC §2.1, STRUTTURA §6 e
+  la scheda `PNG/Azarr_Kul/Azarr_Kul.md` (rimuovere "monta Tyrgarun").
+  Applicare anche **D12** nello stesso lotto: riformulare il debito di Tordek
+  in state.md §5 ("entro il Day 29, vigilia delle preliminari").
+- **Accettazione**: colore/età/CR/ruolo identici ovunque; Fase 3 resta CR
+  16-18; debito Tordek coerente con la timeline HOOKS v2.
 
 ### A8. File citati come "fonte autoritativa" ma INESISTENTI
 - **Problema**: `HOOKS-INTEGRATION-MASTER.md` §8 rimanda a
@@ -381,7 +389,7 @@ brevi; B/C sono generativi e vanno spezzati.
 | 3 | A3 + A5 + A11 (INDICE refresh) | editing mirato | sessione 2 |
 | 4 | A4 + A12 (nomi PNG, deprecati) | editing mirato | — |
 | 5 | A8 + A9 (link rotti, file vuoti/da fondere) | consolidamento | — |
-| 6 | A6 + A7 | editing mirato | **risposte DM Q1-Q3** |
+| 6 | A6 + A7 (+D12) | editing mirato | — (D9-D12 già decise) |
 | 7-11 | B1 (Rhest, 1 fase per sessione) | generativo | A1 |
 | 12 | B2 (Starsong) | generativo | Q1 |
 | 13 | B3 (Ghostlord) | generativo | A5 |
@@ -401,12 +409,13 @@ checklist qui sotto.
 
 ### Checklist avanzamento
 
-- [ ] A1 · [ ] A2 · [ ] A3 · [ ] A4 · [ ] A5 · [ ] A6 (Q1/Q2) · [ ] A7 (Q3) ·
+- [ ] A1 · [ ] A2 · [ ] A3 · [ ] A4 · [ ] A5 · [ ] A6 · [ ] A7 ·
   [ ] A8 · [ ] A9 · [ ] A10 · [ ] A11 · [ ] A12 · [ ] A13
 - [ ] B1.1 · [ ] B1.2 · [ ] B1.3 · [ ] B1.4 · [ ] B1.5 · [ ] B2 · [ ] B3 ·
   [ ] B4 · [ ] B5 · [ ] B6 · [ ] B7
 - [ ] C1 · [ ] C2 · [ ] C3 · [ ] C4 · [ ] C5 · [ ] C6
-- [ ] Q1 · [ ] Q2 · [ ] Q3 · [ ] Q4 · [x] ~~Q5~~ (→ D8) — **risposte DM**
+- [x] Q1 (→D9) · [x] Q2 (→D10) · [x] Q3 (→D11) · [x] Q4 (→D12) ·
+  [x] Q5 (→D8) — **tutte le risposte DM acquisite 2026-07-02**
 
 ---
 

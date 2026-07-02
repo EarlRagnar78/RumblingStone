@@ -44,7 +44,7 @@
 | D8 | **Nessun "5° atto" al Fane di Tiamat** (decisione DM 2026-07-02). L'Avatar di Tiamat viene richiamato **durante** la battaglia di Rethmar (che copre ~3 giorni, Day 40-42) tramite il rituale a 10 round dei chierici/ritualisti draconici della Mano Rossa (Fase 2). Il Fane nel Shaar resta solo origine dell'orda e sede del Ritual Clock — non una location giocata | DM, questa revisione |
 | D9 | Alleanza Tiri Kitor riuscita = **100 ranger elfici + 20 gufi giganti** a Rethmar (la tribù è ~500 anime: ne invia un quinto come forza da guerra; il resto difende Starsong). Correggere state.md §2.4 (+500 → +120) e INDICE (50+10 → 100+20) | DM 2026-07-02 |
 | D10 | Nani a Rethmar: **300 mercenari da Dauth** (torneo vinto) + **150 lance di Re Thorek** come flusso separato condizionato dagli hook politici (sigillo Maewen + lettera Thorik). Totale max 450. Correggere state.md §2.4 (400 → 300) | DM 2026-07-02 |
-| D11 | **Tyrgarun = drago BLU adulto, CR 15, riserva aerea** dell'orda — NON cavalcatura di Azarr Kul. Azarr Kul combatte a terra con l'Avatar come da STRUTTURA §6. Correggere INDICE r.27/443 ("Very Old Blue CR 20, monta Tyrgarun") e ARMATE-SYNC §2.1 ("black adult" → "blue adult") | DM 2026-07-02 |
+| D11 **v2** | **Tyrgarun = drago BLU antico (Old), CR 18 — il TERRORE DEI CIELI della battaglia, NON cavalcatura di Azarr Kul.** Non sta "in riserva": è la ragione per cui i difensori non possono tenere i cieli. Script a scalini: **Fase 1** = set-piece di bombardamento (soffio sui bastioni come *hazard* con contromosse — balliste, gufi Tiri Kitor, missione-esca dei PG — NON scontro frontale: a CR 18 in volo è imbattibile per design); **Fasi 2-3** = copertura aerea mobile dei ritualisti (minaccia a orologeria); **Fase 4** = il Mythal completato **lo inchioda a terra** (già canone: P2D-INTEGRAZIONE r.201) → solo allora diventa uccidibile dal party+alleati, oppure fugge (nemesi ARC-10). Azarr Kul combatte comunque a terra con l'Avatar (STRUTTURA §6): il drago è un incontro separato, sbloccato dal Mythal. Correggere INDICE r.27/443 ("monta Tyrgarun" via; "Very Old CR 20" → "Old CR 18") e ARMATE-SYNC §2.1 ("black adult" → "blue old") | DM 2026-07-02, **rivista su obiezione DM: "se il drago non si usa, perché alzare il Mythal? deve essere spaventoso"** |
 | D12 | Debito di Tordek (state.md §5): riformulare in **"presentarsi a Dauth entro il Day 29 (vigilia delle preliminari del Torneo)"** — coerente con HOOKS v2 (invito Day 24, arrivo 28, torneo 30-32) | DM 2026-07-02 |
 
 ### Decisioni di canone da chiedere al DM
@@ -125,15 +125,21 @@ di §4 senza ulteriori input dal DM.
 - **Accettazione**: un solo numero per fazione in tutto il repo + changelog;
   scenari ARMATE-SYNC ricalcolati.
 
-### A7. Tyrgarun: identità e ruolo incoerenti — RISOLTO da D11
+### A7. Tyrgarun: identità e ruolo incoerenti — RISOLTO da D11 v2
 - **Problema**: colore, età, CR 20 vs budget CR 16-18, cavalcatura sì/no.
-- **Azione**: applicare **D11** (blue adult CR 15, riserva aerea, NON
-  cavalcatura): correggere INDICE r.27/443, ARMATE-SYNC §2.1, STRUTTURA §6 e
-  la scheda `PNG/Azarr_Kul/Azarr_Kul.md` (rimuovere "monta Tyrgarun").
-  Applicare anche **D12** nello stesso lotto: riformulare il debito di Tordek
-  in state.md §5 ("entro il Day 29, vigilia delle preliminari").
-- **Accettazione**: colore/età/CR/ruolo identici ovunque; Fase 3 resta CR
-  16-18; debito Tordek coerente con la timeline HOOKS v2.
+- **Azione**: applicare **D11 v2** (blue Old CR 18, terrore dei cieli a
+  scalini, inchiodato a terra dal Mythal in Fase 4, NON cavalcatura):
+  correggere INDICE r.27/443, ARMATE-SYNC §2.1, STRUTTURA §6 (aggiungere
+  Tyrgarun alle Fasi 1/2-3/4 secondo lo script D11) e la scheda
+  `PNG/Azarr_Kul/Azarr_Kul.md` (rimuovere "monta Tyrgarun"). Le meccaniche
+  dettagliate del set-piece (hazard di bombardamento, contromosse, statistiche
+  del drago a terra) si scrivono nel lotto **C1 punto (d)** — qui solo la
+  coerenza dei riferimenti. Applicare anche **D12** nello stesso lotto:
+  riformulare il debito di Tordek in state.md §5 ("entro il Day 29, vigilia
+  delle preliminari").
+- **Accettazione**: colore/età/CR/ruolo identici ovunque; la Fase 3 boss
+  (Azarr Kul + Avatar) resta CR 16-18 senza il drago sommato; debito Tordek
+  coerente con la timeline HOOKS v2.
 
 ### A8. File citati come "fonte autoritativa" ma INESISTENTI
 - **Problema**: `HOOKS-INTEGRATION-MASTER.md` §8 rimanda a
@@ -321,7 +327,16 @@ di §4 senza ulteriori input dal DM.
   Comandante: +2 morale a un settore); (c) tabella d12 **eventi di battaglia**
   per fase (breccia, incendio, eroismo PNG, duello richiesto...). Riusa il
   precedente di Hammerfist ("meccaniche massa combattimento Hammerfist style",
-  INDICE r.414) come base dichiarata.
+  INDICE r.414) come base dichiarata; (d) **set-piece Tyrgarun (D11 v2)** —
+  il benchmark è Abithriax sulle mura di Brindol in RHoD: in Fase 1 il drago
+  è un *hazard* di bombardamento (passate di soffio 16d8 elettricità sui
+  bastioni, CD Riflessi ~28, con contromosse quantificate: nidi di balliste
+  CD/pf, squadroni gufi Tiri Kitor che gli negano le passate, missione-esca
+  PG), in Fasi 2-3 clock di copertura aerea sui ritualisti, in Fase 4 il
+  Mythal lo **inchioda a terra** (canone P2D-INTEGRAZIONE r.201): statblock
+  3.5 del blue Old CR 18 *a terra* (niente volo = niente flyby/kiting → CR
+  effettivo ~16-17, epico ma battibile da party APL 14 + alleati), oppure
+  fuga = nemesi per campagne future.
 - **Accettazione**: il DM può risolvere Fase 1 senza improvvisare; i VP hanno
   effetto meccanico continuo, non solo a fine battaglia.
 

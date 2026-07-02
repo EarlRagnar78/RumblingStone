@@ -596,6 +596,14 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   AGENTS.md; (3) collegamenti (si chiudono con B8).
 - **Accettazione**: la scheda di Sonjak racconta il raid; nessun PNG di G0
   senza stato; 5 artefatti + Cintura documentati e linkati.
+- **✅ FATTO (2026-07-02, sessione 12)**: `PNG/Sonjak/Sonjak.md` ora ha la
+  sezione "IL RAID DELLA STANZA DELLA CORONA (ARC-06) — mandante" (Urialle +
+  Yochlol, fallito, Hella uccisa, i PG forse non sanno ancora che è lei
+  `[verify state.md §4]`). Create schede post-mortem `PNG/Belkram/Belkram.md`
+  (**morto, redento** in punto di morte) e `PNG/Urialle/Urialle.md` (**morta**,
+  uccisora di Hella), formato AGENTS.md, con link incrociati e al log R0.
+  Cintura documentata in A10. Con questo **B9 è completo** (Collana e
+  file-risultati erano già fatti). I link dall'INDICE si chiudono con B8.
 
 ---
 
@@ -684,8 +692,8 @@ la checklist qui sotto.
 - [x] A1 · [x] A2 · [x] A3 · [x] A4 · [x] A5 · [x] A6 · [x] A7 ·
   [x] A8 · [x] A9 · [x] A10 · [x] A11 — **LOTTO A COMPLETO**
 - [x] B2 · [x] B3 · [x] B4 · [~] B1 (log ricostruiti; attende intervista DM) · [ ] B5 · [ ] B6 · [ ] B7 ·
-  [ ] B8 · [~] B9 — **parziale (2026-07-02)**: Collana ✅ e
-  file-risultati ✅; restano Sonjak, schede Belkram/Urialle, collegamenti
+  [ ] B8 · [x] B9 — Collana ✅, file-risultati ✅, Sonjak-raid ✅, schede
+  post-mortem Belkram/Urialle ✅, Cintura ✅
 - [ ] C1 · [ ] C2 · [ ] C3
 - [x] D1…D17 — **tutte le decisioni DM acquisite (2026-07-02); nessuna
   domanda aperta**

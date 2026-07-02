@@ -121,6 +121,27 @@ Sonjak non combatte mai in prima linea se può evitarlo. Si posiziona dietro due
 
 ---
 
+## IL RAID DELLA STANZA DELLA CORONA (ARC-06) — mandante
+
+Fu **Sonjak a ordinare il furto della Corona di Adamantio** dalla Stanza della
+Corona (ARC-06). Inviò **Urialle** (Yochlol half-illithid, CR 14) con un gruppo
+di **Yochlol half-illithid** e sfruttò **Belkram** — il vecchio portatore, già
+dominato e maledetto dai drow (morte negata) — come strumento corrotto.
+
+- **Esito (canone, G0/D13)**: il raid **fallisce** (la Corona resta ai PG), ma
+  nello scontro **Hella Oakenshield viene UCCISA**. **Urialle e Belkram muoiono
+  entrambi**; Belkram si **ravvede in punto di morte** (dominio spezzato).
+- È **la causa scatenante dell'intero ARC-07** (il party porta il corpo di
+  Hella alla Forgia Eterna per resuscitarla).
+- ⚠️ **Cosa sanno i PG** `[verify con state.md §4]`: potrebbero **non sapere
+  ancora** che la mandante è Sonjak — il collegamento raid→Sonjak può essere un
+  "a-ha" investigativo successivo, coerente col ritardo Sal/Sajak sotto.
+
+Schede post-mortem: `PNG/Belkram/Belkram.md`, `PNG/Urialle/Urialle.md`.
+Log dell'evento: `campaign/sessions/RETROATTIVI-ARC07-INFERRED.md` (R0).
+
+---
+
 ## RELAZIONI E INFORMAZIONI
 
 | Chi la conosce | Cosa sa |
@@ -129,6 +150,7 @@ Sonjak non combatte mai in prima linea se può evitarlo. Si posiziona dietro due
 | Il Collezionista | La usa come fornitrice; conosce il suo piano ambizioso; vuole che cada per rimuovere una variabile pericolosa |
 | Xilthra Vel'ssin | Comandante di campo; esegue ordini di Sonjak; non conosce la connessione con il Collezionista |
 | I PG | Inizialmente: sconosciuta. Appare nominata in documenti drow trovati nei campi. |
+| Stanza della Corona (ARC-06) | **Mandante del raid** che ha ucciso Hella (vedi sopra); i PG potrebbero non saperlo ancora |
 
 ---
 

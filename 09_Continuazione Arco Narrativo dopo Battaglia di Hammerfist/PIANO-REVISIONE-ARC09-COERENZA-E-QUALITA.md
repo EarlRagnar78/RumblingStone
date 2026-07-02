@@ -531,7 +531,7 @@ checklist qui sotto.
   §4, INDICE e changelog di state.md allineati; nessun bonus in conflitto
   con gli hook sorgente (le sub-quest ne sono la *sorgente giocata*).
 - [x] B1.1 · [x] B1.2 · [x] B1.3 · [x] B1.4 · [x] B1.5 · [x] B2 · [x] B3 ·
-  [x] B4 · [x] B5 · [x] B6 · [ ] B7 —
+  [x] B4 · [x] B5 · [x] B6 · [x] B7 — **LOTTO B COMPLETO (2026-07-02).**
   **B1 (Rhest) completo (2026-07-02)**: 5 file FASE portati da scheletro
   (~1–4 KB) a standard Palio (read-aloud, viaggio a esagoni, tabella
   incontri d12, regole subacquee SRD, arena a 3 quote, sinergia artefatti
@@ -575,6 +575,15 @@ checklist qui sotto.
   SRD/DMG; plot item marcati [INFERRED]. Chiarito che i 5 artefatti legacy
   sono ricchezza d'ingresso (non colmano il delta) e che rendite/titoli di
   dominio (C6) si contano a parte. INDICE §Loot riscritto. Prossimo: B7.
+  **B7 (Incontri di viaggio) completo (2026-07-02)**: creato
+  `Arco-Post-Hammerfist-INCONTRI-VIAGGIO-CANNATH-VALE.md`. 4 macro-zone
+  (Witchwood/Sacred Forest, Strada del Deserto/Shaar, Vale Centrale/Dauth,
+  Thornwaste) × 2 finestre (Day 20-30 / 31-42, la seconda più cattiva con
+  meno civili — March Clock D6). Tabelle d% con EL dichiarato (9-13) e
+  **≥1/3 voci non-combat** (profughi, Sal, disertori gnoll, pattuglie da
+  interrogare, emissari Ghostlord). Riusa MISSIONI-BREVI (MB-1…6) e gli
+  statblock di Armate-UNITA-NUOVE (tutti verificati esistenti); echi agli
+  archi esistenti (Sal, Lorana, Therysol, Collezionista, Zalkatar wildcard).
 - [ ] C1 · [ ] C2 · [ ] C3 · [ ] C4 · [ ] C5 · [ ] C6 · [ ] C7 (event deck)
 - [x] Q1 (→D9) · [x] Q2 (→D10) · [x] Q3 (→D11) · [x] Q4 (→D12) ·
   [x] Q5 (→D8) — **tutte le risposte DM acquisite 2026-07-02**

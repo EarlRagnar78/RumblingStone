@@ -151,6 +151,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 | `ERRATA-PARTE1-Quest-Hellas-35-Verification.md` | Correzioni 3.5 SRD — stat blocks, action economy (bonus action→swift), Touch/FF AC, BAB/Grapple |
 | `ERRATA-PARTE2-3-35-Verification.md` | Verifica 3.5 di P2A/P2B/RHEST/P3 + **upscale del boss finale** (Azarr Kul → Chierico 12/Guerriero 4, CR 17); attacchi naturali Regiarix, taglia Saarvith, catch coerenza Tyrgarun |
 | `Arco-Post-Hammerfist-TESORO-WBL-AUDIT.md` | **Audit tesoro (WBL 3.5)** — distribuzione ~380k mo eq. per incontro (Rhest hoard, Torre, Torneo, Rethmar); corregge il gap ~8× dell'INDICE §Loot |
+| `Arco-Post-Hammerfist-INCONTRI-VIAGGIO-CANNATH-VALE.md` | **Tabelle d% incontri di viaggio** — 4 macro-zone × 2 finestre (Day 20-30 / 31-42), EL 9-13, ≥1/3 non-combat; riusa MISSIONI-BREVI e Armate-UNITA-NUOVE |
 
 ---
 

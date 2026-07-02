@@ -29,7 +29,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 | **Conte Valerius** | `PNG/Conte_Valerius/Conte_Valerius.md` | 6/14★ | Villain politico; finanzia la Mano Rossa; non si batte in combat | 2/8 |
 | **Maestro Varis "Seta-Argento"** | `PNG/Varis_Seta_Argento/Varis_Seta_Argento.md` | 6 | Broker urbano Rethmar; anello della catena statue vive | — |
 | **Ghostlord / Zeth il Murato** | `PNG/Ghostlord/Ghostlord.md` | 13 | Lich druidico Thornwaste; alleato o nemico; NPC di Hella | — |
-| **Xal'thor** | `PNG/Xal_thor/Xal_thor.md` | 14 | Comandante Illithid Githyanki; attacca Torneo Giorno 3 (fisso) | Fixed |
+| **Xal'thor** | `PNG/Xal_thor/Xal_thor.md` | 14 | Comandante Illithid (invasione psionica, NON Githyanki — vedi Vaereth); attacca Torneo Giorno 3 (fisso) | Fixed |
 | **Therysol** | `PNG/Therysol/Therysol.md` | 9 | Alleata Tiefling Mezzo-Drago; caccia Il Collezionista | — |
 | **Capitana Lorana** | `PNG/Lorana/Lorana.md` | 7 | PNG secondaria; guida rifugiati; voce non ufficiale Consiglio; NPC di riconnessione Arc 00 | — |
 | **Consiglio di Rethmar** | `PNG/Consiglio_Rethmar/Consiglio_Rethmar.md` | — | Organo collegiale 7 membri; 3 sedute Day 30/33/35; resa default senza intervento PG | — |
@@ -155,7 +155,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 
 ### PARTE 2A: Quest Artemis Warlock — Torre Invisibile (4 Livelli + Boss)
 
-**Durata:** 2–3 sessioni (Day 21–23)
+**Durata:** 2–3 sessioni (Day 28–35, finestra `campaign/state.md` §0; cronologia fine in `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §1.1)
 
 | File | Tipo | Livello Torre |
 |---|---|---|
@@ -188,7 +188,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 
 ### PARTE 2 — Rhest: Città Sommersa & Drago Nero
 
-**Source:** Red Hand pag 67–80 | **Durata:** 2–3 sessioni (Day 23–25)
+**Source:** Red Hand pag 67–80 | **Durata:** 2–3 sessioni (Day 25–32, finestra `campaign/state.md` §0; cronologia fine in `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §1.1)
 
 | File | Tipo | Status |
 |---|---|---|
@@ -213,7 +213,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 
 ### PARTE 2B: Quest Tordek Monaco — Torneo Epico Dauth
 
-**Durata:** 2–3 sessioni (Day 22–24)
+**Durata:** 2–3 sessioni (Day 25–34, finestra `campaign/state.md` §0; cronologia fine — Torneo Day 1-3 = Giorni 30-32 — in `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §1.1)
 
 | File | Tipo | Status |
 |---|---|---|
@@ -244,9 +244,11 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
   - Final gate: if used, leads to Tordek's disintegration
 - 4 Round combattimenti 1v1 (opponents CR 11–14)
   - Key opponents: Tetsu "Serpente di Vento" (Monk 12), Grandmaster Rihan (Monk 14), Thrain Ironfist (Fighter 13), Grom Skullcrusher (Barbarian 14)
-- **Finale improvviso:** Githyanki Red Dragon attack! Artefatto Gith da rubare al sage monk
-  - Xal'thor Illithid Commander (psionic, multi-phase boss)
-  - Arena diventa campo di battaglia: proteggere pubblico + distruggere nucleo psionico
+- **Finale improvviso (Day 3, fisso):** doppio assalto di due fazioni ostili tra loro:
+  - **Xal'thor** (Illithid Commander, psionico, multi-phase boss) guida un'invasione illithid per rubare i **Bracieri Gemelli** di Tordek.
+  - **Vaereth** (Githyanki liberi su draghi rossi) arriva in parallelo per reclamare l'**Orbe delle Otto Porte** — fazione separata e ostile a Xal'thor.
+  - **Round 7**: smascheramento di **Sethrax il Velato** (finalista infiltrato "Kethran Mano di Pietra").
+  - Arena diventa campo di battaglia: proteggere pubblico + distruggere nucleo psionico di Xal'thor
 - **Tordek's Chakra Enlightenment:** 7 soul gates of jujitsu combat (Naruto-inspired)
   - Powers with physical costs, strain to final power → disintegration if used
 - Conseguenze: Fama, 300 dwarf mercenaries sent to Rethmar, artefatti combattimento
@@ -317,7 +319,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 - Thornwaste desert trek
 - Ghostlord Lich lair (CR 14 optional combat OR diplomacy!)
 - Philactery quest (moral choice: restituire, distruggere, o vincolare)
-- Alleanza: Ghostlord ritira supporto da Red Hand (200 undead in meno)
+- 3 rami (vedi `campaign/state.md` §2.3): ostile (default) = **+2.400** non-morti per la Red Hand a Fase 2; neutralizzato = solo **+400** (distaccamento minore); redento/alleato (raro) = **+600** non-morti "buoni" tra i DIFENSORI
 - Mappa dungeon lich "leone di pietra" 60m×80m
 
 ### PARTE 3 — Sabotaggio Campi Drow (3 Missioni)

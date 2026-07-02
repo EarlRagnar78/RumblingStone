@@ -592,4 +592,16 @@ entries — they become campaign history.
             Clock (was ambiguously worded as a march countdown) with
             explicit advance triggers cross-referenced to Armate-
             SINCRONIZZAZIONE-CAMPAGNA §4b.
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto A, sessione 3 (A3+A5+A11):
+            INDICE-GENERALE refresh, no canon change (all values already
+            correct in state.md, only INDICE was stale). A3: Torre/Rhest/
+            Torneo durata windows updated to match state.md §0 (Day
+            28-35 / 25-32 / 25-34), citing HOOKS-INTEGRATION-MASTER §1.1
+            for detailed chronology. A5: Ghostlord numbers in INDICE and
+            Ghostlord-LICH-ALLEANZA-TESTO §6 updated to D7 (+2,400
+            ostile / +400 neutralizzato / +600 pro-difensori se redento).
+            A11: INDICE "Finale improvviso" del Torneo riscritto per
+            separare le due fazioni Day-3 fuse per errore (Xal'thor
+            Illithid vs Vaereth Githyanki, D5), aggiunto lo smascheramento
+            di Sethrax al Round 7.
 ```

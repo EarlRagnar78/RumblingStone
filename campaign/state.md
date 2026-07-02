@@ -987,4 +987,21 @@ entries — they become campaign history.
             (nessun file riempitivo). Rinomina immagini e cartella
             `immage_campaign/` NON eseguita, come da istruzione esplicita
             del piano (dopo la tabella immagine→mappa, C3).
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto B, sessione 9 (B1): contenuto di
+            modulo nuovo, non stato del mondo. Creato
+            `08_.../ARC08-10-ESITI-E-CONTINGENZE.md`: (1) i tre scenari
+            d'esito — vittoria piena (default E1-E8, numeri D11),
+            vittoria costosa (<50 superstiti / Re Thorek morto
+            [INFERRED]), caduta di Hammerfist (evacuazione Passaggi
+            Antichi, orda +600 a Rethmar [INFERRED]) — ciascuno con
+            delta numerici agganciati ai tracker; (2) i rami
+            condizionali di Fauci (D10) col gancio al carry-over ARC-07
+            B4 (A12, non ancora consegnato — nessun valore anticipato);
+            (3) la **tabella di conversione D9** flashback pregen→bonus
+            (Sessioni 1/2/3a × obiettivi pieno/parziale/fallito →
+            intel, posizioni, PNG vivi, −CR, morale — MAI PX), con
+            regola di somma e mappatura ai tre esiti. Sezione
+            "Conseguenze a lungo periodo" lasciata come rimando a C2
+            (Lotto C, non ancora scritto). Nessun esito dichiarato come
+            fatto: tutto preparazione a rami (coerente con A0).
 ```

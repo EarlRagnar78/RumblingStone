@@ -393,7 +393,8 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 | `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md` | Overview completa 5 fasi |
 | `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md` | Stat blocks epici (Azarr Kul CR 15, Avatar Tiamat CR 17, Erinni, Arcimaghi, Ghostlord ally, 300 nani, Githyanki Knights) |
 | `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ESITI-CONSEGUENZE.md` | Sistema VP, esiti A–F, conseguenze PG, epilogo |
-| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-MYTHAL-FOCUS-PG-SCENA-EROICA.md` | Scene eroiche PG-specifiche durante Mythal |
+| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-MYTHAL-FOCUS-PG-SCENA-EROICA.md` | Scene eroiche PG-specifiche durante Mythal (+ §8 varianti per stato PG, C4) |
+| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md` | **⭐ Il Mazzo Eventi (C7)** — 14 carte-crisi giocabili sui 3 giorni (Day 40-42), la battaglia a scene scelte dai PG (D13). Motore in STRUTTURA §9 (C1) |
 
 ### FASE 0: Notte dei Drow (Infiltrazione Interna)
 

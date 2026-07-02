@@ -584,7 +584,25 @@ checklist qui sotto.
   interrogare, emissari Ghostlord). Riusa MISSIONI-BREVI (MB-1…6) e gli
   statblock di Armate-UNITA-NUOVE (tutti verificati esistenti); echi agli
   archi esistenti (Sal, Lorana, Therysol, Collezionista, Zalkatar wildcard).
-- [x] C1 · [x] C2 · [x] C3 · [x] C4 · [x] C5 · [x] C6 · [ ] C7 (event deck)
+- [x] C1 · [x] C2 · [x] C3 · [x] C4 · [x] C5 · [x] C6 · [x] C7 (event deck) —
+  **LOTTO C COMPLETO (2026-07-02).**
+  **C7 (sessioni 21-22) completo (2026-07-02)**: creato
+  `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md` — **14 carte** evento
+  sui 3 giorni (Day 40 Fase 0 ×2, Day 41 pre-assedio ×4 + riposo lungo, Day 42
+  Fasi 1-4 ×8). Ogni carta è un **incontro tattico completo giocabile senza prep**
+  (mappa 1,5 m/q nuova o riuso P3, statblock/puntatore a UNITA-NUOVE, EL 12-18,
+  tattiche, spotlight PG, **3 esiti aperti V/P/S ai dadi** con Δ Fronte + "se
+  ignorata" off-screen). **Regola tre sorgenti** con tabella carta→sorgente→file
+  riusato: **S1:6** (breccia, Tyrgarun, cecchino, combattimenti di strada, difesa
+  ospedale, duello Karruk) / **S2:6** (Cripte/Halveth-echo, Olio di Sal,
+  tradimento Halveth, convoglio Lorana, Leoni Ghostlord, Altare campale con
+  Sethrax/Orbe/Zalkatar wildcard + statue Sal→Varis) / **S3:2** (Marea alle Porte,
+  Falso Segnale — solo buchi di ritmo, zero doppioni). Menù di crisi (3-4/campana,
+  scegli 1-2), risoluzione off-screen §4, ritmo risorse dei 3 giorni, checklist DM.
+  **Ogni PG ha ≥2 carte spotlight** (Thorik 4, Artemis 4, Hella 4, Tordek ≥3).
+  STRUTTURA §2/§4 e FASE1/FASE2-TESTO aggiornati (ondate = sfondo, il deck = layer
+  giocato); INDICE aggiornato con la ⭐ del file. Motore nascosto delegato a
+  STRUTTURA §9 (C1) e Consiglio_Rethmar §Morale (C2).
   **C5+C6 (sessione 20) completo (2026-07-02).** **C5(1)**: FASE2-RITUALISTI-TESTO
   §8 "quinto atto portato in campo" — altare campale come mini-location (3 anelli
   con statblock di riuso), **3 foci con pf/CD espliciti** (CA 5, 60 pf, RD 10/magia,

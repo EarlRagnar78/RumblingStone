@@ -735,4 +735,15 @@ entries — they become campaign history.
             (Custode di Rethmar / Scuola Monastica / Cerchio Sacro / Ambasciatore
             Arcano, 1 beneficio meccanico ciascuno). Nessun potere d'artefatto
             speso "riusato" (§6 rispettata).
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto C, sessioni 21-22 (C7) — CHIUSURA DEL
+            LOTTO C, tutti i task C1-C7 completati. Contenuto di modulo, non stato
+            del mondo. Creato Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK
+            .md: 14 carte-crisi giocabili (Day 40-42, Fasi 0-4), la battaglia a
+            scene scelte dai PG (D13). Regola tre sorgenti S1:6/S2:6/S3:2 con
+            tabella carta→sorgente→file riusato (zero doppioni; nessuno statblock
+            inventato — puntatori a Armate-UNITA-NUOVE). Motore nascosto in
+            STRUTTURA §9 (C1) + Morale Cittadino Consiglio_Rethmar (C2). STRUTTURA
+            §2/§4, FASE1/FASE2-TESTO e INDICE aggiornati per puntare al deck
+            (ondate = sfondo). Con il Lotto C l'arco passa da "coerente/completo"
+            (A+B) a "memorabile" (piano §5).
 ```

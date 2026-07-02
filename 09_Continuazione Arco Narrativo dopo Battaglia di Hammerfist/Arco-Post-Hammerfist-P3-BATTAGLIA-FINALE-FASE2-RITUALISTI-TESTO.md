@@ -12,6 +12,10 @@ Se il rituale riesce, l’Avatar si manifesta a piena potenza; se viene interrot
 
 I PG guidano una **squadra speciale** (eventuali PNG alleati scelti) in un’incursione rapida per distruggere il rituale.
 
+> **Al tavolo (C7)**: questa fase è la **Carta 12 dell'EVENT-DECK** ("L'Altare
+> Campale"), giocata con la mini-location e i costi di scelta di §8 qui sotto. Vedi
+> `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md`.
+
 ---
 
 ## 2. Struttura della fase

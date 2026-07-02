@@ -39,6 +39,14 @@ Basata sulla struttura della Battle of Brindol di Red Hand of Doom[web:86][web:1
 
 Ogni fase può essere una “scena” di 1 sessione o più, a tua scelta.
 
+> **Come si gioca al tavolo (D13 — C7)**: le fasi/ondate qui sotto sono lo
+> **sfondo strategico lato DM**. La battaglia **giocata** dai PG passa per le
+> **carte** dell'EVENT-DECK
+> (`Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md`): a ogni campana il DM
+> presenta 3-4 crisi, i PG ne scelgono 1-2, le altre si risolvono off-screen. Le
+> ondate di Fase 1-2 diventano **il rumore tra le campane**; le carte sono la
+> storia. Il motore nascosto (il Fronte, ruoli di comando, d12, Tyrgarun) è in §9.
+
 ---
 
 ## 3. Fase 0 – Notte dei Drow (infiltrazione interna)
@@ -72,6 +80,11 @@ Se i PG falliscono:
 ## 4. Fase 1 – Assedio Esterno (ondate)
 
 Basata sulla struttura di ondate di Brindol (Red Hand of Doom), ma potenziata.[web:86][web:92]
+
+> **Al tavolo (C7)**: queste ondate sono **sfondo**. Le scene giocate del Day 42
+> sono le carte **7-14** dell'EVENT-DECK (Breccia Porta Ovest, Tyrgarun,
+> Combattimenti di strada, Leoni del Ghostlord, Difesa dell'Ospedale, Duello di
+> Karruk, Il Falso Segnale). Vedi `...EVENT-DECK.md` §2.
 
 ### Onde tipiche
 

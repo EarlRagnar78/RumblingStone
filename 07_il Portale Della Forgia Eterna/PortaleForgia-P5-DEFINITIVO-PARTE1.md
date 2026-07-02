@@ -4,6 +4,11 @@
 
 ### PARTE 1/2 - Infiltrazione e Preparazione Battaglia
 
+> **Ordine di gioco (D2)**: si gioca DOPO la resurrezione di Hella (P3B) —
+> il party (4, Hella tornata) affronta il viaggio temporale per ultimo,
+> prima del raccordo verso l'ARC-08. Vedi
+> `PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md` §0 D2.
+
 **Versione Definitiva D&D 3.5 - Livello 13 - Stile R.A. Salvatore**
 
 ---

@@ -1,6 +1,11 @@
 # IL PORTALE DELLA FORGIA ETERNA
 ## PARTE 5 - VIAGGIO TEMPORALE ANNO -1000 E BATTAGLIA ANCESTRALE
 
+> **Ordine di gioco (D2)**: si gioca DOPO la resurrezione di Hella (P3B) —
+> il party (4, Hella tornata) affronta il viaggio temporale per ultimo,
+> prima del raccordo verso l'ARC-08. Vedi
+> `PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md` §0 D2.
+
 ---
 
 ## IL PARADOSSO TEMPORALE - BRIEFING

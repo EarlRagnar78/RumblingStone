@@ -127,7 +127,7 @@ mancante che emerga si flagga `[INFERRED — needs DM confirmation]`.
   "**morto** — rimosso dall'orda; −1 drago"; `campaign-coherence.md` r.51
   "**fugge gravemente ferito**; può tornare" e r.230 lo conta tra i draghi
   a Rethmar; state.md §2.2 r.123 lo elenca tra i 5 draghi; ARC-07
-  `Portaleforgia-P6-INTEGRAZIONE` r.869 lo dà "Morto" a **GS 12** in un
+  `PortaleForgia-P6-INTEGRAZIONE` r.869 lo dà "Morto" a **GS 12** in un
   finale superato (piano ARC-07 A3).
 - **Azione**: applicare **D10**: riscrivere le voci nei tracker in **forma
   condizionale a rami** (default: fugge sotto i 50 pf → ferito, può

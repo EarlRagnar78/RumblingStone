@@ -2,6 +2,10 @@
 ## PARTE 3B - Rituale Resurrezione Hella
 ### Avventura D&D 3.5 - Livello 13 - Forgotten Realms
 
+> **Ordine di gioco (D2)**: nonostante la sigla "3B", questa parte si gioca
+> DOPO il P4 (Piano della Terra, in corso) e PRIMA del P5 (viaggio
+> temporale). Vedi `PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md` §0 D2.
+
 ---
 
 **Sistema:** Dungeons & Dragons 3.5 Edition  

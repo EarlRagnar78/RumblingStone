@@ -2,65 +2,26 @@
 
 ## HELLA OAKENSHIELD: IL VIAGGIO NELL'INCUDINE DEL MONDO
 
-### Documento di Integrazione P4 ↔ P3B — Versione 2.0 DM (Dream Dwarf / Ranger-Druida)
+### Documento di Integrazione P4 ↔ P3B — Versione Definitiva DM
+
+> **Ordine di gioco (D2)**: lo spirito di Hella viaggia MENTRE il party
+> attraversa il P4 (Piano della Terra) — questo viaggio è **già stato
+> giocato** (vedi il file `...-risultati.md`); il rituale che lo integra
+> (P3B) si gioca dopo il P4. Vedi
+> `PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md` §0 D2.
 
 **Sistema:** D&D 3.5 Edition  
-**Fonti meccaniche:** PHB (resurrection, druid class, ranger class), MM (animal companion, construct), Races of Stone (Dream Dwarf, Earth Dream), Complete Arcane (incantation ritual framework adattato), SRD (spirit creature template adattato)  
-**Personaggio:** Hella Oakenshield — **Dream Dwarf** Ranger 1 / Druida 12 (Livello 13)  
-**Dipendenze dirette:**
+**Fonti meccaniche:** PHB (resurrection, druid class), MM (animal companion, construct), Complete Arcane (incantation ritual framework adattato), SRD (spirit creature template adattato)  
+**Dipendenze dirette:**  
 
-- `PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md` — Piano della Terra, rituale Smeraldo
-
----
-
-## 2. IL BUIO PRIMA DELLA SOGLIA — Prologo
-
-**Collocazione:** Prima delle tre prove. Hella è morta. Il suo corpo è nella Sala della Forgia Eterna. Il suo spirito è... qui.
-
-**Questo prologo va letto alla giocatrice PRIMA di tutto. È il momento in cui capisce che non è "fuori dal gioco" — è in un gioco diverso.**
-
-### Narrazione del Prologo
-
-*"Non sai quanto tempo è passato. Non c'è tempo qui. C'è solo il buio — non oscurità come l'Underdark, non il buio di una caverna. È l'assenza di tutto. Di luce, di suono, di peso, di respiro.*
-
-*Non hai bisogno di respirare. È la cosa più terrificante.*
-
-*Sai che sei morta. Lo ricordi — la spada, il cuore,
-il silenzio improvviso. E dopo il silenzio: questo.
-Non è dolore. Non è pace. È attesa.*
-
-*Ma una cosa la senti. Una sola. Sotto di te — sotto qualcosa che non è un corpo ma ne ha la forma — senti la pietra. Come quando dormivi negli accampamenti dell'Underdark con la guancia premuta sulla roccia, e sognavi. Come quando avevi tre anni e tua madre ti trovava nella cantina del clan, addormentata sul pavimento di granito, sorridente.*
-
-*Il Sogno della Terra.*
-
-*Ogni Dream Dwarf lo conosce — quel subconscio collettivo del mondo che scorre sotto ogni montagna, sotto ogni fondamenta, sotto ogni radice. Lo hai sentito tutta la vita. In frammenti. In sogni. In momenti di meditazione che gli altri nani non capivano e che i druidi del circolo rispettavano senza comprendere.*
-
-*Sei morta — e la terra ti ha tenuta. Non Moradin. La terra stessa. Come un fiume porta un tronco. Perché sei Dream Dwarf, e la terra non dimentica le sue figlie.*
-
-*E ora — nel buio, nell'attesa, nella pietra — una porta. Granito. Rune che non conosci con gli occhi ma che il tuo sangue riconosce.*
-
-*La Soglia della Forgia.*
-
-*La porta non si apre da sola. Non è un invito. È una domanda: vuoi ancora camminare? Anche sapendo dove porta — indietro, nel mondo dove si può morire?"*
-
-### Meccanica: Scelta Iniziale
-
-La giocatrice deve dichiarare ad alta voce: **"Apro la porta"** (o equivalente).
-
-Se esita: la Soglia aspetta. Non c'è fretta. Non c'è pressione. Ma il buio resta.
-
-**Non c'è tiro.** Solo la scelta.
-
-**Nota DM:** Se la giocatrice dice qualcosa di diverso da "apro" — se chiede "cos'è?", se dice "ho paura" — la Soglia risponde:
-
-*"Non c'è risposta nel buio. C'è solo una porta e la scelta di attraversarla. Come ogni mattina. Come ogni combattimento. Come quella volta che hai scelto di mettere il tuo scudo davanti a qualcun altro."*
+- `PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md` — Piano della Terra, rituale Smeraldo  
 
 ---
 
 ## 3. PROVA I: IL FUOCO DELLA VERITÀ
 
 **Collocazione in P4:** Concurrent con l'Incontro Xorn  
-**Segnale in-game:** Il Cuore di Moradin pulsa anomalo (un singolo battito extra)
+**Segnale in-game:** Il Cuore di Moradin pulsa anomalo (un singolo battito extra)  
 
 ### Narrazione della Prova
 
@@ -78,11 +39,6 @@ Una Hella che ha scelto diversamente. Una che ha usato lo scudo
 al momento giusto. Una che aveva urlato per avvisare gli altri.
 Una che aveva lasciato perdere Hammerfist e si era messa in salvo.*
 
-*In uno specchio — quello più piccolo, quello che non volevi guardare — c'è una Hella che non è mai scesa nell'Underdark.
-Una Hella senza Nemico Prescelto. Senza la cicatrice sulla mano sinistra di quando hai tracciato un Grell per tre giorni nel buio. Una Hella che è rimasta nel clan a dormire sulla pietra e a sognare. Quella Hella è viva. Non ha mai perso Nymeria. Non ha mai perso nessuno.*
-
-*Ma non ha mai protetto nessuno.*
-
 *Le fiamme circondano l'immagine di Nymeria — il tuo cane da galoppo,
 morto mesi prima di te in una mischia che non avresti mai dovuto
 permettergli di fare da solo. Lo guardi attraversare le fiamme
@@ -91,31 +47,23 @@ ripetutamente, bruciare, riprendere forma. Bruciare ancora.*
 *Una voce — non Moradin. Qualcosa di più antico, meno personale.
 La voce della Forgia stessa:*
 
-*'Ranger. Druida. Prima di ritornare, dicci: cosa hai protetto in modo
+*'Druida. Prima di ritornare, dicci: cosa hai protetto in modo
 sbagliato? Non quello che avresti potuto fare meglio.
-Quello che hai fatto di sbagliato sapendo che era sbagliato.'*
-
-*Ti chiama entrambe le cose. Ranger e Druida. Come se sapesse
-che sei stata prima una che segue tracce, poi una che protegge.
-Come se la differenza contasse."*
+Quello che hai fatto di sbagliato sapendo che era sbagliato.'"*
 
 ### Meccanica: Dichiarazione o Menzogna
 
 Il DM chiede **alla giocatrice** (non alla scheda) di dichiarare ad alta voce
-una verità scomoda che Hella porta come ranger, come druida, e come persona.
+una verità scomoda che Hella porta come druida e come personaggio.
 
 Non è un tiro. È roleplay puro. La Forgia non giudica la qualità
 della risposta — giudica se è vera.
-
-**Nota importante — Nella Soglia, lo spirito non ha "livelli":**
-Hella non è una "Druida livello 12" qui. È un'anima. I suoi poteri di classe, i suoi tiri salvezza, le sue capacità meccaniche sono sospesi. Nella Soglia contano solo la volontà e la verità. Per questo i TS usano solo SAG +5 e il bonus post-mortem +2.
 
 **Se la risposta è genuina:**
 
 - Le fiamme si abbassano
 - L'immagine di Nymeria smette di bruciare e si solidifica in forma di cane di pietra scura — non si muove ancora, ma è intera
-- Lo specchio della "Hella che non è mai scesa" si rompe — la scelta è fatta, non si torna a quella vita
-- TS Volontà CD 18 (SAG +5, bonus +2 da "chiarezza spirituale post-mortem" = +7) → riesce quasi sempre, ma non automaticamente
+- TS Volontà CD 18 (SAG Hella +5 = +5, bonus +2 da "chiarezza spirituale post-mortem") = CD 18 contro +7 → riesce quasi sempre, ma non automaticamente
 
 **Se la risposta è evasiva o superficiale:**
 
@@ -151,8 +99,7 @@ il lore la riconoscono come "segnata dalla Forgia".
 **Segnale in-game:** Madre Cristallo dice "messaggio spirito druida vostra — ci ha contattato"  
 **Collegamento narrativo:** I Cristalli Viventi sono creature di pura memoria minerale.
 Lo spirito di Hella li raggiunge attraverso la loro risonanza collettiva — un canale
-che esiste non solo perché lei è druida, ma perché è **Dream Dwarf**.
-L'Earth Dream è il tessuto connettivo tra lei e ogni pietra senziente nel Piano.
+che esiste solo perché lei è druida e già in stato liminale.
 
 ### Narrazione della Prova
 
@@ -166,26 +113,10 @@ a fidarsi di loro.*
 Le pareti sono fatte di lastre runiche — migliaia, forse milioni.
 Ogni lastra contiene un ricordo. Non i tuoi. I ricordi del mondo.*
 
-*Conosci questo luogo.*
-
-*Ogni Dream Dwarf lo intravede nei sogni — la Cava dei Ricordi Mondiali, l'archivio del subconscio terrestre. Tu l'hai vista in frammenti, dormendo sulla nuda pietra negli accampamenti dell'Underdark. Hai visto angoli di questa cava nei sogni dell'infanzia, quando tua madre diceva che "dormivi troppo profondo". Non dormivi troppo profondo. Dormivi dove dovevi.*
-
-*Ma non l'avevi mai vista così — intera, infinita, schiacciante.*
-
-*Sei tornata a casa. E casa è piena di dolore.*
-
 *Un ricordo per ogni pietra posata, ogni albero abbattuto, ogni
 animale morto in una trappola, ogni fuoco appiccato a una foresta
 per fare spazio a un campo coltivato. Il prezzo della civiltà
 scritto nelle pietre senza che nessuno lo abbia mai chiesto.*
-
-*Fai quello che hai sempre fatto. Segui le tracce.*
-
-*Ranger prima di druida. Cercatrice prima di custode.
-Le tracce nella pietra non sono impronte — sono vibrazioni,
-risonanze, echi di passi che non ci sono più. Ma tu sai seguirle.
-L'hai fatto per tre giorni nel buio dell'Underdark inseguendo
-quel Grell. Lo fai adesso nella pietra dei ricordi.*
 
 *E tra queste lastre, una più piccola. Alta come la tua mano.*
 
@@ -200,7 +131,10 @@ messa in difficoltà.*
 
 *La voce della Forgia di nuovo:*
 
-*'Dream Dwarf. Questo è il peso che porti da sempre — prima ancora di essere druida. La terra non perdona — non punisce, non premia, non ricorda. Ma tu ricordi. Tu hai sempre ricordato. È per questo che la terra ti tiene qui invece di lasciarti andare.*
+*'Druida. Questo è il peso che porta ogni custode della natura.
+La natura non perdona — non punisce, non premia, non ricorda.
+Solo tu ricordi. Solo tu senti il peso. È questo che ti rende
+utile. È questo che ti rende fragile.*
 
 *Scegli: ricordi il dolore come scudo, o come ferita aperta?'"*
 
@@ -222,8 +156,8 @@ Questa prova non richiede un tiro — richiede una **scelta dichiarata** dalla g
 - Effetto permanente post-resurrezione: diverso ma non inferiore — vedi Sezione 7
 
 **Prova di supporto (indipendente dalla scelta):**
-TS Volontà CD 20 (SAG +5, bonus post-mortem +2 = +7) per mantenere la coerenza dello spirito senza disperdersi
-nell'emozione del ricordo (la cava di lastre può sopraffarre anche una Dream Dwarf che la conosce dai sogni — conoscerla rende più facile perdersi, non meno).
+TS Volontà CD 20 per mantenere la coerenza dello spirito senza disperdersi
+nell'emozione del ricordo (la cava di lastre può sopraffarre anche un druida).
 
 - Successo: transizione normale alla Prova III
 - Fallimento: Hella "resta" nella cava per un momento extra — il tempo si allunga per lei. Effetto: al risveglio in P3B, avrà un flashback intenso di questa scena (roleplay, nessun malus meccanico)
@@ -244,48 +178,7 @@ I frammenti si sciolgono in polvere dorata e scompaiono nella roccia.
 
 *"Non è sparito. È andato dove serve. Dove vi incontrerete di nuovo."*
 
-*La terra ha preso il ricordo. Per una Dream Dwarf, questo significa che è diventato parte del Sogno della Terra — non perso, ma integrato. Nymeria non è nei Piani Esterni. È nella pietra. In tutta la pietra.*
-
----
-
-## 4B. INTERLUDIO: LA PAURA DEL RITORNO
-
-**Collocazione:** Tra Prova II e Prova III. Non è una prova. Non ha meccanica. È un momento.
-
-### Narrazione
-
-*"Prima della terza porta, ti fermi.*
-
-*Non la Forgia ti ferma. Tu ti fermi.*
-
-*Hai attraversato il fuoco. Hai attraversato la pietra.
-Sai cosa c'è dietro la terza porta — la scelta del ritorno.
-Tornare nel corpo. Tornare nel mondo.*
-
-*Tornare dove si muore.*
-
-*La prima volta non l'avevi scelta. Eri scesa nell'Underdark
-perché c'erano tracce da seguire e persone da proteggere.
-Non pensavi di morire. Nessuno pensa di morire.*
-
-*Ma ora lo sai. Sai che la spada è entrata nel petto
-mentre eri stordita e non hai neanche sentito il colpo.
-Sai che il tuo ultimo pensiero non è stato 'no' — è stato
-'non ancora'. Come se sapessi che c'era qualcosa dopo.*
-
-*Questo è il dopo. E il dopo chiede: vuoi un altro prima?*
-
-*La porta della terza prova è lì. Non brilla. Non chiama.
-Aspetta. La Soglia della Forgia non ha fretta.
-La terra non ha fretta. Tu sei Dream Dwarf — lo sai.
-La pietra aspetta millenni.*
-
-*Ma i tuoi compagni no."*
-
-**Istruzioni per DM:** Non chiedere nulla. Non fare tirare nulla.
-Lasciare che la giocatrice assorba il momento. Se dice qualcosa,
-bene. Se non dice nulla e apre la porta, bene. In entrambi i casi,
-la terza prova inizia.
+Hella non sa ancora cosa significa. Lo capirà durante il rituale Smeraldo.
 
 ---
 
@@ -322,14 +215,10 @@ Un anziano nano, barba bianca sporca di fuliggine, mani
 da artigiano, occhi che hanno visto abbastanza da essere
 stanchi e abbastanza da non essersi fermati.*
 
-*Lo hai già visto. Nei sogni della terra, in frammenti. Ogni Dream Dwarf intravede il Forgiatore nei sogni profondi — mai il volto, solo le mani, il martello, il suono dell'incudine che risuona sotto ogni montagna. Ora lo vedi intero. Ed è semplicemente un nano vecchio che lavora.*
-
 *Ti guarda come si guarda un pezzo di metallo che potrebbe ancora
 essere qualcosa di bello o spezzarsi definitivamente sotto il martello.*
 
 *'Ho visto le tue prove,' dice. Voce normale. Non tuono.*
-
-*'Ranger che è diventata druida. Segugi-tracce che è diventata custode. Figlia della terra che ha sempre dormito più profondo degli altri.'*
 
 *'Ora dimmi tu: che tipo di protezione vuoi essere?*
 
@@ -351,7 +240,7 @@ non lo distribuisce. Sei sicura?"*
 
 **Prova per Via della Guardia:**
 
-- TS Volontà CD 22 (SAG +5, bonus +2 = +7; resistere al dubbio, affermare la scelta)
+- TS Volontà CD 22 (resistere al dubbio, affermare la scelta)
 - Se supera: il voto è sancito — vedi effetti Sezione 7
 - Se fallisce: Hella esita. Moradin aspetta. Può riprovare a CD 19 (il dubbio ha già alleggerito il costo)
 
@@ -370,9 +259,6 @@ Moradin poggia il martello sull'incudine senza usarlo.
 finché non la cerchi. Sei disposta a non essere vista
 quando funzioni?"*
 
-*"Ma una Dream Dwarf dovrebbe saperlo. Voi vedete nel sogno
-quello che gli altri calpestano senza sapere."*
-
 **Prova per Via della Radice:**
 
 - TS Volontà CD 20 + Knowledge (Religion) DC 15 (capire che Moradin approva entrambi i percorsi)
@@ -388,12 +274,10 @@ quello che gli altri calpestano senza sapere."*
 
 Prima di congedare Hella, Moradin fa una domanda che non richiede prova ma risposta:
 
-*"Il tuo compagno animale. So dove è andato — tu sai dove è andato.
-La polvere di Nymeria è già nella pietra del Piano della Terra.
-Non per miracolo — per te. Perché sei Dream Dwarf e quando sei morta
-il tuo sogno ha portato Nymeria nella terra con te.
-Quando i tuoi compagni faranno il rituale, quella polvere si raccoglierà.
-Ma la forma che prenderà dipende da te, non da loro.*
+*"Il tuo compagno animale. So dove è andato — tu sai dove è andato.*
+*La polvere di Nymeria è già nella pietra del Piano della Terra.*
+*Quando i tuoi compagni faranno il rituale, quella polvere si raccoglierà.*
+*Ma la forma che prenderà dipende da te, non da loro.*
 
 *Cosa deve proteggere Nymeria? Chi è, nella sua nuova forma?"*
 
@@ -404,13 +288,13 @@ ma ugualmente valido.
 
 ---
 
-## 6. NYMERIA RIFORGIATO — NASCITA DEL GUARDIANO DI PIETRA
+## 6. Nymeria RIFORGIATO — NASCITA DEL GUARDIANO DI PIETRA
 
 **Collocazione in P4:** Concurrent con Fase 3 del Rituale dello Smeraldo  
 **Trigger meccanico:** Lo Smeraldo si incastona nella Corona. L'onda d'urto verde
 percuote la camera sferica. La polvere di Terros e i frammenti di cristallo
-vivente — i frammenti che la polvere di Nymeria (dispersa nel Sogno della Terra
-da Hella durante la Prova II) ha già raggiunto — collassano in forma.
+vivente — i frammenti che la polvere di Nymeria (dispersa nella pietra del Piano)
+ha già raggiunto durante la Prova II — collassano in forma.
 
 ### Come appare Nymeria Riforgiato
 
@@ -472,8 +356,8 @@ la prima cosa che vede è Nymeria.
 
 *"Apri gli occhi.*
 
-*Il soffitto della Sala della Forgia Eterna. La luce dell'altare.
-I visi dei tuoi compagni — esausti, sollevati, sgualciti.*
+*Il soffitto della Sala della Forgia Eterna. La luce dell'altare.*
+*I visi dei tuoi compagni — esausti, sollevati, sgualciti.*
 
 *E tra loro, più basso, una forma.*
 
@@ -482,9 +366,6 @@ I visi dei tuoi compagni — esausti, sollevati, sgualciti.*
 *Non è Nymeria. È Nymeria riforgiato — lo stesso legame, una nuova forma.
 Le ferite che lui ha portato non ci sono più. La stanchezza che aveva
 nelle ultime settimane di vita non c'è. C'è solo pietra e volontà.*
-
-*Lo senti nel Sogno della Terra — dove prima c'era un vuoto, adesso
-c'è un peso familiare. Come un'impronta che è tornata a riempirsi.*
 
 *Fa un passo avanti. Appoggia la testa pesante sul tuo petto.*
 
@@ -534,7 +415,6 @@ della resurrezione tramite P3B:
 - **Photosynthesis** (recupero HP da luce solare diretta)
 - **Collana dei Semi Eterni** (artefatto P3B con poteri invariati)
 - **Nymeria** (in qualsiasi forma — anche la versione 10 HD è significativa)
-- **Earth Dream Amplificato** (vedi Sezione 9 — specifico Dream Dwarf)
 
 ---
 
@@ -547,9 +427,7 @@ il party chiama il nome di Hella. Nel documento base, lo spirito "risponde
 dai Piani Esterni".
 
 **Con questo documento integrato:** Lo spirito non viene dai Piani Esterni.
-Era nella Soglia della Forgia — nel Sogno della Terra. Più vicino di quanto nessuno pensasse. Non perché Moradin la tenesse — ma perché il Sogno della Terra
-tiene le Dream Dwarf anche nella morte. Moradin ha costruito la Soglia.
-La terra ha portato Hella qui.
+Era nella Soglia della Forgia — più vicino. Risponde prima del previsto.
 
 **Modifica narrativa:**
 
@@ -599,15 +477,13 @@ Hella non sa dell'Ombra del Mercante che Artemis potrebbe aver visto
 nella cava di lastre, ha visto una lastra con sopra un simbolo che non
 riconosceva — un basilisco stilizzato. "Non era mia. Era di qualcuno
 che frequenta la pietra da molto più tempo di me."
-(Omettere se subplot Collezionista non attivo.)
 
 ### Aggiunta al STEP 7 — Nymeria integrato alla Collana
 
 Nel documento P3B base, la Collana dei Semi Eterni si forma dai tre semi
 e dai sacrifici del party. **Con questo documento integrato**, la Collana
 ha già un quarto elemento: il "dono della Prova II" — la polvere della
-lastra di Nymeria che si è sciolta nella pietra del Piano della Terra,
-portata dal Sogno della Terra di Hella.
+lastra di Nymeria che si è sciolta nella pietra del Piano della Terra.
 
 **Effetto aggiuntivo sulla Collana:**
 Il terzo seme incastonato nella Collana non evoca un Treant generico —
@@ -626,10 +502,6 @@ qualcosa di familiare. Come il peso di una testa appoggiata sul petto."*
 Questa sezione elenca **solo le modifiche** rispetto alla scheda base
 in `PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`.
 
-**Classe corretta:** Dream Dwarf Ranger 1 / Druida 12 (Livello Totale 13)  
-**Caster Level Druida:** 12 (il Ranger 1 non contribuisce)  
-**Caster Level Ranger:** 0 (richiede Ranger 4 per slot incantesimi)
-
 ### Modifiche applicabili alla scheda base (tutte cumulabili con P3B)
 
 #### Statistiche Base
@@ -639,7 +511,6 @@ in `PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`.
 | Velocità base | 6m (armatura) | -1,5m (Via Guardia) oppure invariata (Via Radice) |
 | Tipo | Umanoide/Vegetale | invariato |
 | Vulnerabilità Fuoco | già presente (P3B) | amplificata se Via Radice (x1,5 → x2 per fonti >20 danni) |
-| Darkvision | 60 ft (standard P3B) | **90 ft** (Dream Dwarf razziale — non era elencato in P3B; correzione) |
 
 #### Capacità Speciali Aggiuntive da Viaggio Onirico
 
@@ -668,13 +539,6 @@ in `PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`.
 - Rigenerazione 1 HP/round (già inclusa in P3B), ma con questa prova si estende: funziona anche su suolo sacro a Moradin e in ambienti druidici, non solo terra naturale
 - 1/giorno: Radicamento — azione standard, Hella affonda radici spirituali nel terreno entro 9m. Per 5 round: tutti gli alleati in quell'area hanno +1 morale a tutti i TS (il legame con la terra li stabilizza). Hella non può muoversi durante il radicamento.
 
-**EARTH DREAM AMPLIFICATO** (Specifico Dream Dwarf — indipendente dalle prove)
-
-- Post-resurrezione, il Sogno della Terra di Hella è permanentemente amplificato dall'aver camminato nella Soglia da morta
-- 1/giorno: meditando su pietra naturale per 10 minuti, Hella può porre 1 domanda alla terra (come *Divination*, CL 12, ma limitata a informazioni sulla pietra, caverne, creature sotterranee, o strutture entro 50 miglia da una montagna)
-- Non è magia — è connessione razziale potenziata. Non può essere dispellata. Non richiede slot incantesimi.
-- L'informazione arriva come sogno lucido breve (anche da sveglia — gli occhi di Hella diventano ambra intenso per 10 secondi)
-
 #### Nymeria come Compagno Animale Speciale
 
 **Regola del Legame Druidico:**
@@ -694,7 +558,7 @@ non naturale. Questo significa:
 
 ---
 
-## 10. NYMERIA: SCHEDA COMPLETA D&D 3.5
+## 10. Nymeria: SCHEDA COMPLETA D&D 3.5
 
 ### Nymeria, Guardiano di Pietra Riforgiato
 
@@ -772,7 +636,6 @@ Nymeria percepisce l'umore di Hella a qualsiasi distanza e può comunicare
 uno stato emotivo base (pericolo, tranquillità, urgenza) attraverso il legame.
 Non è telepatia verbale — è una risonanza viscerale, come un basso
 continuo nella consapevolezza di Hella.
-**Per una Dream Dwarf:** Questa risonanza viaggia attraverso il Sogno della Terra — Hella e Nymeria sono connessi anche attraverso piani diversi finché c'è pietra sotto i piedi di almeno uno dei due.
 
 **Manifestazione (Su, 1/giorno)**
 Se Nymeria è "a riposo" (inattivo, non evocato dalla Collana), Hella può
@@ -842,9 +705,17 @@ Usarlo come primary striker nel round sbaglia il suo ruolo.
 
 ### Timing delle Scene Oniriche
 
-Questo documento è progettato per una **sessione solo con la giocatrice di Hella**,
-da giocare PRIMA che il party completi P4. Questo dà al DM la conoscenza
-completa delle scelte di Hella per calibrare il rituale Smeraldo e la resurrezione.
+Non interrompere P4 per le scene di Hella. Le prove si raccontano
+come **flashback differiti** — la giocatrice di Hella può prendere
+note durante P4 (il DM sussurra cosa accade nella Soglia mentre
+gli altri giocano), e poi racconta tutto in P3B.
+
+**Alternative se la giocatrice vuole giocare in tempo reale:**
+
+- Fare le prove come scene brevissime (2-3 minuti) nei momenti di
+  pausa naturale in P4 (cambio round, riposo breve, consultazione party)
+- Avere la giocatrice separata dal tavolo (letteralmente) durante
+  la sua prova, come se fosse "altrove"
 
 ### Gestione dell'Emozione
 
@@ -858,7 +729,6 @@ passiva mentre gli altri combattevano.
 - Dare alla giocatrice il testo della Narrazione della Prova per leggerlo da sola prima di raccontarlo al tavolo
 - Non affrettare le scelte — Via della Guardia vs Via della Radice è una decisione genuina di personaggio, non meccanica
 - Fare in modo che il momento di Nymeria (testa sul petto) sia silenzioso — nessun commento del party per 10-15 secondi. Lasciare che sia solo tra Hella e Nymeria.
-- Il Prologo (Buio Prima della Soglia) va letto LENTAMENTE. Dare tempo alla giocatrice di entrare nello stato mentale di "sono morta". È l'unica volta in una campagna D&D in cui un giocatore sperimenta la morte come gameplay, non come pausa tecnica.
 
 ### Note su Moradin
 
@@ -871,28 +741,11 @@ Non usare toni epici per la voce di Moradin nelle prove.
 Usare toni di bottega — diretto, non sentimentale, preciso.
 Moradin è innamorato del suo lavoro. Non delle frasi.
 
-**Per una Dream Dwarf:** Moradin è il nano che lei ha intravisto
-nei sogni per tutta la vita. Mai il volto — solo le mani sul martello.
-Ora lo vede intero. E scopre che è solo un artigiano paziente.
-
-### Note sul Ranger 1
-
-Il Ranger 1 non è un errore di build — è la storia di Hella.
-Ha iniziato seguendo tracce. Poi ha capito che le tracce ti portano
-ai problemi, e che qualcuno deve stare lì quando i problemi arrivano.
-Dall'inseguire (Ranger) al proteggere (Druida).
-
-Le prove dovrebbero riflettere questo arco:
-- Prova I: la Forgia la chiama "Ranger. Druida." — entrambe.
-- Prova II: usa le sue capacità di track per navigare la Cava.
-- Prova III: Moradin dice "Segugi-tracce che è diventata custode."
-
 ### Cosa il party non deve sapere finché non lo racconta Hella
 
 - I dettagli delle prove
 - La domanda specifica di Moradin su Nymeria
 - Cosa ha risposto Hella
-- Che Hella è Dream Dwarf e il Sogno della Terra la teneva — questo il party lo sente per la prima volta dal suo racconto
 
 Il party sa solo che Hella era "da qualche parte tra qui e la morte"
 e che Moradin la teneva. I dettagli emergono dal racconto di Hella
@@ -913,6 +766,4 @@ in P3B — e ogni dettaglio che lei sceglie di condividere o non condividere
 
 *Documento generato per uso esclusivo DM — RumblingStone 1372 DR*  
 *Integrare in: `07_il Portale Della Forgia Eterna/`*  
-*Versione: 2.0 — Dream Dwarf / Ranger 1 / Druida 12 — design collaborativo DM + player profile analysis*  
-*Sostituisce: v1.0 (`PortaleForgia-P4-PianoTerra-P3B-HELLA-IL-VIAGGIO-NELL'INCUDINE-DEL- MONDO.md`)*
-
+*Versione: 1.0 definitiva — design collaborativo DM + player profile analysis*

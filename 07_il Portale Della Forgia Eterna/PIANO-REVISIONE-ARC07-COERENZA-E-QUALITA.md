@@ -225,6 +225,19 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
 - **Accettazione**: zero file 0-byte, zero `temp_*`, zero code AI;
   `grep -rn "OnlineMarkdown"` = 0; nessun filename con spazi interni
   anomali; link tutti validi.
+- **✅ FATTO (2026-07-02, sessione 1)**: `Atlante-Visivo-Mappe.md` è ora uno
+  stub con puntatore a B8/C1; `temp_sinergie.txt` rimosso;
+  `RicalibrazioneScontriPianoDelFuoco.md` e
+  `LaCorona_di_Adamantio-DM.md` ripuliti (coda AI e 17 blocchi di
+  watermark `OnlineMarkdown.com` da conversione PDF); `git mv` di
+  `PortaleForgia-P4-...-DEL- MONDO.md`/`-v2.md` (spazio rimosso) e
+  `Portaleforgia-P6-INTEGRAZIONE-Completa.md` → `PortaleForgia-P6-...`
+  (F maiuscola), riferimenti aggiornati in questo file, nel file
+  `...-risultati.md`, nel file v2 e nel piano ARC-08. Trovato in più un
+  file duplicato non censito qui (stesso contenuto, casing diverso):
+  `PortaleForgia-P4-pianoTerra-P3b-...-risultati.md` (minuscolo) — appunti
+  grezzi del DM, ora marcato deprecato con puntatore al canonico (D10: non
+  cancellato).
 
 ### A8. Terminologia: 53 `DC` inglesi + file interamente in inglese
 - **Problema**: 53 occorrenze di `DC n` contro la convenzione CD (§0.7);
@@ -249,6 +262,13 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   NON rinumerare i file (troppi riferimenti).
 - **Accettazione**: nessun lettore può sbagliare l'ordine; INDICE coerente
   con D2 e con ARC-08 D8.
+- **✅ FATTO (2026-07-02, sessione 1)**: riga D2 aggiunta in testa a
+  entrambe le versioni P3B (COMPLETO, RICALIBRATO-alternative), a tutte e
+  4 le versioni P4 (COMPLETO-alternative, RICALIBRATO, e i due file fusi
+  v1/v2 del viaggio) e a tutte e 4 le versioni P5 (FINAL, DEFINITIVO
+  PARTE1/2, RICALIBRATO) — l'elezione del master (A6) non è ancora
+  avvenuta, quindi la riga è su ogni generazione per non doverla rifare.
+  L'INDICE (B8) resta da fare.
 
 ### A10. Artefatti: fonte unica, duplicazioni, Cintura della Devastazione — applicare D9+D17
 - **Problema**: (1) la cartella `00-La Corona di Adamantio-ogetto&Prove/`
@@ -536,8 +556,8 @@ la checklist qui sotto.
 
 ### Checklist avanzamento
 
-- [ ] A1 · [ ] A2 · [ ] A3 · [ ] A4 · [ ] A5 · [ ] A6 · [ ] A7 ·
-  [ ] A8 · [ ] A9 · [ ] A10 · [ ] A11
+- [ ] A1 · [ ] A2 · [ ] A3 · [ ] A4 · [ ] A5 · [ ] A6 · [x] A7 ·
+  [ ] A8 · [x] A9 · [ ] A10 · [ ] A11
 - [ ] B1 · [ ] B2 · [ ] B3 · [ ] B4 · [ ] B5 · [ ] B6 · [ ] B7 ·
   [ ] B8 · [~] B9 — **parziale (2026-07-02)**: Collana ✅ e
   file-risultati ✅; restano Sonjak, schede Belkram/Urialle, collegamenti

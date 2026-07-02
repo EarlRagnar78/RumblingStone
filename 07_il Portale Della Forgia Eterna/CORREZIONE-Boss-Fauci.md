@@ -338,9 +338,13 @@
 ## 🏆 RICOMPENSE POST-VITTORIA
 
 ### **XP**
-- **Fauci di Palude GS 12:** 8.000 XP (2.000/PG)  
+> ⚠️ **ERRATA (B5)**: "8.000 XP (2.000/PG)" è **errato** per PG di 13° vs GS 12
+> (corretto ≈ **2.925/PG**, ~11.700 totali su 4 PG — sotto di ~30%). E comunque
+> questo profilo GS 12 è **superato** (nel 1372 vale il GS 15 dell'ARC-08, A3).
+> Vedi `ERRATA-ARC07-35-Verification.md` §1.
+- **Fauci di Palude GS 12:** ~~8.000 XP (2.000/PG)~~ → **~2.925/PG** (13° vs GS 12)  
 - **Ondate precedenti:** ~200 XP residui  
-- **TOTALE PARTE 6:** 8.200 XP/PG  
+- **TOTALE PARTE 6:** ricalcolare sul valore corretto (profilo superato)  
 
 ### **TESORO**
 - **Scaglie Drago:** 10.000 mo (materiale armature)  

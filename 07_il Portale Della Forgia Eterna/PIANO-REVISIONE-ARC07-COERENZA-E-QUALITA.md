@@ -536,6 +536,15 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   retcon.
 - **Accettazione**: file errata nuovo; XP corretti; un solo profilo per
   boss; Terros a misura di D15; nessuna correzione retroattiva sul giocato.
+- **✅ FATTO (2026-07-02, sessione 13)**: creato
+  `ERRATA-ARC07-35-Verification.md` (formato errata ARC-09): action economy
+  3.5, **XP per incontro APL 13/D15** (con la correzione dell'errore 8.000→
+  ~2.925 di CORREZIONE, annotata anche in place), statblock dei 4 boss (Elder
+  Fire, **Terros ricalibrato per APL 12/target CR 14-15**, Skullcrusher GS 12,
+  Fauci = pointer al GS 15 ARC-08), CD delle prove (fast-play + viaggio),
+  poteri Corona vs `campaign-artifacts.md`, Cintura = Devastation Gauntlets
+  slot-cambiato. Nota "giocato coi valori vecchi" per le parti giocate (nessun
+  retcon). Valori non attestati `[INFERRED]`.
 
 ### B6. Ancoraggio al March Clock e viaggio verso Hammerfist
 - **Evidenza**: l'arco non nomina mai il March Clock (state.md §2.1); la
@@ -691,9 +700,9 @@ la checklist qui sotto.
 
 - [x] A1 · [x] A2 · [x] A3 · [x] A4 · [x] A5 · [x] A6 · [x] A7 ·
   [x] A8 · [x] A9 · [x] A10 · [x] A11 — **LOTTO A COMPLETO**
-- [x] B2 · [x] B3 · [x] B4 · [~] B1 (log ricostruiti; attende intervista DM) · [ ] B5 · [ ] B6 · [ ] B7 ·
-  [ ] B8 · [x] B9 — Collana ✅, file-risultati ✅, Sonjak-raid ✅, schede
-  post-mortem Belkram/Urialle ✅, Cintura ✅
+- [~] B1 (log ricostruiti; attende intervista DM) · [x] B2 · [x] B3 ·
+  [x] B4 · [x] B5 · [ ] B6 · [ ] B7 · [ ] B8 · [x] B9 — Collana ✅,
+  file-risultati ✅, Sonjak-raid ✅, schede Belkram/Urialle ✅, Cintura ✅
 - [ ] C1 · [ ] C2 · [ ] C3
 - [x] D1…D17 — **tutte le decisioni DM acquisite (2026-07-02); nessuna
   domanda aperta**

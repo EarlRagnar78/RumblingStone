@@ -676,4 +676,13 @@ entries — they become campaign history.
             inventare sotto-quest nuove. Risultato: **zero link rotti
             operativi** (restano solo i riferimenti del piano a
             deliverable futuri B4/B7/C7). INDICE aggiornato con i 3 file.
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto B, task B1 (Rhest) completo: no
+            canon change (contenuto di modulo, non stato del mondo). I 5
+            file FASE di Rhest (FASE1 Blackfens, FASE2 Razorfiend, FASE3
+            intrusione, FASE4 boss, CONSEGUENZE) portati da scheletro a
+            standard "pacchetto Palio". Le conseguenze citano e rispettano
+            i numeri canonici già in §2.3 (Regiarix sconfitto = −1 drago,
+            −2 Razorfiend) e §2.4 (D9: 100 ranger + 20 gufi); gli statblock
+            restano nei file ENCOUNTER esistenti. Nessun potere d'artefatto
+            "riusato" (rispettata §6, poteri attuali).
 ```

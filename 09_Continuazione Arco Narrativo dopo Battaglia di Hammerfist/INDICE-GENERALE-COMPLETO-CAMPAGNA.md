@@ -53,6 +53,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 |---|---|
 | `inizio.md` | ⚠️ storico/deprecato — Brainstorming iniziale, schema arco narrativo, struttura 4 atti, missioni parallele |
 | `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md` | Timeline Red Hand of Doom (Day 19–42), mappa hex Cannath Vale, contesto Hammerfist (vittoria PG, fortezza danneggiata), sistema urgenza |
+| `Arco-Post-Hammerfist-HANDOUTS.md` | **Handout giocatore stampabili** (testo integrale): lettera di Brenna, invito di Maewen, mappa in pelle di Tempestas, bracket del Torneo, volantino del Palio (8 contrade), 3 carte-visione di Saraah — ognuno con "quando darlo" |
 
 **Contenuti Setup:**
 

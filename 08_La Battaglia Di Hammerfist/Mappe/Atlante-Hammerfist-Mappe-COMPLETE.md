@@ -10,6 +10,11 @@
 > = Re di Hammerfist (comandante difensore per tutta la battaglia).
 > Tre persone diverse — mai fonderle (audit occorrenza-per-occorrenza
 > 2026-07-02: refusi corretti, vedi changelog).
+> **🖼️ Immagini reali (C3)**: i riferimenti "**Immagine:** [NNN]
+> `hammerfist-*.png`" sotto sono placeholder. Le immagini **reali**
+> (webp in `immagini/`) sono classificate in
+> `ARC08-14-ATLANTE-IMMAGINI.md`; le corrispondenze certe sono citate
+> nella voce di ogni mappa qui sotto.
 
 ---
 
@@ -86,7 +91,7 @@ per tutte le altre mappe (e per la lettura narrativa) restare su questo file.
 ## 🔍 SESSIONE 1: L'OMBRA SULLA MONTAGNA
 
 ### MAPPA 1A-1: IL SENTIERO NASCOSTO
-**Immagine:** [148] `hammerfist-1a1.png`
+**Immagine:** [148] `hammerfist-1a1.png` — **reale (C3)**: `immagini/13.webp` (mappa tattica), `immagini/sentieroNascosto.webp` + `immagini/00_PM.webp` (arte)
 
 **Tipo:** Infiltrazione tattica  
 **Scala:** 1 quadrato = 3 metri  
@@ -126,7 +131,7 @@ SUD ↓
 ---
 
 ### MAPPA 1A-2: IL TORRIONE DI VEDETTA
-**Immagine:** [149] `hammerfist-1a2.png`
+**Immagine:** [149] `hammerfist-1a2.png` — **reale (C3)**: `immagini/torreVedetta.webp` + `immagini/01.webp` (arte), `immagini/Generated Image October 03, 2025 - 6_09PM.webp` (mappa tattica)
 
 **Tipo:** Osservazione tattica  
 **Scala:** 1 quadrato = 3 metri  
@@ -181,7 +186,7 @@ Antica torre di guardia in pietra (rovina) si erge sul bordo di un dirupo scosce
 ---
 
 ### MAPPA 1A-3: CAMPO DELLA MANO ROSSA
-**Immagine:** [150] `hammerfist-1a3.png`
+**Immagine:** [150] `hammerfist-1a3.png` — **reale (C3)**: `immagini/03.webp` (orda schierata)
 
 **Tipo:** Vista strategica narrativa  
 **Scala:** Non tattica (400m distanza)  
@@ -289,7 +294,7 @@ Reference quick distanze e formazioni. Aggiorna posizioni mentre battaglia proce
 ---
 
 ### MAPPA 2A: FORTEZZA HAMMERFIST VISTA DALL'ALTO
-**Immagine:** [152] `hammerfist-map2a.png`
+**Immagine:** [152] `hammerfist-map2a.png` — **reale (C3)**: `immagini/04.webp`, `immagini/Generated Image October 03, 2025 - 5_44PM.webp`, `immagini/new_maps/Generated Image October 03, 2025 - 6_14PM.webp` (mappe iso); `immagini/05.webp` (arte)
 
 **Tipo:** Mappa tattica isometrica top-down  
 **Scala:** 1 quadrato = 3×3 metri  
@@ -744,7 +749,7 @@ Visual aid helps players understand stakes without calculating PF numericamente.
 ---
 
 ### MAPPA 2B-CORRETTA: ATTACCO DEL DRAGO
-**Immagine:** [156] `hammerfist-dragon.png`
+**Immagine:** [156] `hammerfist-dragon.png` — **reale (C3)**: `immagini/07.webp` + `immagini/fauciDiPalude.webp` + `immagini/new_maps/Generated Image October 03, 2025 - 6_22PM.webp`
 
 **Tipo:** Moment cinematico  
 **Scala:** Non griglia (Visual drama)  
@@ -817,7 +822,7 @@ Questo è **TURNING POINT** Giorno 2. Soffio drago devastates leadership nanico,
 ## 🏃 SESSIONE 3: DALLE PROFONDITÀ DELLA TERRA
 
 ### MAPPA 3X: INGRESSO PASSAGGI ANTICHI
-**Immagine:** [157] `hammerfist-3x.png`
+**Immagine:** [157] `hammerfist-3x.png` — **reale (C3)**: `immagini/08.webp` (mappa evacuazione)
 
 **Tipo:** Escape tactical  
 **Scala:** 1 quadrato = 2 metri  
@@ -899,7 +904,7 @@ Cortile Interno ridotto inferno fumante. Pozze acido verde corrosivo steam ovunq
 ---
 
 ### MAPPA 3Y: IL PONTE SOSPESO
-**Immagine:** [157b] `hammerfist-3y.png` `[INFERRED — numero immagine non
+**Immagine:** [157b] `hammerfist-3y.png` — **reale (C3)**: `immagini/09.webp` (Borin al ponte) — `[INFERRED — numero immagine non
 ancora assegnato, migrato da 00_ATLANTE VISIVO...-complete.md — A8]`
 
 **Tipo:** Retroguardia / difesa a strozzatura
@@ -1018,7 +1023,7 @@ Multi-threat simultaneous:
 ---
 
 ### MAPPA 5: CUORE DELLA MONTAGNA
-**Immagine:** [159] `hammerfist-map5.png`
+**Immagine:** [159] `hammerfist-map5.png` — **reale (C3)**: `immagini/sala-interna-hammerfist.webp`
 
 **Tipo:** Sanctuary + Epic reveal  
 **Scala:** 1 quadrato = 3 metri  
@@ -1187,7 +1192,7 @@ This map shows MOMENT BEFORE. Next map (4 Unified) shows DURING charge + aerial 
 ---
 
 ### MAPPA 4: BATTAGLIA FINALE AEREA E TERRESTRE
-**Immagine:** [161] `hammerfist-final.png`
+**Immagine:** [161] `hammerfist-final.png` — **reale (C3)**: `immagini/10.webp` + `immagini/scontro-finale.webp` (arte), `immagini/11.webp` (mappa 4A) + `immagini/12.webp` (vista aerea)
 
 **Tipo:** Epic cinematic dual-front  
 **Scala:** Strategic overview  

@@ -551,7 +551,7 @@ canone è cambiato; (4) aggiorna la checklist qui sotto.
   [x] A8 (2026-07-02) · [x] A9 (2026-07-02, parziale — vedi nota) · [x] A10 (2026-07-02) · [x] A11 (2026-07-02) · [ ] A12 (attende ARC-07 B4)
 - [x] B1 (2026-07-02) · [x] B2 (2026-07-02, ponte snello; stato in uscita da state.md §1/§6) · [x] B3 (2026-07-02) · [x] B4 (2026-07-02) · [x] B5 (2026-07-02) ·
   [x] B6 (2026-07-02) · [x] B7 (2026-07-02) — **LOTTO B COMPLETO**
-- [x] C1 (2026-07-02) · [x] C2 (2026-07-02) · [ ] C3 · [ ] C4
+- [x] C1 (2026-07-02) · [x] C2 (2026-07-02) · [x] C3 (2026-07-02, ~67% pin preciso + 100% a gruppo; rinomina file differita) · [ ] C4
 - [x] D1…D14 — **tutte le decisioni DM acquisite (2026-07-02); nessuna
   domanda aperta bloccante** (D13-D14 sono default [INFERRED] emendabili)
 

@@ -181,7 +181,7 @@ The party descends through a chain of connected underground locations:
 
 #### Arc 08 — La Battaglia di Hammerfist (4 Sessions)
 
-- **Source:** `08_La Battaglia Di Hammerfist/` (9 files + 2 subdirectories: Mappe/, immage_campaign/)
+- **Source:** `08_La Battaglia Di Hammerfist/` (9 files + 2 subdirectories: Mappe/, immagini/)
 - **Main DM Guide:** `ARC08-01-GUIDA-DM.md` (168KB, 3312 lines)
 - **Supplementary files:**
   - `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` — Visual atlas with tactical maps (master, piano ARC-08 A8; supersedes `00_ATLANTE VISIVO...-complete.md` and `ARC08-90-DEPRECATO-battle-stats-maps.md`, both DEPRECATED)
@@ -460,7 +460,7 @@ and back to the surface for the Red Hand campaign mainline.
 - **Lord of Sun and Shadow PrC (rejected):** <https://github.com/EarlRagnar78/RumblingStone/blob/main/PG/Artefatti/Artefatti-Pg/PrestigeClass/lord_sun_shadow/lord_sun_shadow.html>
 - **Cerebromorphosis:** <https://github.com/EarlRagnar78/RumblingStone/tree/main/PG/Artefatti/Artefatti-Pg/Artemis/Cerebromorphosis>
 - **Therysol NPC:** <https://github.com/EarlRagnar78/RumblingStone/tree/main/PNG/Therysol>
-- **Arc 08 Battle of Hammerfist:** `08_La Battaglia Di Hammerfist/` (9 files + Mappe/ + immage_campaign/)
+- **Arc 08 Battle of Hammerfist:** `08_La Battaglia Di Hammerfist/` (9 files + Mappe/ + immagini/)
 - **Arc 09 Post-Hammerfist:** `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/` (74 markdown + 6 images)
 - **All Arc directories:** `01_LaMiniera/` through `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/`
 

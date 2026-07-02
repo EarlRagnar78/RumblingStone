@@ -1127,4 +1127,24 @@ entries — they become campaign history.
             carta S2 "Il Ritorno di Fauci di Palude" per l'EVENT-DECK
             ARC-09 (ramo default D10). Nessun eco contraddice gli HOOKS
             ARC-09; EVENT-DECK ARC-09 non modificato (solo proposto).
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto C, sessione 17 (C3): atlante
+            immagini. Cartella `08_.../immage_campaign/` → **`immagini/`**
+            (git mv, typo corretto); aggiornate le 2 referenze vive
+            (INDICE, campaign-history.md ×2). Le voci di changelog
+            precedenti che citano "immage_campaign" restano intatte
+            (append-only, storiche). Creato
+            `ARC08-14-ATLANTE-IMMAGINI.md`: classificazione delle ~42
+            webp (immagine → mappa/scena → sessione → prompt d'origine
+            → quando mostrarla → nome suggerito). 28/42 pinnate a un
+            master preciso a vista (visionate ~19 + 6 nomi descrittivi +
+            4 varianti bis); 14 "generazioni October 2025" classificate
+            al gruppo (mappe/scene dell'arco, campione confermato
+            fortezza 2A / torrione 1A-2 / drago / finale) → 100% a
+            gruppo, ~67% pin preciso. Aggiunti i puntatori alle
+            immagini reali su 9 voci del master visivo
+            (`Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md`: 1A-1, 1A-2,
+            1A-3, 2A, drago, 3X, 3Y, 5, finale). Rinomina dei singoli
+            file allo schema `hammerfist-sNN-*` **differita** (nessun
+            .md li referenzia per nome → passata dedicata a basso
+            rischio, dopo il pin a vista delle 14 generazioni).
 ```

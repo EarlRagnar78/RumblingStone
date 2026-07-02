@@ -41,6 +41,7 @@
 | D5 | Xal'thor = comandante **Illithid** (vuole i Bracieri); Vaereth = Githyanki liberi (vogliono l'Orbe); Sethrax = emissario di Zalkatar | state.md changelog 2026-05-03 |
 | D6 | March Clock: Day 19 = sync Hammerfist/Terrelton; **Day 40 = Notte dei Drow (Fase 0); Day 42 = assalto a Rethmar (Fasi 1-4)** | state.md §2.1 (vince per regola 1) |
 | D7 | Ghostlord: ostile default = +2.400 non morti; neutralizzato = +400; redento = +600 pro-difensori | state.md §2.3 |
+| D8 | **Nessun "5° atto" al Fane di Tiamat** (decisione DM 2026-07-02). L'Avatar di Tiamat viene richiamato **durante** la battaglia di Rethmar (che copre ~3 giorni, Day 40-42) tramite il rituale a 10 round dei chierici/ritualisti draconici della Mano Rossa (Fase 2). Il Fane nel Shaar resta solo origine dell'orda e sede del Ritual Clock — non una location giocata | DM, questa revisione |
 
 ### Decisioni di canone DA CHIEDERE AL DM (l'engine NON deve deciderle da solo)
 
@@ -50,7 +51,7 @@
 | Q2 | **Quanti nani** dal Torneo di Dauth? | 300 mercenari (quasi tutti i file) vs +400 (state.md §2.4). Le **150 lance di Re Thorek** sono un flusso separato (hook Thorik/Maewen). Proposta: canonizzare **300 (Dauth) + 150 (lance Hammerfist)** e correggere state.md §2.4 in 300 |
 | Q3 | **Tyrgarun**: che drago è? | "Very Old Blue CR 20 cavalcato da Azarr Kul" (INDICE r.443) vs "black adult, riserva aerea" (ARMATE-SYNC §2.1) vs assente dalla Fase 3 (STRUTTURA §6, STATBLOCCHI-EPICI). Con APL 14, un CR 20 in groppa al boss rompe il budget CR 16-18. Proposta: **blue adult CR 15 in riserva aerea, NON cavalcatura** — Azarr Kul combatte a terra con Avatar come da STRUTTURA |
 | Q4 | Il debito di Tordek "presentarsi a Dauth entro 5 giorni" (state.md §5) è compatibile col torneo che inizia Day 30 (HOOKS §1.1)? Proposta: riformulare in "entro il Day 29 (vigilia delle preliminari)" |
-| Q5 | Epilogo giocabile post-Rethmar (mini-Fane di Tiamat nel Shaar, stile RHoD Parte 5) — lo si vuole come ARC-10? (vedi G8) |
+| ~~Q5~~ | ~~Epilogo giocabile al Fane come ARC-10?~~ **RISOLTA → D8: no.** L'epilogo giocabile va costruito dentro/dopo Rethmar (vedi C5) | DM 2026-07-02 |
 
 ---
 
@@ -342,15 +343,21 @@
   Hella in forma elementale sì/no)? Aggiungere le varianti mancanti.
 - **Accettazione**: ogni scena ha variante per i 2-3 stati possibili del PG.
 
-### C5. Epilogo giocabile (benchmark RHoD Parte 5) — dipende da Q5
-- RHoD non finisce a Brindol: il colpo finale al Fane dà chiusura. Qui il
-  post-vittoria è solo narrato (monologhi ESITI).
-- **Azione** (se Q5 = sì): stub di ARC-10 `ARC10-STUB-FANE-DEL-SHAAR.md`:
-  3 pagine — viaggio nel Shaar, Fane rifortificato, ultimo Wyrmlord/erede di
-  Kul, distruzione dell'altare di Tiamat; aggancio ai future hooks già elencati
-  (INDICE §Epilogo, ESITI §8). Se Q5 = no: espandere la cerimonia-epilogo con
-  una scena giocata per PG (già abbozzate in ESITI §7-8).
-- **Accettazione**: la campagna ha una chiusura giocata, non solo letta.
+### C5. Epilogo giocabile dentro/dopo Rethmar (D8: niente atto al Fane)
+- In RHoD la chiusura è il colpo al Fane; qui per decisione DM (D8) il climax
+  equivalente è **già dentro la battaglia**: il rituale a 10 round della Fase 2
+  che richiama l'Avatar è il "Fane portato in campo". Il post-vittoria però
+  resta solo narrato (monologhi ESITI).
+- **Azione**: (1) potenziare la Fase 2 perché regga il peso di "quinto atto":
+  l'altare campale dei ritualisti come mini-location mappata (3 anelli di
+  guardie, foci distruttibili con pf/CD, l'Artefatto Maligno di Fase 0 come
+  focus se rubato), scelta tattica esplicita per i PG (interrompere il rituale
+  vs tenere le mura — non si può fare entrambe senza alleati); (2) espandere
+  la cerimonia-epilogo post-battaglia con una scena giocata per ciascun PG
+  (già abbozzate in ESITI §7-8) + un'ultima decisione collettiva sul destino
+  del Fane nel Shaar lasciata come hook narrato per campagne future.
+- **Accettazione**: la Fase 2 ha mappa/statistiche/costi di scelta espliciti;
+  la campagna ha una chiusura giocata, non solo letta.
 
 ### C6. Ricompense di dominio/titolo (benchmark Kingmaker)
 - ESITI §7-8 accenna a titoli/ambasciate; nessuna meccanica.
@@ -384,7 +391,7 @@ brevi; B/C sono generativi e vanno spezzati.
 | 17 | B7 (incontri viaggio) | generativo | — |
 | 18 | C1 + C2 (assedio + morale) | generativo | A2 |
 | 19 | C3 + C4 | editing | — |
-| 20 | C5 + C6 | generativo | **risposta DM Q5** |
+| 20 | C5 + C6 | generativo | A2 (fasi Day 40-42 fissate) |
 
 **Regole anti-spreco**: (1) passa all'engine SOLO questo file + i file del
 lotto corrente + state.md §0-§3; (2) niente riletture dell'intero arco;
@@ -398,8 +405,8 @@ checklist qui sotto.
   [ ] A8 · [ ] A9 · [ ] A10 · [ ] A11 · [ ] A12 · [ ] A13
 - [ ] B1.1 · [ ] B1.2 · [ ] B1.3 · [ ] B1.4 · [ ] B1.5 · [ ] B2 · [ ] B3 ·
   [ ] B4 · [ ] B5 · [ ] B6 · [ ] B7
-- [ ] C1 · [ ] C2 · [ ] C3 · [ ] C4 · [ ] C5 (Q5) · [ ] C6
-- [ ] Q1 · [ ] Q2 · [ ] Q3 · [ ] Q4 · [ ] Q5 — **risposte DM**
+- [ ] C1 · [ ] C2 · [ ] C3 · [ ] C4 · [ ] C5 · [ ] C6
+- [ ] Q1 · [ ] Q2 · [ ] Q3 · [ ] Q4 · [x] ~~Q5~~ (→ D8) — **risposte DM**
 
 ---
 
@@ -416,6 +423,7 @@ indietro di 2 generazioni di canone (numeri, nomi, date) — è il rischio class
 dei repo multi-engine e si risolve col Lotto A; (2) Rhest è un'ossatura in mezzo
 a capitoli completi; (3) l'economia del tesoro è sotto il WBL di un fattore ~8;
 (4) l'assedio finale ha ottimi numeri strategici ma nessun sotto-sistema
-tattico al tavolo; (5) manca il "quinto atto" giocabile che in RHoD chiude il
-cerchio. Con i lotti A+B l'arco è solido; con C diventa il tipo di finale che i
-giocatori raccontano per anni.
+tattico al tavolo; (5) il "quinto atto" di RHoD qui è per scelta (D8) il
+rituale di evocazione dell'Avatar in Fase 2 — va potenziato perché regga quel
+peso, e serve un epilogo giocato oltre i monologhi. Con i lotti A+B l'arco è
+solido; con C diventa il tipo di finale che i giocatori raccontano per anni.

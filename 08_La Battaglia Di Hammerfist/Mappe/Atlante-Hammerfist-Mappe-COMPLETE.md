@@ -4,6 +4,12 @@
 > **Stato**: canonico — **MASTER VISIVO** dell'arco (piano ARC-08 A8,
 > 2026-07-02). Canone di trama in `campaign/state.md`, non ancora
 > giocato (piano ARC-08 A0). **Ultima revisione**: 2026-07-02.
+> **⚠️ Disambiguazione nomi (A10, D2)**: **Thorin** Runaforte = pregen
+> chierico (agisce SOLO nel flashback D6, poi come PNG); **Thorik** =
+> PG guerriero (compare SOLO dal finale, D6/E6, mai prima); **Thorek**
+> = Re di Hammerfist (comandante difensore per tutta la battaglia).
+> Tre persone diverse — mai fonderle (audit occorrenza-per-occorrenza
+> 2026-07-02: refusi corretti, vedi changelog).
 
 ---
 
@@ -794,7 +800,7 @@ Momento ICONICO campagna: Fauci di Palude dragon dive attack vs Re Thorek sui ba
   - Guardie (PF 42 media): 6-8 KO instant (Failed save = death)
   - Re Thorek (PF 195): Survives (Resistenza + items), heavily wounded
   - Borin (PG): Tough call (Depends save)
-  - Thorin (PG): Likely survive (Chierico AC alto)
+  - Thorin (pregen, non ancora PG in questa scena — D6/D2): Likely survive (Chierico AC alto)
 
 **Controffensive Possibili:**
 - **Dara (Torre Ovest):** Crossbow Heavy +1 attack (Extreme range -6, +19 final = +13)
@@ -1056,7 +1062,7 @@ Caverna naturale bellezza mozzafiato, cathedral-like grandezza. Soffitto 40m alt
   - Conscious but weak (Can speak, cannot fight)
   - Position: Center altare (Surrounded protectors)
 - **Momento Drammatico:** Quando PG appear, Thorek occhi aprono
-  - Riconosce Thorik SkullDark (Stesso bloodline, Corona recognizes)
+  - Riconosce Thorik (Stesso bloodline, Corona recognizes)
   - Ultime parole prima collassare: "Moradin ha... ascoltato... la Forgia... eterna..."
 
 **TUNNEL INGRESSO (Nord):**
@@ -1099,7 +1105,7 @@ Caverna naturale bellezza mozzafiato, cathedral-like grandezza. Soffitto 40m alt
 **Ondata Finale (Round 9-10): GRIMJAW + 10 OROG**
 - **Se Grimjaw vede situazione (PG arrived, morale swing):** 
   - Option A: Retreat strategic (Live fight another day)
-  - Option B: Personal challenge Thorik SkullDark (Arrogance)
+  - Option B: Personal challenge Thorik (Arrogance)
 - **Se Grimjaw morto già Sessione 2:** Sostituisci Capitano Hobgoblin minore (Auto-retreat)
 
 **EVENTO CLIMAX (Round 8):**
@@ -1158,7 +1164,7 @@ Vista laterale (side profile) mostra vantaggio tattico geografico nani: Hammerfi
 - **Re Thorek XIII:** Rear position (Healed 100 HP via Dana, still weak)
 - **Madre Dana + Cantitrici:** Support rear (Buff spells, healing ready)
 - **4 PG (Rumbling Stones):** **TIP OF SPEAR** (Leading charge!)
-  - Thorik SkullDark: Punto cuneo, Corona blazing, Aegis-Fang ready
+  - Thorik: Punto cuneo, Corona blazing, Aegis-Fang ready
   - Tordek Ironfist: Left flank Thorik, ki aura visible
   - Artemis Blackrock: Airborne (Ali Ombra), 15m altitude
   - Hella Stonebloom: Right flank, 2 Treant Adamantino already summoned
@@ -1198,7 +1204,7 @@ Rappresenta absolute APEX campagna - every element converges single moment glory
 **BATTAGLIA TERRESTRE (Ground):**
 
 **Carica Nanica (Wedge Formation):**
-- **Tip:** Thorik SkullDark (Corona 3 gemme blazing tricolor)
+- **Tip:** Thorik (Corona 3 gemme blazing tricolor)
   - Aegis-Fang spinning thrown (Hits Gorthak, returns)
   - Aura: 30m radius, alleati +4 morale/att
 - **Left Wing:** Tordek Ironfist + 30 guerrieri
@@ -1268,12 +1274,25 @@ Rappresenta absolute APEX campagna - every element converges single moment glory
 - **Support:** Tordek joins (Flurry Blows), Artemis continues blast
 - **Fauci Desperate:** Full Attack Thorik (Morso+Artigli+Ali+Coda)
 - **Thorik Heroic:** Aegis-Fang throw (Crit 19-20/×3) + *Smite Evil*
-  - **Killing Blow:** Aegis-Fang embedded skull (Penetra sclale adamantine)
-  - Drago collassa (0 HP), earthquake tremor impatto
 
-**CONSEGUENZA IMMEDIATA:**
-- **Orda vede:** Drago morto = ROUT completo
-- **400 Superstiti:** Flee panic (100% casualties se pursued O 80% escape)
+> **Esito — ramo condizionale, non un fatto compiuto (D10, piano
+> ARC-08 A1)**: quando Fauci scende **sotto i 50 PF** il **default**
+> è che tenta la fuga (Tattiche già previste nello statblock,
+> `00_Schede_dei_Personaggi...md` §1) — rottura del grapple di Orion,
+> decollo disperato verso le montagne meridionali, gravemente ferito
+> ma vivo (può tornare, hook nemesi). **Solo se i PG lo bloccano
+> attivamente e continuano ad attaccarlo oltre quel punto** (es.
+> Tordek/Artemis lo tengono a terra mentre Thorik finisce il colpo)
+> arriva a 0 PF ed è **ucciso** — Aegis-Fang che si conficca nel
+> teschio è l'immagine giusta SOLO per questo ramo alternativo.
+> Nessuno dei due esiti è deciso qui: si risolve al tavolo.
+
+**CONSEGUENZA IMMEDIATA (dipende dal ramo sopra):**
+- **Se Fauci fugge (default):** l'orda vede il drago ritirarsi ferito,
+  non morto — morale nemico comunque crolla (il drago non li protegge
+  più), ma niente "drago morto" nella narrazione ai superstiti.
+- **Se Fauci è ucciso (ramo alternativo):** **Orda vede:** Drago morto = ROUT completo.
+- **400 Superstiti:** Flee panic (100% casualties se pursued O 80% escape) — invariato in entrambi i rami.
 - **Gorthak:** Surrender O death (PG choice)
 - **Grimjaw:** Fled già (Se vivo) O corpse (Se morto Sessione 2-3)
 

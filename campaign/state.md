@@ -184,6 +184,13 @@ quasi certa.
 | **Ghostlord redento come alleato** | +600 non-morti buoni | Branch raro |
 | Mercenari Salvatore (rischio tradimento) | ±300 | Instabile |
 
+**Nota D13 (piano ARC-08 A11)**: il Capitano Lunapiena e i suoi 12
+Ranger Elfici (Hammerfist Arc-08) sono una compagnia **indipendente**
+dell'Elsir Vale — **NON** contano in questa tabella, restano di
+presidio a Hammerfist. Da non confondere con l'Alleanza Elfi Starsong
+Hill (Tiri Kitor, riga sopra) né con Lythiel Alar-Wen (Sacred Forest,
+§4).
+
 **Scenari finali (target: PG meaningfully shift balance):** questa tabella
 è la vista rapida legacy; per lo scenario **autoritativo e ricalcolato**
 sui nuovi totali D9/D10, vedi
@@ -923,4 +930,31 @@ entries — they become campaign history.
             uniforme 1,5m). I tre master tattici `L{1,2,3}-REVISED-
             Ultra-Clear` erano già coerenti a 1,5m/quadrato, nessuna
             modifica necessaria.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto A, sessione 7 (A10+A11): audit
+            di refusi, nessun cambio di canone di trama. A10 (D2):
+            audit occorrenza-per-occorrenza di Thorin/Thorik/Thorek nel
+            master `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` (52
+            occorrenze totali). Trovati e corretti: "Thorik (PG)" nella
+            scena del soffio di Sessione 2 (era ancora la fase pregen,
+            D6 — non è "PG" lì, solo "Thorin"); l'epiteto spurio
+            "Thorik SkullDark" (4 occorrenze — conflazione col nome
+            deprecato dell'antenato drago, già corretto altrove in
+            ARC-07 D6 a "Skullcrusher") rimosso, resta solo "Thorik".
+            Scoperto e sanato un secondo problema mentre si leggeva la
+            scena: il duello finale Thorik vs Fauci era scritto come
+            uccisione certa ("Killing Blow", "Drago collassa 0 HP"),
+            violando il ramo condizionale D10 (A1) — riscritto a rami
+            (default: fugge sotto 50 PF; alternativo: ucciso se i PG
+            lo bloccano attivamente). Nota di disambiguazione
+            "Thorin=pregen, Thorik=PG, Thorek=re" aggiunta in testa ai
+            2 file master (Atlante mappe + Schede dei Personaggi).
+            A11 (D13): compagnia del Capitano Lunapiena dichiarata
+            esplicitamente indipendente/Elsir Vale, di presidio a
+            Hammerfist, NON sommata ai difensori di Rethmar — nota
+            aggiunta allo statblock (Schede §2), alla sezione PNG
+            della Guida DM, a state.md §2.4, e come regola di coerenza
+            esplicita in ARMATE-SYNC ARC-09 §7 (prima l'esclusione era
+            solo implicita per omissione). Verificato che la Cerimonia
+            delle 100 Asce già usa solo Lythiel, nessuna fusione dei
+            due comandi elfici.
 ```

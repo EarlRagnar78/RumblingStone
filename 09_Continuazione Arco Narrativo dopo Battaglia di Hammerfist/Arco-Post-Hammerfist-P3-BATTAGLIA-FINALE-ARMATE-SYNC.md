@@ -181,6 +181,16 @@ Ogni hook completato **prima del Day 40** modula i numeri di §3. Riferimento: `
 5. **Ghostlord neutralizzato ≠ Ghostlord assente**: un piccolo distaccamento di non-morti minori viene comunque inviato (coerenza: Azarr Kul non si fida e manda avanguardia).
 6. **La battaglia è perduta senza PG**: scenari A/B portano alla caduta di Rethmar se i PG non sono presenti in Fase 3-4. Questo è **intenzionale** e **non negoziabile** (fondamento drammatico).
 7. **Nessun bivio binario** (coerenza §5.3): i PG devono sempre poter scegliere quale fronte rinforzare (Mura / Tempio / Circolo), con costo-opportunità reale.
+8. **Due comandi elfici DISTINTI, D13 (piano ARC-08 A11)**: il
+   **Capitano Lunapiena** e i suoi Ranger Elfici (compagnia
+   indipendente dell'Elsir Vale, combattuta ad Hammerfist Arc-08)
+   **restano di presidio a Hammerfist** — **NON** vanno sommati ai
+   difensori di Rethmar in nessuno scenario di §3, e non vanno confusi
+   con l'Alleanza Elfi di Starsong Hill (Tiri Kitor, +120 ranger/gufi,
+   D9) né con la Capitana **Lythiel Alar-Wen** (Sacred Forest, unico
+   canale elfico verso Hella — compare solo alla Cerimonia delle 100
+   Asce e in Arc-09 via le hook Hella-SacredForest). Tre presenze
+   elfiche separate, mai da fondere né da doppio-contare.
 
 ---
 

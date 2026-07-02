@@ -6,6 +6,11 @@
 > **Stato**: canonico (materiale di modulo; canone di trama in
 > `campaign/state.md`, non ancora giocato — vedi piano ARC-08 A0).
 > **Ultima revisione**: 2026-07-02.
+> **⚠️ Disambiguazione nomi (A10, D2)**: **Thorin** Runaforte = pregen
+> chierico (agisce SOLO nel flashback D6, poi come PNG); **Thorik** =
+> PG guerriero (compare SOLO dal finale, D6/E6); **Thorek** = Re di
+> Hammerfist (comandante difensore per tutta la battaglia). Tre
+> persone diverse — mai fonderle.
 
 ### **INDICE DELLE APPENDICI**
 
@@ -324,6 +329,16 @@
 *   **Frecce della Morte dei Draghi (3):** Se una di queste frecce colpisce un drago, quest'ultimo deve superare un TS su Tempra CD 20 o morire.
 
 **Tattiche:** Il Capitano Lunapiena è un leader e un cacciatore di mostri. Userà il Corno del Valhalla per creare un diversivo a terra. In aria, si concentra esclusivamente su Fauci di Palude, usando le sue Frecce della Morte dei Draghi per tentare di porre fine rapidamente allo scontro.
+
+> **Chi sono i suoi Ranger Elfici — D13 (piano ARC-08 A11)**: la
+> compagnia di Lunapiena è **indipendente**, dell'Elsir Vale (né Tiri
+> Kitor né Sacred Forest); **resta di presidio a Hammerfist** dopo la
+> battaglia e **NON si somma** ai difensori di Rethmar in ARC-09
+> ARMATE-SYNC. È un comando elfico **distinto** dalla Capitana Lythiel
+> Alar-Wen (Sacred Forest), che compare solo nella sessione finale e
+> alla Cerimonia delle 100 Asce (E7) — Lythiel resta l'unico canale col
+> Sacred Forest. Le due presenze non si sono mai incrociate in scena:
+> nessun doppio conteggio, nessuna fusione dei due comandi.
 
 ---
 <div style="page-break-before:always"></div>

@@ -389,6 +389,12 @@ SIMBOLI TATTICI:
 - Ranger 10°, porta un Corno del Valhalla d'Argento
 - Frecce Speciali aggiuntive: 3 Frecce della Morte dei Draghi
 
+> **D13 (piano ARC-08 A11)**: questa compagnia è **indipendente**,
+> dell'Elsir Vale — NON i Tiri Kitor di Starsong Hill, NON il Sacred
+> Forest della Capitana Lythiel Alar-Wen (che compare solo alla
+> Cerimonia delle 100 Asce, E7). Resta di presidio a Hammerfist dopo
+> la battaglia; NON si somma ai difensori di Rethmar in ARC-09.
+
 *Elfo dei Boschi Ranger 8°*
 **Caratteristiche:** For 14, Des 18, Cos 16, Int 12, Sag 14, Car 8
 **Iniziativa:** +4; 

@@ -1004,4 +1004,31 @@ entries — they become campaign history.
             "Conseguenze a lungo periodo" lasciata come rimando a C2
             (Lotto C, non ancora scritto). Nessun esito dichiarato come
             fatto: tutto preparazione a rami (coerente con A0).
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto B, sessione 10 (B6+B2):
+            contenuto di modulo nuovo, non stato del mondo. B6: creato
+            `ARC08-12-CRONOLOGIA-MARCH-CLOCK.md`, la cronologia
+            condivisa Day X→19 (flashback pregen ~settimane prima →
+            assedio Day 16-18 → riemersione RS Day 18-19 = Giorno 3
+            d'assedio → vittoria Day 19 → Cerimonia Day 21). Tre
+            riconciliazioni tra file che divergevano: (a) Cerimonia =
+            **Day 21** (dal file canonico Cerimonia §7), non Day 19 come
+            proponeva genericamente il piano B6; (b) "Giorno 3
+            dell'assedio" (conteggio locale) ≠ March Clock Day 3;
+            (c) finestra ricognizione pregen [INFERRED] (D6 "qualche
+            settimana" vs proposta B6 "Day 12-16"). B2: creato
+            `ARC08-11-PONTE-ARRIVO.md` (snello), la cucitura D16 finora
+            mancante — puntatore al master P3B ARC-07 (NON riscritto;
+            stato in uscita dalla fonte stabile state.md §1/§6 + D8),
+            correzione esplicita su P5-DEF §4.3 (che faceva atterrare i
+            PG nella Sala della Forgia; D16, più recente, li fa
+            riemergere al Cuore della Montagna Giorno 3 — D16 vince), e
+            regia del passaggio pregen→PG (D6) con uno spotlight per
+            ciascun PG (Durik incluso, terzo seme della Collana).
+            Bonus del flashback rimandati alla tabella B1 §5 (mai PX,
+            D9). Aggiornato il rimando in ARC08-04 (marcia) alla
+            cronologia B6 ora esistente. Nota: B2 marcato completo
+            nonostante il flag "attende ARC-07 B2" — il ponte usa lo
+            stato in uscita bloccato in state.md/D8, non la prosa del
+            master P3B (che ARC-07 B2 rifinirà); il pointer narrativo
+            potrà guadagnare dettaglio, la cucitura no.
 ```

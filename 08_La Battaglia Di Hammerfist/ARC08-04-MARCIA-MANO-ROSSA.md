@@ -88,10 +88,10 @@ l'opportunità narrativa e tattica, non il bonus meccanico finale.
   caduta di Terrelton sulla rotta principale — state.md §2.1), quando
   i Rumbling Stones riemergono al Cuore della Montagna (ARC-07 D16) e
   concludono la battaglia (E6).
-- Una cronologia completa Day X→19 che copra anche il flashback e
-  l'assedio giorno per giorno è compito del piano ARC-08 **B6**
-  (Ancoraggio al March Clock) — qui si fissa solo il punto di arrivo,
-  non l'intera sequenza.
+- La cronologia completa Day X→19 (flashback, assedio giorno per
+  giorno, riemersione, Cerimonia) è in
+  `ARC08-12-CRONOLOGIA-MARCH-CLOCK.md` (B6) — qui si fissa solo il
+  punto di arrivo, non l'intera sequenza.
 
 ## 5. Esito del distaccamento (rimando)
 

@@ -251,7 +251,7 @@ Brenna scrive *"vi ringrazia ogni notte, in silenzio, per essere sopravvissuti t
 - **Capitana Lorana**: `PNG/Lorana/Lorana.md`
 - **Conte Valerius (corruzione di Halveth)**: `PNG/Conte_Valerius/Conte_Valerius.md`
 - **Re Thorek + Hammerfist**: `campaign/lore/campaign-history.md` Arco 08
-- **Sister hook (Tournament — Thorik's 150 lances and political weight)**: `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Thorik.md`
+- **Sister hook (Tournament — Thorik's 150 lances and political weight)**: `Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md` §4
 - **Phase 0 Notte dei Drow**: `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE0-NOTTE-DEI-DROW-TESTO.md`
 - **Phase 1 Assedio**: `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE1-ASSEDIO-TESTO.md`
 - **Thorik PG card**: `skills/rumblingstone-campaign/references/campaign-party.md` Thorik section

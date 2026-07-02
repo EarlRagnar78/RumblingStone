@@ -617,4 +617,23 @@ entries — they become campaign history.
             inizio.md e Quest 1 – Druida Hellas (brainstorm storico
             pre-canone, code conversazionali AI rimosse), INDICE li
             etichetta "storico/deprecato".
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto A, sessione 5 (A8+A9): no canon
+            change. A8: 3 link rotti a file mai creati (P2B-Torneo-DAUTH-
+            CONSEGUENZE-ECHI-LUNGO-PERIODO, -DM-MASTER-REFERENCE,
+            -SUBQUEST-Thorik) ripuntati a file esistenti equivalenti
+            (MINIMAPPA-TIMELINE-ALLEANZE, PARTE1-3, HOOKS-Tordek-
+            DauthInvitation §4). Nota: uno scan repo-wide ha trovato
+            altri 5 link rotti (SUBQUEST-Artemis, SUBQUEST-Hella,
+            DAY3-DAUTH-CITY-SIEGE, + 2 duplicati) che referenziano
+            sotto-quest MAI scritte (non solo rinominate) — richiedono
+            contenuto narrativo nuovo, fuori scope per un lotto
+            meccanico; lasciati per una sessione dedicata.
+            A9: SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO-Description.md
+            (0 byte) riempito con le descrizioni narrative dei 3 campi
+            drow (il gemello COMPLETO.md ha già mappe/statistiche).
+            PARTE1-to-Be_integrated.md marcato DEPRECATED (bozza pre-
+            canone: Tetsu/Rihan già adottati nel canone altrove, il
+            resto superato da OTTO-PORTE-e-ORBE + PARTE1-3), corretto
+            l'unico 5e-ismo reale (attacco "con vantaggio" → regola
+            SRD 3.5 di elevazione) e ripulite le code conversazionali.
 ```

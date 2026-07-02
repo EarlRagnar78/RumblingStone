@@ -12,7 +12,7 @@ This directory contains **74 markdown files** + **6 image files** (+ 2 new PNG f
 All location names use Cannath Vale equivalents (Rethmar, Shaarcah Forest, etc.).
 See `skills/dnd-35-rules/references/fr-cannath-vale.md` for the full RHoD→Cannath Vale mapping.
 
-**Legend:** ✅ = Content complete | 📝 = Empty placeholder (TODO) | ⚠️ = Needs integration
+**Legend:** ✅ = Content complete | 📝 = Empty placeholder (TODO) | ⚠️ = Needs integration | ⚠️ storico/deprecato = brainstorm pre-canone, non normativo
 
 ---
 
@@ -217,7 +217,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 
 | File | Tipo | Status |
 |---|---|---|
-| `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-to-Be_integrated.md` | Testo principale — narrativa completa, Orbe Otto Porte, chakra gates | ⚠️ DA INTEGRARE |
+| `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-to-Be_integrated.md` | ⚠️ storico/deprecato — bozza pre-canone (Tetsu/Rihan adottati altrove, resto superato da OTTO-PORTE-e-ORBE + PARTE1-3) | ⚠️ storico/deprecato |
 | `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-Giorno1-Preliminari.md` | Giorno 1 — Preliminari torneo | ✅ |
 | `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-Round1.md` | Dettaglio Round 1 | ✅ |
 | `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE2-Giorno2-Semifinali.md` | Giorno 2 — Semifinali | ✅ |

@@ -277,7 +277,7 @@ Giorno 42  Azarr Kul arriva a Rethmar. Battaglia finale (Phase 1-4).
 
 ## 8. Echi a lungo periodo (BG3-style)
 
-> Per la fonte autoritativa di tutti gli echi del Torneo: `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-CONSEGUENZE-ECHI-LUNGO-PERIODO.md`. Per gli echi specifici dei hook, vedi i singoli file.
+> Per la fonte autoritativa di tutti gli echi del Torneo: `Arco-Post-Hammerfist-P2B-Torneo-Tordek-MINIMAPPA-TIMELINE-ALLEANZE.md` (timeline + alleanze/echi per giorno). Per gli echi specifici dei hook, vedi i singoli file.
 
 Sintesi rapida per i 4 PG:
 
@@ -319,7 +319,7 @@ Sintesi rapida per i 4 PG:
 - **PNG Lorana (riserva profughi a Rethmar):** `PNG/Lorana/Lorana.md`
 - **Battle of Hammerfist final phase:** `08_La Battaglia Di Hammerfist/00_Final_hammerfist_battle…`
 - **Sacred Forest (P1) quest:** `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md`
-- **Tournament (P2B) arc:** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md`
+- **Tournament (P2B) arc:** `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-Giorno1-Preliminari.md` + `PARTE2-Giorno2-Semifinali.md` + `PARTE3-Giorno3-Finale-e-Invasione.md`, timeline in `Arco-Post-Hammerfist-P2B-Torneo-Tordek-MINIMAPPA-TIMELINE-ALLEANZE.md`
 - **Torre Invisibile (P2A) arc:** `Arco-Post-Hammerfist-P2A-Torre-PARTE*.md`
 - **Ghostlord arc files:** `Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-TESTO.md`
 - **Stato campagna:** `campaign/state.md`

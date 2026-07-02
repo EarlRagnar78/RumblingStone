@@ -531,7 +531,7 @@ checklist qui sotto.
   §4, INDICE e changelog di state.md allineati; nessun bonus in conflitto
   con gli hook sorgente (le sub-quest ne sono la *sorgente giocata*).
 - [x] B1.1 · [x] B1.2 · [x] B1.3 · [x] B1.4 · [x] B1.5 · [x] B2 · [x] B3 ·
-  [x] B4 · [ ] B5 · [ ] B6 · [ ] B7 —
+  [x] B4 · [x] B5 · [ ] B6 · [ ] B7 —
   **B1 (Rhest) completo (2026-07-02)**: 5 file FASE portati da scheletro
   (~1–4 KB) a standard Palio (read-aloud, viaggio a esagoni, tabella
   incontri d12, regole subacquee SRD, arena a 3 quote, sinergia artefatti
@@ -555,6 +555,16 @@ checklist qui sotto.
   mappa in pelle Tempestas, bracket Torneo, volantino Palio a 8 contrade — nota:
   il piano diceva 7, pre-espansione —, 3 carte-visione di Saraah), ognuno con
   "quando darlo". Prossimo: B5 (errata 3.5 P2/P3 + boss upscale).
+  **B5 (Errata 3.5 P2/P3 + boss upscale) completo (2026-07-02)**: creato
+  `ERRATA-PARTE2-3-35-Verification.md` (gemello della P1). **Boss finale
+  upscalato in place**: Azarr Kul da Chierico 10/Guerriero 4 (~119 pf, CR 15)
+  a **Chierico 12/Guerriero 4 (~155 pf, CR 17)** con tabella buff pre-cast
+  (durate a CL 14) e 2 effetti a innesco; scena con l'Avatar resta CR 18 (CR
+  non additivi). Verifiche puntuali: attacchi naturali di Regiarix (morso +29,
+  secondari a −5, coda 1d8+12), taglia Piccola di Saarvith (CA 23/contatto 15,
+  Lotta +8), CA contatto/colto mancanti in P2A/P2B, RI non cumulativa (Zalkatar),
+  pointer PNG per Xal'thor/Sethrax. **Catch di coerenza**: rimosso "mounts
+  Tyrgarun" da `azarr-kul-final-cr15.md` (contraddiceva D11 v2/A7). Prossimo: B6.
 - [ ] C1 · [ ] C2 · [ ] C3 · [ ] C4 · [ ] C5 · [ ] C6 · [ ] C7 (event deck)
 - [x] Q1 (→D9) · [x] Q2 (→D10) · [x] Q3 (→D11) · [x] Q4 (→D12) ·
   [x] Q5 (→D8) — **tutte le risposte DM acquisite 2026-07-02**

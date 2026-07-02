@@ -149,6 +149,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 |---|---|
 | `Quest 1 – Druida Hellas: Il Cerchio Sacro della Foresta.md` | ⚠️ storico/deprecato — Versione originale quest |
 | `ERRATA-PARTE1-Quest-Hellas-35-Verification.md` | Correzioni 3.5 SRD — stat blocks, action economy (bonus action→swift), Touch/FF AC, BAB/Grapple |
+| `ERRATA-PARTE2-3-35-Verification.md` | Verifica 3.5 di P2A/P2B/RHEST/P3 + **upscale del boss finale** (Azarr Kul → Chierico 12/Guerriero 4, CR 17); attacchi naturali Regiarix, taglia Saarvith, catch coerenza Tyrgarun |
 
 ---
 

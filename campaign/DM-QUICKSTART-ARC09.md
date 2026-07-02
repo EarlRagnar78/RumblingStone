@@ -114,7 +114,7 @@ di tutte le fasi).
 | P3 Ghostlord | `P3-Ghostlord-LICH-ALLEANZA-TESTO.md` + `STATBLOCCHI` + `MAPPE` | Day 28-35 |
 | P3 Starsong | `P3-Starsong-Hill-ALLEANZA-ELFI-*` | Day 30-38 |
 | P3 Sabotaggi | `P3-Sabotaggio-Campi-Drow-*` + `P3-MISSIONI-BREVI-CR12-*` | Day 30-38 |
-| **P3 Finale Rethmar** | `P3-BATTAGLIA-FINALE-FASE0..4-*` + `STATBLOCCHI-EPICI.md` + `ARMATE-SYNC.md` | Day 38+ → climax |
+| **P3 Finale Rethmar** | `P3-BATTAGLIA-FINALE-FASE0..4-*` + `STATBLOCCHI-EPICI.md` + `ARMATE-SYNC.md` | Day 40 (Fase 0) → Day 42 (Fasi 1-4, climax) |
 
 **Hooks integration master**: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md`.
 

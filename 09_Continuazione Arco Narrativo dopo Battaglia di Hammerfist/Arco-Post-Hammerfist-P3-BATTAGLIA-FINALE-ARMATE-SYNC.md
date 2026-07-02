@@ -1,6 +1,6 @@
 # Battaglia Finale di Rethmar — Sincronizzazione Armate (v2)
 
-**Scopo**: allineare i numeri dell'Orda della Mano Rossa che raggiungono Rethmar al **Day 40** del March Clock ufficiale RHoD (adattato Channath Vale / Dalelands, 1372 DR) con la struttura di battaglia in `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAN-STRUTTURA.md`, i calcoli di `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.md` v2 e il cronoprogramma di `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` v2.
+**Scopo**: allineare i numeri dell'Orda della Mano Rossa che raggiungono Rethmar al **Day 42** del March Clock ufficiale RHoD (adattato Channath Vale / Dalelands, 1372 DR; Day 40 = Notte dei Drow/Fase 0, Day 41 = orda in vista, Day 42 = arrivo + Fasi 1-4) con la struttura di battaglia in `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md`, i calcoli di `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.md` v2 e il cronoprogramma di `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` v2.
 
 > **Regola dual-clock**: *March Clock* (Day 1→40, AP ufficiale, deterministico) governa **quando** arriva l'Orda; *Ritual Clock* Azarr Kul (`/18`) governa **se** l'Avatar di Tiamat si manifesta. I due procedono **indipendenti** salvo interventi PG esplicitamente registrati.
 
@@ -10,18 +10,18 @@
 
 - **Baseline Orda al Day 1 (Vraath Keep)**: ~**10.000** combattenti (6.600 core hobgoblin + 430 supporto + 2.910 alleati razziali + 5 draghi nominati + 8 Razorfiend Draconic Spawn sui Wyrmlord upscalati).
 - **Sync point Day 19**: caduta di **Terrelton** (equivalente Channath Vale di Talar / terza città AP) **coincide** con la fine della Battaglia di Hammerfist (Arc-08). Il giocatore percepisce: *"mentre voi vincevate a Hammerfist, loro prendevano Terrelton"*.
-- **Arrivo a Rethmar (Day 40)**: ~**5.800–7.200** effettivi a seconda degli interventi PG sul March Clock (vedi §3).
+- **Arrivo a Rethmar (Day 42)**: ~**5.800–7.200** effettivi a seconda degli interventi PG sul March Clock (vedi §3).
 - **PG non sono a Skull Gorge**: il ponte non viene sabotato → nessun ritardo Day 5 strutturale. L'alleanza coi giganti **non** avviene (Wyrmlord Koth non neutralizzato PG-side) → i giganti marciano con l'Orda.
 - **Ghostlord**: se neutralizzato/alleato PG entro Day ~28, l'Orda riceve **solo un piccolo distaccamento** di non-morti (non l'esercito completo): ~200-400 non-morti minori invece di ~1.000.
 - **La battaglia è perduta senza i PG.** I numeri baseline rendono Rethmar indifendibile con la sola guarnigione cittadina + Lions of Brindol locali; le alleanze PG (Tiri-Kitor, mercenari nani di Hammerfist, druidi di Hellas, Circolo degli Otto, Torre Invisibile Artemis, Ghostlord) sono **l'unico** vettore di vittoria.
 
 ---
 
-## 2. Composizione Orda in Arrivo a Rethmar (Day 40)
+## 2. Composizione Orda in Arrivo a Rethmar (Day 42)
 
 Riferimento dettagliato: `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.md` §2.1-§2.4.
 
-| Blocco | Baseline Day 1 | Perdite attese Day 1→40 | Arrivo Day 40 (baseline) |
+| Blocco | Baseline Day 1 | Perdite attese Day 1→42 | Arrivo Day 42 (baseline) |
 |---|---:|---:|---:|
 | **Nucleo Red Hand** (hobgoblin Fighter/Warrior, goblin, orchi, worg riders) | 6.600 | 20–30% | 4.600–5.300 |
 | **Supporto** (giganti delle colline, ogre, ettin, manticore, wyvern, hell hound, chimera, war adepts, blue, warpriest Tiamat) | 430 | 15–25% | 320–370 |
@@ -47,17 +47,17 @@ Riferimento dettagliato: `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.m
 
 ### 2.1 Composizione qualitativa fissa
 
-- **5 draghi**: **Abithriax** (red adult — Skull Gorge guardian → riserva Rethmar), **Regiarix** (black young adult — Rhest/Saarvith, *morto se Arc-09/P2 completato*), **Ozyrrandion** (blue adult — Torre Invisibile/Zalkatar, *morto se P2A completato*), **Tyrgarun** (black adult — riserva aerea Rethmar), **Fauci di Palude** (black adult — Vanguard Hammerfist, *annientato a Hammerfist Day 19*, quindi **4 vivi** al Day 19 pre-Rethmar).
+- **5 draghi**: **Abithriax** (red adult — Skull Gorge guardian → riserva Rethmar), **Regiarix** (black young adult — Rhest/Saarvith, *morto se Arc-09/P2 completato*), **Ozyrrandion** (blue adult — Torre Invisibile/Zalkatar, *morto se P2A completato*), **Tyrgarun** (**blue Old, CR 18** — D11 v2, il terrore dei cieli della battaglia: hazard di bombardamento Fase 1, minaccia aerea a orologeria Fase 2-3, inchiodato a terra dal Mythal in Fase 4 — NON cavalcatura di Azarr Kul), **Fauci di Palude** (black adult — Vanguard Hammerfist, *annientato a Hammerfist Day 19*, quindi **4 vivi** al Day 19 pre-Rethmar).
 - **8 Razorfiend Draconic Spawn** (colori Tiamat: 2 black/2 red/1 blue/1 white/2 green) assegnati ai Wyrmlord upscalati (Koth, Ulwai Stormcaller, Saarvith se vivo, Karruk, Zalkatar se vivo, riserva Azarr Kul).
 - **Compagnia del Teschio Nero** (mercenari umani Thay/Mulhorand) — composizione canonica AP, riserva élite di Azarr Kul, **NON modificata**.
 - **Esperimenti Fungini** (fotofobia): Aberrazioni Fungine e Fungal Minions subiscono **-2 attacco, -4 Will in luce solare diretta**. Svantaggio annullato in Fase 0 (notturna), Fase 2-4 se la battaglia si prolunga oltre il crepuscolo, o in interni (tempio/cripte). Dispiego ottimale: Ondata 4 al tramonto, Fase 0 cripte.
 
 ### 2.2 Fazioni con dinamica narrativa
 
-- **Drow di Sonjak** (Matrona Sajak): agiscono principalmente in Fase 0 (Notte dei Drow, infiltrazione cripte Tempio di Rethman). Se Sabotaggio Drow Arc-09/P3 eseguito, forza Fase 0 ridotta da 25-30 drow + 1 Aberrazione Fungina Alfa a 5-8 drow senza Alfa.
+- **Drow di Sonjak** (Matrona Sajak): agiscono principalmente in Fase 0 (Notte dei Drow, infiltrazione cripte Tempio di Rethmar). Se Sabotaggio Drow Arc-09/P3 eseguito, forza Fase 0 ridotta da 25-30 drow + 1 Aberrazione Fungina Alfa a 5-8 drow senza Alfa.
 - **Gnoll 3 tribù** (Flinderoso, Abbattitori, Artigli Neri): provenienti da Wyrmbones e Dun Hills (vedi mappa Cannath Vale). Usati come prima linea in Fase 1 Ondata 1. Perdite attese 25-35%.
 - **Loxo + Centauri schiavizzati**: razze nomadi del Shaar catturate dai Wyrmlord durante la marcia Day 8-15. Usati come **scudi umani** (Loxo) e **cavalleria forzata** (Centauri). **Trigger PG — Revolt**: se i PG riescono a contattarli (diplomazia CD 25, Conoscenze Natura CD 20, oppure incontro dedicato durante Arc-09), possono rivoltarsi contro l'Orda Day 38-39, eliminando 480 unità + disruption logistica -100 attrition. **[INFERRED — needs DM: encounter di liberazione da scrivere se DM vuole aprire il branch]**.
-- **Esperimenti Fungini Drow**: bio-arma sviluppata da Matrona Sajak nei laboratori ipogei (campi-laboratorio Arc-09/P3 Sabotaggio Drow, vedi `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW`). Statblock in `Arco-Post-Hammerfist-P3-MISSIONI-BREVI-CR12-STATBLOCCHI-FUNGHI-GITH-DROW.md`. **Trigger PG — Sabotaggio Campi Drow**: se la quest P3-Sabotaggio-Campi-Drow è completata prima del Day 36, rimuovere **tutti** gli Esperimenti Fungini dall'Orda tranne ~5 Minions già dispiegati col commando di Sonjak al Day 1. Uso tattico: **Fase 0** (1 Alfa come ariete vivente contro cripte Tempio di Rethman, 4 Minions di supporto); **Fase 1 Ondata 4** (3-5 Aberrazioni come breaker di mura + 15-20 Minions di rincalzo col residuo drow); **riserva** (1 Alfa conservata per Fase 2-3 se Ondata 4 fallisce). **[INFERRED — statblocchi confermati, numeri di dispiegamento da tarare DM-side]**.
+- **Esperimenti Fungini Drow**: bio-arma sviluppata da Matrona Sajak nei laboratori ipogei (campi-laboratorio Arc-09/P3 Sabotaggio Drow, vedi `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW`). Statblock in `Arco-Post-Hammerfist-P3-MISSIONI-BREVI-CR12-STATBLOCCHI-FUNGHI-GITH-DROW.md`. **Trigger PG — Sabotaggio Campi Drow**: se la quest P3-Sabotaggio-Campi-Drow è completata prima del Day 36, rimuovere **tutti** gli Esperimenti Fungini dall'Orda tranne ~5 Minions già dispiegati col commando di Sonjak al Day 1. Uso tattico: **Fase 0** (1 Alfa come ariete vivente contro cripte Tempio di Rethmar, 4 Minions di supporto); **Fase 1 Ondata 4** (3-5 Aberrazioni come breaker di mura + 15-20 Minions di rincalzo col residuo drow); **riserva** (1 Alfa conservata per Fase 2-3 se Ondata 4 fallisce). **[INFERRED — statblocchi confermati, numeri di dispiegamento da tarare DM-side]**.
 - **Compagnia del Teschio Nero**: riserva élite, non impegnata fino a Fase 3-4 (Avatar/Mythal).
 
 ---
@@ -69,23 +69,24 @@ Riferimento dettagliato: `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.m
 | **A** | **Worst Case** | Nessuna quest Arc-09 completata; Ghostlord nemico; drow intatti; Torneo fallito; Circolo Otto non convocato | ~7.400 | ~1.280 (guarnigione + Lions locali) | **5.8 : 1** | CR 17–18 (letale senza deus-ex) |
 | **B** | **Baseline** | Torre Zalkatar liquidata (Artemis); Torneo vinto (300 nani Tordek); Ghostlord nemico; no Tiri-Kitor | ~7.200 | ~1.600 | **4.5 : 1** | CR 16–17 |
 | **C** | **Medio (atteso al tavolo)** | Torre + Torneo + Cerchio Sacro Hellas (druidi-orsi) + Sabotaggio Drow parziale + Ghostlord neutralizzato (solo distaccamento) | ~6.400 | ~2.100 | **3.0 : 1** | CR 15–16 (paragonabile a Hammerfist) |
-| **D** | **Ottimale** | Medio + Tiri-Kitor (Starsong Hill) alleati + Saarvith/Regiarix uccisi Arc-09/P2 | ~6.000 | ~2.650 | **2.3 : 1** | CR 14–15 |
-| **E** | **Leggendario** | Ottimale + Ghostlord alleato PG (colpisce retroguardia) + Circolo degli Otto convocato + Salvatore/mercante converte 1 Wyrmlord | ~5.800 | ~4.250 | **1.36 : 1** | CR 13–14 (heroic fantasy vittoria con costo) |
+| **D** | **Ottimale** | Medio + Tiri-Kitor (Starsong Hill) alleati (100 ranger + 20 gufi, D9) + Saarvith/Regiarix uccisi Arc-09/P2 | ~6.000 | ~2.230 | **2.7 : 1** | CR 14–15 |
+| **E** | **Leggendario** | Ottimale + Ghostlord alleato PG (colpisce retroguardia) + Circolo degli Otto convocato + Salvatore/mercante converte 1 Wyrmlord + 150 Lance di Re Thorek (hook politici Maewen/Thorik completati, D10) | ~5.800 | ~3.980 | **1.46 : 1** | CR 13–14 (heroic fantasy vittoria con costo) |
 
 > **Nota DM**: lo scenario **C (Medio)** è il bersaglio di progettazione; A/B esistono per punire inazione, D/E per premiare gioco eccellente. Non esiste scenario con ratio <1:1 (la campagna non prevede "vittoria facile").
+> **Nota v2.1 (D9/D10, 2026-07-02)**: la colonna Difensori di D/E era calcolata sui vecchi totali alleati (elfi +500, invece dei +120 canonici — 100 ranger + 20 gufi giganti su una tribù di ~500 anime che ne invia 1/5). Ricalcolata di conseguenza (D: 2.650→2.230; E: 4.250→3.980, includendo ora esplicitamente le 150 Lance di Re Thorek come flusso separato dai 300 mercenari di Dauth già in B/C).
 
 ---
 
 ## 4. Composizione Forza per Fase della Battaglia
 
-Riferimento struttura: `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAN-STRUTTURA.md` §2-§7.
+Riferimento struttura: `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md` §2-§7.
 
 ### Fase 0 — Notte dei Drow (pre-assedio, T-1)
 
 - **Non conteggiata** nell'Orda principale: commando drow (~15-25 unità) + 1 Aberrazione Fungina Alfa + 4 Drow Fungal Minions + 1 High Priestess.
 - **Se Sabotaggio Drow Arc-09/P3 eseguito**: ridurre a 5-8 drow, rimuovere Alfa.
 
-### Fase 1 — Assedio Esterno (Day 40, alba → tramonto)
+### Fase 1 — Assedio Esterno (Day 42, alba → tramonto)
 
 Compie **~60%** dell'Orda presente. Distribuzione tipica (scenario C):
 
@@ -162,8 +163,9 @@ Ogni hook completato **prima del Day 40** modula i numeri di §3. Riferimento: `
 | P2 — Rhest (Saarvith + Regiarix) | Day ~28 | -1 drago Orda (Regiarix), -40 razorfiend minori |
 | P2A — Torre Invisibile (Zalkatar) | Day ~32 | -Torre come minaccia parallela; +Artemis focus su Avatar |
 | P2B — Torneo Tordek (Hammerfist) | Day ~34 | +300 mercenari nani fanteria pesante |
+| HOOKS-Thorik (sigillo Maewen + lettera Thorik) | Day ~35 | +150 Lance di Re Thorek, flusso separato dai 300 mercenari (D10; max combinato **450**) |
 | P2C — Salvatore Mercante | Day ~36 | +conversione 1 Wyrmlord **OR** -1 carovana logistica (-300 attrito su Orda) |
-| P3 — Starsong Hill (Tiri-Kitor) | Day ~35 | +Cavalleria civette (neutralizza superiorità aerea Githyanki) |
+| P3 — Starsong Hill (Tiri-Kitor) | Day ~35 | +100 ranger elfici + 20 gufi giganti (D9), cavalleria che neutralizza superiorità aerea Githyanki |
 | P3 — Ghostlord | Day ~28 | Vedi §3 (nemico / distaccamento / alleato) |
 | P3 — Sabotaggio Drow / Campi Drow | Day ~36 | -Fase 0 critical mass (no Alfa in cripte); -35-45 Esperimenti Fungini (Minions + Aberrazioni + 1 Alfa riserva); -Ondata 4 drow ridotta |
 | P3 — Missioni Brevi CR12 (funghi/gith/drow) | Day ~35 | -singole ondate specifiche Fase 1 |

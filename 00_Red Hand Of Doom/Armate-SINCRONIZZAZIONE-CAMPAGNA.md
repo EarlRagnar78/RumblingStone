@@ -39,7 +39,7 @@ Clock, deve tracciare il trigger rituale nel changelog. Non si tira
 
 ---
 
-## 2. March Clock — Waypoint Ledger AP Day 1→40
+## 2. March Clock — Waypoint Ledger AP Day 1→42
 
 Adattamento AP RHoD → Channath Vale/Elsir Vale 1372 DR.
 
@@ -146,15 +146,15 @@ logistico, +rischio igiene/cibo).
 | **Day 30-35** | Il Collezionista (CR 18) — prime tracce | Rethmar shadow / nobiltà | **Conditional shadow branch**: se Valerius hook attivo, Collezionista muove pedine via socialità |
 | **Day 35-38** | Warpriest élite di Tiamat (CR 11, ~6) radunati | Fane di Tiamat | Ritual Clock: **+1 → `10/18`** se sacrificio di massa riuscito |
 | **Day 38-39** | Hobgoblin Captains (CR 8, ~24) coordinano assalto | Avanguardia Rethmar | Promozione visibile: "ogni compagnia ha un capitano draconico" |
-| **Day 40 (Fase 1)** | Abithriax (CR 15) + Wyrmlord Karruk (CR 10) + Ondata Giganti (EL 15, wave ×1) | Rethmar mura | Assalto inaugurale Fase 1 |
-| **Day 40+1 (Fase 2)** | Warpriest élite CR 11 (×6) + non-morti Ghostlord (se ostile) | Circolo Mythal / statue | Ritualisti tentano di rompere il Mythal |
-| **Day 40+2 (Fase 3)** | Azarr Kul (CR 15) + Tyrgarun (drago 13) + Ondata Giganti wave ×2 | Rethmar breccia | Boss-fight principale |
+| **Day 42 (Fase 1)** | Abithriax (CR 15) + Wyrmlord Karruk (CR 10) + Ondata Giganti (EL 15, wave ×1) | Rethmar mura | Assalto inaugurale Fase 1 |
+| **Day 42 (Fase 2)** | Warpriest élite CR 11 (×6) + non-morti Ghostlord (se ostile) | Circolo Mythal / statue | Ritualisti tentano di rompere il Mythal |
+| **Day 42 (Fase 3)** | Azarr Kul (CR 15) + Tyrgarun (drago Old CR 18, inchiodato a terra dal Mythal) + Ondata Giganti wave ×2 | Rethmar breccia | Boss-fight principale |
 | **Ritual Clock `/18 = 18`** | **Avatar di Tiamat (CR 17)** evocato | Sopra Rethmar | **Climax conditional**: solo se Ritual Clock completa |
 | **Ritual Clock `/18 ≥ 15` + Collezionista alleato** | Il Collezionista (CR 18) interviene | Rethmar interno (politica) | **Climax shadow**: non encounter ordinario — social/stealth |
 
 **Regola di scheduling**: il DM può anticipare/ritardare di ±2 giorni
-per ragioni di pacing, ma i *fixed* (Day 26-30 Dauth, Day 40 Abithriax,
-Day 40+2 Azarr Kul) sono sync-canon e non vanno spostati senza
+per ragioni di pacing, ma i *fixed* (Day 26-30 Dauth, Day 42 Abithriax,
+Day 42 Azarr Kul) sono sync-canon e non vanno spostati senza
 aggiornare anche `campaign/state.md` §2.
 
 **Interazione con Ritual Clock (`/18`, attualmente 9)**:
@@ -199,7 +199,7 @@ File Arc-09 che consumano questo ledger:
   Ghostlord branch (ostile / neutralizzato / redento).
 - `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md` → consolida
   numeri finali per la battaglia.
-- `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAN-STRUTTURA.md` →
+- `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md` →
   riceve i totali per il briefing DM di battaglia.
 
 ---

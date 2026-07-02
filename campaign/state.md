@@ -120,7 +120,7 @@ Two independent clocks drive Arc 09:
 | Giganti + Ogre + Ettin | 180 | NO PG alliance — stay with Red Hand |
 | Forze Alate (Manticore, Wyvern, Hell Hounds, Chimera) | 140 | |
 | Casters Mano Rossa (War Adepts, Blue, Warpriests di Tiamat) | 55 | |
-| **Dragons (5 AP-original upscaled)** | 5 | Abithriax (Red adult) / Regiarix (Black young, Rhest) / Ozyrrandion (Blue, Tower) / Tyrgarun (reserve) / **Fauci di Palude** (Black adult, Hammerfist vanguard) |
+| **Dragons (5 AP-original upscaled)** | 5 | Abithriax (Red adult) / Regiarix (Black young, Rhest) / Ozyrrandion (Blue, Tower) / **Tyrgarun (Blue Old, CR 18 — sky-terror of the battle, NOT Azarr Kul's mount, D11 v2)** / **Fauci di Palude** (Black adult, Hammerfist vanguard) |
 | **Draconic spawn = Razorfiend (Tiamat colors)** | 8 | Assigned to Wyrmlord villains upscaled |
 | Compagnia Drow di Sonjak | 305 | |
 | Githyanki di Vaereth | 375 | |
@@ -160,21 +160,27 @@ quasi certa.
 | Guarnigione Rethmar (Valerius + milizia) | 1,200 | Fixed |
 | Rifugiati armati (Elsir/Channath Vale) | 600 | +150/villaggio evacuato in tempo |
 | Truppe Consiglio Rethmar | 400 | Via Thorik/Brenna letter |
-| **Alleanza Elfi Starsong Hill** | +500 | SOLO se P3-Starsong quest OK |
-| **Nani di Dauth** (Tordek torneo) | +400 | SOLO se Tordek vince torneo |
+| **Alleanza Elfi Starsong Hill** | +120 (100 ranger + 20 gufi giganti) | SOLO se P3-Starsong quest OK (D9 — tribù Tiri Kitor ~500 anime, invia 1/5 come forza da guerra) |
+| **Nani di Dauth** (torneo vinto) | +300 | SOLO se Tordek vince torneo |
+| **Lance di Re Thorek** | +150 | Flusso separato, condizionato da hook politici (sigillo Maewen + lettera Thorik) — max combinato con la riga sopra: **450** (D10) |
 | **Druidi Cerchio Sacro + Treant Hella** | +150 | SOLO se P1B Hella ritual OK |
 | **Ghostlord redento come alleato** | +600 non-morti buoni | Branch raro |
 | Mercenari Salvatore (rischio tradimento) | ±300 | Instabile |
 
-**Scenari finali (target: PG meaningfully shift balance):**
+**Scenari finali (target: PG meaningfully shift balance):** questa tabella
+è la vista rapida legacy; per lo scenario **autoritativo e ricalcolato**
+sui nuovi totali D9/D10, vedi
+`09_Continuazione.../Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md`
+§3 (5 scenari worst/baseline/medio/ottimale/leggendario, Orda e
+Difensori con la stessa metodologia dual-clock di §2 qui sopra).
 
 | Scenario PG | Horde | Difensori | Rapporto |
 |---|---|---|---|
 | Worst (Ghostlord ostile, Xal'thor allea, 0 quest) | 12,700 | 2,200 | **5.8:1** ☠ |
 | Baseline (0 quest) | 9,400 | 2,200 | **4.3:1** |
-| Medio (2–3 quest + sabotaggi parziali) | 8,000 | 3,100 | **2.6:1** |
-| Ottimale (tutte quest + Rhest + Tower) | 6,800 | 4,100 | **1.66:1** |
-| Leggendario (ottimale + Ghostlord redento + Collezionista stop) | 6,400 | 4,700 | **1.36:1** |
+| Medio (2–3 quest + sabotaggi parziali) | 8,000 | 2,620 | **3.1:1** |
+| Ottimale (tutte quest + Rhest + Tower) | 6,800 | 3,770 | **1.80:1** |
+| Leggendario (ottimale + Ghostlord redento + Collezionista stop) | 6,400 | 4,370 | **1.46:1** |
 
 **Riferimento Hammerfist:** 900/300 = **3:1** (battaglia vinta con
 sacrifici — baseline narrativo).
@@ -193,7 +199,7 @@ gnoll disguised). Detect: Sense Motive CD 18 / Detect Magic. If caught:
 | Talar | ⏳ Under threat (Day 20-22) | ~400 | +35 |
 | Witchcross | ⏳ Under threat (Day 22-25) | ~1,200 (druids stay) | +60 |
 | Marth Fen area | ⏳ Day 25 sweep | ~300 | +50 |
-| Hammerfist Holds | ✅ Held (+90 survivors; 150 lances conditional) | 0 civilians | +150 ❓ if Tordek wins Dauth |
+| Hammerfist Holds | ✅ Held (+90 survivors; 150 lances conditional) | 0 civilians | +150 ❓ if political hooks land (Maewen seal + Thorik letter, D10 — separate from the 300 tournament mercenaries) |
 | Cannathgate | ✅ Not attacked | 0 | +150 ❓ diplomacy |
 
 ---
@@ -210,10 +216,10 @@ the listed consequence triggers.
 | Salvatore "Sal" della Luna d'Argento | Desert road, Cannath Vale → Rethmar (Shaar) | Profile party's artifacts and magical defenses; plant Sabotage Oil on weapons before Rethmar; deliver living statues to Varis | 0/6 | Sabotage Oil applied — weapon TS failure risk at Phase 3 boss; Phase 4 statue activation proceeds at full strength |
 | Il Collezionista (Rakshasa) | Mobile — last seen brokering with drow | Acquire the Crown's spare gem before party can use it; manipulate Conte Valerius | 5/8 | Sponsors anti-party legal pressure; Conte Valerius freezes assets |
 | Zalkatar (Illithid Warlock) | Invisible Tower, Dauth region | Mind-strip a captured githyanki for fleet intel | 6/8 | Tower goes mobile; harder to find next session |
-| Wyrmlord Saarvith + Regiarax | Lake Rhest ruins | Rebuild dragonrider corps from black dragon spawn | 3/8 | Rhest becomes a fortified war camp; CR +1 to assault |
+| Wyrmlord Saarvith + Regiarix | Lake Rhest ruins | Rebuild dragonrider corps from black dragon spawn | 3/8 | Rhest becomes a fortified war camp; CR +1 to assault |
 | Xal'thor (Illithid Coordinator, psionic) | En route with an Illithid invasion force (psionic thralls, larvae, a small core of dominated Githyanki — NOT the free Githyanki dragon-rider force led by Vaereth, which is a separate and hostile faction) | Day 3 fixed assault on the Dauth Tournament to seize Tordek's **Bracieri Gemelli** (planar keys to the Eternal Forge); does NOT target the Orbe delle Otto Porte | Fixed: triggers Day 3 of Tournament regardless | Tournament becomes combat encounter |
 | Sethrax il Velato (Illithid emissary, Zalkatar's conclave) | Dauth — infiltrated as tournament finalist "Kethran Mano di Pietra" | Extract a "Seme di Porta" from the Orbe delle Otto Porte during the Tournament's peak resonance, deliver it to Zalkatar at the Invisible Tower | Sync to Tournament (Day 1 = arrival; Day 2 = entered as finalist; Day 3 Round 7 = forced unmasking by Xal'thor's portal) | Sethrax flees to Invisible Tower with the seed → Zalkatar gains +2 effective CR + new orb-derived Mind Blast in P2A finale (Artemis's quest) |
-| Azarr Kul (High Wyrmlord) | With main horde, marching | Reach Rethmar in 18 in-world days | 9/18 days | Siege of Rethmar begins |
+| Azarr Kul (High Wyrmlord) — **Ritual Clock, see §2.0** (NOT the March Clock; the horde's physical approach is tracked separately in §2.1, currently Day 19 of 42) | Fane of Tiamat (Shaar) | Ritual sacrifices/planar conjunctions to summon the Avatar of Tiamat during the Rethmar siege (Day 40-42, Phase 2). Advances only on explicit triggers: +1 per Warpriest élite mass sacrifice (Day 35-38), +2 if Giant Wave ×1 breaches the walls (Phase 1), +3 if Giant Wave ×2 breaches (Phase 3) — see `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` §4b | 9/18 | Avatar of Tiamat manifests over Rethmar during Phase 2's 10-round ritual (D8) |
 | Conte Valerius (manipulator) | Capital city | Legalize horde funding via "patriotic emergency" loans | 2/8 | Party loses access to legitimate guild merchants |
 
 ---
@@ -262,7 +268,7 @@ the listed consequence triggers.
 | Thorik | Re Thorek Hammerfist | Lead defense at Rethmar OR send Aegis Fang as proxy | Loss of Custode Eterno status; dwarven mercenaries withdraw |
 | Thorik | Hella (implicit) | He sacrificed 2 perm CON for her resurrection — she owes a moral debt | Affects Hella's ethics rolls in arguments with Thorik |
 | Tordek | Hella | 500 XP sacrificed for her resurrection | Affects romantic-bond progression at Sacred Forest |
-| Tordek | Tournament organizers | Show up at Dauth within 5 in-world days | Disqualification; 150 mercenary reinforcements lost |
+| Tordek | Tournament organizers | Show up at Dauth by **Day 29** (eve of the preliminaries — invite Day 24, arrival Day 28, Tournament Day 1-3 = Day 30-32, HOOKS-INTEGRATION-MASTER §1.1) | Disqualification; 150 Lance di Re Thorek reinforcements lost (D10 — separate from the 300 mercenaries won at the Tournament itself) |
 | Artemis | Varis "Seta-Argento" | Deliver one Underdark artifact per quarter | Varis cuts off the Mantello dei Tiri Salvezza supply |
 | Artemis | Mask cult (suspected) | Unknown — they've been watching the Ring | Black-bag attempt during a vulnerable moment |
 | Hella | Druid Circle | Pass the Sacred Forest ritual within 12 days | Circle will not aid at Rethmar |
@@ -572,4 +578,102 @@ entries — they become campaign history.
             to state.md. Created templates (state-blank.md,
             session-template.md) and helper script
             scripts/new-campaign-group.sh for one-command group reset.
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto A, sessione 1 (A1+A13): global
+            spelling fixes, no canon change. "Regiarax" → "Regiarix"
+            (D1) across campaign/, skills/, PNG/, 09_Continuazione/.
+            "Rethman" → "Rethmar" (D2) across all P3 files; renamed
+            Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAN-STRUTTURA.md
+            → ...-RETHMAR-STRUTTURA.md and updated all references.
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto A, sessione 2 (A2+A10): clock
+            coherence, no canon change (D6 already won via state.md §2,
+            propagated to files that still disagreed). "Day 38/40"
+            arrival-of-horde references → Day 42 in HOOKS-INTEGRATION-
+            MASTER §1.1/§6.1, P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA r.12,
+            ARMATE-SYNC §1/§2/§4-Fase1, Armate-SINCRONIZZAZIONE-CAMPAGNA
+            §4b (Fase 1-3 all land on Day 42 per D13's compressed 3-day
+            rhythm), DM-QUICKSTART-ARC09. A10: ESITI-CONSEGUENZE §6
+            reworded ("costruire un Fane" → "rifortifica il Fane nel
+            Shaar + avamposto avanzato", since the Fane already exists
+            per §2.1 Day 1). §3 Azarr Kul row relabeled as the Ritual
+            Clock (was ambiguously worded as a march countdown) with
+            explicit advance triggers cross-referenced to Armate-
+            SINCRONIZZAZIONE-CAMPAGNA §4b.
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto A, sessione 3 (A3+A5+A11):
+            INDICE-GENERALE refresh, no canon change (all values already
+            correct in state.md, only INDICE was stale). A3: Torre/Rhest/
+            Torneo durata windows updated to match state.md §0 (Day
+            28-35 / 25-32 / 25-34), citing HOOKS-INTEGRATION-MASTER §1.1
+            for detailed chronology. A5: Ghostlord numbers in INDICE and
+            Ghostlord-LICH-ALLEANZA-TESTO §6 updated to D7 (+2,400
+            ostile / +400 neutralizzato / +600 pro-difensori se redento).
+            A11: INDICE "Finale improvviso" del Torneo riscritto per
+            separare le due fazioni Day-3 fuse per errore (Xal'thor
+            Illithid vs Vaereth Githyanki, D5), aggiunto lo smascheramento
+            di Sethrax al Round 7.
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto A, sessione 4 (A4+A12): no canon
+            change. A4: ESITI-CONSEGUENZE §7 usava nomi di PG (Tordek,
+            Artemis) come PNG — artefatto di generazione. Sostituiti con
+            Sellyria Starsinger/Killiar Arrowswift (leader Tiri-Kitor,
+            già canonici in Starsong-TESTO), Magister Veylan [INFERRED]
+            (Dauth) e Borin Tozzefort [INFERRED] (comandante 300 nani
+            mercenari), incluso il monologo "Vittoria Tattica" che citava
+            "Artemis Learmount" come parlante. Corretti anche i refusi
+            della sezione (gloriosa-mente, nega-zia, complètamente, lo
+            prezzo, stravagato). A12: banner DEPRECATED aggiunto a
+            inizio.md e Quest 1 – Druida Hellas (brainstorm storico
+            pre-canone, code conversazionali AI rimosse), INDICE li
+            etichetta "storico/deprecato".
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto A, sessione 5 (A8+A9): no canon
+            change. A8: 3 link rotti a file mai creati (P2B-Torneo-DAUTH-
+            CONSEGUENZE-ECHI-LUNGO-PERIODO, -DM-MASTER-REFERENCE,
+            -SUBQUEST-Thorik) ripuntati a file esistenti equivalenti
+            (MINIMAPPA-TIMELINE-ALLEANZE, PARTE1-3, HOOKS-Tordek-
+            DauthInvitation §4). Nota: uno scan repo-wide ha trovato
+            altri 5 link rotti (SUBQUEST-Artemis, SUBQUEST-Hella,
+            DAY3-DAUTH-CITY-SIEGE, + 2 duplicati) che referenziano
+            sotto-quest MAI scritte (non solo rinominate) — richiedono
+            contenuto narrativo nuovo, fuori scope per un lotto
+            meccanico; lasciati per una sessione dedicata.
+            A9: SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO-Description.md
+            (0 byte) riempito con le descrizioni narrative dei 3 campi
+            drow (il gemello COMPLETO.md ha già mappe/statistiche).
+            PARTE1-to-Be_integrated.md marcato DEPRECATED (bozza pre-
+            canone: Tetsu/Rihan già adottati nel canone altrove, il
+            resto superato da OTTO-PORTE-e-ORBE + PARTE1-3), corretto
+            l'unico 5e-ismo reale (attacco "con vantaggio" → regola
+            SRD 3.5 di elevazione) e ripulite le code conversazionali.
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto A, sessione 6 (A6+A7) — ULTIMA
+            SESSIONE DEL LOTTO A, tutti i 13 task A1-A13 completati.
+            A6 (D9/D10): elfi Tiri Kitor +500 → **+120** (100 ranger +
+            20 gufi giganti, 1/5 di una tribù di ~500 anime) in state.md
+            §2.4, INDICE, STRUTTURA §8, ARMATE-SYNC §2/§4. Nani +400 →
+            **300 (torneo) + 150 (Lance di Re Thorek, flusso separato
+            condizionato da hook politici) = max 450**. Scenari D/E di
+            ARMATE-SYNC §3 ricalcolati (D: 2.650→2.230 difensori,
+            2.3:1→2.7:1; E: 4.250→3.980, 1.36:1→1.46:1). Scenari Medio/
+            Ottimale/Leggendario del quick-view di state.md §2.4
+            aggiornati per delta coerente (nessun altro fattore toccato).
+            A7 (D11 v2 + D12): Tyrgarun "Very Old Blue Dragon CR 20,
+            cavalcatura di Azarr Kul" → **Old Blue Dragon CR 18, NON
+            cavalcatura — terrore dei cieli** (hazard Fase 1, minaccia
+            a orologeria Fase 2-3, inchiodato a terra dal Mythal in
+            Fase 4). Corretto in INDICE, ARMATE-SYNC, STRUTTURA §4-7,
+            PNG/Azarr_Kul/Azarr_Kul.md, campaign-story-arcs.md (+ mirror
+            .github/copilot), campaign-history.md, README.md. D12:
+            debito Tordek in state.md §5 riformulato "entro il Day 29,
+            vigilia delle preliminari" (era "5 giorni", ambiguo).
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto A, completamento A8 opzione (a):
+            no canon change (consolidamento di contenuti esistenti).
+            Creati i 3 file "fonte autoritativa" che il piano preferiva
+            (prima solo ripuntati come opzione b): DAUTH-DM-MASTER-
+            REFERENCE (HUB del Torneo, tono Palio), DAUTH-CONSEGUENZE-
+            ECHI-LUNGO-PERIODO (echi ×scelte), DAUTH-SUBQUEST-Thorik
+            (150 lance, D10). Un secondo scan link ha trovato altri
+            riferimenti orfani a sotto-quest mai scritte (SUBQUEST-
+            Artemis/Hella, DAY3-CITY-SIEGE): ripuntati ai file esistenti
+            che portano il materiale (HUB §5 con flag [INFERRED — Lotto
+            B], SUBQUEST-Thorik §4 per lo schieramento lance), senza
+            inventare sotto-quest nuove. Risultato: **zero link rotti
+            operativi** (restano solo i riferimenti del piano a
+            deliverable futuri B4/B7/C7). INDICE aggiornato con i 3 file.
 ```

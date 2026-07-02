@@ -27,7 +27,7 @@ Valuta per Rhest:
 **Conseguenze**:
 
 - Rhest NON è più un avamposto funzionale della Red Hand.  
-- NESSUN razorfiend come “arma speciale” durante l’Assedio di Rethman.  
+- NESSUN razorfiend come “arma speciale” durante l’Assedio di Rethmar.  
 - Tiri‑Kitor:
   - sostegno pieno (bonus massimo di alleanza, cavalleria aerea completa).[web:119]  
 - Red Hand:
@@ -75,7 +75,7 @@ Ganci:
 **Conseguenze**:
 
 - Rhest resta una spina nel fianco:
-  - parte dei razorfiend arriverà a Rethman,  
+  - parte dei razorfiend arriverà a Rethmar,  
   - Tiri‑Kitor esitano, offrono solo supporto limitato (patrol aerei, non grosse forze).  
 
 - Red Hand:
@@ -99,7 +99,7 @@ Gancio:
 
 **Conseguenze**:
 
-- Durante l’Assedio di Rethman:
+- Durante l’Assedio di Rethmar:
   - comparsa di una **grossa ondata di razorfiend** (1–3 esemplari avanzati) come batteria d’assalto.  
   - eventuale apparizione di Regiarix o di un altro drago nero “mandato da Rhest” come rinforzo aereo.  
 
@@ -117,7 +117,7 @@ Ganci:
 
 ---
 
-## 6. Collegamento a Battaglia Finale di Rethman
+## 6. Collegamento a Battaglia Finale di Rethmar
 
 Riassunto rapido di impatto sull’assedio:
 

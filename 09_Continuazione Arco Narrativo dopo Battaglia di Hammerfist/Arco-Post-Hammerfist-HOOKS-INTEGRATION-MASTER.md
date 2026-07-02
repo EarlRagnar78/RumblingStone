@@ -49,7 +49,7 @@ Day 28-32  Tournament Days 1-3 at Dauth (P2B arc).
 Day 32     Vanguard Karruk siege of Dauth (parallel to Day 3 Tournament).
 Day 33-35  Hella ritual / Artemis Tower fight.
 Day 36+    Convergence on Rethmar.
-Day 38-42  Phase 0-4 of Rethmar.
+Day 40-42  Phase 0-4 of Rethmar.
 
 PATHS (party choice):
   PATH-A   split classico (efficient, no support)
@@ -113,9 +113,9 @@ Giorno 33-35  Hella completa rituale Sacred Forest;
               (se entro Mirtul = ~Day 30, altrimenti Torre cammina).
 Giorno 36  Convoglio dei superstiti del Torneo parte per Rethmar.
 Giorno 37  Convergenza dei PG verso Rethmar.
-Giorno 38–40  Notte dei Drow (Phase 0) + Assedio (Phase 1).
-Giorno 41  Riti & Avatar (Phase 2–3).
-Giorno 42  Mythal & finale (Phase 4).
+Giorno 40  Notte dei Drow (Phase 0).
+Giorno 41  Orda in vista, ultimi preparativi (interludio, 1 riposo lungo).
+Giorno 42  Assedio, Riti & Avatar, Mythal & finale (Phase 1-4).
 ```
 
 > **Nota DM:** la Vanguard del Red Hand è una **forza distaccata** (~600 effettivi). NON è l'orda principale di Azarr Kul. È un **diversivo** mandato a colpire Dauth.
@@ -241,8 +241,9 @@ Giorno 21  Talar saccheggiata (al Cerimonia delle 100 Asce nessuno
            o via la carovana profughi sulla strada).
 Giorno 28  Distaccamento Vanguard di Wyrmlord Karruk a Dauth.
 Giorno 32  Vanguard assalta Dauth (Day 3 Torneo).
-Giorno 38  Azarr Kul arriva a Rethmar.
-Giorno 42  Battaglia finale.
+Giorno 40  Notte dei Drow (Phase 0) — infiltrazione drow.
+Giorno 41  Orda in vista, ultimi preparativi (interludio).
+Giorno 42  Azarr Kul arriva a Rethmar. Battaglia finale (Phase 1-4).
 ```
 
 ### 6.2 Cosa il DM deve ricordarsi
@@ -276,7 +277,7 @@ Giorno 42  Battaglia finale.
 
 ## 8. Echi a lungo periodo (BG3-style)
 
-> Per la fonte autoritativa di tutti gli echi del Torneo: `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-CONSEGUENZE-ECHI-LUNGO-PERIODO.md`. Per gli echi specifici dei hook, vedi i singoli file.
+> Per la fonte autoritativa di tutti gli echi del Torneo: `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-CONSEGUENZE-ECHI-LUNGO-PERIODO.md` (timeline delle alleanze in `...Tordek-MINIMAPPA-TIMELINE-ALLEANZE.md`). Per gli echi specifici dei hook, vedi i singoli file.
 
 Sintesi rapida per i 4 PG:
 
@@ -318,7 +319,7 @@ Sintesi rapida per i 4 PG:
 - **PNG Lorana (riserva profughi a Rethmar):** `PNG/Lorana/Lorana.md`
 - **Battle of Hammerfist final phase:** `08_La Battaglia Di Hammerfist/00_Final_hammerfist_battle…`
 - **Sacred Forest (P1) quest:** `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md`
-- **Tournament (P2B) arc:** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md`
+- **Tournament (P2B) arc:** HUB in `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md` (dettaglio in `...Tordek-PARTE1-Giorno1-Preliminari.md` + `PARTE2-Giorno2-Semifinali.md` + `PARTE3-Giorno3-Finale-e-Invasione.md`)
 - **Torre Invisibile (P2A) arc:** `Arco-Post-Hammerfist-P2A-Torre-PARTE*.md`
 - **Ghostlord arc files:** `Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-TESTO.md`
 - **Stato campagna:** `campaign/state.md`

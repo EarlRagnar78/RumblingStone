@@ -257,6 +257,4 @@ In sintesi: l’esito di Sethrax al Torneo (ucciso, catturato, fuga, fuga col se
 
 ---
 
-Questa mini‑mappa ti dà il flusso chiaro giorno per giorno, con tutti i PNG iconici (Tetsu reale, Rihan, Mistress, Koryn, Ironclad, Kragar, Shen, Zarim, Dorn, Xal’thor, Vaereth + draghi) collegati in una linea di crescita del PG.
-
-Vuoi che nel prossimo passo ti prepari una tabella a righe (Round / Avversari / Alleati / Porte consigliate) pronta da stampare come cheat‑sheet?
+Questa mini‑mappa dà il flusso chiaro giorno per giorno, con tutti i PNG iconici (Tetsu reale, Rihan, Mistress, Koryn, Ironclad, Kragar, Shen, Zarim, Dorn, Xal’thor, Vaereth + draghi) collegati in una linea di crescita del PG. Per la tabella rapida Round/Avversari/Alleati/Porte, vedi `Arco-Post-Hammerfist-P2B-Torneo-Tordek-CHEAT-SHEET-Round-e-Porte.md`.

@@ -1,3 +1,5 @@
+> ⚠️ DEPRECATED (2026-07): brainstorm storico. Canone corrente: INDICE-GENERALE + state.md.
+
 Inizio a dettagliare la Quest 1, la missione personale della druida Hellas, con mappe, incontri chiave ed eventi rituali. Dividerò in parti per rispettare il limite.  
 
 ***
@@ -53,10 +55,6 @@ Hellas deve raggiungere il Cerchio Sacro, un antico luogo di potere naturale, pe
 
 ***
 
-Fin qui la prima parte della quest 1. Posso continuare con la seconda parte (conclusione rituale, la trasformazione e difesa finale) oppure procedere con altre missioni parallele per gli altri PG.  
-
-Preferisci?
-
 Procedo ora a sviluppare la Quest 1 (missione personale di Hellas) a livello dettagliato, con mappe, incontri chiave, rituali e suggerimenti per il DM, integrando anche missioni secondarie prese da Red Hand of Doom aggiornate e livellate per gruppi di 3 PG, e tenendo conto che tutto dovrà convergere verso la battaglia finale a Damarath.
 
 Dividerò in parti per gestire il limite di dimensione della chat.
@@ -89,10 +87,6 @@ Gentili spiriti naturali inviano visionarie richieste di aiuto al gruppo e in pa
 - Spirito della Foresta (anime degli alberi, test di saggezza e diplomazia o combattimento spintaneo)  
 
 ***
-
-Posso proseguire con la Parte 2 che include evocazione elementale, eventi critici e conclusione o preferisci che inizi una missione secondaria basata su Red Hand of Doom aggiornata?
-
-Fammi sapere!
 
 Ecco un dettaglio articolato di incontri, mappe, prove e combattimenti adatti alla quest personale di Hellas, che dura 2-3 sessioni, ispirati e bilanciati sugli standard di difficoltà e struttura della Red Hand of Doom (capitolo 2). Sarà avvincente, con il gruppo al centro e conseguenze dirette per il gran finale.
 
@@ -160,7 +154,3 @@ Ecco un dettaglio articolato di incontri, mappe, prove e combattimenti adatti al
 - Ritardi compromettono la forza di Hellas e fanno espandere l’incendio in zone cruciali (math/campo battaglia).  
 - Informazioni ottenute dal cerchio o dallo spirito possono svelare tattiche/posizioni nemiche nel gran finale.  
 - Collegamento a quest secondarie di riduzione dell’orda in stile Red Hand of Doom con timer e urgenza.
-
-***
-
-Vuoi ora la mappa dettagliata di questo scenario con posizionamenti iniziatici, o preferisci che inizi da una missione secondaria stile Red Hand of Doom per bilanciare il tempo mentre Hellas è in rituale?

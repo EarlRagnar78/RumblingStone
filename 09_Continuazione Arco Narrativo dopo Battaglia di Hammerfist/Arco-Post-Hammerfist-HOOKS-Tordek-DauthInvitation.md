@@ -121,7 +121,7 @@ Tordek dice che il Torneo è una distrazione frivola con il Red Hand alle porte 
 
 **Scenario default:** Khorn aspetta a Hammerfist. Quando Tordek riceve il sigillo a Sacred Forest, **manda un messaggero** (gufo postale dei druidi, oppure Tempestas se ancora disponibile, oppure la Polvere di Tonante) a Khorn dicendogli: *"Marcia su Dauth con le 150. Ti aspetto lì."*
 
-Khorn parte da Hammerfist il **Giorno 25**. Marcia 8 giorni. Arriva a Dauth il **Giorno 33** (Day 3 del Torneo) — **giusto in tempo per l'assedio Vanguard** (vedi `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DAY3-DAUTH-CITY-SIEGE.md`).
+Khorn parte da Hammerfist il **Giorno 25**. Marcia ~8 giorni. Arriva a Dauth **a ridosso del Giorno 3** (Day 32) — **giusto in tempo per l'assedio Vanguard** (dove si schierano le lance: vedi `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Thorik.md` §4).
 
 **Eco temporale:** se Tordek **non manda subito** il messaggero, Khorn arriva tardi → **150 lance perse all'assedio** anche se Tordek vince il Torneo.
 
@@ -140,7 +140,7 @@ Khorn parte da Hammerfist il **Giorno 25**. Marcia 8 giorni. Arriva a Dauth il *
 - **Tordek arriva a Dauth senza sigillo formale**. Si presenta come "monaco di passaggio". Può comunque iscriversi alle preliminari (sono aperte ai meritevoli), ma:
   - **NON è ospite d'onore.** Niente alloggio in caserma sud, niente posti riservati per il seguito.
   - **Le 150 lance restano in caserma esterna** (non possono entrare in città senza copertura ufficiale).
-  - **Al Giorno 3 dell'assedio**, le lance non sono in posizione tattica per difendere le mura — sono accampate fuori. Si uniscono in ritardo (3 round dopo l'inizio dell'assedio in `…CITY-SIEGE.md`).
+  - **Al Giorno 3 dell'assedio**, le lance non sono in posizione tattica per difendere le mura — sono accampate fuori. Si uniscono in ritardo (~3 round dopo l'inizio della pressione sulle mura; vedi `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Thorik.md` §4).
 
 **DM nota:** non sgridare il giocatore. Questa è una scelta legittima. Le conseguenze emergono organicamente.
 
@@ -160,7 +160,7 @@ Artemis è un Warlock — combattimento a distanza con Eldritch Blast. **Probabi
 
 ## 6. Echi a lungo periodo
 
-> Per la fonte autoritativa completa: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §8 e `…CONSEGUENZE-ECHI-LUNGO-PERIODO.md`.
+> Per la fonte autoritativa completa: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §8 e `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-CONSEGUENZE-ECHI-LUNGO-PERIODO.md`.
 
 | Decisione di Tordek | Eco al Torneo | Eco a Rethmar |
 |---|---|---|
@@ -190,5 +190,5 @@ Artemis è un Warlock — combattimento a distanza con Eldritch Blast. **Probabi
 - **Cerimonia delle 100 Asce (NON è dove arriva l'invito):** `08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md`
 - **Torneo (P2B) Master:** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md`
 - **Otto Porte e Orbe:** `Arco-Post-Hammerfist-P2B-Torneo-Tordek-OTTO-PORTE-e-ORBE.md`
-- **Day 3 City Siege (lance arrivano qui):** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DAY3-DAUTH-CITY-SIEGE.md`
+- **Day 3 — schieramento delle lance (assedio Vanguard, sfondo DM):** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Thorik.md` §4
 - **Tordek PG card:** `skills/rumblingstone-campaign/references/campaign-party.md` Tordek section

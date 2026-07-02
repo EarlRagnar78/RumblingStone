@@ -6,7 +6,7 @@ Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE4-CIRCOLO-MYTHAL-STATUE-MAPPA.md
 ## 1. Layout della piazza centrale
 
 - Griglia suggerita: 30 × 30 quadretti.  
-- Forma: piazza quasi circolare, al centro di Rethman.
+- Forma: piazza quasi circolare, al centro di Rethmar.
 
 Elementi principali:
 
@@ -39,7 +39,7 @@ Elementi principali:
 
 ---
 
-## 3. Statue di Rethman
+## 3. Statue di Rethmar
 
 - 4 grandi statue equidistanti agli angoli della piazza (coordinate tipo):
   - Nord‑Ovest: (fila 6, colonna 6).  

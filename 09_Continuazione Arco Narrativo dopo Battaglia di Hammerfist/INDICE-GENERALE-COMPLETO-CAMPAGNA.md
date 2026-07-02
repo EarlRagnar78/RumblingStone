@@ -12,7 +12,7 @@ This directory contains **74 markdown files** + **6 image files** (+ 2 new PNG f
 All location names use Cannath Vale equivalents (Rethmar, Shaarcah Forest, etc.).
 See `skills/dnd-35-rules/references/fr-cannath-vale.md` for the full RHoD→Cannath Vale mapping.
 
-**Legend:** ✅ = Content complete | 📝 = Empty placeholder (TODO) | ⚠️ = Needs integration
+**Legend:** ✅ = Content complete | 📝 = Empty placeholder (TODO) | ⚠️ = Needs integration | ⚠️ storico/deprecato = brainstorm pre-canone, non normativo
 
 ---
 
@@ -24,12 +24,12 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 |---|---|---|---|---|
 | **Il Collezionista (Rakshasa)** | `PNG/Il_Collezionista_Rakshasa.md` | 17–19 | Shadow mastermind; manipola Varis, Sal, Sonjak | 5/8 |
 | **Salvatore "Sal" / Vatore** | `PNG/Salvatore/Salvatore.md` | 14 | Spia temporale; mercante del deserto; fornitore statue vive | 0/6 |
-| **Azarr Kul** | `PNG/Azarr_Kul/Azarr_Kul.md` | 15 | Alto Wyrmlord di Tiamat; boss Fase 3 Rethmar; monta Tyrgarun | 9/18 |
+| **Azarr Kul** | `PNG/Azarr_Kul/Azarr_Kul.md` | 15 | Alto Wyrmlord di Tiamat; boss Fase 3 Rethmar (combatte a terra — Tyrgarun è un incontro separato, non una cavalcatura, D11 v2) | 9/18 |
 | **Sonjak / Matrona Sajak** | `PNG/Sonjak/Sonjak.md` | 13 | Matrona Drow, comanda forze sotterranee; datore di lavoro di Sal | 4/8 |
 | **Conte Valerius** | `PNG/Conte_Valerius/Conte_Valerius.md` | 6/14★ | Villain politico; finanzia la Mano Rossa; non si batte in combat | 2/8 |
 | **Maestro Varis "Seta-Argento"** | `PNG/Varis_Seta_Argento/Varis_Seta_Argento.md` | 6 | Broker urbano Rethmar; anello della catena statue vive | — |
 | **Ghostlord / Zeth il Murato** | `PNG/Ghostlord/Ghostlord.md` | 13 | Lich druidico Thornwaste; alleato o nemico; NPC di Hella | — |
-| **Xal'thor** | `PNG/Xal_thor/Xal_thor.md` | 14 | Comandante Illithid Githyanki; attacca Torneo Giorno 3 (fisso) | Fixed |
+| **Xal'thor** | `PNG/Xal_thor/Xal_thor.md` | 14 | Comandante Illithid (invasione psionica, NON Githyanki — vedi Vaereth); attacca Torneo Giorno 3 (fisso) | Fixed |
 | **Therysol** | `PNG/Therysol/Therysol.md` | 9 | Alleata Tiefling Mezzo-Drago; caccia Il Collezionista | — |
 | **Capitana Lorana** | `PNG/Lorana/Lorana.md` | 7 | PNG secondaria; guida rifugiati; voce non ufficiale Consiglio; NPC di riconnessione Arc 00 | — |
 | **Consiglio di Rethmar** | `PNG/Consiglio_Rethmar/Consiglio_Rethmar.md` | — | Organo collegiale 7 membri; 3 sedute Day 30/33/35; resa default senza intervento PG | — |
@@ -38,7 +38,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 
 **Villain minori con stat nei file di arco (no cartella dedicata):**
 - Zalkatar (Illithid Warlock, CR 13): `Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md`
-- Wyrmlord Saarvith + Regiarax (CR 12/13): `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`
+- Wyrmlord Saarvith + Regiarix (CR 12/13): `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`
 - Zarim (Illithid luogotenente, CR 12): `Arco-Post-Hammerfist-P2B-Torneo-Tordek-BATTLE-STATS-e-VILLAIN-ICONICI.md`
 - Avversari Torneo (12+ nomi): `Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md`
 - Azarr Kul + Avatar Tiamat (stat epiche): `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md`
@@ -51,7 +51,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 
 | File | Contenuto |
 |---|---|
-| `inizio.md` | Brainstorming iniziale, schema arco narrativo, struttura 4 atti, missioni parallele |
+| `inizio.md` | ⚠️ storico/deprecato — Brainstorming iniziale, schema arco narrativo, struttura 4 atti, missioni parallele |
 | `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md` | Timeline Red Hand of Doom (Day 19–42), mappa hex Cannath Vale, contesto Hammerfist (vittoria PG, fortezza danneggiata), sistema urgenza |
 
 **Contenuti Setup:**
@@ -146,7 +146,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 
 | File | Tipo |
 |---|---|
-| `Quest 1 – Druida Hellas: Il Cerchio Sacro della Foresta.md` | Versione originale quest |
+| `Quest 1 – Druida Hellas: Il Cerchio Sacro della Foresta.md` | ⚠️ storico/deprecato — Versione originale quest |
 | `ERRATA-PARTE1-Quest-Hellas-35-Verification.md` | Correzioni 3.5 SRD — stat blocks, action economy (bonus action→swift), Touch/FF AC, BAB/Grapple |
 
 ---
@@ -155,7 +155,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 
 ### PARTE 2A: Quest Artemis Warlock — Torre Invisibile (4 Livelli + Boss)
 
-**Durata:** 2–3 sessioni (Day 21–23)
+**Durata:** 2–3 sessioni (Day 28–35, finestra `campaign/state.md` §0; cronologia fine in `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §1.1)
 
 | File | Tipo | Livello Torre |
 |---|---|---|
@@ -188,7 +188,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 
 ### PARTE 2 — Rhest: Città Sommersa & Drago Nero
 
-**Source:** Red Hand pag 67–80 | **Durata:** 2–3 sessioni (Day 23–25)
+**Source:** Red Hand pag 67–80 | **Durata:** 2–3 sessioni (Day 25–32, finestra `campaign/state.md` §0; cronologia fine in `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §1.1)
 
 | File | Tipo | Status |
 |---|---|---|
@@ -197,7 +197,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 | `Arco-Post-Hammerfist-P2-RHEST-FASE2-PALUDE-RAZORFIEND.md` | Fase 2 — Palude e Razorfiend encounter | ✅ |
 | `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-RAZORFIEND-NIDO.md` | Encounter — Razorfiend nido | ✅ |
 | `Arco-Post-Hammerfist-P2-RHEST-FASE3-INTRUSIONE-EDIFICI-RHEST.md` | Fase 3 — Intrusione rovine sommerse | ✅ |
-| `Arco-Post-Hammerfist-P2-RHEST-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md` | Fase 4 — Boss: Wyrmlord Saarvith + Regiarax | ✅ |
+| `Arco-Post-Hammerfist-P2-RHEST-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md` | Fase 4 — Boss: Wyrmlord Saarvith + Regiarix | ✅ |
 | `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | Stat blocks boss | ✅ |
 | `Arco-Post-Hammerfist-P2-RHEST-CONSEGUENZE-ESITI.md` | Conseguenze ed esiti | ✅ |
 
@@ -207,17 +207,20 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 - Città rovine sommerse (mappa hex acqua)
 - Razorfiend encounters nella palude
 - Wyrmlord Saarvith (CR 12 fighter/dragon disciple)
-- Boss Finale: **Regiarax** Adult Black Dragon (CR 13!)
+- Boss Finale: **Regiarix** Adult Black Dragon (CR 13!)
 - Sabotaggio ponte/supply lines orda
 - Conseguenze: Rallenta orda 3 giorni, intel prezioso
 
 ### PARTE 2B: Quest Tordek Monaco — Torneo Epico Dauth
 
-**Durata:** 2–3 sessioni (Day 22–24)
+**Durata:** 2–3 sessioni (Day 25–34, finestra `campaign/state.md` §0; cronologia fine — Torneo Day 1-3 = Giorni 30-32 — in `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §1.1)
 
 | File | Tipo | Status |
 |---|---|---|
-| `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-to-Be_integrated.md` | Testo principale — narrativa completa, Orbe Otto Porte, chakra gates | ⚠️ DA INTEGRARE |
+| `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md` | **HUB del Torneo** — indice, calendario, esiti, checklist DM | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-CONSEGUENZE-ECHI-LUNGO-PERIODO.md` | Esiti × scelte PG; echi a Rethmar e post-campagna | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Thorik.md` | Sub-quest delle 150 lance di Re Thorek (D10) | ✅ |
+| `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-to-Be_integrated.md` | ⚠️ storico/deprecato — bozza pre-canone (Tetsu/Rihan adottati altrove, resto superato da OTTO-PORTE-e-ORBE + PARTE1-3) | ⚠️ storico/deprecato |
 | `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-Giorno1-Preliminari.md` | Giorno 1 — Preliminari torneo | ✅ |
 | `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE1-Round1.md` | Dettaglio Round 1 | ✅ |
 | `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE2-Giorno2-Semifinali.md` | Giorno 2 — Semifinali | ✅ |
@@ -244,9 +247,11 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
   - Final gate: if used, leads to Tordek's disintegration
 - 4 Round combattimenti 1v1 (opponents CR 11–14)
   - Key opponents: Tetsu "Serpente di Vento" (Monk 12), Grandmaster Rihan (Monk 14), Thrain Ironfist (Fighter 13), Grom Skullcrusher (Barbarian 14)
-- **Finale improvviso:** Githyanki Red Dragon attack! Artefatto Gith da rubare al sage monk
-  - Xal'thor Illithid Commander (psionic, multi-phase boss)
-  - Arena diventa campo di battaglia: proteggere pubblico + distruggere nucleo psionico
+- **Finale improvviso (Day 3, fisso):** doppio assalto di due fazioni ostili tra loro:
+  - **Xal'thor** (Illithid Commander, psionico, multi-phase boss) guida un'invasione illithid per rubare i **Bracieri Gemelli** di Tordek.
+  - **Vaereth** (Githyanki liberi su draghi rossi) arriva in parallelo per reclamare l'**Orbe delle Otto Porte** — fazione separata e ostile a Xal'thor.
+  - **Round 7**: smascheramento di **Sethrax il Velato** (finalista infiltrato "Kethran Mano di Pietra").
+  - Arena diventa campo di battaglia: proteggere pubblico + distruggere nucleo psionico di Xal'thor
 - **Tordek's Chakra Enlightenment:** 7 soul gates of jujitsu combat (Naruto-inspired)
   - Powers with physical costs, strain to final power → disintegration if used
 - Conseguenze: Fama, 300 dwarf mercenaries sent to Rethmar, artefatti combattimento
@@ -299,7 +304,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 - Diplomazia elfi (prove Charisma/Wisdom) — Killiar Arrowswift, Sellyria Starsinger
 - Quest di prova: vendicare Lanikar / difendere Starsong
 - Minaccia wyvern/manticore upgraded (CR 10–11)
-- Alleanza guadagnata: 50 elfi rangers + 10 giant owls → battaglia finale
+- Alleanza guadagnata: 100 elfi rangers + 20 giant owls (D9 — 1/5 della tribù di ~500 anime) → battaglia finale
 - VP impact sulla Battle of Rethmar
 
 ### PARTE 3 — Ghostlord: Lich Druidico del Thornwaste
@@ -317,7 +322,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 - Thornwaste desert trek
 - Ghostlord Lich lair (CR 14 optional combat OR diplomacy!)
 - Philactery quest (moral choice: restituire, distruggere, o vincolare)
-- Alleanza: Ghostlord ritira supporto da Red Hand (200 undead in meno)
+- 3 rami (vedi `campaign/state.md` §2.3): ostile (default) = **+2.400** non-morti per la Red Hand a Fase 2; neutralizzato = solo **+400** (distaccamento minore); redento/alleato (raro) = **+600** non-morti "buoni" tra i DIFENSORI
 - Mappa dungeon lich "leone di pietra" 60m×80m
 
 ### PARTE 3 — Sabotaggio Campi Drow (3 Missioni)
@@ -378,7 +383,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 
 | File | Tipo |
 |---|---|
-| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAN-STRUTTURA.md` | Overview completa 5 fasi |
+| `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md` | Overview completa 5 fasi |
 | `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md` | Stat blocks epici (Azarr Kul CR 15, Avatar Tiamat CR 17, Erinni, Arcimaghi, Ghostlord ally, 300 nani, Githyanki Knights) |
 | `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ESITI-CONSEGUENZE.md` | Sistema VP, esiti A–F, conseguenze PG, epilogo |
 | `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-MYTHAL-FOCUS-PG-SCENA-EROICA.md` | Scene eroiche PG-specifiche durante Mythal |
@@ -439,8 +444,8 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 
 **Contenuti:**
 
-- **Azarr Kul** appare (CR 15 Cleric 10/Fighter 4, hobgoblin mezzo-drago blu)
-- Cavalca **Tyrgarun**, Very Old Blue Dragon (CR 20!)
+- **Azarr Kul** appare (CR 15 Cleric 10/Fighter 4, hobgoblin mezzo-drago blu), combatte **a terra**
+- **Tyrgarun**, drago blu Old (CR 18), NON è una sua cavalcatura (D11 v2): è il terrore dei cieli della Fase 1 (hazard di bombardamento), poi minaccia aerea a orologeria in Fase 2-3, e viene inchiodato a terra dal Mythal solo in Fase 4 — incontro separato, vedi `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md` §6
 - Final Boss Battle multi-phase epic:
   - Sotto-fase A: Avvicinamento, Azarr Kul + guardia scelta (CR 16)
   - Sotto-fase B: Avatar di Tiamat manifesto (CR 17, 3 teste attive, soffi elementali)
@@ -554,7 +559,7 @@ Tutte mappe tattiche nei file `*-MAPPE*.md` usano scala 1.5m/sq.
 
 - [ ] Quest Hella — Cerchio Sacro Shaarcah Forest
 - [ ] Quest Artemis — Torre Invisibile (vs Zalkatar)
-- [ ] Rhest — Wyrmlord Saarvith & Regiarax (📝 NEW)
+- [ ] Rhest — Wyrmlord Saarvith & Regiarix (📝 NEW)
 - [ ] Quest Tordek — Torneo Epico Dauth
 - [ ] Sabotaggio Campi Drow (1–3)
 - [ ] Starsong Hill — Alleanza Elfi Tiri Kitor

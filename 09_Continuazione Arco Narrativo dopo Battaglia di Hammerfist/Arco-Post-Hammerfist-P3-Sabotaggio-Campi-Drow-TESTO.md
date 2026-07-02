@@ -8,7 +8,7 @@ Arco Post-Hammerfist / Red Hand of Doom (D&D 3.5)
 ## 1. Contesto generale
 
 Durante la preparazione alla guerra contro la Red Hand, i PG scoprono che una fazione di drow sta rifornendo l’Orda con veleni, forzieri di armi esotiche e rituali di oscurità perpetua.[web:71][web:83]  
-Obiettivo dell’arco: colpire tre bersagli chiave per spezzare la catena logistica drow e ottenere tempo prezioso per Rhest, Ghostlord e la futura battaglia di Rethman.[web:78][web:82]
+Obiettivo dell’arco: colpire tre bersagli chiave per spezzare la catena logistica drow e ottenere tempo prezioso per Rhest, Ghostlord e la futura battaglia di Rethmar.[web:78][web:82]
 
 Tre missioni brevi:
 
@@ -95,7 +95,7 @@ Si nasconde in un avamposto sotterraneo avanzato, a metà tra la superficie e l�
 ### Impatto sulla campagna
 
 - Se Xilthra muore ma il Patto sopravvive: i drow possono sostituirla, ma serve tempo → piccolo vantaggio tattico ai PG.  
-- Se Patto viene distrutto/annullato: la fazione drow si ritira (o si frantuma in faide interne), riducendo di molto i rinforzi occulti dell’Orda (meno caster oscuri nelle fasi Rhest/Ghostlord/Rethman).  
+- Se Patto viene distrutto/annullato: la fazione drow si ritira (o si frantuma in faide interne), riducendo di molto i rinforzi occulti dell’Orda (meno caster oscuri nelle fasi Rhest/Ghostlord/Rethmar).  
 - Se Xilthra diventa informatrice/doppio‑giochista: informa in anticipo i PG di mosse Red Hand (puoi concedere uno o due “voti di avvertimento” che permettono di reindirizzare o alleggerire un assedio futuro).[web:82]
 
 ---
@@ -105,4 +105,4 @@ Si nasconde in un avamposto sotterraneo avanzato, a metà tra la superficie e l�
 - Starsong Hill: gli elfi Tiri‑Kitor potrebbero aver subito imboscate drow nelle paludi → il successo del sabotaggio rafforza la loro fiducia nei PG.[web:75][web:80]  
 - Rhest: meno supporto occulto (pochi stregoni/drow alleati dei Wyrmlord).  
 - Ghostlord: la Red Hand potrebbe non essere in grado di fornire al lich certe componenti rare, rendendo più facile negoziare o affrontarlo.  
-- Battaglia Finale Rethman: con la catena drow spezzata, una delle “ondate speciali” (caster drow, veleni di massa) può essere eliminata o ridotta.[web:82][web:83]
+- Battaglia Finale Rethmar: con la catena drow spezzata, una delle “ondate speciali” (caster drow, veleni di massa) può essere eliminata o ridotta.[web:82][web:83]

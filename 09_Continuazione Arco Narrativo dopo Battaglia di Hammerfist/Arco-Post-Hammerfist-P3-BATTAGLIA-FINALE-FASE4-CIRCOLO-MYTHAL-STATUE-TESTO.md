@@ -7,7 +7,7 @@ Circolo degli Otto, Mythal e Statue‑Golem
 
 ## 1. Premessa
 
-Dopo lo scontro con Azarr Kul e l’Avatar (Fase 3), il fronte è allo stremo: l’Orda è spezzata ma ancora numerosa, i draghi superstiti e le truppe d’élite tentano un ultimo assalto disperato verso il cuore di Rethman.[web:101][web:105]  
+Dopo lo scontro con Azarr Kul e l’Avatar (Fase 3), il fronte è allo stremo: l’Orda è spezzata ma ancora numerosa, i draghi superstiti e le truppe d’élite tentano un ultimo assalto disperato verso il cuore di Rethmar.[web:101][web:105]  
 Il **Circolo degli Otto** (8 arcimaghi/arci‑druidi) ha scelto la piazza centrale come fulcro per erigere un **Mythal difensivo** e risvegliare le **Statue‑Golem** della città come ultima linea di difesa.
 
 I PG devono **proteggere il rituale per 7 round** e gestire l’attivazione delle statue.
@@ -20,7 +20,7 @@ I PG devono **proteggere il rituale per 7 round** e gestire l’attivazione dell
 - Ogni round, nuove minacce cercano di interrompere il rituale.  
 - Al termine del 7° round:
   - il Mythal si attiva completamente,  
-  - le Statue di Rethman prendono vita come Golem di Pietra colossali,  
+  - le Statue di Rethmar prendono vita come Golem di Pietra colossali,  
   - l’assedio praticamente finisce (restano solo sacche di resistenza).  
 
 Questa fase è CR 16–18 ma giocata più come “difesa a ondate” intorno a PNG chiave, non come un singolo mega boss.
@@ -62,11 +62,11 @@ Quando il Mythal si attiva:
 
 ---
 
-## 5. Attivazione Statue‑Golem di Rethman
+## 5. Attivazione Statue‑Golem di Rethmar
 
 Contemporaneamente o subito dopo il completamento del Mythal:
 
-- Le grandi statue che decorano piazze, mura e ponti di Rethman (eroi antichi, re, draghi pietrificati, custodi) si animano come **Golem di Pietra colossali**.  
+- Le grandi statue che decorano piazze, mura e ponti di Rethmar (eroi antichi, re, draghi pietrificati, custodi) si animano come **Golem di Pietra colossali**.  
 - Non servono stat dettagliate: agiscono come:
   - “armi di distruzione di massa” amiche,  
   - che spazzano via le ultime forze organizzate della Red Hand (catapulte, gruppi di giganti, plotoni di fanteria),  

@@ -122,9 +122,8 @@ Sfida: combattimento CR 13–14 tosto.
 
 ## 6. Impatto sulla campagna
 
-- Se il Ghostlord NON aiuta l’Orda:  
-  - Nella battaglia finale stile Brindol/Rethman, una **grossa ondata di non morti** prevista dal piano militare della Red Hand è annullata o fortemente ridotta (CR dell’assalto totale diminuisce di 1–2 step).[web:78][web:101]  
-- Se viene distrutto prima che l’Orda lo usi:  
-  - Effetto simile, ma senza possibilità di futuri favori.  
-- Se si schiera con la Red Hand (PG falliscono/lo insultano):  
-  - Aspettati ondate extra di leoni spettrali, wights, ghoul alla battaglia finale, portando il totale verso il crinale 18+.
+Numeri allineati a `campaign/state.md` §2.3 (D7) — usare **questi** valori, non stime generiche di CR:
+
+- **Ghostlord ostile (default, PG non intervengono o falliscono)**: la Red Hand riceve l'ondata completa pianificata, **+2.400 non-morti** a Fase 2 della battaglia finale.
+- **Ghostlord neutralizzato (distrutto, o filatteria vincolata prima che l'Orda lo sfrutti)**: solo un piccolo distaccamento già dispiegato raggiunge l'Orda, **+400 non-morti** (invece di +2.400).
+- **Ghostlord redento/alleato (ramo A, filatteria restituita, lich si schiera coi PG)**: **+600 non-morti "buoni"** si aggiungono ai **DIFENSORI** di Rethmar invece che agli attaccanti — un'inversione netta, non solo un'assenza.

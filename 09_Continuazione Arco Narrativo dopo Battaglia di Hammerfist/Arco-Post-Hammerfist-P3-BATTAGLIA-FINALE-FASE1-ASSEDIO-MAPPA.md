@@ -1,7 +1,7 @@
 Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE1-ASSEDIO-MAPPA.md
 ===============================================================
 
-# Mappa – Assedio di Rethman (Fase 1)
+# Mappa – Assedio di Rethmar (Fase 1)
 
 La mappa della città può essere astratta in **settori**, ognuno associato a una ondata:
 

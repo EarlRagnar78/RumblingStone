@@ -7,7 +7,7 @@ Azarr Kul & Avatar di Tiamat (CR 17–18)
 
 ## 1. Premessa
 
-Dopo l’incursione ai ritualisti, il fronte trema: il cielo sopra Rethman si squarcia in un vortice cromatico, e un’imponente figura draconica multicolore inizia a manifestarsi mentre Azarr Kul avanza fra le truppe come campione prescelto.[web:108][web:113]  
+Dopo l’incursione ai ritualisti, il fronte trema: il cielo sopra Rethmar si squarcia in un vortice cromatico, e un’imponente figura draconica multicolore inizia a manifestarsi mentre Azarr Kul avanza fra le truppe come campione prescelto.[web:108][web:113]  
 Questa fase è il **cuore epico** della battaglia: lo scontro diretto con Azarr Kul e l’Avatar (più o meno completo a seconda di come è andata Fase 2 e della gestione dell’Artefatto Maligno).
 
 ---
@@ -116,6 +116,6 @@ Fine scontro:
 
 ## 7. Conseguenze
 
-- Vittoria netta qui = la Battaglia di Rethman è praticamente vinta: la Fase 4 diventa più difensiva/epilogo epico (proteggere il Circolo, attivare le statue‑golem e respingere l’ultima ondata).  
+- Vittoria netta qui = la Battaglia di Rethmar è praticamente vinta: la Fase 4 diventa più difensiva/epilogo epico (proteggere il Circolo, attivare le statue‑golem e respingere l’ultima ondata).  
 - Se i PG vincono ma **al costo di molte risorse e ferite**, la Fase 4 sarà soprattutto narrativa/d’attrito, non un altro mega boss fight.  
 - Se non riescono a uccidere l’Avatar/Azarr, ma il Mythal si chiude comunque, puoi narrarli come “sigillati” o respinti in un’altra dimensione, lasciando finale agrodolce o gancio per campagne future.

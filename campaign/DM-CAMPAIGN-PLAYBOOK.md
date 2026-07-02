@@ -262,8 +262,8 @@ Sempre sessione 14. Il DM apre `state.md` e applica questi cambi (mostrato come 
 
  ## §3 Villain Clocks
 
--| Saarvith + Regiarax | 3/8 | Day 27 |
-+| Saarvith + Regiarax | 4/8 | Day 29 (Regiarix ancora vivo, sposta in campo) |
+-| Saarvith + Regiarix | 3/8 | Day 27 |
++| Saarvith + Regiarix | 4/8 | Day 29 (Regiarix ancora vivo, sposta in campo) |
 
  ## §5 Party Position
 

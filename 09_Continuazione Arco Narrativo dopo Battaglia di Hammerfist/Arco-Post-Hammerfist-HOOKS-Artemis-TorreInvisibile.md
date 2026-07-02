@@ -8,7 +8,7 @@ Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md
 > - **Notte 22 o 23** → Sogno della Doppia Maschera: Lathander + Mask appaiono come osservatori, rivelano identità di Zalkatar (3-secoli ex-chierico di Mask, Mind Flayer per scelta) e movente (lettura sperimentale dell'Anello, non uccisione).
 > - **Day 21-22 (opz.)** Tempestas conferma con conversazione drow intercettata 3 settimane fa nel Cannath Vale Nord (fiume con tre rapide) + mappa approssimativa.
 > - **Day 25 (opz.)** Saraah conferma direzione Torre via rito druidico al Sacred Forest.
-> - **Bonus meccanici sogno**: +2 TS Vol vs Zalkatar psionics; +1d6 al primo attacco/round Fase 3 (+2d6 se incontrata anche la donna cieca al mercato di Dauth, vedi `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Artemis.md` Atto 2).
+> - **Bonus meccanici sogno**: +2 TS Vol vs Zalkatar psionics; +1d6 al primo attacco/round Fase 3 (+2d6 se incontrata anche la donna cieca al mercato di Dauth — beat "Atto 2" della sub-quest Beriah/Maschera, vedi `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md` §5 `[INFERRED — da scrivere in Lotto B]`).
 > - **Mirtul deadline**: Torre cammina ~Day 30. 4 vie (Torre presto solo / Sacred Forest poi Torre / Dauth poi Torre / DARK ignora).
 ## *Tono: House of David (la chiamata dall'oggetto sacro stesso) + Tolkien (il sogno che cresce notte dopo notte).*
 
@@ -181,13 +181,13 @@ Le due divinità **non hanno preso bene** il rifiuto, ma **non l'hanno punito**.
 
 #### Variazione: se Artemis ha la maschera di Beriah in tasca (Tournament arc)
 
-> Vedi `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Artemis.md` §3.1/§5 (Atto 3 maschera). Solo se Artemis ha già accettato il patto Beriah al Torneo PRIMA della Torre — improbabile cronologicamente, ma possibile in PATH-C.
+> Beat "Atto 3" (la maschera) della sub-quest Beriah/Maschera — vedi `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md` §5 `[INFERRED — da scrivere in Lotto B]`. Solo se Artemis ha già accettato il patto Beriah al Torneo PRIMA della Torre — improbabile cronologicamente, ma possibile in PATH-C.
 
 In quella variante, **Mask può rivelare** alla fine del sogno: *"La maschera che porti in tasca è di una mia cellula. Non sono d'accordo con come ti hanno avvicinato. Quando affronterai Zalkatar, **decidi tu** se rompere quella maschera. Ti darei la mia benedizione di rompere se vorrai farlo. Ma è una tua scelta — io non te la chiedo."* Eco: **Artemis può rompere la maschera senza eco negativa** dal Mask cult (Mask stesso lo ha autorizzato), evitando il debito futuro.
 
 #### Variazione: se Artemis aveva sognato la donna cieca al mercato di Dauth (sub-quest Atto 2)
 
-> Vedi `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Artemis.md` §4 (donna cieca = avatar Lathander). Solo se Atto 2 della sub-quest avviene PRIMA della Torre.
+> Beat "Atto 2" (la donna cieca = avatar Lathander) della sub-quest Beriah/Maschera — vedi `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md` §5 `[INFERRED — da scrivere in Lotto B]`. Solo se questo beat avviene PRIMA della Torre.
 
 In quella variante, Artemis **riconosce immediatamente** la donna in sogno come la stessa del mercato. Lathander annuisce: *"Sì. Era io. Avevi capito."* Eco: **+1 al "+1d6 contro Zalkatar"** (diventa +2d6 al primo attacco di ogni round Fase 3) — la connessione ripetuta rinforza la preparazione.
 
@@ -213,7 +213,7 @@ Artemis resta col party. Va al Sacred Forest (Giorno 23-25). Poi parte da solo p
 
 ### 4.3 GRAY-C — *Ignora i sogni e va a Dauth col party (sub-quest Tournament)*
 
-Artemis sceglie di seguire Tordek a Dauth (PATH-B together). Sogni si intensificano. **Atto 3 della sub-quest Artemis al Tournament**: vedi `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Artemis.md` Atto 3 (la maschera che parla, se ha accettato il patto Beriah).
+Artemis sceglie di seguire Tordek a Dauth (PATH-B together). Sogni si intensificano. **Beat "Atto 3" della sub-quest Beriah/Maschera al Torneo** (la maschera che parla, se ha accettato il patto Beriah): vedi `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md` §5 `[INFERRED — da scrivere in Lotto B]`.
 
 **Beneficio:** completa l'arco del Torneo (incluso Beriah/Mask cult sub-quest). Ottiene mappa interna del Livello 3 della Torre (–4 alle CD puzzle).
 
@@ -290,5 +290,5 @@ Discussione di gruppo. Possibile decisione collettiva di andare alla Torre INSIE
 - **Anello di Chaotic Illumination:** `PG/Artefatti/Artefatti-Pg/ringOfChaoticIllumination/`
 - **Torre Invisibile (P2A):** `Arco-Post-Hammerfist-P2A-Torre-PARTE1.md`
 - **Torre P2A boss Zalkatar:** `Arco-Post-Hammerfist-P2A-Torre-PARTE4-FINALE-Boss-Zalkatar.md`
-- **Sister hook (Torneo — Beriah / Mask cult sub-quest):** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Artemis.md`
+- **Sister hook (Torneo — Beriah / Mask cult sub-quest):** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md` §5 `[INFERRED — sub-quest da scrivere in Lotto B]`
 - **Artemis PG card:** `skills/rumblingstone-campaign/references/campaign-party.md` Artemis section

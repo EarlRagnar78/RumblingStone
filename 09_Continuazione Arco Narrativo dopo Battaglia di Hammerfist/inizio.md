@@ -1,3 +1,5 @@
+> ⚠️ DEPRECATED (2026-07): brainstorm storico. Canone corrente: INDICE-GENERALE + state.md.
+
 L'idea per la continuazione dell'arco narrativo è molto interessante e articolata, ecco una sintesi strutturata dei tuoi piani e qualche spunto per organizzare in modo coerente le successive avventure e fasi della campagna:
 
 ***
@@ -46,8 +48,6 @@ L'idea per la continuazione dell'arco narrativo è molto interessante e articola
 - Proteggi l'atmosfera sacra e mistica inserendo descrizioni immersive e simbolismi nanici.  
 
 ***
-
-Posso aiutarti a creare schemi tattici, mappe, dettagli rituali, incontri o meccaniche speciali per ciascuno di questi atti. Vuoi che inizi da qualche parte in particolare oppure uno schema generale per l'intero arco narrativo?
 
 Ecco uno schema dettagliato per la continuazione dell'arco narrativo, con missioni personali attivabili in parallelo e che mantengano alta la tensione sull'urgenza causata dall'avanzata dell'orda della Mano Rossa.
 
@@ -120,13 +120,6 @@ Ecco uno schema dettagliato per la continuazione dell'arco narrativo, con missio
 - La battaglia finale segue lo schema di Hammerfist, ampliata e potenziata con forze drow, aberrazioni, draghi e incantatori del Circolo degli Otto.
 
 ***
-
-## Supporto Specifico a DM  
-
-- Vuoi posso aiutarti a dettagliare ogni missione personale con mappe, incontri chiave ed eventi rituali.  
-- Posso anche redigere timer e suggerimenti per il DM per bilanciare urgenza e libertà d’azione.  
-
-Dimmi se vuoi approfondire qualche parte o iniziare subito!
 
 Ecco una proposta dettagliata per ciascuna missione personale con mappe, incontri, eventi rituali, oltre a missioni parallele per dare libertà ai PG, integrare il tutto con un timer narrativo ben calibrato e preparare il terreno per il gran finale a Damarath.
 
@@ -237,8 +230,3 @@ Ecco una proposta dettagliata per ciascuna missione personale con mappe, incontr
 - Assedio imponente con truppe drow, aberrazioni, draghi, circolo degli otto con magheggi mythal-like  
 - Comparsa di comandi e unità speciali dalla Red Hand of Doom upgrade  
 - Battaglia epica con dinamiche simili a Hammerfist e artefatti/abilità dei PG fondamentali
-
-***
-
-Se vuoi, posso creare una prima mappa tattica per una di queste missioni o un calendario con timer e milestone narrative.  
-Dove preferisci iniziare?

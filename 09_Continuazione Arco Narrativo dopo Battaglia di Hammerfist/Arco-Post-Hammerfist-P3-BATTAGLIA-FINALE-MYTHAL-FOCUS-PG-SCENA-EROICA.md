@@ -26,7 +26,7 @@ I 4 PG sono gli **unici** in grado di fungere da “foci viventi” del Mythal e
 
 - Legami con divinità / poteri superiori.  
 - Artefatti leggendari.  
-- Legami narrativi con Rethman/Hammerfist/Natura.
+- Legami narrativi con Rethmar/Hammerfist/Natura.
 
 ### PG 1 – Guerriero Nano con Corona di Adamantio e Aegis Fang
 

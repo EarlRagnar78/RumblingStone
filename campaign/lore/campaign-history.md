@@ -281,7 +281,7 @@ The party descends through a chain of connected underground locations:
 - Lake Rhest exploration — sunken city ruins, boat/underwater mechanics
 - Razorfiend encounters in the swamp
 - **Wyrmlord Saarvith** (CR 12, fighter/dragon disciple) commands the area
-- Boss: **Regiarax** Adult Black Dragon (CR 13)
+- Boss: **Regiarix** Adult Black Dragon (CR 13)
 - Consequences: Slows horde 3 days, critical intelligence gathered
 - Source: `Arco-Post-Hammerfist-P2-RHEST-*` (8 files)
 
@@ -308,7 +308,7 @@ The party descends through a chain of connected underground locations:
   - **Phase 0 — Notte dei Drow:** Night infiltration by drow + fungal aberrations → attack Rethmar temple to steal evil artifact. Connection to Sonjak/Il Collezionista/Mother of Fungi faction. Therysol may appear as ally here.
   - **Phase 1 — Assedio Esterno:** Red Hand horde (hobgoblins, ogres, bugbears, Giants, etc) + Githyanki red dragon faction (if not defeated at Dauth) + drow faction. Multiple dragon colors.
   - **Phase 2 — Ritualisti Draconici:** 10-round ritual to summon Avatar of Tiamat + Azarr Kul
-  - **Phase 3 — Azarr Kul & Avatar of Tiamat:** Epic boss fight. Azarr Kul (CR 15 Cleric 10/Fighter 4, half-blue-dragon hobgoblin) + **Tyrgarun** Very Old Blue Dragon (CR 20)
+  - **Phase 3 — Azarr Kul & Avatar of Tiamat:** Epic boss fight. Azarr Kul (CR 15 Cleric 10/Fighter 4, half-blue-dragon hobgoblin), fighting on foot — **Tyrgarun** (Old Blue Dragon, CR 18) is NOT his mount (D11 v2); it's a separate sky-terror encounter, grounded and killable only once the Phase 4 Mythal completes
   - **Phase 4 — Circolo degli Otto & Mythal:** 8 archmages create mythal barrier in 7 rounds, animate city statues as stone golems (à la Harry Potter Battle of Hogwarts)
 - **Allied reinforcements (conditional):**
   - Hammerfist dwarves: 90 survivors of Arc 08 + Re Thorek
@@ -408,7 +408,7 @@ and back to the surface for the Red Hand campaign mainline.
   ├── P1: Hella's Quest — Cerchio Sacro della Foresta
   ├── P2A: Artemis's Quest — Torre Invisibile (vs Zalkatar)
   ├── P2B: Tordek's Quest — Torneo Epico di Dauth
-  ├── P2 Rhest: Città Sommersa & Regiarax (Black Dragon)
+  ├── P2 Rhest: Città Sommersa & Regiarix (Black Dragon)
   ├── P3 Alliances: Starsong Hill, Ghostlord, Sabotaggio Drow
   └── P3 FINALE: Battle of Rethmar (5 phases → Azarr Kul + Avatar of Tiamat)
 ```

@@ -1,7 +1,7 @@
-Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAN-STRUTTURA.md
+Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md
 =============================================================
 
-# Battaglia Finale di Rethman (Brindol Remix) – CR 16–18  
+# Battaglia Finale di Rethmar (Brindol Remix) – CR 16–18  
 
 Basata sulla struttura della Battle of Brindol di Red Hand of Doom[web:86][web:105]
 
@@ -9,7 +9,7 @@ Basata sulla struttura della Battle of Brindol di Red Hand of Doom[web:86][web:1
 
 - Livello atteso PG: 13–15.  
 - CR complessivo: 16–18, spezzato in **ondate e sotto‑missioni simultanee**.  
-- **Forza Orda in arrivo (Day 40 March Clock)**: ~5.800–7.400 effettivi su baseline ~10.000, modulato dagli hook Arc-09. Vedi `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md` §3 per i 5 scenari (worst/baseline/medio/ottimale/leggendario) e §4 per la composizione per fase.
+- **Forza Orda in arrivo (Day 42 March Clock)**: ~5.800–7.400 effettivi su baseline ~10.000, modulato dagli hook Arc-09. Vedi `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md` §3 per i 5 scenari (worst/baseline/medio/ottimale/leggendario) e §4 per la composizione per fase.
 - **Sync point Day 19**: Terrelton cade = Battaglia di Hammerfist finisce (canonico, locked).
 - **Forza aerea Orda**: 5 draghi nominati (Abithriax, Regiarix se vivo, Ozyrrandion, Tyrgarun, Fauci di Palude) + 8 Razorfiend Draconic Spawn sui Wyrmlord upscalati.
 - **Compagnia del Teschio Nero**: composizione canonica AP, riserva élite di Azarr Kul.
@@ -26,7 +26,7 @@ Basata sulla struttura della Battle of Brindol di Red Hand of Doom[web:86][web:1
 ## 2. Fasi della Battaglia (vista d’insieme)
 
 1. **Fase 0 – Notte dei Drow**  
-   - Attacco drow interno con aberrazioni fungine al Tempio di Rethman per rubare un artefatto maligno.  
+   - Attacco drow interno con aberrazioni fungine al Tempio di Rethmar per rubare un artefatto maligno.  
 2. **Fase 1 – Assedio Esterno**  
    - Orda Red Hand: hobgoblin, giganti, draghi, Githyanki e supporto aereo.  
 3. **Fase 2 – Ritualisti Draconici**  
@@ -46,7 +46,7 @@ Ogni fase può essere una “scena” di 1 sessione o più, a tua scelta.
 ### Obiettivo nemico
 
 - Un commando drow + aberrazioni fungine entra **dal sottosuolo** durante la notte, prima dell’assedio, per:
-  - penetrare nelle cripte sotto il Tempio di Rethman,  
+  - penetrare nelle cripte sotto il Tempio di Rethmar,  
   - distruggere/sacrilegiare il tempio,  
   - rubare un **Artefatto Maligno** (cuore di drago nero, reliquia di demonio, ecc.) da consegnare a Madre dei Funghi o alla Red Hand.
 
@@ -92,6 +92,8 @@ Basata sulla struttura di ondate di Brindol (Red Hand of Doom), ma potenziata.[w
 
 I PG possono essere spostati dove serve di più: mura, quartiere tempio, porta principale.
 
+**Tyrgarun (D11 v2)**: parallelamente alle ondate, il drago blu Old (CR 18) è un *hazard* di bombardamento aereo separato — passate di soffio sui bastioni con contromosse quantificate (balliste, gufi Tiri Kitor, missione-esca dei PG). Non è un incontro frontale: a CR 18 in volo è imbattibile per design. Meccaniche dettagliate del set-piece: Lotto C1(d).
+
 ---
 
 ## 5. Fase 2 – Ritualisti Draconici (10 round)
@@ -129,6 +131,8 @@ Se il rituale **riesce**:
 
 - Si passa alla Fase 3 con Avatar + Azarr Kul full power.
 
+**Tyrgarun (D11 v2)**: copertura aerea mobile sui ritualisti — minaccia a orologeria che complica le squadre speciali PG senza diventare uno scontro diretto.
+
 ---
 
 ## 6. Fase 3 – Avatar di Tiamat & Azarr Kul (boss CR 17–18)
@@ -138,9 +142,10 @@ Non usi il Fane fisico, ma un “altare campale” nel cuore della battaglia.[we
 ### Configurazione
 
 - Campo rituale devastato, cerchio di fuoco e ombre, cielo aperto con portale crepitante.  
-- Azarr Kul (mezzo‑drago hobgoblin warpriest di Tiamat, CR 15) +  
+- Azarr Kul (mezzo‑drago hobgoblin warpriest di Tiamat, CR 15), **a terra** — combatte sempre da solo, Tyrgarun NON è sua cavalcatura (D11 v2) +  
   - 2–4 Erinni o Abishai (CR 9–11 ciascuna),  
   - **Avatar di Tiamat**: versione ridotta di Aspect of Tiamat (CR 17 base, modulato per il tuo party).
+  - **Tyrgarun** resta minaccia aerea a orologeria (non ancora affrontabile — vola ancora); se già ucciso/messo in fuga altrove, vedi tabella conseguenze in `PNG/Azarr_Kul/Azarr_Kul.md`.
 
 ### Opzioni di difficoltà
 
@@ -162,7 +167,8 @@ allora puoi **ridurre** un po’ l’Avatar (meno pf, qualche potere limitato) p
 - Obiettivo loro:
   - Eseguire un **rituale di 7 round** per innalzare un campo di energia simile a un Mythal che:
     - protegge la città da ulteriori evocazioni extraplanari,  
-    - indebolisce l’Avatar di Tiamat (es. –2 a tutti i tiri, niente teletrasporti, immunità planar gate). [web:110]
+    - indebolisce l’Avatar di Tiamat (es. –2 a tutti i tiri, niente teletrasporti, immunità planar gate), [web:110]
+    - **inchioda Tyrgarun a terra** (D11 v2, canone P2D-INTEGRAZIONE r.201): niente volo = niente flyby/kiting, CR effettivo scende a ~16-17 — solo ora il drago diventa uccidibile da party+alleati, oppure fugge come nemesi per ARC-10.
 
 ### Obiettivi PG
 
@@ -173,7 +179,7 @@ allora puoi **ridurre** un po’ l’Avatar (meno pf, qualche potere limitato) p
 
 Questo scontro difensivo può essere CR 16–18 a seconda di quanti rinforzi l’Avatar lancia contro i ritualisti.
 
-### Attivazione delle Statue di Rethman
+### Attivazione delle Statue di Rethmar
 
 - Una volta completato il Mythal, gli 8 canalizzano potere nelle grandi statue della città (eroi, santi, re, guardiani), trasformandole in:
 
@@ -195,11 +201,14 @@ Questo è il “terreno epico” che giustifica perché i PG non debbano affront
 - **Druidi‑Orsi (circolo mutaforma)**:  
   - Se Hellas ha completato il suo rituale, un piccolo circolo di druidi mutaforma (alla Beorn/Hobbit) appare in Fase 1–2 come cavalleria d’assalto, demolendo giganti e bestie da guerra.  
 
-- **300 Mercenari Nani** (Hammerfist):  
+- **300 Mercenari Nani** (Dauth, torneo vinto):  
   - Se Tordek ha vinto il torneo e spedito il segnale, questi arrivano come fanteria pesante, stabilizzando i varchi nelle mura e proteggendo quartieri civili.  
 
+- **150 Lance di Re Thorek** (flusso separato, D10):  
+  - Condizionato dagli hook politici (sigillo Maewen + lettera Thorik), NON dalla vittoria al torneo. Si somma ai 300 mercenari fino a un massimo combinato di **450 nani**.
+
 - **Tiri‑Kitor (Starsong Hill)**:  
-  - Cavalleria su civette giganti che domina i cieli contro Githyanki e draghi più piccoli.  
+  - **100 ranger elfici + 20 gufi giganti** (D9 — 1/5 della tribù di ~500 anime, il resto difende Starsong). Cavalleria su civette giganti che domina i cieli contro Githyanki e draghi più piccoli.  
 
 - **Ghostlord**:  
   - Se alleato/neutralizzato, può addirittura inviare qualche leone spettrale contro la **retroguardia** Red Hand, riducendo ulteriori ondate.

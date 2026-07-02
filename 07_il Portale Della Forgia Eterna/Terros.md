@@ -1,5 +1,11 @@
 # 🏔️ Terros Boss Fight — CR Analysis & Recalibration
 
+> **Nota lingua (A8)**: file tecnico in inglese (analisi CR/statblock). Prove
+> 3.5 già normalizzate **CD** (non "DC"). Glossario per il tavolo: Reflex =
+> **Riflessi**, Fortitude = **Tempra**, Will = **Volontà**, Balance =
+> **Equilibrio**, Concentration = **Concentrazione**, Spellcraft = **Sapienza
+> Magica**. Il corpo tecnico resta inglese.
+
 > **Stato (A6)**: *ricalibrazione* del boss del P4 (Terros/Mithral Golem) —
 > ricalibra `PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md` (master).
 > ⚠️ Questo file assume "3 PC + 1 NPC Therysol Support": **sbagliato** (D15 —
@@ -63,7 +69,7 @@
 | **Attack +32** | Over-inflated | SRD Elder Earth (24 HD, STR 29) = +27. To get +32 you need STR 40+ which isn't justified. |
 | **Damage 4d10+16** | Doubled from SRD | SRD Elder = 2d10+11. This doubles the die and ups the STR bonus. |
 | **6 Lair Actions** | Action economy overload | Having Gravity Pulse, Petrification Aura, Earth Mastery, Gravità Inversa, Stalactite Rain, AND Absorb is essentially 6 special powers stacked on top of full attack. This is 5e lair action design bolted onto 3.5 — it breaks action economy. |
-| **Petrification Aura DC 24** | Party-killer without healer | DEX drain → instant statue at DEX 0 = Save-or-die with no Restoration available (Hella absent!). **This ability alone can TPK the party.** |
+| **Petrification Aura CD 24** | Party-killer without healer | DEX drain → instant statue at DEX 0 = Save-or-die with no Restoration available (Hella absent!). **This ability alone can TPK the party.** |
 | **Push +36** | No save escape | STR check +36 automatically pins anyone against walls. No PC can contest this. |
 
 ---
@@ -150,7 +156,7 @@ Dadi Vita:    30d8 + 210 (HP 345)
 Iniziativa:   −1 (DES 8)
 Velocità:     6m (20 ft); Earth Glide 6m (attraverso pietra)
               ** NON può volare — in zero-G si muove spingendosi
-                 da superfici (Move action, DC 10 Balance) **
+                 da superfici (Move action, CD 10 Balance) **
 
 CA:           26 (−2 taglia, +18 armatura naturale), 
               touch 8, flat-footed 26
@@ -223,7 +229,7 @@ ATTACCHI SPECIALI
 
 3. EARTH GLIDE (Ex) — movimento
    Passa attraverso pietra/terra come un pesce nell'acqua.
-   Non lascia tunnel. Move Earth lo stordisce (Fort DC 15).
+   Non lascia tunnel. Move Earth lo stordisce (Fort CD 15).
    * Tattica: Terros entra nell'Altare di mithral, emerge
      alle spalle del caster. Usare Ready Actions per 
      colpirlo quando emerge! *
@@ -396,8 +402,8 @@ The Cristalli Viventi skill challenge rewards (from the COMPLETO version) remain
 | Damage | 4d10+16 | **2d10+10** | SRD Earth Elemental scaling |
 | Fly | 18m perfect | **None** (Earth Glide + push off walls) | SRD: Earth Elementals don't fly |
 | Lair Actions | 6 total | **3 rotating** (1/round at init 20) | Prevents action economy overload |
-| Petrification Aura | DC 24 DEX drain | **REMOVED** | Unrecoverable without Hella's Restoration |
-| Push DC | 36 (impossible) | **25** (hard but possible) | Thorik can contest with STR + Blessing |
+| Petrification Aura | CD 24 DEX drain | **REMOVED** | Unrecoverable without Hella's Restoration |
+| Push CD | 36 (impossible) | **25** (hard but possible) | Thorik can contest with STR + Blessing |
 | Regeneration | 20 HP/round | **15 HP/round** | Still forces tactical play, not unbeatable |
 | Stalactite Rain | 10d6 | **8d6** | Slightly reduced to account for no AoE healing |
 

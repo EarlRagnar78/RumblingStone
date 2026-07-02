@@ -752,7 +752,7 @@ Tramite la runa, Varis contatta Artemis telepaticamente: *"Vedo che hai un Anell
 **Hazard Minori (Opzionali):**
 
 - **Trabocchetti Gravità:** TS Riflessi CD 15 o cadere "su" (1d6 danni, disorientamento)
-- **Rune Magiche:** Arcane check DC 18 disattivare (se fallisce, 2d6 forza magica)
+- **Rune Magiche:** Arcane check CD 18 disattivare (se fallisce, 2d6 forza magica)
 
 **Tempo Attraversamento:** 10 minuti navigazione attenta
 

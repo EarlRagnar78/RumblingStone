@@ -165,7 +165,7 @@ VISTA INGRESSO (PG Guardano Sud) ↓
 - Belkram: Full attack Thorik (Slam +23, 2d6+16 × 2 attacks)
 - Elevation advantage: Belkram +1 AC on dais
 - Yochlol: Support Belkram, prevent flanking
-- Xanathira: Death Attack (Fort DC 19 or paralysis!) on healer/caster
+- Xanathira: Death Attack (Fort CD 19 or paralysis!) on healer/caster
 
 **FASE 4 - RESOLUTION (Round 8+):**
 - Focus Fire: Concentrate on Belkram first (CR 14 boss)

@@ -171,7 +171,7 @@ nell'emozione del ricordo (la cava di lastre può sopraffarre anche un druida).
 
 | Scelta Prova II | Effetto permanente post-resurrezione |
 |---|---|
-| **Scudo (A) + TS superato** | Percezione del dolore altrui: 1/giorno Detect curse/possession/corruption (Spellcraft DC 15, su un bersaglio in contatto fisico) |
+| **Scudo (A) + TS superato** | Percezione del dolore altrui: 1/giorno Detect curse/possession/corruption (Spellcraft CD 15, su un bersaglio in contatto fisico) |
 | **Scudo (A) + TS fallito** | Come sopra, ma funziona solo in luoghi naturali o sacri a Moradin |
 | **Ferita (B) + TS superato** | +2 competenza a Sense Motive vs creature che fingono di stare bene; 1/giorno empatia accelerata (capire stato emotivo vero di una creatura, no prova) |
 | **Ferita (B) + TS fallito** | Come sopra, ma solo sulle creature con cui ha già un legame (alleati conosciuti) |
@@ -266,7 +266,7 @@ quando funzioni?"*
 
 **Prova per Via della Radice:**
 
-- TS Volontà CD 20 + Knowledge (Religion) DC 15 (capire che Moradin approva entrambi i percorsi)
+- TS Volontà CD 20 + Knowledge (Religion) CD 15 (capire che Moradin approva entrambi i percorsi)
 - Se supera entrambe: il voto è sancito — vedi effetti Sezione 7
 - Se supera solo Volontà: il voto è sancito ma senza il bonus Knowledge
 
@@ -521,18 +521,18 @@ in `PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`.
 
 **MARCHIO DELLA VERITADE** (se Prova I superata con verità piena)
 
-- Passiva: la runa sull'avambraccio brilla quando Hella dice una verità ad alta voce — nessun effetto meccanico autonomo, ma i nani con Knowledge (Religion) DC 12 la riconoscono come "segnata dalla Forgia" (+4 competenza Diplomazia con nani praticanti di Moradin)
+- Passiva: la runa sull'avambraccio brilla quando Hella dice una verità ad alta voce — nessun effetto meccanico autonomo, ma i nani con Knowledge (Religion) CD 12 la riconoscono come "segnata dalla Forgia" (+4 competenza Diplomazia con nani praticanti di Moradin)
 - Attiva (1/giorno, azione standard): Hella pronuncia ad alta voce una verità su una creatura entro 9m (es. "questa creatura mente" o "questa creatura soffre") — se la verità è oggettivamente vera, la runa brilla e la creatura fa un TS Volontà CD 17 o è Shaken per 1d4 round; se la verità è falsa o parziale, nessun effetto e la runa non brilla
 
 **PERCEZIONE DEL DOLORE NASCOSTO** (se Prova II Scudo A)
 
 - 1/giorno: contatto fisico (azione standard), Hella percepisce se una creatura è sotto effetto di Charm, Compulsion, possessione, o corruzione attiva. Funziona come Detect Evil ma rileva "dolore nascosto" — non si applica a malevolenza volontaria, solo a coercizione subita
-- Meccanica: Spellcraft DC 15 per interpretare correttamente l'informazione ricevuta
+- Meccanica: Spellcraft CD 15 per interpretare correttamente l'informazione ricevuta
 
 **RADICE SILENZIOSA** (se Prova II Ferita B)
 
 - Passiva: +2 competenza Sense Motive su qualsiasi creatura che Hella abbia già incontrato in una scena precedente
-- 1/giorno: Empatia immediata — capisce lo stato emotivo vero di un alleato conosciuto senza tiro (equivalente a Sense Motive automatico vs DC 0, ma funziona anche se l'alleato mente attivamente)
+- 1/giorno: Empatia immediata — capisce lo stato emotivo vero di un alleato conosciuto senza tiro (equivalente a Sense Motive automatico vs CD 0, ma funziona anche se l'alleato mente attivamente)
 
 **VOTO DELLA GUARDIA** (se Prova III Via Guardia)
 

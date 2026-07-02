@@ -305,6 +305,14 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   condizioni (il corpo tecnico può restare inglese con nota).
 - **Accettazione**: `grep -rn "DC [0-9]"` = 0 nell'arco; le prove al
   tavolo sono leggibili in italiano.
+- **✅ FATTO (2026-07-02, sessione 10)**: **DC → CD** (word-boundary) su tutte
+  le 59 occorrenze (P4-COMPLETO, viaggio v1/v2, Terros, mappe L1/L2,
+  TACTICAL-GRIDS). `grep "DC [0-9]"` = 0. Verificato che ogni "DC" era Classe
+  Difficoltà (anche "DC: Hide 18", "Climb DC +5"). I file di prova rivolti al
+  tavolo (viaggio, P3B, P4, P5) sono già in italiano con nomi di skill 3.5
+  italiani. Per i file tecnici in inglese (Terros, TACTICAL-GRIDS) aggiunto un
+  **glossario italiano** delle prove in testa (Hide=Nascondersi, Spot=
+  Osservare, …), lasciando il corpo tecnico in inglese come consentito.
 
 ### A9. Numerazione fuori ordine: P3B si gioca dopo P4 — applicare D2
 - **Problema**: la sigla "P3B" precede "P4", ma l'ordine di gioco (D2) è
@@ -664,7 +672,7 @@ la checklist qui sotto.
 ### Checklist avanzamento
 
 - [x] A1 · [x] A2 · [x] A3 · [x] A4 · [x] A5 · [x] A6 · [x] A7 ·
-  [ ] A8 · [x] A9 · [x] A10 · [x] A11
+  [x] A8 · [x] A9 · [x] A10 · [x] A11 — **LOTTO A COMPLETO**
 - [x] B2 · [x] B3 · [x] B4 · [ ] B1 · [ ] B5 · [ ] B6 · [ ] B7 ·
   [ ] B8 · [~] B9 — **parziale (2026-07-02)**: Collana ✅ e
   file-risultati ✅; restano Sonjak, schede Belkram/Urialle, collegamenti

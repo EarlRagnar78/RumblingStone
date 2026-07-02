@@ -523,7 +523,7 @@ checklist qui sotto.
   riferimenti del piano stesso ai deliverable futuri B4/B7/C7 e alla
   nota storica del rename RETHMAN→RETHMAR).
 - [x] B1.1 · [x] B1.2 · [x] B1.3 · [x] B1.4 · [x] B1.5 · [x] B2 · [x] B3 ·
-  [ ] B4 · [ ] B5 · [ ] B6 · [ ] B7 —
+  [x] B4 · [ ] B5 · [ ] B6 · [ ] B7 —
   **B1 (Rhest) completo (2026-07-02)**: 5 file FASE portati da scheletro
   (~1–4 KB) a standard Palio (read-aloud, viaggio a esagoni, tabella
   incontri d12, regole subacquee SRD, arena a 3 quote, sinergia artefatti
@@ -542,7 +542,11 @@ checklist qui sotto.
   leoni = anime di Hammerfist); tabella conseguenze a lungo termine per i 3 rami
   della filatteria (restituire/vincolare/distruggere + default ostile) con
   Rethmar D7 / epilogo / hook ARC-10; scala 1,5 m/quadretto esplicitata in MAPPE.
-  Prossimo: B4 (Handouts).
+  **B4 (Handouts) completo (2026-07-02)**: creato `Arco-Post-Hammerfist-HANDOUTS.md`
+  con 6 handout stampabili in testo integrale (lettera Brenna, invito Maewen,
+  mappa in pelle Tempestas, bracket Torneo, volantino Palio a 8 contrade — nota:
+  il piano diceva 7, pre-espansione —, 3 carte-visione di Saraah), ognuno con
+  "quando darlo". Prossimo: B5 (errata 3.5 P2/P3 + boss upscale).
 - [ ] C1 · [ ] C2 · [ ] C3 · [ ] C4 · [ ] C5 · [ ] C6 · [ ] C7 (event deck)
 - [x] Q1 (→D9) · [x] Q2 (→D10) · [x] Q3 (→D11) · [x] Q4 (→D12) ·
   [x] Q5 (→D8) — **tutte le risposte DM acquisite 2026-07-02**

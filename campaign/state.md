@@ -706,4 +706,15 @@ entries — they become campaign history.
               statblock da Armate-UNITA-NUOVE; Karruk/draghi restano
               riservati a Rethmar. HUB §5, SUBQUEST-Thorik §4, INDICE
               aggiornati; zero link rotti operativi residui per gli orfani.
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto C, sessione 18 (C1+C2): contenuto di
+            modulo (sotto-sistemi al tavolo), non stato del mondo. C1: STRUTTURA
+            §9 "Cornice leggera d'assedio" (VP nascosti = "il Fronte" + check di
+            Morale per ondata; 4 ruoli di comando PG; d12 eventi di battaglia;
+            set-piece Tyrgarun D11 v2 a scalini). C2: contatore Morale Cittadino
+            0-10 in PNG/Consiglio_Rethmar. Fix di coerenza residuo A7 (NON nuovo
+            canone: D11 v2 già deciso, §2.2 già allineato): statblock Tyrgarun
+            rinominato tyrgarun-black-adult-cr13.md → tyrgarun-blue-old-cr18.md e
+            riscritto a blue Old CR 18 (era rimasto "black adult CR 13", unica
+            scheda ancora fuori allineamento); aggiornati monster_catalog.yaml,
+            Armate-COMPOSIZIONE-DETTAGLIATA §5, Armate-UNITA-NUOVE/README.
 ```

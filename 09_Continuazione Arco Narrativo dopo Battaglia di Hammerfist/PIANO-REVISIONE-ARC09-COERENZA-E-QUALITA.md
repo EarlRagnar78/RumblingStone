@@ -584,7 +584,22 @@ checklist qui sotto.
   interrogare, emissari Ghostlord). Riusa MISSIONI-BREVI (MB-1…6) e gli
   statblock di Armate-UNITA-NUOVE (tutti verificati esistenti); echi agli
   archi esistenti (Sal, Lorana, Therysol, Collezionista, Zalkatar wildcard).
-- [ ] C1 · [ ] C2 · [ ] C3 · [ ] C4 · [ ] C5 · [ ] C6 · [ ] C7 (event deck)
+- [x] C1 · [x] C2 · [ ] C3 · [ ] C4 · [ ] C5 · [ ] C6 · [ ] C7 (event deck)
+  **C1+C2 (sessione 18) completo (2026-07-02).** **C1**: aggiunta STRUTTURA §9
+  "Cornice leggera d'assedio" — (a) VP → **il Fronte** (tracker nascosto DM) +
+  check di Morale per ondata (1d20+Fronte vs CD 15/20/25); (b) 4 ruoli di comando
+  PG (Comandante/Campione/Fulcro Arcano/Salvatore) con effetti quantificati; (c)
+  tabella d12 eventi di battaglia per fase; (d) **set-piece Tyrgarun D11 v2** a
+  scalini (hazard Fase 1 con 4 contromosse quantificate, clock aereo Fasi 2-3,
+  inchiodato dal Mythal in Fase 4). Coerente col prototipo DAY3-CITY-SIEGE.
+  **Fix di coerenza (residuo A7)**: rinominato statblock
+  `tyrgarun-black-adult-cr13.md` → **`tyrgarun-blue-old-cr18.md`** e riscritto a
+  blue Old CR 18 (profilo aereo + profilo a terra ~16-17); aggiornati i 3
+  riferimenti (monster_catalog.yaml, Armate-COMPOSIZIONE-DETTAGLIATA, UNITA-NUOVE
+  README). **C2**: contatore **Morale Cittadino di Rethmar 0-10** in
+  `PNG/Consiglio_Rethmar/` (tabella eventi→Δ + 3 soglie: 7+ = +150 volontari/+1
+  Fronte, 3- = −1 Fronte/diserzioni, 0 = resa civile), agganciato a Sedute del
+  Consiglio, Riserva di Lorana e Fronte militare. Prossimo: C3+C4.
 - [x] Q1 (→D9) · [x] Q2 (→D10) · [x] Q3 (→D11) · [x] Q4 (→D12) ·
   [x] Q5 (→D8) — **tutte le risposte DM acquisite 2026-07-02**
 

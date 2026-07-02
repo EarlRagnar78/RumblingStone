@@ -214,3 +214,111 @@ Questo è il “terreno epico” che giustifica perché i PG non debbano affront
   - Se alleato/neutralizzato, può addirittura inviare qualche leone spettrale contro la **retroguardia** Red Hand, riducendo ulteriori ondate.
 
 Tutto questo può essere gestito come bonus tattici o “Victory Points” che abbassano/modulano il CR effettivo degli scontri.[web:86][web:115]
+
+---
+
+## 9. Cornice leggera d'assedio (Heroes of Battle ridotto — C1)
+
+> **Lotto C1 (2026-07-02).** Vincolo **D13**: questa cornice è **sfondo lato DM**,
+> non un wargame al tavolo. I giocatori vivono la battaglia tramite le **carte**
+> dell'EVENT-DECK (C7,
+> `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md`); questa sezione è il
+> **motore che il DM tiene nascosto** dietro le carte. Il **prototipo giocato** di
+> tutto questo è già l'assedio di Dauth
+> (`Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DAY3-CITY-SIEGE.md`): a Rethmar si usa
+> lo stesso schema, amplificato sui 3 giorni (Day 40-42).
+
+### 9.1 — (a) Victory Points nascosti → check di Morale per ondata
+
+I VP della matrice ESITI-CONSEGUENZE §2 **restano**, ma diventano un **tracker del
+DM** chiamato **"il Fronte"** (come a Dauth). **I giocatori non lo vedono mai**:
+sentono solo le conseguenze narrate ("le mura a nord cedono", "il morale crolla").
+
+- Il **Fronte** parte al valore-base dello scenario (ARMATE-SYNC §3): scenario
+  worst = 2, baseline = 3, medio = 4, ottimale = 6, leggendario = 7. Ogni fattore
+  della matrice ESITI §2 lo muove di ±1/±2/±3 come lì indicato.
+- **Check di Morale per ondata**: quando un'ondata di Fase 1 colpisce un settore,
+  i difensori tirano **1d20 + Fronte** contro **CD 15** (ondata leggera) / **20**
+  (pesante) / **25** (ondata drago o breccia). **Fallimento = un settore cede**
+  (narrato: breccia, fuga, quartiere perso) e il Fronte scende di 1.
+- I **ruoli di comando PG** (§9.2) e il **Morale Cittadino** (`PNG/Consiglio_Rethmar/`
+  §"Morale Cittadino di Rethmar") danno bonus a questo check.
+- **Effetto meccanico continuo** (non solo a fine battaglia): il Fronte corrente
+  è il **+X** che modula il CR effettivo delle carte EVENT-DECK e l'esito
+  off-screen delle crisi non scelte (EVENT-DECK §5). Fronte alto = ondate più
+  leggere, alleati più efficaci; Fronte basso = ondate più cattive.
+
+### 9.2 — (b) Ruoli di comando PG (azioni di scena, 10 minuti in-world)
+
+Un PG può **spendere la propria "campana"** (finestra di scena, 2-3 per giorno)
+in un **ruolo di comando** invece di giocare una carta EVENT-DECK. Effetto
+quantificato, mai un wargame:
+
+| Ruolo | PG tipico | Effetto meccanico |
+|---|---|---|
+| **Comandante** | Thorik / Tordek | +2 al check di Morale di **un** settore per l'ondata corrente (Thorik, Custode Eterno con titolo di Re Thorek, dà +3) |
+| **Campione** | Tordek / Thorik | Duello pubblico contro un capo nemico (Wyrmlord Karruk CR 10, capitano hobgoblin CR 8): se vinto, l'ondata di quel settore perde 1 grado di CD (pesante→leggera) e +1 Fronte |
+| **Fulcro Arcano** | Artemis | Sbarramento arcano/utility: **nega una passata di soffio** di Tyrgarun o di un Razorfiend a un settore (vedi §9.4), o dissolve un focus/evocazione |
+| **Salvatore** | Hella | Triage/evacuazione di massa: annulla per una campana il malus di un settore civile in crisi (ospedale, rifugiati) e stabilizza il Morale Cittadino |
+
+### 9.3 — (c) Tabella d12 eventi di battaglia (per fase)
+
+Tira 1d12 all'inizio di ogni **campana** per un evento di colore/pressione da
+intrecciare con le carte. (Molti sono anche **carte S1/S2 dell'EVENT-DECK**: se
+esce un numero che corrisponde a una carta già in gioco, promuovilo a carta.)
+
+| d12 | Fase 0-1 | Fase 2-4 |
+|---|---|---|
+| 1 | Breccia improvvisa in un settore (check Morale CD 20) | Ondata di erinni/abishai sui ritualisti-Circolo |
+| 2 | Passata di soffio di Tyrgarun (§9.4) | Tyrgarun tenta il cerchio del Mythal (§9.4/§7) |
+| 3 | Cecchino/assassino punta a un comandante (Kaal, Brenna, Lorana) | Azarr Kul lancia *blade barrier* sulla squadra PG |
+| 4 | Incendio in un quartiere (rifugiati, -1 Morale Cittadino) | Crollo strutturale (statua/campanile) — hazard mappa |
+| 5 | Atto d'eroismo PNG (Lorana/Sorvane): +1 Fronte narrato | Un Arcimago del Circolo cade: -1 concentrazione Mythal |
+| 6 | Convoglio-riserva di Lorana sotto attacco (S2 EVENT-DECK) | Ondata di rinforzi extraplanari (se Mythal non attivo) |
+| 7 | Duello richiesto da un Wyrmlord (Campione, §9.2) | Avatar usa Aura di Terrore (Will CD 26 area) |
+| 8 | Sabotaggio interno drow (poterna/polveriera) | Statue-Golem si attivano male (1 round di ritardo) |
+| 9 | Gli Esperimenti Fungini sfondano un muro (Ondata 4) | Focus rituale sopravvissuto rilascia backlash |
+| 10 | Rifugiati in fuga bloccano una via (scelta morale) | Karruk irrompe con la guardia del Teschio Nero |
+| 11 | Un settore alleato regge oltre le attese: +1 Fronte | Un PG-focus del Mythal vacilla (TS aggiuntivo §7) |
+| 12 | Momento di quiete: riposo breve possibile | Momento di quiete: recupero risorse limitato |
+
+### 9.4 — (d) Set-piece TYRGARUN (D11 v2) — il terrore dei cieli
+
+> Benchmark: **Abithriax sulle mura di Brindol** (RHoD Parte 4). Statblock
+> completo (profilo aereo CR 18 + profilo a terra CR ~16-17):
+> `00_Red Hand Of Doom/Armate-UNITA-NUOVE/tyrgarun-blue-old-cr18.md`.
+
+Tyrgarun **non è un incontro a iniziativa** finché il Mythal non lo inchioda: a
+CR 18 in volo con Flyby è imbattibile per design. Si gioca a **scalini**.
+
+**FASE 1 — Hazard di bombardamento (contromosse quantificate).** Ogni 1d4 round
+Tyrgarun fa una **passata di soffio** su un settore: **linea 30 m, 20d8
+elettricità, Riflessi CD 29 per metà** (serventi e milizia in area muoiono se non
+in copertura). I PG **non lo abbattono** — lo **negano**, con contromosse che il
+DM tratta come check, non come combattimento:
+
+| Contromossa | Meccanica | Effetto se riuscita |
+|---|---|---|
+| **Nidi di balliste** (2-4 sui bastioni) | Artiglieria: attacco a distanza +8, danno 4d6, CA di Tyrgarun 35 (contatto 8 in avvicinamento); ogni nido ha CA 5, 60 pf, RD 5 | Una passata deviata (Tyrgarun sale fuori portata 1d4 round) |
+| **Squadroni di gufi giganti Tiri Kitor** (se alleanza D9) | 20 gufi = "asset" astratto; ogni round negano **1 passata** ingaggiandolo in volo | Tyrgarun non può bombardare quel settore |
+| **Missione-esca dei PG** | I PG attirano Tyrgarun con un bersaglio ghiotto (l'Artefatto Maligno, un focus arcano di Artemis): Raggirare/Conoscenze CD 22 | Tyrgarun spreca 1d4 round su un'esca; nessun danno ai settori |
+| **Fulcro Arcano** (§9.2, Artemis) | Sbarramento di *eldritch blast*/utility | Nega **1 passata** a un settore |
+
+Se le contromosse falliscono ripetutamente (2+ passate a segno di fila), un
+settore **cede** (-1 Fronte, breccia → carta EVENT-DECK).
+
+**FASI 2-3 — Copertura aerea a orologeria.** Tyrgarun **protegge i ritualisti**
+(Fase 2) e vola sopra il campo boss (Fase 3) come **clock**: ogni round che i PG
+impiegano contro i ritualisti/Azarr Kul, tira 1d6 — con **1-2** Tyrgarun fa una
+passata sulla squadra speciale (soffio, poi risale). Non atterra. È la ragione
+per cui la squadra PG **ha fretta**: più tempo passa, più passate subisce.
+
+**FASE 4 — Il Mythal lo inchioda a terra** (canone §7 / P2D-INTEGRAZIONE r.201).
+Completato il Mythal, Tyrgarun **perde il volo** entro l'area: profilo **a terra
+CR ~16-17** (niente Flyby/kiting, -2 tiri/TS da Mythal). **Solo ora** è
+uccidibile da party APL 14 + alleati + Statue-Golem. Alternativa: se ridotto
+sotto 80 pf **prima** del Mythal, **fugge** e diventa **nemesi per ARC-10**.
+
+**Accettazione C1**: il DM risolve Fase 1 senza improvvisare; i VP (il Fronte)
+hanno effetto meccanico continuo, non solo a fine battaglia; Tyrgarun ha uno
+script a scalini con statblock a terra pronto.

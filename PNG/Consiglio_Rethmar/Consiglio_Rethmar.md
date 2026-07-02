@@ -188,3 +188,59 @@ Il Consiglio non è un monolite. Quando il party entra in seduta:
 - **Halveth è la priorità silenziosa.** I PG probabilmente non capiscono quanto sia pericoloso finché la Fase 0 non va storta. Usatelo come un promemoria retroattivo: *"Se aveste tolto Halveth prima..."*
 - **Il Consiglio è il "dungeonmaster politico" pre-Rethmar** — mentre Azarr Kul è il dungeon master militare. Sono due campagne parallele che si risolvono nello stesso momento.
 - **La risoluzione più soddisfacente**: Kaal che durante la Fase 3, mentre la battaglia è al culmine, entra nella stanza del comando con un foglio di proiezioni aggiornate e dice: *"I vostri numeri erano migliori dei miei. Cosa vi serve?"* — e poi coordina l'evacuazione civile con la stessa precisione con cui aveva pianificato la resa.
+
+---
+
+## MORALE CITTADINO DI RETHMAR — il polso della popolazione (C2)
+
+> **Lotto C2 (2026-07-02).** Benchmark: *Curse of the Crimson Throne* (morale
+> urbano). Il Consiglio è la **volontà politica**; questo è la **volontà della
+> gente comune** — miliziani, artigiani, rifugiati. È un contatore **separato**
+> dal "Fronte" militare (STRUTTURA §9.1, tracker nascosto del DM): il **Morale
+> Cittadino alimenta il Fronte** alle soglie sotto. A differenza del Fronte, il
+> Morale Cittadino **si può mostrare** ai giocatori come "temperatura della città"
+> narrata (canti sulle mura vs saccheggi, code ai templi vs fughe dalle porte).
+
+### Contatore
+
+**Morale Cittadino: 0–10.** Parte a **5** (città sotto minaccia ma non ancora
+assediata, Day 30). Il DM lo aggiorna a ogni seduta del Consiglio e a ogni
+campana della battaglia.
+
+### Eventi che lo muovono
+
+| Evento | Δ Morale |
+|---|---|
+| I PG mostrano prova dei **Custodi Eterni** di Re Thorek al Consiglio | +2 |
+| **Difesa approvata** in Seduta 2 (Consiglio non si arrende) | +2 |
+| **Resa approvata** / stallo pro-resa in Seduta 2 | −2 |
+| **Halveth smascherato** pubblicamente | +1 |
+| **Lorana integrata** ufficialmente + riserva rifugiati schierata | +1 |
+| Arrivo dei **300 mercenari nani** e/o **150 lance** (visti dalla gente) | +1 ciascuno |
+| Notizia della **caduta di Talar/Terrelton** (rifugiati che raccontano) | −1 |
+| **Vittoria PG** in una carta EVENT-DECK visibile ai civili (breccia richiusa, drago scacciato) | +1 |
+| **Esecuzione/cattura pubblica** di un traditore (Halveth) o di un capo nemico | +1 |
+| **Incendio di un quartiere** / passata di Tyrgarun sui civili (STRUTTURA §9.4) | −1 |
+| **Epidemia da spore** o cisterne avvelenate non risolte (eco DAY3-CITY-SIEGE Carta C) | −1 |
+| Un **PNG-simbolo** cade in pubblico (Brenna, Lorana, un Arcimago del Circolo) | −2 |
+
+### Soglie ed effetti meccanici
+
+| Morale | Stato | Effetto meccanico |
+|---|---|---|
+| **7+** | La città crede nella vittoria | **+150 miliziani volontari** (fanteria civile d'emergenza, si somma alla Riserva di Lorana e ai difensori ARMATE-SYNC §2.4); **+1 al Fronte**; i check di Morale per ondata (STRUTTURA §9.1) sono a **+1** |
+| **4–6** | Tesa ma tiene | Nessun modificatore; la città funziona ma senza slanci |
+| **3 o meno** | Diserzioni e panico | **−1 al Fronte**; **−1 ai check di Morale** di Fase 1; i miliziani volontari si disperdono; le vie di fuga si intasano (hazard mappa nelle carte urbane) |
+| **0** | Resa civile anticipata | La popolazione **apre trattative da sé** a prescindere dal Consiglio: un quartiere issa bandiera bianca → **−2 Fronte** e una carta EVENT-DECK "crisi civile" diventa obbligatoria (i PG devono scegliere se reprimere, negoziare o abbandonare il quartiere) |
+
+### Agganci
+
+- **Sedute del Consiglio**: gli esiti di Seduta 1/2/3 (sopra) sono i principali
+  motori d'apertura del Morale prima della battaglia.
+- **Riserva di Lorana** (`PNG/Lorana/Lorana.md`): a Morale 7+ i 150 volontari si
+  **aggiungono** ai rifugiati che Lorana può mobilitare (state.md §7, thread
+  Lorana); a Morale 3- una parte dei rifugiati **fugge** invece di combattere.
+- **Fronte militare** (STRUTTURA §9.1): il Morale Cittadino è uno degli input del
+  Fronte, non un doppione — il Fronte misura la **tenuta militare**, il Morale la
+  **volontà civile**. Possono divergere (mura solide, popolo in panico, o
+  viceversa): quando divergono, il DM ne fa **tensione narrata**.

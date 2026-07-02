@@ -132,7 +132,7 @@
 | **Abithriax** | Red Adult | 15 | `Monsters_Sheets/png_La_mano_rossa_del_destino/Arbitrax Drago Rosso.htm` | Vivo, Rethmar Fase 1 |
 | **Regiarix** | Black Young Adult | 10 | `09_.../Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | A rischio (P2 Rhest) |
 | **Ozyrrandion** | Blue Adult (AP) / green cr8 variant | 8-14 | `Monsters_Sheets/png_La_mano_rossa_del_destino/Ozyrrandion drago Verde cr8.pcg` + `green dragon.htm` | A rischio (P2A Torre) |
-| **Tyrgarun** | Black Adult (riserva) | 13 | [ACCEPTED] `Armate-UNITA-NUOVE/tyrgarun-black-adult-cr13.md` | Vivo, aerial reserve |
+| **Tyrgarun** | **Blue Old (terrore dei cieli, D11 v2)** | **18** | [ACCEPTED] `Armate-UNITA-NUOVE/tyrgarun-blue-old-cr18.md` | Vivo; hazard aereo Fasi 1-3, inchiodato dal Mythal in Fase 4 (CR eff. ~16-17) — NON cavalcatura di Azarr Kul |
 | **Fauci di Palude** | Black Adult avanzato | 15 | `08_…/00_Schede_dei_Personaggi_Unità_…md` §1 | ❌ Morto Day 19 |
 | Draon-hamann (cr8) | Red Young (escort) | 8 | `Monsters_Sheets/png_La_mano_rossa_del_destino/Draon-hamann-cr8.pcg` | Gith mount |
 | Green dragon (generic) | — | 8 | `Monsters_Sheets/png_La_mano_rossa_del_destino/green dragon.htm` | Swap pool |

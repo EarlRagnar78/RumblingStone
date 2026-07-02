@@ -168,6 +168,14 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
 - **Accettazione**: chi apre P6 capisce subito cosa è vivo (battaglia
   antica) e cosa è storia di progetto (1372); un solo profilo di Fauci per
   il 1372 nel repo; zero riferimenti attivi a "Parte 7"/"fine campagna".
+- **✅ FATTO (2026-07-02, sessione 7)**: banner DEPRECATED sulla sezione
+  "ANNO 1372" di P6 (r.605+), con puntatore all'ARC-08 (Fauci GS 15, esiti
+  aperti) e all'elenco di ciò che sopravvive. **Estrazioni marcate**: Incontro
+  3B (arrivo al Cuore della Montagna) = fonte viva per ARC-08 B2/E6; uovo di
+  Fauci = hook vivo → C3; canto Aegis Fang → B4. Profilo Fauci "CR 12 vs Party
+  14" marcato SUPERATO inline (vale GS 15 ARC-08 + carry-over B4). Neutralizzati
+  i due puntatori attivi a "Parte 7" in CORREZIONE-Boss-Fauci (→ epilogo
+  ARC-08/09). Gli altri "Parte 7" restano solo dentro la sezione deprecata.
 
 ### A4. Gemme della Corona: attivazioni e cucitura del ritorno — applicare D5+D16
 - **Problema**: `PortaleForgia-P2-REVISED-Corretta-PARTE1.md` r.1007
@@ -623,7 +631,7 @@ la checklist qui sotto.
 
 ### Checklist avanzamento
 
-- [x] A1 · [x] A2 · [ ] A3 · [ ] A4 · [ ] A5 · [x] A6 · [x] A7 ·
+- [x] A1 · [x] A2 · [x] A3 · [ ] A4 · [ ] A5 · [x] A6 · [x] A7 ·
   [ ] A8 · [x] A9 · [ ] A10 · [x] A11
 - [x] B2 · [x] B3 · [x] B4 · [ ] B1 · [ ] B5 · [ ] B6 · [ ] B7 ·
   [ ] B8 · [~] B9 — **parziale (2026-07-02)**: Collana ✅ e

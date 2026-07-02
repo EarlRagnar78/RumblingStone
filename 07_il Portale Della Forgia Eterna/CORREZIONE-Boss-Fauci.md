@@ -331,7 +331,7 @@
 - [ ] Gorthak ritirata (se vivo)  
 - [ ] Celebrazione nani (mura tenute!)  
 - [ ] Re Thorek XIII discorso riconoscimento  
-- [ ] Setup Parte 7: Epilogo ricompense  
+- [ ] Epilogo/ricompense: ora **ARC-08/ARC-09** (la "Parte 7" non esiste — A3)  
 
 ---
 
@@ -346,7 +346,7 @@
 - **Scaglie Drago:** 10.000 mo (materiale armature)  
 - **Sangue Acido:** 5.000 mo (alchemico)  
 - **Tesoro Orda:** 5.000 mo vari  
-- **TOTALE:** 20.000 mo + ricompensa Re Thorek (Parte 7: +50.000 mo!)  
+- **TOTALE:** 20.000 mo + ricompensa Re Thorek (epilogo ARC-08/09, non "Parte 7")  
 
 ### **NARRATIVO**
 - **Leggenda Completata:** *"I Rumbling Stones sconfissero Fauci di Palude - proprio come predetto Anno -1000!"*  

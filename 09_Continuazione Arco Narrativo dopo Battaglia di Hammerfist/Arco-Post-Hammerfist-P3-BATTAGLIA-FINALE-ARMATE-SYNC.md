@@ -1,6 +1,6 @@
 # Battaglia Finale di Rethmar — Sincronizzazione Armate (v2)
 
-**Scopo**: allineare i numeri dell'Orda della Mano Rossa che raggiungono Rethmar al **Day 40** del March Clock ufficiale RHoD (adattato Channath Vale / Dalelands, 1372 DR) con la struttura di battaglia in `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md`, i calcoli di `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.md` v2 e il cronoprogramma di `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` v2.
+**Scopo**: allineare i numeri dell'Orda della Mano Rossa che raggiungono Rethmar al **Day 42** del March Clock ufficiale RHoD (adattato Channath Vale / Dalelands, 1372 DR; Day 40 = Notte dei Drow/Fase 0, Day 41 = orda in vista, Day 42 = arrivo + Fasi 1-4) con la struttura di battaglia in `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md`, i calcoli di `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.md` v2 e il cronoprogramma di `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` v2.
 
 > **Regola dual-clock**: *March Clock* (Day 1→40, AP ufficiale, deterministico) governa **quando** arriva l'Orda; *Ritual Clock* Azarr Kul (`/18`) governa **se** l'Avatar di Tiamat si manifesta. I due procedono **indipendenti** salvo interventi PG esplicitamente registrati.
 
@@ -10,18 +10,18 @@
 
 - **Baseline Orda al Day 1 (Vraath Keep)**: ~**10.000** combattenti (6.600 core hobgoblin + 430 supporto + 2.910 alleati razziali + 5 draghi nominati + 8 Razorfiend Draconic Spawn sui Wyrmlord upscalati).
 - **Sync point Day 19**: caduta di **Terrelton** (equivalente Channath Vale di Talar / terza città AP) **coincide** con la fine della Battaglia di Hammerfist (Arc-08). Il giocatore percepisce: *"mentre voi vincevate a Hammerfist, loro prendevano Terrelton"*.
-- **Arrivo a Rethmar (Day 40)**: ~**5.800–7.200** effettivi a seconda degli interventi PG sul March Clock (vedi §3).
+- **Arrivo a Rethmar (Day 42)**: ~**5.800–7.200** effettivi a seconda degli interventi PG sul March Clock (vedi §3).
 - **PG non sono a Skull Gorge**: il ponte non viene sabotato → nessun ritardo Day 5 strutturale. L'alleanza coi giganti **non** avviene (Wyrmlord Koth non neutralizzato PG-side) → i giganti marciano con l'Orda.
 - **Ghostlord**: se neutralizzato/alleato PG entro Day ~28, l'Orda riceve **solo un piccolo distaccamento** di non-morti (non l'esercito completo): ~200-400 non-morti minori invece di ~1.000.
 - **La battaglia è perduta senza i PG.** I numeri baseline rendono Rethmar indifendibile con la sola guarnigione cittadina + Lions of Brindol locali; le alleanze PG (Tiri-Kitor, mercenari nani di Hammerfist, druidi di Hellas, Circolo degli Otto, Torre Invisibile Artemis, Ghostlord) sono **l'unico** vettore di vittoria.
 
 ---
 
-## 2. Composizione Orda in Arrivo a Rethmar (Day 40)
+## 2. Composizione Orda in Arrivo a Rethmar (Day 42)
 
 Riferimento dettagliato: `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.md` §2.1-§2.4.
 
-| Blocco | Baseline Day 1 | Perdite attese Day 1→40 | Arrivo Day 40 (baseline) |
+| Blocco | Baseline Day 1 | Perdite attese Day 1→42 | Arrivo Day 42 (baseline) |
 |---|---:|---:|---:|
 | **Nucleo Red Hand** (hobgoblin Fighter/Warrior, goblin, orchi, worg riders) | 6.600 | 20–30% | 4.600–5.300 |
 | **Supporto** (giganti delle colline, ogre, ettin, manticore, wyvern, hell hound, chimera, war adepts, blue, warpriest Tiamat) | 430 | 15–25% | 320–370 |
@@ -85,7 +85,7 @@ Riferimento struttura: `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTU
 - **Non conteggiata** nell'Orda principale: commando drow (~15-25 unità) + 1 Aberrazione Fungina Alfa + 4 Drow Fungal Minions + 1 High Priestess.
 - **Se Sabotaggio Drow Arc-09/P3 eseguito**: ridurre a 5-8 drow, rimuovere Alfa.
 
-### Fase 1 — Assedio Esterno (Day 40, alba → tramonto)
+### Fase 1 — Assedio Esterno (Day 42, alba → tramonto)
 
 Compie **~60%** dell'Orda presente. Distribuzione tipica (scenario C):
 

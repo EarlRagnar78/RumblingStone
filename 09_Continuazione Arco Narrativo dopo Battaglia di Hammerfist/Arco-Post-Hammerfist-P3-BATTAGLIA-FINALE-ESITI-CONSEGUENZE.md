@@ -284,7 +284,7 @@ Possibile nuovo nemico:
 
 - Red Hand rimane formidabile:
   - Stabilisce basi permanenti.  
-  - Inizia a costruire un **Fane di Tiamat**.  
+  - **Rifortifica il Fane di Tiamat nel Shaar** (esiste già dal Day 1, vedi `campaign/state.md` §2.1) e vi erige un avamposto avanzato più vicino a Rethmar.  
   - Inizia reclutamento/preparazione per **seconda invasione** (2–3 anni dopo).  
   - Possibili alleanze con altri nemici (Madre dei Funghi, Githyanki, esterni).
 

@@ -9,7 +9,7 @@ Basata sulla struttura della Battle of Brindol di Red Hand of Doom[web:86][web:1
 
 - Livello atteso PG: 13–15.  
 - CR complessivo: 16–18, spezzato in **ondate e sotto‑missioni simultanee**.  
-- **Forza Orda in arrivo (Day 40 March Clock)**: ~5.800–7.400 effettivi su baseline ~10.000, modulato dagli hook Arc-09. Vedi `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md` §3 per i 5 scenari (worst/baseline/medio/ottimale/leggendario) e §4 per la composizione per fase.
+- **Forza Orda in arrivo (Day 42 March Clock)**: ~5.800–7.400 effettivi su baseline ~10.000, modulato dagli hook Arc-09. Vedi `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md` §3 per i 5 scenari (worst/baseline/medio/ottimale/leggendario) e §4 per la composizione per fase.
 - **Sync point Day 19**: Terrelton cade = Battaglia di Hammerfist finisce (canonico, locked).
 - **Forza aerea Orda**: 5 draghi nominati (Abithriax, Regiarix se vivo, Ozyrrandion, Tyrgarun, Fauci di Palude) + 8 Razorfiend Draconic Spawn sui Wyrmlord upscalati.
 - **Compagnia del Teschio Nero**: composizione canonica AP, riserva élite di Azarr Kul.

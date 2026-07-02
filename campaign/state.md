@@ -213,7 +213,7 @@ the listed consequence triggers.
 | Wyrmlord Saarvith + Regiarix | Lake Rhest ruins | Rebuild dragonrider corps from black dragon spawn | 3/8 | Rhest becomes a fortified war camp; CR +1 to assault |
 | Xal'thor (Illithid Coordinator, psionic) | En route with an Illithid invasion force (psionic thralls, larvae, a small core of dominated Githyanki — NOT the free Githyanki dragon-rider force led by Vaereth, which is a separate and hostile faction) | Day 3 fixed assault on the Dauth Tournament to seize Tordek's **Bracieri Gemelli** (planar keys to the Eternal Forge); does NOT target the Orbe delle Otto Porte | Fixed: triggers Day 3 of Tournament regardless | Tournament becomes combat encounter |
 | Sethrax il Velato (Illithid emissary, Zalkatar's conclave) | Dauth — infiltrated as tournament finalist "Kethran Mano di Pietra" | Extract a "Seme di Porta" from the Orbe delle Otto Porte during the Tournament's peak resonance, deliver it to Zalkatar at the Invisible Tower | Sync to Tournament (Day 1 = arrival; Day 2 = entered as finalist; Day 3 Round 7 = forced unmasking by Xal'thor's portal) | Sethrax flees to Invisible Tower with the seed → Zalkatar gains +2 effective CR + new orb-derived Mind Blast in P2A finale (Artemis's quest) |
-| Azarr Kul (High Wyrmlord) | With main horde, marching | Reach Rethmar in 18 in-world days | 9/18 days | Siege of Rethmar begins |
+| Azarr Kul (High Wyrmlord) — **Ritual Clock, see §2.0** (NOT the March Clock; the horde's physical approach is tracked separately in §2.1, currently Day 19 of 42) | Fane of Tiamat (Shaar) | Ritual sacrifices/planar conjunctions to summon the Avatar of Tiamat during the Rethmar siege (Day 40-42, Phase 2). Advances only on explicit triggers: +1 per Warpriest élite mass sacrifice (Day 35-38), +2 if Giant Wave ×1 breaches the walls (Phase 1), +3 if Giant Wave ×2 breaches (Phase 3) — see `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` §4b | 9/18 | Avatar of Tiamat manifests over Rethmar during Phase 2's 10-round ritual (D8) |
 | Conte Valerius (manipulator) | Capital city | Legalize horde funding via "patriotic emergency" loans | 2/8 | Party loses access to legitimate guild merchants |
 
 ---
@@ -578,4 +578,18 @@ entries — they become campaign history.
             "Rethman" → "Rethmar" (D2) across all P3 files; renamed
             Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAN-STRUTTURA.md
             → ...-RETHMAR-STRUTTURA.md and updated all references.
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto A, sessione 2 (A2+A10): clock
+            coherence, no canon change (D6 already won via state.md §2,
+            propagated to files that still disagreed). "Day 38/40"
+            arrival-of-horde references → Day 42 in HOOKS-INTEGRATION-
+            MASTER §1.1/§6.1, P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA r.12,
+            ARMATE-SYNC §1/§2/§4-Fase1, Armate-SINCRONIZZAZIONE-CAMPAGNA
+            §4b (Fase 1-3 all land on Day 42 per D13's compressed 3-day
+            rhythm), DM-QUICKSTART-ARC09. A10: ESITI-CONSEGUENZE §6
+            reworded ("costruire un Fane" → "rifortifica il Fane nel
+            Shaar + avamposto avanzato", since the Fane already exists
+            per §2.1 Day 1). §3 Azarr Kul row relabeled as the Ritual
+            Clock (was ambiguously worded as a march countdown) with
+            explicit advance triggers cross-referenced to Armate-
+            SINCRONIZZAZIONE-CAMPAGNA §4b.
 ```

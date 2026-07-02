@@ -522,6 +522,14 @@ checklist qui sotto.
   `Arco-*.md` citato → **zero link rotti operativi** (restano solo i
   riferimenti del piano stesso ai deliverable futuri B4/B7/C7 e alla
   nota storica del rename RETHMAN→RETHMAR).
+  **Aggiornamento (2026-07-02) — orfani sotto-quest scritti.** I 3
+  riferimenti orfani sono ora **file autonomi a standard Palio**, non più
+  solo ripuntati: `...DAUTH-SUBQUEST-Artemis.md` (Beriah / culto della
+  Maschera), `...DAUTH-SUBQUEST-Hella.md` (boschetto morente / Spora-Madre
+  di Sonjak), `...DAUTH-DAY3-CITY-SIEGE.md` (assedio Vanguard di Dauth,
+  carte-crisi D13 — prototipo dell'EVENT-DECK C7). HUB §5, SUBQUEST-Thorik
+  §4, INDICE e changelog di state.md allineati; nessun bonus in conflitto
+  con gli hook sorgente (le sub-quest ne sono la *sorgente giocata*).
 - [x] B1.1 · [x] B1.2 · [x] B1.3 · [x] B1.4 · [x] B1.5 · [x] B2 · [x] B3 ·
   [x] B4 · [ ] B5 · [ ] B6 · [ ] B7 —
   **B1 (Rhest) completo (2026-07-02)**: 5 file FASE portati da scheletro

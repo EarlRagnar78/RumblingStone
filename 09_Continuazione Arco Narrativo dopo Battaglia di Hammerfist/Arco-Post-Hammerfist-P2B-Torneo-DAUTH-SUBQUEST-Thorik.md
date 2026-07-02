@@ -61,8 +61,10 @@ su ordine esplicito.
 
 ## 4. Il Giorno 3: dove si schierano le lance
 
-> Questa sezione assorbe il vecchio riferimento a un file "DAY3-CITY-SIEGE" mai
-> scritto: la sorte delle 150 lance al Giorno 3 vive **qui**.
+> Il riferimento `DAY3-CITY-SIEGE` è ora un modulo autonomo →
+> `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DAY3-CITY-SIEGE.md` (assedio intero,
+> carte-crisi D13). **Qui** resta la sorte specifica delle **150 lance**; per il
+> settore su cui si schierano e la sua carta giocabile vedi quel file, **Carta D**.
 
 Al Giorno 3 (Day 32), mentre in arena esplode l'invasione Illithid + l'incursione
 Githyanki (vedi PARTE3), un **distaccamento Vanguard** della Mano Rossa preme

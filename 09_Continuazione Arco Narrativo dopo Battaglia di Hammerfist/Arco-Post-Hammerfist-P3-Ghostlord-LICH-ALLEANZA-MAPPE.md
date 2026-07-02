@@ -5,6 +5,10 @@ Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-MAPPE.md
 
 (D&D 3.5)
 
+> **Scala**: 1 quadretto = **1,5 m** (convenzione dei file `*-MAPPE*`, §0.6 del
+> `PIANO-REVISIONE-ARC09`). Le griglie qui sotto sono in quadretti: es. il Leone
+> di Pietra ~20×10 quadretti = ~30×15 m; la Sala del Trono 20×20 = ~30×30 m.
+
 ## 1. Esterno – Thornwaste e Leone di Pietra
 
 - Griglia: 40 × 40.  

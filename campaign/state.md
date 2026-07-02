@@ -1041,4 +1041,25 @@ entries — they become campaign history.
             ancora da produrre (B3/B4/B5/C1-C4/A12), nota
             branch-per-group. Riempie il buco di numerazione 00_ (dopo
             A9) col deliverable previsto, senza file riempitivi.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto B, sessione 12 (B5): verifica
+            meccanica 3.5, correzioni in place + nuovo file registro.
+            Creato `ERRATA-ARC08-35-Verification.md`. Correzioni
+            applicate in `ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md`:
+            (1) Cavaliere Hobgoblin (Guerriero 8/Guardia Nera 2) —
+            Punire il Bene "2/giorno … +10 danni" → **1/giorno, +2
+            danni** (il bonus è il livello di Guardia Nera, non il
+            livello personaggio; 2/giorno solo dal 5°); Aura di
+            Disperazione RIMOSSA (si ottiene al 3° liv GN) e sostituita
+            con Attacco Furtivo +1d6 (feature reale del 2°); (2) Fauci
+            di Palude — "Soffio a Cono 1/giorno" flaggato **house-rule**
+            (i draghi neri SRD hanno solo il soffio in linea; mantenuto
+            per la scena della picchiata, alternativa SRD indicata). I
+            4 pregen verificati e dichiarati stampabili (nessun
+            5e-ismo, math coerente, tolleranze [INFERRED] minori). Il
+            sistema di massa AU/DU/PFU/Morale verificato compatibile
+            con l'action economy 3.5. Gear di Tordek già coerente con
+            D17 (unica menzione in ARC-08 è nel ponte B2). Non
+            modificati gli statblock estesi dei PNG maggiori nella
+            Guida DM (fuori dal campione B5; li coprono B3 + eventuale
+            passata dedicata).
 ```

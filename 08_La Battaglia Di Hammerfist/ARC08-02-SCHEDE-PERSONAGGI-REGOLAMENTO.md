@@ -81,7 +81,7 @@
 
 **Attacchi Speciali:**
 *   **Soffio (Sop):** Linea di 24m di acido, 1/1d4 round. Danno 14d4 acido, TS Riflessi CD 29 dimezza.
-*   **Soffio a Cono (Str):** 1/giorno, può spendere un'azione di round completo per preparare un soffio a cono di 18m.
+*   **Soffio a Cono (Str):** 1/giorno, può spendere un'azione di round completo per preparare un soffio a cono di 18m. ⚠️ *Errata B5 — HOUSE-RULE*: i draghi neri SRD hanno **solo il soffio in linea**; il cono non è 3.5 standard. Mantenuto come house-rule per la scena della picchiata (Sessione 2); se il DM preferisce l'aderenza SRD, rimuovere e usare solo il soffio in linea.
 *   **Presenza Terrificante (Str):** Raggio 90m, TS Volontà CD 25 o spaventato/scosso.
 *   **Corrompere Acqua (Mag):** A volontà.
 *   **Incantesimi:** Come Stregone di 7° liv. (CL 7°).
@@ -126,9 +126,13 @@
 **Caratteristiche:** For 18, Des 13, Cos 16, Int 12, Sag 10, Car 14
 
 **Attacchi Speciali:**
-*   **Punire il Bene (Sop):** 2/giorno. Aggiunge +2 (Car) al tiro per colpire e +10 (livello) ai danni contro un bersaglio buono.
-*   **Aura di Disperazione (Sop):** Nemici entro 3m subiscono una penalità di -2 a tutti i tiri salvezza.
+*   **Punire il Bene (Sop):** **1/giorno** (2/giorno solo dal 5° livello di Guardia Nera). Aggiunge +2 (Car) al tiro per colpire e **+2 (livello di Guardia Nera)** ai danni contro un bersaglio buono. *(Errata B5: era "2/giorno ... +10 danni" — in 3.5 il bonus ai danni è pari al livello di Guardia Nera, quindi +2 a GN 2°.)*
+*   **Attacco Furtivo +1d6:** dal 2° livello di Guardia Nera (colti alla sprovvista o fiancheggiati).
 *   **Comando Tattico (Str):** Fornisce +2 morale agli attacchi degli alleati hobgoblin entro 9m.
+
+> *Errata B5 — Aura di Disperazione RIMOSSA*: si ottiene al **3°**
+> livello di Guardia Nera, non al 2°. Se il DM la vuole comunque, è
+> una **house-rule** esplicita, non 3.5 SRD.
 
 **Equipaggiamento:** *Armatura Completa +1*, *Scudo Leggero in Acciaio +1*, *Lancia da Cavaliere +1*, *Spada Bastarda +1*, *Anello di Protezione +1*.
 

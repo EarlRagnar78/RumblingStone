@@ -1,10 +1,13 @@
 # PIANO DI REVISIONE ARC-08 (La Battaglia di Hammerfist) — Coerenza & Qualità
 
-> **Versione**: v2 (2026-07-02) — prodotto da audit completo dell'arco.
+> **Versione**: v2.1 (2026-07-02) — prodotto da audit completo dell'arco.
 > La v1 assumeva l'arco già giocato (perché state.md lo segna ✅ completato);
 > il DM ha chiarito (2026-07-02) che **il giocato reale è fermo all'Arco 07**
 > (parte della Terra, Forgia Eterna) e che state.md è stato scritto in
-> anticipo. La v2 reimposta il piano come revisione **pre-gioco**.
+> anticipo. La v2 reimposta il piano come revisione **pre-gioco**; la v2.1
+> aggiunge i raccordi con l'audit dell'Arco 07 (vedi
+> `07_il Portale Della Forgia Eterna/PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md`,
+> punti **[CROSS-ARC]**: eredità dell'Anno −1000, ponte resurrezione, P6).
 > **Scopo**: documento **autocontenuto** da dare in pasto a un engine AI
 > specializzato (o a più sessioni brevi) per eseguire le correzioni **a lotti**,
 > senza dover ri-derivare il contesto ogni volta. Ogni task ha: file coinvolti,
@@ -63,7 +66,7 @@
 | E3 | Fine battaglia = **Day 19** del March Clock (= caduta di Terrelton, sync point con ARC-09) | state.md §2.1 r.104 |
 | E4 | PG **12→13** durante l'arco | state.md §0 r.40 |
 | E5 | Alla vittoria: i 4 PG nominati **Custodi Eterni** da Re Thorek + **Cerimonia delle 100 Asce** (scena già scritta e a standard) | state.md §4 r.246; Cerimonia-delle-100-Asce.md |
-| E6 | **Struttura a due tempi (D6)**: le prime sessioni sono un **flashback di qualche settimana prima** giocato dai giocatori con i pregen "Eroi di Hammerfist" (Borin Ferropugno, Dara Occhiolesto, Thorin Runaforte, Nala Cantapietre) — ricognizione e primi giorni d'assedio; poi entrano in gioco i PG reali (**Rumbling Stones**), che chiudono la battaglia | DM 2026-07-02; Guida DM r.460-461 ("Prima dell'Arrivo dei Rumbling Stones"), r.2150, r.2294 |
+| E6 | **Struttura a due tempi (D6)**: le prime sessioni sono un **flashback di qualche settimana prima** giocato dai giocatori con i pregen "Eroi di Hammerfist" (Borin Ferropugno, Dara Occhiolesto, Thorin Runaforte, Nala Cantapietre) — ricognizione e primi giorni d'assedio; i PG reali (**Rumbling Stones**) arrivano **quasi alla fine della battaglia** e sono gli **artefici della riscossa** dei nani. Origine della regia: ARC-07 P6-INTEGRAZIONE r.621-753 ("L'ARRIVO DEI RUMBLING STONES") | DM 2026-07-02; Guida DM r.460-461, r.2150, r.2294 |
 | E7 | Capitana **Lythiel Alar-Wen** compare nella sessione finale e alla Cerimonia; consegna la Ghianda a Hella | state.md §4 r.251; Cerimonia §3.2 |
 | E8 | Rapporto forze: **900 attaccanti vs 300 difensori** (3:1) | state.md r.185; Guida DM r.628/854 |
 
@@ -76,7 +79,7 @@
 | D3 | La Cerimonia delle 100 Asce è il **file-ponte canonico** verso ARC-09 (già a standard: NON riscriverla, usarla come riferimento) | Cerimonia-delle-100-Asce.md |
 | D4 | Le **150 lance di Re Thorek** restano a Hammerfist e partono per Rethmar SOLO se gli hook politici di ARC-09 riescono (sigillo Maewen + lettera; D10 del piano ARC-09) — nessun file ARC-08 deve prometterle incondizionatamente | state.md §2.5 r.202; ARC-09 D10 |
 | D5 | **Khorn** è l'ufficiale nanico di Hammerfist designato (in ARC-09) a guidare le 150 lance — è un PNG distinto dai pregen Eroi | HOOKS-Thorik r.135/157; campaign-history.md |
-| D6 | **Il flashback dei pregen è di QUALCHE SETTIMANA prima, non di 1000 anni**: i giocatori usano i 4 Eroi di Hammerfist per la ricognizione e i primi giorni dell'assedio, poi passano ai loro PG reali. Ogni file che presenta i pregen deve dire chiaramente quando si gioca il passaggio pregen→PG | DM 2026-07-02 (risposta diretta) |
+| D6 | **Il flashback dei pregen è di QUALCHE SETTIMANA prima, non di 1000 anni** (la battaglia dell'Anno −1000 è un'altra cosa: si gioca nell'ARC-07 P5, coi PG reali nel passato — vedi piano ARC-07). Il prequel coi pregen esiste perché **i Rumbling Stones arrivano quasi alla fine della battaglia** (artefici della riscossa): senza i pregen i giocatori si perderebbero l'intero assedio. Ogni file che presenta i pregen deve dire chiaramente quando si gioca il passaggio pregen→PG | DM 2026-07-02 (risposta diretta, precisata) |
 | D7 | **state.md va corretto al giocato reale**: Arco 07 🟡 in corso (parte della Terra), 08 ⬜ pianificato, 09 ⬜ preparato in anticipo. Il materiale 08-09 resta valido come preparazione | DM 2026-07-02 → task A0 |
 | D8 | **La resurrezione di Hella avviene TRA la Forgia Eterna e Hammerfist** (ponte 07→08): all'inizio dell'arco 08 Hella ha già il template Ibrido Treant, Thorik ha già il −2 CON permanente, il Cuore di Moradin è già speso | DM 2026-07-02 (risposta diretta) |
 
@@ -84,7 +87,7 @@
 
 | # | Domanda | Proposta di default (se il DM non decide diversamente) |
 |---|---|---|
-| Q1 | **Sorte di Fauci di Palude**: i tracker si contraddicono già ORA come design — il ledger `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` r.139 lo dà "**morto** — rimosso dall'orda; −1 drago" come fatto compiuto; `campaign-coherence.md` r.51 dice "**fugge gravemente ferito**; può tornare" e r.230 lo conta tra i draghi a Rethmar; state.md §2.2 r.123 lo elenca tra i 5 draghi | Trattarlo **a rami condizionali** stile Ghostlord (ARC-09 D7), perché l'esito lo decideranno i dadi: ramo default di design = *fugge sotto i 50 PF* (come da statblock, hook nemesi per Rethmar/ARC-10); ramo alternativo = *ucciso dai PG* → −1 drago a Rethmar. Tutti e tre i tracker vanno riscritti in forma condizionale, non come fatto |
+| Q1 | **Sorte di Fauci di Palude**: i tracker si contraddicono già ORA come design — il ledger `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` r.139 lo dà "**morto** — rimosso dall'orda; −1 drago" come fatto compiuto; `campaign-coherence.md` r.51 dice "**fugge gravemente ferito**; può tornare" e r.230 lo conta tra i draghi a Rethmar; state.md §2.2 r.123 lo elenca tra i 5 draghi. **Quarta versione [CROSS-ARC]**: ARC-07 `Portaleforgia-P6-INTEGRAZIONE` r.869 lo dà "Morto" a **GS 12** in un finale-campagna superato dagli Archi 08-09 (vedi piano ARC-07 A3) | Trattarlo **a rami condizionali** stile Ghostlord (ARC-09 D7), perché l'esito lo decideranno i dadi: ramo default di design = *fugge sotto i 50 PF* (come da statblock, hook nemesi per Rethmar/ARC-10); ramo alternativo = *ucciso dai PG* → −1 drago a Rethmar. Tutti i tracker riscritti in forma condizionale; il profilo GS 12 di P6 marcato storico (piano ARC-07 A3) |
 | Q2 | **Contabilità perdite dell'orda** in caso di vittoria: state.md §2.2 r.132 dice "−500 → attivi ~9.400"; il ledger r.81 dice "−900 (vanguard intero) → 8.610". I file ARC-08 dicono 900 attaccanti e ~400 superstiti in rotta (Atlante-Mappe r.1034) | Formalizzare "**~500 morti + ~400 dispersi = −900 effettivi** all'orda" (i dispersi non si ricongiungono) e ricalcolare UN solo totale corrente propagandolo a state.md, ledger e ARMATE-SYNC ARC-09 (i 5 scenari difensori dipendono da questo numero) |
 | Q3 | **Chi sono i ranger elfici di "Capitano Lunapiena"?** I file battaglia hanno un capitano elfico (Lunapiena) + Signore Ventolesto (gufo celestiale) + Orion Pelleorsa (druido); la Cerimonia canonizza Lythiel (Sacred Forest). Due comandi elfici alla stessa battaglia, mai riconciliati; nessuno ha scheda PNG | Lunapiena = compagnia ranger **indipendente** dell'Elsir Vale (né Tiri Kitor né Sacred Forest), che a fine battaglia resta a presidio di Hammerfist (quindi NON va sommata ai difensori di Rethmar in ARMATE-SYNC). Lythiel resta l'unico canale col Sacred Forest `[INFERRED]` |
 | Q4 | **Ruolo post-battaglia previsto per i 4 Eroi di Hammerfist (pregen)?** Dopo il flashback (D6) restano PNG vivi sul campo: nessun file dice che ne è di loro. Sono un asset narrativo pronto: ARC-09 ha PNG nanici senza volto (i 300 mercenari, il presidio) | Se sopravvivono al giocato: Borin campione di Re Thorek a Hammerfist; Dara ed esploratori assorbiti nelle staffette per Thorik (Cerimonia §6.4); Thorin Runaforte officia il culto dei caduti; Nala passa a Dauth (aggancio Torneo). **Khorn resta distinto** (D5). Da preparare come proposta, si blocca al gioco `[INFERRED]` |
@@ -303,6 +306,24 @@
 - **Accettazione**: un solo assetto dei comandi elfici in tutto il repo;
   nessun doppio conteggio in ARMATE-SYNC.
 
+### A12. Eredità dell'Anno −1000: "la Forgia ricorda le ferite" — [CROSS-ARC con ARC-07]
+- **Problema**: nell'ARC-07 P5 i PG combattono l'**antenato di Fauci di
+  Palude** all'assedio antico di Hammerfist, e Moradin promette: *"Ogni
+  ferita che infliggi ora all'antenato, la mia Forgia la ricorderà quando
+  affronterai il discendente"* (P5-DEFINITIVO-PARTE2 r.285); Aegis Fang
+  "sente" il sangue del discendente (P6 r.746). **Nessun file ARC-08 lo
+  implementa**: lo statblock di Fauci di Palude (Schede §1) ignora il
+  viaggio temporale.
+- **Azione**: quando il piano ARC-07 consegna la **tabella di carry-over**
+  (suo task B4: esito del duello antico → effetto quantificato su Fauci nel
+  1372), integrarla qui: nota nello statblock di Fauci (Schede §1) con
+  puntatore alla tabella, riga nella matrice esiti B1, e menzione nel
+  read-aloud del primo avvistamento del drago (il "flashback genetico" di
+  P2 r.1132). Non inventare i valori qui: la fonte è ARC-07 B4.
+- **Accettazione**: lo statblock di Fauci rimanda alla tabella carry-over;
+  ogni esito del P5 ha un effetto visibile nella battaglia di Hammerfist;
+  zero valori duplicati tra i due archi.
+
 ---
 
 ## §2 — LOTTO B: Completamento contenuti per il gioco (priorità P1)
@@ -331,24 +352,27 @@
   ogni ramo aggancia i tracker con numeri; il ramo default coincide col
   canone preparato (E1-E8).
 
-### B2. Ponte 07→08: la resurrezione di Hella e l'arrivo a Hammerfist (D8)
+### B2. Ponte 07→08: dall'uscita della Forgia all'arrivo a Hammerfist (D8) — [CROSS-ARC]
 - **Evidenza**: per D8 la sequenza è: fine Forgia Eterna → **resurrezione di
-  Hella** → Battaglia di Hammerfist. Gli effetti della resurrezione sono già
-  canone preparato sparso (state.md §1: template Ibrido Treant, rinoceronte
-  di pietra animato, −2 CON di Thorik, Cuore di Moradin speso) ma **la scena
-  non è scritta da nessuna parte** e nessun file dell'arco 08 dice come i
-  Rumbling Stones arrivano alla battaglia già in corso (E6).
-- **Azione**: creare `ARC08-PONTE-RESURREZIONE-E-ARRIVO.md`: (1) la scena
-  della resurrezione col Cuore di Moradin (read-aloud, il costo di Thorik
-  −2 CON come scelta giocata, attivazione del template — meccanica 3.5
-  esplicita, flag [INFERRED] dove il design non è fissato); (2) il viaggio
-  e l'aggancio con l'assedio in corso (perché arrivano proprio allora — le
-  visioni della Forgia? un messaggero? `[INFERRED — needs DM confirmation]`);
-  (3) la regia del **passaggio pregen→PG** (D6): quando i giocatori lasciano
-  gli Eroi, come il flashback si salda al presente, cosa sanno i PG di ciò
-  che i pregen hanno visto. È il momento registico più delicato dell'arco.
+  Hella** → Battaglia di Hammerfist. La scena della resurrezione **esiste
+  già nell'ARC-07** (file `P3B-ResurrezioneHella-*`, in 4 versioni: la sua
+  elezione a master è il task B2 del piano ARC-07 — NON riscriverla qui).
+  Quello che manca lato ARC-08 è il **raccordo**: nessun file dice come i
+  Rumbling Stones arrivano alla battaglia quasi conclusa (E6) né come si
+  gioca il passaggio dai pregen ai PG reali.
+- **Azione**: creare `ARC08-PONTE-ARRIVO.md` (snello): (1) puntatore al
+  master P3B di ARC-07 per la resurrezione (stato in uscita: Hella viva con
+  template Treant, Thorik −2 CON, Cuore di Moradin speso, Corona a 3 gemme);
+  (2) il viaggio e l'aggancio con l'assedio in corso (perché arrivano
+  proprio allora — le visioni della Forgia? il canto di Aegis Fang che
+  "sente" Fauci? `[INFERRED — needs DM confirmation]`); (3) la regia del
+  **passaggio pregen→PG** (D6): quando i giocatori lasciano gli Eroi, come
+  il flashback si salda al presente, cosa sanno i PG di ciò che i pregen
+  hanno visto, e l'ingresso "da riscossa" (E6) con spotlight per ciascun PG.
+  È il momento registico più delicato dell'arco.
 - **Accettazione**: la sequenza D8→E6 è giocabile senza improvvisare;
-  meccaniche 3.5 esplicite; ogni invenzione flaggata.
+  nessuna duplicazione col P3B di ARC-07; meccaniche 3.5 esplicite; ogni
+  invenzione flaggata.
 
 ### B3. Schede PNG mancanti (il cast di Hammerfist non esiste su disco)
 - **Evidenza**: nessuna scheda per Re Thorek, Dana Forgiapietra, Grimjaw,
@@ -527,7 +551,8 @@ sicuro (deprecare).
 | 7 | A10 + A11 (Thorin/Thorik/Thorek + comandi elfici) | audit + editing | Q3 default |
 | 8 | A9 (rinomina file, git mv, fix riferimenti repo-wide) | meccanico | A8 (per rinominare solo i master) |
 | 9 | B1 (matrice esiti e contingenze) | generativo | A1-A2 (numeri fissati) |
-| 10 | B2 (ponte resurrezione + regia pregen→PG) | generativo | D8; B6 utile prima o insieme |
+| 9b | A12 (eredità Anno −1000 su Fauci) | editing mirato | **ARC-07 B4 consegnato** |
+| 10 | B2 (ponte arrivo + regia pregen→PG) | generativo | D8; **ARC-07 B2** (master P3B eletto); B6 utile prima o insieme |
 | 11 | B6 (ancora March Clock) + B7 (INDICE + quickstart) | consolidamento | A8, A9, B1 |
 | 12 | B5 (errata 3.5, pregen inclusi) | verifica | — |
 | 13 | B3 (schede PNG) | generativo | Q3, Q4 default |
@@ -546,10 +571,12 @@ accettazione, commit, riga di changelog in state.md se il canone è cambiato;
 ### Checklist avanzamento
 
 - [ ] A0 · [ ] A1 · [ ] A2 · [ ] A3 · [ ] A4 · [ ] A5 · [ ] A6 · [ ] A7 ·
-  [ ] A8 · [ ] A9 · [ ] A10 · [ ] A11
-- [ ] B1 · [ ] B2 · [ ] B3 · [ ] B4 · [ ] B5 · [ ] B6 · [ ] B7
+  [ ] A8 · [ ] A9 · [ ] A10 · [ ] A11 · [ ] A12 (attende ARC-07 B4)
+- [ ] B1 · [ ] B2 (attende ARC-07 B2) · [ ] B3 · [ ] B4 · [ ] B5 ·
+  [ ] B6 · [ ] B7
 - [ ] C1 · [ ] C2 · [ ] C3 · [ ] C4
-- [x] D6 · [x] D7 · [x] D8 — decisioni DM acquisite 2026-07-02
+- [x] D6 (v2.1: riscossa quasi a fine battaglia) · [x] D7 · [x] D8 —
+  decisioni DM acquisite 2026-07-02
 - [ ] Q1 · [ ] Q2 · [ ] Q3 · [ ] Q4 · [ ] Q5 — default proposti; il DM può
   confermarli o cambiarli prima delle sessioni indicate
 

@@ -1,6 +1,10 @@
 # PIANO DI REVISIONE ARC-07 (Il Portale della Forgia Eterna) — Coerenza & Qualità
 
-> **Versione**: v1 (2026-07-02) — prodotto da audit completo dell'arco.
+> **Versione**: v1.1 (2026-07-02) — prodotto da audit completo dell'arco,
+> esteso ad artefatti (`PG/Artefatti/`) e PNG su richiesta del DM. Le
+> risposte DM del 2026-07-02 (Skullcrusher; 1000 anni prima; party al 13°;
+> Hella morta nell'ARC-06; viaggio dello spirito già giocato) sono
+> incorporate come decisioni D6-D9.
 > **Scopo**: documento **autocontenuto** da dare in pasto a un engine AI
 > specializzato (o a più sessioni brevi) per eseguire le correzioni **a lotti**,
 > senza dover ri-derivare il contesto ogni volta. Ogni task ha: file coinvolti,
@@ -35,7 +39,8 @@
    eseguito (se non lo è, eseguirlo per primo da lì). Ogni modifica di canone
    va **appesa al changelog** di state.md.
 2. **Sistema D&D 3.5 SRD only** — niente 5e, niente lore FR post-1385 DR.
-   Ambientazione Faerûn 1372 DR (più l'Anno −1000 DR del viaggio temporale).
+   Ambientazione Faerûn 1372 DR (più il viaggio temporale a **1.000 anni
+   prima, ≈372 DR** — D7).
 3. **Mai inventare** stat, poteri di artefatti o fatti di sessione: flag
    `[INFERRED — needs DM confirmation]`.
 4. **Un lotto = un commit** con messaggio descrittivo. Non mescolare lotti.
@@ -55,11 +60,13 @@
 
 | # | Elemento | Stato |
 |---|---|---|
-| G1 | P1-P2: ingresso e Sala della Forgia Eterna (affreschi, prove) | ✅ giocato — fatti da raccogliere (B1) |
-| G2 | P3: Piano del Fuoco — Topazio del Tempo recuperato; **Hella è morta** (il corpo viene trasportato; lo spirito viaggia nell'Incudine del Mondo) `[collocazione esatta della morte: INFERRED — needs DM confirmation]` | ✅ giocato |
+| G0 | **Hella Oakenshield è MORTA nell'ARC-06** (Stanza della Corona): uccisa nello scontro con le **Yochlol half-illithid mandate da Sonjak** per prendere la Corona (Urialle CR 14, EL 17 — `06_.../villans.md`); il **vecchio portatore Belkram**, dominato e maledetto dai drow (morte negata, stato di maledizione), si è **ravveduto nel momento della sua morte definitiva**. Già canone scritto: coherence.md r.47 ("Hella dies in Crown Chamber, 06"), campaign-history.md r.26. **L'intero ARC-07 esiste per rendere epica la sua resurrezione** | ✅ giocato (ARC-06) — DM 2026-07-02 |
+| G1 | P1-P2: ingresso e Sala della Forgia Eterna (affreschi, prove); il corpo di Hella è custodito nella Sala (da Therysol — history r.176) | ✅ giocato — fatti da raccogliere (B1) |
+| G2 | P3: Piano del Fuoco — Topazio del Tempo recuperato | ✅ giocato |
+| G2b | **Il viaggio dello spirito di Hella nell'Incudine del Mondo è GIÀ GIOCATO** (le prove dello spirito): esiste un file col **risultato del viaggio** — individuarlo e collegarlo (B9); i file di design sono i fusi `P4-...-HELLA-IL-VIAGGIO...` v1/v2 | ✅ giocato — DM 2026-07-02 |
 | G3 | P4: Piano della Terra — **IN CORSO al tavolo** (Smeraldo della Forza in palio; boss Terros/Mithral Golem; Therysol PNG di supporto) | 🟡 in corso |
-| G4 | P3B: rituale di resurrezione di Hella — si gioca **dopo la Terra** (D2), nonostante la numerazione "3B" | ⬜ da giocare |
-| G5 | P5: viaggio temporale, assedio di Hammerfist Anno −1000, antenato di Fauci di Palude — **da giocare in modo VELOCE** (D1) | ⬜ da giocare |
+| G4 | P3B: rituale di resurrezione di Hella (il corpo + lo spirito provato dal viaggio) — si gioca **dopo la Terra** (D2), nonostante la numerazione "3B" | ⬜ da giocare |
+| G5 | P5: viaggio temporale, assedio di Hammerfist di **1.000 anni prima** (D7), antenato di Fauci di Palude — **da giocare in modo VELOCE** (D1) | ⬜ da giocare |
 | G6 | P6/raccordo: ritorno al 1372 e transizione verso l'Arco 08 | ⬜ da giocare (sezione 1372 di P6 superata da ARC-08: vedi A3) |
 
 ### Decisioni di canone GIÀ PRESE (applicarle, non ridiscuterle)
@@ -71,46 +78,57 @@
 | D3 | Il nemico del viaggio è **l'antenato di Fauci di Palude** all'assedio antico di Hammerfist; l'esito del duello alimenta il ponte meccanico verso l'Arco 08 ("la Forgia ricorda le ferite", B4) **[CROSS-ARC]** | DM 2026-07-02; P5-DEFINITIVO-PARTE2 r.285 |
 | D4 | **La struttura a due tempi dell'Arco 08 resta ad ARC-08**: il prequel coi pregen "Eroi di Hammerfist" (settimane prima) e l'arrivo dei Rumbling Stones quasi alla fine come artefici della riscossa vivono nei file ARC-08; la sezione "Anno 1372" di P6 è la bozza storica di quell'idea (vedi A3) | DM 2026-07-02; piano ARC-08 D6 |
 | D5 | Il portale temporale si apre con **Topazio + Smeraldo** (le prime due gemme); il **Rubino** non apre nulla: si accende ALLA FINE del viaggio come "Cuore della Leggenda" (terza gemma) | P5-RICALIBRATO r.19-21; P5-DEFINITIVO-PARTE2 §4.2 r.328-371 — le due generazioni recenti concordano; P2 va corretto (A4) |
+| D6 | **L'antenato di Fauci di Palude si chiama SKULLCRUSHER** (ex-Q1). "Skulldark" e "Infernotooth Giovane" vanno sostituiti (o dichiarati epiteti una-tantum nel master P5) | DM 2026-07-02 (risposta diretta) |
+| D7 | **La battaglia antica è 1.000 ANNI PRIMA** (≈ 372 DR), NON Anno −1000 DR (ex-Q2): l'etichetta "Anno −1000" nei file va reinterpretata/normalizzata come "1.000 anni prima (≈372 DR)" — e la riga "2.372 anni dopo" (P5-DEFINITIVO-PARTE2 r.283), il "500 anni fa" (P6 r.350) e i "millenni fa" (P2 r.1119) vanno tutti corretti a 1.000 anni | DM 2026-07-02 (risposta diretta) |
+| D8 | **Il party reale è ORA di livello 13** (ex-Q3). Stato artefatti al tavolo: **Bracieri Gemelli di Tordek RISVEGLIATI** (Fuoco+Terra), **Corona di Adamantio IN RISVEGLIO attraverso i viaggi temporali**, Aegis Fang pre-risveglio pieno, Anello riforgiato alla Forgia. Le parti future si bilanciano su APL 13 (metodo Terros: −1 con 3 PG finché Hella non torna) | DM 2026-07-02 (risposta diretta); state.md §6 (quadro forward-written da riallineare con A0) |
+| D9 | **Fonte canonica degli artefatti = `PG/Artefatti/`** (LaCorona_di_Adamantio-DM.md, cartelle per PG). Le copie altrove (es. la cartella Corona dentro l'ARC-06) sono snapshot storici da marcare | DM 2026-07-02 ("controlla anche gli artefatti"); struttura repo |
 
 ### Decisioni di canone da chiedere al DM (bloccano solo i task marcati)
 
 | # | Domanda | Proposta di default |
 |---|---|---|
-| Q1 | **Come si chiama l'antenato di Fauci di Palude?** Tre nomi convivono: **Skulldark** (P5-DEFINITIVO ×20, P5-RICALIBRATO), **Skullcrusher** (FINAL-P5, P6-INTEGRAZIONE ×10, TACTICAL-GRIDS, CORREZIONE-Boss-Fauci — e r.229 di P5-DEFINITIVO-PARTE1 li usa ENTRAMBI), **Infernotooth Giovane** (P1 r.747, P2 r.1119) | **Skullcrusher** (è il nome nel documento-correzione, nelle griglie tattiche e nella checklist canonica di P6 r.971); "il Nero"/"Skulldark" ammesso come epiteto una-tantum; "Infernotooth" da sostituire o dichiarare esplicitamente nome giovanile |
-| Q2 | **Quanto tempo fa è la battaglia antica?** I file dicono **Anno −1000 DR = 2.372 anni prima** (P5-DEFINITIVO-PARTE2 r.283 "2.372 anni dopo" — matematica corretta); ma P6 r.350 fa dire ad Aegis Fang "Ho ucciso bis-bisnonno tuo **500 anni fa**", P2 r.1119 dice "**millenni** fa", e il DM a voce ha detto "1000 anni prima" | **Anno −1000 DR** (2.372 anni prima del 1372 DR): è la versione scritta, coerente e ripetuta; correggere "500 anni fa" di P6 e uniformare la genealogia (a 2.372 anni, "bis-bisnonno" per un drago è plausibile ma va detto una volta sola). Il "1000 anni prima" colloquiale = "Anno −1000" |
-| Q3 | **Qual è il livello REALE del party in questo arco?** I file dichiarano 13 (La_Piramide r.5, Ricalibrazione r.9, P3B r.483/649), 14 ("God Mode", P5-RICALIBRATO r.3; Terros; P6 r.813 "CR 12 vs Party 14"), mentre state.md §0 assegna all'arco il livello 12. Dopo A0 (ARC-08) il cruscotto dirà il vero livello del tavolo | Allineare TUTTE le dichiarazioni al livello reale del tavolo `[needs DM]`, tenendo l'aritmetica di Terros (APL effettivo = livello −1 con 3 PG + Therysol) come metodo standard finché Hella è morta |
 | Q4 | **File ridondanti/meta: deprecare o eliminare?** Riguarda le generazioni doppione (A6), il file vuoto e `temp_sinergie.txt` (A7) | **Deprecare con banner**, mai eliminare (§0.8). `temp_sinergie.txt` è l'unico candidato a rimozione fisica (è un temporaneo del PDF): chiedere conferma |
+| Q5 | **Cognome di Hella**: il DM scrive "Oakshield", campaign-history.md r.26 scrive "**Oakenshield**" | Tenere **Oakenshield** (forma già scritta nel canone) salvo diversa indicazione; nessun find/replace fino a conferma |
+| Q6 | **Qual è il file col RISULTATO del viaggio dello spirito di Hella?** Il DM conferma che esiste, ma la ricerca (`grep "Incudine del Mondo"`) trova solo i file di design (fusi v1/v2) e il lore della Corona | Farselo indicare dal DM e collegarlo in B9; candidati: il fuso v2 (se annotato post-sessione) o un file fuori dall'arco non ancora individuato |
+
+> **Nota risoluzioni**: le ex-Q1/Q2/Q3 della v1 sono diventate D6/D7/D8
+> (risposte DM 2026-07-02). I task A1, A2, A5 non sono più bloccati.
 
 ---
 
 ## §1 — LOTTO A: Incoerenze di canone e igiene dei file (priorità P0)
 
-### A1. L'antenato con tre nomi — Q1
-- **Problema**: vedi Q1. Il boss del P5 (che il tavolo giocherà a breve, D1)
-  cambia nome a seconda del file aperto — e `PortaleForgia-P5-DEFINITIVO-PARTE1.md`
-  r.229 usa due nomi nella stessa riga. Il nome compare anche nelle mappe
-  (TACTICAL-GRIDS r.519-641) e nel documento-correzione del boss.
-- **Azione**: applicare Q1 (default: **Skullcrusher**) in tutti i file
-  dell'arco (P1, P2, FINAL-P5, DEFINITIVO ×2, RICALIBRATO, P6, CORREZIONE,
-  TACTICAL-GRIDS); se si mantiene un epiteto ("il Nero"), dichiararlo alla
-  prima occorrenza del master P5. Riga di changelog in state.md (il nome
-  entra nel canone: l'Arco 08 lo erediterà nel ponte B4).
+### A1. L'antenato con tre nomi — applicare D6 (Skullcrusher)
+- **Problema**: il boss del P5 (che il tavolo giocherà a breve, D1) cambia
+  nome a seconda del file aperto — **Skulldark** (P5-DEFINITIVO ×20,
+  P5-RICALIBRATO), **Skullcrusher** (FINAL-P5, P6 ×10, TACTICAL-GRIDS,
+  CORREZIONE-Boss-Fauci), **Infernotooth Giovane** (P1 r.747, P2 r.1119) —
+  e `PortaleForgia-P5-DEFINITIVO-PARTE1.md` r.229 usa due nomi nella stessa
+  riga.
+- **Azione**: applicare **D6**: Skullcrusher in tutti i file dell'arco (P1,
+  P2, FINAL-P5, DEFINITIVO ×2, RICALIBRATO, P6, CORREZIONE, TACTICAL-GRIDS);
+  se si mantiene un epiteto ("il Nero"), dichiararlo alla prima occorrenza
+  del master P5. Riga di changelog in state.md (il nome entra nel canone:
+  l'Arco 08 lo eredita nel ponte B4).
 - **Accettazione**: `grep -rn "Skulldark\|Infernotooth"` = 0 fuori da banner
   e note storiche; un solo nome (+epiteto dichiarato) ovunque.
 
-### A2. Profondità temporale: −1000 DR vs "500 anni fa" vs "millenni" — Q2
-- **Problema**: vedi Q2. La contraddizione è interna alla stessa scena: in P6
-  Aegis Fang canta "Ho ucciso bis-bisnonno tuo 500 anni fa" (r.350) e poi il
-  documento intero è costruito sull'Anno −1000 (r.9). P2 r.1119 attribuisce
-  l'uccisione a **Thorgrim Barbadiferro** "millenni fa".
-- **Azione**: applicare Q2 (default: Anno −1000 DR, 2.372 anni prima):
-  correggere P6 r.350 e P2 r.1119; uniformare la genealogia del drago
-  (antenato → Fauci di Palude: quante generazioni, detto una sola volta nel
-  master P5); verificare che Thorgrim Barbadiferro (il portatore antico di
-  Aegis Fang) sia collocato coerentemente nell'Anno −1000 in P1 r.704-751,
-  P2 r.858, P5 e P6 r.977.
-- **Accettazione**: una sola data (Anno −1000 DR) e una sola genealogia in
-  tutto l'arco; zero occorrenze di "500 anni" riferite all'antenato.
+### A2. Profondità temporale — applicare D7 (1.000 anni prima, ≈372 DR)
+- **Problema**: i file dicono quattro cose diverse: "Anno −1000" come data
+  assoluta DR con "2.372 anni dopo" (P5-DEFINITIVO-PARTE2 r.283), "500 anni
+  fa" (P6 r.350, canto di Aegis Fang), "millenni fa" (P2 r.1119), e il
+  canone deciso dal DM è **1.000 anni prima** (D7).
+- **Azione**: applicare **D7**: la battaglia antica è 1.000 anni prima del
+  1372 DR (≈ 372 DR). Normalizzare l'etichetta "Anno −1000" (titoli e testo
+  di P5/P6/P2, state.md §6 che dice "year -1000 battle") in "1.000 anni
+  prima (≈372 DR)" — o mantenere "Anno −1000" SOLO se ridefinito
+  esplicitamente come conteggio relativo nanico, una volta, nel master P5;
+  correggere r.283 ("2.372 anni dopo" → "1.000 anni dopo"), P6 r.350, P2
+  r.1119; uniformare la genealogia del drago (antenato → Fauci: quante
+  generazioni in 1.000 anni, detto una sola volta) e la collocazione di
+  **Thorgrim Barbadiferro** (P1 r.704-751, P2 r.858, P5, P6 r.977).
+- **Accettazione**: una sola profondità temporale (1.000 anni) e una sola
+  genealogia in tutto il repo; changelog in state.md (il §6 cita la data).
 
 ### A3. P6 contiene una "battaglia finale 1372" superata dagli Archi 08-09 — [CROSS-ARC]
 - **Problema** (il più importante dell'arco): `Portaleforgia-P6-INTEGRAZIONE-Completa.md`
@@ -156,19 +174,27 @@
 - **Accettazione**: una sola sequenza di attivazione delle 3 gemme in tutto
   il repo; la Corona arriva all'ARC-08/09 nello stato che ARC-09 assume.
 
-### A5. Livello del party dichiarato: 12 vs 13 vs 14 "God Mode" — Q3
-- **Problema**: vedi Q3. Le dichiarazioni cambiano da file a file (P3B
-  "livello 13", La_Piramide "Livello 13", P5-RICALIBRATO "Livello 14+ (God
-  Mode)", P6 "Party 14", Terros "Party Level 14... effective APL 13"),
-  mentre state.md §0 assegna all'arco il livello 12. Per le parti ancora da
-  giocare (P3B, P5) il numero sbagliato = incontri sbagliati.
-- **Azione**: applicare Q3: una volta noto il livello reale (post-A0),
-  uniformare le intestazioni di TUTTI i file dell'arco e ricontrollare i
-  budget GS delle parti future col metodo di Terros (APL effettivo −1 con
-  3 PG finché Hella è morta; +Therysol come supporto). Le parti già giocate
-  NON si ribilanciano: si annota il livello a cui furono giocate.
+### A5. Livello del party dichiarato: 12 vs 13 vs 14 "God Mode" — applicare D8 (livello 13)
+- **Problema**: le dichiarazioni cambiano da file a file (P3B "livello 13",
+  La_Piramide "Livello 13", P5-RICALIBRATO "Livello 14+ (God Mode)", P6
+  "Party 14", Terros "Party Level 14... effective APL 13"), mentre state.md
+  §0 assegna all'arco il livello 12. Il canone deciso (D8) è: **party al
+  13°**. Per le parti ancora da giocare (P3B, P5) il numero sbagliato =
+  incontri sbagliati.
+- **Azione**: applicare **D8**: uniformare le intestazioni di TUTTI i file
+  dell'arco a "13°" e ricontrollare i budget GS delle parti future col
+  metodo di Terros (APL effettivo 12 con 3 PG finché Hella non torna;
+  +Therysol come supporto; APL 13 pieno dal P5 con Hella "DMPC completa").
+  Annotare lo stato artefatti D8 (Bracieri risvegliati, Corona in risveglio)
+  nelle intestazioni dei master, perché è ciò che giustifica gli EL alti
+  (l'EL 17 dell'ARC-06 contro un party di 13° era già questo pattern).
+  Le parti già giocate NON si ribilanciano: si annota il livello a cui
+  furono giocate. Propagare il 13° a state.md §0 (via A0) e segnalare la
+  **cascata sui piani a valle**: ARC-08 assumeva ingresso al 12° (suo E4) —
+  vedi Q6 del piano ARC-08.
 - **Accettazione**: una sola dichiarazione di livello per parte; budget GS
-  delle parti future ricalcolati e annotati.
+  delle parti future ricalcolati; cascata ARC-08/09 registrata nei
+  rispettivi piani.
 
 ### A6. Generazioni multiple mai riconciliate (P3B ×2, P4 ×4, P5 ×4 + 3 doc di ricalibrazione)
 - **Problema**: come ARC-08 A8, ma qui pesa di più perché **il tavolo ci sta
@@ -229,6 +255,33 @@
 - **Accettazione**: nessun lettore può sbagliare l'ordine; INDICE coerente
   con D2 e col piano ARC-08 (D8).
 
+### A10. Artefatti: fonte unica, cartelle duplicate e divergenti, generazioni — applicare D9
+- **Problema** (dall'audit artefatti richiesto dal DM): (1) la cartella
+  `00-La Corona di Adamantio-ogetto&Prove/` esiste **in due copie
+  divergenti** — dentro l'ARC-06 e dentro `PG/Artefatti/Artefatti-Pg/` —
+  con set di file diversi e file omonimi dal contenuto diverso
+  (`00_corona_di_adamantio_completa_italiano.md` differisce; la copia PG ha
+  in più le schede Fase 2 e gli HTML `01/02/03_Corona_N_Gemme`); (2)
+  `PG/Artefatti/LaCorona_di_Adamantio-DM.md` apre con residuo di
+  conversione ("OnlineMarkdown.com https://onlinemarkdown.com/"); (3) il
+  Ring of Chaotic Illumination ha 3 generazioni (`Ring of Chaotic
+  Illumination.md`, `Ring_of_chaotic_illumination-master.md`, cartella
+  `ringOfChaoticIllumination/` con Revised + `Old/`); (4) refusi nei nomi
+  file (`achede _avveimenti_corona_diAdamantio.md` — spazio interno e
+  refuso doppio).
+- **Azione**: applicare **D9**: `PG/Artefatti/` è la fonte canonica —
+  riconciliare le due cartelle Corona (portare in PG ciò che l'ARC-06 ha in
+  più, poi banner "snapshot storico — canonico in PG/Artefatti" sulla copia
+  ARC-06); eleggere il master del Ring (proposta: `..._Revised.md`, con
+  `Old/` e i file sciolti marcati); ripulire il residuo OnlineMarkdown;
+  `git mv` dei filename con refusi; verificare che lo stato dichiarato nei
+  master corrisponda a D8 (Bracieri Fuoco+Terra ✅; Corona: gemme accese =
+  quelle realmente giocate, non le 3 del §6 forward-written) e che i
+  puntatori di state.md §6 e `campaign-artifacts.md` risolvano sui master.
+- **Accettazione**: un solo file canonico per artefatto; le copie marcate;
+  `grep -rn "OnlineMarkdown"` = 0; stato gemme/bracieri coerente col tavolo
+  in tutto il repo.
+
 ---
 
 ## §2 — LOTTO B: Completamento contenuti per il gioco (priorità P1)
@@ -236,20 +289,24 @@
 > Metà arco è dietro il tavolo, metà davanti: il lotto B serve entrambe —
 > memoria per ciò che è stato giocato, preparazione per P3B/P5/raccordo.
 
-### B1. Session log delle sessioni REALMENTE giocate (P1→P4 in corso)
-- **Evidenza**: `campaign/sessions/` non ha alcun log dell'arco (contiene
-  solo il log anticipato/fittizio del 2026-05-03, vedi ARC-08 A0). Le
-  sessioni della Forgia sono le uniche della campagna recente giocate
-  davvero E prive di registro: la morte di Hella — l'evento più grave della
-  campagna — non è documentata da nessuna parte.
+### B1. Session log delle sessioni REALMENTE giocate (ARC-06 finale → P4 in corso)
+- **Evidenza**: `campaign/sessions/` non ha alcun log del giocato reale
+  (contiene solo il log anticipato/fittizio del 2026-05-03, vedi ARC-08 A0).
+  La **morte di Hella** è fissata come evento (coherence r.47: Crown
+  Chamber, ARC-06) ma la sessione che l'ha prodotta non ha log — e nemmeno
+  le sessioni della Forgia (P1-P3, viaggio dello spirito G2b, P4 in corso).
 - **Azione**: intervista breve al DM (o note sue) → log retroattivi nel
-  formato AGENTS.md (Summary / Key decisions / XP / Loot / Next hooks) per
-  le sessioni giocate: ingresso+Sala Forgia, Piano del Fuoco (con la scena
-  della morte di Hella: dove, come, cosa fu deciso), Piano della Terra
-  fin dove è arrivato. OGNI lacuna → `[INFERRED — needs DM confirmation]`.
-  Aggiornare il cruscotto post-A0 di state.md man mano.
+  formato AGENTS.md (Summary / Key decisions / XP / Loot / Next hooks) per:
+  (1) il finale dell'ARC-06 (lo scontro della Stanza della Corona: Urialle
+  e le Yochlol half-illithid, la morte di Hella, la redenzione di Belkram
+  in punto di morte — G0); (2) ingresso+Sala Forgia; (3) Piano del Fuoco
+  (Topazio); (4) il viaggio dello spirito di Hella (G2b — qui si aggancia
+  il file-risultato di Q6/B9); (5) Piano della Terra fin dove è arrivato.
+  OGNI lacuna → `[INFERRED — needs DM confirmation]`. Aggiornare il
+  cruscotto post-A0 di state.md man mano.
 - **Accettazione**: ogni sessione giocata ha un log; la morte di Hella ha
-  data, luogo e causa canoniche; zero invenzioni non flaggate.
+  data, luogo e causa canoniche IN un log (non solo nella tabella eventi);
+  zero invenzioni non flaggate.
 
 ### B2. Master della resurrezione di Hella (P3B) — [CROSS-ARC]
 - **Evidenza**: esistono `P3B-ResurrezioneHella-COMPLETO.md` (22 KB) e
@@ -368,6 +425,33 @@
 - **Accettazione**: ogni file compare con uno stato; il DM ha il percorso
   della prossima sessione in una pagina.
 
+### B9. Artefatti e PNG: i buchi trovati dall'audit richiesto dal DM
+- **Evidenza**: (1) la **Collana dei Semi Eterni** (l'artefatto di Hella,
+  state.md §6) è l'UNICO dei cinque artefatti-PG senza documentazione in
+  `PG/Artefatti/` (Corona, Ring, Bracieri e Aegis Fang ce l'hanno o sono
+  tracciati; la Collana esiste solo come riga nelle tabelle) — ed è proprio
+  l'artefatto che si attiva alla resurrezione, cioè alla prossima sessione;
+  (2) la scheda `PNG/Sonjak/` **non menziona il raid della Stanza della
+  Corona** che lei stessa ha ordinato (Urialle, le Yochlol half-illithid,
+  la dominazione di Belkram — G0): il "chi sa cosa" di state.md §4 perde il
+  suo evento fondativo; (3) il **file col risultato del viaggio dello
+  spirito** (G2b) non è collegato da nessun indice (Q6); (4) né Belkram
+  (vecchio portatore, redento in morte) né Urialle hanno una scheda PNG
+  con lo stato finale post-ARC-06.
+- **Azione**: (1) creare `PG/Artefatti/Artefatti-Pg/Hella/01_Collana_dei_Semi_Eterni.md`
+  (formato dei file Bracieri: lore, stati di risveglio, poteri attuali vs
+  potenziali, aggancio alla resurrezione P3B) — contenuti da state.md §6 e
+  `campaign-artifacts.md`, invenzioni flaggate; (2) aggiornare PNG/Sonjak
+  (riga "ha ordinato il furto della Corona: Urialle + Yochlol
+  half-illithid, fallito, Hella uccisa — il party POTREBBE non sapere
+  ancora che il mandante è lei `[verify chi-sa-cosa con state.md §4]`");
+  (3) collegare il file-risultato del viaggio (Q6) da INDICE, master P3B e
+  log B1; (4) schede PNG post-mortem per Belkram (redento) e Urialle
+  (morta/fuggita? `[INFERRED — needs DM]`) in PNG/ o nel formato AGENTS.md.
+- **Accettazione**: 5 artefatti su 5 documentati in PG/Artefatti; la scheda
+  di Sonjak racconta il raid; il risultato del viaggio è raggiungibile in
+  un click dall'INDICE; nessun PNG di G0 senza stato.
+
 ---
 
 ## §3 — LOTTO C: Da "coerente" a "memorabile" (priorità P2)
@@ -418,28 +502,30 @@
 ## §4 — ORDINE DI ESECUZIONE E BUDGET (per non bruciare crediti)
 
 Prerequisito: **A0 del piano ARC-08** (state.md al giocato reale) se non già
-eseguito. Q1-Q3 vanno chieste al DM prima della sessione 2; Q4 ha default
-sicuro. Il tavolo sta per arrivare a P3B/P5: **la priorità di consegna è
-B2→B3→B4** (il materiale che si gioca la prossima sessione), quindi il
-lotto A si esegue in parallelo solo dove non li blocca.
+eseguito. D6-D9 sono già decise; restano Q4 (default sicuro), Q5 e Q6
+(puntatori, non bloccanti). Il tavolo sta per arrivare a P3B/P5: **la
+priorità di consegna è B2→B3→B4** (il materiale che si gioca la prossima
+sessione), quindi il lotto A si esegue in parallelo solo dove non li blocca.
 
 | Sessione | Task | Tipo | Dipendenze |
 |---|---|---|---|
 | 1 | A7 (igiene) + A9 (ordine dichiarato D2) | editing mirato | Q4 default |
-| 2 | A1 + A2 (nome antenato, profondità temporale) | find/replace + editing | **Q1, Q2** |
+| 2 | A1 + A2 (Skullcrusher, 1.000 anni prima) | find/replace + editing | D6, D7 (decise) |
 | 3 | A6 (matrice generazioni + master) | consolidamento | — |
-| 4 | **B2 (master resurrezione Hella)** | consolidamento+verifica | A6; D2 |
+| 4 | **B2 (master resurrezione Hella)** | consolidamento+verifica | A6; D2; Q6 utile |
 | 5 | **B3 (P5 fast-play)** | generativo | A1, A2, A6; D1 |
 | 6 | **B4 (ponte "la Forgia ricorda" + statblock ARC-08)** | generativo — il task più importante | B3; **[CROSS-ARC]** con ARC-08 A12 |
 | 7 | A3 (P6 sezione 1372 deprecata + estrazioni) | editing mirato | B4 (per ricollocare il canto di Aegis Fang) |
-| 8 | A4 (gemme della Corona) + A5 (livelli, Q3) | editing mirato | **Q3**; A0 |
-| 9 | A8 (DC→CD, inglese) | find/replace | — |
-| 10 | B1 (session log del giocato) | intervista DM + scrittura | A0 |
-| 11 | B5 (errata 3.5) | verifica | A3, Q3 |
-| 12 | B6 + B8 (cronologia + INDICE/quickstart) | consolidamento | A6, A9; coord. ARC-08 B6 |
-| 13 | B7 (tesoro/WBL) | audit | B1 |
-| 14 | C1 + C2 (asset + handout) | classificazione+generativo | B3 |
-| 15 | C3 (tabella echi) | generativo | B4, A3 |
+| 8 | A4 (gemme della Corona) + A5 (livello 13, D8) | editing mirato | D8 (decisa); A0 |
+| 9 | A10 (artefatti: fonte unica D9) | consolidamento | — |
+| 10 | A8 (DC→CD, inglese) | find/replace | — |
+| 11 | B1 (session log del giocato, ARC-06 finale incluso) | intervista DM + scrittura | A0; **Q6** per il viaggio |
+| 12 | B9 (Collana + Sonjak + PNG di G0) | generativo | B1; **Q6** |
+| 13 | B5 (errata 3.5) | verifica | A3, D8 |
+| 14 | B6 + B8 (cronologia + INDICE/quickstart) | consolidamento | A6, A9; coord. ARC-08 B6 |
+| 15 | B7 (tesoro/WBL, al 13°) | audit | B1 |
+| 16 | C1 + C2 (asset + handout) | classificazione+generativo | B3 |
+| 17 | C3 (tabella echi) | generativo | B4, A3 |
 
 **Regole anti-spreco** (identiche ad ARC-08/09): (1) passa all'engine SOLO
 questo file + i file del lotto corrente + state.md §0-§4; (2) niente
@@ -450,12 +536,15 @@ criterio di accettazione, commit, riga di changelog in state.md se il canone
 ### Checklist avanzamento
 
 - [ ] A1 · [ ] A2 · [ ] A3 · [ ] A4 · [ ] A5 · [ ] A6 · [ ] A7 ·
-  [ ] A8 · [ ] A9
-- [ ] B1 · [ ] B2 · [ ] B3 · [ ] B4 · [ ] B5 · [ ] B6 · [ ] B7 · [ ] B8
+  [ ] A8 · [ ] A9 · [ ] A10
+- [ ] B1 · [ ] B2 · [ ] B3 · [ ] B4 · [ ] B5 · [ ] B6 · [ ] B7 ·
+  [ ] B8 · [ ] B9
 - [ ] C1 · [ ] C2 · [ ] C3
-- [x] D1 · [x] D2 · [x] D3 · [x] D4 · [x] D5 — decisioni acquisite 2026-07-02
-- [ ] Q1 · [ ] Q2 · [ ] Q3 · [ ] Q4 — default proposti; confermare o
-  cambiare prima delle sessioni indicate
+- [x] D1 · [x] D2 · [x] D3 · [x] D4 · [x] D5 · [x] D6 (Skullcrusher) ·
+  [x] D7 (1.000 anni) · [x] D8 (livello 13, artefatti) · [x] D9
+  (PG/Artefatti canonico) — decisioni acquisite 2026-07-02
+- [ ] Q4 (deprecare, default sicuro) · [ ] Q5 (Oakenshield?) ·
+  [ ] Q6 (file risultato viaggio spirito)
 
 ---
 
@@ -471,15 +560,19 @@ occhio); le TACTICAL-GRIDS già in scala 1,5 m; perfino gli asset (musica,
 immagini nominate, PDF) — nessun altro arco li ha così curati.
 
 **Cosa lo separa dall'eccellenza**: (1) il boss che il tavolo sta per
-incontrare **ha tre nomi e tre profondità temporali** a seconda del file
+incontrare aveva **tre nomi e tre profondità temporali** a seconda del file
+— ora decisi (Skullcrusher, 1.000 anni prima: D6-D7) ma da propagare
 (A1-A2); (2) P6 trascina una "fine campagna" del 1372 che gli Archi 08-09
 hanno superato — con un Fauci di Palude GS 12 "morto per copione" che
 contraddice il GS 15 a esiti aperti dell'ARC-08 (A3); (3) il gancio più
 bello dell'arco — *la Forgia ricorda le ferite* — non è implementato da
 nessuna parte (B4); (4) quattro generazioni di file per parte, col tavolo
-già in mezzo al guado, e nessun indice (A6, B8); (5) la morte di Hella,
-l'evento più pesante mai giocato, non ha un log (B1). Con A+B2-B4 la
-prossima sessione è coperta; col resto di B l'arco tiene i conti; con C
-il viaggio nell'Anno −1000 diventa la leggenda che i giocatori si
-raccontano — che è esattamente ciò che le Cronache dei Quattro Eroi
-promettono loro.
+già in mezzo al guado, e nessun indice (A6, B8); (5) la morte di Hella
+(ARC-06) e il viaggio del suo spirito — gli eventi più pesanti mai giocati
+— non hanno un log, e il file col risultato del viaggio non è collegato da
+nessun indice (B1, B9/Q6); (6) l'artefatto che si attiva alla prossima
+sessione, la Collana dei Semi Eterni, è l'unico dei cinque senza
+documentazione (B9). Con A+B2-B4 la prossima sessione è coperta; col resto
+di B l'arco tiene i conti; con C il viaggio di 1.000 anni diventa la
+leggenda che i giocatori si raccontano — che è esattamente ciò che le
+Cronache dei Quattro Eroi promettono loro.

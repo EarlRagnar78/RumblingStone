@@ -1,6 +1,8 @@
 # PIANO DI REVISIONE ARC-08 (La Battaglia di Hammerfist) — Coerenza & Qualità
 
-> **Versione**: v2.1 (2026-07-02) — prodotto da audit completo dell'arco.
+> **Versione**: v2.2 (2026-07-02) — prodotto da audit completo dell'arco.
+> v2.2: recepisce ARC-07 D8 (party GIÀ al 13° — E4 superato, nuova Q6 sulla
+> progressione) e i fatti ARC-06 (morte di Hella nella Stanza della Corona).
 > La v1 assumeva l'arco già giocato (perché state.md lo segna ✅ completato);
 > il DM ha chiarito (2026-07-02) che **il giocato reale è fermo all'Arco 07**
 > (parte della Terra, Forgia Eterna) e che state.md è stato scritto in
@@ -64,7 +66,7 @@
 | E1 | Hammerfist deve reggere l'assedio dell'avanguardia della Mano Rossa; l'esito atteso (su cui ARC-09 è costruito) è la **vittoria dei difensori** con avanguardia annientata/dispersa. I gradi dell'esito restano ai dadi (vedi B1) | state.md §2.2 r.132; tutto ARC-09 |
 | E2 | Bilancio atteso: **210 nani morti, 90 superstiti** guidati da Re Thorek (difensori iniziali: 300) | coherence.md r.50; state.md §2.5 r.202 |
 | E3 | Fine battaglia = **Day 19** del March Clock (= caduta di Terrelton, sync point con ARC-09) | state.md §2.1 r.104 |
-| E4 | PG **12→13** durante l'arco | state.md §0 r.40 |
+| E4 **v2.2** | ~~PG 12→13~~ **SUPERATO dal canone DM (2026-07-02): il party è GIÀ al 13°** durante l'ARC-07 (Bracieri risvegliati, Corona in risveglio — piano ARC-07 D8). La progressione di Hammerfist va rideterminata: vedi **Q6** | DM 2026-07-02; state.md §0 r.40 era forward-written e sbagliato |
 | E5 | Alla vittoria: i 4 PG nominati **Custodi Eterni** da Re Thorek + **Cerimonia delle 100 Asce** (scena già scritta e a standard) | state.md §4 r.246; Cerimonia-delle-100-Asce.md |
 | E6 | **Struttura a due tempi (D6)**: le prime sessioni sono un **flashback di qualche settimana prima** giocato dai giocatori con i pregen "Eroi di Hammerfist" (Borin Ferropugno, Dara Occhiolesto, Thorin Runaforte, Nala Cantapietre) — ricognizione e primi giorni d'assedio; i PG reali (**Rumbling Stones**) arrivano **quasi alla fine della battaglia** e sono gli **artefici della riscossa** dei nani. Origine della regia: ARC-07 P6-INTEGRAZIONE r.621-753 ("L'ARRIVO DEI RUMBLING STONES") | DM 2026-07-02; Guida DM r.460-461, r.2150, r.2294 |
 | E7 | Capitana **Lythiel Alar-Wen** compare nella sessione finale e alla Cerimonia; consegna la Ghianda a Hella | state.md §4 r.251; Cerimonia §3.2 |
@@ -92,6 +94,7 @@
 | Q3 | **Chi sono i ranger elfici di "Capitano Lunapiena"?** I file battaglia hanno un capitano elfico (Lunapiena) + Signore Ventolesto (gufo celestiale) + Orion Pelleorsa (druido); la Cerimonia canonizza Lythiel (Sacred Forest). Due comandi elfici alla stessa battaglia, mai riconciliati; nessuno ha scheda PNG | Lunapiena = compagnia ranger **indipendente** dell'Elsir Vale (né Tiri Kitor né Sacred Forest), che a fine battaglia resta a presidio di Hammerfist (quindi NON va sommata ai difensori di Rethmar in ARMATE-SYNC). Lythiel resta l'unico canale col Sacred Forest `[INFERRED]` |
 | Q4 | **Ruolo post-battaglia previsto per i 4 Eroi di Hammerfist (pregen)?** Dopo il flashback (D6) restano PNG vivi sul campo: nessun file dice che ne è di loro. Sono un asset narrativo pronto: ARC-09 ha PNG nanici senza volto (i 300 mercenari, il presidio) | Se sopravvivono al giocato: Borin campione di Re Thorek a Hammerfist; Dara ed esploratori assorbiti nelle staffette per Thorik (Cerimonia §6.4); Thorin Runaforte officia il culto dei caduti; Nala passa a Dauth (aggancio Torneo). **Khorn resta distinto** (D5). Da preparare come proposta, si blocca al gioco `[INFERRED]` |
 | Q5 | **File ridondanti/meta: deprecare o eliminare?** Riguarda le 3 generazioni di atlante doppione (A8), `combat_prompts_guide.md` (guida ai prompt AI usati per generare il sistema — artefatto storico di lavorazione, non materiale di gioco) e i placeholder 01_/03_ (A6) | **Deprecare con banner**, mai eliminare (valore storico, regola §0.8). L'eliminazione fisica solo su ordine esplicito del DM |
+| Q6 | **Progressione di livello a Hammerfist (cascata da ARC-07 D8)**: il party arriva alla battaglia **già al 13°**, ma tutto il canone preparato a valle assumeva 12→13 qui e APL 13 all'inizio di ARC-09 (i cui lotti B5/B6 sono già stati auditati su 13→16) | Due opzioni: (a) **Hammerfist = 13→14** e ARC-09 slitta di +1 (richiede una passata di ri-budget su ARC-09: quest a 14, Rethmar a 15 — costosa); (b) **Hammerfist consolida il 13°** (XP calibrati perché il 14° arrivi dove ARC-09 già lo prevede, alla Battaglia di Rethmar) — **consigliata**: preserva l'intero impianto ARC-09 già verificato. In entrambi i casi A3 riscrive gli XP di conseguenza |
 
 ---
 
@@ -108,8 +111,8 @@
 - **Azione**: (1) correggere il cruscotto state.md §0: Arco 07 🟡 in corso
   (parte della Terra), ponte "Resurrezione di Hella" (D8) come riga propria,
   08 ⬜ pianificato, tutte le righe 09 ⬜ "preparato in anticipo"; (2)
-  aggiornare l'intestazione ("Sessions completed", "Party APL" — verificare
-  col DM il livello REALE del party `[INFERRED]`); (3) marcare il session log
+  aggiornare l'intestazione ("Sessions completed", "Party APL" = **13**,
+  canone DM 2026-07-02 — ARC-07 D8); (3) marcare il session log
   2026-05-03 con banner "⚠️ SCRITTO IN ANTICIPO — sessione non giocata,
   esempio/preparazione" (o spostarlo in `campaign/templates/`); (4) annotare
   in coherence.md che le righe 08+ sono canone preparato; (5) riga di
@@ -148,21 +151,24 @@
 - **Accettazione**: un solo totale orda post-Day 19 (scenario default) in
   tutto il repo; changelog aggiornato.
 
-### A3. XP e livelli: il testo promette 13°→15°, il design dice 12→13
+### A3. XP e livelli: il testo promette 13°→15°, il canone reale è "ingresso al 13°" — dipende da Q6
 - **Problema**: `hammerfist_encounters...-final.md` r.1382-1383: "GRAN TOTALE
   34.400 XP (8.600 per PG) — abbastanza per portare PG da 13° a 15° livello".
-  Ma l'arco è progettato **da 12° a 13°** (E4) e 8.600 XP non bastano comunque
-  per due livelli a quel rango (servono ~12.000 solo per 12°→13°, DMG). In
-  più le prime sessioni le giocano i pregen (D6/E6): l'attribuzione degli XP
-  al party va chiarita.
+  Il canone reale (E4 v2.2, ARC-07 D8) è: il party ARRIVA al 13°; la
+  progressione in uscita dipende da Q6 (consigliata: consolidare il 13°,
+  livello 14 alla Battaglia di Rethmar come ARC-09 già prevede). In più le
+  prime sessioni le giocano i pregen (D6/E6): l'attribuzione degli XP al
+  party va chiarita.
 - **Azione**: riscrivere la sezione "RIASSUNTO XP E RICOMPENSE": budget per
-  APL 12, nota esplicita "sessioni-flashback = XP ai pregen (non cumulano sul
-  party); sessioni col party reale + bonus narrativo = XP ai Rumbling Stones,
-  dimensionati per chiudere il 12°→13° insieme al carry-over dell'Arco 07
-  `[INFERRED — needs DM confirmation sui totali]`". Stessa passata sulla
-  sezione ricompense della Guida DM se duplicata.
-- **Accettazione**: nessun riferimento residuo a "13° a 15°"; attribuzione
-  pregen/party esplicita; numeri compatibili con E4.
+  **APL 13**, nota esplicita "sessioni-flashback = XP ai pregen (non
+  cumulano sul party); sessioni col party reale + bonus narrativo = XP ai
+  Rumbling Stones, dimensionati secondo **Q6**
+  `[needs DM confirmation sui totali]`". Stessa passata sulla sezione
+  ricompense della Guida DM se duplicata; ricontrollare che gli EL degli
+  incontri del party reale reggano ad APL 13 con artefatti (il precedente:
+  ARC-06 usava EL 17 su party di 13° — villans.md r.1).
+- **Accettazione**: nessun riferimento residuo a "13° a 15°" né a "12→13";
+  attribuzione pregen/party esplicita; numeri compatibili con Q6 risolta.
 
 ### A4. Scala delle mappe: 3 m vs 1,5 m per quadretto
 - **Problema**: `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` dichiara
@@ -390,10 +396,11 @@
 - **Accettazione**: ogni PNG nominato nell'arco ha scheda; `grep` dei nomi
   in PNG/ trova tutti; nessuna stat duplicata.
 
-### B4. Tesoro/WBL dell'arco (12→13)
+### B4. Tesoro/WBL dell'arco (party al 13°, Q6)
 - **Evidenza**: le "RICOMPENSE" dell'arco sono note sparse; nessun totale.
-  Il WBL 3.5 richiede ~88.000 mo/PG al 12° e ~110.000 al 13°: l'arco deve
-  mettere in campo ~+22.000 mo/PG equivalenti. L'audit ARC-09
+  Col party che ENTRA al 13° (E4 v2.2), il WBL 3.5 di riferimento è
+  ~110.000 mo/PG al 13° (→~150.000 al 14° se Q6 = opzione a): l'arco deve
+  dichiarare quanto mette in campo. L'audit ARC-09
   (`Arco-Post-Hammerfist-TESORO-WBL-AUDIT.md`) assume la ricchezza
   d'ingresso al 13° come data — questo lotto la fonda.
 - **Azione**: audit del loot previsto (sezione ricompense della guida
@@ -577,7 +584,8 @@ accettazione, commit, riga di changelog in state.md se il canone è cambiato;
 - [ ] C1 · [ ] C2 · [ ] C3 · [ ] C4
 - [x] D6 (v2.1: riscossa quasi a fine battaglia) · [x] D7 · [x] D8 —
   decisioni DM acquisite 2026-07-02
-- [ ] Q1 · [ ] Q2 · [ ] Q3 · [ ] Q4 · [ ] Q5 — default proposti; il DM può
+- [ ] Q1 · [ ] Q2 · [ ] Q3 · [ ] Q4 · [ ] Q5 · [ ] **Q6 (progressione
+  livello, consigliata opzione b)** — default proposti; il DM può
   confermarli o cambiarli prima delle sessioni indicate
 
 ---

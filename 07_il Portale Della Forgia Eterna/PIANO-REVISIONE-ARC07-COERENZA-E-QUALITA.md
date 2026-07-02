@@ -354,6 +354,19 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
 - **Accettazione**: un solo file canonico per artefatto; copie marcate;
   la Cintura ha scheda + riga in §6; `grep -rn "Devastation Gauntlets"`
   = 0 fuori dalle note storiche; stato gemme coerente col tavolo ovunque.
+- **✅ FATTO (2026-07-02, sessione 9)**: **D17 Cintura** — creata la scheda
+  `PG/Artefatti/Artefatti-Pg/Tordek/00_Cintura_della_Devastazione.md` (slot
+  cintura, poteri = Devastation Gauntlets, nota d'origine) + riga in state.md
+  §6 (changelog); tutte le ~20 menzioni attive "Devastation Gauntlets"
+  nell'arco (P1, P2×2, P3-Fuoco) → **Cintura della Devastazione** (restano
+  solo le note d'etimologia "formerly/riforgiati/MIC pag 93"); reimpostata
+  l'immagine "mani guantate" del rito P2 come Cintura alla vita (i Bracieri
+  restano alle mani). **D9 Corona** — copiate in PG le 2 immagini che aveva
+  solo l'ARC-06; banner `_SNAPSHOT-STORICO.md` nella copia ARC-06 (near-dup
+  `.md` flaggati [INFERRED] per il DM, non fusi). **Ring** — master eletto
+  `..._Revised.md` (banner), `Old/` deprecata con `_DEPRECATED-SNAPSHOT.md`.
+  **Refusi** — `git mv` di `achede _avveimenti_...md` → `..._-ALT.md` in
+  entrambe le cartelle. Stato gemme (solo Topazio oggi) coerente con A4/D16.
 
 ### A11. Rinomina del compagno di Hella: Nymeria → Durik (maschio) — applicare D14
 - **Problema**: al tavolo il cane di Hella è **Durik, maschio** (D14); i
@@ -651,7 +664,7 @@ la checklist qui sotto.
 ### Checklist avanzamento
 
 - [x] A1 · [x] A2 · [x] A3 · [x] A4 · [x] A5 · [x] A6 · [x] A7 ·
-  [ ] A8 · [x] A9 · [ ] A10 · [x] A11
+  [ ] A8 · [x] A9 · [x] A10 · [x] A11
 - [x] B2 · [x] B3 · [x] B4 · [ ] B1 · [ ] B5 · [ ] B6 · [ ] B7 ·
   [ ] B8 · [~] B9 — **parziale (2026-07-02)**: Collana ✅ e
   file-risultati ✅; restano Sonjak, schede Belkram/Urialle, collegamenti

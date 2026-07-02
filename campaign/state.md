@@ -287,6 +287,7 @@ full mechanics. This table is current truth only.
 | Corona di Adamantio | Thorik | All 3 gems lit | Stone's Awareness, +2 deflection AC, Topaz time-travel 1/month, Emerald earthquake 1/week, Ruby (single-use already spent at the battle 1,000 years before, ≈372 DR) |
 | Ring of Chaotic Illumination | Artemis | Reforged at Eternal Forge | Full base powers; awaits further evolution at Invisible Tower |
 | Bracieri Gemelli di Moradin | Tordek | Fire ✅ + Earth ✅ | Salto Infuocato 3/day, Fire Resist 10, DR 5/adamantine, Jump +10 |
+| Cintura della Devastazione (custom PG, D17) | Tordek | Active | = Devastation Gauntlets (MIC) moved to **belt slot** so wrists stay free for the Bracieri; ~3/day devastation charges (+2d6). Sheet: `PG/Artefatti/Artefatti-Pg/Tordek/00_Cintura_della_Devastazione.md`. Exact values → ARC-07 B5 |
 | Collana dei Semi Eterni | Hella | Active post-resurrection | Treant summoning (limited), Avatar form (1/day), party gift slots (unspent: 3) |
 | Cuore di Moradin | Crown set (altar) | Activated | Resurrection ritual catalyst — single-use, expended for Hella |
 | Orbe delle Otto Porte (Githyanki artifact, campaign canon) | Tournament prize, not yet held | Awaits Tournament outcome | N/A until Tordek wins |

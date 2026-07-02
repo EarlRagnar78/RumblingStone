@@ -88,7 +88,7 @@
 
 **Equipaggiamento Chiave:**
 
-- **Devastation Gauntlets** (Magic Item Compendium pag. 93)
+- **Cintura della Devastazione** (Magic Item Compendium pag. 93)
   - **Proprietà:** Dopo confermare un critico, il portatore può spendere cariche per aggiungere danni extra:
     - 3 cariche: +4d6 danni
     - 2 cariche: +3d6 danni
@@ -127,7 +127,7 @@
 
 **Talenti:** Stile del Serpente, Colpo Stordente, Deviazione Frecce, Afferrare Frecce, Mobilità, Iniziativa Migliorata, Arma Focalizzata (colpo senz'armi), Attacco Poderoso
 
-**Stato Attuale (Parte 1):** Medita su morte Hella. Ha iniziato comunicazione spirituale con il suo fantasma. I Devastation Gauntlets gli conferiscono capacità letale contro nemici critici.
+**Stato Attuale (Parte 1):** Medita su morte Hella. Ha iniziato comunicazione spirituale con il suo fantasma. I Cintura della Devastazione gli conferiscono capacità letale contro nemici critici.
 
 ---
 
@@ -402,7 +402,7 @@ I PG hanno appena combattuto una battaglia devastante nella **Stanza della Coron
 
 **Tordek:**
 
-- Tocca fronte di Hella con mano guantata (Devastation Gauntlet)
+- Tocca la fronte di Hella con la mano (la Cintura della Devastazione alla vita)
 - Chiude gli occhi, entra in meditazione breve (1 minuto)
 - **Prova Concentrazione CD 15**
   - **Successo:** Sente DEBOLE connessione spirituale - spirito Hella è vicino, non ancora passato oltre
@@ -1013,7 +1013,7 @@ Quando PG sono pronti:
 
 **Narrazione Finale Parte 1:**
 
-> *Vi avvicinate al portale uno dopo l'altro. La luce dorata liquida ondeggia davanti a voi, invitante ma aliena. Thorik, con Corona brillante sulla fronte e Aegis Fang cantante nella mano, guida. Tordek, Devastation Gauntlets stretti, lo segue. Artemis, Ring pulsante al dito, chiude fila.*
+> *Vi avvicinate al portale uno dopo l'altro. La luce dorata liquida ondeggia davanti a voi, invitante ma aliena. Thorik, con Corona brillante sulla fronte e Aegis Fang cantante nella mano, guida. Tordek, Cintura della Devastazione stretti, lo segue. Artemis, Ring pulsante al dito, chiude fila.*
 >
 > *(Se trasportano corpo Hella: Thorik la porta con dignità sulle spalle, avvolta in mantello)*
 >
@@ -1100,7 +1100,7 @@ Quando PG sono pronti:
 - ✅ Party corretto (Thorik GRR 13, Tordek GRR4/Monaco9, Hella Druida12/Ranger1, Artemis Warlock13)
 - ✅ Aegis Fang = ASCIA (non martello)
 - ✅ Thorik porta ENTRAMBI Corona + Aegis Fang
-- ✅ Tordek ha Devastation Gauntlets (MIC pag 93)
+- ✅ Tordek ha Cintura della Devastazione (MIC pag 93)
 - ✅ Artemis ha Ring + background cerebromorphosis COMPLETO
 - ✅ Hella morta ma corpo preservato
 

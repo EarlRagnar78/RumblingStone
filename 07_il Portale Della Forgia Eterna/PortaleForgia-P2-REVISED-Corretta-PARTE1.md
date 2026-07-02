@@ -45,7 +45,7 @@
 >
 > *Thorik, senti Corona sulla fronte non come metallo freddo, ma come ESTENSIONE della tua anima. Aegis Fang nella mano pulsa in sincronia con battito cuore. Sei TU, ma anche più che tu.*
 >
-> *Tordek, percepisci ki - energia vitale - scorrere libera come mai prima. Corpo non è prigione qui. Corpo è STRUMENTO perfetto. Devastation Gauntlets brillano con energia nuova, come se montagna stessa li benedicesse.*
+> *Tordek, percepisci ki - energia vitale - scorrere libera come mai prima. Corpo non è prigione qui. Corpo è STRUMENTO perfetto. La Cintura della Devastazione brilla con energia nuova, come se montagna stessa la benedicesse.*
 >
 > *Artemis, Ring of Chaotic Illumination esplode in arcobaleno di colori: ORO (Lathander), ARGENTO (Mask), VIOLA (tuo potere warlock), intrecciati come fili su telaio cosmico. Per primo istante da quando Ring si fuse con te... senti PACE. Non controllo. Non lotta. Solo... accettazione.*
 >
@@ -142,7 +142,7 @@ Dopo che tutti PG hanno superato/dissipato effetto iniziale:
 
 **Tordek (Monaco Sensibile):**
 - Percepisci ki della sala - energia spirituale così concentrata che aria sembra SOLIDA
-- Devastation Gauntlets vibrano leggermente (riconoscono potere divino)
+- La Cintura della Devastazione vibra leggermente (riconosce potere divino)
 - Possibile azione: Meditare in piedi 1 minuto, centrare sé stesso
 
 **Artemis (Ring-bearer):**
@@ -473,25 +473,28 @@ Thorik riceve benedizione temporanea (dura fino a completamento Piano Fuoco):
 
 ---
 
-**2. TORDEK (Monaco con Devastation Gauntlets):**
+**2. TORDEK (Monaco con la Cintura della Devastazione):**
 
 **Procedura:**
-- Tordek avvicina mani guantate (Devastation Gauntlets) alle fiamme
-- Guanti sono oggetto magico (MIC pag 93) - possibile interferenza?
+- Tordek avvicina le mani alle fiamme; la **Cintura della Devastazione** alla
+  vita risuona (i Bracieri Gemelli restano ai polsi — è per questo che i
+  poteri "da guanti" furono spostati sulla cintura, D17)
+- La Cintura è oggetto magico (poteri dei *Devastation Gauntlets*, slot
+  cintura) - possibile interferenza?
 - MA: Moradin creò oggetto, riconosce come "nipote" spirituale
 
 **Narrazione:**
 
-> *Tordek, avvicini mani guantate con Devastation Gauntlets alle fiamme. I guanti - metallo scuro inciso con rune distruttive - sembrano... VIBRARE. Come se riconoscessero forgia come antenata.*
+> *Tordek, avvicini le mani alle fiamme. Alla tua vita, la **Cintura della Devastazione** - metallo scuro inciso con rune distruttive - sembra... VIBRARE. Come se riconoscesse la forgia come antenata.*
 >
-> *Tocchi fiamme. Guanti brillano rosso incandescente per 3 secondi. E senti... connessione. Monaco cerca equilibrio. Ma questi guanti sono DISTRUZIONE. Opposti? O... complementari?*
+> *Tocchi le fiamme. La Cintura brilla rosso incandescente per 3 secondi. E senti... connessione. Il monaco cerca equilibrio. Ma questa cintura è DISTRUZIONE. Opposti? O... complementari?*
 >
 > *E ascolti voce Moradin (solo tu):*
-> **"Monaco saggio. Comprendi che distruzione è PARTE ciclo. Vecchio deve essere distrutto perché nuovo nasca. Forgia distrugge minerale grezzo, crea arma perfetta. I tuoi guanti... sono strumenti forgia. Usa saggiamente."**
+> **"Monaco saggio. Comprendi che distruzione è PARTE ciclo. Vecchio deve essere distrutto perché nuovo nasca. Forgia distrugge minerale grezzo, crea arma perfetta. La tua cintura... è strumento forgia. Usa saggiamente."**
 
-**Effetto Meccanico - POTENZIAMENTO DEVASTATION GAUNTLETS:**
+**Effetto Meccanico - POTENZIAMENTO CINTURA DELLA DEVASTAZIONE:**
 
-Devastation Gauntlets ricevono upgrade temporaneo (dura fino completamento avventura):
+La Cintura della Devastazione riceve upgrade temporaneo (dura fino completamento avventura):
 - **Cariche:** 3/giorno → **4/giorno** (ricaricano all'alba)
 - **Bonus Critico Nuovo:** Quando confermi critico, PRIMA di spendere cariche, tira d20:
   - Risultato 18-20: 1 carica gratis (non consuma, ottieni danno bonus senza costo)
@@ -660,7 +663,7 @@ Thorik riceve (dura 24 ore, poi rinnovabile toccando di nuovo):
 
 **Narrazione:**
 
-> *Tordek, tocchi colonna ovest. Devastation Gauntlets vibrano. E senti... RESILIENZA. Pelle indurisce leggermente. Respiro rallenta, diventa profondo. Come entrare meditazione combattimento profonda. Moradin: "Monaco comprende: sopravvivere è primo passo verso vittoria."*
+> *Tordek, tocchi colonna ovest. La Cintura della Devastazione vibra. E senti... RESILIENZA. Pelle indurisce leggermente. Respiro rallenta, diventa profondo. Come entrare meditazione combattimento profonda. Moradin: "Monaco comprende: sopravvivere è primo passo verso vittoria."*
 
 **Effetto Meccanico - BENEDIZIONE PELLE PIETRA:**
 
@@ -1373,7 +1376,7 @@ Aegis Fang acquisisce (permanente vs Fauci Palude):
 
 **Q: "Perché noi?"**
 
-**A:** *"Corona scelse Thorik. Aegis Fang riconobbe portatore degno. Ring scelse Artemis (attraverso Lathander/Mask). Devastation Gauntlets accettarono Tordek. Artefatti non sbagliano. Scelgono SEMPRE degni, anche se degni non sanno ancora essere degni. Crescerete. Diventerete eroi veri. O morirete provando. Entrambi onorevoli."*
+**A:** *"Corona scelse Thorik. Aegis Fang riconobbe portatore degno. Ring scelse Artemis (attraverso Lathander/Mask). La Cintura della Devastazione accettò Tordek. Artefatti non sbagliano. Scelgono SEMPRE degni, anche se degni non sanno ancora essere degni. Crescerete. Diventerete eroi veri. O morirete provando. Entrambi onorevoli."*
 
 **Q: "Possiamo vincere?"**
 

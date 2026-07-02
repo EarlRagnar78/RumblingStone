@@ -997,7 +997,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 >
 > *Atterrate piattaforma spawn Sala. Affresco Ovest (A4 - Portale Fuoco) dietro voi... cambia. Non più portale liquido ondeggiante. Ora: AFFRESCO STATICO mostrante VITTORIA vostra.*
 >
-> *Immagine dipinta superficie mostra: Voi tre combattete Elementale Anziano. Momento epico - Thorik Aegis sollevata, Tordek Devastation Gauntlets brillanti, Artemis Eldritch Blast lancio. E background: Topazio manifesta Altare Tempo. È... memoria visiva conquista.*
+> *Immagine dipinta superficie mostra: Voi tre combattete Elementale Anziano. Momento epico - Thorik Aegis sollevata, Tordek Cintura della Devastazione brillanti, Artemis Eldritch Blast lancio. E background: Topazio manifesta Altare Tempo. È... memoria visiva conquista.*
 >
 > *Affresco completo. Portale Fuoco CHIUSO permanentemente. Mai più accessibile (non necessario).*
 
@@ -1032,7 +1032,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 - Incantesimi/capacità giornaliere reset
 - Vigore Forgia: 3 cariche rinnovate
 - Aegis Fang: *Cure Moderate* 3/giorno reset
-- Devastation Gauntlets: 4 cariche reset
+- Cintura della Devastazione: 4 cariche reset
 - Benedizioni Moradin: Rinnovate (pregare Altare 10 min)
 - **Countdown Hammerfist:** -8 ore (4 giorni 10 ore → 4 giorni 2 ore) [Ancora gestibile!]
 
@@ -1198,7 +1198,7 @@ non una "Parte 6").
 
 - Vigore Forgia: 3/3 cariche (tutti)
 - Aegis Fang: 3/3 *Cure Moderate*
-- Devastation Gauntlets: 4/4 cariche
+- Cintura della Devastazione: 4/4 cariche
 - Ring Artemis: 5/5 cariche (con sinergia Corona)
 - Trinità Divina: USATA, cooldown 24h (non disponibile Parte 4!)
 

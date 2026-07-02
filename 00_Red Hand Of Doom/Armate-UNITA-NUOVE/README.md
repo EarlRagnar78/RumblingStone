@@ -27,7 +27,7 @@
 
 ### Dragoni / Razorfiend (varianti)
 
-- `tyrgarun-black-adult-cr13.md`
+- `tyrgarun-blue-old-cr18.md`
 - `razorfiend-red-cr9.md`
 - `razorfiend-blue-cr9.md`
 - `razorfiend-white-cr8.md`

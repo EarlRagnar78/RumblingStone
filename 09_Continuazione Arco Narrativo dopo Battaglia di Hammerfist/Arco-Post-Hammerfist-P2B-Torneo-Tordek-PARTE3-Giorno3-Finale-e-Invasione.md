@@ -161,3 +161,32 @@ A questo punto il Giorno 3 ha **tre poli ostili tra loro**:
   - sincronizza i due archi nel tempo (Tordek e Artemis convergono narrativamente),
   - dà ad Artemis **+1 indizio chiave** per la P2A (vedi tabella esiti di Sethrax sopra),
   - giustifica perché la Torre Invisibile **diventa mobile** (clock Zalkatar 6/8) **proprio dopo il Torneo**: Zalkatar sa di essere stato esposto.
+
+---
+
+## SIDEBAR — SE FALLISCONO (C3)
+
+> **Lotto C3 (2026-07-02).** Fallimento a metà = costo, non stop. Protocollo
+> morte PG: `campaign/DM-QUICKSTART-ARC09.md` §"Risorse di resurrezione nel Vale".
+
+**Se Tordek perde il Torneo (o non lo gioca)**:
+- **Niente 300 mercenari nani** a Rethmar (state.md §2.4): il ramo difensori
+  scende di un gradino negli scenari ARMATE-SYNC §3.
+- **Orbe delle Otto Porte non vinto**: a Rethmar vale la **Variante C** della
+  scena Mythal (MYTHAL-FOCUS §8, PG2 — Tordek regge solo coi Bracieri Fuoco+Terra,
+  niente bonus di margine dall'Orbe).
+
+**Se l'invasione del Day 3 va male (Xal'thor prevale / mezzo fallimento)**:
+- **Xal'thor resta minaccia ricorrente** (già nel testo sopra); se **prende i
+  Bracieri Gemelli** di Tordek → **catch di coerenza gravissimo**: i Bracieri sono
+  chiave planare della Forgia Eterna (state.md §4), la loro perdita apre un ramo
+  ARC-10 dedicato, **non** un game-over.
+- Se **Vaereth strappa il Seme di Porta dall'Orbe**: i Githyanki liberi arrivano
+  a Rethmar con **1 ondata aerea extra** (eco EVENT-DECK S2).
+- **Costo, non blocco**: la città di Dauth vive comunque l'assedio a carte-crisi
+  (`...DAUTH-DAY3-CITY-SIEGE.md`); un torneo interrotto lascia agganci
+  (rivincita, vendetta) invece di chiudere l'arco.
+
+**Morte di Tordek nell'arena**: protocollo unico (DM-QUICKSTART). La Confraternita
+di Ilmater a Dauth (Sorella Maewen, state.md §4) è una **risorsa di resurrezione**
+del Vale — vedi DM-QUICKSTART.

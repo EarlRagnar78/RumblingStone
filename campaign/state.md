@@ -706,4 +706,44 @@ entries — they become campaign history.
               statblock da Armate-UNITA-NUOVE; Karruk/draghi restano
               riservati a Rethmar. HUB §5, SUBQUEST-Thorik §4, INDICE
               aggiornati; zero link rotti operativi residui per gli orfani.
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto C, sessione 18 (C1+C2): contenuto di
+            modulo (sotto-sistemi al tavolo), non stato del mondo. C1: STRUTTURA
+            §9 "Cornice leggera d'assedio" (VP nascosti = "il Fronte" + check di
+            Morale per ondata; 4 ruoli di comando PG; d12 eventi di battaglia;
+            set-piece Tyrgarun D11 v2 a scalini). C2: contatore Morale Cittadino
+            0-10 in PNG/Consiglio_Rethmar. Fix di coerenza residuo A7 (NON nuovo
+            canone: D11 v2 già deciso, §2.2 già allineato): statblock Tyrgarun
+            rinominato tyrgarun-black-adult-cr13.md → tyrgarun-blue-old-cr18.md e
+            riscritto a blue Old CR 18 (era rimasto "black adult CR 13", unica
+            scheda ancora fuori allineamento); aggiornati monster_catalog.yaml,
+            Armate-COMPOSIZIONE-DETTAGLIATA §5, Armate-UNITA-NUOVE/README.
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto C, sessione 19 (C3+C4): contenuto di
+            modulo, non stato del mondo. C3: sidebar "SE FALLISCONO" uniforme in
+            P1C, P2A-PARTE4, P2B-PARTE3, RHEST-FASE4, Ghostlord-TESTO + nota unica
+            §8.5 "Risorse di resurrezione nel Vale" in DM-QUICKSTART-ARC09
+            (protocollo morte PG: fonti raise Rethmar/Ilmater/Circolo, "in 3.5 in
+            battaglia non si resuscita", ogni raise = debito; Cuore di Moradin
+            ribadito speso, §6). C4: MYTHAL-FOCUS §8 varianti per stato dei 4
+            PG-focus coerenti con §6 (nessun potere teorico/speso).
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto C, sessione 20 (C5+C6): contenuto di
+            modulo, non stato del mondo. C5(1): FASE2-RITUALISTI-TESTO §8 —
+            altare campale mappato (3 anelli, 3 foci con pf/CD espliciti,
+            Artefatto Maligno come 4° focus, scelta esplicita rompere-rituale vs
+            tenere-mura con trade-off Fronte). C5(2): ESITI §11 epilogo giocato
+            (4 scene con scelta per PG + decisione collettiva sul Fane nel Shaar,
+            hook ARC-10). C6: ESITI §12 tabella ricompense di dominio esito×PG
+            (Custode di Rethmar / Scuola Monastica / Cerchio Sacro / Ambasciatore
+            Arcano, 1 beneficio meccanico ciascuno). Nessun potere d'artefatto
+            speso "riusato" (§6 rispettata).
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto C, sessioni 21-22 (C7) — CHIUSURA DEL
+            LOTTO C, tutti i task C1-C7 completati. Contenuto di modulo, non stato
+            del mondo. Creato Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK
+            .md: 14 carte-crisi giocabili (Day 40-42, Fasi 0-4), la battaglia a
+            scene scelte dai PG (D13). Regola tre sorgenti S1:6/S2:6/S3:2 con
+            tabella carta→sorgente→file riusato (zero doppioni; nessuno statblock
+            inventato — puntatori a Armate-UNITA-NUOVE). Motore nascosto in
+            STRUTTURA §9 (C1) + Morale Cittadino Consiglio_Rethmar (C2). STRUTTURA
+            §2/§4, FASE1/FASE2-TESTO e INDICE aggiornati per puntare al deck
+            (ondate = sfondo). Con il Lotto C l'arco passa da "coerente/completo"
+            (A+B) a "memorabile" (piano §5).
 ```

@@ -584,7 +584,66 @@ checklist qui sotto.
   interrogare, emissari Ghostlord). Riusa MISSIONI-BREVI (MB-1…6) e gli
   statblock di Armate-UNITA-NUOVE (tutti verificati esistenti); echi agli
   archi esistenti (Sal, Lorana, Therysol, Collezionista, Zalkatar wildcard).
-- [ ] C1 · [ ] C2 · [ ] C3 · [ ] C4 · [ ] C5 · [ ] C6 · [ ] C7 (event deck)
+- [x] C1 · [x] C2 · [x] C3 · [x] C4 · [x] C5 · [x] C6 · [x] C7 (event deck) —
+  **LOTTO C COMPLETO (2026-07-02).**
+  **C7 (sessioni 21-22) completo (2026-07-02)**: creato
+  `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md` — **14 carte** evento
+  sui 3 giorni (Day 40 Fase 0 ×2, Day 41 pre-assedio ×4 + riposo lungo, Day 42
+  Fasi 1-4 ×8). Ogni carta è un **incontro tattico completo giocabile senza prep**
+  (mappa 1,5 m/q nuova o riuso P3, statblock/puntatore a UNITA-NUOVE, EL 12-18,
+  tattiche, spotlight PG, **3 esiti aperti V/P/S ai dadi** con Δ Fronte + "se
+  ignorata" off-screen). **Regola tre sorgenti** con tabella carta→sorgente→file
+  riusato: **S1:6** (breccia, Tyrgarun, cecchino, combattimenti di strada, difesa
+  ospedale, duello Karruk) / **S2:6** (Cripte/Halveth-echo, Olio di Sal,
+  tradimento Halveth, convoglio Lorana, Leoni Ghostlord, Altare campale con
+  Sethrax/Orbe/Zalkatar wildcard + statue Sal→Varis) / **S3:2** (Marea alle Porte,
+  Falso Segnale — solo buchi di ritmo, zero doppioni). Menù di crisi (3-4/campana,
+  scegli 1-2), risoluzione off-screen §4, ritmo risorse dei 3 giorni, checklist DM.
+  **Ogni PG ha ≥2 carte spotlight** (Thorik 4, Artemis 4, Hella 4, Tordek ≥3).
+  STRUTTURA §2/§4 e FASE1/FASE2-TESTO aggiornati (ondate = sfondo, il deck = layer
+  giocato); INDICE aggiornato con la ⭐ del file. Motore nascosto delegato a
+  STRUTTURA §9 (C1) e Consiglio_Rethmar §Morale (C2).
+  **C5+C6 (sessione 20) completo (2026-07-02).** **C5(1)**: FASE2-RITUALISTI-TESTO
+  §8 "quinto atto portato in campo" — altare campale come mini-location (3 anelli
+  con statblock di riuso), **3 foci con pf/CD espliciti** (CA 5, 60 pf, RD 10/magia,
+  RI 18; distrutto = −1 soffio Avatar + −1 round), Artefatto Maligno di Fase 0 come
+  4° focus (+2 CD/+20 pf se rubato), e la **scelta tattica esplicita** rompere il
+  rituale **vs** tenere le mura (trade-off Fronte quantificato; "entrambe" solo
+  delegando agli alleati Arc-09). **C5(2)**: ESITI §11 epilogo **giocato** — 4
+  scene con scelta reale (Thorik/Tordek/Hella/Artemis) + ultima decisione
+  collettiva sul Fane nel Shaar come hook ARC-10 + read-aloud di chiusura. **C6**:
+  ESITI §12 tabella **ricompense di dominio esito×PG** (Custode di Rethmar /
+  Scuola Monastica / Cerchio Sacro urbano / Ambasciatore Arcano) con 1 beneficio
+  meccanico ciascuno (rendita/seguaci/santuario/biblioteca), ridotti in Esito B/C,
+  nulli in D/E/F. Prossimo: C7 (Event Deck).
+  **C3+C4 (sessione 19) completo (2026-07-02).** **C3**: sidebar uniforme
+  "SE FALLISCONO" in coda a P1C-Rituale-SCALE, P2A-Torre-PARTE4-Boss-Zalkatar,
+  P2B-PARTE3-Giorno3, P2-RHEST-FASE4, Ghostlord-TESTO (i 3 rami già presenti in
+  Rhest/Ghostlord **uniformati** al formato); più la nota unica
+  **§8.5 "Risorse di resurrezione nel Vale"** in DM-QUICKSTART-ARC09 (tabella
+  fonti raise nel Vale — Rethmar/Ilmater-Maewen/Circolo *reincarnate*; regola
+  "in 3.5 in battaglia non si resuscita"; ogni raise = debito). Nessun vicolo
+  cieco: ogni fallimento produce storia (costo, non stop); Cuore di Moradin
+  ribadito speso (§6). **C4**: MYTHAL-FOCUS §8 "Varianti per stato del PG" — per
+  ciascuno dei 4 PG-focus 2-3 varianti che rispettano i poteri attuali (§6) e i
+  rami (Orbe/4ª Porta, Anello evoluto sì/no, forma d'Avatar spesa/disponibile,
+  Sacred Forest sì/no); catch di coerenza sui single-use spesi (Rubino Corona,
+  Cuore di Moradin). Prossimo: C5+C6.
+  **C1+C2 (sessione 18) completo (2026-07-02).** **C1**: aggiunta STRUTTURA §9
+  "Cornice leggera d'assedio" — (a) VP → **il Fronte** (tracker nascosto DM) +
+  check di Morale per ondata (1d20+Fronte vs CD 15/20/25); (b) 4 ruoli di comando
+  PG (Comandante/Campione/Fulcro Arcano/Salvatore) con effetti quantificati; (c)
+  tabella d12 eventi di battaglia per fase; (d) **set-piece Tyrgarun D11 v2** a
+  scalini (hazard Fase 1 con 4 contromosse quantificate, clock aereo Fasi 2-3,
+  inchiodato dal Mythal in Fase 4). Coerente col prototipo DAY3-CITY-SIEGE.
+  **Fix di coerenza (residuo A7)**: rinominato statblock
+  `tyrgarun-black-adult-cr13.md` → **`tyrgarun-blue-old-cr18.md`** e riscritto a
+  blue Old CR 18 (profilo aereo + profilo a terra ~16-17); aggiornati i 3
+  riferimenti (monster_catalog.yaml, Armate-COMPOSIZIONE-DETTAGLIATA, UNITA-NUOVE
+  README). **C2**: contatore **Morale Cittadino di Rethmar 0-10** in
+  `PNG/Consiglio_Rethmar/` (tabella eventi→Δ + 3 soglie: 7+ = +150 volontari/+1
+  Fronte, 3- = −1 Fronte/diserzioni, 0 = resa civile), agganciato a Sedute del
+  Consiglio, Riserva di Lorana e Fronte militare. Prossimo: C3+C4.
 - [x] Q1 (→D9) · [x] Q2 (→D10) · [x] Q3 (→D11) · [x] Q4 (→D12) ·
   [x] Q5 (→D8) — **tutte le risposte DM acquisite 2026-07-02**
 

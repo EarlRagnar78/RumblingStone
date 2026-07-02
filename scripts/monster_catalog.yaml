@@ -419,14 +419,14 @@ monsters:
     role: boss
     environment: forest
     source_file: "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md"
-  - id: tyrgarun-black-adult-dragon-reserve-93ca45
-    name: "Tyrgarun — Black Adult Dragon (Reserve)"
-    cr: 13.0
+  - id: tyrgarun-blue-old-dragon-skyterror-93ca45
+    name: "Tyrgarun — Blue Old Dragon (Sky-Terror)"
+    cr: 18.0
     faction: dragon
-    role: flier
+    role: aerial-hazard
     environment: aerial
-    source_file: "00_Red Hand Of Doom/Armate-UNITA-NUOVE/tyrgarun-black-adult-cr13.md"
-    notes: "Già upscalato come adult hell-themed (RHoD AP swap). Canon campagna."
+    source_file: "00_Red Hand Of Doom/Armate-UNITA-NUOVE/tyrgarun-blue-old-cr18.md"
+    notes: "D11 v2 (2026-07-02): blue Old CR 18, terrore dei cieli (NON cavalcatura di Azarr Kul). Hazard aereo Fasi 1-3, inchiodato a terra dal Mythal in Fase 4 (CR effettivo ~16-17)."
   - id: azarr-kul-final-cr15-c834c5
     name: "azarr-kul-final-cr15"
     cr: 15.0

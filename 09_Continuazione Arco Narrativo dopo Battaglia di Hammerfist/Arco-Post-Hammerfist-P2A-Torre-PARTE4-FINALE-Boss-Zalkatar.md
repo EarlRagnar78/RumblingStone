@@ -41,3 +41,26 @@ I PG raggiungono il sanctum di Zalkatar, un illithid warlock/psionico che ha cor
 
 - Loot: corona di adamantio potenziata, pergamene psioniche, intel sulla Red Hand.  
 - Esiti influenzano Torneo di Dauth (es. alleati planari o maledizioni). [file:46]
+
+---
+
+## 4. SIDEBAR — SE FALLISCONO (C3)
+
+> **Lotto C3 (2026-07-02).** Fallimento a metà = costo, non stop. Protocollo
+> morte PG: `campaign/DM-QUICKSTART-ARC09.md` §"Risorse di resurrezione nel Vale".
+
+**Se Artemis fugge/perde contro Zalkatar (fallimento a metà)**:
+- L'**Anello NON evolve** (resta ai poteri base, state.md §6): a Rethmar vale la
+  **Variante B** della scena Mythal (MYTHAL-FOCUS §8, PG3 — niente taglio
+  anticipato dei legami extraplanari).
+- **La Torre diventa mobile** (clock Zalkatar 6/8, state.md §3): Zalkatar
+  sopravvive come **minaccia ricorrente** (nemesi ARC-10) e può inviare Sethrax.
+- Se **Sethrax è fuggito col Seme di Porta** (o non è stato smascherato al Torneo):
+  Zalkatar/Avatar a Rethmar hanno **+2 RI** (state.md §3) — il debuff si somma al
+  fallimento della Torre, non lo sostituisce.
+- **Costo, non blocco**: Artemis può inseguire la Torre in una finestra
+  successiva (Day ≤35) o accettare l'Anello base per la battaglia finale.
+
+**Morte di Artemis nella Torre**: protocollo unico (DM-QUICKSTART). La cortesia
+di Mask/Lathander (state.md §4) è **osservazione, non resurrezione**: le divinità
+non lo riportano indietro — servono le risorse del Vale.

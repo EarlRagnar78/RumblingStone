@@ -173,6 +173,38 @@ flaggala `[ACCEPTED — DM-canon]` e cita fonte (MM/FRCS/AP).
 
 ---
 
+## §8.5 — Risorse di resurrezione nel Vale (protocollo morte PG — C3)
+
+> **Lotto C3 (2026-07-02).** Nota unica citata da tutte le sidebar "SE FALLISCONO"
+> (P1C, P2A-PARTE4, P2B-PARTE3, RHEST-FASE4, Ghostlord). A APL 13-14 la morte di
+> un PG **non deve** chiudere la campagna: deve **costare**.
+
+**Precedente in-fiction (vincolante)**: Hella è **già** stata resuscitata con il
+**Cuore di Moradin** — artefatto **single-use, ora speso** (state.md §6). Non è
+ripetibile: nessun agente/PG può "riusarlo" (violazione di coerenza da flaggare).
+
+**Chi può riportare indietro un PG nel Vale (Day 20-42):**
+
+| Fonte | Dove | Incantesimo | Costo (SRD/DMG 3.5) | Costo narrativo |
+|---|---|---|---|---|
+| Tempio maggiore di Rethmar | Rethmar (se non caduta) | *raise dead* / *resurrection* | ~5.450 mo (diamante 5.000) / ~10.910 mo (diamante 10.000) | Debito col Consiglio (favore politico, Consiglio_Rethmar) |
+| Confraternita di Ilmater (Sorella Maewen) | Dauth | *raise dead* | ~5.450 mo | Voto di servizio alla Confraternita (hook ARC-10) |
+| Circolo degli Otto / arci-druidi | campale, solo a Rethmar | *reincarnate* (nuovo corpo!) | componenti + rischio forma casuale | Cambia razza del PG — costo identitario |
+| Chierici alleati al fronte | Rethmar Fase 3-4 | *breath of life*-equivalenti (SRD: *revivify* non esiste in 3.5 → **nessuna** rianimazione istantanea) | — | In battaglia **non** c'è resurrezione: il corpo va portato via |
+
+**Regole d'oro del protocollo:**
+1. **In battaglia non si resuscita** (3.5 non ha *revivify*): un PG che cade in
+   Fase 0-4 è fuori per la scena; il recupero avviene **dopo**, se il corpo è
+   salvato (le sidebar RHEST/Ghostlord notano i casi in cui il corpo è difficile
+   da recuperare — fondo del lago, tana del Lich).
+2. **Ogni raise lascia un debito**, mai gratis: politico (Consiglio), religioso
+   (Ilmater), o identitario (*reincarnate*). È il "costo, non stop".
+3. Se il party **non può permettersi** un raise (oro/finestra): il PG morto
+   diventa un **hook** (visione, eredità, vendetta) — la storia continua col
+   gruppo ridotto, non si ferma.
+
+---
+
 ## §9 — TL;DR: il DM ha tutto quello che serve?
 
 ✅ **Workflow** → `campaign/DM-CAMPAIGN-PLAYBOOK.md` (§2-§7)

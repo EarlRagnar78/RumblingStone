@@ -1077,4 +1077,21 @@ entries — they become campaign history.
             tabella del cast. Scelta: file piatti in PNG/ (precedente
             Il_Collezionista_Rakshasa.md) invece di 13 sottocartelle,
             per non moltiplicare entry filesystem per schede snelle.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto B, sessione 14 (B4) — CHIUSURA
+            DEL LOTTO B (B1-B7 completati; A12 resta bloccato su ARC-07
+            B4). Creato `ARC08-13-TESORO-WBL-AUDIT.md` (gemello
+            dell'audit ARC-09): il party resta al 13° (D9), quindi
+            Hammerfist **consolida** il WBL del 13° (110k mo/PG), non lo
+            supera. Tabella tesoro per fonte in stile Paizo (gratitudine
+            di Re Thorek, armeria, bottino avanguardia, gear dei
+            comandanti condizionale, tesoro di Fauci solo nel ramo
+            "ucciso"; runa dei Custodi = plot item, 0 mo). Riconciliata
+            la "ricompensa 50k/PG" della Guida DM come **top-up al 13°
+            WBL**, non "+50k su un party già pieno" (che sforerebbe
+            verso il 14°, contro D9). Handoff esplicito: ricchezza
+            d'uscita ARC-08 = ingresso ARC-09 (~110k/PG), il numero già
+            assunto da `09_.../TESORO-WBL-AUDIT.md` §1.2. Ricchezza
+            d'ingresso ARC-08 marcata [INFERRED] (dipende da quanto
+            bancato in 01-07). INDICE aggiornato (B4/B5 nella tabella
+            canonica; numerazione §7 corretta).
 ```

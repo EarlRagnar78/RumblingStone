@@ -84,6 +84,8 @@ master** rilevanti alla sessione.
 | `ARC08-10-ESITI-E-CONTINGENZE.md` | Rami d'esito + conversione flashback→bonus (B1) | Canonico |
 | `ARC08-11-PONTE-ARRIVO.md` | Cucitura D16, passaggio pregen→PG (B2) | Canonico |
 | `ARC08-12-CRONOLOGIA-MARCH-CLOCK.md` | Cronologia Day X→19 (B6) | Canonico |
+| `ARC08-13-TESORO-WBL-AUDIT.md` | Audit tesoro/WBL 13°, handoff ARC-09 (B4) | Canonico |
+| `ERRATA-ARC08-35-Verification.md` | Verifica meccanica 3.5 (B5) | Canonico |
 | `Cerimonia-delle-100-Asce.md` | Chiusura arco + hook ARC-09 (D3) | Canonico (benchmark, NON riscrivere) |
 | `hammerfist_encounters-...-final.md` | Guida agli scontri | Canonico |
 | `mass_combat_guide_Dm.md` | Sistema di combattimento di massa | Canonico (fonte unica prevista in C1) |
@@ -138,11 +140,8 @@ stat puntate alle appendici, campo "esiti possibili"):
 Cast già schedato altrove: `PNG/Lythiel/Lythiel.md` (Sacred Forest, E7),
 `PNG/Tempestas/Tempestas.md` (bardo tempeste).
 
-## 6. Deliverable ancora da produrre (Lotto B/C)
+## 6. Deliverable ancora da produrre (Lotto C)
 
-- **B4** — tesoro/WBL dell'arco.
-- **B5** — `ERRATA-ARC08-35-Verification.md` (statblock + pregen
-  stampabili).
 - **C1** — consolidamento del sistema di massa (fonte unica).
 - **C2** — conseguenze a lungo periodo (sezione in `ARC08-10`).
 - **C3** — atlante immagini (tabella + rinomina).
@@ -151,7 +150,7 @@ Cast già schedato altrove: `PNG/Lythiel/Lythiel.md` (Sacred Forest, E7),
 
 ---
 
-## 6. Nota branch-per-group (gruppi futuri)
+## 7. Nota branch-per-group (gruppi futuri)
 
 Per far ripartire questo arco con un nuovo gruppo senza perdere niente,
 vedi la procedura in `campaign/DM-CAMPAIGN-PLAYBOOK.md` (reset

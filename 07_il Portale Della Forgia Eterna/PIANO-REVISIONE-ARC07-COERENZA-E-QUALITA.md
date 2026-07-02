@@ -558,6 +558,12 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   puntata).
 - **Accettazione**: una sola cronologia condivisa 07→08; nessuna
   contraddizione col Day 19 (ARC-08 E3).
+- **✅ FATTO (2026-07-02, sessione 14)**: cronologia B6 scritta come sezione
+  dell'INDICE (`ARC07-00-INDICE.md` §Cronologia): proposta `[INFERRED]`
+  (uscita Forgia ≈ Day 14-15, P3B+P5 ≈ Day 15-17, raccordo D16/Cuore della
+  Montagna ≈ Day 18-19, sync col Day 19 ARC-08), con la nota che il viaggio è
+  **tempo soggettivo** (il March Clock reale avanza poco). Da coordinare con
+  ARC-08 B6 (stessa tabella).
 
 ### B7. Tesoro/WBL dell'arco (al 13°)
 - **Evidenza**: l'arco assegna artefatti maggiori (gemme, benedizioni,
@@ -587,6 +593,11 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
 - **Accettazione**: ogni file compare con uno stato; il DM ha il percorso
   della prossima sessione in una pagina; risultati del viaggio e Collana
   raggiungibili in un click.
+- **✅ FATTO (2026-07-02, sessione 14)**: creato `ARC07-00-INDICE.md` —
+  quickstart 1 pagina (dove sei G3/D15, cosa viene dopo D2, cosa stampare,
+  promemoria canone), tabella file→parte→stato (dalla matrice A6), nota
+  numerazione A9, cronologia B6, puntatori a risultati/Collana/Cintura/
+  Corona/log/ponte ARC-08. Ogni file dell'arco ha uno stato raggiungibile.
 
 ### B9. Artefatti e PNG: i buchi residui dell'audit
 - **Evidenza**: già FATTI (2026-07-02): la scheda della **Collana dei Semi
@@ -701,7 +712,7 @@ la checklist qui sotto.
 - [x] A1 · [x] A2 · [x] A3 · [x] A4 · [x] A5 · [x] A6 · [x] A7 ·
   [x] A8 · [x] A9 · [x] A10 · [x] A11 — **LOTTO A COMPLETO**
 - [~] B1 (log ricostruiti; attende intervista DM) · [x] B2 · [x] B3 ·
-  [x] B4 · [x] B5 · [ ] B6 · [ ] B7 · [ ] B8 · [x] B9 — Collana ✅,
+  [x] B4 · [x] B5 · [x] B6 · [ ] B7 · [x] B8 · [x] B9 — Collana ✅,
   file-risultati ✅, Sonjak-raid ✅, schede Belkram/Urialle ✅, Cintura ✅
 - [ ] C1 · [ ] C2 · [ ] C3
 - [x] D1…D17 — **tutte le decisioni DM acquisite (2026-07-02); nessuna

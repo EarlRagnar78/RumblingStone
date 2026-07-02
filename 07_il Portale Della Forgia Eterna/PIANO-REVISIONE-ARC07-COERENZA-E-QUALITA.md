@@ -63,7 +63,7 @@
 | G0 | **Hella Oakenshield è MORTA nell'ARC-06** (Stanza della Corona): uccisa nello scontro con le **Yochlol half-illithid mandate da Sonjak** per prendere la Corona (Urialle CR 14, EL 17 — `06_.../villans.md`); il **vecchio portatore Belkram**, dominato e maledetto dai drow (morte negata, stato di maledizione), si è **ravveduto nel momento della sua morte definitiva**. Già canone scritto: coherence.md r.47 ("Hella dies in Crown Chamber, 06"), campaign-history.md r.26. **L'intero ARC-07 esiste per rendere epica la sua resurrezione** | ✅ giocato (ARC-06) — DM 2026-07-02 |
 | G1 | P1-P2: ingresso e Sala della Forgia Eterna (affreschi, prove); il corpo di Hella è custodito nella Sala (da Therysol — history r.176) | ✅ giocato — fatti da raccogliere (B1) |
 | G2 | P3: Piano del Fuoco — Topazio del Tempo recuperato | ✅ giocato |
-| G2b | **Il viaggio dello spirito di Hella nell'Incudine del Mondo è GIÀ GIOCATO** (le prove dello spirito): esiste un file col **risultato del viaggio** — individuarlo e collegarlo (B9); i file di design sono i fusi `P4-...-HELLA-IL-VIAGGIO...` v1/v2 | ✅ giocato — DM 2026-07-02 |
+| G2b | **Il viaggio dello spirito di Hella nell'Incudine del Mondo è GIÀ GIOCATO**: esiti canonici registrati in `PortaleForgia-P4-PianoTerra-P3B-HELLA-IL-VIAGGIO-NELL'INCUDINE-DEL-MONDO-risultati.md` (creato 2026-07-02 dagli appunti DM): **Verità Piena / Ferita Aperta / Via della Radice — tutti i TS superati**; il compagno è **DURIK (maschio)** — rinomina di "Nymeria" dei file di design (task A11); riga applicabile della tavola v2 §7: Resist freddo 15, Regen 1 (terra), Percepire Intenzioni +2, vuln. fuoco, Durik 12 DV | ✅ giocato e REGISTRATO — DM 2026-07-02 |
 | G3 | P4: Piano della Terra — **IN CORSO al tavolo** (Smeraldo della Forza in palio; boss Terros/Mithral Golem; Therysol PNG di supporto) | 🟡 in corso |
 | G4 | P3B: rituale di resurrezione di Hella (il corpo + lo spirito provato dal viaggio) — si gioca **dopo la Terra** (D2), nonostante la numerazione "3B" | ⬜ da giocare |
 | G5 | P5: viaggio temporale, assedio di Hammerfist di **1.000 anni prima** (D7), antenato di Fauci di Palude — **da giocare in modo VELOCE** (D1) | ⬜ da giocare |
@@ -83,16 +83,23 @@
 | D8 | **Il party reale è ORA di livello 13** (ex-Q3). Stato artefatti al tavolo: **Bracieri Gemelli di Tordek RISVEGLIATI** (Fuoco+Terra), **Corona di Adamantio IN RISVEGLIO attraverso i viaggi temporali**, Aegis Fang pre-risveglio pieno, Anello riforgiato alla Forgia. Le parti future si bilanciano su APL 13 (metodo Terros: −1 con 3 PG finché Hella non torna) | DM 2026-07-02 (risposta diretta); state.md §6 (quadro forward-written da riallineare con A0) |
 | D9 | **Fonte canonica degli artefatti = `PG/Artefatti/`** (LaCorona_di_Adamantio-DM.md, cartelle per PG). Le copie altrove (es. la cartella Corona dentro l'ARC-06) sono snapshot storici da marcare | DM 2026-07-02 ("controlla anche gli artefatti"); struttura repo |
 
-### Decisioni di canone da chiedere al DM (bloccano solo i task marcati)
+### Decisioni di canone — TUTTE RISOLTE (2026-07-02)
 
-| # | Domanda | Proposta di default |
+**✅ Nessuna domanda aperta bloccante.** Ex-Q1/Q2/Q3 → D6/D7/D8; le
+ulteriori risposte DM del 2026-07-02 sono registrate qui:
+
+| # | Decisione | Fonte |
 |---|---|---|
-| Q4 | **File ridondanti/meta: deprecare o eliminare?** Riguarda le generazioni doppione (A6), il file vuoto e `temp_sinergie.txt` (A7) | **Deprecare con banner**, mai eliminare (§0.8). `temp_sinergie.txt` è l'unico candidato a rimozione fisica (è un temporaneo del PDF): chiedere conferma |
-| Q5 | **Cognome di Hella**: il DM scrive "Oakshield", campaign-history.md r.26 scrive "**Oakenshield**" | Tenere **Oakenshield** (forma già scritta nel canone) salvo diversa indicazione; nessun find/replace fino a conferma |
-| Q6 | **Qual è il file col RISULTATO del viaggio dello spirito di Hella?** Il DM conferma che esiste, ma la ricerca (`grep "Incudine del Mondo"`) trova solo i file di design (fusi v1/v2) e il lore della Corona | Farselo indicare dal DM e collegarlo in B9; candidati: il fuso v2 (se annotato post-sessione) o un file fuori dall'arco non ancora individuato |
+| D10 (ex-Q4) | File ridondanti/meta: **DEPRECARE con banner**, mai eliminare | DM 2026-07-02 |
+| D11 (ex-Q5) | Il cognome di Hella è **Oakenshield** | DM 2026-07-02 |
+| D12 (ex-Q6) | Gli esiti del viaggio dello spirito sono canonizzati in `...IL-VIAGGIO-NELL'INCUDINE-DEL-MONDO-risultati.md` (creato dagli appunti DM: Durik maschio; Verità Piena, Ferita Aperta, Via della Radice, TS tutti superati) | DM 2026-07-02 → file creato |
+| D13 | **Belkram e Urialle sono ENTRAMBI MORTI** (stato finale post-ARC-06) — le loro schede PNG (B9) si scrivono con Status: morto | DM 2026-07-02 |
+| D14 | Il compagno di Hella si chiama **DURIK (maschio)** — "Nymeria" dei file di design va rinominato ovunque (task A11) | DM 2026-07-02 |
 
-> **Nota risoluzioni**: le ex-Q1/Q2/Q3 della v1 sono diventate D6/D7/D8
-> (risposte DM 2026-07-02). I task A1, A2, A5 non sono più bloccati.
+Residuo minore dentro D12 (non bloccante): l'esito della prova Conoscenze
+(religioni) CD 15 della Via della Radice e la risposta alla Domanda
+Aggiuntiva di Moradin (aspetto di Durik) non erano negli appunti —
+flaggati `[needs DM]` nel file risultati, da registrare appena disponibili.
 
 ---
 
@@ -282,6 +289,19 @@
   `grep -rn "OnlineMarkdown"` = 0; stato gemme/bracieri coerente col tavolo
   in tutto il repo.
 
+### A11. Rinomina del compagno di Hella: Nymeria → Durik (maschio) — applicare D14
+- **Problema**: al tavolo il cane di Hella è **Durik, maschio** (D14); i
+  file di design (fusi v1/v2 del viaggio, ~50 occorrenze incluse
+  "L'Impronta di Nymeria", "Nymeria Riforgiato" e la scheda 3.5 di v2 §10)
+  usano "Nymeria" al femminile.
+- **Azione**: propagare la rinomina (e il genere: articoli, pronomi,
+  aggettivi) in v1/v2 del viaggio, nel master P3B (B2), nella scheda
+  Collana (già scritta con Durik) e in ogni file che citerà il compagno;
+  il file `...-risultati.md` §0 è la fonte della rinomina. NON rinominare
+  i file di design (solo il testo).
+- **Accettazione**: `grep -rn "Nymeria"` = 0 fuori dai banner/note
+  storiche; genere coerente ovunque.
+
 ---
 
 ## §2 — LOTTO B: Completamento contenuti per il gioco (priorità P1)
@@ -438,19 +458,21 @@
   spirito** (G2b) non è collegato da nessun indice (Q6); (4) né Belkram
   (vecchio portatore, redento in morte) né Urialle hanno una scheda PNG
   con lo stato finale post-ARC-06.
-- **Azione**: (1) creare `PG/Artefatti/Artefatti-Pg/Hella/01_Collana_dei_Semi_Eterni.md`
-  (formato dei file Bracieri: lore, stati di risveglio, poteri attuali vs
-  potenziali, aggancio alla resurrezione P3B) — contenuti da state.md §6 e
-  `campaign-artifacts.md`, invenzioni flaggate; (2) aggiornare PNG/Sonjak
-  (riga "ha ordinato il furto della Corona: Urialle + Yochlol
-  half-illithid, fallito, Hella uccisa — il party POTREBBE non sapere
-  ancora che il mandante è lei `[verify chi-sa-cosa con state.md §4]`");
-  (3) collegare il file-risultato del viaggio (Q6) da INDICE, master P3B e
-  log B1; (4) schede PNG post-mortem per Belkram (redento) e Urialle
-  (morta/fuggita? `[INFERRED — needs DM]`) in PNG/ o nel formato AGENTS.md.
-- **Accettazione**: 5 artefatti su 5 documentati in PG/Artefatti; la scheda
-  di Sonjak racconta il raid; il risultato del viaggio è raggiungibile in
-  un click dall'INDICE; nessun PNG di G0 senza stato.
+- **Azione**: (1) ✅ **FATTO (2026-07-02)**: creata
+  `PG/Artefatti/Artefatti-Pg/Hella/01_Collana_dei_Semi_Eterni.md` nel
+  formato Bracieri (scheda giocatore + stati futuri + scheda DM; seme III
+  = Durik; doni dei semi 3 slot; invenzioni flaggate [INFERRED]) — il DM
+  validi i punti flaggati; (2) aggiornare PNG/Sonjak (riga "ha ordinato il
+  furto della Corona: Urialle + Yochlol half-illithid, fallito, Hella
+  uccisa — il party POTREBBE non sapere ancora che il mandante è lei
+  `[verify chi-sa-cosa con state.md §4]`"); (3) ✅ **FATTO**: file-risultato
+  del viaggio creato (D12) — resta da collegarlo da INDICE (B8), master
+  P3B (B2) e log (B1); (4) schede PNG post-mortem per **Belkram (morto,
+  redento in punto di morte)** e **Urialle (morta)** — stati canonici D13 —
+  in PNG/ o nel formato AGENTS.md.
+- **Accettazione**: 5 artefatti su 5 documentati in PG/Artefatti ✅; la
+  scheda di Sonjak racconta il raid; il risultato del viaggio è
+  raggiungibile in un click dall'INDICE; nessun PNG di G0 senza stato.
 
 ---
 
@@ -502,25 +524,26 @@
 ## §4 — ORDINE DI ESECUZIONE E BUDGET (per non bruciare crediti)
 
 Prerequisito: **A0 del piano ARC-08** (state.md al giocato reale) se non già
-eseguito. D6-D9 sono già decise; restano Q4 (default sicuro), Q5 e Q6
-(puntatori, non bloccanti). Il tavolo sta per arrivare a P3B/P5: **la
-priorità di consegna è B2→B3→B4** (il materiale che si gioca la prossima
-sessione), quindi il lotto A si esegue in parallelo solo dove non li blocca.
+eseguito. **Tutte le decisioni sono prese (D1-D14): nessun lotto è
+bloccato.** Il tavolo sta per arrivare a P3B/P5: **la priorità di consegna
+è B2→B3→B4** (il materiale che si gioca la prossima sessione), quindi il
+lotto A si esegue in parallelo solo dove non li blocca. A11 (Durik)
+conviene eseguirlo INSIEME a B2 (stesso file master).
 
 | Sessione | Task | Tipo | Dipendenze |
 |---|---|---|---|
 | 1 | A7 (igiene) + A9 (ordine dichiarato D2) | editing mirato | Q4 default |
 | 2 | A1 + A2 (Skullcrusher, 1.000 anni prima) | find/replace + editing | D6, D7 (decise) |
 | 3 | A6 (matrice generazioni + master) | consolidamento | — |
-| 4 | **B2 (master resurrezione Hella)** | consolidamento+verifica | A6; D2; Q6 utile |
+| 4 | **B2 (master resurrezione Hella) + A11 (Durik)** | consolidamento+verifica | A6; D2; D12 (file risultati) |
 | 5 | **B3 (P5 fast-play)** | generativo | A1, A2, A6; D1 |
 | 6 | **B4 (ponte "la Forgia ricorda" + statblock ARC-08)** | generativo — il task più importante | B3; **[CROSS-ARC]** con ARC-08 A12 |
 | 7 | A3 (P6 sezione 1372 deprecata + estrazioni) | editing mirato | B4 (per ricollocare il canto di Aegis Fang) |
 | 8 | A4 (gemme della Corona) + A5 (livello 13, D8) | editing mirato | D8 (decisa); A0 |
 | 9 | A10 (artefatti: fonte unica D9) | consolidamento | — |
 | 10 | A8 (DC→CD, inglese) | find/replace | — |
-| 11 | B1 (session log del giocato, ARC-06 finale incluso) | intervista DM + scrittura | A0; **Q6** per il viaggio |
-| 12 | B9 (Collana + Sonjak + PNG di G0) | generativo | B1; **Q6** |
+| 11 | B1 (session log del giocato, ARC-06 finale incluso) | intervista DM + scrittura | A0; D12 (file risultati) per il viaggio |
+| 12 | B9 residuo (Sonjak + schede Belkram/Urialle morti + collegamenti) | generativo | B1; D13 |
 | 13 | B5 (errata 3.5) | verifica | A3, D8 |
 | 14 | B6 + B8 (cronologia + INDICE/quickstart) | consolidamento | A6, A9; coord. ARC-08 B6 |
 | 15 | B7 (tesoro/WBL, al 13°) | audit | B1 |
@@ -536,15 +559,21 @@ criterio di accettazione, commit, riga di changelog in state.md se il canone
 ### Checklist avanzamento
 
 - [ ] A1 · [ ] A2 · [ ] A3 · [ ] A4 · [ ] A5 · [ ] A6 · [ ] A7 ·
-  [ ] A8 · [ ] A9 · [ ] A10
+  [ ] A8 · [ ] A9 · [ ] A10 · [ ] A11 (Nymeria→Durik)
 - [ ] B1 · [ ] B2 · [ ] B3 · [ ] B4 · [ ] B5 · [ ] B6 · [ ] B7 ·
-  [ ] B8 · [ ] B9
+  [ ] B8 · [~] B9 — **parziale (2026-07-02)**: Collana ✅
+  (`PG/Artefatti/Artefatti-Pg/Hella/01_Collana_dei_Semi_Eterni.md`) e
+  file-risultati del viaggio ✅
+  (`...IL-VIAGGIO-NELL'INCUDINE-DEL-MONDO-risultati.md`); restano
+  Sonjak, schede Belkram/Urialle (morti, D13) e i collegamenti da
+  INDICE/B2/B1
 - [ ] C1 · [ ] C2 · [ ] C3
 - [x] D1 · [x] D2 · [x] D3 · [x] D4 · [x] D5 · [x] D6 (Skullcrusher) ·
   [x] D7 (1.000 anni) · [x] D8 (livello 13, artefatti) · [x] D9
-  (PG/Artefatti canonico) — decisioni acquisite 2026-07-02
-- [ ] Q4 (deprecare, default sicuro) · [ ] Q5 (Oakenshield?) ·
-  [ ] Q6 (file risultato viaggio spirito)
+  (PG/Artefatti canonico) · [x] D10 (deprecare) · [x] D11 (Oakenshield) ·
+  [x] D12 (risultati viaggio) · [x] D13 (Belkram e Urialle morti) ·
+  [x] D14 (Durik) — **tutte le decisioni acquisite 2026-07-02; nessuna
+  domanda aperta bloccante**
 
 ---
 

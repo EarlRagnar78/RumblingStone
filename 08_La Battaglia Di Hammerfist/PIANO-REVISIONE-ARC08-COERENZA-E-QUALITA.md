@@ -66,9 +66,9 @@
 | E1 | Hammerfist deve reggere l'assedio dell'avanguardia della Mano Rossa; l'esito atteso (su cui ARC-09 è costruito) è la **vittoria dei difensori** con avanguardia annientata/dispersa. I gradi dell'esito restano ai dadi (vedi B1) | state.md §2.2 r.132; tutto ARC-09 |
 | E2 | Bilancio atteso: **210 nani morti, 90 superstiti** guidati da Re Thorek (difensori iniziali: 300) | coherence.md r.50; state.md §2.5 r.202 |
 | E3 | Fine battaglia = **Day 19** del March Clock (= caduta di Terrelton, sync point con ARC-09) | state.md §2.1 r.104 |
-| E4 **v2.2** | ~~PG 12→13~~ **SUPERATO dal canone DM (2026-07-02): il party è GIÀ al 13°** durante l'ARC-07 (Bracieri risvegliati, Corona in risveglio — piano ARC-07 D8). La progressione di Hammerfist va rideterminata: vedi **Q6** | DM 2026-07-02; state.md §0 r.40 era forward-written e sbagliato |
+| E4 **v2.2** | ~~PG 12→13~~ **SUPERATO dal canone DM (2026-07-02): il party è GIÀ al 13°** durante l'ARC-07 (Bracieri risvegliati, Corona in risveglio — piano ARC-07 D8). **Hammerfist CONSOLIDA il 13°** (D9): il 14° arriva alla Battaglia di Rethmar | DM 2026-07-02; state.md §0 r.40 era forward-written e sbagliato |
 | E5 | Alla vittoria: i 4 PG nominati **Custodi Eterni** da Re Thorek + **Cerimonia delle 100 Asce** (scena già scritta e a standard) | state.md §4 r.246; Cerimonia-delle-100-Asce.md |
-| E6 | **Struttura a due tempi (D6)**: le prime sessioni sono un **flashback di qualche settimana prima** giocato dai giocatori con i pregen "Eroi di Hammerfist" (Borin Ferropugno, Dara Occhiolesto, Thorin Runaforte, Nala Cantapietre) — ricognizione e primi giorni d'assedio; i PG reali (**Rumbling Stones**) arrivano **quasi alla fine della battaglia** e sono gli **artefici della riscossa** dei nani. Origine della regia: ARC-07 P6-INTEGRAZIONE r.621-753 ("L'ARRIVO DEI RUMBLING STONES") | DM 2026-07-02; Guida DM r.460-461, r.2150, r.2294 |
+| E6 | **Struttura a due tempi (D6+D9)**: quasi tutta la battaglia si gioca col **flashback dei pregen "Eroi di Hammerfist"** (Borin Ferropugno, Dara Occhiolesto, Thorin Runaforte, Nala Cantapietre) — ricognizione e giorni d'assedio, che producono **BONUS per il finale, non PX** (D9); i PG reali (**Rumbling Stones**) giocano **SOLO il finale della battaglia**, arrivando come **artefici della riscossa** dei nani. Origine della regia: ARC-07 P6-INTEGRAZIONE r.621-753 ("L'ARRIVO DEI RUMBLING STONES") | DM 2026-07-02; Guida DM r.460-461, r.2150, r.2294 |
 | E7 | Capitana **Lythiel Alar-Wen** compare nella sessione finale e alla Cerimonia; consegna la Ghianda a Hella | state.md §4 r.251; Cerimonia §3.2 |
 | E8 | Rapporto forze: **900 attaccanti vs 300 difensori** (3:1) | state.md r.185; Guida DM r.628/854 |
 
@@ -94,7 +94,7 @@
 | Q3 | **Chi sono i ranger elfici di "Capitano Lunapiena"?** I file battaglia hanno un capitano elfico (Lunapiena) + Signore Ventolesto (gufo celestiale) + Orion Pelleorsa (druido); la Cerimonia canonizza Lythiel (Sacred Forest). Due comandi elfici alla stessa battaglia, mai riconciliati; nessuno ha scheda PNG | Lunapiena = compagnia ranger **indipendente** dell'Elsir Vale (né Tiri Kitor né Sacred Forest), che a fine battaglia resta a presidio di Hammerfist (quindi NON va sommata ai difensori di Rethmar in ARMATE-SYNC). Lythiel resta l'unico canale col Sacred Forest `[INFERRED]` |
 | Q4 | **Ruolo post-battaglia previsto per i 4 Eroi di Hammerfist (pregen)?** Dopo il flashback (D6) restano PNG vivi sul campo: nessun file dice che ne è di loro. Sono un asset narrativo pronto: ARC-09 ha PNG nanici senza volto (i 300 mercenari, il presidio) | Se sopravvivono al giocato: Borin campione di Re Thorek a Hammerfist; Dara ed esploratori assorbiti nelle staffette per Thorik (Cerimonia §6.4); Thorin Runaforte officia il culto dei caduti; Nala passa a Dauth (aggancio Torneo). **Khorn resta distinto** (D5). Da preparare come proposta, si blocca al gioco `[INFERRED]` |
 | Q5 | **File ridondanti/meta: deprecare o eliminare?** Riguarda le 3 generazioni di atlante doppione (A8), `combat_prompts_guide.md` (guida ai prompt AI usati per generare il sistema — artefatto storico di lavorazione, non materiale di gioco) e i placeholder 01_/03_ (A6) | **Deprecare con banner**, mai eliminare (valore storico, regola §0.8). L'eliminazione fisica solo su ordine esplicito del DM |
-| Q6 | **Progressione di livello a Hammerfist (cascata da ARC-07 D8)**: il party arriva alla battaglia **già al 13°**, ma tutto il canone preparato a valle assumeva 12→13 qui e APL 13 all'inizio di ARC-09 (i cui lotti B5/B6 sono già stati auditati su 13→16) | Due opzioni: (a) **Hammerfist = 13→14** e ARC-09 slitta di +1 (richiede una passata di ri-budget su ARC-09: quest a 14, Rethmar a 15 — costosa); (b) **Hammerfist consolida il 13°** (XP calibrati perché il 14° arrivi dove ARC-09 già lo prevede, alla Battaglia di Rethmar) — **consigliata**: preserva l'intero impianto ARC-09 già verificato. In entrambi i casi A3 riscrive gli XP di conseguenza |
+| ~~Q6~~ → **D9 (RISOLTA 2026-07-02)** | **Hammerfist CONSOLIDA il 13° livello (opzione b)** — il 14° arriva dove ARC-09 già lo prevede (Battaglia di Rethmar), preservando l'impianto ARC-09 auditato. **Il trucco del DM**: i giocatori giocano quasi tutta la battaglia **con i pregen (PNG)**, e quelle sessioni **NON danno PX ai Rumbling Stones: danno BONUS** quantificati per il finale (posizioni, risorse, intel, vantaggi tattici — nello spirito delle conseguenze dell'EVENT-DECK ARC-09); **i Rumbling Stones giocano SOLO il finale della battaglia** (l'ingresso da riscossa, E6). A3 riscrive gli XP di conseguenza; B1 aggiunge la **tabella di conversione "esiti del flashback → bonus al finale"** | DM 2026-07-02 (risposta diretta) |
 
 ---
 
@@ -151,24 +151,27 @@
 - **Accettazione**: un solo totale orda post-Day 19 (scenario default) in
   tutto il repo; changelog aggiornato.
 
-### A3. XP e livelli: il testo promette 13°→15°, il canone reale è "ingresso al 13°" — dipende da Q6
+### A3. XP e livelli: il testo promette 13°→15°, il canone è "13° consolidato" — applicare D9
 - **Problema**: `hammerfist_encounters...-final.md` r.1382-1383: "GRAN TOTALE
   34.400 XP (8.600 per PG) — abbastanza per portare PG da 13° a 15° livello".
-  Il canone reale (E4 v2.2, ARC-07 D8) è: il party ARRIVA al 13°; la
-  progressione in uscita dipende da Q6 (consigliata: consolidare il 13°,
-  livello 14 alla Battaglia di Rethmar come ARC-09 già prevede). In più le
-  prime sessioni le giocano i pregen (D6/E6): l'attribuzione degli XP al
-  party va chiarita.
-- **Azione**: riscrivere la sezione "RIASSUNTO XP E RICOMPENSE": budget per
-  **APL 13**, nota esplicita "sessioni-flashback = XP ai pregen (non
-  cumulano sul party); sessioni col party reale + bonus narrativo = XP ai
-  Rumbling Stones, dimensionati secondo **Q6**
-  `[needs DM confirmation sui totali]`". Stessa passata sulla sezione
-  ricompense della Guida DM se duplicata; ricontrollare che gli EL degli
-  incontri del party reale reggano ad APL 13 con artefatti (il precedente:
-  ARC-06 usava EL 17 su party di 13° — villans.md r.1).
+  Il canone reale (E4 v2.2, D9) è: il party ARRIVA al 13° e **Hammerfist lo
+  consolida** — il 14° arriva alla Battaglia di Rethmar come ARC-09 già
+  prevede. E quasi tutta la battaglia la giocano i pregen (E6), che per D9
+  **non producono PX ma BONUS**.
+- **Azione**: riscrivere la sezione "RIASSUNTO XP E RICOMPENSE" secondo
+  **D9**: (1) sessioni-flashback coi pregen = **zero PX ai Rumbling
+  Stones**; ogni obiettivo del flashback produce un **bonus quantificato
+  per il finale** (rimando alla tabella di conversione di B1); (2) il
+  finale giocato dai Rumbling Stones assegna PX da APL 13 **dosati per non
+  scattare il 14°** prima di Rethmar (ARC-09) — riserva narrativa
+  esplicita ("il grosso dell'esperienza matura nelle quest personali di
+  ARC-09"); (3) stessa passata sulla sezione ricompense della Guida DM se
+  duplicata; (4) ricontrollare che gli EL del finale reggano ad APL 13 con
+  artefatti (precedente: ARC-06 usava EL 17 su party di 13° — villans.md
+  r.1).
 - **Accettazione**: nessun riferimento residuo a "13° a 15°" né a "12→13";
-  attribuzione pregen/party esplicita; numeri compatibili con Q6 risolta.
+  zero PX attribuiti alle sessioni pregen; il totale PX del finale NON
+  porta il party al 14° prima di ARC-09/Rethmar.
 
 ### A4. Scala delle mappe: 3 m vs 1,5 m per quadretto
 - **Problema**: `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` dichiara
@@ -352,8 +355,14 @@
   Cerimonia, 150 lance, hook ARC-09); (3) **Caduta di Hammerfist**
   (contingenza: i PG evacuano i civili per i Passaggi Antichi — la mappa
   L3 esiste già —, la Mano Rossa guadagna una base, delta quantificato sugli
-  scenari ARMATE-SYNC di Rethmar); più i rami di Fauci di Palude (Q1). Ogni
-  ramo con conseguenze numeriche su ARC-09, nessun ramo "game over".
+  scenari ARMATE-SYNC di Rethmar); più i rami di Fauci di Palude (Q1).
+  **In più (D9): la tabella di conversione "esiti del flashback pregen →
+  bonus al finale"** — per ogni obiettivo delle sessioni pregen
+  (ricognizione riuscita, difese preparate, breccia contenuta, comandanti
+  nemici logorati...) un bonus concreto e quantificato di cui i Rumbling
+  Stones godono nel finale (posizioni, PNG vivi, risorse, −CR a un
+  incontro, intel), MAI PX. Ogni ramo con conseguenze numeriche su ARC-09,
+  nessun ramo "game over".
 - **Accettazione**: il DM può arbitrare qualunque esito senza improvvisare;
   ogni ramo aggancia i tracker con numeri; il ramo default coincide col
   canone preparato (E1-E8).
@@ -582,10 +591,10 @@ accettazione, commit, riga di changelog in state.md se il canone è cambiato;
 - [ ] B1 · [ ] B2 (attende ARC-07 B2) · [ ] B3 · [ ] B4 · [ ] B5 ·
   [ ] B6 · [ ] B7
 - [ ] C1 · [ ] C2 · [ ] C3 · [ ] C4
-- [x] D6 (v2.1: riscossa quasi a fine battaglia) · [x] D7 · [x] D8 —
+- [x] D6 (riscossa: i RS giocano solo il finale) · [x] D7 · [x] D8 ·
+  [x] **D9 (ex-Q6: 13° consolidato; pregen → bonus, non PX)** —
   decisioni DM acquisite 2026-07-02
-- [ ] Q1 · [ ] Q2 · [ ] Q3 · [ ] Q4 · [ ] Q5 · [ ] **Q6 (progressione
-  livello, consigliata opzione b)** — default proposti; il DM può
+- [ ] Q1 · [ ] Q2 · [ ] Q3 · [ ] Q4 · [ ] Q5 — default proposti; il DM può
   confermarli o cambiarli prima delle sessioni indicate
 
 ---

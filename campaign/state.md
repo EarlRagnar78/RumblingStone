@@ -1062,4 +1062,19 @@ entries — they become campaign history.
             modificati gli statblock estesi dei PNG maggiori nella
             Guida DM (fuori dal campione B5; li coprono B3 + eventuale
             passata dedicata).
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto B, sessione 13 (B3): 13 schede
+            PNG create in `PNG/` (file piatti, formato AGENTS.md
+            Role/Status/Location/Motivation/CR/Key stats/Notes + campo
+            "esiti possibili"), stat **puntate** alle appendici (fonte
+            unica), non duplicate. Nemici: Fauci_di_Palude (rami D10),
+            Generale_Grimjaw, Gorthak_il_Trifronte. Alleati:
+            Re_Thorek_Hammerfist (default vive / vittoria costosa
+            muore, B1 §2), Dana_Forgiapietra, Capitano_Lunapiena (D13
+            indipendente), Signore_Ventolesto, Orion_Pelleorsa. Pregen
+            (D14): Borin_Ferropugno, Dara_Occhiolesto, Thorin_Runaforte,
+            Nala_Cantapietre. Più Khorn (D5, 150 lance, stat [INFERRED]
+            — non nelle appendici). INDICE (ARC08-00) aggiornato con la
+            tabella del cast. Scelta: file piatti in PNG/ (precedente
+            Il_Collezionista_Rakshasa.md) invece di 13 sottocartelle,
+            per non moltiplicare entry filesystem per schede snelle.
 ```

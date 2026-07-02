@@ -114,10 +114,32 @@ master** rilevanti alla sessione.
 
 ---
 
-## 5. Deliverable ancora da produrre (Lotto B/C)
+## 5. Cast su scheda (B3, fatto)
 
-- **B3** — schede PNG in `PNG/` (Re Thorek, Dana, Grimjaw, Gorthak,
-  Fauci, Lunapiena, Ventolesto, Orion, 4 pregen, Khorn).
+Ogni PNG nominato dell'arco ha una scheda in `PNG/` (formato AGENTS.md,
+stat puntate alle appendici, campo "esiti possibili"):
+
+| PNG | File | Ruolo |
+|---|---|---|
+| Fauci di Palude | `PNG/Fauci_di_Palude.md` | Drago avanguardia (rami D10) |
+| Generale Grimjaw | `PNG/Generale_Grimjaw.md` | Comandante di campo |
+| Gorthak il Trifronte | `PNG/Gorthak_il_Trifronte.md` | Ariete vivente |
+| Re Thorek Hammerfist | `PNG/Re_Thorek_Hammerfist.md` | Re / comandante difensori |
+| Madre Dana Forgiapietra | `PNG/Dana_Forgiapietra.md` | Guida spirituale |
+| Capitano Lunapiena | `PNG/Capitano_Lunapiena.md` | Ranger elfici (D13, indipendente) |
+| Signore Ventolesto | `PNG/Signore_Ventolesto.md` | Gufo alpha |
+| Orion Pelleorsa | `PNG/Orion_Pelleorsa.md` | Druido |
+| Borin Ferropugno | `PNG/Borin_Ferropugno.md` | Pregen (D14: campione) |
+| Dara Occhiolesto | `PNG/Dara_Occhiolesto.md` | Pregen (D14: staffette) |
+| Thorin Runaforte | `PNG/Thorin_Runaforte.md` | Pregen (D14: culto caduti) |
+| Nala Cantapietre | `PNG/Nala_Cantapietre.md` | Pregen (D14: Dauth) |
+| Khorn | `PNG/Khorn.md` | Ufficiale nanico (D5, 150 lance) |
+
+Cast già schedato altrove: `PNG/Lythiel/Lythiel.md` (Sacred Forest, E7),
+`PNG/Tempestas/Tempestas.md` (bardo tempeste).
+
+## 6. Deliverable ancora da produrre (Lotto B/C)
+
 - **B4** — tesoro/WBL dell'arco.
 - **B5** — `ERRATA-ARC08-35-Verification.md` (statblock + pregen
   stampabili).

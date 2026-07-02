@@ -1,12 +1,15 @@
+> ⚠️ **DEPRECATED (2026-07)** — piano ARC-08 A8: terza generazione
+> superata dell'atlante visivo. **Master**:
+> `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` (matrice di contenuto in
+> testa a quel file — la MAPPA 3Y "Il Ponte Sospeso" di questo file è
+> stata migrata là, essendo l'unica mappa mancante nel master).
+> Contenuto mantenuto per storico (D12), non cancellato.
+
 # **L'ATLANTE VISIVO DEFINITIVO DELLA BATTAGLIA DI HAMMERFIST**
 *Una Guida Completa, Cronologica e Dettagliata a Tutte le Mappe della Campagna*
 
-> **Scopo**: atlante visivo completo e cronologico di tutte le mappe
-> della campagna, con indice dettagliato di navigazione.
-> **Stato**: canonico (materiale di modulo; possibile sovrapposizione
-> con altri atlanti del repo — vedi A8 per la matrice ed il master
-> eletto). Canone di trama in `campaign/state.md`, non ancora giocato
-> (piano ARC-08 A0).
+> **Stato**: DEPRECATO — vedi banner sopra. Canone di trama in
+> `campaign/state.md`, non ancora giocato (piano ARC-08 A0).
 > **Ultima revisione**: 2026-07-02.
 
 ---

@@ -63,7 +63,9 @@ periodica sopra la colonna.
 Il flashback dei pregen "Eroi di Hammerfist" (Borin Ferropugno, Dara
 Occhiolesto, Thorin Runaforte, Nala Cantapietre — D6, qualche
 settimana prima dell'assedio) è la finestra di gioco su questa marcia.
-Mappe già pronte in `Mappe/Hammerfist-Lotto-1-Ricognizione.md`:
+Mappe già pronte in `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` (master
+visivo, piano ARC-08 A8; griglia di precisione per la 1A-2 in
+`Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md`):
 
 - **MAPPA 1A-1 — Il Sentiero Nascosto**: infiltrazione oltre una
   pattuglia di 3 Worg Riders in avanscoperta della colonna (skill
@@ -81,8 +83,8 @@ l'opportunità narrativa e tattica, non il bonus meccanico finale.
 
 ## 4. Arrivo e ancoraggio al March Clock
 
-- **Assedio**: 3 giorni di battaglia (Giorno 1-3, vedi le mappe
-  `Mappe/Hammerfist-Lotto-2-Assedio.md` e `-Lotto-3-FINALE.md`).
+- **Assedio**: 3 giorni di battaglia (Giorno 1-3, vedi
+  `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md`, master visivo).
 - **Fine battaglia = Day 19 del March Clock** (E3, sync point con la
   caduta di Terrelton sulla rotta principale — state.md §2.1), quando
   i Rumbling Stones riemergono al Cuore della Montagna (ARC-07 D16) e

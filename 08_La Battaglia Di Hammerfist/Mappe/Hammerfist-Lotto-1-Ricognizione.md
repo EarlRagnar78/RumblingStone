@@ -1,3 +1,10 @@
+> ⚠️ **DEPRECATED (2026-07)** — piano ARC-08 A8: generazione superata.
+> **Master**: `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` (mappe 1A-1,
+> 1A-2, 1A-3 — matrice di contenuto in testa a quel file). Per la
+> griglia di precisione della 1A-2 vedi anche
+> `Hammerfist-L1-REVISED-Ultra-Clear.md`. Contenuto mantenuto per
+> storico (D12), non cancellato.
+
 # HAMMERFIST TACTICAL MAPS - LOTTO 1
 ## Sessione 1: Ricognizione (Mappe 1A-1 fino 1A-3)
 

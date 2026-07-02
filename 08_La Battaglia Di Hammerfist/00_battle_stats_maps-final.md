@@ -1,10 +1,13 @@
+> ⚠️ **DEPRECATED (2026-07)** — piano ARC-08 A8: sottoinsieme superato
+> dell'atlante visivo. **Master**:
+> `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` (matrice di contenuto in
+> testa a quel file). Contenuto mantenuto per storico (D12), non
+> cancellato.
+
 # **ATLANTE VISIVO DELLA BATTAGLIA DI HAMMERFIST**
 *Una Guida Completa alle Mappe Tattiche e Narrative della Campagna*
 
-> **Scopo**: sottoinsieme dell'atlante visivo (mappe + statistiche di
-> battaglia) — vedi A8 per la matrice di sovrapposizione con gli altri
-> atlanti del repo e il master eletto.
-> **Stato**: canonico (materiale di modulo). Canone di trama in
+> **Stato**: DEPRECATO — vedi banner sopra. Canone di trama in
 > `campaign/state.md`, non ancora giocato (piano ARC-08 A0).
 > **Ultima revisione**: 2026-07-02.
 

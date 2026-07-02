@@ -1,14 +1,17 @@
+> ⚠️ **DEPRECATED (2026-07)** — piano ARC-08 A8: generazione superata
+> dell'atlante visivo (l'"Appendice di Gioco Definitiva" promessa
+> nell'indice non è mai stata scritta in questo file — vedi invece
+> `00_Schede_dei_Personaggi_Unità_e_Regolamento_di_Battaglia.md` per
+> schede/regolamento). **Master mappe**:
+> `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` (matrice di contenuto in
+> testa a quel file). Contenuto mantenuto per storico (D12), non
+> cancellato.
+
 # **ATLANTE VISIVO DELLA BATTAGLIA DI HAMMERFIST**
 *Una Guida Completa alle Mappe Tattiche e Narrative della Campagna*
 
-> **Scopo**: atlante visivo cronologico delle mappe tattiche e
-> narrative dell'arco (descrizioni, prompt immagine, scala, dettagli
-> tattici per il DM); include anche l'appendice di gioco definitiva
-> (schede, regolamento di massa, strumenti di tracciamento) unita in
-> un unico flusso — vedi A8 per la matrice di sovrapposizione con gli
-> altri atlanti del repo.
-> **Stato**: canonico (materiale di modulo; canone di trama in
-> `campaign/state.md`, non ancora giocato — vedi piano ARC-08 A0).
+> **Stato**: DEPRECATO — vedi banner sopra. Canone di trama in
+> `campaign/state.md`, non ancora giocato (piano ARC-08 A0).
 > **Ultima revisione**: 2026-07-02.
 
 ---

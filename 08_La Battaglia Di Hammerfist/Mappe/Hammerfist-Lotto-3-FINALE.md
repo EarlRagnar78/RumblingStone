@@ -1,3 +1,11 @@
+> ⚠️ **DEPRECATED (2026-07)** — piano ARC-08 A8: generazione superata
+> (manca inoltre MAPPA 3Y "Il Ponte Sospeso", mai stata qui — vedi il
+> master). **Master**: `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md`
+> (mappe 3X, 3Y, 3Z, 5, 4X, 4-finale — matrice di contenuto in testa a
+> quel file). Per la griglia di precisione della 3X vedi anche
+> `Hammerfist-L3-REVISED-Ultra-Clear.md` (lì rinominata H3-1).
+> Contenuto mantenuto per storico (D12), non cancellato.
+
 # HAMMERFIST TACTICAL MAPS - LOTTO 3 FINALE
 ## Sessione 3: Dalle Profondità + Sessione 4: Vittoria Finale (5 Mappe)
 

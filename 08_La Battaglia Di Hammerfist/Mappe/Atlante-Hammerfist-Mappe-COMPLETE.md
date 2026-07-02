@@ -1,18 +1,63 @@
 # LA BATTAGLIA DI HAMMERFIST
 ## ATLANTE VISIVO COMPLETO - MAPPE TATTICHE ILLUSTRATE
 
+> **Stato**: canonico — **MASTER VISIVO** dell'arco (piano ARC-08 A8,
+> 2026-07-02). Canone di trama in `campaign/state.md`, non ancora
+> giocato (piano ARC-08 A0). **Ultima revisione**: 2026-07-02.
+
 ---
 
-## 📚 INDICE COMPLETO MAPPE (16 TOTALI)
+## 📖 MATRICE DI CONTENUTO (A8) — chi ha cosa, cosa è master
+
+Quattro generazioni di atlante e due generazioni di mappe tattiche
+sono confluite qui. Questo file è il **master visivo** (narrativo,
+descrizioni, prompt immagine, dettagli tattici da tavolo) per
+**tutte** le mappe dell'arco. I tre file `Hammerfist-L{1,2,3}-REVISED-
+Ultra-Clear.md` restano **master tattici** ma **solo** per le tre
+mappe ad altissima densità di coordinate che coprono (griglia
+numerata, viste multiple) — per tutto il resto, e per la lettura
+narrativa, questo file è la fonte.
+
+| # | Mappa | Generazioni 00_ (a/b/c) | Lotto-N | Tattico dedicato | Master |
+|---|---|---|---|---|---|
+| 1 | 1A-1 Il Sentiero Nascosto | a✅ b✅ c✅ (DEPRECATED) | Lotto-1 ✅ (DEPRECATED) | — | **questo file** |
+| 2 | 1A-2 Il Torrione di Vedetta | a✅ b✅ c✅ (DEPRECATED) | Lotto-1 ✅ (DEPRECATED) | `Hammerfist-L1-REVISED-Ultra-Clear.md` (griglia) | **questo file** (narrativo) + L1-REVISED (griglia) |
+| 3 | 1A-3 Campo della Mano Rossa | — | Lotto-1 ✅ (DEPRECATED) | — | **questo file** |
+| 4 | MAPPA 1 Disposizione Generale G1 | a✅ b✅ c✅ (DEPRECATED) | — | — | **questo file** |
+| 5 | MAPPA 2A/2B/2C Fortezza (top-down/frontale/laterale) | a/b/c avevano un'unica "MAPPA 2 Unificata" (DEPRECATED) — qui riorganizzata in 3 viste | Lotto-2 ✅ (2A/2B/2C, DEPRECATED) | `Hammerfist-L2-REVISED-Ultra-Clear.md` (griglia, solo 2A) | **questo file** (narrativo) + L2-REVISED (griglia 2A) |
+| 6 | MAPPA 2 Schieramento Difensivo Truppe | — | — | — | **questo file** |
+| 7 | MAPPA 3 Movimenti e Fasi Assalto | — | Lotto-2 ✅ (DEPRECATED) | — | **questo file** |
+| 8 | MAPPA 4 Evoluzione Danni (Giorni 1-3) | c✅ (DEPRECATED) | Lotto-2 ✅ (DEPRECATED) | — | **questo file** |
+| 9 | MAPPA 2B-Corretta Attacco del Drago | a✅ b✅ c✅ (DEPRECATED) | Lotto-2 ✅ (DEPRECATED) | — | **questo file** |
+| 10 | MAPPA 3X Ingresso Passaggi Antichi | a✅ b✅ c✅ (DEPRECATED) | Lotto-3 ✅ (DEPRECATED) | `Hammerfist-L3-REVISED-Ultra-Clear.md` (griglia, come H3-1) | **questo file** (narrativo) + L3-REVISED (griglia) |
+| 11 | MAPPA 3Y Il Ponte Sospeso | b✅ c✅ (DEPRECATED) — **mancava qui, migrata in A8** | — | — | **questo file** |
+| 12 | MAPPA 3Z Incrocio Silenzioso | b✅ c✅ (DEPRECATED; a❌ mancante) | Lotto-3 ✅ (DEPRECATED) | — | **questo file** |
+| 13 | MAPPA 5 Cuore della Montagna | a✅ b✅ c✅ (DEPRECATED) | Lotto-3 ✅ (DEPRECATED) | — | **questo file** |
+| 14 | MAPPA 4X Campo Battaglia Finale (laterale) | c✅ (DEPRECATED) | Lotto-3 ✅ (DEPRECATED) | — | **questo file** |
+| 15 | MAPPA 4 Battaglia Finale Aerea e Terrestre | a✅ b✅ c✅ (DEPRECATED) | Lotto-3 ✅ (DEPRECATED) | — | **questo file** |
+
+**File deprecati da questa matrice** (banner DEPRECATED aggiunto, D12 — puntano tutti qui):
+`00_battle_stats_maps-final.md` (a), `00_ATLANTE VISIVO DELLA BATTAGLIA DI HAMMERFIST.md` (b),
+`00_ATLANTE VISIVO DELLA BATTAGLIA DI HAMMERFIST-complete.md` (c),
+`Mappe/Hammerfist-Lotto-1-Ricognizione.md`, `Mappe/Hammerfist-Lotto-2-Assedio.md`, `Mappe/Hammerfist-Lotto-3-FINALE.md`.
+
+**File NON deprecati** (master tattici di categoria diversa, non sovrapposti):
+`Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md`, `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md`,
+`Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` — coprono in griglia-precisa solo 1A-2, 2A e 3X/H3-1;
+per tutte le altre mappe (e per la lettura narrativa) restare su questo file.
+
+---
+
+## 📚 INDICE COMPLETO MAPPE (17 TOTALI)
 
 ### 🔍 SESSIONE 1: L'OMBRA SULLA MONTAGNA - Ricognizione (3 mappe)
 1. Mappa 1A-1 - Il Sentiero Nascosto
-2. Mappa 1A-2 - Il Torrione di Vedetta
+2. Mappa 1A-2 - Il Torrione di Vedetta (griglia precisa: `Hammerfist-L1-REVISED-Ultra-Clear.md`)
 3. Mappa 1A-3 - Campo della Mano Rossa (Vista Aerea)
 
 ### ⚔️ SESSIONE 2: TRE GIORNI DI SANGUE E FERRO - Assedio (7 mappe)
 4. Mappa 1 - Disposizione Generale Battaglia Giorno 1
-5. Mappa 2A - Fortezza Hammerfist Vista dall'Alto
+5. Mappa 2A - Fortezza Hammerfist Vista dall'Alto (griglia precisa: `Hammerfist-L2-REVISED-Ultra-Clear.md`)
 6. Mappa 2B - Fortezza Vista Frontale (Prospettiva Attaccante)
 7. Mappa 2C - Fortezza Sezione Laterale
 8. Mappa 2 - Schieramento Difensivo Truppe
@@ -20,14 +65,15 @@
 10. Mappa 4 - Evoluzione Danni (Giorni 1-3)
 11. Mappa 2B-Corretta - Attacco del Drago
 
-### 🏃 SESSIONE 3: DALLE PROFONDITÀ DELLA TERRA - Fuga (3 mappe)
-12. Mappa 3X - Ingresso Passaggi Antichi
-13. Mappa 3Z - Incrocio Silenzioso
-14. Mappa 5 - Cuore della Montagna
+### 🏃 SESSIONE 3: DALLE PROFONDITÀ DELLA TERRA - Fuga (4 mappe)
+12. Mappa 3X - Ingresso Passaggi Antichi (griglia precisa: `Hammerfist-L3-REVISED-Ultra-Clear.md`)
+13. Mappa 3Y - Il Ponte Sospeso
+14. Mappa 3Z - Incrocio Silenzioso
+15. Mappa 5 - Cuore della Montagna
 
 ### 🏆 SESSIONE 4: LA TEMPESTA E LA VITTORIA FINALE (2 mappe)
-15. Mappa 4X - Campo Battaglia Finale (Vista Laterale)
-16. Mappa 4 - Battaglia Finale Aerea e Terrestre
+16. Mappa 4X - Campo Battaglia Finale (Vista Laterale)
+17. Mappa 4 - Battaglia Finale Aerea e Terrestre
 
 ---
 
@@ -831,6 +877,41 @@ Cortile Interno ridotto inferno fumante. Pozze acido verde corrosivo steam ovunq
 - **Success:** All 90 evacuate, ingresso collapses (Borin trigger mechanism)
 - **Partial:** 80-89 evacuate, 1-10 nani rear sacrificed
 - **Failure:** <80 evacuate = TPK risk (Overwhelmed)
+
+---
+
+### MAPPA 3Y: IL PONTE SOSPESO
+**Immagine:** [157b] `hammerfist-3y.png` `[INFERRED — numero immagine non
+ancora assegnato, migrato da 00_ATLANTE VISIVO...-complete.md — A8]`
+
+**Tipo:** Retroguardia / difesa a strozzatura
+**Scala:** 1 quadrato = 1,5 metri
+**Timing:** Subito dopo l'evacuazione di MAPPA 3X, prima dell'incrocio di MAPPA 3Z
+
+**Descrizione Scenario:**
+Il tunnel si allarga in una caverna divisa in due da un baratro buio e
+profondo. L'unico passaggio è un ponte di pietra stretto (3m) e senza
+parapetti: punto perfetto per una difesa disperata di retroguardia
+mentre il resto dei nani continua l'evacuazione verso MAPPA 3Z e
+MAPPA 5.
+
+**Prompt per l'Immagine:**
+> *"Arte fantasy, D&D. Una vasta caverna sotterranea. Un ponte di
+> pietra stretto e antico, senza ringhiere, attraversa un abisso
+> oscuro da cui non si vede il fondo. Sulla sponda opposta, un
+> guerriero nano corazzato si erge a difesa del ponte, la sua ascia
+> pronta a respingere l'orda di inseguitori che sta per raggiungerlo."*
+
+**Elementi Mappa:**
+- **Piattaforma Rocciosa (Nord):** Dara (arco) e Thorin (supporto divino) in posizione di copertura
+- **Ponte di Pietra (Centro, largo 3m):** Borin tiene la strozzatura in mischia
+- **Baratro Profondo (ambo i lati):** una creatura spinta oltre il bordo tenta un TS Riflessi CD 18 per aggrapparsi, altrimenti cade nell'oscurità (20d6 danni da caduta)
+- **Inseguitori (Sud):** Orchi e Hobgoblin in arrivo dai tunnel di MAPPA 3X
+
+**Meccaniche Chiave:**
+- Combattimento a un-contro-uno forzato dalla larghezza del ponte (nessun fiancheggiamento per gli inseguitori)
+- TS Riflessi CD 18 per non cadere se spinto/respinto oltre il bordo
+- Caduta nel baratro: 20d6 danni (letale quasi certa a questo livello di party PNG)
 
 ---
 

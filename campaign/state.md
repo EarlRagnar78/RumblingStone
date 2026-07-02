@@ -884,4 +884,25 @@ entries — they become campaign history.
             il contenuto di `03_` (deprecato con banner, D12, contenuto
             non toccato per policy A6) — fuori scope per questo lotto
             terminologico.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto A, sessione 5 (A8): quattro
+            generazioni di atlante + due generazioni di mappe tattiche
+            consolidate, nessun cambio di canone di trama. Eletto
+            `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` **master
+            visivo** (17 mappe dopo la migrazione, sotto); i tre
+            `Hammerfist-L{1,2,3}-REVISED-Ultra-Clear.md` restano
+            **master tattici** ma solo per le 3 mappe a griglia
+            ultra-precisa che coprono (1A-2, 2A, 3X/H3-1) — non
+            deprecati, categoria diversa (non sovrapposti). Banner
+            DEPRECATED (D12) su 6 file superati: `00_battle_stats_
+            maps-final.md`, `00_ATLANTE VISIVO...md`, `00_ATLANTE
+            VISIVO...-complete.md`, `Mappe/Hammerfist-Lotto-{1,2,3}-
+            *.md`. Scoperta e sanata una lacuna reale: **MAPPA 3Y "Il
+            Ponte Sospeso"** esisteva solo nelle generazioni (b)/(c)
+            deprecate e MAI nel master — migrata nel master tra 3X e
+            3Z (17ª mappa) prima di deprecare le fonti, per non perdere
+            contenuto. Matrice di contenuto (mappa × file × stato)
+            aggiunta in testa al master. Riferimenti attivi ripuntati:
+            `01_MANO_ROSSA_MARCIA_VERSO_HAMMERFIST.md` (scritto in A6,
+            puntava ai Lotto-N deprecati) e la lista file Arc-08 di
+            `campaign-history.md`.
 ```

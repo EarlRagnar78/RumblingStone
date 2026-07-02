@@ -184,10 +184,9 @@ The party descends through a chain of connected underground locations:
 - **Source:** `08_La Battaglia Di Hammerfist/` (9 files + 2 subdirectories: Mappe/, immage_campaign/)
 - **Main DM Guide:** `00_Final_hammerfist_battle-La_Mano_Rossa_del_Destino-Guida_Completa_del_DM.md` (168KB, 3312 lines)
 - **Supplementary files:**
-  - `00_ATLANTE VISIVO DELLA BATTAGLIA DI HAMMERFIST-complete.md` — Visual atlas with tactical maps
+  - `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` — Visual atlas with tactical maps (master, piano ARC-08 A8; supersedes `00_ATLANTE VISIVO...-complete.md` and `00_battle_stats_maps-final.md`, both DEPRECATED)
   - `00_Schede_dei_Personaggi_Unità_e_Regolamento_di_Battaglia.md` — Unit & character sheets
   - `00_SCHEDE_DI_BATTAGLIA_E_REGISTRO_PERDITE_Hammerfist.md` — Loss tracking sheets
-  - `00_battle_stats_maps-final.md` — Battle stats and maps
   - `hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md` — Encounter guide
   - `mass_combat_guide_Dm.md` — Mass combat mechanics
   - `combat_prompts_guide.md` — Prompt sequence for mass combat

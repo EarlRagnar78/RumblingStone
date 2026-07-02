@@ -210,13 +210,65 @@ maturati e si applicano al finale.
 
 ---
 
-## 6. Conseguenze a lungo periodo (rimando)
+## 6. Conseguenze a lungo periodo (C2)
 
-La tabella delle **conseguenze a lungo periodo** (formato echi ARC-09:
-evento → eco → quando riemerge → file che lo gestisce), con la runa dei
-Custodi Eterni quantificata e la carta-evento "Il ritorno di Fauci di
-Palude", è deliverable del piano ARC-08 **C2** (Lotto C), che aggiunge
-una sezione a questo file. **Non ancora scritta.**
+> Formato echi ARC-09 (`09_.../...DAUTH-CONSEGUENZE-ECHI-LUNGO-PERIODO.md`):
+> **evento → eco → quando riemerge → file che lo gestisce**, con
+> varianti per ramo d'esito. Nessun eco contraddice gli HOOKS ARC-09.
+
+### 6.1 Tabella degli echi
+
+| Evento a Hammerfist | Eco | Quando riemerge | File che lo gestisce |
+|---|---|---|---|
+| **Fauci di Palude fugge ferito** (ramo default D10) | Nemesi draconica: il drago torna per vendetta contro Thorik/la Corona | Rethmar (carta S2 all'EVENT-DECK, §6.3) o ARC-10 | `ARC08-10` §4; EVENT-DECK ARC-09 (S2, §6.3) |
+| **Uovo di Fauci** (eco gemella, ARC-07 C3) | Un secondo drago nero cresce nell'ombra — semina per ARC-10 | ARC-10 `[INFERRED]` | ARC-07 C3 (fonte); da agganciare alla stessa carta S2 |
+| **Fauci ucciso** (ramo alternativo D10) | −1 drago a Rethmar; nessuna nemesi (ma l'uovo resta) | Day 42 Rethmar | `campaign/state.md` §2.3 |
+| **Runa dei Custodi Eterni** (Cerimonia Atto 3) | Status sociale presso i nani del Vale (§6.2) | Ogni interazione coi nani in ARC-09/10 | `Cerimonia-delle-100-Asce.md` §2; questa §6.2 |
+| **150 lance di Re Thorek** (D4) | Rinforzo condizionale a Rethmar | Day 42, se gli hook politici riescono | `state.md` §2.5; `PNG/Khorn.md`; HOOKS-Thorik |
+| **Eroi di Hammerfist pregen** (D14, se sopravvivono) | Borin campione / Dara staffette / Thorin culto / Nala a Dauth | Sparsi in ARC-09 | schede `PNG/Borin_...`, `PNG/Dara_...`, `PNG/Thorin_Runaforte.md`, `PNG/Nala_...` |
+| **Raid drow al tempio di Hammerfist** (Sonjak, `state.md` §3) | Prefigura la Fase 0 (Notte dei Drow) di Rethmar | Day 40, Fase 0 Rethmar | `state.md` §3; ARC-09 FASE0 |
+| **Lunapiena resta di presidio** (D13) | Hammerfist difesa, ma NON rinforza Rethmar | Statico | `PNG/Capitano_Lunapiena.md`; ARMATE-SYNC §7 |
+
+**Varianti per ramo d'esito**: nella **vittoria costosa** (Re Thorek
+morto) la runa dei Custodi ha peso funebre doppio e il canale delle 150
+lance è più freddo (§2); nella **caduta** (§3) la maggior parte di
+questi echi decade (niente Cerimonia, niente runa, lance perse) e
+subentra l'eco "Hammerfist in mani nemiche" (base per una riconquista in
+ARC-09/10).
+
+### 6.2 Runa dei Custodi Eterni — quantificata
+
+La runa di pietra che Re Thorek consegna ai 4 PG (Cerimonia Atto 3;
+5 cm, al collo) non era mai stata quantificata meccanicamente.
+
+**Proposta** `[INFERRED — needs DM confirmation]`:
+- **+2 di circostanza a Diplomazia** con i nani del Vale (e con chi
+  riconosce il titolo di Custode Eterno) mentre la runa è portata a
+  vista.
+- **Ospitalità a Hammerfist**: vitto, alloggio, accesso all'armeria
+  della cittadella e alle fucine (aggancio al tesoro `ARC08-13` §3) a
+  costo nullo.
+- **Riconoscimento** da PNG nanici in ARC-09 (es. Maewen riconosce
+  Tordek "dalla runa di Custode Eterno" — già canonico in `state.md`
+  §4): la runa è il segno visibile.
+- **NON** è un oggetto magico: nessun bonus numerico in combattimento;
+  non commerciabile (valore 0 mo nel WBL, `ARC08-13` §3).
+
+### 6.3 Carta-evento proposta per l'EVENT-DECK di Rethmar (solo hook)
+
+Per il ramo **"Fauci fugge"** (default D10), proposta di carta S2 (echi
+di campagna) da aggiungere a
+`09_.../Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md`:
+
+> **"Il Ritorno di Fauci di Palude" [S2 — eco di campagna]**
+> — Spotlight: **Thorik**. Se Fauci è fuggito da Hammerfist (non
+> ucciso), può ricomparire come minaccia aerea a Rethmar (o come
+> nemesi ARC-10). Riusa lo statblock di `ARC08-02` §1 (col carry-over
+> ARC-07 B4 se disponibile, A12). Eco gemella: l'**uovo di Fauci**
+> (ARC-07 C3). *Qui solo l'hook e il puntatore*: la scrittura piena
+> della carta è compito dell'EVENT-DECK ARC-09, non di questo file.
+
+---
 
 ---
 

@@ -1112,4 +1112,19 @@ entries — they become campaign history.
             Le altre 3 copie ora puntano al master: `ARC08-02` §4
             (quick-reference), Guida DM Appendice A, `ARC08-03`
             (registro di tracciamento). INDICE aggiornato.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto C, sessione 16 (C2): aggiunta
+            la sezione "Conseguenze a lungo periodo" a
+            `ARC08-10-ESITI-E-CONTINGENZE.md` §6 (sostituito il rimando
+            placeholder). Tabella echi in formato ARC-09 (evento → eco
+            → quando riemerge → file), con varianti per ramo d'esito:
+            Fauci fugge (nemesi) / uovo di Fauci (ARC-07 C3, eco
+            gemella) / Fauci ucciso / runa dei Custodi / 150 lance /
+            pregen D14 / raid drow → Fase 0 Rethmar / Lunapiena
+            presidio. **Runa dei Custodi Eterni quantificata**
+            [INFERRED]: +2 di circostanza Diplomazia coi nani del Vale +
+            ospitalità/armeria a Hammerfist + riconoscimento PNG; NON
+            magica, 0 mo WBL. Proposta (solo hook+puntatore) della
+            carta S2 "Il Ritorno di Fauci di Palude" per l'EVENT-DECK
+            ARC-09 (ramo default D10). Nessun eco contraddice gli HOOKS
+            ARC-09; EVENT-DECK ARC-09 non modificato (solo proposto).
 ```

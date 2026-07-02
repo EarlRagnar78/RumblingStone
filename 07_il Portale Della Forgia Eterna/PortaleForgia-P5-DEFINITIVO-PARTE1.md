@@ -4,6 +4,10 @@
 
 ### PARTE 1/2 - Infiltrazione e Preparazione Battaglia
 
+> **Stato (A6)**: **MASTER lungo** del P5 (in 2 parti con `-PARTE2.md`).
+> Fonte per il fast-play `PortaleForgia-P5-FASTPLAY.md` (B3), che è il
+> formato da tavolo (D1). Vedi `ARC07-MATRICE-VERSIONI.md`.
+>
 > **Ordine di gioco (D2)**: si gioca DOPO la resurrezione di Hella (P3B) —
 > il party (4, Hella tornata) affronta il viaggio temporale per ultimo,
 > prima del raccordo verso l'ARC-08. Vedi

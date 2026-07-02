@@ -4,6 +4,10 @@
 
 ### Documento di Integrazione P4 ↔ P3B — Versione 2.0 DM (Dream Dwarf / Ranger-Druida)
 
+> **Stato (A6)**: **MASTER del viaggio dello spirito** (v2, sostituisce v1).
+> È la "Fonte di design" del CANONE giocato `...-MONDO-risultati.md`. Vedi
+> `ARC07-MATRICE-VERSIONI.md`.
+>
 > **Ordine di gioco (D2)**: lo spirito di Hella viaggia MENTRE il party
 > attraversa il P4 (Piano della Terra) — questo viaggio è **già stato
 > giocato** (vedi il file `...-risultati.md`); il rituale che lo integra

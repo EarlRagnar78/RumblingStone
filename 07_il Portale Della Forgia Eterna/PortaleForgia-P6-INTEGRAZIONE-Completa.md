@@ -1,5 +1,12 @@
 # ⚔️ INTEGRAZIONE COMPLETA: PORTALE FORGIA + MANO ROSSA DEL DESTINO
 
+> **Stato (A6)**: **MASTER parziale**. La sezione della **battaglia antica**
+> (regia dell'arrivo dei Rumbling Stones, canto di Aegis Fang) è materiale
+> vivo del P5/raccordo. La sezione **"ANNO 1372: BATTAGLIA FINALE
+> HAMMERFIST"** è **superata** dagli Archi 08-09 e viene deprecata nel task
+> **A3** (la battaglia del 1372 è ora l'ARC-08 intero, Fauci GS 15 a esiti
+> aperti). Vedi `ARC07-MATRICE-VERSIONI.md`.
+
 ## 📘 DOCUMENTO MASTER: FLUSSO NARRATIVO CORRETTO E COERENTE
 
 **Scopo:** Unificare e correggere tutte le discrepanze tra `Il Portale della Forgia Eterna` e `La Mano Rossa del Destino` creando un'unica linea temporale narrativa perfettamente coerente.

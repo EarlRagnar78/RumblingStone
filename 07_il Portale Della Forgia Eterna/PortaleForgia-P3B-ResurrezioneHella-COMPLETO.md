@@ -2,6 +2,12 @@
 ## PARTE 3B - Rituale Resurrezione Hella
 ### Avventura D&D 3.5 - Livello 13 - Forgotten Realms
 
+> **Stato (A6)**: **candidato master** del P3B (rituale di resurrezione),
+> versione completa. L'elezione formale + integrazione del viaggio giocato
+> avviene nel task **B2**; l'alternativa breve è
+> `PortaleForgia-P3B-ResurrezioneHella-RICALIBRATO-alternative.md`. Vedi
+> `ARC07-MATRICE-VERSIONI.md`.
+>
 > **Ordine di gioco (D2)**: nonostante la sigla "3B", questa parte si gioca
 > DOPO il P4 (Piano della Terra, in corso) e PRIMA del P5 (viaggio
 > temporale). Vedi `PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md` §0 D2.

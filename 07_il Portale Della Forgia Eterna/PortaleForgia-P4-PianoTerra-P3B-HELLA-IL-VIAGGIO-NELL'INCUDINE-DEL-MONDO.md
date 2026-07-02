@@ -4,6 +4,11 @@
 
 ### Documento di Integrazione P4 ↔ P3B — Versione Definitiva DM
 
+> ⚠️ DEPRECATED (2026-07, A6): **versione 1** del viaggio dello spirito,
+> **sostituita da** `...-MONDO-v2.md` (master del viaggio) e dal CANONE
+> giocato in `...-MONDO-risultati.md`. Conservata come storia di progetto
+> (D10). Vedi `ARC07-MATRICE-VERSIONI.md`.
+
 > **Ordine di gioco (D2)**: lo spirito di Hella viaggia MENTRE il party
 > attraversa il P4 (Piano della Terra) — questo viaggio è **già stato
 > giocato** (vedi il file `...-risultati.md`); il rituale che lo integra

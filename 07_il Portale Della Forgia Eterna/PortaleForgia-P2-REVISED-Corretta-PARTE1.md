@@ -2,6 +2,9 @@
 ## PARTE 2 - La Sala della Forgia Eterna (REVISED & CORRECTED)
 ### Avventura D&D 3.5 - Livello 13 - Forgotten Realms
 
+> **Stato (A6)**: **MASTER** del P2 (unica versione, in 2 parti con
+> `-PARTE2.md`). Vedi `ARC07-MATRICE-VERSIONI.md`.
+
 ---
 
 **Sistema:** Dungeons & Dragons 3.5 Edition  

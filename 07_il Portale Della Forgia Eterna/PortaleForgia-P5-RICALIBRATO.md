@@ -2,6 +2,12 @@
 ## PARTE 5 - VIAGGIO TEMPORALE: L'ASSEDIO DI HAMMERFIST (ANNO -1000)
 ### Avventura Ricalibrata D&D 3.5 - Livello 14+ (God Mode)
 
+> **Stato (A6)**: *sintesi "God Mode"* del P5 — non è il master. Fornisce il
+> tono/ossatura per il fast-play `PortaleForgia-P5-FASTPLAY.md` (B3); per la
+> versione completa vedi `PortaleForgia-P5-DEFINITIVO-PARTE1/2.md`. Nota: il
+> "Livello 14+" del titolo è superato dal **13°** canonico (D8 → A5). Vedi
+> `ARC07-MATRICE-VERSIONI.md`.
+>
 > **Ordine di gioco (D2)**: si gioca DOPO la resurrezione di Hella (P3B) —
 > il party (4, Hella tornata) affronta il viaggio temporale per ultimo,
 > prima del raccordo verso l'ARC-08. Vedi

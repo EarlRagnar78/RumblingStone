@@ -4,6 +4,10 @@
 
 ### Avventura D&D 3.5 - Livello 13 - Forgotten Realms
 
+> **Stato (A6)**: *ricalibrazione* del finale del P3 (la Piramide) — corregge
+> `PortaleForgia-P3-PianoFuoco-PARTE2.md`, che la cita come master. Vedi
+> `ARC07-MATRICE-VERSIONI.md`.
+
 ---
 
 **Sistema:** Dungeons & Dragons 3.5 Edition

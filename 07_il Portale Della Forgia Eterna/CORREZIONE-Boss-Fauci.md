@@ -1,5 +1,12 @@
 # 🐉 CORREZIONE CRITICA: FAUCI DI PALUDE - DRAGO NERO
 
+> **Stato (A6)**: *ricalibrazione* dello statblock di Fauci di Palude. ⚠️
+> Contiene un **doppio profilo** (GS 15 Anno 1372 / GS 12 versione P6): il
+> profilo GS 12 è **storia superata** (finale 1372 di P6, deprecato in A3);
+> per il 1372 vale il **GS 15** dei file ARC-08. La verifica formale
+> BAB/TS/CD e gli XP dell'incontro si chiudono in **B5** (errata 3.5). Vedi
+> `ARC07-MATRICE-VERSIONI.md`.
+
 ## ⚠️ ERRORE PRECEDENTE RILEVATO E CORRETTO
 
 **PRIMA (ERRATO):**

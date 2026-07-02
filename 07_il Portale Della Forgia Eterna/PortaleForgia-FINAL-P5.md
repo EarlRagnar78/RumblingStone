@@ -1,6 +1,12 @@
 # IL PORTALE DELLA FORGIA ETERNA
 ## PARTE 5 - VIAGGIO TEMPORALE ANNO -1000 E BATTAGLIA ANCESTRALE
 
+> ⚠️ DEPRECATED (2026-07, A6): prima stesura completa del P5, **superata da**
+> `PortaleForgia-P5-DEFINITIVO-PARTE1.md`/`-PARTE2.md` (master lungo) e dal
+> fast-play `PortaleForgia-P5-FASTPLAY.md` (B3). Conservato come storia di
+> progetto (D10). Nomi/tempi già allineati (Skullcrusher, 1.000 anni) ma per
+> giocare usare il DEFINITIVO o il FASTPLAY. Vedi `ARC07-MATRICE-VERSIONI.md`.
+
 > **Ordine di gioco (D2)**: si gioca DOPO la resurrezione di Hella (P3B) —
 > il party (4, Hella tornata) affronta il viaggio temporale per ultimo,
 > prima del raccordo verso l'ARC-08. Vedi

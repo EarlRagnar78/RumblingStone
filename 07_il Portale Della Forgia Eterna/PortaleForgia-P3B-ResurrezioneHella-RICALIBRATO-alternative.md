@@ -2,6 +2,10 @@
 ## PARTE 3B - RITUALE DI RESURREZIONE: IL DONO DELL'ANIMA (MERGED & FINAL)
 ### Avventura D&D 3.5 - Livello 13+
 
+> **Stato (A6)**: *alternativa breve* del P3B (merge sintetico). Il candidato
+> master è `PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`; l'elezione
+> avviene in **B2**. Vedi `ARC07-MATRICE-VERSIONI.md`.
+>
 > **Ordine di gioco (D2)**: nonostante la sigla "3B", questa parte si gioca
 > DOPO il P4 (Piano della Terra, in corso) e PRIMA del P5 (viaggio
 > temporale). Vedi `PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md` §0 D2.

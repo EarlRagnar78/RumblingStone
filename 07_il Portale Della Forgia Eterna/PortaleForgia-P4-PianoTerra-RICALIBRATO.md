@@ -4,6 +4,11 @@
 
 ### Avventura D&D 3.5 - Livello 14 - "Hard Mode"
 
+> **Stato (A6)**: *ricalibrazione* del P4 (master =
+> `PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md`). ⚠️ Il "Livello 14
+> Hard Mode" del titolo è **superato** dal 13° canonico (D8); da riportare a
+> 13°/D15 in A5. Vedi `ARC07-MATRICE-VERSIONI.md`.
+>
 > **Ordine di gioco (D2)**: si gioca PRIMA della resurrezione di Hella
 > (P3B) e del viaggio temporale (P5) — è la parte IN CORSO al tavolo. Vedi
 > `PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md` §0 D2.

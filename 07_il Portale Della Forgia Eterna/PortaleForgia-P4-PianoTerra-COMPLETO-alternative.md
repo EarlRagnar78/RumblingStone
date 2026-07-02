@@ -7,6 +7,14 @@
 > **Ordine di gioco (D2)**: si gioca PRIMA della resurrezione di Hella
 > (P3B) e del viaggio temporale (P5) — è la parte IN CORSO al tavolo. Vedi
 > `PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md` §0 D2.
+>
+> **Stato (A6)**: **MASTER** del P4 (Piano della Terra) `[INFERRED — needs
+> DM confirmation]`. **Ricalibrato da**: `Terros.md` (boss Terros/Mithral
+> Golem, composizione D15 = 3 PG senza Therysol) e
+> `PortaleForgia-P4-PianoTerra-RICALIBRATO.md` (nota: quest'ultimo è a Lv14
+> "Hard Mode", superato dal livello **13°** canonico D8 — vedi A5). Il
+> viaggio dello spirito di Hella è nel file `...-MONDO-v2.md` (già giocato,
+> vedi `...-risultati.md`). Vedi `ARC07-MATRICE-VERSIONI.md`.
 
 ---
 

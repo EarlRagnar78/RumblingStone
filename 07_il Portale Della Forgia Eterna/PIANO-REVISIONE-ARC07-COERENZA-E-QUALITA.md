@@ -224,6 +224,17 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   catena è esplicita.
 - **Accettazione**: un master per parte; ogni doc di ricalibrazione citato
   dal master che corregge; zero versioni orfane senza stato.
+- **✅ FATTO (2026-07-02, sessione 3)**: creata `ARC07-MATRICE-VERSIONI.md`
+  (matrice parte × file × stato). Master eletti: P1, P2 (unici); P3 base
+  (ricalibrato da RicalibrazioneScontri + La_Piramide); P4 COMPLETO-alt
+  `[INFERRED]` (ricalibrato da Terros + RICALIBRATO); viaggio v2 (fonte del
+  file risultati). Banner applicati: DEPRECATO su FINAL-P5 e viaggio-v1;
+  *ricalibrazione* su La_Piramide, Terros, CORREZIONE-Boss-Fauci,
+  P4-RICALIBRATO; *annesso* su Interludio; reverse-banner "ricalibrato da"
+  sui master P3 e P4; MASTER-lungo su P5-DEFINITIVO, sintesi su P5-RICALIBRATO,
+  MASTER-parziale su P6. **P3B e P5**: master formale eletto nei task
+  dedicati **B2** e **B3** (qui registrati i candidati). Nessuna versione
+  orfana.
 
 ### A7. Igiene: file vuoto, file temporaneo, coda AI, nomi file rotti
 - **Problema**: `Mappe/Atlante-Visivo-Mappe.md` è **0 byte**;
@@ -574,7 +585,7 @@ la checklist qui sotto.
 
 ### Checklist avanzamento
 
-- [x] A1 · [x] A2 · [ ] A3 · [ ] A4 · [ ] A5 · [ ] A6 · [x] A7 ·
+- [x] A1 · [x] A2 · [ ] A3 · [ ] A4 · [ ] A5 · [x] A6 · [x] A7 ·
   [ ] A8 · [x] A9 · [ ] A10 · [ ] A11
 - [ ] B1 · [ ] B2 · [ ] B3 · [ ] B4 · [ ] B5 · [ ] B6 · [ ] B7 ·
   [ ] B8 · [~] B9 — **parziale (2026-07-02)**: Collana ✅ e

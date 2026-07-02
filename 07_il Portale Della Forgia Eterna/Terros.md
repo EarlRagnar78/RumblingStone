@@ -1,5 +1,12 @@
 # 🏔️ Terros Boss Fight — CR Analysis & Recalibration
 
+> **Stato (A6)**: *ricalibrazione* del boss del P4 (Terros/Mithral Golem) —
+> ricalibra `PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md` (master).
+> ⚠️ Questo file assume "3 PC + 1 NPC Therysol Support": **sbagliato** (D15 —
+> Therysol veglia il corpo di Hella; composizione reale = **3 PG di 13°, zero
+> supporto**). Va ricalibrato su D15/D8 nei task **A5/B5**. Vedi
+> `ARC07-MATRICE-VERSIONI.md`.
+
 ## Analysis Context
 
 | Factor | Value |

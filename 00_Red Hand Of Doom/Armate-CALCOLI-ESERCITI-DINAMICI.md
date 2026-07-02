@@ -68,7 +68,7 @@
 | **Regiarix** (Black young adult) | Rhest/Saarvith, P2 Arco-09 | AP canon | **A rischio PG** (P2-RHEST-FASE4) |
 | **Ozyrrandion** (Blue adult) | Torre Invisibile / Wyrmlord Tower | AP canon | **A rischio PG** (P2A-Torre-Zalkatar) |
 | **Tyrgarun** (Black adult, hell-themed reserve) | Riserva aerea Rethmar | AP upscaled | Vivo |
-| **Fauci di Palude** (Black adult) | Vanguard Hammerfist | Canon campagna | **Annientato a Hammerfist (Day 19)** |
+| **Fauci di Palude** (Black adult) | Vanguard Hammerfist | Canon campagna | **Ramo condizionale D10, non deciso** (default: fugge <50 PF, assente da Rethmar; alternativa: ucciso ad Hammerfist) |
 
 **Note**: Abithriax, Regiarix, Ozyrrandion, Tyrgarun sono i 4 dragoni
 AP originali (Regiarix young + 3 adults). Fauci di Palude è la 5ª
@@ -179,7 +179,7 @@ Approssimato a **~10.000** come target narrativo.
 
 | Distaccamento | Unità | Destino | Stato canonico |
 |---|---|---|---|
-| **Vanguard Hammerfist** (Fauci di Palude + 900 unità) | 900 | Hammerfist | **Distrutto Day 19** (vedi file Arc 08) |
+| **Vanguard Hammerfist** (Fauci di Palude + 900 unità) | 900 | Hammerfist | **-900 effettivi Day 19** (~500 morti + ~400 dispersi in rotta, non si ricongiungono — piano ARC-08 D11, scenario di vittoria default; vedi file Arc 08) |
 | **Contingente Rhest** (Saarvith + Regiarix + 200 drow/goblin + 2 Razorfiend) | 200 | Lake Rhest | **A rischio** P2 Arc-09 |
 | **Contingente Torre** (Zalkatar + Ozyrrandion + 150 Illithid thralls + 1 Razorfiend) | 150 | Invisible Tower | **A rischio** P2A Arc-09 |
 | **Cellula Dauth** (Xal'thor + 100 Illithid psionic + thralls) | 100 | Dauth | **Day 3 Tournament fixed assault** |

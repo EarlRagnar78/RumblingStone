@@ -129,7 +129,7 @@ Two independent clocks drive Arc 09:
 | Giganti + Ogre + Ettin | 180 | NO PG alliance — stay with Red Hand |
 | Forze Alate (Manticore, Wyvern, Hell Hounds, Chimera) | 140 | |
 | Casters Mano Rossa (War Adepts, Blue, Warpriests di Tiamat) | 55 | |
-| **Dragons (5 AP-original upscaled)** | 5 | Abithriax (Red adult) / Regiarix (Black young, Rhest) / Ozyrrandion (Blue, Tower) / **Tyrgarun (Blue Old, CR 18 — sky-terror of the battle, NOT Azarr Kul's mount, D11 v2)** / **Fauci di Palude** (Black adult, Hammerfist vanguard) |
+| **Dragons (5 AP-original upscaled)** | 5 | Abithriax (Red adult) / Regiarix (Black young, Rhest) / Ozyrrandion (Blue, Tower) / **Tyrgarun (Blue Old, CR 18 — sky-terror of the battle, NOT Azarr Kul's mount, D11 v2)** / **Fauci di Palude** (Black adult, Hammerfist vanguard — **conditional branch, D10, not yet resolved**: default = flees gravely wounded, may return later as a narrative hook, not guaranteed at Rethmar; PG-kill branch = dies at Hammerfist, −1 dragon, see §2.3) |
 | **Draconic spawn = Razorfiend (Tiamat colors)** | 8 | Assigned to Wyrmlord villains upscaled |
 | Compagnia Drow di Sonjak | 305 | |
 | Githyanki di Vaereth | 375 | |
@@ -138,9 +138,15 @@ Two independent clocks drive Arc 09:
 | **Compagnia del Teschio Nero** (umani malvagi mercenari, Thay/Mulhorand) | 650 | NEW 2026-05-05 |
 | **BASELINE TOTAL** | **~9,900** | ≈ 10,000 ✓ |
 
-**Post-Hammerfist losses (Day 19 sync):** −500 (Fauci di Palude detachment
-annientato/disperso; does NOT rejoin main body). Current active:
-**~9,400**.
+**Post-Hammerfist losses (Day 19 sync, default victory scenario — piano
+ARC-08 D11):** **−900** total (900-strong Hammerfist vanguard: ~500
+morti + ~400 dispersi in rotta; i dispersi NON si ricongiungono
+all'orda principale). Same figure as
+`00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` §3 Day 19 row
+and `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md` §Day 19 —
+one total propagated everywhere (D11). Current active: **~9,000**.
+Other outcome branches (costly victory, defeat) live in piano ARC-08
+B1 (not yet written), not in this tracker.
 
 ### 2.3 Conditional Additives (apply at Rethmar if triggered)
 
@@ -155,6 +161,8 @@ annientato/disperso; does NOT rejoin main body). Current active:
 | PG sabotage Centaur/Loxo → revolt | −480 horde |
 | PG defeat Regiarix at Rhest | −1 dragon, −2 Razorfiend |
 | PG defeat Ozyrrandion at Tower | −1 dragon |
+| PG kill Fauci di Palude at Hammerfist (D10 alternate branch, before he flees under 50 hp) | −1 dragon (removed from Rethmar pool entirely) |
+| Fauci di Palude flees under 50 hp (D10 **default** branch — Hammerfist Schede §1 Tattiche) | No change to horde total; he is simply absent from Rethmar unless a later narrative hook brings him back (piano ARC-08 C2/EVENT-DECK, not yet written) |
 
 **Worst-case horde at Rethmar:** ~12,700 | **Best-case (all PG
 sabotages):** ~7,200
@@ -812,4 +820,40 @@ entries — they become campaign history.
             B6 per la cronologia completa). `03_` deprecato con banner
             (D12), contenuto non toccato. Buco di numerazione `02_`
             lasciato aperto per lo schema di rinomina A9.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto A, sessione 3 (A1+A2): esiti
+            Fauci di Palude e contabilità perdite riscritti come rami
+            condizionali, non fatti compiuti. A1 (D10): "Fauci morto"/
+            "Fauci escaped" trattati come fatto in 7 tracker riscritti
+            in forma condizionale a rami (default: fugge sotto 50 PF,
+            assente da Rethmar salvo ritorno narrativo non garantito;
+            alternativa: ucciso dai PG → −1 drago) —
+            `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md`
+            §4b, `Armate-COMPOSIZIONE-DETTAGLIATA.md`,
+            `Armate-CALCOLI-ESERCITI-DINAMICI.md`, questo file §2.2/§2.3,
+            `campaign-coherence.md` (5 draghi nominati),
+            `campaign-story-arcs.md` (+ mirror .github/copilot),
+            `DM-QUICKSTART-ARC09.md`, `Arco-Post-Hammerfist-P3-
+            BATTAGLIA-FINALE-ARMATE-SYNC.md`. Statblock di Fauci
+            (Hammerfist Schede §1) annotato con lo stesso ramo +
+            rimando esplicito al carry-over ARC-07 B4 (A12, non ancora
+            consegnato — nessun valore anticipato). Non toccato: la
+            "battaglia antica" di ARC-07 P5/P6 (Fauci GS 12, ancestor
+            duel) — cross-arc residuo di competenza del piano ARC-07
+            A2/A3, non di questo lotto.
+            A2 (D11): due aritmetiche divergenti (questo file diceva
+            "−500 → ~9.400", il ledger diceva "−900 → 8.610")
+            riconciliate sul numero canonico **−900** (~500 morti +
+            ~400 dispersi che non si ricongiungono, già coerente con
+            Mappe/Hammerfist-Lotto-1-Ricognizione r.192 "conta precisa
+            900" e Atlante-Mappe r.1034/1053 "400 superstiti"). Questo
+            file §2.2 corretto a **~9.000** attivi post-Day 19; stessa
+            cifra propagata con breakdown esplicito (500+400) in
+            Armate-SINCRONIZZAZIONE-CAMPAGNA §3 r.81,
+            Armate-CALCOLI-ESERCITI-DINAMICI §3, e ARMATE-SYNC ARC-09
+            riga Day 19. Non toccata la matrice scenari Day 42 "vista
+            rapida legacy" (§2.4 r.197 + mirror DM-QUICKSTART-ARC09 +
+            Armate-CALCOLI): resta un diverso checkpoint (Day 42, non
+            Day 19), già segnalata nel file come legacy in attesa del
+            ricalcolo autoritativo di ARMATE-SYNC/B1 — fuori scope per
+            questo lotto meccanico.
 ```

@@ -227,7 +227,10 @@ detachment** of lesser undead (~200–400), not the full undead army
 Force composition is locked to:
 
 - **5 named dragons**: Abithriax, Regiarix (dies if Arc-09/P2 completed),
-  Ozyrrandion, Tyrgarun, Fauci di Palude (wounded from Hammerfist).
+  Ozyrrandion, Tyrgarun, Fauci di Palude (**conditional branch, D10**:
+  default = flees gravely wounded from Hammerfist, may return; PG-kill
+  branch = dies at Hammerfist instead, −1 dragon — same conditional
+  treatment as Regiarix/Ozyrrandion, not yet resolved).
 - **8 Razorfiend Draconic Spawn** (Tiamat colors) mounted on upscaled
   Wyrmlords.
 - **Compagnia del Teschio Nero**: unchanged from AP canon.

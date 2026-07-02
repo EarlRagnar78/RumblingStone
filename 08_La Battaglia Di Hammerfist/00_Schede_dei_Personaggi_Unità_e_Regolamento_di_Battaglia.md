@@ -89,6 +89,18 @@
 
 **Tattiche:** Inizia con *Armatura Magica* e *Scudo*. Usa il Soffio e incantesimi di controllo (*Nube Maleodorante*) dall'alto. Atterra solo se gravemente ferito (<100 PF) o per finire un bersaglio importante. Fugge sotto i 50 PF.
 
+> **Esito della battaglia — ramo condizionale (D10, non un fatto compiuto)**:
+> **default** = sotto i 50 PF fugge gravemente ferito verso le montagne
+> meridionali (come da Tattiche sopra); resta rimosso dall'assedio ma
+> può ricomparire più avanti (hook nemesi, non garantito — vedi piano
+> ARC-08 C2/EVENT-DECK, non ancora scritto). **Alternativa** = se i PG
+> lo abbattono (0 PF) prima che fugga, è **ucciso**: −1 drago nel pool
+> di Rethmar (`campaign/state.md` §2.3 Conditional Additives). Nessuno
+> dei due rami è ancora deciso — si risolve solo al tavolo.
+> I numeri di partenza di questo statblock potrebbero essere modificati
+> dalla tabella di carry-over dell'eredità di Skullcrusher (ARC-07 B4,
+> non ancora consegnata — piano ARC-08 A12): non anticipare valori qui.
+
 ---
 <div style="page-break-before:always"></div>
 

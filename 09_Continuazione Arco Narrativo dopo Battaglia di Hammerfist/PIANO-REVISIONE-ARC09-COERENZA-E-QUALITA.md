@@ -46,7 +46,7 @@
 | D10 | Nani a Rethmar: **300 mercenari da Dauth** (torneo vinto) + **150 lance di Re Thorek** come flusso separato condizionato dagli hook politici (sigillo Maewen + lettera Thorik). Totale max 450. Correggere state.md §2.4 (400 → 300) | DM 2026-07-02 |
 | D11 **v2** | **Tyrgarun = drago BLU antico (Old), CR 18 — il TERRORE DEI CIELI della battaglia, NON cavalcatura di Azarr Kul.** Non sta "in riserva": è la ragione per cui i difensori non possono tenere i cieli. Script a scalini: **Fase 1** = set-piece di bombardamento (soffio sui bastioni come *hazard* con contromosse — balliste, gufi Tiri Kitor, missione-esca dei PG — NON scontro frontale: a CR 18 in volo è imbattibile per design); **Fasi 2-3** = copertura aerea mobile dei ritualisti (minaccia a orologeria); **Fase 4** = il Mythal completato **lo inchioda a terra** (già canone: P2D-INTEGRAZIONE r.201) → solo allora diventa uccidibile dal party+alleati, oppure fugge (nemesi ARC-10). Azarr Kul combatte comunque a terra con l'Avatar (STRUTTURA §6): il drago è un incontro separato, sbloccato dal Mythal. Correggere INDICE r.27/443 ("monta Tyrgarun" via; "Very Old CR 20" → "Old CR 18") e ARMATE-SYNC §2.1 ("black adult" → "blue old") | DM 2026-07-02, **rivista su obiezione DM: "se il drago non si usa, perché alzare il Mythal? deve essere spaventoso"** |
 | D12 | Debito di Tordek (state.md §5): riformulare in **"presentarsi a Dauth entro il Day 29 (vigilia delle preliminari del Torneo)"** — coerente con HOOKS v2 (invito Day 24, arrivo 28, torneo 30-32) | DM 2026-07-02 |
-| D13 | **La battaglia di Rethmar si gioca A EVENTI, in stile cinematografico/Critical Role** — remix della catena di eventi della Battle of Brindol (RHoD Parte 4, [Private source]): i PG vivono la battaglia come sequenza di **scene discrete ad alta posta che SCELGONO loro** (menù di crisi simultanee: ne scegli 2, le altre si risolvono male off-screen = conseguenza), NON come wargame. **Esclusa** la gestione armate alla Kingmaker/Ultimate Campaign (astrae i PG, sessioni bibliche). Le meccaniche di massa di Hammerfist e i calcoli ARMATE-* restano **solo lato DM** come sfondo strategico che alimenta la narrazione — mai portati al tavolo. I **VP restano ma nascosti**: tracker del DM ("il Fronte") che colora le descrizioni e determina l'esito, mai un punteggio mostrato ai giocatori. Heroes of Battle si riduce a: 1 check di morale per ondata + ruoli di comando PG come azioni di scena | DM 2026-07-02, su domanda "eventi RHoD presenti? VP snatura? Kingmaker o eventi scelti dai PG?" |
+| D13 | **La battaglia di Rethmar si gioca A EVENTI, in stile cinematografico/Critical Role** — remix della catena di eventi della Battle of Brindol (RHoD Parte 4, [Private source]): i PG vivono la battaglia come sequenza di **scene discrete ad alta posta che SCELGONO loro** (menù di crisi simultanee: ne scegli 1-2, le altre si risolvono male off-screen = conseguenza), NON come wargame. **Le crisi SCELTE si giocano dal vero, tatticamente**: incontro completo su griglia 1,5 m/q con statblock, iniziativa e tattiche come ogni altro scontro della campagna — **esito NON predefinito**, deciso dai dadi (vittoria/parziale/sconfitta, ciascuna con conseguenze). L'astrazione off-screen esiste SOLO per le crisi non scelte. **Esclusa** la gestione armate alla Kingmaker/Ultimate Campaign (astrae i PG, sessioni bibliche). Le meccaniche di massa di Hammerfist e i calcoli ARMATE-* restano **solo lato DM** come sfondo strategico che alimenta la narrazione — mai portati al tavolo. I **VP restano ma nascosti**: tracker del DM ("il Fronte") che colora le descrizioni e determina l'esito, mai un punteggio mostrato ai giocatori. Heroes of Battle si riduce a: 1 check di morale per ondata + ruoli di comando PG come azioni di scena | DM 2026-07-02, su domanda "eventi RHoD presenti? VP snatura? Kingmaker o eventi scelti dai PG?" |
 
 ### Decisioni di canone da chiedere al DM
 
@@ -405,10 +405,15 @@ di §4 senza ulteriori input dal DM.
   eventi in stile Brindol non ci sono ancora**. Questo lotto li porta,
   potenziati, sui 3 giorni (Day 40-42).
 - **Azione**: creare `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md`:
-  1. **12-16 carte evento** distribuite sui 3 giorni (Fase 0 → 4). Ogni carta:
-     trigger (quando/dove), read-aloud di 3 righe, scena (EL, mappa o zona),
-     posta in gioco, **spotlight PG designato**, conseguenza su Fronte/VP se
-     vinta/persa/ignorata. Rifare in chiave Rethmar gli archetipi Brindol
+  1. **12-16 carte evento** distribuite sui 3 giorni (Fase 0 → 4). Ogni carta
+     è un **incontro tattico completo, da giocare dal vero** (regola D13):
+     trigger (quando/dove), read-aloud di 3 righe, **mappa tattica su griglia
+     1,5 m/q** (nuova o riuso di una mappa P3 esistente), **statblock 3.5 o
+     puntatore a STATBLOCCHI-EPICI**, EL dichiarato (13-17 a seconda della
+     campana), tattiche nemiche, posta in gioco, **spotlight PG designato**,
+     e **3 esiti aperti** (vittoria / parziale / sconfitta — l'esito lo
+     decidono i dadi, mai la trama) ognuno con conseguenza su Fronte/VP;
+     più la conseguenza "ignorata" se la carta non viene scelta. Rifare in chiave Rethmar gli archetipi Brindol
      (mapparli dalla copia RHoD del DM, non riprodurre testo): barricate di
      strada coi civili, **il cecchino/assassino che punta a Lady Kaal o
      Brenna** (eco di Halveth se non rimosso), la breccia da richiudere,
@@ -423,7 +428,9 @@ di §4 senza ulteriori input dal DM.
      conseguenze** (perdite, morale, -CR o +CR alle fasi successive). Nessun
      evento è obbligatorio: la pressione nasce dallo scegliere a chi non
      rispondere. È la struttura che rende la battaglia "Critical Role":
-     scene brevi, poste personali, montaggio incrociato.
+     il DM monta in croce le scene, ma quando la scena parte è **combattimento
+     tattico vero** con poste personali ed esito incerto — l'epica nasce dal
+     rischio reale, non dalla regia.
   3. **Ritmo dei 3 giorni**: Day 40 notte (Fase 0) = 2-3 carte infiltrazione;
      Day 41 (arrivo orda in vista, ultimi preparativi) = carte di crisi civile
      e sabotaggio interno + 1 riposo lungo scandito; Day 42 (Fasi 1-4) =
@@ -434,9 +441,11 @@ di §4 senza ulteriori input dal DM.
      narrativo ma il suo impianto di massa NON si porta al tavolo — l'engine
      deve anzi estrarne le 3-4 scene migliori e convertirle in carte evento.
 - **Accettazione**: file EVENT-DECK con ≥12 carte complete; ogni carta ≤ 1
-  pagina; ogni PG ha ≥2 carte spotlight; ogni carta ha conseguenza off-screen
-  quantificata; STRUTTURA e FASE1/FASE2-TESTO aggiornati per puntare al deck
-  (le ondate diventano lo sfondo tra le campane).
+  pagina + mappa; **ogni carta è giocabile come incontro tattico senza
+  preparazione aggiuntiva** (mappa in scala + statblock/puntatore + tattiche);
+  ogni carta ha i 3 esiti aperti + la conseguenza off-screen se ignorata;
+  ogni PG ha ≥2 carte spotlight; STRUTTURA e FASE1/FASE2-TESTO aggiornati per
+  puntare al deck (le ondate diventano lo sfondo tra le campane).
 
 ---
 

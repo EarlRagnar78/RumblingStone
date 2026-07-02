@@ -24,7 +24,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 |---|---|---|---|---|
 | **Il Collezionista (Rakshasa)** | `PNG/Il_Collezionista_Rakshasa.md` | 17–19 | Shadow mastermind; manipola Varis, Sal, Sonjak | 5/8 |
 | **Salvatore "Sal" / Vatore** | `PNG/Salvatore/Salvatore.md` | 14 | Spia temporale; mercante del deserto; fornitore statue vive | 0/6 |
-| **Azarr Kul** | `PNG/Azarr_Kul/Azarr_Kul.md` | 15 | Alto Wyrmlord di Tiamat; boss Fase 3 Rethmar; monta Tyrgarun | 9/18 |
+| **Azarr Kul** | `PNG/Azarr_Kul/Azarr_Kul.md` | 15 | Alto Wyrmlord di Tiamat; boss Fase 3 Rethmar (combatte a terra — Tyrgarun è un incontro separato, non una cavalcatura, D11 v2) | 9/18 |
 | **Sonjak / Matrona Sajak** | `PNG/Sonjak/Sonjak.md` | 13 | Matrona Drow, comanda forze sotterranee; datore di lavoro di Sal | 4/8 |
 | **Conte Valerius** | `PNG/Conte_Valerius/Conte_Valerius.md` | 6/14★ | Villain politico; finanzia la Mano Rossa; non si batte in combat | 2/8 |
 | **Maestro Varis "Seta-Argento"** | `PNG/Varis_Seta_Argento/Varis_Seta_Argento.md` | 6 | Broker urbano Rethmar; anello della catena statue vive | — |
@@ -301,7 +301,7 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 - Diplomazia elfi (prove Charisma/Wisdom) — Killiar Arrowswift, Sellyria Starsinger
 - Quest di prova: vendicare Lanikar / difendere Starsong
 - Minaccia wyvern/manticore upgraded (CR 10–11)
-- Alleanza guadagnata: 50 elfi rangers + 10 giant owls → battaglia finale
+- Alleanza guadagnata: 100 elfi rangers + 20 giant owls (D9 — 1/5 della tribù di ~500 anime) → battaglia finale
 - VP impact sulla Battle of Rethmar
 
 ### PARTE 3 — Ghostlord: Lich Druidico del Thornwaste
@@ -441,8 +441,8 @@ File dedicati in `/PNG/`. Ogni cartella contiene scheda completa (stat block D&D
 
 **Contenuti:**
 
-- **Azarr Kul** appare (CR 15 Cleric 10/Fighter 4, hobgoblin mezzo-drago blu)
-- Cavalca **Tyrgarun**, Very Old Blue Dragon (CR 20!)
+- **Azarr Kul** appare (CR 15 Cleric 10/Fighter 4, hobgoblin mezzo-drago blu), combatte **a terra**
+- **Tyrgarun**, drago blu Old (CR 18), NON è una sua cavalcatura (D11 v2): è il terrore dei cieli della Fase 1 (hazard di bombardamento), poi minaccia aerea a orologeria in Fase 2-3, e viene inchiodato a terra dal Mythal solo in Fase 4 — incontro separato, vedi `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md` §6
 - Final Boss Battle multi-phase epic:
   - Sotto-fase A: Avvicinamento, Azarr Kul + guardia scelta (CR 16)
   - Sotto-fase B: Avatar di Tiamat manifesto (CR 17, 3 teste attive, soffi elementali)

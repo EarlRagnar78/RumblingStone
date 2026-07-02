@@ -52,7 +52,7 @@ For full narrative details, see `campaign/lore/campaign-history.md`.
 | Regiarix | Adult Black Dragon | 13 | 🔴 **ACTIVE** | Lake Rhest | 09-P2 |
 | Xal'thor | Illithid Commander (Psionic) | ~14 | 🔴 **APPROACHING** | With Githyanki fleet | 09-P2B |
 | Azarr Kul | High Wyrmlord (half-blue-dragon) | 15 | 🔴 **ACTIVE** | With the horde | 09-P3 |
-| Tyrgarun | Very Old Blue Dragon | 20 | 🔴 **ACTIVE** | With Azarr Kul | 09-P3 |
+| Tyrgarun | Old Blue Dragon — NOT Azarr Kul's mount (D11 v2) | 18 | 🔴 **ACTIVE** | Sky-terror of the Rethmar battle, separate encounter | 09-P3 |
 | Githyanki Dragon-Rider Faction | LE military | ~15 | 🔴 **APPROACHING** | En route to Dauth | 09-P2B |
 
 ---
@@ -108,7 +108,7 @@ Battle of Rethmar (Arc 09-P3, 5 Phases):
     Phase 0: Night of the Drow (temple sabotage — Sonjak/Il Collezionista faction)
     Phase 1: Siege (horde + Giants + Githyanki + drow; multiple dragon colors)
     Phase 2: Draconic ritualists (10-round Avatar of Tiamat summoning)
-    Phase 3: Azarr Kul (CR 15) + Tyrgarun Very Old Blue Dragon (CR 20)
+    Phase 3: Azarr Kul (CR 15, fights on foot) — Tyrgarun (Old Blue Dragon CR 18) is a separate encounter, grounded only once the Phase 4 Mythal completes (D11 v2)
     Phase 4: Circle of Eight Mythal (7 rounds) + animated city statues
 ```
 

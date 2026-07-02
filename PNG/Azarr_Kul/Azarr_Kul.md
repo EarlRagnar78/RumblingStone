@@ -12,7 +12,7 @@
 
 ## DESCRIZIONE
 
-Un hobgoblin imponente con tratti draconi spiccati: pelle giallastra striata di turchese elettrico lungo le tempie, occhi verticali color ambra e due piccoli corni di drago blu che spuntano dalla fronte. La voce è un tuono basso, capace di portare ordini su un campo di battaglia. Veste armatura completa nera consumata dalle battaglie, decorata con le cinque teste di Tiamat incise in bassorilievo sul pettorale. In battaglia monta **Tyrgarun**, un Drago Blu Molto Vecchio (CR 20) che funge da cavalcatura e da arma di distruzione di massa.
+Un hobgoblin imponente con tratti draconi spiccati: pelle giallastra striata di turchese elettrico lungo le tempie, occhi verticali color ambra e due piccoli corni di drago blu che spuntano dalla fronte. La voce è un tuono basso, capace di portare ordini su un campo di battaglia. Veste armatura completa nera consumata dalle battaglie, decorata con le cinque teste di Tiamat incise in bassorilievo sul pettorale. Combatte **a terra**: **Tyrgarun**, un Drago Blu Vecchio (CR 18), non è sua cavalcatura ma il terrore dei cieli della battaglia — un incontro separato che i difensori affrontano indipendentemente da lui (D11 v2, vedi `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md` §6).
 
 Non è un fanatico urlante. È un generale. Parla poco, non negozia, non bluffa. Quando entra in una stanza, i suoi alleati si raddrizzano. Quando guarda un PG, li esamina come tattici problemi da risolvere.
 
@@ -83,8 +83,8 @@ Tutti gli alleati hobgoblin entro 9 m da Azarr Kul guadagnano +2 morale ai tiri 
 ### Canali Divini di Tiamat (Su)
 7 utilizzi giornalieri per *sconfiggere malvagio* (smite good), *richiamare/controllare non morti*, o effetti di dominio Tiamat personalizzati (a discrezione del DM).
 
-### Tyrgarun (Cavalcatura — Drago Blu Molto Vecchio, CR 20)
-Azarr Kul entra in battaglia montando Tyrgarun nelle fasi di assalto aperto. Il drago ha piena autonomia tattica e non è un oggetto — ha la sua agenda (vuole sopravvivere). Se Tyrgarun viene gravemente ferito (meno di 50 PF), si ritira in quota e non torna a meno che Azarr Kul non lo chiami esplicitamente. Trattare il duo come due scontri separati coordinati.
+### Tyrgarun (Drago Blu Vecchio, CR 18 — incontro separato, NON cavalcatura)
+Tyrgarun non è mai stato una cavalcatura di Azarr Kul (D11 v2). È il terrore dei cieli della battaglia con la propria agenda tattica: in Fase 1 è un *hazard* di bombardamento aereo sui bastioni (imbattibile in volo a CR 18, si contrasta con contromosse — balliste, gufi Tiri Kitor, missione-esca dei PG — non con lo scontro frontale); in Fase 2-3 resta minaccia aerea a orologeria sui ritualisti; solo in Fase 4, quando il Mythal si completa, viene inchiodato a terra e diventa uccidibile — o fugge come nemesi per ARC-10. Azarr Kul combatte comunque a terra, per conto proprio, indipendentemente dall'esito dell'incontro col drago.
 
 ---
 
@@ -142,12 +142,12 @@ Azarr Kul non fa monologhi. Le sue poche frasi sono precise come un colpo di sci
 | Ucciso prima del Rituale | Il Rituale fallisce; Avatar non invocato; Fase 4 (Circolo Mythal) è opzionale |
 | Ucciso durante il Rituale | Avatar appare già parzialmente invocato (versione ridotta); più gestibile per i PG |
 | Fuggito (< 10 PF) | Torna a Rethmar come boss segreto post-campagna; porta l'Avatar con sé |
-| Tyrgarun ucciso prima di Azarr | Azarr Kul combatte a piedi con +2 morale da rabbia draconica (bonus temporaneo) |
+| Tyrgarun ucciso/messo in fuga prima della Fase 3 | Azarr Kul perde il proprio "terrore dei cieli": TS Volontà CD 15 o Scossi per 1 round all'apparire di Azarr Kul in Fase 3 (shock della perdita, non più +2 morale da un alleato in volo) |
 
 ---
 
 ## NOTE PER IL MASTER
 
 - Azarr Kul NON è il villain subdolo della campagna — quello è il Collezionista. Azarr è il villain **visibile**, il volto della guerra, il bersaglio su cui il party può scaricare tutta la frustrazione accumulata.
-- Dargli spazio prima dello scontro finale: compare brevemente nella Fase 0 (Notte dei Drow) come silhouette su Tyrgarun che supervisiona l'attacco — non combatte, osserva. Questo costruisce terrore senza consumare il boss.
+- Dargli spazio prima dello scontro finale: compare brevemente nella Fase 0 (Notte dei Drow) come silhouette sulle mura, con Tyrgarun che sorvola in lontananza — le due sagome non sono mai insieme (non è una cavalcatura, D11 v2), ma la loro presenza simultanea nello stesso quadro basta a costruire terrore senza consumare il boss.
 - La vera complessità non è in lui ma nel costo del fermarlo: il Mythal richiede che i PG proteggano il Circolo degli Otto mentre lui li attacca.

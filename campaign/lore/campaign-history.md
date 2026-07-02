@@ -308,7 +308,7 @@ The party descends through a chain of connected underground locations:
   - **Phase 0 — Notte dei Drow:** Night infiltration by drow + fungal aberrations → attack Rethmar temple to steal evil artifact. Connection to Sonjak/Il Collezionista/Mother of Fungi faction. Therysol may appear as ally here.
   - **Phase 1 — Assedio Esterno:** Red Hand horde (hobgoblins, ogres, bugbears, Giants, etc) + Githyanki red dragon faction (if not defeated at Dauth) + drow faction. Multiple dragon colors.
   - **Phase 2 — Ritualisti Draconici:** 10-round ritual to summon Avatar of Tiamat + Azarr Kul
-  - **Phase 3 — Azarr Kul & Avatar of Tiamat:** Epic boss fight. Azarr Kul (CR 15 Cleric 10/Fighter 4, half-blue-dragon hobgoblin) + **Tyrgarun** Very Old Blue Dragon (CR 20)
+  - **Phase 3 — Azarr Kul & Avatar of Tiamat:** Epic boss fight. Azarr Kul (CR 15 Cleric 10/Fighter 4, half-blue-dragon hobgoblin), fighting on foot — **Tyrgarun** (Old Blue Dragon, CR 18) is NOT his mount (D11 v2); it's a separate sky-terror encounter, grounded and killable only once the Phase 4 Mythal completes
   - **Phase 4 — Circolo degli Otto & Mythal:** 8 archmages create mythal barrier in 7 rounds, animate city statues as stone golems (à la Harry Potter Battle of Hogwarts)
 - **Allied reinforcements (conditional):**
   - Hammerfist dwarves: 90 survivors of Arc 08 + Re Thorek

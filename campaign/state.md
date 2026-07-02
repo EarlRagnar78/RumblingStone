@@ -120,7 +120,7 @@ Two independent clocks drive Arc 09:
 | Giganti + Ogre + Ettin | 180 | NO PG alliance — stay with Red Hand |
 | Forze Alate (Manticore, Wyvern, Hell Hounds, Chimera) | 140 | |
 | Casters Mano Rossa (War Adepts, Blue, Warpriests di Tiamat) | 55 | |
-| **Dragons (5 AP-original upscaled)** | 5 | Abithriax (Red adult) / Regiarix (Black young, Rhest) / Ozyrrandion (Blue, Tower) / Tyrgarun (reserve) / **Fauci di Palude** (Black adult, Hammerfist vanguard) |
+| **Dragons (5 AP-original upscaled)** | 5 | Abithriax (Red adult) / Regiarix (Black young, Rhest) / Ozyrrandion (Blue, Tower) / **Tyrgarun (Blue Old, CR 18 — sky-terror of the battle, NOT Azarr Kul's mount, D11 v2)** / **Fauci di Palude** (Black adult, Hammerfist vanguard) |
 | **Draconic spawn = Razorfiend (Tiamat colors)** | 8 | Assigned to Wyrmlord villains upscaled |
 | Compagnia Drow di Sonjak | 305 | |
 | Githyanki di Vaereth | 375 | |
@@ -160,21 +160,27 @@ quasi certa.
 | Guarnigione Rethmar (Valerius + milizia) | 1,200 | Fixed |
 | Rifugiati armati (Elsir/Channath Vale) | 600 | +150/villaggio evacuato in tempo |
 | Truppe Consiglio Rethmar | 400 | Via Thorik/Brenna letter |
-| **Alleanza Elfi Starsong Hill** | +500 | SOLO se P3-Starsong quest OK |
-| **Nani di Dauth** (Tordek torneo) | +400 | SOLO se Tordek vince torneo |
+| **Alleanza Elfi Starsong Hill** | +120 (100 ranger + 20 gufi giganti) | SOLO se P3-Starsong quest OK (D9 — tribù Tiri Kitor ~500 anime, invia 1/5 come forza da guerra) |
+| **Nani di Dauth** (torneo vinto) | +300 | SOLO se Tordek vince torneo |
+| **Lance di Re Thorek** | +150 | Flusso separato, condizionato da hook politici (sigillo Maewen + lettera Thorik) — max combinato con la riga sopra: **450** (D10) |
 | **Druidi Cerchio Sacro + Treant Hella** | +150 | SOLO se P1B Hella ritual OK |
 | **Ghostlord redento come alleato** | +600 non-morti buoni | Branch raro |
 | Mercenari Salvatore (rischio tradimento) | ±300 | Instabile |
 
-**Scenari finali (target: PG meaningfully shift balance):**
+**Scenari finali (target: PG meaningfully shift balance):** questa tabella
+è la vista rapida legacy; per lo scenario **autoritativo e ricalcolato**
+sui nuovi totali D9/D10, vedi
+`09_Continuazione.../Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md`
+§3 (5 scenari worst/baseline/medio/ottimale/leggendario, Orda e
+Difensori con la stessa metodologia dual-clock di §2 qui sopra).
 
 | Scenario PG | Horde | Difensori | Rapporto |
 |---|---|---|---|
 | Worst (Ghostlord ostile, Xal'thor allea, 0 quest) | 12,700 | 2,200 | **5.8:1** ☠ |
 | Baseline (0 quest) | 9,400 | 2,200 | **4.3:1** |
-| Medio (2–3 quest + sabotaggi parziali) | 8,000 | 3,100 | **2.6:1** |
-| Ottimale (tutte quest + Rhest + Tower) | 6,800 | 4,100 | **1.66:1** |
-| Leggendario (ottimale + Ghostlord redento + Collezionista stop) | 6,400 | 4,700 | **1.36:1** |
+| Medio (2–3 quest + sabotaggi parziali) | 8,000 | 2,620 | **3.1:1** |
+| Ottimale (tutte quest + Rhest + Tower) | 6,800 | 3,770 | **1.80:1** |
+| Leggendario (ottimale + Ghostlord redento + Collezionista stop) | 6,400 | 4,370 | **1.46:1** |
 
 **Riferimento Hammerfist:** 900/300 = **3:1** (battaglia vinta con
 sacrifici — baseline narrativo).
@@ -193,7 +199,7 @@ gnoll disguised). Detect: Sense Motive CD 18 / Detect Magic. If caught:
 | Talar | ⏳ Under threat (Day 20-22) | ~400 | +35 |
 | Witchcross | ⏳ Under threat (Day 22-25) | ~1,200 (druids stay) | +60 |
 | Marth Fen area | ⏳ Day 25 sweep | ~300 | +50 |
-| Hammerfist Holds | ✅ Held (+90 survivors; 150 lances conditional) | 0 civilians | +150 ❓ if Tordek wins Dauth |
+| Hammerfist Holds | ✅ Held (+90 survivors; 150 lances conditional) | 0 civilians | +150 ❓ if political hooks land (Maewen seal + Thorik letter, D10 — separate from the 300 tournament mercenaries) |
 | Cannathgate | ✅ Not attacked | 0 | +150 ❓ diplomacy |
 
 ---
@@ -262,7 +268,7 @@ the listed consequence triggers.
 | Thorik | Re Thorek Hammerfist | Lead defense at Rethmar OR send Aegis Fang as proxy | Loss of Custode Eterno status; dwarven mercenaries withdraw |
 | Thorik | Hella (implicit) | He sacrificed 2 perm CON for her resurrection — she owes a moral debt | Affects Hella's ethics rolls in arguments with Thorik |
 | Tordek | Hella | 500 XP sacrificed for her resurrection | Affects romantic-bond progression at Sacred Forest |
-| Tordek | Tournament organizers | Show up at Dauth within 5 in-world days | Disqualification; 150 mercenary reinforcements lost |
+| Tordek | Tournament organizers | Show up at Dauth by **Day 29** (eve of the preliminaries — invite Day 24, arrival Day 28, Tournament Day 1-3 = Day 30-32, HOOKS-INTEGRATION-MASTER §1.1) | Disqualification; 150 Lance di Re Thorek reinforcements lost (D10 — separate from the 300 mercenaries won at the Tournament itself) |
 | Artemis | Varis "Seta-Argento" | Deliver one Underdark artifact per quarter | Varis cuts off the Mantello dei Tiri Salvezza supply |
 | Artemis | Mask cult (suspected) | Unknown — they've been watching the Ring | Black-bag attempt during a vulnerable moment |
 | Hella | Druid Circle | Pass the Sacred Forest ritual within 12 days | Circle will not aid at Rethmar |
@@ -636,4 +642,24 @@ entries — they become campaign history.
             resto superato da OTTO-PORTE-e-ORBE + PARTE1-3), corretto
             l'unico 5e-ismo reale (attacco "con vantaggio" → regola
             SRD 3.5 di elevazione) e ripulite le code conversazionali.
+2026-07-02  PIANO-REVISIONE-ARC09 Lotto A, sessione 6 (A6+A7) — ULTIMA
+            SESSIONE DEL LOTTO A, tutti i 13 task A1-A13 completati.
+            A6 (D9/D10): elfi Tiri Kitor +500 → **+120** (100 ranger +
+            20 gufi giganti, 1/5 di una tribù di ~500 anime) in state.md
+            §2.4, INDICE, STRUTTURA §8, ARMATE-SYNC §2/§4. Nani +400 →
+            **300 (torneo) + 150 (Lance di Re Thorek, flusso separato
+            condizionato da hook politici) = max 450**. Scenari D/E di
+            ARMATE-SYNC §3 ricalcolati (D: 2.650→2.230 difensori,
+            2.3:1→2.7:1; E: 4.250→3.980, 1.36:1→1.46:1). Scenari Medio/
+            Ottimale/Leggendario del quick-view di state.md §2.4
+            aggiornati per delta coerente (nessun altro fattore toccato).
+            A7 (D11 v2 + D12): Tyrgarun "Very Old Blue Dragon CR 20,
+            cavalcatura di Azarr Kul" → **Old Blue Dragon CR 18, NON
+            cavalcatura — terrore dei cieli** (hazard Fase 1, minaccia
+            a orologeria Fase 2-3, inchiodato a terra dal Mythal in
+            Fase 4). Corretto in INDICE, ARMATE-SYNC, STRUTTURA §4-7,
+            PNG/Azarr_Kul/Azarr_Kul.md, campaign-story-arcs.md (+ mirror
+            .github/copilot), campaign-history.md, README.md. D12:
+            debito Tordek in state.md §5 riformulato "entro il Day 29,
+            vigilia delle preliminari" (era "5 giorni", ambiguo).
 ```

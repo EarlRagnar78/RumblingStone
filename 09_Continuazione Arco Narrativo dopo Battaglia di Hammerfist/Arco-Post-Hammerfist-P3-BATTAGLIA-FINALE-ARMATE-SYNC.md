@@ -47,7 +47,7 @@ Riferimento dettagliato: `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.m
 
 ### 2.1 Composizione qualitativa fissa
 
-- **5 draghi**: **Abithriax** (red adult — Skull Gorge guardian → riserva Rethmar), **Regiarix** (black young adult — Rhest/Saarvith, *morto se Arc-09/P2 completato*), **Ozyrrandion** (blue adult — Torre Invisibile/Zalkatar, *morto se P2A completato*), **Tyrgarun** (black adult — riserva aerea Rethmar), **Fauci di Palude** (black adult — Vanguard Hammerfist, *annientato a Hammerfist Day 19*, quindi **4 vivi** al Day 19 pre-Rethmar).
+- **5 draghi**: **Abithriax** (red adult — Skull Gorge guardian → riserva Rethmar), **Regiarix** (black young adult — Rhest/Saarvith, *morto se Arc-09/P2 completato*), **Ozyrrandion** (blue adult — Torre Invisibile/Zalkatar, *morto se P2A completato*), **Tyrgarun** (**blue Old, CR 18** — D11 v2, il terrore dei cieli della battaglia: hazard di bombardamento Fase 1, minaccia aerea a orologeria Fase 2-3, inchiodato a terra dal Mythal in Fase 4 — NON cavalcatura di Azarr Kul), **Fauci di Palude** (black adult — Vanguard Hammerfist, *annientato a Hammerfist Day 19*, quindi **4 vivi** al Day 19 pre-Rethmar).
 - **8 Razorfiend Draconic Spawn** (colori Tiamat: 2 black/2 red/1 blue/1 white/2 green) assegnati ai Wyrmlord upscalati (Koth, Ulwai Stormcaller, Saarvith se vivo, Karruk, Zalkatar se vivo, riserva Azarr Kul).
 - **Compagnia del Teschio Nero** (mercenari umani Thay/Mulhorand) — composizione canonica AP, riserva élite di Azarr Kul, **NON modificata**.
 - **Esperimenti Fungini** (fotofobia): Aberrazioni Fungine e Fungal Minions subiscono **-2 attacco, -4 Will in luce solare diretta**. Svantaggio annullato in Fase 0 (notturna), Fase 2-4 se la battaglia si prolunga oltre il crepuscolo, o in interni (tempio/cripte). Dispiego ottimale: Ondata 4 al tramonto, Fase 0 cripte.
@@ -69,10 +69,11 @@ Riferimento dettagliato: `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.m
 | **A** | **Worst Case** | Nessuna quest Arc-09 completata; Ghostlord nemico; drow intatti; Torneo fallito; Circolo Otto non convocato | ~7.400 | ~1.280 (guarnigione + Lions locali) | **5.8 : 1** | CR 17–18 (letale senza deus-ex) |
 | **B** | **Baseline** | Torre Zalkatar liquidata (Artemis); Torneo vinto (300 nani Tordek); Ghostlord nemico; no Tiri-Kitor | ~7.200 | ~1.600 | **4.5 : 1** | CR 16–17 |
 | **C** | **Medio (atteso al tavolo)** | Torre + Torneo + Cerchio Sacro Hellas (druidi-orsi) + Sabotaggio Drow parziale + Ghostlord neutralizzato (solo distaccamento) | ~6.400 | ~2.100 | **3.0 : 1** | CR 15–16 (paragonabile a Hammerfist) |
-| **D** | **Ottimale** | Medio + Tiri-Kitor (Starsong Hill) alleati + Saarvith/Regiarix uccisi Arc-09/P2 | ~6.000 | ~2.650 | **2.3 : 1** | CR 14–15 |
-| **E** | **Leggendario** | Ottimale + Ghostlord alleato PG (colpisce retroguardia) + Circolo degli Otto convocato + Salvatore/mercante converte 1 Wyrmlord | ~5.800 | ~4.250 | **1.36 : 1** | CR 13–14 (heroic fantasy vittoria con costo) |
+| **D** | **Ottimale** | Medio + Tiri-Kitor (Starsong Hill) alleati (100 ranger + 20 gufi, D9) + Saarvith/Regiarix uccisi Arc-09/P2 | ~6.000 | ~2.230 | **2.7 : 1** | CR 14–15 |
+| **E** | **Leggendario** | Ottimale + Ghostlord alleato PG (colpisce retroguardia) + Circolo degli Otto convocato + Salvatore/mercante converte 1 Wyrmlord + 150 Lance di Re Thorek (hook politici Maewen/Thorik completati, D10) | ~5.800 | ~3.980 | **1.46 : 1** | CR 13–14 (heroic fantasy vittoria con costo) |
 
 > **Nota DM**: lo scenario **C (Medio)** è il bersaglio di progettazione; A/B esistono per punire inazione, D/E per premiare gioco eccellente. Non esiste scenario con ratio <1:1 (la campagna non prevede "vittoria facile").
+> **Nota v2.1 (D9/D10, 2026-07-02)**: la colonna Difensori di D/E era calcolata sui vecchi totali alleati (elfi +500, invece dei +120 canonici — 100 ranger + 20 gufi giganti su una tribù di ~500 anime che ne invia 1/5). Ricalcolata di conseguenza (D: 2.650→2.230; E: 4.250→3.980, includendo ora esplicitamente le 150 Lance di Re Thorek come flusso separato dai 300 mercenari di Dauth già in B/C).
 
 ---
 
@@ -162,8 +163,9 @@ Ogni hook completato **prima del Day 40** modula i numeri di §3. Riferimento: `
 | P2 — Rhest (Saarvith + Regiarix) | Day ~28 | -1 drago Orda (Regiarix), -40 razorfiend minori |
 | P2A — Torre Invisibile (Zalkatar) | Day ~32 | -Torre come minaccia parallela; +Artemis focus su Avatar |
 | P2B — Torneo Tordek (Hammerfist) | Day ~34 | +300 mercenari nani fanteria pesante |
+| HOOKS-Thorik (sigillo Maewen + lettera Thorik) | Day ~35 | +150 Lance di Re Thorek, flusso separato dai 300 mercenari (D10; max combinato **450**) |
 | P2C — Salvatore Mercante | Day ~36 | +conversione 1 Wyrmlord **OR** -1 carovana logistica (-300 attrito su Orda) |
-| P3 — Starsong Hill (Tiri-Kitor) | Day ~35 | +Cavalleria civette (neutralizza superiorità aerea Githyanki) |
+| P3 — Starsong Hill (Tiri-Kitor) | Day ~35 | +100 ranger elfici + 20 gufi giganti (D9), cavalleria che neutralizza superiorità aerea Githyanki |
 | P3 — Ghostlord | Day ~28 | Vedi §3 (nemico / distaccamento / alleato) |
 | P3 — Sabotaggio Drow / Campi Drow | Day ~36 | -Fase 0 critical mass (no Alfa in cripte); -35-45 Esperimenti Fungini (Minions + Aberrazioni + 1 Alfa riserva); -Ondata 4 drow ridotta |
 | P3 — Missioni Brevi CR12 (funghi/gith/drow) | Day ~35 | -singole ondate specifiche Fase 1 |

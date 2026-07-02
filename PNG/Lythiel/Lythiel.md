@@ -4,9 +4,9 @@
 **Razza/Tipo:** Elfa dei Boschi (Umanoide Medio, elfo)
 **Classe:** Ranger 8 (specializzazione Cavaliere di Gufo Gigante) — GS 8
 **Allineamento:** Caotico Buono
-**Ruolo:** PNG ricorrente personale per **Hella**. Una dei 12 ranger elfici sui gufi giganti che arrivano alla Sessione 4 della Battaglia di Hammerfist (vedi `08_La Battaglia Di Hammerfist/00_Final_hammerfist_battle…`). **Capitana di squadra** sotto il Signore Ventolesto. **Druida-mancata della Foresta Sacra** — fu allieva del Cerchio prima che la chiamassero alla guerra.
+**Ruolo:** PNG ricorrente personale per **Hella**. Una dei 12 ranger elfici sui gufi giganti che arrivano alla Sessione 4 della Battaglia di Hammerfist (vedi `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md`). **Capitana di squadra** sotto il Signore Ventolesto. **Druida-mancata della Foresta Sacra** — fu allieva del Cerchio prima che la chiamassero alla guerra.
 **Primo incontro (canone):** **Battaglia di Hammerfist, Sessione 4** — atterra dalla schiena del proprio gufo alle ultime tre ondate, atterrando vicina a Hella se Hella è viva. Riconosce immediatamente la sua aura druidica.
-**File correlati:** `08_La Battaglia Di Hammerfist/00_Final_hammerfist_battle…`; `PNG/Tempestas/Tempestas.md`; `Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md`; `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md`.
+**File correlati:** `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md`; `PNG/Tempestas/Tempestas.md`; `Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md`; `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md`.
 
 ---
 
@@ -185,7 +185,7 @@ Niente subito. Solo: *"Quando vedi Saraah, dille che ho mantenuto la promessa. L
 - **Tempestas** (alleato dello stesso fronte aereo): `PNG/Tempestas/Tempestas.md`
 - **Hella PG card**: `skills/rumblingstone-campaign/references/campaign-party.md` Hella section
 - **Sacred Forest quest (P1A)**: `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md`
-- **Hammerfist battle Sessione 4**: `08_La Battaglia Di Hammerfist/00_Final_hammerfist_battle-La_Mano_Rossa_del_Destino-Guida_Completa_del_DM.md`
+- **Hammerfist battle Sessione 4**: `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md`
 - **Hooks integration master**: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md`
 - **Hella hook scene**: `Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md`
 - **Druid Circle / Saraah**: contesto in `campaign/state.md` §3 (Druid Circle row)

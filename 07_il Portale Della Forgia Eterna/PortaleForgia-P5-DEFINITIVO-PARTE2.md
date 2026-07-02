@@ -318,7 +318,7 @@ Dopo l’uccisione di Zog’tar e il primo scontro con Skulldark, i PG devono:
 - O nascondersi e osservare,  
 - O coordinarsi con le difese di Hammerfist.
 
-**Usa quanto descritto in** `00_Final_hammerfist_battle-La_Mano_Rossa_del_Destino-Guida_Completa_del_DM.md` **per allineare gli eventi macro:**
+**Usa quanto descritto in** `ARC08-01-GUIDA-DM.md` **per allineare gli eventi macro:**
 - Giorno 1: Assalto alle mura.  
 - Giorno 2: Breccia nella roccia.  
 - Giorno 3: Soffio della Disperazione, poi arrivo dei Rumbling Stones (i PG) nella Sessione 3, Incontro 3B.

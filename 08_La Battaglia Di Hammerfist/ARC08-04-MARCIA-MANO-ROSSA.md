@@ -40,9 +40,8 @@ corpo principale della Mano Rossa.
 
 ## 2. Composizione della colonna (900 unità — E8)
 
-Riuso della struttura tattica già definita in
-`00_Final_hammerfist_battle-...-Guida_Completa_del_DM.md` (sezione
-ESERCITO DELLA MANO ROSSA):
+Riuso della struttura tattica già definita in `ARC08-01-GUIDA-DM.md`
+(sezione ESERCITO DELLA MANO ROSSA):
 
 | Linea | Unità | Composizione |
 |---|---|---|

@@ -182,11 +182,11 @@ The party descends through a chain of connected underground locations:
 #### Arc 08 — La Battaglia di Hammerfist (4 Sessions)
 
 - **Source:** `08_La Battaglia Di Hammerfist/` (9 files + 2 subdirectories: Mappe/, immage_campaign/)
-- **Main DM Guide:** `00_Final_hammerfist_battle-La_Mano_Rossa_del_Destino-Guida_Completa_del_DM.md` (168KB, 3312 lines)
+- **Main DM Guide:** `ARC08-01-GUIDA-DM.md` (168KB, 3312 lines)
 - **Supplementary files:**
-  - `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` — Visual atlas with tactical maps (master, piano ARC-08 A8; supersedes `00_ATLANTE VISIVO...-complete.md` and `00_battle_stats_maps-final.md`, both DEPRECATED)
-  - `00_Schede_dei_Personaggi_Unità_e_Regolamento_di_Battaglia.md` — Unit & character sheets
-  - `00_SCHEDE_DI_BATTAGLIA_E_REGISTRO_PERDITE_Hammerfist.md` — Loss tracking sheets
+  - `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` — Visual atlas with tactical maps (master, piano ARC-08 A8; supersedes `00_ATLANTE VISIVO...-complete.md` and `ARC08-90-DEPRECATO-battle-stats-maps.md`, both DEPRECATED)
+  - `ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` — Unit & character sheets
+  - `ARC08-03-REGISTRO-PERDITE.md` — Loss tracking sheets
   - `hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md` — Encounter guide
   - `mass_combat_guide_Dm.md` — Mass combat mechanics
   - `combat_prompts_guide.md` — Prompt sequence for mass combat

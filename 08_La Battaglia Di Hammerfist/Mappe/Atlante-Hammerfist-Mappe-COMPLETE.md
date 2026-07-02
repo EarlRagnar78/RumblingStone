@@ -43,8 +43,8 @@ narrativa, questo file è la fonte.
 | 15 | MAPPA 4 Battaglia Finale Aerea e Terrestre | a✅ b✅ c✅ (DEPRECATED) | Lotto-3 ✅ (DEPRECATED) | — | **questo file** |
 
 **File deprecati da questa matrice** (banner DEPRECATED aggiunto, D12 — puntano tutti qui):
-`00_battle_stats_maps-final.md` (a), `00_ATLANTE VISIVO DELLA BATTAGLIA DI HAMMERFIST.md` (b),
-`00_ATLANTE VISIVO DELLA BATTAGLIA DI HAMMERFIST-complete.md` (c),
+`ARC08-90-DEPRECATO-battle-stats-maps.md` (a), `ARC08-91-DEPRECATO-atlante-visivo-v2.md` (b),
+`ARC08-92-DEPRECATO-atlante-visivo-v3-complete.md` (c),
 `Mappe/Hammerfist-Lotto-1-Ricognizione.md`, `Mappe/Hammerfist-Lotto-2-Assedio.md`, `Mappe/Hammerfist-Lotto-3-FINALE.md`.
 
 **File NON deprecati** (master tattici di categoria diversa, non sovrapposti):
@@ -1384,7 +1384,7 @@ Banner Hammerfist re-raised mura. Nani cheer. PG heroes celebrated. Campagna con
 ## 🏆 CAMPAGNA COMPLETA
 
 **"La Battaglia di Hammerfist"** ora ha supporto visuale completo! Combina con:
-- **00_Final_hammerfist_battle.md** (Statistiche, regole)
+- **ARC08-01-GUIDA-DM.md** (Statistiche, regole)
 - **Atlante Visivo** (Descrizioni dettagliate mappe)
 - **Queste 16 immagini** (Visual aid giocatori)
 

@@ -204,10 +204,10 @@ mancante che emerga si flagga `[INFERRED — needs DM confirmation]`.
 
 ### A6. File placeholder fuori canone: 01_ e 03_
 - **Problema** (stessa classe di ARC-09 A12): due stub generici in inglese
-  che **contraddicono il canone**. `01_MANO_ROSSA_MARCIA_VERSO_HAMMERFIST.md`
+  che **contraddicono il canone**. `ARC08-04-MARCIA-MANO-ROSSA.md`
   inventa "Castle Red" (r.7), "River Styx" (r.23), "Ruins of Eldor" (r.24)
   — la marcia canonica parte dal Fane di Tiamat nel Shaar coi waypoint di
-  state.md §2.1. `03_SESSIONE_INTERRUTTA_BATTAGLIA_INIZIA.md` è un recap
+  state.md §2.1. `ARC08-93-DEPRECATO-sessione-interrotta.md` è un recap
   generico di una sessione mai avvenuta. Manca qualsiasi `02_`.
 - **Azione**: (1) riscrivere 01_ come vera scheda logistica
   dell'avanguardia di Fauci di Palude (900 unità: dove si stacca
@@ -224,7 +224,7 @@ mancante che emerga si flagga `[INFERRED — needs DM confirmation]`.
   generò: `00_Schede_dei_Personaggi...` r.1 ("Assolutamente. Ecco..."),
   `00_SCHEDE_DI_BATTAGLIA_E_REGISTRO_PERDITE` r.1-5 ("Certamente. Ho
   compreso..."), `00_ATLANTE VISIVO...md` r.1-3,
-  `00_ATLANTE VISIVO...-complete.md` r.1, `00_battle_stats_maps-final.md`
+  `00_ATLANTE VISIVO...-complete.md` r.1, `ARC08-90-DEPRECATO-battle-stats-maps.md`
   r.1-3.
 - **Azione**: rimuovere le code e sostituirle con header standard: titolo,
   scopo, stato (canonico | deprecato), data revisione. NON toccare il
@@ -233,7 +233,7 @@ mancante che emerga si flagga `[INFERRED — needs DM confirmation]`.
   nell'arco; ogni file 00_ ha un header di stato.
 
 ### A8. Quattro generazioni di atlante/mappe sovrapposte — eleggere i master
-- **Problema**: (a) `00_battle_stats_maps-final.md` (22 KB) è un
+- **Problema**: (a) `ARC08-90-DEPRECATO-battle-stats-maps.md` (22 KB) è un
   **sottoinsieme letterale** di (b) `00_ATLANTE VISIVO...md` (29 KB) —
   stessa intro parola per parola; (c) `00_ATLANTE VISIVO...-complete.md`
   (33 KB) è una terza generazione (166 righe di diff da b); (d)
@@ -548,7 +548,7 @@ canone è cambiato; (4) aggiorna la checklist qui sotto.
 ### Checklist avanzamento
 
 - [x] A0 (2026-07-02) · [x] A1 (2026-07-02) · [x] A2 (2026-07-02) · [x] A3 (2026-07-02) · [x] A4 (2026-07-02) · [x] A5 (2026-07-02) · [x] A6 (2026-07-02) · [x] A7 (2026-07-02) ·
-  [x] A8 (2026-07-02) · [ ] A9 · [x] A10 (2026-07-02) · [x] A11 (2026-07-02) · [ ] A12 (attende ARC-07 B4)
+  [x] A8 (2026-07-02) · [x] A9 (2026-07-02, parziale — vedi nota) · [x] A10 (2026-07-02) · [x] A11 (2026-07-02) · [ ] A12 (attende ARC-07 B4)
 - [ ] B1 · [ ] B2 (attende ARC-07 B2) · [ ] B3 · [ ] B4 · [ ] B5 ·
   [ ] B6 · [ ] B7
 - [ ] C1 · [ ] C2 · [ ] C3 · [ ] C4

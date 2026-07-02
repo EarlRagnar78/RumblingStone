@@ -909,7 +909,7 @@ entries — they become campaign history.
             3Z (17ª mappa) prima di deprecare le fonti, per non perdere
             contenuto. Matrice di contenuto (mappa × file × stato)
             aggiunta in testa al master. Riferimenti attivi ripuntati:
-            `01_MANO_ROSSA_MARCIA_VERSO_HAMMERFIST.md` (scritto in A6,
+            `ARC08-04-MARCIA-MANO-ROSSA.md` (scritto in A6,
             puntava ai Lotto-N deprecati) e la lista file Arc-08 di
             `campaign-history.md`.
 2026-07-02  PIANO-REVISIONE-ARC08 Lotto A, sessione 6 (A4, sui soli
@@ -957,4 +957,34 @@ entries — they become campaign history.
             solo implicita per omissione). Verificato che la Cerimonia
             delle 100 Asce già usa solo Lythiel, nessuna fusione dei
             due comandi elfici.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto A, sessione 8 (A9, parziale) —
+            CHIUSURA DEL LOTTO A (A1-A11 completati; A12 resta
+            bloccato su ARC-07 B4, non ancora consegnato). Nessun
+            cambio di canone di trama, solo `git mv` + fix link.
+            Rinominati con `git mv` (schema `ARC08-NN-SLUG.md`) gli 8
+            file che avevano il buco di numerazione 00_/01_/03_
+            (mancava 02_) e nomi con spazi/maiuscole miste: i 4 file
+            00_ ancora canonici → `ARC08-01-GUIDA-DM.md`,
+            `ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md`,
+            `ARC08-03-REGISTRO-PERDITE.md`; `01_MANO_ROSSA...` (A6) →
+            `ARC08-04-MARCIA-MANO-ROSSA.md`; i 3 file 00_ deprecati
+            (A8) + il 03_ deprecato (A6) → `ARC08-9{0,1,2,3}-
+            DEPRECATO-*.md` (numerazione alta = fuori dal percorso di
+            lettura attivo, banner invariati). Aggiornati TUTTI i
+            riferimenti repo-wide trovati (12 file in 07_/08_/09_/PNG/
+            campaign/, incluse forme abbreviate con "…" non catturate
+            dal primo giro di sostituzione automatica). **Scope
+            ridotto rispetto al piano**: NON rinominati
+            `hammerfist_encounters-...-final.md`, `Cerimonia-delle-
+            100-Asce.md`, `mass_combat_guide_Dm.md`,
+            `combat_prompts_guide.md`, né i file di `Mappe/` — questi
+            non hanno il problema di numerazione (nessun prefisso
+            00_/01_/03_), e includerli avrebbe moltiplicato il rischio
+            di rompere riferimenti repo-wide per un beneficio
+            marginale; lasciati per una passata dedicata (coordinabile
+            con B7/INDICE). `ARC08-00-INDICE.md` (esempio del piano)
+            **riservato** per il deliverable di B7, non creato ora
+            (nessun file riempitivo). Rinomina immagini e cartella
+            `immage_campaign/` NON eseguita, come da istruzione esplicita
+            del piano (dopo la tabella immagine→mappa, C3).
 ```

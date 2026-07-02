@@ -222,7 +222,7 @@ ripetibile: nessun agente/PG può "riusarlo" (violazione di coerenza da flaggare
 ✅ **Recap player spoiler-safe** → `scripts/session_recap.py` (+ opzionale PDF A4)
 ✅ **Reset nuovo gruppo** → `scripts/new-campaign-group.sh`
 ✅ **Narrative files Arc-09** → 70+ file in `09_Continuazione.../`
-✅ **Hammerfist guide (rif.)** → `08_.../00_Final_hammerfist_battle-Guida_Completa_del_DM.md`
+✅ **Hammerfist guide (rif.)** → `08_.../ARC08-01-GUIDA-DM.md`
 ✅ **Skills per domande** → `skills/` (4 skills)
 
 **Gaps noti** (documentati):

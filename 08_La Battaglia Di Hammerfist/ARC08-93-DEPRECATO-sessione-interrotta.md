@@ -2,8 +2,8 @@
 > nessun dettaglio specifico dell'arco reale) — stessa classe di
 > problema del vecchio `01_` (piano ARC-08 A6). Non usare per
 > preparare la sessione: la battaglia vera e propria è coperta da
-> `00_Final_hammerfist_battle-...-Guida_Completa_del_DM.md` e dalle
-> mappe in `Mappe/`. File mantenuto per storico (D12), non cancellato.
+> `ARC08-01-GUIDA-DM.md` e dalle mappe in `Mappe/`. File mantenuto per
+> storico (D12), non cancellato.
 
 # Recap of Interrupted Session: The Red Hand Army's Assault on Hammerfist
 

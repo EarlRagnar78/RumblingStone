@@ -981,7 +981,7 @@ Dalla **Mano Rossa del Destino**, prima battaglia finale drago:
 ## 📚 **FONTI INTEGRATE**
 
 Documenti unificati:
-1. `00_Final_hammerfist_battle-La_Mano_Rossa_del_Destino-Guida_Completa_del_DM.md`  
+1. `ARC08-01-GUIDA-DM.md`  
 2. `PortaleForgia-FINAL-P5.md` (Anno -1000)  
 3. `PortaleForgia-FINAL-P6.md` + `P6-CORREZIONE-Arrivo.md` (Anno 1372)  
 4. `README-INDICE-COMPLETO.md` (timeline generale)  

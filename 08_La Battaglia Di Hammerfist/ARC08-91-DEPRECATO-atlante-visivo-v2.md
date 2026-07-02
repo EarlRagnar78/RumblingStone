@@ -1,7 +1,7 @@
 > ⚠️ **DEPRECATED (2026-07)** — piano ARC-08 A8: generazione superata
 > dell'atlante visivo (l'"Appendice di Gioco Definitiva" promessa
 > nell'indice non è mai stata scritta in questo file — vedi invece
-> `00_Schede_dei_Personaggi_Unità_e_Regolamento_di_Battaglia.md` per
+> `ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` per
 > schede/regolamento). **Master mappe**:
 > `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` (matrice di contenuto in
 > testa a quel file). Contenuto mantenuto per storico (D12), non

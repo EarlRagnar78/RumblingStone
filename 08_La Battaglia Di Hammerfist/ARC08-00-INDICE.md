@@ -145,16 +145,18 @@ Cast già schedato altrove: `PNG/Lythiel/Lythiel.md` (Sacred Forest, E7),
 
 ## 6. Deliverable — stato
 
-Lotti **A, B, C completati** (2026-07-02). Resta aperto solo:
+**Piano ARC-08 COMPLETO** (A0-A12, B1-B7, C1-C4).
 
-- **A12** — eredità Skullcrusher su Fauci: **bloccato**, attende la
-  tabella di carry-over ARC-07 **B4** (non ancora consegnata). Lo
-  statblock di Fauci (`ARC08-02` §1) e la matrice esiti (`ARC08-10` §4)
-  hanno già i **ganci** pronti; quando ARC-07 B4 arriva, si integrano i
-  valori.
-- **Coda C3** (non bloccante): pin a vista delle 14 generazioni immagine
-  "October 2025" + rinomina file allo schema `hammerfist-sNN-*`
-  (`ARC08-14` §6).
+- **A12** — eredità Skullcrusher su Fauci: **completato (2026-07-03)**.
+  La tabella di carry-over ARC-07 **B4** è stata consegnata e validata
+  dal DM (`07_.../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`);
+  integrata in ARC-08 come **puntatore** (nessun valore duplicato):
+  banner + nota nello statblock di Fauci (`ARC08-02` §1), mappa
+  qualitativa in `ARC08-10` §4.1, nota read-aloud al primo avvistamento
+  (`ARC08-01`) e gancio Aegis Fang al duello finale (master mappe).
+- **Coda C3** (non bloccante, opzionale): pin a vista delle 14
+  generazioni immagine "October 2025" + rinomina file allo schema
+  `hammerfist-sNN-*` (`ARC08-14` §6).
 
 ---
 

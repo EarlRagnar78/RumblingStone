@@ -110,9 +110,13 @@
 > lo abbattono (0 PF) prima che fugga, è **ucciso**: −1 drago nel pool
 > di Rethmar (`campaign/state.md` §2.3 Conditional Additives). Nessuno
 > dei due rami è ancora deciso — si risolve solo al tavolo.
-> I numeri di partenza di questo statblock potrebbero essere modificati
-> dalla tabella di carry-over dell'eredità di Skullcrusher (ARC-07 B4,
-> non ancora consegnata — piano ARC-08 A12): non anticipare valori qui.
+> I numeri di partenza di questo statblock **possono essere modificati**
+> dalla tabella di carry-over dell'eredità di Skullcrusher, **consegnata
+> e validata dal DM (2026-07-03)**: vedi il banner in cima allo
+> statblock e la mappa qualitativa in `ARC08-10-ESITI-E-CONTINGENZE.md`
+> §4.1. La **fonte unica dei valori** è `07_.../PortaleForgia-P5-B4-
+> CARRYOVER-Forgia-Ricorda.md` (A12). Applicarli **prima** della
+> battaglia solo se il gruppo ha giocato il P5.
 
 ---
 <div style="page-break-before:always"></div>

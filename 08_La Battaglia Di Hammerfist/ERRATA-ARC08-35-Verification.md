@@ -65,7 +65,10 @@ Tempra +10 coerente con Guerriero 8/GN 2 + Cos.
 29, 1/1d4 round ✅ (coerente con SRD dragon breath); CA 28 / contatto 8
 / colto 28 ✅; Lotta +43 (BAB +25 + For +10 + taglia Enorme +8) ✅.
 **Nota carry-over**: i numeri di partenza restano soggetti alla tabella
-ARC-07 B4 (A12, non consegnata) — non modificati qui.
+ARC-07 B4 (A12, **consegnata e validata dal DM 2026-07-03**) — le
+verifiche 3.5 qui sopra valgono sui valori base; il carry-over si applica
+**dopo**, se il gruppo ha giocato il P5 (mappa in `ARC08-10` §4.1,
+valori in `07_.../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`).
 
 ---
 

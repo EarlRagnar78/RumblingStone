@@ -143,17 +143,30 @@ d'esito sopra.
 
 | Ramo | Trigger | Effetto |
 |---|---|---|
-| **Default — fugge** | Fauci scende sotto i **50 pf** e nessuno lo blocca attivamente | Decolla gravemente ferito verso le montagne meridionali; rimosso dall'assedio ma **vivo**; può tornare come nemesi (hook ARC-10; candidato carta S2 all'EVENT-DECK di Rethmar — vedi C2, non ancora scritto). Nessun cambio ai totali orda |
+| **Default — fugge** | Fauci scende sotto i **50 pf** e nessuno lo blocca attivamente (soglia di ritirata **alzata** se nel P5 Skullcrusher fuggì — valore in §4.1/tabella B4) | Decolla gravemente ferito verso le montagne meridionali; rimosso dall'assedio ma **vivo**; può tornare come nemesi (hook ARC-10; carta S2 proposta all'EVENT-DECK di Rethmar — vedi §6.3). Nessun cambio ai totali orda |
 | **Alternativo — ucciso** | I PG lo bloccano (grapple Orion + attacchi continui) e lo portano a 0 pf | Morto; **−1 drago** nel pool di Rethmar (`state.md` §2.3 Conditional Additives) |
 
-**Gancio carry-over (A12, [CROSS-ARC con ARC-07])**: i **numeri di
-partenza** di Fauci (statblock `ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md`
-§1) sono modificati dall'esito del duello con l'antenato **Skullcrusher**
-nell'ARC-07 P5 ("la Forgia ricorda le ferite"). La **tabella di
-carry-over** è deliverable ARC-07 **B4**, **non ancora consegnato**:
-quando arriva, questa sezione va aggiornata con gli effetti quantificati
-(A12). Fino ad allora: `[INFERRED — attende ARC-07 B4]`, nessun valore
-anticipato qui.
+### 4.1 Carry-over dall'eredità di Skullcrusher (A12, [CROSS-ARC con ARC-07])
+
+I **numeri di partenza** di Fauci (statblock `ARC08-02-SCHEDE-
+PERSONAGGI-REGOLAMENTO.md` §1) sono modificati dall'esito del duello con
+l'antenato **Skullcrusher** nell'ARC-07 P5 ("la Forgia ricorda le
+ferite"). La tabella di carry-over è stata **consegnata e validata dal
+DM (2026-07-03)**: **`07_.../PortaleForgia-P5-B4-CARRYOVER-Forgia-
+Ricorda.md`** è la **fonte unica dei valori** — qui si dà solo la mappa
+qualitativa (nessun valore duplicato, per non divergere).
+
+| Esito del duello P5 (Skullcrusher) | Effetto su Fauci a Hammerfist (sintesi — valori nella tabella B4) |
+|---|---|
+| **Skullcrusher ucciso** | *Cicatrice ancestrale*: Fauci entra in campo con **PF ridotti** e **Presenza Terrificante meno efficace** contro i portatori d'artefatto |
+| **Skullcrusher ferito grave** (fugge) | **−1 uso del soffio** (il primo Soffio a Cono indisponibile; prima linea a CD ridotta) |
+| **Skullcrusher fuggito** (quasi illeso) | Fauci **vi riconosce** (+2 iniziativa, niente sorpresa) ma **morale fragile** → soglia di ritirata **alzata** (fugge prima) |
+| **Ferite ancestrali segnate (N≤3)** | I portatori d'artefatto scelgono **+N al colpire** *oppure* **+Nd6 danni** contro Fauci; cicatrice fisica su un'ala = **−Volare** + bonus a colpirlo in volo |
+| **Gancio inverso — Aegis Fang** | Quando Fauci entra in scena, Aegis Fang "canta" → **Thorik +2 di circostanza** contro Fauci e preavviso del primo soffio |
+
+**Se il gruppo NON ha giocato il P5**: usa lo statblock di `ARC08-02`
+§1 **invariato** (nessun carry-over). L'applicazione va fatta **prima
+della battaglia** leggendo la tabella B4.
 
 ---
 
@@ -264,7 +277,7 @@ di campagna) da aggiungere a
 > — Spotlight: **Thorik**. Se Fauci è fuggito da Hammerfist (non
 > ucciso), può ricomparire come minaccia aerea a Rethmar (o come
 > nemesi ARC-10). Riusa lo statblock di `ARC08-02` §1 (col carry-over
-> ARC-07 B4 se disponibile, A12). Eco gemella: l'**uovo di Fauci**
+> ARC-07 B4 applicato, §4.1). Eco gemella: l'**uovo di Fauci**
 > (ARC-07 C3). *Qui solo l'hook e il puntatore*: la scrittura piena
 > della carta è compito dell'EVENT-DECK ARC-09, non di questo file.
 

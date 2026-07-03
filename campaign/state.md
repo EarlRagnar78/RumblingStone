@@ -1222,4 +1222,25 @@ entries — they become campaign history.
             DM). Ogni handout con "quando darlo". INDICE aggiornato
             (ARC08-14/15 nella tabella canonica; §6 riscritta a "Lotti
             A/B/C completati", resta solo A12 + coda C3 non bloccante).
+2026-07-03  PIANO-REVISIONE-ARC08 A12 (eredità Skullcrusher→Fauci) —
+            **COMPLETO: piano ARC-08 interamente chiuso (A0-A12,
+            B1-B7, C1-C4)**. Il deliverable ARC-07 B4
+            (`07_.../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`) è
+            stato consegnato e validato dal DM (merge PR #18) → A12
+            sbloccato. Integrato in ARC-08 come **puntatore, zero valori
+            duplicati** (la fonte unica dei numeri resta la tabella
+            ARC-07): (1) riconciliata la nota "non ancora consegnata"
+            nello statblock di Fauci (`ARC08-02` §1) col banner di
+            carry-over già aggiunto da ARC-07; (2) nuova §4.1 in
+            `ARC08-10-ESITI-E-CONTINGENZE.md` = mappa qualitativa
+            esito-P5→effetto-a-Hammerfist (ucciso/ferito/fuggito +
+            ferite ancestrali + gancio Aegis Fang), senza ricopiare i
+            valori; (3) nota read-aloud al primo avvistamento di Fauci
+            (`ARC08-01` Sessione 2); (4) gancio Aegis Fang al duello
+            finale (master mappe MAPPA 4); (5) scheda
+            `PNG/Fauci_di_Palude.md` aggiornata. Corretti anche 2
+            riferimenti obsoleti in ARC08-10 (C2 "non ancora scritto"
+            e "carry-over se disponibile") e l'INDICE §6 (da "A12
+            bloccato" a "piano completo"). Follow-up post-merge PR #17:
+            branch ripartito da origin/main (sarà un nuovo PR).
 ```

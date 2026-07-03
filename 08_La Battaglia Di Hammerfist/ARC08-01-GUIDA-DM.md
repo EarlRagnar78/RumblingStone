@@ -1132,6 +1132,18 @@ I PG possono scegliere di aiutare in diverse aree:
 **Leggere ai Giocatori:**
 > *"All'alba dell'ultimo giorno di pace, Fauci di Palude si alza in volo per la prima volta. Il drago nero sorvola lentamente le difese naniche, abbastanza in alto da evitare le baliste ma abbastanza in basso da essere chiaramente visibile. Il suo soffio acido colpisce una torre di vedetta abbandonata, che si dissolve letteralmente in fumo corrosivo. È un messaggio chiaro: 'Arrendetevi, o questa sarà la vostra fine.'"*
 
+> **📎 Nota DM — carry-over di Skullcrusher (A12, se il gruppo ha giocato
+> il P5)**: questo primo avvistamento è vissuto dai **pregen**; il
+> **flashback genetico** e il canto di Aegis Fang (*"sangue Skullcrusher
+> chiama"*) scattano davvero quando **Thorik** affronta Fauci al
+> **finale** (D6). Se il P5 è stato giocato, **applica prima della
+> battaglia** gli effetti dell'eredità (PF/soffio/morale del drago,
+> bonus dei portatori, gancio Aegis Fang) leggendo la tabella
+> `07_.../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md` — mappa
+> qualitativa in `ARC08-10-ESITI-E-CONTINGENZE.md` §4.1. Puoi
+> anticiparne un'eco già qui: chi porta un artefatto avverte un
+> *brivido di riconoscimento* alla vista del drago.
+
 **Opzioni dei PG:**
 1. **Attaccare il drago** (molto pericoloso, ma mostra coraggio)
 2. **Rispondere con magia** (dimostrare che anche i nani hanno potere)

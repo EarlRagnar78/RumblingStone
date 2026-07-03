@@ -8,5 +8,5 @@
 **Esiti possibili (D10)**:
 - *Default* — fugge gravemente ferito sotto i 50 pf; assente da Rethmar salvo ritorno narrativo (hook nemesi, ARC-10).
 - *Alternativo* — ucciso dai PG → −1 drago nel pool di Rethmar (`campaign/state.md` §2.3).
-- Carry-over dall'antenato Skullcrusher (ARC-07 B4, non consegnato) modifica i numeri di partenza — vedi A12.
+- Carry-over dall'antenato Skullcrusher: la tabella ARC-07 B4 (consegnata, DM 2026-07-03) modifica i numeri di partenza secondo l'esito del duello P5 — mappa in `08_.../ARC08-10-ESITI-E-CONTINGENZE.md` §4.1; valori in `07_.../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`.
 **Notes**: adattamento RHoD (drago d'avanguardia upscalato). Il "Soffio a Cono" è house-rule (ERRATA §2). Rami e contabilità in `ARC08-10-ESITI-E-CONTINGENZE.md` §4.

@@ -1276,6 +1276,12 @@ Rappresenta absolute APEX campagna - every element converges single moment glory
 
 **Round 21-23: DUELLO FINALE THORIK vs FAUCI**
 - **Ground melee:** Thorik vs Drago (Epic confronto)
+- **Gancio Aegis Fang (A12, se P5 giocato):** all'ingresso di Fauci,
+  Aegis Fang "canta" (*"sangue Skullcrusher chiama"*) → **Thorik +2 di
+  circostanza** contro Fauci + preavviso del primo soffio. Applica anche
+  gli altri effetti del carry-over prima della battaglia (PF/soffio/
+  morale del drago, bonus dei portatori) — mappa in `ARC08-10` §4.1,
+  valori in `07_.../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`.
 - **Support:** Tordek joins (Flurry Blows), Artemis continues blast
 - **Fauci Desperate:** Full Attack Thorik (Morso+Artigli+Ali+Coda)
 - **Thorik Heroic:** Aegis-Fang throw (Crit 19-20/×3) + *Smite Evil*

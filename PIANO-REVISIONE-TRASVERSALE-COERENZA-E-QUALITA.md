@@ -162,13 +162,26 @@
 
 ## §3 — LOTTO T-C: Artefatti di tutti i PG (T6-T8) e propagazione rituale (T9)
 
-### T6a. Igiene meccanica cartelle artefatti (engine: **Sonnet 5**)
+### T6a. Igiene meccanica cartelle artefatti — ✅ FATTO (sessione 3, 2026-07-03)
 - **Azione**: applicare i flag `[T6]` della matrice — banner 📸 sui 2 file
   Ring top-level; deprecare le copie html doppie della scheda Bracieri
   (`copy 2`, `Final`); `git mv` `Avvneture_per_nani.txt` (refuso);
   spostare/marcare il tooling locale di Tordek (`apply_styles.py` ecc.);
   chiedere al DM (flag, non agire) la rimozione dei temporanei Word.
-- **Accettazione**: ogni file della matrice ha lo stato che la matrice
+- **Fatto**: banner 📸 aggiunti a `Ring of Chaotic Illumination.md` e
+  `Ring_of_chaotic_illumination-master.md` (top-level, puntano al MASTER
+  *Reforged*); banner 📸 in testa alle 2 copie HTML duplicate della scheda
+  Bracieri (`... Final.html`, `... copy 2.html`); `Avvneture_per_nani.txt`
+  (refuso, byte-identico al canonico) rinominato via `git mv` in
+  `DEPRECATO-Avvneture_per_nani-refuso-duplicato.txt` con nota in testa;
+  tooling locale di Tordek marcato in `README-tooling-locale.md` (path
+  hardcoded alla macchina originale, non spostato in `scripts/` per non
+  farlo passare per tool generico del repo); temporanei Word **non
+  toccati** (restano flag `🗑️ in attesa di conferma DM`, coerente con la
+  domanda aperta già in checklist §5). `ARTEFATTI-MATRICE-VERSIONI.md`
+  aggiornata per ogni riga toccata. Zero contenuti narrativi/meccanici
+  modificati.
+- **Accettazione** ✅: ogni file della matrice ha lo stato che la matrice
   dichiara; matrice aggiornata; zero contenuti modificati.
 
 ### T6b. Consolidamenti Corona/Aegis/Cerebromorphosis (engine: **Opus 4.8**)
@@ -253,7 +266,7 @@
 
 - [x] T1 · [x] T2 · [x] T3 · [x] T4 — **LOTTO T-A COMPLETO (2026-07-03)**
 - [x] T5a (sessione 2, 2026-07-03) · [ ] T5b · [ ] T5c — lotto mappe
-- [ ] T6a · [ ] T6b · [ ] T6c — lotto artefatti
+- [x] T6a (sessione 3, 2026-07-03) · [ ] T6b · [ ] T6c — lotto artefatti
 - [ ] T7 · [ ] T8 · [ ] T9 — schede, sinergie, propagazione
 - [x] T-D1…T-D5 — decisioni acquisite (2026-07-03); domande aperte:
   SOLO le conferme DM inline (T6c colonne §6; rimozione temporanei Word)

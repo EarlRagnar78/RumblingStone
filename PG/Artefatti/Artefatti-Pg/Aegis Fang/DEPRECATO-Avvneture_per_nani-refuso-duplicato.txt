@@ -1,3 +1,7 @@
+[DEPRECATO (T6a, 2026-07-03) — refuso nel nome originale ("Avvneture"),
+duplicato byte-identico di Avventure_per_nani.txt (file canonico, stesso
+uso questo). Conservato per storico (D10), non cancellato.]
+
 Avventure per Nani
 
 And I forgot Dungeon Crawl Classics 44: Dreaming Caves of the Duergar. So, by level

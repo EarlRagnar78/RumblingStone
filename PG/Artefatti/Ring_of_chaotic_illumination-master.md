@@ -1,3 +1,12 @@
+> 📸 **SNAPSHOT STORICO (T6a, 2026-07-03)** — "documento riservato DM",
+> generazione 2 (italiano). **Master canonico**:
+> `Artefatti-Pg/ringOfChaoticIllumination/00_Ring_of_Chaotic_Illumination_Revised.md`
+> (versione *Reforged*, eletta in A10 — vedi
+> `PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md` §3). Conservato per storico
+> (D10), non usare per il gioco. Gli export accompagnatori
+> (`Ring_of_chaotic_illumination-master.odt`/`.pdf`) seguono lo stesso
+> stato.
+
 Anello dell\'Illuminazione Caotica
 ==================================
 

@@ -63,8 +63,9 @@ Cartella `Artefatti-Pg/Aegis Fang/`:
 |---|---|---|
 | `Aegis Fang.docx` / `Aegis Fang.pdf` | scheda completa | ⭐ MASTER **di fatto** — ⚠️ manca il `.md` (lotto **T6**: estrarre markdown master) |
 | `05_Aegis_Fang_Final_Awakening.html` | risveglio finale (post-Siege) | *annesso* (futuro) |
-| `Avventure_per_nani.txt` / `Avvneture_per_nani.txt` | appunti (refuso nel nome) | 📸 appunti `[T6: eleggere/rinominare]` |
-| `~$gis Fang.docx`, `~WRL0191.tmp` | file temporanei Word | 🗑️ candidati rimozione (eccezione D10 da confermare col DM) |
+| `Avventure_per_nani.txt` | appunti | ⭐ canonico (refuso eletto/rinominato in T6a) |
+| `DEPRECATO-Avvneture_per_nani-refuso-duplicato.txt` | appunti, duplicato byte-identico | 📸 deprecato (T6a: `git mv` dal refuso `Avvneture_per_nani.txt`, banner in testa) |
+| `~$gis Fang.docx`, `~WRL0191.tmp` | file temporanei Word | 🗑️ candidati rimozione — **in attesa di conferma DM** (eccezione D10, non rimossi in T6a) |
 
 ## 3. RING OF CHAOTIC ILLUMINATION (Artemis)
 
@@ -73,8 +74,8 @@ Cartella `Artefatti-Pg/Aegis Fang/`:
 
 | File | Ruolo | Stato |
 |---|---|---|
-| `PG/Artefatti/Ring of Chaotic Illumination.md` (top-level) | versione originale inglese pre-riforgiatura | 📸 snapshot storico `[T6: aggiungere banner]` |
-| `PG/Artefatti/Ring_of_chaotic_illumination-master.md` + `.odt`/`.pdf` (top-level) | "documento riservato DM", generazione 2 | 📸 snapshot storico `[T6: banner]` |
+| `PG/Artefatti/Ring of Chaotic Illumination.md` (top-level) | versione originale inglese pre-riforgiatura | 📸 snapshot storico (banner aggiunto in T6a) |
+| `PG/Artefatti/Ring_of_chaotic_illumination-master.md` + `.odt`/`.pdf` (top-level) | "documento riservato DM", generazione 2 | 📸 snapshot storico (banner aggiunto al `.md` in T6a; export `.odt`/`.pdf` binari non bannerabili, stesso stato per riferimento) |
 | `ringOfChaoticIllumination/00_..._Revised.html` / `Ring of Chaotic Illumination (Reforged).pdf` | export del MASTER | 📸 generati |
 | `Artemis/Cerebromorphosis/**` | sistema crisi Cerebromorphosis + intervento divino (IT/EN, md+pdf) | *annesso* al percorso di Artemis — ⚠️ nessun master eletto (lotto **T6**) |
 | `PrestigeClass/lord_sun_shadow/` | classe di prestigio RIFIUTATA da Artemis | 📸 storia di progetto (percorso alternativo chiuso) |
@@ -91,8 +92,9 @@ file numerati che raccontano la progressione, un file = uno stadio.
 | `02_Risveglio_Bracieri_di_Moradin.md` | stadio Fuoco (giocato ✅) | *annesso-stadio* |
 | `03_Risveglio_Completo_Bracieri_Terra.md` | stadio Terra (giocato ✅) | *annesso-stadio* |
 | `04_..._Scheda_PG_Fuoco.md/html` | HANDOUT giocatore (Fuoco) | superato dallo stadio Terra |
-| `05_..._Scheda_PG_Completa.md` (+ 3 varianti `.html`) | HANDOUT giocatore attuale | ⭐ HANDOUT — `[T6: le 2 copie "copy 2"/"Final" html da deprecare]` |
-| `apply_styles.py`, `rewrite_table.py`, `generate_therysol.py`, `b64_20pct.txt` | tooling locale | 🗑️/📸 `[T6: spostare in scripts/ o marcare]` |
+| `05_..._Scheda_PG_Completa.md` (+ `.html` canonico) | HANDOUT giocatore attuale | ⭐ HANDOUT |
+| `05_..._Scheda_PG_Completa Final.html`, `05_..._Scheda_PG_Completa copy 2.html` | copie duplicate dell'HANDOUT | 📸 deprecate (T6a: banner in testa, non cancellate) |
+| `apply_styles.py`, `rewrite_table.py`, `generate_therysol.py`, `b64_20pct.txt` | tooling locale usa-e-getta (path hardcoded) | 📸 marcato in T6a — vedi `README-tooling-locale.md` nella stessa cartella |
 
 ## 5. COLLANA DEI SEMI ETERNI (Hella)
 

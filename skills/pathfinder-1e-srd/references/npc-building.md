@@ -1,7 +1,7 @@
 # PF1e NPC Building — Classed NPCs and Villains
 
-Source: PF1e Core Rulebook ch. 14, GameMastery Guide (NPC creation),
-NPC Codex. Verify: https://www.d20pfsrd.com/gamemastering/npc-creation/
+Source: PF1e Core Rulebook (Gamemastering + NPC chapters), NPC Codex.
+Lookup: https://www.d20pfsrd.com/gamemastering/npc-creation/
 
 Use this when a villain or named PNG needs class levels rather than a
 template. Works for 3.5 tables: build with PF1e speed, then apply the
@@ -11,11 +11,16 @@ conversion notes in `core-differences.md`.
 
 ## CR from character level
 
+Verified rule (PF Core, encounter design): a creature with class levels and
+no racial HD:
+
 | NPC build | CR |
 |---|---|
-| PC-class levels, heroic array, class-appropriate gear | level − 1 |
-| NPC-class levels only (warrior, expert, adept, aristocrat, commoner) | level − 2 (min 1/3) |
+| PC-class levels | class levels − 1 |
+| NPC-class levels only (warrior, expert, adept, aristocrat, commoner) | class levels − 2 |
 | Racial HD + class levels | build as monster + class levels, then benchmark |
+
+Below CR 1, each step down follows the progression 1/2, 1/3, 1/4, 1/6, 1/8.
 
 - 3.5 prices the same characters at level (PC classes) or level − 1
   (NPC classes). **The PF1e pricing is more honest** — a lone classed NPC
@@ -27,33 +32,41 @@ conversion notes in `core-differences.md`.
 
 ## Ability arrays (no rolling)
 
+Verified (PF Core, NPC creation) — apply racial modifiers after assigning:
+
 | Array | Scores (before racial) | Use for |
 |---|---|---|
-| Basic | 13, 12, 11, 10, 9, 8 | mooks, NPC-class characters |
-| Heroic | 15, 14, 13, 12, 10, 8 | classed villains, lieutenants |
-| Elite (3.5's elite array equivalent) | 15, 14, 13, 12, 10, 8 + racial | named recurring villains |
+| Basic | 13, 12, 11, 10, 9, 8 | NPC-class characters (mooks, mobs) |
+| Heroic | 15, 14, 13, 12, 10, 8 | PC-class NPCs: villains, lieutenants |
 
-Add +1 per 4 levels as normal. For spellcasting villains, prioritize the
+The heroic array is identical to 3.5's elite array — one array to remember
+across both systems. Add +1 to one score per 4 levels as normal. For spellcasting villains, prioritize the
 casting stat: DC pressure is what makes casters scary at APL 13.
 
 ## NPC gear by level (PF1e "heroic NPC" column)
 
-Gear is ~½ of a PC's wealth-by-level. Key rows
-(`[Verify — PF Core, Table 14–9]`):
+Gear runs well below a PC's wealth-by-level. Verified rows from PF Core,
+Table: NPC Gear (heroic-class NPCs; basic-class NPCs use one level lower):
 
-| Level | NPC gear value |
+| Heroic NPC level | Total gear value |
 |---|---|
-| 9 | 8,000 gp |
-| 11 | 12,500 gp |
-| 13 | 20,000 gp |
-| 15 | 33,000 gp |
+| 7 | 6,000 gp |
+| 9 | 10,050 gp |
+| 11 | 16,350 gp |
+| 13 | 27,000 gp |
+| 15 | 45,000 gp |
+| 17 | 75,000 gp |
+
+High-fantasy campaign: double these; low-fantasy: halve them. Fast XP
+track: treat NPCs as one level higher for gear; slow track: one lower.
 
 - Spend on the villain's *one* signature trick (weapon or DC-booster) plus
   AC. Consumables (potions, scrolls) are loot the party recovers — they are
   the safe way to over-gear a villain without inflating campaign wealth.
-- 3.5 equivalent: DMG Table 4–23 NPC gear value. The numbers are close
-  enough to use either; this campaign audits treasure against 3.5 WBL
-  (see `campaign/` treasure audits), so log whatever the party actually loots.
+- 3.5 equivalent: DMG Table 4–23 NPC gear value (non-SRD — verify in your
+  copy; e.g. its level-13 row is lower than PF's 27,000 gp). Either scale
+  works; this campaign audits treasure against 3.5 WBL (see `campaign/`
+  treasure audits), so log whatever the party actually loots.
 
 ## Fast villain recipe (10 minutes)
 

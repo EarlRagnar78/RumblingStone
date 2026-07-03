@@ -29,6 +29,16 @@ jobs:
       - name: Validate skill trees (frontmatter, links, data YAML)
         run: python scripts/validate_skills.py
 
+      - name: DM tool smoke tests
+        run: |
+          python scripts/suggest_encounter.py --help > /dev/null
+          python scripts/suggest_loot.py --help > /dev/null
+          python scripts/suggest_map.py --help > /dev/null
+          python scripts/session_recap.py --help > /dev/null
+          python scripts/state_sync.py --help > /dev/null
+          python scripts/build_monster_catalog.py --help > /dev/null
+          python scripts/update_xp.py --check > /dev/null
+
   build:
     name: Build skill packages
     runs-on: ubuntu-latest

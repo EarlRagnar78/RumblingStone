@@ -66,7 +66,7 @@ A character who has multiple attacks from high BAB MUST take a Full-Round Action
 **Critical Hits**:
 1. Roll within threat range (e.g., 18–20 for scimitar) → threat
 2. Confirm: roll again; if it would hit the opponent's AC → critical
-3. Multiply damage (not bonuses from Power Attack, sneak attack, etc.) by crit multiplier (×2 standard, ×3 lance/falchion, ×4 scythe)
+3. Roll damage crit-multiplier times (×2 standard, ×3 e.g. lance, ×4 e.g. scythe), **with all usual flat bonuses each time** (Str, enhancement, Power Attack). Exception: extra damage dice over and above the weapon's normal damage (sneak attack, *flaming*, etc.) are rolled only once — never multiplied. (Verified vs SRD Combat I.)
 
 ---
 
@@ -81,7 +81,7 @@ A character who has multiple attacks from high BAB MUST take a Full-Round Action
 | Dazzled | −1 attack rolls, Spot checks |
 | Dead | Dead |
 | Deafened | −4 Initiative; 20% spell failure; −4 Listen |
-| Dying | −1 to −9 HP; unconscious; lose 1 HP/round; save DC 10 at −1, +1 per round |
+| Dying | −1 to −9 HP; unconscious, no actions; each round 10% chance to stabilize, otherwise lose 1 HP |
 | Energy Drained | −1 effective level per negative level; −1 all d20 rolls per level |
 | Entangled | −2 attacks, −4 DEX; move at half speed; spells need Concentration DC 15+spell level |
 | Exhausted | STR/DEX −6; half speed; becomes fatigued after rest |
@@ -89,7 +89,7 @@ A character who has multiple attacks from high BAB MUST take a Full-Round Action
 | Fatigued | STR/DEX −2; cannot run/charge |
 | Flat-Footed | Lose DEX to AC; cannot make AoOs; before first turn |
 | Frightened | Flee if possible; −2 attacks/saves/checks |
-| Grappled | −4 DEX; −4 attack vs. non-grappled; no AoOs; limited to grapple actions |
+| Grappled | No DEX bonus to AC vs. opponents you aren't grappling; threaten no squares (no AoOs); limited actions; attacks inside grapple at −4 (light weapon only) |
 | Helpless | DEX 0; attackers get +4 to hit; adjacent gets coup de grace |
 | Incorporeal | Immune to nonmagic/mundane; 50% with magic; own attacks only affect incorporeal/ethereal |
 | Invisible | +2 attacks; defenders lose DEX; 50% miss |
@@ -159,7 +159,7 @@ A character who has multiple attacks from high BAB MUST take a Full-Round Action
 
 **Charge**: Move up to 2× speed in straight line; +2 to attack; −2 to AC until next turn; provokes AoO during movement if applicable
 
-**Run**: 4× speed (3× in heavy armor); straight line; −2 AC; lose DEX until next turn
+**Run**: 4× speed (3× in heavy armor); straight line; lose DEX bonus to AC (unless Run feat); can sustain Con-score rounds, then DC 10 Con checks
 
 ---
 
@@ -187,10 +187,10 @@ A character who has multiple attacks from high BAB MUST take a Full-Round Action
 | −1 to −9 | Dying: unconscious, lose 1 HP/round |
 | −10 or below | Dead |
 
-**Massive Damage Rule (optional)**: Taking 50+ damage in one hit → Fort save DC 15 or die.
+**Massive Damage**: A single attack dealing 50+ damage (that doesn't already kill) → Fort save DC 15 or die regardless of remaining HP. Core rule in 3.5 (check `campaign/lore/house-rules.md` for any waiver).
 
 **Stabilize**: Someone adjacent can use a DC 15 Heal check (standard action) to stabilize a dying character. Also: Heal spell, healing magic.
 
 **Natural Stabilization**: 10% chance per round to stabilize naturally.
 
-**Recovery**: Stable character wakes after d% hours unconscious; starts recovering at 1 HP/day with complete rest.
+**Recovery (stable, unaided)**: each hour, 10% chance to regain consciousness (disabled at negative HP); on a failed roll, lose 1 HP. With help/rest: natural healing 1 HP/level per day (×1.5 with complete bed rest).

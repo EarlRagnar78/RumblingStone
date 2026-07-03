@@ -37,9 +37,9 @@ srd_items:
       }
     - { name: "Bracers of Armor +1", price: 1000, desc: "SRD, +1 armor bonus." }
     - {
-        name: "Wand of Magic Missile (CL 5)",
+        name: "Wand of Magic Missile (CL 1)",
         price: 750,
-        desc: "SRD wand, 50 charges.",
+        desc: "SRD wand, 50 charges, 1 missile (CL 5 version costs 3,750 gp).",
       }
   # ─── MINOR GREATER (1000-5000 gp) ───
   minor_greater:
@@ -118,16 +118,16 @@ srd_items:
       }
     - {
         name: "+2 Flaming Burst Battleaxe",
-        price: 18315,
-        desc: "SRD +2 + Flaming Burst (+1d6 fire, +1d10 on crit).",
+        price: 32310,
+        desc: "SRD +2 + Flaming Burst (+2 equiv; +1d6 fire, +1d10 on crit). Total +4 equiv: 32,000 + 310 mw battleaxe.",
       }
     - { name: "Wand of Fireball (CL 10)", price: 22500, desc: "SRD wand, 10d6." }
   # ─── MAJOR LESSER (15000-40000 gp) ───
   major_lesser:
     - {
         name: "+3 Keen Rapier",
-        price: 18320,
-        desc: "SRD +3 + Keen (19-20/×2 threat).",
+        price: 32320,
+        desc: "SRD +3 + Keen (+1 equiv; threat 15-20). Total +4 equiv: 32,000 + 320 mw rapier.",
       }
     - {
         name: "Armor of the Sea (+3 Breastplate)",
@@ -145,13 +145,13 @@ srd_items:
   major_greater:
     - {
         name: "+4 Holy Greatsword",
-        price: 50350,
-        desc: "SRD +4 + Holy (+2d6 vs evil).",
+        price: 72350,
+        desc: "SRD +4 + Holy (+2 equiv; +2d6 vs evil). Total +6 equiv: 72,000 + 350 mw greatsword.",
       }
     - {
         name: "Staff of Fire",
-        price: 29200,
-        desc: "SRD staff (Burning Hands/Fireball/Wall of Fire).",
+        price: 17750,
+        desc: "SRD staff (Burning Hands 1, Fireball 1, Wall of Fire 2 charges; CL 8).",
       }
     - {
         name: "Manual of Bodily Health +3",

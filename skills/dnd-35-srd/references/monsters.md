@@ -41,10 +41,10 @@ Level Adjustment: [N or —]
 |---|---|---|---|---|
 | Aberration | d8 | ¾ | Will | — |
 | Animal | d8 | ¾ | Fort, Ref | No language; low Int |
-| Construct | d10 | Full | — | No Con; immune to mind/disease/poison/sleep/stun; can't heal naturally |
+| Construct | d10 | ¾ | — | No Con; immune to mind/disease/poison/sleep/stun; can't heal naturally |
 | Dragon | d12 | Full | Fort, Ref, Will | Immune to sleep/paralysis; low-light/darkvision |
-| Elemental | d8 | Full | Varies | Immune to poison/sleep/paralysis/stun; not flanked |
-| Fey | d6 | ¾ | Ref, Will | Low-light vision |
+| Elemental | d8 | ¾ | Ref (Air, Fire) or Fort (Earth, Water) | Immune to poison/sleep/paralysis/stun; not flanked |
+| Fey | d6 | ½ | Ref, Will | Low-light vision |
 | Giant | d8 | ¾ | Fort | — |
 | Humanoid | d8 | ¾ | Varies | — |
 | Magical Beast | d10 | Full | Fort, Ref | Low-light, darkvision |
@@ -52,8 +52,13 @@ Level Adjustment: [N or —]
 | Ooze | d10 | ¾ | — | Blind; immune to mind/gaze/visual; no Dex bonus to AC |
 | Outsider | d8 | Full | Fort, Ref, Will | Darkvision 60 ft; don't need to eat/sleep |
 | Plant | d8 | ¾ | Fort | Immune to mind/poison/sleep/paralysis/stun/polymorph |
-| Undead | d12 | ¾ | Will | No Con; immune to mind/sleep/paralysis/stun/disease/poison; CR: turn check |
+| Undead | d12 | ½ | Will | No Con; immune to mind/sleep/paralysis/stun/disease/poison; CR: turn check |
 | Vermin | d8 | ¾ | Fort | Mindless (Int —); immune to mind effects |
+
+BAB ¾ = "as cleric", full = "as fighter", ½ = "as wizard". Feats: all types
+get 1 + (1 per 3 HD). Skill points/HD: outsider 8+Int, dragon/fey 6+Int,
+undead 4+Int, all others 2+Int (min 1 if Int ≥ 1; none if Int —).
+(Verified vs SRD `Table: Creature Improvement by Type`.)
 
 ---
 
@@ -150,14 +155,30 @@ points, a feat at every 3rd total HD, +1 ability at every 4th total HD.
 | Huge → Gargantuan | +8 | — | +4 | +4 |
 | Gargantuan → Colossal | +8 | — | +4 | +5 |
 
-Also recompute size mods to attack/AC (M +0, L −1, H −2, G −4, C −8),
-grapple (L +4, H +8, G +12, C +16), space/reach; step damage dice up one
-size. A size-category jump usually warrants a further +1 CR (guide, not
-hard rule — benchmark the result).
+Repeat the adjustment for each size category gained. Also recompute size
+mods to attack/AC (M +0, L −1, H −2, G −4, C −8), grapple (L +4, H +8,
+G +12, C +16), space/reach; step damage dice up one size per category
+(1d2→1d3→1d4→1d6→1d8→2d6→3d6; 1d10→2d8→3d8).
+
+**Other CR modifiers** (same SRD table — these are RAW, not guidance):
+
+| Modifier | CR |
+|---|---|
+| Size increased to Large or larger | +1 |
+| Ability scores based on elite array (not if advanced by class levels) | +1 |
+| New special attacks/qualities that significantly improve combat | +2 |
+| New special attacks/qualities that improve combat in a minor way | +1 |
+| Template added | + template CR modifier |
+
+Do **not** stack the added-HD CR increase with a class-level CR increase.
 
 **Adding class levels**: associated class (amplifies the monster's
-strengths) = CR +1/level; nonassociated = CR +1 per 2 levels until class
-levels equal racial HD, then +1/level; NPC classes always nonassociated.
+strengths — e.g. fighter/barbarian on a combat brute; a casting class that
+stacks with innate casting) = CR +1/level; nonassociated = CR +1 per
+2 levels until the nonassociated class levels equal the original racial HD,
+then +1/level; NPC classes always nonassociated. Give PC-classed monsters
+the elite array (15/14/13/12/10/8), NPC-classed the nonelite array
+(13/12/11/10/9/8); unclassed monsters assume 11/11/11/10/10/10 + racial.
 Humanoids with 1 racial HD swap it for the first class level (then: PC
 classes CR = level, NPC classes CR = level − 1).
 
@@ -166,9 +187,9 @@ classes CR = level, NPC classes CR = level − 1).
 ## Templates
 
 **Half-Dragon**: +8 STR, +2 CON/INT/CHA; energy immunity; breath weapon 1/day; NA +4; CR +2; LA +3
-**Half-Fiend**: large ability boosts (exact line: SRD page); SR, DR 5/magic; SLAs by HD; wings; CR +1 (HD ≤4), +2 (HD 5–10), +3 (HD 11+); LA +4
-**Half-Celestial**: large ability boosts (exact line: SRD page); SR, DR 5/magic; SLAs by HD; wings; CR +1 (HD ≤5), +2 (HD 6–10), +3 (HD 11+); LA +4
-**Celestial / Fiendish**: darkvision 60 ft; resistances; SR HD+5; smite 1/day; CR +0 (HD ≤3), +1 (HD 4–7), +2 (HD 8+); LA +2
+**Half-Fiend**: +4 STR/DEX/INT, +2 CON/CHA; SR, DR 5/magic; SLAs by HD; wings; CR +1 (HD ≤4), +2 (HD 5–10), +3 (HD 11+); LA +4
+**Half-Celestial**: +4 STR/CON/WIS/CHA, +2 DEX/INT; SR, DR 5/magic; SLAs by HD; wings; CR +1 (HD ≤5), +2 (HD 6–10), +3 (HD 11+); LA +4
+**Celestial / Fiendish**: darkvision 60 ft; resist acid/cold/electricity (celestial) or cold/fire (fiendish) 5 (HD 1–3/4–7) or 10 (HD 8+); DR — (HD 1–3), 5/magic (HD 4–11), 10/magic (HD 12+); SR HD+5 (max 25); smite 1/day (+HD dmg, max +20); CR +0 (HD ≤3), +1 (HD 4–7), +2 (HD 8+); LA +2
 **Vampire**: Undead type; +6 STR, +4 DEX, +2 INT/WIS, +4 CHA; +6 NA; energy drain; blood drain; dominate; gaseous form; fast healing 5; DR 10/silver+magic; weaknesses (sunlight, running water, stake); CR +2; LA +8
 **Lich**: Undead type; +2 INT/WIS/CHA; touch attack + paralysis; fear aura; phylactery; DR 15/bludgeoning+magic; CR +2; LA +4
 **Ghost**: Undead (incorporeal); manifestation; +4 CHA; frightful moan/malevolence etc. (pick powers); CR +2; LA +5

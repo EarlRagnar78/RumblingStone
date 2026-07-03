@@ -83,9 +83,9 @@ Defensive casting: DC 15 + spell level
 - **Charm Person** — humanoid regards caster as friendly; Will negates
 - **Color Spray** — blind/stun/unconscious by HD vs. caster level; Will negates
 - **Cure Light Wounds** — 1d8+1/level (max +5) healing
-- **Magic Missile** — 1 missile (+1/2 levels above 1st, max 5); 1d4+1 force; no save, no SR... wait: SR Yes
+- **Magic Missile** — 1 missile +1 per 2 levels above 1st (max 5 at CL 9); 1d4+1 force each; no save; SR applies
 - **Shield** — invisible shield; +4 AC; blocks magic missiles; 1 min/level
-- **Sleep** — 2d4 HD of creatures sleep; Will negates (lowest HD first)
+- **Sleep** — 4 HD of creatures sleep (lowest HD first); Will negates; 1-round casting time
 
 ### 2nd Level
 - **Bull's Strength** — +4 STR; 1 min/level
@@ -126,7 +126,7 @@ Defensive casting: DC 15 + spell level
 - **True Seeing** — see through illusions, invisible, polymorphed, etc.; 1 min/level
 
 ### 7th Level
-- **Finger of Death** — Fort: 3d6+1/level (max +25); fails: 3d6+25; 1 creature
+- **Finger of Death** — slays one living creature; Fort partial: on a successful save instead takes 3d6 +1/level (max +25)
 - **Limited Wish** — duplicates most spells ≤6th level; flexible
 - **Reverse Gravity** — objects/creatures fall upward; 1 round/level
 - **Spell Turning** — reflect 1d4+6 levels of spells back; 10 min/level

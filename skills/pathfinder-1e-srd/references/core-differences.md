@@ -10,8 +10,9 @@ into the 3.5 campaign or reading PF1e stat blocks.
 3.5 uses opposed checks (grapple, trip, disarm, bull rush…). PF1e unifies them:
 
 - **CMB** (Combat Maneuver Bonus) = BAB + Str mod + size modifier
-  (size: Fine −8 … Medium +0, Large +1, Huge +2, Gargantuan +3, Colossal +4 —
-  note these are the *special size modifiers*, inverted vs AC modifiers)
+  (verified, PF size table: Fine −8, Diminutive −4, Tiny −2, Small −1,
+  Medium +0, Large +1, Huge +2, Gargantuan +4, Colossal +8 — the inverse
+  of the AC/attack size modifiers)
 - **CMD** (Combat Maneuver Defense) = 10 + BAB + Str mod + Dex mod + size mod
   (+ deflection/dodge/etc. bonuses to AC)
 - Maneuver succeeds on CMB check ≥ CMD.

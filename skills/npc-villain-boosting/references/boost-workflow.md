@@ -50,13 +50,16 @@ Two of them + terrain = EL 8. Still an easy fight; fine as a warm-up wave.
 
 - Advancement line: `7–9 HD (Large); 10–14 HD (Huge)` → take 12 HD (Huge).
 - +6 HD, giant type → CR +1 per 4 HD = **+1**; Large→Huge size jump = **+1**.
+- +6 HD is a 100% increase → size jump is expected; Large→Huge (already
+  Large, so the "size increased to Large or larger" RAW modifier applies).
 - Size table: +8 Str (23→31), −2 Dex (14→12), +4 Con (23→27), natural
   armor +3 (5→8).
 - 12d8 + 96 hp ≈ **150 hp**; regeneration 5 unchanged (fire/acid still the
   answer — players who learned that keep their reward).
 - BAB (giant ¾) 6→9; grapple 9 + 10 + 8 (Huge) = **+27**.
 - Claw to-hit = 9 (BAB) + 10 (Str) − 2 (Huge) = **+17**;
-  damage steps 1d6 → 1d8, +10 Str → claw 1d8+10, bite 2d6+5, rend 2d8+15.
+  damage dice step up one size (1d6 → 1d8) → claw 1d8+10,
+  bite 1d8+5 (secondary, ½ Str), rend 3d6+15 (2d6 → 3d6, 1.5× Str).
 - AC: 10 + 8 natural − 2 size + 1 Dex = **17** (AC lags — expected for
   trolls; regeneration is the real defense).
 - Feats: 12 HD → 4 feats (was 3): add Improved Natural Attack or Power Attack.

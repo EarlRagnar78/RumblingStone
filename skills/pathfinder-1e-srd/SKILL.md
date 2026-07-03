@@ -21,6 +21,9 @@ math is drop-in compatible with 3.5. In this repo PF1e serves two purposes:
    NPC Codex) is imported into the 3.5 campaign.
 
 **Sources:** https://aonprd.com (official PRD archive) • https://www.d20pfsrd.com
+**Provenance:** numeric tables in `references/` were verified against the
+official Paizo PRD epubs (Core Rulebook, Bestiary) and the WotC 3.5 SRD
+distribution provided by the DM (2026-07-03).
 
 ## Domain → File
 

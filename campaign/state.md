@@ -75,7 +75,13 @@ Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per det
 
 **Active companions:**
 
-- Hella's stone rhinoceros companion (DR 5/adamantine, animated post-resurrection)
+- **Durik** — Hella's animal companion (male dog, **reforged** into a Stone
+  Guardian and evoked via the **3rd seed of the Collana dei Semi Eterni**);
+  DR 5/adamantine, Tremorsense, telepathic link within 18 m. (The "rhinoceros"
+  seen in play is **Hella herself using the Druid's Wild Shape** to become a
+  **living rhinoceros** — NOT a stone/animated creature and NOT a separate
+  companion. The earlier "stone rhinoceros, DR 5/adamantine, animated" label
+  was a mix-up with Durik. DM clarified 2026-07-03.)
 - Therysol (Tiefling Half-Dragon NPC, traveling separately, hunting Il Collezionista's guild)
 - **Maestro Tempestas** (Half-elf Bard 12/Arcmage 2, GS 14, recurring messenger of Rethmar; canonized 2026-05-04 as the "bard storm caller" who helped the party escape Lorana's city in Arc 00 — vedi `PNG/Tempestas/Tempestas.md`). Not constantly present; drops in via *Shadow Walk* every 1–2 sessions with intel.
 
@@ -308,16 +314,17 @@ full mechanics. This table is current truth only.
 | Artifact | Holder | State | Currently usable powers |
 |---|---|---|---|
 | Aegis Fang | Thorik | Pre-full-awakening | +2 Returning Dwarven Waraxe; bonded |
-| Corona di Adamantio | Thorik | All 3 gems lit | Stone's Awareness, +2 deflection AC, Topaz time-travel 1/month, Emerald earthquake 1/week, Ruby (single-use already spent at -1000 DR battle) |
+| Corona di Adamantio | Thorik | All 3 gems lit | Stone's Awareness, +2 deflection AC, Topaz time-travel 1/month, Emerald earthquake 1/week, Ruby (single-use already spent at the battle 1,000 years before, ≈372 DR) |
 | Ring of Chaotic Illumination | Artemis | Reforged at Eternal Forge | Full base powers; awaits further evolution at Invisible Tower |
 | Bracieri Gemelli di Moradin | Tordek | Fire ✅ + Earth ✅ | Salto Infuocato 3/day, Fire Resist 10, DR 5/adamantine, Jump +10 |
+| Cintura della Devastazione (custom PG, D17) | Tordek | Active | = Devastation Gauntlets (MIC) moved to **belt slot** so wrists stay free for the Bracieri; ~3/day devastation charges (+2d6). Sheet: `PG/Artefatti/Artefatti-Pg/Tordek/00_Cintura_della_Devastazione.md`. Exact values → ARC-07 B5 |
 | Collana dei Semi Eterni | Hella | Active post-resurrection | Treant summoning (limited), Avatar form (1/day), party gift slots (unspent: 3) |
 | Cuore di Moradin | Crown set (altar) | Activated | Resurrection ritual catalyst — single-use, expended for Hella |
 | Orbe delle Otto Porte (Githyanki artifact, campaign canon) | Tournament prize, not yet held | Awaits Tournament outcome | N/A until Tordek wins |
 
 **Spent / single-use already burned:**
 
-- Ruby gem of the Crown (used at year -1000 battle)
+- Ruby gem of the Crown (used at the battle 1,000 years before, ≈372 DR)
 - Cuore di Moradin (used to resurrect Hella)
 
 If any agent ever has a character "use" one of these again, that is a
@@ -770,6 +777,59 @@ entries — they become campaign history.
             §2/§4, FASE1/FASE2-TESTO e INDICE aggiornati per puntare al deck
             (ondate = sfondo). Con il Lotto C l'arco passa da "coerente/completo"
             (A+B) a "memorabile" (piano §5).
+2026-07-02  PIANO-REVISIONE-ARC07 Sessione 1 (A7+A9): igiene file e ordine di
+            gioco. A7: rimosso temp_sinergie.txt; stub Atlante-Visivo-Mappe.md;
+            ripulite coda AI (RicalibrazioneScontriPianoDelFuoco) e 17 watermark
+            "OnlineMarkdown.com" (LaCorona_di_Adamantio-DM); git mv filename rotti
+            (spazio interno file viaggio Hella; casing Portaleforgia-P6 ->
+            PortaleForgia-P6). A9: dichiarato ordine D2 (Terra->resurrezione->
+            viaggio) in testa a tutte le versioni P3B/P4/P5. Editoriale.
+2026-07-02  PIANO-REVISIONE-ARC07 Sessione 2 (A1+A2): CANONE. A1: il nome
+            dell'antenato di Fauci di Palude entra nel canone come **SKULLCRUSHER
+            il Nero**; rimossi "Skulldark" (doppio-drago spurio in P5-DEFINITIVO-
+            PARTE1) e "Infernotooth Giovane" (P1/P2). L'ARC-08 eredita il nome nel
+            ponte "la Forgia ricorda" (B4). A2: profondità temporale uniformata a
+            **1.000 anni prima (≈372 DR)**; corretti "2.372 anni", "500 anni fa",
+            "bis-bisnonno". Genealogia unica: Skullcrusher = capostipite della
+            stirpe, Fauci = discendente diretto. Label "Anno -1000" ridefinita una
+            volta nei file P5 come conteggio nanico relativo.
+2026-07-02  PIANO-REVISIONE-ARC07 Sessioni 3-8 (A6,B2,B3,B4,A3,A4,A5,A11):
+            consolidamento e contenuti. A6: matrice versioni + master eletti.
+            A11: compagno di Hella = Durik (maschio) ovunque (anche
+            campaign-party.md). B2: master P3B eletto (COMPLETO) coi doni pieni
+            del viaggio giocato, Thorik -2 CON, Cuore di Moradin speso, Cintura
+            (D17). B3: creato P5-FASTPLAY (formato veloce D1). B4: tabella
+            carry-over "la Forgia ricorda le ferite" (esito duello Skullcrusher
+            -> effetto su Fauci GS 15 ARC-08); statblock ARC-08 di Fauci rimanda
+            alla tabella. A3: deprecata la sezione "1372" di P6 (superata
+            dall'ARC-08). A4: sequenza gemme D5/D16 (portale = Topazio+Smeraldo,
+            Rubino alla vittoria antica). A5: livello arco = **13°** in §0
+            (era 12, scritto in avanti); Terros ricalibrato su 3 PG/APL 12/no
+            Therysol (D15). Valori meccanici nuovi tutti [INFERRED] in attesa DM.
+2026-07-02  PIANO-REVISIONE-ARC07 Sessioni 9-17 — LOTTI A/B/C COMPLETATI.
+            A8: DC->CD ovunque. A10: Cintura della Devastazione (scheda + §6);
+            fonte unica artefatti D9 (Corona/Ring). B1: log retroattivi
+            (attende intervista DM). B5: ERRATA-ARC07-35-Verification.md. B6+B8:
+            ARC07-00-INDICE.md (quickstart + matrice + cronologia March Clock
+            [INFERRED]). B7: ARC07-TESORO-WBL-AUDIT.md (delta si colma ad
+            ARC-08). B9: raid di Sonjak in scheda + schede post-mortem
+            Belkram/Urialle. C1: ARC07-ATLANTE-ASSET.md. C2: ARC07-HANDOUTS.md.
+            C3: ARC07-CONSEGUENZE-ECHI.md. Unico residuo aperto: l'intervista
+            DM per B1 (date/XP/loot reali) e i valori [INFERRED] da validare.
+2026-07-03  PIANO-REVISIONE-ARC07 — PASSAGGIO DI VALIDAZIONE DM. Sciolti i
+            principali [INFERRED]: (1) **Compagno di Hella** — il "rinoceronte"
+            è **Hella che usa la Wild Shape del Druido** per diventare un
+            **rinoceronte VIVO** (non di pietra/animato, non un compagno; il
+            "di pietra" era confusione con Durik); l'animal companion è **DURIK**
+            (cane maschio riforgiato, evocato dal 3° seme della Collana).
+            Propagato in state.md §1, campaign-party.md (+mirror), master P3B,
+            log retroattivi. (2) **Carry-over B4** — valori
+            **approvati** (canone; statblock Fauci ARC-08 e A12 aggiornati).
+            (3) **P4** — doppio master: cornice narrativa (COMPLETO) +
+            **combattimento potenziato VOLUTO** (RICALIBRATO/Terros, D8:
+            artefatti unici → scontri duri, non da 2 round); unico nodo lasciato
+            al DM = Aura di Pietrificazione save-or-die. (4) **Cronologia B6** e
+            **custode dell'uovo (C3)** approvati.
 2026-07-02  PIANO-REVISIONE-ARC08 Lotto A, task A0 (REGOLA ZERO — priorità
             assoluta, eseguito per primo): il cruscotto §0 e l'intestazione
             segnavano l'arco come già giocato ("00-08 ✅ completato",

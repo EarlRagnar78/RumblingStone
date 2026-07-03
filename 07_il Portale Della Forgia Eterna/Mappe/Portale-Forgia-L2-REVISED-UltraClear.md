@@ -132,8 +132,8 @@ HEAT ZONES (Overlay):
 **2 CASCATE LAVA VERTICALI 🌋:**
 1. **Cascata 1:** Colonne K-M, Riga 15-20 (4.5m wide × 9m descent)
    - Fall: Da ceiling (+10m) giù in fiume
-   - Effect: Splash 3m radius (5d6 fire), fortitude DC 18 or blinded
-   - Sound: Loud (Listen DC -5 within 15m)
+   - Effect: Splash 3m radius (5d6 fire), fortitude CD 18 or blinded
+   - Sound: Loud (Listen CD -5 within 15m)
    
 2. **Cascata 2:** Colonne AK-AM, Riga 35-40 (4.5m wide × 9m descent)
    - Mirror cascata 1 (stessi effetti)
@@ -183,7 +183,7 @@ HEAT ZONES (Overlay):
 - Stay West Platform full 80m
 - Avoid bridges = avoid FE2
 - Risk: FE1 patrol blocks path (combat inevitable)
-- Heat zones: Persistent 1d6/round (Fort DC 15)
+- Heat zones: Persistent 1d6/round (Fort CD 15)
 
 **OPZIONE C - LEAP LAVA (Risky but Direct):**
 - *Jump* spell: 30ft (9m) can clear lava width (10.5m barely!)
@@ -350,7 +350,7 @@ Material: Adamantine-reinforced stone
    - End: Q17 (altare edge)
 
 - **Material:** Mithral (silver, immune fire, non-slip)
-- **Width:** 2m (1-2 quadrati) - Narrow! Balance DC 10 if rush
+- **Width:** 2m (1-2 quadrati) - Narrow! Balance CD 10 if rush
 - **HP:** 180 ciascuna, AC 25, Hardness 15 (indistruttibili praticamente)
 
 **PERIMETER PLATFORM 🟫 (Safe Zone):**

@@ -345,7 +345,7 @@ Dopo interazioni con Moradin, affreschi, e benedizioni:
 - **Forza:** HP alti (~145), TS Tempra eccellente (+13)
 
 **Tordek (Skirmisher/DPS Burst):**
-- **Ruolo:** Mobile DPS, critici devastanti (Devastation Gauntlets)
+- **Ruolo:** Mobile DPS, critici devastanti (Cintura della Devastazione)
 - **Armatura:** Nessuna, CA 27 (DES+SAG+monk)
 - **Arma:** Colpi senz'armi 2d6, Raffica Colpi +12/+12/+7/+2
 - **Tattica:** 
@@ -488,7 +488,7 @@ Sostituire **Word of Changing** (richiede touch, pericoloso) con:
 - Cintura gigante colline FOR +4 (16.000 mo) [MIC pag 73]
 
 **Tordek:**
-- Devastation Gauntlets (MIC pag 93, 18.000 mo)
+- Cintura della Devastazione (MIC pag 93, 18.000 mo)
 - Amuleto armatura naturale +2 (8.000 mo)
 - Bracciali corazza +4 (16.000 mo)
 - Anello protezione +2 (8.000 mo)
@@ -631,7 +631,7 @@ Dopo:
 >
 > *Thorik, avanzi per primo. Corona sulla fronte pulsa in sincronia con fiamme portale. Aegis Fang canta debolmente nella mano - non paura, ma ANTICIPAZIONE. Ascia VUOLE attraversare. Vuole confrontare fuoco, dimostrare padronanza.*
 >
-> *Tordek, al tuo fianco, centri respiro. Devastation Gauntlets brillano rosso cupo. Senti ki scorrere, preparandoti a sfida. Monaco comprende: fuoco è maestro duro ma giusto. Tempra o distrugge. Nessuna via mezzo.*
+> *Tordek, al tuo fianco, centri respiro. Cintura della Devastazione brillano rosso cupo. Senti ki scorrere, preparandoti a sfida. Monaco comprende: fuoco è maestro duro ma giusto. Tempra o distrugge. Nessuna via mezzo.*
 >
 > *Artemis, dietro, Ring of Chaotic Illumination cicla rapidamente oro/argento/viola. Senti voci Lathander/Mask sussurrare insieme: "Fuoco è cambiamento. Abbraccialo." Warlock prepara invocazioni mentalmente, dita flettono, eldritch energy crepita sotto pelle.*
 >
@@ -816,7 +816,7 @@ Dopo:
 **Tordek:**
 - Meditazione 4 Colonne (talento bonus) ✓
 - Sogno Hella (long rest) ✓
-- Devastation Gauntlets potenziati (Altare) ✓
+- Cintura della Devastazione potenziati (Altare) ✓
 
 **Artemis:**
 - Visione Lathander/Mask (Affresco A6) ✓
@@ -980,7 +980,7 @@ Dopo tragedia Parte 1, Sala deve dare SPERANZA TANGIBILE:
 - **Modifica:** +12/+12/+7/+2 (include Arma Focalizzata +1, ajustments)
 - **Con Trinità:** +12/+12/+7/+2 (Trinità non bonus attacco diretto, MA danni contano bene/legge)
 
-**Danno (Colpo Senz'Armi + Devastation Gauntlets):**
+**Danno (Colpo Senz'Armi + Cintura della Devastazione):**
 - **Base:** 2d6+2 (Monaco 9° livello colpo, FOR +2)
 - **Critico Confermato + Gauntlets:**
   - 3 cariche: 2d6+2 base + **4d6** = **2d6+4d6+2**
@@ -995,7 +995,7 @@ Dopo tragedia Parte 1, Sala deve dare SPERANZA TANGIBILE:
 - **Volontà:** +10 base +4 Still Mind Superiore = **+14** (vs magia) (+4 Trinità = +18 vs magia!)
 
 **Capacità Speciali:**
-- Devastation Gauntlets: 4 cariche/giorno (upgrade Moradin)
+- Cintura della Devastazione: 4 cariche/giorno (upgrade Moradin)
 - Colpo Stordente: TS Tempra CD 19 o stordito 1 round
 - Purezze Corpo: 18 HP cura 1/giorno
 - Passo Vento: Ignora terreno difficile, non provoca AoO

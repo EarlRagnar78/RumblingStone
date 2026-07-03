@@ -2,7 +2,7 @@
 ## HELLA OAKENSHIELD: IL VIAGGIO NELL'INCUDINE DEL MONDO — RISULTATI GIOCATI
 
 > **Stato**: CANONE GIOCATO (registrato dal DM, 2026-07-02).
-> **Fonte di design**: `PortaleForgia-P4-PianoTerra-P3B-HELLA-IL-VIAGGIO-NELL'INCUDINE-DEL- MONDO-v2.md`
+> **Fonte di design**: `PortaleForgia-P4-PianoTerra-P3B-HELLA-IL-VIAGGIO-NELL'INCUDINE-DEL-MONDO-v2.md`
 > (di seguito "v2"); questo file registra **come sono andate le prove al
 > tavolo** e quale riga della Tavola delle Conseguenze (v2 §7) si applica.
 > In caso di conflitto tra questo file e i file di design, **vince questo**

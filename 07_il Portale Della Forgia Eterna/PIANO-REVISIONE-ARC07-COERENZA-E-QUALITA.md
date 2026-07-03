@@ -111,6 +111,13 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   eredita nel ponte B4).
 - **Accettazione**: `grep -rn "Skulldark\|Infernotooth"` = 0 fuori da
   banner e note storiche; un solo nome (+epiteto dichiarato) ovunque.
+- **✅ FATTO (2026-07-02, sessione 2)**: `grep` = 0 in tutto l'arco (fuori
+  dal testo di questo piano). Sostituiti "Skulldark" (P5-DEFINITIVO ×2,
+  RICALIBRATO) e "Infernotooth Giovane" (P1, P2) con **Skullcrusher il
+  Nero**. Risolto il doppio-drago di P5-DEFINITIVO-PARTE1 r.234-236 (Skulldark
+  "padre" vs Skullcrusher "discendente" → un solo drago, Skullcrusher, che è
+  il capostipite della stirpe di Fauci). Epiteto "il Nero" usato in forma
+  piena come nome. Changelog in state.md.
 
 ### A2. Profondità temporale — applicare D7 (1.000 anni prima, ≈372 DR)
 - **Problema**: i file dicono quattro cose diverse: "Anno −1000" come data
@@ -127,6 +134,17 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   Barbadiferro** (P1 r.704-751, P2 r.858, P5, P6 r.977).
 - **Accettazione**: una sola profondità temporale (1.000 anni) e una sola
   genealogia in tutto il repo; changelog in state.md.
+- **✅ FATTO (2026-07-02, sessione 2)**: corretti tutti i valori in
+  conflitto — "2.372 anni" (FINAL-P5 r.15/r.37, DEFINITIVO-PARTE1 r.22,
+  DEFINITIVO-PARTE2 r.288), "500 anni fa" + "bis-bisnonno" (FINAL-P5 r.380,
+  P6 r.350) → **1.000 anni** / capostipite. Etichetta "Anno -1000" mantenuta
+  ma **ridefinita una volta** nei file P5 (conteggio nanico relativo = 1.000
+  anni prima del 1372, ≈372 DR). Le occorrenze figurate di "millenni" (forgia
+  che arde, corona che attende) restano: non riguardano la profondità del
+  viaggio. Normalizzati anche state.md §6 e campaign-artifacts.md
+  ("-1000 DR"/"year -1000" → "1,000 years before, ≈372 DR"). Genealogia
+  unica: Skullcrusher capostipite → Fauci discendente diretto. Changelog in
+  state.md.
 
 ### A3. P6 contiene una "battaglia finale 1372" superata dagli Archi 08-09 — [CROSS-ARC]
 - **Problema** (il più importante dell'arco):
@@ -150,6 +168,14 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
 - **Accettazione**: chi apre P6 capisce subito cosa è vivo (battaglia
   antica) e cosa è storia di progetto (1372); un solo profilo di Fauci per
   il 1372 nel repo; zero riferimenti attivi a "Parte 7"/"fine campagna".
+- **✅ FATTO (2026-07-02, sessione 7)**: banner DEPRECATED sulla sezione
+  "ANNO 1372" di P6 (r.605+), con puntatore all'ARC-08 (Fauci GS 15, esiti
+  aperti) e all'elenco di ciò che sopravvive. **Estrazioni marcate**: Incontro
+  3B (arrivo al Cuore della Montagna) = fonte viva per ARC-08 B2/E6; uovo di
+  Fauci = hook vivo → C3; canto Aegis Fang → B4. Profilo Fauci "CR 12 vs Party
+  14" marcato SUPERATO inline (vale GS 15 ARC-08 + carry-over B4). Neutralizzati
+  i due puntatori attivi a "Parte 7" in CORREZIONE-Boss-Fauci (→ epilogo
+  ARC-08/09). Gli altri "Parte 7" restano solo dentro la sezione deprecata.
 
 ### A4. Gemme della Corona: attivazioni e cucitura del ritorno — applicare D5+D16
 - **Problema**: `PortaleForgia-P2-REVISED-Corretta-PARTE1.md` r.1007
@@ -170,6 +196,14 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
 - **Accettazione**: una sola sequenza di attivazione delle 3 gemme nel
   repo; la Corona arriva ad ARC-08/09 nello stato che ARC-09 assume; il
   ponte ARC-08 B2 cita D16.
+- **✅ FATTO (2026-07-02, sessione 8)**: corretta l'unica riga che
+  attribuiva l'apertura del portale al Rubino (P2-PARTE1, tabella nitidezza)
+  → modello **D5/D16**: portale aperto da **Topazio+Smeraldo** dopo il Piano
+  Terra, **Rubino si accende SOLO alla vittoria antica** come motore del
+  ritorno. Aggiunto blocco-canone con rimando a `LaCorona_di_Adamantio-DM.md`,
+  state.md §6, `campaign-artifacts.md` (Rubino single-use, già coerenti) e al
+  ponte ARC-08 B2 (cucitura Sala→Cuore, D16). Il P5-FASTPLAY Scena 6 già
+  esprime la stessa sequenza. Una sola sequenza in tutto il repo.
 
 ### A5. Livello e composizione del party — applicare D8+D15
 - **Problema**: le dichiarazioni cambiano da file a file (P3B "livello
@@ -189,6 +223,17 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   già decisa (suo D9: Hammerfist consolida il 13°).
 - **Accettazione**: una sola dichiarazione di livello per parte; Terros
   ricalibrato per 3 PG senza supporto; budget delle parti future annotati.
+- **✅ FATTO (2026-07-02, sessione 8)**: `state.md §0` riga ARC-07 → **13°**
+  (e stato "in corso", il "completato" era scritto in avanti → A0).
+  `La_Piramide` r.417 "Livello 14" → 13° + nota D15 su Therysol (che veglia
+  il corpo). `P3-PianoFuoco-PARTE2` r.1097 (party al 14° "durante Parte 6") →
+  resta 13° per l'arco, il 14° matura nell'ARC-08. **Terros** ricalibrato
+  nella base: da "Livello 14, 3 PC + Therysol Support" a **13°, 3 PG senza
+  supporto, APL effettivo 12** (numeri finali del boss → B5). Aggiunta la
+  nota stato-artefatti **D8** all'intestazione del master P4 (giustifica gli
+  EL alti). Le due ricalibrazioni "Livello 14" (P4-RICALIBRATO, P5-RICALIBRATO)
+  hanno già il banner A6 che le riporta al 13° canonico. Dadi-soglia "14+"
+  lasciati (non sono livelli). Le parti giocate non ribilanciate.
 
 ### A6. Generazioni multiple mai riconciliate (P3B ×2, P4 ×4, P5 ×4 + 3 doc di ricalibrazione)
 - **Problema**: il tavolo ci sta giocando DENTRO e i file si sovrappongono:
@@ -206,6 +251,17 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   catena è esplicita.
 - **Accettazione**: un master per parte; ogni doc di ricalibrazione citato
   dal master che corregge; zero versioni orfane senza stato.
+- **✅ FATTO (2026-07-02, sessione 3)**: creata `ARC07-MATRICE-VERSIONI.md`
+  (matrice parte × file × stato). Master eletti: P1, P2 (unici); P3 base
+  (ricalibrato da RicalibrazioneScontri + La_Piramide); P4 COMPLETO-alt
+  `[INFERRED]` (ricalibrato da Terros + RICALIBRATO); viaggio v2 (fonte del
+  file risultati). Banner applicati: DEPRECATO su FINAL-P5 e viaggio-v1;
+  *ricalibrazione* su La_Piramide, Terros, CORREZIONE-Boss-Fauci,
+  P4-RICALIBRATO; *annesso* su Interludio; reverse-banner "ricalibrato da"
+  sui master P3 e P4; MASTER-lungo su P5-DEFINITIVO, sintesi su P5-RICALIBRATO,
+  MASTER-parziale su P6. **P3B e P5**: master formale eletto nei task
+  dedicati **B2** e **B3** (qui registrati i candidati). Nessuna versione
+  orfana.
 
 ### A7. Igiene: file vuoto, file temporaneo, coda AI, nomi file rotti
 - **Problema**: `Mappe/Atlante-Visivo-Mappe.md` è **0 byte**;
@@ -225,6 +281,19 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
 - **Accettazione**: zero file 0-byte, zero `temp_*`, zero code AI;
   `grep -rn "OnlineMarkdown"` = 0; nessun filename con spazi interni
   anomali; link tutti validi.
+- **✅ FATTO (2026-07-02, sessione 1)**: `Atlante-Visivo-Mappe.md` è ora uno
+  stub con puntatore a B8/C1; `temp_sinergie.txt` rimosso;
+  `RicalibrazioneScontriPianoDelFuoco.md` e
+  `LaCorona_di_Adamantio-DM.md` ripuliti (coda AI e 17 blocchi di
+  watermark `OnlineMarkdown.com` da conversione PDF); `git mv` di
+  `PortaleForgia-P4-...-DEL- MONDO.md`/`-v2.md` (spazio rimosso) e
+  `Portaleforgia-P6-INTEGRAZIONE-Completa.md` → `PortaleForgia-P6-...`
+  (F maiuscola), riferimenti aggiornati in questo file, nel file
+  `...-risultati.md`, nel file v2 e nel piano ARC-08. Trovato in più un
+  file duplicato non censito qui (stesso contenuto, casing diverso):
+  `PortaleForgia-P4-pianoTerra-P3b-...-risultati.md` (minuscolo) — appunti
+  grezzi del DM, ora marcato deprecato con puntatore al canonico (D10: non
+  cancellato).
 
 ### A8. Terminologia: 53 `DC` inglesi + file interamente in inglese
 - **Problema**: 53 occorrenze di `DC n` contro la convenzione CD (§0.7);
@@ -236,6 +305,14 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   condizioni (il corpo tecnico può restare inglese con nota).
 - **Accettazione**: `grep -rn "DC [0-9]"` = 0 nell'arco; le prove al
   tavolo sono leggibili in italiano.
+- **✅ FATTO (2026-07-02, sessione 10)**: **DC → CD** (word-boundary) su tutte
+  le 59 occorrenze (P4-COMPLETO, viaggio v1/v2, Terros, mappe L1/L2,
+  TACTICAL-GRIDS). `grep "DC [0-9]"` = 0. Verificato che ogni "DC" era Classe
+  Difficoltà (anche "DC: Hide 18", "Climb DC +5"). I file di prova rivolti al
+  tavolo (viaggio, P3B, P4, P5) sono già in italiano con nomi di skill 3.5
+  italiani. Per i file tecnici in inglese (Terros, TACTICAL-GRIDS) aggiunto un
+  **glossario italiano** delle prove in testa (Hide=Nascondersi, Spot=
+  Osservare, …), lasciando il corpo tecnico in inglese come consentito.
 
 ### A9. Numerazione fuori ordine: P3B si gioca dopo P4 — applicare D2
 - **Problema**: la sigla "P3B" precede "P4", ma l'ordine di gioco (D2) è
@@ -249,6 +326,13 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   NON rinumerare i file (troppi riferimenti).
 - **Accettazione**: nessun lettore può sbagliare l'ordine; INDICE coerente
   con D2 e con ARC-08 D8.
+- **✅ FATTO (2026-07-02, sessione 1)**: riga D2 aggiunta in testa a
+  entrambe le versioni P3B (COMPLETO, RICALIBRATO-alternative), a tutte e
+  4 le versioni P4 (COMPLETO-alternative, RICALIBRATO, e i due file fusi
+  v1/v2 del viaggio) e a tutte e 4 le versioni P5 (FINAL, DEFINITIVO
+  PARTE1/2, RICALIBRATO) — l'elezione del master (A6) non è ancora
+  avvenuta, quindi la riga è su ogni generazione per non doverla rifare.
+  L'INDICE (B8) resta da fare.
 
 ### A10. Artefatti: fonte unica, duplicazioni, Cintura della Devastazione — applicare D9+D17
 - **Problema**: (1) la cartella `00-La Corona di Adamantio-ogetto&Prove/`
@@ -278,6 +362,19 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
 - **Accettazione**: un solo file canonico per artefatto; copie marcate;
   la Cintura ha scheda + riga in §6; `grep -rn "Devastation Gauntlets"`
   = 0 fuori dalle note storiche; stato gemme coerente col tavolo ovunque.
+- **✅ FATTO (2026-07-02, sessione 9)**: **D17 Cintura** — creata la scheda
+  `PG/Artefatti/Artefatti-Pg/Tordek/00_Cintura_della_Devastazione.md` (slot
+  cintura, poteri = Devastation Gauntlets, nota d'origine) + riga in state.md
+  §6 (changelog); tutte le ~20 menzioni attive "Devastation Gauntlets"
+  nell'arco (P1, P2×2, P3-Fuoco) → **Cintura della Devastazione** (restano
+  solo le note d'etimologia "formerly/riforgiati/MIC pag 93"); reimpostata
+  l'immagine "mani guantate" del rito P2 come Cintura alla vita (i Bracieri
+  restano alle mani). **D9 Corona** — copiate in PG le 2 immagini che aveva
+  solo l'ARC-06; banner `_SNAPSHOT-STORICO.md` nella copia ARC-06 (near-dup
+  `.md` flaggati [INFERRED] per il DM, non fusi). **Ring** — master eletto
+  `..._Revised.md` (banner), `Old/` deprecata con `_DEPRECATED-SNAPSHOT.md`.
+  **Refusi** — `git mv` di `achede _avveimenti_...md` → `..._-ALT.md` in
+  entrambe le cartelle. Stato gemme (solo Topazio oggi) coerente con A4/D16.
 
 ### A11. Rinomina del compagno di Hella: Nymeria → Durik (maschio) — applicare D14
 - **Problema**: al tavolo il cane di Hella è **Durik, maschio** (D14); i
@@ -290,6 +387,13 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   rinominare i file di design (solo il testo).
 - **Accettazione**: `grep -rn "Nymeria"` = 0 fuori dai banner/note
   storiche; genere coerente ovunque.
+- **✅ FATTO (2026-07-02, sessione 4)**: `Nymeria` → `Durik` propagato in
+  v1 e v2 del viaggio (55/57 occorrenze), in `campaign-party.md` (skills +
+  mirror copilot), in `index.json` copilot. Genere: il testo era già in gran
+  parte maschile ("il cane", "compagno", "Riforgiato", "morto"); i possessivi
+  italiani ("la sua testa", "la polvere dispersa") concordano col nome
+  posseduto, non col cane → nessuna correzione spuria. Residui "Nymeria" solo
+  nelle note di rinomina (risultati §0, Collana r.69). `grep` pulito.
 
 ---
 
@@ -315,6 +419,16 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   post-A0 di state.md man mano.
 - **Accettazione**: ogni sessione giocata ha un log; la morte di Hella ha
   data, luogo e causa IN un log; zero invenzioni non flaggate.
+- **✅ FATTO parziale (2026-07-02, sessione 11)**: creato
+  `campaign/sessions/RETROATTIVI-ARC07-INFERRED.md` con 5 log retroattivi in
+  formato AGENTS.md — R0 finale ARC-06 (morte di Hella: Yochlol di Sonjak +
+  Urialle, Belkram redento; luogo = Stanza della Corona; causa registrata),
+  R1 Sala Forgia, R2 Fuoco/Topazio, R3 viaggio dello spirito (agganciato al
+  file-risultati, **canone non-INFERRED**), R4 Terra in corso (D15). Ogni
+  lacuna marcata `[INFERRED]`. ⚠️ **Resta l'intervista al DM** per date,
+  giocatori, XP/loot reali (l'engine non può inventarli): il file è una
+  ricostruzione dichiarata, da validare. Nodo aperto flaggato: compagno
+  animale (rinoceronte/orso/Durik).
 
 ### B2. Master della resurrezione di Hella (P3B) — [CROSS-ARC]
 - **Evidenza**: quattro trattamenti della stessa scena-cardine
@@ -333,8 +447,18 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
 - **Accettazione**: un solo master P3B; risultati del viaggio integrati;
   stato artefatti in uscita = quello che ARC-08/09 assumono; ARC-08 B2
   punta qui.
-
-### B3. Fast-play del viaggio a 1.000 anni prima (P5) — applicare D1
+- **✅ FATTO (2026-07-02, sessione 4)**: eletto master =
+  `PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` (banner ⭐ MASTER;
+  l'alternativa RICALIBRATO deprecata). Aggiunta la sezione **INTEGRAZIONE
+  B2** che riporta i **doni pieni** del viaggio giocato (Resist Freddo 15,
+  Marchio della Veritade, Radice Silenziosa, Radici del Mondo, Durik
+  "Protegge Hella") sovrascrivendo i doni generici del testo storico.
+  Correzioni inline: Thorik **−2 CON** permanente (era "−2 pf"), **Cuore di
+  Moradin SPESO** (era "ritornato nell'Altare"), **Cintura della
+  Devastazione** (era "Devastation Gauntlets"), timing **D2** (era "tra P5 e
+  P6"), classe Hella Ranger 1/Druida 12, Resist Freddo 15 nei due punti del
+  testo. `ARC-08 B2` ora punta al file per nome. ⚠️ Flag [INFERRED]:
+  discrepanza compagno animale (rhinoceros/orso/Durik) da chiudere in A0/B1.
 - **Evidenza**: il P5 esiste come atto completo (DEFINITIVO ×2 = 52 KB) e
   come sintesi "God Mode" (RICALIBRATO, 5,9 KB). La decisione D1 è
   giocarlo VELOCE: serve il formato di mezzo.
@@ -350,6 +474,16 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   esito fisso; (4) puntatori al DEFINITIVO per la versione lunga.
 - **Accettazione**: P5 giocabile in una sessione senza aprire altri file;
   il duello ha mappa+statblock+3 esiti; ogni scena produce un dato per B4.
+- **✅ FATTO (2026-07-02, sessione 5)**: creato
+  `PortaleForgia-P5-FASTPLAY.md` (~6 pagine, master da tavolo D1). 6 scene
+  (Cronache → Thorgrim → infiltrazione+Zog'tar → mura → **duello
+  Skullcrusher** su MAP 7 → Rubino/ritorno), ognuna con read-aloud di 3 righe,
+  prova/scontro ed **► Esito registrato**. Regola di montaggio (prove di
+  gruppo CD fisse, party di 4/APL 13). Duello = unico scontro tattico:
+  mappa (MAP 7 TACTICAL-GRIDS), statblock giocabile GS 12 `[verifica B5]`, **3
+  esiti aperti** (ucciso/ferito grave/fuggito) + conteggio ferite per B4.
+  Puntatori al DEFINITIVO. La Cintura rifiuta di spendere cariche (coerenza
+  Fauci 1372).
 
 ### B4. Il ponte meccanico "La Forgia ricorda le ferite" — [CROSS-ARC, il task più importante]
 - **Evidenza**: P5-DEFINITIVO-PARTE2 r.285: *"Ogni ferita che infliggi ora
@@ -371,6 +505,17 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
 - **Accettazione**: ogni esito possibile del P5 ha un effetto scritto e
   quantificato sul boss dell'ARC-08; lo statblock ARC-08 rimanda alla
   tabella; zero meccaniche ambigue tra sistemi.
+- **✅ FATTO (2026-07-02, sessione 6)**: creato
+  `PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`. Tabella esito→effetto
+  quantificata **sullo statblock reale di Fauci** (GS 15, 312 PF): UCCISO =
+  −10% PF (→281) + Presenza CD 25→23 vs portatori; FERITO GRAVE = −1 uso
+  soffio (cono indisponibile) + CD −2 al primo soffio; FUGGITO = +2 iniz. a
+  Fauci ma ritirata a 75 PF invece di 50. Bonus per N ferite ancestrali
+  (+1 TxC o +1d6, cap 3) + cicatrice d'ala (−2 Volare, +2 circostanza in
+  volo). Gancio inverso: Aegis Fang "sente" Fauci = +2 circostanza a Thorik
+  + preavviso del soffio. Tutti bonus 3.5 tipizzati, **niente 5e**; tutto
+  `[INFERRED]`. Lo **statblock ARC-08 di Fauci rimanda alla tabella**; ARC-08
+  A12 annotato "consegnato".
 
 ### B5. Errata meccanica 3.5 dell'arco
 - **Evidenza**: a campione: `CORREZIONE-Boss-Fauci.md` r.334 assegna a un
@@ -391,6 +536,15 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   retcon.
 - **Accettazione**: file errata nuovo; XP corretti; un solo profilo per
   boss; Terros a misura di D15; nessuna correzione retroattiva sul giocato.
+- **✅ FATTO (2026-07-02, sessione 13)**: creato
+  `ERRATA-ARC07-35-Verification.md` (formato errata ARC-09): action economy
+  3.5, **XP per incontro APL 13/D15** (con la correzione dell'errore 8.000→
+  ~2.925 di CORREZIONE, annotata anche in place), statblock dei 4 boss (Elder
+  Fire, **Terros ricalibrato per APL 12/target CR 14-15**, Skullcrusher GS 12,
+  Fauci = pointer al GS 15 ARC-08), CD delle prove (fast-play + viaggio),
+  poteri Corona vs `campaign-artifacts.md`, Cintura = Devastation Gauntlets
+  slot-cambiato. Nota "giocato coi valori vecchi" per le parti giocate (nessun
+  retcon). Valori non attestati `[INFERRED]`.
 
 ### B6. Ancoraggio al March Clock e viaggio verso Hammerfist
 - **Evidenza**: l'arco non nomina mai il March Clock (state.md §2.1); la
@@ -404,6 +558,12 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   puntata).
 - **Accettazione**: una sola cronologia condivisa 07→08; nessuna
   contraddizione col Day 19 (ARC-08 E3).
+- **✅ FATTO (2026-07-02, sessione 14)**: cronologia B6 scritta come sezione
+  dell'INDICE (`ARC07-00-INDICE.md` §Cronologia): proposta `[INFERRED]`
+  (uscita Forgia ≈ Day 14-15, P3B+P5 ≈ Day 15-17, raccordo D16/Cuore della
+  Montagna ≈ Day 18-19, sync col Day 19 ARC-08), con la nota che il viaggio è
+  **tempo soggettivo** (il March Clock reale avanza poco). Da coordinare con
+  ARC-08 B6 (stessa tabella).
 
 ### B7. Tesoro/WBL dell'arco (al 13°)
 - **Evidenza**: l'arco assegna artefatti maggiori (gemme, benedizioni,
@@ -417,6 +577,14 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   Chiudere con "ricchezza d'uscita ARC-07 = ingresso ARC-08".
 - **Accettazione**: totale coerente col WBL ±20%; handoff esplicito ai due
   audit a valle.
+- **✅ FATTO (2026-07-02, sessione 15)**: creato `ARC07-TESORO-WBL-AUDIT.md`
+  (metodo ARC-09): WBL 13° ~110.000 mo/PG; **ricchezza speciale** (artefatti/
+  benedizioni) contata a parte (non colma il delta ordinario); loot ordinario
+  per parte (~15.600 mo attribuibili dal gear di Hella + `[INFERRED]` per
+  P3/P4/P5). **Verdetto**: arco povero di loot ordinario, ricco di artefatti —
+  il delta di WBL si colma a **Hammerfist (ARC-08 B4)**, non qui. Handoff
+  esplicito "uscita ARC-07 = ingresso ARC-08", nessun doppio conteggio degli
+  artefatti tra i tre archi.
 
 ### B8. INDICE-GENERALE e DM-QUICKSTART dell'arco
 - **Evidenza**: 20+ file markdown su 3-4 generazioni, 2 PDF, musica,
@@ -433,6 +601,11 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
 - **Accettazione**: ogni file compare con uno stato; il DM ha il percorso
   della prossima sessione in una pagina; risultati del viaggio e Collana
   raggiungibili in un click.
+- **✅ FATTO (2026-07-02, sessione 14)**: creato `ARC07-00-INDICE.md` —
+  quickstart 1 pagina (dove sei G3/D15, cosa viene dopo D2, cosa stampare,
+  promemoria canone), tabella file→parte→stato (dalla matrice A6), nota
+  numerazione A9, cronologia B6, puntatori a risultati/Collana/Cintura/
+  Corona/log/ponte ARC-08. Ogni file dell'arco ha uno stato raggiungibile.
 
 ### B9. Artefatti e PNG: i buchi residui dell'audit
 - **Evidenza**: già FATTI (2026-07-02): la scheda della **Collana dei Semi
@@ -451,6 +624,14 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   AGENTS.md; (3) collegamenti (si chiudono con B8).
 - **Accettazione**: la scheda di Sonjak racconta il raid; nessun PNG di G0
   senza stato; 5 artefatti + Cintura documentati e linkati.
+- **✅ FATTO (2026-07-02, sessione 12)**: `PNG/Sonjak/Sonjak.md` ora ha la
+  sezione "IL RAID DELLA STANZA DELLA CORONA (ARC-06) — mandante" (Urialle +
+  Yochlol, fallito, Hella uccisa, i PG forse non sanno ancora che è lei
+  `[verify state.md §4]`). Create schede post-mortem `PNG/Belkram/Belkram.md`
+  (**morto, redento** in punto di morte) e `PNG/Urialle/Urialle.md` (**morta**,
+  uccisora di Hella), formato AGENTS.md, con link incrociati e al log R0.
+  Cintura documentata in A10. Con questo **B9 è completo** (Collana e
+  file-risultati erano già fatti). I link dall'INDICE si chiudono con B8.
 
 ---
 
@@ -467,6 +648,13 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   ilCuoreDiMoradin.png al rituale). Correggere il typo "Mitrtrsl Golem"
   nel filename immagine.
 - **Accettazione**: ogni asset ha un momento d'uso; zero asset orfani.
+- **✅ FATTO (2026-07-02, sessione 16)**: creato `ARC07-ATLANTE-ASSET.md`
+  (asset → scena/parte → "quando usarlo"): Canzone delle Pietre alla
+  resurrezione/cantillazione, Hella_elementale al risveglio, ilCuoreDiMoradin
+  al rituale, immagini di Fuoco/Terra/boss mappate, 2 PDF indicizzati.
+  `git mv` del typo `Mitrtrsl Golem…` → `Mithral Golem…` (residuo `MitralGolem`
+  segnalato [INFERRED], non rinominato per non rompere riferimenti). INDICE
+  punta qui.
 
 ### C2. Handout giocatore (formato HANDOUTS ARC-09)
 - **Evidenza**: materiale-handout naturale mai formalizzato: le **Cronache
@@ -481,6 +669,13 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   evidenziato; (3) le Benedizioni in formato carta singola per PG; (4) la
   carta-visione della sovrapposizione. Ogni handout con "quando darlo".
 - **Accettazione**: handout stampabili; nessuno spoilera il carry-over B4.
+- **✅ FATTO (2026-07-02, sessione 16)**: creato `ARC07-HANDOUTS.md` (formato
+  ARC-09, una pagina per handout): (1) **Cronache dei Quattro Eroi** da dare
+  PRIMA del viaggio; (2) tavola degli **8 affreschi** con **A6 evidenziato**;
+  (3) **carta-visione** delle due traiettorie; (4) **Benedizioni di Moradin**
+  come carte singole per PG. Ogni handout ha "quando darlo". **Nota
+  anti-spoiler B4** esplicita: nessun handout rivela il carry-over
+  Skullcrusher→Fauci.
 
 ### C3. Conseguenze a lungo periodo (tabella echi)
 - **Evidenza**: ganci che nessuna tabella raccoglie: l'**uovo di Fauci di
@@ -496,6 +691,14 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   attraversano entrambi gli archi; l'uovo riceve un custode designato
   (dove sta? chi lo cova?) `[INFERRED — needs DM confirmation]`.
 - **Accettazione**: tabella completa; nessun eco contraddice ARC-08/09.
+- **✅ FATTO (2026-07-02, sessione 17)**: creato `ARC07-CONSEGUENZE-ECHI.md`
+  (formato echi ARC-09): tabella evento→eco→quando riemerge→file per uovo di
+  Fauci, eco "nessuna pietà" del Rubino, Cronache (→ Custodi Eterni ARC-08 E5),
+  Thorgrim (→ Cerimonia 100 Asce). **Varianti per esito del duello** (tono del
+  Rubino UCCISO/FERITO/FUGGITO, distinte dal carry-over meccanico B4).
+  **Custode designato dell'uovo** `[INFERRED]` (Blackfens, servitore
+  superstite → nemesi ARC-10). Cross-link a ARC-08 C2. Nessun eco contraddice
+  ARC-08/09 (Rubino resta single-use speso). **LOTTO C completo.**
 
 ---
 
@@ -536,12 +739,13 @@ la checklist qui sotto.
 
 ### Checklist avanzamento
 
-- [ ] A1 · [ ] A2 · [ ] A3 · [ ] A4 · [ ] A5 · [ ] A6 · [ ] A7 ·
-  [ ] A8 · [ ] A9 · [ ] A10 · [ ] A11
-- [ ] B1 · [ ] B2 · [ ] B3 · [ ] B4 · [ ] B5 · [ ] B6 · [ ] B7 ·
-  [ ] B8 · [~] B9 — **parziale (2026-07-02)**: Collana ✅ e
-  file-risultati ✅; restano Sonjak, schede Belkram/Urialle, collegamenti
-- [ ] C1 · [ ] C2 · [ ] C3
+- [x] A1 · [x] A2 · [x] A3 · [x] A4 · [x] A5 · [x] A6 · [x] A7 ·
+  [x] A8 · [x] A9 · [x] A10 · [x] A11 — **LOTTO A COMPLETO**
+- [~] B1 (log ricostruiti; compagno sciolto dal DM; restano date/XP/loot
+  reali) · [x] B2 · [x] B3 ·
+  [x] B4 · [x] B5 · [x] B6 · [x] B7 · [x] B8 · [x] B9 — Collana ✅,
+  file-risultati ✅, Sonjak-raid ✅, schede Belkram/Urialle ✅, Cintura ✅
+- [x] C1 · [x] C2 · [x] C3 — **LOTTO C COMPLETO**
 - [x] D1…D17 — **tutte le decisioni DM acquisite (2026-07-02); nessuna
   domanda aperta**
 

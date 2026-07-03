@@ -1,5 +1,12 @@
 # ⚔️ INTEGRAZIONE COMPLETA: PORTALE FORGIA + MANO ROSSA DEL DESTINO
 
+> **Stato (A6)**: **MASTER parziale**. La sezione della **battaglia antica**
+> (regia dell'arrivo dei Rumbling Stones, canto di Aegis Fang) è materiale
+> vivo del P5/raccordo. La sezione **"ANNO 1372: BATTAGLIA FINALE
+> HAMMERFIST"** è **superata** dagli Archi 08-09 e viene deprecata nel task
+> **A3** (la battaglia del 1372 è ora l'ARC-08 intero, Fauci GS 15 a esiti
+> aperti). Vedi `ARC07-MATRICE-VERSIONI.md`.
+
 ## 📘 DOCUMENTO MASTER: FLUSSO NARRATIVO CORRETTO E COERENTE
 
 **Scopo:** Unificare e correggere tutte le discrepanze tra `Il Portale della Forgia Eterna` e `La Mano Rossa del Destino` creando un'unica linea temporale narrativa perfettamente coerente.
@@ -347,7 +354,7 @@ Zogtar cade (0 HP). Urla finale echeggia campo:
 **Narrazione:**
 > *"Quando drago emerge, **Aegis Fang ESPLODE potere**. Rune brillano così forte da ACCECARE. Voce ascia - metallica, furiosa - echeggia:*  
 >  
-> ***"DRAGO! Sangue Skullcrusher riconosco! Antenato Fauci di Palude! Ho ucciso bis-bisnonno tuo 500 anni fa! Ora uccido TE! THORIK, LANCIA! LASCIAMI VOLARE!"***
+> ***"DRAGO! Sangue Skullcrusher riconosco! Capostipite Fauci di Palude! Ho ucciso il capostipite di tua stirpe mille anni fa! Ora uccido TE! THORIK, LANCIA! LASCIAMI VOLARE!"***
 
 **Meccanica:**
 - Thorik può **lanciare Aegis Fang** (azione standard, ritornante)  
@@ -597,6 +604,24 @@ Zogtar cade (0 HP). Urla finale echeggia campo:
 
 ## 🏰 **ANNO 1372: BATTAGLIA FINALE HAMMERFIST**
 
+> ⚠️ DEPRECATED (2026-07, A3): **questa intera sezione è SUPERATA.** Fu scritta
+> quando la campagna doveva FINIRE qui. La battaglia del 1372 contro Fauci di
+> Palude è ora l'**ARC-08 intero** (`08_La Battaglia Di Hammerfist/`), con
+> Fauci a **GS 15** ed **esiti a rami aperti** — NON il "CR 12 vs Party 14,
+> morto per copione" di questa sezione, e NON una "fine campagna" (gli Archi
+> 08-09 proseguono). **Non giocare da qui.**
+>
+> **Cosa SOPRAVVIVE come materiale sorgente** (citato, non giocato qui):
+> - **INCONTRO 3B — L'Arrivo dei Rumbling Stones al Cuore della Montagna**
+>   (sotto): è la **regia d'arrivo** che alimenta la cucitura **ARC-08 B2 /
+>   E6** (`ARC08-PONTE-ARRIVO.md`, D16). Fonte, non doppione.
+> - **Hook dell'uovo di Fauci** (più sotto): confluisce nella **tabella echi
+>   C3** (vendetta futura, ARC-10).
+> - Il **canto di Aegis Fang** "sangue Skullcrusher" (sezione della battaglia
+>   antica, sopra) alimenta il ponte **B4**.
+>
+> La "Parte 7" citata qui sotto **non esiste** ed è superata.
+
 ### **RITORNO SALA FORGIA ETERNA**
 
 **Location:** Sala Forgia Eterna (Parte 2 Hub)  
@@ -633,6 +658,11 @@ Zogtar cade (0 HP). Urla finale echeggia campo:
 ---
 
 ### **📍 INCONTRO 3B: L'ARRIVO DEI RUMBLING STONES**
+
+> ✅ **MATERIALE VIVO (fonte)** — pur dentro la sezione 1372 deprecata, questa
+> regia d'arrivo è la **fonte canonica** della cucitura D16 (salto del Rubino
+> → riemersione al Cuore della Montagna, Giorno 3). L'**ARC-08 B2/E6** la
+> riusa (`ARC08-PONTE-ARRIVO.md`): citarla, non riscriverla.
 
 **Location:** Cuore della Montagna (caverna sacra sotto Hammerfist)  
 **Timing:** Giorno 3, Round 2 resistenza ultima  
@@ -789,6 +819,12 @@ Dalla **Mano Rossa del Destino**, prima battaglia finale drago:
 ---
 
 **🐲 FAUCI DI PALUDE - VERSIONE ANNO 1372**
+
+> ⚠️ **PROFILO SUPERATO (A3)**: il "CR 12 vs Party 14, morto per copione" di
+> questa sezione è **storia di progetto**. Nel 1372 vale lo statblock **GS 15
+> a esiti aperti** dei file ARC-08
+> (`08_.../00_Schede_dei_Personaggi_Unità_e_Regolamento_di_Battaglia.md`
+> §FAUCI), modificato dalla tabella carry-over **B4**. Non usare i valori qui.
 
 **(Vedi documento `CORREZIONE-Boss-Fauci.md` per statistiche complete)**
 
@@ -955,6 +991,9 @@ Dalla **Mano Rossa del Destino**, prima battaglia finale drago:
 - Cronache completate - storia chiusa
 
 **B) CAMPAGNA CONTINUA:**
+> ✅ **HOOK VIVO (A3→C3)**: la campagna NON finisce qui (Archi 08-09 in corso).
+> L'**uovo di Fauci** (Hook 1) è materiale vivo: confluisce nella **tabella
+> echi C3** come vendetta futura (ARC-10), qualunque sia l'esito dell'ARC-08.
 - **Hook 1:** Fauci di Palude aveva **uovo** nascosto (vendetta futura!)  
 - **Hook 2:** Mano Rossa del Destino organizzazione più grande (Grimjaw torna con rinforzi!)  
 - **Hook 3:** Moradin chiama per **nuova missione** (minaccia planare?)  

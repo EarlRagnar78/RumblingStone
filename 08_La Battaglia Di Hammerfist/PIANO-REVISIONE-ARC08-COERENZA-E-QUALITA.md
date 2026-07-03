@@ -127,7 +127,7 @@ mancante che emerga si flagga `[INFERRED — needs DM confirmation]`.
   "**morto** — rimosso dall'orda; −1 drago"; `campaign-coherence.md` r.51
   "**fugge gravemente ferito**; può tornare" e r.230 lo conta tra i draghi
   a Rethmar; state.md §2.2 r.123 lo elenca tra i 5 draghi; ARC-07
-  `Portaleforgia-P6-INTEGRAZIONE` r.869 lo dà "Morto" a **GS 12** in un
+  `PortaleForgia-P6-INTEGRAZIONE` r.869 lo dà "Morto" a **GS 12** in un
   finale superato (piano ARC-07 A3).
 - **Azione**: applicare **D10**: riscrivere le voci nei tracker in **forma
   condizionale a rami** (default: fugge sotto i 50 pf → ferito, può
@@ -309,6 +309,12 @@ mancante che emerga si flagga `[INFERRED — needs DM confirmation]`.
 - **Accettazione**: lo statblock di Fauci rimanda alla tabella; ogni esito
   del P5 ha un effetto visibile a Hammerfist; zero valori duplicati tra i
   due archi.
+- **➡️ ARC-07 B4 CONSEGNATO + VALIDATO (2026-07-03)**: la tabella di
+  carry-over esiste (`07_.../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`),
+  con **valori approvati dal DM**, e lo **statblock di Fauci (Schede §FAUCI)
+  rimanda già ad essa**. Restano da fare, lato ARC-08: la riga nella matrice
+  esiti **B1** e la menzione nel read-aloud del primo avvistamento. I valori
+  sono in ARC-07 B4 (non duplicarli qui) — ora **canone**, non più [INFERRED].
 
 ---
 
@@ -351,9 +357,11 @@ mancante che emerga si flagga `[INFERRED — needs DM confirmation]`.
   Forgia → Cuore della Montagna non è scritta da nessuna parte**, e
   nessun file dice come si gioca il passaggio dai pregen ai PG.
 - **Azione**: creare `ARC08-PONTE-ARRIVO.md` (snello): (1) puntatore al
-  master P3B ARC-07 (stato in uscita: Hella viva col template e la
-  Collana/Durik, Thorik −2 CON, Cuore di Moradin speso, Corona a 3
-  gemme); (2) la **cucitura D16**: il salto col Rubino come motore, il
+  master P3B ARC-07 = `07_.../PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`
+  (eletto in ARC-07 B2, §INTEGRAZIONE B2) — stato in uscita: Hella viva col
+  template Ibrido Treant e la Collana/Durik (doni pieni del viaggio), Thorik
+  −2 CON, Cuore di Moradin speso, Corona a 3 gemme; (2) la **cucitura D16**:
+  il salto col Rubino come motore, il
   riemergere al Cuore della Montagna al momento più nero (regia
   dell'Incontro 3B, riusando P6 r.621-753 come fonte); (3) la regia del
   **passaggio pregen→PG** (D6): quando i giocatori lasciano gli Eroi,

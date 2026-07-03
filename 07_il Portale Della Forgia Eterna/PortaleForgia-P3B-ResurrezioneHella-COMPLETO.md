@@ -2,13 +2,79 @@
 ## PARTE 3B - Rituale Resurrezione Hella
 ### Avventura D&D 3.5 - Livello 13 - Forgotten Realms
 
+> **Stato (B2)**: ⭐ **MASTER del P3B** (eletto in B2). Integra i risultati
+> canonici del viaggio dello spirito (`...-MONDO-risultati.md`, D12).
+> L'alternativa breve `...-RICALIBRATO-alternative.md` è deprecata a favore
+> di questo. Ponte: **ARC-08 B2** punta qui per lo stato di Hella in ingresso.
+> Vedi `ARC07-MATRICE-VERSIONI.md`.
+>
+> **Ordine di gioco (D2)**: nonostante la sigla "3B", questa parte si gioca
+> DOPO il P4 (Piano della Terra, in corso) e PRIMA del P5 (viaggio
+> temporale). Hella, risorta, è il 4° PG del P5 e della battaglia antica.
+> Vedi `PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md` §0 D2.
+
 ---
 
+## ⭐ INTEGRAZIONE B2 — IL VIAGGIO GIOCATO (leggere PRIMA del rituale)
+
+> Lo **spirito di Hella ha GIÀ compiuto il viaggio nell'Incudine del Mondo**
+> durante il P4 (Piano della Terra): è canone giocato, registrato in
+> `PortaleForgia-P4-PianoTerra-P3B-HELLA-...-MONDO-risultati.md` (D12). Il
+> rituale sotto **non ridà i doni "generici"**: al risveglio Hella porta i
+> **doni PIENI** vinti al tavolo (tutte le prove e i TS superati). Dove il
+> testo storico di questo file dice "Resist Freddo 10" o elenca doni base,
+> **valgono invece i valori qui sotto** (integrati dal file risultati).
+
+**Doni PIENI al risveglio (canone giocato — sovrascrivono §4 Step 4 e §7):**
+
+- **Compensazione della Radice**: **Resistenza al freddo 15** (non 10) +
+  **Rigenerazione 1 pf/round** a contatto con terra o pietra naturale.
+- **Costo permanente**: **Vulnerabilità al fuoco** (+50% danni). Velocità
+  invariata (il costo −1,5 m era della Via della Guardia, NON scelta).
+- **Marchio della Veritade** (Prova I, verità piena): +4 competenza a
+  Diplomazia coi nani di Moradin; attiva 1/giorno (verità → TS Volontà CD 17
+  o **scosso** 1d4 round).
+- **Radice Silenziosa** (Prova II, ferita aperta): **+2 competenza a
+  Percepire Intenzioni** vs creature già incontrate; attiva 1/giorno (empatia
+  immediata su un alleato).
+- **Radici del Mondo** (Prova III, Via della Radice piena): rigenerazione
+  anche su suolo sacro/druidico; attiva 1/giorno **Radicamento** (5 round,
+  +1 morale ai TS agli alleati entro 9 m; Hella immobile durante).
+- **Bonus fissi**: tipo **Ibrido Treant**, Empatia vegetale +4, Fotosintesi,
+  **Earth Dream amplificato** (1/giorno, *Divination* CL 12), Scurovisione
+  27 m (Dream Dwarf).
+- **Compagno**: il terzo seme della **Collana dei Semi Eterni** evoca
+  **DURIK RIFORGIATO** (12 DV), aspetto *"Protegge Hella"* — mithral e pietra
+  scura, occhi di topazio (scheda in `...-MONDO-v2.md` §10 + Collana).
+
+**Correzioni di canone applicate a questo master (B2):**
+
+- Il **Cuore di Moradin è SPESO** (single-use) dopo il rito — NON torna
+  nell'Altare (state.md §6). La riga storica "Cuore ritornato interno Altare"
+  è corretta più sotto.
+- Costo di **Thorik** = **−2 COSTITUZIONE permanente** (mai ripristinata,
+  state.md §1), non "−2 pf".
+- Tordek indossa la **Cintura della Devastazione** (D17), non i "Devastation
+  Gauntlets".
+- **Timing/posizione**: il rituale si gioca tra il **P4** e il **P5** (D2),
+  non "tra P5 e P6". La "Battaglia Finale" del 1372 è ora l'**ARC-08**; qui
+  Hella torna per essere il 4° PG del **viaggio P5** e della battaglia antica.
+- Classe di Hella per il canone: **Dream Dwarf Ranger 1 / Druida 12** (CL 12),
+  non "Druida 13°" — vedi state.md §1 e l'errata **B5**.
+- ✅ **Compagno animale (deciso dal DM 2026-07-03)**: l'**animal companion**
+  di Hella è **DURIK** — cane maschio, **riforgiato** in Guardiano di Pietra e
+  **evocato dal 3° seme della Collana dei Semi Eterni** (Magical Beast, DR
+  5/adamantio, Tremorsense, legame telepatico entro 18 m). Il **rinoceronte**
+  che appare in gioco è **Hella stessa che usa la Forma Selvatica (Wild Shape)
+  del Druido** per diventare un **rinoceronte vivo** — NON di pietra/animato e
+  NON una creatura separata. (L'"Orso Bruno" era il compagno pre-morte;
+  post-resurrezione il compagno è Durik.)
+
 **Sistema:** Dungeons & Dragons 3.5 Edition  
-**Quando:** OPZIONALE - Prima Battaglia Finale (Parte 6)  
+**Quando:** dopo il **P4** (Piano della Terra), prima del **P5** (viaggio) — D2  
 **Durata:** 1-2 ore (rituale + recupero)  
 **Partecipanti:** Thorik + Tordek + Artemis + Moradin (divino)  
-**Outcome:** Hella Druida resuscitata, joins party Battaglia Finale  
+**Outcome:** Hella Druida resuscitata → 4° PG del viaggio P5 e della battaglia antica  
 
 ---
 
@@ -31,17 +97,21 @@
 
 ### **Timing Ottimale**
 
-**RACCOMANDAZIONE DM:** Tra Parte 5 e Parte 6
+**RACCOMANDAZIONE DM (D2):** dopo il **P4** (Piano della Terra), prima del
+**P5** (viaggio temporale). ⚠️ Il testo storico qui sotto diceva "tra P5 e
+P6": superato — la "Parte 6 / Battaglia Finale del 1372" è ora l'**ARC-08**.
 
 **Timeline Suggerita:**
-1. Completare Parte 5 (Viaggio Temporale)
-2. Tornare Sala Forgia Eterna
+1. Completare il **P4** (Piano della Terra, Smeraldo) — lo spirito di Hella
+   ha già viaggiato (risultati canonici)
+2. Nella **Sala della Forgia Eterna**, davanti al corpo
 3. **Long Rest (8 ore)** - Recupero completo
 4. **Eseguire Rituale Resurrezione (2 ore)**
 5. Hella recupera/riposa (1 ora)
-6. **Partire per Hammerfist con Hella** (Parte 6)
+6. **Aprire il portale del P5** con Hella nel gruppo (Topazio + Smeraldo)
 
-**Beneficio:** Hella combatte Battaglia Finale (party 4 PG invece 3!)
+**Beneficio:** Hella è il **4° PG** del viaggio P5 e della battaglia antica
+(party di 4 invece di 3 — APL 13 pieno).
 
 ---
 
@@ -211,7 +281,9 @@ Hella Vala-mara, azaghâl núr!
 
 **Effetto Permanente Hella:**
 - Tipo diventa: Umanoide (Nano) / Vegetale (Treant Hybrid)
-- Ottiene: Vulnerabilità Fuoco (x1,5 danni) MA Resist Freddo 10
+- Ottiene: Vulnerabilità Fuoco (x1,5 danni) MA **Resist Freddo 15** (valore
+  pieno del viaggio giocato — vedi §INTEGRAZIONE B2; il "10" era il valore
+  base pre-viaggio)
 - Ottiene: Regeneration 1 (1 HP/round se in contatto terra/pietra)
 - Aspetto: Pelle assume tinta leggermente verdastra, occhi diventano ambra-dorati
 
@@ -231,7 +303,7 @@ Il rituale richiede tre doni specifici. Ognuno lascia un segno indelebile.
 
 ### **DONO 1: LA FORZA (Thorik)**
 *   **Azione:** Thorik versa il proprio sangue sulla fronte di Hella, invocando la protezione eterna.
-*   **Costo:** Thorik accetta di perdere **2 Punti Ferita PERMANENTI**. (Simboleggia che una parte della sua vitalità ora scorre in lei).
+*   **Costo:** Thorik accetta di perdere **2 punti di COSTITUZIONE PERMANENTI** (mai ripristinati — canone, state.md §1). Scelta ONSCREEN del giocatore: simboleggia che una parte della sua vitalità ora scorre in lei.
 *   **Effetto su Hella:** Ottiene **Pelle di Adamantio** (Riduzione Danno 3/- permanente).
 
 ### **DONO 2: IL RESPIRO/KI (Tordek)**
@@ -456,7 +528,8 @@ Party spiega (5 minuti roleplay):
 **1. Dual Type:** Umanoide (Nano) / Vegetale (Treant Hybrid)
 - Affetto da incantesimi target entrambi tipi
 - **Vulnerabilità Fuoco:** Danni fuoco x1,5
-- **Resist Freddo 10:** Riduce danni freddo 10
+- **Resist Freddo 15:** Riduce danni freddo 15 (valore pieno del viaggio
+  giocato — vedi §INTEGRAZIONE B2)
 
 **2. Regeneration 1 (Ex):**
 - Recupera 1 HP/round SE in contatto terra/pietra naturale
@@ -510,17 +583,18 @@ Party spiega (5 minuti roleplay):
 
 ---
 
-**COMPANION ANIMALE:**
+**COMPANION ANIMALE — DURIK RIFORGIATO** (cane maschio, Guardiano di Pietra):
 
-**Orso Bruno Grande (Advanced to HD 13):**
-- **HP:** 85
-- **CA:** 17
-- **Attacchi:** 2 artigli +12 (1d8+5), morso +7 (2d6+2)
-- **Capacità:** Scent, Link, Share Spells, Evasion, Devotion
-
-**Ora Potenziato Treant Hybrid Affinity:**
-- Orso ha corteccia parziale (DR 2/slashing)
-- +2 FOR (influenza Hella)
+Evocato dal **3° seme della Collana dei Semi Eterni**; aspetto "Protegge
+Hella" (mithral e pietra scura, occhi di topazio). Stat completa: viaggio v2
+§10 (12 DV).
+- **DR:** 5/adamantio · **Tremorsense** · **legame telepatico** con Hella entro 18 m
+- **Capacità:** Link, Share Spells, Evasion, Devotion; si frappone tra Hella e
+  il pericolo (aspetto "Protegge Hella")
+- Vulnerabilità al fuoco (come Hella), Resist Freddo, affinità Ibrido Treant
+- *(L'"Orso Bruno" era il compagno pre-morte; post-resurrezione è Durik. Il
+  rinoceronte è la **Forma Selvatica del Druido** di Hella — un rinoceronte
+  vivo, non di pietra e non un compagno.)*
 
 ---
 
@@ -564,7 +638,7 @@ Party spiega (5 minuti roleplay):
 
 > *Hella cammina Sala Forgia Eterna. Ogni passo... sente terra. LETTERALMENTE. Vibrazione pietra comunica. Dice: "Antica. Forte. Protettiva."*
 >
-> *Tocca Altare Cuore Moradin. Sente battito (anche Cuore ritornato interno Altare). Sussurra: "Grazie, Padre Montagna. Debito immenso."*
+> *Tocca l'Altare. Il Cuore di Moradin è **speso** — la nicchia è vuota, il cristallo consumato nel dono della vita (single-use, state.md §6). Sente ancora l'eco di un battito nella pietra. Sussurra: "Grazie, Padre Montagna. Debito immenso."*
 >
 > *Lancia *Produce Flame*. Fiamma verde-dorata (mix druida + Treant energia). Funziona MA sente... disagio. Fuoco non più amico. È... minaccia ora. Vulnerabilità.*
 >
@@ -632,7 +706,7 @@ Tordek e Hella hanno momento privato. Lasciare improvvisare.
 **ROSTER FINALE BATTAGLIA:**
 
 1. **Thorik** - Guerriero 13, Corona Portatore
-2. **Tordek** - Guerriero 4/Monaco 9, Devastation Gauntlets
+2. **Tordek** - Guerriero 4/Monaco 9, Cintura della Devastazione (D17) + Bracieri Gemelli
 3. **Artemis** - Warlock 13, Ring Chaotic Illumination
 4. **HELLA** - Druida 13, Treant Hybrid Risorta
 
@@ -652,4 +726,7 @@ Tordek e Hella hanno momento privato. Lasciare improvvisare.
 
 **FINE PARTE 3B - HELLA RISORTA E PRONTA**
 
-**Prossimo:** PARTE 6 - BATTAGLIA FINALE vs FAUCI DI PALUDE!
+**Prossimo (D2):** **P5 — Viaggio a 1.000 anni prima** (fast-play, duello con
+Skullcrusher). La battaglia contro **Fauci di Palude** nel 1372 è l'**ARC-08**
+(La Battaglia di Hammerfist), non più "Parte 6". Il ponte meccanico
+"la Forgia ricorda le ferite" (task B4) collega il duello antico a Fauci.

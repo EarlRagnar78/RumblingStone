@@ -4,6 +4,17 @@
 
 ### Documento di Integrazione P4 ↔ P3B — Versione Definitiva DM
 
+> ⚠️ DEPRECATED (2026-07, A6): **versione 1** del viaggio dello spirito,
+> **sostituita da** `...-MONDO-v2.md` (master del viaggio) e dal CANONE
+> giocato in `...-MONDO-risultati.md`. Conservata come storia di progetto
+> (D10). Vedi `ARC07-MATRICE-VERSIONI.md`.
+
+> **Ordine di gioco (D2)**: lo spirito di Hella viaggia MENTRE il party
+> attraversa il P4 (Piano della Terra) — questo viaggio è **già stato
+> giocato** (vedi il file `...-risultati.md`); il rituale che lo integra
+> (P3B) si gioca dopo il P4. Vedi
+> `PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md` §0 D2.
+
 **Sistema:** D&D 3.5 Edition  
 **Fonti meccaniche:** PHB (resurrection, druid class), MM (animal companion, construct), Complete Arcane (incantation ritual framework adattato), SRD (spirit creature template adattato)  
 **Dipendenze dirette:**  
@@ -33,7 +44,7 @@ Una Hella che ha scelto diversamente. Una che ha usato lo scudo
 al momento giusto. Una che aveva urlato per avvisare gli altri.
 Una che aveva lasciato perdere Hammerfist e si era messa in salvo.*
 
-*Le fiamme circondano l'immagine di Nymeria — il tuo cane da galoppo,
+*Le fiamme circondano l'immagine di Durik — il tuo cane da galoppo,
 morto mesi prima di te in una mischia che non avresti mai dovuto
 permettergli di fare da solo. Lo guardi attraversare le fiamme
 ripetutamente, bruciare, riprendere forma. Bruciare ancora.*
@@ -56,7 +67,7 @@ della risposta — giudica se è vera.
 **Se la risposta è genuina:**
 
 - Le fiamme si abbassano
-- L'immagine di Nymeria smette di bruciare e si solidifica in forma di cane di pietra scura — non si muove ancora, ma è intera
+- L'immagine di Durik smette di bruciare e si solidifica in forma di cane di pietra scura — non si muove ancora, ma è intera
 - TS Volontà CD 18 (SAG Hella +5 = +5, bonus +2 da "chiarezza spirituale post-mortem") = CD 18 contro +7 → riesce quasi sempre, ma non automaticamente
 
 **Se la risposta è evasiva o superficiale:**
@@ -114,7 +125,7 @@ scritto nelle pietre senza che nessuno lo abbia mai chiesto.*
 
 *E tra queste lastre, una più piccola. Alta come la tua mano.*
 
-*Contiene Nymeria.*
+*Contiene Durik.*
 
 *Non la sua morte — quella non è qui. Contiene il suo modo di guardarti.
 Come si sedeva vicino a te quando dormivi. Come grugniva piano
@@ -138,7 +149,7 @@ Questa prova non richiede un tiro — richiede una **scelta dichiarata** dalla g
 
 **SCELTA A — "Come scudo":**
 
-- Hella riconosce che il dolore di Nymeria, e di ogni perdita, la rende più acuta, non meno funzionale
+- Hella riconosce che il dolore di Durik, e di ogni perdita, la rende più acuta, non meno funzionale
 - Effetto immediato: può comunicare telepaticamente con Madre Cristallo per 1 messaggio (30 parole) — il DM può usare questo per aggiungere 1 informazione utile per il rituale Smeraldo (+2 a una prova del party durante Fase 2)
 - Effetto permanente post-resurrezione: vedi Sezione 7
 
@@ -160,14 +171,14 @@ nell'emozione del ricordo (la cava di lastre può sopraffarre anche un druida).
 
 | Scelta Prova II | Effetto permanente post-resurrezione |
 |---|---|
-| **Scudo (A) + TS superato** | Percezione del dolore altrui: 1/giorno Detect curse/possession/corruption (Spellcraft DC 15, su un bersaglio in contatto fisico) |
+| **Scudo (A) + TS superato** | Percezione del dolore altrui: 1/giorno Detect curse/possession/corruption (Spellcraft CD 15, su un bersaglio in contatto fisico) |
 | **Scudo (A) + TS fallito** | Come sopra, ma funziona solo in luoghi naturali o sacri a Moradin |
 | **Ferita (B) + TS superato** | +2 competenza a Sense Motive vs creature che fingono di stare bene; 1/giorno empatia accelerata (capire stato emotivo vero di una creatura, no prova) |
 | **Ferita (B) + TS fallito** | Come sopra, ma solo sulle creature con cui ha già un legame (alleati conosciuti) |
 
-### Dono della Prova: L'Impronta di Nymeria
+### Dono della Prova: L'Impronta di Durik
 
-Prima di uscire dalla cava, la lastra con il ricordo di Nymeria cade e si frantuma.
+Prima di uscire dalla cava, la lastra con il ricordo di Durik cade e si frantuma.
 I frammenti si sciolgono in polvere dorata e scompaiono nella roccia.
 
 *"Non è sparito. È andato dove serve. Dove vi incontrerete di nuovo."*
@@ -221,7 +232,7 @@ essere qualcosa di bello o spezzarsi definitivamente sotto il martello.*
 ### Meccanica: La Scelta del Voto
 
 Questa è la prova culminante. Due percorsi. Non migliore o peggiore — **diversi**.
-La scelta determina l'orientamento permanente di Hella e la forma di Nymeria.
+La scelta determina l'orientamento permanente di Hella e la forma di Durik.
 
 **PERCORSO A — VIA DELLA GUARDIA (Protezione come muro):**
 Hella dichiara che vuole essere il confine tra i compagni e il danno.
@@ -255,7 +266,7 @@ quando funzioni?"*
 
 **Prova per Via della Radice:**
 
-- TS Volontà CD 20 + Knowledge (Religion) DC 15 (capire che Moradin approva entrambi i percorsi)
+- TS Volontà CD 20 + Knowledge (Religion) CD 15 (capire che Moradin approva entrambi i percorsi)
 - Se supera entrambe: il voto è sancito — vedi effetti Sezione 7
 - Se supera solo Volontà: il voto è sancito ma senza il bonus Knowledge
 
@@ -269,41 +280,41 @@ quando funzioni?"*
 Prima di congedare Hella, Moradin fa una domanda che non richiede prova ma risposta:
 
 *"Il tuo compagno animale. So dove è andato — tu sai dove è andato.*
-*La polvere di Nymeria è già nella pietra del Piano della Terra.*
+*La polvere di Durik è già nella pietra del Piano della Terra.*
 *Quando i tuoi compagni faranno il rituale, quella polvere si raccoglierà.*
 *Ma la forma che prenderà dipende da te, non da loro.*
 
-*Cosa deve proteggere Nymeria? Chi è, nella sua nuova forma?"*
+*Cosa deve proteggere Durik? Chi è, nella sua nuova forma?"*
 
 La risposta della giocatrice — una risposta genuina, non meccanica —
-determina l'aspetto e la personalità di Nymeria Riforgiato (vedi Sezione 6).
-Non c'è risposta sbagliata. Ogni risposta produce un Nymeria diverso
+determina l'aspetto e la personalità di Durik Riforgiato (vedi Sezione 6).
+Non c'è risposta sbagliata. Ogni risposta produce un Durik diverso
 ma ugualmente valido.
 
 ---
 
-## 6. Nymeria RIFORGIATO — NASCITA DEL GUARDIANO DI PIETRA
+## 6. Durik RIFORGIATO — NASCITA DEL GUARDIANO DI PIETRA
 
 **Collocazione in P4:** Concurrent con Fase 3 del Rituale dello Smeraldo  
 **Trigger meccanico:** Lo Smeraldo si incastona nella Corona. L'onda d'urto verde
 percuote la camera sferica. La polvere di Terros e i frammenti di cristallo
-vivente — i frammenti che la polvere di Nymeria (dispersa nella pietra del Piano)
+vivente — i frammenti che la polvere di Durik (dispersa nella pietra del Piano)
 ha già raggiunto durante la Prova II — collassano in forma.
 
-### Come appare Nymeria Riforgiato
+### Come appare Durik Riforgiato
 
 La forma base è sempre quella di un cane da galoppo di taglia media.
 Ma il **dettaglio dell'aspetto** varia in base alla risposta di Hella
 nella domanda finale della Prova III:
 
-| Risposta di Hella | Aspetto di Nymeria |
+| Risposta di Hella | Aspetto di Durik |
 |---|---|
 | Protegge il gruppo (focus difensivo) | Corteccia di granito compatta, occhi smeraldo fisso, movimenti lenti e deliberati. Sembra più pesante di quello che è. |
 | Protegge Hella (focus personale) | Mithral intrecciato alla pietra scura, occhi topazio, si muove sempre tra Hella e la fonte di pericolo percepita |
 | Guida il gruppo (focus scout/segnale) | Cristallo trasparente con vene verdi, occhi bianchi, emette un suono basso quando percepisce pericolo |
 | Vendetta per i caduti (focus aggressivo) | Ossidiana e ferro, occhi rosso-ambra, ringhia costantemente in presenza di non-morti o demoni |
 
-In ogni caso, **Nymeria non parla**. Non emette suoni normali di cane.
+In ogni caso, **Durik non parla**. Non emette suoni normali di cane.
 I suoi "versi" sono suoni di pietra — click, strofinio di roccia,
 occasionalmente un suono profondo come il movimento di una faglia.
 
@@ -330,7 +341,7 @@ perché lo abbiate visto spesso. Lo avete visto nelle storie che
 Hella raccontava. Lo avete visto nella statua che Hella portava
 con sé come ricordo.*
 
-*È Nymeria. Non uguale. Riforgiato.*
+*È Durik. Non uguale. Riforgiato.*
 
 *Si guarda le zampe nuove come se stesse ancora capendo cosa sono.
 Poi alza la testa verso la Corona di Thorik — lo Smeraldo che brilla
@@ -341,10 +352,10 @@ verde. Annuisce — un gesto inequivocabile, quasi umano.*
 *Poi si siede. Accanto al portale che porterà al corpo di Hella.
 Ad aspettare."*
 
-### Nymeria in P3B — Il Riconoscimento
+### Durik in P3B — Il Riconoscimento
 
 Quando il rituale di resurrezione si completa e Hella apre gli occhi,
-la prima cosa che vede è Nymeria.
+la prima cosa che vede è Durik.
 
 **Narrazione (da leggere alla giocatrice di Hella):**
 
@@ -357,7 +368,7 @@ la prima cosa che vede è Nymeria.
 
 *Lo guardi. Lui ti guarda.*
 
-*Non è Nymeria. È Nymeria riforgiato — lo stesso legame, una nuova forma.
+*Non è Durik. È Durik riforgiato — lo stesso legame, una nuova forma.
 Le ferite che lui ha portato non ci sono più. La stanchezza che aveva
 nelle ultime settimane di vita non c'è. C'è solo pietra e volontà.*
 
@@ -379,11 +390,11 @@ Le prove determinano tre variabili che modificano il rituale P3B:
 
 1. **Potenza dei Doni** — quanto sono forti i benefici permanenti
 2. **Entità del Costo** — quanto pesano le perdite fisiche
-3. **Stato di Nymeria** — livello di HD e capacità speciali all'inizio
+3. **Stato di Durik** — livello di HD e capacità speciali all'inizio
 
 ### Tavola Completa
 
-| Prova I | Prova II | Prova III | Doni Post-Resurrezione | Costo Fisico | Nymeria HD |
+| Prova I | Prova II | Prova III | Doni Post-Resurrezione | Costo Fisico | Durik HD |
 |---|---|---|---|---|---|
 | Verità Piena | Scudo (A) | Guardia | DR 2/—, Immune Charm (protezione alleati), Percezione dolore altrui | -5 ft mov | 14 HD |
 | Verità Piena | Scudo (A) | Radice | Resist freddo 15, Regen 1 (terra), Percezione dolore altrui | Vuln fuoco | 13 HD |
@@ -408,7 +419,7 @@ della resurrezione tramite P3B:
 - **Plant Empathy** +4 con creature vegetali
 - **Photosynthesis** (recupero HP da luce solare diretta)
 - **Collana dei Semi Eterni** (artefatto P3B con poteri invariati)
-- **Nymeria** (in qualsiasi forma — anche la versione 10 HD è significativa)
+- **Durik** (in qualsiasi forma — anche la versione 10 HD è significativa)
 
 ---
 
@@ -472,16 +483,16 @@ nella cava di lastre, ha visto una lastra con sopra un simbolo che non
 riconosceva — un basilisco stilizzato. "Non era mia. Era di qualcuno
 che frequenta la pietra da molto più tempo di me."
 
-### Aggiunta al STEP 7 — Nymeria integrato alla Collana
+### Aggiunta al STEP 7 — Durik integrato alla Collana
 
 Nel documento P3B base, la Collana dei Semi Eterni si forma dai tre semi
 e dai sacrifici del party. **Con questo documento integrato**, la Collana
 ha già un quarto elemento: il "dono della Prova II" — la polvere della
-lastra di Nymeria che si è sciolta nella pietra del Piano della Terra.
+lastra di Durik che si è sciolta nella pietra del Piano della Terra.
 
 **Effetto aggiuntivo sulla Collana:**
 Il terzo seme incastonato nella Collana non evoca un Treant generico —
-**evoca Nymeria** (il Guardiano di Pietra, usando le sue statistiche complete).
+**evoca Durik** (il Guardiano di Pietra, usando le sue statistiche complete).
 Le altre due cariche rimangono per i Treant di Adamantio standard.
 
 **Cambio nella descrizione fisica della Collana:**
@@ -510,18 +521,18 @@ in `PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`.
 
 **MARCHIO DELLA VERITADE** (se Prova I superata con verità piena)
 
-- Passiva: la runa sull'avambraccio brilla quando Hella dice una verità ad alta voce — nessun effetto meccanico autonomo, ma i nani con Knowledge (Religion) DC 12 la riconoscono come "segnata dalla Forgia" (+4 competenza Diplomazia con nani praticanti di Moradin)
+- Passiva: la runa sull'avambraccio brilla quando Hella dice una verità ad alta voce — nessun effetto meccanico autonomo, ma i nani con Knowledge (Religion) CD 12 la riconoscono come "segnata dalla Forgia" (+4 competenza Diplomazia con nani praticanti di Moradin)
 - Attiva (1/giorno, azione standard): Hella pronuncia ad alta voce una verità su una creatura entro 9m (es. "questa creatura mente" o "questa creatura soffre") — se la verità è oggettivamente vera, la runa brilla e la creatura fa un TS Volontà CD 17 o è Shaken per 1d4 round; se la verità è falsa o parziale, nessun effetto e la runa non brilla
 
 **PERCEZIONE DEL DOLORE NASCOSTO** (se Prova II Scudo A)
 
 - 1/giorno: contatto fisico (azione standard), Hella percepisce se una creatura è sotto effetto di Charm, Compulsion, possessione, o corruzione attiva. Funziona come Detect Evil ma rileva "dolore nascosto" — non si applica a malevolenza volontaria, solo a coercizione subita
-- Meccanica: Spellcraft DC 15 per interpretare correttamente l'informazione ricevuta
+- Meccanica: Spellcraft CD 15 per interpretare correttamente l'informazione ricevuta
 
 **RADICE SILENZIOSA** (se Prova II Ferita B)
 
 - Passiva: +2 competenza Sense Motive su qualsiasi creatura che Hella abbia già incontrato in una scena precedente
-- 1/giorno: Empatia immediata — capisce lo stato emotivo vero di un alleato conosciuto senza tiro (equivalente a Sense Motive automatico vs DC 0, ma funziona anche se l'alleato mente attivamente)
+- 1/giorno: Empatia immediata — capisce lo stato emotivo vero di un alleato conosciuto senza tiro (equivalente a Sense Motive automatico vs CD 0, ma funziona anche se l'alleato mente attivamente)
 
 **VOTO DELLA GUARDIA** (se Prova III Via Guardia)
 
@@ -533,28 +544,28 @@ in `PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`.
 - Rigenerazione 1 HP/round (già inclusa in P3B), ma con questa prova si estende: funziona anche su suolo sacro a Moradin e in ambienti druidici, non solo terra naturale
 - 1/giorno: Radicamento — azione standard, Hella affonda radici spirituali nel terreno entro 9m. Per 5 round: tutti gli alleati in quell'area hanno +1 morale a tutti i TS (il legame con la terra li stabilizza). Hella non può muoversi durante il radicamento.
 
-#### Nymeria come Compagno Animale Speciale
+#### Durik come Compagno Animale Speciale
 
 **Regola del Legame Druidico:**
-Nymeria conta come Compagno Animale ai fini della Druid class di Hella,
+Durik conta come Compagno Animale ai fini della Druid class di Hella,
 ma non occupa il "slot" standard — è un compagno sovrannaturale,
 non naturale. Questo significa:
 
-- Hella può avere sia Nymeria che un compagno animale normale (se lo riaddestra)
-- Nymeria non progredisce con i livelli di druida come farebbe un compagno normale
-- Nymeria progredisce con le **Prove di Risonanza** — vedi Sezione 10
+- Hella può avere sia Durik che un compagno animale normale (se lo riaddestra)
+- Durik non progredisce con i livelli di druida come farebbe un compagno normale
+- Durik progredisce con le **Prove di Risonanza** — vedi Sezione 10
 
-**Controllo di Nymeria:**
+**Controllo di Durik:**
 
-- Hella può impartire ordini a Nymeria telepaticamente entro 18m (no linguaggio richiesto)
-- Fuori da 18m: Nymeria agisce secondo il suo ultimo ordine o secondo il suo istinto (difendere Hella o i suoi alleati)
-- Nymeria non può essere comandato da altri, ma riconosce il party come alleati e non li attacca
+- Hella può impartire ordini a Durik telepaticamente entro 18m (no linguaggio richiesto)
+- Fuori da 18m: Durik agisce secondo il suo ultimo ordine o secondo il suo istinto (difendere Hella o i suoi alleati)
+- Durik non può essere comandato da altri, ma riconosce il party come alleati e non li attacca
 
 ---
 
-## 10. Nymeria: SCHEDA COMPLETA D&D 3.5
+## 10. Durik: SCHEDA COMPLETA D&D 3.5
 
-### Nymeria, Guardiano di Pietra Riforgiato
+### Durik, Guardiano di Pietra Riforgiato
 
 **Tipo:** Magical Beast (Augmented Animal, Earth Subtype)  
 **Dimensioni:** Media  
@@ -601,11 +612,11 @@ non naturale. Questo significa:
 La corteccia di granito e mithral riduce i danni da armi non-adamantio.
 
 **Attacchi Magici (Su)**
-I colpi di Nymeria contano come magici per superare Damage Reduction.
+I colpi di Durik contano come magici per superare Damage Reduction.
 Il morso conta anche come adamantio.
 
 **Percezione Tremore (Ex)**
-Nymeria percepisce vibrazioni nel terreno entro 18m (come Tremorsense).
+Durik percepisce vibrazioni nel terreno entro 18m (come Tremorsense).
 Rileva creature a terra, non volanti, anche in oscurità totale.
 
 **Immunità (Ex)**
@@ -618,21 +629,21 @@ Rileva creature a terra, non volanti, anche in oscurità totale.
 **Resistenza al Freddo 10 (Ex)**
 
 **Vulnerabilità Acido**
-I danni da acido infliggono +50% danni a Nymeria (la pietra si corrode).
+I danni da acido infliggono +50% danni a Durik (la pietra si corrode).
 
 **Fedeltà Assoluta (Ex)**
-Nymeria non può essere comandato contro la volontà di Hella tramite magia
+Durik non può essere comandato contro la volontà di Hella tramite magia
 (Charm Monster, Dominate Animal, etc.). Chiunque tenti queste magie
 deve superare TS Volontà CD 18 o perdere la concentrazione sull'incantesimo.
 
 **Empatia Pietra (Su)**
-Nymeria percepisce l'umore di Hella a qualsiasi distanza e può comunicare
+Durik percepisce l'umore di Hella a qualsiasi distanza e può comunicare
 uno stato emotivo base (pericolo, tranquillità, urgenza) attraverso il legame.
 Non è telepatia verbale — è una risonanza viscerale, come un basso
 continuo nella consapevolezza di Hella.
 
 **Manifestazione (Su, 1/giorno)**
-Se Nymeria è "a riposo" (inattivo, non evocato dalla Collana), Hella può
+Se Durik è "a riposo" (inattivo, non evocato dalla Collana), Hella può
 richiamarlo come azione standard. Dura 1 ora o fino a distruzione.
 Se distrutto, si dissolve in polvere e può essere richiamato nuovamente
 dopo un riposo lungo.
@@ -643,13 +654,13 @@ la carica della Collana si ricarica dopo 24 ore.
 
 ### Progressione per Prove di Risonanza
 
-Nymeria non cresce con i livelli di Hella. Cresce con **Prove di Risonanza** —
+Durik non cresce con i livelli di Hella. Cresce con **Prove di Risonanza** —
 momenti specifici in cui il legame si rafforza. Il DM può assegnare
 una Prova di Risonanza ogni volta che:
 
-- Hella e Nymeria combattono fianco a fianco in uno scontro di CR pari almeno al livello del party
-- Hella usa Nymeria deliberatamente per proteggere un alleato che non sia lei stessa
-- Il legame viene "testato" (ad esempio: qualcuno tenta di corrompere Nymeria, o Hella lo usa in una scelta morale difficile)
+- Hella e Durik combattono fianco a fianco in uno scontro di CR pari almeno al livello del party
+- Hella usa Durik deliberatamente per proteggere un alleato che non sia lei stessa
+- Il legame viene "testato" (ad esempio: qualcuno tenta di corrompere Durik, o Hella lo usa in una scelta morale difficile)
 
 **Effetti delle Prove di Risonanza:**
 
@@ -676,19 +687,19 @@ Usare se la Prova I è stata superata con verità piena AND Prova III Via Guardi
 
 ---
 
-### Uso Tattico di Nymeria in Combattimento
+### Uso Tattico di Durik in Combattimento
 
-Nymeria non è un DPS. È un **disturbo tattico e uno scudo vivente**.
+Durik non è un DPS. È un **disturbo tattico e uno scudo vivente**.
 Usarlo come primary striker nel round sbaglia il suo ruolo.
 
 **Ruoli ottimali:**
 
 1. **Grapple Controller:** il suo Morso può essere usato come maneuver base per Grapple. Con FOR 22, CMB eccellente — trattiene nemici per lasciare il party libero
 2. **Flanking Partner:** si posiziona per dare flanking a Thorik o Tordek (non fa danno diretto significativo, ma il bonus +2 ai TxC degli alleati vale ogni round)
-3. **Protezione Hella:** si interpone fisicamente tra Hella e una minaccia (occupa il quadrante, un attaccante deve scegliere tra colpire Nymeria o fare un charge attorno a lui)
-4. **Sensore:** la Percezione Tremore 18m è radar tattile — Nymeria segnala posizioni di nemici invisibili a terra con un ringhio/click direzionale
+3. **Protezione Hella:** si interpone fisicamente tra Hella e una minaccia (occupa il quadrante, un attaccante deve scegliere tra colpire Durik o fare un charge attorno a lui)
+4. **Sensore:** la Percezione Tremore 18m è radar tattile — Durik segnala posizioni di nemici invisibili a terra con un ringhio/click direzionale
 
-**Cosa NON fare con Nymeria:**
+**Cosa NON fare con Durik:**
 
 - Mandarlo da solo contro boss — non regge
 - Usarlo come distrazione sacrificabile — il legame con Hella lo rende inappropriato narrativamente; la giocatrice lo sentirebbe come un tradimento del personaggio
@@ -722,7 +733,7 @@ passiva mentre gli altri combattevano.
 
 - Dare alla giocatrice il testo della Narrazione della Prova per leggerlo da sola prima di raccontarlo al tavolo
 - Non affrettare le scelte — Via della Guardia vs Via della Radice è una decisione genuina di personaggio, non meccanica
-- Fare in modo che il momento di Nymeria (testa sul petto) sia silenzioso — nessun commento del party per 10-15 secondi. Lasciare che sia solo tra Hella e Nymeria.
+- Fare in modo che il momento di Durik (testa sul petto) sia silenzioso — nessun commento del party per 10-15 secondi. Lasciare che sia solo tra Hella e Durik.
 
 ### Note su Moradin
 
@@ -738,7 +749,7 @@ Moradin è innamorato del suo lavoro. Non delle frasi.
 ### Cosa il party non deve sapere finché non lo racconta Hella
 
 - I dettagli delle prove
-- La domanda specifica di Moradin su Nymeria
+- La domanda specifica di Moradin su Durik
 - Cosa ha risposto Hella
 
 Il party sa solo che Hella era "da qualche parte tra qui e la morte"
@@ -754,7 +765,7 @@ in P3B — e ogni dettaglio che lei sceglie di condividere o non condividere
 | Fine Incontro Xorn o Skill Challenge | Madre Cristallo menziona "spirito druida" | Prova I completata, Prova II inizia |
 | Inizio Rituale Smeraldo Fase 1 | Corpo di Hella diventa tiepido (avviso chierico) | Prova II completata, Prova III inizia |
 | Rituale Smeraldo Fase 1 (pressione Thorik) | La pressione si stabilizza senza spiegazione | Hella tiene parte del peso spiritualmente |
-| Rituale Smeraldo Fase 3 | Polvere di Terros prende forma → Nymeria emerge | Prova III completata, Nymeria riforgiato |
+| Rituale Smeraldo Fase 3 | Polvere di Terros prende forma → Durik emerge | Prova III completata, Durik riforgiato |
 
 ---
 

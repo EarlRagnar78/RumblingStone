@@ -1,5 +1,11 @@
 # Ring of Chaotic Illumination (Reforged)
 
+> **Stato (A10/D9)**: ⭐ **MASTER canonico** del Ring of Chaotic Illumination
+> (versione *Reforged*, post-Forgia Eterna). Le generazioni precedenti sono in
+> `Old/` (deprecate). `PG/Artefatti/` è la fonte canonica (D9). Stato in
+> `campaign/state.md` §6: "Reforged at Eternal Forge, full base powers; awaits
+> further evolution at Invisible Tower" (ARC-09).
+
 **Aura:** Strong Transmutation and Illusion [Chaotic, Good]
 **Caster Level:** 15th
 **Slot:** Ring

@@ -1,15 +1,47 @@
 # 🏔️ Terros Boss Fight — CR Analysis & Recalibration
 
+> **Nota lingua (A8)**: file tecnico in inglese (analisi CR/statblock). Prove
+> 3.5 già normalizzate **CD** (non "DC"). Glossario per il tavolo: Reflex =
+> **Riflessi**, Fortitude = **Tempra**, Will = **Volontà**, Balance =
+> **Equilibrio**, Concentration = **Concentrazione**, Spellcraft = **Sapienza
+> Magica**. Il corpo tecnico resta inglese.
+
+> **Stato (A6, confermato DM 2026-07-03)**: **statblock del boss del P4**
+> (Terros/Golem di Mithral) — parte del **master di combattimento** insieme a
+> `PortaleForgia-P4-PianoTerra-RICALIBRATO.md`; cornice narrativa in
+> `...-COMPLETO-alternative.md`. Il **power-up è VOLUTO** (D8: artefatti unici →
+> scontri duri, non da 2 round). ⚠️ Correggi la **base**: "3 PC + Therysol
+> Support" è sbagliato (D15: 3 PG, niente Therysol) e il livello è **13°** (non
+> 14) — cambia l'APL, non l'intento di tenerlo tosto. Dettagli A5/B5. Vedi
+> `ARC07-MATRICE-VERSIONI.md`.
+
 ## Analysis Context
 
-| Factor | Value |
+> ⚠️ **CORREZIONE D8+D15 (A5)**: la tabella originale assumeva Livello 14 e
+> "3 PC + 1 NPC Therysol Support" — **entrambi sbagliati**. Canone: party di
+> **13°** (D8) e **3 PG SENZA Therysol** (D15 — Therysol veglia il corpo di
+> Hella, non scende). Valori corretti sotto. La **ricalibrazione numerica del
+> boss** su questa base (target CR, statblock BAB/TS/CD) si chiude in **B5**.
+
+| Factor | Value (corretto D8/D15) |
 |---|---|
-| **Party Level** | 14 (as per RICALIBRATO file header) |
-| **Party Size** | 3 PCs + 1 NPC (Therysol Lv 8 Support) |
+| **Party Level** | **13** (D8) — non 14 |
+| **Party Size** | **3 PG, NESSUN supporto** (D15: Therysol veglia il corpo) |
 | **Active Artifact** | Corona di Adamantio (Topaz ✅, Emerald ✅ after this fight) |
 | **Hella** | ❌ **NOT present** (dead, body carried, spirit only) |
-| **Effective Party Strength** | ~3.5 PCs (Therysol is -4 TxC in melee, ranged/heal only) |
-| **APL Calculation** | Level 14, 3 PCs = APL 14 − 1 (for 3-man) = **effective APL 13** |
+| **Effective Party Strength** | **~3 PC** (nessun PNG di supporto) |
+| **APL Calculation** | 3 PG di 13° = APL 13 − 1 (for 3-man) = **effective APL 12** |
+
+> **Intento del DM (2026-07-03)**: il **power-up è VOLUTO** — i PG hanno
+> **artefatti unici e potentissimi** (D8), quindi lo scontro deve **mettere
+> davvero alla prova** e non finire in 2 round. Quindi: **NON depotenziare**
+> il boss per "far numero" con l'APL 12. Tienilo **duro (target CR 15+,
+> "Hard")**, sfruttando che gli artefatti compensano l'assenza di Hella.
+> **L'unico vero problema 3.5 da decidere** è l'**Aura di Pietrificazione**
+> (drenaggio DES = *save-or-die* **senza guaritore**, Hella morta nel P4):
+> il DM sceglie se **tenerla** (letale, come voluto) o renderla **non
+> permanente** (debuff forte ma recuperabile). Il resto dei poteri resta
+> tosto. Numeri di dettaglio in B5.
 
 ---
 
@@ -46,7 +78,7 @@
 | **Attack +32** | Over-inflated | SRD Elder Earth (24 HD, STR 29) = +27. To get +32 you need STR 40+ which isn't justified. |
 | **Damage 4d10+16** | Doubled from SRD | SRD Elder = 2d10+11. This doubles the die and ups the STR bonus. |
 | **6 Lair Actions** | Action economy overload | Having Gravity Pulse, Petrification Aura, Earth Mastery, Gravità Inversa, Stalactite Rain, AND Absorb is essentially 6 special powers stacked on top of full attack. This is 5e lair action design bolted onto 3.5 — it breaks action economy. |
-| **Petrification Aura DC 24** | Party-killer without healer | DEX drain → instant statue at DEX 0 = Save-or-die with no Restoration available (Hella absent!). **This ability alone can TPK the party.** |
+| **Petrification Aura CD 24** | Party-killer without healer | DEX drain → instant statue at DEX 0 = Save-or-die with no Restoration available (Hella absent!). **This ability alone can TPK the party.** |
 | **Push +36** | No save escape | STR check +36 automatically pins anyone against walls. No PC can contest this. |
 
 ---
@@ -133,7 +165,7 @@ Dadi Vita:    30d8 + 210 (HP 345)
 Iniziativa:   −1 (DES 8)
 Velocità:     6m (20 ft); Earth Glide 6m (attraverso pietra)
               ** NON può volare — in zero-G si muove spingendosi
-                 da superfici (Move action, DC 10 Balance) **
+                 da superfici (Move action, CD 10 Balance) **
 
 CA:           26 (−2 taglia, +18 armatura naturale), 
               touch 8, flat-footed 26
@@ -206,7 +238,7 @@ ATTACCHI SPECIALI
 
 3. EARTH GLIDE (Ex) — movimento
    Passa attraverso pietra/terra come un pesce nell'acqua.
-   Non lascia tunnel. Move Earth lo stordisce (Fort DC 15).
+   Non lascia tunnel. Move Earth lo stordisce (Fort CD 15).
    * Tattica: Terros entra nell'Altare di mithral, emerge
      alle spalle del caster. Usare Ready Actions per 
      colpirlo quando emerge! *
@@ -379,8 +411,8 @@ The Cristalli Viventi skill challenge rewards (from the COMPLETO version) remain
 | Damage | 4d10+16 | **2d10+10** | SRD Earth Elemental scaling |
 | Fly | 18m perfect | **None** (Earth Glide + push off walls) | SRD: Earth Elementals don't fly |
 | Lair Actions | 6 total | **3 rotating** (1/round at init 20) | Prevents action economy overload |
-| Petrification Aura | DC 24 DEX drain | **REMOVED** | Unrecoverable without Hella's Restoration |
-| Push DC | 36 (impossible) | **25** (hard but possible) | Thorik can contest with STR + Blessing |
+| Petrification Aura | CD 24 DEX drain | **REMOVED** | Unrecoverable without Hella's Restoration |
+| Push CD | 36 (impossible) | **25** (hard but possible) | Thorik can contest with STR + Blessing |
 | Regeneration | 20 HP/round | **15 HP/round** | Still forces tactical play, not unbeatable |
 | Stalactite Rain | 10d6 | **8d6** | Slightly reduced to account for no AoE healing |
 

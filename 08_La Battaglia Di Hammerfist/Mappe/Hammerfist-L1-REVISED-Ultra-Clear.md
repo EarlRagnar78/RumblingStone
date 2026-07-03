@@ -115,11 +115,11 @@ SCALATA TORRE (6 Rounds)
 
 +18m ┌────────┐  Round 6: DARA ARRIVA TOP! 🔵
      │  TOP   │  │ Vista: 400m est campo nemico
-     │  3×3m  │  │ Osservare DC 20/25/30
+     │  3×3m  │  │ Osservare CD 20/25/30
      └────────┘  │
                  │
 +12m  ╔══════╗   Round 4: Piano 2 (70% mancante)
-      ║      ║   │ Pericoloso! Balance DC 15
+      ║      ║   │ Pericoloso! Equilibrio CD 15
       ║  50% ║   │
       ╚══════╝   │
                  │
@@ -130,13 +130,13 @@ SCALATA TORRE (6 Rounds)
                  │
 0m    ████████   Round Start: Ground
       ████████   │ Dara inizia scalare
-      ████████   │ Climb CD 12 (scale precarie)
+      ████████   │ Scalare CD 12 (scale precarie)
       BASE 6×6   │
       Col 14-17  ▼
       Row 10-13  
 
 ALTEZZA TOTALE: 18m (12 quadrati verticali)
-TEMPO SCALATA: 6 rounds @ Climb DC 12
+TEMPO SCALATA: 6 rounds @ Scalare CD 12
 ```
 
 ---
@@ -172,7 +172,7 @@ TEMPO SCALATA: 6 rounds @ Climb DC 12
 **Fuoco Centrale 🔥:**
 - Posizione: Colonne 22-24, Riga 25-26 (3m × 3m)
 - Light: Bright 6m radius, Dim 12m radius
-- Effect: -5 Hide checks entro 12m
+- Effect: -5 prove di Nascondersi entro 12m
 
 **4 PG POSIZIONI INIZIALI 🔵:**
 - **Borin:** Colonna 03, Riga 37 (ovest solo, backup difensivo)
@@ -189,28 +189,28 @@ TEMPO SCALATA: 6 rounds @ Climb DC 12
 - Posizione: Colonne 11-12, Righe 05-07
 - Size: 3m × 4.5m (2×3 quadrati)
 - Cover: +4 AC (partial cover)
-- Uso: Nala può nascondersi qui (Hide DC 20)
+- Uso: Nala può nascondersi qui (Nascondersi CD 20)
 
 ---
 
 ### 🎯 SEQUENZA TATTICA SUGGERITA:
 
 **FASE 1 - AVVICINAMENTO (Righe 37 → 30):**
-1. Tutti 4 PG: Hide DC 20 muoversi da Riga 37 a Riga 30 (stealth approach)
+1. Tutti 4 PG: Nascondersi CD 20 muoversi da Riga 37 a Riga 30 (stealth approach)
 2. Borin: Rimane Riga 30, Colonna 10 (guarda pattuglie)
 3. Dara/Thorin/Nala: Continuano Riga 20 (più vicino torre/campo)
 
 **FASE 2 - SCALATA TORRE (Dara):**
 1. Dara: Muove da Col 21 Riga 20 → Col 14 Riga 10 (base torre)
-2. Inizia scalata: Climb DC 12, 6 rounds salita
+2. Inizia scalata: Scalare CD 12, 6 rounds salita
 3. Altri: Nascosti Riga 20, observano hobgoblin (lookout)
 
 **FASE 3 - OSSERVAZIONE (Dara Top +18m):**
 1. Dara TOP torre: Colonna 15, Riga 11 (+18m altezza)
 2. Guarda EST 400m: Campo nemico visibile
-3. Spot DC 20: Conta precisa 900 unità
-4. Spot DC 25: Identifica Grimjaw, Gorthak, Drago
-5. Spot DC 30: Layout tattico completo, punti deboli
+3. Osservare CD 20: Conta precisa 900 unità
+4. Osservare CD 25: Identifica Grimjaw, Gorthak, Drago
+5. Osservare CD 30: Layout tattico completo, punti deboli
 6. Tempo: 10 minuti osservazione
 
 **FASE 4 - SCELTA (Combat o Stealth):**
@@ -221,7 +221,7 @@ TEMPO SCALATA: 6 rounds @ Climb DC 12
 - Result: Intelligence completa, nessun allarme
 
 **OPZIONE B - COMBAT (Eliminate Hobgoblins):**
-- Surprise Round: Se tutti Hide DC 25 successo
+- Surprise Round: Se tutti Nascondersi CD 25 successo
 - Focus: Kill Sergente FIRST (prevents alarm horn)
 - Guardie: Respond Round 2 (7 dormenti wake)
 - Risk: Se horn suonato = 50 orchi reinforcements 10 rounds
@@ -239,7 +239,7 @@ TEMPO SCALATA: 6 rounds @ Climb DC 12
 
 **Torre Top → Campo Nemico (400m EST):**
 - From Torre (Col 15) to Enemy Camp: 400m EST (off-map)
-- Dara must use Spot checks from +18m elevation (advantage!)
+- Dara usa Osservare dai +18m di elevazione (+2 di circostanza per il terreno rialzato)
 
 **Dirupo → Torre:**
 - Cliff Edge (Col 10) → Torre Base (Col 14): 6m (4 quadrati)

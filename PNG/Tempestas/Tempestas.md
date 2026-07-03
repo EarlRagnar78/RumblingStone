@@ -6,7 +6,7 @@
 **Allineamento:** Neutrale Buono
 **Ruolo:** PNG ricorrente. **Messaggero ufficiale del Consiglio di Rethmar** (Brenna Sorvane è la sua patrona). Si muove tra le città dell'Elsir Vale e del Cannath Vale via *Shadow Walk* per portare informazioni che le carovane impiegherebbero settimane a recapitare. Veterano alleato dei PG.
 **Primo incontro (canone retroattivo):** **Arco 00 — Red Hand of Doom opening** — la città-guarnigione di Capitana Lorana sotto attacco. Tempestas era in viaggio diplomatico, si è ritrovato dentro l'assedio, ha aiutato i PG e Lorana a evacuare i sopravvissuti. Da allora è in debito personale con il party.
-**File correlati:** `PNG/Lorana/Lorana.md`; `08_La Battaglia Di Hammerfist/00_Final_hammerfist_battle-La_Mano_Rossa_del_Destino-Guida_Completa_del_DM.md` (Sessione 4 alleati aerei); `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-*.md`.
+**File correlati:** `PNG/Lorana/Lorana.md`; `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md` (Sessione 4 alleati aerei); `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-*.md`.
 
 > **[CANON-RETCON 2026-05-04]** Tempestas è il "bardo storm caller" che il party ha incontrato realmente in sessione durante l'attacco iniziale del Red Hand alla città di Lorana (Arco 00). Quel ricordo è stato canonizzato qui.
 
@@ -264,7 +264,7 @@ Tempestas, prima di partire (mattina del Giorno 22), lascia ai PG una piccola fi
 ## CROSS-LINK
 
 - **Lorana** (origine condivisa, Arco 00): `PNG/Lorana/Lorana.md`
-- **Hammerfist battle (Sessione 4)**: `08_La Battaglia Di Hammerfist/00_Final_hammerfist_battle-La_Mano_Rossa_del_Destino-Guida_Completa_del_DM.md` — Tempestas già presente come alleato della Sessione 4
+- **Hammerfist battle (Sessione 4)**: `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md` — Tempestas già presente come alleato della Sessione 4
 - **Hooks integration master**: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md`
 - **Captain Lythiel** (alleata che arriva con Tempestas a Hammerfist): `PNG/Lythiel/Lythiel.md`
 - **Brenna Sorvane**: `PNG/Consiglio_Rethmar/Consiglio_Rethmar.md`

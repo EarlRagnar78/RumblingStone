@@ -47,7 +47,7 @@ Riferimento dettagliato: `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.m
 
 ### 2.1 Composizione qualitativa fissa
 
-- **5 draghi**: **Abithriax** (red adult — Skull Gorge guardian → riserva Rethmar), **Regiarix** (black young adult — Rhest/Saarvith, *morto se Arc-09/P2 completato*), **Ozyrrandion** (blue adult — Torre Invisibile/Zalkatar, *morto se P2A completato*), **Tyrgarun** (**blue Old, CR 18** — D11 v2, il terrore dei cieli della battaglia: hazard di bombardamento Fase 1, minaccia aerea a orologeria Fase 2-3, inchiodato a terra dal Mythal in Fase 4 — NON cavalcatura di Azarr Kul), **Fauci di Palude** (black adult — Vanguard Hammerfist, *annientato a Hammerfist Day 19*, quindi **4 vivi** al Day 19 pre-Rethmar).
+- **5 draghi**: **Abithriax** (red adult — Skull Gorge guardian → riserva Rethmar), **Regiarix** (black young adult — Rhest/Saarvith, *morto se Arc-09/P2 completato*), **Ozyrrandion** (blue adult — Torre Invisibile/Zalkatar, *morto se P2A completato*), **Tyrgarun** (**blue Old, CR 18** — D11 v2, il terrore dei cieli della battaglia: hazard di bombardamento Fase 1, minaccia aerea a orologeria Fase 2-3, inchiodato a terra dal Mythal in Fase 4 — NON cavalcatura di Azarr Kul), **Fauci di Palude** (black adult — Vanguard Hammerfist; **ramo condizionale D10, non ancora deciso**: default = fugge gravemente ferito sotto i 50 PF e resta assente da Rethmar salvo un ritorno narrativo non garantito; alternativa = ucciso dai PG ad Hammerfist. In **entrambi** i rami non è nel pool draghi a Rethmar il Day 42 — per il conteggio worst/best-case sotto si contano **4 vivi** presenti su 5 nominati, il quinto (Fauci) resta un'incognita narrativa, non un fatto).
 - **8 Razorfiend Draconic Spawn** (colori Tiamat: 2 black/2 red/1 blue/1 white/2 green) assegnati ai Wyrmlord upscalati (Koth, Ulwai Stormcaller, Saarvith se vivo, Karruk, Zalkatar se vivo, riserva Azarr Kul).
 - **Compagnia del Teschio Nero** (mercenari umani Thay/Mulhorand) — composizione canonica AP, riserva élite di Azarr Kul, **NON modificata**.
 - **Esperimenti Fungini** (fotofobia): Aberrazioni Fungine e Fungal Minions subiscono **-2 attacco, -4 Will in luce solare diretta**. Svantaggio annullato in Fase 0 (notturna), Fase 2-4 se la battaglia si prolunga oltre il crepuscolo, o in interni (tempio/cripte). Dispiego ottimale: Ondata 4 al tramonto, Fase 0 cripte.
@@ -139,7 +139,7 @@ Compie **~60%** dell'Orda presente. Distribuzione tipica (scenario C):
 | 8–12 | Saccheggio | **Drellin's Ferry** (Old North Road, già caduta Arc-00) | +150 attrito | — |
 | 13 | Drellin's Ferry burned | Drellin's Ferry | — | Profughi +1.500 Rethmar |
 | 15 | Marcia nord-est, scontri partigiani | Margini Shaarcah Forest | -80 | — |
-| **19** | **Battaglia di Hammerfist ENDS simultaneamente** | **Hammerfist Holds** (The North Wall) + **Terrelton cade** | -900 vanguard Hammerfist perso (Fauci di Palude ferito), -250 Terrelton | 🎯 **SYNC POINT** — Rethmar riceve profughi Terrelton |
+| **19** | **Battaglia di Hammerfist ENDS simultaneamente** | **Hammerfist Holds** (The North Wall) + **Terrelton cade** | -900 vanguard Hammerfist perso (~500 morti + ~400 dispersi, non si ricongiungono — piano ARC-08 D11; Fauci di Palude ferito, ramo condizionale D10), -250 Terrelton | 🎯 **SYNC POINT** — Rethmar riceve profughi Terrelton |
 | 20 | Nimon Gap cade | **Nimon Gap** (center, road through Wyrmbones) | -120 | — |
 | 21 | Saccheggio | **Talar** (village, Talar River) | -200, +100 morale | Brindol/Rethmar panico |
 | 22–24 | Marcia post-Hammerfist, morale -2 | Old North Road → Dawn Way | -120 attrito | — |
@@ -181,6 +181,16 @@ Ogni hook completato **prima del Day 40** modula i numeri di §3. Riferimento: `
 5. **Ghostlord neutralizzato ≠ Ghostlord assente**: un piccolo distaccamento di non-morti minori viene comunque inviato (coerenza: Azarr Kul non si fida e manda avanguardia).
 6. **La battaglia è perduta senza PG**: scenari A/B portano alla caduta di Rethmar se i PG non sono presenti in Fase 3-4. Questo è **intenzionale** e **non negoziabile** (fondamento drammatico).
 7. **Nessun bivio binario** (coerenza §5.3): i PG devono sempre poter scegliere quale fronte rinforzare (Mura / Tempio / Circolo), con costo-opportunità reale.
+8. **Due comandi elfici DISTINTI, D13 (piano ARC-08 A11)**: il
+   **Capitano Lunapiena** e i suoi Ranger Elfici (compagnia
+   indipendente dell'Elsir Vale, combattuta ad Hammerfist Arc-08)
+   **restano di presidio a Hammerfist** — **NON** vanno sommati ai
+   difensori di Rethmar in nessuno scenario di §3, e non vanno confusi
+   con l'Alleanza Elfi di Starsong Hill (Tiri Kitor, +120 ranger/gufi,
+   D9) né con la Capitana **Lythiel Alar-Wen** (Sacred Forest, unico
+   canale elfico verso Hella — compare solo alla Cerimonia delle 100
+   Asce e in Arc-09 via le hook Hella-SacredForest). Tre presenze
+   elfiche separate, mai da fondere né da doppio-contare.
 
 ---
 

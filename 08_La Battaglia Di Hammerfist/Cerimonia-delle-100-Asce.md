@@ -202,6 +202,6 @@ La cerimonia non forza nessuna architettura. I hook possono **maturare lentament
 - **Tempestas:** `PNG/Tempestas/Tempestas.md`
 - **Lythiel:** `PNG/Lythiel/Lythiel.md`
 - **Sorella Maewen:** `PNG/Maewen/Maewen.md`
-- **Battaglia di Hammerfist (Sessione 4):** `08_La Battaglia Di Hammerfist/00_Final_hammerfist_battle…`
+- **Battaglia di Hammerfist (Sessione 4):** `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md`
 - **Stato campagna:** `campaign/state.md`
 - **Storia campagna:** `campaign/lore/campaign-history.md`

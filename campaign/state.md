@@ -14,8 +14,16 @@
 
 **Last updated:** 2026-05-01 (session marker — DM updates)
 **In-world date:** Mirtul, 1372 DR
-**Party APL:** 13
-**Sessions completed:** post-Hammerfist, pre-Rethmar (Arc 09 in progress)
+**Party APL:** 13 (ARC-07 D8 — livello reale già raggiunto durante l'Arco 07)
+**Sessions completed:** Arco 07 **in corso** al tavolo — giocati: Sala
+della Forgia Eterna (P1-P2), Piano del Fuoco con Topazio recuperato (P3),
+viaggio spirituale di Hella nell'Incudine del Mondo con Durik (P3B-spirito,
+registrato); **in corso: Piano della Terra (P4)**, Smeraldo in palio.
+Restano da giocare: resurrezione fisica di Hella (P3B), viaggio ai
+1.000 anni fa (P5), raccordo al 1372 (D16) — **poi** l'Arco 08 (Battaglia
+di Hammerfist). **Tutto ciò che questo file dice dell'Arco 08 e
+dell'Arco 09 è canone preparato (design), non ancora giocato al tavolo**
+(corretto 2026-07-02, piano ARC-08 A0 — vedi changelog).
 
 > **DM workflow**: per la procedura di aggiornamento fine-sessione e per
 > far partire un nuovo gruppo senza perdere niente, vedi
@@ -36,20 +44,21 @@ Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per det
 | 04 Tomba di Belkram | ✅ | completato | — | 9 | — |
 | 05 Stanza Runica | ✅ | completato | — | 10 | — |
 | 06 Corona di Adamantio | ✅ | completato | — | 11 | — |
-| 07 Portale della Forgia Eterna | 🟡 | in corso (P4 Terra; poi P3B→P5) | — | 13 | livello 13° (D8); "completato" era scritto in avanti → A0 |
-| 08 Battaglia di Hammerfist | ✅ | completato | **Day 19 (sync)** | 12→13 | Cerimonia 100 Asce, Custodi Eterni |
-| 09 P1A Quest Hellas (Cerchio Sacro) | 🟡 | in arrivo | Day 20-30 window | 13 | Deadline Day 30 |
-| 09 P1B Cerchio Treant | 🟡 | pianificato | Day 22-28 | 13 | — |
-| 09 P1C Rituale Hellas | 🟡 | pianificato | Day 25-30 | 13 | — |
-| 09 P2 Rhest (Saarvith + Regiarix) | ⬜ | non iniziato | Day 25-32 | 13 | -1 drago se fatto |
-| 09 P2A Torre Invisibile (Zalkatar) | ⬜ | non iniziato | Day 28-35 | 13 | -1 drago se fatto |
-| 09 P2B Torneo di Dauth (Tordek) | ⬜ | non iniziato | Day 25-34 | 13 | +300 mercenari nani |
-| 09 P2C Salvatore Mercante | ⬜ | non iniziato | Day 28-36 | 13 | Sal clock 0/6 |
-| 09 P3 Starsong Hill (Tiri-Kitor) | ⬜ | non iniziato | Day 30-35 | 13-14 | +cavalleria civette |
-| 09 P3 Ghostlord | ⬜ | non iniziato | Day 25-32 | 13-14 | 3 branch: ostile/neutralizzato/alleato |
-| 09 P3 Sabotaggio Campi Drow | ⬜ | non iniziato | Day 30-36 | 13-14 | -Fase 0 + -75 esperimenti fungini (45 Servitori + 30 Sporeborn; 8 Guardiani Neri sopravvivono) |
-| 09 P3 Missioni Brevi CR12 | ⬜ | non iniziato | Day 30-38 | 13-14 | — |
-| **09 P3 Battaglia Finale Rethmar** | ⬜ | target | **Day 42** | 14 | Fase 0-4 |
+| 07 Portale della Forgia Eterna | 🟡 | **in corso** | — | 13 (D8) | Giocati: Forgia (P1-P2), Piano del Fuoco/Topazio (P3), viaggio spirituale Hella+Durik (P3B-spirito); **in corso: Piano della Terra (P4)** |
+| 07 P3B Resurrezione di Hella + P5 Viaggio 1.000 anni | ⬜ | da giocare | — | 13 | Si gioca DOPO la Terra (ARC-07 D2); raccordo D16 (Rubino) riporta i PG al 1372, Cuore della Montagna → ARC-08 |
+| 08 Battaglia di Hammerfist | ⬜ | **pianificato — canone preparato, NON giocato** | **Day 19 (target sync)** | 13 (consolida, D9) | Esito atteso: vittoria, Cerimonia 100 Asce, Custodi Eterni (piano ARC-08 §0, E1-E8) |
+| 09 P1A Quest Hellas (Cerchio Sacro) | ⬜ | **preparato in anticipo** | Day 20-30 window | 13 | Deadline Day 30 |
+| 09 P1B Cerchio Treant | ⬜ | **preparato in anticipo** | Day 22-28 | 13 | — |
+| 09 P1C Rituale Hellas | ⬜ | **preparato in anticipo** | Day 25-30 | 13 | — |
+| 09 P2 Rhest (Saarvith + Regiarix) | ⬜ | **preparato in anticipo** | Day 25-32 | 13 | -1 drago se fatto |
+| 09 P2A Torre Invisibile (Zalkatar) | ⬜ | **preparato in anticipo** | Day 28-35 | 13 | -1 drago se fatto |
+| 09 P2B Torneo di Dauth (Tordek) | ⬜ | **preparato in anticipo** | Day 25-34 | 13 | +300 mercenari nani |
+| 09 P2C Salvatore Mercante | ⬜ | **preparato in anticipo** | Day 28-36 | 13 | Sal clock 0/6 |
+| 09 P3 Starsong Hill (Tiri-Kitor) | ⬜ | **preparato in anticipo** | Day 30-35 | 13-14 | +cavalleria civette |
+| 09 P3 Ghostlord | ⬜ | **preparato in anticipo** | Day 25-32 | 13-14 | 3 branch: ostile/neutralizzato/alleato |
+| 09 P3 Sabotaggio Campi Drow | ⬜ | **preparato in anticipo** | Day 30-36 | 13-14 | -Fase 0 + -75 esperimenti fungini (45 Servitori + 30 Sporeborn; 8 Guardiani Neri sopravvivono) |
+| 09 P3 Missioni Brevi CR12 | ⬜ | **preparato in anticipo** | Day 30-38 | 13-14 | — |
+| **09 P3 Battaglia Finale Rethmar** | ⬜ | **preparato in anticipo** | **Day 42** | 14 | Fase 0-4 |
 
 **Legenda**: ✅ completato · 🟡 in corso / imminente · ⬜ non iniziato · ❌ fallito · ⏸ sospeso
 
@@ -126,7 +135,7 @@ Two independent clocks drive Arc 09:
 | Giganti + Ogre + Ettin | 180 | NO PG alliance — stay with Red Hand |
 | Forze Alate (Manticore, Wyvern, Hell Hounds, Chimera) | 140 | |
 | Casters Mano Rossa (War Adepts, Blue, Warpriests di Tiamat) | 55 | |
-| **Dragons (5 AP-original upscaled)** | 5 | Abithriax (Red adult) / Regiarix (Black young, Rhest) / Ozyrrandion (Blue, Tower) / **Tyrgarun (Blue Old, CR 18 — sky-terror of the battle, NOT Azarr Kul's mount, D11 v2)** / **Fauci di Palude** (Black adult, Hammerfist vanguard) |
+| **Dragons (5 AP-original upscaled)** | 5 | Abithriax (Red adult) / Regiarix (Black young, Rhest) / Ozyrrandion (Blue, Tower) / **Tyrgarun (Blue Old, CR 18 — sky-terror of the battle, NOT Azarr Kul's mount, D11 v2)** / **Fauci di Palude** (Black adult, Hammerfist vanguard — **conditional branch, D10, not yet resolved**: default = flees gravely wounded, may return later as a narrative hook, not guaranteed at Rethmar; PG-kill branch = dies at Hammerfist, −1 dragon, see §2.3) |
 | **Draconic spawn = Razorfiend (Tiamat colors)** | 8 | Assigned to Wyrmlord villains upscaled |
 | Compagnia Drow di Sonjak | 305 | |
 | Githyanki di Vaereth | 375 | |
@@ -135,9 +144,15 @@ Two independent clocks drive Arc 09:
 | **Compagnia del Teschio Nero** (umani malvagi mercenari, Thay/Mulhorand) | 650 | NEW 2026-05-05 |
 | **BASELINE TOTAL** | **~9,900** | ≈ 10,000 ✓ |
 
-**Post-Hammerfist losses (Day 19 sync):** −500 (Fauci di Palude detachment
-annientato/disperso; does NOT rejoin main body). Current active:
-**~9,400**.
+**Post-Hammerfist losses (Day 19 sync, default victory scenario — piano
+ARC-08 D11):** **−900** total (900-strong Hammerfist vanguard: ~500
+morti + ~400 dispersi in rotta; i dispersi NON si ricongiungono
+all'orda principale). Same figure as
+`00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` §3 Day 19 row
+and `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md` §Day 19 —
+one total propagated everywhere (D11). Current active: **~9,000**.
+Other outcome branches (costly victory, defeat) live in piano ARC-08
+B1 (not yet written), not in this tracker.
 
 ### 2.3 Conditional Additives (apply at Rethmar if triggered)
 
@@ -152,6 +167,8 @@ annientato/disperso; does NOT rejoin main body). Current active:
 | PG sabotage Centaur/Loxo → revolt | −480 horde |
 | PG defeat Regiarix at Rhest | −1 dragon, −2 Razorfiend |
 | PG defeat Ozyrrandion at Tower | −1 dragon |
+| PG kill Fauci di Palude at Hammerfist (D10 alternate branch, before he flees under 50 hp) | −1 dragon (removed from Rethmar pool entirely) |
+| Fauci di Palude flees under 50 hp (D10 **default** branch — Hammerfist Schede §1 Tattiche) | No change to horde total; he is simply absent from Rethmar unless a later narrative hook brings him back (piano ARC-08 C2/EVENT-DECK, not yet written) |
 
 **Worst-case horde at Rethmar:** ~12,700 | **Best-case (all PG
 sabotages):** ~7,200
@@ -172,6 +189,13 @@ quasi certa.
 | **Druidi Cerchio Sacro + Treant Hella** | +150 | SOLO se P1B Hella ritual OK |
 | **Ghostlord redento come alleato** | +600 non-morti buoni | Branch raro |
 | Mercenari Salvatore (rischio tradimento) | ±300 | Instabile |
+
+**Nota D13 (piano ARC-08 A11)**: il Capitano Lunapiena e i suoi 12
+Ranger Elfici (Hammerfist Arc-08) sono una compagnia **indipendente**
+dell'Elsir Vale — **NON** contano in questa tabella, restano di
+presidio a Hammerfist. Da non confondere con l'Alleanza Elfi Starsong
+Hill (Tiri Kitor, riga sopra) né con Lythiel Alar-Wen (Sacred Forest,
+§4).
 
 **Scenari finali (target: PG meaningfully shift balance):** questa tabella
 è la vista rapida legacy; per lo scenario **autoritativo e ricalcolato**
@@ -806,4 +830,396 @@ entries — they become campaign history.
             artefatti unici → scontri duri, non da 2 round); unico nodo lasciato
             al DM = Aura di Pietrificazione save-or-die. (4) **Cronologia B6** e
             **custode dell'uovo (C3)** approvati.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto A, task A0 (REGOLA ZERO — priorità
+            assoluta, eseguito per primo): il cruscotto §0 e l'intestazione
+            segnavano l'arco come già giocato ("00-08 ✅ completato",
+            "Sessions completed: post-Hammerfist", tutte le righe 09
+            "in arrivo/pianificato"), mentre il tavolo reale è fermo
+            all'Arco 07 (Piano della Terra, P4, IN CORSO — vedi piano
+            ARC-07 tabella G0-G6): restano da giocare la resurrezione di
+            Hella (P3B), il viaggio ai 1.000 anni fa (P5) e il raccordo
+            col Rubino (D16) PRIMA della Battaglia di Hammerfist. Nessun
+            cambio di canone di design: solo correzione del cruscotto.
+            Modifiche:
+            - §0: riga 07 → 🟡 in corso (Piano della Terra in corso,
+              livello reale 13 già raggiunto per ARC-07 D8); nuova riga
+              propria "07 P3B Resurrezione di Hella + P5 Viaggio 1.000
+              anni" ⬜ da giocare (ARC-07 D2); riga 08 → ⬜ pianificato
+              — canone preparato, NON giocato, March Clock Day 19
+              etichettato "target sync" invece che fatto compiuto; tutte
+              le righe 09 → ⬜ preparato in anticipo (erano un mix di
+              🟡/⬜ senza criterio).
+            - Intestazione: "Party APL" chiarito come da ARC-07 D8 (già
+              13 durante il Piano della Terra); "Sessions completed"
+              riscritta con il giocato reale (Forgia, Piano del Fuoco/
+              Topazio, viaggio spirituale di Hella+Durik, Piano della
+              Terra in corso) e nota esplicita che tutto l'Arco 08 e
+              l'Arco 09 in questo file sono canone preparato.
+            - `campaign/sessions/2026-05-03_session-3.md` (racconta una
+              sessione Day 19-20 post-Hammerfist mai giocata): aggiunto
+              banner "⚠️ SCRITTO IN ANTICIPO — sessione non giocata" in
+              testa, senza toccare il contenuto (resta bozza di design
+              valida per quando si giocherà davvero).
+            - `skills/rumblingstone-campaign/references/campaign-
+              coherence.md` §"Locked events": annotate le due righe
+              dell'Arco 08 (morti di Hammerfist, fuga di Fauci di
+              Palude) come canone PREPARATO — si bloccano solo quando
+              l'arco verrà effettivamente giocato, non prima.
+            Materiale narrativo/meccanico degli archi 08-09 NON toccato:
+            resta preparazione valida (piano ARC-08 A0, criterio di
+            accettazione).
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto A, sessione 2 (A7+A6): igiene
+            file, nessun cambio di canone. A7: rimosse le code
+            conversazionali AI in testa a 5 file 00_ dell'arco
+            (Schede_dei_Personaggi, SCHEDE_DI_BATTAGLIA_E_REGISTRO_
+            PERDITE, ATLANTE VISIVO ×2, battle_stats_maps-final) e da
+            un blocco di riepilogo AI in coda a
+            Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md; sostituite con
+            header standard (scopo/stato/data revisione). A6: `01_`
+            riscritto da stub generico in inglese (inventava "Castle
+            Red"/"River Styx"/"Ruins of Eldor") a scheda logistica
+            canonica dell'avanguardia di Fauci di Palude (900 unità,
+            E8): punto di distacco dall'orda al Fane di Tiamat Day 1
+            `[INFERRED]`, composizione a 4 linee + aereo + fianchi
+            (riuso Guida DM), opportunità di interferenza per il
+            gruppo di ricognizione del flashback D6 (Mappe/Hammerfist-
+            Lotto-1-Ricognizione.md), ancoraggio Day 19 (E3, rimando a
+            B6 per la cronologia completa). `03_` deprecato con banner
+            (D12), contenuto non toccato. Buco di numerazione `02_`
+            lasciato aperto per lo schema di rinomina A9.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto A, sessione 3 (A1+A2): esiti
+            Fauci di Palude e contabilità perdite riscritti come rami
+            condizionali, non fatti compiuti. A1 (D10): "Fauci morto"/
+            "Fauci escaped" trattati come fatto in 7 tracker riscritti
+            in forma condizionale a rami (default: fugge sotto 50 PF,
+            assente da Rethmar salvo ritorno narrativo non garantito;
+            alternativa: ucciso dai PG → −1 drago) —
+            `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md`
+            §4b, `Armate-COMPOSIZIONE-DETTAGLIATA.md`,
+            `Armate-CALCOLI-ESERCITI-DINAMICI.md`, questo file §2.2/§2.3,
+            `campaign-coherence.md` (5 draghi nominati),
+            `campaign-story-arcs.md` (+ mirror .github/copilot),
+            `DM-QUICKSTART-ARC09.md`, `Arco-Post-Hammerfist-P3-
+            BATTAGLIA-FINALE-ARMATE-SYNC.md`. Statblock di Fauci
+            (Hammerfist Schede §1) annotato con lo stesso ramo +
+            rimando esplicito al carry-over ARC-07 B4 (A12, non ancora
+            consegnato — nessun valore anticipato). Non toccato: la
+            "battaglia antica" di ARC-07 P5/P6 (Fauci GS 12, ancestor
+            duel) — cross-arc residuo di competenza del piano ARC-07
+            A2/A3, non di questo lotto.
+            A2 (D11): due aritmetiche divergenti (questo file diceva
+            "−500 → ~9.400", il ledger diceva "−900 → 8.610")
+            riconciliate sul numero canonico **−900** (~500 morti +
+            ~400 dispersi che non si ricongiungono, già coerente con
+            Mappe/Hammerfist-Lotto-1-Ricognizione r.192 "conta precisa
+            900" e Atlante-Mappe r.1034/1053 "400 superstiti"). Questo
+            file §2.2 corretto a **~9.000** attivi post-Day 19; stessa
+            cifra propagata con breakdown esplicito (500+400) in
+            Armate-SINCRONIZZAZIONE-CAMPAGNA §3 r.81,
+            Armate-CALCOLI-ESERCITI-DINAMICI §3, e ARMATE-SYNC ARC-09
+            riga Day 19. Non toccata la matrice scenari Day 42 "vista
+            rapida legacy" (§2.4 r.197 + mirror DM-QUICKSTART-ARC09 +
+            Armate-CALCOLI): resta un diverso checkpoint (Day 42, non
+            Day 19), già segnalata nel file come legacy in attesa del
+            ricalcolo autoritativo di ARMATE-SYNC/B1 — fuori scope per
+            questo lotto meccanico.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto A, sessione 4 (A3+A5): nessun
+            cambio di canone di trama, solo XP/terminologia. A3 (D9):
+            la sezione "RIASSUNTO XP E RICOMPENSE" (duplicata in
+            `hammerfist_encounters-...-final.md` e nella Guida DM
+            Appendice C) prometteva 34.400 XP totali (8.600/PG),
+            "abbastanza per portare PG da 13° a 15°" — contraddice D9
+            (party arriva ED esce al 13°, Hammerfist lo consolida).
+            Riscritta in entrambi i file: Sessioni 1-2 + prima metà
+            Sessione 3 ("Ultima Resistenza") = **zero PX** ai Rumbling
+            Stones (si giocano coi pregen, D6) con bonus da quantificare
+            in B1 (non ancora scritto); solo da metà Sessione 3
+            ("Rumbling Stones", passaggio di testimone) e Sessione 4 i
+            PG reali maturano PX, dosati a **7.200 XP totali (1.800/PG)**
+            `[INFERRED — proposta conservativa, da verificare al tavolo
+            contro la XP reale bancata dal party]`, esplicitamente non
+            sufficienti per il 14°. Aggiunta nota di verifica EL
+            (finale dichiarato EL 20 su APL 13, oltre il precedente
+            ARC-06 EL 17 — verifica completa rimandata a B5).
+            A5: terminologia 5e/inglese ripulita nei file `Mappe/`:
+            34 occorrenze `DC n` → `CD n`; skill inglesi (Spot, Hide,
+            Climb, Balance, Strength) → nomi italiani 3.5 (Osservare,
+            Nascondersi, Scalare, Equilibrio, Forza) nei check
+            meccanici; 3 "advantage" colloquiali riformulati in bonus
+            di circostanza espliciti. Non toccata la prosa descrittiva
+            mista IT/EN pura (es. "nowhere hide" come flavor text) né
+            il contenuto di `03_` (deprecato con banner, D12, contenuto
+            non toccato per policy A6) — fuori scope per questo lotto
+            terminologico.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto A, sessione 5 (A8): quattro
+            generazioni di atlante + due generazioni di mappe tattiche
+            consolidate, nessun cambio di canone di trama. Eletto
+            `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` **master
+            visivo** (17 mappe dopo la migrazione, sotto); i tre
+            `Hammerfist-L{1,2,3}-REVISED-Ultra-Clear.md` restano
+            **master tattici** ma solo per le 3 mappe a griglia
+            ultra-precisa che coprono (1A-2, 2A, 3X/H3-1) — non
+            deprecati, categoria diversa (non sovrapposti). Banner
+            DEPRECATED (D12) su 6 file superati: `00_battle_stats_
+            maps-final.md`, `00_ATLANTE VISIVO...md`, `00_ATLANTE
+            VISIVO...-complete.md`, `Mappe/Hammerfist-Lotto-{1,2,3}-
+            *.md`. Scoperta e sanata una lacuna reale: **MAPPA 3Y "Il
+            Ponte Sospeso"** esisteva solo nelle generazioni (b)/(c)
+            deprecate e MAI nel master — migrata nel master tra 3X e
+            3Z (17ª mappa) prima di deprecare le fonti, per non perdere
+            contenuto. Matrice di contenuto (mappa × file × stato)
+            aggiunta in testa al master. Riferimenti attivi ripuntati:
+            `ARC08-04-MARCIA-MANO-ROSSA.md` (scritto in A6,
+            puntava ai Lotto-N deprecati) e la lista file Arc-08 di
+            `campaign-history.md`.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto A, sessione 6 (A4, sui soli
+            master post-A8): il master visivo dichiarava scale
+            incoerenti ("1 quadrato = 3 metri" su alcune mappe, "Grid
+            già ottimizzato standard D&D 1,5m" nel riepilogo finale —
+            falso, mai stata una griglia uniforme). Corretto senza
+            ridisegnare le griglie ASCII (rischio di disallineare
+            distanze già citate nel testo — soffio, portate,
+            velocità): le 6 mappe tattiche a scala 2m/3m (1A-1, 1A-2,
+            2A, 3X, 3Z, 5) ora portano un flag esplicito di deviazione
+            dalla convenzione repo (1,5m); le 10 viste non-griglia
+            (strategiche/schematiche/cinematiche/architettoniche) ora
+            dichiarano esplicitamente "NON è una griglia di
+            combattimento"; MAPPA 3Y (migrata in A8) era già a 1,5m,
+            nessuna modifica. Riepilogo finale del master corretto
+            (16→17 mappe; rimossa l'affermazione falsa di griglia
+            uniforme 1,5m). I tre master tattici `L{1,2,3}-REVISED-
+            Ultra-Clear` erano già coerenti a 1,5m/quadrato, nessuna
+            modifica necessaria.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto A, sessione 7 (A10+A11): audit
+            di refusi, nessun cambio di canone di trama. A10 (D2):
+            audit occorrenza-per-occorrenza di Thorin/Thorik/Thorek nel
+            master `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` (52
+            occorrenze totali). Trovati e corretti: "Thorik (PG)" nella
+            scena del soffio di Sessione 2 (era ancora la fase pregen,
+            D6 — non è "PG" lì, solo "Thorin"); l'epiteto spurio
+            "Thorik SkullDark" (4 occorrenze — conflazione col nome
+            deprecato dell'antenato drago, già corretto altrove in
+            ARC-07 D6 a "Skullcrusher") rimosso, resta solo "Thorik".
+            Scoperto e sanato un secondo problema mentre si leggeva la
+            scena: il duello finale Thorik vs Fauci era scritto come
+            uccisione certa ("Killing Blow", "Drago collassa 0 HP"),
+            violando il ramo condizionale D10 (A1) — riscritto a rami
+            (default: fugge sotto 50 PF; alternativo: ucciso se i PG
+            lo bloccano attivamente). Nota di disambiguazione
+            "Thorin=pregen, Thorik=PG, Thorek=re" aggiunta in testa ai
+            2 file master (Atlante mappe + Schede dei Personaggi).
+            A11 (D13): compagnia del Capitano Lunapiena dichiarata
+            esplicitamente indipendente/Elsir Vale, di presidio a
+            Hammerfist, NON sommata ai difensori di Rethmar — nota
+            aggiunta allo statblock (Schede §2), alla sezione PNG
+            della Guida DM, a state.md §2.4, e come regola di coerenza
+            esplicita in ARMATE-SYNC ARC-09 §7 (prima l'esclusione era
+            solo implicita per omissione). Verificato che la Cerimonia
+            delle 100 Asce già usa solo Lythiel, nessuna fusione dei
+            due comandi elfici.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto A, sessione 8 (A9, parziale) —
+            CHIUSURA DEL LOTTO A (A1-A11 completati; A12 resta
+            bloccato su ARC-07 B4, non ancora consegnato). Nessun
+            cambio di canone di trama, solo `git mv` + fix link.
+            Rinominati con `git mv` (schema `ARC08-NN-SLUG.md`) gli 8
+            file che avevano il buco di numerazione 00_/01_/03_
+            (mancava 02_) e nomi con spazi/maiuscole miste: i 4 file
+            00_ ancora canonici → `ARC08-01-GUIDA-DM.md`,
+            `ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md`,
+            `ARC08-03-REGISTRO-PERDITE.md`; `01_MANO_ROSSA...` (A6) →
+            `ARC08-04-MARCIA-MANO-ROSSA.md`; i 3 file 00_ deprecati
+            (A8) + il 03_ deprecato (A6) → `ARC08-9{0,1,2,3}-
+            DEPRECATO-*.md` (numerazione alta = fuori dal percorso di
+            lettura attivo, banner invariati). Aggiornati TUTTI i
+            riferimenti repo-wide trovati (12 file in 07_/08_/09_/PNG/
+            campaign/, incluse forme abbreviate con "…" non catturate
+            dal primo giro di sostituzione automatica). **Scope
+            ridotto rispetto al piano**: NON rinominati
+            `hammerfist_encounters-...-final.md`, `Cerimonia-delle-
+            100-Asce.md`, `mass_combat_guide_Dm.md`,
+            `combat_prompts_guide.md`, né i file di `Mappe/` — questi
+            non hanno il problema di numerazione (nessun prefisso
+            00_/01_/03_), e includerli avrebbe moltiplicato il rischio
+            di rompere riferimenti repo-wide per un beneficio
+            marginale; lasciati per una passata dedicata (coordinabile
+            con B7/INDICE). `ARC08-00-INDICE.md` (esempio del piano)
+            **riservato** per il deliverable di B7, non creato ora
+            (nessun file riempitivo). Rinomina immagini e cartella
+            `immage_campaign/` NON eseguita, come da istruzione esplicita
+            del piano (dopo la tabella immagine→mappa, C3).
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto B, sessione 9 (B1): contenuto di
+            modulo nuovo, non stato del mondo. Creato
+            `08_.../ARC08-10-ESITI-E-CONTINGENZE.md`: (1) i tre scenari
+            d'esito — vittoria piena (default E1-E8, numeri D11),
+            vittoria costosa (<50 superstiti / Re Thorek morto
+            [INFERRED]), caduta di Hammerfist (evacuazione Passaggi
+            Antichi, orda +600 a Rethmar [INFERRED]) — ciascuno con
+            delta numerici agganciati ai tracker; (2) i rami
+            condizionali di Fauci (D10) col gancio al carry-over ARC-07
+            B4 (A12, non ancora consegnato — nessun valore anticipato);
+            (3) la **tabella di conversione D9** flashback pregen→bonus
+            (Sessioni 1/2/3a × obiettivi pieno/parziale/fallito →
+            intel, posizioni, PNG vivi, −CR, morale — MAI PX), con
+            regola di somma e mappatura ai tre esiti. Sezione
+            "Conseguenze a lungo periodo" lasciata come rimando a C2
+            (Lotto C, non ancora scritto). Nessun esito dichiarato come
+            fatto: tutto preparazione a rami (coerente con A0).
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto B, sessione 10 (B6+B2):
+            contenuto di modulo nuovo, non stato del mondo. B6: creato
+            `ARC08-12-CRONOLOGIA-MARCH-CLOCK.md`, la cronologia
+            condivisa Day X→19 (flashback pregen ~settimane prima →
+            assedio Day 16-18 → riemersione RS Day 18-19 = Giorno 3
+            d'assedio → vittoria Day 19 → Cerimonia Day 21). Tre
+            riconciliazioni tra file che divergevano: (a) Cerimonia =
+            **Day 21** (dal file canonico Cerimonia §7), non Day 19 come
+            proponeva genericamente il piano B6; (b) "Giorno 3
+            dell'assedio" (conteggio locale) ≠ March Clock Day 3;
+            (c) finestra ricognizione pregen [INFERRED] (D6 "qualche
+            settimana" vs proposta B6 "Day 12-16"). B2: creato
+            `ARC08-11-PONTE-ARRIVO.md` (snello), la cucitura D16 finora
+            mancante — puntatore al master P3B ARC-07 (NON riscritto;
+            stato in uscita dalla fonte stabile state.md §1/§6 + D8),
+            correzione esplicita su P5-DEF §4.3 (che faceva atterrare i
+            PG nella Sala della Forgia; D16, più recente, li fa
+            riemergere al Cuore della Montagna Giorno 3 — D16 vince), e
+            regia del passaggio pregen→PG (D6) con uno spotlight per
+            ciascun PG (Durik incluso, terzo seme della Collana).
+            Bonus del flashback rimandati alla tabella B1 §5 (mai PX,
+            D9). Aggiornato il rimando in ARC08-04 (marcia) alla
+            cronologia B6 ora esistente. Nota: B2 marcato completo
+            nonostante il flag "attende ARC-07 B2" — il ponte usa lo
+            stato in uscita bloccato in state.md/D8, non la prosa del
+            master P3B (che ARC-07 B2 rifinirà); il pointer narrativo
+            potrà guadagnare dettaglio, la cucitura no.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto B, sessione 11 (B7): contenuto
+            di modulo nuovo, non stato del mondo. Creato
+            `ARC08-00-INDICE.md`: posizione nella campagna (dopo ARC-07
+            D2/D16, sync Day 19), struttura a due tempi D6/D9 con
+            disambiguazione nomi D2, ordine di lettura per il DM (10
+            passi), cosa stampare, tabella file→ruolo→stato (canonici /
+            deprecati / servizio, dalla matrice A8), elenco deliverable
+            ancora da produrre (B3/B4/B5/C1-C4/A12), nota
+            branch-per-group. Riempie il buco di numerazione 00_ (dopo
+            A9) col deliverable previsto, senza file riempitivi.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto B, sessione 12 (B5): verifica
+            meccanica 3.5, correzioni in place + nuovo file registro.
+            Creato `ERRATA-ARC08-35-Verification.md`. Correzioni
+            applicate in `ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md`:
+            (1) Cavaliere Hobgoblin (Guerriero 8/Guardia Nera 2) —
+            Punire il Bene "2/giorno … +10 danni" → **1/giorno, +2
+            danni** (il bonus è il livello di Guardia Nera, non il
+            livello personaggio; 2/giorno solo dal 5°); Aura di
+            Disperazione RIMOSSA (si ottiene al 3° liv GN) e sostituita
+            con Attacco Furtivo +1d6 (feature reale del 2°); (2) Fauci
+            di Palude — "Soffio a Cono 1/giorno" flaggato **house-rule**
+            (i draghi neri SRD hanno solo il soffio in linea; mantenuto
+            per la scena della picchiata, alternativa SRD indicata). I
+            4 pregen verificati e dichiarati stampabili (nessun
+            5e-ismo, math coerente, tolleranze [INFERRED] minori). Il
+            sistema di massa AU/DU/PFU/Morale verificato compatibile
+            con l'action economy 3.5. Gear di Tordek già coerente con
+            D17 (unica menzione in ARC-08 è nel ponte B2). Non
+            modificati gli statblock estesi dei PNG maggiori nella
+            Guida DM (fuori dal campione B5; li coprono B3 + eventuale
+            passata dedicata).
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto B, sessione 13 (B3): 13 schede
+            PNG create in `PNG/` (file piatti, formato AGENTS.md
+            Role/Status/Location/Motivation/CR/Key stats/Notes + campo
+            "esiti possibili"), stat **puntate** alle appendici (fonte
+            unica), non duplicate. Nemici: Fauci_di_Palude (rami D10),
+            Generale_Grimjaw, Gorthak_il_Trifronte. Alleati:
+            Re_Thorek_Hammerfist (default vive / vittoria costosa
+            muore, B1 §2), Dana_Forgiapietra, Capitano_Lunapiena (D13
+            indipendente), Signore_Ventolesto, Orion_Pelleorsa. Pregen
+            (D14): Borin_Ferropugno, Dara_Occhiolesto, Thorin_Runaforte,
+            Nala_Cantapietre. Più Khorn (D5, 150 lance, stat [INFERRED]
+            — non nelle appendici). INDICE (ARC08-00) aggiornato con la
+            tabella del cast. Scelta: file piatti in PNG/ (precedente
+            Il_Collezionista_Rakshasa.md) invece di 13 sottocartelle,
+            per non moltiplicare entry filesystem per schede snelle.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto B, sessione 14 (B4) — CHIUSURA
+            DEL LOTTO B (B1-B7 completati; A12 resta bloccato su ARC-07
+            B4). Creato `ARC08-13-TESORO-WBL-AUDIT.md` (gemello
+            dell'audit ARC-09): il party resta al 13° (D9), quindi
+            Hammerfist **consolida** il WBL del 13° (110k mo/PG), non lo
+            supera. Tabella tesoro per fonte in stile Paizo (gratitudine
+            di Re Thorek, armeria, bottino avanguardia, gear dei
+            comandanti condizionale, tesoro di Fauci solo nel ramo
+            "ucciso"; runa dei Custodi = plot item, 0 mo). Riconciliata
+            la "ricompensa 50k/PG" della Guida DM come **top-up al 13°
+            WBL**, non "+50k su un party già pieno" (che sforerebbe
+            verso il 14°, contro D9). Handoff esplicito: ricchezza
+            d'uscita ARC-08 = ingresso ARC-09 (~110k/PG), il numero già
+            assunto da `09_.../TESORO-WBL-AUDIT.md` §1.2. Ricchezza
+            d'ingresso ARC-08 marcata [INFERRED] (dipende da quanto
+            bancato in 01-07). INDICE aggiornato (B4/B5 nella tabella
+            canonica; numerazione §7 corretta).
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto C, sessione 15 (C1): sistema di
+            combattimento di massa consolidato in fonte unica.
+            `mass_combat_guide_Dm.md` eletto **fonte normativa**. Sanato
+            un conflitto reale: il master usava un motore **2d6** (PF
+            1-10), mentre `ARC08-02` §4 usa **AU/DU/PFU (1d20)** — ed è
+            quest'ultimo che ARC-09 ha ereditato (STRUTTURA §9) e che B5
+            ha verificato 3.5-compatibile. Riconciliazione: dichiarata
+            **canonica la risoluzione AU/DU/PFU (1d20)**; il 2d6 resta
+            come variante rapida opzionale esplicitamente flaggata (con
+            tabella di mappatura tra i due). Aggiunto in fondo al master
+            il **raccordo con ARC-09** (cosa STRUTTURA §9 ha ereditato:
+            unità/PFU/morale/spotlight/danni strutturali; cosa ha
+            cambiato: VP nascosti "il Fronte", eventi scelti via
+            EVENT-DECK, ruoli di comando, check morale per ondata — la
+            massa da primo piano a Hammerfist diventa sfondo a Rethmar).
+            Le altre 3 copie ora puntano al master: `ARC08-02` §4
+            (quick-reference), Guida DM Appendice A, `ARC08-03`
+            (registro di tracciamento). INDICE aggiornato.
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto C, sessione 16 (C2): aggiunta
+            la sezione "Conseguenze a lungo periodo" a
+            `ARC08-10-ESITI-E-CONTINGENZE.md` §6 (sostituito il rimando
+            placeholder). Tabella echi in formato ARC-09 (evento → eco
+            → quando riemerge → file), con varianti per ramo d'esito:
+            Fauci fugge (nemesi) / uovo di Fauci (ARC-07 C3, eco
+            gemella) / Fauci ucciso / runa dei Custodi / 150 lance /
+            pregen D14 / raid drow → Fase 0 Rethmar / Lunapiena
+            presidio. **Runa dei Custodi Eterni quantificata**
+            [INFERRED]: +2 di circostanza Diplomazia coi nani del Vale +
+            ospitalità/armeria a Hammerfist + riconoscimento PNG; NON
+            magica, 0 mo WBL. Proposta (solo hook+puntatore) della
+            carta S2 "Il Ritorno di Fauci di Palude" per l'EVENT-DECK
+            ARC-09 (ramo default D10). Nessun eco contraddice gli HOOKS
+            ARC-09; EVENT-DECK ARC-09 non modificato (solo proposto).
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto C, sessione 17 (C3): atlante
+            immagini. Cartella `08_.../immage_campaign/` → **`immagini/`**
+            (git mv, typo corretto); aggiornate le 2 referenze vive
+            (INDICE, campaign-history.md ×2). Le voci di changelog
+            precedenti che citano "immage_campaign" restano intatte
+            (append-only, storiche). Creato
+            `ARC08-14-ATLANTE-IMMAGINI.md`: classificazione delle ~42
+            webp (immagine → mappa/scena → sessione → prompt d'origine
+            → quando mostrarla → nome suggerito). 28/42 pinnate a un
+            master preciso a vista (visionate ~19 + 6 nomi descrittivi +
+            4 varianti bis); 14 "generazioni October 2025" classificate
+            al gruppo (mappe/scene dell'arco, campione confermato
+            fortezza 2A / torrione 1A-2 / drago / finale) → 100% a
+            gruppo, ~67% pin preciso. Aggiunti i puntatori alle
+            immagini reali su 9 voci del master visivo
+            (`Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md`: 1A-1, 1A-2,
+            1A-3, 2A, drago, 3X, 3Y, 5, finale). Rinomina dei singoli
+            file allo schema `hammerfist-sNN-*` **differita** (nessun
+            .md li referenzia per nome → passata dedicata a basso
+            rischio, dopo il pin a vista delle 14 generazioni).
+2026-07-02  PIANO-REVISIONE-ARC08 Lotto C, sessione 18 (C4) — CHIUSURA
+            DEL LOTTO C e dell'intero piano ARC-08 (A0-C4 completati;
+            resta solo A12, bloccato su ARC-07 B4). Creato
+            `ARC08-15-HANDOUTS-GIOCATORE.md` (gemello dell'ARC-09
+            HANDOUTS): (1) i 4 pregen "Eroi di Hammerfist" resi
+            stampabili 1 pagina l'uno, giocabili senza aprire i file
+            00_/ARC08-01/02 (stat verificate B5); (2) la runa dei
+            Custodi Eterni (descrizione + effetto C2 §6.2 + prompt
+            immagine); (3) il canto della cantillazione ("ricordato…"
+            + Giuramento delle 90); (4) la mappa giocatore della
+            fortezza (versione lato giocatore della MAPPA 2A, privata
+            di tunnel segreto/imboscate/meccanismi — nessuna info lato
+            DM). Ogni handout con "quando darlo". INDICE aggiornato
+            (ARC08-14/15 nella tabella canonica; §6 riscritta a "Lotti
+            A/B/C completati", resta solo A12 + coda C3 non bloccante).
 ```

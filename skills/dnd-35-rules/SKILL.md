@@ -2,21 +2,25 @@
 name: dnd-35-rules
 description: >
   Meta-router skill kept for backwards compatibility. Real content was split
-  into three focused skills: dnd-35-srd (mechanics), forgotten-realms-lore
-  (1372 DR setting), and rumblingstone-campaign (this campaign). Trigger words
-  identical to those three skills combined.
+  into focused skills: dnd-35-srd (mechanics), forgotten-realms-lore
+  (1372 DR setting), rumblingstone-campaign (this campaign),
+  pathfinder-1e-srd (PF1e rules + conversion), and npc-villain-boosting
+  (boost/advance NPCs, villains, monsters). Trigger words identical to those
+  skills combined.
 ---
 
 # D&D 3.5 Rules — Meta Router
 
 This skill is a routing entrypoint. The actual reference content was split into
-three skills so agents only load what's relevant:
+focused skills so agents only load what's relevant:
 
 | If the question is about... | Load skill |
 |---|---|
 | Pure 3.5 mechanics, SRD rules, generic d20 | `dnd-35-srd` |
 | Forgotten Realms canon (1372 DR), deities, regions, factions | `forgotten-realms-lore` |
 | RumblingStone campaign, the four PCs, custom artifacts, current arc | `rumblingstone-campaign` |
+| Pathfinder 1e rules, PF↔3.5 conversion, simple templates, CR benchmarks | `pathfinder-1e-srd` |
+| Boosting/advancing a PNG, villain, or monster ("too easy", "upscale", "potenziare") | `npc-villain-boosting` |
 
 Most questions need exactly one of the three. A typical campaign-prep
 question may need all three — load them in this order:

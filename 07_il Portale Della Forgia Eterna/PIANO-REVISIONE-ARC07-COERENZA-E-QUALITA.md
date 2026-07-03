@@ -741,7 +741,8 @@ la checklist qui sotto.
 
 - [x] A1 · [x] A2 · [x] A3 · [x] A4 · [x] A5 · [x] A6 · [x] A7 ·
   [x] A8 · [x] A9 · [x] A10 · [x] A11 — **LOTTO A COMPLETO**
-- [~] B1 (log ricostruiti; attende intervista DM) · [x] B2 · [x] B3 ·
+- [~] B1 (log ricostruiti; compagno sciolto dal DM; restano date/XP/loot
+  reali) · [x] B2 · [x] B3 ·
   [x] B4 · [x] B5 · [x] B6 · [x] B7 · [x] B8 · [x] B9 — Collana ✅,
   file-risultati ✅, Sonjak-raid ✅, schede Belkram/Urialle ✅, Cintura ✅
 - [x] C1 · [x] C2 · [x] C3 — **LOTTO C COMPLETO**

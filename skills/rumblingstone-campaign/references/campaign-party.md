@@ -122,8 +122,13 @@ Current party level: **13** | Party size: **4 PCs**
 - Viaggio Onirico gifts (variable based on trial outcomes): Marchio della Veritade, perception abilities, Via della Guardia (DR 2/—) or Via della Radice (Resist Cold 15 + Regen on sacred ground)
 - Primary healer via Cure spells and Wand of Cure Moderate Wounds
 - Augment Summoning + Natural Spell + Power of Nature for powerful summons while wild-shaped
-- Animal companion: Advanced Brown Bear (corteccia parziale from Treant affinity)
-- Durik (supernatural companion): Magical Beast with DR 5/Adamantine, Tremorsense 18m, telepathic link with Hella within 18m
+- **Wild Shape**: among her forms is a **stone rhinoceros** — this is Hella
+  herself transformed, NOT a separate creature (DM clarified 2026-07-03)
+- **Animal companion: Durik** — male dog, **reforged** into a Stone Guardian
+  (Magical Beast, DR 5/Adamantine, Tremorsense 18m, telepathic link within
+  18m) and **evoked via the 3rd seed of the Collana dei Semi Eterni**. (The
+  earlier "Advanced Brown Bear" was her pre-death companion; post-resurrection
+  the companion is Durik.)
 - Caster level: **12** (Druid only; Ranger 1 does not add to druid CL)
 
 ---

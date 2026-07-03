@@ -28,7 +28,7 @@
 | Incontro | GS | XP/PG (party 3 PG, APL eff. 12) | Note |
 |---|---|---|---|
 | Elder Fire Elemental (P3) | 14 | ~4.200/PG `[INFERRED]` | GS = APL+2, "impegnativo" |
-| Terros / Golem di Mithral (P4) | **target 14-15** (non 16) | ~4.200-4.800/PG | ricalibrato D15 (sotto) |
+| Terros / Golem di Mithral (P4) | **CR 15+ "Hard"** (power-up voluto, D8) | ~4.800-6.000/PG | tienilo duro (§2.2) |
 | Zog'tar (P5) | 14 | ~4.200/PG | risoluzione veloce (fast-play) |
 | Skullcrusher (P5) | 12 | ~2.700-2.925/PG (party 4, APL 13) | Hella è tornata → 4 PG |
 
@@ -48,17 +48,19 @@
   potenziata dell'arco (RicalibrazioneScontri) alza i numeri: **dichiarare
   esplicitamente Touch/Flat-footed/BAB/Lotta** se si usa la versione avanzata.
 
-### 2.2 Terros / Golem di Mithral (P4) — RICALIBRAZIONE D15
+### 2.2 Terros / Golem di Mithral (P4) — POWER-UP VOLUTO (DM 2026-07-03)
 - ⚠️ `Terros.md` era tarato su "Livello 14, 3 PC + Therysol". **Canone
-  D8/D15**: **3 PG di 13°, NESSUN supporto → APL effettivo 12**. Conseguenze
-  già scritte in `Terros.md` (analisi CR): **target CR 14-15** (non 16); i
-  problemi dello statblock RICALIBRATO (PF 380, RD 15/—, Attacco +32, Aura di
-  Pietrificazione CD 24 senza guaritore) vanno **abbassati**:
-  - PF ≈ 228-260 (Elder Earth base + avanzamento moderato), **RD 10/—**,
-    Attacco ≈ +27, danno 2d10+11, **rimuovere l'Aura di Pietrificazione**
-    (drenaggio DES = save-or-die senza Hella) o renderla non permanente.
-  - Max 4 poteri speciali, non 6 (no "lair actions" 5e). Dettaglio già in
-    `Terros.md` §3/§5.
+  D8/D15**: **3 PG di 13°, NESSUN supporto → APL effettivo 12**. MA il
+  **power-up è VOLUTO** (D8: artefatti unici e potentissimi): **tienilo duro**,
+  **target CR 15+ ("Hard")** — NON depotenziarlo per far quadrare l'APL.
+- **Igiene 3.5** (non depotenziamento): dichiara esplicitamente
+  **Touch/Flat-footed/BAB/Lotta**; evita i termini 5e (max poteri speciali
+  "puliti", niente "lair actions"). PF/RD/attacco possono restare alti se è
+  ciò che serve per non chiudere in 2 round.
+- **Unico nodo da decidere (DM)**: l'**Aura di Pietrificazione** (drenaggio DES
+  = *save-or-die* **senza guaritore**, Hella morta nel P4). Il DM sceglie:
+  **tenerla letale** (coerente col power-up voluto) oppure renderla **non
+  permanente** (debuff forte ma recuperabile). Dettaglio in `Terros.md` §3/§5.
 
 ### 2.3 Skullcrusher il Nero (P5, duello) — GS 12
 - Statblock giocabile nel `PortaleForgia-P5-FASTPLAY.md`: Drago Nero Adulto

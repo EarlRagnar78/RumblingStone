@@ -6,11 +6,13 @@
 > **Equilibrio**, Concentration = **Concentrazione**, Spellcraft = **Sapienza
 > Magica**. Il corpo tecnico resta inglese.
 
-> **Stato (A6)**: *ricalibrazione* del boss del P4 (Terros/Mithral Golem) —
-> ricalibra `PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md` (master).
-> ⚠️ Questo file assume "3 PC + 1 NPC Therysol Support": **sbagliato** (D15 —
-> Therysol veglia il corpo di Hella; composizione reale = **3 PG di 13°, zero
-> supporto**). Va ricalibrato su D15/D8 nei task **A5/B5**. Vedi
+> **Stato (A6, confermato DM 2026-07-03)**: **statblock del boss del P4**
+> (Terros/Golem di Mithral) — parte del **master di combattimento** insieme a
+> `PortaleForgia-P4-PianoTerra-RICALIBRATO.md`; cornice narrativa in
+> `...-COMPLETO-alternative.md`. Il **power-up è VOLUTO** (D8: artefatti unici →
+> scontri duri, non da 2 round). ⚠️ Correggi la **base**: "3 PC + Therysol
+> Support" è sbagliato (D15: 3 PG, niente Therysol) e il livello è **13°** (non
+> 14) — cambia l'APL, non l'intento di tenerlo tosto. Dettagli A5/B5. Vedi
 > `ARC07-MATRICE-VERSIONI.md`.
 
 ## Analysis Context
@@ -30,9 +32,16 @@
 | **Effective Party Strength** | **~3 PC** (nessun PNG di supporto) |
 | **APL Calculation** | 3 PG di 13° = APL 13 − 1 (for 3-man) = **effective APL 12** |
 
-> Conseguenza: con **APL effettivo 12** (più debole di quanto stimato prima),
-> il CR-target va abbassato di conseguenza — la vecchia analisi "CR 16 troppo
-> alto per APL 13" vale a maggior ragione. Numeri finali in B5.
+> **Intento del DM (2026-07-03)**: il **power-up è VOLUTO** — i PG hanno
+> **artefatti unici e potentissimi** (D8), quindi lo scontro deve **mettere
+> davvero alla prova** e non finire in 2 round. Quindi: **NON depotenziare**
+> il boss per "far numero" con l'APL 12. Tienilo **duro (target CR 15+,
+> "Hard")**, sfruttando che gli artefatti compensano l'assenza di Hella.
+> **L'unico vero problema 3.5 da decidere** è l'**Aura di Pietrificazione**
+> (drenaggio DES = *save-or-die* **senza guaritore**, Hella morta nel P4):
+> il DM sceglie se **tenerla** (letale, come voluto) o renderla **non
+> permanente** (debuff forte ma recuperabile). Il resto dei poteri resta
+> tosto. Numeri di dettaglio in B5.
 
 ---
 

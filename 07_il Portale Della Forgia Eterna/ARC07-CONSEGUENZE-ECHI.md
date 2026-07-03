@@ -5,7 +5,9 @@
 > ARC-09 (**evento → eco → quando riemerge → file che lo gestisce**), con
 > **varianti per esito del duello** con Skullcrusher (P5). Cross-link alla
 > **tabella echi ARC-08 (C2)** perché **uovo** e **Rubino** attraversano
-> entrambi gli archi. Valori/collocazioni `[INFERRED — needs DM confirmation]`.
+> entrambi gli archi. Collocazione dell'uovo (§3) **approvata dal DM
+> 2026-07-03**; le varianti di tono del Rubino (§2) sono colore RP a
+> discrezione del DM.
 
 ---
 
@@ -37,10 +39,9 @@ della Corona** — eco narrativa, distinta dal carry-over **meccanico** B4:
 
 ---
 
-## 3. L'UOVO — CUSTODE DESIGNATO `[INFERRED — needs DM confirmation]`
+## 3. L'UOVO — CUSTODE DESIGNATO ✅ approvato DM (2026-07-03)
 
-L'hook dell'uovo (P6) non dice **dove** sia né **chi lo covi**. Proposta
-dell'engine, da validare:
+Collocazione dell'uovo (hook P6), **approvata dal DM**:
 
 - **Dove**: un covo di palude isolato nei **Blackfens**, lontano dalla linea di
   marcia dell'orda — sopravvive alla battaglia di Hammerfist.

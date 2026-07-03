@@ -62,8 +62,8 @@ Assolutamente. Ecco il documento unificato, "LA BATTAGLIA DI HAMMERFIST - APPEND
 > modifica questo statblock — PF, CD del soffio/Presenza, iniziativa, soglia
 > di ritirata e bonus dei portatori d'artefatto. **Applicare la tabella prima
 > della battaglia**: `07_.../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`
-> (valori `[INFERRED — needs DM confirmation]`). Se il gruppo NON ha giocato
-> il P5, usa lo statblock qui sotto invariato.
+> (valori **approvati dal DM 2026-07-03**). Se il gruppo NON ha giocato il P5,
+> usa lo statblock qui sotto invariato.
 **NM Drago Enorme (Acqua)**
 **Iniziativa:** +4; **Sensi:** Vista Cieca 18m, Scurovisione 36m, Visione Crepuscolare; Ascoltare +29, Osservare +29
 

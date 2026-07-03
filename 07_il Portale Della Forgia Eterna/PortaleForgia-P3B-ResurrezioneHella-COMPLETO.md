@@ -61,14 +61,13 @@
   Hella torna per essere il 4° PG del **viaggio P5** e della battaglia antica.
 - Classe di Hella per il canone: **Dream Dwarf Ranger 1 / Druida 12** (CL 12),
   non "Druida 13°" — vedi state.md §1 e l'errata **B5**.
-- ⚠️ `[INFERRED — needs DM confirmation]` **Compagno animale**: i file
-  divergono — `state.md §1` dice "stone rhinoceros companion",
-  `campaign-party.md` dice "Advanced Brown Bear (animal companion)" **più**
-  Durik (compagno soprannaturale dalla Collana), questo file dice "Orso
-  Bruno". Il canone giocato (risultati) fissa **Durik = cane riforgiato,
-  Guardiano di Pietra**. Va deciso dal DM se l'animal companion druidico
-  resta l'orso e Durik è il guardiano della Collana (interpretazione
-  dell'engine), o se sono la stessa creatura. Da riconciliare in **A0/B1**.
+- ✅ **Compagno animale (deciso dal DM 2026-07-03)**: l'**animal companion**
+  di Hella è **DURIK** — cane maschio, **riforgiato** in Guardiano di Pietra e
+  **evocato dal 3° seme della Collana dei Semi Eterni** (Magical Beast, DR
+  5/adamantio, Tremorsense, legame telepatico entro 18 m). Il **rinoceronte di
+  pietra** che appare in gioco è **Hella stessa in Forma Selvatica (Wild
+  Shape)**, NON una creatura separata. (L'"Orso Bruno" era il compagno
+  pre-morte; post-resurrezione il compagno è Durik.)
 
 **Sistema:** Dungeons & Dragons 3.5 Edition  
 **Quando:** dopo il **P4** (Piano della Terra), prima del **P5** (viaggio) — D2  
@@ -583,17 +582,17 @@ Party spiega (5 minuti roleplay):
 
 ---
 
-**COMPANION ANIMALE:**
+**COMPANION ANIMALE — DURIK RIFORGIATO** (cane maschio, Guardiano di Pietra):
 
-**Orso Bruno Grande (Advanced to HD 13):**
-- **HP:** 85
-- **CA:** 17
-- **Attacchi:** 2 artigli +12 (1d8+5), morso +7 (2d6+2)
-- **Capacità:** Scent, Link, Share Spells, Evasion, Devotion
-
-**Ora Potenziato Treant Hybrid Affinity:**
-- Orso ha corteccia parziale (DR 2/slashing)
-- +2 FOR (influenza Hella)
+Evocato dal **3° seme della Collana dei Semi Eterni**; aspetto "Protegge
+Hella" (mithral e pietra scura, occhi di topazio). Stat completa: viaggio v2
+§10 (12 DV).
+- **DR:** 5/adamantio · **Tremorsense** · **legame telepatico** con Hella entro 18 m
+- **Capacità:** Link, Share Spells, Evasion, Devotion; si frappone tra Hella e
+  il pericolo (aspetto "Protegge Hella")
+- Vulnerabilità al fuoco (come Hella), Resist Freddo, affinità Ibrido Treant
+- *(L'"Orso Bruno" era il compagno pre-morte; post-resurrezione è Durik. Il
+  rinoceronte di pietra è la Forma Selvatica di Hella, non un compagno.)*
 
 ---
 

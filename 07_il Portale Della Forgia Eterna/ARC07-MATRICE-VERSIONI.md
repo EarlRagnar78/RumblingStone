@@ -24,9 +24,8 @@
 | P3 — ricalibrazione scontri | `RicalibrazioneScontriPianoDelFuoco.md` | scontri ribilanciati Lv13 | *ricalibrazione* |
 | P3 — ricalibrazione finale | `La_Piramide_Ricalibrata.md` | finale P3 (Piramide) ribilanciato | *ricalibrazione* |
 | Interludio P3→P4 | `PortaleForgia-Interludio-Terra.md` | ponte narrativo | *annesso* |
-| **P4** — Piano della Terra | `PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md` | versione completa | **MASTER** `[INFERRED]` (ricalibrato ↓) |
-| P4 — ricalibrazione | `PortaleForgia-P4-PianoTerra-RICALIBRATO.md` | "Hard Mode" Lv14 | *ricalibrazione* (Lv14 superato da D8 → vedi A5) |
-| P4 — boss | `Terros.md` | ricalibrazione boss Terros/Mithral Golem (D15) | *ricalibrazione* |
+| **P4** — Piano della Terra | `PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md` | **cornice narrativa/scene** | **MASTER narrativo** (DM 2026-07-03) |
+| P4 — combat/boss | `PortaleForgia-P4-PianoTerra-RICALIBRATO.md` + `Terros.md` | **statblock potenziati (Hard)** | **MASTER di combattimento** — power-up VOLUTO (D8: artefatti unici) |
 | **Viaggio di Hella** (P4↔P3B) | `PortaleForgia-P4-PianoTerra-P3B-HELLA-...-MONDO-v2.md` | viaggio dello spirito, v2 | **MASTER del viaggio** (fonte del file risultati) |
 | Viaggio di Hella — v1 | `PortaleForgia-P4-PianoTerra-P3B-HELLA-...-MONDO.md` | viaggio dello spirito, v1 | ~~DEPRECATO~~ (sostituito da v2) |
 | Viaggio di Hella — risultati | `PortaleForgia-P4-PianoTerra-P3B-HELLA-...-MONDO-risultati.md` | esiti giocati | **CANONE** (D12) |
@@ -42,12 +41,14 @@
 
 ## Note di elezione
 
-- **P4 (Piano della Terra)** — è la parte IN CORSO al tavolo (G3). Il master
-  di combattimento è `COMPLETO-alternative` (la versione integrale);
-  `RICALIBRATO` (Lv14 "Hard Mode") e `Terros.md` sono ricalibrazioni. ⚠️ Il
-  livello reale è **13°** (D8) e la composizione è **3 PG senza Therysol**
-  (D15): `RICALIBRATO`/`Terros` vanno riportati a questo in **A5/B5**.
-  Elezione `[INFERRED — needs DM confirmation]`.
+- **P4 (Piano della Terra)** — parte IN CORSO al tavolo (G3). **Doppio
+  master (DM 2026-07-03)**: la **cornice narrativa/scene** è
+  `COMPLETO-alternative`; il **combattimento/boss** usa le versioni
+  **potenziate** (`RICALIBRATO` + `Terros.md`). ⚠️ Il **power-up è VOLUTO**:
+  i PG sono di 13° ma con **artefatti unici e potentissimi** (D8), quindi gli
+  EL alti servono a evitare scontri che finiscono in 2 round. Correzioni da
+  applicare comunque: **livello 13°** (non 14) e **composizione D15** (3 PG,
+  niente Therysol) — cambiano l'APL, **non** l'intento di sfida.
 - **P3B** e **P5** — l'elezione formale del master avviene nei task dedicati
   **B2** (resurrezione) e **B3** (fast-play), che integrano le ricalibrazioni
   e i risultati del viaggio. Qui si registra solo il candidato.

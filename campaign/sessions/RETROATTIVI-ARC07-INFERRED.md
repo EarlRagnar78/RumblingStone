@@ -126,17 +126,17 @@ boss e lo Smeraldo sono il punto a cui è arrivato il tavolo.
 
 ---
 
-## ⚠️ Nodo aperto per il DM — il compagno animale di Hella
+## ✅ Sciolto (DM 2026-07-03) — il compagno animale di Hella
 
-I file divergono e va sciolto in **A0/B1**:
-- `state.md §1` + log giocato `2026-05-03_session-3.md` → **rinoceronte di
-  pietra animato**.
-- `campaign-party.md` → **Advanced Brown Bear** (animal companion druidico) +
-  **Durik** (compagno soprannaturale dalla Collana).
-- `risultati.md` (canone del viaggio) → **Durik**, cane riforgiato Guardiano di
-  Pietra.
+Decisione del DM:
+- Il **rinoceronte di pietra** che appare in gioco (`state.md`, log
+  `2026-05-03_session-3.md`) è **Hella stessa in Forma Selvatica (Wild
+  Shape)**, NON una creatura separata.
+- L'**animal companion** di Hella è **DURIK** — cane maschio, **riforgiato**
+  in Guardiano di Pietra ed **evocato dal 3° seme della Collana dei Semi
+  Eterni**.
+- L'"Advanced Brown Bear" di `campaign-party.md` era il compagno **pre-morte**;
+  post-resurrezione il compagno è **Durik**.
 
-Ipotesi dell'engine `[INFERRED]`: l'**animal companion druidico** (orso o
-rinoceronte di pietra) è cosa distinta da **Durik** (evocato dal terzo seme
-della Collana). Il DM confermi quale animal companion è canonico e che Durik è
-il guardiano della Collana.
+Propagato in `state.md §1`, `campaign-party.md` (+ mirror copilot) e nel master
+P3B. Nessun flag residuo su questo punto.

@@ -64,11 +64,11 @@ Non fidarti dei numeri: segui l'ordine di gioco del quickstart.
 
 ---
 
-## 🕰️ CRONOLOGIA — ancoraggio al March Clock (B6) `[INFERRED — DM]`
+## 🕰️ CRONOLOGIA — ancoraggio al March Clock (B6) ✅ approvata DM (2026-07-03)
 
 L'ARC-07 confluisce nell'**ARC-08** (Battaglia di Hammerfist), il cui **sync
-point è il Day 19** (`state.md §2.1`). Collocazione proposta (da validare col
-DM, coordinata con **ARC-08 B6** — stessa tabella, scritta una volta sola):
+point è il Day 19** (`state.md §2.1`). Collocazione **approvata dal DM**,
+coordinata con **ARC-08 B6** (stessa tabella, scritta una volta sola):
 
 | Evento ARC-07 | March Day (proposta) |
 |---|---|

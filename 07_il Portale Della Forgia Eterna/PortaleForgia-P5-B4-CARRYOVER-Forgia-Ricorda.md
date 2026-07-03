@@ -11,10 +11,10 @@
 > infliggi ora all'antenato, la mia Forgia la ricorderà quando affronterai il
 > discendente.»* + Aegis Fang, P6 r.746 (*"sangue Skullcrusher chiama"*).
 >
-> ⚠️ **Tutti i valori sono `[INFERRED — needs DM confirmation]`**: proposte di
-> bilanciamento, non canone finale. Il DM approva/ritocca prima dell'ARC-08.
-> Sistema **D&D 3.5** — solo bonus tipizzati (competenza/circostanza/morale),
-> **niente vantaggio/svantaggio 5e**.
+> ✅ **Valori APPROVATI dal DM (2026-07-03)** — canone di carry-over. Sistema
+> **D&D 3.5** — solo bonus tipizzati (competenza/circostanza/morale), **niente
+> vantaggio/svantaggio 5e**. (Il DM può sempre ritoccare in corsa, ma questi
+> sono i valori di riferimento su cui l'ARC-08 può contare.)
 
 ---
 
@@ -75,5 +75,5 @@ Indipendente dall'esito (si somma), riflette P5-DEF-P2 r.294:
   file in `08_.../00_Schede_dei_Personaggi_Unità_e_Regolamento_di_Battaglia.md`
   §FAUCI DI PALUDE.
 - [x] **P5 fast-play** rimanda qui (Scena 5 + sezione carry-over).
-- [ ] **Chiusura ARC-08 A12**: il task ARC-08 può spuntare "attende B4 ARC-07"
-  quando il DM valida i valori `[INFERRED]`.
+- [x] **Valori validati dal DM (2026-07-03)** → l'ARC-08 A12 può integrarli
+  come canone (riga matrice esiti + read-aloud del primo avvistamento).

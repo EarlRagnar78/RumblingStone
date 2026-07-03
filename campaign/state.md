@@ -66,7 +66,11 @@ Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per det
 
 **Active companions:**
 
-- Hella's stone rhinoceros companion (DR 5/adamantine, animated post-resurrection)
+- **Durik** — Hella's animal companion (male dog, **reforged** into a Stone
+  Guardian and evoked via the **3rd seed of the Collana dei Semi Eterni**);
+  DR 5/adamantine, Tremorsense, telepathic link within 18 m. (The "stone
+  rhinoceros" seen in play is **Hella herself in Wild Shape**, not a separate
+  creature — DM clarified 2026-07-03.)
 - Therysol (Tiefling Half-Dragon NPC, traveling separately, hunting Il Collezionista's guild)
 - **Maestro Tempestas** (Half-elf Bard 12/Arcmage 2, GS 14, recurring messenger of Rethmar; canonized 2026-05-04 as the "bard storm caller" who helped the party escape Lorana's city in Arc 00 — vedi `PNG/Tempestas/Tempestas.md`). Not constantly present; drops in via *Shadow Walk* every 1–2 sessions with intel.
 
@@ -786,4 +790,16 @@ entries — they become campaign history.
             Belkram/Urialle. C1: ARC07-ATLANTE-ASSET.md. C2: ARC07-HANDOUTS.md.
             C3: ARC07-CONSEGUENZE-ECHI.md. Unico residuo aperto: l'intervista
             DM per B1 (date/XP/loot reali) e i valori [INFERRED] da validare.
+2026-07-03  PIANO-REVISIONE-ARC07 — PASSAGGIO DI VALIDAZIONE DM. Sciolti i
+            principali [INFERRED]: (1) **Compagno di Hella** — il "rinoceronte
+            di pietra" è **Hella in Wild Shape** (non un compagno); l'animal
+            companion è **DURIK** (cane maschio riforgiato, evocato dal 3° seme
+            della Collana). Propagato in state.md §1, campaign-party.md (+mirror),
+            master P3B, log retroattivi. (2) **Carry-over B4** — valori
+            **approvati** (canone; statblock Fauci ARC-08 e A12 aggiornati).
+            (3) **P4** — doppio master: cornice narrativa (COMPLETO) +
+            **combattimento potenziato VOLUTO** (RICALIBRATO/Terros, D8:
+            artefatti unici → scontri duri, non da 2 round); unico nodo lasciato
+            al DM = Aura di Pietrificazione save-or-die. (4) **Cronologia B6** e
+            **custode dell'uovo (C3)** approvati.
 ```

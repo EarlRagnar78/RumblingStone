@@ -648,6 +648,13 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   ilCuoreDiMoradin.png al rituale). Correggere il typo "Mitrtrsl Golem"
   nel filename immagine.
 - **Accettazione**: ogni asset ha un momento d'uso; zero asset orfani.
+- **✅ FATTO (2026-07-02, sessione 16)**: creato `ARC07-ATLANTE-ASSET.md`
+  (asset → scena/parte → "quando usarlo"): Canzone delle Pietre alla
+  resurrezione/cantillazione, Hella_elementale al risveglio, ilCuoreDiMoradin
+  al rituale, immagini di Fuoco/Terra/boss mappate, 2 PDF indicizzati.
+  `git mv` del typo `Mitrtrsl Golem…` → `Mithral Golem…` (residuo `MitralGolem`
+  segnalato [INFERRED], non rinominato per non rompere riferimenti). INDICE
+  punta qui.
 
 ### C2. Handout giocatore (formato HANDOUTS ARC-09)
 - **Evidenza**: materiale-handout naturale mai formalizzato: le **Cronache
@@ -662,6 +669,13 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   evidenziato; (3) le Benedizioni in formato carta singola per PG; (4) la
   carta-visione della sovrapposizione. Ogni handout con "quando darlo".
 - **Accettazione**: handout stampabili; nessuno spoilera il carry-over B4.
+- **✅ FATTO (2026-07-02, sessione 16)**: creato `ARC07-HANDOUTS.md` (formato
+  ARC-09, una pagina per handout): (1) **Cronache dei Quattro Eroi** da dare
+  PRIMA del viaggio; (2) tavola degli **8 affreschi** con **A6 evidenziato**;
+  (3) **carta-visione** delle due traiettorie; (4) **Benedizioni di Moradin**
+  come carte singole per PG. Ogni handout ha "quando darlo". **Nota
+  anti-spoiler B4** esplicita: nessun handout rivela il carry-over
+  Skullcrusher→Fauci.
 
 ### C3. Conseguenze a lungo periodo (tabella echi)
 - **Evidenza**: ganci che nessuna tabella raccoglie: l'**uovo di Fauci di
@@ -722,7 +736,7 @@ la checklist qui sotto.
 - [~] B1 (log ricostruiti; attende intervista DM) · [x] B2 · [x] B3 ·
   [x] B4 · [x] B5 · [x] B6 · [x] B7 · [x] B8 · [x] B9 — Collana ✅,
   file-risultati ✅, Sonjak-raid ✅, schede Belkram/Urialle ✅, Cintura ✅
-- [ ] C1 · [ ] C2 · [ ] C3
+- [x] C1 · [x] C2 · [ ] C3
 - [x] D1…D17 — **tutte le decisioni DM acquisite (2026-07-02); nessuna
   domanda aperta**
 

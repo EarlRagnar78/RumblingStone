@@ -13,6 +13,7 @@ index/compose what exists (or mark `[INFERRED]`).
 | `build_monster_catalog.py` | Index every statblock in the repo | `Monsters_Sheets/`, `Armate-UNITA-NUOVE/`, `*STATBLOCCHI*.md`, `PNG/`, arc folders | `scripts/monster_catalog.yaml` (+ empty `monster_catalog.custom.yaml` for DM additions) |
 | `suggest_encounter.py` | 3–5 encounter proposals for a target EL | catalog + filters (env, faction, role, size) | markdown tables with CR math + source file links |
 | `suggest_map.py` | Pick a 5ft-square tactical grid (ASCII) | `scripts/map_templates/*.yaml` (11 included) | ready-to-print grid + legend + tactical notes |
+| `render_map_svg.py` | Render the arcs' emoji-grid maps to print-quality SVG (uniform palette, coordinates, scale bar, legend) | any `*MAPPE*`/`*Ultra-Clear*` markdown with emoji grids | `rendered/*.svg` next to the source (generated artifacts — the markdown stays the master) |
 | `update_xp.py` | Cumulative XP ledger per PC | `campaign/sessions/*.md` `## XP awarded` | `campaign/pg/xp-ledger.md` (auto) |
 | `state_sync.py` | Propose edits to `campaign/state.md` after a session | `## World events triggered` in session logs | markdown diff report (DM applies manually) |
 

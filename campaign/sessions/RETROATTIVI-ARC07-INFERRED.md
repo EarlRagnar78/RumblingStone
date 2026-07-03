@@ -129,9 +129,11 @@ boss e lo Smeraldo sono il punto a cui è arrivato il tavolo.
 ## ✅ Sciolto (DM 2026-07-03) — il compagno animale di Hella
 
 Decisione del DM:
-- Il **rinoceronte di pietra** che appare in gioco (`state.md`, log
-  `2026-05-03_session-3.md`) è **Hella stessa in Forma Selvatica (Wild
-  Shape)**, NON una creatura separata.
+- Il **rinoceronte** che appare in gioco (`state.md`, log
+  `2026-05-03_session-3.md`) è **Hella stessa che usa la Forma Selvatica (Wild
+  Shape) del Druido** per diventare un **rinoceronte vivo** — NON di
+  pietra/animato e NON una creatura separata. (Il "di pietra/adamantio" era un
+  refuso da confusione con Durik.)
 - L'**animal companion** di Hella è **DURIK** — cane maschio, **riforgiato**
   in Guardiano di Pietra ed **evocato dal 3° seme della Collana dei Semi
   Eterni**.

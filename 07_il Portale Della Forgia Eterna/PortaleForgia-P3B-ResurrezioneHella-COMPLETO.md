@@ -64,10 +64,11 @@
 - ✅ **Compagno animale (deciso dal DM 2026-07-03)**: l'**animal companion**
   di Hella è **DURIK** — cane maschio, **riforgiato** in Guardiano di Pietra e
   **evocato dal 3° seme della Collana dei Semi Eterni** (Magical Beast, DR
-  5/adamantio, Tremorsense, legame telepatico entro 18 m). Il **rinoceronte di
-  pietra** che appare in gioco è **Hella stessa in Forma Selvatica (Wild
-  Shape)**, NON una creatura separata. (L'"Orso Bruno" era il compagno
-  pre-morte; post-resurrezione il compagno è Durik.)
+  5/adamantio, Tremorsense, legame telepatico entro 18 m). Il **rinoceronte**
+  che appare in gioco è **Hella stessa che usa la Forma Selvatica (Wild Shape)
+  del Druido** per diventare un **rinoceronte vivo** — NON di pietra/animato e
+  NON una creatura separata. (L'"Orso Bruno" era il compagno pre-morte;
+  post-resurrezione il compagno è Durik.)
 
 **Sistema:** Dungeons & Dragons 3.5 Edition  
 **Quando:** dopo il **P4** (Piano della Terra), prima del **P5** (viaggio) — D2  
@@ -592,7 +593,8 @@ Hella" (mithral e pietra scura, occhi di topazio). Stat completa: viaggio v2
   il pericolo (aspetto "Protegge Hella")
 - Vulnerabilità al fuoco (come Hella), Resist Freddo, affinità Ibrido Treant
 - *(L'"Orso Bruno" era il compagno pre-morte; post-resurrezione è Durik. Il
-  rinoceronte di pietra è la Forma Selvatica di Hella, non un compagno.)*
+  rinoceronte è la **Forma Selvatica del Druido** di Hella — un rinoceronte
+  vivo, non di pietra e non un compagno.)*
 
 ---
 

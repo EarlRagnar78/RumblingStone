@@ -122,8 +122,9 @@ Current party level: **13** | Party size: **4 PCs**
 - Viaggio Onirico gifts (variable based on trial outcomes): Marchio della Veritade, perception abilities, Via della Guardia (DR 2/—) or Via della Radice (Resist Cold 15 + Regen on sacred ground)
 - Primary healer via Cure spells and Wand of Cure Moderate Wounds
 - Augment Summoning + Natural Spell + Power of Nature for powerful summons while wild-shaped
-- **Wild Shape**: among her forms is a **stone rhinoceros** — this is Hella
-  herself transformed, NOT a separate creature (DM clarified 2026-07-03)
+- **Wild Shape**: among her forms is a **living rhinoceros** (standard Druid
+  Wild Shape into an animal) — this is Hella herself transformed, NOT a
+  stone/animated creature and NOT a separate companion (DM clarified 2026-07-03)
 - **Animal companion: Durik** — male dog, **reforged** into a Stone Guardian
   (Magical Beast, DR 5/Adamantine, Tremorsense 18m, telepathic link within
   18m) and **evoked via the 3rd seed of the Collana dei Semi Eterni**. (The

@@ -776,4 +776,14 @@ entries — they become campaign history.
             Rubino alla vittoria antica). A5: livello arco = **13°** in §0
             (era 12, scritto in avanti); Terros ricalibrato su 3 PG/APL 12/no
             Therysol (D15). Valori meccanici nuovi tutti [INFERRED] in attesa DM.
+2026-07-02  PIANO-REVISIONE-ARC07 Sessioni 9-17 — LOTTI A/B/C COMPLETATI.
+            A8: DC->CD ovunque. A10: Cintura della Devastazione (scheda + §6);
+            fonte unica artefatti D9 (Corona/Ring). B1: log retroattivi
+            (attende intervista DM). B5: ERRATA-ARC07-35-Verification.md. B6+B8:
+            ARC07-00-INDICE.md (quickstart + matrice + cronologia March Clock
+            [INFERRED]). B7: ARC07-TESORO-WBL-AUDIT.md (delta si colma ad
+            ARC-08). B9: raid di Sonjak in scheda + schede post-mortem
+            Belkram/Urialle. C1: ARC07-ATLANTE-ASSET.md. C2: ARC07-HANDOUTS.md.
+            C3: ARC07-CONSEGUENZE-ECHI.md. Unico residuo aperto: l'intervista
+            DM per B1 (date/XP/loot reali) e i valori [INFERRED] da validare.
 ```

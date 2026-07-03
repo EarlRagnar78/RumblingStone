@@ -691,6 +691,14 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   attraversano entrambi gli archi; l'uovo riceve un custode designato
   (dove sta? chi lo cova?) `[INFERRED — needs DM confirmation]`.
 - **Accettazione**: tabella completa; nessun eco contraddice ARC-08/09.
+- **✅ FATTO (2026-07-02, sessione 17)**: creato `ARC07-CONSEGUENZE-ECHI.md`
+  (formato echi ARC-09): tabella evento→eco→quando riemerge→file per uovo di
+  Fauci, eco "nessuna pietà" del Rubino, Cronache (→ Custodi Eterni ARC-08 E5),
+  Thorgrim (→ Cerimonia 100 Asce). **Varianti per esito del duello** (tono del
+  Rubino UCCISO/FERITO/FUGGITO, distinte dal carry-over meccanico B4).
+  **Custode designato dell'uovo** `[INFERRED]` (Blackfens, servitore
+  superstite → nemesi ARC-10). Cross-link a ARC-08 C2. Nessun eco contraddice
+  ARC-08/09 (Rubino resta single-use speso). **LOTTO C completo.**
 
 ---
 
@@ -736,7 +744,7 @@ la checklist qui sotto.
 - [~] B1 (log ricostruiti; attende intervista DM) · [x] B2 · [x] B3 ·
   [x] B4 · [x] B5 · [x] B6 · [x] B7 · [x] B8 · [x] B9 — Collana ✅,
   file-risultati ✅, Sonjak-raid ✅, schede Belkram/Urialle ✅, Cintura ✅
-- [x] C1 · [x] C2 · [ ] C3
+- [x] C1 · [x] C2 · [x] C3 — **LOTTO C COMPLETO**
 - [x] D1…D17 — **tutte le decisioni DM acquisite (2026-07-02); nessuna
   domanda aperta**
 

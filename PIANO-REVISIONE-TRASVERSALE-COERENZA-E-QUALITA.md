@@ -120,14 +120,21 @@
 
 ## §2 — LOTTO T-B: Mappe di tutta la campagna (T5)
 
-### T5a. Rendering di massa + censimento (engine: **Sonnet 5**)
+### T5a. Rendering di massa + censimento — ✅ FATTO (sessione 2, 2026-07-03)
 - **Azione**: eseguire il renderer su TUTTI i file-mappa degli archi
   00-09 (`*MAPPE*`, `*Ultra-Clear*`, `*Lotto*`, `TACTICAL-GRIDS*`,
   `*FASE*-MAPPA*`, atlanti); committare gli SVG in `rendered/`; produrre
   `MAPPE-CENSIMENTO.md` (repo root): per ogni mappa — file, parte/scena,
   scala dichiarata sì/no, griglia parsabile sì/no, companion presente
   (nessuno/parziale/completo), SVG ok/KO con motivo.
-- **Accettazione**: censimento completo; ogni mappa parsabile ha il suo
+- **Fatto**: 34 file censiti (repo root: `MAPPE-CENSIMENTO.md`); **16 SVG**
+  generati/rigenerati in 9 file sorgente (5 preesistenti dall'esemplare T2 +
+  11 nuovi: Portale-Forgia L2, Hammerfist L2/L3, Hammerfist Lotto 1-3); 22
+  mappe/file KO catalogati in 4 categorie di motivo (griglia ASCII non-emoji,
+  diagrammi box-drawing pre-Ultra-Clear già deprecati, 16 file narrativi
+  ARC-09 P2/P3 mai stati in formato griglia, atlanti/indici senza griglia
+  per costruzione) — zero fix di contenuto in questo lotto.
+- **Accettazione** ✅: censimento completo; ogni mappa parsabile ha il suo
   SVG; i KO hanno la riga di diagnosi (niente fix in questo lotto).
 
 ### T5b. Companion per mappe CON tattiche esistenti (engine: **Sonnet 5**)
@@ -245,7 +252,7 @@
 ## §5 — Checklist avanzamento
 
 - [x] T1 · [x] T2 · [x] T3 · [x] T4 — **LOTTO T-A COMPLETO (2026-07-03)**
-- [ ] T5a · [ ] T5b · [ ] T5c — lotto mappe
+- [x] T5a (sessione 2, 2026-07-03) · [ ] T5b · [ ] T5c — lotto mappe
 - [ ] T6a · [ ] T6b · [ ] T6c — lotto artefatti
 - [ ] T7 · [ ] T8 · [ ] T9 — schede, sinergie, propagazione
 - [x] T-D1…T-D5 — decisioni acquisite (2026-07-03); domande aperte:

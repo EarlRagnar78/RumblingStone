@@ -122,17 +122,62 @@ Level Adjustment: [N or —]
 
 ---
 
+## Improving Monsters (Advancement)
+
+Source: https://www.d20srd.org/srd/improvingMonsters.htm
+Full workflow + decision framework: see the `npc-villain-boosting` skill.
+
+**Adding Hit Dice** (stay within the stat block's `Advancement:` range):
+each HD adds hp (type die + Con), BAB/saves per type progression, skill
+points, a feat at every 3rd total HD, +1 ability at every 4th total HD.
+
+**CR increase from added HD** (Table: Improved Monster CR Increase):
+
+| Original type | CR +1 per |
+|---|---|
+| Aberration, construct, elemental, fey, giant, humanoid, ooze, plant, undead, vermin | 4 HD |
+| Animal, magical beast, monstrous humanoid | 3 HD |
+| Dragon, outsider | 2 HD |
+
+**Changes to Statistics by Size** (when advancement crosses a size bracket):
+
+| Old → New | Str | Dex | Con | Natural armor |
+|---|---|---|---|---|
+| Tiny → Small | +4 | −2 | — | — |
+| Small → Medium | +4 | −2 | +2 | — |
+| Medium → Large | +8 | −2 | +4 | +2 |
+| Large → Huge | +8 | −2 | +4 | +3 |
+| Huge → Gargantuan | +8 | — | +4 | +4 |
+| Gargantuan → Colossal | +8 | — | +4 | +5 |
+
+Also recompute size mods to attack/AC (M +0, L −1, H −2, G −4, C −8),
+grapple (L +4, H +8, G +12, C +16), space/reach; step damage dice up one
+size. A size-category jump usually warrants a further +1 CR (guide, not
+hard rule — benchmark the result).
+
+**Adding class levels**: associated class (amplifies the monster's
+strengths) = CR +1/level; nonassociated = CR +1 per 2 levels until class
+levels equal racial HD, then +1/level; NPC classes always nonassociated.
+Humanoids with 1 racial HD swap it for the first class level (then: PC
+classes CR = level, NPC classes CR = level − 1).
+
+---
+
 ## Templates
 
-**Half-Dragon**: +2 STR, +2 INT/CHA; gain energy immunity; breath weapon; NA +4; LA +3
-**Half-Fiend**: +4 STR/CON, +2 INT/WIS/CHA; SR 11+HD; DR 5/magic; spell-like abilities; wings; LA +4
-**Half-Celestial**: +4 STR/CON, +2 INT/WIS/CHA; SR 11+HD; DR 5/magic; spell-like abilities; wings; LA +4
-**Vampire**: Undead type; +6 STR, +2 DEX, +4 INT/WIS/CHA; +8 NA; energy drain; blood drain; dominate; mist form; weaknesses (sunlight, running water, stake); LA +8
-**Lich**: Undead type; +2 INT/WIS/CHA; touch paralysis; phylactery; CR +2; LA +4
-**Skeleton**: Undead; lose all; gain DR 5/bludgeoning; darkvision 60 ft; CR varies
-**Zombie**: Undead; lose all; gain DR 5/slashing; single damage type; CR varies
+**Half-Dragon**: +8 STR, +2 CON/INT/CHA; energy immunity; breath weapon 1/day; NA +4; CR +2; LA +3
+**Half-Fiend**: large ability boosts (exact line: SRD page); SR, DR 5/magic; SLAs by HD; wings; CR +1 (HD ≤4), +2 (HD 5–10), +3 (HD 11+); LA +4
+**Half-Celestial**: large ability boosts (exact line: SRD page); SR, DR 5/magic; SLAs by HD; wings; CR +1 (HD ≤5), +2 (HD 6–10), +3 (HD 11+); LA +4
+**Celestial / Fiendish**: darkvision 60 ft; resistances; SR HD+5; smite 1/day; CR +0 (HD ≤3), +1 (HD 4–7), +2 (HD 8+); LA +2
+**Vampire**: Undead type; +6 STR, +4 DEX, +2 INT/WIS, +4 CHA; +6 NA; energy drain; blood drain; dominate; gaseous form; fast healing 5; DR 10/silver+magic; weaknesses (sunlight, running water, stake); CR +2; LA +8
+**Lich**: Undead type; +2 INT/WIS/CHA; touch attack + paralysis; fear aura; phylactery; DR 15/bludgeoning+magic; CR +2; LA +4
+**Ghost**: Undead (incorporeal); manifestation; +4 CHA; frightful moan/malevolence etc. (pick powers); CR +2; LA +5
+**Skeleton**: Undead; recalculated from HD; DR 5/bludgeoning; darkvision 60 ft; immune to cold
+**Zombie**: Undead; HD doubled; DR 5/slashing; single move OR attack per round
 
-**Adding a template**: Apply stat changes, gain/lose abilities, recalculate CR.
+**Adding a template**: apply stat changes, gain/lose abilities, recalculate
+CR, then verify ability lines against the SRD template page (the one-liners
+above are load-bearing summaries, not full rules text).
 
 ---
 

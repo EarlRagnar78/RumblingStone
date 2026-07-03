@@ -24,7 +24,9 @@ skills/
 ├── dnd-35-srd/             # D&D 3.5 SRD mechanics (no setting bias)
 ├── forgotten-realms-lore/  # Faerûn 1372 DR canon
 ├── rumblingstone-campaign/ # custom campaign + coherence rules
-└── dnd-35-rules/           # legacy meta-router (points to the three above)
+├── pathfinder-1e-srd/      # PF1e rules, templates, 3.5<->PF conversion
+├── npc-villain-boosting/   # when/whether/how to boost PNGs, villains, monsters
+└── dnd-35-rules/           # legacy meta-router (points to the skills above)
 ```
 
 Per-agent mirrors (`.claude/skills/`, `.cursor/skills/`, etc.) are
@@ -38,15 +40,17 @@ generated artifacts of `scripts/build-skills.sh` and are gitignored.
 
 ---
 
-## Skills (three of them)
+## Skills (five of them)
 
-This repo ships **three** focused D&D 3.5 skills plus one legacy meta-router.
+This repo ships **five** focused skills plus one legacy meta-router.
 AI agents that support SKILL.md will discover them automatically:
 
 - `skills/dnd-35-srd/` — pure d20 SRD mechanics
 - `skills/forgotten-realms-lore/` — Faerûn 1372 DR canon
 - `skills/rumblingstone-campaign/` — this campaign (PCs, artifacts, arcs, coherence)
-- `skills/dnd-35-rules/` — legacy meta-router; points to the three above
+- `skills/pathfinder-1e-srd/` — Pathfinder 1e rules, simple templates, CR benchmarks, 3.5↔PF1e conversion
+- `skills/npc-villain-boosting/` — decision framework + workflow for boosting PNGs/villains/monsters
+- `skills/dnd-35-rules/` — legacy meta-router; points to the skills above
 
 When any agent answers a question:
 
@@ -118,6 +122,7 @@ When any agent answers a question:
 6. **DM Strategy & Player Profiles**: For adult-oriented, non-linear sessions (Shine Time, State Machine design), consult `skills/dnd-35-rules/references/campaign-dm-strategy.md` (canonical). The lore folder file `campaign/lore/dm-player-strategy.md` is now a pointer to that canonical source.
 7. **Living world state**: Before describing what NPCs know, where parties/villains currently are, or what threads are open, load `campaign/state.md`. It is the single source of truth for *current* world state (changes per session).
 8. **Coherence**: Before introducing artifact powers, NPC knowledge, or callbacks to past PG actions, consult `skills/dnd-35-rules/references/campaign-coherence.md`.
+9. **Boosting PNGs/villains/monsters**: The campaign runs on D&D 3.5; Pathfinder 1e SRD material (simple templates, Monster-Statistics-by-CR benchmarks, NPC recipes) is an approved boost toolkit. Always go through `skills/npc-villain-boosting/` — it enforces the EL cap (≤ APL+4), the benchmark step, and the `Boost log:` requirement on named-NPC files. Never boost silently.
 
 ---
 

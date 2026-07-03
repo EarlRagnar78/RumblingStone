@@ -137,14 +137,28 @@
 - **Accettazione** ✅: censimento completo; ogni mappa parsabile ha il suo
   SVG; i KO hanno la riga di diagnosi (niente fix in questo lotto).
 
-### T5b. Companion per mappe CON tattiche esistenti (engine: **Sonnet 5**)
+### T5b. Companion per mappe CON tattiche esistenti (engine: **Sonnet 5**) — 🟡 IN CORSO (sessione 4, 2026-07-03)
 - **Azione**: per le mappe che già hanno sezioni tattiche/statblock
   sparse (censimento T5a), riorganizzare nei 3 blocchi del template —
   SOLO consolidamento, zero invenzioni; aggiunte inevitabili flaggate
   [INFERRED]. Ordine: prima le mappe delle parti DA GIOCARE (P3B, P5,
   ARC-08 assedio, ARC-09 quest imminenti), poi il resto.
-- **Accettazione**: checklist ①-⑦ del template soddisfatta per ogni mappa
-  trattata; nessun dato nuovo non flaggato.
+- **Fatto (sessione 4)**: le 2 mappe **ARC-09 quest imminenti** (Campo
+  Drow 1 e 2, `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md`) e la mappa
+  canonica dell'**ARC-08 assedio** (`Hammerfist-L2-REVISED-Ultra-Clear.md`)
+  hanno ora i 3 blocchi AMBIENTE/TATTICHE/EVOLUZIONE inline, consolidati
+  dalle sezioni sparse preesistenti (Tattiche Raid/Sabotaggio, Posizioni
+  PG, Distanze, Punti Deboli) — zero dati inventati, [INFERRED] sulle
+  soglie di morale/evoluzione non esplicite nei file originali.
+- **Resta da fare** (prossima sessione T5b): Portale-Forgia-L1 map2 (Sala
+  della Forgia, hub tuttora in uso P4→P3B→P5), Portale-Forgia-L1 map1 e
+  L2 map2 (Belkram/Elder Fire Elemental, già giocati — priorità bassa),
+  Hammerfist L1/L3 + Lotto-3-FINALE (ARC-08, non ancora giocato ma non
+  "assedio" in senso stretto), Hammerfist-Lotto-1 (⚠️ DEPRECATED,
+  priorità minima).
+- **Accettazione** (parziale, per le mappe trattate): checklist ①-⑦ del
+  template soddisfatta; nessun dato nuovo non flaggato. Non ancora
+  soddisfatta per l'intero lotto (mappe restanti sopra).
 
 ### T5c. Companion generativi + griglie mancanti (engine: **Opus 4.8**)
 - **Evidenza**: Campo Drow 2 ha griglia volutamente abbreviata
@@ -265,7 +279,7 @@
 ## §5 — Checklist avanzamento
 
 - [x] T1 · [x] T2 · [x] T3 · [x] T4 — **LOTTO T-A COMPLETO (2026-07-03)**
-- [x] T5a (sessione 2, 2026-07-03) · [ ] T5b · [ ] T5c — lotto mappe
+- [x] T5a (sessione 2, 2026-07-03) · 🟡 T5b in corso (sessione 4: Campo Drow 1-2 + Hammerfist assedio) · [ ] T5c — lotto mappe
 - [x] T6a (sessione 3, 2026-07-03) · [ ] T6b · [ ] T6c — lotto artefatti
 - [ ] T7 · [ ] T8 · [ ] T9 — schede, sinergie, propagazione
 - [x] T-D1…T-D5 — decisioni acquisite (2026-07-03); domande aperte:

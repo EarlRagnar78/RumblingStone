@@ -43,7 +43,7 @@
 | File | Mappa | Scala dichiarata | Griglia parsabile | Companion | SVG |
 |---|---|---|---|---|---|
 | `Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md` | Dirupo Mortale / Campo Hobgoblin (40×40) | Sì | Sì | nessuno | ok |
-| `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md` | Fortezza vista dall'alto (50×80) | Sì | Sì | nessuno | ok |
+| `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md` | Fortezza vista dall'alto (50×80) — **ARC-08 assedio** | Sì | Sì | **completo (T5b, sessione 4)** | ok |
 | `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` | MAPPA H3-1: Ingresso Passaggi Antichi (40×40) | Sì | Sì | nessuno | ok |
 | `Mappe/Hammerfist-Lotto-1-Ricognizione.md` ⚠️ DEPRECATED (A8) | Mappa #1 (20×100) — titolo grezzo intestazione colonne | Sì | Sì (titolo automatico impreciso — nota 1) | parziale (nota testuale "Copertura Roccia", "Canyon stretto" inline, non nei 3 blocchi) | ok |
 | `Mappe/Hammerfist-Lotto-1-Ricognizione.md` ⚠️ DEPRECATED (A8) | Mappa #2 (28×30) | Sì | Sì | nessuno | ok |
@@ -61,8 +61,8 @@
 
 | File | Mappa | Scala dichiarata | Griglia parsabile | Companion | SVG |
 |---|---|---|---|---|---|
-| `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md` | Campo Drow 1: Burning Operations Base (53×40) | Sì | Sì | **completo** (esemplare T3, ma vive in `campaign/templates/mappa-tattica-template.md`, non riportato inline nel sorgente — nota 5) | ok |
-| `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md` | Campo Drow 2: Forward Base (66×53 — griglia abbreviata `[continues...]`, nota 6) | Sì | Sì (parziale: righe ripetute per compressione, SVG riflette solo ciò che è scritto) | nessuno | ok (grid incompleta — T5c) |
+| `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md` | Campo Drow 1: Burning Operations Base (53×40) | Sì | Sì | **completo (T5b, sessione 4)** — riportato inline nel sorgente, non solo nel template (nota 5 aggiornata) | ok |
+| `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md` | Campo Drow 2: Forward Base (66×53 — griglia abbreviata `[continues...]`, nota 6) | Sì | Sì (parziale: righe ripetute per compressione, SVG riflette solo ciò che è scritto) | **completo (T5b, sessione 4)** — EVOLUZIONE `[INFERRED]`, griglia comunque da completare in T5c | ok (grid incompleta — T5c) |
 | `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO-Description.md` | — (testo narrativo/atmosfera dei 3 campi, non griglia) | — | No | — | n/a — **nota 7: file NON è più 0 byte, contenuto già presente** |
 | `Arco-Post-Hammerfist-P1-MAPPE-COMPLETO.md` | Cerchio di Hellas vs Treant, Rituale (Tre ondate), + altre | Sì (in prosa) | **No** | n/a | **KO — nota 8** |
 | `Arco-Post-Hammerfist-P2A-Torre-PARTE1-MAPPE.md` | Torre — Livello 1 | parziale | **No** | n/a | **KO — nota 8** |
@@ -139,11 +139,12 @@
    ⚠️ DEPRECATED nel proprio banner e superati dai master `Hammerfist-L1/L2/
    L3-REVISED-Ultra-Clear.md` (che sono già renderizzati, sopra). Nessuna
    azione: regola d'oro §0.5, non si cancellano, restano con banner.
-5. **Campo Drow 1**: il companion 3-blocchi esiste solo come ESEMPIO
-   COMPILATO dentro `campaign/templates/mappa-tattica-template.md` (righe
-   76+), non è stato ancora riportato/linkato nel file sorgente
-   `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md`. Segnalato come materiale
-   per T5b (consolidamento, non invenzione — il testo esiste già).
+5. **Campo Drow 1** — **aggiornata (T5b, sessione 4)**: il companion
+   3-blocchi era solo l'ESEMPIO COMPILATO dentro
+   `campaign/templates/mappa-tattica-template.md` (righe 76+); ora è anche
+   riportato inline nel file sorgente
+   `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md`, sostituendo la vecchia
+   sezione "Tattiche Raid" (stesso contenuto, riorganizzato).
 6. **Campo Drow 2**: la griglia dichiara 80×53 ma il master markdown la
    abbrevia con `[continues...]` a un certo punto (già noto, vedi piano
    trasversale §2 T5c). L'SVG generato qui riflette solo le righe

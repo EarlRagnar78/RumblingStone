@@ -3,6 +3,12 @@
 > **Stato**: fonte canonica dell'artefatto (D9, piano ARC-07 §1 A10) —
 > `PG/Artefatti/` prevale sulle copie storiche altrove (es. cartella
 > Corona in ARC-06).
+>
+> **Navigazione (T4, 2026-07-03)**: scheda da dare al giocatore =
+> `Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/00_SCHEDA-GIOCATORE-STATO-ATTUALE.md`
+> (solo poteri sbloccati, 2 snapshot etichettati). Ruolo di ogni altro file
+> della cartella Corona: `PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md` §1.
+> Sinergie: `PG/Artefatti/SINERGIE-ARTEFATTI-MASTER.md`.
 
 ## Capitolo 1: L'Anima dell'Artefatto
 

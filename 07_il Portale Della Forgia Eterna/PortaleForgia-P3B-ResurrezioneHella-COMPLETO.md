@@ -12,6 +12,11 @@
 > DOPO il P4 (Piano della Terra, in corso) e PRIMA del P5 (viaggio
 > temporale). Hella, risorta, è il 4° PG del P5 e della battaglia antica.
 > Vedi `PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md` §0 D2.
+>
+> **Agency (T1, 2026-07-03)**: i costi del rituale sono una SCELTA, non un
+> copione — vedi §2-BIS "Il ramo del rifiuto" (alternative equivalenti per
+> PG, conseguenze giocabili, tabella echi). La resurrezione in sé non è mai
+> in ostaggio: i sacrifici comprano i Doni, non la vita di Hella.
 
 ---
 
@@ -316,7 +321,124 @@ Il rituale richiede tre doni specifici. Ognuno lascia un segno indelebile.
 *   **Costo:** Artemis sacrifica uno **slot invocazione di alto livello** (o uso giornaliero di oggetto) per 24 ore.
 *   **Effetto su Hella:** Ottiene **Spontaneous Rebirth** (1/giorno: auto-stabilizzazione e temp HP se scende a 0).
 
+---
 
+## 2-BIS. IL RAMO DEL RIFIUTO — "Il prezzo è una scelta" (SIDEBAR DM)
+
+> **Stato**: design di contingenza aggiunto in **T1** (piano trasversale,
+> 2026-07-03) — principio **D13 ARC-09**: esiti aperti ai dadi, mai copioni.
+> Nessun fatto giocato: al tavolo vale ciò che i giocatori scelgono.
+
+### La regola d'oro di questa scena
+
+**La resurrezione NON è in ostaggio.** L'intero ARC-07 esiste per rendere
+epica la resurrezione di Hella (G0): se il rituale viene eseguito con il
+Cuore di Moradin, **Hella torna in vita in ogni caso**. Ciò che i sacrifici
+comprano non è la sua vita ma la **qualità del suo ritorno**: i tre Doni
+(Pelle di Adamantio, Timeless Body, Spontaneous Rebirth) e la fluidità del
+rituale. Moradin **chiede, non impone**:
+
+> *"La morte ha reclamato il corpo. La terra ha reclamato lo spirito. Per
+> strapparla a entrambi, la magia non basta. Serve la VITA. **Chi dona
+> cosa?** Nessuno è obbligato. Ma ogni dono mancato, la carne lo
+> ricorderà."*
+
+Ogni PG ha quindi **tre strade**, tutte ONSCREEN: (a) il dono previsto,
+(b) un'alternativa di peso equivalente, (c) il rifiuto. Moradin non
+giudica — reagisce (battute sotto). Il DM legge le opzioni SOLO se il
+giocatore esita o chiede: il default resta la scena com'è scritta.
+
+### Alternative equivalenti per PG (peso comparabile, meccanica 3.5)
+
+**THORIK — al posto del −2 COS permanente:**
+
+| Alternativa | Costo | Nota di bilanciamento |
+|---|---|---|
+| **Il Sangue della Stirpe** (base) | **−2 COS permanente** | il costo canonico (state.md §1); il più pesante dei tre, e cade volutamente sul PG più carico di artefatti (D8) |
+| **La Memoria della Battaglia** | **−3.000 XP** (non scendono sotto l'inizio del 13°) | equivalenza stile componente-XP 3.5 (cfr. *true resurrection*); Moradin "beve" i ricordi di una battaglia vinta |
+| **Il Filo dell'Ascia** | **Aegis Fang perde la proprietà Returning** fino al pieno risveglio dell'ascia (ARC-08/09) | costo tangibile a lungo termine; non inventa poteri, ne sospende uno; l'ascia "dona il suo richiamo" a Hella |
+
+**Se Thorik rifiuta ogni dono**: Hella **non ottiene Pelle di Adamantio**
+(DR 3/−) e il corpo resta fragile: allo **STEP 5 (Richiamo Spirito)**
+servono **3 successi su 3** (non 2 su 3). Eco narrativa: *"la carne
+ricorda chi non ha sanguinato per lei"* — vedi tabella echi sotto.
+
+**TORDEK — al posto dei 500 XP:**
+
+| Alternativa | Costo | Nota |
+|---|---|---|
+| **Il Respiro Donato** (base) | **−500 XP** | il costo canonico; leggero di proposito — Tordek ha già pagato in gioco (è lui che ha chiamato Hella nel buio, e il legame è suo) |
+| **Il Pugno Fermato** | 1 uso giornaliero di **Pugno Stordente** donato per **1 settimana** | variante del "talento per 1 settimana" già previsto, più mirata al Monaco |
+| **Il Voto del Silenzio del Ki** | nessun uso di **punti ki/capacità di metamagia ki** per 48 ore | per tavoli che vogliono sentire il costo nel P5 imminente |
+
+**Se Tordek rifiuta ogni dono**: Hella **non ottiene Timeless Body**.
+Conseguenza immediata al P5: all'apertura del portale temporale
+(Topazio + Smeraldo) il viaggio nel tempo preme su un corpo che può
+invecchiare — **TS Tempra CD 15** o Hella è **affaticata** per la prima
+scena della battaglia antica. Conseguenza lunga: resta vulnerabile a
+veleni, malattie e invecchiamento negli archi 08-09.
+
+**ARTEMIS — al posto dello slot per 24 ore:**
+
+| Alternativa | Costo | Nota |
+|---|---|---|
+| **La Scintilla** (base) | 1 slot invocazione alto (o uso giornaliero di oggetto) per 24 ore | il costo canonico; il più leggero — la scintilla è un innesco, non un serbatoio |
+| **Il Silenzio dell'Anello** | il **Ring of Chaotic Illumination tace per 24 ore** (tutte le proprietà) | per chi vuole simmetria col peso degli altri; il Ring "presta" la sua armonia Lathander/Mask a Hella |
+
+**Se Artemis rifiuta ogni dono**: Hella **non ottiene Spontaneous
+Rebirth**. Nessuna penalità meccanica su Artemis: la rete di sicurezza
+mancante È la conseguenza — la prima volta che Hella scende a 0 pf in
+ARC-08/09, non c'è paracadute. Segnare l'eco (sotto).
+
+### Rifiuto totale (nessuno paga)
+
+Il Cuore di Moradin basta da solo a riportarla — ma **nessun Dono viene
+tessuto**: Hella torna **senza** DR 3/−, Timeless Body e Spontaneous
+Rebirth (conserva i doni del viaggio dello spirito, che ha vinto da sola:
+§INTEGRAZIONE B2). La **Collana dei Semi Eterni nasce comunque** (i semi
+sono suoi), ma i **3 slot-dono del party restano vuoti**: ciascun PG può
+ancora colmarli **più avanti, in gioco**, con un atto di sacrificio
+verso Hella (aggancio naturale alle quest personali ARC-09 — quando uno
+slot si riempie, il Dono corrispondente si attiva retroattivamente).
+Questa via trasforma il rifiuto in una quest, non in una punizione.
+
+### Reazioni di Moradin (read-aloud, senza giudizio)
+
+- **A un'alternativa offerta**: *"Non è il dono che chiedevo. È il dono
+  che DAI. Va bene così: la Forgia piega il metallo che riceve."*
+- **A un rifiuto**: *"Lo ricorderò. E lo ricorderà anche lei. Ma non
+  sarò io a fartene colpa: la paura del prezzo è il prezzo."*
+- **Al rifiuto totale**: *"Allora la riporto io, per il servizio che mi
+  avete reso. Ma torna come la morte la lasciò — e ciò che non le avete
+  dato oggi, glielo dovrete domani."*
+
+### Varianti del risveglio (§5) se mancano Doni
+
+La battuta canonica di Hella (*"Il tuo sangue, Thorik. Il tuo spirito,
+Tordek. La tua fiamma, Artemis."*) **si adatta**: Hella nomina SOLO chi ha
+donato. Per chi ha rifiutato, sostituire con — Hella lo guarda, un
+istante più a lungo del necessario, e non dice nulla. (Non è rancore:
+è che *lo sente*. Il non-detto è il gancio di roleplay.)
+
+### Tabella echi (formato ARC-09: evento → eco → quando riemerge)
+
+| Evento al rituale | Eco | Quando riemerge | Dove |
+|---|---|---|---|
+| Thorik rifiuta il sangue | Hella senza DR 3/− + "la carne ricorda" | prima ferita critica di Hella in ARC-08 (battaglia) | `ARC08-03-REGISTRO-PERDITE.md` |
+| Tordek rifiuta il respiro | Hella senza Timeless Body; TS Tempra CD 15 al portale | apertura del P5; poi veleni drow ARC-09 (Notte dei Drow, Fase 0) | `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE0-...` |
+| Artemis rifiuta la scintilla | Hella senza Spontaneous Rebirth | prima volta che Hella va a 0 pf in ARC-08/09 | registro perdite / DM reference |
+| Rifiuto totale | 3 slot-dono vuoti sulla Collana | quest personali ARC-09 (un atto di sacrificio per slot) | `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` |
+| Alternativa "Filo dell'Ascia" | Aegis Fang senza Returning | ogni lancio dell'ascia fino al pieno risveglio | `PG/Artefatti/Artefatti-Pg/Aegis Fang/` |
+
+> **Nota DM — perché l'asimmetria dei costi base è voluta**: Thorik paga
+> più di tutti (−2 COS permanente) perché è il portatore di Corona + Aegis
+> Fang (D8): il costo riequilibra il PG più potente del tavolo. Tordek paga
+> poco in meccanica perché ha già pagato in narrativa (il faro nel buio).
+> Artemis paga quasi nulla perché la sua scintilla è un innesco — e il suo
+> vero prezzo arriverà alla Torre Invisibile (evoluzione del Ring). Se al
+> tavolo l'asimmetria pesa, usare le alternative equivalenti sopra.
+
+---
 
 ### **STEP 5: Richiamo Spirito (Tutti e 3, Coordinato)**
 

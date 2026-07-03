@@ -577,6 +577,14 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   Chiudere con "ricchezza d'uscita ARC-07 = ingresso ARC-08".
 - **Accettazione**: totale coerente col WBL ±20%; handoff esplicito ai due
   audit a valle.
+- **✅ FATTO (2026-07-02, sessione 15)**: creato `ARC07-TESORO-WBL-AUDIT.md`
+  (metodo ARC-09): WBL 13° ~110.000 mo/PG; **ricchezza speciale** (artefatti/
+  benedizioni) contata a parte (non colma il delta ordinario); loot ordinario
+  per parte (~15.600 mo attribuibili dal gear di Hella + `[INFERRED]` per
+  P3/P4/P5). **Verdetto**: arco povero di loot ordinario, ricco di artefatti —
+  il delta di WBL si colma a **Hammerfist (ARC-08 B4)**, non qui. Handoff
+  esplicito "uscita ARC-07 = ingresso ARC-08", nessun doppio conteggio degli
+  artefatti tra i tre archi.
 
 ### B8. INDICE-GENERALE e DM-QUICKSTART dell'arco
 - **Evidenza**: 20+ file markdown su 3-4 generazioni, 2 PDF, musica,
@@ -712,7 +720,7 @@ la checklist qui sotto.
 - [x] A1 · [x] A2 · [x] A3 · [x] A4 · [x] A5 · [x] A6 · [x] A7 ·
   [x] A8 · [x] A9 · [x] A10 · [x] A11 — **LOTTO A COMPLETO**
 - [~] B1 (log ricostruiti; attende intervista DM) · [x] B2 · [x] B3 ·
-  [x] B4 · [x] B5 · [x] B6 · [ ] B7 · [x] B8 · [x] B9 — Collana ✅,
+  [x] B4 · [x] B5 · [x] B6 · [x] B7 · [x] B8 · [x] B9 — Collana ✅,
   file-risultati ✅, Sonjak-raid ✅, schede Belkram/Urialle ✅, Cintura ✅
 - [ ] C1 · [ ] C2 · [ ] C3
 - [x] D1…D17 — **tutte le decisioni DM acquisite (2026-07-02); nessuna

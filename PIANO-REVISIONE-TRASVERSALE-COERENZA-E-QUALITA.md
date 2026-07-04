@@ -49,6 +49,13 @@
 | T-D3 | Artefatti = **regola dei 3 documenti** (SCHEDA-DM con tabella di progressione · SCHEDA-GIOCATORE-STATO-ATTUALE · riga state.md §6), modello Tordek, censimento in ARTEFATTI-MATRICE-VERSIONI.md | DM 2026-07-03 (domanda 3) |
 | T-D4 | Le **sinergie della Collana (Hella)** si sbloccano in gioco (quest ARC-09); restano [PROPOSTA] finché il DM non le convalida al tavolo | DM 2026-07-03 |
 | T-D5 | **Assegnazione engine per lotto** (§4): esecutivo/ripetitivo → **Sonnet 5**; consolidamento/generativo/bilanciamento → **Opus 4.8**; **Fable** SOLO per i casi speciali marcati 🔶 (arbitrati di canone multi-file) | DM 2026-07-03 |
+| T-D6 | **Corona / Stone's Awareness**: valgono **entrambe** le liste — Individuare Porte Segrete, **Scoprire Trappole** e **Comprendere Linguaggi** a volontà | DM 2026-07-04 |
+| T-D7 | **Corona / Topazio**: tempo di attivazione = **1 ora** di concentrazione (vale l'HTML `02`; «10 minuti» del master superato) | DM 2026-07-04 |
+| T-D8 | **Bracieri / Benedizione della Forgia Eterna**: permanente per la **campagna intera** (4 cariche/giorno, carica gratis su 18-20, Frantumare) | DM 2026-07-04 |
+| T-D9 | **Campo Drow 2**: canonizzate le dimensioni **disegnate 65×53** (≈98×80 m); la dichiarazione «80×53 / 120 m» era imprecisa | DM 2026-07-04 |
+| T-D10 | **state.md §6**: formato **doppia colonna** («Today at the table ARC-07 P4» / «Prepared ARC-09 entry») — T6c applicato | DM 2026-07-04 |
+| T-D11 | **Temporanei Word** cartella Aegis (`~$gis Fang.docx`, `~WRL0191.tmp`): **rimossi** (`git rm`) | DM 2026-07-04 |
+| T-D12 | **Libreria mostri/villain/PNG**: locazione standard = **`Bestiario/` a repo root** (catalogo statblock + dossier PNG + sorgenti PCGen storiche + token); vedi `PIANO-REVISIONE-LIBRERIA-MOSTRI-PNG-VILLAIN.md` | DM 2026-07-04 |
 
 ---
 
@@ -282,17 +289,20 @@
   divergenze HTML↔master irrisolvibili senza il DM sono flaggate, non
   indovinate.
 
-### T6c. 🔶 state.md §6 a due tempi (engine: **Opus 4.8**; arbitrati → **Fable**)
+### T6c. 🔶 state.md §6 a due tempi — ✅ FATTO (2026-07-04, conferma DM)
 - **Evidenza**: nota [T4-a] della matrice — §0 al tavolo reale, §1/§6 allo
   stato preparato: ambiguo per chiunque prepari la sessione di stasera.
-- **Azione**: proporre al DM la doppia colonna in §6 ("oggi al tavolo" /
-  "preparato ARC-09") o due tabelle etichettate; applicare SOLO dopo
-  conferma; changelog §8. 🔶 **Se emergono contraddizioni di canone**
-  tra §6, i piani ARC e i master (es. poteri dei Rituali 3-4 della
-  Corona), l'arbitrato multi-file è il caso speciale da dare a **Fable**:
-  richiede di tenere insieme state.md + 3 piani + master artefatti senza
-  perdere nessun vincolo.
-- **Accettazione**: un lettore capisce da §6 cosa vale STASERA senza
+- **Fatto**: il DM ha scelto la **doppia colonna** (T-D10). §6 riscritto:
+  una sola tabella con colonne etichettate **«Today at the table (ARC-07
+  P4)»** e **«Prepared (ARC-09 entry)»** + banner d'uso in testa; la
+  sezione "Spent" ora dichiara in quale tempo ogni consumo vale (il Cuore
+  di Moradin è intatto al tavolo di oggi, speso solo nel tempo preparato).
+  Nessuna contraddizione di canone emersa (niente arbitrato Fable);
+  nessuna riga di storia riscritta. Changelog §8 aggiornato; nota [T4-a]
+  della matrice marcata RISOLTA. Applicate nello stesso giro anche le
+  decisioni T-D6/T-D7 (Corona) e T-D8 (Bracieri) sui rispettivi
+  master/schede/reference.
+- **Accettazione** ✅: un lettore capisce da §6 cosa vale STASERA senza
   leggere [T4-a]; nessuna riga di storia riscritta.
 
 ### T7. Schede giocatore STATO-ATTUALE per tutti — ✅ FATTO (sessione 7, 2026-07-04)
@@ -329,14 +339,16 @@
     1/giorno su critico e la **Benedizione della Forgia Eterna** (contatto
     con l'Altare del Cuore di Moradin → 3→**4 cariche**/giorno + carica
     gratis su 18-20), già confermata in `00_Cintura_della_Devastazione.md`.
-    Ricarica allineata ad "alba/8h" (HTML). `[dubbio → DM]`: durata della
-    Benedizione ("fino a fine avventura" = solo ARC-07 o campagna intera?).
+    Ricarica allineata ad "alba/8h" (HTML). `[dubbio → DM]` ✅ **RISOLTO
+    (T-D8, 2026-07-04)**: la Benedizione vale per la **campagna intera**.
   - **Ring** ✅: HTML = export della `.md` Revised (numeri identici), nessuna
     variazione.
   - **Aegis** ✅: le modifiche dell'HTML (`05_..._Final_Awakening`) sono lo
     **Stadio 1** post-Assedio (P5), già gated in Pagina 2 e nel master;
-    coerente con state.md §6 (*pre-full-awakening*). `[dubbio → DM]`: se il
-    DM ritiene l'Assedio già avvenuto, promuovere allo Stadio 1.
+    coerente con state.md §6 (*pre-full-awakening*). `[dubbio → DM]` ✅
+    **CHIUSO da T6c/T-D10 (2026-07-04)**: la doppia colonna di §6 rende
+    esplicito che l'Assedio (P5) NON è ancora giocato al tavolo → Aegis
+    resta Stadio 0 oggi; lo Stadio 1 vive nella colonna «Prepared».
   - **Corona** ⏳: le schede HTML `02_/03_ Gemme` sono stati futuri; la loro
     riconciliazione col master DM rientra nel **T6b residuo** (near-dup
     Corona + sync `campaign-artifacts.md`) — vedi §T6b.
@@ -407,10 +419,13 @@
 
 - [x] T1 · [x] T2 · [x] T3 · [x] T4 — **LOTTO T-A COMPLETO (2026-07-03)**
 - [x] T5a (sessione 2) · [x] T5b (sessioni 4+9: companion su tutte le mappe REVISED da giocare) · [x] T5c (sessioni 9-10: griglia Campo Drow 2 completata + companion su tutti i 16 file narrativi ARC-09) — **LOTTO MAPPE COMPLETO** (resta opzionale/estetico solo l'SVG dei 16 narrativi)
-- [x] T6a (sessione 3, 2026-07-03) · [x] T6b (sessioni 6-8, 2026-07-04: Aegis master + Cerebro eletto + Corona consolidata/riconciliata + campaign-artifacts sync) · [ ] T6c (gated: conferma DM) — lotto artefatti
+- [x] T6a (sessione 3, 2026-07-03) · [x] T6b (sessioni 6-8, 2026-07-04: Aegis master + Cerebro eletto + Corona consolidata/riconciliata + campaign-artifacts sync) · [x] T6c (sessione 11, 2026-07-04: doppia colonna §6, conferma DM T-D10) — **LOTTO ARTEFATTI COMPLETO**
 - [x] T7 (sessione 7, 2026-07-04: schede Aegis/Ring/Bracieri/Collana) · [ ] T8 (gated: quest ARC-09 giocata) · [x] T9 cross-link (sessione 5, 2026-07-04; chiusura post-gioco P3B ancora gated) — schede, sinergie, propagazione
-- [x] T-D1…T-D5 — decisioni acquisite (2026-07-03); domande aperte:
-  SOLO le conferme DM inline (T6c colonne §6; rimozione temporanei Word)
+- [x] T-D1…T-D12 — decisioni acquisite (2026-07-03/04); **ZERO domande DM
+  aperte** (sessione 11, 2026-07-04: risolti Corona×2, Bracieri, Campo
+  Drow 2, §6 doppia colonna, temporanei Word rimossi, locazione libreria).
+  Restano SOLO i task gated sul gioco al tavolo: T8 (quest Hella giocata)
+  e chiusura T9 (esito reale del P3B in state.md §8)
 
 ### Infrastruttura CI (a supporto del lotto mappe)
 

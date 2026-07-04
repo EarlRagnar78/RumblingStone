@@ -25,7 +25,7 @@ Tre incastonature: una arde d'oro (Topazio), due sono ancora spente.*
 
 | Potere | Effetto (D&D 3.5) |
 |---|---|
-| **Consapevolezza della Pietra** (Sop) | Su terreno naturale: **+1 morale** ad attacco e danni, **+2 intuizione alla CA**; **individua porte segrete e trappole** a volontà |
+| **Consapevolezza della Pietra** (Sop) | Su terreno naturale: **+1 morale** ad attacco e danni, **+2 intuizione alla CA**; **individua porte segrete e trappole** e **Comprendere Linguaggi** a volontà *(conferma DM 2026-07-04)* |
 | **Corona di Protezione** (Str) | **+2 deflessione alla CA** finché indossata |
 | **Intuito di Moradin** (Sop) — *vinto alla Prova della Sala Profonda* | **Vista del Vero 1/giorno**; +4 intuizione ad Artigianato (fabbro) |
 
@@ -33,7 +33,7 @@ Tre incastonature: una arde d'oro (Topazio), due sono ancora spente.*
 
 | Potere | Effetto | Costo |
 |---|---|---|
-| **Viaggio nel Tempo** (Sop) | 1/mese, dal Nodo della Terra | Thorik **invecchia 1d10 anni** a viaggio |
+| **Viaggio nel Tempo** (Sop) | 1/mese, dal Nodo della Terra; **attivazione: 1 ora di concentrazione** *(conferma DM 2026-07-04)* | Thorik **invecchia 1d10 anni** a viaggio |
 
 **Le altre due incastonature**: le senti fredde. La Corona *sa* cosa
 manca — e te lo farà capire quando sarà il momento.

@@ -8,9 +8,9 @@
 > **Regole (D9/D10, piano ARC-07)**: `PG/Artefatti/` è la **fonte canonica**;
 > le copie altrove sono snapshot storici con banner. I file ridondanti si
 > DEPRECANO con banner, mai eliminati. Lo **stato corrente** dei poteri vive
-> in `campaign/state.md` §6 (⚠️ nota bene: §6 è scritto "in avanti" — stato
-> preparato all'ingresso ARC-09 — mentre il tavolo è ad ARC-07 P4: vedi
-> state.md §0 e la nota [T4-a] in fondo).
+> in `campaign/state.md` §6 (✅ dal T6c 2026-07-04 la tabella è a **doppia
+> colonna etichettata**: «Today at the table ARC-07 P4» / «Prepared ARC-09
+> entry» — vedi la nota [T4-a] in fondo, ora risolta).
 > **Legenda stato**: ⭐ MASTER = versione viva · *annesso* = supporto citato
 > dal master · 📸 snapshot = storico, non aggiornare · ~~DEPRECATO~~ ·
 > HANDOUT = materiale giocatore.
@@ -39,7 +39,7 @@ Cartella `Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/`:
 | `00_Schede_avvenimenti_Corona_di_adamantio.md` | idem, differiva di 1 parola | 📸 SUPERATA (T6b: banner) |
 | `00_scheda_Giocatore.md` | scheda giocatore, generazione 1 | ~~superata~~ dalla SCHEDA-GIOCATORE-STATO-ATTUALE |
 | `00_Scheda_Giocatore_Aggiornata_Fase2.md`, `01_Scheda_Giocatore_Sintesi_Pratica_Fase2.md` | schede giocatore Fase 2 | ~~superate~~ (contenuto assorbito nella STATO-ATTUALE) |
-| `01/02/03_Corona_N_Gemme.html` | scheda per stadio-gemma (1/2/3 gemme) | HANDOUT per stadio (stampare quello giusto) — **riconciliate col master in T6b**: valori coerenti, 2 dubbi flaggati (Trappole↔Comprendere Linguaggi; Topazio 10 min↔1 ora) nel banner del master DM |
+| `01/02/03_Corona_N_Gemme.html` | scheda per stadio-gemma (1/2/3 gemme) | HANDOUT per stadio (stampare quello giusto) — **riconciliate col master in T6b**; i 2 dubbi sono stati **RISOLTI dal DM (2026-07-04)**: Stone's Awareness = Trappole **e** Comprendere Linguaggi (entrambi); Topazio = attivazione **1 ora**. Master, scheda giocatore e reference aggiornati |
 | `Evoluzione_della_Scena-Trial_of_the_Deep_Hall.md` | scena del 2° rituale legacy | *annesso* (giocato) |
 | `LaCorona_di_Adamantio-DM.pdf`, `LaCorona_di_Adamantio.pdf` | export PDF | 📸 generati (rigenerare dal MASTER) |
 | immagini (`CoronaDiAdamantio.webp`, `Generated Image...webp`) | asset visivi | ok (C1: momento d'uso = risveglio gemme) |
@@ -68,7 +68,7 @@ Cartella `Artefatti-Pg/Aegis Fang/`:
 | `05_Aegis_Fang_Final_Awakening.html` | risveglio finale (post-Siege) | *annesso* — fonte dello **Stadio 1** del master `.md` (risveglio pieno, ⬜ futuro) |
 | `Avventure_per_nani.txt` | appunti | ⭐ canonico (refuso eletto/rinominato in T6a) |
 | `DEPRECATO-Avvneture_per_nani-refuso-duplicato.txt` | appunti, duplicato byte-identico | 📸 deprecato (T6a: `git mv` dal refuso `Avvneture_per_nani.txt`, banner in testa) |
-| `~$gis Fang.docx`, `~WRL0191.tmp` | file temporanei Word | 🗑️ candidati rimozione — **in attesa di conferma DM** (eccezione D10, non rimossi in T6a) |
+| `~$gis Fang.docx`, `~WRL0191.tmp` | file temporanei Word | ✅ **RIMOSSI (conferma DM 2026-07-04)** — `git rm`, erano lock/autosave Word senza contenuto utile |
 
 > **↩ Eco del rituale P3B (T9)**: se al rituale di Hella **Thorik ha scelto
 > l'alternativa «Filo dell'Ascia»** invece del sangue, **Aegis Fang perde la
@@ -151,6 +151,7 @@ master a ogni cambio (data-versione in testa).
 **stato preparato** all'ingresso di ARC-09 (Hella risorta, 3 gemme, Rubino
 speso). Non è un errore di questo file: è l'eredità del "written forward"
 (piano ARC-08 A0). Regola pratica: **per il tavolo di stasera vale D8/D16**
-(solo Topazio); per la prep di ARC-08/09 vale §6. Il lotto **T6** propone di
-etichettare le due colonne in §6 ("oggi" / "preparato") per chiudere
-l'ambiguità. `[INFERRED — needs DM confirmation]`
+(solo Topazio); per la prep di ARC-08/09 vale §6. ✅ **RISOLTO (T6c,
+2026-07-04)**: il DM ha scelto la **doppia colonna** — state.md §6 ora ha
+le colonne «Oggi al tavolo (ARC-07 P4)» e «Preparato (ingresso ARC-09)»
+nella stessa tabella; l'ambiguità è chiusa.

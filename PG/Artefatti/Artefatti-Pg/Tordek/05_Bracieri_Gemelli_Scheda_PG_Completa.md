@@ -168,11 +168,11 @@ Eterna (evento ARC-07), i guanti hanno ricevuto un **potenziamento** che vale
 - **Frantumare (Shatter)** 1/giorno su critico confermato (vedi Poteri
   Costanti sopra).
 
-> **⚠ Decisione DM — durata della Benedizione**: la scheda HTML della Forgia
-> la descrive come *"temporanea, fino al completamento dell'avventura"*. **Il
-> DM deve stabilire** se «l'avventura» è solo l'arco della Forgia (ARC-07) o
-> la campagna intera: se conclusa, i valori tornano a 3 cariche/giorno e
-> Frantumare si spegne. `[needs DM confirmation]`
+> ✅ **Decisione DM (2026-07-04) — durata della Benedizione**: vale per la
+> **campagna intera**. «Fino al completamento dell'avventura» = fino alla
+> fine della campagna: 4 cariche/giorno, carica gratuita su 18-20 naturale
+> e Frantumare restano attivi in modo permanente. Nessun ritorno a 3
+> cariche/giorno.
 
 ---
 

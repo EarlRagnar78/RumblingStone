@@ -309,26 +309,34 @@ the listed consequence triggers.
 ## 6. Artifact State (current powers, not theoretical max)
 
 See `skills/rumblingstone-campaign/references/campaign-artifacts.md` for
-full mechanics. This table is current truth only.
+full mechanics.
 
-| Artifact | Holder | State | Currently usable powers |
+> **Two-times table (T6c, DM-confirmed 2026-07-04)**: the two state columns
+> are labelled. **«Today at the table»** = the real table position per §0
+> (ARC-07 P4 in progress, canon D8/D16). **«Prepared (ARC-09 entry)»** = the
+> forward-written state that becomes true only after P4 → P3B → P5 are
+> played. For tonight's session ALWAYS use the "Today" column.
+
+| Artifact | Holder | **Today at the table (ARC-07 P4)** | **Prepared (ARC-09 entry)** |
 |---|---|---|---|
-| Aegis Fang | Thorik | Pre-full-awakening | +2 Returning Dwarven Waraxe; bonded |
-| Corona di Adamantio | Thorik | All 3 gems lit | Stone's Awareness, +2 deflection AC, Topaz time-travel 1/month, Emerald earthquake 1/week, Ruby (single-use already spent at the battle 1,000 years before, ≈372 DR) |
-| Ring of Chaotic Illumination | Artemis | Reforged at Eternal Forge | Full base powers; awaits further evolution at Invisible Tower |
-| Bracieri Gemelli di Moradin | Tordek | Fire ✅ + Earth ✅ | Salto Infuocato 3/day, Fire Resist 10, DR 5/adamantine, Jump +10 |
-| Cintura della Devastazione (custom PG, D17) | Tordek | Active | = Devastation Gauntlets (MIC) moved to **belt slot** so wrists stay free for the Bracieri; ~3/day devastation charges (+2d6). Sheet: `PG/Artefatti/Artefatti-Pg/Tordek/00_Cintura_della_Devastazione.md`. Exact values → ARC-07 B5 |
-| Collana dei Semi Eterni | Hella | Active post-resurrection | Treant summoning (limited), Avatar form (1/day), party gift slots (unspent: 3) |
-| Cuore di Moradin | Crown set (altar) | Activated | Resurrection ritual catalyst — single-use, expended for Hella |
-| Orbe delle Otto Porte (Githyanki artifact, campaign canon) | Tournament prize, not yet held | Awaits Tournament outcome | N/A until Tordek wins |
+| Aegis Fang | Thorik | Pre-full-awakening: +2 Returning Dwarven Waraxe; bonded | Unchanged until the Siege (P5) is won → then Stage 1 full awakening (see Aegis master) |
+| Corona di Adamantio | Thorik | **Only Topaz lit** (D8/D16): Stone's Awareness (incl. traps + comprehend languages, DM 2026-07-04), +2 deflection AC, Topaz time-travel 1/month (activation: 1 hour) | All 3 gems lit: + Emerald earthquake 1/week; Ruby single-use SPENT at the ancient battle (≈372 DR) |
+| Ring of Chaotic Illumination | Artemis | Reforged at Eternal Forge: full base powers | Unchanged; awaits further evolution at Invisible Tower |
+| Bracieri Gemelli di Moradin | Tordek | Fire ✅ + Earth ✅: Salto Infuocato 3/day, Fire Resist 10, DR 5/adamantine, Jump +10; Benedizione della Forgia active (4 charges/day — permanent for the whole campaign, DM 2026-07-04) | Unchanged |
+| Cintura della Devastazione (custom PG, D17) | Tordek | Active — Devastation Gauntlets (MIC) moved to **belt slot** so wrists stay free for the Bracieri; ~3/day devastation charges (+2d6). Sheet: `PG/Artefatti/Artefatti-Pg/Tordek/00_Cintura_della_Devastazione.md`. Exact values → ARC-07 B5 | Unchanged |
+| Collana dei Semi Eterni | Hella (dead — resurrection pending) | Forged, awaiting the P3B ritual; Hella not yet resurrected | Active post-resurrection: Treant summoning (limited), Avatar form (1/day), party gift slots (unspent: 3) |
+| Cuore di Moradin | Crown set (altar) | Intact — will be expended as catalyst in the P3B ritual | SPENT: single-use expended to resurrect Hella |
+| Orbe delle Otto Porte (Githyanki artifact, campaign canon) | Tournament prize, not yet held | Not in play | Awaits Tournament outcome — N/A until Tordek wins |
 
-**Spent / single-use already burned:**
+**Spent / single-use already burned** *(per column: Ruby & Cuore are spent
+only in the "Prepared" time; at today's table the Cuore is still intact)*:
 
-- Ruby gem of the Crown (used at the battle 1,000 years before, ≈372 DR)
-- Cuore di Moradin (used to resurrect Hella)
+- Ruby gem of the Crown (used at the battle 1,000 years before, ≈372 DR) —
+  spent in both times (the battle is in the past either way once P5 is played)
+- Cuore di Moradin (used to resurrect Hella) — **Prepared column only**
 
-If any agent ever has a character "use" one of these again, that is a
-coherence violation — flag to DM.
+If any agent ever has a character "use" one of these again in a time where
+they are spent, that is a coherence violation — flag to DM.
 
 ---
 
@@ -1243,4 +1251,23 @@ entries — they become campaign history.
             e "carry-over se disponibile") e l'INDICE §6 (da "A12
             bloccato" a "piano completo"). Follow-up post-merge PR #17:
             branch ripartito da origin/main (sarà un nuovo PR).
+2026-07-04  **Chiusura conferme DM del piano trasversale (7 decisioni)**.
+            (1) Corona/Stone's Awareness: valgono ENTRAMBE le liste →
+            porte segrete + trappole + comprendere linguaggi a volontà
+            (master DM, scheda giocatore, campaign-artifacts allineati).
+            (2) Corona/Topazio: attivazione = 1 ORA di concentrazione
+            (vale l'HTML `02`; «10 minuti» superato). (3) Bracieri:
+            Benedizione della Forgia Eterna PERMANENTE per la campagna
+            intera (4 cariche/giorno, carica gratis su 18-20,
+            Frantumare). (4) Campo Drow 2: canonizzate le dimensioni
+            disegnate 65×53 (≈98×80 m); titolo/testo/SVG allineati.
+            (5) T6c: §6 di questo file riscritto a DOPPIA COLONNA
+            («Today at the table ARC-07 P4» / «Prepared ARC-09 entry»)
+            — l'ambiguità dei due tempi [T4-a] è chiusa; nessuna riga
+            di storia riscritta, solo etichettatura dei tempi.
+            (6) Temporanei Word cartella Aegis (~$gis Fang.docx,
+            ~WRL0191.tmp): RIMOSSI (git rm). (7) Nuova libreria
+            mostri/villain/PNG: locazione standard = `Bestiario/` a
+            repo root (vedi PIANO-REVISIONE-LIBRERIA-MOSTRI-PNG-VILLAIN
+            e CENSIMENTO-MOSTRI-PNG-VILLAIN).
 ```

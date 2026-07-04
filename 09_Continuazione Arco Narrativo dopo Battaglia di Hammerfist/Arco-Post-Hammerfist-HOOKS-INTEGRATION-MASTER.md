@@ -142,6 +142,19 @@ Giorno 42  Assedio, Riti & Avatar, Mythal & finale (Phase 1-4).
 
 > **Confronto con v1 (deprecata):** la v1 prevedeva 4 lettere consegnate da Tempestas. La v2 distribuisce gli hook in **fonti diverse e plausibili**, riducendo Tempestas alla **sua reale funzione** (intel agent + lettera Brenna).
 
+> **↩ Hook condizionale — Slot-dono della Collana (T9, dal ramo del rifiuto
+> P3B)**: **solo se** al rituale di resurrezione di Hella il party ha scelto
+> il **rifiuto totale** (nessun dono concesso), Hella torna in vita con la
+> **Collana dei Semi Eterni a 3 slot-dono vuoti**. Questi slot diventano
+> **3 quest personali opzionali** in ARC-09 — *un atto di sacrificio per
+> slot* — che riusano poteri già canonici (vedi sinergie future F1-F4,
+> `[PROPOSTA]`, in `PG/Artefatti/SINERGIE-ARTEFATTI-MASTER.md`). Innesti
+> naturali: il **rito druidico di Saraah** (Giorno 25) e il **Cerchio del
+> Sacred Forest** (P1). Se il rituale non è stato giocato o i doni sono stati
+> concessi, questo hook **non esiste** (Collana già completa). Fonte:
+> `07_il Portale Della Forgia Eterna/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`
+> §2-BIS «Il ramo del rifiuto» → *Tabella echi*, riga «Rifiuto totale».
+
 ---
 
 ## 3. La Cerimonia delle 100 Asce come zona di atterraggio principale (Giorno 21)
@@ -322,4 +335,6 @@ Sintesi rapida per i 4 PG:
 - **Tournament (P2B) arc:** HUB in `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md` (dettaglio in `...Tordek-PARTE1-Giorno1-Preliminari.md` + `PARTE2-Giorno2-Semifinali.md` + `PARTE3-Giorno3-Finale-e-Invasione.md`)
 - **Torre Invisibile (P2A) arc:** `Arco-Post-Hammerfist-P2A-Torre-PARTE*.md`
 - **Ghostlord arc files:** `Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-TESTO.md`
+- **Ramo del rifiuto P3B (echi del rituale Hella → slot-dono Collana):** `07_il Portale Della Forgia Eterna/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` §2-BIS
+- **Sinergie future Collana (F1-F4, `[PROPOSTA]`):** `PG/Artefatti/SINERGIE-ARTEFATTI-MASTER.md`
 - **Stato campagna:** `campaign/state.md`

@@ -8,6 +8,16 @@
 **Peso:** 2,5 kg
 **Valore:** Inestimabile (Artefatto Maggiore Completo)
 
+> **SCHEDA GIOCATORE — STATO ATTUALE (allineata in T7, 2026-07-04)**: è
+> l'**unica** scheda da dare al giocatore di Tordek per i Bracieri. Stato
+> corrente = **Risveglio Completo (Fuoco + Terra)**, entrambi gli stadi
+> giocati (`campaign/state.md` §6). Include la sinergia con la **Cintura
+> della Devastazione** (vedi «Cariche Devastazione» nel cheat sheet; master
+> Cintura: `00_Cintura_della_Devastazione.md`). Progressione per stadi e
+> poteri nascosti: file `01_`→`03_` di questa cartella. Matrice:
+> `PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md` §4. A ogni nuovo sblocco,
+> ristampare aggiornando il **Registro sblocchi** in fondo.
+
 ---
 
 ## Descrizione Fisica
@@ -161,3 +171,13 @@ Se soddisfatto, i guanti possono occasionalmente agire di propria volontà per p
 | **Salto Fiammegiante** | (Su) | Mov | 3/gg | Super Salto (Tiro Unico) + AoE 3m Fuoco all'arrivo. |
 | **Martello (Sinergia)** | (Su) | Free | 1/rnd | Su **Critico**: attiva *Colpi del Fuoco* o *Pugno Frana* gratis. |
 | **Cariche Devastazione**| (Su) | Free | 3/gg | Su **Critico**: +danni Forza. Ricarica su 18-20 naturale. |
+
+---
+
+### Registro sblocchi (compila il DM, a penna)
+
+| Data (sessione) | Cosa si è sbloccato/speso | Visto dal giocatore? |
+|---|---|---|
+| — | Stadio Fuoco (Risveglio Bracieri di Moradin) | ✅ giocato |
+| — | Stadio Terra (Risveglio Completo) | ✅ giocato |
+| … | … | … |

@@ -62,6 +62,7 @@ Cartella `Artefatti-Pg/Aegis Fang/`:
 | File | Ruolo | Stato |
 |---|---|---|
 | `00_Aegis_Fang-MASTER-DM.md` | Guida DM (master vivo, tabella di progressione a 2 stadi) | ⭐ **MASTER** (creato in **T6b** 2026-07-04, transcritto da `.docx` + HTML risveglio) |
+| `00_Aegis_Fang-SCHEDA-GIOCATORE-STATO-ATTUALE.md` | HANDOUT giocatore (Stadio 0, senza spoiler del risveglio) | ⭐ scheda giocatore (creata in **T7** 2026-07-04) |
 | `Aegis Fang.docx` / `Aegis Fang.pdf` | scheda completa originale | 📸 export storico (fonte dello stadio base del master `.md`) |
 | `05_Aegis_Fang_Final_Awakening.html` | risveglio finale (post-Siege) | *annesso* — fonte dello **Stadio 1** del master `.md` (risveglio pieno, ⬜ futuro) |
 | `Avventure_per_nani.txt` | appunti | ⭐ canonico (refuso eletto/rinominato in T6a) |
@@ -87,6 +88,7 @@ Cartella `Artefatti-Pg/Aegis Fang/`:
 | `PG/Artefatti/Ring of Chaotic Illumination.md` (top-level) | versione originale inglese pre-riforgiatura | 📸 snapshot storico (banner aggiunto in T6a) |
 | `PG/Artefatti/Ring_of_chaotic_illumination-master.md` + `.odt`/`.pdf` (top-level) | "documento riservato DM", generazione 2 | 📸 snapshot storico (banner aggiunto al `.md` in T6a; export `.odt`/`.pdf` binari non bannerabili, stesso stato per riferimento) |
 | `ringOfChaoticIllumination/00_..._Revised.html` / `Ring of Chaotic Illumination (Reforged).pdf` | export del MASTER | 📸 generati |
+| `ringOfChaoticIllumination/00_Ring-SCHEDA-GIOCATORE-STATO-ATTUALE.md` | HANDOUT giocatore (poteri costanti+attivati; poteri di crisi SOLO lato DM) | ⭐ scheda giocatore (creata in **T7** 2026-07-04) |
 | `Artemis/Cerebromorphosis/Italiano/cerebromorphosis_italian-final.md` | sistema crisi Cerebromorphosis (IT, completo) | ⭐ **MASTER eletto (T6b)** — banner in testa |
 | `Artemis/Cerebromorphosis/cerebromorphosis_system.md` (root + copia in `Italiano/`, byte-identiche) | stesso sistema di crisi, generazione **inglese** | 📸 snapshot storico (EN) |
 | `Artemis/Cerebromorphosis/party_intervention_system.md` (root + `Italiano/`) · `Italiano/moradin_divine_guidance_italian.md` | **sottosistema distinto**: intervento di guida divina del party (non la crisi) | *annesso* al percorso di Artemis |
@@ -105,16 +107,19 @@ file numerati che raccontano la progressione, un file = uno stadio.
 | `02_Risveglio_Bracieri_di_Moradin.md` | stadio Fuoco (giocato ✅) | *annesso-stadio* |
 | `03_Risveglio_Completo_Bracieri_Terra.md` | stadio Terra (giocato ✅) | *annesso-stadio* |
 | `04_..._Scheda_PG_Fuoco.md/html` | HANDOUT giocatore (Fuoco) | superato dallo stadio Terra |
-| `05_..._Scheda_PG_Completa.md` (+ `.html` canonico) | HANDOUT giocatore attuale | ⭐ HANDOUT |
+| `05_..._Scheda_PG_Completa.md` (+ `.html` canonico) | HANDOUT giocatore attuale | ⭐ HANDOUT — allineato al formato STATO-ATTUALE + registro sblocchi (**T7** 2026-07-04) |
 | `05_..._Scheda_PG_Completa Final.html`, `05_..._Scheda_PG_Completa copy 2.html` | copie duplicate dell'HANDOUT | 📸 deprecate (T6a: banner in testa, non cancellate) |
 | `apply_styles.py`, `rewrite_table.py`, `generate_therysol.py`, `b64_20pct.txt` | tooling locale usa-e-getta (path hardcoded) | 📸 marcato in T6a — vedi `README-tooling-locale.md` nella stessa cartella |
 
 ## 5. COLLANA DEI SEMI ETERNI (Hella)
 
-**⭐ MASTER**: `Artefatti-Pg/Hella/01_Collana_dei_Semi_Eterni.md` (creata in
-ARC-07 B9). ⚠️ La scheda dice "forgiatura imminente" (tavolo, corretto);
-state.md §6 la dà "Active post-resurrection" (stato preparato): vedi [T4-a].
-Gli **slot-dono del party (3)** si legano al ramo del rifiuto del P3B §2-BIS.
+**⭐ MASTER DM**: `Artefatti-Pg/Hella/01_Collana_dei_Semi_Eterni.md` (creata in
+ARC-07 B9; file combinato player+DM, ora la parte DM). **⭐ HANDOUT giocatore**
+(estratto in **T7** 2026-07-04): `Artefatti-Pg/Hella/00_Collana-SCHEDA-GIOCATORE-STATO-ATTUALE.md`
+(2 snapshot: Radicata attuale / stati futuri ARC-09 gated). ⚠️ La scheda dice
+"forgiatura imminente" (tavolo, corretto); state.md §6 la dà "Active
+post-resurrection" (stato preparato): vedi [T4-a]. Gli **slot-dono del party
+(3)** si legano al ramo del rifiuto del P3B §2-BIS.
 
 ## 6. SINERGIE (party)
 

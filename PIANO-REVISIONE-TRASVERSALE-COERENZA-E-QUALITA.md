@@ -246,7 +246,7 @@
 - **Accettazione**: un lettore capisce da §6 cosa vale STASERA senza
   leggere [T4-a]; nessuna riga di storia riscritta.
 
-### T7. Schede giocatore STATO-ATTUALE per tutti (engine: **Sonnet 5**)
+### T7. Schede giocatore STATO-ATTUALE per tutti — ✅ FATTO (sessione 7, 2026-07-04)
 - **Azione**: dal template T4, generare le schede per **Aegis Fang** (dal
   master T6b), **Ring** (dal Revised: poteri costanti+attivati, crisis
   powers SOLO lato DM), **Bracieri+Cintura** (allineare la
@@ -254,8 +254,25 @@
   sblocchi), **Collana** (dalla scheda Hella, con i 3 slot-dono e lo stato
   post-rituale che il tavolo produrrà). Due snapshot dove serve (come la
   Corona).
-- **Accettazione**: ogni PG ha UNA scheda stampabile senza spoiler; le
-  vecchie marcate SUPERATA; matrice aggiornata.
+- **Fatto**:
+  - **Aegis Fang** ✅ — `00_Aegis_Fang-SCHEDA-GIOCATORE-STATO-ATTUALE.md`
+    (Stadio 0 pre-risveglio; Pagina 2 "Risveglio pieno" gated, non stampare
+    prima dell'Assedio; conditional T9 «Filo dell'Ascia»).
+  - **Ring** ✅ — `ringOfChaoticIllumination/00_Ring-SCHEDA-GIOCATORE-STATO-ATTUALE.md`
+    (poteri costanti + 6 attivati in IT meccanico; **poteri di crisi tenuti
+    lato DM**, solo accennati).
+  - **Bracieri+Cintura** ✅ — `Tordek/05_..._Scheda_PG_Completa.md` allineata
+    (banner STATO-ATTUALE + registro sblocchi; Cintura già integrata nel
+    cheat sheet come «Cariche Devastazione»).
+  - **Collana** ✅ — estratto l'handout standalone
+    `Hella/00_Collana-SCHEDA-GIOCATORE-STATO-ATTUALE.md` dal file combinato
+    (Radicata attuale = Pagina 1; Fiorita/Foresta-che-Cammina = Pagina 2
+    gated ARC-09); il file combinato `01_...` resta master DM con banner
+    «non consegnare al giocatore». Slot-dono legati al ramo del rifiuto (T9).
+  Matrice §2-§5 aggiornata (una scheda giocatore per artefatto). Corona già
+  aveva la sua da T4.
+- **Accettazione** ✅: ogni PG ha UNA scheda stampabile senza spoiler (gli
+  stadi futuri/crisi sono su pagine gated o lato DM); matrice aggiornata.
 
 ### T8. Convalida sinergie Collana dopo la quest di Hella (engine: **Sonnet 5**, al momento giusto)
 - **Azione**: quando il tavolo gioca Foresta Sacra/slot-dono: spostare le
@@ -320,7 +337,7 @@
 - [x] T1 · [x] T2 · [x] T3 · [x] T4 — **LOTTO T-A COMPLETO (2026-07-03)**
 - [x] T5a (sessione 2, 2026-07-03) · 🟡 T5b in corso (sessione 4: Campo Drow 1-2 + Hammerfist assedio) · [ ] T5c — lotto mappe
 - [x] T6a (sessione 3, 2026-07-03) · 🟡 T6b in corso (sessione 6: Aegis Fang master + Cerebromorphosis eletto; restano Corona near-dup + campaign-artifacts sync) · [ ] T6c (gated: conferma DM) — lotto artefatti
-- [ ] T7 · [ ] T8 (gated: quest ARC-09 giocata) · [x] T9 cross-link (sessione 5, 2026-07-04; chiusura post-gioco P3B ancora gated) — schede, sinergie, propagazione
+- [x] T7 (sessione 7, 2026-07-04: schede Aegis/Ring/Bracieri/Collana) · [ ] T8 (gated: quest ARC-09 giocata) · [x] T9 cross-link (sessione 5, 2026-07-04; chiusura post-gioco P3B ancora gated) — schede, sinergie, propagazione
 - [x] T-D1…T-D5 — decisioni acquisite (2026-07-03); domande aperte:
   SOLO le conferme DM inline (T6c colonne §6; rimozione temporanei Word)
 

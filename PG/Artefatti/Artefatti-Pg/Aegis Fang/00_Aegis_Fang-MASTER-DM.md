@@ -2,6 +2,7 @@
 
 > **Stato**: ⭐ MASTER canonico (lotto **T6b**, 2026-07-04). Portatore:
 > **Thorik**. Stato corrente: `campaign/state.md` §6 (*pre-full-awakening*).
+> Scheda giocatore: `00_Aegis_Fang-SCHEDA-GIOCATORE-STATO-ATTUALE.md` (T7).
 > Matrice: `PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md` §2.
 > **Fonti di questo master** (transcritte, non inventate): scheda
 > `Aegis Fang.docx`/`.pdf` (stadio base) + `05_Aegis_Fang_Final_Awakening.html`

@@ -120,24 +120,45 @@
 
 ## §2 — LOTTO T-B: Mappe di tutta la campagna (T5)
 
-### T5a. Rendering di massa + censimento (engine: **Sonnet 5**)
+### T5a. Rendering di massa + censimento — ✅ FATTO (sessione 2, 2026-07-03)
 - **Azione**: eseguire il renderer su TUTTI i file-mappa degli archi
   00-09 (`*MAPPE*`, `*Ultra-Clear*`, `*Lotto*`, `TACTICAL-GRIDS*`,
   `*FASE*-MAPPA*`, atlanti); committare gli SVG in `rendered/`; produrre
   `MAPPE-CENSIMENTO.md` (repo root): per ogni mappa — file, parte/scena,
   scala dichiarata sì/no, griglia parsabile sì/no, companion presente
   (nessuno/parziale/completo), SVG ok/KO con motivo.
-- **Accettazione**: censimento completo; ogni mappa parsabile ha il suo
+- **Fatto**: 34 file censiti (repo root: `MAPPE-CENSIMENTO.md`); **16 SVG**
+  generati/rigenerati in 9 file sorgente (5 preesistenti dall'esemplare T2 +
+  11 nuovi: Portale-Forgia L2, Hammerfist L2/L3, Hammerfist Lotto 1-3); 22
+  mappe/file KO catalogati in 4 categorie di motivo (griglia ASCII non-emoji,
+  diagrammi box-drawing pre-Ultra-Clear già deprecati, 16 file narrativi
+  ARC-09 P2/P3 mai stati in formato griglia, atlanti/indici senza griglia
+  per costruzione) — zero fix di contenuto in questo lotto.
+- **Accettazione** ✅: censimento completo; ogni mappa parsabile ha il suo
   SVG; i KO hanno la riga di diagnosi (niente fix in questo lotto).
 
-### T5b. Companion per mappe CON tattiche esistenti (engine: **Sonnet 5**)
+### T5b. Companion per mappe CON tattiche esistenti (engine: **Sonnet 5**) — 🟡 IN CORSO (sessione 4, 2026-07-03)
 - **Azione**: per le mappe che già hanno sezioni tattiche/statblock
   sparse (censimento T5a), riorganizzare nei 3 blocchi del template —
   SOLO consolidamento, zero invenzioni; aggiunte inevitabili flaggate
   [INFERRED]. Ordine: prima le mappe delle parti DA GIOCARE (P3B, P5,
   ARC-08 assedio, ARC-09 quest imminenti), poi il resto.
-- **Accettazione**: checklist ①-⑦ del template soddisfatta per ogni mappa
-  trattata; nessun dato nuovo non flaggato.
+- **Fatto (sessione 4)**: le 2 mappe **ARC-09 quest imminenti** (Campo
+  Drow 1 e 2, `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md`) e la mappa
+  canonica dell'**ARC-08 assedio** (`Hammerfist-L2-REVISED-Ultra-Clear.md`)
+  hanno ora i 3 blocchi AMBIENTE/TATTICHE/EVOLUZIONE inline, consolidati
+  dalle sezioni sparse preesistenti (Tattiche Raid/Sabotaggio, Posizioni
+  PG, Distanze, Punti Deboli) — zero dati inventati, [INFERRED] sulle
+  soglie di morale/evoluzione non esplicite nei file originali.
+- **Resta da fare** (prossima sessione T5b): Portale-Forgia-L1 map2 (Sala
+  della Forgia, hub tuttora in uso P4→P3B→P5), Portale-Forgia-L1 map1 e
+  L2 map2 (Belkram/Elder Fire Elemental, già giocati — priorità bassa),
+  Hammerfist L1/L3 + Lotto-3-FINALE (ARC-08, non ancora giocato ma non
+  "assedio" in senso stretto), Hammerfist-Lotto-1 (⚠️ DEPRECATED,
+  priorità minima).
+- **Accettazione** (parziale, per le mappe trattate): checklist ①-⑦ del
+  template soddisfatta; nessun dato nuovo non flaggato. Non ancora
+  soddisfatta per l'intero lotto (mappe restanti sopra).
 
 ### T5c. Companion generativi + griglie mancanti (engine: **Opus 4.8**)
 - **Evidenza**: Campo Drow 2 ha griglia volutamente abbreviata
@@ -155,13 +176,26 @@
 
 ## §3 — LOTTO T-C: Artefatti di tutti i PG (T6-T8) e propagazione rituale (T9)
 
-### T6a. Igiene meccanica cartelle artefatti (engine: **Sonnet 5**)
+### T6a. Igiene meccanica cartelle artefatti — ✅ FATTO (sessione 3, 2026-07-03)
 - **Azione**: applicare i flag `[T6]` della matrice — banner 📸 sui 2 file
   Ring top-level; deprecare le copie html doppie della scheda Bracieri
   (`copy 2`, `Final`); `git mv` `Avvneture_per_nani.txt` (refuso);
   spostare/marcare il tooling locale di Tordek (`apply_styles.py` ecc.);
   chiedere al DM (flag, non agire) la rimozione dei temporanei Word.
-- **Accettazione**: ogni file della matrice ha lo stato che la matrice
+- **Fatto**: banner 📸 aggiunti a `Ring of Chaotic Illumination.md` e
+  `Ring_of_chaotic_illumination-master.md` (top-level, puntano al MASTER
+  *Reforged*); banner 📸 in testa alle 2 copie HTML duplicate della scheda
+  Bracieri (`... Final.html`, `... copy 2.html`); `Avvneture_per_nani.txt`
+  (refuso, byte-identico al canonico) rinominato via `git mv` in
+  `DEPRECATO-Avvneture_per_nani-refuso-duplicato.txt` con nota in testa;
+  tooling locale di Tordek marcato in `README-tooling-locale.md` (path
+  hardcoded alla macchina originale, non spostato in `scripts/` per non
+  farlo passare per tool generico del repo); temporanei Word **non
+  toccati** (restano flag `🗑️ in attesa di conferma DM`, coerente con la
+  domanda aperta già in checklist §5). `ARTEFATTI-MATRICE-VERSIONI.md`
+  aggiornata per ogni riga toccata. Zero contenuti narrativi/meccanici
+  modificati.
+- **Accettazione** ✅: ogni file della matrice ha lo stato che la matrice
   dichiara; matrice aggiornata; zero contenuti modificati.
 
 ### T6b. Consolidamenti Corona/Aegis/Cerebromorphosis (engine: **Opus 4.8**)
@@ -245,8 +279,8 @@
 ## §5 — Checklist avanzamento
 
 - [x] T1 · [x] T2 · [x] T3 · [x] T4 — **LOTTO T-A COMPLETO (2026-07-03)**
-- [ ] T5a · [ ] T5b · [ ] T5c — lotto mappe
-- [ ] T6a · [ ] T6b · [ ] T6c — lotto artefatti
+- [x] T5a (sessione 2, 2026-07-03) · 🟡 T5b in corso (sessione 4: Campo Drow 1-2 + Hammerfist assedio) · [ ] T5c — lotto mappe
+- [x] T6a (sessione 3, 2026-07-03) · [ ] T6b · [ ] T6c — lotto artefatti
 - [ ] T7 · [ ] T8 · [ ] T9 — schede, sinergie, propagazione
 - [x] T-D1…T-D5 — decisioni acquisite (2026-07-03); domande aperte:
   SOLO le conferme DM inline (T6c colonne §6; rimozione temporanei Word)

@@ -77,3 +77,36 @@ Per incoraggiare creatività:
   - pozzo/trincea abbandonata che permette di emergere vicino al cerchio.
 
 Questo permette di usare teletrasporto, furtività, forme animali (druidi‑orsi), volo Tiri‑Kitor, ecc., non solo carica frontale.
+
+---
+
+### 🌍 AMBIENTE (companion T5c, consolidato dai 3 anelli sopra)
+
+*Mappa in prosa (niente griglia-emoji → nessun SVG). Scala 1,5 m/quadretto.
+Pianoro 40×30, tre anelli concentrici sud→nord.*
+
+| Anello | Dove | Terreno / copertura |
+|---|---|---|
+| **Esterno — Trincee** | prima linea (trincea 2 q larga, 20-24 lunga) + seconda linea +3-4 q di quota | trincea = **copertura totale** abbassati, **3/4** attaccando; tra le linee buche/trappole (Riflessi CD 15) |
+| **Medio — Guardiani** | area 20×15 al centro, rocce/menhir ("anello fratturato") | **copertura media** dietro le rocce |
+| **Interno — Cerchio rituale** | piattaforma circolare Ø12 q, rialzata 1-2 q | 3 foci (Fuoco NO / Acido NE / Elettricità S); **cerchio di rune Ø~3 q**: entrandovi durante il rito, Volontà CD 18 o **2d6 elementale casuale/round** finché il rito non è spezzato |
+| Varchi alternativi | sentiero nascosto sul fianco + pozzo/trincea abbandonata | permettono furtività/volo/teletrasporto per emergere vicino al cerchio |
+
+### ⚔️ TATTICHE (companion T5c)
+
+- **Esterno**: 8-12 hobgoblin nelle trincee (come massa) + **1 Githyanki Knight** su altura laterale (carica o teletrasporto sui PG).
+- **Medio**: **drago giovane adulto** che si libra sopra l'anello di rocce (quota 6-9 m) + 2-4 cultisti draconici dietro le rocce (buff/attacco).
+- **Interno**: 3-5 **ritualisti** (stregoni/chierici di Tiamat) ai punti cardinali del cerchio; se l'**artefatto maligno** è stato rubato in Fase 0, è su un piedistallo vicino al focus principale (potenzia il rito).
+- **Obiettivo PG**: **spezzare il rito** (uccidere i ritualisti / dissolvere il cerchio) prima che alimenti l'Avatar (Fase 3). Aggiramenti incoraggiati (volo/furtività) per evitare la carica frontale.
+
+### 🔄 EVOLUZIONE (companion T5c — penetrazione degli anelli)
+
+| Stato | Trigger | Cosa cambia | Effetto |
+|---|---|---|---|
+| A — Anello esterno | i PG arrivano | hobgoblin+Gith Knight contrastano | pressione sulle trincee |
+| B — Anello medio | superate le trincee | drago+cultisti ingaggiano | minaccia aerea + buff |
+| C — Cerchio interno | i PG entrano nel rito | danno d'area del cerchio runico (2d6/round) | corsa a spezzare il rito |
+| D — Rito spezzato | ritualisti morti / cerchio dissolto | il cerchio si spegne | l'Avatar (Fase 3) arriva indebolito `[se il rito era incompleto]` |
+
+> Esiti aperti (D13): il rito completato o spezzato, e con quale approccio,
+> dipende dai PG e dai dadi — non un copione.

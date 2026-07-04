@@ -82,3 +82,37 @@ Segna aree:
   - I PG non subiscono danni ma avvertono la pressione magica (ti aiuta a scoraggiare ondate che si ammucchiano dentro il cerchio).
 
 - Elementi di arredo (banchi, fontana, piccoli alberi) forniscono copertura, ma non devono bloccare troppo il movimento.
+
+---
+
+### 🌍 AMBIENTE (companion T5c, consolidato dal layout della piazza)
+
+*Mappa in prosa (niente griglia-emoji → nessun SVG). Scala 1,5 m/quadretto.
+Piazza quasi circolare 30×30 al centro di Rethmar.*
+
+| Elemento | Dove | Effetto meccanico 3.5 |
+|---|---|---|
+| Cerchio del Circolo degli Otto | centro, raggio 4-5 q, 8 posizioni caster (punti cardinali+diagonali) | i caster completano il Mythal; **da proteggere** |
+| Focus centrale (nodo Mythal) | centro del cerchio | fonte/obelisco/albero antico/statua |
+| Runa del Mythal | cerchio centrale | **nemici extraplanari**: entrando, Volontà CD 18 o **3d6 sacri + spinta 1d4 q** fuori; i PG sono immuni (scoraggia l'ammasso nemico nel cerchio) |
+| 4 Statue di Rethmar | angoli (6,6 · 6,24 · 24,6 · 24,24) | pre-attivazione = **copertura totale**; post-Mythal = **Golem di Pietra colossali** |
+| 4 strade N/S/E/O + vicoli | accessi alla piazza | strade = ondate; vicoli = imboscate/ingressi furtivi (gith/assassini) |
+
+### ⚔️ TATTICHE (companion T5c)
+
+- **Obiettivo PG**: **proteggere gli 8 caster del Circolo** (a 3-4 q dal centro) mentre completano il rituale del Mythal. I PG stanno sul bordo del cerchio (righe 14-16) e si muovono liberamente ma **tengono d'occhio i caster**.
+- **Alleati**: nani in blocchi dietro gli ingressi N/S/E/O; 1-2 Druidi-Orsi (token grandi) pattugliano il bordo; Tiri-Kitor sopra la scena (aerei).
+- **Minacce a rotazione** (una direzione diversa per round): diavoli/erinni dalle strade est/ovest; **Githyanki che teletrasportano nel cerchio** (compaiono direttamente sui caster); drago/mostro che plana e atterra al margine.
+- La runa del Mythal è la difesa passiva del cerchio: gli extraplanari che vi si ammassano si prendono 3d6 sacri.
+
+### 🔄 EVOLUZIONE (companion T5c — completamento del Mythal)
+
+| Stato | Trigger | Cosa cambia sulla griglia | Effetto meccanico |
+|---|---|---|---|
+| A — Rito in corso | i caster attivano il Mythal | statue = copertura totale; minacce a rotazione sui caster | i PG difendono gli 8 punti |
+| B — Caster perso | un caster del Circolo cade | posizione scoperta | il Mythal **rallenta/vacilla** (protezione ridotta) `[INFERRED — soglia esatta al DM]` |
+| C — Mythal completo | gli 8 reggono fino alla fine | **le 4 statue si animano in Golem colossali** | escono a spazzare macchine/giganti/draghi residui (o 1-2 restano a scudo) → svolta della battaglia |
+
+> Esiti aperti (D13): completare il Mythal dipende da quanti caster i PG
+> riescono a proteggere; le statue-Golem sono la ricompensa di quella difesa,
+> non un evento scriptato.

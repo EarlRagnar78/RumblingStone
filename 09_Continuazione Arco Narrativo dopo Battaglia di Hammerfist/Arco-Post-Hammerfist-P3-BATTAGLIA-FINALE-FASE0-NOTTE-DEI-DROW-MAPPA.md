@@ -49,3 +49,37 @@ Camera Artefatto:
   - in zone dove i drow hanno trafitto pareti: terreno difficile, TS Tempra CD 15 per evitare malus minori (nausea leggera o –1).  
 - Muri delle cripte:
   - Durezza 8, pf 90; l’Aberrazione può abbatterli in 2–3 colpi se non fermata.
+
+---
+
+### 🌍 AMBIENTE (companion T5c, consolidato dalla mappa in prosa sopra)
+
+*Mappa in prosa (niente griglia-emoji → nessun SVG). Scala 1,5 m/quadretto.*
+
+| Elemento | Dove | Effetto meccanico 3.5 |
+|---|---|---|
+| Navata del Tempio (30×20) | porta ovest sfondata (corridoio 4 q), altare est +2 q (3 largo) | banchi = **copertura leggera**; 4 colonne/lato = copertura (e bersagli per l'Aberrazione) |
+| Porte laterali nord/sud | a metà navata | ingressi alternativi per i PG (fiancheggiamento) |
+| Cripte (20×20) | scala a chiocciola dal centro navata | corridoio a T con nicchie-tomba (copertura), 2 camere laterali |
+| Camera dell'Artefatto (12×12) | in fondo a est | piedistallo 2×2 + **cerchio di rune raggio 3 q**; spazio per 6-8 creature |
+| Spore fungine | pareti trafitte dai drow | **terreno difficile**; Tempra CD 15 o −1/nausea leggera |
+| Muri delle cripte | — | Durezza 8, PF 90; l'Aberrazione li abbatte in 2-3 colpi |
+
+### ⚔️ TATTICHE (companion T5c — statblock nel file TESTO)
+
+- **Forze** (dettaglio: `...FASE0-NOTTE-DEI-DROW-TESTO.md` §4): High Priestess Drow (CR 13, comando), 4 Drow Fungal Minion, 1 Aberrazione Fungina Alfa (CR 12, "ariete vivente"). CR complessivo 14-15.
+- **Nemico**: la Priestess punta a **completare il rito** che stacca l'Artefatto dal vincolo sacro (3 round di concentrazione non consecutivi); i Minion tengono impegnati i PG; l'Aberrazione sfonda muri/colonne verso le cripte.
+- **PG**: entrano da porta o porte laterali; possono interrompere il rito (uccidere la Priestess) o bloccarlo (*Dissolvi/Disgiunzione/Consacrare*).
+- **↩ Eco P3B (T9)**: se Tordek ha rifiutato il respiro, qui riemergono i veleni drow su Hella (vedi banner nel file TESTO §1).
+
+### 🔄 EVOLUZIONE (companion T5c — clock del rito)
+
+| Stato | Trigger | Cosa cambia | Effetto |
+|---|---|---|---|
+| A — Allarme in navata | scatta l'allarme | drow tra colonne/banchi; Aberrazione verso est | i PG inseguono verso le cripte |
+| B — Cripte | i PG scendono | scontro nei corridoi a T (stretti, copertura) | pressione dei Minion |
+| C — Camera Artefatto | rito in corso | ogni round completato = 1 "segmento di sblocco" (a 3 = Artefatto libero) | corsa contro il clock del rito |
+| D — Esito | decisione PG | difendere / distruggere / lasciare l'Artefatto | impatti sulle Fasi 1-2 (vedi TESTO §6-7) |
+
+> Esiti aperti (D13): l'esito è dei dadi e delle scelte dei PG (fermano il
+> rito? distruggono l'Artefatto?), non un copione — vedi il file TESTO.

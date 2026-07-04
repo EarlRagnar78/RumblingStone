@@ -137,7 +137,7 @@
 - **Accettazione** ✅: censimento completo; ogni mappa parsabile ha il suo
   SVG; i KO hanno la riga di diagnosi (niente fix in questo lotto).
 
-### T5b. Companion per mappe CON tattiche esistenti (engine: **Sonnet 5**) — 🟡 IN CORSO (sessione 4, 2026-07-03)
+### T5b. Companion per mappe CON tattiche esistenti (engine: **Sonnet 5**) — ✅ FATTO (mappe da giocare; sessioni 4+9, 2026-07-03/04)
 - **Azione**: per le mappe che già hanno sezioni tattiche/statblock
   sparse (censimento T5a), riorganizzare nei 3 blocchi del template —
   SOLO consolidamento, zero invenzioni; aggiunte inevitabili flaggate
@@ -150,15 +150,25 @@
   dalle sezioni sparse preesistenti (Tattiche Raid/Sabotaggio, Posizioni
   PG, Distanze, Punti Deboli) — zero dati inventati, [INFERRED] sulle
   soglie di morale/evoluzione non esplicite nei file originali.
-- **Resta da fare** (prossima sessione T5b): Portale-Forgia-L1 map2 (Sala
-  della Forgia, hub tuttora in uso P4→P3B→P5), Portale-Forgia-L1 map1 e
-  L2 map2 (Belkram/Elder Fire Elemental, già giocati — priorità bassa),
-  Hammerfist L1/L3 + Lotto-3-FINALE (ARC-08, non ancora giocato ma non
-  "assedio" in senso stretto), Hammerfist-Lotto-1 (⚠️ DEPRECATED,
-  priorità minima).
-- **Accettazione** (parziale, per le mappe trattate): checklist ①-⑦ del
-  template soddisfatta; nessun dato nuovo non flaggato. Non ancora
-  soddisfatta per l'intero lotto (mappe restanti sopra).
+- **Fatto (sessione 9)**: aggiunti i 3 blocchi AMBIENTE/TATTICHE/EVOLUZIONE
+  a tutte le mappe REVISED delle parti da giocare mancanti — **ARC-07 Forgia**:
+  PF-1 Stanza della Corona (boss Belkram), PF-2 Sala della Forgia (hub
+  rituale P4→P3B→P5), PF-3 Corridoio del Fuoco, PF-4 Forgia Adamantina (boss
+  Elder Fire Elemental); **ARC-08**: Hammerfist-L1 (ricognizione/Torrione),
+  Hammerfist-L3 (evacuazione/Passaggi Antichi). Consolidati dalle sezioni
+  sparse (POSIZIONI/TATTICA/DISTANZE/HAZARD/LIGHTING), zero invenzioni,
+  [INFERRED] sulle soglie non esplicite. Griglie/SVG invariati (validate_maps
+  verde).
+- **Non serve companion** (già hanno tattiche organizzate per mappa):
+  `Portale-Forgia-L3-FINALE-REVISED.md` (Xorn Fauci di Diamante, skill
+  challenge, Terros CR 16 — ha già SCHEMA TATTICO per mappa; il suo SVG
+  manca solo per il formato a lettere, censito nota 2) e
+  `Hammerfist-Lotto-3-FINALE.md` (SCHEMA TATTICO per ognuna delle 5 mappe,
+  in gran parte doppioni delle REVISED già trattate).
+- **Fuori priorità**: `Hammerfist-Lotto-1` (⚠️ DEPRECATED) e `Lotto-2`
+  (variante della L2-REVISED già fatta) — non parti da giocare canoniche.
+- **Accettazione** ✅ (per le mappe da giocare): checklist ①-⑦ del template
+  soddisfatta su ogni mappa REVISED trattata; nessun dato nuovo non flaggato.
 
 ### T5c. Companion generativi + griglie mancanti (engine: **Opus 4.8**)
 - **Evidenza**: Campo Drow 2 ha griglia volutamente abbreviata
@@ -171,8 +181,26 @@
   bilanciamento EL/GS coerente coi ricalibrati (metodo `Terros.md`) e
   morale/contromosse stile RHoD; statblock SOLO per riferimento a file
   esistenti o catalogo.
-- **Accettazione**: zero mappe senza companion negli archi 07-09; EL
-  dichiarati; esiti aperti (D13); [INFERRED] su ogni scelta di design.
+- **Stato (sessione 9)**: ⏳ **scoped/rinviato alle parti imminenti** (la
+  regola T5c è "solo per le parti effettivamente imminenti al tavolo"; oggi
+  il tavolo è ad **ARC-07 P4**, state.md §0). Punti chiusi/coperti:
+  - **Parti imminenti (ARC-07/08)**: coperte da T5b (companion su tutte le
+    REVISED da giocare); `Portale-Forgia-L3-FINALE` (Camera Sferica Boss /
+    Terros CR 16, il climax P5) **ha già tattiche organizzate** — nessuna
+    generazione necessaria, solo l'SVG manca per il formato a lettere
+    (censito nota 2; riscrittura a griglia-emoji o estensione del parser
+    resta opzionale).
+  - **File 0-byte**: già risolto — `SUPPLEMENTO-P1C-...-Description.md` ha
+    contenuto (censimento nota 7), riferimento nel piano superato.
+  - **Rinviato (ARC-09 NON imminente)**: completare la griglia **Campo Drow 2**
+    (80×53) e scrivere griglie/tattiche ex-novo per i **16 file narrativi
+    ARC-09 P2/P3** (Torre, Torneo, Palio, Battaglia Finale FASE0-4, ecc.):
+    lavoro generativo Opus da fare quando l'arco diventa imminente al tavolo,
+    non ora (evita di generare in anticipo materiale che il DM potrebbe
+    rimodellare). I companion di Campo Drow 1-2 esistono già (T5b, PR#23).
+- **Accettazione**: zero mappe senza companion **negli archi imminenti** (✅);
+  il generativo ARC-09 non imminente è dichiaratamente rinviato; EL/CR
+  dichiarati, esiti aperti (D13), [INFERRED] su ogni scelta di design.
 
 ## §3 — LOTTO T-C: Artefatti di tutti i PG (T6-T8) e propagazione rituale (T9)
 
@@ -365,7 +393,7 @@
 ## §5 — Checklist avanzamento
 
 - [x] T1 · [x] T2 · [x] T3 · [x] T4 — **LOTTO T-A COMPLETO (2026-07-03)**
-- [x] T5a (sessione 2, 2026-07-03) · 🟡 T5b in corso (sessione 4: Campo Drow 1-2 + Hammerfist assedio) · [ ] T5c — lotto mappe
+- [x] T5a (sessione 2) · [x] T5b (sessioni 4+9: companion su tutte le mappe REVISED da giocare — ARC-07 PF-1..4, ARC-08 L1/L2/L3, ARC-09 Campo Drow 1-2) · ⏳ T5c rinviato alle parti imminenti (generativo ARC-09 non imminente; tavolo ad ARC-07 P4) — lotto mappe
 - [x] T6a (sessione 3, 2026-07-03) · [x] T6b (sessioni 6-8, 2026-07-04: Aegis master + Cerebro eletto + Corona consolidata/riconciliata + campaign-artifacts sync) · [ ] T6c (gated: conferma DM) — lotto artefatti
 - [x] T7 (sessione 7, 2026-07-04: schede Aegis/Ring/Bracieri/Collana) · [ ] T8 (gated: quest ARC-09 giocata) · [x] T9 cross-link (sessione 5, 2026-07-04; chiusura post-gioco P3B ancora gated) — schede, sinergie, propagazione
 - [x] T-D1…T-D5 — decisioni acquisite (2026-07-03); domande aperte:

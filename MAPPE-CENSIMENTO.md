@@ -29,10 +29,10 @@
 
 | File | Mappa | Scala dichiarata | Griglia parsabile | Companion | SVG |
 |---|---|---|---|---|---|
-| `Mappe/Portale-Forgia-L1-REVISED-UltraClear.md` | MAPPA PF-1: Stanza della Corona (20×14) | Sì | Sì | nessuno | ok |
-| `Mappe/Portale-Forgia-L1-REVISED-UltraClear.md` | MAPPA PF-2: Sala della Forgia Eterna (27×27) | Sì | Sì | nessuno | ok |
-| `Mappe/Portale-Forgia-L2-REVISED-UltraClear.md` | Mappa #1 (21×53) — titolo grezzo `[COLONNA K = 15m da Nord]` | Sì | Sì (titolo automatico impreciso — vedi nota 1) | nessuno | ok |
-| `Mappe/Portale-Forgia-L2-REVISED-UltraClear.md` | MAPPA PF-4: Forgia Adamantina (33×25) | Sì | Sì | nessuno | ok |
+| `Mappe/Portale-Forgia-L1-REVISED-UltraClear.md` | MAPPA PF-1: Stanza della Corona (20×14) | Sì | Sì | **completo (T5b, s9)** | ok |
+| `Mappe/Portale-Forgia-L1-REVISED-UltraClear.md` | MAPPA PF-2: Sala della Forgia Eterna (27×27) | Sì | Sì | **completo (T5b, s9)** | ok |
+| `Mappe/Portale-Forgia-L2-REVISED-UltraClear.md` | Mappa #1 (21×53) — titolo grezzo `[COLONNA K = 15m da Nord]` | Sì | Sì (titolo automatico impreciso — vedi nota 1) | **completo (T5b, s9 — PF-3 Corridoio del Fuoco)** | ok |
+| `Mappe/Portale-Forgia-L2-REVISED-UltraClear.md` | MAPPA PF-4: Forgia Adamantina (33×25) | Sì | Sì | **completo (T5b, s9)** | ok |
 | `Mappe/Portale-Forgia-L3-FINALE-REVISED.md` | Foresta di Cristallo Gigante + Camera Sferica Boss + altre (4 fence) | No (usa "1.5m/5ft" solo in legenda) | **No** | n/a | **KO — nota 2** |
 | `Mappe/TACTICAL-GRIDS-COMPLETE.md` | Spec testuali (coordinate in prosa, no griglia visuale) | Sì (in header standard) | **No** | n/a | **KO — nota 3** |
 | `Mappe/Atlante-Visivo-Mappe.md` | — (file STUB dichiarato, rimanda a TACTICAL-GRIDS) | — | No | — | n/a |
@@ -42,9 +42,9 @@
 
 | File | Mappa | Scala dichiarata | Griglia parsabile | Companion | SVG |
 |---|---|---|---|---|---|
-| `Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md` | Dirupo Mortale / Campo Hobgoblin (40×40) | Sì | Sì | nessuno | ok |
+| `Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md` | Dirupo Mortale / Campo Hobgoblin (40×40) | Sì | Sì | **completo (T5b, s9)** | ok |
 | `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md` | Fortezza vista dall'alto (50×80) — **ARC-08 assedio** | Sì | Sì | **completo (T5b, sessione 4)** | ok |
-| `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` | MAPPA H3-1: Ingresso Passaggi Antichi (40×40) | Sì | Sì | nessuno | ok |
+| `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` | MAPPA H3-1: Ingresso Passaggi Antichi (40×40) | Sì | Sì | **completo (T5b, s9)** | ok |
 | `Mappe/Hammerfist-Lotto-1-Ricognizione.md` ⚠️ DEPRECATED (A8) | Mappa #1 (20×100) — titolo grezzo intestazione colonne | Sì | Sì (titolo automatico impreciso — nota 1) | parziale (nota testuale "Copertura Roccia", "Canyon stretto" inline, non nei 3 blocchi) | ok |
 | `Mappe/Hammerfist-Lotto-1-Ricognizione.md` ⚠️ DEPRECATED (A8) | Mappa #2 (28×30) | Sì | Sì | nessuno | ok |
 | `Mappe/Hammerfist-Lotto-2-Assedio.md` | MAPPA 2A: Fortezza vista dall'alto (34×80) | Sì | Sì | nessuno | ok |

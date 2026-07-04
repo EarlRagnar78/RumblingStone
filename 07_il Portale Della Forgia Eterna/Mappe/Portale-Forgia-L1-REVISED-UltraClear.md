@@ -220,6 +220,44 @@ VISTA INGRESSO (PG Guardano Sud) ↓
 
 ---
 
+### 🌍 AMBIENTE (companion T5b, consolidato da POSIZIONI + HAZARD + LIGHTING + DISTANZE)
+
+**SVG**: `rendered/Portale-Forgia-L1-REVISED-UltraClear_map01_mappa-pf-1-stanza-della-corona-boss-fight-belkra.svg`
+
+| Elemento | Dove | Effetto meccanico 3.5 |
+|---|---|---|
+| 4 Pilastri di Mithril 🟪 | NW D-E/3-4, NE O-P/3-4, SW D-E/11-12, SE O-P/11-12 (2×2 ognuno) | **copertura totale +8 CA**; PF 180, Durezza 15 (di fatto indistruttibili) |
+| Trono elevato ⬛👑 | dais H-K/9-10, trono I-J/9-10 (+1,5 m) | **+1 CA, +2 al colpo** a chi sta sul dais |
+| Corona d'Adamantio 👑 | sopra il trono, J09 | obiettivo: prendibile a Belkram sconfitto |
+| Cerchio Demoniaco | 10 m diam. centrato J09 (7×7, area G-M/06-12) | **solo visivo** (nessun effetto meccanico); rune viola quando Belkram è attivo |
+| Torce alle mura 🏮 | ~1 ogni 6 m lungo le pareti | luce fioca 6 m ciascuna, overlap = stanza illuminata |
+| Bagliore della Corona 👑 | quando attiva: luce intensa 9 m dal trono | niente ombre al centro → **teleport-ombra dei Yochlol meno efficace** |
+
+**Distanze chiave**: Porta Nord (J03) → Belkram (J09) = **9 m/6 q (1 carica!)**; Xanathira (J13) → trono = 6 m/4 q; Yochlol (E06/O07) → PG start (J03/K03) = 9 m/6 q (1 teleport).
+
+### ⚔️ TATTICHE (companion T5b, consolidato da TATTICA COMBATTIMENTO)
+
+- **Belkram** (boss, CR 14): apertura *Unholy Blight* (raggio 3 m, 8d8 vs Buono) alzandosi dal trono; poi **full attack** (Slam +23, 2d6+16 ×2); +1 CA per l'elevazione del dais. È il bersaglio prioritario (focus fire).
+- **Yochlol ×2** (demoni): *shadow step* 6 m senza AdO per flancare; *Ragnatela* al centro o tentacoli in mischia. **Morale: fuggono in teleport se Belkram scende < 50% PF.** ⚠ Il Bagliore della Corona attiva riduce l'affidabilità del loro teleport-ombra (serve buio ai bordi).
+- **Xanathira** (assassina): **Nascosta** (Nascondersi +12 vs Osservare) fino al round 3-4; *Death Attack* (Tempra CD 19 o paralisi) su curatore/incantatore. **Fanatica: combatte fino alla morte.**
+
+### 🔄 EVOLUZIONE (companion T5b, consolidato dalle 4 fasi + esiti aperti)
+
+| Stato | Trigger | Cosa cambia sulla griglia | Effetto meccanico |
+|---|---|---|---|
+| A — Apertura (round 1) | iniziativa | Belkram si alza dal trono; Yochlol teleport ai fianchi PG | AoE *Unholy Blight* + minaccia sui fianchi |
+| B — Engagement (round 2-4) | i PG caricano | Thorik carica il trono (J03→J09); Yochlol Ragnatela/mischia; Xanathira si avvicina nascosta | mischia piena, controllo del campo |
+| C — Climax (round 5-7) | ingaggio del boss | Belkram full attack; Xanathira si rivela con la Death Attack | picco di letalità sul curatore |
+| D — Risoluzione (round 8+) | **Belkram < 50% PF** | Yochlol fuggono in teleport; Xanathira resta a morire | Belkram a 0 PF → **Corona disponibile** |
+
+> Esiti aperti (D13): se i PG **mantengono attivo il Bagliore della Corona**,
+> i Yochlol perdono il teleport-ombra affidabile; se **Xanathira è
+> individuata presto** (Osservare vs Nascondersi +12) la Death Attack può
+> essere prevenuta. Trigger ai dadi e alle scelte dei PG, mai copione.
+> `[INFERRED — soglie/percentuali esatte a discrezione del DM]`
+
+---
+
 ## MAPPA PF-2: SALA DELLA FORGIA ETERNA (Hub Divino)
 **Dimensioni:** 40m diameter ottagonale (27 colonne × 27 righe, 1.5m/quadrato)  
 **Incontro:** Exploration, Moradin Voice, No Combat
@@ -332,6 +370,45 @@ NOTA: A6 🕐 TIME PORTAL, A7, A8 altri affreschi non mostrati per brevità (SW,
 - Arrivo: From Crown Room (Porta Sud) → Materializzano Altare Centro
 - Position Start: Colonne M-O, Righe 13-15 (on altar platform +3m)
 - Moradin Voice: Emanates from altar (no physical form, divine presence)
+
+---
+
+### 🌍 AMBIENTE (companion T5b, consolidato da POSIZIONI PRECISE)
+
+**SVG**: `rendered/Portale-Forgia-L1-REVISED-UltraClear_map02_mappa-pf-2-sala-della-forgia-eterna-hub-divino.svg`
+
+| Elemento | Dove | Effetto meccanico 3.5 |
+|---|---|---|
+| Altare di Moradin ⭐ | M-O/13-15, **+3 m elevato**, 8 scale radiali (1,5 m) | rune divine = **luce intensa 18 m**; centro focale dei rituali; +3 m = vantaggio di quota se scoppia mischia |
+| 8 Pilastri adamantini 🪨 | tra gli affreschi (N04, U04, H08, U23, N24, E23, E08, H04) | **indistruttibili**; copertura per chi vi si ripara |
+| Affresco/Portale **A3 🔥 Fuoco** | Y-Z/16-17 | **ATTIVO** — soglia al Piano del Fuoco (P3) |
+| Affresco/Portale **A5 🌿 Terra** | M-O/25-26 | **ATTIVO** — soglia al Piano della Terra (P4) |
+| Affresco/Portale **A6 🕐 Tempo** | F-G/20 | **ATTIVO** — soglia temporale (Topazio / P5) |
+| Affreschi inattivi A1/A2/A4/A7 | pareti | narrativi; A8 (NW) «Ritorno Trionfale» = **profetico**, inattivo |
+
+### ⚔️ TATTICHE (companion T5b — hub rituale, non arena)
+
+- **Nessun incontro ostile di default**: la Sala è l'**hub divino** dei
+  rituali (P4→P3B→P5). Le "tattiche" qui sono **logistica rituale**: l'Altare
+  è il punto focale del **Rituale del Cuore di Moradin** (resurrezione di
+  Hella, P3B) e il nodo da cui si aprono i tre portali attivi.
+- **Se scoppia combattimento** (intrusione/imboscata a scelta del DM): i PG
+  materializzano sull'Altare (+3 m, quota e luce intensa a loro favore); gli
+  **8 pilastri** offrono copertura; la stanza è ampia e illuminata (poche
+  ombre → furtività difficile per gli assalitori). `[INFERRED — nessun
+  incontro scritto per questa sala: eventuale scontro è a discrezione del DM]`
+
+### 🔄 EVOLUZIONE (companion T5b — stato dei portali per rituale)
+
+| Stato | Trigger | Cosa cambia sulla griglia | Effetto |
+|---|---|---|---|
+| A — Hub attivo (attuale) | arrivo dalla Stanza della Corona | A3 Fuoco, A5 Terra, A6 Tempo **attivi**; A1/A2/A4/A7/A8 inattivi | i 3 portali guidano ai Piani (P3/P4/P5) |
+| B — Rituale del Cuore in corso | P3B (resurrezione Hella) | l'Altare pulsa; energia convergente dai 3 portali | la scena del rituale (vedi `PortaleForgia-P3B-...`) |
+| C — Ritorno | completamento dell'Assedio (P5) | **A8 «Ritorno Trionfale» si attiva** (profezia adempiuta) | soglia di uscita/epilogo `[INFERRED — needs DM confirmation]` |
+
+> Esiti aperti (D13): quali portali il party attraversa e in che ordine è una
+> scelta dei PG; l'attivazione di A8 è legata all'esito dell'Assedio, non a un
+> copione.
 
 ---
 

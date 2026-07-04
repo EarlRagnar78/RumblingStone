@@ -170,7 +170,7 @@
 - **Accettazione** ✅ (per le mappe da giocare): checklist ①-⑦ del template
   soddisfatta su ogni mappa REVISED trattata; nessun dato nuovo non flaggato.
 
-### T5c. Companion generativi + griglie mancanti (engine: **Opus 4.8**)
+### T5c. Companion generativi + griglie mancanti (engine: **Opus 4.8**) — ✅ FATTO (sessioni 9-10, 2026-07-04)
 - **Evidenza**: Campo Drow 2 ha griglia volutamente abbreviata
   (`[continues...]`); `SUPPLEMENTO-P1C-...-Description.md` è **0 byte**
   (task ARC-09 §161 aperto); molte mappe ARC-07/08 non hanno né tattiche
@@ -200,15 +200,20 @@
     (validate_maps verde). ⚠️ Discrepanza dimensioni 65 col disegnate vs 80
     dichiarate flaggata `[needs DM confirmation]` nel sorgente (completata
     coerente con le posizioni, non allargata a foresta vuota).
-  - **Rinviato (ARC-09 NON imminente)**: scrivere griglie/tattiche ex-novo per
-    i **16 file narrativi ARC-09 P2/P3** (Torre, Torneo, Palio, Battaglia
-    Finale FASE0-4, ecc.): lavoro generativo Opus da fare quando l'arco
-    diventa imminente al tavolo, non ora (evita di generare in anticipo
-    materiale che il DM potrebbe rimodellare). I companion di Campo Drow 1-2
-    esistono già (T5b, PR#23).
-- **Accettazione**: zero mappe senza companion **negli archi imminenti** (✅);
-  il generativo ARC-09 non imminente è dichiaratamente rinviato; EL/CR
-  dichiarati, esiti aperti (D13), [INFERRED] su ogni scelta di design.
+  - **16 file narrativi ARC-09 P2/P3** ✅ **FATTI (sessione 10)**: aggiunto il
+    companion 3-blocchi AMBIENTE/TATTICHE/EVOLUZIONE a **tutti e 16** —
+    P1 Cerchio Hellas (Treant+Rituale+Campi Drow A/B/C); P2A Torre Invisibile
+    L1-L5 (enigmi + boss Zalkatar a 3 fasi); P2B Torneo Dauth ×2 (duelli +
+    invasione Githyanki); P2D Palio (corsa a Zone + assalto stalla, già con
+    SVG a mano); P3 Battaglia Finale FASE0-4 (Notte Drow, Assedio, Ritualisti,
+    Avatar, Circolo Mythal); P3 Ghostlord/Sabotaggio/Starsong. Consolidamento
+    dalla prosa esistente (statblock rimandati ai file TESTO/STATBLOCCHI),
+    esiti aperti (D13), [INFERRED] solo su soglie non esplicite.
+  - **Resta opzionale (non serve per l'accettazione)**: dare a questi 16 una
+    griglia-emoji per l'SVG è lavoro puramente estetico — da fare solo se il
+    DM vuole la resa visuale per una scena specifica.
+- **Accettazione** ✅: **zero mappe senza companion negli archi 07-09**;
+  EL/CR dichiarati; esiti aperti (D13); [INFERRED] su ogni scelta di design.
 
 ## §3 — LOTTO T-C: Artefatti di tutti i PG (T6-T8) e propagazione rituale (T9)
 
@@ -401,7 +406,7 @@
 ## §5 — Checklist avanzamento
 
 - [x] T1 · [x] T2 · [x] T3 · [x] T4 — **LOTTO T-A COMPLETO (2026-07-03)**
-- [x] T5a (sessione 2) · [x] T5b (sessioni 4+9: companion su tutte le mappe REVISED da giocare — ARC-07 PF-1..4, ARC-08 L1/L2/L3, ARC-09 Campo Drow 1-2) · ⏳ T5c rinviato alle parti imminenti (generativo ARC-09 non imminente; tavolo ad ARC-07 P4) — lotto mappe
+- [x] T5a (sessione 2) · [x] T5b (sessioni 4+9: companion su tutte le mappe REVISED da giocare) · [x] T5c (sessioni 9-10: griglia Campo Drow 2 completata + companion su tutti i 16 file narrativi ARC-09) — **LOTTO MAPPE COMPLETO** (resta opzionale/estetico solo l'SVG dei 16 narrativi)
 - [x] T6a (sessione 3, 2026-07-03) · [x] T6b (sessioni 6-8, 2026-07-04: Aegis master + Cerebro eletto + Corona consolidata/riconciliata + campaign-artifacts sync) · [ ] T6c (gated: conferma DM) — lotto artefatti
 - [x] T7 (sessione 7, 2026-07-04: schede Aegis/Ring/Bracieri/Collana) · [ ] T8 (gated: quest ARC-09 giocata) · [x] T9 cross-link (sessione 5, 2026-07-04; chiusura post-gioco P3B ancora gated) — schede, sinergie, propagazione
 - [x] T-D1…T-D5 — decisioni acquisite (2026-07-03); domande aperte:

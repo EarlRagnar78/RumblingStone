@@ -159,14 +159,15 @@
    per i 3 campi drow — la nota nel piano è superata. Nessuna azione
    necessaria in T5c per questo punto; da correggere il riferimento nel
    piano trasversale in un futuro aggiornamento di quel documento.
-8. **16 file "narrativi" di ARC-09 P2/P3**: usano coordinate in prosa
-   (es. "Zona PG iniziale: File 4, colonne 8–24") invece di griglie
-   emoji-cella. Non hanno mai avuto un master in formato griglia — non sono
-   quindi "griglie da riparare" ma un genere di file diverso (piano di
-   combattimento testuale). Se il DM vuole la stessa qualità visuale di
-   Campo Drow/Hammerfist per questi incontri, serve **scrivere ex novo** una
-   griglia emoji equivalente: lavoro generativo, quindi **T5c (Opus 4.8)**,
-   non T5a/T5b.
+8. **16 file "narrativi" di ARC-09 P2/P3** — **COMPANION FATTI (T5c,
+   2026-07-04)**: usano coordinate in prosa invece di griglie emoji-cella.
+   Ora **tutti e 16 hanno il companion 3-blocchi** AMBIENTE/TATTICHE/EVOLUZIONE
+   consolidato dalla prosa (P1 Cerchio Hellas; P2A Torre L1-L5; P2B Torneo x2;
+   P2D Palio; P3 Battaglia Finale FASE0-4; P3 Ghostlord/Sabotaggio/Starsong).
+   Resta **opzionale** (non necessario per l'accettazione "zero mappe senza
+   companion") riscrivere ex-novo una griglia-emoji per averne l'SVG: è
+   lavoro puramente estetico, da fare solo se il DM lo vuole per una scena
+   specifica.
 9. **P2D-Palio-Allegati/mappe/*.svg**: 4 SVG già presenti (Palio di
    Channathgate) ma **non generati da questa pipeline** — non hanno un
    master markdown a griglia-emoji corrispondente in

@@ -62,7 +62,7 @@
 | File | Mappa | Scala dichiarata | Griglia parsabile | Companion | SVG |
 |---|---|---|---|---|---|
 | `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md` | Campo Drow 1: Burning Operations Base (53×40) | Sì | Sì | **completo (T5b, sessione 4)** — riportato inline nel sorgente, non solo nel template (nota 5 aggiornata) | ok |
-| `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md` | Campo Drow 2: Forward Base (66×53 — griglia abbreviata `[continues...]`, nota 6) | Sì | Sì (parziale: righe ripetute per compressione, SVG riflette solo ciò che è scritto) | **completo (T5b, sessione 4)** — EVOLUZIONE `[INFERRED]`, griglia comunque da completare in T5c | ok (grid incompleta — T5c) |
+| `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md` | Campo Drow 2: Forward Base (65×53 — **griglia completata in T5c**, nota 6) | Sì | Sì (parziale: righe ripetute per compressione, SVG riflette solo ciò che è scritto) | **completo (T5b, s4)** + **griglia completa (T5c, s10)** | ok |
 | `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO-Description.md` | — (testo narrativo/atmosfera dei 3 campi, non griglia) | — | No | — | n/a — **nota 7: file NON è più 0 byte, contenuto già presente** |
 | `Arco-Post-Hammerfist-P1-MAPPE-COMPLETO.md` | Cerchio di Hellas vs Treant, Rituale (Tre ondate), + altre | Sì (in prosa) | **No** | n/a | **KO — nota 8** |
 | `Arco-Post-Hammerfist-P2A-Torre-PARTE1-MAPPE.md` | Torre — Livello 1 | parziale | **No** | n/a | **KO — nota 8** |
@@ -145,12 +145,14 @@
    riportato inline nel file sorgente
    `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md`, sostituendo la vecchia
    sezione "Tattiche Raid" (stesso contenuto, riorganizzato).
-6. **Campo Drow 2**: la griglia dichiara 80×53 ma il master markdown la
-   abbrevia con `[continues...]` a un certo punto (già noto, vedi piano
-   trasversale §2 T5c). L'SVG generato qui riflette solo le righe
-   effettivamente scritte nel sorgente — è **corretto rispetto al master
-   attuale**, ma il master stesso è incompleto. Completare la griglia è
-   compito di **T5c** (Opus 4.8), non di T5a.
+6. **Campo Drow 2** — **RISOLTO (T5c, 2026-07-04)**: la griglia era
+   abbreviata (`[continues...]` + righe interne saltate). Ora è **completa**:
+   53 righe, larghezza uniforme 65 colonne, strutture posizionate secondo le
+   annotazioni; SVG rigenerato (65×53). ⚠️ La dichiarazione "80×53 / 120 m"
+   resta imprecisa (la griglia disegnata è 65 col ≈98 m): discrepanza
+   flaggata `[needs DM confirmation]` nel file sorgente (Info Generali),
+   completamento fatto coerente con le posizioni testuali, non a 80 con sola
+   foresta.
 7. **SUPPLEMENTO-P1C-...-Description.md**: il piano trasversale (§2, T5c)
    lo cita come "0 byte" (task ARC-09 §161 aperto). Verificato in questa
    sessione: il file **ha già 3276 byte** di contenuto narrativo completo

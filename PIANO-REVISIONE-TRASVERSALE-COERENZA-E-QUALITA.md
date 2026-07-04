@@ -192,12 +192,20 @@
     resta opzionale).
   - **File 0-byte**: già risolto — `SUPPLEMENTO-P1C-...-Description.md` ha
     contenuto (censimento nota 7), riferimento nel piano superato.
-  - **Rinviato (ARC-09 NON imminente)**: completare la griglia **Campo Drow 2**
-    (80×53) e scrivere griglie/tattiche ex-novo per i **16 file narrativi
-    ARC-09 P2/P3** (Torre, Torneo, Palio, Battaglia Finale FASE0-4, ecc.):
-    lavoro generativo Opus da fare quando l'arco diventa imminente al tavolo,
-    non ora (evita di generare in anticipo materiale che il DM potrebbe
-    rimodellare). I companion di Campo Drow 1-2 esistono già (T5b, PR#23).
+  - **Griglia Campo Drow 2** ✅ **FATTA (sessione 10, 2026-07-04)**: era
+    abbreviata (`[continues...]` + righe interne saltate); ora **completa** —
+    53 righe, larghezza uniforme 65 colonne, strutture posizionate secondo le
+    annotazioni (palizzata/cancelli/torretta/recinto ogre/tenda Wyrmlord/
+    tesoro/prigioni), generata con script per uniformità, SVG rigenerato
+    (validate_maps verde). ⚠️ Discrepanza dimensioni 65 col disegnate vs 80
+    dichiarate flaggata `[needs DM confirmation]` nel sorgente (completata
+    coerente con le posizioni, non allargata a foresta vuota).
+  - **Rinviato (ARC-09 NON imminente)**: scrivere griglie/tattiche ex-novo per
+    i **16 file narrativi ARC-09 P2/P3** (Torre, Torneo, Palio, Battaglia
+    Finale FASE0-4, ecc.): lavoro generativo Opus da fare quando l'arco
+    diventa imminente al tavolo, non ora (evita di generare in anticipo
+    materiale che il DM potrebbe rimodellare). I companion di Campo Drow 1-2
+    esistono già (T5b, PR#23).
 - **Accettazione**: zero mappe senza companion **negli archi imminenti** (✅);
   il generativo ARC-09 non imminente è dichiaratamente rinviato; EL/CR
   dichiarati, esiti aperti (D13), [INFERRED] su ogni scelta di design.

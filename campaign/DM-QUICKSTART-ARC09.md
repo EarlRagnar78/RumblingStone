@@ -9,6 +9,23 @@
 `[ACCEPTED — DM-canon]`. March Clock = Day 19. Ritual Clock = 9/18.
 APL = 13.
 
+> **↩ Carry-over dall'ARC-07 — echi del rituale P3B di Hella (T9)**: prima di
+> giocare ARC-09 verifica in `campaign/state.md` **come è stato risolto il
+> rituale di resurrezione di Hella** (ARC-07 P3B). Se un dono è stato
+> **rifiutato**, tre echi si propagano in questo arco e sono già agganciati
+> ai file bersaglio:
+> - **Tordek rifiuta il respiro** → veleni drow, **Fase 0 Notte dei Drow**
+>   (`...FASE0-NOTTE-DEI-DROW-TESTO.md`).
+> - **Thorik / Artemis rifiutano** → prima ferita critica / primo 0 pf di
+>   Hella (`08_.../ARC08-03-REGISTRO-PERDITE.md`).
+> - **Rifiuto totale** → 3 slot-dono vuoti della Collana = 3 quest opzionali
+>   (`Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §2).
+>
+> Tabella completa e default: `07_il Portale Della Forgia
+> Eterna/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` §2-BIS «Il ramo del
+> rifiuto». Se il rituale non è ancora stato giocato, gioca i doni pieni
+> (nessun eco attivo).
+
 ---
 
 ## §1 — Workflow di base (per ogni sessione)

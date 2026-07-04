@@ -67,6 +67,15 @@ Cartella `Artefatti-Pg/Aegis Fang/`:
 | `DEPRECATO-Avvneture_per_nani-refuso-duplicato.txt` | appunti, duplicato byte-identico | 📸 deprecato (T6a: `git mv` dal refuso `Avvneture_per_nani.txt`, banner in testa) |
 | `~$gis Fang.docx`, `~WRL0191.tmp` | file temporanei Word | 🗑️ candidati rimozione — **in attesa di conferma DM** (eccezione D10, non rimossi in T6a) |
 
+> **↩ Eco del rituale P3B (T9)**: se al rituale di Hella **Thorik ha scelto
+> l'alternativa «Filo dell'Ascia»** invece del sangue, **Aegis Fang perde la
+> proprietà *Returning*** fino al pieno risveglio (post-Siege,
+> `05_Aegis_Fang_Final_Awakening.html`): ogni lancio dell'ascia va recuperato
+> a mano. Da riportare nel master `.md` quando verrà estratto (lotto **T6b**).
+> Fonte: `../../07_il Portale Della Forgia
+> Eterna/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` §2-BIS → *Tabella
+> echi*, riga «Alternativa Filo dell'Ascia».
+
 ## 3. RING OF CHAOTIC ILLUMINATION (Artemis)
 
 **⭐ MASTER**: `Artefatti-Pg/ringOfChaoticIllumination/00_Ring_of_Chaotic_Illumination_Revised.md`

@@ -241,14 +241,30 @@
   data-versione, changelog §8.
 - **Accettazione**: zero [PROPOSTA] attive in §1; export sincronizzati.
 
-### T9. Propagazione del ramo del rifiuto (engine: **Sonnet 5**)
+### T9. Propagazione del ramo del rifiuto — ✅ FATTO (parte cross-link)
 - **Azione**: cross-link della tabella echi T1 nei file bersaglio
   (`ARC08-03-REGISTRO-PERDITE.md`, hooks ARC-09, DM-QUICKSTART-ARC09):
   una riga "se al rituale è successo X, qui vale Y" per ciascun eco;
   dopo che P3B è GIOCATO: registrare l'esito reale in state.md
   (changelog) e chiudere i rami non presi con banner "non accaduto".
-- **Accettazione**: ogni eco della tabella ha il suo aggancio nel file
-  bersaglio; nessun eco orfano.
+- **Fatto**: tutti e **5 gli echi** della tabella T1 hanno ora un box
+  «↩ Eco/i del rituale P3B (T9)» nel file bersaglio, con default esplicito
+  (rituale non giocato = doni pieni, nessun eco attivo) e link alla fonte
+  (§2-BIS): (1) Thorik/sangue + (3) Artemis/scintilla →
+  `08_.../ARC08-03-REGISTRO-PERDITE.md`; (2) Tordek/respiro →
+  `09_.../...FASE0-NOTTE-DEI-DROW-TESTO.md`; (4) Rifiuto totale/slot-dono →
+  `09_.../Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §2 + cross-link
+  §9; (5) Filo dell'Ascia/Aegis Fang → `PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md`
+  §2 (l'ancora della cartella Aegis Fang, in attesa del master `.md` T6b).
+  Aggiunto anche un carry-over nell'intestazione di `DM-QUICKSTART-ARC09.md`.
+  Path verificati (tutti risolvono); nessuna meccanica nuova (solo puntatori
+  agli effetti già scritti nella tabella T1).
+- **Resta da fare** (gated, post-gioco): quando P3B è GIOCATO al tavolo,
+  registrare l'esito reale in `state.md` §8 (changelog) e chiudere i rami
+  non presi con banner "non accaduto". Non eseguibile finché il rituale non
+  è giocato (regola d'oro §0.1: mai riscrivere la storia in avanti).
+- **Accettazione** ✅ (parte cross-link): ogni eco della tabella ha il suo
+  aggancio nel file bersaglio; nessun eco orfano.
 
 ---
 
@@ -281,9 +297,23 @@
 - [x] T1 · [x] T2 · [x] T3 · [x] T4 — **LOTTO T-A COMPLETO (2026-07-03)**
 - [x] T5a (sessione 2, 2026-07-03) · 🟡 T5b in corso (sessione 4: Campo Drow 1-2 + Hammerfist assedio) · [ ] T5c — lotto mappe
 - [x] T6a (sessione 3, 2026-07-03) · [ ] T6b · [ ] T6c — lotto artefatti
-- [ ] T7 · [ ] T8 · [ ] T9 — schede, sinergie, propagazione
+- [ ] T7 · [ ] T8 (gated: quest ARC-09 giocata) · [x] T9 cross-link (sessione 5, 2026-07-04; chiusura post-gioco P3B ancora gated) — schede, sinergie, propagazione
 - [x] T-D1…T-D5 — decisioni acquisite (2026-07-03); domande aperte:
   SOLO le conferme DM inline (T6c colonne §6; rimozione temporanei Word)
+
+### Infrastruttura CI (a supporto del lotto mappe)
+
+- [x] **`scripts/validate_maps.py`** + step in `.github/workflows/ci.yml`
+  (sessione 5, 2026-07-04): gate che fa rispettare in CI la regola d'oro
+  §0.6 (griglia markdown = MASTER, SVG in `rendered/` = artefatti generati,
+  mai a mano). Controlla, ad ogni push/PR: ogni `**/rendered/*.svg` è XML
+  ben formato con radice `<svg>`; ogni SVG risale a un master `<stem>.md`
+  (niente orfani); il re-render in memoria di ogni master riproduce
+  byte-identici gli SVG committati (intercetta master modificati senza
+  rigenerare o SVG editati a mano); rendering deterministico. Aggiunto anche
+  `render_map_svg.py --help` allo smoke test dei tool DM. Così i lotti T5b/T5c
+  che aggiungono mappe sono protetti da regressioni: chi tocca un master e
+  dimentica `python3 scripts/render_map_svg.py <file>` rompe la CI.
 
 ---
 

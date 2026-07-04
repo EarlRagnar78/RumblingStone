@@ -11,6 +11,23 @@
 > `campaign/state.md`, non ancora giocato — vedi piano ARC-08 A0).
 > **Ultima revisione**: 2026-07-02.
 
+> **↩ Echi del rituale P3B (T9 — propagazione ramo del rifiuto)**: se al
+> tavolo il rituale di resurrezione di Hella è stato giocato con un **dono
+> rifiutato**, due echi possono riemergere **in questa battaglia**. Default
+> (rituale non ancora giocato, o tutti i doni concessi): **nessuna penalità**,
+> Hella entra in campo con i doni pieni.
+> - **Thorik ha rifiutato il sangue** → Hella **senza DR 3/−**; alla sua
+>   **prima ferita critica** in battaglia, l'eco *"la carne ricorda chi non
+>   ha sanguinato per lei"* (subisce il critico pieno, senza riduzione).
+> - **Artemis ha rifiutato la scintilla** → Hella **senza Spontaneous
+>   Rebirth**: la **prima volta che va a 0 pf** in ARC-08/09 non si
+>   auto-stabilizza (morente normale, TS Costituzione da regole standard).
+>
+> Fonte e tabella completa: `07_il Portale Della Forgia
+> Eterna/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` §2-BIS «Il ramo
+> del rifiuto» → *Tabella echi*. Quando P3B è giocato, l'esito reale va in
+> `campaign/state.md` (changelog §8) e i rami non presi si chiudono lì.
+
 ### **Come Usare Queste Schede**
 Queste schede sono progettate per velocizzare il combattimento di massa.
 1.  **Raggruppamento:** Le unità sono raggruppate per tipo. Ogni blocco contiene le statistiche base (AU, DU, Morale) valide per tutte le unità di quel tipo.

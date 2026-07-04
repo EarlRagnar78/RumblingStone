@@ -12,6 +12,16 @@ Obiettivo nemico: distruggere/sacrileggiare il tempio, uccidere i chierici e rub
 
 I PG sono in città a preparare difese, dormire o pianificare quando scatta l’allarme (campane del tempio, grida, tremore dalle fondamenta).
 
+> **↩ Eco del rituale P3B (T9)**: se al rituale di resurrezione di Hella
+> **Tordek ha rifiutato il respiro**, Hella è tornata **senza Timeless Body**.
+> In questa scena — il primo grande contatto coi **veleni drow** dell'arco —
+> l'eco riemerge: Hella **non gode dell'immunità/vantaggio** che Timeless Body
+> le darebbe e **tira i TS contro veleno alle CD standard 3.5** (High Priestess
+> e minion fungini usano veleno da lama/spore). Default (rituale non giocato o
+> respiro concesso): nessuna modifica, Hella con doni pieni. Fonte:
+> `07_il Portale Della Forgia Eterna/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`
+> §2-BIS «Il ramo del rifiuto» → *Tabella echi*, riga «Tordek rifiuta il respiro».
+
 ---
 
 ## 2. Struttura della fase

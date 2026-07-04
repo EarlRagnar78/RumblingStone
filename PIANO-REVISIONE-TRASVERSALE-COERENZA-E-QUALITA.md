@@ -271,8 +271,30 @@
     «non consegnare al giocatore». Slot-dono legati al ramo del rifiuto (T9).
   Matrice §2-§5 aggiornata (una scheda giocatore per artefatto). Corona già
   aveva la sua da T4.
+- **Riconciliazione HTML↔md (2026-07-04, richiesta DM)**: le schede HTML
+  contengono le modifiche ai poteri avvenute durante la Forgia Eterna → i
+  loro valori sono i validi. Controllate contro le `.md`:
+  - **Bracieri** ⚠️→✅: l'handout `.md` aveva **RD 3** (obsoleto) mentre
+    master `01_`, stadio `03_` e HTML danno **RD 5/adamantio** → corretto.
+    Aggiunti dall'HTML (assenti dalla bozza `.md`): **Frantumare (Shatter)**
+    1/giorno su critico e la **Benedizione della Forgia Eterna** (contatto
+    con l'Altare del Cuore di Moradin → 3→**4 cariche**/giorno + carica
+    gratis su 18-20), già confermata in `00_Cintura_della_Devastazione.md`.
+    Ricarica allineata ad "alba/8h" (HTML). `[dubbio → DM]`: durata della
+    Benedizione ("fino a fine avventura" = solo ARC-07 o campagna intera?).
+  - **Ring** ✅: HTML = export della `.md` Revised (numeri identici), nessuna
+    variazione.
+  - **Aegis** ✅: le modifiche dell'HTML (`05_..._Final_Awakening`) sono lo
+    **Stadio 1** post-Assedio (P5), già gated in Pagina 2 e nel master;
+    coerente con state.md §6 (*pre-full-awakening*). `[dubbio → DM]`: se il
+    DM ritiene l'Assedio già avvenuto, promuovere allo Stadio 1.
+  - **Corona** ⏳: le schede HTML `02_/03_ Gemme` sono stati futuri; la loro
+    riconciliazione col master DM rientra nel **T6b residuo** (near-dup
+    Corona + sync `campaign-artifacts.md`) — vedi §T6b.
 - **Accettazione** ✅: ogni PG ha UNA scheda stampabile senza spoiler (gli
-  stadi futuri/crisi sono su pagine gated o lato DM); matrice aggiornata.
+  stadi futuri/crisi sono su pagine gated o lato DM); valori allineati alle
+  schede HTML della Forgia dove differivano; dubbi marcati `[needs DM
+  confirmation]`; matrice aggiornata.
 
 ### T8. Convalida sinergie Collana dopo la quest di Hella (engine: **Sonnet 5**, al momento giusto)
 - **Azione**: quando il tavolo gioca Foresta Sacra/slot-dono: spostare le

@@ -164,3 +164,38 @@ RIGHE ↓    │  │  │  │  │  │  │  │  │  │  │  │  │  �
 - 90 nani ÷ 5/round = 18 rounds
 - Orchi arrive: Round 3
 - **CRITICAL:** 15 rounds fight while evacuation continues!
+
+---
+
+### 🌍 AMBIENTE (companion T5b, consolidato da POSIZIONI + DISTANZE)
+
+**SVG**: `rendered/Hammerfist-L3-REVISED-Ultra-Clear_map01_mappa-h3-1-ingresso-passaggi-antichi-evacuazione.svg`
+
+| Elemento | Dove | Effetto meccanico 3.5 |
+|---|---|---|
+| Statua del Re Antenato 🗿 | N-Q/02-05 (4 m alta) | meccanismo: **Forza CD 20 o Conoscenze (Storia) CD 15** per spingerla → rivela il tunnel |
+| Apertura tunnel segreto | O-P/05-06 (2×3 m) | **capacità 5 nani/round** in fila indiana |
+| Pozze d'acido residuo 🟢 | 8 pozze (K12, V12, M16, T16, P30, N32, Q33, T30) | **1d6 acido/round** ad attraversarle; evaporano in ~10 min |
+| Macerie/fuoco 🪨💥 | sparse; L-S/30-33 pesanti | terreno difficile (×0,5); L-S/30-33 = **1d6 fuoco** + difficile; copertura +4 CA se sfruttata |
+
+**Distanze chiave**: tunnel (O06) → Re Thorek (O20) = 21 m/14 q (barella lenta!); bordo nani (S24) → vanguard orchi (AA36) = 18 m/12 q → **contatto al round 3**.
+
+### ⚔️ TATTICHE (companion T5b, consolidato da EVACUAZIONE TIMELINE)
+
+- **Il problema**: **90 nani ÷ 5/round = 18 round** per evacuare; **200+ orchi** avanzano 30 m/round e arrivano al **round 3**. Servono **~15 round di ritardo** mentre l'evacuazione continua. Re Thorek è a **8 PF su barella** (portatori a ×0,5).
+- **Ruoli PG**: **Borin** tiene il chokepoint del tunnel (2 m, muro di scudi); **Dara** cecchina i capi orchi dalle rovine elevate (+18 att, demoralizza); **Thorin** tiene vivo il Re (*Cura Ferite Serie*) e blocca con *Muro di Pietra*; **Nala** guida i nani nel tunnel (luci, trappole).
+- **Tattiche di ritardo**: *Muro di Pietra* a col AA25 (PF 90, 10 min); crolli di macerie improvvisati (Ingegneria CD 15 → 2d6 area); cecchinaggio dei warchief (rallenta + malus morale); *Polvere Luccicante* (CD 16, accieca la prima linea, −40 ft).
+- **Morale**: gli orchi sono in **bloodlust** (inseguimento aggressivo, nessuna resa); i nani reggono finché Borin tiene il chokepoint e il Re è vivo.
+
+### 🔄 EVOLUZIONE (companion T5b, consolidato da EVACUAZIONE OUTCOME)
+
+| Stato | Trigger | Cosa cambia sulla griglia | Effetto meccanico |
+|---|---|---|---|
+| A — Apertura tunnel | statua spinta (For CD 20 / Storia CD 15) | apertura O-P/05-06 attiva | inizia l'evacuazione (5/round) |
+| B — Contatto (round 3) | orchi a 18 m | vanguard orchi al bordo nani | inizia la difesa del chokepoint |
+| C — Ritardo | tattiche PG (Muro/crolli/cecchino) | *Muro di Pietra* a AA25; macerie crollate | l'avanzata orca rallenta, l'evacuazione prosegue |
+| D — Esito | round ~18 | — | ✅ tutti 90 (Re salvo) · ⚠ 80-89 (10 sacrificati) · ❌ <80 (rischio TPK, campagna a rischio) |
+
+> Esiti aperti (D13): l'esito dell'evacuazione è dei dadi e delle scelte (quanto
+> si riesce a rallentare gli orchi), non un copione — le 3 uscite (successo /
+> parziale / fallimento) sono tutte in gioco.

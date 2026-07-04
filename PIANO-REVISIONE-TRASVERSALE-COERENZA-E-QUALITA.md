@@ -319,7 +319,7 @@
 
 - [x] T1 · [x] T2 · [x] T3 · [x] T4 — **LOTTO T-A COMPLETO (2026-07-03)**
 - [x] T5a (sessione 2, 2026-07-03) · 🟡 T5b in corso (sessione 4: Campo Drow 1-2 + Hammerfist assedio) · [ ] T5c — lotto mappe
-- [x] T6a (sessione 3, 2026-07-03) · [ ] T6b · [ ] T6c — lotto artefatti
+- [x] T6a (sessione 3, 2026-07-03) · 🟡 T6b in corso (sessione 6: Aegis Fang master + Cerebromorphosis eletto; restano Corona near-dup + campaign-artifacts sync) · [ ] T6c (gated: conferma DM) — lotto artefatti
 - [ ] T7 · [ ] T8 (gated: quest ARC-09 giocata) · [x] T9 cross-link (sessione 5, 2026-07-04; chiusura post-gioco P3B ancora gated) — schede, sinergie, propagazione
 - [x] T-D1…T-D5 — decisioni acquisite (2026-07-03); domande aperte:
   SOLO le conferme DM inline (T6c colonne §6; rimozione temporanei Word)

@@ -29,6 +29,9 @@ jobs:
       - name: Validate skill trees (frontmatter, links, data YAML)
         run: python scripts/validate_skills.py
 
+      - name: Validate generated maps (well-formed, in-sync SVGs)
+        run: python scripts/validate_maps.py
+
       - name: DM tool smoke tests
         run: |
           python scripts/suggest_encounter.py --help > /dev/null
@@ -37,6 +40,7 @@ jobs:
           python scripts/session_recap.py --help > /dev/null
           python scripts/state_sync.py --help > /dev/null
           python scripts/build_monster_catalog.py --help > /dev/null
+          python scripts/render_map_svg.py --help > /dev/null
           python scripts/update_xp.py --check > /dev/null
 
   build:

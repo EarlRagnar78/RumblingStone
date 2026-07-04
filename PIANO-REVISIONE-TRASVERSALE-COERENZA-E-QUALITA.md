@@ -198,7 +198,7 @@
 - **Accettazione** ✅: ogni file della matrice ha lo stato che la matrice
   dichiara; matrice aggiornata; zero contenuti modificati.
 
-### T6b. Consolidamenti Corona/Aegis/Cerebromorphosis — 🟡 IN CORSO (sessione 6, 2026-07-04: Aegis + Cerebro)
+### T6b. Consolidamenti Corona/Aegis/Cerebromorphosis — ✅ FATTO (sessioni 6-8, 2026-07-04)
 - **Azione**: (1) fondere i near-dup Corona (`000_Corona_adamantio_ogetto`
   → assorbito nel master DM; eleggere una delle 2 `Schede_avvenimenti`);
   (2) estrarre il **master .md di Aegis Fang** dal docx/pdf (tabella di
@@ -221,17 +221,25 @@
     inglese (`cerebromorphosis_system.md`, doppia byte-identica) · *annesso*
     il sottosistema party-intervention (`party_intervention_system.md`,
     `moradin_divine_guidance_italian.md`) · 📸 i PDF. Matrice §3 aggiornata.
-- **Resta da fare (prossima sessione T6b)**: (1) near-dup **Corona**
-  (assorbire `000_Corona_adamantio_ogetto`, eleggere tra le 2
-  `Schede_avvenimenti`) e (4) sync **`campaign-artifacts.md`** sezione Corona
-  al post-P3 — rinviati perché toccano contenuto della cartella Corona più
-  affollata (rischio di deriva di canone): da fare con lettura dedicata dei
-  ~20 file Corona, non a stima.
-- **Accettazione** (parziale): regola dei 3 documenti ora rispettata per
-  **Aegis** (master `.md` + il resto censito) e master eletto per
-  **Cerebromorphosis**; ✅ `grep` oggetti spesi (Rubino, Cuore di Moradin) =
-  **0 usi attivi** (verificato in sessione 6). Non ancora completa per
-  **Corona** (parti 1+4 sopra).
+- **Fatto (sessione 8) — Corona**:
+  - **(1) near-dup**: `000_Corona_adamantio_ogetto.md` bannerato 📸 ASSORBITO
+    nel master (il master prevale sui dati divergenti, es. prereq BAB);
+    eletta `00_Schede_avvenimenti_...-ALT.md` (formulazione più chiara), la
+    gemella 📸 SUPERATA. Matrice §1 aggiornata.
+  - **Riconciliazione HTML gemme ↔ master/scheda**: aggiunto alla scheda
+    giocatore il **+2 intuizione CA** di *Stone's Awareness* (era omesso;
+    presente in master e HTML). **2 dubbi lasciati al DM** `[needs DM
+    confirmation]` (banner nel master DM): Trappole↔Comprendere Linguaggi;
+    Topazio 10 min↔1 ora. Resto coerente.
+  - **(4) sync `campaign-artifacts.md`**: *Moradin's Insight* → "Active
+    Powers" (Rituale 2 completato); +2 CA su *Stone's Awareness*; sblocchi
+    corretti (Mantle = Rituale 3, aggiunta *Aura of the Eternal Forge* =
+    Rituale 4) allineati al master. Matrice §7 marcata ✅.
+- **Accettazione** ✅: regola dei 3 documenti rispettata per Corona, Aegis,
+  Ring, Bracieri+Cintura, Collana; master eletto per Cerebromorphosis; `grep`
+  oggetti spesi (Rubino, Cuore di Moradin) = **0 usi attivi**. Le poche
+  divergenze HTML↔master irrisolvibili senza il DM sono flaggate, non
+  indovinate.
 
 ### T6c. 🔶 state.md §6 a due tempi (engine: **Opus 4.8**; arbitrati → **Fable**)
 - **Evidenza**: nota [T4-a] della matrice — §0 al tavolo reale, §1/§6 allo
@@ -358,7 +366,7 @@
 
 - [x] T1 · [x] T2 · [x] T3 · [x] T4 — **LOTTO T-A COMPLETO (2026-07-03)**
 - [x] T5a (sessione 2, 2026-07-03) · 🟡 T5b in corso (sessione 4: Campo Drow 1-2 + Hammerfist assedio) · [ ] T5c — lotto mappe
-- [x] T6a (sessione 3, 2026-07-03) · 🟡 T6b in corso (sessione 6: Aegis Fang master + Cerebromorphosis eletto; restano Corona near-dup + campaign-artifacts sync) · [ ] T6c (gated: conferma DM) — lotto artefatti
+- [x] T6a (sessione 3, 2026-07-03) · [x] T6b (sessioni 6-8, 2026-07-04: Aegis master + Cerebro eletto + Corona consolidata/riconciliata + campaign-artifacts sync) · [ ] T6c (gated: conferma DM) — lotto artefatti
 - [x] T7 (sessione 7, 2026-07-04: schede Aegis/Ring/Bracieri/Collana) · [ ] T8 (gated: quest ARC-09 giocata) · [x] T9 cross-link (sessione 5, 2026-07-04; chiusura post-gioco P3B ancora gated) — schede, sinergie, propagazione
 - [x] T-D1…T-D5 — decisioni acquisite (2026-07-03); domande aperte:
   SOLO le conferme DM inline (T6c colonne §6; rimozione temporanei Word)

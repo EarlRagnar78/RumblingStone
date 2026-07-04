@@ -1,3 +1,9 @@
+> **⭐ Versione eletta (T6b, 2026-07-04)** tra le 2 `Schede_avvenimenti`
+> della Corona: questa `-ALT` ha la formulazione più chiara dei sacrifici
+> (opzioni in "o"). L'altra (`00_Schede_avvenimenti_Corona_di_adamantio.md`,
+> differiva di una sola parola) è 📸 SUPERATA. Fonte canonica dei poteri:
+> `PG/Artefatti/LaCorona_di_Adamantio-DM.md`.
+
 Certamente! Ho capito perfettamente la richiesta. Separare le informazioni è fondamentale per mantenere il mistero e la scoperta per il giocatore.
 
 Ti fornirò due documenti:

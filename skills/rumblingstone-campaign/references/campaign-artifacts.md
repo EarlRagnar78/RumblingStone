@@ -63,14 +63,19 @@ Forged by Moradin from a shard of creation — not merely a crown of power but "
 
 ### Active Powers (Currently Available)
 
-1. **Stone's Awareness (Su, CL 5):** On natural ground: +1 morale to attack/damage; detect secret doors and traps at will
-2. **Crown of Protection (Ex, CL 6):** +2 deflection bonus to AC while worn
+*Synced to current state (T6b, 2026-07-04): Rituals 1-2 completed (Forge's
+Defense + Trial of the Deep Hall), so the Ritual-2 powers below are now
+active; only Topaz gem lit (state.md §0).*
+
+1. **Stone's Awareness (Su, CL 5):** On natural ground: +1 morale to attack/damage, **+2 insight bonus to AC**; detect secret doors and traps at will *(the DM master `LaCorona_di_Adamantio-DM.md` lists "comprehend languages" instead of traps — [needs DM confirmation])*
+2. **Crown of Protection (Ex, CL 6):** +2 deflection bonus to AC while worn (rises to +3 after Ritual 4)
+3. **Moradin's Insight (Su):** True Seeing 1/day (10 min); +4 insight to Craft (Blacksmith). *Unlocked by: Trial of the Deep Hall (Ritual 2, ✅ completed)*
 
 ### Powers To Awaken (Via Legacy Rituals)
 
-1. **Moradin's Insight (Su):** True Seeing 1/day; +4 insight to Craft (Blacksmith). *Unlocked by: Trial of the Deep Hall*
-2. **Adamantine Will (Su):** Counter charm/compulsion on natural ground. *Unlocked by: Anvil of the World*
-3. **Mantle of Stone and Spirit (Su):** Continuous Mind Blank; epic/evil DR. *Unlocked by: Siege of the Eternal Forge*
+1. **Adamantine Will (Su):** Immunity to charm/compulsion + +4 racial vs mental effects, on natural ground. *Unlocked by: Anvil of the World (Ritual 3, in progress)*
+2. **Mantle of Stone and Spirit (Su):** Continuous Mind Blank; epic/evil DR 5; Commune 1/month in an Earth Node. *Unlocked by: Anvil of the World (Ritual 3)*
+3. **Aura of the Eternal Forge (Su):** One-time full heal + divine buffs to time-travelers and all dwarves within 30 m. *Unlocked by: Siege of the Eternal Forge (Ritual 4, final)*
 
 ### Three Sacred Gems
 

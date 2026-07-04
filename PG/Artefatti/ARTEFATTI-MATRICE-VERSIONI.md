@@ -30,15 +30,16 @@ Cartella `Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/`:
 | File | Ruolo | Stato |
 |---|---|---|
 | `000_Guida_Dm_ogetto_prove_rituali_sfide.md` (37 KB) | prove/rituali/sfide in dettaglio | *annesso DM* (citato dal MASTER) |
-| `000_Corona_adamantio_ogetto.md` | scheda-oggetto sintetica | *annesso* `[INFERRED: near-dup del MASTER — candidato fusione, lotto T6]` |
+| `000_Corona_adamantio_ogetto.md` | scheda-oggetto sintetica | 📸 **ASSORBITO nel MASTER** (T6b: banner in testa; il master prevale, es. sul prereq BAB) |
 | `00_corona_di_adamantio_completa_italiano.md` | generazione precedente in italiano | 📸 snapshot `[INFERRED]` |
 | `00_corona_adamantio_in_inglese.txt`, `00_corona_adamantio_in_inglese&rituali.txt` | generazioni in inglese | 📸 snapshot |
 | `00_corona_di_adamantio_i_rituali_descrizioni_interventi_divini.md` | descrizioni rituali/interventi divini | *annesso DM* |
 | `00_corona_di_adamantio_momento_risveglio_1_prova_scheda_giocatore.md` | scena risveglio + 1ª prova | *annesso* (materiale scena) |
-| `00_Schede_avvenimenti_Corona_di_adamantio.md` / `..._-ALT.md` | registro avvenimenti (2 varianti quasi identiche) | `[INFERRED: eleggere una, lotto T6]` |
+| `00_Schede_avvenimenti_Corona_di_Adamantio-ALT.md` | registro avvenimenti (formulazione sacrifici più chiara) | ⭐ **eletta (T6b)** tra le 2 varianti |
+| `00_Schede_avvenimenti_Corona_di_adamantio.md` | idem, differiva di 1 parola | 📸 SUPERATA (T6b: banner) |
 | `00_scheda_Giocatore.md` | scheda giocatore, generazione 1 | ~~superata~~ dalla SCHEDA-GIOCATORE-STATO-ATTUALE |
 | `00_Scheda_Giocatore_Aggiornata_Fase2.md`, `01_Scheda_Giocatore_Sintesi_Pratica_Fase2.md` | schede giocatore Fase 2 | ~~superate~~ (contenuto assorbito nella STATO-ATTUALE) |
-| `01/02/03_Corona_N_Gemme.html` | scheda per stadio-gemma (1/2/3 gemme) | HANDOUT per stadio (stampare quello giusto) |
+| `01/02/03_Corona_N_Gemme.html` | scheda per stadio-gemma (1/2/3 gemme) | HANDOUT per stadio (stampare quello giusto) — **riconciliate col master in T6b**: valori coerenti, 2 dubbi flaggati (Trappole↔Comprendere Linguaggi; Topazio 10 min↔1 ora) nel banner del master DM |
 | `Evoluzione_della_Scena-Trial_of_the_Deep_Hall.md` | scena del 2° rituale legacy | *annesso* (giocato) |
 | `LaCorona_di_Adamantio-DM.pdf`, `LaCorona_di_Adamantio.pdf` | export PDF | 📸 generati (rigenerare dal MASTER) |
 | immagini (`CoronaDiAdamantio.webp`, `Generated Image...webp`) | asset visivi | ok (C1: momento d'uso = risveglio gemme) |
@@ -132,8 +133,11 @@ master a ogni cambio (data-versione in testa).
 ## 7. Riferimenti trasversali
 
 - `skills/rumblingstone-campaign/references/campaign-artifacts.md` —
-  riferimento meccanico consolidato (inglese, per gli agent AI). ⚠️ La
-  sezione Corona "Active Powers" è ferma allo stadio pre-P3 `[T6: sync]`.
+  riferimento meccanico consolidato (inglese, per gli agent AI). ✅ Sezione
+  Corona sincronizzata in **T6b** (2026-07-04): *Moradin's Insight* spostato
+  in "Active Powers" (Rituale 2 completato), aggiunto il +2 intuizione CA di
+  *Stone's Awareness*, corretti gli sblocchi (Mantle = Rituale 3; aggiunta
+  *Aura of the Eternal Forge* = Rituale 4) per allinearli al master DM.
 - `campaign/state.md` §6 — tabella "stato corrente" (vedi [T4-a]).
 - Template per nuovi artefatti vivi:
   `campaign/templates/artefatto-vivo-template.md` (T4).

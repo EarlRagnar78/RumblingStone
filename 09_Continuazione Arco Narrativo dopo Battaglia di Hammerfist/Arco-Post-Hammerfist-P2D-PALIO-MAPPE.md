@@ -63,3 +63,36 @@ Griglia **1 quadretto = 5 ft**, GS 11–12 (statblocchi in `...P2D-PALIO-STATBLO
 - Buio totale (torce spente): **Scurovisione**/luce = cruciale.
 - Token in mappa: **D** Drow Assassino · **C** Chierica di Lolth · **S** Servitore della Spora.
 - **Catturare un drow vivo** = intel Fase 0 Rethmar **−1 clock Sonjak** (INTEGRAZIONE §3.2).
+
+---
+
+### 🌍 AMBIENTE (companion T5c, consolidato dalle 4 mappe sopra)
+
+*Questo file ha già **SVG originali** in `P2D-Palio-Allegati/mappe/` (fatti a
+mano nell'arco del Palio, non dalla pipeline `render_map_svg`) + note tattiche
+per mappa. Companion di raccordo:*
+
+| Mappa | SVG | Elementi chiave |
+|---|---|---|
+| **Piazza del Palio** (corsa) | `piazza-del-palio.svg` | anello a conchiglia, orario, 3 giri, tufo; 6 Zone con DC 18-24 (Curva del Guado DC 24 = la più letale; Curva del Boia = muro cieco, caduta 4d6); catino interno = folla (6.000) |
+| **Channathgate città** | `channathgate-citta.svg` | 8 rioni-contrada, Porta dell'Alba/del Porto, Darsena; spostamenti dei partiti, infiltrazione Civetta, porto |
+| **Rotta di soccorso** | `rotta-soccorso.svg` | Dawn Way (~35 mi, 1,5 gg, cavalleria) vs Fiume Cannath (~1 gg, flotta); **deadline Day 38** per la Fase 1 |
+| **Stalla — assalto drow** | `stalla-assalto-drow.svg` | 1 quadretto = 5 ft, GS 11-12; drow dalla botola SO con *Oscurità/Silenzio*, buio totale |
+
+### ⚔️ TATTICHE (companion T5c)
+
+- **Corsa (skill-challenge/chase)**: le 6 Zone con DC crescenti (sorpassi/nerbate; la folla lancia oggetti ai fantini odiati in Zona 4; il Ladro colpisce alla Curva del Boia). Un fantino disarcionato nel catino è "salvo" ma fuori gara.
+- **Assalto alla stalla (tattico, notte Giorno 2)**: i drow puntano al **BOX** del cavallo (avvelenarlo); Barbaresco accanto, scorta PG alla porta; **Scurovisione/luce cruciale** (buio totale); sorpresa se non di guardia (Ascoltare DC 20). **Catturare un drow vivo → −1 clock Sonjak** (Fase 0 Rethmar).
+- Statblocchi: `...P2D-PALIO-STATBLOCCHI.md`.
+
+### 🔄 EVOLUZIONE (companion T5c — Palio → rinforzi al fronte)
+
+| Stato | Trigger | Cosa cambia | Effetto |
+|---|---|---|---|
+| A — Giorni di gara + intrighi | i partiti manovrano | spostamenti fra rioni, sabotaggi | posiziona alleanze e rischi |
+| B — Assalto alla stalla (notte G2) | i drow colpiscono il cavallo | scontro al box | vincere protegge la corsa; drow vivo = intel |
+| C — Corsa (3 giri) | giorno della gara | le 6 Zone con i loro DC | vittoria = rinforzi vinti |
+| D — Soccorso a Rethmar | fine Palio | rotta Dawn Way / Fiume | rinforzi arrivano **entro Day 38** o mancano la Fase 1 |
+
+> Esiti aperti (D13): chi vince il Palio, se la stalla regge e per quale rotta
+> arrivano i rinforzi dipende dalle scelte dei PG e dai dadi.

@@ -29,10 +29,10 @@
 
 | File | Mappa | Scala dichiarata | Griglia parsabile | Companion | SVG |
 |---|---|---|---|---|---|
-| `Mappe/Portale-Forgia-L1-REVISED-UltraClear.md` | MAPPA PF-1: Stanza della Corona (20×14) | Sì | Sì | nessuno | ok |
-| `Mappe/Portale-Forgia-L1-REVISED-UltraClear.md` | MAPPA PF-2: Sala della Forgia Eterna (27×27) | Sì | Sì | nessuno | ok |
-| `Mappe/Portale-Forgia-L2-REVISED-UltraClear.md` | Mappa #1 (21×53) — titolo grezzo `[COLONNA K = 15m da Nord]` | Sì | Sì (titolo automatico impreciso — vedi nota 1) | nessuno | ok |
-| `Mappe/Portale-Forgia-L2-REVISED-UltraClear.md` | MAPPA PF-4: Forgia Adamantina (33×25) | Sì | Sì | nessuno | ok |
+| `Mappe/Portale-Forgia-L1-REVISED-UltraClear.md` | MAPPA PF-1: Stanza della Corona (20×14) | Sì | Sì | **completo (T5b, s9)** | ok |
+| `Mappe/Portale-Forgia-L1-REVISED-UltraClear.md` | MAPPA PF-2: Sala della Forgia Eterna (27×27) | Sì | Sì | **completo (T5b, s9)** | ok |
+| `Mappe/Portale-Forgia-L2-REVISED-UltraClear.md` | Mappa #1 (21×53) — titolo grezzo `[COLONNA K = 15m da Nord]` | Sì | Sì (titolo automatico impreciso — vedi nota 1) | **completo (T5b, s9 — PF-3 Corridoio del Fuoco)** | ok |
+| `Mappe/Portale-Forgia-L2-REVISED-UltraClear.md` | MAPPA PF-4: Forgia Adamantina (33×25) | Sì | Sì | **completo (T5b, s9)** | ok |
 | `Mappe/Portale-Forgia-L3-FINALE-REVISED.md` | Foresta di Cristallo Gigante + Camera Sferica Boss + altre (4 fence) | No (usa "1.5m/5ft" solo in legenda) | **No** | n/a | **KO — nota 2** |
 | `Mappe/TACTICAL-GRIDS-COMPLETE.md` | Spec testuali (coordinate in prosa, no griglia visuale) | Sì (in header standard) | **No** | n/a | **KO — nota 3** |
 | `Mappe/Atlante-Visivo-Mappe.md` | — (file STUB dichiarato, rimanda a TACTICAL-GRIDS) | — | No | — | n/a |
@@ -42,9 +42,9 @@
 
 | File | Mappa | Scala dichiarata | Griglia parsabile | Companion | SVG |
 |---|---|---|---|---|---|
-| `Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md` | Dirupo Mortale / Campo Hobgoblin (40×40) | Sì | Sì | nessuno | ok |
+| `Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md` | Dirupo Mortale / Campo Hobgoblin (40×40) | Sì | Sì | **completo (T5b, s9)** | ok |
 | `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md` | Fortezza vista dall'alto (50×80) — **ARC-08 assedio** | Sì | Sì | **completo (T5b, sessione 4)** | ok |
-| `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` | MAPPA H3-1: Ingresso Passaggi Antichi (40×40) | Sì | Sì | nessuno | ok |
+| `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` | MAPPA H3-1: Ingresso Passaggi Antichi (40×40) | Sì | Sì | **completo (T5b, s9)** | ok |
 | `Mappe/Hammerfist-Lotto-1-Ricognizione.md` ⚠️ DEPRECATED (A8) | Mappa #1 (20×100) — titolo grezzo intestazione colonne | Sì | Sì (titolo automatico impreciso — nota 1) | parziale (nota testuale "Copertura Roccia", "Canyon stretto" inline, non nei 3 blocchi) | ok |
 | `Mappe/Hammerfist-Lotto-1-Ricognizione.md` ⚠️ DEPRECATED (A8) | Mappa #2 (28×30) | Sì | Sì | nessuno | ok |
 | `Mappe/Hammerfist-Lotto-2-Assedio.md` | MAPPA 2A: Fortezza vista dall'alto (34×80) | Sì | Sì | nessuno | ok |
@@ -62,7 +62,7 @@
 | File | Mappa | Scala dichiarata | Griglia parsabile | Companion | SVG |
 |---|---|---|---|---|---|
 | `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md` | Campo Drow 1: Burning Operations Base (53×40) | Sì | Sì | **completo (T5b, sessione 4)** — riportato inline nel sorgente, non solo nel template (nota 5 aggiornata) | ok |
-| `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md` | Campo Drow 2: Forward Base (66×53 — griglia abbreviata `[continues...]`, nota 6) | Sì | Sì (parziale: righe ripetute per compressione, SVG riflette solo ciò che è scritto) | **completo (T5b, sessione 4)** — EVOLUZIONE `[INFERRED]`, griglia comunque da completare in T5c | ok (grid incompleta — T5c) |
+| `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md` | Campo Drow 2: Forward Base (65×53 — **griglia completata in T5c**, nota 6) | Sì | Sì (parziale: righe ripetute per compressione, SVG riflette solo ciò che è scritto) | **completo (T5b, s4)** + **griglia completa (T5c, s10)** | ok |
 | `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO-Description.md` | — (testo narrativo/atmosfera dei 3 campi, non griglia) | — | No | — | n/a — **nota 7: file NON è più 0 byte, contenuto già presente** |
 | `Arco-Post-Hammerfist-P1-MAPPE-COMPLETO.md` | Cerchio di Hellas vs Treant, Rituale (Tre ondate), + altre | Sì (in prosa) | **No** | n/a | **KO — nota 8** |
 | `Arco-Post-Hammerfist-P2A-Torre-PARTE1-MAPPE.md` | Torre — Livello 1 | parziale | **No** | n/a | **KO — nota 8** |
@@ -145,26 +145,29 @@
    riportato inline nel file sorgente
    `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md`, sostituendo la vecchia
    sezione "Tattiche Raid" (stesso contenuto, riorganizzato).
-6. **Campo Drow 2**: la griglia dichiara 80×53 ma il master markdown la
-   abbrevia con `[continues...]` a un certo punto (già noto, vedi piano
-   trasversale §2 T5c). L'SVG generato qui riflette solo le righe
-   effettivamente scritte nel sorgente — è **corretto rispetto al master
-   attuale**, ma il master stesso è incompleto. Completare la griglia è
-   compito di **T5c** (Opus 4.8), non di T5a.
+6. **Campo Drow 2** — **RISOLTO (T5c, 2026-07-04)**: la griglia era
+   abbreviata (`[continues...]` + righe interne saltate). Ora è **completa**:
+   53 righe, larghezza uniforme 65 colonne, strutture posizionate secondo le
+   annotazioni; SVG rigenerato (65×53). ⚠️ La dichiarazione "80×53 / 120 m"
+   resta imprecisa (la griglia disegnata è 65 col ≈98 m): discrepanza
+   flaggata `[needs DM confirmation]` nel file sorgente (Info Generali),
+   completamento fatto coerente con le posizioni testuali, non a 80 con sola
+   foresta.
 7. **SUPPLEMENTO-P1C-...-Description.md**: il piano trasversale (§2, T5c)
    lo cita come "0 byte" (task ARC-09 §161 aperto). Verificato in questa
    sessione: il file **ha già 3276 byte** di contenuto narrativo completo
    per i 3 campi drow — la nota nel piano è superata. Nessuna azione
    necessaria in T5c per questo punto; da correggere il riferimento nel
    piano trasversale in un futuro aggiornamento di quel documento.
-8. **16 file "narrativi" di ARC-09 P2/P3**: usano coordinate in prosa
-   (es. "Zona PG iniziale: File 4, colonne 8–24") invece di griglie
-   emoji-cella. Non hanno mai avuto un master in formato griglia — non sono
-   quindi "griglie da riparare" ma un genere di file diverso (piano di
-   combattimento testuale). Se il DM vuole la stessa qualità visuale di
-   Campo Drow/Hammerfist per questi incontri, serve **scrivere ex novo** una
-   griglia emoji equivalente: lavoro generativo, quindi **T5c (Opus 4.8)**,
-   non T5a/T5b.
+8. **16 file "narrativi" di ARC-09 P2/P3** — **COMPANION FATTI (T5c,
+   2026-07-04)**: usano coordinate in prosa invece di griglie emoji-cella.
+   Ora **tutti e 16 hanno il companion 3-blocchi** AMBIENTE/TATTICHE/EVOLUZIONE
+   consolidato dalla prosa (P1 Cerchio Hellas; P2A Torre L1-L5; P2B Torneo x2;
+   P2D Palio; P3 Battaglia Finale FASE0-4; P3 Ghostlord/Sabotaggio/Starsong).
+   Resta **opzionale** (non necessario per l'accettazione "zero mappe senza
+   companion") riscrivere ex-novo una griglia-emoji per averne l'SVG: è
+   lavoro puramente estetico, da fare solo se il DM lo vuole per una scena
+   specifica.
 9. **P2D-Palio-Allegati/mappe/*.svg**: 4 SVG già presenti (Palio di
    Channathgate) ma **non generati da questa pipeline** — non hanno un
    master markdown a griglia-emoji corrispondente in

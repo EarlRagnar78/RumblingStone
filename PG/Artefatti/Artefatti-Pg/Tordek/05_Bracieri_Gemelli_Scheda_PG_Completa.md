@@ -8,6 +8,16 @@
 **Peso:** 2,5 kg
 **Valore:** Inestimabile (Artefatto Maggiore Completo)
 
+> **SCHEDA GIOCATORE — STATO ATTUALE (allineata in T7, 2026-07-04)**: è
+> l'**unica** scheda da dare al giocatore di Tordek per i Bracieri. Stato
+> corrente = **Risveglio Completo (Fuoco + Terra)**, entrambi gli stadi
+> giocati (`campaign/state.md` §6). Include la sinergia con la **Cintura
+> della Devastazione** (vedi «Cariche Devastazione» nel cheat sheet; master
+> Cintura: `00_Cintura_della_Devastazione.md`). Progressione per stadi e
+> poteri nascosti: file `01_`→`03_` di questa cartella. Matrice:
+> `PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md` §4. A ogni nuovo sblocco,
+> ristampare aggiornando il **Registro sblocchi** in fondo.
+
 ---
 
 ## Descrizione Fisica
@@ -36,7 +46,7 @@ La presenza della Terra stabilizza la furia del Fuoco, mentre il Fuoco infonde e
 
 *   **Pelle di Scorie e Pietra (Su):**
     *   La tua pelle assume la durezza della roccia viva, striata di adamantio.
-    *   Ottieni **RD 3/adamantio**.
+    *   Ottieni **RD 5/adamantio**. *(valore del pieno risveglio dalla scheda HTML della Forgia; la vecchia bozza `.md` diceva RD 3 — corretto in riconciliazione 2026-07-04)*
 *   **Cuore di Brace (Su):**
     *   Il calore interno ti protegge dalle fiamme esterne.
     *   Ottieni **Resistenza al Fuoco 10**.
@@ -48,12 +58,15 @@ La presenza della Terra stabilizza la furia del Fuoco, mentre il Fuoco infonde e
     *   La tua tecnica si affina, colpendo con precisione anche quando usi la forza bruta.
     *   Quando usi Attacco Poderoso con colpi senz'armi o armi naniche, riduci la penalità al tiro per colpire di **1**. (*Esempio: dichiari -4, tiri come -3, ma danni come -4*).
 *   **Cariche di Devastazione (Su):**
-    *   I guanti possiedono 3 cariche di devastazione rinnovabili ogni giorno al tramonto (o dopo 8 ore di riposo).
+    *   I guanti possiedono **3 cariche** di devastazione (**4** finché è attiva la *Benedizione della Forgia Eterna*, sotto), rinnovabili ogni giorno all'**alba** (o dopo 8 ore di riposo con preghiera a Moradin).
     *   **Attivazione:** Quando confermi un critico in mischia, puoi spendere cariche per aumentare il danno:
         *   1 carica: **+2d6 danni da forza**.
         *   2 cariche: **+3d6 danni da forza**.
         *   3 cariche: **+4d6 danni da forza**.
-    *   **Ricarica:** Se ottieni un **18-20 naturale** al TxC (dopo aver speso cariche), tira un d20. Se il risultato conferma la minaccia, recuperi 1 carica (max 3).
+    *   **Ricarica:** Se ottieni un **18-20 naturale** al TxC (dopo aver speso cariche), tira un d20. Se il risultato conferma la minaccia, recuperi 1 carica (max 3, o 4 se benedetto).
+*   **Benedizione della Forgia — Frantumare (Su):**
+    *   1/giorno, dopo un **critico confermato** puoi lanciare *Shatter* (CL 13, CD 16) sul nemico colpito — **azione gratuita**. Devastante contro strutture e oggetti fragili (danno doppio al cristallo); 1d6 sonoro/CL contro creature con parti cristalline.
+    *   *(potere presente nella scheda HTML della Forgia, assente dalla vecchia bozza `.md` — aggiunto in riconciliazione 2026-07-04.)*
 *   **Passo di Brace (Ember Step) (Su):**
     *   Ottieni un bonus di potenziamento di **+3 m** alla velocità base di movimento a terra finquando hai a disposizione almeno 1 uso di **Salto Fiammegiante**.
 *   **Vista della Galleria (Ex):**
@@ -142,6 +155,27 @@ Una volta per round, quando metti a segno un **Critico Confermato** usando Attac
 
 ---
 
+## Benedizione della Forgia Eterna (Moradin)
+
+Dopo il **contatto con l'Altare del Cuore di Moradin** nella Sala della Forgia
+Eterna (evento ARC-07), i guanti hanno ricevuto un **potenziamento** che vale
+**da quel momento**:
+
+- **Cariche di Devastazione**: 3/giorno → **4/giorno**.
+- **Bonus critico**: quando confermi un critico, prima di spendere Cariche
+  tira 1d20 — su **18-20 naturale** 1 Carica è **gratuita** (ottieni il danno
+  bonus senza consumarla).
+- **Frantumare (Shatter)** 1/giorno su critico confermato (vedi Poteri
+  Costanti sopra).
+
+> **⚠ Decisione DM — durata della Benedizione**: la scheda HTML della Forgia
+> la descrive come *"temporanea, fino al completamento dell'avventura"*. **Il
+> DM deve stabilire** se «l'avventura» è solo l'arco della Forgia (ARC-07) o
+> la campagna intera: se conclusa, i valori tornano a 3 cariche/giorno e
+> Frantumare si spegne. `[needs DM confirmation]`
+
+---
+
 ## Senzienza: Il Maestro della Forgia
 L'Ego dell'artefatto è cresciuto (**Ego 18**). Non è più solo una voce; è una guida.
 Richiede che il portatore agisca come un pilastro per la sua gente. Non tollera la codardia, il tradimento o l'alleanza con i nemici giurati dei Nani.
@@ -160,4 +194,15 @@ Se soddisfatto, i guanti possono occasionalmente agire di propria volontà per p
 | **Ancoraggio** | (Su) | Imm | 2/gg | Nega movimento forzato, +4 TS vs effetto. |
 | **Salto Fiammegiante** | (Su) | Mov | 3/gg | Super Salto (Tiro Unico) + AoE 3m Fuoco all'arrivo. |
 | **Martello (Sinergia)** | (Su) | Free | 1/rnd | Su **Critico**: attiva *Colpi del Fuoco* o *Pugno Frana* gratis. |
-| **Cariche Devastazione**| (Su) | Free | 3/gg | Su **Critico**: +danni Forza. Ricarica su 18-20 naturale. |
+| **Cariche Devastazione**| (Su) | Free | 3/gg (**4** benedetto) | Su **Critico**: 1C→+2d6F / 2C→+3d6F / 3C→+4d6F. Su 18-20 nat: 1 carica gratis. |
+| **Frantumare (Shatter)**| (Su) | Free | 1/gg | Dopo critico: *Shatter* CL 13 CD 16 sul nemico. Devastante vs strutture/cristallo. |
+
+---
+
+### Registro sblocchi (compila il DM, a penna)
+
+| Data (sessione) | Cosa si è sbloccato/speso | Visto dal giocatore? |
+|---|---|---|
+| — | Stadio Fuoco (Risveglio Bracieri di Moradin) | ✅ giocato |
+| — | Stadio Terra (Risveglio Completo) | ✅ giocato |
+| … | … | … |

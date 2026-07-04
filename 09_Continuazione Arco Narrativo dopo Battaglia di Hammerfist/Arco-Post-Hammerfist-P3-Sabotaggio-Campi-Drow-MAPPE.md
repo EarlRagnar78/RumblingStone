@@ -107,3 +107,36 @@ Terreno:
 ---
 
 Queste mappe sono pensate per essere usate come griglia mentale/virtuale; puoi facilmente schizzarle su carta a quadretti o in un VTT.
+
+---
+
+### 🌍 AMBIENTE (companion T5c, consolidato dai 3 campi sopra)
+
+*Mappe in prosa (niente griglia-emoji → nessun SVG). Scala 1,5 m/quadretto.*
+
+| Campo / area | Griglia | Elementi chiave (sabotaggio) |
+|---|---|---|
+| **Drow-1** Grotta accesso | 24×24 | tunnel ovest (3 q); 2 drow ranger su balcone (fila 8, col 18-20); trappola a campanelli (Ascoltare CD 20 / Disattivare CD 20); stalagmiti = copertura parziale |
+| **Drow-1** Sala Funghi | 30×30 | 5-7 aiuole di funghi giganti (Ø4-6); 2 vasche N/S (raggio 3); **il fuoco propaga di ciuffo in ciuffo** (Riflessi CD 15 entro 2 q); soprastante drow su piattaforma (fila 6, col 15) |
+| **Drow-1** Corridoi di fuga | — | soffitto instabile: fuoco/esplosivi → Riflessi CD 15 detriti |
+| **Drow-2** Tunnel + ponte | 10×40 + 20×20 | convoglio (3-4 carri + scorta); crepaccio 6 q / ponte 4×10-12 con **colonne portanti crollabili**; variante strettoio con 4-6 colonne |
+| **Drow-3** Avamposto Xilthra | 30×30 → 20×20 → 24×24 | ponte naturale + terrazze arcieri; 2 balconi (+5 q); Sala Corte con trono 3×3 (nord) e **Patto Insanguinato** su piedistallo (fila 12, col 12); ragnatele = terreno difficile/ostacolo al volo |
+
+### ⚔️ TATTICHE (companion T5c — 3 obiettivi di sabotaggio)
+
+- **Drow-1 (campi fungini)**: infiltrarsi oltre le sentinelle (trappola-campanelli), liberare gli schiavi, **incendiare le aiuole** (propagazione a catena) → distrugge le scorte di veleno/spore dell'Orda.
+- **Drow-2 (rifornimenti)**: colpire il **convoglio** al punto critico — **far crollare il ponte/le colonne** (indebolendone 2-3) per tagliare la logistica.
+- **Drow-3 (avamposto)**: raggiungere la **Matriarca Xilthra** nella Sala della Corte; il "Patto Insanguinato" sul piedistallo è intel/obiettivo. Arcieri drow dalle terrazze/balconi = fuoco dall'alto.
+- **Morale/allarme**: ogni campo premia l'approccio furtivo; scoperti, i drow si coordinano e gli arcieri dominano dalle alture.
+
+### 🔄 EVOLUZIONE (companion T5c — furtività → sabotaggio → esito)
+
+| Stato | Trigger | Cosa cambia | Effetto |
+|---|---|---|---|
+| A — Infiltrazione | approccio furtivo | sentinelle/trappole da neutralizzare | sorpresa possibile |
+| B — Sabotaggio | fuoco/crollo/liberazione schiavi | aiuole in fiamme / ponte crollato / schiavi liberi | **−forze e −logistica** dell'Orda a Rethmar |
+| C — Allarme (se scoperti) | una sentinella dà l'allarme | arcieri dalle alture, drow coordinati | scontro più duro |
+| D — Xilthra sconfitta | boss Drow-3 morto | settore drow disorganizzato | meno pressione drow in Fase 0/1 |
+
+> Esiti aperti (D13): quali campi il party sabota (e come) è una scelta che
+> riduce l'Orda in modo diverso; nessun esito forzato.

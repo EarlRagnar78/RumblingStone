@@ -213,3 +213,28 @@ Queste mappe coprono tutto il ciclo del Torneo di Dauth:
 - Invasione Githyanki con drago rosso e 8 cavalieri
 
 Puoi ora usare questo file insieme a `Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md` per gestire tutte le scene del torneo.
+
+---
+
+### 🌍 AMBIENTE / ⚔️ TATTICHE / 🔄 EVOLUZIONE (companion T5c)
+
+*Questo file è la **versione dettagliata (v2)** della stessa Arena di Dauth
+del file `...P2B-Torneo-MAPPE-COMPLETO.md`: il companion 3-blocchi completo è
+là (arena 40×40, colonne copertura 3/4, trofeo centrale +1 CL, twist Githyanki
+con drago rosso e 8 cavalieri). Qui si aggiungono solo gli **extra della v2**:*
+
+- **AMBIENTE (extra v2)**: regole "folle da stadio" per il Round 1 (rumore →
+  penalità a Concentrazione per gli incantatori); elementi opzionali della
+  semifinale; struttura città dettagliata attorno all'arena per il twist;
+  aree persistenti del **Fuoco del Drago** e **regole di fuga/protezione
+  civili**.
+- **TATTICHE (extra v2 — variante "Campo Aperto", §7)**: se lo scontro esce
+  dall'arena dopo l'invasione, città 40×40 = 50% edifici (blocchi 3×3,
+  copertura totale) + 50% strade (3-6 q); il **drago** usa i tetti come
+  decollo/atterraggio; i **Githyanki** imboscano tra i vicoli.
+- **EVOLUZIONE**: identica al ciclo del file COMPLETO (R1 → Semifinale →
+  Finale col trofeo → Invasione), con in più il passaggio opzionale
+  arena → Campo Aperto urbano.
+
+> Esiti aperti (D13): come nel file COMPLETO — duelli e invasione guidati da
+> scelte e dadi, non da copione.

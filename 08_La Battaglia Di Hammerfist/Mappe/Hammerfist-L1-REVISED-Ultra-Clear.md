@@ -274,4 +274,40 @@ Round 81-100: Col 24, Row 28 (loop restart)
 
 ---
 
+### 🌍 AMBIENTE (companion T5b, consolidato da POSIZIONI + DISTANZE + HAZARD)
+
+**SVG**: `rendered/Hammerfist-L1-REVISED-Ultra-Clear_map01_dirupo-mortale-campo-hobgoblin.svg`
+
+| Elemento | Dove | Effetto meccanico 3.5 |
+|---|---|---|
+| Torrione antico 🗼 | col 14-17, righe 10-13; cima +18 m | **Scalare CD 12** (~6 round di salita); dalla cima +18 m → *Osservare* con +2 di circostanza |
+| Dirupo Ovest ⛰️ | col 01-10, tutto il lato | **caduta 40 m = 40d6** (morte quasi certa); qualunque spinta a ovest è letale |
+| Rocce copertura 🟫 | col 11-12, righe 05-07 | **+4 CA** (copertura parziale); Nala vi si nasconde (Nascondersi CD 20) |
+| Fuoco centrale 🔥 | col 22-24, righe 25-26 | luce intensa 6 m / fioca 12 m → **−5 a Nascondersi entro 12 m** |
+| Campo Hobgoblin | col 21-25, righe 20-28 | tende dei dormienti + fuoco (vedi TATTICHE) |
+
+**Distanze chiave**: PG start (riga 37) → base torre = ~36-39 m/24-26 q; base torre → fuoco campo = 22 m/15 q; bordo dirupo (col 10) → base torre (col 14) = solo 6 m/4 q (attenzione alle spinte).
+
+### ⚔️ TATTICHE (companion T5b, consolidato da SEQUENZA TATTICA + PATROL)
+
+- **10 Hobgoblin**: 1 **Sergente** sveglio al comando (col 23, riga 26); **2 Guardie** in pattuglia (loop orario/antiorario, 2 min/giro, pattern round-per-round nel file); **7 dormienti** in 3 tende.
+- **Avvicinamento furtivo**: i PG muovono da riga 37 in Nascondersi CD 20; Dara scala la torre col **timing sulle pattuglie** (iniziare quando entrambe le guardie sono sul lato opposto).
+- **Osservazione dalla cima** (Dara, +18 m): *Osservare* a soglie — CD 20 conta ~900 unità, CD 25 identifica Grimjaw/Gorthak/Drago, CD 30 layout e punti deboli.
+- **Se combattimento (Opzione B)**: sorpresa se tutti Nascondersi CD 25; **uccidere per primo il Sergente** per impedire il corno d'allarme. ⚠ **Corno suonato → 50 orchi di rinforzo in 10 round**: la soglia di fallimento della missione furtiva.
+- **Morale**: gli hobgoblin danno l'allarme e resistono se il Sergente vive; senza comando (Sergente morto) sono disorganizzati `[INFERRED]`.
+
+### 🔄 EVOLUZIONE (companion T5b, consolidato dalle 4 fasi)
+
+| Stato | Trigger | Cosa cambia | Effetto |
+|---|---|---|---|
+| A — Avvicinamento (righe 37→30) | Nascondersi CD 20 | i PG si posizionano, Borin copre le pattuglie | nessun allarme |
+| B — Scalata + osservazione | timing pattuglie | Dara sale (6 round), osserva il campo nemico | intelligence acquisita per soglie |
+| C — Stealth (successo) | esfiltrazione non vista | ritiro a riga 40 | intel completa, **nessun allarme** |
+| C' — Combat | i PG ingaggiano | Sergente vivo = corno → **50 orchi in 10 round** | scontro che scala rapidamente |
+
+> Esiti aperti (D13): stealth o combattimento, e se il corno suona, dipende
+> dai tiri (Nascondersi/Osservare) e dalle scelte dei PG, non da un copione.
+
+---
+
 Continua nel prossimo file con **HAMMERFIST LOTTO 2 FORTEZZA REVISED** e poi **PORTALE FORGIA LOTTO 1-2-3**!

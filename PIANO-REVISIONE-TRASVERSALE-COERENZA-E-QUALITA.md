@@ -137,7 +137,7 @@
 - **Accettazione** ✅: censimento completo; ogni mappa parsabile ha il suo
   SVG; i KO hanno la riga di diagnosi (niente fix in questo lotto).
 
-### T5b. Companion per mappe CON tattiche esistenti (engine: **Sonnet 5**) — 🟡 IN CORSO (sessione 4, 2026-07-03)
+### T5b. Companion per mappe CON tattiche esistenti (engine: **Sonnet 5**) — ✅ FATTO (mappe da giocare; sessioni 4+9, 2026-07-03/04)
 - **Azione**: per le mappe che già hanno sezioni tattiche/statblock
   sparse (censimento T5a), riorganizzare nei 3 blocchi del template —
   SOLO consolidamento, zero invenzioni; aggiunte inevitabili flaggate
@@ -150,17 +150,27 @@
   dalle sezioni sparse preesistenti (Tattiche Raid/Sabotaggio, Posizioni
   PG, Distanze, Punti Deboli) — zero dati inventati, [INFERRED] sulle
   soglie di morale/evoluzione non esplicite nei file originali.
-- **Resta da fare** (prossima sessione T5b): Portale-Forgia-L1 map2 (Sala
-  della Forgia, hub tuttora in uso P4→P3B→P5), Portale-Forgia-L1 map1 e
-  L2 map2 (Belkram/Elder Fire Elemental, già giocati — priorità bassa),
-  Hammerfist L1/L3 + Lotto-3-FINALE (ARC-08, non ancora giocato ma non
-  "assedio" in senso stretto), Hammerfist-Lotto-1 (⚠️ DEPRECATED,
-  priorità minima).
-- **Accettazione** (parziale, per le mappe trattate): checklist ①-⑦ del
-  template soddisfatta; nessun dato nuovo non flaggato. Non ancora
-  soddisfatta per l'intero lotto (mappe restanti sopra).
+- **Fatto (sessione 9)**: aggiunti i 3 blocchi AMBIENTE/TATTICHE/EVOLUZIONE
+  a tutte le mappe REVISED delle parti da giocare mancanti — **ARC-07 Forgia**:
+  PF-1 Stanza della Corona (boss Belkram), PF-2 Sala della Forgia (hub
+  rituale P4→P3B→P5), PF-3 Corridoio del Fuoco, PF-4 Forgia Adamantina (boss
+  Elder Fire Elemental); **ARC-08**: Hammerfist-L1 (ricognizione/Torrione),
+  Hammerfist-L3 (evacuazione/Passaggi Antichi). Consolidati dalle sezioni
+  sparse (POSIZIONI/TATTICA/DISTANZE/HAZARD/LIGHTING), zero invenzioni,
+  [INFERRED] sulle soglie non esplicite. Griglie/SVG invariati (validate_maps
+  verde).
+- **Non serve companion** (già hanno tattiche organizzate per mappa):
+  `Portale-Forgia-L3-FINALE-REVISED.md` (Xorn Fauci di Diamante, skill
+  challenge, Terros CR 16 — ha già SCHEMA TATTICO per mappa; il suo SVG
+  manca solo per il formato a lettere, censito nota 2) e
+  `Hammerfist-Lotto-3-FINALE.md` (SCHEMA TATTICO per ognuna delle 5 mappe,
+  in gran parte doppioni delle REVISED già trattate).
+- **Fuori priorità**: `Hammerfist-Lotto-1` (⚠️ DEPRECATED) e `Lotto-2`
+  (variante della L2-REVISED già fatta) — non parti da giocare canoniche.
+- **Accettazione** ✅ (per le mappe da giocare): checklist ①-⑦ del template
+  soddisfatta su ogni mappa REVISED trattata; nessun dato nuovo non flaggato.
 
-### T5c. Companion generativi + griglie mancanti (engine: **Opus 4.8**)
+### T5c. Companion generativi + griglie mancanti (engine: **Opus 4.8**) — ✅ FATTO (sessioni 9-10, 2026-07-04)
 - **Evidenza**: Campo Drow 2 ha griglia volutamente abbreviata
   (`[continues...]`); `SUPPLEMENTO-P1C-...-Description.md` è **0 byte**
   (task ARC-09 §161 aperto); molte mappe ARC-07/08 non hanno né tattiche
@@ -171,8 +181,39 @@
   bilanciamento EL/GS coerente coi ricalibrati (metodo `Terros.md`) e
   morale/contromosse stile RHoD; statblock SOLO per riferimento a file
   esistenti o catalogo.
-- **Accettazione**: zero mappe senza companion negli archi 07-09; EL
-  dichiarati; esiti aperti (D13); [INFERRED] su ogni scelta di design.
+- **Stato (sessione 9)**: ⏳ **scoped/rinviato alle parti imminenti** (la
+  regola T5c è "solo per le parti effettivamente imminenti al tavolo"; oggi
+  il tavolo è ad **ARC-07 P4**, state.md §0). Punti chiusi/coperti:
+  - **Parti imminenti (ARC-07/08)**: coperte da T5b (companion su tutte le
+    REVISED da giocare); `Portale-Forgia-L3-FINALE` (Camera Sferica Boss /
+    Terros CR 16, il climax P5) **ha già tattiche organizzate** — nessuna
+    generazione necessaria, solo l'SVG manca per il formato a lettere
+    (censito nota 2; riscrittura a griglia-emoji o estensione del parser
+    resta opzionale).
+  - **File 0-byte**: già risolto — `SUPPLEMENTO-P1C-...-Description.md` ha
+    contenuto (censimento nota 7), riferimento nel piano superato.
+  - **Griglia Campo Drow 2** ✅ **FATTA (sessione 10, 2026-07-04)**: era
+    abbreviata (`[continues...]` + righe interne saltate); ora **completa** —
+    53 righe, larghezza uniforme 65 colonne, strutture posizionate secondo le
+    annotazioni (palizzata/cancelli/torretta/recinto ogre/tenda Wyrmlord/
+    tesoro/prigioni), generata con script per uniformità, SVG rigenerato
+    (validate_maps verde). ⚠️ Discrepanza dimensioni 65 col disegnate vs 80
+    dichiarate flaggata `[needs DM confirmation]` nel sorgente (completata
+    coerente con le posizioni, non allargata a foresta vuota).
+  - **16 file narrativi ARC-09 P2/P3** ✅ **FATTI (sessione 10)**: aggiunto il
+    companion 3-blocchi AMBIENTE/TATTICHE/EVOLUZIONE a **tutti e 16** —
+    P1 Cerchio Hellas (Treant+Rituale+Campi Drow A/B/C); P2A Torre Invisibile
+    L1-L5 (enigmi + boss Zalkatar a 3 fasi); P2B Torneo Dauth ×2 (duelli +
+    invasione Githyanki); P2D Palio (corsa a Zone + assalto stalla, già con
+    SVG a mano); P3 Battaglia Finale FASE0-4 (Notte Drow, Assedio, Ritualisti,
+    Avatar, Circolo Mythal); P3 Ghostlord/Sabotaggio/Starsong. Consolidamento
+    dalla prosa esistente (statblock rimandati ai file TESTO/STATBLOCCHI),
+    esiti aperti (D13), [INFERRED] solo su soglie non esplicite.
+  - **Resta opzionale (non serve per l'accettazione)**: dare a questi 16 una
+    griglia-emoji per l'SVG è lavoro puramente estetico — da fare solo se il
+    DM vuole la resa visuale per una scena specifica.
+- **Accettazione** ✅: **zero mappe senza companion negli archi 07-09**;
+  EL/CR dichiarati; esiti aperti (D13); [INFERRED] su ogni scelta di design.
 
 ## §3 — LOTTO T-C: Artefatti di tutti i PG (T6-T8) e propagazione rituale (T9)
 
@@ -198,7 +239,7 @@
 - **Accettazione** ✅: ogni file della matrice ha lo stato che la matrice
   dichiara; matrice aggiornata; zero contenuti modificati.
 
-### T6b. Consolidamenti Corona/Aegis/Cerebromorphosis — 🟡 IN CORSO (sessione 6, 2026-07-04: Aegis + Cerebro)
+### T6b. Consolidamenti Corona/Aegis/Cerebromorphosis — ✅ FATTO (sessioni 6-8, 2026-07-04)
 - **Azione**: (1) fondere i near-dup Corona (`000_Corona_adamantio_ogetto`
   → assorbito nel master DM; eleggere una delle 2 `Schede_avvenimenti`);
   (2) estrarre il **master .md di Aegis Fang** dal docx/pdf (tabella di
@@ -221,17 +262,25 @@
     inglese (`cerebromorphosis_system.md`, doppia byte-identica) · *annesso*
     il sottosistema party-intervention (`party_intervention_system.md`,
     `moradin_divine_guidance_italian.md`) · 📸 i PDF. Matrice §3 aggiornata.
-- **Resta da fare (prossima sessione T6b)**: (1) near-dup **Corona**
-  (assorbire `000_Corona_adamantio_ogetto`, eleggere tra le 2
-  `Schede_avvenimenti`) e (4) sync **`campaign-artifacts.md`** sezione Corona
-  al post-P3 — rinviati perché toccano contenuto della cartella Corona più
-  affollata (rischio di deriva di canone): da fare con lettura dedicata dei
-  ~20 file Corona, non a stima.
-- **Accettazione** (parziale): regola dei 3 documenti ora rispettata per
-  **Aegis** (master `.md` + il resto censito) e master eletto per
-  **Cerebromorphosis**; ✅ `grep` oggetti spesi (Rubino, Cuore di Moradin) =
-  **0 usi attivi** (verificato in sessione 6). Non ancora completa per
-  **Corona** (parti 1+4 sopra).
+- **Fatto (sessione 8) — Corona**:
+  - **(1) near-dup**: `000_Corona_adamantio_ogetto.md` bannerato 📸 ASSORBITO
+    nel master (il master prevale sui dati divergenti, es. prereq BAB);
+    eletta `00_Schede_avvenimenti_...-ALT.md` (formulazione più chiara), la
+    gemella 📸 SUPERATA. Matrice §1 aggiornata.
+  - **Riconciliazione HTML gemme ↔ master/scheda**: aggiunto alla scheda
+    giocatore il **+2 intuizione CA** di *Stone's Awareness* (era omesso;
+    presente in master e HTML). **2 dubbi lasciati al DM** `[needs DM
+    confirmation]` (banner nel master DM): Trappole↔Comprendere Linguaggi;
+    Topazio 10 min↔1 ora. Resto coerente.
+  - **(4) sync `campaign-artifacts.md`**: *Moradin's Insight* → "Active
+    Powers" (Rituale 2 completato); +2 CA su *Stone's Awareness*; sblocchi
+    corretti (Mantle = Rituale 3, aggiunta *Aura of the Eternal Forge* =
+    Rituale 4) allineati al master. Matrice §7 marcata ✅.
+- **Accettazione** ✅: regola dei 3 documenti rispettata per Corona, Aegis,
+  Ring, Bracieri+Cintura, Collana; master eletto per Cerebromorphosis; `grep`
+  oggetti spesi (Rubino, Cuore di Moradin) = **0 usi attivi**. Le poche
+  divergenze HTML↔master irrisolvibili senza il DM sono flaggate, non
+  indovinate.
 
 ### T6c. 🔶 state.md §6 a due tempi (engine: **Opus 4.8**; arbitrati → **Fable**)
 - **Evidenza**: nota [T4-a] della matrice — §0 al tavolo reale, §1/§6 allo
@@ -246,7 +295,7 @@
 - **Accettazione**: un lettore capisce da §6 cosa vale STASERA senza
   leggere [T4-a]; nessuna riga di storia riscritta.
 
-### T7. Schede giocatore STATO-ATTUALE per tutti (engine: **Sonnet 5**)
+### T7. Schede giocatore STATO-ATTUALE per tutti — ✅ FATTO (sessione 7, 2026-07-04)
 - **Azione**: dal template T4, generare le schede per **Aegis Fang** (dal
   master T6b), **Ring** (dal Revised: poteri costanti+attivati, crisis
   powers SOLO lato DM), **Bracieri+Cintura** (allineare la
@@ -254,8 +303,47 @@
   sblocchi), **Collana** (dalla scheda Hella, con i 3 slot-dono e lo stato
   post-rituale che il tavolo produrrà). Due snapshot dove serve (come la
   Corona).
-- **Accettazione**: ogni PG ha UNA scheda stampabile senza spoiler; le
-  vecchie marcate SUPERATA; matrice aggiornata.
+- **Fatto**:
+  - **Aegis Fang** ✅ — `00_Aegis_Fang-SCHEDA-GIOCATORE-STATO-ATTUALE.md`
+    (Stadio 0 pre-risveglio; Pagina 2 "Risveglio pieno" gated, non stampare
+    prima dell'Assedio; conditional T9 «Filo dell'Ascia»).
+  - **Ring** ✅ — `ringOfChaoticIllumination/00_Ring-SCHEDA-GIOCATORE-STATO-ATTUALE.md`
+    (poteri costanti + 6 attivati in IT meccanico; **poteri di crisi tenuti
+    lato DM**, solo accennati).
+  - **Bracieri+Cintura** ✅ — `Tordek/05_..._Scheda_PG_Completa.md` allineata
+    (banner STATO-ATTUALE + registro sblocchi; Cintura già integrata nel
+    cheat sheet come «Cariche Devastazione»).
+  - **Collana** ✅ — estratto l'handout standalone
+    `Hella/00_Collana-SCHEDA-GIOCATORE-STATO-ATTUALE.md` dal file combinato
+    (Radicata attuale = Pagina 1; Fiorita/Foresta-che-Cammina = Pagina 2
+    gated ARC-09); il file combinato `01_...` resta master DM con banner
+    «non consegnare al giocatore». Slot-dono legati al ramo del rifiuto (T9).
+  Matrice §2-§5 aggiornata (una scheda giocatore per artefatto). Corona già
+  aveva la sua da T4.
+- **Riconciliazione HTML↔md (2026-07-04, richiesta DM)**: le schede HTML
+  contengono le modifiche ai poteri avvenute durante la Forgia Eterna → i
+  loro valori sono i validi. Controllate contro le `.md`:
+  - **Bracieri** ⚠️→✅: l'handout `.md` aveva **RD 3** (obsoleto) mentre
+    master `01_`, stadio `03_` e HTML danno **RD 5/adamantio** → corretto.
+    Aggiunti dall'HTML (assenti dalla bozza `.md`): **Frantumare (Shatter)**
+    1/giorno su critico e la **Benedizione della Forgia Eterna** (contatto
+    con l'Altare del Cuore di Moradin → 3→**4 cariche**/giorno + carica
+    gratis su 18-20), già confermata in `00_Cintura_della_Devastazione.md`.
+    Ricarica allineata ad "alba/8h" (HTML). `[dubbio → DM]`: durata della
+    Benedizione ("fino a fine avventura" = solo ARC-07 o campagna intera?).
+  - **Ring** ✅: HTML = export della `.md` Revised (numeri identici), nessuna
+    variazione.
+  - **Aegis** ✅: le modifiche dell'HTML (`05_..._Final_Awakening`) sono lo
+    **Stadio 1** post-Assedio (P5), già gated in Pagina 2 e nel master;
+    coerente con state.md §6 (*pre-full-awakening*). `[dubbio → DM]`: se il
+    DM ritiene l'Assedio già avvenuto, promuovere allo Stadio 1.
+  - **Corona** ⏳: le schede HTML `02_/03_ Gemme` sono stati futuri; la loro
+    riconciliazione col master DM rientra nel **T6b residuo** (near-dup
+    Corona + sync `campaign-artifacts.md`) — vedi §T6b.
+- **Accettazione** ✅: ogni PG ha UNA scheda stampabile senza spoiler (gli
+  stadi futuri/crisi sono su pagine gated o lato DM); valori allineati alle
+  schede HTML della Forgia dove differivano; dubbi marcati `[needs DM
+  confirmation]`; matrice aggiornata.
 
 ### T8. Convalida sinergie Collana dopo la quest di Hella (engine: **Sonnet 5**, al momento giusto)
 - **Azione**: quando il tavolo gioca Foresta Sacra/slot-dono: spostare le
@@ -318,9 +406,9 @@
 ## §5 — Checklist avanzamento
 
 - [x] T1 · [x] T2 · [x] T3 · [x] T4 — **LOTTO T-A COMPLETO (2026-07-03)**
-- [x] T5a (sessione 2, 2026-07-03) · 🟡 T5b in corso (sessione 4: Campo Drow 1-2 + Hammerfist assedio) · [ ] T5c — lotto mappe
-- [x] T6a (sessione 3, 2026-07-03) · 🟡 T6b in corso (sessione 6: Aegis Fang master + Cerebromorphosis eletto; restano Corona near-dup + campaign-artifacts sync) · [ ] T6c (gated: conferma DM) — lotto artefatti
-- [ ] T7 · [ ] T8 (gated: quest ARC-09 giocata) · [x] T9 cross-link (sessione 5, 2026-07-04; chiusura post-gioco P3B ancora gated) — schede, sinergie, propagazione
+- [x] T5a (sessione 2) · [x] T5b (sessioni 4+9: companion su tutte le mappe REVISED da giocare) · [x] T5c (sessioni 9-10: griglia Campo Drow 2 completata + companion su tutti i 16 file narrativi ARC-09) — **LOTTO MAPPE COMPLETO** (resta opzionale/estetico solo l'SVG dei 16 narrativi)
+- [x] T6a (sessione 3, 2026-07-03) · [x] T6b (sessioni 6-8, 2026-07-04: Aegis master + Cerebro eletto + Corona consolidata/riconciliata + campaign-artifacts sync) · [ ] T6c (gated: conferma DM) — lotto artefatti
+- [x] T7 (sessione 7, 2026-07-04: schede Aegis/Ring/Bracieri/Collana) · [ ] T8 (gated: quest ARC-09 giocata) · [x] T9 cross-link (sessione 5, 2026-07-04; chiusura post-gioco P3B ancora gated) — schede, sinergie, propagazione
 - [x] T-D1…T-D5 — decisioni acquisite (2026-07-03); domande aperte:
   SOLO le conferme DM inline (T6c colonne §6; rimozione temporanei Word)
 

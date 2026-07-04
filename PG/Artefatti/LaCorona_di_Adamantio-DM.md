@@ -9,6 +9,18 @@
 > (solo poteri sbloccati, 2 snapshot etichettati). Ruolo di ogni altro file
 > della cartella Corona: `PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md` §1.
 > Sinergie: `PG/Artefatti/SINERGIE-ARTEFATTI-MASTER.md`.
+>
+> **Riconciliazione HTML↔master (T6b, 2026-07-04)**: confrontate le schede
+> HTML della Forgia (`01_/02_/03_ Corona_*_Gemme.html`) con questo master e
+> con la scheda giocatore. Allineamenti fatti: la scheda giocatore ora include
+> il **+2 intuizione alla CA** di *Stone's Awareness* (era omesso; presente
+> qui e nell'HTML). **Due dubbi lasciati al DM** `[needs DM confirmation]`:
+> (1) *Stone's Awareness* — questo master concede «Individuare Porte Segrete e
+> **Comprendere Linguaggi**», mentre HTML e scheda giocatore danno «Individuare
+> Porte Segrete e **Scoprire Trappole**»: quale vale? (2) *Gem of Immutable
+> Time (Topazio)* — tempo di attivazione **10 minuti** (questo master) vs
+> **1 ora** (HTML `02`): quale vale? Il resto (deviazione +2→+3, Moradin's
+> Insight, Adamantine Will, gemme) è coerente tra master e HTML.
 
 ## Capitolo 1: L'Anima dell'Artefatto
 

@@ -61,8 +61,9 @@ Cartella `Artefatti-Pg/Aegis Fang/`:
 
 | File | Ruolo | Stato |
 |---|---|---|
-| `Aegis Fang.docx` / `Aegis Fang.pdf` | scheda completa | ⭐ MASTER **di fatto** — ⚠️ manca il `.md` (lotto **T6**: estrarre markdown master) |
-| `05_Aegis_Fang_Final_Awakening.html` | risveglio finale (post-Siege) | *annesso* (futuro) |
+| `00_Aegis_Fang-MASTER-DM.md` | Guida DM (master vivo, tabella di progressione a 2 stadi) | ⭐ **MASTER** (creato in **T6b** 2026-07-04, transcritto da `.docx` + HTML risveglio) |
+| `Aegis Fang.docx` / `Aegis Fang.pdf` | scheda completa originale | 📸 export storico (fonte dello stadio base del master `.md`) |
+| `05_Aegis_Fang_Final_Awakening.html` | risveglio finale (post-Siege) | *annesso* — fonte dello **Stadio 1** del master `.md` (risveglio pieno, ⬜ futuro) |
 | `Avventure_per_nani.txt` | appunti | ⭐ canonico (refuso eletto/rinominato in T6a) |
 | `DEPRECATO-Avvneture_per_nani-refuso-duplicato.txt` | appunti, duplicato byte-identico | 📸 deprecato (T6a: `git mv` dal refuso `Avvneture_per_nani.txt`, banner in testa) |
 | `~$gis Fang.docx`, `~WRL0191.tmp` | file temporanei Word | 🗑️ candidati rimozione — **in attesa di conferma DM** (eccezione D10, non rimossi in T6a) |
@@ -71,8 +72,8 @@ Cartella `Artefatti-Pg/Aegis Fang/`:
 > l'alternativa «Filo dell'Ascia»** invece del sangue, **Aegis Fang perde la
 > proprietà *Returning*** fino al pieno risveglio (post-Siege,
 > `05_Aegis_Fang_Final_Awakening.html`): ogni lancio dell'ascia va recuperato
-> a mano. Da riportare nel master `.md` quando verrà estratto (lotto **T6b**).
-> Fonte: `../../07_il Portale Della Forgia
+> a mano. **Riportato** nel master `00_Aegis_Fang-MASTER-DM.md` (§ *Costi e
+> vincoli*) in T6b. Fonte: `../../07_il Portale Della Forgia
 > Eterna/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` §2-BIS → *Tabella
 > echi*, riga «Alternativa Filo dell'Ascia».
 
@@ -86,7 +87,10 @@ Cartella `Artefatti-Pg/Aegis Fang/`:
 | `PG/Artefatti/Ring of Chaotic Illumination.md` (top-level) | versione originale inglese pre-riforgiatura | 📸 snapshot storico (banner aggiunto in T6a) |
 | `PG/Artefatti/Ring_of_chaotic_illumination-master.md` + `.odt`/`.pdf` (top-level) | "documento riservato DM", generazione 2 | 📸 snapshot storico (banner aggiunto al `.md` in T6a; export `.odt`/`.pdf` binari non bannerabili, stesso stato per riferimento) |
 | `ringOfChaoticIllumination/00_..._Revised.html` / `Ring of Chaotic Illumination (Reforged).pdf` | export del MASTER | 📸 generati |
-| `Artemis/Cerebromorphosis/**` | sistema crisi Cerebromorphosis + intervento divino (IT/EN, md+pdf) | *annesso* al percorso di Artemis — ⚠️ nessun master eletto (lotto **T6**) |
+| `Artemis/Cerebromorphosis/Italiano/cerebromorphosis_italian-final.md` | sistema crisi Cerebromorphosis (IT, completo) | ⭐ **MASTER eletto (T6b)** — banner in testa |
+| `Artemis/Cerebromorphosis/cerebromorphosis_system.md` (root + copia in `Italiano/`, byte-identiche) | stesso sistema di crisi, generazione **inglese** | 📸 snapshot storico (EN) |
+| `Artemis/Cerebromorphosis/party_intervention_system.md` (root + `Italiano/`) · `Italiano/moradin_divine_guidance_italian.md` | **sottosistema distinto**: intervento di guida divina del party (non la crisi) | *annesso* al percorso di Artemis |
+| `Artemis/Cerebromorphosis/**/*.pdf` | export vari (IT/EN) del sistema crisi + party-intervention | 📸 generati (binari, non bannerabili) |
 | `PrestigeClass/lord_sun_shadow/` | classe di prestigio RIFIUTATA da Artemis | 📸 storia di progetto (percorso alternativo chiuso) |
 
 ## 4. BRACIERI GEMELLI + CINTURA DELLA DEVASTAZIONE (Tordek) — il modello

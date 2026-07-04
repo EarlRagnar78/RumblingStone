@@ -1,5 +1,15 @@
 # Crisi di Cerebromorphosis - Sistema di Intervento Divino
 
+> **⭐ MASTER eletto (lotto T6b, 2026-07-04)** del sistema di crisi
+> Cerebromorphosis di **Artemis** (percorso legato al Ring of Chaotic
+> Illumination). Versione italiana `-final`, la più completa. Le altre copie
+> nella cartella sono: 📸 `cerebromorphosis_system.md` (generazione inglese
+> dello stesso sistema di crisi, presente in doppia copia byte-identica root
+> + `Italiano/`); *annesso* `party_intervention_system.md` /
+> `moradin_divine_guidance_italian.md` (sottosistema distinto — l'intervento
+> di guida divina del party, non il sistema di crisi). Censito in
+> `PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md` §3.
+
 ## Panoramica della Struttura dei Tiri Salvezza
 
 ### Tiri Salvezza Giornalieri (CD 19):

@@ -198,7 +198,7 @@
 - **Accettazione** ✅: ogni file della matrice ha lo stato che la matrice
   dichiara; matrice aggiornata; zero contenuti modificati.
 
-### T6b. Consolidamenti Corona/Aegis/Cerebromorphosis (engine: **Opus 4.8**)
+### T6b. Consolidamenti Corona/Aegis/Cerebromorphosis — 🟡 IN CORSO (sessione 6, 2026-07-04: Aegis + Cerebro)
 - **Azione**: (1) fondere i near-dup Corona (`000_Corona_adamantio_ogetto`
   → assorbito nel master DM; eleggere una delle 2 `Schede_avvenimenti`);
   (2) estrarre il **master .md di Aegis Fang** dal docx/pdf (tabella di
@@ -206,9 +206,32 @@
   `05_Aegis_Fang_Final_Awakening.html`); (3) eleggere il master del
   sistema Cerebromorphosis di Artemis (IT vs EN, md vs pdf); (4) sync
   della sezione Corona di `campaign-artifacts.md` (oggi ferma al pre-P3).
-- **Accettazione**: regola dei 3 documenti rispettata per Corona, Aegis,
-  Ring, Bracieri+Cintura, Collana; `grep` degli oggetti spesi (Rubino,
-  Cuore di Moradin) = 0 usi attivi.
+- **Fatto (sessione 6)**:
+  - **(2) Aegis Fang** ✅ — creato `00_Aegis_Fang-MASTER-DM.md` transcrivendo
+    fedelmente il `.docx` (stadio base: +2 Returning Dwarven Waraxe
+    *Dragondoom*, Ego 14, poteri inferiori) e `05_..._Final_Awakening.html`
+    (Stadio 1, risveglio pieno post-Assedio: +4 Holy Returning, Ego 20,
+    Ritornante inesorabile, Taglio del Cacciatore, Condotto Divino di
+    Moradin). Tabella di progressione a 2 stadi; stato corrente = Stadio 0
+    (state.md §6 conferma *pre-full-awakening*). Eco T9 «Filo dell'Ascia»
+    riportato in § Costi. `[INFERRED]` su ogni mappatura SRD non esplicita.
+    `.docx`/`.pdf` declassati a 📸 export storico. Matrice aggiornata.
+  - **(3) Cerebromorphosis** ✅ — eletto `Italiano/cerebromorphosis_italian-final.md`
+    come ⭐ MASTER (banner in testa); classificati gli altri: 📸 generazione
+    inglese (`cerebromorphosis_system.md`, doppia byte-identica) · *annesso*
+    il sottosistema party-intervention (`party_intervention_system.md`,
+    `moradin_divine_guidance_italian.md`) · 📸 i PDF. Matrice §3 aggiornata.
+- **Resta da fare (prossima sessione T6b)**: (1) near-dup **Corona**
+  (assorbire `000_Corona_adamantio_ogetto`, eleggere tra le 2
+  `Schede_avvenimenti`) e (4) sync **`campaign-artifacts.md`** sezione Corona
+  al post-P3 — rinviati perché toccano contenuto della cartella Corona più
+  affollata (rischio di deriva di canone): da fare con lettura dedicata dei
+  ~20 file Corona, non a stima.
+- **Accettazione** (parziale): regola dei 3 documenti ora rispettata per
+  **Aegis** (master `.md` + il resto censito) e master eletto per
+  **Cerebromorphosis**; ✅ `grep` oggetti spesi (Rubino, Cuore di Moradin) =
+  **0 usi attivi** (verificato in sessione 6). Non ancora completa per
+  **Corona** (parti 1+4 sopra).
 
 ### T6c. 🔶 state.md §6 a due tempi (engine: **Opus 4.8**; arbitrati → **Fable**)
 - **Evidenza**: nota [T4-a] della matrice — §0 al tavolo reale, §1/§6 allo

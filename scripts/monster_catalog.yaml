@@ -23,20 +23,6 @@ monsters:
     role: generalist
     environment: any
     source_file: "Bestiario/pregen-pcgen/Myconid Sovereign.html"
-  - id: stanza-celebromorfosi-6109de
-    name: "Stanza Celebromorfosi"
-    cr: 5.0
-    faction: aberration
-    role: generalist
-    environment: dungeon
-    source_file: "04_tomba_di_Belkram/02_Celebromorfosi/Stanza_celebromorfosi.html"
-  - id: stanza-celebromorfosi-0771ac
-    name: "Stanza Celebromorfosi"
-    cr: 5.0
-    faction: aberration
-    role: generalist
-    environment: dungeon
-    source_file: "04_tomba_di_Belkram/02_Celebromorfosi/stanza_celebromorfosi.md"
   - id: stanza-celebromorfosi-fc73d2
     name: "Stanza Celebromorfosi"
     cr: 5.0
@@ -51,6 +37,20 @@ monsters:
     role: generalist
     environment: dungeon
     source_file: "04_tomba_di_Belkram/00_Celebromorfosi/stanza_celebromorfosi.md"
+  - id: stanza-celebromorfosi-6109de
+    name: "Stanza Celebromorfosi"
+    cr: 5.0
+    faction: aberration
+    role: generalist
+    environment: dungeon
+    source_file: "04_tomba_di_Belkram/02_Celebromorfosi/Stanza_celebromorfosi.html"
+  - id: stanza-celebromorfosi-0771ac
+    name: "Stanza Celebromorfosi"
+    cr: 5.0
+    faction: aberration
+    role: generalist
+    environment: dungeon
+    source_file: "04_tomba_di_Belkram/02_Celebromorfosi/stanza_celebromorfosi.md"
   - id: grell-necromante-bab2ee
     name: "Grell Necromante"
     cr: 7.0
@@ -93,13 +93,6 @@ monsters:
     role: generalist
     environment: mountain
     source_file: "Bestiario/pregen-pcgen/00_Cr11_ordinato_dai_chierici_di_abbathor_di_riportare_Eagis_fang_al_loro_re_SRD_Retriever - D&D Wiki.htm"
-  - id: fight-fungi-colony-6c743b
-    name: "Fight Fungi Colony"
-    cr: 12.0
-    faction: aberration
-    role: generalist
-    environment: any
-    source_file: "Bestiario/pregen-pcgen/00_scaladossa-abbattor-funghi/Fight_fungi_colony.txt"
   - id: fight-fungi-colony-419a6c
     name: "Fight Fungi Colony"
     cr: 12.0
@@ -107,13 +100,13 @@ monsters:
     role: generalist
     environment: any
     source_file: "02_scaladossa-abbattor-funghi/Fight_fungi_colony.txt"
-  - id: fight-fungi-colony-formatted-743d56
-    name: "Fight Fungi Colony Formatted"
+  - id: fight-fungi-colony-6c743b
+    name: "Fight Fungi Colony"
     cr: 12.0
     faction: aberration
     role: generalist
     environment: any
-    source_file: "Bestiario/pregen-pcgen/00_scaladossa-abbattor-funghi/Fight_fungi_colony-formatted.txt"
+    source_file: "Bestiario/pregen-pcgen/00_scaladossa-abbattor-funghi/Fight_fungi_colony.txt"
   - id: fight-fungi-colony-formatted-0cbb54
     name: "Fight Fungi Colony Formatted"
     cr: 12.0
@@ -121,6 +114,13 @@ monsters:
     role: generalist
     environment: any
     source_file: "02_scaladossa-abbattor-funghi/Fight_fungi_colony-formatted.txt"
+  - id: fight-fungi-colony-formatted-743d56
+    name: "Fight Fungi Colony Formatted"
+    cr: 12.0
+    faction: aberration
+    role: generalist
+    environment: any
+    source_file: "Bestiario/pregen-pcgen/00_scaladossa-abbattor-funghi/Fight_fungi_colony-formatted.txt"
   - id: sethrax-il-velato-emissario-illithid-della-torre-invisibile-fab37e
     name: "SETHRAX IL VELATO — EMISSARIO ILLITHID DELLA TORRE INVISIBILE"
     cr: 12.0
@@ -149,13 +149,6 @@ monsters:
     role: generalist
     environment: dungeon
     source_file: "04_tomba_di_Belkram/Antenato_Nanico_cr13.html"
-  - id: belkram-22bf43
-    name: "Belkram"
-    cr: 13.0
-    faction: aberration
-    role: caster-divine
-    environment: dungeon
-    source_file: "06_Stanza-corona-di-adamantio/StanzaCoronaDiAdamantio/Belkram.md"
   - id: belkram-3baada
     name: "Belkram"
     cr: 13.0
@@ -163,6 +156,13 @@ monsters:
     role: caster-divine
     environment: dungeon
     source_file: "06_Stanza-corona-di-adamantio/CoronaDiAdamantio/Belkram.md"
+  - id: belkram-22bf43
+    name: "Belkram"
+    cr: 13.0
+    faction: aberration
+    role: caster-divine
+    environment: dungeon
+    source_file: "06_Stanza-corona-di-adamantio/StanzaCoronaDiAdamantio/Belkram.md"
   - id: il-guardiano-beholder-52bf0c
     name: "Il Guardiano Beholder"
     cr: 13.0
@@ -549,13 +549,6 @@ monsters:
     environment: underdark
     source_file: "Bestiario/mostri/drow-noble-guard-cr5.md"
     notes: "Bodyguard Sajak. ~15 nella casata."
-  - id: system-information-96ec7e
-    name: "System Information"
-    cr: 5.0
-    faction: drow-sonjak
-    role: flier
-    environment: underdark
-    source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/goblin worg raider cr5.pcg"
   - id: system-information-439343
     name: "System Information"
     cr: 5.0
@@ -563,6 +556,13 @@ monsters:
     role: flier
     environment: underdark
     source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Underdark cleric cr5 Ainin.pcg"
+  - id: system-information-96ec7e
+    name: "System Information"
+    cr: 5.0
+    faction: drow-sonjak
+    role: flier
+    environment: underdark
+    source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/goblin worg raider cr5.pcg"
   - id: underdark-cleric-cr5-ainin-13f177
     name: "Underdark Cleric Cr5 Ainin"
     cr: 5.0
@@ -619,13 +619,6 @@ monsters:
     role: caster-divine
     environment: underdark
     source_file: "Bestiario/pregen-pcgen/Underdark cleric cr6 Ainin - (0 Points) in Statblock Format.html"
-  - id: system-information-cdf5cb
-    name: "System Information"
-    cr: 7.0
-    faction: drow-sonjak
-    role: flier
-    environment: underdark
-    source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/monaco pugno del destino cr7.pcg"
   - id: system-information-ed1b40
     name: "System Information"
     cr: 7.0
@@ -633,20 +626,6 @@ monsters:
     role: flier
     environment: underdark
     source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Draxoksus-cr7.pcg"
-  - id: system-information-aa3381
-    name: "System Information"
-    cr: 7.0
-    faction: drow-sonjak
-    role: flier
-    environment: underdark
-    source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Underdark dovil runecaster deep diviner cr7.pcg"
-  - id: system-information-54356d
-    name: "System Information"
-    cr: 7.0
-    faction: drow-sonjak
-    role: flier
-    environment: underdark
-    source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/underdark deep warden brieyn cr7.pcg"
   - id: system-information-66b6dc
     name: "System Information"
     cr: 7.0
@@ -654,6 +633,20 @@ monsters:
     role: flier
     environment: underdark
     source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Incontro-RedHandof-doom/Draxoksus-cr7.pcg"
+  - id: system-information-aa3381
+    name: "System Information"
+    cr: 7.0
+    faction: drow-sonjak
+    role: flier
+    environment: underdark
+    source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Underdark dovil runecaster deep diviner cr7.pcg"
+  - id: system-information-cdf5cb
+    name: "System Information"
+    cr: 7.0
+    faction: drow-sonjak
+    role: flier
+    environment: underdark
+    source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/monaco pugno del destino cr7.pcg"
   - id: system-information-ced750
     name: "System Information"
     cr: 7.0
@@ -661,6 +654,13 @@ monsters:
     role: flier
     environment: underdark
     source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/regolari/hobgoblin-portalame cr7.pcg"
+  - id: system-information-54356d
+    name: "System Information"
+    cr: 7.0
+    faction: drow-sonjak
+    role: flier
+    environment: underdark
+    source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/underdark deep warden brieyn cr7.pcg"
   - id: underdark-dovil-runecaster-deep-diviner-cr7-23cbf2
     name: "Underdark Dovil Runecaster Deep Diviner Cr7"
     cr: 7.0
@@ -683,13 +683,6 @@ monsters:
     environment: underdark
     source_file: "Bestiario/mostri/drow-wizard7-cr8.md"
     notes: "Supporto magia Sonjak."
-  - id: system-information-19a30b
-    name: "System Information"
-    cr: 8.0
-    faction: drow-sonjak
-    role: flier
-    environment: underdark
-    source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/KulkorZhul war Adept cr8.pcg"
   - id: system-information-c131c9
     name: "System Information"
     cr: 8.0
@@ -697,13 +690,13 @@ monsters:
     role: flier
     environment: underdark
     source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Draon-hamann-cr8.pcg"
-  - id: system-information-6e41d0
+  - id: system-information-19a30b
     name: "System Information"
-    cr: 9.0
+    cr: 8.0
     faction: drow-sonjak
     role: flier
     environment: underdark
-    source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/KulkorZhul war Adept cr9 fire.pcg"
+    source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/KulkorZhul war Adept cr8.pcg"
   - id: system-information-9e939f
     name: "System Information"
     cr: 9.0
@@ -711,6 +704,20 @@ monsters:
     role: flier
     environment: underdark
     source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/KulkorZhul war Adept cr9 acid.pcg"
+  - id: system-information-6e41d0
+    name: "System Information"
+    cr: 9.0
+    faction: drow-sonjak
+    role: flier
+    environment: underdark
+    source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/KulkorZhul war Adept cr9 fire.pcg"
+  - id: system-information-aeb319
+    name: "System Information"
+    cr: 9.0
+    faction: drow-sonjak
+    role: flier
+    environment: underdark
+    source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/KulkorZhul war Adept cr9 ice.pcg"
   - id: system-information-825e4d
     name: "System Information"
     cr: 9.0
@@ -725,13 +732,6 @@ monsters:
     role: flier
     environment: underdark
     source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/druido Avarthel cr9.pcg"
-  - id: system-information-aeb319
-    name: "System Information"
-    cr: 9.0
-    faction: drow-sonjak
-    role: flier
-    environment: underdark
-    source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/KulkorZhul war Adept cr9 ice.pcg"
   - id: stat-blocchi-sabotaggio-campi-drow-1-3-221e0f
     name: "Stat blocchi – Sabotaggio Campi Drow (1–3)"
     cr: 10.0
@@ -1610,13 +1610,6 @@ monsters:
     role: generalist
     environment: any
     source_file: ".pr-body.md"
-  - id: 00-nani-dwergar-abaddor-scala-di-ossa-0883dd
-    name: "00 Nani Dwergar Abaddor Scala Di Ossa"
-    cr: 11.0
-    faction: unknown
-    role: melee-heavy
-    environment: any
-    source_file: "Bestiario/pregen-pcgen/00_scaladossa-abbattor-funghi/00_nani_dwergar_abaddor_scala_di_ossa.txt"
   - id: 00-nani-dwergar-abaddor-scala-di-ossa-a19981
     name: "00 Nani Dwergar Abaddor Scala Di Ossa"
     cr: 11.0
@@ -1624,6 +1617,13 @@ monsters:
     role: melee-heavy
     environment: any
     source_file: "02_scaladossa-abbattor-funghi/00_nani_dwergar_abaddor_scala_di_ossa.txt"
+  - id: 00-nani-dwergar-abaddor-scala-di-ossa-0883dd
+    name: "00 Nani Dwergar Abaddor Scala Di Ossa"
+    cr: 11.0
+    faction: unknown
+    role: melee-heavy
+    environment: any
+    source_file: "Bestiario/pregen-pcgen/00_scaladossa-abbattor-funghi/00_nani_dwergar_abaddor_scala_di_ossa.txt"
   - id: arc-02-scala-d-ossa-abbathor-e-i-funghi-ea73eb
     name: "ARC 02 — SCALA D'OSSA: ABBATHOR E I FUNGHI"
     cr: 11.0
@@ -1638,13 +1638,6 @@ monsters:
     role: caster-divine
     environment: dungeon
     source_file: "Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Duergar_figther_ponte/abbathor_clerics11.htm"
-  - id: epic-fight-dwarf-duergar-9aaf51
-    name: "Epic Fight Dwarf Duergar"
-    cr: 11.0
-    faction: unknown
-    role: caster-divine
-    environment: dungeon
-    source_file: "Bestiario/pregen-pcgen/00_scaladossa-abbattor-funghi/Epic_fight_dwarf_duergar.txt"
   - id: epic-fight-dwarf-duergar-810ce0
     name: "Epic Fight Dwarf Duergar"
     cr: 11.0
@@ -1652,6 +1645,13 @@ monsters:
     role: caster-divine
     environment: dungeon
     source_file: "02_scaladossa-abbattor-funghi/Epic_fight_dwarf_duergar.txt"
+  - id: epic-fight-dwarf-duergar-9aaf51
+    name: "Epic Fight Dwarf Duergar"
+    cr: 11.0
+    faction: unknown
+    role: caster-divine
+    environment: dungeon
+    source_file: "Bestiario/pregen-pcgen/00_scaladossa-abbattor-funghi/Epic_fight_dwarf_duergar.txt"
   - id: parte-2a-torre-invisibile-cae99e
     name: "Parte 2A – Torre Invisibile"
     cr: 11.0

@@ -171,7 +171,9 @@ def should_skip(path):
 def scan_directory(root):
     records = []
     valid_ext = {'.md', '.txt', '.htm', '.html', '.pcg'}
-    for path in root.rglob('*'):
+    # sorted() => walk deterministico su ogni filesystem/checkout (il CI gate
+    # "catalogo in sync" confronta byte-per-byte)
+    for path in sorted(root.rglob('*')):
         if not path.is_file():
             continue
         if should_skip(path.relative_to(ROOT)):
@@ -257,7 +259,9 @@ def to_yaml(records):
              "# Do NOT edit by hand. Add custom monsters in monster_catalog.custom.yaml",
              f"# Total records: {len(records)}",
              "monsters:"]
-    for r in sorted(records, key=lambda x: (x['faction'], x['cr'] or 0, x['name'])):
+    # source_file nella chiave: i duplicati a pari faction/cr/name non
+    # dipendono dall'ordine di scansione
+    for r in sorted(records, key=lambda x: (x['faction'], x['cr'] or 0, x['name'], x['source_file'])):
         lines.append(f"  - id: {r['id']}")
         lines.append(f"    name: {json.dumps(r['name'], ensure_ascii=False)}")
         lines.append(f"    cr: {r['cr'] if r['cr'] is not None else '~'}")

@@ -142,9 +142,15 @@ def main():
         else:
             after = cat.read_bytes()
             if before != after:
+                import difflib
+                diff = list(difflib.unified_diff(
+                    before.decode("utf-8", "replace").splitlines(),
+                    after.decode("utf-8", "replace").splitlines(),
+                    "committato", "rigenerato", lineterm="", n=1))[:24]
                 cat.write_bytes(before)  # ripristina per non sporcare il worktree
                 err("scripts/monster_catalog.yaml NON in sync: rigenerare con "
-                    "`python3 scripts/build_monster_catalog.py` e committare")
+                    "`python3 scripts/build_monster_catalog.py` e committare. "
+                    "Prime differenze:\n      " + "\n      ".join(diff))
 
     if errors:
         print(f"✗ validate_bestiario: {len(errors)} violazioni", file=sys.stderr)

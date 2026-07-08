@@ -196,7 +196,7 @@ The Rumbling Stone has **no rogue**. They handle challenges through:
 
 | NPC | Role | Status | Reference |
 |---|---|---|---|
-| **Therysol** (ex-Ysolde) | Tiefling Half-Dragon ally, CR 9 | Alive — underground, seeking revenge on Il Collezionista's drow guild. May appear at Rethmar Night Drow assault | `PNG/Therysol/` |
+| **Therysol** (ex-Ysolde) | Tiefling Half-Dragon ally, CR 9 | Alive — underground, seeking revenge on Il Collezionista's drow guild. May appear at Rethmar Night Drow assault | `Bestiario/png/Therysol/` |
 | **Moradin** (divine) | Patron deity of dwarven PCs | Active, speaks through Crown/Aegis | Lore reference |
 | **Hammerfist King** | Quest-giver for Corona di Adamantio | Alive | Referenced in history |
 | **Zalkatar** | Illithid Warlock Drow (CR 13), previous Ring of Chaotic Illumination owner. Boss of Invisible Tower quest (Arc 09-P2A). | Active — awaiting in Invisible Tower | `09_.../Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` |

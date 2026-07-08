@@ -262,5 +262,5 @@ La Fase 0 di Rethmar (`...P3-BATTAGLIA-FINALE-FASE0-NOTTE-DEI-DROW-TESTO.md`) ve
 - **Assedio di Dauth Day 3 (cisterne, ospedale):** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DAY3-CITY-SIEGE.md`
 - **Sacred Forest (payoff Visione 2, discesa EL 11):** `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md` · `...P1C-Rituale-COMPLETO-SCALE.md`
 - **Rethmar Fase 0 (drow + aberrazioni):** `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE0-NOTTE-DEI-DROW-TESTO.md`
-- **Sonjak (Matrona drow):** `PNG/Sonjak/` · `campaign/state.md` §2
+- **Sonjak (Matrona drow):** `Bestiario/villain/Sonjak/` · `campaign/state.md` §2
 - **Hella PG card:** `skills/rumblingstone-campaign/references/campaign-party.md`

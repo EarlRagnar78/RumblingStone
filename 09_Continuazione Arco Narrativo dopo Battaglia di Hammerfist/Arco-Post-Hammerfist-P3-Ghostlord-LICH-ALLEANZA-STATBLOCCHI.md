@@ -6,7 +6,7 @@ Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-STATBLOCCHI.md
 (D&D 3.5)
 
 > **Fonte-stat unica**: la scheda autoritativa di Zeth il Murato è
-> `PNG/Ghostlord/Ghostlord.md` (GS 13/14, tattiche, filatteria, leoni spettrali,
+> `Bestiario/villain/Ghostlord/Ghostlord.md` (GS 13/14, tattiche, filatteria, leoni spettrali,
 > esiti). Questo file resta il **dettaglio incantesimi e statistiche del lair**,
 > **subordinato** alla scheda PNG: in caso di discrepanza numerica vince la scheda
 > PNG, e la riconciliazione finale è demandata al task **B5** (verifica 3.5).

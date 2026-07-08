@@ -237,10 +237,10 @@ maturati e si applicano al finale.
 | **Uovo di Fauci** (eco gemella, ARC-07 C3) | Un secondo drago nero cresce nell'ombra — semina per ARC-10 | ARC-10 `[INFERRED]` | ARC-07 C3 (fonte); da agganciare alla stessa carta S2 |
 | **Fauci ucciso** (ramo alternativo D10) | −1 drago a Rethmar; nessuna nemesi (ma l'uovo resta) | Day 42 Rethmar | `campaign/state.md` §2.3 |
 | **Runa dei Custodi Eterni** (Cerimonia Atto 3) | Status sociale presso i nani del Vale (§6.2) | Ogni interazione coi nani in ARC-09/10 | `Cerimonia-delle-100-Asce.md` §2; questa §6.2 |
-| **150 lance di Re Thorek** (D4) | Rinforzo condizionale a Rethmar | Day 42, se gli hook politici riescono | `state.md` §2.5; `PNG/Khorn.md`; HOOKS-Thorik |
-| **Eroi di Hammerfist pregen** (D14, se sopravvivono) | Borin campione / Dara staffette / Thorin culto / Nala a Dauth | Sparsi in ARC-09 | schede `PNG/Borin_...`, `PNG/Dara_...`, `PNG/Thorin_Runaforte.md`, `PNG/Nala_...` |
+| **150 lance di Re Thorek** (D4) | Rinforzo condizionale a Rethmar | Day 42, se gli hook politici riescono | `state.md` §2.5; `Bestiario/png/Khorn.md`; HOOKS-Thorik |
+| **Eroi di Hammerfist pregen** (D14, se sopravvivono) | Borin campione / Dara staffette / Thorin culto / Nala a Dauth | Sparsi in ARC-09 | schede `PNG/Borin_...`, `PNG/Dara_...`, `Bestiario/png/Thorin_Runaforte.md`, `PNG/Nala_...` |
 | **Raid drow al tempio di Hammerfist** (Sonjak, `state.md` §3) | Prefigura la Fase 0 (Notte dei Drow) di Rethmar | Day 40, Fase 0 Rethmar | `state.md` §3; ARC-09 FASE0 |
-| **Lunapiena resta di presidio** (D13) | Hammerfist difesa, ma NON rinforza Rethmar | Statico | `PNG/Capitano_Lunapiena.md`; ARMATE-SYNC §7 |
+| **Lunapiena resta di presidio** (D13) | Hammerfist difesa, ma NON rinforza Rethmar | Statico | `Bestiario/png/Capitano_Lunapiena.md`; ARMATE-SYNC §7 |
 
 **Varianti per ramo d'esito**: nella **vittoria costosa** (Re Thorek
 morto) la runa dei Custodi ha peso funebre doppio e il canale delle 150

@@ -134,7 +134,7 @@ A questo punto il Giorno 3 ha **tre poli ostili tra loro**:
 
 ### Esiti possibili (impatto su Arco P2A di Artemis)
 
-> **Fonte autoritativa della tabella esiti cross-arco: `PNG/Sethrax_il_Velato/Sethrax.md` → sezione "ESITI E IMPATTO CROSS-ARCO".** In caso di divergenza vince la PNG card. Riassunto qui per consultazione rapida in scena.
+> **Fonte autoritativa della tabella esiti cross-arco: `Bestiario/villain/Sethrax_il_Velato/Sethrax.md` → sezione "ESITI E IMPATTO CROSS-ARCO".** In caso di divergenza vince la PNG card. Riassunto qui per consultazione rapida in scena.
 
 - **Ucciso in arena** → Clock Zalkatar rallenta; “seme di Porta” come loot.
 - **Catturato vivo** → –1 CR all’incontro finale di Artemis (P2A PARTE4).

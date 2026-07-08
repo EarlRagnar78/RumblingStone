@@ -5,7 +5,7 @@
 > Questo documento sincronizza il Palio con: **March Clock / Ritual Clock**, i
 > **clock dei villain**, il **Consiglio di Rethmar**, i **difensori** e le
 > **Fasi 0–4 dell'assedio**. Progettato per **ampliare senza stravolgere**.
-> **Cross-ref**: `campaign/state.md` §2; `PNG/Consiglio_Rethmar/Consiglio_Rethmar.md`;
+> **Cross-ref**: `campaign/state.md` §2; `Bestiario/png/Consiglio_Rethmar/Consiglio_Rethmar.md`;
 > `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md`;
 > `...P3-BATTAGLIA-FINALE-*` (Fasi 0–4); `...P3-Ghostlord-*`.
 

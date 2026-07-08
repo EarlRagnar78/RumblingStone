@@ -286,7 +286,7 @@ Discussione di gruppo. Possibile decisione collettiva di andare alla Torre INSIE
 
 - **Master reference:** `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md`
 - **Cerimonia delle 100 Asce (dove l'Anello vibra):** `08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md`
-- **Tempestas (conferma opzionale):** `PNG/Tempestas/Tempestas.md`
+- **Tempestas (conferma opzionale):** `Bestiario/png/Tempestas/Tempestas.md`
 - **Anello di Chaotic Illumination:** `PG/Artefatti/Artefatti-Pg/ringOfChaoticIllumination/`
 - **Torre Invisibile (P2A):** `Arco-Post-Hammerfist-P2A-Torre-PARTE1.md`
 - **Torre P2A boss Zalkatar:** `Arco-Post-Hammerfist-P2A-Torre-PARTE4-FINALE-Boss-Zalkatar.md`

@@ -46,7 +46,7 @@ state.md §2). Il "terrore del cielo" qui è un semplice **Razorfiend**.
 
 | Elemento | Statblock (riuso) | Ruolo |
 |---|---|---|
-| Comandante del Vanguard | `00_Red Hand Of Doom/Armate-UNITA-NUOVE/hobgoblin-captain-cr8.md` | Dirige l'ariete alla Porta Sud |
+| Comandante del Vanguard | `Bestiario/mostri/hobgoblin-captain-cr8.md` | Dirige l'ariete alla Porta Sud |
 | Sergenti | `.../hobgoblin-sergente-cr5.md` ×3 | Guidano le ondate di fanteria |
 | Fanteria | `.../goblin-warrior1-cr05.md`, hobgoblin regolari | Massa d'urto (sfondo, mai contata a mano) |
 | Cavalleria d'assalto | `.../gnoll-hyenodon-rider-cr4.md` ×6 | Aggira le mura ovest |
@@ -300,6 +300,6 @@ Per ogni carta **non giocata**, tira **1d20 + Fronte corrente** vs **CD 18**:
 - **Cisterne/ospedale (fonte):** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md` §4.2
 - **Cellula del Mascherato (fonte):** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Artemis.md` §4.1
 - **Profughi/Joran:** `Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md` §7.3
-- **Statblocchi riusati:** `00_Red Hand Of Doom/Armate-UNITA-NUOVE/` (hobgoblin-captain, -sergente, razorfiend-red, gnoll-hyenodon-rider, dauth-commander/-defender, drow-fighter3, deathlock)
+- **Statblocchi riusati:** `Bestiario/` (hobgoblin-captain, -sergente, razorfiend-red, gnoll-hyenodon-rider, dauth-commander/-defender, drow-fighter3, deathlock)
 - **Prototipo → EVENT-DECK finale (C7):** `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-*` (STRUTTURA; futuro EVENT-DECK)
 - **Stato campagna / armate:** `campaign/state.md` §2 · `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md`

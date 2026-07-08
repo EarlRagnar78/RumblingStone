@@ -12,7 +12,7 @@
 |---|---|
 | `apply_styles.py` | ha applicato il CSS a `04_Bracieri_Gemelli_Scheda_PG_Fuoco.html` (path assoluto hardcoded) |
 | `rewrite_table.py` | ha riscritto una sezione tabella di `05_Bracieri_Gemelli_Scheda_PG_Completa.html` (path relativo) |
-| `generate_therysol.py` | ha generato `PNG/Therysol/Therysol.html` dal `.md` gemello (path assoluto hardcoded, fuori da questa cartella) |
+| `generate_therysol.py` | ha generato `Bestiario/png/Therysol/Therysol.html` dal `.md` gemello (path assoluto hardcoded, fuori da questa cartella) |
 | `b64_20pct.txt` | blob base64 (immagine) usato come asset di input da uno degli script sopra |
 
 Se serve rigenerare una di queste schede, trattare lo script come

@@ -103,5 +103,5 @@ giocato a parte. Le 150 lance sono la risposta dei difensori a quella pressione:
 - **Hook sorgente:** `Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md` §4
 - **HUB Torneo:** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md`
 - **Lettera di Brenna / peso politico:** `Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md`
-- **Sorella Maewen (sigillo):** `PNG/Maewen/Maewen.md`
+- **Sorella Maewen (sigillo):** `Bestiario/png/Maewen/Maewen.md`
 - **Numeri difensori:** `campaign/state.md` §2.4 · `...P3-BATTAGLIA-FINALE-ARMATE-SYNC.md` §3

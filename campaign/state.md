@@ -83,7 +83,7 @@ Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per det
   companion. The earlier "stone rhinoceros, DR 5/adamantine, animated" label
   was a mix-up with Durik. DM clarified 2026-07-03.)
 - Therysol (Tiefling Half-Dragon NPC, traveling separately, hunting Il Collezionista's guild)
-- **Maestro Tempestas** (Half-elf Bard 12/Arcmage 2, GS 14, recurring messenger of Rethmar; canonized 2026-05-04 as the "bard storm caller" who helped the party escape Lorana's city in Arc 00 — vedi `PNG/Tempestas/Tempestas.md`). Not constantly present; drops in via *Shadow Walk* every 1–2 sessions with intel.
+- **Maestro Tempestas** (Half-elf Bard 12/Arcmage 2, GS 14, recurring messenger of Rethmar; canonized 2026-05-04 as the "bard storm caller" who helped the party escape Lorana's city in Arc 00 — vedi `Bestiario/png/Tempestas/Tempestas.md`). Not constantly present; drops in via *Shadow Walk* every 1–2 sessions with intel.
 
 ---
 

@@ -13,7 +13,7 @@ Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md
 
 > **Status:** canone di campagna RumblingStone (2026-05-04, **rivisto 2026-05-04 v2**). Master reference: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §3.
 >
-> **Cambio di design (rispetto alla v1):** Tempestas non viene "solo per consegnare la lettera" come fattorino. Viene per **due missioni dichiarate** (onorare i caduti + scambio intel) e una privata (consegnare la lettera). La scena resta uguale; la **motivazione di Tempestas** è ora coerente col suo ruolo di **agente di intelligence di Rethmar** (vedi `PNG/Tempestas/Tempestas.md` §RUOLO COME AGENTE DI INTELLIGENCE).
+> **Cambio di design (rispetto alla v1):** Tempestas non viene "solo per consegnare la lettera" come fattorino. Viene per **due missioni dichiarate** (onorare i caduti + scambio intel) e una privata (consegnare la lettera). La scena resta uguale; la **motivazione di Tempestas** è ora coerente col suo ruolo di **agente di intelligence di Rethmar** (vedi `Bestiario/png/Tempestas/Tempestas.md` §RUOLO COME AGENTE DI INTELLIGENCE).
 >
 > Thorik riceve da Tempestas **una lettera sigillata privata di Brenna Sorvane** — Consigliere militare di Rethmar, voce moderata del Consiglio. La lettera è una **proposta di alleanza informale Rethmar–Hammerfist** ma anche un **avvertimento personale** sui consiglieri corrotti.
 >
@@ -23,7 +23,7 @@ Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md
 
 ## 1. Cornice
 
-**Brenna Sorvane** è uno dei sette membri del **Consiglio di Rethmar** (vedi `PNG/Consiglio_Rethmar/Consiglio_Rethmar.md`). È la voce militare moderata: vuole resistere all'orda, ma non a costo di una guerra civile interna. Ha **giusta sospetto** di Halveth (che riceverà bustarelle dal Conte Valerius) e di Lady Kaal (la "voce della resa") — ma non ha prove pubblicabili.
+**Brenna Sorvane** è uno dei sette membri del **Consiglio di Rethmar** (vedi `Bestiario/png/Consiglio_Rethmar/Consiglio_Rethmar.md`). È la voce militare moderata: vuole resistere all'orda, ma non a costo di una guerra civile interna. Ha **giusta sospetto** di Halveth (che riceverà bustarelle dal Conte Valerius) e di Lady Kaal (la "voce della resa") — ma non ha prove pubblicabili.
 
 Brenna ha sentito di Hammerfist (gli uccelli messaggeri sono arrivati il Giorno 19). Sa che Thorik è il "manager strategico" del party. Le ha mandato una lettera **prima** che il resto del Consiglio possa intervenire — quindi senza il sigillo di Rethmar (per non legare il Consiglio formalmente). È **una lettera privata**, non un dispaccio ufficiale.
 
@@ -121,7 +121,7 @@ Dalla lettera direttamente:
 - **Rethmar è 3-4 contro la difesa** (Halveth corrotto, Kaal resa, Sorvane mercante, Thornwall anziano).
 - **Halveth riceve bustarelle dal Conte Valerius** (informazione preziosa per il post-campagna; il Conte è già villain attivo, vedi `state.md` §2 Clock 2/8).
 - **Brenna ha bisogno di una lettera firmata di re Thorek** + Thorik in persona + 150 lance.
-- **Lorana è viva a Rethmar** (information hook for Thorik personalmente — vedi Tempestas debt of Lorana in `PNG/Tempestas/Tempestas.md`).
+- **Lorana è viva a Rethmar** (information hook for Thorik personalmente — vedi Tempestas debt of Lorana in `Bestiario/png/Tempestas/Tempestas.md`).
 - **Halveth tenterà di intercettare Thorik all'arrivo** — informazioni preventive.
 
 ---
@@ -215,7 +215,7 @@ Brenna scrive *"vi ringrazia ogni notte, in silenzio, per essere sopravvissuti t
 
 - Mandare un messaggio personale a Lorana via Tempestas (1 carica di Polvere di Tonante) → Lorana risponde con due righe brevi: *"Ti ringrazio. Ho i miei. Vieni quando puoi. Lorana."*
 - **Eco RP:** quando i PG arrivano a Rethmar, la prima scena con Lorana è **calda**, non glaciale. Lei li riceve come **vecchi compagni d'armi** invece di come "rinforzi tardivi del Consiglio".
-- **Eco a Phase 1:** Lorana **mobilita** i 150 volontari rifugiati (da `PNG/Lorana/Lorana.md` §LA RISERVA DEI RIFUGIATI) **prima** del CD usuale di Diplomazia 18, perché ha già fiducia.
+- **Eco a Phase 1:** Lorana **mobilita** i 150 volontari rifugiati (da `Bestiario/png/Lorana/Lorana.md` §LA RISERVA DEI RIFUGIATI) **prima** del CD usuale di Diplomazia 18, perché ha già fiducia.
 
 ---
 
@@ -246,10 +246,10 @@ Brenna scrive *"vi ringrazia ogni notte, in silenzio, per essere sopravvissuti t
 ## 7. Cross-link
 
 - **Master reference**: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md`
-- **Tempestas PNG**: `PNG/Tempestas/Tempestas.md`
-- **Brenna Sorvane (Consiglio di Rethmar)**: `PNG/Consiglio_Rethmar/Consiglio_Rethmar.md`
-- **Capitana Lorana**: `PNG/Lorana/Lorana.md`
-- **Conte Valerius (corruzione di Halveth)**: `PNG/Conte_Valerius/Conte_Valerius.md`
+- **Tempestas PNG**: `Bestiario/png/Tempestas/Tempestas.md`
+- **Brenna Sorvane (Consiglio di Rethmar)**: `Bestiario/png/Consiglio_Rethmar/Consiglio_Rethmar.md`
+- **Capitana Lorana**: `Bestiario/png/Lorana/Lorana.md`
+- **Conte Valerius (corruzione di Halveth)**: `Bestiario/villain/Conte_Valerius/Conte_Valerius.md`
 - **Re Thorek + Hammerfist**: `campaign/lore/campaign-history.md` Arco 08
 - **Sister hook (Tournament — Thorik's 150 lances and political weight)**: `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Thorik.md` (aggancio in `Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md` §4)
 - **Phase 0 Notte dei Drow**: `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE0-NOTTE-DEI-DROW-TESTO.md`

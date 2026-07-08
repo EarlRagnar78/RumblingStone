@@ -322,24 +322,31 @@ def load_alliances() -> dict:
     return load_yaml(ALLIANCES) or {}
 
 
-# ───────────────────────── Canonical PNG/ directory scan ─────────────────────────
+# ─────────────── Canonical NPC scan (Bestiario/png + Bestiario/villain) ───────────────
 def scan_canonical_npcs() -> list[dict]:
-    """Scan PNG/ directory for canonical named NPCs (one folder or .md per NPC)."""
-    png_dir = ROOT / "PNG"
+    """Scan the Bestiario library for canonical named NPCs (one folder or .md
+    per NPC): allies/neutrals in Bestiario/png/, antagonists in
+    Bestiario/villain/. Falls back to the legacy PNG/ dir if present."""
     out = []
-    if not png_dir.exists(): return out
-    for entry in sorted(png_dir.iterdir()):
-        if entry.name.startswith("."): continue
-        nm = entry.stem.replace("_", " ")
-        out.append({"name": nm, "path": str(entry.relative_to(ROOT))})
+    for sub in ("Bestiario/png", "Bestiario/villain", "PNG"):
+        npc_dir = ROOT / sub
+        if not npc_dir.exists(): continue
+        for entry in sorted(npc_dir.iterdir()):
+            if entry.name.startswith("."): continue
+            # skip loose catalog statblocks (kebab-case -crN files): the NPC
+            # list wants named dossiers, statblocks are listed via the catalog
+            if entry.is_file() and re.search(r'-cr\d+(?:-[a-z]+)?\.md$', entry.name):
+                continue
+            nm = entry.stem.replace("_", " ")
+            out.append({"name": nm, "path": str(entry.relative_to(ROOT))})
     return out
 
 
 def _dump_npcs(cat: list[dict]):
-    """Print all injectable NPCs: canonical PNG/ + named catalog entries
-    (those having a distinctive non-'unknown' faction AND a proper name)."""
+    """Print all injectable NPCs: canonical Bestiario dossiers + named catalog
+    entries (those having a distinctive non-'unknown' faction AND a proper name)."""
     print("# Injectable NPCs\n")
-    print("## Canonical PNG (from PNG/ directory)\n")
+    print("## Canonical PNG (from Bestiario/png + Bestiario/villain)\n")
     for n in scan_canonical_npcs():
         print(f"- **{n['name']}**  \n  `{n['path']}`")
     print("\n## Named catalog entries (usable with --inject-npc \"<substring>\")\n")
@@ -492,7 +499,7 @@ def main():
     ap.add_argument("--list-factions", action="store_true")
     ap.add_argument("--list-environments", action="store_true")
     ap.add_argument("--list-npcs", action="store_true",
-                    help="List all injectable NPCs (canonical PNG/ + named catalog entries).")
+                    help="List all injectable NPCs (canonical Bestiario dossiers + named catalog entries).")
     ap.add_argument("--list-all", action="store_true",
                     help="Dump factions + alliances + environments + NPCs + wild envs.")
     args = ap.parse_args()

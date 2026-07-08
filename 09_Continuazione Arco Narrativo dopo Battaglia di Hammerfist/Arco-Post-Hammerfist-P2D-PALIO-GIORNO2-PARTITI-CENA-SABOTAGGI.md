@@ -117,7 +117,7 @@ Il fantino è un mercenario: **corruttibile**. Durante la Cena:
 ### 3.3 Fronte C — La Stalla e i Drow di Sonjak *(aggancio campagna)*
 
 > **Perché i drow sono a Channathgate (l'oscuro collegamento)** — non è un assalto casuale.
-> Da canone (`PNG/Sonjak`, `PNG/Conte_Valerius`): Sonjak è coordinata con **Il Collezionista**;
+> Da canone (`Bestiario/villain/Sonjak`, `Bestiario/villain/Conte_Valerius`): Sonjak è coordinata con **Il Collezionista**;
 > **Sal** è il suo agente di superficie; l'operazione è il **contrabbando di statue di anime
 > pietrificate** e le coordinate del **Prisma di Halveth**. Il **mercante di Channathgate**
 > (quello visto da Lorana con le statue) è nella rete del Collezionista → **il porto di

@@ -20,7 +20,7 @@ Il repo ha tre **livelli** di contenuto. Trattarli allo stesso modo è la fonte 
 | Livello | Cosa c'è | Quando si modifica | Chi lo modifica |
 |---|---|---|---|
 | **Canonico** (immutabile) | `skills/*`, AP originale RHoD, SRD D&D 3.5, FR 1372 DR lore, `00_Red Hand Of Doom/` (canone di riferimento) | Mai (o raro, con changelog) | Solo DM, in PLAN MODE, mai a tavolo |
-| **Scenario** (semi-fisso) | Cartelle arco `01_LaMiniera/ … 09_Continuazione/`, `campaign/lore/`, `PNG/*/*.md` (stat blocks, backstory), encounter files | Tra sessioni, in PLAN MODE | DM in preparazione |
+| **Scenario** (semi-fisso) | Cartelle arco `01_LaMiniera/ … 09_Continuazione/`, `campaign/lore/`, `Bestiario/{villain,png}/**/*.md` (stat blocks, backstory), encounter files | Tra sessioni, in PLAN MODE | DM in preparazione |
 | **Vivo** (per sessione) | `campaign/state.md`, `campaign/sessions/*.md`, status attuale PNG | **Ogni sessione** | DM a fine sessione |
 
 **Regola d'oro**: non modificare MAI contenuto canonico o di scenario durante la sessione live. Tienilo per il post-session in calma.
@@ -40,7 +40,7 @@ Apri i file in questo ordine:
 | 5 | `campaign/sessions/ultima-sessione.md` | Sezione **Next session hooks** | 2 min |
 | 6 | File dell'arco corrente (es. `09_.../Arco-Post-Hammerfist-P1B-...`) | Fase attiva, encounter previsti | 3 min |
 | 6b | (opz.) `scripts/suggest_encounter.py` → `scripts/suggest_loot.py` pipe | Generare encounter+loot proposti | 3 min |
-| 7 | `PNG/<nome>/<nome>.md` (PNG in scena previsti) | Motivazione + segreti + stato | 2 min |
+| 7 | `Bestiario/{villain,png}/<nome>/<nome>.md` (PNG in scena previsti) | Motivazione + segreti + stato | 2 min |
 | 8 | `skills/rumblingstone-campaign/references/campaign-coherence.md` | Solo se vuoi rivedere regole coerenza | 2 min |
 
 **Optional ma utile**: apri `campaign/lore/house-rules.md` se prevedi ruling ambigui.
@@ -125,7 +125,7 @@ Solo se un PNG è morto / cambiato allineamento / cambiato posizione:
 
 ```bash
 # esempio: Regiarix ucciso
-sed -i 's/Status: alive/Status: dead (killed session 14)/' PNG/Regiarix/Regiarix.md
+sed -i 's/Status: alive/Status: dead (killed session 14)/' Bestiario/villain/Regiarix/Regiarix.md
 ```
 
 ### 4.4 Aggiorna encounter files (opzionale)

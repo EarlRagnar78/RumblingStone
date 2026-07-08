@@ -14,13 +14,14 @@
 > HTML della Forgia (`01_/02_/03_ Corona_*_Gemme.html`) con questo master e
 > con la scheda giocatore. Allineamenti fatti: la scheda giocatore ora include
 > il **+2 intuizione alla CA** di *Stone's Awareness* (era omesso; presente
-> qui e nell'HTML). **Due dubbi lasciati al DM** `[needs DM confirmation]`:
-> (1) *Stone's Awareness* — questo master concede «Individuare Porte Segrete e
-> **Comprendere Linguaggi**», mentre HTML e scheda giocatore danno «Individuare
-> Porte Segrete e **Scoprire Trappole**»: quale vale? (2) *Gem of Immutable
-> Time (Topazio)* — tempo di attivazione **10 minuti** (questo master) vs
-> **1 ora** (HTML `02`): quale vale? Il resto (deviazione +2→+3, Moradin's
-> Insight, Adamantine Will, gemme) è coerente tra master e HTML.
+> qui e nell'HTML). **Due dubbi RISOLTI dal DM (2026-07-04)**:
+> (1) *Stone's Awareness* — valgono **entrambe** le versioni: la Corona
+> concede «Individuare Porte Segrete, **Scoprire Trappole** e **Comprendere
+> Linguaggi**» a volontà (le HTML omettevano Linguaggi, il master ometteva
+> Trappole). (2) *Gem of Immutable Time (Topazio)* — tempo di attivazione
+> **1 ora** (versione HTML `02`; il precedente «10 minuti» di questo master
+> è superato). Il resto (deviazione +2→+3, Moradin's Insight, Adamantine
+> Will, gemme) è coerente tra master e HTML.
 
 ## Capitolo 1: L'Anima dell'Artefatto
 
@@ -674,7 +675,7 @@ Poteri della Corona
 ◦ Sblocco: Rituale 1. Attivazione: Continuo. LI: 20°.
 ◦ Eﬀetto: +1 morale attacco/danni e +2 intuizione CA toccando pietra/terra. Individuare
 
-Porte Segrete e Comprendere Linguaggi a volontà.
+Porte Segrete, Scoprire Trappole e Comprendere Linguaggi a volontà *(decisione DM 2026-07-04: valgono entrambe le liste master/HTML)*.
 
 • Power: Crown of Protection +2 (Corona della Protezione +2) (Str)
 
@@ -710,7 +711,7 @@ Le Gemme Divine
 
 • Gem: Gem of Immutable Time (Gemma del Tempo Immutabile)
 
-◦ Sblocco: Rituale 2. Attivazione: 10 minuti di concentrazione in un Nodo Terrestre.
+◦ Sblocco: Rituale 2. Attivazione: 1 ora di concentrazione in un Nodo Terrestre *(decisione DM 2026-07-04: vale la versione HTML `02`; «10 minuti» superato)*.
 
 Frequenza: 1/mese. LI: 20°. TS: Tempra CD 25 (per alleati non protetti).
 

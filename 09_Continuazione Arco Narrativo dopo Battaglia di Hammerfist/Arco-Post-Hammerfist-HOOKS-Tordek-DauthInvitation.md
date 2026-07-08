@@ -4,8 +4,8 @@ Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md
 # Hook Tordek — *Il Messo al Sacred Forest*
 
 > **TL;DR (DM cheat-sheet):**
-> - **Day 24** Sacred Forest → Sorella Maewen (`PNG/Maewen/Maewen.md`) atterra cercando Aeleth Verdebronzo (morto). Riconosce Tordek dalla runa Custode Eterno.
-> - **Tournament**: una volta ogni 100 anni, allineamento delle stelle dell'Iride, **fra 4 giorni**, aperto a guerrieri valorosi che superano preliminari monastici (non-monaci svantaggiati — vedi `PNG/Maewen/Maewen.md` §REGOLE PRELIMINARI).
+> - **Day 24** Sacred Forest → Sorella Maewen (`Bestiario/png/Maewen/Maewen.md`) atterra cercando Aeleth Verdebronzo (morto). Riconosce Tordek dalla runa Custode Eterno.
+> - **Tournament**: una volta ogni 100 anni, allineamento delle stelle dell'Iride, **fra 4 giorni**, aperto a guerrieri valorosi che superano preliminari monastici (non-monaci svantaggiati — vedi `Bestiario/png/Maewen/Maewen.md` §REGOLE PRELIMINARI).
 > - **Da Sacred Forest a Dauth**: 3 giorni a cavallo + 1 di assestamento.
 > - **4 vie**: Accetta + parte solo / Accetta + party intero a Dauth / Accetta + altri PG partecipano (PG vs PG bracket) / Rifiuta (–150 lance, +1 CR Wyrmlord Phase 1).
 > - **Se Tordek NON è al Sacred Forest il Day 24**: Maewen non lo trova → niente sigillo formale → 150 lance senza copertura politica.
@@ -13,7 +13,7 @@ Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md
 
 > **Status:** canone di campagna RumblingStone (2026-05-04, **rivisto 2026-05-04 v2**). Master reference: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §3.
 >
-> **Cambio di design (rispetto alla v1):** l'invito al Torneo di Dauth **NON viene consegnato a Hammerfist** durante la Cerimonia delle 100 Asce. Arriva al **Sacred Forest**, durante il rito di Hella, **per coincidenza fortuita**. Il messo è **Sorella Maewen** — vedi `PNG/Maewen/Maewen.md`. Lei sta cercando un guerriero elfico (**Aeleth Verdebronzo**); lo scopre morto; riconosce Tordek come "Pugno di Pietra del Nord" sulla sua lista; gli offre l'invito.
+> **Cambio di design (rispetto alla v1):** l'invito al Torneo di Dauth **NON viene consegnato a Hammerfist** durante la Cerimonia delle 100 Asce. Arriva al **Sacred Forest**, durante il rito di Hella, **per coincidenza fortuita**. Il messo è **Sorella Maewen** — vedi `Bestiario/png/Maewen/Maewen.md`. Lei sta cercando un guerriero elfico (**Aeleth Verdebronzo**); lo scopre morto; riconosce Tordek come "Pugno di Pietra del Nord" sulla sua lista; gli offre l'invito.
 >
 > **Perché questo design è migliore:**
 > - **Organico:** un messo della Confraternita di Dauth atterrerebbe naturalmente al Sacred Forest cercando guerrieri elfici di valore. Niente messaggero contrived.
@@ -50,12 +50,12 @@ Apprende **da Saraah** o da un druido ranger che **Aeleth è morto** 2 mesi fa i
 
 ### 2.2 Cosa Maewen rivela ad alta voce (Hella e altri presenti possono ascoltare)
 
-> Vedi `PNG/Maewen/Maewen.md` §L'INVITO AL TORNEO per il testo completo. In sintesi:
+> Vedi `Bestiario/png/Maewen/Maewen.md` §L'INVITO AL TORNEO per il testo completo. In sintesi:
 
 - Torneo **una volta ogni 100 anni**, all'**allineamento delle stelle dell'Iride**.
 - **Fra 4 giorni** dall'incontro (cioè **Giorno 28** del calendario canonico). 3 giorni di Torneo (Giorno 28-30 secondo questo calcolo — DM può **adeguare** per coerenza con il calendario macro: vedi nota DM più sotto).
 - **Aperto a tutti i guerrieri valorosi** che superano le **prove preliminari**.
-- Le preliminari testano **abilità monastiche** (equilibrio, agilità su piattaforma rotante, fatigue, riflessi). **Non-monaci possono partecipare** ma **svantaggiati** (vedi `PNG/Maewen/Maewen.md` §REGOLE DELLE PROVE PRELIMINARI per le CD ritoccate).
+- Le preliminari testano **abilità monastiche** (equilibrio, agilità su piattaforma rotante, fatigue, riflessi). **Non-monaci possono partecipare** ma **svantaggiati** (vedi `Bestiario/png/Maewen/Maewen.md` §REGOLE DELLE PROVE PRELIMINARI per le CD ritoccate).
 - Da Sacred Forest a Dauth: **3 giorni a cavallo veloce** + 1 giorno di assestamento.
 
 ### 2.3 Cosa Tordek riconosce / può chiedere
@@ -94,7 +94,7 @@ Tordek accetta. Il party **non si separa** — vanno tutti insieme a Dauth. Hell
 
 ### 3.3 GRAY-C — Accetta, partecipano anche altri PG
 
-Tordek accetta. **Anche altri PG decidono di partecipare al Torneo** (passando preliminari con malus — vedi `PNG/Maewen/Maewen.md` §REGOLE). Questo richiede che Hella sia stata **liberata** dal rito (rito completato in fretta o delegato a Sylith/Saraah).
+Tordek accetta. **Anche altri PG decidono di partecipare al Torneo** (passando preliminari con malus — vedi `Bestiario/png/Maewen/Maewen.md` §REGOLE). Questo richiede che Hella sia stata **liberata** dal rito (rito completato in fretta o delegato a Sylith/Saraah).
 
 **Eco:**
 - Possibile **scontro PG vs PG** in semifinale del Torneo. Drama puro. Tordek dovrebbe vincere ma onorevolmente.
@@ -146,7 +146,7 @@ Khorn parte da Hammerfist il **Giorno 25**. Marcia ~8 giorni. Arriva a Dauth **a
 
 ### 5.2 Se Hella partecipa al Torneo
 
-Vedi `PNG/Maewen/Maewen.md` §REGOLE DELLE PROVE PRELIMINARI. In sintesi: Hella può usare Wild Shape per le prove di Equilibrio (forma agile come scimmia o rana), ma rinuncia a poteri druidici per la durata del Torneo. **Probabile passaggio preliminari, escluso semifinale.**
+Vedi `Bestiario/png/Maewen/Maewen.md` §REGOLE DELLE PROVE PRELIMINARI. In sintesi: Hella può usare Wild Shape per le prove di Equilibrio (forma agile come scimmia o rana), ma rinuncia a poteri druidici per la durata del Torneo. **Probabile passaggio preliminari, escluso semifinale.**
 
 ### 5.3 Se Thorik partecipa al Torneo
 
@@ -184,7 +184,7 @@ Artemis è un Warlock — combattimento a distanza con Eldritch Blast. **Probabi
 ## 8. Cross-link
 
 - **Master reference:** `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md`
-- **Sorella Maewen PNG:** `PNG/Maewen/Maewen.md`
+- **Sorella Maewen PNG:** `Bestiario/png/Maewen/Maewen.md`
 - **Sacred Forest setting:** `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md`
 - **Hella hook (parallelo, stesso luogo):** `Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md`
 - **Cerimonia delle 100 Asce (NON è dove arriva l'invito):** `08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md`

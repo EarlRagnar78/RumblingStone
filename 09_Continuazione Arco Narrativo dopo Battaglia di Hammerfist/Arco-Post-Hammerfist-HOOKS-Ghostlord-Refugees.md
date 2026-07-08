@@ -15,13 +15,13 @@ Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md
 >
 > **Hook personale:** non è di un singolo PG. È del **party intero** (incontro su strada). Si attiva durante uno dei viaggi del Giorno 23-28 attraverso la regione tra Hammerfist e Dauth (passando vicino al **Thornwaste** del Ghostlord).
 >
-> **Filosofia:** introduce l'arco del **Ghostlord** (Druidic Lich del Thornwaste, vedi `PNG/Ghostlord/`) **senza forzare** il party a entrare nella sua quest. Lascia ai PG la scelta se aiutare i profughi, indagare la fonte (le ondate di non-morti dal Thornwaste), o ignorare e proseguire.
+> **Filosofia:** introduce l'arco del **Ghostlord** (Druidic Lich del Thornwaste, vedi `Bestiario/villain/Ghostlord/`) **senza forzare** il party a entrare nella sua quest. Lascia ai PG la scelta se aiutare i profughi, indagare la fonte (le ondate di non-morti dal Thornwaste), o ignorare e proseguire.
 
 ---
 
 ## 1. Cornice
 
-Il **Ghostlord (Arcano Zeth il Murato)** è un **Druidic Lich** del Thornwaste, ex-builder di Hammerfist tradito in lichdom (vedi `PNG/Ghostlord/Ghostlord.md`). La **Red Hand** ha **occupato il suo Lair** come fabbrica di non-morti (vedi `state.md` §3 NPC knowledge: "Ghostlord aware of Red Hand using his lair as undead factory").
+Il **Ghostlord (Arcano Zeth il Murato)** è un **Druidic Lich** del Thornwaste, ex-builder di Hammerfist tradito in lichdom (vedi `Bestiario/villain/Ghostlord/Ghostlord.md`). La **Red Hand** ha **occupato il suo Lair** come fabbrica di non-morti (vedi `state.md` §3 NPC knowledge: "Ghostlord aware of Red Hand using his lair as undead factory").
 
 **Conseguenza ambientale che la Red Hand non ha previsto:** il flusso di anime processate nel lair sta **traboccando**. Ondate di non-morti minori (zombie, scheletri, ghoul) **sciamano fuori dal Thornwaste** in tutte le direzioni. Non sono organizzate — sono **rumore di fondo letale** che terrorizza la regione.
 
@@ -106,7 +106,7 @@ Il party informa Ren che Talar è caduta. Ren prende il colpo. *"Allora dove and
 - **Encounter potenziali sulla strada:** il DM può aggiungere 1 attacco di non-morti vaganti durante la scorta (EL 8: 1 wight + 4 ghoul + 6 zombie).
 
 **Eco:**
-- Se il party scorta i profughi a una città sicura: **+1 reputazione regionale** ("i Custodi Eterni hanno salvato i 30 di Loccatella"). A Rethmar Phase 1, Lorana riceve questo gruppo nel suo settore di rifugiati → +30 alla "Riserva dei Rifugiati" (vedi `PNG/Lorana/Lorana.md` §LA RISERVA DEI RIFUGIATI). +Joran, l'ex-druido, può essere reclutato (Druid 5 di vecchia data) — un piccolo CR 5 alleato spirituale.
+- Se il party scorta i profughi a una città sicura: **+1 reputazione regionale** ("i Custodi Eterni hanno salvato i 30 di Loccatella"). A Rethmar Phase 1, Lorana riceve questo gruppo nel suo settore di rifugiati → +30 alla "Riserva dei Rifugiati" (vedi `Bestiario/png/Lorana/Lorana.md` §LA RISERVA DEI RIFUGIATI). +Joran, l'ex-druido, può essere reclutato (Druid 5 di vecchia data) — un piccolo CR 5 alleato spirituale.
 
 ### 4.2 GRAY-B — *Indagare la fonte (entrare nel Thornwaste)*
 
@@ -223,9 +223,9 @@ Il party prosegue. Ren e i 30 vanno a Talar. Trovano ceneri. Probabilmente la me
 
 - **Master reference:** `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md`
 - **Hella hook (Saraah's Visione 3 — Talar in fiamme):** `Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md` §2.5.2
-- **Ghostlord PNG:** `PNG/Ghostlord/Ghostlord.md`
+- **Ghostlord PNG:** `Bestiario/villain/Ghostlord/Ghostlord.md`
 - **Ghostlord arc files:** `Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-TESTO.md`, `…MAPPE.md`, `…STATBLOCCHI.md`
-- **Capitana Lorana (Riserva dei Rifugiati a Rethmar):** `PNG/Lorana/Lorana.md`
+- **Capitana Lorana (Riserva dei Rifugiati a Rethmar):** `Bestiario/png/Lorana/Lorana.md`
 - **Talar (caduta):** menzionata in `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md` Day 21
 - **Mother of Fungi connection (Hella sub-quest Boschetto):** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md` §5 `[INFERRED — sub-quest da scrivere in Lotto B]`
 - **Stato campagna:** `campaign/state.md`

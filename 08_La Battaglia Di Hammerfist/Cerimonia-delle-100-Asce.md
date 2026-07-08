@@ -67,19 +67,19 @@ Cerimonia-delle-100-Asce.md
 - Porta **una lettera privata di Brenna a Thorik** (vedi `Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md`) — perché Brenna non si fida del Consiglio formale per chiedere alleanza, e usa Tempestas come canale privato.
 - **NON consegna 4 lettere a 4 PG.** Consegna **una sola lettera a Thorik**. Le altre informazioni che porta sono **rumours**, **conferme**, **risposte a domande**, non missive formali.
 
-> **Vedi `PNG/Tempestas/Tempestas.md` per la storia retroattiva (Lorana's city) e per il debito di vita verso il party — quel debito spiega perché Tempestas è disposto a fare anche piccoli favori al party, ma non spiega perché dovrebbe portare lettere che non sono di sua competenza.**
+> **Vedi `Bestiario/png/Tempestas/Tempestas.md` per la storia retroattiva (Lorana's city) e per il debito di vita verso il party — quel debito spiega perché Tempestas è disposto a fare anche piccoli favori al party, ma non spiega perché dovrebbe portare lettere che non sono di sua competenza.**
 
 ### 3.2 Capitana Lythiel Alar-Wen (Sacred Forest, Cerchio della Quercia Vecchia)
 
 - Una dei 12 ranger elfici sui gufi giganti che sono arrivati a Hammerfist alla Sessione 4. Resta dopo la battaglia per la cerimonia.
 - È venuta **per ordine dell'Arcidruidessa Saraah** (sua maestra) per:
   1. **Onorare i caduti** di Hammerfist (i druidi del Sacred Forest considerano la Sala di Pietra Antica un **luogo sacro di natura interrotta** — meritano di onorarlo).
-  2. **Consegnare formalmente la Ghianda del Cerchio a Hella** durante o dopo la cerimonia (vedi `PNG/Lythiel/Lythiel.md`).
+  2. **Consegnare formalmente la Ghianda del Cerchio a Hella** durante o dopo la cerimonia (vedi `Bestiario/png/Lythiel/Lythiel.md`).
 - La sua presenza è **silenziosa** ma **carica**. Hella la sente arrivare prima ancora di vederla (Sapienza Naturale CD 12, automatico).
 
 ### 3.3 Niente envoy di Dauth alla Cerimonia (per design)
 
-> **Decisione canonica:** la Confraternita Monastica di Dauth **NON manda envoy alla Cerimonia di Hammerfist**. Il loro messaggero (**Sorella Maewen "Pugno-di-Cedro"**, vedi `PNG/Maewen/Maewen.md`) si trova in tutt'altra direzione: sta cercando un **famoso guerriero elfico** del Sacred Forest da invitare al Torneo. Quindi atterra al **Sacred Forest** durante il rito di Hella, non a Hammerfist.
+> **Decisione canonica:** la Confraternita Monastica di Dauth **NON manda envoy alla Cerimonia di Hammerfist**. Il loro messaggero (**Sorella Maewen "Pugno-di-Cedro"**, vedi `Bestiario/png/Maewen/Maewen.md`) si trova in tutt'altra direzione: sta cercando un **famoso guerriero elfico** del Sacred Forest da invitare al Torneo. Quindi atterra al **Sacred Forest** durante il rito di Hella, non a Hammerfist.
 >
 > Tordek riceve l'invito al Torneo **solo se** il party va al Sacred Forest insieme (o almeno se Tordek è con Hella) — vedi `Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md`. Questo è **intenzionale**: rende il hook organico (la convocazione arriva dove un guerriero rinomato si troverebbe), non meccanico.
 >
@@ -199,9 +199,9 @@ La cerimonia non forza nessuna architettura. I hook possono **maturare lentament
 - **Tordek hook:** `Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md`
 - **Artemis hook:** `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md`
 - **Thorik hook:** `Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md`
-- **Tempestas:** `PNG/Tempestas/Tempestas.md`
-- **Lythiel:** `PNG/Lythiel/Lythiel.md`
-- **Sorella Maewen:** `PNG/Maewen/Maewen.md`
+- **Tempestas:** `Bestiario/png/Tempestas/Tempestas.md`
+- **Lythiel:** `Bestiario/png/Lythiel/Lythiel.md`
+- **Sorella Maewen:** `Bestiario/png/Maewen/Maewen.md`
 - **Battaglia di Hammerfist (Sessione 4):** `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md`
 - **Stato campagna:** `campaign/state.md`
 - **Storia campagna:** `campaign/lore/campaign-history.md`

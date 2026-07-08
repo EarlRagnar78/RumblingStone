@@ -10,6 +10,13 @@ based on *Red Hand of Doom* (Jacobs & Wyatt, 2006). Content is privately owned.
 ## What This Repo Contains
 
 ```
+Bestiario/                   # STANDARD library of monsters, villains & NPCs (T-D12)
+├── mostri/                  # generic units/monsters, one statblock per file (-crN.md)
+├── villain/                 # unique antagonists (dossier folder + statblock)
+├── png/                     # unique allies/neutrals (dossier folder/file + statblock)
+├── pregen-pcgen/            # historical sources: PCGen .pcg + HTML/PDF exports (read-only)
+└── tokens/                  # webp art/tokens for monsters & NPCs
+
 campaign/
 ├── DM-CAMPAIGN-PLAYBOOK.md  # DM operational guide (workflow + examples + reset)
 ├── state.md                 # Living world state (§0 dashboard first)

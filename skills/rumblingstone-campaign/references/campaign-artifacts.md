@@ -67,7 +67,7 @@ Forged by Moradin from a shard of creation — not merely a crown of power but "
 Defense + Trial of the Deep Hall), so the Ritual-2 powers below are now
 active; only Topaz gem lit (state.md §0).*
 
-1. **Stone's Awareness (Su, CL 5):** On natural ground: +1 morale to attack/damage, **+2 insight bonus to AC**; detect secret doors and traps at will *(the DM master `LaCorona_di_Adamantio-DM.md` lists "comprehend languages" instead of traps — [needs DM confirmation])*
+1. **Stone's Awareness (Su, CL 5):** On natural ground: +1 morale to attack/damage, **+2 insight bonus to AC**; detect secret doors, detect traps AND comprehend languages, all at will *(DM ruling 2026-07-04: both the master's and the HTML's lists apply)*
 2. **Crown of Protection (Ex, CL 6):** +2 deflection bonus to AC while worn (rises to +3 after Ritual 4)
 3. **Moradin's Insight (Su):** True Seeing 1/day (10 min); +4 insight to Craft (Blacksmith). *Unlocked by: Trial of the Deep Hall (Ritual 2, ✅ completed)*
 
@@ -81,7 +81,7 @@ active; only Topaz gem lit (state.md §0).*
 
 | Gem | Color | Ritual to Activate | Status | Power |
 |---|---|---|---|---|
-| **Immutable Time** | Topaz | Fire Plane ritual | ✅ ACTIVATED | Time travel 1/month from Earth Node; costs 1d10 years aging |
+| **Immutable Time** | Topaz | Fire Plane ritual | ✅ ACTIVATED | Time travel 1/month from Earth Node; activation = 1 hour of concentration (DM ruling 2026-07-04); costs 1d10 years aging |
 | **True Earth** | Emerald | Earth Plane ritual | ⏳  ACTIVATED AFTER ANVIL OF THE WORLD | Wall of Stone / Heal Earth / Controlled Earthquake 1/week (costs 1,000 gp) |
 | **Dwarven Might** | Ruby | Battle 1,000 yrs before (≈372 DR) | ⏳ ACTIVATES AT DAWN | Buff self+allies with strength/courage 1/week; -2 STR for 24h after |
 

@@ -56,7 +56,7 @@ qualcosa di esistente, è un errore da correggere.**
 | 1 | Le Cripte del Tempio | **S2** | FASE0-NOTTE-DEI-DROW-TESTO/MAPPA; Halveth (Consiglio_Rethmar §2) | Thorik |
 | 2 | Il Cecchino nella Notte | **S1** | archetipo Brindol (assassino); `deathlock-cr8` / assassino [INFERRED] | Artemis |
 | 3 | La Marea alle Porte | **S3** | *(buco di ritmo Day 41 — crisi civile, non coperta da S1/S2)* | Hella |
-| 4 | L'Olio di Sabotaggio di Sal | **S2** | clock Sal (state.md §3); `PNG/Salvatore/Salvatore.md` | Tordek |
+| 4 | L'Olio di Sabotaggio di Sal | **S2** | clock Sal (state.md §3); `Bestiario/villain/Salvatore/Salvatore.md` | Tordek |
 | 5 | Il Tradimento di Halveth | **S2** | Consiglio_Rethmar §2 (Halveth); state.md §7 | Thorik |
 | 6 | Il Convoglio di Lorana | **S2** | `capitana-lorana-cr7`; state.md §7 (Riserva Lorana) | Hella |
 | 7 | La Breccia della Porta Ovest | **S1** | FASE1-ASSEDIO §3; `ondata-giganti-fanteria-cr15` | Thorik |
@@ -309,6 +309,6 @@ Per ogni carta **non giocata**, tira **1d20 + Fronte corrente** vs **CD 18**:
 - **Statue-Golem & scena eroica**: `...MYTHAL-FOCUS-PG-SCENA-EROICA.md`
 - **Esiti/VP e ricompense**: `...ESITI-CONSEGUENZE.md` §2, §11-§12
 - **Numeri/composizione orda**: `...ARMATE-SYNC.md` §3-§4 · `campaign/state.md` §2-§3
-- **Statblock riusati**: `00_Red Hand Of Doom/Armate-UNITA-NUOVE/` (ondata-giganti, tyrgarun-blue-old, wyrmlord-karruk, ghost-lion-spettrale, githyanki-knight-elite, tiamat-warpriest-elite, teschio-nero-commander, gnoll-hyenodon-rider, drow-*, capitana-lorana, emissario-red-hand, thayan-*)
-- **Consiglio & morale**: `PNG/Consiglio_Rethmar/Consiglio_Rethmar.md` (§Halveth, §Morale Cittadino C2)
-- **PNG chiave**: `PNG/Salvatore/`, `PNG/Sethrax_il_Velato/`, `PNG/Xal_thor/` (Zalkatar wildcard), `PNG/Ghostlord/`, `PNG/Lorana/`
+- **Statblock riusati**: `Bestiario/` (ondata-giganti, tyrgarun-blue-old, wyrmlord-karruk, ghost-lion-spettrale, githyanki-knight-elite, tiamat-warpriest-elite, teschio-nero-commander, gnoll-hyenodon-rider, drow-*, capitana-lorana, emissario-red-hand, thayan-*)
+- **Consiglio & morale**: `Bestiario/png/Consiglio_Rethmar/Consiglio_Rethmar.md` (§Halveth, §Morale Cittadino C2)
+- **PNG chiave**: `Bestiario/villain/Salvatore/`, `Bestiario/villain/Sethrax_il_Velato/`, `Bestiario/villain/Xal_thor/` (Zalkatar wildcard), `Bestiario/villain/Ghostlord/`, `Bestiario/png/Lorana/`

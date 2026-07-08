@@ -200,30 +200,28 @@ SCALA GRID: 1 quadrato = 1.5m × 1.5m | DIMENSIONI TOTALI: 53 colonne × 40 righ
 ## CAMPO DROW 2: FORWARD BASE (Hex D08) - PIÙ GRANDE
 
 ### Info Generali
-- **Dimensioni:** 120m × 80m (80 colonne × 53 righe, scala 1.5m/quadrato)
+- **Dimensioni:** ≈98m × 80m (65 colonne × 53 righe, scala 1.5m/quadrato) — *canonizzate dal DM (2026-07-04); il precedente «120m / 80 colonne» era una dichiarazione imprecisa della sorgente*
 - **Forze:** 40 Drow + 2 Ogre + 1 Wyrmlord Lieutenant
 - **Difese:** Palisade legno 3m, watchtower 9m, pattuglie 24/7
 - **Loot:** 5,000gp + magic items, prigioni 10 civili
 - **EL:** 14 se full alert (MOLTO pericoloso!)
-- **SVG**: `rendered/SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO_map02_campo-drow-2-forward-base-120m-80m-grid-8053-sca.svg`
+- **SVG**: `rendered/SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO_map02_campo-drow-2-forward-base-98m-80m-grid-6553-scal.svg`
   `[T5c 2026-07-04: griglia COMPLETATA — tutte e 53 le righe presenti,
   larghezza uniforme, strutture posizionate secondo le annotazioni
   (palizzata, cancelli, torretta, recinto ogre, tenda Wyrmlord/tesoro/prigioni);
   SVG rigenerato.]`
-  > ⚠️ **[needs DM confirmation] — dimensioni**: la griglia disegnata è
-  > **65 colonne × 53 righe** (≈98 m × 80 m), non le **80 × 53** (120 m)
-  > dichiarate qui e nel titolo. La sorgente era imprecisa e tutte le
-  > strutture annotate stanno entro 65 colonne (max col BA=53): ho completato
-  > **coerentemente con le posizioni testuali** (priorità del task), senza
-  > allargare a 80 con sola foresta vuota. Se il DM vuole i 120 m pieni,
-  > aggiungere margine di foresta a sinistra/destra senza spostare le
-  > strutture. Confini esatti delle celle = `[INFERRED]` dalla sorgente.
+  > ✅ **RISOLTO — dimensioni (conferma DM 2026-07-04)**: canonizzate le
+  > dimensioni **disegnate**: **65 colonne × 53 righe** (≈98 m × 80 m).
+  > La vecchia dichiarazione «80 × 53 / 120 m» era imprecisa nella sorgente;
+  > tutte le strutture annotate stanno entro le 65 colonne. Titolo e testo
+  > allineati, SVG rigenerato. Confini esatti delle celle = `[INFERRED]`
+  > dalla sorgente (fatto salvo il posizionamento testuale delle strutture).
 
 ### Mappa Tattica Completa
 
 ```
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-CAMPO DROW 2 - FORWARD BASE (120m × 80m, Grid 80×53, Scala 1.5m/sq)
+CAMPO DROW 2 - FORWARD BASE (98m × 80m, Grid 65×53, Scala 1.5m/sq)
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
 COLONNE →  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF AG AH AI AJ AK AL AM AN AO AP AQ AR AS AT AU AV AW AX AY AZ BA BB BC BD BE BF BG BH BI BJ BK BL BM
@@ -288,7 +286,7 @@ RIGHE ↓
 50-53  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
 
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-SCALA GRID: 1 quadrato = 1.5m × 1.5m | DIMENSIONI TOTALI: 80 colonne × 53 righe = 120m × 80m
+SCALA GRID: 1 quadrato = 1.5m × 1.5m | DIMENSIONI TOTALI: 65 colonne × 53 righe = 98m × 80m
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 ```
 

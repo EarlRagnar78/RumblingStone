@@ -158,7 +158,7 @@ Non usi il Fane fisico, ma un “altare campale” nel cuore della battaglia.[we
 - Azarr Kul (mezzo‑drago hobgoblin warpriest di Tiamat, CR 15), **a terra** — combatte sempre da solo, Tyrgarun NON è sua cavalcatura (D11 v2) +  
   - 2–4 Erinni o Abishai (CR 9–11 ciascuna),  
   - **Avatar di Tiamat**: versione ridotta di Aspect of Tiamat (CR 17 base, modulato per il tuo party).
-  - **Tyrgarun** resta minaccia aerea a orologeria (non ancora affrontabile — vola ancora); se già ucciso/messo in fuga altrove, vedi tabella conseguenze in `PNG/Azarr_Kul/Azarr_Kul.md`.
+  - **Tyrgarun** resta minaccia aerea a orologeria (non ancora affrontabile — vola ancora); se già ucciso/messo in fuga altrove, vedi tabella conseguenze in `Bestiario/villain/Azarr_Kul/Azarr_Kul.md`.
 
 ### Opzioni di difficoltà
 
@@ -254,7 +254,7 @@ sentono solo le conseguenze narrate ("le mura a nord cedono", "il morale crolla"
   i difensori tirano **1d20 + Fronte** contro **CD 15** (ondata leggera) / **20**
   (pesante) / **25** (ondata drago o breccia). **Fallimento = un settore cede**
   (narrato: breccia, fuga, quartiere perso) e il Fronte scende di 1.
-- I **ruoli di comando PG** (§9.2) e il **Morale Cittadino** (`PNG/Consiglio_Rethmar/`
+- I **ruoli di comando PG** (§9.2) e il **Morale Cittadino** (`Bestiario/png/Consiglio_Rethmar/`
   §"Morale Cittadino di Rethmar") danno bonus a questo check.
 - **Effetto meccanico continuo** (non solo a fine battaglia): il Fronte corrente
   è il **+X** che modula il CR effettivo delle carte EVENT-DECK e l'esito
@@ -299,7 +299,7 @@ esce un numero che corrisponde a una carta già in gioco, promuovilo a carta.)
 
 > Benchmark: **Abithriax sulle mura di Brindol** (RHoD Parte 4). Statblock
 > completo (profilo aereo CR 18 + profilo a terra CR ~16-17):
-> `00_Red Hand Of Doom/Armate-UNITA-NUOVE/tyrgarun-blue-old-cr18.md`.
+> `Bestiario/villain/tyrgarun-blue-old-cr18.md`.
 
 Tyrgarun **non è un incontro a iniziativa** finché il Mythal non lo inchioda: a
 CR 18 in volo con Flyby è imbattibile per design. Si gioca a **scalini**.

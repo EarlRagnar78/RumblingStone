@@ -49,7 +49,7 @@ Is the encounter under-tuned for APL 13?
 - **Visibility rule:** every +1 CR must buy something the players *feel*
   (to-hit/DC pressure or survivability) — never boost bookkeeping-only.
 - **Coherence rule:** boosts to named PNGs/villains are permanent and must be
-  written to the PNG's file (`PNG/` or `campaign/npcs/`) with a
+  written to the PNG's file (`Bestiario/villain/`, `Bestiario/png/` or `campaign/npcs/`) with a
   `Boost log:` line (date, method, CR before → after). No stealth retcons.
 - **No invention:** boosted stats derive from SRD/PF1e rules cited in the
   method files. Uncertain values are flagged `[INFERRED — needs DM

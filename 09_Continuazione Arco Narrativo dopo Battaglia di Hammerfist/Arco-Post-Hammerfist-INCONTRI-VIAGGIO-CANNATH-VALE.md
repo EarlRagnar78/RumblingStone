@@ -5,7 +5,7 @@
 > **Scopo**: dare a ogni tratta di viaggio dell'arco (Day 20-42) la sua tabella
 > d%, con **EL dichiarato** e **≥ 1/3 di voci non-combat**. Riusa gli incontri già
 > pronti delle **MISSIONI-BREVI** e le fazioni/PNG esistenti — non introduce canone.
-> **Regola §0.2**: solo 3.5 SRD/MM. Statblock via `00_Red Hand Of Doom/Armate-UNITA-NUOVE/`.
+> **Regola §0.2**: solo 3.5 SRD/MM. Statblock via `Bestiario/`.
 
 ---
 
@@ -182,14 +182,14 @@
 - [ ] Tirato d% per giornata di marcia (o saltato quando la trama incalza)?
 - [ ] Sfruttata almeno **una voce 🕊** come RP/intel invece di combattimento?
 - [ ] Gli echi (Sal/Lorana/Therysol/Ghostlord…) collegati agli archi giusti?
-- [ ] Statblock presi da `Armate-UNITA-NUOVE/` o MISSIONI-BREVI (niente improvvisazione)?
+- [ ] Statblock presi da `Bestiario/` o MISSIONI-BREVI (niente improvvisazione)?
 
 ---
 
 ## 7. Cross-link
 
 - **Incontri lunghi riusati:** `Arco-Post-Hammerfist-P3-MISSIONI-BREVI-CR12-TESTO.md` (MB-1…6) · `...-STATBLOCCHI-FUNGHI-GITH-DROW.md`
-- **Statblock unità:** `00_Red Hand Of Doom/Armate-UNITA-NUOVE/`
+- **Statblock unità:** `Bestiario/`
 - **Profughi (zona bosco/Thornwaste):** `Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md`
 - **Sal mercante (deserto/Vale):** `Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md`
 - **Cisterne/spore drow (Vale/bosco):** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md`

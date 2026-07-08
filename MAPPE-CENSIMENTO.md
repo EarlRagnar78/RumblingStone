@@ -148,11 +148,10 @@
 6. **Campo Drow 2** — **RISOLTO (T5c, 2026-07-04)**: la griglia era
    abbreviata (`[continues...]` + righe interne saltate). Ora è **completa**:
    53 righe, larghezza uniforme 65 colonne, strutture posizionate secondo le
-   annotazioni; SVG rigenerato (65×53). ⚠️ La dichiarazione "80×53 / 120 m"
-   resta imprecisa (la griglia disegnata è 65 col ≈98 m): discrepanza
-   flaggata `[needs DM confirmation]` nel file sorgente (Info Generali),
-   completamento fatto coerente con le posizioni testuali, non a 80 con sola
-   foresta.
+   annotazioni; SVG rigenerato (65×53). ✅ La discrepanza dimensioni è stata
+   **chiusa dal DM (2026-07-04)**: canonizzate le dimensioni disegnate
+   **65×53 (≈98 m × 80 m)** — titolo, Info Generali e SVG del file sorgente
+   allineati; la vecchia dichiarazione "80×53 / 120 m" è superata.
 7. **SUPPLEMENTO-P1C-...-Description.md**: il piano trasversale (§2, T5c)
    lo cita come "0 byte" (task ARC-09 §161 aperto). Verificato in questa
    sessione: il file **ha già 3276 byte** di contenuto narrativo completo

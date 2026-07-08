@@ -121,27 +121,27 @@ master** rilevanti alla sessione.
 
 ## 5. Cast su scheda (B3, fatto)
 
-Ogni PNG nominato dell'arco ha una scheda in `PNG/` (formato AGENTS.md,
+Ogni PNG nominato dell'arco ha una scheda in `Bestiario/villain/` o `Bestiario/png/` (formato AGENTS.md,
 stat puntate alle appendici, campo "esiti possibili"):
 
 | PNG | File | Ruolo |
 |---|---|---|
-| Fauci di Palude | `PNG/Fauci_di_Palude.md` | Drago avanguardia (rami D10) |
-| Generale Grimjaw | `PNG/Generale_Grimjaw.md` | Comandante di campo |
-| Gorthak il Trifronte | `PNG/Gorthak_il_Trifronte.md` | Ariete vivente |
-| Re Thorek Hammerfist | `PNG/Re_Thorek_Hammerfist.md` | Re / comandante difensori |
-| Madre Dana Forgiapietra | `PNG/Dana_Forgiapietra.md` | Guida spirituale |
-| Capitano Lunapiena | `PNG/Capitano_Lunapiena.md` | Ranger elfici (D13, indipendente) |
-| Signore Ventolesto | `PNG/Signore_Ventolesto.md` | Gufo alpha |
-| Orion Pelleorsa | `PNG/Orion_Pelleorsa.md` | Druido |
-| Borin Ferropugno | `PNG/Borin_Ferropugno.md` | Pregen (D14: campione) |
-| Dara Occhiolesto | `PNG/Dara_Occhiolesto.md` | Pregen (D14: staffette) |
-| Thorin Runaforte | `PNG/Thorin_Runaforte.md` | Pregen (D14: culto caduti) |
-| Nala Cantapietre | `PNG/Nala_Cantapietre.md` | Pregen (D14: Dauth) |
-| Khorn | `PNG/Khorn.md` | Ufficiale nanico (D5, 150 lance) |
+| Fauci di Palude | `Bestiario/villain/Fauci_di_Palude.md` | Drago avanguardia (rami D10) |
+| Generale Grimjaw | `Bestiario/villain/Generale_Grimjaw.md` | Comandante di campo |
+| Gorthak il Trifronte | `Bestiario/villain/Gorthak_il_Trifronte.md` | Ariete vivente |
+| Re Thorek Hammerfist | `Bestiario/png/Re_Thorek_Hammerfist.md` | Re / comandante difensori |
+| Madre Dana Forgiapietra | `Bestiario/png/Dana_Forgiapietra.md` | Guida spirituale |
+| Capitano Lunapiena | `Bestiario/png/Capitano_Lunapiena.md` | Ranger elfici (D13, indipendente) |
+| Signore Ventolesto | `Bestiario/png/Signore_Ventolesto.md` | Gufo alpha |
+| Orion Pelleorsa | `Bestiario/png/Orion_Pelleorsa.md` | Druido |
+| Borin Ferropugno | `Bestiario/png/Borin_Ferropugno.md` | Pregen (D14: campione) |
+| Dara Occhiolesto | `Bestiario/png/Dara_Occhiolesto.md` | Pregen (D14: staffette) |
+| Thorin Runaforte | `Bestiario/png/Thorin_Runaforte.md` | Pregen (D14: culto caduti) |
+| Nala Cantapietre | `Bestiario/png/Nala_Cantapietre.md` | Pregen (D14: Dauth) |
+| Khorn | `Bestiario/png/Khorn.md` | Ufficiale nanico (D5, 150 lance) |
 
-Cast già schedato altrove: `PNG/Lythiel/Lythiel.md` (Sacred Forest, E7),
-`PNG/Tempestas/Tempestas.md` (bardo tempeste).
+Cast già schedato altrove: `Bestiario/png/Lythiel/Lythiel.md` (Sacred Forest, E7),
+`Bestiario/png/Tempestas/Tempestas.md` (bardo tempeste).
 
 ## 6. Deliverable — stato
 

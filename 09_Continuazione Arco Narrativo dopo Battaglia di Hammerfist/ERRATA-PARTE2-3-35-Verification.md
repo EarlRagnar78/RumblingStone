@@ -16,7 +16,7 @@
 2. `Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md` (Torneo di Dauth, Xal'thor/Sethrax/monaci)
 3. `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-*-STATBLOCCHI.md` (Saarvith + Regiarix, nido Razorfiend)
 4. `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md` (Azarr Kul, Avatar, Erinni, Arcimago)
-5. `00_Red Hand Of Doom/Armate-UNITA-NUOVE/*.md` (catalogo unità riusate)
+5. `Bestiario/*.md` (catalogo unità riusate)
 
 **Status:** ⚠️ Errori sistematici lievi + **1 upscale strutturale** (boss finale) + **1 catch di coerenza** (Tyrgarun).
 
@@ -168,12 +168,12 @@ formazione, poi carica il buffer/guaritore del party sotto *divine power*; usa
 
 ### 3.1 Xal'thor (Illithid + Psion 6, CR 14) — **POINTER, non duplicare**
 `...P2B-Torneo-STATBLOCCHI-COMPLETO.md` e catalogo rimandano a
-`PNG/Xal_thor/Xal_thor.md` (fonte unica). ✅ Corretto tenerlo come pointer.
+`Bestiario/villain/Xal_thor/Xal_thor.md` (fonte unica). ✅ Corretto tenerlo come pointer.
 - Verifica sulla scheda PNG: **RI 25** presente? **CA contatto/colto**? **azione
   psionica** espressa come azioni 3.5 (standard/mossa/veloce/immediata), non 5e?
 
 ### 3.2 Sethrax il Velato (Illithid covert, CR 12)
-Fonte tabella esiti: `PNG/Sethrax_il_Velato/Sethrax.md`. In scena (PARTE3) usa
+Fonte tabella esiti: `Bestiario/villain/Sethrax_il_Velato/Sethrax.md`. In scena (PARTE3) usa
 *Mind Blast*, *Mental Barrier* 3/giorno, *Psionic Plane Shift/Dimension Door*.
 - Verificare che *Mind Blast* sia **cono 4,5 m** (15 ft) con **TS Vol** corretto e
   che i PS/azioni psioniche non usino terminologia 5e. Statblock: usare la scheda PNG.
@@ -218,7 +218,7 @@ Fonte tabella esiti: `PNG/Sethrax_il_Velato/Sethrax.md`. In scena (PARTE3) usa
 
 ## 6. CATCH DI COERENZA (trovato durante la verifica — fuori 3.5 ma importante)
 
-`00_Red Hand Of Doom/Armate-UNITA-NUOVE/azarr-kul-final-cr15.md` (riga Summary)
+`Bestiario/villain/Azarr_Kul/azarr-kul-final-cr15.md` (riga Summary)
 diceva ancora **"mounts Tyrgarun"** — **contraddice D11 v2 e la sessione A7**
 (Azarr Kul **NON** cavalca Tyrgarun; il drago è terrore dei cieli separato,
 inchiodato dal Mythal). **Corretto in place** (vedi §7). Anche il CR del file
@@ -232,7 +232,7 @@ inchiodato dal Mythal). **Corretto in place** (vedi §7). Anche il CR del file
    **Chierico 12/Guerriero 4, ~155 pf, CR 17**, con tabella buff pre-cast e 2
    effetti a innesco (blocco §1 di questa errata), **nota di versione B5** in testa
    alla sezione.
-2. **`.../Armate-UNITA-NUOVE/azarr-kul-final-cr15.md`** — rimosso "mounts Tyrgarun";
+2. **`.../Bestiario/azarr-kul-final-cr15.md`** — rimosso "mounts Tyrgarun";
    riallineato a D11 v2 e rimando alla versione B5.
 
 Le altre correzioni (§2-§5) sono **puntuali e non-strutturali**: si applicano in
@@ -261,7 +261,7 @@ place quando si tocca il file, o si tengono come **checklist di verifica al tavo
 2. `Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md` — CA contatto/colto, raffica monaci, RI.
 3. `Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` — RI non cumulativa, azioni 3.5.
 4. `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md` — ✅ Azarr Kul fatto; Erinni/Avatar note.
-5. `00_Red Hand Of Doom/Armate-UNITA-NUOVE/azarr-kul-final-cr15.md` — ✅ Tyrgarun coerenza fatta.
+5. `Bestiario/villain/Azarr_Kul/azarr-kul-final-cr15.md` — ✅ Tyrgarun coerenza fatta.
 
 ---
 
@@ -269,8 +269,8 @@ place quando si tocca il file, o si tengono come **checklist di verifica al tavo
 
 - **Errata gemella P1:** `ERRATA-PARTE1-Quest-Hellas-35-Verification.md`
 - **Boss finale (in place):** `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md` §1
-- **Canone Tyrgarun/Azarr Kul (D11 v2):** `campaign/state.md` §2, `PNG/Azarr_Kul/Azarr_Kul.md`
-- **Schede PNG (fonti uniche):** `PNG/Xal_thor/Xal_thor.md` · `PNG/Sethrax_il_Velato/Sethrax.md`
+- **Canone Tyrgarun/Azarr Kul (D11 v2):** `campaign/state.md` §2, `Bestiario/villain/Azarr_Kul/Azarr_Kul.md`
+- **Schede PNG (fonti uniche):** `Bestiario/villain/Xal_thor/Xal_thor.md` · `Bestiario/villain/Sethrax_il_Velato/Sethrax.md`
 - **Regole 3.5:** `skills/dnd-35-srd/` · `skills/dnd-35-rules/`
 
 **Status:** ✅ **Errata prodotta; boss finale upscalato in place; catch Tyrgarun corretto.**

@@ -1,14 +1,14 @@
 # Parte 2B — TORNEO DI DAUTH · CONSEGUENZE & ECHI A LUNGO PERIODO
 
 > **Versione**: v1 (2026-07-02) — file creato consolidando gli echi già sparsi
-> in MINIMAPPA §4, HOOKS-Tordek-DauthInvitation §6, `PNG/Sethrax_il_Velato/Sethrax.md`
+> in MINIMAPPA §4, HOOKS-Tordek-DauthInvitation §6, `Bestiario/villain/Sethrax_il_Velato/Sethrax.md`
 > e `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §8 (Lotto A, task A8).
 > Non introduce canone nuovo. **Tono**: esiti stile *Baldur's Gate 3* — ogni
 > scelta ha un eco misurabile al Torneo, a Rethmar e nel dopo-campagna.
 > **HUB del Torneo**: `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md`.
 
 > **Regola di conflitto**: per gli esiti di Sethrax vince
-> `PNG/Sethrax_il_Velato/Sethrax.md` (§"ESITI E IMPATTO CROSS-ARCO"); per i
+> `Bestiario/villain/Sethrax_il_Velato/Sethrax.md` (§"ESITI E IMPATTO CROSS-ARCO"); per i
 > numeri di campagna vince `campaign/state.md`. Questo file indicizza, non sovrascrive.
 
 ---
@@ -42,7 +42,7 @@ proprietà ancestrale. Esiti (dettaglio in MINIMAPPA §4):
 
 ### 2.2 Sethrax → Torre Invisibile di Artemis (P2A)
 
-> **Fonte autoritativa**: `PNG/Sethrax_il_Velato/Sethrax.md` §"ESITI E IMPATTO
+> **Fonte autoritativa**: `Bestiario/villain/Sethrax_il_Velato/Sethrax.md` §"ESITI E IMPATTO
 > CROSS-ARCO". In caso di conflitto vince la scheda PNG.
 
 L'esito di Sethrax al Round 7+ del Giorno 3 determina il CR effettivo del finale

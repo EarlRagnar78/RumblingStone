@@ -52,7 +52,7 @@
 > **Quando darlo**: Day 24, Sacred Forest, da **Sorella Maewen** a **Tordek** (se
 > presente). È un invito **mythic**, non un dispaccio burocratico: pergamena di
 > corteccia di cedro, sigillo monastico impresso col bastone di Maewen. Fonte:
-> `PNG/Maewen/Maewen.md` §L'INVITO AL TORNEO.
+> `Bestiario/png/Maewen/Maewen.md` §L'INVITO AL TORNEO.
 
 > *A colui che porta la runa del Custode Eterno, che a nord chiamano il **Pugno
 > di Pietra**:*

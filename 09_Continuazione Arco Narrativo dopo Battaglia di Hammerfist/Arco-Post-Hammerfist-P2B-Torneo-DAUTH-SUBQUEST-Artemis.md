@@ -288,5 +288,5 @@ scontro con Zalkatar (`...P2A-Torre-PARTE4-FINALE-Boss-Zalkatar.md`):
 - **Assedio di Dauth Day 3 (dove gli altri PG combattono):** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DAY3-CITY-SIEGE.md`
 - **Torre Invisibile (payoff):** `Arco-Post-Hammerfist-P2A-Torre-PARTE1.md` · `...PARTE4-FINALE-Boss-Zalkatar.md`
 - **Anello di Chaotic Illumination:** `PG/Artefatti/Artefatti-Pg/ringOfChaoticIllumination/`
-- **Sethrax (esiti cross-arco):** `PNG/Sethrax_il_Velato/Sethrax.md`
+- **Sethrax (esiti cross-arco):** `Bestiario/villain/Sethrax_il_Velato/Sethrax.md`
 - **Artemis PG card:** `skills/rumblingstone-campaign/references/campaign-party.md`

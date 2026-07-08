@@ -33,7 +33,7 @@ Questo file è l'**HUB** del Torneo. I contenuti di dettaglio sono negli allegat
 | `...DAUTH-SUBQUEST-Thorik.md` | Sub-quest delle **150 lance di Re Thorek** (flusso separato, D10) |
 
 > **Regola di conflitto**: per l'Orbe e le Porte vince `...OTTO-PORTE-e-ORBE.md`;
-> per gli esiti cross-arco di Sethrax vince `PNG/Sethrax_il_Velato/Sethrax.md`;
+> per gli esiti cross-arco di Sethrax vince `Bestiario/villain/Sethrax_il_Velato/Sethrax.md`;
 > per il canone di mondo vince `campaign/state.md`. Questo HUB non li sovrascrive.
 
 ---
@@ -110,7 +110,7 @@ arrivate in tempo, si schierano qui — vedi `...DAUTH-SUBQUEST-Thorik.md`.
 |---|---|
 | **Tordek vince** | +300 mercenari nani di Dauth (fanteria pesante) alla difesa (state.md §2.4) |
 | **Tordek perde con onore** | Reputazione regionale; nessun contingente garantito, ma agganci diplomatici |
-| **Sethrax fugge col seme** | Zalkatar +2 CR effettivo al finale P2A di Artemis (vedi `PNG/Sethrax_il_Velato/Sethrax.md`) |
+| **Sethrax fugge col seme** | Zalkatar +2 CR effettivo al finale P2A di Artemis (vedi `Bestiario/villain/Sethrax_il_Velato/Sethrax.md`) |
 | **150 lance di Re Thorek** | Flusso **separato** (D10), condizionato dagli hook politici — vedi SUBQUEST-Thorik |
 
 ---

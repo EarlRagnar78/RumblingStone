@@ -132,7 +132,7 @@ di §4 senza ulteriori input dal DM.
   scalini, inchiodato a terra dal Mythal in Fase 4, NON cavalcatura):
   correggere INDICE r.27/443, ARMATE-SYNC §2.1, STRUTTURA §6 (aggiungere
   Tyrgarun alle Fasi 1/2-3/4 secondo lo script D11) e la scheda
-  `PNG/Azarr_Kul/Azarr_Kul.md` (rimuovere "monta Tyrgarun"). Le meccaniche
+  `Bestiario/villain/Azarr_Kul/Azarr_Kul.md` (rimuovere "monta Tyrgarun"). Le meccaniche
   dettagliate del set-piece (hazard di bombardamento, contromosse, statistiche
   del drago a terra) si scrivono nel lotto **C1 punto (d)** — qui solo la
   coerenza dei riferimenti. Applicare anche **D12** nello stesso lotto:
@@ -255,7 +255,7 @@ di §4 senza ulteriori input dal DM.
   a lungo termine per ciascuno dei 3 rami (filatteria: restituire/distruggere/
   vincolare) sul dopo-campagna.
 - **Azione**: statblock 3.5 verificato del Lich druido CR 14 (o rimando a scheda
-  `PNG/Ghostlord/Ghostlord.md` come unica fonte), mappa lair "leone di pietra"
+  `Bestiario/villain/Ghostlord/Ghostlord.md` come unica fonte), mappa lair "leone di pietra"
   con scala, tabella conseguenze per ramo (Rethmar + epilogo + hook ARC-10),
   read-aloud del santuario interiore.
 - **Accettazione**: un'unica fonte autoritativa per le stat; 3 rami quantificati.
@@ -347,7 +347,7 @@ di §4 senza ulteriori input dal DM.
 
 ### C2. Track del Morale/Paura di Rethmar (benchmark CotCT)
 - Il Consiglio (3 sedute) esiste; manca il **polso della popolazione**.
-- **Azione**: contatore Morale Cittadino 0-10 in `PNG/Consiglio_Rethmar/`:
+- **Azione**: contatore Morale Cittadino 0-10 in `Bestiario/png/Consiglio_Rethmar/`:
   eventi che lo muovono (arrivo profughi, notizie di Talar, vittorie PG,
   esecuzione di Halveth...), effetti a soglie (7+: +150 miliziani volontari;
   3-: diserzioni, -1 ai VP di Fase 1; 0: resa civile anticipata). Collegarlo
@@ -544,7 +544,7 @@ checklist qui sotto.
   per classe PG, esiti a 3 rami con numeri D9 (piena 100+20 / parziale
   ~40+6 / rifiuto 0) mappati sugli scenari ARMATE-SYNC §3, sinergia con
   l'eco Lanikar di Rhest (B1.5).
-  **B3 (Ghostlord) completo (2026-07-02)**: fonte-stat unica = `PNG/Ghostlord/
+  **B3 (Ghostlord) completo (2026-07-02)**: fonte-stat unica = `Bestiario/villain/Ghostlord/
   Ghostlord.md` (STATBLOCCHI declassato ad annesso subordinato, riconciliazione
   a B5); read-aloud del santuario interiore (audizione morale, scena di Hella,
   leoni = anime di Hammerfist); tabella conseguenze a lungo termine per i 3 rami
@@ -582,7 +582,7 @@ checklist qui sotto.
   meno civili — March Clock D6). Tabelle d% con EL dichiarato (9-13) e
   **≥1/3 voci non-combat** (profughi, Sal, disertori gnoll, pattuglie da
   interrogare, emissari Ghostlord). Riusa MISSIONI-BREVI (MB-1…6) e gli
-  statblock di Armate-UNITA-NUOVE (tutti verificati esistenti); echi agli
+  statblock di Bestiario (tutti verificati esistenti); echi agli
   archi esistenti (Sal, Lorana, Therysol, Collezionista, Zalkatar wildcard).
 - [x] C1 · [x] C2 · [x] C3 · [x] C4 · [x] C5 · [x] C6 · [x] C7 (event deck) —
   **LOTTO C COMPLETO (2026-07-02).**
@@ -641,7 +641,7 @@ checklist qui sotto.
   blue Old CR 18 (profilo aereo + profilo a terra ~16-17); aggiornati i 3
   riferimenti (monster_catalog.yaml, Armate-COMPOSIZIONE-DETTAGLIATA, UNITA-NUOVE
   README). **C2**: contatore **Morale Cittadino di Rethmar 0-10** in
-  `PNG/Consiglio_Rethmar/` (tabella eventi→Δ + 3 soglie: 7+ = +150 volontari/+1
+  `Bestiario/png/Consiglio_Rethmar/` (tabella eventi→Δ + 3 soglie: 7+ = +150 volontari/+1
   Fronte, 3- = −1 Fronte/diserzioni, 0 = resa civile), agganciato a Sedute del
   Consiglio, Riserva di Lorana e Fronte militare. Prossimo: C3+C4.
 - [x] Q1 (→D9) · [x] Q2 (→D10) · [x] Q3 (→D11) · [x] Q4 (→D12) ·

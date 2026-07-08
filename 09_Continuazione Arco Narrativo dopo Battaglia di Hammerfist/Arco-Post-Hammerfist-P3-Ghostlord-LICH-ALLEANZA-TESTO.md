@@ -7,7 +7,7 @@ Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-TESTO.md
 > B, task B3): read-aloud del santuario interiore, tabella conseguenze a lungo
 > termine per i 3 rami della filatteria (Rethmar + epilogo + hook ARC-10),
 > fonte-stat unica.
-> **Fonte autoritativa unica per le statistiche**: `PNG/Ghostlord/Ghostlord.md`
+> **Fonte autoritativa unica per le statistiche**: `Bestiario/villain/Ghostlord/Ghostlord.md`
 > (Zeth il Murato, GS 13/14, Druido 13 lich, filatteria, leoni spettrali, tattiche,
 > dialoghi). Il file `...-ALLEANZA-STATBLOCCHI.md` è il **dettaglio incantesimi
 > subordinato** (eventuali discrepanze numeriche si riconciliano nel task B5). Non
@@ -94,7 +94,7 @@ Obiettivo: ridurre o distruggere la “fabbrica” di non morti dell’Orda.
 - Grande sala nel “cranio” del leone, con trono, altare e 2–3 leoni spettrali
   incorporei. I leoni **sono le anime dei soldati di Hammerfist** (Conoscenze
   storia CD 18 o la trascrizione delle rune lo rivela — connessione emotiva con
-  l'Arco 08). Vedi `PNG/Ghostlord/Ghostlord.md` §NOTE PER IL MASTER.
+  l'Arco 08). Vedi `Bestiario/villain/Ghostlord/Ghostlord.md` §NOTE PER IL MASTER.
 - Il Ghostlord osserva attraverso gli occhi del leone (sensi del lair).[web:94][web:95]
 - **La scena di Hella**: è un'**audizione morale**, non un combattimento. Se Hella
   è presente e "sente la pietra", Zeth abbassa la guardia. Il passaggio al
@@ -180,7 +180,7 @@ quarto rigo è il **default ostile** (PG senza filatteria, o che insultano Zeth)
 
 ## 8. Checklist DM (Ghostlord)
 
-- [ ] Usata `PNG/Ghostlord/Ghostlord.md` come **fonte-stat unica** (no doppioni)?
+- [ ] Usata `Bestiario/villain/Ghostlord/Ghostlord.md` come **fonte-stat unica** (no doppioni)?
 - [ ] Giocato il santuario (§4.3) come **audizione morale**, con la scena di Hella?
 - [ ] Rivelato (se meritato) che i leoni sono **le anime di Hammerfist** (Arco 08)?
 - [ ] Offerti i **3 rami della filatteria** senza railroad verso il combattimento?

@@ -611,12 +611,12 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
 - **Evidenza**: già FATTI (2026-07-02): la scheda della **Collana dei Semi
   Eterni** (`PG/Artefatti/Artefatti-Pg/Hella/01_Collana_dei_Semi_Eterni.md`,
   formato Bracieri — il DM validi i punti [INFERRED]) e il file-risultati
-  del viaggio (D12). Restano: (1) la scheda `PNG/Sonjak/` **non menziona
+  del viaggio (D12). Restano: (1) la scheda `Bestiario/villain/Sonjak/` **non menziona
   il raid della Stanza della Corona** che lei ha ordinato (G0); (2) né
   Belkram né Urialle hanno una scheda PNG con lo stato finale (**morti**,
   D13); (3) i collegamenti al file-risultati da INDICE/B2/B1; (4) la
   scheda della **Cintura della Devastazione** (D17 — azione in A10).
-- **Azione**: (1) aggiornare PNG/Sonjak ("ha ordinato il furto della
+- **Azione**: (1) aggiornare Bestiario/villain/Sonjak ("ha ordinato il furto della
   Corona: Urialle + Yochlol half-illithid, fallito, Hella uccisa — il
   party POTREBBE non sapere ancora che il mandante è lei `[verify con
   state.md §4]`"); (2) schede PNG post-mortem per **Belkram (morto,
@@ -624,11 +624,11 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
   AGENTS.md; (3) collegamenti (si chiudono con B8).
 - **Accettazione**: la scheda di Sonjak racconta il raid; nessun PNG di G0
   senza stato; 5 artefatti + Cintura documentati e linkati.
-- **✅ FATTO (2026-07-02, sessione 12)**: `PNG/Sonjak/Sonjak.md` ora ha la
+- **✅ FATTO (2026-07-02, sessione 12)**: `Bestiario/villain/Sonjak/Sonjak.md` ora ha la
   sezione "IL RAID DELLA STANZA DELLA CORONA (ARC-06) — mandante" (Urialle +
   Yochlol, fallito, Hella uccisa, i PG forse non sanno ancora che è lei
-  `[verify state.md §4]`). Create schede post-mortem `PNG/Belkram/Belkram.md`
-  (**morto, redento** in punto di morte) e `PNG/Urialle/Urialle.md` (**morta**,
+  `[verify state.md §4]`). Create schede post-mortem `Bestiario/villain/Belkram/Belkram.md`
+  (**morto, redento** in punto di morte) e `Bestiario/villain/Urialle/Urialle.md` (**morta**,
   uccisora di Hella), formato AGENTS.md, con link incrociati e al log R0.
   Cintura documentata in A10. Con questo **B9 è completo** (Collana e
   file-risultati erano già fatti). I link dall'INDICE si chiudono con B8.

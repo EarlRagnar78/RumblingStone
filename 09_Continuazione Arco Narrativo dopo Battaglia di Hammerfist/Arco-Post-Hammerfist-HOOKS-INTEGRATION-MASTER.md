@@ -320,16 +320,16 @@ Sintesi rapida per i 4 PG:
 
 ## 9. Cross-link
 
-- **PNG Tempestas (recurring intel agent):** `PNG/Tempestas/Tempestas.md`
-- **PNG Lythiel (Hella's Hammerfist hook):** `PNG/Lythiel/Lythiel.md`
-- **PNG Sorella Maewen (Tordek's Sacred Forest hook):** `PNG/Maewen/Maewen.md`
+- **PNG Tempestas (recurring intel agent):** `Bestiario/png/Tempestas/Tempestas.md`
+- **PNG Lythiel (Hella's Hammerfist hook):** `Bestiario/png/Lythiel/Lythiel.md`
+- **PNG Sorella Maewen (Tordek's Sacred Forest hook):** `Bestiario/png/Maewen/Maewen.md`
 - **Hook Hella scena (Lythiel + Saraah):** `Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md`
 - **Hook Tordek scena (Maewen al Sacred Forest):** `Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md`
 - **Hook Artemis scena (Anello vibra alla Cerimonia):** `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md`
 - **Hook Thorik scena (lettera Brenna + intel):** `Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md`
 - **Hook Ghostlord (carovana profughi):** `Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md`
 - **Cerimonia delle 100 Asce (zona principale):** `08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md`
-- **PNG Lorana (riserva profughi a Rethmar):** `PNG/Lorana/Lorana.md`
+- **PNG Lorana (riserva profughi a Rethmar):** `Bestiario/png/Lorana/Lorana.md`
 - **Battle of Hammerfist final phase:** `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md`
 - **Sacred Forest (P1) quest:** `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md`
 - **Tournament (P2B) arc:** HUB in `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md` (dettaglio in `...Tordek-PARTE1-Giorno1-Preliminari.md` + `PARTE2-Giorno2-Semifinali.md` + `PARTE3-Giorno3-Finale-e-Invasione.md`)

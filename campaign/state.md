@@ -1270,4 +1270,16 @@ entries — they become campaign history.
             mostri/villain/PNG: locazione standard = `Bestiario/` a
             repo root (vedi PIANO-REVISIONE-LIBRERIA-MOSTRI-PNG-VILLAIN
             e CENSIMENTO-MOSTRI-PNG-VILLAIN).
+2026-07-04  Palio di Channathgate (P2D) INDICIZZATO come side-arc canonico
+            opzionale di ARC-09 (era scritto ma non referenziato dai file-hub,
+            quindi "mai menzionato" nella navigazione). Nessun cambio di stato
+            del mondo: solo cross-link. Wired in: INDICE-GENERALE (nuova PARTE
+            2D), DM-QUICKSTART-ARC09 §5 (riga P2D), HOOKS-INTEGRATION-MASTER
+            §1.1 timeline + §9, Consiglio_Rethmar (File correlati), Torneo
+            DAUTH-DM-MASTER-REFERENCE (attività parallela). Canone confermato
+            dal DM (2026-07-04): il **Drappellone = Matrice del Mythal** della
+            Fase 4 (cross-link aggiunto in FASE4-CIRCOLO-MYTHAL-STATUE-TESTO);
+            l'esito del Palio muove il voto del Consiglio (default RESA→DIFESA)
+            e sblocca +150 truppe. Collocazione: Day 27-36, parallela a
+            P2A/P2B/P2C, deadline rinforzi Day 37-38 → Rethmar Day 42.
 ```

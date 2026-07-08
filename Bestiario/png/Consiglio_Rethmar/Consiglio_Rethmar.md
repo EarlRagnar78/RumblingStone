@@ -7,6 +7,7 @@
 - `Bestiario/villain/Sonjak/Sonjak.md` — la minaccia che il consiglio non vede
 - `Bestiario/png/Lorana/Lorana.md` — la voce di campo non ufficiale
 - `RUMBLINGSTONE — ESPANSIONE NARRATIVA POST-HAMMERFIST.md` — Part VI (Lady Kaal)
+- `09_.../Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md` — il **Palio di Channathgate** (P2D, opzionale): le **8 contrade** sono lo specchio dei seggi del Consiglio; l'esito del Palio **muove il voto** (default RESA → DIFESA se i PG si alleano le contrade giuste) e sblocca +150 truppe + il Drappellone (Matrice del Mythal, Fase 4). Vedi §2 di quel file.
 
 ---
 

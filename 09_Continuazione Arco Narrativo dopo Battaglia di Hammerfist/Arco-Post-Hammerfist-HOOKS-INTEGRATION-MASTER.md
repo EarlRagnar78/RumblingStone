@@ -104,8 +104,13 @@ Giorno 23-28 Possibili incontri sulla strada:
            - CAROVANA PROFUGHI dal Thornwaste (Ghostlord hook).
            - Drow scout per Artemis (se va alla Torre).
            - Voci della strada per Tordek.
+Giorno 27-36 PALIO DI CHANNATHGATE (P2D, opzionale, PARALLELO al Torneo):
+           attivita di citta sulla Dawn Way ~35 mi E di Rethmar. Corsa +
+           Consiglio; deadline rinforzi Day 37-38. Split-party lecito.
+           Vince il Drappellone = Matrice del Mythal (Fase 4). Vedi
+           P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md §3.1.
 Giorno 28  Arrivo a Dauth (per chi ci va al Torneo) — preliminari.
-Giorno 30  Cerimonia apertura Torneo (Day 1).
+Giorno 30  Cerimonia apertura Torneo (Day 1). [Palio Giorno 1 in parallelo]
 Giorno 31  Day 2 Torneo.
 Giorno 32  Day 3 Torneo + assedio Vanguard a Dauth.
 Giorno 33-35  Hella completa rituale Sacred Forest;
@@ -333,6 +338,7 @@ Sintesi rapida per i 4 PG:
 - **Battle of Hammerfist final phase:** `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md`
 - **Sacred Forest (P1) quest:** `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md`
 - **Tournament (P2B) arc:** HUB in `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md` (dettaglio in `...Tordek-PARTE1-Giorno1-Preliminari.md` + `PARTE2-Giorno2-Semifinali.md` + `PARTE3-Giorno3-Finale-e-Invasione.md`)
+- **Palio di Channathgate (P2D) arc:** HUB in `Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md` (opzionale, parallelo al Torneo, Day 27-36; il Drappellone = Matrice del Mythal alimenta la Fase 4; muove il voto del Consiglio di Rethmar)
 - **Torre Invisibile (P2A) arc:** `Arco-Post-Hammerfist-P2A-Torre-PARTE*.md`
 - **Ghostlord arc files:** `Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-TESTO.md`
 - **Ramo del rifiuto P3B (echi del rituale Hella → slot-dono Collana):** `07_il Portale Della Forgia Eterna/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` §2-BIS

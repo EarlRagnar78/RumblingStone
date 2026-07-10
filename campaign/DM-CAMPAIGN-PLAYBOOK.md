@@ -45,6 +45,26 @@ Apri i file in questo ordine:
 
 **Optional ma utile**: apri `campaign/lore/house-rules.md` se prevedi ruling ambigui.
 
+### §2.1 — Regola d'oro anti-rigenerazione (Bestiario)
+
+Prima di **creare** stat per un mostro/PNG/villain di un incontro o di una
+quest, **cerca se esistono già** — quasi sempre è così:
+
+1. `python3 scripts/suggest_encounter.py --list-npcs` (elenca i PNG canonici di
+   `Bestiario/{villain,png}/` + le voci del catalogo con nome);
+2. o cerca nel catalogo: `grep -i "<nome>" scripts/monster_catalog.yaml` →
+   la riga `source_file:` ti porta alla scheda;
+3. per famiglia/CR sfoglia `Bestiario/mostri/` (unità generiche, `nome-crN.md`),
+   `Bestiario/villain/` (antagonisti unici), `Bestiario/png/` (alleati unici);
+4. se esiste solo come sorgente storica in `Bestiario/pregen-pcgen/`, **trascrivila**
+   nel formato standard (non reinventarla): vedi `Bestiario/README.md`.
+
+**Genera ex-novo solo se non esiste da nessuna parte**, col
+`campaign/templates/png-dossier-template.md`, flag `[INFERRED — needs DM
+confirmation]` e — se è un potenziamento — via `skills/npc-villain-boosting/`
+con `Boost log:`. Riusare una scheda esistente è sempre preferibile a clonarne
+i numeri in un file d'incontro.
+
 ---
 
 ## §3 — During-session: live tracker leggero

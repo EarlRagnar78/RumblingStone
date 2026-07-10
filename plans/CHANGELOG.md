@@ -25,4 +25,5 @@
 | 2026-07-03/04 | TRASVERSALE | T6a+T6b+T6c (artefatti) | PR #24-#25, #26 | ✅ LOTTO ARTEFATTI COMPLETO (regola 3 documenti; §6 doppia colonna, T-D10) |
 | 2026-07-04 | TRASVERSALE | T7+T9 (schede giocatore, echi) | PR #25 | ✅ schede STATO-ATTUALE per tutti; T9 cross-link (chiusura post-P3B gated) |
 | 2026-07-10 | DM-TOOLKIT | Piano scritto e approvato | PR #28 | ✅ decisioni K-D1…K-D4; esecuzione autorizzata dal merge |
-| 2026-07-10 | DM-TOOLKIT | Lotto K-A (K-A1…K-A4) | questo commit | ✅ archivio `plans/` + puntatori, INDEX con %, questo changelog, 3 ADR + template |
+| 2026-07-10 | DM-TOOLKIT | Lotto K-A (K-A1…K-A4) | 0070a49 | ✅ archivio `plans/` + puntatori, INDEX con %, questo changelog, 3 ADR + template |
+| 2026-07-10 | DM-TOOLKIT | Lotto K-C1 (dm.py) | questo commit | ✅ CLI unica `scripts/dm.py` (prep/maps/post/recap/handout/skills/doctor), solo orchestrazione (ADR-0002) |

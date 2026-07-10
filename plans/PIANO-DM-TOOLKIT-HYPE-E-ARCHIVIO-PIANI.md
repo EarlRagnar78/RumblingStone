@@ -289,11 +289,11 @@ principale, non la quantità (la copertura è già buona):
 
 ## §7 — Checklist avanzamento (aggiornare a ogni lotto — regola d'oro 4)
 
-**Completamento piano: ~35%** (4/11 task; piano approvato col merge del PR #28, 2026-07-10)
+**Completamento piano: ~45%** (5/11 task; piano approvato col merge del PR #28, 2026-07-10)
 
 - [x] **K-A** (archivio piani): [x] K-A1 · [x] K-A2 · [x] K-A3 · [x] K-A4 — **4/4 — LOTTO COMPLETO (2026-07-10)**
 - [ ] **K-B** (hype Homebrewery): [ ] K-B0 🔶 *gate DM* · [ ] K-B1 · [ ] K-B2 · [ ] K-B3 (a lotti) — 0/4
-- [ ] **K-C** (CLI dm.py): [ ] K-C1 · [ ] K-C2 · [ ] K-C3 — 0/3
+- [ ] **K-C** (CLI dm.py): [x] K-C1 (2026-07-10) · [ ] K-C2 · [ ] K-C3 — 1/3
 - [x] K-D1…K-D4 — decisioni acquisite (2026-07-10)
 
 ### Domande aperte per il DM (da chiudere in approvazione del PR)

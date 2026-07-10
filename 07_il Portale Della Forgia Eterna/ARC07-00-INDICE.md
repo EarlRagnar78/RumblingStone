@@ -3,7 +3,7 @@
 
 > **Cos'è**: la mappa dell'arco (task B8). Ti dice **dove sei**, **cosa viene
 > dopo**, **quale file aprire** e **cosa stampare**. Per la coerenza dei file
-> vedi `PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md`; per la matrice versioni
+> vedi `plans/PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md`; per la matrice versioni
 > `ARC07-MATRICE-VERSIONI.md`.
 
 ---

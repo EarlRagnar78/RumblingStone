@@ -37,7 +37,7 @@ TEMPLATES = REPO / "campaign" / "templates" / "homebrew"
 GENERATED_HEADER = (
     "<!-- Auto-generated — do not edit by hand.\n"
     "     Sorgente: {src}\n"
-    "     Rigenera con: python3 scripts/dm.py recap --hype\n"
+    "     Rigenera con: {regen}\n"
     "     Incolla tutto su https://homebrewery.naturalcrit.com/ (New brew). -->\n\n"
 )
 
@@ -168,7 +168,7 @@ def hype_recap(recap_path: Path, out: Path | None) -> Path:
         blocks.append(wrap_section(heading, acc))
 
     hb = (
-        GENERATED_HEADER.format(src=rel(recap_path))
+        GENERATED_HEADER.format(src=rel(recap_path), regen="python3 scripts/dm.py recap --hype")
         + build_cover(title, subtitle, meta.rstrip(" ·"))
         + paginate(blocks)
     )
@@ -185,11 +185,41 @@ def hype_recap(recap_path: Path, out: Path | None) -> Path:
 # ----------------------------------------------------------- handout mode
 
 
-def hype_handout(tipo: str, da: str | None, out: str | None) -> Path:
+def extract_section(text: str, sezione: str) -> str:
+    """Estrae la sola sezione `## …sezione…` (fino al prossimo ##)."""
+    lines = text.splitlines()
+    start = None
+    for i, ln in enumerate(lines):
+        if re.match(r"##\s", ln) and sezione.lower() in ln.lower():
+            start = i
+            break
+    if start is None:
+        die(f"sezione '{sezione}' non trovata nel file sorgente")
+    end = len(lines)
+    for j in range(start + 1, len(lines)):
+        if re.match(r"##?\s", lines[j]) and not lines[j].startswith("###"):
+            end = j
+            break
+    return "\n".join(lines[start:end])
+
+
+def strip_dm_staging(text: str) -> str:
+    """Toglie i paragrafi-blockquote di regia DM ('Quando darlo', fonti)."""
+    paragraphs = re.split(r"\n\s*\n", text)
+    kept = [p for p in paragraphs
+            if not (p.lstrip().startswith(">") and re.search(
+                r"\*\*Quando darlo\*\*|Come si usa questa scheda", p))]
+    return "\n\n".join(kept)
+
+
+def hype_handout(tipo: str, da: str | None, out: str | None,
+                 sezione: str | None = None) -> Path:
     tpl = TEMPLATES / f"{tipo}.hb.md"
     if not tpl.exists():
         die(f"template mancante: {rel(tpl)} (Lotto K-B2)")
     template = tpl.read_text(encoding="utf-8")
+    # il commento d'uso appartiene al template master, non all'artefatto
+    template = re.sub(r"^\s*<!--.*?-->\s*", "", template, flags=re.S)
 
     if da:
         src = Path(da)
@@ -197,14 +227,25 @@ def hype_handout(tipo: str, da: str | None, out: str | None) -> Path:
             die(f"file sorgente non trovato: {da}")
         content = src.read_text(encoding="utf-8")
         guard_spoiler_safe(content, src)
-        body = re.sub(r"^#\s+.*\n", "", content, count=1)  # H1 → lo mette il template
-        m = re.match(r"#\s+(.*)", content)
-        titolo = m.group(1).strip() if m else src.stem.replace("-", " ").title()
+        if sezione:
+            content = extract_section(content, sezione)
+            m = re.match(r"##\s+(.*)", content)
+            titolo = re.sub(r"^HANDOUT\s*\d+\s*—\s*", "", m.group(1).strip()) if m else sezione
+            body = re.sub(r"^##\s+.*\n", "", content, count=1)
+        else:
+            body = re.sub(r"^#\s+.*\n", "", content, count=1)  # H1 → lo mette il template
+            m = re.match(r"#\s+(.*)", content)
+            titolo = m.group(1).strip() if m else src.stem.replace("-", " ").title()
+        body = strip_dm_staging(body)
+        # separatori orfani in testa/coda (--- ereditati dal file sorgente)
+        body = re.sub(r"^(\s*(---|___)\s*\n)+", "", body)
+        body = re.sub(r"(\n(---|___)\s*)+\s*$", "\n", body)
     else:
         body = "_(compila: passa un file markdown con `--da`)_"
         titolo = tipo.replace("-", " ").title()
 
-    hb = GENERATED_HEADER.format(src=da or f"template {tipo}") + (
+    regen = f"python3 scripts/dm.py handout --tipo {tipo}" + (f" --da {da}" if da else "")
+    hb = GENERATED_HEADER.format(src=da or f"template {tipo}", regen=regen) + (
         template.replace("[[TITOLO]]", titolo)
                 .replace("[[CONTENUTO]]", body.strip())
                 .replace("[[DATA]]", date.today().isoformat())
@@ -229,11 +270,12 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--handout", metavar="TIPO",
                     help="genera un handout: lettera, profezia, avviso-torneo, scheda-artefatto")
     ap.add_argument("--da", help="(handout) file markdown sorgente col contenuto")
+    ap.add_argument("--sezione", help="(handout) estrai solo la sezione '## …' che contiene questo testo")
     ap.add_argument("--out", help="file di output esplicito")
     args = ap.parse_args(argv)
 
     if args.handout:
-        hype_handout(args.handout, args.da, args.out)
+        hype_handout(args.handout, args.da, args.out, args.sezione)
     else:
         recap = Path(args.recap) if args.recap else latest_recap()
         if not recap.exists():

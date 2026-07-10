@@ -189,14 +189,23 @@
 
 - [x] **L0** — fondazioni: ristrutturazione Bestiario + riferimenti +
   censimento + README/template + `validate_bestiario.py` in CI (2026-07-08)
-- [ ] L1a (Mano Rossa/regolari) · [ ] L1b (nominati RHoD) · [ ] L1c
-  (Underdark/duergar) · [ ] L1d (guardiani/scaladossa) · [ ] L1e
-  (Martello di Moradin + varie)
-- [ ] L2 (dossier orfani + Khorn) · [ ] L3 (cross-link incontri) ·
-  [ ] L4 (token) · [ ] L5 (CI --rules)
-- Domande DM aperte: **nessuna** (L-D1..L-D5 acquisite). Decisioni future
-  gated: conferma Borin Tozzefort (L2), scarto token inutilizzati (L4),
-  promozione `--rules` a gate (L5).
+- [x] **L1** — trascritte 44 sorgenti PCGen/HTML/PDF in statblock standard
+  (Mano Rossa/regolari, nominati RHoD, Underdark/duergar, guardiani/
+  scaladossa, Martello di Moradin + varie); catalogo a 102 statblock
+  (2026-07-08)
+- [x] **L2** — statblock di Khorn `[INFERRED]` (via npc-villain-boosting,
+  Boost log) + mini-dossier per i villain nominati orfani (Avatar di
+  Tiamat, Tyrgarun, Wyrmlord Karruk, Zarim) (2026-07-08)
+- [x] **L3** — regola anti-rigenerazione nel `DM-CAMPAIGN-PLAYBOOK` §2.1;
+  dossier d'arco già cross-linkati verificati (2026-07-08)
+- [x] **L4** — token: 9 file con nome-hash rinominati per soggetto +
+  `tokens/README.md` (manifest) + campo `Token` su Lythiel e Jorr (2026-07-08)
+- [x] **L5** — `validate_bestiario.py --rules` (benchmark GS PF1e, policy
+  `[INFERRED]`, `Boost log:` obbligatorio) + step CI non bloccante
+  (`continue-on-error`) (2026-07-08)
+- **LOTTO LIBRERIA COMPLETO.** Domande DM aperte: **nessuna** (L-D1..L-D5
+  acquisite). Decisioni future gated (non bloccanti): conferma Borin
+  Tozzefort, scarto token inutilizzati, promozione `--rules` a gate.
 
 ## §9 — GIUDIZIO SINTETICO (per il DM)
 

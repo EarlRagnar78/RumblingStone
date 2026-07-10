@@ -1,4 +1,5 @@
 # CAPITANA LYTHIEL ALAR-WEN — IL VENTO DELLA QUERCIA
+**Token**: `Bestiario/tokens/da-catalogare/ranger-gufo-mascherata.webp` (ranger elfica mascherata con gufo)
 ## *Ranger Elfica del Cerchio del Sacred Forest, Cavaliere di Gufo, Voce di Hellas*
 
 **Razza/Tipo:** Elfa dei Boschi (Umanoide Medio, elfo)

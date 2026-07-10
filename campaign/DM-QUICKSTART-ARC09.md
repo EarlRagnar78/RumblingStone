@@ -128,6 +128,7 @@ di tutte le fasi).
 | P2A Torre | `P2A-Torre-PARTE1-4` + `STATBLOCCHI` per livello | Day 24-28 |
 | P2B Torneo Dauth | `P2B-Torneo-PARTE1-3` + `OTTO-PORTE` + `BATTLE-STATS` | Day 26-30 (fixed) |
 | P2C Mercante | `P2C-Salvatore-Mercante-TESTO.md` | Day 25-35 (subplot) |
+| P2D Palio di Channathgate | `P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md` (HUB) + `P2D-PALIO-DM-MASTER-REFERENCE.md` + `P2D-PALIO-GIORNO1..3-4` | Day 27-36 (**parallela**, opzionale; deadline rinforzi Day 37-38 → Rethmar Day 42). Vince il **Drappellone = Matrice del Mythal** (Fase 4) e muove il voto del Consiglio |
 | P3 Ghostlord | `P3-Ghostlord-LICH-ALLEANZA-TESTO.md` + `STATBLOCCHI` + `MAPPE` | Day 28-35 |
 | P3 Starsong | `P3-Starsong-Hill-ALLEANZA-ELFI-*` | Day 30-38 |
 | P3 Sabotaggi | `P3-Sabotaggio-Campi-Drow-*` + `P3-MISSIONI-BREVI-CR12-*` | Day 30-38 |

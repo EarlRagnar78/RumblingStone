@@ -12,6 +12,16 @@ Il **Circolo degli Otto** (8 arcimaghi/arci‑druidi) ha scelto la piazza centra
 
 I PG devono **proteggere il rituale per 7 round** e gestire l’attivazione delle statue.
 
+> **↩ Fonte del Mythal — il Drappellone del Palio (canone, P2D)**: il fulcro
+> che il Circolo degli Otto usa qui è la **Matrice del Mythal** («La
+> Tessitura»), l'antica Meraviglia di Rethmar. Se i PG hanno giocato e
+> **vinto il Palio di Channathgate** (P2D), il **Drappellone** conquistato
+> **È** quella Matrice e **rinforza il rituale** (rende il Circolo più
+> resistente alle disruzioni / abbassa la soglia di successo). Se il Palio
+> non è stato giocato, il Circolo lavora con la sola Meraviglia già in loco
+> (rituale al livello base). Fonte:
+> `Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md` §4.
+
 ---
 
 ## 2. Struttura della fase

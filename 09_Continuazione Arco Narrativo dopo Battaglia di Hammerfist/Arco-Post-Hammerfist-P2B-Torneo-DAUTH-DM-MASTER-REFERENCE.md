@@ -15,6 +15,12 @@
 > esito **realmente aperto** deciso dai dadi). I PG sono protagonisti, non
 > spettatori.
 
+> **Attività parallela (P2D)**: negli stessi giorni (Day 27-36) si tiene il
+> **Palio di Channathgate** (`Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md`),
+> in una **città diversa** (Channathgate, ~35 mi E di Rethmar). È l'attività
+> gemella del Torneo: opzionale, split-party lecito (metà a Dauth, metà al
+> Palio). Entrambe convergono sui rinforzi/alleanze per Rethmar (Day 42).
+
 Questo file è l'**HUB** del Torneo. I contenuti di dettaglio sono negli allegati:
 
 | File | Contenuto |

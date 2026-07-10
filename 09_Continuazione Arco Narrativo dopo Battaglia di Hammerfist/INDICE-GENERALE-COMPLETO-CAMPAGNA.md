@@ -293,6 +293,41 @@ File dedicati in `Bestiario/villain/` e `Bestiario/png/`. Ogni cartella contiene
 
 ---
 
+### PARTE 2D: Il Palio di Channathgate (attività di città — canonica, opzionale)
+
+**Durata:** 3–4 sessioni (Day 27–36, **parallela** a P2A Torre / P2B Dauth /
+P2C Salvatore; finestra PG 20–41). **Deadline dura Day 40**: i rinforzi
+sbloccati devono partire da Channathgate **entro Day 37–38** (~1,5 gg sulla
+Dawn Way) per schierarsi a Rethmar entro il **Day 42** (Fase 1). Split-party
+lecito (metà al Palio, metà alle sedute del Consiglio).
+
+> **Status:** side-arc **canonico ma opzionale** (regola anti-railroad: se
+> ignorato, Channathgate resta neutrale, i +150 non si sbloccano, il Consiglio
+> di Rethmar vota il default). **HUB e sincronizzazione**:
+> `Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md`.
+
+| File | Tipo | Status |
+|---|---|---|
+| `Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md` | **HUB** — sync March/Ritual Clock, clock villain, Consiglio di Rethmar, il **Drappellone = Matrice del Mythal** (Fase 4) | ✅ |
+| `Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md` | Reference DM — indice, calendario, esiti, checklist | ✅ |
+| `Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md` | Avventura completa (arrivo → corsa) | ✅ |
+| `Arco-Post-Hammerfist-P2D-PALIO-GIORNO1-TRATTA.md` · `...GIORNO2-PARTITI-CENA-SABOTAGGI.md` · `...GIORNO3-4-CORSA-ESITI.md` | Struttura a giorni (tratta / partiti-cena-sabotaggi / corsa-esiti) | ✅ |
+| `Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md` · `...PROVE-BATTERIA.md` | Prove di ammissione + batterie | ✅ |
+| `Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md` · `...BALLATE.md` | Le 8 contrade (stemmi, canti, ballate) ↔ Consiglio di Rethmar | ✅ |
+| `Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md` | Esiti × scelte PG; echi a Rethmar (rinforzi, voto Consiglio, clock villain) | ✅ |
+| `Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md` | Stat blocks (assalto drow alla stalla, GS 11–12) | ✅ |
+| `Arco-Post-Hammerfist-P2D-PALIO-MAPPE.md` (+ `P2D-Palio-Allegati/`) | Mappe (piazza, città, rotta di soccorso, stalla) — SVG originali | ✅ |
+
+**Contenuti / perché conta:**
+
+- **Corsa a conchiglia** (Siena-style): 8 contrade, 3 giri, 6 Zone con CD 18–24 (skill-challenge/chase).
+- **Le 8 contrade ↔ il Consiglio di Rethmar**: vincere/allearsi con una contrada muove il voto del corrispondente seggio del Consiglio (default = **RESA**; l'appoggio dei PG lo ribalta in **DIFESA**).
+- **Clock dei villain**: notte del Giorno 2, **Sonjak** manda assassini drow ad avvelenare il cavallo/rapire il fantino — respingerli e **catturare un drow vivo = −1 clock Sonjak** + intel Fase 0; esporre i registri della **Civetta (Valerius)** = **−1 Il Collezionista**.
+- **Il Drappellone = la Matrice del Mythal** (canone): il premio del Palio è l'antica Meraviglia di Rethmar, la **Tessitura** che alimenta il **Circolo degli Otto** nella **Fase 4** (Mythal anti-drago). Vincerlo rinforza il Mythal della battaglia finale.
+- **Rinforzi**: +150 truppe di Channathgate + il Drappellone, instradati a Rethmar per il Day 42 (rotte Dawn Way / Fiume Cannath, vedi `...P2D-PALIO-MAPPE.md` §3).
+
+---
+
 ## PARTE 3: MISSIONI SECONDARIE + BATTAGLIA FINALE RETHMAR
 
 ### PARTE 3 — Starsong Hill: Alleanza Elfi Tiri Kitor

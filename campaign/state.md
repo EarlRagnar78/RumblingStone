@@ -1282,4 +1282,12 @@ entries — they become campaign history.
             l'esito del Palio muove il voto del Consiglio (default RESA→DIFESA)
             e sblocca +150 truppe. Collocazione: Day 27-36, parallela a
             P2A/P2B/P2C, deadline rinforzi Day 37-38 → Rethmar Day 42.
+2026-07-11  Rinominato il PNG **Borin Tozzefort → Durgan Tozzefort**
+            (comandante dei 300 mercenari nani di Dauth, `[INFERRED]`):
+            il nome «Borin» confliggeva con **Borin Ferropugno**, l'eroe
+            pregen usato nella Battaglia di Hammerfist (rischio di fusione
+            dei due PNG). Aggiornati i riferimenti vivi (ESITI-CONSEGUENZE
+            §7, STATBLOCCHI-EPICI §7, PIANO-REVISIONE-ARC09, censimento,
+            piano libreria). La riga changelog del 2026-07-02 conserva il
+            nome storico (append-only, non riscritta).
 ```

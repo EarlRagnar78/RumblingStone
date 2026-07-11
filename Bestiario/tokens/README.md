@@ -24,10 +24,23 @@ I file con nome-hash sono stati rinominati per soggetto (identificato a vista):
 | `ranger-gufo-mascherata.webp` | ranger elfica mascherata con gufo → **Lythiel** | `png/Lythiel/` ✅ assegnato |
 | `cacciatore-ranger-balestra.webp` | ranger rude con balestra → **Jorr** | `png/jorr-natherson-cr7.md` ✅ assegnato |
 | `drago-cavaliere-alato.webp` | drago cavalcato da cavaliere alato | Tyrgarun / scena aerea |
-| `sfondo-foresta.webp` | sfondo di foresta (non un token) | mappa/ambiente |
+| `armata di nani.webp` | schiera di nani in armatura | token di unità nanica (battaglie di massa) |
 
 Gli altri file di `da-catalogare/` hanno già nomi parlanti (es.
 `DriderSorceror.webp`, `Negromante.webp`, `nano con scudo.webp`).
+
+### Scartati (2026-07-11, decisione DM)
+
+Rimossi i file **non usabili come token di combattente** per battaglie
+generate al volo (arte di scena/sfondo, non creature):
+
+- `sfondo-foresta.webp` — sfondo di foresta (ambiente, non un token)
+- `anfiteatro- statue.webp` — statue/scenografia (ambiente)
+- `CorpiLanotteVicinoDreatthmar.webp` — scena atmosferica di cadaveri (non un combattente)
+
+**Tenuti** perché utili al volo: l'arte di creature/personaggi, `armata di
+nani.webp` (unità di massa) e `Monster_And_Png/StendardoManoRossa.webp`
+(marcatore di fazione Mano Rossa).
 
 ## Da fare (residuo L4, non bloccante)
 

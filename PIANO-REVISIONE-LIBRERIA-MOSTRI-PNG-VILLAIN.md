@@ -120,7 +120,7 @@
 - **Azione**: (1) mini-dossier (template `png-dossier-template.md`) per gli
   orfani: Avatar di Tiamat, Tyrgarun, Wyrmlord Karruk, Zarim, Emissario;
   Arci-druido, Arcimago, Druido-orso, Comandante Dauth (quest'ultimo resta
-  `[INFERRED]` finché il DM non conferma Borin Tozzefort); (2) statblock di
+  `[INFERRED]` finché il DM non conferma Durgan Tozzefort); (2) statblock di
   **Khorn** via `npc-villain-boosting` (ufficiale nanico di Hammerfist,
   benchmark GS, flag `[INFERRED]`, Boost log); (3) verifica key stats dei
   dossier segnati "verifica L2" in censimento §4.

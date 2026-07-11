@@ -169,7 +169,7 @@ Non serve dettagliare tutta la lista: il suo ruolo è “batteria” del rituale
 
 ---
 
-## 7. Borin Tozzefort — Comandante dei 300 Mercenari Nani (CR 11) `[INFERRED — needs DM confirmation]`
+## 7. Durgan Tozzefort — Comandante dei 300 Mercenari Nani (CR 11) `[INFERRED — needs DM confirmation]`
 
 - Classe: Guerriero 12.  
 - PF: ~120.  

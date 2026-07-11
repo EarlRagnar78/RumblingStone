@@ -308,7 +308,7 @@ Possibile nuovo nemico:
   - Se vittoria: stabilisce grande fortezza di Dauth, riconosce i PG come alleati permanenti.  
   - Se sconfitta: Dauth cade, il Magister è prigioniero/esiliato (gancio per rescue mission).
 
-- **Borin Tozzefort** `[INFERRED — needs DM confirmation]` (300 nani mercenari di Dauth):
+- **Durgan Tozzefort** `[INFERRED — needs DM confirmation]` (300 nani mercenari di Dauth):
   - Se vittoria: Hammerfist invia ambasciatore permanente, negozia basi logistiche per i PG.  
   - Se sconfitta: Hammerfist si chiude, invia solo un corpo di ricerca per recuperare i caduti.
 

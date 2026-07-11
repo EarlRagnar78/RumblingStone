@@ -18,8 +18,14 @@ Fa rispettare lo standard della libreria di mostri/villain/PNG (T-D12):
      in-memory riproduce il file committato) — chi tocca uno statblock e
      dimentica `python3 scripts/build_monster_catalog.py` rompe la CI.
 
-Uso: python3 scripts/validate_bestiario.py [--help]
-Exit 0 = tutto ok; exit 1 = violazioni (elencate su stderr).
+Con `--rules` (usato in CI come **warning**, non gate) aggiunge controlli di
+aderenza alle regole 3.5/campagna: (a) GS dichiarato vs benchmark PF1e
+Monster-Statistics-by-CR (hp/AC entro tolleranza larga); (b) `**Status**:
+inferred` ⇒ deve esserci un marcatore `[INFERRED]` nel corpo; (c) se il file
+menziona un boost, deve avere una riga `Boost log:`.
+
+Uso: python3 scripts/validate_bestiario.py [--rules] [--help]
+Exit 0 = struttura ok (gli avvisi --rules NON fanno fallire); exit 1 = violazioni.
 """
 import re
 import sys
@@ -41,10 +47,28 @@ LEGACY_PATHS = [
 SUBDIRS = ["mostri", "villain", "png", "pregen-pcgen", "tokens"]
 
 errors: list[str] = []
+warnings: list[str] = []
 
 
 def err(msg: str):
     errors.append(msg)
+
+
+def warn(msg: str):
+    warnings.append(msg)
+
+
+# PF1e Monster-Statistics-by-CR benchmark (semplificato: hp medio e AC media
+# per CR, tolleranze larghe). Fonte: skills/pathfinder-1e-srd (monster-advancement).
+# Solo per il warning di --rules: un GS palesemente fuori scala va rivisto.
+PF_BENCH = {  # cr: (hp_min, hp_max, ac_min, ac_max)
+    1: (10, 25, 11, 16), 2: (16, 40, 12, 17), 3: (22, 55, 13, 18),
+    4: (28, 70, 14, 19), 5: (34, 85, 15, 20), 6: (40, 100, 16, 21),
+    7: (46, 120, 17, 22), 8: (52, 140, 18, 23), 9: (60, 160, 18, 24),
+    10: (68, 185, 19, 25), 11: (76, 210, 20, 26), 12: (84, 240, 21, 27),
+    13: (94, 270, 22, 28), 14: (104, 300, 22, 29), 15: (116, 340, 23, 30),
+    16: (128, 380, 24, 31), 17: (140, 420, 25, 32), 18: (152, 470, 26, 33),
+}
 
 
 def filename_cr(name: str):
@@ -100,10 +124,42 @@ def is_statblock(path: Path) -> bool:
         and path.name == path.name.lower()
 
 
+CATALOG_IDS: dict = {}
+
+
+def check_rules(path: Path):
+    """Controlli di aderenza alle regole (--rules, solo warning)."""
+    rel = str(path.relative_to(ROOT))
+    text = path.read_text(encoding="utf-8", errors="replace")
+    low = text.lower()
+    # (1) benchmark GS vs hp/AC (tolleranza larga: segnala solo fuori scala)
+    cr = header_cr(text)
+    if cr is not None and int(cr) in PF_BENCH:
+        hp_min, hp_max, ac_min, ac_max = PF_BENCH[int(cr)]
+        m_hp = re.search(r"\bhp\s*(\d+)", low)
+        if m_hp:
+            hp = int(m_hp.group(1))
+            if hp < hp_min * 0.5 or hp > hp_max * 1.5:
+                warn(f"{rel}: hp {hp} fuori scala per CR {cr:g} (atteso ~{hp_min}-{hp_max})")
+        m_ac = re.search(r"\bac\s*(\d+)", low)
+        if m_ac:
+            ac = int(m_ac.group(1))
+            if ac < ac_min - 4 or ac > ac_max + 4:
+                warn(f"{rel}: AC {ac} fuori scala per CR {cr:g} (atteso ~{ac_min}-{ac_max})")
+    # (2) policy flag: Status inferred ⇒ deve esserci un marcatore [INFERRED]
+    m_status = re.search(r"\*\*Status\*\*[:\s]*([a-z\-]+)", low)
+    if m_status and m_status.group(1).startswith("inferred") and "[inferred" not in low:
+        warn(f"{rel}: Status=inferred ma manca un marcatore [INFERRED] nel corpo")
+    # (3) Boost log obbligatorio se il file dichiara un boost
+    if re.search(r"\bboost(ato|ed|are)?\b", low) and "boost log" not in low:
+        warn(f"{rel}: menziona un boost ma non ha una riga `Boost log:`")
+
+
 def main():
     if "--help" in sys.argv or "-h" in sys.argv:
         print(__doc__)
         return 0
+    do_rules = "--rules" in sys.argv
 
     # 1. struttura + legacy
     if not BEST.is_dir():
@@ -126,6 +182,8 @@ def main():
                 continue
             if is_statblock(path):
                 check_statblock(path)
+                if do_rules:
+                    check_rules(path)
             else:
                 if sub == "mostri":
                     err(f"{path.relative_to(ROOT)}: in mostri/ sono ammessi solo statblock `-crN.md` (+ README)")
@@ -152,6 +210,11 @@ def main():
                     "`python3 scripts/build_monster_catalog.py` e committare. "
                     "Prime differenze:\n      " + "\n      ".join(diff))
 
+    if do_rules and warnings:
+        print(f"⚠ validate_bestiario --rules: {len(warnings)} avvisi (non bloccanti)", file=sys.stderr)
+        for w in warnings:
+            print("  ~", w, file=sys.stderr)
+
     if errors:
         print(f"✗ validate_bestiario: {len(errors)} violazioni", file=sys.stderr)
         for e in errors:
@@ -160,7 +223,8 @@ def main():
     n_stat = sum(1 for s in ("mostri", "villain", "png")
                  for p in (BEST / s).rglob("*.md")
                  if not p.name.startswith("README") and is_statblock(p))
-    print(f"✓ validate_bestiario: struttura ok, {n_stat} statblock validi, catalogo in sync.")
+    extra = f"; {len(warnings)} avvisi --rules" if do_rules else ""
+    print(f"✓ validate_bestiario: struttura ok, {n_stat} statblock validi, catalogo in sync{extra}.")
     return 0
 
 

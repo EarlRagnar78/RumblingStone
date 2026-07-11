@@ -77,7 +77,7 @@ Tutti in `scripts/`, tutti autonomi (zero dipendenze esterne):
 
 | Script | Uso | Quando |
 |---|---|---|
-| `build_monster_catalog.py` | Scansiona il repo → `monster_catalog.yaml` (216 record) | Dopo aver aggiunto unità nuove a `Bestiario/` |
+| `build_monster_catalog.py` | Scansiona il repo → `monster_catalog.yaml` (293 record) | Dopo aver aggiunto unità nuove a `Bestiario/` |
 | `suggest_encounter.py --el N [--alliance X \| --factions a,b] --env Y [--inject-npc N] [--narrative] [--wild]` | Propone 3-5 encounter mix con EL target. Supporta alleanze canoniche (17), PG iniettati, wild (no-loot). | Ogni volta che servono encounter per una scena |
 | `suggest_loot.py --from-encounter FILE.md --pcs N [--include-fr-themed]` | **Standalone**: loot SRD-only per l'encounter. Legge `<!-- loot: structured\|none -->`. Skip auto su wild. | Dopo `suggest_encounter.py`, pipe → |
 | `suggest_map.py --template forest-ambush` | Genera mappa tattica da template (11 template disponibili) | Prep mappa tattica di una scena |
@@ -230,7 +230,7 @@ ripetibile: nessun agente/PG può "riusarlo" (violazione di coerenza da flaggare
 ✅ **Scheduling eventi** → `Armate-SINCRONIZZAZIONE-CAMPAGNA.md` §4b
 ✅ **Numeri armate** → `Armate-CALCOLI-ESERCITI-DINAMICI.md` §2-§6
 ✅ **Atlas unità** → `Armate-COMPOSIZIONE-DETTAGLIATA.md` (16 sezioni)
-✅ **Statblock derivati** → `Bestiario/` (54 file ACCEPTED)
+✅ **Statblock derivati** → `Bestiario/` (102 statblock)
 ✅ **NPC canonici** → `Bestiario/villain/*/` e `Bestiario/png/*/`
 ✅ **Encounter automation** → `scripts/suggest_encounter.py` (alleanze + wild + inject-NPC)
 ✅ **Loot automation standalone** → `scripts/suggest_loot.py` (DMG 3.5 Tab.3-5, SRD-only + FR-themed mild)

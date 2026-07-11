@@ -37,7 +37,7 @@
   Conte Valerius, Ghostlord, Salvatore, Sethrax, Sonjak, Urialle, Xal'thor,
   Il Collezionista, Fauci di Palude, Generale Grimjaw, Gorthak il Trifronte.
 - **`png/` (6 statblock + 17 dossier)**: statblock di Capitana Lorana,
-  Therysol, Comandante Dauth (Borin Tozzefort `[INFERRED]`), Arci-druido,
+  Therysol, Comandante Dauth (Durgan Tozzefort `[INFERRED]`), Arci-druido,
   Arcimago del Circolo, Druido-orso; dossier di Consiglio Rethmar, Lorana,
   Lythiel, Maewen, Tempestas, Therysol, Varis + i 10 file singoli
   (Borin Ferropugno, Capitano Lunapiena, Dana Forgiapietra, Dara

@@ -11,7 +11,7 @@ index/compose what exists (or mark `[INFERRED]`).
 | Script | Purpose | Input | Output |
 |---|---|---|---|
 | `build_monster_catalog.py` | Index every statblock in the repo | `Bestiario/` (mostri/villain/png/pregen-pcgen), `*STATBLOCCHI*.md`, arc folders | `scripts/monster_catalog.yaml` (+ empty `monster_catalog.custom.yaml` for DM additions) |
-| `validate_bestiario.py` | CI gate for the `Bestiario/` library: standard structure, `-crN` kebab naming, required headers, filename↔header CR match, catalog in sync | `Bestiario/{mostri,villain,png}/**/*.md` + `monster_catalog.yaml` | exit 0/1 + violation list (runs in `.github/workflows/ci.yml`) |
+| `validate_bestiario.py` | CI gate for the `Bestiario/` library: standard structure, `-crN` kebab naming, required headers, filename↔header CR match, catalog in sync. With `--rules` (non-blocking warning in CI): PF1e CR benchmark on hp/AC, `[INFERRED]` flag policy, mandatory `Boost log:` | `Bestiario/{mostri,villain,png}/**/*.md` + `monster_catalog.yaml` | exit 0/1 + violation list (runs in `.github/workflows/ci.yml`) |
 | `suggest_encounter.py` | 3–5 encounter proposals for a target EL | catalog + filters (env, faction, role, size) | markdown tables with CR math + source file links |
 | `suggest_map.py` | Pick a 5ft-square tactical grid (ASCII) | `scripts/map_templates/*.yaml` (11 included) | ready-to-print grid + legend + tactical notes |
 | `render_map_svg.py` | Render the arcs' emoji-grid maps to print-quality SVG (uniform palette, coordinates, scale bar, legend) | any `*MAPPE*`/`*Ultra-Clear*` markdown with emoji grids | `rendered/*.svg` next to the source (generated artifacts — the markdown stays the master) |

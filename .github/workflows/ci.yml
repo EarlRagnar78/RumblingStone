@@ -35,6 +35,10 @@ jobs:
       - name: Validate Bestiario library (naming, headers, CR, catalog sync)
         run: python scripts/validate_bestiario.py
 
+      - name: Bestiario rules check (GS benchmark, flag policy) — non-blocking
+        continue-on-error: true
+        run: python scripts/validate_bestiario.py --rules
+
       - name: DM tool smoke tests
         run: |
           python scripts/suggest_encounter.py --help > /dev/null

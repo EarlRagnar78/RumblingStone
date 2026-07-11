@@ -138,7 +138,7 @@ stat puntate alle appendici, campo "esiti possibili"):
 | Dara Occhiolesto | `Bestiario/png/Dara_Occhiolesto.md` | Pregen (D14: staffette) |
 | Thorin Runaforte | `Bestiario/png/Thorin_Runaforte.md` | Pregen (D14: culto caduti) |
 | Nala Cantapietre | `Bestiario/png/Nala_Cantapietre.md` | Pregen (D14: Dauth) |
-| Khorn | `Bestiario/png/Khorn.md` | Ufficiale nanico (D5, 150 lance) |
+| Khorn | `Bestiario/png/Khorn/Khorn.md` | Ufficiale nanico (D5, 150 lance) |
 
 Cast già schedato altrove: `Bestiario/png/Lythiel/Lythiel.md` (Sacred Forest, E7),
 `Bestiario/png/Tempestas/Tempestas.md` (bardo tempeste).

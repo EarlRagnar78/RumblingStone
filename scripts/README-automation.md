@@ -6,6 +6,25 @@ canon** — scripts either generate new files or print suggestions for
 manual review. Respects `AGENTS.md`: we never invent statblocks; we only
 index/compose what exists (or mark `[INFERRED]`).
 
+> **Disambiguazione**: questa cartella `scripts/` (minuscolo) è
+> l'automazione DM. La cartella `Script/` (maiuscolo) contiene invece i
+> convertitori di contenuto (pdf→md, html→md, immagini→webp) — vedi
+> ADR-0002 in `plans/adr/`.
+
+## One entrypoint: `dm.py`
+
+Everything below is reachable from a single CLI mapped to the Playbook
+phases (it *orchestrates* the scripts — they all remain usable directly):
+
+```bash
+python3 scripts/dm.py prep --el 13 --env forest   # encounter + map + loot
+python3 scripts/dm.py post                        # XP ledger + state.md diff proposal
+python3 scripts/dm.py recap --hype                # player recap + Homebrewery V3 version
+python3 scripts/dm.py handout --tipo profezia --da <file> --sezione "HANDOUT 1"
+python3 scripts/dm.py maps validate               # or: maps render <file.md>
+python3 scripts/dm.py doctor                      # environment diagnosis
+```
+
 ## Tool map
 
 | Script | Purpose | Input | Output |
@@ -17,22 +36,18 @@ index/compose what exists (or mark `[INFERRED]`).
 | `render_map_svg.py` | Render the arcs' emoji-grid maps to print-quality SVG (uniform palette, coordinates, scale bar, legend) | any `*MAPPE*`/`*Ultra-Clear*` markdown with emoji grids | `rendered/*.svg` next to the source (generated artifacts — the markdown stays the master) |
 | `update_xp.py` | Cumulative XP ledger per PC | `campaign/sessions/*.md` `## XP awarded` | `campaign/pg/xp-ledger.md` (auto) |
 | `state_sync.py` | Propose edits to `campaign/state.md` after a session | `## World events triggered` in session logs | markdown diff report (DM applies manually) |
+| `session_recap.py` | Spoiler-safe Italian recap for players (R.A. Salvatore tone) | last N session logs + state.md §0 public rows | `campaign/recaps/recap-YYYY-MM-DD.md` (+ optional PDF) |
+| `hype_homebrew.py` | Wrap the recap (or a handout) in Homebrewery V3 layout | latest recap, or `--handout TIPO --da <canon file>` + `campaign/templates/homebrew/*.hb.md` | `.hb.md` generated artifacts to paste on homebrewery.naturalcrit.com |
+| `suggest_loot.py` | Treasure proposals per EL/faction (SRD-only) | `loot_tables.yaml` + `magic_items_srd.yaml` | markdown loot tables |
+| `validate_maps.py` | CI gate: emoji grids ↔ rendered SVG consistency | `*MAPPE*` markdown + `rendered/*.svg` | exit 0/1 (runs in `.github/workflows/ci.yml`) |
+| `dm.py` | **Single entrypoint** — orchestrates all of the above by Playbook phase | subcommand + passthrough flags | whatever the underlying script produces |
 
 ## Typical DM workflow
 
 ```bash
-# 1. Build/refresh the monster index (once; re-run when you add stat files)
-python3 scripts/build_monster_catalog.py
-
-# 2. Plan next session's combat
-python3 scripts/suggest_encounter.py --el 13 --env forest --faction red-hand
-python3 scripts/suggest_map.py --env forest
-
-# 3. After the session — auto-update XP ledger
-python3 scripts/update_xp.py
-
-# 4. Review proposed state.md edits from triggers in the session log
-python3 scripts/state_sync.py --session 2026-05-01_session-42.md
+python3 scripts/dm.py prep --el 13 --env forest --factions red-hand  # before the session
+python3 scripts/dm.py post --session 2026-05-01_session-42.md        # after the session
+python3 scripts/dm.py recap --hype                                    # 1-2 days before next
 ```
 
 ## Extending

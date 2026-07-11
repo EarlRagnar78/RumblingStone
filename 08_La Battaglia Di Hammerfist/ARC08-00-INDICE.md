@@ -113,7 +113,7 @@ master** rilevanti alla sessione.
 
 | File | Ruolo |
 |---|---|
-| `PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA.md` | Il piano di revisione (meta; non materiale di gioco) |
+|  `plans/PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA.md` | Il piano di revisione (meta; non materiale di gioco) |
 | `immagini/` | Immagini generate (~42 webp; classificate in `ARC08-14-ATLANTE-IMMAGINI.md`, C3) |
 | `ARC08-14-ATLANTE-IMMAGINI.md` | Classificazione immagine→mappa/scena→prompt (C3) |
 

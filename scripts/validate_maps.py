@@ -5,7 +5,7 @@ validate_maps.py — CI gate for the campaign's generated tactical maps.
 The revised maps are authored as emoji-grids inside markdown masters; the
 SVGs under every `rendered/` directory are *generated artifacts* produced by
 `render_map_svg.py`. Golden Rule §0.6 of the revision plan
-(`PIANO-REVISIONE-TRASVERSALE-COERENZA-E-QUALITA.md`) says the markdown grid
+(`plans/PIANO-REVISIONE-TRASVERSALE-COERENZA-E-QUALITA.md`) says the markdown grid
 is the MASTER and the SVGs must never be hand-edited. This script enforces
 that rule in CI.
 

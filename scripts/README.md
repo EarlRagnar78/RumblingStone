@@ -1,5 +1,7 @@
 # RumblingStone — Skill Build & Sync Pipeline
 
+> **Disambiguazione**: automazione DM e CLI `dm.py` → `scripts/README-automation.md`; i convertitori di contenuto sono in `Script/` (maiuscolo).
+
 ## What This Does
 
 Compresses, indexes, and packages the `skills/*` source trees into per-agent

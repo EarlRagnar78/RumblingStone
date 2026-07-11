@@ -34,10 +34,16 @@ skills/
 ├── pathfinder-1e-srd/      # PF1e rules, templates, 3.5<->PF conversion
 ├── npc-villain-boosting/   # when/whether/how to boost PNGs, villains, monsters
 └── dnd-35-rules/           # legacy meta-router (points to the skills above)
+
+plans/     # work-plan archive: INDEX.md (status + % + gates), CHANGELOG.md, adr/
+scripts/   # DM automation — single entrypoint: python3 scripts/dm.py
+Script/    # content converters (pdf→md, html→md, img→webp) — NOT the DM automation
 ```
 
 Per-agent mirrors (`.claude/skills/`, `.cursor/skills/`, etc.) are
 generated artifacts of `scripts/build-skills.sh` and are gitignored.
+`.hb.md` files are generated Homebrewery layouts (`plans/adr/ADR-0003`):
+regenerate via `dm.py recap --hype` / `dm.py handout`, never edit by hand.
 
 > **DMs: start with `campaign/DM-CAMPAIGN-PLAYBOOK.md`.** It contains the
 > pre/during/post-session workflow, worked examples for session files and

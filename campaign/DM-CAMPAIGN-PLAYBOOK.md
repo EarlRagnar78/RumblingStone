@@ -39,7 +39,7 @@ Apri i file in questo ordine:
 | 4 | `campaign/state.md` §7 | Open narrative threads attivi | 1 min |
 | 5 | `campaign/sessions/ultima-sessione.md` | Sezione **Next session hooks** | 2 min |
 | 6 | File dell'arco corrente (es. `09_.../Arco-Post-Hammerfist-P1B-...`) | Fase attiva, encounter previsti | 3 min |
-| 6b | (opz.) `scripts/suggest_encounter.py` → `scripts/suggest_loot.py` pipe | Generare encounter+loot proposti | 3 min |
+| 6b | (opz.) `python3 scripts/dm.py prep --el <N> --env <X>` | Encounter+mappa+loot proposti in un colpo solo (orchestra suggest_encounter/map/loot; `dm.py doctor` se qualcosa non torna) | 3 min |
 | 7 | `Bestiario/{villain,png}/<nome>/<nome>.md` (PNG in scena previsti) | Motivazione + segreti + stato | 2 min |
 | 8 | `skills/rumblingstone-campaign/references/campaign-coherence.md` | Solo se vuoi rivedere regole coerenza | 2 min |
 
@@ -95,7 +95,10 @@ Template minimale (6 campi):
 
 ## §4 — Post-session: commit workflow (10 min)
 
-Quando il gruppo va a casa, esegui questi 5 passi nell'ordine:
+Quando il gruppo va a casa, esegui questi 5 passi nell'ordine.
+**Scorciatoia**: `python3 scripts/dm.py post` aggiorna il ledger XP,
+**propone** il diff di state.md (il 4.2 resta manuale) e stampa la
+checklist rimanente.
 
 ### 4.1 Rinomina il draft
 
@@ -150,14 +153,22 @@ viva l'epica della campagna.
 
 ```bash
 # Solo markdown (campaign/recaps/recap-YYYY-MM-DD.md)
-python3 scripts/session_recap.py --last-n 1
+python3 scripts/dm.py recap
+
+# In più la versione HYPE in stile Manuale del Giocatore — pronta da
+# incollare su homebrewery.naturalcrit.com (recaps/homebrew/*.hb.md)
+python3 scripts/dm.py recap --hype
 
 # Con PDF A4 (richiede pandoc + xelatex installati)
-python3 scripts/session_recap.py --last-n 1 --pdf
+python3 scripts/dm.py recap --pdf
 
 # Ultime 2 sessioni se il gruppo ha saltato una settimana
-python3 scripts/session_recap.py --last-n 2
+python3 scripts/dm.py recap --last-n 2
 ```
+
+*(equivalenti diretti: `python3 scripts/session_recap.py …` — dm.py
+orchestra e basta. Per gli handout in-game: `dm.py handout --tipo
+lettera|profezia|avviso-torneo|scheda-artefatto --da <file canone>`.)*
 
 **Cosa fa**:
 

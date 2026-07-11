@@ -29,4 +29,5 @@
 | 2026-07-10 | DM-TOOLKIT | Lotto K-C1 (dm.py) | 618ae7b | ✅ CLI unica `scripts/dm.py` (prep/maps/post/recap/handout/skills/doctor), solo orchestrazione (ADR-0002) |
 | 2026-07-10 | DM-TOOLKIT | Lotto K-B1 (recap-hype) | 810f9a7 | ✅ `scripts/hype_homebrew.py`: recap → Homebrewery V3 (copertina, note, paginazione euristica, guardia anti-DM-notes); esemplare `campaign/recaps/homebrew/recap-2026-05-05.hb.md` |
 | 2026-07-10 | DM-TOOLKIT | Lotto K-B2 (handout) | 15173e0 | ✅ 4 template V3 in `campaign/templates/homebrew/` + `--sezione`/anti-regia-DM in hype_homebrew.py; 2 piloti da canone (profezia Cronache Quattro Eroi, scheda Collana); piloti lettera/avviso-torneo gated su testo canone DM |
-| 2026-07-10 | DM-TOOLKIT | Lotto K-C2 (docs) | questo commit | ✅ README-automation attorno a dm.py, Playbook §2/§4/§4.6 aggiornati, AGENTS.md (plans/, dm.py, .hb.md), banner SUPERATO su scripts/Old, disambiguazione Script/ vs scripts/ |
+| 2026-07-10 | DM-TOOLKIT | Lotto K-C2 (docs) | 7664d87 | ✅ README-automation attorno a dm.py, Playbook §2/§4/§4.6 aggiornati, AGENTS.md (plans/, dm.py, .hb.md), banner SUPERATO su scripts/Old, disambiguazione Script/ vs scripts/ |
+| 2026-07-10 | DM-TOOLKIT | Lotto K-C3 (CI) | questo commit | ✅ smoke test in ci.yml: dm.py --help, dm.py doctor --ci, hype_homebrew.py --help |

@@ -332,7 +332,13 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
 - [x] **K-A** (archivio piani): [x] K-A1 · [x] K-A2 · [x] K-A3 · [x] K-A4 — **4/4 — LOTTO COMPLETO (2026-07-10)**
 - [x] **K-B** (hype Homebrewery): [x] K-B0 (2026-07-12: chiuso col **default dichiarato** — snippet V3 nativi; sito del pack inaccessibile dall'ambiente e mandato DM "completa tutto"; riapribile come lotto estetico se il DM indicherà template specifici) · [x] K-B1 (2026-07-10) · [x] K-B2 (2026-07-10; piloti canone: profezia Cronache + scheda Collana; piloti lettera/avviso-torneo in attesa di testo canone dal DM) · [x] K-B3 (2026-07-12: **Fascicoli I-V completi** — P1-P2, P3, P4+Viaggio, P3B, P5+ponte; verifica visiva su Homebrewery in carico al DM al collaudo del container) · [x] K-B4 (2026-07-12, K-D5) · [x] K-B5 (2026-07-12, container turnkey) — **6/6 — LOTTO COMPLETO**
 - [x] **K-C** (CLI dm.py): [x] K-C1 (2026-07-10) · [x] K-C2 (2026-07-10) · [x] K-C3 (2026-07-10) — **3/3 — LOTTO COMPLETO**
-- [x] K-D1…K-D4 — decisioni acquisite (2026-07-10)
+- [x] K-D1…K-D5 — decisioni acquisite (2026-07-10/12)
+- [x] **K-B6** *(manutenzione post-collaudo, 2026-07-12)*: primo feedback
+  DM sul recap recepito — clock/villain → voci vaghe (Conoscenze locali),
+  mai numeri/deadline ai giocatori; tabella archi = solo cammino vissuto,
+  futuri → sussurri §V; **Giorno di Marcia** in testata (ancora Harptos
+  configurabile: `MARCH_DAY1_HARPTOS` in session_recap.py) e cronologia
+  handout auto-generata `campaign/recaps/homebrew/00-CRONOLOGIA.hb.md`
 
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 

@@ -57,7 +57,7 @@ PRIVATE_CUT_MARKER = re.compile(r'^##\s+DM notes', re.MULTILINE | re.IGNORECASE)
 
 # ------------------------------------------------------------------ curated prose
 OPENINGS = [
-    "Il vento di Mirtul porta ancora il sapore della cenere e del ferro. "
+    "Il vento d'estate della Valle porta ancora il sapore della cenere e del ferro. "
     "Ciò che è stato, resta inciso nella pietra — e nelle memorie di chi "
     "ha camminato fin qui.",
     "La notte cala sul Faerûn come un mantello vecchio, e le stelle, "
@@ -134,13 +134,12 @@ RUMOR_FOOTER = (
 )
 
 # --- Calendario di Harptos (Faerûn) --------------------------------------
-# La campagna conta i "Giorni di Marcia". L'ancora sotto fissa l'equivalente
-# del Giorno 1. Decisione DM 2026-07-12: "il Giorno 1 coincide con l'inizio
-# della campagna RHoD". [INFERRED — needs DM confirmation sul giorno esatto]:
-# state.md §0 (che vince) data l'oggi a Mirtul 1372 col Giorno di Marcia 19,
-# quindi l'ancora coerente è 1 Mirtul 1372 (la nota "Flamerule — Campaign
-# Start" in house-rules.md contraddice state.md §0 e resta da riconciliare).
-MARCH_DAY1_HARPTOS: "tuple[str, int] | None" = ("Mirtul", 1)
+# La campagna conta i "Giorni di Marcia". Ancora CONFERMATA dal DM
+# (2026-07-12): Giorno 1 = inizio campagna RHoD, in PIENA ESTATE nella
+# Valle di Channath → **1 Flamerule 1372** (coerente con house-rules.md
+# "Flamerule — Campaign Start"; il vecchio "Mirtul" di state.md era il
+# dato errato, corretto con changelog §8). Day 42 (Rethmar) = 11 Eleasis.
+MARCH_DAY1_HARPTOS: "tuple[str, int] | None" = ("Flamerule", 1)
 HARPTOS_MONTHS = ["Hammer", "Alturiak", "Ches", "Tarsakh", "Mirtul",
                   "Kythorn", "Flamerule", "Eleasis", "Eleint",
                   "Marpenoth", "Uktar", "Nightal"]

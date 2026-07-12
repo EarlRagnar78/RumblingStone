@@ -147,6 +147,11 @@ def cmd_handout(args: argparse.Namespace, extra: list[str]) -> int:
     return run("hype_homebrew.py", *ho, *extra)
 
 
+def cmd_hype(args: argparse.Namespace, extra: list[str]) -> int:
+    # Homebrewery self-hosted (K-B4/K-D5): wrapper sui comandi ufficiali
+    return run(f"homebrew-local/{args.action}.sh", *extra)
+
+
 def cmd_skills(args: argparse.Namespace, extra: list[str]) -> int:
     if args.action == "sync":
         return run("sync-skills.sh", *extra)
@@ -230,6 +235,10 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--da", help="file markdown sorgente col contenuto")
     p.add_argument("--out", help="file di output (default: accanto al sorgente)")
 
+    p = sub.add_parser("hype", help="Homebrewery self-hosted locale (editor 2 pannelli su localhost:8000)")
+    p.add_argument("action", choices=["setup", "start"],
+                   help="setup = clone+npm install (comandi ufficiali); start = npm start")
+
     p = sub.add_parser("skills", help="pipeline skill multi-agente")
     p.add_argument("action", choices=["build", "sync"])
     p.add_argument("--no-deploy", action="store_true")
@@ -240,7 +249,8 @@ def main(argv: list[str] | None = None) -> int:
     args, extra = ap.parse_known_args(argv)
     return {
         "prep": cmd_prep, "maps": cmd_maps, "post": cmd_post, "recap": cmd_recap,
-        "handout": cmd_handout, "skills": cmd_skills, "doctor": cmd_doctor,
+        "handout": cmd_handout, "hype": cmd_hype, "skills": cmd_skills,
+        "doctor": cmd_doctor,
     }[args.cmd](args, extra)
 
 

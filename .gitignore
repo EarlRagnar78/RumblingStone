@@ -329,3 +329,5 @@ node_modules/
 __pycache__/
 *.pyc
 .env
+# Homebrewery self-hosted (K-B4): clone di terze parti, non contenuto di campagna
+scripts/homebrew-local/homebrewery/

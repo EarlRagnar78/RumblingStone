@@ -18,8 +18,9 @@
 > mergiati). Le righe 🔁/🎨 qui sotto descrivono il **piano originale**; sono
 > tutte **FATTE**. La libreria è la fonte viva: `Bestiario/README.md` +
 > `scripts/monster_catalog.yaml`. Restano solo i punti **gated su conferma DM**
-> (non bloccanti): CR di Khorn e Durgan Tozzefort `[INFERRED]`, scarto dei token
-> inutilizzati, promozione di `validate_bestiario --rules` a gate.
+> (non bloccanti): scarto dei token inutilizzati, promozione di
+> `validate_bestiario --rules` a gate. ✅ Khorn e Durgan Tozzefort sono stati
+> **canonizzati dal DM (2026-07-12)** — non più `[INFERRED]`.
 
 ---
 
@@ -141,6 +142,8 @@
 > dossier d'arco 🔗 sono cross-linkati e verificati (zero numeri duplicati).
 > Il «Comandante Dauth» è ora **Durgan Tozzefort** (rinominato da Borin per
 > non confliggere con Borin Ferropugno). La tabella resta come mappa storica.
+> ✅ **Khorn e Durgan Tozzefort canonizzati dal DM (2026-07-12)**: i flag
+> `[INFERRED]` sono stati rimossi da statblock, dossier e riferimenti d'arco.
 
 **Dossier senza statblock proprio** (lo statblock canonico vive in un file
 d'arco → 🔗 L3 cross-link, oppure manca → 🔁 L2):

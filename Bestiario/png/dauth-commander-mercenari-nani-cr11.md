@@ -2,7 +2,7 @@
 
 **Faction**: dauth-defender | **Role**: leader-commander | **Environment**: mountain,urban | **CR**: 11
 **Source**: AP + Fighter 11 (Dwarf) → STATBLOCCHI-EPICI §7
-**Status**: inferred — base template only; DM should finalize exact stats at the table.
+**Status**: accepted — Durgan Tozzefort, canonizzato dal DM 2026-07-12 (era `[INFERRED]`).
 
 ## Summary
 

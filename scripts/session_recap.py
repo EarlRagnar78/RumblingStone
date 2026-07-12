@@ -134,10 +134,13 @@ RUMOR_FOOTER = (
 )
 
 # --- Calendario di Harptos (Faerûn) --------------------------------------
-# La campagna conta i "Giorni di Marcia". Per ancorarli al calendario di
-# Harptos imposta l'equivalente del Giorno 1 (es. ("Tarsakh", 24)):
-# finché resta None si mostra solo "Giorno N della Marcia" + mese da state.md.
-MARCH_DAY1_HARPTOS: "tuple[str, int] | None" = None
+# La campagna conta i "Giorni di Marcia". L'ancora sotto fissa l'equivalente
+# del Giorno 1. Decisione DM 2026-07-12: "il Giorno 1 coincide con l'inizio
+# della campagna RHoD". [INFERRED — needs DM confirmation sul giorno esatto]:
+# state.md §0 (che vince) data l'oggi a Mirtul 1372 col Giorno di Marcia 19,
+# quindi l'ancora coerente è 1 Mirtul 1372 (la nota "Flamerule — Campaign
+# Start" in house-rules.md contraddice state.md §0 e resta da riconciliare).
+MARCH_DAY1_HARPTOS: "tuple[str, int] | None" = ("Mirtul", 1)
 HARPTOS_MONTHS = ["Hammer", "Alturiak", "Ches", "Tarsakh", "Mirtul",
                   "Kythorn", "Flamerule", "Eleasis", "Eleint",
                   "Marpenoth", "Uktar", "Nightal"]

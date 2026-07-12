@@ -34,7 +34,8 @@ python3 scripts/dm.py doctor                      # environment diagnosis
 | `validate_bestiario.py` | CI gate for the `Bestiario/` library: standard structure, `-crN` kebab naming, required headers, filename↔header CR match, catalog in sync. With `--rules` (non-blocking warning in CI): PF1e CR benchmark on hp/AC, `[INFERRED]` flag policy, mandatory `Boost log:` | `Bestiario/{mostri,villain,png}/**/*.md` + `monster_catalog.yaml` | exit 0/1 + violation list (runs in `.github/workflows/ci.yml`) |
 | `suggest_encounter.py` | 3–5 encounter proposals for a target EL | catalog + filters (env, faction, role, size) | markdown tables with CR math + source file links |
 | `suggest_map.py` | Pick a 5ft-square tactical grid (ASCII) | `scripts/map_templates/*.yaml` (11 included) | ready-to-print grid + legend + tactical notes |
-| `render_map_svg.py` | Render the arcs' emoji-grid maps to print-quality SVG (uniform palette, coordinates, scale bar, legend) | any `*MAPPE*`/`*Ultra-Clear*` markdown with emoji grids | `rendered/*.svg` next to the source (generated artifacts — the markdown stays the master) |
+| `render_map_svg.py` | Render the arcs' emoji-grid maps to print-quality SVG in the **"pergamena" illustrated style** (procedural terrain textures, inked boundaries, cast shadows, VTT-style tokens, coordinates, scale bar, legend — all deterministic, no external assets) | any `*MAPPE*`/`*Ultra-Clear*` markdown with emoji grids | `rendered/*.svg` next to the source (generated artifacts — the markdown stays the master) |
+| `import_watabou.py` | Convert a Watabou One Page Dungeon JSON export into an emoji-grid map master (template-conformant, ready for `render_map_svg.py`) | JSON exported from https://watabou.github.io/dungeon.html | a new `*.md` map master with grid + companion skeleton |
 | `update_xp.py` | Cumulative XP ledger per PC | `campaign/sessions/*.md` `## XP awarded` | `campaign/pg/xp-ledger.md` (auto) |
 | `state_sync.py` | Propose edits to `campaign/state.md` after a session | `## World events triggered` in session logs | markdown diff report (DM applies manually) |
 | `session_recap.py` | Spoiler-safe Italian recap for players (R.A. Salvatore tone) | last N session logs + state.md §0 public rows | `campaign/recaps/recap-YYYY-MM-DD.md` (+ optional PDF) |
@@ -60,6 +61,30 @@ python3 scripts/dm.py recap --hype                                    # 1-2 days
   existing one). `suggest_map.py` picks it up on next run.
 - **New trigger for state_sync**: edit the `TRIGGERS` regex list at the top
   of `scripts/state_sync.py`.
+
+## Mappe di qualità professionale (stile "pergamena")
+
+`render_map_svg.py` produce battle map illustrate in stile handout
+professionale (benchmark: le mappe ufficiali di *Red Hand of Doom* e gli
+export di Dungeon Scrawl/DungeonDraft). Tutta la grafica è **procedurale**
+(pattern e filtri SVG): niente asset esterni, niente vincoli di licenza,
+output byte-deterministico (requisito di `validate_maps.py` in CI).
+
+La pipeline completa (vedi `plans/RICERCA-GENERATORI-MAPPE-QUALITA-RHOD.md`
+per il razionale e le alternative valutate):
+
+1. **Mappe esistenti**: la griglia emoji resta il MASTER; ogni modifica al
+   markdown si rigenera con `python3 scripts/render_map_svg.py <file.md>`.
+2. **Nuovi dungeon**: generare il layout su
+   https://watabou.github.io/dungeon.html → Export JSON →
+   `python3 scripts/import_watabou.py dungeon.json -o <arco>/NUOVA-MAPPA.md`
+   → adattare la griglia e compilare i companion → renderizzare.
+3. **Mappe regionali** (Dalelands/Cannath Vale): Azgaar Fantasy Map
+   Generator (https://azgaar.github.io/Fantasy-Map-Generator/, MIT) —
+   committare il file `.map` come master + l'export SVG/PNG.
+4. **Città** (Rethmar, Palio): Medieval Fantasy City Generator
+   (https://watabou.github.io/city-generator/) — committare l'export SVG
+   annotando il **seed** nell'URL per la rigenerazione.
 
 ## Design rules
 

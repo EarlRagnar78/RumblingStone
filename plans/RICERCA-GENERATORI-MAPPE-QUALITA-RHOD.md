@@ -10,6 +10,18 @@
 > `PIANO-UPGRADE-QUALITA-MAPPE`. Nessun lotto, nessuna checklist.
 >
 > Engine: Fable 5 · Sessione: 2026-07-12.
+>
+> **STATO ATTUAZIONE (stessa PR, 2026-07-12)**: la raccomandazione §3 è
+> stata implementata nella variante 100% procedurale/non-commerciale:
+> **Fase 1 ✅** — `scripts/render_map_svg.py` riscritto in stile "pergamena"
+> (texture procedurali, bordi inchiostrati, ombre, token con gradiente;
+> zero asset esterni, deterministico) e tutti i 16 SVG committati
+> rigenerati; **Fase 2 ✅** — `scripts/import_watabou.py` (JSON One Page
+> Dungeon → griglia emoji conforme al template); **Fase 3 📖** — workflow
+> Azgaar/City Generator documentato in `scripts/README-automation.md`
+> (§ Mappe di qualità professionale). L'opzione asset CC BY-NC (2MTT) resta
+> descritta sotto ma NON è stata adottata: lo stile procedurale la rende
+> superflua e senza vincoli.
 
 ---
 

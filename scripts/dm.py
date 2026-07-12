@@ -148,8 +148,10 @@ def cmd_handout(args: argparse.Namespace, extra: list[str]) -> int:
 
 
 def cmd_hype(args: argparse.Namespace, extra: list[str]) -> int:
-    # Homebrewery self-hosted (K-B4/K-D5): wrapper sui comandi ufficiali
-    return run(f"homebrew-local/{args.action}.sh", *extra)
+    # Homebrewery self-hosted (K-B4/K-B5, K-D5): wrapper sui comandi ufficiali
+    script = {"setup": "setup.sh", "start": "start.sh",
+              "docker": "setup-docker.sh", "docker-stop": "stop-docker.sh"}[args.action]
+    return run(f"homebrew-local/{script}", *extra)
 
 
 def cmd_skills(args: argparse.Namespace, extra: list[str]) -> int:
@@ -236,8 +238,9 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--out", help="file di output (default: accanto al sorgente)")
 
     p = sub.add_parser("hype", help="Homebrewery self-hosted locale (editor 2 pannelli su localhost:8000)")
-    p.add_argument("action", choices=["setup", "start"],
-                   help="setup = clone+npm install (comandi ufficiali); start = npm start")
+    p.add_argument("action", choices=["setup", "start", "docker", "docker-stop"],
+                   help="setup/start = via nativa (node+mongo); docker = container "
+                        "chiavi-in-mano col compose ufficiale; docker-stop = ferma i container")
 
     p = sub.add_parser("skills", help="pipeline skill multi-agente")
     p.add_argument("action", choices=["build", "sync"])

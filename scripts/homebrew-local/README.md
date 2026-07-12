@@ -57,17 +57,57 @@ Il clone finisce in `scripts/homebrew-local/homebrewery/` (gitignorato:
 
 ---
 
-## Via B — Docker (dal README.DOCKER.md ufficiale)
+## Via B — Container Docker, chiavi in mano (CONSIGLIATA: un comando solo)
 
-Per chi preferisce i container (evita l'installazione manuale di MongoDB).
+> Il repo ufficiale include un **`docker-compose.yml` con entrambi i
+> servizi** (MongoDB + Homebrewery, connessione già cablata via
+> `MONGODB_URI: mongodb://mongodb/homebrewery`): non serve installare
+> né Node né MongoDB sul PC — solo Docker.
+
+### B.0 — Da zero: installare Docker (una volta sola)
+
+- **Linux** (Docker Engine): <https://docs.docker.com/engine/install/>
+  (scegli la tua distro: Ubuntu, Debian, Fedora, Arch, ...).
+  Post-install raccomandati dal progetto: [uso senza root](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user)
+  e [avvio al boot](https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot).
+- **Windows / macOS** (Docker Desktop): <https://docs.docker.com/desktop/>
+  (dal pannello di Docker Desktop puoi impostare l'avvio automatico).
+
+Verifica: `docker --version` e `docker compose version` devono rispondere.
+
+### B.1 — Creare e avviare il container (il nostro wrapper, 1 comando)
 
 ```bash
-# 1. clona e prepara l'immagine
-git clone https://github.com/naturalcrit/homebrewery.git
-cd homebrewery
+python3 scripts/dm.py hype docker
 ```
 
-Crea/adatta `config/docker.json` (template ufficiale):
+Fa, nell'ordine (tutti passi della procedura ufficiale):
+1. clona `https://github.com/naturalcrit/homebrewery.git` in
+   `scripts/homebrew-local/homebrewery/` (se non c'è già);
+2. scrive `config/docker.json` col **template ufficiale** del
+   README.DOCKER.md (richiesto dal Dockerfile; la `mongodb_uri` del
+   template è sovrascritta dalla env del compose ufficiale);
+3. `docker compose up -d --build` → costruisce l'immagine e avvia
+   **entrambi** i container (app + database) in background, con volume
+   `mongodata` persistente per i tuoi brew.
+
+Al termine: **apri <http://localhost:8000>** — editor a due pannelli.
+
+Gestione:
+
+```bash
+python3 scripts/dm.py hype docker-stop   # ferma i container (i brew restano)
+python3 scripts/dm.py hype docker        # ri-avvia (idempotente)
+# log:   (da scripts/homebrew-local/homebrewery/)  docker compose logs -f homebrewery
+```
+
+### B.2 — Gli stessi passi a mano (comandi ufficiali, senza wrapper)
+
+```bash
+git clone https://github.com/naturalcrit/homebrewery.git
+cd homebrewery
+# crea config/docker.json col template ufficiale:
+```
 
 ```json
 {
@@ -80,24 +120,24 @@ Crea/adatta `config/docker.json` (template ufficiale):
 ```
 
 ```bash
-docker-compose build homebrewery
-
-# 2. container MongoDB
-docker run --name homebrewery-mongodb -d --restart unless-stopped \
-  -v mongodata:/data/db -p 27017:27017 mongo:latest
-
-# 3. container Homebrewery (dalla cartella homebrewery/)
-docker run --name homebrewery-app -d --restart unless-stopped \
-  -e NODE_ENV=docker \
-  -v $(pwd)/config/docker.json:/usr/src/app/config/docker.json \
-  -p 8000:8000 docker.io/library/homebrewery:latest
+docker compose up -d --build   # → http://localhost:8000
 ```
 
-Note ufficiali: su CPU vecchie senza AVX usare `bitnami/mongo:latest`;
-su ARM (es. Raspberry Pi) usare `arm64v8/mongo:4.4`; da CMD di Windows
-sostituire `$(pwd)` con `%cd%`. Per aggiornare: `docker rm -f
-homebrewery-app`, poi `git pull`, `docker-compose build homebrewery` e
-rilanciare il `docker run` dell'app.
+In alternativa il README.DOCKER.md documenta anche i container separati
+(`docker-compose build homebrewery` + due `docker run` distinti per
+mongo e app): utile se vuoi `--restart unless-stopped` gestito a mano.
+
+### B.3 — Note ufficiali (casi particolari)
+
+- CPU vecchie **senza AVX**: MongoDB 5+ non parte → usare l'immagine
+  `bitnami/mongo:latest` al posto di `mongo:latest`.
+- **ARM** (es. Raspberry Pi): usare `arm64v8/mongo:4.4`.
+- Da **CMD di Windows** `$(pwd)` non è valido: usare `%cd%` nei
+  `docker run` manuali (col compose il problema non si pone).
+- **Aggiornamento** (procedura ufficiale): dentro il clone
+  `git pull`, poi ricostruire (`docker compose up -d --build`; o
+  `docker rm -f homebrewery-app` + `docker-compose build homebrewery` +
+  rilancio, nella variante a container separati).
 
 ---
 

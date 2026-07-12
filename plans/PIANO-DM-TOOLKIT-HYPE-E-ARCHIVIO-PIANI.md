@@ -342,8 +342,9 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
 - [x] **K-B7** *(manutenzione post-collaudo, 2026-07-12)*: **Dossier del DM**
   (`dm.py dossier` → `campaign/DM-DOSSIER.hb.md`, SOLO DM: tutti i fili da
   state.md con cornici stile RHoD) + ancora Harptos fissata a **1 Mirtul
-  1372** (= inizio campagna RHoD, decisione DM; [INFERRED] sul giorno
-  esatto — la nota Flamerule di house-rules.md contraddice state.md §0)
+  1372** → **AGGIORNATA in K-B8 (2026-07-12): 1 Flamerule 1372**, DM ha
+  confermato la piena estate nella Valle di Channath (house-rules aveva
+  ragione; state.md corretto con changelog §8 — [INFERRED] risolto)
 
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 

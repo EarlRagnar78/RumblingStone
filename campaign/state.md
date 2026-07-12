@@ -13,7 +13,7 @@
 ---
 
 **Last updated:** 2026-05-01 (session marker — DM updates)
-**In-world date:** Mirtul, 1372 DR
+**In-world date:** Flamerule, 1372 DR (piena estate — Valle di Channath; Giorno di Marcia 19 = 19 Flamerule)
 **Party APL:** 13 (ARC-07 D8 — livello reale già raggiunto durante l'Arco 07)
 **Sessions completed:** Arco 07 **in corso** al tavolo — giocati: Sala
 della Forgia Eterna (P1-P2), Piano del Fuoco con Topazio recuperato (P3),
@@ -1290,4 +1290,11 @@ entries — they become campaign history.
             §7, STATBLOCCHI-EPICI §7, PIANO-REVISIONE-ARC09, censimento,
             piano libreria). La riga changelog del 2026-07-02 conserva il
             nome storico (append-only, non riscritta).
+2026-07-12  CALENDARIO (decisione DM): l'inizio campagna RHoD è in PIENA
+            ESTATE nella Valle di Channath → In-world date corretta da
+            "Mirtul" a "Flamerule 1372" (conferma la nota "Flamerule —
+            Campaign Start" di house-rules.md). Ancora di conversione:
+            Giorno di Marcia 1 = 1 Flamerule 1372 (Day 19 = 19 Flamerule;
+            Day 42/Rethmar = 11 Eleasis). Applicata in scripts/session_recap.py
+            (MARCH_DAY1_HARPTOS); le date nei recap/dossier ora sono Harptos.
 ```

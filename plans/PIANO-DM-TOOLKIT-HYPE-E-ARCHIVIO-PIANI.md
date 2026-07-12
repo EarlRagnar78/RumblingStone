@@ -339,6 +339,11 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   futuri → sussurri §V; **Giorno di Marcia** in testata (ancora Harptos
   configurabile: `MARCH_DAY1_HARPTOS` in session_recap.py) e cronologia
   handout auto-generata `campaign/recaps/homebrew/00-CRONOLOGIA.hb.md`
+- [x] **K-B7** *(manutenzione post-collaudo, 2026-07-12)*: **Dossier del DM**
+  (`dm.py dossier` → `campaign/DM-DOSSIER.hb.md`, SOLO DM: tutti i fili da
+  state.md con cornici stile RHoD) + ancora Harptos fissata a **1 Mirtul
+  1372** (= inizio campagna RHoD, decisione DM; [INFERRED] sul giorno
+  esatto — la nota Flamerule di house-rules.md contraddice state.md §0)
 
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 

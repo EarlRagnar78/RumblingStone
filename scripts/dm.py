@@ -154,6 +154,11 @@ def cmd_hype(args: argparse.Namespace, extra: list[str]) -> int:
     return run(f"homebrew-local/{script}", *extra)
 
 
+def cmd_dossier(args: argparse.Namespace, extra: list[str]) -> int:
+    # Dossier DM (K-B7): fotografia di state.md in veste Homebrewery, SOLO DM
+    return run("dm_dossier.py", *extra)
+
+
 def cmd_skills(args: argparse.Namespace, extra: list[str]) -> int:
     if args.action == "sync":
         return run("sync-skills.sh", *extra)
@@ -242,6 +247,8 @@ def main(argv: list[str] | None = None) -> int:
                    help="setup/start = via nativa (node+mongo); docker = container "
                         "chiavi-in-mano col compose ufficiale; docker-stop = ferma i container")
 
+    sub.add_parser("dossier", help="⚠️ SOLO DM: dossier di tutte le trame (da state.md) in Homebrewery V3")
+
     p = sub.add_parser("skills", help="pipeline skill multi-agente")
     p.add_argument("action", choices=["build", "sync"])
     p.add_argument("--no-deploy", action="store_true")
@@ -252,8 +259,8 @@ def main(argv: list[str] | None = None) -> int:
     args, extra = ap.parse_known_args(argv)
     return {
         "prep": cmd_prep, "maps": cmd_maps, "post": cmd_post, "recap": cmd_recap,
-        "handout": cmd_handout, "hype": cmd_hype, "skills": cmd_skills,
-        "doctor": cmd_doctor,
+        "handout": cmd_handout, "hype": cmd_hype, "dossier": cmd_dossier,
+        "skills": cmd_skills, "doctor": cmd_doctor,
     }[args.cmd](args, extra)
 
 

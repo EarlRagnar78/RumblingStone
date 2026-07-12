@@ -14,7 +14,7 @@ in quest'ordine.*
 
 | # | Data reale | Tempo in-mondo | Mese (Faerûn) | File |
 |:-:|:--|:--|:--|:--|
-| 1 | 2026-05-05 | Giorno 20 | Mirtul, 1372 DR | `recap-2026-05-05.hb.md` |
+| 1 | 2026-05-05 | 20 Mirtul | Mirtul, 1372 DR | `recap-2026-05-05.hb.md` |
 
 ## Materiale senza data (si consegna quando i fascicoli lo dicono)
 

@@ -207,7 +207,8 @@ def update_chronology() -> Path:
         rows.append((real, giorno, mese, f.name))
 
     extra = [p for p in sorted(REPO.rglob("*.hb.md"))
-             if "templates" not in p.parts and p.parent != outdir]
+             if "templates" not in p.parts and p.parent != outdir
+             and not p.name.startswith("DM-")]  # il dossier DM non è un handout
 
     lines = [
         "<!-- Auto-generated — do not edit by hand.",

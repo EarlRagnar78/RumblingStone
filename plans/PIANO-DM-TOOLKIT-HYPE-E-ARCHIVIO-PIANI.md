@@ -239,6 +239,22 @@ principale, non la quantità (la copertura è già buona):
   prova end-to-end sul PC del DM (Node/Mongo non installabili nel
   container di lavoro — network policy e ambiente effimero).
 
+### K-B5. Container Docker chiavi-in-mano (richiesta DM 2026-07-12)
+- **Evidenza**: il DM vuole "provare il container non appena deployato",
+  con TUTTE le istruzioni per crearlo in locale.
+- **Azione**: il repo ufficiale naturalcrit include `docker-compose.yml`
+  con **entrambi** i servizi (mongodb + homebrewery, `MONGODB_URI`
+  cablata) — verificato scaricando compose e Dockerfile il 2026-07-12.
+  Quindi: `setup-docker.sh` (check Docker/Compose → clone → scrive
+  `config/docker.json` col template ufficiale → `docker compose up -d
+  --build`) e `stop-docker.sh`; sottocomandi `dm.py hype docker` /
+  `docker-stop`; guida §Via B riscritta "da zero al container" (link
+  ufficiali d'installazione Docker, gestione, log, update, note AVX/ARM).
+- **Accettazione**: nel container di lavoro lo script arriva fino al
+  confine del demone Docker (clone ✓, config ✓, invocazione compose ✓ —
+  il demone non può girare qui); sul PC del DM `dm.py hype docker` deve
+  portare a `http://localhost:8000` in un comando.
+
 ---
 
 ## §4 — LOTTO K-C: CLI unica `scripts/dm.py` (K-D1)
@@ -308,10 +324,10 @@ principale, non la quantità (la copertura è già buona):
 
 ## §7 — Checklist avanzamento (aggiornare a ogni lotto — regola d'oro 4)
 
-**Completamento piano: ~85%** (10/12 task; restano K-B0 gate DM e K-B3 a lotti; piano approvato col merge del PR #28, 2026-07-10)
+**Completamento piano: ~90%** (11,5/13 task; restano K-B0 gate DM e i fascicoli K-B3 successivi; piano approvato col merge del PR #28, 2026-07-10)
 
 - [x] **K-A** (archivio piani): [x] K-A1 · [x] K-A2 · [x] K-A3 · [x] K-A4 — **4/4 — LOTTO COMPLETO (2026-07-10)**
-- [ ] **K-B** (hype Homebrewery): [ ] K-B0 🔶 *gate DM* · [x] K-B1 (2026-07-10) · [x] K-B2 (2026-07-10; piloti canone: profezia Cronache + scheda Collana; piloti lettera/avviso-torneo in attesa di testo canone dal DM) · [ ] K-B3 (a lotti) · [x] K-B4 (2026-07-12, K-D5) — 3/5
+- [ ] **K-B** (hype Homebrewery): [ ] K-B0 🔶 *gate DM* · [x] K-B1 (2026-07-10) · [x] K-B2 (2026-07-10; piloti canone: profezia Cronache + scheda Collana; piloti lettera/avviso-torneo in attesa di testo canone dal DM) · [~] K-B3 🟡 a lotti (Fascicolo I P1-P2 ✅ 2026-07-12; prossimi: P3, P4, P3B, P5-P6) · [x] K-B4 (2026-07-12, K-D5) · [x] K-B5 (2026-07-12, container turnkey) — 4/6
 - [x] **K-C** (CLI dm.py): [x] K-C1 (2026-07-10) · [x] K-C2 (2026-07-10) · [x] K-C3 (2026-07-10) — **3/3 — LOTTO COMPLETO**
 - [x] K-D1…K-D4 — decisioni acquisite (2026-07-10)
 

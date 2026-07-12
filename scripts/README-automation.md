@@ -66,9 +66,15 @@ python3 scripts/dm.py recap --hype                                    # 1-2 days
 
 `render_map_svg.py` produce battle map illustrate in stile handout
 professionale (benchmark: le mappe ufficiali di *Red Hand of Doom* e gli
-export di Dungeon Scrawl/DungeonDraft). Tutta la grafica è **procedurale**
-(pattern e filtri SVG): niente asset esterni, niente vincoli di licenza,
-output byte-deterministico (requisito di `validate_maps.py` in CI).
+export di Dungeon Scrawl/DungeonDraft): regioni terreno **organiche**
+(contorni tracciati e smussati, niente scalini), occlusione ambientale
+accanto ai muri, variazione tonale anti-ripetizione, e una **libreria di
+prop vettoriali originali** (porta, letto, cassa, braciere, albero,
+teschio…) al posto degli emoji — disegnati in-house seguendo le
+convenzioni della cartografia professionale, mai ricalcati da asset
+altrui. Tutta la grafica è **procedurale** (pattern, filtri e simboli
+SVG): niente asset esterni, niente vincoli di licenza, output
+byte-deterministico (requisito di `validate_maps.py` in CI).
 
 La pipeline completa (vedi `plans/RICERCA-GENERATORI-MAPPE-QUALITA-RHOD.md`
 per il razionale e le alternative valutate):

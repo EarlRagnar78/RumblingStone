@@ -22,6 +22,16 @@
 > (§ Mappe di qualità professionale). L'opzione asset CC BY-NC (2MTT) resta
 > descritta sotto ma NON è stata adottata: lo stile procedurale la rende
 > superflua e senza vincoli.
+>
+> **Round 2 (stessa PR)**: chiusura del gap residuo vs mappe Paizo/WotC —
+> regioni terreno organiche (tracing dei contorni + corner cutting),
+> occlusione ambientale accanto ai muri, mottling tonale anti-ripetizione,
+> **libreria di ~20 prop vettoriali originali** al posto degli emoji e
+> legenda raggruppata per categoria. Nota licenze: i prop sono disegnati
+> da zero ispirandosi alle *convenzioni* della cartografia professionale
+> (ombre, ink outline, palette) — lo stile non è protetto da copyright,
+> i file altrui sì: mai ricalcare o derivare da asset Forgotten
+> Adventures/2MTT.
 
 ---
 

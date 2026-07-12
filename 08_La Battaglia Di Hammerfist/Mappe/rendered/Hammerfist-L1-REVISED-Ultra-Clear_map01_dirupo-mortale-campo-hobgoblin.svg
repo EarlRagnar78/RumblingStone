@@ -3,10 +3,15 @@
 <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="11" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0.36 0 0 0 0 0.28 0 0 0 0 0.16 0 0 0 0.18 0"/><feComposite operator="over" in2="SourceGraphic"/></filter>
 <filter id="rough" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.6"/></filter>
 <filter id="softblur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.6"/></filter>
+<filter id="aoblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3.2"/></filter>
+<filter id="mottle" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" seed="4" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0.24 0 0 0 0 0.18 0 0 0 0 0.10 0 0 0 0.5 0"/></filter>
 <radialGradient id="vign" cx="0.5" cy="0.45" r="0.75"><stop offset="0.62" stop-color="#3b2e1e" stop-opacity="0"/><stop offset="1" stop-color="#3b2e1e" stop-opacity="0.16"/></radialGradient>
+<clipPath id="clipgrid"><rect x="46" y="80" width="1120" height="1120"/></clipPath>
 <pattern id="t_earth" width="28" height="28" patternUnits="userSpaceOnUse"><rect width="28" height="28" fill="#b08d68"/><circle cx="6" cy="6" r="1.1" fill="#93714e"/><circle cx="18" cy="11" r="0.9" fill="#93714e"/><circle cx="24" cy="22" r="1.2" fill="#93714e"/><circle cx="9" cy="20" r="1" fill="#c8a87f"/><circle cx="22" cy="4" r="0.8" fill="#c8a87f"/><path d="M3 15q4-1.5 8 0" stroke="#a17d59" stroke-width="0.8" fill="none"/></pattern>
 <pattern id="t_floor" width="28" height="28" patternUnits="userSpaceOnUse"><rect width="28" height="28" fill="#d8cdb4"/><path d="M0 0.5h28M0 14.5h28M7 0.5v14M21 14.5v14" stroke="#b4a789" stroke-width="1"/><circle cx="15" cy="8" r="2.4" fill="#cfc3a9" fill-opacity="0.6"/><circle cx="6" cy="22" r="2" fill="#cfc3a9" fill-opacity="0.5"/></pattern>
 <pattern id="t_grass" width="28" height="28" patternUnits="userSpaceOnUse"><rect width="28" height="28" fill="#b3c489"/><path d="M5 21q1.5-4 3-5M8 21q0-3 2-5M20 8q1.5-2.5 3-3.5" stroke="#94a76a" stroke-width="0.9" stroke-opacity="0.6" fill="none" stroke-linecap="round"/><circle cx="14" cy="16" r="0.9" fill="#c5d29b"/><circle cx="24" cy="24" r="0.8" fill="#c5d29b"/><circle cx="4" cy="7" r="0.8" fill="#a3b573"/><circle cx="25" cy="13" r="0.7" fill="#a3b573"/></pattern>
+<symbol id="pr_fire" viewBox="0 0 28 28"><path d="M14 4c4 5 7 8 7 13a7 7 0 0 1-14 0c0-5 3-8 7-13z" fill="#e2762d" stroke="#8a3c14" stroke-width="1"/><path d="M14 9c2.5 3.5 4.5 5.5 4.5 8.5a4.5 4.5 0 0 1-9 0c0-3 2-5 4.5-8.5z" fill="#f2a93b"/><path d="M14 14c1.3 1.8 2.3 2.8 2.3 4.4a2.3 2.3 0 0 1-4.6 0c0-1.6 1-2.6 2.3-4.4z" fill="#f8d778"/></symbol>
+<symbol id="pr_tower" viewBox="0 0 28 28"><circle cx="14" cy="14" r="10" fill="#8a8172" stroke="#2f2415" stroke-width="1.2"/><circle cx="14" cy="14" r="8.4" fill="none" stroke="#5f574a" stroke-width="2.4" stroke-dasharray="3.3 2.4"/><circle cx="14" cy="14" r="5.2" fill="#6f675a"/><circle cx="14" cy="14" r="2" fill="#3a332a"/></symbol>
 <radialGradient id="g_1d6fd8" cx="0.35" cy="0.3" r="0.8"><stop offset="0" stop-color="#83b0ea"/><stop offset="0.55" stop-color="#1d6fd8"/><stop offset="1" stop-color="#13488c"/></radialGradient>
 <radialGradient id="g_d62828" cx="0.35" cy="0.3" r="0.8"><stop offset="0" stop-color="#e88989"/><stop offset="0.55" stop-color="#d62828"/><stop offset="1" stop-color="#8b1a1a"/></radialGradient>
 </defs>
@@ -17,10 +22,15 @@
 <text x="46" y="34" font-size="19" font-weight="bold" fill="#3b2e1e" letter-spacing="0.5">Dirupo Mortale                                                               Campo Hobgoblin</text>
 <text x="46" y="51" font-size="11" font-style="italic" fill="#7a6a50">40×40 quadretti · scala 1,5 m/quadretto</text>
 <rect x="41" y="75" width="1130" height="1130" fill="#e6d9b8" stroke="#3b2e1e" stroke-width="1.6"/>
-<path d="M46 192h336v28h-336zM46 220h364v28h-364zM46 248h336v28h-336z" fill="url(#t_earth)"/>
-<path d="M606 612h140v28h-140zM606 640h140v28h-140zM606 668h140v28h-140zM606 696h140v28h-140zM606 724h140v28h-140zM606 752h140v28h-140zM606 780h140v28h-140zM606 808h140v28h-140zM634 836h140v28h-140z" fill="url(#t_floor)"/>
-<path d="M46 80h1120v28h-1120zM46 108h1120v28h-1120zM46 136h1120v28h-1120zM46 164h1120v28h-1120zM382 192h784v28h-784zM410 220h756v28h-756zM382 248h784v28h-784zM46 276h1120v28h-1120zM46 304h1120v28h-1120zM46 332h1120v28h-1120zM46 360h1120v28h-1120zM46 388h1120v28h-1120zM46 416h1120v28h-1120zM46 444h1120v28h-1120zM46 472h1120v28h-1120zM46 500h1120v28h-1120zM46 528h1120v28h-1120zM46 556h1120v28h-1120zM46 584h1120v28h-1120zM46 612h560v28h-560zM746 612h420v28h-420zM46 640h560v28h-560zM746 640h420v28h-420zM46 668h560v28h-560zM746 668h420v28h-420zM46 696h560v28h-560zM746 696h420v28h-420zM46 724h560v28h-560zM746 724h420v28h-420zM46 752h560v28h-560zM746 752h420v28h-420zM46 780h560v28h-560zM746 780h420v28h-420zM46 808h560v28h-560zM746 808h420v28h-420zM46 836h588v28h-588zM774 836h392v28h-392zM46 864h1120v28h-1120zM46 892h1120v28h-1120zM46 920h1120v28h-1120zM46 948h1120v28h-1120zM46 976h1120v28h-1120zM46 1004h1120v28h-1120zM46 1032h1120v28h-1120zM46 1060h1120v28h-1120zM46 1088h1120v28h-1120zM46 1116h1120v28h-1120zM46 1144h1120v28h-1120zM46 1172h1120v28h-1120z" fill="url(#t_grass)"/>
-<path d="M46 80v1120M382 192v28M382 248v28M410 220v28M606 612v224M634 836v28M746 612v224M774 836v28M1166 80v1120M46 80h1120M46 192h336M382 220h28M382 248h28M46 276h336M606 612h140M606 836h28M746 836h28M634 864h140M46 1200h1120" fill="none" stroke="#7a6a50" stroke-width="0.9" opacity="0.5" stroke-linecap="round" filter="url(#rough)"/>
+<g clip-path="url(#clipgrid)">
+<path d="M46 95.19L49.81 85.99L51.99 83.81L61.19 80L1150.81 80L1160.01 83.81L1162.19 85.99L1166 95.19L1166 1184.81L1162.19 1194.01L1160.01 1196.19L1150.81 1200L61.19 1200L51.99 1196.19L49.81 1194.01L46 1184.81L46 291.19L49.81 281.99L51.99 279.81L61.19 276L366.81 276L376.01 272.19L378.19 270.01L382 262.42L382 261.58L385.81 253.99L387.99 251.81L395.58 248L396.42 248L404.01 244.19L406.19 242.01L410 234.42L410 233.58L406.19 225.99L404.01 223.81L396.42 220L395.58 220L387.99 216.19L385.81 214.01L382 206.42L382 205.58L378.19 197.99L376.01 195.81L366.81 192L61.19 192L51.99 188.19L49.81 186.01L46 176.81ZM621.19 612L611.99 615.81L609.81 617.99L606 627.19L606 820.81L609.81 830.01L611.99 832.19L619.58 836L620.42 836L628.01 839.81L630.19 841.99L634 849.58L634 850.42L637.81 858.01L639.99 860.19L649.19 864L758.81 864L768.01 860.19L770.19 858.01L774 850.42L774 849.58L770.19 841.99L768.01 839.81L760.42 836L759.58 836L751.99 832.19L749.81 830.01L746 820.81L746 627.19L742.19 617.99L740.01 615.81L730.81 612Z" fill="url(#t_grass)" fill-rule="evenodd" stroke="url(#t_grass)" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M46 207.19L49.81 197.99L51.99 195.81L61.19 192L366.81 192L376.01 195.81L378.19 197.99L382 205.58L382 206.42L385.81 214.01L387.99 216.19L395.58 220L396.42 220L404.01 223.81L406.19 225.99L410 233.58L410 234.42L406.19 242.01L404.01 244.19L396.42 248L395.58 248L387.99 251.81L385.81 253.99L382 261.58L382 262.42L378.19 270.01L376.01 272.19L366.81 276L61.19 276L51.99 272.19L49.81 270.01L46 260.81Z" fill="url(#t_earth)" fill-rule="evenodd" stroke="url(#t_earth)" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M606 627.19L609.81 617.99L611.99 615.81L621.19 612L730.81 612L740.01 615.81L742.19 617.99L746 627.19L746 820.81L749.81 830.01L751.99 832.19L759.58 836L760.42 836L768.01 839.81L770.19 841.99L774 849.58L774 850.42L770.19 858.01L768.01 860.19L758.81 864L649.19 864L639.99 860.19L637.81 858.01L634 850.42L634 849.58L630.19 841.99L628.01 839.81L620.42 836L619.58 836L611.99 832.19L609.81 830.01L606 820.81Z" fill="url(#t_floor)" fill-rule="evenodd" stroke="url(#t_floor)" stroke-width="2.4" stroke-linejoin="round"/>
+<rect x="46" y="80" width="1120" height="1120" filter="url(#mottle)" opacity="0.35"/>
+<path d="M46 95.19L49.81 85.99L51.99 83.81L61.19 80L1150.81 80L1160.01 83.81L1162.19 85.99L1166 95.19L1166 1184.81L1162.19 1194.01L1160.01 1196.19L1150.81 1200L61.19 1200L51.99 1196.19L49.81 1194.01L46 1184.81L46 291.19L49.81 281.99L51.99 279.81L61.19 276L366.81 276L376.01 272.19L378.19 270.01L382 262.42L382 261.58L385.81 253.99L387.99 251.81L395.58 248L396.42 248L404.01 244.19L406.19 242.01L410 234.42L410 233.58L406.19 225.99L404.01 223.81L396.42 220L395.58 220L387.99 216.19L385.81 214.01L382 206.42L382 205.58L378.19 197.99L376.01 195.81L366.81 192L61.19 192L51.99 188.19L49.81 186.01L46 176.81ZM621.19 612L611.99 615.81L609.81 617.99L606 627.19L606 820.81L609.81 830.01L611.99 832.19L619.58 836L620.42 836L628.01 839.81L630.19 841.99L634 849.58L634 850.42L637.81 858.01L639.99 860.19L649.19 864L758.81 864L768.01 860.19L770.19 858.01L774 850.42L774 849.58L770.19 841.99L768.01 839.81L760.42 836L759.58 836L751.99 832.19L749.81 830.01L746 820.81L746 627.19L742.19 617.99L740.01 615.81L730.81 612Z" fill="none" stroke="#7a6a50" stroke-width="0.9" opacity="0.5" stroke-linejoin="round" filter="url(#rough)"/>
+<path d="M46 207.19L49.81 197.99L51.99 195.81L61.19 192L366.81 192L376.01 195.81L378.19 197.99L382 205.58L382 206.42L385.81 214.01L387.99 216.19L395.58 220L396.42 220L404.01 223.81L406.19 225.99L410 233.58L410 234.42L406.19 242.01L404.01 244.19L396.42 248L395.58 248L387.99 251.81L385.81 253.99L382 261.58L382 262.42L378.19 270.01L376.01 272.19L366.81 276L61.19 276L51.99 272.19L49.81 270.01L46 260.81Z" fill="none" stroke="#7a6a50" stroke-width="0.9" opacity="0.5" stroke-linejoin="round" filter="url(#rough)"/>
+<path d="M606 627.19L609.81 617.99L611.99 615.81L621.19 612L730.81 612L740.01 615.81L742.19 617.99L746 627.19L746 820.81L749.81 830.01L751.99 832.19L759.58 836L760.42 836L768.01 839.81L770.19 841.99L774 849.58L774 850.42L770.19 858.01L768.01 860.19L758.81 864L649.19 864L639.99 860.19L637.81 858.01L634 850.42L634 849.58L630.19 841.99L628.01 839.81L620.42 836L619.58 836L611.99 832.19L609.81 830.01L606 820.81Z" fill="none" stroke="#7a6a50" stroke-width="0.9" opacity="0.5" stroke-linejoin="round" filter="url(#rough)"/>
+</g>
 <path d="M74 80v1120M102 80v1120M130 80v1120M158 80v1120M214 80v1120M242 80v1120M270 80v1120M298 80v1120M354 80v1120M382 80v1120M410 80v1120M438 80v1120M494 80v1120M522 80v1120M550 80v1120M578 80v1120M634 80v1120M662 80v1120M690 80v1120M718 80v1120M774 80v1120M802 80v1120M830 80v1120M858 80v1120M914 80v1120M942 80v1120M970 80v1120M998 80v1120M1054 80v1120M1082 80v1120M1110 80v1120M1138 80v1120M46 108h1120M46 136h1120M46 164h1120M46 192h1120M46 248h1120M46 276h1120M46 304h1120M46 332h1120M46 388h1120M46 416h1120M46 444h1120M46 472h1120M46 528h1120M46 556h1120M46 584h1120M46 612h1120M46 668h1120M46 696h1120M46 724h1120M46 752h1120M46 808h1120M46 836h1120M46 864h1120M46 892h1120M46 948h1120M46 976h1120M46 1004h1120M46 1032h1120M46 1088h1120M46 1116h1120M46 1144h1120M46 1172h1120" stroke="#2e2313" stroke-width="0.5" opacity="0.16" fill="none"/>
 <path d="M46 80v1120M186 80v1120M326 80v1120M466 80v1120M606 80v1120M746 80v1120M886 80v1120M1026 80v1120M1166 80v1120M46 80h1120M46 220h1120M46 360h1120M46 500h1120M46 640h1120M46 780h1120M46 920h1120M46 1060h1120M46 1200h1120" stroke="#2e2313" stroke-width="1.2" opacity="0.28" fill="none"/>
 <ellipse cx="60.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
@@ -228,14 +238,14 @@
 <ellipse cx="313.4" cy="348.2" rx="10.36" ry="8.495199999999999" fill="#241c10" opacity="0.3"/>
 <circle cx="312.0" cy="346.0" r="10.36" fill="url(#g_1d6fd8)" stroke="#241c10" stroke-width="1.6"/>
 <circle cx="312.0" cy="346.0" r="7.959999999999999" fill="none" stroke="#ffffff" stroke-width="0.9" opacity="0.55"/>
-<ellipse cx="424.0" cy="352.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="424.0" y="352.0" font-size="17" text-anchor="middle">🗼</text>
-<ellipse cx="452.0" cy="352.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="452.0" y="352.0" font-size="17" text-anchor="middle">🗼</text>
-<ellipse cx="480.0" cy="352.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="480.0" y="352.0" font-size="17" text-anchor="middle">🗼</text>
-<ellipse cx="508.0" cy="352.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="508.0" y="352.0" font-size="17" text-anchor="middle">🗼</text>
+<ellipse cx="425.0" cy="349.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_tower" x="410" y="332" width="28" height="28"/>
+<ellipse cx="453.0" cy="349.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_tower" x="438" y="332" width="28" height="28"/>
+<ellipse cx="481.0" cy="349.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_tower" x="466" y="332" width="28" height="28"/>
+<ellipse cx="509.0" cy="349.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_tower" x="494" y="332" width="28" height="28"/>
 <ellipse cx="60.0" cy="380.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
 <text x="60.0" y="380.0" font-size="17" text-anchor="middle">⛰</text>
 <ellipse cx="88.0" cy="380.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
@@ -256,15 +266,15 @@
 <text x="284.0" y="380.0" font-size="17" text-anchor="middle">⛰</text>
 <ellipse cx="312.0" cy="380.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
 <text x="312.0" y="380.0" font-size="17" text-anchor="middle">⛰</text>
-<ellipse cx="424.0" cy="380.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="424.0" y="380.0" font-size="17" text-anchor="middle">🗼</text>
+<ellipse cx="425.0" cy="377.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_tower" x="410" y="360" width="28" height="28"/>
 <ellipse cx="453.4" cy="376.2" rx="10.36" ry="8.495199999999999" fill="#241c10" opacity="0.3"/>
 <circle cx="452.0" cy="374.0" r="10.36" fill="url(#g_1d6fd8)" stroke="#241c10" stroke-width="1.6"/>
 <circle cx="452.0" cy="374.0" r="7.959999999999999" fill="none" stroke="#ffffff" stroke-width="0.9" opacity="0.55"/>
-<ellipse cx="480.0" cy="380.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="480.0" y="380.0" font-size="17" text-anchor="middle">🗼</text>
-<ellipse cx="508.0" cy="380.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="508.0" y="380.0" font-size="17" text-anchor="middle">🗼</text>
+<ellipse cx="481.0" cy="377.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_tower" x="466" y="360" width="28" height="28"/>
+<ellipse cx="509.0" cy="377.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_tower" x="494" y="360" width="28" height="28"/>
 <ellipse cx="60.0" cy="408.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
 <text x="60.0" y="408.0" font-size="17" text-anchor="middle">⛰</text>
 <ellipse cx="88.0" cy="408.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
@@ -285,14 +295,14 @@
 <text x="284.0" y="408.0" font-size="17" text-anchor="middle">⛰</text>
 <ellipse cx="312.0" cy="408.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
 <text x="312.0" y="408.0" font-size="17" text-anchor="middle">⛰</text>
-<ellipse cx="424.0" cy="408.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="424.0" y="408.0" font-size="17" text-anchor="middle">🗼</text>
-<ellipse cx="452.0" cy="408.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="452.0" y="408.0" font-size="17" text-anchor="middle">🗼</text>
-<ellipse cx="480.0" cy="408.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="480.0" y="408.0" font-size="17" text-anchor="middle">🗼</text>
-<ellipse cx="508.0" cy="408.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="508.0" y="408.0" font-size="17" text-anchor="middle">🗼</text>
+<ellipse cx="425.0" cy="405.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_tower" x="410" y="388" width="28" height="28"/>
+<ellipse cx="453.0" cy="405.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_tower" x="438" y="388" width="28" height="28"/>
+<ellipse cx="481.0" cy="405.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_tower" x="466" y="388" width="28" height="28"/>
+<ellipse cx="509.0" cy="405.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_tower" x="494" y="388" width="28" height="28"/>
 <ellipse cx="60.0" cy="436.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
 <text x="60.0" y="436.0" font-size="17" text-anchor="middle">⛰</text>
 <ellipse cx="88.0" cy="436.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
@@ -313,14 +323,14 @@
 <text x="284.0" y="436.0" font-size="17" text-anchor="middle">⛰</text>
 <ellipse cx="312.0" cy="436.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
 <text x="312.0" y="436.0" font-size="17" text-anchor="middle">⛰</text>
-<ellipse cx="424.0" cy="436.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="424.0" y="436.0" font-size="17" text-anchor="middle">🗼</text>
-<ellipse cx="452.0" cy="436.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="452.0" y="436.0" font-size="17" text-anchor="middle">🗼</text>
-<ellipse cx="480.0" cy="436.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="480.0" y="436.0" font-size="17" text-anchor="middle">🗼</text>
-<ellipse cx="508.0" cy="436.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="508.0" y="436.0" font-size="17" text-anchor="middle">🗼</text>
+<ellipse cx="425.0" cy="433.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_tower" x="410" y="416" width="28" height="28"/>
+<ellipse cx="453.0" cy="433.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_tower" x="438" y="416" width="28" height="28"/>
+<ellipse cx="481.0" cy="433.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_tower" x="466" y="416" width="28" height="28"/>
+<ellipse cx="509.0" cy="433.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_tower" x="494" y="416" width="28" height="28"/>
 <ellipse cx="60.0" cy="464.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
 <text x="60.0" y="464.0" font-size="17" text-anchor="middle">⛰</text>
 <ellipse cx="88.0" cy="464.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
@@ -564,12 +574,12 @@
 <text x="284.0" y="772.0" font-size="17" text-anchor="middle">⛰</text>
 <ellipse cx="312.0" cy="772.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
 <text x="312.0" y="772.0" font-size="17" text-anchor="middle">⛰</text>
-<ellipse cx="648.0" cy="772.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="648.0" y="772.0" font-size="17" text-anchor="middle">🔥</text>
-<ellipse cx="676.0" cy="772.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="676.0" y="772.0" font-size="17" text-anchor="middle">🔥</text>
-<ellipse cx="704.0" cy="772.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="704.0" y="772.0" font-size="17" text-anchor="middle">🔥</text>
+<ellipse cx="649.0" cy="769.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_fire" x="634" y="752" width="28" height="28"/>
+<ellipse cx="677.0" cy="769.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_fire" x="662" y="752" width="28" height="28"/>
+<ellipse cx="705.0" cy="769.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_fire" x="690" y="752" width="28" height="28"/>
 <ellipse cx="60.0" cy="800.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
 <text x="60.0" y="800.0" font-size="17" text-anchor="middle">⛰</text>
 <ellipse cx="88.0" cy="800.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
@@ -590,13 +600,13 @@
 <text x="284.0" y="800.0" font-size="17" text-anchor="middle">⛰</text>
 <ellipse cx="312.0" cy="800.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
 <text x="312.0" y="800.0" font-size="17" text-anchor="middle">⛰</text>
-<ellipse cx="648.0" cy="800.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="648.0" y="800.0" font-size="17" text-anchor="middle">🔥</text>
+<ellipse cx="649.0" cy="797.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_fire" x="634" y="780" width="28" height="28"/>
 <ellipse cx="677.4" cy="796.2" rx="10.36" ry="8.495199999999999" fill="#241c10" opacity="0.3"/>
 <circle cx="676.0" cy="794.0" r="10.36" fill="url(#g_d62828)" stroke="#241c10" stroke-width="1.6"/>
 <circle cx="676.0" cy="794.0" r="7.959999999999999" fill="none" stroke="#ffffff" stroke-width="0.9" opacity="0.55"/>
-<ellipse cx="704.0" cy="800.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="704.0" y="800.0" font-size="17" text-anchor="middle">🔥</text>
+<ellipse cx="705.0" cy="797.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_fire" x="690" y="780" width="28" height="28"/>
 <ellipse cx="60.0" cy="828.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
 <text x="60.0" y="828.0" font-size="17" text-anchor="middle">⛰</text>
 <ellipse cx="88.0" cy="828.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
@@ -860,21 +870,21 @@
 <text x="196" y="1227" font-size="11" fill="#3b2e1e">7,5 m (5 quadretti)</text>
 <text x="46" y="1256" font-size="12" font-weight="bold" fill="#3b2e1e" letter-spacing="2">LEGENDA</text>
 <path d="M120 1252H1166" stroke="#7a6a50" stroke-width="0.7" opacity="0.7"/>
-<text x="46" y="1274" font-size="14">⛰</text>
-<text x="73" y="1274" font-size="11" fill="#3b2e1e">⛰ — (simbolo locale — vedi legenda del file sorgente)</text>
-<rect x="46" y="1284" width="19" height="15" fill="url(#t_floor)" stroke="#7a6a50" stroke-width="0.7"/>
-<text x="73" y="1296" font-size="11" fill="#3b2e1e">⬜ — Pavimento lavorato</text>
-<text x="46" y="1318" font-size="14">🔥</text>
-<text x="73" y="1318" font-size="11" fill="#3b2e1e">🔥 — Fuoco (1d6 fuoco/round)</text>
+<rect x="46" y="1262" width="19" height="15" fill="url(#t_floor)" stroke="#7a6a50" stroke-width="0.7"/>
+<text x="73" y="1274" font-size="11" fill="#3b2e1e">⬜ — Pavimento lavorato</text>
+<rect x="46" y="1284" width="19" height="15" fill="url(#t_grass)" stroke="#7a6a50" stroke-width="0.7"/>
+<text x="73" y="1296" font-size="11" fill="#3b2e1e">🟩 — Pianura / area aperta</text>
+<rect x="46" y="1306" width="19" height="15" fill="url(#t_earth)" stroke="#7a6a50" stroke-width="0.7"/>
+<text x="73" y="1318" font-size="11" fill="#3b2e1e">🟫 — Terra battuta / sentiero</text>
 <circle cx="55" cy="1336" r="7.5" fill="url(#g_d62828)" stroke="#241c10" stroke-width="1.2"/>
 <text x="73" y="1340" font-size="11" fill="#3b2e1e">🔴 — Nemico standard</text>
 <circle cx="55" cy="1358" r="7.5" fill="url(#g_1d6fd8)" stroke="#241c10" stroke-width="1.2"/>
 <text x="73" y="1362" font-size="11" fill="#3b2e1e">🔵 — PG / alleati</text>
-<text x="46" y="1384" font-size="14">🗼</text>
-<text x="73" y="1384" font-size="11" fill="#3b2e1e">🗼 — Torre / struttura alta</text>
-<rect x="46" y="1394" width="19" height="15" fill="url(#t_grass)" stroke="#7a6a50" stroke-width="0.7"/>
-<text x="73" y="1406" font-size="11" fill="#3b2e1e">🟩 — Pianura / area aperta</text>
-<rect x="46" y="1416" width="19" height="15" fill="url(#t_earth)" stroke="#7a6a50" stroke-width="0.7"/>
-<text x="73" y="1428" font-size="11" fill="#3b2e1e">🟫 — Terra battuta / sentiero</text>
+<use href="#pr_fire" x="46" y="1371" width="18" height="18"/>
+<text x="73" y="1384" font-size="11" fill="#3b2e1e">🔥 — Fuoco (1d6 fuoco/round)</text>
+<use href="#pr_tower" x="46" y="1393" width="18" height="18"/>
+<text x="73" y="1406" font-size="11" fill="#3b2e1e">🗼 — Torre / struttura alta</text>
+<text x="46" y="1428" font-size="14">⛰</text>
+<text x="73" y="1428" font-size="11" fill="#3b2e1e">⛰ — (simbolo locale — vedi legenda del file sorgente)</text>
 <text x="46" y="1460" font-size="9" font-style="italic" fill="#7a6a50">fonte: Hammerfist-L1-REVISED-Ultra-Clear.md · SVG generato da scripts/render_map_svg.py (stile pergamena) — non modificare a mano</text>
 </svg>

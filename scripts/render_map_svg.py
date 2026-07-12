@@ -7,14 +7,21 @@ The revised maps of ARC-07/08/09 (files `*Ultra-Clear*.md`, `*MAPPE*.md`,
 fenced code blocks whose rows start with a 2-digit row number followed by
 emoji cells (with or without spaces). This script parses those grids and
 emits print-quality SVG battlemaps in the "pergamena" (parchment) style:
-procedurally textured terrain, inked hand-drawn boundaries, cast shadows on
-walls/structures, VTT-style unit tokens, 1,5 m/quadretto grid, column
-letters / row numbers, scale bar and legend — the same map for every arc,
-in one style, regenerable whenever the markdown master changes.
 
-Everything is generated procedurally (SVG patterns + filters): no external
-image assets, no licensing constraints, byte-deterministic output (enforced
-by scripts/validate_maps.py in CI).
+  - procedurally textured terrain, merged into ORGANIC regions (traced cell
+    contours smoothed by corner-cutting, so caves and coasts curve instead
+    of stair-stepping);
+  - inked hand-drawn boundaries, ambient-occlusion darkening beside walls,
+    cast shadows of walls/structures, low-frequency tonal mottling that
+    breaks texture repetition;
+  - an ORIGINAL vector prop library (door, bed, crate, brazier, tree, …)
+    drawn in-house — icons render as illustrated objects, not emoji;
+  - VTT-style unit tokens, 1,5 m/quadretto grid, coordinates, scale bar
+    and a textured legend.
+
+Everything is generated procedurally (SVG patterns + filters + in-house
+symbols): no external image assets, no licensing constraints, and
+byte-deterministic output (enforced by scripts/validate_maps.py in CI).
 
 The markdown grid stays the MASTER (human-readable, diffable, table-usable);
 the SVG is a generated artifact. Never hand-edit the SVG.
@@ -31,6 +38,7 @@ one `<input-stem>_mapN_<slug>.svg` per map. Pure Python 3, no dependencies.
 from __future__ import annotations
 
 import argparse
+import math
 import re
 import sys
 import unicodedata
@@ -52,8 +60,10 @@ INK_SOFT = "#7a6a50"    # faded ink
 # (SUPPLEMENTO-P1C drow maps + Ultra-Clear maps ARC-07/08).
 # mode "fill":   textured terrain square ("pat" = procedural pattern id)
 # mode "unit":   colored token circle (radial gradient + ink ring)
-# mode "icon":   emoji glyph anchored by a ground blot; the underlying
-#                terrain is inherited from the nearest terrain cell
+# mode "icon":   illustrated in-house prop ("prop" = symbol id) anchored by
+#                a ground blot; the underlying terrain is inherited from the
+#                nearest terrain cell. Icons without a prop (local symbols)
+#                fall back to the emoji glyph.
 # ---------------------------------------------------------------------------
 SYMBOLS: dict[str, dict] = {
     # terrain (textured fills)
@@ -70,11 +80,11 @@ SYMBOLS: dict[str, dict] = {
     "⬜": {"mode": "fill", "pat": "t_floor", "fill": "#d8cdb4", "it": "Pavimento lavorato"},
     "🏰": {"mode": "fill", "pat": "t_wall", "fill": "#3f3931", "it": "Muro / roccia solida"},
     "🟪": {"mode": "fill", "pat": "t_pillar", "fill": "#8a67b5", "it": "Pilastro / mithral"},
-    "🪨": {"mode": "icon", "fill": "#ced4da", "it": "Rocce/macerie (copertura +4 CA, terreno difficile)"},
-    "🔥": {"mode": "icon", "fill": "#ffb4a2", "it": "Fuoco (1d6 fuoco/round)"},
-    "💥": {"mode": "icon", "fill": "#ffb4a2", "it": "Fiamme / esplosione"},
-    "💀": {"mode": "icon", "fill": "#e9ecef", "it": "Fossa / trappola"},
-    "🕳": {"mode": "icon", "fill": "#495057", "it": "Voragine / buco"},
+    "🪨": {"mode": "icon", "prop": "pr_rocks", "fill": "#ced4da", "it": "Rocce/macerie (copertura +4 CA, terreno difficile)"},
+    "🔥": {"mode": "icon", "prop": "pr_fire", "fill": "#ffb4a2", "it": "Fuoco (1d6 fuoco/round)"},
+    "💥": {"mode": "icon", "prop": "pr_boom", "fill": "#ffb4a2", "it": "Fiamme / esplosione"},
+    "💀": {"mode": "icon", "prop": "pr_skull", "fill": "#e9ecef", "it": "Fossa / trappola"},
+    "🕳": {"mode": "icon", "prop": "pr_pit", "fill": "#495057", "it": "Voragine / buco"},
     # units (tokens)
     "🔵": {"mode": "unit", "fill": "#1d6fd8", "it": "PG / alleati"},
     "🔴": {"mode": "unit", "fill": "#d62828", "it": "Nemico standard"},
@@ -82,29 +92,34 @@ SYMBOLS: dict[str, dict] = {
     "🟡": {"mode": "unit", "fill": "#f4b400", "it": "Incantatore nemico"},
     "🟢": {"mode": "unit", "fill": "#2b9348", "it": "Creatura evocata / bestia"},
     "🟣": {"mode": "unit", "fill": "#9d4edd", "it": "Creatura speciale"},
-    # specials (icons)
-    "🌳": {"mode": "icon", "fill": "#b7e4c7", "it": "Treant / creatura vegetale"},
-    "⭐": {"mode": "icon", "fill": "#fff3b0", "it": "Obiettivo primario"},
-    "🚪": {"mode": "icon", "fill": "#e6ccb2", "it": "Porta / ingresso"},
-    "🗼": {"mode": "icon", "fill": "#dee2e6", "it": "Torre / struttura alta"},
-    "🏺": {"mode": "icon", "fill": "#f8f9fa", "it": "Contenitore / bottino"},
-    "🔔": {"mode": "icon", "fill": "#fff3b0", "it": "Allarme / trappola sonora"},
-    "💎": {"mode": "icon", "fill": "#caf0f8", "it": "Tesoro / oggetto magico"},
-    "👑": {"mode": "icon", "fill": "#fff3b0", "it": "Trono / Corona"},
-    "🏮": {"mode": "icon", "fill": "#ffd166", "it": "Braciere / fonte di luce"},
-    "🪓": {"mode": "icon", "fill": "#e9ecef", "it": "Rastrelliera / armi"},
-    "🛏": {"mode": "icon", "fill": "#e9ecef", "it": "Giaciglio"},
-    "📦": {"mode": "icon", "fill": "#e6ccb2", "it": "Casse / rifornimenti"},
-    "🐴": {"mode": "icon", "fill": "#e6ccb2", "it": "Cavalcature"},
-    "🕸": {"mode": "icon", "fill": "#dee2e6", "it": "Ragnatele (terreno difficile)"},
-    "❄": {"mode": "icon", "fill": "#caf0f8", "it": "Ghiaccio"},
-    "⚡": {"mode": "icon", "fill": "#fff3b0", "it": "Energia / pericolo magico"},
-    "🌀": {"mode": "icon", "fill": "#caf0f8", "it": "Portale / vortice"},
+    # specials (illustrated props)
+    "🌳": {"mode": "icon", "prop": "pr_tree", "fill": "#b7e4c7", "it": "Treant / creatura vegetale"},
+    "⭐": {"mode": "icon", "prop": "pr_star", "fill": "#fff3b0", "it": "Obiettivo primario"},
+    "🚪": {"mode": "icon", "prop": "pr_door", "fill": "#e6ccb2", "it": "Porta / ingresso"},
+    "🗼": {"mode": "icon", "prop": "pr_tower", "fill": "#dee2e6", "it": "Torre / struttura alta"},
+    "🏺": {"mode": "icon", "prop": "pr_urn", "fill": "#f8f9fa", "it": "Contenitore / bottino"},
+    "🔔": {"mode": "icon", "prop": "pr_bell", "fill": "#fff3b0", "it": "Allarme / trappola sonora"},
+    "💎": {"mode": "icon", "prop": "pr_gem", "fill": "#caf0f8", "it": "Tesoro / oggetto magico"},
+    "👑": {"mode": "icon", "prop": "pr_crown", "fill": "#fff3b0", "it": "Trono / Corona"},
+    "🏮": {"mode": "icon", "prop": "pr_brazier", "fill": "#ffd166", "it": "Braciere / fonte di luce"},
+    "🪓": {"mode": "icon", "prop": "pr_rack", "fill": "#e9ecef", "it": "Rastrelliera / armi"},
+    "🛏": {"mode": "icon", "prop": "pr_bed", "fill": "#e9ecef", "it": "Giaciglio"},
+    "📦": {"mode": "icon", "prop": "pr_crate", "fill": "#e6ccb2", "it": "Casse / rifornimenti"},
+    "🐴": {"mode": "icon", "prop": "pr_horse", "fill": "#e6ccb2", "it": "Cavalcature"},
+    "🕸": {"mode": "icon", "prop": "pr_web", "fill": "#dee2e6", "it": "Ragnatele (terreno difficile)"},
+    "❄": {"mode": "icon", "prop": "pr_ice", "fill": "#caf0f8", "it": "Ghiaccio"},
+    "⚡": {"mode": "icon", "prop": "pr_bolt", "fill": "#fff3b0", "it": "Energia / pericolo magico"},
+    "🌀": {"mode": "icon", "prop": "pr_portal", "fill": "#caf0f8", "it": "Portale / vortice"},
 }
 DEFAULT_TERRAIN = {"mode": "fill", "fill": PAPER, "it": ""}
 
 # walls, buildings and pillars cast a shadow and get the heavy ink outline
 HEAVY_PATS = {"t_wall", "t_struct", "t_pillar"}
+
+# paint order: backgrounds first, solids last (small overlaps hide seams)
+Z_ORDER = ["t_grass", "t_veg", "t_sand", "t_earth", "t_floor", "t_lava",
+           "t_lethal", "t_deep", "t_water", "t_forest", "t_struct",
+           "t_pillar", "t_wall"]
 
 # ---------------------------------------------------------------------------
 # Procedural texture patterns (pure SVG, deterministic — no external assets)
@@ -203,6 +218,130 @@ PATTERNS: dict[str, str] = {
         '<rect width="28" height="28" fill="#8a67b5"/>'
         '<path d="M9 0v28" stroke="#b697dd" stroke-width="3" stroke-opacity="0.7"/>'
         '<path d="M20 0v28" stroke="#6d4c96" stroke-width="3" stroke-opacity="0.5"/>'),
+}
+
+# ---------------------------------------------------------------------------
+# In-house illustrated prop library (original vector art, drawn for this
+# repo following pro-cartography conventions: ink outline, muted palette,
+# small highlight — inspired by the *conventions* of published AP maps,
+# every path authored from scratch here).
+# ---------------------------------------------------------------------------
+
+_PK = "#2f2415"  # prop ink
+
+
+def _symbol(pid: str, body: str) -> str:
+    return f'<symbol id="{pid}" viewBox="0 0 28 28">{body}</symbol>'
+
+
+PROPS: dict[str, str] = {
+    "pr_door": _symbol("pr_door",
+        f'<rect x="5" y="9.5" width="18" height="9" rx="1.4" fill="#8a6032" stroke="{_PK}" stroke-width="1.2"/>'
+        '<path d="M9.5 9.5v9M14 9.5v9M18.5 9.5v9" stroke="#6e4b26" stroke-width="1"/>'
+        f'<circle cx="7.2" cy="14" r="0.9" fill="{_PK}"/><circle cx="20.8" cy="14" r="0.9" fill="{_PK}"/>'),
+    "pr_rocks": _symbol("pr_rocks",
+        f'<circle cx="10" cy="15" r="5.2" fill="#988d7a" stroke="{_PK}" stroke-width="1.1"/>'
+        f'<circle cx="18" cy="17" r="4" fill="#a89d89" stroke="{_PK}" stroke-width="1"/>'
+        f'<circle cx="15" cy="10" r="3.4" fill="#8a8071" stroke="{_PK}" stroke-width="1"/>'
+        '<path d="M7.5 12.5q2-1.5 4-1M16.5 15.5q1.5-.8 3-.4" stroke="#c2b8a4" stroke-width="0.8" fill="none"/>'),
+    "pr_fire": _symbol("pr_fire",
+        '<path d="M14 4c4 5 7 8 7 13a7 7 0 0 1-14 0c0-5 3-8 7-13z" fill="#e2762d" stroke="#8a3c14" stroke-width="1"/>'
+        '<path d="M14 9c2.5 3.5 4.5 5.5 4.5 8.5a4.5 4.5 0 0 1-9 0c0-3 2-5 4.5-8.5z" fill="#f2a93b"/>'
+        '<path d="M14 14c1.3 1.8 2.3 2.8 2.3 4.4a2.3 2.3 0 0 1-4.6 0c0-1.6 1-2.6 2.3-4.4z" fill="#f8d778"/>'),
+    "pr_boom": _symbol("pr_boom",
+        '<path d="M14 3l2.2 6 5-3.6-1.8 5.9 6.2.7-5.2 3.4 4 4.8-6-1.4.2 6.2-4.6-4.2-4.6 4.2.2-6.2-6 1.4 4-4.8-5.2-3.4 6.2-.7-1.8-5.9 5 3.6z" '
+        'fill="#d9542f" stroke="#7e2810" stroke-width="1"/>'
+        '<circle cx="14" cy="14" r="4.5" fill="#f2a93b"/><circle cx="14" cy="14" r="2.2" fill="#f8d778"/>'),
+    "pr_skull": _symbol("pr_skull",
+        f'<circle cx="14" cy="12.5" r="7" fill="#e8e2d2" stroke="{_PK}" stroke-width="1.1"/>'
+        f'<rect x="10.5" y="17" width="7" height="5" rx="1.5" fill="#e8e2d2" stroke="{_PK}" stroke-width="1.1"/>'
+        f'<circle cx="11.3" cy="12" r="1.8" fill="{_PK}"/><circle cx="16.7" cy="12" r="1.8" fill="{_PK}"/>'
+        f'<path d="M14 14.2l-1.1 2.2h2.2z" fill="{_PK}"/>'
+        f'<path d="M12.2 18.6v2.2M14 18.6v2.2M15.8 18.6v2.2" stroke="{_PK}" stroke-width="0.8"/>'),
+    "pr_pit": _symbol("pr_pit",
+        '<ellipse cx="14" cy="14" rx="9.5" ry="7.5" fill="#141009" stroke="#4d4132" stroke-width="1.4"/>'
+        '<ellipse cx="14" cy="12.6" rx="7" ry="5" fill="#000000" opacity="0.65"/>'
+        '<path d="M6 16.5q4 4 12 2.7" stroke="#6a5c46" stroke-width="0.8" fill="none" opacity="0.7"/>'),
+    "pr_tree": _symbol("pr_tree",
+        '<circle cx="14" cy="14" r="9.5" fill="#4a6a42" stroke="#26331f" stroke-width="1.1"/>'
+        '<circle cx="10" cy="11" r="4" fill="#567a4c"/>'
+        '<circle cx="18" cy="12" r="3.8" fill="#567a4c"/>'
+        '<circle cx="13" cy="18" r="4" fill="#43603b"/>'
+        '<circle cx="10.5" cy="10" r="2" fill="#6b8f5e"/>'),
+    "pr_star": _symbol("pr_star",
+        '<path d="M14 4l2.6 6.6 7.1.5-5.5 4.5 1.8 6.9-6-3.9-6 3.9 1.8-6.9-5.5-4.5 7.1-.5z" '
+        'fill="#e8b73a" stroke="#7e5b14" stroke-width="1.1"/>'),
+    "pr_tower": _symbol("pr_tower",
+        f'<circle cx="14" cy="14" r="10" fill="#8a8172" stroke="{_PK}" stroke-width="1.2"/>'
+        '<circle cx="14" cy="14" r="8.4" fill="none" stroke="#5f574a" stroke-width="2.4" stroke-dasharray="3.3 2.4"/>'
+        '<circle cx="14" cy="14" r="5.2" fill="#6f675a"/>'
+        '<circle cx="14" cy="14" r="2" fill="#3a332a"/>'),
+    "pr_urn": _symbol("pr_urn",
+        '<path d="M11 6h6l-.8 2.6c2.6 1.2 4 3.2 4 6 0 4.2-2.6 7-6.2 7s-6.2-2.8-6.2-7c0-2.8 1.4-4.8 4-6z" '
+        'fill="#b0703f" stroke="#5c3517" stroke-width="1.1"/>'
+        '<path d="M11.5 8.4h5" stroke="#5c3517" stroke-width="0.8"/>'
+        '<path d="M8.6 11.5q-2.4.6-1.6 2.6M19.4 11.5q2.4.6 1.6 2.6" stroke="#5c3517" stroke-width="1" fill="none"/>'
+        '<path d="M11 11q-1.4 2.4 0 5.4" stroke="#d09a6a" stroke-width="0.9" fill="none"/>'),
+    "pr_bell": _symbol("pr_bell",
+        '<path d="M14 5c4 0 6 3 6 7 0 3 .8 4.6 2 5.6H6c1.2-1 2-2.6 2-5.6 0-4 2-7 6-7z" '
+        'fill="#c9a13b" stroke="#6e5312" stroke-width="1.1"/>'
+        '<circle cx="14" cy="20.4" r="1.7" fill="#6e5312"/>'
+        '<circle cx="14" cy="4.6" r="1.3" fill="#6e5312"/>'
+        '<path d="M10.5 8.5q-1.3 2-1.3 4.5" stroke="#e8cd7e" stroke-width="0.9" fill="none"/>'),
+    "pr_gem": _symbol("pr_gem",
+        '<path d="M9 8h10l4 5-9 11-9-11z" fill="#7fc4d8" stroke="#245a70" stroke-width="1.1"/>'
+        '<path d="M9 8l5 5 5-5M4.9 13h18.2M14 13v11" stroke="#d9f0f7" stroke-width="0.9" fill="none"/>'),
+    "pr_crown": _symbol("pr_crown",
+        '<path d="M6 19v-9l4 3.4L14 7l4 6.4 4-3.4v9z" fill="#e8b73a" stroke="#7e5b14" stroke-width="1.1"/>'
+        '<rect x="6" y="19" width="16" height="3" fill="#d3a127" stroke="#7e5b14" stroke-width="1"/>'
+        '<circle cx="10" cy="20.5" r="0.9" fill="#a33434"/>'
+        '<circle cx="14" cy="20.5" r="0.9" fill="#3d6a9e"/>'
+        '<circle cx="18" cy="20.5" r="0.9" fill="#a33434"/>'),
+    "pr_brazier": _symbol("pr_brazier",
+        f'<circle cx="14" cy="14" r="9" fill="#5a4a38" stroke="{_PK}" stroke-width="1.2"/>'
+        '<circle cx="14" cy="14" r="6.4" fill="#33291d"/>'
+        '<circle cx="14" cy="14" r="4.6" fill="#e2762d"/>'
+        '<circle cx="13.2" cy="13.4" r="2.8" fill="#f2a93b"/>'
+        '<circle cx="12.8" cy="13" r="1.4" fill="#f8d778"/>'),
+    "pr_rack": _symbol("pr_rack",
+        '<path d="M7 6v16M21 6v16" stroke="#6e4b26" stroke-width="2"/>'
+        '<path d="M6 9.5h16" stroke="#8a6032" stroke-width="2.2"/>'
+        '<path d="M11 8.5v13" stroke="#8f8574" stroke-width="1.4"/>'
+        '<path d="M11 5.6l1.6 3.2h-3.2z" fill="#9aa0a6" stroke="#4c5257" stroke-width="0.7"/>'
+        '<path d="M17 8.5v13" stroke="#8f8574" stroke-width="1.4"/>'
+        '<path d="M17 9c3 .4 3.6 3 2.6 4.6L17 12.4z" fill="#9aa0a6" stroke="#4c5257" stroke-width="0.7"/>'),
+    "pr_bed": _symbol("pr_bed",
+        f'<rect x="7" y="4" width="14" height="20" rx="1.5" fill="#7a5a38" stroke="{_PK}" stroke-width="1.1"/>'
+        '<rect x="8.4" y="5.4" width="11.2" height="17.2" rx="1" fill="#cbb894"/>'
+        '<rect x="9.6" y="6.4" width="8.8" height="4.2" rx="1.6" fill="#efe6d0" stroke="#b3a78a" stroke-width="0.8"/>'
+        '<path d="M8.4 12.5h11.2v8.1a1 1 0 0 1-1 1h-9.2a1 1 0 0 1-1-1z" fill="#96473a"/>'
+        '<path d="M8.4 14.6h11.2" stroke="#7e392e" stroke-width="0.9"/>'),
+    "pr_crate": _symbol("pr_crate",
+        f'<rect x="6" y="6" width="16" height="16" fill="#a5814f" stroke="{_PK}" stroke-width="1.2"/>'
+        '<rect x="8.2" y="8.2" width="11.6" height="11.6" fill="none" stroke="#7e5f36" stroke-width="1"/>'
+        '<path d="M8.2 8.2l11.6 11.6M19.8 8.2L8.2 19.8" stroke="#7e5f36" stroke-width="1"/>'),
+    "pr_horse": _symbol("pr_horse",
+        f'<ellipse cx="14" cy="16" rx="4.4" ry="7.6" fill="#7a5a3a" stroke="{_PK}" stroke-width="1.1"/>'
+        f'<ellipse cx="14" cy="6.4" rx="2.4" ry="3.4" fill="#6b4d30" stroke="{_PK}" stroke-width="1"/>'
+        f'<path d="M12.8 3.8l.5-1.4M15.2 3.8l-.5-1.4" stroke="{_PK}" stroke-width="0.9"/>'
+        '<path d="M14 9.5v8" stroke="#4f3a24" stroke-width="1.2"/>'
+        '<path d="M14 23.5q.4 2.4-1 3.2" stroke="#4f3a24" stroke-width="1.2" fill="none"/>'),
+    "pr_web": _symbol("pr_web",
+        '<g stroke="#cfc8b6" stroke-width="0.9" fill="none" opacity="0.9">'
+        '<path d="M4 4L24 6M4 4l18 10M4 4l10 18M4 4l2 20"/>'
+        '<path d="M12 4a8 8 0 0 1-8 8M17 4a13 13 0 0 1-13 13M22 4A18 18 0 0 1 4 22"/>'
+        '</g>'),
+    "pr_ice": _symbol("pr_ice",
+        '<g stroke="#8fc3d6" stroke-width="1.3" stroke-linecap="round" fill="none">'
+        '<path d="M14 4v20M5.3 9l17.4 10M22.7 9L5.3 19"/>'
+        '<path d="M11.6 6.4L14 8.8l2.4-2.4M16.4 21.6L14 19.2l-2.4 2.4"/>'
+        '</g>'),
+    "pr_bolt": _symbol("pr_bolt",
+        '<path d="M16.5 3L8 15.5h4.5L11 25l9-13.5h-4.8z" fill="#f2c744" stroke="#8a6a10" stroke-width="1.1"/>'),
+    "pr_portal": _symbol("pr_portal",
+        '<circle cx="14" cy="14" r="9.6" fill="#79aec7" opacity="0.35"/>'
+        '<path d="M14 4.4A9.6 9.6 0 1 1 4.4 14 7.4 7.4 0 1 0 11.8 6.6 5.2 5.2 0 1 1 6.6 11.8" '
+        'fill="none" stroke="#2e6a8a" stroke-width="1.8" stroke-linecap="round"/>'),
 }
 
 EMOJI_RANGES = (
@@ -346,6 +485,11 @@ def _esc(text: str) -> str:
     return text.replace("&", "&amp;").replace("<", "&lt;")
 
 
+def _n(v: float) -> str:
+    s = f"{v:.2f}".rstrip("0").rstrip(".")
+    return s if s else "0"
+
+
 def _mix(hex_color: str, target: str, k: float) -> str:
     """Blend hex_color toward target (#rrggbb) by factor k in [0,1]."""
     a = [int(hex_color[i:i + 2], 16) for i in (1, 3, 5)]
@@ -366,6 +510,16 @@ def _unit_gradient(color: str) -> str:
         f'<stop offset="1" stop-color="{_mix(color, "#000000", 0.35)}"/>'
         f'</radialGradient>'
     )
+
+
+def _legend_key(e: str) -> tuple:
+    """Group the legend elegantly: terrains, then units, then objects,
+    then local symbols — alphabetical inside each group."""
+    spec = SYMBOLS.get(e)
+    if spec is None:
+        return (3, "", e)
+    rank = {"fill": 0, "unit": 1}.get(spec["mode"], 2)
+    return (rank, spec["it"], e)
 
 
 def _resolve_bases(rows: dict[int, list[str]], n_cols: int) -> dict[int, list[str | None]]:
@@ -405,76 +559,97 @@ def _resolve_bases(rows: dict[int, list[str]], n_cols: int) -> dict[int, list[st
     return base
 
 
-def _runs_path(cells: list[tuple[int, int]], ox: int, oy: int) -> str:
-    """Merge (row, col) cells into horizontal runs, return a path 'd'."""
-    d: list[str] = []
-    by_row: dict[int, list[int]] = {}
-    for r, c in cells:
-        by_row.setdefault(r, []).append(c)
-    for r in sorted(by_row):
-        cols = sorted(by_row[r])
-        start = prev = cols[0]
-        for c in cols[1:] + [None]:
-            if c is not None and c == prev + 1:
-                prev = c
-                continue
-            w = (prev - start + 1) * CELL
-            d.append(f"M{ox + start * CELL} {oy + r * CELL}h{w}v{CELL}h{-w}z")
-            if c is not None:
-                start = prev = c
-    return "".join(d)
+def _trace_loops(cells: set[tuple[int, int]]) -> list[list[tuple[float, float]]]:
+    """Trace the boundary of a set of (row, col) cells into closed loops of
+    grid-corner points (x, y). Outer loops and holes are both returned; the
+    even-odd fill rule sorts them out. Deterministic."""
+    edges: dict[tuple[int, int], list[tuple[int, int]]] = {}
+
+    def add(a: tuple[int, int], b: tuple[int, int]) -> None:
+        edges.setdefault(a, []).append(b)
+
+    for (r, c) in sorted(cells):
+        if (r - 1, c) not in cells:
+            add((c, r), (c + 1, r))
+        if (r, c + 1) not in cells:
+            add((c + 1, r), (c + 1, r + 1))
+        if (r + 1, c) not in cells:
+            add((c + 1, r + 1), (c, r + 1))
+        if (r, c - 1) not in cells:
+            add((c, r + 1), (c, r))
+
+    loops: list[list[tuple[float, float]]] = []
+    while edges:
+        start = min(edges)
+        pt = start
+        prev_dir: tuple[int, int] | None = None
+        loop: list[tuple[float, float]] = [pt]
+        while True:
+            outs = edges[pt]
+            if len(outs) == 1 or prev_dir is None:
+                nxt = sorted(outs)[0]
+            else:
+                # at pinch points prefer the sharpest right turn, keeping
+                # touching loops separate (y grows downward: right = cw)
+                px, py = prev_dir
+
+                def turn(q: tuple[int, int]) -> float:
+                    dx, dy = q[0] - pt[0], q[1] - pt[1]
+                    return math.atan2(px * dy - py * dx, px * dx + py * dy)
+
+                nxt = max(outs, key=lambda q: (turn(q), q))
+            outs.remove(nxt)
+            if not outs:
+                del edges[pt]
+            prev_dir = (nxt[0] - pt[0], nxt[1] - pt[1])
+            pt = nxt
+            if pt == start:
+                break
+            loop.append(pt)
+        if len(loop) >= 4:
+            loops.append(loop)
+    return loops
 
 
-def _boundary_paths(base: dict[int, list[str | None]], row_nums: list[int],
-                    n_cols: int, ox: int, oy: int) -> tuple[str, str]:
-    """Ink strokes where adjacent terrains differ: (heavy_d, soft_d)."""
-    n_rows = len(row_nums)
+def _dedup_collinear(pts: list[tuple[float, float]]) -> list[tuple[float, float]]:
+    out: list[tuple[float, float]] = []
+    n = len(pts)
+    for i in range(n):
+        p0, p1, p2 = pts[i - 1], pts[i], pts[(i + 1) % n]
+        if (p1[0] - p0[0]) * (p2[1] - p1[1]) != (p1[1] - p0[1]) * (p2[0] - p1[0]):
+            out.append(p1)
+    return out if len(out) >= 3 else pts
 
-    def at(r: int, c: int) -> str | None:
-        if r < 0 or r >= n_rows or c < 0 or c >= n_cols:
-            return None
-        return base[row_nums[r]][c]
 
-    def klass(a: str | None, b: str | None) -> str | None:
-        if a == b:
-            return None
-        if a is None and b is None:
-            return None
-        if a in HEAVY_PATS or b in HEAVY_PATS:
-            return "heavy"
-        return "soft"
+def _smooth_loop(pts: list[tuple[float, float]], cut: float = 0.35,
+                 iters: int = 2) -> list[tuple[float, float]]:
+    """Corner cutting with an absolute cut distance (grid units): straight
+    runs stay straight, corners get a uniform hand-drawn rounding."""
+    for _ in range(iters):
+        out: list[tuple[float, float]] = []
+        n = len(pts)
+        for i in range(n):
+            p0, p1, p2 = pts[i - 1], pts[i], pts[(i + 1) % n]
+            for q in (p0, p2):
+                dx, dy = q[0] - p1[0], q[1] - p1[1]
+                dist = math.hypot(dx, dy)
+                if dist < 1e-9:
+                    continue
+                d = min(cut, dist * 0.45)
+                out.append((p1[0] + dx / dist * d, p1[1] + dy / dist * d))
+        pts = out
+        cut *= 0.55
+    return pts
 
-    heavy: list[str] = []
-    soft: list[str] = []
-    # vertical edges (between columns), merged over consecutive rows
-    for c in range(n_cols + 1):
-        r = 0
-        while r < n_rows:
-            k = klass(at(r, c - 1), at(r, c))
-            if k is None:
-                r += 1
-                continue
-            r0 = r
-            while r + 1 < n_rows and klass(at(r + 1, c - 1), at(r + 1, c)) == k:
-                r += 1
-            seg = f"M{ox + c * CELL} {oy + r0 * CELL}v{(r - r0 + 1) * CELL}"
-            (heavy if k == "heavy" else soft).append(seg)
-            r += 1
-    # horizontal edges (between rows), merged over consecutive columns
-    for r in range(n_rows + 1):
-        c = 0
-        while c < n_cols:
-            k = klass(at(r - 1, c), at(r, c))
-            if k is None:
-                c += 1
-                continue
-            c0 = c
-            while c + 1 < n_cols and klass(at(r - 1, c + 1), at(r, c + 1)) == k:
-                c += 1
-            seg = f"M{ox + c0 * CELL} {oy + r * CELL}h{(c - c0 + 1) * CELL}"
-            (heavy if k == "heavy" else soft).append(seg)
-            c += 1
-    return "".join(heavy), "".join(soft)
+
+def _region_path(cells: set[tuple[int, int]], ox: int, oy: int) -> str:
+    """Organic path (with holes) for a set of cells, in px coordinates."""
+    parts: list[str] = []
+    for loop in _trace_loops(cells):
+        sm = _smooth_loop(_dedup_collinear(loop))
+        coords = [f"{_n(ox + x * CELL)} {_n(oy + y * CELL)}" for x, y in sm]
+        parts.append("M" + "L".join(coords) + "Z")
+    return "".join(parts)
 
 
 def render_svg(grid: dict, source_name: str) -> str:
@@ -491,13 +666,17 @@ def render_svg(grid: dict, source_name: str) -> str:
     oy = header_h + 22
     sb_y = oy + grid_h + 24
     ly = sb_y + 32
-    legend_h = 18 + LEGEND_ROW_H * len(used)
+    two_cols = width >= 940 and len(used) > 10
+    legend_rows = math.ceil(len(used) / 2) if two_cols else len(used)
+    legend_h = 18 + LEGEND_ROW_H * legend_rows
     height = ly + legend_h + 26
 
     base = _resolve_bases(rows, n_cols)
     used_pats = sorted({p for r in base.values() for p in r if p})
     unit_colors = sorted({SYMBOLS[e]["fill"] for e in used
                           if e in SYMBOLS and SYMBOLS[e]["mode"] == "unit"})
+    used_props = sorted({SYMBOLS[e]["prop"] for e in used
+                         if e in SYMBOLS and SYMBOLS[e].get("prop")})
 
     out: list[str] = []
     out.append(
@@ -505,7 +684,7 @@ def render_svg(grid: dict, source_name: str) -> str:
         f'viewBox="0 0 {width} {height}" font-family="{FONT}">'
     )
 
-    # --- defs: filters, vignette, terrain patterns, token gradients --------
+    # --- defs: filters, vignette, terrain patterns, props, token gradients --
     defs: list[str] = ["<defs>"]
     defs.append(
         '<filter id="grain" x="0" y="0" width="100%" height="100%">'
@@ -526,13 +705,30 @@ def render_svg(grid: dict, source_name: str) -> str:
         '<feGaussianBlur stdDeviation="1.6"/></filter>'
     )
     defs.append(
+        '<filter id="aoblur" x="-30%" y="-30%" width="160%" height="160%">'
+        '<feGaussianBlur stdDeviation="3.2"/></filter>'
+    )
+    defs.append(
+        '<filter id="mottle" x="0" y="0" width="100%" height="100%">'
+        '<feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" '
+        'seed="4" stitchTiles="stitch"/>'
+        '<feColorMatrix type="matrix" values="0 0 0 0 0.24 0 0 0 0 0.18 '
+        '0 0 0 0 0.10 0 0 0 0.5 0"/></filter>'
+    )
+    defs.append(
         '<radialGradient id="vign" cx="0.5" cy="0.45" r="0.75">'
         '<stop offset="0.62" stop-color="#3b2e1e" stop-opacity="0"/>'
         '<stop offset="1" stop-color="#3b2e1e" stop-opacity="0.16"/>'
         '</radialGradient>'
     )
+    defs.append(
+        f'<clipPath id="clipgrid"><rect x="{ox}" y="{oy}" width="{grid_w}" '
+        f'height="{grid_h}"/></clipPath>'
+    )
     for p in used_pats:
         defs.append(PATTERNS[p])
+    for p in used_props:
+        defs.append(PROPS[p])
     for color in unit_colors:
         defs.append(_unit_gradient(color))
     defs.append("</defs>")
@@ -567,39 +763,67 @@ def render_svg(grid: dict, source_name: str) -> str:
         f'fill="{PLATE}" stroke="{INK}" stroke-width="1.6"/>'
     )
 
-    # --- terrain: one merged path per texture (light first, heavy last) ------
-    light_cells: dict[str, list[tuple[int, int]]] = {}
-    heavy_cells: dict[str, list[tuple[int, int]]] = {}
+    # --- organic terrain regions ----------------------------------------------
+    pat_cells: dict[str, set[tuple[int, int]]] = {}
     for r, rn in enumerate(row_nums):
         for c in range(n_cols):
             p = base[rn][c]
-            if p is None:
-                continue
-            (heavy_cells if p in HEAVY_PATS else light_cells).setdefault(p, []).append((r, c))
-    for p in sorted(light_cells):
-        out.append(f'<path d="{_runs_path(light_cells[p], ox, oy)}" fill="url(#{p})"/>')
-    # cast shadow of walls/structures onto the floor, then the solids themselves
-    if heavy_cells:
-        all_heavy = [cell for cells in heavy_cells.values() for cell in cells]
+            if p is not None:
+                pat_cells.setdefault(p, set()).add((r, c))
+    order = [p for p in Z_ORDER if p in pat_cells] + \
+            sorted(p for p in pat_cells if p not in Z_ORDER)
+    paths = {p: _region_path(pat_cells[p], ox, oy) for p in order}
+    heavy_present = [p for p in order if p in HEAVY_PATS]
+    heavy_union = set()
+    for p in heavy_present:
+        heavy_union |= pat_cells[p]
+    heavy_union_d = _region_path(heavy_union, ox, oy) if heavy_union else ""
+
+    out.append(f'<g clip-path="url(#clipgrid)">')
+    # light terrains (slight self-stroke overlap hides seams between regions)
+    for p in order:
+        if p in HEAVY_PATS:
+            continue
         out.append(
-            f'<path d="{_runs_path(sorted(all_heavy), ox, oy)}" fill="#241c10" '
+            f'<path d="{paths[p]}" fill="url(#{p})" fill-rule="evenodd" '
+            f'stroke="url(#{p})" stroke-width="2.4" stroke-linejoin="round"/>'
+        )
+    if heavy_union_d:
+        # ambient occlusion: floor darkens beside walls (inner half is
+        # covered by the wall fill drawn right after)
+        out.append(
+            f'<path d="{heavy_union_d}" fill="none" stroke="#241c10" '
+            f'stroke-width="9" opacity="0.22" filter="url(#aoblur)"/>'
+        )
+        # cast shadow, then the solids themselves
+        out.append(
+            f'<path d="{heavy_union_d}" fill="#241c10" fill-rule="evenodd" '
             f'opacity="0.28" filter="url(#softblur)" transform="translate(2.6,3.4)"/>'
         )
-        for p in sorted(heavy_cells):
-            out.append(f'<path d="{_runs_path(heavy_cells[p], ox, oy)}" fill="url(#{p})"/>')
-
-    # --- inked terrain boundaries (hand-drawn wobble) -------------------------
-    heavy_d, soft_d = _boundary_paths(base, row_nums, n_cols, ox, oy)
-    if soft_d:
+        for p in heavy_present:
+            out.append(
+                f'<path d="{paths[p]}" fill="url(#{p})" fill-rule="evenodd" '
+                f'stroke="url(#{p})" stroke-width="2.4" stroke-linejoin="round"/>'
+            )
+    # low-frequency tonal mottling breaks texture repetition
+    out.append(
+        f'<rect x="{ox}" y="{oy}" width="{grid_w}" height="{grid_h}" '
+        f'filter="url(#mottle)" opacity="0.35"/>'
+    )
+    # inked hand-drawn boundaries
+    for p in order:
+        if p in HEAVY_PATS:
+            continue
         out.append(
-            f'<path d="{soft_d}" fill="none" stroke="{INK_SOFT}" stroke-width="0.9" '
-            f'opacity="0.5" stroke-linecap="round" filter="url(#rough)"/>'
+            f'<path d="{paths[p]}" fill="none" stroke="{INK_SOFT}" stroke-width="0.9" '
+            f'opacity="0.5" stroke-linejoin="round" filter="url(#rough)"/>'
         )
-    if heavy_d:
+    for p in heavy_present:
         out.append(
-            f'<path d="{heavy_d}" fill="none" stroke="#241c10" stroke-width="1.8" '
-            f'opacity="0.9" stroke-linecap="round" filter="url(#rough)"/>'
+            f'<path d="{paths[p]}" fill="none" stroke="#241c10" stroke-width="1.8" '
+            f'opacity="0.9" stroke-linejoin="round" filter="url(#rough)"/>'
         )
+    out.append("</g>")
 
     # --- grid lines (thin every square, thick every 5) ------------------------
     grid_d = "".join(
@@ -615,7 +839,7 @@ def render_svg(grid: dict, source_name: str) -> str:
     out.append(f'<path d="{grid_d}" stroke="#2e2313" stroke-width="0.5" opacity="0.16" fill="none"/>')
     out.append(f'<path d="{grid5_d}" stroke="#2e2313" stroke-width="1.2" opacity="0.28" fill="none"/>')
 
-    # --- icons and unit tokens -------------------------------------------------
+    # --- illustrated props and unit tokens --------------------------------------
     for r, rn in enumerate(row_nums):
         cells = rows[rn]
         for c in range(n_cols):
@@ -638,6 +862,15 @@ def render_svg(grid: dict, source_name: str) -> str:
                 out.append(
                     f'<circle cx="{cx}" cy="{cy}" r="{rr - 2.4}" fill="none" '
                     f'stroke="#ffffff" stroke-width="0.9" opacity="0.55"/>'
+                )
+            elif spec and spec.get("prop"):
+                out.append(
+                    f'<ellipse cx="{cx + 1}" cy="{cy + 3}" rx="9" ry="4.5" '
+                    f'fill="#241c10" opacity="0.2"/>'
+                )
+                out.append(
+                    f'<use href="#{spec["prop"]}" x="{x}" y="{y}" '
+                    f'width="{CELL}" height="{CELL}"/>'
                 )
             elif spec is None or spec["mode"] == "icon":
                 out.append(
@@ -684,23 +917,31 @@ def render_svg(grid: dict, source_name: str) -> str:
         f'<path d="M{ox + 74} {ly - 4}H{width - MARGIN}" stroke="{INK_SOFT}" '
         f'stroke-width="0.7" opacity="0.7"/>'
     )
-    for i, emoji in enumerate(used):
+    col_w = (width - 2 * MARGIN) / 2 if two_cols else width - 2 * MARGIN
+    for i, emoji in enumerate(sorted(used, key=_legend_key)):
         spec = SYMBOLS.get(emoji)
         label = spec["it"] if spec and spec["it"] else "(simbolo locale — vedi legenda del file sorgente)"
-        y = ly + 18 + i * LEGEND_ROW_H
+        col = i // legend_rows if two_cols else 0
+        row_i = i % legend_rows if two_cols else i
+        lx = ox + col * col_w
+        y = ly + 18 + row_i * LEGEND_ROW_H
         if spec and spec["mode"] == "unit":
             out.append(
-                f'<circle cx="{ox + 9}" cy="{y - 4}" r="7.5" '
+                f'<circle cx="{lx + 9}" cy="{y - 4}" r="7.5" '
                 f'fill="url(#{_grad_id(spec["fill"])})" stroke="#241c10" stroke-width="1.2"/>'
             )
         elif spec and spec["mode"] == "fill":
             out.append(
-                f'<rect x="{ox}" y="{y - 12}" width="19" height="15" fill="url(#{spec["pat"]})" '
+                f'<rect x="{lx}" y="{y - 12}" width="19" height="15" fill="url(#{spec["pat"]})" '
                 f'stroke="{INK_SOFT}" stroke-width="0.7"/>'
             )
+        elif spec and spec.get("prop"):
+            out.append(
+                f'<use href="#{spec["prop"]}" x="{lx}" y="{y - 13}" width="18" height="18"/>'
+            )
         else:
-            out.append(f'<text x="{ox}" y="{y}" font-size="14">{emoji}</text>')
-        out.append(f'<text x="{ox + 27}" y="{y}" font-size="11" fill="{INK}">{emoji} — {label}</text>')
+            out.append(f'<text x="{lx}" y="{y}" font-size="14">{emoji}</text>')
+        out.append(f'<text x="{lx + 27}" y="{y}" font-size="11" fill="{INK}">{emoji} — {label}</text>')
 
     # --- footer ---------------------------------------------------------------------
     out.append(

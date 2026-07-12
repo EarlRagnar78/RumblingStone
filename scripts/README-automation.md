@@ -22,6 +22,7 @@ python3 scripts/dm.py post                        # XP ledger + state.md diff pr
 python3 scripts/dm.py recap --hype                # player recap + Homebrewery V3 version
 python3 scripts/dm.py handout --tipo profezia --da <file> --sezione "HANDOUT 1"
 python3 scripts/dm.py maps validate               # or: maps render <file.md>
+python3 scripts/dm.py hype setup && dm.py hype start   # Homebrewery locale (localhost:8000)
 python3 scripts/dm.py doctor                      # environment diagnosis
 ```
 

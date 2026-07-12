@@ -48,6 +48,7 @@
 | K-D2 | **Hype Homebrewery in 3 ondate, in quest'ordine**: ① recap/hype pre-sessione → ② handout giocatori (lettere, profezie, schede artefatto, avvisi torneo) → ③ booklet per arco in stile modulo 3.5 (grosso, a lotti) | DM 2026-07-10 (domanda 2) |
 | K-D3 | **Archivio piani = `plans/`** con `INDEX.md` (stato + % + lotti rimanenti + gate), `CHANGELOG.md` coerente, `adr/` per le decisioni architetturali; i `PIANO-*` esistenti si **spostano** lasciando puntatori | DM 2026-07-10 (domanda 3) |
 | K-D4 | **Prima il piano scritto, poi l'esecuzione**: i lotti partono solo dopo approvazione DM di questo documento sul PR | DM 2026-07-10 (domanda 4) |
+| K-D5 | **Homebrewery self-hosted in locale** (opzione B) per l'editor due-pannelli "stessa qualità": comandi SOLO dalla documentazione ufficiale naturalcrit, mai inventati → Lotto K-B4, ADR-0004. Chiude la domanda aperta Q2 | DM 2026-07-12 |
 
 ### Vincolo emerso in fase di stesura
 
@@ -220,6 +221,24 @@ principale, non la quantità (la copertura è già buona):
 - **Nota dimensione**: Homebrewery soffre su brew molto lunghi → un brew
   per Parte, non per arco intero. Da riverificare al primo pilota.
 
+### K-B4. Homebrewery self-hosted in locale (K-D5, aggiunto 2026-07-12)
+- **Evidenza**: il DM vuole l'editor a due pannelli (markdown + anteprima
+  PHB live) "con la stessa qualità" ma in casa propria; il sito pubblico
+  ospiterebbe contenuto RHoD privato su server terzi (Q2 del piano).
+- **Azione**: guida `scripts/homebrew-local/README.md` con i comandi
+  **ripresi alla lettera dalla documentazione ufficiale** di
+  naturalcrit/homebrewery (README.md *Installation* + README.DOCKER.md,
+  recuperati 2026-07-12): via nativa (Node ≥16 + MongoDB + git →
+  `git clone` → `NODE_ENV=local` → `npm install` → `npm start` →
+  `http://localhost:8000`) e via Docker. Wrapper sottili `setup.sh` /
+  `start.sh` + sottocomando `dm.py hype setup|start`; clone gitignorato.
+  Razionale in **ADR-0004**.
+- **Accettazione**: `bash -n` sui wrapper ok; `dm.py hype start` senza
+  install → errore parlante che rimanda a `hype setup`; nessun comando
+  d'installazione inventato (tutti tracciabili alle due fonti ufficiali);
+  prova end-to-end sul PC del DM (Node/Mongo non installabili nel
+  container di lavoro — network policy e ambiente effimero).
+
 ---
 
 ## §4 — LOTTO K-C: CLI unica `scripts/dm.py` (K-D1)
@@ -289,10 +308,10 @@ principale, non la quantità (la copertura è già buona):
 
 ## §7 — Checklist avanzamento (aggiornare a ogni lotto — regola d'oro 4)
 
-**Completamento piano: ~80%** (9/11 task; restano K-B0 gate DM e K-B3 a lotti; piano approvato col merge del PR #28, 2026-07-10)
+**Completamento piano: ~85%** (10/12 task; restano K-B0 gate DM e K-B3 a lotti; piano approvato col merge del PR #28, 2026-07-10)
 
 - [x] **K-A** (archivio piani): [x] K-A1 · [x] K-A2 · [x] K-A3 · [x] K-A4 — **4/4 — LOTTO COMPLETO (2026-07-10)**
-- [ ] **K-B** (hype Homebrewery): [ ] K-B0 🔶 *gate DM* · [x] K-B1 (2026-07-10) · [x] K-B2 (2026-07-10; piloti canone: profezia Cronache + scheda Collana; piloti lettera/avviso-torneo in attesa di testo canone dal DM) · [ ] K-B3 (a lotti) — 2/4
+- [ ] **K-B** (hype Homebrewery): [ ] K-B0 🔶 *gate DM* · [x] K-B1 (2026-07-10) · [x] K-B2 (2026-07-10; piloti canone: profezia Cronache + scheda Collana; piloti lettera/avviso-torneo in attesa di testo canone dal DM) · [ ] K-B3 (a lotti) · [x] K-B4 (2026-07-12, K-D5) — 3/5
 - [x] **K-C** (CLI dm.py): [x] K-C1 (2026-07-10) · [x] K-C2 (2026-07-10) · [x] K-C3 (2026-07-10) — **3/3 — LOTTO COMPLETO**
 - [x] K-D1…K-D4 — decisioni acquisite (2026-07-10)
 
@@ -301,6 +320,6 @@ principale, non la quantità (la copertura è già buona):
 | # | Domanda | Default se non risponde |
 |---|---|---|
 | Q1 → K-D5 | Template pack dungeons-and-pi: verificato? quali template piacciono? (K-B0) | snippet V3 nativi di Homebrewery |
-| Q2 | Flusso Homebrewery: copia-incolla su naturalcrit **o** self-host locale (MIT, più privacy per contenuto RHoD)? | copia-incolla (zero setup); self-host come ADR futuro |
+| Q2 | ~~Flusso Homebrewery: copia-incolla o self-host?~~ **CHIUSA → K-D5 (2026-07-12): self-host locale, Lotto K-B4, ADR-0004** | — |
 | Q3 | Lingua dei materiali player-facing: italiano come i recap? | italiano |
 | Q4 | Ordine lotti proposto in §0.7: confermato? | confermato |

@@ -182,6 +182,69 @@ def hype_recap(recap_path: Path, out: Path | None) -> Path:
     return out
 
 
+# ------------------------------------------------------------- chronology
+
+
+def update_chronology() -> Path:
+    """Rigenera l'indice-cronologia degli handout (feedback DM 2026-07-12):
+    i recap ordinati per data reale + Giorno di Marcia in-mondo (calendario
+    di Faerûn: l'etichetta Harptos piena appare quando session_recap.py ha
+    l'ancora MARCH_DAY1_HARPTOS impostata), più il materiale senza data."""
+    outdir = RECAPS / "homebrew"
+    outdir.mkdir(parents=True, exist_ok=True)
+    rows = []
+    for f in sorted(outdir.glob("recap-????-??-??.hb.md")):
+        text = f.read_text(encoding="utf-8", errors="ignore")
+        m_day = re.search(r'(?:Giorno\s+(\d+)\s+della\s+Marcia|'
+                          r'(\d+\s+\w+)\s+\(Giorno\s+\d+\s+della\s+Marcia\))', text)
+        giorno = ""
+        if m_day:
+            giorno = (f"Giorno {m_day.group(1)}" if m_day.group(1)
+                      else m_day.group(2))
+        m_month = re.search(r'Data in-mondo\s*:?\**\s*([^·\n]+)', text)
+        mese = m_month.group(1).strip().rstrip("*") if m_month else ""
+        real = f.stem.replace("recap-", "").replace(".hb", "")
+        rows.append((real, giorno, mese, f.name))
+
+    extra = [p for p in sorted(REPO.rglob("*.hb.md"))
+             if "templates" not in p.parts and p.parent != outdir]
+
+    lines = [
+        "<!-- Auto-generated — do not edit by hand.",
+        "     Rigenerato da scripts/hype_homebrew.py a ogni recap/handout.",
+        "     Ordina gli handout man mano che le sessioni avanzano. -->",
+        "",
+        "{{wide",
+        "# Cronache dei Custodi Eterni — Cronologia degli handout",
+        "}}",
+        "",
+        "*Il tempo di Faerûn scorre col calendario di Harptos; la campagna",
+        "conta i **Giorni della Marcia**. Consegna (e rileggi) gli handout",
+        "in quest'ordine.*",
+        "",
+        "## Recap di sessione (in ordine di tempo)",
+        "",
+        "| # | Data reale | Tempo in-mondo | Mese (Faerûn) | File |",
+        "|:-:|:--|:--|:--|:--|",
+    ]
+    for i, (real, giorno, mese, name) in enumerate(sorted(rows), 1):
+        lines.append(f"| {i} | {real} | {giorno or '—'} | {mese or '—'} | `{name}` |")
+    lines += [
+        "",
+        "## Materiale senza data (si consegna quando i fascicoli lo dicono)",
+        "",
+    ]
+    for p in extra:
+        lines.append(f"- `{rel(p)}`")
+    lines += ["", "{{pageNumber,auto}}",
+              "{{footnote CRONACHE DEI CUSTODI ETERNI · CRONOLOGIA}}", ""]
+
+    out = outdir / "00-CRONOLOGIA.hb.md"
+    out.write_text("\n".join(lines), encoding="utf-8")
+    print(f"[hype] ✓ {rel(out)} — cronologia handout aggiornata")
+    return out
+
+
 # ----------------------------------------------------------- handout mode
 
 
@@ -272,8 +335,13 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--da", help="(handout) file markdown sorgente col contenuto")
     ap.add_argument("--sezione", help="(handout) estrai solo la sezione '## …' che contiene questo testo")
     ap.add_argument("--out", help="file di output esplicito")
+    ap.add_argument("--cronologia", action="store_true",
+                    help="rigenera solo l'indice-cronologia degli handout")
     args = ap.parse_args(argv)
 
+    if args.cronologia:
+        update_chronology()
+        return 0
     if args.handout:
         hype_handout(args.handout, args.da, args.out, args.sezione)
     else:
@@ -281,6 +349,7 @@ def main(argv: list[str] | None = None) -> int:
         if not recap.exists():
             die(f"recap non trovato: {recap}")
         hype_recap(recap, Path(args.out) if args.out else None)
+    update_chronology()
     return 0
 
 

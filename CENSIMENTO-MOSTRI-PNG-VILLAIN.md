@@ -11,19 +11,29 @@
 > trascrivere nel formato standard (lotto L1) · 🔗 L3 = statblock d'arco da
 > cross-linkare (resta master nell'arco) · 🎨 L4 = token da assegnare ·
 > 📸 = storico/duplicato (non si converte).
+>
+> ---
+> ## ✅ STATO: LOTTI L0-L5 COMPLETI (2026-07-11)
+> Il piano libreria è **interamente eseguito** (PR #26 L0 + PR #29 L1-L5,
+> mergiati). Le righe 🔁/🎨 qui sotto descrivono il **piano originale**; sono
+> tutte **FATTE**. La libreria è la fonte viva: `Bestiario/README.md` +
+> `scripts/monster_catalog.yaml`. Restano solo i punti **gated su conferma DM**
+> (non bloccanti): scarto dei token inutilizzati, promozione di
+> `validate_bestiario --rules` a gate. ✅ Khorn e Durgan Tozzefort sono stati
+> **canonizzati dal DM (2026-07-12)** — non più `[INFERRED]`.
 
 ---
 
-## §1 — Numeri a colpo d'occhio
+## §1 — Numeri a colpo d'occhio *(aggiornati post-L5, 2026-07-11)*
 
 | Fonte | Quantità | Stato |
 |---|---|---|
-| `Bestiario/mostri|villain|png` — statblock standard `-crN.md` | **57** | ✅ (ex Armate-UNITA-NUOVE, validati da `validate_bestiario.py`) |
-| `Bestiario/villain|png` — dossier PNG nominati | **30** (13 villain + 17 png) | ✅ posizione; formato AGENTS.md; gap in §4 |
-| `Bestiario/pregen-pcgen/` — sorgenti storiche | **~120 file** → **≈45 entità** dedup (50 `.pcg` PCGen + 65 export `.htm/.html` + 2 `.pdf` + 2 `.odt` + 4 `.txt`) | 🔁 L1 (tabella §3) |
-| Statblock inline negli archi (`*STATBLOCCHI*.md`, `ARC08-02`, ecc.) | ~40 blocchi indicizzati | 🔗 L3 (restano master d'arco, il catalogo li indicizza) |
-| `Bestiario/tokens/` — immagini webp | **182** | 🎨 L4 (45 in `da-catalogare/`) |
-| `scripts/monster_catalog.yaml` — indice automatico | **246 record** | ✅ rigenerato post-ristrutturazione |
+| `Bestiario/mostri|villain|png` — statblock standard `-crN.md` | **102** (era 57) | ✅ 57 ex-Armate + 45 trascritti/generati in L1-L2; validati da `validate_bestiario.py` |
+| `Bestiario/villain|png` — dossier PNG nominati | **34** (17 villain + 17 png) | ✅ +4 mini-dossier villain in L2 (Avatar Tiamat, Tyrgarun, Karruk, Zarim) |
+| `Bestiario/pregen-pcgen/` — sorgenti storiche | **~120 file** → **≈45 entità** | ✅ **TRASCRITTE in L1** (44 schede); i file restano sorgente storica sola-lettura |
+| Statblock inline negli archi (`*STATBLOCCHI*.md`, `ARC08-02`, ecc.) | ~40 blocchi indicizzati | ✅ 🔗 restano master d'arco; dossier cross-linkati (L3); catalogo li indicizza |
+| `Bestiario/tokens/` — immagini webp | **110** (3 sfondi/scene scartati in L4) | ✅ nomi-hash rinominati per soggetto; manifest `tokens/README.md`; 2 assegnati |
+| `scripts/monster_catalog.yaml` — indice automatico | **293 record** (era 246) | ✅ rigenerato; walk deterministico (fix CI) |
 
 ## §2 — Libreria standard (stato attuale)
 
@@ -44,8 +54,13 @@
   Occhiolesto, Khorn, Nala Cantapietre, Orion Pelleorsa, Re Thorek,
   Signore Ventolesto, Thorin Runaforte).
 
-## §3 — Sorgenti storiche `pregen-pcgen/` (→ lotto L1)
+## §3 — Sorgenti storiche `pregen-pcgen/` (→ lotto L1) — ✅ FATTO
 
+> ✅ **Tutte le righe 🔁 di questa sezione sono state trascritte in L1**
+> (2026-07-08). Le schede risultanti sono in `Bestiario/mostri|villain|png/`
+> (cerca per nome in `scripts/monster_catalog.yaml`). La tabella resta come
+> traccia della provenienza sorgente→scheda.
+>
 > Dedup a livello di **entità**: le varianti `spell/no-spell` e le copie
 > byte-simili della stessa build sono UNA scheda da trascrivere. I file
 > restano al loro posto come sorgente (sola lettura); la trascrizione va in
@@ -119,7 +134,16 @@
 | Duergar mago 3 liv | 2 html | 4 | 🔁 L1 |
 | Duergar mago/ladro 8 liv | 2 htm | ~8 | 🔁 L1 |
 
-## §4 — Gap (dossier ↔ statblock) → lotti L2/L3
+## §4 — Gap (dossier ↔ statblock) → lotti L2/L3 — ✅ FATTO
+
+> ✅ **Chiuso in L2/L3** (2026-07-08): Khorn ha ora lo statblock
+> (`png/Khorn/khorn-ufficiale-hammerfist-cr8.md`, `[INFERRED]`); i 4 villain
+> orfani hanno il mini-dossier (Avatar Tiamat, Tyrgarun, Karruk, Zarim); i
+> dossier d'arco 🔗 sono cross-linkati e verificati (zero numeri duplicati).
+> Il «Comandante Dauth» è ora **Durgan Tozzefort** (rinominato da Borin per
+> non confliggere con Borin Ferropugno). La tabella resta come mappa storica.
+> ✅ **Khorn e Durgan Tozzefort canonizzati dal DM (2026-07-12)**: i flag
+> `[INFERRED]` sono stati rimossi da statblock, dossier e riferimenti d'arco.
 
 **Dossier senza statblock proprio** (lo statblock canonico vive in un file
 d'arco → 🔗 L3 cross-link, oppure manca → 🔁 L2):
@@ -142,12 +166,17 @@ cartelle): Avatar di Tiamat, Tyrgarun, Wyrmlord Karruk, Zarim, Emissario
 Mano Rossa; Arci-druido, Arcimago del Circolo, Druido-orso, Comandante
 Dauth → 🔁 L2 (mini-dossier col template `png-dossier-template.md`).
 
-## §5 — Token (`tokens/`, → lotto L4)
+## §5 — Token (`tokens/`, → lotto L4) — ✅ FATTO
 
-| Cartella | Contenuto | Azione |
+> ✅ **L4 eseguito** (2026-07-08/11): i file con nome-hash sono stati
+> rinominati per soggetto; manifest in `Bestiario/tokens/README.md`; 2 token
+> assegnati (Lythiel, Jorr); 3 sfondi/scene non-combattente scartati. Resta
+> gated (conferma DM) l'assegnazione fine dei restanti e lo scarto di altri.
+
+| Cartella | Contenuto | Stato |
 |---|---|---|
-| `tokens/Monster_And_Png/` (+ `Dragons/`, `Png/`, `immagini_Mostri_D&D_Campagna/`) | ~137 webp con nomi in parte parlanti | 🎨 L4: assegnare alle schede (campo `**Token**:`) |
-| `tokens/da-catalogare/` (ex `Png_And_Monster_To_Be_added`) | 45 webp «da aggiungere» (molti con hash come nome) | 🎨 L4: rinominare con nomi parlanti + assegnare o scartare (conferma DM per gli scarti) |
+| `tokens/Monster_And_Png/` (+ `Dragons/`, `Png/`, `immagini_Mostri_D&D_Campagna/`) | 72 webp | ✅ in libreria; assegnazione fine gated |
+| `tokens/da-catalogare/` (ex `Png_And_Monster_To_Be_added`) | 38 webp | ✅ hash rinominati per soggetto; manifest nel README; scarti/assegnazioni residue gated DM |
 
 ## §6 — File igiene
 

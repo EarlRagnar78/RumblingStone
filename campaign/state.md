@@ -1297,4 +1297,12 @@ entries — they become campaign history.
             Giorno di Marcia 1 = 1 Flamerule 1372 (Day 19 = 19 Flamerule;
             Day 42/Rethmar = 11 Eleasis). Applicata in scripts/session_recap.py
             (MARCH_DAY1_HARPTOS); le date nei recap/dossier ora sono Harptos.
+2026-07-12  **Khorn e Durgan Tozzefort canonizzati** (conferma DM). Rimossi
+            i flag `[INFERRED — needs DM confirmation]`: Khorn (ufficiale
+            nanico di Hammerfist, Guerriero 8 CR 8 — `Bestiario/png/Khorn/`)
+            e Durgan Tozzefort (comandante 300 mercenari nani di Dauth,
+            Guerriero 12 CR 11 — STATBLOCCHI-EPICI §7 + ESITI-CONSEGUENZE
+            + `Bestiario/png/dauth-commander-mercenari-nani-cr11.md`) sono
+            ora ACCEPTED DM-canon 2026-07-12. Statblock, dossier e censimento
+            aggiornati.
 ```

@@ -162,10 +162,13 @@ def read_file_safe(path):
     return ""
 
 def should_skip(path):
-    skip_dirs = {'.git', 'node_modules', '.claude', '.cursor', '.windsurf', '.gemini', '.chatgpt', '.agents', '.github', 'Immagini', 'immage_campaign', 'Mappe', 'Musica', 'skills', 'Script', 'Old', 'png_La_mano_rossa_del_destino_files', 'tokens'}
+    skip_dirs = {'.git', 'node_modules', '.claude', '.cursor', '.windsurf', '.gemini', '.chatgpt', '.agents', '.github', 'Immagini', 'immage_campaign', 'Mappe', 'Musica', 'skills', 'Script', 'Old', 'png_La_mano_rossa_del_destino_files', 'tokens', 'homebrew'}
     for part in path.parts:
         if part in skip_dirs or part.endswith('_files'):
             return True
+    # .hb.md = artefatti di layout Homebrewery (ADR-0003), mai fonti di statblock
+    if path.name.endswith('.hb.md'):
+        return True
     return False
 
 def scan_directory(root):

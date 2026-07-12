@@ -324,10 +324,10 @@ principale, non la quantità (la copertura è già buona):
 
 ## §7 — Checklist avanzamento (aggiornare a ogni lotto — regola d'oro 4)
 
-**Completamento piano: ~90%** (11,5/13 task; restano K-B0 gate DM e i fascicoli K-B3 successivi; piano approvato col merge del PR #28, 2026-07-10)
+**Completamento piano: ~95%** (12/13 task; resta solo K-B0, gate DM; piano approvato col merge del PR #28, 2026-07-10)
 
 - [x] **K-A** (archivio piani): [x] K-A1 · [x] K-A2 · [x] K-A3 · [x] K-A4 — **4/4 — LOTTO COMPLETO (2026-07-10)**
-- [ ] **K-B** (hype Homebrewery): [ ] K-B0 🔶 *gate DM* · [x] K-B1 (2026-07-10) · [x] K-B2 (2026-07-10; piloti canone: profezia Cronache + scheda Collana; piloti lettera/avviso-torneo in attesa di testo canone dal DM) · [~] K-B3 🟡 a lotti (Fascicolo I P1-P2 ✅ 2026-07-12; prossimi: P3, P4, P3B, P5-P6) · [x] K-B4 (2026-07-12, K-D5) · [x] K-B5 (2026-07-12, container turnkey) — 4/6
+- [ ] **K-B** (hype Homebrewery): [ ] K-B0 🔶 *gate DM* · [x] K-B1 (2026-07-10) · [x] K-B2 (2026-07-10; piloti canone: profezia Cronache + scheda Collana; piloti lettera/avviso-torneo in attesa di testo canone dal DM) · [x] K-B3 (2026-07-12: **Fascicoli I-V completi** — P1-P2, P3, P4+Viaggio, P3B, P5+ponte; verifica visiva su Homebrewery in carico al DM al collaudo del container) · [x] K-B4 (2026-07-12, K-D5) · [x] K-B5 (2026-07-12, container turnkey) — 4/6
 - [x] **K-C** (CLI dm.py): [x] K-C1 (2026-07-10) · [x] K-C2 (2026-07-10) · [x] K-C3 (2026-07-10) — **3/3 — LOTTO COMPLETO**
 - [x] K-D1…K-D4 — decisioni acquisite (2026-07-10)
 

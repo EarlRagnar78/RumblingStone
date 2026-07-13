@@ -74,7 +74,11 @@ teschio…) al posto degli emoji — disegnati in-house seguendo le
 convenzioni della cartografia professionale, mai ricalcati da asset
 altrui. Tutta la grafica è **procedurale** (pattern, filtri e simboli
 SVG): niente asset esterni, niente vincoli di licenza, output
-byte-deterministico (requisito di `validate_maps.py` in CI).
+byte-deterministico (requisito di `validate_maps.py` in CI). La legenda
+universale è estesa con i simboli locali più usati negli archi (⛰ montagne
+come terreno, ⬇🏛🌋🗿🌉🎯🖼✨⚔) e con il corredo classico da dungeon ed
+esterni (⚰🛢🪜🦴🍄🕯🌾⛺🔮🪑🧱) — la tabella `SYMBOLS` nel renderer è la
+fonte di verità.
 
 La pipeline completa (vedi `plans/RICERCA-GENERATORI-MAPPE-QUALITA-RHOD.md`
 per il razionale e le alternative valutate):

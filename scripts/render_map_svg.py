@@ -80,6 +80,7 @@ SYMBOLS: dict[str, dict] = {
     "⬜": {"mode": "fill", "pat": "t_floor", "fill": "#d8cdb4", "it": "Pavimento lavorato"},
     "🏰": {"mode": "fill", "pat": "t_wall", "fill": "#3f3931", "it": "Muro / roccia solida"},
     "🟪": {"mode": "fill", "pat": "t_pillar", "fill": "#8a67b5", "it": "Pilastro / mithral"},
+    "⛰": {"mode": "fill", "pat": "t_mountain", "fill": "#8d8271", "it": "Montagne / creste rocciose"},
     "🪨": {"mode": "icon", "prop": "pr_rocks", "fill": "#ced4da", "it": "Rocce/macerie (copertura +4 CA, terreno difficile)"},
     "🔥": {"mode": "icon", "prop": "pr_fire", "fill": "#ffb4a2", "it": "Fuoco (1d6 fuoco/round)"},
     "💥": {"mode": "icon", "prop": "pr_boom", "fill": "#ffb4a2", "it": "Fiamme / esplosione"},
@@ -110,16 +111,39 @@ SYMBOLS: dict[str, dict] = {
     "❄": {"mode": "icon", "prop": "pr_ice", "fill": "#caf0f8", "it": "Ghiaccio"},
     "⚡": {"mode": "icon", "prop": "pr_bolt", "fill": "#fff3b0", "it": "Energia / pericolo magico"},
     "🌀": {"mode": "icon", "prop": "pr_portal", "fill": "#caf0f8", "it": "Portale / vortice"},
+    # markers and props promoted from the arcs' local legends
+    "⬇": {"mode": "icon", "prop": "pr_down", "fill": "#dee2e6", "it": "Discesa / pendenza"},
+    "🏛": {"mode": "icon", "prop": "pr_temple", "fill": "#dee2e6", "it": "Edificio / tempio"},
+    "🌋": {"mode": "icon", "prop": "pr_volcano", "fill": "#ffb4a2", "it": "Bocca vulcanica / fumarola"},
+    "🗿": {"mode": "icon", "prop": "pr_statue", "fill": "#dee2e6", "it": "Statua"},
+    "🌉": {"mode": "icon", "prop": "pr_bridge", "fill": "#e6ccb2", "it": "Ponte / passerella"},
+    "🎯": {"mode": "icon", "prop": "pr_target", "fill": "#fff3b0", "it": "Obiettivo tattico"},
+    "🖼": {"mode": "icon", "prop": "pr_mural", "fill": "#dee2e6", "it": "Affresco / quadro"},
+    "✨": {"mode": "icon", "prop": "pr_sparkle", "fill": "#fff3b0", "it": "Effetto magico attivo"},
+    "⚔": {"mode": "icon", "prop": "pr_swords", "fill": "#dee2e6", "it": "Zona di scontro"},
+    # dungeon & wilderness dressing (available to every map master)
+    "⚰": {"mode": "icon", "prop": "pr_coffin", "fill": "#e6ccb2", "it": "Sarcofago / bara"},
+    "🛢": {"mode": "icon", "prop": "pr_barrel", "fill": "#e6ccb2", "it": "Barile"},
+    "🪜": {"mode": "icon", "prop": "pr_stairs", "fill": "#dee2e6", "it": "Scale / rampa"},
+    "🦴": {"mode": "icon", "prop": "pr_bones", "fill": "#e9ecef", "it": "Ossa / resti"},
+    "🍄": {"mode": "icon", "prop": "pr_mushrooms", "fill": "#ffb4a2", "it": "Funghi giganti"},
+    "🕯": {"mode": "icon", "prop": "pr_candles", "fill": "#fff3b0", "it": "Candele / rituale"},
+    "🌾": {"mode": "icon", "prop": "pr_bush", "fill": "#b7e4c7", "it": "Erba alta / cespugli (occultamento)"},
+    "⛺": {"mode": "icon", "prop": "pr_tent", "fill": "#e6ccb2", "it": "Tenda"},
+    "🔮": {"mode": "icon", "prop": "pr_crystal", "fill": "#caf0f8", "it": "Cristalli / altare magico"},
+    "🪑": {"mode": "icon", "prop": "pr_table", "fill": "#e6ccb2", "it": "Tavolo e sedie"},
+    "🧱": {"mode": "icon", "prop": "pr_lowwall", "fill": "#e6ccb2", "it": "Muretto / copertura bassa (+4 CA)"},
 }
 DEFAULT_TERRAIN = {"mode": "fill", "fill": PAPER, "it": ""}
 
-# walls, buildings and pillars cast a shadow and get the heavy ink outline
-HEAVY_PATS = {"t_wall", "t_struct", "t_pillar"}
+# walls, buildings, pillars and massifs cast a shadow and get the heavy
+# ink outline (plus a light grid on top, so squares stay countable)
+HEAVY_PATS = {"t_wall", "t_struct", "t_pillar", "t_mountain"}
 
 # paint order: backgrounds first, solids last (small overlaps hide seams)
 Z_ORDER = ["t_grass", "t_veg", "t_sand", "t_earth", "t_floor", "t_lava",
-           "t_lethal", "t_deep", "t_water", "t_forest", "t_struct",
-           "t_pillar", "t_wall"]
+           "t_lethal", "t_deep", "t_water", "t_forest", "t_mountain",
+           "t_struct", "t_pillar", "t_wall"]
 
 # ---------------------------------------------------------------------------
 # Procedural texture patterns (pure SVG, deterministic — no external assets)
@@ -218,6 +242,18 @@ PATTERNS: dict[str, str] = {
         '<rect width="28" height="28" fill="#8a67b5"/>'
         '<path d="M9 0v28" stroke="#b697dd" stroke-width="3" stroke-opacity="0.7"/>'
         '<path d="M20 0v28" stroke="#6d4c96" stroke-width="3" stroke-opacity="0.5"/>'),
+    "t_mountain": _pattern("t_mountain", 42,
+        '<rect width="42" height="42" fill="#8d8271"/>'
+        '<path d="M2 22L11 6l9 16z" fill="#a49a87"/>'
+        '<path d="M11 6l9 16h-9z" fill="#6f6553"/>'
+        '<path d="M2 22L11 6l9 16" stroke="#4a4237" stroke-width="1" fill="none"/>'
+        '<path d="M20 40l8-14 8 14z" fill="#a49a87"/>'
+        '<path d="M28 26l8 14h-8z" fill="#6f6553"/>'
+        '<path d="M20 40l8-14 8 14" stroke="#4a4237" stroke-width="1" fill="none"/>'
+        '<path d="M28 16l6-10 6 10z" fill="#9c9280"/>'
+        '<path d="M34 6l6 10h-6z" fill="#776b58"/>'
+        '<circle cx="7" cy="30" r="1" fill="#776b58"/>'
+        '<circle cx="16" cy="36" r="0.9" fill="#a49a87"/>'),
 }
 
 # ---------------------------------------------------------------------------
@@ -240,10 +276,19 @@ PROPS: dict[str, str] = {
         '<path d="M9.5 9.5v9M14 9.5v9M18.5 9.5v9" stroke="#6e4b26" stroke-width="1"/>'
         f'<circle cx="7.2" cy="14" r="0.9" fill="{_PK}"/><circle cx="20.8" cy="14" r="0.9" fill="{_PK}"/>'),
     "pr_rocks": _symbol("pr_rocks",
-        f'<circle cx="10" cy="15" r="5.2" fill="#988d7a" stroke="{_PK}" stroke-width="1.1"/>'
-        f'<circle cx="18" cy="17" r="4" fill="#a89d89" stroke="{_PK}" stroke-width="1"/>'
-        f'<circle cx="15" cy="10" r="3.4" fill="#8a8071" stroke="{_PK}" stroke-width="1"/>'
-        '<path d="M7.5 12.5q2-1.5 4-1M16.5 15.5q1.5-.8 3-.4" stroke="#c2b8a4" stroke-width="0.8" fill="none"/>'),
+        f'<path d="M5 16l3-5.5 5.5-1.5 3.5 4-1 5.5-7 2.5z" fill="#9b917f" stroke="{_PK}" stroke-width="1.1"/>'
+        '<path d="M8 10.5l5.5-1.5 1 4.5-6.5 2z" fill="#b0a692"/>'
+        f'<path d="M16 19l2-4.5 5-1 2.5 4-3 4.5h-4.5z" fill="#8a8071" stroke="{_PK}" stroke-width="1"/>'
+        '<path d="M18 14.5l5-1 1.5 2.5-5.5 1z" fill="#a29885"/>'
+        '<circle cx="12" cy="21.5" r="1" fill="#6f6552"/>'
+        '<circle cx="20" cy="9" r="1.2" fill="#776b58"/>'),
+    "pr_rocks_b": _symbol("pr_rocks_b",
+        f'<path d="M11 8l5.5 1 2.5 5-2.5 5-6 .5-2.5-5z" fill="#948a77" stroke="{_PK}" stroke-width="1.1"/>'
+        '<path d="M11 8l5.5 1 1 3.5-6 1z" fill="#aca28e"/>'
+        f'<path d="M6 18.5l1.5-3.5 4-.5 1.5 3-1.5 3.5h-4z" fill="#8a8071" stroke="{_PK}" stroke-width="1"/>'
+        '<path d="M7.5 15l4-.5 1 2-4.5 1z" fill="#a29885"/>'
+        '<circle cx="19.5" cy="20.5" r="1.6" fill="#8a8071" stroke="#2f2415" stroke-width="0.8"/>'
+        '<circle cx="6.5" cy="9.5" r="1" fill="#776b58"/>'),
     "pr_fire": _symbol("pr_fire",
         '<path d="M14 4c4 5 7 8 7 13a7 7 0 0 1-14 0c0-5 3-8 7-13z" fill="#e2762d" stroke="#8a3c14" stroke-width="1"/>'
         '<path d="M14 9c2.5 3.5 4.5 5.5 4.5 8.5a4.5 4.5 0 0 1-9 0c0-3 2-5 4.5-8.5z" fill="#f2a93b"/>'
@@ -263,11 +308,24 @@ PROPS: dict[str, str] = {
         '<ellipse cx="14" cy="12.6" rx="7" ry="5" fill="#000000" opacity="0.65"/>'
         '<path d="M6 16.5q4 4 12 2.7" stroke="#6a5c46" stroke-width="0.8" fill="none" opacity="0.7"/>'),
     "pr_tree": _symbol("pr_tree",
-        '<circle cx="14" cy="14" r="9.5" fill="#4a6a42" stroke="#26331f" stroke-width="1.1"/>'
-        '<circle cx="10" cy="11" r="4" fill="#567a4c"/>'
-        '<circle cx="18" cy="12" r="3.8" fill="#567a4c"/>'
-        '<circle cx="13" cy="18" r="4" fill="#43603b"/>'
-        '<circle cx="10.5" cy="10" r="2" fill="#6b8f5e"/>'),
+        '<circle cx="14" cy="14" r="9.2" fill="#4a6a42" stroke="#26331f" stroke-width="1.2"/>'
+        '<circle cx="9" cy="10" r="4.2" fill="#567a4c"/>'
+        '<circle cx="18.5" cy="10.5" r="3.6" fill="#516f47"/>'
+        '<circle cx="19" cy="17.5" r="3.8" fill="#43603b"/>'
+        '<circle cx="10.5" cy="18.5" r="4" fill="#47653f"/>'
+        '<circle cx="14" cy="13" r="3.6" fill="#5d8153"/>'
+        '<path d="M20.5 18.5A9.2 9.2 0 0 1 9.5 21.2" stroke="#33492d" stroke-width="1.6" fill="none" opacity="0.7"/>'
+        '<circle cx="9.5" cy="9.5" r="1.6" fill="#6f9163"/>'
+        '<circle cx="12.5" cy="11.5" r="1" fill="#6f9163"/>'),
+    "pr_tree_b": _symbol("pr_tree_b",
+        '<circle cx="14" cy="14" r="8.6" fill="#50704a" stroke="#26331f" stroke-width="1.2"/>'
+        '<circle cx="17.5" cy="9.5" r="4" fill="#5d8153"/>'
+        '<circle cx="9.5" cy="12" r="3.8" fill="#567a4c"/>'
+        '<circle cx="16.5" cy="18" r="4.2" fill="#43603b"/>'
+        '<circle cx="12" cy="16.5" r="3" fill="#4c6b44"/>'
+        '<path d="M19.8 18.8A8.6 8.6 0 0 1 10.2 20.8" stroke="#33492d" stroke-width="1.5" fill="none" opacity="0.7"/>'
+        '<circle cx="16.5" cy="8.5" r="1.5" fill="#75996a"/>'
+        '<circle cx="10" cy="11" r="1" fill="#6f9163"/>'),
     "pr_star": _symbol("pr_star",
         '<path d="M14 4l2.6 6.6 7.1.5-5.5 4.5 1.8 6.9-6-3.9-6 3.9 1.8-6.9-5.5-4.5 7.1-.5z" '
         'fill="#e8b73a" stroke="#7e5b14" stroke-width="1.1"/>'),
@@ -324,7 +382,9 @@ PROPS: dict[str, str] = {
         f'<ellipse cx="14" cy="16" rx="4.4" ry="7.6" fill="#7a5a3a" stroke="{_PK}" stroke-width="1.1"/>'
         f'<ellipse cx="14" cy="6.4" rx="2.4" ry="3.4" fill="#6b4d30" stroke="{_PK}" stroke-width="1"/>'
         f'<path d="M12.8 3.8l.5-1.4M15.2 3.8l-.5-1.4" stroke="{_PK}" stroke-width="0.9"/>'
-        '<path d="M14 9.5v8" stroke="#4f3a24" stroke-width="1.2"/>'
+        '<path d="M14 9.5v3" stroke="#4f3a24" stroke-width="1.2"/>'
+        f'<rect x="11.4" y="12.8" width="5.2" height="4.6" rx="1.2" fill="#8a3d2e" stroke="{_PK}" stroke-width="0.8"/>'
+        '<path d="M14 17.8v5" stroke="#4f3a24" stroke-width="1.2"/>'
         '<path d="M14 23.5q.4 2.4-1 3.2" stroke="#4f3a24" stroke-width="1.2" fill="none"/>'),
     "pr_web": _symbol("pr_web",
         '<g stroke="#cfc8b6" stroke-width="0.9" fill="none" opacity="0.9">'
@@ -342,6 +402,142 @@ PROPS: dict[str, str] = {
         '<circle cx="14" cy="14" r="9.6" fill="#79aec7" opacity="0.35"/>'
         '<path d="M14 4.4A9.6 9.6 0 1 1 4.4 14 7.4 7.4 0 1 0 11.8 6.6 5.2 5.2 0 1 1 6.6 11.8" '
         'fill="none" stroke="#2e6a8a" stroke-width="1.8" stroke-linecap="round"/>'),
+    "pr_down": _symbol("pr_down",
+        f'<path d="M14 6v11" stroke="{_PK}" stroke-width="2.4" stroke-linecap="round" opacity="0.6"/>'
+        f'<path d="M8.5 13.5L14 21l5.5-7.5" fill="none" stroke="{_PK}" stroke-width="2.4" '
+        'stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>'),
+    "pr_temple": _symbol("pr_temple",
+        f'<rect x="5" y="6" width="18" height="16" fill="#b3a689" stroke="{_PK}" stroke-width="1.2"/>'
+        '<rect x="9" y="10" width="10" height="8" fill="#9c8f74" stroke="#6f6350" stroke-width="0.8"/>'
+        '<g fill="#6f6350">'
+        '<circle cx="7.4" cy="8" r="1"/><circle cx="11.8" cy="8" r="1"/>'
+        '<circle cx="16.2" cy="8" r="1"/><circle cx="20.6" cy="8" r="1"/>'
+        '<circle cx="7.4" cy="20" r="1"/><circle cx="11.8" cy="20" r="1"/>'
+        '<circle cx="16.2" cy="20" r="1"/><circle cx="20.6" cy="20" r="1"/>'
+        '<circle cx="7.4" cy="14" r="1"/><circle cx="20.6" cy="14" r="1"/>'
+        '</g>'),
+    "pr_volcano": _symbol("pr_volcano",
+        f'<circle cx="14" cy="14" r="9.5" fill="#6b5344" stroke="{_PK}" stroke-width="1.2"/>'
+        '<circle cx="14" cy="14" r="5" fill="#3a2a20"/>'
+        '<circle cx="14" cy="14" r="3.2" fill="#d9542f"/>'
+        '<circle cx="13.2" cy="13.2" r="1.5" fill="#f2a93b"/>'
+        '<path d="M14 4.5v3M5 10l2.5 1.5M23 10l-2.5 1.5M6 20l2.6-1M22 20l-2.6-1" '
+        'stroke="#8a6a52" stroke-width="1"/>'),
+    "pr_statue": _symbol("pr_statue",
+        f'<path d="M14 4l10 10-10 10L4 14z" fill="#8d8577" stroke="{_PK}" stroke-width="1.1"/>'
+        '<circle cx="14" cy="14" r="5.6" fill="#a99f8d" stroke="#6f675c" stroke-width="0.8"/>'
+        '<circle cx="14" cy="12.6" r="2" fill="#6f675c"/>'
+        '<path d="M10.8 16.8q3.2-2.4 6.4 0" stroke="#6f675c" stroke-width="1.6" fill="none"/>'),
+    "pr_bridge": _symbol("pr_bridge",
+        f'<rect x="3" y="9" width="22" height="10" fill="#8a6a42" stroke="{_PK}" stroke-width="1.2"/>'
+        '<path d="M7 9v10M11 9v10M15 9v10M19 9v10M23 9v10" stroke="#6e4b26" stroke-width="1"/>'
+        '<path d="M3 9h22M3 19h22" stroke="#4f3a24" stroke-width="1.8"/>'),
+    "pr_target": _symbol("pr_target",
+        f'<circle cx="14" cy="14" r="9" fill="#ded5c0" stroke="{_PK}" stroke-width="1.1"/>'
+        '<circle cx="14" cy="14" r="6" fill="#c0392b"/>'
+        '<circle cx="14" cy="14" r="3.6" fill="#ded5c0"/>'
+        '<circle cx="14" cy="14" r="1.6" fill="#c0392b"/>'),
+    "pr_mural": _symbol("pr_mural",
+        f'<rect x="5" y="7" width="18" height="14" fill="#c9a13b" stroke="{_PK}" stroke-width="1.1"/>'
+        '<rect x="7.2" y="9.2" width="13.6" height="9.6" fill="#ded5c0"/>'
+        '<path d="M8.5 16.5l3-3.5 2.5 2.5 3-4 3.5 5" stroke="#8a7350" stroke-width="1" fill="none"/>'
+        '<circle cx="17.5" cy="11.5" r="1.2" fill="#d3a127"/>'),
+    "pr_sparkle": _symbol("pr_sparkle",
+        '<g fill="#e8c85a" stroke="#7e5b14" stroke-width="0.7">'
+        '<path d="M11 5l1.5 4.5L17 11l-4.5 1.5L11 17l-1.5-4.5L5 11l4.5-1.5z"/>'
+        '<path d="M20 4.5l.9 2.6 2.6.9-2.6.9-.9 2.6-.9-2.6-2.6-.9 2.6-.9z"/>'
+        '<path d="M18 15l1 3 3 1-3 1-1 3-1-3-3-1 3-1z"/>'
+        '</g>'),
+    "pr_swords": _symbol("pr_swords",
+        f'<path d="M7 5.8L21.4 20.2M21 5.8L6.6 20.2" stroke="{_PK}" stroke-width="3.8" stroke-linecap="round"/>'
+        '<path d="M7 5.8L21.4 20.2M21 5.8L6.6 20.2" stroke="#b9bfc4" stroke-width="2.2" stroke-linecap="round"/>'
+        '<path d="M6.2 10.4l4.2-4.2M17.6 6.2l4.2 4.2" stroke="#6e4b26" stroke-width="2"/>'
+        '<circle cx="6.4" cy="5.2" r="1.4" fill="#6e4b26"/>'
+        '<circle cx="21.6" cy="5.2" r="1.4" fill="#6e4b26"/>'),
+    "pr_coffin": _symbol("pr_coffin",
+        f'<path d="M10.5 4h7l3.5 6-2.5 14h-9L7 10z" fill="#7a5a38" stroke="{_PK}" stroke-width="1.1"/>'
+        '<path d="M7.6 10.6h12.8" stroke="#4f3a24" stroke-width="0.9"/>'
+        '<path d="M14 12.5v8M11.5 15.5h5" stroke="#4f3a24" stroke-width="1.1"/>'),
+    "pr_barrel": _symbol("pr_barrel",
+        f'<circle cx="14" cy="14" r="8.6" fill="#8a6a42" stroke="{_PK}" stroke-width="1.2"/>'
+        '<circle cx="14" cy="14" r="5.6" fill="none" stroke="#6e4b26" stroke-width="1"/>'
+        '<circle cx="14" cy="14" r="2" fill="#6e4b26"/>'
+        '<path d="M14 5.4v17.2M5.4 14h17.2" stroke="#4f3a24" stroke-width="1" opacity="0.55"/>'),
+    "pr_stairs": _symbol("pr_stairs",
+        '<g stroke="#6f6552" stroke-width="0.6">'
+        '<rect x="6" y="4.5" width="16" height="3.4" fill="#cbbfa4"/>'
+        '<rect x="6" y="8.4" width="16" height="3.4" fill="#b8ab8f"/>'
+        '<rect x="6" y="12.3" width="16" height="3.4" fill="#a4977c"/>'
+        '<rect x="6" y="16.2" width="16" height="3.4" fill="#8f836a"/>'
+        '<rect x="6" y="20.1" width="16" height="3.4" fill="#7a6f59"/>'
+        '</g>'),
+    "pr_bones": _symbol("pr_bones",
+        f'<path d="M8.5 8.5L19.5 19.5M19.5 8.5L8.5 19.5" stroke="{_PK}" stroke-width="4" stroke-linecap="round"/>'
+        '<path d="M8.5 8.5L19.5 19.5M19.5 8.5L8.5 19.5" stroke="#e8e2d2" stroke-width="2.4" stroke-linecap="round"/>'
+        '<g fill="#e8e2d2" stroke="#2f2415" stroke-width="0.6">'
+        '<circle cx="7.2" cy="9.4" r="1.5"/><circle cx="9.4" cy="7.2" r="1.5"/>'
+        '<circle cx="20.8" cy="18.6" r="1.5"/><circle cx="18.6" cy="20.8" r="1.5"/>'
+        '<circle cx="18.6" cy="7.2" r="1.5"/><circle cx="20.8" cy="9.4" r="1.5"/>'
+        '<circle cx="9.4" cy="20.8" r="1.5"/><circle cx="7.2" cy="18.6" r="1.5"/>'
+        '</g>'),
+    "pr_mushrooms": _symbol("pr_mushrooms",
+        '<rect x="9.2" y="13" width="2.6" height="7" rx="1.2" fill="#d9cfae" stroke="#8f8368" stroke-width="0.7"/>'
+        f'<path d="M4.5 13.5q6-9 12 0z" fill="#b3543f" stroke="{_PK}" stroke-width="1"/>'
+        '<circle cx="8" cy="10.8" r="0.9" fill="#e8dfc8"/>'
+        '<circle cx="12" cy="10" r="0.8" fill="#e8dfc8"/>'
+        '<circle cx="10.2" cy="12.4" r="0.7" fill="#e8dfc8"/>'
+        '<rect x="18.4" y="16" width="2" height="4.8" rx="1" fill="#d9cfae" stroke="#8f8368" stroke-width="0.6"/>'
+        f'<path d="M15.5 16.5q4-6 8 0z" fill="#c07a4a" stroke="{_PK}" stroke-width="0.9"/>'),
+    "pr_candles": _symbol("pr_candles",
+        '<ellipse cx="14" cy="21.5" rx="8" ry="2.4" fill="#d9cfae" stroke="#b3a78a" stroke-width="0.6"/>'
+        '<g fill="#e8e2d2" stroke="#b3a78a" stroke-width="0.6">'
+        '<rect x="8" y="12" width="2.6" height="8.5" rx="1"/>'
+        '<rect x="12.8" y="9.5" width="2.6" height="11" rx="1"/>'
+        '<rect x="17.6" y="13" width="2.6" height="7.5" rx="1"/>'
+        '</g>'
+        '<g fill="#f2a93b">'
+        '<ellipse cx="9.3" cy="10.6" rx="1" ry="1.6"/>'
+        '<ellipse cx="14.1" cy="8.1" rx="1" ry="1.6"/>'
+        '<ellipse cx="18.9" cy="11.6" rx="1" ry="1.6"/>'
+        '</g>'
+        '<circle cx="14.1" cy="8.4" r="0.5" fill="#f8d778"/>'),
+    "pr_bush": _symbol("pr_bush",
+        '<g stroke="#7d9c5e" stroke-width="1.2" fill="none" stroke-linecap="round">'
+        '<path d="M8 21q-1-5 0-9M10 21q0-6 2-9M12.5 21q1-5 3-8M17 21q0-5-1-8M19.5 21q1-4 2.5-7"/>'
+        '</g>'
+        '<g fill="#c9b45a">'
+        '<ellipse cx="8" cy="11.5" rx="1" ry="1.8"/>'
+        '<ellipse cx="12.3" cy="11.6" rx="1" ry="1.8"/>'
+        '<ellipse cx="15.8" cy="12.8" rx="0.9" ry="1.6"/>'
+        '<ellipse cx="22" cy="13.8" rx="0.9" ry="1.6"/>'
+        '</g>'),
+    "pr_tent": _symbol("pr_tent",
+        '<path d="M6 7l8-2 8 2v14l-8 2-8-2z" fill="#a8965f"/>'
+        '<path d="M14 5l8 2v14l-8 2z" fill="#8a7a50"/>'
+        '<path d="M14 5v18" stroke="#6f6144" stroke-width="1.4"/>'
+        f'<path d="M6 7l8-2 8 2v14l-8 2-8-2z" fill="none" stroke="{_PK}" stroke-width="1.1"/>'
+        '<path d="M6 7L3.5 4.5M22 7l2.5-2.5M6 21l-2.5 2.5M22 21l2.5 2.5" stroke="#6f6144" stroke-width="0.8"/>'),
+    "pr_crystal": _symbol("pr_crystal",
+        '<ellipse cx="14" cy="21.5" rx="6.5" ry="2" fill="#6f5a94" opacity="0.6"/>'
+        '<path d="M11 21L8 10l4-4 2 5z" fill="#9d7fd0" stroke="#4a3670" stroke-width="1"/>'
+        '<path d="M15 21l-1-9 4-5 3 7z" fill="#b79ae0" stroke="#4a3670" stroke-width="1"/>'
+        '<path d="M12 6.5l1.5 4M18 7l-1.5 4.5" stroke="#e2d4f4" stroke-width="0.8"/>'),
+    "pr_table": _symbol("pr_table",
+        f'<rect x="11.5" y="4.5" width="5" height="3" rx="1" fill="#6e4b26" stroke="{_PK}" stroke-width="0.8"/>'
+        f'<rect x="11.5" y="20.5" width="5" height="3" rx="1" fill="#6e4b26" stroke="{_PK}" stroke-width="0.8"/>'
+        f'<rect x="8" y="8.5" width="12" height="11" rx="1" fill="#8a6a42" stroke="{_PK}" stroke-width="1.1"/>'
+        '<path d="M10 11h8M10 14h8M10 17h8" stroke="#6e4b26" stroke-width="0.7"/>'),
+    "pr_lowwall": _symbol("pr_lowwall",
+        f'<rect x="4" y="10" width="20" height="8" fill="#9c7a5a" stroke="{_PK}" stroke-width="1.2"/>'
+        '<path d="M4 14h20M9 10v4M15 10v4M21 10v4M6 14v4M12 14v4M18 14v4" '
+        'stroke="#6e4b3a" stroke-width="0.8"/>'),
+}
+
+# deterministic per-cell shape variants (breaks repetition in fields of the
+# same prop: tree lines, rubble fields)
+VARIANTS: dict[str, list[str]] = {
+    "pr_tree": ["pr_tree", "pr_tree_b"],
+    "pr_rocks": ["pr_rocks", "pr_rocks_b"],
 }
 
 EMOJI_RANGES = (
@@ -675,8 +871,28 @@ def render_svg(grid: dict, source_name: str) -> str:
     used_pats = sorted({p for r in base.values() for p in r if p})
     unit_colors = sorted({SYMBOLS[e]["fill"] for e in used
                           if e in SYMBOLS and SYMBOLS[e]["mode"] == "unit"})
-    used_props = sorted({SYMBOLS[e]["prop"] for e in used
-                         if e in SYMBOLS and SYMBOLS[e].get("prop")})
+    prop_set: set[str] = set()
+    for e in used:
+        spec = SYMBOLS.get(e)
+        if spec and spec.get("prop"):
+            prop_set.update(VARIANTS.get(spec["prop"], [spec["prop"]]))
+    used_props = sorted(prop_set)
+
+    # organic terrain regions (computed early: defs need the heavy outline)
+    pat_cells: dict[str, set[tuple[int, int]]] = {}
+    for r, rn in enumerate(row_nums):
+        for c in range(n_cols):
+            p = base[rn][c]
+            if p is not None:
+                pat_cells.setdefault(p, set()).add((r, c))
+    order = [p for p in Z_ORDER if p in pat_cells] + \
+            sorted(p for p in pat_cells if p not in Z_ORDER)
+    paths = {p: _region_path(pat_cells[p], ox, oy) for p in order}
+    heavy_present = [p for p in order if p in HEAVY_PATS]
+    heavy_union = set()
+    for p in heavy_present:
+        heavy_union |= pat_cells[p]
+    heavy_union_d = _region_path(heavy_union, ox, oy) if heavy_union else ""
 
     out: list[str] = []
     out.append(
@@ -725,6 +941,11 @@ def render_svg(grid: dict, source_name: str) -> str:
         f'<clipPath id="clipgrid"><rect x="{ox}" y="{oy}" width="{grid_w}" '
         f'height="{grid_h}"/></clipPath>'
     )
+    if heavy_union_d:
+        defs.append(
+            f'<clipPath id="clipheavy"><path d="{heavy_union_d}" '
+            f'clip-rule="evenodd"/></clipPath>'
+        )
     for p in used_pats:
         defs.append(PATTERNS[p])
     for p in used_props:
@@ -764,21 +985,6 @@ def render_svg(grid: dict, source_name: str) -> str:
     )
 
     # --- organic terrain regions ----------------------------------------------
-    pat_cells: dict[str, set[tuple[int, int]]] = {}
-    for r, rn in enumerate(row_nums):
-        for c in range(n_cols):
-            p = base[rn][c]
-            if p is not None:
-                pat_cells.setdefault(p, set()).add((r, c))
-    order = [p for p in Z_ORDER if p in pat_cells] + \
-            sorted(p for p in pat_cells if p not in Z_ORDER)
-    paths = {p: _region_path(pat_cells[p], ox, oy) for p in order}
-    heavy_present = [p for p in order if p in HEAVY_PATS]
-    heavy_union = set()
-    for p in heavy_present:
-        heavy_union |= pat_cells[p]
-    heavy_union_d = _region_path(heavy_union, ox, oy) if heavy_union else ""
-
     out.append(f'<g clip-path="url(#clipgrid)">')
     # light terrains (slight self-stroke overlap hides seams between regions)
     for p in order:
@@ -836,8 +1042,16 @@ def render_svg(grid: dict, source_name: str) -> str:
     ) + "".join(
         f"M{ox} {oy + r * CELL}h{grid_w}" for r in range(0, n_rows + 1, 5)
     )
-    out.append(f'<path d="{grid_d}" stroke="#2e2313" stroke-width="0.5" opacity="0.16" fill="none"/>')
-    out.append(f'<path d="{grid5_d}" stroke="#2e2313" stroke-width="1.2" opacity="0.28" fill="none"/>')
+    out.append(f'<path d="{grid_d}" stroke="#2e2313" stroke-width="0.6" opacity="0.3" fill="none"/>')
+    out.append(f'<path d="{grid5_d}" stroke="#2e2313" stroke-width="1.4" opacity="0.48" fill="none"/>')
+    if heavy_union_d:
+        # light grid pass over dark solids, so squares stay countable there
+        out.append(
+            f'<g clip-path="url(#clipheavy)">'
+            f'<path d="{grid_d}" stroke="{PAPER}" stroke-width="0.6" opacity="0.16" fill="none"/>'
+            f'<path d="{grid5_d}" stroke="{PAPER}" stroke-width="1.4" opacity="0.26" fill="none"/>'
+            f'</g>'
+        )
 
     # --- illustrated props and unit tokens --------------------------------------
     for r, rn in enumerate(row_nums):
@@ -864,12 +1078,14 @@ def render_svg(grid: dict, source_name: str) -> str:
                     f'stroke="#ffffff" stroke-width="0.9" opacity="0.55"/>'
                 )
             elif spec and spec.get("prop"):
+                variants = VARIANTS.get(spec["prop"], [spec["prop"]])
+                prop = variants[(r * 7 + c * 13) % len(variants)]
                 out.append(
                     f'<ellipse cx="{cx + 1}" cy="{cy + 3}" rx="9" ry="4.5" '
                     f'fill="#241c10" opacity="0.2"/>'
                 )
                 out.append(
-                    f'<use href="#{spec["prop"]}" x="{x}" y="{y}" '
+                    f'<use href="#{prop}" x="{x}" y="{y}" '
                     f'width="{CELL}" height="{CELL}"/>'
                 )
             elif spec is None or spec["mode"] == "icon":

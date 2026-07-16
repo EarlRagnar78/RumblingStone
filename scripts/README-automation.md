@@ -34,7 +34,9 @@ python3 scripts/dm.py doctor                      # environment diagnosis
 | `validate_bestiario.py` | CI gate for the `Bestiario/` library: standard structure, `-crN` kebab naming, required headers, filename↔header CR match, catalog in sync. With `--rules` (non-blocking warning in CI): PF1e CR benchmark on hp/AC, `[INFERRED]` flag policy, mandatory `Boost log:` | `Bestiario/{mostri,villain,png}/**/*.md` + `monster_catalog.yaml` | exit 0/1 + violation list (runs in `.github/workflows/ci.yml`) |
 | `suggest_encounter.py` | 3–5 encounter proposals for a target EL | catalog + filters (env, faction, role, size) | markdown tables with CR math + source file links |
 | `suggest_map.py` | Pick a 5ft-square tactical grid (ASCII) | `scripts/map_templates/*.yaml` (11 included) | ready-to-print grid + legend + tactical notes |
-| `render_map_svg.py` | Render the arcs' emoji-grid maps to print-quality SVG (uniform palette, coordinates, scale bar, legend) | any `*MAPPE*`/`*Ultra-Clear*` markdown with emoji grids | `rendered/*.svg` next to the source (generated artifacts — the markdown stays the master) |
+| `render_map_svg.py` | Render the arcs' emoji-grid maps to print-quality SVG in the **"pergamena" illustrated style** (procedural terrain textures, inked boundaries, cast shadows, VTT-style tokens, coordinates, scale bar, legend — all deterministic, no external assets) | any `*MAPPE*`/`*Ultra-Clear*` markdown with emoji grids | `rendered/*.svg` next to the source (generated artifacts — the markdown stays the master) |
+| `import_watabou.py` | Convert a Watabou One Page Dungeon JSON export into an emoji-grid map master (template-conformant, ready for `render_map_svg.py`) | JSON exported from https://watabou.github.io/dungeon.html | a new `*.md` map master with grid + companion skeleton |
+| `export_map_png.py` | Rasterize a rendered map SVG to hi-res PNG (print, VTT, input for the optional local ComfyUI "hero map" pass) via a locally-installed Chromium/Chrome | `rendered/*.svg` | local PNG (gitignored — never committed) |
 | `update_xp.py` | Cumulative XP ledger per PC | `campaign/sessions/*.md` `## XP awarded` | `campaign/pg/xp-ledger.md` (auto) |
 | `state_sync.py` | Propose edits to `campaign/state.md` after a session | `## World events triggered` in session logs | markdown diff report (DM applies manually) |
 | `session_recap.py` | Spoiler-safe Italian recap for players (R.A. Salvatore tone) | last N session logs + state.md §0 public rows | `campaign/recaps/recap-YYYY-MM-DD.md` (+ optional PDF) |
@@ -60,6 +62,51 @@ python3 scripts/dm.py recap --hype                                    # 1-2 days
   existing one). `suggest_map.py` picks it up on next run.
 - **New trigger for state_sync**: edit the `TRIGGERS` regex list at the top
   of `scripts/state_sync.py`.
+
+## Mappe di qualità professionale (stile "pergamena")
+
+`render_map_svg.py` produce battle map illustrate in stile handout
+professionale (benchmark: le mappe ufficiali di *Red Hand of Doom* e gli
+export di Dungeon Scrawl/DungeonDraft): regioni terreno **organiche**
+(contorni tracciati e smussati, niente scalini), occlusione ambientale
+accanto ai muri, variazione tonale anti-ripetizione, e una **libreria di
+prop vettoriali originali** (porta, letto, cassa, braciere, albero,
+teschio…) al posto degli emoji — disegnati in-house seguendo le
+convenzioni della cartografia professionale, mai ricalcati da asset
+altrui. Tutta la grafica è **procedurale** (pattern, filtri e simboli
+SVG): niente asset esterni, niente vincoli di licenza, output
+byte-deterministico (requisito di `validate_maps.py` in CI). La legenda
+universale è estesa con i simboli locali più usati negli archi (⛰ montagne
+come terreno, ⬇🏛🌋🗿🌉🎯🖼✨⚔) e con il corredo classico da dungeon ed
+esterni (⚰🛢🪜🦴🍄🕯🌾⛺🔮🪑🧱) — la tabella `SYMBOLS` nel renderer è la
+fonte di verità.
+
+La pipeline completa (vedi `plans/RICERCA-GENERATORI-MAPPE-QUALITA-RHOD.md`
+per il razionale e le alternative valutate):
+
+1. **Mappe esistenti**: la griglia emoji resta il MASTER; ogni modifica al
+   markdown si rigenera con `python3 scripts/render_map_svg.py <file.md>`.
+2. **Nuovi dungeon**: generare il layout su
+   https://watabou.github.io/dungeon.html → Export JSON →
+   `python3 scripts/import_watabou.py dungeon.json -o <arco>/NUOVA-MAPPA.md`
+   → adattare la griglia e compilare i companion → renderizzare.
+3. **Mappe regionali** (Dalelands/Cannath Vale): Azgaar Fantasy Map
+   Generator (https://azgaar.github.io/Fantasy-Map-Generator/, MIT) —
+   committare il file `.map` come master + l'export SVG/PNG.
+4. **Città** (Rethmar, Palio): Medieval Fantasy City Generator
+   (https://watabou.github.io/city-generator/) — committare l'export SVG
+   annotando il **seed** nell'URL per la rigenerazione.
+5. **Hero map** (opzionale, richiede PC locale con GPU): passata pittorica
+   ComfyUI + ControlNet pilotata da Claude via comfyui-mcp, con il render
+   del repo come input strutturale — guida completa nella skill
+   `skills/rumblingstone-mapmaking/references/hero-map-comfyui.md`.
+   Output in `rendered/hero/` (gitignored, fuori CI).
+
+L'intero workflow è codificato nella skill **`rumblingstone-mapmaking`**
+(`skills/`): la build pipeline (`./scripts/build-skills.sh`) la distribuisce
+a Claude Code/Cursor/Windsurf come le altre skill del repo, così ogni
+sessione agente sa creare, modificare e renderizzare mappe senza contesto
+aggiuntivo.
 
 ## Design rules
 

@@ -331,3 +331,7 @@ __pycache__/
 .env
 # Homebrewery self-hosted (K-B4): clone di terze parti, non contenuto di campagna
 scripts/homebrew-local/homebrewery/
+# PNG di mappa: artefatti locali di export_map_png.py / passata hero ComfyUI
+# (il canone in repo sono gli SVG deterministici di rendered/)
+**/rendered/*.png
+**/rendered/hero/

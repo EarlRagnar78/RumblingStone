@@ -36,6 +36,7 @@ python3 scripts/dm.py doctor                      # environment diagnosis
 | `suggest_map.py` | Pick a 5ft-square tactical grid (ASCII) | `scripts/map_templates/*.yaml` (11 included) | ready-to-print grid + legend + tactical notes |
 | `render_map_svg.py` | Render the arcs' emoji-grid maps to print-quality SVG in the **"pergamena" illustrated style** (procedural terrain textures, inked boundaries, cast shadows, VTT-style tokens, coordinates, scale bar, legend — all deterministic, no external assets) | any `*MAPPE*`/`*Ultra-Clear*` markdown with emoji grids | `rendered/*.svg` next to the source (generated artifacts — the markdown stays the master) |
 | `import_watabou.py` | Convert a Watabou One Page Dungeon JSON export into an emoji-grid map master (template-conformant, ready for `render_map_svg.py`) | JSON exported from https://watabou.github.io/dungeon.html | a new `*.md` map master with grid + companion skeleton |
+| `export_map_png.py` | Rasterize a rendered map SVG to hi-res PNG (print, VTT, input for the optional local ComfyUI "hero map" pass) via a locally-installed Chromium/Chrome | `rendered/*.svg` | local PNG (gitignored — never committed) |
 | `update_xp.py` | Cumulative XP ledger per PC | `campaign/sessions/*.md` `## XP awarded` | `campaign/pg/xp-ledger.md` (auto) |
 | `state_sync.py` | Propose edits to `campaign/state.md` after a session | `## World events triggered` in session logs | markdown diff report (DM applies manually) |
 | `session_recap.py` | Spoiler-safe Italian recap for players (R.A. Salvatore tone) | last N session logs + state.md §0 public rows | `campaign/recaps/recap-YYYY-MM-DD.md` (+ optional PDF) |
@@ -95,6 +96,17 @@ per il razionale e le alternative valutate):
 4. **Città** (Rethmar, Palio): Medieval Fantasy City Generator
    (https://watabou.github.io/city-generator/) — committare l'export SVG
    annotando il **seed** nell'URL per la rigenerazione.
+5. **Hero map** (opzionale, richiede PC locale con GPU): passata pittorica
+   ComfyUI + ControlNet pilotata da Claude via comfyui-mcp, con il render
+   del repo come input strutturale — guida completa nella skill
+   `skills/rumblingstone-mapmaking/references/hero-map-comfyui.md`.
+   Output in `rendered/hero/` (gitignored, fuori CI).
+
+L'intero workflow è codificato nella skill **`rumblingstone-mapmaking`**
+(`skills/`): la build pipeline (`./scripts/build-skills.sh`) la distribuisce
+a Claude Code/Cursor/Windsurf come le altre skill del repo, così ogni
+sessione agente sa creare, modificare e renderizzare mappe senza contesto
+aggiuntivo.
 
 ## Design rules
 

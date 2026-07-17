@@ -3,11 +3,14 @@
 > **Versione**: v1 (2026-07-17) — **canone fornito dal DM** (file "Fazioni",
 > corrispondenze contrade ↔ nomi FR dei quartieri) integrato col canone
 > esistente di `...P2D-PALIO-CONTRADE-STEMMI-CANTI.md` (divinità, patroni e
-> Meraviglie combaciano ✓). Mappa: `P2D-Palio-Allegati/mappe/channathgate-citta.svg`
-> (i nomi inglesi sotto sono quelli stampati sulla pianta).
-> Tavola panoramica illustrata: salvarla come
-> `P2D-Palio-Allegati/immagini/channathgate-panorama.webp` (fornita dal DM
-> in chat 2026-07-17; non ancora nel repo).
+> Meraviglie combaciano ✓). Mappa master della città:
+> `P2D-Palio-Allegati/immagini/channathgate-mappa.png` (pianta illustrata coi
+> nomi FR dei quartieri; schema vettoriale di servizio: `mappe/channathgate-citta.svg`).
+> Vista cinematografica della Piazza (aerea + livello strada verso The Seat):
+> `P2D-Palio-Allegati/immagini/piazza-del-palio-panorama.png`.
+> ⚠️ I due PNG sono forniti dal DM (chat 2026-07-17) e vanno caricati in
+> `P2D-Palio-Allegati/immagini/` — le immagini incollate in chat non
+> arrivano come file all'engine.
 
 ---
 

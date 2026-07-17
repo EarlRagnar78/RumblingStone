@@ -10,6 +10,12 @@
 
 ![Piazza del Palio](P2D-Palio-Allegati/mappe/piazza-del-palio.svg)
 
+**Vista cinematografica** (tavola illustrata della Piazza — veduta aerea del
+Campo e vista a livello strada verso "The Seat"; fornita dal DM 2026-07-17,
+da usare come handout d'atmosfera e schermo d'apertura del Giorno 3):
+
+![Vista cinematografica della Piazza del Palio](P2D-Palio-Allegati/immagini/piazza-del-palio-panorama.png)
+
 Anello a **conchiglia**, senso **orario**, **3 giri**, fondo di **tufo**. Sei Zone (Chase),
 quattro curve pericolose (dettaglio regole in GIORNO3-4 §4):
 - **Zona 1** Rettilineo dei Banchi (DC 18) — sorpassi/nerbate.
@@ -26,7 +32,10 @@ che ci finisce è "salvo" ma fuori gara; un PG a piedi può muoversi nella ressa
 ---
 
 ## 2. Channathgate — la città e gli otto rioni
-**File**: `P2D-Palio-Allegati/mappe/channathgate-citta.svg`
+**File**: `P2D-Palio-Allegati/immagini/channathgate-mappa.png` (pianta
+illustrata coi nomi FR dei quartieri — **master visivo della città**, DM
+2026-07-17; corrispondenze in `...P2D-PALIO-DISTRETTI-CHANNATHGATE.md`).
+Schema vettoriale di servizio: `P2D-Palio-Allegati/mappe/channathgate-citta.svg`
 
 ![Channathgate](P2D-Palio-Allegati/mappe/channathgate-citta.svg)
 

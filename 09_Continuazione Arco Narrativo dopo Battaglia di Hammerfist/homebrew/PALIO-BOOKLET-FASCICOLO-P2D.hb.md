@@ -31,11 +31,13 @@ ___
 
 # Channathgate, la Porta del Cannath
 
-![Pianta di Channathgate](../P2D-Palio-Allegati/mappe/channathgate-citta.svg)
+![Pianta di Channathgate — i quartieri delle otto contrade](../P2D-Palio-Allegati/immagini/channathgate-mappa.png)
 
-<!-- Tavola panoramica illustrata (vista aerea del Campo + vista su The Seat):
-     salvarla come P2D-Palio-Allegati/immagini/channathgate-panorama.webp
-     e caricarla sul brew:  ![Panorama](URL){width:100%}  -->
+<!-- Immagine di copertina/città: P2D-Palio-Allegati/immagini/channathgate-mappa.png
+     (pianta illustrata, DM 2026-07-17). Vista cinematografica della Piazza:
+     P2D-Palio-Allegati/immagini/piazza-del-palio-panorama.png (usata nel
+     capitolo Mappe §1 e come handout). Sul brew: carica i file e usa
+     ![...](URL){width:100%} -->
 
 {{descriptive
 *C'è un'ora, nella piana rovente tra il fiume e il deserto, in cui la

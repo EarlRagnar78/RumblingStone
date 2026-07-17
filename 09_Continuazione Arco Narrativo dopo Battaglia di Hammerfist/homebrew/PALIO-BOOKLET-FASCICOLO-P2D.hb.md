@@ -29,6 +29,51 @@ ___
 
 \page
 
+# Channathgate, la Porta del Cannath
+
+![Pianta di Channathgate](../P2D-Palio-Allegati/mappe/channathgate-citta.svg)
+
+<!-- Tavola panoramica illustrata (vista aerea del Campo + vista su The Seat):
+     salvarla come P2D-Palio-Allegati/immagini/channathgate-panorama.webp
+     e caricarla sul brew:  ![Panorama](URL){width:100%}  -->
+
+{{descriptive
+*C'è un'ora, nella piana rovente tra il fiume e il deserto, in cui la
+luce smette di essere luce e diventa oro battuto. È l'ora in cui
+Channathgate si sveglia. Come le città dei racconti che i mercanti
+sussurrano nelle mille e una notte di carovana — minareti di pietra
+chiara, cupole che bevono il tramonto, bazar che profumano di zafferano
+e di ferro — e insieme come l'ultimo bastione levantino di un regno in
+guerra: perché oltre la foschia di calore, a nord, marcia un'orda, e
+questa piana calda e polverosa sta al fronte come i campi che dividono
+la città della torre bianca dalla fortezza in rovina sull'altra riva.
+Otto rioni, un fiume, una piazza a ventaglio. E domani, novanta secondi
+che valgono una guerra.*
+}}
+
+## I Distretti — guida rapida della città
+
+*(canone completo, lore e corrispondenze:
+`...P2D-PALIO-DISTRETTI-CHANNATHGATE.md`, stile "Guida di Volo")*
+
+| Quartiere (mappa) | Contrada | In una riga |
+|:--|:--|:--|
+| **The Golden Plume** | L'Oca | canali dorati e banche di marmo; vinse "La Resa" comprando i debiti dei rivali |
+| **The Iron Bastion** | La Torre | il rione-fortezza dell'esercito; alla porta dorme il **Golem d'Assedio** |
+| **The Silver Weft** | Il Bruco | sete d'argento sopra, **Piaga Chimica dei Canali** e mercato nero sotto |
+| **The Quill-Wood Refuge** | L'Istrice | santuario dei profughi di Lorana; i rovi del **Mythal della Selva Viva** |
+| **The Spell-Wyrm Spires** | Il Drago | l'enclave dei maghi e il **Quasi-Mythal** che spoglia i draghi in volo |
+| **The Whispering Shadows** | La Civetta | vicoli avvolti nei **Muri Illusori**; i segreti sono la valuta |
+| **The Gilded Horn** | L'Unicorno | teatri e salotti; l'**Arpa della Tempesta** che tesse il meteo |
+| **The Tidal Crest** | L'Onda | le rive, le chiuse e la milizia della **Marea Montante** |
+| **The Sovereign Ring** | Il Campo | la piazza neutrale a ventaglio: la pista del Palio |
+| **"The Seat"** | il palazzo del Consiglio | 4 nomi cerimoniali proposti — vedi DISTRETTI §Palazzo |
+
+{{pageNumber,auto}}
+{{footnote IL PALIO DI CHANNATHGATE · ARC-09 P2D}}
+
+\page
+
 # La Presentazione del Palio
 
 {{descriptive
@@ -85,16 +130,16 @@ Rethmar**. Se vince l'Oca, la città vota la **resa**.
 `P2D-Palio-Allegati/stemmi/`; canti completi e regola dei duelli in
 `...PALIO-BALLATE.md`)*
 
-| Contrada | Motto (ritornello) | Canto | Divinità | Voto |
-|:--|:--|:--|:--|:--|
-| **L'Oca** | *"Al suono dell'oro, all'armi"* | L'Aria dei Conti | Waukeen | **Resa** |
-| **La Torre** | *"Oltre il ferro, la volontà"* | L'Inno delle Cento Asce | Torm/Tempus | Difesa |
-| **Il Bruco** | *"Nell'ombra mi rivolto"* | La Filastrocca del Nervo | Mask | *(esterno)* |
-| **L'Istrice** | *"Pungo solo chi mi assale"* | Il Lamento del Traghetto | Ilmater/Chauntea | Difesa (non uff.) |
-| **Il Drago** | *"Il cuore che arde parla in fiamme"* | Le Sette Note della Trama | Mystra | Astensione |
-| **La Civetta** | *"Guardo dove la notte tace"* | La Ninna dell'Ombra | Shar | *(esterno)* |
-| **L'Unicorno** | *"Ferisce e sana il corno che porto"* | L'Aria del Corno | Sune/Milil | Volatile |
-| **L'Onda** | *"Il cielo mi colora, il fiume mi arma"* | La Barcarola del Guado | Valkur/Selûne | *(città ospite)* |
+| Contrada | Quartiere (mappa) | Motto (ritornello) | Canto | Divinità | Voto |
+|:--|:--|:--|:--|:--|:--|
+| **L'Oca** | Golden Plume | *"Al suono dell'oro, all'armi"* | L'Aria dei Conti | Waukeen | **Resa** |
+| **La Torre** | Iron Bastion | *"Oltre il ferro, la volontà"* | L'Inno delle Cento Asce | Torm/Tempus | Difesa |
+| **Il Bruco** | Silver Weft | *"Nell'ombra mi rivolto"* | La Filastrocca del Nervo | Mask | *(esterno)* |
+| **L'Istrice** | Quill-Wood Refuge | *"Pungo solo chi mi assale"* | Il Lamento del Traghetto | Ilmater/Chauntea | Difesa (non uff.) |
+| **Il Drago** | Spell-Wyrm Spires | *"Il cuore che arde parla in fiamme"* | Le Sette Note della Trama | Mystra | Astensione |
+| **La Civetta** | Whispering Shadows | *"Guardo dove la notte tace"* | La Ninna dell'Ombra | Shar | *(esterno)* |
+| **L'Unicorno** | Gilded Horn | *"Ferisce e sana il corno che porto"* | L'Aria del Corno | Sune/Milil | Volatile |
+| **L'Onda** | Tidal Crest | *"Il cielo mi colora, il fiume mi arma"* | La Barcarola del Guado | Valkur/Selûne | *(città ospite)* |
 
 {{note
 ##### Le Meraviglie d'assedio (il perché la corsa conta)

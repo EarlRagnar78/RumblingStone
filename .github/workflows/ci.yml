@@ -49,8 +49,18 @@ jobs:
           python scripts/build_monster_catalog.py --help > /dev/null
           python scripts/validate_bestiario.py --help > /dev/null
           python scripts/render_map_svg.py --help > /dev/null
+          python scripts/compile_map_json.py --help > /dev/null
+          python scripts/export_uvtt.py --help > /dev/null
           python scripts/update_xp.py --check > /dev/null
           python scripts/hype_homebrew.py --help > /dev/null
+
+      - name: Map JSON contract + UVTT export round-trip (M1/M2)
+        run: |
+          python scripts/compile_map_json.py scripts/examples/esempio-accampamento-mano-rossa.json --validate-only
+          python scripts/compile_map_json.py scripts/examples/esempio-accampamento-mano-rossa.json -o /tmp/ci-map.md
+          python scripts/render_map_svg.py /tmp/ci-map.md > /dev/null
+          python scripts/export_uvtt.py /tmp/ci-map.md -o /tmp/ci-vtt
+          python -c "import json,glob; d=json.load(open(glob.glob('/tmp/ci-vtt/*.uvtt')[0])); assert d['line_of_sight'] and d['portals'] and d['lights'], 'UVTT vuoto'; print('UVTT OK:', len(d['line_of_sight']),'muri')"
 
       - name: dm.py unified CLI smoke test (K-C3)
         run: |

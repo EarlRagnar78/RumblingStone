@@ -85,6 +85,18 @@ It covers:
 
 Blank templates for a fresh group live in `campaign/templates/`.
 
+## Sviluppo & automazione — dove trovare le cose
+
+Indice unico dei documenti "di sviluppo" del repo (roadmap, script, container):
+
+| Vuoi… | Documento |
+|---|---|
+| **Roadmap / cosa manca / cosa migliorare** (stato piani, %, gate, prossimi passaggi) | [`plans/INDEX.md`](plans/INDEX.md) — con [`plans/CHANGELOG.md`](plans/CHANGELOG.md) per la storia lotto-per-lotto |
+| **Script DM: cosa fanno, quali parametri, cosa producono** (tool map completa + `dm.py`) | [`scripts/README-automation.md`](scripts/README-automation.md) |
+| **Container in locale** (Homebrewery self-hosted, nativo o Docker chiavi-in-mano) | [`scripts/homebrew-local/README.md`](scripts/homebrew-local/README.md) |
+| **Perché delle scelte strutturali** (decisioni architetturali) | [`plans/adr/`](plans/adr/) — incl. ADR-0004 (container) e ADR-0005 (confini IP) |
+| **Disciplina di tracciatura** (regola d'oro: chiudo un lotto → aggiorno checklist + INDEX + CHANGELOG) | skill [`skills/rumblingstone-plans/`](skills/rumblingstone-plans/SKILL.md) |
+
 ## Setup Instructions
 
 1. Clone the repository to your local machine.
@@ -94,3 +106,5 @@ Blank templates for a fresh group live in `campaign/templates/`.
 ## Licensing Information
 
 This project contains private lore adaptations based on *Red Hand of Doom*. Mechanical content belongs to the respective owners of the D&D 3.5 OGL/SRD.
+
+Il repo è a **uso privato / non commerciale**: contiene IP di terzi (Wizards of the Coast / Forgotten Realms non-SRD) che nessuna licenza dell'autore può sanare, e l'arco "Palio di Channathgate" evoca segni tutelati del Palio di Siena. La posture per scenario d'uso (privato OK · pubblicazione gratuita a rischio basso · commerciale non conforme senza bonifiche) e la relativa checklist sono in [`plans/adr/ADR-0005`](plans/adr/ADR-0005-confini-ip-uso-non-commerciale.md) e nel rapporto `09_.../Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md`.

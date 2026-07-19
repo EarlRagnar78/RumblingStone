@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "title": "Campo Drow 1 — Burning Operations Base (ricostruzione JSON)",
+  "scale_m_per_square": 1.5,
+  "map_size": [53, 40],
+  "base_terrain": "🌲",
+  "north": "N",
+  "movements": [
+    { "name": "Pattuglia Nord", "path": [[12, 5], [24, 5], [24, 14], [12, 14]], "loop": true, "color": "#d62828" },
+    { "name": "Pattuglia Sud", "path": [[14, 32], [25, 32], [25, 37], [14, 37]], "loop": true, "color": "#1d6fd8" }
+  ],
+  "regions": [
+    { "terrain": "🟩", "rect": [2, 3, 46, 35], "label": "Radura del campo (clearing)" }
+  ],
+  "structures": [
+    { "type": "⬛", "rect": [8, 7, 24, 13], "label": "Zona tende (Col I-AF, righe 08-20): 15 tende" },
+    { "type": "⬛", "rect": [7, 23, 13, 4], "label": "Command tent (Col H-T, righe 24-27)" },
+    { "type": "⬛", "rect": [7, 28, 13, 3], "label": "Cucina & supplies (Col H-T, righe 29-31)" },
+    { "type": "🏺", "at": [14, 24] }, { "type": "🏺", "at": [15, 24] }, { "type": "🏺", "at": [16, 24] },
+    { "type": "🏺", "at": [14, 29] }, { "type": "🏺", "at": [15, 29] }, { "type": "🏺", "at": [16, 29] }
+  ],
+  "hazards": [
+    { "type": "🔥", "rect": [12, 19, 9, 3], "label": "Incinerator (Col N-T, righe 20-22)", "effect": "2d6 fuoco entro 3m, 4d6 dentro; luce 36m raggio" },
+    { "type": "🔔", "at": [4, 3], "label": "Tripwire alarm (Col E-AJ, riga 04)", "effect": "Osservare CD 22; Disattivare Congegni CD 20; se scatta, allarme a tutti i drow" }
+  ],
+  "units": [
+    { "faction": "Drow", "name": "Commander 1", "token": "⚫", "at": [9, 24], "cr": "Fighter 10", "note": "J25, planning map" },
+    { "faction": "Drow", "name": "Commander 2", "token": "⚫", "at": [9, 26], "cr": "Fighter 10", "note": "J27, sleeping" },
+    { "faction": "Drow", "name": "Pyromancer 1", "token": "🟡", "at": [14, 11], "cr": "Wizard 8", "note": "O12" },
+    { "faction": "Drow", "name": "Pyromancer 2", "token": "🟡", "at": [21, 11], "cr": "Wizard 8", "note": "V12" },
+    { "faction": "Drow", "name": "Pyromancer 3", "token": "🟡", "at": [20, 24], "cr": "Wizard 8", "note": "U25" },
+    { "faction": "Drow", "name": "Pyromancer 4", "token": "🟡", "at": [20, 26], "cr": "Wizard 8", "note": "U27" },
+    { "faction": "Drow", "name": "Pyromancer 5", "token": "🟡", "at": [12, 29], "cr": "Wizard 8", "note": "M30" },
+    { "faction": "Drow", "name": "Patrol 1", "token": "🔴", "at": [12, 5], "cr": "Fighter 7", "note": "M06 (etichetta master)" },
+    { "faction": "Drow", "name": "Patrol 2", "token": "🔴", "at": [34, 5], "cr": "Fighter 7", "note": "AI06 (etichetta master)" },
+    { "faction": "Drow", "name": "Patrol 3", "token": "🔴", "at": [14, 32], "cr": "Fighter 7", "note": "O33" },
+    { "faction": "Drow", "name": "Patrol 4", "token": "🔴", "at": [25, 32], "cr": "Fighter 7", "note": "Z33" },
+    { "faction": "Drow", "name": "Patrol 5", "token": "🔴", "at": [20, 34], "cr": "Fighter 7", "note": "U35 solo scout" },
+    { "faction": "Drow", "name": "Guardia J30", "token": "🔴", "at": [9, 29], "cr": "Fighter 6", "note": "J30" },
+    { "faction": "Drow", "name": "Guardia U30", "token": "🔴", "at": [20, 29], "cr": "Fighter 6", "note": "U30" }
+  ],
+  "notes": [
+    "Ricostruzione a scopo di verifica: le coordinate provengono dal master Ultra-Clear SUPPLEMENTO-P1C (Campo Drow 1).",
+    "Se scatta il tripwire (riga 04): allarme a tutto il campo, sorpresa persa."
+  ]
+}

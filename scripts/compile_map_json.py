@@ -25,6 +25,13 @@ Army abstraction: units are UNITS/OCCUPIED-AREAS, not one token per soldier
 companion table, never N separate tokens — so the LLM context never has to
 track every creature.
 
+Professional overlay: the JSON's `north`, `movements` (patrol routes), unit
+roster and labelled areas are emitted as `@`-directives inside the fenced
+block (@north / @path / @mark / @zone). render_map_svg.py draws them as a
+compass, dashed movement arrows, numbered callouts and zone brackets, plus an
+"INDICAZIONI" legend — so the rendered map carries positions, movements,
+orientation and references (not just the bare grid).
+
 Validation is pure standard library (no external deps, matching the rest of
 the repo). The JSON Schema file is provided for editors/interop; `pydantic`
 would be an equivalent stricter option but is intentionally NOT a dependency.
@@ -190,6 +197,25 @@ def validate(spec: dict) -> tuple[int, int]:
         else:
             in_bounds(l["at"][0], l["at"][1], w)
 
+    # north / orientation
+    north = spec.get("north")
+    if north is not None:
+        ok = isinstance(north, str) and (
+            north.upper() in {"N", "NE", "E", "SE", "S", "SW", "W", "NW"}
+            or north.replace(".", "", 1).isdigit())
+        if not ok:
+            errors.append("'north': usa N/NE/E/SE/S/SW/W/NW o gradi (0-359).")
+
+    # movements — patrol routes
+    for i, mv in enumerate(spec.get("movements", []) or []):
+        w = f"movements[{i}]"
+        path = mv.get("path")
+        if not (isinstance(path, list) and len(path) >= 2 and all(_is_coord(p) for p in path)):
+            errors.append(f"{w}: 'path' deve avere >=2 waypoint [x,y].")
+        else:
+            for p in path:
+                in_bounds(p[0], p[1], w)
+
     # units — army abstraction
     for i, u in enumerate(spec.get("units", []) or []):
         w = f"units[{i}]"
@@ -324,6 +350,49 @@ def _coord_label(x: int, y: int) -> str:
     return f"{rms.col_label(x)}{y + 1}"
 
 
+def _unit_cell(u: dict) -> tuple[int, int] | None:
+    if "at" in u and _is_coord(u["at"]):
+        return tuple(u["at"])
+    if "area" in u and isinstance(u["area"], dict) and "rect" in u["area"]:
+        x, y, w, h = u["area"]["rect"]
+        return x + w // 2, y + h // 2
+    return None
+
+
+def _annotation_lines(spec: dict) -> list[str]:
+    """Render the JSON's orientation, movements, unit roster and labelled
+    areas as `@`-directives that render_map_svg.py draws as an overlay."""
+    lines: list[str] = []
+    if spec.get("north"):
+        lines.append(f"@north {spec['north']}")
+
+    # numbered roster (one @mark per unit)
+    for i, u in enumerate(spec.get("units", []) or [], 1):
+        cell = _unit_cell(u)
+        if not cell:
+            continue
+        name = u.get("name", SYMBOLS.get(u["token"], {}).get("it", u["token"]))
+        if u.get("cr"):
+            name = f"{name} ({u['cr']})"
+        lines.append(f"@mark {i} ; {_coord_label(*cell)} ; {name}")
+
+    # movement routes
+    for mv in spec.get("movements", []) or []:
+        pts = " ".join(_coord_label(*p) for p in mv["path"])
+        if mv.get("loop"):
+            pts += " loop"
+        color = mv.get("color", "#c81d25")
+        lines.append(f"@path {mv.get('name', 'Rotta')} ; {pts} ; {color}")
+
+    # labelled areas (structures/hazards with rect + label)
+    for obj in (spec.get("structures", []) or []) + (spec.get("hazards", []) or []):
+        if "rect" in obj and obj.get("label"):
+            x, y, w, h = obj["rect"]
+            lines.append(f"@zone {_coord_label(x, y)}-{_coord_label(x + w - 1, y + h - 1)}"
+                         f" ; {obj['label']}")
+    return lines
+
+
 def emit_master(spec: dict, grid: list[list[str]]) -> str:
     cols = len(grid[0])
     rows = len(grid)
@@ -357,6 +426,12 @@ def emit_master(spec: dict, grid: list[list[str]]) -> str:
     for y in range(rows):
         cells = " ".join(grid[y])
         out.append(f"{y + 1:02d} {cells}")
+
+    # --- annotation directives (compass, routes, callouts, zones) -----------
+    ann_lines = _annotation_lines(spec)
+    if ann_lines:
+        out.append("")
+        out.extend(ann_lines)
     out.append("```")
     out.append("")
 

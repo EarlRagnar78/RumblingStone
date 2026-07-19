@@ -35,6 +35,30 @@
       "description": "Simbolo di terreno usato per riempire le celle vuote. Deve essere un simbolo 'fill' della legenda universale (SYMBOLS in render_map_svg.py). Default: pianura.",
       "default": "🟩"
     },
+    "north": {
+      "type": "string",
+      "description": "Orientamento cartografico: verso in alto della mappa. Valori N/NE/E/SE/S/SW/W/NW oppure gradi (0-359). Ruota la bussola nell'SVG. Default: N (nord in alto)."
+    },
+    "movements": {
+      "type": "array",
+      "description": "Rotte di movimento / pattuglie: rese come frecce tratteggiate sull'SVG + voce nella legenda INDICAZIONI.",
+      "items": {
+        "type": "object",
+        "required": ["path"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "description": "Etichetta della rotta (es. 'Pattuglia 1')." },
+          "path": {
+            "type": "array",
+            "description": "Waypoint [[x,y], ...] (>=2) nell'ordine di percorrenza.",
+            "items": { "type": "array", "items": { "type": "integer" }, "minItems": 2, "maxItems": 2 },
+            "minItems": 2
+          },
+          "loop": { "type": "boolean", "description": "Se true, la rotta si chiude sull'inizio (giro ciclico)." },
+          "color": { "type": "string", "description": "Colore esadecimale della rotta (#rrggbb)." }
+        }
+      }
+    },
     "regions": {
       "type": "array",
       "description": "Aree di terreno dipinte per prime (foreste, acqua, strade, pavimenti...). Ogni regione usa rect [x,y,w,h] OPPURE polygon.",

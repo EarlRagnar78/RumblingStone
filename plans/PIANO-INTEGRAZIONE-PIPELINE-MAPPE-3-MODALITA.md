@@ -110,6 +110,23 @@ realizzata di fatto.
   `setup-distrobox.sh` / `start.sh` / `stop.sh` (wrapper sottili, comandi
   ufficiali). Clone e pesi **gitignorati**, host immutabile mai toccato.
 
+### Lotto M5 — Overlay professionale mappe (bussola, movimenti, callout, zone) ✅
+> Follow-up del 2026-07-19: richiesta DM di rendere "professionale" l'output —
+> posizioni, movimenti, leggende e **orientamento a Nord** — sulle mappe drow
+> Ultra-Clear (quest di Hella).
+- `render_map_svg.py`: direttive `@` opzionali nel blocco griglia (dopo le
+  righe) → **bussola** (sempre, `@north` la ruota), **rotte di movimento**
+  tratteggiate con freccia (`@path`), **roster numerato** sui token (`@mark`),
+  **zone etichettate** (`@zone`), più una legenda **INDICAZIONI**. Deterministico,
+  XML valido. Cfr. **ADR-0006**.
+- `compile_map_json.py` + schema: nuovi campi `north` e `movements`; il
+  compilatore emette le direttive dal JSON (roster dai `name`/`cr`, zone dai
+  `label`). Coordinate esatte per costruzione (nessun drift ASCII).
+- Esempio committato + validato: `scripts/examples/campo-drow-1.*`
+  (ricostruzione "Campo Drow 1"): token alle coordinate dichiarate (14/14),
+  mentre l'ASCII a mano originale ne aveva 4/14 (drift ~1 quadretto).
+- Tutti i 16 SVG committati rigenerati (bussola globale); `validate_maps` verde.
+
 ### Lotto M4 — Documentazione e modello mentale (G5, G6) ✅
 - `skills/rumblingstone-mapmaking/references/tre-modalita-mappe.md` — le 3
   modalità, il contratto JSON, il **system prompt per l'LLM**, i formati di
@@ -129,6 +146,7 @@ realizzata di fatto.
 - [x] M2 — `export_uvtt.py` (testato: 20 muri / 1 porta / 2 luci sull'esempio)
 - [x] M3 — `scripts/comfyui-local/` (README + 3 wrapper, syntax-checked)
 - [x] M4 — 2 reference skill + aggiornamenti SKILL.md/README-automation/.gitignore/ci.yml
+- [x] M5 — overlay professionale (bussola/movimenti/callout/zone) in renderer+compilatore; ADR-0006; esempio `campo-drow-1.*`; 16 SVG rigenerati
 - [x] Gate locali verdi: `compileall`, `validate_maps.py`, `validate_skills.py`
 - [ ] **Collaudo al tavolo (DM, gated)**: (a) generare una mappa Mod. 3 reale
       da JSON per un incontro di ARC-08/09 e renderla; (b) importare un `.uvtt`

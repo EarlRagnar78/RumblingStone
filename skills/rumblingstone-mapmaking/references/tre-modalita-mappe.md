@@ -131,6 +131,39 @@ Coordinate: `[x, y]` con **x = colonna** (0-based, sinistra→destra) e
 **y = riga** (0-based, alto→basso). Simboli ammessi: solo quelli della legenda
 universale (`SYMBOLS` in `render_map_svg.py`) — il validatore rifiuta il resto.
 
+### Overlay professionale: orientamento, movimenti, callout, zone
+
+Perché una mappa "si capisca" servono anche **Nord**, **movimenti** e
+**riferimenti**. Il JSON li dichiara e il renderer li disegna come overlay +
+una legenda **INDICAZIONI**:
+
+- `"north": "N"` (o NE/E/…/gradi) → **bussola** orientata nell'SVG.
+- `"movements": [{ "name": "Pattuglia 1", "path": [[12,5],[24,5],[24,14],[12,14]], "loop": true, "color": "#d62828" }]`
+  → **rotte tratteggiate** con freccia e voce in legenda.
+- il **roster numerato** (badge 1..N sui token) è generato dai `name`/`cr` delle `units`.
+- le **zone etichettate** (tende, comando, incineratore…) dai `label` di `structures`/`hazards` con `rect`.
+
+Sotto il cofano il compilatore scrive queste **direttive `@`** nel blocco della
+griglia (dopo le righe), e `render_map_svg.py` le rende:
+
+```
+@north N
+@mark 1 ; J25 ; Comandante 1 (Fighter 10)
+@path Pattuglia Nord ; M6 Y6 Y15 M15 loop ; #d62828
+@zone I8-AF20 ; Zona tende (15 tende)
+```
+
+Le coordinate delle direttive usano le **etichette A1** (lettera colonna +
+numero riga stampato, es. `M6`). Puoi anche aggiungerle a mano a una mappa
+scritta a mano: sono ignorate dal parser della griglia.
+
+Esempio completo committato e validato in CI:
+`scripts/examples/campo-drow-1.json` → `campo-drow-1.md` →
+`rendered/campo-drow-1_map01_*.svg` (bussola, 2 rotte pattuglia, roster 1-14,
+4 zone). È la ricostruzione dell'Ultra-Clear "Campo Drow 1" (quest di Hella):
+le coordinate dei token coincidono **esattamente** con quelle dichiarate,
+mentre l'ASCII a mano originale aveva ~1 quadretto di drift.
+
 ### "System prompt" da dare all'LLM per la Modalità 3
 
 > Sei un cartografo tattico per D&D 3.5 / Pathfinder 1E. **Non** produrre mai

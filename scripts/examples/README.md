@@ -8,6 +8,7 @@ progettare una mappa tattica con strutture ed eserciti (vedi
 | File | Cosa mostra |
 |---|---|
 | `esempio-accampamento-mano-rossa.json` | Accampamento della Mano Rossa: foresta + strada + guado, palizzata di legno con cancello, tenda di comando, bracieri (luci), fossa-trappola, **unità di esercito per aree occupate** (arcieri/fanteria hobgoblin con `quantity`, Wyrmlord e adepto come token singoli). |
+| `campo-drow-1.json` (+ `campo-drow-1.md`, `rendered/…svg`) | Ricostruzione dell'Ultra-Clear **Campo Drow 1** (quest di Hella) con l'**overlay professionale**: `north` (bussola), `movements` (2 rotte pattuglia con `loop`), roster numerato 1-14 dai `name`/`cr` delle unità, 4 zone etichettate (tende/comando/cucina/incineratore). Le coordinate dei token coincidono **esattamente** con quelle dichiarate nel master originale (l'ASCII a mano aveva ~1 quadretto di drift). Master + SVG committati e validati in CI. |
 
 Prova il round-trip completo (nessun file committato: output in una dir a
 scelta):

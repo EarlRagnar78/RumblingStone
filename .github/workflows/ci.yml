@@ -61,6 +61,9 @@ jobs:
           python scripts/render_map_svg.py /tmp/ci-map.md > /dev/null
           python scripts/export_uvtt.py /tmp/ci-map.md -o /tmp/ci-vtt
           python -c "import json,glob; d=json.load(open(glob.glob('/tmp/ci-vtt/*.uvtt')[0])); assert d['line_of_sight'] and d['portals'] and d['lights'], 'UVTT vuoto'; print('UVTT OK:', len(d['line_of_sight']),'muri')"
+          # overlay professionale (bussola/movimenti/callout/zone) dal JSON
+          python scripts/compile_map_json.py scripts/examples/campo-drow-1.json -o /tmp/ci-drow.md
+          python -c "t=open('/tmp/ci-drow.md',encoding='utf-8').read(); assert '@north' in t and '@path' in t and '@mark' in t and '@zone' in t, 'direttive @ mancanti'; print('direttive @ OK')"
 
       - name: dm.py unified CLI smoke test (K-C3)
         run: |

@@ -16,8 +16,18 @@ emits print-quality SVG battlemaps in the "pergamena" (parchment) style:
     breaks texture repetition;
   - an ORIGINAL vector prop library (door, bed, crate, brazier, tree, …)
     drawn in-house — icons render as illustrated objects, not emoji;
-  - VTT-style unit tokens, 1,5 m/quadretto grid, coordinates, scale bar
-    and a textured legend.
+  - VTT-style unit tokens, 1,5 m/quadretto grid, coordinates, scale bar,
+    a compass rose (orientation) and a textured legend.
+
+Optional `@`-directives inside the fenced block (after the grid) add a
+professional overlay + an "INDICAZIONI" legend — orientation, movement
+routes, numbered callouts and labelled zones (see parse_annotations):
+    @north <deg|N|NE|E|SE|S|SW|W|NW>   rotate the compass ("up" = this dir)
+    @path  <label> ; <c1 c2 c3 ...[ loop]> ; [#rrggbb]   movement route
+    @mark  <n> ; <coord> ; <text>                        numbered callout
+    @zone  <c1-c2> ; <text>                               labelled area
+Coordinates use A1 labels (column letters + printed row number, e.g. "M6").
+`scripts/compile_map_json.py` emits these directives from a JSON contract.
 
 Everything is generated procedurally (SVG patterns + filters + in-house
 symbols): no external image assets, no licensing constraints, and
@@ -593,6 +603,81 @@ def slugify(title: str) -> str:
     return t[:48] or "mappa"
 
 
+# ---------------------------------------------------------------------------
+# Map annotations (compass, movement routes, numbered callouts, area zones)
+#
+# Optional `@`-directives placed inside the fenced block, after the grid.
+# They are ignored by the grid parser (they never match ROW_RE) and let a
+# map declare orientation, patrol movements, numbered references and zones —
+# rendered as an overlay + an "INDICAZIONI" legend. Coordinates use the same
+# A1 labels as the ruler (column letters + printed row number), e.g. "M6".
+#
+#   @north <deg|N|NE|E|SE|S|SW|W|NW>   rotate the compass ("up" = this dir)
+#   @path  <label> ; <c1 c2 c3 ...[ loop]> ; [#rrggbb]
+#   @mark  <n> ; <coord> ; <text>
+#   @zone  <c1-c2> ; <text>            (c1 top-left, c2 bottom-right)
+# ---------------------------------------------------------------------------
+_COORD_RE = re.compile(r"^([A-Za-z]+)(\d{1,3})$")
+_DIR_DEG = {"N": 0, "NE": 45, "E": 90, "SE": 135,
+            "S": 180, "SW": 225, "W": 270, "NW": 315}
+
+
+def col_index(label: str) -> int:
+    x = 0
+    for ch in label:
+        if not ch.isalpha():
+            break
+        x = x * 26 + (ord(ch.upper()) - ord("A") + 1)
+    return x - 1
+
+
+def coord_to_cell(token: str):
+    """'M6' -> (col_index, printed_row_number) or None."""
+    m = _COORD_RE.match(token.strip())
+    if not m:
+        return None
+    return col_index(m.group(1)), int(m.group(2))
+
+
+def parse_annotations(raw_lines: list[str]) -> dict:
+    ann = {"north": 0, "paths": [], "marks": [], "zones": []}
+    for line in raw_lines:
+        s = line.strip()
+        if not s.startswith("@"):
+            continue
+        kind, _, rest = s[1:].partition(" ")
+        kind = kind.lower()
+        parts = [p.strip() for p in rest.split(";")]
+        if kind == "north":
+            v = rest.strip().upper()
+            if v in _DIR_DEG:
+                ann["north"] = _DIR_DEG[v]
+            else:
+                try:
+                    ann["north"] = float(v) % 360
+                except ValueError:
+                    pass
+        elif kind == "path" and len(parts) >= 2:
+            coords = [coord_to_cell(t) for t in parts[1].split() if t.lower() != "loop"]
+            loop = "loop" in parts[1].lower().split()
+            coords = [c for c in coords if c]
+            if len(coords) >= 2:
+                color = parts[2] if len(parts) >= 3 and parts[2].startswith("#") else "#c81d25"
+                ann["paths"].append({"label": parts[0], "coords": coords,
+                                     "loop": loop, "color": color})
+        elif kind == "mark" and len(parts) >= 3:
+            c = coord_to_cell(parts[1])
+            if c:
+                ann["marks"].append({"n": parts[0], "coord": c, "text": parts[2]})
+        elif kind == "zone" and len(parts) >= 2:
+            ends = parts[0].split("-")
+            if len(ends) == 2:
+                a, b = coord_to_cell(ends[0]), coord_to_cell(ends[1])
+                if a and b:
+                    ann["zones"].append({"a": a, "b": b, "text": parts[1]})
+    return ann
+
+
 def extract_maps(md_text: str) -> list[dict]:
     """Find fenced code blocks with >=3 emoji grid rows.
 
@@ -638,12 +723,16 @@ def parse_block(block_lines: list[str]) -> dict | None:
     rows: dict[int, list[str]] = {}
     filled: set[int] = set()
     banner = ""
+    annotations: list[str] = []
     for line in block_lines:
         s = line.strip()
+        if s.startswith("@"):
+            annotations.append(s)
+            continue
         if not banner and s and not set(s) <= {"═", "─", "="} and not ROW_RE.match(line) \
                 and 8 < len(s) < 120 \
                 and not s.startswith(("COLONNE", "RIGHE", "-", "NOTA", "SCALA", "LEGENDA",
-                                      "TOTALE", "DIMENSIONI", "TUTTO", "POSIZIONI")) \
+                                      "TOTALE", "DIMENSIONI", "TUTTO", "POSIZIONI", "@")) \
                 and not any(c in s for c in "│└┘├┤┌┐↑↓←→") \
                 and any(ch.isalpha() for ch in s):
             banner = s
@@ -669,7 +758,7 @@ def parse_block(block_lines: list[str]) -> dict | None:
         if n not in rows:
             rows[n] = rows[max(k for k in rows if k < n)]
             filled.add(n)
-    return {"rows": rows, "filled": filled, "banner": banner}
+    return {"rows": rows, "filled": filled, "banner": banner, "annotations": annotations}
 
 
 # ---------------------------------------------------------------------------
@@ -848,6 +937,34 @@ def _region_path(cells: set[tuple[int, int]], ox: int, oy: int) -> str:
     return "".join(parts)
 
 
+def _compass_svg(cx: float, cy: float, r: float, north_deg: float) -> str:
+    """Compass rose; the needle/'N' point to 'north_deg' measured clockwise
+    from screen-up (0 = North is up)."""
+    g = [f'<g transform="translate({_n(cx)},{_n(cy)}) rotate({_n(north_deg)})">']
+    g.append(f'<circle r="{_n(r + 5)}" fill="{PAPER}" fill-opacity="0.82" '
+             f'stroke="{INK}" stroke-width="1"/>')
+    d = r * 0.16
+    g.append(f'<path d="M0 {_n(-r)}L{_n(d)} {_n(-d)}L{_n(r)} 0L{_n(d)} {_n(d)}'
+             f'L0 {_n(r)}L{_n(-d)} {_n(d)}L{_n(-r)} 0L{_n(-d)} {_n(-d)}Z" '
+             f'fill="{INK_SOFT}" opacity="0.5"/>')
+    g.append(f'<path d="M0 {_n(-r)}L{_n(r * 0.24)} 0L0 {_n(-r * 0.22)}'
+             f'L{_n(-r * 0.24)} 0Z" fill="{INK}"/>')
+    g.append(f'<text x="0" y="{_n(-r - 6)}" font-size="11" font-weight="bold" '
+             f'text-anchor="middle" fill="{INK}">N</text>')
+    g.append("</g>")
+    return "".join(g)
+
+
+def _arrowhead(x1: float, y1: float, x2: float, y2: float, color: str, size: float = 7.0) -> str:
+    ang = math.atan2(y2 - y1, x2 - x1)
+    a1 = ang + math.radians(150)
+    a2 = ang - math.radians(150)
+    p1 = (x2 + size * math.cos(a1), y2 + size * math.sin(a1))
+    p2 = (x2 + size * math.cos(a2), y2 + size * math.sin(a2))
+    return (f'<path d="M{_n(x2)} {_n(y2)}L{_n(p1[0])} {_n(p1[1])}'
+            f'L{_n(p2[0])} {_n(p2[1])}Z" fill="{color}"/>')
+
+
 def render_svg(grid: dict, source_name: str) -> str:
     rows = grid["rows"]
     row_nums = sorted(rows)
@@ -857,11 +974,16 @@ def render_svg(grid: dict, source_name: str) -> str:
     width = max(MARGIN * 2 + grid_w, MIN_WIDTH)
     used = sorted({e for cells in rows.values() for e in cells})
 
+    ann = parse_annotations(grid.get("annotations", []) or [])
+    ann_items = len(ann["paths"]) + len(ann["marks"]) + len(ann["zones"])
+    ann_h = (22 + 15 * ann_items) if ann_items else 0
+
     header_h = 58
     ox = MARGIN
     oy = header_h + 22
     sb_y = oy + grid_h + 24
-    ly = sb_y + 32
+    ann_y = sb_y + 30
+    ly = sb_y + 32 + (ann_h + 12 if ann_items else 0)
     two_cols = width >= 940 and len(used) > 10
     legend_rows = math.ceil(len(used) / 2) if two_cols else len(used)
     legend_h = 18 + LEGEND_ROW_H * legend_rows
@@ -1112,6 +1234,63 @@ def render_svg(grid: dict, source_name: str) -> str:
             f'text-anchor="end" fill="{color}">{rn:02d}</text>'
         )
 
+    # --- annotation overlay: zones, movement routes, numbered callouts ----------
+    row_min = row_nums[0]
+
+    def _cc(cell):  # (col, printed_row) -> pixel center
+        cx0, rn = cell
+        return ox + cx0 * CELL + CELL / 2, oy + (rn - row_min) * CELL + CELL / 2
+
+    # zones first (under routes/marks)
+    for z in ann["zones"]:
+        (ax, ay0), (bx, by0) = z["a"], z["b"]
+        x0 = ox + min(ax, bx) * CELL
+        y0 = oy + (min(ay0, by0) - row_min) * CELL
+        w = (abs(bx - ax) + 1) * CELL
+        h = (abs(by0 - ay0) + 1) * CELL
+        out.append(
+            f'<rect x="{_n(x0)}" y="{_n(y0)}" width="{_n(w)}" height="{_n(h)}" '
+            f'rx="4" fill="none" stroke="#2c2313" stroke-width="1.6" '
+            f'stroke-dasharray="5 4" opacity="0.75"/>'
+        )
+        out.append(
+            f'<text x="{_n(x0 + 4)}" y="{_n(y0 + 13)}" font-size="10.5" '
+            f'font-weight="bold" fill="#2c2313">{_esc(z["text"])}</text>'
+        )
+
+    # movement routes (dashed, arrowhead, start dot, label near start)
+    for p in ann["paths"]:
+        pts = [_cc(c) for c in p["coords"]]
+        if p["loop"]:
+            pts = pts + [pts[0]]
+        d = "M" + "L".join(f"{_n(x)} {_n(y)}" for x, y in pts)
+        out.append(
+            f'<path d="{d}" fill="none" stroke="#ffffff" stroke-width="3.6" '
+            f'opacity="0.55" stroke-linejoin="round" stroke-linecap="round"/>'
+        )
+        out.append(
+            f'<path d="{d}" fill="none" stroke="{p["color"]}" stroke-width="2" '
+            f'stroke-dasharray="7 4" stroke-linejoin="round" stroke-linecap="round"/>'
+        )
+        (sx, sy) = pts[0]
+        out.append(f'<circle cx="{_n(sx)}" cy="{_n(sy)}" r="3.4" fill="{p["color"]}" '
+                   f'stroke="#ffffff" stroke-width="1"/>')
+        (x1, y1), (x2, y2) = pts[-2], pts[-1]
+        out.append(_arrowhead(x1, y1, x2, y2, p["color"]))
+
+    # numbered callouts (badge at cell corner)
+    for m in ann["marks"]:
+        cx, cy = _cc(m["coord"])
+        bx, by = cx + CELL * 0.30, cy - CELL * 0.30
+        out.append(f'<circle cx="{_n(bx)}" cy="{_n(by)}" r="7" fill="#1a140a" '
+                   f'stroke="#ffffff" stroke-width="1.1"/>')
+        out.append(f'<text x="{_n(bx)}" y="{_n(by + 3.4)}" font-size="9.5" '
+                   f'font-weight="bold" text-anchor="middle" fill="#fff">'
+                   f'{_esc(str(m["n"]))}</text>')
+
+    # compass rose (always), top-right inside the map plate
+    out.append(_compass_svg(ox + grid_w - 22, oy + 22, 15, ann["north"]))
+
     # --- scale bar (5 squares = 7,5 m, alternating cartographic segments) -------
     for i in range(5):
         fill = INK if i % 2 == 0 else PAPER
@@ -1123,6 +1302,48 @@ def render_svg(grid: dict, source_name: str) -> str:
         f'<text x="{ox + 5 * CELL + 10}" y="{sb_y + 3}" font-size="11" '
         f'fill="{INK}">7,5 m (5 quadretti)</text>'
     )
+
+    # --- indications legend (movements / callouts / zones) ----------------------
+    if ann_items:
+        out.append(
+            f'<text x="{ox}" y="{ann_y}" font-size="12" font-weight="bold" '
+            f'fill="{INK}" letter-spacing="2">INDICAZIONI</text>'
+        )
+        out.append(
+            f'<path d="M{ox + 96} {ann_y - 4}H{width - MARGIN}" stroke="{INK_SOFT}" '
+            f'stroke-width="0.7" opacity="0.7"/>'
+        )
+        ey = ann_y + 17
+        for m in ann["marks"]:
+            cx0, rn = m["coord"]
+            coord_lbl = f"{col_label(cx0)}{rn}"
+            out.append(f'<circle cx="{ox + 8}" cy="{ey - 4}" r="7" fill="#1a140a" '
+                       f'stroke="#fff" stroke-width="1"/>')
+            out.append(f'<text x="{ox + 8}" y="{ey - 0.6}" font-size="9.5" '
+                       f'font-weight="bold" text-anchor="middle" fill="#fff">'
+                       f'{_esc(str(m["n"]))}</text>')
+            out.append(f'<text x="{ox + 22}" y="{ey}" font-size="11" fill="{INK}">'
+                       f'{coord_lbl} — {_esc(m["text"])}</text>')
+            ey += 15
+        for p in ann["paths"]:
+            out.append(f'<line x1="{ox}" y1="{ey - 4}" x2="{ox + 16}" y2="{ey - 4}" '
+                       f'stroke="{p["color"]}" stroke-width="2" stroke-dasharray="6 3"/>')
+            out.append(_arrowhead(ox + 10, ey - 4, ox + 18, ey - 4, p["color"], 5))
+            route = " → ".join(f"{col_label(c[0])}{c[1]}" for c in p["coords"])
+            if p["loop"]:
+                route += " → (loop)"
+            out.append(f'<text x="{ox + 24}" y="{ey}" font-size="11" fill="{INK}">'
+                       f'{_esc(p["label"])}: {route}</text>')
+            ey += 15
+        for z in ann["zones"]:
+            out.append(f'<rect x="{ox}" y="{ey - 11}" width="15" height="12" rx="2" '
+                       f'fill="none" stroke="#2c2313" stroke-width="1.4" '
+                       f'stroke-dasharray="4 3"/>')
+            za = f"{col_label(z['a'][0])}{z['a'][1]}"
+            zb = f"{col_label(z['b'][0])}{z['b'][1]}"
+            out.append(f'<text x="{ox + 22}" y="{ey}" font-size="11" fill="{INK}">'
+                       f'{za}–{zb} — {_esc(z["text"])}</text>')
+            ey += 15
 
     # --- legend -------------------------------------------------------------------
     out.append(

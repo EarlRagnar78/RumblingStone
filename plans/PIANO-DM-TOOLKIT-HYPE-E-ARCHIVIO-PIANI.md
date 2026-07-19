@@ -345,6 +345,16 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   1372** → **AGGIORNATA in K-B8 (2026-07-12): 1 Flamerule 1372**, DM ha
   confermato la piena estate nella Valle di Channath (house-rules aveva
   ragione; state.md corretto con changelog §8 — [INFERRED] risolto)
+- [x] **K-B3.6…K-B3.8** *(estensione booklet Palio, 2026-07-13/17)*: booklet
+  P2D di Channathgate in stile AP (giornate, ritornelli, prove di ammissione)
+  + distretti/quartieri EN↔contrade dal file Fazioni del DM + cablaggio delle
+  **2 tavole del DM** (pianta città + panorama Piazza) come master visivi con
+  2 handout giocatori. Tavole PNG reali caricate dal DM su main (`ed56aa6`,
+  2026-07-17) → gate "PNG da caricare dal DM" **chiuso**.
+- [ ] **K-B3.9** *(in lavorazione — PR #46 aperta)*: tavole ricollocate in
+  `P2D-Palio-Allegati/immagini/` (posto canonico) e ridimensionate con Pillow
+  (12,2 MB→1,8 MB · 8,8 MB→2,3 MB); da mergiare — poi spuntare qui e in
+  CHANGELOG.
 
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 

@@ -5,11 +5,15 @@ description: >
   battle maps at professional AP quality (Red Hand of Doom / Paizo benchmark).
   Use for "mappa", "battle map", "griglia tattica", "battlemap", "render SVG",
   "nuova mappa", "import watabou", "hero map", "mappa regionale", "mappa città",
+  "mappa esercito", "assedio", "accampamento", "coordinate", "JSON mappa",
+  "contratto JSON", "compile_map_json", "export UVTT", "uvtt", "dd2vtt",
+  "Foundry", "Roll20", "muri e luci", "mappa cinematografica", "handout",
   or whenever creating/editing files matching *MAPPE*, *Ultra-Clear*, or
   running scripts/render_map_svg.py, scripts/import_watabou.py,
-  scripts/validate_maps.py. Covers the emoji-grid master format, the universal
-  legend, the parchment renderer, and the optional local ComfyUI "hero map"
-  pass.
+  scripts/compile_map_json.py, scripts/export_uvtt.py, scripts/validate_maps.py.
+  Covers the 3 map modes, the emoji-grid master format, the rigid JSON contract,
+  the universal legend, the parchment renderer, VTT export, and the optional
+  local ComfyUI "hero map" pass.
 ---
 
 # RumblingStone — Mapmaking Pipeline
@@ -37,10 +41,29 @@ are **generated artifacts — never hand-edit them**. CI
 
 ## Domain → File
 
+## Le 3 modalità di mappa (quale pipeline)
+
+Tutte usano lo stesso formato MASTER (griglia emoji); cambia la *sorgente*:
+
+1. **Tattica standard** — griglia scritta a mano o dungeon importato
+   (`import_watabou.py`) → `render_map_svg.py`.
+2. **Cinematografica / scenica** — l'LLM fa il *prompt engineer*; immagine
+   d'atmosfera con ComfyUI locale (`scripts/comfyui-local/`,
+   `references/hero-map-comfyui.md`), banca prompt in `campaign/ai-media-prompts/`.
+3. **Tattica con strutture ed eserciti** — l'LLM emette **solo JSON rigido**
+   (`scripts/schemas/tactical_map.schema.json`), `compile_map_json.py` valida e
+   dipinge la griglia. Un LLM non disegna MAI arte ASCII di mappe.
+
+Dettaglio e "system prompt" per l'LLM: `references/tre-modalita-mappe.md`.
+
+## Domain → File
+
 | Task | Reference |
 |---|---|
+| Le 3 modalità, contratto JSON, system prompt LLM | `references/tre-modalita-mappe.md` |
 | Full workflow: new map, edit, render, validate, dungeon import, overland/city | `references/workflow-mappe.md` |
 | Universal legend: every terrain/unit/prop symbol with meaning | `references/legenda-universale.md` |
+| Direzione artistica handout/splash (convenzioni + confini IP) | `references/stile-illustrazione-handout.md` |
 | Optional local "hero map" painterly pass (ComfyUI + ControlNet + MCP) | `references/hero-map-comfyui.md` |
 
 ## Quick commands
@@ -49,6 +72,9 @@ are **generated artifacts — never hand-edit them**. CI
 python3 scripts/render_map_svg.py <file.md>        # render all maps in file
 python3 scripts/render_map_svg.py <file.md> --list # list maps found
 python3 scripts/import_watabou.py dungeon.json -o <arco>/NUOVA-MAPPA.md
+python3 scripts/compile_map_json.py spec.json -o <arco>/NUOVA-MAPPA.md  # Mod. 3: JSON → master
+python3 scripts/compile_map_json.py spec.json --validate-only           # solo validazione
 python3 scripts/export_map_png.py rendered/<mappa>.svg   # hi-res PNG (print / hero input)
+python3 scripts/export_uvtt.py <file.md>           # .uvtt/.dd2vtt (Foundry/Roll20: muri+luci)
 python3 scripts/validate_maps.py                   # CI gate (run before commit)
 ```

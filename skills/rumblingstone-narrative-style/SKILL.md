@@ -71,6 +71,14 @@ and at most two support pillars, chosen by scene type. The mixer:
 | BG1/2-style complex quest patterns: stages, factions, personal quests | `references/quest-design-baldur.md` |
 | Living world: NPC/villain agency, world turn, SRD attitude system, settlements | `references/living-world.md` |
 
+**Worked exemplar in repo**: the Palio di Channathgate
+(`09_.../Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md` + allegati)
+is the reference implementation of this skill's standards — Salvatore
+prose + Critical Role direction (declared), BG3-graded consequence matrix,
+time-axis milestones, ceremonial meters, PC offices. When generating a
+multi-session set piece, study its *shape* first
+(`references/quest-design-baldur.md` §6-bis).
+
 ## Non-negotiables (checked on every output)
 
 1. **PCs are the protagonists** — every generated scene must give at least

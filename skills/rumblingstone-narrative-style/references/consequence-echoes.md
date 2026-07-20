@@ -81,6 +81,35 @@ When generating any session, quest, or scene content:
    `fired (S<N>)`. A fired echo may arm a *new* echo (chains), but
    never silently respawn.
 
+## 3-bis. Graded outcomes — the "regola pieno/ridotto" (Palio pattern)
+
+For **arc-scale set pieces** (tournaments, battles, councils, festivals),
+don't emit a single echo — build a **one-page consequence matrix**, as
+pioneered by `...P2D-PALIO-CONSEGUENZE-ECHI.md` (the repo's worked
+exemplar):
+
+1. **Outcome axis**: every possible winner/result gets a row (including
+   the disaster row — see below).
+2. **Conduct modulation**: the *magnitude* of each row is graded by how
+   the PCs got there — **full effect** if they won it or backed the
+   winner; **reduced (−1 step)** if the winner was hostile to them;
+   **+1 step** for exceptional conduct (side objectives completed).
+   Outcome says *what* happens; PC conduct says *how much*.
+3. **Campaign wiring row**: each outcome lists its effect on clocks,
+   allies, and the next arc's difficulty (VP, GS, reinforcements) —
+   numbers, not vibes.
+4. **The bittersweet row**: losing while achieving the strategic goal
+   (making the rival lose, preventing the worst) is a *distinct* result
+   with its own rewards and its own echoes — never collapse it into
+   "defeat".
+5. **The disaster row is playable**: the worst outcome opens a
+   desperate branch (the Palio's "Fase 0-bis"), never a game over.
+6. **Per-PC echo row**: each institutional role/PC gets one personal
+   echo line from the set piece (debts of honor, secrets that weigh,
+   a ballad that becomes an anthem — or an accusation).
+
+Matrix rows that fire become ledger entries (§1) as usual.
+
 ## 4. Anti-patterns (do not)
 
 - **No combinatorial trees.** The ledger is flat lines, not nested

@@ -47,6 +47,17 @@ merely watch fails this test. Generated content must pass both.
   arc-climax points.
 - Bonds count as spotlight: a scene serving the Tordek↔Hella or
   Thorik↔Artemis bond serves both PCs.
+- **Party Agency Tracker** ("Voci PG", Palio/Dauth pattern): during
+  multi-session set pieces, log at the end of every scene *who moved
+  what* (pacts struck, risks taken, meters shifted, NPCs protected) and
+  use the log to steer the next scene's spotlight. The tracker is also
+  the raw material for per-PC echoes and recaps.
+- **Protagonism through office**: the strongest spotlight is an
+  *institutional role* with real powers and real liabilities — the
+  Palio pattern of making PCs the Dirigenza (Capitano, Mangini,
+  Barbaresco) instead of spectators. When generating set pieces, give
+  each PC a named office keyed to their Shine profile; the office
+  generates decisions (its powers) and echoes (its debts).
 
 ## 3. Protagonists in the good — fame
 

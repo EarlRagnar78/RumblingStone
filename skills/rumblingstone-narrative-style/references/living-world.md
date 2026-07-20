@@ -123,6 +123,25 @@ the coherence §4 foreshadow requirement). Build tables with
 `suggest_encounter.py` where applicable, then reskin entries to the
 current world turn.
 
+## 5-bis. Session-level living world — the milestone grid (Palio pattern)
+
+The World Turn (§2) runs between sessions; **inside** a multi-session
+set piece, use the Palio's milestone grid
+(`...P2D-PALIO-DM-MASTER-REFERENCE.md` §4.1): fixed beats **on the time
+axis, not on PC actions** — each row is "when | what happens *anyway* |
+PC hook". The Tratta happens at noon whether the PCs rigged the urn or
+not; the drow strike at the Cena whether the stable is guarded or not.
+PCs change *how* milestones land, never *whether* time advances. This
+is coherence §5.2 at session granularity.
+
+**Ceremonial subsystems must move numbers** (same source, §3): if the
+fiction has parades, songs, blessings, and honor, give them tracked
+meters (the Palio's Morale del Rione 0–10 and Onore del Fantino 0–10)
+with real mechanical output (bonuses to the climax roll, corruption
+saves) and SRD-grounded opposed checks (Perform/Intimidate/Bluff).
+Ritual without numbers is scenery; numbers make the crowd, the faith,
+and the shame part of the living world.
+
 ## 6. The world initiates
 
 At least once per session, the world makes first contact — the party

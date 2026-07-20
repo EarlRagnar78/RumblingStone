@@ -93,6 +93,31 @@ A recurring mirror group of adventurers pursuing the same objectives:
 - Killable but expensive (political patrons, split loyalties, one
   member the party likes). Every clash arms echoes.
 
+## 6-bis. The set-piece arc (Palio pattern — worked exemplar in repo)
+
+For a multi-session self-contained event (tournament, festival, siege
+council, race), the gold standard is the Palio di Channathgate
+(`...P2D-PALIO-DM-MASTER-REFERENCE.md` + allegati). Its reusable shape:
+
+- **Dual nature**: playable standalone *and* a geopolitical node — its
+  outcome feeds the main campaign in numbers (votes, reinforcements,
+  clock ticks), satisfying §7 by construction.
+- **Hub + attachments**: one master file (tone, structure, checklist)
+  routing to per-day/per-subsystem files — same progressive-disclosure
+  layout as the skills themselves.
+- **Real-world procedural skeleton**: built on a documented real ritual
+  (the historical palio, step by step), then reskinned — borrowed
+  structure gives instant depth and coherence for free.
+- **Victory conditions beyond winning**: making the rival lose counts;
+  the bittersweet result and the playable disaster branch are distinct
+  outcomes (see `consequence-echoes.md` §3-bis).
+- **Milestone grid on the time axis** + ceremonial meters
+  (`living-world.md` §5-bis) + PC offices with powers and debts
+  (`pc-protagonism.md` §2).
+
+When generating a new set-piece arc, clone this shape, not the Palio's
+content.
+
 ## 7. Side-quest discipline
 
 Every side quest must touch **at least one** of: a faction (PART 4

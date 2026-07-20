@@ -3,11 +3,12 @@
 > **Lotto R1** del `plans/PIANO-REINTEGRAZIONE-PNG-AP-RHOD.md` (2026-07-20).
 > Sei PNG civici dell'AP originale, reintegrati come volti dell'onda
 > profughi (~1.500 anime, `campaign/state.md` §2.5) in marcia dal Guado
-> bruciato (Day 12-13) verso Rethmar. **Tutto ciò che segue su
-> sopravvivenza, posizione e stato è `[INFERRED — needs DM confirmation]`**:
-> il canone dice solo che il paese è caduto e che ~1.500 sono fuggiti.
-> Regola D13: esiti aperti, mai copioni. Stats: mai testo AP verbatim —
-> ruoli + stime `[INFERRED]` + puntatore `[Private — Red Hand of Doom, Part One]`.
+> bruciato (Day 12-13) verso Rethmar. ✅ **CANONIZZATI DAL DM (2026-07-20,
+> gate R6)**: sopravvivenza, posizione e stato indicati sotto sono canone
+> (registrato in `state.md` §8); i rami alternativi nelle sezioni *Esiti
+> possibili* restano scelte aperte del DM. Regola D13: esiti aperti, mai
+> copioni. Stats: mai testo AP verbatim —
+> ruoli + stime dichiarate + puntatore `[Private — Red Hand of Doom, Part One]`.
 >
 > **Perché servono:** l'onda profughi oggi è un numero (§2.5). Questi sei
 > nomi la trasformano in facce che i PG conoscono di vista dall'Arco 00 —
@@ -19,10 +20,10 @@
 ## 1. Norro Wiston — il Portavoce senza più paese
 
 **Role**: ally (civico) — ex-Portavoce del Guado di Drellin
-**Status**: vivo, profugo a Rethmar (arrivo ~Day 16-18) `[INFERRED — needs DM confirmation]`
+**Status**: vivo, profugo a Rethmar (arrivo ~Day 16-18) *(canone — DM 2026-07-20)*
 **Location**: Rethmar, quartiere basso — alloggi d'emergenza presso il mulino
 **Motivation**: farsi riconoscere dal Consiglio come voce ufficiale dei profughi del Guado; non ripetere l'errore di aver aspettato troppo a evacuare.
-**CR**: 2 (stima, aristocratico) `[INFERRED]` | **Race/Class**: umano, Aristocratico ~4 — statblock: `[Private — Red Hand of Doom, Part One]`
+**CR**: 2 (stima, aristocratico) | **Race/Class**: umano, Aristocratico ~4 — statblock: `[Private — Red Hand of Doom, Part One]`
 **Key stats**: non combattente; la sua arma è la procedura civica.
 **Token**: —
 **Esiti possibili**:
@@ -38,10 +39,10 @@ Boost log: (vuoto)
 ## 2. Sertieren il Saggio — il mago halfling di Moonwatch Hill
 
 **Role**: ally (sapiente arcano)
-**Status**: vivo, rifugiato a Rethmar con parte della sua biblioteca `[INFERRED — needs DM confirmation]`
+**Status**: vivo, rifugiato a Rethmar con parte della sua biblioteca *(canone — DM 2026-07-20)*
 **Location**: Rethmar — ospite (mal tollerato) della biblioteca municipale di Maester Pyriel
 **Motivation**: completare il *sending* a Silverymoon per chiedere soccorso arcano (quest [6] del `dm-expansion-toolkit`, "The Moonwatch Hill Ritual") e salvare ciò che resta dei suoi appunti sul Witchwood.
-**CR**: ~7 (mago) `[INFERRED]` | **Race/Class**: halfling, Mago ~7 (divinatore) — statblock: `[Private — Red Hand of Doom, Part One]`
+**CR**: 7 (stima, mago) | **Race/Class**: halfling, Mago ~7 (divinatore) — statblock: `[Private — Red Hand of Doom, Part One]`
 **Key stats**: incantatore da supporto/identificazione, non da linea del fronte.
 **Token**: —
 **Esiti possibili**:
@@ -57,10 +58,10 @@ Boost log: (vuoto)
 ## 3. Fratello Derny — il chierico che contava i carri
 
 **Role**: ally (fede e conforto)
-**Status**: vivo, in coda all'onda profughi (arrivo ~Day 20-22) `[INFERRED — needs DM confirmation]`
+**Status**: vivo, in coda all'onda profughi (arrivo ~Day 20-22) *(canone — DM 2026-07-20)*
 **Location**: strada del Sentiero dell'Alba, ultimo tratto verso Rethmar — cammina in retroguardia, dove stanno i più lenti
 **Motivation**: non perdere nessuno per strada; in FR il suo Pelor dell'AP diventa **Lathander** (l'alba dopo la notte — adattamento naturale 1372 DR).
-**CR**: ~4 (chierico) `[INFERRED]` | **Race/Class**: umano, Chierico di Lathander ~5 — statblock: `[Private — Red Hand of Doom, Part One]`
+**CR**: 4 (stima, chierico) | **Race/Class**: umano, Chierico di Lathander ~5 — statblock: `[Private — Red Hand of Doom, Part One]`
 **Key stats**: cure e benedizioni di massa a basso livello; instancabile.
 **Token**: —
 **Esiti possibili**:
@@ -76,10 +77,10 @@ Boost log: (vuoto)
 ## 4. Delora Zann — la stalliera che era stata avventuriera
 
 **Role**: ally (mani esperte, passato ruvido)
-**Status**: viva, a Rethmar dal Day 17; ha portato in salvo 11 cavalli e 3 carri `[INFERRED — needs DM confirmation]`
+**Status**: viva, a Rethmar dal Day 17; ha portato in salvo 11 cavalli e 3 carri *(canone — DM 2026-07-20)*
 **Location**: Rethmar — stalle requisite presso la porta ovest
 **Motivation**: rimettersi in sella una volta sola, per la strada giusta; sa che una città assediata vive dei suoi cavalli.
-**CR**: ~3 (guerriera) `[INFERRED]` | **Race/Class**: umana, Guerriera ~3 (ex-avventuriera) — statblock: `[Private — Red Hand of Doom, Part One]`
+**CR**: 3 (stima, guerriera) | **Race/Class**: umana, Guerriera ~3 (ex-avventuriera) — statblock: `[Private — Red Hand of Doom, Part One]`
 **Key stats**: combattente montata competente; conosce le strade secondarie del Vale meglio delle mappe di Pyriel.
 **Token**: —
 **Esiti possibili**:
@@ -95,16 +96,16 @@ Boost log: (vuoto)
 ## 5. Iormel — il possidente che ha perso tutto tranne l'avarizia
 
 **Role**: neutral (attrito civico, non nemico)
-**Status**: vivo, a Rethmar; alloggia in una locanda vera pagando oro vero `[INFERRED — needs DM confirmation]`
+**Status**: vivo, a Rethmar; alloggia in una locanda vera pagando oro vero *(canone — DM 2026-07-20)*
 **Location**: Rethmar, quartiere mercantile
 **Motivation**: recuperare *qualcosa*: ha sepolto una cassa prima di fuggire e vuole che qualcuno torni al Guado occupato a prenderla.
-**CR**: ~1 (esperto/aristocratico) `[INFERRED]` | **Race/Class**: umano, Esperto ~3 — statblock: `[Private — Red Hand of Doom, Part One]`
+**CR**: 1 (stima, esperto) | **Race/Class**: umano, Esperto ~3 — statblock: `[Private — Red Hand of Doom, Part One]`
 **Key stats**: non combattente; borsa profonda, mano corta.
 **Token**: —
 **Esiti possibili**:
 - Micro-quest da Day 25-35: pagare (male) i PG o chiunque per recuperare la cassa dietro le linee della Mano Rossa — gancio perfetto per una Missione Breve CR12 riambientata (state.md §0, "09 P3 Missioni Brevi").
 - Se Aldric Thornwall (Consiglio, Mercanti) lo prende sotto l'ala → il voto volatile di Thornwall si sposta di un grado verso l'interesse dei profughi… o verso il panico, a seconda di cosa c'è nella cassa.
-- La cassa `[INFERRED]`: il DM decide — risparmi leciti, oppure un oggetto che qualcuno della rete di Varis gli aveva "affidato" (aggancio alla rete-statue).
+- La cassa (contenuto a scelta del DM) — risparmi leciti, oppure un oggetto che qualcuno della rete di Varis gli aveva "affidato" (aggancio alla rete-statue).
 **Notes**: il grigio è voluto (pilastro GoT): un profugo antipatico rende l'onda vera. Aggancio: Thornwall (Consiglio), rete di Varis, Missioni Brevi CR12.
 
 Boost log: (vuoto)
@@ -114,10 +115,10 @@ Boost log: (vuoto)
 ## 6. Kellin Shadowbanks — il locandiere del Vecchio Ponte
 
 **Role**: ally (orecchie del popolo)
-**Status**: vivo, a Rethmar dal Day 18; la locanda è cenere `[INFERRED — needs DM confirmation]`
+**Status**: vivo, a Rethmar dal Day 18; la locanda è cenere *(canone — DM 2026-07-20)*
 **Location**: Rethmar — ha già rilevato (a credito) una mescita nel quartiere basso, ribattezzata «Il Ponte Nuovo»
 **Motivation**: ricostruire il suo bancone; un halfling senza locanda è un halfling a metà.
-**CR**: ~2 (esperto) `[INFERRED]` | **Race/Class**: halfling, Esperto ~4 — statblock: `[Private — Red Hand of Doom, Part One]`
+**CR**: 2 (stima, esperto) | **Race/Class**: halfling, Esperto ~4 — statblock: `[Private — Red Hand of Doom, Part One]`
 **Key stats**: non combattente; Raccogliere Informazioni da maestro — il Ponte Nuovo diventa in due settimane *il* posto dove i profughi parlano.
 **Token**: —
 **Esiti possibili**:
@@ -130,10 +131,9 @@ Boost log: (vuoto)
 
 ---
 
-## Proposta di righe per `state.md` (NON applicata — gate R6, decide il DM)
+## Righe applicate a `state.md` (canonizzazione 2026-07-20)
 
-> ADR-0007: questo file non tocca il canone. Se il DM canonizza, le righe
-> da aggiungere sono:
+> Applicate con la canonizzazione (vedi `state.md` §8, riga 2026-07-20):
 >
 > - **§3 (NPC knowledge)**: «Norro Wiston — sa che i PG sono i Custodi
 >   Eterni e che Thorik morì e risorse al Guado (vi era presente) — Arco 00».

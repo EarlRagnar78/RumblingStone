@@ -1,6 +1,6 @@
 # PIANO — REINTEGRAZIONE PNG DELL'AP ORIGINALE (Red Hand of Doom) + Lirien
 
-> **Creato:** 2026-07-20 · **Stato:** 🟡 in corso (Lotto R1 + R5 in questa PR)
+> **Creato:** 2026-07-20 · **Stato:** 🟡 in corso — R1+R5 **fatti e canonizzati** (2026-07-20); restano R2-R4
 > **Origine:** richiesta DM — «nell'avventura originale (Guado di Drellin e
 > le altre località dell'AP) ci sono tanti PNG che nel repo mancano o sono
 > persi. Reintegrarli per rendere il mondo più vivo; valutare l'inserimento
@@ -39,10 +39,10 @@ Tre cause concorrenti, tutte documentabili:
    (Day 20-42), esattamente il "mondo vivo" richiesto.
 
 **Regola di reintegrazione (vale per tutti i lotti):** nessun destino viene
-bloccato. Ogni PNG reintegrato ha `Status` con flag
+bloccato. Ogni PNG reintegrato nasce con flag
 `[INFERRED — needs DM confirmation]` e una sezione *Esiti possibili* (regola
-D13 — mai copioni). Il DM canonizza al tavolo; finché non lo fa, nulla di
-questo piano è canone.
+D13 — mai copioni); diventa canone solo alla canonizzazione DM del suo
+lotto. **R1+R5 sono stati canonizzati il 2026-07-20** (vedi R6).
 
 ---
 
@@ -119,10 +119,11 @@ massa, controspionaggio arcano, sortite).
   (rete-statue di Varis/Sal, Tempestas, infiltratori §2.5), meccanica
   "scompiglio" a esiti aperti, guardia di protagonismo PG. Possibile
   promozione a PG in un futuro branch di gruppo.
-- [ ] **R6 — Canonizzazione DM**: il DM rivede R1+R5, scioglie i flag
-  `[INFERRED]`, e applica (a mano o via wizard) le righe proposte per
-  `state.md` §3/§7 elencate nei dossier. Gate: **decisione DM** — fino ad
-  allora nessun file di canone (`state.md`) viene toccato da questo piano.
+- [x] **R6 — Canonizzazione DM di R1+R5** (✅ 2026-07-20): il DM ha
+  approvato («inseriscile come Canon»). Flag `[INFERRED]` sciolti nei due
+  dossier; righe applicate a `state.md` §1 (Lirien companion ricorrente),
+  §3 (Norro, Sertieren, Lirien), §7 ([PROFUGHI], [LIRIEN]) e §8 (changelog).
+  I lotti futuri R2-R4 avranno ciascuno la propria canonizzazione a valle.
 
 **Regola d'oro:** ogni lotto chiuso aggiorna questa checklist +
 `plans/INDEX.md` + `plans/CHANGELOG.md` nello stesso commit.

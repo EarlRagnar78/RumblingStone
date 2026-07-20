@@ -84,6 +84,11 @@ Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per det
   was a mix-up with Durik. DM clarified 2026-07-03.)
 - Therysol (Tiefling Half-Dragon NPC, traveling separately, hunting Il Collezionista's guild)
 - **Maestro Tempestas** (Half-elf Bard 12/Arcmage 2, GS 14, recurring messenger of Rethmar; canonized 2026-05-04 as the "bard storm caller" who helped the party escape Lorana's city in Arc 00 — vedi `Bestiario/png/Tempestas/Tempestas.md`). Not constantly present; drops in via *Shadow Walk* every 1–2 sessions with intel.
+- **Lirien Amaranti** — «Il Giullare Spezzato» (Mezzelfo CN, Ladro-Scout 4/
+  Bardo 1, GS 4; canonizzato 2026-07-20 — vedi `Bestiario/png/Lirien/Lirien.md`).
+  NON viaggia col party: PNG ricorrente urbano (Rethmar, quartiere basso —
+  mulino dei bambini di giorno, «Ponte Nuovo» di Kellin la sera), max ~1
+  scena/sessione urbana col dado dello scompiglio.
 
 ---
 
@@ -284,6 +289,9 @@ the listed consequence triggers.
 | Lathander + Mask (divine, divinatory) | Artemis rejected the Lord of Sun and Shadow PrC at Belkram (Arco 04); the Ring he carries is Zalkatar's research instrument; Zalkatar is a 3-century-old ex-cleric of Mask who became Mind Flayer by choice; both deities OBSERVE without intervening unless Artemis explicitly requests post-Tower "courtesy" | Direct divine awareness; activates as dream visitation Notte 22-23 of post-Hammerfist; canonized 2026-05-04 |
 | Brenna Sorvane (Consigliere militare Rethmar) | Hammerfist defeated Red Hand vanguard; Custodi Eterni include Thorik who is a battle-tested commander; Halveth is corrupt by Conte Valerius; Lorana is alive in Rethmar | Reports from Tempestas (her primary messenger); canonized 2026-05-04 via her sealed letter to Thorik |
 | Therysol | Il Collezionista's guild has a hidden cell in Dauth | Captured guild operative interrogated |
+| Norro Wiston (ex-Portavoce del Guado di Drellin, profugo a Rethmar) | The party are the Custodi Eterni; Thorik died and was resurrected at the Guado (he was present, Arco 00) | Direct witness; arrived Rethmar ~Day 16-18 with the refugee wave — canonized 2026-07-20 |
+| Sertieren il Saggio (mago halfling profugo, ospite della biblioteca di Pyriel) | His *sending* to Silverymoon is blocked by a ritual interference on the Wyrmbones; does NOT know who runs it | Failed attempts Day 14-18 — canonized 2026-07-20 |
+| Lirien Amaranti («Il Giullare Spezzato») | He can recognize the Maestro's hand in the living statues (does NOT know the network leads to Varis/Sal/Il Collezionista); knows the street-talk of the Ponte Nuovo | Apprenticeship trauma + tavern ears — canonized 2026-07-20 |
 | Tiri Kitor wild elves | Nothing yet — first contact pending Starsong Hill | — |
 
 ---
@@ -364,6 +372,8 @@ changelog with the resolution.
 - **[HOOKS ↔ ARTEMIS]** Does Artemis accept Tempestas's drow-camp map? Branches: early Tower (skip Beriah / Tournament sub-quest) / Dauth-then-Tower / split via Shadow Walk on Day 33. Each affects intel, sub-quest eligibility, and the "Tower walks" timing of Zalkatar.
 - **[HOOKS ↔ THORIK]** Does Thorik accept Brenna Sorvane's letter and bring an alliance proposal to King Thorek? Determines Halveth's grip on the Rethmar Council, Lorana's reception of the party, and Phase 0 (Notte dei Drow) baseline difficulty.
 - **[HOOKS ↔ TEMPESTAS]** Will the party invest in Tempestas as long-term ally (defending him from drow assassins, acknowledging the Lorana debt, supporting his mental erosion)? Affects whether the Polvere di Tonante 5-charge channel stays usable and whether he appears as flying caster ally at Rethmar Phase 1 (Cantata della Tempesta Tonante 1/incontro narrativo).
+- **[PROFUGHI]** I sei volti del Guado di Drellin (Norro, Sertieren, Derny, Delora, Iormel, Kellin — `Bestiario/png/Guado_di_Drellin/`) sono a Rethmar o in arrivo: chi di loro incontrano i PG per primo, e in quale stato?
+- **[LIRIEN]** Il Giullare Spezzato ha visto qualcosa nelle statue vive — i PG gli daranno retta prima che lo faccia qualcun altro? (`Bestiario/png/Lirien/Lirien.md` §2.1)
 
 ### §7.E Echo Ledger (choices the world remembers)
 
@@ -1333,4 +1343,18 @@ entries — they become campaign history.
             male). Aggiunte sottosezioni §7.E Echo Ledger e §7.R Reputation
             (Fama/Infamia + Anointing Threads) — vuote, da popolare dalla
             prossima sessione. Nessun contenuto di campagna modificato.
+2026-07-20  **Profughi del Guado di Drellin + Lirien CANONIZZATI** (conferma
+            DM — gate R6 del PIANO-REINTEGRAZIONE-PNG-AP-RHOD, lotti R1+R5).
+            Rimossi i flag `[INFERRED — needs DM confirmation]` dai dossier:
+            (1) i sei PNG civici dell'AP (Norro Wiston, Sertieren il Saggio,
+            Fratello Derny, Delora Zann, Iormel, Kellin Shadowbanks —
+            `Bestiario/png/Guado_di_Drellin/`) sono canone come volti
+            dell'onda profughi Day 12→25 verso Rethmar; gli esiti alternativi
+            restano rami aperti del DM (D13). (2) Lirien Amaranti «Il
+            Giullare Spezzato» (`Bestiario/png/Lirien/`) è canone come PNG
+            caotico neutrale ricorrente di Rethmar: superstite del Guado,
+            ex-apprendista del «Maestro» (fornitore occasionale della rete
+            d'arte di Varis/Sal), possibile futura promozione a PG su branch
+            di gruppo. Aggiunte righe §1 (companion ricorrente), §3 (Norro,
+            Sertieren, Lirien) e §7 ([PROFUGHI], [LIRIEN]).
 ```

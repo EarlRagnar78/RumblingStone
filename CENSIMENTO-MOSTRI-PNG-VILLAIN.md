@@ -197,5 +197,6 @@ Dauth → 🔁 L2 (mini-dossier col template `png-dossier-template.md`).
 > due Wyrmlord (Ulwai Stormcaller, Hravek Kharn). Censimento completo,
 > diagnosi e lotti di reintegrazione: `plans/PIANO-REINTEGRAZIONE-PNG-AP-RHOD.md`.
 > **Fatto (R1+R5)**: `png/Guado_di_Drellin/Profughi_Guado_di_Drellin.md`
-> (6 PNG, `[INFERRED]`) + `png/Lirien/Lirien.md` (proposta PNG caotico,
-> `[INFERRED]`). Restano R2-R4 (preparazione) e R6 (canonizzazione DM).
+> (6 PNG) + `png/Lirien/Lirien.md` (PNG caotico ricorrente). ✅ **Entrambi
+> canonizzati dal DM (2026-07-20)** — flag `[INFERRED]` sciolti, righe in
+> `state.md` §1/§3/§7/§8. Restano R2-R4 (preparazione).

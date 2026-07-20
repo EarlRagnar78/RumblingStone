@@ -1,19 +1,19 @@
 # Lirien Amaranti — «Il Giullare Spezzato»
 
 > **Lotto R5** del `plans/PIANO-REINTEGRAZIONE-PNG-AP-RHOD.md` (2026-07-20).
-> **PROPOSTA COMPLETA `[INFERRED — needs DM confirmation]`** — personaggio
+> ✅ **CANONIZZATO DAL DM (2026-07-20, gate R6)** — personaggio
 > fornito dal giocatore/DM (scheda PF1e «Lirien Amaranti v2.0 — Pugnale &
-> Frusta»), qui adattato da PG di altra ambientazione a **PNG caotico
-> ricorrente** della campagna RumblingStone. Niente di questa scheda è
-> canone finché il DM non la canonizza (gate R6). La build meccanica è
+> Frusta»), adattato da PG di altra ambientazione a **PNG caotico
+> ricorrente** della campagna RumblingStone (registrato in `state.md`
+> §1/§3/§7/§8). La build meccanica è
 > **trascritta dalla scheda del giocatore**, non inventata; la campagna
 > gira in D&D 3.5 e usa PF1e come toolkit approvato (AGENTS.md, regola 9).
 
 **Role**: neutral — jolly caotico ricorrente (né alleato né villain: un *fattore di scompiglio*)
-**Status**: proposta — se canonizzato: vivo, superstite del Guado di Drellin, arrivato a Rethmar con l'onda profughi ~Day 18 `[INFERRED — needs DM confirmation]`
+**Status**: vivo — superstite del Guado di Drellin, arrivato a Rethmar con l'onda profughi ~Day 18 *(canone — DM 2026-07-20)*
 **Location**: Rethmar, quartiere basso — di giorno al mulino dei bambini, la sera passa il cappello al «Ponte Nuovo» di Kellin Shadowbanks
 **Motivation**: ridere in faccia alla farsa del mondo prima che la farsa rida di lui; e — sotto il trucco — non permettere che il Maestro faccia a qualcun altro ciò che ha fatto a lui.
-**CR**: 4 (build liv. 5) `[INFERRED]` — volutamente NON scalato all'APL 13: è un civile straordinario, non una minaccia; per renderlo rilevante in combattimento passare da `skills/npc-villain-boosting/` | **Race/Class**: mezzelfo, Ladro (Scout) 4 / Bardo (di Corte) 1 — progressione futura del giocatore: → Bardo 8 / Arcane Trickster 4 (liv. 16)
+**CR**: 4 (build liv. 5) — volutamente NON scalato all'APL 13: è un civile straordinario, non una minaccia; per renderlo rilevante in combattimento passare da `skills/npc-villain-boosting/` | **Race/Class**: mezzelfo, Ladro (Scout) 4 / Bardo (di Corte) 1 — progressione futura del giocatore: → Bardo 8 / Arcane Trickster 4 (liv. 16)
 **Key stats** *(trascritte dalla scheda PF1e v2 del giocatore, blocco liv. 5)*: PF 33; CA 16 (tatto 13); Iniziativa +7; TS +2/+9/+1; Pugnale perfetto +7 (1d4−1, 19-20/×2); Frusta perfetta +6 (1d3−1 nonletale, portata 10 ft, Trip/Disarm, CMB +7 con Agile Maneuvers); Furtivo +2d6 (Skirmisher: attiva con movimento 10+ ft); Intimidire +12/+14; Satira Bardica −1 (nemici entro 9 m); talenti: Arma Focalizzata (pugnale), Arma Accurata, Enforcer, EWP frusta; incantesimi da bardo 1° (CD 14): *Risata Incontenibile*, *Unto*; trucchetti: *Suono Fantasma*, *Prestidigitazione*, *Ninnananna*, *Messaggio*.
 **Nota conversione 3.5**: al tavolo 3.5 leggere Scout-Ladro ≈ Ladro con Attacco Furtivo +2d6, Enforcer ≈ Intimidire demoralizzante gratuito sul danno nonletale, Satira ≈ *inspire* invertita (−1 nemici). Nessuna meccanica nuova: tutto ciò che fa è già coperto da Intimidire/Raggirare/Furtivo SRD.
 **Token**: — (da assegnare; il trucco da Pierrot — lacrime nere colate, sorriso rosso asimmetrico — è il segno distintivo)
@@ -25,7 +25,7 @@ Boost log: (vuoto)
 ## 1. Chi è (adattamento Faerûn 1372 DR del background del giocatore)
 
 Orfano mezzelfo cresciuto invisibile nei vicoli — nell'adattamento FR non
-Magnimar ma **Rethmar stessa** `[INFERRED]`: il ritorno da profugo è quindi
+Magnimar ma **Rethmar stessa** (canone): il ritorno da profugo è quindi
 anche un ritorno a casa, dalla porta di servizio. Trovò rifugio
 nell'apprendistato presso un celebre **bardo itinerante — «il Maestro»** —
 brillante, affascinante, e lucidamente folle: convinto che la «vera musica»
@@ -44,7 +44,7 @@ camminato fino a Rethmar in mezzo ai profughi facendo l'unica cosa che sa
 fare: schioccare la frusta sopra la testa dei bambini per farli ridere
 quando piangono.
 
-**Divinità** `[INFERRED]`: bestemmia affettuosamente **Lliira**, Nostra
+**Divinità**: bestemmia affettuosamente **Lliira**, Nostra
 Signora della Gioia — l'unica dea, dice, che ha capito che la vita è
 un'osteria. (Adattamento FR del Cayden Cailean della scheda originale.)
 
@@ -62,12 +62,11 @@ quando la stringe, la Satira diventa gelida).
 
 ### 2.1 Il Maestro e la rete delle statue (Varis → Sal → Il Collezionista)
 
-`[INFERRED — needs DM confirmation]` Il Maestro non è sparito: artisti che
+Il Maestro non è sparito *(canone — DM 2026-07-20)*: artisti che
 trasformano il dolore in «opere» trovano sempre un mercato, e il mercato in
 questa campagna ha un nome — la rete d'arte di **Varis "Seta-Argento"**,
 la stessa che smercia le **statue vive** di Salvatore "Sal" per conto del
-Collezionista. Il Maestro vi orbita come *fornitore occasionale*
-`[INFERRED]`: non un nuovo villain, un filo in più nella tela già tesa.
+Collezionista. Il Maestro vi orbita come *fornitore occasionale* (canone): non un nuovo villain, un filo in più nella tela già tesa.
 
 **La miccia:** Lirien, davanti a una delle statue già a Rethmar (quella di
 Sorvane, di Thornwall, o una in vetrina da un nobile), riconosce nella posa
@@ -95,7 +94,7 @@ sicari drow lo cercano (thread [HOOKS ↔ TEMPESTAS], state.md §7).
 
 Fra i profughi camminano **3-5 infiltrati** della Mano Rossa (state.md
 §2.5). Lirien, per abitudine e per fame, borseggia — e nella borsa
-sbagliata trova una cosa che non doveva vedere `[INFERRED]` (un fischietto
+sbagliata trova una cosa che non doveva vedere — quale, lo sceglie il DM al momento (un fischietto
 di segnalazione drow, una fiala del veleno per le cisterne). **Triangolo di
 rischio pronto:** (a) lo dice ai PG → gli infiltrati capiscono di essere
 scoperti e anticipano; (b) prova a rivenderlo al Ponte Nuovo → l'oggetto
@@ -146,9 +145,11 @@ sua «vita da PNG» pregressa: tutto ciò che il DM ha canonizzato qui è il
 suo passato giocabile. In quel caso il PNG esce di scena (stesso
 personaggio, non due copie).
 
-## Proposta di righe per `state.md` (NON applicata — gate R6, decide il DM)
+## Righe applicate a `state.md` (canonizzazione 2026-07-20)
 
-> - **§1 (companions)** *(solo se canonizzato come ricorrente)*: «Lirien
+> Applicate (vedi `state.md` §8, riga 2026-07-20):
+>
+> - **§1 (companions)**: «Lirien
 >   Amaranti — giullare mezzelfo CN, Rethmar quartiere basso; non viaggia
 >   col party; compare ~1 scena/sessione urbana».
 > - **§3 (NPC knowledge)**: «Lirien — sa riconoscere la mano del Maestro

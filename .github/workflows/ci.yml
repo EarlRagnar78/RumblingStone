@@ -15,6 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # serve al gate di tracciatura (diff vs base ref)
 
       - uses: actions/setup-python@v5
         with:
@@ -28,6 +30,10 @@ jobs:
 
       - name: Validate skill trees (frontmatter, links, data YAML)
         run: python scripts/validate_skills.py
+
+      - name: Plans discipline gate — CHANGELOG obbligatorio + promemoria ADR (ADR-0009)
+        if: github.event_name == 'pull_request'
+        run: python scripts/check_plans_discipline.py --base "origin/${{ github.base_ref }}"
 
       - name: Validate generated maps (well-formed, in-sync SVGs)
         run: python scripts/validate_maps.py

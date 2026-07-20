@@ -141,7 +141,7 @@ Two independent clocks drive Arc 09:
 | Forze Alate (Manticore, Wyvern, Hell Hounds, Chimera) | 140 | |
 | Casters Mano Rossa (War Adepts, Blue, Warpriests di Tiamat) | 55 | |
 | **Dragons (5 AP-original upscaled)** | 5 | Abithriax (Red adult) / Regiarix (Black young, Rhest) / Ozyrrandion (Blue, Tower) / **Tyrgarun (Blue Old, CR 18 — sky-terror of the battle, NOT Azarr Kul's mount, D11 v2)** / **Fauci di Palude** (Black adult, Hammerfist vanguard — **conditional branch, D10, not yet resolved**: default = flees gravely wounded, may return later as a narrative hook, not guaranteed at Rethmar; PG-kill branch = dies at Hammerfist, −1 dragon, see §2.3) |
-| **Draconic spawn = Razorfiend (Tiamat colors)** | 8 | Assigned to Wyrmlord villains upscaled |
+| **Draconic spawn = Razorfiend (Tiamat colors)** | 8 | Assigned to Wyrmlord villains upscaled — **tier élite CR 13 «Blackspawn Alfa»** (`Bestiario/mostri/razorfiend-blackspawn-alfa-cr13.md`, DM 2026-07-20); i razorfiend CR 8-9 restano truppa d'ondata |
 | Compagnia Drow di Sonjak | 305 | |
 | Githyanki di Vaereth | 375 | |
 | Gnoll mercenari (3 tribù: Flinderoso, Abbattitori, Artigli Neri) | 1,100 | |
@@ -1347,6 +1347,22 @@ entries — they become campaign history.
             male). Aggiunte sottosezioni §7.E Echo Ledger e §7.R Reputation
             (Fama/Infamia + Anointing Threads) — vuote, da popolare dalla
             prossima sessione. Nessun contenuto di campagna modificato.
+2026-07-20c **R4 — Wyrmlord + Blackspawn** (DM). (1) **Hravek Kharn fuso in
+            Wyrmlord Karruk**: i Wyrmlord dell'AP non sono reintegrati 1:1;
+            il ruolo di Kharn (comandante bruto dell'avanzata) è **Karruk**
+            (già gigante-barbaro comandante da campo). Nessuna scheda Hravek
+            separata; stats AP solo come seme di variante. (2) **Ulwai
+            Stormcaller NON reintegrata 1:1**: nicchia già coperta da Mira
+            Serani «l'Aranea» + fronte drow; stats come seme per un caster
+            speciale se serve. (3) **Blackspawn rilivellati**: nuovo tier
+            **élite CR 13 «Razorfiend Blackspawn Alfa»** (Huge dragon 16 DV,
+            `Bestiario/mostri/razorfiend-blackspawn-alfa-cr13.md`, boost da
+            razorfiend CR 9 via advancement) — gli **8 spawn assegnati ai
+            Wyrmlord** (§2.2) usano questo tier; i razorfiend CR 8-9 restano
+            truppa d'ondata. Motivazione DM: orda ~10.000 (>> AP) → servono
+            elementi speciali all'altezza dell'APL 13. Coerente con la
+            nota del designer AP (dm-guide: "Kharn most in need of re-stat;
+            re-stat the razorfiends").
 2026-07-20b **Aranea ricalibrata PG 8-9 + rename Nania Seriv** (follow-up
             R7). Lo statblock di Mira Serani è stato **ricalibrato a CR 8**
             (Aranea Stregone 6, `Bestiario/villain/Mira_Serani/mira-serani-

@@ -1,6 +1,6 @@
 # PIANO — REINTEGRAZIONE PNG DELL'AP ORIGINALE (Red Hand of Doom) + Lirien
 
-> **Creato:** 2026-07-20 · **Stato:** 🟡 in corso — R1+R5+R7 canonizzati; R2+R3 **preparati** (2026-07-20); resta R4 (decisione DM)
+> **Creato:** 2026-07-20 · **Stato:** ✅ **COMPLETO** (2026-07-20) — R1-R7 tutti chiusi (R1/R5/R7 canonizzati, R2/R3 preparati, R4 deciso dal DM)
 > **Origine:** richiesta DM — «nell'avventura originale (Guado di Drellin e
 > le altre località dell'AP) ci sono tanti PNG che nel repo mancano o sono
 > persi. Reintegrarli per rendere il mondo più vivo; valutare l'inserimento
@@ -123,8 +123,17 @@ massa, controspionaggio arcano, sortite).
   Nightshadow (barda in lutto, specchio di Lirien), Vecchio Warklegnaw
   (gigante del Witchwood). `[INFERRED]`; statblock mancanti da generare via
   npc-villain-boosting al gioco. Gate: prima di P3-Starsong (Day 30-35).
-- [ ] **R4 — Wyrmlord mancanti (villain)**: Ulwai Stormcaller; decisione DM
-  su Hravek Kharn vs Karruk. Gate: decisione DM.
+- [x] **R4 — Wyrmlord + Blackspawn** (✅ deciso dal DM 2026-07-20):
+  - **Hravek Kharn → FUSO in Wyrmlord Karruk** (no scheda separata; stats AP
+    solo come seme di variante). Nota nel dossier `villain/Wyrmlord_Karruk/`.
+  - **Ulwai Stormcaller → NON reintegrata 1:1**: nicchia coperta da Mira
+    Serani «l'Aranea» + fronte drow; stats come seme per un caster speciale.
+  - **Blackspawn rilivellati**: nuovo tier **élite CR 13 «Razorfiend
+    Blackspawn Alfa»** (`Bestiario/mostri/razorfiend-blackspawn-alfa-cr13.md`,
+    Huge 16 DV, boost da razorfiend CR 9) per gli 8 spawn assegnati ai
+    Wyrmlord; i CR 8-9 restano truppa. `state.md` §2.2 + §8 aggiornati.
+  Principio DM: Wyrmlord AP non 1:1; l'orda ingrandita (>> AP) richiede
+  elementi speciali all'altezza dell'APL 13.
 - [x] **R5 — Lirien Amaranti, "Il Giullare Spezzato"** (questa PR): dossier
   `Bestiario/png/Lirien/Lirien.md` — PNG caotico neutrale ricorrente,
   proposta completa `[INFERRED — needs DM confirmation]`: adattamento FR

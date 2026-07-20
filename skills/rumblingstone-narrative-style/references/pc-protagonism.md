@@ -28,6 +28,13 @@ never resolve plot among themselves on-screen; if two NPC factions
 clash, the scene is generated *from the vantage of what the PCs can
 see, exploit, or prevent*.
 
+**Protagonism is the camera, not gravity.** This test constrains how
+scenes are *framed*, never why the world *moves*: NPCs, villains, and
+factions act for their own Want/Fear, off-screen and on, including
+against party convenience (`living-world.md`). An NPC who exists only
+to serve the PCs' plot fails the living-world check; a scene the PCs
+merely watch fails this test. Generated content must pass both.
+
 ## 2. Spotlight rotation (Mercer layer, formalized)
 
 - Session plans mark each scene with `Shine: <PC>` — whose profile it

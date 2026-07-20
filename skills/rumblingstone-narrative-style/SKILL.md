@@ -11,7 +11,8 @@ description: >
   in evil. Trigger on any content-generation request: "genera", "scrivi",
   "crea la quest", "prepara la sessione", "read-aloud", "boxed text",
   "recap", "hook", "descrivi la scena", "session prep", "new quest",
-  "dialogo", "conseguenze", "stile narrativo".
+  "dialogo", "conseguenze", "stile narrativo", "mondo vivo", "living
+  world", "world turn", "cosa fanno i PNG", "agenda dei villain".
 ---
 
 # RumblingStone — Narrative Style Engine (Eight Pillars)
@@ -68,6 +69,7 @@ and at most two support pillars, chosen by scene type. The mixer:
 | PCs as protagonists in good AND evil — spotlight, flaws, fame/infamy | `references/pc-protagonism.md` |
 | BG3-style echo ledger: writing, timing, and paying off consequences | `references/consequence-echoes.md` |
 | BG1/2-style complex quest patterns: stages, factions, personal quests | `references/quest-design-baldur.md` |
+| Living world: NPC/villain agency, world turn, SRD attitude system, settlements | `references/living-world.md` |
 
 ## Non-negotiables (checked on every output)
 
@@ -75,6 +77,11 @@ and at most two support pillars, chosen by scene type. The mixer:
    one PC a decision, a spotlight, or a consequence of a past choice. No
    scene where NPCs resolve the plot among themselves.
    See `references/pc-protagonism.md`.
+1-bis. **…but the world is alive** — protagonism is the camera, not
+   gravity: NPCs, villains, and factions act for their own Want/Fear,
+   off-screen and against party convenience too, with reactions grounded
+   in SRD attitude mechanics. No NPC whose only reason to exist is the
+   PCs' plot. See `references/living-world.md`.
 2. **Consequences are never forgotten** — meaningful choices write an echo
    (`references/consequence-echoes.md`); generated content must surface at
    least one *past* echo when the fiction allows it.
@@ -97,3 +104,6 @@ Run the coherence self-check (`campaign-coherence.md` §6) first, then:
 3. Did I surface or write an echo? (If the scene is meaningful → yes.)
 4. Would this scene survive with the serial numbers filed off — no borrowed
    names, no imitation so close it reads as the source? (If no → rewrite.)
+5. Living-world check: does every named NPC have a Want that isn't about
+   the PCs, and did the world act for its own reasons somewhere? (If no →
+   rewire; see `references/living-world.md` §7.)

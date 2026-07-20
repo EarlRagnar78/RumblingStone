@@ -65,6 +65,9 @@ jobs:
           python scripts/compile_map_json.py scripts/examples/campo-drow-1.json -o /tmp/ci-drow.md
           python -c "t=open('/tmp/ci-drow.md',encoding='utf-8').read(); assert '@north' in t and '@path' in t and '@mark' in t and '@zone' in t, 'direttive @ mancanti'; print('direttive @ OK')"
 
+      - name: Unit tests — dmcore / state_apply / next_session (ADR-0007)
+        run: python -m unittest discover -s scripts/tests -v
+
       - name: dm.py unified CLI smoke test (K-C3)
         run: |
           python scripts/dm.py --help > /dev/null

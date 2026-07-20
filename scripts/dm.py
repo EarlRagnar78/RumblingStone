@@ -5,13 +5,16 @@ dm.py — CLI unica del DM RumblingStone (orchestratore, MAI logica).
 Un solo punto d'ingresso per il flusso pre/durante/post sessione del
 DM-CAMPAIGN-PLAYBOOK. Ogni sottocomando invoca gli script esistenti in
 `scripts/` senza duplicarne una riga (ADR-0002); gli script restano
-invocabili singolarmente. Solo stdlib; idempotente; non scrive mai su
-`campaign/state.md` o `campaign/sessions/*.md` (design rules del toolkit).
+invocabili singolarmente. Solo stdlib; idempotente. Le scritture di canone
+(`campaign/state.md`) avvengono SOLO via `session end` → `state_apply.py`,
+col triplo vincolo di ADR-0007: branch di gruppo (mai main), conferma
+diff del DM, regioni marcate `auto:`.
 
 Sottocomandi (fase del Playbook tra parentesi):
     prep      (§2)   catalogo → incontri → mappa → loot per la prossima sessione
     maps      (prep) render SVG / valida le griglie emoji
     post      (§4)   ledger XP → proposta diff state.md → checklist §4
+    session   (§4+§7) ciclo su branch-per-gruppo (ADR-0007): end/next/status/branch
     recap     (§4.6) recap spoiler-safe per i player (+ --hype → Homebrewery)
     handout   (prep) handout giocatori in markdown Homebrewery V3
     skills    (manutenzione) build/sync pipeline skill multi-agente
@@ -159,6 +162,39 @@ def cmd_dossier(args: argparse.Namespace, extra: list[str]) -> int:
     return run("dm_dossier.py", *extra)
 
 
+def cmd_session(args: argparse.Namespace, extra: list[str]) -> int:
+    # Ciclo di vita sessione su branch-per-gruppo (ADR-0007) — solo orchestrazione
+    if args.action == "status":
+        return run("campaign_branch.py", "status", check=False)
+    if args.action == "branch":
+        ens = ["--group", args.group] if args.group else []
+        return run("campaign_branch.py", "ensure", *ens)
+    if args.action == "next":
+        nx = []
+        if args.last_n != 1:
+            nx += ["--last-n", str(args.last_n)]
+        if args.hype:
+            nx += ["--hype"]
+        return run("next_session.py", *nx, *extra)
+    # action == "end": guardia → ledger XP → apply su regioni marcate → residuo
+    rc = run("campaign_branch.py", "guard")
+    if rc != 0:
+        return rc
+    rc = run("update_xp.py")
+    ses = ["--session", args.session] if args.session else []
+    if args.yes:
+        ses += ["--yes"]
+    rc |= run("state_apply.py", *ses, "--commit", *extra)
+    print(
+        "\n[dm] ✓ session end: ledger XP aggiornato, regioni marcate di "
+        "state.md applicate (su conferma) e committate.\n"
+        "[dm] Residuo manuale (Playbook §4): prosa/PNG di state.md dalle "
+        "proposte sopra, poi `dm.py session next --hype` quando vuoi il "
+        "brief della prossima sessione."
+    )
+    return rc
+
+
 def cmd_skills(args: argparse.Namespace, extra: list[str]) -> int:
     if args.action == "sync":
         return run("sync-skills.sh", *extra)
@@ -193,6 +229,35 @@ def cmd_doctor(args: argparse.Namespace, extra: list[str]) -> int:
         warn(f"monster_catalog.yaml vecchio di {age:.0f} giorni")
     else:
         ok(f"monster_catalog.yaml fresco ({age:.1f} giorni)")
+
+    # sessione su branch-per-gruppo (ADR-0007): check informativi, mai fatali
+    try:
+        sys.path.insert(0, str(SCRIPTS))
+        from dmcore import config as _cfg, gitio as _gitio
+        from dmcore.regions import find_regions as _find_regions
+        _group = _cfg.load_group(REPO)
+        _branch = _gitio.current_branch(REPO)
+        if _group:
+            ok(f"gruppo '{_group}' (campaign/group.yaml)")
+            if _branch == _cfg.group_branch(_group):
+                ok(f"branch gruppo attivo: {_branch}")
+            else:
+                print(f"  ○ branch corrente '{_branch}' ≠ branch gruppo "
+                      f"'{_cfg.group_branch(_group)}' — ok per la prep, ma "
+                      f"`session end` rifiuterà di scrivere canone qui")
+        else:
+            print("  ○ campaign/group.yaml assente — `dm.py session branch "
+                  "--group <nome>` per attivare il flusso ADR-0007")
+        _state = REPO / "campaign" / "state.md"
+        if _state.exists():
+            _regs = _find_regions(_state.read_text(encoding="utf-8"))
+            if {"march-clock", "changelog"} <= set(_regs):
+                ok("marker auto: presenti in state.md (march-clock, changelog)")
+            else:
+                print("  ○ marker auto: assenti in state.md — "
+                      "`state_apply.py --migrate` sul branch gruppo")
+    except Exception as exc:  # doctor non deve mai crashare
+        warn(f"check sessione ADR-0007 falliti: {exc}")
 
     for tool, why in (("pandoc", "recap --pdf"), ("xelatex", "recap --pdf")):
         if shutil.which(tool):
@@ -249,6 +314,16 @@ def main(argv: list[str] | None = None) -> int:
 
     sub.add_parser("dossier", help="⚠️ SOLO DM: dossier di tutte le trame (da state.md) in Homebrewery V3")
 
+    p = sub.add_parser("session",
+                       help="ciclo sessione su branch-per-gruppo (ADR-0007): "
+                            "end / next / status / branch")
+    p.add_argument("action", choices=["end", "next", "status", "branch"])
+    p.add_argument("--session", help="(end) file di sessione sotto campaign/sessions/")
+    p.add_argument("--yes", action="store_true", help="(end) applica senza conferme")
+    p.add_argument("--last-n", type=int, default=1, help="(next) sessioni da scandire")
+    p.add_argument("--hype", action="store_true", help="(next) anche vesti Homebrewery")
+    p.add_argument("--group", help="(branch) nome gruppo la prima volta")
+
     p = sub.add_parser("skills", help="pipeline skill multi-agente")
     p.add_argument("action", choices=["build", "sync"])
     p.add_argument("--no-deploy", action="store_true")
@@ -260,7 +335,7 @@ def main(argv: list[str] | None = None) -> int:
     return {
         "prep": cmd_prep, "maps": cmd_maps, "post": cmd_post, "recap": cmd_recap,
         "handout": cmd_handout, "hype": cmd_hype, "dossier": cmd_dossier,
-        "skills": cmd_skills, "doctor": cmd_doctor,
+        "session": cmd_session, "skills": cmd_skills, "doctor": cmd_doctor,
     }[args.cmd](args, extra)
 
 

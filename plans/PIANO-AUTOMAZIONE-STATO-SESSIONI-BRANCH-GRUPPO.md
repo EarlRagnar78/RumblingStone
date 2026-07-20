@@ -265,6 +265,26 @@ Bestiario, mappe, skills — su `main`) da *stato vivo* (`state.md`,
 
 ## §5 — Lotti di lavoro (con stime e gate)
 
+> **Stato lotti al 2026-07-20** (prima ondata implementata, PR #53):
+> - **A ✅** — ADR-0007 estratto in `plans/adr/`; `dmcore/` (regions/gitio/config);
+>   `campaign_branch.py` (status/guard/ensure); `dm.py session` registrato;
+>   `doctor` esteso (gruppo/branch/marker). Gate superato: su `main`,
+>   `session end` rifiuta.
+> - **B 🟡 parziale** — `session end` funziona su un log **già scritto**
+>   (`--session FILE`); il wizard interattivo Q&A (B1-B4) resta da fare.
+> - **C ✅ (v1)** — `state_apply.py`: `--migrate` idempotente, apply su
+>   regioni `march-clock` + `changelog` con diff e conferma per blocco,
+>   fail-safe report-only, commit dedicato. Gate superato: property test
+>   "fuori dai marker byte-identico" verde.
+> - **D ⬜** — visibilità per-PG (template v2, `--pg`) non ancora iniziata.
+> - **E ✅ (E1)** — `next_session.py`: brief DM + teaser player + vesti
+>   `.hb.md`; hook `- [x]` filtrati; link ai dossier `HOOKS-<PG>`.
+>   Il matching cross-sessione degli hook consumati (E2) resta euristico
+>   minimo. Gate superato: con lo stato reale segnala P1B 🟡 e Zalkatar 6/8.
+> - **F 🟡 parziale** — suite `scripts/tests/` (16 test, anche in CI),
+>   README-automation e Playbook §4 aggiornati, Quick Guide nuovi DM
+>   creata; restano i golden test del recap (col Lotto D).
+
 Stime in ore di lavoro focalizzato, incluse le prove. Ordine = dipendenze.
 
 ### Lotto A — Fondazioni: ADR-0007 + branch guard + scheletro CLI *(≈3-4h, rischio basso)*

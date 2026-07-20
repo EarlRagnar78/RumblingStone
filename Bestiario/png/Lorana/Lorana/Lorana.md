@@ -155,3 +155,27 @@ Lorana non è membro ufficiale del Consiglio — è portata da Brenna Sorvane co
 - Non trasformarla in un personaggio di supporto passivo. Lorana ha un'agenda operativa: proteggere i rifugiati, preparare le vie di fuga di emergenza, avere un piano B se le mura cadono. I PG possono aiutarla, ostacolarla, o ignorarla — ma lei va avanti lo stesso.
 - **La spilla**: è un oggetto fisico che il DM può descrivere quando Lorana è sotto stress. Non va mai spiegata finché qualcuno non chiede esplicitamente. Se chiesto, risponde brevemente e torna alla logistica. È il suo modo di portare il peso senza crollare sotto di esso.
 - Se Hella non è presente durante il ricongiungimento, Lorana chiede dei PG assenti per nome. Non per cortesia — per avere un quadro aggiornato di chi è disponibile.
+
+---
+
+## 🕷️ SEGRETO DEL MASTER — La verità su Mira (canone DM 2026-07-20)
+
+> Vedi `Bestiario/villain/Mira_Serani/Mira_Serani.md`. **Non rivelare ai
+> giocatori.** L'esito bloccato non cambia: Mira è morta, Lorana ha fatto la
+> sua scelta e la piange (questo resta identico, incluso il dialogo §Per
+> Hella e la spilla §Note). Si aggiunge solo uno strato nascosto.
+
+La bambina **Mira era la figlia di Lorana** (sei anni). Lorana crede di
+averla persa per la propria scelta di triage durante l'evacuazione del Guado.
+**La verità**: un'**aranea** spia della Mano Rossa (*Mira Serani*, «l'Aranea»)
+sfruttò quel caos, **uccise la bambina e ne rubò la faccia**, e da allora si
+spaccia per lei (bimba o adolescente) infiltrandosi tra i profughi — ha
+persino viaggiato accanto ai PG verso Hammerfist, poi è fuggita.
+
+**Il trigger**: Lorana *sa* che Mira è morta e ne porta la spilla. Vedere una
+«Mira viva» è per lei un'impossibilità → **smaschera l'aranea a vista, senza
+tiro**. È il contro naturale della villain (che infatti evita Lorana come la
+morte). Lo smascheramento incrina la colpa di Lorana — non ha *sacrificato* la
+figlia: gliel'hanno **assassinata** — momento devastante e possibile
+liberazione (grande Shine Time con Hella). Da giocare quando i due fili si
+toccano, mai prima.

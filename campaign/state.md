@@ -84,6 +84,11 @@ Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per det
   was a mix-up with Durik. DM clarified 2026-07-03.)
 - Therysol (Tiefling Half-Dragon NPC, traveling separately, hunting Il Collezionista's guild)
 - **Maestro Tempestas** (Half-elf Bard 12/Arcmage 2, GS 14, recurring messenger of Rethmar; canonized 2026-05-04 as the "bard storm caller" who helped the party escape Lorana's city in Arc 00 — vedi `Bestiario/png/Tempestas/Tempestas.md`). Not constantly present; drops in via *Shadow Walk* every 1–2 sessions with intel.
+- **Lirien Amaranti** — «Il Giullare Spezzato» (Mezzelfo CN, Ladro-Scout 4/
+  Bardo 1, GS 4; canonizzato 2026-07-20 — vedi `Bestiario/png/Lirien/Lirien.md`).
+  NON viaggia col party: PNG ricorrente urbano (Rethmar, quartiere basso —
+  mulino dei bambini di giorno, «Ponte Nuovo» di Kellin la sera), max ~1
+  scena/sessione urbana col dado dello scompiglio.
 
 ---
 
@@ -251,6 +256,7 @@ the listed consequence triggers.
 | Sethrax il Velato (Illithid emissary, Zalkatar's conclave) | Dauth — infiltrated as tournament finalist "Kethran Mano di Pietra" | Extract a "Seme di Porta" from the Orbe delle Otto Porte during the Tournament's peak resonance, deliver it to Zalkatar at the Invisible Tower | Sync to Tournament (Day 1 = arrival; Day 2 = entered as finalist; Day 3 Round 7 = forced unmasking by Xal'thor's portal) | Sethrax flees to Invisible Tower with the seed → Zalkatar gains +2 effective CR + new orb-derived Mind Blast in P2A finale (Artemis's quest) |
 | Azarr Kul (High Wyrmlord) — **Ritual Clock, see §2.0** (NOT the March Clock; the horde's physical approach is tracked separately in §2.1, currently Day 19 of 42) | Fane of Tiamat (Shaar) | Ritual sacrifices/planar conjunctions to summon the Avatar of Tiamat during the Rethmar siege (Day 40-42, Phase 2). Advances only on explicit triggers: +1 per Warpriest élite mass sacrifice (Day 35-38), +2 if Giant Wave ×1 breaches the walls (Phase 1), +3 if Giant Wave ×2 breaches (Phase 3) — see `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` §4b | 9/18 | Avatar of Tiamat manifests over Rethmar during Phase 2's 10-round ritual (D8) |
 | Conte Valerius (manipulator) | Capital city | Legalize horde funding via "patriotic emergency" loans | 2/8 | Party loses access to legitimate guild merchants |
+| **Mira Serani «l'Aranea»** (aranea mutaforma, Red Hand intel) — canonizzata 2026-07-20, `Bestiario/villain/Mira_Serani/` | Mobile — infiltrata nell'onda profughi (Guado → Rethmar) | Raccogliere intel su difese di Rethmar e **artefatti dei PG** per l'orda; spacciarsi per la figlia morta di Lorana (bimba/adolescente); **evitare Lorana** | Trigger, non clock numerico | **Hard counter**: se incrocia Lorana → smascherata a vista, combatte solo per fuggire. Ogni intel raccolta **alimenta i clock esistenti** (Sal/Sonjak/Fase 0-1), non ne apre uno nuovo |
 
 ---
 
@@ -284,6 +290,11 @@ the listed consequence triggers.
 | Lathander + Mask (divine, divinatory) | Artemis rejected the Lord of Sun and Shadow PrC at Belkram (Arco 04); the Ring he carries is Zalkatar's research instrument; Zalkatar is a 3-century-old ex-cleric of Mask who became Mind Flayer by choice; both deities OBSERVE without intervening unless Artemis explicitly requests post-Tower "courtesy" | Direct divine awareness; activates as dream visitation Notte 22-23 of post-Hammerfist; canonized 2026-05-04 |
 | Brenna Sorvane (Consigliere militare Rethmar) | Hammerfist defeated Red Hand vanguard; Custodi Eterni include Thorik who is a battle-tested commander; Halveth is corrupt by Conte Valerius; Lorana is alive in Rethmar | Reports from Tempestas (her primary messenger); canonized 2026-05-04 via her sealed letter to Thorik |
 | Therysol | Il Collezionista's guild has a hidden cell in Dauth | Captured guild operative interrogated |
+| Norro Wiston (ex-Portavoce del Guado di Drellin, profugo a Rethmar) | The party are the Custodi Eterni; Thorik died and was resurrected at the Guado (he was present, Arco 00) | Direct witness; arrived Rethmar ~Day 16-18 with the refugee wave — canonized 2026-07-20 |
+| Sertieren il Saggio (mago halfling profugo, ospite della biblioteca di Pyriel) | His *sending* to Silverymoon is blocked by a ritual interference on the Wyrmbones; does NOT know who runs it | Failed attempts Day 14-18 — canonized 2026-07-20 |
+| Lirien Amaranti («Il Giullare Spezzato») | He can recognize the Maestro's hand in the living statues (does NOT know the network leads to Varis/Sal/Il Collezionista); knows the street-talk of the Ponte Nuovo | Apprenticeship trauma + tavern ears — canonized 2026-07-20 |
+| Mira Serani «l'Aranea» | The party already met her (disguised as a refugee child) on the road to Hammerfist and let her go; knows fragments of the PCs' artifacts/routes; does NOT know Lorana survived and is at Rethmar | Embedded Red Hand spy since Drellin's Ferry — canonized 2026-07-20 |
+| Lorana (hard counter to l'Aranea) | Believes her daughter Mira is dead (carries her brooch); does NOT know the child was murdered and impersonated by an aranea — will recognize the impostor **on sight** if they meet | Grief + the brooch; the truth is a DM secret in `Bestiario/png/Lorana/…/Lorana.md` — canonized 2026-07-20 |
 | Tiri Kitor wild elves | Nothing yet — first contact pending Starsong Hill | — |
 
 ---
@@ -364,6 +375,9 @@ changelog with the resolution.
 - **[HOOKS ↔ ARTEMIS]** Does Artemis accept Tempestas's drow-camp map? Branches: early Tower (skip Beriah / Tournament sub-quest) / Dauth-then-Tower / split via Shadow Walk on Day 33. Each affects intel, sub-quest eligibility, and the "Tower walks" timing of Zalkatar.
 - **[HOOKS ↔ THORIK]** Does Thorik accept Brenna Sorvane's letter and bring an alliance proposal to King Thorek? Determines Halveth's grip on the Rethmar Council, Lorana's reception of the party, and Phase 0 (Notte dei Drow) baseline difficulty.
 - **[HOOKS ↔ TEMPESTAS]** Will the party invest in Tempestas as long-term ally (defending him from drow assassins, acknowledging the Lorana debt, supporting his mental erosion)? Affects whether the Polvere di Tonante 5-charge channel stays usable and whether he appears as flying caster ally at Rethmar Phase 1 (Cantata della Tempesta Tonante 1/incontro narrativo).
+- **[PROFUGHI]** I sei volti del Guado di Drellin (Norro, Sertieren, Derny, Delora, Iormel, Kellin — `Bestiario/png/Guado_di_Drellin/`) sono a Rethmar o in arrivo: chi di loro incontrano i PG per primo, e in quale stato?
+- **[LIRIEN]** Il Giullare Spezzato ha visto qualcosa nelle statue vive — i PG gli daranno retta prima che lo faccia qualcun altro? (`Bestiario/png/Lirien/Lirien.md` §2.1)
+- **[ARANEA]** Mira Serani si muove tra i profughi con la faccia della figlia morta di Lorana, raccogliendo intel per l'orda: quando (e come) i PG portano Lorana abbastanza vicino da smascherarla? E cosa fa la verità alla colpa di Lorana? (`Bestiario/villain/Mira_Serani/`)
 
 ### §7.E Echo Ledger (choices the world remembers)
 
@@ -1333,4 +1347,35 @@ entries — they become campaign history.
             male). Aggiunte sottosezioni §7.E Echo Ledger e §7.R Reputation
             (Fama/Infamia + Anointing Threads) — vuote, da popolare dalla
             prossima sessione. Nessun contenuto di campagna modificato.
+2026-07-20  **Mira Serani «l'Aranea» reintegrata + twist CANONIZZATO** (gate
+            R7 del PIANO-REINTEGRAZIONE-PNG-AP-RHOD). Villain AP (aranea spia
+            della Mano Rossa, `[Private — RHoD p.44-45]`) assente dal repo,
+            ricostruita da base aranea SRD (OGL) → Aranea Stregone 9, CR 11
+            `[INFERRED]` (numeri da validare; identità/ruolo = canone DM).
+            **Twist DM**: uccise la **figlia di Lorana** (la bambina Mira, 6
+            anni, già a canone come morta nel triage del Guado) e ne rubò la
+            faccia; si spaccia per lei (bimba/adolescente) tra i profughi; ha
+            già incrociato i PG sulla strada per Hammerfist ed è fuggita.
+            L'esito bloccato NON cambia (Mira è morta lo stesso); si aggiunge
+            solo lo strato nascosto. **Lorana = hard counter** (la smaschera a
+            vista). Nessun clock nuovo: la sua intel alimenta i clock
+            esistenti (Sal/Sonjak/Fase 0-1). File: `Bestiario/villain/
+            Mira_Serani/` (dossier + statblock) + sezione DM-segreta in
+            `Bestiario/png/Lorana/…/Lorana.md`. Aggiunte §3 (villain), §4
+            (Aranea + Lorana), §7 ([ARANEA]). Collisione «Mira del Traghetto»
+            (Palio P2D) segnalata, non risolta (default: codename «l'Aranea»).
+2026-07-20  **Profughi del Guado di Drellin + Lirien CANONIZZATI** (conferma
+            DM — gate R6 del PIANO-REINTEGRAZIONE-PNG-AP-RHOD, lotti R1+R5).
+            Rimossi i flag `[INFERRED — needs DM confirmation]` dai dossier:
+            (1) i sei PNG civici dell'AP (Norro Wiston, Sertieren il Saggio,
+            Fratello Derny, Delora Zann, Iormel, Kellin Shadowbanks —
+            `Bestiario/png/Guado_di_Drellin/`) sono canone come volti
+            dell'onda profughi Day 12→25 verso Rethmar; gli esiti alternativi
+            restano rami aperti del DM (D13). (2) Lirien Amaranti «Il
+            Giullare Spezzato» (`Bestiario/png/Lirien/`) è canone come PNG
+            caotico neutrale ricorrente di Rethmar: superstite del Guado,
+            ex-apprendista del «Maestro» (fornitore occasionale della rete
+            d'arte di Varis/Sal), possibile futura promozione a PG su branch
+            di gruppo. Aggiunte righe §1 (companion ricorrente), §3 (Norro,
+            Sertieren, Lirien) e §7 ([PROFUGHI], [LIRIEN]).
 ```

@@ -4,9 +4,10 @@ description: >
   Meta-router skill kept for backwards compatibility. Real content was split
   into focused skills: dnd-35-srd (mechanics), forgotten-realms-lore
   (1372 DR setting), rumblingstone-campaign (this campaign),
-  pathfinder-1e-srd (PF1e rules + conversion), and npc-villain-boosting
-  (boost/advance NPCs, villains, monsters). Trigger words identical to those
-  skills combined.
+  pathfinder-1e-srd (PF1e rules + conversion), npc-villain-boosting
+  (boost/advance NPCs, villains, monsters), and rumblingstone-narrative-style
+  (eight-pillar style engine for all generated content). Trigger words
+  identical to those skills combined.
 ---
 
 # D&D 3.5 Rules — Meta Router
@@ -21,6 +22,7 @@ focused skills so agents only load what's relevant:
 | RumblingStone campaign, the four PCs, custom artifacts, current arc | `rumblingstone-campaign` |
 | Pathfinder 1e rules, PF↔3.5 conversion, simple templates, CR benchmarks | `pathfinder-1e-srd` |
 | Boosting/advancing a PNG, villain, or monster ("too easy", "upscale", "potenziare") | `npc-villain-boosting` |
+| Generating narrative content — quests, session prose, read-aloud, dialogue, hooks, recaps ("genera", "scrivi", "crea la quest") | `rumblingstone-narrative-style` |
 
 Most questions need exactly one of the three. A typical campaign-prep
 question may need all three — load them in this order:

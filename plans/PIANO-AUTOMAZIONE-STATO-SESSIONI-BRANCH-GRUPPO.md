@@ -14,8 +14,8 @@
 > l'analisi dei punti duri, l'architettura proposta, i lotti di lavoro con
 > stime, il piano di test e le domande aperte per il DM.
 
-**Stato**: ⬜ proposto — in attesa di approvazione DM
-**Decisioni architetturali collegate**: ADR-0002 (dm.py orchestratore), ADR-0007 (bozza, §6 qui sotto)
+**Stato**: 🟢 **approvato** (decisioni DM 2026-07-20 — vedi §8 con le risposte) — pronto per il Lotto A
+**Decisioni architetturali collegate**: ADR-0002 (dm.py orchestratore), ADR-0003 (markdown master / layout generati — governa il §3-bis), ADR-0007 (bozza, §6 qui sotto)
 
 ---
 
@@ -211,6 +211,31 @@ inventate stanno solo nel modulo opzionale §5.5.
 
 ---
 
+## §3-bis — Riuso della pipeline Homebrewery esistente (richiesta DM 2026-07-20)
+
+> *Domanda DM: gli hint di sessione, i booklet e gli handout per-PG già
+> fatti per la sessione di esempio e per il Palio di Channathgate (base
+> Homebrewery) si possono adattare?* — **Sì, in gran parte.** Analisi di
+> cosa esiste (ADR-0003/0004, lotti K-B del piano DM-TOOLKIT, PR #44-#51)
+> e di cosa si riusa, onestà inclusa su cosa NON è riusabile com'è.
+
+| Asset esistente | Cos'è (lotto/PR) | Riuso nel nuovo flusso |
+|---|---|---|
+| `hype_homebrew.py` | K-B1/K-B2: veste V3 per recap (spoiler-safe, eredita il filtro di `session_recap.py` + `guard_spoiler_safe`) e 4 template handout (lettera/profezia/avviso-torneo/scheda-artefatto); `--cronologia` mantiene l'indice `recaps/homebrew/00-CRONOLOGIA.hb.md` | ✅ **riuso diretto**: il *teaser player* di `session next` e i *recap per-PG* (Lotto D) passano da qui per la veste `.hb.md` — zero layout nuovo da scrivere. I file per-PG entrano nella cronologia con colonna "consegnato a". |
+| `dm_dossier.py` | K-B7: dossier DM-only in V3 estratto ALLA LETTERA da `state.md` (capitoli con cornice d'atmosfera RHoD) | ✅ **riuso per il brief DM**: `session next` aggiunge un capitolo "La prossima sessione" al dossier (o file gemello con la stessa cornice-capitoli). Stessa avvertenza ⚠️ SOLO DM. |
+| Pattern **HOOKS per-PG** (`Arco-Post-Hammerfist-HOOKS-<PG>-*.md` + `HOOKS-INTEGRATION-MASTER.md`) | Contenuto canone scritto a mano (2026-05-04): per ogni PG un file con **TL;DR cheat-sheet DM** in testa + scena di consegna; il MASTER tiene la tabella WHEN→WHERE→WHAT→WHO | ✅ **riuso come formato e come sorgente**: (a) il brief DM per-PG adotta lo stesso formato TL;DR (già collaudato al tavolo); (b) l'aggregatore E1, quando un hook cita questi file, **linka** il file HOOKS invece di riassumerlo (il canone resta nei master, ADR-0003). |
+| Booklet Palio (`PALIO-BOOKLET-FASCICOLO-P2D.hb.md`, K-B3.6-3.8) + handout mappa/piazza | Artefatto di **layout assemblato a mano** (a lotti AI-assistiti), che *cita* i 13 master P2D senza riscriverli; stile frontCover/banner/footnote | 🟡 **riuso dello stile, non del meccanismo**: non esiste un "builder booklet" generico da invocare — i fascicoli sono redazione, non generazione. Gli hint di sessione non hanno bisogno della scala-booklet; ereditano da `hype_homebrew.py` gli stessi blocchi V3 (già codificati lì). Se un giorno si vorrà il "fascicolo di sessione", sarà un lotto editoriale a parte, non uno script. |
+| `session_recap.py` + esempio reale (`recap-2026-05-05` md/hb) | K-B1 collaudato sulla sessione vera del repo (2026-05-03_session-3) | ✅ è il **golden file** naturale per i test di regressione del Lotto D (il recap senza `--pg` deve restare identico). |
+
+**Conseguenze pratiche sui lotti** (recepite in §5): D3 produce anche la
+veste `.hb.md` via `hype_homebrew.py` (la domanda aperta n.4 di §8 è
+quindi risolta: sì, Homebrewery); E1 emette il brief DM in stile dossier
+e il teaser in stile recap-hype, entrambi registrati in cronologia; la
+policy di visibilità resta in `visibility.py` e la veste non la duplica
+mai (regola d'oro 5 del DM-TOOLKIT: il filtro spoiler vive in un posto solo).
+
+---
+
 ## §4 — Perché branch-per-gruppo funziona (e i suoi costi reali)
 
 **Funziona** perché il repo separa già nettamente *prep riusabile* (archi,
@@ -285,13 +310,20 @@ Stime in ore di lavoro focalizzato, incluse le prove. Ordine = dipendenze.
   `Visto da:`); wizard li chiede quando il DM dichiara party diviso.
 - D2 `scripts/visibility.py` (policy unica, §3) + unit test.
 - D3 `session_recap.py --pg NOME` → recap per-PG in `campaign/recaps/pg/`;
-  senza flag, output identico a oggi (golden test di regressione).
+  senza flag, output identico a oggi (golden test di regressione con
+  `recap-2026-05-05.md` come riferimento).
+- D4 Veste Homebrewery dei recap per-PG via `hype_homebrew.py` (riuso
+  diretto, §3-bis) + registrazione nella cronologia
+  `00-CRONOLOGIA.hb.md` con indicazione del destinatario.
 - **Gate**: con la sessione-tipo attuale (Tordek/Hella/Artemis divisi), il
   recap di Tordek non contiene una riga dei blocchi di Hella/Artemis.
 
 ### Lotto E — Brief prossima sessione *(≈5-6h, rischio basso)*
 - E1 `scripts/next_session.py`: aggregatore deterministico (§3) → brief DM
-  + teaser player.
+  + teaser player. Brief DM nel formato TL;DR cheat-sheet dei file HOOKS
+  (§3-bis) e in veste dossier (`dm_dossier.py`); teaser in veste
+  recap-hype (`hype_homebrew.py`); quando un hook corrisponde a un file
+  `HOOKS-<PG>-*.md` esistente, il brief lo **linka** invece di riassumerlo.
 - E2 Tracciamento hook "consumati": un hook citato nel Summary/decisioni di
   una sessione successiva esce dal brief (euristica per matching testuale;
   onestà: sarà imperfetta → il brief marca i dubbi con `?` invece di
@@ -363,22 +395,16 @@ l'undo è sempre `git revert`; la prosa è strutturalmente intoccabile;
 
 ---
 
-## §8 — Domande aperte per il DM (bloccanti solo dove indicato)
+## §8 — Domande aperte per il DM — ✅ RISPOSTE (DM, 2026-07-20)
 
-1. **Nome branch** (bloccante Lotto A): confermi
-   `campaign-group-rumblingstone-dm-gianfranco`? (Coerente con lo schema
-   `campaign-group-<nome>` esistente; il suffisso `-dm-<nome>` permette in
-   futuro più DM sullo stesso gruppo.)
-2. **Migrazione marker** (bloccante Lotto C): ok inserire i commenti
-   `<!-- auto:... -->` in `state.md` sul branch gruppo? (Invisibili nel
-   rendering, ma presenti nel sorgente.)
-3. **Lotto E-bis LLM**: dentro o fuori? (Raccomandazione: fuori dalla v1;
-   il brief deterministico + skills esistenti copre l'80% del valore a
-   costo e rischio zero.)
-4. **Recap per-PG**: consegna come file markdown da girare a mano, o serve
-   anche la veste Homebrewery (`.hb.md`) come per i recap attuali?
-   (Non bloccante: si aggiunge dopo, riusa `hype_homebrew.py`.)
-5. **Lingua wizard**: italiano, coerente col resto? (Assunto: sì.)
+1. **Nome branch** — ✅ **confermato**: `campaign-group-rumblingstone-dm-gianfranco`.
+2. **Migrazione marker** `<!-- auto:... -->` in `state.md` — ✅ **approvata**.
+3. **Lotto E-bis LLM** — ✅ **fuori dalla v1** (come da raccomandazione;
+   resta nel piano come lotto opzionale futuro, spento di default).
+4. **Recap per-PG in veste Homebrewery** — ✅ **sì** (richiesta esplicita
+   DM 2026-07-20: adattare la pipeline usata per la sessione di esempio e
+   per il Palio di Channathgate → vedi §3-bis; recepito nei lotti D4/E1).
+5. **Lingua wizard** — italiano (assunto confermato tacitamente).
 
 ---
 

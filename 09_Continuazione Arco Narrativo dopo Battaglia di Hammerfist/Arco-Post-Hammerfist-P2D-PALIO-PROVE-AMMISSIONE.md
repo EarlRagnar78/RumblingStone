@@ -128,12 +128,12 @@ mette i PG dentro l'oscuro collegamento drow/Collezionista (GIORNO2 §3.3).
 
 ## 4 · L'ISTRICE — "La Notte del Campo"
 **Prova**: gestire una crisi improvvisa nel campo profughi fuori le mura.
-**Cast**: **Mira del Traghetto** (luogotenente di Lorana, NB); centinaia di profughi;
+**Cast**: **Nania Seriv del Traghetto** (luogotenente di Lorana, NB); centinaia di profughi;
 un **incendio doloso** (o un'epidemia — scegli) appiccato da un infiltrato.
 
 **Read-aloud**
 > *Il campo è fango, tende e occhi che hanno già visto troppo. Poi, un urlo: fuoco tra le
-> baracche sopravvento. Mira ti guarda — non c'è tempo per i convenevoli. — "Aiuti, o
+> baracche sopravvento. Nania ti guarda — non c'è tempo per i convenevoli. — "Aiuti, o
 > guardi?"*
 
 **Beat 1 — Il triage (la scelta)**: le fiamme corrono verso **tre** punti: l'infermeria
@@ -155,9 +155,9 @@ DC 22) / lasciarlo e salvare altri: nessuna scelta è "pulita".
 
 **Esiti**
 - **Successo (2+ fronti salvati)**: Fazzoletto bianco-arabescato; **800 profughi** fedelissimi
-  + infiltrazione dietro le linee. Mira: *"Non ci salvate perché vi conviene. Non lo scorderemo."*
+  + infiltrazione dietro le linee. Nania: *"Non ci salvate perché vi conviene. Non lo scorderemo."*
 - **Parziale (1 fronte)**: entri; il rione ti ama ma ha pianto — **+morale, ma un lutto**.
-- **Fallimento (campo devastato)**: Mira non ti caccia, ma il rione è a pezzi; niente
+- **Fallimento (campo devastato)**: Nania non ti caccia, ma il rione è a pezzi; niente
   bonus profughi pieno (rinforzi ridotti a Rethmar).
 
 **Aggancio di campagna**: qui nasce il legame **Istrice ↔ Onda** (i barcaioli accorrono a

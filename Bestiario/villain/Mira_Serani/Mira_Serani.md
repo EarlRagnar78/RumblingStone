@@ -5,7 +5,7 @@
 > Rossa, `[Private — Red Hand of Doom, p.44-45]`), assente dal repo, con il
 > **twist canonizzato dal DM (2026-07-20)**: ha ucciso la **figlia di
 > Lorana** e ne ha rubato l'identità. Narrativa/identità/ruolo = **canone**;
-> numeri dello statblock = `[INFERRED]` (vedi `mira-serani-aranea-cr11.md`).
+> statblock **canon calibrato per PG 8-9** (vedi `mira-serani-aranea-cr8.md`).
 
 **Role**: villain — intel/infiltrazione per l'armata della Mano Rossa
 **Status**: viva — **fuggita** dopo il contatto coi PG sulla strada per
@@ -14,10 +14,11 @@ Hammerfist (Arco 00, Fase B); ora infiltrata nell'onda profughi verso Rethmar
 **Motivation**: raccogliere intel su difese e artefatti dei PG per l'orda;
 sopravvivere; **non farsi mai incrociare da Lorana**, l'unica che può
 smascherarla con un solo sguardo.
-**CR**: 11 `[INFERRED]` | **Race/Class**: aranea (mutaforma) Stregone 9 —
-statblock: `mira-serani-aranea-cr11.md` in questa cartella
+**CR**: 8 (canon, calibrata PG 8-9) | **Race/Class**: aranea (mutaforma)
+Stregone 6 — statblock: `mira-serani-aranea-cr8.md` in questa cartella.
+Per il **ritorno ad APL 13** → ramo boost §5 (CR 11 skirmisher / CR 13-14 boss).
 **Key stats**: vedi statblock. Sintesi: mutaforma (bimba Piccola / adolescente
-Media), incantatrice-controllore, veleno, *porta dimensionale* per fuggire, CD chiave 15-18.
+Media), incantatrice-controllore, veleno, fuga via *invisibilità*/mutare forma, CD chiave 14-16.
 **Token**: — (da assegnare)
 
 ---
@@ -88,34 +89,36 @@ viva» è, per lei, un'impossibilità: la riconosce come impostora/aberrazione
 
 ---
 
-## 4. Decisioni DM (default scelti — override libero)
+## 4. Decisioni DM (risolte)
 
-- **Nome / collisione.** Esiste già **Mira del Traghetto** (luogotenente
-  *buona* e adulta di Lorana, Palio P2D) + la bambina morta. Tre "Mira".
-  **Default adottato**: la villain si chiama **Mira Serani** ma in gioco la
-  si evoca come **«l'Aranea»** / **«la Tessitrice»**; tra i profughi usa il
-  nome rubato «Mira» **solo** quando le serve la faccia della bambina. *Se
-  preferisci*, posso rinominare Mira del Traghetto (es. «Bela del Traghetto»)
-  nei file del Palio — non l'ho fatto da solo perché tocca canone P2D.
-- **CR / ruolo.** Default: **infiltratrice ricorrente che fugge, CR 11**
-  `[INFERRED]`. Vedi §5 per il ramo boss.
+- **Nome / collisione — RISOLTA (DM 2026-07-20).** La luogotenente *buona*
+  di Lorana è stata **rinominata `Mira del Traghetto` → `Nania Seriv del
+  Traghetto`** nei file del Palio P2D (INTEGRAZIONE, PROVE-AMMISSIONE,
+  STATBLOCCHI). Ora «Mira» resta libero per: la **bambina morta** (figlia di
+  Lorana) e la **villain** che ne ha rubato la faccia. In gioco la villain si
+  evoca comunque come **«l'Aranea»** per non confonderla con la bambina.
+- **CR / ruolo — DECISO (DM 2026-07-20).** Statblock **canon a CR 8**,
+  calibrato per **PG 8-9** (la forma "spia senza scrupoli" da AP, come
+  incrociata sulla strada per Hammerfist). Ramo di ritorno ad APL 13 in §5.
 
 ---
 
-## 5. Ramo boss (opzionale, per un climax)
+## 5. Ramo di ritorno ad APL 13 (boost, quando ricompare)
 
-Se vuoi che a un certo punto **smetta di fuggire** e diventi uno scontro vero,
-il percorso di boost (via `skills/npc-villain-boosting/`) è: +2 DV di aranea
-o +3 livelli di Stregone (→ 6°-7° incantesimi, *volo*, *forma eterea*) e/o il
-template **Metà-Immondo/Advanced**, con 2 guardie ragno e terreno di
-ragnatele → **CR 13-14**, EL da climax su APL 13. Fino ad allora resta la
-"spia che sfugge sempre", massimizzando il payoff quando finalmente la si
-inchioda.
+Lo statblock canon (`mira-serani-aranea-cr8.md`) è la sua forma da PG 8-9.
+Se ricompare contro il party **attuale (APL 13)**, boost via
+`skills/npc-villain-boosting/`:
+- **Skirmisher CR ~11** (resta una spia che fugge): Aranea Stregone 9
+  (→ 4° livello incantesimi, *invisibilità superiore*, *porta dimensionale*).
+- **Boss CR 13-14** (smette di fuggire, climax): + template
+  **Metà-Immondo/Advanced** e/o +2 DV, *volo*/*forma eterea*, con 2 guardie
+  ragno e terreno di ragnatele → EL da climax su APL 13.
 
-## Righe applicate a `state.md` (canonizzazione narrativa 2026-07-20)
+## Righe applicate a `state.md` (canonizzazione 2026-07-20)
 
 > §3 (villain, senza clock numerico — trigger), §4 (cosa sa / hard counter
-> Lorana), §7 (thread [ARANEA]), §8 (changelog). Statblock resta `[INFERRED]`.
+> Lorana), §7 (thread [ARANEA]), §8 (changelog). Statblock **canon a CR 8**
+> (calibrato PG 8-9); ramo APL-13 nel §5 di questo dossier.
 
 ## Link
 - Vittima/contro: `Bestiario/png/Lorana/Lorana/Lorana.md` (sezione DM segreta)

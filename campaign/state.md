@@ -1347,6 +1347,19 @@ entries — they become campaign history.
             male). Aggiunte sottosezioni §7.E Echo Ledger e §7.R Reputation
             (Fama/Infamia + Anointing Threads) — vuote, da popolare dalla
             prossima sessione. Nessun contenuto di campagna modificato.
+2026-07-20b **Aranea ricalibrata PG 8-9 + rename Nania Seriv** (follow-up
+            R7). Lo statblock di Mira Serani è stato **ricalibrato a CR 8**
+            (Aranea Stregone 6, `Bestiario/villain/Mira_Serani/mira-serani-
+            aranea-cr8.md`, rinominato da -cr11) e reso **canon per PG 8-9**
+            su decisione DM: la CR 11 [INFERRED] precedente (per APL 13) era
+            troppo forte per PG 8-9. Ramo di ritorno ad APL 13 (CR 11
+            skirmisher / CR 13-14 boss) documentato nel dossier §5.
+            **Collisione nomi RISOLTA (DM)**: la luogotenente buona di Lorana
+            `Mira del Traghetto` → **`Nania Seriv del Traghetto`** (rinominata
+            nei 3 file Palio P2D: INTEGRAZIONE, PROVE-AMMISSIONE, STATBLOCCHI).
+            Ora «Mira» resta solo alla bambina morta e alla villain che ne ha
+            rubato la faccia. (La riga 2026-07-20 qui sotto è append-only e
+            conserva i valori originali CR 11 [INFERRED].)
 2026-07-20  **Mira Serani «l'Aranea» reintegrata + twist CANONIZZATO** (gate
             R7 del PIANO-REINTEGRAZIONE-PNG-AP-RHOD). Villain AP (aranea spia
             della Mano Rossa, `[Private — RHoD p.44-45]`) assente dal repo,

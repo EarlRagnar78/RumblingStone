@@ -61,7 +61,7 @@ che sblocca quel contributo — e molto altro.
 
 **Perché il Palio decide la guerra**: i membri del **Consiglio di Rethmar restano a
 Rethmar** (le sedute canoniche Day 30/33/35 si tengono lì) — a Channathgate operano i loro
-**emissari e agenti** (Pesa-Oro per Kaal, Sethis Vhal per Valerius, Mira per Lorana, ecc.:
+**emissari e agenti** (Pesa-Oro per Kaal, Sethis Vhal per Valerius, Nania Seriv del Traghetto per Lorana, ecc.:
 vedi STATBLOCCHI §4.2), venuti a mendicare aiuto e a comprare il Palio ciascuno per la
 propria fazione. Il Consiglio di Channathgate,
 **paralizzato dalla paura**, emette il **Decreto**: *chi vince il Palio ottiene il

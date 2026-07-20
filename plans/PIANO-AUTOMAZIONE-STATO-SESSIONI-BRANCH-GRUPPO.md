@@ -270,20 +270,31 @@ Bestiario, mappe, skills — su `main`) da *stato vivo* (`state.md`,
 >   `campaign_branch.py` (status/guard/ensure); `dm.py session` registrato;
 >   `doctor` esteso (gruppo/branch/marker). Gate superato: su `main`,
 >   `session end` rifiuta.
-> - **B 🟡 parziale** — `session end` funziona su un log **già scritto**
->   (`--session FILE`); il wizard interattivo Q&A (B1-B4) resta da fare.
+> - **B ✅** (2ª ondata, 2026-07-20) — `session_wizard.py`: Q&A interattivo
+>   con default (ultimo N+1, presenti dell'ultima sessione), blocchi Split,
+>   formato canonico garantito (`**Total**`, `Day X → Day Y`); `--answers
+>   file.json` per test/CI; commit automatico; `dm.py session end` senza
+>   `--session` lo lancia. Bonus: `update_xp` ora accetta anche
+>   `**Totale**`/`~`/separatore migliaia (difetto emerso nel collaudo).
 > - **C ✅ (v1)** — `state_apply.py`: `--migrate` idempotente, apply su
 >   regioni `march-clock` + `changelog` con diff e conferma per blocco,
 >   fail-safe report-only, commit dedicato. Gate superato: property test
 >   "fuori dai marker byte-identico" verde.
-> - **D ⬜** — visibilità per-PG (template v2, `--pg`) non ancora iniziata.
-> - **E ✅ (E1)** — `next_session.py`: brief DM + teaser player + vesti
->   `.hb.md`; hook `- [x]` filtrati; link ai dossier `HOOKS-<PG>`.
->   Il matching cross-sessione degli hook consumati (E2) resta euristico
->   minimo. Gate superato: con lo stato reale segnala P1B 🟡 e Zalkatar 6/8.
-> - **F 🟡 parziale** — suite `scripts/tests/` (16 test, anche in CI),
->   README-automation e Playbook §4 aggiornati, Quick Guide nuovi DM
->   creata; restano i golden test del recap (col Lotto D).
+> - **D ✅** (2ª ondata) — `dmcore/visibility.py` (policy unica: blocchi
+>   `## Split — <PG> @ <luogo>` + `**Visto da**`, DM notes mai esportate);
+>   template v2; `session_recap.py --pg` (sezione «Il tuo cammino» in
+>   `recaps/pg/`); veste `hype_homebrew.py --pg` → `recaps/homebrew/pg/`;
+>   orchestrato da `dm.py session recap --pg X --hype`. Gate superato:
+>   il recap di gruppo è byte-identico con/senza Split (test).
+> - **E ✅ (E1+E2)** — `next_session.py`: brief DM + teaser player + vesti
+>   `.hb.md`; hook `- [x]` filtrati; link ai dossier `HOOKS-<PG>`; E2:
+>   hook raccontato in una sessione successiva → annotazione «❓ forse già
+>   giocato», mai rimozione silenziosa. Gate superato: con lo stato reale
+>   segnala P1B 🟡 e Zalkatar 6/8.
+> - **F ✅** — suite `scripts/tests/` (31 test, anche in CI: regioni,
+>   apply, guardia, wizard, visibilità, regressione recap con/senza Split,
+>   spoiler-safety, E2), README-automation, Playbook §4, Quick Guide.
+>   Resta solo il **collaudo al tavolo** alla prima sessione reale.
 
 Stime in ore di lavoro focalizzato, incluse le prove. Ordine = dipendenze.
 

@@ -176,10 +176,26 @@ def cmd_session(args: argparse.Namespace, extra: list[str]) -> int:
         if args.hype:
             nx += ["--hype"]
         return run("next_session.py", *nx, *extra)
-    # action == "end": guardia → ledger XP → apply su regioni marcate → residuo
+    if args.action == "recap":
+        # recap per-PG (Lotto D): policy in session_recap/dmcore.visibility,
+        # veste in hype_homebrew --pg; senza --pg equivale a `dm.py recap`
+        rec = ["--pg", args.pg] if args.pg else []
+        if args.last_n != 1:
+            rec += ["--last-n", str(args.last_n)]
+        rc = run("session_recap.py", *rec, *extra)
+        if args.hype and rc == 0:
+            rc = run("hype_homebrew.py", *(["--pg", args.pg] if args.pg else []))
+        return rc
+    # action == "end": guardia → (wizard se serve) → ledger XP → apply → residuo
     rc = run("campaign_branch.py", "guard")
     if rc != 0:
         return rc
+    if not args.session:
+        # nessun log indicato: il wizard lo crea ora (Lotto B); state_apply
+        # senza --session prenderà poi proprio l'ultimo file scritto
+        rc = run("session_wizard.py")
+        if rc != 0:
+            return rc
     rc = run("update_xp.py")
     ses = ["--session", args.session] if args.session else []
     if args.yes:
@@ -317,11 +333,13 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("session",
                        help="ciclo sessione su branch-per-gruppo (ADR-0007): "
                             "end / next / status / branch")
-    p.add_argument("action", choices=["end", "next", "status", "branch"])
-    p.add_argument("--session", help="(end) file di sessione sotto campaign/sessions/")
+    p.add_argument("action", choices=["end", "next", "recap", "status", "branch"])
+    p.add_argument("--session", help="(end) file di sessione sotto campaign/sessions/; "
+                                     "se assente parte il wizard guidato")
     p.add_argument("--yes", action="store_true", help="(end) applica senza conferme")
-    p.add_argument("--last-n", type=int, default=1, help="(next) sessioni da scandire")
-    p.add_argument("--hype", action="store_true", help="(next) anche vesti Homebrewery")
+    p.add_argument("--last-n", type=int, default=1, help="(next/recap) sessioni da scandire")
+    p.add_argument("--hype", action="store_true", help="(next/recap) anche vesti Homebrewery")
+    p.add_argument("--pg", help="(recap) recap personale per questo PG (blocchi Split)")
     p.add_argument("--group", help="(branch) nome gruppo la prima volta")
 
     p = sub.add_parser("skills", help="pipeline skill multi-agente")

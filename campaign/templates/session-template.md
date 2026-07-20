@@ -42,6 +42,15 @@ reveals, and outcomes — not blow-by-blow combat.]
 - [Hook 2]
 - [...]
 
+## Split — [PG1, PG2] @ [luogo] *(optional — solo se il party si è diviso)*
+
+**Visto da**: [PG1, PG2]
+
+[Cosa hanno visto/saputo SOLO questi PG. Questo blocco NON entra mai nel
+recap di gruppo: compare solo nel recap personale generato con
+`session_recap.py --pg <nome>` (policy: `scripts/dmcore/visibility.py`).
+Ripeti il blocco per ogni gruppo separato.]
+
 ## DM notes (private — optional)
 
 - [anything you want to remember for future sessions: PC tells, table mood,

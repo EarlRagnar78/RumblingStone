@@ -37,6 +37,9 @@ import random
 from pathlib import Path
 from datetime import date
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from dmcore import visibility  # noqa: E402  (policy per-PG, Lotto D)
+
 ROOT = Path(__file__).resolve().parent.parent
 SESSIONS_DIR = ROOT / "campaign" / "sessions"
 STATE_FILE = ROOT / "campaign" / "state.md"
@@ -538,7 +541,7 @@ def maybe_pdf(md_path: Path) -> Path | None:
 
 
 # ------------------------------------------------------------------ main
-def main():
+def main(argv=None):
     ap = argparse.ArgumentParser(
         description="Genera un recap/preludio spoiler-safe per i player (tono R.A. Salvatore).")
     ap.add_argument("--last-n", type=int, default=1,
@@ -549,7 +552,11 @@ def main():
                     help="Genera anche PDF A4 via pandoc (se installato).")
     ap.add_argument("--seed", type=int, default=None,
                     help="Seed RNG per output riproducibile (default: random).")
-    args = ap.parse_args()
+    ap.add_argument("--pg", default=None,
+                    help="Recap personale per questo PG: sezioni pubbliche + i SOLI "
+                         "blocchi '## Split — …' visibili a lui (Lotto D). "
+                         "Output in campaign/recaps/pg/.")
+    args = ap.parse_args(argv)
 
     RECAPS_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -570,7 +577,27 @@ def main():
     state = extract_state_public()
     md = build_recap(sessions_data, state, args.seed)
 
-    out = args.out or (RECAPS_DIR / f"recap-{date.today().isoformat()}.md")
+    if args.pg:
+        # sezione personale: SOLO i blocchi Split visibili a questo PG
+        personal: list[str] = []
+        for sf in session_files:
+            raw = sf.read_text(encoding="utf-8", errors="ignore")
+            for blk in visibility.for_pg(raw, args.pg):
+                personal.append(f"### {blk.place}\n\n{blk.body}")
+        if personal:
+            md += (f"\n## VII. Il tuo cammino — {args.pg.title()}\n\n"
+                   "*Queste pagine sono solo per i tuoi occhi: ciò che gli "
+                   "altri non hanno visto.*\n\n" + "\n\n".join(personal) + "\n")
+        else:
+            print(f"[recap] (nessun blocco Split per {args.pg} nelle sessioni "
+                  "scandite — recap identico a quello di gruppo)", file=sys.stderr)
+
+    if args.pg:
+        default_out = (RECAPS_DIR / "pg"
+                       / f"recap-{date.today().isoformat()}-{args.pg.lower()}.md")
+    else:
+        default_out = RECAPS_DIR / f"recap-{date.today().isoformat()}.md"
+    out = args.out or default_out
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(md, encoding="utf-8")
     print(f"[recap] Markdown: {out}", file=sys.stderr)

@@ -331,6 +331,8 @@ def main(argv: list[str] | None = None) -> int:
         description="Recap e handout in veste Homebrewery V3 (artefatti generati).",
     )
     ap.add_argument("--recap", help="file recap specifico (default: l'ultimo)")
+    ap.add_argument("--pg", help="veste per-PG: usa l'ultimo campaign/recaps/pg/"
+                                 "recap-*-<pg>.md (Lotto D, piano AUTOMAZIONE)")
     ap.add_argument("--handout", metavar="TIPO",
                     help="genera un handout: lettera, profezia, avviso-torneo, scheda-artefatto")
     ap.add_argument("--da", help="(handout) file markdown sorgente col contenuto")
@@ -345,6 +347,18 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     if args.handout:
         hype_handout(args.handout, args.da, args.out, args.sezione)
+    elif args.pg:
+        # veste per-PG: la POLICY di visibilità sta in session_recap --pg
+        # (dmcore.visibility); qui si impagina soltanto (regola d'oro 5)
+        pg_dir = RECAPS / "pg"
+        cands = sorted(pg_dir.glob(f"recap-????-??-??-{args.pg.lower()}.md"))
+        if not cands:
+            die(f"nessun recap per-PG in {pg_dir} per '{args.pg}' — genera prima "
+                f"con `session_recap.py --pg {args.pg}`")
+        out = Path(args.out) if args.out else (
+            RECAPS / "homebrew" / "pg" / (cands[-1].stem + ".hb.md"))
+        out.parent.mkdir(parents=True, exist_ok=True)
+        hype_recap(cands[-1], out)
     else:
         recap = Path(args.recap) if args.recap else latest_recap()
         if not recap.exists():

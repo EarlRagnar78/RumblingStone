@@ -61,24 +61,36 @@ python3 scripts/dm.py maps render <file.md>       # SVG "pergamena" delle grigli
 
 ## 4. Dopo la sessione (10 min)
 
-1. Compila il log da template:
-   `cp campaign/templates/session-template.md campaign/sessions/$(date +%F)_session-N.md`
-   — le sezioni sono guidate (XP, loot, `## World events triggered`,
-   hook). La sezione `## DM notes (private)` non finirà MAI nei recap.
-2. ```bash
-   python3 scripts/dm.py session end --session $(date +%F)_session-N.md
-   ```
-   Fa da solo, sul tuo branch (mai su `main`): ledger XP → diff dei
-   cambi meccanici di `state.md` (March Clock, changelog §8) → **te li
-   mostra e applica solo se confermi** → commit. I cambi non meccanici
-   (prosa, PNG morti, alleanze) restano stampati come proposte: applicali
-   a mano (Playbook §4.2-4.3).
-3. `git push -u origin campaign-group-<tuo-nome>` — il tuo canone è al sicuro.
+```bash
+python3 scripts/dm.py session end
+```
+
+Senza altri flag parte il **wizard guidato**: ti chiede data, titolo,
+presenti, summary, decisioni, XP, loot, clock, hook — con default
+intelligenti (invio = accetta) — e scrive lui il log canonico in
+`campaign/sessions/`, già committato. Se il party si è **diviso**, il
+wizard ti fa aggiungere blocchi `## Split — <PG> @ <luogo>`: quello che
+c'è dentro lo vedrà SOLO quel PG nel suo recap personale. La sezione
+`## DM notes (private)` non finirà MAI negli artefatti dei giocatori.
+
+Poi, sempre in automatico e sul tuo branch (mai su `main`): ledger XP →
+diff dei cambi meccanici di `state.md` (March Clock, changelog §8) →
+**te li mostra e applica solo se confermi** → commit. I cambi non
+meccanici (prosa, PNG morti, alleanze) restano stampati come proposte:
+applicali a mano (Playbook §4.2-4.3).
+
+Preferisci scrivere il log a mano dal template? Nessun problema:
+`dm.py session end --session <file>` salta il wizard.
+
+Chiudi con `git push -u origin campaign-group-<tuo-nome>` — il canone è al sicuro.
 
 ## 5. Tra una sessione e l'altra
 
 ```bash
 python3 scripts/dm.py recap --hype    # recap R.A. Salvatore + veste Homebrewery
+python3 scripts/dm.py session recap --pg Tordek --hype
+#   → recap PERSONALE di Tordek: pubblico + i SOLI suoi blocchi Split
+#     (campaign/recaps/pg/ + veste in recaps/homebrew/pg/)
 python3 scripts/dm.py dossier         # ⚠️ SOLO DM: tutte le trame in un fascicolo
 python3 scripts/dm.py handout --tipo lettera --da bozza.md   # handout ai PG
 python3 scripts/dm.py hype docker     # Homebrewery locale su localhost:8000

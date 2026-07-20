@@ -131,16 +131,17 @@ massa, controspionaggio arcano, sortite).
   §3 (Norro, Sertieren, Lirien), §7 ([PROFUGHI], [LIRIEN]) e §8 (changelog).
   I lotti futuri R2-R4 avranno ciascuno la propria canonizzazione a valle.
 
-- [x] **R7 — Mira Serani «l'Aranea»** (✅ canonizzato 2026-07-20): villain AP
-  (aranea spia della Mano Rossa, `[Private — RHoD p.44-45]`) assente dal
-  repo → ricostruita da base aranea SRD (OGL) come **Aranea Stregone 9,
-  CR 11** `[INFERRED]` (numeri da validare). **Twist DM canonizzato**: ha
-  ucciso la figlia di Lorana e ne ha rubato la faccia; infiltratrice
-  ricorrente che fugge; **Lorana = hard counter**. File:
-  `Bestiario/villain/Mira_Serani/` (dossier + statblock) + sezione DM-segreta
-  in `Lorana.md`; righe in `state.md` §3/§4/§7/§8. Collisione «Mira del
-  Traghetto» (Palio P2D) segnalata, non risolta (decide il DM). Ramo boss
-  (CR 13-14) documentato per un futuro climax.
+- [x] **R7 — Mira Serani «l'Aranea»** (✅ canonizzato 2026-07-20; ricalibrato
+  2026-07-20b): villain AP (aranea spia della Mano Rossa, `[Private — RHoD
+  p.44-45]`) assente dal repo → ricostruita da base aranea SRD (OGL). **Twist
+  DM canonizzato**: ha ucciso la figlia di Lorana e ne ha rubato la faccia;
+  spia mutaforma che fugge; **Lorana = hard counter**. **Statblock canon a
+  CR 8** (Aranea Stregone 6, `mira-serani-aranea-cr8.md`), calibrato per
+  **PG 8-9** come da decisione DM; ramo di ritorno ad APL 13 (CR 11 skirmisher
+  / CR 13-14 boss) nel dossier §5. **Collisione nomi RISOLTA**: la luogotenente
+  buona `Mira del Traghetto` → **`Nania Seriv del Traghetto`** (Palio P2D).
+  File: `Bestiario/villain/Mira_Serani/` + sezione DM-segreta in `Lorana.md`;
+  righe in `state.md` §3/§4/§7/§8.
 
 **Regola d'oro:** ogni lotto chiuso aggiorna questa checklist +
 `plans/INDEX.md` + `plans/CHANGELOG.md` nello stesso commit.

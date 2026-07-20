@@ -31,6 +31,10 @@ skills/
 ├── dnd-35-srd/             # D&D 3.5 SRD mechanics (no setting bias)
 ├── forgotten-realms-lore/  # Faerûn 1372 DR canon
 ├── rumblingstone-campaign/ # custom campaign + coherence rules
+├── rumblingstone-narrative-style/ # eight-pillar style engine (mandatory for generation)
+├── rumblingstone-mapmaking/ # battle-map pipeline (3 modes, JSON contract, UVTT)
+├── rumblingstone-automation/ # dm.py CLI + session-state pipeline (ADR-0007)
+├── rumblingstone-plans/    # plan-archive discipline (INDEX, CHANGELOG, ADRs)
 ├── pathfinder-1e-srd/      # PF1e rules, templates, 3.5<->PF conversion
 ├── npc-villain-boosting/   # when/whether/how to boost PNGs, villains, monsters
 └── dnd-35-rules/           # legacy meta-router (points to the skills above)
@@ -63,6 +67,7 @@ AI agents that support SKILL.md will discover them automatically:
 - `skills/rumblingstone-campaign/` — this campaign (PCs, artifacts, arcs, coherence)
 - `skills/rumblingstone-narrative-style/` — **mandatory for all content generation**: eight-pillar style engine (Salvatore prose, LotR depth, Casa di Davide destiny, Andor intrigue, GoT politics, Mercer table technique, BG3 echoes, BG1/2 quest design), PC protagonism in good and evil
 - `skills/rumblingstone-mapmaking/` — map generation workflow (Watabou, templates, VTT export)
+- `skills/rumblingstone-automation/` — `dm.py` CLI + session-state pipeline: session end wizard, per-PG recaps, next-session brief, canon writes only under the ADR-0007 triple constraint (group branch + confirmed diff + `auto:` regions)
 - `skills/rumblingstone-plans/` — work-plan archive conventions (INDEX, gates, ADRs)
 - `skills/pathfinder-1e-srd/` — Pathfinder 1e rules, simple templates, CR benchmarks, 3.5↔PF1e conversion
 - `skills/npc-villain-boosting/` — decision framework + workflow for boosting PNGs/villains/monsters
@@ -135,11 +140,12 @@ When any agent answers a question:
 3. **House rules** live in `campaign/lore/house-rules.md` — always check before ruling
 4. **RAW vs RAI**: state which you're providing; give both if ambiguous
 5. **Red Hand of Doom adaptations**: documented in `campaign/lore/rhod-adaptations.md`
-6. **DM Strategy & Player Profiles**: For adult-oriented, non-linear sessions (Shine Time, State Machine design), consult `skills/dnd-35-rules/references/campaign-dm-strategy.md` (canonical). The lore folder file `campaign/lore/dm-player-strategy.md` is now a pointer to that canonical source.
+6. **DM Strategy & Player Profiles**: For adult-oriented, non-linear sessions (Shine Time, State Machine design), consult `skills/rumblingstone-campaign/references/campaign-dm-strategy.md` (canonical). The lore folder file `campaign/lore/dm-player-strategy.md` is now a pointer to that canonical source.
 7. **Living world state**: Before describing what NPCs know, where parties/villains currently are, or what threads are open, load `campaign/state.md`. It is the single source of truth for *current* world state (changes per session).
-8. **Coherence**: Before introducing artifact powers, NPC knowledge, or callbacks to past PG actions, consult `skills/dnd-35-rules/references/campaign-coherence.md`.
+8. **Coherence**: Before introducing artifact powers, NPC knowledge, or callbacks to past PG actions, consult `skills/rumblingstone-campaign/references/campaign-coherence.md`.
 9. **Boosting PNGs/villains/monsters**: The campaign runs on D&D 3.5; Pathfinder 1e SRD material (simple templates, Monster-Statistics-by-CR benchmarks, NPC recipes) is an approved boost toolkit. Always go through `skills/npc-villain-boosting/` — it enforces the EL cap (≤ APL+4), the benchmark step, and the `Boost log:` requirement on named-NPC files. Never boost silently.
-10. **Narrative content generation**: ANY request to generate quests, session prose, read-aloud/boxed text, NPC dialogue, hooks, recaps, or handouts MUST load `skills/rumblingstone-narrative-style/` (eight-pillar style engine) automatically — the user should never have to ask for "the style". It enforces the scene mixer (one lead pillar per scene), the PC Protagonism Test, the living-world rules (NPC/villain agency + SRD attitude mechanics — protagonism is the camera, not gravity), the Echo Ledger (`state.md` §7.E), and the BG1/2 quest-stage patterns. Coherence (rule 8) always beats style.
+10. **Session lifecycle & canon writes**: Closing a session, updating `state.md`, generating recaps/briefs/teasers, or invoking anything in `scripts/` goes through `skills/rumblingstone-automation/` (single entrypoint `python3 scripts/dm.py`). Scripts may write canon ONLY under the ADR-0007 triple constraint: group branch (never `main`), DM-confirmed diff, and `<!-- auto: -->` marked regions of `state.md`. Everything else stays a printed proposal the DM applies by hand.
+11. **Narrative content generation**: ANY request to generate quests, session prose, read-aloud/boxed text, NPC dialogue, hooks, recaps, or handouts MUST load `skills/rumblingstone-narrative-style/` (eight-pillar style engine) automatically — the user should never have to ask for "the style". It enforces the scene mixer (one lead pillar per scene), the PC Protagonism Test, the living-world rules (NPC/villain agency + SRD attitude mechanics — protagonism is the camera, not gravity), the Echo Ledger (`state.md` §7.E), and the BG1/2 quest-stage patterns. Coherence (rule 8) always beats style.
 
 ---
 
@@ -150,7 +156,8 @@ When any agent answers a question:
 | Read session logs before generating continuations | Invent events that contradict session logs |
 | Check `campaign/npcs/` before describing NPCs | Invent NPC stats not in files |
 | Use 3.5 SRD for all mechanics | Use 5e rules (different system) |
-| Load the dnd-35-rules skill for rules questions | Quote non-SRD books verbatim |
+| Load the focused skill for the question (`dnd-35-srd`, `forgotten-realms-lore`, …) | Quote non-SRD books verbatim |
+| Close/prep sessions via `dm.py session` (ADR-0007) | Hand-edit `state.md` `auto:` regions or write canon on `main` |
 | Flag 4e/5e Forgotten Realms lore as post-1372 DR | Present Spellplague as canon for this campaign |
 | Preserve 3.5-era Faerûn canon (1372 DR) | Mix in FR lore from after 1385 DR |
 
@@ -158,17 +165,18 @@ When any agent answers a question:
 
 ## Supported Agents
 
-The canonical skill source is `skills/dnd-35-rules/`. Per-agent mirrors are
+The canonical skill source is the whole `skills/` tree (every directory with
+a `SKILL.md`; `build-skills.sh` auto-discovers them). Per-agent mirrors are
 **generated artifacts**, not committed to git (see `.gitignore`). Each
 developer/CI runs the build pipeline locally:
 
-- **Claude Code** → `.claude/skills/dnd-35-rules/` (compact.md format)
-- **OpenAI Codex** → `.agents/skills/dnd-35-rules/` (machine.json)
-- **GitHub Copilot** → `.github/copilot/skills/dnd-35-rules/` (compact.md)
-- **Cursor** → `.cursor/skills/dnd-35-rules/` (machine.json)
-- **Windsurf** → `.windsurf/skills/dnd-35-rules/` (compact.md)
-- **Gemini** → `.gemini/skills/dnd-35-rules/` (structured.yaml)
-- **ChatGPT** → `.chatgpt/skills/dnd-35-rules/` (compact.md)
+- **Claude Code** → `.claude/skills/<skill>/` (compact.md format)
+- **OpenAI Codex** → `.agents/skills/<skill>/` (machine.json)
+- **GitHub Copilot** → `.github/copilot/skills/<skill>/` (compact.md)
+- **Cursor** → `.cursor/skills/<skill>/` (machine.json)
+- **Windsurf** → `.windsurf/skills/<skill>/` (compact.md)
+- **Gemini** → `.gemini/skills/<skill>/` (structured.yaml)
+- **ChatGPT** → `.chatgpt/skills/<skill>/` (compact.md)
 
 Build commands:
 

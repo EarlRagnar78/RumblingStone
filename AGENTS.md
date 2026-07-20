@@ -182,7 +182,16 @@ Build commands:
 
 - **Claude Code** (web + CLI): `.claude/hooks/session-start.sh` (registered
   in `.claude/settings.json`) rebuilds and deploys ALL skill mirrors at the
-  start of every session — agents always read the current `skills/` version.
+  start of every session, **asynchronously** — the session starts at once
+  while the build runs in background.
+- **Stale-mirror protocol (async race guard)**: the hook writes
+  `.claude/.skills-sync-status` (`syncing…` → `ok <sha> <ts>` | `failed`).
+  Before the FIRST campaign-content generation of a session, the agent must
+  check that file: if it is missing or not `ok`, **tell the user** the skill
+  mirrors may be stale and ask whether to update now; on yes run
+  `./scripts/build-skills.sh && ./scripts/sync-skills.sh --no-build`, then
+  continue the conversation normally. If the user declines, proceed reading
+  the canonical `skills/` tree directly (always current in git).
 - **Other agents / plain git users**: run `./scripts/install-git-hooks.sh`
   once; it installs a `post-merge` git hook that resyncs the mirrors after
   every `git pull` that touches `skills/`.

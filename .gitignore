@@ -304,6 +304,9 @@ venv/
 .github/copilot/skills/
 build/
 
+# Skill-sync status written by .claude/hooks/session-start.sh (async hook)
+.claude/.skills-sync-status
+
 # OS artifacts
 .DS_Store
 Thumbs.db

@@ -185,3 +185,17 @@ Dauth → 🔁 L2 (mini-dossier col template `png-dossier-template.md`).
 - Copie `Incontro-RedHandof-doom/Draxoksus*` = 📸 duplicati byte-simili
   della cartella madre: restano come storico, la trascrizione L1 usa la
   cartella madre.
+
+## §7 — Gap PNG dell'AP originale (2026-07-20, post-L5)
+
+> Il censimento L0 contava solo ciò che esisteva **nel repo**. Un secondo
+> passaggio contro l'AP originale (Red Hand of Doom) ha rivelato PNG del
+> manuale mai entrati in nessuna sorgente: i civici del Guado di Drellin
+> (Norro Wiston, Sertieren, Derny, Delora Zann, Iormel, Kellin Shadowbanks),
+> il secondo anello di Rethmar (Tredora Goldenbrow, Immerstal, Ulverth,
+> Teyani Sura), Witchwood/Tiri Kitor (Warklegnaw, Trellara Nightshadow) e
+> due Wyrmlord (Ulwai Stormcaller, Hravek Kharn). Censimento completo,
+> diagnosi e lotti di reintegrazione: `plans/PIANO-REINTEGRAZIONE-PNG-AP-RHOD.md`.
+> **Fatto (R1+R5)**: `png/Guado_di_Drellin/Profughi_Guado_di_Drellin.md`
+> (6 PNG, `[INFERRED]`) + `png/Lirien/Lirien.md` (proposta PNG caotico,
+> `[INFERRED]`). Restano R2-R4 (preparazione) e R6 (canonizzazione DM).

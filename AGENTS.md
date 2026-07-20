@@ -178,6 +178,15 @@ Build commands:
 ./scripts/sync-skills.sh            # build + populate in-repo mirrors locally
 ```
 
+**Automatic sync (no manual step needed):**
+
+- **Claude Code** (web + CLI): `.claude/hooks/session-start.sh` (registered
+  in `.claude/settings.json`) rebuilds and deploys ALL skill mirrors at the
+  start of every session — agents always read the current `skills/` version.
+- **Other agents / plain git users**: run `./scripts/install-git-hooks.sh`
+  once; it installs a `post-merge` git hook that resyncs the mirrors after
+  every `git pull` that touches `skills/`.
+
 Why mirrors aren't committed: they are 6× the source size (~3MB), drift over
 time, and any agent that needs them can regenerate deterministically from
 `skills/`. Treat `skills/` as the only thing humans edit.

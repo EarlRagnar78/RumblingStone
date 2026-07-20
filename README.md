@@ -55,13 +55,17 @@ Important non-player characters and antagonists (Detailed in `Bestiario/villain/
   - `npcs/` & `locations/`: Key figures and environment descriptions.
   - `encounters/`: Custom encounter design and tactics.
   - `lore/`: House rules, setting details, and DM strategy (e.g., `csmpaign players.md`).
-- **`skills/`**: Five AI-agent skills + a legacy router. Rules are sourced from the d20 SRD (D&D 3.5) and the Pathfinder 1e SRD:
+- **`skills/`**: Nine focused AI-agent skills + a legacy router. Rules are sourced from the d20 SRD (D&D 3.5) and the Pathfinder 1e SRD:
   - `dnd-35-srd/` — pure 3.5 mechanics (d20srd.org)
   - `forgotten-realms-lore/` — Faerûn 1372 DR canon
   - `rumblingstone-campaign/` — this campaign (PCs, artifacts, arcs, coherence)
+  - `rumblingstone-narrative-style/` — eight-pillar style engine, mandatory for all content generation
+  - `rumblingstone-mapmaking/` — battle-map pipeline (3 modes, JSON contract, UVTT export)
+  - `rumblingstone-automation/` — `dm.py` CLI + session-state pipeline on group branches (ADR-0007)
+  - `rumblingstone-plans/` — work-plan archive discipline (INDEX, CHANGELOG, ADRs)
   - `pathfinder-1e-srd/` — PF1e rules, simple templates, CR benchmarks, 3.5↔PF conversion
   - `npc-villain-boosting/` — when/whether/how to boost PNGs, villains, and monsters
-  - `dnd-35-rules/` — legacy meta-router pointing at the five above
+  - `dnd-35-rules/` — legacy meta-router pointing at the nine above
 - **`.github/workflows/ci.yml`**: CI validates skill frontmatter/links/data YAML and builds all per-agent skill packages on every PR.
 
 ## Design Philosophy (Mastering for Adults)

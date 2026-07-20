@@ -113,6 +113,8 @@ Gli script Python usano solo stdlib; ognuno con argparse espone anche
 | `new-campaign-group.sh` | Reset branch-per-gruppo: nuovo branch di campagna con stato azzerato dai template | *new-group-name* · `--backup-current <current-group-name>` | template `campaign/templates/` | nuovo branch `campaign-group-<nome>` |
 | `dmcore/` (libreria) | Logica condivisa dei flussi ADR-0007: `regions` (marker `auto:` con contratto "fuori byte-identici"), `gitio` (guardia branch, commit), `config` (group.yaml), `visibility` (policy per-PG dei blocchi `## Split`) | *(non è un CLI — la importano gli script sopra)* | — | — |
 | `tests/` | Suite unittest dei flussi ADR-0007 (regioni, apply, guardia, next) su repo git temporanei | `python3 -m unittest discover -s scripts/tests` | fixture in-memory | verde/rosso (gira anche in CI) |
+| `check_plans_discipline.py` | Gate della regola d'oro dei piani (ADR-0009): modifiche strutturali (`scripts/`, `skills/`, `Script/`, `.github/`, `plans/adr/`) senza riga in `plans/CHANGELOG.md` → exit 1; promemoria ADR (warning) su nuova skill/nuovo script/workflow CI toccati senza `plans/adr/`. Gira in CI (solo PR) e come hook `pre-push` | `--base <ref>` (default `origin/main`) · `--head <ref>` · `--repo-root <dir>` | diff git base…head | exit 0/1 + report |
+| `install-git-hooks.sh` | Installa gli hook git locali: `post-merge` (resync mirror skill dopo `git pull`) e `pre-push` (gate ADR-0009) | *(nessuno)* | — | hook in `.git/hooks/` |
 
 ## Typical DM workflow
 

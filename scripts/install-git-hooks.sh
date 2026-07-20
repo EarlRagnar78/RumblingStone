@@ -30,5 +30,23 @@ exit 0
 EOF
 chmod +x "${HOOKS_DIR}/post-merge"
 
+cat > "${HOOKS_DIR}/pre-push" << 'EOF'
+#!/usr/bin/env bash
+# Auto-installed by scripts/install-git-hooks.sh — gate della regola d'oro
+# dei piani (ADR-0009): modifiche strutturali senza riga in
+# plans/CHANGELOG.md bloccano il push. Bypass consapevole: git push --no-verify
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+git rev-parse --verify -q origin/main >/dev/null 2>&1 || exit 0
+if ! python3 "${REPO_ROOT}/scripts/check_plans_discipline.py" --base origin/main --repo-root "${REPO_ROOT}"; then
+  echo "[pre-push] Push bloccato dalla regola d'oro dei piani (ADR-0009)."
+  echo "[pre-push] Aggiungi la riga a plans/CHANGELOG.md, oppure bypass consapevole: git push --no-verify"
+  exit 1
+fi
+exit 0
+EOF
+chmod +x "${HOOKS_DIR}/pre-push"
+
 echo "Installed: ${HOOKS_DIR}/post-merge"
 echo "Skill mirrors will now auto-sync after every git pull that touches skills/."
+echo "Installed: ${HOOKS_DIR}/pre-push"
+echo "Structural pushes now require a plans/CHANGELOG.md row (ADR-0009)."

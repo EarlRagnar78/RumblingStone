@@ -3,7 +3,7 @@
 Last updated: 1372 DR, Flamerule (in-world) / 2026-03-31 (real world)
 
 This file is the **single source of truth** for the RumblingStone campaign narrative.
-For rules, see `skills/dnd-35-rules/SKILL.md`. For artifacts, see `campaign-artifacts.md`.
+For rules, see `skills/dnd-35-srd/SKILL.md`. For artifacts, see `campaign-artifacts.md`.
 For party composition, see `campaign-party.md`. For locations, see `fr-cannath-vale.md`.
 
 ---
@@ -482,11 +482,11 @@ and back to the surface for the Red Hand campaign mainline.
 
 | Topic | Reference File |
 |---|---|
-| Party composition & stats | `skills/dnd-35-rules/references/campaign-party.md` |
-| All campaign artifacts | `skills/dnd-35-rules/references/campaign-artifacts.md` |
-| Cannath Vale locations & map | `skills/dnd-35-rules/references/fr-cannath-vale.md` |
-| Campaign factions (canonical + custom) | `skills/dnd-35-rules/references/fr-factions.md` |
-| Story arc progression | `skills/dnd-35-rules/references/campaign-story-arcs.md` |
-| DM toolkit & expansion | `skills/dnd-35-rules/references/dm-expansion-toolkit.md` |
+| Party composition & stats | `skills/rumblingstone-campaign/references/campaign-party.md` |
+| All campaign artifacts | `skills/rumblingstone-campaign/references/campaign-artifacts.md` |
+| Cannath Vale locations & map | `skills/forgotten-realms-lore/references/fr-cannath-vale.md` |
+| Campaign factions (canonical + custom) | `skills/forgotten-realms-lore/references/fr-factions.md` |
+| Story arc progression | `skills/rumblingstone-campaign/references/campaign-story-arcs.md` |
+| DM toolkit & expansion | `skills/rumblingstone-campaign/references/dm-expansion-toolkit.md` |
 | House rules | `campaign/lore/house-rules.md` |
 | Arc 09 master index | `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md` |

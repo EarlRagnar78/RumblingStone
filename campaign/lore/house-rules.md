@@ -11,7 +11,7 @@ path, adapted wholesale into the **Forgotten Realms, 1372 DR**. The original Els
 been remapped to **Cannath Vale** in the Eastern Dalelands. For the complete location mapping,
 NPC adaptation, faction notes, and regional encounter tables, see:
 
-→ `skills/dnd-35-rules/references/fr-cannath-vale.md`
+→ `skills/forgotten-realms-lore/references/fr-cannath-vale.md`
 
 ### Quick Reference: Name Changes — Verified from Antariuk Map Image
 
@@ -133,7 +133,7 @@ Tiamat crusade, coordinating with the Cult of the Dragon for a beachhead in the 
 
 ## DM MODIFICATION SECTION
 
-See `skills/dnd-35-rules/references/dm-expansion-toolkit.md` for:
+See `skills/rumblingstone-campaign/references/dm-expansion-toolkit.md` for:
 - Monster art generation prompts
 - Branching quest trees and artifact quest chains
 - Villain expansion templates

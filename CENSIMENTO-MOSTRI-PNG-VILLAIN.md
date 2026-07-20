@@ -199,4 +199,4 @@ Dauth → 🔁 L2 (mini-dossier col template `png-dossier-template.md`).
 > **Fatto (R1+R5)**: `png/Guado_di_Drellin/Profughi_Guado_di_Drellin.md`
 > (6 PNG) + `png/Lirien/Lirien.md` (PNG caotico ricorrente). ✅ **Entrambi
 > canonizzati dal DM (2026-07-20)** — flag `[INFERRED]` sciolti, righe in
-> `state.md` §1/§3/§7/§8. Restano R2-R4 (preparazione).
+> `state.md` §1/§3/§7/§8. **R2+R3 preparati (2026-07-20)**: `png/Secondo_Anello_Rethmar/` (Tredora, Immerstal, Ulverth, Teyani) e `png/Witchwood_Tiri_Kitor/` (Sellyria, Killiar[cross-link], Illian, Trellara, Warklegnaw), tutti `[INFERRED]`. Resta R4 (Ulwai + decisione DM).

@@ -35,6 +35,7 @@ python3 scripts/dm.py doctor                      # environment diagnosis
 | `prep` | `--el N` · `--env <amb>` · `--refresh` (rigenera il catalogo) | `suggest_encounter` + `suggest_map` + `suggest_loot` | §2 pre-sessione |
 | `maps` | `render`\|`validate` + `files...` | `render_map_svg` / `validate_maps` | prep |
 | `post` | `--session <file>` | `update_xp` + `state_sync` | §4 post-sessione |
+| `session` | `end`\|`next`\|`status`\|`branch` · `--session <file>` · `--yes` · `--last-n N` · `--hype` · `--group <nome>` | `campaign_branch` + `update_xp` + `state_apply` / `next_session` | §4 + §7 (branch-per-gruppo, ADR-0007) |
 | `recap` | `--last-n N` · `--pdf` · `--hype` | `session_recap` (+ `hype_homebrew`) | §4.6 |
 | `handout` | `--tipo T` (obbl.) · `--da <file>` · `--out <file>` | `hype_homebrew --handout` | prep |
 | `hype` | `setup`\|`start`\|`docker`\|`docker-stop` | wrapper `homebrew-local/*.sh` | prep |
@@ -73,6 +74,9 @@ Gli script Python usano solo stdlib; ognuno con argparse espone anche
 |---|---|---|---|---|
 | `update_xp.py` | Registro XP cumulativo per PG | `--check` (mostra il diff, non scrive) | `campaign/sessions/*.md` `## XP awarded` | `campaign/pg/xp-ledger.md` (auto) |
 | `state_sync.py` | Propone modifiche a `campaign/state.md` dopo una sessione | `--since YYYY-MM-DD` · `--session <file>` | `## World events triggered` nei log | report diff markdown (il DM applica a mano) |
+| `state_apply.py` | **Applica** il sottoinsieme meccanico delle proposte (March Clock, changelog §8) SOLO dentro le regioni marcate `auto:` di state.md, con diff e conferma per blocco (ADR-0007) | `--migrate` (inserisce i marker, idempotente) · `--session <file>` · `--check` · `--yes` · `--commit` | proposte di `state_sync` + regioni `auto:` | `campaign/state.md` aggiornato (su conferma; commit dedicato) |
+| `next_session.py` | Brief DM + teaser player per la prossima sessione (aggregatore deterministico: hook aperti, finestre §0 vs March Day, party §1, clock villain ≤2 tick) | `--last-n N` · `--hype` (vesti Homebrewery) | `state.md` + `sessions/*.md` | `campaign/next/brief-*-DM.md` (⚠️ SOLO DM) · `teaser-*-PLAYERS.md` (spoiler-safe) · `next/homebrew/*.hb.md` |
+| `campaign_branch.py` | Guardia e gestione del branch-per-gruppo (mai canone su `main`) | `status` · `guard` · `ensure [--group <nome>]` | `campaign/group.yaml` + git | branch `campaign-group-<nome>` attivo / exit code per la guardia |
 
 ### Materiali giocatore / DM (Homebrewery V3)
 
@@ -106,6 +110,8 @@ Gli script Python usano solo stdlib; ognuno con argparse espone anche
 |---|---|---|---|---|
 | `dm.py` | **Entrypoint unico** — orchestra tutto per fase del Playbook (vedi tabella sottocomandi sopra) | `<sottocomando>` + flag passthrough | dipende dal sottocomando | ciò che produce lo script sottostante |
 | `new-campaign-group.sh` | Reset branch-per-gruppo: nuovo branch di campagna con stato azzerato dai template | *new-group-name* · `--backup-current <current-group-name>` | template `campaign/templates/` | nuovo branch `campaign-group-<nome>` |
+| `dmcore/` (libreria) | Logica condivisa dei flussi ADR-0007: `regions` (marker `auto:` con contratto "fuori byte-identici"), `gitio` (guardia branch, commit), `config` (group.yaml) | *(non è un CLI — la importano gli script sopra)* | — | — |
+| `tests/` | Suite unittest dei flussi ADR-0007 (regioni, apply, guardia, next) su repo git temporanei | `python3 -m unittest discover -s scripts/tests` | fixture in-memory | verde/rosso (gira anche in CI) |
 
 ## Typical DM workflow
 

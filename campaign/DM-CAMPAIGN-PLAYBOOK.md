@@ -116,9 +116,17 @@ Template minimale (6 campi):
 ## §4 — Post-session: commit workflow (10 min)
 
 Quando il gruppo va a casa, esegui questi 5 passi nell'ordine.
-**Scorciatoia**: `python3 scripts/dm.py post` aggiorna il ledger XP,
-**propone** il diff di state.md (il 4.2 resta manuale) e stampa la
-checklist rimanente.
+**Scorciatoia v2 (ADR-0007)**: sul branch del gruppo,
+`python3 scripts/dm.py session end --session <file>` fa ledger XP +
+**applica** (dopo tua conferma, diff alla mano) i cambi meccanici di
+state.md — March Clock e changelog §8 — nelle regioni marcate `auto:`,
+e committa. Il resto del 4.2 (prosa, PNG, alleanze) resta manuale e ti
+viene stampato come proposta. Prima volta: `dm.py session branch --group
+<nome>` + `state_apply.py --migrate --commit` (vedi
+[`DM-QUICKSTART-NUOVI-DM.md`](DM-QUICKSTART-NUOVI-DM.md)).
+**Scorciatoia v1 (sempre valida)**: `python3 scripts/dm.py post` aggiorna
+il ledger XP, **propone** il diff di state.md (il 4.2 resta manuale) e
+stampa la checklist rimanente.
 
 ### 4.1 Rinomina il draft
 

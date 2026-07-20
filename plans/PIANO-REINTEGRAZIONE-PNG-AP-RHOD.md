@@ -1,6 +1,6 @@
 # PIANO — REINTEGRAZIONE PNG DELL'AP ORIGINALE (Red Hand of Doom) + Lirien
 
-> **Creato:** 2026-07-20 · **Stato:** 🟡 in corso — R1+R5 **fatti e canonizzati** (2026-07-20); restano R2-R4
+> **Creato:** 2026-07-20 · **Stato:** 🟡 in corso — R1+R5+R7 **fatti e canonizzati** (2026-07-20); restano R2-R4
 > **Origine:** richiesta DM — «nell'avventura originale (Guado di Drellin e
 > le altre località dell'AP) ci sono tanti PNG che nel repo mancano o sono
 > persi. Reintegrarli per rendere il mondo più vivo; valutare l'inserimento
@@ -95,6 +95,12 @@ massa, controspionaggio arcano, sortite).
 | Wyrmlord Ulwai Stormcaller | ❌ (4 citazioni, nessuna scheda) | **R4** ⬜ (villain/) |
 | Wyrmlord Hravek Kharn | ❌ (1 citazione) | **R4** ⬜ (valutare: la campagna ha già Karruk custom — possibile fusione, decide il DM) |
 
+### §2.4 Aranea / spie AP (villain)
+
+| PNG AP | Ruolo AP | Stato repo | Azione |
+|---|---|---|---|
+| **Mira Serani** (aranea, p.44-45) | spia mutaforma per la Mano Rossa | ❌ (assente; versione livellata mai committata) | **R7** ✅ (twist: identità rubata alla figlia di Lorana) |
+
 ---
 
 ## §3 — Lotti
@@ -124,6 +130,17 @@ massa, controspionaggio arcano, sortite).
   dossier; righe applicate a `state.md` §1 (Lirien companion ricorrente),
   §3 (Norro, Sertieren, Lirien), §7 ([PROFUGHI], [LIRIEN]) e §8 (changelog).
   I lotti futuri R2-R4 avranno ciascuno la propria canonizzazione a valle.
+
+- [x] **R7 — Mira Serani «l'Aranea»** (✅ canonizzato 2026-07-20): villain AP
+  (aranea spia della Mano Rossa, `[Private — RHoD p.44-45]`) assente dal
+  repo → ricostruita da base aranea SRD (OGL) come **Aranea Stregone 9,
+  CR 11** `[INFERRED]` (numeri da validare). **Twist DM canonizzato**: ha
+  ucciso la figlia di Lorana e ne ha rubato la faccia; infiltratrice
+  ricorrente che fugge; **Lorana = hard counter**. File:
+  `Bestiario/villain/Mira_Serani/` (dossier + statblock) + sezione DM-segreta
+  in `Lorana.md`; righe in `state.md` §3/§4/§7/§8. Collisione «Mira del
+  Traghetto» (Palio P2D) segnalata, non risolta (decide il DM). Ramo boss
+  (CR 13-14) documentato per un futuro climax.
 
 **Regola d'oro:** ogni lotto chiuso aggiorna questa checklist +
 `plans/INDEX.md` + `plans/CHANGELOG.md` nello stesso commit.

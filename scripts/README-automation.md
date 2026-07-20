@@ -35,7 +35,7 @@ python3 scripts/dm.py doctor                      # environment diagnosis
 | `prep` | `--el N` · `--env <amb>` · `--refresh` (rigenera il catalogo) | `suggest_encounter` + `suggest_map` + `suggest_loot` | §2 pre-sessione |
 | `maps` | `render`\|`validate` + `files...` | `render_map_svg` / `validate_maps` | prep |
 | `post` | `--session <file>` | `update_xp` + `state_sync` | §4 post-sessione |
-| `session` | `end`\|`next`\|`status`\|`branch` · `--session <file>` · `--yes` · `--last-n N` · `--hype` · `--group <nome>` | `campaign_branch` + `update_xp` + `state_apply` / `next_session` | §4 + §7 (branch-per-gruppo, ADR-0007) |
+| `session` | `end`\|`next`\|`recap`\|`status`\|`branch` · `--session <file>` (end; senza → wizard) · `--yes` · `--last-n N` · `--hype` · `--pg <PG>` (recap) · `--group <nome>` | `campaign_branch` + `session_wizard` + `update_xp` + `state_apply` / `next_session` / `session_recap --pg` + `hype_homebrew --pg` | §4 + §7 (branch-per-gruppo, ADR-0007) |
 | `recap` | `--last-n N` · `--pdf` · `--hype` | `session_recap` (+ `hype_homebrew`) | §4.6 |
 | `handout` | `--tipo T` (obbl.) · `--da <file>` · `--out <file>` | `hype_homebrew --handout` | prep |
 | `hype` | `setup`\|`start`\|`docker`\|`docker-stop` | wrapper `homebrew-local/*.sh` | prep |
@@ -76,14 +76,15 @@ Gli script Python usano solo stdlib; ognuno con argparse espone anche
 | `state_sync.py` | Propone modifiche a `campaign/state.md` dopo una sessione | `--since YYYY-MM-DD` · `--session <file>` | `## World events triggered` nei log | report diff markdown (il DM applica a mano) |
 | `state_apply.py` | **Applica** il sottoinsieme meccanico delle proposte (March Clock, changelog §8) SOLO dentro le regioni marcate `auto:` di state.md, con diff e conferma per blocco (ADR-0007) | `--migrate` (inserisce i marker, idempotente) · `--session <file>` · `--check` · `--yes` · `--commit` | proposte di `state_sync` + regioni `auto:` | `campaign/state.md` aggiornato (su conferma; commit dedicato) |
 | `next_session.py` | Brief DM + teaser player per la prossima sessione (aggregatore deterministico: hook aperti, finestre §0 vs March Day, party §1, clock villain ≤2 tick) | `--last-n N` · `--hype` (vesti Homebrewery) | `state.md` + `sessions/*.md` | `campaign/next/brief-*-DM.md` (⚠️ SOLO DM) · `teaser-*-PLAYERS.md` (spoiler-safe) · `next/homebrew/*.hb.md` |
+| `session_wizard.py` | Wizard guidato di fine sessione: Q&A con default → session log canonico dal template (formato garantito per `update_xp`/`state_sync`), commit automatico | `--answers <file.json>` (non-interattivo, test/CI) · `--out <nome>` · `--no-commit` · `--no-guard` (solo test) | risposte del DM | `campaign/sessions/YYYY-MM-DD_session-N.md` |
 | `campaign_branch.py` | Guardia e gestione del branch-per-gruppo (mai canone su `main`) | `status` · `guard` · `ensure [--group <nome>]` | `campaign/group.yaml` + git | branch `campaign-group-<nome>` attivo / exit code per la guardia |
 
 ### Materiali giocatore / DM (Homebrewery V3)
 
 | Script | Scopo | Parametri | Input | Output |
 |---|---|---|---|---|
-| `session_recap.py` | Recap italiano spoiler-safe (tono R.A. Salvatore) | `--last-n N` (default 1) · `--out <file>` · `--pdf` · `--seed N` | ultimi N log + righe pubbliche di state.md §0 | `campaign/recaps/recap-YYYY-MM-DD.md` (+ PDF opz.) |
-| `hype_homebrew.py` | Impagina recap o handout in layout Homebrewery V3 | `--recap <file>` (default: l'ultimo) · `--handout TIPO` · `--da <file>` · `--sezione <str>` · `--out <file>` · `--cronologia` | recap/handout + `campaign/templates/homebrew/*.hb.md` | `.hb.md` da incollare su homebrewery.naturalcrit.com |
+| `session_recap.py` | Recap italiano spoiler-safe (tono R.A. Salvatore) | `--last-n N` (default 1) · `--out <file>` · `--pdf` · `--seed N` · `--pg <PG>` (recap personale: + blocchi `## Split` suoi, in `recaps/pg/`) | ultimi N log + righe pubbliche di state.md §0 | `campaign/recaps/recap-YYYY-MM-DD.md` (+ PDF opz.) |
+| `hype_homebrew.py` | Impagina recap o handout in layout Homebrewery V3 | `--recap <file>` (default: l'ultimo) · `--pg <PG>` (veste dell'ultimo recap per-PG → `recaps/homebrew/pg/`) · `--handout TIPO` · `--da <file>` · `--sezione <str>` · `--out <file>` · `--cronologia` | recap/handout + `campaign/templates/homebrew/*.hb.md` | `.hb.md` da incollare su homebrewery.naturalcrit.com |
 | `dm_dossier.py` | ⚠️ **SOLO DM**: fotografia di tutte le trame da state.md (§0-§7) con cornici stile RHoD, banner SOLO DM | *(nessuno)* | `campaign/state.md` | `campaign/DM-DOSSIER.hb.md` |
 
 ### Bestiario / catalogo mostri
@@ -110,7 +111,7 @@ Gli script Python usano solo stdlib; ognuno con argparse espone anche
 |---|---|---|---|---|
 | `dm.py` | **Entrypoint unico** — orchestra tutto per fase del Playbook (vedi tabella sottocomandi sopra) | `<sottocomando>` + flag passthrough | dipende dal sottocomando | ciò che produce lo script sottostante |
 | `new-campaign-group.sh` | Reset branch-per-gruppo: nuovo branch di campagna con stato azzerato dai template | *new-group-name* · `--backup-current <current-group-name>` | template `campaign/templates/` | nuovo branch `campaign-group-<nome>` |
-| `dmcore/` (libreria) | Logica condivisa dei flussi ADR-0007: `regions` (marker `auto:` con contratto "fuori byte-identici"), `gitio` (guardia branch, commit), `config` (group.yaml) | *(non è un CLI — la importano gli script sopra)* | — | — |
+| `dmcore/` (libreria) | Logica condivisa dei flussi ADR-0007: `regions` (marker `auto:` con contratto "fuori byte-identici"), `gitio` (guardia branch, commit), `config` (group.yaml), `visibility` (policy per-PG dei blocchi `## Split`) | *(non è un CLI — la importano gli script sopra)* | — | — |
 | `tests/` | Suite unittest dei flussi ADR-0007 (regioni, apply, guardia, next) su repo git temporanei | `python3 -m unittest discover -s scripts/tests` | fixture in-memory | verde/rosso (gira anche in CI) |
 
 ## Typical DM workflow

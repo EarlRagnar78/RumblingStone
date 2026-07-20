@@ -94,3 +94,32 @@ class TestNextSession(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+MINI_SESSION_4 = (
+    "# Session 4 — Seguito (2026-05-10)\n\n"
+    "## Summary\n\n"
+    "Il party ha raggiunto Sorella Maewen: la missiva della monaca "
+    "mezza-elfa portava l'invito al Cerchio.\n\n"
+    "## Next session hooks\n\n- Un nuovo hook diverso\n"
+)
+
+
+class TestConsumedHooks(TestNextSession):
+    """E2: hook della sessione vecchia raccontato nella successiva → ❓."""
+
+    def test_consumed_annotation(self):
+        (self.repo / "campaign" / "sessions" / "2026-05-10_session-4.md").write_text(
+            MINI_SESSION_4, encoding="utf-8")
+        rc = next_session.main(["--last-n", "2", "--repo-root", str(self.repo)])
+        self.assertEqual(rc, 0)
+        brief = next((self.repo / "campaign" / "next").glob("brief-*-DM.md")
+                     ).read_text(encoding="utf-8")
+        # l'hook su Maewen è raccontato nel Summary della sessione 4 → ❓
+        i = brief.index("missiva da Sorella Maewen")
+        self.assertIn("❓ forse già giocato", brief[i:i + 300])
+        # l'hook sulla nebbia NON è stato raccontato → nessuna annotazione
+        # (controllo la sola riga dell'hook e quella subito dopo)
+        lines = brief.splitlines()
+        k = next(i for i, ln in enumerate(lines) if "nebbia si addensa" in ln)
+        self.assertNotIn("❓", lines[k])
+        self.assertNotIn("forse già giocato", lines[k + 1] if k + 1 < len(lines) else "")

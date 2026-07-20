@@ -146,8 +146,28 @@ def collect_hooks(sessions_dir: Path, last_n: int) -> list[dict]:
             hooks = [ln.lstrip("- ").strip()
                      for ln in m.group(1).splitlines()
                      if ln.strip().startswith("-") and "[x]" not in ln.lower()]
-        out.append({"file": p.name, "date": p.name[:10], "hooks": hooks})
+        mp = re.search(r"^##\s*(?:Summary|Key decisions)\s*\n(.*?)(?=^##\s|\Z)",
+                       text, re.M | re.S | re.I)
+        out.append({"file": p.name, "date": p.name[:10], "hooks": hooks,
+                    "played_text": mp.group(1) if mp else ""})
     return out
+
+
+_WORD_RE = re.compile(r"[a-zàèéìòù]{4,}", re.I)
+
+
+def consumed_hint(hook: str, later_sessions: list[dict]) -> "str | None":
+    """E2 (conservativo): se una sessione SUCCESSIVA racconta parole chiave
+    dell'hook, l'hook è FORSE stato giocato — si annota con ❓, mai rimosso
+    in silenzio (piano §5.E2). Chiusura certa: `- [x]` nel session log."""
+    words = set(w.lower() for w in _WORD_RE.findall(hook))
+    if len(words) < 3:
+        return None
+    for s in later_sessions:
+        played = set(w.lower() for w in _WORD_RE.findall(s["played_text"]))
+        if len(words & played) / len(words) >= 0.5:
+            return s["file"]
+    return None
 
 
 def hook_dossier_link(repo: Path, hook: str, pg_names: list[str]) -> "str | None":
@@ -210,9 +230,14 @@ def render_brief(repo: Path, today_day: "int | None", windows: list[dict],
         o.append(f"\n### {s['file']}\n")
         if not s["hooks"]:
             o.append("*(nessun hook registrato)*")
+        later = [x for x in sessions if x["date"] > s["date"]]
         for h in s["hooks"]:
             link = hook_dossier_link(repo, h, pg_names)
-            o.append(f"- {h}" + (f"\n  ↳ dossier: `{link}`" if link else ""))
+            maybe = consumed_hint(h, later)
+            o.append(f"- {h}"
+                     + (f"\n  ↳ ❓ forse già giocato (se ne parla in `{maybe}`) — "
+                        f"se sì, marcalo `- [x]` nel log" if maybe else "")
+                     + (f"\n  ↳ dossier: `{link}`" if link else ""))
     o.append("\n---\n*Chiudi un hook giocato marcandolo `- [x]` nel session log: "
              "sparirà dai prossimi brief.*\n")
     return "\n".join(o)

@@ -365,6 +365,28 @@ changelog with the resolution.
 - **[HOOKS ↔ THORIK]** Does Thorik accept Brenna Sorvane's letter and bring an alliance proposal to King Thorek? Determines Halveth's grip on the Rethmar Council, Lorana's reception of the party, and Phase 0 (Notte dei Drow) baseline difficulty.
 - **[HOOKS ↔ TEMPESTAS]** Will the party invest in Tempestas as long-term ally (defending him from drow assassins, acknowledging the Lorana debt, supporting his mental erosion)? Affects whether the Polvere di Tonante 5-charge channel stays usable and whether he appears as flying caster ally at Rethmar Phase 1 (Cantata della Tempesta Tonante 1/incontro narrativo).
 
+### §7.E Echo Ledger (choices the world remembers)
+
+Format and rules: `skills/rumblingstone-narrative-style/references/consequence-echoes.md`.
+Arm 1–3 echoes per session from Key decisions; fire ≥1 per session when
+fiction allows. Max ~12 armed — prune during prep.
+
+| ID | Origin (sess., PC, choice) | Tone | Fuse | Payoff sketch | Status |
+|----|----------------------------|------|------|---------------|--------|
+| — | *(seed from next session's Key decisions)* | | | | |
+
+### §7.R Reputation (Fama / Infamia) + Anointing Threads
+
+Format and rules: `skills/rumblingstone-narrative-style/references/pc-protagonism.md`.
+
+| PC | Fama (epithets, witnessed deeds) | Infamia | Anointing thread (status) |
+|----|----------------------------------|---------|---------------------------|
+| Thorik | — | — | — (dormant) |
+| Tordek | — | — | — (dormant) |
+| Hella | — | — | — (dormant) |
+| Artemis | — | — | — (dormant) |
+| Party | — | — | n/a |
+
 ---
 
 ## 8. Changelog (append-only)
@@ -1305,4 +1327,10 @@ entries — they become campaign history.
             + `Bestiario/png/dauth-commander-mercenari-nani-cr11.md`) sono
             ora ACCEPTED DM-canon 2026-07-12. Statblock, dossier e censimento
             aggiornati.
+2026-07-20  Nuova skill `rumblingstone-narrative-style` (motore di stile a
+            8 pilastri: Salvatore, LotR, Casa di Davide, Andor, GoT, Mercer,
+            BG3 echi, BG1/2 quest design; protagonismo PG nel bene e nel
+            male). Aggiunte sottosezioni §7.E Echo Ledger e §7.R Reputation
+            (Fama/Infamia + Anointing Threads) — vuote, da popolare dalla
+            prossima sessione. Nessun contenuto di campagna modificato.
 ```

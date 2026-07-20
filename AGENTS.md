@@ -53,14 +53,17 @@ regenerate via `dm.py recap --hype` / `dm.py handout`, never edit by hand.
 
 ---
 
-## Skills (five of them)
+## Skills
 
-This repo ships **five** focused skills plus one legacy meta-router.
+This repo ships focused skills plus one legacy meta-router.
 AI agents that support SKILL.md will discover them automatically:
 
 - `skills/dnd-35-srd/` — pure d20 SRD mechanics
 - `skills/forgotten-realms-lore/` — Faerûn 1372 DR canon
 - `skills/rumblingstone-campaign/` — this campaign (PCs, artifacts, arcs, coherence)
+- `skills/rumblingstone-narrative-style/` — **mandatory for all content generation**: eight-pillar style engine (Salvatore prose, LotR depth, Casa di Davide destiny, Andor intrigue, GoT politics, Mercer table technique, BG3 echoes, BG1/2 quest design), PC protagonism in good and evil
+- `skills/rumblingstone-mapmaking/` — map generation workflow (Watabou, templates, VTT export)
+- `skills/rumblingstone-plans/` — work-plan archive conventions (INDEX, gates, ADRs)
 - `skills/pathfinder-1e-srd/` — Pathfinder 1e rules, simple templates, CR benchmarks, 3.5↔PF1e conversion
 - `skills/npc-villain-boosting/` — decision framework + workflow for boosting PNGs/villains/monsters
 - `skills/dnd-35-rules/` — legacy meta-router; points to the skills above
@@ -136,6 +139,7 @@ When any agent answers a question:
 7. **Living world state**: Before describing what NPCs know, where parties/villains currently are, or what threads are open, load `campaign/state.md`. It is the single source of truth for *current* world state (changes per session).
 8. **Coherence**: Before introducing artifact powers, NPC knowledge, or callbacks to past PG actions, consult `skills/dnd-35-rules/references/campaign-coherence.md`.
 9. **Boosting PNGs/villains/monsters**: The campaign runs on D&D 3.5; Pathfinder 1e SRD material (simple templates, Monster-Statistics-by-CR benchmarks, NPC recipes) is an approved boost toolkit. Always go through `skills/npc-villain-boosting/` — it enforces the EL cap (≤ APL+4), the benchmark step, and the `Boost log:` requirement on named-NPC files. Never boost silently.
+10. **Narrative content generation**: ANY request to generate quests, session prose, read-aloud/boxed text, NPC dialogue, hooks, recaps, or handouts MUST load `skills/rumblingstone-narrative-style/` (eight-pillar style engine) automatically — the user should never have to ask for "the style". It enforces the scene mixer (one lead pillar per scene), the PC Protagonism Test, the living-world rules (NPC/villain agency + SRD attitude mechanics — protagonism is the camera, not gravity), the Echo Ledger (`state.md` §7.E), and the BG1/2 quest-stage patterns. Coherence (rule 8) always beats style.
 
 ---
 
@@ -173,6 +177,24 @@ Build commands:
 ./scripts/build-skills.sh --no-deploy  # build only (CI)
 ./scripts/sync-skills.sh            # build + populate in-repo mirrors locally
 ```
+
+**Automatic sync (no manual step needed):**
+
+- **Claude Code** (web + CLI): `.claude/hooks/session-start.sh` (registered
+  in `.claude/settings.json`) rebuilds and deploys ALL skill mirrors at the
+  start of every session, **asynchronously** — the session starts at once
+  while the build runs in background.
+- **Stale-mirror protocol (async race guard)**: the hook writes
+  `.claude/.skills-sync-status` (`syncing…` → `ok <sha> <ts>` | `failed`).
+  Before the FIRST campaign-content generation of a session, the agent must
+  check that file: if it is missing or not `ok`, **tell the user** the skill
+  mirrors may be stale and ask whether to update now; on yes run
+  `./scripts/build-skills.sh && ./scripts/sync-skills.sh --no-build`, then
+  continue the conversation normally. If the user declines, proceed reading
+  the canonical `skills/` tree directly (always current in git).
+- **Other agents / plain git users**: run `./scripts/install-git-hooks.sh`
+  once; it installs a `post-merge` git hook that resyncs the mirrors after
+  every `git pull` that touches `skills/`.
 
 Why mirrors aren't committed: they are 6× the source size (~3MB), drift over
 time, and any agent that needs them can regenerate deterministically from

@@ -1,6 +1,6 @@
 # PIANO — REINTEGRAZIONE PNG DELL'AP ORIGINALE (Red Hand of Doom) + Lirien
 
-> **Creato:** 2026-07-20 · **Stato:** 🟡 in corso — R1+R5+R7 **fatti e canonizzati** (2026-07-20); restano R2-R4
+> **Creato:** 2026-07-20 · **Stato:** 🟡 in corso — R1+R5+R7 canonizzati; R2+R3 **preparati** (2026-07-20); resta R4 (decisione DM)
 > **Origine:** richiesta DM — «nell'avventura originale (Guado di Drellin e
 > le altre località dell'AP) ci sono tanti PNG che nel repo mancano o sono
 > persi. Reintegrarli per rendere il mondo più vivo; valutare l'inserimento
@@ -110,12 +110,19 @@ massa, controspionaggio arcano, sortite).
   civici come volti dell'onda profughi Day 12→25, con agganci ai thread
   esistenti (mulino dei bambini, infiltratori §2.5, Morale Cittadino,
   Sertieren già citato dal dm-expansion-toolkit). Tutti `[INFERRED]`.
-- [ ] **R2 — Secondo anello di Rethmar**: Tredora Goldenbrow (Lathander),
-  Immerstal il Rosso, Capitano Ulverth, Teyani Sura — mini-dossier col
-  template, agganci alle Fasi 0-4. Gate: nessuno (preparazione).
-- [ ] **R3 — Witchwood & Tiri Kitor**: Vecchio Warklegnaw, Trellara
-  Nightshadow + mini-dossier cross-link per i 3 elfi già statblockati.
-  Gate: prima di giocare P3-Starsong (Day 30-35).
+- [x] **R2 — Secondo anello di Rethmar** (✅ preparato 2026-07-20): dossier
+  collettivo `Bestiario/png/Secondo_Anello_Rethmar/` — Tredora Occhidoro
+  (Lathander, decisione VP chierici + gancio Derny), Immerstal il Rosso (mago
+  d'assalto anti-alate), Capitano Ulverth (Guardia del Leone sotto Sorvane +
+  caccia infiltrati), Teyani Sura (gancio verso Rhest/P2). Tutti `[INFERRED]`,
+  esiti aperti; `state.md` non toccato (canonizzazione a valle, in gioco).
+- [x] **R3 — Witchwood & Tiri Kitor** (✅ preparato 2026-07-20): dossier
+  collettivo `Bestiario/png/Witchwood_Tiri_Kitor/` — Sellyria Starsinger
+  (perno alleanza), Killiar Arrowswift (**cross-link** allo statblock d'arco
+  CR 11-12 esistente), Illian Snowmantle (dissenso interno), Trellara
+  Nightshadow (barda in lutto, specchio di Lirien), Vecchio Warklegnaw
+  (gigante del Witchwood). `[INFERRED]`; statblock mancanti da generare via
+  npc-villain-boosting al gioco. Gate: prima di P3-Starsong (Day 30-35).
 - [ ] **R4 — Wyrmlord mancanti (villain)**: Ulwai Stormcaller; decisione DM
   su Hravek Kharn vs Karruk. Gate: decisione DM.
 - [x] **R5 — Lirien Amaranti, "Il Giullare Spezzato"** (questa PR): dossier

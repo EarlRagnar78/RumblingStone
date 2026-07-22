@@ -141,6 +141,15 @@ la strada alla resurrezione di Hella (#3). Countdown Hammerfist a fine parte:
   pietra ha abbracciato le ossa del suo caduto; preparate il guscio, portate
   la Forza»*. Non è consiglio tattico: è un moto spirituale che i PG **non
   sanno interpretare** finché non torna Hella.
+- **Eco-sogno (recuperato dall'Interludio, adattato all'asimmetria).** L'Interludio
+  Fuoco→Terra aveva un **contatto pieno** con Hella (Tordek la raggiungeva via
+  Topazio; lei parlava: *«La Terra è stabilità. Ho bisogno di stabilità per
+  tornare… vedo germogli sotto la cenere»*). ⚠️ Un dialogo lucido **rompe
+  l'asimmetria** che hai chiesto. **Default qui**: non un dialogo, ma un
+  **frammento onirico a senso unico** — Tordek, sfiorando la Corona, riceve
+  **tre parole nel nanico dei sogni**, senza voce (*«stabilità… germogli…
+  tornare»*) e nient'altro. *Se preferisci il contatto pieno dell'Interludio,
+  dimmelo e lo canonizzo* `[DM decision]`.
 
 ---
 
@@ -172,6 +181,30 @@ il countdown è sceso.
 - **Bonus**: +2 di competenza a **Forza** per le sole prove contro la gravità
   (Scalare, Saltare, trasportare carichi).
 - **Aspetto**: pelle grigio-pietra, vene che brillano d'argento.
+
+### L'apertura dell'Affresco A5 (recuperato dall'Interludio — non tagliare)
+
+> Prima di attraversare, la Sala **si prepara da sola**. (Gli altri affreschi
+> sono già cambiati dopo il Fuoco — A4 chiuso, A7-Hammerfist peggiorato, A8 che
+> registra le vostre gesta: quella è la **Cronaca Vivente**, dettaglio nel
+> master #2. Qui conta l'apertura della Terra.)
+
+> **Read-aloud (Salvatore + LotR).** *Un rombo basso, profondo. Non viene dai
+> muri: viene dalle OSSA. Le colonne tremano — non di paura, di risonanza.
+> L'Affresco Est, finora grigia pietra inerte, comincia a SGRETOLARSI: ma non
+> cade a pezzi. La pietra dipinta diventa VERA pietra. Vi arriva l'odore —
+> terra umida, caverne profonde, il sentore metallico di minerali preziosi. Una
+> gravità pesante inizia a tirarvi verso l'affresco. Le rune della Corona di
+> Thorik cambiano colore, dall'arancione del Fuoco al VERDE SMERALDO profondo.
+> E Aegis Fang, da sola, batte a terra. **TUMP. TUMP.** Come un passo pesante
+> che scende una scala infinita.*
+
+> **Iscrizione che affiora (il messaggio di Moradin):**
+> *«Il Fuoco ha purificato lo Spirito.*
+> *Ora la Terra deve testare la Resistenza.*
+> *Nella Profondità, dove la luce non tocca, troverete la Verità.*
+> *Cercate l'incudine che non può essere spostata.*
+> *Cercate lo Smeraldo della Forza.»*
 
 **Attraversamento dell'Affresco A5 (Est).** La superficie non è fuoco liquido:
 è **solido liquido**, mercurio denso e verticale. Oltre: cristalli giganti,
@@ -247,6 +280,23 @@ il Tempio. Nessuna prova di Sopravvivenza necessaria.
 > Benedizione) non per bloccare, ma per **colorare la fatica**: chi fallisce
 > arriva all'incontro **affaticato** (nessun riposo tra le zone). È il piano
 > che consuma le risorse prima ancora del boss.
+
+### Ambiente dinamico del piano (recuperato da TACTICAL-GRIDS MAP 5 — non tagliare)
+
+> Il Piano della Terra **non è uno sfondo**: è un avversario che agisce da solo,
+> round dopo round. Applica questi elementi durante il viaggio **e** durante
+> l'agguato degli Xorn (§5), così l'ambiente ha una sua "tattica".
+
+| Elemento | Effetto (3.5) | Uso tattico |
+|---|---|---|
+| **Stalattiti d'adamantio** (20+ dal soffitto a 50 m) | **1d4 cadono ogni 15 min** (o su innesco): 3d10 perforanti, raggio 3 m, Riflessi **CD 18** per schivare | Si possono **innescare con Spaccare/tiro mirato** per farle cadere su un nemico — leva per i PG (e per Terros che scava). |
+| **Polvere di cristallo** (nell'aria) | **Tempra CD 16 ogni 10 min o 1d3 danni COS**; cumulativa a rovescio (−1 CD per ogni TS già superato: ci si abitua al respiro) | Attrito: **premia chi cura la COS** e chi si copre il volto/*Endure Elements*. Senza guaritore (Hella morta) morde davvero. |
+| **Fenditure della terra** (2, larghe 3 m) | caduta 6d6 **×1,5 in gravità pesante = 9d6**; risalita Scalare **CD 20** | Barriere tattiche: spingervi dentro un nemico, o rischiare di caderci col Push di Terros. |
+| **Geodi giganti** (cristallo, alti 3-5 m) | **copertura totale (+8 CA)**; PF 80, Durezza 8 — **distruttibili** | Copertura che si può **spaccare** per esporre chi ci si nasconde (l'Xorn élite ci si rifugia sotto il 50%, §5). |
+
+> **Illuminazione**: buio quasi totale (serve scurovisione); i geodi danno solo
+> luce fioca verde-violetta a 3 m. L'Anello di Artemis (Scurovisione 36 m) e la
+> Vista della Corona guidano il party.
 
 Vedi **MAPPA T-1** (orizzonte) e **MAPPA T-2** (foresta).
 
@@ -503,6 +553,40 @@ Vedi **MAPPA T-6**.
 > come se il piano stesso lo riconoscesse padrone. Aegis Fang, nella mano di
 > Thorik, tace di colpo: davanti all'Incudine del Mondo, anche una voce antica
 > abbassa il capo.*
+
+**Scenografia della Camera (recuperata da TACTICAL-GRIDS MAP 6).** L'arena non è
+una sfera nuda:
+- **Pareti sferiche di cristallo** semitrasparente (spesse 3 m, invulnerabili):
+  attraverso di esse si vede il **Piano della Terra oscuro** — geodi giganti,
+  roccia infinita, la polvere tossica che turbina *fuori* (dentro l'aria è pura,
+  creazione divina).
+- **Ponte di cristallo** all'ingresso nord: 45 m di lastra trasparente che
+  collega il portale al pavimento. **Rischio**: se Terros usa un colpo sismico
+  potente, il ponte ha il **50% di crollare** (caduta 15 m = molti d6) — può
+  **tagliare la ritirata**. Non stazionarci.
+- **Due piattaforme laterali** sopraelevate (+3 m, scale di pietra): **posizioni
+  di tiro** elevate per Artemis e per chi vuole stare fuori dalla portata di
+  Terros (4,5 m).
+- **Altare di Smeraldo levitante** al centro: lo Smeraldo **levita +1,5 m**
+  sopra l'Altare; finché Terros è vivo la piattaforma è la sua roccaforte
+  (rigenera al contatto). **Alla vittoria, l'Altare scende lentamente** e lo
+  Smeraldo diventa raggiungibile per il rito (§9).
+- **Acustica drammatica**: i passi di Terros rimbombano; un suo colpo pieno è un
+  **tuono** che (nel Piano) si sente a un chilometro.
+
+> **⚠️ BIFORCAZIONE DI CANONE — boss del Nodo Terra (decisione DM).** Le
+> mappe/immagini `Camera Nodo Terra - Boss Mithral Golem…` e `TACTICAL-GRIDS
+> MAP 6` presentano il boss come **Golem di Mithral Colossale** (pavimento di
+> mithral che lo rigenera, soffio "Cono di Polvere di Mithral" 18 m 12d6,
+> Terremoto 1/scontro, portata 9 m). Il **canone eletto** (`Terros.md` §5 +
+> fascicolo homebrew: *"sostituisce ogni versione precedente"*) è invece
+> **Terros, Elementale della Terra CR 15**. **Default di questo master**:
+> **Terros** (l'Elementale) come boss, che sfrutta la **gravità zero** e
+> l'Earth Mastery; ho **assorbito la scenografia** della MAP 6 (sopra) attorno a
+> lui. *Se preferisci il Golem di Mithral Colossale (o vuoi che la Sentinella
+> del §7b sia "il" Golem delle immagini), dimmelo: fondo i due in un unico
+> profilo.* Nel frattempo la coerenza tiene: **un solo boss** giocabile (Terros),
+> zero doppioni.
 
 **Apertura sonica.** Se il party entra cantando la **Frequenza della
 Confusione** (Intrattenere Canto **CD 18**, l'Anello di Artemis dà +4; servono
@@ -945,6 +1029,11 @@ contata a parte (audit WBL).
 ### FILE-FONTE ASSORBITI DA QUESTO MASTER (→ `_ARCHIVIO/` a consolidamento chiuso)
 `PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md` ·
 `PortaleForgia-P4-PianoTerra-RICALIBRATO.md` · `Terros.md` ·
+`PortaleForgia-Interludio-Terra.md` (apertura A5 + iscrizione + eco di Hella —
+assorbiti in §1/§2; le variazioni degli affreschi A4/A7/A8 vanno al master #2) ·
+`Mappe/TACTICAL-GRIDS-COMPLETE.md` MAP 5 (ambiente dinamico → §4) e MAP 6
+(scenografia della camera → §8; il boss "Golem di Mithral" è la variante
+segnalata nella biforcazione) ·
 `La_Piramide_Ricalibrata.md` (metodo forgiatura — il file resta come master del
 finale del Fuoco/P3) ·
 `PG/Artefatti/Artefatti-Pg/Tordek/03_Risveglio_Completo_Bracieri_Terra.md`
@@ -1098,5 +1187,12 @@ DILEMMA: sull'Altare = Earth Mastery +1 per Terros MA stabilità e no-Onda-in-
 aria; in zero-G = eviti Earth Mastery MA Push ti sbatte al muro (2d6) e ti
 serve volo/Equilibrio. Artemis in 🌫️ = quasi intoccabile (−4 boss) = star DPS.
 Terros NON vola: tienilo in zero-G → perde la rigenerazione e fatica.
+────────────────────────────────────────────────────────────────────────
+SCENOGRAFIA (MAP 6): ingresso a NORD = 🌉 PONTE DI CRISTALLO (45 m; 50% crolla
+se Terros usa un colpo sismico → caduta 15 m, taglia la ritirata: non sostarci).
+PIATTAFORME LATERALI 🟦 a EST e OVEST (+3 m, scale): posizioni di tiro per
+Artemis. ALTARE centrale 🟩: lo Smeraldo 💚 LEVITA sopra; alla VITTORIA l'Altare
+scende e la gemma diventa raggiungibile (§9). PARETI SFERICHE di cristallo:
+vista sul Piano oscuro fuori; aria pura dentro. Acustica: ogni colpo è un tuono.
 ════════════════════════════════════════════════════════════════════════
 ```

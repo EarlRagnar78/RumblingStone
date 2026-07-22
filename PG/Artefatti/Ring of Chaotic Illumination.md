@@ -1,3 +1,10 @@
+> 📸 **SNAPSHOT STORICO (T6a, 2026-07-03)** — versione originale inglese
+> pre-riforgiatura. **Master canonico**:
+> `Artefatti-Pg/ringOfChaoticIllumination/00_Ring_of_Chaotic_Illumination_Revised.md`
+> (versione *Reforged*, eletta in A10 — vedi
+> `PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md` §3). Conservato per storico
+> (D10), non usare per il gioco.
+
 []{#anchor}**Ring of Chaotic Illumination**
 
 []{#anchor-1}**Physical Description**

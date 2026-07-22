@@ -2,6 +2,10 @@
 ## INTERLUDIO: IL RITORNO DAL FUOCO E L'APERTURA DELLA TERRA
 ### Ponte Narrativo tra Parte 3 (Fuoco) e Parte 4 (Terra)
 
+> **Stato (A6)**: *annesso* — ponte narrativo tra P3 (Fuoco) e P4 (Terra).
+> Materiale vivo, nessuna versione concorrente. Vedi
+> `ARC07-MATRICE-VERSIONI.md`.
+
 ---
 
 **Sistema:** Dungeons & Dragons 3.5 Edition

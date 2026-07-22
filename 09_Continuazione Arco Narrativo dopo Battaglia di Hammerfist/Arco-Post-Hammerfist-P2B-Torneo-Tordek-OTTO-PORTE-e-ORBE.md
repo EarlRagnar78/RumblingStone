@@ -35,8 +35,8 @@ L’Orbe **non è di fattura terrestre**. Fu costruita in epoca remota dai **Git
 - **I Githyanki la rivogliono.** Vaereth “Lama della Fenditura” (Giorno 3, vedi MINIMAPPA) arriva su drago rosso esattamente per questo motivo. Per loro, l’Orbe è **proprietà ancestrale**.
 - **Risonanza tracciabile.** Vedi §2.1.3 per la regola unica del Clock Githyanki.
 - **Una sola fazione illithid è interessata all’Orbe in sé:**
-  - **Zalkatar** (Torre Invisibile, Arco P2A — quest di Artemis) — la vuole per **estrarne un “seme di Porta”** da usare nei suoi **esperimenti planari**. Manda l’emissario **Sethrax il Velato** (alias “Kethran Mano di Pietra”, vedi `PNG/Sethrax_il_Velato/Sethrax.md`) infiltrato come concorrente.
-  - **Xal’thor** (Giorno 3, militare) **NON è interessato all’Orbe.** Il suo unico obiettivo al Torneo sono i **Bracieri Gemelli di Moradin** di Tordek (chiavi planari per la Forgia Eterna — vedi `PNG/Xal_thor/Xal_thor.md`). Eventuale interazione con l’Orbe è solo collaterale al caos del Round 7.
+  - **Zalkatar** (Torre Invisibile, Arco P2A — quest di Artemis) — la vuole per **estrarne un “seme di Porta”** da usare nei suoi **esperimenti planari**. Manda l’emissario **Sethrax il Velato** (alias “Kethran Mano di Pietra”, vedi `Bestiario/villain/Sethrax_il_Velato/Sethrax.md`) infiltrato come concorrente.
+  - **Xal’thor** (Giorno 3, militare) **NON è interessato all’Orbe.** Il suo unico obiettivo al Torneo sono i **Bracieri Gemelli di Moradin** di Tordek (chiavi planari per la Forgia Eterna — vedi `Bestiario/villain/Xal_thor/Xal_thor.md`). Eventuale interazione con l’Orbe è solo collaterale al caos del Round 7.
 - **Per Tordek:** la visione “Eco delle Fenditure” (vedi `PARTE1-Giorno1-Preliminari` → sezione *Visione Githyanki*) è la prima rivelazione di tutto questo.
 
 ### 2.1.2 La Visione (Eco delle Fenditure)

@@ -3,12 +3,19 @@ Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE1-ASSEDIO-TESTO.md
 
 # Battaglia Finale – Fase 1  
 
-Assedio Esterno di Rethman (CR 15–17)
+Assedio Esterno di Rethmar (CR 15–17)
 
 ## 1. Struttura generale
 
-La mattina dopo la Notte dei Drow, l’Orda della Red Hand avanza su Rethman in formazione da assedio.[web:86][web:105]  
+La mattina dopo la Notte dei Drow, l’Orda della Red Hand avanza su Rethmar in formazione da assedio.[web:86][web:105]  
 Fase 1 è giocata come **3 ondate principali + 1 opzionale non morti**, ognuna in un settore diverso delle mura o del campo esterno.
+
+> **Al tavolo (D13 — C7)**: queste ondate sono **sfondo strategico lato DM** e
+> alimentano il check di Morale per ondata (STRUTTURA §9.1). Ciò che i PG
+> **giocano** sono le **carte** dell'EVENT-DECK
+> (`Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md`, carte 7-14 per il Day
+> 42). Usa le ondate qui sotto per colorare lo sfondo e per l'esito off-screen
+> delle crisi non scelte (EVENT-DECK §4), non come combattimenti separati.
 
 Ogni ondata è CR 15–17, ma l’efficacia degli alleati (elfi, nani, druidi‑orsi, Ghostlord) la modula.
 
@@ -33,7 +40,7 @@ Questi valori riducono o aumentano il numero o la forza dei nemici per ciascuna 
 
 ### Scenario
 
-- Settore: Porta Ovest di Rethman, mura principali.  
+- Settore: Porta Ovest di Rethmar, mura principali.  
 - Nemici base:
   - 20 Hobgoblin Elite (gestiti come blocco),  
   - 4 Ogre/Giganti barbari (CR 6–7),  
@@ -66,7 +73,7 @@ Esito:
 
 ---
 
-## 4. Ondata 2 – Draghi & Githyanki (Cielo di Rethman)
+## 4. Ondata 2 – Draghi & Githyanki (Cielo di Rethmar)
 
 ### Scenario
 

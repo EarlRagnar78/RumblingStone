@@ -1,0 +1,172 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/gsamuele78/rumblingstone/scripts/schemas/tactical_map.schema.json",
+  "title": "RumblingStone Tactical Map Contract",
+  "description": "Contratto JSON RIGIDO che un LLM deve emettere per progettare una mappa tattica (Modalita 3: mappa con strutture ed eserciti a coordinate specifiche). Un LLM non disegna MAI arte ASCII: emette solo questo JSON, che scripts/compile_map_json.py valida e compila in una griglia-emoji master (il formato canonico del repo). Le coordinate sono [x, y] con x = colonna (0-based, sinistra->destra) e y = riga (0-based, alto->basso).",
+  "type": "object",
+  "required": ["title", "map_size"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Versione del contratto. Attuale: '1.0'.",
+      "default": "1.0"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 100,
+      "description": "Titolo della mappa (diventa il banner della griglia e il nome file)."
+    },
+    "scale_m_per_square": {
+      "type": "number",
+      "description": "Metri per quadretto. Convenzione del repo: 1.5.",
+      "default": 1.5
+    },
+    "map_size": {
+      "type": "array",
+      "description": "[colonne, righe] della griglia. Es. [40, 30] = 40 larghezza x 30 altezza.",
+      "items": { "type": "integer", "minimum": 1, "maximum": 200 },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "base_terrain": {
+      "type": "string",
+      "description": "Simbolo di terreno usato per riempire le celle vuote. Deve essere un simbolo 'fill' della legenda universale (SYMBOLS in render_map_svg.py). Default: pianura.",
+      "default": "🟩"
+    },
+    "north": {
+      "type": "string",
+      "description": "Orientamento cartografico: verso in alto della mappa. Valori N/NE/E/SE/S/SW/W/NW oppure gradi (0-359). Ruota la bussola nell'SVG. Default: N (nord in alto)."
+    },
+    "movements": {
+      "type": "array",
+      "description": "Rotte di movimento / pattuglie: rese come frecce tratteggiate sull'SVG + voce nella legenda INDICAZIONI.",
+      "items": {
+        "type": "object",
+        "required": ["path"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string", "description": "Etichetta della rotta (es. 'Pattuglia 1')." },
+          "path": {
+            "type": "array",
+            "description": "Waypoint [[x,y], ...] (>=2) nell'ordine di percorrenza.",
+            "items": { "type": "array", "items": { "type": "integer" }, "minItems": 2, "maxItems": 2 },
+            "minItems": 2
+          },
+          "loop": { "type": "boolean", "description": "Se true, la rotta si chiude sull'inizio (giro ciclico)." },
+          "color": { "type": "string", "description": "Colore esadecimale della rotta (#rrggbb)." }
+        }
+      }
+    },
+    "regions": {
+      "type": "array",
+      "description": "Aree di terreno dipinte per prime (foreste, acqua, strade, pavimenti...). Ogni regione usa rect [x,y,w,h] OPPURE polygon.",
+      "items": {
+        "type": "object",
+        "required": ["terrain"],
+        "additionalProperties": false,
+        "properties": {
+          "terrain": { "type": "string", "description": "Simbolo terreno (modo 'fill')." },
+          "rect": {
+            "type": "array",
+            "description": "[x, y, larghezza, altezza].",
+            "items": { "type": "integer" },
+            "minItems": 4, "maxItems": 4
+          },
+          "polygon": {
+            "type": "array",
+            "description": "Lista di vertici [[x,y], ...] (>=3) riempita a scansione.",
+            "items": { "type": "array", "items": { "type": "integer" }, "minItems": 2, "maxItems": 2 },
+            "minItems": 3
+          },
+          "label": { "type": "string" }
+        }
+      }
+    },
+    "structures": {
+      "type": "array",
+      "description": "Muri, palizzate, tende, torri, porte. Precedenza sulle regioni.",
+      "items": {
+        "type": "object",
+        "required": ["type"],
+        "additionalProperties": false,
+        "properties": {
+          "type": { "type": "string", "description": "Simbolo struttura (es. muro, tenda, torre, porta)." },
+          "at": { "type": "array", "description": "Cella singola [x,y].", "items": { "type": "integer" }, "minItems": 2, "maxItems": 2 },
+          "line": {
+            "type": "array",
+            "description": "Polilinea [[x,y], ...] (muri/palizzate). Segmenti tracciati con Bresenham.",
+            "items": { "type": "array", "items": { "type": "integer" }, "minItems": 2, "maxItems": 2 },
+            "minItems": 2
+          },
+          "rect": { "type": "array", "description": "Area piena [x,y,w,h] (edifici).", "items": { "type": "integer" }, "minItems": 4, "maxItems": 4 },
+          "center": { "type": "array", "description": "Centro di un disco (tende/torri rotonde).", "items": { "type": "integer" }, "minItems": 2, "maxItems": 2 },
+          "radius": { "type": "integer", "minimum": 0, "description": "Raggio in quadretti (con center)." },
+          "label": { "type": "string", "description": "Etichetta per il companion DM (non disegnata sulla griglia)." }
+        }
+      }
+    },
+    "hazards": {
+      "type": "array",
+      "description": "Trappole, fuoco, fosse, ghiaccio: pericoli ambientali.",
+      "items": {
+        "type": "object",
+        "required": ["type"],
+        "additionalProperties": false,
+        "properties": {
+          "type": { "type": "string" },
+          "at": { "type": "array", "items": { "type": "integer" }, "minItems": 2, "maxItems": 2 },
+          "rect": { "type": "array", "items": { "type": "integer" }, "minItems": 4, "maxItems": 4 },
+          "label": { "type": "string" },
+          "effect": { "type": "string", "description": "Effetto meccanico 3.5 (CD, danno/round). Finisce nel blocco AMBIENTE." }
+        }
+      }
+    },
+    "lights": {
+      "type": "array",
+      "description": "Fonti di luce esplicite (per l'export UVTT/Foundry). Se assenti, l'export deriva le luci dai bracieri/candele/fuochi presenti.",
+      "items": {
+        "type": "object",
+        "required": ["at"],
+        "additionalProperties": false,
+        "properties": {
+          "at": { "type": "array", "items": { "type": "integer" }, "minItems": 2, "maxItems": 2 },
+          "range": { "type": "number", "description": "Raggio di luce in quadretti." },
+          "color": { "type": "string", "description": "Colore esadecimale RRGGBB (senza #)." }
+        }
+      }
+    },
+    "units": {
+      "type": "array",
+      "description": "ASTRAZIONE PER UNITA (non per singolo soldato): ogni voce e un blocco/unita che occupa una AREA o una cella. La quantita e un numero riportato nel companion, NON un token per creatura. Cosi la memoria dell'LLM non satura calcolando ogni soldato (i moduli Paizo ragionano per unita/aree occupate).",
+      "items": {
+        "type": "object",
+        "required": ["token"],
+        "additionalProperties": false,
+        "properties": {
+          "faction": { "type": "string", "description": "Fazione (es. 'Mano Rossa', 'PG', 'Alleati')." },
+          "name": { "type": "string", "description": "Nome unita (es. 'Arcieri hobgoblin')." },
+          "token": { "type": "string", "description": "Simbolo token (modo 'unit': PG, nemico, boss, incantatore...)." },
+          "at": { "type": "array", "description": "Cella singola [x,y] (unita puntuale/personaggio).", "items": { "type": "integer" }, "minItems": 2, "maxItems": 2 },
+          "area": {
+            "type": "object",
+            "description": "Area occupata dall'unita di massa. Usa rect [x,y,w,h].",
+            "additionalProperties": false,
+            "properties": {
+              "rect": { "type": "array", "items": { "type": "integer" }, "minItems": 4, "maxItems": 4 }
+            }
+          },
+          "quantity": { "type": "integer", "minimum": 1, "description": "Numero di creature nell'unita (riportato nel companion FORZE, non disegnato uno per uno)." },
+          "cr": { "type": "string", "description": "GS/CR o EL dell'unita, per il companion." },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "description": "Note libere per il blocco EVOLUZIONE / callout DM.",
+      "items": { "type": "string" }
+    }
+  }
+}

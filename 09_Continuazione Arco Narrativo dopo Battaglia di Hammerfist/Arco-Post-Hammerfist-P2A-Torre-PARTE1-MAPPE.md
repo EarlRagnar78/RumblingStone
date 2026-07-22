@@ -116,3 +116,35 @@ Terreno:
 Visibilità:
 
 - Illuminazione costante e uniforme, come se la stanza fosse sotto *continual flame*. [file:43]
+
+---
+
+### 🌍 AMBIENTE (companion T5c, consolidato dalle 4 aree del Livello 1)
+
+*Mappe in prosa (niente griglia-emoji → nessun SVG). Scala 1,5 m/quadretto.*
+
+| Area | Griglia | Elementi / terreno |
+|---|---|---|
+| **1 — Pianoro e Ingresso Invisibile** | 24×24 | sentiero da sud; Torre invisibile a nord; **glifo di accesso** (fila 10, col 12); massi = copertura leggera |
+| **2 — Foyer Distorto** | 20×20 (cerchio) | 6 porte, **solo Nord/SE/SO reali**; le illusorie = trappola **4d6 forza, Riflessi CD 18 + spinta 3 q** se attraversate senza *disbelieve* |
+| **3 — Corridoio degli Specchi** | 4×30 | specchi ogni 3 q; 2 punti di "rilascio eco" (fila 10 e 22, col 6-7); LoS indotta (vedere dietro gli angoli) |
+| **4 — Sala del Sigillo di Luce** | 18×18 | sigillo raggio 3 (centro fila 9, col 9); 4 colonne di cristallo agli angoli = copertura; illuminazione uniforme (*continual flame*) |
+
+### ⚔️ TATTICHE (companion T5c — dungeon di enigmi, non arena)
+
+- **Area 1**: nessun nemico fisso (1-2 sentinelle esterne a discrezione DM).
+- **Area 2 (Foyer)**: 2 **Costrutti di Guardia** in pattuglia + le **porte illusorie** (il pericolo vero: *disbelieve*/Osservare per evitare la trappola invece di caricare).
+- **Area 3 (Specchi)**: 2 onde di **Echo Construct** che appaiono adiacenti al PG in testa (il DM decide la casella).
+- **Area 4 (Sigillo)**: è un **enigma** — se **risolto** non c'è scontro; se **violato con danni** appare il **Guardiano di Luce** al centro (9,9). Premia la soluzione sul brute force.
+
+### 🔄 EVOLUZIONE (companion T5c — progressione area per area)
+
+| Stato | Trigger | Cosa cambia | Effetto |
+|---|---|---|---|
+| A — Ingresso | glifo attivato | si entra nella Torre invisibile | dal pianoro al foyer |
+| B — Foyer/Specchi | scelta delle porte reali | trappole illusorie + Costrutti/Echo | logorio da enigma+combattimento |
+| C — Sigillo risolto | puzzle risolto | il sigillo si apre senza scontro | salita al Livello 2 pulita |
+| C' — Sigillo violato | danni invece di soluzione | appare il Guardiano di Luce | scontro extra evitabile |
+
+> Esiti aperti (D13): risolvere o forzare il sigillo (e quante trappole/onde
+> il party subisce) dipende dalle scelte dei PG, non da un copione.

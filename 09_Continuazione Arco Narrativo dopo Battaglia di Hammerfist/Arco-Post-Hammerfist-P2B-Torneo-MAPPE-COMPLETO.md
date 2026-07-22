@@ -55,3 +55,34 @@ Terreno aggiuntivo:
 - Edifici città: copertura totale.  
 - Strade: terreno normale.  
 - Fuoco drago: aree 4d10 fuoco persistenti. [file:47]
+
+---
+
+### 🌍 AMBIENTE (companion T5c, consolidato dalle fasi dell'Arena)
+
+*Mappe in prosa (niente griglia-emoji → nessun SVG). Scala 1,5 m/quadretto.*
+
+| Elemento | Dove | Effetto meccanico 3.5 |
+|---|---|---|
+| Arena di Dauth | 40×40 (Ø60 m), sabbia compatta | **bordo out-of-bounds = sconfitta immediata** (caduta) |
+| 4 colonne decorative | (10,10) (10,30) (30,10) (30,30) | **copertura 3/4** |
+| Trofeo centrale (solo Finale) | (20,20) | cristallo: **+1 livello incantatore entro 3 m** |
+| Espansione città (twist) | mappa 50×50 + isolati adiacenti | edifici = copertura totale; strade normali; **fuoco del drago = 4d10 persistente** |
+
+### ⚔️ TATTICHE (companion T5c — duelli → invasione)
+
+- **Duelli 1v1** (posizioni standard: contendenti a fila 4 e 36): R1 Tordek vs Kira (arena liscia); **Semifinale** vs Thrain (inizia con *bull's strength*, For +4); **Finale** con il trofeo centrale (chi lo controlla ha +1 CL).
+- **Twist — Invasione Githyanki**: **drago rosso** atterra al centro (20,20); **8 Githyanki Knight** in due gruppi (4 da nord fila 1-5, 4 da est col 38-40); civili/spettatori a rischio collisione. Il torneo **diventa battaglia** (Tordek e PG partono dalla posizione finale del duello).
+- Pubblico: nessun effetto meccanico salvo il *spellcasting* (rumore).
+
+### 🔄 EVOLUZIONE (companion T5c — dal duello alla battaglia)
+
+| Stato | Trigger | Cosa cambia sulla griglia | Effetto |
+|---|---|---|---|
+| A — Round 1 | apertura torneo | arena liscia, 4 colonne | duello 1v1 |
+| B — Semifinale | avanzamento | avversario con buff (*bull's strength*) | duello più duro |
+| C — Finale | ultimo duello | **trofeo centrale attivo (+1 CL entro 3 m)** | controllo del centro = vantaggio |
+| D — Invasione | twist Githyanki | mappa si espande a 50×50 + città; drago al centro | il torneo diventa scontro di massa (aggancio a P2B/assedio Dauth) |
+
+> Esiti aperti (D13): l'esito dei duelli e la gestione dell'invasione dipendono
+> dai PG e dai dadi; il twist Githyanki è un innesco, non un copione.

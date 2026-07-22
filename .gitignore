@@ -304,6 +304,9 @@ venv/
 .github/copilot/skills/
 build/
 
+# Skill-sync status written by .claude/hooks/session-start.sh (async hook)
+.claude/.skills-sync-status
+
 # OS artifacts
 .DS_Store
 Thumbs.db
@@ -329,3 +332,13 @@ node_modules/
 __pycache__/
 *.pyc
 .env
+# Homebrewery self-hosted (K-B4): clone di terze parti, non contenuto di campagna
+scripts/homebrew-local/homebrewery/
+# ComfyUI locale in container (hero map): clone + pesi di terze parti, mai in repo
+scripts/comfyui-local/ComfyUI/
+# PNG di mappa: artefatti locali di export_map_png.py / passata hero ComfyUI
+# (il canone in repo sono gli SVG deterministici di rendered/)
+**/rendered/*.png
+**/rendered/hero/
+# Export VTT: artefatti locali di export_uvtt.py (import nativo Foundry/Roll20)
+**/rendered/vtt/

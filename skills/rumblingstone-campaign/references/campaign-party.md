@@ -112,18 +112,24 @@ Current party level: **13** | Party size: **4 PCs**
 - During resurrection: her spirit walked the **Soglia della Forgia** (Threshold of the Forge) — a liminal space that resonates with the Dream Dwarf Earth Dream. Passed three trials concurrent with P4 Earth Plane events.
 - Transformation: **Dream Dwarf / Treant Hybrid** — greenish skin, amber-gold eyes, bark-textured hair
 - Post-resurrection: Earth Dream connection is **permanently amplified** by the Soglia experience. Vulnerability to fire, Cold Resistance 10, Regeneration 1 (on natural earth)
-- Post-resurrection companion: **Nymeria Riforgiato** (Stone Guardian, Magical Beast 10-14 HD) — her dead riding dog reforged from Terros dust and Crystal fragments during the Emerald Ritual
+- Post-resurrection companion: **Durik Riforgiato** (Stone Guardian, Magical Beast 10-14 HD) — her dead riding dog reforged from Terros dust and Crystal fragments during the Emerald Ritual
 - Currently completing the post-Hammerfist Sacred Forest druid ritual for nature avatar form
 
 **Combat Notes:**
 
-- Collana dei Semi Eterni grants: +4 WIS, +3 natural AC, Avatar of Root (Huge Treant form 1/day), summon Adamantine Treant (3/day); 3rd seed summons Nymeria instead of generic Treant
+- Collana dei Semi Eterni grants: +4 WIS, +3 natural AC, Avatar of Root (Huge Treant form 1/day), summon Adamantine Treant (3/day); 3rd seed summons Durik instead of generic Treant
 - Additional resurrection gifts: DR 3/- (Pelle di Adamantio), Timeless Body, Spontaneous Rebirth (1/day auto-stabilize at 0 HP)
 - Viaggio Onirico gifts (variable based on trial outcomes): Marchio della Veritade, perception abilities, Via della Guardia (DR 2/—) or Via della Radice (Resist Cold 15 + Regen on sacred ground)
 - Primary healer via Cure spells and Wand of Cure Moderate Wounds
 - Augment Summoning + Natural Spell + Power of Nature for powerful summons while wild-shaped
-- Animal companion: Advanced Brown Bear (corteccia parziale from Treant affinity)
-- Nymeria (supernatural companion): Magical Beast with DR 5/Adamantine, Tremorsense 18m, telepathic link with Hella within 18m
+- **Wild Shape**: among her forms is a **living rhinoceros** (standard Druid
+  Wild Shape into an animal) — this is Hella herself transformed, NOT a
+  stone/animated creature and NOT a separate companion (DM clarified 2026-07-03)
+- **Animal companion: Durik** — male dog, **reforged** into a Stone Guardian
+  (Magical Beast, DR 5/Adamantine, Tremorsense 18m, telepathic link within
+  18m) and **evoked via the 3rd seed of the Collana dei Semi Eterni**. (The
+  earlier "Advanced Brown Bear" was her pre-death companion; post-resurrection
+  the companion is Durik.)
 - Caster level: **12** (Druid only; Ranger 1 does not add to druid CL)
 
 ---
@@ -190,7 +196,7 @@ The Rumbling Stone has **no rogue**. They handle challenges through:
 
 | NPC | Role | Status | Reference |
 |---|---|---|---|
-| **Therysol** (ex-Ysolde) | Tiefling Half-Dragon ally, CR 9 | Alive — underground, seeking revenge on Il Collezionista's drow guild. May appear at Rethmar Night Drow assault | `PNG/Therysol/` |
+| **Therysol** (ex-Ysolde) | Tiefling Half-Dragon ally, CR 9 | Alive — underground, seeking revenge on Il Collezionista's drow guild. May appear at Rethmar Night Drow assault | `Bestiario/png/Therysol/` |
 | **Moradin** (divine) | Patron deity of dwarven PCs | Active, speaks through Crown/Aegis | Lore reference |
 | **Hammerfist King** | Quest-giver for Corona di Adamantio | Alive | Referenced in history |
 | **Zalkatar** | Illithid Warlock Drow (CR 13), previous Ring of Chaotic Illumination owner. Boss of Invisible Tower quest (Arc 09-P2A). | Active — awaiting in Invisible Tower | `09_.../Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` |

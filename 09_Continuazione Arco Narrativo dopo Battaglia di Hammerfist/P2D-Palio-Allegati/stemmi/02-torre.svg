@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240" role="img" aria-label="Stemma Contrada della Torre">
+  <defs><clipPath id="t2"><path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z"/></clipPath></defs>
+  <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="#8a1f2b" stroke="#26364d" stroke-width="6"/>
+  <g clip-path="url(#t2)">
+    <path d="M100 20 L180 20 V150 Q180 210 100 232 Z" fill="#7a1a26"/>
+    <path d="M20 150 Q20 210 100 232 Q180 210 180 150 Z" fill="#26364d" opacity="0.55"/>
+    <!-- torre araldica pulita, oro -->
+    <g fill="#e9c24a" stroke="#5a4410" stroke-width="2.5" stroke-linejoin="round">
+      <rect x="76" y="78" width="48" height="86"/>
+      <path d="M70 78 h60 v-10 h-9 v6 h-9 v-6 h-9 v6 h-6 v-6 h-9 v6 h-9 z"/>
+      <rect x="90" y="112" width="20" height="52" fill="#5a4410" stroke="none"/>
+      <rect x="86" y="92" width="12" height="12" fill="#5a4410" stroke="none"/>
+      <rect x="102" y="92" width="12" height="12" fill="#5a4410" stroke="none"/>
+    </g>
+    <!-- guanto di Torm sul portone -->
+    <circle cx="100" cy="150" r="10" fill="#f2efe6" stroke="#5a4410" stroke-width="2"/>
+    <path d="M95 146 q5 -6 10 0 v6 h-10 z" fill="#8a1f2b"/>
+  </g>
+  <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="none" stroke="#26364d" stroke-width="6"/>
+  <rect x="30" y="182" width="140" height="26" rx="4" fill="#0d1b2a" opacity="0.82"/>
+  <text x="100" y="200" font-family="Georgia,serif" font-size="12" fill="#e9c24a" text-anchor="middle" font-style="italic">Oltre il ferro, la volontà</text>
+  <text x="100" y="14" font-family="Georgia,serif" font-size="12" fill="#26364d" text-anchor="middle" font-weight="bold">LA TORRE · Torm/Tempus</text>
+</svg>

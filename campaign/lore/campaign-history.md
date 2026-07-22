@@ -3,7 +3,7 @@
 Last updated: 1372 DR, Flamerule (in-world) / 2026-03-31 (real world)
 
 This file is the **single source of truth** for the RumblingStone campaign narrative.
-For rules, see `skills/dnd-35-rules/SKILL.md`. For artifacts, see `campaign-artifacts.md`.
+For rules, see `skills/dnd-35-srd/SKILL.md`. For artifacts, see `campaign-artifacts.md`.
 For party composition, see `campaign-party.md`. For locations, see `fr-cannath-vale.md`.
 
 ---
@@ -42,8 +42,8 @@ The party has no rogue. They handle traps via Tordek's high Monk saves, arcane u
 - The party begins on the Dawn Way. The Red Hand horde invades Cannath Vale.
 - **Drellin's Ferry Assault:** The town is attacked and ultimately destroyed by the horde.
 - **Thorik dies** defending Drellin's Ferry. He is resurrected through divine intervention of Moradin and bonds with the artifact **Aegis Fang** (a dwarven waraxe adapted from FR lore).
-- **Capitana Lorana's garrison falls** during the same opening assault wave. The party meets Lorana there for the first time. **A travelling half-elf bard, Maestro Tempestas (canonized 2026-05-04)**, is caught in the assault while passing through on diplomatic business for Rethmar. He uses *Shadow Walk* and *Sleep* to help the party + Lorana evacuate ~23 civilians from a collapsing district. Tempestas considers himself in **lifelong debt** to the party from this moment. He reappears as a recurring messenger NPC in Arc 09 (post-Hammerfist hooks). See `PNG/Tempestas/Tempestas.md`.
-- Source files: `00_Red Hand Of Doom/`, `PG/Artefatti/Artefatti-Pg/Aegis Fang/`, `PNG/Lorana/Lorana.md`, `PNG/Tempestas/Tempestas.md`
+- **Capitana Lorana's garrison falls** during the same opening assault wave. The party meets Lorana there for the first time. **A travelling half-elf bard, Maestro Tempestas (canonized 2026-05-04)**, is caught in the assault while passing through on diplomatic business for Rethmar. He uses *Shadow Walk* and *Sleep* to help the party + Lorana evacuate ~23 civilians from a collapsing district. Tempestas considers himself in **lifelong debt** to the party from this moment. He reappears as a recurring messenger NPC in Arc 09 (post-Hammerfist hooks). See `Bestiario/png/Tempestas/Tempestas.md`.
+- Source files: `00_Red Hand Of Doom/`, `PG/Artefatti/Artefatti-Pg/Aegis Fang/`, `Bestiario/png/Lorana/Lorana.md`, `Bestiario/png/Tempestas/Tempestas.md`
 
 ### Phase B: Hammerfist Hills & The Quest for the Corona (Levels 6–8)
 
@@ -170,24 +170,23 @@ The party descends through a chain of connected underground locations:
 
 #### NPC Therysol (Found in Fire Plane)
 
-- **Source:** `PNG/Therysol/`
+- **Source:** `Bestiario/png/Therysol/`
 - **Background:** Was a slave (with her brother) sold by drow traders affiliated with Il Collezionista's guild to salamanders in the Fire Elemental plane, forced to serve at the forge. Her brother died and left a crystal that fused with her, transforming her into the being she is now — an unicum.
 - **Motivation:** Hates salamanders and the elemental plane. Helped the party during Fire Node quests.
 - **Current Status:** Was guarding Hella's corpse in the Sala della Forgia Eterna. After Hella's resurrection, she goes deeper underground seeking the origin of her destiny — which is Il Collezionista's drow guild — to find revenge.
 - **Future Hook:** Can appear as NPC ally during the Notte dei Drow assault on Rethmar (arc 09, Phase 0), attacking drow from within.
-- **Source files:** `PNG/Therysol/`
+- **Source files:** `Bestiario/png/Therysol/`
 
 ### Phase E: Return to RHoD Mainline (Level 13+, Arcs 08–09)
 
 #### Arc 08 — La Battaglia di Hammerfist (4 Sessions)
 
-- **Source:** `08_La Battaglia Di Hammerfist/` (9 files + 2 subdirectories: Mappe/, immage_campaign/)
-- **Main DM Guide:** `00_Final_hammerfist_battle-La_Mano_Rossa_del_Destino-Guida_Completa_del_DM.md` (168KB, 3312 lines)
+- **Source:** `08_La Battaglia Di Hammerfist/` (9 files + 2 subdirectories: Mappe/, immagini/)
+- **Main DM Guide:** `ARC08-01-GUIDA-DM.md` (168KB, 3312 lines)
 - **Supplementary files:**
-  - `00_ATLANTE VISIVO DELLA BATTAGLIA DI HAMMERFIST-complete.md` — Visual atlas with tactical maps
-  - `00_Schede_dei_Personaggi_Unità_e_Regolamento_di_Battaglia.md` — Unit & character sheets
-  - `00_SCHEDE_DI_BATTAGLIA_E_REGISTRO_PERDITE_Hammerfist.md` — Loss tracking sheets
-  - `00_battle_stats_maps-final.md` — Battle stats and maps
+  - `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` — Visual atlas with tactical maps (master, piano ARC-08 A8; supersedes `00_ATLANTE VISIVO...-complete.md` and `ARC08-90-DEPRECATO-battle-stats-maps.md`, both DEPRECATED)
+  - `ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` — Unit & character sheets
+  - `ARC08-03-REGISTRO-PERDITE.md` — Loss tracking sheets
   - `hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md` — Encounter guide
   - `mass_combat_guide_Dm.md` — Mass combat mechanics
   - `combat_prompts_guide.md` — Prompt sequence for mass combat
@@ -249,7 +248,7 @@ The party descends through a chain of connected underground locations:
 **Epilogue — L'Eredità della Battaglia:**
 
 - Hammerfist rebuilt with draconic steel (from Fauci di Palude's scales)
-- **Cerimonia delle 100 Asce** (Day 21 post-Hammerfist, canonical closing event of Arc 08): Re Thorek formally honors the 210 dead with 100 ceremonial adamantine axes (one per unit/notable warrior), pronounces all 210 names with elder cantillation, and concludes with the Giuramento delle 90 (the surviving 90 + 9 of Drellin's Ferry + 92 from prior months). The 4 PCs are publicly recognized as **Custodi Eterni** with rune di pietra di adamantio. Three external visitors arrive coordinated but discreet: **Maestro Tempestas** (Rethmar intelligence agent, brings Brenna Sorvane's private letter to Thorik + intel exchange mission), **Capitana Lythiel** (Sacred Forest druid-ranger, presents Saraah's Acorn of the Circle to Hella post-cerimonia). During Atto 3 of the rite (rune handover), **Artemis's Ring of Chaotic Illumination vibrates** — Zalkatar at the Invisible Tower is preparing the monthly relocation; the Ring senses its previous owner. **Lathander + Mask** subsequently appear in Artemis's dream (Notte 22-23) revealing Zalkatar's identity (3-century ex-cleric of Mask turned Mind Flayer by choice) and movente (lettura sperimentale, not killing). Detail file: `08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md`. **Tordek's Tournament invitation does NOT arrive at the Cerimonia** — it arrives later at the Sacred Forest from **Sorella Maewen** (Confraternita Monastica di Dauth, see `PNG/Maewen/Maewen.md`).
+- **Cerimonia delle 100 Asce** (Day 21 post-Hammerfist, canonical closing event of Arc 08): Re Thorek formally honors the 210 dead with 100 ceremonial adamantine axes (one per unit/notable warrior), pronounces all 210 names with elder cantillation, and concludes with the Giuramento delle 90 (the surviving 90 + 9 of Drellin's Ferry + 92 from prior months). The 4 PCs are publicly recognized as **Custodi Eterni** with rune di pietra di adamantio. Three external visitors arrive coordinated but discreet: **Maestro Tempestas** (Rethmar intelligence agent, brings Brenna Sorvane's private letter to Thorik + intel exchange mission), **Capitana Lythiel** (Sacred Forest druid-ranger, presents Saraah's Acorn of the Circle to Hella post-cerimonia). During Atto 3 of the rite (rune handover), **Artemis's Ring of Chaotic Illumination vibrates** — Zalkatar at the Invisible Tower is preparing the monthly relocation; the Ring senses its previous owner. **Lathander + Mask** subsequently appear in Artemis's dream (Notte 22-23) revealing Zalkatar's identity (3-century ex-cleric of Mask turned Mind Flayer by choice) and movente (lettura sperimentale, not killing). Detail file: `08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md`. **Tordek's Tournament invitation does NOT arrive at the Cerimonia** — it arrives later at the Sacred Forest from **Sorella Maewen** (Confraternita Monastica di Dauth, see `Bestiario/png/Maewen/Maewen.md`).
 - Fauci di Palude alive = future threat hook
 - Red Hand remnants may seek revenge
 - Re Thorek names PCs "Custodi Eterni di Hammerfist"
@@ -281,7 +280,7 @@ The party descends through a chain of connected underground locations:
 - Lake Rhest exploration — sunken city ruins, boat/underwater mechanics
 - Razorfiend encounters in the swamp
 - **Wyrmlord Saarvith** (CR 12, fighter/dragon disciple) commands the area
-- Boss: **Regiarax** Adult Black Dragon (CR 13)
+- Boss: **Regiarix** Adult Black Dragon (CR 13)
 - Consequences: Slows horde 3 days, critical intelligence gathered
 - Source: `Arco-Post-Hammerfist-P2-RHEST-*` (8 files)
 
@@ -308,7 +307,7 @@ The party descends through a chain of connected underground locations:
   - **Phase 0 — Notte dei Drow:** Night infiltration by drow + fungal aberrations → attack Rethmar temple to steal evil artifact. Connection to Sonjak/Il Collezionista/Mother of Fungi faction. Therysol may appear as ally here.
   - **Phase 1 — Assedio Esterno:** Red Hand horde (hobgoblins, ogres, bugbears, Giants, etc) + Githyanki red dragon faction (if not defeated at Dauth) + drow faction. Multiple dragon colors.
   - **Phase 2 — Ritualisti Draconici:** 10-round ritual to summon Avatar of Tiamat + Azarr Kul
-  - **Phase 3 — Azarr Kul & Avatar of Tiamat:** Epic boss fight. Azarr Kul (CR 15 Cleric 10/Fighter 4, half-blue-dragon hobgoblin) + **Tyrgarun** Very Old Blue Dragon (CR 20)
+  - **Phase 3 — Azarr Kul & Avatar of Tiamat:** Epic boss fight. Azarr Kul (CR 15 Cleric 10/Fighter 4, half-blue-dragon hobgoblin), fighting on foot — **Tyrgarun** (Old Blue Dragon, CR 18) is NOT his mount (D11 v2); it's a separate sky-terror encounter, grounded and killable only once the Phase 4 Mythal completes
   - **Phase 4 — Circolo degli Otto & Mythal:** 8 archmages create mythal barrier in 7 rounds, animate city statues as stone golems (à la Harry Potter Battle of Hogwarts)
 - **Allied reinforcements (conditional):**
   - Hammerfist dwarves: 90 survivors of Arc 08 + Re Thorek
@@ -408,7 +407,7 @@ and back to the surface for the Red Hand campaign mainline.
   ├── P1: Hella's Quest — Cerchio Sacro della Foresta
   ├── P2A: Artemis's Quest — Torre Invisibile (vs Zalkatar)
   ├── P2B: Tordek's Quest — Torneo Epico di Dauth
-  ├── P2 Rhest: Città Sommersa & Regiarax (Black Dragon)
+  ├── P2 Rhest: Città Sommersa & Regiarix (Black Dragon)
   ├── P3 Alliances: Starsong Hill, Ghostlord, Sabotaggio Drow
   └── P3 FINALE: Battle of Rethmar (5 phases → Azarr Kul + Avatar of Tiamat)
 ```
@@ -453,15 +452,15 @@ and back to the surface for the Red Hand campaign mainline.
 ### GitHub Campaign Repository
 
 - **Main repo:** <https://github.com/EarlRagnar78/RumblingStone>
-- **Monster Sheets:** <https://github.com/EarlRagnar78/RumblingStone/tree/main/00_Red%20Hand%20Of%20Doom/Monsters_Sheets>
+- **Monster Sheets:** <https://github.com/EarlRagnar78/RumblingStone/tree/main/00_Red%20Hand%20Of%20Doom/Bestiario/pregen-pcgen>
 - **Aegis Fang:** <https://github.com/EarlRagnar78/RumblingStone/tree/main/PG/Artefatti/Artefatti-Pg/Aegis%20Fang>
 - **Corona di Adamantio:** <https://github.com/EarlRagnar78/RumblingStone/tree/main/PG/Artefatti/Artefatti-Pg/00-La%20Corona%20di%20Adamantio-ogetto%26Prove>
 - **Ring of Chaotic Illumination:** <https://github.com/EarlRagnar78/RumblingStone/blob/main/PG/Artefatti/Ring%20of%20Chaotic%20Illumination.md>
 - **Tordek's Bracieri:** <https://github.com/EarlRagnar78/RumblingStone/tree/main/PG/Artefatti/Artefatti-Pg/Tordek>
 - **Lord of Sun and Shadow PrC (rejected):** <https://github.com/EarlRagnar78/RumblingStone/blob/main/PG/Artefatti/Artefatti-Pg/PrestigeClass/lord_sun_shadow/lord_sun_shadow.html>
 - **Cerebromorphosis:** <https://github.com/EarlRagnar78/RumblingStone/tree/main/PG/Artefatti/Artefatti-Pg/Artemis/Cerebromorphosis>
-- **Therysol NPC:** <https://github.com/EarlRagnar78/RumblingStone/tree/main/PNG/Therysol>
-- **Arc 08 Battle of Hammerfist:** `08_La Battaglia Di Hammerfist/` (9 files + Mappe/ + immage_campaign/)
+- **Therysol NPC:** <https://github.com/EarlRagnar78/RumblingStone/tree/main/Bestiario/png/Therysol>
+- **Arc 08 Battle of Hammerfist:** `08_La Battaglia Di Hammerfist/` (9 files + Mappe/ + immagini/)
 - **Arc 09 Post-Hammerfist:** `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/` (74 markdown + 6 images)
 - **All Arc directories:** `01_LaMiniera/` through `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/`
 
@@ -483,11 +482,11 @@ and back to the surface for the Red Hand campaign mainline.
 
 | Topic | Reference File |
 |---|---|
-| Party composition & stats | `skills/dnd-35-rules/references/campaign-party.md` |
-| All campaign artifacts | `skills/dnd-35-rules/references/campaign-artifacts.md` |
-| Cannath Vale locations & map | `skills/dnd-35-rules/references/fr-cannath-vale.md` |
-| Campaign factions (canonical + custom) | `skills/dnd-35-rules/references/fr-factions.md` |
-| Story arc progression | `skills/dnd-35-rules/references/campaign-story-arcs.md` |
-| DM toolkit & expansion | `skills/dnd-35-rules/references/dm-expansion-toolkit.md` |
+| Party composition & stats | `skills/rumblingstone-campaign/references/campaign-party.md` |
+| All campaign artifacts | `skills/rumblingstone-campaign/references/campaign-artifacts.md` |
+| Cannath Vale locations & map | `skills/forgotten-realms-lore/references/fr-cannath-vale.md` |
+| Campaign factions (canonical + custom) | `skills/forgotten-realms-lore/references/fr-factions.md` |
+| Story arc progression | `skills/rumblingstone-campaign/references/campaign-story-arcs.md` |
+| DM toolkit & expansion | `skills/rumblingstone-campaign/references/dm-expansion-toolkit.md` |
 | House rules | `campaign/lore/house-rules.md` |
 | Arc 09 master index | `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md` |

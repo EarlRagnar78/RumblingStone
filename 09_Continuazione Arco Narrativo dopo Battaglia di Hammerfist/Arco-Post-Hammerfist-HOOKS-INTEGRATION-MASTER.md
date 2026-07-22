@@ -49,7 +49,7 @@ Day 28-32  Tournament Days 1-3 at Dauth (P2B arc).
 Day 32     Vanguard Karruk siege of Dauth (parallel to Day 3 Tournament).
 Day 33-35  Hella ritual / Artemis Tower fight.
 Day 36+    Convergence on Rethmar.
-Day 38-42  Phase 0-4 of Rethmar.
+Day 40-42  Phase 0-4 of Rethmar.
 
 PATHS (party choice):
   PATH-A   split classico (efficient, no support)
@@ -104,8 +104,13 @@ Giorno 23-28 Possibili incontri sulla strada:
            - CAROVANA PROFUGHI dal Thornwaste (Ghostlord hook).
            - Drow scout per Artemis (se va alla Torre).
            - Voci della strada per Tordek.
+Giorno 27-36 PALIO DI CHANNATHGATE (P2D, opzionale, PARALLELO al Torneo):
+           attivita di citta sulla Dawn Way ~35 mi E di Rethmar. Corsa +
+           Consiglio; deadline rinforzi Day 37-38. Split-party lecito.
+           Vince il Drappellone = Matrice del Mythal (Fase 4). Vedi
+           P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md §3.1.
 Giorno 28  Arrivo a Dauth (per chi ci va al Torneo) — preliminari.
-Giorno 30  Cerimonia apertura Torneo (Day 1).
+Giorno 30  Cerimonia apertura Torneo (Day 1). [Palio Giorno 1 in parallelo]
 Giorno 31  Day 2 Torneo.
 Giorno 32  Day 3 Torneo + assedio Vanguard a Dauth.
 Giorno 33-35  Hella completa rituale Sacred Forest;
@@ -113,9 +118,9 @@ Giorno 33-35  Hella completa rituale Sacred Forest;
               (se entro Mirtul = ~Day 30, altrimenti Torre cammina).
 Giorno 36  Convoglio dei superstiti del Torneo parte per Rethmar.
 Giorno 37  Convergenza dei PG verso Rethmar.
-Giorno 38–40  Notte dei Drow (Phase 0) + Assedio (Phase 1).
-Giorno 41  Riti & Avatar (Phase 2–3).
-Giorno 42  Mythal & finale (Phase 4).
+Giorno 40  Notte dei Drow (Phase 0).
+Giorno 41  Orda in vista, ultimi preparativi (interludio, 1 riposo lungo).
+Giorno 42  Assedio, Riti & Avatar, Mythal & finale (Phase 1-4).
 ```
 
 > **Nota DM:** la Vanguard del Red Hand è una **forza distaccata** (~600 effettivi). NON è l'orda principale di Azarr Kul. È un **diversivo** mandato a colpire Dauth.
@@ -141,6 +146,19 @@ Giorno 42  Mythal & finale (Phase 4).
 | **Tutti** | Carovana profughi dal Thornwaste | Strada, Giorno 23-28 | A scelta DM | **Ren Casadipietra** (PNG-incontro) |
 
 > **Confronto con v1 (deprecata):** la v1 prevedeva 4 lettere consegnate da Tempestas. La v2 distribuisce gli hook in **fonti diverse e plausibili**, riducendo Tempestas alla **sua reale funzione** (intel agent + lettera Brenna).
+
+> **↩ Hook condizionale — Slot-dono della Collana (T9, dal ramo del rifiuto
+> P3B)**: **solo se** al rituale di resurrezione di Hella il party ha scelto
+> il **rifiuto totale** (nessun dono concesso), Hella torna in vita con la
+> **Collana dei Semi Eterni a 3 slot-dono vuoti**. Questi slot diventano
+> **3 quest personali opzionali** in ARC-09 — *un atto di sacrificio per
+> slot* — che riusano poteri già canonici (vedi sinergie future F1-F4,
+> `[PROPOSTA]`, in `PG/Artefatti/SINERGIE-ARTEFATTI-MASTER.md`). Innesti
+> naturali: il **rito druidico di Saraah** (Giorno 25) e il **Cerchio del
+> Sacred Forest** (P1). Se il rituale non è stato giocato o i doni sono stati
+> concessi, questo hook **non esiste** (Collana già completa). Fonte:
+> `07_il Portale Della Forgia Eterna/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`
+> §2-BIS «Il ramo del rifiuto» → *Tabella echi*, riga «Rifiuto totale».
 
 ---
 
@@ -241,8 +259,9 @@ Giorno 21  Talar saccheggiata (al Cerimonia delle 100 Asce nessuno
            o via la carovana profughi sulla strada).
 Giorno 28  Distaccamento Vanguard di Wyrmlord Karruk a Dauth.
 Giorno 32  Vanguard assalta Dauth (Day 3 Torneo).
-Giorno 38  Azarr Kul arriva a Rethmar.
-Giorno 42  Battaglia finale.
+Giorno 40  Notte dei Drow (Phase 0) — infiltrazione drow.
+Giorno 41  Orda in vista, ultimi preparativi (interludio).
+Giorno 42  Azarr Kul arriva a Rethmar. Battaglia finale (Phase 1-4).
 ```
 
 ### 6.2 Cosa il DM deve ricordarsi
@@ -276,7 +295,7 @@ Giorno 42  Battaglia finale.
 
 ## 8. Echi a lungo periodo (BG3-style)
 
-> Per la fonte autoritativa di tutti gli echi del Torneo: `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-CONSEGUENZE-ECHI-LUNGO-PERIODO.md`. Per gli echi specifici dei hook, vedi i singoli file.
+> Per la fonte autoritativa di tutti gli echi del Torneo: `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-CONSEGUENZE-ECHI-LUNGO-PERIODO.md` (timeline delle alleanze in `...Tordek-MINIMAPPA-TIMELINE-ALLEANZE.md`). Per gli echi specifici dei hook, vedi i singoli file.
 
 Sintesi rapida per i 4 PG:
 
@@ -306,19 +325,22 @@ Sintesi rapida per i 4 PG:
 
 ## 9. Cross-link
 
-- **PNG Tempestas (recurring intel agent):** `PNG/Tempestas/Tempestas.md`
-- **PNG Lythiel (Hella's Hammerfist hook):** `PNG/Lythiel/Lythiel.md`
-- **PNG Sorella Maewen (Tordek's Sacred Forest hook):** `PNG/Maewen/Maewen.md`
+- **PNG Tempestas (recurring intel agent):** `Bestiario/png/Tempestas/Tempestas.md`
+- **PNG Lythiel (Hella's Hammerfist hook):** `Bestiario/png/Lythiel/Lythiel.md`
+- **PNG Sorella Maewen (Tordek's Sacred Forest hook):** `Bestiario/png/Maewen/Maewen.md`
 - **Hook Hella scena (Lythiel + Saraah):** `Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md`
 - **Hook Tordek scena (Maewen al Sacred Forest):** `Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md`
 - **Hook Artemis scena (Anello vibra alla Cerimonia):** `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md`
 - **Hook Thorik scena (lettera Brenna + intel):** `Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md`
 - **Hook Ghostlord (carovana profughi):** `Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md`
 - **Cerimonia delle 100 Asce (zona principale):** `08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md`
-- **PNG Lorana (riserva profughi a Rethmar):** `PNG/Lorana/Lorana.md`
-- **Battle of Hammerfist final phase:** `08_La Battaglia Di Hammerfist/00_Final_hammerfist_battle…`
+- **PNG Lorana (riserva profughi a Rethmar):** `Bestiario/png/Lorana/Lorana.md`
+- **Battle of Hammerfist final phase:** `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md`
 - **Sacred Forest (P1) quest:** `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md`
-- **Tournament (P2B) arc:** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md`
+- **Tournament (P2B) arc:** HUB in `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md` (dettaglio in `...Tordek-PARTE1-Giorno1-Preliminari.md` + `PARTE2-Giorno2-Semifinali.md` + `PARTE3-Giorno3-Finale-e-Invasione.md`)
+- **Palio di Channathgate (P2D) arc:** HUB in `Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md` (opzionale, parallelo al Torneo, Day 27-36; il Drappellone = Matrice del Mythal alimenta la Fase 4; muove il voto del Consiglio di Rethmar)
 - **Torre Invisibile (P2A) arc:** `Arco-Post-Hammerfist-P2A-Torre-PARTE*.md`
 - **Ghostlord arc files:** `Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-TESTO.md`
+- **Ramo del rifiuto P3B (echi del rituale Hella → slot-dono Collana):** `07_il Portale Della Forgia Eterna/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` §2-BIS
+- **Sinergie future Collana (F1-F4, `[PROPOSTA]`):** `PG/Artefatti/SINERGIE-ARTEFATTI-MASTER.md`
 - **Stato campagna:** `campaign/state.md`

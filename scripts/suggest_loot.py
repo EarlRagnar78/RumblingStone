@@ -292,8 +292,8 @@ def main():
     ap.add_argument("--wild", action="store_true", help="Force wild/no-loot output.")
     ap.add_argument("--pcs", type=int, default=4)
     ap.add_argument("--no-magic", action="store_true")
-    ap.add_argument("--dense", action="store_true", help="+25% treasure.")
-    ap.add_argument("--sparse", action="store_true", help="-25% treasure.")
+    ap.add_argument("--dense", action="store_true", help="+25%% treasure.")
+    ap.add_argument("--sparse", action="store_true", help="-25%% treasure.")
     ap.add_argument("--include-fr-themed", action="store_true",
                     help="Allow FR-themed mild items in the pool.")
     ap.add_argument("--seed", type=int, default=None)

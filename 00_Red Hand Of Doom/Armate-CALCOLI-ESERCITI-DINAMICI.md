@@ -1,7 +1,7 @@
 # Armate — Calcoli Eserciti Dinamici (v2 — 2026-05-05)
 
 > **🛡️ Canonizzazione 2026-05-05**: il DM ha **accettato** tutte le
-> derivazioni `[INFERRED]` delle unità (file in `Armate-UNITA-NUOVE/`)
+> derivazioni `[INFERRED]` delle unità (file in `Bestiario/`)
 > e tutti i puntatori NPC a `PNG/`. I conteggi §2.x e §2.6 sono canone
 > di campagna; le unità sono valide per encounter/mass-combat
 > immediato. Flag globale: `[ACCEPTED — DM-canon 2026-05-05]`.
@@ -68,7 +68,7 @@
 | **Regiarix** (Black young adult) | Rhest/Saarvith, P2 Arco-09 | AP canon | **A rischio PG** (P2-RHEST-FASE4) |
 | **Ozyrrandion** (Blue adult) | Torre Invisibile / Wyrmlord Tower | AP canon | **A rischio PG** (P2A-Torre-Zalkatar) |
 | **Tyrgarun** (Black adult, hell-themed reserve) | Riserva aerea Rethmar | AP upscaled | Vivo |
-| **Fauci di Palude** (Black adult) | Vanguard Hammerfist | Canon campagna | **Annientato a Hammerfist (Day 19)** |
+| **Fauci di Palude** (Black adult) | Vanguard Hammerfist | Canon campagna | **Ramo condizionale D10, non deciso** (default: fugge <50 PF, assente da Rethmar; alternativa: ucciso ad Hammerfist) |
 
 **Note**: Abithriax, Regiarix, Ozyrrandion, Tyrgarun sono i 4 dragoni
 AP originali (Regiarix young + 3 adults). Fauci di Palude è la 5ª
@@ -143,20 +143,20 @@ Approssimato a **~10.000** come target narrativo.
 
 | Unità | CR | Numero | Fonte file | Deployment (arc/fase) |
 |---|---|---|---|---|
-| Hobgoblin Captain (company commander élite) | 8 | ~24 | `Armate-UNITA-NUOVE/hobgoblin-captain-cr8.md` | Promossi dai 60 Warrior-3 §2.1 (1 per compagnia, Fase 1-3) |
-| Warpriest di Tiamat élite (upscale da CR7) | 11 | ~6 | `Armate-UNITA-NUOVE/tiamat-warpriest-elite-cr11.md` | Sottogruppo dei 20 Warpriest §2.1, Fase 2 ritualisti |
-| Emissario Red Hand | 12 | 1-3 | `Armate-UNITA-NUOVE/emissario-red-hand-cr12.md` | **Conditional** (Ghostlord branch; P3 Ghostlord alleanza) |
-| Zarim (Illithid luogotenente) | 12 | ×1 | `Armate-UNITA-NUOVE/zarim-illithid-luogotenente-cr12.md` | Torneo Dauth P2B Day 2 (fixed) |
-| Xal'thor (Illithid Commander) | 14 | ×1 | `PNG/Xal_thor/Xal_thor.md` (pointer) | Torneo Dauth P2B Day 3 (fixed) |
+| Hobgoblin Captain (company commander élite) | 8 | ~24 | `Bestiario/hobgoblin-captain-cr8.md` | Promossi dai 60 Warrior-3 §2.1 (1 per compagnia, Fase 1-3) |
+| Warpriest di Tiamat élite (upscale da CR7) | 11 | ~6 | `Bestiario/tiamat-warpriest-elite-cr11.md` | Sottogruppo dei 20 Warpriest §2.1, Fase 2 ritualisti |
+| Emissario Red Hand | 12 | 1-3 | `Bestiario/emissario-red-hand-cr12.md` | **Conditional** (Ghostlord branch; P3 Ghostlord alleanza) |
+| Zarim (Illithid luogotenente) | 12 | ×1 | `Bestiario/zarim-illithid-luogotenente-cr12.md` | Torneo Dauth P2B Day 2 (fixed) |
+| Xal'thor (Illithid Commander) | 14 | ×1 | `Bestiario/villain/Xal_thor/Xal_thor.md` (pointer) | Torneo Dauth P2B Day 3 (fixed) |
 | Saarvith | 11 | ×1 | `09_.../P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | Rhest P2 (PG deviabile) |
 | Zalkatar | 13 | ×1 | `09_.../P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` | Torre Invisibile P2A (PG deviabile) |
-| Wyrmlord Karruk | 10 | ×1 | `Armate-UNITA-NUOVE/wyrmlord-karruk-cr10.md` | Rethmar Fase 1 assault leader |
-| Ondata Giganti — mass wave | 15 (EL) | ×2 ondate | `Armate-UNITA-NUOVE/ondata-giganti-fanteria-cr15.md` | Rethmar Fase 1 (prima ondata) + Fase 3 (rinforzo) — assorbe gli 80 Hill Giant §2.1 + ogre/ettin supporto |
+| Wyrmlord Karruk | 10 | ×1 | `Bestiario/wyrmlord-karruk-cr10.md` | Rethmar Fase 1 assault leader |
+| Ondata Giganti — mass wave | 15 (EL) | ×2 ondate | `Bestiario/ondata-giganti-fanteria-cr15.md` | Rethmar Fase 1 (prima ondata) + Fase 3 (rinforzo) — assorbe gli 80 Hill Giant §2.1 + ogre/ettin supporto |
 | Azarr Kul (finale) | 15 | ×1 | `09_.../P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md` | Rethmar Fase 3 (arrivo Day 40+2) |
-| Avatar di Tiamat (climax) | 17 | ×1 | `Armate-UNITA-NUOVE/avatar-tiamat-cr17.md` | **Conditional**: evocato solo se Ritual Clock ≥18 (Fase 3-4 climax) |
-| Il Collezionista (Rakshasa) | 18 | ×1 | `PNG/Il_Collezionista_Rakshasa.md` (pointer) | **Conditional** shadow branch (non encounter ordinario) |
-| Xal'thor allied thralls (Illithid psion/guerrieri) | 6-8 | ~30-50 | (da `Armate-UNITA-NUOVE/zarim-*` + MM) | **Conditional** se Xal'thor allea Mano Rossa (+400 unità §4) |
-| Ghost Lion Spettrale | 8 | ~6-12 | `Armate-UNITA-NUOVE/ghost-lion-spettrale-cr8.md` | Ghostlord pride (Fase 2 se ostile) |
+| Avatar di Tiamat (climax) | 17 | ×1 | `Bestiario/avatar-tiamat-cr17.md` | **Conditional**: evocato solo se Ritual Clock ≥18 (Fase 3-4 climax) |
+| Il Collezionista (Rakshasa) | 18 | ×1 | `Bestiario/villain/Il_Collezionista_Rakshasa/Il_Collezionista_Rakshasa.md` (pointer) | **Conditional** shadow branch (non encounter ordinario) |
+| Xal'thor allied thralls (Illithid psion/guerrieri) | 6-8 | ~30-50 | (da `Bestiario/zarim-*` + MM) | **Conditional** se Xal'thor allea Mano Rossa (+400 unità §4) |
+| Ghost Lion Spettrale | 8 | ~6-12 | `Bestiario/ghost-lion-spettrale-cr8.md` | Ghostlord pride (Fase 2 se ostile) |
 
 **Note di coerenza**:
 
@@ -179,7 +179,7 @@ Approssimato a **~10.000** come target narrativo.
 
 | Distaccamento | Unità | Destino | Stato canonico |
 |---|---|---|---|
-| **Vanguard Hammerfist** (Fauci di Palude + 900 unità) | 900 | Hammerfist | **Distrutto Day 19** (vedi file Arc 08) |
+| **Vanguard Hammerfist** (Fauci di Palude + 900 unità) | 900 | Hammerfist | **-900 effettivi Day 19** (~500 morti + ~400 dispersi in rotta, non si ricongiungono — piano ARC-08 D11, scenario di vittoria default; vedi file Arc 08) |
 | **Contingente Rhest** (Saarvith + Regiarix + 200 drow/goblin + 2 Razorfiend) | 200 | Lake Rhest | **A rischio** P2 Arc-09 |
 | **Contingente Torre** (Zalkatar + Ozyrrandion + 150 Illithid thralls + 1 Razorfiend) | 150 | Invisible Tower | **A rischio** P2A Arc-09 |
 | **Cellula Dauth** (Xal'thor + 100 Illithid psionic + thralls) | 100 | Dauth | **Day 3 Tournament fixed assault** |

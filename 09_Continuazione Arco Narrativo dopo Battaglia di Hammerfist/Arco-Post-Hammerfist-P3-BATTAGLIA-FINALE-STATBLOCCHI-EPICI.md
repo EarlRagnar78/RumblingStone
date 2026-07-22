@@ -1,39 +1,48 @@
 Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md
 =============================================================
 
-# Stat blocchi epici – Battaglia Finale Rethman (D&D 3.5)
+# Stat blocchi epici – Battaglia Finale Rethmar (D&D 3.5)
 
 Pensati per PG livello 13–15, CR scena 16–18.  
 Adatta leggermente pf o incantesimi alla potenza reale del tuo gruppo.
 
 ---
 
-## 1. Azarr Kul – Warpriest di Tiamat (versione finale, CR 15)
+## 1. Azarr Kul – Warpriest di Tiamat (versione finale, CR 17)
+
+> **⚠️ Aggiornato B5 (2026-07-02, ERRATA-PARTE2-3):** upscale strutturale da
+> Chierico 10/Guerriero 4 (~119 pf, CR 15) a **Chierico 12/Guerriero 4 (~155 pf,
+> CR 17)**, con lista buff pre-cast e 2 effetti a innesco — reggeva ~2 round contro
+> un party APL 14 con 5 artefatti. Dettaglio, tabella buff e inneschi:
+> `ERRATA-PARTE2-3-35-Verification.md` §1. **NON cavalca Tyrgarun** (D11 v2): il
+> drago è terrore dei cieli separato, inchiodato dal Mythal in Fase 4. La **scena**
+> con l'Avatar di Tiamat (§2) resta **CR 18** — i CR non si sommano.
 
 Basato su Azarr Kul di Red Hand of Doom, potenziato per lo scontro finale.[web:55][web:108]
 
 - Taglia/Tipo: Medio Umanoide (hobgoblin, mezzo‑drago blu).  
-- DV: Chierico 10 / Guerriero 4 (14d8+56, pf medi ~119).  
+- DV: **Chierico 12 / Guerriero 4 (12d8+4d10+64, pf medi ~155)**.  
 - Iniziativa: +1.  
 - Velocità: 9 m.  
-- CA: 28 (10 +9 armatura completa +2, +3 scudo, +1 Des, +3 naturale, +2 deflessione); contatto 14; colto alla sprovvista 27.  
-- BAB/Grapple: +13 / +18.  
+- CA: 28 (10 +9 armatura completa +2, +3 scudo, +1 Des, +3 naturale, +2 deflessione); contatto 14; colto alla sprovvista 27. *(Sotto* righteous might*: taglia Grande, CA 27, contatto 13.)*  
+- BAB/Grapple: +13 / +18 *(+19 sotto* righteous might*)*.  
 - Attacco:
-  - Spadone sacrificale +21/+16/+11 (2d6+7, crit. 19–20/x2; +2d6 vs buoni).  
-- TS: Temp +13, Rif +7, Vol +13.  
-- Caratteristiche indicative: For 20, Des 12, Cos 18, Int 12, Sag 18, Car 16.
+  - Spadone sacrificale +2 +21/+16/+11 (2d6+9, crit. 19–20/x2; +2d6 vs buoni). *(Sotto* divine power*: +25/+20/+15/+10.)*  
+- TS: Temp +15, Rif +7, Vol +15.  
+- Caratteristiche indicative: For 20, Des 12, Cos 18, Int 12, Sag 20, Car 16.  
+- **Buff pre-cast + 2 effetti a innesco:** vedi `ERRATA-PARTE2-3-35-Verification.md` §1 (con durate a CL 14).
 
-### Incantesimi (Chierico 10, dominio Guerra/Tirannia/Tiamat)
+### Incantesimi (Chierico 12, domini Guerra + Tirannia/Tiamat)
 
-- Livello incantatore 12 (con oggetti).  
+- Livello incantatore 14 (con oggetti).  
 - Esempio preparazione:
   - 0: *detect magic, guidance, resistance, inflict minor wounds*.  
-  - 1: *divine favor, shield of faith, command, doom*.  
-  - 2: *bull’s strength, hold person, spiritual weapon*.  
-  - 3: *dispel magic, magic vestment, prayer*.  
-  - 4: *divine power, freedom of movement, unholy blight*.  
-  - 5: *flame strike (versione cromatica), righteous might*.  
-  - 6: *blade barrier, harm* (se vuoi essere duro).
+  - 1: *divine favor, shield of faith, command, doom, bless*.  
+  - 2: *bull’s strength, hold person, spiritual weapon, silence*.  
+  - 3: *dispel magic, magic vestment, prayer, magic circle against good*.  
+  - 4: *divine power, freedom of movement, unholy blight, air walk*.  
+  - 5: *flame strike (versione cromatica), righteous might, slay living*.  
+  - 6: *blade barrier, harm* (CD 22).
 
 ### Capacità speciali
 
@@ -160,7 +169,7 @@ Non serve dettagliare tutta la lista: il suo ruolo è “batteria” del rituale
 
 ---
 
-## 7. Esempio Comandante dei 300 Mercenari Nani (CR 11)
+## 7. Durgan Tozzefort — Comandante dei 300 Mercenari Nani (CR 11) `[ACCEPTED — DM-canon 2026-07-12]`
 
 - Classe: Guerriero 12.  
 - PF: ~120.  

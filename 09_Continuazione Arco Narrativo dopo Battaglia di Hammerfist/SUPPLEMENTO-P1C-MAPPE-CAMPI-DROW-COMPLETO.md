@@ -43,6 +43,7 @@
 - **Scopo:** Burning operations, preparazione incendi tattici foresta
 - **Difese:** Pattuglie 24/7, allarme tripwire perimetro
 - **Loot:** 2,500gp equipaggiamento, mappe tattiche, 80 razioni
+- **SVG**: `rendered/SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO_map01_campo-drow-1-burning-operations-base-80m-60m-gri.svg`
 
 ### Mappa Tattica Completa
 
@@ -151,109 +152,141 @@ SCALA GRID: 1 quadrato = 1.5m × 1.5m | DIMENSIONI TOTALI: 53 colonne × 40 righ
 | Guerrieri | 20 | Distributed | Fighter 6-8, patrol/guard |
 | **TOTALE** | **30** | - | EL 12 se tutti alert |
 
-### Tattiche Raid (PG Stealth Attack)
+### 🌍 AMBIENTE (companion T5b, consolidato dal blocco griglia sopra)
 
-**Obiettivi Prioritari:**
-1. **Silenzioso Start:** Kill patrol guards PRIMA tripwire (assassinate)
-2. **Disable Alarm:** Rogue disable tripwire DC 20
-3. **Kill Commanders:** Neutralize leadership (no coordination)
-4. **Sabotage Supplies:** Burn food/armeria (rallenta orda)
+| Elemento | Dove | Effetto meccanico 3.5 |
+|---|---|---|
+| Foresta densa | perimetro (righe 01-03, colonne A-D/AS+) | Furtività +5, copertura totale oltre 4,5 m |
+| Tripwire perimetrale | riga 04, colonne E-AJ | Osservare CD 22 per notarlo, Disattivare Congegni CD 20; se scatta: campana 🔔, TUTTI i drow in allerta, sorpresa persa |
+| Fuochi tattici (incineratore) | area centrale 💥 (righe 20-23) | diametro 10,5 m; 2d6 fuoco/round entro 3 m, 4d6 dentro; luce 36 m (annulla approccio furtivo) |
+| Pattuglie | riga 06 (M06 e AI06, loop di 20 min) | Guerriero drow: Osservare +8, Ascoltare +8, scurovisione 36 m |
+| Tende | righe 08-20 e 25-32 (blocchi ⬛ 3×3) | bloccano linea di vista; dentro: −4 Ascoltare per chi dorme |
 
-**Se Allarme Triggered:**
-- Tutti 30 drow alert in 2 rounds
-- Formation: Commanders center, Pyro ranged, Guerrieri shield wall
-- **Hard Battle:** EL 12 combattimento
+### ⚔️ TATTICHE (companion T5b, fonte: "Tattiche Raid" originale)
 
-**Stealth Success Bonus:**
-- No alarm: PG possono engage 5-6 drow alla volta (manageable)
-- Loot intact: 2,500gp gear, tactical maps orda
-- Intel: Positions altri 2 campi drow
+- **Disposizione iniziale**: Commander a J25/J27; Pyromancer a O12, V12,
+  U25, U27, M30 + 3 nelle tende; Guerrieri distribuiti su pattuglie e posti
+  di guardia.
+- **Approccio furtivo dei PG** (ordine consigliato dal file): eliminare le
+  pattuglie PRIMA del tripwire (uccisione silenziosa) → disattivare
+  l'allarme (Disattivare Congegni CD 20) → neutralizzare i Commander
+  (senza di loro niente coordinazione) → sabotare scorte/armeria (rallenta
+  l'orda).
+- **Round 1-2 (se allarme)**: tutti i 30 drow in allerta entro 2 round.
+- **Round 3+ (se allarme)**: formazione — Commander al centro, Pyromancer
+  in seconda linea a distanza, Guerrieri a muro di scudi. Battaglia dura,
+  EL 12 pieno.
+- **Senza allarme**: i PG ingaggiano 5-6 drow alla volta (gestibile);
+  bottino intatto (2.500 mo + mappe tattiche dell'orda + intel sugli altri
+  2 campi).
+- **Morale** `[INFERRED — needs DM confirmation]`: morti entrambi i
+  Commander, i superstiti sotto il 25% ripiegano verso il Campo 2 (Hex D08)
+  portando l'allarme.
+
+### 🔄 EVOLUZIONE (companion T5b)
+
+| Stato | Trigger | Cosa cambia sulla griglia | Effetto meccanico |
+|---|---|---|---|
+| A — Notte, routine | — | pattuglie in loop riga 06; 2/3 delle forze nelle tende | sorpresa possibile, ingaggi 5-6 alla volta |
+| B — Allarme | tripwire o pattuglia dà l'allarme (campana 🔔) | tutti fuori dalle tende in 2 round; formazione al centro campo | EL 12 pieno, niente sorpresa |
+| C — Campo in fiamme | i PG incendiano scorte/fuochi tattici (💥 righe 20-23) | il fuoco si propaga 1 quadretto/round nelle celle adiacenti alle fiamme `[INFERRED]` | 1d6 fuoco/round per cella; fumo: occultamento 20% entro 3 m |
+| D — Rotta | entrambi i Commander morti + superstiti <25% `[INFERRED]` | i drow superstiti fuggono verso NE (Campo 2) | se ne scappa anche uno solo: Campo 2 in allerta permanente |
+
+> Gli stati sono esiti aperti (D13): il trigger è dei dadi e delle scelte
+> dei PG, mai del copione.
 
 ---
 
 ## CAMPO DROW 2: FORWARD BASE (Hex D08) - PIÙ GRANDE
 
 ### Info Generali
-- **Dimensioni:** 120m × 80m (80 colonne × 53 righe, scala 1.5m/quadrato)
+- **Dimensioni:** ≈98m × 80m (65 colonne × 53 righe, scala 1.5m/quadrato) — *canonizzate dal DM (2026-07-04); il precedente «120m / 80 colonne» era una dichiarazione imprecisa della sorgente*
 - **Forze:** 40 Drow + 2 Ogre + 1 Wyrmlord Lieutenant
 - **Difese:** Palisade legno 3m, watchtower 9m, pattuglie 24/7
 - **Loot:** 5,000gp + magic items, prigioni 10 civili
 - **EL:** 14 se full alert (MOLTO pericoloso!)
+- **SVG**: `rendered/SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO_map02_campo-drow-2-forward-base-98m-80m-grid-6553-scal.svg`
+  `[T5c 2026-07-04: griglia COMPLETATA — tutte e 53 le righe presenti,
+  larghezza uniforme, strutture posizionate secondo le annotazioni
+  (palizzata, cancelli, torretta, recinto ogre, tenda Wyrmlord/tesoro/prigioni);
+  SVG rigenerato.]`
+  > ✅ **RISOLTO — dimensioni (conferma DM 2026-07-04)**: canonizzate le
+  > dimensioni **disegnate**: **65 colonne × 53 righe** (≈98 m × 80 m).
+  > La vecchia dichiarazione «80 × 53 / 120 m» era imprecisa nella sorgente;
+  > tutte le strutture annotate stanno entro le 65 colonne. Titolo e testo
+  > allineati, SVG rigenerato. Confini esatti delle celle = `[INFERRED]`
+  > dalla sorgente (fatto salvo il posizionamento testuale delle strutture).
 
 ### Mappa Tattica Completa
 
 ```
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-CAMPO DROW 2 - FORWARD BASE (120m × 80m, Grid 80×53, Scala 1.5m/sq)
+CAMPO DROW 2 - FORWARD BASE (98m × 80m, Grid 65×53, Scala 1.5m/sq)
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
-COLONNE →  A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R  S  T  U  V  W  X  Y  Z AA AB AC AD [...]
-RIGHE ↓    
+COLONNE →  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF AG AH AI AJ AK AL AM AN AO AP AQ AR AS AT AU AV AW AX AY AZ BA BB BC BD BE BF BG BH BI BJ BK BL BM
+RIGHE ↓
 
 --- FORESTA NORD ---
-01-05  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲 [continues...]
-
---- PALISADE NORD (Wood Wall 3m alto, HP 80 each section) ---
-06  🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
-                              └──────────────────────────────────────────────────────────────────────────────┘ 
-                              PALISADE WALL (Col N-BA, Riga 06): 3m alto, AC 15, HP 80/10ft section
-                              Ramparts: Defenders +2 AC, +1 ATK da elevazione
-
---- GATE NORD (Ingresso Principale) ---
-07  🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🚪🚪🚪🚪🚪⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
-                                                                      └────────┘ GATE (Col AB-AF, 7.5m wide)
-                                                                      Guarded: 4 Guerrieri (AC 20, HP 58 ea)
-                                                                      
---- WATCHTOWER (Centro Nord) ---
-08  🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛🔴⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔴⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
-                          └─┘ Guard 1 (O08)                                      └─┘ Guard 2 (AH08)
-
-10  🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
-
-12  🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🗼🗼🗼⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
-                                                                  └────┘ WATCHTOWER (Col AB-AD, Riga 12-14, 9m tall)
-                                                                  4.5m × 4.5m base (3×3 quadrati)
-                                                                  Occupants: 2 Archer Drow (top), Crossbow +10, 120ft range
-                                                                  View: 360° LOS, Spot +12
-
---- TENDE AREA (25 Tende) ---
-15  🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
-                          └──────────────────────────────────────────────────────────────────────────────┘
-                          25 TENDE distributed (Cols N-BA, Righe 15-30): 28 Guerrieri, 10 Pyromancer sleeping/off-duty
-
---- OGRE PEN (Centro-Sud) ---
-25  🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🟢🟢🪨🪨🪨🪨🪨🪨🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲
-                                                  └────────────────────┘ OGRE PEN (Cols W-AG, Riga 25-28)
-                                                  Fence rocce, 1.5m alto
-                                                  
-26  🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨🟩🟩🟩🟩🟩🟩🟩🟩🟩🟢🟢🟩🟩🟩🟩🪨🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲
-                                                              └──┘ OGRE 1 (AE26, Barbarian 8, HP 95, eating)
-                                                              
-27  🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨🟩🟩🟩🟩🟩🟩🟩🟩🟩🟢🟢🟩🟩🟩🟩🪨🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🌲🌲
-                                                              └──┘ OGRE 2 (AE27, Barbarian 8, HP 92, sleeping)
-
---- WYRMLORD TENT + PRIGIONI ---
-30  🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
-
-32  🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⚫⬛⬛⬛⬛⬛⬛💎💎💎⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛💀💀💀⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
-                          └─┘ WYRMLORD (O32, Fighter 12, HP 110, AC 26, planning assault)
-                                        └────┘ Treasure Chest (R-T32): 3,000gp, +2 flaming sword, 2 scrolls
-                                                                        └────┘ PRIGIONI (AL-AN32): 10 civili captured
-                                                                        Cages iron, HP 50, Break DC 28
-
+01-05  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
+--- PALISADE NORD (muro legno 3m, PF 80/sez) ---
+06     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+--- GATE NORD (🚪 col AB-AF, 7.5m) ---
+07     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🚪🚪🚪🚪🚪⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+--- WATCHTOWER guardie (🔴 O08, AH08) ---
+08     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛🔴⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔴⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+09     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+10     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+11     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+--- WATCHTOWER (🗼 col AB-AD, righe 12-14, 9m) ---
+12     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🗼🗼🗼⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+13     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🗼🗼🗼⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+14     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🗼🗼🗼⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+--- TENDE AREA (25 tende, col N-BA, righe 15-30) ---
+15     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+16     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+17     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+18     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+19     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+20     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+21     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+22     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+23     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+24     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+--- OGRE PEN (🪨 recinto col W-AG; 🟢 2 ogre) ---
+25     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+26     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨⬛⬛⬛⬛⬛⬛🟢🟢⬛🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+27     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨⬛⬛⬛⬛⬛⬛🟢🟢⬛🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+28     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+29     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+30     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+31     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+--- WYRMLORD ⚫ O32 · TESORO 💎 R-T32 · PRIGIONI 💀 AL-AN32 ---
+32     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⚫⬛⬛💎💎💎⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛💀💀💀⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+33     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+34     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+35     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+36     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+37     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+38     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+39     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+40     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+41     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+42     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+43     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+44     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
 --- PALISADE SUD ---
-45  🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
-                          └──────────────────────────────────────────────────────────────────────────────┘ 
-                          PALISADE SUD (simile nord)
-
-48  🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🚪🚪🚪🚪🚪⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
-                                                                      └────────┘ GATE SUD (AB-AF, guarded)
-
+45     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+46     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+47     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+--- GATE SUD (🚪 col AB-AF) ---
+48     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
+49     🌲🌲🌲🌲🟩🟩🟩🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟩🟩🟩🟩🟩🌲🌲
 --- FORESTA SUD ---
-50-53  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲 [continues...]
+50-53  🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲
 
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-SCALA GRID: 1 quadrato = 1.5m × 1.5m | DIMENSIONI TOTALI: 80 colonne × 53 righe = 120m × 80m
+SCALA GRID: 1 quadrato = 1.5m × 1.5m | DIMENSIONI TOTALI: 65 colonne × 53 righe = 98m × 80m
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 ```
 
@@ -267,21 +300,56 @@ SCALA GRID: 1 quadrato = 1.5m × 1.5m | DIMENSIONI TOTALI: 80 colonne × 53 righ
 | Ogre Barbarian | 2 | CR 9 each, muscle |
 | **TOTALE** | **41** | EL 14 full alert |
 
-### Tattiche Sabotaggio
+### 🌍 AMBIENTE (companion T5b, consolidato dal blocco griglia sopra)
 
-**Stealth Infiltration:**
-1. Approach ovest/est (evita watchtower LOS)
-2. Scale palisade (Climb DC 15, 3m = 2 quadrati vertical)
-3. Assassinate guards silenziosi
-4. Free prisoners (morale boost, distraction)
-5. Kill Wyrmlord (leadership decapitation)
-6. Sabotage ogres (poison food, release prigionieri near pen = chaos)
+| Elemento | Dove | Effetto meccanico 3.5 |
+|---|---|---|
+| Palizzata (legno, 3 m alta) | riga 06 e riga 45 (nord/sud), colonne N-BA | CA 15, PF 80/sezione da 3 m; camminamento: difensori +2 CA, +1 attacco da elevazione |
+| Cancelli nord/sud | riga 07 (col AB-AF) e riga 48 (col AB-AF) | larghi 7,5 m, guardati da 4 Guerrieri (CA 20, 58 pf ciascuno) |
+| Torretta di guardia centrale | col AB-AD, righe 12-14, 9 m alta (base 4,5×4,5 m) | 2 arcieri drow in cima: Balestra +10, gittata 36 m; visuale 360°, Osservare +12 |
+| Zona tende (25 tende) | col N-BA, righe 15-30 | bloccano linea di vista; dentro: 28 Guerrieri + 10 Pyromancer fuori servizio/addormentati |
+| Recinto ogre | col W-AG, righe 25-28, recinzione di roccia 1,5 m | terreno difficile (🪨) attorno al recinto |
+| Gabbie prigionieri | col AL-AN, riga 32 | ferro, 50 pf, Rompere CD 28 |
 
-**Consequences Sabotage Success:**
-- -43 combattenti dall'orda (significativo!)
-- Wyrmlord morte = no tactical coordination settore nord
-- Intel: Complete orda plans (maps in Wyrmlord tent)
-- Rescued civili: +reputation Brindol
+### ⚔️ TATTICHE (companion T5b, fonte: "Tattiche Sabotaggio" originale)
+
+- **Disposizione iniziale**: Wyrmlord a O32 (pianifica l'assalto); 2 Ogre
+  al recinto (AE26 mangia, AE27 dorme); guardie ai cancelli nord/sud (4
+  ciascuno); 2 arcieri in cima alla torretta (AB-AD12-14); 28 Guerrieri +
+  10 Pyromancer nelle tende.
+- **Infiltrazione furtiva dei PG** (ordine consigliato dal file):
+  avvicinarsi da ovest/est per evitare la linea di vista della torretta →
+  scalare la palizzata (Scalare CD 15, 3 m = 2 quadrati verticali) →
+  eliminare le guardie in silenzio → liberare i prigionieri (bonus morale
+  + distrazione) → uccidere il Wyrmlord (decapitazione del comando) →
+  sabotare gli ogre (avvelenare il cibo, liberare i prigionieri vicino al
+  recinto = caos).
+- **Se scoperti** `[INFERRED — needs DM confirmation]`: stesso schema del
+  Campo 1 — tutte le forze in allerta entro 2 round, Wyrmlord assume il
+  comando centrale, arcieri della torretta forniscono fuoco di copertura a
+  36 m; **EL 14 pieno** (molto pericoloso, party dovrebbe evitare
+  l'ingaggio totale).
+- **Morale** `[INFERRED — needs DM confirmation]`: Wyrmlord morto → nessuna
+  coordinazione tattica nel settore; superstiti sotto una soglia si
+  ritirano (nessun campo di ripiegamento noto a nord — Campo 2 è il più
+  avanzato dei tre).
+
+**Conseguenze del sabotaggio riuscito** (dal file originale):
+- -43 combattenti dall'orda.
+- Morte del Wyrmlord = nessuna coordinazione tattica nel settore nord.
+- Intel: piani completi dell'orda (mappe nella tenda del Wyrmlord).
+- Prigionieri salvati: +reputazione a Brindol.
+
+### 🔄 EVOLUZIONE (companion T5b) `[INFERRED — needs DM confirmation:
+nessuno stato esplicito nel file originale, modellato sullo schema del
+Campo 1]`
+
+| Stato | Trigger | Cosa cambia sulla griglia | Effetto meccanico |
+|---|---|---|---|
+| A — Notte, routine | — | guardie ai cancelli/torretta, ogre al recinto, grosso delle forze nelle tende | sorpresa possibile con approccio ovest/est |
+| B — Allarme | una guardia/torretta nota i PG (Osservare CD, vedi torretta) | Wyrmlord assume il comando, arcieri torretta aprono il fuoco a distanza | EL 14 pieno, niente sorpresa |
+| C — Prigionieri liberati | i PG raggiungono le gabbie (AL-AN32) e le rompono (CD 28) | i civili liberati creano distrazione/caos nella zona | −2 alla Percezione collettiva dei drow nel round successivo `[INFERRED]` |
+| D — Wyrmlord morto | il Wyrmlord (O32) viene ucciso | i superstiti perdono coordinazione | nessun comando centrale; il campo non può più organizzare una difesa coordinata |
 
 ---
 

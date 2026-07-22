@@ -2,6 +2,12 @@
 ## PARTE 3 - Piano Elementale del Fuoco
 ### Avventura D&D 3.5 - Livello 13 - Forgotten Realms
 
+> **Stato (A6)**: **MASTER** del P3 (Piano del Fuoco), in 2 parti con
+> `-PARTE2.md`. **Ricalibrato da**: `RicalibrazioneScontriPianoDelFuoco.md`
+> (scontri Lv13) e `La_Piramide_Ricalibrata.md` (finale/Piramide). In caso
+> di conflitto meccanico vincono le ricalibrazioni. Vedi
+> `ARC07-MATRICE-VERSIONI.md`.
+
 ---
 
 **Sistema:** Dungeons & Dragons 3.5 Edition  

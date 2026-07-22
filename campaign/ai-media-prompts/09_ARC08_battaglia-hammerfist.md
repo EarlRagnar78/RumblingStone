@@ -195,4 +195,4 @@ framing the glowing heroes.
 
 ---
 
-> **Sorgenti Lore:** `08_La Battaglia Di Hammerfist/00_Final_hammerfist_battle-La_Mano_Rossa_del_Destino-Guida_Completa_del_DM.md`. Unità nemiche: Fauci di Palude (drago nero GS 15), Generale Grimjaw, Gorthak il Trifronte. Alleati: Re Thorek, Madre Superiora Dana, Cantitrici della Pietra, Signore Ventolesto (Gufo Celestiale).
+> **Sorgenti Lore:** `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md`. Unità nemiche: Fauci di Palude (drago nero GS 15), Generale Grimjaw, Gorthak il Trifronte. Alleati: Re Thorek, Madre Superiora Dana, Cantitrici della Pietra, Signore Ventolesto (Gufo Celestiale).

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240" role="img" aria-label="Stemma Contrada del Bruco">
+  <defs><clipPath id="b3"><path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z"/></clipPath></defs>
+  <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="#d8c53a" stroke="#1e5f2e" stroke-width="6"/>
+  <g clip-path="url(#b3)">
+    <path d="M100 20 H180 V150 Q180 210 100 232 Z" fill="#c9b62f"/>
+    <!-- foglia -->
+    <path d="M40 158 q50 -40 118 -30 q-40 30 -118 30z" fill="#1e5f2e" stroke="#123a1c" stroke-width="2"/>
+    <path d="M46 154 q40 -20 96 -22" stroke="#123a1c" stroke-width="1.5" fill="none"/>
+    <!-- bruco araldico: segmenti netti, verde scuro con dorso dorato -->
+    <g stroke="#123a1c" stroke-width="2.5">
+      <circle cx="62" cy="112" r="15" fill="#2a6b34"/>
+      <circle cx="82" cy="106" r="15" fill="#2f7a3a"/>
+      <circle cx="102" cy="104" r="15" fill="#2a6b34"/>
+      <circle cx="122" cy="106" r="14" fill="#2f7a3a"/>
+      <circle cx="140" cy="110" r="13" fill="#2a6b34"/>
+    </g>
+    <g fill="#e9c24a"><circle cx="62" cy="104" r="3"/><circle cx="82" cy="98" r="3"/><circle cx="102" cy="96" r="3"/><circle cx="122" cy="98" r="3"/></g>
+    <circle cx="52" cy="108" r="2.5" fill="#111"/>
+    <path d="M50 100 l-6 -10 M56 100 l-2 -12" stroke="#123a1c" stroke-width="2"/>
+    <!-- corona granducale -->
+    <path d="M52 86 h20 l-3 -9 -5 4 -5 -6 -4 6 -3 -4z" fill="#e9c24a" stroke="#8a6b00" stroke-width="1.2"/>
+  </g>
+  <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="none" stroke="#1e5f2e" stroke-width="6"/>
+  <rect x="30" y="182" width="140" height="26" rx="4" fill="#0d1b2a" opacity="0.85"/>
+  <text x="100" y="200" font-family="Georgia,serif" font-size="12" fill="#e9c24a" text-anchor="middle" font-style="italic">Nell'ombra mi rivolto</text>
+  <text x="100" y="14" font-family="Georgia,serif" font-size="12" fill="#1e5f2e" text-anchor="middle" font-weight="bold">IL BRUCO · Mask</text>
+</svg>

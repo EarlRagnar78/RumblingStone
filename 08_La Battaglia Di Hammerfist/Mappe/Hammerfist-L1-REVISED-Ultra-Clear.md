@@ -115,11 +115,11 @@ SCALATA TORRE (6 Rounds)
 
 +18m ┌────────┐  Round 6: DARA ARRIVA TOP! 🔵
      │  TOP   │  │ Vista: 400m est campo nemico
-     │  3×3m  │  │ Osservare DC 20/25/30
+     │  3×3m  │  │ Osservare CD 20/25/30
      └────────┘  │
                  │
 +12m  ╔══════╗   Round 4: Piano 2 (70% mancante)
-      ║      ║   │ Pericoloso! Balance DC 15
+      ║      ║   │ Pericoloso! Equilibrio CD 15
       ║  50% ║   │
       ╚══════╝   │
                  │
@@ -130,13 +130,13 @@ SCALATA TORRE (6 Rounds)
                  │
 0m    ████████   Round Start: Ground
       ████████   │ Dara inizia scalare
-      ████████   │ Climb CD 12 (scale precarie)
+      ████████   │ Scalare CD 12 (scale precarie)
       BASE 6×6   │
       Col 14-17  ▼
       Row 10-13  
 
 ALTEZZA TOTALE: 18m (12 quadrati verticali)
-TEMPO SCALATA: 6 rounds @ Climb DC 12
+TEMPO SCALATA: 6 rounds @ Scalare CD 12
 ```
 
 ---
@@ -172,7 +172,7 @@ TEMPO SCALATA: 6 rounds @ Climb DC 12
 **Fuoco Centrale 🔥:**
 - Posizione: Colonne 22-24, Riga 25-26 (3m × 3m)
 - Light: Bright 6m radius, Dim 12m radius
-- Effect: -5 Hide checks entro 12m
+- Effect: -5 prove di Nascondersi entro 12m
 
 **4 PG POSIZIONI INIZIALI 🔵:**
 - **Borin:** Colonna 03, Riga 37 (ovest solo, backup difensivo)
@@ -189,28 +189,28 @@ TEMPO SCALATA: 6 rounds @ Climb DC 12
 - Posizione: Colonne 11-12, Righe 05-07
 - Size: 3m × 4.5m (2×3 quadrati)
 - Cover: +4 AC (partial cover)
-- Uso: Nala può nascondersi qui (Hide DC 20)
+- Uso: Nala può nascondersi qui (Nascondersi CD 20)
 
 ---
 
 ### 🎯 SEQUENZA TATTICA SUGGERITA:
 
 **FASE 1 - AVVICINAMENTO (Righe 37 → 30):**
-1. Tutti 4 PG: Hide DC 20 muoversi da Riga 37 a Riga 30 (stealth approach)
+1. Tutti 4 PG: Nascondersi CD 20 muoversi da Riga 37 a Riga 30 (stealth approach)
 2. Borin: Rimane Riga 30, Colonna 10 (guarda pattuglie)
 3. Dara/Thorin/Nala: Continuano Riga 20 (più vicino torre/campo)
 
 **FASE 2 - SCALATA TORRE (Dara):**
 1. Dara: Muove da Col 21 Riga 20 → Col 14 Riga 10 (base torre)
-2. Inizia scalata: Climb DC 12, 6 rounds salita
+2. Inizia scalata: Scalare CD 12, 6 rounds salita
 3. Altri: Nascosti Riga 20, observano hobgoblin (lookout)
 
 **FASE 3 - OSSERVAZIONE (Dara Top +18m):**
 1. Dara TOP torre: Colonna 15, Riga 11 (+18m altezza)
 2. Guarda EST 400m: Campo nemico visibile
-3. Spot DC 20: Conta precisa 900 unità
-4. Spot DC 25: Identifica Grimjaw, Gorthak, Drago
-5. Spot DC 30: Layout tattico completo, punti deboli
+3. Osservare CD 20: Conta precisa 900 unità
+4. Osservare CD 25: Identifica Grimjaw, Gorthak, Drago
+5. Osservare CD 30: Layout tattico completo, punti deboli
 6. Tempo: 10 minuti osservazione
 
 **FASE 4 - SCELTA (Combat o Stealth):**
@@ -221,7 +221,7 @@ TEMPO SCALATA: 6 rounds @ Climb DC 12
 - Result: Intelligence completa, nessun allarme
 
 **OPZIONE B - COMBAT (Eliminate Hobgoblins):**
-- Surprise Round: Se tutti Hide DC 25 successo
+- Surprise Round: Se tutti Nascondersi CD 25 successo
 - Focus: Kill Sergente FIRST (prevents alarm horn)
 - Guardie: Respond Round 2 (7 dormenti wake)
 - Risk: Se horn suonato = 50 orchi reinforcements 10 rounds
@@ -239,7 +239,7 @@ TEMPO SCALATA: 6 rounds @ Climb DC 12
 
 **Torre Top → Campo Nemico (400m EST):**
 - From Torre (Col 15) to Enemy Camp: 400m EST (off-map)
-- Dara must use Spot checks from +18m elevation (advantage!)
+- Dara usa Osservare dai +18m di elevazione (+2 di circostanza per il terreno rialzato)
 
 **Dirupo → Torre:**
 - Cliff Edge (Col 10) → Torre Base (Col 14): 6m (4 quadrati)
@@ -271,6 +271,42 @@ Round 81-100: Col 24, Row 28 (loop restart)
 - Inizia quando ENTRAMBE guardie lato OPPOSTO (Round 21-40 ideal)
 - 6 rounds scalata = finisce Round 27-46
 - Risk basso se timing corretto!
+
+---
+
+### 🌍 AMBIENTE (companion T5b, consolidato da POSIZIONI + DISTANZE + HAZARD)
+
+**SVG**: `rendered/Hammerfist-L1-REVISED-Ultra-Clear_map01_dirupo-mortale-campo-hobgoblin.svg`
+
+| Elemento | Dove | Effetto meccanico 3.5 |
+|---|---|---|
+| Torrione antico 🗼 | col 14-17, righe 10-13; cima +18 m | **Scalare CD 12** (~6 round di salita); dalla cima +18 m → *Osservare* con +2 di circostanza |
+| Dirupo Ovest ⛰️ | col 01-10, tutto il lato | **caduta 40 m = 40d6** (morte quasi certa); qualunque spinta a ovest è letale |
+| Rocce copertura 🟫 | col 11-12, righe 05-07 | **+4 CA** (copertura parziale); Nala vi si nasconde (Nascondersi CD 20) |
+| Fuoco centrale 🔥 | col 22-24, righe 25-26 | luce intensa 6 m / fioca 12 m → **−5 a Nascondersi entro 12 m** |
+| Campo Hobgoblin | col 21-25, righe 20-28 | tende dei dormienti + fuoco (vedi TATTICHE) |
+
+**Distanze chiave**: PG start (riga 37) → base torre = ~36-39 m/24-26 q; base torre → fuoco campo = 22 m/15 q; bordo dirupo (col 10) → base torre (col 14) = solo 6 m/4 q (attenzione alle spinte).
+
+### ⚔️ TATTICHE (companion T5b, consolidato da SEQUENZA TATTICA + PATROL)
+
+- **10 Hobgoblin**: 1 **Sergente** sveglio al comando (col 23, riga 26); **2 Guardie** in pattuglia (loop orario/antiorario, 2 min/giro, pattern round-per-round nel file); **7 dormienti** in 3 tende.
+- **Avvicinamento furtivo**: i PG muovono da riga 37 in Nascondersi CD 20; Dara scala la torre col **timing sulle pattuglie** (iniziare quando entrambe le guardie sono sul lato opposto).
+- **Osservazione dalla cima** (Dara, +18 m): *Osservare* a soglie — CD 20 conta ~900 unità, CD 25 identifica Grimjaw/Gorthak/Drago, CD 30 layout e punti deboli.
+- **Se combattimento (Opzione B)**: sorpresa se tutti Nascondersi CD 25; **uccidere per primo il Sergente** per impedire il corno d'allarme. ⚠ **Corno suonato → 50 orchi di rinforzo in 10 round**: la soglia di fallimento della missione furtiva.
+- **Morale**: gli hobgoblin danno l'allarme e resistono se il Sergente vive; senza comando (Sergente morto) sono disorganizzati `[INFERRED]`.
+
+### 🔄 EVOLUZIONE (companion T5b, consolidato dalle 4 fasi)
+
+| Stato | Trigger | Cosa cambia | Effetto |
+|---|---|---|---|
+| A — Avvicinamento (righe 37→30) | Nascondersi CD 20 | i PG si posizionano, Borin copre le pattuglie | nessun allarme |
+| B — Scalata + osservazione | timing pattuglie | Dara sale (6 round), osserva il campo nemico | intelligence acquisita per soglie |
+| C — Stealth (successo) | esfiltrazione non vista | ritiro a riga 40 | intel completa, **nessun allarme** |
+| C' — Combat | i PG ingaggiano | Sergente vivo = corno → **50 orchi in 10 round** | scontro che scala rapidamente |
+
+> Esiti aperti (D13): stealth o combattimento, e se il corno suona, dipende
+> dai tiri (Nascondersi/Osservare) e dalle scelte dei PG, non da un copione.
 
 ---
 

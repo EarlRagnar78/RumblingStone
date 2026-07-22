@@ -141,7 +141,7 @@ Uso tipico: colpo disperato nella finale contro Rihan o nella Fase 2 contro Xal�
   - Condizione: **exhausted**.  
   - Il giorno successivo il monaco subisce –1 a tutti i tiri d’attacco e TS fisici.
 
-Uso tipico: arco epico post‑Rethman, boss particolarmente duri.
+Uso tipico: arco epico post‑Rethmar, boss particolarmente duri.
 
 ---
 

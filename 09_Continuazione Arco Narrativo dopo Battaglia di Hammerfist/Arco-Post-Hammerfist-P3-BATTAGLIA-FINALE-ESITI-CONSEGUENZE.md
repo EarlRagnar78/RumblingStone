@@ -1,7 +1,7 @@
 Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ESITI-CONSEGUENZE.md
 =============================================================
 
-# Esiti della Battaglia di Rethman  
+# Esiti della Battaglia di Rethmar  
 
 Conseguenze positive e negative
 
@@ -45,15 +45,15 @@ Prima di dichiarare una vittoria/sconfitta, valuta questi fattori:
 - Azarr Kul e l'Avatar di Tiamat sono definitivamente sconfitti:
   - Avatar disperso nei piani (non è morto, ma non tornerà per anni),  
   - Azarr Kul muore gloriosamente/vergognosamente (a scelta del DM).  
-- Il Mythal si stabilizza permanentemente intorno a Rethman, proteggendo la città.  
+- Il Mythal si stabilizza permanentemente intorno a Rethmar, proteggendo la città.  
 - Le Statue‑Golem rimangono svegle come custodi eternali.  
 - Tutte le ondate della Red Hand si disperdono; solo sacche isolate rimangono (possono essere pulite in poche settimane).
 
 **Conseguenze immediate**:
 
-- Rethman diventa **città sancta**, punto di luce magica sulla mappa (–2 CD a incantesimi di protezione/cura lanciati lì).  
+- Rethmar diventa **città sancta**, punto di luce magica sulla mappa (–2 CD a incantesimi di protezione/cura lanciati lì).  
 - Il Circolo degli Otto rimane per consolidare il Mythal, almeno 1 anno.  
-- I PG guadagnano fama epica: **Eroi di Rethman**, titoli locali, eventualmente terre/titoli di nobiltà.
+- I PG guadagnano fama epica: **Eroi di Rethmar**, titoli locali, eventualmente terre/titoli di nobiltà.
 
 **Conseguenze a lungo termine** (campagna continua):
 
@@ -85,7 +85,7 @@ Gancio narrativo:
 
 **Conseguenze immediate**:
 
-- Rethman è salvata ma ferita: quartieri bruciati, popolazione traumatizzata.  
+- Rethmar è salvata ma ferita: quartieri bruciati, popolazione traumatizzata.  
 - Ricostruzione necessaria (6–12 mesi).  
 - I PG sono riconosciuti come eroi, ma con tono più "sopravvissuti" che "conquistatori".
 
@@ -115,7 +115,7 @@ Gancio narrativo:
 
 **Conseguenze immediate**:
 
-- Rethman è salvata per il momento, ma non è festa totale: la gente sa che potrebbe tornare.  
+- Rethmar è salvata per il momento, ma non è festa totale: la gente sa che potrebbe tornare.  
 - Truppe rimangono mobilitate sulle mura per mesi.  
 - I PG sono esausti, molti alleati sono feriti/morti.
 
@@ -125,7 +125,7 @@ Gancio narrativo:
 - Il Mythal necessita di rinnovamento rituale ogni mese (i PG devono offrire risorse o sacrifici ripetutamente).  
 - La campagna può continuare con:
   - **Ricerca e distruzione della Red Hand nei sotterranei/montagne**.  
-  - **Difesa progressiva di Rethman dalle infiltrazioni**.  
+  - **Difesa progressiva di Rethmar dalle infiltrazioni**.  
   - **Gara contro il tempo prima che il Mythal crolli**.
 
 Gancio narrativo:
@@ -148,13 +148,13 @@ Gancio narrativo:
 
 **Conseguenze immediate**:
 
-- **Rethman cade** o diventa città occupata.  
+- **Rethmar cade** o diventa città occupata.  
 - I PG sono costretti a ritirata tattica, perdita della base di operazioni.  
 - Civili sfrattati, alcuni dei PNG importanti (Tordek, chierici, sindaco, ecc.) muoiono o sono catturati.
 
 **Conseguenze a lungo termine**:
 
-- Intera ramificazione narrativa **"Liberazione di Rethman"**:
+- Intera ramificazione narrativa **"Liberazione di Rethmar"**:
   - I PG devono guerreggiare per mesi/anni per riconquistare la città.  
   - Possibile tradimento interno, presenza di spie/corrotti nella resistenza.  
   - Azarr Kul stabilisce un **Fane permanente** dedicato a Tiamat in città, amplificando il suo potere.
@@ -166,7 +166,7 @@ Gancio narrativo:
 
 Gancio narrativo:
 
-- "Avete fallito. Rethman è sotto il talone della Red Hand. Ma… non è finita. Nel sottosuolo, una resistenza si raduna. Vi cercano. Siete ancora gli ultimi eroi rimasti?"
+- "Avete fallito. Rethmar è sotto il talone della Red Hand. Ma… non è finita. Nel sottosuolo, una resistenza si raduna. Vi cercano. Siete ancora gli ultimi eroi rimasti?"
 
 ---
 
@@ -177,7 +177,7 @@ Gancio narrativo:
 **Cosa accade**:
 
 - Avatar trionfa; Azarr Kul diventa essenzialmente un semidio locale.  
-- Rethman è rasa al suolo o completamente corrotta.  
+- Rethmar è rasa al suolo o completamente corrotta.  
 - Il Circolo degli Otto è **annientato** (nessun Mythal).  
 - La Red Hand non si ritira: marcia verso obiettivi maggiori (Dauth, il regno intero).
 
@@ -200,7 +200,7 @@ Alternativa più cruda:
 
 Gancio narrativo:
 
-- "Rethman brucia dietro di voi. Potete sentire il canto di Tiamat che echeggia dalle statue profanate. La Red Hand ha vinto. Ma… nei boschi a est, dicono che c'è una comunità di druidi che non si piega. Forse non è finita. Forse."
+- "Rethmar brucia dietro di voi. Potete sentire il canto di Tiamat che echeggia dalle statue profanate. La Red Hand ha vinto. Ma… nei boschi a est, dicono che c'è una comunità di druidi che non si piega. Forse non è finita. Forse."
 
 ---
 
@@ -210,7 +210,7 @@ Gancio narrativo:
 
 **Cosa accade**:
 
-- Non solo i PG perdono; Rethman viene letteralmente distrutta e consacrata a Tiamat.  
+- Non solo i PG perdono; Rethmar viene letteralmente distrutta e consacrata a Tiamat.  
 - Circolo degli Otto: **tutti morti**.  
 - Alleati principali (Tordek, Artemis, Tiri‑Kitor) decimati o schiavizzati.  
 - L'Avatar rimane sulla piana come **sigillo permanente** di Tiamat sul mondo.
@@ -251,7 +251,7 @@ Gancio narrativo:
   - Guadagna la capacità permanente di trasformarsi in **avatar elementale minore** 1 volta/settimana (costi spirituali).  
   - La Collana non è più solo oggetto: diventa parte del suo corpo magico.  
   - Comunione mensile con gli spiriti della natura.  
-  - Potrebbe diventare **Avatar custode di Rethman**, con doveri rituali annuali.
+  - Potrebbe diventare **Avatar custode di Rethmar**, con doveri rituali annuali.
 
 - Se non ha completato la quest:  
   - Ultima chance durante il Mythal: il Circolo offre accesso alla vera apoteosi se sacrifica altro (vedi sotto).
@@ -278,13 +278,13 @@ Gancio narrativo:
 Possibile nuovo nemico:
 
 - Se Azarr Kul è vivo ma in fuga: ritorno futuro, possibile nemesi personale con i PG.  
-- Se complètamente morto: il ruolo di "paladino di Tiamat" rimane vacante; tiamat potrebbe inviare un **nuovo campione** mesi dopo.
+- Se completamente morto: il ruolo di "paladino di Tiamat" rimane vacante; Tiamat potrebbe inviare un **nuovo campione** mesi dopo.
 
 ### Se Avatar/Azarr Kul vincono o si ritirano (Esiti D, E, F)
 
 - Red Hand rimane formidabile:
   - Stabilisce basi permanenti.  
-  - Inizia a costruire un **Fane di Tiamat**.  
+  - **Rifortifica il Fane di Tiamat nel Shaar** (esiste già dal Day 1, vedi `campaign/state.md` §2.1) e vi erige un avamposto avanzato più vicino a Rethmar.  
   - Inizia reclutamento/preparazione per **seconda invasione** (2–3 anni dopo).  
   - Possibili alleanze con altri nemici (Madre dei Funghi, Githyanki, esterni).
 
@@ -292,7 +292,7 @@ Possibile nuovo nemico:
 
 ## 7. Conseguenze ambientali e sociali
 
-### Su Rethman
+### Su Rethmar
 
 - **Esiti positivi**: La città diventa **centro di luce magica**, attrae avventurieri, commercianti, pellegrini. Economia fiorisce. Popolazione guarda ai PG come eroi locali.
 
@@ -300,16 +300,16 @@ Possibile nuovo nemico:
 
 ### Su alleati principali
 
-- **Tordek** (Tiri‑Kitor):
-  - Se vittoria: diventa ambasciatore ufficiale a Rethman, apre nuove rotte commerciali.  
-  - Se sconfitta: muore gloriosa-mente oppure ritirata disgustata (relazione con PG tesa).
+- **Sellyria Starsinger / Killiar Arrowswift** (Tiri‑Kitor):
+  - Se vittoria: diventa ambasciatore ufficiale a Rethmar, apre nuove rotte commerciali.  
+  - Se sconfitta: muore gloriosamente oppure ritirata disgustata (relazione con PG tesa).
 
-- **Artemis Learmount** (Dauth):
+- **Magister Veylan** `[INFERRED — needs DM confirmation]` (Dauth):
   - Se vittoria: stabilisce grande fortezza di Dauth, riconosce i PG come alleati permanenti.  
-  - Se sconfitta: Dauth cade, Artemis è prigioniera/esiliata (gancio per rescue mission).
+  - Se sconfitta: Dauth cade, il Magister è prigioniero/esiliato (gancio per rescue mission).
 
-- **Tordek Tozzefort** (300 nani):
-  - Se vittoria: Hammerfist invia ambasciatore permanente, nega-zia basi logistiche nei PG.  
+- **Durgan Tozzefort** `[ACCEPTED — DM-canon 2026-07-12]` (300 nani mercenari di Dauth):
+  - Se vittoria: Hammerfist invia ambasciatore permanente, negozia basi logistiche per i PG.  
   - Se sconfitta: Hammerfist si chiude, invia solo un corpo di ricerca per recuperare i caduti.
 
 - **Ghostlord**:
@@ -374,12 +374,12 @@ Possibile nuovo nemico:
 
 ### Vittoria Epica
 
-> "Mentre l'ultimo grido dell'Avatar si disperde nei piani, vedete il cielo rasserenato. Le Statue di Rethman brillano di luce propria, custodi eterni contro il caos. Il Circolo degli Otto si inginocchia dinanzi a voi, non per reverenza, ma per gratitudine. 'Avete salvato non solo una città', dice l'arcidruida anziana, 'ma l'intera regione. Il vostro nome risuonerà nei secoli.'  
+> "Mentre l'ultimo grido dell'Avatar si disperde nei piani, vedete il cielo rasserenato. Le Statue di Rethmar brillano di luce propria, custodi eterni contro il caos. Il Circolo degli Otto si inginocchia dinanzi a voi, non per reverenza, ma per gratitudine. 'Avete salvato non solo una città', dice l'arcidruida anziana, 'ma l'intera regione. Il vostro nome risuonerà nei secoli.'  
 > Ma sentite ancora, nel profondo, un sussurro caldo e antico: la voce di Tiamat che vi maledice e promette ritorno. Non è finita. È soltanto… sospeso."
 
 ### Vittoria Tattica
 
-> "Rethman è salva, ma lo prezzo è alto. Quartieri interi ancora in fiamme, migliaia di morti, il Mythal palpita fragile come un battito di cuore appena ripreso. Il Circolo è esausto. 'Abbiamo vinto', dice Artemis Learmount col volto stravagato, 'ma quanto a lungo potremo tenere? Vi servirà vigilanza… per sempre.'  
+> "Rethmar è salva, ma il prezzo è alto. Quartieri interi ancora in fiamme, migliaia di morti, il Mythal palpita fragile come un battito di cuore appena ripreso. Il Circolo è esausto. 'Abbiamo vinto', dice il Magister Veylan col volto stravolto, 'ma quanto a lungo potremo tenere? Vi servirà vigilanza… per sempre.'  
 > Mentre guardate l'orizzonte, vedete fuochi lontani: il resto della Red Hand che si ritira. Sanno che torneranno. E voi lo sapete."
 
 ### Pareggio Glorioso
@@ -389,12 +389,99 @@ Possibile nuovo nemico:
 
 ### Sconfitta Parziale
 
-> "Rethman brucia. Azarr Kul cammina sulle mura, proclamando la vittoria di Tiamat. L'Avatar attende sopra la piazza, immobile, immortale. Avete fallito.  
+> "Rethmar brucia. Azarr Kul cammina sulle mura, proclamando la vittoria di Tiamat. L'Avatar attende sopra la piazza, immobile, immortale. Avete fallito.  
 > Ma nei sotterranei, nel bosco a est, fra i rifugiati che fuggono, una voce sussurra: 'Non è finita. La resistenza continua. Tornerete?'  
 > Potete scegliere di fuggire, di tornare una notte e sabotare da dentro, di scappare per cercare armi più potenti. La storia non è finita. È solo cambiata di forma."
 
 ### Sconfitta Strategica
 
-> "Il cielo è rosso sangue. Rethman è un cumulo di macerie consacrate. L'Avatar siede come una montagna di pietra nera nel centro della piazza, e il canto di Tiamat echeggia dai crepacci della terra. Avete perso.  
+> "Il cielo è rosso sangue. Rethmar è un cumulo di macerie consacrate. L'Avatar siede come una montagna di pietra nera nel centro della piazza, e il canto di Tiamat echeggia dai crepacci della terra. Avete perso.  
 > Ma ascoltate: lontano, nei boschi, il suono di un corno da guerra. Una comunità di elfi resiste ancora. Druidi sconosciuti raccolgono i sopravvissuti. La resistenza non è morta.  
 > La domanda è: lo siete?"
+
+---
+
+## 11. EPILOGO GIOCATO (C5) — una scena per ogni PG + la scelta sul Fane
+
+> **Lotto C5 (2026-07-02).** Finora l'epilogo era **solo narrato** (monologhi §10).
+> Qui diventa **giocato**: una scena breve per ciascun PG (read-aloud + un beat
+> di scelta reale) da usare **negli Esiti A/B/C** (vittoria), più un'ultima
+> **decisione collettiva** sul destino del Fane nel Shaar come hook per ARC-10.
+
+### 11.1 — Le quattro scene (giocate, non lette)
+
+Ogni scena è ~5-10 minuti al tavolo: un'immagine, una domanda, una **scelta con
+conseguenza** (non decorativa). Ampliano gli abbozzi di §5 e §7.
+
+**Thorik — la Pietra e il Titolo.** *Sulle mura all'alba, i muratori già rialzano
+i conci. Lady Kaal ti porge un rotolo: il Consiglio ti offre un seggio e le terre
+a nord della città.* **Scelta**: accettare (→ C6, Custode di Rethmar) / declinare
+per tornare a Hammerfist da Re Thorek / delegare a Brenna Sorvane (rafforza la
+milizia, hook politico). *Ogni ramo cambia chi comanda Rethmar in ARC-10.*
+
+**Tordek — il Chiostro sul Campo.** *Tra i feriti, alcuni monaci sopravvissuti di
+Ilmater ti guardano come si guarda un maestro. Sorella Maewen: "Il Nord non ha una
+scuola. Tu potresti fondarne una."* **Scelta**: fondare una **scuola monastica**
+(→ C6) / consegnare l'Orbe delle Otto Porte alla Confraternita / tenere l'Orbe e
+proseguire il cammino dei chakra. *Determina se l'Orbe resta col party in ARC-10.*
+
+**Hella — il Seme nella Cenere.** *Dove il soffio dell'Avatar ha bruciato la
+piazza, tu affondi le mani nella cenere e senti qualcosa muoversi. La Collana
+pulsa.* **Scelta**: piantare un **Cerchio Sacro urbano** a Rethmar (→ C6, custode
+druidico) / portare il seme alla Foresta Sacra (rafforza i Tiri-Kitor/druidi) /
+consacrarlo alla memoria dei caduti (bonus morale cittadino permanente). *Definisce
+il legame di Hella con Rethmar.*
+
+**Artemis — la Luce che Litiga.** *Nel silenzio dopo la battaglia, l'Anello è
+tiepido. Due voci — una d'alba, una d'ombra — non litigano più: aspettano.* **Scelta**
+(dipende da MYTHAL-FOCUS §8 PG3 e dalla Torre): scegliere un **patto più leggero**
+/ accettare la profezia di Lathander ("tornerai quando la Luce avrà bisogno") /
+inseguire Zalkatar se fuggito. *Apre o chiude il ramo Mask/Lathander di ARC-10.*
+
+### 11.2 — L'ultima decisione collettiva: il Fane nel Shaar (hook ARC-10)
+
+Il Fane di Tiamat nel Shaar **esiste ancora** (state.md §2.1, Day 1: l'orda ne è
+partita). Con l'Avatar respinto ma non il Fane distrutto, il party affronta una
+**scelta collettiva narrata** (non giocata ora — è il gancio della prossima
+campagna):
+
+- **Lasciarlo** e vegliare (Rethmar come sentinella): ARC-10 = difesa/spionaggio.
+- **Montare una spedizione** al Fane (portare la guerra a casa di Tiamat): ARC-10 =
+  campagna offensiva nel Shaar.
+- **Sigillarlo** cercando un antico rito/arma (ramo "Risveglio di Tiamat" §8):
+  ARC-10 = quest di ricerca.
+
+> **Read-aloud di chiusura (qualunque esito vittorioso)**: *"L'Avatar è disperso,
+> ma nel profondo del Shaar il Fane respira ancora, paziente come la pietra. Avete
+> vinto una battaglia dentro una guerra più antica di voi. Stanotte Rethmar canta.
+> Domani deciderete cosa farne, di quel respiro lontano."*
+
+**Accettazione C5(2)**: la campagna ha una **chiusura giocata** (4 scene con
+scelta reale), non solo letta; il Fane resta come hook esplicito per ARC-10.
+
+---
+
+## 12. RICOMPENSE DI DOMINIO / TITOLO (C6 — benchmark Kingmaker)
+
+> **Lotto C6 (2026-07-02).** §7-8 accennavano a titoli/ambasciate senza meccanica.
+> Qui: per **Esito A/B** (vittoria), cosa ottiene **concretamente** ogni PG, con
+> **1 beneficio meccanico** ciascuno — utile da spendere in ARC-10. Contano
+> **oltre** la ricchezza WBL (`...TESORO-WBL-AUDIT.md`): sono rendite/domini, non
+> loot, e si sommano ai poteri d'artefatto risvegliati di §5.
+
+| PG | Titolo / dominio (Esito A) | Beneficio meccanico | Esito B (ridotto) |
+|---|---|---|---|
+| **Thorik** | **Custode di Rethmar** — seggio nel Consiglio + terre a nord | Ospitalità permanente a Rethmar + **10 PNG di servizio** (guardie/artigiani, GS 1-3) + **1.000 mo/mese di rendita**; 1/mese può convocare **50 miliziani** per una missione | Titolo onorario senza terre: ospitalità + 3 PNG di servizio, niente rendita |
+| **Tordek** | **Fondatore della Scuola Monastica del Nord** (ramo della Confraternita di Ilmater) | Una **scuola** come base: 1/settimana addestramento che dà a un alleato +2 a una prova per 24h; **4 allievi monaci** (Monaco 3) come seguaci; accesso a *raise dead* di Ilmater a costo di favore (C3/DM-QUICKSTART §8.5) | Solo maestro riconosciuto: 2 allievi, nessuna base fissa |
+| **Hella** | **Custode del Cerchio Sacro di Rethmar** (bosco urbano consacrato) | Un **boschetto-santuario** in città: recupero risorse druidiche accelerato lì; **3 druidi minori** (Druido 5) del cerchio; il Morale Cittadino (C2) parte +1 in ogni crisi futura a Rethmar | Legame informale col cerchio: 1 druido, niente santuario stabile |
+| **Artemis** | **Ambasciatore Arcano di Rethmar** (o seggio presso il Circolo degli Otto se resta) | Accesso alla **biblioteca/laboratorio** del Circolo (ricerca incantesimi a costo −25%); **1 contatto arcimago** (Mago 17) consultabile 1/mese; se l'Anello è evoluto, riconoscimento presso i culti di Lathander | Ospite tollerato: consultazione 1/trimestre, niente sconto ricerca |
+
+- **Esito C (Pareggio Glorioso)**: i titoli sono **promessi ma non ancora
+  formalizzati** (la città è troppo fragile) → i benefici meccanici valgono a
+  **metà** e vanno riconfermati in ARC-10 quando Rethmar si stabilizza.
+- **Esiti D/E/F (sconfitta)**: nessun dominio (la città è caduta/occupata); i
+  titoli diventano al più **rivendicazioni** da riconquistare (ramo "Liberazione
+  di Rethmar", §4).
+
+**Accettazione C6**: tabella esito×PG compilata, 1 beneficio meccanico ciascuno,
+spendibile in ARC-10.

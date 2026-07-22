@@ -124,3 +124,36 @@ Posizioni:
 Terreno:
 
 - Pavimento normale; area della vasca considerata terreno difficile/vischioso se l’Oblex si libera.  
+
+---
+
+### 🌍 AMBIENTE (companion T5c, consolidato dalle aree dei Livelli 2-3)
+
+*Mappe in prosa (niente griglia-emoji → nessun SVG). Scala 1,5 m/quadretto.*
+
+| Area | Griglia | Elementi / terreno |
+|---|---|---|
+| **L2.1 Sala Ingresso Libreria** | 24×24 | balconata (anello 3 q) attorno a un vuoto centrale (raggio 6) sul livello inferiore |
+| **L2.2 Navate di Scaffali Mobili** | 30×30 | 5 corridoi N-S; scaffali A-E su binari che **si muovono** (ogni round 1d4 = quale coppia scorre) — schiacciamento/blocco LoS |
+| **L2.3 Pozzo di Gravità Invertita** | 10×20 vert. | 4 piattaforme a quote diverse; **archi runici ruotano la gravità** tra le piattaforme |
+| **L2.4 Alcova del Libro** | 18×18 | libro su piedistallo (9,9); 3 cerchi di rune concentrici (Illusione/Trasmutazione/Invocazione); scaffali = copertura |
+| **L3.5 Sala Anello Elementale** | 20×20 | 4 altarini ai cardinali (Fuoco 4,10 / Acqua 10,4 / Aria 10,16 / Terra 16,10) |
+| **L3.6 Camera del Portale Instabile** | 24×24 | portale ellittico (12,12, raggio 4); **distorsione raggio 6** attorno |
+| **L3.7 Cella dell'Oblex** | 16×16 | vasca 8×8 centrale (l'Oblex); barriere runiche ai 4 angoli; vasca = terreno difficile/vischioso se l'Oblex si libera |
+
+### ⚔️ TATTICHE (companion T5c — enigmi + hazard ambientali)
+
+- **L2**: **Golem Bibliotecario** dormiente dietro il piedistallo dell'Alcova (fila 11, col 9) — si sveglia se il libro è preso male; gli **scaffali mobili** (1d4/round) sono un hazard di posizionamento; il **pozzo di gravità** è un enigma di movimento (non un incontro).
+- **L3**: **2 Grell** sospesi presso il portale instabile (10,10 e 14,14); **Oblex** nella vasca (si libera se provocato → terreno vischioso). La **distorsione** del portale (raggio 6) penalizza chi vi combatte dentro.
+- Enigmi (gravità, anello elementale, cerchi di rune) premiano la soluzione sul brute force.
+
+### 🔄 EVOLUZIONE (companion T5c — salita L2 → L3)
+
+| Stato | Trigger | Cosa cambia | Effetto |
+|---|---|---|---|
+| A — Biblioteca (L2) | ingresso dalla scala | scaffali mobili + gravità + Golem all'Alcova | enigmi e hazard prima del libro |
+| B — Laboratorio (L3) | salita al L3 | Grell al portale, Oblex nella cella | scontri + distorsione planare |
+| C — Uscita | superati gli enigmi/incontri | scala al Livello 4 | prosegue alla Camera dei Cristalli |
+
+> Esiti aperti (D13): quali hazard/incontri il party innesca dipende da come
+> gestisce enigmi e cristalli, non da un copione.

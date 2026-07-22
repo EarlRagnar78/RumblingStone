@@ -32,21 +32,21 @@ The core heroes of the campaign (Detailed in `PG/`):
 
 ### PNG (NPCs & Villains)
 
-Important non-player characters and antagonists (Detailed in `PNG/` and `campaign/npcs/`):
+Important non-player characters and antagonists (Detailed in `Bestiario/villain/`, `Bestiario/png/` and `campaign/npcs/`):
 
 - **Maestro Varis "Seta-Argento"**: Opportunistic planar merchant, urban broker in Rethmar, CR 6.
 - **Conte Valerius**: Nobility entangled in funding the enemy, demanding social/political finesse to defeat.
 - **Il Collezionista (Rakshasa)**: A deadly collector of rare artifacts and secrets, the shadow mastermind, GS 17–19.
-- **Salvatore "Sal" della Luna d'Argento** (`PNG/Salvatore/`): Temporal spy and soul-harvester. Flamboyant desert merchant, secretly "Vatore" who witnessed the PCs at Hammerfist -1000 DR. Bard 8/Sublime Chord 1/Spy 5, GS 14. Supplies living statues to Varis. Introduced Day 28–32, Arc 09 P2C.
-- **Azarr Kul** (`PNG/Azarr_Kul/`): High Wyrmlord of Tiamat. Half-Blue-Dragon Hobgoblin, Cleric 10/Fighter 4, GS 15. Commands the Red Hand horde; rides Tyrgarun (Ancient Blue Dragon CR 20). Boss of Rethmar Phase 3.
-- **Sonjak / Matrona Sajak** (`PNG/Sonjak/`): Drow Cleric Matrona. Cleric 10/Matrona 3, GS 13. Commands underground Drow forces in Cannath Vale; Sal's employer on the surface. Clock 4/8 — triggers Phase 0 Night of the Drow.
-- **Conte Valerius** (`PNG/Conte_Valerius/`): Political villain. Expert 4/Aristocrat 4. Legally finances the Red Hand horde through "patriotic emergency loans." Cannot be defeated in combat — requires political/investigative approach. Clock 2/8.
-- **Maestro Varis "Seta-Argento"** (`PNG/Varis_Seta_Argento/`): Urban broker in Rethmar. Rogue 4/Expert 4, CR 6. Knowingly sells petrified living creatures as artwork. Potential ally for Artemis; key link in the statue supply chain. Distinct from Sal (who is the field agent/supplier).
-- **Ghostlord / Arcano Zeth il Murato** (`PNG/Ghostlord/`): Druidic Lich of the Thornwaste. Druid 13/Lich, GS 13. Ancient master builder of Hammerfist, tricked into lichdom. Ally or enemy depending on party choices; Hella's key NPC. Holds 20 spectral lions as potential reinforcements at Rethmar.
-- **Xal'thor** (`PNG/Xal_thor/`): Illithid Githyanki Commander. Psion 6 (effective GS 14). Targets Tordek's Bracieri as planar keys to the Eternal Forge. Fixed trigger: attacks Dauth Tournament Day 3 regardless of party action. Potential wildcard at Rethmar if not stopped.
-- **Therysol** (`PNG/Therysol/`): Tiefling Half-Dragon, former Underdark merchant, hunting Il Collezionista. Ally NPC, GS 9.
-- **Capitana Lorana** (`PNG/Lorana/`): Secondary NPC, GS 7. Fighter 6/Expert 2. Survivor of the initial Red Hand attack (Arc 00), led ~800 refugees to Rethmar. Non-official Council voice; her field intel is worth -1 CR to Phase 1 if shared with Thorik. Key reconnection NPC for all four PCs.
-- **Consiglio di Rethmar** (`PNG/Consiglio_Rethmar/`): 7-member political body (Lady Kaal, Halveth, Jarmaath, Sorvane, Pyriel, Thornwall, Lorana). Default vote = surrender without party intervention. Three council sessions (Day 30/33/35) with concrete battle impact on all Rethmar phases. Halveth active during Phase 0 → +1 CR (drow know temple layout).
+- **Salvatore "Sal" della Luna d'Argento** (`Bestiario/villain/Salvatore/`): Temporal spy and soul-harvester. Flamboyant desert merchant, secretly "Vatore" who witnessed the PCs at Hammerfist -1000 DR. Bard 8/Sublime Chord 1/Spy 5, GS 14. Supplies living statues to Varis. Introduced Day 28–32, Arc 09 P2C.
+- **Azarr Kul** (`Bestiario/villain/Azarr_Kul/`): High Wyrmlord of Tiamat. Half-Blue-Dragon Hobgoblin, Cleric 10/Fighter 4, GS 15. Commands the Red Hand horde and fights on foot — Tyrgarun (Old Blue Dragon, CR 18) is a separate sky-terror encounter, not his mount. Boss of Rethmar Phase 3.
+- **Sonjak / Matrona Sajak** (`Bestiario/villain/Sonjak/`): Drow Cleric Matrona. Cleric 10/Matrona 3, GS 13. Commands underground Drow forces in Cannath Vale; Sal's employer on the surface. Clock 4/8 — triggers Phase 0 Night of the Drow.
+- **Conte Valerius** (`Bestiario/villain/Conte_Valerius/`): Political villain. Expert 4/Aristocrat 4. Legally finances the Red Hand horde through "patriotic emergency loans." Cannot be defeated in combat — requires political/investigative approach. Clock 2/8.
+- **Maestro Varis "Seta-Argento"** (`Bestiario/png/Varis_Seta_Argento/`): Urban broker in Rethmar. Rogue 4/Expert 4, CR 6. Knowingly sells petrified living creatures as artwork. Potential ally for Artemis; key link in the statue supply chain. Distinct from Sal (who is the field agent/supplier).
+- **Ghostlord / Arcano Zeth il Murato** (`Bestiario/villain/Ghostlord/`): Druidic Lich of the Thornwaste. Druid 13/Lich, GS 13. Ancient master builder of Hammerfist, tricked into lichdom. Ally or enemy depending on party choices; Hella's key NPC. Holds 20 spectral lions as potential reinforcements at Rethmar.
+- **Xal'thor** (`Bestiario/villain/Xal_thor/`): Illithid Githyanki Commander. Psion 6 (effective GS 14). Targets Tordek's Bracieri as planar keys to the Eternal Forge. Fixed trigger: attacks Dauth Tournament Day 3 regardless of party action. Potential wildcard at Rethmar if not stopped.
+- **Therysol** (`Bestiario/png/Therysol/`): Tiefling Half-Dragon, former Underdark merchant, hunting Il Collezionista. Ally NPC, GS 9.
+- **Capitana Lorana** (`Bestiario/png/Lorana/`): Secondary NPC, GS 7. Fighter 6/Expert 2. Survivor of the initial Red Hand attack (Arc 00), led ~800 refugees to Rethmar. Non-official Council voice; her field intel is worth -1 CR to Phase 1 if shared with Thorik. Key reconnection NPC for all four PCs.
+- **Consiglio di Rethmar** (`Bestiario/png/Consiglio_Rethmar/`): 7-member political body (Lady Kaal, Halveth, Jarmaath, Sorvane, Pyriel, Thornwall, Lorana). Default vote = surrender without party intervention. Three council sessions (Day 30/33/35) with concrete battle impact on all Rethmar phases. Halveth active during Phase 0 → +1 CR (drow know temple layout).
 
 ## Repository Layout & Agent Support
 
@@ -55,7 +55,18 @@ Important non-player characters and antagonists (Detailed in `PNG/` and `campaig
   - `npcs/` & `locations/`: Key figures and environment descriptions.
   - `encounters/`: Custom encounter design and tactics.
   - `lore/`: House rules, setting details, and DM strategy (e.g., `csmpaign players.md`).
-- **`skills/dnd-35-rules/`**: This repo ships a full D&D 3.5 rules skill for AI agents. It ensures rules are sourced from the d20 SRD and accurately adjudicates D&D 3.5 mechanics.
+- **`skills/`**: Nine focused AI-agent skills + a legacy router. Rules are sourced from the d20 SRD (D&D 3.5) and the Pathfinder 1e SRD:
+  - `dnd-35-srd/` — pure 3.5 mechanics (d20srd.org)
+  - `forgotten-realms-lore/` — Faerûn 1372 DR canon
+  - `rumblingstone-campaign/` — this campaign (PCs, artifacts, arcs, coherence)
+  - `rumblingstone-narrative-style/` — eight-pillar style engine, mandatory for all content generation
+  - `rumblingstone-mapmaking/` — battle-map pipeline (3 modes, JSON contract, UVTT export)
+  - `rumblingstone-automation/` — `dm.py` CLI + session-state pipeline on group branches (ADR-0007)
+  - `rumblingstone-plans/` — work-plan archive discipline (INDEX, CHANGELOG, ADRs)
+  - `pathfinder-1e-srd/` — PF1e rules, simple templates, CR benchmarks, 3.5↔PF conversion
+  - `npc-villain-boosting/` — when/whether/how to boost PNGs, villains, and monsters
+  - `dnd-35-rules/` — legacy meta-router pointing at the nine above
+- **`.github/workflows/ci.yml`**: CI validates skill frontmatter/links/data YAML and builds all per-agent skill packages on every PR.
 
 ## Design Philosophy (Mastering for Adults)
 
@@ -78,6 +89,18 @@ It covers:
 
 Blank templates for a fresh group live in `campaign/templates/`.
 
+## Sviluppo & automazione — dove trovare le cose
+
+Indice unico dei documenti "di sviluppo" del repo (roadmap, script, container):
+
+| Vuoi… | Documento |
+|---|---|
+| **Roadmap / cosa manca / cosa migliorare** (stato piani, %, gate, prossimi passaggi) | [`plans/INDEX.md`](plans/INDEX.md) — con [`plans/CHANGELOG.md`](plans/CHANGELOG.md) per la storia lotto-per-lotto |
+| **Script DM: cosa fanno, quali parametri, cosa producono** (tool map completa + `dm.py`) | [`scripts/README-automation.md`](scripts/README-automation.md) |
+| **Container in locale** (Homebrewery self-hosted, nativo o Docker chiavi-in-mano) | [`scripts/homebrew-local/README.md`](scripts/homebrew-local/README.md) |
+| **Perché delle scelte strutturali** (decisioni architetturali) | [`plans/adr/`](plans/adr/) — incl. ADR-0004 (container) e ADR-0005 (confini IP) |
+| **Disciplina di tracciatura** (regola d'oro: chiudo un lotto → aggiorno checklist + INDEX + CHANGELOG) | skill [`skills/rumblingstone-plans/`](skills/rumblingstone-plans/SKILL.md) |
+
 ## Setup Instructions
 
 1. Clone the repository to your local machine.
@@ -87,3 +110,5 @@ Blank templates for a fresh group live in `campaign/templates/`.
 ## Licensing Information
 
 This project contains private lore adaptations based on *Red Hand of Doom*. Mechanical content belongs to the respective owners of the D&D 3.5 OGL/SRD.
+
+Il repo è a **uso privato / non commerciale**: contiene IP di terzi (Wizards of the Coast / Forgotten Realms non-SRD) che nessuna licenza dell'autore può sanare, e l'arco "Palio di Channathgate" evoca segni tutelati del Palio di Siena. La posture per scenario d'uso (privato OK · pubblicazione gratuita a rischio basso · commerciale non conforme senza bonifiche) e la relativa checklist sono in [`plans/adr/ADR-0005`](plans/adr/ADR-0005-confini-ip-uso-non-commerciale.md) e nel rapporto `09_.../Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md`.

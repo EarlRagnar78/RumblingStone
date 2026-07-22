@@ -1,14 +1,29 @@
-OnlineMarkdown.com
+# Corona di Adamantio (Crown of Eternal Stone) - Guida Onnicomprensiva per il Dungeon Master
 
-https://onlinemarkdown.com/
+> **Stato**: fonte canonica dell'artefatto (D9, piano ARC-07 §1 A10) —
+> `PG/Artefatti/` prevale sulle copie storiche altrove (es. cartella
+> Corona in ARC-06).
+>
+> **Navigazione (T4, 2026-07-03)**: scheda da dare al giocatore =
+> `Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/00_SCHEDA-GIOCATORE-STATO-ATTUALE.md`
+> (solo poteri sbloccati, 2 snapshot etichettati). Ruolo di ogni altro file
+> della cartella Corona: `PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md` §1.
+> Sinergie: `PG/Artefatti/SINERGIE-ARTEFATTI-MASTER.md`.
+>
+> **Riconciliazione HTML↔master (T6b, 2026-07-04)**: confrontate le schede
+> HTML della Forgia (`01_/02_/03_ Corona_*_Gemme.html`) con questo master e
+> con la scheda giocatore. Allineamenti fatti: la scheda giocatore ora include
+> il **+2 intuizione alla CA** di *Stone's Awareness* (era omesso; presente
+> qui e nell'HTML). **Due dubbi RISOLTI dal DM (2026-07-04)**:
+> (1) *Stone's Awareness* — valgono **entrambe** le versioni: la Corona
+> concede «Individuare Porte Segrete, **Scoprire Trappole** e **Comprendere
+> Linguaggi**» a volontà (le HTML omettevano Linguaggi, il master ometteva
+> Trappole). (2) *Gem of Immutable Time (Topazio)* — tempo di attivazione
+> **1 ora** (versione HTML `02`; il precedente «10 minuti» di questo master
+> è superato). Il resto (deviazione +2→+3, Moradin's Insight, Adamantine
+> Will, gemme) è coerente tra master e HTML.
 
-Corona di Adamantio (Crown of Eternal
-
-Stone) - Guida Onnicomprensiva per il
-
-Dungeon Master
-
-Capitolo 1: L'Anima dell'Artefatto
+## Capitolo 1: L'Anima dell'Artefatto
 
 Lore per il Giocatore (Da Rivelare tramite Leggende o Scritte Antiche)
 
@@ -55,14 +70,6 @@ il martello che ricostruisce.
 Dalla luce di Moradin io difendo,
 
 e dalla sua incudine io sono riforgiato.”
-
-1 di 18
-
-22/10/25, 03:10
-
-OnlineMarkdown.com
-
-https://onlinemarkdown.com/
 
 Scheda Completa dell'Artefatto (Informazioni per il DM)
 
@@ -164,14 +171,6 @@ e Spirito) (Sopran.)
 
 permette di usare Comunione con Moradin (Mag)
 
-2 di 18
-
-22/10/25, 03:10
-
-OnlineMarkdown.com
-
-https://onlinemarkdown.com/
-
 Livello
 
 Portatore
@@ -239,14 +238,6 @@ conferendo Giusto Potere e Pelle di Pietra al portatore, Potere divino e Ispirar
 
 alleati.
 
-3 di 18
-
-22/10/25, 03:10
-
-OnlineMarkdown.com
-
-https://onlinemarkdown.com/
-
 • Costo: Il portatore subisce -2 alla Forza per 24 ore.
 
  Power: Aura of the Eternal Forge (Aura della Forgia
@@ -310,14 +301,6 @@ Durante il riposo, Aegis
 Sacriﬁcio: Oﬀerta di
 
 Potere della Corona:
-
-4 di 18
-
-22/10/25, 03:10
-
-OnlineMarkdown.com
-
-https://onlinemarkdown.com/
 
 Nome del
 
@@ -505,14 +488,6 @@ Capitolo 2: Il Sentiero del Forgiamente - I Rituali Leggendari
 
 Rituale 1: Forge’s Defense (Difesa della Forgia)
 
-5 di 18
-
-22/10/25, 03:10
-
-OnlineMarkdown.com
-
-https://onlinemarkdown.com/
-
 Innesco: Il rituale si attiva nell'istante in cui il Portatore indossa la corona per la prima volta.
 
 Evento: La Stasi Temporale e l'Intervento di Moradin
@@ -581,14 +556,6 @@ Dettagli Tecnici:
 
 • Costo: 2.500 mo in armi o argento.
 
-6 di 18
-
-22/10/25, 03:10
-
-OnlineMarkdown.com
-
-https://onlinemarkdown.com/
-
 • Rituale: Rituale della Donazione (vedi Capitolo 4).
 • Ricompensa: Sblocco dei poteri Stone’s Awareness e Crown of Protection +2. L'aﬀresco
 
@@ -653,14 +620,6 @@ con un pezzo di te stesso – la tua vitalità, un legame con il tuo passato. La
 
 qualcosa di eterno."
 
-7 di 18
-
-22/10/25, 03:10
-
-OnlineMarkdown.com
-
-https://onlinemarkdown.com/
-
 • Dettagli Tecnici:
 
 ◦ Costo: 40.500 mo in oggetti di artigianato + 1 Sacriﬁcio Personale (1 punto
@@ -716,15 +675,7 @@ Poteri della Corona
 ◦ Sblocco: Rituale 1. Attivazione: Continuo. LI: 20°.
 ◦ Eﬀetto: +1 morale attacco/danni e +2 intuizione CA toccando pietra/terra. Individuare
 
-Porte Segrete e Comprendere Linguaggi a volontà.
-
-8 di 18
-
-22/10/25, 03:10
-
-OnlineMarkdown.com
-
-https://onlinemarkdown.com/
+Porte Segrete, Scoprire Trappole e Comprendere Linguaggi a volontà *(decisione DM 2026-07-04: valgono entrambe le liste master/HTML)*.
 
 • Power: Crown of Protection +2 (Corona della Protezione +2) (Str)
 
@@ -760,7 +711,7 @@ Le Gemme Divine
 
 • Gem: Gem of Immutable Time (Gemma del Tempo Immutabile)
 
-◦ Sblocco: Rituale 2. Attivazione: 10 minuti di concentrazione in un Nodo Terrestre.
+◦ Sblocco: Rituale 2. Attivazione: 1 ora di concentrazione in un Nodo Terrestre *(decisione DM 2026-07-04: vale la versione HTML `02`; «10 minuti» superato)*.
 
 Frequenza: 1/mese. LI: 20°. TS: Tempra CD 25 (per alleati non protetti).
 
@@ -793,14 +744,6 @@ Power: Aura of the Eternal Forge (Aura della Forgia Eterna)
 Durata: Fino all'alba. LI: 20°. TS: Volontà CD 20 (per eﬀetto Scosso sui nemici).
 
 • Eﬀetto: Cura completa e potenziamenti divini per i viaggiatori del tempo. Potenziamenti per
-
-9 di 18
-
-22/10/25, 03:10
-
-OnlineMarkdown.com
-
-https://onlinemarkdown.com/
 
 tutti i nani entro 30 metri. Aura di morale e paura.
 
@@ -865,14 +808,6 @@ che ha la forma perfetta di un'incudine. Sopra di essa, ﬂuttua la sagoma spiri
 
 Moradin, con un martello in mano, in attesa."
 
-10 di 18
-
-22/10/25, 03:10
-
-OnlineMarkdown.com
-
-https://onlinemarkdown.com/
-
 • Dopo  Anvil of the World : L'ultimo pannello si svela.
 
 ◦ Descrizione dell'Aﬀresco (da leggere al giocatore): "L'intero ciclo è ora completo.
@@ -932,14 +867,6 @@ round.
 
 Scena B: GENERALE GRIMJAW
 
-11 di 18
-
-22/10/25, 03:10
-
-OnlineMarkdown.com
-
-https://onlinemarkdown.com/
-
 • Obiettivo: Inﬂiggere > 60 danni a Grimjaw in 10 round.
 • Statistiche dei Nemici:
 
@@ -998,14 +925,6 @@ dei nani.
 Parte 1: Il Momento del Risveglio e la Prova
 
 L'Innesco del Rituale: Indossare la Corona
-
-12 di 18
-
-22/10/25, 03:10
-
-OnlineMarkdown.com
-
-https://onlinemarkdown.com/
 
 Quando il personaggio nano (che chiameremo "il Portatore") indossa la Corona di Adamantio per
 
@@ -1072,14 +991,6 @@ espulso, indipendentemente da cosa stia facendo.
 • Natura Spirituale: Il Portatore è una proiezione. Agisce con tutte le sue normali statistiche e
 
 abilità. I suoi danni appaiono come colpi di energia divina color argento fuso.
-
-13 di 18
-
-22/10/25, 03:10
-
-OnlineMarkdown.com
-
-https://onlinemarkdown.com/
 
 • Invulnerabilità e Contraccolpo: I nemici non possono bersagliare o danneggiare
 
@@ -1151,14 +1062,6 @@ Obiettivo: Inﬂiggere più di 95 danni a Gorthak entro 10 round per ferirlo gra
 
 danneggiare una delle sue teste.
 
-14 di 18
-
-22/10/25, 03:10
-
-OnlineMarkdown.com
-
-https://onlinemarkdown.com/
-
 Statistiche Chiave (Gorthak il Trifronte, GS 12):
 
 • PF: 195; CA: 22
@@ -1226,14 +1129,6 @@ H = Hobgoblin Guerrieri (unità nemica)
 
 | . . . . . . . O . O . . . . . . . . . . . . . . . . . . |
 
-15 di 18
-
-22/10/25, 03:10
-
-OnlineMarkdown.com
-
-https://onlinemarkdown.com/
-
 | . . . . . . . . . . . . . . . . . . . . . . . . . . . . |
 
 (Distanza iniziale da P a GR: circa 18 metri, con dislivello)
@@ -1292,14 +1187,6 @@ Mappa Tattica C:
 Legenda:
 
 P = Portatore (posizione iniziale)
-
-16 di 18
-
-22/10/25, 03:10
-
-OnlineMarkdown.com
-
-https://onlinemarkdown.com/
 
 C = Cantitrici della Pietra (alleate vulnerabili)
 
@@ -1369,14 +1256,6 @@ un'azione in più per essere attivata.
 
 Documento 2 di 2: Scheda per il Giocatore (Aggiornata post-Rituale)
 
-17 di 18
-
-22/10/25, 03:10
-
-OnlineMarkdown.com
-
-https://onlinemarkdown.com/
-
  Corona di Adamantio (Crown of Eternal
 
 Stone)
@@ -1402,8 +1281,4 @@ Allineamento: Legale Buono
 Prerequisiti per il Portatore: Nano o Mezzonano, Bonus Attacco Base +5, capacità di lanciare
 
 almeno un incantesimo divino, Fede Vera (Moradin)
-
-18 di 18
-
-22/10/25, 03:10
 

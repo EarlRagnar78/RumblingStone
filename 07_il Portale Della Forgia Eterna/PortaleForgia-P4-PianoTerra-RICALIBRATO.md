@@ -4,6 +4,17 @@
 
 ### Avventura D&D 3.5 - Livello 14 - "Hard Mode"
 
+> **Stato (A6, confermato DM 2026-07-03)**: **MASTER di COMBATTIMENTO** del P4
+> (statblock potenziati "Hard"); la cornice narrativa è
+> `PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md`. Il **power-up è
+> VOLUTO** (D8: artefatti unici) — tieni gli scontri **duri**. ⚠️ Correggi solo
+> **livello 13°** (non 14) e **composizione D15** (3 PG, niente Therysol):
+> cambiano l'APL, non l'intento di sfida. Vedi `ARC07-MATRICE-VERSIONI.md`.
+>
+> **Ordine di gioco (D2)**: si gioca PRIMA della resurrezione di Hella
+> (P3B) e del viaggio temporale (P5) — è la parte IN CORSO al tavolo. Vedi
+> `PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md` §0 D2.
+
 ---
 
 **Sistema:** Dungeons & Dragons 3.5 Edition  

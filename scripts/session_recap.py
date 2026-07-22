@@ -37,6 +37,9 @@ import random
 from pathlib import Path
 from datetime import date
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from dmcore import visibility  # noqa: E402  (policy per-PG, Lotto D)
+
 ROOT = Path(__file__).resolve().parent.parent
 SESSIONS_DIR = ROOT / "campaign" / "sessions"
 STATE_FILE = ROOT / "campaign" / "state.md"
@@ -57,7 +60,7 @@ PRIVATE_CUT_MARKER = re.compile(r'^##\s+DM notes', re.MULTILINE | re.IGNORECASE)
 
 # ------------------------------------------------------------------ curated prose
 OPENINGS = [
-    "Il vento di Mirtul porta ancora il sapore della cenere e del ferro. "
+    "Il vento d'estate della Valle porta ancora il sapore della cenere e del ferro. "
     "Ciò che è stato, resta inciso nella pietra — e nelle memorie di chi "
     "ha camminato fin qui.",
     "La notte cala sul Faerûn come un mantello vecchio, e le stelle, "
@@ -115,6 +118,93 @@ CLOSINGS = [
     "sentieri. La storia che state scrivendo non è ancora finita.",
 ]
 
+# ------------------------------------------------- player-safe world view
+# Feedback DM 2026-07-12: i FATTI avvenuti si descrivono; i movimenti di
+# clock/villain diventano al massimo VOCI vaghe (i PG devono poter anche
+# NON seguirle); mai numeri di clock o deadline in chiaro.
+HIDDEN_RUMOR_LINES = [
+    "Qualcosa si muove dove i vostri occhi non giungono: un mercante ha "
+    "visto luci nelle paludi, un pastore giura che i corvi volano strani.",
+    "Le locande sono piene di mezze frasi: carovane che cambiano strada, "
+    "porte sprangate un'ora prima del solito, nomi pronunciati sottovoce.",
+    "C'è un odore nell'aria che i vecchi conoscono — quello dei giorni "
+    "in cui il mondo prende una decisione senza chiedere permesso.",
+]
+RUMOR_FOOTER = (
+    "*(Sono solo voci: nessuno vi obbliga a seguirle. Chi vuole saperne "
+    "di più interroghi tavernieri e viandanti — al tavolo, una prova di "
+    "Conoscenze locali.)*"
+)
+
+# --- Calendario di Harptos (Faerûn) --------------------------------------
+# La campagna conta i "Giorni di Marcia". Ancora CONFERMATA dal DM
+# (2026-07-12): Giorno 1 = inizio campagna RHoD, in PIENA ESTATE nella
+# Valle di Channath → **1 Flamerule 1372** (coerente con house-rules.md
+# "Flamerule — Campaign Start"; il vecchio "Mirtul" di state.md era il
+# dato errato, corretto con changelog §8). Day 42 (Rethmar) = 11 Eleasis.
+MARCH_DAY1_HARPTOS: "tuple[str, int] | None" = ("Flamerule", 1)
+HARPTOS_MONTHS = ["Hammer", "Alturiak", "Ches", "Tarsakh", "Mirtul",
+                  "Kythorn", "Flamerule", "Eleasis", "Eleint",
+                  "Marpenoth", "Uktar", "Nightal"]
+HARPTOS_FESTIVALS = {"Hammer": "Midwinter", "Tarsakh": "Greengrass",
+                     "Flamerule": "Midsummer", "Eleint": "Highharvestide",
+                     "Uktar": "Feast of the Moon"}
+
+
+def harptos_label(march_day: "int | None") -> "str | None":
+    """Etichetta in-mondo del giorno: Harptos pieno se l'ancora è fissata."""
+    if march_day is None:
+        return None
+    if MARCH_DAY1_HARPTOS is None:
+        return f"Giorno {march_day} della Marcia"
+    # calendario lineare dell'anno: 12 mesi x 30 giorni + feste intercalari
+    days: list[str] = []
+    for month in HARPTOS_MONTHS:
+        days += [f"{d} {month}" for d in range(1, 31)]
+        if month in HARPTOS_FESTIVALS:
+            days.append(HARPTOS_FESTIVALS[month])
+    m0, d0 = MARCH_DAY1_HARPTOS
+    try:
+        start = days.index(f"{d0} {m0}")
+    except ValueError:
+        return f"Giorno {march_day} della Marcia"
+    label = days[(start + march_day - 1) % len(days)]
+    return f"{label} (Giorno {march_day} della Marcia)"
+
+
+def latest_march_day(sessions_data: list[dict]) -> "int | None":
+    for sd in reversed(sessions_data):
+        found = re.findall(r'Day\s+(\d+)', sd["meta"].get("in_world") or "")
+        if found:
+            return int(found[-1])
+    return None
+
+
+def world_events_public(raw: str) -> "tuple[list[str], bool]":
+    """Fatti → prosa; clock/villain → spariscono (tornano come voce vaga)."""
+    facts: list[str] = []
+    hidden = False
+    for line in raw.splitlines():
+        s = line.strip().lstrip("-*").strip()
+        if not s:
+            continue
+        low = s.lower()
+        if "march clock" in low:
+            m = re.search(r'Day\s+\d+\s*(?:→|->)\s*Day\s+(\d+)', s)
+            if m:
+                facts.append("- Il tempo scorre: la Marcia segna ora il "
+                             f"**{harptos_label(int(m.group(1)))}**.")
+            continue
+        if "clock" in low or "villain" in low:
+            hidden = True  # movimenti nascosti: MAI in chiaro ai giocatori
+            continue
+        if re.match(r'\**png status\**\s*:?', low):
+            s = re.sub(r'^\**PNG status\**\s*:?\s*', '', s, flags=re.I)
+            facts.append(f"- {s}")
+            continue
+        facts.append(f"- {s}")
+    return facts, hidden
+
 
 # ------------------------------------------------------------------ parsing
 SESSION_HEADER_RE = re.compile(
@@ -126,7 +216,7 @@ SESSION_HEADER_RE = re.compile(
 def find_session_files(last_n: int) -> list[Path]:
     if not SESSIONS_DIR.is_dir():
         return []
-    files = sorted(SESSIONS_DIR.glob("*.md"))
+    files = sorted(SESSIONS_DIR.glob("????-??-??_session-*.md"))  # solo veri log di sessione (convenzione AGENTS.md)
     # Sort by filename (should start with YYYY-MM-DD) descending, then take N.
     files = sorted(files, key=lambda p: p.name, reverse=True)[:last_n]
     return list(reversed(files))  # chronological order in output
@@ -267,10 +357,13 @@ def build_recap(sessions_data: list[dict], state: dict, seed: int | None) -> str
     lines.append("")
     lines.append(f"*Generato {today} · solo per i giocatori · spoiler-safe*")
     lines.append("")
-    if state.get("in_world_date") or state.get("apl"):
+    march_day = latest_march_day(sessions_data)
+    if state.get("in_world_date") or state.get("apl") or march_day:
         meta_bits = []
         if state.get("in_world_date"):
             meta_bits.append(f"**Data in-mondo**: {state['in_world_date']}")
+        if march_day is not None:
+            meta_bits.append(f"**{harptos_label(march_day)}**")
         if state.get("apl"):
             meta_bits.append(f"**APL**: {state['apl']}")
         lines.append(" · ".join(meta_bits))
@@ -338,10 +431,16 @@ def build_recap(sessions_data: list[dict], state: dict, seed: int | None) -> str
                 lines.append(sec["Loot distributed"])
                 lines.append("")
             if sec.get("World events triggered"):
-                lines.append("**Il mondo ha risposto così:**")
-                lines.append("")
-                lines.append(sec["World events triggered"])
-                lines.append("")
+                facts, hidden = world_events_public(sec["World events triggered"])
+                if facts or hidden:
+                    lines.append("**Voci e sentori:**")
+                    lines.append("")
+                    lines.extend(facts)
+                    if hidden:
+                        lines.append(f"- {random.choice(HIDDEN_RUMOR_LINES)}")
+                        lines.append("")
+                        lines.append(RUMOR_FOOTER)
+                    lines.append("")
 
     # Atmospheric middle
     lines.append("## IV. Il mondo attorno a voi")
@@ -349,35 +448,55 @@ def build_recap(sessions_data: list[dict], state: dict, seed: int | None) -> str
     lines.append(random.choice(WORLD_REFLECTIONS))
     lines.append("")
 
-    # Dashboard arc progress (public)
+    # Dashboard arc progress (public — solo il cammino GIÀ percorso o in corso;
+    # le righe future diventano sussurri vaghi in §V, senza deadline né codici)
+    state_whispers: list[str] = []
     if state.get("dashboard_rows"):
-        lines.append("### Lo stato delle cose (in breve)")
-        lines.append("")
-        lines.append("| Arco | Fase | Stato | Note |")
-        lines.append("|---|---|---|---|")
-        # Show only completed + current — skip rows marked ⬜ for spoiler safety
-        # (those are future arcs the DM hasn't revealed yet).
+        kept_rows: list[str] = []
         for row in state["dashboard_rows"]:
             # Dashboard cols: [Arc, Fase-icon, Stato-text, March, PG Lv, Note]
             icon = row[1] if len(row) > 1 else ""
             status = row[2] if len(row) > 2 else ""
+            low = status.lower()
             # Skip future/unstarted arcs for spoiler safety
             if ("⬜" in icon or "⬜" in status
-                    or "non iniziato" in status.lower()
-                    or "target" in status.lower()):
+                    or "non iniziato" in low or "target" in low):
                 continue
             arc = row[0] if len(row) > 0 else ""
+            if any(k in low for k in ("in arrivo", "pianificat", "preparat")):
+                # futuro annunciato → voce vaga, senza codici arco/fase
+                name = re.sub(r'^\s*\d+\s*(P\d+[A-Z]?\s*)?', '', arc).strip()
+                if name:
+                    state_whispers.append(name)
+                continue
             note = row[5] if len(row) > 5 else (row[-1] if row else "")
-            lines.append(f"| {arc} | {icon} | {status} | {note} |")
-        lines.append("")
-
-    # Preview hooks from LAST session only
-    if sessions_data:
-        last_hooks = sessions_data[-1]["sections"].get("Next session hooks", "")
-        if last_hooks.strip():
-            lines.append("## V. Sussurri nel vento — ciò che si profila")
+            # mai numeri di giorno/deadline sotto gli occhi dei giocatori
+            if re.search(r'(?i)deadline|day\s*\d+|giorno\s*\d+|/\d+', note):
+                note = "—"
+            kept_rows.append(f"| {arc} | {icon} | {status} | {note} |")
+        if kept_rows:
+            lines.append("### Il cammino percorso (in breve)")
             lines.append("")
+            lines.append("| Arco | Fase | Stato | Note |")
+            lines.append("|---|---|---|---|")
+            lines.extend(kept_rows)
+            lines.append("")
+
+    # Preview hooks from LAST session only (+ sussurri dagli archi annunciati)
+    last_hooks = (sessions_data[-1]["sections"].get("Next session hooks", "")
+                  if sessions_data else "")
+    if last_hooks.strip() or state_whispers:
+        lines.append("## V. Sussurri nel vento — ciò che si profila")
+        lines.append("")
+        if last_hooks.strip():
             lines.append(format_hooks(last_hooks))
+            lines.append("")
+        if state_whispers:
+            for w in state_whispers:
+                lines.append(f"- Nelle locande qualcuno mormora di *{w}* — "
+                             "nulla di certo, per ora.")
+            lines.append("")
+            lines.append(RUMOR_FOOTER)
             lines.append("")
 
     # Closing
@@ -422,7 +541,7 @@ def maybe_pdf(md_path: Path) -> Path | None:
 
 
 # ------------------------------------------------------------------ main
-def main():
+def main(argv=None):
     ap = argparse.ArgumentParser(
         description="Genera un recap/preludio spoiler-safe per i player (tono R.A. Salvatore).")
     ap.add_argument("--last-n", type=int, default=1,
@@ -433,7 +552,11 @@ def main():
                     help="Genera anche PDF A4 via pandoc (se installato).")
     ap.add_argument("--seed", type=int, default=None,
                     help="Seed RNG per output riproducibile (default: random).")
-    args = ap.parse_args()
+    ap.add_argument("--pg", default=None,
+                    help="Recap personale per questo PG: sezioni pubbliche + i SOLI "
+                         "blocchi '## Split — …' visibili a lui (Lotto D). "
+                         "Output in campaign/recaps/pg/.")
+    args = ap.parse_args(argv)
 
     RECAPS_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -454,7 +577,27 @@ def main():
     state = extract_state_public()
     md = build_recap(sessions_data, state, args.seed)
 
-    out = args.out or (RECAPS_DIR / f"recap-{date.today().isoformat()}.md")
+    if args.pg:
+        # sezione personale: SOLO i blocchi Split visibili a questo PG
+        personal: list[str] = []
+        for sf in session_files:
+            raw = sf.read_text(encoding="utf-8", errors="ignore")
+            for blk in visibility.for_pg(raw, args.pg):
+                personal.append(f"### {blk.place}\n\n{blk.body}")
+        if personal:
+            md += (f"\n## VII. Il tuo cammino — {args.pg.title()}\n\n"
+                   "*Queste pagine sono solo per i tuoi occhi: ciò che gli "
+                   "altri non hanno visto.*\n\n" + "\n\n".join(personal) + "\n")
+        else:
+            print(f"[recap] (nessun blocco Split per {args.pg} nelle sessioni "
+                  "scandite — recap identico a quello di gruppo)", file=sys.stderr)
+
+    if args.pg:
+        default_out = (RECAPS_DIR / "pg"
+                       / f"recap-{date.today().isoformat()}-{args.pg.lower()}.md")
+    else:
+        default_out = RECAPS_DIR / f"recap-{date.today().isoformat()}.md"
+    out = args.out or default_out
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(md, encoding="utf-8")
     print(f"[recap] Markdown: {out}", file=sys.stderr)

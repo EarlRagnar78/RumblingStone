@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# ⚠️ SUPERATO — sostituito dalla pipeline build-skills.sh/sync-skills.sh (vedi scripts/README.md). Conservato solo come riferimento storico (regola: non cancellare file).
 # scripts/deploy-skills.sh
 # Installs/updates D&D 3.5 skills to user-level directories for all supported agents.
 # Run once per machine after cloning. Re-run to update after changes.

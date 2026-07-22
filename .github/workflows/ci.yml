@@ -1,0 +1,104 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate skills & scripts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # serve al gate di tracciatura (diff vs base ref)
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Python scripts compile
+        run: python -m compileall -q scripts Script
+
+      - name: Validate skill trees (frontmatter, links, data YAML)
+        run: python scripts/validate_skills.py
+
+      - name: Plans discipline gate — CHANGELOG obbligatorio + promemoria ADR (ADR-0009)
+        if: github.event_name == 'pull_request'
+        run: python scripts/check_plans_discipline.py --base "origin/${{ github.base_ref }}"
+
+      - name: Validate generated maps (well-formed, in-sync SVGs)
+        run: python scripts/validate_maps.py
+
+      - name: Validate Bestiario library (naming, headers, CR, catalog sync)
+        run: python scripts/validate_bestiario.py
+
+      - name: Bestiario rules check (GS benchmark, flag policy) — non-blocking
+        continue-on-error: true
+        run: python scripts/validate_bestiario.py --rules
+
+      - name: DM tool smoke tests
+        run: |
+          python scripts/suggest_encounter.py --help > /dev/null
+          python scripts/suggest_loot.py --help > /dev/null
+          python scripts/suggest_map.py --help > /dev/null
+          python scripts/session_recap.py --help > /dev/null
+          python scripts/state_sync.py --help > /dev/null
+          python scripts/build_monster_catalog.py --help > /dev/null
+          python scripts/validate_bestiario.py --help > /dev/null
+          python scripts/render_map_svg.py --help > /dev/null
+          python scripts/compile_map_json.py --help > /dev/null
+          python scripts/export_uvtt.py --help > /dev/null
+          python scripts/update_xp.py --check > /dev/null
+          python scripts/hype_homebrew.py --help > /dev/null
+
+      - name: Map JSON contract + UVTT export round-trip (M1/M2)
+        run: |
+          python scripts/compile_map_json.py scripts/examples/esempio-accampamento-mano-rossa.json --validate-only
+          python scripts/compile_map_json.py scripts/examples/esempio-accampamento-mano-rossa.json -o /tmp/ci-map.md
+          python scripts/render_map_svg.py /tmp/ci-map.md > /dev/null
+          python scripts/export_uvtt.py /tmp/ci-map.md -o /tmp/ci-vtt
+          python -c "import json,glob; d=json.load(open(glob.glob('/tmp/ci-vtt/*.uvtt')[0])); assert d['line_of_sight'] and d['portals'] and d['lights'], 'UVTT vuoto'; print('UVTT OK:', len(d['line_of_sight']),'muri')"
+          # overlay professionale (bussola/movimenti/callout/zone) dal JSON
+          python scripts/compile_map_json.py scripts/examples/campo-drow-1.json -o /tmp/ci-drow.md
+          python -c "t=open('/tmp/ci-drow.md',encoding='utf-8').read(); assert '@north' in t and '@path' in t and '@mark' in t and '@zone' in t, 'direttive @ mancanti'; print('direttive @ OK')"
+
+      - name: Unit tests — dmcore / state_apply / next_session (ADR-0007)
+        run: python -m unittest discover -s scripts/tests -v
+
+      - name: dm.py unified CLI smoke test (K-C3)
+        run: |
+          python scripts/dm.py --help > /dev/null
+          python scripts/dm.py doctor --ci
+
+  build:
+    name: Build skill packages
+    runs-on: ubuntu-latest
+    needs: validate
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Build all per-agent skill packages
+        run: ./scripts/build-skills.sh --no-deploy
+
+      - name: Upload packages artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: skill-packages
+          path: build/
+          retention-days: 14

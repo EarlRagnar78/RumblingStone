@@ -1,4 +1,10 @@
 
+> **📸 ASSORBITO nel master DM (T6b, 2026-07-04)**: questa descrizione-oggetto
+> della Corona è confluita in `PG/Artefatti/LaCorona_di_Adamantio-DM.md`
+> (⭐ MASTER canonico, Cap. 1). Conservato come snapshot storico — non è la
+> fonte dei poteri. ⚠️ Alcuni dati qui (es. prerequisito **BAB +5**) possono
+> differire dal master: **prevale il master**.
+
 # ⚒️ **Corona di Adamantio (Crown of Eternal Stone)**
 *Una Corona Leggendaria (Artefatto) di Moradin, Padre delle Forgia*
 

@@ -154,6 +154,40 @@ Terreno:
 
 ---
 
+### 🌍 AMBIENTE (companion T5c, consolidato dalle 3 mappe della quest)
+
+*Mappe in prosa (niente griglia-emoji → nessun SVG). Scala 1,5 m/quadretto.
+Statblock nemici nella seconda metà di questo stesso file (§1-9).*
+
+| Mappa | Griglia | Elementi / terreno |
+|---|---|---|
+| **Cerchio di Hellas vs Treant** | 40×40 | bosco fitto (terreno difficile ×2, copertura leggera +2 CA/+1 Rif); Cerchio Sacro (raggio 6, centro 20,20, Hellas dentro); rocce 2×2 = copertura totale; **3 aree incendiate** (2d6 fuoco/round, Rif CD 15; fumo = occultamento 20%) |
+| **Rituale di Hellas (3 ondate)** | 30×30 | cerchio rituale (raggio 5, centro 15,15, Hellas); dentro = terreno normale, fuori = bosco; accessi ondate N (file 1-3) / E (col 28-30) / S-O (a scelta DM); ruscello opz. a ovest (+2 vs fuoco se sdraiati) |
+| **Campo Drow A** (ricognizione) | 30×30 | palizzata Ø~10 (centro 15,15), cancello sud, 2 torrette (SE 22,22 / N 6,15) |
+| **Campo Drow B** (piromantico) | 36×36 | piattaforma rialzata Ø~10 (18,18), cerchio di rune (anello 2 q), 4 monoliti a croce; attorno bosco bruciato (difficile + fumo) |
+| **Campo Drow C** (comando/portale) | 40×40 | tenda 8×8 (20,20), cerchio di evocazione (18,20), portale minore (raggio 3, 16,20); casse/barili = copertura leggera |
+
+### ⚔️ TATTICHE (companion T5c — statblock §1-9 in questo file)
+
+- **Cerchio (boss)**: **Treant Corrotto** (boss) inizia a (20,16), 4 q a ovest del Cerchio; 2 **Drow Pyromancer** in copertura ai lati (24,10 e 24,30). Obiettivo PG: **salvare/liberare Hellas** al centro; caricare il Treant è fattibile con buon posizionamento, i Drow dietro alberi/rocce no.
+- **Rituale (3 ondate)**: mentre Hellas completa il rito nel cerchio, arrivano 3 ondate — **1** ricognizione da nord, **2** da est, **3** dalla direzione meno presidiata (DM). I PG difendono il cerchio.
+- **Campi Drow (sabotaggio, A/B/C)**: A = scout su torrette + capitano; B = 2 Pyromancer sulla piattaforma + 4 guerrieri ai monoliti; C = Comandante nella tenda + Sacerdotessa al cerchio + 4 guardie, e un **demone evocato** che appare se il portale si attiva o lo scontro dura troppo.
+- **Morale**: drow coordinati sotto comando; il demone (Campo C) è la contromossa di escalation.
+
+### 🔄 EVOLUZIONE (companion T5c — la quest di Hellas)
+
+| Stato | Trigger | Cosa cambia | Effetto |
+|---|---|---|---|
+| A — Cerchio | i PG arrivano al Cerchio Sacro | Treant + 2 Pyromancer contro Hellas | liberare Hellas dal Treant corrotto |
+| B — Rituale | Hellas avvia il rito | 3 ondate drow dai bordi del bosco | difesa a tempo del cerchio |
+| C — Campi Drow | i PG passano all'offensiva | A/B/C da sabotare (palizzata/piattaforma/portale) | ogni campo neutralizzato indebolisce il settore |
+| C' — Escalation | portale C attivato / scontro lungo | **demone evocato** nel cerchio di Campo C | contromossa che alza la posta |
+
+> Esiti aperti (D13): salvare Hellas, reggere le ondate e quanti campi drow
+> sabotare sono scelte dei PG e tiri di dado — nessun esito forzato.
+
+---
+
 Arco-Post-Hammerfist-P1-STATBLOCCHI-NEMICI-VILLAN.md
 ====================================================
 

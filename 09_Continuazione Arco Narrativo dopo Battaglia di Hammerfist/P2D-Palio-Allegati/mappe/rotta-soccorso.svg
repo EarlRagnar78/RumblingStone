@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" width="680" height="360" role="img" aria-label="Rotta dei rinforzi da Channathgate a Rethmar">
+  <rect width="680" height="360" fill="#eef2e6"/>
+  <text x="340" y="30" font-family="Georgia,serif" font-size="19" text-anchor="middle" font-weight="bold" fill="#2f3a22">Sincronizzazione strategica — Channathgate ▸ Rethmar</text>
+
+  <!-- Rethmar -->
+  <g transform="translate(120,180)">
+    <circle r="46" fill="#8a1f2b"/><circle r="46" fill="none" stroke="#3a0d12" stroke-width="3"/>
+    <text y="-2" font-family="Georgia,serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">RETHMAR</text>
+    <text y="16" font-family="Georgia,serif" font-size="10" fill="#ffd9dd" text-anchor="middle">sotto assedio · Day 42</text>
+  </g>
+  <!-- orda -->
+  <g transform="translate(120,90)" font-family="Georgia,serif" font-size="11" fill="#3a0d12" text-anchor="middle">
+    <path d="M-40 0 h80 l-10 14 h-60z" fill="#5a1f1f"/><text y="-6">▼ Orda della Mano Rossa (~8.400)</text>
+  </g>
+
+  <!-- Channathgate -->
+  <g transform="translate(560,180)">
+    <circle r="46" fill="#1f6f8a"/><circle r="46" fill="none" stroke="#0d3a4a" stroke-width="3"/>
+    <text y="-6" font-family="Georgia,serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">CHANNATH-</text>
+    <text y="10" font-family="Georgia,serif" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">GATE</text>
+    <text y="26" font-family="Georgia,serif" font-size="9" fill="#dff2fb" text-anchor="middle">il Palio · Day 27-31</text>
+  </g>
+
+  <!-- strada Dawn Way -->
+  <line x1="166" y1="165" x2="514" y2="165" stroke="#8a6b3a" stroke-width="8" stroke-dasharray="12 6"/>
+  <text x="340" y="155" font-family="Georgia,serif" font-size="11" text-anchor="middle" fill="#6b5326">The Dawn Way · ~35 mi · cavalleria pesante ~1,5 gg</text>
+
+  <!-- fiume -->
+  <path d="M514 210 q-120 40 -240 20 q-60 -8 -108 -35" fill="none" stroke="#3a91bd" stroke-width="10"/>
+  <text x="340" y="250" font-family="Georgia,serif" font-size="11" text-anchor="middle" fill="#1f6f8a">Fiume Cannath · flotta di soccorso dell'Onda (corrente a favore, ~1 gg)</text>
+
+  <!-- staffette -->
+  <g font-family="Georgia,serif" font-size="10" fill="#7a1f1f">
+    <text x="340" y="300" text-anchor="middle">◀ staffette dal fronte (notizie dell'avanzata: Terrelton caduta, orda al Crocevia — l'assedio è al Day 42)</text>
+    <text x="340" y="320" text-anchor="middle" fill="#1f7a44">▶ se il Palio è vinto entro Day 38: rinforzi + Meraviglia arrivano per la Fase 1</text>
+    <text x="340" y="338" text-anchor="middle" fill="#8a5a1f">▶ se vinto Day 39-40: arrivano a Fase 2-3 (metà effetto)</text>
+  </g>
+</svg>

@@ -8,7 +8,7 @@ Arco-Post-Hammerfist-P2-RHEST-OVERVIEW.md
 - Portare i PG (livello 11–13) nella **città sommersa di Rhest**, ex capitale ora palude infestata.[web:80][web:122]  
 - Affrontare e distruggere:
   - Wyrmlord Saarvith (comandante goblin)  
-  - il drago nero adulto Regiarix (Regiarix/Regiarax)  
+  - il drago nero adulto Regiarix  
   - i Greenspawn Razorfiend e le forze lucertoloidi.[web:80][web:119]  
 - Ottenere prove e vantaggi strategici per:
   - convincere pienamente i Tiri‑Kitor,  
@@ -27,7 +27,7 @@ File collegati:
 Ciascuna fase prevede:
 
 - incontri bilanciati per CR 11–13,  
-- agganci diretti alle alleanze Tiri‑Kitor e alla futura Battaglia di Rethman.
+- agganci diretti alle alleanze Tiri‑Kitor e alla futura Battaglia di Rethmar.
 
 ## 3. Taratura di difficoltà (upscale)
 

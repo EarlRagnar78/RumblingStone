@@ -928,3 +928,26 @@ DIMENSIONI TOTALI MAPPA: 40 colonne × 40 righe = 60m × 60m
 **Prossimo File: PARTE 2 - Missioni Secondarie RHoD (Starsong Hill, Rhest, Ghostlord)**
 
 SCALA COMPLETATA TUTTI I DOCUMENTI: 1 quadrato = 1.5m × 1.5m!
+
+---
+
+## SIDEBAR — SE FALLISCONO (C3)
+
+> **Lotto C3 (2026-07-02).** Non un vicolo cieco: il fallimento **a metà** produce
+> storia, non stop. Protocollo morte PG: `campaign/DM-QUICKSTART-ARC09.md`
+> §"Risorse di resurrezione nel Vale".
+
+**Se il rituale del Cerchio Sacro fallisce/si interrompe a metà** (rito non
+completato, Ghianda non piantata, Spora-Madre non purificata):
+- Hella **non muore** né la quest si chiude: il Cerchio la congeda con un rito a
+  **CD piene** e **senza rinforzo druidico** a Rethmar (state.md §7 — niente +150
+  druidi/Treant in Fase 1; niente 3 druidi + 6 Treant minori).
+- Se la **Spora-Madre resta viva**: l'eco negativo si propaga (HOOKS-Hella §2.5)
+  → una carta EVENT-DECK "cisterne/spore" a Rethmar parte **peggiorata**.
+- **Costo, non blocco**: Hella può tornare più tardi (finestra Day ≤30) per un
+  secondo tentativo a CD +2, oppure accettare l'alleanza parziale.
+
+**Morte di un PG durante il rituale/l'assalto**: vedi il protocollo unico
+(DM-QUICKSTART). Precedente in-fiction: Hella è **già** stata resuscitata col
+**Cuore di Moradin**, ora **speso** (state.md §6) — non è ripetibile con lo stesso
+mezzo.

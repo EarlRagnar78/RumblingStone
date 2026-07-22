@@ -4,6 +4,29 @@
 
 ### Avventura D&D 3.5 - Livello 13 - Forgotten Realms
 
+> **Livello & artefatti (D8/D15, A5)**: party di **13°**, **3 PG** (Artemis,
+> Tordek, Thorik — **niente Therysol**, D15). Ciò che giustifica gli EL alti
+> NON è il livello ma lo **stato artefatti (D8)**: Bracieri di Tordek
+> RISVEGLIATI (Fuoco+Terra) + **Cintura della Devastazione** (D17), Corona IN
+> RISVEGLIO (solo **Topazio** acceso qui; lo Smeraldo si prende in questo P4),
+> Aegis Fang pre-risveglio pieno, Anello riforgiato. APL effettivo **12** (3
+> PG). Ricalibrazione boss (Terros) su questa base: **B5**.
+>
+> **Ordine di gioco (D2)**: si gioca PRIMA della resurrezione di Hella
+> (P3B) e del viaggio temporale (P5) — è la parte IN CORSO al tavolo. Vedi
+> `PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md` §0 D2.
+>
+> **Stato (A6, confermato DM 2026-07-03)**: **MASTER narrativo** del P4
+> (cornice/scene). Il **combattimento e il boss** usano le versioni
+> **potenziate** — `Terros.md` (Terros/Golem di Mithral) e
+> `PortaleForgia-P4-PianoTerra-RICALIBRATO.md` — perché il **power-up è
+> VOLUTO**: i PG sono di **13°** ma con **artefatti unici e potentissimi**
+> (D8), quindi gli EL alti evitano scontri risolti in 2 round. Correzioni da
+> applicare al power-up: **livello 13°** (non 14) e **composizione D15** (3 PG,
+> niente Therysol) — cambiano l'APL, non l'intento di sfida. Il viaggio di
+> Hella è in `...-MONDO-v2.md` (giocato, vedi `...-risultati.md`). Vedi
+> `ARC07-MATRICE-VERSIONI.md`.
+
 ---
 
 **Sistema:** Dungeons & Dragons 3.5 Edition  
@@ -732,7 +755,7 @@ Tramite la runa, Varis contatta Artemis telepaticamente: *"Vedo che hai un Anell
 **Hazard Minori (Opzionali):**
 
 - **Trabocchetti Gravità:** TS Riflessi CD 15 o cadere "su" (1d6 danni, disorientamento)
-- **Rune Magiche:** Arcane check DC 18 disattivare (se fallisce, 2d6 forza magica)
+- **Rune Magiche:** Arcane check CD 18 disattivare (se fallisce, 2d6 forza magica)
 
 **Tempo Attraversamento:** 10 minuti navigazione attenta
 

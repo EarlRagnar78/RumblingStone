@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# ⚠️ SUPERATO — sostituito dalla pipeline build-skills.sh/sync-skills.sh (vedi scripts/README.md). Conservato solo come riferimento storico (regola: non cancellare file).
 # scripts/sync-skills.sh
 # Syncs the canonical skills/ directory to all agent-specific paths inside the repo.
 # Run after editing skills/dnd-35-rules/ to propagate changes.

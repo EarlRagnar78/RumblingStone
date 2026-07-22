@@ -1,3 +1,10 @@
+> ⚠️ **DEPRECATED (2026-07)** — piano ARC-08 A8: generazione superata.
+> **Master**: `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` (mappe 1A-1,
+> 1A-2, 1A-3 — matrice di contenuto in testa a quel file). Per la
+> griglia di precisione della 1A-2 vedi anche
+> `Hammerfist-L1-REVISED-Ultra-Clear.md`. Contenuto mantenuto per
+> storico (D12), non cancellato.
+
 # HAMMERFIST TACTICAL MAPS - LOTTO 1
 ## Sessione 1: Ricognizione (Mappe 1A-1 fino 1A-3)
 
@@ -80,12 +87,12 @@ SUD (Ingresso) ↓
 - Ogni 15m movimento (10 quadrati) = 1 check
 
 **Prove Richieste:**
-- **Nascondersi DC 18:** Evitare avvistamento
-- **Muoversi Silenziosamente DC 20:** Evitare suoni
+- **Nascondersi CD 18:** Evitare avvistamento
+- **Muoversi Silenziosamente CD 20:** Evitare suoni
 
 **Bonus/Penalità:**
 - Copertura Rocce: +4 bonus Nascondersi
-- Terreno Difficile: +5 DC Muoversi Silenziosamente
+- Terreno Difficile: +5 CD Muoversi Silenziosamente
 - Lookout (1 PG osserva): +2 bonus gruppo
 
 **Conseguenze:**
@@ -127,7 +134,7 @@ SUD (Ingresso) ↓
 
 --- TORRE CENTRALE (18m altezza, 12 quadrati verticali) ---
 10 🗼🗼🗼🗼 = Base Torre (6m × 6m, 4×4 quadrati)
-   Scale interne: Scalare DC 12 (precarie)
+   Scale interne: Scalare CD 12 (precarie)
    Piani: Ground + 3 interni + Top (18m)
    Top Platform: 3m × 3m (2×2 quadrati)
    🔵 = Dara (Sommità, Osservazione) ← +18m altezza!
@@ -152,7 +159,7 @@ SUD (Ingresso) ↓
 **Torrione Antico 🗼:**
 - Base: M10-P13 (6m × 6m, 4×4 quadrati)
 - Altezza: 18m (12 quadrati verticali)
-- Scale Interne: Scalare DC 12 (6 rounds salita completa)
+- Scale Interne: Scalare CD 12 (6 rounds salita completa)
 - Piano Ground: Macerie (terreno difficile)
 - Piano 1 (+6m): 50% pavimento mancante
 - Piano 2 (+12m): 70% pavimento mancante
@@ -183,15 +190,15 @@ SUD (Ingresso) ↓
 **Dirupo Ovest ⛰️:**
 - Linea: A01-A40 (intero bordo ovest)
 - Caduta: 40m verticale = 40d6 danni (morte quasi certa)
-- Reflex DC 20 se spinto (Bull Rush tattico!)
+- Reflex CD 20 se spinto (Bull Rush tattico!)
 
 ### OSSERVAZIONE CAMPO NEMICO (400m Est):
 
 **Intelligence Ottenibile (Dara dalla Torre):**
-- **Osservare DC 15:** Conta approssimativa 800-1000 unità
-- **Osservare DC 20:** Conta precisa 900 unità, identifica 8 giganti
-- **Osservare DC 25:** Identifica tutti comandanti (Grimjaw, Gorthak, Drago)
-- **Osservare DC 30:** Layout tattico completo, punti deboli
+- **Osservare CD 15:** Conta approssimativa 800-1000 unità
+- **Osservare CD 20:** Conta precisa 900 unità, identifica 8 giganti
+- **Osservare CD 25:** Identifica tutti comandanti (Grimjaw, Gorthak, Drago)
+- **Osservare CD 30:** Layout tattico completo, punti deboli
 
 **Tempo Osservazione:** 10 minuti minimi per intelligence massima
 
@@ -208,7 +215,7 @@ SUD (Ingresso) ↓
 - Surprise Round: Se stealth succede (PG flat-footed nemici)
 - Alarm: Sergente grida = 7 dormenti svegliano Round 2
 - Reinforcements: Se corno suonato = 50 orchi 10 rounds
-- Cliff Tactic: Bull Rush hobgoblin verso dirupo (Reflex DC 20 o caduta 40m)
+- Cliff Tactic: Bull Rush hobgoblin verso dirupo (Reflex CD 20 o caduta 40m)
 
 ---
 

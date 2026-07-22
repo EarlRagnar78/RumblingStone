@@ -1359,28 +1359,53 @@ CERIMONIA DELLE ASCE - TRAMONTO
 
 ## **RIASSUNTO XP E RICOMPENSE PER SESSIONE**
 
-### **SESSIONE 1:**
-- **Ricognizione:** 3.600 XP
-- **Preparazione Difese:** 2.400 XP  
-- **TOTALE:** 6.000 XP (1.500 per PG)
+> **Applica D9** (piano ARC-08): le Sessioni 1-2 e la prima metà della
+> Sessione 3 ("Ultima Resistenza") si giocano coi **pregen** "Eroi di
+> Hammerfist" (D6) — **zero PX ai Rumbling Stones**. Ogni obiettivo
+> raggiunto in quelle sessioni genera un **bonus quantificato per il
+> finale** (posizioni, PNG vivi, risorse, −CR a un incontro, intel),
+> secondo la tabella di conversione flashback→bonus di piano ARC-08
+> **B1** (non ancora scritta — qui si applica solo il principio "zero
+> PX, bonus concreto"). Solo da metà Sessione 3 ("Rumbling Stones" — il
+> passaggio di testimone, D6/E6) i giocatori impersonano i PG reali e
+> iniziano a maturare PX veri.
 
-### **SESSIONE 2:**
-- **Assedio Mura:** 4.800 XP
-- **Soffio Drago:** 5.700 XP
-- **TOTALE:** 10.500 XP (2.625 per PG)
+### **SESSIONE 1 (pregen — Ricognizione + Preparazione Difese):**
+- **PX ai Rumbling Stones:** 0 (D9 — sessione pregen)
+- **Bonus per il finale** (da quantificare in B1): intelligence completa sulla colonna nemica, difese preparate
 
-### **SESSIONE 3:**  
-- **Ultima Resistenza:** 4.800 XP
-- **Rumbling Stones:** 5.100 XP
-- **TOTALE:** 9.900 XP (2.475 per PG)
+### **SESSIONE 2 (pregen — Assedio Mura + Soffio Drago):**
+- **PX ai Rumbling Stones:** 0 (D9 — sessione pregen)
+- **Bonus per il finale** (da quantificare in B1): PNG alleati sopravvissuti, breccia contenuta
 
-### **SESSIONE 4:**
-- **Battaglia Finale:** 6.000 XP
-- **Bonus Narrativo:** 2.000 XP
-- **TOTALE:** 8.000 XP (2.000 per PG)
+### **SESSIONE 3a — Ultima Resistenza (pregen, fino al passaggio di testimone):**
+- **PX ai Rumbling Stones:** 0 (D9 — sessione pregen)
+- **Bonus per il finale** (da quantificare in B1): posizioni difensive tenute, Re Thorek stabilizzato
 
-### **GRAN TOTALE:** 34.400 XP (8.600 per PG)
-*Abbastanza per portare PG da 13° a 15° livello*
+### **SESSIONE 3b — Rumbling Stones (da qui i PG reali giocano, D6/E6):**
+- **TOTALE:** 2.600 XP (650 per PG) `[INFERRED — proposta dosata, da
+  verificare al tavolo contro la XP reale bancata dal party a inizio
+  Arco 08]`
+
+### **SESSIONE 4 (Rumbling Stones — Battaglia Finale + Bonus Narrativo):**
+- **TOTALE:** 4.600 XP (1.150 per PG) `[INFERRED — stessa riserva]`
+
+### **GRAN TOTALE PX REALE (solo Rumbling Stones):** 7.200 XP (1.800 per PG)
+*Party APL 13 in ingresso (ARC-07 D8) → resta saldamente 13° a fine
+arco (D9: "Hammerfist consolida il 13°"). Il grosso dell'esperienza
+matura nelle quest personali di ARC-09, non qui. **Nessun passaggio
+13°→15°: il totale non deve far scattare il 14°.***
+
+> **Nota di verifica EL** (A3, azione 4): il finale di Sessione 4 è
+> dichiarato **Livello di Sfida 20** contro un party APL 13 (+7,
+> superiore anche al precedente più severo della campagna: ARC-06 EL
+> 17 su party 13°, `villans.md` r.1). È una scena di **combattimento di
+> massa** con supporto alleato pesante (gufi celestiali, ranger elfici,
+> druido, bardo, unità naniche), non un duello 4-contro-EL20: l'EL
+> dichiarato probabilmente non riflette il carico reale sui 4 PG.
+> Verifica completa di action economy e statistiche rimandata a piano
+> ARC-08 **B5** (errata meccanica) — qui si segnala solo la
+> discrepanza per evitare sorprese al tavolo.
 
 ---
 

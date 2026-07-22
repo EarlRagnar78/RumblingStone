@@ -57,3 +57,33 @@ Comportamento:
 - Ogni 3 round: tremore in tutta la sala.  
   - Tutte le creature devono fare TS Riflessi CD 15 per evitare di cadere prone.  
 - Linea di vista aperta in tutta la stanza; nessun pilastro, ma eventuali barriere di energia temporanee possono comparire durante tentativi falliti. [file:45]
+
+---
+
+### 🌍 AMBIENTE (companion T5c, consolidato dalla Camera dei Cristalli)
+
+*Mappa in prosa (niente griglia-emoji → nessun SVG). Scala 1,5 m/quadretto.
+Stanza quasi circolare 30×30.*
+
+| Elemento | Dove | Effetto meccanico 3.5 |
+|---|---|---|
+| Piattaforma centrale + Nucleo di risonanza | rialzata, raggio 5, centro (15,15); 4 rampe cardinali (3 q larghe) | obiettivo centrale; le rampe sono gli accessi |
+| 5 Cristalli (a pentagono, ~8 q dal centro) | Fuoco (7,15), Aria (11,23), Acqua (19,23), Terra (23,15), Caos/Etere (11,7) | interagirvi sveglia gli Elementali; barriere d'energia temporanee su tentativi falliti |
+| Tremore periodico | tutta la sala, **ogni 3 round** | tutte le creature: **Riflessi CD 15 o proni** |
+
+### ⚔️ TATTICHE (companion T5c)
+
+- **2 Elementali del Caos**: A vicino al Cristallo Fuoco (9,15), B vicino al Cristallo Acqua (17,23). **Restano in zona-cristallo** finché i PG non interagiscono pesantemente coi cristalli o col nucleo — poi ingaggiano.
+- **Approccio consigliato**: gestire i cristalli con criterio (l'ordine/metodo è l'enigma) per non svegliare entrambi gli elementali insieme; sfruttare i round tra un tremore e l'altro.
+- LoS aperta (nessuna copertura fisica): posizionamento e controllo contano più della copertura.
+
+### 🔄 EVOLUZIONE (companion T5c — nucleo e cristalli)
+
+| Stato | Trigger | Cosa cambia | Effetto |
+|---|---|---|---|
+| A — Ingresso | i PG salgono dal L3 | elementali dormienti presso i cristalli | avvicinamento libero |
+| B — Interazione | i PG toccano cristalli/nucleo | **gli Elementali del Caos ingaggiano** | scontro + tremori ogni 3 round |
+| C — Risoluzione | nucleo domato/cristalli allineati | barriere si spengono | accesso al Livello 5 (Sanctum di Zalkatar) |
+
+> Esiti aperti (D13): l'ordine con cui si toccano i cristalli e come si gestisce
+> il nucleo determina la difficoltà — scelta dei PG, non copione.

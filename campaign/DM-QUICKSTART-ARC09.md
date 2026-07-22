@@ -9,6 +9,23 @@
 `[ACCEPTED — DM-canon]`. March Clock = Day 19. Ritual Clock = 9/18.
 APL = 13.
 
+> **↩ Carry-over dall'ARC-07 — echi del rituale P3B di Hella (T9)**: prima di
+> giocare ARC-09 verifica in `campaign/state.md` **come è stato risolto il
+> rituale di resurrezione di Hella** (ARC-07 P3B). Se un dono è stato
+> **rifiutato**, tre echi si propagano in questo arco e sono già agganciati
+> ai file bersaglio:
+> - **Tordek rifiuta il respiro** → veleni drow, **Fase 0 Notte dei Drow**
+>   (`...FASE0-NOTTE-DEI-DROW-TESTO.md`).
+> - **Thorik / Artemis rifiutano** → prima ferita critica / primo 0 pf di
+>   Hella (`08_.../ARC08-03-REGISTRO-PERDITE.md`).
+> - **Rifiuto totale** → 3 slot-dono vuoti della Collana = 3 quest opzionali
+>   (`Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md` §2).
+>
+> Tabella completa e default: `07_il Portale Della Forgia
+> Eterna/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` §2-BIS «Il ramo del
+> rifiuto». Se il rituale non è ancora stato giocato, gioca i doni pieni
+> (nessun eco attivo).
+
 ---
 
 ## §1 — Workflow di base (per ogni sessione)
@@ -45,10 +62,10 @@ Poi, ogni sessione:
 Drow Sonjak, Gnoll, Loxo/Centauri, Githyanki, Teschio Nero, Rakshasa,
 Aberrazioni, Alleati Difensori, **§16 Boss Epici CR 10-18**).
 
-**Cartella statblock derivati** (accettati): `00_Red Hand Of Doom/Armate-UNITA-NUOVE/`
+**Cartella statblock derivati** (accettati): `Bestiario/`
 (54 file, tutti `[ACCEPTED — DM-canon 2026-05-05]`).
 
-**Cartella NPC canonici**: `PNG/` (Azarr Kul, Ghostlord, Lorana, Lythiel,
+**Cartelle NPC canonici**: `Bestiario/villain/` e `Bestiario/png/` (Azarr Kul, Ghostlord, Lorana, Lythiel,
 Maewen, Salvatore, Sethrax, Sonjak, Tempestas, Therysol, Valerius,
 Xal'thor, Il Collezionista).
 
@@ -60,7 +77,7 @@ Tutti in `scripts/`, tutti autonomi (zero dipendenze esterne):
 
 | Script | Uso | Quando |
 |---|---|---|
-| `build_monster_catalog.py` | Scansiona il repo → `monster_catalog.yaml` (216 record) | Dopo aver aggiunto unità nuove a `Armate-UNITA-NUOVE/` |
+| `build_monster_catalog.py` | Scansiona il repo → `monster_catalog.yaml` (293 record) | Dopo aver aggiunto unità nuove a `Bestiario/` |
 | `suggest_encounter.py --el N [--alliance X \| --factions a,b] --env Y [--inject-npc N] [--narrative] [--wild]` | Propone 3-5 encounter mix con EL target. Supporta alleanze canoniche (17), PG iniettati, wild (no-loot). | Ogni volta che servono encounter per una scena |
 | `suggest_loot.py --from-encounter FILE.md --pcs N [--include-fr-themed]` | **Standalone**: loot SRD-only per l'encounter. Legge `<!-- loot: structured\|none -->`. Skip auto su wild. | Dopo `suggest_encounter.py`, pipe → |
 | `suggest_map.py --template forest-ambush` | Genera mappa tattica da template (11 template disponibili) | Prep mappa tattica di una scena |
@@ -111,10 +128,11 @@ di tutte le fasi).
 | P2A Torre | `P2A-Torre-PARTE1-4` + `STATBLOCCHI` per livello | Day 24-28 |
 | P2B Torneo Dauth | `P2B-Torneo-PARTE1-3` + `OTTO-PORTE` + `BATTLE-STATS` | Day 26-30 (fixed) |
 | P2C Mercante | `P2C-Salvatore-Mercante-TESTO.md` | Day 25-35 (subplot) |
+| P2D Palio di Channathgate | `P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md` (HUB) + `P2D-PALIO-DM-MASTER-REFERENCE.md` + `P2D-PALIO-GIORNO1..3-4` | Day 27-36 (**parallela**, opzionale; deadline rinforzi Day 37-38 → Rethmar Day 42). Vince il **Drappellone = Matrice del Mythal** (Fase 4) e muove il voto del Consiglio |
 | P3 Ghostlord | `P3-Ghostlord-LICH-ALLEANZA-TESTO.md` + `STATBLOCCHI` + `MAPPE` | Day 28-35 |
 | P3 Starsong | `P3-Starsong-Hill-ALLEANZA-ELFI-*` | Day 30-38 |
 | P3 Sabotaggi | `P3-Sabotaggio-Campi-Drow-*` + `P3-MISSIONI-BREVI-CR12-*` | Day 30-38 |
-| **P3 Finale Rethmar** | `P3-BATTAGLIA-FINALE-FASE0..4-*` + `STATBLOCCHI-EPICI.md` + `ARMATE-SYNC.md` | Day 38+ → climax |
+| **P3 Finale Rethmar** | `P3-BATTAGLIA-FINALE-FASE0..4-*` + `STATBLOCCHI-EPICI.md` + `ARMATE-SYNC.md` | Day 40 (Fase 0) → Day 42 (Fasi 1-4, climax) |
 
 **Hooks integration master**: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md`.
 
@@ -126,7 +144,7 @@ di tutte le fasi).
 
 | Day | Epic Event |
 |---|---|
-| 19 | Hammerfist end — Fauci morto |
+| 19 | Hammerfist end — Fauci di Palude: ramo condizionale (D10), non ancora deciso — default fugge ferito, alternativa ucciso |
 | 20-22 | Karruk CR 10 pubblico |
 | 22-26 | Saarvith/Zalkatar finestre PG (Rhest, Torre) |
 | 26-30 | **Dauth fixed**: Zarim CR 12 Day 2, Xal'thor CR 14 Day 3 |
@@ -173,6 +191,38 @@ flaggala `[ACCEPTED — DM-canon]` e cita fonte (MM/FRCS/AP).
 
 ---
 
+## §8.5 — Risorse di resurrezione nel Vale (protocollo morte PG — C3)
+
+> **Lotto C3 (2026-07-02).** Nota unica citata da tutte le sidebar "SE FALLISCONO"
+> (P1C, P2A-PARTE4, P2B-PARTE3, RHEST-FASE4, Ghostlord). A APL 13-14 la morte di
+> un PG **non deve** chiudere la campagna: deve **costare**.
+
+**Precedente in-fiction (vincolante)**: Hella è **già** stata resuscitata con il
+**Cuore di Moradin** — artefatto **single-use, ora speso** (state.md §6). Non è
+ripetibile: nessun agente/PG può "riusarlo" (violazione di coerenza da flaggare).
+
+**Chi può riportare indietro un PG nel Vale (Day 20-42):**
+
+| Fonte | Dove | Incantesimo | Costo (SRD/DMG 3.5) | Costo narrativo |
+|---|---|---|---|---|
+| Tempio maggiore di Rethmar | Rethmar (se non caduta) | *raise dead* / *resurrection* | ~5.450 mo (diamante 5.000) / ~10.910 mo (diamante 10.000) | Debito col Consiglio (favore politico, Consiglio_Rethmar) |
+| Confraternita di Ilmater (Sorella Maewen) | Dauth | *raise dead* | ~5.450 mo | Voto di servizio alla Confraternita (hook ARC-10) |
+| Circolo degli Otto / arci-druidi | campale, solo a Rethmar | *reincarnate* (nuovo corpo!) | componenti + rischio forma casuale | Cambia razza del PG — costo identitario |
+| Chierici alleati al fronte | Rethmar Fase 3-4 | *breath of life*-equivalenti (SRD: *revivify* non esiste in 3.5 → **nessuna** rianimazione istantanea) | — | In battaglia **non** c'è resurrezione: il corpo va portato via |
+
+**Regole d'oro del protocollo:**
+1. **In battaglia non si resuscita** (3.5 non ha *revivify*): un PG che cade in
+   Fase 0-4 è fuori per la scena; il recupero avviene **dopo**, se il corpo è
+   salvato (le sidebar RHEST/Ghostlord notano i casi in cui il corpo è difficile
+   da recuperare — fondo del lago, tana del Lich).
+2. **Ogni raise lascia un debito**, mai gratis: politico (Consiglio), religioso
+   (Ilmater), o identitario (*reincarnate*). È il "costo, non stop".
+3. Se il party **non può permettersi** un raise (oro/finestra): il PG morto
+   diventa un **hook** (visione, eredità, vendetta) — la storia continua col
+   gruppo ridotto, non si ferma.
+
+---
+
 ## §9 — TL;DR: il DM ha tutto quello che serve?
 
 ✅ **Workflow** → `campaign/DM-CAMPAIGN-PLAYBOOK.md` (§2-§7)
@@ -180,8 +230,8 @@ flaggala `[ACCEPTED — DM-canon]` e cita fonte (MM/FRCS/AP).
 ✅ **Scheduling eventi** → `Armate-SINCRONIZZAZIONE-CAMPAGNA.md` §4b
 ✅ **Numeri armate** → `Armate-CALCOLI-ESERCITI-DINAMICI.md` §2-§6
 ✅ **Atlas unità** → `Armate-COMPOSIZIONE-DETTAGLIATA.md` (16 sezioni)
-✅ **Statblock derivati** → `Armate-UNITA-NUOVE/` (54 file ACCEPTED)
-✅ **NPC canonici** → `PNG/*/`
+✅ **Statblock derivati** → `Bestiario/` (102 statblock)
+✅ **NPC canonici** → `Bestiario/villain/*/` e `Bestiario/png/*/`
 ✅ **Encounter automation** → `scripts/suggest_encounter.py` (alleanze + wild + inject-NPC)
 ✅ **Loot automation standalone** → `scripts/suggest_loot.py` (DMG 3.5 Tab.3-5, SRD-only + FR-themed mild)
 ✅ **Mappa automation** → `scripts/suggest_map.py` (11 template)
@@ -190,7 +240,7 @@ flaggala `[ACCEPTED — DM-canon]` e cita fonte (MM/FRCS/AP).
 ✅ **Recap player spoiler-safe** → `scripts/session_recap.py` (+ opzionale PDF A4)
 ✅ **Reset nuovo gruppo** → `scripts/new-campaign-group.sh`
 ✅ **Narrative files Arc-09** → 70+ file in `09_Continuazione.../`
-✅ **Hammerfist guide (rif.)** → `08_.../00_Final_hammerfist_battle-Guida_Completa_del_DM.md`
+✅ **Hammerfist guide (rif.)** → `08_.../ARC08-01-GUIDA-DM.md`
 ✅ **Skills per domande** → `skills/` (4 skills)
 
 **Gaps noti** (documentati):

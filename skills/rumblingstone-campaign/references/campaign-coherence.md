@@ -47,8 +47,8 @@ of events.
 | Hella dies in Crown Chamber | 06 | Died, then resurrected at Eternal Forge with cost |
 | Cuore di Moradin spent for Hella's resurrection | 07 | Single-use artifact; cannot be re-used |
 | Ruby gem of Corona spent at year -1000 battle | 07 | Single-use already expended |
-| Hammerfist siege: 210 dwarves killed, 90 survive | 08 | Death toll fixed; named survivors fixed (Re Thorek, Dana Forgiapietra) |
-| Fauci di Palude (black dragon) escapes Hammerfist gravely wounded | 08 | Escaped; can return wounded |
+| Hammerfist siege: 210 dwarves killed, 90 survive | 08 | Design target — **canone PREPARATO, non ancora giocato** (Arc 08 is ⬜ pianificato as of 2026-07-02, table stopped at Arc 07 in progress; see `campaign/state.md` §0/§8). Locks for real only once the arc is actually played at the table |
+| Fauci di Palude (black dragon) escapes Hammerfist gravely wounded | 08 | Design default branch — **canone PREPARATO, non ancora giocato** (same caveat as above; see piano ARC-08 D10 for the conditional-branch treatment) |
 
 ### Adding to history (allowed)
 
@@ -159,8 +159,12 @@ the DM strategy doc.
 
 ## 4. Tone Constraints (R.A. Salvatore profile)
 
-The campaign asks for adult, slow-build intrigue. To maintain it, agents
-generating prose or read-aloud text must:
+The campaign asks for adult, slow-build intrigue. The Salvatore profile
+below is the **prose floor**; the full narrative voice is the
+eight-pillar mix in `../../rumblingstone-narrative-style/` (Salvatore,
+LotR, Casa di Davide, Andor, GoT, Mercer, BG3 echoes, BG1/2 quest
+design) — load that skill for any content generation. Agents generating
+prose or read-aloud text must:
 
 - **Do**: physical sensory detail, internal monologue beats, named NPCs
   with backstory, moral cost of victories, cold weather and stone, named
@@ -227,7 +231,10 @@ detachment** of lesser undead (~200–400), not the full undead army
 Force composition is locked to:
 
 - **5 named dragons**: Abithriax, Regiarix (dies if Arc-09/P2 completed),
-  Ozyrrandion, Tyrgarun, Fauci di Palude (wounded from Hammerfist).
+  Ozyrrandion, Tyrgarun, Fauci di Palude (**conditional branch, D10**:
+  default = flees gravely wounded from Hammerfist, may return; PG-kill
+  branch = dies at Hammerfist instead, −1 dragon — same conditional
+  treatment as Regiarix/Ozyrrandion, not yet resolved).
 - **8 Razorfiend Draconic Spawn** (Tiamat colors) mounted on upscaled
   Wyrmlords.
 - **Compagnia del Teschio Nero**: unchanged from AP canon.
@@ -281,4 +288,9 @@ explicit `[COHERENCE WARNING: <which rule>]` so the DM can adjudicate.
             Spawn, Compagnia del Teschio Nero unchanged. Ghostlord
             neutralized = small detachment rule. PG did NOT sabotage
             Skull Gorge, did NOT ally giants.
+2026-07-20  §4 now points to skills/rumblingstone-narrative-style/ —
+            eight-pillar style engine (Salvatore prose floor unchanged;
+            adds LotR depth, Casa di Davide destiny, Andor intrigue,
+            GoT politics, Mercer table technique, BG3 echo ledger
+            state.md §7.E, BG1/2 quest patterns, PC protagonism test).
 ```

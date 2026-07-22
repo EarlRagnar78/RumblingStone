@@ -1,3 +1,7 @@
+> ⚠️ SUPERATA (2026-07, T4): la scheda giocatore viva è
+> `00_SCHEDA-GIOCATORE-STATO-ATTUALE.md` (solo poteri sbloccati, snapshot
+> etichettati). Questo file resta come storia di progetto (D10).
+
 # 👑 SCHEDA PRATICA - CORONA DI ADAMANTIO (Fase 2)
 
 *Artefatto Divino - Sintonizzazione: Thorik*

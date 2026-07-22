@@ -31,15 +31,22 @@ Source: d20srd.org/srd/magicItems/
 
 ## Pricing Formula (Guideline)
 
+Verified vs SRD Table: Estimating Magic Item Gold Piece Values:
+
 | Item Type | Price Formula |
 |---|---|
-| Spell effect (1 use) | spell level × caster level × 25 gp (potions/scrolls) |
-| Command word (1/day) | spell level × caster level × 1,800 gp |
-| Command word (unlimited) | spell level × caster level × 2,000 gp |
-| Use-activated (constant) | spell level × caster level × 4,000 gp |
-| Single-use (use-activated) | spell level × caster level × 50 gp |
+| Single use, spell completion (scroll) | spell level × caster level × 25 gp |
+| Single use, use-activated (potion) | spell level × caster level × 50 gp |
+| 50 charges, spell trigger (wand) | spell level × caster level × 750 gp |
+| Command word | spell level × caster level × 1,800 gp |
+| Use-activated or continuous | spell level × caster level × 2,000 gp |
 
-Modifiers: ×2 if not slot; ÷2 if 3/day or limited charges; ×1.5 for additional similar powers on same item
+Modifiers: n charges/day → divide by (5 ÷ n); no space limitation ×2;
+uncustomary slot ×1.5; multiple different abilities: ×2 the lesser ability
+costs; charged (50) version of unlimited item = ½ price. Ability bonus
+(enhancement) = bonus² × 1,000 gp; AC/natural/deflection = bonus² × 2,000;
+resistance saves = bonus² × 1,000; competence skill = bonus² × 100;
+SR = 10,000 gp per point over SR 12 (min SR 13). (0-level spells count as ½.)
 
 ---
 
@@ -65,13 +72,16 @@ Modifiers: ×2 if not slot; ÷2 if 3/day or limited charges; ×1.5 for additiona
 
 ## Weapon Bonuses and Properties
 
-| Enhancement | Min CL | Price Bonus |
+| Enhancement | Min CL (3× bonus) | Price Bonus |
 |---|---|---|
-| +1 | 5th | +2,000 gp |
-| +2 | 8th | +8,000 gp |
-| +3 | 11th | +18,000 gp |
-| +4 | 14th | +32,000 gp |
-| +5 | 17th | +50,000 gp |
+| +1 | 3rd | +2,000 gp |
+| +2 | 6th | +8,000 gp |
+| +3 | 9th | +18,000 gp |
+| +4 | 12th | +32,000 gp |
+| +5 | 15th | +50,000 gp |
+
+(The Craft Magic Arms and Armor feat itself requires CL 5. Price = bonus²
+× 2,000 gp; armor/shields bonus² × 1,000 gp.)
 
 **Common Special Abilities:**
 | Property | Equiv. Bonus | Effect |
@@ -79,12 +89,12 @@ Modifiers: ×2 if not slot; ÷2 if 3/day or limited charges; ×1.5 for additiona
 | Flaming | +1 | +1d6 fire on hit |
 | Frost | +1 | +1d6 cold |
 | Shock | +1 | +1d6 electricity |
-| Keen | +1 | Double threat range (stacks multiplicatively: 17–20 → 15–20; 19–20 → 17–20) |
+| Keen | +1 | Doubles threat range (19–20→17–20; 18–20→15–20); piercing/slashing only; does NOT stack with Improved Critical or *keen edge* |
 | Holy | +2 | +2d6 vs. evil; evil creatures struck suffer additional damage |
 | Unholy | +2 | +2d6 vs. good |
-| Vorpal | +5 | On natural 20: decapitate (Fort DC 20 or die) |
+| Vorpal | +5 | Natural 20 + confirmed critical: severs head, no save (headless/some creatures immune) |
 | Speed | +3 | Extra attack at highest BAB on full attack |
-| Disruption | +2 | Undead: Fort DC 14 or destroyed on hit |
+| Disruption | +2 | Bludgeoning only; undead struck: Will DC 14 or destroyed |
 
 **Max total equivalent bonus**: +10 (e.g., +5 keen holy = +5+1+2 = +8 ok; can't exceed +10)
 
@@ -101,15 +111,15 @@ Modifiers: ×2 if not slot; ÷2 if 3/day or limited charges; ×1.5 for additiona
 | Cloak of Resistance +1–+5 | 1,000–25,000 gp | +1–+5 all saves |
 | Decanter of Endless Water | 9,000 gp | Stream/fountain/geyser of water |
 | Eyes of the Eagle | 2,500 gp | +5 Spot |
-| Gauntlets of Ogre Power | 4,000 gp | STR 19 (if lower) |
+| Gauntlets of Ogre Power | 4,000 gp | +2 enhancement to STR |
 | Gloves of Dexterity +2/+4/+6 | 4,000/16,000/36,000 gp | +N DEX |
 | Goggles of Night | 12,000 gp | Darkvision 60 ft |
-| Handy Haversack | 2,000 gp | 120 lb; retrieved as free action |
+| Handy Haversack | 2,000 gp | 120 lb total; retrieve any item as a move action (no AoO) |
 | Headband of Intellect +2–+6 | 4,000–36,000 gp | +N INT |
 | Ioun Stones (various) | 4,000–30,000 gp | Orbit head; various effects |
 | Pearl of Power (1st–9th) | 1,000–81,000 gp | Regain one expended spell/day |
 | Ring of Protection +1–+5 | 2,000–50,000 gp | Deflection bonus to AC |
-| Robe of the Archmagi | 75,000 gp | +5 AC; +4 saves; SR 18; +2 caster level |
+| Robe of the Archmagi | 75,000 gp | +5 armor bonus; +4 resistance saves; SR 18; +2 on CL checks vs SR |
 | Rope of Climbing | 3,000 gp | 60 ft; 3,000 lb; animate |
 | Scarab of Protection | 38,000 gp | SR 20; absorb 12 death spells |
 

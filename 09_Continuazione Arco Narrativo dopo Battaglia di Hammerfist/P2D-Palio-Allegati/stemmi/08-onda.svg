@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240" role="img" aria-label="Stemma Contrada dell'Onda">
+  <defs><clipPath id="o8"><path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z"/></clipPath></defs>
+  <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="#eef6fb" stroke="#1f6f8a" stroke-width="6"/>
+  <g clip-path="url(#o8)">
+    <!-- bande d'onda -->
+    <path d="M20 118 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 V232 H20 Z" fill="#5fb2d6"/>
+    <path d="M20 150 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 V232 H20 Z" fill="#2f8fb8"/>
+    <path d="M20 182 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 V232 H20 Z" fill="#1f6f8a"/>
+    <!-- falce di Selûne -->
+    <path d="M150 44 a13 13 0 1 0 5 22 a10 10 0 1 1 -5 -22z" fill="#f3f0d8" stroke="#b8b28a" stroke-width="1.5"/>
+    <!-- pesce saltante araldico, argento -->
+    <g stroke="#0d3a4a" stroke-width="2.5" stroke-linejoin="round" fill="#eef6fb">
+      <path d="M60 118 q4 -46 44 -52 q30 -4 44 16 q-16 4 -18 12 q14 2 18 12 q-18 8 -40 2 q-10 20 -34 26 q10 -20 6 -34 q-12 4 -20 10z"/>
+      <path d="M104 66 q10 -14 20 -12 q-4 12 -14 18z" />
+      <circle cx="122" cy="78" r="3" fill="#0d3a4a"/>
+    </g>
+  </g>
+  <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="none" stroke="#1f6f8a" stroke-width="6"/>
+  <rect x="18" y="182" width="164" height="26" rx="4" fill="#062230" opacity="0.85"/>
+  <text x="100" y="200" font-family="Georgia,serif" font-size="10.5" fill="#bfe6f5" text-anchor="middle" font-style="italic">Il cielo mi colora, il fiume mi arma</text>
+  <text x="100" y="14" font-family="Georgia,serif" font-size="11.5" fill="#1f6f8a" text-anchor="middle" font-weight="bold">L'ONDA · Valkur/Selûne</text>
+</svg>

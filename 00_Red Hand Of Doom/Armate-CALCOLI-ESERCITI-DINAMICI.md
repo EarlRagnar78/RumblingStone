@@ -1,7 +1,7 @@
 # Armate — Calcoli Eserciti Dinamici (v2 — 2026-05-05)
 
 > **🛡️ Canonizzazione 2026-05-05**: il DM ha **accettato** tutte le
-> derivazioni `[INFERRED]` delle unità (file in `Armate-UNITA-NUOVE/`)
+> derivazioni `[INFERRED]` delle unità (file in `Bestiario/`)
 > e tutti i puntatori NPC a `PNG/`. I conteggi §2.x e §2.6 sono canone
 > di campagna; le unità sono valide per encounter/mass-combat
 > immediato. Flag globale: `[ACCEPTED — DM-canon 2026-05-05]`.
@@ -68,7 +68,7 @@
 | **Regiarix** (Black young adult) | Rhest/Saarvith, P2 Arco-09 | AP canon | **A rischio PG** (P2-RHEST-FASE4) |
 | **Ozyrrandion** (Blue adult) | Torre Invisibile / Wyrmlord Tower | AP canon | **A rischio PG** (P2A-Torre-Zalkatar) |
 | **Tyrgarun** (Black adult, hell-themed reserve) | Riserva aerea Rethmar | AP upscaled | Vivo |
-| **Fauci di Palude** (Black adult) | Vanguard Hammerfist | Canon campagna | **Annientato a Hammerfist (Day 19)** |
+| **Fauci di Palude** (Black adult) | Vanguard Hammerfist | Canon campagna | **Ramo condizionale D10, non deciso** (default: fugge <50 PF, assente da Rethmar; alternativa: ucciso ad Hammerfist) |
 
 **Note**: Abithriax, Regiarix, Ozyrrandion, Tyrgarun sono i 4 dragoni
 AP originali (Regiarix young + 3 adults). Fauci di Palude è la 5ª
@@ -98,6 +98,29 @@ guardie dei Wyrmlord upscaled.
 | **Compagnia del Teschio Nero** (umani malvagi mercenari Thay/Mulhorand) | 650 | Heavy infantry + 6 casters Thayan (Wizard 7 red robes minori) + comandante CR 10 |
 | **Subtotale alleati** | **2.910** | |
 
+### 2.4a Esperimenti Aberranti di Sonjak — Unità Speciali (create Giorni 35-37)
+
+> Matrona Sonjak utilizza la sosta logistica post-Witchcross per condurre
+> esperimenti con spore fungine dell'Underdark e modificazioni aberranti
+> su Drow volontari e prigionieri catturati. Il risultato: unità d'assalto
+> che nessun difensore si aspetta. Il sabotaggio dei Campi Drow
+> (`campaign/state.md` §arc-09) ne distrugge **75** (Servitori + Sporeborn,
+> il laboratorio brucia); gli **8 Guardiani Neri d'élite sopravvivono**
+> perché deployati con la scorta personale di Sonjak, non nel lab.
+
+| Unità | GS | Numero | Descrizione |
+|---|---|---|---|
+| **Sporeborn** (Drow ibridati con spore fungine) | 6 | 30 | Drow volontari infettati: Str +4, immunità al dolore, berserk mode — rischio fuoco amico 1/10 round se non controllati |
+| **Servitori della Spora** (umanoidi infetti) | 3 | 45 | Druidi e civili di Witchcross trasformati: carica suicida, veleno da contatto CD 16, mindless — unità monouso |
+| **Guardiani Neri** (esperimenti d'élite con innesti aberranti) | 9 | 8 | Grafi occhio-beholder + tentacolo illithid su corpi Drow potenziati; lenti ma devastanti |
+| **Subtotale Aberrazioni Sonjak** | | **83** | Sabotaggio Campi Drow distrugge **75** (−45 Servitori, −30 Sporeborn); gli **8 Guardiani Neri** sopravvivono (scorta di Sonjak) e combattono comunque a Rethmar |
+
+> **Nota DM:** Se i PG sabotano i Campi Drow (missione Arc-09 P3), il
+> laboratorio brucia — perdita di **75 unità aberranti** (45 Servitori +
+> 30 Sporeborn); gli **8 Guardiani Neri sopravvivono** (deployati con la
+> scorta di Sonjak) **e** +1 giorno di ritardo per Sonjak (morale blow).
+> L'assalto rimane a Day 42 ma la Fase 0 (Notte dei Drow) è indebolita.
+
 ### 2.5 Totale Baseline
 
 | Categoria | Unità |
@@ -120,20 +143,20 @@ Approssimato a **~10.000** come target narrativo.
 
 | Unità | CR | Numero | Fonte file | Deployment (arc/fase) |
 |---|---|---|---|---|
-| Hobgoblin Captain (company commander élite) | 8 | ~24 | `Armate-UNITA-NUOVE/hobgoblin-captain-cr8.md` | Promossi dai 60 Warrior-3 §2.1 (1 per compagnia, Fase 1-3) |
-| Warpriest di Tiamat élite (upscale da CR7) | 11 | ~6 | `Armate-UNITA-NUOVE/tiamat-warpriest-elite-cr11.md` | Sottogruppo dei 20 Warpriest §2.1, Fase 2 ritualisti |
-| Emissario Red Hand | 12 | 1-3 | `Armate-UNITA-NUOVE/emissario-red-hand-cr12.md` | **Conditional** (Ghostlord branch; P3 Ghostlord alleanza) |
-| Zarim (Illithid luogotenente) | 12 | ×1 | `Armate-UNITA-NUOVE/zarim-illithid-luogotenente-cr12.md` | Torneo Dauth P2B Day 2 (fixed) |
-| Xal'thor (Illithid Commander) | 14 | ×1 | `PNG/Xal_thor/Xal_thor.md` (pointer) | Torneo Dauth P2B Day 3 (fixed) |
+| Hobgoblin Captain (company commander élite) | 8 | ~24 | `Bestiario/hobgoblin-captain-cr8.md` | Promossi dai 60 Warrior-3 §2.1 (1 per compagnia, Fase 1-3) |
+| Warpriest di Tiamat élite (upscale da CR7) | 11 | ~6 | `Bestiario/tiamat-warpriest-elite-cr11.md` | Sottogruppo dei 20 Warpriest §2.1, Fase 2 ritualisti |
+| Emissario Red Hand | 12 | 1-3 | `Bestiario/emissario-red-hand-cr12.md` | **Conditional** (Ghostlord branch; P3 Ghostlord alleanza) |
+| Zarim (Illithid luogotenente) | 12 | ×1 | `Bestiario/zarim-illithid-luogotenente-cr12.md` | Torneo Dauth P2B Day 2 (fixed) |
+| Xal'thor (Illithid Commander) | 14 | ×1 | `Bestiario/villain/Xal_thor/Xal_thor.md` (pointer) | Torneo Dauth P2B Day 3 (fixed) |
 | Saarvith | 11 | ×1 | `09_.../P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | Rhest P2 (PG deviabile) |
 | Zalkatar | 13 | ×1 | `09_.../P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` | Torre Invisibile P2A (PG deviabile) |
-| Wyrmlord Karruk | 10 | ×1 | `Armate-UNITA-NUOVE/wyrmlord-karruk-cr10.md` | Rethmar Fase 1 assault leader |
-| Ondata Giganti — mass wave | 15 (EL) | ×2 ondate | `Armate-UNITA-NUOVE/ondata-giganti-fanteria-cr15.md` | Rethmar Fase 1 (prima ondata) + Fase 3 (rinforzo) — assorbe gli 80 Hill Giant §2.1 + ogre/ettin supporto |
+| Wyrmlord Karruk | 10 | ×1 | `Bestiario/wyrmlord-karruk-cr10.md` | Rethmar Fase 1 assault leader |
+| Ondata Giganti — mass wave | 15 (EL) | ×2 ondate | `Bestiario/ondata-giganti-fanteria-cr15.md` | Rethmar Fase 1 (prima ondata) + Fase 3 (rinforzo) — assorbe gli 80 Hill Giant §2.1 + ogre/ettin supporto |
 | Azarr Kul (finale) | 15 | ×1 | `09_.../P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md` | Rethmar Fase 3 (arrivo Day 40+2) |
-| Avatar di Tiamat (climax) | 17 | ×1 | `Armate-UNITA-NUOVE/avatar-tiamat-cr17.md` | **Conditional**: evocato solo se Ritual Clock ≥18 (Fase 3-4 climax) |
-| Il Collezionista (Rakshasa) | 18 | ×1 | `PNG/Il_Collezionista_Rakshasa.md` (pointer) | **Conditional** shadow branch (non encounter ordinario) |
-| Xal'thor allied thralls (Illithid psion/guerrieri) | 6-8 | ~30-50 | (da `Armate-UNITA-NUOVE/zarim-*` + MM) | **Conditional** se Xal'thor allea Mano Rossa (+400 unità §4) |
-| Ghost Lion Spettrale | 8 | ~6-12 | `Armate-UNITA-NUOVE/ghost-lion-spettrale-cr8.md` | Ghostlord pride (Fase 2 se ostile) |
+| Avatar di Tiamat (climax) | 17 | ×1 | `Bestiario/avatar-tiamat-cr17.md` | **Conditional**: evocato solo se Ritual Clock ≥18 (Fase 3-4 climax) |
+| Il Collezionista (Rakshasa) | 18 | ×1 | `Bestiario/villain/Il_Collezionista_Rakshasa/Il_Collezionista_Rakshasa.md` (pointer) | **Conditional** shadow branch (non encounter ordinario) |
+| Xal'thor allied thralls (Illithid psion/guerrieri) | 6-8 | ~30-50 | (da `Bestiario/zarim-*` + MM) | **Conditional** se Xal'thor allea Mano Rossa (+400 unità §4) |
+| Ghost Lion Spettrale | 8 | ~6-12 | `Bestiario/ghost-lion-spettrale-cr8.md` | Ghostlord pride (Fase 2 se ostile) |
 
 **Note di coerenza**:
 
@@ -156,7 +179,7 @@ Approssimato a **~10.000** come target narrativo.
 
 | Distaccamento | Unità | Destino | Stato canonico |
 |---|---|---|---|
-| **Vanguard Hammerfist** (Fauci di Palude + 900 unità) | 900 | Hammerfist | **Distrutto Day 19** (vedi file Arc 08) |
+| **Vanguard Hammerfist** (Fauci di Palude + 900 unità) | 900 | Hammerfist | **-900 effettivi Day 19** (~500 morti + ~400 dispersi in rotta, non si ricongiungono — piano ARC-08 D11, scenario di vittoria default; vedi file Arc 08) |
 | **Contingente Rhest** (Saarvith + Regiarix + 200 drow/goblin + 2 Razorfiend) | 200 | Lake Rhest | **A rischio** P2 Arc-09 |
 | **Contingente Torre** (Zalkatar + Ozyrrandion + 150 Illithid thralls + 1 Razorfiend) | 150 | Invisible Tower | **A rischio** P2A Arc-09 |
 | **Cellula Dauth** (Xal'thor + 100 Illithid psionic + thralls) | 100 | Dauth | **Day 3 Tournament fixed assault** |
@@ -232,17 +255,27 @@ sforzo medio, **meglio di Hammerfist** solo se i PG eccellono.
 ## 7. Interazione con March Clock (AP ufficiale)
 
 Dettagli completi in `Armate-SINCRONIZZAZIONE-CAMPAGNA.md` §2 (waypoint
-ledger AP Day 1→40).
+ledger AP Day 1→42).
 
 **Sync Point Day 19**: Terrelton equivalent cade *simultaneamente* alla
 fine della Battaglia di Hammerfist. Questo è il **punto di sincronia
 canonica** per tutta l'Arco-09.
 
-**Days 20-39**: window PG per Arc-09 (Hella, Tordek, Artemis, Thorik
+**Days 20-41**: window PG per Arc-09 (Hella, Tordek, Artemis, Thorik
 quest + Rhest + Tower + eventuale Ghostlord).
 
-**Day 40**: orda arriva a Rethmar e si accampa. Fase 0 (Notte dei Drow)
-parte quella notte.
+**Day 35-37 — Sosta di Sonjak (aberrazioni + catena rifornimenti):**
+Dopo la caduta di Witchcross, l'orda si ferma per 2 giorni obbligatori:
+(a) Matrona Sonjak conduce i suoi esperimenti sulle spore fungine sui
+prigionieri catturati — vedi §2.4a; (b) la catena logistica dei
+rifornimenti è esaurita: 11.000 truppe consumano 35-40 t/giorno e i
+villaggi saccheggiati non bastano — Azarr Kul aspetta i convogli dalle
+Wyrmbones. Questo ritardo è tattico oltre che logistico: il comandante
+supremo vuole presentarsi a Rethmar alla massima potenza.
+
+**Day 42**: orda arriva a Rethmar e si accampa. Fase 0 (Notte dei Drow)
+parte nella notte del Giorno 40-41, anticipo tattico. L'assalto
+principale inizia al **Giorno 42**.
 
 ---
 

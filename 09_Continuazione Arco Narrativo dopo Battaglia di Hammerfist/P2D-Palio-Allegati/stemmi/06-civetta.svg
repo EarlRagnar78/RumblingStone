@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240" role="img" aria-label="Stemma Contrada della Civetta">
+  <defs><clipPath id="c6"><path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z"/></clipPath></defs>
+  <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="#141414" stroke="#8a1f2b" stroke-width="6"/>
+  <g clip-path="url(#c6)">
+    <path d="M100 20 H180 V150 Q180 210 100 232 Z" fill="#7a1a26"/>
+    <!-- disco nero di Shar -->
+    <circle cx="100" cy="150" r="30" fill="#0a0a0a" stroke="#4a2a34" stroke-width="2"/>
+    <!-- civetta frontale araldica, argento -->
+    <g stroke="#2a2a2a" stroke-width="2.5" stroke-linejoin="round">
+      <path d="M100 60 q-34 0 -34 40 q0 44 34 50 q34 -6 34 -50 q0 -40 -34 -40z" fill="#e9e6dd"/>
+      <path d="M70 66 q-6 -14 6 -18 q6 10 2 20z" fill="#e9e6dd"/>
+      <path d="M130 66 q6 -14 -6 -18 q-6 10 -2 20z" fill="#e9e6dd"/>
+      <circle cx="86" cy="96" r="12" fill="#fff"/><circle cx="114" cy="96" r="12" fill="#fff"/>
+      <circle cx="86" cy="96" r="5.5" fill="#c9a227"/><circle cx="114" cy="96" r="5.5" fill="#c9a227"/>
+      <circle cx="86" cy="96" r="2" fill="#111"/><circle cx="114" cy="96" r="2" fill="#111"/>
+      <path d="M100 104 l-6 9 h12 z" fill="#c9a227"/>
+      <path d="M84 120 q16 10 32 0" fill="none"/>
+    </g>
+  </g>
+  <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="none" stroke="#8a1f2b" stroke-width="6"/>
+  <rect x="26" y="182" width="148" height="26" rx="4" fill="#000" opacity="0.85"/>
+  <text x="100" y="200" font-family="Georgia,serif" font-size="11.5" fill="#c9a227" text-anchor="middle" font-style="italic">Guardo dove la notte tace</text>
+  <text x="100" y="14" font-family="Georgia,serif" font-size="12" fill="#c9a227" text-anchor="middle" font-weight="bold">LA CIVETTA · Shar</text>
+</svg>

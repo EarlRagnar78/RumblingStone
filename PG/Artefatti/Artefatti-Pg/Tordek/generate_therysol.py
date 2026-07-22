@@ -1,8 +1,8 @@
 import re
 import os
 
-SOURCE_FILE = "/home/jfs/Scrivania/00-Giochi_di_ruolo/00_dnd_3.5/00_Red_hand_of_Doom_GitHub/RumblingStone/PNG/Therysol/Therysol.md"
-OUTPUT_FILE = "/home/jfs/Scrivania/00-Giochi_di_ruolo/00_dnd_3.5/00_Red_hand_of_Doom_GitHub/RumblingStone/PNG/Therysol/Therysol.html"
+SOURCE_FILE = "/home/jfs/Scrivania/00-Giochi_di_ruolo/00_dnd_3.5/00_Red_hand_of_Doom_GitHub/RumblingStone/Bestiario/png/Therysol/Therysol.md"
+OUTPUT_FILE = "/home/jfs/Scrivania/00-Giochi_di_ruolo/00_dnd_3.5/00_Red_hand_of_Doom_GitHub/RumblingStone/Bestiario/png/Therysol/Therysol.html"
 
 # HTML Template with Ice/Crystal Theme (Revised CSS)
 HTML_TEMPLATE = """<!DOCTYPE html>

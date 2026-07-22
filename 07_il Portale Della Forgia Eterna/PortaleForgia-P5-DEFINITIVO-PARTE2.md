@@ -1,6 +1,11 @@
 # IL PORTALE DELLA FORGIA ETERNA
 ## PARTE 5 - VIAGGIO TEMPORALE ANNO -1000
-### PARTE 2/2 – Infiltrazione, Zog’tar, Skulldark e la Scelta degli Dei
+### PARTE 2/2 – Infiltrazione, Zog’tar, Skullcrusher e la Scelta degli Dei
+
+> **Ordine di gioco (D2)**: si gioca DOPO la resurrezione di Hella (P3B) —
+> il party (4, Hella tornata) affronta il viaggio temporale per ultimo,
+> prima del raccordo verso l'ARC-08. Vedi
+> `PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md` §0 D2.
 
 **Versione Definitiva D&D 3.5 – Livello 13 – Stile R.A. Salvatore**  
 Coerente con: P1–P4, Cuore di Moradin, Corona di Adamantio, Ring of Chaotic Illumination, Aegis Fang, Cintura della Devastazione, Battaglia di Hammerfist (Guida Completa DM)
@@ -160,7 +165,7 @@ Qui entrano in gioco gli artefatti e le divinità. Le scelte dei PG **contano da
 1. **Benedizione della Forgia (Attiva o No?):**
    - Thorik può chiedere a Moradin, tramite Corona, di **potenziare Aegis Fang** per questa battaglia.
    - Effetto (se accetta costo): Aegis Fang ottiene **+2 sacro ai danni** contro Zog’tar e le sue guardie per tutta la durata dello scontro.
-   - Costo: Dopo la battaglia, Thorik subisce **1 Livello di Affaticamento** (stanco, –2 For/Des, niente corsa). Questo potrà influire sul confronto con Skulldark.
+   - Costo: Dopo la battaglia, Thorik subisce **1 Livello di Affaticamento** (stanco, –2 For/Des, niente corsa). Questo potrà influire sul confronto con Skullcrusher.
 
 2. **Scelta: Salvare o Finire Zog’tar?**
    - Se i PG cercano di *interrogarlo* invece di finirlo brutalmente, Moradin considera questo un atto di pragmatica saggezza.  
@@ -218,7 +223,7 @@ Artemis può scegliere di **rifiutare entrambe** e agire “a modo suo”, mante
 **Obiettivo DM:** Zog’tar deve MORIRE in questa scena (è così che la storia dice che andò), ma il COME è importante.
 
 - Se i PG lo eliminano in modo rapido e pulito, il campo rimane momentaneamente disorientato, ma non in totale panico.  
-- Se lo uccidono con un’azione spettacolare (esplosione di luce o decapitazione davanti alle guardie), il terrore si diffonde di più, ma aumentano le probabilità che Skulldark intervenga con furia.
+- Se lo uccidono con un’azione spettacolare (esplosione di luce o decapitazione davanti alle guardie), il terrore si diffonde di più, ma aumentano le probabilità che Skullcrusher intervenga con furia.
 
 **Quando Zog’tar cade:**
 
@@ -250,19 +255,19 @@ L’ombra passa sopra la tenda, gigantesca. Il telo si gonfia, vibra, e piccoli 
 
 Un drago sta urlando la sua ira verso le stelle.
 
-Skulldark il Nero ha sentito la morte del suo generale.”*
+Skullcrusher il Nero ha sentito la morte del suo generale.”*
 
 ---
 
-### 3.2 – Skulldark vs Rumbling Stones (Scontro limitato)
+### 3.2 – Skullcrusher vs Rumbling Stones (Scontro limitato)
 
-**Nota DM:** Lo scontro completo contro Skulldark avverrà nella struttura della Battaglia di Hammerfist (Sessioni 3–4, come Fauci di Palude nel 1372). Qui gestisci un **primo confronto** che definisce il legame ancestrale:
+**Nota DM:** Lo scontro completo contro Skullcrusher avverrà nella struttura della Battaglia di Hammerfist (Sessioni 3–4, come Fauci di Palude nel 1372). Qui gestisci un **primo confronto** che definisce il legame ancestrale:
 
-- Skulldark = **antenato di Fauci di Palude**.  
+- Skullcrusher = **antenato di Fauci di Palude**.  
 - Aegis Fang riconosce il “sangue draconico”.  
 - Le scelte dei PG ora influenzeranno i modificatori futuri quando affronteranno Fauci nel 1372.
 
-#### Skulldark il Nero – Profilo Ridotto
+#### Skullcrusher il Nero – Profilo Ridotto
 
 Usa le statistiche di un **Drago Nero Adulto (GS 11–12)** ma NON gestire lo scontro fino alla morte:
 
@@ -270,22 +275,22 @@ Usa le statistiche di un **Drago Nero Adulto (GS 11–12)** ma NON gestire lo sc
 - Incantesimi di livello stregone 5–6 (base).
 
 **Obiettivo qui:**
-- Skulldark scende in picchiata, attacca brevemente i PG se li vede uscire dalla tenda, li mette alla prova, poi si ritira verso Hammerfist (o verso posizione di vantaggio) in previsione della battaglia dell’alba.
+- Skullcrusher scende in picchiata, attacca brevemente i PG se li vede uscire dalla tenda, li mette alla prova, poi si ritira verso Hammerfist (o verso posizione di vantaggio) in previsione della battaglia dell’alba.
 
 #### Interazione Aegis Fang + Corona
 
-Quando Skulldark appare nel cielo:
+Quando Skullcrusher appare nel cielo:
 
 *“Aegis Fang vibra così forte che quasi scappa dalle mani di Thorik.
 
 ‘SANGUE ANTICO,’ brontola la voce dell’arma nella mente del nano. ‘ARTEFICE DI LACRIME. IL PRIMO NERO.’
 
-La Corona si accende – Topazio e Smeraldo brillano all’unisono, e per un istante Thorik vede due immagini sovrapposte: Skulldark che vola nel cielo di Anno –1000… e Fauci di Palude che compie una medesima traiettoria, 2.372 anni dopo. È lo stesso movimento. Lo stesso odio. Lo stesso sangue.
+La Corona si accende – Topazio e Smeraldo brillano all’unisono, e per un istante Thorik vede due immagini sovrapposte: Skullcrusher che vola nel cielo di Anno –1000… e Fauci di Palude che compie una medesima traiettoria, 1.000 anni dopo. È lo stesso movimento. Lo stesso odio. Lo stesso sangue.
 
 Moradin sussurra: ‘Ricorda questo. Ogni ferita che infliggi ora all’antenato, la mia Forgia la ricorderà quando affronterai il discendente.’”*
 
 **Meccanica:**  
-- Ogni colpo andato a segno su Skulldark in questo scontro **conta** come un “segno” nella Forgia Eterna.  
+- Ogni colpo andato a segno su Skullcrusher in questo scontro **conta** come un “segno” nella Forgia Eterna.  
 - In futuro, nella battaglia contro Fauci di Palude nel 1372, i PG otterranno un bonus situazionale (ad esempio +1 TxC o +1d6 danni per ogni “ferita ancestrale” segnata).
 
 #### Interazione Ring of Chaotic Illumination
@@ -296,12 +301,12 @@ Il Ring reagisce violentemente alla presenza del drago:
 - Mask: “Ora, colpisci dove nessuno se lo aspetta. Segna il sangue della bestia e la tua leggenda supererà le cronache.”
 
 Artemis può:
-- Usare un blast per segnare Skulldark (danno moderato, ma simbolico).  
+- Usare un blast per segnare Skullcrusher (danno moderato, ma simbolico).  
 - Oppure concentrarsi sulla fuga (ce la faranno, evitando uno scontro suicida ora).
 
 #### Interazione Cintura della Devastazione
 
-Se Tordek tenta di usare la Cintura contro Skulldark in questo frangente, scopre che la cintura **rifiuta** di consumare cariche contro un avversario che non è “destinato a cadere in questo giorno”.  
+Se Tordek tenta di usare la Cintura contro Skullcrusher in questo frangente, scopre che la cintura **rifiuta** di consumare cariche contro un avversario che non è “destinato a cadere in questo giorno”.  
 
 - Messaggio implicito: il vero combattimento draconico **appartiene al futuro** (Fauci 1372).
 
@@ -313,12 +318,12 @@ Se Tordek tenta di usare la Cintura contro Skulldark in questo frangente, scopre
 
 ### 4.1 – Alba di Fuoco e Acciaio
 
-Dopo l’uccisione di Zog’tar e il primo scontro con Skulldark, i PG devono:
+Dopo l’uccisione di Zog’tar e il primo scontro con Skullcrusher, i PG devono:
 - Rientrare verso le linee naniche,  
 - O nascondersi e osservare,  
 - O coordinarsi con le difese di Hammerfist.
 
-**Usa quanto descritto in** `00_Final_hammerfist_battle-La_Mano_Rossa_del_Destino-Guida_Completa_del_DM.md` **per allineare gli eventi macro:**
+**Usa quanto descritto in** `ARC08-01-GUIDA-DM.md` **per allineare gli eventi macro:**
 - Giorno 1: Assalto alle mura.  
 - Giorno 2: Breccia nella roccia.  
 - Giorno 3: Soffio della Disperazione, poi arrivo dei Rumbling Stones (i PG) nella Sessione 3, Incontro 3B.
@@ -331,7 +336,7 @@ Quando la battaglia giunge al culmine e Hammerfist **NON cade** – grazie alle 
 
 *“Il sole sorge lento dietro le montagne. Il cielo ancora odora di fumo, sangue e acido. I corpi dei nemici giacciono a migliaia ai piedi delle mura, e l’aria è piena del pianto dei vivi e del silenzio dei morti.
 
-Thorik è in piedi sulle mura, ancora ansimante. La Corona di Adamantio sulla sua fronte è pesante, calda. Aegis Fang è coperta di sangue nero e rosso. Tordek è al suo fianco, i pugni tumefatti. Hella ha le mani ancora tremanti per gli incantesimi lanciati, gli occhi gonfi di lacrime. Artemis guarda il cielo, aspettandosi di vedere ancora Skulldark… ma il drago è fuggito nelle paludi, ferito nell’orgoglio e nel corpo.
+Thorik è in piedi sulle mura, ancora ansimante. La Corona di Adamantio sulla sua fronte è pesante, calda. Aegis Fang è coperta di sangue nero e rosso. Tordek è al suo fianco, i pugni tumefatti. Hella ha le mani ancora tremanti per gli incantesimi lanciati, gli occhi gonfi di lacrime. Artemis guarda il cielo, aspettandosi di vedere ancora Skullcrusher… ma il drago è fuggito nelle paludi, ferito nell’orgoglio e nel corpo.
 
 In quel momento, la luce del sole colpisce la Corona.
 
@@ -393,7 +398,7 @@ Segna queste conseguenze per le Parti 6–7:
 1. **Zog’tar ucciso nel passato:**  
    - L’orda nel 1372 è meno disciplinata (–1 morale generale nelle sezioni opportune della Battaglia di Hammerfist).
 
-2. **Danni inflitti a Skulldark:**  
+2. **Danni inflitti a Skullcrusher:**  
    - Per ogni “colpo significativo” (a discrezione DM), concedi un **+1 cumulativo ai tiri per colpire** contro Fauci di Palude, fino a massimo +3.  
    - In alternativa, +1d6 danni sacri (una volta per scontro) come “eco ancestrale”.
 

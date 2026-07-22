@@ -27,7 +27,7 @@ SRD URL pattern: `https://www.d20srd.org/srd/classes/[className].htm`
 
 ## Barbarian
 
-**Special Features:** Fast movement (+10 ft), Illiteracy (starts), Rage, Uncanny Dodge, Trap Sense, Improved Uncanny Dodge, Damage Reduction (10th+), Greater Rage (11th), Indomitable Will (14th), Tireless Rage (17th), Mighty Rage (20th)
+**Special Features:** Fast movement (+10 ft), Illiteracy (starts), Rage, Uncanny Dodge (2nd), Trap Sense (3rd+), Improved Uncanny Dodge (5th), Damage Reduction (7th+), Greater Rage (11th), Indomitable Will (14th), Tireless Rage (17th), Mighty Rage (20th)
 
 **Rage:** +4 STR, +4 CON, +2 Will saves, −2 AC; duration = 3 + CON mod rounds; once/day at 1st, +1/day at 4th, 8th, 12th, 16th, 20th. Fatigued for 2× rage duration after.
 
@@ -61,16 +61,23 @@ Air, Animal, Chaos, Death, Destruction, Earth, Evil, Fire, Good, Healing, Knowle
 ## Druid
 
 **Divine spells** (WIS-based, prepared)
-**Wild Shape**: At 5th level; Medium or smaller animal; 1/day + 1/day per 2 levels; duration = 1 hr/level
+**Wild Shape**: from 5th level; duration 1 hour/druid level; verified SRD
+progression (Table: The Druid):
 
-Wild Shape size progression:
-- 5th: Small/Medium animal
-- 6th: Large animal (2nd use/day)  
-- 8th: Tiny animal (3rd/day)
-- 9th: Plant form; 4th use
-- 11th: Huge animal; 5th use
-- 12th: Elemental (Small) 1/day; 6th animal use
-- 16th: Huge elemental; unlimited animal
+| Druid level | Uses/day | New forms available |
+|---|---|---|
+| 5th | 1/day | Small or Medium animal |
+| 6th | 2/day | — |
+| 7th | 3/day | — |
+| 8th | 3/day | + Large animal |
+| 10th | 4/day | — |
+| 11th | 4/day | + Tiny animal |
+| 12th | 4/day | + plant |
+| 14th | 5/day | — |
+| 15th | 5/day | + Huge animal |
+| 16th | 5/day | elemental 1/day (Small/Medium/Large) |
+| 18th | 6/day | elemental 2/day |
+| 20th | 6/day | elemental 3/day; + Huge elemental |
 
 **Animal Companion**: Bonus HD and special abilities scale with druid level
 **Woodland Stride, Trackless Step, Resist Nature's Lure, Venom Immunity, Timeless Body, A Thousand Faces**
@@ -102,7 +109,7 @@ Fighter is the feat factory. No special class features beyond bonus feats and st
 
 **AC Bonus**: +WIS mod to AC when unarmored (if WIS positive)
 
-**Monk Speed Bonus**: +10 ft/5 levels (unarmored)
+**Monk Speed Bonus**: +10 ft at 3rd and every 3 levels after (+60 ft at 18th); lost in armor or medium/heavy load
 
 **Alignment**: Must be Lawful
 
@@ -114,7 +121,7 @@ Fighter is the feat factory. No special class features beyond bonus feats and st
 **Lay on Hands**: CHA mod × paladin level HP per day
 **Aura of Courage**: Immune to fear; allies within 10 ft get +4 vs. fear
 **Smite Evil**: 1/day at 1st (+1/5 levels); +CHA to attack, +paladin level to damage vs. evil
-**Turn Undead**: As cleric of (paladin level − 2)
+**Turn Undead**: from 4th level; 3 + CHA mod times/day; as a cleric of (paladin level − 3)
 **Remove Disease**: 1/week per 3 levels (6th+)
 **Spellcasting**: Divine, 1st–4th level spells, CHA-based, prepared; starts at 4th level
 **Special Mount**: 5th level
@@ -141,7 +148,7 @@ Fighter is the feat factory. No special class features beyond bonus feats and st
 **Sneak Attack**: +1d6 per 2 rogue levels; applies when flanking or target denied DEX
 **Trapfinding**: Find/disarm magical traps (Search/Disable Device)
 **Evasion** (2nd); **Trap Sense** (3rd, +1/3 levels); **Uncanny Dodge** (4th); **Improved Uncanny Dodge** (8th)
-**Special Abilities** (every 2 levels from 10th): Crippling Strike, Defensive Roll, Feat, Improved Evasion, Opportunist, Skill Mastery, Slippery Mind
+**Special Abilities** (10th, then every 3 levels: 13th, 16th, 19th): Crippling Strike, Defensive Roll, Feat, Improved Evasion, Opportunist, Skill Mastery, Slippery Mind
 
 **Key Skills**: Bluff, Climb, Craft, Decipher Script, Diplomacy, Disable Device, Disguise, Escape Artist, Forgery, Gather Info, Hide, Intimidate, Jump, Knowledge (local), Listen, Move Silently, Open Lock, Perform, Search, Sense Motive, Sleight of Hand, Spot, Swim, Tumble, Use Magic Device, Use Rope
 
@@ -150,14 +157,17 @@ Fighter is the feat factory. No special class features beyond bonus feats and st
 ## Sorcerer
 
 **Arcane spells** (CHA-based, no preparation — all slots flexible, known spells only)
-**Spells Known** at 20th: 9 (0-level) + 5 each levels 1–9
+New spell level every 2 levels (2nd-level spells at 4th, 9th-level at 18th).
 
-| Level | Spells/Day (slots) | Spells Known |
+Verified anchor rows (SRD Table: The Sorcerer / Sorcerer Spells Known):
+
+| Level | Spells/Day (0/1st/2nd/…) | Spells Known |
 |---|---|---|
-| 1 | 5/3 | 4 cantrips, 2 1st |
-| 5 | 6/6/5/4 | 4/3/2/1 |
-| 10 | 6/6/6/6/6/5/3 | 4/4/3/3/2/2/1 |
-| 20 | 6/6/6/6/6/6/6/6/6/6 | 9+5 each |
+| 1 | 5/3 | 4/2 |
+| 5 | 6/6/4 | 6/4/2 |
+| 10 | 6/6/6/6/5/3 | 9/5/4/3/2/1 |
+| 15 | 6/6/6/6/6/6/6/4 | 9/5/5/4/4/4/3/2 |
+| 20 | 6/6/6/6/6/6/6/6/6/6 | 9/5/5/4/4/4/3/3/3/3 |
 
 **Familiar**: Same as wizard familiar
 
@@ -172,13 +182,15 @@ Fighter is the feat factory. No special class features beyond bonus feats and st
 
 **Arcane spells** (INT-based, prepared from spellbook; any in spellbook)
 **Spellbook**: Starts with 3+INT mod spells; add 2/level
-**Specialist**: Gain extra spell/day per level of chosen school; must give up 2 opposing schools (Divination only requires giving up 1).
+**Specialist**: +1 spell slot per spell level, school spells only; must
+choose **any two** prohibited schools (no fixed opposition pairs in 3.5) —
+except a Diviner, who gives up only one; Divination itself can never be a
+prohibited school. Prohibited spells can't be cast even from scrolls/wands;
+the choice is permanent.
 **Familiar**: At 1st level; options include cat, hawk, owl, rat, raven, tiny viper, toad, weasel
 **Bonus Feats**: Scribe Scroll (1st), metamagic/item creation feats at 5th, 10th, 15th, 20th
 
 **Schools of Magic**: Abjuration, Conjuration, Divination, Enchantment, Evocation, Illusion, Necromancy, Transmutation
-
-**Opposition Schools**: Conjuration ↔ Transmutation; Divination ↔ Illusion; Enchantment ↔ Evocation; Necromancy ↔ Abjuration (standard pairings)
 
 **Spells per Day**:
 | Level | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |

@@ -132,8 +132,8 @@ HEAT ZONES (Overlay):
 **2 CASCATE LAVA VERTICALI 🌋:**
 1. **Cascata 1:** Colonne K-M, Riga 15-20 (4.5m wide × 9m descent)
    - Fall: Da ceiling (+10m) giù in fiume
-   - Effect: Splash 3m radius (5d6 fire), fortitude DC 18 or blinded
-   - Sound: Loud (Listen DC -5 within 15m)
+   - Effect: Splash 3m radius (5d6 fire), fortitude CD 18 or blinded
+   - Sound: Loud (Listen CD -5 within 15m)
    
 2. **Cascata 2:** Colonne AK-AM, Riga 35-40 (4.5m wide × 9m descent)
    - Mirror cascata 1 (stessi effetti)
@@ -183,7 +183,7 @@ HEAT ZONES (Overlay):
 - Stay West Platform full 80m
 - Avoid bridges = avoid FE2
 - Risk: FE1 patrol blocks path (combat inevitable)
-- Heat zones: Persistent 1d6/round (Fort DC 15)
+- Heat zones: Persistent 1d6/round (Fort CD 15)
 
 **OPZIONE C - LEAP LAVA (Risky but Direct):**
 - *Jump* spell: 30ft (9m) can clear lava width (10.5m barely!)
@@ -208,6 +208,38 @@ HEAT ZONES (Overlay):
 - From Ponte Sud (AU44) to Exit (D53): **13.5m (9 quadrati)** - 1 move action
 
 **TOTAL DISTANCE:** 80m (53 quadrati) = ~4-6 rounds travel (if uninterrupted)
+
+---
+
+### 🌍 AMBIENTE (companion T5b, consolidato da POSIZIONI + DISTANZE)
+
+**SVG**: `rendered/Portale-Forgia-L2-REVISED-UltraClear_map01_colonna-k-15m-da-nord.svg`
+
+| Elemento | Dove | Effetto meccanico 3.5 |
+|---|---|---|
+| Fiume di lava centrale 🔥 | col H-N, tutta la lunghezza (10,5 m largo) | attraversamento letale; caduta dentro = morte quasi certa; le creature di fuoco vi nuotano immuni |
+| 3 Ponti | Nord (riga 10), Centro (riga 27), Sud (riga 44) | unici attraversamenti "sicuri" — ma sorvegliati |
+| Piattaforma Ovest / Est 🟫 | col A-G / O-U (3 m larghe = **fila indiana**, 2 quadrati) | movimento in singola fila; poco spazio di manovra |
+| Zone di calore | lungo il corridoio (opzione "straight west") | **1d6 fuoco/round persistente, Tempra CD 15** |
+
+**Distanze chiave**: Ingresso (D05) → Ponte Nord = 7,5 m/5 q; Ponte Nord→Centro e Centro→Sud = 25,5 m/17 q ciascuno; Ponte Sud→Uscita = 13,5 m/9 q. **Totale 80 m/53 q ≈ 4-6 round** se ininterrotto.
+
+### ⚔️ TATTICHE (companion T5b, consolidato da TATTICA ATTRAVERSAMENTO)
+
+- **4 Elementali del Fuoco (Grande)**: **FE1** pattuglia la piattaforma Ovest (carica i PG); **FE2** è **nella lava sotto il Ponte Centro** ed emerge di sorpresa all'attraversamento; **FE3** pattuglia la piattaforma Est (imboscata); **FE4** vaga libero nella lava (attacchi in emersione, globi di lava).
+- **Tre modi di attraversare** (scelta dei PG): **A — Ponti** (più sicuro ma sorvegliato: FE2 sotto, FE3 a Est); **B — dritti sulla Ovest** (evita FE2 ma FE1 blocca ed è "caldo": 1d6/round); **C — saltare la lava** (*Salto* 9 m ci arriva a malapena sui 10,5 m; *Volare* banalizza; *Levitazione* lenta ma sicura — ⚠ *dissolvi* a mezz'aria = morte).
+- **Morale**: elementali evocati/territoriali, combattono senza resa `[INFERRED]`.
+
+### 🔄 EVOLUZIONE (companion T5b — rotta e calore)
+
+| Stato | Trigger | Cosa cambia | Effetto |
+|---|---|---|---|
+| A — Rotta Ponti | i PG scelgono i ponti | FE2 emerge al Ponte Centro; FE3 imbosca a Est | 2 scontri sui chokepoint stretti |
+| B — Rotta Ovest | i PG restano sulla piattaforma | FE1 blocca la fila; calore persistente | scontro inevitabile + logorio 1d6/round |
+| C — Volo/Salto | magia di movimento | gli FE nella lava restano sotto | scontro evitabile ma rischio-dissolvi |
+
+> Esiti aperti (D13): quale rotta e quali FE si ingaggiano dipende dalle scelte
+> dei PG e dai dadi, non da un copione.
 
 ---
 
@@ -350,7 +382,7 @@ Material: Adamantine-reinforced stone
    - End: Q17 (altare edge)
 
 - **Material:** Mithral (silver, immune fire, non-slip)
-- **Width:** 2m (1-2 quadrati) - Narrow! Balance DC 10 if rush
+- **Width:** 2m (1-2 quadrati) - Narrow! Balance CD 10 if rush
 - **HP:** 180 ciascuna, AC 25, Hardness 15 (indistruttibili praticamente)
 
 **PERIMETER PLATFORM 🟫 (Safe Zone):**
@@ -420,6 +452,40 @@ Material: Adamantine-reinforced stone
 - Boss Center (P17), Radius 6m (4 quadrati)
 - Threatens: Col M-T, Righe 13-21
 - **ENTIRE Altare platform + metà passerelle!**
+
+---
+
+### 🌍 AMBIENTE (companion T5b, consolidato da POSIZIONI + DISTANZE + HAZARD)
+
+**SVG**: `rendered/Portale-Forgia-L2-REVISED-UltraClear_map02_mappa-pf-4-forgia-adamantina-boss-elder-fire-ele.svg`
+
+| Elemento | Dove | Effetto meccanico 3.5 |
+|---|---|---|
+| Piscina di lava centrale 🔥 | centro P17, raggio 10 m (20 m diam.), −3 m | **20d6 fuoco** se ci cadi (morte quasi certa); 1200 °C |
+| Altare del Topazio levitante 🟦💎 | P-Q/16-17, **+5 m** (gemma +7 m) | obiettivo (prendere il Topazio); bagliore = luce intensa 30 m (arena illuminata) |
+| 4 Passerelle di Mithral 🟦 | Nord Q08-16, Sud Q18-25, Est Y-Q/17, Ovest E-Q/17 (2 m larghe) | **strette: Equilibrio CD 10 se corri**; immuni al fuoco; PF 180/Durezza 15 |
+| Piattaforma perimetrale 🟫 | anello 5 m (raggio 20-25 m) | zona "sicura" dalla lava, ma **aura di calore** applica comunque |
+| Aura di calore del boss | 6 m dal centro (M-T/13-21) | **3d6 fuoco/round** — copre l'intera piattaforma dell'altare + metà passerelle |
+
+**Distanze chiave**: Perimetro (I08) → inizio passerella (Q08) = 12 m/8 q; passerella → altare (Q16) = 12 m/8 q (**totale 24 m/16 q ≈ 2-3 round**); il boss (P17) minaccia N-S/13-21 = area 9×9.
+
+### ⚔️ TATTICHE (companion T5b, consolidato da TATTICA BOSS FIGHT)
+
+- **Elder Fire Elemental** (boss, CR 11, ~228 PF, Enorme): sta al centro sopra la lava (+1,5 m), portata 4,5 m. Apre con ***Muro di Fuoco*** attraverso la passerella Nord (blocca l'approccio ovvio → i PG usano Est/Ovest per flancare); *Sfera Fiammeggiante* / colpi a distanza durante l'attraversamento; quando i PG sono all'altare **emerge in full melee** (2 colpi +20, 2d8+7 fuoco ciascuno) e minaccia con l'AdO chi afferra il Topazio.
+- **Obiettivo dei PG**: raggiungere l'altare e **prendere il Topazio** (azione standard, provoca AdO) → apre il portale di fuga. Poi: **combattere a morte** (boss tosto) **o afferra-e-scappa** (Topazio in mano, sprint verso l'uscita — il boss insegue ma i PG hanno vantaggio).
+- **Morale**: elementale anziano territoriale, non si arrende; insegue oltre la presa del Topazio.
+
+### 🔄 EVOLUZIONE (companion T5b, consolidato dalle 4 fasi)
+
+| Stato | Trigger | Cosa cambia sulla griglia | Effetto meccanico |
+|---|---|---|---|
+| A — Approccio (round 1-3) | i PG lasciano il perimetro | boss lancia *Muro di Fuoco* sulla passerella Nord | approccio deviato su Est/Ovest |
+| B — Attraversamento (round 4-6) | i PG sulle passerelle (2 m!) | attacchi a distanza del boss + aura di calore 3d6/round | rischio caduta (20d6 lava) sotto pressione |
+| C — Altare (round 7-10) | i PG raggiungono l'altare (+5 m) | il boss emerge in full melee; Topazio afferrabile | AdO alla presa; portale di fuga si apre |
+| D — Estrazione (round 11+) | Topazio preso | scelta: combattere a morte **o** fuggire al portale | il boss insegue, i PG hanno vantaggio |
+
+> Esiti aperti (D13): affrontare o fuggire, e da quale passerella, è scelta
+> dei PG; la presa del Topazio è il trigger che apre l'uscita, non un copione.
 
 ---
 

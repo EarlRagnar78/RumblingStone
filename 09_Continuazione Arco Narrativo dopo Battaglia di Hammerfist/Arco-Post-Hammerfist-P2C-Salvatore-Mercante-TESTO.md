@@ -4,8 +4,8 @@
 **Timing:** Day 28–32 (tra la chiusura delle quest personali e l'arrivo a Rethmar)
 **Posizione:** Strada del deserto — tratto Cannath Vale → Rethmar (Shaar meridionale)
 **Livello PG:** 14 | **GS Incontro:** 14 (sociale) / CR 16 se si arriva al combattimento
-**Fonte NPC:** `PNG/Salvatore/Salvatore.md`
-**File collegati:** `PNG/Il_Collezionista_Rakshasa.md`, `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE4-CIRCOLO-MYTHAL-STATUE-TESTO.md`
+**Fonte NPC:** `Bestiario/villain/Salvatore/Salvatore.md`
+**File collegati:** `Bestiario/villain/Il_Collezionista_Rakshasa/Il_Collezionista_Rakshasa.md`, `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE4-CIRCOLO-MYTHAL-STATUE-TESTO.md`
 
 ---
 

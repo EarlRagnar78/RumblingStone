@@ -6,7 +6,7 @@ Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-RAZORFIEND-NIDO.md
 ## 1. Contesto
 
 Il nido è su un isolotto di rovine a metà strada verso il centro di Rhest.[web:80]  
-Distruggerlo impedisce alla Red Hand di dispiegare queste “armi viventi” alla Battaglia di Rethman.
+Distruggerlo impedisce alla Red Hand di dispiegare queste “armi viventi” alla Battaglia di Rethmar.
 
 ---
 
@@ -58,7 +58,7 @@ Totale combinato ~CR 12–13 a seconda dell’ottimizzazione del party.
 ### Esiti
 
 - Nido completamente distrutto:
-  - niente razorfiend come ondate speciali a Rethman.  
+  - niente razorfiend come ondate speciali a Rethmar.  
 - Nido parzialmente distrutto:
   - 1–2 esemplari superstiti possono apparire nell’Assedio.[web:80]  
 - Nido intatto / fuga PG:

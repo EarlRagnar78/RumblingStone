@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480" role="img" aria-label="Stalla della contrada — mappa tattica dell'assalto drow (Giorno 2, notte)">
+  <rect width="640" height="480" fill="#1c1a17"/>
+  <text x="320" y="26" font-family="Georgia,serif" font-size="18" text-anchor="middle" font-weight="bold" fill="#e9c24a">Stalla della Contrada — Assalto Drow (Notte, Giorno 2)</text>
+  <text x="320" y="44" font-family="Georgia,serif" font-size="11" text-anchor="middle" fill="#b8a884">Griglia 1 quadretto = 5 ft · buio (torce spente dai drow) · GS 11–12</text>
+
+  <!-- griglia -->
+  <g stroke="#2e2a24" stroke-width="1">
+    <g id="v"></g>
+  </g>
+  <g stroke="#332f28" stroke-width="1">
+    <!-- linee verticali ogni 40px da 60 a 580 -->
+    <path d="M60 70 V430 M100 70 V430 M140 70 V430 M180 70 V430 M220 70 V430 M260 70 V430 M300 70 V430 M340 70 V430 M380 70 V430 M420 70 V430 M460 70 V430 M500 70 V430 M540 70 V430 M580 70 V430"/>
+    <path d="M60 70 H580 M60 110 H580 M60 150 H580 M60 190 H580 M60 230 H580 M60 270 H580 M60 310 H580 M60 350 H580 M60 390 H580 M60 430 H580"/>
+  </g>
+  <!-- perimetro stalla -->
+  <rect x="60" y="70" width="520" height="360" fill="none" stroke="#6b5a3a" stroke-width="5"/>
+
+  <!-- fieno -->
+  <g fill="#8a7526" opacity="0.85"><rect x="64" y="74" width="72" height="52"/><rect x="504" y="74" width="72" height="52"/></g>
+  <text x="100" y="104" font-family="Georgia,serif" font-size="10" fill="#241f14" text-anchor="middle">fieno</text>
+  <text x="540" y="104" font-family="Georgia,serif" font-size="10" fill="#241f14" text-anchor="middle">fieno</text>
+
+  <!-- BOX DEL CAVALLO (obiettivo) -->
+  <rect x="260" y="150" width="120" height="120" fill="#3a2c14" stroke="#e9c24a" stroke-width="3"/>
+  <text x="320" y="196" font-family="Georgia,serif" font-size="12" fill="#e9c24a" text-anchor="middle" font-weight="bold">BOX</text>
+  <text x="320" y="212" font-family="Georgia,serif" font-size="11" fill="#f0d98a" text-anchor="middle">CAVALLO</text>
+  <text x="320" y="230" font-family="Georgia,serif" font-size="9" fill="#c8b884" text-anchor="middle">(obiettivo drow)</text>
+
+  <!-- abbeveratoio / secchi -->
+  <rect x="420" y="300" width="90" height="26" fill="#2a3a44" stroke="#4a5a64"/><text x="465" y="317" font-family="Georgia,serif" font-size="9" fill="#bfe6f5" text-anchor="middle">abbeveratoio</text>
+  <g fill="#3a2c14"><circle cx="150" cy="320" r="12"/><circle cx="180" cy="332" r="12"/></g><text x="150" y="356" font-family="Georgia,serif" font-size="9" fill="#c8b884" text-anchor="middle">secchi</text>
+
+  <!-- botola/fogna (ingresso drow) -->
+  <circle cx="100" cy="400" r="16" fill="#0a0f12" stroke="#3a91bd" stroke-width="2.5"/>
+  <text x="100" y="404" font-family="Georgia,serif" font-size="9" fill="#7fd0ec" text-anchor="middle">botola</text>
+  <text x="140" y="420" font-family="Georgia,serif" font-size="10" fill="#7fd0ec">◀ ingresso drow (fogna)</text>
+
+  <!-- porta principale (scorta PG) -->
+  <rect x="300" y="424" width="40" height="12" fill="#6b5a3a"/>
+  <text x="320" y="452" font-family="Georgia,serif" font-size="10" fill="#e9c24a" text-anchor="middle">porta principale ▸ scorta PG</text>
+
+  <!-- token nemici -->
+  <g font-family="Georgia,serif" font-size="11" font-weight="bold" text-anchor="middle">
+    <circle cx="140" cy="380" r="13" fill="#4a1533" stroke="#c98fb0" stroke-width="2"/><text x="140" y="384" fill="#fff">D</text>
+    <circle cx="180" cy="360" r="13" fill="#4a1533" stroke="#c98fb0" stroke-width="2"/><text x="180" y="364" fill="#fff">D</text>
+    <circle cx="120" cy="340" r="14" fill="#2a0d33" stroke="#b06fd0" stroke-width="2"/><text x="120" y="344" fill="#fff">C</text>
+    <circle cx="230" cy="300" r="13" fill="#3a5a1f" stroke="#9fd06f" stroke-width="2"/><text x="230" y="304" fill="#fff">S</text>
+  </g>
+
+  <!-- token PG suggeriti -->
+  <g font-family="Georgia,serif" font-size="11" font-weight="bold" text-anchor="middle">
+    <circle cx="320" cy="300" r="13" fill="#1f4a6b" stroke="#7fd0ec" stroke-width="2"/><text x="320" y="304" fill="#fff">B</text>
+    <circle cx="360" cy="400" r="13" fill="#1f4a6b" stroke="#7fd0ec" stroke-width="2"/><text x="360" y="404" fill="#fff">P</text>
+  </g>
+
+  <!-- legenda -->
+  <g font-family="Georgia,serif" font-size="11" fill="#d8c9a6">
+    <text x="60" y="456" font-weight="bold" fill="#e9c24a">Legenda:</text>
+    <text x="128" y="456">D = Drow Assassino (GS9) · C = Chierica di Lolth (GS10) · S = Servitore della Spora (GS3) · B = Barbaresco PG · P = scorta PG</text>
+    <text x="60" y="472" fill="#9fb8c4">Tattica drow: Oscurità sulla botola, puntano al BOX (avvelenare il cavallo), Silenzio per soffocare gli allarmi, ritirata in fogna se scoperti. Catturarne uno vivo = intel Fase 0 + −1 clock Sonjak.</text>
+  </g>
+</svg>

@@ -63,29 +63,34 @@ Forged by Moradin from a shard of creation — not merely a crown of power but "
 
 ### Active Powers (Currently Available)
 
-1. **Stone's Awareness (Su, CL 5):** On natural ground: +1 morale to attack/damage; detect secret doors and traps at will
-2. **Crown of Protection (Ex, CL 6):** +2 deflection bonus to AC while worn
+*Synced to current state (T6b, 2026-07-04): Rituals 1-2 completed (Forge's
+Defense + Trial of the Deep Hall), so the Ritual-2 powers below are now
+active; only Topaz gem lit (state.md §0).*
+
+1. **Stone's Awareness (Su, CL 5):** On natural ground: +1 morale to attack/damage, **+2 insight bonus to AC**; detect secret doors, detect traps AND comprehend languages, all at will *(DM ruling 2026-07-04: both the master's and the HTML's lists apply)*
+2. **Crown of Protection (Ex, CL 6):** +2 deflection bonus to AC while worn (rises to +3 after Ritual 4)
+3. **Moradin's Insight (Su):** True Seeing 1/day (10 min); +4 insight to Craft (Blacksmith). *Unlocked by: Trial of the Deep Hall (Ritual 2, ✅ completed)*
 
 ### Powers To Awaken (Via Legacy Rituals)
 
-1. **Moradin's Insight (Su):** True Seeing 1/day; +4 insight to Craft (Blacksmith). *Unlocked by: Trial of the Deep Hall*
-2. **Adamantine Will (Su):** Counter charm/compulsion on natural ground. *Unlocked by: Anvil of the World*
-3. **Mantle of Stone and Spirit (Su):** Continuous Mind Blank; epic/evil DR. *Unlocked by: Siege of the Eternal Forge*
+1. **Adamantine Will (Su):** Immunity to charm/compulsion + +4 racial vs mental effects, on natural ground. *Unlocked by: Anvil of the World (Ritual 3, in progress)*
+2. **Mantle of Stone and Spirit (Su):** Continuous Mind Blank; epic/evil DR 5; Commune 1/month in an Earth Node. *Unlocked by: Anvil of the World (Ritual 3)*
+3. **Aura of the Eternal Forge (Su):** One-time full heal + divine buffs to time-travelers and all dwarves within 30 m. *Unlocked by: Siege of the Eternal Forge (Ritual 4, final)*
 
 ### Three Sacred Gems
 
 | Gem | Color | Ritual to Activate | Status | Power |
 |---|---|---|---|---|
-| **Immutable Time** | Topaz | Fire Plane ritual | ✅ ACTIVATED | Time travel 1/month from Earth Node; costs 1d10 years aging |
+| **Immutable Time** | Topaz | Fire Plane ritual | ✅ ACTIVATED | Time travel 1/month from Earth Node; activation = 1 hour of concentration (DM ruling 2026-07-04); costs 1d10 years aging |
 | **True Earth** | Emerald | Earth Plane ritual | ⏳  ACTIVATED AFTER ANVIL OF THE WORLD | Wall of Stone / Heal Earth / Controlled Earthquake 1/week (costs 1,000 gp) |
-| **Dwarven Might** | Ruby | Battle at -1000 | ⏳ ACTIVATES AT DAWN | Buff self+allies with strength/courage 1/week; -2 STR for 24h after |
+| **Dwarven Might** | Ruby | Battle 1,000 yrs before (≈372 DR) | ⏳ ACTIVATES AT DAWN | Buff self+allies with strength/courage 1/week; -2 STR for 24h after |
 
 ### Legacy Rituals (Sequential)
 
 1. **Forge's Defense** — ✅ COMPLETED (vision of Hammerfist battle on wearing)
 2. **Trial of the Deep Hall** — ✅ COMPLETED (Underdark profane temple quest)
 3. **Anvil of the World** — ⏳ In progress (Eternal Forge Earth/Fire Planes)
-4. **Siege of the Eternal Forge** — ⏳ Final ritual (time-travel battle, year -1000)
+4. **Siege of the Eternal Forge** — ⏳ Final ritual (time-travel battle, 1,000 years before ≈372 DR)
 
 ---
 

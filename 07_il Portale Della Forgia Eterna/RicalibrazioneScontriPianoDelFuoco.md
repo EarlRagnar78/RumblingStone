@@ -1,4 +1,6 @@
-Perfetto! Ora ho tutti i dettagli necessari. Analizzerò i file per capire il problema e creare scontri ribilanciati nel Piano Elementale del Fuoco.
+> **Stato**: documento di ricalibrazione (Piano del Fuoco, P3) — corregge
+> `PortaleForgia-P3-PianoFuoco-PARTE1.md`/`PARTE2.md`. Vedi piano
+> ARC-07 §1 A6.
 
 ## **RICALIBRAZIONE SCONTRI - PIANO ELEMENTALE DEL FUOCO**
 ### Il Portale della Forgia Eterna - Parte 3 RIBILANCIATA

@@ -251,12 +251,10 @@ Possibili esiti:
 
 ## 6. Cross-arco: il Torneo come trampolino per la Torre Invisibile (Artemis – P2A)
 
-> **Fonte autoritativa della tabella esiti: `PNG/Sethrax_il_Velato/Sethrax.md` → "ESITI E IMPATTO CROSS-ARCO".** In caso di conflitto vince la PNG card.
+> **Fonte autoritativa della tabella esiti: `Bestiario/villain/Sethrax_il_Velato/Sethrax.md` → "ESITI E IMPATTO CROSS-ARCO".** In caso di conflitto vince la PNG card.
 
 In sintesi: l’esito di Sethrax al Torneo (ucciso, catturato, fuga, fuga col seme) modifica il CR effettivo del finale di Artemis alla Torre Invisibile. Tordek e Artemis convergono narrativamente: l’Orbe del Torneo e la Torre Invisibile sono **due nodi della stessa cospirazione planare**.
 
 ---
 
-Questa mini‑mappa ti dà il flusso chiaro giorno per giorno, con tutti i PNG iconici (Tetsu reale, Rihan, Mistress, Koryn, Ironclad, Kragar, Shen, Zarim, Dorn, Xal’thor, Vaereth + draghi) collegati in una linea di crescita del PG.
-
-Vuoi che nel prossimo passo ti prepari una tabella a righe (Round / Avversari / Alleati / Porte consigliate) pronta da stampare come cheat‑sheet?
+Questa mini‑mappa dà il flusso chiaro giorno per giorno, con tutti i PNG iconici (Tetsu reale, Rihan, Mistress, Koryn, Ironclad, Kragar, Shen, Zarim, Dorn, Xal’thor, Vaereth + draghi) collegati in una linea di crescita del PG. Per la tabella rapida Round/Avversari/Alleati/Porte, vedi `Arco-Post-Hammerfist-P2B-Torneo-Tordek-CHEAT-SHEET-Round-e-Porte.md`.

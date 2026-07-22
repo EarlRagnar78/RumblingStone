@@ -1,3 +1,16 @@
+> ⚠️ DEPRECATED (2026-07): bozza storica pre-canone. I nomi PNG **Tetsu**
+> e **Grandmaster Rihan** sono stati adottati nel canone (vedi INDICE-
+> GENERALE e `Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md`,
+> dove compaiono anche Thrain Ironfist e Grom Skullcrusher al loro posto).
+> Il resto — Lady Koryn, Ironclad Bruiser, Mistress of Mirrors, la
+> meccanica dell'Orbe qui descritta, la fusione Xal'thor/Githyanki — è
+> **superato** da `Arco-Post-Hammerfist-P2B-Torneo-Tordek-OTTO-PORTE-e-ORBE.md`
+> (origine planare Githyanki, distinzione Xal'thor/Vaereth/Sethrax, D5)
+> e da `PARTE1-Giorno1-Preliminari.md`/`PARTE2-Giorno2-Semifinali.md`/
+> `PARTE3-Giorno3-Finale-e-Invasione.md`. Conservato solo per valore
+> storico/spunto di scena; **non normativo**. Canone corrente: INDICE-
+> GENERALE + state.md.
+
 Perfetto — adoro l’idea: un torneo in tre giorni, atmosfera da anime (Dragon Ball + Naruto vibes) ma saldamente ancorato alle regole di D&D 3.5. Ti do una versione **pronta da DM**: struttura, scena per scena, come far cambiare l’arena e la tensione, trucchetti per bilanciare con PNG nascosti, **statblock** (valori base, capacità magiche/psioniche e speciali) per i PNG principali e template per i gregari. Tutto in italiano e con numeri suggeriti per D&D 3.5 (puoi adattare velocemente se serve).
 
 ---
@@ -32,7 +45,7 @@ Perfetto — adoro l’idea: un torneo in tre giorni, atmosfera da anime (Dragon
 ## Terreno dinamico (meccaniche d’arena)
 
 * **Piazza centrale (giorno 1)**: piattaforma rotante (ogni 3 round si ruota, cambiano posizioni relative). Effetto: prova di Equilibrio DC 15 per non cadere quando la piattaforma ruota (fallire = prone).
-* **Anelli fluttuanti (giorno 2)**: colonne che si sollevano; chi si trova su un anello può effettuare attacco con vantaggio posizione (attacco +2) ma rischia di essere spinto in basso (salto QUANDO si abbassa — Riflessi DC 16 o caduta).
+* **Anelli fluttuanti (giorno 2)**: colonne che si sollevano; chi si trova su un anello combatte dall'alto (+2 al tiro per colpire per il vantaggio di elevazione, regola SRD 3.5) ma rischia di essere spinto in basso (quando la colonna si abbassa — Riflessi CD 16 o caduta).
 * **Labirinto di specchi / nebbia (giorno 2)**: accuratezza ridotta, attacchi a distanza —2; illusioni dei nemici.
 * **Fase finale (giorno 3)**: l’arena si “apre” in punti, facendo emergere tunnel psichici; l’ambientazione concede bonus di +2 Will vs. compelling psionic illusions ma penalizza Perception a vista per la confusione.
 
@@ -243,22 +256,7 @@ Perfetto — adoro l’idea: un torneo in tre giorni, atmosfera da anime (Dragon
 
 ---
 
-# 10) Materiale che posso aggiungere subito (se vuoi)
-
-Posso ora (scegli tu, non serve che risponda con domande):
-
-* Generare file PDF stampabile con la scaletta del torneo + carte PNG riassuntive.
-* Fornire schede personaggio complete (formato 3.5) pronte da stampare per ciascun PNG (incluse skill list, calcoli di attacchi e salvezze).
-* Scrivere una scena narrativa dettagliata per la finale (cinematic script + dialoghi di pubblico).
-
-Dimmi quale di questi preferisci e te lo preparo subito (senza aspettare nulla). Se vuoi che adegui i numeri (più facili o più difficili) dimmi solo “più facile” o “più difficile” e li ritarerò in blocco.
-
----
-
-Se vuoi comincio subito a creare le schede stampabili (PDF) o ti do ora le schede complete **in chat** per ciascun PNG (tutte le statistiche calcolate step-by-step). Quale preferisci?
-Di seguito ti incollo la scena narrativa finale (estratto dal PDF) così puoi subito leggerla e usarla durante la sessione — se vuoi la adatto con dialoghi diversi o la trasformo in una versione "a ruoli" pronta per gli NPC in play.
-
-Scena narrativa dettagliata — Finale (Cinematic Script)
+## Scena narrativa dettagliata — Finale (Cinematic Script)
 
 (Sintesi ed estratto)
 
@@ -302,34 +300,3 @@ MOMENTO CINEMATICO — SACRIFICIO E VITTORIA
 Se i giocatori distruggono il nucleo, l'energia psionica implode con un lampo; chi era sotto Dominio si risveglia, confuso ma salvo. Il pubblico esplode in acclamazioni.
 Se non ci riescono, Xal'thor prova a trascinare mentalmente il vincitore nell'ombra — usa un timer narrativo (3 round) per creare fretta.
 Finale: il monaco, esausto, usa l'ultima Porta dell'Orbe per un colpo decisivo: il nucleo esplode e la scena si chiude in un boato memorabile.
-
-Se vuoi che modifichi il PDF (ad esempio: impaginazione diversa, carte singole in file PNG separati per stampa su cartoncino, o schede ancora più dettagliate con calcoli passo-passo degli attacchi/salvezze), dimmi quale formato preferisci e li rigenero subito — posso creare anche un pacchetto ZIP con PNG separati per ogni carta/scheda.
-
-Vuoi che:
-
-Generi le carte PNG singole pronte per il taglio (una per file)?
-Suddivida le schede personaggio in PDF separati (una pagina per PNG)?
-Aggiunga dettagli numerici passo-passo (calcolo BAB, attacco, salvezze, skill ranks) per ogni PNG nelle schede?
-Fatto — ho creato un PDF con le schede PNG singole (una pagina per PNG) già con i numeri finali pronti per il tavolo: BAB, attacchi iterativi, calcoli dei tiri salvezza, talenti, attacchi speciali, incantesimi e capacità psioniche con DC.
-
-📄
-
-Cosa contiene ogni scheda (per ciascun PNG):
-
-Caratteristiche con modificatori;
-HP, AC (touch/flat-footed), velocità;
-BAB e attacchi iterativi (con calcoli mostrati);
-Calcolo delle salvezze (base + modificatori di caratteristica);
-Talenti elencati;
-Capacità speciali e attacchi unici (descritti);
-Incantesimi (per Mistress of Mirrors) con DC calcolati;
-Poteri psionici (per Xal'thor) con DC e costo in PP stimato;
-Attacchi principali con danni e modificatori;
-Indicazioni su abilità chiave (valori esemplificativi).
-
-Se desideri una versione PNG / immagini delle singole schede già pronte per la stampa su cartoncino (file immagine 1 per carta, margini di taglio), o un pacchetto ZIP con ogni scheda in PDF separato, lo genero subito. Vuoi che:
-A) Esporti ogni scheda come immagine PNG per stampa su cartoncino (1 file per carta).
-B) Ti fornisca ogni scheda in PDF separato (uno per file), pronto per la stampa / con taglio.
-C) Aggiunga le note GM (strategie avanzate per ogni PNG) sotto ogni scheda.
-
-Dimmi la lettera (A/B/C) e procedo subito.

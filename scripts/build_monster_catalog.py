@@ -3,12 +3,11 @@
 build_monster_catalog.py — Scansiona la campagna e produce monster_catalog.yaml.
 
 Sorgenti (in ordine di priorità):
-  1. 00_Red Hand Of Doom/Armate-UNITA-NUOVE/*.md     (INFERRED, ha header strutturato)
-  2. 00_Red Hand Of Doom/Monsters_Sheets/**/*.htm|*.html|*.pcg|*.pdf
+  1. Bestiario/{mostri,villain,png}/**/*.md   (libreria standard, header strutturato)
+  2. Bestiario/pregen-pcgen/**/*.htm|*.html|*.pcg|*.pdf  (sorgenti storiche PCGen/web)
   3. 08_La Battaglia Di Hammerfist/00_Schede_dei_Personaggi_Unita*.md  (parsing sezioni)
   4. 09_Continuazione.../Arco-*STATBLOCCHI*.md
   5. 04_tomba_di_Belkram/**, 01_LaMiniera/**, 02_*/**, 06_*/**, 07_*/** (tutte le .txt/.md/.htm con statblock)
-  6. PNG/**/*.md                                     (PNG nominati)
 
 Output:
   scripts/monster_catalog.yaml   (generated, non committare modifiche a mano)
@@ -163,16 +162,21 @@ def read_file_safe(path):
     return ""
 
 def should_skip(path):
-    skip_dirs = {'.git', 'node_modules', '.claude', '.cursor', '.windsurf', '.gemini', '.chatgpt', '.agents', '.github', 'Immagini', 'immage_campaign', 'Mappe', 'Musica', 'skills', 'Script', 'Old', 'png_La_mano_rossa_del_destino_files'}
+    skip_dirs = {'.git', 'node_modules', '.claude', '.cursor', '.windsurf', '.gemini', '.chatgpt', '.agents', '.github', 'Immagini', 'immage_campaign', 'Mappe', 'Musica', 'skills', 'Script', 'Old', 'png_La_mano_rossa_del_destino_files', 'tokens', 'homebrew'}
     for part in path.parts:
         if part in skip_dirs or part.endswith('_files'):
             return True
+    # .hb.md = artefatti di layout Homebrewery (ADR-0003), mai fonti di statblock
+    if path.name.endswith('.hb.md'):
+        return True
     return False
 
 def scan_directory(root):
     records = []
     valid_ext = {'.md', '.txt', '.htm', '.html', '.pcg'}
-    for path in root.rglob('*'):
+    # sorted() => walk deterministico su ogni filesystem/checkout (il CI gate
+    # "catalogo in sync" confronta byte-per-byte)
+    for path in sorted(root.rglob('*')):
         if not path.is_file():
             continue
         if should_skip(path.relative_to(ROOT)):
@@ -207,6 +211,9 @@ def scan_directory(root):
             'hooks',
             'mappe-',
             '-mappe',
+            '-mappa.md',
+            'censimento',
+            'piano-revisione',
             'timeline',
             'consequenze', 'conseguenze', 'esiti',
         ]
@@ -214,8 +221,8 @@ def scan_directory(root):
             continue
 
         is_statblock_folder = any(k in rel for k in [
-            'Monsters_Sheets', 'Armate-UNITA-NUOVE', 'STATBLOCCHI', 'Schede_dei_Personaggi',
-            'PNG/', 'LaMiniera', 'Belkram', 'Celebromorfosi',
+            'Bestiario/', 'STATBLOCCHI', 'Schede_dei_Personaggi',
+            'LaMiniera', 'Belkram', 'Celebromorfosi',
         ])
         # Strict statblock signature: need BOTH an HP-like stat AND an AC-like stat
         # (or an explicit CR token). Avoids false positives from narrative docs
@@ -255,7 +262,9 @@ def to_yaml(records):
              "# Do NOT edit by hand. Add custom monsters in monster_catalog.custom.yaml",
              f"# Total records: {len(records)}",
              "monsters:"]
-    for r in sorted(records, key=lambda x: (x['faction'], x['cr'] or 0, x['name'])):
+    # source_file nella chiave: i duplicati a pari faction/cr/name non
+    # dipendono dall'ordine di scansione
+    for r in sorted(records, key=lambda x: (x['faction'], x['cr'] or 0, x['name'], x['source_file'])):
         lines.append(f"  - id: {r['id']}")
         lines.append(f"    name: {json.dumps(r['name'], ensure_ascii=False)}")
         lines.append(f"    cr: {r['cr'] if r['cr'] is not None else '~'}")

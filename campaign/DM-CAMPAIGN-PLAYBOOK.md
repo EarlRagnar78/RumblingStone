@@ -20,7 +20,7 @@ Il repo ha tre **livelli** di contenuto. Trattarli allo stesso modo è la fonte 
 | Livello | Cosa c'è | Quando si modifica | Chi lo modifica |
 |---|---|---|---|
 | **Canonico** (immutabile) | `skills/*`, AP originale RHoD, SRD D&D 3.5, FR 1372 DR lore, `00_Red Hand Of Doom/` (canone di riferimento) | Mai (o raro, con changelog) | Solo DM, in PLAN MODE, mai a tavolo |
-| **Scenario** (semi-fisso) | Cartelle arco `01_LaMiniera/ … 09_Continuazione/`, `campaign/lore/`, `PNG/*/*.md` (stat blocks, backstory), encounter files | Tra sessioni, in PLAN MODE | DM in preparazione |
+| **Scenario** (semi-fisso) | Cartelle arco `01_LaMiniera/ … 09_Continuazione/`, `campaign/lore/`, `Bestiario/{villain,png}/**/*.md` (stat blocks, backstory), encounter files | Tra sessioni, in PLAN MODE | DM in preparazione |
 | **Vivo** (per sessione) | `campaign/state.md`, `campaign/sessions/*.md`, status attuale PNG | **Ogni sessione** | DM a fine sessione |
 
 **Regola d'oro**: non modificare MAI contenuto canonico o di scenario durante la sessione live. Tienilo per il post-session in calma.
@@ -39,11 +39,31 @@ Apri i file in questo ordine:
 | 4 | `campaign/state.md` §7 | Open narrative threads attivi | 1 min |
 | 5 | `campaign/sessions/ultima-sessione.md` | Sezione **Next session hooks** | 2 min |
 | 6 | File dell'arco corrente (es. `09_.../Arco-Post-Hammerfist-P1B-...`) | Fase attiva, encounter previsti | 3 min |
-| 6b | (opz.) `scripts/suggest_encounter.py` → `scripts/suggest_loot.py` pipe | Generare encounter+loot proposti | 3 min |
-| 7 | `PNG/<nome>/<nome>.md` (PNG in scena previsti) | Motivazione + segreti + stato | 2 min |
+| 6b | (opz.) `python3 scripts/dm.py prep --el <N> --env <X>` | Encounter+mappa+loot proposti in un colpo solo (orchestra suggest_encounter/map/loot; `dm.py doctor` se qualcosa non torna) | 3 min |
+| 7 | `Bestiario/{villain,png}/<nome>/<nome>.md` (PNG in scena previsti) | Motivazione + segreti + stato | 2 min |
 | 8 | `skills/rumblingstone-campaign/references/campaign-coherence.md` | Solo se vuoi rivedere regole coerenza | 2 min |
 
 **Optional ma utile**: apri `campaign/lore/house-rules.md` se prevedi ruling ambigui.
+
+### §2.1 — Regola d'oro anti-rigenerazione (Bestiario)
+
+Prima di **creare** stat per un mostro/PNG/villain di un incontro o di una
+quest, **cerca se esistono già** — quasi sempre è così:
+
+1. `python3 scripts/suggest_encounter.py --list-npcs` (elenca i PNG canonici di
+   `Bestiario/{villain,png}/` + le voci del catalogo con nome);
+2. o cerca nel catalogo: `grep -i "<nome>" scripts/monster_catalog.yaml` →
+   la riga `source_file:` ti porta alla scheda;
+3. per famiglia/CR sfoglia `Bestiario/mostri/` (unità generiche, `nome-crN.md`),
+   `Bestiario/villain/` (antagonisti unici), `Bestiario/png/` (alleati unici);
+4. se esiste solo come sorgente storica in `Bestiario/pregen-pcgen/`, **trascrivila**
+   nel formato standard (non reinventarla): vedi `Bestiario/README.md`.
+
+**Genera ex-novo solo se non esiste da nessuna parte**, col
+`campaign/templates/png-dossier-template.md`, flag `[INFERRED — needs DM
+confirmation]` e — se è un potenziamento — via `skills/npc-villain-boosting/`
+con `Boost log:`. Riusare una scheda esistente è sempre preferibile a clonarne
+i numeri in un file d'incontro.
 
 ---
 
@@ -95,7 +115,18 @@ Template minimale (6 campi):
 
 ## §4 — Post-session: commit workflow (10 min)
 
-Quando il gruppo va a casa, esegui questi 5 passi nell'ordine:
+Quando il gruppo va a casa, esegui questi 5 passi nell'ordine.
+**Scorciatoia v2 (ADR-0007)**: sul branch del gruppo,
+`python3 scripts/dm.py session end --session <file>` fa ledger XP +
+**applica** (dopo tua conferma, diff alla mano) i cambi meccanici di
+state.md — March Clock e changelog §8 — nelle regioni marcate `auto:`,
+e committa. Il resto del 4.2 (prosa, PNG, alleanze) resta manuale e ti
+viene stampato come proposta. Prima volta: `dm.py session branch --group
+<nome>` + `state_apply.py --migrate --commit` (vedi
+[`DM-QUICKSTART-NUOVI-DM.md`](DM-QUICKSTART-NUOVI-DM.md)).
+**Scorciatoia v1 (sempre valida)**: `python3 scripts/dm.py post` aggiorna
+il ledger XP, **propone** il diff di state.md (il 4.2 resta manuale) e
+stampa la checklist rimanente.
 
 ### 4.1 Rinomina il draft
 
@@ -125,7 +156,7 @@ Solo se un PNG è morto / cambiato allineamento / cambiato posizione:
 
 ```bash
 # esempio: Regiarix ucciso
-sed -i 's/Status: alive/Status: dead (killed session 14)/' PNG/Regiarix/Regiarix.md
+sed -i 's/Status: alive/Status: dead (killed session 14)/' Bestiario/villain/Regiarix/Regiarix.md
 ```
 
 ### 4.4 Aggiorna encounter files (opzionale)
@@ -150,14 +181,22 @@ viva l'epica della campagna.
 
 ```bash
 # Solo markdown (campaign/recaps/recap-YYYY-MM-DD.md)
-python3 scripts/session_recap.py --last-n 1
+python3 scripts/dm.py recap
+
+# In più la versione HYPE in stile Manuale del Giocatore — pronta da
+# incollare su homebrewery.naturalcrit.com (recaps/homebrew/*.hb.md)
+python3 scripts/dm.py recap --hype
 
 # Con PDF A4 (richiede pandoc + xelatex installati)
-python3 scripts/session_recap.py --last-n 1 --pdf
+python3 scripts/dm.py recap --pdf
 
 # Ultime 2 sessioni se il gruppo ha saltato una settimana
-python3 scripts/session_recap.py --last-n 2
+python3 scripts/dm.py recap --last-n 2
 ```
+
+*(equivalenti diretti: `python3 scripts/session_recap.py …` — dm.py
+orchestra e basta. Per gli handout in-game: `dm.py handout --tipo
+lettera|profezia|avviso-torneo|scheda-artefatto --da <file canone>`.)*
 
 **Cosa fa**:
 
@@ -262,8 +301,8 @@ Sempre sessione 14. Il DM apre `state.md` e applica questi cambi (mostrato come 
 
  ## §3 Villain Clocks
 
--| Saarvith + Regiarax | 3/8 | Day 27 |
-+| Saarvith + Regiarax | 4/8 | Day 29 (Regiarix ancora vivo, sposta in campo) |
+-| Saarvith + Regiarix | 3/8 | Day 27 |
++| Saarvith + Regiarix | 4/8 | Day 29 (Regiarix ancora vivo, sposta in campo) |
 
  ## §5 Party Position
 

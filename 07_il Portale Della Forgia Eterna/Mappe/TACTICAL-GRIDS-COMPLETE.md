@@ -1,6 +1,15 @@
 # TACTICAL GRID MAPS SPECIFICATIONS
 ## Complete Guide for Miniature Gaming - Both Adventures
 
+> **Nota lingua (A8)**: file tecnico in inglese (spec di mappe). I termini di
+> prova 3.5 sono già stati normalizzati **CD** (Classe Difficoltà, non "DC").
+> **Glossario per il tavolo** (leggi in italiano le prove): Hide =
+> **Nascondersi**, Move Silently = **Muoversi Silenziosamente**, Spot =
+> **Osservare**, Listen = **Ascoltare**, Search = **Cercare**, Climb =
+> **Scalare**, Jump = **Saltare**, Balance = **Equilibrio**, Tumble =
+> **Acrobazia**, Spellcraft = **Sapienza Magica**, Concentration =
+> **Concentrazione**. Il corpo tecnico resta inglese.
+
 ---
 
 ## 📐 STANDARD SPECIFICATIONS
@@ -204,13 +213,13 @@
 
 **Toxic Vapors:**
 - Location: Random squares near lava
-- Effect: Fort DC 18 or 1d3 Con damage
+- Effect: Fort CD 18 or 1d3 Con damage
 - Frequency: 1d6 every 5 rounds
 
 **Eruptions:**
 - Frequency: 1d6 every 5 rounds
 - Location: Random 3m radius
-- Effect: Reflex DC 20 or 3d6 fire
+- Effect: Reflex CD 20 or 3d6 fire
 - Visual: Marked with tokens when occurs
 
 **Lighting:**
@@ -266,7 +275,7 @@
 - Material: Magical mithral (heat-resistant)
 - Width: 2m (narrow, 1 square)
 - HP: 60 each, Hardness: 15
-- Collapse: Fort DC 15 if Lava Blast hits direct
+- Collapse: Fort CD 15 if Lava Blast hits direct
 
 **Perimeter Platform:**
 - Outer ring: 25m radius from center
@@ -351,7 +360,7 @@
 - Positions: Random throughout (DM discretion)
 - Length: Vary 2-10m hanging down
 - Instability: 1d4 every 15 minutes falls
-- Fall damage: 3d10 piercing, 3m radius, Reflex DC 18 avoid
+- Fall damage: 3d10 piercing, 3m radius, Reflex CD 18 avoid
 - Targeting: Sundered attacks can trigger premature fall
 
 **Two Earth Fissures:**
@@ -359,7 +368,7 @@
 - Fissure 2: Squares Y10-Y15
 - Depth: 3m
 - Fall: 6d6 damage (× 1.5 heavy gravity = 9d6 effective)
-- Escape: Athletics DC 20 (climb out difficult)
+- Escape: Athletics CD 20 (climb out difficult)
 
 **Main Path (Safe Terrain):**
 - Winding: Irregular S-curve north to south
@@ -388,10 +397,10 @@
 - Effect: All creatures, no save
 
 **Crystal Dust (Air):**
-- Effect: Fort DC 16 every 10 min or 1d3 Con damage
+- Effect: Fort CD 16 every 10 min or 1d3 Con damage
 - Visual: Sparkling motes in air
 - Prevention: Wrap cloth face, *Endure Elements*
-- Cumulative: -1 DC per previous save (gets easier breath rhythm)
+- Cumulative: -1 CD per previous save (gets easier breath rhythm)
 
 **Illumination:**
 - Geodes: Faint green-violet bioluminescence (dim light 3m each)
@@ -401,14 +410,14 @@
 **STARTING POSITIONS:**
 - PCs: Squares A1-C1 (portal entrance south)
 - EE1: Emerges Round 1 when PCs reach square O10 (trigger)
-- EE2: Emerges Round 2 beneath random PC (Spot DC 22 hear rumble before)
+- EE2: Emerges Round 2 beneath random PC (Spot CD 22 hear rumble before)
 - EE3: Emerges Round 1 when all PCs enter Area D (square AI14+)
 - Exit: Squares AZ18-AZ20 (portal to Node Chamber)
 
 **TACTICAL NOTES:**
 - Heavy gravity severely limits mobility (plan movement!)
 - Earth Elementals have Earth Glide (move through stone)
-- Listen DC 22 to hear elemental approaching underground
+- Listen CD 22 to hear elemental approaching underground
 - Geodes provide excellent cover but can be destroyed
 - Fissures = hazards but also tactical barriers
 - Crystal dust = attrition damage (heal Constitution!)
@@ -725,7 +734,7 @@
 - Entry: Mithril door (Squares AG1-AK1)
 - Formation: Rush charge toward altar (AG1 → AG27)
 - Morale: Frenzied (+2 attack, -2 AC)
-- Effect PC Appearance: 20/30 become shaken (TS Will DC 25 failed)
+- Effect PC Appearance: 20/30 become shaken (TS Will CD 25 failed)
 
 **Wave 2 (Round 3-5): 20 Hobgoblin Sergeants:**
 - Entry: Mithril door
@@ -765,7 +774,7 @@
 **Lighting:**
 - Stalactites: Bright light entire chamber (no darkness)
 - Altar: Additional bright light 9m radius (intensifies)
-- Post-Manifestation: Temporary blindness (DC 18 Fort or dazzled 1 round)
+- Post-Manifestation: Temporary blindness (CD 18 Fort or dazzled 1 round)
 
 **Acoustics:**
 - Perfect: Voices echo dramatically
@@ -893,7 +902,7 @@
 **Zone 2 - Mid Altitude Strafing (15-30m):**
 - Rounds 14-18: Lower altitude, aggressive passes
 - Flyby Attacks: Claws +27 melee vs exposed
-- Frightful Presence: 120m radius, DC 25 Will or panicked
+- Frightful Presence: 120m radius, CD 25 Will or panicked
 - PC Focus: Corona sighting triggers obsessive focus Thorik
 
 **Zone 3 - Ground Engagement (0-15m):**
@@ -912,14 +921,14 @@
 
 **Acid Damage (Dragon Breath):**
 - Area: 30m line (20 squares)
-- Damage: 14d4 acid (DC 26 Reflex half)
+- Damage: 14d4 acid (CD 26 Reflex half)
 - Stone Corrosion: -5% gate integrity per direct hit
 - Armor Corrosion: -2 AC permanent if direct hit (acid eats metal)
 
 **Falling:**
 - Wall to Ground: 15m (15d6 damage)
 - Tower to Ground: 20m (20d6 damage)
-- Pushed by dragon: Reflex DC 25 or fall
+- Pushed by dragon: Reflex CD 25 or fall
 
 **STARTING POSITIONS:**
 - 100 Dwarves: Wall line (Squares A1-BT1)
@@ -977,7 +986,7 @@
 **Hidden Trail:**
 - Path: Winding S-curve through canyon
 - Width: Variable 3-6m (2-4 squares)
-- Marked: Slightly worn, Survival DC 15 follow
+- Marked: Slightly worn, Survival CD 15 follow
 
 **Impassable Rock Formations:**
 - Quantity: 12+ major obstacles
@@ -1017,7 +1026,7 @@
 
 **STEALTH CHALLENGE:**
 - Mechanic: Skill challenge (4 successes before 3 failures)
-- DC: Hide 18, Move Silently 20
+- CD: Hide 18, Move Silently 20
 - Per Check: Every 15m movement (10 squares)
 - Success: Bonus +2 Initiative final battle, full intelligence
 - Failure: Combat or alert (reinforcements hunting party)
@@ -1025,7 +1034,7 @@
 **TACTICAL NOTES:**
 - Use cover religiously (Hide checks between boulders)
 - Wait for patrol to pass (timing critical)
-- Avoid difficult terrain (noise +5 DC Move Silently)
+- Avoid difficult terrain (noise +5 CD Move Silently)
 - Lookout: One PC watches, others move (teamwork)
 
 ---
@@ -1047,13 +1056,13 @@
 - Floors: Ground + 3 interior levels
 - Top Platform: 3m × 3m (2×2 squares)
 - Condition: Ruined (walls partially collapsed)
-- Stairs: Interior spiral, precarious (Climb DC 12)
+- Stairs: Interior spiral, precarious (Climb CD 12)
 
 **Cliff Edge (West):**
 - Position: Squares A1-A40 (entire west edge)
 - Drop: 40m vertical (instant death)
 - Warning: Marked edge, obvious danger
-- Effect: Any forced movement = Reflex DC 20 or fall
+- Effect: Any forced movement = Reflex CD 20 or fall
 
 **Hobgoblin Camp (East):**
 - Position: Squares U20-Z30 (15m × 15m, 10×10 squares)
@@ -1079,9 +1088,9 @@
 **OBSERVATION TARGETS (400m East):**
 - Enemy Camp: Visible from tower top
 - Distance: Too far detail from ground
-- From Top: Dara Spot DC 20 = count troops accurate (900)
-- From Top: Dara Spot DC 25 = identify commanders (Grimjaw, Gorthak, dragon)
-- From Top: Dara Spot DC 30 = full tactical layout
+- From Top: Dara Spot CD 20 = count troops accurate (900)
+- From Top: Dara Spot CD 25 = identify commanders (Grimjaw, Gorthak, dragon)
+- From Top: Dara Spot CD 30 = full tactical layout
 
 **TOWER INTERIOR:**
 - Ground Floor: Squares M10-P13 (rubble, difficult terrain)
@@ -1092,16 +1101,16 @@
 **TACTICAL OPTIONS:**
 
 **Stealth Observation:**
-- Dara: Climb tower (Climb DC 12, 6 rounds)
-- Others: Hide below (Hide DC 20 vs hobgoblin patrols)
-- Nala: Sneak camp (Hide DC 22, eavesdrop)
+- Dara: Climb tower (Climb CD 12, 6 rounds)
+- Others: Hide below (Hide CD 20 vs hobgoblin patrols)
+- Nala: Sneak camp (Hide CD 22, eavesdrop)
 - Thorin: Ready *Silence* spell (emergency)
 
 **Combat Encounter:**
 - Surprise: If stealth succeeds, surprise round
 - Alarm: Sergeant shouts = 7 sleeping wake Round 2
 - Reinforcements: If horn blown, 50 orcs arrive 10 rounds
-- Cliff Hazard: Bull rush toward cliff = Reflex DC 20 or fall
+- Cliff Hazard: Bull rush toward cliff = Reflex CD 20 or fall
 
 **STARTING POSITIONS:**
 - PCs: Squares M35-P35 (south forest approach)
@@ -1110,7 +1119,7 @@
 - Exit: North toward Hidden Path (next encounter)
 
 **TACTICAL NOTES:**
-- Tower climb noisy if armor (Climb DC +5, Move Silently impossible)
+- Tower climb noisy if armor (Climb CD +5, Move Silently impossible)
 - Dara ideal climber (light armor, Climb +10)
 - Camp surprise: Sleeping enemies flat-footed, no Dex AC
 - Cliff combat: Risky but instant kills if push successful
@@ -1170,7 +1179,7 @@
 - 25 Worg Riders: Right flank
 
 **OBSERVATION NOTES:**
-- From Tower: Dara sees layout (Spot DC 20+)
+- From Tower: Dara sees layout (Spot CD 20+)
 - Intelligence: Troop count, types, commanders
 - Tactics: Identify phases (bombardment → assault → breakthrough)
 - No combat: This is planning/prep map
@@ -1200,7 +1209,7 @@
 - Position: Squares A32-BT32 (entire south edge)
 - Width: 6m (4 squares deep)
 - Depth: 3m
-- Water: Flowing, Swim DC 15 or drown
+- Water: Flowing, Swim CD 15 or drown
 
 **South Bastions (G1-G2):**
 - G1 (West): Squares H20-K25 (9m × 7.5m, 6×5 squares)
@@ -1403,7 +1412,7 @@ Looking UP from battlements, dragon diving with breath weapon.
 **Ancestor King Statue (North):**
 - Position: Squares M5-P8 (6m × 6m, 4×4 squares)
 - Height: 4m tall statue
-- Secret Mechanism: Base slides (For DC 20 or Know CD 15)
+- Secret Mechanism: Base slides (For CD 20 or Know CD 15)
 - Opening: 2m × 2m (1×1 square passage entry)
 - Revealed: Squares N6-O7
 
@@ -1457,7 +1466,7 @@ Looking UP from battlements, dragon diving with breath weapon.
 
 **Delay Tactics:**
 - *Wall of Stone*: Block orc advance (Thorin, 1 round cast)
-- Traps: Rubble collapse improvised (Engineering DC 15, 2d6 damage)
+- Traps: Rubble collapse improvised (Engineering CD 15, 2d6 damage)
 - Sniping: Kill orc warchiefs (demoralize, slow advance)
 - *Glitterdust*: Blind frontline orcs (Nala, CD 16)
 - Chokepoint: Borin 2m tunnel entrance (only 1 orc attacks/round)
@@ -1526,7 +1535,7 @@ Looking UP from battlements, dragon diving with breath weapon.
 
 **Bugbear Assassins (8 Total):**
 - East Tunnel (4): Squares Y16-Z18
-  - Hide: +12 bonus, Spot DC 25 detect
+  - Hide: +12 bonus, Spot CD 25 detect
   - Target: King Thorek (assassination attempt)
 - West Tunnel (4): Squares H16-I18
   - Mirror east group
@@ -1543,7 +1552,7 @@ Looking UP from battlements, dragon diving with breath weapon.
 - Coordination: Planned (enemies communicated)
 
 **BUGBEAR TACTICS:**
-- Death Attack: DC 16 Fort or paralysis 1d6+2 rounds (first strike)
+- Death Attack: CD 16 Fort or paralysis 1d6+2 rounds (first strike)
 - Sneak Attack: +5d6 damage if flat-footed
 - Target Priority: King Thorek > Leaders > PCs
 - Escape: If detected, fade back tunnels (Hide again)
@@ -1551,7 +1560,7 @@ Looking UP from battlements, dragon diving with breath weapon.
 **PC RESPONSES:**
 
 **Borin (Square P17):**
-- Spot Check DC 25: Detect bugbears BEFORE strike
+- Spot Check CD 25: Detect bugbears BEFORE strike
   - Success: Ready action intercept
   - Failure: React post-attack (damage dealt)
 
@@ -1580,8 +1589,8 @@ Looking UP from battlements, dragon diving with breath weapon.
 **Phase 2 (Round 2): Bugbear Assassination**
 - 8 bugbears emerge E/W simultaneously
 - Targets: 4 target king, 4 target leaders
-- Death Attacks: Fort DC 16 or paralyzed
-- Surprise: Unless Spot DC 25 succeeded Round 1
+- Death Attacks: Fort CD 16 or paralyzed
+- Surprise: Unless Spot CD 25 succeeded Round 1
 
 **Phase 3 (Round 3-5): Melee Chaos**
 - Bugbears: Sneak attack ongoing (+5d6)
@@ -1598,7 +1607,7 @@ Looking UP from battlements, dragon diving with breath weapon.
 - 90 Dwarves: Formation described (Squares K11-T23)
 - King Thorek: Square P18 (center, vulnerable)
 - PCs: Adjacent king (Squares O17-Q19)
-- Enemies: Hidden tunnels (detect DC 25)
+- Enemies: Hidden tunnels (detect CD 25)
 
 **VICTORY CONDITIONS:**
 - King Thorek survives (critical!)
@@ -1613,7 +1622,7 @@ Looking UP from battlements, dragon diving with breath weapon.
 **TACTICAL NOTES:**
 - Stalagmites = cover during fight (+4 AC)
 - Darkness beyond torchlight = bugbear advantage
-- Spot DC 25 critical check (prevent death attacks)
+- Spot CD 25 critical check (prevent death attacks)
 - *Glitterdust* reveals all in 10ft radius (counter stealth)
 - Area spells risky (allies clustered)
 - Chokepoint tunnels = *Blade Barrier* ideal

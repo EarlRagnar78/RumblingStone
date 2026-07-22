@@ -1,0 +1,337 @@
+Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md
+=============================================================
+
+# Battaglia Finale di Rethmar (Brindol Remix) – CR 16–18  
+
+Basata sulla struttura della Battle of Brindol di Red Hand of Doom[web:86][web:105]
+
+## 1. Setup globale
+
+- Livello atteso PG: 13–15.  
+- CR complessivo: 16–18, spezzato in **ondate e sotto‑missioni simultanee**.  
+- **Forza Orda in arrivo (Day 42 March Clock)**: ~5.800–7.400 effettivi su baseline ~10.000, modulato dagli hook Arc-09. Vedi `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md` §3 per i 5 scenari (worst/baseline/medio/ottimale/leggendario) e §4 per la composizione per fase.
+- **Sync point Day 19**: Terrelton cade = Battaglia di Hammerfist finisce (canonico, locked).
+- **Forza aerea Orda**: 5 draghi nominati (Abithriax, Regiarix se vivo, Ozyrrandion, Tyrgarun, Fauci di Palude) + 8 Razorfiend Draconic Spawn sui Wyrmlord upscalati.
+- **Compagnia del Teschio Nero**: composizione canonica AP, riserva élite di Azarr Kul.
+- **La battaglia è perduta senza PG**: gli hook Arc-09 completati sono l'unico vettore di vittoria.
+- Esiti precedenti che modificano la battaglia:
+  - Starsong Hill (cavalleria elfica su civette).  
+  - Ghostlord (non morti pro/contro).  
+  - Sabotaggio Drow & Missioni Brevi (logistica e ondate speciali ridotte).  
+  - Torneo di Tordek (300 mercenari nani in arrivo).  
+  - Rituali di Hellas/druidi‑orsi. [web:86][web:109][web:115]
+
+---
+
+## 2. Fasi della Battaglia (vista d’insieme)
+
+1. **Fase 0 – Notte dei Drow**  
+   - Attacco drow interno con aberrazioni fungine al Tempio di Rethmar per rubare un artefatto maligno.  
+2. **Fase 1 – Assedio Esterno**  
+   - Orda Red Hand: hobgoblin, giganti, draghi, Githyanki e supporto aereo.  
+3. **Fase 2 – Ritualisti Draconici**  
+   - Stregoni draconici eseguono un rituale di 10 round per evocare Avatar di Tiamat + Azarr Kul + erinni, interrompibile solo da squadre d’assalto oltre le linee.  
+4. **Fase 3 – Avatar di Tiamat & Azarr Kul** (senza Fane fisico)  
+   - Scontro epico con il warpriest e l’Avatar.  
+5. **Fase 4 – Circolo degli Otto e Mythal di Difesa**  
+   - 8 arcimaghi/arci‑druidi attivano un “quasi‑Mythal” in 7 round; vanno protetti.  
+   - Attivazione finale delle statue cittadine come golem di pietra (ultimo bastione). [web:108][web:114]
+
+Ogni fase può essere una “scena” di 1 sessione o più, a tua scelta.
+
+> **Come si gioca al tavolo (D13 — C7)**: le fasi/ondate qui sotto sono lo
+> **sfondo strategico lato DM**. La battaglia **giocata** dai PG passa per le
+> **carte** dell'EVENT-DECK
+> (`Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md`): a ogni campana il DM
+> presenta 3-4 crisi, i PG ne scelgono 1-2, le altre si risolvono off-screen. Le
+> ondate di Fase 1-2 diventano **il rumore tra le campane**; le carte sono la
+> storia. Il motore nascosto (il Fronte, ruoli di comando, d12, Tyrgarun) è in §9.
+
+---
+
+## 3. Fase 0 – Notte dei Drow (infiltrazione interna)
+
+### Obiettivo nemico
+
+- Un commando drow + aberrazioni fungine entra **dal sottosuolo** durante la notte, prima dell’assedio, per:
+  - penetrare nelle cripte sotto il Tempio di Rethmar,  
+  - distruggere/sacrilegiare il tempio,  
+  - rubare un **Artefatto Maligno** (cuore di drago nero, reliquia di demonio, ecc.) da consegnare a Madre dei Funghi o alla Red Hand.
+
+### Obiettivi PG
+
+- Difendere il tempio dall’interno.  
+- Salvare quante più reliquie/PNG importanti possibile.  
+- Decidere se conservare, corrompere o distruggere l’artefatto (avrà peso nel rituale di Tiamat).
+
+### Struttura
+
+- CR 14–15 scontro totale:
+  - 1 High Priestess drow (CR 13)  
+  - 4 Drow Fungal Minions (CR 6–7)  
+  - 1 Aberrazione Fungina Alfa (CR 12) come ariete vivente.[web:74]
+
+Se i PG falliscono:
+
+- L’artefatto viene usato come catalizzatore, rendendo l’Avatar di Tiamat leggermente più forte (es. +2 RI, +20 pf) o riducendo l’efficacia del Mythal finale.
+
+---
+
+## 4. Fase 1 – Assedio Esterno (ondate)
+
+Basata sulla struttura di ondate di Brindol (Red Hand of Doom), ma potenziata.[web:86][web:92]
+
+> **Al tavolo (C7)**: queste ondate sono **sfondo**. Le scene giocate del Day 42
+> sono le carte **7-14** dell'EVENT-DECK (Breccia Porta Ovest, Tyrgarun,
+> Combattimenti di strada, Leoni del Ghostlord, Difesa dell'Ospedale, Duello di
+> Karruk, Il Falso Segnale). Vedi `...EVENT-DECK.md` §2.
+
+### Onde tipiche
+
+- **Ondata 1 – Fanteria & Giganti** (CR 14–15)
+  - Blocco di hobgoblin élite, 2–3 hill/stone giants, supporto catapulte.  
+  - Se i Tiri‑Kitor sono alleati: cavalleria su civette elimina 1/3 degli assedianti dalla mappa prima dello scontro. [web:86][web:115]
+
+- **Ondata 2 – Draghi & Githyanki** (CR 15–16)
+  - 1–2 draghi adulti (rosso/verde) + squadre Githyanki Knight su cavalcature alate.  
+  - Se le missioni brevi Gith sono state completate, riduci il numero di Knight o abbassa DV dei draghi.
+
+- **Ondata 3 – Non Morti del Ghostlord (solo se nemico)** (CR 15)
+  - Leoni spettrali, wights, ghoul che irrompono da un lato della città.  
+  - Se Ghostlord è neutrale/alleato: questa ondata è assente o si volta contro la Red Hand. [web:58][web:95]
+
+- **Ondata 4 – Drow/Funghi Residui (se non azzerati prima)** (CR 14)
+  - Piccolo gruppo drow superstite tenta sabotaggi interni (torri di guardia, cancello, polveriere).
+
+I PG possono essere spostati dove serve di più: mura, quartiere tempio, porta principale.
+
+**Tyrgarun (D11 v2)**: parallelamente alle ondate, il drago blu Old (CR 18) è un *hazard* di bombardamento aereo separato — passate di soffio sui bastioni con contromosse quantificate (balliste, gufi Tiri Kitor, missione-esca dei PG). Non è un incontro frontale: a CR 18 in volo è imbattibile per design. Meccaniche dettagliate del set-piece: Lotto C1(d).
+
+---
+
+## 5. Fase 2 – Ritualisti Draconici (10 round)
+
+### Obiettivo nemico
+
+- **Stregoni draconici** della Red Hand (warpriests, sorcerer draghi‑sangue) stanno completando un rituale di 10 round effettivi per aprire un varco e richiamare:
+
+  - **Avatar di Tiamat**  
+  - **Azarr Kul** in forma pienamente potenziata,  
+  - 2–4 erinni / abishai come guardia. [web:108][web:111][web:114]
+
+Rituale in posizione avanzata fuori dalle mura (o sopra un altare improvvisato fra le linee).
+
+### Obiettivi PG
+
+- Formare “squadre speciali” (come in RHoD) per:
+  - infiltrarsi dietro le linee nemiche,  
+  - uccidere/disperdere i ritualisti draconici,  
+  - distruggere i foci del rituale (idoli, cerchi runici, l’eventuale artefatto maligno se non protetto prima).
+
+### Meccanica suggerita
+
+- Ogni round “di scena rituale” equivale a 1–2 round effettivi in una mappa tattica.  
+- I PG devono superare:
+  - 1–2 incontri CR 13 (guardie d’élite)  
+  - - incontro finale CR 15 (circolo ritualisti + 1 drago guardiano)  
+  entro 10 round narrativi/rituali.
+
+Se il rituale è **interrotto**:
+
+- L’Avatar di Tiamat non si manifesta pienamente → appare solo un’**Impronta d’Avatar** meno potente, oppure Azarr Kul combatte senza forma sinergica.  
+
+Se il rituale **riesce**:
+
+- Si passa alla Fase 3 con Avatar + Azarr Kul full power.
+
+**Tyrgarun (D11 v2)**: copertura aerea mobile sui ritualisti — minaccia a orologeria che complica le squadre speciali PG senza diventare uno scontro diretto.
+
+---
+
+## 6. Fase 3 – Avatar di Tiamat & Azarr Kul (boss CR 17–18)
+
+Non usi il Fane fisico, ma un “altare campale” nel cuore della battaglia.[web:108][web:114]
+
+### Configurazione
+
+- Campo rituale devastato, cerchio di fuoco e ombre, cielo aperto con portale crepitante.  
+- Azarr Kul (mezzo‑drago hobgoblin warpriest di Tiamat, CR 15), **a terra** — combatte sempre da solo, Tyrgarun NON è sua cavalcatura (D11 v2) +  
+  - 2–4 Erinni o Abishai (CR 9–11 ciascuna),  
+  - **Avatar di Tiamat**: versione ridotta di Aspect of Tiamat (CR 17 base, modulato per il tuo party).
+  - **Tyrgarun** resta minaccia aerea a orologeria (non ancora affrontabile — vola ancora); se già ucciso/messo in fuga altrove, vedi tabella conseguenze in `Bestiario/villain/Azarr_Kul/Azarr_Kul.md`.
+
+### Opzioni di difficoltà
+
+- Se PG hanno:
+  - Tiri‑Kitor alleati,  
+  - Ghostlord neutrale/alleato,  
+  - Sabotato Drow e Githyanki,  
+  - Mercenari nani + druidi‑orsi + Circolo degli 8 operativi,  
+
+allora puoi **ridurre** un po’ l’Avatar (meno pf, qualche potere limitato) per tenere l’incontro intorno a CR 17 “giocabile”.
+
+---
+
+## 7. Fase 4 – Circolo degli Otto, Mythal & Statue‑Golem
+
+### Circolo degli Otto
+
+- 8 arcimaghi/arci‑druidi (PNG EPIClike) arrivano come “risposta divina/epica” alla chiamata dei PG/Artemis/Tordek/elfi.  
+- Obiettivo loro:
+  - Eseguire un **rituale di 7 round** per innalzare un campo di energia simile a un Mythal che:
+    - protegge la città da ulteriori evocazioni extraplanari,  
+    - indebolisce l’Avatar di Tiamat (es. –2 a tutti i tiri, niente teletrasporti, immunità planar gate), [web:110]
+    - **inchioda Tyrgarun a terra** (D11 v2, canone P2D-INTEGRAZIONE r.201): niente volo = niente flyby/kiting, CR effettivo scende a ~16-17 — solo ora il drago diventa uccidibile da party+alleati, oppure fugge come nemesi per ARC-10.
+
+### Obiettivi PG
+
+- **Proteggere il Circolo per 7 round** da ondate mirate:
+  - demoni/diavoli richiamati dall’Avatar,  
+  - squadre Githyanki d’assalto,  
+  - draghi e campioni Red Hand rimasti.
+
+Questo scontro difensivo può essere CR 16–18 a seconda di quanti rinforzi l’Avatar lancia contro i ritualisti.
+
+### Attivazione delle Statue di Rethmar
+
+- Una volta completato il Mythal, gli 8 canalizzano potere nelle grandi statue della città (eroi, santi, re, guardiani), trasformandole in:
+
+  - **Golem di Pietra Colossali** come ultimo bastione (possono contenere/respingere l’Orda sui fianchi, mentre i PG si concentrano su Avatar/Azarr Kul).  
+
+Meccanica:
+
+- Le statue agiscono come alleati controllati dal DM, ciascuna con capacità di:
+  - spazzare interi plotoni di hobgoblin,  
+  - bloccare draghi a terra,  
+  - distruggere macchine d’assedio.
+
+Questo è il “terreno epico” che giustifica perché i PG non debbano affrontare l’intera Orda da soli. [web:101][web:105]
+
+---
+
+## 8. Rinforzi alleati (condizionati dalle quest)
+
+- **Druidi‑Orsi (circolo mutaforma)**:  
+  - Se Hellas ha completato il suo rituale, un piccolo circolo di druidi mutaforma (alla Beorn/Hobbit) appare in Fase 1–2 come cavalleria d’assalto, demolendo giganti e bestie da guerra.  
+
+- **300 Mercenari Nani** (Dauth, torneo vinto):  
+  - Se Tordek ha vinto il torneo e spedito il segnale, questi arrivano come fanteria pesante, stabilizzando i varchi nelle mura e proteggendo quartieri civili.  
+
+- **150 Lance di Re Thorek** (flusso separato, D10):  
+  - Condizionato dagli hook politici (sigillo Maewen + lettera Thorik), NON dalla vittoria al torneo. Si somma ai 300 mercenari fino a un massimo combinato di **450 nani**.
+
+- **Tiri‑Kitor (Starsong Hill)**:  
+  - **100 ranger elfici + 20 gufi giganti** (D9 — 1/5 della tribù di ~500 anime, il resto difende Starsong). Cavalleria su civette giganti che domina i cieli contro Githyanki e draghi più piccoli.  
+
+- **Ghostlord**:  
+  - Se alleato/neutralizzato, può addirittura inviare qualche leone spettrale contro la **retroguardia** Red Hand, riducendo ulteriori ondate.
+
+Tutto questo può essere gestito come bonus tattici o “Victory Points” che abbassano/modulano il CR effettivo degli scontri.[web:86][web:115]
+
+---
+
+## 9. Cornice leggera d'assedio (Heroes of Battle ridotto — C1)
+
+> **Lotto C1 (2026-07-02).** Vincolo **D13**: questa cornice è **sfondo lato DM**,
+> non un wargame al tavolo. I giocatori vivono la battaglia tramite le **carte**
+> dell'EVENT-DECK (C7,
+> `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md`); questa sezione è il
+> **motore che il DM tiene nascosto** dietro le carte. Il **prototipo giocato** di
+> tutto questo è già l'assedio di Dauth
+> (`Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DAY3-CITY-SIEGE.md`): a Rethmar si usa
+> lo stesso schema, amplificato sui 3 giorni (Day 40-42).
+
+### 9.1 — (a) Victory Points nascosti → check di Morale per ondata
+
+I VP della matrice ESITI-CONSEGUENZE §2 **restano**, ma diventano un **tracker del
+DM** chiamato **"il Fronte"** (come a Dauth). **I giocatori non lo vedono mai**:
+sentono solo le conseguenze narrate ("le mura a nord cedono", "il morale crolla").
+
+- Il **Fronte** parte al valore-base dello scenario (ARMATE-SYNC §3): scenario
+  worst = 2, baseline = 3, medio = 4, ottimale = 6, leggendario = 7. Ogni fattore
+  della matrice ESITI §2 lo muove di ±1/±2/±3 come lì indicato.
+- **Check di Morale per ondata**: quando un'ondata di Fase 1 colpisce un settore,
+  i difensori tirano **1d20 + Fronte** contro **CD 15** (ondata leggera) / **20**
+  (pesante) / **25** (ondata drago o breccia). **Fallimento = un settore cede**
+  (narrato: breccia, fuga, quartiere perso) e il Fronte scende di 1.
+- I **ruoli di comando PG** (§9.2) e il **Morale Cittadino** (`Bestiario/png/Consiglio_Rethmar/`
+  §"Morale Cittadino di Rethmar") danno bonus a questo check.
+- **Effetto meccanico continuo** (non solo a fine battaglia): il Fronte corrente
+  è il **+X** che modula il CR effettivo delle carte EVENT-DECK e l'esito
+  off-screen delle crisi non scelte (EVENT-DECK §5). Fronte alto = ondate più
+  leggere, alleati più efficaci; Fronte basso = ondate più cattive.
+
+### 9.2 — (b) Ruoli di comando PG (azioni di scena, 10 minuti in-world)
+
+Un PG può **spendere la propria "campana"** (finestra di scena, 2-3 per giorno)
+in un **ruolo di comando** invece di giocare una carta EVENT-DECK. Effetto
+quantificato, mai un wargame:
+
+| Ruolo | PG tipico | Effetto meccanico |
+|---|---|---|
+| **Comandante** | Thorik / Tordek | +2 al check di Morale di **un** settore per l'ondata corrente (Thorik, Custode Eterno con titolo di Re Thorek, dà +3) |
+| **Campione** | Tordek / Thorik | Duello pubblico contro un capo nemico (Wyrmlord Karruk CR 10, capitano hobgoblin CR 8): se vinto, l'ondata di quel settore perde 1 grado di CD (pesante→leggera) e +1 Fronte |
+| **Fulcro Arcano** | Artemis | Sbarramento arcano/utility: **nega una passata di soffio** di Tyrgarun o di un Razorfiend a un settore (vedi §9.4), o dissolve un focus/evocazione |
+| **Salvatore** | Hella | Triage/evacuazione di massa: annulla per una campana il malus di un settore civile in crisi (ospedale, rifugiati) e stabilizza il Morale Cittadino |
+
+### 9.3 — (c) Tabella d12 eventi di battaglia (per fase)
+
+Tira 1d12 all'inizio di ogni **campana** per un evento di colore/pressione da
+intrecciare con le carte. (Molti sono anche **carte S1/S2 dell'EVENT-DECK**: se
+esce un numero che corrisponde a una carta già in gioco, promuovilo a carta.)
+
+| d12 | Fase 0-1 | Fase 2-4 |
+|---|---|---|
+| 1 | Breccia improvvisa in un settore (check Morale CD 20) | Ondata di erinni/abishai sui ritualisti-Circolo |
+| 2 | Passata di soffio di Tyrgarun (§9.4) | Tyrgarun tenta il cerchio del Mythal (§9.4/§7) |
+| 3 | Cecchino/assassino punta a un comandante (Kaal, Brenna, Lorana) | Azarr Kul lancia *blade barrier* sulla squadra PG |
+| 4 | Incendio in un quartiere (rifugiati, -1 Morale Cittadino) | Crollo strutturale (statua/campanile) — hazard mappa |
+| 5 | Atto d'eroismo PNG (Lorana/Sorvane): +1 Fronte narrato | Un Arcimago del Circolo cade: -1 concentrazione Mythal |
+| 6 | Convoglio-riserva di Lorana sotto attacco (S2 EVENT-DECK) | Ondata di rinforzi extraplanari (se Mythal non attivo) |
+| 7 | Duello richiesto da un Wyrmlord (Campione, §9.2) | Avatar usa Aura di Terrore (Will CD 26 area) |
+| 8 | Sabotaggio interno drow (poterna/polveriera) | Statue-Golem si attivano male (1 round di ritardo) |
+| 9 | Gli Esperimenti Fungini sfondano un muro (Ondata 4) | Focus rituale sopravvissuto rilascia backlash |
+| 10 | Rifugiati in fuga bloccano una via (scelta morale) | Karruk irrompe con la guardia del Teschio Nero |
+| 11 | Un settore alleato regge oltre le attese: +1 Fronte | Un PG-focus del Mythal vacilla (TS aggiuntivo §7) |
+| 12 | Momento di quiete: riposo breve possibile | Momento di quiete: recupero risorse limitato |
+
+### 9.4 — (d) Set-piece TYRGARUN (D11 v2) — il terrore dei cieli
+
+> Benchmark: **Abithriax sulle mura di Brindol** (RHoD Parte 4). Statblock
+> completo (profilo aereo CR 18 + profilo a terra CR ~16-17):
+> `Bestiario/villain/tyrgarun-blue-old-cr18.md`.
+
+Tyrgarun **non è un incontro a iniziativa** finché il Mythal non lo inchioda: a
+CR 18 in volo con Flyby è imbattibile per design. Si gioca a **scalini**.
+
+**FASE 1 — Hazard di bombardamento (contromosse quantificate).** Ogni 1d4 round
+Tyrgarun fa una **passata di soffio** su un settore: **linea 30 m, 20d8
+elettricità, Riflessi CD 29 per metà** (serventi e milizia in area muoiono se non
+in copertura). I PG **non lo abbattono** — lo **negano**, con contromosse che il
+DM tratta come check, non come combattimento:
+
+| Contromossa | Meccanica | Effetto se riuscita |
+|---|---|---|
+| **Nidi di balliste** (2-4 sui bastioni) | Artiglieria: attacco a distanza +8, danno 4d6, CA di Tyrgarun 35 (contatto 8 in avvicinamento); ogni nido ha CA 5, 60 pf, RD 5 | Una passata deviata (Tyrgarun sale fuori portata 1d4 round) |
+| **Squadroni di gufi giganti Tiri Kitor** (se alleanza D9) | 20 gufi = "asset" astratto; ogni round negano **1 passata** ingaggiandolo in volo | Tyrgarun non può bombardare quel settore |
+| **Missione-esca dei PG** | I PG attirano Tyrgarun con un bersaglio ghiotto (l'Artefatto Maligno, un focus arcano di Artemis): Raggirare/Conoscenze CD 22 | Tyrgarun spreca 1d4 round su un'esca; nessun danno ai settori |
+| **Fulcro Arcano** (§9.2, Artemis) | Sbarramento di *eldritch blast*/utility | Nega **1 passata** a un settore |
+
+Se le contromosse falliscono ripetutamente (2+ passate a segno di fila), un
+settore **cede** (-1 Fronte, breccia → carta EVENT-DECK).
+
+**FASI 2-3 — Copertura aerea a orologeria.** Tyrgarun **protegge i ritualisti**
+(Fase 2) e vola sopra il campo boss (Fase 3) come **clock**: ogni round che i PG
+impiegano contro i ritualisti/Azarr Kul, tira 1d6 — con **1-2** Tyrgarun fa una
+passata sulla squadra speciale (soffio, poi risale). Non atterra. È la ragione
+per cui la squadra PG **ha fretta**: più tempo passa, più passate subisce.
+
+**FASE 4 — Il Mythal lo inchioda a terra** (canone §7 / P2D-INTEGRAZIONE r.201).
+Completato il Mythal, Tyrgarun **perde il volo** entro l'area: profilo **a terra
+CR ~16-17** (niente Flyby/kiting, -2 tiri/TS da Mythal). **Solo ora** è
+uccidibile da party APL 14 + alleati + Statue-Golem. Alternativa: se ridotto
+sotto 80 pf **prima** del Mythal, **fugge** e diventa **nemesi per ARC-10**.
+
+**Accettazione C1**: il DM risolve Fase 1 senza improvvisare; i VP (il Fronte)
+hanno effetto meccanico continuo, non solo a fine battaglia; Tyrgarun ha uno
+script a scalini con statblock a terra pronto.

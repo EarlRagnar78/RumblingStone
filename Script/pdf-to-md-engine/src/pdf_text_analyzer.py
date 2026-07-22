@@ -265,9 +265,10 @@ class PDFTextLayerAnalyzer:
         # Fix common OCR issues
         text = text.replace('ﬁ', 'fi')  # ligature fixes
         text = text.replace('ﬂ', 'fl')
-        text = text.replace(''', "'")    # smart quotes
-        text = text.replace('"', '"')
-        text = text.replace('"', '"')
+        text = text.replace('‘', "'")    # smart quotes
+        text = text.replace('’', "'")
+        text = text.replace('“', '"')
+        text = text.replace('”', '"')
         
         # Remove very short or meaningless text
         if len(text) < 3 or text.isdigit():

@@ -131,7 +131,7 @@ SUD ↓ (Nemici Approcciano)
 | **Bastione G2 Est** | 85-88 | 65-67 | 6m × 4.5m | 40 nani + 2 baliste |
 | **Cancello Principale** | 58-61 | 72-73 | 6m × 3m | HP 120, punto focale |
 | **Ponte Levatoio** | 57-62 | 74-76 | 9m × 4.5m | HP 80, abbassato |
-| **Fossato** | 13-87 | 76-79 | 111m × 6m | 3m profondo, nuotare DC 15 |
+| **Fossato** | 13-87 | 76-79 | 111m × 6m | 3m profondo, nuotare CD 15 |
 
 ---
 
@@ -272,6 +272,60 @@ VISTA DAL CAMPO DI BATTAGLIA (Nemici Guardano Alto) ↑
 - Damage Giorno 1-2: -80 (bombardamento continuo)
 - Mid Day 2: Top **COLLAPSED**
 - Conseguenza: 2 baliste + 10 crossbow persi, coverage ridotto 50%
+
+---
+
+### 🌍 AMBIENTE (companion T5b, consolidato da VISTA 1-4 sopra)
+
+**SVG**: `rendered/Hammerfist-L2-REVISED-Ultra-Clear_map01_comprensione-questa-mappa-mostra-tutta-la-fortez.svg`
+
+| Elemento | Dove | Effetto meccanico 3.5 |
+|---|---|---|
+| Fossato | col 13-87, righe 76-79 (6 m largo, 3 m profondo) | Nuotare CD 15; attraversamento in 2 round (1 nuotare, 1 scalare l'uscita) |
+| Pendio fangoso pre-fossato | a sud del fossato | terreno difficile (movimento ×0,5) |
+| Elevazione torri | Torre Ovest col 08-11, Torre Est col 90-93, +20 m | copertura totale per gli occupanti da attacchi dal basso; baliste a 120 m di gittata |
+| Elevazione bastioni sud G1/G2 | col 20-23 e 85-88, righe 65-67 | walkway di difesa; ciascuno con 40 nani + 2 baliste |
+| Porta interna elevata | righe 41-42, col 57-62 | +3 m di elevazione, 6 m larga, PF 90 — ultimo chokepoint prima del cortile interno |
+| Montagna a nord | righe 01-15, tutte le colonne | bedrock impenetrabile, nessun approccio possibile da nord |
+
+### ⚔️ TATTICHE (companion T5b, consolidato da POSIZIONI PG + DISTANZE)
+
+- **Disposizione difensiva (Giorno 1-2)**: Dara Occhiolesto in cima alla
+  Torre Ovest (col 09, riga 62, +20 m, sniper); Borin Ferropugno al
+  comando della prima linea nel cortile esterno (col 60, riga 54); Thorin
+  Runaforte nel cortile interno vicino a Madre Dana (col 59, riga 36,
+  supporto cura); Nala Cantapietre al Bastione G1 Ovest (col 22, riga 66,
+  sabotaggio/bardica); Re Thorek XIII al centro del cortile interno,
+  protetto (col 60, riga 34); Madre Dana alla stazione di cura (col 61,
+  riga 36); le 5 Cantitrici sulla linea di buff (col 56-60, riga 32).
+- **Distanze chiave** (per il pacing degli assalti): dal Cancello
+  (col 60, riga 72) a Borin (col 60, riga 54) 27 m/18 quadrati; da Borin
+  alla Porta Interna (col 60, riga 41) 19,5 m/13 quadrati; dalla Torre
+  Ovest (Dara) al Cancello 76 m/51 quadrati + 20 m di quota; dal bordo del
+  fossato (riga 76) al Cancello (riga 72) solo 6 m/4 quadrati — punto di
+  massima pressione nemica.
+- **Round-per-round dell'assalto** (Fasi 1-3, bombardamento → carica →
+  pressione continua): vedi `Hammerfist-Lotto-3-FINALE.md` (mappe con lo
+  schema a fasi dell'assalto della Mano Rossa; questo file REVISED è la
+  mappa di riferimento posizioni/distanze, non il copione dell'assalto).
+- **Morale**: nessuna soglia esplicita dichiarata in questo file; vedi
+  evoluzione sotto (trigger = crollo strutturale, non percentuale di
+  perdite).
+
+### 🔄 EVOLUZIONE (companion T5b, consolidato da PUNTI DEBOLI + POSIZIONI PG Giorno 3)
+
+| Stato | Trigger | Cosa cambia sulla griglia | Effetto meccanico |
+|---|---|---|---|
+| A — Giorno 1-2, difesa intatta | — | tutte le strutture ai PF iniziali; difensori alle postazioni sopra | difesa piena |
+| B — Cancello distrutto | −40 PF/giorno per ariete+bombardamento (120→0 in 3 giorni) | Cancello (col 58-61, righe 72-73) a 0 PF | Giorno 3: breccia di 6 m, nemici entrano nel cortile esterno |
+| C — Breccia Muro Est | −120 PF concentrazione giganti/catapulte (240→120, metà Giorno 2) | breccia di 8 m nel Muro Est (col 85-90, riga 68) | secondo punto d'ingresso; Bastione G2 compromesso |
+| D — Torre Est crollata | −80 PF bombardamento continuo (160→80, metà Giorno 2) | cima della Torre Est collassa | perse 2 baliste + 10 balestrieri; copertura ridotta del 50% |
+| E — Giorno 3, critico | esito combinato di B+C+D | Nala si sposta a esplorare il tunnel segreto (col 58, riga 70); Thorin raggiunge Re Thorek (col 60, riga 34) per tenerlo in vita | evacuazione verso il Cuore della Montagna imminente `[INFERRED — needs DM confirmation: dettagli evacuazione fuori da questo file]` |
+
+> Gli stati sono esiti aperti (D13): il trigger è dei dadi e delle scelte
+> dei PG (quanto riescono a rallentare i danni strutturali), mai del
+> copione — i PF/giorno sopra sono il ritmo di riferimento del file, non
+> un contatore automatico.
 
 ---
 

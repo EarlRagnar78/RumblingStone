@@ -2,6 +2,15 @@
 ## PARTE 3B - RITUALE DI RESURREZIONE: IL DONO DELL'ANIMA (MERGED & FINAL)
 ### Avventura D&D 3.5 - Livello 13+
 
+> ⚠️ DEPRECATED (2026-07, B2): il master del P3B è
+> `PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` (eletto in B2, integra il
+> viaggio giocato). Questo merge breve è conservato come storia di progetto
+> (D10). Vedi `ARC07-MATRICE-VERSIONI.md`.
+>
+> **Ordine di gioco (D2)**: nonostante la sigla "3B", questa parte si gioca
+> DOPO il P4 (Piano della Terra, in corso) e PRIMA del P5 (viaggio
+> temporale). Vedi `PIANO-REVISIONE-ARC07-COERENZA-E-QUALITA.md` §0 D2.
+
 ---
 
 **Sistema:** Dungeons & Dragons 3.5 Edition

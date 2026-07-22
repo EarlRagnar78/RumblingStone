@@ -124,7 +124,13 @@ Note: Natural 1/20 do NOT auto-fail/succeed skill checks in RAW 3.5.
 
 ## Experience Points and Level Progression
 
-| Level | XP (Standard) | Slow | Fast |
+XP needed for level N = 500 × N × (N−1). The XP-to-level table is **not**
+part of the OGL SRD (it's PHB material) — the standard column below is the
+well-known progression; there are **no** official slow/fast XP tracks in
+3.5 (that's a Pathfinder concept). The legacy columns below are house-rule
+options only (standard ×1.5 / ×0.75):
+
+| Level | XP (Standard) | Slow (house rule) | Fast (house rule) |
 |---|---|---|---|
 | 1 | 0 | 0 | 0 |
 | 2 | 1,000 | 1,500 | 750 |

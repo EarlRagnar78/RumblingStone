@@ -1,5 +1,12 @@
 # 🐉 CORREZIONE CRITICA: FAUCI DI PALUDE - DRAGO NERO
 
+> **Stato (A6)**: *ricalibrazione* dello statblock di Fauci di Palude. ⚠️
+> Contiene un **doppio profilo** (GS 15 Anno 1372 / GS 12 versione P6): il
+> profilo GS 12 è **storia superata** (finale 1372 di P6, deprecato in A3);
+> per il 1372 vale il **GS 15** dei file ARC-08. La verifica formale
+> BAB/TS/CD e gli XP dell'incontro si chiudono in **B5** (errata 3.5). Vedi
+> `ARC07-MATRICE-VERSIONI.md`.
+
 ## ⚠️ ERRORE PRECEDENTE RILEVATO E CORRETTO
 
 **PRIMA (ERRATO):**
@@ -324,22 +331,26 @@
 - [ ] Gorthak ritirata (se vivo)  
 - [ ] Celebrazione nani (mura tenute!)  
 - [ ] Re Thorek XIII discorso riconoscimento  
-- [ ] Setup Parte 7: Epilogo ricompense  
+- [ ] Epilogo/ricompense: ora **ARC-08/ARC-09** (la "Parte 7" non esiste — A3)  
 
 ---
 
 ## 🏆 RICOMPENSE POST-VITTORIA
 
 ### **XP**
-- **Fauci di Palude GS 12:** 8.000 XP (2.000/PG)  
+> ⚠️ **ERRATA (B5)**: "8.000 XP (2.000/PG)" è **errato** per PG di 13° vs GS 12
+> (corretto ≈ **2.925/PG**, ~11.700 totali su 4 PG — sotto di ~30%). E comunque
+> questo profilo GS 12 è **superato** (nel 1372 vale il GS 15 dell'ARC-08, A3).
+> Vedi `ERRATA-ARC07-35-Verification.md` §1.
+- **Fauci di Palude GS 12:** ~~8.000 XP (2.000/PG)~~ → **~2.925/PG** (13° vs GS 12)  
 - **Ondate precedenti:** ~200 XP residui  
-- **TOTALE PARTE 6:** 8.200 XP/PG  
+- **TOTALE PARTE 6:** ricalcolare sul valore corretto (profilo superato)  
 
 ### **TESORO**
 - **Scaglie Drago:** 10.000 mo (materiale armature)  
 - **Sangue Acido:** 5.000 mo (alchemico)  
 - **Tesoro Orda:** 5.000 mo vari  
-- **TOTALE:** 20.000 mo + ricompensa Re Thorek (Parte 7: +50.000 mo!)  
+- **TOTALE:** 20.000 mo + ricompensa Re Thorek (epilogo ARC-08/09, non "Parte 7")  
 
 ### **NARRATIVO**
 - **Leggenda Completata:** *"I Rumbling Stones sconfissero Fauci di Palude - proprio come predetto Anno -1000!"*  
@@ -352,7 +363,7 @@
 ## 📚 FONTI CANONICHE
 
 Informazioni estratte da:
-- `00_Final_hammerfist_battle-La_Mano_Rossa_del_Destino-Guida_Completa_del_DM.md`  
+- `ARC08-01-GUIDA-DM.md`  
 - `PortaleForgia-FINAL-P6.md` + `P6-CORREZIONE-Arrivo.md`  
 - `PortaleForgia-FINAL-P5.md` (connessione Skullcrusher)  
 

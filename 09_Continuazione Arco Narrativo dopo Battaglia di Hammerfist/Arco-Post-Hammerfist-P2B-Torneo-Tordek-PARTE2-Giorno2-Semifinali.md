@@ -28,7 +28,7 @@ Specchi, nebbia, colonne fluttuanti
 - Nome dichiarato: **Kethran “Mano di Pietra”** — monaco errante, umano, ~35 anni.
 - Origine dichiarata: monastero isolato del Vaprak Settentrionale (località non verificabile).
 - Aspetto: rasato, viso largo coperto da una maschera cerimoniale di cuoio bollito che lascia scoperti solo gli occhi. Usa **guanti monastici** che coprono completamente le mani e le avambraccia. Spiegazione pubblica: *“Voto di anonimato finché non avrò sconfitto il maestro che mi ha esiliato.”*
-- Modi: silenziosissimo. Non parla mai ad alta voce — comunica con cenni o con un giovane allievo (in realtà uno **slave psionico**, vedi `PNG/Sethrax_il_Velato/`) che traduce.
+- Modi: silenziosissimo. Non parla mai ad alta voce — comunica con cenni o con un giovane allievo (in realtà uno **slave psionico**, vedi `Bestiario/villain/Sethrax_il_Velato/`) che traduce.
 - Stile di combattimento: monaco-grappler atipico, predilige tentacoli/leve di lottatore (in realtà mimetizza i 4 tentacoli sotto le maniche).
 
 ### Chi è davvero (info DM, NON svelare)
@@ -50,7 +50,7 @@ Distribuisci **uno o due** indizi per round, mai tutti insieme:
 
 ### Prove per smascherarlo prima del Giorno 3
 
-> **Fonte autoritativa dei trigger di smascheramento: `PNG/Sethrax_il_Velato/Sethrax.md` → "Disguise Self psionico" + sezione tattiche.** Le righe sotto sono un riassunto rapido per il DM in scena; in caso di conflitto vince la PNG card.
+> **Fonte autoritativa dei trigger di smascheramento: `Bestiario/villain/Sethrax_il_Velato/Sethrax.md` → "Disguise Self psionico" + sezione tattiche.** Le righe sotto sono un riassunto rapido per il DM in scena; in caso di conflitto vince la PNG card.
 
 - Conoscenze (arcane) o Sapienza Magica CD 22 → riconoscere il pattern di un’*alter self* psionico stabile.
 - Percezione passiva CD 24 (round vicino) → notare i 4 punti di pressione anomali sotto le maniche.

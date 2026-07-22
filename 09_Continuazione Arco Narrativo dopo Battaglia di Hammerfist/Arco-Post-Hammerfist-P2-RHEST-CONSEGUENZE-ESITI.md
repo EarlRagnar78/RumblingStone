@@ -3,6 +3,31 @@ Arco-Post-Hammerfist-P2-RHEST-CONSEGUENZE-ESITI.md
 
 # Rhest – Esiti e conseguenze (CR 13)
 
+> **Versione**: v2 (2026-07-02) — agganciata ai numeri canonici (Lotto B, task
+> B1.5). Aggiunti: collegamento esplicito a `campaign/state.md` §2.3
+> (−1 drago, −2 Razorfiend), intel d'assedio (−1 CR a una fase di Rethmar),
+> eco Tiri‑Kitor (vendetta di Lanikar → +VP alleanza). **HUB Rhest**:
+> `Arco-Post-Hammerfist-P2-RHEST-OVERVIEW.md`.
+
+---
+
+## 0. Numeri canonici (ancoraggio a state.md §2.3)
+
+> Questi valori **vincono** su qualunque stima generica nel resto del file.
+
+| Esito a Rhest | Effetto sull'Orda a Rethmar (`campaign/state.md` §2.3) |
+|---|---|
+| **Regiarix ucciso** (+ nido distrutto in Fase 2) | **−1 drago, −2 Razorfiend** |
+| **Regiarix fuggito** (tuffo sotto ~30% pf) | Nessuna riduzione del drago (può ricomparire) |
+| **Nido distrutto ma drago fuggito** | −2 Razorfiend soltanto |
+| **Rhest fallita** | Nessuna riduzione; +ondata Razorfiend possibile |
+
+Effetto sull'alleanza Tiri‑Kitor (numeri D9, `campaign/state.md` §2.4): l'appoggio pieno
+vale **100 ranger elfici + 20 gufi giganti** a Rethmar. Rhest è la prova che
+sblocca/consolida quell'appoggio (vedi §8).
+
+---
+
 ## 1. Vettori principali di esito
 
 Valuta per Rhest:
@@ -27,7 +52,7 @@ Valuta per Rhest:
 **Conseguenze**:
 
 - Rhest NON è più un avamposto funzionale della Red Hand.  
-- NESSUN razorfiend come “arma speciale” durante l’Assedio di Rethman.  
+- NESSUN razorfiend come “arma speciale” durante l’Assedio di Rethmar.  
 - Tiri‑Kitor:
   - sostegno pieno (bonus massimo di alleanza, cavalleria aerea completa).[web:119]  
 - Red Hand:
@@ -75,7 +100,7 @@ Ganci:
 **Conseguenze**:
 
 - Rhest resta una spina nel fianco:
-  - parte dei razorfiend arriverà a Rethman,  
+  - parte dei razorfiend arriverà a Rethmar,  
   - Tiri‑Kitor esitano, offrono solo supporto limitato (patrol aerei, non grosse forze).  
 
 - Red Hand:
@@ -99,7 +124,7 @@ Gancio:
 
 **Conseguenze**:
 
-- Durante l’Assedio di Rethman:
+- Durante l’Assedio di Rethmar:
   - comparsa di una **grossa ondata di razorfiend** (1–3 esemplari avanzati) come batteria d’assalto.  
   - eventuale apparizione di Regiarix o di un altro drago nero “mandato da Rhest” come rinforzo aereo.  
 
@@ -117,7 +142,7 @@ Ganci:
 
 ---
 
-## 6. Collegamento a Battaglia Finale di Rethman
+## 6. Collegamento a Battaglia Finale di Rethmar
 
 Riassunto rapido di impatto sull’assedio:
 
@@ -135,3 +160,51 @@ Riassunto rapido di impatto sull’assedio:
   - ondata grossa di razorfiend (minaccia CR alta),  
   - eventuale Regiarix/erede a supporto aereo,  
   - Tiri‑Kitor tiepidi o assenti → CR dell’assedio si alza sensibilmente.
+
+---
+
+## 7. Intel d'assedio (i documenti della Sala del Consiglio)
+
+Se i PG recuperano i **documenti d'assedio** in Fase 3 (§4 di FASE3, Cercare
+CD 20) e li consegnano al **Consiglio di Rethmar**:
+
+- **Ricompensa meccanica**: i difensori conoscono in anticipo un asse d'attacco
+  dell'Orda → **−1 al CR effettivo di UNA fase dell'assedio a scelta** (Fase 1
+  ondate, Fase 2 ritualisti, o Fase 3 boss). Si applica una sola volta.
+- **Come si spende**: il DM (o i PG, in consiglio) sceglie la fase; annota il
+  modificatore sul tracker "il Fronte" (VP nascosti, D13). Cross-ref:
+  `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md`.
+- **Se i documenti sono bruciati/non trovati**: nessun bonus; l'Orda mantiene la
+  sorpresa strategica.
+
+---
+
+## 8. Eco Tiri‑Kitor — la vendetta di Lanikar
+
+Rhest cadde quando la Mano Rossa vi si insediò; molti Tiri‑Kitor persero
+qualcuno. **Lanikar** — ranger di Starsong caduto a Rhest — è il perno emotivo
+dell'alleanza (vedi `Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-TESTO.md`).
+
+- **Se i PG onorano i caduti** (tumulo elfico onorato in Fase 1 §del d12,
+  medaglione recuperato, o resti di Lanikar riportati a Starsong) **e** liberano
+  Rhest: **+1 morale / +VP** all'alleanza Tiri‑Kitor → spinge lo stato da
+  "prudente" a **"pieno"** (i 100 ranger + 20 gufi giganti, D9).
+- **Se profanano i tumuli o lasciano Rhest in mano al nemico**: **−morale**; i
+  Tiri‑Kitor restano tiepidi anche se l'alleanza formale c'è.
+- **Gancio narrativo**: consegnare a Sellyria Starsinger / Killiar Arrowswift la
+  prova che Rhest è vendicata è una **scena giocata**, non una riga di conto:
+  chiude il lutto della tribù e apre la cavalleria dei cieli per Rethmar.
+
+---
+
+## 9. Checklist DM (esiti di Rhest)
+
+- [ ] Registrato l'esito esatto: Saarvith (vivo/morto/fuggito), Regiarix
+      (vivo/morto/fuggito), nido (distrutto/parziale/intatto)?
+- [ ] Applicato il conteggio canonico **−1 drago / −2 Razorfiend** (§0) al
+      tracker dell'Orda di `campaign/state.md` §2.3?
+- [ ] Documenti d'assedio: assegnato (o negato) il bonus **−1 CR** a una fase
+      di Rethmar (§7)?
+- [ ] Eco Lanikar: aggiornato il **morale/VP Tiri‑Kitor** e lo stato
+      dell'alleanza (pieno/prudente/tiepido, §8)?
+- [ ] Saarvith fuggito? Annotato come **cecchino** per il mazzo eventi di Rethmar?

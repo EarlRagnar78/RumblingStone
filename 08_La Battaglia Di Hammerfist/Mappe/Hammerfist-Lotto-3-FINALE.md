@@ -1,3 +1,11 @@
+> ⚠️ **DEPRECATED (2026-07)** — piano ARC-08 A8: generazione superata
+> (manca inoltre MAPPA 3Y "Il Ponte Sospeso", mai stata qui — vedi il
+> master). **Master**: `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md`
+> (mappe 3X, 3Y, 3Z, 5, 4X, 4-finale — matrice di contenuto in testa a
+> quel file). Per la griglia di precisione della 3X vedi anche
+> `Hammerfist-L3-REVISED-Ultra-Clear.md` (lì rinominata H3-1).
+> Contenuto mantenuto per storico (D12), non cancellato.
+
 # HAMMERFIST TACTICAL MAPS - LOTTO 3 FINALE
 ## Sessione 3: Dalle Profondità + Sessione 4: Vittoria Finale (5 Mappe)
 
@@ -221,7 +229,7 @@ S5: P12-Q13 | S6: P21-Q22 | S7: M17-N18 | S8: T17-U18
 
 ### AMBUSH TRIGGERS & POSITIONS:
 
-**8 Bugbear Assassini 🟥 (Hidden, Spot DC 25):**
+**8 Bugbear Assassini 🟥 (Hidden, Osservare CD 25):**
 - **East Tunnel (4):** Y16-Z19 (Wait darkness, observe)
   - Target: Re Thorek (assassination priority)
 - **West Tunnel (4):** H16-I19 (Mirror east)
@@ -237,7 +245,7 @@ S5: P12-Q13 | S6: P21-Q22 | S7: M17-N18 | S8: T17-U18
 - Round 2: Bugbears strike simultaneously E+W (Death Attacks)
 
 **PG Roles:**
-- **Borin (P17):** Spot DC 25 detect bugbears BEFORE strike
+- **Borin (P17):** Osservare CD 25 detect bugbears BEFORE strike
 - **Dara (Q15):** Elevated stalagmite S5, Precise Shot
 - **Thorin (P18):** *Blade Barrier* block tunnel, *Mass Cure*
 - **Nala (O17):** *Glitterdust* reveal bugbears, Countersong

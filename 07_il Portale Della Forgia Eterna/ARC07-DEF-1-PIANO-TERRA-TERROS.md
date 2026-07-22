@@ -453,6 +453,17 @@ schiacciamento/round, vedi Contingenze §8); riva = detriti instabili
 **Cosa succede qui:** **§6-bis Seme-Mercato** (quest privata di Artemis, sulla
 riva) → **§7a salto gravitazionale co-op** → Tempio.
 
+### Eventi di viaggio (d6 — uno per zona attraversata, a discrezione)
+
+| d6 | Evento (colore + meccanica leggera) |
+|---|---|
+| 1 | **Sciame di cristalli-spora**: minuscoli cristalli volanti circondano il party e ne **imitano le sagome in miniatura** — un piccolo Thorik di quarzo, un piccolo Tordek. Innocui, indimenticabili. (Se qualcuno ne conserva uno: 50 mo da un collezionista, e un gancio.) |
+| 2 | **Caduta di stalattiti** (vedi Ambiente dinamico): 1d4 stalattiti, Riflessi CD 18, 3d10 nell'area |
+| 3 | **Sacca di polvere densa**: Tempra CD 16 o 1d3 COS (assuefazione come da regola PF1e) |
+| 4 | **L'eco della montagna**: la Corona di Thorik pulsa — per un istante SENTE Hammerfist (il countdown, §0), il fumo, i martelli. Nessuna meccanica: solo il peso. |
+| 5 | **Xorn solitario** (neutrale, curioso): per 100 mo di metallo racconta qualcosa di vero (a scelta: il pilastro corroso, la Madre Cristallo, "il cubo che ruota schiaccia chi porta ferro") |
+| 6 | **Il Sogno della Terra sfiora Hella**: da' alla giocatrice UNA immagine (§1) — la più vicina a dove si trova ora il party. |
+
 > **Gestione del viaggio (per il DM).** Tra un incontro e l'altro chiedi
 > **una prova di gruppo** ogni zona (Sopravvivenza/Equilibrio CD 12 con la
 > Benedizione) non per bloccare, ma per **colorare la fatica**: chi fallisce
@@ -1039,6 +1050,15 @@ R4+: alterna Earth Glide mordi-e-fuggi, Onda e Scudo. Sotto il
 | **Tordek** (CA ~27) | simile, ma il Push lo sbatte in zero-G | **pericoloso senza cure**: deve muoversi, non tankare |
 | **Artemis** (in volo) | quasi mai colpito (−4 vs aria) | minacciato solo da Stalattiti e Lancio di roccia |
 
+### Scalare lo scontro (sidebar stile RHoD)
+
+> | Situazione al tavolo | Aggiustamento |
+> |---|---|
+> | Party arriva **già al 14°** o straripante di risorse | Terros **avanzato a 34 DV** (390 pf, attacchi +32, CD +1) e lo Scudo di Geodi parte **già attivo**; oppure aggiungi 2 Elementali della Terra Grandi (CR 5) che emergono dal pavimento al round 3 |
+> | Party **logorato** (niente Frequenza, molte risorse spese, qualcuno sotto metà pf) | Terros usa l'Onda Gravitazionale **una sola volta**; la Rigenerazione scende a 10/round; NON insegue chi resta in zero-G ai margini |
+> | **Therysol scende** (deroga a D15 decisa al tavolo) | Conta come mezzo PG (supporto a distanza): riporta Terros al profilo pieno e togli 1 uso al Diapason |
+> | Un PG viene **abbattuto** durante lo scontro | Terros lo IGNORA (il voto è custodire lo Smeraldo, non uccidere i caduti): passa al bersaglio in piedi — finestra drammatica per stabilizzarlo |
+
 ### Tattiche di Terros — regia round per round (stile RHoD, agganciata a MAPPA T-6)
 
 > Scritte dal punto di vista del GUARDIANO. Terros non odia: **esegue un voto
@@ -1093,6 +1113,7 @@ R4+: alterna Earth Glide mordi-e-fuggi, Onda e Scudo. Sotto il
 | **Distruggono/danneggiano l'Altare** | Impossibile scalfirlo (mithral consacrato, Durezza 20, autoriparante) — ma il TENTATIVO è sacrilegio: Terros entra in **furia** (+2 att/danni, −2 CA) e i Bracieri di Tordek **si raffreddano** di disapprovazione (nessun malus meccanico: solo il gelo del vecchio fabbro nella mente). |
 | **Qualcuno precipita nell'oceano di roccia (fuori dal Tempio)** | Non è lava: è **roccia semi-liquida**. Affonda lentamente (3 round per sommersione): Nuotare CD 20 (faticoso) o corda dei compagni; sommerso = soffocamento + 2d6 schiacciamento/round. Drammatico, non istantaneamente letale. |
 | **Vogliono riposare dentro il Tempio prima del boss** | Possibile (l'Anticamera post-Sentinella è sicura), MA il countdown di Hammerfist scorre: mostra l'orologio (§0). Ogni riposo qui è ore rubate alla montagna che brucia. |
+| **I PG CADONO (sconfitta contro Terros)** | Niente TPK gratuito: il voto di Terros è **custodire**, non massacrare. I caduti vengono **espulsi** — la gravità del Nodo li sputa fuori e si risvegliano sulla riva dell'Oceano di Roccia, interi ma **segnati**: 1 livello di affaticamento che nessun riposo qui rimuove, e il countdown di Hammerfist è sceso di **−12 ore**. Nella Sala, l'affresco A5 mostra ora un **pannello velato** (la Forgia registra anche le sconfitte). Possono ritentare: Terros li aspetta, guarito. *La sconfitta costa tempo e orgoglio, non la campagna.* |
 
 **Durata attesa 4–6 round. XP** ~5.400/PG (CR 15, 3 PG) `[verifica ERRATA]`.
 **Loot**: **Geode Titanico** (5.000 mo, cristalli d'adamantio) + **Cuore di

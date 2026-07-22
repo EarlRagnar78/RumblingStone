@@ -50,7 +50,8 @@ sarà una passeggiata: la fisica stessa del piano è un nemico.
 APL effettivo **12** (3 PG, **niente guaritore**). Gli scontri sono **duri di
 proposito** (D8): gli artefatti unici compensano l'assenza di Hella.
 
-**Cosa stampare.** Questo file; le 6 mappe (§MAPPE); gli statblock di
+**Cosa stampare.** La **Quick-Reference §0-bis** (una pagina, tutto lo
+scontro); gli **handout del §13**; le 6 mappe (§MAPPE); gli statblock di
 **Terros** (§8), della **Sentinella di Mithral** (§7b), degli **Xorn** (§5);
 la scheda Bracieri completa
 (`PG/Artefatti/Artefatti-Pg/Tordek/05_Bracieri_Gemelli_Scheda_PG_Completa.md`);
@@ -61,6 +62,62 @@ combinati di tutti e tre** (§9) → gli affreschi della Sala **e** della Stanza
 della Corona incidono un nuovo pannello (§10, "La Forgia Ricorda") → si apre
 la strada alla resurrezione di Hella (#3). Countdown Hammerfist a fine parte:
 **~3 giorni e 18 ore**.
+
+---
+
+## §0-bis — QUICK-REFERENCE DM (da stampare: tutto lo scontro in una pagina)
+
+### CD chiave della parte
+| Prova | CD | Dove |
+|---|---|---|
+| Viaggio (colore/affaticamento) — Sopravvivenza/Equilibrio | 12 | §4 |
+| Xorn: demolizione pilastro — Conoscenze / colpo mirato | 18 / 20 | §5 |
+| Xorn: negoziazione — Diplomazia (Terran) | 18 | §5 |
+| Cristalli: skill challenge (6 successi / 3 fallimenti) | 15–22 | §6 |
+| Runa di Varis: estirpare — Sapienza Magica / FOR | 22 | §6, §8-bis |
+| Tempio: salto di Tordek — Saltare (Take 10 = 26 ✓) | 25 | §7a |
+| Tempio: corda — Scalare; Ancora Thorik — FOR | 15; 20 | §7a |
+| Sentinella: liberarsi dalla Magnetite — FOR (Thorik) | 28 | §7b |
+| Risveglio Bracieri — Volontà / Tempra | 20 / 22 | §7b |
+| Frequenza della Confusione — Intrattenere Canto (Anello +4) | 18 | §8 |
+| Terros: Push — FOR nega · Onda/Stalattiti/da lui — Riflessi | 25 · 22 | §8 |
+| Rituale F2: Thorik Tempra/FOR (**16** se Tordek riesce) · Tordek TxC/Conc. · Artemis UMD/TxC | 26 · 25 · 25 | §9 |
+
+### Iniziativa tipo & pf da tracciare
+`Artemis +? · Tordek +? · Terros −1 · Thorik +?` — **Terros 345 pf**
+(soglie: 260 = usa Scudo di Geodi; 172 = difesa sull'Altare/rigenera;
+0 = si sbriciola, emerge lo Smeraldo). **Sentinella 160 pf** (80 = Overdrive
+3 attacchi/CA 24; 0 = petto aperto → colpo finale). **Fauci di Diamante 180
+pf** (90 = si rifugia nel cristallo +4 CA). Xorn 52 pf (15 = scava via).
+
+### Il giro di Terros, in breve (3.5: UNA azione per round)
+1. **Full-attack** 2 schianti +30 (2d10+10 + Push FOR 25) — la base.
+2. **Onda Gravitazionale** (poi ricarica 1d4): tutti "cadono" 9 m, Rifl 22.
+3. **Stalattiti** (ricarica 5-6/d6): 8d6 raggio 9 m, Rifl 22 ½ — *Artemis
+   con azione preparata le disintegra (contatto CA 12)*.
+4. **Scudo di Geodi** (ricarica 1d3): +4 CA, no critici — *Tordek lo frantuma
+   con >15 danni sonici in un colpo → Terros frastornato*.
+5. **Earth Glide** (movimento): entra/esce dall'Altare — *Thorik lo inchioda
+   con FOR contrapposta vs Lotta +40 (con Aiuto+Benedizione)*.
+Rigenera **15/round** a contatto con pietra. Sonico **×1,5**. −4 vs volanti.
+
+### 🐾 Supporto Pathfinder 1e (dove il 3.5 è vago) — opzionale, dichiarato
+> Il 3.5 non ha regole formali per l'assenza di gravità e per le polveri
+> tossiche ambientali; PF1e sì. Se vuoi crunch più solido, usa queste (fonte
+> PF1e, ambiente planare) al posto delle improvvisazioni:
+> - **Zero-G (camera di Terros)**: chi non vola si muove solo **spingendosi da
+>   una superficie** (linea retta, metà velocità) o con **Volare CD 20** per
+>   manovrare; senza appigli è **in balia** (può solo derivare). Combattere
+>   fluttuando: **−4 agli attacchi in mischia** senza un punto d'appoggio.
+>   Prima esposizione: **Tempra CD 15** o **nauseato 1 round** (vertigine da
+>   caduta libera — i nani, gente di pietra, la odiano).
+> - **Polvere di cristallo (caverne, §4)**: trattala come **inalazione
+>   tossica** PF1e — Tempra CD 16, 1d3 COS, la CD **cala di 1** per ogni TS
+>   superato (assuefazione); filtro sul volto = +4 al TS; *Endure Elements*
+>   NON protegge (non è caldo/freddo), serve aria pulita o trattenere il fiato.
+> - **Stalattiti innescate**: attacco mirato contro **CA 5** dell'attacco a
+>   distanza (bersaglio statico), 3d10 nell'area sotto — regola PF1e degli
+>   oggetti in caduta.
 
 ---
 
@@ -446,6 +503,15 @@ combinato che valorizza ognuno (vedi **MAPPA T-4**):
   Take 10 = 26 ✓) fino al cubo e colpisce le **Rune di Attracco** esterne,
   stabilizzando l'ingresso per far attraccare Artemis e trainare Thorik.
 
+> **Una riga di storia profonda (LotR — da leggere quando toccano il muro).**
+> *Sotto le dita, il mithral non è freddo: vibra appena, come un'incudine che
+> ricorda l'ultimo colpo. Conoscenze (religioni) CD 15: questo Tempio non fu
+> costruito — fu FORGIATO, in un solo colpo, quando Moradin batté qui il primo
+> mithral del creato e la scoria di quel colpo, raffreddandosi, prese la forma
+> di un cubo perfetto. I nani lo chiamano, nei canti più vecchi, «la Scoria
+> Santa». Nessuno l'ha mai vista da vicino. Voi state camminando dentro un
+> colpo di martello di un dio.*
+
 Interno: corridoi di mithral che brillano di luce propria; ogni 20 m la
 gravità **ruota di 90°** (incubo alla Escher). Aegis Fang vibra verso il
 centro. Hazard opzionali: trabocchetti di gravità (Riflessi CD 15, 1d6), rune
@@ -574,19 +640,14 @@ una sfera nuda:
 - **Acustica drammatica**: i passi di Terros rimbombano; un suo colpo pieno è un
   **tuono** che (nel Piano) si sente a un chilometro.
 
-> **⚠️ BIFORCAZIONE DI CANONE — boss del Nodo Terra (decisione DM).** Le
-> mappe/immagini `Camera Nodo Terra - Boss Mithral Golem…` e `TACTICAL-GRIDS
-> MAP 6` presentano il boss come **Golem di Mithral Colossale** (pavimento di
-> mithral che lo rigenera, soffio "Cono di Polvere di Mithral" 18 m 12d6,
-> Terremoto 1/scontro, portata 9 m). Il **canone eletto** (`Terros.md` §5 +
-> fascicolo homebrew: *"sostituisce ogni versione precedente"*) è invece
-> **Terros, Elementale della Terra CR 15**. **Default di questo master**:
-> **Terros** (l'Elementale) come boss, che sfrutta la **gravità zero** e
-> l'Earth Mastery; ho **assorbito la scenografia** della MAP 6 (sopra) attorno a
-> lui. *Se preferisci il Golem di Mithral Colossale (o vuoi che la Sentinella
-> del §7b sia "il" Golem delle immagini), dimmelo: fondo i due in un unico
-> profilo.* Nel frattempo la coerenza tiene: **un solo boss** giocabile (Terros),
-> zero doppioni.
+> **✅ CANONE RISOLTO (DM 2026-07-21): il boss è TERROS, l'Elementale della
+> Terra (CR 15).** Le vecchie mappe/immagini "Boss Mithral Golem" (MAP 6,
+> `Camera Nodo Terra - Boss Mithral Golem…webp`) appartengono a una
+> generazione superata del design: **il Golem delle immagini È la Sentinella
+> di Mithral dell'Anticamera (§7b)**, non il boss del Nodo. Usa pure quelle
+> immagini per la Sentinella; per Terros usa le immagini delle caverne/nodo.
+> La scenografia ricca della MAP 6 (ponte, piattaforme, altare levitante)
+> resta — è la casa di Terros. **Un solo boss, zero doppioni.**
 
 **Apertura sonica.** Se il party entra cantando la **Frequenza della
 Confusione** (Intrattenere Canto **CD 18**, l'Anello di Artemis dà +4; servono
@@ -685,6 +746,18 @@ R4+: alterna Earth Glide mordi-e-fuggi, Onda e Scudo. Sotto il
 ============================================================
 ```
 
+> **Read-aloud — il primo scambio (coreografia, Salvatore).** *Terros non
+> carica: si LASCIA CADERE in avanti, e la camera intera cade con lui — l'Onda
+> Gravitazionale vi strappa l'Altare da sotto i piedi come una tovaglia. Thorik,
+> tu senti l'armatura diventare àncora e bandiera insieme: Aegis Fang morde il
+> bordo dell'Altare, il braccio urla, ma tieni. Tordek, il mondo ruota e tu
+> ruoti con lui — i Bracieri sussurrano una parola sola, «peso», e i tuoi piedi
+> trovano il muro come fosse pavimento. Artemis, tu sei l'unico per cui nulla è
+> cambiato: le Ali d'Ombra non obbediscono alla terra. Da lassù vedi tutto —
+> il boss, l'Altare, i tuoi compagni aggrappati al mondo capovolto. La sua
+> testa di roccia si volta lenta verso di te, l'unico che non è caduto. Che
+> fate?*
+
 **Sinergie dei PG ("Shine Time").**
 - **Tordek — lo Scassa-Scudi**: RD 5/adamantio per reggere gli schianti; il
   vero ruolo è balzare nello zero-G e usare l'onda **sonica** dei pugni per
@@ -697,6 +770,17 @@ R4+: alterna Earth Glide mordi-e-fuggi, Onda e Scudo. Sotto il
 - **Thorik — l'Ancora**: prende il controllo del terreno inchiodando Terros in
   superficie (contro-momento "Radice a Terra"), assorbendo gli schianti dietro
   Aegis Fang + Corona.
+
+### Contingenze — «Se i PG fanno X…» (risposte pronte, niente panico)
+
+| Mossa imprevista | Risposta del modulo |
+|---|---|
+| **Parlano con Terros invece di combattere** | Terros è INT 10 e parla Terran: ascolta **una** frase. Ma è un **guardiano con un voto** («la Forza non si dona: si dimostra») — non cede lo Smeraldo, MAI. Può concedere un **duello formale** (campione singolo, niente aiuti: onore nanico — EL folle, sconsigliato ma leggendario) o rispetto post-combattimento: se i PG hanno curato i Cristalli, il suo ultimo suono è di **assenso**, non d'odio. |
+| **Provano a prendere lo Smeraldo senza uccidere Terros** (volo/Mano Impetuosa/furto) | Lo Smeraldo levita dentro il **campo dell'Altare**: chi non ha superato il guardiano riceve **respinta** (come *repulsion*, TS Vol CD 20) + Terros si teletrasporta-in-Glide sotto il ladro. Il rito (§9) richiede comunque il guardiano caduto o il duello onorato. |
+| **Fuggono a metà scontro** | Terros NON insegue oltre la camera (è vincolato all'Altare). Ma la Forgia registra: al ritorno lo trovano **guarito del tutto** e lo Scudo di Geodi parte già attivo. Il countdown di Hammerfist, intanto, è sceso. |
+| **Distruggono/danneggiano l'Altare** | Impossibile scalfirlo (mithral consacrato, Durezza 20, autoriparante) — ma il TENTATIVO è sacrilegio: Terros entra in **furia** (+2 att/danni, −2 CA) e i Bracieri di Tordek **si raffreddano** di disapprovazione (nessun malus meccanico: solo il gelo del vecchio fabbro nella mente). |
+| **Qualcuno precipita nell'oceano di roccia (fuori dal Tempio)** | Non è lava: è **roccia semi-liquida**. Affonda lentamente (3 round per sommersione): Nuotare CD 20 (faticoso) o corda dei compagni; sommerso = soffocamento + 2d6 schiacciamento/round. Drammatico, non istantaneamente letale. |
+| **Vogliono riposare dentro il Tempio prima del boss** | Possibile (l'Anticamera post-Sentinella è sicura), MA il countdown di Hammerfist scorre: mostra l'orologio (§0). Ogni riposo qui è ore rubate alla montagna che brucia. |
 
 **Durata attesa 4–6 round. XP** ~5.400/PG (CR 15, 3 PG) `[verifica ERRATA]`.
 **Loot**: **Geode Titanico** (5.000 mo, cristalli d'adamantio) + **Cuore di
@@ -868,10 +952,23 @@ impossibile perderla.** E la Forgia dà una **vibrazione di assestamento**: la
 polvere di Terros e i cristalli strappati collassano in un vortice
 gravitazionale accanto all'Altare.
 
-> **Read-aloud (Salvatore).** *La materia inanime prende forma — guidata da
-> qualcosa che preme sul mondo dei vivi prima del suo tempo. Fauci enormi,
-> zampe massicce, un dorso di granito venato d'adamantio. Non è un costrutto
-> nato dal nulla: è QUALCUNO. Gli occhi si aprono, e sono di topazio.*
+> **Read-aloud (Salvatore — dal canone v2 §6).** *L'onda verde percuote la
+> camera sferica, e nel vortice non c'è solo la polvere di Terros: ci sono i
+> frammenti di cristallo vivente — quelli che una polvere più antica, dispersa
+> nel Sogno della Terra da mani che amavano, ha già trovato e riempito. La
+> materia inanime prende forma, guidata da qualcosa che preme sul mondo dei
+> vivi prima del suo tempo. Fauci enormi, zampe massicce da cane da galoppo, un
+> dorso dove il mithral si intreccia alla pietra scura come muscolo a osso. Non
+> è un costrutto nato dal nulla: è QUALCUNO. Gli occhi si aprono — e sono di
+> topazio. Non abbaia. Il suono che fa è un click di roccia, lo strofinio di
+> una faglia lontana. E la prima cosa che fa, prima ancora di guardarvi, è
+> mettersi tra il corpo che non c'è e il pericolo che non c'è più. Protegge
+> qualcuno. Anche adesso. Anche qui.*
+>
+> *(Comportamento canonico — risposta di Hella alla domanda di Moradin,
+> «Protegge Hella»: Durik **si muove sempre tra Hella e la fonte di pericolo
+> percepita**. Finché lei non torna, orbita il suo corpo nella Sala; i PG lo
+> vedranno chiaramente al #3.)*
 
 > **CORREZIONE DI CANONE (importante).** I file-fonte lo chiamavano «Cane da
 > Guerra **COSTRUTTO/animato**». **Errato** — e `state.md §1` lo segna come
@@ -1026,14 +1123,47 @@ contata a parte (audit WBL).
 
 ---
 
+## §13 — HANDOUT & ASSET DEL BEAT (cosa mostrare, cosa suonare, quando)
+
+### Handout giocatore (stampabili da questo master)
+1. **L'Iscrizione di Moradin** (§2) — consegnala scritta in caratteri runici
+   quando l'affresco A5 si apre: *«Il Fuoco ha purificato lo Spirito. / Ora la
+   Terra deve testare la Resistenza. / Nella Profondità, dove la luce non
+   tocca, troverete la Verità. / Cercate l'incudine che non può essere
+   spostata. / Cercate lo Smeraldo della Forza.»*
+2. **Carta «Corona 2/3»** (fine §9) — aggiorna l'handout della Corona: Topazio
+   (fronte, oro-arancio) + Smeraldo (tempia sinistra, verde profondo) +
+   l'incavo vuoto del Rubino che *aspetta*. I nuovi poteri (Volontà Adamantina,
+   Gemma della Vera Terra) sul retro.
+3. **Benedizioni di Moradin** — carte singole dal PDF (`BenedizioniDiMoradin.pdf`),
+   inclusa la nuova **Forza della Montagna** (§2).
+4. *(Solo se Artemis prende il Seme-Mercato)* — bigliettino privato con la
+   «ricevuta» di Varis: *«Un favore, a mia scelta, a mio tempo. — V.»*
+
+### Immagini (da `Immagini/`, momenti d'uso — atlante C1)
+| Momento | Immagine |
+|---|---|
+| Attraversamento A5 / arrivo | `Caverne-Cristallo-con-Geodi-Giganti.webp` |
+| Campo dei Cristalli Viventi | `Piano Terra - Caverne Cristallo con Geodi Giganti (Parte 4).webp` |
+| Anticamera / Sentinella (§7b) | `MitralGolem.webp` + `Mithral Golem Rooms e altare di smeraldo.webp` — **canone risolto: il Golem delle immagini È la Sentinella** |
+| Camera del Nodo / Terros + Altare | `camera-nodo-terra.webp`, `Camera Nodo Terra - …Altare Smeraldo Levitante (Parte 4).webp` (ignora il titolo "Boss Mithral Golem": vale l'ambiente) |
+
+### Musica
+- **`Musica/LaCanzoneDellePietre.mp3`** — qui ha UN momento: la **Fase 2 del
+  Rituale** (§9), quando Tordek batte i pugni sull'Altare al ritmo del cuore di
+  Thorik. Falla partire al primo colpo: il tema pietra/forgia È quel ritmo.
+  (Il suo momento principale resta la resurrezione, master #3.)
+
+---
+
 ### FILE-FONTE ASSORBITI DA QUESTO MASTER (→ `_ARCHIVIO/` a consolidamento chiuso)
 `PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md` ·
 `PortaleForgia-P4-PianoTerra-RICALIBRATO.md` · `Terros.md` ·
 `PortaleForgia-Interludio-Terra.md` (apertura A5 + iscrizione + eco di Hella —
 assorbiti in §1/§2; le variazioni degli affreschi A4/A7/A8 vanno al master #2) ·
 `Mappe/TACTICAL-GRIDS-COMPLETE.md` MAP 5 (ambiente dinamico → §4) e MAP 6
-(scenografia della camera → §8; il boss "Golem di Mithral" è la variante
-segnalata nella biforcazione) ·
+(scenografia della camera → §8; **canone risolto**: il "Golem di Mithral"
+delle immagini/MAP 6 è la **Sentinella** del §7b, il boss è **Terros**) ·
 `La_Piramide_Ricalibrata.md` (metodo forgiatura — il file resta come master del
 finale del Fuoco/P3) ·
 `PG/Artefatti/Artefatti-Pg/Tordek/03_Risveglio_Completo_Bracieri_Terra.md`

@@ -256,11 +256,23 @@ non un binario.
 > CD 20.*
 
 ### A1 — «L'Alba del Mondo» (NORD · statico)
-Moradin forgia la Corona nell'alba del creato: dieci metri di dio calmo in
-mezzo al caos primordiale, l'incudine grande come una montagna, il martello
-Frostforge, la Corona che nasce come una stella. *Dettagli nascosti: altre
-divinità osservano (Corellon, Garl, Gruumsh invidioso); altri artefatti in
-forgiatura (un Aegis Fang primordiale).*
+> **Read-aloud (LotR lead — deep time).** *Il primo affresco mostra un'era in
+> cui il mondo era ancora caos. Al centro, alto dieci metri, MORADIN: muscoli
+> di granito, barba intrecciata d'oro, mithral e adamantio, e negli occhi le
+> fiamme della creazione. Davanti a lui un'incudine titanica, grande quanto una
+> montagna. Nella sinistra, Frostforge — il martello leggendario, testa di
+> adamantio stellare, manico di ferro grezzo. Nella destra, la CORONA DI
+> ADAMANTIO in fase di nascita, che brilla come una stella appena accesa.
+> Intorno, il caos primordiale: fiamme alte chilometri, fulmini che spaccano la
+> realtà, pietra liquida che ribolle, ombre antiche che tentano di avvolgere
+> tutto. Ma Moradin è CALMO. Concentrato. Guarda la Corona con amore paterno.
+> Non forgia per potere: forgia per PROTEGGERE i figli nanici che ancora non
+> esistono. Voi. Thorik, quella Corona sulla tua fronte è la stessa. Diecimila
+> anni non l'hanno cambiata. Cambia solo chi la porta.*
+
+*Dettagli nascosti (Osservare CD 20): altre divinità osservano — Corellon per
+gli elfi, Garl per gli gnomi, Gruumsh con invidia orchesca; nella fucina, altri
+artefatti nascono — un Aegis Fang primordiale, altri martelli senza nome.*
 - **Interazione (Thorik, tocco della Corona).** Moradin **gira la testa** e lo
   guarda attraverso il tempo: *«Figlio della Pietra. Porti il mio dono più
   prezioso. Portalo con onore, con umiltà, con speranza. Non deludere la
@@ -274,21 +286,38 @@ forgiatura (un Aegis Fang primordiale).*
   testa**: la parete resta pietra. Un silenzio che pesa più di mille parole.
 
 ### A2 — «I Quattro Eroi Predestinati» (NORD-OVEST · progressivo → 80%)
-Quattro figure che combattono qualcosa nel futuro. **Dopo la Terra: 80%
-nitido** — riconoscete voi stessi, lo sfondo cristallino, l'equipaggiamento
-esatto. **La quarta figura — Hella — ha ora un contorno** (era nebbia): la
-druida cinta di luce verde, tre treant attorno. *È il presagio della
-resurrezione: il pannello «si sta riempendo» perché lei sta per tornare.*
+> **Read-aloud (Casa di Davide — l'anointing dipinto).** *Quando siete partiti,
+> questo affresco era nebbia: quattro sagome vaghe che combattevano qualcosa di
+> indistinto. Ora — dopo il Fuoco, dopo la Terra — la nebbia si è quasi diradata.
+> Riconoscete voi stessi. Un nano con una stella sulla fronte e un'ascia che
+> canta. Un nano più snello, le mani avvolte di ki dorato. Un umano con un
+> anello pulsante che scaglia raggi viola. E la quarta figura — che fino a ieri
+> non c'era — comincia ad avere un contorno: una druida cinta di luce verde,
+> tre treant attorno a lei come guardie. Hella. La parete la sta disegnando
+> mentre voi la state riportando indietro. Non è una promessa della Forgia:
+> è la Forgia che vi guarda scrivere il vostro stesso destino, un colpo di
+> scalpello alla volta.*
+
+**Progressione** (80% dopo la Terra): riconoscete l'equipaggiamento esatto, lo
+sfondo cristallino. *La quarta figura si «riempie» perché Hella sta per
+tornare — presagio della resurrezione, non garanzia.*
 - **Interazione corale:** la **Visione Condivisa** → §5.
 - **Sviluppi.** Se al #3 la resurrezione riesce, A2 salta al 90%; se il ramo del
   rifiuto viene giocato (master #3), la quarta figura **torna nebbia** — la
   Cronaca registra anche ciò che non è stato.
 
 ### A3 — «La Visione del Risveglio» (NORD-EST · personale Thorik)
-Replay visivo di Thorik che prende la Corona (ARC-06): la Stanza della Corona,
-il tocco, il flash, e Thorik che combatte **fianco a fianco con gli eroi del
-passato** — **Thorgrim Barbadiferro** (Anno 800) con Frostcleaver che dice,
-leggendo le labbra: *«Portala bene, fratello. Ora è tua.»*
+> **Read-aloud (Salvatore — la memoria che sanguina).** *Questo affresco mostra
+> eventi di poche ore fa. Thorik, sei TU. Ti vedi avvicinare esitante al trono
+> nella Stanza della Corona. Ti vedi toccare la Corona. Il flash di luce dorata,
+> la transizione — e poi il campo di battaglia dove hai combattuto fianco a
+> fianco con gli eroi che ti hanno preceduto. Uno lo riconosci: **THORGRIM
+> BARBADIFERRO**, portatore della Corona otto secoli fa, il Frostcleaver in
+> pugno. Nel frastuono senza suono dell'affresco, leggi le sue labbra: «Portala
+> bene, fratello. Ora è tua.» E all'alba, quando la luce dorata inonda il campo,
+> ti vedi con la Corona FUSA alla fronte, diventata parte di te. L'affresco si
+> ferma esattamente dove comincia il presente. Come se la Sala avesse aspettato
+> te per finire di dipingerlo.*
 - **Interazione (Thorik osserva 1 min, TS Volontà CD 17 — il fallimento è il
   dono).** *Fallimento:* rivive tutto — paura, speranza, la **perdita di Hella**
   — e **piange**; catarsi. La Corona brilla come *Daylight*; Moradin: *«Piangere
@@ -318,11 +347,19 @@ occhi e diventa il pannello-conseguenza del master #1.
 - **Benedizione della Cronaca:** +1 sacro a una prova di FOR o TS Tempra.
 
 ### A6 — «Il Viaggio Attraverso il Tempo» (SUD-OVEST · temporale → 80%)
-Due scene sovrapposte a doppia esposizione: **Anno −1000** (Hammerfist nuova,
-nani contro un'orda primitiva, un **drago nero giovane** — il capostipite) e
-**Anno 1372** (Hammerfist assediata, la Mano Rossa, **Fauci di Palude** adulto
-in volo). **Dopo la Terra: 80%** — le scene si mettono a fuoco e al centro
-**pulsa un portale dorato**.
+> **Read-aloud (Andor lead — il tempo incerto).** *Questo affresco è doloroso
+> da guardare a lungo. Mostra due scene SOVRAPPOSTE, come una doppia esposizione
+> che il cervello si rifiuta di separare. Nella prima — **Anno −1000** —
+> Hammerfist è giovane, le mura appena erette e ancora lucide; i nani combattono
+> un'orda primitiva di orchetti, e un drago nero GIOVANE si tuffa sulle
+> fortificazioni: il capostipite di una stirpe che riconoscerete. Nella seconda
+> — **Anno 1372, ADESSO** — Hammerfist è assediata, le mura segnate, l'esercito
+> della Mano Rossa schierato sotto, e **Fauci di Palude** — lo stesso sangue,
+> mille anni più vecchio e più grande — circola sopra come un avvoltoio. Le due
+> scene si alternano ogni tre battiti, e non capite quale sia «reale». Ma dopo
+> la Terra qualcosa è cambiato: le immagini si mettono a fuoco, e al centro
+> della doppia esposizione **pulsa un portale dorato**. Una porta. Sul passato.
+> E la Corona di Thorik, con due gemme accese, risponde al suo battito.*
 > **Attivazione (canone D5/D16):** il portale del Tempo si apre con **Topazio +
 > Smeraldo** (che i PG ora hanno); il **Rubino NON apre il portale** — si
 > accende **solo alla vittoria antica** e riporta i PG al 1372 (cucitura al

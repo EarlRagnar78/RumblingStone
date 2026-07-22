@@ -291,7 +291,9 @@ dove, alla fine, Skullcrusher cala. Vedi M7-B (arena del duello).
    SKULLCRUSHER IL NERO — il Primo Nero (GS 12) [verifica B5]
    Drago Nero Adulto potenziato · capostipite di Fauci di Palude
 ============================================================
-PF: 240 · CA 27 (tocco 8, impreparato 25) · Iniz +4
+Taglia: Enorme (Huge, 4,5 m) · Tipo: Drago (Terra, acido)
+PF: 240 · CA 27 (−2 taglia, +19 nat) · tocco 8 · impreparato 25 · Iniz +4
+BAB/Lotta: +22 / +39 (Enorme) · FOR 27 · DES 10 · COS 21 · SAG 15 · CAR 14
 Velocità: Terra 12 m · Volare 36 m (scarsa)
 Attacchi: Morso +26 (2d6+9) · 2 Artigli +21 (1d8+4) ·
           2 Ali +21 (1d6+4) · Coda +21 (1d8+13)

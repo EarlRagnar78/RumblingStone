@@ -28,6 +28,31 @@
 
 ---
 
+## INDICE DEL MODULO
+
+| § | Sezione | Contenuto |
+|---|---|---|
+| §0 | **Quickstart DM** | dove siete, chi scende, cosa stampare, come finisce |
+| §0-bis | **Quick-Reference** (1 pagina) | tutte le CD, pf/soglie, il giro di Terros, supporto PF1e |
+| §1 | **Highlight per PG** | conoscenza asimmetrica: Tordek, Thorik, Artemis, Hella |
+| §2 | **Ingresso** | apertura dell'affresco A5, iscrizione di Moradin, Benedizione, attraversamento |
+| §3 | **Gravità 2×** | regole complete 3.5 (con/senza Benedizione, cadute) |
+| §4 | **Il viaggio** (~2,5 h) | tappe, gestione del movimento lento, **ambiente dinamico** (stalattiti, polvere, fenditure, geodi) |
+| §5 | **Incontro 1 — Xorn** | tre vie (demolizione/ordine/negoziato), Fauci di Diamante élite, esempio di svolgimento |
+| §6 | **Incontro 2 (OPZIONALE) — Cristalli Viventi** | skill challenge, cristallo da riforgiare, costi del salto |
+| §6-bis | **Seme-Mercato di Varis** | quest personale di Artemis, lungo la strada (indipendente) |
+| §7 | **Tempio di Mithral** | 7a salto gravitazionale co-op · 7b Sentinella + **risveglio pieno dei Bracieri** |
+| §8 | **BOSS: Terros l'Antico** (CR 15) | statblock 3.5, scenografia, coreografia, esempio di svolgimento, DPR, contingenze |
+| §9 | **Rituale dello Smeraldo** | 3 fasi — scelta-costo di Thorik, sinergia di TUTTI, emersione di Durik |
+| §10 | **La Forgia Ricorda** | pannelli-conseguenza negli affreschi (Sala + Stanza della Corona) |
+| §11 | **Echo Ledger** | conseguenze a lungo termine del beat |
+| §11-bis | **Avanzamento** | PX, tesoro ordinario, valore artefatti |
+| §12 | **Ritorno alla Sala** | ponte al master #2 |
+| §13 | **Handout & Asset** | stampabili, immagini per momento, musica |
+| MAPPE | **T-1…T-6** | ASCII ultra-clear 1,5 m/quadretto |
+
+---
+
 ## §0 — QUICKSTART DM (una pagina)
 
 **Dove siete.** I Custodi Eterni sono entrati nel Portale della Forgia
@@ -74,7 +99,7 @@ la strada alla resurrezione di Hella (#3). Countdown Hammerfist a fine parte:
 | Xorn: demolizione pilastro — Conoscenze / colpo mirato | 18 / 20 | §5 |
 | Xorn: negoziazione — Diplomazia (Terran) | 18 | §5 |
 | Cristalli: skill challenge (6 successi / 3 fallimenti) | 15–22 | §6 |
-| Runa di Varis: estirpare — Sapienza Magica / FOR | 22 | §6, §8-bis |
+| Seme-Mercato di Varis: analisi/estirpo — Sapienza Magica | 20 | §6-bis |
 | Tempio: salto di Tordek — Saltare (Take 10 = 26 ✓) | 25 | §7a |
 | Tempio: corda — Scalare; Ancora Thorik — FOR | 15; 20 | §7a |
 | Sentinella: liberarsi dalla Magnetite — FOR (Thorik) | 28 | §7b |
@@ -100,6 +125,8 @@ pf** (90 = si rifugia nel cristallo +4 CA). Xorn 52 pf (15 = scava via).
 5. **Earth Glide** (movimento): entra/esce dall'Altare — *Thorik lo inchioda
    con FOR contrapposta vs Lotta +40 (con Aiuto+Benedizione)*.
 Rigenera **15/round** a contatto con pietra. Sonico **×1,5**. −4 vs volanti.
+⚠️ **Se il party ha SALTATO i Cristalli (§6)**: niente Frequenza, niente
+Diapason, niente +2 TS → Terros a piena forza, nessun round di nausea.
 
 ### 🐾 Supporto Pathfinder 1e (dove il 3.5 è vago) — opzionale, dichiarato
 > Il 3.5 non ha regole formali per l'assenza di gravità e per le polveri
@@ -183,10 +210,13 @@ Rigenera **15/round** a contatto con pietra. Sonico **×1,5**. −4 vs volanti.
   davanti ai suoi occhi e lascialo scegliere.
 - In volo (Ali d'Ombra) è **quasi intoccabile** da Terros (Earth Mastery −4 vs
   chi è in aria): è lo **star DPS**, se sfrutta la vulnerabilità sonica (§8).
-- **La tentazione più pericolosa non è un mostro: è una gemma.** Nell'Altare di
-  Terros, **visibile solo a lui**, c'è il **Seme-Mercato di Varis** (§8-bis):
-  un'esca calibrata sulla sua avidità. È qui che l'Anello — e il giocatore —
-  mostrano chi è Artemis davvero.
+- **La tentazione più pericolosa non è un mostro: è una gemma.** Sulla riva
+  dell'Oceano di Roccia, **prima di arrivare a Terros** e visibile solo a lui,
+  c'è il **Seme-Mercato di Varis** (§6-bis): un'esca calibrata sulla sua
+  avidità, indipendente da ogni altro incontro. È lì che l'Anello — e il
+  giocatore — mostrano chi è Artemis davvero. *(In questa run Artemis non è
+  mai stato tentato alle rune della Madre Cristallo: questa è la sua UNICA
+  tentazione, pulita.)*
 
 ### 🌙 HELLA — solo echi (nano dei sogni, morta)
 - Hella **non ha scene "sopra"**: highlight **percettivo**. Da' alla giocatrice
@@ -205,8 +235,8 @@ Rigenera **15/round** a contatto con pietra. Sonico **×1,5**. −4 vs volanti.
   l'asimmetria** che hai chiesto. **Default qui**: non un dialogo, ma un
   **frammento onirico a senso unico** — Tordek, sfiorando la Corona, riceve
   **tre parole nel nanico dei sogni**, senza voce (*«stabilità… germogli…
-  tornare»*) e nient'altro. *Se preferisci il contatto pieno dell'Interludio,
-  dimmelo e lo canonizzo* `[DM decision]`.
+  tornare»*) e nient'altro. **✅ CANONE (DM 2026-07-21): frammento onirico** —
+  il contatto telepatico pieno dell'Interludio è superato.
 
 ---
 
@@ -309,9 +339,22 @@ pesante, i passi che affondano. Le distanze del §4 sono lunghe **apposta**.
 non lo scalfisce), 12 m di diametro, sospesa nel buio punteggiato di cristalli
 luminescenti. Non c'è un "su/giù" netto: l'attrazione tira verso la
 piattaforma, ma un *pull* laterale debole chiama verso i cristalli giganti
-lontani. Luce bianco-azzurra pallida, **ombre profonde**. Silenzio quasi
-totale rotto da **BOOM** lontani (i cristalli giganti risuonano). Aria densa,
-odore di pietra bagnata e ozono.
+lontani.
+
+**Effetti sensoriali (occhi, orecchie e pelle dei PG — ripristinati dalla fonte):**
+- **Vista**: luce bianco-azzurra pallida dai cristalli sparsi — non la
+  violenza luminosa del Fuoco: qui le **ombre ESISTONO**, profonde,
+  minacciose. Oltre i 30 m, il buio ha peso.
+- **Udito**: silenzio quasi **totale** — inquietante dopo il crepitio del
+  Piano del Fuoco. Ogni tanto un **BOOM** profondo, lontano: i cristalli
+  giganti che risuonano come campane sepolte. Il proprio respiro,
+  amplificato dall'aria densa, diventa il rumore più forte del mondo.
+- **Olfatto**: pietra bagnata (come una caverna dopo la pioggia che non c'è
+  mai stata), ozono leggero di magia elementale, terra ricca e minerale.
+- **Tatto**: l'aria **densa** preme sulla pelle, una pressione costante; la
+  gravità tira, sempre (2× ridotta a "solo" opprimente dalla Benedizione);
+  i cristalli sono freddi al tocco, mai ghiacciati — il freddo educato
+  della pietra che non ha fretta.
 
 > **Read-aloud (orizzonte).** *Davanti, nella direzione che indica Aegis Fang:
 > a portata di mano, piattaforme di cristallo unite da ponti di pietra
@@ -414,42 +457,69 @@ Rifl +6, Vol +16 · **Speciale**: se morde un'arma/scudo magico fa Spaccare
 Scavare 6 m · Percezione tremorica 18 m · onnidirezionale · TS Temp +8, Rifl
 +5, Vol +5 · FOR 17, DES 10, COS 17. *Sotto 15 pf scavano via.*
 
+### Esempio di svolgimento (round-by-round, guida DM — ripristinato dalla fonte)
+
+> Numeri indicativi per calibrare al volo (tiri medi):
+
+- **R1** — *Iniziativa: Artemis 18, Tordek 16, Xorn 10, Thorik 12.* Artemis:
+  Blast +16 vs contatto 10 = colpo automatico, ~28 danni sullo Xorn 1 (52→24).
+  Tordek: Raffica +12/+12/+7/+2 vs CA 24 — 1-2 colpi a segno, ~9-18 danni
+  (attenzione alla **RD 5/contundente**: i suoi pugni la aggirano ✓). Thorik:
+  +21 vs CA 24 = quasi sempre a segno, ~28 danni. **Fauci di Diamante** emerge
+  sotto Thorik e morde l'armatura (+22, Spaccare +26 se il morso prende
+  scudo/arma — **cura 30 pf** se spezza!). Gli Xorn standard puntano Artemis
+  (morso +9 vs CA 16 = ~70%: ~17 danni).
+- **R2** — gli Xorn si **rituffano nella pietra** (copertura totale): il party
+  DEVE preparare azioni sull'emersione. Fauci di Diamante riemerge dove fa più
+  male (tremorsense 18 m: sente chi sta fermo).
+- **R3+** — Xorn standard sotto 15 pf **scavano via** (2 su 3 fuggono,
+  tipicamente); Fauci di Diamante sotto 90 pf si rifugia **dentro** un
+  cristallo gigante (+4 CA) e combatte da lì: **spaccare il cristallo** (PF 80,
+  Durezza 8) o stanarlo con danni sonici.
+- **Esito tipico**: 2 fuggiti, l'élite abbattuto o messo in fuga; Artemis a
+  ~2/3 pf, risorse spese. *È l'antipasto del piano: fatica, non passeggiata.*
+
 **XP**: ~4.800 (Fauci di Diamante CR 11 + 2 Xorn CR 6) `[verifica ERRATA per
 APL 12]`. **Loot** (se uccisi): vene di **mithral grezzo** (~2.000 mo, se non
 crollate col pilastro) + 2 geodi d'ametista (400 mo l'uno).
 
 ---
 
-## §6 — INCONTRO 2: I CRISTALLI VIVENTI (Skill Challenge) + IL BIVIO DI VARIS
+## §6 — INCONTRO 2 (OPZIONALE): I CRISTALLI VIVENTI — Skill Challenge
 
 > **Correzione (coerenza).** I file-fonte facevano "consigliare Hella dal regno
 > degli spiriti" **attivamente**. **Errato**: Hella è morta e dà solo **echi**.
 > La Madre Cristallo **rileva** il suo spirito e ne riferisce un moto **senza
 > parole tattiche** (§1 Hella). Mantieni l'atmosfera, togli il "consiglio".
+>
+> **Canone di questa run (DM 2026-07-21).** La **runa parassita di Varis alla
+> Madre Cristallo NON è mai stata giocata**: Artemis **non è mai stato tentato
+> qui** — quella scena è rimossa dal canone di questo incontro. La quest
+> personale di Artemis è **il Seme-Mercato lungo la strada** (§6-bis), che
+> funziona **anche se il party salta del tutto questo incontro**.
 
+### L'incontro si può SALTARE (e come)
+Il Campo dei Cristalli è sul percorso più diretto, ma **si può aggirare**:
+costeggiando la faglia a sud (**+30 minuti** di marcia in gravità 2×, una
+prova di gruppo del §4 in più). I PG possono anche attraversare il corridoio
+libero della MAPPA T-3 **senza fermarsi a parlare** (i cristalli si limitano a
+inclinarsi e cantare più piano al loro passaggio).
+
+**Costo del salto (che il party NON conosce in anticipo):** niente
+**Frequenza della Confusione**, niente **Diapason Armonico**, niente **+2 TS
+contro Terros**, niente presagio dello spirito di Hella → **Terros si combatte
+a piena forza, senza apertura sonica** (§8). Il modulo regge comunque: è una
+scelta, non un errore.
+
+### Se invece entrano — il giardino che canta
 Uscendo dalla foresta entrate in un **giardino**: migliaia di cristalli
 piccoli (1–3 m) cresciuti in **pattern geometrici perfetti**, che si inclinano
 verso di voi come girasoli e **cantano** un accordo impossibile. Sono vivi. Al
 centro, alto 5 m, la **MADRE CRISTALLO**. Vedi **MAPPA T-3**.
 
 > **MADRE CRISTALLO (telepatia):** *«Intrusi carne-morbida. Perché disturbate
-> il nostro giardino? O forse… siete qui per il Sovversivo?»*
-
-### Il bivio grigio di ARTEMIS (avidità vs lealtà — stile Andor)
-Sotto la Madre Cristallo l'Anello di Artemis vibra: capta una **Runa Planare
-parassita** di **Varis "Seta-Argento"**, che sta "hackerando" la rete dei
-Cristalli per rubare frammenti di mana e rivenderli sui Mercati Oscuri.
-Attraverso la runa, Varis contatta Artemis:
-
-> **VARIS (telepatico):** *«Vedo che hai un Anello interessante, incantatore.
-> Non riveli la mia runa alla Madre Cristallo, mi lasci finire l'estrazione, e
-> io ti garantisco uno sconto a vita sul Mantello dei Tiri Salvezza e una via
-> per piazzare tutto il tuo bottino del Sottosuolo. Affare?»*
-
-| Scelta | Vantaggio | Costo / Rischio |
-|---|---|---|
-| **Complicità** (Artemis nasconde la runa) — prova contrapposta di **Raggirare/Sapienza Magica CD 22** vs Madre Cristallo | Varis sblocca una **Falla Dimensionale** permanente come **negozio sicuro** (il sogno di un predone); Artemis brilla da opportunista | Se scoperti, i Cristalli **attaccano** (vedi Fallimento Critico sotto); Varis diventa un "socio" che sa troppo |
-| **Giustizia** (denunciare il parassita) — estirpare la runa (skill challenge o Tordek la spacca, **FOR CD 22**) | Madre Cristallo **alleata fedele**: percorsi sicuri, **+2 TS contro Terros**, info sul boss | **Varis nemico permanente**; niente negozio; Artemis rinuncia al guadagno |
+> il nostro giardino? Passate oltre, se volete: il canto non vi tratterrà. Ma
+> chi si ferma ad ascoltare… viene ascoltato.»*
 
 ### Skill Challenge — Guadagnare la fiducia dei Cristalli
 **Complessità: 6 successi prima di 3 fallimenti.** Tutti e 3 i PG contribuiscono.
@@ -473,8 +543,8 @@ sonico a tutti, nessun TS**; e l'urlo **sveglia Terros e lo prepara** (non
 potrà essere colto di sorpresa, niente apertura sonica al §8). Punizione vera.
 
 **Successo (6).** Percorso sicuro; **info sul boss** (Terros è **vulnerabile
-al sonico**); e — se scelta la Giustizia — **+2 TS contro Terros**. Soprattutto
-i Cristalli consegnano la **Frequenza della Confusione** (arma sonora, §8) e,
+al sonico**); **+2 TS contro Terros** (dono della Madre). Soprattutto i
+Cristalli consegnano la **Frequenza della Confusione** (arma sonora, §8) e,
 come **Successo Critico**, il **Diapason Armonico** (frammento: **stun Terros
 1 round, senza TS, una volta sola** — spezza il ciclo di rigenerazione).
 
@@ -483,6 +553,92 @@ come **Successo Critico**, il **Diapason Armonico** (frammento: **stun Terros
 > sfiorati. Il cuore della pietra ha abbracciato le ossa del suo caduto. Noi
 > prepareremo il guscio. Voi portate la Forza.»* *(I PG non capiscono: è un
 > presagio, non un'istruzione.)*
+
+---
+
+## §6-bis — IL SEME-MERCATO DI VARIS (quest personale di Artemis, LUNGO LA STRADA) `[INFERRED — needs DM]`
+
+> **Dove e quando (pulito, indipendente da tutto).** Sulla **riva dell'Oceano
+> di Roccia**, l'ultima sosta prima del Tempio — **prima di arrivare a Terros**
+> e **indipendente** dal Campo dei Cristalli (funziona anche se il party lo ha
+> saltato). La scena è **privata**: gioca lo scambio col solo giocatore di
+> Artemis, a voce bassa, mentre gli altri studiano il salto gravitazionale
+> (§7a). Nessun altro PG vede o sente nulla.
+
+> **Read-aloud (solo per Artemis).** *Mentre gli altri misurano a occhio il
+> vuoto tra la riva e il cubo d'argento, l'Anello ti morde il dito — un
+> pizzicore che conosci: segreti vicini. Sulla riva, tra i detriti che l'oceano
+> di roccia deposita come un mare deposita conchiglie, un filone di cristallo
+> spezzato. E DENTRO il filone, dove nessun occhio senza il tuo Anello potrebbe
+> arrivare, una piccola gemma che non c'entra nulla con questo piano: un
+> **cabochon violetto**, caldo, tagliato da mani civili. Qualcuno l'ha messa
+> lì. Per qualcuno come te.*
+
+**Cosa vede Artemis (e solo lui).** La **Vista Potenziata** e la **Sapienza
+Forgiata** dell'Anello gliela rivelano; **Sapienza Magica (CD 20, gratis via
+l'Anello)** gli dice che è un **innesto planare**: un'esca-esploratore del
+mercato di Varis "Seta-Argento", piantata lungo la linea di forza che porta al
+Tempio — dove passano cose preziose, prima o poi passa un compratore. È un
+**Seme-Mercato**.
+
+> **VARIS (telepatico, mielato — la voce arriva col tocco della gemma):**
+> *«Bravo. Solo tu potevi vederla. Consideralo un pegno di fiducia tra futuri
+> soci: prendila, incastonala nell'Anello, e hai lo sconto a vita e la mia
+> Falla come tuo magazzino personale. Il grande collezionista non lascerà mai
+> un tesoro simile nella pietra di un piano dimenticato… vero?»*
+
+**La verità (DM).** Non è un dono: è un **guinzaglio**. Il Seme-Mercato è un
+**Marchio di Credito** planare. Chi lo accetta si lega alla Falla di Varis
+**come debitore**, non come cliente: Varis potrà **localizzarlo** finché il
+marchio è attivo e, una volta, **riscuotere** (chiamare un favore, chiudere un
+mercato al momento peggiore, o "vendere" la posizione di Artemis a chi paga —
+p.es. Il Collezionista). L'esca è tarata **esattamente** sull'avidità di
+Artemis: un tesoro invisibile agli altri, un affare che pare gratis.
+
+### La reazione dell'Anello — coerente col suo carattere (Caotico Buono)
+L'Anello **sussurra segreti del divino e dell'arcano** e **rispetta la scelta
+di Artemis di forgiare il proprio destino** (non lo comanda mai): non gli
+impedirà di sbagliare. Ma **odia i guinzagli** (è *Caos e Luce*, non
+sottomissione). Il DM sceglie il tono in base a come Artemis ha gestito
+finora la propria avidità nell'arco:
+
+- **A) L'Anello avverte (se finora è stato leale coi compagni).** Prima che
+  tocchi la gemma, una riga in infernale gli affiora nella mente: *«Il Caos lo
+  amo. Un guinzaglio no. Quella gemma è una mano — e non è la tua.»* Gli
+  concede la scelta, informato.
+- **B) L'Anello TACE (se l'avidità ha già vinto altre volte) — e osserva.** Il
+  Caos è curioso: vuole vedere cosa fa il suo portatore quando crede di non
+  essere guardato. Se Artemis **prende comunque** la gemma per pura cupidigia,
+  l'Anello interviene **dopo**, a modo suo:
+  - **Deride e neutralizza** — con un lampo di *Dawn's Defiance*
+    (anti-dominazione) l'Anello **spezza il controllo** di Varis sul marchio
+    (Varis non può più *comandare* Artemis) ma **lascia il debito**, e si
+    prende gioco di lui: *«Così il grande collezionista è stato…
+    collezionato. Terrò io il tuo guinzaglio, portatore. Vediamo se impari.»*
+    → il Seme diventa un **jolly caotico** dell'Anello (una carica extra
+    imprevedibile 1/arco, effetto a scelta del DM), ma Varis conserva la
+    **localizzazione** finché il marchio non è dissolto.
+  - **Vincola** (variante più dura) — l'Anello lega Artemis a un piccolo
+    **geas caotico** («paga sempre i tuoi debiti, ma mai nel modo atteso»);
+    finché non lo onora, i poteri *attivati* dell'Anello hanno un −1 di
+    circostanza. Puro colore, leva narrativa.
+
+### Meccanica sintetica (3.5)
+| Scelta di Artemis | Effetto immediato | Eco a lungo termine |
+|---|---|---|
+| **Rifiuta / distrugge la gemma** (Sapienza Magica CD 20 per estirparla pulita, o la lascia dov'è) | Varis perde l'esca; l'Anello approva (+1 morale al prossimo TS di Artemis, colore) | Varis lo segna come "sfuggito": nemico che rispetta, non pollo (→ #4/ARC-09) |
+| **Prende la gemma** | **Esca reale**: un **Frammento di Mercato** (una volta: −25% su un acquisto o +4 di circostanza a una prova commerciale/UMD) — la cupidigia è **premiata sul serio**, per un attimo | **Marchio di Varis**: Varis lo **localizza**; una volta potrà riscuotere (favore/tradimento). L'Anello può spezzare il *controllo* (Dawn's Defiance) ma **non** il debito. → grande gancio grigio per ARC-09 |
+
+> **Perché è bello (stile Andor/BG3).** Non è "una trappola cattiva": è un
+> **affare vero con un amo vero**. Artemis può vincerci (se è furbo o retto) o
+> pagarlo caro (se è avido) — e in entrambi i casi la scelta **torna** più
+> avanti. Registra l'esito nell'**Echo Ledger** (§11).
+
+> **Nota su Sal/Vatore (per il DM).** Questo marchio si intreccia col #4
+> (Viaggio a 1.000 anni fa), dove **Sal è presente come "Vatore"**: se Artemis
+> porta il Marchio di Varis, il DM può far riconoscere a Vatore la "firma" del
+> mercato — un filo che lega passato e presente della rete di Varis/Il
+> Collezionista `[INFERRED — needs DM confirmation]`.
 
 ---
 
@@ -651,9 +807,11 @@ una sfera nuda:
 
 **Apertura sonica.** Se il party entra cantando la **Frequenza della
 Confusione** (Intrattenere Canto **CD 18**, l'Anello di Artemis dà +4; servono
-2 successi su 3) — **e solo se NON hanno svegliato Terros col fallimento
-critico dei Cristalli** — Terros si sveglia **nauseato**: **−4 attacco/CA il
-round 1**.
+2 successi su 3) — Terros si sveglia **nauseato**: **−4 attacco/CA il round
+1**. Vale **solo** se hanno guadagnato la Frequenza dai Cristalli (§6): se
+hanno **saltato** l'incontro non la possiedono, e se hanno fatto **fallimento
+critico** l'urlo ha già svegliato e preparato Terros. In entrambi i casi: boss
+a piena forza — la scelta al campo dei Cristalli SI SENTE qui.
 
 ```
 ============================================================
@@ -771,6 +929,39 @@ R4+: alterna Earth Glide mordi-e-fuggi, Onda e Scudo. Sotto il
   superficie (contro-momento "Radice a Terra"), assorbendo gli schianti dietro
   Aegis Fang + Corona.
 
+### Analisi DPR (guida di bilanciamento DM — ripristinata da Terros.md)
+
+| PG | Danno medio/round vs CA 26 | Nota |
+|---|---|---|
+| **Thorik** (Aegis Fang +21) | ~18 dopo RD 10 | serve 5+; 1d10+7+3d6 sacro ≈ 28, −RD 10 |
+| **Tordek** (Raffica +12/+12/+7/+2) | ~12 dopo RD 10 | la RD morde il monaco; i danni **sonici** (×1,5) e il Pugno Frana sono il suo vero contributo |
+| **Artemis** (Blast +16 vs **contatto 8**) | ~33; **~49 in modalità sonica** | colpo automatico; **star DPS designato** |
+| **Party** | **~65-75/round** | Terros 345 pf → **~5 round** ✓ epico, non slog |
+
+| Bersaglio di Terros | Danno medio/round | Letalità |
+|---|---|---|
+| **Thorik** (CA ~28) | 2 schianti ≈ 42 + Push | ~3,5 round per abbatterlo — gestibile dietro lo scudo |
+| **Tordek** (CA ~27) | simile, ma il Push lo sbatte in zero-G | **pericoloso senza cure**: deve muoversi, non tankare |
+| **Artemis** (in volo) | quasi mai colpito (−4 vs aria) | minacciato solo da Stalattiti e Lancio di roccia |
+
+### Esempio di svolgimento (round-by-round, guida DM)
+
+- **R1** (con Frequenza: Terros **nauseato**, −4/−4) — Artemis: Blast sonico
+  ~42 (345→303). Tordek: Raffica su CA effettiva 22, ~36 (→267). Terros
+  (confuso): **Tremore/Onda** disperata — Riflessi CD 22 o proni. Thorik
+  rischia di passare il round a rialzarsi: è il prezzo dell'Altare.
+- **R2** — Terros pieno: 2 schianti su Thorik (+30 vs 28 = quasi auto): ~42 +
+  **Push FOR CD 25** → Thorik in zero-G. *Momento Aegis Fang*: la lancia come
+  gancio Returning per rientrare (azione di movimento, colore concesso).
+  Artemis ~42 (→225). Tordek ~24 (→201).
+- **R3** — Terros: **Earth Glide** nell'Altare (rigenera 15) e riemerge dietro
+  Artemis → le **azioni preparate** lo puniscono. Oppure **Scudo di Geodi** se
+  i colpi sonici fanno male → *Tordek Frantuma-Scudo*.
+- **R4-5** — sotto 172 pf si arrocca sull'Altare a rigenerare: **Thorik
+  "Radice a Terra"** o il **Diapason** rompono il ciclo; il party chiude con
+  la combo sonica. **Vittoria attesa R5-6** con risorse drenate — perfetto
+  per entrare TESI nel Rituale (§9).
+
 ### Contingenze — «Se i PG fanno X…» (risposte pronte, niente panico)
 
 | Mossa imprevista | Risposta del modulo |
@@ -786,85 +977,6 @@ R4+: alterna Earth Glide mordi-e-fuggi, Onda e Scudo. Sotto il
 **Loot**: **Geode Titanico** (5.000 mo, cristalli d'adamantio) + **Cuore di
 Terros** (oggetto meraviglioso: componente da **20.000 mo**, o base per un
 *Amuleto di Armatura Naturale +5*) — l'occhio di Artemis ci si posa subito.
-
----
-
-## §8-bis — IL SEME-MERCATO DI VARIS (tentazione solo per Artemis) `[INFERRED — needs DM]`
-
-> **Quando.** Mentre il party si avvicina all'Altare (prima dello scontro, per
-> montare la tensione) **oppure** subito dopo, quando lo Smeraldo emerge. La
-> scena è **privata**: gioca questo scambio con il solo giocatore di Artemis,
-> o a voce bassa, mentre gli altri si occupano d'altro. Nessun altro PG vede o
-> sente nulla.
-
-**Cosa vede Artemis (e solo lui).** Fra le rune verdi dell'Altare, dove gli
-altri vedono pietra nuda, l'Anello **rivela** una piccola gemma che non
-dovrebbe esistere: un **cabochon violetto**, incastonato di traverso nella
-matrice, come un dente storto in una bocca perfetta. La **Vista Potenziata** e
-la **Sapienza Forgiata** dell'Anello gliela mostrano; la **Sapienza Magica
-(CD 20, gratis via l'Anello)** gli dice che **non** è nata con l'Altare: è
-stata **innestata**. È l'ultima propaggine della **runa parassita di Varis**
-(§6) — un **Seme-Mercato**.
-
-> **VARIS (telepatico, mielato — più forte se al §6 Artemis è stato complice;
-> flebile e "in chiusura" se ha scelto la giustizia):** *«Bravo. Solo tu potevi
-> vederla. È un pegno di fiducia tra soci: prendila, incastonala nell'Anello, e
-> hai lo sconto a vita e la mia Falla come tuo magazzino personale. Il grande
-> collezionista non lascerà mai un tesoro simile nella pietra di un mostro
-> morto… vero?»*
-
-**La verità (DM).** Non è un dono: è un **guinzaglio**. Il Seme-Mercato è un
-**Marchio di Credito** planare. Chi lo accetta si lega alla Falla di Varis
-**come debitore**, non come cliente: Varis potrà **localizzarlo** finché il
-marchio è attivo e, una volta, **riscuotere** (chiamare un favore, chiudere un
-mercato al momento peggiore, o "vendere" la posizione di Artemis a chi paga —
-p.es. Il Collezionista). L'esca è tarata **esattamente** sull'avidità di
-Artemis: un tesoro invisibile agli altri, un affare che pare gratis.
-
-### La reazione dell'Anello — coerente col suo carattere (Caotico Buono)
-L'Anello **sussurra segreti del divino e dell'arcano** e **rispetta la scelta
-di Artemis di forgiare il proprio destino** (non lo comanda mai): non gli
-impedirà di sbagliare. Ma **odia i guinzagli** (è *Caos e Luce*, non
-sottomissione). Il DM sceglie il tono in base a quanto Artemis è stato leale
-finora:
-
-- **A) L'Anello avverte (se Artemis è stato retto al §6).** Prima che tocchi la
-  gemma, una riga in infernale gli affiora nella mente: *«Il Caos lo amo. Un
-  guinzaglio no. Quella gemma è una mano — e non è la tua.»* Gli concede la
-  scelta, informato.
-- **B) L'Anello TACE (se Artemis è stato avido/complice) — e osserva.** Il Caos
-  è curioso: vuole vedere cosa fa il suo portatore quando crede di non essere
-  guardato. Se Artemis **prende comunque** la gemma per pura cupidigia,
-  l'Anello interviene **dopo**, a modo suo:
-  - **Deride e neutralizza** — con un lampo di *Dawn's Defiance* (anti-dominazione)
-    l'Anello **spezza il controllo** di Varis sul marchio (Varis non può più
-    *comandare* Artemis) ma **lascia il debito** e si prende gioco di lui:
-    *«Così il grande collezionista è stato… collezionato. Terrò io il tuo
-    guinzaglio, portatore. Vediamo se impari.»* → il Seme diventa un **jolly
-    caotico** dell'Anello (una carica extra imprevedibile 1/arco, effetto a
-    scelta del DM), ma Varis conserva la **localizzazione** finché il marchio
-    non è dissolto.
-  - **Vincola** (variante più dura) — l'Anello lega Artemis a un piccolo
-    **geas caotico** («paga sempre i tuoi debiti, ma mai nel modo atteso»);
-    finché non lo onora, i poteri *attivati* dell'Anello hanno un −1 di
-    circostanza. Puro colore, leva narrativa.
-
-### Meccanica sintetica (3.5)
-| Scelta di Artemis | Effetto immediato | Eco a lungo termine |
-|---|---|---|
-| **Rifiuta / distrugge la gemma** (Sapienza Magica CD 20 per estirparla pulita, o Tordek FOR CD 22) | Varis perde l'ultimo appiglio nel giardino; l'Anello approva (+1 morale al prossimo TS di Artemis, colore) | Varis lo segna come "sfuggito": nemico che rispetta, non pollo (→ #4/ARC-09) |
-| **Prende la gemma** | **Esca reale**: un **Frammento di Mercato** (una volta: −25% su un acquisto o un +4 di circostanza a una prova commerciale/UMD) — la cupidigia è **premiata sul serio**, per un attimo | **Marchio di Varis**: Varis lo **localizza**; una volta potrà riscuotere (favore/tradimento). L'Anello può spezzare il *controllo* (Dawn's Defiance) ma **non** il debito. → grande gancio grigio per ARC-09 |
-
-> **Perché è bello (stile Andor/BG3).** Non è "una trappola cattiva": è un
-> **affare vero con un amo vero**. Artemis può vincerci (se è furbo o retto) o
-> pagarlo caro (se è avido) — e in entrambi i casi la scelta **torna** più
-> avanti. Registra l'esito nell'**Echo Ledger** (§11).
-
-> **Nota su Sal/Vatore (per il DM).** Questo marchio si intreccia bene col #4
-> (Viaggio a 1.000 anni fa), dove **Sal è presente come "Vatore"**: se Artemis
-> porta il Marchio di Varis, il DM può far riconoscere a Vatore la "firma" del
-> mercato — un filo che lega passato e presente della rete di Varis/Il
-> Collezionista `[INFERRED — needs DM confirmation]`.
 
 ---
 
@@ -1029,7 +1141,7 @@ futuro). *Lista completa degli 8 affreschi e del gancio → master #2.*
 |---|---|---|---|
 | **Scelta di Varis** (avidità/giustizia, §6) | Varis socio-che-sa-troppo **o** nemico permanente | ARC-09 (rete Varis/Il Collezionista) | state.md §3/§5 |
 | **Avidità di Artemis** (§5/§9) | Se dà via il bottino al Rituale: rinuncia dolorosa; se lo trattiene: party sceglie il sacrificio personale di Thorik | ARC-08 (WBL) / RP continuo | Echo Ledger |
-| **Seme-Mercato di Varis** (§8-bis) | Preso → **Marchio di Varis** (localizza Artemis, riscuote una volta); Rifiutato → Varis lo rispetta come "sfuggito" | ARC-09 (Varis/Il Collezionista); eco possibile già al #4 con Vatore | §8-bis + state.md §3/§5 |
+| **Seme-Mercato di Varis** (§6-bis) | Preso → **Marchio di Varis** (localizza Artemis, riscuote una volta); Rifiutato → Varis lo rispetta come "sfuggito" | ARC-09 (Varis/Il Collezionista); eco possibile già al #4 con Vatore | §6-bis + state.md §3/§5 |
 | **Scelta-costo di Thorik** (§9 Fase 1) | Materiale → party povero a Hammerfist; Personale → −2 DES/+2 COS **permanenti** | ARC-08 ingresso / sempre | state.md §1/§6 |
 | **Bracieri completi + coscienza** (§7b) | Possono **rifiutare i poteri** se Tordek tradisce gli ideali nanici | ogni scelta morale dura | `01_Bracieri_Gemelli_di_Moradin.md` |
 | **Thorik ha già visto Fauci in forma spirituale** (Corona/Topazio, §1) | Il "sangue Skullcrusher" che riconosce; premonizione di Hammerfist | #4 (Skullcrusher) → ARC-08 | carry-over «La Forgia ricorda le ferite» + `.../Corona.../000_Guida_Dm...md` |
@@ -1092,7 +1204,7 @@ futuro). *Lista completa degli 8 affreschi e del gancio → master #2.*
 | **Thorik** | **Corona di Adamantio** — +**Smeraldo** (2ª gemma) | (artefatto maggiore, non a listino) | 2/3 gemme (Topazio+Smeraldo); manca il Rubino (#4) |
 | **Tordek** | **Bracieri Gemelli di Moradin** — **completati** (Fuoco+Terra) | (artefatto maggiore) | pieni poteri + coscienza attiva |
 | **Tordek** | Cintura della Devastazione (già posseduta) | ~18.000 mo (MIC) | invariata |
-| **Artemis** | **Ring of Chaotic Illumination** (Reforged) | **163.400 mo** (unico) | invariato; +eventuale **Frammento di Mercato** se prende il Seme (§8-bis) |
+| **Artemis** | **Ring of Chaotic Illumination** (Reforged) | **163.400 mo** (unico) | invariato; +eventuale **Frammento di Mercato** se prende il Seme (§6-bis) |
 | **Hella** | (Collana/Durik prendono forma, ma **si legano a lei solo al #3**) | — | Durik "abbozzato"; Collana germoglia alla resurrezione |
 
 > **Verdetto del beat (per il DM).** PX ~9.600/PG (verso il 14° a Hammerfist);
@@ -1137,7 +1249,7 @@ contata a parte (audit WBL).
    Gemma della Vera Terra) sul retro.
 3. **Benedizioni di Moradin** — carte singole dal PDF (`BenedizioniDiMoradin.pdf`),
    inclusa la nuova **Forza della Montagna** (§2).
-4. *(Solo se Artemis prende il Seme-Mercato)* — bigliettino privato con la
+4. *(Solo se Artemis prende il Seme-Mercato, §6-bis)* — bigliettino privato con la
    «ricevuta» di Varis: *«Un favore, a mia scelta, a mio tempo. — V.»*
 
 ### Immagini (da `Immagini/`, momenti d'uso — atlante C1)

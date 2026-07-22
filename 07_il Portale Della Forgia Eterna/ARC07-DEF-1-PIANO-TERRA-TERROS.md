@@ -126,6 +126,10 @@ la strada alla resurrezione di Hella (#3). Countdown Hammerfist a fine parte:
   davanti ai suoi occhi e lascialo scegliere.
 - In volo (Ali d'Ombra) è **quasi intoccabile** da Terros (Earth Mastery −4 vs
   chi è in aria): è lo **star DPS**, se sfrutta la vulnerabilità sonica (§8).
+- **La tentazione più pericolosa non è un mostro: è una gemma.** Nell'Altare di
+  Terros, **visibile solo a lui**, c'è il **Seme-Mercato di Varis** (§8-bis):
+  un'esca calibrata sulla sua avidità. È qui che l'Anello — e il giocatore —
+  mostrano chi è Artemis davvero.
 
 ### 🌙 HELLA — solo echi (nano dei sogni, morta)
 - Hella **non ha scene "sopra"**: highlight **percettivo**. Da' alla giocatrice
@@ -487,6 +491,19 @@ verde smeraldo). Dormiente sull'Altare, **Terros** — 10 m di mole stratificata
 (basalto, granito, marmo, adamantio), geologia vivente. Avvicinarsi lo sveglia.
 Vedi **MAPPA T-6**.
 
+> **Read-aloud (il risveglio del guardiano — LotR + Salvatore).** *All'inizio
+> lo scambiate per una formazione della caverna: una collina di roccia
+> stratificata, ere sovrapposte come pagine di un libro di pietra. Poi la
+> collina RESPIRA. Una fenditura si apre lungo quella che credevate una parete
+> — è una palpebra. Due occhi di cristallo grezzo si accendono di una luce
+> minerale, fredda, priva di odio e priva di pietà, come lo sguarderebbe una
+> montagna. Non c'è collera: c'è PESO. Terros si erge, e ogni suo movimento è
+> il suono di una faglia che si assesta, un boato basso che sentite nei denti
+> prima che nelle orecchie. La gravità della sala si inclina verso di lui,
+> come se il piano stesso lo riconoscesse padrone. Aegis Fang, nella mano di
+> Thorik, tace di colpo: davanti all'Incudine del Mondo, anche una voce antica
+> abbassa il capo.*
+
 **Apertura sonica.** Se il party entra cantando la **Frequenza della
 Confusione** (Intrattenere Canto **CD 18**, l'Anello di Artemis dà +4; servono
 2 successi su 3) — **e solo se NON hanno svegliato Terros col fallimento
@@ -601,6 +618,85 @@ R4+: alterna Earth Glide mordi-e-fuggi, Onda e Scudo. Sotto il
 **Loot**: **Geode Titanico** (5.000 mo, cristalli d'adamantio) + **Cuore di
 Terros** (oggetto meraviglioso: componente da **20.000 mo**, o base per un
 *Amuleto di Armatura Naturale +5*) — l'occhio di Artemis ci si posa subito.
+
+---
+
+## §8-bis — IL SEME-MERCATO DI VARIS (tentazione solo per Artemis) `[INFERRED — needs DM]`
+
+> **Quando.** Mentre il party si avvicina all'Altare (prima dello scontro, per
+> montare la tensione) **oppure** subito dopo, quando lo Smeraldo emerge. La
+> scena è **privata**: gioca questo scambio con il solo giocatore di Artemis,
+> o a voce bassa, mentre gli altri si occupano d'altro. Nessun altro PG vede o
+> sente nulla.
+
+**Cosa vede Artemis (e solo lui).** Fra le rune verdi dell'Altare, dove gli
+altri vedono pietra nuda, l'Anello **rivela** una piccola gemma che non
+dovrebbe esistere: un **cabochon violetto**, incastonato di traverso nella
+matrice, come un dente storto in una bocca perfetta. La **Vista Potenziata** e
+la **Sapienza Forgiata** dell'Anello gliela mostrano; la **Sapienza Magica
+(CD 20, gratis via l'Anello)** gli dice che **non** è nata con l'Altare: è
+stata **innestata**. È l'ultima propaggine della **runa parassita di Varis**
+(§6) — un **Seme-Mercato**.
+
+> **VARIS (telepatico, mielato — più forte se al §6 Artemis è stato complice;
+> flebile e "in chiusura" se ha scelto la giustizia):** *«Bravo. Solo tu potevi
+> vederla. È un pegno di fiducia tra soci: prendila, incastonala nell'Anello, e
+> hai lo sconto a vita e la mia Falla come tuo magazzino personale. Il grande
+> collezionista non lascerà mai un tesoro simile nella pietra di un mostro
+> morto… vero?»*
+
+**La verità (DM).** Non è un dono: è un **guinzaglio**. Il Seme-Mercato è un
+**Marchio di Credito** planare. Chi lo accetta si lega alla Falla di Varis
+**come debitore**, non come cliente: Varis potrà **localizzarlo** finché il
+marchio è attivo e, una volta, **riscuotere** (chiamare un favore, chiudere un
+mercato al momento peggiore, o "vendere" la posizione di Artemis a chi paga —
+p.es. Il Collezionista). L'esca è tarata **esattamente** sull'avidità di
+Artemis: un tesoro invisibile agli altri, un affare che pare gratis.
+
+### La reazione dell'Anello — coerente col suo carattere (Caotico Buono)
+L'Anello **sussurra segreti del divino e dell'arcano** e **rispetta la scelta
+di Artemis di forgiare il proprio destino** (non lo comanda mai): non gli
+impedirà di sbagliare. Ma **odia i guinzagli** (è *Caos e Luce*, non
+sottomissione). Il DM sceglie il tono in base a quanto Artemis è stato leale
+finora:
+
+- **A) L'Anello avverte (se Artemis è stato retto al §6).** Prima che tocchi la
+  gemma, una riga in infernale gli affiora nella mente: *«Il Caos lo amo. Un
+  guinzaglio no. Quella gemma è una mano — e non è la tua.»* Gli concede la
+  scelta, informato.
+- **B) L'Anello TACE (se Artemis è stato avido/complice) — e osserva.** Il Caos
+  è curioso: vuole vedere cosa fa il suo portatore quando crede di non essere
+  guardato. Se Artemis **prende comunque** la gemma per pura cupidigia,
+  l'Anello interviene **dopo**, a modo suo:
+  - **Deride e neutralizza** — con un lampo di *Dawn's Defiance* (anti-dominazione)
+    l'Anello **spezza il controllo** di Varis sul marchio (Varis non può più
+    *comandare* Artemis) ma **lascia il debito** e si prende gioco di lui:
+    *«Così il grande collezionista è stato… collezionato. Terrò io il tuo
+    guinzaglio, portatore. Vediamo se impari.»* → il Seme diventa un **jolly
+    caotico** dell'Anello (una carica extra imprevedibile 1/arco, effetto a
+    scelta del DM), ma Varis conserva la **localizzazione** finché il marchio
+    non è dissolto.
+  - **Vincola** (variante più dura) — l'Anello lega Artemis a un piccolo
+    **geas caotico** («paga sempre i tuoi debiti, ma mai nel modo atteso»);
+    finché non lo onora, i poteri *attivati* dell'Anello hanno un −1 di
+    circostanza. Puro colore, leva narrativa.
+
+### Meccanica sintetica (3.5)
+| Scelta di Artemis | Effetto immediato | Eco a lungo termine |
+|---|---|---|
+| **Rifiuta / distrugge la gemma** (Sapienza Magica CD 20 per estirparla pulita, o Tordek FOR CD 22) | Varis perde l'ultimo appiglio nel giardino; l'Anello approva (+1 morale al prossimo TS di Artemis, colore) | Varis lo segna come "sfuggito": nemico che rispetta, non pollo (→ #4/ARC-09) |
+| **Prende la gemma** | **Esca reale**: un **Frammento di Mercato** (una volta: −25% su un acquisto o un +4 di circostanza a una prova commerciale/UMD) — la cupidigia è **premiata sul serio**, per un attimo | **Marchio di Varis**: Varis lo **localizza**; una volta potrà riscuotere (favore/tradimento). L'Anello può spezzare il *controllo* (Dawn's Defiance) ma **non** il debito. → grande gancio grigio per ARC-09 |
+
+> **Perché è bello (stile Andor/BG3).** Non è "una trappola cattiva": è un
+> **affare vero con un amo vero**. Artemis può vincerci (se è furbo o retto) o
+> pagarlo caro (se è avido) — e in entrambi i casi la scelta **torna** più
+> avanti. Registra l'esito nell'**Echo Ledger** (§11).
+
+> **Nota su Sal/Vatore (per il DM).** Questo marchio si intreccia bene col #4
+> (Viaggio a 1.000 anni fa), dove **Sal è presente come "Vatore"**: se Artemis
+> porta il Marchio di Varis, il DM può far riconoscere a Vatore la "firma" del
+> mercato — un filo che lega passato e presente della rete di Varis/Il
+> Collezionista `[INFERRED — needs DM confirmation]`.
 
 ---
 
@@ -752,11 +848,77 @@ futuro). *Lista completa degli 8 affreschi e del gancio → master #2.*
 |---|---|---|---|
 | **Scelta di Varis** (avidità/giustizia, §6) | Varis socio-che-sa-troppo **o** nemico permanente | ARC-09 (rete Varis/Il Collezionista) | state.md §3/§5 |
 | **Avidità di Artemis** (§5/§9) | Se dà via il bottino al Rituale: rinuncia dolorosa; se lo trattiene: party sceglie il sacrificio personale di Thorik | ARC-08 (WBL) / RP continuo | Echo Ledger |
+| **Seme-Mercato di Varis** (§8-bis) | Preso → **Marchio di Varis** (localizza Artemis, riscuote una volta); Rifiutato → Varis lo rispetta come "sfuggito" | ARC-09 (Varis/Il Collezionista); eco possibile già al #4 con Vatore | §8-bis + state.md §3/§5 |
 | **Scelta-costo di Thorik** (§9 Fase 1) | Materiale → party povero a Hammerfist; Personale → −2 DES/+2 COS **permanenti** | ARC-08 ingresso / sempre | state.md §1/§6 |
 | **Bracieri completi + coscienza** (§7b) | Possono **rifiutare i poteri** se Tordek tradisce gli ideali nanici | ogni scelta morale dura | `01_Bracieri_Gemelli_di_Moradin.md` |
 | **Thorik ha già visto Fauci in forma spirituale** (Corona/Topazio, §1) | Il "sangue Skullcrusher" che riconosce; premonizione di Hammerfist | #4 (Skullcrusher) → ARC-08 | carry-over «La Forgia ricorda le ferite» + `.../Corona.../000_Guida_Dm...md` |
 | **Durik prende forma** (§9) | Il seme III della Collana lo evocherà; carta emotiva a Hammerfist | #3 → ARC-08 | `01_Collana_dei_Semi_Eterni.md` |
 | **Pannelli della Cronaca** (§10) | La quarta figura di Hella si "riempie" → presagio resurrezione | #2 e #3 | master #2 |
+
+---
+
+## §11-bis — AVANZAMENTO DEI PG: PX, TESORO E VALORE ARTEFATTI
+
+> **A cosa serve.** Per valutare la progressione al tavolo servono **tre**
+> numeri, non uno: i **PX** guadagnati, il **tesoro ordinario** (conta verso il
+> WBL) e la **ricchezza speciale/artefatti** (conta verso il *potere* effettivo,
+> anche se non verso il WBL). Il precedente accounting a fasi era andato perso:
+> qui è ripristinato. Cifre PX dall'`ERRATA-ARC07-35-Verification.md` (APL 12/D15),
+> flag `[verifica ERRATA]` dove non attestate.
+
+### A. PX per incontro (party 3 PG, APL effettivo 12 · PG di 13°)
+
+| Incontro | GS | PX/PG `[verifica ERRATA]` |
+|---|---|---|
+| Xorn «Fauci di Diamante» (CR 11) + 2 Xorn (CR 6) | ~13 | ~1.700 |
+| Sentinella di Mithral (Golem, CR ~11) | 11 | ~1.500 |
+| **Terros l'Antico (CR 15 "Hard", power-up voluto D8)** | 15 | **~5.400** (range ERRATA 4.800–6.000) |
+| Skill Challenge Cristalli + Rituale dello Smeraldo (premio di storia) | — | ~1.000 |
+| **TOTALE beat** | | **~9.600/PG** |
+
+> **Lettura**: al 13° servono **14.000 PX** per il 14°. Questo beat vale
+> **~0,7 livelli**; con il Piano del Fuoco già alle spalle, i PG **maturano il
+> 14° verso Hammerfist** (D8: il 14° si consolida nell'ARC-08, non qui). Le
+> parti già giocate non si ritoccano (ERRATA §6).
+
+### B. Tesoro ordinario del beat (conta verso il WBL ~110.000 mo/PG)
+
+| Fonte | Valore | Note |
+|---|---|---|
+| Mithral grezzo (Xorn) | ~2.000 mo | solo se non crollato col pilastro (via A del §5) |
+| Geodi d'ametista | ~1.200 mo | Xorn |
+| Geode Titanico | 5.000 mo | Terros |
+| Residuo della Sentinella | ~5.000 mo | frammenti di mithral |
+| **Cuore di Terros** | **20.000 mo** | componente/oggetto meraviglioso |
+| **Lordo ordinario** | **~33.200 mo** | **prima** del Rituale |
+
+> ⚠️ **Il Rituale può azzerare quasi tutto** (§9 Fase 1): l'**Opzione A
+> (sacrificio materiale)** richiede **40.500 mo** → si dà via **tutto** questo
+> loot **e** parte dell'equipaggiamento magico personale; l'**Opzione B
+> (sacrificio personale)** lascia il loot ma costa a Thorik **−2 DES / +2 COS**
+> permanenti. **Traccia quale via prende il party**: cambia il WBL d'ingresso a
+> Hammerfist.
+
+### C. Ricchezza speciale / artefatti acquisiti qui (conteggio SEPARATO)
+
+> Metodo `ARC07-TESORO-WBL-AUDIT.md`: gli artefatti sono **ricchezza
+> campagna-definente**, contati a parte, **non** colmano il WBL ordinario. Ma
+> il loro **valore di mercato** è la misura del *potere* dei PG — ecco perché va
+> registrato per valutare l'avanzamento.
+
+| PG | Artefatto toccato in questo beat | Valore di riferimento | Stato dopo il beat |
+|---|---|---|---|
+| **Thorik** | **Corona di Adamantio** — +**Smeraldo** (2ª gemma) | (artefatto maggiore, non a listino) | 2/3 gemme (Topazio+Smeraldo); manca il Rubino (#4) |
+| **Tordek** | **Bracieri Gemelli di Moradin** — **completati** (Fuoco+Terra) | (artefatto maggiore) | pieni poteri + coscienza attiva |
+| **Tordek** | Cintura della Devastazione (già posseduta) | ~18.000 mo (MIC) | invariata |
+| **Artemis** | **Ring of Chaotic Illumination** (Reforged) | **163.400 mo** (unico) | invariato; +eventuale **Frammento di Mercato** se prende il Seme (§8-bis) |
+| **Hella** | (Collana/Durik prendono forma, ma **si legano a lei solo al #3**) | — | Durik "abbozzato"; Collana germoglia alla resurrezione |
+
+> **Verdetto del beat (per il DM).** PX ~9.600/PG (verso il 14° a Hammerfist);
+> WBL ordinario **sotto** i 110.000 mo/PG (l'arco è povero di loot ordinario,
+> ricchissimo di artefatti — il delta si colma a Hammerfist, ARC-08 B4); potere
+> effettivo **molto alto** grazie agli artefatti unici (è il motivo per cui gli
+> EL sono "Hard", D8). **Nessun doppio conteggio** degli artefatti tra gli archi.
 
 ---
 

@@ -19,23 +19,27 @@ ROOT = Path(__file__).resolve().parent.parent
 GLOB = "ARC*-DEF-*.md"
 
 # --- Sezioni obbligatorie (checklist skill, §Struttura 1-14) -----------------
+# `combat=True` = richiesta solo per i beat di combattimento (module-type: dungeon,
+# il default). I beat `module-type: hub` (interludio/ritorno/investigazione/social —
+# come i capitoli non-combat dei migliori AP) ne sono esenti, senza abbassare lo
+# standard narrativo: tutto il resto resta obbligatorio.
 REQUIRED = [
-    (r"^## INDICE", "INDICE del modulo"),
-    (r"QUICKSTART", "Quickstart DM"),
-    (r"QUICK-REFERENCE", "Quick-Reference stampabile"),
-    (r"HIGHLIGHT", "Highlight asimmetrici per PG"),
-    (r"Tattiche .*round", "Tattiche round-per-round (stile RHoD)"),
-    (r"Scalare lo scontro", "Sidebar scaling (stile RHoD)"),
-    (r"Contingenze", "Contingenze «Se i PG fanno X»"),
-    (r"[Ss]confitta", "Ramo sconfitta (mai TPK gratuito)"),
-    (r"Sviluppi", "Riga Sviluppi negli incontri"),
-    (r"ECHI|Echo Ledger", "Echo Ledger / conseguenze"),
-    (r"Budget PX|PX .*sezione", "Budget PX sezione-per-sezione"),
-    (r"[Tt]esoro PREGENERATO|Tesoro pregenerato", "Tesoro pregenerato itemizzato"),
-    (r"HANDOUT", "Handout & Asset"),
-    (r"### MAPPA", "Mappe ASCII ultra-clear"),
-    (r"1,5 m", "Scala 1,5 m/quadretto dichiarata"),
-    (r"Pathfinder 1e|PF1e", "Box supporto PF1e (dove il 3.5 è vago)"),
+    (r"^## INDICE", "INDICE del modulo", False),
+    (r"QUICKSTART", "Quickstart DM", False),
+    (r"QUICK-REFERENCE", "Quick-Reference stampabile", False),
+    (r"HIGHLIGHT", "Highlight asimmetrici per PG", False),
+    (r"Tattiche .*round", "Tattiche round-per-round (stile RHoD)", True),
+    (r"Scalare lo scontro", "Sidebar scaling (stile RHoD)", True),
+    (r"Contingenze", "Contingenze «Se i PG fanno X»", False),
+    (r"[Ss]confitta|[Ff]alliment", "Ramo sconfitta/fallimento (mai punizione gratuita)", False),
+    (r"Sviluppi", "Riga Sviluppi negli incontri/scene", False),
+    (r"ECHI|Echo Ledger", "Echo Ledger / conseguenze", False),
+    (r"Budget PX|PX .*sezione", "Budget PX sezione-per-sezione", False),
+    (r"[Tt]esoro PREGENERATO|Tesoro pregenerato", "Tesoro pregenerato itemizzato", False),
+    (r"HANDOUT", "Handout & Asset", False),
+    (r"### MAPPA", "Mappe ASCII ultra-clear", False),
+    (r"1,5 m", "Scala 1,5 m/quadretto dichiarata", False),
+    (r"Pathfinder 1e|PF1e", "Box supporto PF1e (dove il 3.5 è vago)", False),
 ]
 
 # --- Termini banditi (5e / canone deprecato) ---------------------------------
@@ -62,7 +66,12 @@ def check_file(path: Path, verbose: bool) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     warnings: list[str] = []
 
-    for pattern, label in REQUIRED:
+    # module-type: dichiarato con un marker HTML in testa. "hub" = beat non-combat.
+    is_hub = bool(re.search(r"module-type:\s*hub", text, re.IGNORECASE))
+
+    for pattern, label, combat_only in REQUIRED:
+        if combat_only and is_hub:
+            continue
         if not re.search(pattern, text, re.MULTILINE):
             errors.append(f"sezione mancante: {label} (pattern /{pattern}/)")
 

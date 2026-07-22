@@ -378,6 +378,7 @@ changelog with the resolution.
 - **[PROFUGHI]** I sei volti del Guado di Drellin (Norro, Sertieren, Derny, Delora, Iormel, Kellin — `Bestiario/png/Guado_di_Drellin/`) sono a Rethmar o in arrivo: chi di loro incontrano i PG per primo, e in quale stato?
 - **[LIRIEN]** Il Giullare Spezzato ha visto qualcosa nelle statue vive — i PG gli daranno retta prima che lo faccia qualcun altro? (`Bestiario/png/Lirien/Lirien.md` §2.1)
 - **[ARANEA]** Mira Serani si muove tra i profughi con la faccia della figlia morta di Lorana, raccogliendo intel per l'orda: quando (e come) i PG portano Lorana abbastanza vicino da smascherarla? E cosa fa la verità alla colpa di Lorana? (`Bestiario/villain/Mira_Serani/`)
+- **[DEBITO DELLA RADICE]** `[INFERRED — canonizzare al gioco del rito P3B]` Strappare Hella al Sogno della Terra (Via della Radice + Voto del viaggio) lascia un vuoto che l'ordine naturale esige di colmare — filo grigio (non bianco né nero). Al rito appare **la Custode delle Radici** (psicopompo neutrale, NON ostile): chiede un pegno, mai la vita di Hella (Moradin la protegge). Tre risposte del party: (A) accettare un servizio futuro → quest ARC-09 (Cerchio Sacro/Ghostlord) + Earth Dream 2/g; (B) rifiutare → il vuoto «risale» come nemico ARC-09 (non-morto della terra / crepa fungina di Sonjak); (C) offrire Durik come ponte vivente → Durik risponde al Sogno 1/sessione ma la Collana non perde mai il 3° seme. Fonte/dettagli: `07_.../ARC07-DEF-3-RESURREZIONE-HELLA.md` §6. Paga in ARC-09, non subito.
 
 ### §7.E Echo Ledger (choices the world remembers)
 

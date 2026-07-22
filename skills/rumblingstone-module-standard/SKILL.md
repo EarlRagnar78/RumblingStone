@@ -95,6 +95,15 @@ numerici, read-aloud, ambienti dinamici, hook. Ciò che si scarta va motivato.
   mostri rigenerato se il master aggiunge statblock, `state.md` §8 se il
   canone cambia.
 
+## Verifica automatica (CI, zero token)
+
+`python scripts/validate_modules.py` fa la **review meccanica** di ogni
+`ARC*-DEF-*.md` contro questa checklist (sezioni obbligatorie, termini
+5e/deprecati banditi — DC, lair action, Nymeria, Skulldark… —, mappe e
+scala, read-aloud minimi). Gira in CI a ogni PR: l'agente NON deve
+ri-verificare a mano ciò che lo script copre — spende i token solo su
+prosa, coerenza e design (ciò che una regex non vede).
+
 ## Self-check finale (prima di consegnare)
 
 1. Un DM può giocare la sessione **con questo solo file** aperto? (stampe a

@@ -70,6 +70,7 @@ and at most two support pillars, chosen by scene type. The mixer:
 | BG3-style echo ledger: writing, timing, and paying off consequences | `references/consequence-echoes.md` |
 | BG1/2-style complex quest patterns: stages, factions, personal quests | `references/quest-design-baldur.md` |
 | Living world: NPC/villain agency, world turn, SRD attitude system, settlements | `references/living-world.md` |
+| Editorial standards: terminologia canonica, resa read-aloud, tipografia, igiene (enforced in CI da `validate_modules.py`) | `references/editorial-standards.md` |
 
 **Worked exemplar in repo**: the Palio di Channathgate
 (`09_.../Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md` + allegati)

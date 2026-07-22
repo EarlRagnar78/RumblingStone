@@ -37,12 +37,12 @@
 | §1 | **Highlight per PG** | conoscenza asimmetrica: Tordek, Thorik, Artemis, Hella |
 | §2 | **Ingresso** | apertura dell'affresco A5, iscrizione di Moradin, Benedizione, attraversamento |
 | §3 | **Gravità 2×** | regole complete 3.5 (con/senza Benedizione, cadute) |
-| §4 | **Il viaggio** (~2,5 h) | tappe, gestione del movimento lento, **ambiente dinamico** (stalattiti, polvere, fenditure, geodi) |
-| §5 | **Incontro 1 — Xorn** | tre vie (demolizione/ordine/negoziato), Fauci di Diamante élite, esempio di svolgimento |
+| §4 | **Il viaggio** (~2,5 h) | tappe, **Atlante delle Zone** (4 ambienti con prosa e callout), gestione del movimento lento, **ambiente dinamico** |
+| §5 | **Incontro 1 — Xorn** | tre vie (demolizione/ordine/negoziato), Fauci di Diamante élite, **tattiche RHoD round-per-round** |
 | §6 | **Incontro 2 (OPZIONALE) — Cristalli Viventi** | skill challenge, cristallo da riforgiare, costi del salto |
 | §6-bis | **Seme-Mercato di Varis** | quest personale di Artemis, lungo la strada (indipendente) |
 | §7 | **Tempio di Mithral** | 7a salto gravitazionale co-op · 7b Sentinella + **risveglio pieno dei Bracieri** |
-| §8 | **BOSS: Terros l'Antico** (CR 15) | statblock 3.5, scenografia, coreografia, esempio di svolgimento, DPR, contingenze |
+| §8 | **BOSS: Terros l'Antico** (CR 15) | statblock 3.5, scenografia, coreografia, **tattiche-regia RHoD**, DPR, contingenze |
 | §9 | **Rituale dello Smeraldo** | 3 fasi — scelta-costo di Thorik, sinergia di TUTTI, emersione di Durik |
 | §10 | **La Forgia Ricorda** | pannelli-conseguenza negli affreschi (Sala + Stanza della Corona) |
 | §11 | **Echo Ledger** | conseguenze a lungo termine del beat |
@@ -375,6 +375,84 @@ il Tempio. Nessuna prova di Sopravvivenza necessaria.
 | Campo Cristalli Viventi | 1–1,5 km | ~30 min | **Incontro 2 — Cristalli + Varis** (§6) |
 | Oceano di Roccia + Tempio | 1,5–2 km | ~40 min | **Puzzle gravitazionale** (§7a) |
 
+### Atlante delle Zone (guida-struttura del viaggio — prosa e crunch per ogni ambiente)
+
+> Ogni zona ha: **read-aloud** (da leggere all'ingresso), **caratteristiche del
+> terreno** (callout meccanici, stile RHoD) e **cosa succede qui**. È la spina
+> dorsale del viaggio: quattro ambienti, quattro atmosfere, un piano che
+> diventa sempre più ostile man mano che ci si avvicina al Tempio.
+
+#### ZONA 1 — Le Piattaforme di Cristallo (0–300 m)
+> **Read-aloud.** *Il primo passo fuori dal portale è come camminare sul dorso
+> di una bestia addormentata. Le piattaforme di cristallo grigio-verde si
+> susseguono nel buio, unite da ponti di pietra che galleggiano senza fune né
+> pilastro — trattenuti da una volontà che non è la vostra. Sotto, sopra,
+> intorno: nulla. Solo cristalli lontani che brillano come stelle affogate.
+> Ogni ponte oscilla appena quando lo caricate del vostro peso raddoppiato,
+> e il cristallo, sotto gli stivali, RISPONDE: un tono basso, breve, come una
+> campana che prova la voce. Il piano sa che siete arrivati.*
+
+**Terreno (callout):** ponti di pietra galleggiante larghi 2-3 m (Equilibrio
+CD 10 con la Benedizione, CD 15 se si corre); caduta dal ponte = deriva nel
+vuoto laterale (recupero con corda o volo, non danno immediato). Le
+piattaforme risuonano: **impossibile muoversi in silenzio** (Muoversi
+Silenziosamente −5).
+**Cosa succede qui:** orientamento, primo assaggio del peso; Aegis Fang
+calibra la sua vibrazione-bussola. Nessun incontro: lascia respirare
+l'ambiente.
+
+#### ZONA 2 — La Foresta dei Cristalli Giganti (300 m–1 km)
+> **Read-aloud.** *Poi le piattaforme finiscono, e comincia la foresta. Nessun
+> albero è mai cresciuto così: colonne di cristallo alte trenta, sessanta
+> metri, spesse come torri di guardia, che salgono nel buio finché la vista si
+> arrende. Dentro ognuna, una luce lenta pulsa e migra, come sangue luminoso in
+> vene di vetro. I vostri passi rimbalzano tra le colonne in echi che tornano
+> sbagliati — più lenti, più gravi, come se la foresta li masticasse prima di
+> restituirli. E in alto, dove le colonne si perdono, qualcosa scricchiola:
+> il peso di ere che si assestano. Qui non siete cacciatori. Qui siete piccoli.*
+
+**Terreno (callout):** colonne = **copertura totale** (indistruttibili);
+terreno frastagliato = **difficile** (movimento ×2, già dimezzato dalla
+gravità: strisciate); linee di vista spezzate ogni 6-9 m (agguati facili);
+**stalattiti d'adamantio** sul soffitto a 50 m (vedi Ambiente dinamico).
+**Cosa succede qui:** **Incontro 1 — gli Xorn** (§5), al pilastro corroso
+(MAPPA T-2, G08).
+
+#### ZONA 3 — Il Campo dei Cristalli Viventi (1–1,5 km)
+> **Read-aloud.** *La foresta si apre di colpo, e il buio si accende. Davanti a
+> voi, un giardino: migliaia di cristalli non più alti di un nano, cresciuti in
+> triangoli, esagoni, cerchi concentrici — la geometria di una mente, non del
+> caso. E si MUOVONO: si inclinano verso di voi come girasoli verso un sole che
+> non c'è, e cantano. Non è metafora: ogni cristallo tiene una nota, e le
+> migliaia di note insieme formano un accordo così vasto che lo sentite nello
+> sterno prima che nelle orecchie. Al centro del giardino, alta come tre nani,
+> una madre di luce: sfaccettature a migliaia, e dietro ognuna, un pensiero.*
+
+**Terreno (callout):** corridoio libero centrale (riga 06 della MAPPA T-3);
+i cristalli NON bloccano il movimento ma **rompersi addosso a uno** (carica,
+caduta) = 1d6 perforante e **−1 successo** allo skill challenge se in corso.
+**Cosa succede qui:** **Incontro 2 (OPZIONALE) — i Cristalli Viventi** (§6);
+la zona si può **aggirare** da sud (+30 min).
+
+#### ZONA 4 — L'Oceano di Roccia e il Tempio (1,5–2 km)
+> **Read-aloud.** *L'ultima riva non è una riva: è il punto dove il suolo
+> smette di fingere di essere solido. Davanti a voi, fino all'orizzonte che non
+> esiste, si stende un oceano di roccia grigia — onde lente come pensieri di
+> montagna, creste che impiegano un'ora a rompersi, correnti di granito
+> liquido che scorrono senza suono. Toccarlo è come toccare il fianco di un
+> toro: cede, e sotto senti il muscolo. E là, sospeso a cinquanta metri sopra
+> le onde, RUOTA il Tempio: un cubo d'argento di cento metri di lato, perfetto
+> come un dado lanciato da un dio e mai atterrato. Aegis Fang, nella mano di
+> Thorik, vibra così forte che il braccio duole. Siete arrivati. Manca solo
+> l'impossibile: attraversare il vuoto.*
+
+**Terreno (callout):** l'oceano **non è lava** — chi ci finisce dentro affonda
+lentamente (3 round; Nuotare CD 20 faticoso; sommerso = soffocamento + 2d6
+schiacciamento/round, vedi Contingenze §8); riva = detriti instabili
+(Equilibrio CD 12); attorno al Tempio **gravità zero** con detriti fluttuanti.
+**Cosa succede qui:** **§6-bis Seme-Mercato** (quest privata di Artemis, sulla
+riva) → **§7a salto gravitazionale co-op** → Tempio.
+
 > **Gestione del viaggio (per il DM).** Tra un incontro e l'altro chiedi
 > **una prova di gruppo** ogni zona (Sopravvivenza/Equilibrio CD 12 con la
 > Benedizione) non per bloccare, ma per **colorare la fatica**: chi fallisce
@@ -457,27 +535,44 @@ Rifl +6, Vol +16 · **Speciale**: se morde un'arma/scudo magico fa Spaccare
 Scavare 6 m · Percezione tremorica 18 m · onnidirezionale · TS Temp +8, Rifl
 +5, Vol +5 · FOR 17, DES 10, COS 17. *Sotto 15 pf scavano via.*
 
-### Esempio di svolgimento (round-by-round, guida DM — ripristinato dalla fonte)
+### Tattiche degli Xorn — regia round per round (stile RHoD, agganciata a MAPPA T-2)
 
-> Numeri indicativi per calibrare al volo (tiri medi):
+> Scritte dal punto di vista dei MOSTRI: cosa fanno, dove, e perché. Gli Xorn
+> non sono stupidi (INT 10) e non sono kamikaze: sono **predatori di metallo
+> con la pazienza della pietra**.
 
-- **R1** — *Iniziativa: Artemis 18, Tordek 16, Xorn 10, Thorik 12.* Artemis:
-  Blast +16 vs contatto 10 = colpo automatico, ~28 danni sullo Xorn 1 (52→24).
-  Tordek: Raffica +12/+12/+7/+2 vs CA 24 — 1-2 colpi a segno, ~9-18 danni
-  (attenzione alla **RD 5/contundente**: i suoi pugni la aggirano ✓). Thorik:
-  +21 vs CA 24 = quasi sempre a segno, ~28 danni. **Fauci di Diamante** emerge
-  sotto Thorik e morde l'armatura (+22, Spaccare +26 se il morso prende
-  scudo/arma — **cura 30 pf** se spezza!). Gli Xorn standard puntano Artemis
-  (morso +9 vs CA 16 = ~70%: ~17 danni).
-- **R2** — gli Xorn si **rituffano nella pietra** (copertura totale): il party
-  DEVE preparare azioni sull'emersione. Fauci di Diamante riemerge dove fa più
-  male (tremorsense 18 m: sente chi sta fermo).
-- **R3+** — Xorn standard sotto 15 pf **scavano via** (2 su 3 fuggono,
-  tipicamente); Fauci di Diamante sotto 90 pf si rifugia **dentro** un
-  cristallo gigante (+4 CA) e combatte da lì: **spaccare il cristallo** (PF 80,
-  Durezza 8) o stanarlo con danni sonici.
-- **Esito tipico**: 2 fuggiti, l'élite abbattuto o messo in fuga; Artemis a
-  ~2/3 pf, risorse spese. *È l'antipasto del piano: fatica, non passeggiata.*
+- **Prima del contatto.** Fauci di Diamante (⬛ **G09**) sta divorando la vena
+  di mithral alla base del pilastro (💠 G08); i due Xorn standard pattugliano
+  in Earth Glide sotto il sentiero (🕳️ **G02** e **O05**). **Percezione
+  tremorica 18 m**: sentono il party dai passi appesantiti dalla gravità ben
+  prima di vederlo. Se il party si ferma a parlamentare (via C), emergono a
+  metà; se avanza in armi, tendono l'agguato.
+- **Round 1 — l'agguato.** I due standard emergono **sotto/dietro** i PG più
+  arretrati (bersaglio preferito: **Artemis**, il più leggero e il più
+  metallico di anelli). Fauci di Diamante NON emerge: aspetta di sentire dove
+  si pianta il "peso grosso" (Thorik).
+- **Round 2 — il morso al ferro.** Fauci di Diamante emerge **sotto Thorik**
+  (morso +22 ignora durezza <20; **Spaccare +26** su scudo/arma — se spezza,
+  **cura 30 pf** e i suoi occhi si accendono di fame). I due standard mordono
+  e si **rituffano** (mai 2 round di fila in superficie): il party DEVE
+  preparare le azioni sulle emersioni.
+- **Round 3+ — logoramento.** Emersioni alternate dai punti 🕳️; Fauci di
+  Diamante ruota attorno a Thorik per tenere il pilastro (la sua dispensa)
+  alle spalle. Se un PG resta isolato oltre una colonna (copertura totale che
+  taglia le linee di vista), è LUI il prossimo bersaglio.
+- **Soglie e morale.** Standard sotto **15 pf**: scavano via (fame ≠ morte).
+  Fauci di Diamante sotto **90 pf**: si ritira **dentro** un cristallo gigante
+  (+4 CA) e combatte da lì — stanarlo = spaccare il cristallo (PF 80, Durezza
+  8) o danni sonici. Sotto **40 pf** fugge in Earth Glide… **a meno che** il
+  pilastro di mithral non sia ancora intatto: la fame lo fa restare un round
+  di troppo (la sua debolezza caratteriale).
+- **Sviluppi.** Xorn fuggiti NON avvertono nessuno (non hanno padroni), ma se
+  il party ripassa di qui, li ritrova — affamati e più prudenti. Il pilastro
+  crollato (via A) crea il ponte permanente sull'abisso.
+
+> *Calibrazione rapida: Blast di Artemis ~28/colpo automatico; Thorik colpisce
+> con 5+; la Raffica di Tordek aggira la RD 5/contundente. Scontro atteso 4-5
+> round, Artemis a ~2/3 pf in uscita.*
 
 **XP**: ~4.800 (Fauci di Diamante CR 11 + 2 Xorn CR 6) `[verifica ERRATA per
 APL 12]`. **Loot** (se uccisi): vene di **mithral grezzo** (~2.000 mo, se non
@@ -944,23 +1039,49 @@ R4+: alterna Earth Glide mordi-e-fuggi, Onda e Scudo. Sotto il
 | **Tordek** (CA ~27) | simile, ma il Push lo sbatte in zero-G | **pericoloso senza cure**: deve muoversi, non tankare |
 | **Artemis** (in volo) | quasi mai colpito (−4 vs aria) | minacciato solo da Stalattiti e Lancio di roccia |
 
-### Esempio di svolgimento (round-by-round, guida DM)
+### Tattiche di Terros — regia round per round (stile RHoD, agganciata a MAPPA T-6)
 
-- **R1** (con Frequenza: Terros **nauseato**, −4/−4) — Artemis: Blast sonico
-  ~42 (345→303). Tordek: Raffica su CA effettiva 22, ~36 (→267). Terros
-  (confuso): **Tremore/Onda** disperata — Riflessi CD 22 o proni. Thorik
-  rischia di passare il round a rialzarsi: è il prezzo dell'Altare.
-- **R2** — Terros pieno: 2 schianti su Thorik (+30 vs 28 = quasi auto): ~42 +
-  **Push FOR CD 25** → Thorik in zero-G. *Momento Aegis Fang*: la lancia come
-  gancio Returning per rientrare (azione di movimento, colore concesso).
-  Artemis ~42 (→225). Tordek ~24 (→201).
-- **R3** — Terros: **Earth Glide** nell'Altare (rigenera 15) e riemerge dietro
-  Artemis → le **azioni preparate** lo puniscono. Oppure **Scudo di Geodi** se
-  i colpi sonici fanno male → *Tordek Frantuma-Scudo*.
-- **R4-5** — sotto 172 pf si arrocca sull'Altare a rigenerare: **Thorik
-  "Radice a Terra"** o il **Diapason** rompono il ciclo; il party chiude con
-  la combo sonica. **Vittoria attesa R5-6** con risorse drenate — perfetto
-  per entrare TESI nel Rituale (§9).
+> Scritte dal punto di vista del GUARDIANO. Terros non odia: **esegue un voto
+> vecchio quanto il piano**. Combatte come una frana: lento, inevitabile,
+> paziente. Non ha fretta — la roccia vince perché non ha fretta.
+
+- **Apertura (346–303 pf).** Se il party è entrato cantando la Frequenza:
+  primo round **nauseato** (−4/−4), usa un **Tremore/Onda** disperato per
+  disorientare. Altrimenti: si alza dall'Altare (K08-L09) e apre con **Onda
+  Gravitazionale verso il soffitto** — vuole i PG **staccati dall'Altare**,
+  fluttuanti e goffi nello zero-G, dove il suo Push li sbatte contro il muro
+  curvo (2d6). Bersaglio prioritario: **chi tocca l'Altare** (Earth Mastery
+  +1 su di loro).
+- **Fase di pressione (303–260 pf).** Full-attack su **Thorik** (la minaccia
+  che tiene la piattaforma): 2 schianti +30 e **Push FOR CD 25** per
+  scaraventarlo fuori dal bordo 🟡 — un tank che fluttua non è più un tank.
+  *(Concedi il momento Aegis Fang: la lancia Returning come gancio per
+  rientrare — azione di movimento, puro colore Salvatore.)* Contro Artemis in
+  volo NON spreca schianti (−4): usa il **Lancio di roccia** (+19) nei round
+  in cui non ha di meglio.
+- **Soglia 260 pf — lo Scudo.** Quando i colpi sonici cominciano a mordere
+  (×1,5), alza lo **Scudo di Geodi** (+4 CA, no critici) e combatte da dietro
+  le lastre di diamante. *Contromossa firmata: il Frantuma-Scudo di Tordek
+  (>15 sonici in un colpo) lo lascia frastornato per il round di Thorik.*
+- **Il trucco della frana (qualsiasi momento).** **Earth Glide** nell'Altare:
+  sparisce nella pietra (rigenera 15 al contatto) e **riemerge alle spalle del
+  bersaglio più fragile a portata** (di solito chi si è appena posato per
+  tirare). Le **azioni preparate** del party sono la risposta corretta — e
+  **"Radice a Terra" di Thorik** (FOR contrapposta vs Lotta +40) può
+  inchiodarlo fuori dalla pietra.
+- **Soglia 172 pf (50%) — l'arrocco.** Si ritira SULL'Altare e combatte in
+  difesa totale alternata a schianti: rigenera 15/round e costringe i PG a
+  venire da lui, dentro l'Earth Mastery. È il momento del **Diapason
+  Armonico** (stun 1 round, cade in zero-G, niente rigenerazione) o della
+  spallata coordinata (Pugno Frana + Bull Rush) per staccarlo dalla pietra.
+- **Ultimi 60 pf — il crollo.** Niente ritirata, niente pietà chiesta: un
+  guardiano muore in piedi. Tremori a ripetizione, schianti più lenti, e
+  quando cade — cade come cade una montagna: **prima il silenzio, poi il
+  boato**.
+- **Sviluppi.** Alla morte si sbriciola sull'Altare; lo Smeraldo emerge dal
+  torace (→ §9). Se il party era FUGGITO a metà scontro e torna: Terros è al
+  massimo dei pf e lo Scudo di Geodi parte già attivo (vedi Contingenze).
+  L'Altare scende a livello del pavimento solo a guardiano caduto.
 
 ### Contingenze — «Se i PG fanno X…» (risposte pronte, niente panico)
 
@@ -1159,31 +1280,44 @@ futuro). *Lista completa degli 8 affreschi e del gancio → master #2.*
 > qui è ripristinato. Cifre PX dall'`ERRATA-ARC07-35-Verification.md` (APL 12/D15),
 > flag `[verifica ERRATA]` dove non attestate.
 
-### A. PX per incontro (party 3 PG, APL effettivo 12 · PG di 13°)
+### A. Budget PX del modulo, sezione per sezione (party 3 PG, APL eff. 12 · PG di 13°)
 
-| Incontro | GS | PX/PG `[verifica ERRATA]` |
-|---|---|---|
-| Xorn «Fauci di Diamante» (CR 11) + 2 Xorn (CR 6) | ~13 | ~1.700 |
-| Sentinella di Mithral (Golem, CR ~11) | 11 | ~1.500 |
-| **Terros l'Antico (CR 15 "Hard", power-up voluto D8)** | 15 | **~5.400** (range ERRATA 4.800–6.000) |
-| Skill Challenge Cristalli + Rituale dello Smeraldo (premio di storia) | — | ~1.000 |
-| **TOTALE beat** | | **~9.600/PG** |
+| § | Incontro / prova | GS / tipo | PX/PG `[verifica ERRATA]` |
+|---|---|---|---|
+| §4 | Ambiente dinamico superato (polvere, stalattiti, fenditure — se attraversato senza scorciatoie) | premio di storia | 300 |
+| §5 | Xorn: «Fauci di Diamante» (CR 11) + 2 Xorn (CR 6) — **qualunque via** (combattuta, demolita o negoziata) | EL ~13 | 1.700 |
+| §6 | Skill Challenge dei Cristalli Viventi (solo se affrontato) — successo pieno | EL 11 (sfida) | 900 |
+| §6 | Bonus Successo Critico (Diapason ottenuto) | premio | +200 |
+| §6-bis | Seme-Mercato: scelta consapevole (qualunque esito, se la scena è stata giocata) | premio di storia | 200 |
+| §7a | Attraversamento co-op del vuoto (Ancora+Traghettatore+Navigatore riusciti) | EL 10 (hazard) | 600 |
+| §7b | Sentinella di Mithral (Golem, CR ~11) — duello di Tordek | EL 11 | 1.500 |
+| §8 | **TERROS L'ANTICO (CR 15 "Hard", power-up voluto D8)** | EL 15+ | **5.400** (range 4.800–6.000) |
+| §9 | Rituale dello Smeraldo completato (3 fasi, premio di storia maggiore) | premio | 800 |
+| | **TOTALE MODULO (percorso completo)** | | **~11.600/PG** |
+| | *Totale se i Cristalli sono saltati* | | *~10.300/PG* |
 
-> **Lettura**: al 13° servono **14.000 PX** per il 14°. Questo beat vale
-> **~0,7 livelli**; con il Piano del Fuoco già alle spalle, i PG **maturano il
+> **Lettura**: al 13° servono **14.000 PX** per il 14°. Questo modulo vale
+> **~0,8 livelli**; con il Piano del Fuoco già alle spalle, i PG **maturano il
 > 14° verso Hammerfist** (D8: il 14° si consolida nell'ARC-08, non qui). Le
 > parti già giocate non si ritoccano (ERRATA §6).
 
-### B. Tesoro ordinario del beat (conta verso il WBL ~110.000 mo/PG)
+### B. Tesoro PREGENERATO, sezione per sezione (conta verso il WBL ~110.000 mo/PG)
 
-| Fonte | Valore | Note |
-|---|---|---|
-| Mithral grezzo (Xorn) | ~2.000 mo | solo se non crollato col pilastro (via A del §5) |
-| Geodi d'ametista | ~1.200 mo | Xorn |
-| Geode Titanico | 5.000 mo | Terros |
-| Residuo della Sentinella | ~5.000 mo | frammenti di mithral |
-| **Cuore di Terros** | **20.000 mo** | componente/oggetto meraviglioso |
-| **Lordo ordinario** | **~33.200 mo** | **prima** del Rituale |
+> Oggetti **specifici**, pronti da leggere quando i PG frugano — non "monete
+> generiche". Chi trova cosa dipende dalle scelte (le vie che distruggono il
+> tesoro lo dicono).
+
+| § | Dove | Oggetti (pregenerati) | Valore |
+|---|---|---|---|
+| §5 | Vena del pilastro (SOLO se non crollato — via B o C) | **4 barre di mithral grezzo** già staccate dagli Xorn (500 mo l'una), ancora tiepide del loro morso | 2.000 mo |
+| §5 | Ventrigli degli Xorn uccisi | **2 geodi d'ametista** (400 mo l'uno) + **1 granato stellato** inghiottito chissà dove (300 mo) | 1.100 mo |
+| §5 | Tributo pagato (via C) | −1.500 mo in metallo/gemme del party | −1.500 mo |
+| §6 | Dono della Madre (solo successo pieno) | **Lacrima di Cristallo Vivente** — gemma-diapason che vibra vicino alla pietra magica (funge da focus per incantesimi terra; 750 mo) + la **Frequenza** e il **Diapason** (senza prezzo: sono armi della scena) | 750 mo |
+| §6-bis | Il Seme-Mercato (se preso) | **Frammento di Mercato** (vedi §6-bis — valore commerciale nullo, valore narrativo enorme) | — |
+| §7b | Carcassa della Sentinella | **Piastre di mithral lavorato** recuperabili (5.000 mo dal fabbro giusto) + **nucleo di magnetite stellare** (curiosità arcana, 400 mo) | 5.400 mo |
+| §8 | Resti di Terros | **Geode Titanico** (5.000 mo — dentro: cristalli d'adamantio grezzi) + **Cuore di Terros** (oggetto meraviglioso: componente da **20.000 mo** o base per *Amuleto di Armatura Naturale +5*) | 25.000 mo |
+| §8 | Sotto l'Altare (Osservare CD 25, solo dopo la vittoria) | **Offerta antica**: 7 monete di platino di conio nanico pre-imperiale (100 mo l'una per un collezionista; Varis pagherebbe il doppio…) | 700 mo |
+| | **LORDO ordinario massimo** | | **~34.950 mo** |
 
 > ⚠️ **Il Rituale può azzerare quasi tutto** (§9 Fase 1): l'**Opzione A
 > (sacrificio materiale)** richiede **40.500 mo** → si dà via **tutto** questo

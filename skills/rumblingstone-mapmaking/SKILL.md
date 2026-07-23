@@ -8,6 +8,8 @@ description: >
   "mappa esercito", "assedio", "accampamento", "coordinate", "JSON mappa",
   "contratto JSON", "compile_map_json", "export UVTT", "uvtt", "dd2vtt",
   "Foundry", "Roll20", "muri e luci", "mappa cinematografica", "handout",
+  "audit mappe", "atlante mappe", "mappe definitive", "parity pass mappe",
+  "consolidamento mappe", "MAPPE-DEFINITIVO", "posizionamenti canonici",
   or whenever creating/editing files matching *MAPPE*, *Ultra-Clear*, or
   running scripts/render_map_svg.py, scripts/import_watabou.py,
   scripts/compile_map_json.py, scripts/export_uvtt.py, scripts/validate_maps.py.
@@ -70,6 +72,7 @@ Dettaglio e "system prompt" per l'LLM: `references/tre-modalita-mappe.md`.
 
 | Task | Reference |
 |---|---|
+| **Audit/consolidamento mappe di un arco** (atlante definitivo, fonti canoniche, add-on DM, render+verifica) | `references/audit-mappe-workflow.md` |
 | Le 3 modalità, contratto JSON, system prompt LLM | `references/tre-modalita-mappe.md` |
 | Full workflow: new map, edit, render, validate, dungeon import, overland/city | `references/workflow-mappe.md` |
 | Universal legend: every terrain/unit/prop symbol with meaning | `references/legenda-universale.md` |

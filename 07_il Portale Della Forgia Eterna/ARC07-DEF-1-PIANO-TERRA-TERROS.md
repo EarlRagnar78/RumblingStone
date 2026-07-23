@@ -1440,6 +1440,11 @@ finale del Fuoco/P3) ·
 
 ## MAPPE ASCII ULTRA-CLEAR (scala 1,5 m/quadretto)
 
+> 📗 **Versione a piena scheda tattica** (posizioni PG/PNG/villain, terreno &
+> altitudini, tattiche di villain/mostri, evoluzione) nell'**Atlante Mappe
+> Definitivo**: `Mappe/ARC07-MAPPE-DEFINITIVO.md`. Le griglie qui sotto sono
+> identiche; là hanno gli add-on DM. **I booklet includono l'Atlante.**
+
 ### MAPPA T-1 — PIANO DELLA TERRA: orizzonte & percorso (schematica)
 
 ```

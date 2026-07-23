@@ -699,6 +699,11 @@ resta vivo (Vatore/Sal).
 
 ## MAPPE ASCII ULTRA-CLEAR (scala 1,5 m/quadretto)
 
+> 📗 **Versione a piena scheda tattica** (posizioni PG/PNG/villain, terreno &
+> altitudini, tattiche di villain/mostri, evoluzione) nell'**Atlante Mappe
+> Definitivo**: `Mappe/ARC07-MAPPE-DEFINITIVO.md`. Le griglie qui sotto sono
+> identiche; là hanno gli add-on DM. **I booklet includono l'Atlante.**
+
 ### MAPPA M7-A — HAMMERFIST ≈372 DR: fortezza, campo dell'orda, mura (strategica)
 
 ```

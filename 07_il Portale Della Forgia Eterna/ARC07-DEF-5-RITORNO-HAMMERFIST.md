@@ -378,11 +378,16 @@ master vi **rimanda**.
 
 ## MAPPE ASCII ULTRA-CLEAR (scala 1,5 m/quadretto)
 
+> 📗 **Versione a piena scheda tattica** (posizioni PG/PNG/villain, terreno &
+> altitudini, tattiche di villain/mostri, evoluzione) nell'**Atlante Mappe
+> Definitivo**: `Mappe/ARC07-MAPPE-DEFINITIVO.md`. Le griglie qui sotto sono
+> identiche; là hanno gli add-on DM. **I booklet includono l'Atlante.**
+
 ### MAPPA CM-1 — IL CUORE DELLA MONTAGNA (arrivo & apparizione)
 
 ```
 ════════════════════════════════════════════════════════════════════════
- IL CUORE DELLA MONTAGNA — caverna sacra ~30 m × 24 m (20 col × 16 righe)
+ IL CUORE DELLA MONTAGNA — caverna sacra ~30 m × 15 m (20 col × 10 righe)
  Giorno 3 dell'assedio (1372) · zona SACRA (Consacrazione: +1 TS vs paura)
 ════════════════════════════════════════════════════════════════════════
 COL →   A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R  S  T
@@ -390,7 +395,7 @@ COL →   A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R  S  T
 02     🪨 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🪨   🔴 = orchi che sfondano (Round 2)
 03     🪨 🟫 🗿 🟫 🟫 🔴 🔴 🟫 🟫 🟫 🟫 🔴 🔴 🟫 🟫 🗿 🟫 🟫 🟫 🪨   🗿 = statue dei re (occhi rubino, copertura)
 04     🪨 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🛡️🥋🔮🌙 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🪨   🛡️🥋🔮🌙 = i 4 PG (materializzati sull'altare)
-05     🪨 🟫 🗿 🟫 🟫 🟫 🟫 🟡 🟡 🟡 🟡 🟡 🟟 🟫 🟫 🗿 🟫 🟫 🟫 🪨   🟡 ALTARE DI MORADIN (rialzato, centro)
+05     🪨 🟫 🗿 🟫 🟫 🟫 🟫 🟡 🟡 🟡 🟡 🟡 🟡 🟫 🟫 🗿 🟫 🟫 🟫 🪨   🟡 ALTARE DI MORADIN (rialzato, centro)
 06     🪨 🟫 🟫 🟫 🟫 🟫 🟫 🟡 ⚰️ 👑 🩺 🟡 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🪨   👑 Re Thorek (8 pf) · 🩺 Madre Dana · ⚰️ nani caduti
 07     🪨 🟫 🗿 🟫 🟫 🟫 🟫 🟡 🟡 🟡 🟡 🟡 🟫 🟫 🟫 🗿 🟫 🟫 🟫 🪨
 08     🪨 🟫 🟫 🟫 🛡️🛡️🛡️🛡️🛡️🛡️🛡️🛡️🛡️🛡️🛡️ 🟫 🟫 🟫 🟫 🪨   🛡️ semicerchio dei 90 nani (morale −4 → +2 all'arrivo)

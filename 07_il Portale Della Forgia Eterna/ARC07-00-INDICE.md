@@ -66,9 +66,14 @@ non la duplicano, vi rimandano).
 
 ## 🗺️ MAPPE — dove sono e a che livello (audit 2026-07-23)
 
-- **Mappe tattiche di ogni beat**: **dentro** ciascun master DEF (ASCII
-  ultra-clear, coordinate, scala 1,5 m/quadretto, legenda + tattiche). Sono
-  **handout da tavolo** immediati: 6 in #1, 2 in #2, 1 in #3, 2 in #4, 1 in #5.
+- **Atlante Mappe DEFINITIVO**: **`Mappe/ARC07-MAPPE-DEFINITIVO.md`** — le 12
+  griglie ultra-clear di tutti i beat in un solo posto, a **piena scheda
+  tattica** (posizioni PG/PNG/villain, terreno & altitudini, tattiche di
+  villain/mostri, evoluzione). Standard: Atlante di Hammerfist (arco 08) + L1/L2
+  UltraClear + battle map RHoD. **È la versione che i booklet includono.**
+- **Mappe tattiche di ogni beat**: anche **dentro** ciascun master DEF (griglie
+  identiche all'Atlante, senza gli add-on DM): 6 in #1, 2 in #2, 1 in #3, 2 in
+  #4, 1 in #5.
 - **Mappe a stampa (pergamena SVG)**: `Mappe/rendered/` — rese dal pipeline
   `render_map_svg.py`. Oggi coprono le stanze «storiche» (Stanza della Corona,
   Sala della Forgia, colonna-K, Forgia Adamantina) dai master `Mappe/Portale-Forgia-L1/L2-REVISED-UltraClear.md`.

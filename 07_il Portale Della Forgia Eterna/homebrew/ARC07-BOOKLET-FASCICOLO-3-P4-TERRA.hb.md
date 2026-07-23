@@ -48,7 +48,7 @@ l'Incudine del Mondo** (CR 15).
 | Quick-Reference (CD, pf/soglie, il giro di Terros, PF1e) | DEF-1 **§0-bis** |
 | **Hints asimmetrici per PG** (da consegnare) | `HANDOUT-2-hints-per-pg-prossima-sessione.hb.md` |
 | Statblock definitivo di **Terros (CR 15)** | DEF-1 **§8** |
-| Mappe tattiche ASCII ultra-clear (T-1…T-6) | DEF-1 **MAPPE** |
+| Mappe tattiche ASCII ultra-clear (T-1…T-6, piena scheda) | `Mappe/ARC07-MAPPE-DEFINITIVO.md` |
 
 > Il vecchio spezzatino (Interludio-Terra, P4-COMPLETO/RICALIBRATO, Terros.md,
 > file-risultati del viaggio) è **assorbito** in DEF-1 e migrato in `_ARCHIVIO/`.

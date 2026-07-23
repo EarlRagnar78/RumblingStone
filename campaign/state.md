@@ -1431,4 +1431,13 @@ entries — they become campaign history.
             Nuovi handout: `homebrew/HANDOUT-2-hints-per-pg-prossima-sessione.hb.md`
             (hints asimmetrici per la sessione Terros). validate_modules 5/5,
             bestiario/maps/skills/plans verdi.
+2026-07-23b **ARC-07 ATLANTE MAPPE DEFINITIVO** — nuovo
+            `07_.../Mappe/ARC07-MAPPE-DEFINITIVO.md`: le 12 griglie ultra-clear
+            di tutti i beat (T-1…T-6, S-1/S-2, R-1, M7-A/B, CM-1) a piena scheda
+            tattica (posizioni PG/PNG/villain, terreno & altitudini, tattiche di
+            villain/mostri, evoluzione), standard = Atlante Hammerfist (arco 08)
+            + L1/L2 UltraClear + battle map RHoD. ASCII resta la fonte canonica
+            (resa SVG = task futuro PIANO-RENDER-MAPPE-FEDELTÀ). Referenziato da
+            INDICE, dai 5 master DEF (sezione MAPPE) e dai booklet. Corretti 2
+            errori in CM-1 (header 24→15 m / 16→10 righe; typo 🟟→🟡).
 ```

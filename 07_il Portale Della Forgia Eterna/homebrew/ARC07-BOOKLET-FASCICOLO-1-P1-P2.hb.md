@@ -171,7 +171,7 @@ Successo: nessun effetto, lucidità piena; esiti di fallimento al master §1.
 ### La Sala *(P2/1 §§2-3)*
 
 Descrizione tecnica D&D 3.5 e **mappa tattica ASCII** direttamente al
-master (§2-§3); versione stampabile: `Mappe/TACTICAL-GRIDS-COMPLETE.md`
+master (§2-§3); versione stampabile: `Mappe/_ARCHIVIO/TACTICAL-GRIDS-COMPLETE.md`
 e gli SVG in `Mappe/rendered/`.
 
 ### I luoghi sacri *(P2/1 §§4-6 · P2/2)*

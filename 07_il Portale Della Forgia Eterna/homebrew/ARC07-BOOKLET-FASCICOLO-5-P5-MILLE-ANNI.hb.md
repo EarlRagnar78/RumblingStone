@@ -70,7 +70,7 @@ vive in ARC-08 §FAUCI.
 | 2 | **Thorgrim Barbadiferro e gli antenati** | roleplay: i PG incontrano chi scriverà le Cronache |
 | 3 | **Infiltrazione e Zog'tar** | |
 | 4 | **Le mura sotto assalto (alba)** | |
-| 5 | ⚔️ **IL DUELLO CON SKULLCRUSHER** | unico scontro tattico — **MAP 7** (`Mappe/TACTICAL-GRIDS-COMPLETE.md` + SVG in `Mappe/rendered/`) |
+| 5 | ⚔️ **IL DUELLO CON SKULLCRUSHER** | unico scontro tattico — **MAP 7** (`Mappe/_ARCHIVIO/TACTICAL-GRIDS-COMPLETE.md` + SVG in `Mappe/rendered/`) |
 | 6 | **Il Rubino e il ritorno** | la vittoria accende il **Rubino** (*Gem of Immutable Time*) |
 
 {{pageNumber,auto}}

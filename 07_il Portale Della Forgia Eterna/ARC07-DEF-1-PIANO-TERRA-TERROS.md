@@ -662,7 +662,7 @@ come **Successo Critico**, il **Diapason Armonico** (frammento: **stun Terros
 
 ---
 
-## §6-bis — IL SEME-MERCATO DI VARIS (quest personale di Artemis, LUNGO LA STRADA) `[INFERRED — needs DM]`
+## §6-bis — IL SEME-MERCATO DI VARIS (quest personale di Artemis, LUNGO LA STRADA) `[CANONE — DM 2026-07-23; l'esito (accetta/rifiuta) si gioca]`
 
 > **Dove e quando (pulito, indipendente da tutto).** Sulla **riva dell'Oceano
 > di Roccia**, l'ultima sosta prima del Tempio — **prima di arrivare a Terros**
@@ -1428,7 +1428,7 @@ contata a parte (audit WBL).
 `_ARCHIVIO/PortaleForgia-P4-PianoTerra-RICALIBRATO.md` · `_ARCHIVIO/Terros.md` ·
 `_ARCHIVIO/PortaleForgia-Interludio-Terra.md` (apertura A5 + iscrizione + eco di Hella —
 assorbiti in §1/§2; le variazioni degli affreschi A4/A7/A8 vanno al master #2) ·
-`Mappe/TACTICAL-GRIDS-COMPLETE.md` MAP 5 (ambiente dinamico → §4) e MAP 6
+`Mappe/_ARCHIVIO/TACTICAL-GRIDS-COMPLETE.md` MAP 5 (ambiente dinamico → §4) e MAP 6
 (scenografia della camera → §8; **canone risolto**: il "Golem di Mithral"
 delle immagini/MAP 6 è la **Sentinella** del §7b, il boss è **Terros**) ·
 `La_Piramide_Ricalibrata.md` (metodo forgiatura — il file resta come master del

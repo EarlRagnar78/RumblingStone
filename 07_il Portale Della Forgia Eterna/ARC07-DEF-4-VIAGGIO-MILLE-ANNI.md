@@ -10,7 +10,7 @@
 > `PortaleForgia-P5-DEFINITIVO-PARTE1/2.md` (prosa e dialoghi estesi),
 > `PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md` (il ponte «la Forgia
 > ricorda le ferite», valori DM-approved), `Bestiario/villain/Salvatore/Salvatore.md`
-> (**Vatore**, Sal a −1000), MAP 7 di `Mappe/TACTICAL-GRIDS-COMPLETE.md`.
+> (**Vatore**, Sal a −1000), MAP 7 di `Mappe/_ARCHIVIO/TACTICAL-GRIDS-COMPLETE.md`.
 > Deprecati a valle: `P5-RICALIBRATO`, la sezione «battaglia antica» di `P6`.
 >
 > **Sistema: D&D 3.5 SRD** (max PF1e), MAI 5e. Italiano, **CD** non DC. Il

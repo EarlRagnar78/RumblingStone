@@ -167,7 +167,7 @@
   [INFERRED] sulle soglie non esplicite. Griglie/SVG invariati (validate_maps
   verde).
 - **Non serve companion** (già hanno tattiche organizzate per mappa):
-  `Portale-Forgia-L3-FINALE-REVISED.md` (Xorn Fauci di Diamante, skill
+  `Mappe/_ARCHIVIO/Portale-Forgia-L3-FINALE-REVISED.md` (Xorn Fauci di Diamante, skill
   challenge, Terros CR 16 — ha già SCHEMA TATTICO per mappa; il suo SVG
   manca solo per il formato a lettere, censito nota 2) e
   `Hammerfist-Lotto-3-FINALE.md` (SCHEMA TATTICO per ognuna delle 5 mappe,

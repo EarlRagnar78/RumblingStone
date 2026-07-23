@@ -286,7 +286,9 @@ Hammerfist): continua in `08_.../ARC08-11-PONTE-ARRIVO.md` e nella Guida DM.
 ## §7 — ECHO LEDGER — CHIUSURA D'ARCO (tutti gli echi armati per ARC-08/09)
 
 > Questo è il **riepilogo di tutto ciò che l'ARC-07 consegna al futuro**. Il DM
-> lo usi come checklist all'apertura dell'ARC-08.
+> lo usi come checklist all'apertura dell'ARC-08. Per il **dettaglio** di
+> ciascun eco (varianti di tono del Rubino, Uovo di Fauci → ARC-10, Thorgrim →
+> Cerimonia 100 Asce) vedi il riferimento esteso `ARC07-CONSEGUENZE-ECHI.md`.
 
 | Eco/filo (origine) | Stato in uscita | Dove paga |
 |---|---|---|

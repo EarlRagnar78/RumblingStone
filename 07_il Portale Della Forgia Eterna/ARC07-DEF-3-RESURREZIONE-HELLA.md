@@ -317,7 +317,7 @@ lo guarda un istante più a lungo del necessario, e non dice nulla. *Lo sente.*
 
 ---
 
-## §6 — IL DEBITO DELLA RADICE (il filo grigio del piano spirituale) `[INFERRED — DM]`
+## §6 — IL DEBITO DELLA RADICE (il filo grigio del piano spirituale) `[CANONE — DM 2026-07-23; il ramo (A/B/C) si gioca]`
 
 > **Cosa fa questo filo (richiesta DM).** Riportare Hella è giusto — ma non è
 > **gratis per il mondo**. Nel viaggio, Hella scelse la **Via della Radice** e

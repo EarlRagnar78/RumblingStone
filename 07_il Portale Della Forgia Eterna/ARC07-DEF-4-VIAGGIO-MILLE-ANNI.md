@@ -629,7 +629,7 @@ un **terrore reverenziale mal mascherato**.
 ## §8 — AVANZAMENTO (budget PX per scena + tesoro pregenerato)
 
 ### A. Budget PX del beat (party 4 PG, APL 13 · fast-play)
-| Scena | Tipo | PX/PG `[verifica ERRATA]` |
+| Scena | Tipo | PX/PG `[verif. ✓ ERRATA/TESORO-WBL 2026-07-23]` |
 |---|---|---|
 | Sc.1-2 Cronache + Thorgrim | storia/social | 600 |
 | Sc.3 Infiltrazione + Zog'tar (GS 14, risoluzione veloce) | combattimento veloce | 2.400 |

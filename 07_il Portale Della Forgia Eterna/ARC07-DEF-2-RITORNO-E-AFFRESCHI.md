@@ -523,7 +523,7 @@ rinnovabili 1/giorno tornando alla Sala.
 ### A. Budget PX del beat (party 3 PG, APL eff. 12 · PG di 13°)
 > Beat **hub**: PX di **storia e interpretazione**, non di combattimento.
 
-| Scena | Tipo | PX/PG `[verifica ERRATA]` |
+| Scena | Tipo | PX/PG `[verif. ✓ ERRATA/TESORO-WBL 2026-07-23]` |
 |---|---|---|
 | Ritorno e lettura della Cronaca (entrambe le stanze) | storia | 400 |
 | A3 — catarsi di Thorik (beat personale riuscito, per chiunque lo giochi bene) | roleplay | 300 |

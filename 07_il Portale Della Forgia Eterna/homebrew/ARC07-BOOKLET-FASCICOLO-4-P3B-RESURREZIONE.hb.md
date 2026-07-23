@@ -1,10 +1,13 @@
 <!-- Booklet ARC-07 — Fascicolo IV (Lotto K-B3.4, ondata ③ K-D2).
      Artefatto di LAYOUT Homebrewery V3: CITA il master, non lo riscrive.
      In caso di conflitto vincono il master e campaign/state.md §0.
-     MASTER UNICO (post-consolidamento 2026-07-23):
-             ARC07-DEF-3-RESURREZIONE-HELLA.md (autosufficiente, qualità AP;
-             include i doni PIENI del viaggio + il filo grigio «Debito della
-             Radice»). Sorgente assorbita: _ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md
+     MASTER (post-consolidamento 2026-07-23):
+             Cap. 0 = ARC07-DEF-2-RITORNO-E-AFFRESCHI.md (ritorno alla Sala +
+                       Cronaca Vivente — stesso luogo del rito);
+             Cap. 1+ = ARC07-DEF-3-RESURREZIONE-HELLA.md (autosufficiente,
+                       qualità AP; doni PIENI del viaggio + filo grigio «Debito
+                       della Radice»).
+             Sorgente assorbita: _ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md
      MATERIALE DM — non per i giocatori. -->
 
 {{frontCover}}
@@ -37,6 +40,23 @@ come **Ibrido Treant**.
 **Prerequisito di lettura**: la ⭐**INTEGRAZIONE B2** in testa al master —
 lo spirito di Hella **ha già viaggiato** (canone giocato): al risveglio
 porta i **doni PIENI**, che sovrascrivono i valori storici del file.
+}}
+
+### Capitolo 0 — Il ritorno alla Sala & la Cronaca Vivente *(master `ARC07-DEF-2`)*
+
+Prima del rito, i quattro **tornano dal Piano della Terra alla Sala della Forgia**
+(stesso luogo dell'Altare del Cuore). La Sala **ha registrato la vittoria**: gli
+**8 affreschi** (A1-A8) sono una **Cronaca Vivente** che reagisce a Thorik e alla
+Corona — A4 (Fuoco) chiuso, A5 (Terra) si chiude, A2/A6 all'80%, A8 al 60%, A7
+(Hammerfist) LIVE. Lo **specchio** nella Stanza della Corona incide «La Seconda
+Gemma» e la sagoma-druida (Hella) si «riempie». Un solo sacro attivo per volta
+(**Benedizione della Cronaca**, no stacking). Mappe: **S-1** (Sala, 8 affreschi
+posizionati) e **S-2** (Stanza della Corona) nell'Atlante `Mappe/ARC07-MAPPE-DEFINITIVO.md`.
+
+{{descriptive
+Il corpo di Hella è vegliato da Therysol davanti ad **A8**: è lì che avverrà la
+manifestazione. Il ritorno alla Sala **prepara emotivamente il rito** — dai al
+tavolo il tempo di leggere la Cronaca prima di spendere il Cuore di Moradin.
 }}
 
 ##### Regola d'oro della scena (decisione T-D1)

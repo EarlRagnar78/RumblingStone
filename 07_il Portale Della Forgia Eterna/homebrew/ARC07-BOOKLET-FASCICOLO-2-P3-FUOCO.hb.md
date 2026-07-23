@@ -4,6 +4,10 @@
      Master: PortaleForgia-P3-PianoFuoco-PARTE1.md / -PARTE2.md ·
      Ricalibrazioni: RicalibrazioneScontriPianoDelFuoco.md ·
                      La_Piramide_Ricalibrata.md (finale, boss Avatar CR 14).
+     NOTA (post-consolidamento 2026-07-23): il Piano del Fuoco PRECEDE il
+     perimetro del consolidamento (che parte dal Piano della Terra) — questi
+     master restano VIVI ai loro file, NON in _ARCHIVIO. I 5 master DEF e
+     l'ordine di gioco sono in ARC07-00-INDICE.md.
      MATERIALE DM — non per i giocatori. -->
 
 {{frontCover}}

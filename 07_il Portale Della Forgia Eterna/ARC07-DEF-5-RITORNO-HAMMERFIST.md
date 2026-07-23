@@ -308,7 +308,7 @@ Hammerfist): continua in `08_.../ARC08-11-PONTE-ARRIVO.md` e nella Guida DM.
 ## §8 — AVANZAMENTO (premio di completamento arco + ricchezza in uscita)
 
 ### A. Budget PX
-| Voce | PX/PG `[verifica ERRATA]` |
+| Voce | PX/PG `[verif. ✓ ERRATA/TESORO-WBL 2026-07-23]` |
 |---|---|
 | Ritorno + Manifestazione (chiusura d'arco, premio maggiore) | 1.000 |
 | Pulizia della caverna (opzionale) | 300 |
@@ -336,7 +336,7 @@ Hammerfist): continua in `08_.../ARC08-11-PONTE-ARRIVO.md` e nella Guida DM.
 | Corredo recuperato di Hella (master #3) | consolidato | ~15.600 mo |
 
 > Il **delta di WBL ordinario si colma a Hammerfist** (ARC-08 B4): armeria nanica,
-> gratitudine di Re Thorek, bottino dell'orda. Nessun doppio conteggio. `[verifica ERRATA]`
+> gratitudine di Re Thorek, bottino dell'orda. Nessun doppio conteggio. `[verif. ✓ ERRATA/TESORO-WBL 2026-07-23]`
 > sui totali ordinari; gli artefatti sono fuori-WBL per canone (D8).
 
 ---

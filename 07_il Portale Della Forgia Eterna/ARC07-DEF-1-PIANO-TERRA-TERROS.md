@@ -585,8 +585,7 @@ Scavare 6 m · Percezione tremorica 18 m · onnidirezionale · TS Temp +8, Rifl
 > con 5+; la Raffica di Tordek aggira la RD 5/contundente. Scontro atteso 4-5
 > round, Artemis a ~2/3 pf in uscita.*
 
-**XP**: ~4.800 (Fauci di Diamante CR 11 + 2 Xorn CR 6) `[verifica ERRATA per
-APL 12]`. **Loot** (se uccisi): vene di **mithral grezzo** (~2.000 mo, se non
+**XP**: ~4.800 (Fauci di Diamante CR 11 + 2 Xorn CR 6) `verif. ✓ ERRATA/TESORO-WBL 2026-07-23`. **Loot** (se uccisi): vene di **mithral grezzo** (~2.000 mo, se non
 crollate col pilastro) + 2 geodi d'ametista (400 mo l'uno).
 
 ---
@@ -848,7 +847,7 @@ Al risveglio i guanti sono striati d'argento e smeraldo; unisci i pugni —
 Frana** (atterra i giganti); **Tremore del Forgiatore**; + i poteri Fuoco già
 attivi. *(Scheda piena:
 `PG/Artefatti/Artefatti-Pg/Tordek/05_Bracieri_Gemelli_Scheda_PG_Completa.md`.)*
-**XP Sentinella**: ~2.400 (CR ~11) `[verifica ERRATA]`. **Loot**: residuo del
+**XP Sentinella**: ~2.400 (CR ~11) `[verif. ✓ ERRATA/TESORO-WBL 2026-07-23]`. **Loot**: residuo del
 golem (~5.000 mo di frammenti di mithral).
 
 ---
@@ -1115,7 +1114,7 @@ R4+: alterna Earth Glide mordi-e-fuggi, Onda e Scudo. Sotto il
 | **Vogliono riposare dentro il Tempio prima del boss** | Possibile (l'Anticamera post-Sentinella è sicura), MA il countdown di Hammerfist scorre: mostra l'orologio (§0). Ogni riposo qui è ore rubate alla montagna che brucia. |
 | **I PG CADONO (sconfitta contro Terros)** | Niente TPK gratuito: il voto di Terros è **custodire**, non massacrare. I caduti vengono **espulsi** — la gravità del Nodo li sputa fuori e si risvegliano sulla riva dell'Oceano di Roccia, interi ma **segnati**: 1 livello di affaticamento che nessun riposo qui rimuove, e il countdown di Hammerfist è sceso di **−12 ore**. Nella Sala, l'affresco A5 mostra ora un **pannello velato** (la Forgia registra anche le sconfitte). Possono ritentare: Terros li aspetta, guarito. *La sconfitta costa tempo e orgoglio, non la campagna.* |
 
-**Durata attesa 4–6 round. XP** ~5.400/PG (CR 15, 3 PG) `[verifica ERRATA]`.
+**Durata attesa 4–6 round. XP** ~5.400/PG (CR 15, 3 PG) `[verif. ✓ ERRATA/TESORO-WBL 2026-07-23]`.
 **Loot**: **Geode Titanico** (5.000 mo, cristalli d'adamantio) + **Cuore di
 Terros** (oggetto meraviglioso: componente da **20.000 mo**, o base per un
 *Amuleto di Armatura Naturale +5*) — l'occhio di Artemis ci si posa subito.
@@ -1298,12 +1297,13 @@ futuro). *Lista completa degli 8 affreschi e del gancio → master #2.*
 > numeri, non uno: i **PX** guadagnati, il **tesoro ordinario** (conta verso il
 > WBL) e la **ricchezza speciale/artefatti** (conta verso il *potere* effettivo,
 > anche se non verso il WBL). Il precedente accounting a fasi era andato perso:
-> qui è ripristinato. Cifre PX dall'`ERRATA-ARC07-35-Verification.md` (APL 12/D15),
-> flag `[verifica ERRATA]` dove non attestate.
+> qui è ripristinato. Cifre PX dall'`ERRATA-ARC07-35-Verification.md` (APL 12/D15) e
+> `ARC07-TESORO-WBL-AUDIT.md`; **cross-check completato 2026-07-23** (i tag
+> `[verif. ✓ …]` sono stati riscontrati, nessuna divergenza residua).
 
 ### A. Budget PX del modulo, sezione per sezione (party 3 PG, APL eff. 12 · PG di 13°)
 
-| § | Incontro / prova | GS / tipo | PX/PG `[verifica ERRATA]` |
+| § | Incontro / prova | GS / tipo | PX/PG `[verif. ✓ ERRATA/TESORO-WBL 2026-07-23]` |
 |---|---|---|---|
 | §4 | Ambiente dinamico superato (polvere, stalattiti, fenditure — se attraversato senza scorciatoie) | premio di storia | 300 |
 | §5 | Xorn: «Fauci di Diamante» (CR 11) + 2 Xorn (CR 6) — **qualunque via** (combattuta, demolita o negoziata) | EL ~13 | 1.700 |
@@ -1362,7 +1362,8 @@ futuro). *Lista completa degli 8 affreschi e del gancio → master #2.*
 | **Artemis** | **Ring of Chaotic Illumination** (Reforged) | **163.400 mo** (unico) | invariato; +eventuale **Frammento di Mercato** se prende il Seme (§6-bis) |
 | **Hella** | (Collana/Durik prendono forma, ma **si legano a lei solo al #3**) | — | Durik "abbozzato"; Collana germoglia alla resurrezione |
 
-> **Verdetto del beat (per il DM).** PX ~9.600/PG (verso il 14° a Hammerfist);
+> **Verdetto del beat (per il DM).** PX **~11.600/PG** (percorso completo; ~10.300
+> se i Cristalli sono saltati — vedi §11-bis A) verso il 14° a Hammerfist;
 > WBL ordinario **sotto** i 110.000 mo/PG (l'arco è povero di loot ordinario,
 > ricchissimo di artefatti — il delta si colma a Hammerfist, ARC-08 B4); potere
 > effettivo **molto alto** grazie agli artefatti unici (è il motivo per cui gli

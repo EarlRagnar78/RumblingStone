@@ -66,8 +66,8 @@ attraversato il suo spirito (§8). Poi il party è di **4**, pronto per il #4.
 
 **Chi c'è.** Thorik, Tordek, Artemis (officianti); **Therysol** (veglia, testimone);
 **Moradin** (divino, manifesto per 3 secondi allo Step 6); **Hella** (morta →
-viva); e — al momento del richiamo — **la Custode delle Radici** (§6,
-`[INFERRED — DM]`).
+viva); e — al momento del richiamo — **la Custode delle Radici** (§6, CANONE
+DM 2026-07-23; il ramo A/B/C si gioca).
 
 **Cosa stampare.** La **Quick-Reference §0-bis** (rito + sacrifici); gli
 **handout §12** (la preghiera nanica, la scheda Collana da consegnare); la
@@ -564,7 +564,7 @@ cerchio del lutto si chiude.
 ### A. Budget PX del beat (party 3→4 PG, APL eff. 12-13 · PG di 13°)
 > Beat **hub** rituale: PX di storia, sacrificio e roleplay.
 
-| Scena | Tipo | PX/PG `[verifica ERRATA]` |
+| Scena | Tipo | PX/PG `[verif. ✓ ERRATA/TESORO-WBL 2026-07-23]` |
 |---|---|---|
 | Il rito corale completato (Step 1-6) | rito corale | 800 |
 | La scelta-costo di ogni PG (§5, qualunque strada) | roleplay/sacrificio | 400 |

@@ -4,6 +4,11 @@
      Master: PortaleForgia-P1-REVISED-Corretta.md ·
              PortaleForgia-P2-REVISED-Corretta-PARTE1/2.md ·
              ARC07-00-INDICE.md (quickstart e ordine D2).
+     NOTA (post-consolidamento 2026-07-23): P1/P2 (PRIMA visita: Stanza Corona
+     + primo arrivo alla Forgia) PRECEDONO il perimetro del consolidamento —
+     master VIVI, NON in _ARCHIVIO. Il RITORNO alla Sala + gli 8 affreschi come
+     Cronaca Vivente sono un beat diverso (master ARC07-DEF-2): coperto nel
+     Fascicolo IV, Capitolo 0 (stessa Sala del rito di resurrezione).
      Incolla su Homebrewery (locale: python3 scripts/dm.py hype docker →
      http://localhost:8000 → New brew). MATERIALE DM — non per i giocatori. -->
 

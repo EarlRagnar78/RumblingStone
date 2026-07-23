@@ -38,11 +38,11 @@
 | **T-5** | Anticamera della Magnetite: la Sentinella | DEF-1 §7b | tattica combat | ✅ |
 | **T-6** | Camera dell'Altare: **TERROS L'ANTICO** | DEF-1 §8 | tattica BOSS | ✅ |
 | **S-1** | Sala della Forgia Eterna (8 affreschi) | DEF-2 | hub/scenica | ✅ |
-| **S-2** | Stanza della Corona (purificata) | DEF-2 | hub/scenica | ✅ |
+| **S-2** | Stanza della Corona (purificata) | **geometria canonica ARC-06**: `06_.../CoronaDiAdamantio/Tactics_and_maps.md` + stato DEF-2 | hub/scenica | ✅ |
 | **R-1** | Il Cerchio del Rito (resurrezione) | DEF-3 | rituale/scenica | ✅ |
 | **M7-A** | Hammerfist ≈372 DR (fortezza & orda) | DEF-4 | strategica | ✅ |
 | **M7-B** | L'Arena del Duello: **SKULLCRUSHER** | DEF-4 | tattica BOSS | ✅ |
-| **CM-1** | Il Cuore della Montagna (1372, arrivo) | DEF-5 | scenica/transizione | ✅ |
+| **CM-1** | Il Cuore della Montagna (1372, arrivo) | **geometria canonica ARC-08**: Atlante-Hammerfist **MAPPA 5** (⚠️ scala 3 m) + regia DEF-5 | scenica/climax 3B | ✅ |
 
 > Rese SVG storiche (ancora valide, stanze «prima visita»): `Portale-Forgia-L1`
 > (Stanza Corona/Belkram, Sala Forgia), `Portale-Forgia-L2` (colonna-K, Forgia
@@ -346,42 +346,62 @@ LEGENDA · A1-A8 affreschi 8×5 m (vetro indistruttibile) · 🔲 colonne sacre
   Cronaca, no stacking).
 - **Riferimento**: DEF-2 (Cronaca Vivente); resurrezione = R-1/DEF-3.
 
-## MAPPA S-2 — LA STANZA DELLA CORONA (santuario in purificazione)
+## MAPPA S-2 — LA STANZA DELLA CORONA DI ADAMANTIO (santuario in purificazione)
+
+> **Geometria CANONICA** (invariata dall'incontro giocato di ARC-06):
+> `06_Stanza-corona-di-adamantio/CoronaDiAdamantio/Tactics_and_maps.md` — stessi
+> posizionamenti di trono, muro, colonne, statue, alcove, macerie e ingresso.
+> Qui è mostrata nello **stato ARC-07** (santuario in purificazione, DEF-2).
 
 ```
 ════════════════════════════════════════════════════════════════════════
- STANZA DELLA CORONA — 30 m × 20 m (20 col × 13 righe · 1,5 m)
- Ora SANTUARIO SICURO (Consacrare) · luogo della morte di Hella (ARC-06)
+ STANZA DELLA CORONA — 15 m × 19,5 m (10 col × 13 righe · 1,5 m/quadretto)
+ NORD in alto (trono/muro) · ingresso a SUD (righe basse) · ora SANTUARIO
 ════════════════════════════════════════════════════════════════════════
-COL →   A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R  S  T
-01     🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🚪 🚪 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱
-02     🧱 🟦 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬜ ⬜ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟦 🧱
-03     🧱 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬜ ⬜ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🧱
-04     🧱 🟫 🟫 🟫 ✨ ✨ 🟫 🟫 🟫 ⬜ ⬜ 🟫 🟫 🟫 ✨ ✨ 🟫 🟫 🟫 🧱
-05     🧱 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ ⬛ ⬛ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🧱
-06     🧱 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ 👑 👑 ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🧱
-07     🧱 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ ⬛ ⬛ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🧱
-08     🧱 🟫 🟫 🟫 🟫 🟫 🟫 🟫 📜 📜 📜 📜 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🧱
-09     🧱 🟦 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬜ ⬜ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟦 🧱
-10     🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱
+COL →   A  B  C  D  E  F  G  H  I  J
+13     ⬛ 🕳️ 🗿 📜 🌀 📜 🗿 🕳️ ⬛ ⬛   NORD · 📜 muro→PARETE della CRONACA · 🌀 portale drow SIGILLATO (dietro)
+12     🔲 ⬛ 🔲 ⬛ 👑 👑 ⬛ 🔲 ⬛ 🖼️   👑 TRONO (E-F12, VUOTO: la Corona è di Thorik) · 🖼️ Dipinti Invisibili
+11     🔲 ⬛ 🔲 ⬛ ✝️ ⬛ ⬛ 🔲 🪨 🖼️   ✝️ E11 = dove sedeva Belkram (ARC-06) · 🪨 macerie
+10     🔲 ⬛ 🔲 ⬛ ⬛ ⬛ ⬛ 🔲 ⬛ ⬛   B10 = ex nascondiglio Yochlol 2
+09     ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛   H09 = ex nascondiglio Yochlol 1
+08     🕳️ ⬛ 🔲 ⬛ ⬛ ⬛ 🔲 ⬛ 🕳️ ⬛
+07     ⬛ 🪨 ⬛ ⬛ ⬛ ⬛ ⬛ 🪨 ⬛ ⬛   🪨 macerie (terreno difficile ×2)
+06     🗿 ⬛ 🔲 ⬛ ⬛ ⬛ 🔲 ⬛ 🗿 ⬛
+05     ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
+04     ⬛ ⬛ 🔲 ⬛ ⬛ ⬛ 🔲 ⬛ ⬛ ⬛
+03     ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
+02     ⬛ ⬛ ⬛ 🚪 🚪 🚪 ⬛ ⬛ ⬛ ⬛   🚪 INGRESSO (D-F02, sud · collegamento P1 ↔ Sala della Forgia)
+01     ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛   SUD
 ════════════════════════════════════════════════════════════════════════
-LEGENDA · 🧱 muri · 🟫 pavimento (ora pulito) · 🟦 pilastri mithral (angoli) ·
-⬛ dais del trono (+1,5 m) · 👑 trono VUOTO (Corona è di Thorik) · 📜 parete
-della Cronaca (rune Fuoco+Terra; «La Seconda Gemma»; sagoma-druida che si
-«riempie») · ✨ muschi/ragnatele drow che SECCANO (il Portale purifica) ·
-🚪 P1 → Sala.
+LEGENDA · ⬛ pavimento (ora pulito) · 🔲 colonne parallele (copertura +4 CA,
+spezzano la linea di vista) · 🗿 statue di Moradin (deturpate in ARC-06 → in
+restauro) · 🕳️ alcove · 🪨 macerie (terreno difficile) · 📜 muro dietro il
+trono = ora PARETE della CRONACA (incisioni-specchio, DEF-2 §6) · 🌀 portale
+drow SIGILLATO (dietro il muro; inerte dalla caduta di Urialle) · 👑 trono
+vuoto · 🖼️ Dipinti Invisibili (J11-J12, come in ARC-06) · ✝️ postazione di
+Belkram (ARC-06) · 🚪 ingresso sud.
 ```
-- **Tipo / scala**: hub scenico specchio (30×20). Ora **santuario sicuro**.
-- **Terreno & altitudini**: **dais del trono +1,5 m** (elevazione: +1 CA / +2
-  attacco per chi vi sta); pilastri di mithral agli angoli (copertura). Il luogo
-  della morte di Hella (ARC-06), ora in **purificazione** (i muschi drow ✨ seccano).
-- **Posizioni notevoli**: trono **VUOTO** (la Corona è di Thorik); **parete della
-  Cronaca** 📜 dietro il trono (incisioni-specchio che riflettono le scelte, §6);
-  **reliquia nascosta** sotto il dais (Osservare CD 22, §10).
-- **Ambiente dinamico**: la parete incide «La Seconda Gemma»; la **sagoma-druida**
-  (Hella) si «riempie» man mano; chi posa la mano sull'incisione e ne dice il
-  nome sente la **pietra CALDA** (§6).
-- **Riferimento**: DEF-2 §6/§10.
+- **Tipo / scala**: hub scenico specchio, 10×13 (15×19,5 m), 1,5 m/quadretto.
+  Ora **santuario sicuro** (Consacrare) — il *desecrate* di ARC-06 è dissolto.
+- **Terreno & luce**: pavimento pulito; macerie 🪨 (B07/H07/I11) = terreno
+  difficile; colonne 🔲 e statue 🗿 = copertura +4. La luce viola-verde delle
+  torce drow è **sostituita** dalla luce calda del Portale: illuminazione
+  normale (niente miss chance).
+- **Posizioni notevoli (INVARIATE da ARC-06)**: trono **E-F12**; muro dietro il
+  trono **D-F13** (durezza 8, 360 pf/3 m, Spezzare CD 35) → ora vi si incide la
+  **Cronaca** («La Seconda Gemma», la sagoma-druida che si riempie, DEF-2 §6);
+  **portale drow E13** dietro il muro, **sigillato e inerte**; Dipinti
+  Invisibili **J11-J12**; ingresso **D-F02** (sud). Reliquia nascosta sotto il
+  trono (Osservare CD 22, DEF-2 §10).
+- **Memoria del luogo (regia)**: qui sedeva Belkram (✝️ E11) col worg, qui
+  cadde **Hella** (ARC-06). I muschi e le ragnatele drow **seccano** sulle
+  macerie e nelle alcove (la purificazione avanza a vista, sessione dopo
+  sessione). Chi posa la mano sull'incisione della druida e ne dice il nome
+  sente la **pietra CALDA** (DEF-2 §6).
+- **Evoluzione**: ogni beat dell'arco aggiunge una riga alla Parete della
+  Cronaca (specchio della Sala S-1). A resurrezione avvenuta, la sagoma-druida
+  è **piena**.
+- **Riferimento**: geometria = `06_.../Tactics_and_maps.md`; stato = DEF-2 §6/§10.
 
 ---
 
@@ -534,51 +554,116 @@ LEGENDA · ☁️ zona aerea (serve volo o gittata) · 🐉 Skullcrusher (quota)
 
 # DEF-5 · IL RITORNO A HAMMERFIST (1372)
 
-## MAPPA CM-1 — IL CUORE DELLA MONTAGNA (arrivo & apparizione · scenica)
+## MAPPA CM-1 — IL CUORE DELLA MONTAGNA (arrivo & apparizione · Incontro 3B)
+
+> **Geometria CANONICA** (invariata): `08_.../Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md`
+> **MAPPA 5** (master vivo; il Lotto-3-FINALE è la generazione storica dello
+> stesso contenuto). Caverna-cattedrale **100 m × 80 m × 40 m** di altezza.
+> ⚠️ **Scala 3 m/quadretto** [deviazione A4 dalla convenzione 1,5 m: griglia
+> originale disegnata così; NON ridisegnata per non alterare posizioni/portate
+> già usate nel testo. Non mischiare quadretti di mappe a scale diverse.]
 
 ```
-════════════════════════════════════════════════════════════════════════
- IL CUORE DELLA MONTAGNA — caverna sacra ~30 m × 15 m (20 col × 10 righe)
- Giorno 3 dell'assedio (1372) · zona SACRA (Consacrazione: +1 TS vs paura)
-════════════════════════════════════════════════════════════════════════
-COL →   A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R  S  T
-01     🪨 🪨 🪨 🪨 🪨 🚪 🚪 🚪 🚪 🚪 🚪 🚪 🚪 🚪 🚪 🪨 🪨 🪨 🪨 🪨
-02     🪨 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🪨
-03     🪨 🟫 🗿 🟫 🟫 🔴 🔴 🟫 🟫 🟫 🟫 🔴 🔴 🟫 🟫 🗿 🟫 🟫 🟫 🪨
-04     🪨 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🛡️ 🥋 🔮 🌙 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🪨
-05     🪨 🟫 🗿 🟫 🟫 🟫 🟫 🟡 🟡 🟡 🟡 🟡 🟡 🟫 🟫 🗿 🟫 🟫 🟫 🪨
-06     🪨 🟫 🟫 🟫 🟫 🟫 🟫 🟡 ⚰️ 👑 🩺 🟡 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🪨
-07     🪨 🟫 🗿 🟫 🟫 🟫 🟫 🟡 🟡 🟡 🟡 🟡 🟫 🟫 🟫 🗿 🟫 🟫 🟫 🪨
-08     🪨 🟫 🟫 🟫 🛡️ 🛡️ 🛡️ 🛡️ 🛡️ 🛡️ 🛡️ 🛡️ 🛡️ 🛡️ 🛡️ 🟫 🟫 🟫 🪨
-09     🪨 🟫 🗿 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🗿 🟫 🟫 🟫 🪨
-10     🪨 🚪 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🚪 🪨
-════════════════════════════════════════════════════════════════════════
-LEGENDA · 🪨 pareti · 🟫 pavimento sacro · 🗿 statue dei re (occhi di rubino:
-si accendono all'Apparizione; copertura +4) · 🟡 altare di Moradin (i PG
-appaiono QUI, riga 04-05) · 👑 Re Thorek morente (8 pf) · 🩺 Madre Dana ·
-⚰️ nani caduti · 🛡️ 90 nani (semicerchio, riga 08) · 🔴 orchi (sfondano da
-nord) · 🚪 nord = porte di mithral (cedute); ovest = portale di Dana → ARC-08.
+════════════════════════════════════════════════════════════════════════════════
+ IL CUORE DELLA MONTAGNA — caverna sacra 100 m × 80 m (33 col × 27 righe · 3 m)
+ Soffitto 40 m (stalattiti bioluminescenti) · Giorno 3 dell'assedio (1372)
+════════════════════════════════════════════════════════════════════════════════
+COL →  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g
+01    🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🚪🚪🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨  ← 🚪 PORTA DI MITHRAL 6×6 m (P-Q01, unico ingresso)
+02    🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔴🔴🔴🔴⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨  ← 🔴 ondata nemica in corso (entra dalla porta)
+03    🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔴🔴⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨
+04    🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵🔵🔵🔵🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨  ┐
+05    🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵🔵🔵⬛⬛⬛⬛⬛🔵🔵🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨  │
+06    🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨  │
+07    🪨⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛🗿⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛🪨  │ 🔵 CERCHIO DIFENSIVO
+08    🪨⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛🪨  │ dei 90 NANI
+09    🪨⬛⬛⬛⬛⬛⬛🔵🔵⬛⬛⬛🗿⬛⬛⬛⬛⬛⬛⬛🗿⬛⬛⬛🔵🔵⬛⬛⬛⬛⬛⬛🪨  │ (anello a 30 m
+10    🪨⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛🪨  │  dall'altare;
+11    🪨⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛🪨  │  3 file: 60 guerrieri
+12    🪨⬛⬛⬛⬛⬛🔵⬛⬛⬛🗿⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🗿⬛⬛⬛🔵⬛⬛⬛⬛⬛🪨  │  + 20 balestrieri
+13    🪨🟨🟨🔺⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛⭐✨⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛🔺🟨🟨⬛🪨  │  + 10 capi al centro)
+14    🪨⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛⚫⭐⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛🪨  │
+15    🪨🔺⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛🔺⬛🪨  │ ⭐ ALTARE DI MORADIN
+16    🪨⬛⬛⬛⬛⬛🔵⬛⬛⬛🗿⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🗿⬛⬛⬛🔵⬛⬛⬛⬛⬛🪨  │ (P-Q 13-14 · Ø 6 m,
+17    🪨⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛🪨  │  +3 m, basalto+rune oro)
+18    🪨⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛🪨  │ ⚫ RE THOREK (8 pf)
+19    🪨⬛⬛⬛⬛⬛⬛🔵🔵⬛⬛⬛🗿⬛⬛⬛⬛⬛⬛⬛🗿⬛⬛⬛🔵🔵⬛⬛⬛⬛⬛⬛🪨  │ ✨ SFERA DORATA (R8!)
+20    🪨⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛🪨  │
+21    🪨⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛🗿⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛🪨  │
+22    🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨  │
+23    🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵🔵🔵⬛⬛⬛⬛⬛🔵🔵🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨  │
+24    🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵🔵🔵🔵🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨  ┘
+25    🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨
+26    🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨
+27    🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨
+════════════════════════════════════════════════════════════════════════════════
+LEGENDA · ⬛ pavimento di caverna · 🪨 pareti · 🚪 porta di mithral 6×6 m (P-Q01,
+nord — unico ingresso; ward difensivi collassati) · 🗿 10 STATUE dei Re
+Ancestrali (cerchio a 20 m dall'altare, alte 4 m, occhi di rubino — copertura) ·
+🔵 90 nani (anello a 30 m) · ⭐⚫✨ altare +3 m con Re Thorek e sfera ·
+🟨 piattaforme laterali Est/Ovest (+1,5 m, 6×3 m — tiratori) · 🔺 stalagmiti
+(copertura parziale) · 🔴 ondata nemica. Soffitto 40 m: stalattiti di cristallo
+BIOLUMINESCENTI (luce piena ovunque, niente *darkness*).
 ```
-- **Tipo / scala**: scenica/transizione (chiusura d'arco), caverna ~30×15 m. La
-  **battaglia vera è l'ARC-08**: qui è l'arrivo + la Manifestazione + una pulizia
-  opzionale.
-- **Terreno & altitudini**: **altare di Moradin** centrale rialzato (🟡, i PG si
-  materializzano qui); **10 statue dei re** 🗿 (copertura +4; occhi di rubino che si
-  accendono all'Apparizione); **porte di mithral a nord** (cedute → orchi); **tunnel
-  ovest** = via di fuga / **portale di Dana** → ARC-08. **Zona sacra** (Consacrazione:
-  +1 TS vs paura per i difensori).
-- **Posizioni**: i 4 PG appaiono sull'altare (riga 04); **Re Thorek** morente 👑 +
-  **Madre Dana** 🩺 ai piedi dell'altare (riga 06); **90 nani** 🛡️ in semicerchio
-  (riga 08) davanti alle porte; **~30 orchi** 🔴 sfondano da nord (righe 02-03).
-- **Effetti dell'Apparizione (automatici, §4)**: +6 morale ai 90 nani (annulla il
-  −4), Re Thorek stabilizzato, ~⅔ degli orchi in **panico** (Volontà CD 25 vs Aura
-  Corona+Cuore o scossi 1d6 round).
-- **Tattiche/pulizia (opzionale, doppia modalità)**: [FAST-PLAY] 2 round di
-  massacro; [COMBATTIMENTO COMPLETO] 2-3 round di gloria (orchi CR 1/2 in panico,
-  −2) per far provare la nuova potenza. Poi handoff: Dana apre il portale a ovest.
-- **Evoluzione**: → **ARC-08** (`08_.../ARC08-11-PONTE-ARRIVO.md`). NON si duplica
-  la battaglia.
-- **Riferimento**: DEF-5 §4-§5, §9.
+
+### ⏫ EVENTO CLIMAX — L'APPARIZIONE (la sfera dorata)
+
+```
+                    [SOFFITTO 40 m]
+                    🌟🌟🌟🌟🌟🌟🌟🌟   stalattiti bioluminescenti
+                           │  (round 6-7: la sfera si forma e SCENDE lenta)
+                           ▼
+                      ✨✨✨✨✨
+                    ✨  SFERA   ✨
+                   ✨   DORATA   ✨   ← Ø 3 m · TRICOLORE
+                    ✨ oro·verde ✨      (Topazio+Smeraldo+Rubino)
+                      ✨·rosso✨
+                           │
+                           ▼  ROUND 8: ESPLOSIONE DI LUCE (non violenta)
+                      💥💥💥💥💥
+                           │
+                           ▼
+                      ⭐ ALTARE ⭐  (+3 m)
+                         ⚫ Re Thorek (8 pf → occhi che si aprono)
+              [4 SILHOUETTE EMERGONO]
+         🛡️ Thorik   🥋 Tordek   🔮 Artemis   🌙 Hella
+              💫 I RUMBLING STONES SONO ARRIVATI 💫
+```
+
+- **Tipo / scala**: santuario + epic reveal (Incontro **3B**, il CLIMAX della
+  Sessione 3 dell'ARC-08 — lato ARC-07 = DEF-5 §3-§4). **3 m/quadretto**.
+- **Terreno & altitudini**: altare **+3 m** (P-Q 13-14, basalto nero, rune
+  d'oro); piattaforme laterali **+1,5 m** (B-C13 ovest, c-d13 est — posizioni
+  sopraelevate per tiratori, stalagmiti 🔺 = copertura parziale); soffitto
+  **40 m** — le stalattiti possono **crollare** su effetti ad area potenti
+  (Terremoto ecc.): 4d6 contundenti, raggio 3 m, **Riflessi CD 18** annulla.
+- **Posizioni**: **90 nani** in anello a 30 m (fila esterna 60 guerrieri con
+  scudi, mediana 20 balestrieri, interna 10 capi + **Re Thorek** ⚫ sull'altare,
+  critico a 8 pf, stabilizzato, cosciente ma incapace di combattere); **10
+  statue** 🗿 sul cerchio a 20 m (Q07·U09·W12·W16·U19·Q21·M19·K16·K12·M09);
+  nemici dalla **porta nord** P-Q01.
+- **Le ondate (Incontro 3B — se giocato per intero, lato ARC-08)**:
+  | Round | Ondata | Note tattiche |
+  |---|---|---|
+  | 1-2 | **30 Orchi berserker** | carica sconsiderata porta→altare |
+  | 3-5 | **20 Hobgoblin sergenti** | muro di scudi, **immuni a paura**, tengono impegnati i nani |
+  | 6-8 | **15 Bugbear assassini** | Nascondersi +12, puntano i capi e Re Thorek — **interrotti dall'Apparizione** |
+  | 9-10 | **Grimjaw + 10 Orog** (se vivo) | vede il ribaltone: ritirata strategica O sfida personale a Thorik; se già morto → capitano minore, auto-ritirata |
+- **⏱️ Timing dell'Apparizione (due regie valide)**: giocando il **3B completo**
+  (lato ARC-08, coi PNG giocabili Borin/Dara/Thorin/Nala) i PG appaiono al
+  **Round 8**, nel mezzo dell'ondata 3; giocando **solo il lato ARC-07**
+  (DEF-5 §4, arrivo compresso) appaiono nell'istante in cui le porte cedono.
+  Stessa scena, stesso altare: cambia solo quanto assedio si gioca prima.
+- **Effetti immediati dell'Apparizione**: nani **+6 morale** (da −4 a +2),
+  guariscono **2d8 pf**, **immuni a paura 1 h**; nemici **Volontà CD 25** o
+  scossi 1d6 round (la maggioranza fallisce; ~⅔ della prima ondata in panico);
+  Re Thorek apre gli occhi (riconosce Thorik: la Corona risuona); gli **occhi di
+  rubino delle 10 statue si ACCENDONO** (benedizione ancestrale); i PG hanno un
+  **round di sorpresa**.
+- **Transizione**: da PNG giocabili → veri PG. Poi pulizia (DEF-5 §5, doppia
+  modalità) → portale di Dana → bastioni (ARC-08, `ARC08-11-PONTE-ARRIVO.md`).
+- **Riferimento**: geometria/ondate = Atlante-08 **MAPPA 5**; regia lato ARC-07
+  = DEF-5 §3-§5; cucitura = ARC08-11.
 
 ---
 

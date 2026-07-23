@@ -1440,4 +1440,17 @@ entries — they become campaign history.
             (resa SVG = task futuro PIANO-RENDER-MAPPE-FEDELTÀ). Referenziato da
             INDICE, dai 5 master DEF (sezione MAPPE) e dai booklet. Corretti 2
             errori in CM-1 (header 24→15 m / 16→10 righe; typo 🟟→🟡).
+2026-07-23c **S-2 e CM-1 riallineate alle geometrie CANONICHE** (decisione DM).
+            S-2 Stanza della Corona: griglia rifatta sulla mappa giocata ARC-06
+            (`06_.../CoronaDiAdamantio/Tactics_and_maps.md`) — posizionamenti
+            INVARIATI (trono E-F12, muro/Cronaca D-F13, portale drow sigillato
+            E13, colonne/statue/alcove/macerie, Dipinti Invisibili J11-12,
+            ingresso sud D-F02); eliminato il dais inventato; stato ARC-07
+            (purificazione) come overlay. CM-1 Cuore della Montagna: griglia
+            rifatta sulla MAPPA 5 dell'Atlante-08 (caverna 100×80×40 m, scala
+            3 m/quadretto con nota A4, altare +3 m Ø6 m, 10 statue a 20 m, 90
+            nani a 30 m, porta mithral 6 m nord, piattaforme ±1,5 m, stalattiti
+            4d6/Rifl 18) + ondate 1-4 del 3B + doppio timing dell'Apparizione
+            (Round 8 nel 3B completo / porte-che-cedono nel lato ARC-07).
+            Aggiornati atlante + DEF-2 + DEF-5 (griglie identiche).
 ```

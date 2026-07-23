@@ -635,30 +635,59 @@ A8 60% · A7 ⏳~3g18h. La Sala HA REGISTRATO la vittoria: mostralo.
 ════════════════════════════════════════════════════════════════════════
 ```
 
-### MAPPA S-2 — LA STANZA DELLA CORONA (santuario in purificazione)
+### MAPPA S-2 — LA STANZA DELLA CORONA DI ADAMANTIO (santuario in purificazione)
+
+> **Geometria CANONICA** (invariata dall'incontro giocato di ARC-06):
+> `06_Stanza-corona-di-adamantio/CoronaDiAdamantio/Tactics_and_maps.md` — stessi
+> posizionamenti di trono, muro, colonne, statue, alcove, macerie e ingresso.
+> Qui è mostrata nello **stato ARC-07** (santuario in purificazione, DEF-2).
 
 ```
 ════════════════════════════════════════════════════════════════════════
- STANZA DELLA CORONA — 30 m × 20 m (20 col × 13 righe · 1,5 m)
- Ora SANTUARIO SICURO (Consacrare) · luogo della morte di Hella (ARC-06)
+ STANZA DELLA CORONA — 15 m × 19,5 m (10 col × 13 righe · 1,5 m/quadretto)
+ NORD in alto (trono/muro) · ingresso a SUD (righe basse) · ora SANTUARIO
 ════════════════════════════════════════════════════════════════════════
-COL →   A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R  S  T
-01     🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🚪 🚪 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱   🚪 P1 → Sala (arco: RUNE Fuoco+Terra accese)
-02     🧱 🟦 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬜ ⬜ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟦 🧱   🟦 pilastri di mithral (angoli)
-03     🧱 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬜ ⬜ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🧱
-04     🧱 🟫 🟫 🟫 ✨ ✨ 🟫 🟫 🟫 ⬜ ⬜ 🟫 🟫 🟫 ✨ ✨ 🟫 🟫 🟫 🧱   ✨ muschi drow che SECCANO (purificazione)
-05     🧱 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ ⬛ ⬛ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🧱   ⬛ dais del trono (+1,5 m)
-06     🧱 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ 👑 👑 ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🧱   👑 trono VUOTO (Corona è di Thorik)
-07     🧱 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬛ ⬛ ⬛ ⬛ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🧱      dietro il trono ↓
-08     🧱 🟫 🟫 🟫 🟫 🟫 🟫 🟫 📜 📜 📜 📜 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🧱   📜 PARETE della CRONACA (incisioni-specchio §6)
-09     🧱 🟦 🟫 🟫 🟫 🟫 🟫 🟫 🟫 ⬜ ⬜ 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟦 🧱      «La Seconda Gemma» + la druida meno-cava
-10     🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱
-────────────────────────────────────────────────────────────────────────
-LEGENDA · 🧱 muri · 🟫 pavimento (ora pulito) · 🟦 pilastri mithral ·
-⬛ dais +1,5 m · 👑 trono vuoto · 📜 parete della Cronaca (rune Fuoco arancio
-+ Terra verde; incisione «La Seconda Gemma»; sagoma-druida che si «riempie»)
-· ✨ muschi/ragnatele drow che seccano (la luce del Portale purifica) ·
-🚪 P1 → Sala. Reliquia nascosta sotto il dais (Osservare CD 22, §10). Chi posa
-la mano sull'incisione della druida e ne dice il nome: la pietra è CALDA (§6).
+COL →   A  B  C  D  E  F  G  H  I  J
+13     ⬛ 🕳️ 🗿 📜 🌀 📜 🗿 🕳️ ⬛ ⬛   NORD · 📜 muro→PARETE della CRONACA · 🌀 portale drow SIGILLATO (dietro)
+12     🔲 ⬛ 🔲 ⬛ 👑 👑 ⬛ 🔲 ⬛ 🖼️   👑 TRONO (E-F12, VUOTO: la Corona è di Thorik) · 🖼️ Dipinti Invisibili
+11     🔲 ⬛ 🔲 ⬛ ✝️ ⬛ ⬛ 🔲 🪨 🖼️   ✝️ E11 = dove sedeva Belkram (ARC-06) · 🪨 macerie
+10     🔲 ⬛ 🔲 ⬛ ⬛ ⬛ ⬛ 🔲 ⬛ ⬛   B10 = ex nascondiglio Yochlol 2
+09     ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛   H09 = ex nascondiglio Yochlol 1
+08     🕳️ ⬛ 🔲 ⬛ ⬛ ⬛ 🔲 ⬛ 🕳️ ⬛
+07     ⬛ 🪨 ⬛ ⬛ ⬛ ⬛ ⬛ 🪨 ⬛ ⬛   🪨 macerie (terreno difficile ×2)
+06     🗿 ⬛ 🔲 ⬛ ⬛ ⬛ 🔲 ⬛ 🗿 ⬛
+05     ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
+04     ⬛ ⬛ 🔲 ⬛ ⬛ ⬛ 🔲 ⬛ ⬛ ⬛
+03     ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
+02     ⬛ ⬛ ⬛ 🚪 🚪 🚪 ⬛ ⬛ ⬛ ⬛   🚪 INGRESSO (D-F02, sud · collegamento P1 ↔ Sala della Forgia)
+01     ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛   SUD
 ════════════════════════════════════════════════════════════════════════
+LEGENDA · ⬛ pavimento (ora pulito) · 🔲 colonne parallele (copertura +4 CA,
+spezzano la linea di vista) · 🗿 statue di Moradin (deturpate in ARC-06 → in
+restauro) · 🕳️ alcove · 🪨 macerie (terreno difficile) · 📜 muro dietro il
+trono = ora PARETE della CRONACA (incisioni-specchio, DEF-2 §6) · 🌀 portale
+drow SIGILLATO (dietro il muro; inerte dalla caduta di Urialle) · 👑 trono
+vuoto · 🖼️ Dipinti Invisibili (J11-J12, come in ARC-06) · ✝️ postazione di
+Belkram (ARC-06) · 🚪 ingresso sud.
 ```
+- **Tipo / scala**: hub scenico specchio, 10×13 (15×19,5 m), 1,5 m/quadretto.
+  Ora **santuario sicuro** (Consacrare) — il *desecrate* di ARC-06 è dissolto.
+- **Terreno & luce**: pavimento pulito; macerie 🪨 (B07/H07/I11) = terreno
+  difficile; colonne 🔲 e statue 🗿 = copertura +4. La luce viola-verde delle
+  torce drow è **sostituita** dalla luce calda del Portale: illuminazione
+  normale (niente miss chance).
+- **Posizioni notevoli (INVARIATE da ARC-06)**: trono **E-F12**; muro dietro il
+  trono **D-F13** (durezza 8, 360 pf/3 m, Spezzare CD 35) → ora vi si incide la
+  **Cronaca** («La Seconda Gemma», la sagoma-druida che si riempie, DEF-2 §6);
+  **portale drow E13** dietro il muro, **sigillato e inerte**; Dipinti
+  Invisibili **J11-J12**; ingresso **D-F02** (sud). Reliquia nascosta sotto il
+  trono (Osservare CD 22, DEF-2 §10).
+- **Memoria del luogo (regia)**: qui sedeva Belkram (✝️ E11) col worg, qui
+  cadde **Hella** (ARC-06). I muschi e le ragnatele drow **seccano** sulle
+  macerie e nelle alcove (la purificazione avanza a vista, sessione dopo
+  sessione). Chi posa la mano sull'incisione della druida e ne dice il nome
+  sente la **pietra CALDA** (DEF-2 §6).
+- **Evoluzione**: ogni beat dell'arco aggiunge una riga alla Parete della
+  Cronaca (specchio della Sala S-1). A resurrezione avvenuta, la sagoma-druida
+  è **piena**.
+- **Riferimento**: geometria = `06_.../Tactics_and_maps.md`; stato = DEF-2 §6/§10.

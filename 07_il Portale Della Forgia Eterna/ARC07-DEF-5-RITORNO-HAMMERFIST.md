@@ -17,7 +17,8 @@
 > lato ARC-07 e vi **rimanda**.
 >
 > **Sistema: D&D 3.5 SRD** (max PF1e), MAI 5e. Italiano, **CD** non DC. Scala
-> mappe **1,5 m/quadretto**.
+> mappe **1,5 m/quadretto** (eccezione: CM-1 eredita la **scala 3 m** della
+> geometria canonica ARC-08 — vedi nota A4 sulla mappa).
 >
 > **Stato al tavolo**: si gioca **subito dopo** la vittoria del −1000 (master
 > #4). Chiude l'ARC-07 e apre l'**ARC-08** (Battaglia di Hammerfist).
@@ -42,7 +43,7 @@
 | §7 | **Echo Ledger — CHIUSURA D'ARCO** | tutti gli echi armati per ARC-08/09 |
 | §8 | **Avanzamento** | premio di completamento arco + ricchezza in uscita |
 | §9 | **Ponte** all'ARC-08 + **Handout & Asset** |
-| MAPPE | **CM-1 Il Cuore della Montagna** | ASCII ultra-clear 1,5 m |
+| MAPPE | **CM-1 Il Cuore della Montagna** | ASCII ultra-clear (geometria canonica ARC-08, ⚠️ scala 3 m/quadretto) |
 
 ---
 
@@ -383,30 +384,113 @@ master vi **rimanda**.
 > Definitivo**: `Mappe/ARC07-MAPPE-DEFINITIVO.md`. Le griglie qui sotto sono
 > identiche; là hanno gli add-on DM. **I booklet includono l'Atlante.**
 
-### MAPPA CM-1 — IL CUORE DELLA MONTAGNA (arrivo & apparizione)
+### MAPPA CM-1 — IL CUORE DELLA MONTAGNA (arrivo & apparizione · Incontro 3B)
+
+> **Geometria CANONICA** (invariata): `08_.../Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md`
+> **MAPPA 5** (master vivo; il Lotto-3-FINALE è la generazione storica dello
+> stesso contenuto). Caverna-cattedrale **100 m × 80 m × 40 m** di altezza.
+> ⚠️ **Scala 3 m/quadretto** [deviazione A4 dalla convenzione 1,5 m: griglia
+> originale disegnata così; NON ridisegnata per non alterare posizioni/portate
+> già usate nel testo. Non mischiare quadretti di mappe a scale diverse.]
 
 ```
-════════════════════════════════════════════════════════════════════════
- IL CUORE DELLA MONTAGNA — caverna sacra ~30 m × 15 m (20 col × 10 righe)
- Giorno 3 dell'assedio (1372) · zona SACRA (Consacrazione: +1 TS vs paura)
-════════════════════════════════════════════════════════════════════════
-COL →   A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R  S  T
-01     🪨 🪨 🪨 🪨 🪨 🚪 🚪 🚪 🚪 🚪 🚪 🚪 🚪 🚪 🚪 🪨 🪨 🪨 🪨 🪨   🚪 PORTE DI MITHRAL (nord, CEDONO → orchi)
-02     🪨 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🪨   🔴 = orchi che sfondano (Round 2)
-03     🪨 🟫 🗿 🟫 🟫 🔴 🔴 🟫 🟫 🟫 🟫 🔴 🔴 🟫 🟫 🗿 🟫 🟫 🟫 🪨   🗿 = statue dei re (occhi rubino, copertura)
-04     🪨 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🛡️🥋🔮🌙 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🪨   🛡️🥋🔮🌙 = i 4 PG (materializzati sull'altare)
-05     🪨 🟫 🗿 🟫 🟫 🟫 🟫 🟡 🟡 🟡 🟡 🟡 🟡 🟫 🟫 🗿 🟫 🟫 🟫 🪨   🟡 ALTARE DI MORADIN (rialzato, centro)
-06     🪨 🟫 🟫 🟫 🟫 🟫 🟫 🟡 ⚰️ 👑 🩺 🟡 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🪨   👑 Re Thorek (8 pf) · 🩺 Madre Dana · ⚰️ nani caduti
-07     🪨 🟫 🗿 🟫 🟫 🟫 🟫 🟡 🟡 🟡 🟡 🟡 🟫 🟫 🟫 🗿 🟫 🟫 🟫 🪨
-08     🪨 🟫 🟫 🟫 🛡️🛡️🛡️🛡️🛡️🛡️🛡️🛡️🛡️🛡️🛡️ 🟫 🟫 🟫 🟫 🪨   🛡️ semicerchio dei 90 nani (morale −4 → +2 all'arrivo)
-09     🪨 🟫 🗿 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🗿 🟫 🟫 🟫 🪨
-10     🪨 🚪 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🚪 🪨   🚪 (ovest) TUNNEL DI FUGA / portale di Dana → ARC-08
-════════════════════════════════════════════════════════════════════════
-LEGENDA · 🪨 pareti · 🟫 pavimento sacro · 🗿 statue dei re (occhi di rubino:
-si accendono all'Apparizione; copertura +4) · 🟡 altare di Moradin (i PG
-appaiono QUI) · 👑 Re Thorek morente · 🩺 Madre Dana · 🛡️ 90 nani · 🔴 orchi
-(sfondano da nord) · 🚪 nord = porte di mithral (cedute); ovest = via all'ARC-08.
-REGIA: i PG appaiono sull'altare a fine Round 2 → Apparizione (§4) → gli orchi
-vanno in panico → pulizia (§5) → portale di Dana a ovest → ARC-08.
-════════════════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════════════════════════
+ IL CUORE DELLA MONTAGNA — caverna sacra 100 m × 80 m (33 col × 27 righe · 3 m)
+ Soffitto 40 m (stalattiti bioluminescenti) · Giorno 3 dell'assedio (1372)
+════════════════════════════════════════════════════════════════════════════════
+COL →  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g
+01    🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🚪🚪🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨  ← 🚪 PORTA DI MITHRAL 6×6 m (P-Q01, unico ingresso)
+02    🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔴🔴🔴🔴⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨  ← 🔴 ondata nemica in corso (entra dalla porta)
+03    🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔴🔴⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨
+04    🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵🔵🔵🔵🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨  ┐
+05    🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵🔵🔵⬛⬛⬛⬛⬛🔵🔵🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨  │
+06    🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨  │
+07    🪨⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛🗿⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛🪨  │ 🔵 CERCHIO DIFENSIVO
+08    🪨⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛🪨  │ dei 90 NANI
+09    🪨⬛⬛⬛⬛⬛⬛🔵🔵⬛⬛⬛🗿⬛⬛⬛⬛⬛⬛⬛🗿⬛⬛⬛🔵🔵⬛⬛⬛⬛⬛⬛🪨  │ (anello a 30 m
+10    🪨⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛🪨  │  dall'altare;
+11    🪨⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛🪨  │  3 file: 60 guerrieri
+12    🪨⬛⬛⬛⬛⬛🔵⬛⬛⬛🗿⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🗿⬛⬛⬛🔵⬛⬛⬛⬛⬛🪨  │  + 20 balestrieri
+13    🪨🟨🟨🔺⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛⭐✨⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛🔺🟨🟨⬛🪨  │  + 10 capi al centro)
+14    🪨⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛⚫⭐⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛🪨  │
+15    🪨🔺⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛🔺⬛🪨  │ ⭐ ALTARE DI MORADIN
+16    🪨⬛⬛⬛⬛⬛🔵⬛⬛⬛🗿⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🗿⬛⬛⬛🔵⬛⬛⬛⬛⬛🪨  │ (P-Q 13-14 · Ø 6 m,
+17    🪨⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛🪨  │  +3 m, basalto+rune oro)
+18    🪨⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛🪨  │ ⚫ RE THOREK (8 pf)
+19    🪨⬛⬛⬛⬛⬛⬛🔵🔵⬛⬛⬛🗿⬛⬛⬛⬛⬛⬛⬛🗿⬛⬛⬛🔵🔵⬛⬛⬛⬛⬛⬛🪨  │ ✨ SFERA DORATA (R8!)
+20    🪨⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛🪨  │
+21    🪨⬛⬛⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛🗿⬛⬛⬛⬛⬛⬛🔵⬛⬛⬛⬛⬛⬛⬛⬛🪨  │
+22    🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨  │
+23    🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵🔵🔵⬛⬛⬛⬛⬛🔵🔵🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨  │
+24    🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🔵🔵🔵🔵🔵⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨  ┘
+25    🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨
+26    🪨⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🪨
+27    🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨🪨
+════════════════════════════════════════════════════════════════════════════════
+LEGENDA · ⬛ pavimento di caverna · 🪨 pareti · 🚪 porta di mithral 6×6 m (P-Q01,
+nord — unico ingresso; ward difensivi collassati) · 🗿 10 STATUE dei Re
+Ancestrali (cerchio a 20 m dall'altare, alte 4 m, occhi di rubino — copertura) ·
+🔵 90 nani (anello a 30 m) · ⭐⚫✨ altare +3 m con Re Thorek e sfera ·
+🟨 piattaforme laterali Est/Ovest (+1,5 m, 6×3 m — tiratori) · 🔺 stalagmiti
+(copertura parziale) · 🔴 ondata nemica. Soffitto 40 m: stalattiti di cristallo
+BIOLUMINESCENTI (luce piena ovunque, niente *darkness*).
 ```
+
+### ⏫ EVENTO CLIMAX — L'APPARIZIONE (la sfera dorata)
+
+```
+                    [SOFFITTO 40 m]
+                    🌟🌟🌟🌟🌟🌟🌟🌟   stalattiti bioluminescenti
+                           │  (round 6-7: la sfera si forma e SCENDE lenta)
+                           ▼
+                      ✨✨✨✨✨
+                    ✨  SFERA   ✨
+                   ✨   DORATA   ✨   ← Ø 3 m · TRICOLORE
+                    ✨ oro·verde ✨      (Topazio+Smeraldo+Rubino)
+                      ✨·rosso✨
+                           │
+                           ▼  ROUND 8: ESPLOSIONE DI LUCE (non violenta)
+                      💥💥💥💥💥
+                           │
+                           ▼
+                      ⭐ ALTARE ⭐  (+3 m)
+                         ⚫ Re Thorek (8 pf → occhi che si aprono)
+              [4 SILHOUETTE EMERGONO]
+         🛡️ Thorik   🥋 Tordek   🔮 Artemis   🌙 Hella
+              💫 I RUMBLING STONES SONO ARRIVATI 💫
+```
+
+- **Tipo / scala**: santuario + epic reveal (Incontro **3B**, il CLIMAX della
+  Sessione 3 dell'ARC-08 — lato ARC-07 = DEF-5 §3-§4). **3 m/quadretto**.
+- **Terreno & altitudini**: altare **+3 m** (P-Q 13-14, basalto nero, rune
+  d'oro); piattaforme laterali **+1,5 m** (B-C13 ovest, c-d13 est — posizioni
+  sopraelevate per tiratori, stalagmiti 🔺 = copertura parziale); soffitto
+  **40 m** — le stalattiti possono **crollare** su effetti ad area potenti
+  (Terremoto ecc.): 4d6 contundenti, raggio 3 m, **Riflessi CD 18** annulla.
+- **Posizioni**: **90 nani** in anello a 30 m (fila esterna 60 guerrieri con
+  scudi, mediana 20 balestrieri, interna 10 capi + **Re Thorek** ⚫ sull'altare,
+  critico a 8 pf, stabilizzato, cosciente ma incapace di combattere); **10
+  statue** 🗿 sul cerchio a 20 m (Q07·U09·W12·W16·U19·Q21·M19·K16·K12·M09);
+  nemici dalla **porta nord** P-Q01.
+- **Le ondate (Incontro 3B — se giocato per intero, lato ARC-08)**:
+  | Round | Ondata | Note tattiche |
+  |---|---|---|
+  | 1-2 | **30 Orchi berserker** | carica sconsiderata porta→altare |
+  | 3-5 | **20 Hobgoblin sergenti** | muro di scudi, **immuni a paura**, tengono impegnati i nani |
+  | 6-8 | **15 Bugbear assassini** | Nascondersi +12, puntano i capi e Re Thorek — **interrotti dall'Apparizione** |
+  | 9-10 | **Grimjaw + 10 Orog** (se vivo) | vede il ribaltone: ritirata strategica O sfida personale a Thorik; se già morto → capitano minore, auto-ritirata |
+- **⏱️ Timing dell'Apparizione (due regie valide)**: giocando il **3B completo**
+  (lato ARC-08, coi PNG giocabili Borin/Dara/Thorin/Nala) i PG appaiono al
+  **Round 8**, nel mezzo dell'ondata 3; giocando **solo il lato ARC-07**
+  (DEF-5 §4, arrivo compresso) appaiono nell'istante in cui le porte cedono.
+  Stessa scena, stesso altare: cambia solo quanto assedio si gioca prima.
+- **Effetti immediati dell'Apparizione**: nani **+6 morale** (da −4 a +2),
+  guariscono **2d8 pf**, **immuni a paura 1 h**; nemici **Volontà CD 25** o
+  scossi 1d6 round (la maggioranza fallisce; ~⅔ della prima ondata in panico);
+  Re Thorek apre gli occhi (riconosce Thorik: la Corona risuona); gli **occhi di
+  rubino delle 10 statue si ACCENDONO** (benedizione ancestrale); i PG hanno un
+  **round di sorpresa**.
+- **Transizione**: da PNG giocabili → veri PG. Poi pulizia (DEF-5 §5, doppia
+  modalità) → portale di Dana → bastioni (ARC-08, `ARC08-11-PONTE-ARRIVO.md`).
+- **Riferimento**: geometria/ondate = Atlante-08 **MAPPA 5**; regia lato ARC-07
+  = DEF-5 §3-§5; cucitura = ARC08-11.

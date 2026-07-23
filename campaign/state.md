@@ -1410,4 +1410,21 @@ entries — they become campaign history.
             d'arte di Varis/Sal), possibile futura promozione a PG su branch
             di gruppo. Aggiunte righe §1 (companion ricorrente), §3 (Norro,
             Sertieren, Lirien) e §7 ([PROFUGHI], [LIRIEN]).
+2026-07-23  **ARC-07 CONSOLIDAMENTO CHIUSO** — l'Arco della Forgia Eterna è
+            ora un percorso di **5 master DEFINITIVI** autosufficienti (qualità
+            modulo-AP), uno per beat: `ARC07-DEF-1` (Piano della Terra/Terros),
+            `-2` (Ritorno & Affreschi, hub), `-3` (Resurrezione di Hella, hub),
+            `-4` (Viaggio a ≈372 DR), `-5` (Ritorno a Hammerfist/cucitura del
+            Rubino, hub). `ARC07-00-INDICE.md` rigenerato: i DEF sono il
+            percorso giocabile, i file-fonte marcati «assorbiti». Fili in uscita
+            (Echo Ledger, DEF-5 §7): carry-over B4 (Skullcrusher→Fauci), Debito
+            della Radice (§7 [DEBITO DELLA RADICE]), Seme del Ghostlord ([SEME
+            DEL GHOSTLORD]), Vatore/Sal ([VATORE/SAL]), Cronaca Vivente,
+            Doni-costo della resurrezione. Canone in uscita invariato (§1/§6):
+            Corona 3 gemme (Rubino speso), Cuore di Moradin speso, Thorik −2 COS,
+            Hella viva (Ibrido Treant/Collana/Durik), party 14° a Hammerfist.
+            NOTA: la migrazione fisica dei sorgenti in `_ARCHIVIO/` è
+            **rimandata** (blast radius di 100+ riferimenti in skill-mirror,
+            archi 08/09, plans, log) — la consolidazione funzionale è già data
+            dai DEF+INDICE. `validate_modules` 5/5.
 ```

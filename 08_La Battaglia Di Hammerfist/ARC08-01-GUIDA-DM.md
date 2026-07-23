@@ -58,6 +58,7 @@
             *   Introduzione Giorno 3
             *   Incontro Boss 2E: Il Soffio della Morte (con Mappa 2B-Corretta)
             *   La Ritirata Disperata
+            *   Incontro 2F: L'Incrocio Silenzioso — Imboscata nelle Caverne Interne (con Mappa 3Z)
     *   **Sessione 3: Dalle Profondità della Terra**
         *   Introduzione Sessione 3
         *   Incontro 3A: L'Ultima Resistenza (con Mappa 5)
@@ -1774,6 +1775,99 @@ I PG possono scegliere:
 2. **Soccorso:** Aiutare a trasportare il Re ferito
 3. **Sabotaggio:** Crollare tunnel per bloccare nemici
 4. **Esplorazione:** Trovare percorsi alternativi
+
+---
+
+<div style="page-break-before:always"></div>
+
+#### **INCONTRO 2F: L'INCROCIO SILENZIOSO (Imboscata nelle Caverne Interne)**
+*Obiettivo: sopravvivere all'imboscata dei Bugbear Assassini e portare Re Thorek vivo fino al Cuore della Montagna.*
+
+**Timing:** circa 30 minuti di marcia dopo l'ingresso nei tunnel — tra la Ritirata Disperata e l'arrivo al Cuore della Montagna. Il clamore degli inseguitori orcheschi si è fatto lontano; è proprio quel silenzio l'esca della trappola.
+
+**Leggere:**
+> *"Il passaggio principale si apre in una caverna più vasta: una selva di stalagmiti si leva dal pavimento come alberi pietrificati, e le torce vi proiettano in mezzo ombre lunghe e mutevoli. Sei bocche di tunnel si spalancano tutt'intorno all'incrocio, nere e mute. I superstiti si stringono al centro, gli scudi rivolti verso l'esterno, mentre il respiro di Re Thorek rantola sulla barella improvvisata. Le urla degli orchi sono lontane, ora. Troppo lontane. Il silenzio della pietra, che per un nano è sempre stato una carezza, qui pesa come una lastra tombale. Non siete soli."*
+
+**MAPPA 3Z: L'INCROCIO SILENZIOSO**
+*Scala: 1 carattere ≈ 2 metri.* ⚠️ *Deviazione dalla convenzione repo (1,5 m/quadretto): la griglia originale è mantenuta per non alterare portate e distanze già usate nel testo. Non mischiare quadretti di mappe a scale diverse nella stessa scena.*
+
+```
+                  ↑ NORD (Tunnel Corretto → CUORE DELLA MONTAGNA) ↑
+                  ##################
+                  #      .         #
+                  #      .         #
+#####################      .      ###########################
+# . . . (Tunnel NO:        .                . . (Tunnel NE: #
+#  IMBOSCATA HOBGOBLIN)    .                . . vuoto —     #
+###                        .                     falso      #
+  #                        .  (Stalagmite ^)     allarme) ###
+  #   [BUGBEAR 🟤] ←OVEST  .                             #
+  #                        .  (Re Ferito 👑)              #
+  #  (Stalagmite ^)        .   [NANI]🛡️                   #
+  #                 .......  (Stalagmite ^)              #
+  ###              .                                   ###
+    # . . . . . . .             EST→ [BUGBEAR 🟤]        #
+    # . . . (Tunnel SUD: arrivo — eventuali inseguitori) #
+    #####################################################
+```
+
+**LA CAVERNA (TERRENO):**
+- **8 Stalagmiti (2–3 m di altezza):** copertura, +4 CA a chi le usa tatticamente
+- **6 aperture di tunnel:** Nord (uscita corretta verso il Cuore), Sud (arrivo, eventuali inseguitori), Est e Ovest (imboscata bugbear), Nord-Est (vuoto, falso allarme), Nord-Ovest (imboscata hobgoblin)
+- **Illuminazione:** 20 torce dei nani (raggio 6 m ciascuna); oltre la luce, oscurità totale nei tunnel
+- **Formazione nanica:** anello esterno di 60 guerrieri con scudi verso l'esterno, cerchio interno di 20 balestrieri, nucleo con Re Thorek, i portatori e i PNG giocabili
+
+**FORZE NEMICHE:**
+
+**8 Bugbear Assassini (Ladro 5°/Assassino 2°, GS 7 ciascuno):**
+- **Nascondersi +12** (oscurità dei tunnel + bonus razziale): serve **Osservare CD 25** per individuarli PRIMA che colpiscano
+- **Attacco Mortale:** hanno studiato i bersagli dall'ombra durante l'avvicinamento — al primo colpo, Tempra CD 16 o paralisi per 1d6+2 round
+- **Attacco Furtivo +5d6** contro bersagli impreparati
+- **4 nel tunnel Est** → bersaglio prioritario: **Re Thorek** (tentativo di assassinio)
+- **4 nel tunnel Ovest** → bersagli secondari: comandanti e portatori
+- **Ritirata:** se scoperti prima del colpo o se ne cadono più di 4, svaniscono di nuovo nei tunnel (nuova prova di Nascondersi)
+
+**7 Hobgoblin di Diversione (1 Sergente + 6 Guerrieri):**
+- Caricano dal tunnel **Nord-Ovest un round PRIMA** dei bugbear
+- Scopo: attirare l'anello difensivo verso nord mentre gli assassini colpiscono i fianchi
+- Fanatici: combattono fino alla morte
+
+**(Eventuale) 30 Orchi Inseguitori:** se i PG hanno fallito nel rallentare gli inseguitori durante la ritirata, arrivano dal tunnel **Sud al Round 4**, stringendo i nani su tre fronti.
+
+**SEQUENZA DELL'IMBOSCATA:**
+
+#### **ROUND 1: LA DIVERSIONE**
+I 7 hobgoblin caricano urlando dal tunnel nord-ovest. L'anello esterno nanico si sposta istintivamente verso la minaccia visibile. I bugbear, ancora nascosti, avanzano di soppiatto verso i fianchi.
+
+#### **ROUND 2: LE LAME NEL BUIO**
+**Leggere:**
+> *"Mentre gli scudi nanici si serrano contro la carica degli hobgoblin, le ombre alle vostre spalle si muovono. Otto sagome massicce sgusciano fuori dai tunnel a est e a ovest, silenziose come il buio da cui provengono, le lame annerite già puntate alla gola del vostro Re."*
+
+Gli 8 bugbear emergono simultaneamente da Est e Ovest: 4 puntano Re Thorek, 4 i comandanti. Attacco Mortale (Tempra CD 16 o paralisi) e Attacco Furtivo +5d6 su chiunque sia impreparato — a meno che una prova di **Osservare CD 25 al Round 1** non abbia rivelato l'imboscata in tempo per preparare un'azione.
+
+#### **ROUND 3-5: LA MISCHIA NEL CERCHIO**
+I bugbear continuano con attacchi furtivi in mischia; gli hobgoblin impegnano l'anello esterno. I nani sono confusi e combattono su più fronti: **servono gli ordini dei PG** (azione gratuita di comando, o Nala con Ispirare Coraggio) per evitare che la formazione si sgretoli.
+
+#### **ROUND 6+: LA RISOLUZIONE**
+Se più di 4 bugbear sono caduti, i superstiti si dileguano nei tunnel. Gli hobgoblin combattono fino all'ultimo. Il costo è comunque pagato: **5–15 nani cadono** a seconda dell'efficacia dei PG — ogni perdita va annotata nel Registro Perdite (ARC08-03).
+
+**TATTICHE CONSIGLIATE PER I PNG GIOCABILI:**
+- **Borin:** al centro presso il Re — la sua prova di Osservare CD 25 è la migliore occasione di scoprire i bugbear in anticipo; se riesce, azione preparata per intercettare
+- **Dara:** posizione sopraelevata su una stalagmite (Scalare CD 10, +2 di circostanza alle prove di Osservare): Tiro Preciso nella mischia, Nemico Prescelto (goblinoidi) +4
+- **Thorin:** accanto al Re — *Barriera di Lame* per sigillare un tunnel, cure di massa dopo l'imboscata; la sua priorità assoluta è tenere in vita Thorek
+- **Nala:** *Polvere Luccicante* (CD 16) per rivelare i bugbear nascosti, Controcanto contro le urla di guerra, Ispirare Coraggio +2 per tenere salda la formazione
+
+**ESITI:**
+- ✅ **Successo:** Re Thorek sopravvive, meno di 10 nani caduti
+- ⚠️ **Parziale:** Re Thorek sopravvive, 10–15 nani caduti
+- ❌ **Fallimento:** Re Thorek viene ucciso — la campagna dell'arco crolla (vedi ARC08-10 Esiti e Contingenze prima di permettere questo esito)
+
+**Riferimenti tattici (griglia completa 33×33, posizioni quadretto per quadretto):**
+- `Mappe/Hammerfist-Lotto-3-FINALE.md` → MAPPA 3Z: INCROCIO SILENZIOSO
+- `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` → MAPPA 3Z (immagine [158] `hammerfist-3z.png`)
+- `../07_il Portale Della Forgia Eterna/Mappe/TACTICAL-GRIDS-COMPLETE.md` → MAP 19: SILENT CROSSROADS (file combinato, vedi nota di cross-reference)
+
+Superata l'imboscata, la colonna riprende la marcia verso nord: l'antica porta di mithril del Cuore della Montagna è ormai vicina.
 
 ---
 

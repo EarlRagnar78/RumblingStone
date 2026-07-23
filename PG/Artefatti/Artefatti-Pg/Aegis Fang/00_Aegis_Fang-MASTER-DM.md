@@ -79,7 +79,7 @@ vincoli*).
   resurrezione di Hella **Thorik ha scelto l'alternativa «Filo dell'Ascia»**
   invece del sangue, **Aegis Fang perde la proprietà *Returning*** fino al
   **Risveglio pieno** (Stadio 1): ogni lancio va recuperato a mano. Fonte:
-  `../../../07_il Portale Della Forgia Eterna/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`
+  `../../../07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`
   §2-BIS → *Tabella echi*, riga «Alternativa Filo dell'Ascia».
 - **Oggetti spesi**: nessuno (l'arma non consuma cariche permanenti).
 

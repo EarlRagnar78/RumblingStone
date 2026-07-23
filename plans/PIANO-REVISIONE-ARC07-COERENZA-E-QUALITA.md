@@ -45,7 +45,7 @@
    `PG/Artefatti/` (D9). I PDF dell'arco (`SinergieArteFattiQuickReference.pdf`,
    `BenedizioniDiMoradin.pdf`) sono materiale valido.
 6. Le mappe tattiche usano scala **1,5 m/quadretto** (già rispettata da
-   `Mappe/TACTICAL-GRIDS-COMPLETE.md` r.8-9 — mantenerla).
+   `Mappe/_ARCHIVIO/TACTICAL-GRIDS-COMPLETE.md` r.8-9 — mantenerla).
 7. Lingua: **italiano**, nomi meccanici 3.5 in italiano (CD non DC,
    Osservare non Spot, Nascondersi non Hide).
 8. **Non cancellare file**: il default è il banner
@@ -297,7 +297,7 @@ in corso d'opera si flagga `[INFERRED — needs DM confirmation]` e non blocca.
 
 ### A8. Terminologia: 53 `DC` inglesi + file interamente in inglese
 - **Problema**: 53 occorrenze di `DC n` contro la convenzione CD (§0.7);
-  `Terros.md` e `Mappe/TACTICAL-GRIDS-COMPLETE.md` sono in inglese
+  `Terros.md` e `Mappe/_ARCHIVIO/TACTICAL-GRIDS-COMPLETE.md` sono in inglese
   (accettabile come specifica tecnica, ma i termini che il DM legge al
   tavolo devono essere 3.5-italiano).
 - **Azione**: DC→CD globale; skill in italiano 3.5; per Terros e

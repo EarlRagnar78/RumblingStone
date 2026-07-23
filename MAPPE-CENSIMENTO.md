@@ -33,8 +33,8 @@
 | `Mappe/Portale-Forgia-L1-REVISED-UltraClear.md` | MAPPA PF-2: Sala della Forgia Eterna (27×27) | Sì | Sì | **completo (T5b, s9)** | ok |
 | `Mappe/Portale-Forgia-L2-REVISED-UltraClear.md` | Mappa #1 (21×53) — titolo grezzo `[COLONNA K = 15m da Nord]` | Sì | Sì (titolo automatico impreciso — vedi nota 1) | **completo (T5b, s9 — PF-3 Corridoio del Fuoco)** | ok |
 | `Mappe/Portale-Forgia-L2-REVISED-UltraClear.md` | MAPPA PF-4: Forgia Adamantina (33×25) | Sì | Sì | **completo (T5b, s9)** | ok |
-| `Mappe/Portale-Forgia-L3-FINALE-REVISED.md` | Foresta di Cristallo Gigante + Camera Sferica Boss + altre (4 fence) | No (usa "1.5m/5ft" solo in legenda) | **No** | n/a | **KO — nota 2** |
-| `Mappe/TACTICAL-GRIDS-COMPLETE.md` | Spec testuali (coordinate in prosa, no griglia visuale) | Sì (in header standard) | **No** | n/a | **KO — nota 3** |
+| `Mappe/_ARCHIVIO/Portale-Forgia-L3-FINALE-REVISED.md` | Foresta di Cristallo Gigante + Camera Sferica Boss + altre (4 fence) | No (usa "1.5m/5ft" solo in legenda) | **No** | n/a | **KO — nota 2** |
+| `Mappe/_ARCHIVIO/TACTICAL-GRIDS-COMPLETE.md` | Spec testuali (coordinate in prosa, no griglia visuale) | Sì (in header standard) | **No** | n/a | **KO — nota 3** |
 | `Mappe/Atlante-Visivo-Mappe.md` | — (file STUB dichiarato, rimanda a TACTICAL-GRIDS) | — | No | — | n/a |
 | `ARC07-ATLANTE-ASSET.md` | — (catalogo immagini/musica, non è un master mappa) | — | No | — | n/a |
 
@@ -123,14 +123,14 @@
    banner `═══` sopra la griglia. La griglia e l'SVG sono corretti (celle,
    colori, legenda); solo l'etichetta in alto allo SVG è da correggere a
    mano in un lotto successivo (fuori scope: T5a non corregge contenuti).
-2. **Portale-Forgia-L3-FINALE-REVISED.md**: usa un formato a lettere-riga
+2. **Mappe/_ARCHIVIO/Portale-Forgia-L3-FINALE-REVISED.md**: usa un formato a lettere-riga
    (`A B C...`) con simboli testuali tra parentesi quadre (`[X1]`, `[Th]`,
    `C`, `.`) invece di emoji-per-cella. È un master di griglia valido e
    leggibile da umano, ma **non è nel formato che `render_map_svg.py`
    riconosce** (righe `\d+ <emoji>...`). Nessuna azione in T5a; eventuale
    estensione del parser o riscrittura del master è fuori scope (valutare in
    T5c se la Camera Sferica Boss va giocata presto).
-3. **TACTICAL-GRIDS-COMPLETE.md** e **Atlante-Hammerfist-Mappe-COMPLETE.md**:
+3. **Mappe/_ARCHIVIO/TACTICAL-GRIDS-COMPLETE.md** e **Atlante-Hammerfist-Mappe-COMPLETE.md**:
    sono companion-spec testuali (coordinate a lettere/numeri in prosa, es.
    "Squares D3-E4"), non griglie visuali — coprono lo stesso contenuto delle
    mappe REVISED/Lotto già renderizzate ma in formato descrittivo. Non è un

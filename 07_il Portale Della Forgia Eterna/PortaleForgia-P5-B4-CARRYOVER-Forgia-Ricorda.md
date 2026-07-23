@@ -20,7 +20,7 @@
 
 ## 1. INPUT DAL P5 (cosa registra il fast-play)
 
-Dalla **Scena 5** del `PortaleForgia-P5-FASTPLAY.md` si registrano due dati:
+Dalla **Scena 5** del `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md` si registrano due dati:
 
 1. **Esito del duello**: `UCCISO` / `FERITO GRAVE` / `FUGGITO`.
 2. **Ferite ancestrali segnate** (`N`): numero di colpi andati a segno su

@@ -378,6 +378,11 @@ changelog with the resolution.
 - **[PROFUGHI]** I sei volti del Guado di Drellin (Norro, Sertieren, Derny, Delora, Iormel, Kellin — `Bestiario/png/Guado_di_Drellin/`) sono a Rethmar o in arrivo: chi di loro incontrano i PG per primo, e in quale stato?
 - **[LIRIEN]** Il Giullare Spezzato ha visto qualcosa nelle statue vive — i PG gli daranno retta prima che lo faccia qualcun altro? (`Bestiario/png/Lirien/Lirien.md` §2.1)
 - **[ARANEA]** Mira Serani si muove tra i profughi con la faccia della figlia morta di Lorana, raccogliendo intel per l'orda: quando (e come) i PG portano Lorana abbastanza vicino da smascherarla? E cosa fa la verità alla colpa di Lorana? (`Bestiario/villain/Mira_Serani/`)
+- **[SEME DEL GHOSTLORD]** `[CANONE — DM 2026-07-23; l'incontro avviene, l'esito si gioca]` Al −1000, durante la prep notturna a Hammerfist, i PG incrociano il **Mastro Costruttore Zeth** (futuro **Ghostlord / Zeth il Murato**) mentre inizia la Consacrazione che un «chierico incappucciato» (mano del **Collezionista** attraverso il tempo) trasforma in **Lichificazione**. I PG assistono, senza saperlo, all'origine del Ghostlord. Paga in ARC-09 come **dilemma etico di Hella** su Zeth. Fonte: `07_.../ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` §1-bis; cross-link `Bestiario/villain/Ghostlord/`.
+- **[VATORE/SAL]** `[CANONE — DM 2026-07-23; l'incontro avviene, l'esito si gioca]` Al −1000 i PG incrociano **Vatore**, il "Ladro d'Ombra" che diventerà **Salvatore "Sal"** (villain ARC-09). Ha appena rubato il **Sigillo di Ossidiana** e li osserva con terrore reverenziale. **Non è un innocente ingenuo**: è già **corrotto da avidità e sete di potere** (canone DM), non gli importano le conseguenze — è questa scelta a renderlo Sal. **Sincronizzazione temporale** (`Bestiario/villain/Salvatore/Salvatore.md`): ferirlo/derubarlo/segnarlo a −1000 → eco su Sal nel 1372 (sanguina / manca un asso / li teme / li odia). Il Cronolito garantisce che sopravvive (paradosso auto-consistente). Esito da registrare qui. Fonte: `07_.../ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` §5.
+- **[SIGILLO DI OSSIDIANA]** `[CANONE — DM 2026-07-23; se rubato a Vatore]` Artefatto minore allineato a **Shar** (Signora della Notte): **Manto di Notte Assoluta** (sopprime la luce magica ≤2 entro 9 m; *daylight*+ prova CL CD 20) + **Furto della Notte** (1/g, azione furtiva come invisibile/silenzioso 1 round). **Prezzo**: ogni uso **divora un'anima** (1 livello negativo a una creatura toccata nelle 24 h, o un'anima intrappolata); **se non disponibile, consuma il portatore** (livello negativo permanente dopo 24 h) — è ciò che corrompe Vatore in Sal. **Contrasto con l'Anello di Artemis** (scintilla di Lathander, nemesi di Shar): se lo porta Artemis, i due artefatti si annullano (poteri di luce/alba dell'Anello instabili/non disponibili; Sigillo soppresso) → bivio Notte vs Alba per l'ARC-09. Se i PG lo rubano e lo riportano nel presente (Cronolito), Sal si presenta senza il suo asso. Fonte: `07_.../ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` §5 (scheda); `Bestiario/villain/Salvatore/`.
+- **[DEBITO DELLA RADICE]** `[CANONE — DM 2026-07-23; il ramo A/B/C si gioca al rito]` Strappare Hella al Sogno della Terra (Via della Radice + Voto del viaggio) lascia un vuoto che l'ordine naturale esige di colmare — filo grigio (non bianco né nero). Al rito appare **la Custode delle Radici** (psicopompo neutrale, NON ostile): chiede un pegno, mai la vita di Hella (Moradin la protegge). Tre risposte del party: (A) accettare un servizio futuro → **quest ARC-09 «Il Cerchio Sacro della Foresta»** (druida Hella; CANONE DM 2026-07-23: la Custode si aggancia al Cerchio Sacro, non al Ghostlord) + Earth Dream 2/g; (B) rifiutare → il vuoto «risale» come nemico ARC-09 (non-morto della terra / crepa fungina di Sonjak); (C) offrire Durik come ponte vivente → Durik risponde al Sogno 1/sessione ma la Collana non perde mai il 3° seme. Fonte/dettagli: `07_.../ARC07-DEF-3-RESURREZIONE-HELLA.md` §6. Paga in ARC-09, non subito.
+- **[MARCHIO DI VARIS]** `[CANONE — DM 2026-07-23; l'esito (accetta/rifiuta) si gioca]` Sulla riva dell'Oceano di Roccia (Piano della Terra), l'Anello di Artemis capta un **Seme-Mercato** di **Varis "Seta-Argento"** (un cabochon violetto/innesto planare): esca calibrata sull'avidità di Artemis, **privata** (solo il suo giocatore la vede). Varis (telepatico) offre un **affare da predone** — sconto a vita sul Mantello dei TS + canale per piazzare il bottino del Sottosuolo — in cambio dell'incastonare la gemma nell'Anello (Marchio). Bivio grigio stile Andor (avidità vs lealtà), nessuna scelta pulita; funziona anche se il party salta l'incontro dei Cristalli. Se **accetta** → Marchio di Varis + rete di ricettazione, paga in ARC-09 (Varis broker urbano, cross-link `Bestiario/villain/...Varis...`); se **rifiuta** → rispetto guardingo di Varis. Fonte: `07_.../ARC07-DEF-1-PIANO-TERRA-TERROS.md` §6-bis.
 
 ### §7.E Echo Ledger (choices the world remembers)
 
@@ -1407,4 +1412,47 @@ entries — they become campaign history.
             d'arte di Varis/Sal), possibile futura promozione a PG su branch
             di gruppo. Aggiunte righe §1 (companion ricorrente), §3 (Norro,
             Sertieren, Lirien) e §7 ([PROFUGHI], [LIRIEN]).
+2026-07-23  **ARC-07 CONSOLIDAMENTO CHIUSO** — l'Arco della Forgia Eterna è
+            ora un percorso di **5 master DEFINITIVI** autosufficienti (qualità
+            modulo-AP), uno per beat: `ARC07-DEF-1` (Piano della Terra/Terros),
+            `-2` (Ritorno & Affreschi, hub), `-3` (Resurrezione di Hella, hub),
+            `-4` (Viaggio a ≈372 DR), `-5` (Ritorno a Hammerfist/cucitura del
+            Rubino, hub). `ARC07-00-INDICE.md` rigenerato: i DEF sono il
+            percorso giocabile, i file-fonte marcati «assorbiti». Fili in uscita
+            (Echo Ledger, DEF-5 §7): carry-over B4 (Skullcrusher→Fauci), Debito
+            della Radice (§7 [DEBITO DELLA RADICE]), Seme del Ghostlord ([SEME
+            DEL GHOSTLORD]), Vatore/Sal ([VATORE/SAL]), Cronaca Vivente,
+            Doni-costo della resurrezione. Canone in uscita invariato (§1/§6):
+            Corona 3 gemme (Rubino speso), Cuore di Moradin speso, Thorik −2 COS,
+            Hella viva (Ibrido Treant/Collana/Durik), party 14° a Hammerfist.
+            MIGRAZIONE `_ARCHIVIO/` ESEGUITA: 16 sorgenti assorbiti spostati in
+            `07_.../\_ARCHIVIO/`, riferimenti a percorso pieno riscritti nei file
+            tracciati (skill-source, archi 08/09, PG/Artefatti, lore) + interni
+            all'arco; mirror skill/`build/` gitignored (si rigenerano da
+            sorgente); log append-only lasciati intatti come record storici.
+            Nuovi handout: `homebrew/HANDOUT-2-hints-per-pg-prossima-sessione.hb.md`
+            (hints asimmetrici per la sessione Terros). validate_modules 5/5,
+            bestiario/maps/skills/plans verdi.
+2026-07-23b **ARC-07 ATLANTE MAPPE DEFINITIVO** — nuovo
+            `07_.../Mappe/ARC07-MAPPE-DEFINITIVO.md`: le 12 griglie ultra-clear
+            di tutti i beat (T-1…T-6, S-1/S-2, R-1, M7-A/B, CM-1) a piena scheda
+            tattica (posizioni PG/PNG/villain, terreno & altitudini, tattiche di
+            villain/mostri, evoluzione), standard = Atlante Hammerfist (arco 08)
+            + L1/L2 UltraClear + battle map RHoD. ASCII resta la fonte canonica
+            (resa SVG = task futuro PIANO-RENDER-MAPPE-FEDELTÀ). Referenziato da
+            INDICE, dai 5 master DEF (sezione MAPPE) e dai booklet. Corretti 2
+            errori in CM-1 (header 24→15 m / 16→10 righe; typo 🟟→🟡).
+2026-07-23c **S-2 e CM-1 riallineate alle geometrie CANONICHE** (decisione DM).
+            S-2 Stanza della Corona: griglia rifatta sulla mappa giocata ARC-06
+            (`06_.../CoronaDiAdamantio/Tactics_and_maps.md`) — posizionamenti
+            INVARIATI (trono E-F12, muro/Cronaca D-F13, portale drow sigillato
+            E13, colonne/statue/alcove/macerie, Dipinti Invisibili J11-12,
+            ingresso sud D-F02); eliminato il dais inventato; stato ARC-07
+            (purificazione) come overlay. CM-1 Cuore della Montagna: griglia
+            rifatta sulla MAPPA 5 dell'Atlante-08 (caverna 100×80×40 m, scala
+            3 m/quadretto con nota A4, altare +3 m Ø6 m, 10 statue a 20 m, 90
+            nani a 30 m, porta mithral 6 m nord, piattaforme ±1,5 m, stalattiti
+            4d6/Rifl 18) + ondate 1-4 del 3B + doppio timing dell'Apparizione
+            (Round 8 nel 3B completo / porte-che-cedono nel lato ARC-07).
+            Aggiornati atlante + DEF-2 + DEF-5 (griglie identiche).
 ```

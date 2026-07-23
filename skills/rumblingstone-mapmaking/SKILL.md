@@ -8,6 +8,8 @@ description: >
   "mappa esercito", "assedio", "accampamento", "coordinate", "JSON mappa",
   "contratto JSON", "compile_map_json", "export UVTT", "uvtt", "dd2vtt",
   "Foundry", "Roll20", "muri e luci", "mappa cinematografica", "handout",
+  "audit mappe", "atlante mappe", "mappe definitive", "parity pass mappe",
+  "consolidamento mappe", "MAPPE-DEFINITIVO", "posizionamenti canonici",
   or whenever creating/editing files matching *MAPPE*, *Ultra-Clear*, or
   running scripts/render_map_svg.py, scripts/import_watabou.py,
   scripts/compile_map_json.py, scripts/export_uvtt.py, scripts/validate_maps.py.
@@ -38,6 +40,16 @@ are **generated artifacts — never hand-edit them**. CI
    Evoluzione) per `campaign/templates/mappa-tattica-template.md`.
 5. All art is procedural/in-house (no external assets, no tracing of
    third-party art — style conventions yes, files never).
+6. **Fidelity contract** (piano RENDER-MAPPE-FEDELTÀ, 2026-07-23): side
+   annotations on a grid row start after **≥3 spaces** (or a detached `│`
+   preceded by ≥2 spaces, or box-drawing) — the parser never reads them as
+   cells, even if they contain emoji. The header line `N col × M righe · S m`
+   is a **validated declaration**: mismatches warn (`--strict` fails) and the
+   declared scale drives the SVG subtitle/scale-bar. A `<!-- render: none -->`
+   comment right before the fence marks schematic/diagram maps that must NOT
+   be rendered. The in-fence `LEGENDA · 🧲 descrizione · …` line is parsed
+   automatically: local symbols get their real description in the SVG legend
+   (universal SYMBOLS keep their canonical text).
 
 ## Domain → File
 
@@ -60,6 +72,7 @@ Dettaglio e "system prompt" per l'LLM: `references/tre-modalita-mappe.md`.
 
 | Task | Reference |
 |---|---|
+| **Audit/consolidamento mappe di un arco** (atlante definitivo, fonti canoniche, add-on DM, render+verifica) | `references/audit-mappe-workflow.md` |
 | Le 3 modalità, contratto JSON, system prompt LLM | `references/tre-modalita-mappe.md` |
 | Full workflow: new map, edit, render, validate, dungeon import, overland/city | `references/workflow-mappe.md` |
 | Universal legend: every terrain/unit/prop symbol with meaning | `references/legenda-universale.md` |

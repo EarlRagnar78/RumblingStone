@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="596" height="636" viewBox="0 0 596 636" font-family="Georgia, 'Palatino Linotype', 'Times New Roman', serif">
+<defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="11" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0.36 0 0 0 0 0.28 0 0 0 0 0.16 0 0 0 0.18 0"/><feComposite operator="over" in2="SourceGraphic"/></filter>
+<filter id="rough" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.6"/></filter>
+<filter id="softblur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.6"/></filter>
+<filter id="aoblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3.2"/></filter>
+<filter id="mottle" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" seed="4" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0.24 0 0 0 0 0.18 0 0 0 0 0.10 0 0 0 0.5 0"/></filter>
+<radialGradient id="vign" cx="0.5" cy="0.45" r="0.75"><stop offset="0.62" stop-color="#3b2e1e" stop-opacity="0"/><stop offset="1" stop-color="#3b2e1e" stop-opacity="0.16"/></radialGradient>
+<clipPath id="clipgrid"><rect x="46" y="80" width="504" height="280"/></clipPath>
+<clipPath id="clipheavy"><path d="M214 317.58L217.81 309.99L219.99 307.81L227.58 304L228.42 304L236.01 307.81L238.19 309.99L242 317.58L242 318.42L238.19 326.01L236.01 328.19L228.42 332L227.58 332L219.99 328.19L217.81 326.01L214 318.42Z" clip-rule="evenodd"/></clipPath>
+<pattern id="t_earth" width="28" height="28" patternUnits="userSpaceOnUse"><rect width="28" height="28" fill="#b08d68"/><circle cx="6" cy="6" r="1.1" fill="#93714e"/><circle cx="18" cy="11" r="0.9" fill="#93714e"/><circle cx="24" cy="22" r="1.2" fill="#93714e"/><circle cx="9" cy="20" r="1" fill="#c8a87f"/><circle cx="22" cy="4" r="0.8" fill="#c8a87f"/><path d="M3 15q4-1.5 8 0" stroke="#a17d59" stroke-width="0.8" fill="none"/></pattern>
+<pattern id="t_struct" width="28" height="28" patternUnits="userSpaceOnUse"><rect width="28" height="28" fill="#6b5b47"/><path d="M-2 6l8-8M-2 14l16-16M-2 22l24-24M6 30l24-24M14 30l16-16M22 30l8-8" stroke="#5a4b39" stroke-width="0.9"/><path d="M0 14.5h28" stroke="#7d6c56" stroke-width="0.8"/></pattern>
+<symbol id="pr_crystal" viewBox="0 0 28 28"><ellipse cx="14" cy="21.5" rx="6.5" ry="2" fill="#6f5a94" opacity="0.6"/><path d="M11 21L8 10l4-4 2 5z" fill="#9d7fd0" stroke="#4a3670" stroke-width="1"/><path d="M15 21l-1-9 4-5 3 7z" fill="#b79ae0" stroke="#4a3670" stroke-width="1"/><path d="M12 6.5l1.5 4M18 7l-1.5 4.5" stroke="#e2d4f4" stroke-width="0.8"/></symbol>
+<symbol id="pr_pit" viewBox="0 0 28 28"><ellipse cx="14" cy="14" rx="9.5" ry="7.5" fill="#141009" stroke="#4d4132" stroke-width="1.4"/><ellipse cx="14" cy="12.6" rx="7" ry="5" fill="#000000" opacity="0.65"/><path d="M6 16.5q4 4 12 2.7" stroke="#6a5c46" stroke-width="0.8" fill="none" opacity="0.7"/></symbol>
+</defs>
+<rect width="596" height="636" fill="#efe4c9" filter="url(#grain)"/>
+<rect width="596" height="636" fill="url(#vign)"/>
+<rect x="5" y="5" width="586" height="626" fill="none" stroke="#3b2e1e" stroke-width="0.8" opacity="0.8"/>
+<rect x="9" y="9" width="578" height="618" fill="none" stroke="#3b2e1e" stroke-width="2" opacity="0.85"/>
+<text x="46" y="34" font-size="19" font-weight="bold" fill="#3b2e1e" letter-spacing="0.5">FORESTA DI CRISTALLI GIGANTI — 27 m × 15 m (18 col × 10 righe · 1,5 m)</text>
+<text x="46" y="51" font-size="11" font-style="italic" fill="#7a6a50">18×10 quadretti · scala 1,5 m/quadretto</text>
+<rect x="41" y="75" width="514" height="290" fill="#e6d9b8" stroke="#3b2e1e" stroke-width="1.6"/>
+<g clip-path="url(#clipgrid)">
+<path d="M46 95.19L49.81 85.99L51.99 83.81L61.19 80L534.81 80L544.01 83.81L546.19 85.99L550 95.19L550 344.81L546.19 354.01L544.01 356.19L534.81 360L61.19 360L51.99 356.19L49.81 354.01L46 344.81ZM227.58 304L219.99 307.81L217.81 309.99L214 317.58L214 318.42L217.81 326.01L219.99 328.19L227.58 332L228.42 332L236.01 328.19L238.19 326.01L242 318.42L242 317.58L238.19 309.99L236.01 307.81L228.42 304Z" fill="url(#t_earth)" fill-rule="evenodd" stroke="url(#t_earth)" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M214 317.58L217.81 309.99L219.99 307.81L227.58 304L228.42 304L236.01 307.81L238.19 309.99L242 317.58L242 318.42L238.19 326.01L236.01 328.19L228.42 332L227.58 332L219.99 328.19L217.81 326.01L214 318.42Z" fill="none" stroke="#241c10" stroke-width="9" opacity="0.22" filter="url(#aoblur)"/>
+<path d="M214 317.58L217.81 309.99L219.99 307.81L227.58 304L228.42 304L236.01 307.81L238.19 309.99L242 317.58L242 318.42L238.19 326.01L236.01 328.19L228.42 332L227.58 332L219.99 328.19L217.81 326.01L214 318.42Z" fill="#241c10" fill-rule="evenodd" opacity="0.28" filter="url(#softblur)" transform="translate(2.6,3.4)"/>
+<path d="M214 317.58L217.81 309.99L219.99 307.81L227.58 304L228.42 304L236.01 307.81L238.19 309.99L242 317.58L242 318.42L238.19 326.01L236.01 328.19L228.42 332L227.58 332L219.99 328.19L217.81 326.01L214 318.42Z" fill="url(#t_struct)" fill-rule="evenodd" stroke="url(#t_struct)" stroke-width="2.4" stroke-linejoin="round"/>
+<rect x="46" y="80" width="504" height="280" filter="url(#mottle)" opacity="0.35"/>
+<path d="M46 95.19L49.81 85.99L51.99 83.81L61.19 80L534.81 80L544.01 83.81L546.19 85.99L550 95.19L550 344.81L546.19 354.01L544.01 356.19L534.81 360L61.19 360L51.99 356.19L49.81 354.01L46 344.81ZM227.58 304L219.99 307.81L217.81 309.99L214 317.58L214 318.42L217.81 326.01L219.99 328.19L227.58 332L228.42 332L236.01 328.19L238.19 326.01L242 318.42L242 317.58L238.19 309.99L236.01 307.81L228.42 304Z" fill="none" stroke="#7a6a50" stroke-width="0.9" opacity="0.5" stroke-linejoin="round" filter="url(#rough)"/>
+<path d="M214 317.58L217.81 309.99L219.99 307.81L227.58 304L228.42 304L236.01 307.81L238.19 309.99L242 317.58L242 318.42L238.19 326.01L236.01 328.19L228.42 332L227.58 332L219.99 328.19L217.81 326.01L214 318.42Z" fill="none" stroke="#241c10" stroke-width="1.8" opacity="0.9" stroke-linejoin="round" filter="url(#rough)"/>
+</g>
+<path d="M74 80v280M102 80v280M130 80v280M158 80v280M214 80v280M242 80v280M270 80v280M298 80v280M354 80v280M382 80v280M410 80v280M438 80v280M494 80v280M522 80v280M550 80v280M46 108h504M46 136h504M46 164h504M46 192h504M46 248h504M46 276h504M46 304h504M46 332h504" stroke="#2e2313" stroke-width="0.6" opacity="0.3" fill="none"/>
+<path d="M46 80v280M186 80v280M326 80v280M466 80v280M46 80h504M46 220h504M46 360h504" stroke="#2e2313" stroke-width="1.4" opacity="0.48" fill="none"/>
+<g clip-path="url(#clipheavy)"><path d="M74 80v280M102 80v280M130 80v280M158 80v280M214 80v280M242 80v280M270 80v280M298 80v280M354 80v280M382 80v280M410 80v280M438 80v280M494 80v280M522 80v280M550 80v280M46 108h504M46 136h504M46 164h504M46 192h504M46 248h504M46 276h504M46 304h504M46 332h504" stroke="#efe4c9" stroke-width="0.6" opacity="0.16" fill="none"/><path d="M46 80v280M186 80v280M326 80v280M466 80v280M46 80h504M46 220h504M46 360h504" stroke="#efe4c9" stroke-width="1.4" opacity="0.26" fill="none"/></g>
+<ellipse cx="116.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="116.0" y="100.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="144.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="144.0" y="100.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="396.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="396.0" y="100.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="424.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="424.0" y="100.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="88.0" cy="128.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="88.0" y="128.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="116.0" cy="128.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="116.0" y="128.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="144.0" cy="128.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="144.0" y="128.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="229.0" cy="125.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_pit" x="214" y="108" width="28" height="28"/>
+<ellipse cx="396.0" cy="128.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="396.0" y="128.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="424.0" cy="128.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="424.0" y="128.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="452.0" cy="128.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="452.0" y="128.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="88.0" cy="156.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="88.0" y="156.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="116.0" cy="156.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="116.0" y="156.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="424.0" cy="156.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="424.0" y="156.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="452.0" cy="156.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="452.0" y="156.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="200.0" cy="184.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="200.0" y="184.0" font-size="17" text-anchor="middle">🛡</text>
+<ellipse cx="285.0" cy="181.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_crystal" x="270" y="164" width="28" height="28"/>
+<ellipse cx="228.0" cy="212.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="228.0" y="212.0" font-size="17" text-anchor="middle">🥋</text>
+<ellipse cx="453.0" cy="209.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_pit" x="438" y="192" width="28" height="28"/>
+<ellipse cx="88.0" cy="268.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="88.0" y="268.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="116.0" cy="268.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="116.0" y="268.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="452.0" cy="268.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="452.0" y="268.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="480.0" cy="268.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="480.0" y="268.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="88.0" cy="296.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="88.0" y="296.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="116.0" cy="296.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="116.0" y="296.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="228.0" cy="296.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="228.0" y="296.0" font-size="17" text-anchor="middle">💠</text>
+<ellipse cx="424.0" cy="296.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="424.0" y="296.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="452.0" cy="296.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="452.0" y="296.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="480.0" cy="296.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="480.0" y="296.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="116.0" cy="324.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="116.0" y="324.0" font-size="17" text-anchor="middle">🔷</text>
+<ellipse cx="452.0" cy="324.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="452.0" y="324.0" font-size="17" text-anchor="middle">🔷</text>
+<text x="60.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">A</text>
+<text x="88.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">B</text>
+<text x="116.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">C</text>
+<text x="144.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">D</text>
+<text x="172.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">E</text>
+<text x="200.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">F</text>
+<text x="228.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">G</text>
+<text x="256.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">H</text>
+<text x="284.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">I</text>
+<text x="312.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">J</text>
+<text x="340.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">K</text>
+<text x="368.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">L</text>
+<text x="396.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">M</text>
+<text x="424.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">N</text>
+<text x="452.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">O</text>
+<text x="480.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">P</text>
+<text x="508.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">Q</text>
+<text x="536.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">R</text>
+<text x="37" y="97.0" font-size="10" text-anchor="end" fill="#7a6a50">01</text>
+<text x="37" y="125.0" font-size="10" text-anchor="end" fill="#7a6a50">02</text>
+<text x="37" y="153.0" font-size="10" text-anchor="end" fill="#7a6a50">03</text>
+<text x="37" y="181.0" font-size="10" text-anchor="end" fill="#7a6a50">04</text>
+<text x="37" y="209.0" font-size="10" text-anchor="end" fill="#7a6a50">05</text>
+<text x="37" y="237.0" font-size="10" text-anchor="end" fill="#7a6a50">06</text>
+<text x="37" y="265.0" font-size="10" text-anchor="end" fill="#7a6a50">07</text>
+<text x="37" y="293.0" font-size="10" text-anchor="end" fill="#7a6a50">08</text>
+<text x="37" y="321.0" font-size="10" text-anchor="end" fill="#7a6a50">09</text>
+<text x="37" y="349.0" font-size="10" text-anchor="end" fill="#7a6a50">10</text>
+<g transform="translate(528,102) rotate(0)"><circle r="20" fill="#efe4c9" fill-opacity="0.82" stroke="#3b2e1e" stroke-width="1"/><path d="M0 -15L2.4 -2.4L15 0L2.4 2.4L0 15L-2.4 2.4L-15 0L-2.4 -2.4Z" fill="#7a6a50" opacity="0.5"/><path d="M0 -15L3.6 0L0 -3.3L-3.6 0Z" fill="#3b2e1e"/><text x="0" y="-21" font-size="11" font-weight="bold" text-anchor="middle" fill="#3b2e1e">N</text></g>
+<rect x="46" y="379" width="28" height="7" fill="#3b2e1e" stroke="#3b2e1e" stroke-width="1"/>
+<rect x="74" y="379" width="28" height="7" fill="#efe4c9" stroke="#3b2e1e" stroke-width="1"/>
+<rect x="102" y="379" width="28" height="7" fill="#3b2e1e" stroke="#3b2e1e" stroke-width="1"/>
+<rect x="130" y="379" width="28" height="7" fill="#efe4c9" stroke="#3b2e1e" stroke-width="1"/>
+<rect x="158" y="379" width="28" height="7" fill="#3b2e1e" stroke="#3b2e1e" stroke-width="1"/>
+<text x="196" y="387" font-size="11" fill="#3b2e1e">7,5 m (5 quadretti)</text>
+<text x="46" y="416" font-size="12" font-weight="bold" fill="#3b2e1e" letter-spacing="2">LEGENDA</text>
+<path d="M120 412H550" stroke="#7a6a50" stroke-width="0.7" opacity="0.7"/>
+<rect x="46" y="422" width="19" height="15" fill="url(#t_struct)" stroke="#7a6a50" stroke-width="0.7"/>
+<text x="73" y="434" font-size="11" fill="#3b2e1e">⬛ — Struttura (tenda, edificio, dais)</text>
+<rect x="46" y="444" width="19" height="15" fill="url(#t_earth)" stroke="#7a6a50" stroke-width="0.7"/>
+<text x="73" y="456" font-size="11" fill="#3b2e1e">🟫 — Terra battuta / sentiero</text>
+<use href="#pr_crystal" x="46" y="465" width="18" height="18"/>
+<text x="73" y="478" font-size="11" fill="#3b2e1e">🔮 — Cristalli / altare magico</text>
+<use href="#pr_pit" x="46" y="487" width="18" height="18"/>
+<text x="73" y="500" font-size="11" fill="#3b2e1e">🕳 — Voragine / buco</text>
+<text x="46" y="522" font-size="14">💠</text>
+<text x="73" y="522" font-size="11" fill="#3b2e1e">💠 — base corrosa del pilastro (crolla → ponte)</text>
+<text x="46" y="544" font-size="14">🔷</text>
+<text x="73" y="544" font-size="11" fill="#3b2e1e">🔷 — Cristallo Gigante (copertura totale, indistruttibile)</text>
+<text x="46" y="566" font-size="14">🛡</text>
+<text x="73" y="566" font-size="11" fill="#3b2e1e">🛡 — Thorik (F04)</text>
+<text x="46" y="588" font-size="14">🥋</text>
+<text x="73" y="588" font-size="11" fill="#3b2e1e">🥋 — Tordek (G05)</text>
+<text x="46" y="620" font-size="9" font-style="italic" fill="#7a6a50">fonte: ARC07-MAPPE-DEFINITIVO.md · SVG generato da scripts/render_map_svg.py (stile pergamena) — non modificare a mano</text>
+</svg>

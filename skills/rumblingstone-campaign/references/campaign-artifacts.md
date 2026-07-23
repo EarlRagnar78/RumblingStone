@@ -201,7 +201,7 @@ Forged by Moradin from two blocks of adamantine — immersed in Fire Plane magma
 **Type:** Artifact Necklace
 **Slot:** Neck
 **Owner:** Hella Oakenshield (Dwarf Ranger 1 / Druid 12, Level 13 post-resurrection, Treant Hybrid)
-**Source Files:** `07_il Portale Della Forgia Eterna/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`, `PortaleForgia-P3B-ResurrezioneHella-RICALIBRATO.md`
+**Source Files:** `07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`, `PortaleForgia-P3B-ResurrezioneHella-RICALIBRATO.md`
 
 ### Description
 

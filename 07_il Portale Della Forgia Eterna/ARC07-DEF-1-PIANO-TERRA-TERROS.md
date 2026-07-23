@@ -742,8 +742,8 @@ finora la propria avidità nell'arco:
 > **Nota su Sal/Vatore (per il DM).** Questo marchio si intreccia col #4
 > (Viaggio a 1.000 anni fa), dove **Sal è presente come "Vatore"**: se Artemis
 > porta il Marchio di Varis, il DM può far riconoscere a Vatore la "firma" del
-> mercato — un filo che lega passato e presente della rete di Varis/Il
-> Collezionista `[INFERRED — needs DM confirmation]`.
+> mercato — un filo che lega passato e presente della rete di **Varis ↔ Il
+> Collezionista** (CANONE DM 2026-07-23: le due reti sono collegate).
 
 ---
 

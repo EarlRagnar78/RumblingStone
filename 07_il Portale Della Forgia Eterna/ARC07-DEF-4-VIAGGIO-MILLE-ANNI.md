@@ -158,9 +158,9 @@ Cuore della Montagna, Giorno 3 dell'assedio del 1372).
   tempo. L'Anello lo **percepisce** (aura temporale) prima di chiunque. È il PG
   giusto per fiutare che quel ladro «non è di qui» — e per decidere cosa farne
   (grigio: robarlo? ucciderlo? lasciarlo?). La sua avidità incontra un pari.
-- Se porta il **Seme-Mercato di Varis** (#1 §6-bis): l'Anello e il marchio
-  «riconoscono» la firma temporale di Vatore `[INFERRED — DM]`: due fili della
-  stessa rete, mille anni prima che esista.
+- Se porta il **Marchio di Varis** (#1 §6-bis, CANONE): l'Anello e il marchio
+  «riconoscono» la firma temporale di Vatore: due fili della **stessa rete**
+  (Varis ↔ Il Collezionista, CANONE DM 2026-07-23), mille anni prima che esista.
 
 ---
 
@@ -269,7 +269,7 @@ mangiano), fabbri che affilano le armi, chierici che benedicono.
   benedetta con crescita accelerata, all'alba sono **3 Treant maturi** (12 DV,
   66 pf, statblock: usa il Treant SRD) che caricheranno il fianco dell'orda —
   vantaggio tattico enorme, e un beat di potere per la druida risorta.
-- **⚫ SEME DEL GHOSTLORD (hook a lunghissimo termine — canone `[INFERRED — DM]`).**
+- **⚫ SEME DEL GHOSTLORD (hook a lunghissimo termine — CANONE, DM 2026-07-23).**
   Il party incrocia il **Mastro Costruttore Zeth**, un mezz'elfo dagli occhi
   febbrili, che traccia rune sui tunnel: *«Le mura di Thorek potrebbero cedere.
   Ma legherò la mia anima alla montagna in una Consacrazione. I miei leoni di
@@ -559,10 +559,16 @@ delle 100 Asce (ARC-08) può portarne il nome — eco commovente.*
 > **non possono saperlo**. Questo è il cuore grigio della scena.
 
 **Chi è, adesso.** Vatore, il "Ladro d'Ombra" di Hammerfist. Ha **appena rubato
-il Sigillo di Ossidiana** e pianifica la fuga nel futuro (userà un Cronolito).
-Ha appena visto **quattro individui respingere un'orda da soli** — e ne è
-**ossessionato**. Personalità: freddo, parla il meno possibile, li osserva con
-un **terrore reverenziale mal mascherato**.
+il Sigillo di Ossidiana** (§Artefatto ↓) e pianifica la fuga nel futuro (userà un
+Cronolito). Ha appena visto **quattro individui respingere un'orda da soli** — e
+ne è **ossessionato**. Personalità: freddo, parla il meno possibile, li osserva
+con un **terrore reverenziale mal mascherato**.
+> **Canone (DM 2026-07-23) — cosa lo corrompe.** Vatore è **già marcio di
+> avidità e sete di potere**: non gli importano le conseguenze. Ha rubato il
+> Sigillo *sapendo* che divora anime — e ha deciso che le pagherà con quelle
+> degli altri, e poi con la propria. È questa scelta, non un incidente, a
+> renderlo **Sal**. Nella scena non è un innocente ingenuo: è un uomo che ha
+> già scelto l'ombra, e che ora vede in VOI un potere che vorrebbe rubare.
 
 > **Read-aloud (Andor lead — l'incontro che non capiscono).** *Tra due tende, un
 > uomo. Non è dell'orda: veste ombre cucite bene, e stringe al petto qualcosa
@@ -596,6 +602,46 @@ un **terrore reverenziale mal mascherato**.
 > nell'Echo Ledger (§7). Cross-link: `Bestiario/villain/Salvatore/Salvatore.md`
 > §Sincronizzazione.
 
+### 🖤 ARTEFATTO — IL SIGILLO DI OSSIDIANA (minore, allineato a Shar) `[CANONE — DM 2026-07-23]`
+
+> **Cos'è.** Un sigillo/anello-sigillo di **ossidiana nera**, gelido al tatto,
+> che «beve» la luce intorno; inciso con la runa-vuoto di **Shar** (Signora della
+> Notte, dea di perdita, oscurità e segreti). È ciò che Vatore ha appena rubato,
+> e ciò con cui diventerà **Sal**. Shar è più pertinente di Mask perché il
+> **prezzo è la perdita di anime**, non solo il furto.
+
+| Potere | Effetto |
+|---|---|
+| **1 · Manto di Notte Assoluta** (passivo, gratis) | Entro **9 m** dal portatore gli incantesimi di **luce** di livello ≤2 sono **soppressi**; *daylight* e superiori richiedono **prova di livello incantatore CD 20** o falliscono. La luce non-magica è solo attenuata (penombra). |
+| **2 · Furto della Notte** (1/giorno, azione) | Il portatore compie **un'azione furtiva** (furto, colpo, passaggio) come se fosse **invisibile e silenzioso** per **1 round**. NON attivabile in piena luce naturale. |
+
+> **⚖️ IL PREZZO — «consuma anime» (il cuore oscuro dell'oggetto).** Ogni uso del
+> **Potere 2** — e ogni giorno in cui il **Potere 1** resta attivo oltre la prima
+> ora — **divora un'anima**: infliggi **1 livello negativo** a una creatura
+> senziente **toccata nelle ultime 24 h** (il Sigillo «raccoglie» il pegno), o
+> consuma un'**anima intrappolata** (gemma-spirito, non-morto legato). **Se
+> nessuna anima è disponibile, consuma il PORTATORE**: 1 livello negativo a sé,
+> che diventa **permanente** dopo 24 h se non redento (*restoration*). È il
+> meccanismo che trasforma **Vatore in Sal**: lo usa sugli altri, poi su sé
+> stesso, e la **sete di potere lo acceca** al conto che sta accumulando.
+
+> **⚔️ AGGANCIO — l'Anello di Artemis (Lathander vs Shar).** L'Anello Riforgiato
+> di Artemis porta una **scintilla di Lathander** (dio dell'**Alba**, nemesi
+> cosmica di Shar). Se **Artemis** impugna il Sigillo, i due artefatti si
+> **annullano a vicenda**: (a) il Manto di Notte **non può sopprimere** la luce
+> d'Alba dell'Anello; (b) i **poteri di luce/alba dell'Anello diventano
+> instabili o non disponibili** finché porta il Sigillo — e viceversa il Sigillo
+> è **soppresso** in sua mano. Artemis deve **scegliere quale servire**: Notte o
+> Alba. È il suo **bivio d'artefatto per l'ARC-09** (se lo prende lui, il DM lo
+> gioca come una lotta interna tra i due patroni; se lo prende un altro PG, il
+> prezzo delle anime è pieno).
+
+> **Gancio ARC-09.** Se i PG lo **rubano a Vatore** e lo riportano nel presente
+> (paradosso auto-consistente del Cronolito), Sal si presenta **senza il suo
+> asso** e la **sincronizzazione** con lui si complica (vedi tabella §5). Scheda
+> speditiva → `Bestiario/villain/Salvatore/Salvatore.md` §Sigillo; thread
+> `state.md §7 [SIGILLO DI OSSIDIANA]`.
+
 ---
 
 ## §6 — CONTINGENZE & SCONFITTA
@@ -603,7 +649,7 @@ un **terrore reverenziale mal mascherato**.
 | Mossa | Risposta del modulo |
 |---|---|
 | **Vogliono cambiare il passato** (salvare qualcuno destinato a morire, avvisare i nani di eventi futuri) | Timeline auto-consistente: ci **provano**, ma "va sempre come doveva". Il nano che vogliono salvare muore comunque, in un altro modo. Non è fato crudele: è che **è già successo**. Ottimo pathos, zero paradossi. |
-| **Cercano tesori/conoscenze da riportare nel futuro** | Possono! Ma la maggior parte **non attraversa** il Rubino (solo ciò che è "loro" torna — corpi, artefatti legati). Un oggetto del passato che riportano diventa un gancio `[INFERRED — DM]`: il Sigillo di Ossidiana rubato a Vatore è l'eccezione più ghiotta (§5). |
+| **Cercano tesori/conoscenze da riportare nel futuro** | Possono! Ma la maggior parte **non attraversa** il Rubino (solo ciò che è "loro" torna — corpi, artefatti legati). L'**eccezione canonica** è il **Sigillo di Ossidiana** rubato a Vatore (§5 Artefatto): il Cronolito che lo lega a Vatore lo fa «passare» come gancio ARC-09. |
 | **Vogliono reclutare Thorgrim / portarlo nel futuro** | Impossibile (non è "loro"): Thorgrim resta, e la sua eco è la Cerimonia delle 100 Asce (ARC-08). Commovente: si separano da un fratello che è già polvere da mille anni. |
 | **Evitano del tutto il duello con Skullcrusher** | Difficile ma possibile (montaggio): allora il Rubino si accende comunque (la fortezza regge), ma **senza ferite ancestrali** → nessun carry-over B4 (Fauci al 1372 a piena forza). La scelta ha un prezzo futuro. |
 | **FALLIMENTO — il duello va malissimo / un PG cade / fuggono sconfitti** | Non c'è TPK: la timeline **esige** che vincano (la profezia È incisa). Se il combattimento crolla, Thorgrim e gli antenati **intervengono** e ricacciano il drago (a caro prezzo: molti nani antichi muoiono — pathos, e la Cerimonia delle 100 Asce ne porterà i nomi). I PG vincono "sporco": **nessuna ferita ancestrale** registrata, il Rubino si accende col tono «misericordia/dovere», e portano il peso di essere stati salvati dagli avi che erano venuti a salvare. |
@@ -622,7 +668,7 @@ un **terrore reverenziale mal mascherato**.
 | **Scelte-costo vs Zog'tar** (§4-bis) | Thorik affaticato / Cintura di Tordek «assaggiata» o disciplinata / tono del Rubino | ARC-08 (vs Fauci) | §4-bis + B4 |
 | **Tono del Rubino** (esito duello) | «nessuna pietà» (UCCISO) / «dovere» (FERITO) / «vigile» (FUGGITO) → colore della Corona in ARC-08 | ARC-08 ingresso | `ARC07-CONSEGUENZE-ECHI.md` §2 |
 | **Cronache dei Quattro Eroi compiute** | fama crescente presso i nani → Custodi Eterni | ARC-08 E5 / Cerimonia 100 Asce | ARC-08 |
-| **Sigillo di Ossidiana** (se rubato a Vatore) | oggetto del passato nel presente | ARC-09 | state.md §7 `[INFERRED — DM]` |
+| **Sigillo di Ossidiana** (se rubato a Vatore) | artefatto di Shar (anti-luce / furto d'ombra, divora anime) — vedi §5 Artefatto; contrasta l'Anello di Artemis | ARC-09 | `state.md §7 [SIGILLO DI OSSIDIANA]` + `Bestiario/villain/Salvatore/` |
 
 ---
 
@@ -647,9 +693,9 @@ un **terrore reverenziale mal mascherato**.
 |---|---|---|
 | Sc.2 (Thorgrim/Re Thorek I, se fiducia piena) | **Benedizione degli Antenati**: 4 **Pozioni di Cura Ferite Serie** dell'antica fucina (curano 3d8+11) | ~3.000 mo |
 | Sc.2 (dono cerimoniale) | **Torque di Thorek I** — monile nanico antico (+1 sacro ai TS vs paura; e nel 1372 è una **reliquia storica**: i nani si scoprono il capo davanti a chi lo porta) | ~2.000 mo + valore storico |
-| §5 (se derubano Vatore) | **Sigillo di Ossidiana** — artefatto minore rubato (potere `[INFERRED — DM]`; gancio ARC-09) | speciale |
+| §5 (se derubano Vatore) | **Sigillo di Ossidiana** — artefatto minore di Shar (Manto di Notte + Furto della Notte, divora anime; contrasta l'Anello di Artemis — scheda §5 Artefatto) | speciale (gancio ARC-09) |
 | Sc.4 (bottino dell'orda antica, se sabotano gli arieti) | armi orchesche primitive (poco valore) + un **corno da guerra di ferro nero** (curiosità, 300 mo) | ~300 mo |
-| §4 (resti di Skullcrusher, se UCCISO) | **scaglia del Primo Nero** — trofeo (materiale per 1 oggetto acido `[INFERRED]`; e prova che la profezia è compiuta) | ~1.500 mo |
+| §4 (resti di Skullcrusher, se UCCISO) | **scaglia del Primo Nero** — trofeo: materiale per **1 oggetto ad acido** (arma/armatura +1d6 acido, o focus per incantesimi acidi; a discrezione del fabbro), e prova che la profezia è compiuta | ~1.500 mo |
 
 > ⚠️ **Cosa torna nel 1372**: solo ciò che è "loro" o legato (corpi, artefatti,
 > il Sigillo rubato). Le pozioni consumate qui restano qui; i doni indossati

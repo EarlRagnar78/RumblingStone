@@ -142,9 +142,9 @@ a 1.000 anni fa** (Hella è il 4° PG, APL 13 pieno).
 - Il suo Dono è il più leggero (una scintilla d'innesco): il DM non lo faccia
   sentire di serie B — la **rinascita spontanea** che dona è la rete che
   salverà Hella a Hammerfist. Il suo vero prezzo arriverà alla Torre (Ring).
-- Se porta il **Seme-Mercato di Varis** (#1 §6-bis): l'Anello, durante la
+- Se porta il **Marchio di Varis** (#1 §6-bis, CANONE): l'Anello, durante la
   stabilizzazione (Step 3), «pizzica» — il caos vitale e il marchio del mercato
-  risuonano. Gancio muto `[INFERRED — DM]`.
+  risuonano. Gancio muto (conseguenza canonica del Marchio, DM 2026-07-23).
 
 ### 🌙 HELLA — il ritorno (da qui, PG a pieno titolo)
 - Fino al risveglio: **nessuna coscienza** (solo le sensazioni del viaggio,
@@ -340,8 +340,9 @@ lo guarda un istante più a lungo del necessario, e non dice nulla. *Lo sente.*
 > protegge, e io non discuto col Forgiatore. Ma il debito resta. Chi lo porta?»*
 
 **Chi/cosa è.** La Custode delle Radici — un **psicopompo neutrale** del Sogno
-della Terra (`[INFERRED — DM]`; agganciabile al dominio del Ghostlord o al
-Cerchio Sacro di ARC-09). Non combatte, non minaccia: **contratta**. Il DM la
+della Terra (CANONE DM 2026-07-23: **si aggancia al Cerchio Sacro di ARC-09** —
+la quest della druida Hella, `09_.../Quest 1 – Druida Hellas: Il Cerchio Sacro
+della Foresta.md`). Non combatte, non minaccia: **contratta**. Il DM la
 gioca come un funzionario dell'ordine naturale — cortese, inflessibile, senza
 malizia (Andor: la macchina non odia, esegue).
 
@@ -599,11 +600,12 @@ cerchio del lutto si chiude.
 | **LORDO restituito** | **~15.600 mo** |
 
 > **Sorpresa nascosta (Osservare CD 20, sul corpo di Hella prima del rito):**
-> una **ghianda annerita** stretta nel pugno da quando è morta — l'ultima che
-> raccolse in vita. Al risveglio Hella la pianta nel primo suolo sacro che
-> tocca: `[INFERRED]` diventa un piccolo àncora druidico (un +1 sacro 1/giorno
-> al Radicamento) o va nel 1° seme-dono vuoto della Collana. 0 mo commerciali,
-> peso emotivo enorme.
+> la **ghianda annerita** stretta nel pugno da quando è morta — l'ultima che
+> raccolse in vita (è la stessa **«Ghianda di Speranza»** che l'affresco A8
+> mostra, master #2). Al risveglio Hella la pianta nel primo suolo sacro che
+> tocca (CANONE DM 2026-07-23): diventa un piccolo **àncora druidico** (+1 sacro
+> 1/giorno al Radicamento) **o** va nel 1° seme-dono vuoto della Collana — scelta
+> della giocatrice. 0 mo commerciali, peso emotivo enorme.
 
 > **Cuore di Moradin — dopo la spesa:** non lascia loot (si dissolve), ma sulla
 > superficie dell'Altare resta un'**impronta a forma di cuore**, tiepida per

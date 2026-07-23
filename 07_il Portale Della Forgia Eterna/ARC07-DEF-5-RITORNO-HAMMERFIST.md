@@ -164,9 +164,8 @@ Volontà **CD 15** o **storditi 1 round** all'arrivo (il contraccolpo del salto)
 
 **Terreno (callout):** caverna ~30×24 m (MAPPA CM-1); altare centrale rialzato;
 10 statue-pilastro (copertura); porte di mithral a nord (stanno cedendo);
-tunnel di fuga a ovest. **Zona sacra** `[INFERRED]` (Consacrazione di Moradin:
-+1 ai TS vs paura per i difensori — dettaglio meccanico aggiunto per coerenza,
-non attestato nelle fonti; il DM può ometterlo). Vedi CM-1.
+tunnel di fuga a ovest. **Zona sacra** (Consacrazione di Moradin: +1 ai TS vs
+paura per i difensori — CANONE DM 2026-07-23). Vedi CM-1.
 
 ---
 

@@ -152,9 +152,9 @@ davanti a un pannello completato = **Benedizione della Cronaca** (§3).
   curiosità **avida**: una porta sul passato è il più grande "mercato" che
   esista — tesori dimenticati, occasioni. Il DM tenga il gancio: al #4 la sua
   cupidigia avrà cosa mordere (e Vatore lo aspetta).
-- Se ha preso il **Seme-Mercato di Varis** (master #1 §6-bis), qui l'Anello lo
+- Se ha preso il **Marchio di Varis** (master #1 §6-bis, CANONE), qui l'Anello lo
   «pizzica» ogni volta che passa davanti ad A6: il marchio e il caos temporale
-  risuonano `[INFERRED — hook per il DM]`.
+  risuonano (conseguenza canonica del Marchio, DM 2026-07-23).
 
 ### 🌙 HELLA — la promessa dipinta (solo manifestazione, mai dialogo)
 - Hella non ha coscienza di ciò che accade: il suo spirito è nell'Incudine del
@@ -543,7 +543,7 @@ rinnovabili 1/giorno tornando alla Sala.
 | Dove | Oggetto / dono (pregenerato) | Valore |
 |---|---|---|
 | Altare (§7) | **4 Benedizioni** rinnovabili — equivalenti a Resist Energy (1.000), Endure Elements (500), pozioni di cura (3/giorno), Forza della Montagna | ricchezza speciale (non-WBL) |
-| A8 (manifestazione) | **Ghianda di Speranza** `[INFERRED]`: la quercia-e-martello incisa da Hella lascia, ai piedi dell'affresco, una **piccola ghianda di pietra verde** — al rito del #3 vale un +1 sacro (o va nel 1° seme della Collana). Curiosità sacra, 0 mo commerciali. | — |
+| A8 (manifestazione) | **Ghianda di Speranza** (CANONE DM 2026-07-23): è la **stessa ghianda annerita** che Hella stringe nel pugno dalla morte (master #3 §7-bis); l'affresco A8 la «mostra» come segno. Al rito del #3 diventa un piccolo àncora druidico (+1 sacro 1/g al Radicamento) **o** va nel 1° seme della Collana. Curiosità sacra, 0 mo. | — |
 | Stanza della Corona | Sotto il dais del trono (Osservare CD 22): **reliquia dei Custodi caduti** — un anello sigillo nanico annerito, appartenuto a un portatore della Corona di ere fa (200 mo per un collezionista; +2 di circostanza a Diplomazia coi nani devoti se indossato) | 200 mo |
 
 Ricchezza speciale (Corona 2/3, Bracieri completi) già contata al master #1.

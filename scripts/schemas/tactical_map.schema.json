@@ -12,6 +12,12 @@
       "description": "Versione del contratto. Attuale: '1.0'.",
       "default": "1.0"
     },
+    "units_in": {
+      "type": "string",
+      "enum": ["squares", "meters"],
+      "default": "squares",
+      "description": "Unita di misura di TUTTE le coordinate/dimensioni della spec. 'squares' (default): quadretti interi, come definito da questo schema. 'meters': metri reali (anche non interi) che compile_map_json.py converte in quadretti interi (round(m / scale_m_per_square), edge-snapping per i rect) PRIMA di applicare questo schema. In modalita 'meters' i vincoli interi qui sotto valgono sul risultato compilato, non sull'input: valida i file in metri con lo script, non con questo schema."
+    },
     "title": {
       "type": "string",
       "minLength": 3,

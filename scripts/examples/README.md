@@ -9,6 +9,7 @@ progettare una mappa tattica con strutture ed eserciti (vedi
 |---|---|
 | `esempio-accampamento-mano-rossa.json` | Accampamento della Mano Rossa: foresta + strada + guado, palizzata di legno con cancello, tenda di comando, bracieri (luci), fossa-trappola, **unità di esercito per aree occupate** (arcieri/fanteria hobgoblin con `quantity`, Wyrmlord e adepto come token singoli). |
 | `campo-drow-1.json` (+ `campo-drow-1.md`, `rendered/…svg`) | Ricostruzione dell'Ultra-Clear **Campo Drow 1** (quest di Hella) con l'**overlay professionale**: `north` (bussola), `movements` (2 rotte pattuglia con `loop`), roster numerato 1-14 dai `name`/`cr` delle unità, 4 zone etichettate (tende/comando/cucina/incineratore). Le coordinate dei token coincidono **esattamente** con quelle dichiarate nel master originale (l'ASCII a mano aveva ~1 quadretto di drift). Master + SVG committati e validati in CI. |
+| `esempio-misure-in-metri.json` | Stessa Modalità 3 ma **authoring in metri** (`"units_in": "meters"`): sala 45×33 m → 30×22 quadretti, braciere/portale/lastroni/unità dichiarati in metri reali e convertiti da `compile_map_json.py` (`round(m/1,5)`, edge-snapping sui rect). Chiude il problema **proporzioni/dimensionamento** (distinto dal drift ASCII): le misure non si stimano più a occhio. |
 
 Prova il round-trip completo (nessun file committato: output in una dir a
 scelta):

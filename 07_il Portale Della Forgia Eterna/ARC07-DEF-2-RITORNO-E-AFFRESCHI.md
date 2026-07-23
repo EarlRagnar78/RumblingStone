@@ -647,13 +647,14 @@ A8 60% · A7 ⏳~3g18h. La Sala HA REGISTRATO la vittoria: mostralo.
  STANZA DELLA CORONA — 15 m × 19,5 m (10 col × 13 righe · 1,5 m/quadretto)
  NORD in alto (trono/muro) · ingresso a SUD (righe basse) · ora SANTUARIO
 ════════════════════════════════════════════════════════════════════════
+@north S
 COL →   A  B  C  D  E  F  G  H  I  J
-13     ⬛ 🕳️ 🗿 📜 🌀 📜 🗿 🕳️ ⬛ ⬛   NORD · 📜 muro→PARETE della CRONACA · 🌀 portale drow SIGILLATO (dietro)
+13     ⬛ 🗿 🗿 📜 🌀 📜 🗿 🗿 ⬛ ⬛   NORD · 📜 muro→PARETE della CRONACA · 🌀 portale drow SIGILLATO (dietro)
 12     🔲 ⬛ 🔲 ⬛ 👑 👑 ⬛ 🔲 ⬛ 🖼️   👑 TRONO (E-F12, VUOTO: la Corona è di Thorik) · 🖼️ Dipinti Invisibili
 11     🔲 ⬛ 🔲 ⬛ ✝️ ⬛ ⬛ 🔲 🪨 🖼️   ✝️ E11 = dove sedeva Belkram (ARC-06) · 🪨 macerie
 10     🔲 ⬛ 🔲 ⬛ ⬛ ⬛ ⬛ 🔲 ⬛ ⬛   B10 = ex nascondiglio Yochlol 2
 09     ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛   H09 = ex nascondiglio Yochlol 1
-08     🕳️ ⬛ 🔲 ⬛ ⬛ ⬛ 🔲 ⬛ 🕳️ ⬛
+08     🗿 ⬛ 🔲 ⬛ ⬛ ⬛ 🔲 ⬛ 🗿 ⬛
 07     ⬛ 🪨 ⬛ ⬛ ⬛ ⬛ ⬛ 🪨 ⬛ ⬛   🪨 macerie (terreno difficile ×2)
 06     🗿 ⬛ 🔲 ⬛ ⬛ ⬛ 🔲 ⬛ 🗿 ⬛
 05     ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
@@ -664,7 +665,7 @@ COL →   A  B  C  D  E  F  G  H  I  J
 ════════════════════════════════════════════════════════════════════════
 LEGENDA · ⬛ pavimento (ora pulito) · 🔲 colonne parallele (copertura +4 CA,
 spezzano la linea di vista) · 🗿 statue di Moradin (deturpate in ARC-06 → in
-restauro) · 🕳️ alcove · 🪨 macerie (terreno difficile) · 📜 muro dietro il
+restauro) · 🗿 in B13/H13/A08/I08 = alcove-nicchie (statue del culto deturpate, in restauro); in C13/G13/A06/I06 = statue dei re · 🪨 macerie (terreno difficile) · 📜 muro dietro il
 trono = ora PARETE della CRONACA (incisioni-specchio, DEF-2 §6) · 🌀 portale
 drow SIGILLATO (dietro il muro; inerte dalla caduta di Urialle) · 👑 trono
 vuoto · 🖼️ Dipinti Invisibili (J11-J12, come in ARC-06) · ✝️ postazione di

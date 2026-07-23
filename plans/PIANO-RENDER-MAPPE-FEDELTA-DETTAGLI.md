@@ -111,6 +111,17 @@ Benchmark disponibili in repo (`00_Red Hand Of Doom/Immagini/Area Map/…/MappeI
 
 ## §5 — Stato
 
-🔵 **APERTO — non iniziato.** È un task **futuro** su richiesta DM: l'ASCII
-ultra-clear resta lo standard operativo *ora*; questo piano si esegue quando si
-vuole la resa a stampa fedele. Nessun lotto ancora chiuso.
+🟢 **ESEGUITO (2026-07-23, via DM «vai con il piano F5»)** — implementato il
+nucleo F1→F5 in un passaggio; ambito effettivo per fase:
+
+| Fase | Esito |
+|---|---|
+| **F1 contratto** | ✅ implicito nel parser: annotazioni a lato-riga = ≥3 spazi, `│` staccato (≥2 spazi), box-drawing o qualunque carattere non-emoji dopo le celle; header `N col × M righe · S m` = dichiarazione validabile; `<!-- render: none -->` prima del fence = mappa schematica non-resa |
+| **F2 parser fedele** | ✅ `parse_row_cells` riscritto (stop a frecce/prosa/emoji-in-annotazione → zero celle fantasma); validazione header-dims vs celle (warning, `--strict` = fatale); **scala dichiarata** onorata in sottotitolo e barra scala (3 m per CM-1); non-regressione: i 17 SVG legacy restano byte-identici |
+| **F3 legenda semantica** | ✅ parziale: la riga `LEGENDA · 🧲 descrizione · …` in-fence è parsata automaticamente → i simboli locali mostrano la loro descrizione reale nell'SVG (niente più «simbolo locale»). I simboli UNIVERSALI mantengono il testo canonico di `SYMBOLS` (per scelta: la legenda universale non si overrida). Callout ancorati con freccia: NON implementati (restano `@mark/@path/@zone`) |
+| **F4 non-rettangolari** | ✅ marker `render: none`; le schematiche ARC-07 (T-1, T-4, T-5, S-1, R-1, M7-A) non producono griglie false (non matchano il parser) e restano solo-ASCII per scelta |
+| **F5 passata ARC-07** | ✅ 6 griglie rettangolari dell'Atlante (T-2, T-3, T-6, S-2, M7-B, CM-1) portate al contratto (header corretti 18×10/20×8, T-6 ripristinata 24×16, `@north S` su S-2, alcove→statue) e **rese** in `07_.../Mappe/rendered/ARC07-MAPPE-DEFINITIVO_map01…06.svg`; verifica visiva PNG su CM-1 e S-2 |
+| **F6 CI** | ✅ coperto da `validate_maps` esistente (ri-rende i master col parser nuovo e pretende byte-identità → il contratto è enforced su ogni SVG committato); `--strict` disponibile per il check dims in locale |
+
+**Residuo aperto (non bloccante)**: callout grafici ancorati (F3 pieno) e
+un'eventuale promozione di `--strict` a default. Da valutare solo se servirà.

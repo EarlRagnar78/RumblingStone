@@ -1470,7 +1470,7 @@ finale del Fuoco/P3) ·
 
 ```
 ════════════════════════════════════════════════════════════════════════
- FORESTA DI CRISTALLI GIGANTI — 27 m × 18 m (18 col × 12 righe · 1,5 m)
+ FORESTA DI CRISTALLI GIGANTI — 27 m × 15 m (18 col × 10 righe · 1,5 m)
  Terreno difficile ovunque (movimento ×2) · gravità 2×
 ════════════════════════════════════════════════════════════════════════
 COL →  A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R
@@ -1495,7 +1495,7 @@ COL →  A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R
 
 ```
 ════════════════════════════════════════════════════════════════════════
- CAMPO DEI CRISTALLI VIVENTI — 30 m × 21 m (20 col × 14 righe · 1,5 m)
+ CAMPO DEI CRISTALLI VIVENTI — 30 m × 12 m (20 col × 8 righe · 1,5 m)
  GRAVITÀ 2×   ·   ingresso da OVEST (A), uscita a EST (T)
 ════════════════════════════════════════════════════════════════════════
 COL →  A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R  S  T

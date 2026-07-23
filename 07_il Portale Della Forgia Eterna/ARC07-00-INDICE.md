@@ -77,12 +77,12 @@ non la duplicano, vi rimandano).
 - **Mappe a stampa (pergamena SVG)**: `Mappe/rendered/` — rese dal pipeline
   `render_map_svg.py`. Oggi coprono le stanze «storiche» (Stanza della Corona,
   Sala della Forgia, colonna-K, Forgia Adamantina) dai master `Mappe/Portale-Forgia-L1/L2-REVISED-UltraClear.md`.
-- **Gap noto**: le **nuove** location canoniche del consolidamento (Camera di
-  Terros, Cuore della Montagna, Hammerfist ≈372, cerchio del rito) hanno la
-  mappa ASCII nel master ma **non ancora** la resa SVG a stampa. Le griglie ASCII
-  embedded portano annotazioni a lato-riga (ottime da leggere, ma non conformi
-  al contratto di resa: vanno ripulite prima del render). Vedi
-  `Mappe/Atlante-Visivo-Mappe.md` per l'atlante.
+- **Rese a pergamena delle mappe-beat**: ✅ le 6 griglie rettangolari
+  dell'Atlante (T-2, T-3, T-6/Terros, S-2, M7-B/Skullcrusher, CM-1/Cuore della
+  Montagna) sono rese in `Mappe/rendered/ARC07-MAPPE-DEFINITIVO_map*.svg`
+  (renderer a fedeltà piena, piano RENDER-MAPPE-FEDELTÀ F1-F5). Le mappe
+  schematiche (T-1, T-4, T-5, S-1, R-1, M7-A) restano solo-ASCII per scelta.
+  Vedi `Mappe/Atlante-Visivo-Mappe.md`.
 
 ---
 

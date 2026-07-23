@@ -10,8 +10,8 @@
 > **Rese SVG a pergamena** (stanze «prima visita», ancora valide):
 > `Mappe/rendered/` dai master `Portale-Forgia-L1/L2-REVISED-UltraClear.md`.
 >
-> **Resa SVG delle mappe-beat DEF** (Terros, Cuore della Montagna, ecc.): task
-> futuro `plans/PIANO-RENDER-MAPPE-FEDELTA-DETTAGLI.md` — fino ad allora si
-> stampa l'ASCII ultra-clear dell'Atlante Definitivo.
+> **Resa SVG delle mappe-beat DEF**: ✅ fatta (piano RENDER-MAPPE-FEDELTÀ F5) —
+> le 6 griglie rettangolari (T-2, T-3, T-6, S-2, M7-B, CM-1) sono in
+> `rendered/ARC07-MAPPE-DEFINITIVO_map*.svg`; le schematiche restano solo-ASCII.
 >
 > Immagini d'atmosfera e musica: `../ARC07-ATLANTE-ASSET.md` e cartella `../Immagini/`.

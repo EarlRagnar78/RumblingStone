@@ -17,9 +17,13 @@
 > add-on DM per posizioni, ambiente e tattiche di PNG/villain/mostri).
 >
 > **ASCII = fonte canonica** (decisione DM 2026-07-23): l'ASCII ultra-clear porta
-> **tutti** i dettagli senza perdite. La **resa a pergamena SVG** è un derivato
-> **futuro** (vedi `plans/PIANO-RENDER-MAPPE-FEDELTA-DETTAGLI.md`): NON si degrada
-> l'ASCII per il renderer. Le mappe **già rese** restano in `Mappe/rendered/`.
+> **tutti** i dettagli senza perdite. Le **6 mappe a griglia rettangolare**
+> (T-2, T-3, T-6, S-2, M7-B, CM-1) sono **rese a pergamena SVG** in
+> `Mappe/rendered/ARC07-MAPPE-DEFINITIVO_map*.svg` col renderer a fedeltà piena
+> (F1-F5 di `plans/PIANO-RENDER-MAPPE-FEDELTA-DETTAGLI.md`: niente celle
+> fantasma, dims validate, scala dichiarata, legenda locale automatica). Le
+> mappe **schematiche** (T-1, T-4, T-5, S-1, R-1, M7-A) restano solo-ASCII per
+> scelta: sono diagrammi, non griglie.
 >
 > **Sistema**: D&D 3.5 (max PF1e). **CD** non DC. Le mappe originali embedded nei
 > master restano valide e identiche a queste: questo file le **consolida e
@@ -98,7 +102,7 @@
 
 ```
 ════════════════════════════════════════════════════════════════════════
- FORESTA DI CRISTALLI GIGANTI — 27 m × 18 m (18 col × 12 righe · 1,5 m)
+ FORESTA DI CRISTALLI GIGANTI — 27 m × 15 m (18 col × 10 righe · 1,5 m)
  Terreno difficile ovunque (movimento ×2) · gravità 2×
 ════════════════════════════════════════════════════════════════════════
 COL →  A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R
@@ -118,7 +122,7 @@ frastagliata (terreno difficile) · 🕳️ punto d'emersione Xorn · ⬛ Fauci 
 Diamante (élite) · 💠 base corrosa del pilastro (crolla → ponte) · 🛡️ Thorik
 (F04) · 🔮 Artemis (I04) · 🥋 Tordek (G05).
 ```
-- **Tipo / scala**: tattica, 18×12, 1,5 m. Combattimento d'imboscata.
+- **Tipo / scala**: tattica, 18×10, 1,5 m. Combattimento d'imboscata.
 - **Terreno & altitudini**: tutto **terreno difficile** (movimento ×2) + gravità
   2× → il party è LENTO; i cristalli 🔷 danno **copertura totale**
   (indistruttibili). Il pilastro corroso 💠 (G08) può essere fatto **crollare**
@@ -141,7 +145,7 @@ Diamante (élite) · 💠 base corrosa del pilastro (crolla → ponte) · 🛡�
 
 ```
 ════════════════════════════════════════════════════════════════════════
- CAMPO DEI CRISTALLI VIVENTI — 30 m × 21 m (20 col × 14 righe · 1,5 m)
+ CAMPO DEI CRISTALLI VIVENTI — 30 m × 12 m (20 col × 8 righe · 1,5 m)
  GRAVITÀ 2×   ·   ingresso da OVEST (A), uscita a EST (T)
 ════════════════════════════════════════════════════════════════════════
 COL →  A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R  S  T
@@ -257,19 +261,37 @@ LEGENDA · 🧲 pareti di magnetite LETALI per chi porta metallo · ⬜ paviment
  Vista: piano equatoriale attorno all'Altare (24 col × 16 righe · 1,5 m)
 ════════════════════════════════════════════════════════════════════════
 COL →  A B C D E F G H I J K L M N O P Q R S T U V W X
-01    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️  ← muro curvo: crash 2d6 se spinti
-06    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟡🟡🟡🟡🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️  ← 🟡 bordo Altare (rune smeraldo)
+01    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️   ← muro curvo: crash 2d6 se spinti (Push)
+02    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️
+03    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️      ZONA ZERO-G
+04    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️   ← 🔮 Artemis vola qui (Terros −4 vs aria)
+05    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️
+06    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟡🟡🟡🟡🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️   ← 🟡 = bordo Altare (rune smeraldo)
 07    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟩🟩🟩🟩🟩🟩🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️
-08    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟩🟩🟩⬛⬛🟩🟩🟩🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️  ← ⬛ TERROS (init: sull'Altare)
+08    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟩🟩🟩⬛⬛🟩🟩🟩🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️   ← ⬛ = TERROS (init: sull'Altare)
 09    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟩🟩🟩⬛⬛🟩🟩🟩🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️
-10    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟩🛡️🟩🟩🟩🥋🟩🟩🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️  ← 🛡️Thorik 🥋Tordek (sull'Altare)
+10    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟩🛡️🟩🟩🟩🥋🟩🟩🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️   ← 🛡️Thorik  🥋Tordek (sull'Altare)
 11    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟩🟩🟩🟩🟩🟩🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️
-12    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟡🟡🟡🟡🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️  ← ALTARE Ø 6 m = gravità normale
-       (🔮 Artemis vola nella ZONA ZERO-G attorno all'Altare — Terros −4 vs aria)
+12    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟡🟡🟡🟡🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️   ← ALTARE Ø 6 m = gravità normale
+13    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️
+14    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️      Earth Glide: Terros
+15    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️      entra/esce dall'Altare
+16    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️
 ════════════════════════════════════════════════════════════════════════
-LEGENDA · 🌫️ ZERO-G (spinta lineare a ½ mov · muro curvo = crash 2d6) · 🟡 bordo
-Altare (rune) · 🟩 Altare (gravità NORMALE, Ø 6 m) · ⬛ Terros (Enorme, 345 pf) ·
-🛡️Thorik · 🥋Tordek (sull'Altare) · 🔮 Artemis (in volo, zero-G).
+LEGENDA · 🟩 Altare calpestabile (grav. normale) · 🟡 bordo/rune smeraldo
+⬛ Terros (Enorme, 4,5 m) · 🛡️ Thorik · 🥋 Tordek · 🔮 Artemis · 🌫️ ZERO-G
+DILEMMA: sull'Altare = Earth Mastery +1 per Terros MA stabilità e no-Onda-in-
+aria; in zero-G = eviti Earth Mastery MA Push ti sbatte al muro (2d6) e ti
+serve volo/Equilibrio. Artemis in 🌫️ = quasi intoccabile (−4 boss) = star DPS.
+Terros NON vola: tienilo in zero-G → perde la rigenerazione e fatica.
+────────────────────────────────────────────────────────────────────────
+SCENOGRAFIA (MAP 6): ingresso a NORD = 🌉 PONTE DI CRISTALLO (45 m; 50% crolla
+se Terros usa un colpo sismico → caduta 15 m, taglia la ritirata: non sostarci).
+PIATTAFORME LATERALI 🟦 a EST e OVEST (+3 m, scale): posizioni di tiro per
+Artemis. ALTARE centrale 🟩: lo Smeraldo 💚 LEVITA sopra; alla VITTORIA l'Altare
+scende e la gemma diventa raggiungibile (§9). PARETI SFERICHE di cristallo:
+vista sul Piano oscuro fuori; aria pura dentro. Acustica: ogni colpo è un tuono.
+════════════════════════════════════════════════════════════════════════
 ```
 - **Tipo / scala**: tattica BOSS, sfera Ø 60 m. **Terros l'Antico, CR 15, 345 pf**.
 - **Terreno & altitudini**: **ZERO-G** ovunque (🌫️) tranne l'**Altare** centrale
@@ -358,13 +380,14 @@ LEGENDA · A1-A8 affreschi 8×5 m (vetro indistruttibile) · 🔲 colonne sacre
  STANZA DELLA CORONA — 15 m × 19,5 m (10 col × 13 righe · 1,5 m/quadretto)
  NORD in alto (trono/muro) · ingresso a SUD (righe basse) · ora SANTUARIO
 ════════════════════════════════════════════════════════════════════════
+@north S
 COL →   A  B  C  D  E  F  G  H  I  J
-13     ⬛ 🕳️ 🗿 📜 🌀 📜 🗿 🕳️ ⬛ ⬛   NORD · 📜 muro→PARETE della CRONACA · 🌀 portale drow SIGILLATO (dietro)
+13     ⬛ 🗿 🗿 📜 🌀 📜 🗿 🗿 ⬛ ⬛   NORD · 📜 muro→PARETE della CRONACA · 🌀 portale drow SIGILLATO (dietro)
 12     🔲 ⬛ 🔲 ⬛ 👑 👑 ⬛ 🔲 ⬛ 🖼️   👑 TRONO (E-F12, VUOTO: la Corona è di Thorik) · 🖼️ Dipinti Invisibili
 11     🔲 ⬛ 🔲 ⬛ ✝️ ⬛ ⬛ 🔲 🪨 🖼️   ✝️ E11 = dove sedeva Belkram (ARC-06) · 🪨 macerie
 10     🔲 ⬛ 🔲 ⬛ ⬛ ⬛ ⬛ 🔲 ⬛ ⬛   B10 = ex nascondiglio Yochlol 2
 09     ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛   H09 = ex nascondiglio Yochlol 1
-08     🕳️ ⬛ 🔲 ⬛ ⬛ ⬛ 🔲 ⬛ 🕳️ ⬛
+08     🗿 ⬛ 🔲 ⬛ ⬛ ⬛ 🔲 ⬛ 🗿 ⬛
 07     ⬛ 🪨 ⬛ ⬛ ⬛ ⬛ ⬛ 🪨 ⬛ ⬛   🪨 macerie (terreno difficile ×2)
 06     🗿 ⬛ 🔲 ⬛ ⬛ ⬛ 🔲 ⬛ 🗿 ⬛
 05     ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
@@ -375,7 +398,7 @@ COL →   A  B  C  D  E  F  G  H  I  J
 ════════════════════════════════════════════════════════════════════════
 LEGENDA · ⬛ pavimento (ora pulito) · 🔲 colonne parallele (copertura +4 CA,
 spezzano la linea di vista) · 🗿 statue di Moradin (deturpate in ARC-06 → in
-restauro) · 🕳️ alcove · 🪨 macerie (terreno difficile) · 📜 muro dietro il
+restauro) · 🗿 in B13/H13/A08/I08 = alcove-nicchie (statue del culto deturpate, in restauro); in C13/G13/A06/I06 = statue dei re · 🪨 macerie (terreno difficile) · 📜 muro dietro il
 trono = ora PARETE della CRONACA (incisioni-specchio, DEF-2 §6) · 🌀 portale
 drow SIGILLATO (dietro il muro; inerte dalla caduta di Urialle) · 👑 trono
 vuoto · 🖼️ Dipinti Invisibili (J11-J12, come in ARC-06) · ✝️ postazione di

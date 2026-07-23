@@ -420,6 +420,76 @@ un cuore di energia terrestre.»*
 
 ---
 
+## §7-bis — HELLA RISORTA: scheda giocabile + prep di battaglia (handout DM)
+
+> Reintrodotto dal P3B-COMPLETO §7/§9: la **scheda completa** serve subito —
+> Hella è il 4° PG dal master #4 in poi. Consegnala al giocatore.
+
+```
+============================================================
+   HELLA OAKENSHIELD — Dream Dwarf · Ranger 1 / Druida 12
+   Ibrido Treant (risorta) · Neutrale Buono · Media
+============================================================
+PF: ~110 (13 DV) · CA 20 (+2 cuoio borch., +5 SAG nat. druida) · Iniz +0
+BAB/Lotta: +9/+4 · Velocità 6 m (armatura media)
+FOR 12 · DES 10 · COS 18 · INT 13 · SAG 20(+5) · CAR 12
+TS: Tempra alto · Riflessi medio · Volontà alto (SAG 20)
+Scurovisione 27 m (Dream Dwarf)
+------------------------------------------------------------
+CAPACITÀ IBRIDO TREANT (dal viaggio + rito)
+• Doppio tipo Umanoide(Nano)/Vegetale · VULNERABILITÀ AL FUOCO ×1,5
+• Resistenza al Freddo 15 · Rigenerazione 1 pf/round (a contatto terra/pietra;
+  non se ha preso fuoco il round prima)
+• Empatia Vegetale +4 · Fotosintesi (1/g: 2d8 pf a 1h di sole)
+• Radicamento (1/g, 5 round: immune a spinta/travolgere/sbilanciare; immobile)
+• Marchio della Veritade (Prova I): +4 Diplomazia coi nani di Moradin; 1/g
+  verità→Volontà CD 17 o scosso
+• Radice Silenziosa (Prova II): +2 Percepire Intenzioni; 1/g empatia immediata
+• Radici del Mondo (Prova III): rigenera su suolo sacro/druidico; 1/g
+  Radicamento corale (+1 morale TS agli alleati entro 9 m, 5 round, lei immobile)
+DONI DEL PARTY (§5, solo se donati): Pelle di Adamantio (RD 3/−) · Timeless
+  Body · Rinascita Spontanea (1/g)
+------------------------------------------------------------
+INCANTESIMI DRUIDA (CL 12) — slot: 6/5+1/5+1/4+1/4+1/3+1/2+1/1+1
+Preparati tipici pre-battaglia: Entangle, Faerie Fire, Produce Flame · Barkskin,
+Bull's Strength, Flaming Sphere, Heat Metal · Call Lightning, Cure Serious,
+Spike Stones, Summon Nature's Ally III · Cure Critical, Freedom of Movement,
+Ice Storm, SNA IV · Call Lightning Storm, Wall of Thorns, SNA V · Mass Cure
+Moderate, Transport via Plants, SNA VI
+TALENTI: Augment Summoning, Spell Focus (Conjuration), Natural Spell, Extend
+Spell, Combat Casting, Extra Wild Shape, Power of Nature (SNA +2 CL, custom)
+------------------------------------------------------------
+COMPAGNO — DURIK RIFORGIATO (12 DV) · RD 5/adamantio · Tremorsense · legame
+telepatico entro 18 m · si frappone tra Hella e il pericolo ("Protegge Hella").
+Evocato dal 3° seme della Collana. (Il rinoceronte visto in gioco è la FORMA
+SELVATICA di Hella, non un compagno.)
+EQUIP (recuperato dal corpo, §11 C): Cuoio Borchiato +2, Scudo di Legno +1,
+Scimitarra +1, Periapto di Saggezza +2, Mantello della Resistenza +2, Bacchetta
+di Cura Ferite Moderate (25 cariche).
+ARTEFATTO: Collana dei Semi Eterni (§7).
+============================================================
+```
+
+### Prep di battaglia (1 ora dopo il rito) — reintrodotto
+Hella cammina, prova il corpo nuovo (*«la pietra mi parla: antica, forte,
+protettiva»*), prega, prepara gli incantesimi. Prova *Produce Flame*: la fiamma
+verde-oro funziona **ma la sente ostile** (vulnerabilità). Evoca un orso: appare
+mezzo-corteccia, cambiato dalla sua nuova affinità.
+
+**Le Benedizioni di Moradin su Hella** (Moradin: *«Combatterai i miei figli.
+Proteggili. Proteggi il focolare.»*) — le 6 standard (master #2 §7) **+**:
+- **Mantello della Fiamma** (Resist Fuoco **20**) — **cruciale**: mitiga la sua
+  vulnerabilità per una battaglia (falla valere prima di Skullcrusher/Fauci).
+- **Benedizione di Moradin Incarnato** (1/battaglia): +2 sacro att/danni, +4 vs
+  paura/charme, **1 ri-tiro**.
+
+> **Momento privato Hella + Tordek** (5 min di RP, lasciar improvvisare): la
+> gratitudine, la paura della morte perduta, le promesse di un dopo. È il
+> pagamento emotivo del legame che ha tenuto Hella ancorata nel buio. *(Se al
+> §5 Tordek ha rifiutato il Dono, questo momento è più incrinato — vedi §5.)*
+
+---
+
 ## §8 — IL RACCONTO DELLE PROVE (l'asimmetria si scioglie) — spotlight di Hella
 
 > Il momento in cui i due mondi si toccano: i PG hanno agito nel Piano della

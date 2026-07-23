@@ -965,6 +965,16 @@
 
 ## 🗺️ PART 2: HAMMERFIST BATTLE MAPS
 
+> ⚠️ **CROSS-REFERENCE — contenuto ARC-08, non ARC-07.** Le mappe 10–22 di
+> questa sezione appartengono all'arco **08_La Battaglia Di Hammerfist** e
+> restano qui solo perché questo file è nato come raccolta combinata delle
+> due avventure. Le versioni canoniche/aggiornate sono in:
+> `../../08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md` (guida agli
+> incontri, incl. Incontro 2F "L'Incrocio Silenzioso" = MAP 19),
+> `../../08_La Battaglia Di Hammerfist/Mappe/Hammerfist-Lotto-1/2/3-*.md` e
+> `../../08_La Battaglia Di Hammerfist/Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md`.
+> In caso di discrepanza, fanno fede i file ARC-08.
+
 ### MAP 10: HIDDEN PATH (Sentiero Nascosto)
 **Adventure:** Hammerfist Battle - Session 1  
 **Encounter:** Stealth/Infiltration - 3 Orc Worg Riders
@@ -1494,7 +1504,8 @@ Looking UP from battlements, dragon diving with breath weapon.
 
 ### MAP 19: SILENT CROSSROADS (Incrocio Silenzioso)
 **Adventure:** Hammerfist Battle - Session 3  
-**Encounter:** Ambush - 8 Bugbear Assassins + 7 Hobgoblins
+**Encounter:** Ambush - 8 Bugbear Assassins + 7 Hobgoblins  
+**Cross-reference:** guida narrativa e sequenza round-per-round in `../../08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md` → Incontro 2F "L'Incrocio Silenzioso"; griglia emoji in `../../08_La Battaglia Di Hammerfist/Mappe/Hammerfist-Lotto-3-FINALE.md` → MAPPA 3Z
 
 **DIMENSIONS:**
 - Area: 50m × 50m cavern

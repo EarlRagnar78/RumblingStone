@@ -4,7 +4,7 @@
      MASTER UNICO (post-consolidamento 2026-07-23):
              ARC07-DEF-1-PIANO-TERRA-TERROS.md  (autosufficiente, qualità AP —
              fonde Interludio-Terra + P4-COMPLETO/RICALIBRATO + Terros.md +
-             Risveglio Bracieri + viaggio di Hella-risultati).
+             Risveglio Bracieri + viaggio di Hella-risultati; sorgenti in _ARCHIVIO/).
      Hints per-PG della sessione: HANDOUT-2-hints-per-pg-prossima-sessione.hb.md
      MATERIALE DM — non per i giocatori (tranne l'HANDOUT-2, che si consegna). -->
 

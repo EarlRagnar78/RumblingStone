@@ -19,7 +19,7 @@ I PG sono in città a preparare difese, dormire o pianificare quando scatta l’
 > le darebbe e **tira i TS contro veleno alle CD standard 3.5** (High Priestess
 > e minion fungini usano veleno da lama/spore). Default (rituale non giocato o
 > respiro concesso): nessuna modifica, Hella con doni pieni. Fonte:
-> `07_il Portale Della Forgia Eterna/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`
+> `07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`
 > §2-BIS «Il ramo del rifiuto» → *Tabella echi*, riga «Tordek rifiuta il respiro».
 
 ---

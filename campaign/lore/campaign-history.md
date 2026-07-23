@@ -474,7 +474,7 @@ and back to the surface for the Red Hand campaign mainline.
 
 - **PDF Quick Reference:** `07_il Portale Della Forgia Eterna/SinergieArteFattiQuickReference.pdf`
 - **Earth Awakening:** `PG/Artefatti/Artefatti-Pg/Tordek/03_Risveglio_Completo_Bracieri_Terra.md`
-- **Hella Resurrection:** `07_il Portale Della Forgia Eterna/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`
+- **Hella Resurrection:** `07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`
 
 ---
 

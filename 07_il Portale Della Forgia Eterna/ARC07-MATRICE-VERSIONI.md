@@ -23,20 +23,20 @@
 | **P3** — Piano del Fuoco | `PortaleForgia-P3-PianoFuoco-PARTE1.md` + `-PARTE2.md` | base | **MASTER** (ricalibrato ↓) |
 | P3 — ricalibrazione scontri | `RicalibrazioneScontriPianoDelFuoco.md` | scontri ribilanciati Lv13 | *ricalibrazione* |
 | P3 — ricalibrazione finale | `La_Piramide_Ricalibrata.md` | finale P3 (Piramide) ribilanciato | *ricalibrazione* |
-| Interludio P3→P4 | `PortaleForgia-Interludio-Terra.md` | ponte narrativo | *annesso* |
-| **P4** — Piano della Terra | `PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md` | **cornice narrativa/scene** | **MASTER narrativo** (DM 2026-07-03) |
-| P4 — combat/boss | `PortaleForgia-P4-PianoTerra-RICALIBRATO.md` + `Terros.md` | **statblock potenziati (Hard)** | **MASTER di combattimento** — power-up VOLUTO (D8: artefatti unici) |
+| Interludio P3→P4 | `_ARCHIVIO/PortaleForgia-Interludio-Terra.md` | ponte narrativo | *annesso* |
+| **P4** — Piano della Terra | `_ARCHIVIO/PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md` | **cornice narrativa/scene** | **MASTER narrativo** (DM 2026-07-03) |
+| P4 — combat/boss | `_ARCHIVIO/PortaleForgia-P4-PianoTerra-RICALIBRATO.md` + `_ARCHIVIO/Terros.md` | **statblock potenziati (Hard)** | **MASTER di combattimento** — power-up VOLUTO (D8: artefatti unici) |
 | **Viaggio di Hella** (P4↔P3B) | `PortaleForgia-P4-PianoTerra-P3B-HELLA-...-MONDO-v2.md` | viaggio dello spirito, v2 | **MASTER del viaggio** (fonte del file risultati) |
 | Viaggio di Hella — v1 | `PortaleForgia-P4-PianoTerra-P3B-HELLA-...-MONDO.md` | viaggio dello spirito, v1 | ~~DEPRECATO~~ (sostituito da v2) |
 | Viaggio di Hella — risultati | `PortaleForgia-P4-PianoTerra-P3B-HELLA-...-MONDO-risultati.md` | esiti giocati | **CANONE** (D12) |
 | Viaggio di Hella — appunti | `PortaleForgia-P4-pianoTerra-P3b-Hella-...-risultati.md` (minuscolo) | appunti grezzi DM | ~~DEPRECATO~~ (A7) |
-| **P3B** — Resurrezione Hella | `PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` | rituale completo | **MASTER** (eletto in B2, integra il viaggio giocato) |
-| P3B — merge breve | `PortaleForgia-P3B-ResurrezioneHella-RICALIBRATO-alternative.md` | merge sintetico | ~~DEPRECATO~~ (B2) |
-| **P5** — Viaggio 1.000 anni | `PortaleForgia-P5-DEFINITIVO-PARTE1.md` + `-PARTE2.md` | atto completo | **MASTER lungo** (fonte per il fast-play B3) |
-| P5 — versione precedente | `PortaleForgia-FINAL-P5.md` | prima stesura completa | ~~DEPRECATO~~ (superato da DEFINITIVO) |
-| P5 — sintesi | `PortaleForgia-P5-RICALIBRATO.md` | sintesi "God Mode" | *ricalibrazione/sintesi* → base tono per B3 |
-| P5 — fast-play | `PortaleForgia-P5-FASTPLAY.md` | formato veloce D1 | **MASTER da tavolo** (creato in B3) |
-| **P6** — Integrazione | `PortaleForgia-P6-INTEGRAZIONE-Completa.md` | battaglia antica (viva) + finale 1372 (superato) | **MASTER parziale** (sezione 1372 deprecata in A3) |
+| **P3B** — Resurrezione Hella | `_ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` | rituale completo | **MASTER** (eletto in B2, integra il viaggio giocato) |
+| P3B — merge breve | `_ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-RICALIBRATO-alternative.md` | merge sintetico | ~~DEPRECATO~~ (B2) |
+| **P5** — Viaggio 1.000 anni | `_ARCHIVIO/PortaleForgia-P5-DEFINITIVO-PARTE1.md` + `-PARTE2.md` | atto completo | **MASTER lungo** (fonte per il fast-play B3) |
+| P5 — versione precedente | `_ARCHIVIO/PortaleForgia-FINAL-P5.md` | prima stesura completa | ~~DEPRECATO~~ (superato da DEFINITIVO) |
+| P5 — sintesi | `_ARCHIVIO/PortaleForgia-P5-RICALIBRATO.md` | sintesi "God Mode" | *ricalibrazione/sintesi* → base tono per B3 |
+| P5 — fast-play | `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md` | formato veloce D1 | **MASTER da tavolo** (creato in B3) |
+| **P6** — Integrazione | `_ARCHIVIO/PortaleForgia-P6-INTEGRAZIONE-Completa.md` | battaglia antica (viva) + finale 1372 (superato) | **MASTER parziale** (sezione 1372 deprecata in A3) |
 | Boss Fauci — correzione | `CORREZIONE-Boss-Fauci.md` | statblock Fauci, doppio profilo GS15/GS12 | *ricalibrazione* (doppio profilo → A3/B5) |
 
 ## Note di elezione
@@ -44,7 +44,7 @@
 - **P4 (Piano della Terra)** — parte IN CORSO al tavolo (G3). **Doppio
   master (DM 2026-07-03)**: la **cornice narrativa/scene** è
   `COMPLETO-alternative`; il **combattimento/boss** usa le versioni
-  **potenziate** (`RICALIBRATO` + `Terros.md`). ⚠️ Il **power-up è VOLUTO**:
+  **potenziate** (`RICALIBRATO` + `_ARCHIVIO/Terros.md`). ⚠️ Il **power-up è VOLUTO**:
   i PG sono di 13° ma con **artefatti unici e potentissimi** (D8), quindi gli
   EL alti servono a evitare scontri che finiscono in 2 round. Correzioni da
   applicare comunque: **livello 13°** (non 14) e **composizione D15** (3 PG,

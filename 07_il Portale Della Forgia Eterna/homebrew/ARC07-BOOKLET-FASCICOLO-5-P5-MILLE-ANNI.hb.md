@@ -1,12 +1,15 @@
 <!-- Booklet ARC-07 — Fascicolo V (Lotto K-B3.5, ondata ③ K-D2).
      Artefatto di LAYOUT Homebrewery V3: CITA i master, non li riscrive.
      In caso di conflitto vincono i master e campaign/state.md §0.
-     Master (tavolo): PortaleForgia-P5-FASTPLAY.md ·
-     Approfondimento: PortaleForgia-P5-DEFINITIVO-PARTE1/2.md ·
-     Ponte: PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md ·
-     Battaglia antica: PortaleForgia-P6-INTEGRAZIONE-Completa.md
-       (⚠️ la sezione "1372" del P6 è DEPRECATA — decisione A3) ·
+     MASTER UNICI (post-consolidamento 2026-07-23):
+             ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md (viaggio a ≈372 DR, Skullcrusher,
+             Vatore/Sal, doppia modalità) + ARC07-DEF-5-RITORNO-HAMMERFIST.md
+             (cucitura del Rubino → ARC-08). Entrambi autosufficienti, qualità AP.
+     Ponte VIVO: PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md ·
      Boss storico: CORREZIONE-Boss-Fauci.md (statblock vivo → ARC-08).
+     Sorgenti assorbite: _ARCHIVIO/PortaleForgia-P5-FASTPLAY.md ·
+       _ARCHIVIO/PortaleForgia-P5-DEFINITIVO-PARTE1/2.md ·
+       _ARCHIVIO/PortaleForgia-P6-INTEGRAZIONE-Completa.md (sez. "1372" deprecata).
      MATERIALE DM — non per i giocatori. -->
 
 {{frontCover}}
@@ -45,13 +48,13 @@ Eroi salvarono Hammerfist. Siete VOI. Siete sempre stati voi.*
 
 | Uso | File |
 |:--|:--|
-| **Al tavolo** (una sessione, 6 scene) | `PortaleForgia-P5-FASTPLAY.md` |
-| Approfondimento scene/lore (se serve più carne) | `PortaleForgia-P5-DEFINITIVO-PARTE1.md` / `-PARTE2.md` |
-| Sintesi | `PortaleForgia-P5-RICALIBRATO.md` |
-| Battaglia antica "viva" (trame parallele) | `PortaleForgia-P6-INTEGRAZIONE-Completa.md` §Anno −1000 |
+| **Al tavolo** (una sessione, 6 scene) | `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md` |
+| Approfondimento scene/lore (se serve più carne) | `_ARCHIVIO/PortaleForgia-P5-DEFINITIVO-PARTE1.md` / `-PARTE2.md` |
+| Sintesi | `_ARCHIVIO/PortaleForgia-P5-RICALIBRATO.md` |
+| Battaglia antica "viva" (trame parallele) | `_ARCHIVIO/PortaleForgia-P6-INTEGRAZIONE-Completa.md` §Anno −1000 |
 
 {{descriptive
-⚠️ **Attenzione versioni**: `PortaleForgia-FINAL-P5.md` è **deprecato**;
+⚠️ **Attenzione versioni**: `_ARCHIVIO/PortaleForgia-FINAL-P5.md` è **deprecato**;
 del P6 la sezione **"1372: Battaglia Finale Hammerfist" è DEPRECATA**
 (decisione A3 — superata dagli Archi 08-09). Il Fauci "morto per
 copione" a GS 12 **non è canone**: il profilo storico è in

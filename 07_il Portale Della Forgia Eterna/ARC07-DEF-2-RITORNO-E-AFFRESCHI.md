@@ -10,7 +10,7 @@
 > **Sostituisce e fonde**: `PortaleForgia-P2-REVISED-Corretta-PARTE1.md`
 > (gli 8 affreschi + geografia della Sala + Benedizioni), la parte "Sala/
 > affreschi" di `PortaleForgia-P2-REVISED-Corretta-PARTE2.md`,
-> `PortaleForgia-Interludio-Terra.md` (cambiamenti della Sala + Stanza della
+> `_ARCHIVIO/PortaleForgia-Interludio-Terra.md` (cambiamenti della Sala + Stanza della
 > Corona purificata) e il sistema **«La Forgia Ricorda»** progettato nel
 > master #1 §10 — di cui questo file è la **casa definitiva**.
 >
@@ -584,7 +584,7 @@ Hella.**
 ### FILE-FONTE ASSORBITI DA QUESTO MASTER (→ `_ARCHIVIO/` a consolidamento chiuso)
 `PortaleForgia-P2-REVISED-Corretta-PARTE1.md` (8 affreschi, geografia Sala,
 Benedizioni) · parte "Sala/affreschi" di `PortaleForgia-P2-REVISED-Corretta-PARTE2.md`
-· `PortaleForgia-Interludio-Terra.md` (cambiamenti Sala + Stanza della Corona) ·
+· `_ARCHIVIO/PortaleForgia-Interludio-Terra.md` (cambiamenti Sala + Stanza della Corona) ·
 sistema «La Forgia Ricorda» promosso qui dal master #1 §10.
 *(La resurrezione — Altare, Cuore di Moradin, rito — è il master #3, non qui.)*
 

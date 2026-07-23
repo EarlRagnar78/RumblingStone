@@ -9,9 +9,9 @@
 > ribalta una disfatta, il passaggio di testimone. Le sezioni solo-combattimento
 > non si applicano (la battaglia è dell'ARC-08); un'unica pulizia opzionale ha
 > il toggle di modalità.
-> **Sostituisce e fonde**: la regia del ritorno di `PortaleForgia-P5-DEFINITIVO-PARTE2.md`
+> **Sostituisce e fonde**: la regia del ritorno di `_ARCHIVIO/PortaleForgia-P5-DEFINITIVO-PARTE2.md`
 > §4.2-4.3 (accensione del Rubino, strappo tra le ere) e l'**Incontro 3B** di
-> `PortaleForgia-P6-INTEGRAZIONE-Completa.md` (arrivo al Cuore della Montagna).
+> `_ARCHIVIO/PortaleForgia-P6-INTEGRAZIONE-Completa.md` (arrivo al Cuore della Montagna).
 > **NON riscrive la battaglia**: quella vive nell'ARC-08. La cucitura sul lato
 > ARC-08 è già scritta in `08_.../ARC08-11-PONTE-ARRIVO.md` — questo master è il
 > lato ARC-07 e vi **rimanda**.
@@ -368,8 +368,8 @@ avete fatto nel passato presenterà il conto.*
 ---
 
 ### FILE-FONTE ASSORBITI DA QUESTO MASTER (→ `_ARCHIVIO/` a consolidamento chiuso)
-`PortaleForgia-P5-DEFINITIVO-PARTE2.md` §4.2-4.3 (accensione Rubino, ritorno) ·
-`PortaleForgia-P6-INTEGRAZIONE-Completa.md` Incontro 3B (arrivo al Cuore della
+`_ARCHIVIO/PortaleForgia-P5-DEFINITIVO-PARTE2.md` §4.2-4.3 (accensione Rubino, ritorno) ·
+`_ARCHIVIO/PortaleForgia-P6-INTEGRAZIONE-Completa.md` Incontro 3B (arrivo al Cuore della
 Montagna — la sezione «battaglia 1372» di P6 resta **deprecata**, la battaglia è
 l'ARC-08). **NON assorbe** `ARC08-11-PONTE-ARRIVO.md` (vivo, lato ARC-08): questo
 master vi **rimanda**.

@@ -1423,8 +1423,12 @@ entries — they become campaign history.
             Doni-costo della resurrezione. Canone in uscita invariato (§1/§6):
             Corona 3 gemme (Rubino speso), Cuore di Moradin speso, Thorik −2 COS,
             Hella viva (Ibrido Treant/Collana/Durik), party 14° a Hammerfist.
-            NOTA: la migrazione fisica dei sorgenti in `_ARCHIVIO/` è
-            **rimandata** (blast radius di 100+ riferimenti in skill-mirror,
-            archi 08/09, plans, log) — la consolidazione funzionale è già data
-            dai DEF+INDICE. `validate_modules` 5/5.
+            MIGRAZIONE `_ARCHIVIO/` ESEGUITA: 16 sorgenti assorbiti spostati in
+            `07_.../\_ARCHIVIO/`, riferimenti a percorso pieno riscritti nei file
+            tracciati (skill-source, archi 08/09, PG/Artefatti, lore) + interni
+            all'arco; mirror skill/`build/` gitignored (si rigenerano da
+            sorgente); log append-only lasciati intatti come record storici.
+            Nuovi handout: `homebrew/HANDOUT-2-hints-per-pg-prossima-sessione.hb.md`
+            (hints asimmetrici per la sessione Terros). validate_modules 5/5,
+            bestiario/maps/skills/plans verdi.
 ```

@@ -411,13 +411,13 @@ monsters:
     environment: mountain
     source_file: "Bestiario/png/Borin_Ferropugno.md"
     notes: "uno dei 4 pregen (D6). Distinto dai Rumbling Stones (PG reali). NON confondere Thorin (pregen chierico) con Thorik (PG) o Thorek (re), D2."
-  - id: il-portale-della-forgia-eterna-fc77f1
+  - id: il-portale-della-forgia-eterna-834d1c
     name: "IL PORTALE DELLA FORGIA ETERNA"
     cr: 13.0
     faction: dauth-defender
     role: generalist
     environment: any
-    source_file: "07_il Portale Della Forgia Eterna/PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md"
+    source_file: "07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md"
   - id: il-portale-della-forgia-eterna-cc9716
     name: "IL PORTALE DELLA FORGIA ETERNA"
     cr: 14.0
@@ -1513,13 +1513,13 @@ monsters:
     role: caster-divine
     environment: any
     source_file: "Bestiario/mostri/tiamat-warpriest-elite-cr11.md"
-  - id: integrazione-completa-portale-forgia-mano-rossa-del-destino-b898d3
+  - id: integrazione-completa-portale-forgia-mano-rossa-del-destino-7d1b50
     name: "⚔️ INTEGRAZIONE COMPLETA: PORTALE FORGIA + MANO ROSSA DEL DESTINO"
     cr: 11.0
     faction: red-hand
     role: generalist
     environment: swamp
-    source_file: "07_il Portale Della Forgia Eterna/PortaleForgia-P6-INTEGRAZIONE-Completa.md"
+    source_file: "07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P6-INTEGRAZIONE-Completa.md"
   - id: armate-composizione-dettagliata-rhod-army-atlas-41c91e
     name: "Armate — Composizione Dettagliata (RHoD Army Atlas)"
     cr: 12.0
@@ -2093,20 +2093,20 @@ monsters:
     role: generalist
     environment: mountain
     source_file: "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md"
-  - id: il-portale-della-forgia-eterna-dcd00b
+  - id: il-portale-della-forgia-eterna-d447d5
     name: "IL PORTALE DELLA FORGIA ETERNA"
     cr: 13.0
     faction: unknown
     role: generalist
     environment: mountain
-    source_file: "07_il Portale Della Forgia Eterna/PortaleForgia-P5-RICALIBRATO.md"
-  - id: il-portale-della-forgia-eterna-510b40
+    source_file: "07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P5-RICALIBRATO.md"
+  - id: il-portale-della-forgia-eterna-99c7a5
     name: "IL PORTALE DELLA FORGIA ETERNA"
     cr: 14.0
     faction: unknown
     role: generalist
     environment: any
-    source_file: "07_il Portale Della Forgia Eterna/PortaleForgia-P5-FASTPLAY.md"
+    source_file: "07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md"
   - id: log-retroattivi-arc-06-finale-arc-07-ricostruzione-7d33bf
     name: "Log retroattivi ARC-06 finale → ARC-07 (ricostruzione)"
     cr: 14.0
@@ -2128,10 +2128,10 @@ monsters:
     role: boss
     environment: any
     source_file: "07_il Portale Della Forgia Eterna/ERRATA-ARC07-35-Verification.md"
-  - id: il-portale-della-forgia-eterna-b6b506
+  - id: il-portale-della-forgia-eterna-81f50a
     name: "IL PORTALE DELLA FORGIA ETERNA"
     cr: 15.0
     faction: unknown
     role: generalist
     environment: any
-    source_file: "07_il Portale Della Forgia Eterna/PortaleForgia-P4-PianoTerra-RICALIBRATO.md"
+    source_file: "07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P4-PianoTerra-RICALIBRATO.md"

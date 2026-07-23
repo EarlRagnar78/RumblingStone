@@ -7,7 +7,7 @@
 > un **rito corale**, tre sacrifici che sono scelte, un risveglio, e un
 > **prezzo che il mondo esige** (il filo grigio). Le sezioni solo-combattimento
 > non si applicano; tutto il resto dello standard AP sì.
-> **Sostituisce e fonde**: `PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`
+> **Sostituisce e fonde**: `_ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`
 > (master eletto B2 — rito, sacrifici, ramo del rifiuto, risveglio, Collana,
 > Treant), i risultati canonici del viaggio dello spirito
 > (`...IL-VIAGGIO-NELL'INCUDINE-DEL-MONDO-risultati.md`, D12) e la scheda
@@ -646,7 +646,7 @@ Hella è il 4° PG).
 ---
 
 ### FILE-FONTE ASSORBITI DA QUESTO MASTER (→ `_ARCHIVIO/` a consolidamento chiuso)
-`PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` (master B2: rito, sacrifici,
+`_ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` (master B2: rito, sacrifici,
 ramo del rifiuto, risveglio, Collana, Treant) · `...-RICALIBRATO-alternative.md`
 (deprecato) · risultati del viaggio (`...-MONDO-risultati.md`, canone integrato).
 *(Le schede Collana/Durik restano vive in `PG/Artefatti/`.)*

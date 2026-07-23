@@ -5,9 +5,9 @@
 > **Sostituisce e fonde** in una sola lettura giocabile — **senza tagliare
 > nulla** — i seguenti file (che restano nel repo con banner e, a
 > consolidamento chiuso, migrano in `_ARCHIVIO/`):
-> `PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md` (cornice, prove,
-> viaggio), `PortaleForgia-P4-PianoTerra-RICALIBRATO.md` (combattimento
-> "Hard" + rituale a volontà combinata), `Terros.md` (statblock boss),
+> `_ARCHIVIO/PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md` (cornice, prove,
+> viaggio), `_ARCHIVIO/PortaleForgia-P4-PianoTerra-RICALIBRATO.md` (combattimento
+> "Hard" + rituale a volontà combinata), `_ARCHIVIO/Terros.md` (statblock boss),
 > `La_Piramide_Ricalibrata.md` (metodo del rituale forgiatura),
 > `PG/Artefatti/Artefatti-Pg/Tordek/03_Risveglio_Completo_Bracieri_Terra.md`
 > (Sentinella di Mithral / risveglio Bracieri).
@@ -1035,7 +1035,7 @@ R4+: alterna Earth Glide mordi-e-fuggi, Onda e Scudo. Sotto il
   superficie (contro-momento "Radice a Terra"), assorbendo gli schianti dietro
   Aegis Fang + Corona.
 
-### Analisi DPR (guida di bilanciamento DM — ripristinata da Terros.md)
+### Analisi DPR (guida di bilanciamento DM — ripristinata da _ARCHIVIO/Terros.md)
 
 | PG | Danno medio/round vs CA 26 | Nota |
 |---|---|---|
@@ -1424,9 +1424,9 @@ contata a parte (audit WBL).
 ---
 
 ### FILE-FONTE ASSORBITI DA QUESTO MASTER (→ `_ARCHIVIO/` a consolidamento chiuso)
-`PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md` ·
-`PortaleForgia-P4-PianoTerra-RICALIBRATO.md` · `Terros.md` ·
-`PortaleForgia-Interludio-Terra.md` (apertura A5 + iscrizione + eco di Hella —
+`_ARCHIVIO/PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md` ·
+`_ARCHIVIO/PortaleForgia-P4-PianoTerra-RICALIBRATO.md` · `_ARCHIVIO/Terros.md` ·
+`_ARCHIVIO/PortaleForgia-Interludio-Terra.md` (apertura A5 + iscrizione + eco di Hella —
 assorbiti in §1/§2; le variazioni degli affreschi A4/A7/A8 vanno al master #2) ·
 `Mappe/TACTICAL-GRIDS-COMPLETE.md` MAP 5 (ambiente dinamico → §4) e MAP 6
 (scenografia della camera → §8; **canone risolto**: il "Golem di Mithral"

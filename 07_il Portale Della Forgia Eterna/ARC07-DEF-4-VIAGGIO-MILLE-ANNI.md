@@ -6,7 +6,7 @@
 > scontro tattico** (il duello con Skullcrusher) reso a qualità AP. Benchmark di
 > craft: il **Palio di Channathgate** (`09_.../…PALIO-DM-MASTER-REFERENCE.md`)
 > — matrice di conseguenze, asse temporale, spotlight per PG.
-> **Sostituisce e fonde**: `PortaleForgia-P5-FASTPLAY.md` (master da tavolo B3),
+> **Sostituisce e fonde**: `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md` (master da tavolo B3),
 > `PortaleForgia-P5-DEFINITIVO-PARTE1/2.md` (prosa e dialoghi estesi),
 > `PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md` (il ponte «la Forgia
 > ricorda le ferite», valori DM-approved), `Bestiario/villain/Salvatore/Salvatore.md`
@@ -688,9 +688,9 @@ Hammerfist** (la cucitura D16, il raccordo all'ARC-08).
 ---
 
 ### FILE-FONTE ASSORBITI DA QUESTO MASTER (→ `_ARCHIVIO/` a consolidamento chiuso)
-`PortaleForgia-P5-FASTPLAY.md` (master da tavolo B3) · `PortaleForgia-P5-DEFINITIVO-PARTE1/2.md`
-(prosa estesa) · `PortaleForgia-P5-RICALIBRATO.md` (deprecato) · sezione «battaglia
-antica» di `PortaleForgia-P6-INTEGRAZIONE-Completa.md` (deprecata).
+`_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md` (master da tavolo B3) · `PortaleForgia-P5-DEFINITIVO-PARTE1/2.md`
+(prosa estesa) · `_ARCHIVIO/PortaleForgia-P5-RICALIBRATO.md` (deprecato) · sezione «battaglia
+antica» di `_ARCHIVIO/PortaleForgia-P6-INTEGRAZIONE-Completa.md` (deprecata).
 `PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md` resta **vivo** (tabella
 DM-approved citata da qui e dall'ARC-08). `Bestiario/villain/Salvatore/Salvatore.md`
 resta vivo (Vatore/Sal).

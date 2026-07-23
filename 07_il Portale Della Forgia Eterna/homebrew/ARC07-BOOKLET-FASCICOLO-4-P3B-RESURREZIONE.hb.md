@@ -1,8 +1,10 @@
 <!-- Booklet ARC-07 — Fascicolo IV (Lotto K-B3.4, ondata ③ K-D2).
      Artefatto di LAYOUT Homebrewery V3: CITA il master, non lo riscrive.
      In caso di conflitto vincono il master e campaign/state.md §0.
-     Master: PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md
-     (con ⭐INTEGRAZIONE B2: i doni PIENI del viaggio giocato).
+     MASTER UNICO (post-consolidamento 2026-07-23):
+             ARC07-DEF-3-RESURREZIONE-HELLA.md (autosufficiente, qualità AP;
+             include i doni PIENI del viaggio + il filo grigio «Debito della
+             Radice»). Sorgente assorbita: _ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md
      MATERIALE DM — non per i giocatori. -->
 
 {{frontCover}}

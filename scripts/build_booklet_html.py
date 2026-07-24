@@ -14,7 +14,14 @@ tenere il file leggero — senza Pillow l'immagine viene embeddata com'è.
 
 Uso:
     python3 scripts/build_booklet_html.py MANIFEST.json [--out FILE.html]
+    python3 scripts/build_booklet_html.py MANIFEST.json --format hb    # .hb.md V3
+    python3 scripts/build_booklet_html.py MANIFEST.json --format both
     python3 scripts/dm.py booklet MANIFEST.json            (equivalente)
+
+Doppia via (ADR-0013): lo STESSO manifest genera sia l'HTML autonomo
+(immagini incorporate, zero server) sia il sorgente Homebrewery V3
+``<out>.hb.md`` per l'editor a due pannelli self-hosted (nativo o Docker,
+``dm.py hype``). Nel .hb.md le immagini restano riferimenti relativi.
 
 Il manifest (JSON, percorsi relativi alla SUA cartella):
 {
@@ -433,17 +440,65 @@ def build(manifest_path: Path, out_override: Path | None = None) -> Path:
     return out
 
 
+HB_TAGS = {"dm": "{{note\n##### ⚠ SOLO DM\nQuesto capitolo è materiale del DM: non mostrarlo ai giocatori.\n}}",
+           "player": "{{note\n##### ✉ HANDOUT GIOCATORE\nPagina da consegnare al giocatore indicato, in privato.\n}}"}
+
+
+def build_hb(manifest_path: Path, out_override: Path | None = None) -> Path:
+    """Via Homebrewery (ADR-0013): stesso manifest → sorgente V3 .hb.md
+    per l'editor self-hosted (nativo o Docker, ``dm.py hype``)."""
+    base = manifest_path.parent
+    mf = json.loads(manifest_path.read_text(encoding="utf-8"))
+    title = mf.get("title", "Booklet")
+    parts = [
+        f"<!-- GENERATO da scripts/build_booklet_html.py --format hb (ADR-0013).\n"
+        f"     Manifest: {manifest_path.name} — i capitoli CITANO i master (ADR-0003).\n"
+        f"     Le immagini restano riferimenti relativi al repo: per la resa con\n"
+        f"     immagini incorporate usa la via HTML (--format html). -->\n",
+        "{{frontCover}}\n",
+        "{{logo ![](/assets/naturalCritLogoRed.svg)}}\n",
+        f"# {mf.get('brand', 'RUMBLING STONE').split('·')[0].strip()}",
+        f"## {title}",
+        "___\n",
+        f"### {mf.get('subtitle', '')}\n",
+        f"{{{{banner {mf.get('banner', 'BOOKLET')}}}}}\n",
+        f"{{{{footnote\n  {mf.get('meta', '')}\n}}}}\n",
+    ]
+    if mf.get("intro_md"):
+        parts += ["\\page\n", (base / mf["intro_md"]).read_text(encoding="utf-8")]
+    for ch in mf["chapters"]:
+        parts.append("\n\\page\n")
+        parts.append(f"# {ch['title']}\n")
+        tag = HB_TAGS.get(ch.get("tag", ""))
+        if tag:
+            parts.append(tag + "\n")
+        parts.append((base / ch["file"]).read_text(encoding="utf-8"))
+    html_out = out_override or (base / mf.get("out", manifest_path.stem.replace(".manifest", "") + ".html"))
+    stem = html_out.name[:-5] if html_out.name.endswith(".html") else html_out.name
+    out = html_out.parent / (stem + ".hb.md")
+    out.write_text("\n".join(parts) + "\n", encoding="utf-8")
+    return out
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("manifest", help="manifest JSON del booklet (vedi docstring)")
     ap.add_argument("--out", help="file HTML di output (default: dal manifest)")
+    ap.add_argument("--format", choices=["html", "hb", "both"], default="html",
+                    help="html = pagina autonoma con immagini incorporate; "
+                         "hb = sorgente Homebrewery V3 (.hb.md) per il self-hosted/Docker; "
+                         "both = entrambi (ADR-0013)")
     args = ap.parse_args(argv)
     mp = Path(args.manifest)
     if not mp.exists():
         print(f"ERRORE: manifest non trovato: {mp}", file=sys.stderr)
         return 2
-    out = build(mp, Path(args.out) if args.out else None)
-    print(f"OK {out} ({out.stat().st_size / 1024:.0f} KB)")
+    if args.format in ("html", "both"):
+        out = build(mp, Path(args.out) if args.out else None)
+        print(f"OK {out} ({out.stat().st_size / 1024:.0f} KB)")
+    if args.format in ("hb", "both"):
+        out = build_hb(mp, Path(args.out) if args.out else None)
+        print(f"OK {out} ({out.stat().st_size / 1024:.0f} KB)")
     return 0
 
 

@@ -9,6 +9,7 @@
   "intro_md": "PALIO-BOOKLET-INTRO.md",
   "out": "PALIO-BOOKLET.html",
   "chapters": [
+    {"title": "✉ Teaser giocatori — «Novanta Secondi»", "file": "PALIO-TEASER-GIOCATORI.md", "tag": "player"},
     {"title": "I · La Città e i Distretti", "file": "../Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md", "tag": "dm"},
     {"title": "II · L'Avventura (regole base)", "file": "../Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md", "tag": "dm"},
     {"title": "III · Le Contrade — Stemmi e Canti", "file": "../Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md", "tag": "dm"},

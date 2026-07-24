@@ -368,6 +368,15 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   decisione DM; Artemis mai tentato al giardino; Hella solo echi), master
   ARC07-DEF-1 integrale, **4 handout hint/echi separati per PG**
   (Thorik/Tordek/Artemis/Hella) + HTML generato col builder K-B9.
+- [x] **K-B11** *(review DM, 2026-07-24)*: **ADR-0013 — standard di
+  generazione dei booklet**: teaser giocatori SEPARATO e spoiler-free
+  («L'Ultima Porta», mai il nome dello scontro — regola per TUTTE le
+  sessioni; «Novanta Secondi» per il Palio), canone giocato annotato nei
+  master (Frequenza+Diapason ottenuti; salita cantata «Super Mario»;
+  **Diapason SPESO sulla Sentinella** → niente stun su Terros, ma il malus
+  round-1 si attiva con la SOLA Frequenza), **switch `--format html|hb|both`**
+  nel builder: stessa fonte manifest → HTML autonomo E/O `.hb.md` V3 per il
+  self-hosted/Docker (entrambe le vie mantenute).
 
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 

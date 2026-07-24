@@ -10,6 +10,7 @@
   "intro_md": "00-INTRO-DOVE-SIAMO.md",
   "out": "ARC07-SESSIONE-TERROS-BOOKLET.html",
   "chapters": [
+    {"title": "✉ Teaser giocatori — «L'Ultima Porta»", "file": "06-TEASER-GIOCATORI.md", "tag": "player"},
     {"title": "I · Regia della Sessione", "file": "01-REGIA-SESSIONE.md", "tag": "dm"},
     {"title": "II · Master integrale — Piano della Terra & Terros", "file": "../../ARC07-DEF-1-PIANO-TERRA-TERROS.md", "tag": "dm"},
     {"title": "✉ Hint — Thorik", "file": "02-HINT-THORIK.md", "tag": "player"},

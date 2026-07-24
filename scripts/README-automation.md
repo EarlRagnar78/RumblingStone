@@ -39,7 +39,7 @@ python3 scripts/dm.py doctor                      # environment diagnosis
 | `handout` | `--tipo T` (obbl.) · `--da <file>` · `--out <file>` | `hype_homebrew --handout` | prep |
 | `hype` | `setup`\|`start`\|`docker`\|`docker-stop` | wrapper `homebrew-local/*.sh` | prep |
 | `dossier` | *(nessuno)* | `dm_dossier` | §4 (solo DM) |
-| `booklet` | `<manifest.json>` (obbl.) · `--out <file>` | `build_booklet_html` | prep (booklet HTML pergamena) |
+| `booklet` | `<manifest.json>` (obbl.) · `--out <file>` · `--format html\|hb\|both` | `build_booklet_html` | prep (booklet pergamena, ADR-0013: HTML autonomo e/o `.hb.md` per il self-hosted/Docker) |
 | `skills` | `build`\|`sync` · `--no-deploy` | `build-skills.sh` / `sync-skills.sh` | infra |
 | `doctor` | `--ci` (avvisi non fatali) | diagnosi ambiente | infra |
 
@@ -87,7 +87,7 @@ Gli script Python usano solo stdlib; ognuno con argparse espone anche
 | `session_recap.py` | Recap italiano spoiler-safe (tono R.A. Salvatore) | `--last-n N` (default 1) · `--out <file>` · `--pdf` · `--seed N` · `--pg <PG>` (recap personale: + blocchi `## Split` suoi, in `recaps/pg/`) | ultimi N log + righe pubbliche di state.md §0 | `campaign/recaps/recap-YYYY-MM-DD.md` (+ PDF opz.) |
 | `hype_homebrew.py` | Impagina recap o handout in layout Homebrewery V3 | `--recap <file>` (default: l'ultimo) · `--pg <PG>` (veste dell'ultimo recap per-PG → `recaps/homebrew/pg/`) · `--handout TIPO` · `--da <file>` · `--sezione <str>` · `--out <file>` · `--cronologia` | recap/handout + `campaign/templates/homebrew/*.hb.md` | `.hb.md` da incollare su homebrewery.naturalcrit.com |
 | `dm_dossier.py` | ⚠️ **SOLO DM**: fotografia di tutte le trame da state.md (§0-§7) con cornici stile RHoD, banner SOLO DM | *(nessuno)* | `campaign/state.md` | `campaign/DM-DOSSIER.hb.md` |
-| `build_booklet_html.py` | Booklet HTML sfogliabile in stile **«pergamena Homebrewery»** (lo stile CANONICO dell'artefatto del Palio): copertina, tab per capitolo, cornici, SVG inline, raster embeddate come data-URI (Pillow opzionale per ricomprimere >600 KB). I markdown restano i master (ADR-0003) | `<manifest.json>` (obbl.) · `--out <file>` | manifest `*.manifest.json` + i master .md che elenca (es. `07_.../homebrew/sessione-terros/ARC07-SESSIONE-TERROS-BOOKLET.manifest.json`, `09_.../homebrew/PALIO-BOOKLET.manifest.json`) | UN file `.html` autonomo, apribile/condivisibile senza server né Docker |
+| `build_booklet_html.py` | Booklet in stile **«pergamena Homebrewery»** (stile CANONICO, **ADR-0013**): copertina, tab per capitolo, cornici, SVG inline, raster embeddate come data-URI (Pillow opzionale per ricomprimere >600 KB). Doppia via: HTML autonomo e/o sorgente **Homebrewery V3** `.hb.md` per l'editor self-hosted/Docker (`dm.py hype`). I markdown restano i master (ADR-0003). Regola player-facing: teaser di sessione SEPARATO e spoiler-free (titolo evocativo, mai il nome dello scontro) | `<manifest.json>` (obbl.) · `--out <file>` · `--format html\|hb\|both` | manifest `*.manifest.json` + i master .md che elenca (es. `07_.../homebrew/sessione-terros/*.manifest.json`, `09_.../homebrew/PALIO-BOOKLET.manifest.json`) | `.html` autonomo (no server/Docker) e/o `.hb.md` V3 |
 
 ### Bestiario / catalogo mostri
 

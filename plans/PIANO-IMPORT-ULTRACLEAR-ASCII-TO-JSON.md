@@ -267,19 +267,54 @@ Fetta verticale minima che gira end-to-end **prima** di tutte le regole:
 
 ---
 
-## §11 — Decisioni aperte (da fissare all'avvio)
+## §11 — Decisioni aperte → **FISSATE** (2026-07-24)
 
-1. **Fonte di verità in caso di conflitto griglia↔tabella**: default proposto =
-   *la tabella vince* (dati autoritativi) + WARN; confermare.
-2. **Formato report**: default proposto = md leggibile **e** `.conflicts.json`
-   (per l'editor). Confermare se basta uno dei due.
-3. **`--emit-md` di default o opt-in**: proposto opt-in (l'importer produce dati,
-   non master, salvo richiesta).
+1. **Fonte di verità in caso di conflitto griglia↔tabella**: ✅ *la tabella
+   vince* (dati autoritativi) + WARN. Registrata nel report come
+   `source_of_truth: "table"`.
+2. **Formato report**: ✅ **entrambi** — md leggibile (`--conflicts`) **e**
+   `.conflicts.json` (`--json-report`, per l'editor).
+3. **`--emit-md`**: ✅ **opt-in** (l'importer produce dati, non master, salvo
+   richiesta esplicita).
+
+> Nota d'attuazione (§7 rafforzato): il record di conflitto è stato reso
+> pienamente **editor-consumable** oltre alla bozza §7 originaria — ogni voce
+> porta `uid` (fingerprint d'istanza stabile), `observed`/`expected` (le due
+> candidate figura↔tabella), `target` (JSON Pointer RFC 6901 nella bozza) e
+> `actions` machine-actionable (i bottoni dell'editor). Contratto formale in
+> `scripts/schemas/map_conflicts.schema.json`. La provenienza per-elemento vive
+> nel sidecar, non nella bozza (che resta `additionalProperties:false`).
 
 ---
 
 ## §12 — Stato
 
-🔵 **PIANIFICATO** (2026-07-23). Nessun lotto ancora eseguito. Prerequisiti già
-in repo: parser griglia (`render_map_svg`), contratto+compilatore
+🟢 **ESEGUITO** (2026-07-24, branch `claude/piani-completare-5b85qg`). Tutte le
+fasi F1-F7 implementate e testate:
+
+- **F1** parser griglia — riuso `render_map_svg.extract_maps`/`parse_row_cells`
+  (single source of truth); dims reali, matrice, blocchi contigui.
+- **F2** parser tabelle (`| COLONNE | RIGHE |`) + posizioni PG prose
+  (`Col X, Riga Y`); normalizzazione 1-based → 0-based.
+- **F3** diagnostica — **registro R1-R10** (`RULES`), record con severità +
+  suggerimento + campi strutturati.
+- **F4** emissione bozza — `regions/structures/hazards/units` da griglia
+  (path uniforme) o da tabelle autoritative (path grid-inutilizzabile);
+  `notes` con gli elementi lasciati fuori e i ruoli dedotti.
+- **F5** CLI (`-o/--conflicts/--json-report/--emit-md/--map/--strict/-q/-v`),
+  exit code 0/1/2, round-trip `compile_map_json.validate`.
+- **F6** `scripts/tests/test_import_ultraclear.py` (17 test): fixture-per-regola
+  in `scripts/tests/fixtures/ultraclear/`, golden case Hammerfist L2,
+  round-trip, determinismo. 55 test totali verdi.
+- **F7** doc skill (`skills/rumblingstone-mapmaking/references/import-ultraclear.md`
+  + rimandi in `SKILL.md`/`tre-modalita-mappe.md`), `scripts/README-automation.md`,
+  smoke test in `.github/workflows/ci.yml`, contratto report
+  `scripts/schemas/map_conflicts.schema.json`.
+
+**Gate soddisfatti** (§5): parser fedele (nessun secondo parser), bozza
+compilabile o `ERROR` elencati, golden case converge (aree Cantitrici/Nani-Elite
+byte-identiche, PG ai coord dichiarati, `map_size 120×80`), non-regressione
+verde, nessun master di canone toccato.
+
+Prerequisiti usati: parser griglia (`render_map_svg`), contratto+compilatore
 (`compile_map_json`), caso pilota committato (`hammerfist-L2-assedio.*`).

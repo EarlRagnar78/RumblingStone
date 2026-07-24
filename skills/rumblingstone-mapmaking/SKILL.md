@@ -74,6 +74,7 @@ Dettaglio e "system prompt" per l'LLM: `references/tre-modalita-mappe.md`.
 |---|---|
 | **Audit/consolidamento mappe di un arco** (atlante definitivo, fonti canoniche, add-on DM, render+verifica) | `references/audit-mappe-workflow.md` |
 | Le 3 modalità, contratto JSON, system prompt LLM | `references/tre-modalita-mappe.md` |
+| **Migrare un ultra-clear esistente → bozza JSON + report conflitti** (`import_ultraclear.py`) | `references/import-ultraclear.md` |
 | Full workflow: new map, edit, render, validate, dungeon import, overland/city | `references/workflow-mappe.md` |
 | Universal legend: every terrain/unit/prop symbol with meaning | `references/legenda-universale.md` |
 | Direzione artistica handout/splash (convenzioni + confini IP) | `references/stile-illustrazione-handout.md` |
@@ -87,6 +88,7 @@ python3 scripts/render_map_svg.py <file.md> --list # list maps found
 python3 scripts/import_watabou.py dungeon.json -o <arco>/NUOVA-MAPPA.md
 python3 scripts/compile_map_json.py spec.json -o <arco>/NUOVA-MAPPA.md  # Mod. 3: JSON → master
 python3 scripts/compile_map_json.py spec.json --validate-only           # solo validazione
+python3 scripts/import_ultraclear.py ULTRACLEAR.md -o OUT.draft.json --json-report OUT.conflicts.json  # migra un ultra-clear
 python3 scripts/export_map_png.py rendered/<mappa>.svg   # hi-res PNG (print / hero input)
 python3 scripts/export_uvtt.py <file.md>           # .uvtt/.dd2vtt (Foundry/Roll20: muri+luci)
 python3 scripts/validate_maps.py                   # CI gate (run before commit)

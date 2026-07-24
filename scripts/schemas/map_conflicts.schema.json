@@ -1,0 +1,128 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/gsamuele78/rumblingstone/scripts/schemas/map_conflicts.schema.json",
+  "title": "RumblingStone Map-Import Conflict Report",
+  "description": "Report machine-readable emesso da import_ultraclear.py (--json-report). Elenca i conflitti fra la FIGURA (griglia emoji) e i DATI AUTORITATIVI (tabelle coordinate) di una mappa ultra-clear, in forma consumabile da un editor visuale (PIANO-EDITOR-VISUALE-MAPPE): ogni conflitto ha un uid stabile, un'ancora geometrica su cui evidenziare celle, le due candidate observed/expected, un target JSON-Pointer nell'elemento della bozza e una lista di azioni risolutive (i bottoni dell'editor). Determinismo: a parita di input, byte identici.",
+  "type": "object",
+  "required": ["report_version", "tool", "map", "conflicts"],
+  "additionalProperties": true,
+  "properties": {
+    "report_version": { "type": "string", "description": "Versione del contratto del report. Attuale: '1.0'." },
+    "tool": { "type": "string", "description": "Strumento che ha prodotto il report." },
+    "map": { "type": "integer", "minimum": 1, "description": "Indice 1-based della mappa nel file sorgente." },
+    "title": { "type": "string" },
+    "declared_dims": {
+      "type": ["array", "null"],
+      "description": "[colonne, righe] dichiarate nell'header della mappa (o null).",
+      "items": { "type": "integer" }, "minItems": 2, "maxItems": 2
+    },
+    "actual_dims": {
+      "type": "array", "description": "[colonne, righe] reali contate nelle celle disegnate.",
+      "items": { "type": "integer" }, "minItems": 2, "maxItems": 2
+    },
+    "source_of_truth": {
+      "type": "string", "enum": ["table", "grid"],
+      "description": "Policy applicata quando figura e tabella divergono. Default del tool: 'table' (i dati autoritativi vincono)."
+    },
+    "counts": {
+      "type": "object", "description": "Conteggio conflitti per severita.",
+      "properties": {
+        "ERROR": { "type": "integer" }, "WARN": { "type": "integer" }, "INFO": { "type": "integer" }
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["uid", "id", "rule", "severity", "message"],
+        "additionalProperties": false,
+        "properties": {
+          "uid": {
+            "type": "string",
+            "description": "Chiave d'istanza STABILE (fingerprint deterministico del contenuto). L'editor la usa per tracciare lo stato 'risolto/ignorato' fra un'esecuzione e l'altra, indipendente dall'ordine."
+          },
+          "id": {
+            "type": "string", "pattern": "^R[0-9]{1,2}$",
+            "description": "Id della REGOLA (R1..R10), non dell'istanza. Piu conflitti possono condividerlo."
+          },
+          "rule": {
+            "type": "string",
+            "description": "Slug della regola.",
+            "enum": ["grid-header-mismatch", "grid-nonuniform-rows", "symbol-not-in-legend",
+                     "annotation-coord-drift", "name-collision", "coord-out-of-bounds",
+                     "overlapping-structures", "quantity-mismatch", "non-emoji-cell",
+                     "schematic-map-detected"]
+          },
+          "severity": { "type": "string", "enum": ["ERROR", "WARN", "INFO"] },
+          "map": { "type": "integer", "minimum": 1 },
+          "source": {
+            "type": "string", "enum": ["grid", "table", "both", "legend"],
+            "description": "Da dove nasce l'evidenza del conflitto."
+          },
+          "message": { "type": "string", "description": "Descrizione leggibile del conflitto." },
+          "suggestion": { "type": "string", "description": "Come risolverlo, in prosa." },
+          "where": {
+            "type": "object",
+            "description": "Ancora geometrica su cui l'editor evidenzia. Coordinate 0-based [x,y] coerenti col contratto mappa.",
+            "additionalProperties": false,
+            "properties": {
+              "row": { "type": "integer", "description": "Numero di riga (0-based nella matrice) coinvolta." },
+              "cell": { "type": "array", "items": { "type": "integer" }, "minItems": 2, "maxItems": 2 },
+              "cells": { "type": "array", "items": { "type": "array", "items": { "type": "integer" }, "minItems": 2, "maxItems": 2 } },
+              "rect": { "type": "array", "items": { "type": "integer" }, "minItems": 4, "maxItems": 4 },
+              "coord": { "type": "string", "description": "Etichetta A1 (colonna+riga stampata), es. 'V66'." }
+            }
+          },
+          "observed": {
+            "type": ["object", "null"],
+            "description": "La candidata lato FIGURA (cosa mostra la griglia). Una delle due opzioni fra cui scegliere.",
+            "additionalProperties": false,
+            "properties": {
+              "source": { "type": "string" },
+              "coord": { "type": "string" },
+              "cell": { "type": ["array", "null"], "items": { "type": "integer" } },
+              "symbol": { "type": ["string", "null"] },
+              "name": { "type": "string" },
+              "value": {}
+            }
+          },
+          "expected": {
+            "type": ["object", "null"],
+            "description": "La candidata lato TABELLA (dato autoritativo dichiarato). L'altra opzione.",
+            "additionalProperties": false,
+            "properties": {
+              "source": { "type": "string" },
+              "coord": { "type": "string" },
+              "cell": { "type": ["array", "null"], "items": { "type": "integer" } },
+              "symbol": { "type": ["string", "null"] },
+              "name": { "type": "string" },
+              "value": {}
+            }
+          },
+          "target": {
+            "type": "string",
+            "description": "JSON Pointer (RFC 6901) all'elemento della bozza JSON a cui il conflitto si riferisce, es. '/units/3' o '/map_size'. Consente all'editor di saltare conflitto -> elemento."
+          },
+          "actions": {
+            "type": "array",
+            "description": "Risoluzioni machine-actionable: i bottoni che l'editor mostra. Applicando un'azione la bozza cambia in modo deterministico.",
+            "items": {
+              "type": "object",
+              "required": ["kind", "label"],
+              "additionalProperties": false,
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "enum": ["use_table", "use_grid", "replace_symbol", "resize_map",
+                           "edit_coord", "set_quantity", "confirm_distinct", "rename", "ignore"]
+                },
+                "label": { "type": "string", "description": "Testo del bottone." },
+                "params": { "type": "object", "description": "Parametri dell'azione (es. {from,to} per replace_symbol, {to:[c,r]} per resize_map)." }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -224,3 +224,15 @@ mentre l'ASCII a mano originale aveva ~1 quadretto di drift.
 
 SVG = canone versionato. PNG e UVTT sono **artefatti locali** (gitignorati,
 fuori da `validate_maps.py`): si rigenerano dal master quando servono.
+
+---
+
+## Migrare un ultra-clear esistente (Modalità 3 "al contrario")
+
+Hai già una mappa **ultra-clear** (griglia emoji + tabelle di coordinate)?
+`import_ultraclear.py` ne estrae una **bozza** del contratto JSON **+ un report
+dei conflitti** figura↔tabella (default: la tabella vince). È il percorso di
+migrazione semi-automatica delle mappe esistenti — la bozza va poi rivista
+(`compile_map_json.py --validate-only`) e i conflitti risolti a mano/LLM.
+Dettaglio, exit code e contratto del report per l'editor visuale:
+`references/import-ultraclear.md`.

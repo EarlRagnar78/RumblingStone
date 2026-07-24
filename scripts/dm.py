@@ -170,9 +170,11 @@ def cmd_booklet(args: argparse.Namespace, extra: list[str]) -> int:
     if args.format:
         bo += ["--format", args.format]
     rc = run("build_booklet_html.py", *bo, *extra)
-    if rc == 0 and args.pdf:
-        # ADR-0013 §5: PDF A4 delle pagine ✉ player via Chromium headless
-        rc = run("export_booklet_pdf.py", args.manifest)
+    if rc == 0 and (args.pdf or args.pdf_all):
+        # ADR-0013 §5-bis: PDF A4 via Chromium headless — --pdf = pagine ✉
+        # player (da inviare), --pdf-all = TUTTE le schede (anche ⚠ DM)
+        ex = ["--all"] if args.pdf_all else []
+        rc = run("export_booklet_pdf.py", args.manifest, *ex)
     return rc
 
 
@@ -354,6 +356,9 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--pdf", action="store_true",
                    help="dopo la build: PDF A4 delle pagine ✉ player "
                         "(export_booklet_pdf.py, serve Chromium/Chrome)")
+    p.add_argument("--pdf-all", action="store_true", dest="pdf_all",
+                   help="dopo la build: PDF A4 di TUTTE le schede "
+                        "(copertina e capitoli ⚠ DM inclusi, prefissi pg-/dm-)")
 
     p = sub.add_parser("session",
                        help="ciclo sessione su branch-per-gruppo (ADR-0007): "

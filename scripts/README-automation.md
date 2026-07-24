@@ -39,7 +39,7 @@ python3 scripts/dm.py doctor                      # environment diagnosis
 | `handout` | `--tipo T` (obbl.) · `--da <file>` · `--out <file>` | `hype_homebrew --handout` | prep |
 | `hype` | `setup`\|`start`\|`docker`\|`docker-stop` | wrapper `homebrew-local/*.sh` | prep |
 | `dossier` | *(nessuno)* | `dm_dossier` | §4 (solo DM) |
-| `booklet` | `<manifest.json>` (obbl.) · `--out <file>` · `--format html\|hb\|both` · `--pdf` (PDF A4 delle pagine ✉) | `build_booklet_html` (+ `export_booklet_pdf`) | prep (booklet pergamena, ADR-0013: HTML autonomo e/o `.hb.md` per il self-hosted/Docker; `--pdf` = un PDF per handout) |
+| `booklet` | `<manifest.json>` (obbl.) · `--out <file>` · `--format html\|hb\|both` · `--pdf` (pagine ✉) · `--pdf-all` (TUTTE le schede, prefissi pg-/dm-) | `build_booklet_html` (+ `export_booklet_pdf`) | prep (booklet pergamena, ADR-0013: HTML autonomo e/o `.hb.md` per il self-hosted/Docker; PDF A4 per scheda) |
 | `skills` | `build`\|`sync` · `--no-deploy` | `build-skills.sh` / `sync-skills.sh` | infra |
 | `doctor` | `--ci` (avvisi non fatali) | diagnosi ambiente | infra |
 

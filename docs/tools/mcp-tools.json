@@ -600,6 +600,36 @@
       "deterministic": true
     },
     {
+      "name": "build_booklet_html",
+      "description": "Booklet HTML sfogliabile in stile 'pergamena Homebrewery' (stile canonico del Palio): copertina, tab per capitolo, SVG inline, raster embeddate come data-URI; da manifest JSON di capitoli markdown (i .md restano i master, ADR-0003).",
+      "invocation": "python3 scripts/build_booklet_html.py MANIFEST.json",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "manifest": {
+            "type": "string",
+            "description": "Manifest *.manifest.json del booklet (brand/title/chapters, percorsi relativi alla sua cartella)."
+          },
+          "out": {
+            "type": "string",
+            "description": "File HTML di output (default: campo 'out' del manifest o <stem>.html)."
+          }
+        },
+        "required": [
+          "manifest"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<manifest dir>/<out>.html"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "2": "manifest non trovato / errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
       "name": "dm_dossier",
       "description": "SOLO DM: fotografia di tutte le trame da state.md (sezioni 0-7) in veste Homebrewery V3, contenuto estratto alla lettera.",
       "invocation": "python3 scripts/dm_dossier.py",

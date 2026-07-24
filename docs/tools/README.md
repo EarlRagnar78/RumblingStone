@@ -5,7 +5,7 @@
 
 > Vista umana del contratto machine-readable [`registry.json`](registry.json). Fonte di verita': `scripts/tools.manifest.json`.
 
-**37 tool** · convenzione exit code `0=ok · 1=errore-dominio · 2=errore-uso`.
+**38 tool** · convenzione exit code `0=ok · 1=errore-dominio · 2=errore-uso`.
 
 ## A · Session Prep (incontri · mappe · tesoro)
 
@@ -42,6 +42,7 @@
 
 | Tool | Scopo | Parametri | Determ. | Canone | Git | Exit |
 |---|---|---|:--:|:--:|:--:|---|
+| `build_booklet_html.py` | Booklet HTML sfogliabile in stile 'pergamena Homebrewery' (stile canonico del Palio): copertina, tab per capitolo, SVG inline, raster embeddate come data-URI; da manifest JSON di capitoli markdown (i .md restano i master, ADR-0003). | **manifest** · --out | ✔ | — | — | `0` · `2` |
 | `dm_dossier.py` | SOLO DM: fotografia di tutte le trame da state.md (sezioni 0-7) in veste Homebrewery V3, contenuto estratto alla lettera. | -o/--output | ✔ | — | — | `0` · `1` |
 | `hype_homebrew.py` | Impagina recap o handout in layout Homebrewery V3, senza mai duplicare il filtro spoiler di session_recap. | --recap · --pg · --handout · --da · --sezione | ✔ | — | — | `0` · `1` |
 | `session_recap.py` | Recap italiano spoiler-safe (tono R.A. Salvatore) dagli ultimi N session log; taglia sempre le note private DM. | --last-n · --out · --pdf · --seed · --pg | ✔ | — | — | `0` · `1` |

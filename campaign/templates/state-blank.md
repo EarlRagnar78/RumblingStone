@@ -104,6 +104,20 @@
 
 - *(add bullet points as threads open)*
 
+### §7.E Echo Ledger (choices the world remembers)
+
+Format: `skills/rumblingstone-narrative-style/references/consequence-echoes.md`.
+
+| ID | Origin (sess., PC, choice) | Tone | Fuse | Payoff sketch | Status |
+|----|----------------------------|------|------|---------------|--------|
+
+### §7.R Reputation (Fama / Infamia) + Anointing Threads
+
+Format: `skills/rumblingstone-narrative-style/references/pc-protagonism.md`.
+
+| PC | Fama (epithets, witnessed deeds) | Infamia | Anointing thread (status) |
+|----|----------------------------------|---------|---------------------------|
+
 ---
 
 ## §8 Changelog (append-only)

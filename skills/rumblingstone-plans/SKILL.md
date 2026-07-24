@@ -57,6 +57,24 @@ Prima di aprire (o dichiarare pronta) una PR che completa lavoro pianificato:
       --no-deploy` e `python3 scripts/validate_skills.py` verdi.
 - [ ] Nuova convenzione o scelta strutturale? → ADR in `plans/adr/`.
 
+## 🤖 Enforcement automatico (ADR-0009)
+
+La regola d'oro non è più solo disciplina — `scripts/check_plans_discipline.py`
+gira in CI su ogni PR e come hook `pre-push` locale
+(`./scripts/install-git-hooks.sh`):
+
+- **Blocca** (rosso in CI, push rifiutato) modifiche a file strutturali
+  (`scripts/`, `skills/`, `Script/`, `.github/`, `plans/adr/`) senza una
+  riga in `plans/CHANGELOG.md` nello stesso range di commit.
+- **Promemoria ADR** (warning non bloccante): nuova skill, nuovo script
+  top-level o modifica ai workflow CI senza alcun tocco a `plans/adr/` →
+  invito esplicito a valutare un ADR. Non bloccante di proposito: «serve
+  un ADR?» resta una decisione umana, non di uno script.
+- Il contenuto di campagna (`campaign/`, archi `00_`-`09_`, `Bestiario/`,
+  `PG/`) è esente: le sessioni giocate non richiedono changelog.
+- Bypass locale consapevole: `git push --no-verify` (la CI resta il gate
+  finale).
+
 Se una PR è già stata mergiata senza tracciatura (com'è successo alla
 PR #40 prima di questa skill): recuperare subito con un commit dedicato
 `docs(plans): tracciatura PR #N` — mai lasciare buchi nella storia.

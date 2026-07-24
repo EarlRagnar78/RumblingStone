@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "title": "Accampamento della Mano Rossa — Settore Nord",
+  "scale_m_per_square": 1.5,
+  "map_size": [30, 22],
+  "base_terrain": "🟩",
+  "regions": [
+    { "terrain": "🌲", "rect": [0, 0, 6, 22], "label": "Margine della Foresta dell'Ansa" },
+    { "terrain": "🟫", "rect": [6, 10, 24, 2], "label": "Strada Dorata (via d'accesso)" },
+    { "terrain": "🌊", "rect": [24, 0, 6, 6], "label": "Guado del torrente" }
+  ],
+  "structures": [
+    { "type": "🏰", "line": [[10, 3], [10, 19]], "label": "Palizzata di legno (lato ovest)" },
+    { "type": "🏰", "line": [[10, 3], [26, 3]], "label": "Palizzata di legno (lato nord)" },
+    { "type": "🏰", "line": [[10, 19], [26, 19]], "label": "Palizzata di legno (lato sud)" },
+    { "type": "🚪", "at": [10, 11], "label": "Cancello sulla strada" },
+    { "type": "🗼", "center": [26, 3], "radius": 1, "label": "Torre di guardia NE" },
+    { "type": "⛺", "center": [20, 11], "radius": 2, "label": "Tenda di comando del Wyrmlord" },
+    { "type": "🏮", "at": [16, 7], "label": "Braciere" },
+    { "type": "🏮", "at": [16, 15], "label": "Braciere" }
+  ],
+  "hazards": [
+    { "type": "💀", "at": [12, 11], "label": "Fossa mascherata", "effect": "Osservare CD 20; 2d6 danni da caduta, Riflessi CD 15 dimezza" }
+  ],
+  "units": [
+    { "faction": "PG", "name": "Rumbling Stones", "token": "🔵", "at": [7, 11], "cr": "EL 13" },
+    { "faction": "Mano Rossa", "name": "Arcieri hobgoblin", "token": "🔴", "area": { "rect": [13, 5, 3, 2] }, "quantity": 24, "cr": "GS 1/2 cad." },
+    { "faction": "Mano Rossa", "name": "Fanteria hobgoblin", "token": "🔴", "area": { "rect": [13, 15, 3, 2] }, "quantity": 30, "cr": "GS 1/2 cad." },
+    { "faction": "Mano Rossa", "name": "Wyrmlord (comandante)", "token": "⚫", "at": [20, 11], "cr": "GS 9" },
+    { "faction": "Mano Rossa", "name": "Adepto della Mano", "token": "🟡", "at": [22, 8], "cr": "GS 5" }
+  ],
+  "notes": [
+    "Se scatta l'allarme (torre NE avvista i PG): archi B da entrambe le postazioni convergono sulla strada; il Wyrmlord esce dalla tenda al round 2.",
+    "Se il cancello viene sfondato: la fanteria sud riforma la linea a G12–I13 per bloccare l'imbuto."
+  ]
+}

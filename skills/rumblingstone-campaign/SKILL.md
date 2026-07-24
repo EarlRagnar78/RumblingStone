@@ -52,6 +52,8 @@ structured truth).
 - "How do I DM for Artemis?" / "What is Shine Time?" → `campaign-dm-strategy.md`
 - "Can NPC X already know Y?" / "Has artifact Z been used yet?" → `campaign-coherence.md` + `state.md`
 - "Generate a quest / monster image" → `dm-expansion-toolkit.md`
+- Generate ANY narrative content (quest, prose, dialogue, hooks, recap) →
+  ALSO load `../rumblingstone-narrative-style/SKILL.md` (mandatory style engine)
 
 ## Coherence Discipline (read this every time)
 
@@ -63,7 +65,9 @@ Before generating any new campaign content, the agent must:
 3. If proposing something that contradicts a constraint, **stop and flag it
    to the DM** — do not silently retcon.
 4. Default tone: R.A. Salvatore — slow build, sensory detail, internal stakes,
-   moral cost. Avoid camp, anachronism, modern jargon.
+   moral cost. Avoid camp, anachronism, modern jargon. The Salvatore voice is
+   the prose layer of the full eight-pillar mix defined in
+   `../rumblingstone-narrative-style/` — load that skill for any generation.
 
 ## Adult Group Conventions
 

@@ -55,13 +55,17 @@ Important non-player characters and antagonists (Detailed in `Bestiario/villain/
   - `npcs/` & `locations/`: Key figures and environment descriptions.
   - `encounters/`: Custom encounter design and tactics.
   - `lore/`: House rules, setting details, and DM strategy (e.g., `csmpaign players.md`).
-- **`skills/`**: Five AI-agent skills + a legacy router. Rules are sourced from the d20 SRD (D&D 3.5) and the Pathfinder 1e SRD:
+- **`skills/`**: Nine focused AI-agent skills + a legacy router. Rules are sourced from the d20 SRD (D&D 3.5) and the Pathfinder 1e SRD:
   - `dnd-35-srd/` — pure 3.5 mechanics (d20srd.org)
   - `forgotten-realms-lore/` — Faerûn 1372 DR canon
   - `rumblingstone-campaign/` — this campaign (PCs, artifacts, arcs, coherence)
+  - `rumblingstone-narrative-style/` — eight-pillar style engine, mandatory for all content generation
+  - `rumblingstone-mapmaking/` — battle-map pipeline (3 modes, JSON contract, UVTT export)
+  - `rumblingstone-automation/` — `dm.py` CLI + session-state pipeline on group branches (ADR-0007)
+  - `rumblingstone-plans/` — work-plan archive discipline (INDEX, CHANGELOG, ADRs)
   - `pathfinder-1e-srd/` — PF1e rules, simple templates, CR benchmarks, 3.5↔PF conversion
   - `npc-villain-boosting/` — when/whether/how to boost PNGs, villains, and monsters
-  - `dnd-35-rules/` — legacy meta-router pointing at the five above
+  - `dnd-35-rules/` — legacy meta-router pointing at the nine above
 - **`.github/workflows/ci.yml`**: CI validates skill frontmatter/links/data YAML and builds all per-agent skill packages on every PR.
 
 ## Design Philosophy (Mastering for Adults)
@@ -85,6 +89,18 @@ It covers:
 
 Blank templates for a fresh group live in `campaign/templates/`.
 
+## Sviluppo & automazione — dove trovare le cose
+
+Indice unico dei documenti "di sviluppo" del repo (roadmap, script, container):
+
+| Vuoi… | Documento |
+|---|---|
+| **Roadmap / cosa manca / cosa migliorare** (stato piani, %, gate, prossimi passaggi) | [`plans/INDEX.md`](plans/INDEX.md) — con [`plans/CHANGELOG.md`](plans/CHANGELOG.md) per la storia lotto-per-lotto |
+| **Script DM: cosa fanno, quali parametri, cosa producono** (tool map completa + `dm.py`) | [`scripts/README-automation.md`](scripts/README-automation.md) |
+| **Container in locale** (Homebrewery self-hosted, nativo o Docker chiavi-in-mano) | [`scripts/homebrew-local/README.md`](scripts/homebrew-local/README.md) |
+| **Perché delle scelte strutturali** (decisioni architetturali) | [`plans/adr/`](plans/adr/) — incl. ADR-0004 (container) e ADR-0005 (confini IP) |
+| **Disciplina di tracciatura** (regola d'oro: chiudo un lotto → aggiorno checklist + INDEX + CHANGELOG) | skill [`skills/rumblingstone-plans/`](skills/rumblingstone-plans/SKILL.md) |
+
 ## Setup Instructions
 
 1. Clone the repository to your local machine.
@@ -94,3 +110,5 @@ Blank templates for a fresh group live in `campaign/templates/`.
 ## Licensing Information
 
 This project contains private lore adaptations based on *Red Hand of Doom*. Mechanical content belongs to the respective owners of the D&D 3.5 OGL/SRD.
+
+Il repo è a **uso privato / non commerciale**: contiene IP di terzi (Wizards of the Coast / Forgotten Realms non-SRD) che nessuna licenza dell'autore può sanare, e l'arco "Palio di Channathgate" evoca segni tutelati del Palio di Siena. La posture per scenario d'uso (privato OK · pubblicazione gratuita a rischio basso · commerciale non conforme senza bonifiche) e la relativa checklist sono in [`plans/adr/ADR-0005`](plans/adr/ADR-0005-confini-ip-uso-non-commerciale.md) e nel rapporto `09_.../Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md`.

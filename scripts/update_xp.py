@@ -53,7 +53,8 @@ def next_threshold(xp: int) -> tuple[int,int]:
     return lvl, max(0, nxt - xp)
 
 DATE_RE = re.compile(r"(\d{4}-\d{2}-\d{2})")
-TOTAL_RE = re.compile(r"\*\*Total\*\*\s*:\s*(\d+)\s*xp", re.IGNORECASE)
+# Accetta Total/Totale, un ~ opzionale e il separatore migliaia (es. "~1.025 xp")
+TOTAL_RE = re.compile(r"\*\*Total[e]?\*\*\s*:\s*~?\s*([\d.]+)\s*xp", re.IGNORECASE)
 PER_PC_RE = re.compile(r"^\s*-\s*([A-Za-z][A-Za-z' -]+?)\s*(?:→|->|:)\s*(\d+)\s*xp", re.IGNORECASE | re.MULTILINE)
 PLAYERS_RE = re.compile(r"\*\*Players present\*\*\s*:\s*(.+)")
 
@@ -87,7 +88,7 @@ def parse_session(path: Path) -> dict | None:
     total = 0
     mt = TOTAL_RE.search(xp_block)
     if mt:
-        total = int(mt.group(1))
+        total = int(mt.group(1).replace(".", ""))  # "1.025" → 1025
     # per-PC overrides
     overrides = {}
     for mm in PER_PC_RE.finditer(xp_block):

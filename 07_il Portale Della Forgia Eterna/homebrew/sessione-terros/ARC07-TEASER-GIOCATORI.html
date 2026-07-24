@@ -113,6 +113,27 @@
   .pgtag{ position:absolute; top:.9rem; right:1rem; font-size:.62rem; letter-spacing:.2em;
       color:#2f5d31; border:1px solid #2f5d31; padding:.15rem .5rem; }
   .caption{ font-size:.78rem; text-align:center; opacity:.75; max-width:40rem; font-style:italic;}
+  .printbtn{ position:fixed; right:1rem; bottom:1rem; z-index:9; font:inherit; font-size:.8rem;
+      padding:.5rem .9rem; border:1px solid var(--chrome-line); border-radius:4px; cursor:pointer;
+      background:var(--tab-active); color:var(--tab-active-ink); box-shadow:var(--shadow);}
+
+  /* ── Stampa / PDF A4 (ADR-0013 §5): via testata e tab, resta SOLO la
+     scheda attiva, pergamena a piena pagina, colori esatti. ───────────── */
+  @media print{
+    @page{ size:A4; margin:0; }
+    header.top, nav.tabs, .printbtn{ display:none !important; }
+    body{ background:var(--sheet); }
+    main{ display:block; padding:0; }
+    section.pane{ display:none; }
+    section.pane.on{ display:block; }
+    .sheet{ width:100%; box-sizing:border-box; min-height:calc(100vh - 2px);
+            box-shadow:none; border:none; margin:0;
+            padding:14mm 16mm 16mm; break-after:page;
+            -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    .sheet:last-child{ break-after:auto; }
+    .tablewrap{ overflow-x:visible; }
+    .sheet table{ min-width:0; }
+  }
 </style>
 </head>
 <body>
@@ -137,11 +158,11 @@
 <section class="pane" id="c1">
   <div class="sheet"><span class="pgtag">✉ HANDOUT GIOCATORE</span>
     <div class="chapter-body"><h2 class="sec">Il cammino fin qui (per chi ha la memoria corta e il cuore pieno)</h2>
-<div class="desc"><p class="readaloud">*Ripasso lampo dell'ultima sessione — solo la storia COMUNE, quella che</p><p class="readaloud">avete vissuto tutti insieme. I momenti vostri, quelli che contano davvero,</p><p class="readaloud">sono negli hint personali: leggeteli. Sono scritti per voi soli.*</p></div>
+<div class="desc"><p class="readaloud"><em>Ripasso lampo dell'ultima sessione — solo la storia COMUNE, quella che avete vissuto tutti insieme. I momenti vostri, quelli che contano davvero, sono negli hint personali: leggeteli. Sono scritti per voi soli.</em></p></div>
 <ul><li><strong>Avete cantato una scala fuori da un oceano di roccia.</strong> Sul serio. La <strong>Frequenza della Confusione</strong>, il dono del giardino che canta, ha risposto alle vostre voci: blocchi di pietra si sollevavano dalle onde grigie e si impilavano sotto i vostri piedi, gradino dopo gradino, a mezz'aria — finché, a metà strada, la canzone è finita prima della scala. I blocchi sono crollati. Voi no. (Per un pelo. Nessuno lo ammetterà mai davanti a un boccale.)</li><li><strong>Il Diapason Armonico non canterà mai più.</strong> Nell'anticamera dalle pareti nere e viola — la stanza che ha diviso il gruppo per natura, e ognuno di voi ricorda COME — il frammento del giardino ha urlato il suo unico urlo: un grido che ha incrinato il mondo, speso in un colpo solo. Ora è muto. Ne è valsa la pena. <em>(Il resto di quel duello appartiene a chi l'ha combattuto: è nel suo hint, chiedetegli da bere e forse ve lo racconta.)</em></li><li><strong>E adesso siete dentro.</strong> Il Tempio che nessun mortale ha mai calpestato. Corridoi d'argento che brillano di luce propria, la gravità che ruota come in un sogno di Escher, e una direzione sola che tira tutti allo stesso modo. <strong>Verso il basso. Verso il centro.</strong></li></ul>
 <hr class="rule">
 <h2 class="sec">Lunedì: L'Ultima Porta</h2>
-<div class="desc"><p class="readaloud">*Il corridoio scende, e il silenzio cambia. Non è più il silenzio vuoto</p><p class="readaloud">delle caverne: è un silenzio PIENO, come una sala da concerto un attimo</p><p class="readaloud">prima che l'orchestra respiri. Il mithral sotto i vostri stivali vibra di</p><p class="readaloud">un battito che non è il vostro. Aegis Fang tace di colpo — e quando una</p><p class="readaloud">voce antica come quella abbassa il capo, i saggi si fermano ad ascoltare.</p><p class="readaloud">Oltre l'ultima porta c'è la cosa per cui siete scesi fin qui, attraverso</p><p class="readaloud">il fuoco e adesso attraverso il peso. E c'è tutto il resto: ciò che la</p><p class="readaloud">custodisce, ciò che chiederà, ciò che ognuno di voi è disposto a mettere</p><p class="readaloud">sul piatto. La montagna non ha fretta. Voi sì: lassù, sotto il cielo di</p><p class="readaloud">Flamerule, una fortezza conta le ore.*</p></div>
+<div class="desc"><p class="readaloud"><em>Il corridoio scende, e il silenzio cambia. Non è più il silenzio vuoto delle caverne: è un silenzio PIENO, come una sala da concerto un attimo prima che l'orchestra respiri. Il mithral sotto i vostri stivali vibra di un battito che non è il vostro. Aegis Fang tace di colpo — e quando una voce antica come quella abbassa il capo, i saggi si fermano ad ascoltare. Oltre l'ultima porta c'è la cosa per cui siete scesi fin qui, attraverso il fuoco e adesso attraverso il peso. E c'è tutto il resto: ciò che la custodisce, ciò che chiederà, ciò che ognuno di voi è disposto a mettere sul piatto. La montagna non ha fretta. Voi sì: lassù, sotto il cielo di Flamerule, una fortezza conta le ore.</em></p></div>
 <p><strong>Portate:</strong></p>
 <ul><li>la <strong>voce</strong> — c'è una canzone che la pietra non ha dimenticato;</li><li>le <strong>mani libere</strong> — quello che troverete non si prende con la spada;</li><li>una <strong>risposta</strong> — perché là sotto, prima o poi, a ciascuno di voi verrà fatta una domanda. E le domande di Moradin non si schivano coi Riflessi.</li></ul>
 <p><em>A lunedì. Il Tempio trattiene il fiato.</em></p></div>
@@ -149,13 +170,21 @@
     <span class="n">2</span></div>
   </div>
 </section></main>
+<button class="printbtn" onclick="window.print()" title="Stampa/salva in PDF SOLO la scheda aperta (A4)">🖨 Salva PDF</button>
 <script>
   const tabs=document.querySelectorAll('nav.tabs button');
-  tabs.forEach(b=>b.addEventListener('click',()=>{
-    tabs.forEach(x=>x.setAttribute('aria-selected',x===b));
-    document.querySelectorAll('section.pane').forEach(p=>p.classList.toggle('on',p.id===b.dataset.pane));
+  function show(id){
+    tabs.forEach(x=>x.setAttribute('aria-selected',x.dataset.pane===id));
+    document.querySelectorAll('section.pane').forEach(p=>p.classList.toggle('on',p.id===id));
     window.scrollTo({top:0});
+  }
+  tabs.forEach(b=>b.addEventListener('click',()=>{
+    show(b.dataset.pane); history.replaceState(null,'','#'+b.dataset.pane);
   }));
+  // deep-link #cN: apre direttamente quella scheda (usato anche
+  // dall'export PDF headless — ADR-0013 §5)
+  if(location.hash && document.getElementById(location.hash.slice(1)))
+    show(location.hash.slice(1));
 </script>
 </body>
 </html>

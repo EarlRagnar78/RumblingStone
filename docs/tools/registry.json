@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 38,
+  "tool_count": 39,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -1652,6 +1652,122 @@
       "tests": [],
       "docs": [
         "scripts/README-automation.md"
+      ]
+    },
+    {
+      "id": "export_booklet_pdf",
+      "path": "scripts/export_booklet_pdf.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/export_booklet_pdf.py MANIFEST.json",
+      "summary": "PDF A4 delle schede di un booklet pergamena (ADR-0013): un PDF per pagina via Chromium/Chrome headless, resa identica al browser (CSS di stampa canonico). Default: solo pagine player (hint/echi/teaser).",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [
+        "chromium|google-chrome (headless, cercato in PATH/$BOOKLET_CHROME//opt/pw-browsers)"
+      ],
+      "args": [
+        {
+          "name": "manifest",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Manifest *.manifest.json del booklet (lo stesso di build_booklet_html)."
+        },
+        {
+          "name": "--pane",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "ID scheda da esportare (es. c2 c3); default: tutte le pagine tag:player."
+        },
+        {
+          "name": "--all",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esporta tutte le schede, copertina inclusa."
+        },
+        {
+          "name": "--list",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Elenca le schede del booklet con i loro ID."
+        },
+        {
+          "name": "--outdir",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cartella di output (default: <manifest dir>/pdf/, gitignored via *.pdf)."
+        },
+        {
+          "name": "--browser",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Binario Chromium/Chrome da usare."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "**/*.manifest.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "HTML generato dal manifest (build_booklet_html)",
+          "kind": "html",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<manifest dir>/pdf/NN-<titolo>.pdf",
+          "kind": "pdf",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "browser non trovato / export fallito",
+        "2": "uso errato / file mancanti"
+      },
+      "determinism": {
+        "deterministic": false,
+        "seed_flag": null,
+        "notes": "La resa dipende dalla versione di Chromium (font/antialiasing); il contenuto è deterministico dall'HTML."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/export_booklet_pdf.py --help",
+      "tests": [],
+      "docs": [
+        "scripts/README-automation.md",
+        "plans/adr/ADR-0013-standard-generazione-booklet-sessioni.md"
       ]
     },
     {

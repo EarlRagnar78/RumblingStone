@@ -169,6 +169,27 @@ CSS = """
   .pgtag{ position:absolute; top:.9rem; right:1rem; font-size:.62rem; letter-spacing:.2em;
       color:#2f5d31; border:1px solid #2f5d31; padding:.15rem .5rem; }
   .caption{ font-size:.78rem; text-align:center; opacity:.75; max-width:40rem; font-style:italic;}
+  .printbtn{ position:fixed; right:1rem; bottom:1rem; z-index:9; font:inherit; font-size:.8rem;
+      padding:.5rem .9rem; border:1px solid var(--chrome-line); border-radius:4px; cursor:pointer;
+      background:var(--tab-active); color:var(--tab-active-ink); box-shadow:var(--shadow);}
+
+  /* ── Stampa / PDF A4 (ADR-0013 §5): via testata e tab, resta SOLO la
+     scheda attiva, pergamena a piena pagina, colori esatti. ───────────── */
+  @media print{
+    @page{ size:A4; margin:0; }
+    header.top, nav.tabs, .printbtn{ display:none !important; }
+    body{ background:var(--sheet); }
+    main{ display:block; padding:0; }
+    section.pane{ display:none; }
+    section.pane.on{ display:block; }
+    .sheet{ width:100%; box-sizing:border-box; min-height:calc(100vh - 2px);
+            box-shadow:none; border:none; margin:0;
+            padding:14mm 16mm 16mm; break-after:page;
+            -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    .sheet:last-child{ break-after:auto; }
+    .tablewrap{ overflow-x:visible; }
+    .sheet table{ min-width:0; }
+  }
 """
 
 TAGS = {"dm": '<span class="dmtag">⚠ SOLO DM</span>',
@@ -250,8 +271,18 @@ def md_to_html(md: str, base: Path) -> str:
             para.clear()
 
     def flush_quote() -> None:
+        # Le righe consecutive di un blockquote sono UN paragrafo (lazy
+        # continuation md): unite prima di inline_md, così enfasi/citazioni
+        # che proseguono a capo (\*«…\n…»\*) vengono chiuse correttamente.
         if quote:
-            inner = [f'<p class="readaloud">{inline_md(q)}</p>' for q in quote if q.strip()]
+            groups: list[list[str]] = [[]]
+            for q in quote:
+                if q.strip():
+                    groups[-1].append(q.strip())
+                elif groups[-1]:
+                    groups.append([])
+            inner = [f'<p class="readaloud">{inline_md(" ".join(g))}</p>'
+                     for g in groups if g]
             out.append('<div class="desc">' + "".join(inner) + "</div>")
             quote.clear()
 
@@ -433,13 +464,21 @@ def build(manifest_path: Path, out_override: Path | None = None) -> Path:
 </header>
 <nav class="tabs" role="tablist">{"".join(tabs)}</nav>
 <main>{"".join(panes)}</main>
+<button class="printbtn" onclick="window.print()" title="Stampa/salva in PDF SOLO la scheda aperta (A4)">🖨 Salva PDF</button>
 <script>
   const tabs=document.querySelectorAll('nav.tabs button');
-  tabs.forEach(b=>b.addEventListener('click',()=>{{
-    tabs.forEach(x=>x.setAttribute('aria-selected',x===b));
-    document.querySelectorAll('section.pane').forEach(p=>p.classList.toggle('on',p.id===b.dataset.pane));
+  function show(id){{
+    tabs.forEach(x=>x.setAttribute('aria-selected',x.dataset.pane===id));
+    document.querySelectorAll('section.pane').forEach(p=>p.classList.toggle('on',p.id===id));
     window.scrollTo({{top:0}});
+  }}
+  tabs.forEach(b=>b.addEventListener('click',()=>{{
+    show(b.dataset.pane); history.replaceState(null,'','#'+b.dataset.pane);
   }}));
+  // deep-link #cN: apre direttamente quella scheda (usato anche
+  // dall'export PDF headless — ADR-0013 §5)
+  if(location.hash && document.getElementById(location.hash.slice(1)))
+    show(location.hash.slice(1));
 </script>
 </body>
 </html>

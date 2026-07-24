@@ -103,6 +103,25 @@ resta l'unica fonte dei numeri (esemplare: Frequenza/Diapason in
 - `--format both`: entrambi. Le due vie sono equivalenti e mantenute:
   nessuna delle due è deprecata.
 
+### 5-bis. Via PDF A4 (aggiunta DM 2026-07-24) — per stampare/inviare le singole schede
+
+Il **CSS di stampa fa parte dello stile canonico**: in stampa spariscono
+testata, barra dei tab e bottone; resta SOLO la scheda attiva, pergamena a
+piena pagina `@page A4` con i colori esatti. Due modi equivalenti:
+
+1. **Browser (zero dipendenze)**: apri l'HTML, clicca la scheda (es.
+   «Hint — Thorik»), poi **«🖨 Salva PDF»** (o Ctrl+P) → destinazione
+   «Salva come PDF». Ogni scheda è raggiungibile anche via deep-link
+   `file.html#cN` (lo stesso hash che usano i tab).
+2. **Automatico**: `python3 scripts/export_booklet_pdf.py <manifest>` (o
+   `dm.py booklet <manifest> --pdf`) → Chromium/Chrome headless, **un PDF
+   per ogni pagina ✉ player** in `<cartella manifest>/pdf/` (`--all` /
+   `--pane cN` per le altre; `--list` per gli ID). Stessa resa del browser.
+
+I PDF sono **artefatti locali, mai committati** (`*.pdf` in .gitignore):
+si rigenerano dal manifest in un comando. Regola: un handout = un PDF —
+così ogni giocatore riceve SOLO la sua pagina.
+
 ## Conseguenze
 
 - Più facile: generare booklet coerenti in un comando; rigenerare dopo ogni

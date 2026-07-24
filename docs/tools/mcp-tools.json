@@ -664,6 +664,53 @@
       "deterministic": true
     },
     {
+      "name": "export_booklet_pdf",
+      "description": "PDF A4 delle schede di un booklet pergamena (ADR-0013): un PDF per pagina via Chromium/Chrome headless, resa identica al browser (CSS di stampa canonico). Default: solo pagine player (hint/echi/teaser).",
+      "invocation": "python3 scripts/export_booklet_pdf.py MANIFEST.json",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "manifest": {
+            "type": "string",
+            "description": "Manifest *.manifest.json del booklet (lo stesso di build_booklet_html)."
+          },
+          "pane": {
+            "type": "string",
+            "description": "ID scheda da esportare (es. c2 c3); default: tutte le pagine tag:player."
+          },
+          "all": {
+            "type": "boolean",
+            "description": "Esporta tutte le schede, copertina inclusa."
+          },
+          "list": {
+            "type": "boolean",
+            "description": "Elenca le schede del booklet con i loro ID."
+          },
+          "outdir": {
+            "type": "string",
+            "description": "Cartella di output (default: <manifest dir>/pdf/, gitignored via *.pdf)."
+          },
+          "browser": {
+            "type": "string",
+            "description": "Binario Chromium/Chrome da usare."
+          }
+        },
+        "required": [
+          "manifest"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<manifest dir>/pdf/NN-<titolo>.pdf"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "browser non trovato / export fallito",
+        "2": "uso errato / file mancanti"
+      },
+      "deterministic": false
+    },
+    {
       "name": "hype_homebrew",
       "description": "Impagina recap o handout in layout Homebrewery V3, senza mai duplicare il filtro spoiler di session_recap.",
       "invocation": "python3 scripts/hype_homebrew.py",

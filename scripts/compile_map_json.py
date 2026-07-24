@@ -20,6 +20,12 @@ Pipeline position (Modalita 3 — mappa tattica con strutture ed eserciti):
         export_map_png.py (PNG stampa/VTT)                    |
         export_uvtt.py (.uvtt/.dd2vtt: muri + luci per Foundry/Roll20)
 
+Units of measure: the contract is expressed in grid SQUARES (integers). Set
+`"units_in": "meters"` to author in real-world METERS instead — every
+coordinate/size is then divided by `scale_m_per_square` (default 1,5) and
+snapped to the grid BEFORE validation, so proportions are exact by arithmetic
+(no eyeballing, no drift). Rects snap both edges to stay proportion-faithful.
+
 Army abstraction: units are UNITS/OCCUPIED-AREAS, not one token per soldier
 (as Paizo modules reason). `quantity` is a number carried into the DM
 companion table, never N separate tokens — so the LLM context never has to
@@ -50,6 +56,7 @@ Pure Python 3, no dependencies.
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 import sys
 from pathlib import Path
@@ -69,6 +76,149 @@ UNIT_SYMS = {s for s, d in SYMBOLS.items() if d.get("mode") == "unit"}
 
 class SpecError(Exception):
     """Raised when the JSON contract is invalid. Message lists every error."""
+
+
+# --------------------------------------------------------------------------- #
+# Unit normalization (author in METERS, compile in SQUARES)
+# --------------------------------------------------------------------------- #
+# The canonical contract is expressed in grid SQUARES (integers). But a DM
+# usually thinks in real-world METERS ("a 9 m corridor", "a 30x24 m hall").
+# Converting meters -> squares by hand is where PROPORTIONS drift: not a
+# per-row slip like hand-drawn ASCII, but wrong dimensioning at the source.
+# With `"units_in": "meters"` every coordinate/size in the spec is read as
+# meters and converted DETERMINISTICALLY to integer squares BEFORE validation,
+# so proportions are exact by arithmetic (round(m / scale)), never by eye.
+# Rects/areas snap BOTH edges to the grid (origin and far edge independently),
+# which preserves the true footprint better than converting width alone.
+VALID_UNITS = ("squares", "meters")
+
+
+def _num_m(v, where: str, errors: list[str]) -> float:
+    """A single numeric meter value (int or float, but not bool)."""
+    if isinstance(v, bool) or not isinstance(v, (int, float)):
+        errors.append(f"{where}: atteso un numero (metri), trovato {v!r}.")
+        return 0.0
+    return float(v)
+
+
+def _sq(v_m: float, scale: float) -> int:
+    """Snap one meter value to the nearest grid square index."""
+    return int(round(v_m / scale))
+
+
+def _conv_point(p, scale: float, where: str, errors: list[str]) -> list[int]:
+    if not (isinstance(p, list) and len(p) == 2):
+        errors.append(f"{where}: coordinata in metri deve essere [x, y].")
+        return [0, 0]
+    return [_sq(_num_m(p[0], where, errors), scale),
+            _sq(_num_m(p[1], where, errors), scale)]
+
+
+def _conv_points(lst, scale: float, where: str, errors: list[str]) -> list:
+    if not isinstance(lst, list):
+        errors.append(f"{where}: atteso un elenco di coordinate [x, y] in metri.")
+        return lst
+    return [_conv_point(p, scale, where, errors) for p in lst]
+
+
+def _conv_rect(r, scale: float, where: str, errors: list[str]) -> list[int]:
+    """Convert [x, y, w, h] meters -> integer squares, snapping both edges so
+    the far edge lands on its true grid line (proportion-faithful)."""
+    if not (isinstance(r, list) and len(r) == 4):
+        errors.append(f"{where}: 'rect' in metri deve essere [x, y, larghezza, altezza].")
+        return [0, 0, 1, 1]
+    x = _num_m(r[0], where, errors)
+    y = _num_m(r[1], where, errors)
+    w = _num_m(r[2], where, errors)
+    h = _num_m(r[3], where, errors)
+    x0, y0 = _sq(x, scale), _sq(y, scale)
+    x1, y1 = _sq(x + w, scale), _sq(y + h, scale)
+    return [x0, y0, max(1, x1 - x0), max(1, y1 - y0)]
+
+
+def normalize_units(spec: dict) -> dict:
+    """Return a spec expressed in integer SQUARES.
+
+    If `units_in` is absent or "squares", the spec is returned unchanged
+    (fully backward compatible). If "meters", a deep copy is returned with
+    every geometry field converted to squares; downstream code (validate,
+    paint, emit) never sees meters. Raises SpecError on a bad unit or a
+    non-numeric meter value, so the LLM/author gets the reject-and-resend loop.
+    """
+    if not isinstance(spec, dict):
+        return spec
+    mode = spec.get("units_in", "squares")
+    if mode == "squares":
+        return spec
+    if mode not in VALID_UNITS:
+        raise SpecError(f"'units_in': '{mode}' non valido — usa 'squares' o 'meters'.")
+
+    scale = spec.get("scale_m_per_square", 1.5)
+    if isinstance(scale, bool) or not isinstance(scale, (int, float)) or scale <= 0:
+        raise SpecError("'scale_m_per_square': numero > 0 richiesto in modalità 'meters'.")
+    s = float(scale)
+    errors: list[str] = []
+    out = copy.deepcopy(spec)
+
+    size = out.get("map_size")
+    if isinstance(size, list) and len(size) == 2:
+        out["map_size"] = [max(1, _sq(_num_m(size[0], "'map_size'", errors), s)),
+                           max(1, _sq(_num_m(size[1], "'map_size'", errors), s))]
+    else:
+        errors.append("'map_size': in metri deve essere [larghezza_m, altezza_m].")
+
+    for i, r in enumerate(out.get("regions", []) or []):
+        w = f"regions[{i}]"
+        if "rect" in r:
+            r["rect"] = _conv_rect(r["rect"], s, w, errors)
+        if "polygon" in r:
+            r["polygon"] = _conv_points(r["polygon"], s, w, errors)
+
+    for i, st in enumerate(out.get("structures", []) or []):
+        w = f"structures[{i}]"
+        if "at" in st:
+            st["at"] = _conv_point(st["at"], s, w, errors)
+        if "rect" in st:
+            st["rect"] = _conv_rect(st["rect"], s, w, errors)
+        if "line" in st:
+            st["line"] = _conv_points(st["line"], s, w, errors)
+        if "center" in st:
+            st["center"] = _conv_point(st["center"], s, w, errors)
+        if "radius" in st:
+            st["radius"] = max(0, _sq(_num_m(st["radius"], w + ".radius", errors), s))
+
+    for i, h in enumerate(out.get("hazards", []) or []):
+        w = f"hazards[{i}]"
+        if "at" in h:
+            h["at"] = _conv_point(h["at"], s, w, errors)
+        if "rect" in h:
+            h["rect"] = _conv_rect(h["rect"], s, w, errors)
+
+    for i, lt in enumerate(out.get("lights", []) or []):
+        w = f"lights[{i}]"
+        if "at" in lt:
+            lt["at"] = _conv_point(lt["at"], s, w, errors)
+        if "range" in lt:  # light radius stays a (possibly fractional) square count
+            lt["range"] = _num_m(lt["range"], w + ".range", errors) / s
+
+    for i, u in enumerate(out.get("units", []) or []):
+        w = f"units[{i}]"
+        if "at" in u:
+            u["at"] = _conv_point(u["at"], s, w, errors)
+        if isinstance(u.get("area"), dict) and "rect" in u["area"]:
+            u["area"]["rect"] = _conv_rect(u["area"]["rect"], s, w + ".area", errors)
+
+    for i, mv in enumerate(out.get("movements", []) or []):
+        w = f"movements[{i}]"
+        if "path" in mv:
+            mv["path"] = _conv_points(mv["path"], s, w, errors)
+
+    if errors:
+        raise SpecError("JSON in metri non convertibile — correggi e reinvia:\n  - "
+                        + "\n  - ".join(errors))
+
+    out["units_in"] = "squares"  # downstream is oblivious to the meter origin
+    return out
 
 
 # --------------------------------------------------------------------------- #
@@ -530,6 +680,7 @@ def main(argv=None) -> int:
         return 2
 
     try:
+        spec = normalize_units(spec)   # "meters" -> integer squares (no-op for "squares")
         cols, rows = validate(spec)
     except SpecError as e:
         print(f"✗ {e}", file=sys.stderr)

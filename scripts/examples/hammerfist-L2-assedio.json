@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "title": "Hammerfist L2 — Assedio della Fortezza (ricostruzione fedele)",
+  "scale_m_per_square": 1.5,
+  "units_in": "squares",
+  "map_size": [120, 80],
+  "base_terrain": "🟩",
+  "north": "N",
+
+  "regions": [
+    { "terrain": "⛰", "rect": [0, 0, 120, 15], "label": "Montagna (bedrock impenetrabile)" },
+    { "terrain": "🟩", "rect": [19, 20, 61, 20], "label": "Cortile Interno (zona sicura, comando)" },
+    { "terrain": "🟨", "rect": [19, 45, 61, 15], "label": "Cortile Esterno (prima linea)" },
+    { "terrain": "🟦", "rect": [12, 75, 75, 4], "label": "Fossato (6 m largo, 3 m profondo)" },
+    { "terrain": "🟫", "rect": [12, 79, 75, 1], "label": "Pendio fangoso (terreno difficile ×0,5)" }
+  ],
+
+  "structures": [
+    { "type": "🏰", "line": [[9, 15], [89, 15]], "label": "Muro Nord Continuo" },
+    { "type": "🏰", "line": [[9, 15], [9, 60]], "label": "Muro Ovest" },
+    { "type": "🏰", "line": [[89, 15], [89, 60]], "label": "Muro Est" },
+    { "type": "🏰", "line": [[9, 60], [56, 60]] },
+    { "type": "🏰", "line": [[62, 60], [89, 60]] },
+
+    { "type": "🗼", "rect": [7, 60, 4, 4], "label": "Torre Ovest (col 08-11, +20 m, 2 baliste top)" },
+    { "type": "🗼", "rect": [89, 60, 4, 4], "label": "Torre Est (col 90-93, +20 m, 2 baliste top)" },
+
+    { "type": "🏰", "rect": [17, 16, 4, 3], "label": "Bastione B1 Nord" },
+    { "type": "🏰", "rect": [87, 16, 4, 3], "label": "Bastione B2 Nord" },
+    { "type": "🏰", "rect": [19, 64, 4, 3], "label": "Bastione G1 Ovest (15 m)" },
+    { "type": "🏰", "rect": [84, 64, 4, 3], "label": "Bastione G2 Est (15 m)" },
+
+    { "type": "🚪", "rect": [56, 40, 6, 2], "label": "Porta Interna (9 m, +3 m elevata, PF 90)" },
+    { "type": "🚪", "rect": [57, 71, 4, 2], "label": "Cancello Principale (6 m, PF 120)" },
+    { "type": "🌉", "rect": [56, 73, 6, 3], "label": "Ponte Levatoio (15 m lungo)" },
+
+    { "type": "🎯", "at": [8, 60] }, { "type": "🎯", "at": [8, 63] },
+    { "type": "🎯", "at": [90, 60] }, { "type": "🎯", "at": [90, 63] },
+    { "type": "🎯", "at": [21, 65] }, { "type": "🎯", "at": [86, 65] }
+  ],
+
+  "units": [
+    { "faction": "Nani (PG)", "name": "Dara Occhiolesto — cima Torre Ovest (+20 m), cecchino",
+      "token": "🟢", "at": [8, 61], "cr": "PG" },
+    { "faction": "Nani (PG)", "name": "Borin Ferropugno — comando prima linea",
+      "token": "⚫", "at": [59, 53], "cr": "PG" },
+    { "faction": "Nani (PG)", "name": "Thorin Runaforte — supporto cura (vicino a Madre Dana)",
+      "token": "🟢", "at": [58, 35], "cr": "PG" },
+    { "faction": "Nani (PG)", "name": "Nala Cantapietre — Bastione G1, sabotaggio/bardica",
+      "token": "🟢", "at": [21, 65], "cr": "PG" },
+    { "faction": "Nani (PG)", "name": "Re Thorek XIII — centro comando interno (protetto)",
+      "token": "⚫", "at": [59, 33], "cr": "PNG" },
+    { "faction": "Nani (PG)", "name": "Madre Dana Forgiapietra — stazione di cura",
+      "token": "🟢", "at": [60, 35], "cr": "PNG" },
+
+    { "faction": "Nani", "name": "5 Cantitrici (buff di massa)",
+      "token": "🔵", "area": { "rect": [55, 31, 5, 1] }, "quantity": 5, "cr": "—" },
+    { "faction": "Nani", "name": "50 Nani d'Elite (formazione a cuneo)",
+      "token": "🔵", "area": { "rect": [51, 51, 16, 6] }, "quantity": 50, "cr": "EL 10" },
+    { "faction": "Nani", "name": "20 Nani Bastione B1",
+      "token": "🔵", "area": { "rect": [16, 17, 5, 2] }, "quantity": 20, "cr": "—" },
+    { "faction": "Nani", "name": "20 Nani Bastione B2",
+      "token": "🔵", "area": { "rect": [87, 17, 4, 2] }, "quantity": 20, "cr": "—" },
+    { "faction": "Nani", "name": "40 Nani Bastione G1 Ovest",
+      "token": "🔵", "area": { "rect": [19, 64, 4, 2] }, "quantity": 40, "cr": "—" },
+    { "faction": "Nani", "name": "40 Nani Bastione G2 Est",
+      "token": "🔵", "area": { "rect": [84, 64, 4, 2] }, "quantity": 40, "cr": "—" }
+  ],
+
+  "movements": [
+    { "name": "Nala → tunnel segreto (Giorno 3)", "path": [[21, 65], [40, 69], [57, 69]],
+      "color": "#2a9d8f" }
+  ],
+
+  "notes": [
+    "RICOSTRUZIONE dai DATI AUTORITATIVI dell'ultraclear (tabella 'COORDINATE STRUTTURE' + 'POSIZIONI PG'), non dal disegno ASCII.",
+    "Fix 1 — griglia non uniforme: le righe ASCII avevano 34-48 celle mentre l'header dichiarava 120 col; qui la griglia è un vero 120×80 uniforme (ogni cella = 1,5 m).",
+    "Fix 2 — simbolo montagna ⛰️ (con variation-selector) non era in legenda e sarebbe reso come emoji grezzo; usato ⛰ canonico.",
+    "Fix 3 — confusione Dara/Dana: Dara Occhiolesto (cecchino) è in cima alla Torre Ovest [Col 09, Riga 62]; Madre Dana Forgiapietra (guaritrice) è nel cortile interno [Col 61, Riga 36]. Personaggi e posizioni distinti e coerenti.",
+    "Fix 4 — drift annotazioni: l'annotazione 'DARA ... Top' era sotto la Riga 64 e le torri disegnate a col 01-02, mentre la tabella dice Torre Ovest col 08-11 e Dara col 09/riga 62; qui ogni elemento è agganciato alle coordinate autoritative.",
+    "Nota: '50 Guerrieri Riserva' (righe 35-37 sparsi) non hanno coordinate precise nella fonte e sono lasciati fuori dalla griglia (da collocare a discrezione DM)."
+  ]
+}

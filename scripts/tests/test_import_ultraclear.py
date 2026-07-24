@@ -105,6 +105,24 @@ class TestRules(unittest.TestCase):
         maps = I.parse_maps(_load("schematic.md"))
         self.assertEqual(maps, [])
 
+    def test_r11_catch_all_uncatalogued_defect(self):
+        # a draft that no R1-R10 rule explains but that STILL won't compile must
+        # not be swallowed: R11 surfaces it as an ERROR (the raw validator msg).
+        pmap = I.ParsedMap(index=1, title="X", matrix=[], declared_dims=None,
+                           scale_m=1.5, tables=[], pg=[], raw_lines=[])
+        bad_draft = {"title": "X"}   # manca map_size → il contratto rifiuta
+        conflicts = I.diagnose(pmap, grid_usable=False, draft=bad_draft)
+        r11 = [c for c in conflicts if c.id == "R11"]
+        self.assertTrue(r11)
+        self.assertEqual(r11[0].severity, "ERROR")
+        self.assertTrue(r11[0].uid)
+
+    def test_r11_silent_when_registry_already_explains(self):
+        # if a catalogued ERROR already fires, R11 stays quiet (no duplicate noise)
+        _, _, conflicts = _run("r1_header.md")   # R1 ERROR present
+        self.assertIn("R1", _ids(conflicts))
+        self.assertNotIn("R11", _ids(conflicts))
+
 
 class TestEditorContract(unittest.TestCase):
     """The conflict record must be consumable by the visual editor (§7)."""

@@ -949,6 +949,19 @@ def diagnose(pmap: ParsedMap, grid_usable: bool, draft: dict) -> list[Conflict]:
     conflicts: list[Conflict] = []
     for rule in RULES:
         conflicts.extend(rule(ctx))
+    # CATCH-ALL (R11): un difetto NON catalogato (nessuna regola R1-R10 lo
+    # modella) non deve sparire. Se la bozza non è compilabile e nessun ERROR
+    # del registro lo spiega già, si emette comunque un conflitto ERROR con il
+    # messaggio grezzo del validatore del contratto — così «se un difetto non è
+    # catalogato lo inserisce lo stesso», senza inventarne la categoria.
+    if not any(c.severity == "ERROR" for c in conflicts):
+        for err in _validate_draft(draft):
+            conflicts.append(Conflict(
+                "R11", "uncategorized-draft-error", "ERROR", map=pmap.index, source="both",
+                message="difetto non catalogato — la bozza non è compilabile: " + err.strip(" -"),
+                suggestion=("nessuna regola R1-R10 copre questo caso: correggere a mano "
+                            "e valutare una nuova regola nel registro (§8 del piano)"),
+                actions=[_act("ignore", "Ignora")]))
     conflicts.sort(key=lambda c: c.sort_key())
     for c in conflicts:
         c.uid = c.fingerprint()   # stable editor-state key (order-independent content hash)

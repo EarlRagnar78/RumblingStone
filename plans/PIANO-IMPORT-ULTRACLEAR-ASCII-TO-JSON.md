@@ -223,6 +223,7 @@ aggiungerne una non tocca il resto. Catalogo minimo alla v1:
 | quantity-mismatch | R8 | WARN | `quantity` scritta ≠ celle occupate dal blocco unità |
 | non-emoji-cell | R9 | WARN | cella con carattere non-emoji dentro la matrice |
 | schematic-map-detected | R10 | INFO | side-view/prospettica/esagonale → **saltata** (`render:none`) |
+| uncategorized-draft-error | R11 | ERROR | **catch-all**: difetto NON coperto da R1-R10 che rende comunque la bozza non compilabile (messaggio grezzo del validatore del contratto). Scatta solo se nessun ERROR del registro lo spiega già → un difetto non catalogato viene inserito lo stesso, senza inventarne la categoria |
 
 Ogni regola dichiara `id`, `severità di default`, e produce record conformi a §7.
 Il `--strict` promuove i WARN a fatali. Nuove regole = un test unità ciascuna.

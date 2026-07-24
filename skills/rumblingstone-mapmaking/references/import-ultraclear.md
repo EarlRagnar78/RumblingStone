@@ -52,6 +52,15 @@ python3 scripts/compile_map_json.py OUT.draft.json --validate-only
 Registro completo (estensibile): R1–R10 — vedi `§8` del piano
 `plans/PIANO-IMPORT-ULTRACLEAR-ASCII-TO-JSON.md`.
 
+**Difetto non catalogato?** Il registro cattura solo le categorie modellate
+(R1-R10): non *scopre* da solo una nuova categoria di difetto — l'architettura è
+un registro pluggabile apposta (una regola nuova = una funzione + un test). Ma
+un difetto **non catalogato** che rende comunque la bozza non compilabile **non
+viene ingoiato**: il catch-all **R11 `uncategorized-draft-error`** lo emette
+come ERROR con il messaggio grezzo del validatore del contratto (scatta solo se
+nessun ERROR di R1-R10 lo spiega già). Ciò che il parser non sa interpretare
+degrada a `notes`/INFO, **mai** a dati inventati.
+
 ## Il report `--json-report` è input per l'editor visuale
 
 Ogni conflitto è un record **machine-actionable** (contratto

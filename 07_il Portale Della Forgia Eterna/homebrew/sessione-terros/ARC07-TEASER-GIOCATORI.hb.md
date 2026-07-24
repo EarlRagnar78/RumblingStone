@@ -31,7 +31,9 @@ Pagina da consegnare al giocatore indicato, in privato.
 
 # Il cammino fin qui (per chi ha la memoria corta e il cuore pieno)
 
-> *Ripasso lampo dell'ultima sessione — solo cose che avete vissuto.*
+> *Ripasso lampo dell'ultima sessione — solo la storia COMUNE, quella che
+> avete vissuto tutti insieme. I momenti vostri, quelli che contano davvero,
+> sono negli hint personali: leggeteli. Sono scritti per voi soli.*
 
 - **Avete cantato una scala fuori da un oceano di roccia.** Sul serio. La
   **Frequenza della Confusione**, il dono del giardino che canta, ha risposto
@@ -40,22 +42,16 @@ Pagina da consegnare al giocatore indicato, in privato.
   a metà strada, la canzone è finita prima della scala. I blocchi sono
   crollati. Voi no. (Per un pelo. Nessuno lo ammetterà mai davanti a un
   boccale.)
-- **Tordek ha combattuto da solo, ed è bastato.** Nell'anticamera dalle
-  pareti nere e viola, il metallo ha tradito tutti tranne lui: Thorik
-  inchiodato al muro dalla sua stessa armatura, Artemis schiacciato a terra
-  da un peso dieci volte il suo. Ed è lì, davanti a un duellante d'argento
-  senza volto, che il **Diapason Armonico** ha urlato il suo unico urlo —
-  un grido che ha incrinato il mondo — e i pugni di Tordek hanno fatto il
-  resto. Il frammento ora è muto. Ne è valsa la pena.
-- **I Bracieri hanno parlato.** Quando il petto della sentinella si è aperto
-  e la luce verde ha trovato i guanti di Tordek, una voce da vecchio fabbro
-  ha detto sei parole che nessuno al tavolo dimenticherà: *«Incudine e
-  Martello. Ora sei completo.»*
+- **Il Diapason Armonico non canterà mai più.** Nell'anticamera dalle pareti
+  nere e viola — la stanza che ha diviso il gruppo per natura, e ognuno di
+  voi ricorda COME — il frammento del giardino ha urlato il suo unico urlo:
+  un grido che ha incrinato il mondo, speso in un colpo solo. Ora è muto.
+  Ne è valsa la pena. *(Il resto di quel duello appartiene a chi l'ha
+  combattuto: è nel suo hint, chiedetegli da bere e forse ve lo racconta.)*
 - **E adesso siete dentro.** Il Tempio che nessun mortale ha mai calpestato.
   Corridoi d'argento che brillano di luce propria, la gravità che ruota come
-  in un sogno di Escher, e Aegis Fang che vibra così forte da far male al
-  braccio — sempre nella stessa direzione. **Verso il basso. Verso il
-  centro.**
+  in un sogno di Escher, e una direzione sola che tira tutti allo stesso
+  modo. **Verso il basso. Verso il centro.**
 
 ---
 

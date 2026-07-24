@@ -208,9 +208,74 @@ L'importer fa il lavoro sporco (estrae + diagnostica); l'editor fa il lavoro fin
 (riconciliazione visuale). Insieme migrano le ~30 ultra-clear al formato corretto
 senza riscriverle a mano.
 
-## §9 — Stato
+## §9 — UX essenziale (senza cui l'editor non è usabile)
+
+Un editor senza queste feature è un prototipo, non uno strumento:
+- **Undo/redo** via **command pattern** (ogni azione = comando reversibile) —
+  requisito non negoziabile, incluso nell'MVP.
+- **Selezione** (singola/multipla), **copia/incolla/duplica**, **elimina**,
+  **sposta** con snap.
+- **Zoom/pan**, **toggle snap**, **visibilità/lock per layer**, righello A1.
+- **Scorciatoie da tastiera** + palette strumenti; **a11y**: navigabilità da
+  tastiera, focus visibile, contrasto.
+- **Palette color-blind-safe** per i token/terreni (rif. skill `dataviz`).
+- **Autosave locale** (localStorage) + import/export file espliciti.
+
+## §10 — NFR & strategia tecnica
+
+- **Performance**: mappe fino a `200×200` (40k celle) → **un solo `<canvas>`**
+  con redraw a **dirty-rect**, non 40k nodi DOM; render a `requestAnimationFrame`.
+- **Data model & serializzazione**: lo stato è l'oggetto contratto; l'export usa
+  un **ordinamento canonico delle chiavi/liste** identico a quello atteso da
+  `compile_map_json`, così il round-trip è **idempotente e byte-stabile**.
+- **Offline/privacy**: nessuna rete a runtime; File System Access API o
+  download/upload; **CSP restrittiva**, **niente telemetria**, niente CDN.
+- **Supply-chain**: dipendenze **poche, fissate con lockfile, vendored**, con
+  **check licenze** in CI del sotto-progetto; preferire vanilla+canvas (decisione
+  E0). Bundle target ragionevole (<500 KB gz) e avviabile da `file://` o statico.
+- **i18n**: UI in italiano (coerente col repo), stringhe centralizzate.
+- **Browser target**: ultime 2 versioni Chromium/Firefox (Playwright usa il
+  Chromium preinstallato dell'ambiente).
+
+## §11 — Anteprima fedele vs statico (la resa "vera")
+
+Nodo UX aperto: come far vedere all'utente la **resa pergamena** (`render_map_svg`)
+senza reimplementarla. Tre opzioni (decisione in E0):
+- **(A) Watch-helper locale** `dm.py mapeditor` che, al salvataggio del JSON,
+  esegue `compile_map_json → render_map_svg` e ricarica l'SVG in un pannello —
+  anteprima **fedele**, resta offline, un solo renderer. *(Raccomandata.)*
+- **(B) Statico puro**: l'editor mostra solo anteprima schematica + le istruzioni
+  CLI per rendere. Più semplice, meno immediato.
+- **(C) Renderer in-browser** (portare `render_map_svg` a Pyodide/JS): **scartata**
+  — creerebbe il secondo renderer che vogliamo evitare (rischio drift).
+
+## §12 — Integrazione col report conflitti (Piano 1)
+
+L'editor **consuma il `.conflicts.json`** di `import_ultraclear.py` (Piano 1, §7):
+importa la bozza, **evidenzia le celle/coordinate in conflitto** con severità e
+suggerimento, e permette di risolverle a mano sulla griglia. È il flusso che
+trasforma una ultra-clear rotta in un contratto pulito senza riscriverla.
+
+## §13 — MVP / walking skeleton
+
+Fetta verticale minima (dà valore e prova il round-trip prima di costruire i tool):
+> **E1 (legenda condivisa)** + un canvas che **importa un JSON contratto**, lo
+> mostra sulla griglia, permette **undo/redo** e lo **ri-esporta byte-stabile**.
+> Se il JSON esportato ricompila identico al master atteso, il cuore (data model +
+> round-trip) è provato; solo allora si aggiungono gli strumenti di disegno
+> (E3/E4), l'import Watabou/bozza (E5) e l'anteprima fedele (§11).
+
+## §14 — Decisioni aperte (input per l'ADR E0)
+
+1. **Layout**: sotto-cartella `tools/map-editor/` (proposta) vs repo separato.
+2. **Stack**: vanilla+canvas (proposta, minima manutenzione) vs TS+Vite.
+3. **Anteprima**: opzione A/B/C di §11 (proposta: A watch-helper).
+4. **CI**: job separato per il build/test dell'editor, **non bloccante** per la
+   pipeline principale (proposta).
+
+## §15 — Stato
 
 🔵 **PIANIFICATO** (2026-07-23). Primo gate = **E0 (ADR)**: senza la decisione
-architetturale «progetto separato + stack» non si scrive front-end. E1 (legenda
-condivisa) è il prerequisito tecnico e ha valore autonomo, quindi è candidato a
-partire per primo anche prima dell'editor vero e proprio.
+architetturale «progetto separato + stack + anteprima» non si scrive front-end.
+E1 (legenda condivisa) è il prerequisito tecnico e ha valore autonomo, quindi è
+candidato a partire per primo anche prima dell'editor vero e proprio.

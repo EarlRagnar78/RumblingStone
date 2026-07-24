@@ -172,7 +172,113 @@ ultra-clear.md
   [PIANO-EDITOR-VISUALE-MAPPE-TATTICHE](PIANO-EDITOR-VISUALE-MAPPE-TATTICHE.md) §4),
   il tool vi si aggancia per non duplicare.
 
-## §7 — Stato
+## §7 — Contratto CLI & I/O (interface spec)
+
+```
+import_ultraclear.py INPUT.md [opzioni]
+  -o, --output FILE        bozza JSON (default: stdout)
+  --conflicts FILE         report leggibile (markdown); default: stderr
+  --json-report FILE       report machine-readable (.conflicts.json) per l'editor
+  --emit-md DIR            compila subito la bozza (compile_map_json) → master .md
+  --map N                  se il file ha più mappe, quale importare (default: tutte)
+  --strict                 WARN diventano fatali (per la CI severa)
+  -q/-v                    verbosità
+```
+
+**Exit code** (contratto stabile, script-friendly):
+- `0` — bozza compilabile, nessun `ERROR` (eventuali WARN/INFO nel report);
+- `1` — prodotti `ERROR`: la bozza NON è compilabile → va corretta (è il segnale
+  di "human-in-the-loop", non un crash);
+- `2` — errore d'uso/IO (file mancante, markdown illeggibile).
+
+**Schema del record conflitto** (una voce del `--json-report`):
+```json
+{ "id": "R1", "rule": "grid-header-mismatch", "severity": "ERROR",
+  "map": 1, "where": { "row": 25, "cell": [59,33], "coord": "BH34" },
+  "message": "riga 25: 48 celle ma header dichiara 120 colonne",
+  "suggestion": "riallineare la riga o correggere l'header",
+  "source": "grid|table|both" }
+```
+`--json-report` è pensato per essere **consumato dall'editor visuale** (Piano 2)
+che evidenzia le celle in conflitto. Determinismo: a parità di input, byte
+identici (regole in ordine fisso, nessun timestamp).
+
+---
+
+## §8 — Registro regole conflitti (estensibile, non solo i 4 difetti-tipo)
+
+I 4 difetti-tipo (D1-D4) sono l'insieme *iniziale*. L'architettura è un **registro
+di regole** pluggabili `rules: list[Callable[[ParsedMap], list[Conflict]]]`, così
+aggiungerne una non tocca il resto. Catalogo minimo alla v1:
+
+| Regola | ID | Severità | Cosa rileva |
+|---|---|---|---|
+| grid-header-mismatch (D1) | R1 | ERROR | conteggio celle riga ≠ header dichiarato |
+| grid-nonuniform-rows | R2 | WARN | righe di larghezza diversa fra loro |
+| symbol-not-in-legend (D2) | R3 | ERROR/WARN | simbolo assente da `SYMBOLS`; quasi-match (variation-selector) = WARN con suggerimento |
+| annotation-coord-drift (D4) | R4 | WARN | token dove *appare* ≠ dove *dichiarato* nelle tabelle |
+| name-collision (D3) | R5 | WARN | nomi simili a coordinate diverse (Dara/Dana) |
+| coord-out-of-bounds | R6 | ERROR | coordinata di tabella fuori da `map_size` |
+| overlapping-structures | R7 | INFO | due strutture sulla stessa cella (precedenza ambigua) |
+| quantity-mismatch | R8 | WARN | `quantity` scritta ≠ celle occupate dal blocco unità |
+| non-emoji-cell | R9 | WARN | cella con carattere non-emoji dentro la matrice |
+| schematic-map-detected | R10 | INFO | side-view/prospettica/esagonale → **saltata** (`render:none`) |
+
+Ogni regola dichiara `id`, `severità di default`, e produce record conformi a §7.
+Il `--strict` promuove i WARN a fatali. Nuove regole = un test unità ciascuna.
+
+---
+
+## §9 — NFR, versioning, testing (best practices)
+
+**Non-funzionali**:
+- **Determinismo**: output byte-stabile (nessun ordinamento dipendente da hash o
+  tempo); vale sia per la bozza sia per i report.
+- **Zero dipendenze** (stdlib), coerente col repo; **performance** su mappe fino a
+  `200×200` (limite schema) in <1 s.
+- **Unicode**: normalizzazione NFC prudente; i quasi-match (es. `⛰️`→`⛰`) si
+  *suggeriscono*, non si applicano in silenzio.
+- **Idempotenza**: reimportare la bozza già compilata non deve generare nuovi
+  ERROR (round-trip stabile).
+
+**Versioning/migrazione**: la bozza emessa dichiara `schema_version` e
+`units_in: "squares"`; se un ultraclear esprime misure in metri nelle tabelle,
+l'importer può emettere `units_in: "meters"` (riusa la conversione del
+compilatore) — deciso in F4.
+
+**Strategia di test** (`scripts/tests/test_import_ultraclear.py`):
+- **unit per regola** (una fixture minima che scatta ciascuna R1-R10);
+- **golden case** Hammerfist L2 → converge a `hammerfist-L2-assedio.json`;
+- **property/round-trip**: `import → compile_map_json --validate-only` verde su
+  tutti i fixture senza ERROR; bozza→compile→(re)import senza nuovi conflitti;
+- **fixtures** in `scripts/tests/fixtures/ultraclear/` (griglia uniforme, griglia
+  driftata, mappa schematica, simbolo fuori legenda).
+
+---
+
+## §10 — MVP / walking skeleton (da dove partire)
+
+Fetta verticale minima che gira end-to-end **prima** di tutte le regole:
+> `F1 (parse griglia) → F4-min (emetti bozza dalla sola griglia, senza tabelle) →
+> F5 (CLI + compile --validate-only)`. Su una **griglia uniforme** produce già una
+> bozza compilabile. Poi si aggiungono, una alla volta, il parser tabelle (F2) e
+> le regole del registro (§8), ognuna col suo test. Questo dà valore al primo
+> giorno e riduce il rischio d'integrazione.
+
+---
+
+## §11 — Decisioni aperte (da fissare all'avvio)
+
+1. **Fonte di verità in caso di conflitto griglia↔tabella**: default proposto =
+   *la tabella vince* (dati autoritativi) + WARN; confermare.
+2. **Formato report**: default proposto = md leggibile **e** `.conflicts.json`
+   (per l'editor). Confermare se basta uno dei due.
+3. **`--emit-md` di default o opt-in**: proposto opt-in (l'importer produce dati,
+   non master, salvo richiesta).
+
+---
+
+## §12 — Stato
 
 🔵 **PIANIFICATO** (2026-07-23). Nessun lotto ancora eseguito. Prerequisiti già
 in repo: parser griglia (`render_map_svg`), contratto+compilatore

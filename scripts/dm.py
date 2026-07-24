@@ -167,6 +167,8 @@ def cmd_booklet(args: argparse.Namespace, extra: list[str]) -> int:
     bo = [args.manifest]
     if args.out:
         bo += ["--out", args.out]
+    if args.format:
+        bo += ["--format", args.format]
     return run("build_booklet_html.py", *bo, *extra)
 
 
@@ -338,10 +340,13 @@ def main(argv: list[str] | None = None) -> int:
 
     sub.add_parser("dossier", help="⚠️ SOLO DM: dossier di tutte le trame (da state.md) in Homebrewery V3")
 
-    p = sub.add_parser("booklet", help="booklet HTML sfogliabile in stile pergamena "
-                                       "(build_booklet_html.py) da un manifest JSON")
+    p = sub.add_parser("booklet", help="booklet in stile pergamena da manifest JSON "
+                                       "(ADR-0013): HTML autonomo e/o sorgente Homebrewery V3")
     p.add_argument("manifest", help="manifest *.manifest.json del booklet")
-    p.add_argument("--out", help="file HTML di output (default: dal manifest)")
+    p.add_argument("--out", help="file di output (default: dal manifest)")
+    p.add_argument("--format", choices=["html", "hb", "both"], default=None,
+                   help="html = pagina autonoma · hb = .hb.md per il self-hosted/Docker "
+                        "(dm.py hype) · both = entrambi")
 
     p = sub.add_parser("session",
                        help="ciclo sessione su branch-per-gruppo (ADR-0007): "

@@ -70,6 +70,11 @@ poi `state_apply.py --migrate --commit` (inserisce i marker `auto:`).
 - `recap --hype` · `handout --tipo T --da <file>` · `dossier` (⚠️ solo DM) —
   vesti Homebrewery V3: i `.hb.md` sono **generati**, mai editati a mano.
 - `hype setup|start|docker` — Homebrewery self-hosted (ADR-0004).
+- `booklet <manifest.json> [--format html|hb|both]` — booklet «pergamena»
+  da manifest (**ADR-0013**): HTML autonomo e/o `.hb.md` V3 per il
+  self-hosted. Standard obbligatorio: teaser giocatori SEPARATO e
+  spoiler-free (titolo evocativo, mai il nome dello scontro), hint/echi
+  per-PG, canone giocato annotato nei master.
 - `maps render|validate` — per il *contenuto* delle mappe caricare
   `rumblingstone-mapmaking` (questa skill copre solo l'invocazione).
 - `skills build|sync` — rebuild dei mirror per-agente (generati, gitignored).

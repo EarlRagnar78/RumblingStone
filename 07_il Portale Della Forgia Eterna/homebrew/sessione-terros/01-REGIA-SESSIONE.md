@@ -14,6 +14,10 @@
 | Sentinella Silenziosa | ✅ sconfitta da Tordek nell'Anticamera della Magnetite | master §7b |
 | Bracieri Gemelli | ✅ **COMPLETI** (Fuoco+Terra), coscienza attiva, voce da vecchio fabbro | master §7b + scheda `05_Bracieri_Gemelli_Scheda_PG_Completa.md` |
 | Corona di Adamantio | Topazio solo (1/3) — lo Smeraldo si forgia STASERA | master §9 |
+| Cristalli Viventi | ✅ **skill challenge SUPERATO**: Frequenza della Confusione + Diapason Armonico ottenuti; +2 TS contro Terros attivo | master §6 (canone giocato 2026-07-24) |
+| Salita al Tempio | ✅ giocata in variante «salita cantata»: la Frequenza sollevava blocchi dall'oceano fino a metà strada (poi crollati 🙂), resto co-op | master §7a (canone giocato) |
+| Diapason Armonico | ⚠️ **SPESO sulla Sentinella** (Grido Superiore innescato dalla Frequenza): niente stun anti-arrocco contro Terros | master §7b/§8 (canone giocato) |
+| Frequenza della Confusione | ✅ ancora disponibile (è conoscenza): **il malus round 1 su Terros si attiva con la SOLA Frequenza** — nauseato, −4 att/CA | master §8 |
 | Posizione del party | dentro il Tempio di Mithral, oltre l'Anticamera, verso la camera sferica | master §7→§8 |
 | Countdown Hammerfist | ~3 giorni e 18 ore a fine parte | master §0 |
 
@@ -31,9 +35,12 @@ esistono solo come echi.
 
 ## 1. Ordine di gioco della serata
 
-1. **Apertura + hint privati.** Consegna le quattro pagine ✉ HANDOUT
-   (capitoli III–VI di questo booklet), una per giocatore, in privato.
-   Leggi il read-aloud «Dove Siamo» (copertina).
+1. **Pre-sessione (venerdì): teaser + hint.** Ai giocatori si invia il
+   **teaser «L'Ultima Porta»** (`ARC07-TEASER-GIOCATORI.html`, file
+   separato e spoiler-free: recap veloce + hype, MAI il nome del boss —
+   regola ADR-0013 per tutte le sessioni) e a ciascuno la SUA pagina ✉
+   hint, in privato. Al tavolo: leggi il read-aloud «Dove Siamo»
+   (copertina). Questo booklet col titolo vero resta SOLO al DM.
 2. **La scena privata di Artemis — il Seme-Mercato di Varis** (master
    **§6-bis**, integrale). ⚠ **Nota di regia sul posizionamento**: nel
    master la scena vive sulla riva dell'Oceano di Roccia, PRIMA del Tempio.
@@ -53,9 +60,11 @@ esistono solo come echi.
 3. **Il ponte di cristallo e il risveglio** (master §8): read-aloud del
    risveglio del Guardiano; scenografia della camera (ponte 45 m — non
    sostarci, piattaforme laterali, altare levitante). **Apertura sonica
-   SOLO se il party possiede la Frequenza della Confusione** (dipende da
-   come è andato il Campo dei Cristalli, §6): se è stato saltato o fallito,
-   Terros parte a piena forza — la scelta SI SENTE qui.
+   DISPONIBILE** (canone giocato: la Frequenza è posseduta): se entrano
+   cantando (Intrattenere Canto CD 18, +4 dall'Anello, 2 successi su 3) →
+   Terros nauseato round 1 (−4/−4). Il **Diapason invece è SPESO** (usato
+   sulla Sentinella): alla soglia del 50% niente stun — spallata coordinata
+   o «Radice a Terra». Il +2 ai TS della Madre resta attivo.
 4. **BOSS: Terros l'Antico** (master §8): statblock CR 15, il «giro» in
    §0-bis, tattiche round-per-round, DPR atteso ~5 round, contingenze
    pronte (parlano con lui / fuga / caduta / TPK-safe: espulsi e segnati,

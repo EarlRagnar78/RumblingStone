@@ -1,3 +1,259 @@
+<!-- GENERATO da scripts/build_booklet_html.py --format hb (ADR-0013).
+     Manifest: ARC07-SESSIONE-TERROS-BOOKLET.manifest.json — i capitoli CITANO i master (ADR-0003).
+     Le immagini restano riferimenti relativi al repo: per la resa con
+     immagini incorporate usa la via HTML (--format html). -->
+
+{{frontCover}}
+
+{{logo ![](/assets/naturalCritLogoRed.svg)}}
+
+# RUMBLING STONE
+## Lo Scontro con Terros l'Antico
+___
+
+### Il Piano della Terra · lo Smeraldo della Forza · l'Incudine del Mondo
+
+{{banner BOOKLET DI SESSIONE}}
+
+{{footnote
+  Sessione D&D 3.5 per 3 personaggi di 13° livello (APL eff. 12) · Faerûn, Flamerule 1372 DR · Campagna privata RumblingStone · regia DM + master integrale + 4 handout hint/echi per-PG
+}}
+
+\page
+
+# Dove Siamo — La Soglia del Guardiano
+
+> *Il Tempio di Mithral non ha eco. Ogni passo dei tre Custodi muore nel
+> metallo sacro come una parola detta dentro una campana ferma. Alle loro
+> spalle, l'Anticamera della Magnetite: la carcassa della Sentinella giace
+> aperta come un fiore d'acciaio, e il silenzio che ha lasciato è il silenzio
+> pieno di rispetto che segue un duello onorato. Sui pugni di Tordek, i
+> Bracieri Gemelli brillano di striature nuove — argento e smeraldo — e
+> tacciono, come tace un vecchio fabbro che ha appena firmato la sua opera
+> migliore. Davanti, il corridoio scende. Aegis Fang non canta più: VIBRA,
+> così forte che Thorik sente il battito nell'osso della spalla, e il Topazio
+> sulla Corona pulsa allo stesso ritmo, come due cuori che hanno riconosciuto
+> una terza presenza, più antica di entrambi. Artemis vola basso, senza
+> rumore, e per una volta non guarda le vene di mithral nelle pareti: guarda
+> avanti, dove il corridoio si apre su un buio che respira. Oltre quella
+> soglia c'è la camera sferica. Oltre quella soglia c'è lo Smeraldo della
+> Forza. E attorno allo Smeraldo, arrotolato come una catena montuosa attorno
+> al suo cuore, dorme il Guardiano.*
+
+**Questa è la sessione dello scontro con Terros l'Antico** — il culmine del
+Piano della Terra (master `ARC07-DEF-1-PIANO-TERRA-TERROS.md`, ARC-07 #1).
+
+**Stato al tavolo (aggiornato alla vigilia):**
+
+- **Hella** ha completato il **Viaggio nell'Incudine del Mondo** (canone
+  giocato): lo spirito è pronto. **I PG non lo sanno** — vedranno solo Durik
+  prendere forma alla fine del rituale.
+- **Tordek** ha appena sconfitto la **Sentinella Silenziosa** nell'Anticamera
+  della Magnetite: i **Bracieri Gemelli di Moradin sono COMPLETI**
+  (Fuoco + Terra) e hanno preso piena coscienza. *«Incudine e Martello.
+  Ora sei completo.»*
+- **Thorik**, guidato dalla Corona (Topazio) e da Aegis Fang, conduce il
+  gruppo verso la camera del Guardiano.
+- **Artemis** vola in retroguardia. Non è mai stato tentato finora — e la
+  sua tentazione, quella vera, lo sta aspettando in questa sessione.
+
+**Come usare questo booklet.** I capitoli con ⚠ SOLO DM sono per il DM
+(regia della serata + master integrale). Le quattro pagine ✉ HANDOUT
+GIOCATORE sono **hint ed echi separati per PG**: stampale o mostrale sul
+telefono, **una per giocatore, in privato**, prima o durante la sessione.
+
+
+\page
+
+# ✉ Teaser giocatori — «L'Ultima Porta»
+
+{{note
+##### ✉ HANDOUT GIOCATORE
+Pagina da consegnare al giocatore indicato, in privato.
+}}
+
+# Il cammino fin qui (per chi ha la memoria corta e il cuore pieno)
+
+> *Ripasso lampo dell'ultima sessione — solo cose che avete vissuto.*
+
+- **Avete cantato una scala fuori da un oceano di roccia.** Sul serio. La
+  **Frequenza della Confusione**, il dono del giardino che canta, ha risposto
+  alle vostre voci: blocchi di pietra si sollevavano dalle onde grigie e si
+  impilavano sotto i vostri piedi, gradino dopo gradino, a mezz'aria — finché,
+  a metà strada, la canzone è finita prima della scala. I blocchi sono
+  crollati. Voi no. (Per un pelo. Nessuno lo ammetterà mai davanti a un
+  boccale.)
+- **Tordek ha combattuto da solo, ed è bastato.** Nell'anticamera dalle
+  pareti nere e viola, il metallo ha tradito tutti tranne lui: Thorik
+  inchiodato al muro dalla sua stessa armatura, Artemis schiacciato a terra
+  da un peso dieci volte il suo. Ed è lì, davanti a un duellante d'argento
+  senza volto, che il **Diapason Armonico** ha urlato il suo unico urlo —
+  un grido che ha incrinato il mondo — e i pugni di Tordek hanno fatto il
+  resto. Il frammento ora è muto. Ne è valsa la pena.
+- **I Bracieri hanno parlato.** Quando il petto della sentinella si è aperto
+  e la luce verde ha trovato i guanti di Tordek, una voce da vecchio fabbro
+  ha detto sei parole che nessuno al tavolo dimenticherà: *«Incudine e
+  Martello. Ora sei completo.»*
+- **E adesso siete dentro.** Il Tempio che nessun mortale ha mai calpestato.
+  Corridoi d'argento che brillano di luce propria, la gravità che ruota come
+  in un sogno di Escher, e Aegis Fang che vibra così forte da far male al
+  braccio — sempre nella stessa direzione. **Verso il basso. Verso il
+  centro.**
+
+---
+
+# Lunedì: L'Ultima Porta
+
+> *Il corridoio scende, e il silenzio cambia. Non è più il silenzio vuoto
+> delle caverne: è un silenzio PIENO, come una sala da concerto un attimo
+> prima che l'orchestra respiri. Il mithral sotto i vostri stivali vibra di
+> un battito che non è il vostro. Aegis Fang tace di colpo — e quando una
+> voce antica come quella abbassa il capo, i saggi si fermano ad ascoltare.
+> Oltre l'ultima porta c'è la cosa per cui siete scesi fin qui, attraverso
+> il fuoco e adesso attraverso il peso. E c'è tutto il resto: ciò che la
+> custodisce, ciò che chiederà, ciò che ognuno di voi è disposto a mettere
+> sul piatto. La montagna non ha fretta. Voi sì: lassù, sotto il cielo di
+> Flamerule, una fortezza conta le ore.*
+
+**Portate:**
+
+- la **voce** — c'è una canzone che la pietra non ha dimenticato;
+- le **mani libere** — quello che troverete non si prende con la spada;
+- una **risposta** — perché là sotto, prima o poi, a ciascuno di voi verrà
+  fatta una domanda. E le domande di Moradin non si schivano coi Riflessi.
+
+*A lunedì. Il Tempio trattiene il fiato.*
+
+
+\page
+
+# I · Regia della Sessione
+
+{{note
+##### ⚠ SOLO DM
+Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
+}}
+
+# Regia della Sessione — Lo Scontro con Terros l'Antico
+
+> **Cos'è questa pagina.** Il piano della serata, in ordine di gioco, con i
+> puntatori esatti al master (`ARC07-DEF-1-PIANO-TERRA-TERROS.md`, capitolo
+> II di questo booklet). **Zero numeri nuovi**: ogni CD, pf e PX vive nel
+> master; qui c'è solo la regia. Stampa la **Quick-Reference §0-bis** del
+> master: è tutta la sessione in una pagina.
+
+## 0. Fotografia della vigilia (canone)
+
+| Fatto | Stato | Fonte |
+|---|---|---|
+| Viaggio spirituale di Hella | ✅ **CONCLUSO E GIOCATO** (2026-07-02) — i PG NON lo sanno | `_ARCHIVIO/...IL-VIAGGIO-NELL'INCUDINE-DEL-MONDO-risultati.md` |
+| Sentinella Silenziosa | ✅ sconfitta da Tordek nell'Anticamera della Magnetite | master §7b |
+| Bracieri Gemelli | ✅ **COMPLETI** (Fuoco+Terra), coscienza attiva, voce da vecchio fabbro | master §7b + scheda `05_Bracieri_Gemelli_Scheda_PG_Completa.md` |
+| Corona di Adamantio | Topazio solo (1/3) — lo Smeraldo si forgia STASERA | master §9 |
+| Cristalli Viventi | ✅ **skill challenge SUPERATO**: Frequenza della Confusione + Diapason Armonico ottenuti; +2 TS contro Terros attivo | master §6 (canone giocato 2026-07-24) |
+| Salita al Tempio | ✅ giocata in variante «salita cantata»: la Frequenza sollevava blocchi dall'oceano fino a metà strada (poi crollati 🙂), resto co-op | master §7a (canone giocato) |
+| Diapason Armonico | ⚠️ **SPESO sulla Sentinella** (Grido Superiore innescato dalla Frequenza): niente stun anti-arrocco contro Terros | master §7b/§8 (canone giocato) |
+| Frequenza della Confusione | ✅ ancora disponibile (è conoscenza): **il malus round 1 su Terros si attiva con la SOLA Frequenza** — nauseato, −4 att/CA | master §8 |
+| Posizione del party | dentro il Tempio di Mithral, oltre l'Anticamera, verso la camera sferica | master §7→§8 |
+| Countdown Hammerfist | ~3 giorni e 18 ore a fine parte | master §0 |
+
+### I risultati del viaggio di Hella (SOLO DM — servono al #3, non stasera)
+
+Registrati come **canone giocato**: Prova I superata con **verità piena**
+(→ *Marchio della Veritade*), Prova II **«ferita aperta»** (→ *Radice
+Silenziosa*; l'Impronta di Durik è caduta nel Sogno della Terra — è QUELLA
+polvere che stanotte prenderà forma, §9 Fase 3), Prova III **Via della
+Radice** in versione piena (→ rigenerazione a contatto con terra,
+*Radicamento*, **vulnerabilità al fuoco** come costo). Durik: **maschio,
+cane da galoppo, «Protegge Hella»** — mithral e pietra scura, occhi di
+topazio. Tutti gli effetti si attivano **alla resurrezione (#3)**: stasera
+esistono solo come echi.
+
+## 1. Ordine di gioco della serata
+
+1. **Pre-sessione (venerdì): teaser + hint.** Ai giocatori si invia il
+   **teaser «L'Ultima Porta»** (`ARC07-TEASER-GIOCATORI.html`, file
+   separato e spoiler-free: recap veloce + hype, MAI il nome del boss —
+   regola ADR-0013 per tutte le sessioni) e a ciascuno la SUA pagina ✉
+   hint, in privato. Al tavolo: leggi il read-aloud «Dove Siamo»
+   (copertina). Questo booklet col titolo vero resta SOLO al DM.
+2. **La scena privata di Artemis — il Seme-Mercato di Varis** (master
+   **§6-bis**, integrale). ⚠ **Nota di regia sul posizionamento**: nel
+   master la scena vive sulla riva dell'Oceano di Roccia, PRIMA del Tempio.
+   **Decisione DM (2026-07-24): si gioca STASERA, coi PG già dentro il
+   Tempio, perché fa colore** — la scena è dichiaratamente indipendente da
+   tutto («funziona anche se il party ha saltato il Campo dei Cristalli») e
+   non cambia nulla in meccanica: sposta solo il *dove* (una nicchia di
+   detriti lungo il corridoio del Tempio, dove l'Anello morde il dito, al
+   posto del filone sulla riva). Giocala **a voce bassa, col solo giocatore
+   di Artemis**, mentre gli altri studiano l'ultima porta.
+   - Canone-guardia: **Artemis non è MAI stato tentato al Giardino dei
+     Cristalli** (la runa alla Madre Cristallo è rimossa dal canone, §6):
+     questa è la sua **unica** tentazione, pulita. Nessun «Occhio di
+     Lathander», nessuna tentazione divina: solo l'avidità del predone.
+   - L'esito (prende/rifiuta) va nell'**Echo Ledger** (§11) e riemerge col
+     **#4 (Vatore)** e in ARC-09.
+3. **Il ponte di cristallo e il risveglio** (master §8): read-aloud del
+   risveglio del Guardiano; scenografia della camera (ponte 45 m — non
+   sostarci, piattaforme laterali, altare levitante). **Apertura sonica
+   DISPONIBILE** (canone giocato: la Frequenza è posseduta): se entrano
+   cantando (Intrattenere Canto CD 18, +4 dall'Anello, 2 successi su 3) →
+   Terros nauseato round 1 (−4/−4). Il **Diapason invece è SPESO** (usato
+   sulla Sentinella): alla soglia del 50% niente stun — spallata coordinata
+   o «Radice a Terra». Il +2 ai TS della Madre resta attivo.
+4. **BOSS: Terros l'Antico** (master §8): statblock CR 15, il «giro» in
+   §0-bis, tattiche round-per-round, DPR atteso ~5 round, contingenze
+   pronte (parlano con lui / fuga / caduta / TPK-safe: espulsi e segnati,
+   mai massacro).
+   - I tre **contro-momenti firmati** sono già suggeriti ai PG nei loro
+     handout, come sussurri degli artefatti: Thorik «Radice a Terra»,
+     Tordek «Frantuma-Scudo», Artemis stalattiti disintegrate in volo.
+     Se i giocatori non li colgono, falli affiorare in gioco (le voci degli
+     artefatti si ripetono — i vecchi fabbri sono pazienti).
+5. **Il Rituale dello Smeraldo** (master §9, 3 fasi): la scelta-costo di
+   Thorik (Fase 1), i 3 round di sinergia a ritmo battuto sul tavolo
+   (Fase 2 — parte `Musica/LaCanzoneDellePietre.mp3`), l'incastonatura e
+   **l'emersione di Durik** (Fase 3). Regia dell'asimmetria: Thorik NON sa
+   che la presenza verde è Hella; la giocatrice di Hella riceve solo il suo
+   echo (handout VI).
+6. **Epilogo**: «La Forgia Ricorda» (§10 — i pannelli nuovi si SCOPRONO al
+   ritorno in Sala, master #2), Echo Ledger (§11), PX e tesoro (§11-bis),
+   countdown aggiornato (§12).
+
+## 2. Cosa stampare stasera
+
+- **Quick-Reference §0-bis** (una pagina: tutte le CD, soglie pf, il giro
+  di Terros, supporto PF1e zero-G).
+- **MAPPA T-6** (camera dell'Altare) — e T-5 come ricordo dell'Anticamera.
+- Statblock di **Terros** (§8); handout §13 (Iscrizione, carta «Corona
+  2/3» per fine serata, Benedizioni).
+- Le **4 pagine hint/echi** di questo booklet (capitoli III–VI).
+- *(Solo se Artemis prende il Seme)* il bigliettino privato: *«Un favore,
+  a mia scelta, a mio tempo. — V.»* (§13.4).
+
+## 3. Guard-rail di canone per stasera
+
+- **Hella dà solo echi**: mai dialogo lucido, mai consiglio tattico (§1,
+  §6 correzione). Il frammento onirico a Tordek («stabilità… germogli…
+  tornare») è già nel suo handout.
+- **Un solo boss**: Terros l'Antico CR 15. Il «Golem di Mithral» delle
+  vecchie immagini È la Sentinella già sconfitta (§8, canone risolto).
+- **Economia d'azione 3.5 pura**: i poteri di Terros sono azioni del SUO
+  turno con ricarica — niente «azioni del covo», niente 5e (§8).
+- **Terros non insegue** oltre la camera; **non uccide i caduti**; alla
+  sconfitta del party: espulsi, affaticati, −12 ore di countdown (§8
+  Contingenze).
+
+
+\page
+
+# II · Master integrale — Piano della Terra & Terros
+
+{{note
+##### ⚠ SOLO DM
+Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
+}}
+
 # ARC-07 · DEFINITIVO #1 — IL PIANO DELLA TERRA & TERROS L'ANTICO
 ## Il Portale della Forgia Eterna — Seconda Gemma (Smeraldo della Forza)
 
@@ -1633,3 +1889,223 @@ scende e la gemma diventa raggiungibile (§9). PARETI SFERICHE di cristallo:
 vista sul Piano oscuro fuori; aria pura dentro. Acustica: ogni colpo è un tuono.
 ════════════════════════════════════════════════════════════════════════
 ```
+
+
+\page
+
+# ✉ Hint — Thorik
+
+{{note
+##### ✉ HANDOUT GIOCATORE
+Pagina da consegnare al giocatore indicato, in privato.
+}}
+
+# 🛡️ Thorik — Il Peso che Cammina Davanti
+
+> *Per il giocatore di Thorik. Leggi in privato. Niente di ciò che segue è
+> un ordine: sono le cose che il TUO personaggio sente, e che gli altri no.*
+
+## Ciò che è accaduto (e che solo tu porti)
+
+Da quando l'affresco della Terra si è aperto, la Corona non è mai stata così
+**presente**. Il Topazio pulsa al ritmo di Aegis Fang, e Aegis Fang non
+canta più: **vibra**, sempre più forte a ogni passo verso il centro del
+Tempio, come un cane da caccia che ha fiutato qualcosa di enorme. Sei tu che
+guidi. Sei sempre tu che guidi, quando la strada scende.
+
+E c'è quell'altra cosa, quella che non racconti a nessuno: nei momenti in
+cui il peso del piano ti piega le spalle, senti una **presenza verde e
+fredda** che te le alleggerisce. Non sai cos'è. Non fa male. È come una mano
+che conosce il tuo passo.
+
+## I sussurri degli artefatti (ascoltali, stanotte)
+
+> **AEGIS FANG (un tump sordo, come un passo):** *«Il guardiano che aspetta
+> è fatto della stessa carne della montagna. Quando fuggirà nella pietra —
+> e fuggirà — non inseguirlo. INCHIODALO. Io so mordere le crepe. Tu sai
+> essere radice. Insieme siamo la cosa che non si sposta.»*
+
+> **LA CORONA (calore sulla fronte):** *«Figlio dello scudo: là dentro c'è
+> una prova che non si vince col braccio. Ti sarà chiesto di PORTARE. Quando
+> arriverà la domanda, ricorda: la Forza non si prende. Si sostiene.»*
+
+## Il peso vecchio (una premonizione, non un'informazione)
+
+Qualche volta, negli ultimi giorni, l'odore della pietra bagnata ti riporta
+**quel campo di battaglia che non è ancora accaduto** — le ali nere, il
+fango, il contraccolpo nello spirito. Non è un ricordo: è una **ferita che
+aspetta**. Non c'entra con stanotte. Ma cammina con te, e la Corona lo sa.
+
+## In una riga
+
+Stanotte fai ciò che sai fare meglio: **stare tra il pericolo e gli altri,
+e non muoverti di un passo.** Il resto — il peso, la presenza verde, la
+domanda — verrà da te.
+
+
+\page
+
+# ✉ Hint — Tordek
+
+{{note
+##### ✉ HANDOUT GIOCATORE
+Pagina da consegnare al giocatore indicato, in privato.
+}}
+
+# ⚒️ Tordek — Incudine e Martello
+
+> *Per il giocatore di Tordek. Leggi in privato. Questa è la tua notte: te
+> la sei guadagnata a pugni nudi contro un guscio di mithral.*
+
+## Ciò che è accaduto (fresco come una cicatrice)
+
+L'hai battuta. La Sentinella ti ha misurato, ti ha strappato i compagni di
+mano — Thorik incollato alla parete come una mosca, Artemis schiacciato al
+suolo — e ha scoperto che **l'ultimo nano in piedi bastava**. Poi la visione:
+sepolto vivo nella roccia, la voce tettonica nello scheletro, le montagne che
+nascono e muoiono in un battito. E al risveglio, i guanti striati d'argento
+e di smeraldo.
+
+**I Bracieri Gemelli sono COMPLETI: Fuoco e Terra.** *(I nuovi poteri sono
+sulla tua scheda aggiornata — chiedila al DM: RD, il pugno che atterra i
+giganti, il tremore del forgiatore.)* E adesso **parlano**. Non spesso. Con
+la voce di un vecchio fabbro che non spreca fiato.
+
+> **I BRACIERI:** *«Incudine e Martello. Ora sei completo.»*
+
+## I consigli del vecchio fabbro (li ripeterà, se serve)
+
+> *«Il fuoco brucia in fretta e muore. La roccia attende. Là sotto c'è
+> roccia che cammina, ragazzo: non vincerai aspettando più di lei. Vincerai
+> col TUONO. Quando il guardiano si chiuderà nel diamante — e si chiuderà —
+> non grattare la corazza: SUONALA. Un colpo solo, pieno, di quelli che
+> fanno cantare il metallo. Il diamante odia le campane.»*
+
+> *«E ricorda da dove vieni. Questi guanti sono un prestito degli ideali che
+> onori. Il giorno che li tradisci, torneranno freddi.»*
+
+## Il frammento nel nanico dei sogni (non lo capirai — non devi)
+
+Stanotte, sfiorando la Corona di Thorik per caso, ti sono arrivate **tre
+parole**, senza voce, nel nanico antico che si parla solo nei sogni:
+
+> *«…stabilità… germogli… tornare…»*
+
+Nessuna spiegazione. Solo la certezza, da nano, che **qualcosa di caro sta
+cercando la strada di casa.**
+
+## In una riga
+
+Sei l'unico che può **spezzare ciò che il guardiano alza per difendersi**.
+Quando succede, non esitare: batti il tuono, e che la montagna ti senta.
+
+
+\page
+
+# ✉ Hint — Artemis
+
+{{note
+##### ✉ HANDOUT GIOCATORE
+Pagina da consegnare al giocatore indicato, in privato.
+}}
+
+# 🔮 Artemis — L'Occhio del Predone
+
+> *Per il giocatore di Artemis. Leggi in privato. E tieni il conto: stanotte
+> i numeri saranno importanti. Tutti i numeri.*
+
+## Ciò che vedi (che gli altri non vedono)
+
+Il Tempio è **pieno**. Vene di mithral nelle pareti come grasso in una
+bistecca. La carcassa della Sentinella, là dietro: piastre lavorate che un
+fabbro pagherebbe a peso d'oro. E l'Anello te le conta tutte, piano, come
+un socio che sfoglia un registro. Finora, in questo piano maledetto e
+pesante, **nessuno ha provato a comprarti**. Nessuna voce, nessuna offerta,
+nessuna tentazione. Per uno con i tuoi occhi è quasi un insulto.
+
+*Quasi.*
+
+## Il pizzicore
+
+Da quando siete entrati nel Tempio, ogni tanto **l'Anello ti morde il
+dito**. Lo conosci, quel morso: *segreti vicini*. Qualcosa, tra questi
+corridoi d'argento e la camera che vi aspetta, è stato messo lì **per
+qualcuno come te** — qualcosa che nessun occhio senza il tuo Anello potrebbe
+trovare. Non sai ancora cosa. Sai solo che quando lo vedrai, lo riconoscerai
+al primo sguardo. E che dovrai **scegliere in fretta e da solo.**
+
+## I sussurri dell'Anello (Caos e Luce, mai obbedienza)
+
+> **L'ANELLO:** *«Là sotto dorme una cosa che non vola. TU voli. Ricordalo
+> quando la sala si capovolge: l'aria è tua, e chi è fatto di terra ti
+> odierà per questo.»*
+
+> *«E quando il soffitto cadrà a pezzi — perché cadrà — non schivare
+> soltanto: ciò che precipita si può SPEZZARE a mezz'aria, prima che tocchi
+> i tuoi compagni. Bella scena, tra l'altro. Molto da bardo.»*
+
+## Il bottino (perché tu sia sincero con te stesso)
+
+Là dentro c'è **ricchezza vera** — la senti attraverso la parete come calore
+da una porta chiusa. E c'è una cosa che l'Anello non ti dice ma tu sai già:
+le notti come questa, prima o poi, presentano **un conto**. Quando arriverà,
+saprai quanto vale davvero il tuo bottino… e quanto vali tu.
+
+## In una riga
+
+Vola, colpisci da dove nessuno può rispondere, spezza ciò che cade. E quando
+il momento privato arriverà — **e arriverà** — ricorda che i migliori affari
+sono quelli in cui hai letto anche le righe piccole.
+
+
+\page
+
+# ✉ Echi — Hella
+
+{{note
+##### ✉ HANDOUT GIOCATORE
+Pagina da consegnare al giocatore indicato, in privato.
+}}
+
+# 🌙 Hella — Echi dal Buio Verde
+
+> *Per la giocatrice di Hella. Il tuo personaggio non ha scene «sopra»
+> stanotte: ha QUESTO — frammenti di percezione dal luogo senza nome dove
+> lo spirito attende. Il DM te li darà a voce, uno alla volta, nei momenti
+> giusti. Nessuno va spiegato. Nessuno va interpretato ad alta voce. Sono
+> tuoi.*
+
+---
+
+## Primo eco
+
+*Un peso familiare sul petto. Una testa grande, ossuta, che si appoggia
+dove una volta batteva il cuore — e resta lì, paziente, come ha sempre
+fatto. Odore di pietra bagnata e di pelo caldo. Qualcosa che era perduto
+non è sparito: è andato dove serve.*
+
+## Secondo eco
+
+*Una schiena che cede sotto un peso enorme — non la tua. Spalle larghe,
+oneste, che scricchiolano come travi di quercia. E le tue mani, fredde e
+verdi come acqua di fonte, che si posano su quelle spalle e TENGONO.
+«Non sei solo a portare questo peso. Mai più solo.» Non sai se l'hai
+pensato o detto. Non sai se lui ha sentito.*
+
+## Terzo eco
+
+*Pietra che si assesta attorno a ossa care, come una mano che si chiude
+piano per proteggere, non per stringere. Da qualche parte, nel buio verde,
+qualcosa prepara un guscio — con la cura con cui si prepara una culla, o
+un'armatura. E una nota bassa, lontana, di migliaia di voci di cristallo:
+non capisci le parole, ma il senso è inequivocabile.*
+
+**Aspettano la Forza. E poi si torna.**
+
+---
+
+> *(Niente meccanica, stanotte. Se durante la serata senti l'impulso di
+> «dire» qualcosa ai tuoi compagni: annotalo su un foglio e consegnalo al
+> DM — gli echi viaggiano in una direzione sola, ma la Forgia ricorda
+> tutto.)*
+

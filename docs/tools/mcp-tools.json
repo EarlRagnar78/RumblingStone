@@ -601,7 +601,7 @@
     },
     {
       "name": "build_booklet_html",
-      "description": "Booklet HTML sfogliabile in stile 'pergamena Homebrewery' (stile canonico del Palio): copertina, tab per capitolo, SVG inline, raster embeddate come data-URI; da manifest JSON di capitoli markdown (i .md restano i master, ADR-0003).",
+      "description": "Booklet in stile 'pergamena Homebrewery' (stile canonico, ADR-0013) da manifest JSON di capitoli markdown: HTML autonomo (SVG inline, raster data-URI) e/o sorgente Homebrewery V3 .hb.md per il self-hosted/Docker; i .md restano i master (ADR-0003).",
       "invocation": "python3 scripts/build_booklet_html.py MANIFEST.json",
       "inputSchema": {
         "type": "object",
@@ -613,6 +613,15 @@
           "out": {
             "type": "string",
             "description": "File HTML di output (default: campo 'out' del manifest o <stem>.html)."
+          },
+          "format": {
+            "type": "string",
+            "description": "html = pagina autonoma; hb = .hb.md Homebrewery V3 (self-hosted/Docker via dm.py hype); both = entrambi (ADR-0013).",
+            "enum": [
+              "html",
+              "hb",
+              "both"
+            ]
           }
         },
         "required": [
@@ -621,7 +630,8 @@
         "additionalProperties": false
       },
       "outputs": [
-        "<manifest dir>/<out>.html"
+        "<manifest dir>/<out>.html",
+        "<manifest dir>/<out>.hb.md"
       ],
       "exit_codes": {
         "0": "ok",

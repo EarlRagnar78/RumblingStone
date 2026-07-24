@@ -62,6 +62,28 @@ serata: teaser giocatori + capitoli master integrali.
   builder lo applica da solo: basta valorizzare `player_footer` in ogni
   manifest di sessione.
 
+### 3-bis. Non-ridondanza teaser ↔ hint (regola DM 2026-07-24)
+
+**Il teaser e gli hint si spartiscono la storia: mai lo stesso fatto in
+entrambi.** Se il teaser ripete ciò che c'è negli hint, leggere l'hint
+personale perde valore.
+
+- **Teaser** = SOLO la **storia comune** vissuta da tutto il tavolo
+  insieme, e SOLO le parti non coperte da alcun hint personale (es. la
+  scala cantata: c'erano tutti, nessun hint la racconta).
+- **Hint per-PG** = i momenti **personali**: scene in cui quel PG è stato
+  il protagonista, voci/visioni dei SUOI artefatti, percezioni che solo
+  lui ha avuto. Questi fatti **non si ripetono MAI nel teaser** — al
+  massimo un **rimando obliquo** che crea curiosità senza raccontare
+  (es. *«il resto di quel duello appartiene a chi l'ha combattuto: è nel
+  suo hint»*).
+- **Citazioni testuali** (le battute degli artefatti, i sogni): vivono in
+  UN solo posto — l'hint del PG a cui appartengono.
+- **Procedura per l'agente (qualunque modello)**: scrivere PRIMA gli hint
+  per-PG, POI il teaser; quindi un **passaggio di dedup** — per ogni frase
+  del teaser chiedersi «questo fatto è già in un hint?»: se sì, toglierlo
+  o ridurlo a rimando obliquo.
+
 ### 4. Canone giocato
 
 Gli esiti giocati al tavolo (oggetti ottenuti/spesi, scene risolte in
@@ -116,15 +138,19 @@ tracciatura → `rumblingstone-plans`).
    numeri) e verifica con `python3 scripts/validate_modules.py`.
 3. **Crea/aggiorna la cartella di sessione** `<arco>/homebrew/sessione-*/`:
    `00-INTRO` (dove siamo), `01-REGIA` (ordine di gioco + tabella vigilia
-   + guard-rail di canone), `0N-HINT-<PG>.md` (uno per PG: sussurri degli
-   artefatti, zero CD), `0N-ECHI-<PG assente>.md`, `0N-TEASER-GIOCATORI.md`
-   (recap vissuto + invito evocativo).
+   + guard-rail di canone), poi **in quest'ordine**: PRIMA
+   `0N-HINT-<PG>.md` (uno per PG: sussurri degli artefatti, zero CD) e
+   `0N-ECHI-<PG assente>.md`, POI `0N-TEASER-GIOCATORI.md` (SOLO storia
+   comune non coperta dagli hint + invito evocativo — regola §3-bis).
 4. **Due manifest**: booklet DM (titolo vero, `player_footer` evocativo,
    capitoli `dm` + pagine `player`) e teaser separato (titolo evocativo,
    solo contenuto player) — il teaser è il file che si INVIA.
 5. **Genera**: `python3 scripts/dm.py booklet <manifest> --format both`.
-6. **Controlli anti-spoiler sul materiale player**: niente nome dello
-   scontro (nemmeno nel piè di pagina), niente CD/pf/clock, futuro solo
-   evocativo; i fatti raccontati sono SOLO quelli vissuti al tavolo.
+6. **Controlli sul materiale player**: (a) anti-spoiler — niente nome
+   dello scontro (nemmeno nel piè di pagina), niente CD/pf/clock, futuro
+   solo evocativo, fatti SOLO vissuti al tavolo; (b) **dedup teaser↔hint
+   (§3-bis)** — nessun fatto degli hint ripetuto nel teaser: ogni frase
+   del teaser che compare anche in un hint va tolta o ridotta a rimando
+   obliquo.
 7. **Traccia**: riga in `plans/CHANGELOG.md` nello stesso commit
    (ADR-0009); checklist del piano se è un lotto.

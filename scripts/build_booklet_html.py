@@ -31,7 +31,9 @@ Il manifest (JSON, percorsi relativi alla SUA cartella):
   "banner":   "BOOKLET DI SESSIONE",
   "meta":     "riga piccola in fondo alla copertina",
   "header":   "riga descrittiva sotto il titolo della pagina",
-  "footer":   "etichetta a piè di pagina",
+  "footer":   "etichetta a piè di pagina (capitoli DM)",
+  "player_footer": "titolo EVOCATIVO per il piè delle pagine ✉ giocatore
+                    (ADR-0013: mai il titolo reale; default: footer)",
   "intro_md": "intro-copertina.md",              # opzionale
   "cover_image": "immagini/tavola.png",           # opzionale
   "out":      "NOME-BOOKLET.html",                # opzionale (default: <stem>.html)
@@ -392,19 +394,26 @@ def build(manifest_path: Path, out_override: Path | None = None) -> Path:
   {intro_html}
 </section>"""
 
+    # Anti-spoiler (ADR-0013 §3): le pagine ✉ dei giocatori NON devono mai
+    # portare il titolo reale del booklet DM nel piè di pagina — usano il
+    # titolo evocativo `player_footer` (fallback: footer, per i booklet
+    # il cui titolo non è uno spoiler, es. il Palio).
+    player_footer = mf.get("player_footer", footer)
+
     panes = [cover]
     tabs = ['<button role="tab" aria-selected="true" data-pane="c0">Copertina</button>']
     for k, ch in enumerate(mf["chapters"], 1):
         p = base / ch["file"]
         body = md_to_html(p.read_text(encoding="utf-8"), p.parent)
         tag = TAGS.get(ch.get("tag", ""), "")
+        foot = player_footer if ch.get("tag") == "player" else footer
         tabs.append(f'<button role="tab" aria-selected="false" data-pane="c{k}">'
                     f'{html.escape(ch["title"])}</button>')
         panes.append(f"""
 <section class="pane" id="c{k}">
   <div class="sheet">{tag}
     <div class="chapter-body">{body}</div>
-    <div class="pagefoot"><span>{html.escape(footer)} · {html.escape(ch["title"])}</span>
+    <div class="pagefoot"><span>{html.escape(foot)} · {html.escape(ch["title"])}</span>
     <span class="n">{k + 1}</span></div>
   </div>
 </section>""")

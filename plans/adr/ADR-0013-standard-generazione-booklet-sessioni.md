@@ -55,6 +55,12 @@ serata: teaser giocatori + capitoli master integrali.
   player-safe di K-B6: fatti accaduti descritti, futuro nebbioso).
 - Mai nel materiale giocatori: nomi di boss/antagonisti non ancora
   incontrati, CD, pf, soglie, clock, deadline.
+- **Anche i piè di pagina contano** *(fix DM 2026-07-24)*: le pagine ✉
+  usano il campo manifest `player_footer` (titolo evocativo) — MAI il
+  `footer`/titolo reale del booklet DM. Un handout con scritto sotto
+  «Lo Scontro con Terros» brucia l'aspettativa quanto un titolo. Il
+  builder lo applica da solo: basta valorizzare `player_footer` in ogni
+  manifest di sessione.
 
 ### 4. Canone giocato
 
@@ -93,3 +99,32 @@ resta l'unica fonte dei numeri (esemplare: Frequenza/Diapason in
   separato `ARC07-TEASER-GIOCATORI.manifest.json`).
 - Arco: `09_.../homebrew/PALIO-BOOKLET.manifest.json` (+ teaser
   «Novanta Secondi»).
+
+## Appendice — Ricetta operativa per l'agente (qualunque modello)
+
+Questa checklist rende la generazione riproducibile da qualsiasi agente
+che segua il repo (le skill instradano la QUALITÀ: prosa →
+`rumblingstone-narrative-style`; profondità dei master →
+`rumblingstone-module-standard`; comandi → `rumblingstone-automation`;
+tracciatura → `rumblingstone-plans`).
+
+1. **Raccogli gli input**: il/i master `ARC*-DEF-*` del beat; lo stato
+   della vigilia dal DM (cosa è stato giocato: oggetti ottenuti/spesi,
+   scene risolte); `campaign/state.md` §0 per data/countdown.
+2. **Registra il canone giocato** nei master (blocchi
+   `✅ CANONE GIOCATO (DM data)` nel punto esatto — mai riscrivere i
+   numeri) e verifica con `python3 scripts/validate_modules.py`.
+3. **Crea/aggiorna la cartella di sessione** `<arco>/homebrew/sessione-*/`:
+   `00-INTRO` (dove siamo), `01-REGIA` (ordine di gioco + tabella vigilia
+   + guard-rail di canone), `0N-HINT-<PG>.md` (uno per PG: sussurri degli
+   artefatti, zero CD), `0N-ECHI-<PG assente>.md`, `0N-TEASER-GIOCATORI.md`
+   (recap vissuto + invito evocativo).
+4. **Due manifest**: booklet DM (titolo vero, `player_footer` evocativo,
+   capitoli `dm` + pagine `player`) e teaser separato (titolo evocativo,
+   solo contenuto player) — il teaser è il file che si INVIA.
+5. **Genera**: `python3 scripts/dm.py booklet <manifest> --format both`.
+6. **Controlli anti-spoiler sul materiale player**: niente nome dello
+   scontro (nemmeno nel piè di pagina), niente CD/pf/clock, futuro solo
+   evocativo; i fatti raccontati sono SOLO quelli vissuti al tavolo.
+7. **Traccia**: riga in `plans/CHANGELOG.md` nello stesso commit
+   (ADR-0009); checklist del piano se è un lotto.

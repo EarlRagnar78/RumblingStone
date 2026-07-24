@@ -19,7 +19,7 @@ Il rispetto della regola d'oro è verificato da
 
 1. **CI** (`.github/workflows/ci.yml`, solo su `pull_request`, contro il
    base ref con `fetch-depth: 0`): una PR che modifica file **strutturali**
-   (`scripts/`, `skills/`, `Script/`, `.github/`, `plans/adr/`) senza
+   (`scripts/`, `skills/`, `converters/`, `.github/`, `plans/adr/`) senza
    toccare `plans/CHANGELOG.md` **fallisce** (exit 1) — quindi non si
    mergia rossa.
 2. **Hook `pre-push` locale** (installato da

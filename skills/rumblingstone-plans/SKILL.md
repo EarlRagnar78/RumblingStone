@@ -64,7 +64,7 @@ gira in CI su ogni PR e come hook `pre-push` locale
 (`./scripts/install-git-hooks.sh`):
 
 - **Blocca** (rosso in CI, push rifiutato) modifiche a file strutturali
-  (`scripts/`, `skills/`, `Script/`, `.github/`, `plans/adr/`) senza una
+  (`scripts/`, `skills/`, `converters/`, `.github/`, `plans/adr/`) senza una
   riga in `plans/CHANGELOG.md` nello stesso range di commit.
 - **Promemoria ADR** (warning non bloccante): nuova skill, nuovo script
   top-level o modifica ai workflow CI senza alcun tocco a `plans/adr/` →
@@ -86,3 +86,33 @@ PR #40 prima di questa skill): recuperare subito con un commit dedicato
   + gate), non si arrotondano a ✅.
 - I "Prossimi passaggi" di INDEX si lasciano ⬜ finché il tavolo/DM non
   decide: il vuoto dichiarato è informazione, il vuoto implicito no.
+
+
+## Richieste complesse → piano con routing engine & impegno (regola DM 2026-07-22)
+
+Per OGNI richiesta comprensibilmente complessa (multi-fase, multi-file, più
+sessioni di lavoro, o che tocca canone+meccanica+prosa insieme) l'agente
+produce PRIMA un piano dettagliato — nel formato `plans/PIANO-<NOME>.md` o
+inline se effimero — in cui **ogni fase dichiara**:
+
+1. **Cosa** produce (deliverable + criterio di accettazione);
+2. **Engine consigliato** e **livello di impegno**, per ottimizzare il flusso
+   e il consumo di token:
+
+| Tipo di fase | Engine | Impegno |
+|---|---|---|
+| Find/replace, validazioni, rigenerazione cataloghi, lint | **Haiku** (o script deterministico: sempre preferito se esiste) | basso |
+| Redazione standard: statblock, tabelle, mappe ASCII, handout | **Sonnet** | medio |
+| Consolidamento narrativo, coerenza cross-arc, decisioni di design, audit | **Opus** | alto |
+| Ricognizioni larghe del repo (molti file, serve solo la conclusione) | subagent **Explore** | medio |
+| Prosa d'autore su scene cardine (solo su richiesta esplicita del DM) | **Fable/Mythos** | alto |
+
+3. **Dieta di contesto** per fase: passare all'engine SOLO i file del lotto
+   (mai riletture dell'intero arco — regola anti-spreco dei piani ARC).
+
+**CI/CD**: questa regola NON è un gate bloccante — giudicare la complessità
+di una richiesta o la scelta d'engine non è deterministico, e un gate
+semantico in CI sarebbe cattiva pratica. Il gate resta ADR-0009 (tracciatura
+nel CHANGELOG); la review meccanica dei contenuti è `validate_modules.py`
+(token-free). Questa sezione è la disciplina che l'agente applica DA SOLO
+quando riceve la richiesta.

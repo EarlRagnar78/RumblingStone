@@ -221,3 +221,30 @@ Se i PG viaggiano nel tempo (usando il Topazio della Corona di Adamantio o altro
 ### Odio per il Sangue (In Combattimento)
 
 Se i PG scelgono di combatterlo, il primo punto di danno che riceve è la svolta. Sal grida, perde la compostezza per 1 round, e i PG vedono per un istante il freddo terrore che si cela sotto la performance. Poi si riscatta con il Cronolito o con la Fluttuazione Temporale.
+
+---
+
+## Il Sigillo di Ossidiana — l'artefatto che lo ha reso Sal `[CANONE — DM 2026-07-23]`
+
+> Cross-source: scheda completa in `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` §5 (Artefatto); thread `campaign/state.md §7 [SIGILLO DI OSSIDIANA]`.
+
+Ciò che Vatore ha rubato al −1000 e con cui è diventato **Sal**. Sigillo di
+**ossidiana nera** allineato a **Shar** (Signora della Notte — perdita,
+oscurità, segreti; più pertinente di Mask perché il prezzo è la **perdita di
+anime**, non solo il furto).
+
+- **Manto di Notte Assoluta** (passivo): entro 9 m sopprime gli incantesimi di
+  luce di livello ≤2; *daylight*+ richiede prova di livello incantatore CD 20.
+- **Furto della Notte** (1/g): un'azione furtiva come invisibile e silenzioso
+  per 1 round (non in piena luce naturale).
+- **Il prezzo — divora anime**: ogni uso costa **1 livello negativo** a una
+  creatura senziente toccata nelle ultime 24 h (o un'anima intrappolata); **se
+  non disponibile, consuma il portatore** (livello negativo permanente dopo
+  24 h). Vatore lo usa sugli altri, poi su sé stesso: la sua **avidità e sete di
+  potere** lo accecano al conto — è così che diventa Sal.
+- **Contrasto con l'Anello di Artemis** (scintilla di Lathander, nemesi di
+  Shar): se lo impugna Artemis, i due artefatti si annullano — i poteri di
+  luce/alba dell'Anello diventano instabili/non disponibili e il Sigillo è
+  soppresso. Bivio **Notte vs Alba** per l'ARC-09.
+- **Gancio**: se i PG lo rubano a Vatore e lo riportano nel presente (Cronolito),
+  Sal si presenta **senza il suo asso** e la sincronizzazione si complica.

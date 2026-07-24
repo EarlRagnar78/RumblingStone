@@ -569,11 +569,27 @@ TITLE_KEYWORDS = ("MAPPA", "MAP ", "CAMPO", "ARENA", "TORRE", "FASE", "GRID", "L
 
 
 def parse_row_cells(text: str) -> list[str]:
-    """Extract emoji cells from a row line (after the row number)."""
+    """Extract emoji cells from a row line (after the row number).
+
+    Fidelity contract (PIANO-RENDER-MAPPE-FEDELTA-DETTAGLI F2): once cells have
+    started, the scan STOPS at the first side-annotation — box drawing, a run of
+    >=3 spaces, or ANY non-emoji character (arrows, accented prose, '=', digits).
+    Emoji inside a side annotation must never become phantom cells.
+    """
     cells: list[str] = []
+    spaces = 0
     for ch in text:
-        if ch in (" ", "\t", "│", "|"):
+        if ch in (" ", "\t"):
+            spaces += 1
+            if cells and spaces >= 3:  # >=3 spazi dopo le celle = annotazione
+                break
             continue
+        if ch in ("│", "|"):
+            if cells and spaces >= 2:
+                break  # pipe staccato dopo le celle = colonna annotazioni
+            spaces = 0  # bordo-griglia legacy ("01 │ 🏰 …")
+            continue
+        spaces = 0
         cp = ord(ch)
         if 0x2500 <= cp <= 0x257F:  # box drawing — annotations, stop reading
             break
@@ -581,10 +597,8 @@ def parse_row_cells(text: str) -> list[str]:
             continue
         if is_emoji_char(ch):
             cells.append(ch)
-        elif ch.isascii() and (ch.isalnum() or ch in "()[]{}<>─-=+*'\".,;:!?/\\"):
-            # trailing prose/callout on the same line — stop at first ASCII text
-            if cells:
-                break
+        elif cells:
+            break  # qualunque altro carattere dopo le celle = annotazione
     return cells
 
 
@@ -689,25 +703,34 @@ def extract_maps(md_text: str) -> list[dict]:
     lines = md_text.splitlines()
     headings: list[str] = []
     in_fence = False
+    skip_next_block = False
     block: list[str] = []
     for line in lines:
         stripped = line.strip()
         if stripped.startswith("```"):
             if in_fence:
-                grid = parse_block(block)
+                grid = None if skip_next_block else parse_block(block)
                 if grid and len(grid["rows"]) >= 3:
                     grid["title"] = grid.pop("banner", "") or _pick_heading(headings) \
                         or f"Mappa {len(maps) + 1}"
                     maps.append(grid)
                 block = []
+                skip_next_block = False
             in_fence = not in_fence
             continue
         if in_fence:
             block.append(line)
         else:
-            m = re.match(r"^#{1,4}\s+(.*)", stripped)
-            if m:
-                headings.append(m.group(1).strip().rstrip("#").strip())
+            # F4: `<!-- render: none -->` immediately before a fence (blank
+            # lines allowed) = schematic/non-grid map, deliberately NOT
+            # rendered (hex, sections, strategic views).
+            if re.search(r"render:\s*none", stripped, re.IGNORECASE):
+                skip_next_block = True
+            elif stripped:
+                skip_next_block = False
+                m = re.match(r"^#{1,4}\s+(.*)", stripped)
+                if m:
+                    headings.append(m.group(1).strip().rstrip("#").strip())
     return maps
 
 
@@ -719,16 +742,64 @@ def _pick_heading(headings: list[str]) -> str:
     return headings[-1] if headings else ""
 
 
+_DIMS_RE = re.compile(r"(\d{1,3})\s*col\w*\s*[×x]\s*(\d{1,3})\s*righe", re.IGNORECASE)
+
+
+def _parse_local_legend(legend_text: str) -> dict[str, str]:
+    """F3: 'LEGENDA · 🧲 pareti magnetiche · 🟡 altare …' → {emoji: descrizione}.
+
+    Only single-emoji keys are mapped (composite keys like 🛡️🥋🔮 are skipped —
+    each member is usually in SYMBOLS already). Gives local symbols a real
+    description in the SVG legend instead of '(simbolo locale)'.
+    """
+    local: dict[str, str] = {}
+    for frag in legend_text.split("·"):
+        frag = frag.strip().lstrip("=").strip()
+        if not frag:
+            continue
+        key = ""
+        rest = frag
+        while rest and (is_emoji_char(rest[0]) or ord(rest[0]) in (0xFE0F, 0x200D)):
+            if ord(rest[0]) not in (0xFE0F, 0x200D):
+                key += rest[0]
+            rest = rest[1:]
+        rest = rest.strip().lstrip("=").strip()
+        if len(key) == 1 and rest and any(c.isalpha() for c in rest):
+            local.setdefault(key, rest.rstrip(".·"))
+    return local
+
+
 def parse_block(block_lines: list[str]) -> dict | None:
     rows: dict[int, list[str]] = {}
     filled: set[int] = set()
     banner = ""
     annotations: list[str] = []
+    legend_lines: list[str] = []
+    in_legend = False
+    declared: tuple[int, int] | None = None
+    scale_m: float | None = None
     for line in block_lines:
         s = line.strip()
         if s.startswith("@"):
             annotations.append(s)
             continue
+        if s.upper().startswith("LEGENDA"):
+            in_legend = True
+        if in_legend:
+            if set(s) <= {"═", "─", "="} and s:
+                in_legend = False
+            else:
+                legend_lines.append(s)
+        if declared is None:
+            dm = _DIMS_RE.search(s)
+            if dm and not ROW_RE.match(line):
+                declared = (int(dm.group(1)), int(dm.group(2)))
+                sm = re.search(r"righe\s*·\s*([\d.,]+)\s*m", s, re.IGNORECASE)
+                if sm:
+                    try:
+                        scale_m = float(sm.group(1).replace(",", "."))
+                    except ValueError:
+                        scale_m = None
         if not banner and s and not set(s) <= {"═", "─", "="} and not ROW_RE.match(line) \
                 and 8 < len(s) < 120 \
                 and not s.startswith(("COLONNE", "RIGHE", "-", "NOTA", "SCALA", "LEGENDA",
@@ -758,7 +829,9 @@ def parse_block(block_lines: list[str]) -> dict | None:
         if n not in rows:
             rows[n] = rows[max(k for k in rows if k < n)]
             filled.add(n)
-    return {"rows": rows, "filled": filled, "banner": banner, "annotations": annotations}
+    return {"rows": rows, "filled": filled, "banner": banner, "annotations": annotations,
+            "local_legend": _parse_local_legend(" ".join(legend_lines)),
+            "declared_dims": declared, "scale_m": scale_m}
 
 
 # ---------------------------------------------------------------------------
@@ -1095,9 +1168,11 @@ def render_svg(grid: dict, source_name: str) -> str:
         f'<text x="{MARGIN}" y="34" font-size="19" font-weight="bold" '
         f'fill="{INK}" letter-spacing="0.5">{title}</text>'
     )
+    scale_m = grid.get("scale_m") or 1.5
+    scale_txt = f"{scale_m:g}".replace(".", ",")
     out.append(
         f'<text x="{MARGIN}" y="51" font-size="11" font-style="italic" fill="{INK_SOFT}">'
-        f'{n_cols}×{n_rows} quadretti · scala 1,5 m/quadretto</text>'
+        f'{n_cols}×{n_rows} quadretti · scala {scale_txt} m/quadretto</text>'
     )
 
     # --- map plate -----------------------------------------------------------
@@ -1298,9 +1373,10 @@ def render_svg(grid: dict, source_name: str) -> str:
             f'<rect x="{ox + i * CELL}" y="{sb_y - 5}" width="{CELL}" height="7" '
             f'fill="{fill}" stroke="{INK}" stroke-width="1"/>'
         )
+    bar_m = f"{5 * scale_m:g}".replace(".", ",")
     out.append(
         f'<text x="{ox + 5 * CELL + 10}" y="{sb_y + 3}" font-size="11" '
-        f'fill="{INK}">7,5 m (5 quadretti)</text>'
+        f'fill="{INK}">{bar_m} m (5 quadretti)</text>'
     )
 
     # --- indications legend (movements / callouts / zones) ----------------------
@@ -1355,9 +1431,11 @@ def render_svg(grid: dict, source_name: str) -> str:
         f'stroke-width="0.7" opacity="0.7"/>'
     )
     col_w = (width - 2 * MARGIN) / 2 if two_cols else width - 2 * MARGIN
+    local_legend = grid.get("local_legend") or {}
     for i, emoji in enumerate(sorted(used, key=_legend_key)):
         spec = SYMBOLS.get(emoji)
-        label = spec["it"] if spec and spec["it"] else "(simbolo locale — vedi legenda del file sorgente)"
+        label = (spec["it"] if spec and spec["it"] else "") or local_legend.get(emoji) \
+            or "(simbolo locale — vedi legenda del file sorgente)"
         col = i // legend_rows if two_cols else 0
         row_i = i % legend_rows if two_cols else i
         lx = ox + col * col_w
@@ -1397,9 +1475,12 @@ def main() -> int:
     ap.add_argument("-o", "--outdir", help="output directory (default: rendered/ next to input)")
     ap.add_argument("--map", type=int, help="render only map #N (1-based) of each file")
     ap.add_argument("--list", action="store_true", help="list maps found, render nothing")
+    ap.add_argument("--strict", action="store_true",
+                    help="fail if declared header dims (N col × M righe) don't match parsed cells")
     args = ap.parse_args()
 
     total = 0
+    dim_errors = 0
     for f in args.files:
         path = Path(f)
         if not path.exists():
@@ -1409,6 +1490,17 @@ def main() -> int:
         if not maps:
             print(f"{path.name}: nessuna griglia emoji trovata")
             continue
+        # F2: header dims (N col × M righe) vs parsed cells — warn, or fail in --strict
+        for i, g in enumerate(maps, 1):
+            decl = g.get("declared_dims")
+            if decl:
+                rows = g["rows"]
+                got = (max(len(c) for c in rows.values()), len(rows))
+                if decl != got:
+                    dim_errors += 1
+                    print(f"⚠ {path.name} mappa {i} «{g['title']}»: header dichiara "
+                          f"{decl[0]}×{decl[1]}, celle lette {got[0]}×{got[1]}",
+                          file=sys.stderr)
         if args.list:
             print(f"{path.name}: {len(maps)} mappe")
             for i, g in enumerate(maps, 1):
@@ -1427,6 +1519,10 @@ def main() -> int:
             total += 1
     if not args.list:
         print(f"Totale: {total} SVG generati")
+    if args.strict and dim_errors:
+        print(f"ERRORE (--strict): {dim_errors} mappa/e con dimensioni header ≠ celle",
+              file=sys.stderr)
+        return 1
     return 0
 
 

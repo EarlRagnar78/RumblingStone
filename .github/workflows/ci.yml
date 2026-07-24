@@ -26,7 +26,14 @@ jobs:
         run: pip install pyyaml
 
       - name: Python scripts compile
-        run: python -m compileall -q scripts Script
+        run: python -m compileall -q scripts converters
+
+      - name: Tool manifest conformance gate (ADR-0012)
+        run: python scripts/tools_manifest.py --check
+
+      - name: Shell scripts lint (shellcheck) — non-blocking
+        continue-on-error: true
+        run: shellcheck -S warning scripts/*.sh || true
 
       - name: Validate skill trees (frontmatter, links, data YAML)
         run: python scripts/validate_skills.py
@@ -45,6 +52,9 @@ jobs:
         continue-on-error: true
         run: python scripts/validate_bestiario.py --rules
 
+      - name: Validate DEF module masters (module-standard checklist, token-free review)
+        run: python scripts/validate_modules.py
+
       - name: DM tool smoke tests
         run: |
           python scripts/suggest_encounter.py --help > /dev/null
@@ -57,8 +67,12 @@ jobs:
           python scripts/render_map_svg.py --help > /dev/null
           python scripts/compile_map_json.py --help > /dev/null
           python scripts/export_uvtt.py --help > /dev/null
+          python scripts/import_ultraclear.py --help > /dev/null
           python scripts/update_xp.py --check > /dev/null
           python scripts/hype_homebrew.py --help > /dev/null
+          python scripts/dm_dossier.py --help > /dev/null
+          python scripts/validate_modules.py --help > /dev/null
+          python scripts/tools_manifest.py --help > /dev/null
 
       - name: Map JSON contract + UVTT export round-trip (M1/M2)
         run: |
@@ -70,6 +84,10 @@ jobs:
           # overlay professionale (bussola/movimenti/callout/zone) dal JSON
           python scripts/compile_map_json.py scripts/examples/campo-drow-1.json -o /tmp/ci-drow.md
           python -c "t=open('/tmp/ci-drow.md',encoding='utf-8').read(); assert '@north' in t and '@path' in t and '@mark' in t and '@zone' in t, 'direttive @ mancanti'; print('direttive @ OK')"
+          # import ultra-clear → bozza JSON compilabile (fixture pulita, exit 0)
+          python scripts/import_ultraclear.py scripts/tests/fixtures/ultraclear/uniform.md -o /tmp/ci-uc.draft.json --json-report /tmp/ci-uc.conflicts.json -q
+          python scripts/compile_map_json.py /tmp/ci-uc.draft.json --validate-only
+          python -c "import json; r=json.load(open('/tmp/ci-uc.conflicts.json')); assert r['report_version'] and 'conflicts' in r, 'report malformato'; print('import_ultraclear OK')"
 
       - name: Unit tests — dmcore / state_apply / next_session (ADR-0007)
         run: python -m unittest discover -s scripts/tests -v

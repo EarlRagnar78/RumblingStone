@@ -275,10 +275,10 @@ Thumbs.db
 *.webp
 
 #Pdf_da_estrarre
-Script/Pdf_To_extract
-Script/SoundTrack
-Script/avventura_con_modifiche
-Script/ImageBackup
+converters/Pdf_To_extract
+converters/SoundTrack
+converters/avventura_con_modifiche
+converters/ImageBackup
 
 #vscode
 .vscode/
@@ -287,7 +287,7 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-Script/pdf-to-md-engine/data
+converters/pdf-to-md-engine/data
 venv/
 
 # RumblingStone .gitignore

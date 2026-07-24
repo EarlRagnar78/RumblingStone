@@ -147,7 +147,14 @@ realizzata di fatto.
 - [x] M3 — `scripts/comfyui-local/` (README + 3 wrapper, syntax-checked)
 - [x] M4 — 2 reference skill + aggiornamenti SKILL.md/README-automation/.gitignore/ci.yml
 - [x] M5 — overlay professionale (bussola/movimenti/callout/zone) in renderer+compilatore; ADR-0006; esempio `campo-drow-1.*`; 16 SVG rigenerati
-- [x] Gate locali verdi: `compileall`, `validate_maps.py`, `validate_skills.py`
+- [x] M6 — **authoring in metri** (`"units_in": "meters"`): `compile_map_json.py`
+      converte metri→quadretti prima della validazione (`round(m/scale)`,
+      edge-snapping sui rect); chiude il gap PROPORZIONI/dimensionamento distinto
+      dal drift ASCII. Schema + esempio `esempio-misure-in-metri.json` + 7 test
+      (`test_compile_meters.py`) + doc `tre-modalita-mappe.md`. Retro-compatibile
+      (`squares` default). *(Idea originaria FreeCAD valutata e scartata: CAD 3D
+      senza semantica di gioco, dominato dall'input-metri nativo — vedi CHANGELOG.)*
+- [x] Gate locali verdi: `compileall`, `validate_maps.py`, `validate_skills.py`, `unittest`
 - [ ] **Collaudo al tavolo (DM, gated)**: (a) generare una mappa Mod. 3 reale
       da JSON per un incontro di ARC-08/09 e renderla; (b) importare un `.uvtt`
       in Foundry e verificare muri/luci; (c) collaudo container ComfyUI su

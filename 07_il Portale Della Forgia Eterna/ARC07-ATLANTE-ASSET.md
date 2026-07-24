@@ -40,6 +40,6 @@
 
 ## 🗺️ MAPPE
 
-Vedi `Mappe/TACTICAL-GRIDS-COMPLETE.md` (scala 1,5 m/quadretto). Per il P5 il
+Vedi `Mappe/_ARCHIVIO/TACTICAL-GRIDS-COMPLETE.md` (scala 1,5 m/quadretto). Per il P5 il
 **duello con Skullcrusher** usa **MAP 7**. `Mappe/Atlante-Visivo-Mappe.md` è uno
 stub che rimanda qui e all'INDICE.

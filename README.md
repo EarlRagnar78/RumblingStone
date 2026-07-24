@@ -4,6 +4,11 @@
 It is heavily based on *Red Hand of Doom* (Jacobs & Wyatt, 2006) and adapted from the Elsir Vale to the Dalelands region.
 This repository contains session logs, NPC data, encounters, lore, and custom mechanics tailored for an adult gaming group (emphasizing "Premium Design" and "Shine Time" mechanics).
 
+> 📚 **Documentation index**: start at [`docs/INDEX.md`](docs/INDEX.md) — the
+> categorized entry point to every doc (tools & scripts, guides, ADRs, plans,
+> skills). The tool registry ([`docs/tools/`](docs/tools/)) is machine-readable
+> and generated from [`scripts/tools.manifest.json`](scripts/tools.manifest.json).
+
 ## Campaign Arcs (Directory Structure)
 
 The campaign is organized into chronological and locational arcs:

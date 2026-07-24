@@ -120,6 +120,8 @@ ACTION_KINDS = {
     "set_quantity",     # align the written count                    — params: {to}
     "confirm_distinct", # confirm two similar names are two entities — params: {}
     "rename",           # rename one of the colliding entities       — params: {name}
+    "confirm",          # accept a heuristic assumption as correct   — params: {}
+    "reclassify",       # change an inferred role/symbol             — params: {role?, symbol?}
     "ignore",           # dismiss (no-op)                            — params: {}
 }
 
@@ -534,7 +536,9 @@ def _emit_from_grid(pmap: ParsedMap) -> tuple[dict, list[str]]:
 
     draft = _assemble(pmap, [cols, rows], base, regions, structures, hazards, units, notes,
                       source="griglia emoji (figura)")
-    return draft, notes
+    # il percorso griglia NON deduce: ogni simbolo viene letto direttamente dalla
+    # cella (nessuna assunzione semantica da segnalare all'editor).
+    return draft, []
 
 
 def _emit_from_tables(pmap: ParsedMap, map_size: list[int]) -> tuple[dict, list[str]]:
@@ -545,23 +549,43 @@ def _emit_from_tables(pmap: ParsedMap, map_size: list[int]) -> tuple[dict, list[
     notes = ["Bozza ricostruita dai DATI AUTORITATIVI (tabelle coordinate), "
              "non dal disegno ASCII: la griglia divergeva dall'header (vedi conflitti)."]
     regions, structures, hazards, units = [], [], [], []
+    # Ogni scelta semantica sotto incertezza (ruolo/simbolo dedotto da un nome,
+    # token dedotto dal ruolo) diventa un'ASSUNZIONE strutturata (INFO R12) con
+    # `target` all'elemento emesso: così l'editor la vede e la può confermare /
+    # riclassificare. Le stesse info restano in `notes` come specchio leggibile.
+    assumptions: list[Conflict] = []
+
+    def _assume(name, role, sym, target, extra_expected=None):
+        exp = {"role": role, "symbol": sym}
+        if extra_expected:
+            exp.update(extra_expected)
+        assumptions.append(Conflict(
+            "R12", "inferred-role", "INFO", map=pmap.index, source="table",
+            message=f"ruolo/simbolo DEDOTTO da un nome: «{name}» → {role} {sym} (da verificare)",
+            suggestion="euristica keyword→ruolo: confermare o riclassificare l'elemento",
+            observed={"source": "table", "name": name},
+            expected=exp, target=target,
+            actions=[_act("confirm", f"Conferma: {role} {sym}"),
+                     _act("reclassify", "Cambia ruolo/simbolo")]))
 
     for e in pmap.tables:
         rect = _to_rect(e.col, e.row)
         low = e.name.lower()
         role, sym = "structure", "⬛"
+        matched = False
         for kw, r, s in STRUCT_KEYWORDS:
             if kw in low:
-                role, sym = r, s
+                role, sym, matched = r, s, True
                 break
         if role == "region" and "cortile" in low and "estern" in low:
             sym = "🟨"
         elif "cortile" in low:
-            role, sym = "region", ("🟨" if "estern" in low else "🟩")
+            role, sym, matched = "region", ("🟨" if "estern" in low else "🟩"), True
 
         count = _leading_count(e.name, e.note)
         if role == "region":
             regions.append({"terrain": sym, "rect": rect, "label": e.name})
+            target = f"/regions/{len(regions) - 1}"
         else:
             entry = {"type": sym}
             if rect[2] == 1 and rect[3] == 1:
@@ -570,6 +594,10 @@ def _emit_from_tables(pmap: ParsedMap, map_size: list[int]) -> tuple[dict, list[
                 entry["rect"] = rect
             entry["label"] = e.name + (f" — {e.note}" if e.note else "")
             structures.append(entry)
+            target = f"/structures/{len(structures) - 1}"
+        # a fallback default (⬛, no keyword matched) is the most uncertain guess
+        _assume(e.name, role, sym, target,
+                extra_expected=None if matched else {"note": "nessuna keyword: default generico"})
         if count is not None:
             units.append({"faction": "", "name": f"{e.name} ({count})",
                           "token": DEFAULT_TROOP_TOKEN,
@@ -581,10 +609,11 @@ def _emit_from_tables(pmap: ParsedMap, map_size: list[int]) -> tuple[dict, list[
         token = _role_token(p.name + " " + p.extra)
         units.append({"faction": "", "name": p.name + (f" — {p.extra}" if p.extra else ""),
                       "token": token, "at": [p.col - 1, p.row - 1], "cr": "PG"})
+        _assume(p.name, "unit", token, f"/units/{len(units) - 1}")
 
     draft = _assemble(pmap, map_size, base, regions, structures, hazards, units, notes,
                       source="tabelle coordinate (dati autoritativi)")
-    return draft, notes
+    return draft, assumptions
 
 
 def _assemble(pmap, map_size, base, regions, structures, hazards, units, notes, source):
@@ -610,7 +639,10 @@ def _assemble(pmap, map_size, base, regions, structures, hazards, units, notes, 
     return draft
 
 
-def build_draft(pmap: ParsedMap, grid_usable: bool) -> dict:
+def build_draft(pmap: ParsedMap, grid_usable: bool) -> tuple[dict, list[Conflict]]:
+    """Return (draft, assumptions). `assumptions` are the semantic guesses the
+    emitter made under uncertainty, as INFO conflict records — so they reach the
+    editor instead of dying in the draft's free-text notes."""
     if grid_usable or not pmap.tables:
         declared = pmap.declared_dims
         cols, rows = pmap.actual_dims
@@ -620,9 +652,9 @@ def build_draft(pmap: ParsedMap, grid_usable: bool) -> dict:
             size = list(declared)
         else:
             size = [max(1, cols), max(1, rows)]
-        draft, _ = _emit_from_grid(pmap)
+        draft, assumptions = _emit_from_grid(pmap)
         draft["map_size"] = size
-        return draft
+        return draft, assumptions
     # grid unusable + tables present → authoritative table reconstruction
     if pmap.declared_dims:
         size = list(pmap.declared_dims)
@@ -630,8 +662,7 @@ def build_draft(pmap: ParsedMap, grid_usable: bool) -> dict:
         max_c = max((e.col[1] for e in pmap.tables), default=1)
         max_r = max((e.row[1] for e in pmap.tables), default=1)
         size = [max_c, max_r]
-    draft, _ = _emit_from_tables(pmap, size)
-    return draft
+    return _emit_from_tables(pmap, size)
 
 
 # --------------------------------------------------------------------------- #
@@ -944,9 +975,10 @@ def _coord(x: int, y: int) -> str:
     return f"{rms.col_label(x)}{y + 1}"
 
 
-def diagnose(pmap: ParsedMap, grid_usable: bool, draft: dict) -> list[Conflict]:
+def diagnose(pmap: ParsedMap, grid_usable: bool, draft: dict,
+             extra: list[Conflict] | None = None) -> list[Conflict]:
     ctx = Ctx(pmap=pmap, draft=draft, grid_usable=grid_usable)
-    conflicts: list[Conflict] = []
+    conflicts: list[Conflict] = list(extra or [])   # emitter assumptions (INFO R12)
     for rule in RULES:
         conflicts.extend(rule(ctx))
     # CATCH-ALL (R11): un difetto NON catalogato (nessuna regola R1-R10 lo
@@ -1047,8 +1079,8 @@ def render_report_json(pmap: ParsedMap, conflicts: list[Conflict]) -> str:
 # --------------------------------------------------------------------------- #
 def process(pmap: ParsedMap) -> tuple[dict, list[Conflict]]:
     usable = grid_is_usable(pmap)
-    draft = build_draft(pmap, usable)
-    conflicts = diagnose(pmap, usable, draft)
+    draft, assumptions = build_draft(pmap, usable)
+    conflicts = diagnose(pmap, usable, draft, extra=assumptions)
     return draft, conflicts
 
 

@@ -93,6 +93,23 @@ Ogni conflitto è un record **machine-actionable** (contratto
 La **provenienza per-elemento** vive nel report (sidecar), non nella bozza: il
 contratto `tactical_map.schema.json` resta puro (`additionalProperties:false`).
 
+### Le assunzioni semantiche non muoiono nelle `notes`
+
+Quando la griglia è inutilizzabile e la bozza si ricostruisce dalle tabelle, il
+ruolo/simbolo di ogni elemento è **dedotto da un nome** (euristica
+keyword→ruolo: «Torre …» → 🗼, «Fossato …» → 🟦…). Ogni deduzione è una scelta
+semantica sotto incertezza: se restasse solo nelle `notes` della bozza, l'editor
+— che consuma il `.conflicts.json`, non le note — **non la vedrebbe** e la
+correzione andrebbe persa. Perciò ogni deduzione è anche un record **INFO R12
+`inferred-role`** con `target` all'elemento e azioni `confirm`/`reclassify`:
+l'editor la mostra come "dedotto, da verificare" ancorata alla cella giusta.
+
+Limite onesto: un difetto **semanticamente sbagliato ma geometricamente valido**
+(e non frutto di una deduzione del tool) non ha una regola dedicata finché non
+gliela si scrive — il registro è pluggabile apposta (una regola = una funzione +
+un test). Ciò che il tool *deduce* è però sempre esposto (R12); ciò che *non sa
+interpretare* degrada a `notes`/INFO, mai a dati inventati.
+
 ## Cosa NON fa (per scelta)
 
 - non decide quale fonte ha ragione (segnala, non sceglie);

@@ -51,7 +51,7 @@
             "enum": ["grid-header-mismatch", "grid-nonuniform-rows", "symbol-not-in-legend",
                      "annotation-coord-drift", "name-collision", "coord-out-of-bounds",
                      "overlapping-structures", "quantity-mismatch", "non-emoji-cell",
-                     "schematic-map-detected", "uncategorized-draft-error"]
+                     "schematic-map-detected", "uncategorized-draft-error", "inferred-role"]
           },
           "severity": { "type": "string", "enum": ["ERROR", "WARN", "INFO"] },
           "map": { "type": "integer", "minimum": 1 },

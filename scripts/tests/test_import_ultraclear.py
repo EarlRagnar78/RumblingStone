@@ -145,6 +145,29 @@ class TestEditorContract(unittest.TestCase):
                     self.assertIn(a["kind"], I.ACTION_KINDS)
                     self.assertIn("label", a)
 
+    def test_inferred_roles_surface_to_editor_not_only_notes(self):
+        # every semantic guess the emitter makes must reach the editor as an
+        # R12 record WITH a target pointer — never die silently in draft notes.
+        pmap, draft, conflicts = _run("tables_conflicts.md")
+        r12 = [c for c in conflicts if c.id == "R12"]
+        self.assertTrue(r12, "nessuna assunzione esposta")
+        for c in r12:
+            self.assertEqual(c.severity, "INFO")
+            self.assertTrue(c.target, "assunzione senza target JSON-Pointer")
+            self.assertTrue(any(a["kind"] in ("confirm", "reclassify") for a in c.actions))
+        # parity: one R12 per '[ruolo dedotto]' note (nothing silent)
+        note_guesses = [n for n in draft.get("notes", []) if "[ruolo dedotto]" in n]
+        table_r12 = [c for c in r12 if c.target.startswith(("/regions/", "/structures/"))]
+        self.assertEqual(len(table_r12), len(note_guesses))
+
+    def test_inferred_target_points_at_real_element(self):
+        # the target JSON-Pointer must resolve to an element that actually exists
+        _, draft, conflicts = _run("tables_conflicts.md")
+        for c in [c for c in conflicts if c.id == "R12"]:
+            coll, _, idx = c.target.lstrip("/").partition("/")
+            self.assertIn(coll, draft)
+            self.assertLess(int(idx), len(draft[coll]))
+
     def test_json_report_shape(self):
         pmap, _, conflicts = _run("tables_conflicts.md")
         payload = json.loads(I.render_report_json(pmap, conflicts))

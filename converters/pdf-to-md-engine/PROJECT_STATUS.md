@@ -18,7 +18,7 @@ The PDF to Markdown Engine project has undergone comprehensive analysis and opti
 
 ### 📊 **File Inventory**
 ```
-RumblingStone/Script/pdf-to-md-engine/
+RumblingStone/converters/pdf-to-md-engine/
 ├── Core Scripts (7 files)
 │   ├── main.py ✅
 │   ├── run_enhanced.py ✅

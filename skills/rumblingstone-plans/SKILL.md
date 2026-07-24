@@ -64,7 +64,7 @@ gira in CI su ogni PR e come hook `pre-push` locale
 (`./scripts/install-git-hooks.sh`):
 
 - **Blocca** (rosso in CI, push rifiutato) modifiche a file strutturali
-  (`scripts/`, `skills/`, `Script/`, `.github/`, `plans/adr/`) senza una
+  (`scripts/`, `skills/`, `converters/`, `.github/`, `plans/adr/`) senza una
   riga in `plans/CHANGELOG.md` nello stesso range di commit.
 - **Promemoria ADR** (warning non bloccante): nuova skill, nuovo script
   top-level o modifica ai workflow CI senza alcun tocco a `plans/adr/` →

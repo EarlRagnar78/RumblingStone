@@ -13,6 +13,8 @@ from __future__ import annotations
 
 import re
 import sys
+import json
+import argparse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -93,23 +95,44 @@ def check_file(path: Path, verbose: bool) -> tuple[list[str], list[str]]:
     return errors, warnings
 
 
-def main() -> int:
-    verbose = "--verbose" in sys.argv
+def main(argv=None) -> int:
+    ap = argparse.ArgumentParser(
+        description="Gate CI: verifica i master ARC*-DEF-* contro la checklist module-standard.",
+        formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--verbose", action="store_true", help="dettaglio per file")
+    ap.add_argument("--json", action="store_true",
+                    help="emette il report in JSON (opt-in) invece del testo")
+    args = ap.parse_args(argv)
+    verbose = args.verbose
+
     masters = sorted(ROOT.glob(f"**/{GLOB}"))
     masters = [m for m in masters if "_ARCHIVIO" not in m.parts and "build" not in m.parts]
     if not masters:
-        print("✓ validate_modules: nessun master ARC*-DEF-* nel repo — ok")
+        if args.json:
+            print(json.dumps({"tool": "validate_modules", "ok": True,
+                              "masters": 0, "findings": []}, indent=2, ensure_ascii=False))
+        else:
+            print("✓ validate_modules: nessun master ARC*-DEF-* nel repo — ok")
         return 0
 
     total_err = 0
+    findings = []
     for m in masters:
         errors, warnings = check_file(m, verbose)
         rel = m.relative_to(ROOT)
-        for w in warnings:
-            print(f"  ⚠ {rel}: {w}")
-        for e in errors:
-            print(f"  ✗ {rel}: {e}")
+        findings.append({"file": str(rel), "errors": errors, "warnings": warnings})
+        if not args.json:
+            for w in warnings:
+                print(f"  ⚠ {rel}: {w}")
+            for e in errors:
+                print(f"  ✗ {rel}: {e}")
         total_err += len(errors)
+
+    if args.json:
+        print(json.dumps({"tool": "validate_modules", "ok": total_err == 0,
+                          "masters": len(masters), "findings": findings},
+                         indent=2, ensure_ascii=False))
+        return 1 if total_err else 0
 
     if total_err:
         print(f"✗ validate_modules: {len(masters)} master, {total_err} errore/i "

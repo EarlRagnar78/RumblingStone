@@ -4,7 +4,7 @@ check_plans_discipline.py — gate della "regola d'oro" dei piani (ADR-0009).
 
 Blocca (exit 1) un range di commit che modifica file STRUTTURALI del repo
 senza aggiornare plans/CHANGELOG.md nello stesso range. Strutturale =
-scripts/, skills/, Script/, .github/, plans/adr/ (l'infrastruttura).
+scripts/, skills/, converters/, .github/, plans/adr/ (l'infrastruttura).
 Il contenuto di campagna (campaign/, archi 00_-09_, Bestiario/, PG/) NON
 è strutturale: le sessioni giocate al tavolo non richiedono changelog.
 
@@ -24,11 +24,12 @@ Uso:
 from __future__ import annotations
 
 import argparse
+import json
 import subprocess
 import sys
 
 CHANGELOG = "plans/CHANGELOG.md"
-STRUCTURAL_PREFIXES = ("scripts/", "skills/", "Script/", ".github/", "plans/adr/")
+STRUCTURAL_PREFIXES = ("scripts/", "skills/", "converters/", ".github/", "plans/adr/")
 ADR_PREFIX = "plans/adr/"
 
 
@@ -68,24 +69,36 @@ def main() -> int:
     ap.add_argument("--base", default="origin/main", help="ref di confronto (default: origin/main)")
     ap.add_argument("--head", default="HEAD", help="ref da verificare (default: HEAD)")
     ap.add_argument("--repo-root", default=".", help="root del repo git")
+    ap.add_argument("--json", action="store_true",
+                    help="emette il report in JSON (opt-in) invece del testo")
     args = ap.parse_args()
+
+    def _emit(code: int, status: str, **extra) -> int:
+        if args.json:
+            print(json.dumps({"tool": "check_plans_discipline", "ok": code == 0,
+                              "status": status, **extra}, indent=2, ensure_ascii=False))
+        return code
 
     try:
         rows = changed_files(args.base, args.head, args.repo_root)
     except subprocess.CalledProcessError:
         # Clone shallow o ref assente: meglio un gate saltato E dichiarato
         # che un falso rosso — la CI usa fetch-depth: 0 apposta.
-        print(f"⚠ check_plans_discipline: impossibile calcolare il diff "
-              f"{args.base}..{args.head} (clone shallow? ref mancante?) — gate SALTATO")
-        return 0
+        if not args.json:
+            print(f"⚠ check_plans_discipline: impossibile calcolare il diff "
+                  f"{args.base}..{args.head} (clone shallow? ref mancante?) — gate SALTATO")
+        return _emit(0, "skipped-no-diff")
 
     paths = [p for _, p in rows]
     structural = [p for p in paths if p.startswith(STRUCTURAL_PREFIXES)]
     if not structural:
-        print("✓ check_plans_discipline: nessun file strutturale nel range — ok")
-        return 0
+        if not args.json:
+            print("✓ check_plans_discipline: nessun file strutturale nel range — ok")
+        return _emit(0, "no-structural-changes")
 
     if CHANGELOG not in paths:
+        if args.json:
+            return _emit(1, "changelog-missing", structural=structural)
         print("✗ REGOLA D'ORO VIOLATA (skill rumblingstone-plans / ADR-0009):")
         print(f"  il range modifica {len(structural)} file strutturali ma NON tocca {CHANGELOG}.")
         for p in structural[:15]:
@@ -96,13 +109,17 @@ def main() -> int:
         print("  (e aggiorna plans/INDEX.md se il lavoro chiude/avanza un piano).")
         return 1
 
-    print(f"✓ check_plans_discipline: {len(structural)} file strutturali + riga in {CHANGELOG} — ok")
-
     reasons = needs_adr_reminder(rows)
-    if reasons and not any(p.startswith(ADR_PREFIX) for p in paths):
+    adr_reminders = sorted(set(reasons)) if (reasons and not any(
+        p.startswith(ADR_PREFIX) for p in paths)) else []
+    if args.json:
+        return _emit(0, "ok", structural=structural, adr_reminders=adr_reminders)
+
+    print(f"✓ check_plans_discipline: {len(structural)} file strutturali + riga in {CHANGELOG} — ok")
+    if adr_reminders:
         print("⚠ PROMEMORIA ADR (non bloccante): il range contiene scelte potenzialmente")
         print("  strutturali senza alcun tocco a plans/adr/ — valuta se serve un ADR:")
-        for r in sorted(set(reasons)):
+        for r in adr_reminders:
             print(f"    - {r}")
     return 0
 

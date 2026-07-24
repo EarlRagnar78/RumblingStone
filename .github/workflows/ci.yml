@@ -26,7 +26,14 @@ jobs:
         run: pip install pyyaml
 
       - name: Python scripts compile
-        run: python -m compileall -q scripts Script
+        run: python -m compileall -q scripts converters
+
+      - name: Tool manifest conformance gate (ADR-0012)
+        run: python scripts/tools_manifest.py --check
+
+      - name: Shell scripts lint (shellcheck) — non-blocking
+        continue-on-error: true
+        run: shellcheck -S warning scripts/*.sh || true
 
       - name: Validate skill trees (frontmatter, links, data YAML)
         run: python scripts/validate_skills.py
@@ -63,6 +70,9 @@ jobs:
           python scripts/import_ultraclear.py --help > /dev/null
           python scripts/update_xp.py --check > /dev/null
           python scripts/hype_homebrew.py --help > /dev/null
+          python scripts/dm_dossier.py --help > /dev/null
+          python scripts/validate_modules.py --help > /dev/null
+          python scripts/tools_manifest.py --help > /dev/null
 
       - name: Map JSON contract + UVTT export round-trip (M1/M2)
         run: |

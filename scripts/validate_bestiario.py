@@ -29,6 +29,8 @@ Exit 0 = struttura ok (gli avvisi --rules NON fanno fallire); exit 1 = violazion
 """
 import re
 import sys
+import json
+import argparse
 import subprocess
 from pathlib import Path
 
@@ -155,11 +157,16 @@ def check_rules(path: Path):
         warn(f"{rel}: menziona un boost ma non ha una riga `Boost log:`")
 
 
-def main():
-    if "--help" in sys.argv or "-h" in sys.argv:
-        print(__doc__)
-        return 0
-    do_rules = "--rules" in sys.argv
+def main(argv=None):
+    ap = argparse.ArgumentParser(
+        description="Gate CI della libreria Bestiario/ (struttura, naming, CR, catalogo in sync).",
+        formatter_class=argparse.RawDescriptionHelpFormatter, epilog=__doc__)
+    ap.add_argument("--rules", action="store_true",
+                    help="controlli di regole PF1e (avvisi non bloccanti)")
+    ap.add_argument("--json", action="store_true",
+                    help="emette il report in JSON (opt-in) invece del testo")
+    args = ap.parse_args(argv)
+    do_rules = args.rules
 
     # 1. struttura + legacy
     if not BEST.is_dir():
@@ -210,6 +217,21 @@ def main():
                     "`python3 scripts/build_monster_catalog.py` e committare. "
                     "Prime differenze:\n      " + "\n      ".join(diff))
 
+    n_stat = sum(1 for s in ("mostri", "villain", "png")
+                 for p in (BEST / s).rglob("*.md")
+                 if not p.name.startswith("README") and is_statblock(p))
+
+    if args.json:
+        report = {
+            "tool": "validate_bestiario",
+            "ok": not errors,
+            "statblocks": n_stat,
+            "errors": errors,
+            "warnings": warnings if do_rules else [],
+        }
+        print(json.dumps(report, indent=2, ensure_ascii=False))
+        return 1 if errors else 0
+
     if do_rules and warnings:
         print(f"⚠ validate_bestiario --rules: {len(warnings)} avvisi (non bloccanti)", file=sys.stderr)
         for w in warnings:
@@ -220,9 +242,6 @@ def main():
         for e in errors:
             print("  -", e, file=sys.stderr)
         return 1
-    n_stat = sum(1 for s in ("mostri", "villain", "png")
-                 for p in (BEST / s).rglob("*.md")
-                 if not p.name.startswith("README") and is_statblock(p))
     extra = f"; {len(warnings)} avvisi --rules" if do_rules else ""
     print(f"✓ validate_bestiario: struttura ok, {n_stat} statblock validi, catalogo in sync{extra}.")
     return 0

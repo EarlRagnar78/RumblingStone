@@ -1,0 +1,144 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://rumblingstone/schemas/tool_manifest.schema.json",
+  "title": "RumblingStone tool manifest",
+  "description": "Contratto machine-readable di uno script/tool del repo. La fonte di verita' e' scripts/tools.manifest.json (array di questi oggetti); docs/tools/registry.json, README.md e mcp-tools.json sono artefatti generati da scripts/tools_manifest.py.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "path", "category", "language", "invocation", "summary",
+    "stability", "stdlib_only", "external_bins", "args", "inputs",
+    "outputs", "exit_codes", "determinism", "side_effects", "idempotent"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_./-]*$",
+      "description": "Identificatore stabile del tool (di norma il basename senza estensione)."
+    },
+    "path": {
+      "type": "string",
+      "description": "Percorso repo-relativo del file/cartella del tool."
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "A-session-prep", "B-maps-pipeline", "C-post-session-canon",
+        "D-materials", "E-bestiary-catalog", "F-skill-pipeline",
+        "G-orchestration-governance", "H-local-infra",
+        "I-converters", "J-data-assets", "lib", "tests"
+      ]
+    },
+    "language": { "type": "string", "enum": ["python", "bash", "yaml", "json", "library", "mixed"] },
+    "invocation": {
+      "type": "string",
+      "description": "Riga di invocazione canonica, es. 'python3 scripts/suggest_map.py'."
+    },
+    "summary": { "type": "string", "minLength": 8 },
+    "stability": {
+      "type": "string",
+      "enum": ["stable", "beta", "internal", "local-only", "external-toolchain", "deprecated", "data", "library"]
+    },
+    "stdlib_only": {
+      "type": "boolean",
+      "description": "true = usa solo la stdlib Python (nessun pip). Ignorato per tool non-Python."
+    },
+    "external_bins": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Binari esterni richiesti a runtime (es. chromium, cwebp, docker, git). [] se nessuno."
+    },
+    "external_deps": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Pacchetti Python di terze parti richiesti (es. pyyaml). Opzionale."
+    },
+    "optional_deps": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Dipendenze opzionali con fallback (es. tiktoken). Opzionale."
+    },
+    "args": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "type", "required", "desc"],
+        "properties": {
+          "name": { "type": "string", "description": "Flag ('--el') o positional ('spec')." },
+          "type": { "type": "string", "enum": ["str", "int", "float", "bool", "path", "choice", "subcommand"] },
+          "required": { "type": "boolean" },
+          "default": { "description": "Valore di default; null se assente." },
+          "choices": { "type": ["array", "null"], "items": { "type": "string" } },
+          "repeatable": { "type": "boolean" },
+          "desc": { "type": "string" }
+        }
+      }
+    },
+    "stdin": { "type": "boolean", "description": "Legge da stdin. Opzionale (default false)." },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "kind", "required"],
+        "properties": {
+          "path": { "type": "string", "description": "Percorso o glob dell'input (o 'stdin')." },
+          "kind": { "type": "string", "enum": ["markdown", "yaml", "json", "svg", "png", "pdf", "html", "image", "git", "text", "directory"] },
+          "required": { "type": "boolean" },
+          "schema": { "type": ["string", "null"], "description": "JSON Schema che l'input rispetta, se applicabile." }
+        }
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "kind", "overwrites", "generated_header"],
+        "properties": {
+          "path": { "type": "string", "description": "Percorso/glob dell'output (o 'stdout'/'stderr')." },
+          "kind": { "type": "string", "enum": ["markdown", "yaml", "json", "svg", "png", "uvtt", "pdf", "html", "webp", "text", "directory", "exit-code", "git-commit"] },
+          "overwrites": { "type": "boolean", "description": "Puo' sovrascrivere file esistenti." },
+          "generated_header": { "type": "boolean", "description": "L'output porta l'header 'auto-generated'." },
+          "schema": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "exit_codes": {
+      "type": "object",
+      "description": "Mappa 'codice' -> significato. Convenzione: 0=ok, 1=errore-dominio, 2=errore-uso, >2=specifici.",
+      "propertyNames": { "pattern": "^[0-9]+$" },
+      "additionalProperties": { "type": "string" }
+    },
+    "determinism": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["deterministic"],
+      "properties": {
+        "deterministic": { "type": "boolean", "description": "Stesso input -> stesso output byte a byte." },
+        "seed_flag": { "type": ["string", "null"], "description": "Flag che fissa il seed, se il tool usa random." },
+        "notes": { "type": "string" }
+      }
+    },
+    "side_effects": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["writes_canon", "git_commit", "network"],
+      "properties": {
+        "writes_canon": { "type": "boolean", "description": "Scrive file canone (state.md/sessions/...)." },
+        "git_commit": { "type": "boolean", "description": "Puo' creare commit git." },
+        "network": { "type": "boolean", "description": "Effettua accessi di rete." },
+        "notes": { "type": "string" }
+      }
+    },
+    "idempotent": { "type": "boolean", "description": "Ri-eseguibile senza effetti cumulativi indesiderati." },
+    "consumes_schema": { "type": ["string", "null"] },
+    "produces_schema": { "type": ["string", "null"] },
+    "ci_smoke": { "type": ["string", "null"], "description": "Comando con cui la CI esercita il tool." },
+    "tests": { "type": "array", "items": { "type": "string" } },
+    "docs": { "type": "array", "items": { "type": "string" }, "description": "Doc di approfondimento correlate." },
+    "supersedes": { "type": ["string", "null"] },
+    "superseded_by": { "type": ["string", "null"] }
+  }
+}

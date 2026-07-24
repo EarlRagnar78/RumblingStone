@@ -20,6 +20,7 @@ Usage:  python3 scripts/validate_skills.py [--repo-root PATH]
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sys
 from pathlib import Path
@@ -123,6 +124,8 @@ def main() -> int:
         type=Path,
         default=Path(__file__).resolve().parent.parent,
     )
+    ap.add_argument("--json", action="store_true",
+                    help="emette il report in JSON (opt-in) invece del testo")
     args = ap.parse_args()
     root = args.repo_root.resolve()
 
@@ -130,13 +133,20 @@ def main() -> int:
     link_errors = check_links(root)
     yaml_errors = check_yaml_data(root)
     errors = skill_errors + link_errors + yaml_errors
+    n_skills = len(list((root / "skills").glob("*/SKILL.md")))
+
+    if args.json:
+        print(json.dumps({
+            "tool": "validate_skills", "ok": not errors,
+            "skills": n_skills, "errors": errors, "warnings": warnings,
+        }, indent=2, ensure_ascii=False))
+        return 1 if errors else 0
 
     for w in warnings:
         print(f"WARN  {w}")
     for e in errors:
         print(f"ERROR {e}")
 
-    n_skills = len(list((root / "skills").glob("*/SKILL.md")))
     print(
         f"\nvalidate_skills: {n_skills} skills checked — "
         f"{len(errors)} error(s), {len(warnings)} warning(s)"

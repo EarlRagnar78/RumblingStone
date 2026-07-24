@@ -42,7 +42,7 @@ skills/
 
 plans/     # work-plan archive: INDEX.md (status + % + gates), CHANGELOG.md, adr/
 scripts/   # DM automation — single entrypoint: python3 scripts/dm.py
-Script/    # content converters (pdf→md, html→md, img→webp) — NOT the DM automation
+converters/ # content converters (pdf→md, html→md, img→webp) — NOT the DM automation
 ```
 
 Per-agent mirrors (`.claude/skills/`, `.cursor/skills/`, etc.) are

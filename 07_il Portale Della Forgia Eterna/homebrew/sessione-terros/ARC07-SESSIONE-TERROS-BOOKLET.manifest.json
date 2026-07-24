@@ -1,0 +1,20 @@
+{
+  "brand": "RUMBLING STONE · ARC-07 · IL PORTALE DELLA FORGIA ETERNA",
+  "title": "Lo Scontro con Terros l'Antico",
+  "subtitle": "Il Piano della Terra · lo Smeraldo della Forza · l'Incudine del Mondo",
+  "banner": "BOOKLET DI SESSIONE",
+  "meta": "Sessione D&D 3.5 per 3 personaggi di 13° livello (APL eff. 12) · Faerûn, Flamerule 1372 DR · Campagna privata RumblingStone · regia DM + master integrale + 4 handout hint/echi per-PG",
+  "header": "La serata del Guardiano: regia in ordine di gioco, il master ARC07-DEF-1 integrale e gli hint separati per Thorik, Tordek, Artemis e Hella. I capitoli ⚠ sono del DM; le pagine ✉ si consegnano ai giocatori, una a testa, in privato.",
+  "footer": "Lo Scontro con Terros",
+  "cover_image": "../../Immagini/camera-nodo-terra.webp",
+  "intro_md": "00-INTRO-DOVE-SIAMO.md",
+  "out": "ARC07-SESSIONE-TERROS-BOOKLET.html",
+  "chapters": [
+    {"title": "I · Regia della Sessione", "file": "01-REGIA-SESSIONE.md", "tag": "dm"},
+    {"title": "II · Master integrale — Piano della Terra & Terros", "file": "../../ARC07-DEF-1-PIANO-TERRA-TERROS.md", "tag": "dm"},
+    {"title": "✉ Hint — Thorik", "file": "02-HINT-THORIK.md", "tag": "player"},
+    {"title": "✉ Hint — Tordek", "file": "03-HINT-TORDEK.md", "tag": "player"},
+    {"title": "✉ Hint — Artemis", "file": "04-HINT-ARTEMIS.md", "tag": "player"},
+    {"title": "✉ Echi — Hella", "file": "05-ECHI-HELLA.md", "tag": "player"}
+  ]
+}

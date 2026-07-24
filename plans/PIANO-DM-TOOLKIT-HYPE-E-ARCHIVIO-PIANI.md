@@ -351,10 +351,23 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   **2 tavole del DM** (pianta città + panorama Piazza) come master visivi con
   2 handout giocatori. Tavole PNG reali caricate dal DM su main (`ed56aa6`,
   2026-07-17) → gate "PNG da caricare dal DM" **chiuso**.
-- [ ] **K-B3.9** *(in lavorazione — PR #46 aperta)*: tavole ricollocate in
+- [x] **K-B3.9** *(2026-07-17/24, PR #46)*: tavole ricollocate in
   `P2D-Palio-Allegati/immagini/` (posto canonico) e ridimensionate con Pillow
-  (12,2 MB→1,8 MB · 8,8 MB→2,3 MB); da mergiare — poi spuntare qui e in
-  CHANGELOG.
+  (12,2 MB→1,8 MB · 8,8 MB→2,3 MB); conflitto CHANGELOG con main risolto in
+  unione.
+- [x] **K-B9** *(manutenzione, 2026-07-24)*: **stile pergamena A CANONE** —
+  il builder HTML dei booklet (prima solo nello scratchpad della chat, a
+  rischio perdita) è ora `scripts/build_booklet_html.py`: CSS canonico
+  incorporato, manifest JSON per capitoli, SVG inline, raster→data-URI
+  (Pillow opzionale), `dm.py booklet`, descrittore ADR-0012 nel tool
+  manifest. Manifest committati: Palio (`09_.../homebrew/PALIO-BOOKLET.manifest.json`)
+  e sessione Terros — gli artefatti si rigenerano in locale senza Docker.
+- [x] **K-B10** *(2026-07-24)*: **booklet di sessione «Lo Scontro con
+  Terros»** (`07_.../homebrew/sessione-terros/`): regia della serata in
+  ordine di gioco (Seme-Mercato di Varis giocato NEL Tempio per colore —
+  decisione DM; Artemis mai tentato al giardino; Hella solo echi), master
+  ARC07-DEF-1 integrale, **4 handout hint/echi separati per PG**
+  (Thorik/Tordek/Artemis/Hella) + HTML generato col builder K-B9.
 
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 

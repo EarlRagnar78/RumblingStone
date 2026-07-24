@@ -11,6 +11,14 @@
 > - `README.md` del repo [naturalcrit/homebrewery](https://github.com/naturalcrit/homebrewery) (sezione *Installation*)
 > - `README.DOCKER.md` dello stesso repo (*Offline Install Instructions: Docker*)
 
+> ℹ️ **Serve Docker per i booklet HTML «pergamena»? NO.** I booklet
+> sfogliabili in stile pergamena (Palio, sessione Terros, …) si generano
+> **senza container e senza server**, con il builder canonico:
+> `python3 scripts/dm.py booklet <manifest.json>` → un solo file `.html`
+> autonomo da aprire nel browser o condividere. Il self-hosted Homebrewery
+> di questa pagina serve per l'**editor live a due pannelli** dei file
+> `.hb.md` (recap, handout, fascicoli V3). Dettagli: `scripts/README-automation.md`.
+
 ---
 
 ## Via A — Installazione nativa (consigliata dal progetto per uso/sviluppo locale)

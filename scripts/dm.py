@@ -162,6 +162,14 @@ def cmd_dossier(args: argparse.Namespace, extra: list[str]) -> int:
     return run("dm_dossier.py", *extra)
 
 
+def cmd_booklet(args: argparse.Namespace, extra: list[str]) -> int:
+    # Booklet HTML «pergamena» (stile canonico del Palio) da manifest JSON
+    bo = [args.manifest]
+    if args.out:
+        bo += ["--out", args.out]
+    return run("build_booklet_html.py", *bo, *extra)
+
+
 def cmd_session(args: argparse.Namespace, extra: list[str]) -> int:
     # Ciclo di vita sessione su branch-per-gruppo (ADR-0007) — solo orchestrazione
     if args.action == "status":
@@ -330,6 +338,11 @@ def main(argv: list[str] | None = None) -> int:
 
     sub.add_parser("dossier", help="⚠️ SOLO DM: dossier di tutte le trame (da state.md) in Homebrewery V3")
 
+    p = sub.add_parser("booklet", help="booklet HTML sfogliabile in stile pergamena "
+                                       "(build_booklet_html.py) da un manifest JSON")
+    p.add_argument("manifest", help="manifest *.manifest.json del booklet")
+    p.add_argument("--out", help="file HTML di output (default: dal manifest)")
+
     p = sub.add_parser("session",
                        help="ciclo sessione su branch-per-gruppo (ADR-0007): "
                             "end / next / status / branch")
@@ -353,6 +366,7 @@ def main(argv: list[str] | None = None) -> int:
     return {
         "prep": cmd_prep, "maps": cmd_maps, "post": cmd_post, "recap": cmd_recap,
         "handout": cmd_handout, "hype": cmd_hype, "dossier": cmd_dossier,
+        "booklet": cmd_booklet,
         "session": cmd_session, "skills": cmd_skills, "doctor": cmd_doctor,
     }[args.cmd](args, extra)
 

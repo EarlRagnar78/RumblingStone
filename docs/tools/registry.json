@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 37,
+  "tool_count": 38,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -1492,6 +1492,82 @@
       "consumes_schema": null,
       "produces_schema": null,
       "ci_smoke": "python scripts/update_xp.py --check",
+      "tests": [],
+      "docs": [
+        "scripts/README-automation.md"
+      ]
+    },
+    {
+      "id": "build_booklet_html",
+      "path": "scripts/build_booklet_html.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/build_booklet_html.py MANIFEST.json",
+      "summary": "Booklet HTML sfogliabile in stile 'pergamena Homebrewery' (stile canonico del Palio): copertina, tab per capitolo, SVG inline, raster embeddate come data-URI; da manifest JSON di capitoli markdown (i .md restano i master, ADR-0003).",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "manifest",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Manifest *.manifest.json del booklet (brand/title/chapters, percorsi relativi alla sua cartella)."
+        },
+        {
+          "name": "--out",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "File HTML di output (default: campo 'out' del manifest o <stem>.html)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "**/*.manifest.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "**/*.md (capitoli citati dal manifest)",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<manifest dir>/<out>.html",
+          "kind": "html",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "2": "manifest non trovato / errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Output funzione pura di manifest+master; con Pillow installato le immagini >600 KB vengono ricompresse in JPEG (byte diversi ma contenuto identico)."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/build_booklet_html.py --help",
       "tests": [],
       "docs": [
         "scripts/README-automation.md"

@@ -1,5 +1,9 @@
 # Import ultra-clear → bozza JSON + report conflitti (`import_ultraclear.py`)
 
+> **Contratto I/O completo** (input parsati, forma esatta della bozza e del
+> report, tipi di record, metadati, come consumarli da un altro tool):
+> `scripts/README-import-ultraclear.md`. Questa pagina è la guida operativa.
+
 **Quando**: hai una mappa **ultra-clear** già scritta (griglia emoji + tabelle
 di coordinate + posizioni PG scritte a mano) e vuoi migrarla nel **contratto
 JSON** (Modalità 3) senza ridisegnarla da zero. Lo strumento estrae una

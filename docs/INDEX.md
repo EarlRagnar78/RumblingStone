@@ -37,6 +37,7 @@ Contratto macchina e vista umana — **generati** dal manifest, sempre allineati
 
 | Documento | Cos'è |
 |---|---|
+| [`docs/guides/GUIDA-CONDIVISIONE-IP.md`](guides/GUIDA-CONDIVISIONE-IP.md) | **Guida completa condivisione**: cosa si può fare con il materiale (tavolo, giocatori, amici, pubblicazione gratuita, vendita) — i tre corpi di IP, la procedura per ogni caso, confini per le illustrazioni, casi pratici risolti, checklist |
 | [`docs/guides/GUIDA-SETUP-MACCHINA.md`](guides/GUIDA-SETUP-MACCHINA.md) | **Guida completa setup**: da repo clonato a «funziona tutto» — prerequisiti (cosa serve e cosa è opzionale), skill per agenti, hook git, branch di gruppo (ADR-0007), extra (PDF/pandoc/container), verifica finale coi controlli della CI, troubleshooting |
 | [`docs/guides/GUIDA-BOOKLET-E-PDF.md`](guides/GUIDA-BOOKLET-E-PDF.md) | **Guida completa end-to-end**: dai master ai booklet (HTML/Homebrewery) ai **PDF A4** per giocatori e DM — prerequisiti per ogni sistema, anatomia del manifest, container opzionali, troubleshooting, checklist di consegna |
 | [`docs/guides/GUIDA-MAPPE.md`](guides/GUIDA-MAPPE.md) | **Guida completa mappe**: le 3 modalità, griglia emoji e legenda universale, contratto JSON per eserciti/strutture, import Watabou e ultra-clear, render SVG, export **PNG e UVTT (Foundry/Roll20 con muri e luci)**, troubleshooting della CI |
@@ -64,6 +65,8 @@ Il **perché** delle scelte strutturali. Indice completo in [`plans/adr/`](../pl
 | [ADR-0010](../plans/adr/ADR-0010-vendoring-skill-terzi.md) | Vendoring skill di terzi |
 | [ADR-0011](../plans/adr/ADR-0011-de-collisione-scripts-converters.md) | De-collisione `Script/` → `converters/` |
 | [ADR-0012](../plans/adr/ADR-0012-standard-ingegneria-tool-verificabile.md) | Standard di ingegneria verificabile in CI |
+| [ADR-0013](../plans/adr/ADR-0013-standard-generazione-booklet-sessioni.md) | Standard di generazione dei booklet (stile, anti-spoiler, HTML/Homebrewery/PDF) |
+| [ADR-0014](../plans/adr/ADR-0014-regia-sensoriale-obbligatoria.md) | Regia sensoriale obbligatoria nei master (descrizioni sempre, occhio da avventuriero) |
 
 ## 5. Archivio piani
 

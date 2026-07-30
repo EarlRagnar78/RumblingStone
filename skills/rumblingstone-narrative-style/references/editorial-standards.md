@@ -26,6 +26,19 @@ token): l'agente non la ri-verifica a mano.
   si "vedono" soltanto.
 - Chiudere i box di combattimento su un **decision point** («Che fate?») —
   mai risolvere l'azione dei PG dentro il read-aloud.
+- **Occhio da avventuriero, non da architetto** (ADR-0014): il box descrive
+  ciò che si coglie in **sei secondi** — scala per paragone («una bolla
+  grande come la piazza di un mercato», «una lastra larga quanto la sala di
+  una locanda»), materiali, temperatura, odore, cosa è *sbagliato*. Le
+  metrature e i Ø restano nel blocco **«Dati per il DM (non da leggere)»**
+  o sulla mappa: un DM che legge «sfera Ø 60 m» ai giocatori sta leggendo
+  una perizia, non raccontando una stanza.
+- **Nessuna sequenza a battute senza regia** (ADR-0014): dove c'è un giro di
+  round/fasi (rito, boss, skill challenge, hazard) servono apertura di
+  round, **un micro-box per attore** nell'ordine di gioco, **una riga di
+  esito per riuscita e una per fallimento**, chiusura di round. I dadi senza
+  descrizione spengono la scena. Esemplare: `ARC07-DEF-1` §9 «FASE 2 — la
+  regia dei tre round».
 - Etichettare la regia: `**Read-aloud (pilastro lead).**` — così il prossimo
   agente sa quale voce continuare.
 - I dialoghi dei PNG: `**NOME (registro/tono):** *«battuta»*` — il tono

@@ -44,24 +44,29 @@ esistono solo come echi.
    read-aloud «Dove Siamo» (copertina del booklet DM). Questo booklet col
    titolo vero resta SOLO al DM.
 2. **La scena privata di Artemis — il Seme-Mercato di Varis** (master
-   **§6-bis**, integrale). ⚠ **Nota di regia sul posizionamento**: nel
-   master la scena vive sulla riva dell'Oceano di Roccia, PRIMA del Tempio.
-   **Decisione DM (2026-07-24): si gioca STASERA, coi PG già dentro il
-   Tempio, perché fa colore** — la scena è dichiaratamente indipendente da
-   tutto («funziona anche se il party ha saltato il Campo dei Cristalli») e
-   non cambia nulla in meccanica: sposta solo il *dove* (una nicchia di
-   detriti lungo il corridoio del Tempio, dove l'Anello morde il dito, al
-   posto del filone sulla riva). Giocala **a voce bassa, col solo giocatore
-   di Artemis**, mentre gli altri studiano l'ultima porta.
+   **§6-bis**, integrale). 📍 **Posizione a canone (DM 2026-07-30): dentro
+   il Tempio, DOPO la Sentinella**, lungo il corridoio che scende verso la
+   camera del guardiano — l'ultimo tratto prima di Terros. Il cabochon è
+   affiorato **nella crepa aperta dal duello** (il master spiega perché il
+   Seme sia lì: cresce lungo la linea di forza, e il Tempio ne è il
+   capolinea). Giocala **a voce bassa, col solo giocatore di Artemis**,
+   mentre gli altri si rimettono in marcia.
    - Canone-guardia: **Artemis non è MAI stato tentato al Giardino dei
      Cristalli** (la runa alla Madre Cristallo è rimossa dal canone, §6):
      questa è la sua **unica** tentazione, pulita. Nessun «Occhio di
      Lathander», nessuna tentazione divina: solo l'avidità del predone.
    - L'esito (prende/rifiuta) va nell'**Echo Ledger** (§11) e riemerge col
      **#4 (Vatore)** e in ARC-09.
-3. **Il ponte di cristallo e il risveglio** (master §8): read-aloud del
-   risveglio del Guardiano; scenografia della camera (ponte 45 m — non
-   sostarci, piattaforme laterali, altare levitante). **Apertura sonica
+3. **L'ingresso nella camera e il risveglio** (master **§8a-8b**, nuovi):
+   niente porta da forzare — la **soglia di mithral si apre da sé** e i PG
+   **escono direttamente sull'Altare**, che è **attraccato** al bordo come
+   una chiatta al molo (canone DM 2026-07-30). Leggi il read-aloud **«i sei
+   secondi della soglia»** (cosa colgono in un'occhiata), poi il risveglio
+   del Guardiano, poi il **distacco**: l'Altare molla l'ormeggio e si
+   **centra nella sfera**. Chi è sopra viaggia con lui; chi è rimasto sulla
+   soglia si ritrova a ~27 m oltre lo zero-G. È la **domanda d'apertura**
+   della scena: nessuno taglia loro la ritirata — se la tagliano da soli.
+   **Apertura sonica
    DISPONIBILE** (canone giocato: la Frequenza è posseduta): se entrano
    cantando (Intrattenere Canto CD 18, +4 dall'Anello, 2 successi su 3) →
    Terros nauseato round 1 (−4/−4). Il **Diapason invece è SPESO** (usato
@@ -85,11 +90,21 @@ esistono solo come echi.
      Se lo scoprono da soli, **è la scena della serata** — non rubargliela
      anticipandola.
 5. **Il Rituale dello Smeraldo** (master §9, 3 fasi): la scelta-costo di
-   Thorik (Fase 1), i 3 round di sinergia a ritmo battuto sul tavolo
-   (Fase 2 — parte `Musica/LaCanzoneDellePietre.mp3`), l'incastonatura e
-   **l'emersione di Durik** (Fase 3). Regia dell'asimmetria: Thorik NON sa
-   che la presenza verde è Hella; la giocatrice di Hella riceve solo il suo
-   echo (handout VI).
+   Thorik (Fase 1), i **3 round di sinergia** (Fase 2 — parte
+   `Musica/LaCanzoneDellePietre.mp3`), l'incastonatura e **l'emersione di
+   Durik** (Fase 3).
+   - 🎬 **Usa «FASE 2 — LA REGIA DEI TRE ROUND»** (master, subito dopo le
+     meccaniche): ha **il testo da leggere per ogni battuta** — apertura di
+     round, un box per PG, una riga di esito per riuscita e per fallimento,
+     chiusura di round. Senza quelle descrizioni i giocatori tirano al buio
+     e la scena si spegne.
+   - ⚙️ **Ordine dei tiri (importante)**: il giro va in **quattro battute** —
+     Thorik *dichiara* la presa (nessun tiro) → **Tordek tira** (se riesce,
+     la CD di Thorik scende di 10) → **Thorik tira** con la CD risultante →
+     **Artemis tira**. Così il bonus del ritmo esiste *prima* di servire.
+   - Regia dell'asimmetria: al round 2 Thorik sente la presenza verde
+     alleggerirgli le spalle e **NON sa** che è Hella; la giocatrice di
+     Hella ha lo stesso momento dal suo lato (handout ✉ Echi, secondo eco).
 6. **Epilogo**: «La Forgia Ricorda» (§10 — i pannelli nuovi si SCOPRONO al
    ritorno in Sala, master #2), Echo Ledger (§11), PX e tesoro (§11-bis),
    countdown aggiornato (§12).
@@ -98,7 +113,10 @@ esistono solo come echi.
 
 - **Quick-Reference §0-bis** (una pagina: tutte le CD, soglie pf, il giro
   di Terros, supporto PF1e zero-G).
-- **MAPPA T-6** (camera dell'Altare) — e T-5 come ricordo dell'Anticamera.
+- **MAPPA T-6** (camera dell'Altare — ritrae lo stato **dal round 2**, ad
+  Altare già centrato) — e T-5 come ricordo dell'Anticamera.
+- I **read-aloud della serata**: §8a «i sei secondi della soglia», §8b «il
+  distacco», e le tre pagine di **«FASE 2 — la regia dei tre round»** (§9).
 - Statblock di **Terros** (§8); handout §13 (Iscrizione, carta «Corona
   2/3» per fine serata, Benedizioni).
 - Le **4 pagine hint/echi** di questo booklet (capitoli III–VI).

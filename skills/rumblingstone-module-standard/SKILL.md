@@ -46,14 +46,22 @@ numerici, read-aloud, ambienti dinamici, hook. Ciò che si scarta va motivato.
    (non copia-incolla), callout meccanici del terreno stile RHoD,
    "cosa succede qui". + **Ambiente dinamico** (elementi che agiscono da
    soli: crolli, polveri, hazard innescabili) + **Eventi di viaggio (d6)**.
+   ⚠️ **Occhio da avventuriero, non da architetto** (ADR-0014): il
+   read-aloud descrive ciò che si coglie in **un'occhiata di sei secondi**
+   — paragoni con cose già viste (una piazza di mercato, la sala di una
+   locanda), non metrature. Le misure esistono, ma vivono in un blocco
+   **«Dati per il DM (non da leggere)»** o sulla mappa.
 7. **Incontri**: sempre ≥2 vie non combattive (Premium Design), grigi
    (nemici con Want propri, mai malvagità gratuita); statblock 3.5 completi
    (Touch/Flat/BAB/Lotta espliciti); **Tattiche round-per-round stile RHoD**
    scritte dal punto di vista del MOSTRO, agganciate alle coordinate della
    mappa, con **soglie pf/morale**, debolezze caratteriali, e riga
    **Sviluppi**; nota di calibrazione numerica + tabella DPR per i boss.
-8. **Boss**: read-aloud del risveglio/ingresso (pressione fisica: la si
-   sente nei denti, non solo si vede), scenografia con leve tattiche,
+8. **Boss**: **come ci si entra** (porta/soglia/varco: chi la apre, dove
+   sbucano i PG, che gravità c'è appena messo piede dentro — mai lasciare
+   il DM a improvvisare l'ingresso), read-aloud **dei sei secondi** della
+   soglia + read-aloud del risveglio (pressione fisica: la si sente nei
+   denti, non solo si vede), scenografia con leve tattiche,
    coreografia del primo scambio che chiude su un decision point dei
    giocatori, **sidebar "Scalare lo scontro"** (party più forte/più debole/
    composizione diversa/PG abbattuto).
@@ -63,7 +71,14 @@ numerici, read-aloud, ambienti dinamici, hook. Ciò che si scarta va motivato.
    orgoglio/countdown, non la campagna).
 10. **Riti/prove corali**: le sfide chiave coinvolgono la volontà E i poteri
     di TUTTI i PG insieme (ruoli nominati, prove che si aiutano a vicenda,
-    malus corporali, crescendo da giocare a ritmo).
+    malus corporali, crescendo da giocare a ritmo). ⚠️ **Ogni sequenza a
+    battute ha la sua REGIA** (ADR-0014): dopo le meccaniche, una sezione
+    con **apertura di round**, **un micro-box per attore nell'ordine di
+    gioco**, **una riga di esito per riuscita e una per fallimento**, e
+    **chiusura di round** che mostra cosa è cambiato. Va dichiarato anche
+    **l'ordine di risoluzione dei tiri** quando un PG modifica la CD di un
+    altro (il bonus deve esistere *prima* di servire). Vale per riti,
+    scontri a fasi, skill challenge, hazard a round.
 11. **Conseguenze**: pannelli/echi nel mondo ("La Forgia Ricorda" o
     equivalente) + **Echo Ledger** del beat (evento → eco → quando riemerge
     → file che lo gestisce).

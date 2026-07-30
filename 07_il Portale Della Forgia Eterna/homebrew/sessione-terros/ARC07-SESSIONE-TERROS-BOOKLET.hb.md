@@ -203,11 +203,19 @@ esistono solo come echi.
    §0-bis, tattiche round-per-round, DPR atteso ~5 round, contingenze
    pronte (parlano con lui / fuga / caduta / TPK-safe: espulsi e segnati,
    mai massacro).
-   - I tre **contro-momenti firmati** sono già suggeriti ai PG nei loro
-     handout, come sussurri degli artefatti: Thorik «Radice a Terra»,
-     Tordek «Frantuma-Scudo», Artemis stalattiti disintegrate in volo.
-     Se i giocatori non li colgono, falli affiorare in gioco (le voci degli
-     artefatti si ripetono — i vecchi fabbri sono pazienti).
+   - I tre **contro-momenti firmati** — Thorik «Radice a Terra», Tordek
+     «Frantuma-Scudo», Artemis stalattiti disintegrate in volo — **NON
+     sono scritti in chiaro negli handout** (ADR-0013 §3-ter: gli hint
+     sono semi, non istruzioni). Nei loro handout i giocatori trovano solo
+     immagini oblique: l'aneddoto di caccia di Aegis Fang (chi entra nella
+     pietra non lo raggiungi: lo *fermi*), il maestro di Tordek che
+     colpiva e **ascoltava** la nota, l'Anello che sfotte la gravità e
+     parla dello «spazio libero» sopra la testa.
+     **Sta a te dosarli in gioco**: se al tavolo nessuno collega, fai
+     ripetere la voce dell'artefatto (i vecchi fabbri sono pazienti),
+     oppure lascia che sia una prova di Conoscenze/Intuizione a suggerire.
+     Se lo scoprono da soli, **è la scena della serata** — non rubargliela
+     anticipandola.
 5. **Il Rituale dello Smeraldo** (master §9, 3 fasi): la scelta-costo di
    Thorik (Fase 1), i 3 round di sinergia a ritmo battuto sul tavolo
    (Fase 2 — parte `Musica/LaCanzoneDellePietre.mp3`), l'incastonatura e
@@ -1900,32 +1908,34 @@ Pagina da consegnare al giocatore indicato, in privato.
 
 # 🛡️ Thorik — Il Peso che Cammina Davanti
 
-> *Per il giocatore di Thorik. Leggi in privato. Niente di ciò che segue è
-> un ordine: sono le cose che il TUO personaggio sente, e che gli altri no.*
+> *Per il giocatore di Thorik. Leggi in privato. Qui non ci sono istruzioni:
+> sono cose che il TUO personaggio sente, ricorda o si porta dentro — e che
+> gli altri non sentono. Cosa farne, se farne qualcosa, è affar tuo.*
 
-## Ciò che è accaduto (e che solo tu porti)
+## Ciò che porti (e che nessuno ti ha chiesto di portare)
 
 Da quando l'affresco della Terra si è aperto, la Corona non è mai stata così
-**presente**. Il Topazio pulsa al ritmo di Aegis Fang, e Aegis Fang non
-canta più: **vibra**, sempre più forte a ogni passo verso il centro del
-Tempio, come un cane da caccia che ha fiutato qualcosa di enorme. Sei tu che
-guidi. Sei sempre tu che guidi, quando la strada scende.
+**presente**. Il Topazio pulsa al ritmo di Aegis Fang, e Aegis Fang non canta
+più: **vibra**, sempre più forte a ogni passo verso il centro del Tempio,
+come un cane da caccia che ha fiutato qualcosa di enorme. Sei tu che guidi.
+Sei sempre tu che guidi, quando la strada scende.
 
-E c'è quell'altra cosa, quella che non racconti a nessuno: nei momenti in
-cui il peso del piano ti piega le spalle, senti una **presenza verde e
-fredda** che te le alleggerisce. Non sai cos'è. Non fa male. È come una mano
-che conosce il tuo passo.
+E c'è quell'altra cosa, quella che non racconti a nessuno: nei momenti in cui
+il peso del piano ti piega le spalle, senti una **presenza verde e fredda**
+che te le alleggerisce. Non sai cos'è. Non fa male. È come una mano che
+conosce il tuo passo.
 
-## I sussurri degli artefatti (ascoltali, stanotte)
+## Cosa mormora l'ascia (a modo suo — non spiega mai)
 
-> **AEGIS FANG (un tump sordo, come un passo):** *«Il guardiano che aspetta
-> è fatto della stessa carne della montagna. Quando fuggirà nella pietra —
-> e fuggirà — non inseguirlo. INCHIODALO. Io so mordere le crepe. Tu sai
-> essere radice. Insieme siamo la cosa che non si sposta.»*
+> **AEGIS FANG**, con quel tono di chi racconta una cosa vecchia:
+> *«Da giovane ho cacciato con un nano che dava la caccia ai mangiatori di
+> pietra. Diceva sempre la stessa cosa, quel testardo: nella roccia loro sono
+> a casa, e tu no. Poi rideva e aggiungeva che l'unica volta che ne aveva
+> preso uno, non era stato lui a raggiungerlo.»* Un tump sordo contro il
+> tuo stivale. *«Non ricordo il resto. Forse non conta.»*
 
-> **LA CORONA (calore sulla fronte):** *«Figlio dello scudo: là dentro c'è
-> una prova che non si vince col braccio. Ti sarà chiesto di PORTARE. Quando
-> arriverà la domanda, ricorda: la Forza non si prende. Si sostiene.»*
+> **LA CORONA**, calore sulla fronte, nessuna parola — solo un'immagine:
+> **due mani sotto un architrave che scende.** Non chi lo regge: le mani.
 
 ## Il peso vecchio (una premonizione, non un'informazione)
 
@@ -1933,12 +1943,6 @@ Qualche volta, negli ultimi giorni, l'odore della pietra bagnata ti riporta
 **quel campo di battaglia che non è ancora accaduto** — le ali nere, il
 fango, il contraccolpo nello spirito. Non è un ricordo: è una **ferita che
 aspetta**. Non c'entra con stanotte. Ma cammina con te, e la Corona lo sa.
-
-## In una riga
-
-Stanotte fai ciò che sai fare meglio: **stare tra il pericolo e gli altri,
-e non muoverti di un passo.** Il resto — il peso, la presenza verde, la
-domanda — verrà da te.
 
 
 \page
@@ -1952,8 +1956,9 @@ Pagina da consegnare al giocatore indicato, in privato.
 
 # ⚒️ Tordek — Incudine e Martello
 
-> *Per il giocatore di Tordek. Leggi in privato. Questa è la tua notte: te
-> la sei guadagnata a pugni nudi contro un guscio di mithral.*
+> *Per il giocatore di Tordek. Leggi in privato. Qui non ci sono istruzioni:
+> sono cose che il TUO personaggio sente, ricorda o si porta dentro. Cosa
+> farne, se farne qualcosa, è affar tuo.*
 
 ## Ciò che è accaduto (fresco come una cicatrice)
 
@@ -1965,19 +1970,19 @@ nascono e muoiono in un battito. E al risveglio, i guanti striati d'argento
 e di smeraldo.
 
 **I Bracieri Gemelli sono COMPLETI: Fuoco e Terra.** *(I nuovi poteri sono
-sulla tua scheda aggiornata — chiedila al DM: RD, il pugno che atterra i
-giganti, il tremore del forgiatore.)* E adesso **parlano**. Non spesso. Con
-la voce di un vecchio fabbro che non spreca fiato.
+sulla tua scheda aggiornata — chiedila al DM.)* E adesso **parlano**. Non
+spesso. Con la voce di un vecchio fabbro che non spreca fiato.
 
 > **I BRACIERI:** *«Incudine e Martello. Ora sei completo.»*
 
-## I consigli del vecchio fabbro (li ripeterà, se serve)
+## Cosa borbottano i guanti (ricordi di bottega, non consigli)
 
-> *«Il fuoco brucia in fretta e muore. La roccia attende. Là sotto c'è
-> roccia che cammina, ragazzo: non vincerai aspettando più di lei. Vincerai
-> col TUONO. Quando il guardiano si chiuderà nel diamante — e si chiuderà —
-> non grattare la corazza: SUONALA. Un colpo solo, pieno, di quelli che
-> fanno cantare il metallo. Il diamante odia le campane.»*
+> *«Il mio primo maestro non si fidava degli occhi. Prendeva il pezzo, lo
+> appoggiava, gli dava un colpo secco e ASCOLTAVA. Diceva che ogni cosa dura
+> ha una nota, e che la nota dice tutto: dov'è sana, dov'è vuota, dove si
+> aprirà. I ragazzi guardavano il metallo. Lui lo sentiva.»* Una pausa da
+> vecchio. *«Il fuoco brucia in fretta e muore. La roccia attende. Tu adesso
+> hai tutti e due nelle mani, e non ti ho ancora sentito ascoltare niente.»*
 
 > *«E ricorda da dove vieni. Questi guanti sono un prestito degli ideali che
 > onori. Il giorno che li tradisci, torneranno freddi.»*
@@ -1992,11 +1997,6 @@ parole**, senza voce, nel nanico antico che si parla solo nei sogni:
 Nessuna spiegazione. Solo la certezza, da nano, che **qualcosa di caro sta
 cercando la strada di casa.**
 
-## In una riga
-
-Sei l'unico che può **spezzare ciò che il guardiano alza per difendersi**.
-Quando succede, non esitare: batti il tuono, e che la montagna ti senta.
-
 
 \page
 
@@ -2009,51 +2009,46 @@ Pagina da consegnare al giocatore indicato, in privato.
 
 # 🔮 Artemis — L'Occhio del Predone
 
-> *Per il giocatore di Artemis. Leggi in privato. E tieni il conto: stanotte
-> i numeri saranno importanti. Tutti i numeri.*
+> *Per il giocatore di Artemis. Leggi in privato. Qui non ci sono istruzioni:
+> sono cose che il TUO personaggio vede, sente o desidera. Cosa farne, se
+> farne qualcosa, è affar tuo.*
 
 ## Ciò che vedi (che gli altri non vedono)
 
 Il Tempio è **pieno**. Vene di mithral nelle pareti come grasso in una
 bistecca. La carcassa della Sentinella, là dietro: piastre lavorate che un
-fabbro pagherebbe a peso d'oro. E l'Anello te le conta tutte, piano, come
-un socio che sfoglia un registro. Finora, in questo piano maledetto e
-pesante, **nessuno ha provato a comprarti**. Nessuna voce, nessuna offerta,
-nessuna tentazione. Per uno con i tuoi occhi è quasi un insulto.
+fabbro pagherebbe a peso d'oro. E l'Anello te le conta tutte, piano, come un
+socio che sfoglia un registro. Gli altri due camminano guardando avanti; tu
+sei l'unico che, ogni tanto, guarda **le pareti**.
 
-*Quasi.*
+Là dentro c'è ricchezza vera — la senti attraverso la pietra come il calore
+da una porta chiusa. Quanto, non lo sai ancora. Ma la tua pancia dice: molta.
 
 ## Il pizzicore
 
-Da quando siete entrati nel Tempio, ogni tanto **l'Anello ti morde il
-dito**. Lo conosci, quel morso: *segreti vicini*. Qualcosa, tra questi
-corridoi d'argento e la camera che vi aspetta, è stato messo lì **per
-qualcuno come te** — qualcosa che nessun occhio senza il tuo Anello potrebbe
-trovare. Non sai ancora cosa. Sai solo che quando lo vedrai, lo riconoscerai
-al primo sguardo. E che dovrai **scegliere in fretta e da solo.**
+Da quando siete entrati nel Tempio, ogni tanto **l'Anello ti morde il dito**.
+Lo conosci, quel morso: *qualcosa di interessante, qui vicino.* Non sai cosa
+né dove. Sai solo che i tuoi occhi — e solo i tuoi — sapranno riconoscerlo
+quando ci finiranno sopra.
 
-## I sussurri dell'Anello (Caos e Luce, mai obbedienza)
+## Cosa borbotta l'Anello (Caos e Luce, mai obbedienza)
 
-> **L'ANELLO:** *«Là sotto dorme una cosa che non vola. TU voli. Ricordalo
-> quando la sala si capovolge: l'aria è tua, e chi è fatto di terra ti
-> odierà per questo.»*
+> **L'ANELLO**, mentre la gravità del corridoio ruota sotto i tuoi stivali:
+> *«Che noia, la terra. Sempre lo stesso discorso: giù, giù, giù. Un solo
+> argomento e nessuna fantasia.»* Una risata sottile. *«Gli piace credere
+> che valga per tutti, alla terra. Con te fa una figura barbina.»*
 
-> *«E quando il soffitto cadrà a pezzi — perché cadrà — non schivare
-> soltanto: ciò che precipita si può SPEZZARE a mezz'aria, prima che tocchi
-> i tuoi compagni. Bella scena, tra l'altro. Molto da bardo.»*
+> *«Ah — e quando qualcosa ti cade addosso, ricordati che tra il soffitto e
+> la tua testa c'è un sacco di spazio libero. Lo spazio è dove succedono le
+> cose belle.»*
 
-## Il bottino (perché tu sia sincero con te stesso)
+## Il tuo mestiere
 
-Là dentro c'è **ricchezza vera** — la senti attraverso la parete come calore
-da una porta chiusa. E c'è una cosa che l'Anello non ti dice ma tu sai già:
-le notti come questa, prima o poi, presentano **un conto**. Quando arriverà,
-saprai quanto vale davvero il tuo bottino… e quanto vali tu.
+Nessuno, in questo piano di pietra e di peso, ha ancora provato a venderti
+niente. Nessuna voce, nessuna offerta, nessuna stretta di mano. Per uno con
+i tuoi occhi è quasi un insulto.
 
-## In una riga
-
-Vola, colpisci da dove nessuno può rispondere, spezza ciò che cade. E quando
-il momento privato arriverà — **e arriverà** — ricorda che i migliori affari
-sono quelli in cui hai letto anche le righe piccole.
+*Quasi.*
 
 
 \page
@@ -2098,7 +2093,8 @@ qualcosa prepara un guscio — con la cura con cui si prepara una culla, o
 un'armatura. E una nota bassa, lontana, di migliaia di voci di cristallo:
 non capisci le parole, ma il senso è inequivocabile.*
 
-**Aspettano la Forza. E poi si torna.**
+*Qualcosa, da qualche parte, sta aspettando. E l'attesa — lo senti nelle
+ossa che non hai più — non è disperata.*
 
 ---
 

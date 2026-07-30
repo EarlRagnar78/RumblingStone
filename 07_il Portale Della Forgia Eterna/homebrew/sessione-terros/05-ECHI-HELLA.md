@@ -31,7 +31,8 @@ qualcosa prepara un guscio — con la cura con cui si prepara una culla, o
 un'armatura. E una nota bassa, lontana, di migliaia di voci di cristallo:
 non capisci le parole, ma il senso è inequivocabile.*
 
-**Aspettano la Forza. E poi si torna.**
+*Qualcosa, da qualche parte, sta aspettando. E l'attesa — lo senti nelle
+ossa che non hai più — non è disperata.*
 
 ---
 

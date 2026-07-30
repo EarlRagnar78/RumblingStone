@@ -71,11 +71,19 @@ esistono solo come echi.
    §0-bis, tattiche round-per-round, DPR atteso ~5 round, contingenze
    pronte (parlano con lui / fuga / caduta / TPK-safe: espulsi e segnati,
    mai massacro).
-   - I tre **contro-momenti firmati** sono già suggeriti ai PG nei loro
-     handout, come sussurri degli artefatti: Thorik «Radice a Terra»,
-     Tordek «Frantuma-Scudo», Artemis stalattiti disintegrate in volo.
-     Se i giocatori non li colgono, falli affiorare in gioco (le voci degli
-     artefatti si ripetono — i vecchi fabbri sono pazienti).
+   - I tre **contro-momenti firmati** — Thorik «Radice a Terra», Tordek
+     «Frantuma-Scudo», Artemis stalattiti disintegrate in volo — **NON
+     sono scritti in chiaro negli handout** (ADR-0013 §3-ter: gli hint
+     sono semi, non istruzioni). Nei loro handout i giocatori trovano solo
+     immagini oblique: l'aneddoto di caccia di Aegis Fang (chi entra nella
+     pietra non lo raggiungi: lo *fermi*), il maestro di Tordek che
+     colpiva e **ascoltava** la nota, l'Anello che sfotte la gravità e
+     parla dello «spazio libero» sopra la testa.
+     **Sta a te dosarli in gioco**: se al tavolo nessuno collega, fai
+     ripetere la voce dell'artefatto (i vecchi fabbri sono pazienti),
+     oppure lascia che sia una prova di Conoscenze/Intuizione a suggerire.
+     Se lo scoprono da soli, **è la scena della serata** — non rubargliela
+     anticipandola.
 5. **Il Rituale dello Smeraldo** (master §9, 3 fasi): la scelta-costo di
    Thorik (Fase 1), i 3 round di sinergia a ritmo battuto sul tavolo
    (Fase 2 — parte `Musica/LaCanzoneDellePietre.mp3`), l'incastonatura e

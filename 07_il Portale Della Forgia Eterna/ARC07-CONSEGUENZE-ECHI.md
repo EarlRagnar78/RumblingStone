@@ -8,6 +8,15 @@
 > entrambi gli archi. Collocazione dell'uovo (§3) **approvata dal DM
 > 2026-07-03**; le varianti di tono del Rubino (§2) sono colore RP a
 > discrezione del DM.
+>
+> 🔗 **Rapporto con l'Echo Ledger (post-consolidamento 2026-07-23).** L'**Echo
+> Ledger** in `ARC07-DEF-5-RITORNO-HAMMERFIST.md §7` è la **checklist operativa
+> di chiusura d'arco** (una riga per filo armato: carry-over B4, Debito della
+> Radice, Ghostlord, Vatore/Sal, Varis, Doni mancati, Cronaca Vivente — «stato
+> in uscita → dove paga»). **Questo file è il riferimento DETTAGLIATO** che il
+> Ledger riassume: qui vivono le **varianti di tono del Rubino** (§2), l'**Uovo
+> di Fauci → ARC-10** (§3) e **Thorgrim → Cerimonia 100 Asce**, che il Ledger
+> non ripete. Nessuna duplicazione: il Ledger elenca, questo file spiega.
 
 ---
 

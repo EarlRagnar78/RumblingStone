@@ -29,6 +29,7 @@ import re
 import hashlib
 import sys
 import json
+import argparse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -276,12 +277,33 @@ def to_yaml(records):
             lines.append(f"    notes: {json.dumps(r['notes'], ensure_ascii=False)}")
     return "\n".join(lines) + "\n"
 
-def main():
+def main(argv=None) -> int:
+    ap = argparse.ArgumentParser(
+        description="Indicizza gli statblocchi del repo in scripts/monster_catalog.yaml.",
+        formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--check", action="store_true",
+                    help="dry-run: confronta col catalogo esistente, non scrive "
+                         "(exit 1 se disallineato)")
+    ap.add_argument("-o", "--output", type=Path, default=OUT,
+                    help=f"percorso del catalogo (default: {OUT.name})")
+    args = ap.parse_args(argv)
+
     print(f"[catalog] Scanning {ROOT} ...", file=sys.stderr)
     records = scan_directory(ROOT)
     print(f"[catalog] Found {len(records)} monster records.", file=sys.stderr)
-    OUT.write_text(to_yaml(records), encoding='utf-8')
-    print(f"[catalog] Wrote {OUT}", file=sys.stderr)
+    rendered = to_yaml(records)
+
+    if args.check:
+        current = args.output.read_text(encoding='utf-8') if args.output.exists() else None
+        if current == rendered:
+            print(f"[catalog] ✓ {args.output.name} in sync ({len(records)} record)")
+            return 0
+        print(f"[catalog] ✗ {args.output.name} disallineato — esegui senza --check "
+              f"per rigenerare", file=sys.stderr)
+        return 1
+
+    args.output.write_text(rendered, encoding='utf-8')
+    print(f"[catalog] Wrote {args.output}", file=sys.stderr)
     if not CUSTOM.exists():
         CUSTOM.write_text(
             "# monster_catalog.custom.yaml — user-edited append-only list.\n"
@@ -289,6 +311,7 @@ def main():
             "# suggest_encounter.py. Not overwritten by build_monster_catalog.py.\n"
             "monsters: []\n", encoding='utf-8')
         print(f"[catalog] Created empty {CUSTOM}", file=sys.stderr)
+    return 0
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

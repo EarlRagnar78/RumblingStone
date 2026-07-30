@@ -4,6 +4,11 @@
 It is heavily based on *Red Hand of Doom* (Jacobs & Wyatt, 2006) and adapted from the Elsir Vale to the Dalelands region.
 This repository contains session logs, NPC data, encounters, lore, and custom mechanics tailored for an adult gaming group (emphasizing "Premium Design" and "Shine Time" mechanics).
 
+> 📚 **Documentation index**: start at [`docs/INDEX.md`](docs/INDEX.md) — the
+> categorized entry point to every doc (tools & scripts, guides, ADRs, plans,
+> skills). The tool registry ([`docs/tools/`](docs/tools/)) is machine-readable
+> and generated from [`scripts/tools.manifest.json`](scripts/tools.manifest.json).
+
 ## Campaign Arcs (Directory Structure)
 
 The campaign is organized into chronological and locational arcs:
@@ -97,7 +102,8 @@ Indice unico dei documenti "di sviluppo" del repo (roadmap, script, container):
 |---|---|
 | **Roadmap / cosa manca / cosa migliorare** (stato piani, %, gate, prossimi passaggi) | [`plans/INDEX.md`](plans/INDEX.md) — con [`plans/CHANGELOG.md`](plans/CHANGELOG.md) per la storia lotto-per-lotto |
 | **Script DM: cosa fanno, quali parametri, cosa producono** (tool map completa + `dm.py`) | [`scripts/README-automation.md`](scripts/README-automation.md) |
-| **Container in locale** (Homebrewery self-hosted, nativo o Docker chiavi-in-mano) | [`scripts/homebrew-local/README.md`](scripts/homebrew-local/README.md) |
+| **Generare booklet e PDF per la sessione** (guida completa: manifest, HTML, Homebrewery, PDF A4 per giocatori/DM, prerequisiti, troubleshooting) | [`docs/guides/GUIDA-BOOKLET-E-PDF.md`](docs/guides/GUIDA-BOOKLET-E-PDF.md) |
+| **Container in locale** (Homebrewery self-hosted, nativo o Docker chiavi-in-mano; container PDF opzionale) | [`scripts/homebrew-local/README.md`](scripts/homebrew-local/README.md) · [`scripts/booklet-container/README.md`](scripts/booklet-container/README.md) |
 | **Perché delle scelte strutturali** (decisioni architetturali) | [`plans/adr/`](plans/adr/) — incl. ADR-0004 (container) e ADR-0005 (confini IP) |
 | **Disciplina di tracciatura** (regola d'oro: chiudo un lotto → aggiorno checklist + INDEX + CHANGELOG) | skill [`skills/rumblingstone-plans/`](skills/rumblingstone-plans/SKILL.md) |
 

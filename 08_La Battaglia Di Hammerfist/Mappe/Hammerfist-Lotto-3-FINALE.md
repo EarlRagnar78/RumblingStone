@@ -158,7 +158,8 @@ SUD ↓ (Cancello Distrutto, Nemici Entrano)
 
 ## MAPPA 3Z: INCROCIO SILENZIOSO (Ambush Underground)
 **Dimensioni:** 50m × 50m (33×33 quadrati, 1.5m/quadrato)  
-**Incontro:** Ambush - 8 Bugbear Assassins + 7 Hobgoblin
+**Incontro:** Ambush - 8 Bugbear Assassins + 7 Hobgoblin  
+**Guida narrativa:** `../ARC08-01-GUIDA-DM.md` → Incontro 2F "L'Incrocio Silenzioso" (read-aloud, sequenza round-per-round, esiti)
 
 ### LEGENDA COLORI:
 - ⬛ = Caverna dark stone

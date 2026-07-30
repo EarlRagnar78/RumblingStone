@@ -941,6 +941,8 @@ MAPPA 5.
 ### MAPPA 3Z: INCROCIO SILENZIOSO
 **Immagine:** [158] `hammerfist-3z.png`
 
+**Guida narrativa:** `../ARC08-01-GUIDA-DM.md` → Incontro 2F "L'Incrocio Silenzioso"
+
 **Tipo:** Ambush encounter  
 **Scala:** 1 quadrato = 2 metri  
   ⚠️ **[A4: deviazione dalla convenzione repo 1,5m/quadretto]** griglia ASCII originale disegnata a questa scala; non ridisegnata per evitare di alterare posizioni/distanze già usate nel testo (soffio, portate, velocità). DM: non mischiare quadretti di mappe a scale diverse nella stessa sessione.

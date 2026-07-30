@@ -157,7 +157,7 @@ Giorno 42  Assedio, Riti & Avatar, Mythal & finale (Phase 1-4).
 > naturali: il **rito druidico di Saraah** (Giorno 25) e il **Cerchio del
 > Sacred Forest** (P1). Se il rituale non è stato giocato o i doni sono stati
 > concessi, questo hook **non esiste** (Collana già completa). Fonte:
-> `07_il Portale Della Forgia Eterna/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`
+> `07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`
 > §2-BIS «Il ramo del rifiuto» → *Tabella echi*, riga «Rifiuto totale».
 
 ---
@@ -341,6 +341,6 @@ Sintesi rapida per i 4 PG:
 - **Palio di Channathgate (P2D) arc:** HUB in `Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md` (opzionale, parallelo al Torneo, Day 27-36; il Drappellone = Matrice del Mythal alimenta la Fase 4; muove il voto del Consiglio di Rethmar)
 - **Torre Invisibile (P2A) arc:** `Arco-Post-Hammerfist-P2A-Torre-PARTE*.md`
 - **Ghostlord arc files:** `Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-TESTO.md`
-- **Ramo del rifiuto P3B (echi del rituale Hella → slot-dono Collana):** `07_il Portale Della Forgia Eterna/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` §2-BIS
+- **Ramo del rifiuto P3B (echi del rituale Hella → slot-dono Collana):** `07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` §2-BIS
 - **Sinergie future Collana (F1-F4, `[PROPOSTA]`):** `PG/Artefatti/SINERGIE-ARTEFATTI-MASTER.md`
 - **Stato campagna:** `campaign/state.md`

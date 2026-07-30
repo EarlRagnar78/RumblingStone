@@ -1,0 +1,14 @@
+{
+  "brand": "RUMBLING STONE · ARC-07 · IL PORTALE DELLA FORGIA ETERNA",
+  "title": "L'Ultima Porta",
+  "subtitle": "Il Tempio trattiene il fiato · sessione di lunedì",
+  "banner": "TEASER GIOCATORI",
+  "meta": "Per i Custodi Eterni — Thorik, Tordek, Artemis (e per chi ascolta dal buio verde) · Valle di Channath, Flamerule 1372 DR · nessuno spoiler: solo ciò che avete vissuto, e un assaggio di ciò che vi aspetta",
+  "header": "Ripasso lampo dell'ultima sessione + l'invito per lunedì. Da inviare ai giocatori così com'è: non contiene materiale del DM.",
+  "footer": "L'Ultima Porta · Teaser",
+  "cover_image": "../../Immagini/Piano Terra - Caverne Cristallo con Geodi Giganti (Parte 4).webp",
+  "out": "ARC07-TEASER-GIOCATORI.html",
+  "chapters": [
+    {"title": "✉ Il cammino fin qui & L'Ultima Porta", "file": "06-TEASER-GIOCATORI.md", "tag": "player"}
+  ]
+}

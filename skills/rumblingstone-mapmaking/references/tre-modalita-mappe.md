@@ -131,6 +131,41 @@ Coordinate: `[x, y]` con **x = colonna** (0-based, sinistra→destra) e
 **y = riga** (0-based, alto→basso). Simboli ammessi: solo quelli della legenda
 universale (`SYMBOLS` in `render_map_svg.py`) — il validatore rifiuta il resto.
 
+### Authoring in METRI (proporzioni esatte, contro il drift dimensionale)
+
+Il contratto è in **quadretti interi**, ma spesso si ragiona in **metri reali**
+("un corridoio di 9 m", "una sala 45×33 m"). Convertire a mano dividendo per
+1,5 è *dove nascono le proporzioni sbagliate* — non il drift riga-per-riga
+dell'ASCII, ma un **dimensionamento errato alla sorgente** (stanza troppo
+larga/stretta rispetto al vero). Per eliminarlo, dichiara `"units_in": "meters"`
+e scrivi **tutte** le misure in metri: `compile_map_json.py` converte in modo
+deterministico (`round(m / scale)`, con **edge-snapping** sui rect — origine e
+lato lontano agganciati alla griglia indipendentemente) **prima** della
+validazione. Le proporzioni diventano esatte **per aritmetica**, mai a occhio.
+
+```json
+{
+  "title": "Sala del Trono di Terros",
+  "scale_m_per_square": 1.5,
+  "units_in": "meters",                          // <-- tutto in metri
+  "map_size": [45, 33],                          // -> 30 × 22 quadretti
+  "structures": [
+    { "type": "🔥", "center": [22.5, 12], "radius": 3 },   // -> [15,8] r=2
+    { "type": "🚪", "at": [22.5, 30] }                     // -> [15,20] (colonna centrale)
+  ],
+  "units": [
+    { "token": "🔵", "area": { "rect": [15, 6, 15, 4.5] }, "quantity": 4 }  // -> [10,4,10,3]
+  ]
+}
+```
+
+Note d'uso: (a) attento all'**overshoot fencepost** — una sala di 45 m occupa i
+quadretti 0..29, quindi il *muro* del lato lontano sta a 43,5 m (quadretto 29),
+non a 45 m; (b) valori non interi (es. `4.5`) sono ammessi **solo** in modalità
+metri; (c) lo schema JSON resta il contratto in *quadretti*: i file in metri si
+validano con lo script, non con lo schema. Esempio committato:
+`scripts/examples/esempio-misure-in-metri.json`.
+
 ### Overlay professionale: orientamento, movimenti, callout, zone
 
 Perché una mappa "si capisca" servono anche **Nord**, **movimenti** e
@@ -189,3 +224,15 @@ mentre l'ASCII a mano originale aveva ~1 quadretto di drift.
 
 SVG = canone versionato. PNG e UVTT sono **artefatti locali** (gitignorati,
 fuori da `validate_maps.py`): si rigenerano dal master quando servono.
+
+---
+
+## Migrare un ultra-clear esistente (Modalità 3 "al contrario")
+
+Hai già una mappa **ultra-clear** (griglia emoji + tabelle di coordinate)?
+`import_ultraclear.py` ne estrae una **bozza** del contratto JSON **+ un report
+dei conflitti** figura↔tabella (default: la tabella vince). È il percorso di
+migrazione semi-automatica delle mappe esistenti — la bozza va poi rivista
+(`compile_map_json.py --validate-only`) e i conflitti risolti a mano/LLM.
+Dettaglio, exit code e contratto del report per l'editor visuale:
+`references/import-ultraclear.md`.

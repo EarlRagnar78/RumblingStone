@@ -31,6 +31,7 @@ Usage:  python3 scripts/validate_maps.py [--repo-root PATH]
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sys
 from pathlib import Path
@@ -64,14 +65,19 @@ def check_wellformed(svg_path: Path, errors: list[str]) -> None:
         errors.append(f"radice non <svg>: {svg_path} (<{dom.documentElement.tagName}>)")
 
 
-def validate(repo_root: Path) -> int:
+def validate(repo_root: Path, as_json: bool = False) -> int:
     errors: list[str] = []
     total_svg = 0
     total_masters = 0
 
     rendered_dirs = sorted({p.parent for p in repo_root.glob("**/rendered/*.svg")})
     if not rendered_dirs:
-        print("Nessuna directory rendered/ trovata — niente da validare.")
+        if as_json:
+            print(json.dumps({"tool": "validate_maps", "ok": True,
+                              "rendered_dirs": 0, "svg": 0, "errors": []},
+                             indent=2, ensure_ascii=False))
+        else:
+            print("Nessuna directory rendered/ trovata — niente da validare.")
         return 0
 
     for rdir in rendered_dirs:
@@ -123,6 +129,14 @@ def validate(repo_root: Path) -> int:
                 errors.append(f"SVG NON allineato al master (rigenera o non modificare a mano): "
                               f"{rdir / name}")
 
+    if as_json:
+        print(json.dumps({
+            "tool": "validate_maps", "ok": not errors,
+            "rendered_dirs": len(rendered_dirs), "svg": total_svg,
+            "masters": total_masters, "errors": errors,
+        }, indent=2, ensure_ascii=False))
+        return 1 if errors else 0
+
     if errors:
         print(f"❌ validate_maps: {len(errors)} errore/i\n", file=sys.stderr)
         for e in errors:
@@ -139,8 +153,10 @@ def main() -> int:
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
     )
     ap.add_argument("--repo-root", default=".", help="repository root (default: .)")
+    ap.add_argument("--json", action="store_true",
+                    help="emette il report in JSON (opt-in) invece del testo")
     args = ap.parse_args()
-    return validate(Path(args.repo_root).resolve())
+    return validate(Path(args.repo_root).resolve(), as_json=args.json)
 
 
 if __name__ == "__main__":

@@ -22,6 +22,7 @@ Stdlib only, deterministico, idempotente (design rules del toolkit).
 
 from __future__ import annotations
 
+import argparse
 import re
 import sys
 from datetime import date
@@ -116,7 +117,15 @@ def current_march_day(text: str) -> int | None:
     return int(m.group(1)) if m else None
 
 
-def main() -> int:
+def main(argv=None) -> int:
+    ap = argparse.ArgumentParser(
+        description="SOLO DM: dossier di tutte le trame da state.md in veste Homebrewery V3.",
+        formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("-o", "--output", type=Path, default=OUT,
+                    help=f"file di output (default: {OUT.relative_to(REPO)})")
+    args = ap.parse_args(argv)
+    out = args.output
+
     if not STATE.is_file():
         print("[dossier] ✗ campaign/state.md non trovato", file=sys.stderr)
         return 1
@@ -148,8 +157,8 @@ def main() -> int:
         lines.pop()
     lines.append(FOOTER)
 
-    OUT.write_text("\n".join(lines), encoding="utf-8")
-    rel = OUT.relative_to(REPO)
+    out.write_text("\n".join(lines), encoding="utf-8")
+    rel = out.relative_to(REPO) if out.is_absolute() else out
     print(f"[dossier] ✓ {rel} — incollalo in un brew PRIVATO (mai ai giocatori)")
     return 0
 

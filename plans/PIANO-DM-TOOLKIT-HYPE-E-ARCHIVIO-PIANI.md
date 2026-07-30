@@ -351,10 +351,62 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   **2 tavole del DM** (pianta città + panorama Piazza) come master visivi con
   2 handout giocatori. Tavole PNG reali caricate dal DM su main (`ed56aa6`,
   2026-07-17) → gate "PNG da caricare dal DM" **chiuso**.
-- [ ] **K-B3.9** *(in lavorazione — PR #46 aperta)*: tavole ricollocate in
+- [x] **K-B3.9** *(2026-07-17/24, PR #46)*: tavole ricollocate in
   `P2D-Palio-Allegati/immagini/` (posto canonico) e ridimensionate con Pillow
-  (12,2 MB→1,8 MB · 8,8 MB→2,3 MB); da mergiare — poi spuntare qui e in
-  CHANGELOG.
+  (12,2 MB→1,8 MB · 8,8 MB→2,3 MB); conflitto CHANGELOG con main risolto in
+  unione.
+- [x] **K-B9** *(manutenzione, 2026-07-24)*: **stile pergamena A CANONE** —
+  il builder HTML dei booklet (prima solo nello scratchpad della chat, a
+  rischio perdita) è ora `scripts/build_booklet_html.py`: CSS canonico
+  incorporato, manifest JSON per capitoli, SVG inline, raster→data-URI
+  (Pillow opzionale), `dm.py booklet`, descrittore ADR-0012 nel tool
+  manifest. Manifest committati: Palio (`09_.../homebrew/PALIO-BOOKLET.manifest.json`)
+  e sessione Terros — gli artefatti si rigenerano in locale senza Docker.
+- [x] **K-B10** *(2026-07-24)*: **booklet di sessione «Lo Scontro con
+  Terros»** (`07_.../homebrew/sessione-terros/`): regia della serata in
+  ordine di gioco (Seme-Mercato di Varis giocato NEL Tempio per colore —
+  decisione DM; Artemis mai tentato al giardino; Hella solo echi), master
+  ARC07-DEF-1 integrale, **4 handout hint/echi separati per PG**
+  (Thorik/Tordek/Artemis/Hella) + HTML generato col builder K-B9.
+- [x] **K-B11** *(review DM, 2026-07-24)*: **ADR-0013 — standard di
+  generazione dei booklet**: teaser giocatori SEPARATO e spoiler-free
+  («L'Ultima Porta», mai il nome dello scontro — regola per TUTTE le
+  sessioni; «Novanta Secondi» per il Palio), canone giocato annotato nei
+  master (Frequenza+Diapason ottenuti; salita cantata «Super Mario»;
+  **Diapason SPESO sulla Sentinella** → niente stun su Terros, ma il malus
+  round-1 si attiva con la SOLA Frequenza), **switch `--format html|hb|both`**
+  nel builder: stessa fonte manifest → HTML autonomo E/O `.hb.md` V3 per il
+  self-hosted/Docker (entrambe le vie mantenute).
+- [x] **K-B11.3/.4** *(2026-07-24)*: **via PDF A4** (ADR-0013 §5-bis) —
+  CSS di stampa canonico (solo scheda attiva, A4 full-bleed, bottone
+  «🖨 Salva PDF», deep-link `#cN`, mappe ASCII auto-ridotte) +
+  `export_booklet_pdf.py` (Chromium headless) + `dm.py booklet
+  --pdf|--pdf-all`: **TUTTE le schede esportabili** con prefissi
+  `pg-`/`dm-` nei nomi (mai ambiguità su cosa inviare); PDF = artefatti
+  locali gitignored.
+- [x] **K-B11.5** *(2026-07-30)*: **file unico del gruppo** (copertina +
+  «il cammino fin qui» nella stessa scheda → un solo PDF `pg-`, via
+  `cover_tag` in `export_booklet_pdf`; ADR-0013 §2) + rigenerazione della
+  sessione Terros per la data di gioco spostata a «domani» (riferimenti
+  temporali aggiornati in teaser/regia). Deliverable completi: gruppo,
+  hint PG, master DM col solitario di Artemis (§6-bis) in HTML + PDF A4.
+
+- [x] **K-B12** *(review DM, 2026-07-30)*: **regia sensoriale** del master
+  Terros — §6-bis ricollocato (tentazione di Artemis **nel Tempio, dopo la
+  Sentinella**), **§8a-8b** ingresso dalla soglia di mithral con **Altare
+  attraccato che si centra al risveglio** (canone DM) + read-aloud «i sei
+  secondi» e «il distacco», **§9 Fase 2 regia dei tre round** (box per PG,
+  esiti riuscita/fallimento, ordine dei tiri in 4 battute). Regola a canone
+  in **ADR-0014** + copertura skill (module-standard §6/§8/§10,
+  editorial-standards §2).
+
+- [x] **K-B13** *(2026-07-30)*: **guida completa** `docs/guides/GUIDA-BOOKLET-E-PDF.md`
+  (pipeline, prerequisiti per ogni sistema, anatomia del manifest, tutti i
+  comandi, stampa da browser, container, troubleshooting, checklist di
+  consegna) + **container PDF opzionale** `scripts/booklet-container/`
+  (Dockerfile + wrapper docker/podman, per distro immutabili). Cablata da
+  README di root, `docs/INDEX`, README-automation, homebrew-local,
+  Quick-Guide nuovi DM, ADR-0013 e skill automation.
 
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 

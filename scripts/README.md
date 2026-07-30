@@ -1,6 +1,6 @@
 # RumblingStone — Skill Build & Sync Pipeline
 
-> **Disambiguazione**: automazione DM e CLI `dm.py` → `scripts/README-automation.md`; i convertitori di contenuto sono in `Script/` (maiuscolo).
+> **Disambiguazione**: automazione DM e CLI `dm.py` → `scripts/README-automation.md`; i convertitori di contenuto sono in `converters/` (ADR-0011).
 
 ## What This Does
 

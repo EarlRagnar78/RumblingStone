@@ -49,7 +49,7 @@
   esplicitamente Touch/Flat-footed/BAB/Lotta** se si usa la versione avanzata.
 
 ### 2.2 Terros / Golem di Mithral (P4) — POWER-UP VOLUTO (DM 2026-07-03)
-- ⚠️ `Terros.md` era tarato su "Livello 14, 3 PC + Therysol". **Canone
+- ⚠️ `_ARCHIVIO/Terros.md` era tarato su "Livello 14, 3 PC + Therysol". **Canone
   D8/D15**: **3 PG di 13°, NESSUN supporto → APL effettivo 12**. MA il
   **power-up è VOLUTO** (D8: artefatti unici e potentissimi): **tienilo duro**,
   **target CR 15+ ("Hard")** — NON depotenziarlo per far quadrare l'APL.
@@ -60,10 +60,10 @@
 - **Unico nodo da decidere (DM)**: l'**Aura di Pietrificazione** (drenaggio DES
   = *save-or-die* **senza guaritore**, Hella morta nel P4). Il DM sceglie:
   **tenerla letale** (coerente col power-up voluto) oppure renderla **non
-  permanente** (debuff forte ma recuperabile). Dettaglio in `Terros.md` §3/§5.
+  permanente** (debuff forte ma recuperabile). Dettaglio in `_ARCHIVIO/Terros.md` §3/§5.
 
 ### 2.3 Skullcrusher il Nero (P5, duello) — GS 12
-- Statblock giocabile nel `PortaleForgia-P5-FASTPLAY.md`: Drago Nero Adulto
+- Statblock giocabile nel `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md`: Drago Nero Adulto
   potenziato **GS 12**, CA 27 (tocco 8, impreparato 25), **PF 240**, Volare 36
   m (scarsa), morso +26 (2d6+9), soffio acido 12d4 (CD 24 Rifl. ½), Presenza
   Terrificante CD 22. **Verifica**: coerente con un Drago Nero Adulto avanzato;

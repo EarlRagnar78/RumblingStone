@@ -6,10 +6,9 @@ canon** — scripts either generate new files or print suggestions for
 manual review. Respects `AGENTS.md`: we never invent statblocks; we only
 index/compose what exists (or mark `[INFERRED]`).
 
-> **Disambiguazione**: questa cartella `scripts/` (minuscolo) è
-> l'automazione DM. La cartella `Script/` (maiuscolo) contiene invece i
-> convertitori di contenuto (pdf→md, html→md, immagini→webp) — vedi
-> ADR-0002 in `plans/adr/`.
+> **Disambiguazione**: questa cartella `scripts/` è l'automazione DM. I
+> convertitori di contenuto (pdf→md, html→md, immagini→webp) vivono in
+> `converters/` — vedi ADR-0002 e ADR-0011 in `plans/adr/`.
 
 ## One entrypoint: `dm.py`
 
@@ -28,6 +27,12 @@ python3 scripts/dm.py skills build --no-deploy    # rebuild pacchetti skill mult
 python3 scripts/dm.py doctor                      # environment diagnosis
 ```
 
+> 📘 **Vuoi la procedura completa dai master ai PDF in mano ai giocatori?**
+> → [`docs/guides/GUIDA-BOOKLET-E-PDF.md`](../docs/guides/GUIDA-BOOKLET-E-PDF.md)
+> (prerequisiti per ogni sistema, anatomia del manifest, comandi, container
+> opzionali, troubleshooting, checklist di consegna). Qui sotto c'è la
+> **mappa degli strumenti**; là c'è il **come si fa**.
+
 **Sottocomandi `dm.py`** (ognuno inoltra i flag allo script sottostante):
 
 | Sottocomando | Flag | Fa girare | Fase Playbook |
@@ -40,6 +45,7 @@ python3 scripts/dm.py doctor                      # environment diagnosis
 | `handout` | `--tipo T` (obbl.) · `--da <file>` · `--out <file>` | `hype_homebrew --handout` | prep |
 | `hype` | `setup`\|`start`\|`docker`\|`docker-stop` | wrapper `homebrew-local/*.sh` | prep |
 | `dossier` | *(nessuno)* | `dm_dossier` | §4 (solo DM) |
+| `booklet` | `<manifest.json>` (obbl.) · `--out <file>` · `--format html\|hb\|both` · `--pdf` (pagine ✉) · `--pdf-all` (TUTTE le schede, prefissi pg-/dm-) | `build_booklet_html` (+ `export_booklet_pdf`) | prep (booklet pergamena, ADR-0013: HTML autonomo e/o `.hb.md` per il self-hosted/Docker; PDF A4 per scheda) |
 | `skills` | `build`\|`sync` · `--no-deploy` | `build-skills.sh` / `sync-skills.sh` | infra |
 | `doctor` | `--ci` (avvisi non fatali) | diagnosi ambiente | infra |
 
@@ -65,6 +71,7 @@ Gli script Python usano solo stdlib; ognuno con argparse espone anche
 | `import_watabou.py` | Converte un export JSON di Watabou One Page Dungeon in un master griglia-emoji conforme al template | *json_file* · `-o <file.md>` · `--pad N` (default 1) | JSON da watabou.github.io/dungeon.html | nuovo `*.md` con griglia + scheletro companion |
 | `compile_map_json.py` | **Modalità 3**: compila un contratto JSON rigido (schema `scripts/schemas/tactical_map.schema.json`) in un master griglia-emoji. Valida coordinate/simboli/geometria e **rigetta** gli input errati (loop LLM); astrazione per unità/aree occupate (non un token per soldato). Emette le direttive `@` (orientamento `north`, `movements`/rotte, roster numerato, aree etichettate) rese come overlay professionale da `render_map_svg.py` | *spec.json* · `-o <file.md>` · `--validate-only` | JSON prodotto da un LLM (vedi `scripts/examples/`) | nuovo `*.md` griglia + companion (FORZE) + direttive `@` |
 | `export_uvtt.py` | Esporta un master griglia-emoji in file **Universal VTT** (`.uvtt`/`.dd2vtt`): muri (`line_of_sight`), porte (`portals`) e luci per **import nativo Foundry VTT / Roll20** | *file.md* · `-o <dir>` · `--map N` · `--ppg N` (default 100) · `--ext uvtt\|dd2vtt` · `--image <png>` · `--list` | markdown con griglie emoji | `rendered/vtt/*.uvtt` (gitignorato — artefatto locale) |
+| `import_ultraclear.py` | **Modalità 3 "al contrario"**: importa una mappa **ultra-clear** (griglia emoji + tabelle coordinate + posizioni PG) ed emette una **bozza** del contratto JSON **+ report conflitti** figura↔tabella (registro regole R1-R12; default: la tabella vince). Riusa il parser di `render_map_svg` (single source of truth). Il `--json-report` è consumabile da un editor visuale (contratto `scripts/schemas/map_conflicts.schema.json`: `uid`, `observed`/`expected`, `target` JSON-Pointer, `actions`). **Contratto I/O dettagliato**: `scripts/README-import-ultraclear.md` | *input.md* · `-o <file.json>` · `--conflicts <md>` · `--json-report <json>` · `--emit-md <dir>` · `--map N` · `--strict` · `-q\|-v` | markdown `*Ultra-Clear*` con griglia + tabelle | `*.draft.json` + report; exit 0/1/2 (1 = ERROR → human-in-the-loop) |
 | `export_map_png.py` | Rasterizza un SVG renderizzato in PNG hi-res (stampa, VTT, input per la passata ComfyUI "hero map") via Chromium/Chrome locale | *svg* · `-o <file.png>` · `--scale F` (default 2.0) · `--browser <bin>` | `rendered/*.svg` | PNG locale (gitignorato — mai committato) |
 | `validate_maps.py` | Gate CI: coerenza griglie-emoji ↔ SVG renderizzati | `--repo-root <dir>` (default `.`) | markdown `*MAPPE*` + `rendered/*.svg` | exit 0/1 (gira in `.github/workflows/ci.yml`) |
 
@@ -86,6 +93,8 @@ Gli script Python usano solo stdlib; ognuno con argparse espone anche
 | `session_recap.py` | Recap italiano spoiler-safe (tono R.A. Salvatore) | `--last-n N` (default 1) · `--out <file>` · `--pdf` · `--seed N` · `--pg <PG>` (recap personale: + blocchi `## Split` suoi, in `recaps/pg/`) | ultimi N log + righe pubbliche di state.md §0 | `campaign/recaps/recap-YYYY-MM-DD.md` (+ PDF opz.) |
 | `hype_homebrew.py` | Impagina recap o handout in layout Homebrewery V3 | `--recap <file>` (default: l'ultimo) · `--pg <PG>` (veste dell'ultimo recap per-PG → `recaps/homebrew/pg/`) · `--handout TIPO` · `--da <file>` · `--sezione <str>` · `--out <file>` · `--cronologia` | recap/handout + `campaign/templates/homebrew/*.hb.md` | `.hb.md` da incollare su homebrewery.naturalcrit.com |
 | `dm_dossier.py` | ⚠️ **SOLO DM**: fotografia di tutte le trame da state.md (§0-§7) con cornici stile RHoD, banner SOLO DM | *(nessuno)* | `campaign/state.md` | `campaign/DM-DOSSIER.hb.md` |
+| `build_booklet_html.py` | Booklet in stile **«pergamena Homebrewery»** (stile CANONICO, **ADR-0013**): copertina, tab per capitolo, cornici, SVG inline, raster embeddate come data-URI (Pillow opzionale per ricomprimere >600 KB). Doppia via: HTML autonomo e/o sorgente **Homebrewery V3** `.hb.md` per l'editor self-hosted/Docker (`dm.py hype`). CSS di stampa incluso: in stampa resta SOLO la scheda attiva, A4 a piena pergamena (bottone «🖨 Salva PDF», deep-link `#cN`). I markdown restano i master (ADR-0003). Regola player-facing: teaser di sessione SEPARATO e spoiler-free (titolo evocativo, mai il nome dello scontro) | `<manifest.json>` (obbl.) · `--out <file>` · `--format html\|hb\|both` | manifest `*.manifest.json` + i master .md che elenca (es. `07_.../homebrew/sessione-terros/*.manifest.json`, `09_.../homebrew/PALIO-BOOKLET.manifest.json`) | `.html` autonomo (no server/Docker) e/o `.hb.md` V3 |
+| `export_booklet_pdf.py` | **PDF A4 delle schede** di un booklet (ADR-0013 §5-bis): Chromium/Chrome headless sull'HTML già generato, resa identica al browser; default = un PDF per ogni pagina ✉ player (hint/echi/teaser), così ogni giocatore riceve solo la sua | `<manifest.json>` (obbl.) · `--pane cN…` · `--all` · `--list` · `--outdir <dir>` · `--browser <bin>` | manifest + HTML del booklet; binario Chromium/Chrome (PATH, `$BOOKLET_CHROME`, /opt/pw-browsers) | `pdf/NN-<titolo>.pdf` accanto al manifest (gitignored: artefatti locali) |
 
 ### Bestiario / catalogo mostri
 
@@ -113,7 +122,7 @@ Gli script Python usano solo stdlib; ognuno con argparse espone anche
 | `new-campaign-group.sh` | Reset branch-per-gruppo: nuovo branch di campagna con stato azzerato dai template | *new-group-name* · `--backup-current <current-group-name>` | template `campaign/templates/` | nuovo branch `campaign-group-<nome>` |
 | `dmcore/` (libreria) | Logica condivisa dei flussi ADR-0007: `regions` (marker `auto:` con contratto "fuori byte-identici"), `gitio` (guardia branch, commit), `config` (group.yaml), `visibility` (policy per-PG dei blocchi `## Split`) | *(non è un CLI — la importano gli script sopra)* | — | — |
 | `tests/` | Suite unittest dei flussi ADR-0007 (regioni, apply, guardia, next) su repo git temporanei | `python3 -m unittest discover -s scripts/tests` | fixture in-memory | verde/rosso (gira anche in CI) |
-| `check_plans_discipline.py` | Gate della regola d'oro dei piani (ADR-0009): modifiche strutturali (`scripts/`, `skills/`, `Script/`, `.github/`, `plans/adr/`) senza riga in `plans/CHANGELOG.md` → exit 1; promemoria ADR (warning) su nuova skill/nuovo script/workflow CI toccati senza `plans/adr/`. Gira in CI (solo PR) e come hook `pre-push` | `--base <ref>` (default `origin/main`) · `--head <ref>` · `--repo-root <dir>` | diff git base…head | exit 0/1 + report |
+| `check_plans_discipline.py` | Gate della regola d'oro dei piani (ADR-0009): modifiche strutturali (`scripts/`, `skills/`, `converters/`, `.github/`, `plans/adr/`) senza riga in `plans/CHANGELOG.md` → exit 1; promemoria ADR (warning) su nuova skill/nuovo script/workflow CI toccati senza `plans/adr/`. Gira in CI (solo PR) e come hook `pre-push` | `--base <ref>` (default `origin/main`) · `--head <ref>` · `--repo-root <dir>` | diff git base…head | exit 0/1 + report |
 | `install-git-hooks.sh` | Installa gli hook git locali: `post-merge` (resync mirror skill dopo `git pull`) e `pre-push` (gate ADR-0009) | *(nessuno)* | — | hook in `.git/hooks/` |
 
 ## Typical DM workflow

@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "title": "Sala del Trono di Terros (misure in metri)",
+  "scale_m_per_square": 1.5,
+  "units_in": "meters",
+  "map_size": [45, 33],
+  "base_terrain": "⬛",
+  "north": "N",
+  "regions": [
+    { "terrain": "🟫", "rect": [0, 0, 45, 33], "label": "Pavimento in pietra" }
+  ],
+  "structures": [
+    { "type": "🚪", "at": [22.5, 30], "label": "Portale di mithral (ingresso sud)" },
+    { "type": "🔥", "center": [22.5, 12], "radius": 3, "label": "Braciere della Forgia" }
+  ],
+  "hazards": [
+    { "type": "💀", "rect": [9, 24, 27, 3], "label": "Lastroni a pressione",
+      "effect": "Cercare CD 20; al passaggio, dardi 3d6 taglienti (Riflessi CD 18 dimezza)" }
+  ],
+  "units": [
+    { "faction": "Custodi", "name": "Sentinelle di adamantio", "token": "🔵",
+      "area": { "rect": [15, 6, 15, 4.5] }, "quantity": 4, "cr": "GS 8" }
+  ],
+  "notes": [
+    "La sala e' 45x33 m reali: a 1,5 m/quadretto diventa 30x22 quadretti. Le misure",
+    "in metri sono convertite da compile_map_json.py (round(m/1,5), edge-snapping",
+    "sui rect) — nessuna stima a occhio, nessun drift. Il portale a x=22,5 m cade",
+    "esattamente sulla colonna centrale (quadretto 15)."
+  ]
+}

@@ -29,3 +29,8 @@ Gli script restano dove sono e restano invocabili singolarmente.
   (checklist: aggiungere il sottocomando o documentare perché no).
 - L'eventuale fusione `Script/`+`scripts/` resta possibile in futuro con
   un ADR dedicato — non è preclusa, solo rinviata.
+
+> **Aggiornamento (2026-07-24, [ADR-0011](ADR-0011-de-collisione-scripts-converters.md))**:
+> la de-collisione rinviata è stata eseguita — `Script/` è stato rinominato
+> in `converters/`. La nota di disambiguazione nei README resta, aggiornata
+> al nuovo nome.

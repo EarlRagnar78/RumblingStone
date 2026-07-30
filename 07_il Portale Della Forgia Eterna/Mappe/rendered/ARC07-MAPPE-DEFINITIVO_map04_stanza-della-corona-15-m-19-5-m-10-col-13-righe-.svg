@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="764" viewBox="0 0 480 764" font-family="Georgia, 'Palatino Linotype', 'Times New Roman', serif">
+<defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="11" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0.36 0 0 0 0 0.28 0 0 0 0 0.16 0 0 0 0.18 0"/><feComposite operator="over" in2="SourceGraphic"/></filter>
+<filter id="rough" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.6"/></filter>
+<filter id="softblur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.6"/></filter>
+<filter id="aoblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3.2"/></filter>
+<filter id="mottle" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" seed="4" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0.24 0 0 0 0 0.18 0 0 0 0 0.10 0 0 0 0.5 0"/></filter>
+<radialGradient id="vign" cx="0.5" cy="0.45" r="0.75"><stop offset="0.62" stop-color="#3b2e1e" stop-opacity="0"/><stop offset="1" stop-color="#3b2e1e" stop-opacity="0.16"/></radialGradient>
+<clipPath id="clipgrid"><rect x="46" y="80" width="280" height="364"/></clipPath>
+<clipPath id="clipheavy"><path d="M46 95.19L49.81 85.99L51.99 83.81L61.19 80L310.81 80L320.01 83.81L322.19 85.99L326 95.19L326 428.81L322.19 438.01L320.01 440.19L310.81 444L61.19 444L51.99 440.19L49.81 438.01L46 428.81Z" clip-rule="evenodd"/></clipPath>
+<pattern id="t_struct" width="28" height="28" patternUnits="userSpaceOnUse"><rect width="28" height="28" fill="#6b5b47"/><path d="M-2 6l8-8M-2 14l16-16M-2 22l24-24M6 30l24-24M14 30l16-16M22 30l8-8" stroke="#5a4b39" stroke-width="0.9"/><path d="M0 14.5h28" stroke="#7d6c56" stroke-width="0.8"/></pattern>
+<symbol id="pr_crown" viewBox="0 0 28 28"><path d="M6 19v-9l4 3.4L14 7l4 6.4 4-3.4v9z" fill="#e8b73a" stroke="#7e5b14" stroke-width="1.1"/><rect x="6" y="19" width="16" height="3" fill="#d3a127" stroke="#7e5b14" stroke-width="1"/><circle cx="10" cy="20.5" r="0.9" fill="#a33434"/><circle cx="14" cy="20.5" r="0.9" fill="#3d6a9e"/><circle cx="18" cy="20.5" r="0.9" fill="#a33434"/></symbol>
+<symbol id="pr_door" viewBox="0 0 28 28"><rect x="5" y="9.5" width="18" height="9" rx="1.4" fill="#8a6032" stroke="#2f2415" stroke-width="1.2"/><path d="M9.5 9.5v9M14 9.5v9M18.5 9.5v9" stroke="#6e4b26" stroke-width="1"/><circle cx="7.2" cy="14" r="0.9" fill="#2f2415"/><circle cx="20.8" cy="14" r="0.9" fill="#2f2415"/></symbol>
+<symbol id="pr_mural" viewBox="0 0 28 28"><rect x="5" y="7" width="18" height="14" fill="#c9a13b" stroke="#2f2415" stroke-width="1.1"/><rect x="7.2" y="9.2" width="13.6" height="9.6" fill="#ded5c0"/><path d="M8.5 16.5l3-3.5 2.5 2.5 3-4 3.5 5" stroke="#8a7350" stroke-width="1" fill="none"/><circle cx="17.5" cy="11.5" r="1.2" fill="#d3a127"/></symbol>
+<symbol id="pr_portal" viewBox="0 0 28 28"><circle cx="14" cy="14" r="9.6" fill="#79aec7" opacity="0.35"/><path d="M14 4.4A9.6 9.6 0 1 1 4.4 14 7.4 7.4 0 1 0 11.8 6.6 5.2 5.2 0 1 1 6.6 11.8" fill="none" stroke="#2e6a8a" stroke-width="1.8" stroke-linecap="round"/></symbol>
+<symbol id="pr_rocks" viewBox="0 0 28 28"><path d="M5 16l3-5.5 5.5-1.5 3.5 4-1 5.5-7 2.5z" fill="#9b917f" stroke="#2f2415" stroke-width="1.1"/><path d="M8 10.5l5.5-1.5 1 4.5-6.5 2z" fill="#b0a692"/><path d="M16 19l2-4.5 5-1 2.5 4-3 4.5h-4.5z" fill="#8a8071" stroke="#2f2415" stroke-width="1"/><path d="M18 14.5l5-1 1.5 2.5-5.5 1z" fill="#a29885"/><circle cx="12" cy="21.5" r="1" fill="#6f6552"/><circle cx="20" cy="9" r="1.2" fill="#776b58"/></symbol>
+<symbol id="pr_rocks_b" viewBox="0 0 28 28"><path d="M11 8l5.5 1 2.5 5-2.5 5-6 .5-2.5-5z" fill="#948a77" stroke="#2f2415" stroke-width="1.1"/><path d="M11 8l5.5 1 1 3.5-6 1z" fill="#aca28e"/><path d="M6 18.5l1.5-3.5 4-.5 1.5 3-1.5 3.5h-4z" fill="#8a8071" stroke="#2f2415" stroke-width="1"/><path d="M7.5 15l4-.5 1 2-4.5 1z" fill="#a29885"/><circle cx="19.5" cy="20.5" r="1.6" fill="#8a8071" stroke="#2f2415" stroke-width="0.8"/><circle cx="6.5" cy="9.5" r="1" fill="#776b58"/></symbol>
+<symbol id="pr_statue" viewBox="0 0 28 28"><path d="M14 4l10 10-10 10L4 14z" fill="#8d8577" stroke="#2f2415" stroke-width="1.1"/><circle cx="14" cy="14" r="5.6" fill="#a99f8d" stroke="#6f675c" stroke-width="0.8"/><circle cx="14" cy="12.6" r="2" fill="#6f675c"/><path d="M10.8 16.8q3.2-2.4 6.4 0" stroke="#6f675c" stroke-width="1.6" fill="none"/></symbol>
+</defs>
+<rect width="480" height="764" fill="#efe4c9" filter="url(#grain)"/>
+<rect width="480" height="764" fill="url(#vign)"/>
+<rect x="5" y="5" width="470" height="754" fill="none" stroke="#3b2e1e" stroke-width="0.8" opacity="0.8"/>
+<rect x="9" y="9" width="462" height="746" fill="none" stroke="#3b2e1e" stroke-width="2" opacity="0.85"/>
+<text x="46" y="34" font-size="19" font-weight="bold" fill="#3b2e1e" letter-spacing="0.5">STANZA DELLA CORONA — 15 m × 19,5 m (10 col × 13 righe · 1,5 m/quadretto)</text>
+<text x="46" y="51" font-size="11" font-style="italic" fill="#7a6a50">10×13 quadretti · scala 1,5 m/quadretto</text>
+<rect x="41" y="75" width="290" height="374" fill="#e6d9b8" stroke="#3b2e1e" stroke-width="1.6"/>
+<g clip-path="url(#clipgrid)">
+<path d="M46 95.19L49.81 85.99L51.99 83.81L61.19 80L310.81 80L320.01 83.81L322.19 85.99L326 95.19L326 428.81L322.19 438.01L320.01 440.19L310.81 444L61.19 444L51.99 440.19L49.81 438.01L46 428.81Z" fill="none" stroke="#241c10" stroke-width="9" opacity="0.22" filter="url(#aoblur)"/>
+<path d="M46 95.19L49.81 85.99L51.99 83.81L61.19 80L310.81 80L320.01 83.81L322.19 85.99L326 95.19L326 428.81L322.19 438.01L320.01 440.19L310.81 444L61.19 444L51.99 440.19L49.81 438.01L46 428.81Z" fill="#241c10" fill-rule="evenodd" opacity="0.28" filter="url(#softblur)" transform="translate(2.6,3.4)"/>
+<path d="M46 95.19L49.81 85.99L51.99 83.81L61.19 80L310.81 80L320.01 83.81L322.19 85.99L326 95.19L326 428.81L322.19 438.01L320.01 440.19L310.81 444L61.19 444L51.99 440.19L49.81 438.01L46 428.81Z" fill="url(#t_struct)" fill-rule="evenodd" stroke="url(#t_struct)" stroke-width="2.4" stroke-linejoin="round"/>
+<rect x="46" y="80" width="280" height="364" filter="url(#mottle)" opacity="0.35"/>
+<path d="M46 95.19L49.81 85.99L51.99 83.81L61.19 80L310.81 80L320.01 83.81L322.19 85.99L326 95.19L326 428.81L322.19 438.01L320.01 440.19L310.81 444L61.19 444L51.99 440.19L49.81 438.01L46 428.81Z" fill="none" stroke="#241c10" stroke-width="1.8" opacity="0.9" stroke-linejoin="round" filter="url(#rough)"/>
+</g>
+<path d="M74 80v364M102 80v364M130 80v364M158 80v364M214 80v364M242 80v364M270 80v364M298 80v364M46 108h280M46 136h280M46 164h280M46 192h280M46 248h280M46 276h280M46 304h280M46 332h280M46 388h280M46 416h280M46 444h280" stroke="#2e2313" stroke-width="0.6" opacity="0.3" fill="none"/>
+<path d="M46 80v364M186 80v364M326 80v364M46 80h280M46 220h280M46 360h280" stroke="#2e2313" stroke-width="1.4" opacity="0.48" fill="none"/>
+<g clip-path="url(#clipheavy)"><path d="M74 80v364M102 80v364M130 80v364M158 80v364M214 80v364M242 80v364M270 80v364M298 80v364M46 108h280M46 136h280M46 164h280M46 192h280M46 248h280M46 276h280M46 304h280M46 332h280M46 388h280M46 416h280M46 444h280" stroke="#efe4c9" stroke-width="0.6" opacity="0.16" fill="none"/><path d="M46 80v364M186 80v364M326 80v364M46 80h280M46 220h280M46 360h280" stroke="#efe4c9" stroke-width="1.4" opacity="0.26" fill="none"/></g>
+<ellipse cx="145.0" cy="125.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_door" x="130" y="108" width="28" height="28"/>
+<ellipse cx="173.0" cy="125.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_door" x="158" y="108" width="28" height="28"/>
+<ellipse cx="201.0" cy="125.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_door" x="186" y="108" width="28" height="28"/>
+<ellipse cx="116.0" cy="184.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="116.0" y="184.0" font-size="17" text-anchor="middle">🔲</text>
+<ellipse cx="228.0" cy="184.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="228.0" y="184.0" font-size="17" text-anchor="middle">🔲</text>
+<ellipse cx="61.0" cy="237.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_statue" x="46" y="220" width="28" height="28"/>
+<ellipse cx="116.0" cy="240.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="116.0" y="240.0" font-size="17" text-anchor="middle">🔲</text>
+<ellipse cx="228.0" cy="240.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="228.0" y="240.0" font-size="17" text-anchor="middle">🔲</text>
+<ellipse cx="285.0" cy="237.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_statue" x="270" y="220" width="28" height="28"/>
+<ellipse cx="89.0" cy="265.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_rocks_b" x="74" y="248" width="28" height="28"/>
+<ellipse cx="257.0" cy="265.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_rocks_b" x="242" y="248" width="28" height="28"/>
+<ellipse cx="61.0" cy="293.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_statue" x="46" y="276" width="28" height="28"/>
+<ellipse cx="116.0" cy="296.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="116.0" y="296.0" font-size="17" text-anchor="middle">🔲</text>
+<ellipse cx="228.0" cy="296.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="228.0" y="296.0" font-size="17" text-anchor="middle">🔲</text>
+<ellipse cx="285.0" cy="293.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_statue" x="270" y="276" width="28" height="28"/>
+<ellipse cx="60.0" cy="352.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="60.0" y="352.0" font-size="17" text-anchor="middle">🔲</text>
+<ellipse cx="116.0" cy="352.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="116.0" y="352.0" font-size="17" text-anchor="middle">🔲</text>
+<ellipse cx="256.0" cy="352.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="256.0" y="352.0" font-size="17" text-anchor="middle">🔲</text>
+<ellipse cx="60.0" cy="380.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="60.0" y="380.0" font-size="17" text-anchor="middle">🔲</text>
+<ellipse cx="116.0" cy="380.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="116.0" y="380.0" font-size="17" text-anchor="middle">🔲</text>
+<ellipse cx="172.0" cy="380.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="172.0" y="380.0" font-size="17" text-anchor="middle">✝</text>
+<ellipse cx="256.0" cy="380.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="256.0" y="380.0" font-size="17" text-anchor="middle">🔲</text>
+<ellipse cx="285.0" cy="377.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_rocks" x="270" y="360" width="28" height="28"/>
+<ellipse cx="313.0" cy="377.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_mural" x="298" y="360" width="28" height="28"/>
+<ellipse cx="60.0" cy="408.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="60.0" y="408.0" font-size="17" text-anchor="middle">🔲</text>
+<ellipse cx="116.0" cy="408.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="116.0" y="408.0" font-size="17" text-anchor="middle">🔲</text>
+<ellipse cx="173.0" cy="405.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_crown" x="158" y="388" width="28" height="28"/>
+<ellipse cx="201.0" cy="405.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_crown" x="186" y="388" width="28" height="28"/>
+<ellipse cx="256.0" cy="408.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="256.0" y="408.0" font-size="17" text-anchor="middle">🔲</text>
+<ellipse cx="313.0" cy="405.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_mural" x="298" y="388" width="28" height="28"/>
+<ellipse cx="89.0" cy="433.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_statue" x="74" y="416" width="28" height="28"/>
+<ellipse cx="117.0" cy="433.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_statue" x="102" y="416" width="28" height="28"/>
+<ellipse cx="144.0" cy="436.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="144.0" y="436.0" font-size="17" text-anchor="middle">📜</text>
+<ellipse cx="173.0" cy="433.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_portal" x="158" y="416" width="28" height="28"/>
+<ellipse cx="200.0" cy="436.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
+<text x="200.0" y="436.0" font-size="17" text-anchor="middle">📜</text>
+<ellipse cx="229.0" cy="433.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_statue" x="214" y="416" width="28" height="28"/>
+<ellipse cx="257.0" cy="433.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_statue" x="242" y="416" width="28" height="28"/>
+<text x="60.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">A</text>
+<text x="88.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">B</text>
+<text x="116.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">C</text>
+<text x="144.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">D</text>
+<text x="172.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">E</text>
+<text x="200.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">F</text>
+<text x="228.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">G</text>
+<text x="256.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">H</text>
+<text x="284.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">I</text>
+<text x="312.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">J</text>
+<text x="37" y="97.0" font-size="10" text-anchor="end" fill="#7a6a50">01</text>
+<text x="37" y="125.0" font-size="10" text-anchor="end" fill="#7a6a50">02</text>
+<text x="37" y="153.0" font-size="10" text-anchor="end" fill="#7a6a50">03</text>
+<text x="37" y="181.0" font-size="10" text-anchor="end" fill="#7a6a50">04</text>
+<text x="37" y="209.0" font-size="10" text-anchor="end" fill="#7a6a50">05</text>
+<text x="37" y="237.0" font-size="10" text-anchor="end" fill="#7a6a50">06</text>
+<text x="37" y="265.0" font-size="10" text-anchor="end" fill="#7a6a50">07</text>
+<text x="37" y="293.0" font-size="10" text-anchor="end" fill="#7a6a50">08</text>
+<text x="37" y="321.0" font-size="10" text-anchor="end" fill="#7a6a50">09</text>
+<text x="37" y="349.0" font-size="10" text-anchor="end" fill="#7a6a50">10</text>
+<text x="37" y="377.0" font-size="10" text-anchor="end" fill="#7a6a50">11</text>
+<text x="37" y="405.0" font-size="10" text-anchor="end" fill="#7a6a50">12</text>
+<text x="37" y="433.0" font-size="10" text-anchor="end" fill="#7a6a50">13</text>
+<g transform="translate(304,102) rotate(180)"><circle r="20" fill="#efe4c9" fill-opacity="0.82" stroke="#3b2e1e" stroke-width="1"/><path d="M0 -15L2.4 -2.4L15 0L2.4 2.4L0 15L-2.4 2.4L-15 0L-2.4 -2.4Z" fill="#7a6a50" opacity="0.5"/><path d="M0 -15L3.6 0L0 -3.3L-3.6 0Z" fill="#3b2e1e"/><text x="0" y="-21" font-size="11" font-weight="bold" text-anchor="middle" fill="#3b2e1e">N</text></g>
+<rect x="46" y="463" width="28" height="7" fill="#3b2e1e" stroke="#3b2e1e" stroke-width="1"/>
+<rect x="74" y="463" width="28" height="7" fill="#efe4c9" stroke="#3b2e1e" stroke-width="1"/>
+<rect x="102" y="463" width="28" height="7" fill="#3b2e1e" stroke="#3b2e1e" stroke-width="1"/>
+<rect x="130" y="463" width="28" height="7" fill="#efe4c9" stroke="#3b2e1e" stroke-width="1"/>
+<rect x="158" y="463" width="28" height="7" fill="#3b2e1e" stroke="#3b2e1e" stroke-width="1"/>
+<text x="196" y="471" font-size="11" fill="#3b2e1e">7,5 m (5 quadretti)</text>
+<text x="46" y="500" font-size="12" font-weight="bold" fill="#3b2e1e" letter-spacing="2">LEGENDA</text>
+<path d="M120 496H434" stroke="#7a6a50" stroke-width="0.7" opacity="0.7"/>
+<rect x="46" y="506" width="19" height="15" fill="url(#t_struct)" stroke="#7a6a50" stroke-width="0.7"/>
+<text x="73" y="518" font-size="11" fill="#3b2e1e">⬛ — Struttura (tenda, edificio, dais)</text>
+<use href="#pr_mural" x="46" y="527" width="18" height="18"/>
+<text x="73" y="540" font-size="11" fill="#3b2e1e">🖼 — Affresco / quadro</text>
+<use href="#pr_door" x="46" y="549" width="18" height="18"/>
+<text x="73" y="562" font-size="11" fill="#3b2e1e">🚪 — Porta / ingresso</text>
+<use href="#pr_portal" x="46" y="571" width="18" height="18"/>
+<text x="73" y="584" font-size="11" fill="#3b2e1e">🌀 — Portale / vortice</text>
+<use href="#pr_rocks" x="46" y="593" width="18" height="18"/>
+<text x="73" y="606" font-size="11" fill="#3b2e1e">🪨 — Rocce/macerie (copertura +4 CA, terreno difficile)</text>
+<use href="#pr_statue" x="46" y="615" width="18" height="18"/>
+<text x="73" y="628" font-size="11" fill="#3b2e1e">🗿 — Statua</text>
+<use href="#pr_crown" x="46" y="637" width="18" height="18"/>
+<text x="73" y="650" font-size="11" fill="#3b2e1e">👑 — Trono / Corona</text>
+<text x="46" y="672" font-size="14">✝</text>
+<text x="73" y="672" font-size="11" fill="#3b2e1e">✝ — postazione di Belkram (ARC-06)</text>
+<text x="46" y="694" font-size="14">📜</text>
+<text x="73" y="694" font-size="11" fill="#3b2e1e">📜 — muro dietro il trono = ora PARETE della CRONACA (incisioni-specchio, DEF-2 §6)</text>
+<text x="46" y="716" font-size="14">🔲</text>
+<text x="73" y="716" font-size="11" fill="#3b2e1e">🔲 — colonne parallele (copertura +4 CA, spezzano la linea di vista)</text>
+<text x="46" y="748" font-size="9" font-style="italic" fill="#7a6a50">fonte: ARC07-MAPPE-DEFINITIVO.md · SVG generato da scripts/render_map_svg.py (stile pergamena) — non modificare a mano</text>
+</svg>

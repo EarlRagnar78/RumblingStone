@@ -365,7 +365,7 @@
 Informazioni estratte da:
 - `ARC08-01-GUIDA-DM.md`  
 - `PortaleForgia-FINAL-P6.md` + `P6-CORREZIONE-Arrivo.md`  
-- `PortaleForgia-FINAL-P5.md` (connessione Skullcrusher)  
+- `_ARCHIVIO/PortaleForgia-FINAL-P5.md` (connessione Skullcrusher)  
 
 ---
 

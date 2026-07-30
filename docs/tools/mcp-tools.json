@@ -1,0 +1,1289 @@
+{
+  "generated_by": "scripts/tools_manifest.py",
+  "tools": [
+    {
+      "name": "suggest_encounter",
+      "description": "Genera 3-5 proposte di incontro D&D 3.5 per un EL bersaglio, con calcolo CR combinato, per fazione/alleanza o 'wild'.",
+      "invocation": "python3 scripts/suggest_encounter.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "el": {
+            "type": "integer",
+            "description": "Encounter level bersaglio (obbligatorio salvo i comandi --list-*)."
+          },
+          "env": {
+            "type": "string",
+            "description": "Ambiente (forest, cave, underdark, swamp, ...)."
+          },
+          "factions": {
+            "type": "string",
+            "description": "Lista fazioni separate da virgola."
+          },
+          "alliance": {
+            "type": "string",
+            "description": "Id alleanza canonica."
+          },
+          "inject-npc": {
+            "type": "string",
+            "description": "Nomi PNG (match per sottostringa), separati da virgola."
+          },
+          "wild": {
+            "type": "boolean",
+            "description": "Incontro wild senza loot strutturato."
+          },
+          "seed": {
+            "type": "integer",
+            "description": "Seed per output riproducibile."
+          },
+          "list-all": {
+            "type": "boolean",
+            "description": "Elenca fazioni/ambienti/PNG disponibili."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "2": "errore uso (--el mancante o input non valido)",
+        "3": "nessuna proposta assemblabile",
+        "4": "incontro wild non assemblabile"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "suggest_loot",
+      "description": "Generatore di tesoro standalone (SRD 3.5) per EL/fazione, consuma l'output di suggest_encounter o flag diretti.",
+      "invocation": "python3 scripts/suggest_loot.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "el": {
+            "type": "number",
+            "description": "EL bersaglio (se non si usa --from-encounter)."
+          },
+          "from-encounter": {
+            "type": "string",
+            "description": "File markdown prodotto da suggest_encounter."
+          },
+          "factions": {
+            "type": "string",
+            "description": "Fazioni separate da virgola."
+          },
+          "pcs": {
+            "type": "integer",
+            "description": "Numero di PG."
+          },
+          "wild": {
+            "type": "boolean",
+            "description": "Forza output wild/no-loot."
+          },
+          "seed": {
+            "type": "integer",
+            "description": "Seed riproducibile."
+          },
+          "all-proposals": {
+            "type": "boolean",
+            "description": "Loot per tutte le proposte del file."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "2": "errore uso (--el o --from-encounter mancante / file assente)",
+        "3": "nessuna proposta nel file"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "suggest_map",
+      "description": "Sceglie una griglia tattica ASCII (quadretti da 5 ft) da scripts/map_templates/*.yaml per ambiente/tipo.",
+      "invocation": "python3 scripts/suggest_map.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "env": {
+            "type": "string",
+            "description": "Filtro ambiente."
+          },
+          "type": {
+            "type": "string",
+            "description": "Filtro tipo (ambush, corridor, arena, boss-lair, ...)."
+          },
+          "name": {
+            "type": "string",
+            "description": "Id esatto del template (nome file senza .yaml)."
+          },
+          "list": {
+            "type": "boolean",
+            "description": "Elenca i template disponibili."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "2": "errore uso",
+        "3": "template non trovato per --name",
+        "4": "nessun match per i filtri"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "compile_map_json",
+      "description": "Modalita' 3: compila un contratto JSON rigido in un master griglia-emoji, validando geometria e simboli e rigettando input errati.",
+      "invocation": "python3 scripts/compile_map_json.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "spec": {
+            "type": "string",
+            "description": "File JSON del contratto mappa (o stdin)."
+          },
+          "o": {
+            "type": "string",
+            "description": "Scrivi il master su file (default: stdout)."
+          },
+          "validate-only": {
+            "type": "boolean",
+            "description": "Valida soltanto, non emette il master."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout|file.md"
+      ],
+      "exit_codes": {
+        "0": "ok / valido",
+        "1": "JSON non valido (l'LLM deve correggere)",
+        "2": "errore uso (spec mancante)"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "export_map_png",
+      "description": "Rasterizza un SVG renderizzato in PNG hi-res via Chromium headless (stampa, VTT, input hero-map ComfyUI).",
+      "invocation": "python3 scripts/export_map_png.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "svg": {
+            "type": "string",
+            "description": "SVG generato da render_map_svg."
+          },
+          "o": {
+            "type": "string",
+            "description": "PNG di destinazione."
+          },
+          "scale": {
+            "type": "number",
+            "description": "Fattore di scala."
+          },
+          "browser": {
+            "type": "string",
+            "description": "Binario Chromium/Chrome da usare."
+          }
+        },
+        "required": [
+          "svg"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "rendered/*.png"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "errore (browser assente o conversione fallita)"
+      },
+      "deterministic": false
+    },
+    {
+      "name": "export_uvtt",
+      "description": "Esporta un master griglia-emoji in file Universal VTT (.uvtt/.dd2vtt) con muri, porte e luci per import nativo in Foundry/Roll20.",
+      "invocation": "python3 scripts/export_uvtt.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "string",
+            "description": "Markdown master con griglie emoji."
+          },
+          "o": {
+            "type": "string",
+            "description": "Directory di output (default: rendered/vtt/)."
+          },
+          "map": {
+            "type": "integer",
+            "description": "Esporta solo la mappa N."
+          },
+          "ppg": {
+            "type": "integer",
+            "description": "Pixel per quadretto."
+          },
+          "ext": {
+            "type": "string",
+            "description": "Estensione del file VTT.",
+            "enum": [
+              "uvtt",
+              "dd2vtt",
+              "df2vtt"
+            ]
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "rendered/vtt/*.uvtt"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "errore (nessuna mappa / esportazione fallita)",
+        "2": "errore uso"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "import_ultraclear",
+      "description": "Modalita' 3 'al contrario': da mappa ultra-clear a bozza del contratto JSON + report conflitti figura vs tabella (regole R1-R12).",
+      "invocation": "python3 scripts/import_ultraclear.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "input": {
+            "type": "string",
+            "description": "Master ultra-clear (.md)."
+          },
+          "o": {
+            "type": "string",
+            "description": "Bozza JSON (default: stdout)."
+          },
+          "json-report": {
+            "type": "string",
+            "description": "Report conflitti machine-readable."
+          },
+          "strict": {
+            "type": "boolean",
+            "description": "I WARN diventano fatali."
+          },
+          "map": {
+            "type": "integer",
+            "description": "Quale mappa importare (1-based)."
+          }
+        },
+        "required": [
+          "input"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "*.draft.json",
+        "*.conflicts.json"
+      ],
+      "exit_codes": {
+        "0": "ok (nessun conflitto bloccante)",
+        "1": "conflitti ERROR (human-in-the-loop)",
+        "2": "errore uso"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "import_watabou",
+      "description": "Converte un export JSON di Watabou One Page Dungeon in un master griglia-emoji conforme al template.",
+      "invocation": "python3 scripts/import_watabou.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "json_file": {
+            "type": "string",
+            "description": "Export JSON del One Page Dungeon."
+          },
+          "o": {
+            "type": "string",
+            "description": "File markdown di destinazione."
+          },
+          "pad": {
+            "type": "integer",
+            "description": "Padding di celle attorno al dungeon."
+          }
+        },
+        "required": [
+          "json_file"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "*.md"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "errore (JSON non valido o dungeon troppo grande)"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "render_map_svg",
+      "description": "Renderizza le griglie-emoji dei master mappa in SVG stampa-quality stile 'pergamena', deterministico e senza asset esterni.",
+      "invocation": "python3 scripts/render_map_svg.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "files": {
+            "type": "string",
+            "description": "Uno o piu' file markdown con griglie emoji."
+          },
+          "o": {
+            "type": "string",
+            "description": "Directory di output (default: rendered/ accanto all'input)."
+          },
+          "map": {
+            "type": "integer",
+            "description": "Renderizza solo la mappa N (1-based)."
+          },
+          "list": {
+            "type": "boolean",
+            "description": "Elenca le mappe trovate, non renderizza."
+          },
+          "strict": {
+            "type": "boolean",
+            "description": "Fallisce su anomalie non fatali."
+          }
+        },
+        "required": [
+          "files"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "**/rendered/*.svg"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "errore (nessuna mappa / anomalia in --strict)"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "validate_maps",
+      "description": "Gate CI: coerenza fra le griglie-emoji master e gli SVG renderizzati (i master sono la fonte, gli SVG artefatti).",
+      "invocation": "python3 scripts/validate_maps.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "repo-root": {
+            "type": "string",
+            "description": "Root del repo."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Emette il report in JSON (opt-in)."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "coerente",
+        "1": "violazioni (SVG out-of-sync o malformato)"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "campaign_branch",
+      "description": "Guardia e gestione del branch-per-gruppo campaign-group-<nome>: il canone vivo si scrive solo li' (ADR-0007).",
+      "invocation": "python3 scripts/campaign_branch.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "status|guard|ensure": {
+            "type": "string",
+            "description": "status = diagnosi; guard = exit 1 se il canone non e' scrivibile; ensure = crea/passa al branch.",
+            "enum": [
+              "status",
+              "guard",
+              "ensure"
+            ]
+          },
+          "group": {
+            "type": "string",
+            "description": "(ensure) nome gruppo la prima volta."
+          }
+        },
+        "required": [
+          "status|guard|ensure"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "exit-code"
+      ],
+      "exit_codes": {
+        "0": "ok / canone scrivibile",
+        "1": "canone non scrivibile qui (guard)",
+        "2": "errore uso"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "next_session",
+      "description": "Aggregatore deterministico: brief DM (SOLO DM) + teaser player spoiler-safe per la prossima sessione. Non inventa nulla (AGENTS.md).",
+      "invocation": "python3 scripts/next_session.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "last-n": {
+            "type": "integer",
+            "description": "Quante sessioni recenti considerare."
+          },
+          "hype": {
+            "type": "boolean",
+            "description": "Veste Homebrewery V3."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "campaign/next/brief-*-DM.md",
+        "campaign/next/teaser-*-PLAYERS.md"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "input insufficiente"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "session_wizard",
+      "description": "Wizard di fine sessione: Q&A con default -> session log canonico conforme al template, committato subito (ADR-0007).",
+      "invocation": "python3 scripts/session_wizard.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "answers": {
+            "type": "string",
+            "description": "Risposte da file JSON (non-interattivo, test/CI)."
+          },
+          "out": {
+            "type": "string",
+            "description": "Nome file esplicito sotto sessions/."
+          },
+          "no-commit": {
+            "type": "boolean",
+            "description": "Non committare il file."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "campaign/sessions/YYYY-MM-DD_session-N.md",
+        "git-commit"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "errore (guardia branch / scrittura)",
+        "130": "interrotto dall'utente"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "state_apply",
+      "description": "Applica il sottoinsieme meccanico delle proposte di state_sync SOLO nelle regioni marcate 'auto:' di state.md, con diff e conferma (ADR-0007).",
+      "invocation": "python3 scripts/state_apply.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "migrate": {
+            "type": "boolean",
+            "description": "Inserisce i marker auto: (idempotente)."
+          },
+          "session": {
+            "type": "string",
+            "description": "File sessione (default: l'ultimo)."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Solo diff, nessuna scrittura."
+          },
+          "yes": {
+            "type": "boolean",
+            "description": "Applica senza chiedere conferma."
+          },
+          "commit": {
+            "type": "boolean",
+            "description": "Committa state.md dopo l'applicazione."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "campaign/state.md",
+        "git-commit"
+      ],
+      "exit_codes": {
+        "0": "ok / nessuna modifica",
+        "1": "guardia branch fallita o errore",
+        "2": "input non valido"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "state_sync",
+      "description": "Propone (mai applica) diff a campaign/state.md dai trigger nei session log; report markdown per revisione DM.",
+      "invocation": "python3 scripts/state_sync.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "since": {
+            "type": "string",
+            "description": "Solo sessioni da questa data (YYYY-MM-DD)."
+          },
+          "session": {
+            "type": "string",
+            "description": "Analizza solo questo file sotto sessions/."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "2": "file sessione non trovato"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "update_xp",
+      "description": "Registro XP cumulativo per PG dai blocchi '## XP awarded' dei session log; scrive campaign/pg/xp-ledger.md.",
+      "invocation": "python3 scripts/update_xp.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Dry-run: stampa il diff, non scrive."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "campaign/pg/xp-ledger.md"
+      ],
+      "exit_codes": {
+        "0": "ok"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "build_booklet_html",
+      "description": "Booklet in stile 'pergamena Homebrewery' (stile canonico, ADR-0013) da manifest JSON di capitoli markdown: HTML autonomo (SVG inline, raster data-URI) e/o sorgente Homebrewery V3 .hb.md per il self-hosted/Docker; i .md restano i master (ADR-0003).",
+      "invocation": "python3 scripts/build_booklet_html.py MANIFEST.json",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "manifest": {
+            "type": "string",
+            "description": "Manifest *.manifest.json del booklet (brand/title/chapters, percorsi relativi alla sua cartella)."
+          },
+          "out": {
+            "type": "string",
+            "description": "File HTML di output (default: campo 'out' del manifest o <stem>.html)."
+          },
+          "format": {
+            "type": "string",
+            "description": "html = pagina autonoma; hb = .hb.md Homebrewery V3 (self-hosted/Docker via dm.py hype); both = entrambi (ADR-0013).",
+            "enum": [
+              "html",
+              "hb",
+              "both"
+            ]
+          }
+        },
+        "required": [
+          "manifest"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<manifest dir>/<out>.html",
+        "<manifest dir>/<out>.hb.md"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "2": "manifest non trovato / errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "dm_dossier",
+      "description": "SOLO DM: fotografia di tutte le trame da state.md (sezioni 0-7) in veste Homebrewery V3, contenuto estratto alla lettera.",
+      "invocation": "python3 scripts/dm_dossier.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "o": {
+            "type": "string",
+            "description": "File di output (default: campaign/DM-DOSSIER.hb.md)."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "campaign/DM-DOSSIER.hb.md"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "state.md assente"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "export_booklet_pdf",
+      "description": "PDF A4 delle schede di un booklet pergamena (ADR-0013): un PDF per pagina via Chromium/Chrome headless, resa identica al browser (CSS di stampa canonico). Default: solo pagine player (hint/echi/teaser).",
+      "invocation": "python3 scripts/export_booklet_pdf.py MANIFEST.json",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "manifest": {
+            "type": "string",
+            "description": "Manifest *.manifest.json del booklet (lo stesso di build_booklet_html)."
+          },
+          "pane": {
+            "type": "string",
+            "description": "ID scheda da esportare (es. c2 c3); default: tutte le pagine tag:player."
+          },
+          "all": {
+            "type": "boolean",
+            "description": "Esporta tutte le schede, copertina inclusa."
+          },
+          "list": {
+            "type": "boolean",
+            "description": "Elenca le schede del booklet con i loro ID."
+          },
+          "outdir": {
+            "type": "string",
+            "description": "Cartella di output (default: <manifest dir>/pdf/, gitignored via *.pdf)."
+          },
+          "browser": {
+            "type": "string",
+            "description": "Binario Chromium/Chrome da usare."
+          }
+        },
+        "required": [
+          "manifest"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<manifest dir>/pdf/NN-<titolo>.pdf"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "browser non trovato / export fallito",
+        "2": "uso errato / file mancanti"
+      },
+      "deterministic": false
+    },
+    {
+      "name": "hype_homebrew",
+      "description": "Impagina recap o handout in layout Homebrewery V3, senza mai duplicare il filtro spoiler di session_recap.",
+      "invocation": "python3 scripts/hype_homebrew.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "recap": {
+            "type": "string",
+            "description": "File recap (default: l'ultimo)."
+          },
+          "pg": {
+            "type": "string",
+            "description": "Veste dell'ultimo recap per-PG."
+          },
+          "handout": {
+            "type": "string",
+            "description": "Tipo di handout da impaginare."
+          },
+          "da": {
+            "type": "string",
+            "description": "(handout) file sorgente."
+          },
+          "sezione": {
+            "type": "string",
+            "description": "(handout) sezione da estrarre."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "campaign/recaps/homebrew/*.hb.md"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "sorgente mancante"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "session_recap",
+      "description": "Recap italiano spoiler-safe (tono R.A. Salvatore) dagli ultimi N session log; taglia sempre le note private DM.",
+      "invocation": "python3 scripts/session_recap.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "last-n": {
+            "type": "integer",
+            "description": "Quante sessioni includere."
+          },
+          "out": {
+            "type": "string",
+            "description": "File di output."
+          },
+          "pdf": {
+            "type": "boolean",
+            "description": "Produce anche il PDF."
+          },
+          "seed": {
+            "type": "integer",
+            "description": "Seed riproducibile."
+          },
+          "pg": {
+            "type": "string",
+            "description": "Recap personale per un PG (blocchi ## Split suoi)."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "campaign/recaps/recap-YYYY-MM-DD.md"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "nessun session log"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "build_monster_catalog",
+      "description": "Indicizza ogni statblocco del repo (Bestiario/, archi, STATBLOCCHI) in scripts/monster_catalog.yaml.",
+      "invocation": "python3 scripts/build_monster_catalog.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Dry-run: mostra il diff, non scrive."
+          },
+          "o": {
+            "type": "string",
+            "description": "Percorso del catalogo (default: scripts/monster_catalog.yaml)."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "scripts/monster_catalog.yaml"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "diff presente (con --check)"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "validate_bestiario",
+      "description": "Gate CI della libreria Bestiario/: struttura, naming, header, CR filename-vs-header, catalogo in sync. Con --rules aggiunge warning PF1e non bloccanti.",
+      "invocation": "python3 scripts/validate_bestiario.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "rules": {
+            "type": "boolean",
+            "description": "Controlli di regole (warning non bloccanti)."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Report in JSON (opt-in)."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "struttura ok (i warning --rules non fanno fallire)",
+        "1": "violazioni"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "build_skills",
+      "description": "Costruisce i pacchetti skill per-agente (compact.md/structured.yaml/machine.json) e li deploya in ~/.<agent>/skills/.",
+      "invocation": "./scripts/build-skills.sh",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "no-deploy": {
+            "type": "boolean",
+            "description": "Solo build (per CI)."
+          },
+          "skill": {
+            "type": "string",
+            "description": "Costruisce una sola skill."
+          },
+          "measure": {
+            "type": "boolean",
+            "description": "Report compressione."
+          },
+          "dry-run": {
+            "type": "boolean",
+            "description": "Mostra cosa farebbe."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "build/<skill>/*"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "errore build"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "compress_skills",
+      "description": "Comprime le skill per gli agenti (riduzione token), producendo compact.md/structured.yaml/machine.json.",
+      "invocation": "python3 scripts/compress_skills.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "input": {
+            "type": "string",
+            "description": "File .md o directory."
+          },
+          "output": {
+            "type": "string",
+            "description": "Directory di output."
+          },
+          "measure": {
+            "type": "boolean",
+            "description": "Misura il risparmio di token."
+          }
+        },
+        "required": [
+          "input",
+          "output"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "build/<skill>/formats/*"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "errore"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "index_skills",
+      "description": "Genera index.json per una skill compressa (per retrieval selettivo).",
+      "invocation": "python3 scripts/index_skills.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "input": {
+            "type": "string",
+            "description": "Directory skill originale."
+          },
+          "build": {
+            "type": "string",
+            "description": "Directory di build (output compressi)."
+          },
+          "output": {
+            "type": "string",
+            "description": "Percorso index.json."
+          }
+        },
+        "required": [
+          "input",
+          "build",
+          "output"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "build/<skill>/index.json"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "2": "errore uso"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "measure_tokens",
+      "description": "Misura la dimensione in token delle skill (tiktoken se disponibile, altrimenti chars/4).",
+      "invocation": "python3 scripts/measure_tokens.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "tokenizer": {
+            "type": "string",
+            "description": "Metodo di conteggio.",
+            "enum": [
+              "chars/4",
+              "tiktoken"
+            ]
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Emette JSON invece della tabella."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "ok"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "sync_skills",
+      "description": "Build + popola i mirror in-repo delle skill (.claude/, .cursor/, ...), tutti gitignorati.",
+      "invocation": "./scripts/sync-skills.sh",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "dry-run": {
+            "type": "boolean",
+            "description": "Mostra cosa farebbe."
+          },
+          "no-build": {
+            "type": "boolean",
+            "description": "Salta la build, solo mirror."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        ".claude/skills/*"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "errore"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "validate_skills",
+      "description": "Gate CI skill: SKILL.md valido (frontmatter), link e dati YAML coerenti.",
+      "invocation": "python3 scripts/validate_skills.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "repo-root": {
+            "type": "string",
+            "description": "Root del repo."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Report in JSON (opt-in)."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "errori di validazione",
+        "2": "pyyaml non installato"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "check_plans_discipline",
+      "description": "Gate ADR-0009: modifiche strutturali (scripts/, skills/, converters/, .github/, plans/adr/) senza riga in plans/CHANGELOG.md -> exit 1.",
+      "invocation": "python3 scripts/check_plans_discipline.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "base": {
+            "type": "string",
+            "description": "Ref di confronto."
+          },
+          "head": {
+            "type": "string",
+            "description": "Ref da verificare."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Report in JSON (opt-in)."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "CHANGELOG mancante per modifica strutturale"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "dm",
+      "description": "Entrypoint unico: orchestra tutti gli script per fase del Playbook (prep/post/session/recap/handout/maps/hype/dossier/skills/doctor). ADR-0002.",
+      "invocation": "python3 scripts/dm.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "prep|post|session|recap|handout|maps|hype|dossier|skills|doctor": {
+            "type": "string",
+            "description": "Sottocomando di fase; i flag sono inoltrati allo script sottostante.",
+            "enum": [
+              "prep",
+              "post",
+              "session",
+              "recap",
+              "handout",
+              "maps",
+              "hype",
+              "dossier",
+              "skills",
+              "doctor"
+            ]
+          }
+        },
+        "required": [
+          "prep|post|session|recap|handout|maps|hype|dossier|skills|doctor"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "(dipende dal sottocomando)"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "errore del sottocomando",
+        "2": "errore uso"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "install_git_hooks",
+      "description": "Installa gli hook git locali: post-merge (resync mirror skill) e pre-push (gate ADR-0009).",
+      "invocation": "./scripts/install-git-hooks.sh",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        ".git/hooks/*"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "errore"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "new_campaign_group",
+      "description": "Reset branch-per-gruppo: nuovo branch di campagna con stato azzerato dai template.",
+      "invocation": "./scripts/new-campaign-group.sh",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "new-group-name": {
+            "type": "string",
+            "description": "Nome del nuovo gruppo."
+          },
+          "backup-current": {
+            "type": "string",
+            "description": "Nome del gruppo corrente da salvare."
+          }
+        },
+        "required": [
+          "new-group-name"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "git-commit"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "errore"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "tools_manifest",
+      "description": "Fonte di verita' -> artefatti: valida scripts/tools.manifest.json contro lo schema, verifica la copertura degli script e genera registry.json, README.md e mcp-tools.json.",
+      "invocation": "python3 scripts/tools_manifest.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Gate CI: schema valido + copertura + coerenza flag; nessuna scrittura."
+          },
+          "emit-all": {
+            "type": "boolean",
+            "description": "Rigenera tutti gli artefatti derivati."
+          },
+          "render-md": {
+            "type": "boolean",
+            "description": "Rigenera docs/tools/README.md."
+          },
+          "emit-mcp": {
+            "type": "boolean",
+            "description": "Rigenera docs/tools/mcp-tools.json."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "docs/tools/registry.json",
+        "docs/tools/README.md",
+        "docs/tools/mcp-tools.json"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "manifest non conforme / drift rilevato",
+        "2": "errore uso"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "validate_modules",
+      "description": "Gate CI: verifica i master ARC*-DEF-* contro la checklist della skill rumblingstone-module-standard.",
+      "invocation": "python3 scripts/validate_modules.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "verbose": {
+            "type": "boolean",
+            "description": "Dettaglio per file."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Report in JSON (opt-in)."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "master conformi",
+        "1": "violazioni checklist"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "converters_html_to_markdown",
+      "description": "Convertitore di contenuto HTML -> Markdown. Isolato dal toolkit DM.",
+      "invocation": "(vedi converters/Html_to_markdown/README)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "*.md"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "errore"
+      },
+      "deterministic": false
+    },
+    {
+      "name": "converters_image_to_webp",
+      "description": "Convertitore batch immagini -> WebP con archiviazione degli originali (cwebp). Isolato dal toolkit DM.",
+      "invocation": "converters/Image-to-webp/conver_webp_new.sh",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "*.webp"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "errore"
+      },
+      "deterministic": false
+    },
+    {
+      "name": "converters_pdf_to_md_engine",
+      "description": "Convertitore di contenuto PDF -> Markdown (toolchain esterna). Isolato dal toolkit DM.",
+      "invocation": "(vedi converters/pdf-to-md-engine/README)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "*.md"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "errore"
+      },
+      "deterministic": false
+    }
+  ]
+}

@@ -34,6 +34,7 @@ skills/
 ├── rumblingstone-narrative-style/ # eight-pillar style engine (mandatory for generation)
 ├── rumblingstone-mapmaking/ # battle-map pipeline (3 modes, JSON contract, UVTT)
 ├── rumblingstone-automation/ # dm.py CLI + session-state pipeline (ADR-0007)
+├── rumblingstone-debugging/ # root-cause debugging, SOLO infrastruttura scripts/CI (vendored da obra/superpowers, MIT — ADR-0010)
 ├── rumblingstone-plans/    # plan-archive discipline (INDEX, CHANGELOG, ADRs)
 ├── pathfinder-1e-srd/      # PF1e rules, templates, 3.5<->PF conversion
 ├── npc-villain-boosting/   # when/whether/how to boost PNGs, villains, monsters
@@ -41,7 +42,7 @@ skills/
 
 plans/     # work-plan archive: INDEX.md (status + % + gates), CHANGELOG.md, adr/
 scripts/   # DM automation — single entrypoint: python3 scripts/dm.py
-Script/    # content converters (pdf→md, html→md, img→webp) — NOT the DM automation
+converters/ # content converters (pdf→md, html→md, img→webp) — NOT the DM automation
 ```
 
 Per-agent mirrors (`.claude/skills/`, `.cursor/skills/`, etc.) are
@@ -69,6 +70,7 @@ AI agents that support SKILL.md will discover them automatically:
 - `skills/rumblingstone-mapmaking/` — map generation workflow (Watabou, templates, VTT export)
 - `skills/rumblingstone-automation/` — `dm.py` CLI + session-state pipeline: session end wizard, per-PG recaps, next-session brief, canon writes only under the ADR-0007 triple constraint (group branch + confirmed diff + `auto:` regions)
 - `skills/rumblingstone-plans/` — work-plan archive conventions (INDEX, gates, ADRs)
+- `skills/rumblingstone-debugging/` — systematic root-cause debugging for infrastructure ONLY (scripts/, CI, pytest, renderer, dm.py); vendored from obra/superpowers (MIT), policy in ADR-0010
 - `skills/pathfinder-1e-srd/` — Pathfinder 1e rules, simple templates, CR benchmarks, 3.5↔PF1e conversion
 - `skills/npc-villain-boosting/` — decision framework + workflow for boosting PNGs/villains/monsters
 - `skills/dnd-35-rules/` — legacy meta-router; points to the skills above

@@ -11,6 +11,18 @@
 > - `README.md` del repo [naturalcrit/homebrewery](https://github.com/naturalcrit/homebrewery) (sezione *Installation*)
 > - `README.DOCKER.md` dello stesso repo (*Offline Install Instructions: Docker*)
 
+> 📘 **Guida completa dai master ai PDF**:
+> [`docs/guides/GUIDA-BOOKLET-E-PDF.md`](../../docs/guides/GUIDA-BOOKLET-E-PDF.md)
+> — questa pagina copre solo l'**editor** Homebrewery self-hosted.
+
+> ℹ️ **Serve Docker per i booklet «pergamena»? NO — ma le due vie convivono
+> (ADR-0013).** Dallo STESSO manifest: `python3 scripts/dm.py booklet
+> <manifest.json>` genera l'`.html` autonomo (immagini incorporate, zero
+> server); con `--format hb` genera invece il sorgente **Homebrewery V3**
+> `.hb.md` da aprire nell'editor a due pannelli di questa pagina (nativo o
+> Docker); `--format both` li produce entrambi. Dettagli:
+> `scripts/README-automation.md` e `plans/adr/ADR-0013-...md`.
+
 ---
 
 ## Via A — Installazione nativa (consigliata dal progetto per uso/sviluppo locale)

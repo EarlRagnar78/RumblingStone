@@ -38,6 +38,8 @@ Contratto macchina e vista umana — **generati** dal manifest, sempre allineati
 | Documento | Cos'è |
 |---|---|
 | [`docs/guides/GUIDA-BOOKLET-E-PDF.md`](guides/GUIDA-BOOKLET-E-PDF.md) | **Guida completa end-to-end**: dai master ai booklet (HTML/Homebrewery) ai **PDF A4** per giocatori e DM — prerequisiti per ogni sistema, anatomia del manifest, container opzionali, troubleshooting, checklist di consegna |
+| [`docs/guides/GUIDA-MAPPE.md`](guides/GUIDA-MAPPE.md) | **Guida completa mappe**: le 3 modalità, griglia emoji e legenda universale, contratto JSON per eserciti/strutture, import Watabou e ultra-clear, render SVG, export **PNG e UVTT (Foundry/Roll20 con muri e luci)**, troubleshooting della CI |
+| [`docs/guides/GUIDA-BESTIARIO.md`](guides/GUIDA-BESTIARIO.md) | **Guida completa bestiario**: dove va un mostro/PNG/villain, naming e CR, formato statblock obbligatorio, dossier, flag di canone, rigenerazione del catalogo, gate CI, **quando potenziare invece di creare** |
 | [`docs/guides/TOOL-AUTHORING-STANDARD.md`](guides/TOOL-AUTHORING-STANDARD.md) | **Standard obbligatorio** per ogni nuovo tool (checklist + verifica CI) |
 | [`docs/audit/AUDIT-REPORT.md`](audit/AUDIT-REPORT.md) | Report d'audit degli script (findings azionabili) |
 | [`docs/audit/SCORECARD.md`](audit/SCORECARD.md) | Scorecard 12-assi per script |

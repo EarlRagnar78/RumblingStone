@@ -408,6 +408,13 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   README di root, `docs/INDEX`, README-automation, homebrew-local,
   Quick-Guide nuovi DM, ADR-0013 e skill automation.
 
+- [x] **K-B14** *(2026-07-30)*: guide complete **`GUIDA-MAPPE.md`** (3 modalità,
+  griglia+legenda, JSON rigido, import, SVG/PNG/UVTT, CI, troubleshooting) e
+  **`GUIDA-BESTIARIO.md`** (dove/naming/formato, catalogo, gate, potenziamento),
+  cablate da README/INDEX e dalle skill mapmaking e npc-villain-boosting.
+- [ ] **K-B15** *(prossimo)*: guida setup macchina nuova.
+- [ ] **K-B16** *(prossimo)*: guida condivisione materiale e confini IP.
+
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 
 | # | Domanda | Default se non risponde |

@@ -20,6 +20,10 @@ description: >
 
 # RumblingStone — Mapmaking Pipeline
 
+> 📘 **Guida passo-passo per umani** (quale modalità scegliere, comandi, export
+> VTT, troubleshooting): [`docs/guides/GUIDA-MAPPE.md`](../../docs/guides/GUIDA-MAPPE.md).
+> Questa skill è la reference operativa per gli agenti.
+
 Every tactical map of this campaign is an **emoji grid in markdown** (the
 MASTER: human-readable, diffable, playable at the table) rendered to a
 print-quality **"pergamena" SVG** by `scripts/render_map_svg.py` (organic

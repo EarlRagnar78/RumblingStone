@@ -189,6 +189,9 @@ CSS = """
     .sheet:last-child{ break-after:auto; }
     .tablewrap{ overflow-x:visible; }
     .sheet table{ min-width:0; }
+    /* le mappe ASCII/emoji non hanno scrollbar su carta: si riducono
+       quanto basta per stare nel foglio senza tagli */
+    pre.mono{ font-size:.6rem; line-height:1.3; overflow:visible; }
   }
 """
 

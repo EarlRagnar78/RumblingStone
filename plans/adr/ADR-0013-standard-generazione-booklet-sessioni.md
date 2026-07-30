@@ -115,8 +115,17 @@ piena pagina `@page A4` con i colori esatti. Due modi equivalenti:
    `file.html#cN` (lo stesso hash che usano i tab).
 2. **Automatico**: `python3 scripts/export_booklet_pdf.py <manifest>` (o
    `dm.py booklet <manifest> --pdf`) → Chromium/Chrome headless, **un PDF
-   per ogni pagina ✉ player** in `<cartella manifest>/pdf/` (`--all` /
-   `--pane cN` per le altre; `--list` per gli ID). Stessa resa del browser.
+   per ogni pagina ✉ player** in `<cartella manifest>/pdf/` (`--pane cN`
+   per schede scelte; `--list` per gli ID). Stessa resa del browser.
+
+**TUTTE le schede sono esportabili con lo stesso standard** *(estensione
+DM 2026-07-24)* — non solo le pagine player: copertina, regia, master
+integrali. Le sezioni lunghe scorrono su più pagine A4 mantenendo la
+pergamena; le mappe ASCII/emoji si riducono automaticamente in stampa per
+stare nel foglio senza tagli. Comandi: `--all` sullo script, oppure
+**`dm.py booklet <manifest> --pdf-all`**. I nomi file portano il prefisso
+**`pg-`** (inviabile ai giocatori) o **`dm-`** (resta al DM): mai
+ambiguità su cosa si può condividere.
 
 I PDF sono **artefatti locali, mai committati** (`*.pdf` in .gitignore):
 si rigenerano dal manifest in un comando. Regola: un handout = un PDF —

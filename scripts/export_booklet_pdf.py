@@ -4,8 +4,13 @@
 Prende il MANIFEST di un booklet (lo stesso di ``build_booklet_html.py``) e
 salva UN PDF PER SCHEDA usando Chromium/Chrome headless: la resa è identica
 al browser (stessa pagina HTML, CSS di stampa canonico — niente testata né
-tab, pergamena a piena pagina A4). Di default esporta le sole pagine ✉
-``tag: player`` (hint, echi, teaser): quelle che si stampano o si inviano.
+tab, pergamena a piena pagina A4). **OGNI scheda è esportabile con lo
+stesso standard** (ADR-0013 §5-bis): le sezioni lunghe (es. il master
+integrale) scorrono su più pagine A4 mantenendo la pergamena. Di default
+esporta le sole pagine ✉ ``tag: player`` (hint, echi, teaser — quelle da
+inviare); ``--all`` esporta TUTTO il booklet, copertina e capitoli ⚠ DM
+inclusi. I nomi file portano il prefisso ``pg-``/``dm-`` per non
+confondere mai cosa si può inviare e cosa resta al DM.
 
 Il PDF si può fare anche SENZA questo script: apri l'HTML nel browser,
 clicca la scheda, poi «🖨 Salva PDF» (o Ctrl+P) → destinazione «Salva come
@@ -126,8 +131,9 @@ def main(argv: list[str] | None = None) -> int:
     outdir.mkdir(parents=True, exist_ok=True)
 
     ok = True
-    for i, (pid, title, _tag) in enumerate(selected):
-        out = outdir / f"{i:02d}-{slug(title)}.pdf"
+    for i, (pid, title, tag) in enumerate(selected):
+        prefix = {"player": "pg-", "dm": "dm-"}.get(tag, "")
+        out = outdir / f"{i:02d}-{prefix}{slug(title)}.pdf"
         url = html.resolve().as_uri() + "#" + pid
         cmd = [browser, "--headless", "--disable-gpu", "--no-sandbox",
                "--no-pdf-header-footer", "--virtual-time-budget=4000",

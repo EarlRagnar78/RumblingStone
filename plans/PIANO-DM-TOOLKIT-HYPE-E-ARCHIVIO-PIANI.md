@@ -377,6 +377,13 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   round-1 si attiva con la SOLA Frequenza), **switch `--format html|hb|both`**
   nel builder: stessa fonte manifest → HTML autonomo E/O `.hb.md` V3 per il
   self-hosted/Docker (entrambe le vie mantenute).
+- [x] **K-B11.3/.4** *(2026-07-24)*: **via PDF A4** (ADR-0013 §5-bis) —
+  CSS di stampa canonico (solo scheda attiva, A4 full-bleed, bottone
+  «🖨 Salva PDF», deep-link `#cN`, mappe ASCII auto-ridotte) +
+  `export_booklet_pdf.py` (Chromium headless) + `dm.py booklet
+  --pdf|--pdf-all`: **TUTTE le schede esportabili** con prefissi
+  `pg-`/`dm-` nei nomi (mai ambiguità su cosa inviare); PDF = artefatti
+  locali gitignored.
 
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 

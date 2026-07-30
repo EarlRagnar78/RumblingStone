@@ -416,7 +416,12 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   obbligatori vs opzionali, doctor con legenda, skill+hook per agenti, branch di
   gruppo, extra, verifica = controlli CI, troubleshooting), cablata da README
   (tabella + Setup Instructions), `docs/INDEX` e Quick-Guide nuovi DM.
-- [ ] **K-B16** *(prossimo)*: guida condivisione materiale e confini IP.
+- [x] **K-B16** *(2026-07-30)*: guida **`GUIDA-CONDIVISIONE-IP.md`** (5 scenari,
+  i 3 corpi di IP, procedura per i giocatori, pubblicazione gratuita con nota
+  pronta, perché la vendita non è conforme, illustrazioni, 8 casi pratici),
+  cablata da README/INDEX/ADR-0005; indice ADR completato con 0013-0014.
+  **Serie di guide passo-passo completa** (booklet+PDF, mappe, bestiario,
+  setup, condivisione).
 
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 

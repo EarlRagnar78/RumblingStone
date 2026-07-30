@@ -102,6 +102,7 @@ Indice unico dei documenti "di sviluppo" del repo (roadmap, script, container):
 |---|---|
 | **Roadmap / cosa manca / cosa migliorare** (stato piani, %, gate, prossimi passaggi) | [`plans/INDEX.md`](plans/INDEX.md) — con [`plans/CHANGELOG.md`](plans/CHANGELOG.md) per la storia lotto-per-lotto |
 | **Script DM: cosa fanno, quali parametri, cosa producono** (tool map completa + `dm.py`) | [`scripts/README-automation.md`](scripts/README-automation.md) |
+| **Condividere il materiale** (mandarlo ai giocatori, stamparlo, pubblicarlo, e perché la vendita oggi non è conforme) | [`docs/guides/GUIDA-CONDIVISIONE-IP.md`](docs/guides/GUIDA-CONDIVISIONE-IP.md) |
 | **Preparare una macchina nuova** (o un secondo DM): prerequisiti, skill per agenti, branch di gruppo, verifica finale | [`docs/guides/GUIDA-SETUP-MACCHINA.md`](docs/guides/GUIDA-SETUP-MACCHINA.md) |
 | **Generare booklet e PDF per la sessione** (guida completa: manifest, HTML, Homebrewery, PDF A4 per giocatori/DM, prerequisiti, troubleshooting) | [`docs/guides/GUIDA-BOOKLET-E-PDF.md`](docs/guides/GUIDA-BOOKLET-E-PDF.md) |
 | **Fare una mappa** (3 modalità, griglia emoji, JSON per eserciti, SVG/PNG/UVTT per Foundry e Roll20) | [`docs/guides/GUIDA-MAPPE.md`](docs/guides/GUIDA-MAPPE.md) |
@@ -122,6 +123,10 @@ Indice unico dei documenti "di sviluppo" del repo (roadmap, script, container):
 3. Review `AGENTS.md` to understand campaign conventions and agent instructions.
 
 ## Licensing Information
+
+> 📘 **Cosa posso farci in pratica?** (mandarlo ai giocatori, stamparlo, pubblicarlo, venderlo):
+> [`docs/guides/GUIDA-CONDIVISIONE-IP.md`](docs/guides/GUIDA-CONDIVISIONE-IP.md) — la posture di
+> ADR-0005 tradotta in procedura, caso per caso.
 
 This project contains private lore adaptations based on *Red Hand of Doom*. Mechanical content belongs to the respective owners of the D&D 3.5 OGL/SRD.
 

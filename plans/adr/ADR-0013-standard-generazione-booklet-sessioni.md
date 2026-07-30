@@ -181,6 +181,14 @@ così ogni giocatore riceve SOLO la sua pagina.
   aggiornare `build_hb()`; se lo stile evolve, versionare il CSS nel
   builder con nota nel CHANGELOG dei piani.
 
+## Guida operativa
+
+La procedura passo-passo (prerequisiti per ogni sistema, anatomia del
+manifest, comandi, container opzionali, troubleshooting, checklist di
+consegna) sta in
+[`docs/guides/GUIDA-BOOKLET-E-PDF.md`](../../docs/guides/GUIDA-BOOKLET-E-PDF.md).
+Questo ADR fissa **le regole**; la guida spiega **come si eseguono**.
+
 ## Esemplari
 
 - Sessione: `07_.../homebrew/sessione-terros/` (booklet DM + teaser

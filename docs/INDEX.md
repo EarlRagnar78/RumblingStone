@@ -37,6 +37,7 @@ Contratto macchina e vista umana — **generati** dal manifest, sempre allineati
 
 | Documento | Cos'è |
 |---|---|
+| [`docs/guides/GUIDA-BOOKLET-E-PDF.md`](guides/GUIDA-BOOKLET-E-PDF.md) | **Guida completa end-to-end**: dai master ai booklet (HTML/Homebrewery) ai **PDF A4** per giocatori e DM — prerequisiti per ogni sistema, anatomia del manifest, container opzionali, troubleshooting, checklist di consegna |
 | [`docs/guides/TOOL-AUTHORING-STANDARD.md`](guides/TOOL-AUTHORING-STANDARD.md) | **Standard obbligatorio** per ogni nuovo tool (checklist + verifica CI) |
 | [`docs/audit/AUDIT-REPORT.md`](audit/AUDIT-REPORT.md) | Report d'audit degli script (findings azionabili) |
 | [`docs/audit/SCORECARD.md`](audit/SCORECARD.md) | Scorecard 12-assi per script |

@@ -102,6 +102,7 @@ Indice unico dei documenti "di sviluppo" del repo (roadmap, script, container):
 |---|---|
 | **Roadmap / cosa manca / cosa migliorare** (stato piani, %, gate, prossimi passaggi) | [`plans/INDEX.md`](plans/INDEX.md) — con [`plans/CHANGELOG.md`](plans/CHANGELOG.md) per la storia lotto-per-lotto |
 | **Script DM: cosa fanno, quali parametri, cosa producono** (tool map completa + `dm.py`) | [`scripts/README-automation.md`](scripts/README-automation.md) |
+| **Preparare una macchina nuova** (o un secondo DM): prerequisiti, skill per agenti, branch di gruppo, verifica finale | [`docs/guides/GUIDA-SETUP-MACCHINA.md`](docs/guides/GUIDA-SETUP-MACCHINA.md) |
 | **Generare booklet e PDF per la sessione** (guida completa: manifest, HTML, Homebrewery, PDF A4 per giocatori/DM, prerequisiti, troubleshooting) | [`docs/guides/GUIDA-BOOKLET-E-PDF.md`](docs/guides/GUIDA-BOOKLET-E-PDF.md) |
 | **Fare una mappa** (3 modalità, griglia emoji, JSON per eserciti, SVG/PNG/UVTT per Foundry e Roll20) | [`docs/guides/GUIDA-MAPPE.md`](docs/guides/GUIDA-MAPPE.md) |
 | **Aggiungere un mostro, un PNG o un villain** (dove, come si scrive, catalogo, gate CI, quando potenziare) | [`docs/guides/GUIDA-BESTIARIO.md`](docs/guides/GUIDA-BESTIARIO.md) |
@@ -110,6 +111,11 @@ Indice unico dei documenti "di sviluppo" del repo (roadmap, script, container):
 | **Disciplina di tracciatura** (regola d'oro: chiudo un lotto → aggiorno checklist + INDEX + CHANGELOG) | skill [`skills/rumblingstone-plans/`](skills/rumblingstone-plans/SKILL.md) |
 
 ## Setup Instructions
+
+> 📘 **Guida completa passo-passo** (prerequisiti, skill per agenti, hook git,
+> branch di gruppo, extra e verifica finale):
+> [`docs/guides/GUIDA-SETUP-MACCHINA.md`](docs/guides/GUIDA-SETUP-MACCHINA.md).
+> Qui sotto il minimo indispensabile.
 
 1. Clone the repository to your local machine.
 2. If using AI Agents (Claude Code, Cursor, Windsurf), run `./scripts/build-skills.sh` to build per-agent skill packages and deploy them to your user-level paths. Per-agent mirrors are not committed to git — regenerate them locally.

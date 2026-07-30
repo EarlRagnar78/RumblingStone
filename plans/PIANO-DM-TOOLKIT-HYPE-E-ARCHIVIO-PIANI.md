@@ -384,6 +384,12 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   --pdf|--pdf-all`: **TUTTE le schede esportabili** con prefissi
   `pg-`/`dm-` nei nomi (mai ambiguità su cosa inviare); PDF = artefatti
   locali gitignored.
+- [x] **K-B11.5** *(2026-07-30)*: **file unico del gruppo** (copertina +
+  «il cammino fin qui» nella stessa scheda → un solo PDF `pg-`, via
+  `cover_tag` in `export_booklet_pdf`; ADR-0013 §2) + rigenerazione della
+  sessione Terros per la data di gioco spostata a «domani» (riferimenti
+  temporali aggiornati in teaser/regia). Deliverable completi: gruppo,
+  hint PG, master DM col solitario di Artemis (§6-bis) in HTML + PDF A4.
 
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 

@@ -1,3 +1,26 @@
+<!-- GENERATO da scripts/build_booklet_html.py --format hb (ADR-0013).
+     Manifest: ARC07-GRUPPO-CAMMINO.manifest.json — i capitoli CITANO i master (ADR-0003).
+     Le immagini restano riferimenti relativi al repo: per la resa con
+     immagini incorporate usa la via HTML (--format html). -->
+
+{{frontCover}}
+
+{{logo ![](/assets/naturalCritLogoRed.svg)}}
+
+# RUMBLING STONE
+## L'Ultima Porta
+___
+
+### Il cammino fin qui · e ciò che vi aspetta oltre la soglia
+
+{{banner PER IL GRUPPO}}
+
+{{footnote
+  Per i Custodi Eterni — da leggere prima della sessione di domani · nessuno spoiler: solo ciò che avete vissuto e un assaggio di ciò che verrà · i vostri momenti personali sono negli hint che ricevete a parte
+}}
+
+\page
+
 # Il cammino fin qui (per chi ha la memoria corta e il cuore pieno)
 
 > *Ripasso lampo dell'ultima sessione — solo la storia COMUNE, quella che
@@ -45,3 +68,4 @@
   fatta una domanda. E le domande di Moradin non si schivano coi Riflessi.
 
 *A domani. Il Tempio trattiene il fiato.*
+

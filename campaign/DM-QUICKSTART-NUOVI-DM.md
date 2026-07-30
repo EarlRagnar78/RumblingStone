@@ -59,6 +59,17 @@ python3 scripts/dm.py maps render <file.md>       # SVG "pergamena" delle grigli
   gruppo così arrivano carichi.
 - Le proposte di `prep` NON scrivono niente: scegli tu cosa usare.
 
+**Vuoi il pacchetto «da tavolo» completo** (booklet DM + un file per il
+gruppo + un handout a testa, in PDF A4 pronti da stampare o inviare)?
+
+```bash
+python3 scripts/dm.py booklet <manifest-gruppo>.json --pdf        # file unico per il gruppo
+python3 scripts/dm.py booklet <manifest-booklet>.json --pdf-all   # hint pg- + schede dm-
+```
+
+📘 Procedura completa (prerequisiti, come si scrive un manifest, container
+opzionali, troubleshooting): [`docs/guides/GUIDA-BOOKLET-E-PDF.md`](../docs/guides/GUIDA-BOOKLET-E-PDF.md).
+
 ## 4. Dopo la sessione (10 min)
 
 ```bash

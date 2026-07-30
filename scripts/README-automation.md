@@ -27,6 +27,12 @@ python3 scripts/dm.py skills build --no-deploy    # rebuild pacchetti skill mult
 python3 scripts/dm.py doctor                      # environment diagnosis
 ```
 
+> 📘 **Vuoi la procedura completa dai master ai PDF in mano ai giocatori?**
+> → [`docs/guides/GUIDA-BOOKLET-E-PDF.md`](../docs/guides/GUIDA-BOOKLET-E-PDF.md)
+> (prerequisiti per ogni sistema, anatomia del manifest, comandi, container
+> opzionali, troubleshooting, checklist di consegna). Qui sotto c'è la
+> **mappa degli strumenti**; là c'è il **come si fa**.
+
 **Sottocomandi `dm.py`** (ognuno inoltra i flag allo script sottostante):
 
 | Sottocomando | Flag | Fa girare | Fase Playbook |

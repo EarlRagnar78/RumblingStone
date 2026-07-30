@@ -102,7 +102,8 @@ Indice unico dei documenti "di sviluppo" del repo (roadmap, script, container):
 |---|---|
 | **Roadmap / cosa manca / cosa migliorare** (stato piani, %, gate, prossimi passaggi) | [`plans/INDEX.md`](plans/INDEX.md) — con [`plans/CHANGELOG.md`](plans/CHANGELOG.md) per la storia lotto-per-lotto |
 | **Script DM: cosa fanno, quali parametri, cosa producono** (tool map completa + `dm.py`) | [`scripts/README-automation.md`](scripts/README-automation.md) |
-| **Container in locale** (Homebrewery self-hosted, nativo o Docker chiavi-in-mano) | [`scripts/homebrew-local/README.md`](scripts/homebrew-local/README.md) |
+| **Generare booklet e PDF per la sessione** (guida completa: manifest, HTML, Homebrewery, PDF A4 per giocatori/DM, prerequisiti, troubleshooting) | [`docs/guides/GUIDA-BOOKLET-E-PDF.md`](docs/guides/GUIDA-BOOKLET-E-PDF.md) |
+| **Container in locale** (Homebrewery self-hosted, nativo o Docker chiavi-in-mano; container PDF opzionale) | [`scripts/homebrew-local/README.md`](scripts/homebrew-local/README.md) · [`scripts/booklet-container/README.md`](scripts/booklet-container/README.md) |
 | **Perché delle scelte strutturali** (decisioni architetturali) | [`plans/adr/`](plans/adr/) — incl. ADR-0004 (container) e ADR-0005 (confini IP) |
 | **Disciplina di tracciatura** (regola d'oro: chiudo un lotto → aggiorno checklist + INDEX + CHANGELOG) | skill [`skills/rumblingstone-plans/`](skills/rumblingstone-plans/SKILL.md) |
 

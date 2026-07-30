@@ -66,8 +66,17 @@ def slug(s: str) -> str:
 
 
 def panes_of(mf: dict) -> list[tuple[str, str, str]]:
-    """[(pane_id, titolo, tag)] — c0 è la copertina, i capitoli partono da c1."""
-    out = [("c0", "Copertina", "")]
+    """[(pane_id, titolo, tag)] — c0 è la copertina, i capitoli partono da c1.
+
+    Il manifest può dichiarare ``cover_tag`` (es. "player"): serve per i
+    booklet in cui la copertina + intro fusa È il deliverable player (file
+    unico del gruppo, ADR-0013 §2) → così la c0 rientra nell'export player
+    di default e prende il prefisso ``pg-`` nel nome."""
+    cover_tag = mf.get("cover_tag", "")
+    # se la copertina è essa stessa un deliverable (cover_tag), il nome
+    # del PDF prende il titolo del booklet, non il generico "Copertina"
+    cover_title = mf.get("title", "Copertina") if cover_tag else "Copertina"
+    out = [("c0", cover_title, cover_tag)]
     for k, ch in enumerate(mf["chapters"], 1):
         out.append((f"c{k}", ch["title"], ch.get("tag", "")))
     return out

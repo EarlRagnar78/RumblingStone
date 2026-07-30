@@ -35,12 +35,14 @@ esistono solo come echi.
 
 ## 1. Ordine di gioco della serata
 
-1. **Pre-sessione (venerdì): teaser + hint.** Ai giocatori si invia il
-   **teaser «L'Ultima Porta»** (`ARC07-TEASER-GIOCATORI.html`, file
-   separato e spoiler-free: recap veloce + hype, MAI il nome del boss —
+1. **Alla vigilia (il giorno prima): file del gruppo + hint.** Ai giocatori
+   si invia il **file unico del gruppo «L'Ultima Porta»**
+   (`ARC07-GRUPPO-CAMMINO.*` — copertina evocativa + «il cammino fin qui»,
+   un solo PDF spoiler-free: recap veloce + hype, MAI il nome del boss —
    regola ADR-0013 per tutte le sessioni) e a ciascuno la SUA pagina ✉
-   hint, in privato. Al tavolo: leggi il read-aloud «Dove Siamo»
-   (copertina). Questo booklet col titolo vero resta SOLO al DM.
+   hint, in privato (un PDF `pg-hint-<PG>` a testa). Al tavolo: leggi il
+   read-aloud «Dove Siamo» (copertina del booklet DM). Questo booklet col
+   titolo vero resta SOLO al DM.
 2. **La scena privata di Artemis — il Seme-Mercato di Varis** (master
    **§6-bis**, integrale). ⚠ **Nota di regia sul posizionamento**: nel
    master la scena vive sulla riva dell'Oceano di Roccia, PRIMA del Tempio.

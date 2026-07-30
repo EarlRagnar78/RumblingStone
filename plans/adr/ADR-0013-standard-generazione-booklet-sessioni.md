@@ -36,14 +36,22 @@ struttura obbligatoria e su doppia via di output.**
 
 | Sezione | Tag | Contenuto |
 |---|---|---|
-| Copertina + «Dove siamo» | — | read-aloud d'apertura + fotografia della vigilia |
-| ✉ Teaser giocatori | `player` | **file e manifest SEPARATI** (inviabile così com'è): recap lampo delle parti giocate + invito evocativo |
+| Copertina + «Dove siamo» | — | read-aloud d'apertura + fotografia della vigilia (nel booklet DM) |
+| ✉ File del gruppo | `player` | **manifest SEPARATO, un solo file** (inviabile così com'è): **copertina evocativa + «il cammino fin qui»** in un unico foglio/PDF — recap lampo delle SOLE parti comuni giocate + invito evocativo alla sessione |
 | Regia della sessione | `dm` | ordine di gioco, **canone giocato** registrato con data, guard-rail di canone, cosa stampare |
-| Master integrale/i | `dm` | i master `ARC*-DEF-*` citati per intero — zero numeri nuovi |
+| Master integrale/i | `dm` | i master `ARC*-DEF-*` citati per intero — zero numeri nuovi (incluse le scene in solitaria per un singolo PG, es. il Seme-Mercato di Artemis) |
 | ✉ Hint/Echi per-PG | `player` | UNA pagina per PG, consegnata in privato; i contro-momenti come sussurri degli artefatti, mai CD/statistiche del nemico |
 
+**Il «file del gruppo» = copertina + cammino in UN pane.** Si ottiene con un
+manifest dedicato: `intro_md` = il testo del cammino/invito, `chapters: []`,
+e **`cover_tag: "player"`** (così la copertina rientra nell'export player di
+default, prende il prefisso `pg-` e il PDF porta il titolo del booklet, non
+il generico «copertina»). Copertina e cammino restano nella **stessa scheda**
+→ un solo PDF, come lo vuole il gruppo. Esemplare:
+`07_.../homebrew/sessione-terros/ARC07-GRUPPO-CAMMINO.manifest.json`.
+
 I booklet d'ARCO (es. Palio) seguono lo stesso schema senza la regia di
-serata: teaser giocatori + capitoli master integrali.
+serata: file del gruppo + capitoli master integrali.
 
 ### 3. Regola anti-spoiler del materiale player-facing (vale per TUTTE le sessioni)
 

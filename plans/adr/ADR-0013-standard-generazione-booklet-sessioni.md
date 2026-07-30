@@ -92,6 +92,36 @@ personale perde valore.
   del teaser chiedersi «questo fatto è già in un hint?»: se sì, toglierlo
   o ridurlo a rimando obliquo.
 
+### 3-ter. Gli hint sono SEMI, non istruzioni (regola DM 2026-07-30)
+
+**Un hint non dice mai al giocatore cosa fare.** Se il PG arriva al tavolo
+già sapendo la mossa giusta, il tavolo è teleguidato e la scoperta —
+che è il piacere del gioco — è stata bruciata a monte.
+
+- **VIETATA la sezione riassuntiva finale** (tipo «In una riga: fai X»):
+  è un ordine travestito da consiglio. Gli hint finiscono con
+  un'immagine o un peso, mai con una direttiva.
+- **I sussurri degli artefatti sono OBLIQUI**: un ricordo di bottega, un
+  aneddoto, una lamentela, un'immagine — mai la contromossa in chiaro.
+  Il seme tattico si nasconde nella metafora e il giocatore **può
+  coglierlo o no** (es. *«il mio maestro dava un colpo secco e
+  ASCOLTAVA: ogni cosa dura ha una nota»* al posto di «quando alza lo
+  scudo, colpiscilo col sonico»).
+- **Mai pre-caricare un atteggiamento** verso una scena futura: niente
+  avvertimenti, niente «attento all'inganno», niente «leggi le righe
+  piccole». Le tentazioni e i bivi morali devono arrivare **puliti**, o
+  la scelta non è più del giocatore (esemplare: l'hint di Artemis non
+  accenna al fatto che qualcuno proverà a comprarlo).
+- **Ammesso e incoraggiato**: ciò che il PG *ha vissuto* (fatti), ciò che
+  *sente addosso* (sensazioni, pesi, premonizioni senza contenuto
+  informativo), ciò che i *suoi* artefatti mormorano di sé.
+- **Test dell'agente prima di consegnare**: leggi ogni riga e chiediti
+  «questa frase dice al giocatore cosa fare, o gli dà qualcosa da
+  interpretare?». Se dice cosa fare → riscrivila come immagine, o
+  togli. La contromossa esplicita vive nel **booklet DM** (la regia),
+  dove è giusto che stia: il DM la fa affiorare in gioco se al tavolo
+  nessuno la coglie.
+
 ### 4. Canone giocato
 
 Gli esiti giocati al tavolo (oggetti ottenuti/spesi, scene risolte in

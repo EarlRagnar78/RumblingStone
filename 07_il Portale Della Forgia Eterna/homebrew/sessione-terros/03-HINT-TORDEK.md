@@ -1,7 +1,8 @@
 # ⚒️ Tordek — Incudine e Martello
 
-> *Per il giocatore di Tordek. Leggi in privato. Questa è la tua notte: te
-> la sei guadagnata a pugni nudi contro un guscio di mithral.*
+> *Per il giocatore di Tordek. Leggi in privato. Qui non ci sono istruzioni:
+> sono cose che il TUO personaggio sente, ricorda o si porta dentro. Cosa
+> farne, se farne qualcosa, è affar tuo.*
 
 ## Ciò che è accaduto (fresco come una cicatrice)
 
@@ -13,19 +14,19 @@ nascono e muoiono in un battito. E al risveglio, i guanti striati d'argento
 e di smeraldo.
 
 **I Bracieri Gemelli sono COMPLETI: Fuoco e Terra.** *(I nuovi poteri sono
-sulla tua scheda aggiornata — chiedila al DM: RD, il pugno che atterra i
-giganti, il tremore del forgiatore.)* E adesso **parlano**. Non spesso. Con
-la voce di un vecchio fabbro che non spreca fiato.
+sulla tua scheda aggiornata — chiedila al DM.)* E adesso **parlano**. Non
+spesso. Con la voce di un vecchio fabbro che non spreca fiato.
 
 > **I BRACIERI:** *«Incudine e Martello. Ora sei completo.»*
 
-## I consigli del vecchio fabbro (li ripeterà, se serve)
+## Cosa borbottano i guanti (ricordi di bottega, non consigli)
 
-> *«Il fuoco brucia in fretta e muore. La roccia attende. Là sotto c'è
-> roccia che cammina, ragazzo: non vincerai aspettando più di lei. Vincerai
-> col TUONO. Quando il guardiano si chiuderà nel diamante — e si chiuderà —
-> non grattare la corazza: SUONALA. Un colpo solo, pieno, di quelli che
-> fanno cantare il metallo. Il diamante odia le campane.»*
+> *«Il mio primo maestro non si fidava degli occhi. Prendeva il pezzo, lo
+> appoggiava, gli dava un colpo secco e ASCOLTAVA. Diceva che ogni cosa dura
+> ha una nota, e che la nota dice tutto: dov'è sana, dov'è vuota, dove si
+> aprirà. I ragazzi guardavano il metallo. Lui lo sentiva.»* Una pausa da
+> vecchio. *«Il fuoco brucia in fretta e muore. La roccia attende. Tu adesso
+> hai tutti e due nelle mani, e non ti ho ancora sentito ascoltare niente.»*
 
 > *«E ricorda da dove vieni. Questi guanti sono un prestito degli ideali che
 > onori. Il giorno che li tradisci, torneranno freddi.»*
@@ -39,8 +40,3 @@ parole**, senza voce, nel nanico antico che si parla solo nei sogni:
 
 Nessuna spiegazione. Solo la certezza, da nano, che **qualcosa di caro sta
 cercando la strada di casa.**
-
-## In una riga
-
-Sei l'unico che può **spezzare ciò che il guardiano alza per difendersi**.
-Quando succede, non esitare: batti il tuono, e che la montagna ti senta.

@@ -391,6 +391,15 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   temporali aggiornati in teaser/regia). Deliverable completi: gruppo,
   hint PG, master DM col solitario di Artemis (§6-bis) in HTML + PDF A4.
 
+- [x] **K-B12** *(review DM, 2026-07-30)*: **regia sensoriale** del master
+  Terros — §6-bis ricollocato (tentazione di Artemis **nel Tempio, dopo la
+  Sentinella**), **§8a-8b** ingresso dalla soglia di mithral con **Altare
+  attraccato che si centra al risveglio** (canone DM) + read-aloud «i sei
+  secondi» e «il distacco», **§9 Fase 2 regia dei tre round** (box per PG,
+  esiti riuscita/fallimento, ordine dei tiri in 4 battute). Regola a canone
+  in **ADR-0014** + copertura skill (module-standard §6/§8/§10,
+  editorial-standards §2).
+
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 
 | # | Domanda | Default se non risponde |

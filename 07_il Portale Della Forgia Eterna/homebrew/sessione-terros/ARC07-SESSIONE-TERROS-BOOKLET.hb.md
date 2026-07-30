@@ -176,24 +176,29 @@ esistono solo come echi.
    read-aloud «Dove Siamo» (copertina del booklet DM). Questo booklet col
    titolo vero resta SOLO al DM.
 2. **La scena privata di Artemis — il Seme-Mercato di Varis** (master
-   **§6-bis**, integrale). ⚠ **Nota di regia sul posizionamento**: nel
-   master la scena vive sulla riva dell'Oceano di Roccia, PRIMA del Tempio.
-   **Decisione DM (2026-07-24): si gioca STASERA, coi PG già dentro il
-   Tempio, perché fa colore** — la scena è dichiaratamente indipendente da
-   tutto («funziona anche se il party ha saltato il Campo dei Cristalli») e
-   non cambia nulla in meccanica: sposta solo il *dove* (una nicchia di
-   detriti lungo il corridoio del Tempio, dove l'Anello morde il dito, al
-   posto del filone sulla riva). Giocala **a voce bassa, col solo giocatore
-   di Artemis**, mentre gli altri studiano l'ultima porta.
+   **§6-bis**, integrale). 📍 **Posizione a canone (DM 2026-07-30): dentro
+   il Tempio, DOPO la Sentinella**, lungo il corridoio che scende verso la
+   camera del guardiano — l'ultimo tratto prima di Terros. Il cabochon è
+   affiorato **nella crepa aperta dal duello** (il master spiega perché il
+   Seme sia lì: cresce lungo la linea di forza, e il Tempio ne è il
+   capolinea). Giocala **a voce bassa, col solo giocatore di Artemis**,
+   mentre gli altri si rimettono in marcia.
    - Canone-guardia: **Artemis non è MAI stato tentato al Giardino dei
      Cristalli** (la runa alla Madre Cristallo è rimossa dal canone, §6):
      questa è la sua **unica** tentazione, pulita. Nessun «Occhio di
      Lathander», nessuna tentazione divina: solo l'avidità del predone.
    - L'esito (prende/rifiuta) va nell'**Echo Ledger** (§11) e riemerge col
      **#4 (Vatore)** e in ARC-09.
-3. **Il ponte di cristallo e il risveglio** (master §8): read-aloud del
-   risveglio del Guardiano; scenografia della camera (ponte 45 m — non
-   sostarci, piattaforme laterali, altare levitante). **Apertura sonica
+3. **L'ingresso nella camera e il risveglio** (master **§8a-8b**, nuovi):
+   niente porta da forzare — la **soglia di mithral si apre da sé** e i PG
+   **escono direttamente sull'Altare**, che è **attraccato** al bordo come
+   una chiatta al molo (canone DM 2026-07-30). Leggi il read-aloud **«i sei
+   secondi della soglia»** (cosa colgono in un'occhiata), poi il risveglio
+   del Guardiano, poi il **distacco**: l'Altare molla l'ormeggio e si
+   **centra nella sfera**. Chi è sopra viaggia con lui; chi è rimasto sulla
+   soglia si ritrova a ~27 m oltre lo zero-G. È la **domanda d'apertura**
+   della scena: nessuno taglia loro la ritirata — se la tagliano da soli.
+   **Apertura sonica
    DISPONIBILE** (canone giocato: la Frequenza è posseduta): se entrano
    cantando (Intrattenere Canto CD 18, +4 dall'Anello, 2 successi su 3) →
    Terros nauseato round 1 (−4/−4). Il **Diapason invece è SPESO** (usato
@@ -217,11 +222,21 @@ esistono solo come echi.
      Se lo scoprono da soli, **è la scena della serata** — non rubargliela
      anticipandola.
 5. **Il Rituale dello Smeraldo** (master §9, 3 fasi): la scelta-costo di
-   Thorik (Fase 1), i 3 round di sinergia a ritmo battuto sul tavolo
-   (Fase 2 — parte `Musica/LaCanzoneDellePietre.mp3`), l'incastonatura e
-   **l'emersione di Durik** (Fase 3). Regia dell'asimmetria: Thorik NON sa
-   che la presenza verde è Hella; la giocatrice di Hella riceve solo il suo
-   echo (handout VI).
+   Thorik (Fase 1), i **3 round di sinergia** (Fase 2 — parte
+   `Musica/LaCanzoneDellePietre.mp3`), l'incastonatura e **l'emersione di
+   Durik** (Fase 3).
+   - 🎬 **Usa «FASE 2 — LA REGIA DEI TRE ROUND»** (master, subito dopo le
+     meccaniche): ha **il testo da leggere per ogni battuta** — apertura di
+     round, un box per PG, una riga di esito per riuscita e per fallimento,
+     chiusura di round. Senza quelle descrizioni i giocatori tirano al buio
+     e la scena si spegne.
+   - ⚙️ **Ordine dei tiri (importante)**: il giro va in **quattro battute** —
+     Thorik *dichiara* la presa (nessun tiro) → **Tordek tira** (se riesce,
+     la CD di Thorik scende di 10) → **Thorik tira** con la CD risultante →
+     **Artemis tira**. Così il bonus del ritmo esiste *prima* di servire.
+   - Regia dell'asimmetria: al round 2 Thorik sente la presenza verde
+     alleggerirgli le spalle e **NON sa** che è Hella; la giocatrice di
+     Hella ha lo stesso momento dal suo lato (handout ✉ Echi, secondo eco).
 6. **Epilogo**: «La Forgia Ricorda» (§10 — i pannelli nuovi si SCOPRONO al
    ritorno in Sala, master #2), Echo Ledger (§11), PX e tesoro (§11-bis),
    countdown aggiornato (§12).
@@ -230,7 +245,10 @@ esistono solo come echi.
 
 - **Quick-Reference §0-bis** (una pagina: tutte le CD, soglie pf, il giro
   di Terros, supporto PF1e zero-G).
-- **MAPPA T-6** (camera dell'Altare) — e T-5 come ricordo dell'Anticamera.
+- **MAPPA T-6** (camera dell'Altare — ritrae lo stato **dal round 2**, ad
+  Altare già centrato) — e T-5 come ricordo dell'Anticamera.
+- I **read-aloud della serata**: §8a «i sei secondi della soglia», §8b «il
+  distacco», e le tre pagine di **«FASE 2 — la regia dei tre round»** (§9).
 - Statblock di **Terros** (§8); handout §13 (Iscrizione, carta «Corona
   2/3» per fine serata, Benedizioni).
 - Le **4 pagine hint/echi** di questo booklet (capitoli III–VI).
@@ -302,7 +320,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 | §4 | **Il viaggio** (~2,5 h) | tappe, **Atlante delle Zone** (4 ambienti con prosa e callout), gestione del movimento lento, **ambiente dinamico** |
 | §5 | **Incontro 1 — Xorn** | tre vie (demolizione/ordine/negoziato), Fauci di Diamante élite, **tattiche RHoD round-per-round** |
 | §6 | **Incontro 2 (OPZIONALE) — Cristalli Viventi** | skill challenge, cristallo da riforgiare, costi del salto |
-| §6-bis | **Seme-Mercato di Varis** | quest personale di Artemis, lungo la strada (indipendente) |
+| §6-bis | **Seme-Mercato di Varis** | quest personale di Artemis, **nel Tempio dopo la Sentinella** (indipendente) |
 | §7 | **Tempio di Mithral** | 7a salto gravitazionale co-op · 7b Sentinella + **risveglio pieno dei Bracieri** |
 | §8 | **BOSS: Terros l'Antico** (CR 15) | statblock 3.5, scenografia, coreografia, **tattiche-regia RHoD**, DPR, contingenze |
 | §9 | **Rituale dello Smeraldo** | 3 fasi — scelta-costo di Thorik, sinergia di TUTTI, emersione di Durik |
@@ -472,9 +490,9 @@ Diapason, niente +2 TS → Terros a piena forza, nessun round di nausea.
   davanti ai suoi occhi e lascialo scegliere.
 - In volo (Ali d'Ombra) è **quasi intoccabile** da Terros (Earth Mastery −4 vs
   chi è in aria): è lo **star DPS**, se sfrutta la vulnerabilità sonica (§8).
-- **La tentazione più pericolosa non è un mostro: è una gemma.** Sulla riva
-  dell'Oceano di Roccia, **prima di arrivare a Terros** e visibile solo a lui,
-  c'è il **Seme-Mercato di Varis** (§6-bis): un'esca calibrata sulla sua
+- **La tentazione più pericolosa non è un mostro: è una gemma.** Dentro il
+  Tempio, **dopo la Sentinella e prima di arrivare a Terros**, visibile solo
+  a lui, c'è il **Seme-Mercato di Varis** (§6-bis): un'esca calibrata sulla sua
   avidità, indipendente da ogni altro incontro. È lì che l'Anello — e il
   giocatore — mostrano chi è Artemis davvero. *(In questa run Artemis non è
   mai stato tentato alle rune della Madre Cristallo: questa è la sua UNICA
@@ -712,8 +730,9 @@ la zona si può **aggirare** da sud (+30 min).
 lentamente (3 round; Nuotare CD 20 faticoso; sommerso = soffocamento + 2d6
 schiacciamento/round, vedi Contingenze §8); riva = detriti instabili
 (Equilibrio CD 12); attorno al Tempio **gravità zero** con detriti fluttuanti.
-**Cosa succede qui:** **§6-bis Seme-Mercato** (quest privata di Artemis, sulla
-riva) → **§7a salto gravitazionale co-op** → Tempio.
+**Cosa succede qui:** **§7a salto gravitazionale co-op** → Tempio (la quest
+privata di Artemis, **§6-bis**, si gioca più avanti: dentro il Tempio, dopo
+la Sentinella).
 
 ### Eventi di viaggio (d6 — uno per zona attraversata, a discrezione)
 
@@ -930,23 +949,41 @@ come **Successo Critico**, il **Diapason Armonico** (frammento: **stun Terros
 
 ---
 
-## §6-bis — IL SEME-MERCATO DI VARIS (quest personale di Artemis, LUNGO LA STRADA) `[CANONE — DM 2026-07-23; l'esito (accetta/rifiuta) si gioca]`
+## §6-bis — IL SEME-MERCATO DI VARIS (quest personale di Artemis, NEL TEMPIO) `[CANONE — DM 2026-07-23; posizione aggiornata DM 2026-07-30; l'esito (accetta/rifiuta) si gioca]`
 
-> **Dove e quando (pulito, indipendente da tutto).** Sulla **riva dell'Oceano
-> di Roccia**, l'ultima sosta prima del Tempio — **prima di arrivare a Terros**
-> e **indipendente** dal Campo dei Cristalli (funziona anche se il party lo ha
-> saltato). La scena è **privata**: gioca lo scambio col solo giocatore di
-> Artemis, a voce bassa, mentre gli altri studiano il salto gravitazionale
-> (§7a). Nessun altro PG vede o sente nulla.
+> **Dove e quando (canone DM 2026-07-30).** **Dentro il Tempio di Mithral,
+> DOPO la Sentinella** (§7b), lungo il corridoio che scende verso la camera
+> del guardiano — l'ultimo tratto di strada prima di Terros. La scena resta
+> **indipendente** da tutto il resto (funziona anche se il party ha saltato
+> il Campo dei Cristalli) ed è **privata**: gioca lo scambio col solo
+> giocatore di Artemis, a voce bassa, mentre gli altri si rimettono in
+> marcia dopo il duello. Nessun altro PG vede o sente nulla.
+> *(Posizione precedente — la riva dell'Oceano di Roccia, §7a — superata:
+> la scena vale identica, cambia solo il dove.)*
 
-> **Read-aloud (solo per Artemis).** *Mentre gli altri misurano a occhio il
-> vuoto tra la riva e il cubo d'argento, l'Anello ti morde il dito — un
-> pizzicore che conosci: segreti vicini. Sulla riva, tra i detriti che l'oceano
-> di roccia deposita come un mare deposita conchiglie, un filone di cristallo
-> spezzato. E DENTRO il filone, dove nessun occhio senza il tuo Anello potrebbe
-> arrivare, una piccola gemma che non c'entra nulla con questo piano: un
-> **cabochon violetto**, caldo, tagliato da mani civili. Qualcuno l'ha messa
-> lì. Per qualcuno come te.*
+> **Come fa a essere QUI (per il DM).** Il Seme è un **innesto planare**
+> piantato **lungo la linea di forza** che porta al Tempio, e il Tempio ne è
+> il capolinea: il seme è cresciuto verso il punto più ricco della linea,
+> come una radice verso l'acqua. Il colpo che ha abbattuto la Sentinella ha
+> **spaccato il mithral** dell'anticamera, e nella crepa è affiorato ciò che
+> per secoli era rimasto sepolto nel muro. *Nessuno l'ha portato qui a mano:
+> è il mercato che cresce dove passa la ricchezza.*
+
+> **Read-aloud (solo per Artemis — Salvatore).** *Il corridoio riprende a
+> scendere, e i tuoi compagni sono già avanti: il nano coi guanti nuovi
+> cammina come se il pavimento gli dovesse dei soldi. Tu resti mezzo passo
+> indietro — e l'Anello ti morde il dito. Quel morso lì.*
+>
+> *Nella parete, dove il duello ha aperto una crepa nel mithral, qualcosa
+> cattura la luce in un modo che il metallo non fa: un **cabochon violetto**,
+> grande come l'unghia del pollice, incastonato nella pietra come una zecca
+> nel cuoio. È **caldo**. In un piano dove tutto è freddo educato, quella
+> cosa è tiepida come una mano appena tolta da una tasca.*
+>
+> *E tu sai leggere i tagli delle gemme come altri leggono le insegne delle
+> locande: quello non l'ha fatto la terra. Quello è stato **tagliato**, da
+> mani civili, in un posto dove esistono i banchi e i registri. Qualcuno
+> l'ha lasciata qui. Non per qualcuno: per **qualcuno come te**.*
 
 **Cosa vede Artemis (e solo lui).** La **Vista Potenziata** e la **Sapienza
 Forgiata** dell'Anello gliela rivelano; **Sapienza Magica (CD 20, gratis via
@@ -1149,11 +1186,52 @@ golem (~5.000 mo di frammenti di mithral).
 > non azioni gratuite a init 20. I contro-momenti dei PG sono **azioni
 > preparate** o **prove contrapposte**.
 
-La camera centrale è **sferica** (Ø 60 m), a **gravità zero** tranne
-l'**Altare della Forza** (piattaforma di mithral 6 m, gravità normale, rune
-verde smeraldo). Dormiente sull'Altare, **Terros** — 10 m di mole stratificata
-(basalto, granito, marmo, adamantio), geologia vivente. Avvicinarsi lo sveglia.
-Vedi **MAPPA T-6**.
+### 8a. L'ARRIVO — la soglia, l'attracco e i primi sei secondi
+
+**Dati per il DM (non da leggere).** Camera **sferica**, Ø **60 m**, a
+**gravità zero** ovunque tranne l'**Altare della Forza** (piattaforma di
+mithral, **6 m**, gravità normale, rune verde smeraldo). Dormiente
+sull'Altare, **Terros**: **10 m** di mole stratificata (basalto, granito,
+marmo, adamantio), geologia vivente. Vedi **MAPPA T-6** (che ritrae la
+situazione **dal round 2 in poi**, ad Altare centrato).
+
+**Come ci si entra (canone DM 2026-07-30).** Nessuna porta da forzare,
+nessun enigma: il corridoio finisce in una **soglia circolare** di mithral
+che **si apre da sola** al passaggio della Corona e dei Bracieri — il Tempio
+riconosce i suoi. Non c'è un ponte da attraversare e non si «sbuca nel
+vuoto»: **l'Altare è attraccato alla soglia**, bordo contro bordo, come una
+chiatta ormeggiata a un molo. **Si esce direttamente sull'Altare**, in
+gravità normale, con Terros dormiente all'altro capo della piattaforma.
+
+> ⚠️ **ERRATA di scenografia.** Questa soglia-attracco **supera** il «ponte
+> di cristallo di 45 m» della vecchia MAP 6: la lastra non serve più, perché
+> è l'Altare stesso a fare da approdo. Il rischio «ritirata tagliata» resta,
+> in forma migliore — vedi il distacco qui sotto.
+
+> **Read-aloud — I SEI SECONDI DELLA SOGLIA (LotR + Salvatore).** *La soglia
+> si apre come una pupilla, e il mondo si apre con lei.*
+>
+> *Siete dentro una **bolla**. Una sfera di cristallo grande come la piazza
+> di un mercato, e la sua parete è l'unica cosa che vi separa dal Piano
+> della Terra: fuori, il buio preme contro il vetro, e dentro quel buio
+> passano lentissime le sagome dei geodi giganti, come pesci troppo grandi
+> intorno a una lanterna. L'aria qui dentro è **pulita** — la prima aria
+> pulita da ore. Le narici se ne accorgono prima della testa.*
+>
+> *Sotto gli stivali avete una lastra d'argento vivo, larga quanto la sala
+> comune di una locanda, incisa di rune verdi che pulsano piano. Oltre il
+> suo bordo non c'è un pavimento: c'è **niente**. Non un burrone — niente.
+> Il vostro «sotto» finisce dove finisce la lastra.*
+>
+> *Sopra il centro della lastra, a un'altezza da spallate, pende una **luce
+> verde** senza catena e senza sostegno: una gemma grande come un pugno di
+> nano che gira lentissima su sé stessa e vi tinge le mani del suo colore.*
+>
+> *E all'altro capo della lastra c'è una **collina**. Roccia a strati —
+> basalto, granito, marmo, e una vena scura che a occhio esperto ha il
+> lucore dell'adamantio — accatastati come pagine di un libro chiuso da
+> troppo tempo. Non si muove. Non ha respiro. Occupa un terzo della
+> piattaforma. **Che fate?***
 
 > **Read-aloud (il risveglio del guardiano — LotR + Salvatore).** *All'inizio
 > lo scambiate per una formazione della caverna: una collina di roccia
@@ -1168,16 +1246,56 @@ Vedi **MAPPA T-6**.
 > Thorik, tace di colpo: davanti all'Incudine del Mondo, anche una voce antica
 > abbassa il capo.*
 
+### 8b. IL DISTACCO — l'Altare si centra sul guardiano `[CANONE — DM 2026-07-30]`
+
+**Cosa succede.** Nel **round del risveglio** (round 1), l'Altare **molla
+l'ormeggio** e scivola fino al **centro esatto della sfera**, come se il
+piano stesso ricentrasse il proprio peso attorno a chi lo custodisce. Non è
+un attacco e non è un potere di Terros: è **il piano che si riassesta**.
+Nessun tiro, nessun TS.
+
+| Dove sei quando l'Altare si stacca | Cosa ti succede |
+|---|---|
+| **Sull'Altare** | viaggi con lui, in piedi, in gravità normale: sei nell'arena |
+| **Sulla soglia** (non sei uscito, o sei tornato indietro) | resti al bordo della sfera: fra te e l'Altare si aprono **~27 m di gravità zero** |
+| **A cavallo del bordo** nell'istante del distacco | **scegli tu**, senza tiro: parti o resti (il bordo scorre piano, c'è il tempo di un passo) |
+
+**Perché conta (per il DM).** L'attracco è la vera **domanda d'apertura**
+della scena: chi mette piede sull'Altare sceglie la stabilità — e finisce
+dentro l'*Earth Mastery* del guardiano (**+1** att/danni per Terros contro
+chi tocca terra/pietra); chi resta indietro evita quel bonus ma dovrà
+**attraversare lo zero-G** per rientrare (volo, o spinta da una superficie
+in linea retta a metà velocità — §0-bis). **La ritirata non viene tagliata
+da una trappola: se la tagliano da soli**, ed è molto più bello. Da qui in
+poi vale la **MAPPA T-6**.
+
+> **Read-aloud — IL DISTACCO (Salvatore).** *Non è la collina a muoversi per
+> prima: è il **bordo**. Con un suono di ghiaccio che si stacca da un tetto,
+> la lastra si scolla dalla soglia — e la soglia comincia ad allontanarsi.
+> Piano. Con la calma con cui una chiatta lascia il molo mentre tu sei ancora
+> mezzo sul molo e mezzo sulla chiatta.*
+>
+> *Le rune verdi sotto i vostri stivali si accendono tutte insieme, e per un
+> istante avete la sensazione insopportabile che il mondo abbia deciso **dove
+> deve stare il suo centro** — e che il centro sia il posto dove state voi.
+> L'Altare si ferma. È esattamente in mezzo alla bolla, sospeso in un nulla
+> che da qui pare più grande di prima.*
+>
+> *La porta da cui siete entrati è adesso un cerchio di luce lontano, di là
+> da un vuoto senza appigli. E la collina si sta ancora alzando.*
+
 **Scenografia della Camera (recuperata da TACTICAL-GRIDS MAP 6).** L'arena non è
 una sfera nuda:
 - **Pareti sferiche di cristallo** semitrasparente (spesse 3 m, invulnerabili):
   attraverso di esse si vede il **Piano della Terra oscuro** — geodi giganti,
   roccia infinita, la polvere tossica che turbina *fuori* (dentro l'aria è pura,
   creazione divina).
-- **Ponte di cristallo** all'ingresso nord: 45 m di lastra trasparente che
-  collega il portale al pavimento. **Rischio**: se Terros usa un colpo sismico
-  potente, il ponte ha il **50% di crollare** (caduta 15 m = molti d6) — può
-  **tagliare la ritirata**. Non stazionarci.
+- **Soglia d'ingresso a nord** (~~ponte di cristallo di 45 m~~, superato da
+  §8a): pupilla di mithral al polo nord della sfera, dove l'Altare era
+  attraccato. Dopo il distacco resta **un cerchio di luce a ~27 m**
+  dall'Altare, oltre lo zero-G: è la via di fuga — raggiungibile solo in
+  volo o spingendosi dalle superfici. **Non si può «stazionare a metà»**:
+  nel vuoto senza appigli si è in balia (§0-bis).
 - **Due piattaforme laterali** sopraelevate (+3 m, scale di pietra): **posizioni
   di tiro** elevate per Artemis e per chi vuole stare fuori dalla portata di
   Terros (4,5 m).
@@ -1491,6 +1609,144 @@ L'Altare porta la gravità a livelli intollerabili. Thorik si inginocchia.
 > ritmo sul tavolo. Se Tordek riesce, Thorik regge; se Artemis riesce, nessuno
 > prende le scorie; se falliscono, il costo è **corpo su corpo**. È la vittoria
 > che si guadagna insieme, non un tiro solo.
+
+---
+
+### FASE 2 — LA REGIA DEI TRE ROUND (descrizioni da leggere)
+
+> **Perché serve.** I tre agiscono **insieme**, ma al tavolo si parla **uno
+> alla volta**: senza una descrizione per ogni battuta i giocatori tirano
+> dadi al buio e il pathos evapora. Qui sotto: **cosa leggere, quando**.
+> Ogni round sono **sei secondi** — descrivi poco e concreto, poi passa il
+> turno. Le CD e i malus restano quelli di sopra: **niente numeri nuovi**.
+
+> **Il giro del round in quattro battute** *(risolve anche l'ordine dei
+> tiri: il ritmo di Tordek deve esistere **prima** che Thorik lo usi)*:
+> **1)** *Thorik — la presa*: descrive e **dichiara** che tiene (nessun tiro).
+> **2)** *Tordek — il ritmo*: **tira** (riuscita → la CD di Thorik scende di
+> **10** per questo round). **3)** *Thorik — la tenuta*: **tira** con la CD
+> risultante. **4)** *Artemis — la valvola*: **tira**. Poi leggi la chiusura
+> del round e ricomincia.
+
+#### ROUND 1 — «Il contatto»
+
+> **Apertura (Salvatore).** *Lo Smeraldo galleggia sopra l'Altare e non
+> proietta ombra: la luce che fa è verde e va all'indietro, dentro le cose.
+> Quando Thorik alza la Corona, l'aria fra il metallo e la gemma si fa
+> **densa** — come lo spazio fra due calamite che si rifiutano. Vi accorgete
+> tutti insieme, senza dirvelo, che la sala ha smesso di avere un rumore.*
+
+- **① Thorik — la presa.**
+  > *Le mani nude sulla Corona. Non è freddo, non è caldo: è **compatto**,
+  > come stringere il fianco di una montagna che ti stringe indietro. Alla
+  > prima spinta la gemma ti risponde nei denti — e nelle dita senti una
+  > cosa che non ha nome: il tuo sangue che, per un istante, sa di sabbia.*
+- **② Tordek — il ritmo.**
+  > *Sei in ginocchio sull'argento, i pugni chiusi, e non hai idea di dove
+  > battere. Poi lo senti: il **cuore di Thorik**, attraverso la lastra. Il
+  > mithral porta i battiti come una porta porta i passi nel corridoio.*
+  - **Riuscita** → *Il primo colpo entra dentro al battito e sparisce
+    dentro di esso. La lastra **canta** una nota sola, bassissima, e la
+    schiena di Thorik smette di tremare.*
+  - **Fallimento** → *Il colpo arriva mezzo battito in ritardo. L'argento
+    si increspa come acqua e sputa schegge: le prendete in due.*
+- **③ Thorik — la tenuta.**
+  - **Riuscita** → *Reggi. La montagna spinge e tu resti dove sei, e per un
+    attimo hai il pensiero assurdo di uno che regge una porta perché
+    dall'altra parte c'è qualcuno che deve ancora entrare.*
+  - **Fallimento** → *Il peso trova la sua strada: le ginocchia cedono di
+    un dito, il fiato esce e non rientra. **(Applica il malus cumulativo.)***
+- **④ Artemis — la valvola.**
+  > *Dalla giuntura fra Corona e gemma comincia a uscire **roba**: non
+  > fuoco, non fumo — polvere verde incandescente, che sfrigola dove tocca.
+  > E tu, che conosci il valore delle cose a colpo d'occhio, ti accorgi con
+  > un certo disagio che quella polvere **vale**: è gemma che si disfa.*
+  - **Riuscita** → *Metti l'Anello in mezzo e la polvere gira attorno a te
+    come acqua attorno a un masso. Ti costa un guanto e mezzo mantello.*
+  - **Fallimento** → *La polvere passa. **(Applica il malus.)** L'odore è
+    quello del metallo bagnato — e ti resta addosso per giorni.*
+
+> **Chiusura del round.** *La gemma è **entrata di un'unghia** nel castone
+> della Corona. Un'unghia. E la sala ha già smesso di essere silenziosa: ora
+> c'è un ronzio basso che sale dalla lastra, e la polvere che avete alzato
+> **non ricade** — resta ferma a mezz'aria, in attesa.*
+
+#### ROUND 2 — «La resistenza»
+
+> **Apertura (Salvatore).** *Al secondo giro la sala ha deciso da che parte
+> stare, e non è la vostra. La polvere sospesa comincia a girare attorno
+> all'Altare in un cerchio lento; le rune verdi sotto i piedi si sono accese
+> tutte e scaldano attraverso il cuoio. Lo Smeraldo, adesso, **tira**: non
+> respinge più la Corona, la vuole — e vuole anche le mani che la tengono.*
+
+- **① Thorik — la presa.**
+  > *Le vene delle braccia sono diventate strade grigie sotto la pelle. Non
+  > fa male: è peggio. È come guardare la propria mano diventare **utensile**.
+  > E in mezzo a tutto questo — assurdo — le tue spalle sono meno pesanti di
+  > un momento fa, come se qualcuno di **freddo e verde** ci avesse appoggiato
+  > le mani da dietro.* *(È l'eco di Hella, §1: Thorik NON sa cos'è.)*
+- **② Tordek — il ritmo.**
+  > *Il battito di Thorik sta accelerando e tu devi seguirlo, non guidarlo. I
+  > guanti sono caldi. Da qualche parte, sotto il rumore, ti pare di sentire
+  > una **seconda** nota — più profonda della lastra, come se stessi battendo
+  > sul dorso di qualcosa di molto più grande dell'Altare.*
+  - **Riuscita** → *Le due note vanno d'accordo. Per un intero secondo la
+    gravità della camera dimentica di esistere e tutti e tre siete leggeri.*
+  - **Fallimento** → *Le due note litigano. Il pavimento vi morde i piedi.*
+- **③ Thorik — la tenuta.**
+  - **Riuscita** → *Tieni. La gemma scende di un altro dito nel castone e
+    lo senti come lo sentirebbe un fabbro: **incastro**, non frattura.*
+  - **Fallimento** → *Qualcosa dentro di te scivola. **(Malus cumulativo.)***
+- **④ Artemis — la valvola.**
+  > *Adesso non è più polvere: è un **getto**. Ti passa accanto qualcosa che
+  > somiglia a una moneta fusa e ti manca la faccia per un palmo. Dietro di
+  > te ci sono i tuoi compagni. Davanti a te c'è il getto. In mezzo, tu.*
+  - **Riuscita** → *L'Anello ride — lo senti proprio ridere — e la scoria si
+    apre in due attorno a voi come una tenda.*
+  - **Fallimento** → *Passa. **(Malus.)** E Thorik incassa anche la tua parte.*
+
+> **Chiusura del round.** *Metà. La gemma è dentro a metà, e la Corona ha
+> cambiato colore: il Topazio sulla fronte e il verde sulla tempia si stanno
+> **guardando**. La polvere sospesa gira più veloce. Sulla parete di cristallo
+> della sfera, fuori, il buio del Piano si è avvicinato a guardare.*
+
+#### ROUND 3 — «L'assestamento»
+
+> **Apertura (LotR + Salvatore).** *Il terzo giro non comincia: **arriva**,
+> come arriva l'ultimo tratto di una salita quando le gambe hanno già dato
+> tutto. La luce verde ha riempito la camera fino a farne un fondale, e ogni
+> cosa — le vostre mani, il metallo, la polvere ferma — ha lo stesso colore.
+> Non si sente più il proprio respiro. Si sente il **peso**, e basta.*
+
+- **① Thorik — la presa.**
+  > *Non stai più tenendo una corona contro una gemma. Stai tenendo **due
+  > pezzi di mondo** che hanno deciso di diventare una cosa sola, e ti hanno
+  > scelto come giuntura.*
+- **② Tordek — il ritmo.**
+  > *L'ultimo colpo lo devi dare **prima** che il cuore di Thorik lo chieda:
+  > il fabbro non insegue il ferro, lo aspetta.*
+  - **Riuscita** → *Il colpo arriva un istante prima del battito, e il
+    battito ci si appoggia sopra come un uomo stanco su una sedia.*
+  - **Fallimento** → *Un istante dopo. L'argento vi urla contro.*
+- **③ Thorik — la tenuta.**
+  - **Riuscita** → *Tieni fino in fondo — e senti il momento esatto in cui
+    la cosa smette di essere due cose.*
+  - **Fallimento** → *Cedi all'ultimo passo. **(Malus cumulativo.)** Nessuno
+    ti guarderà mai come uno che ha ceduto: ma tu lo saprai.*
+- **④ Artemis — la valvola.**
+  > *L'ultimo sfogo è breve e cattivo, e sa di temporale. Poi finisce.*
+  - **Riuscita** → *Rimani in piedi, mezzo bruciato, con addosso l'aria di
+    uno che ha appena dato via qualcosa senza chiedere il prezzo.*
+  - **Fallimento** → ***(Malus.)** La camera ti sbatte per terra come una
+    porta chiusa dal vento.*
+
+> **Chiusura — l'assestamento (leggi comunque, riusciti o no).** *E poi,
+> semplicemente, **smette**. Non c'è esplosione: c'è il rumore che fa una
+> montagna quando trova la sua posizione e decide di restarci per sempre.
+> Lo Smeraldo è dentro la Corona. La polvere sospesa cade tutta insieme, in
+> silenzio, come neve che ha aspettato tutto il giorno. E per un istante —
+> uno solo — la luce verde disegna nell'aria sopra l'Altare la forma di
+> qualcosa che ha quattro zampe. Poi non c'è più.* → **Fase 3**.
 
 ### FASE 3 — L'Incastonatura e il Ritorno di Durik
 Se sopravvivono, lo Smeraldo — verde e pulsante come linfa — si **incastona
@@ -1887,8 +2143,11 @@ aria; in zero-G = eviti Earth Mastery MA Push ti sbatte al muro (2d6) e ti
 serve volo/Equilibrio. Artemis in 🌫️ = quasi intoccabile (−4 boss) = star DPS.
 Terros NON vola: tienilo in zero-G → perde la rigenerazione e fatica.
 ────────────────────────────────────────────────────────────────────────
-SCENOGRAFIA (MAP 6): ingresso a NORD = 🌉 PONTE DI CRISTALLO (45 m; 50% crolla
-se Terros usa un colpo sismico → caduta 15 m, taglia la ritirata: non sostarci).
+⚠️ QUESTA GRIGLIA È LO STATO DAL ROUND 2 (Altare già centrato). Al round 1
+l'Altare è ATTRACCATO alla soglia nord e si stacca col risveglio (§8a-8b).
+SCENOGRAFIA (MAP 6): ingresso a NORD = 🚪 SOGLIA di mithral (si apre da sé;
+l'Altare vi era ormeggiato). Dopo il distacco: ~27 m di zero-G fra soglia e
+Altare — la via di fuga esiste, ma va attraversata in volo o a spinte.
 PIATTAFORME LATERALI 🟦 a EST e OVEST (+3 m, scale): posizioni di tiro per
 Artemis. ALTARE centrale 🟩: lo Smeraldo 💚 LEVITA sopra; alla VITTORIA l'Altare
 scende e la gemma diventa raggiungibile (§9). PARETI SFERICHE di cristallo:

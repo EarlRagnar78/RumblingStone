@@ -21,7 +21,8 @@
 > master #1), **prima** della resurrezione di Hella (master #3). Ordine D2.
 > **Canone a monte**: Topazio (Fuoco) e Smeraldo (Terra) presi; corpo di Hella
 > vegliato da Therysol nella Sala; il suo spirito ha già viaggiato (i PG **non
-> lo sanno**). Countdown Hammerfist all'arrivo: **~3 giorni e 18 ore**.
+> lo sanno**). Countdown Hammerfist all'arrivo: **~3g 20h** — o **3g 08h** se
+> hanno dormito prima di Terros. **Registro completo dei riposi in §0-bis**.
 
 ---
 
@@ -70,8 +71,9 @@ Moradin**; le mappe **S-1** e **S-2**.
 
 **Come si chiude.** Gli affreschi hanno registrato la vittoria della Terra; il
 portale del Tempo (A6) è all'**80%** e attende la terza tappa; il corpo di
-Hella è pronto per il rito. Countdown a fine beat: **~3 giorni 12 ore** (il
-tempo di un riposo lungo). → **master #3: la Resurrezione di Hella.**
+Hella è pronto per il rito. Countdown a fine beat: **~3g 04h** (o **3g 16h** se
+non hanno dormito prima di Terros) — il riposo nella Sala costa solo **−4 h**,
+tariffa divina (§0-bis). → **master #3: la Resurrezione di Hella.**
 
 ---
 
@@ -91,9 +93,67 @@ tempo di un riposo lungo). → **master #3: la Resurrezione di Hella.**
 | Dettagli nascosti negli affreschi | Osservare 20 | §4 |
 
 ### Countdown di Hammerfist (A7) — l'orologio che non si ferma
-Arrivo **~3g 18h** → dopo il riposo lungo **~3g 12h**. Ogni 6 ore reali passate
-qui l'affresco A7 aggiorna (mura che cedono, torri d'assedio). **Mostralo**: è
-la pressione che impedisce di trattare la Sala come un albergo.
+
+> 📍 **Questo è il file che possiede l'orologio.** Master #1 §8c-4 e la regia di
+> sessione ne riportano solo l'estratto: se i numeri divergono, **vale questo**.
+
+#### Le due tariffe del riposo `[CANONE — DM 2026-07-31]`
+
+| Dove dormono | 8 ore di sonno costano | Perché |
+|---|---|---|
+| **Ovunque**: Faerûn, Sottosuolo, Piano del Fuoco, Piano della Terra | **−12 h** | il sonno più il campo, le guardie, il rimettersi in marcia (`PortaleForgia-P1` r.987) |
+| **Sala della Forgia Eterna** | **−4 h** | la Sala è un luogo divino: **il tempo vi scorre più lento**. Otto ore di sonno vero ne costano quattro al mondo di sopra |
+
+⚠️ **La tariffa della Sala era −6 h: ora è −4 h.** Vale **per tutti** i riposi
+nella Sala, anche quelli **già giocati** (il ri-prezzo è già dentro il registro
+qui sotto). I giocatori **non lo sanno e non devono saperlo**: non annunciare
+mai lo sconto. Se qualcuno chiede perché il timer è sceso meno del previsto, la
+risposta è dentro il mondo — *«Moradin non conta le ore come le contano gli
+uomini»* — non è una concessione del DM.
+
+#### Il registro dei riposi (giocato + previsto)
+
+**Convenzione di calcolo:** il valore pubblicato **~3g 18h al rientro dal Piano
+della Terra** è l'**ancora**, e comprende già i riposi **R1 e R2**. Non
+ri-sottrarli: sono dentro. Da lì in poi il registro è additivo.
+
+| # | Dove | Stato | Effetto | Orologio |
+|---|---|---|---|---|
+| **R1** | Piano del Fuoco, prima della piramide | ✅ giocato | dentro l'ancora | — |
+| **R2** | **Sala**, dopo il Piano del Fuoco | ✅ giocato | **+2 h** (ri-prezzato −6 h → −4 h) | **3g 20h** |
+| **R3** | Piano della Terra, prima della camera di Terros | 🟡 **probabile, non ancora deciso** | **−12 h** | 3g 08h |
+| **R4** | **Sala** (o Stanza della Corona), prima del rito di Hella | previsto | **−4 h** (Sala) · **−12 h** (Stanza) | **3g 04h** |
+| — | il rito di resurrezione | previsto | ~1 h | 3g 03h |
+| — | viaggio a −1.000 (#4) | previsto | **0 h** — il Rubino riporta all'istante di partenza | 3g 03h |
+| — | **consegna all'ARC-08** | | | **≈ 3 giorni** |
+
+**Se NON fanno R3** (entrano da Terros senza dormire): **3g 20h − 4h = 3g 16h**
+al rito, **≈ 3g 15h** in consegna.
+
+**Dove sta il pericolo.** La soglia dei **2 giorni** (§8) è lontana in entrambi
+i rami: servirebbero **altri due riposi ordinari** oltre a quelli previsti per
+avvicinarsi. **Il tempo non è più la minaccia principale di questo beat** — lo
+è diventato il *costo delle scelte*. Non fingere un'urgenza che i numeri non
+sostengono: mostra l'affresco e lascia che sia lui a parlare.
+
+#### Cosa mostra A7, valore per valore
+
+L'affresco aggiorna ogni **6 ore reali**. **Mostralo ogni volta**: è l'unico
+posto in cui i PG vedono il prezzo di ciò che hanno appena scelto.
+
+| Orologio | Cosa si vede sull'affresco |
+|---|---|
+| **3g 20h** | l'orda si è **accampata**: fuochi ordinati fino all'orizzonte, le torri d'assedio ancora **in costruzione**. Le mura sono intatte. Sui camminamenti si vedono figure che portano acqua |
+| **3g 08h** | **prima ondata**. Una torre è in posizione contro il lato est; sui camminamenti ci sono i primi corpi coperti. Il fumo non sale più dritto: c'è vento |
+| **3g 04h** | la torre di **nord-ovest** ha preso un colpo che non è stato riparato, e alle porte lavora un **ariete**. Nella pietra dipinta c'è una **crepa sottile che non si richiude più** |
+| **sotto 2g** | **breccia aperta**, combattimento *dentro* le mura → scatta il §8: pannello velato su A8 e ARC-08 in Fase 0 dura |
+
+> **Read-aloud — A7, ogni volta che il timer scende (Andor).** *I numeri nanici
+> nell'angolo dell'affresco cambiano senza rumore. Non c'è un rintocco, non c'è
+> un avviso: semplicemente, la volta prima erano altri. E nella pietra dipinta
+> qualcosa si è mosso mentre non guardavate — una torre più vicina, un tratto di
+> camminamento vuoto che prima non lo era. **La battaglia non vi sta aspettando.
+> Sta succedendo.***
 
 ### La Cronaca, in tre righe
 Ogni gesta compiuta **incide un pannello** negli affreschi della Sala **e**
@@ -191,7 +251,8 @@ Zona **sicura**: nessun nemico. Vedi **MAPPA S-1**.
 - **A2 (Quattro Eroi)**: sale all'**80%** — la 4ª figura (Hella) prende contorno.
 - **A6 (Tempo)**: **80%**, il portale dorato pulsa: pronto per il #4.
 - **A8 (Ritorno)**: **60%** — i quattro e Hammerfist sullo sfondo.
-- **A7 (Hammerfist)**: countdown ~3g 18h, mura più segnate.
+- **A7 (Hammerfist)**: countdown **~3g 20h** (o **3g 08h** se hanno dormito
+  prima di Terros — vedi il registro dei riposi in §0-bis), mura più segnate.
 
 ### ZONA B — La Stanza della Corona (il luogo della morte)
 > **Read-aloud (Salvatore + Casa di Davide).** *Il Portale P1 è sempre aperto,
@@ -375,7 +436,9 @@ occhi e diventa il pannello-conseguenza del master #1.
 ### A7 — «La Battaglia di Hammerfist» (SUD-EST · LIVE)
 Hammerfist **adesso**, aggiornata ogni 6 ore reali: l'orda, le torri d'assedio,
 **Fauci di Palude** in volo, e un **timer** in numeri nanici. All'arrivo:
-**~3g 18h**. È l'orologio del beat (§0-bis).
+**~3g 20h** — o **3g 08h** se hanno dormito prima di Terros. È l'orologio del
+beat: il registro completo dei riposi e la progressione dell'affresco stanno in
+**§0-bis «Countdown di Hammerfist»**.
 - **Interazione (Aegis Fang, appoggiata alla cornice — canone, si salda col
   master #1 §1).** L'ascia **vibra e parla** (evento rarissimo): *«Drago. Fauci
   di Palude. Il capostipite della sua stirpe — **Skullcrusher il Nero** — cadde
@@ -468,9 +531,20 @@ sull'incisione della druida e pronuncia il suo nome (nessun tiro): la pietra è
 **Effetto:** al rito del #3, il primo TS del ritual-master ha **+1 sacro** (la
 Stanza «partecipa» alla resurrezione). *(Pannello-Cronaca «Il Ritorno».)*
 
-**Perché tornare qui.** La Stanza è ora un **Santuario Sicuro** (*Consacrare*):
-è il posto giusto per il **riposo lungo** prima del rito, meglio della Sala
-(dove A7 ticchetta). Ottimo anche come rifugio se qualcosa va storto (§8).
+**Perché tornare qui — e perché forse no.** La Stanza è ora un **Santuario
+Sicuro** (*Consacrare*), ed è il posto **emotivamente** giusto per il riposo
+lungo prima del rito: dormire dove Hella è morta, la sera prima di riportarla
+indietro. Ma da quando la tariffa della Sala è **−4 h** contro le **−12 h** di
+qualunque altro posto (§0-bis), la scelta è diventata un vero scambio:
+
+| Dove dormono | Costa | In cambio |
+|---|---|---|
+| **Sala della Forgia** | **−4 h** | niente bonus, e A7 ticchetta sotto gli occhi |
+| **Stanza della Corona** | **−12 h** | il **+1 sacro** al primo TS del ritual-master (l'interazione qui sopra) e la scena giusta |
+
+**Non suggerire tu la Sala.** Se scelgono la Stanza pagando otto ore in più per
+un +1 e per il senso della cosa, quella è esattamente la decisione che questo
+beat esiste per far prendere. Ottimo anche come rifugio se qualcosa va storto (§8).
 
 ---
 
@@ -498,7 +572,7 @@ rinnovabili 1/giorno tornando alla Sala.
 |---|---|
 | **Vogliono staccare le cornici d'oro** (5.000 mo l'una) | Impossibile: irremovibili (Durezza 20, e la Sala è sacra). Provarci **offende** — Moradin non concede Benedizioni per 24 h. Un Custode che ruba alla Forgia non è più un Custode, per un giorno. |
 | **Attaccano/danneggiano un affresco** | Il vetro è indistruttibile. Ma A1 **smette di girare la testa** a Thorik finché non c'è un atto di contrizione (una preghiera sincera, o un gesto verso Hella). La Cronaca registra anche gli affronti. |
-| **Vogliono riposare all'infinito nella Sala** | A7 **ticchetta**: mostra il countdown scendere, le mura di Hammerfist cedere. Ogni riposo extra = **−6 h** e un cambiamento visibile. Non c'è un cancello, c'è un **prezzo**. |
+| **Vogliono riposare all'infinito nella Sala** | A7 **ticchetta**: mostra il countdown scendere, le mura di Hammerfist cedere. Ogni riposo extra **nella Sala** = **−4 h** (tariffa divina), **fuori** dalla Sala = **−12 h**, e in entrambi i casi un cambiamento visibile sull'affresco. Non c'è un cancello, c'è un **prezzo**. |
 | **Saltano del tutto gli affreschi** (fretta verso il rito) | Legittimo: nessun affresco è obbligatorio. Perdono le Benedizioni della Cronaca, il Bane di Aegis Fang vs Fauci (A7) e la catarsi di Thorik (A3). La resurrezione del #3 resta possibile, ma **più fredda**: nessuno ha visto la promessa. |
 | **Chiedono a Therysol di risvegliare Hella subito** | Therysol non può (non è quello il rito): spiega che serve il Cuore di Moradin e i sacrifici del party (master #3). Ma la sua veglia è **canone vivo**: raccontala (un tiefling mezzodrago che monta la guardia a una druida morta, in silenzio, da giorni). |
 | **FALLIMENTO — sprecano l'orologio** (riposi ripetuti, indugio) | Nessun «game over»: ma se il countdown A7 scende sotto **2 giorni** prima del rito, la Cronaca incide un **pannello velato** su A8 (un'ombra sul finale trionfale) e il DM apre l'ARC-08 con Hammerfist **già in breccia** (Fase 0 più dura). Il tempo è la vera risorsa di questo beat: si perde in silenzio, come in Andor. |

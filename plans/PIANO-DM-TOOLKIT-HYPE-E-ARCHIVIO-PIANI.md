@@ -442,6 +442,14 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   **due bug meccanici chiusi** (Radice a Terra e Spinta), **TODO condizionato**
   sulla scheda dei Bracieri, rigenerazione booklet HTML/`.hb.md`/PDF.
 
+- [x] **K-B20** *(2026-07-31)*: **registro dei riposi ARC-07 a canone** — due
+  tariffe (ordinaria **−12 h**, **Sala della Forgia −4 h** perché il tempo vi
+  scorre più lento), `ARC07-DEF-2` §0-bis dichiarato **file proprietario
+  dell'orologio** con registro R1-R4 e **progressione dell'affresco A7 valore
+  per valore**, **stato di consegna all'ARC-08 per ramo** (`ARC07-DEF-5`),
+  **guarigione del passaggio** al viaggio −1.000 (`ARC07-DEF-4`), trade-off
+  Sala/Stanza della Corona per il riposo pre-rito.
+
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 
 | # | Domanda | Default se non risponde |

@@ -221,9 +221,29 @@ dove, alla fine, Skullcrusher cala. Vedi M7-B (arena del duello).
 > porte, una profezia nanica già incisa: «Quattro Eroi dal futuro salveranno la
 > fortezza dalla Mano Rossa e dal drago Skullcrusher il Nero». Quei Quattro
 > Eroi… siete VOI.*
+- ⚕️ **GUARIGIONE DEL PASSAGGIO (all'arrivo, automatica)** `[CANONE — DM
+  2026-07-31]`: attraversare mille anni **rimette in ordine il corpo**. I quattro
+  arrivano a **pf pieni**, senza livelli di affaticamento, con danni da
+  caratteristica temporanei azzerati e **tutti gli usi giornalieri ricaricati**
+  (invocazioni, poteri dei Bracieri, sinergie 1/giorno, incantesimi di Hella).
+  **Nessun tiro, nessun costo, non è una scelta.**
+  - **Cosa NON guarisce**: i **−2 COS permanenti** di Thorik (è un prezzo pagato,
+    non una ferita), gli oggetti spesi (Cuore di Moradin, Diapason, Rubino
+    quando si accenderà) e le condizioni narrative dell'Echo Ledger.
+  - **Perché esiste**: senza questa regola il party arriva al duello con
+    Skullcrusher con quello che è avanzato da Terros e dal rito — cioè, molto
+    probabilmente, **con dei nani mezzi morti**. Il #4 è una sessione-leggenda
+    con un solo scontro tattico: deve partire pulita.
+  - **Come si racconta** (mai come una ricarica): *«Il portale non vi trasporta:
+    vi RIFÀ. Per un istante lunghissimo siete scomposti nei vostri mille anni —
+    e quando vi ricomponete dall'altra parte, le ferite che avevate non ci sono
+    più, perché in questo momento della storia non le avete ancora ricevute.»*
+  - Il **costo sull'orologio di Hammerfist è zero**: il Rubino riporta i PG
+    all'istante esatto della partenza (`ARC07-DEF-5` §Supporto PF1e).
 - **Handout**: la **pagina delle Cronache** (§9) — scoprono di essere la profezia.
 - **Shock temporale (all'arrivo)**: TS Volontà **CD 20** o **confusi 1d4 round**
-  (−2 concentrazione/percezione), poi chiarezza.
+  (−2 concentrazione/percezione), poi chiarezza. *(È l'unico prezzo del
+  passaggio: il corpo torna intero, la testa no.)*
 - **Prova di gruppo**: Conoscenze (storia)/Sapienza **CD 18** — capire che nulla
   di ciò che faranno è "opzionale": è **già** accaduto.
 - ► **Esito**: accettano/subiscono il ruolo. Imposta il tono «nessuna pietà» vs

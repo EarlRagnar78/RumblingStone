@@ -19,8 +19,9 @@
 | Diapason Armonico | ⚠️ **SPESO sulla Sentinella** (Grido Superiore innescato dalla Frequenza): niente stun anti-arrocco contro Terros | master §7b/§8 (canone giocato) |
 | Frequenza della Confusione | ✅ ancora disponibile (è conoscenza): **il malus round 1 su Terros si attiva con la SOLA Frequenza** — nauseato, −4 att/CA | master §8 |
 | Posizione del party | dentro il Tempio di Mithral, oltre l'Anticamera, verso la camera sferica | master §7→§8 |
-| Countdown Hammerfist | baseline ~3g 18h a fine parte, **ma la pausa di 8 h già fatta nel Piano del Fuoco vale −12 h** → ~3g 06h. Se dormono anche prima di Terros: −12 h ancora | master §0 + **§8c-4** |
-| Riposo prima della camera del boss | possibile e probabile: **costa −12 h e Terros va scalato a 34 DV** (arrivano a risorse piene) | master §8c-4 |
+| Riposi già fatti (Piano del Fuoco prima della piramide · Sala dopo il Fuoco) | ✅ **a canone e già conteggiati** | `ARC07-DEF-2` §0-bis |
+| Countdown Hammerfist | **~3g 20h** entrando nella camera · **~3g 08h** se dormono prima | `ARC07-DEF-2` §0-bis (registro completo) |
+| Riposo prima della camera del boss | possibile e **probabile**: −12 h, ma il prezzo vero è che **Terros va scalato a 34 DV** (arrivano a risorse piene) | master §8c-4 + §4 qui sotto |
 
 ### I risultati del viaggio di Hella (SOLO DM — servono al #3, non stasera)
 
@@ -201,11 +202,41 @@ contro Lotta +40 ed era **impossibile** (massimo 27 contro minimo 41).
 > Successo = Terros **inchiodato in superficie 1 round, niente rigenerazione**.
 > È la risposta all'arrocco dei 172 pf, ora che il Diapason è speso.
 
-### Se hanno dormito prima di entrare
+### Se hanno dormito prima di entrare (probabile)
 
-Costa **−12 h** di countdown, ma soprattutto **tornano tutti i poteri
-1/giorno** (Trinità, Colpo dell'Alba Oscura, Firestorm, i 3 Quicken di
-Artemis). Allora usa il ramo già previsto dal master: **Terros a 34 DV**
-(390 pf, attacchi +32) e **Scudo di Geodi già attivo quando la soglia si
-apre**. Riposando hanno dato tempo anche a lui — e lo vedono in faccia.
-Conto dell'orologio aggiornato con le due pause già fatte: **§8c-4** del master.
+**Il prezzo non è l'orologio: è Terros.** Tornano tutti i poteri 1/giorno
+(Trinità, Colpo dell'Alba Oscura, Firestorm, i 3 Quicken di Artemis), quindi
+scatta il ramo già previsto dal riquadro *Scalare lo scontro*: **Terros a 34 DV**
+(390 pf, attacchi +32) e **Scudo di Geodi già attivo quando la soglia si apre**.
+Riposando hanno dato tempo anche a lui — e lo vedono in faccia.
+
+L'orologio **non** è la leva: costa −12 h, ma la soglia critica resta lontana
+(sotto). **Non recitare un'urgenza che i numeri non sostengono**: mostra
+l'affresco, non minacciare la scadenza.
+
+### L'orologio di Hammerfist — registro dei riposi `[CANONE 2026-07-31]`
+
+Due tariffe, e una è un regalo che **i giocatori non devono sapere**:
+
+| Dove dormono | 8 ore costano |
+|---|---|
+| ovunque (Faerûn, Sottosuolo, Piano del Fuoco, Piano della Terra) | **−12 h** |
+| **Sala della Forgia Eterna** | **−4 h** — è un luogo divino, il tempo vi scorre più lento |
+
+> Non annunciare mai lo sconto. Se qualcuno nota che il timer è sceso meno del
+> previsto, la risposta sta nel mondo: *«Moradin non conta le ore come le
+> contano gli uomini.»*
+
+I riposi già giocati (Piano del Fuoco prima della piramide, Sala dopo il Piano
+del Fuoco) sono **a canone e già conteggiati**. Da stasera in poi:
+
+| Ramo | Al rito di Hella | In consegna all'ARC-08 |
+|---|---|---|
+| entrano da Terros **senza dormire** | 3g 16h | ≈ 3g 15h → **Fase 0 piena** |
+| **dormono** prima di Terros | 3g 04h | ≈ 3g 03h → **Fase 0 accorciata** (prima ondata già passata) |
+
+La soglia critica dei **2 giorni** (pannello velato su A8 + ARC-08 in Fase 0
+dura) è **fuori portata in entrambi i rami**: servirebbero altri due riposi
+ordinari. Registro completo, progressione dell'affresco A7 valore per valore e
+stato di consegna all'ARC-08: **`ARC07-DEF-2` §0-bis** (è il file che possiede
+l'orologio) e `ARC07-DEF-5`.

@@ -151,8 +151,9 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 | Diapason Armonico | ⚠️ **SPESO sulla Sentinella** (Grido Superiore innescato dalla Frequenza): niente stun anti-arrocco contro Terros | master §7b/§8 (canone giocato) |
 | Frequenza della Confusione | ✅ ancora disponibile (è conoscenza): **il malus round 1 su Terros si attiva con la SOLA Frequenza** — nauseato, −4 att/CA | master §8 |
 | Posizione del party | dentro il Tempio di Mithral, oltre l'Anticamera, verso la camera sferica | master §7→§8 |
-| Countdown Hammerfist | baseline ~3g 18h a fine parte, **ma la pausa di 8 h già fatta nel Piano del Fuoco vale −12 h** → ~3g 06h. Se dormono anche prima di Terros: −12 h ancora | master §0 + **§8c-4** |
-| Riposo prima della camera del boss | possibile e probabile: **costa −12 h e Terros va scalato a 34 DV** (arrivano a risorse piene) | master §8c-4 |
+| Riposi già fatti (Piano del Fuoco prima della piramide · Sala dopo il Fuoco) | ✅ **a canone e già conteggiati** | `ARC07-DEF-2` §0-bis |
+| Countdown Hammerfist | **~3g 20h** entrando nella camera · **~3g 08h** se dormono prima | `ARC07-DEF-2` §0-bis (registro completo) |
+| Riposo prima della camera del boss | possibile e **probabile**: −12 h, ma il prezzo vero è che **Terros va scalato a 34 DV** (arrivano a risorse piene) | master §8c-4 + §4 qui sotto |
 
 ### I risultati del viaggio di Hella (SOLO DM — servono al #3, non stasera)
 
@@ -333,14 +334,44 @@ contro Lotta +40 ed era **impossibile** (massimo 27 contro minimo 41).
 > Successo = Terros **inchiodato in superficie 1 round, niente rigenerazione**.
 > È la risposta all'arrocco dei 172 pf, ora che il Diapason è speso.
 
-### Se hanno dormito prima di entrare
+### Se hanno dormito prima di entrare (probabile)
 
-Costa **−12 h** di countdown, ma soprattutto **tornano tutti i poteri
-1/giorno** (Trinità, Colpo dell'Alba Oscura, Firestorm, i 3 Quicken di
-Artemis). Allora usa il ramo già previsto dal master: **Terros a 34 DV**
-(390 pf, attacchi +32) e **Scudo di Geodi già attivo quando la soglia si
-apre**. Riposando hanno dato tempo anche a lui — e lo vedono in faccia.
-Conto dell'orologio aggiornato con le due pause già fatte: **§8c-4** del master.
+**Il prezzo non è l'orologio: è Terros.** Tornano tutti i poteri 1/giorno
+(Trinità, Colpo dell'Alba Oscura, Firestorm, i 3 Quicken di Artemis), quindi
+scatta il ramo già previsto dal riquadro *Scalare lo scontro*: **Terros a 34 DV**
+(390 pf, attacchi +32) e **Scudo di Geodi già attivo quando la soglia si apre**.
+Riposando hanno dato tempo anche a lui — e lo vedono in faccia.
+
+L'orologio **non** è la leva: costa −12 h, ma la soglia critica resta lontana
+(sotto). **Non recitare un'urgenza che i numeri non sostengono**: mostra
+l'affresco, non minacciare la scadenza.
+
+### L'orologio di Hammerfist — registro dei riposi `[CANONE 2026-07-31]`
+
+Due tariffe, e una è un regalo che **i giocatori non devono sapere**:
+
+| Dove dormono | 8 ore costano |
+|---|---|
+| ovunque (Faerûn, Sottosuolo, Piano del Fuoco, Piano della Terra) | **−12 h** |
+| **Sala della Forgia Eterna** | **−4 h** — è un luogo divino, il tempo vi scorre più lento |
+
+> Non annunciare mai lo sconto. Se qualcuno nota che il timer è sceso meno del
+> previsto, la risposta sta nel mondo: *«Moradin non conta le ore come le
+> contano gli uomini.»*
+
+I riposi già giocati (Piano del Fuoco prima della piramide, Sala dopo il Piano
+del Fuoco) sono **a canone e già conteggiati**. Da stasera in poi:
+
+| Ramo | Al rito di Hella | In consegna all'ARC-08 |
+|---|---|---|
+| entrano da Terros **senza dormire** | 3g 16h | ≈ 3g 15h → **Fase 0 piena** |
+| **dormono** prima di Terros | 3g 04h | ≈ 3g 03h → **Fase 0 accorciata** (prima ondata già passata) |
+
+La soglia critica dei **2 giorni** (pannello velato su A8 + ARC-08 in Fase 0
+dura) è **fuori portata in entrambi i rami**: servirebbero altri due riposi
+ordinari. Registro completo, progressione dell'affresco A7 valore per valore e
+stato di consegna all'ARC-08: **`ARC07-DEF-2` §0-bis** (è il file che possiede
+l'orologio) e `ARC07-DEF-5`.
 
 
 \page
@@ -442,7 +473,9 @@ il PDF **Benedizioni di Moradin**.
 combinati di tutti e tre** (§9) → gli affreschi della Sala **e** della Stanza
 della Corona incidono un nuovo pannello (§10, "La Forgia Ricorda") → si apre
 la strada alla resurrezione di Hella (#3). Countdown Hammerfist a fine parte:
-**~3 giorni e 18 ore**.
+**~3g 20h** — o **~3g 08h** se hanno dormito prima di Terros. Le due tariffe
+del riposo (ordinario **−12 h**, Sala della Forgia **−4 h**) e il registro
+completo stanno in `ARC07-DEF-2` §0-bis.
 
 ---
 
@@ -1648,8 +1681,8 @@ R4+: alterna Earth Glide mordi-e-fuggi, Onda e Scudo. Sotto il
 | **Fuggono a metà scontro** | Terros NON insegue oltre la camera (è vincolato all'Altare). Ma la Forgia registra: al ritorno lo trovano **guarito del tutto** e lo Scudo di Geodi parte già attivo. Il countdown di Hammerfist, intanto, è sceso. |
 | **Distruggono/danneggiano l'Altare** | Impossibile scalfirlo (mithral consacrato, Durezza 20, autoriparante) — ma il TENTATIVO è sacrilegio: Terros entra in **furia** (+2 att/danni, −2 CA) e i Bracieri di Tordek **si raffreddano** di disapprovazione (nessun malus meccanico: solo il gelo del vecchio fabbro nella mente). |
 | **Qualcuno precipita nell'oceano di roccia (fuori dal Tempio)** | Non è lava: è **roccia semi-liquida**. Affonda lentamente (3 round per sommersione): Nuotare CD 20 (faticoso) o corda dei compagni; sommerso = soffocamento + 2d6 schiacciamento/round. Drammatico, non istantaneamente letale. |
-| **Vogliono riposare dentro il Tempio prima del boss** | Possibile (l'Anticamera post-Sentinella è sicura), MA costa **−12 h** di countdown (tariffa del Piano della Terra, `PortaleForgia-P1` r.987) e **Terros ti arriva a risorse piene**: vedi il **§8c-4** — quel riposo è il ramo «party straripante di risorse» del riquadro *Scalare lo scontro*. Mostra l'orologio (§0). Ogni riposo qui è ore rubate alla montagna che brucia. |
-| **I PG CADONO (sconfitta contro Terros)** | Niente TPK gratuito: il voto di Terros è **custodire**, non massacrare. I caduti vengono **espulsi** — la gravità del Nodo li sputa fuori e si risvegliano sulla riva dell'Oceano di Roccia, interi ma **segnati**: 1 livello di affaticamento che nessun riposo qui rimuove, e il countdown di Hammerfist è sceso di **−12 ore**. Nella Sala, l'affresco A5 mostra ora un **pannello velato** (la Forgia registra anche le sconfitte). Possono ritentare: Terros li aspetta, guarito. *La sconfitta costa tempo e orgoglio, non la campagna.* |
+| **Vogliono riposare dentro il Tempio prima del boss** | Possibile (l'Anticamera post-Sentinella è sicura), e **probabile**. Costa **−12 h** di orologio (tariffa ordinaria, `ARC07-DEF-2` §0-bis) — ma il prezzo vero **non è il timer**: è che **Terros ti arriva a risorse piene**, quindi scatta il ramo «party straripante di risorse» del riquadro *Scalare lo scontro* (**§8c-4**). Mostra l'affresco A7, non minacciare la scadenza: a 3g 08h la soglia critica è ancora lontana. |
+| **I PG CADONO (sconfitta contro Terros)** | Niente TPK gratuito: il voto di Terros è **custodire**, non massacrare. I caduti vengono **espulsi** — la gravità del Nodo li sputa fuori e si risvegliano sulla riva dell'Oceano di Roccia, interi ma **segnati**: 1 livello di affaticamento che nessun riposo qui rimuove, e il countdown di Hammerfist è sceso di **−12 ore** (tariffa ordinaria). Nella Sala, l'affresco A5 mostra ora un **pannello velato** (la Forgia registra anche le sconfitte). Possono ritentare: Terros li aspetta, guarito. *La sconfitta costa tempo e orgoglio, non la campagna.* |
 
 **Durata attesa 4–6 round. XP** ~5.400/PG (CR 15, 3 PG) `[verif. ✓ ERRATA/TESORO-WBL 2026-07-23]`.
 **Loot**: **Geode Titanico** (5.000 mo, cristalli d'adamantio) + **Cuore di
@@ -1840,22 +1873,25 @@ lo scontro sui 4-6 round invece che su 3. E ti regala l'immagine giusta —
 guardiano è **già in piedi, già schermato, già in attesa**. Il prezzo del
 sonno lo vedono in faccia prima che sull'affresco.
 
-**Orologio, conto aggiornato** (baseline master **3g 18h** al rientro nella
-Sala, corsa senza riposi extra):
+**Orologio, estratto** `[CANONE — DM 2026-07-31]`. Il registro completo dei
+riposi, con le tariffe e la progressione dell'affresco A7, vive in
+**`ARC07-DEF-2` §0-bis**, che è il file che possiede l'orologio: se i numeri
+divergono, vale quello.
 
-| Voce | Countdown |
-|---|---|
-| Baseline a fine parte | **3g 18h** |
-| − pausa di 8 h già fatta nel Piano del Fuoco `[canone giocato]` | −12 h → **3g 06h** |
-| − riposo prima della camera di Terros (se lo fanno) | −12 h → **2g 18h** |
-| − riposo lungo nella Sala al rientro (previsto) | −6 h → **2g 12h** |
+Le due tariffe: **riposo ordinario −12 h** (Faerûn, Sottosuolo, Piano del Fuoco,
+Piano della Terra) · **riposo nella Sala della Forgia Eterna −4 h** (la Sala è
+un luogo divino, il tempo vi scorre più lento — i giocatori **non lo sanno**).
 
-⚠️ **Soglia da tenere d'occhio** (`ARC07-DEF-2` §8): se il countdown scende
-**sotto i 2 giorni prima del rito di Hella**, la Cronaca incide un **pannello
-velato su A8** e l'**ARC-08 si apre con Hammerfist già in breccia**. A 2g 12h
-restano **12 ore di margine: un altro riposo qualsiasi e ci finiscono
-dentro.** Non dirglielo — **faglielo vedere**: al risveglio l'affresco A7
-aggiorna, e questa volta la breccia nel muro nord non si richiude.
+| Ramo | Prima di Terros | Al rito di Hella | In consegna all'ARC-08 |
+|---|---|---|---|
+| **Entrano senza dormire** | 3g 20h | **3g 16h** | ≈ 3g 15h |
+| **Dormono prima di Terros** (probabile) | **−12 h** | **3g 04h** | ≈ 3g 03h |
+
+La soglia dei **2 giorni** (`ARC07-DEF-2` §8, pannello velato su A8 + ARC-08 in
+Fase 0 dura) resta **lontana in entrambi i rami**: servirebbero altri due riposi
+ordinari per avvicinarla. **Quindi non recitare un'urgenza che i numeri non
+sostengono.** Il prezzo del riposo qui **non è il timer: è Terros**, che ti
+arriva a risorse piene. Mostra l'affresco, non minacciare l'orologio.
 
 ---
 
@@ -2255,8 +2291,10 @@ futuro). *Lista completa degli 8 affreschi e del gancio → master #2.*
 > nebbia della parete di Nord-Ovest, la quarta figura ha ora un contorno. La
 > Corona di Thorik pesa di una gemma in più.*
 
-Countdown Hammerfist: **~3 giorni e 18 ore** (~90 ore). Il party è esausto:
-Moradin consiglia un riposo lungo. **Poi**: gli affreschi e la Stanza della
+Countdown Hammerfist: **~3g 20h**, o **~3g 08h** se hanno dormito prima di
+Terros (registro completo: `ARC07-DEF-2` §0-bis). Il party è esausto: Moradin
+consiglia un riposo lungo — **nella Sala costa solo −4 h**, e loro non sanno
+perché. **Poi**: gli affreschi e la Stanza della
 Corona (master #2), quindi la **resurrezione di Hella** (master #3).
 
 **Tesori ordinari della parte**: mithral grezzo + geodi (~5.200 mo) + Geode

@@ -774,6 +774,56 @@ finora la propria avidità nell'arco:
 > pagarlo caro (se è avido) — e in entrambi i casi la scelta **torna** più
 > avanti. Registra l'esito nell'**Echo Ledger** (§11).
 
+> ### ✅ CANONE GIOCATO (DM 2026-07-31) — la terza strada: PRESO, MAI TOCCATO
+>
+> **Cos'è successo davvero.** Artemis **non ha rifiutato** e **non ha
+> accettato**: ha **estratto il cabochon senza toccarlo a mani nude** e l'ha
+> fatto **mettere nello zaino di TORDEK**. Il Seme viaggia col party, sigillato
+> in una sacca che non è la sua.
+>
+> **Stato meccanico — il Marchio NON è attivo.** Il vincolo si chiude **col
+> tocco** (*«la voce arriva col tocco della gemma»*, e Varis chiede di
+> incastonarla nell'Anello). Quindi, oggi:
+>
+> | | Stato |
+> |---|---|
+> | **Marchio di Varis** | ❌ **non attivo**. Varis **non** localizza Artemis, non ha crediti da riscuotere |
+> | **Frammento di Mercato** (lo sconto/+4) | ❌ non ottenuto: il premio si paga col tocco |
+> | **+1 morale del rifiuto** | ❌ non ottenuto: non ha rifiutato |
+> | **Il Seme** | ✅ **posseduto**, integro, tiepido, nello **zaino di Tordek** |
+>
+> **Come reagisce Varis (e perché è meglio così).** Il mercante **non sa** che
+> gli è successo. La sua esca non è stata né morsa né distrutta: è stata
+> **presa e messa da parte**, che per un mercante è la risposta più
+> inquietante di tutte — significa che il cliente ha capito il prezzo e **ha
+> deciso di decidere dopo**. Il Seme resta un'offerta aperta a tempo
+> indeterminato, e Varis, quando se ne accorgerà, la leggerà come una
+> **contro-mossa**: non un pollo, non uno sfuggito, ma **qualcuno che tratta**.
+> *(Aggiorna così la nota su Vatore al #4: non riconosce la firma di un
+> debitore, riconosce quella di un collega.)*
+>
+> **Il dettaglio che vale la campagna: è nello zaino di TORDEK.** Artemis non
+> ha resistito alla tentazione — l'ha **rimandata**, e nel farlo l'ha
+> **appoggiata sulla schiena di qualcun altro**. Tordek porta un innesto
+> planare tiepido, e **non sa cosa sia**. Non serve nessuna meccanica per
+> renderlo pesante: basta ricordarsene.
+>
+> - **Se Tordek lo tocca** (curiosità, inventario, un compagno che rovista):
+>   la voce di Varis arriva **a lui**, ricalibrata su un monaco nanico — non
+>   offre tesori, offre **certezze** («posso dirti dove sarà tuo fratello
+>   quando servirà»). Il Marchio si chiuderebbe su **Tordek**, non su Artemis.
+> - **Se lo tocca Artemis più avanti**: vale la riga «Prende la gemma» della
+>   tabella qui sopra, senza sconti — l'offerta non scade.
+> - **Se lo distruggono** (Sapienza Magica CD 20): vale la riga «Rifiuta», ma
+>   **tardi** — Varis ha già capito che è stato riconosciuto.
+>
+> **Semi da far germogliare (nessuna meccanica, solo memoria).** Lo zaino di
+> Tordek è **appena più caldo** degli altri quando lo posa. I Bracieri, che
+> hanno una coscienza e un carattere da vecchio fabbro, **non commentano** —
+> e quel silenzio, per chi lo nota, dice più di un avvertimento.
+>
+> → **Echo Ledger (§11): «Il Seme dorme nello zaino sbagliato».**
+
 > **Nota su Sal/Vatore (per il DM).** Questo marchio si intreccia col #4
 > (Viaggio a 1.000 anni fa), dove **Sal è presente come "Vatore"**: se Artemis
 > porta il Marchio di Varis, il DM può far riconoscere a Vatore la "firma" del
@@ -1510,6 +1560,24 @@ arriva a risorse piene. Mostra l'affresco, non minacciare l'orologio.
 
 ---
 
+> ### ✅ CANONE GIOCATO (DM 2026-07-31) — TERROS È CADUTO
+>
+> Il party è entrato nella camera **senza aver riposato** (niente ramo «34 DV»:
+> Terros è stato affrontato al profilo pieno standard) e **ha vinto**. Il
+> guardiano si è sbriciolato sull'Altare, lo Smeraldo è emerso dal torace, e
+> l'Altare è sceso a livello del pavimento. Il rito del §9 è stato giocato
+> subito dopo (vedi il blocco lì).
+>
+> **Conseguenze già maturate:**
+> - **Loot dell'arco disponibile**: Geode Titanico (5.000 mo) + **Cuore di
+>   Terros** (20.000 mo) + residuo golem + geodi.
+> - Sbloccata la condizione del **TODO «Diventare una Collina»** sui Bracieri
+>   Gemelli (`PG/Artefatti/Artefatti-Pg/Tordek/05_Bracieri_Gemelli_Scheda_PG_Completa.md`):
+>   Tordek ha dimostrato il proprio valore contro il guardiano. **Il potere va
+>   ora scritto sulla scheda** — finché il TODO è aperto non esiste al tavolo.
+> - L'ultimo suono di Terros è stato di **assenso**, non d'odio (il party aveva
+>   curato i Cristalli, §6).
+
 ## §9 — IL RITUALE DELLO SMERALDO: «L'Incudine del Mondo» (volontà + poteri di TUTTI)
 
 > Sconfitto Terros, si sbriciola e dal torace, tenuto a galla dal magnetismo
@@ -1543,6 +1611,38 @@ L'Altare porta la gravità a livelli intollerabili. Thorik si inginocchia.
 > **Regia (asimmetria).** Thorik **non sa** che la presenza verde è Hella; per
 > la giocatrice di Hella è uno dei suoi echi (§1). **Non spiegarlo finché non
 > torna Hella (#3).**
+
+> ### ✅ CANONE GIOCATO (DM 2026-07-31) — scelta A: il sacrificio MATERIALE
+>
+> `[ASSUNZIONE DA UNA RIGA DEL DM: «rituale della gemma **economica**» → letto
+> come **Opzione A, sacrificio materiale**. Se al tavolo era invece l'Opzione B
+> (Thorik prende il Peso nel corpo: −2 DES / +2 COS permanenti), questa è
+> l'unica riga da correggere — e con lei state.md §1/§6.]`
+>
+> Thorik **non** ha preso il Peso nel corpo: il party ha **pagato**. Le 40.500
+> mo sono uscite dal bottino dell'arco (Geode Titanico, **Cuore di Terros**,
+> residuo golem, geodi) **più** l'equipaggiamento magico personale necessario a
+> colmare la differenza.
+>
+> | | Stato |
+> |---|---|
+> | **Thorik** | ❌ nessun −2 DES / +2 COS. Le sue caratteristiche restano quelle di prima (resta il **−2 COS permanente** più vecchio, dalla resurrezione mancata di Hella — quello è di un'altra scena e non si tocca) |
+> | **Cuore di Terros** (20.000 mo) | ❌ **speso nel rito**. Niente *Amuleto di Armatura Naturale +5*, niente componente: **Artemis ha visto il suo tesoro sciogliersi sull'Altare** |
+> | **Bottino dell'arco** | ❌ sostanzialmente azzerato |
+> | **Equipaggiamento personale** | ⚠️ intaccato: il DM stabilisca **cosa** è stato dato via, PG per PG, e lo registri sulle schede |
+>
+> **La conseguenza vera è a Hammerfist, non qui.** Il party entra nell'ARC-08
+> **impoverito**: sotto la WBL attesa per il 13° livello. Non è un errore di
+> bilanciamento da correggere di nascosto — è **la cosa che hanno scelto**, e
+> il modo giusto di onorarla è farla **contare** e poi farla **ripagare** dalla
+> montagna: i nani di Hammerfist sanno chi ha comprato la loro salvezza
+> spogliandosi, e un fabbro nanico che lo scopre non resta a guardare. Il delta
+> WBL si colma **in ARC-08 come ricompensa narrata**, non come loot casuale.
+>
+> **Il beat da non perdere.** Artemis ha lasciato andare il Cuore di Terros —
+> l'oggetto che il modulo diceva che *«l'occhio di Artemis ci si posa subito»*.
+> Qualunque cosa faccia più avanti col Seme di Varis, **questo** è successo
+> prima: dagliene atto, almeno una volta, per bocca di qualcun altro.
 
 ### FASE 2 — Forgiare la Connessione (3 round, TUTTI insieme) ⭐
 > **QUESTO è il cuore meccanico ed emotivo che era andato perso nella

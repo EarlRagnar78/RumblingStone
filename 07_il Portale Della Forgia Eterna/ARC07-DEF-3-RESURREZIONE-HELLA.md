@@ -22,9 +22,11 @@
 > sigla storica "3B". **Canone a monte**: lo spirito di Hella **ha già
 > compiuto il viaggio nell'Incudine del Mondo** (verità piena / ferita aperta /
 > Via della Radice — tutte le prove superate); i PG **non lo sanno ancora** —
-> lo scopriranno qui, dalla sua voce (§9). Countdown Hammerfist: **~3g 04h**
-> (o **~3g 16h** se non hanno dormito prima di Terros) — registro dei riposi e
-> tariffe in `ARC07-DEF-2` §0-bis, che è il file che possiede l'orologio.
+> lo scopriranno qui, dalla sua voce (§9). Countdown Hammerfist: **~3g 16h**
+> `[CANONE GIOCATO 2026-07-31]` — registro dei riposi in `ARC07-DEF-2` §0-bis,
+> che è il file che possiede l'orologio. Il party arriva **riposato** (hanno
+> dormito nella Sala) e col sogno del **§7-bis** addosso: Hella, dall'altro
+> lato, **ha già sentito Thorik dire il suo nome nel sonno**.
 
 ---
 

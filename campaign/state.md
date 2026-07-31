@@ -18,7 +18,11 @@
 **Sessions completed:** Arco 07 **in corso** al tavolo — giocati: Sala
 della Forgia Eterna (P1-P2), Piano del Fuoco con Topazio recuperato (P3),
 viaggio spirituale di Hella nell'Incudine del Mondo con Durik (P3B-spirito,
-registrato); **in corso: Piano della Terra (P4)**, Smeraldo in palio.
+registrato); **✅ Piano della Terra (P4) COMPLETATO al tavolo 2026-07-31**:
+Terros l'Antico sconfitto, **Smeraldo della Forza forgiato nella Corona**
+(rito con sacrificio **materiale** — vedi §6 e §7.E), Seme-Mercato di Varis
+**preso ma mai toccato**; party rientrato nella Sala e **riposato lì**
+(orologio Hammerfist a **3g 16h**). **Prossimo: resurrezione di Hella (P3B).**
 Restano da giocare: resurrezione fisica di Hella (P3B), viaggio ai
 1.000 anni fa (P5), raccordo al 1372 (D16) — **poi** l'Arco 08 (Battaglia
 di Hammerfist). **Tutto ciò che questo file dice dell'Arco 08 e
@@ -310,7 +314,7 @@ the listed consequence triggers.
 | Thorik | Hella (implicit) | He sacrificed 2 perm CON for her resurrection — she owes a moral debt | Affects Hella's ethics rolls in arguments with Thorik |
 | Tordek | Hella | 500 XP sacrificed for her resurrection | Affects romantic-bond progression at Sacred Forest |
 | Tordek | Tournament organizers | Show up at Dauth by **Day 29** (eve of the preliminaries — invite Day 24, arrival Day 28, Tournament Day 1-3 = Day 30-32, HOOKS-INTEGRATION-MASTER §1.1) | Disqualification; 150 Lance di Re Thorek reinforcements lost (D10 — separate from the 300 mercenaries won at the Tournament itself) |
-| Artemis | Varis "Seta-Argento" | Deliver one Underdark artifact per quarter | Varis cuts off the Mantello dei Tiri Salvezza supply |
+| Artemis | Varis "Seta-Argento" | Deliver one Underdark artifact per quarter · **⚠️ 2026-07-31: ha il Seme-Mercato in mano, non toccato (nessun Marchio). La partita con Varis è aperta e alla pari** | Varis cuts off the Mantello dei Tiri Salvezza supply |
 | Artemis | Mask cult (suspected) | Unknown — they've been watching the Ring | Black-bag attempt during a vulnerable moment |
 | Hella | Druid Circle | Pass the Sacred Forest ritual within 12 days | Circle will not aid at Rethmar |
 | Party (collective) | Therysol | Help him strike Il Collezionista's Dauth cell | Therysol withdraws his combat support |
@@ -331,7 +335,7 @@ full mechanics.
 | Artifact | Holder | **Today at the table (ARC-07 P4)** | **Prepared (ARC-09 entry)** |
 |---|---|---|---|
 | Aegis Fang | Thorik | Pre-full-awakening: +2 Returning Dwarven Waraxe; bonded | Unchanged until the Siege (P5) is won → then Stage 1 full awakening (see Aegis master) |
-| Corona di Adamantio | Thorik | **Only Topaz lit** (D8/D16): Stone's Awareness (incl. traps + comprehend languages, DM 2026-07-04), +2 deflection AC, Topaz time-travel 1/month (activation: 1 hour) | All 3 gems lit: + Emerald earthquake 1/week; Ruby single-use SPENT at the ancient battle (≈372 DR) |
+| Corona di Adamantio | Thorik | ✅ **Topazio + SMERALDO accesi** (giocato 2026-07-31): Stone's Awareness (incl. traps + comprehend languages), +2 deflection AC, Topaz time-travel 1/month (attivazione 1 ora), **Smeraldo/Terra attivo**. Manca solo il Rubino | All 3 gems lit: + Emerald earthquake 1/week; Ruby single-use SPENT at the ancient battle (≈372 DR) |
 | Ring of Chaotic Illumination | Artemis | Reforged at Eternal Forge: full base powers | Unchanged; awaits further evolution at Invisible Tower |
 | Bracieri Gemelli di Moradin | Tordek | Fire ✅ + Earth ✅: Salto Infuocato 3/day, Fire Resist 10, DR 5/adamantine, Jump +10; Benedizione della Forgia active (4 charges/day — permanent for the whole campaign, DM 2026-07-04) | Unchanged |
 | Cintura della Devastazione (custom PG, D17) | Tordek | Active — Devastation Gauntlets (MIC) moved to **belt slot** so wrists stay free for the Bracieri; ~3/day devastation charges (+2d6). Sheet: `PG/Artefatti/Artefatti-Pg/Tordek/00_Cintura_della_Devastazione.md`. Exact values → ARC-07 B5 | Unchanged |
@@ -382,7 +386,7 @@ changelog with the resolution.
 - **[VATORE/SAL]** `[CANONE — DM 2026-07-23; l'incontro avviene, l'esito si gioca]` Al −1000 i PG incrociano **Vatore**, il "Ladro d'Ombra" che diventerà **Salvatore "Sal"** (villain ARC-09). Ha appena rubato il **Sigillo di Ossidiana** e li osserva con terrore reverenziale. **Non è un innocente ingenuo**: è già **corrotto da avidità e sete di potere** (canone DM), non gli importano le conseguenze — è questa scelta a renderlo Sal. **Sincronizzazione temporale** (`Bestiario/villain/Salvatore/Salvatore.md`): ferirlo/derubarlo/segnarlo a −1000 → eco su Sal nel 1372 (sanguina / manca un asso / li teme / li odia). Il Cronolito garantisce che sopravvive (paradosso auto-consistente). Esito da registrare qui. Fonte: `07_.../ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` §5.
 - **[SIGILLO DI OSSIDIANA]** `[CANONE — DM 2026-07-23; se rubato a Vatore]` Artefatto minore allineato a **Shar** (Signora della Notte): **Manto di Notte Assoluta** (sopprime la luce magica ≤2 entro 9 m; *daylight*+ prova CL CD 20) + **Furto della Notte** (1/g, azione furtiva come invisibile/silenzioso 1 round). **Prezzo**: ogni uso **divora un'anima** (1 livello negativo a una creatura toccata nelle 24 h, o un'anima intrappolata); **se non disponibile, consuma il portatore** (livello negativo permanente dopo 24 h) — è ciò che corrompe Vatore in Sal. **Contrasto con l'Anello di Artemis** (scintilla di Lathander, nemesi di Shar): se lo porta Artemis, i due artefatti si annullano (poteri di luce/alba dell'Anello instabili/non disponibili; Sigillo soppresso) → bivio Notte vs Alba per l'ARC-09. Se i PG lo rubano e lo riportano nel presente (Cronolito), Sal si presenta senza il suo asso. Fonte: `07_.../ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` §5 (scheda); `Bestiario/villain/Salvatore/`.
 - **[DEBITO DELLA RADICE]** `[CANONE — DM 2026-07-23; il ramo A/B/C si gioca al rito]` Strappare Hella al Sogno della Terra (Via della Radice + Voto del viaggio) lascia un vuoto che l'ordine naturale esige di colmare — filo grigio (non bianco né nero). Al rito appare **la Custode delle Radici** (psicopompo neutrale, NON ostile): chiede un pegno, mai la vita di Hella (Moradin la protegge). Tre risposte del party: (A) accettare un servizio futuro → **quest ARC-09 «Il Cerchio Sacro della Foresta»** (druida Hella; CANONE DM 2026-07-23: la Custode si aggancia al Cerchio Sacro, non al Ghostlord) + Earth Dream 2/g; (B) rifiutare → il vuoto «risale» come nemico ARC-09 (non-morto della terra / crepa fungina di Sonjak); (C) offrire Durik come ponte vivente → Durik risponde al Sogno 1/sessione ma la Collana non perde mai il 3° seme. Fonte/dettagli: `07_.../ARC07-DEF-3-RESURREZIONE-HELLA.md` §6. Paga in ARC-09, non subito.
-- **[MARCHIO DI VARIS]** `[CANONE — DM 2026-07-23; l'esito (accetta/rifiuta) si gioca]` Sulla riva dell'Oceano di Roccia (Piano della Terra), l'Anello di Artemis capta un **Seme-Mercato** di **Varis "Seta-Argento"** (un cabochon violetto/innesto planare): esca calibrata sull'avidità di Artemis, **privata** (solo il suo giocatore la vede). Varis (telepatico) offre un **affare da predone** — sconto a vita sul Mantello dei TS + canale per piazzare il bottino del Sottosuolo — in cambio dell'incastonare la gemma nell'Anello (Marchio). Bivio grigio stile Andor (avidità vs lealtà), nessuna scelta pulita; funziona anche se il party salta l'incontro dei Cristalli. Se **accetta** → Marchio di Varis + rete di ricettazione, paga in ARC-09 (Varis broker urbano, cross-link `Bestiario/villain/...Varis...`); se **rifiuta** → rispetto guardingo di Varis. Fonte: `07_.../ARC07-DEF-1-PIANO-TERRA-TERROS.md` §6-bis.
+- **[MARCHIO DI VARIS — ⚠️ NON ATTIVO, MA IL SEME È NELLO ZAINO DI TORDEK]** `[ESITO GIOCATO 2026-07-31: né accettato né rifiutato]` **Aggiornamento**: Artemis ha **estratto il cabochon senza toccarlo** e l'ha fatto mettere **nello zaino di Tordek**. Il Marchio si chiude **col tocco**, quindi **non è attivo**: Varis NON localizza Artemis e non ha crediti da riscuotere; Artemis non ha ottenuto né il Frammento di Mercato né il +1 del rifiuto. Il Seme è **posseduto, integro e ancora tiepido**, e l'offerta **non scade**. ⚠️ **Se lo tocca TORDEK, il Marchio si chiude su di lui** (Varis ricalibra: non offre tesori a un monaco nanico, offre certezze). Varis leggerà la mossa come una **contro-mossa di un pari**, non come una fuga → al #4, Vatore riconosce la firma di un collega, non di un debitore. Dettaglio e conseguenze: `07_.../ARC07-DEF-1-PIANO-TERRA-TERROS.md` §6-bis, blocco CANONE GIOCATO. *(Testo originale della scena, per contesto:)* Sulla riva dell'Oceano di Roccia (Piano della Terra), l'Anello di Artemis capta un **Seme-Mercato** di **Varis "Seta-Argento"** (un cabochon violetto/innesto planare): esca calibrata sull'avidità di Artemis, **privata** (solo il suo giocatore la vede). Varis (telepatico) offre un **affare da predone** — sconto a vita sul Mantello dei TS + canale per piazzare il bottino del Sottosuolo — in cambio dell'incastonare la gemma nell'Anello (Marchio). Bivio grigio stile Andor (avidità vs lealtà), nessuna scelta pulita; funziona anche se il party salta l'incontro dei Cristalli. Se **accetta** → Marchio di Varis + rete di ricettazione, paga in ARC-09 (Varis broker urbano, cross-link `Bestiario/villain/...Varis...`); se **rifiuta** → rispetto guardingo di Varis. Fonte: `07_.../ARC07-DEF-1-PIANO-TERRA-TERROS.md` §6-bis.
 
 ### §7.E Echo Ledger (choices the world remembers)
 
@@ -392,7 +396,10 @@ fiction allows. Max ~12 armed — prune during prep.
 
 | ID | Origin (sess., PC, choice) | Tone | Fuse | Payoff sketch | Status |
 |----|----------------------------|------|------|---------------|--------|
-| — | *(seed from next session's Key decisions)* | | | | |
+| **E-07a** | 2026-07-31 · **Artemis** · prende il Seme-Mercato di Varis ma **non lo tocca**, e lo fa portare a **Tordek** | grigio | lunga (ARC-09) | Varis scopre di essere stato riconosciuto e trattato da pari: apre una **trattativa**, non una riscossione. E il giorno in cui serve un favore, la gemma è già in mano al party — sulla schiena sbagliata | 🔫 armato |
+| **E-07b** | 2026-07-31 · **Tordek** · porta nello zaino un innesto planare **senza sapere cosa sia** | grigio/inquieto | media | Il primo che tocca il Seme se ne prende il Marchio. Se è Tordek, Varis gli offre **certezze** invece che tesori — l'esca giusta per un monaco che ha perso una compagna | 🔫 armato |
+| **E-07c** | 2026-07-31 · **party** · rito dello Smeraldo con **sacrificio materiale**: dato via il bottino dell'arco, **Cuore di Terros incluso**, più equipaggiamento personale | luminoso, costoso | breve (ARC-08) | Entrano a Hammerfist **poveri**. I nani scoprono che qualcuno si è spogliato per comprare la loro salvezza: il delta WBL si ripaga come **riconoscimento narrato**, non come loot | 🔫 armato |
+| **E-07d** | 2026-07-31 · **Terros** · l'ultimo suono del guardiano è di **assenso** (avevano curato i Cristalli) | luminoso | lunga | La Forgia registra la vittoria **onorata**. Un guardiano che approva è una porta che resta aperta: eco al #4 e nella Cronaca | 🔫 armato |
 
 ### §7.R Reputation (Fama / Infamia) + Anointing Threads
 
@@ -1455,4 +1462,29 @@ entries — they become campaign history.
             4d6/Rifl 18) + ondate 1-4 del 3B + doppio timing dell'Apparizione
             (Round 8 nel 3B completo / porte-che-cedono nel lato ARC-07).
             Aggiornati atlante + DEF-2 + DEF-5 (griglie identiche).
+```
+
+```
+2026-07-31  ARC-07 P4 GIOCATO E CHIUSO (Piano della Terra).
+            Terros l'Antico SCONFITTO — party entrato senza riposare,
+            quindi profilo standard (niente ramo 34 DV). Ultimo suono
+            del guardiano: assenso (avevano curato i Cristalli).
+            SMERALDO DELLA FORZA forgiato nella Corona: 2 gemme su 3
+            accese (Topazio + Smeraldo), manca il Rubino.
+            RITO §9 — scelta A, SACRIFICIO MATERIALE: 40.500 mo dal
+            bottino dell'arco (Cuore di Terros incluso) + equipaggiamento
+            personale. Thorik NON ha preso il Peso nel corpo: nessun
+            -2 DES / +2 COS. Il party entra in ARC-08 sotto WBL: il delta
+            si ripaga in ARC-08 come riconoscimento narrato (E-07c).
+            SEME-MERCATO DI VARIS: preso, MAI TOCCATO, riposto nello
+            zaino di TORDEK. Marchio NON attivo (si chiude col tocco);
+            Varis non localizza nessuno. Terza strada non prevista dal
+            modulo: registrata come canone in DEF-1 §6-bis.
+            OROLOGIO HAMMERFIST: niente riposo prima di Terros -> 3g 20h;
+            riposo nella Sala della Forgia (-4 h) -> 3g 16h. Consegna
+            attesa all'ARC-08 ~3g 15h = Fase 0 PIENA.
+            SBLOCCATA la condizione del potere «Diventare una Collina»
+            dei Bracieri (TODO aperto sulla scheda di Tordek: finche' e'
+            aperto, il potere NON esiste al tavolo).
+            PROSSIMO: resurrezione di Hella (P3B / DEF-3).
 ```

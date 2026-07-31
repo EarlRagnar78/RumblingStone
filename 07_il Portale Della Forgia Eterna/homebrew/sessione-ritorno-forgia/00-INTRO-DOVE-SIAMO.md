@@ -31,14 +31,19 @@ Hammerfist preme sul riposo. Nessun nemico, nessun combattimento.
 **Stato al tavolo, entrando:**
 
 - **Corona di Adamantio**: **due gemme** — Topazio (Tempo) e **Smeraldo
-  (Terra), forgiato nella sessione precedente**.
-- **Thorik**: porta il costo della sua scelta al rito dello Smeraldo (§9 del
-  master #1) — qualunque sia stato.
-- **Tordek**: Bracieri Gemelli completi e coscienti. Se Terros è caduto, hanno
-  un debito da saldare con lui `[vedi il TODO «Diventare una Collina» sulla
-  sua scheda: da sbloccare DOPO, non stasera]`.
-- **Artemis**: Anello riforgiato. Se ha preso il **Marchio di Varis**, qui
-  l'Anello lo «pizzica» ogni volta che passa davanti all'affresco del Tempo.
+  (Terra), forgiato contro Terros**. Manca solo il Rubino.
+- **Il party è POVERO** `[canone giocato]`: al rito hanno scelto il
+  **sacrificio materiale** — 40.500 mo dal bottino dell'arco, **Cuore di
+  Terros incluso**, più equipaggiamento personale. Thorik **non** ha preso il
+  Peso nel corpo. Entreranno a Hammerfist sotto la ricchezza attesa, ed è una
+  cosa che va **fatta contare**, non corretta di nascosto.
+- **Tordek**: Bracieri completi e coscienti, e **Terros è caduto** — quindi la
+  condizione del potere «Diventare una Collina» è **sbloccata** `[TODO aperto
+  sulla sua scheda: finché è aperto, il potere non esiste al tavolo]`. Porta
+  inoltre nello zaino il **Seme-Mercato di Varis**, e **non sa cosa sia**.
+- **Artemis**: Anello riforgiato. Ha preso il Seme **senza toccarlo** e l'ha
+  fatto portare a Tordek: **nessun Marchio attivo**, Varis non localizza
+  nessuno — ma la gemma è nel gruppo, tiepida, e l'offerta non scade.
 - **Hella**: morta, corpo vegliato da Therysol. Lo spirito ha **già** compiuto
   il Viaggio nell'Incudine del Mondo — **i PG non lo sanno**. Qui dà solo
   manifestazioni, mai dialogo.

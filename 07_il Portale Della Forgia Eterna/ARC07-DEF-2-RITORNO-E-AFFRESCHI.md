@@ -21,8 +21,9 @@
 > master #1), **prima** della resurrezione di Hella (master #3). Ordine D2.
 > **Canone a monte**: Topazio (Fuoco) e Smeraldo (Terra) presi; corpo di Hella
 > vegliato da Therysol nella Sala; il suo spirito ha già viaggiato (i PG **non
-> lo sanno**). Countdown Hammerfist all'arrivo: **~3g 20h** — o **3g 08h** se
-> hanno dormito prima di Terros. **Registro completo dei riposi in §0-bis**.
+> lo sanno**). Countdown Hammerfist all'arrivo: **~3g 20h** (`[CANONE GIOCATO]`:
+> sono entrati da Terros senza riposare). **Registro completo dei riposi in
+> §0-bis**; il sogno del riposo qui nella Sala è il **§7-bis**.
 
 ---
 
@@ -71,9 +72,9 @@ Moradin**; le mappe **S-1** e **S-2**.
 
 **Come si chiude.** Gli affreschi hanno registrato la vittoria della Terra; il
 portale del Tempo (A6) è all'**80%** e attende la terza tappa; il corpo di
-Hella è pronto per il rito. Countdown a fine beat: **~3g 04h** (o **3g 16h** se
-non hanno dormito prima di Terros) — il riposo nella Sala costa solo **−4 h**,
-tariffa divina (§0-bis). → **master #3: la Resurrezione di Hella.**
+Hella è pronto per il rito. Countdown a fine beat: **~3g 16h** — il riposo nella
+Sala costa solo **−4 h** (tariffa divina, §0-bis) e porta con sé il sogno del
+**§7-bis**. → **master #3: la Resurrezione di Hella.**
 
 ---
 
@@ -121,18 +122,20 @@ ri-sottrarli: sono dentro. Da lì in poi il registro è additivo.
 |---|---|---|---|---|
 | **R1** | Piano del Fuoco, prima della piramide | ✅ giocato | dentro l'ancora | — |
 | **R2** | **Sala**, dopo il Piano del Fuoco | ✅ giocato | **+2 h** (ri-prezzato −6 h → −4 h) | **3g 20h** |
-| **R3** | Piano della Terra, prima della camera di Terros | 🟡 **probabile, non ancora deciso** | **−12 h** | 3g 08h |
-| **R4** | **Sala** (o Stanza della Corona), prima del rito di Hella | previsto | **−4 h** (Sala) · **−12 h** (Stanza) | **3g 04h** |
-| — | il rito di resurrezione | previsto | ~1 h | 3g 03h |
-| — | viaggio a −1.000 (#4) | previsto | **0 h** — il Rubino riporta all'istante di partenza | 3g 03h |
-| — | **consegna all'ARC-08** | | | **≈ 3 giorni** |
+| **R3** | Piano della Terra, prima della camera di Terros | ❌ **NON fatto** — sono entrati da Terros senza dormire `[CANONE GIOCATO 2026-07-31]` | 0 | **3g 20h** |
+| **R4** | **Sala della Forgia**, dopo Terros e prima del rito | ✅ **giocato: dormono nella Sala** `[CANONE GIOCATO]` | **−4 h** | **3g 16h** |
+| — | il rito di resurrezione | prossimo | ~1 h | 3g 15h |
+| — | viaggio a −1.000 (#4) | previsto | **0 h** — il Rubino riporta all'istante di partenza | 3g 15h |
+| — | **consegna all'ARC-08** | | | **≈ 3g 15h** |
 
-**Se NON fanno R3** (entrano da Terros senza dormire): **3g 20h − 4h = 3g 16h**
-al rito, **≈ 3g 15h** in consegna.
+> ✅ **RAMO RISOLTO AL TAVOLO.** Hanno tirato dritto su Terros senza riposare e
+> hanno dormito **qui**, nella Sala: l'orologio è a **3g 16h** e la consegna
+> all'ARC-08 sarà a **≈ 3g 15h** → **Fase 0 piena** (`ARC07-DEF-5`). Il ramo
+> «Fase 0 accorciata» **non si applica**. Delle otto ore di sonno il mondo ne
+> ha contate quattro, e in quelle rubate è successo il **§7-bis**.
 
-**Dove sta il pericolo.** La soglia dei **2 giorni** (§8) è lontana in entrambi
-i rami: servirebbero **altri due riposi ordinari** oltre a quelli previsti per
-avvicinarsi. **Il tempo non è più la minaccia principale di questo beat** — lo
+**Dove sta il pericolo.** La soglia dei **2 giorni** (§8) è lontana: da 3g 16h
+servirebbero **altri tre riposi ordinari** per avvicinarla. **Il tempo non è più la minaccia principale di questo beat** — lo
 è diventato il *costo delle scelte*. Non fingere un'urgenza che i numeri non
 sostengono: mostra l'affresco e lascia che sia lui a parlare.
 
@@ -251,8 +254,8 @@ Zona **sicura**: nessun nemico. Vedi **MAPPA S-1**.
 - **A2 (Quattro Eroi)**: sale all'**80%** — la 4ª figura (Hella) prende contorno.
 - **A6 (Tempo)**: **80%**, il portale dorato pulsa: pronto per il #4.
 - **A8 (Ritorno)**: **60%** — i quattro e Hammerfist sullo sfondo.
-- **A7 (Hammerfist)**: countdown **~3g 20h** (o **3g 08h** se hanno dormito
-  prima di Terros — vedi il registro dei riposi in §0-bis), mura più segnate.
+- **A7 (Hammerfist)**: countdown **~3g 20h** all'arrivo, **3g 16h** dopo il
+  riposo (§0-bis). Mura più segnate, orda accampata, torri ancora in costruzione.
 
 ### ZONA B — La Stanza della Corona (il luogo della morte)
 > **Read-aloud (Salvatore + Casa di Davide).** *Il Portale P1 è sempre aperto,
@@ -436,7 +439,7 @@ occhi e diventa il pannello-conseguenza del master #1.
 ### A7 — «La Battaglia di Hammerfist» (SUD-EST · LIVE)
 Hammerfist **adesso**, aggiornata ogni 6 ore reali: l'orda, le torri d'assedio,
 **Fauci di Palude** in volo, e un **timer** in numeri nanici. All'arrivo:
-**~3g 20h** — o **3g 08h** se hanno dormito prima di Terros. È l'orologio del
+**~3g 20h** all'arrivo, **3g 16h** dopo il riposo nella Sala. È l'orologio del
 beat: il registro completo dei riposi e la progressione dell'affresco stanno in
 **§0-bis «Countdown di Hammerfist»**.
 - **Interazione (Aegis Fang, appoggiata alla cornice — canone, si salda col
@@ -563,6 +566,128 @@ rinnovabili 1/giorno tornando alla Sala.
 | **Forza della Montagna** *(solo nel Piano della Terra)* | ignora la gravità 2×, +2 FOR vs gravità | — (specifica dell'arco) |
 
 > Handout carte-singole nel PDF `BenedizioniDiMoradin.pdf` (§11).
+
+---
+
+## §7-bis — «LE QUATTRO ORE RUBATE»: cosa si sogna dormendo nella Forgia `[CANONE — DM 2026-07-31]`
+
+### Prima la regola, perché è la domanda che nasce sempre
+
+**Dormire nella Sala sono otto ore vere.** Riposo lungo pieno: pf, slot,
+poteri giornalieri, condizioni rimosse — **tutto**, come ovunque. Lo sconto
+è **solo sull'orologio del mondo**: fuori ne passano **quattro**.
+
+> Non è un mezzo riposo. È un riposo intero **che costa metà**.
+
+E qui c'è la cosa bella, che non è una scappatoia ma il **motore di questa
+scena**: se dormono otto ore e il mondo ne conta quattro, **quattro ore devono
+stare da qualche parte**. Stanno nel sogno. Il tempo che la Forgia non spende
+fuori, lo spende **dentro di loro**.
+
+> **Read-aloud — l'addormentarsi (Salvatore + LotR).** *Vi stendete sul basalto
+> tiepido, e la Sala fa una cosa che nessuna locanda ha mai fatto: **si abbassa
+> di tono**. La luce dorata non si spegne — si ritira, come una brace coperta
+> per la notte. L'ultima cosa che sentite prima di andare giù è il rumore
+> minutissimo di uno scalpello che lavora molto lontano, dall'altra parte di
+> una parete che non esiste.*
+>
+> *Poi dormite. E il sonno è lungo. Molto più lungo di una notte.*
+
+### Quando si attiva
+
+**La prima volta che dormono nella Sala dopo che la Cronaca ha inciso un
+pannello nuovo.** Cioè, adesso: la vittoria contro Terros è appena entrata
+nella parete. Non è ripetibile a comando — se dormono di nuovo senza aver
+compiuto nulla, la Sala tace, e quel silenzio è a sua volta un'informazione.
+
+**Niente tiri. Niente CD. Nessun effetto meccanico.** È regia pura: quattro
+scene brevi, una per giocatore, giocate **una alla volta e in privato se
+puoi** — o almeno lette a turno mentre gli altri ascoltano senza commentare.
+Chiudi ogni scena e passa oltre: **non spiegare nulla**.
+
+### 🛡️ THORIK — il peso che qualcuno regge con te
+
+> *Sogni di essere ancora inginocchiato sull'Altare, e il peso c'è ancora — ma
+> non è più insopportabile, perché non lo porti da solo. C'è un secondo paio di
+> mani sotto l'architrave. Non le vedi: le **senti**, e sono più piccole delle
+> tue, e sono fredde come pietra all'ombra, e non tremano.*
+>
+> *Provi a girare la testa per vedere chi è. E il sogno, con la gentilezza
+> ottusa dei sogni, ti gira la testa **dall'altra parte**.*
+
+Il rimando è doppio: alla presenza verde del rito (§9 Fase 1 del master #1) e
+all'immagine muta che la Corona gli aveva già mostrato alla vigilia — **due
+mani sotto un architrave che scende**. ⚠️ **Thorik non sa che è Hella**, e non
+deve saperlo finché lei non torna (#3). Se il giocatore lo indovina, non
+confermare: *«non lo sai.»*
+
+### ⚒️ TORDEK — lo zaino `[solo se porta il Seme di Varis]`
+
+> *Sogni una fiera. Non una fiera nanica: banchi bassi, teli chiari, una lingua
+> che non conosci ma che capisci lo stesso, e un odore di spezie che non
+> crescono in nessun posto in cui sei stato. Nessuno ti guarda. Sei un cliente
+> come un altro, e la cosa che ti mette a disagio è **proprio quella**.*
+>
+> *In fondo al vicolo dei banchi c'è un tavolino con sopra il TUO zaino. Aperto.
+> E un uomo che non riesci a mettere a fuoco sta contando le tue cose, una per
+> una, con la pazienza di chi fa l'inventario. Non ruba niente. **Cataloga.***
+>
+> *Ti svegli con la mano già sulla cinghia.*
+
+⚠️ Il Seme **non è stato toccato** e il Marchio **non è attivo**: questo sogno
+non è un effetto della gemma, è la Sala che gli mostra **cosa si è caricato in
+spalla senza chiedere**. Se Tordek racconta il sogno al gruppo, lascia che sia
+Artemis a decidere se dire la verità: **quella conversazione vale una scena**.
+*(Salta questa scena se il Seme è stato rifiutato o distrutto.)*
+
+### 🔮 ARTEMIS — la porta che hai già aperto
+
+> *Sogni di essere davanti all'affresco del Tempo, ma sveglio, e da solo. E
+> l'affresco non è un affresco: è una **porta socchiusa**, e dallo spiraglio
+> viene aria — aria vera, che sa di fumo di forgia e di neve. Mille anni di
+> aria.*
+>
+> *Sai, col tipo di certezza che hai solo nei sogni, che oltre quella porta c'è
+> tutto quello che il mondo ha dimenticato di aver perso. Interi cataloghi.
+> Cose senza proprietario da dieci secoli.*
+>
+> *E sai anche, con la stessa certezza, che **qualcuno l'ha già aperta prima di
+> te** — perché lo spiraglio non l'hai fatto tu, e sullo stipite, all'altezza
+> della mano, il legno è **consumato da un pollice** che ci si è appoggiato
+> molte volte.*
+
+Il gancio è **Vatore** (#4). Non nominarlo, non spiegarlo. Se Artemis chiede di
+chi è il pollice, la risposta è che nel sogno lo sapeva e sveglio non se lo
+ricorda.
+
+### 🌙 HELLA — dall'altra parte `[handout per la sua giocatrice]`
+
+> *Non stai sognando: tu non dormi più. Ma per la prima volta da quando sei
+> qui, **qualcuno dorme vicino a te** — abbastanza vicino da sentirli, tre
+> respiri lenti che conosci come conosci il tuo nome.*
+>
+> *E c'è una quarta cosa, accanto a te, che non respira e sta ferma: una forma
+> di polvere e mithral scuro che aspetta, con la pazienza dei cani, di essere
+> chiamata. Tu non l'hai ancora chiamata. Non sai come.*
+>
+> *Poi, lontanissima, una voce di uomo — un nano, la voce di un nano che hai
+> tenuto per mano — dice il tuo nome nel sonno. E per la prima volta da quando
+> sei morta, **hai freddo**. È bellissimo. Il freddo è dei vivi.*
+
+È il ponte diretto al master #3. **Durik c'è già** ma non è ancora suo. Il
+freddo è il primo sintomo del ritorno.
+
+### Al risveglio
+
+> **Read-aloud (LotR).** *Vi svegliate insieme, e nessuno dice niente per un
+> po'. Sulla parete di sud-est i numeri nanici sono cambiati — meno di quanto
+> vi aspettavate, molto meno, e nessuno di voi sa dire perché. Il basalto sotto
+> di voi è ancora tiepido nel punto esatto in cui avete dormito, e da nessuna
+> altra parte.*
+
+⚠️ **Non spiegare lo sconto delle ore.** Se qualcuno lo nota — ed è previsto
+che lo notino, la riga sopra serve a questo — la risposta è dentro il mondo:
+*«Moradin non conta le ore come le contano gli uomini.»*
 
 ---
 

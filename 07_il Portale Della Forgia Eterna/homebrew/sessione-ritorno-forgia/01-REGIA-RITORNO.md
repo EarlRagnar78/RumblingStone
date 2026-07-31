@@ -72,7 +72,7 @@ sacrificabile.
    appena scelto. Il master ha la progressione **valore per valore** (l'orda
    accampata → la prima ondata → la crepa che non si richiude più).
    - ⚠️ **Non minacciare la scadenza.** Coi riposi previsti la soglia critica
-     dei 2 giorni resta **fuori portata**: servirebbero altri due riposi
+     dei 2 giorni resta **fuori portata**: da 3g 16h servirebbero altri tre riposi
      ordinari. Recitare un'urgenza che i numeri non sostengono si sente. **Fai
      parlare l'affresco e basta** — un tratto di camminamento che prima non era
      vuoto dice più di qualsiasi avvertimento.
@@ -87,7 +87,14 @@ sacrificabile.
    Benedizioni le sostituiscono. Rinnovo all'Altare, 10 minuti di preghiera,
    Conoscenze (religioni) CD 12.
 
-8. **Il riposo lungo — e qui c'è una scelta vera** (vedi §2 qui sotto).
+8. **Il riposo lungo — e il sogno** (vedi §2 qui sotto). `[CANONE GIOCATO:
+   dormono nella Sala.]` Non è solo un riposo: **otto ore vere in quattro ore
+   di mondo**, e le quattro ore in più i PG le vivono **dentro il sonno**. Il
+   master ha le quattro scene, una per giocatore, nel **§7-bis «Le Quattro Ore
+   Rubate»** — Thorik e le mani sotto l'architrave, Tordek e lo zaino
+   catalogato, Artemis e la porta già socchiusa, Hella che **ha freddo** per la
+   prima volta da quando è morta. Niente tiri, niente CD: è il ponte diretto
+   alla resurrezione. **Non spiegare nulla, chiudi ogni scena e passa oltre.**
 
 9. **Ponte al master #3.** Resta un solo atto prima di lasciare la Forgia:
    **riportare indietro Hella**. Il corpo è pronto davanti all'Altare, il Cuore
@@ -96,8 +103,9 @@ sacrificabile.
 
 ## 2. La scelta del riposo — non suggerire tu la risposta
 
-`[CANONE 2026-07-31]` Due tariffe, e una è un regalo che **i giocatori non
-devono sapere**:
+**Dormire nella Sala sono otto ore vere** — riposo lungo pieno, tutto recuperato.
+Lo sconto è **solo sull'orologio del mondo**. `[CANONE 2026-07-31]` Due tariffe,
+e una è un regalo che **i giocatori non devono sapere**:
 
 | Dove dormono | 8 ore costano | In cambio |
 |---|---|---|

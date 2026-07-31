@@ -192,7 +192,15 @@ suggerimento: risolvi solo i punti segnalati, poi procedi come al §3.
 
 ## 4. Modalità 2 — immagini cinematografiche (handout, splash)
 
-Non è una griglia: è un'illustrazione d'atmosfera. Due vie:
+Non è una griglia: è un'illustrazione d'atmosfera.
+
+> 🎨 **I prompt di un intero arco in un comando** (ADR-0015):
+> `python3 scripts/dm.py prompts "<cartella dell'arco>"` estrae tutte le scene
+> con read-aloud e prepara una **scheda-prompt per scena** in
+> `<arco>/Immagini/PROMPT-IMMAGINI-*.md` (i prompt li scrivi tu o l'agente).
+> Esemplare compilato: `07_il Portale Della Forgia Eterna/Immagini/PROMPT-IMMAGINI-07ILP.md`.
+
+Due vie per generarle:
 
 - **Generatore esterno** (Nano Banana, ChatGPT…): componi il prompt col
   vocabolario di `skills/rumblingstone-mapmaking/references/stile-illustrazione-handout.md`;

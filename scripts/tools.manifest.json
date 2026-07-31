@@ -1916,6 +1916,93 @@
    ]
   },
   {
+   "id": "extract_scene_prompts",
+   "path": "scripts/extract_scene_prompts.py",
+   "category": "D-materials",
+   "language": "python",
+   "invocation": "python3 scripts/extract_scene_prompts.py <arco>",
+   "summary": "Estrae le scene illustrabili di un arco (read-aloud + copertura immagini) e genera lo scheletro del file dei prompt immagine (ADR-0015); rigenerazione idempotente che non perde le schede gia compilate.",
+   "stability": "stable",
+   "stdlib_only": true,
+   "external_bins": [],
+   "args": [
+    {
+     "name": "arc",
+     "type": "path",
+     "required": true,
+     "default": null,
+     "choices": null,
+     "repeatable": false,
+     "desc": "Cartella dell'arco (es. \"07_il Portale Della Forgia Eterna\")."
+    },
+    {
+     "name": "-o/--output",
+     "type": "path",
+     "required": false,
+     "default": null,
+     "choices": null,
+     "repeatable": false,
+     "desc": "File di output (default: <arco>/Immagini/PROMPT-IMMAGINI-<TAG>.md)."
+    },
+    {
+     "name": "--list",
+     "type": "bool",
+     "required": false,
+     "default": false,
+     "choices": null,
+     "repeatable": false,
+     "desc": "Elenca soltanto le scene trovate, senza scrivere."
+    }
+   ],
+   "inputs": [
+    {
+     "path": "<arco>/*.md",
+     "kind": "markdown",
+     "required": true,
+     "schema": null
+    },
+    {
+     "path": "<arco>/Immagini/",
+     "kind": "directory",
+     "required": false,
+     "schema": null
+    }
+   ],
+   "outputs": [
+    {
+     "path": "<arco>/Immagini/PROMPT-IMMAGINI-<TAG>.md",
+     "kind": "markdown",
+     "overwrites": true,
+     "generated_header": true,
+     "schema": null
+    }
+   ],
+   "exit_codes": {
+    "0": "ok",
+    "1": "nessuna scena trovata",
+    "2": "uso errato / arco assente"
+   },
+   "determinism": {
+    "deterministic": true,
+    "seed_flag": null,
+    "notes": "Ordine file+riga deterministico; a parita di contenuto la rigenerazione e byte-identica (le schede compilate sono conservate)."
+   },
+   "side_effects": {
+    "writes_canon": false,
+    "git_commit": false,
+    "network": false
+   },
+   "idempotent": true,
+   "consumes_schema": null,
+   "produces_schema": null,
+   "ci_smoke": "python scripts/extract_scene_prompts.py --help",
+   "tests": [],
+   "docs": [
+    "scripts/README-automation.md",
+    "plans/adr/ADR-0015-standard-prompt-immagine.md"
+   ]
+  },
+  {
    "id": "dm_dossier",
    "path": "scripts/dm_dossier.py",
    "category": "D-materials",

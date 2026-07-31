@@ -429,6 +429,12 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   rigenerazione idempotente che non perde il lavoro) + esemplare ARC-07
   (46 scene, 3 prompt scritti: soglia di Terros, Smeraldo, ritorno di Durik).
 
+- [x] **K-B18** *(2026-07-31)*: guida **`GUIDA-IMMAGINI.md`** (generatori,
+  anatomia del prompt con esempio smontato, i 3 trucchi, flusso d'arco,
+  salvataggio e aggancio, troubleshooting, checklist) — **chiude la serie
+  delle guide passo-passo: 6** (setup · booklet/PDF · mappe · immagini ·
+  bestiario · condivisione).
+
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 
 | # | Domanda | Default se non risponde |

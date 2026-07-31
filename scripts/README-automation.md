@@ -33,6 +33,9 @@ python3 scripts/dm.py doctor                      # environment diagnosis
 > opzionali, troubleshooting, checklist di consegna). Qui sotto c'è la
 > **mappa degli strumenti**; là c'è il **come si fa**.
 
+> 🎨 **Immagini della campagna** (prompt, generatori, coerenza d'arco):
+> [`docs/guides/GUIDA-IMMAGINI.md`](../docs/guides/GUIDA-IMMAGINI.md).
+
 **Sottocomandi `dm.py`** (ognuno inoltra i flag allo script sottostante):
 
 | Sottocomando | Flag | Fa girare | Fase Playbook |

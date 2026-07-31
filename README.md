@@ -105,6 +105,7 @@ Indice unico dei documenti "di sviluppo" del repo (roadmap, script, container):
 | **Condividere il materiale** (mandarlo ai giocatori, stamparlo, pubblicarlo, e perché la vendita oggi non è conforme) | [`docs/guides/GUIDA-CONDIVISIONE-IP.md`](docs/guides/GUIDA-CONDIVISIONE-IP.md) |
 | **Preparare una macchina nuova** (o un secondo DM): prerequisiti, skill per agenti, branch di gruppo, verifica finale | [`docs/guides/GUIDA-SETUP-MACCHINA.md`](docs/guides/GUIDA-SETUP-MACCHINA.md) |
 | **Generare booklet e PDF per la sessione** (guida completa: manifest, HTML, Homebrewery, PDF A4 per giocatori/DM, prerequisiti, troubleshooting) | [`docs/guides/GUIDA-BOOKLET-E-PDF.md`](docs/guides/GUIDA-BOOKLET-E-PDF.md) |
+| **Generare le immagini della campagna** (prompt, generatori, coerenza d'arco, dove salvarle e come agganciarle) | [`docs/guides/GUIDA-IMMAGINI.md`](docs/guides/GUIDA-IMMAGINI.md) |
 | **Fare una mappa** (3 modalità, griglia emoji, JSON per eserciti, SVG/PNG/UVTT per Foundry e Roll20) | [`docs/guides/GUIDA-MAPPE.md`](docs/guides/GUIDA-MAPPE.md) |
 | **Aggiungere un mostro, un PNG o un villain** (dove, come si scrive, catalogo, gate CI, quando potenziare) | [`docs/guides/GUIDA-BESTIARIO.md`](docs/guides/GUIDA-BESTIARIO.md) |
 | **Container in locale** (Homebrewery self-hosted, nativo o Docker chiavi-in-mano; container PDF opzionale) | [`scripts/homebrew-local/README.md`](scripts/homebrew-local/README.md) · [`scripts/booklet-container/README.md`](scripts/booklet-container/README.md) |

@@ -194,6 +194,9 @@ suggerimento: risolvi solo i punti segnalati, poi procedi come al §3.
 
 Non è una griglia: è un'illustrazione d'atmosfera.
 
+> 📘 **Guida dedicata**: [`GUIDA-IMMAGINI.md`](GUIDA-IMMAGINI.md) — quale
+> generatore usare, come si scrive un prompt, coerenza d'arco, troubleshooting.
+>
 > 🎨 **I prompt di un intero arco in un comando** (ADR-0015):
 > `python3 scripts/dm.py prompts "<cartella dell'arco>"` estrae tutte le scene
 > con read-aloud e prepara una **scheda-prompt per scena** in

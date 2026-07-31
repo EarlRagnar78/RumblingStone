@@ -116,6 +116,13 @@ la comparsa di Durik è `dm` finché non accade).
   automatizzabile (ComfyUI headless), il file diventerebbe l'input di una
   pipeline batch — l'anatomia della scheda è già compatibile.
 
+## Guida operativa
+
+La procedura passo-passo (generatori, scrittura del prompt, flusso su un
+arco, salvataggio e aggancio, troubleshooting) sta in
+[`docs/guides/GUIDA-IMMAGINI.md`](../../docs/guides/GUIDA-IMMAGINI.md).
+Questo ADR fissa **le regole**; la guida spiega **come si eseguono**.
+
 ## Copertura skill / docs
 
 - `scripts/README-automation.md` — tool map (`extract_scene_prompts`, `dm.py prompts`).

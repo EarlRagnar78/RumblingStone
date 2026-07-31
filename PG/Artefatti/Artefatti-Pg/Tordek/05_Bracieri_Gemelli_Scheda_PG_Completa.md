@@ -206,3 +206,49 @@ Se soddisfatto, i guanti possono occasionalmente agire di propria volontà per p
 | — | Stadio Fuoco (Risveglio Bracieri di Moradin) | ✅ giocato |
 | — | Stadio Terra (Risveglio Completo) | ✅ giocato |
 | … | … | … |
+
+---
+
+## 🔧 TODO — sblocco condizionato da giocare: «Diventare una Collina»
+
+> **Da fare DOPO la sessione contro Terros, non prima.** Decisione DM
+> 2026-07-31. Questa scheda **non va ristampata** finché la condizione non si
+> è verificata: se lo sblocco compare prima, il giocatore lo legge e la
+> condizione perde senso.
+
+**Condizione di sblocco.** I Bracieri concedono il potere **solo dopo che
+Tordek ha dimostrato il proprio valore contro Terros l'Antico**, cioè
+**a guardiano sconfitto** (`07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md`
+§8). Non basta partecipare: la Forgia riconosce chi ha retto il peso.
+
+**Potere da scrivere (bozza da rifinire quando si compila la scheda):**
+
+| Campo | Valore proposto |
+|---|---|
+| Nome | **Diventare una Collina** (Su) |
+| Usi | 1/giorno |
+| Azione | movimento |
+| Durata | 1 minuto |
+| Effetto | come *Ingrandire Persona* (taglia **Grande**): FOR +2, DES −2, +4 al modificatore di taglia per **spinta e lotta**, portata e spazio raddoppiati, −1 a CA e attacco |
+| Voce dei Bracieri allo sblocco | *«Se devi spostare una montagna, ragazzo, devi prima diventare una collina.»* |
+
+**Perché questo potere e perché adesso.** Contro Terros la **lotta** resta
+impossibile anche da Grande (Lotta +21 contro +40: le parità vanno a lui) —
+ma la **spinta** sì: da Medio la spallata coordinata vince il **7%**, da
+Grande il **19,5%**, e con un secondo Aiuto il **26%**. È il potere che
+trasforma una manovra decorativa in una giocata vera, e ha senso che sia
+**il guardiano della Terra a insegnarglielo perdendo**.
+
+**Cosa toccare quando si esegue il TODO:**
+
+1. questa scheda: nuovo `#### 7.` fra i Poteri Attivati + riga nel **Cheat Sheet**
+   + riga nel **Registro sblocchi**;
+2. `03_Risveglio_Completo_Bracieri_Terra.md` — progressione dello stadio Terra;
+3. `PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md` §4 — matrice versioni;
+4. `campaign/state.md` §6 — changelog artefatti;
+5. `05_Bracieri_Gemelli_Scheda_PG_Completa.html` — rigenerare l'HTML gemello.
+
+⚠️ **Finché il TODO è aperto, il potere NON esiste al tavolo.** In particolare
+non è disponibile *durante* lo scontro con Terros: la spallata dei 172 pf va
+giocata con Tordek di taglia Media, e la risposta all'arrocco è **«Radice a
+Terra»** di Thorik (master §8).

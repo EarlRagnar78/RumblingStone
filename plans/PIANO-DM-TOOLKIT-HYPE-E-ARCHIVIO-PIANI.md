@@ -435,6 +435,13 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   delle guide passo-passo: 6** (setup · booklet/PDF · mappe · immagini ·
   bestiario · condivisione).
 
+- [x] **K-B19** *(2026-07-31)*: **canone di combattimento ARC-07 §8** —
+  decisioni DM su piattaforma, Spinta e contromosse + nuovo **§8c «Manuale
+  d'uso del guardiano»** (risposte pronte a Blast/Chilling Tentacles/lotta/
+  sinergie, scritto dal lato DM), **MAPPA T-6 ridisegnata** a 13,5 × 9 m,
+  **due bug meccanici chiusi** (Radice a Terra e Spinta), **TODO condizionato**
+  sulla scheda dei Bracieri, rigenerazione booklet HTML/`.hb.md`/PDF.
+
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 
 | # | Domanda | Default se non risponde |

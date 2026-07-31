@@ -19,7 +19,8 @@
 | Diapason Armonico | ⚠️ **SPESO sulla Sentinella** (Grido Superiore innescato dalla Frequenza): niente stun anti-arrocco contro Terros | master §7b/§8 (canone giocato) |
 | Frequenza della Confusione | ✅ ancora disponibile (è conoscenza): **il malus round 1 su Terros si attiva con la SOLA Frequenza** — nauseato, −4 att/CA | master §8 |
 | Posizione del party | dentro il Tempio di Mithral, oltre l'Anticamera, verso la camera sferica | master §7→§8 |
-| Countdown Hammerfist | ~3 giorni e 18 ore a fine parte | master §0 |
+| Countdown Hammerfist | baseline ~3g 18h a fine parte, **ma la pausa di 8 h già fatta nel Piano del Fuoco vale −12 h** → ~3g 06h. Se dormono anche prima di Terros: −12 h ancora | master §0 + **§8c-4** |
+| Riposo prima della camera del boss | possibile e probabile: **costa −12 h e Terros va scalato a 34 DV** (arrivano a risorse piene) | master §8c-4 |
 
 ### I risultati del viaggio di Hella (SOLO DM — servono al #3, non stasera)
 
@@ -76,6 +77,13 @@ esistono solo come echi.
    §0-bis, tattiche round-per-round, DPR atteso ~5 round, contingenze
    pronte (parlano con lui / fuga / caduta / TPK-safe: espulsi e segnati,
    mai massacro).
+   - 📖 **Tieni aperto il §8c «Manuale d'uso del guardiano»** (nuovo): è la
+     lista di cosa i PG possono tirare fuori — Eldritch Blast e modalità
+     sonica, Chilling Tentacles, tentativi di lotta, sinergie degli
+     artefatti — con **la risposta di Terros già scritta accanto**. Serve a
+     non improvvisare a tavolo aperto. Le tre cose da sapere prima di
+     sederti: la RD **non** ferma il Blast di Artemis; la Trinità Divina
+     **non** supera la RD 10/—; Terros **non inizia mai una lotta**.
    - I tre **contro-momenti firmati** — Thorik «Radice a Terra», Tordek
      «Frantuma-Scudo», Artemis stalattiti disintegrate in volo — **NON
      sono scritti in chiaro negli handout** (ADR-0013 §3-ter: gli hint
@@ -117,8 +125,9 @@ esistono solo come echi.
   Altare già centrato) — e T-5 come ricordo dell'Anticamera.
 - I **read-aloud della serata**: §8a «i sei secondi della soglia», §8b «il
   distacco», e le tre pagine di **«FASE 2 — la regia dei tre round»** (§9).
-- Statblock di **Terros** (§8); handout §13 (Iscrizione, carta «Corona
-  2/3» per fine serata, Benedizioni).
+- Statblock di **Terros** (§8) **e il §8c «Manuale d'uso del guardiano»**
+  (le risposte pronte a Blast/tentacoli/lotta/sinergie); handout §13
+  (Iscrizione, carta «Corona 2/3» per fine serata, Benedizioni).
 - Le **4 pagine hint/echi** di questo booklet (capitoli III–VI).
 - *(Solo se Artemis prende il Seme)* il bigliettino privato: *«Un favore,
   a mia scelta, a mio tempo. — V.»* (§13.4).
@@ -135,3 +144,68 @@ esistono solo come echi.
 - **Terros non insegue** oltre la camera; **non uccide i caduti**; alla
   sconfitta del party: espulsi, affaticati, −12 ore di countdown (§8
   Contingenze).
+
+## 4. Canone nuovo di stasera (decisioni DM 2026-07-31)
+
+Cinque cose sono cambiate rispetto alla stampa precedente. Se hai il master
+vecchio in mano, **butta quelle pagine**.
+
+| Cosa | Prima | **Adesso** |
+|---|---|---|
+| **Piattaforma dell'Altare** | «Ø 6 m» (Terros da solo ne occupava 9 quadretti su 16) | **13,5 × 9 m = 9 × 6 quadretti**, angoli smussati. MAPPA T-6 ridisegnata |
+| **Spinta di Terros** | a ogni schianto a segno | **1 volta per round, la scegli tu**, su uno dei colpi andati a segno. Gratis, nessun AdO per nessuno |
+| **Chi resiste alla Spinta** | prova di FOR CD 25 | idem, **ma i nani con i piedi a terra sommano +4** (Stabilità nanica — non vale fluttuando) |
+| **«Radice a Terra» di Thorik** | prova contrapposta vs **Lotta +40** — matematicamente impossibile | **prova di FOR contro CD 25 statica**, con due bonus che i suoi indizi gli hanno seminato |
+| **§8c** | non esisteva | **manuale d'uso del guardiano**: cosa fa Terros contro Blast, tentacoli, lotta e sinergie |
+
+### La geografia della Spinta, in due righe
+
+L'Altare non è un disco simmetrico: è **lungo 9 quadretti e largo 6**.
+
+- **Asse lungo:** Terros ne occupa 3, restano **3 per lato**. La prima spinta
+  ti porta sul bordo di rune; la **seconda** ti butta nello zero-G.
+- **Asse corto:** margine di **1-2 quadretti**. È l'**asse letale**: di qui
+  **una sola spinta ti fa uscire**.
+- Chi esce **deriva** (niente 2d6: la parete è a ~25 m). Rientrare = volo,
+  oppure spinta da una superficie a metà velocità. Thorik ha Aegis Fang
+  Returning come gancio; **Tordek no** — per lui sono **due round fuori scena**.
+- ⚒️ **Ma Tordek ha «Ancoraggio della Montagna»** (Bracieri, 2/giorno, azione
+  **immediata**): annulla il movimento forzato **dopo** che hai annunciato
+  l'esito. Ha due «no» in tasca, e valgono **solo per sé** — non può ancorare
+  Thorik. Quando finiscono, l'arrocco dei 172 pf lo trova senza rete.
+
+### «Radice a Terra» — perché la CD è 25 e come ci si arriva
+
+È una **prova di Forza**: `d20 + modificatore di FOR` (Thorik ha FOR 20 → **+5**)
+contro **CD 25**. Non è contrapposta: la vecchia stesura la faceva tirare
+contro Lotta +40 ed era **impossibile** (massimo 27 contro minimo 41).
+
+| Elemento | Bonus |
+|---|---|
+| Thorik, FOR 20 | +5 |
+| **Azione preparata** «quando Terros riemerge», invece di inseguirlo nella pietra | **+4** |
+| **Lancia piantata** nelle crepe e peso addosso, invece che impugnata | **+4** |
+| Aiuto in azione (Tordek o Artemis) | +2 |
+
+**Con entrambi i gesti: +15 → serve 10+ (55%). Alla cieca: +7 → serve 18+ (15%).**
+
+> 🎯 **I due bonus sono esattamente i due indizi del suo handout**: l'aneddoto
+> di caccia di Aegis Fang (*«non era stato lui a raggiungerlo»* → non lo
+> insegui, lo **aspetti**) e l'immagine muta della Corona (*due mani sotto un
+> architrave che scende* → non spingi, **reggi**). Il seme che gli hai dato
+> ieri sera **vale 8 punti**. Se il giocatore descrive uno dei due gesti senza
+> citare l'indizio, **concedi il bonus lo stesso**: si premia il gesto, non la
+> citazione. E non dirgli mai «usa l'indizio» — se lo scopre da solo è la
+> scena della serata.
+>
+> Successo = Terros **inchiodato in superficie 1 round, niente rigenerazione**.
+> È la risposta all'arrocco dei 172 pf, ora che il Diapason è speso.
+
+### Se hanno dormito prima di entrare
+
+Costa **−12 h** di countdown, ma soprattutto **tornano tutti i poteri
+1/giorno** (Trinità, Colpo dell'Alba Oscura, Firestorm, i 3 Quicken di
+Artemis). Allora usa il ramo già previsto dal master: **Terros a 34 DV**
+(390 pf, attacchi +32) e **Scudo di Geodi già attivo quando la soglia si
+apre**. Riposando hanno dato tempo anche a lui — e lo vedono in faccia.
+Conto dell'orologio aggiornato con le due pause già fatte: **§8c-4** del master.

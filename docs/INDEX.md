@@ -67,6 +67,7 @@ Il **perché** delle scelte strutturali. Indice completo in [`plans/adr/`](../pl
 | [ADR-0012](../plans/adr/ADR-0012-standard-ingegneria-tool-verificabile.md) | Standard di ingegneria verificabile in CI |
 | [ADR-0013](../plans/adr/ADR-0013-standard-generazione-booklet-sessioni.md) | Standard di generazione dei booklet (stile, anti-spoiler, HTML/Homebrewery/PDF) |
 | [ADR-0014](../plans/adr/ADR-0014-regia-sensoriale-obbligatoria.md) | Regia sensoriale obbligatoria nei master (descrizioni sempre, occhio da avventuriero) |
+| [ADR-0015](../plans/adr/ADR-0015-standard-prompt-immagine.md) | Standard dei prompt immagine (estrazione scene, anatomia, coerenza d'arco) |
 
 ## 5. Archivio piani
 

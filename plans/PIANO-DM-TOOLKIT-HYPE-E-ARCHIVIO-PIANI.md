@@ -423,6 +423,12 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   **Serie di guide passo-passo completa** (booklet+PDF, mappe, bestiario,
   setup, condivisione).
 
+- [x] **K-B17** *(2026-07-30)*: **ADR-0015** (standard dei prompt immagine:
+  dove vivono, anatomia della scheda, bibbia visiva d'arco, IP, spoiler) +
+  `extract_scene_prompts.py` / `dm.py prompts <arco>` (estrazione scene,
+  rigenerazione idempotente che non perde il lavoro) + esemplare ARC-07
+  (46 scene, 3 prompt scritti: soglia di Terros, Smeraldo, ritorno di Durik).
+
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 
 | # | Domanda | Default se non risponde |

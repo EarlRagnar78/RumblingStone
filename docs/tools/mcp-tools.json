@@ -711,6 +711,41 @@
       "deterministic": false
     },
     {
+      "name": "extract_scene_prompts",
+      "description": "Estrae le scene illustrabili di un arco (read-aloud + copertura immagini) e genera lo scheletro del file dei prompt immagine (ADR-0015); rigenerazione idempotente che non perde le schede gia compilate.",
+      "invocation": "python3 scripts/extract_scene_prompts.py <arco>",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "arc": {
+            "type": "string",
+            "description": "Cartella dell'arco (es. \"07_il Portale Della Forgia Eterna\")."
+          },
+          "o": {
+            "type": "string",
+            "description": "File di output (default: <arco>/Immagini/PROMPT-IMMAGINI-<TAG>.md)."
+          },
+          "list": {
+            "type": "boolean",
+            "description": "Elenca soltanto le scene trovate, senza scrivere."
+          }
+        },
+        "required": [
+          "arc"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<arco>/Immagini/PROMPT-IMMAGINI-<TAG>.md"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "nessuna scena trovata",
+        "2": "uso errato / arco assente"
+      },
+      "deterministic": true
+    },
+    {
       "name": "hype_homebrew",
       "description": "Impagina recap o handout in layout Homebrewery V3, senza mai duplicare il filtro spoiler di session_recap.",
       "invocation": "python3 scripts/hype_homebrew.py",

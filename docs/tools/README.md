@@ -5,7 +5,7 @@
 
 > Vista umana del contratto machine-readable [`registry.json`](registry.json). Fonte di verita': `scripts/tools.manifest.json`.
 
-**39 tool** · convenzione exit code `0=ok · 1=errore-dominio · 2=errore-uso`.
+**40 tool** · convenzione exit code `0=ok · 1=errore-dominio · 2=errore-uso`.
 
 ## A · Session Prep (incontri · mappe · tesoro)
 
@@ -45,6 +45,7 @@
 | `build_booklet_html.py` | Booklet in stile 'pergamena Homebrewery' (stile canonico, ADR-0013) da manifest JSON di capitoli markdown: HTML autonomo (SVG inline, raster data-URI) e/o sorgente Homebrewery V3 .hb.md per il self-hosted/Docker; i .md restano i master (ADR-0003). | **manifest** · --out · --format | ✔ | — | — | `0` · `2` |
 | `dm_dossier.py` | SOLO DM: fotografia di tutte le trame da state.md (sezioni 0-7) in veste Homebrewery V3, contenuto estratto alla lettera. | -o/--output | ✔ | — | — | `0` · `1` |
 | `export_booklet_pdf.py` | PDF A4 delle schede di un booklet pergamena (ADR-0013): un PDF per pagina via Chromium/Chrome headless, resa identica al browser (CSS di stampa canonico). Default: solo pagine player (hint/echi/teaser). | **manifest** · --pane · --all · --list · --outdir · --browser | — | — | — | `0` · `1` · `2` |
+| `extract_scene_prompts.py` | Estrae le scene illustrabili di un arco (read-aloud + copertura immagini) e genera lo scheletro del file dei prompt immagine (ADR-0015); rigenerazione idempotente che non perde le schede gia compilate. | **arc** · -o/--output · --list | ✔ | — | — | `0` · `1` · `2` |
 | `hype_homebrew.py` | Impagina recap o handout in layout Homebrewery V3, senza mai duplicare il filtro spoiler di session_recap. | --recap · --pg · --handout · --da · --sezione | ✔ | — | — | `0` · `1` |
 | `session_recap.py` | Recap italiano spoiler-safe (tono R.A. Salvatore) dagli ultimi N session log; taglia sempre le note private DM. | --last-n · --out · --pdf · --seed · --pg | ✔ | — | — | `0` · `1` |
 

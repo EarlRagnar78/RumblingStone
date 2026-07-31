@@ -450,6 +450,14 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   **guarigione del passaggio** al viaggio −1.000 (`ARC07-DEF-4`), trade-off
   Sala/Stanza della Corona per il riposo pre-rito.
 
+- [x] **K-B21** *(2026-07-31)*: **booklet DM del ritorno nella Sala della
+  Forgia** — nuova cartella `homebrew/sessione-ritorno-forgia/` (manifest +
+  intro «La Sala che Ricorda» + **regia nuova** del beat HUB: i tre beat non
+  tagliabili, la regola «non descrivere gli affreschi, falli reagire», la
+  scelta del riposo come scambio, 5 guard-rail) → HTML + `.hb.md` + **3 PDF
+  A4**, interamente DM. Con i due PDF di Terros, la parte DM dell'ARC-07
+  fino alla resurrezione è **completa e stampabile**.
+
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 
 | # | Domanda | Default se non risponde |

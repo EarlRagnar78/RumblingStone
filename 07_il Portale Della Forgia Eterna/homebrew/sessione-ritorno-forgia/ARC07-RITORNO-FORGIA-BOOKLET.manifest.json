@@ -1,0 +1,16 @@
+{
+  "brand": "RUMBLING STONE · ARC-07 · IL PORTALE DELLA FORGIA ETERNA",
+  "title": "Il Ritorno nella Sala della Forgia Eterna",
+  "subtitle": "La Cronaca Vivente · gli Otto Affreschi · la Stanza della Corona",
+  "banner": "BOOKLET DI SESSIONE · SOLO DM",
+  "meta": "Beat HUB D&D 3.5 per 3 personaggi di 13° livello · Faerûn, Flamerule 1372 DR · Campagna privata RumblingStone · si gioca DOPO Terros e PRIMA della resurrezione di Hella · regia DM + master ARC07-DEF-2 integrale",
+  "header": "Il respiro tra due immersioni: la Forgia incide nelle pareti ciò che i PG hanno appena compiuto, ciascuno ha il suo specchio, e l'orologio di Hammerfist preme sul riposo. Nessun nemico. Tutto il fascicolo è ⚠ SOLO DM: gli handout del beat stanno nel §11 del master e si stampano a parte.",
+  "footer": "Il Ritorno nella Forgia",
+  "cover_image": "../../Immagini/Sala Forgia Eterna - Camera Ottagono con 8 Affreschi Divini (Parte 2).webp",
+  "intro_md": "00-INTRO-DOVE-SIAMO.md",
+  "out": "ARC07-RITORNO-FORGIA-BOOKLET.html",
+  "chapters": [
+    {"title": "I · Regia del Ritorno", "file": "01-REGIA-RITORNO.md", "tag": "dm"},
+    {"title": "II · Master integrale — Il Ritorno e gli Affreschi", "file": "../../ARC07-DEF-2-RITORNO-E-AFFRESCHI.md", "tag": "dm"}
+  ]
+}

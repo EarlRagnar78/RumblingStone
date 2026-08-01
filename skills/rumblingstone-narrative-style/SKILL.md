@@ -31,6 +31,13 @@ the user should never have to ask for "the style" explicitly.
 3. `references/style-pillars.md` — the eight pillars: what to take,
    what to avoid, fusion rules.
 4. The specific reference for the task (table below).
+5. **`references/italiano-nativo.md` — OBBLIGATORIO prima di consegnare**
+   qualsiasi testo player-facing (hint, echi, teaser, iscrizioni, lettere) e
+   qualsiasi **read-aloud**. Rilievo dei giocatori 2026-07-31: la prosa
+   generata *«sembra tradotta dall'inglese»*. Quel file è l'antidoto — calchi
+   da evitare, strumenti che solo l'italiano ha, tempi verbali, ritmo, registro
+   nanico, checklist di 30 secondi. **Non è opzionale e non è stilistico: è la
+   differenza fra un handout che i giocatori leggono e uno che li stacca.**
 
 ## The Eight Pillars (one-line summary)
 
@@ -71,6 +78,7 @@ and at most two support pillars, chosen by scene type. The mixer:
 | BG1/2-style complex quest patterns: stages, factions, personal quests | `references/quest-design-baldur.md` |
 | Living world: NPC/villain agency, world turn, SRD attitude system, settlements | `references/living-world.md` |
 | Editorial standards: terminologia canonica, resa read-aloud, tipografia, igiene (enforced in CI da `validate_modules.py`) | `references/editorial-standards.md` |
+| **Italiano nativo: come non scrivere in traduttese** — calchi, dislocazioni, diminutivi, tempi, ritmo, registro nanico, checklist | **`references/italiano-nativo.md`** |
 
 **Worked exemplar in repo**: the Palio di Channathgate
 (`09_.../Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md` + allegati)

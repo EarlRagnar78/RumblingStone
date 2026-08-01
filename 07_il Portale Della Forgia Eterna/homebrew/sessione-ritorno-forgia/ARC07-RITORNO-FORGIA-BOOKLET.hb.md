@@ -55,15 +55,17 @@ Hammerfist preme sul riposo. Nessun nemico, nessun combattimento.
 
 - **Corona di Adamantio**: **due gemme** — Topazio (Tempo) e **Smeraldo
   (Terra), forgiato contro Terros**. Manca solo il Rubino.
-- **Il party è POVERO** `[canone giocato]`: al rito hanno scelto il
-  **sacrificio materiale** — 40.500 mo dal bottino dell'arco, **Cuore di
-  Terros incluso**, più equipaggiamento personale. Thorik **non** ha preso il
-  Peso nel corpo. Entreranno a Hammerfist sotto la ricchezza attesa, ed è una
-  cosa che va **fatta contare**, non corretta di nascosto.
-- **Tordek**: Bracieri completi e coscienti, e **Terros è caduto** — quindi la
-  condizione del potere «Diventare una Collina» è **sbloccata** `[TODO aperto
-  sulla sua scheda: finché è aperto, il potere non esiste al tavolo]`. Porta
-  inoltre nello zaino il **Seme-Mercato di Varis**, e **non sa cosa sia**.
+- **Bottino intatto** `[canone giocato]`: al rito **nessuno si è spogliato**.
+  Geode Titanico, **Cuore di Terros** e geodi sono ancora del party.
+- **TORDEK ha accettato il Peso nel corpo**: **−2 DES / +2 COS permanenti**.
+  Per un monaco è una piccola morte — CA senz'armatura, Riflessi e iniziativa
+  scendono di 1 — e per il portatore dei Bracieri è la cosa più coerente che
+  potesse succedere. **I Bracieri non l'hanno lodato**: un vecchio fabbro dà
+  per scontata la cosa giusta. Terros è caduto, quindi la condizione del potere
+  «Diventare una Collina» è **sbloccata** `[TODO aperto sulla sua scheda]`.
+  Porta inoltre nello zaino il **Seme-Mercato di Varis**, e **non sa cosa sia**.
+- **Thorik ha guardato**. Quello che regge sempre, stavolta non ha retto lui:
+  vale una riga nella catarsi davanti ad A3.
 - **Artemis**: Anello riforgiato. Ha preso il Seme **senza toccarlo** e l'ha
   fatto portare a Tordek: **nessun Marchio attivo**, Varis non localizza
   nessuno — ma la gemma è nel gruppo, tiepida, e l'offerta non scade.
@@ -851,60 +853,77 @@ scene brevi, una per giocatore, giocate **una alla volta e in privato se
 puoi** — o almeno lette a turno mentre gli altri ascoltano senza commentare.
 Chiudi ogni scena e passa oltre: **non spiegare nulla**.
 
-### 🛡️ THORIK — il peso che qualcuno regge con te
+### 🛡️ THORIK — quello che stavolta non ha retto lui
 
-> *Sogni di essere ancora inginocchiato sull'Altare, e il peso c'è ancora — ma
-> non è più insopportabile, perché non lo porti da solo. C'è un secondo paio di
-> mani sotto l'architrave. Non le vedi: le **senti**, e sono più piccole delle
-> tue, e sono fredde come pietra all'ombra, e non tremano.*
+> *Sogni una cosa banale e insopportabile: una trave che scende, e le tue mani
+> che non arrivano in tempo. Non perché sei lento. Perché **qualcun altro ci è
+> arrivato prima**, e adesso è lui che è sotto, e tu sei quello in piedi, con
+> le mani libere e niente da fare.*
+>
+> *Nel sogno provi a dire che tocca a te. Ti esce la voce di quando eri
+> giovane, e nessuno ti sente.*
+
+È il rovescio esatto dell'immagine che la Corona gli aveva mostrato alla
+vigilia — *due mani sotto un architrave che scende* — e adesso quelle mani non
+sono le sue. Al rito il Peso l'ha preso **Tordek**. Thorik ha guardato.
+⚠️ **Non trasformarlo in senso di colpa**: è più sottile e più duro. È un uomo
+la cui identità è *reggere*, che ha scoperto di poter essere risparmiato. Se il
+giocatore ne parla, ascolta e non risolvere.
+
+### ⚒️ TORDEK — le mani fredde, e poi lo zaino
+
+Ha avuto la notte più piena del gruppo: si è preso il Peso e porta il Seme.
+Sono **due scene**, giocale di seguito con una pausa in mezzo.
+
+> *Prima. Sogni di essere ancora inginocchiato sull'Altare, e il peso c'è
+> ancora — ma non lo porti da solo. C'è un secondo paio di mani sotto la trave.
+> Non le vedi: le **senti**, e sono più piccole delle tue, e sono fredde come
+> pietra all'ombra, e non tremano.*
 >
 > *Provi a girare la testa per vedere chi è. E il sogno, con la gentilezza
 > ottusa dei sogni, ti gira la testa **dall'altra parte**.*
 
-Il rimando è doppio: alla presenza verde del rito (§9 Fase 1 del master #1) e
-all'immagine muta che la Corona gli aveva già mostrato alla vigilia — **due
-mani sotto un architrave che scende**. ⚠️ **Thorik non sa che è Hella**, e non
-deve saperlo finché lei non torna (#3). Se il giocatore lo indovina, non
-confermare: *«non lo sai.»*
+⚠️ La presenza verde è **Hella**, e Tordek **non lo sa**. Non confermarlo fino
+al #3. Se il giocatore indovina: *«non lo sai.»*
 
-### ⚒️ TORDEK — lo zaino `[solo se porta il Seme di Varis]`
-
-> *Sogni una fiera. Non una fiera nanica: banchi bassi, teli chiari, una lingua
-> che non conosci ma che capisci lo stesso, e un odore di spezie che non
+> *Poi. Sogni una fiera. Non una fiera nanica: banchi bassi, teli chiari, una
+> lingua che non conosci ma che capisci lo stesso, e un odore di spezie che non
 > crescono in nessun posto in cui sei stato. Nessuno ti guarda. Sei un cliente
 > come un altro, e la cosa che ti mette a disagio è **proprio quella**.*
 >
-> *In fondo al vicolo dei banchi c'è un tavolino con sopra il TUO zaino. Aperto.
-> E un uomo che non riesci a mettere a fuoco sta contando le tue cose, una per
-> una, con la pazienza di chi fa l'inventario. Non ruba niente. **Cataloga.***
+> *In fondo al vicolo dei banchi c'è un tavolino con sopra il TUO zaino.
+> Aperto. E un uomo che non riesci a mettere a fuoco sta contando le tue cose,
+> una per una, con la pazienza di chi fa l'inventario. Non ruba niente.
+> **Cataloga.***
 >
 > *Ti svegli con la mano già sulla cinghia.*
 
-⚠️ Il Seme **non è stato toccato** e il Marchio **non è attivo**: questo sogno
-non è un effetto della gemma, è la Sala che gli mostra **cosa si è caricato in
-spalla senza chiedere**. Se Tordek racconta il sogno al gruppo, lascia che sia
-Artemis a decidere se dire la verità: **quella conversazione vale una scena**.
-*(Salta questa scena se il Seme è stato rifiutato o distrutto.)*
+Il Seme **non è stato toccato** e il Marchio **non è attivo**: non è la gemma
+che agisce, è la Sala che gli mostra **cosa si è caricato in spalla senza
+chiedere**. Se Tordek racconta il sogno al gruppo, lascia che sia Artemis a
+decidere se dire la verità: **quella conversazione vale una scena**.
+*(Salta la seconda parte se il Seme è stato rifiutato o distrutto.)*
 
-### 🔮 ARTEMIS — la porta che hai già aperto
+### 🔮 ARTEMIS — la porta, dopo che hai già visto il negozio
 
-> *Sogni di essere davanti all'affresco del Tempo, ma sveglio, e da solo. E
-> l'affresco non è un affresco: è una **porta socchiusa**, e dallo spiraglio
-> viene aria — aria vera, che sa di fumo di forgia e di neve. Mille anni di
-> aria.*
+> *Il bazar te lo ricordi ancora: i teli chiari, i registri, tutto quel
+> disordine ricchissimo tenuto in ordine da qualcuno di molto bravo. Nel sogno
+> ci torni — ma da fuori, e la porta del mercato non è la porta del mercato.
+> È l'affresco del Tempo.*
 >
-> *Sai, col tipo di certezza che hai solo nei sogni, che oltre quella porta c'è
-> tutto quello che il mondo ha dimenticato di aver perso. Interi cataloghi.
-> Cose senza proprietario da dieci secoli.*
+> *È **socchiusa**, e dallo spiraglio viene aria vera, che sa di fumo di forgia
+> e di neve. Mille anni di aria. E sai, col tipo di certezza che hai solo nei
+> sogni, che oltre c'è tutto quello che il mondo ha dimenticato di aver perso:
+> interi cataloghi, cose senza proprietario da dieci secoli.*
 >
-> *E sai anche, con la stessa certezza, che **qualcuno l'ha già aperta prima di
-> te** — perché lo spiraglio non l'hai fatto tu, e sullo stipite, all'altezza
-> della mano, il legno è **consumato da un pollice** che ci si è appoggiato
-> molte volte.*
+> *Sai anche, con la stessa certezza, che **qualcuno l'ha già aperta prima di
+> te**. Lo spiraglio non l'hai fatto tu, e sullo stipite, all'altezza della
+> mano, il legno è **consumato da un pollice** che ci si è appoggiato molte
+> volte.*
 
-Il gancio è **Vatore** (#4). Non nominarlo, non spiegarlo. Se Artemis chiede di
-chi è il pollice, la risposta è che nel sogno lo sapeva e sveglio non se lo
-ricorda.
+Il gancio è **Vatore** (#4). Non nominarlo. Se Artemis chiede di chi è il
+pollice: nel sogno lo sapeva, sveglio non se lo ricorda. E se chiede se il
+bazar c'entra — *sì, ma non sai come*.
 
 ### 🌙 HELLA — dall'altra parte `[handout per la sua giocatrice]`
 

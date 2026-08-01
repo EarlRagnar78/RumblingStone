@@ -458,6 +458,20 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   A4**, interamente DM. Con i due PDF di Terros, la parte DM dell'ARC-07
   fino alla resurrezione è **completa e stampabile**.
 
+- [x] **K-B22** *(2026-07-31)*: **ARC-07 P4 giocato e chiuso** — Terros caduto,
+  orologio risolto a 3g 16h, terza strada sul Seme di Varis (preso e mai
+  toccato, nello zaino di Tordek), nuovo `ARC07-DEF-2` §7-bis «Le Quattro Ore
+  Rubate», `state.md` aggiornato con 4 echi armati.
+
+- [x] **K-B23** *(2026-07-31)*: **rettifica del rito** (Opzione B, e a prenderla
+  è **Tordek**: −2 DES/+2 COS, bottino intatto) · dettagli giocati della gemma
+  di Varis (densità, aure Trasmutazione+Ammaliamento, visione del bazar come
+  *vetrina non contratto*) · 🇮🇹 **`italiano-nativo.md`** nella skill di stile,
+  **obbligatorio** per player-facing e read-aloud, nato dal rilievo dei
+  giocatori sul «traduttese» · **`DM-CAMPAIGN-PLAYBOOK` §1-bis** sul buco
+  tattico del party (detection senza bersagli, zero incantatori) con
+  l'avvertenza che **i demoni peggiorerebbero le cose** (RI vs Eldritch Blast).
+
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 
 | # | Domanda | Default se non risponde |

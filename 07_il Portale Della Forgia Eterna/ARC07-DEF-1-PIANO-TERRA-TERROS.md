@@ -776,10 +776,26 @@ finora la propria avidità nell'arco:
 
 > ### ✅ CANONE GIOCATO (DM 2026-07-31) — la terza strada: PRESO, MAI TOCCATO
 >
-> **Cos'è successo davvero.** Artemis **non ha rifiutato** e **non ha
-> accettato**: ha **estratto il cabochon senza toccarlo a mani nude** e l'ha
-> fatto **mettere nello zaino di TORDEK**. Il Seme viaggia col party, sigillato
-> in una sacca che non è la sua.
+> **Cos'è successo davvero.** La gemma **è caduta da sola** dalla parete e,
+> pesantissima per la sua taglia, si è **conficcata nel pavimento** come una
+> punta di trapano — *«densa in un modo che le gemme non sono»*. Artemis **non
+> ha rifiutato** e **non ha accettato**: l'ha recuperata **senza toccarla a
+> mani nude** e l'ha fatta **mettere nello zaino di TORDEK**. Il Seme viaggia
+> col party, sigillato in una sacca che non è la sua.
+>
+> **Cosa ha rilevato Artemis** (Vista Potenziata + Sapienza Forgiata
+> dell'Anello): oggetto magico, **Trasmutazione + Ammaliamento**. Le due scuole
+> raccontano da sole cos'è, per chi sa leggerle: la **Trasmutazione** è
+> l'innesto che cresce e si radica; l'**Ammaliamento** è **la parte che parla**.
+> Un mercante non pianta una trappola: pianta un **venditore**.
+>
+> **La visione del bazar (giocata).** Prima ancora del contatto, ad Artemis è
+> arrivato **negli occhi della mente** il mercato di Varis: banchi, teli,
+> registri, la ricchezza ordinata di un posto dove tutto ha un prezzo scritto.
+> ⚠️ **La visione NON è il contratto**: è la **vetrina**. L'Ammaliamento serve
+> a far vedere la merce; il **Marchio si chiude solo col tocco**. Artemis ha
+> guardato la vetrina e non è entrato — ma adesso **sa cosa c'è dentro**, e
+> quello non si dimentica.
 >
 > **Stato meccanico — il Marchio NON è attivo.** Il vincolo si chiude **col
 > tocco** (*«la voce arriva col tocco della gemma»*, e Varis chiede di
@@ -1612,37 +1628,44 @@ L'Altare porta la gravità a livelli intollerabili. Thorik si inginocchia.
 > la giocatrice di Hella è uno dei suoi echi (§1). **Non spiegarlo finché non
 > torna Hella (#3).**
 
-> ### ✅ CANONE GIOCATO (DM 2026-07-31) — scelta A: il sacrificio MATERIALE
+> ### ✅ CANONE GIOCATO (DM 2026-07-31, rettifica) — scelta B: il PESO NEL CORPO, e lo prende TORDEK
 >
-> `[ASSUNZIONE DA UNA RIGA DEL DM: «rituale della gemma **economica**» → letto
-> come **Opzione A, sacrificio materiale**. Se al tavolo era invece l'Opzione B
-> (Thorik prende il Peso nel corpo: −2 DES / +2 COS permanenti), questa è
-> l'unica riga da correggere — e con lei state.md §1/§6.]`
+> **Nessun sacrificio materiale.** Il bottino dell'arco è **intatto**: Geode
+> Titanico, **Cuore di Terros**, residuo golem e geodi restano al party, e
+> nessuno si è spogliato dell'equipaggiamento. Il party **non** entra povero a
+> Hammerfist.
 >
-> Thorik **non** ha preso il Peso nel corpo: il party ha **pagato**. Le 40.500
-> mo sono uscite dal bottino dell'arco (Geode Titanico, **Cuore di Terros**,
-> residuo golem, geodi) **più** l'equipaggiamento magico personale necessario a
-> colmare la differenza.
+> ⚠️ **Deviazione dal modulo, voluta: il Peso l'ha accettato TORDEK, non
+> Thorik.** La Fase 1 era scritta per il portatore della Corona; al tavolo si è
+> inginocchiato il monaco. *(Se al tavolo era invece Thorik, questa è l'unica
+> riga da correggere, insieme a `state.md` §1.)*
 >
-> | | Stato |
+> | | Effetto permanente |
 > |---|---|
-> | **Thorik** | ❌ nessun −2 DES / +2 COS. Le sue caratteristiche restano quelle di prima (resta il **−2 COS permanente** più vecchio, dalla resurrezione mancata di Hella — quello è di un'altra scena e non si tocca) |
-> | **Cuore di Terros** (20.000 mo) | ❌ **speso nel rito**. Niente *Amuleto di Armatura Naturale +5*, niente componente: **Artemis ha visto il suo tesoro sciogliersi sull'Altare** |
-> | **Bottino dell'arco** | ❌ sostanzialmente azzerato |
-> | **Equipaggiamento personale** | ⚠️ intaccato: il DM stabilisca **cosa** è stato dato via, PG per PG, e lo registri sulle schede |
+> | **TORDEK** | **−2 DES** e **+2 COS**, permanenti. Le articolazioni hanno fatto lega con la pietra |
+> | **Thorik** | nessun cambiamento nuovo (resta il **−2 COS** più vecchio, di un'altra scena) |
+> | **Bottino** | ✅ **integro**, Cuore di Terros compreso |
 >
-> **La conseguenza vera è a Hammerfist, non qui.** Il party entra nell'ARC-08
-> **impoverito**: sotto la WBL attesa per il 13° livello. Non è un errore di
-> bilanciamento da correggere di nascosto — è **la cosa che hanno scelto**, e
-> il modo giusto di onorarla è farla **contare** e poi farla **ripagare** dalla
-> montagna: i nani di Hammerfist sanno chi ha comprato la loro salvezza
-> spogliandosi, e un fabbro nanico che lo scopre non resta a guardare. Il delta
-> WBL si colma **in ARC-08 come ricompensa narrata**, non come loot casuale.
+> **Perché funziona meglio così, e come giocarlo.** Tordek è il monaco: la DES
+> è la sua statistica di mestiere (CA senz'armatura, Riflessi, Raffica). Perdere
+> 2 DES per guadagnare 2 COS significa che **ha barattato la propria agilità
+> con la capacità di reggere** — cioè ha smesso di essere quello che schiva ed è
+> diventato quello che sta. Per un monaco è una piccola morte, e per il
+> portatore dei **Bracieri Gemelli** è la cosa più coerente che potesse
+> succedere: *«Incudine e Martello»*, e l'incudine non schiva.
 >
-> **Il beat da non perdere.** Artemis ha lasciato andare il Cuore di Terros —
-> l'oggetto che il modulo diceva che *«l'occhio di Artemis ci si posa subito»*.
-> Qualunque cosa faccia più avanti col Seme di Varis, **questo** è successo
-> prima: dagliene atto, almeno una volta, per bocca di qualcun altro.
+> - **Ricalcola sulla scheda**: CA senz'armatura, Riflessi, iniziativa, prove di
+>   DES — tutti **−1**. Pf massimi **+1/DV** e Tempra **+1**.
+> - **I Bracieri non lo lodano.** Un vecchio fabbro non fa complimenti a chi ha
+>   fatto la cosa giusta: la dà per scontata. Al massimo, molto dopo, una riga
+>   secca — *«Adesso pesi.»*
+> - **La presenza verde** (§9 Fase 1) si è stretta alle spalle di **Tordek**:
+>   è Hella, e lui **non lo sa**. Per la sua giocatrice è un eco. Non spiegarlo
+>   fino al #3 — e quando lo spiegherai, ricordati che è **lui** che ha sentito
+>   quelle mani, non Thorik.
+> - **Thorik ha guardato senza poter fare niente.** Il portatore della Corona,
+>   quello che regge sempre, questa volta **non ha retto lui**. Vale una riga
+>   nella catarsi davanti ad A3 (master #2, §4).
 
 ### FASE 2 — Forgiare la Connessione (3 round, TUTTI insieme) ⭐
 > **QUESTO è il cuore meccanico ed emotivo che era andato perso nella

@@ -20,7 +20,8 @@ della Forgia Eterna (P1-P2), Piano del Fuoco con Topazio recuperato (P3),
 viaggio spirituale di Hella nell'Incudine del Mondo con Durik (P3B-spirito,
 registrato); **✅ Piano della Terra (P4) COMPLETATO al tavolo 2026-07-31**:
 Terros l'Antico sconfitto, **Smeraldo della Forza forgiato nella Corona**
-(rito con sacrificio **materiale** — vedi §6 e §7.E), Seme-Mercato di Varis
+(rito: **Tordek ha accettato il Peso nel corpo** — −2 DES/+2 COS permanenti;
+bottino dell'arco **intatto**), Seme-Mercato di Varis
 **preso ma mai toccato**; party rientrato nella Sala e **riposato lì**
 (orologio Hammerfist a **3g 16h**). **Prossimo: resurrezione di Hella (P3B).**
 Restano da giocare: resurrezione fisica di Hella (P3B), viaggio ai
@@ -73,7 +74,7 @@ Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per det
 | PC | Class | Location | HP / status | Open personal threads |
 |---|---|---|---|---|
 | Thorik | Dwarf Fighter 13 | Hammerfist Holds, war council chamber | Full; -2 perm CON sacrificed for Hella's resurrection (NEVER restored) | Decide whether to lead defense of Rethmar personally vs. delegate |
-| Tordek | Dwarf Fighter 4 / Monk 9 | Hammerfist → traveling to Dauth Tournament | Full; Bracieri Earth phase complete | Tournament of the Eight Gates (3 days, interrupted by Githyanki Day 3) |
+| Tordek | Dwarf Fighter 4 / Monk 9 | Hammerfist → traveling to Dauth Tournament | Full; Bracieri Earth phase complete; **−2 DES / +2 COS permanenti** (ha accettato il Peso del Mondo al rito dello Smeraldo, 2026-07-31 — ricalcolare CA senz'armatura, Riflessi, iniziativa) | Tournament of the Eight Gates (3 days, interrupted by Githyanki Day 3) |
 | Hella | Dream Dwarf Ranger 1 / Druid 12 | Hammerfist → traveling to Sacred Forest | Full; Treant Hybrid template active post-resurrection | Sacred Forest ritual (pass = druid circle ally at Rethmar) |
 | Artemis | Human Warlock 13 | Hammerfist → traveling to Invisible Tower (Dauth region) | Full; Ring of Chaotic Illumination active | Confront Zalkatar (CR 13 illithid warlock); Ring evolution at stake |
 
@@ -398,7 +399,8 @@ fiction allows. Max ~12 armed — prune during prep.
 |----|----------------------------|------|------|---------------|--------|
 | **E-07a** | 2026-07-31 · **Artemis** · prende il Seme-Mercato di Varis ma **non lo tocca**, e lo fa portare a **Tordek** | grigio | lunga (ARC-09) | Varis scopre di essere stato riconosciuto e trattato da pari: apre una **trattativa**, non una riscossione. E il giorno in cui serve un favore, la gemma è già in mano al party — sulla schiena sbagliata | 🔫 armato |
 | **E-07b** | 2026-07-31 · **Tordek** · porta nello zaino un innesto planare **senza sapere cosa sia** | grigio/inquieto | media | Il primo che tocca il Seme se ne prende il Marchio. Se è Tordek, Varis gli offre **certezze** invece che tesori — l'esca giusta per un monaco che ha perso una compagna | 🔫 armato |
-| **E-07c** | 2026-07-31 · **party** · rito dello Smeraldo con **sacrificio materiale**: dato via il bottino dell'arco, **Cuore di Terros incluso**, più equipaggiamento personale | luminoso, costoso | breve (ARC-08) | Entrano a Hammerfist **poveri**. I nani scoprono che qualcuno si è spogliato per comprare la loro salvezza: il delta WBL si ripaga come **riconoscimento narrato**, non come loot | 🔫 armato |
+| **E-07c** | 2026-07-31 · **Tordek** · al rito dello Smeraldo **accetta il Peso nel corpo**: −2 DES / +2 COS permanenti. Il monaco baratta l'agilità con la capacità di reggere | luminoso, costoso | media | «L'incudine non schiva». Il momento in cui la perdita di DES gli costa qualcosa di visibile (un salto mancato, una parata che prima gli riusciva) e lui **non se ne lamenta**. E il giorno in cui regge un colpo che prima l'avrebbe steso | 🔫 armato |
+| **E-07e** | 2026-07-31 · **Thorik** · il portatore della Corona **guarda un altro reggere il peso** al posto suo | intimo | media | Quello che regge sempre, stavolta non ha retto lui. Riemerge nella catarsi davanti ad A3 e quando Tordek sarà in difficoltà | 🔫 armato |
 | **E-07d** | 2026-07-31 · **Terros** · l'ultimo suono del guardiano è di **assenso** (avevano curato i Cristalli) | luminoso | lunga | La Forgia registra la vittoria **onorata**. Un guardiano che approva è una porta che resta aperta: eco al #4 e nella Cronaca | 🔫 armato |
 
 ### §7.R Reputation (Fama / Infamia) + Anointing Threads

@@ -32,15 +32,17 @@ Hammerfist preme sul riposo. Nessun nemico, nessun combattimento.
 
 - **Corona di Adamantio**: **due gemme** — Topazio (Tempo) e **Smeraldo
   (Terra), forgiato contro Terros**. Manca solo il Rubino.
-- **Il party è POVERO** `[canone giocato]`: al rito hanno scelto il
-  **sacrificio materiale** — 40.500 mo dal bottino dell'arco, **Cuore di
-  Terros incluso**, più equipaggiamento personale. Thorik **non** ha preso il
-  Peso nel corpo. Entreranno a Hammerfist sotto la ricchezza attesa, ed è una
-  cosa che va **fatta contare**, non corretta di nascosto.
-- **Tordek**: Bracieri completi e coscienti, e **Terros è caduto** — quindi la
-  condizione del potere «Diventare una Collina» è **sbloccata** `[TODO aperto
-  sulla sua scheda: finché è aperto, il potere non esiste al tavolo]`. Porta
-  inoltre nello zaino il **Seme-Mercato di Varis**, e **non sa cosa sia**.
+- **Bottino intatto** `[canone giocato]`: al rito **nessuno si è spogliato**.
+  Geode Titanico, **Cuore di Terros** e geodi sono ancora del party.
+- **TORDEK ha accettato il Peso nel corpo**: **−2 DES / +2 COS permanenti**.
+  Per un monaco è una piccola morte — CA senz'armatura, Riflessi e iniziativa
+  scendono di 1 — e per il portatore dei Bracieri è la cosa più coerente che
+  potesse succedere. **I Bracieri non l'hanno lodato**: un vecchio fabbro dà
+  per scontata la cosa giusta. Terros è caduto, quindi la condizione del potere
+  «Diventare una Collina» è **sbloccata** `[TODO aperto sulla sua scheda]`.
+  Porta inoltre nello zaino il **Seme-Mercato di Varis**, e **non sa cosa sia**.
+- **Thorik ha guardato**. Quello che regge sempre, stavolta non ha retto lui:
+  vale una riga nella catarsi davanti ad A3.
 - **Artemis**: Anello riforgiato. Ha preso il Seme **senza toccarlo** e l'ha
   fatto portare a Tordek: **nessun Marchio attivo**, Varis non localizza
   nessuno — ma la gemma è nel gruppo, tiepida, e l'offerta non scade.

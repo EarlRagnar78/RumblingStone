@@ -338,7 +338,7 @@ full mechanics.
 | Aegis Fang | Thorik | Pre-full-awakening: +2 Returning Dwarven Waraxe; bonded | Unchanged until the Siege (P5) is won → then Stage 1 full awakening (see Aegis master) |
 | Corona di Adamantio | Thorik | ✅ **Topazio + SMERALDO accesi** e **Rituale Legacy 3 «Incudine del Mondo» COMPLETATO** (giocato 2026-07-31). Poteri attivi: Stone's Awareness (incl. traps + comprehend languages), +2 deflection AC, Moradin's Insight, Topazio 1/mese (attivazione 1 ora), **Smeraldo/Terra 1/settimana**, e i due sbloccati dal Rituale 3 — **Adamantine Will** (immune charme/compulsione + 4 razziale vs mentale su pietra) e **Mantle of Stone and Spirit** (**Mind Blank permanente**, RD 5/epico, Comunione 1/mese da un Nodo). ⚠️ Il pegno del Rituale 3 l'ha pagato **Tordek**, non il portatore. Mancano Corona +3, Senzienza e il Rubino: si sbloccano col **Rituale 4** = viaggio a −1.000 | All 3 gems lit: + Emerald earthquake 1/week; Ruby single-use SPENT at the ancient battle (≈372 DR) |
 | Ring of Chaotic Illumination | Artemis | Reforged at Eternal Forge: full base powers | Unchanged; awaits further evolution at Invisible Tower |
-| Bracieri Gemelli di Moradin | Tordek | Fire ✅ + Earth ✅: Salto Infuocato 3/day, Fire Resist 10, DR 5/adamantine, Jump +10; Benedizione della Forgia active (4 charges/day — permanent for the whole campaign, DM 2026-07-04) | Unchanged |
+| Bracieri Gemelli di Moradin | Tordek | Fire ✅ + Earth ✅: Salto Infuocato 3/day, Fire Resist 10, DR 5/adamantine, Jump +10; Benedizione della Forgia active (4 charges/day — permanent, DM 2026-07-04); **Ancoraggio della Montagna 2/day** (immediata, nega il movimento forzato). ⭐ **NUOVO 2026-07-31 — «Diventare una Collina»** sbloccato dalla caduta di Terros: taglia Grande 1 min, 1/giorno, **prima attivazione automatica e gratuita** quando uno scontro con una creatura Enorme+ porta Tordek sotto metà pf; dopo, azione di movimento **solo in condizioni di pericolo** | Unchanged |
 | Cintura della Devastazione (custom PG, D17) | Tordek | Active — Devastation Gauntlets (MIC) moved to **belt slot** so wrists stay free for the Bracieri; ~3/day devastation charges (+2d6). Sheet: `PG/Artefatti/Artefatti-Pg/Tordek/00_Cintura_della_Devastazione.md`. Exact values → ARC-07 B5 | Unchanged |
 | Collana dei Semi Eterni | Hella (dead — resurrection pending) | Forged, awaiting the P3B ritual; Hella not yet resurrected | Active post-resurrection: Treant summoning (limited), Avatar form (1/day), party gift slots (unspent: 3) |
 | Cuore di Moradin | Crown set (altar) | Intact — will be expended as catalyst in the P3B ritual | SPENT: single-use expended to resurrect Hella |
@@ -1489,4 +1489,26 @@ entries — they become campaign history.
             dei Bracieri (TODO aperto sulla scheda di Tordek: finche' e'
             aperto, il potere NON esiste al tavolo).
             PROSSIMO: resurrezione di Hella (P3B / DEF-3).
+```
+
+```
+2026-08-01  ARTEFATTI — audit e sblocchi.
+            BRACIERI: sbloccato «Diventare una Collina» (taglia Grande, 1/g).
+            Canone DM: la PRIMA attivazione e' automatica e gratuita, quando
+            uno scontro con una creatura Enorme o piu' grande porta Tordek
+            sotto meta' pf; i Bracieri parlano solo quella volta ("Bestia
+            grossa. Ci vuole un martello piu' grosso."). Dalle volte
+            successive: azione di movimento, 1/giorno, e SOLO se sul campo
+            c'e' una creatura Enorme+, un compagno a 0 pf, o Tordek sotto
+            meta' pf. Fuori da quelle condizioni i guanti restano freddi.
+            Nota: fra il -2 DES permanente del rito e il -2 dell'ingrandimento,
+            da Grande Tordek ha 4 DES in meno di prima del Piano della Terra.
+            AEGIS FANG: audit fatto, NESSUNO sblocco da Terros. Resta Stadio 0.
+            Il Bane vs Fauci di Palude arriva dall'affresco A7 (prossima
+            sessione); il risveglio pieno richiede Assedio della Forgia +
+            Corona Senziente, cioe' la stessa sessione del Rubino.
+            ANELLO: audit fatto, NESSUNO sblocco da Terros. Resta Riforgiato.
+            Caos Ultimo solo se Zalkatar cade alla Torre Invisibile.
+            Nuove schede in stile di casa: Aegis Fang Stadio 0 e Anello
+            Riforgiato (entrambe con blocco DM "cosa arriva e da dove").
 ```

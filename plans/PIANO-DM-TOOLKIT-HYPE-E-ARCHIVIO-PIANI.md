@@ -503,6 +503,19 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   difese sono tutte invisibili**. Quattro mosse, fra cui offrire subito «Il
   Filo dell'Ascia» al rito di Hella (paga l'artefatto, non il corpo).
 
+- [x] **K-B28** *(2026-08-01)*: **«Diventare una Collina» a canone** sui
+  Bracieri Gemelli — si accende **da sé**, gratis, la prima volta che una
+  creatura Enorme mette Tordek sotto metà pf (*«Bestia grossa.» … «Ci vuole un
+  martello più grosso.»*); dalle volte dopo 1/giorno, azione di movimento, e
+  solo in pericolo vero. Più l'**audit di Aegis Fang e dell'Anello**: esito
+  **nessuno sblocco da Terros** per entrambi, e le **quattro** schede nuove lo
+  dicono nero su bianco invece di lasciare il dubbio — **doppia versione PG/DM**
+  come per la Corona, così la copia da consegnare non porta con sé i tempi
+  degli sblocchi. Le schede sono scritte **ognuna nello stile grafico del
+  proprio artefatto** — dorato-oliva nanico per Aegis Fang (Thorik),
+  bruno-viola per l'Anello (Artemis): gli stili sono personalizzati per
+  personaggio e non si uniformano.
+
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 
 | # | Domanda | Default se non risponde |

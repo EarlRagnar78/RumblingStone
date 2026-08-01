@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[DM] Anello dell'Illuminazione Caotica — Riforgiato (stato attuale)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: A4;
+            margin: 0.5in;
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            font-size: 12pt;
+            line-height: 1.4;
+            color: #2c1810;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f8f6f0 0%, #ede8dc 100%);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #8B4513;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .class-title {
+            font-size: 24pt;
+            font-weight: bold;
+            color: #8B4513;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 14pt;
+            font-style: italic;
+            color: #5d4e37;
+            margin: 5px 0;
+        }
+
+        .quote {
+            font-style: italic;
+            text-align: center;
+            color: #5d4e37;
+            font-size: 13pt;
+            margin: 15px 0;
+            padding: 10px;
+            border-left: 3px solid #daa520;
+            background: rgba(218, 165, 32, 0.1);
+        }
+
+        .infernal {
+            font-family: 'Cinzel Decorative', cursive;
+            font-size: 14pt;
+            color: #8B0000;
+            text-shadow: 0 0 4px #FF4500;
+            font-weight: bold;
+            font-style: normal;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            color: #8B4513;
+            font-size: 16pt;
+            font-weight: bold;
+            border-bottom: 2px solid #daa520;
+            padding-bottom: 3px;
+            margin: 20px 0 10px 0;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            color: #5d4e37;
+            font-size: 14pt;
+            font-weight: bold;
+            margin: 15px 0 8px 0;
+        }
+
+        .ability-name {
+            font-weight: bold;
+            color: #8B4513;
+        }
+
+        .ability-type {
+            font-style: italic;
+            color: #5d4e37;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 11pt;
+        }
+
+        th {
+            background: linear-gradient(135deg, #8B4513, #a0522d);
+            color: white;
+            padding: 8px 4px;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid #654321;
+        }
+
+        td {
+            padding: 6px 4px;
+            text-align: center;
+            border: 1px solid #daa520;
+            background: rgba(248, 246, 240, 0.8);
+        }
+
+        tr:nth-child(even) td {
+            background: rgba(237, 232, 220, 0.8);
+        }
+
+        .requirements {
+            background: rgba(139, 69, 19, 0.1);
+            border: 2px solid #8B4513;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        ul {
+            margin: 8px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 4px 0;
+        }
+
+        .two-column {
+            column-count: 2;
+            column-gap: 20px;
+            text-align: justify;
+        }
+
+        .one-column {
+            column-count: 1;
+            max-width: 100%;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        .synergy-box {
+            background: rgba(75, 0, 130, 0.05);
+            border: 2px solid #4B0082;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .artifact-image {
+            display: block;
+            margin: 0 auto 10px auto;
+            max-width: 20%;
+            height: auto;
+            border: 2px solid #8B4513;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+
+        .dm-box { background: rgba(139, 0, 0, 0.04); border: 2px solid #8B0000; padding: 15px; margin: 15px 0; border-radius: 5px; }
+        .dm-box h3 { color: #8B0000; margin-top: 0; text-transform: uppercase; letter-spacing: 1px; font-size: 13pt; }
+        .dormiente { background: rgba(120,120,120,0.10); border: 2px dashed #999; padding: 15px; margin: 15px 0; border-radius: 5px; color: #555; }
+        td.l { text-align: left; }
+        /* Print optimization to prevent splitting */
+        @media print {
+
+            table,
+            .requirements,
+            .synergy-box,
+            .one-column {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            h2,
+            h3 {
+                break-after: avoid;
+                page-break-after: avoid;
+            }
+
+            tr {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            p,
+            li {
+                orphans: 3;
+                widows: 3;
+            }
+
+            .keep-together {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            .force-page-break {
+                break-before: page;
+                page-break-before: always;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="requirements" style="border-color:#8B0000;background:rgba(139,0,0,0.07);">
+        <strong>Copia DM &mdash; non darla al giocatore.</strong> Contiene l'audit, il filo di Varis e i poteri di crisi. La versione da consegnare ad Artemis &egrave; <em>00_Ring_Riforgiato.html</em>.
+    </div>
+
+    <div class="header">
+        <h1 class="class-title">Anello dell'Illuminazione Caotica</h1>
+        <div class="subtitle">Riforgiato alla Forgia Eterna — stato al 1 Flamerule 1372</div>
+        <div class="infernal">&laquo;Il Caos lo amo. Un guinzaglio no.&raquo;</div>
+    </div>
+
+    <img src="ring-chaotic-illumination-evolved.png" alt="Anello dell'Illuminazione Caotica" class="artifact-image">
+
+    <div class="quote">
+        Mithral e ombra viola, nato dalla Colonna di Mithral della Forgia. Non obbedisce e non comanda: sussurra, e quello che sussurra sono segreti del divino e dell'arcano che nessun altro sente.
+    </div>
+
+    <div class="requirements">
+        <strong>Slot:</strong> anello &middot; <strong>Legato a:</strong> Artemis &middot; <strong>Allineamento:</strong> &mdash; (opera con lui, non su di lui)<br>
+        <strong>Stadio:</strong> Riforgiato &mdash; assorbita l'essenza della Colonna di Mithral<br>
+        <strong>Doppia essenza:</strong> Lathander (alba) e Mask (ombra), in equilibrio instabile
+    </div>
+
+    <h2>Poteri sempre attivi</h2>
+
+    <div class="one-column">
+        <table>
+            <tr><th style="width:26%">Potere</th><th>Effetto</th></tr>
+            <tr>
+                <td><span class="ability-name">Vista Potenziata</span><br><span class="ability-type">Sop &middot; costante</span></td>
+                <td class="l">Scurovisione <strong>36 m</strong>. <strong>Vista del Diavolo</strong>: vedi nel buio magico fino a 18 m. Vista Crepuscolare.</td>
+            </tr>
+            <tr>
+                <td><span class="ability-name">Conoscenza Forgiata</span><br><span class="ability-type">Sop &middot; costante</span></td>
+                <td class="l"><strong>+8 competenza</strong> a Conoscenze (Arcane) e Conoscenze (Religioni).</td>
+            </tr>
+            <tr>
+                <td><span class="ability-name">Aura di Diplomazia</span><br><span class="ability-type">Sop &middot; costante</span></td>
+                <td class="l"><strong>+2 competenza</strong> a Diplomazia.</td>
+            </tr>
+            <tr>
+                <td><span class="ability-name">Benedizione della Doppia Fiamma</span><br><span class="ability-type">Sop &middot; costante</span></td>
+                <td class="l"><strong>Resistenza al Fuoco 10</strong>. Il tuo <em>Eldritch Blast</em> infligge <strong>+1d6 fuoco e +1d6 freddo</strong>.</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>Poteri da attivare</h2>
+
+    <div class="one-column">
+        <table>
+            <tr><th style="width:24%">Potere</th><th style="width:20%">Azione &middot; usi</th><th>Effetto</th></tr>
+            <tr>
+                <td><span class="ability-name">Ali d'Ombra</span><br><span class="ability-type">&laquo;Umbra Volum / Cessum&raquo;</span></td>
+                <td>gratuita<br><strong>a volontà</strong></td>
+                <td class="l">Volo <strong>18 m</strong>, manovrabilità buona. Mentre le ali sono aperte hai <strong>Attacco in Volo</strong>.</td>
+            </tr>
+            <tr>
+                <td><span class="ability-name">Passo d'Ombra</span><br><span class="ability-type">Sop &middot; &laquo;Tenebris Saltum&raquo;</span></td>
+                <td>movimento<br>1 ogni 5 round</td>
+                <td class="l"><em>Porta Dimensionale</em> fino a <strong>18 m</strong> a vista. Devi partire <strong>e</strong> arrivare in penombra o buio.</td>
+            </tr>
+            <tr>
+                <td><span class="ability-name">Luce di Lathander</span><br><span class="ability-type">Mag &middot; CL 15</span></td>
+                <td>rapida<br>1/giorno</td>
+                <td class="l"><em>Luce del Giorno</em>, raggio 18 m, 10 minuti. Alleati nel raggio: <strong>+2 morale</strong> al colpo per 3 round. Nemici sensibili alla luce (draghi neri, creature di palude): <strong>&minus;2</strong> al colpo e ai danni.</td>
+            </tr>
+            <tr>
+                <td><span class="ability-name">Ombra di Mask</span><br><span class="ability-type">Mag &middot; CL 15</span></td>
+                <td>rapida<br>1/giorno</td>
+                <td class="l"><em>Invisibilità Superiore</em> su di te <strong>e</strong> un alleato che tocchi, <strong>5 round</strong>. Nessuna concentrazione.</td>
+            </tr>
+            <tr>
+                <td><span class="ability-name">Dono dell'Unità</span><br><span class="ability-type">Sop</span></td>
+                <td>rapida<br>1/giorno</td>
+                <td class="l">Un alleato entro <strong>9 m</strong> ottiene subito <strong>un'azione standard extra</strong>. La sua iniziativa non cambia.</td>
+            </tr>
+            <tr>
+                <td><span class="ability-name">Invocazione Tempesta di Fuoco</span><br><span class="ability-type">Mag &middot; gittata media</span></td>
+                <td>standard<br>1/giorno</td>
+                <td class="l"><strong>8d6 fuoco</strong> in raggio 9 m, <strong>Riflessi CD 19</strong> dimezza. <strong>Gli alleati sono immuni</strong> allo scoppio.</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>Il Seme che non hai toccato</h2>
+
+    <div class="synergy-box">
+        <h3 style="margin-top:0;color:#4B0082;">Il cabochon violetto &mdash; in mano al gruppo, non a te</h3>
+        <p>È caduto da solo dalla parete e si è conficcato nel pavimento: troppo denso per una gemma di quella misura. L'hai tirato fuori <strong>senza toccarlo a mani nude</strong> e l'hai fatto mettere <strong>nello zaino di Tordek</strong>.</p>
+        <p><strong>Nessun marchio.</strong> Il vincolo si chiude col contatto, e il contatto non c'è stato: Varis non sa dove sei, e non ha crediti da riscuotere.</p>
+        <p>Quello che hai letto sopra la gemma: <strong>Trasmutazione e Ammaliamento</strong>. L'una è l'innesto che si radica, l'altra è la parte che parla. Un mercante non pianta una trappola: pianta un venditore.</p>
+        <p>E la vetrina l'hai vista &mdash; banchi, teli, registri, quella ricchezza tenuta in ordine da qualcuno di molto bravo. <strong>L'offerta non scade.</strong></p>
+    </div>
+
+    <div class="dormiente">
+        <h3 style="margin-top:0;color:#666;">Ciò che dorme</h3>
+        Se Artemis venisse trasformato contro la propria volontà, l'Anello reagisce <strong>da solo</strong>. Cosa faccia, non lo sai finché non succede. <em>(I poteri di crisi restano lato DM: il giocatore li scopre quando scattano.)</em>
+    </div>
+
+    <div class="requirements">
+        <strong>Vincolo.</strong> L'Anello è nato dal caos ordinato della Forgia. Opera <em>con</em> la volontà di Artemis e col suo percorso, e rispetta la sua scelta di forgiarsi il destino da solo: non gli impedirà mai di sbagliare. Ma odia i guinzagli.
+    </div>
+
+    <h2 style="color:#8B0000;border-bottom-color:#8B0000;">&#9888; Solo DM &mdash; da qui in poi</h2>
+
+    <div class="dm-box">
+        <h3>Audit 2026-08-01 &mdash; nessuno sblocco da Terros</h3>
+        <p>Verificato contro <em>00_Ring_of_Chaotic_Illumination_Revised.md</em> e <em>state.md</em> §6: la caduta di Terros e il rito dello Smeraldo <strong>non toccano l'Anello</strong>, che resta allo stadio <strong>Riforgiato</strong>. Non c'era niente da aggiungere, e non l'ho aggiunto.</p>
+        <table>
+            <tr><th style="width:34%">Cosa arriva</th><th>Quando, e da dove</th></tr>
+            <tr>
+                <td class="l"><strong>Caos Ultimo</strong><br>l'evoluzione finale</td>
+                <td class="l">Solo se <strong>Zalkatar viene sconfitto</strong> alla Torre Invisibile (ARC-09). Se scappa con <em>teletrasporto superiore</em> sotto il 10% dei pf, l'Anello resta com'è e lui può ricomparire a Rethmar come jolly.</td>
+            </tr>
+            <tr>
+                <td class="l"><strong>Poteri di crisi</strong></td>
+                <td class="l">Non si sbloccano: <strong>scattano</strong>, e solo su trasformazione forzata. Restano lato DM, e il giocatore non deve vederli scritti da nessuna parte.</td>
+            </tr>
+        </table>
+        <p><strong>Contro Zalkatar</strong> l'Anello dà ad Artemis <strong>+4 ai TS</strong> contro la sua psionica, e può <strong>purificare</strong> uno dei suoi incantesimi.</p>
+    </div>
+
+    <div class="dm-box">
+        <h3>Il filo di Varis &mdash; come leggerlo</h3>
+        <p><strong>Marchio NON attivo.</strong> Niente localizzazione, niente crediti, nessun Frammento di Mercato &mdash; e nemmeno il +1 morale che spettava a chi rifiuta. Artemis non ha né vinto né perso: <strong>ha rimandato</strong>.</p>
+        <p>&#9888; <strong>Il primo che lo tocca se lo prende.</strong> Se è Tordek, Varis ricalibra l'offerta: a un monaco nanico non offri tesori, offri <strong>certezze</strong>.</p>
+        <p><strong>Come lo leggerà Varis</strong>, quando se ne accorgerà: non un pollo, non uno sfuggito. <strong>Qualcuno che tratta.</strong> Al viaggio a &minus;1.000, Vatore riconosce la firma di un collega, non di un debitore.</p>
+    </div>
+
+    <div class="dm-box" style="border-style:dashed;">
+        <h3>Registro sblocchi (compila a penna)</h3>
+        Riforgiato alla Forgia Eterna &middot; <strong>stato attuale al 2026-08-01</strong><br>
+        Seme-Mercato preso, <strong>mai toccato</strong> &middot; 2026-07-31<br>
+        Caos Ultimo &mdash; &#9744; ________________________<br>
+        _______________________________________________
+    </div>
+
+</body>
+
+</html>

@@ -1,9 +1,17 @@
-# Italiano Nativo — come non scrivere in traduttese
+# Italiano nativo — come non scrivere in traduttese, e come non farsi riconoscere
 
 Riferimento nato da un **rilievo dei giocatori al tavolo** (2026-07-31): gli
-handout *«sembrano traduzioni maldestre dall'inglese»*. Avevano ragione, ed è
-il difetto più riconoscibile della prosa generata: la sintassi è inglese, le
-parole sono italiane. Questo file è l'antidoto.
+handout *«sembrano traduzioni maldestre dall'inglese»*. Avevano ragione, e il
+difetto è doppio:
+
+| Problema | Dove sta | Sezioni |
+|---|---|---|
+| **Traduttese** — sintassi inglese, parole italiane | nella singola frase | **§1-8** |
+| **Tic dell'IA** — sintassi giusta, sempre la stessa | nel documento intero | **§9** |
+
+Il secondo è il più insidioso, perché **ogni frase presa da sola è buona**: è
+la centesima costruita nello stesso modo che tradisce. Questo file è
+l'antidoto a entrambi.
 
 Le regole di **voce** stanno in `style-pillars.md`; quelle di **impaginazione**
 in `editorial-standards.md`. Qui sta la **lingua**.
@@ -183,7 +191,75 @@ corta che stampa.
 
 ---
 
-## 9. Chi fa cosa
+## 9. I tic dell'IA — un problema diverso dal traduttese
+
+Il traduttese (§1-8) è **sintassi sbagliata**. Questo è peggio: è **sintassi
+giusta, ripetuta sempre uguale**. Il testo generato non si riconosce dagli
+errori — si riconosce dalle **abitudini**. Ogni frase è buona; è la
+centesima frase costruita nello stesso modo che tradisce.
+
+> **Misura, non opinione.** Un controllo su `ARC07-DEF-1` ha trovato **9
+> occorrenze** dello stesso costrutto antitetico nello stesso file. Nessuna
+> singola occorrenza è brutta. Nove sì.
+
+### 9.1 Il tic numero uno: l'antitesi «non X: è Y»
+
+> *«Non c'è collera: c'è PESO.»* · *«Non è un attacco: è il piano che si
+> riassesta.»* · *«Non ruba niente: cataloga.»* · *«Non un burrone — niente.»*
+
+Funziona benissimo **una volta a sessione**. Alla terza il tavolo sente il
+telaio. **Massimo uno per documento, e mettilo dove vuoi il colpo più forte.**
+
+Come uscirne, quando il concetto serve ancora:
+- **Togli la prima metà.** *«C'è peso.»* — la negazione era una stampella.
+- **Fallo dire a un personaggio**, che ha diritto ai suoi tic: i Bracieri
+  possono parlare così, il narratore no.
+- **Mostra invece di contrapporre**: non «non è collera, è peso», ma *«ti si
+  piegano le ginocchia e non sai perché»*.
+
+### 9.2 Gli altri sette
+
+| Tic | Come suona | Antidoto |
+|---|---|---|
+| **Tricolon ovunque** | «fango, fumo, corni di guerra» · tre aggettivi, tre clausole, sempre | rompi il ritmo: **due**, oppure **quattro**, oppure uno solo |
+| **Chiusura a effetto obbligatoria** | ogni paragrafo finisce su una frase-sentenza | lascia che un paragrafo **finisca e basta**, su un dettaglio qualunque |
+| **Trattino lungo come respiro** | «la roccia — e sai già cosa — si muove» | punto e virgola, due punti, o niente |
+| **Maiuscole di portento** | PESO, TUMP, VERA | **una per documento**. Se sono due, non funzionano più |
+| **Tutto è significativo** | ogni dettaglio descritto è un indizio o un simbolo | metti **una cosa che non c'entra niente**: una macchia, un rumore che era il vento |
+| **Emozione etichettata** | «senti una vertigine di paura» | comportamento: *«ti accorgi che stai contando i passi»* |
+| **Sensi in ordine di lista** | vista, poi suono, poi odore, sempre in quell'ordine | parti dall'**odore** o dalla **temperatura**. O usane **uno solo** |
+
+### 9.3 Il paradosso della ricetta
+
+⚠️ **Anche il §4 di questo file (periodo lungo + frase corta che stampa) è una
+formula.** Ripetuta a ogni box diventa un tic come gli altri.
+
+**La regola vera è la varianza**: su cinque read-aloud, almeno **due** devono
+essere costruiti in un modo che non è quello consigliato — uno tutto breve e
+secco, uno che finisce a metà pensiero. La prosa umana è **irregolare**, e
+l'irregolarità non si simula seguendo meglio la regola: si ottiene
+**rompendola di proposito**.
+
+### 9.4 Le tre cose che il testo generato non fa mai (e che tu devi fare)
+
+1. **Il dettaglio inutile.** Nella prosa vera c'è roba che non serve alla
+   trama: qualcuno ha le mani sporche, una cinghia è allentata, fuori piove e
+   non significa niente. È **l'unica cosa** che fa sembrare un posto reale.
+2. **Il personaggio che parla male.** Nessuno, nel testo generato, si
+   interrompe, si ripete, dice la cosa sbagliata e poi la corregge. Fallo:
+   *«Era… no. Non era così. Era peggio.»*
+3. **La reticenza.** Il testo generato spiega sempre l'ultima immagine. Togli
+   l'ultima frase di ogni box e rileggi: **nove volte su dieci è migliorato.**
+
+### 9.5 Test finale prima di consegnare
+
+Rileggi solo **i primi tre e gli ultimi tre** parole di ogni paragrafo. Se gli
+attacchi si somigliano, o le chiuse cadono tutte sullo stesso tono, il testo è
+riconoscibile — **anche se ogni singola frase è bella**.
+
+---
+
+## 10. Chi fa cosa
 
 | Livello | Chi |
 |---|---|

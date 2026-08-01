@@ -472,6 +472,16 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   tattico del party (detection senza bersagli, zero incantatori) con
   l'avvertenza che **i demoni peggiorerebbero le cose** (RI vs Eldritch Blast).
 
+- [x] **K-B24** *(2026-07-31)*: **`italiano-nativo.md` §9 «I tic dell'IA»** —
+  il traduttese è sintassi sbagliata, i tic sono sintassi giusta ripetuta
+  sempre uguale; documentato con una misura reale (9 occorrenze dell'antitesi
+  «non X: è Y» in `ARC07-DEF-1`), più il paradosso della ricetta e il test
+  finale su attacchi e chiuse dei paragrafi · **Balvar Fuocospento** (GS 13),
+  runaio esiliato passato ad Abbathor, consigliere di Zog'tar all'assedio di
+  ≈372 DR: **è il motivo per cui l'orda ha un drago**, sa che i PG vengono dal
+  futuro e non li smaschera — tratta. Nuovo `ARC07-DEF-4` §4-ter con quattro
+  esiti agganciati al duello con Skullcrusher.
+
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 
 | # | Domanda | Default se non risponde |

@@ -34,6 +34,7 @@
 | §2 | **Le Zone di Hammerfist ≈372 DR** | Atlante: fortezza, campo dell'orda, mura all'alba |
 | §3 | **Le Scene** (doppia modalità) | Cronache · **arrivo esteso (Durin, Re Thorek, notte, Zeth)** · Infiltrazione+Zog'tar · Mura · Rubino |
 | §4-bis | **Zog'tar & PNG antichi** | statblock+tattiche per [COMBATTIMENTO COMPLETO]: Zog'tar, guardie, Durin |
+| **§4-ter** | **BALVAR FUOCOSPENTO** (GS 13) | **il consigliere runaio: sa che i PG vengono dal futuro, e ha incatenato Skullcrusher all'orda** |
 | §4 | **BOSS: Skullcrusher il Nero** | statblock, tattiche round-per-round, scaling, «la Forgia ricorda» |
 | §5 | **VATORE** | Sal a −1000: la scena grigia + la sincronizzazione temporale (eco su Sal 1372) |
 | §6 | **Contingenze & sconfitta** | «Se i PG fanno X»; il paradosso; una sconfitta nel passato |
@@ -321,6 +322,12 @@ mangiano), fabbri che affilano le armi, chierici che benedicono.
 > nani: la tenda del generale **Zog'tar Deatheye**. Un passo falso e il mare si
 > sveglia tutto insieme. Ma se cade lui, il coro di diecimila perde il direttore.*
 
+> ⚠️ **Nella tenda non c'è solo Zog'tar.** C'è anche **Balvar Fuocospento**
+> (**§4-ter**), che vi lascerà entrare apposta e vi dirà una cosa che nessun
+> altro in questo secolo può dirvi. **Leggi il §4-ter prima di giocare questa
+> scena**: la tenda ha quattro rune già incise, e una di esse impedisce i
+> teletrasporti.
+
 #### 🎚️ [FAST-PLAY] — montaggio (10-15 min)
 - **Infiltrazione (3 tiri)**: Muoversi Silenz./Nascondersi/Osservare **CD 20**
   (−2 se aiuti dimezzati). Metà successi = raggiungete la tenda non visti.
@@ -384,6 +391,117 @@ rivelatori. Round-by-round e le scelte-costo dei PG → **§4-bis**.
   dell'assedio del 1372. La **cucitura** è il **master #5**.
 - ► **Esito**: il **tono del Rubino** dipende da come è finito il duello (§7).
   Corona ora a **3 gemme accese**.
+
+---
+
+## §4-ter — BALVAR FUOCOSPENTO, il consigliere `[CANONE — DM 2026-07-31]`
+
+> **Perché esiste.** Due giocatori hanno chiesto la stessa cosa da due lati:
+> Artemis non ha mai niente da individuare, Thorik non incontra mai
+> incantatori (`DM-CAMPAIGN-PLAYBOOK` §1-bis). Balvar è la risposta — ma non è
+> un boss in più appiccicato al modulo: è **il motivo per cui l'orda ha un
+> drago**. Toglilo e la §4 cambia. Statblock:
+> `Bestiario/villain/balvar-fuocospento-cr13.md`.
+
+### Chi è
+
+Un **nano dello scudo**, vecchio, esiliato da Hammerfist prima che i PG
+nascessero — anzi: prima che nascessero i bisnonni dei nani che i PG hanno
+appena conosciuto. Era il **runaio della fortezza**, quello che incideva le
+protezioni sulle porte. Adesso incide per Zog'tar, e Abbathor gli tiene la
+mano ferma.
+
+Non comanda l'orda. **Consiglia**, e per questo è più pericoloso del generale:
+Zog'tar sa uccidere diecimila uomini, Balvar sa **dove** vanno colpite le mura.
+
+> **Read-aloud — il primo incontro (dentro la tenda del comando, Scena 3).**
+> *In fondo alla tenda del generale, dove la luce dei bracieri non arriva, c'è
+> un nano seduto su uno sgabello da bottega. Vecchio come una radice. Ha un
+> grembiule di cuoio addosso, e sulle ginocchia una lastra di ardesia che sta
+> incidendo con una punta di ferro, piano, come se fuori non ci fossero
+> diecimila tende e un drago.*
+>
+> *Alza la testa quando entrate. E — questa è la cosa che vi gela — **non
+> chiama la guardia**.*
+>
+> *Vi guarda uno per uno, con calma, e quando arriva alla Corona sulla fronte
+> del vostro capo si ferma un istante di troppo. Poi torna a incidere.*
+>
+> **BALVAR** (voce da vecchio artigiano, nessuna minaccia, nessuna fretta):
+> *«Quella corona la finirono con tre gemme. Tu ne hai due.»* Un colpo di
+> punta sull'ardesia. *«Quindi non è oggi.»*
+
+### La cosa che lo rende memorabile: sa da dove venite
+
+**Leggere il Fuori-Posto** (3/giorno) è l'unica capacità che conta davvero. In
+tutta Hammerfist del ≈372 DR, **Balvar è il solo che sa che i PG non
+appartengono a questo secolo** — e non lo dice a nessuno, perché
+un'informazione che nessuno ha vale più di un'informazione condivisa.
+
+**Non li smaschera. Tratta.** È un mercante di segreti come Varis è un mercante
+di merce, e la scena giusta è la stessa: un affare vero con un amo vero.
+
+> **BALVAR:** *«Non chiedo chi siete. Chiedo una cosa sola, e ve la chiedo
+> adesso perché fra un'ora saremo tutti occupati. Quando avrete finito quello
+> che siete venuti a fare — e lo finirete, lo vedo da come camminate — **dite
+> che c'ero**. Non che ho vinto. Che c'ero. La Cronaca scrive solo i nomi che
+> qualcuno pronuncia.»*
+
+Questo è il suo prezzo, ed è per questo che ha lasciato passare i PG. Un uomo
+cancellato dagli annali che chiede a dei viaggiatori del tempo di **essere
+ricordato**. Se accettano, in ARC-08 e ARC-09 gli affreschi della Sala avranno
+**un pannello in più**, e nessuno saprà spiegarlo — tranne loro.
+
+### La Catena: perché il drago combatte per l'orda
+
+Balvar ha inciso una **runa-vincolo** nella scaglia sternale di Skullcrusher.
+Non è dominazione: è un **contratto scritto nella carne**, e il drago lo sa,
+e lo odia. Questo aggancia direttamente la §4:
+
+| Cosa fanno i PG | Effetto sul duello con Skullcrusher (§4) |
+|---|---|
+| **Non se ne accorgono** | il duello va come scritto |
+| **Individuano la runa** (Sapienza Magica **CD 24**, o Conoscenze storia CD 22 per riconoscere il nanico antico — **è scritta, quindi si legge**) | sanno dove colpire: un colpo mirato alla scaglia sternale (**CA +4**) durante il duello **spezza la Catena** |
+| **Spezzano la Catena** | Skullcrusher **smette di combattere per l'orda**. Non diventa alleato — è un drago nero — ma se ne va, e l'assalto alle mura perde le ali. *Esito «FUGGITO» garantito, senza doverlo ridurre a ⅓ pf* |
+| **Uccidono Balvar prima dell'alba** | la runa resta (è incisa, non sostenuta), **ma** senza chi la rinnova si indebolisce: Skullcrusher parte con **−2 a tutto** e fugge a **metà** pf invece che a ⅓ |
+
+⚠️ **È qui che il gruppo diventa un gruppo.** Artemis vede l'aura, Thorik legge
+il nanico antico, Tordek arriva alla scaglia. Nessuno dei tre ce la fa da solo:
+**è esattamente la scena che mancava all'arco.**
+
+### Come si combatte, se si arriva a combatterlo
+
+**Non ingaggiarlo in campo aperto**: non è un duellante, è un **preparatore**.
+Ha **quattro rune già incise** nella tenda del comando, e le ha incise sapendo
+che qualcuno sarebbe entrato:
+
+1. sulla **soglia** — *dimensional anchor*: niente *Flee the Scene*, niente
+   teletrasporti. **Chi entra, entra e basta.**
+2. sul **palo centrale** — *blade barrier*, che scatta a taglio della tenda in
+   due, separando il party;
+3. **su di sé** — *silence*, che attiva a comando: chi conta sul verbale è
+   fuori, lui no (le rune non richiedono componenti verbali);
+4. la **quarta è vuota**, e la incide **durante** lo scontro. Falla vedere:
+   *«continua a incidere mentre combattete»* è l'immagine che li terrorizza.
+
+**Tattica**: *righteous might* al round 1, poi *blade barrier* e *slay living*
+sul più fragile. Se scende sotto **30 pf** non fugge e non implora: **finisce
+di incidere la quarta runa** e la lascia lì. `[DM: decidi tu cosa c'è scritto —
+è un gancio bianco per ARC-09.]`
+
+### L'eco a 1372 (il motivo per cui vale la pena)
+
+Balvar è morto da mille anni comunque vada. Ma:
+
+- se i PG hanno **pronunciato il suo nome**, in ARC-08 la Cronaca ha un
+  pannello in più — e **Aegis Fang lo riconosce**;
+- se hanno **spezzato la Catena**, il carry-over B4 verso **Fauci di Palude**
+  cambia di tono: il figlio del drago incatenato ha una ragione in più per
+  odiare i nani, o per **non** volere una catena addosso;
+- se lo hanno **ucciso senza ascoltarlo**, resta una lastra d'ardesia incisa a
+  metà tra le rovine del campo. Qualcuno, in ARC-09, l'ha trovata.
+
+→ Registra l'esito nell'**Echo Ledger** (§7).
 
 ---
 

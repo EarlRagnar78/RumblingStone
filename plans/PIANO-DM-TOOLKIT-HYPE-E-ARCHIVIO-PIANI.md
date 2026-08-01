@@ -489,6 +489,13 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   adulti che leggono fantasy — «si ascolta, non si legge», lunghezze per tipo
   di box, competenza concreta, cosa fa staccare).
 
+- [x] **K-B26** *(2026-08-01)*: **Corona di Adamantio** portata allo stato reale
+  (2 gemme + Rituale 3 «Incudine del Mondo») nello stesso stile grafico, con
+  audit che ha trovato **il secondo potere mancante** (*Manto di Pietra e
+  Spirito*, cioè Mente Vuota permanente), la **discrepanza sul costo del rito**
+  fra master della Corona e modulo ARC-07, e il fatto che **il pegno l'ha
+  pagato Tordek** e non il portatore.
+
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 
 | # | Domanda | Default se non risponde |

@@ -496,6 +496,13 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   fra master della Corona e modulo ARC-07, e il fatto che **il pegno l'ha
   pagato Tordek** e non il portatore.
 
+- [x] **K-B27** *(2026-08-01)*: Corona in **doppia versione PG/DM** (rito
+  dichiarato completo dal DM; reintegrati Leggenda Divina e valore teorico) +
+  **«Il bilancio di Thorik»**: il giocatore ha ragione coi numeri — due costi
+  permanenti in due sessioni consecutive — ma la diagnosi è che **le sue
+  difese sono tutte invisibili**. Quattro mosse, fra cui offrire subito «Il
+  Filo dell'Ascia» al rito di Hella (paga l'artefatto, non il corpo).
+
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 
 | # | Domanda | Default se non risponde |

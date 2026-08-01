@@ -482,6 +482,13 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   futuro e non li smaschera — tratta. Nuovo `ARC07-DEF-4` §4-ter con quattro
   esiti agganciati al duello con Skullcrusher.
 
+- [x] **K-B25** *(2026-08-01)*: **ADR-0016** (italiano lingua sorgente, inglese
+  edizione derivata per transcreation, col tetto IP registrato) ·
+  **`campaign/GLOSSARIO-E-LOCALIZZAZIONE.md`** (glossario bloccato + DNT +
+  regola dei nomi misti) · **`references/read-aloud-adulti.md`** (il pubblico:
+  adulti che leggono fantasy — «si ascolta, non si legge», lunghezze per tipo
+  di box, competenza concreta, cosa fa staccare).
+
 ### Domande aperte per il DM (da chiudere in approvazione del PR)
 
 | # | Domanda | Default se non risponde |

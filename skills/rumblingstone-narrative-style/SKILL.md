@@ -42,6 +42,19 @@ the user should never have to ask for "the style" explicitly.
    «non X: è Y», il tricolon, la chiusa a effetto obbligatoria, il fatto che
    ogni dettaglio sia significativo). **Non è opzionale e non è stilistico: è
    la differenza fra un handout che i giocatori leggono e uno che li stacca.**
+6. **`references/read-aloud-adulti.md` — prima di scrivere qualsiasi
+   read-aloud.** Il pubblico di questo tavolo è fatto di **adulti che leggono
+   fantasy da vent'anni**: conoscono i cliché meglio di chi scrive. Il file
+   copre il vincolo che cambia tutto — **un read-aloud si ascolta, non si
+   legge** (un nome nuovo per box, max due subordinate, niente parentesi,
+   l'ultima riga è quella che resta) — le lunghezze reali per tipo di box, cosa
+   premia questo pubblico (competenza concreta, allusione, il dettaglio
+   inutile, il comportamento al posto dell'emozione etichettata) e cosa lo fa
+   staccare (voce YA, tutto-epico, esposizione travestita da dialogo).
+
+> 🇮🇹 **Lingua sorgente: italiano, sempre** ([ADR-0016](../../plans/adr/ADR-0016-lingua-sorgente-e-edizioni.md)).
+> L'inglese è un'edizione derivata, mai la stesura. I nomi propri si scrivono
+> come da [`campaign/GLOSSARIO-E-LOCALIZZAZIONE.md`](../../campaign/GLOSSARIO-E-LOCALIZZAZIONE.md).
 
 ## The Eight Pillars (one-line summary)
 
@@ -82,6 +95,7 @@ and at most two support pillars, chosen by scene type. The mixer:
 | BG1/2-style complex quest patterns: stages, factions, personal quests | `references/quest-design-baldur.md` |
 | Living world: NPC/villain agency, world turn, SRD attitude system, settlements | `references/living-world.md` |
 | Editorial standards: terminologia canonica, resa read-aloud, tipografia, igiene (enforced in CI da `validate_modules.py`) | `references/editorial-standards.md` |
+| **Read-aloud per adulti che leggono fantasy** — si ascolta non si legge, lunghezze per tipo di box, competenza concreta, cosa fa staccare, checklist | **`references/read-aloud-adulti.md`** |
 | **Italiano nativo + anti-riconoscibilità** — calchi, dislocazioni, diminutivi, tempi, ritmo, registro nanico (§1-8) · **i tic dell'IA: antitesi «non X: è Y», tricolon, chiuse a effetto, tutto-è-significativo** (§9) · checklist | **`references/italiano-nativo.md`** |
 
 **Worked exemplar in repo**: the Palio di Channathgate

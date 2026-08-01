@@ -69,6 +69,7 @@ Il **perché** delle scelte strutturali. Indice completo in [`plans/adr/`](../pl
 | [ADR-0013](../plans/adr/ADR-0013-standard-generazione-booklet-sessioni.md) | Standard di generazione dei booklet (stile, anti-spoiler, HTML/Homebrewery/PDF) |
 | [ADR-0014](../plans/adr/ADR-0014-regia-sensoriale-obbligatoria.md) | Regia sensoriale obbligatoria nei master (descrizioni sempre, occhio da avventuriero) |
 | [ADR-0015](../plans/adr/ADR-0015-standard-prompt-immagine.md) | Standard dei prompt immagine (estrazione scene, anatomia, coerenza d'arco) |
+| [ADR-0016](../plans/adr/ADR-0016-lingua-sorgente-e-edizioni.md) | **Lingua sorgente italiana**; l'inglese è un'edizione derivata per transcreation, mai la stesura. Loc kit in `campaign/GLOSSARIO-E-LOCALIZZAZIONE.md` |
 
 ## 5. Archivio piani
 

@@ -1,5 +1,5 @@
-# Zin'thara Vel'Ryn «la Voce di Ragnatela» — Ombraiola di Sonjak [INFERRED — needs DM confirmation]
-**Faction**: drow-sonjak | **Role**: boss-caster-subdolo | **Environment**: underdark/urban notturno | **CR**: 12 | **Source**: SRD drow + Mago (Illusionista) 9 + CdP **Danzatore delle Ombre** (SRD) | **Status**: inferred
+# Zin'thara Vel'Ryn «la Voce di Ragnatela» — Ombraiola di Sonjak [ACCEPTED — DM-canon]
+**Faction**: drow-sonjak | **Role**: boss-caster-subdolo | **Environment**: underdark/urban notturno | **CR**: 12 | **Source**: SRD drow + Mago (Illusionista) 9 + CdP **Danzatore delle Ombre** (SRD) | **Status**: accepted
 
 Medium humanoid (elf), femmina, NE. **DV 9d4 + 2d8**. **hp 44**. **CA 20** (+4 Des, +4 *armatura magica*, +1 anello, +1 amuleto), contatto 15, colto alla sprovvista 20 (**schivare prodigioso**). Iniziativa +4. Vel 9 m.
 **TS** Temp +6, Rifl +12, Vol +9 (+2 razziale vs incantesimi, +2 vs ammaliamenti; *mantello della resistenza +2* incluso). **BAB/Lotta** +5/+4. **RI 22**.

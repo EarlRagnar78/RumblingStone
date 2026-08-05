@@ -1,8 +1,8 @@
 # Zin'thara Vel'Ryn — «la Voce di Ragnatela»
 
-> **[INFERRED — needs DM confirmation]** PNG proposto, non ancora canone.
+> **[ACCEPTED — DM-canon]** Approvata dal DM il **2026-08-05**.
 > Statblock: `zin-thara-vel-ryn-cr12.md` (questa cartella).
-> Da approvare prima di inserirla in `campaign/state.md` §3/§4.
+> Righe di canone applicate in `campaign/state.md` §3 (clock 2/8) e §4.
 
 **Role**: villain — incantatrice-ombra della compagnia drow, subordinata diretta di Sonjak (Arco 09: Notte dei Drow, campi drow, Rethmar Fase 0-1)
 **Status**: viva (mai incontrata dai PG; **hanno però già visto il suo lavoro** — vedi «Cosa i PG hanno già visto»)

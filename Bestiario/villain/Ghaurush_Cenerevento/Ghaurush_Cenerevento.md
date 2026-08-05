@@ -1,8 +1,9 @@
 # Ghaurush «Cenerevento» — il generale che voleva una valle
 
-> **[INFERRED — needs DM confirmation]** PNG proposto, non ancora canone.
-> Statblock: `ghaurush-cenerevento-cr16.md` (questa cartella).
-> Da approvare prima di inserirlo in `campaign/state.md` §2/§3/§4.
+> **[ACCEPTED — DM-canon]** Approvato dal DM il **2026-08-05**.
+> Statblock: `ghaurush-cenerevento-cr16.md` (GS 16, variante *Advanced* GS 17) e
+> `ghaurush-cenerevento-secondo-incontro-cr18.md` (GS 18, secondo incontro).
+> Righe di canone applicate in `campaign/state.md` §3 (clock 0/6) e §4.
 
 **Role**: villain — comandante elementalista della Mano Rossa (Archi 08-09; utilizzabile anche come incontro di viaggio ARC-09)
 **Status**: vivo (mai incontrato dai PG)

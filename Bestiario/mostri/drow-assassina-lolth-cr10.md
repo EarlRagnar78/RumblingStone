@@ -1,5 +1,5 @@
-# Drow Assassina di Lolth (Ladro 4 / Assassino 5) [INFERRED — needs DM confirmation]
-**Faction**: drow-sonjak | **Role**: caster-subdolo/infiltratrice | **Environment**: underdark/urban | **CR**: 10 | **Source**: SRD drow + Ladro 4 + CdP **Assassino** (SRD) | **Status**: inferred
+# Drow Assassina di Lolth (Ladro 4 / Assassino 5) [ACCEPTED — DM-canon]
+**Faction**: drow-sonjak | **Role**: caster-subdolo/infiltratrice | **Environment**: underdark/urban | **CR**: 10 | **Source**: SRD drow + Ladro 4 + CdP **Assassino** (SRD) | **Status**: accepted
 
 Medium humanoid (elf), NE. **DV 9d6**. **hp 40**. **CA 20** (+5 Des, +4 giaco di maglia mithral +1, +1 anello), contatto 16, colto alla sprovvista 16. Iniziativa +9. Vel 9 m.
 **TS** Temp +4, Rifl +12, Vol +5 (+2 razziale vs incantesimi, +2 vs ammaliamenti, **+3 vs veleni**). **BAB/Lotta** +6/+6. **RI 20**.

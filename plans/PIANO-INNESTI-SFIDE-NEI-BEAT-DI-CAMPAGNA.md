@@ -7,8 +7,9 @@
 > collegamento con la campagna e non essere messe a cavolo — per esempio un
 > altro durante il Torneo di Dauth, oppure uno nella Torre Invisibile.»*
 >
-> **Stato**: 🟢 eseguito (2026-08-05). Tutto `[INFERRED — needs DM
-> confirmation]`. `campaign/state.md` **non toccato**.
+> **Stato**: ✅ **completo** (2026-08-05). **Tutti e sei gli innesti approvati
+> dal DM**; gli attori sono entrati in `campaign/state.md` §3/§4/§5 e l'eco
+> **E-08a** in §7.E.
 
 ---
 
@@ -263,5 +264,7 @@ innesti su sei si giocano con le sole schede SRD del repo.**
 - [x] **N2** — Sei innesti con EL, slot canonico, aggancio tracciato (§1-§6)
 - [x] **N3** — Esclusioni motivate, con la verifica di epoca sui tanarukk e
       su Ghaurush (§7)
-- [ ] **N4** — *(gated su DM)* approvazione degli innesti da giocare;
-      INFERRED → ACCEPTED e righe in `campaign/state.md` §3/§7.E
+- [x] **N4** — **Deciso dal DM il 2026-08-05**: approvati **tutti e sei** gli
+      innesti I1-I6. Gli attori sono entrati in `state.md` §3/§4/§5 e l'eco
+      **E-08a** in §7.E. Vincolo confermato: I5 al **Giorno 1-2** del Torneo,
+      mai al Giorno 3

@@ -1,5 +1,5 @@
-# Ogre Micelio — Sporeborn di Sonjak (Barbaro 4) [INFERRED — needs DM confirmation]
-**Faction**: drow-sonjak / mano-rossa (prestato) | **Role**: melee-heavy-aberrante | **Environment**: underground | **CR**: 8 | **Source**: SRD *Ogre* (CR 3) + Barbaro 4 (SRD PHB) + innesto fungino derivato dalla riga canonica **Sporeborn** di `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.md` (For +4, immunità al dolore, berserk, rischio fuoco amico 1/10 round) | **Status**: inferred
+# Ogre Micelio — Sporeborn di Sonjak (Barbaro 4) [ACCEPTED — DM-canon]
+**Faction**: drow-sonjak / mano-rossa (prestato) | **Role**: melee-heavy-aberrante | **Environment**: underground | **CR**: 8 | **Source**: SRD *Ogre* (CR 3) + Barbaro 4 (SRD PHB) + innesto fungino derivato dalla riga canonica **Sporeborn** di `00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.md` (For +4, immunità al dolore, berserk, rischio fuoco amico 1/10 round) | **Status**: accepted
 
 Large giant (fungal graft), CE. **DV 4d8 + 4d12**. **hp 68**. **CA 18** (−1 taglia, +7 naturale [+5 base, +2 corteccia fungina], +3 pelle, −1 Des), contatto 8, colto alla sprovvista 18. Iniziativa −1. Vel 12 m.
 **TS** Temp +10, Rifl +1, Vol +2. **BAB/Lotta** +7/**+18**.

@@ -1,5 +1,5 @@
-# Drow Trickster Arcano — «Dita di Ragnatela» (Ladro 3 / Mago 5 / Trickster Arcano 2) [INFERRED — needs DM confirmation]
-**Faction**: drow-sonjak | **Role**: caster-subdolo/saboteur | **Environment**: underdark/urban | **CR**: 11 | **Source**: SRD drow + Ladro/Mago + CdP **Trickster Arcano** (SRD) | **Status**: inferred
+# Drow Trickster Arcano — «Dita di Ragnatela» (Ladro 3 / Mago 5 / Trickster Arcano 2) [ACCEPTED — DM-canon]
+**Faction**: drow-sonjak | **Role**: caster-subdolo/saboteur | **Environment**: underdark/urban | **CR**: 11 | **Source**: SRD drow + Ladro/Mago + CdP **Trickster Arcano** (SRD) | **Status**: accepted
 
 Medium humanoid (elf), NE. **DV 3d6 + 7d4**. **hp 38**. **CA 19** (+4 Des, +4 *armatura magica*, +1 anello), contatto 15, colto alla sprovvista 15. Iniziativa +4. Vel 9 m.
 **TS** Temp +5, Rifl +11, Vol +8 (+2 razziale vs incantesimi, +2 vs ammaliamenti). **BAB/Lotta** +4/+3. **RI 21**.

@@ -1,8 +1,12 @@
 # Ushgar «Occhio Reso» — il capo-guerra che vuole un pezzo di carta
 
-> **[INFERRED — needs DM confirmation]** PNG proposto, non ancora canone.
+> **[ACCEPTED — DM-canon]** Approvato dal DM il **2026-08-05**.
 > Statblock: `ushgar-occhio-reso-cr13.md` (questa cartella).
-> Da approvare prima di inserirlo in `campaign/state.md` §3/§4/§5.
+> Righe di canone applicate in `campaign/state.md` §3 (clock 0/4), §4, §5 e §7.E.
+> **Decisione DM sul ramo**: si apre, ma passando **prima** per l'uscita
+> laterale di Hella; la firma di Thorik è il secondo passo, non il primo.
+> **Decisione DM sulla faglia**: Ushgar **non** ha «Adattamento alla Luce» e il
+> Controllo delle Fiamme dei tanarukk **fa scattare** la cecità alla luce.
 
 **Role**: mini-boss e leva politica — comandante degli ausiliari orcheschi della Mano Rossa (Archi 08-09; utilizzabile a Rethmar Fase 0-1)
 **Status**: vivo (mai incontrato dai PG)

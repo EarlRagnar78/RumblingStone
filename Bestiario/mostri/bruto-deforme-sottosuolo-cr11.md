@@ -1,5 +1,5 @@
-# Bruto Deforme del Sottosuolo (Gigante di Pietra deforme, Barbaro 2) [INFERRED — needs DM confirmation]
-**Faction**: mano-rossa / drow-sonjak (mercenario) | **Role**: melee-heavy/artiglieria-corta | **Environment**: underdark | **CR**: 11 | **Source**: SRD *Stone Giant* (GS 8) + template semplice PF1e **Giant** (GS +1) + Barbaro 2 (classe associata, GS +1/liv) | **Status**: inferred
+# Bruto Deforme del Sottosuolo (Gigante di Pietra deforme, Barbaro 2) [ACCEPTED — DM-canon]
+**Faction**: mano-rossa / drow-sonjak (mercenario) | **Role**: melee-heavy/artiglieria-corta | **Environment**: underdark | **CR**: 11 | **Source**: SRD *Stone Giant* (GS 8) + template semplice PF1e **Giant** (GS +1) + Barbaro 2 (classe associata, GS +1/liv) | **Status**: accepted
 
 Huge giant (earth), CE. **DV 14d8 + 2d12**. **hp 172**. **CA 26** (−2 taglia, +1 Des, +14 naturale, +3 pelle), contatto 9, colto alla sprovvista 25. Iniziativa +1. Vel **15 m** (movimento veloce). Spazio/portata **4,5 m / 4,5 m**.
 **TS** Temp +18, Rifl +5, Vol +7. **BAB/Lotta** +12/**+30**.

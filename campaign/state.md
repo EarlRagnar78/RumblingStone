@@ -262,6 +262,9 @@ the listed consequence triggers.
 | Azarr Kul (High Wyrmlord) — **Ritual Clock, see §2.0** (NOT the March Clock; the horde's physical approach is tracked separately in §2.1, currently Day 19 of 42) | Fane of Tiamat (Shaar) | Ritual sacrifices/planar conjunctions to summon the Avatar of Tiamat during the Rethmar siege (Day 40-42, Phase 2). Advances only on explicit triggers: +1 per Warpriest élite mass sacrifice (Day 35-38), +2 if Giant Wave ×1 breaches the walls (Phase 1), +3 if Giant Wave ×2 breaches (Phase 3) — see `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` §4b | 9/18 | Avatar of Tiamat manifests over Rethmar during Phase 2's 10-round ritual (D8) |
 | Conte Valerius (manipulator) | Capital city | Legalize horde funding via "patriotic emergency" loans | 2/8 | Party loses access to legitimate guild merchants |
 | **Mira Serani «l'Aranea»** (aranea mutaforma, Red Hand intel) — canonizzata 2026-07-20, `Bestiario/villain/Mira_Serani/` | Mobile — infiltrata nell'onda profughi (Guado → Rethmar) | Raccogliere intel su difese di Rethmar e **artefatti dei PG** per l'orda; spacciarsi per la figlia morta di Lorana (bimba/adolescente); **evitare Lorana** | Trigger, non clock numerico | **Hard counter**: se incrocia Lorana → smascherata a vista, combatte solo per fuggire. Ogni intel raccolta **alimenta i clock esistenti** (Sal/Sonjak/Fase 0-1), non ne apre uno nuovo |
+| **Ghaurush «Cenerevento»** (Ogre magi/Stregone 8, GS 16; GS 18 al secondo incontro) — approvato 2026-08-05, `Bestiario/villain/Ghaurush_Cenerevento/` | Retrovie dell'orda, dove ci sono acqua corrente e roccia | Negoziare, o prendere con la forza, le gallerie alte di Hammerfist. **Non serve Tiamat: incassa** | 0/6 | Prende le gallerie alte senza trattare: **+1 CS alla Fase 1 di Rethmar**, e le due lettere che prova i traffici Sonjak↔Collezionista restano inutilizzate |
+| **Zin'thara Vel'Ryn «la Voce di Ragnatela»** (Illusionista 9/Danzatrice delle Ombre 2, GS 12) — approvata 2026-08-05, `Bestiario/villain/Zin_thara_Vel_Ryn/` | Campi drow del Sottosuolo, sotto la linea Rethmar | Accumulare prove contro Sonjak per comprarsi un esilio in superficie | 2/8 | Ha prove sufficienti per trattare: si offre al miglior offerente — PG, Il Collezionista o la Mano Rossa. Se non sono i PG, il ramo si chiude |
+| **Ushgar «Occhio Reso»** (Orco montano/Barbaro 13, GS 13) — approvato 2026-08-05, `Bestiario/villain/Ushgar_Occhio_Reso/` | Campo degli ausiliari orcheschi, sottovento e fuori dalla palizzata | Ottenere **terra scritta** per i suoi prima che la guerra finisca. **Decisione DM 2026-08-05**: ramo aperto passando prima dall'uscita laterale di Hella | 0/4 | Si prende la terra da solo, da un villaggio che non c'entra niente, e la carta se la fa firmare con le mani |
 
 ---
 
@@ -274,6 +277,9 @@ the listed consequence triggers.
 | NPC | Knows that... | Learned how / when |
 |---|---|---|
 | Sonjak (= Matrona Sajak) | The party freed the Cristal Warriors but does NOT know they have all 3 Crown gems | Drow scouts witnessed the mine assault |
+| Ghaurush «Cenerevento» | Che i Custodi Eterni portano **artefatti divini**; **non** sa quali | Rapporti dell'avanguardia della Mano Rossa (2026-08-05) |
+| Zin'thara Vel'Ryn | Che i Custodi Eterni hanno liberato i Guerrieri di Cristallo, come Sonjak; **non** sa nulla della Corona | Rete di informatori drow nei campi (2026-08-05) |
+| Ushgar «Occhio Reso» | Che i quattro Custodi viaggiano con artefatti; **non** sa quali, **e non gli importa** | Voci di caserma fra gli ausiliari (2026-08-05) |
 | Sonjak | Sal is operating on the desert road toward Rethmar; does NOT know Sal's temporal identity (Vatore) | Standard briefing to field agent |
 | Ghostlord / Zeth il Murato | Party existence unknown; aware of Red Hand using his lair as undead factory | Sensed via lair's magical senses |
 | Conte Valerius | The party visited Hammerfist; does NOT know about the Crown or Sal | Public dispatches — updated 2026-05-02 |
@@ -312,6 +318,7 @@ the listed consequence triggers.
 | Owed by | Owed to | What | Consequence if broken |
 |---|---|---|---|
 | Thorik | Re Thorek Hammerfist | Lead defense at Rethmar OR send Aegis Fang as proxy | Loss of Custode Eterno status; dwarven mercenaries withdraw |
+| *(ramo aperto, non ancora contratto)* **Hella**, e solo dopo **Thorik** | Ushgar «Occhio Reso» | Un atto scritto che assegni terra ai suoi ausiliari, in cambio del **ritardo degli orchi nella prima ondata** a Rethmar. **Ordine deciso dal DM 2026-08-05**: si offre prima l'uscita laterale di Hella (il Cerchio non si oppone all'insediamento); la firma di Thorik è il secondo passo, non il primo | Se firma **Hella**: problema con i druidi del Cerchio Sacro, e P1B a rischio se il rituale non è stato fatto. Se firma **Thorik**: si attiva la penale della riga qui sopra — **perdita dello status di Custode Eterno**. Se non si tratta: Ushgar si prende la terra da un villaggio |
 | Thorik | Hella (implicit) | He sacrificed 2 perm CON for her resurrection — she owes a moral debt | Affects Hella's ethics rolls in arguments with Thorik |
 | Tordek | Hella | 500 XP sacrificed for her resurrection | Affects romantic-bond progression at Sacred Forest |
 | Tordek | Tournament organizers | Show up at Dauth by **Day 29** (eve of the preliminaries — invite Day 24, arrival Day 28, Tournament Day 1-3 = Day 30-32, HOOKS-INTEGRATION-MASTER §1.1) | Disqualification; 150 Lance di Re Thorek reinforcements lost (D10 — separate from the 300 mercenaries won at the Tournament itself) |
@@ -402,6 +409,7 @@ fiction allows. Max ~12 armed — prune during prep.
 | **E-07c** | 2026-07-31 · **Tordek** · al rito dello Smeraldo **accetta il Peso nel corpo**: −2 DES / +2 COS permanenti. Il monaco baratta l'agilità con la capacità di reggere | luminoso, costoso | media | «L'incudine non schiva». Il momento in cui la perdita di DES gli costa qualcosa di visibile (un salto mancato, una parata che prima gli riusciva) e lui **non se ne lamenta**. E il giorno in cui regge un colpo che prima l'avrebbe steso | 🔫 armato |
 | **E-07e** | 2026-07-31 · **Thorik** · il portatore della Corona **guarda un altro reggere il peso** al posto suo | intimo | media | Quello che regge sempre, stavolta non ha retto lui. Riemerge nella catarsi davanti ad A3 e quando Tordek sarà in difficoltà | 🔫 armato |
 | **E-07d** | 2026-07-31 · **Terros** · l'ultimo suono del guardiano è di **assenso** (avevano curato i Cristalli) | luminoso | lunga | La Forgia registra la vittoria **onorata**. Un guardiano che approva è una porta che resta aperta: eco al #4 e nella Cronaca | 🔫 armato |
+| **E-08a** | 2026-08-05 · **DM** · approvata l'ala orchesca della Mano Rossa: dentro l'orda c'è **chi paga più di quanto incassa** | grigio | lunga (ARC-09 → dopoguerra) | Qualunque cosa i PG scelgano, la valle avrà orchi **anche dopo la guerra**: la domanda è se con un atto o con un assedio. Riemerge quando si contano i vivi a Rethmar | 🔫 armato |
 
 ### §7.R Reputation (Fama / Infamia) + Anointing Threads
 
@@ -1464,6 +1472,22 @@ entries — they become campaign history.
             4d6/Rifl 18) + ondate 1-4 del 3B + doppio timing dell'Apparizione
             (Round 8 nel 3B completo / porte-che-cedono nel lato ARC-07).
             Aggiornati atlante + DEF-2 + DEF-5 (griglie identiche).
+2026-08-05  Approvata l'ala di incantatori e comprimari (PR #93-#97). 13 file
+            passano da [INFERRED] a [ACCEPTED - DM-canon]: Ghaurush
+            «Cenerevento» (GS 16/17/18), Zin'thara Vel'Ryn (GS 12), Ushgar
+            «Occhio Reso» (GS 13), + 7 schede di comprimari. Aggiunte righe
+            §3 (3 clock villain: 0/6, 2/8, 0/4), §4 (cosa sanno dei PG),
+            §5 (ramo terra di Ushgar, ordine Hella-poi-Thorik), §7.E (E-08a).
+            Decisioni DM: (a) ramo Ushgar aperto ma via Hella per prima;
+            (b) Ushgar NON ha «Adattamento alla Luce» e il Controllo delle
+            Fiamme dei tanarukk FA scattare la cecità alla luce - la faglia
+            «i demoni accecano i propri comandanti» si apre; (c) sfida E
+            (Ghaurush GS 18, EL 18 = APL+5) NON come primo incontro: si usa
+            la variante Advanced GS 17, dentro il tetto; (d) approvati tutti
+            e sei gli innesti I1-I6 nei beat giocati; (e) CdP Signore della
+            Guerra Orchesco su Ushgar: non presa, resta Barbaro 13.
+            Piani: plans/PIANO-INCANTATORI-MEMORABILI-*, PIANO-SFIDE-COMBINATE-*,
+            PIANO-INNESTI-SFIDE-*.
 ```
 
 ```

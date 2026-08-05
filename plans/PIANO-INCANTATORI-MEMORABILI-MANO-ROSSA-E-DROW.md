@@ -8,10 +8,10 @@
 > sotterranea degli ogre. E per i drow qualche incantatore subdolo in più
 > comandato dalla matrona Sonjak.»*
 >
-> **Stato**: 🟢 eseguito (L1-L5 + **L7 ala orchesca** + **L8 indice fonte
-> privata**, 2026-08-02) — **tutto il materiale generato è
-> `[INFERRED — needs DM confirmation]`**: sono proposte, non canone. Nessuna
-> riga di `campaign/state.md` è stata toccata.
+> **Stato**: ✅ **completo** — L1-L5, L7, L8 (2026-08-02) e **L6 approvazione
+> DM** (2026-08-05). Il materiale è passato a `[ACCEPTED — DM-canon]` e le
+> righe sono state applicate in `campaign/state.md` §3, §4, §5, §7.E e §8.
+> Resta aperta solo l'assegnazione dei **token**.
 
 ---
 
@@ -344,8 +344,10 @@ ricette di adattamento originali. **Nessuno statblock trascritto.**
       Arcano GS 11, Assassina di Lolth GS 10
 - [x] **L5** — Catalogo rigenerato (`build_monster_catalog.py`) e
       `validate_bestiario.py` verde
-- [ ] **L6** — *(gated su DM)* approvazione: flag INFERRED → ACCEPTED, righe
-      in `state.md` §3/§4, assegnazione token
+- [x] **L6** — **Approvato dal DM il 2026-08-05.** 13 file passati a
+      `[ACCEPTED — DM-canon]`; righe applicate in `state.md` §3 (tre clock
+      villain), §4, §5 e §7.E; changelog §8 aggiornato. Token: ancora da
+      assegnare (`Bestiario/tokens/da-catalogare/`)
 - [x] **L7** — Ala orchesca in equivalenti SRD (§6): Chierico di Gruumsh GS 11,
       Bruto Deforme del Sottosuolo GS 11, Ushgar «Occhio Reso» GS 13
       (statblock + dossier + ramo politico su `state.md` §5)

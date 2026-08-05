@@ -1,5 +1,5 @@
-# Ghaurush «Cenerevento» — Secondo Incontro, «il preventivo è scaduto» [INFERRED — needs DM confirmation]
-**Faction**: mano-rossa | **Role**: boss-caster/negazione-del-contatto | **Environment**: any (quota, rovine, assedio) | **CR**: 18 | **Source**: SRD *Ogre Mage* (base GS 8) + **Stregone 10** (SRD PHB), classe associata GS +1/liv | **Status**: inferred
+# Ghaurush «Cenerevento» — Secondo Incontro, «il preventivo è scaduto» [ACCEPTED — DM-canon]
+**Faction**: mano-rossa | **Role**: boss-caster/negazione-del-contatto | **Environment**: any (quota, rovine, assedio) | **CR**: 18 | **Source**: SRD *Ogre Mage* (base GS 8) + **Stregone 10** (SRD PHB), classe associata GS +1/liv | **Status**: accepted
 
 > **Versione di ritorno.** Statblock del primo incontro:
 > `ghaurush-cenerevento-cr16.md` (GS 16; variante *Advanced* GS 17). Questa è

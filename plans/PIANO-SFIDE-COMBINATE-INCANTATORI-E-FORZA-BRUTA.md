@@ -7,10 +7,11 @@
 > forza bruta e a ogre magi pompati per reggere i Rumbling Stone e i loro
 > artefatti.»*
 >
-> **Stato**: 🟢 eseguito (S1-S3, 2026-08-04; **S5 sfida G** e **S6 orchi
-> montani**, 2026-08-05).
-> Tutto `[INFERRED — needs DM confirmation]`. `campaign/state.md` **non
-> toccato**.
+> **Stato**: ✅ **completo** — S1-S3 (2026-08-04), S5, S6 e **S4 approvazione
+> DM** (2026-08-05). Materiale a `[ACCEPTED — DM-canon]`. Due decisioni DM
+> registrate: la **sfida E** (EL 18) non si gioca come primo incontro — si usa
+> la variante *Advanced* GS 17, dentro il tetto; la **faglia della sfida G si
+> apre**. S7 (CdP Signore della Guerra Orchesco) **non presa**.
 
 ---
 
@@ -356,8 +357,12 @@ della Luna), fazione Zhentarim, ganci di trama. Solo creature e ruoli.
 - [x] **S2** — Sei sfide combinate con EL, apertura, pressione e uscita (§2-§4)
 - [x] **S3** — Ghaurush «Cenerevento» GS 18 (*muro di forza*), con condizioni
       d'uso sopra il tetto dichiarate
-- [ ] **S4** — *(gated su DM)* scelta delle sfide da portare al tavolo, flag
-      INFERRED → ACCEPTED, righe in `state.md` §3
+- [x] **S4** — **Deciso dal DM il 2026-08-05**: approvate **tutte** le sfide;
+      la scelta operativa passa dagli innesti I1-I6 del piano INNESTI-SFIDE.
+      Due decisioni collegate: la **sfida E** (EL 18) **non** si gioca come
+      primo incontro — si usa la variante *Advanced* GS 17, dentro il tetto;
+      la **faglia della sfida G si apre** (Ushgar senza «Adattamento alla
+      Luce», Controllo delle Fiamme che attiva la cecità)
 - [x] **S5** — Sfida **G** «Il Sangue Sbagliato» sui tanarukk (scheda fornita
       dal DM 2026-08-05): GS base 2 → **Barbaro 4 = GS 6**, ondata da otto con
       resistenza al fuoco 10 e RI 18; §2-bis dell'indice fonte privata, con la
@@ -367,6 +372,6 @@ della Luna), fazione Zhentarim, ganci di trama. Solo creature e ruoli.
       schede orchesche del repo *sono già* orchi montani. Indicizzato in
       §2-ter con le tre cose che il volume aggiunge davvero, fra cui il
       talento che può **disinnescare la faglia della sfida G**
-- [ ] **S7** — *(gated su fonte, opzionale)* meccaniche del **Signore della
-      Guerra Orchesco** addosso a Ushgar: servono le pagine, e il GS va
-      ricalcolato
+- [~] **S7** — *(non presa, 2026-08-05)* il DM ha lasciato **Ushgar Barbaro
+      13**. La CdP **Signore della Guerra Orchesco** resta disponibile se un
+      giorno servisse: bastano le pagine e un ricalcolo del GS

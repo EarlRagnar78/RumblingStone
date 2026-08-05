@@ -1,5 +1,5 @@
-# Ghaurush «Cenerevento» — Generale Elementalista della Mano Rossa [INFERRED — needs DM confirmation]
-**Faction**: mano-rossa | **Role**: boss-caster-brute | **Environment**: any (colline/accampamenti/assedio) | **CR**: 16 | **Source**: SRD *Ogre Mage* (base CR 8) + livelli di Stregone (SRD PHB); template PF1e *Advanced* per la variante | **Status**: inferred
+# Ghaurush «Cenerevento» — Generale Elementalista della Mano Rossa [ACCEPTED — DM-canon]
+**Faction**: mano-rossa | **Role**: boss-caster-brute | **Environment**: any (colline/accampamenti/assedio) | **CR**: 16 | **Source**: SRD *Ogre Mage* (base CR 8) + livelli di Stregone (SRD PHB); template PF1e *Advanced* per la variante | **Status**: accepted
 
 Large giant (ogre magi), LE. **DV 5d8 + 8d4** (Stregone 8). **hp 107** (Con 21 con *amuleto di salute +4*). **CA 21** (−1 taglia, +4 naturale, +6 giaco di maglia +2 Large, +2 deflessione), contatto 11, colto alla sprovvista 21 — **25 con *scudo* attivo**. Iniziativa **+4**. Vel 12 m (9 m in armatura), **volo 12 m (perfetto/buono, Sop, a volontà)**.
 **TS** Temp +11, Rifl +3, Vol +11. **BAB/Lotta** +7/**+16**.

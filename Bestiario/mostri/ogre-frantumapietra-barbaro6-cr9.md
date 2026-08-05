@@ -1,5 +1,5 @@
-# Ogre Frantumapietra delle Fauci Profonde (Barbaro 6) [INFERRED — needs DM confirmation]
-**Faction**: mano-rossa | **Role**: melee-heavy | **Environment**: underground/mountain | **CR**: 9 | **Source**: SRD *Ogre* (CR 3) + Barbaro 6 (SRD PHB); talento *Awesome Blow* (SRD, Monster Feats) | **Status**: inferred
+# Ogre Frantumapietra delle Fauci Profonde (Barbaro 6) [ACCEPTED — DM-canon]
+**Faction**: mano-rossa | **Role**: melee-heavy | **Environment**: underground/mountain | **CR**: 9 | **Source**: SRD *Ogre* (CR 3) + Barbaro 6 (SRD PHB); talento *Awesome Blow* (SRD, Monster Feats) | **Status**: accepted
 
 Large giant, CE. **DV 4d8 + 6d12**. **hp 77** (**97 in ira**). **CA 18** (−1 taglia, +5 naturale, +5 cotta di maglia, −1 Des), contatto 8, colto alla sprovvista 18 — **16 in ira**. Iniziativa −1. Vel 12 m (12 m anche in armatura: andatura veloce da Barbaro).
 **TS** Temp +11, Rifl +1, Vol +3 (**+13/+1/+5 in ira**). **BAB/Lotta** +9/**+20**.

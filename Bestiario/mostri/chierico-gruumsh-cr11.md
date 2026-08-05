@@ -1,5 +1,5 @@
-# Chierico di Gruumsh (Orco, Chierico 11) [INFERRED — needs DM confirmation]
-**Faction**: mano-rossa | **Role**: caster-divino/supporto-terreno | **Environment**: underground/hills | **CR**: 11 | **Source**: SRD *Orc* + Chierico 11 (SRD PHB), dominî **Guerra** e **Forza** (SRD); Gruumsh e i suoi dominî da `skills/forgotten-realms-lore/references/fr-deities-complete.md` | **Status**: inferred
+# Chierico di Gruumsh (Orco, Chierico 11) [ACCEPTED — DM-canon]
+**Faction**: mano-rossa | **Role**: caster-divino/supporto-terreno | **Environment**: underground/hills | **CR**: 11 | **Source**: SRD *Orc* + Chierico 11 (SRD PHB), dominî **Guerra** e **Forza** (SRD); Gruumsh e i suoi dominî da `skills/forgotten-realms-lore/references/fr-deities-complete.md` | **Status**: accepted
 
 Medium humanoid (orc), CE. **DV 11d8**. **hp 74**. **CA 21** (+9 corazza di piastre +1, +1 Des, +1 anello), contatto 12, colto alla sprovvista 20. Iniziativa +1. Vel 6 m (corazza).
 **TS** Temp +11, Rifl +6, Vol +13 (mantello di resistenza +2 incluso). **BAB/Lotta** +8/+11.

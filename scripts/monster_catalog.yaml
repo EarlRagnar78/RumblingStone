@@ -290,6 +290,13 @@ monsters:
     role: caster-divine
     environment: forest
     source_file: "Bestiario/png/druid-bear-ally-cr12.md"
+  - id: ushgar-occhio-reso-il-capo-guerra-che-vuole-un-pezzo-di-carta-0678e3
+    name: "Ushgar «Occhio Reso» — il capo-guerra che vuole un pezzo di carta"
+    cr: 13.0
+    faction: cerchio-druid
+    role: generalist
+    environment: forest
+    source_file: "Bestiario/villain/Ushgar_Occhio_Reso/Ushgar_Occhio_Reso.md"
   - id: arci-druido-circolo-cr14-738991
     name: "arci-druido-circolo-cr14"
     cr: 14.0
@@ -1699,13 +1706,6 @@ monsters:
     role: boss
     environment: urban
     source_file: "Bestiario/png/dauth-commander-mercenari-nani-cr11.md"
-  - id: ushgar-occhio-reso-il-capo-guerra-che-vuole-un-pezzo-di-carta-0678e3
-    name: "Ushgar «Occhio Reso» — il capo-guerra che vuole un pezzo di carta"
-    cr: 13.0
-    faction: rethmar-defender
-    role: generalist
-    environment: urban
-    source_file: "Bestiario/villain/Ushgar_Occhio_Reso/Ushgar_Occhio_Reso.md"
   - id: conte-valerius-villain-politico-432059
     name: "Conte Valerius — Villain Politico"
     cr: 14.0

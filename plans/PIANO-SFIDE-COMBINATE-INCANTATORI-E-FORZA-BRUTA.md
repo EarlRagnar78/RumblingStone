@@ -7,7 +7,8 @@
 > forza bruta e a ogre magi pompati per reggere i Rumbling Stone e i loro
 > artefatti.»*
 >
-> **Stato**: 🟢 eseguito (S1-S3, 2026-08-04; **S5 sfida G**, 2026-08-05).
+> **Stato**: 🟢 eseguito (S1-S3, 2026-08-04; **S5 sfida G** e **S6 orchi
+> montani**, 2026-08-05).
 > Tutto `[INFERRED — needs DM confirmation]`. `campaign/state.md` **non
 > toccato**.
 
@@ -250,6 +251,12 @@ luce**: se il DM decide che l'effetto conta (vedi la nota di interpretazione
 nell'indice), i demoni-orco accecano i propri comandanti — e la domanda che
 resta al tavolo è se lo facciano per sbaglio.
 
+> ⚠️ **Da decidere prima di giocare la scena, non durante.** *Races of Faerûn*
+> dà agli orchi montani il talento razziale **Adattamento alla Luce**, che
+> toglie la sensibilità alla luce. Se il DM decide che **Ushgar ce l'ha**,
+> questa faglia **non si apre** e la scena torna a essere un'ondata normale.
+> Sono due scene diverse e vanno scelte in anticipo (`Bestiario/INDICE-SONS-OF-GRUUMSH-FONTE-PRIVATA.md` §2-ter).
+
 **Uscita**: i tanarukk non si ritirano. Ushgar sì, se la faglia si apre davanti
 ai suoi — ed è l'unico modo di vederlo lasciare un campo.
 
@@ -328,8 +335,18 @@ della Luna), fazione Zhentarim, ganci di trama. Solo creature e ruoli.
    calcolo era giusto, la premessa no (le intestazioni della web enhancement
    riportano l'EL *originale*, non quello già scalato). Vale come **forza
    bruta solo con livelli di classe**: Barbaro 4 → GS 6.
-6. **Ancora aperto**: gli **orchi montani** (*Races of Faerûn*, richiamati a
-   p. 4 della web enhancement) — stessa situazione di prima: serve il volume.
+6. ~~**Ancora aperto**: gli orchi montani.~~ **Chiuso il 2026-08-05**, e con un
+   esito diverso dagli altri due: l'orco montano è una **razza giocabile**, non
+   uno statblock, e i suoi tratti sono **identici all'orco SRD** salvo una
+   differenza cosmetica sulla sensibilità alla luce. **Non aggiunge un nemico
+   al roster** — conferma che le schede orchesche già scritte *sono già* orchi
+   montani. Quello che aggiunge sta in `Bestiario/INDICE-SONS-OF-GRUUMSH-FONTE-PRIVATA.md`
+   §2-ter: un talento razziale che può **disinnescare la faglia della sfida G**
+   (vedi sotto), una classe di prestigio che descrive Ushgar parola per parola,
+   e la sociologia che rende canonico il suo ramo politico.
+7. **Aperto, se il DM lo vuole**: le meccaniche del **Signore della Guerra
+   Orchesco** (*Races of Faerûn*) addosso a Ushgar. Servono le pagine, e il GS
+   va ricalcolato.
 
 ---
 
@@ -345,5 +362,11 @@ della Luna), fazione Zhentarim, ganci di trama. Solo creature e ruoli.
       dal DM 2026-08-05): GS base 2 → **Barbaro 4 = GS 6**, ondata da otto con
       resistenza al fuoco 10 e RI 18; §2-bis dell'indice fonte privata, con la
       correzione della mia deduzione «GS 6» dichiarata
-- [ ] **S6** — *(gated su fonte)* **orchi montani** (*Races of Faerûn*),
-      richiamati a p. 4 della web enhancement: serve il volume
+- [x] **S6** — **Orchi montani** (*Races of Faerûn*, scheda fornita dal DM
+      2026-08-05): **nessun nemico nuovo** — tratti identici all'orco SRD, le
+      schede orchesche del repo *sono già* orchi montani. Indicizzato in
+      §2-ter con le tre cose che il volume aggiunge davvero, fra cui il
+      talento che può **disinnescare la faglia della sfida G**
+- [ ] **S7** — *(gated su fonte, opzionale)* meccaniche del **Signore della
+      Guerra Orchesco** addosso a Ushgar: servono le pagine, e il GS va
+      ricalcolato

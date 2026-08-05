@@ -4,6 +4,10 @@
 > l'avventura *Sons of Gruumsh* — scritta per **personaggi di 4° livello**,
 > ambientata nel Thar / Mare della Luna — a **personaggi di 8° livello**.
 >
+> Da §2-bis in poi il file indicizza anche i **volumi che la web enhancement
+> richiama**, man mano che il DM li fornisce: *Monsters of Faerûn* (tanarukk),
+> *Races of Faerûn* (orchi montani).
+>
 > ⚖️ **Policy**: `AGENTS.md` regola 2. Il documento dichiara in prima pagina di
 > **non contenere Open Game Content** e di non essere riproducibile senza
 > permesso scritto. Qui non c'è **nessuno statblock trascritto e nessun testo
@@ -68,10 +72,9 @@ riportati **solo come misura**, non come trascrizione di scheda.
 | **Xeldar Orsalyn** | 8 | 4 | guerriero umano 4 (Zhentarim) | 29 / 21 | ❌ sotto scala e fuori fazione |
 | **Grûnhawr** / **Snyrr** | 3 / 7 | — | compagno animale / famiglio | — | ❌ accessori |
 
-**Rimandi ad altri volumi** (fonte privata a loro volta):
-**tanarukk** (incrocio orco-demoniaco, *Monsters of Faerûn*) usati a gruppi di
-otto a p. 5 — scheda ora disponibile, vedi **§2-bis**; **orchi montani**
-(*Races of Faerûn*) a p. 4, ancora non forniti.
+**Rimandi ad altri volumi** (fonte privata a loro volta), entrambi ora
+indicizzati: **tanarukk** (*Monsters of Faerûn*), usati a gruppi di otto a
+p. 5 → **§2-bis**; **orchi montani** (*Races of Faerûn*) a p. 4 → **§2-ter**.
 
 ---
 
@@ -152,6 +155,80 @@ E **Ushgar, Thrull e Naazlog hanno tutti cecità o sensibilità alla luce.**
 > i demoni-orco possono accecare i propri comandanti — e la domanda diventa se
 > lo facciano per sbaglio. Se decide di no, resta una bella immagine e nulla
 > più. **Non risolverla al posto suo.**
+
+---
+
+## §2-ter Orco montano — non è un mostro, ed è una buona notizia
+
+**Fonte**: *Races of Faerûn* `[Private source]` (scheda fornita dal DM,
+2026-08-05).
+
+**Prima cosa da dire, perché cambia le aspettative**: l'orco montano è una
+**razza giocabile**, non uno statblock. Non aggiunge un nemico al roster.
+
+**Seconda cosa, più utile**: mette a confronto i suoi tratti razziali con
+quelli dell'orco SRD, e il confronto dice che **sono la stessa creatura**.
+
+| Tratto | Orco SRD | Orco montano (*RoF*) |
+|---|---|---|
+| Caratteristiche | For +4, Int −2, Sag −2, Car −2 | **identiche** |
+| Taglia / velocità | Media / 9 m | **identiche** |
+| Scurovisione | 18 m | **identica** |
+| Sangue orchesco | sì | sì |
+| Classe preferita | Barbaro | Barbaro |
+| Sensibilità alla luce | **abbagliato** (−1 att., Cercare, Osservare) | **−1 ai tiri per colpire** |
+| Competenze | — | ascia bipenne e giavellotto |
+
+L'unica differenza reale è che la versione *RoF* **omette il malus a Cercare e
+Osservare**. Cosmetica.
+
+### Cosa significa per il repo
+
+**Le schede orchesche già scritte sono già orchi montani.** `Ushgar «Occhio
+Reso»` e il `Chierico di Gruumsh` (entrambi `Bestiario/`) si possono
+riqualificare come orchi montani **senza toccare un numero** — cambia
+l'etichetta, non la matematica. Il che è la conferma retroattiva che la rotta
+«equivalenti SRD» scelta dal DM il 2026-08-02 non aveva perso niente per
+strada.
+
+Il volume conferma anche tre scelte fatte allora senza averlo:
+- *«Almeno tutti i chierici orchi montani venerano Gruumsh»* → il Chierico di
+  Gruumsh sta al posto giusto.
+- *«Spesso ogre, troll e giganti delle colline vivono nelle comunità orchesche»*
+  → mescolare Bruto Deforme e ogre agli orchi è canone, non licenza.
+- Classe preferita Barbaro, e barbari e guerrieri dominano → Ushgar Barbaro 13
+  è la build tipica, non un'eccezione.
+
+### Le tre cose che il volume aggiunge davvero
+
+1. **Talento razziale «Adattamento alla Luce»** — la sensibilità alla luce
+   sparisce. Le meccaniche stanno nel volume e non sono riportate qui, ma
+   l'esistenza del talento è **una leva di trama**: decide se il **Controllo
+   delle Fiamme** dei tanarukk (§2-bis) accechi davvero i comandanti orcheschi.
+   Se Ushgar ha il talento, la faglia che avevo costruito **non si apre** — e
+   il DM deve saperlo prima di giocare la sfida **G**, non durante.
+2. **Talento razziale «Carica Avventata»** e **classe di prestigio «Signore
+   della Guerra Orchesco»** — quest'ultima descritta come la classe di *«quegli
+   individui carismatici responsabili di radunare e guidare le orde verso
+   sud»*. È la descrizione di Ushgar parola per parola. **Meccaniche non
+   riportate**: se il DM la vuole addosso a lui, servono le pagine, e il grado
+   di sfida va ricalcolato.
+3. **La sociologia, che è il pezzo grosso.** Il volume dice che il limite degli
+   orchi montani non è la forza: è che **non sanno stare insieme se non per
+   fare la guerra**, e che le loro città si spaccano in guerre civili quando
+   crescono troppo.
+
+> Quest'ultima riga vale più dei due talenti messi insieme. Il ramo politico di
+> Ushgar — un capo-guerra che vuole terra scritta invece di bottino, contro un
+> Grimjaw che ha preso il grado dagli hobgoblin — **non era un'invenzione mia
+> adattata al canone: è esattamente il modo in cui questa razza si rompe**.
+> Il DM può citarlo ai giocatori come cosa che si sa degli orchi del nord.
+
+### Cosa resta fuori
+
+Regione (il Nord, Marche d'Argento), tribù nominate e la loro storia: sono
+agganci del setting di quel volume, non della Cannath Vale. Si prendono i
+tratti e la sociologia; i nomi propri restano dove sono.
 
 ---
 

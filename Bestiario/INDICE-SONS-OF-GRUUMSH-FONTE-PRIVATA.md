@@ -68,11 +68,90 @@ riportati **solo come misura**, non come trascrizione di scheda.
 | **Xeldar Orsalyn** | 8 | 4 | guerriero umano 4 (Zhentarim) | 29 / 21 | ❌ sotto scala e fuori fazione |
 | **Grûnhawr** / **Snyrr** | 3 / 7 | — | compagno animale / famiglio | — | ❌ accessori |
 
-**Rimandi ad altri volumi** (fonte privata a loro volta, non inclusi qui):
+**Rimandi ad altri volumi** (fonte privata a loro volta):
 **tanarukk** (incrocio orco-demoniaco, *Monsters of Faerûn*) usati a gruppi di
-otto a p. 5; **orchi montani** (*Races of Faerûn*) a p. 4. Il tanarukk è la
-risposta più diretta alla richiesta «forza bruta con un'angolazione diversa»,
-ma va preso dal suo volume.
+otto a p. 5 — scheda ora disponibile, vedi **§2-bis**; **orchi montani**
+(*Races of Faerûn*) a p. 4, ancora non forniti.
+
+---
+
+## §2-bis Tanarukk — la scheda c'è, e ribalta una mia deduzione
+
+**Fonte**: *Monster Compendium: Monsters of Faerûn* `[Private source]`
+(scheda fornita dal DM, 2026-08-05).
+
+> 🔁 **Correzione.** Avevo dedotto **GS 6** dal fatto che la web enhancement
+> schiera otto tanarukk in un incontro etichettato EL 12, e l'avevo presentata
+> come una deduzione solida perché ricavata da un documento letto e non dalla
+> memoria. **Era sbagliata**: il calcolo era giusto, ma la premessa no — davo
+> per scontato che l'etichetta EL 12 si riferisse alla versione *già scalata* a
+> otto, mentre le intestazioni della web enhancement riportano l'EL
+> **originale** del modulo e i punti elenco dicono come alzarlo. Il tanarukk
+> base è **GS 2**.
+
+**I numeri che servono per progettare** (misure, non trascrizione — il resto
+sta nel volume):
+
+| | |
+|---|---|
+| Grado di sfida base | **2** |
+| Tipo | Medium Outsider (**Native**) — si può resuscitare, mangia e dorme |
+| DV / pf | 5d8 / **22** |
+| CA | **15** (contatto 11) |
+| **Velocità** | **6 m** — lento, ed è il dato tattico più importante |
+| Attacco completo | ascia da battaglia +8 (1d8+3) **e** morso +2 (1d6+1) |
+| TS | Temp +4, Rifl +5, Vol **+3** |
+| Qualità | **Resistenza al fuoco 10**, **RI 14 + livelli di classe**, Controllo delle Fiamme (Sop, 2/giorno), sangue orchesco |
+| Avanzamento | **per livelli di classe** (LA +3) |
+| Organizzazione | pattuglia 2-4, squadra 6-11, clan 16-35, tribù 51-100 |
+
+### Verdetto a livello 13
+
+**Da solo non serve a niente**: GS 2, e otto di loro fanno **EL 8**. Contro
+questo gruppo è fondale, non minaccia.
+
+**Ma la riga di avanzamento è «per classe»**, e lì diventa utile — con il
+Barbaro come innesto naturale (sangue orchesco, caotico malvagio, bruto):
+
+| Build | GS | RI risultante |
+|---|---|---|
+| tanarukk base | 2 | 14 |
+| tanarukk **Barbaro 4** | **6** | **18** |
+| tanarukk **Barbaro 6** | **8** | **20** |
+| tanarukk Barbaro 8 | 10 | 22 |
+
+### Le tre cose che lo rendono diverso da ogni altro bruto del repo
+
+1. **Resistenza al fuoco 10.** Il fuoco è l'asse morale di questa campagna —
+   spegne la rigenerazione di Ghaurush, brucia Hella a ×1,5, ed è la risposta
+   che il tavolo ha imparato. Qui costa: la *palla di fuoco* di Artemis a CL 13
+   perde ~10 punti a bersaglio, su otto bersagli.
+2. **RI che cresce coi livelli di classe.** A RI 20, Artemis passa il 70% delle
+   volte. Non è un muro, è una **tassa** — e su un'ondata di otto si sente.
+3. **Velocità 6 metri.** Un'ondata che arriva **lenta** si combatte con la
+   posizione, non con l'iniziativa. È il primo scontro del roster in cui il
+   terreno lavora per il gruppo invece che contro.
+
+**La contromossa è lo specchio esatto del Bruto Deforme**: lì i TS bassi
+mettevano la soluzione in mano agli incantatori; qui la RI la toglie loro e la
+restituisce a Thorik e Tordek. Le due schede si completano, e alternarle
+impedisce che il tavolo trovi una routine.
+
+### Controllo delle Fiamme — la riga che apre una scena
+
+2/giorno, entro 3 m, un tanarukk può far **divampare una fiamma non magica
+fino alla luminosità della luce del giorno**, raddoppiandone il raggio, per 5
+minuti.
+
+E **Ushgar, Thrull e Naazlog hanno tutti cecità o sensibilità alla luce.**
+
+> ⚠️ **Interpretazione, non regola.** Che una fiamma resa «luminosa come la
+> luce del giorno» faccia scattare la cecità alla luce è una **decisione del
+> DM**: il testo della qualità parla di luminosità, quello della cecità parla
+> di luce solare e dell'incantesimo *luce del giorno*. Se il DM decide di sì,
+> i demoni-orco possono accecare i propri comandanti — e la domanda diventa se
+> lo facciano per sbaglio. Se decide di no, resta una bella immagine e nulla
+> più. **Non risolverla al posto suo.**
 
 ---
 

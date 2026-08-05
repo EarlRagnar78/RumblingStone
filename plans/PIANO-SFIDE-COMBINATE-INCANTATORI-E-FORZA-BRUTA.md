@@ -7,8 +7,9 @@
 > forza bruta e a ogre magi pompati per reggere i Rumbling Stone e i loro
 > artefatti.»*
 >
-> **Stato**: 🟢 eseguito (S1-S3, 2026-08-04). Tutto `[INFERRED — needs DM
-> confirmation]`. `campaign/state.md` **non toccato**.
+> **Stato**: 🟢 eseguito (S1-S3, 2026-08-04; **S5 sfida G**, 2026-08-05).
+> Tutto `[INFERRED — needs DM confirmation]`. `campaign/state.md` **non
+> toccato**.
 
 ---
 
@@ -208,6 +209,52 @@ quindi la scena va **segnalata nella finzione prima che cominci** e deve avere
 
 ---
 
+### G — «Il Sangue Sbagliato» · EL **13,5** (con Ushgar: **15,3**) · *l'ondata che tassa gli incantatori*
+
+| Ruolo | Chi | GS | Fonte |
+|---|---|---|---|
+| Ondata ×8 | **Tanarukk Barbaro 4** | 6 | 📕 *Monsters of Faerûn* (base GS 2 + 4 livelli) |
+| Incantatore | Chierico di Gruumsh | 11 | 📗 `Bestiario/mostri/chierico-gruumsh-cr11.md` |
+| *(opzionale)* Capo | Ushgar «Occhio Reso» | 13 | 📗 `Bestiario/villain/Ushgar_Occhio_Reso/` |
+
+> Il tanarukk **base è GS 2** e a questo tavolo non serve a niente (otto = EL 8).
+> La sua riga di avanzamento è **«per livelli di classe»**, ed è lì che diventa
+> utile: **Barbaro 4 → GS 6, RI 18**. Dettagli e correzione in
+> `Bestiario/INDICE-SONS-OF-GRUUMSH-FONTE-PRIVATA.md` §2-bis.
+
+**Il problema**: otto corpi con **resistenza al fuoco 10** e **RI 18**. Il
+fuoco è la risposta che il tavolo ha imparato a dare — a Ghaurush, alle
+rigenerazioni, a tutto — e qui rende meno; la resistenza agli incantesimi
+tassa Artemis su ogni bersaglio, otto volte. Ma i tanarukk si muovono a **6
+metri**, quindi arrivano lenti e in fila.
+
+**È lo specchio della sfida A.** Lì la soluzione era negli incantatori; qui la
+RI gliela toglie e la restituisce a Thorik e Tordek. Alternare le due impedisce
+che il tavolo trovi una routine.
+
+**Apertura**
+1. L'ondata avanza a 6 m. Il gruppo ha **un round in più del solito** per
+   scegliere dove stare: chi lo spreca a lanciare contro RI 18 lo scopre subito.
+2. Il **chierico di Gruumsh** apre col *muro di lame* — ma stavolta dietro
+   l'ondata, non davanti: serve a impedire ai PG di **ritirarsi** mentre gli
+   otto arrivano.
+3. I tanarukk ingaggiano in fila. Attacco completo: ascia **e** morso.
+
+**Il gancio che rende la scena diversa da un'altra ondata**: i tanarukk sono
+**sangue di demone**, e l'orda che li schiera prega **Gruumsh**. Se il gruppo
+ha lavorato il ramo di Ushgar, questa è la scena in cui vede *perché* è
+arrabbiato — i suoi muoiono in prima ondata accanto a cose che il loro stesso
+culto considera abomini. Il **Controllo delle Fiamme** dei tanarukk può far
+divampare un fuoco fino alla luminosità del giorno, e Ushgar è **cieco alla
+luce**: se il DM decide che l'effetto conta (vedi la nota di interpretazione
+nell'indice), i demoni-orco accecano i propri comandanti — e la domanda che
+resta al tavolo è se lo facciano per sbaglio.
+
+**Uscita**: i tanarukk non si ritirano. Ushgar sì, se la faglia si apre davanti
+ai suoi — ed è l'unico modo di vederlo lasciare un campo.
+
+---
+
 ### F — «L'Ondata» · EL **13,1** · *ritmo, non minaccia*
 
 2× Ogre Frantumapietra (GS 9) + 3× Ogre Micelio (GS 8), entrambi 📗.
@@ -233,9 +280,15 @@ al decimo round, uno di loro si volta contro il vicino.
 | **D** La Notte Lunga | 15,1 | 5-7 round | assenza di ladro, PNG alleati | **no** |
 | **E** Il Preventivo Scaduto | **18** ⚠️ | 4-6 round | tutto | **no** |
 | **F** L'Ondata | 13,1 | 3-4 round | risorse, non vite | **no** |
+| **G** Il Sangue Sbagliato | 13,5 / 15,3 | 5-6 round | Artemis (RI ×8), il fuoco come risposta abituale | sì, 1 scheda (*Monsters of Faerûn*) |
 
-Tre sfide su sei si giocano **senza aprire il libro**. Le altre tre lo usano
-per due o tre statblock ciascuna.
+Tre sfide su sette si giocano **senza aprire il libro**. Le altre quattro lo
+usano per una, due o tre schede ciascuna.
+
+**Da alternare, non da accumulare**: **A** mette la soluzione in mano agli
+incantatori (TS bassi, nessuna RI), **G** gliela toglie (RI 18 su otto corpi) e
+la restituisce ai due in mischia. Giocate a distanza di sessioni impediscono al
+tavolo di trovare una routine; giocate di fila si annullano.
 
 ---
 
@@ -267,10 +320,16 @@ della Luna), fazione Zhentarim, ganci di trama. Solo creature e ruoli.
    ci sono; l'unica scheda nuova è **Ghaurush GS 18**, che è un potenziamento
    di un PNG esistente e non una creatura in più.
 4. **Non ho sfondato il tetto se non una volta**, dichiarandolo.
-5. **Aperto**: i **tanarukk** (incrocio orco-demoniaco, *Monsters of Faerûn*)
-   restano la casella vuota più interessante — otto di loro sono uno scontro da
-   EL 12 già scritto nella fonte, ma servono il volume che li stata. Se il DM
-   lo fornisce, diventano la sfida **G**.
+5. ~~**Aperto**: i tanarukk restano la casella vuota più interessante.~~
+   **Chiuso il 2026-08-05**: il DM ha fornito la scheda, ed è diventata la
+   sfida **G**. Con una correzione a mio carico: avevo dedotto **GS 6** dal
+   fatto che la fonte schiera otto tanarukk in un incontro etichettato EL 12,
+   presentandola come deduzione solida. Il tanarukk base è **GS 2** — il
+   calcolo era giusto, la premessa no (le intestazioni della web enhancement
+   riportano l'EL *originale*, non quello già scalato). Vale come **forza
+   bruta solo con livelli di classe**: Barbaro 4 → GS 6.
+6. **Ancora aperto**: gli **orchi montani** (*Races of Faerûn*, richiamati a
+   p. 4 della web enhancement) — stessa situazione di prima: serve il volume.
 
 ---
 
@@ -282,5 +341,9 @@ della Luna), fazione Zhentarim, ganci di trama. Solo creature e ruoli.
       d'uso sopra il tetto dichiarate
 - [ ] **S4** — *(gated su DM)* scelta delle sfide da portare al tavolo, flag
       INFERRED → ACCEPTED, righe in `state.md` §3
-- [ ] **S5** — *(gated su fonte)* sfida **G** sui tanarukk, se il DM fornisce il
-      volume che li stata
+- [x] **S5** — Sfida **G** «Il Sangue Sbagliato» sui tanarukk (scheda fornita
+      dal DM 2026-08-05): GS base 2 → **Barbaro 4 = GS 6**, ondata da otto con
+      resistenza al fuoco 10 e RI 18; §2-bis dell'indice fonte privata, con la
+      correzione della mia deduzione «GS 6» dichiarata
+- [ ] **S6** — *(gated su fonte)* **orchi montani** (*Races of Faerûn*),
+      richiamati a p. 4 della web enhancement: serve il volume

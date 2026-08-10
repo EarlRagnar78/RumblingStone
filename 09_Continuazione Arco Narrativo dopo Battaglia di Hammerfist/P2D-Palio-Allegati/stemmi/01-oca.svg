@@ -1,21 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240" role="img" aria-label="Stemma Contrada dell'Oca">
-  <defs><clipPath id="g1"><path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z"/></clipPath></defs>
-  <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="#1f7a44" stroke="#7a1f1f" stroke-width="6"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240" role="img" aria-label="Stemma Contrada dell'Oca — distretto The Golden Plume">
+  <!-- LIVREA CHANNATHGATE · The Golden Plume (Waukeen): porpora e oro, bordata di bianco perla -->
+  <defs><clipPath id="g1"><path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z"/></clipPath><clipPath id="g1-or"><rect x="406" y="84" width="92" height="74"/><rect x="188" y="450" width="234" height="62"/></clipPath></defs>
+  <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="#4a2560" stroke="#f0eada" stroke-width="6"/>
   <g clip-path="url(#g1)">
-    <path d="M100 20 H180 V150 Q180 210 100 232 Z" fill="#1a6b3b"/>
-    <!-- oca araldica in profilo, argento; collo a S pulito -->
-    <g stroke="#123" stroke-width="2.5" stroke-linejoin="round" fill="#f5f5ef">
-      <path d="M96 168 q-26 -6 -30 -34 q-3 -22 16 -30 q-14 -10 -6 -26 q6 -12 18 -8 q-4 -12 8 -16 q10 -2 12 10 q16 2 18 20 q2 16 -12 22 q16 8 12 30 q-4 24 -32 30 q6 12 -4 16 q-8 2 -10 -8z"/>
+    <path d="M100 20 H180 V150 Q180 210 100 232 Z" fill="#3e1e52"/>
+    <!-- FIGURA · game-icons.net "goose-Delapouite" di Delapouite, CC BY 3.0 (sostituibile: il gruppo porta il fill della livrea) -->
+    <g transform="translate(39.78 39.76) scale(0.23529)">
+      <path d="M370.019 18.023c-2.843-.035-5.859.197-9.075.73-81.664 13.54-38.657 142.295-36.095 217.397-84.163-16.327-168.007 121.048-289.118 152.787 58.086 52.473 206.05 89.6 331.739 11.85 39.804-24.622 45.26-92.014 34.343-165.049-6.703-44.845-71.755-133.176-10.269-141.266l.611-.504c12.884-10.608 16.606-23.842 22.522-37.699l1.699-3.976c-11.688-16.016-23.17-33.986-46.357-34.27zm5.08 19.625a9 9 0 0 1 9 9 9 9 0 0 1-9 9 9 9 0 0 1-9-9 9 9 0 0 1 9-9zm52.703 34.172c-3.28 8.167-7.411 17.45-14.612 26.293 21.035 7.63 41.929 3.078 63.079-.863-15.515-9.272-32.003-18.195-48.467-25.43zm-89.608 181.053c19.109 25.924 21.374 53.965 11.637 78.183-9.737 24.219-30.345 44.797-55.67 60.49-50.65 31.389-121.288 44.45-170.553 17.11l8.735-15.738c40.364 22.4 106.342 11.833 152.338-16.67 22.997-14.252 40.72-32.684 48.449-51.906 7.729-19.223 6.596-39.053-9.426-60.79l14.49-10.68zM273.28 456.322a332.68 332.68 0 0 1-19.095 3.232l-3.508 16.426h-13.084l3.508-14.842a400.208 400.208 0 0 1-18.852 1.506l-7.408 31.336h95.79v-18h-41.548l4.197-19.658z" fill="#f0eada"/>
+      <g clip-path="url(#g1-or)"><path d="M370.019 18.023c-2.843-.035-5.859.197-9.075.73-81.664 13.54-38.657 142.295-36.095 217.397-84.163-16.327-168.007 121.048-289.118 152.787 58.086 52.473 206.05 89.6 331.739 11.85 39.804-24.622 45.26-92.014 34.343-165.049-6.703-44.845-71.755-133.176-10.269-141.266l.611-.504c12.884-10.608 16.606-23.842 22.522-37.699l1.699-3.976c-11.688-16.016-23.17-33.986-46.357-34.27zm5.08 19.625a9 9 0 0 1 9 9 9 9 0 0 1-9 9 9 9 0 0 1-9-9 9 9 0 0 1 9-9zm52.703 34.172c-3.28 8.167-7.411 17.45-14.612 26.293 21.035 7.63 41.929 3.078 63.079-.863-15.515-9.272-32.003-18.195-48.467-25.43zm-89.608 181.053c19.109 25.924 21.374 53.965 11.637 78.183-9.737 24.219-30.345 44.797-55.67 60.49-50.65 31.389-121.288 44.45-170.553 17.11l8.735-15.738c40.364 22.4 106.342 11.833 152.338-16.67 22.997-14.252 40.72-32.684 48.449-51.906 7.729-19.223 6.596-39.053-9.426-60.79l14.49-10.68zM273.28 456.322a332.68 332.68 0 0 1-19.095 3.232l-3.508 16.426h-13.084l3.508-14.842a400.208 400.208 0 0 1-18.852 1.506l-7.408 31.336h95.79v-18h-41.548l4.197-19.658z" fill="#dfa93b"/></g>
     </g>
-    <circle cx="112" cy="66" r="3.5" fill="#123"/>
-    <path d="M124 68 l14 -4 l-12 10z" fill="#e0a500" stroke="#7a5a00" stroke-width="1"/>
-    <!-- corona d'oro sul capo (Waukeen) -->
-    <path d="M100 50 h24 l-4 -10 -6 5 -6 -8 -6 8 -6 -5z" fill="#e9c24a" stroke="#8a6b00" stroke-width="1.5"/>
+    <!-- /FIGURA -->
     <!-- moneta di Waukeen -->
-    <circle cx="60" cy="150" r="11" fill="#e9c24a" stroke="#8a6b00" stroke-width="2"/><text x="60" y="155" font-family="Georgia,serif" font-size="13" text-anchor="middle" fill="#6b5200">W</text>
+    <circle cx="48" cy="158" r="13" fill="#e3b44c" stroke="#7a5215" stroke-width="2"/><text x="48" y="164" font-family="Georgia,serif" font-size="15" text-anchor="middle" fill="#5a3a12">W</text>
   </g>
-  <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="none" stroke="#7a1f1f" stroke-width="6"/>
-  <rect x="30" y="182" width="140" height="26" rx="4" fill="#0d1b2a" opacity="0.82"/>
-  <text x="100" y="200" font-family="Georgia,serif" font-size="12" fill="#e9c24a" text-anchor="middle" font-style="italic">Al suono dell'oro, all'armi</text>
-  <text x="100" y="14" font-family="Georgia,serif" font-size="12" fill="#123" text-anchor="middle" font-weight="bold">L'OCA · Waukeen</text>
+  <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="none" stroke="#f0eada" stroke-width="6"/>
+  <rect x="30" y="182" width="140" height="26" rx="4" fill="#2a1436" opacity="0.82"/>
+  <text x="100" y="200" font-family="Georgia,serif" font-size="12" fill="#e3b44c" text-anchor="middle" font-style="italic">Al suono dell'oro, all'armi</text>
+  <text x="100" y="14" font-family="Georgia,serif" font-size="12" fill="#4a2560" text-anchor="middle" font-weight="bold">L'OCA · Waukeen</text>
 </svg>

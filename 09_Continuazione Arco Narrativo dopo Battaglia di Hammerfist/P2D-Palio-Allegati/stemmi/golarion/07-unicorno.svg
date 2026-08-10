@@ -11,7 +11,7 @@
     <path d="M113 72 L156 44" fill="none" stroke="#dfa93b" stroke-width="5" stroke-linecap="round"/>
   </g>
   <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="none" stroke="#d7dce2" stroke-width="6"/>
-  <rect x="20" y="182" width="160" height="26" rx="4" fill="#3d1424" opacity="0.85"/>
-  <text x="100" y="200" font-family="Georgia,serif" font-size="10.5" fill="#dfa93b" text-anchor="middle" font-style="italic">Ferisce e sana il corno che porto</text>
-  <text x="100" y="14" font-family="Georgia,serif" font-size="12" fill="#b8496e" text-anchor="middle" font-weight="bold">L'UNICORNO · Shelyn</text>
+  <rect x="17" y="182" width="166" height="26" rx="4" fill="#3d1424" opacity="0.85"/>
+  <text x="100" y="200" font-family="Georgia,&quot;Liberation Serif&quot;,&quot;DejaVu Serif&quot;,serif" font-size="10.5" fill="#dfa93b" text-anchor="middle" font-style="italic" textLength="140.4" lengthAdjust="spacingAndGlyphs">Ferisce e sana il corno che porto</text>
+  <text x="100" y="14" font-family="Georgia,&quot;Liberation Serif&quot;,&quot;DejaVu Serif&quot;,serif" font-size="12" fill="#b8496e" text-anchor="middle" font-weight="bold" textLength="123.0" lengthAdjust="spacingAndGlyphs">L'UNICORNO · Shelyn</text>
 </svg>

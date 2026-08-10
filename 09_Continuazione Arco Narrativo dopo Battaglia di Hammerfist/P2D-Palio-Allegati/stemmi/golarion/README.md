@@ -79,6 +79,19 @@ Questa serie **non** rende commercializzabile l'arco: vedi `...P2D-PALIO-VERIFIC
 
 ## Come si rigenerano
 
+```bash
+python3 build_golarion_shields.py
+```
+
 Gli scudi Golarion **riusano le figure della serie faerûniana**: il `transform` e il `<path>`
-di ogni icona sono estratti da `../NN-*.svg`. Se cambi un'icona nella serie principale,
-rigenera anche questa, altrimenti le due serie divergono.
+di ogni icona sono estratti da `../NN-*.svg` invece di essere duplicati, quindi le due serie
+non possono divergere sulle figure. Se cambi un'icona nella serie principale, **rigenera anche
+questa**. Non modificare questi otto file a mano: la prossima rigenerazione cancella tutto.
+
+Verifica dopo aver rigenerato:
+
+```bash
+cd .. && python3 tools/measure_shields.py check --wide
+```
+
+Il manuale completo della pipeline è in **`../PROCEDURA.md`**.

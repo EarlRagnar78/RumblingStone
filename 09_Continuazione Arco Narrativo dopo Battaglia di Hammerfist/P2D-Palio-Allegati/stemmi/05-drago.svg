@@ -13,7 +13,7 @@
     <path d="M127 124 q12 12 12 24" fill="none" stroke="#7b52c0" stroke-width="3" stroke-dasharray="3 3"/>
   </g>
   <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="none" stroke="#7b52c0" stroke-width="6"/>
-  <rect x="22" y="182" width="156" height="26" rx="4" fill="#101a38" opacity="0.85"/>
-  <text x="100" y="200" font-family="Georgia,serif" font-size="11" fill="#c7d0de" text-anchor="middle" font-style="italic">Il cuore che arde parla in fiamme</text>
-  <text x="100" y="14" font-family="Georgia,serif" font-size="12" fill="#1b2a5a" text-anchor="middle" font-weight="bold">IL DRAGO · Mystra</text>
+  <rect x="17" y="182" width="166" height="26" rx="4" fill="#101a38" opacity="0.85"/>
+  <text x="100" y="200" font-family="Georgia,&quot;Liberation Serif&quot;,&quot;DejaVu Serif&quot;,serif" font-size="11" fill="#c7d0de" text-anchor="middle" font-style="italic" textLength="148.8" lengthAdjust="spacingAndGlyphs">Il cuore che arde parla in fiamme</text>
+  <text x="100" y="14" font-family="Georgia,&quot;Liberation Serif&quot;,&quot;DejaVu Serif&quot;,serif" font-size="12" fill="#1b2a5a" text-anchor="middle" font-weight="bold" textLength="107.0" lengthAdjust="spacingAndGlyphs">IL DRAGO · Mystra</text>
 </svg>

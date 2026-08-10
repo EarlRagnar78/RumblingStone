@@ -12,7 +12,7 @@
     <g transform="translate(141,163)" fill="#dfa93b" stroke="#8a6416" stroke-width="1"><path d="M0 -16 L4.5 -4.5 L16 -4.5 L6.5 3 L10 15 L0 7.5 L-10 15 L-6.5 3 L-16 -4.5 L-4.5 -4.5 Z"/></g>
   </g>
   <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="none" stroke="#7b52c0" stroke-width="6"/>
-  <rect x="22" y="182" width="156" height="26" rx="4" fill="#1a1030" opacity="0.85"/>
-  <text x="100" y="200" font-family="Georgia,serif" font-size="11" fill="#d8ccf0" text-anchor="middle" font-style="italic">Il cuore che arde parla in fiamme</text>
-  <text x="100" y="14" font-family="Georgia,serif" font-size="12" fill="#7b52c0" text-anchor="middle" font-weight="bold">IL DRAGO · Nethys</text>
+  <rect x="17" y="182" width="166" height="26" rx="4" fill="#1a1030" opacity="0.85"/>
+  <text x="100" y="200" font-family="Georgia,&quot;Liberation Serif&quot;,&quot;DejaVu Serif&quot;,serif" font-size="11" fill="#d8ccf0" text-anchor="middle" font-style="italic" textLength="148.8" lengthAdjust="spacingAndGlyphs">Il cuore che arde parla in fiamme</text>
+  <text x="100" y="14" font-family="Georgia,&quot;Liberation Serif&quot;,&quot;DejaVu Serif&quot;,serif" font-size="12" fill="#7b52c0" text-anchor="middle" font-weight="bold" textLength="105.0" lengthAdjust="spacingAndGlyphs">IL DRAGO · Nethys</text>
 </svg>

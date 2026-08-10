@@ -257,6 +257,11 @@ livrea — quindi **un `<path>` incollato lì dentro eredita il colore giusto se
 modifiche**. Le icone game-icons hanno `viewBox="0 0 512 512"`: va scartato il riquadro di
 fondo `M0 0h512v512H0z` e ricalcolato il `transform` di scala.
 
+**Manuale completo della pipeline**: `P2D-Palio-Allegati/stemmi/PROCEDURA.md` — anatomia
+dello scudo, calcolo di scala e posizione delle icone, tecnica delle dorature, contratto del
+cartiglio, e i comandi di verifica (`tools/measure_shields.py`, `tools/build_armorial.py`,
+`golarion/build_golarion_shields.py`).
+
 ## Serie alternativa — Golarion / Pathfinder
 
 `P2D-Palio-Allegati/stemmi/golarion/` contiene gli **stessi otto scudi** con il pantheon di

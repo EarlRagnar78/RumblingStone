@@ -47,6 +47,28 @@ scudo, le livree e i loro codici colore, i cartigli dei motti, e i simboli faer�
 sovrapposti — moneta di Waukeen, guanto di Torm, stella di Mystra, disco di Shar, falce di
 Selûne, catene spezzate dell'Istrice, corno dorato dell'Unicorno.
 
+> Il manuale di manutenzione completo — anatomia dello scudo, come si incastona un'icona,
+> come si dora una parte, come si verifica — è in **`PROCEDURA.md`**, in questa cartella.
+
+## Contratto del cartiglio e dei testi
+
+Su tutti e 16 gli scudi — serie faerûniana e Golarion — il cartiglio del motto è
+**identico e simmetrico**: `x="17" width="166"`, cioè da filo a filo del bordo esterno
+dello scudo, con lo stesso margine a destra e a sinistra.
+
+Motto e titolo portano **`textLength` + `lengthAdjust="spacingAndGlyphs"`**: il renderer è
+obbligato a disegnarli entro quella misura **qualunque font trovi**. Serve perché il font
+richiesto (`Georgia`) spesso non è installato, e i ripieghi sono più larghi: senza il
+vincolo il motto usciva dal cartiglio e finiva illeggibile sul campo dello scudo.
+
+⚠️ **Se cambi il testo di un motto o di un titolo, ricalcola il suo `textLength`** — la
+misura corrente è la larghezza naturale del testo attuale. Lasciare il valore vecchio con un
+testo più lungo lo comprime, con uno più corto lo stira.
+
+I valori sono in `<text ... textLength="...">`; il massimo utile è **150** per il motto
+(cartiglio 166 meno 8 px di respiro per lato) e **176** per il titolo, che non deve uscire
+dalla tela di 200.
+
 ## Come sostituire una figura
 
 In ogni SVG la figura vive fra i marcatori `<!-- FIGURA … -->` e `<!-- /FIGURA -->`. Il

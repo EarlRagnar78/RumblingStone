@@ -14,7 +14,7 @@
     <!-- /FIGURA -->
   </g>
   <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="none" stroke="#123a5c" stroke-width="6"/>
-  <rect x="18" y="182" width="164" height="26" rx="4" fill="#0c2a3e" opacity="0.85"/>
-  <text x="100" y="200" font-family="Georgia,serif" font-size="10.5" fill="#cfe0d6" text-anchor="middle" font-style="italic">Il cielo mi colora, il fiume mi arma</text>
-  <text x="100" y="14" font-family="Georgia,serif" font-size="11.5" fill="#123a5c" text-anchor="middle" font-weight="bold">L'ONDA · Valkur/Selûne</text>
+  <rect x="17" y="182" width="166" height="26" rx="4" fill="#0c2a3e" opacity="0.85"/>
+  <text x="100" y="200" font-family="Georgia,&quot;Liberation Serif&quot;,&quot;DejaVu Serif&quot;,serif" font-size="10.5" fill="#cfe0d6" text-anchor="middle" font-style="italic" textLength="148.6" lengthAdjust="spacingAndGlyphs">Il cielo mi colora, il fiume mi arma</text>
+  <text x="100" y="14" font-family="Georgia,&quot;Liberation Serif&quot;,&quot;DejaVu Serif&quot;,serif" font-size="11.5" fill="#123a5c" text-anchor="middle" font-weight="bold" textLength="123.0" lengthAdjust="spacingAndGlyphs">L'ONDA · Valkur/Selûne</text>
 </svg>

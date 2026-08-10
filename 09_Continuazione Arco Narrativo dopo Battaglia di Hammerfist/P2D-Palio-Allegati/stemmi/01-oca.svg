@@ -11,10 +11,10 @@
     </g>
     <!-- /FIGURA -->
     <!-- moneta di Waukeen -->
-    <circle cx="48" cy="158" r="13" fill="#e3b44c" stroke="#7a5215" stroke-width="2"/><text x="48" y="164" font-family="Georgia,serif" font-size="15" text-anchor="middle" fill="#5a3a12">W</text>
+    <circle cx="48" cy="158" r="13" fill="#e3b44c" stroke="#7a5215" stroke-width="2"/><text x="48" y="164" font-family="Georgia,&quot;Liberation Serif&quot;,&quot;DejaVu Serif&quot;,serif" font-size="15" text-anchor="middle" fill="#5a3a12">W</text>
   </g>
   <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="none" stroke="#f0eada" stroke-width="6"/>
-  <rect x="30" y="182" width="140" height="26" rx="4" fill="#2a1436" opacity="0.82"/>
-  <text x="100" y="200" font-family="Georgia,serif" font-size="12" fill="#e3b44c" text-anchor="middle" font-style="italic">Al suono dell'oro, all'armi</text>
-  <text x="100" y="14" font-family="Georgia,serif" font-size="12" fill="#4a2560" text-anchor="middle" font-weight="bold">L'OCA · Waukeen</text>
+  <rect x="17" y="182" width="166" height="26" rx="4" fill="#2a1436" opacity="0.82"/>
+  <text x="100" y="200" font-family="Georgia,&quot;Liberation Serif&quot;,&quot;DejaVu Serif&quot;,serif" font-size="12" fill="#e3b44c" text-anchor="middle" font-style="italic" textLength="127.0" lengthAdjust="spacingAndGlyphs">Al suono dell'oro, all'armi</text>
+  <text x="100" y="14" font-family="Georgia,&quot;Liberation Serif&quot;,&quot;DejaVu Serif&quot;,serif" font-size="12" fill="#4a2560" text-anchor="middle" font-weight="bold" textLength="96.0" lengthAdjust="spacingAndGlyphs">L'OCA · Waukeen</text>
 </svg>

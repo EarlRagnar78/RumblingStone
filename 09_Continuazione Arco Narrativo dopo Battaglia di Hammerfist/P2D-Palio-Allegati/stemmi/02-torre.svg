@@ -16,7 +16,7 @@
     <path d="M95 146 q5 -6 10 0 v6 h-10 z" fill="#a6242c"/>
   </g>
   <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="none" stroke="#c9d2d8" stroke-width="6"/>
-  <rect x="30" y="182" width="140" height="26" rx="4" fill="#1e262e" opacity="0.82"/>
-  <text x="100" y="200" font-family="Georgia,serif" font-size="12" fill="#dce3e8" text-anchor="middle" font-style="italic">Oltre il ferro, la volontà</text>
-  <text x="100" y="14" font-family="Georgia,serif" font-size="12" fill="#3c4854" text-anchor="middle" font-weight="bold">LA TORRE · Torm/Tempus</text>
+  <rect x="17" y="182" width="166" height="26" rx="4" fill="#1e262e" opacity="0.82"/>
+  <text x="100" y="200" font-family="Georgia,&quot;Liberation Serif&quot;,&quot;DejaVu Serif&quot;,serif" font-size="12" fill="#dce3e8" text-anchor="middle" font-style="italic" textLength="115.4" lengthAdjust="spacingAndGlyphs">Oltre il ferro, la volontà</text>
+  <text x="100" y="14" font-family="Georgia,&quot;Liberation Serif&quot;,&quot;DejaVu Serif&quot;,serif" font-size="12" fill="#3c4854" text-anchor="middle" font-weight="bold" textLength="143.0" lengthAdjust="spacingAndGlyphs">LA TORRE · Torm/Tempus</text>
 </svg>

@@ -14,7 +14,7 @@
     <g transform="translate(150 156)" fill="#101216" stroke="#74d98a" stroke-width="1.4"><path d="M-13 -9 q13 -5 26 0 q1 12 -5 17 q-8 5 -16 0 q-6 -5 -5 -17z"/><ellipse cx="-6" cy="-1" rx="3.2" ry="2.2" fill="#74d98a" stroke="none"/><ellipse cx="6" cy="-1" rx="3.2" ry="2.2" fill="#74d98a" stroke="none"/></g>
   </g>
   <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="none" stroke="#23272b" stroke-width="6"/>
-  <rect x="30" y="182" width="140" height="26" rx="4" fill="#14171a" opacity="0.85"/>
-  <text x="100" y="200" font-family="Georgia,serif" font-size="12" fill="#74d98a" text-anchor="middle" font-style="italic">Nell'ombra mi rivolto</text>
-  <text x="100" y="14" font-family="Georgia,serif" font-size="12" fill="#23272b" text-anchor="middle" font-weight="bold">IL BRUCO · Norgorber</text>
+  <rect x="17" y="182" width="166" height="26" rx="4" fill="#14171a" opacity="0.85"/>
+  <text x="100" y="200" font-family="Georgia,&quot;Liberation Serif&quot;,&quot;DejaVu Serif&quot;,serif" font-size="12" fill="#74d98a" text-anchor="middle" font-style="italic" textLength="104.9" lengthAdjust="spacingAndGlyphs">Nell'ombra mi rivolto</text>
+  <text x="100" y="14" font-family="Georgia,&quot;Liberation Serif&quot;,&quot;DejaVu Serif&quot;,serif" font-size="12" fill="#23272b" text-anchor="middle" font-weight="bold" textLength="124.0" lengthAdjust="spacingAndGlyphs">IL BRUCO · Norgorber</text>
 </svg>

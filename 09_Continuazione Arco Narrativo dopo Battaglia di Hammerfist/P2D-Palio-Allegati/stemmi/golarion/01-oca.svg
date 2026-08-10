@@ -12,7 +12,7 @@
     <g transform="translate(44 150)" fill="#dfa93b" stroke="#8a6416" stroke-width="1.5"><circle cx="0" cy="-10" r="7" fill="none" stroke-width="4"/><rect x="-2.5" y="-4" width="5" height="26"/><rect x="-2.5" y="12" width="11" height="4.5"/><rect x="-2.5" y="19" width="9" height="4.5"/></g>
   </g>
   <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="none" stroke="#8a6416" stroke-width="6"/>
-  <rect x="30" y="182" width="140" height="26" rx="4" fill="#3a2c12" opacity="0.85"/>
-  <text x="100" y="200" font-family="Georgia,serif" font-size="12" fill="#dfa93b" text-anchor="middle" font-style="italic">Al suono dell'oro, all'armi</text>
-  <text x="100" y="14" font-family="Georgia,serif" font-size="12" fill="#22406e" text-anchor="middle" font-weight="bold">L'OCA · Abadar</text>
+  <rect x="17" y="182" width="166" height="26" rx="4" fill="#3a2c12" opacity="0.85"/>
+  <text x="100" y="200" font-family="Georgia,&quot;Liberation Serif&quot;,&quot;DejaVu Serif&quot;,serif" font-size="12" fill="#dfa93b" text-anchor="middle" font-style="italic" textLength="127.0" lengthAdjust="spacingAndGlyphs">Al suono dell'oro, all'armi</text>
+  <text x="100" y="14" font-family="Georgia,&quot;Liberation Serif&quot;,&quot;DejaVu Serif&quot;,serif" font-size="12" fill="#22406e" text-anchor="middle" font-weight="bold" textLength="87.0" lengthAdjust="spacingAndGlyphs">L'OCA · Abadar</text>
 </svg>

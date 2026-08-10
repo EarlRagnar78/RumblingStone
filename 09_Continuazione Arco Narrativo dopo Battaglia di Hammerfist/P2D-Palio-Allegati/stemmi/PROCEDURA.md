@@ -178,6 +178,19 @@ python3 -c "import xml.etree.ElementTree as ET,glob; [ET.parse(f) for f in glob.
 python3 tools/build_armorial.py /tmp/armoriale.html
 ```
 
+**Controllo di riproducibilità** — rigenera la serie Golarion e verifica che non cambi
+nulla. Se cambia, il generatore e i file committati sono andati alla deriva: qualcuno ha
+modificato gli SVG a mano senza riportare la modifica nello script, e la prossima
+rigenerazione la cancellerà.
+
+```bash
+python3 golarion/build_golarion_shields.py
+git diff --quiet -- 'golarion/*.svg' && echo "✓ riproducibile" || echo "✗ deriva"
+```
+
+> È già successo: il cartiglio e il `textLength` erano stati applicati agli SVG con una
+> passata diretta, ma non al generatore. Rigenerare li avrebbe annullati tutti e otto.
+
 Poi rigenera il booklet, che incorpora gli SVG inline:
 
 ```bash

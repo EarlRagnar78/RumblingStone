@@ -21,9 +21,22 @@ def figura(shield):
     d  = re.search(r'<path d="([^"]+)"', m.group(2)).group(1)
     return tr, d, m.group(1).strip()
 
+# Cartiglio identico su tutti gli scudi, da filo a filo del bordo esterno (PROCEDURA.md §5).
+BX, BW = 17, 166
+FONT = 'Georgia,&quot;Liberation Serif&quot;,&quot;DejaVu Serif&quot;,serif'
+
+# Larghezze naturali misurate con tools/measure_shields.py. Bloccano il testo dentro il
+# cartiglio con qualunque font: senza, i ripieghi più larghi di Georgia lo facevano uscire.
+# ⚠️ Se cambi un motto o un titolo, rimisura e aggiorna qui.
+TL_MOTTO = {"01-oca":127.0,"02-torre":115.4,"03-bruco":104.9,"04-istrice":116.0,
+            "05-drago":148.8,"06-civetta":119.7,"07-unicorno":140.4,"08-onda":148.6}
+TL_TITOLO = {"01-oca":87.0,"02-torre":143.0,"03-bruco":124.0,"04-istrice":136.0,
+             "05-drago":105.0,"06-civetta":127.0,"07-unicorno":123.0,"08-onda":118.0}
+
+
 def svg(out, label, livrea, cid, campo, campo2, bordo, fig_fill, shield_src,
         defs="", sotto="", sopra="", banner_fill="#111", motto_fill="#eee",
-        motto="", titolo="", titolo_fill="#333", bx=26, bw=148, bfs=11.5, tfs=12):
+        motto="", titolo="", titolo_fill="#333", bfs=11.5, tfs=12):
     tr, d, icona = figura(shield_src)
     dx = f'<defs><clipPath id="{cid}"><path d="{SHIELD}"/></clipPath>{defs}</defs>'
     (GOL / out).write_text(f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240" role="img" aria-label="{label}">
@@ -37,9 +50,9 @@ def svg(out, label, livrea, cid, campo, campo2, bordo, fig_fill, shield_src,
     <!-- /FIGURA -->
 {sopra}  </g>
   <path d="{SHIELD}" fill="none" stroke="{bordo}" stroke-width="6"/>
-  <rect x="{bx}" y="182" width="{bw}" height="26" rx="4" fill="{banner_fill}" opacity="0.85"/>
-  <text x="100" y="200" font-family="Georgia,serif" font-size="{bfs}" fill="{motto_fill}" text-anchor="middle" font-style="italic">{motto}</text>
-  <text x="100" y="14" font-family="Georgia,serif" font-size="{tfs}" fill="{titolo_fill}" text-anchor="middle" font-weight="bold">{titolo}</text>
+  <rect x="{BX}" y="182" width="{BW}" height="26" rx="4" fill="{banner_fill}" opacity="0.85"/>
+  <text x="100" y="200" font-family="{FONT}" font-size="{bfs}" fill="{motto_fill}" text-anchor="middle" font-style="italic" textLength="{TL_MOTTO[out[:-4]]:.1f}" lengthAdjust="spacingAndGlyphs">{motto}</text>
+  <text x="100" y="14" font-family="{FONT}" font-size="{tfs}" fill="{titolo_fill}" text-anchor="middle" font-weight="bold" textLength="{TL_TITOLO[out[:-4]]:.1f}" lengthAdjust="spacingAndGlyphs">{titolo}</text>
 </svg>
 """)
     print("OK", out)
@@ -60,7 +73,7 @@ svg("01-oca.svg", "Stemma dell'Oca — The Golden Plume (Abadar)",
           '<rect x="-2.5" y="-4" width="5" height="26"/><rect x="-2.5" y="12" width="11" height="4.5"/>'
           '<rect x="-2.5" y="19" width="9" height="4.5"/></g>\n',
     banner_fill="#3a2c12", motto_fill=ORO, motto="Al suono dell'oro, all'armi",
-    titolo="L'OCA · Abadar", titolo_fill="#22406e", bx=30, bw=140, bfs=12)
+    titolo="L'OCA · Abadar", titolo_fill="#22406e", bfs=12)
 
 # 2 · GORUM + IOMEDAE — ferro e spada raggiante. Torre muragliata d'argento.
 tr, d, _ = figura("02-torre.svg")
@@ -82,7 +95,7 @@ svg("02-torre.svg", "Stemma della Torre — The Iron Bastion (Gorum/Iomedae)",
           '<circle cx="0" cy="0" r="11" fill="none" stroke-width="2.5" stroke-dasharray="3 3"/>'
           '<path d="M0 -9 L2 -4 V7 h3 l-5 6 -5 -6 h3 V-4 Z"/></g>\n',
     banner_fill="#241a14", motto_fill="#e4e9ec", motto="Oltre il ferro, la volontà",
-    titolo="LA TORRE · Gorum/Iomedae", titolo_fill="#5a4438", bx=30, bw=140, bfs=12, tfs=11)
+    titolo="LA TORRE · Gorum/Iomedae", titolo_fill="#5a4438", bfs=12, tfs=11)
 
 # 3 · NORGORBER — segreti, veleno, omicidio. Maschera nera; il verde-veleno è suo.
 svg("03-bruco.svg", "Stemma del Bruco — The Silver Weft (Norgorber)",
@@ -97,7 +110,7 @@ svg("03-bruco.svg", "Stemma del Bruco — The Silver Weft (Norgorber)",
           '<ellipse cx="-6" cy="-1" rx="3.2" ry="2.2" fill="#74d98a" stroke="none"/>'
           '<ellipse cx="6" cy="-1" rx="3.2" ry="2.2" fill="#74d98a" stroke="none"/></g>\n',
     banner_fill="#14171a", motto_fill="#74d98a", motto="Nell'ombra mi rivolto",
-    titolo="IL BRUCO · Norgorber", titolo_fill="#23272b", bx=30, bw=140, bfs=12)
+    titolo="IL BRUCO · Norgorber", titolo_fill="#23272b", bfs=12)
 
 # 4 · SARENRAE + ERASTIL — redenzione e comunità. Catene sciolte in oro solare, ankh.
 svg("04-istrice.svg", "Stemma dell'Istrice — The Quill-Wood Refuge (Sarenrae/Erastil)",
@@ -112,7 +125,7 @@ svg("04-istrice.svg", "Stemma dell'Istrice — The Quill-Wood Refuge (Sarenrae/E
           '    <g transform="translate(42 52)" fill="none" stroke="#e0a83c" stroke-width="3.4" stroke-linecap="round">'
           '<ellipse cx="0" cy="-7" rx="6" ry="7.5"/><path d="M0 0 V16 M-7 6 H7"/></g>\n',
     banner_fill="#1a2a1e", motto_fill="#efe6cf", motto="Pungo solo chi mi assale",
-    titolo="L'ISTRICE · Sarenrae/Erastil", titolo_fill="#2e4a34", bx=22, bw=156, tfs=10.5)
+    titolo="L'ISTRICE · Sarenrae/Erastil", titolo_fill="#2e4a34", tfs=10.5)
 
 # 5 · NETHYS — la dualità: il campo stesso è la sua faccia mezza nera e mezza bianca.
 svg("05-drago.svg", "Stemma del Drago — The Spell-Wyrm Spires (Nethys)",
@@ -122,7 +135,7 @@ svg("05-drago.svg", "Stemma del Drago — The Spell-Wyrm Spires (Nethys)",
           '    <path d="M127 124 q12 12 12 24" fill="none" stroke="#dfa93b" stroke-width="3" stroke-dasharray="3 3"/>\n'
           f'    <g transform="translate(141,163)" fill="{ORO}" stroke="{ORO_S}" stroke-width="1"><path d="{STAR}"/></g>\n',
     banner_fill="#1a1030", motto_fill="#d8ccf0", motto="Il cuore che arde parla in fiamme",
-    titolo="IL DRAGO · Nethys", titolo_fill="#7b52c0", bx=22, bw=156, bfs=11)
+    titolo="IL DRAGO · Nethys", titolo_fill="#7b52c0", bfs=11)
 
 # 6 · CALISTRIA — vendetta, inganno, spie. Disco a fasce di vespa al posto del disco di Shar.
 svg("06-civetta.svg", "Stemma della Civetta — The Whispering Shadows (Calistria)",
@@ -145,7 +158,7 @@ svg("07-unicorno.svg", "Stemma dell'Unicorno — The Gilded Horn (Shelyn)",
     sopra='    <!-- il corno dorato che dà il nome al distretto -->\n'
           f'    <path d="M113 72 L156 44" fill="none" stroke="{ORO}" stroke-width="5" stroke-linecap="round"/>\n',
     banner_fill="#3d1424", motto_fill=ORO, motto="Ferisce e sana il corno che porto",
-    titolo="L'UNICORNO · Shelyn", titolo_fill="#b8496e", bx=20, bw=160, bfs=10.5)
+    titolo="L'UNICORNO · Shelyn", titolo_fill="#b8496e", bfs=10.5)
 
 # 8 · GOZREH + DESNA — mare/cielo e luna/stelle. Falce e tre stelle di Desna.
 svg("08-onda.svg", "Stemma dell'Onda — The Tidal Crest (Gozreh/Desna)",
@@ -162,4 +175,4 @@ svg("08-onda.svg", "Stemma dell'Onda — The Tidal Crest (Gozreh/Desna)",
           f'<g transform="translate(36,74) scale(0.24)"><path d="{STAR}"/></g>'
           f'<g transform="translate(66,66) scale(0.19)"><path d="{STAR}"/></g></g>\n',
     banner_fill="#0c2a3e", motto_fill="#cfe0d6", motto="Il cielo mi colora, il fiume mi arma",
-    titolo="L'ONDA · Gozreh/Desna", titolo_fill="#123a5c", bx=18, bw=164, bfs=10.5, tfs=11)
+    titolo="L'ONDA · Gozreh/Desna", titolo_fill="#123a5c", bfs=10.5, tfs=11)

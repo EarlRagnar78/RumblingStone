@@ -40,6 +40,10 @@ skills/
 ├── npc-villain-boosting/   # when/whether/how to boost PNGs, villains, monsters
 └── dnd-35-rules/           # legacy meta-router (points to the skills above)
 
+STANDALONE-Il-Drappo-di-Tarsilia/  # self-contained PF1e module set in Golarion —
+           # shares the race SYSTEM with arc 09's Palio and nothing else
+           # (no Faerûn, no RHoD, no campaign PCs). Start at 00-HUB-E-QUICKSTART-DM.md
+
 plans/     # work-plan archive: INDEX.md (status + % + gates), CHANGELOG.md, adr/
 scripts/   # DM automation — single entrypoint: python3 scripts/dm.py
 converters/ # content converters (pdf→md, html→md, img→webp) — NOT the DM automation

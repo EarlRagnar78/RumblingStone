@@ -1,0 +1,315 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1884" height="1881" viewBox="0 0 1884 1881" font-family="Georgia, 'Palatino Linotype', 'Times New Roman', serif">
+<defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="11" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0.36 0 0 0 0 0.28 0 0 0 0 0.16 0 0 0 0.18 0"/><feComposite operator="over" in2="SourceGraphic"/></filter>
+<filter id="rough" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.6"/></filter>
+<filter id="softblur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.6"/></filter>
+<filter id="aoblur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3.2"/></filter>
+<filter id="mottle" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" seed="4" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0.24 0 0 0 0 0.18 0 0 0 0 0.10 0 0 0 0.5 0"/></filter>
+<radialGradient id="vign" cx="0.5" cy="0.45" r="0.75"><stop offset="0.62" stop-color="#3b2e1e" stop-opacity="0"/><stop offset="1" stop-color="#3b2e1e" stop-opacity="0.16"/></radialGradient>
+<clipPath id="clipgrid"><rect x="46" y="80" width="1792" height="1288"/></clipPath>
+<clipPath id="clipheavy"><path d="M74 571.19L77.81 561.99L79.99 559.81L89.19 556L170.81 556L180.01 559.81L182.19 561.99L186 571.19L186 792.81L182.19 802.01L180.01 804.19L170.81 808L89.19 808L79.99 804.19L77.81 802.01L74 792.81ZM74 1243.19L77.81 1233.99L79.99 1231.81L89.19 1228L254.81 1228L264.01 1231.81L266.19 1233.99L270 1243.19L270 1352.81L266.19 1362.01L264.01 1364.19L254.81 1368L89.19 1368L79.99 1364.19L77.81 1362.01L74 1352.81ZM550 487.19L553.81 477.99L555.99 475.81L565.19 472L1318.81 472L1328.01 475.81L1330.19 477.99L1334 487.19L1334 960.81L1330.19 970.01L1328.01 972.19L1318.81 976L565.19 976L555.99 972.19L553.81 970.01L550 960.81ZM606 205.58L609.81 197.99L611.99 195.81L621.19 192L1178.81 192L1188.01 195.81L1190.19 197.99L1194 205.58L1194 206.42L1190.19 214.01L1188.01 216.19L1178.81 220L621.19 220L611.99 216.19L609.81 214.01L606 206.42ZM1166 1271.19L1169.81 1261.99L1171.99 1259.81L1181.19 1256L1626.81 1256L1636.01 1259.81L1638.19 1261.99L1642 1271.19L1642 1352.81L1638.19 1362.01L1636.01 1364.19L1626.81 1368L1181.19 1368L1171.99 1364.19L1169.81 1362.01L1166 1352.81Z" clip-rule="evenodd"/></clipPath>
+<pattern id="t_earth" width="28" height="28" patternUnits="userSpaceOnUse"><rect width="28" height="28" fill="#b08d68"/><circle cx="6" cy="6" r="1.1" fill="#93714e"/><circle cx="18" cy="11" r="0.9" fill="#93714e"/><circle cx="24" cy="22" r="1.2" fill="#93714e"/><circle cx="9" cy="20" r="1" fill="#c8a87f"/><circle cx="22" cy="4" r="0.8" fill="#c8a87f"/><path d="M3 15q4-1.5 8 0" stroke="#a17d59" stroke-width="0.8" fill="none"/></pattern>
+<pattern id="t_floor" width="28" height="28" patternUnits="userSpaceOnUse"><rect width="28" height="28" fill="#d8cdb4"/><path d="M0 0.5h28M0 14.5h28M7 0.5v14M21 14.5v14" stroke="#b4a789" stroke-width="1"/><circle cx="15" cy="8" r="2.4" fill="#cfc3a9" fill-opacity="0.6"/><circle cx="6" cy="22" r="2" fill="#cfc3a9" fill-opacity="0.5"/></pattern>
+<pattern id="t_struct" width="28" height="28" patternUnits="userSpaceOnUse"><rect width="28" height="28" fill="#6b5b47"/><path d="M-2 6l8-8M-2 14l16-16M-2 22l24-24M6 30l24-24M14 30l16-16M22 30l8-8" stroke="#5a4b39" stroke-width="0.9"/><path d="M0 14.5h28" stroke="#7d6c56" stroke-width="0.8"/></pattern>
+<pattern id="t_wall" width="28" height="28" patternUnits="userSpaceOnUse"><rect width="28" height="28" fill="#3f3931"/><path d="M-2 6l8-8M-2 14l16-16M-2 22l24-24M-2 30l32-32M6 30l24-24M14 30l16-16M22 30l8-8" stroke="#2b2620" stroke-width="1"/><circle cx="8" cy="18" r="1" fill="#554d42"/><circle cx="21" cy="7" r="0.9" fill="#554d42"/></pattern>
+<symbol id="pr_bell" viewBox="0 0 28 28"><path d="M14 5c4 0 6 3 6 7 0 3 .8 4.6 2 5.6H6c1.2-1 2-2.6 2-5.6 0-4 2-7 6-7z" fill="#c9a13b" stroke="#6e5312" stroke-width="1.1"/><circle cx="14" cy="20.4" r="1.7" fill="#6e5312"/><circle cx="14" cy="4.6" r="1.3" fill="#6e5312"/><path d="M10.5 8.5q-1.3 2-1.3 4.5" stroke="#e8cd7e" stroke-width="0.9" fill="none"/></symbol>
+<symbol id="pr_bridge" viewBox="0 0 28 28"><rect x="3" y="9" width="22" height="10" fill="#8a6a42" stroke="#2f2415" stroke-width="1.2"/><path d="M7 9v10M11 9v10M15 9v10M19 9v10M23 9v10" stroke="#6e4b26" stroke-width="1"/><path d="M3 9h22M3 19h22" stroke="#4f3a24" stroke-width="1.8"/></symbol>
+<symbol id="pr_crate" viewBox="0 0 28 28"><rect x="6" y="6" width="16" height="16" fill="#a5814f" stroke="#2f2415" stroke-width="1.2"/><rect x="8.2" y="8.2" width="11.6" height="11.6" fill="none" stroke="#7e5f36" stroke-width="1"/><path d="M8.2 8.2l11.6 11.6M19.8 8.2L8.2 19.8" stroke="#7e5f36" stroke-width="1"/></symbol>
+<symbol id="pr_door" viewBox="0 0 28 28"><rect x="5" y="9.5" width="18" height="9" rx="1.4" fill="#8a6032" stroke="#2f2415" stroke-width="1.2"/><path d="M9.5 9.5v9M14 9.5v9M18.5 9.5v9" stroke="#6e4b26" stroke-width="1"/><circle cx="7.2" cy="14" r="0.9" fill="#2f2415"/><circle cx="20.8" cy="14" r="0.9" fill="#2f2415"/></symbol>
+<symbol id="pr_target" viewBox="0 0 28 28"><circle cx="14" cy="14" r="9" fill="#ded5c0" stroke="#2f2415" stroke-width="1.1"/><circle cx="14" cy="14" r="6" fill="#c0392b"/><circle cx="14" cy="14" r="3.6" fill="#ded5c0"/><circle cx="14" cy="14" r="1.6" fill="#c0392b"/></symbol>
+<symbol id="pr_temple" viewBox="0 0 28 28"><rect x="5" y="6" width="18" height="16" fill="#b3a689" stroke="#2f2415" stroke-width="1.2"/><rect x="9" y="10" width="10" height="8" fill="#9c8f74" stroke="#6f6350" stroke-width="0.8"/><g fill="#6f6350"><circle cx="7.4" cy="8" r="1"/><circle cx="11.8" cy="8" r="1"/><circle cx="16.2" cy="8" r="1"/><circle cx="20.6" cy="8" r="1"/><circle cx="7.4" cy="20" r="1"/><circle cx="11.8" cy="20" r="1"/><circle cx="16.2" cy="20" r="1"/><circle cx="20.6" cy="20" r="1"/><circle cx="7.4" cy="14" r="1"/><circle cx="20.6" cy="14" r="1"/></g></symbol>
+<radialGradient id="g_1d6fd8" cx="0.35" cy="0.3" r="0.8"><stop offset="0" stop-color="#83b0ea"/><stop offset="0.55" stop-color="#1d6fd8"/><stop offset="1" stop-color="#13488c"/></radialGradient>
+<radialGradient id="g_9d4edd" cx="0.35" cy="0.3" r="0.8"><stop offset="0" stop-color="#c99eec"/><stop offset="0.55" stop-color="#9d4edd"/><stop offset="1" stop-color="#663390"/></radialGradient>
+<radialGradient id="g_d62828" cx="0.35" cy="0.3" r="0.8"><stop offset="0" stop-color="#e88989"/><stop offset="0.55" stop-color="#d62828"/><stop offset="1" stop-color="#8b1a1a"/></radialGradient>
+</defs>
+<rect width="1884" height="1881" fill="#efe4c9" filter="url(#grain)"/>
+<rect width="1884" height="1881" fill="url(#vign)"/>
+<rect x="5" y="5" width="1874" height="1871" fill="none" stroke="#3b2e1e" stroke-width="0.8" opacity="0.8"/>
+<rect x="9" y="9" width="1866" height="1863" fill="none" stroke="#3b2e1e" stroke-width="2" opacity="0.85"/>
+<text x="46" y="34" font-size="19" font-weight="bold" fill="#3b2e1e" letter-spacing="0.5">Tarsilia — la Ruota (pista del Drappo)</text>
+<text x="46" y="51" font-size="11" font-style="italic" fill="#7a6a50">64×46 quadretti · scala 1,5 m/quadretto</text>
+<rect x="41" y="75" width="1802" height="1298" fill="#e6d9b8" stroke="#3b2e1e" stroke-width="1.6"/>
+<g clip-path="url(#clipgrid)">
+<path d="M214 235.19L217.81 225.99L219.99 223.81L229.19 220L1654.81 220L1664.01 223.81L1666.19 225.99L1670 235.19L1670 1212.81L1666.19 1222.01L1664.01 1224.19L1654.81 1228L229.19 1228L219.99 1224.19L217.81 1222.01L214 1212.81ZM565.19 472L555.99 475.81L553.81 477.99L550 487.19L550 960.81L553.81 970.01L555.99 972.19L565.19 976L1318.81 976L1328.01 972.19L1330.19 970.01L1334 960.81L1334 487.19L1330.19 477.99L1328.01 475.81L1318.81 472Z" fill="url(#t_earth)" fill-rule="evenodd" stroke="url(#t_earth)" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M46 95.19L49.81 85.99L51.99 83.81L61.19 80L1822.81 80L1832.01 83.81L1834.19 85.99L1838 95.19L1838 1352.81L1834.19 1362.01L1832.01 1364.19L1822.81 1368L1657.19 1368L1647.99 1364.19L1645.81 1362.01L1642 1352.81L1642 1271.19L1638.19 1261.99L1636.01 1259.81L1626.81 1256L1181.19 1256L1171.99 1259.81L1169.81 1261.99L1166 1271.19L1166 1352.81L1162.19 1362.01L1160.01 1364.19L1150.81 1368L285.19 1368L275.99 1364.19L273.81 1362.01L270 1352.81L270 1243.19L273.81 1233.99L275.99 1231.81L285.19 1228L1654.81 1228L1664.01 1224.19L1666.19 1222.01L1670 1212.81L1670 235.19L1666.19 225.99L1664.01 223.81L1654.81 220L1209.19 220L1199.99 216.19L1197.81 214.01L1194 206.42L1194 205.58L1190.19 197.99L1188.01 195.81L1178.81 192L621.19 192L611.99 195.81L609.81 197.99L606 205.58L606 206.42L602.19 214.01L600.01 216.19L590.81 220L229.19 220L219.99 223.81L217.81 225.99L214 235.19L214 1212.81L210.19 1222.01L208.01 1224.19L198.81 1228L89.19 1228L79.99 1231.81L77.81 1233.99L74 1243.19L74 1352.81L70.19 1362.01L68.01 1364.19L60.42 1368L59.58 1368L51.99 1364.19L49.81 1362.01L46 1352.81ZM89.19 556L79.99 559.81L77.81 561.99L74 571.19L74 792.81L77.81 802.01L79.99 804.19L89.19 808L170.81 808L180.01 804.19L182.19 802.01L186 792.81L186 571.19L182.19 561.99L180.01 559.81L170.81 556Z" fill="url(#t_floor)" fill-rule="evenodd" stroke="url(#t_floor)" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M74 571.19L77.81 561.99L79.99 559.81L89.19 556L170.81 556L180.01 559.81L182.19 561.99L186 571.19L186 792.81L182.19 802.01L180.01 804.19L170.81 808L89.19 808L79.99 804.19L77.81 802.01L74 792.81ZM74 1243.19L77.81 1233.99L79.99 1231.81L89.19 1228L254.81 1228L264.01 1231.81L266.19 1233.99L270 1243.19L270 1352.81L266.19 1362.01L264.01 1364.19L254.81 1368L89.19 1368L79.99 1364.19L77.81 1362.01L74 1352.81ZM550 487.19L553.81 477.99L555.99 475.81L565.19 472L1318.81 472L1328.01 475.81L1330.19 477.99L1334 487.19L1334 960.81L1330.19 970.01L1328.01 972.19L1318.81 976L565.19 976L555.99 972.19L553.81 970.01L550 960.81ZM606 205.58L609.81 197.99L611.99 195.81L621.19 192L1178.81 192L1188.01 195.81L1190.19 197.99L1194 205.58L1194 206.42L1190.19 214.01L1188.01 216.19L1178.81 220L621.19 220L611.99 216.19L609.81 214.01L606 206.42ZM1166 1271.19L1169.81 1261.99L1171.99 1259.81L1181.19 1256L1626.81 1256L1636.01 1259.81L1638.19 1261.99L1642 1271.19L1642 1352.81L1638.19 1362.01L1636.01 1364.19L1626.81 1368L1181.19 1368L1171.99 1364.19L1169.81 1362.01L1166 1352.81Z" fill="none" stroke="#241c10" stroke-width="9" opacity="0.22" filter="url(#aoblur)"/>
+<path d="M74 571.19L77.81 561.99L79.99 559.81L89.19 556L170.81 556L180.01 559.81L182.19 561.99L186 571.19L186 792.81L182.19 802.01L180.01 804.19L170.81 808L89.19 808L79.99 804.19L77.81 802.01L74 792.81ZM74 1243.19L77.81 1233.99L79.99 1231.81L89.19 1228L254.81 1228L264.01 1231.81L266.19 1233.99L270 1243.19L270 1352.81L266.19 1362.01L264.01 1364.19L254.81 1368L89.19 1368L79.99 1364.19L77.81 1362.01L74 1352.81ZM550 487.19L553.81 477.99L555.99 475.81L565.19 472L1318.81 472L1328.01 475.81L1330.19 477.99L1334 487.19L1334 960.81L1330.19 970.01L1328.01 972.19L1318.81 976L565.19 976L555.99 972.19L553.81 970.01L550 960.81ZM606 205.58L609.81 197.99L611.99 195.81L621.19 192L1178.81 192L1188.01 195.81L1190.19 197.99L1194 205.58L1194 206.42L1190.19 214.01L1188.01 216.19L1178.81 220L621.19 220L611.99 216.19L609.81 214.01L606 206.42ZM1166 1271.19L1169.81 1261.99L1171.99 1259.81L1181.19 1256L1626.81 1256L1636.01 1259.81L1638.19 1261.99L1642 1271.19L1642 1352.81L1638.19 1362.01L1636.01 1364.19L1626.81 1368L1181.19 1368L1171.99 1364.19L1169.81 1362.01L1166 1352.81Z" fill="#241c10" fill-rule="evenodd" opacity="0.28" filter="url(#softblur)" transform="translate(2.6,3.4)"/>
+<path d="M74 571.19L77.81 561.99L79.99 559.81L89.19 556L170.81 556L180.01 559.81L182.19 561.99L186 571.19L186 792.81L182.19 802.01L180.01 804.19L170.81 808L89.19 808L79.99 804.19L77.81 802.01L74 792.81ZM74 1243.19L77.81 1233.99L79.99 1231.81L89.19 1228L254.81 1228L264.01 1231.81L266.19 1233.99L270 1243.19L270 1352.81L266.19 1362.01L264.01 1364.19L254.81 1368L89.19 1368L79.99 1364.19L77.81 1362.01L74 1352.81ZM550 487.19L553.81 477.99L555.99 475.81L565.19 472L1318.81 472L1328.01 475.81L1330.19 477.99L1334 487.19L1334 960.81L1330.19 970.01L1328.01 972.19L1318.81 976L565.19 976L555.99 972.19L553.81 970.01L550 960.81ZM1166 1271.19L1169.81 1261.99L1171.99 1259.81L1181.19 1256L1626.81 1256L1636.01 1259.81L1638.19 1261.99L1642 1271.19L1642 1352.81L1638.19 1362.01L1636.01 1364.19L1626.81 1368L1181.19 1368L1171.99 1364.19L1169.81 1362.01L1166 1352.81Z" fill="url(#t_struct)" fill-rule="evenodd" stroke="url(#t_struct)" stroke-width="2.4" stroke-linejoin="round"/>
+<path d="M606 205.58L609.81 197.99L611.99 195.81L621.19 192L1178.81 192L1188.01 195.81L1190.19 197.99L1194 205.58L1194 206.42L1190.19 214.01L1188.01 216.19L1178.81 220L621.19 220L611.99 216.19L609.81 214.01L606 206.42Z" fill="url(#t_wall)" fill-rule="evenodd" stroke="url(#t_wall)" stroke-width="2.4" stroke-linejoin="round"/>
+<rect x="46" y="80" width="1792" height="1288" filter="url(#mottle)" opacity="0.35"/>
+<path d="M214 235.19L217.81 225.99L219.99 223.81L229.19 220L1654.81 220L1664.01 223.81L1666.19 225.99L1670 235.19L1670 1212.81L1666.19 1222.01L1664.01 1224.19L1654.81 1228L229.19 1228L219.99 1224.19L217.81 1222.01L214 1212.81ZM565.19 472L555.99 475.81L553.81 477.99L550 487.19L550 960.81L553.81 970.01L555.99 972.19L565.19 976L1318.81 976L1328.01 972.19L1330.19 970.01L1334 960.81L1334 487.19L1330.19 477.99L1328.01 475.81L1318.81 472Z" fill="none" stroke="#7a6a50" stroke-width="0.9" opacity="0.5" stroke-linejoin="round" filter="url(#rough)"/>
+<path d="M46 95.19L49.81 85.99L51.99 83.81L61.19 80L1822.81 80L1832.01 83.81L1834.19 85.99L1838 95.19L1838 1352.81L1834.19 1362.01L1832.01 1364.19L1822.81 1368L1657.19 1368L1647.99 1364.19L1645.81 1362.01L1642 1352.81L1642 1271.19L1638.19 1261.99L1636.01 1259.81L1626.81 1256L1181.19 1256L1171.99 1259.81L1169.81 1261.99L1166 1271.19L1166 1352.81L1162.19 1362.01L1160.01 1364.19L1150.81 1368L285.19 1368L275.99 1364.19L273.81 1362.01L270 1352.81L270 1243.19L273.81 1233.99L275.99 1231.81L285.19 1228L1654.81 1228L1664.01 1224.19L1666.19 1222.01L1670 1212.81L1670 235.19L1666.19 225.99L1664.01 223.81L1654.81 220L1209.19 220L1199.99 216.19L1197.81 214.01L1194 206.42L1194 205.58L1190.19 197.99L1188.01 195.81L1178.81 192L621.19 192L611.99 195.81L609.81 197.99L606 205.58L606 206.42L602.19 214.01L600.01 216.19L590.81 220L229.19 220L219.99 223.81L217.81 225.99L214 235.19L214 1212.81L210.19 1222.01L208.01 1224.19L198.81 1228L89.19 1228L79.99 1231.81L77.81 1233.99L74 1243.19L74 1352.81L70.19 1362.01L68.01 1364.19L60.42 1368L59.58 1368L51.99 1364.19L49.81 1362.01L46 1352.81ZM89.19 556L79.99 559.81L77.81 561.99L74 571.19L74 792.81L77.81 802.01L79.99 804.19L89.19 808L170.81 808L180.01 804.19L182.19 802.01L186 792.81L186 571.19L182.19 561.99L180.01 559.81L170.81 556Z" fill="none" stroke="#7a6a50" stroke-width="0.9" opacity="0.5" stroke-linejoin="round" filter="url(#rough)"/>
+<path d="M74 571.19L77.81 561.99L79.99 559.81L89.19 556L170.81 556L180.01 559.81L182.19 561.99L186 571.19L186 792.81L182.19 802.01L180.01 804.19L170.81 808L89.19 808L79.99 804.19L77.81 802.01L74 792.81ZM74 1243.19L77.81 1233.99L79.99 1231.81L89.19 1228L254.81 1228L264.01 1231.81L266.19 1233.99L270 1243.19L270 1352.81L266.19 1362.01L264.01 1364.19L254.81 1368L89.19 1368L79.99 1364.19L77.81 1362.01L74 1352.81ZM550 487.19L553.81 477.99L555.99 475.81L565.19 472L1318.81 472L1328.01 475.81L1330.19 477.99L1334 487.19L1334 960.81L1330.19 970.01L1328.01 972.19L1318.81 976L565.19 976L555.99 972.19L553.81 970.01L550 960.81ZM1166 1271.19L1169.81 1261.99L1171.99 1259.81L1181.19 1256L1626.81 1256L1636.01 1259.81L1638.19 1261.99L1642 1271.19L1642 1352.81L1638.19 1362.01L1636.01 1364.19L1626.81 1368L1181.19 1368L1171.99 1364.19L1169.81 1362.01L1166 1352.81Z" fill="none" stroke="#241c10" stroke-width="1.8" opacity="0.9" stroke-linejoin="round" filter="url(#rough)"/>
+<path d="M606 205.58L609.81 197.99L611.99 195.81L621.19 192L1178.81 192L1188.01 195.81L1190.19 197.99L1194 205.58L1194 206.42L1190.19 214.01L1188.01 216.19L1178.81 220L621.19 220L611.99 216.19L609.81 214.01L606 206.42Z" fill="none" stroke="#241c10" stroke-width="1.8" opacity="0.9" stroke-linejoin="round" filter="url(#rough)"/>
+</g>
+<path d="M74 80v1288M102 80v1288M130 80v1288M158 80v1288M214 80v1288M242 80v1288M270 80v1288M298 80v1288M354 80v1288M382 80v1288M410 80v1288M438 80v1288M494 80v1288M522 80v1288M550 80v1288M578 80v1288M634 80v1288M662 80v1288M690 80v1288M718 80v1288M774 80v1288M802 80v1288M830 80v1288M858 80v1288M914 80v1288M942 80v1288M970 80v1288M998 80v1288M1054 80v1288M1082 80v1288M1110 80v1288M1138 80v1288M1194 80v1288M1222 80v1288M1250 80v1288M1278 80v1288M1334 80v1288M1362 80v1288M1390 80v1288M1418 80v1288M1474 80v1288M1502 80v1288M1530 80v1288M1558 80v1288M1614 80v1288M1642 80v1288M1670 80v1288M1698 80v1288M1754 80v1288M1782 80v1288M1810 80v1288M1838 80v1288M46 108h1792M46 136h1792M46 164h1792M46 192h1792M46 248h1792M46 276h1792M46 304h1792M46 332h1792M46 388h1792M46 416h1792M46 444h1792M46 472h1792M46 528h1792M46 556h1792M46 584h1792M46 612h1792M46 668h1792M46 696h1792M46 724h1792M46 752h1792M46 808h1792M46 836h1792M46 864h1792M46 892h1792M46 948h1792M46 976h1792M46 1004h1792M46 1032h1792M46 1088h1792M46 1116h1792M46 1144h1792M46 1172h1792M46 1228h1792M46 1256h1792M46 1284h1792M46 1312h1792M46 1368h1792" stroke="#2e2313" stroke-width="0.6" opacity="0.3" fill="none"/>
+<path d="M46 80v1288M186 80v1288M326 80v1288M466 80v1288M606 80v1288M746 80v1288M886 80v1288M1026 80v1288M1166 80v1288M1306 80v1288M1446 80v1288M1586 80v1288M1726 80v1288M46 80h1792M46 220h1792M46 360h1792M46 500h1792M46 640h1792M46 780h1792M46 920h1792M46 1060h1792M46 1200h1792M46 1340h1792" stroke="#2e2313" stroke-width="1.4" opacity="0.48" fill="none"/>
+<g clip-path="url(#clipheavy)"><path d="M74 80v1288M102 80v1288M130 80v1288M158 80v1288M214 80v1288M242 80v1288M270 80v1288M298 80v1288M354 80v1288M382 80v1288M410 80v1288M438 80v1288M494 80v1288M522 80v1288M550 80v1288M578 80v1288M634 80v1288M662 80v1288M690 80v1288M718 80v1288M774 80v1288M802 80v1288M830 80v1288M858 80v1288M914 80v1288M942 80v1288M970 80v1288M998 80v1288M1054 80v1288M1082 80v1288M1110 80v1288M1138 80v1288M1194 80v1288M1222 80v1288M1250 80v1288M1278 80v1288M1334 80v1288M1362 80v1288M1390 80v1288M1418 80v1288M1474 80v1288M1502 80v1288M1530 80v1288M1558 80v1288M1614 80v1288M1642 80v1288M1670 80v1288M1698 80v1288M1754 80v1288M1782 80v1288M1810 80v1288M1838 80v1288M46 108h1792M46 136h1792M46 164h1792M46 192h1792M46 248h1792M46 276h1792M46 304h1792M46 332h1792M46 388h1792M46 416h1792M46 444h1792M46 472h1792M46 528h1792M46 556h1792M46 584h1792M46 612h1792M46 668h1792M46 696h1792M46 724h1792M46 752h1792M46 808h1792M46 836h1792M46 864h1792M46 892h1792M46 948h1792M46 976h1792M46 1004h1792M46 1032h1792M46 1088h1792M46 1116h1792M46 1144h1792M46 1172h1792M46 1228h1792M46 1256h1792M46 1284h1792M46 1312h1792M46 1368h1792" stroke="#efe4c9" stroke-width="0.6" opacity="0.16" fill="none"/><path d="M46 80v1288M186 80v1288M326 80v1288M466 80v1288M606 80v1288M746 80v1288M886 80v1288M1026 80v1288M1166 80v1288M1306 80v1288M1446 80v1288M1586 80v1288M1726 80v1288M46 80h1792M46 220h1792M46 360h1792M46 500h1792M46 640h1792M46 780h1792M46 920h1792M46 1060h1792M46 1200h1792M46 1340h1792" stroke="#efe4c9" stroke-width="1.4" opacity="0.26" fill="none"/></g>
+<ellipse cx="957.0" cy="153.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_bridge" x="942" y="136" width="28" height="28"/>
+<ellipse cx="901.4" cy="264.2" rx="10.36" ry="8.495199999999999" fill="#241c10" opacity="0.3"/>
+<circle cx="900.0" cy="262.0" r="10.36" fill="url(#g_1d6fd8)" stroke="#241c10" stroke-width="1.6"/>
+<circle cx="900.0" cy="262.0" r="7.959999999999999" fill="none" stroke="#ffffff" stroke-width="0.9" opacity="0.55"/>
+<ellipse cx="957.0" cy="349.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_target" x="942" y="332" width="28" height="28"/>
+<ellipse cx="1601.0" cy="461.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_door" x="1586" y="444" width="28" height="28"/>
+<ellipse cx="369.4" cy="572.2" rx="10.36" ry="8.495199999999999" fill="#241c10" opacity="0.3"/>
+<circle cx="368.0" cy="570.0" r="10.36" fill="url(#g_d62828)" stroke="#241c10" stroke-width="1.6"/>
+<circle cx="368.0" cy="570.0" r="7.959999999999999" fill="none" stroke="#ffffff" stroke-width="0.9" opacity="0.55"/>
+<ellipse cx="369.4" cy="628.2" rx="10.36" ry="8.495199999999999" fill="#241c10" opacity="0.3"/>
+<circle cx="368.0" cy="626.0" r="10.36" fill="url(#g_d62828)" stroke="#241c10" stroke-width="1.6"/>
+<circle cx="368.0" cy="626.0" r="7.959999999999999" fill="none" stroke="#ffffff" stroke-width="0.9" opacity="0.55"/>
+<ellipse cx="145.4" cy="684.2" rx="10.36" ry="8.495199999999999" fill="#241c10" opacity="0.3"/>
+<circle cx="144.0" cy="682.0" r="10.36" fill="url(#g_1d6fd8)" stroke="#241c10" stroke-width="1.6"/>
+<circle cx="144.0" cy="682.0" r="7.959999999999999" fill="none" stroke="#ffffff" stroke-width="0.9" opacity="0.55"/>
+<ellipse cx="369.4" cy="684.2" rx="10.36" ry="8.495199999999999" fill="#241c10" opacity="0.3"/>
+<circle cx="368.0" cy="682.0" r="10.36" fill="url(#g_1d6fd8)" stroke="#241c10" stroke-width="1.6"/>
+<circle cx="368.0" cy="682.0" r="7.959999999999999" fill="none" stroke="#ffffff" stroke-width="0.9" opacity="0.55"/>
+<ellipse cx="285.4" cy="712.2" rx="10.36" ry="8.495199999999999" fill="#241c10" opacity="0.3"/>
+<circle cx="284.0" cy="710.0" r="10.36" fill="url(#g_1d6fd8)" stroke="#241c10" stroke-width="1.6"/>
+<circle cx="284.0" cy="710.0" r="7.959999999999999" fill="none" stroke="#ffffff" stroke-width="0.9" opacity="0.55"/>
+<ellipse cx="369.0" cy="713.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_bell" x="354" y="696" width="28" height="28"/>
+<ellipse cx="957.0" cy="713.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_temple" x="942" y="696" width="28" height="28"/>
+<ellipse cx="369.4" cy="740.2" rx="10.36" ry="8.495199999999999" fill="#241c10" opacity="0.3"/>
+<circle cx="368.0" cy="738.0" r="10.36" fill="url(#g_d62828)" stroke="#241c10" stroke-width="1.6"/>
+<circle cx="368.0" cy="738.0" r="7.959999999999999" fill="none" stroke="#ffffff" stroke-width="0.9" opacity="0.55"/>
+<ellipse cx="369.4" cy="852.2" rx="10.36" ry="8.495199999999999" fill="#241c10" opacity="0.3"/>
+<circle cx="368.0" cy="850.0" r="10.36" fill="url(#g_9d4edd)" stroke="#241c10" stroke-width="1.6"/>
+<circle cx="368.0" cy="850.0" r="7.959999999999999" fill="none" stroke="#ffffff" stroke-width="0.9" opacity="0.55"/>
+<ellipse cx="145.4" cy="880.2" rx="10.36" ry="8.495199999999999" fill="#241c10" opacity="0.3"/>
+<circle cx="144.0" cy="878.0" r="10.36" fill="url(#g_1d6fd8)" stroke="#241c10" stroke-width="1.6"/>
+<circle cx="144.0" cy="878.0" r="7.959999999999999" fill="none" stroke="#ffffff" stroke-width="0.9" opacity="0.55"/>
+<ellipse cx="145.0" cy="909.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_crate" x="130" y="892" width="28" height="28"/>
+<ellipse cx="453.4" cy="936.2" rx="10.36" ry="8.495199999999999" fill="#241c10" opacity="0.3"/>
+<circle cx="452.0" cy="934.0" r="10.36" fill="url(#g_9d4edd)" stroke="#241c10" stroke-width="1.6"/>
+<circle cx="452.0" cy="934.0" r="7.959999999999999" fill="none" stroke="#ffffff" stroke-width="0.9" opacity="0.55"/>
+<ellipse cx="957.0" cy="1105.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_target" x="942" y="1088" width="28" height="28"/>
+<ellipse cx="313.0" cy="1245.0" rx="9" ry="4.5" fill="#241c10" opacity="0.2"/>
+<use href="#pr_door" x="298" y="1228" width="28" height="28"/>
+<text x="60.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">A</text>
+<text x="88.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">B</text>
+<text x="116.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">C</text>
+<text x="144.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">D</text>
+<text x="172.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">E</text>
+<text x="200.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">F</text>
+<text x="228.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">G</text>
+<text x="256.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">H</text>
+<text x="284.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">I</text>
+<text x="312.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">J</text>
+<text x="340.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">K</text>
+<text x="368.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">L</text>
+<text x="396.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">M</text>
+<text x="424.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">N</text>
+<text x="452.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">O</text>
+<text x="480.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">P</text>
+<text x="508.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">Q</text>
+<text x="536.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">R</text>
+<text x="564.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">S</text>
+<text x="592.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">T</text>
+<text x="620.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">U</text>
+<text x="648.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">V</text>
+<text x="676.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">W</text>
+<text x="704.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">X</text>
+<text x="732.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">Y</text>
+<text x="760.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">Z</text>
+<text x="788.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AA</text>
+<text x="816.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AB</text>
+<text x="844.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AC</text>
+<text x="872.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AD</text>
+<text x="900.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AE</text>
+<text x="928.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AF</text>
+<text x="956.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AG</text>
+<text x="984.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AH</text>
+<text x="1012.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AI</text>
+<text x="1040.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AJ</text>
+<text x="1068.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AK</text>
+<text x="1096.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AL</text>
+<text x="1124.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AM</text>
+<text x="1152.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AN</text>
+<text x="1180.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AO</text>
+<text x="1208.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AP</text>
+<text x="1236.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AQ</text>
+<text x="1264.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AR</text>
+<text x="1292.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AS</text>
+<text x="1320.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AT</text>
+<text x="1348.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AU</text>
+<text x="1376.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AV</text>
+<text x="1404.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AW</text>
+<text x="1432.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AX</text>
+<text x="1460.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AY</text>
+<text x="1488.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">AZ</text>
+<text x="1516.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">BA</text>
+<text x="1544.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">BB</text>
+<text x="1572.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">BC</text>
+<text x="1600.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">BD</text>
+<text x="1628.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">BE</text>
+<text x="1656.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">BF</text>
+<text x="1684.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">BG</text>
+<text x="1712.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">BH</text>
+<text x="1740.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">BI</text>
+<text x="1768.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">BJ</text>
+<text x="1796.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">BK</text>
+<text x="1824.0" y="72" font-size="10" text-anchor="middle" fill="#7a6a50">BL</text>
+<text x="37" y="97.0" font-size="10" text-anchor="end" fill="#7a6a50">01</text>
+<text x="37" y="125.0" font-size="10" text-anchor="end" fill="#7a6a50">02</text>
+<text x="37" y="153.0" font-size="10" text-anchor="end" fill="#7a6a50">03</text>
+<text x="37" y="181.0" font-size="10" text-anchor="end" fill="#7a6a50">04</text>
+<text x="37" y="209.0" font-size="10" text-anchor="end" fill="#7a6a50">05</text>
+<text x="37" y="237.0" font-size="10" text-anchor="end" fill="#7a6a50">06</text>
+<text x="37" y="265.0" font-size="10" text-anchor="end" fill="#7a6a50">07</text>
+<text x="37" y="293.0" font-size="10" text-anchor="end" fill="#7a6a50">08</text>
+<text x="37" y="321.0" font-size="10" text-anchor="end" fill="#7a6a50">09</text>
+<text x="37" y="349.0" font-size="10" text-anchor="end" fill="#7a6a50">10</text>
+<text x="37" y="377.0" font-size="10" text-anchor="end" fill="#7a6a50">11</text>
+<text x="37" y="405.0" font-size="10" text-anchor="end" fill="#7a6a50">12</text>
+<text x="37" y="433.0" font-size="10" text-anchor="end" fill="#7a6a50">13</text>
+<text x="37" y="461.0" font-size="10" text-anchor="end" fill="#7a6a50">14</text>
+<text x="37" y="489.0" font-size="10" text-anchor="end" fill="#7a6a50">15</text>
+<text x="37" y="517.0" font-size="10" text-anchor="end" fill="#7a6a50">16</text>
+<text x="37" y="545.0" font-size="10" text-anchor="end" fill="#7a6a50">17</text>
+<text x="37" y="573.0" font-size="10" text-anchor="end" fill="#7a6a50">18</text>
+<text x="37" y="601.0" font-size="10" text-anchor="end" fill="#7a6a50">19</text>
+<text x="37" y="629.0" font-size="10" text-anchor="end" fill="#7a6a50">20</text>
+<text x="37" y="657.0" font-size="10" text-anchor="end" fill="#7a6a50">21</text>
+<text x="37" y="685.0" font-size="10" text-anchor="end" fill="#7a6a50">22</text>
+<text x="37" y="713.0" font-size="10" text-anchor="end" fill="#7a6a50">23</text>
+<text x="37" y="741.0" font-size="10" text-anchor="end" fill="#7a6a50">24</text>
+<text x="37" y="769.0" font-size="10" text-anchor="end" fill="#7a6a50">25</text>
+<text x="37" y="797.0" font-size="10" text-anchor="end" fill="#7a6a50">26</text>
+<text x="37" y="825.0" font-size="10" text-anchor="end" fill="#7a6a50">27</text>
+<text x="37" y="853.0" font-size="10" text-anchor="end" fill="#7a6a50">28</text>
+<text x="37" y="881.0" font-size="10" text-anchor="end" fill="#7a6a50">29</text>
+<text x="37" y="909.0" font-size="10" text-anchor="end" fill="#7a6a50">30</text>
+<text x="37" y="937.0" font-size="10" text-anchor="end" fill="#7a6a50">31</text>
+<text x="37" y="965.0" font-size="10" text-anchor="end" fill="#7a6a50">32</text>
+<text x="37" y="993.0" font-size="10" text-anchor="end" fill="#7a6a50">33</text>
+<text x="37" y="1021.0" font-size="10" text-anchor="end" fill="#7a6a50">34</text>
+<text x="37" y="1049.0" font-size="10" text-anchor="end" fill="#7a6a50">35</text>
+<text x="37" y="1077.0" font-size="10" text-anchor="end" fill="#7a6a50">36</text>
+<text x="37" y="1105.0" font-size="10" text-anchor="end" fill="#7a6a50">37</text>
+<text x="37" y="1133.0" font-size="10" text-anchor="end" fill="#7a6a50">38</text>
+<text x="37" y="1161.0" font-size="10" text-anchor="end" fill="#7a6a50">39</text>
+<text x="37" y="1189.0" font-size="10" text-anchor="end" fill="#7a6a50">40</text>
+<text x="37" y="1217.0" font-size="10" text-anchor="end" fill="#7a6a50">41</text>
+<text x="37" y="1245.0" font-size="10" text-anchor="end" fill="#7a6a50">42</text>
+<text x="37" y="1273.0" font-size="10" text-anchor="end" fill="#7a6a50">43</text>
+<text x="37" y="1301.0" font-size="10" text-anchor="end" fill="#7a6a50">44</text>
+<text x="37" y="1329.0" font-size="10" text-anchor="end" fill="#7a6a50">45</text>
+<text x="37" y="1357.0" font-size="10" text-anchor="end" fill="#7a6a50">46</text>
+<rect x="550" y="472" width="784" height="504" rx="4" fill="none" stroke="#2c2313" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.75"/>
+<text x="554" y="485" font-size="10.5" font-weight="bold" fill="#2c2313">Mercato coperto del grano — i Partiti si trattano qui</text>
+<rect x="74" y="556" width="112" height="252" rx="4" fill="none" stroke="#2c2313" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.75"/>
+<text x="78" y="569" font-size="10.5" font-weight="bold" fill="#2c2313">Palco della Sovrintendente — Tesio e Melchio: protestare, testimoniare</text>
+<rect x="1166" y="1256" width="476" height="112" rx="4" fill="none" stroke="#2c2313" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.75"/>
+<text x="1170" y="1269" font-size="10.5" font-weight="bold" fill="#2c2313">Palazzo della Piuma d'Oro — le finestre danno sulla Curva Sud</text>
+<rect x="74" y="1228" width="196" height="140" rx="4" fill="none" stroke="#2c2313" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.75"/>
+<text x="78" y="1241" font-size="10.5" font-weight="bold" fill="#2c2313">Oratorio dei Boschispini — benedizione del cavallo all'alba</text>
+<path d="M368 346L1488 346L1488 1102L368 1102L368 346" fill="none" stroke="#ffffff" stroke-width="3.6" opacity="0.55" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M368 346L1488 346L1488 1102L368 1102L368 346" fill="none" stroke="#b94a3c" stroke-width="2" stroke-dasharray="7 4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="368" cy="346" r="3.4" fill="#b94a3c" stroke="#ffffff" stroke-width="1"/>
+<path d="M368 346L371.5 352.06L364.5 352.06Z" fill="#b94a3c"/>
+<circle cx="376.4" cy="673.6" r="7" fill="#1a140a" stroke="#ffffff" stroke-width="1.1"/>
+<text x="376.4" y="677" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">1</text>
+<circle cx="292.4" cy="701.6" r="7" fill="#1a140a" stroke="#ffffff" stroke-width="1.1"/>
+<text x="292.4" y="705" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">2</text>
+<circle cx="908.4" cy="253.6" r="7" fill="#1a140a" stroke="#ffffff" stroke-width="1.1"/>
+<text x="908.4" y="257" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">3</text>
+<circle cx="152.4" cy="869.6" r="7" fill="#1a140a" stroke="#ffffff" stroke-width="1.1"/>
+<text x="152.4" y="873" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">4</text>
+<circle cx="152.4" cy="673.6" r="7" fill="#1a140a" stroke="#ffffff" stroke-width="1.1"/>
+<text x="152.4" y="677" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">5</text>
+<circle cx="376.4" cy="561.6" r="7" fill="#1a140a" stroke="#ffffff" stroke-width="1.1"/>
+<text x="376.4" y="565" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">6</text>
+<circle cx="376.4" cy="617.6" r="7" fill="#1a140a" stroke="#ffffff" stroke-width="1.1"/>
+<text x="376.4" y="621" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">7</text>
+<circle cx="376.4" cy="729.6" r="7" fill="#1a140a" stroke="#ffffff" stroke-width="1.1"/>
+<text x="376.4" y="733" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">8</text>
+<circle cx="376.4" cy="841.6" r="7" fill="#1a140a" stroke="#ffffff" stroke-width="1.1"/>
+<text x="376.4" y="845" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">9</text>
+<circle cx="460.4" cy="925.6" r="7" fill="#1a140a" stroke="#ffffff" stroke-width="1.1"/>
+<text x="460.4" y="929" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">10</text>
+<g transform="translate(1816,102) rotate(0)"><circle r="20" fill="#efe4c9" fill-opacity="0.82" stroke="#3b2e1e" stroke-width="1"/><path d="M0 -15L2.4 -2.4L15 0L2.4 2.4L0 15L-2.4 2.4L-15 0L-2.4 -2.4Z" fill="#7a6a50" opacity="0.5"/><path d="M0 -15L3.6 0L0 -3.3L-3.6 0Z" fill="#3b2e1e"/><text x="0" y="-21" font-size="11" font-weight="bold" text-anchor="middle" fill="#3b2e1e">N</text></g>
+<rect x="46" y="1387" width="28" height="7" fill="#3b2e1e" stroke="#3b2e1e" stroke-width="1"/>
+<rect x="74" y="1387" width="28" height="7" fill="#efe4c9" stroke="#3b2e1e" stroke-width="1"/>
+<rect x="102" y="1387" width="28" height="7" fill="#3b2e1e" stroke="#3b2e1e" stroke-width="1"/>
+<rect x="130" y="1387" width="28" height="7" fill="#efe4c9" stroke="#3b2e1e" stroke-width="1"/>
+<rect x="158" y="1387" width="28" height="7" fill="#3b2e1e" stroke="#3b2e1e" stroke-width="1"/>
+<text x="196" y="1395" font-size="11" fill="#3b2e1e">7,5 m (5 quadretti)</text>
+<text x="46" y="1422" font-size="12" font-weight="bold" fill="#3b2e1e" letter-spacing="2">INDICAZIONI</text>
+<path d="M142 1418H1838" stroke="#7a6a50" stroke-width="0.7" opacity="0.7"/>
+<circle cx="54" cy="1435" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
+<text x="54" y="1438.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">1</text>
+<text x="68" y="1439" font-size="11" fill="#3b2e1e">L22 — Nocca (fantino) (ranger 3)</text>
+<circle cx="54" cy="1450" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
+<text x="54" y="1453.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">2</text>
+<text x="68" y="1454" font-size="11" fill="#3b2e1e">I23 — Vanna — alle funi (guerriera 3)</text>
+<circle cx="54" cy="1465" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
+<text x="54" y="1468.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">3</text>
+<text x="68" y="1469" font-size="11" fill="#3b2e1e">AE7 — Ombra — dentro il transennato (druida 3)</text>
+<circle cx="54" cy="1480" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
+<text x="54" y="1483.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">4</text>
+<text x="68" y="1484" font-size="11" fill="#3b2e1e">D29 — Berenice — carro degli alfieri (barda 3)</text>
+<circle cx="54" cy="1495" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
+<text x="54" y="1498.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">5</text>
+<text x="68" y="1499" font-size="11" fill="#3b2e1e">D22 — Tesio e Melchio — palco (mago 3 · chierico 3)</text>
+<circle cx="54" cy="1510" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
+<text x="54" y="1513.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">6</text>
+<text x="68" y="1514" font-size="11" fill="#3b2e1e">L18 — Selmo Ancora (Cavalcare +12)</text>
+<circle cx="54" cy="1525" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
+<text x="54" y="1528.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">7</text>
+<text x="68" y="1529" font-size="11" fill="#3b2e1e">L20 — Tilde Barbanera (Cavalcare +10)</text>
+<circle cx="54" cy="1540" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
+<text x="54" y="1543.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">8</text>
+<text x="68" y="1544" font-size="11" fill="#3b2e1e">L24 — il Muto (Cavalcare +9)</text>
+<circle cx="54" cy="1555" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
+<text x="54" y="1558.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">9</text>
+<text x="68" y="1559" font-size="11" fill="#3b2e1e">L28 — Bastione · Guglie · Ombre · Corno (1d6 per giro)</text>
+<circle cx="54" cy="1570" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
+<text x="54" y="1573.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">10</text>
+<text x="68" y="1574" font-size="11" fill="#3b2e1e">O31 — Rincorsa (l'ottava estratta) (—)</text>
+<line x1="46" y1="1585" x2="62" y2="1585" stroke="#b94a3c" stroke-width="2" stroke-dasharray="6 3"/>
+<path d="M64 1585L59.67 1587.5L59.67 1582.5Z" fill="#b94a3c"/>
+<text x="70" y="1589" font-size="11" fill="#3b2e1e">Giro della Ruota (3 giri, senso orario): L10 → AZ10 → AZ37 → L37 → (loop)</text>
+<rect x="46" y="1593" width="15" height="12" rx="2" fill="none" stroke="#2c2313" stroke-width="1.4" stroke-dasharray="4 3"/>
+<text x="68" y="1604" font-size="11" fill="#3b2e1e">S15–AT32 — Mercato coperto del grano — i Partiti si trattano qui</text>
+<rect x="46" y="1608" width="15" height="12" rx="2" fill="none" stroke="#2c2313" stroke-width="1.4" stroke-dasharray="4 3"/>
+<text x="68" y="1619" font-size="11" fill="#3b2e1e">B18–E26 — Palco della Sovrintendente — Tesio e Melchio: protestare, testimoniare</text>
+<rect x="46" y="1623" width="15" height="12" rx="2" fill="none" stroke="#2c2313" stroke-width="1.4" stroke-dasharray="4 3"/>
+<text x="68" y="1634" font-size="11" fill="#3b2e1e">AO43–BE46 — Palazzo della Piuma d'Oro — le finestre danno sulla Curva Sud</text>
+<rect x="46" y="1638" width="15" height="12" rx="2" fill="none" stroke="#2c2313" stroke-width="1.4" stroke-dasharray="4 3"/>
+<text x="68" y="1649" font-size="11" fill="#3b2e1e">B42–H46 — Oratorio dei Boschispini — benedizione del cavallo all'alba</text>
+<text x="46" y="1683" font-size="12" font-weight="bold" fill="#3b2e1e" letter-spacing="2">LEGENDA</text>
+<path d="M120 1679H1838" stroke="#7a6a50" stroke-width="0.7" opacity="0.7"/>
+<rect x="46.0" y="1689" width="19" height="15" fill="url(#t_wall)" stroke="#7a6a50" stroke-width="0.7"/>
+<text x="73.0" y="1701" font-size="11" fill="#3b2e1e">🏰 — Muro / roccia solida</text>
+<rect x="46.0" y="1711" width="19" height="15" fill="url(#t_floor)" stroke="#7a6a50" stroke-width="0.7"/>
+<text x="73.0" y="1723" font-size="11" fill="#3b2e1e">⬜ — Pavimento lavorato</text>
+<rect x="46.0" y="1733" width="19" height="15" fill="url(#t_struct)" stroke="#7a6a50" stroke-width="0.7"/>
+<text x="73.0" y="1745" font-size="11" fill="#3b2e1e">⬛ — Struttura (tenda, edificio, dais)</text>
+<rect x="46.0" y="1755" width="19" height="15" fill="url(#t_earth)" stroke="#7a6a50" stroke-width="0.7"/>
+<text x="73.0" y="1767" font-size="11" fill="#3b2e1e">🟫 — Terra battuta / sentiero</text>
+<circle cx="55.0" cy="1785" r="7.5" fill="url(#g_9d4edd)" stroke="#241c10" stroke-width="1.2"/>
+<text x="73.0" y="1789" font-size="11" fill="#3b2e1e">🟣 — Creatura speciale</text>
+<circle cx="55.0" cy="1807" r="7.5" fill="url(#g_d62828)" stroke="#241c10" stroke-width="1.2"/>
+<text x="73.0" y="1811" font-size="11" fill="#3b2e1e">🔴 — Nemico standard</text>
+<circle cx="55.0" cy="1829" r="7.5" fill="url(#g_1d6fd8)" stroke="#241c10" stroke-width="1.2"/>
+<text x="73.0" y="1833" font-size="11" fill="#3b2e1e">🔵 — PG / alleati</text>
+<use href="#pr_bell" x="942.0" y="1688" width="18" height="18"/>
+<text x="969.0" y="1701" font-size="11" fill="#3b2e1e">🔔 — Allarme / trappola sonora</text>
+<use href="#pr_crate" x="942.0" y="1710" width="18" height="18"/>
+<text x="969.0" y="1723" font-size="11" fill="#3b2e1e">📦 — Casse / rifornimenti</text>
+<use href="#pr_temple" x="942.0" y="1732" width="18" height="18"/>
+<text x="969.0" y="1745" font-size="11" fill="#3b2e1e">🏛 — Edificio / tempio</text>
+<use href="#pr_target" x="942.0" y="1754" width="18" height="18"/>
+<text x="969.0" y="1767" font-size="11" fill="#3b2e1e">🎯 — Obiettivo tattico</text>
+<use href="#pr_bridge" x="942.0" y="1776" width="18" height="18"/>
+<text x="969.0" y="1789" font-size="11" fill="#3b2e1e">🌉 — Ponte / passerella</text>
+<use href="#pr_door" x="942.0" y="1798" width="18" height="18"/>
+<text x="969.0" y="1811" font-size="11" fill="#3b2e1e">🚪 — Porta / ingresso</text>
+<text x="46" y="1865" font-size="9" font-style="italic" fill="#7a6a50">fonte: tarsilia-la-ruota.md · SVG generato da scripts/render_map_svg.py (stile pergamena) — non modificare a mano</text>
+</svg>

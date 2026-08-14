@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "title": "Tarsilia — la Ruota (pista del Drappo)",
+  "scale_m_per_square": 1.5,
+  "map_size": [64, 46],
+  "base_terrain": "⬜",
+  "north": "N",
+  "movements": [
+    { "name": "Giro della Ruota (3 giri, senso orario)", "path": [[11, 9], [51, 9], [51, 36], [11, 36]], "loop": true, "color": "#b94a3c" }
+  ],
+  "regions": [
+    { "terrain": "🟫", "rect": [6, 5, 52, 9], "label": "CURVA NORD — CD 17, davanti al Ponte Storto. Fallire di 5+ = caduta" },
+    { "terrain": "🟫", "rect": [6, 32, 52, 9], "label": "CURVA SUD — CD 15, in ombra sotto il palazzo della Piuma d'Oro: il cavallo vede male" },
+    { "terrain": "🟫", "rect": [6, 14, 12, 18], "label": "IL DRITTO (lato ovest) — CD 12. Qui stanno le funi, il palco e il carro degli alfieri" },
+    { "terrain": "🟫", "rect": [46, 14, 12, 18], "label": "IL DRITTO (lato est) — stesso tratto, altro lato: si contano insieme" }
+  ],
+  "structures": [
+    { "type": "⬛", "rect": [18, 14, 28, 18], "label": "Mercato coperto del grano — i Partiti si trattano qui; dal tetto si vede tutta la pista" },
+    { "type": "🏛", "at": [32, 22] },
+    { "type": "🏰", "line": [[20, 4], [40, 4]], "label": "Transennato della Curva Nord — assi di castagno, non si paga il posto. Al terzo giro cede" },
+    { "type": "⬛", "rect": [1, 17, 4, 9], "label": "Palco della Sovrintendente — Tesio e Melchio: protestare, testimoniare" },
+    { "type": "⬛", "rect": [40, 42, 17, 4], "label": "Palazzo della Piuma d'Oro — le finestre danno sulla Curva Sud" },
+    { "type": "⬛", "rect": [1, 41, 7, 5], "label": "Oratorio dei Boschispini — benedizione del cavallo all'alba" },
+    { "type": "📦", "at": [3, 29] },
+    { "type": "🌉", "at": [32, 2] },
+    { "type": "🚪", "at": [9, 41] },
+    { "type": "🚪", "at": [55, 13] }
+  ],
+  "hazards": [
+    { "type": "🎯", "at": [32, 9], "label": "CURVA NORD", "effect": "CD 17. Fallire di 5+ = caduta (2d6, prono, poi 1d6/tratto sotto gli zoccoli). Al terzo giro il transennato cede sulla gente dell'ospizio" },
+    { "type": "🎯", "at": [32, 36], "label": "CURVA SUD", "effect": "CD 15. Fallire di 5+ = il cavallo rifiuta, −1 Lunghezza. Il palco NON vede: è qui che si scudiscia" },
+    { "type": "🔔", "at": [11, 22], "label": "LE FUNI — lo Stacco", "effect": "Sette cavalli fra le funi, l'ottavo di rincorsa. Iniziativa contrapposta + finte: Lotta, Percezione vs Raggirare, Intimidire CD 15" }
+  ],
+  "units": [
+    { "faction": "Boschispini", "name": "Nocca (fantino)", "token": "🔵", "at": [11, 21], "cr": "ranger 3", "note": "corre a pelo: −5 a Cavalcare" },
+    { "faction": "Boschispini", "name": "Vanna — alle funi", "token": "🔵", "at": [8, 22], "cr": "guerriera 3", "note": "urlare un ordine (Intimidire 15), trattenere il vicino (Lotta)" },
+    { "faction": "Boschispini", "name": "Ombra — dentro il transennato", "token": "🔵", "at": [30, 6], "cr": "druida 3", "note": "chiamare il cavallo (Add. Animali 15), fermare lo scosso (20)" },
+    { "faction": "Boschispini", "name": "Berenice — carro degli alfieri", "token": "🔵", "at": [3, 28], "cr": "barda 3", "note": "il canto sopra il rumore: +2 a tutta la contrada per un tratto" },
+    { "faction": "Boschispini", "name": "Tesio e Melchio — palco", "token": "🔵", "at": [3, 21], "cr": "mago 3 · chierico 3", "note": "protestare (Diplomazia 18), testimoniare (Perc. Intenzioni 15)" },
+    { "faction": "Piuma d'Oro", "name": "Selmo Ancora", "token": "🔴", "at": [11, 17], "cr": "Cavalcare +12", "note": "il migliore in pista. Scudiscia alla Curva Sud" },
+    { "faction": "Cresta di Marea", "name": "Tilde Barbanera", "token": "🔴", "at": [11, 19], "cr": "Cavalcare +10", "note": "pulita. Mantiene i patti alla lettera e non oltre" },
+    { "faction": "Trama d'Argento", "name": "il Muto", "token": "🔴", "at": [11, 23], "cr": "Cavalcare +9", "note": "nessuna irregolarità. Mai" },
+    { "faction": "Comprimarie", "name": "Bastione · Guglie · Ombre · Corno", "token": "🟣", "at": [11, 27], "cr": "1d6 per giro", "note": "risolte insieme con la tabella del Giorno 3 §5" },
+    { "faction": "Comprimarie", "name": "Rincorsa (l'ottava estratta)", "token": "🟣", "at": [14, 30], "cr": "—", "note": "decide quando lo Stacco è valido: +2 iniziativa per round d'attesa, 1 su 6 di annullamento" }
+  ],
+  "notes": [
+    "Anello di terra battuta largo 9 quadretti (13,5 m) intorno al mercato coperto del grano.",
+    "Il giro si conta in TRE tratti: il Dritto (i due rettilinei laterali, contati insieme), la Curva Nord davanti al Ponte Storto, la Curva Sud sotto il palazzo della Piuma d'Oro. Tre giri = nove tratti.",
+    "Dal tetto del mercato del grano si vede l'intera pista: chi ci sale può anticipare una mossa avversaria, una volta per corsa.",
+    "La folla sta ovunque fuori dalla pista. Dentro il transennato della Curva Nord sta la gente dell'ospizio, che è lì da stamattina perché è il posto dove si vede meglio e non si paga."
+  ]
+}

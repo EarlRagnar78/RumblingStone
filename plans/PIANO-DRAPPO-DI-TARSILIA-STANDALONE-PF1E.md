@@ -147,6 +147,28 @@ al Lotto 3, non prima.
 - [ ] Rigenerare i cartigli degli scudi coi motti nuovi
 - [ ] Audit IP dedicato del solo standalone
 
+### Lotto 6 — Edizione illustrata ⬜ *(pronto a partire: il capitolato è scritto)*
+
+Il modulo è completo come **testo** e come **impaginazione**; non è ancora un **libro
+illustrato**. Il divario è misurato e il capitolato d'appalto sta in
+`STANDALONE-Il-Drappo-di-Tarsilia/PROMPT-GENERAZIONE-BOOKLET-DEFINITIVO.md`, che
+contiene anche il prompt autosufficiente da passare a una sessione nuova.
+
+- [x] Inventario di cosa esiste, e i sei divari verso il livello Paizo/WotC (§1-§2)
+- [x] Prompt d'appalto con vincoli IP, strumenti del repo, criteri di accettazione (§3)
+- [ ] **[1]** Illustrazioni raster: 6 ritratti + 3 tavole + il Drappo, e i prompt
+      mancanti per i cinque PNG che meritano un ritratto
+- [ ] **[2]** Tipografia OFL embedded — ⚠️ tocca `build_booklet_html.py`, che impagina
+      **tutti** i booklet del repo: serve un ADR, o un tema opt-in da manifest
+- [ ] **[3]** `tarsilia-la-ruota-giocatori.json`: la mappa senza token, hazard e note
+- [ ] **[4]** PDF unico con segnalibri (estendendo `export_booklet_pdf.py`)
+- [ ] **[5]** Carte da tavolo: otto segnaposto contrada + ordine di corsa, estendendo
+      `ALLEGATI/tavole/build_tavole.py`
+- [ ] **[6]** Frontespizio vero
+
+**Criterio di accettazione**: i quattro booklet si rigenerano da zero, ogni immagine
+ha la sua riga in `PROVENIENZA.txt`, e nessun file della campagna risulta modificato.
+
 ## 4. Engine e impegno per fase (regola DM 2026-07-22)
 
 | Fase | Engine | Impegno | Dieta di contesto |

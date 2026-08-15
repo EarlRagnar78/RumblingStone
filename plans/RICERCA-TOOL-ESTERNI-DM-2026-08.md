@@ -191,6 +191,70 @@ togliendo dalla porta.
 
 ---
 
+## §3-ter · La pila libera per arrivare al livello di stampa — verificata
+
+Domanda del DM: *«c'è codice MIT o open source integrabile per elevare i moduli al
+livello Paizo/WotC? Per esempio un generatore di immagini open source di qualità
+professionale, automatizzabile? Blender?»*. Sì, e la pila esiste quasi tutta. Ma il
+pezzo che sposta di più **non è l'immagine**.
+
+| Strumento | Licenza (verificata) | A cosa serve **qui** |
+|---|---|---|
+| **Typst** | **Apache 2.0** | ⭐ **il più alto rapporto valore/costo.** Chiude da solo [2] tipografia, [4] PDF unico con segnalibri e metà di [6] frontespizio |
+| **ComfyUI** | GPL-3.0, **API locale con coda asincrona** | già nel repo (`scripts/comfyui-local/`). Manca solo lo script che lo pilota |
+| **SDXL** (pesi) | **OpenRAIL++-M** — commerciale ammesso | default per i ritratti: ControlNet e LoRA più maturi, gira su 8 GB |
+| **FLUX.1 [schnell]** (pesi) | **Apache 2.0** | la licenza più libera: se serve testo dentro l'immagine o la massima garanzia |
+| **FLUX.1 [dev]** (pesi) | ❌ **BFL Non-Commercial v2.0** | esclude anche l'uso *«indirettamente connesso ad attività commerciali»*. **Da non usare** su materiale che potrebbe essere pubblicato |
+| **Blender** | GPL | non per i ritratti: per la **geometria**. Vedi sotto |
+| **Krita** + `krita-ai-diffusion` | GPL | ritocco e inpainting, parlando con lo stesso ComfyUI |
+| **Scribus** | GPL | DTP vero con CMYK e PDF/X — ma GUI-first, scripting fragile: **scartato in favore di Typst** |
+
+### La cosa meno ovvia: il divario più grosso è tipografico, non pittorico
+
+Oggi la catena è `markdown → HTML → Chromium → un PDF A4 per capitolo`. **Chromium
+impagina pagine web, non libri**: non controlla vedove e orfane, non fa crenatura
+fine, non produce un indice cliccabile degno, e i font restano quelli di sistema.
+Nessuna quantità di CSS lo trasforma in InDesign.
+
+**Typst** (Apache 2.0) fa quello che serve: CLI `typst compile`, font embedded via
+`--font-path`, linguaggio di impaginazione scriptabile, PDF singolo con segnalibri.
+La forma giusta **non è sostituire** `build_booklet_html.py` — l'HTML e il sorgente
+Homebrewery restano per lo schermo — ma affiancargli un **secondo binario, quello
+dell'edizione da stampa**. È la separazione che usa qualsiasi editore: una versione
+per leggere, una per il torchio.
+
+### E Blender? Sì, ma non per disegnare
+
+Blender non serve a fare ritratti — lì un generatore fa meglio e costa meno. Serve a
+una cosa che **nessun generatore sa fare**, ed è precisamente ciò che distingue un AP
+pubblicato: **far combaciare l'illustrazione con la mappa**. In un modulo Paizo la
+tavola della locanda e la pianta della locanda sono la stessa stanza; qui oggi sono
+due cose scollegate.
+
+La catena è tutta libera: geometria dal JSON della mappa → **Blender in headless**
+(`blender -b -P script.py`, API Python completa) → render del **passo di profondità**
+→ **ControlNet depth** in ComfyUI → l'illustrazione ha la pianta esatta della Ruota,
+con le curve dove sono davvero.
+
+⚠️ È il pezzo **più costoso** dell'elenco, e ha senso **solo dopo** Typst e lo script
+di generazione. Un uso minore dello stesso strumento costa molto meno e rende quasi
+altrettanto: la **stessa luce d'ambiente** su tutti e sei i ritratti, che è metà del
+problema di coerenza.
+
+### L'ordine consigliato
+
+1. **Typst** — nessuna GPU, licenza Apache, chiude tre divari su sei;
+2. **lo script di batch su ComfyUI** — piccolo, stdlib-only (urllib + json), rende la
+   serie **riproducibile** invece che irripetibile, con seed fissi e righe di
+   `PROVENIENZA.txt` scritte dalla macchina;
+3. **Blender → depth → ControlNet** — il salto vero, e il più caro.
+
+**Quello che nessuno dei tre risolve** resta scritto: la **direzione artistica**.
+L'ancora storica (§3-bis), il seed fisso e la luce condivisa sono tre stampelle
+buone; un art director è un'altra cosa.
+
+---
+
 ## §4 · Quello che ho verificato e scartato
 
 | Tool | Licenza verificata | Verdetto |

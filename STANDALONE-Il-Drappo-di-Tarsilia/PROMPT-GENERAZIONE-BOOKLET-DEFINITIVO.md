@@ -92,6 +92,38 @@ I SEI LAVORI, in ordine di priorità
     Se hai accesso a un generatore: producile. Se no, consegna i prompt finiti e
     lascia i segnaposto vettoriali, che sono già stampabili.
 
+    LA SCELTA DEL MODELLO È UNA QUESTIONE DI LICENZA, non di gusto — ed è il punto
+    dove si sbaglia più facilmente, perché la licenza sta nei PESI, non nel software:
+      · SDXL — OpenRAIL++-M, uso commerciale ammesso, gira su 8 GB di VRAM, ed è
+        l'ecosistema con ControlNet e LoRA più maturo. È la scelta di default qui,
+        proprio perché ControlNet serve a tenere insieme la serie.
+      · FLUX.1 [schnell] — Apache 2.0, cioè la licenza più libera in circolazione:
+        da preferire se serve testo leggibile dentro l'immagine o la garanzia più
+        solida in vista di un'edizione.
+      · FLUX.1 [dev] — ❌ NON COMMERCIALE (BFL License v2.0): la licenza esclude
+        anche l'uso «indirettamente connesso ad attività commerciali». Non usarlo
+        per materiale che un giorno potrebbe essere pubblicato.
+    ComfyUI è GPL-3.0 e ha una API locale con coda asincrona: la generazione si
+    automatizza da uno script Python con la sola stdlib (urllib + json), che legge
+    PROMPT-RITRATTI-E-TAVOLE.md, POSTa i workflow, fissa i seed e scrive le righe di
+    PROVENIENZA.txt. È il pezzo che manca ed è piccolo — vale la pena farlo prima di
+    generare a mano, perché rende la serie RIPRODUCIBILE invece che irripetibile.
+
+[1-bis] SE VUOI IL SALTO VERO — Blender come geometria, non come illustratore
+    Blender (GPL) non serve a disegnare ritratti: lì un generatore fa meglio. Serve a
+    una cosa che nessun generatore sa fare, e che è esattamente quello che distingue
+    un AP pubblicato: FAR COMBACIARE L'ILLUSTRAZIONE CON LA MAPPA. In un modulo Paizo
+    la tavola della locanda e la pianta della locanda sono la stessa stanza; qui oggi
+    sono due cose scollegate.
+    Pipeline, tutta libera: la geometria dal JSON della mappa -> Blender in headless
+    (`blender -b -P script.py`, API Python completa) -> render del passo di PROFONDITÀ
+    -> ControlNet depth in ComfyUI -> l'illustrazione ha la pianta esatta della Ruota,
+    con le curve al posto giusto.
+    ⚠️ È il pezzo PIÙ COSTOSO dell'elenco e ha senso solo dopo [1] e [2]. Non
+    iniziarlo per primo. Uso minore ma economico dello stesso strumento: rendere il
+    Drappo come tessuto vero (simulazione di stoffa) e riusare la STESSA luce
+    d'ambiente su tutti e sei i ritratti, che è metà del problema di coerenza.
+
 [2] TIPOGRAFIA EMBEDDED
     I booklet usano Georgia (font di sistema): su una macchina che non ce l'ha, il PDF
     cambia faccia. Sostituirlo con caratteri OFL embeddabili — candidati da VERIFICARE
@@ -102,6 +134,23 @@ I SEI LAVORI, in ordine di priorità
     trasversale. Serve un ADR (formato: plans/adr/ADR-00NN-*.md) e la rigenerazione
     dei brew esistenti. Se il DM non vuole toccare la campagna, fallo come tema
     opzionale attivabile da manifest ("theme": "libro") e lascia il default com'è.
+
+    ⚠️⚠️ VALUTA PRIMA L'ALTRA STRADA, che probabilmente è quella giusta e chiude
+    insieme [2], [4] e metà di [6]: Chromium impagina PAGINE WEB, non libri. Non ha
+    controllo su vedove e orfane, non fa crenatura fine, non genera un indice
+    cliccabile degno, e i font restano quelli di sistema. Nessuna quantità di CSS lo
+    trasforma in InDesign.
+    L'alternativa libera è TYPST (Apache 2.0, https://github.com/typst/typst): CLI
+    `typst compile`, font embedded via --font-path, linguaggio di impaginazione
+    scriptabile, compilazione incrementale, PDF singolo con segnalibri veri.
+    Forma consigliata: NON sostituire build_booklet_html.py — l'HTML e il sorgente
+    Homebrewery restano per lo schermo e per chi impagina altrove. Typst diventa il
+    SECONDO binario, quello dell'edizione da stampa: manifest -> .typ -> PDF unico.
+    È esattamente la separazione che usa un editore: una versione per leggere a
+    schermo, una per il torchio. Costo: un ADR (nuova dipendenza da binario esterno,
+    con degradazione pulita se manca) + un template .typ. Alternativa scartata:
+    Scribus (GPL) fa CMYK e PDF/X per la stampa professionale, ma è GUI-first e lo
+    scripting è fragile — meglio Typst per un repo che genera tutto da sorgente.
 
 [3] MAPPA IN VERSIONE GIOCATORE
     ALLEGATI/mappe/tarsilia-la-ruota.json contiene token, hazard e note tattiche: è la

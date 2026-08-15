@@ -219,7 +219,7 @@ prima che qualcuno tenesse i conti.
 Chi vince se lo porta nell'oratorio della contrada e tiene per un anno il **seggio
 girevole** in consiglio — l'unico voto che cambia mano.
 
-**Chi sono i PG.** La dirigenza dei **Istrice**, la contrada povera: boscaioli,
+**Chi sono i PG.** La dirigenza dell'**Istrice**, la contrada povera: boscaioli,
 raccoglitori di resina, l'ospizio dei profughi di guerra. Non vincono da
 quarant'anni. Sei uffici, sei giocatori:
 
@@ -235,7 +235,7 @@ quarant'anni. Sei uffici, sei giocatori:
 **Cosa c'è in ballo, davvero.** Sei giorni fa la Sovrintendente ha letto un decreto:
 le contrade che non si piazzano nei primi tre in cinque anni perdono il seggio e
 **vengono accorpate** alla contrada confinante. L'Istrice è al quinto anno.
-Confinano con la **Bruco**, che li vuole: sotto il bosco di spini c'è la
+Confina con il **Bruco**, che lo vuole: sotto il bosco di spini c'è la
 resina, e la resina la comprano i tintori.
 
 **Come finisce.** Con una corsa di novanta secondi e una scelta che si fa mentre la
@@ -884,7 +884,7 @@ diventerebbe subito una copia vecchia.
 | 8 | Onda | `golarion/08-onda.svg` |
 
 ⚠️ **I nomi dei file sono quelli della serie di origine** e non corrispondono ai nomi
-di Tarsilia: il file `04-istrice.svg` è lo scudo dei **Istrice**. Il cartiglio
+di Tarsilia: il file `04-istrice.svg` è lo scudo del'**Istrice**. Il cartiglio
 dipinto dentro lo scudo porta ancora il motto della serie di origine — per l'uso a
 questo tavolo va bene, per una stampa pulita vanno rigenerati coi motti del §1. È
 tracciato come Lotto 3 in `plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md`.

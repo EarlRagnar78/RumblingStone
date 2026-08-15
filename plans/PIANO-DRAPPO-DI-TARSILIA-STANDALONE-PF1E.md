@@ -1,6 +1,6 @@
 # PIANO — «Il Drappo di Tarsilia»: il Palio come modulo autonomo (Golarion · PF1e)
 
-**Stato**: 🟡 in corso — Lotti 1 e 2 chiusi (impianto + profondità AP + booklet)
+**Stato**: 🟡 in corso — Lotti 1, 2 e 5 chiusi (impianto · profondità AP · apparato d'uso e governance)
 **Aperto**: 2026-08-14
 **Richiesta-fonte (DM, 2026-08-14)**: *«dato il palio di Channathgate possiamo fare
 una variante per sessioni di qualche ora, per 6 persone, per 3 giorni, ambientata a
@@ -98,6 +98,40 @@ li chiude.
 **Criterio di accettazione**: un DM che non ha mai letto il modulo apre
 `07-GUIDA-DM-PASSO-PASSO.md`, spende quarantacinque minuti, e gioca tre serate senza
 inventare niente di strutturale.
+
+### Lotto 5 — Apparato d'uso, collaudo e governance ✅ *(chiuso 2026-08-15)*
+
+Nato dalla domanda del DM *«cosa manca davvero perché sia memorabile per i giocatori e
+bello da masterizzare?»* e dalla ricerca che ne è uscita
+([`RICERCA-COSA-SERVE-A-UN-MODULO-PUBBLICABILE`](RICERCA-COSA-SERVE-A-UN-MODULO-PUBBLICABILE.md)).
+La risposta: non mancava contenuto, mancava **l'apparato d'uso**.
+
+- [x] `08-CASSETTA-DEL-DM.md` — foglio del cast (28 PNG con il tic vocale), guida
+      alla **pronuncia**, indice dei **15 read-aloud**, inserto per lo schermo, i
+      **suoni**, il **momento da fotografare**, accessibilità
+- [x] `ALLEGATI/handout/` — **quattro prop stampabili**: il contratto di Vesca (piegato
+      in tre, che i giocatori possono non aprire mai), la pagina del registro dei morti
+      con i nove nomi, la ricevuta `C·S·M`, il decreto affisso
+- [x] `STATO-DEL-MODULO.md` — la memoria fra le tre serate: contatori, patti scritti,
+      sette scelte che cambiano il finale, **Echo Ledger**, conteggio dello spotlight
+- [x] `PLAYTEST-SCHEDA-FEEDBACK.md` — scheda giocatore (le tre domande che misurano
+      davvero), debrief del DM con **due metriche numeriche**, ciclo alfa→beta→collaudato
+- [x] **skill nuova** `rumblingstone-playtest` — le tre passate, come si legge il
+      feedback, come si scrive una correzione. **Vale anche per la campagna**
+- [x] **script nuovo** `scripts/validate_standalone.py` — gate CI per i moduli
+      `STANDALONE-*`: file obbligatori, riferimenti incrociati, schede, termini 5e,
+      read-aloud minimi, contatori. Registrato nel manifest, in CI
+- [x] `rumblingstone-module-standard` §15-16 — l'apparato d'uso e i prop entrano
+      nella checklist
+- [x] **[ADR-0017](adr/ADR-0017-moduli-autoconclusivi-classe-di-artefatto.md)** — i
+      moduli autoconclusivi sono una classe a sé: cosa non possono fare, cosa devono avere
+- [x] **[ADR-0018](adr/ADR-0018-apparato-uso-obbligatorio.md)** — l'apparato d'uso è
+      parte del contenuto, non un extra. Vale per il modulo **e** per la campagna
+- [x] `ALLEGATI/mappe/uvtt/` — le due mappe esportate per Foundry/Roll20
+
+**Criterio di accettazione**: il debrief del DM misura **zero improvvisazioni
+strutturali** e **meno di cinque ricerche sopra i trenta secondi** a serata. Si verifica
+al Lotto 3, non prima.
 
 ### Lotto 3 — Collaudo al tavolo ⬜ *(gated: serve una sessione vera)*
 

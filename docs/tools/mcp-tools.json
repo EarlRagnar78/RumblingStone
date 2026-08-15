@@ -1264,6 +1264,30 @@
       "deterministic": true
     },
     {
+      "name": "validate_standalone",
+      "description": "Gate CI per i moduli autoconclusivi STANDALONE-*: file obbligatori, riferimenti incrociati, schede pregenerate, termini 5e vietati, read-aloud minimi e contatori dichiarati.",
+      "invocation": "python3 scripts/validate_standalone.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "dir": {
+            "type": "string",
+            "description": "Valida solo questa cartella (relativa alla radice del repo)."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "master conformi",
+        "1": "violazioni checklist"
+      },
+      "deterministic": true
+    },
+    {
       "name": "converters_html_to_markdown",
       "description": "Convertitore di contenuto HTML -> Markdown. Isolato dal toolkit DM.",
       "invocation": "(vedi converters/Html_to_markdown/README)",

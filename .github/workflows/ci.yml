@@ -55,6 +55,9 @@ jobs:
       - name: Validate DEF module masters (module-standard checklist, token-free review)
         run: python scripts/validate_modules.py
 
+      - name: Moduli standalone (STANDALONE-*)
+        run: python scripts/validate_standalone.py
+
       - name: DM tool smoke tests
         run: |
           python scripts/suggest_encounter.py --help > /dev/null

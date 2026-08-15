@@ -30,10 +30,15 @@
 | `06-VILLAIN-E-AGENDE.md` | le agende dei villain **ora per ora**, il giro del mondo, gli **incontri scalabili** 4/5/6/7 |
 | `07-GUIDA-DM-PASSO-PASSO.md` | **la regia**: le tre serate minuto per minuto, i rilanci, le voci dei PNG |
 | `FASCICOLO-SCHEDE-GIOCATORE.md` | i sei background da dare in mano + la matrice dei legami |
+| `08-CASSETTA-DEL-DM.md` | **l'apparato d'uso**: foglio del cast, pronuncia, indice dei read-aloud, inserto per lo schermo, i suoni, il momento da fotografare, accessibilità |
+| `STATO-DEL-MODULO.md` | la memoria fra le tre serate: contatori, patti, scelte, **Echo Ledger**. Da copiare per gruppo |
 | `PLAYTEST-ALFA.md` | audit meccanico, dry-run delle tre serate, le nove correzioni applicate |
+| `PLAYTEST-SCHEDA-FEEDBACK.md` | scheda giocatore, debrief del DM, come si passa da alfa a beta |
 | `STATBLOCCHI-PF1E.md` | PNG, rivali, sicari, cavalli |
 | `ALLEGATI/mappe/` | la Ruota e le stalle: JSON, master emoji-grid, SVG (vedi il `README.md` lì dentro) |
 | `ALLEGATI/tavole/` | **tavole vettoriali**: mappa della città, il Drappo, sei ritratti (rigenerabili) |
+| `ALLEGATI/handout/` | **i quattro prop da stampare**: il contratto di Vesca, la pagina del registro, la ricevuta, il decreto |
+| `ALLEGATI/mappe/uvtt/` | le due mappe pronte per **Foundry / Roll20** |
 | `ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md` | art direction e prompt per l'edizione raster |
 | `IP-E-LICENZE.md` | Community Use Policy Paizo, OGL, provenienza |
 
@@ -50,7 +55,7 @@ prima che qualcuno tenesse i conti.
 Chi vince se lo porta nell'oratorio della contrada e tiene per un anno il **seggio
 girevole** in consiglio — l'unico voto che cambia mano.
 
-**Chi sono i PG.** La dirigenza dei **Istrice**, la contrada povera: boscaioli,
+**Chi sono i PG.** La dirigenza dell'**Istrice**, la contrada povera: boscaioli,
 raccoglitori di resina, l'ospizio dei profughi di guerra. Non vincono da
 quarant'anni. Sei uffici, sei giocatori:
 
@@ -66,7 +71,7 @@ quarant'anni. Sei uffici, sei giocatori:
 **Cosa c'è in ballo, davvero.** Sei giorni fa la Sovrintendente ha letto un decreto:
 le contrade che non si piazzano nei primi tre in cinque anni perdono il seggio e
 **vengono accorpate** alla contrada confinante. L'Istrice è al quinto anno.
-Confinano con la **Bruco**, che li vuole: sotto il bosco di spini c'è la
+Confina con il **Bruco**, che lo vuole: sotto il bosco di spini c'è la
 resina, e la resina la comprano i tintori.
 
 **Come finisce.** Con una corsa di novanta secondi e una scelta che si fa mentre la
@@ -92,9 +97,16 @@ dopo, anche.
 5. la **mappa della Ruota** (`ALLEGATI/mappe/rendered/`) e la **mappa della città**
    (`ALLEGATI/tavole/tarsilia-citta.svg`): una copia ciascuna, al centro del tavolo.
 
+**I quattro prop** (`ALLEGATI/handout/`) si stampano e si consegnano **quando la
+fiction li consegna**, mai prima: il decreto al Giorno 1, il contratto quando Vesca lo
+posa, il registro a Melchio alla prima serata, la ricevuta se perquisiscono Sfregio.
+Una volta dati, **non si ritirano**.
+
 **Per il DM:**
 
-- **`07-GUIDA-DM-PASSO-PASSO.md`** — è il file che tieni aperto tutta la sera;
+- **`07-GUIDA-DM-PASSO-PASSO.md`** e **`08-CASSETTA-DEL-DM.md`** — sono i due file
+  che tieni aperti tutta la sera;
+- **`STATO-DEL-MODULO.md`**, copiato e stampato: si compila a matita a fine serata;
 - questo file e il file della giornata che si gioca;
 - `06-VILLAIN-E-AGENDE.md` §1 (l'agenda di Vesca) e `05-INIZIAZIONE` §5 (la griglia
   degli eventi personali, da spuntare);

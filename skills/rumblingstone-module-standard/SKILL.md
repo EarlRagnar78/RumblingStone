@@ -93,6 +93,20 @@ numerici, read-aloud, ambienti dinamici, hook. Ciò che si scarta va motivato.
     scala 1,5 m, posizioni PG/PNG/villain, elementi ambientali dinamici,
     legenda con dilemmi tattici e scenografia.
 
+15. **Apparato d'uso** ([ADR-0018](../../plans/adr/ADR-0018-apparato-uso-obbligatorio.md)):
+    un file consultabile con **foglio del cast** (ogni PNG in una riga: ruolo,
+    cosa vuole, **il tic vocale**, dove sta), **guida alla pronuncia** dei nomi
+    non ovvi, **indice dei read-aloud** in ordine di gioco, **inserto per lo
+    schermo** (una pagina, tutte le CD), **cue sonori** come descrizioni e mai
+    come titoli di brani, **il momento da fotografare** (uno per sessione,
+    dichiarato) e una **nota di accessibilità**. Vale sui **nuovi**
+    consolidamenti: i cinque master esistenti non si riscrivono.
+16. **Prop fisici**: ogni documento che la fiction consegna **si consegna
+    davvero**, con i template di `campaign/templates/homebrew/`, e porta in coda
+    una nota per il DM che non si stampa (come si usa, cosa nessuno nota, cosa
+    succede se lo firmano o lo stracciano).
+    Esemplare: `STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/handout/`.
+
 ## Regole di lavorazione (sempre)
 
 - **Coerenza batte stile**: caricare `rumblingstone-campaign` (coherence +
@@ -110,7 +124,20 @@ numerici, read-aloud, ambienti dinamici, hook. Ciò che si scarta va motivato.
   mostri rigenerato se il master aggiunge statblock, `state.md` §8 se il
   canone cambia.
 
+## Collaudo — l'asticella non è finita finché non è giocata
+
+La checklist qui sopra dice **quanto in profondità** andare. Quanto quel materiale
+regga davanti a delle persone lo dice **`rumblingstone-playtest`**: audit meccanico,
+dry-run cronometrato, schede di feedback, e il ciclo **alfa → beta → collaudato**.
+Un master che ha passato `validate_modules.py` è **alfa**, non finito.
+
 ## Verifica automatica (CI, zero token)
+
+> ⚠️ I punti **15-16** non sono controllati da `validate_modules.py`: un gate a
+> macchina farebbe fallire tutti e cinque i master esistenti, e un gate che fallisce
+> sempre viene disattivato. Per i moduli autoconclusivi
+> ([ADR-0017](../../plans/adr/ADR-0017-moduli-autoconclusivi-classe-di-artefatto.md))
+> la presenza della guida del DM è invece **gated** da `validate_standalone.py`.
 
 `python scripts/validate_modules.py` fa la **review meccanica** di ogni
 `ARC*-DEF-*.md` contro questa checklist (sezioni obbligatorie, termini

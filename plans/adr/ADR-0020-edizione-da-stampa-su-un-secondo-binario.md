@@ -1,6 +1,6 @@
 # ADR-0020 — L'edizione da stampa esce da un secondo binario, non dal browser
 
-**Stato**: proposta *(gated: serve il via libera del DM sulla dipendenza esterna)*
+**Stato**: accettata *(via libera del DM 2026-08-15, dopo il campione)*
 **Data**: 2026-08-15
 **Decisione-fonte**: domanda del DM del 2026-08-15 sui tool open source per
 arrivare al livello Paizo/WotC, e l'analisi in
@@ -57,9 +57,9 @@ HTML si apre ovunque e un PDF no.
   un file binario, cioè l'opposto di un repo che genera tutto da testo
   versionato. **Da riconsiderare solo se si arriva a una tiratura reale.**
 
-### 3. Le condizioni — perché è una proposta e non una decisione presa
+### 3. Le condizioni della dipendenza esterna
 
-Sarebbe la **prima dipendenza da un binario esterno** del toolkit (finora: solo
+È la **prima dipendenza da un binario esterno** del toolkit (finora: solo
 stdlib e un browser headless). Vale quindi ADR-0012 per intero, più due regole:
 
 1. **degradazione pulita** — se `typst` non è installato, l'esportatore dice
@@ -74,6 +74,23 @@ stdlib e un browser headless). Vale quindi ADR-0012 per intero, più due regole:
 Caratteri **OFL** embeddati, non font di sistema. Candidati da verificare al
 momento dell'attuazione — la licenza si ricontrolla, non si eredita da questo
 ADR.
+
+## Attuazione — quello che si è scoperto facendola
+
+Tre cose emerse solo montando la pipeline, e che vale la pena aver scritto:
+
+1. **Con `--root`, in Typst i percorsi assoluti sono relativi alla RADICE.**
+   Passare il percorso del filesystem fa cercare `/home/...` dentro la radice e
+   fallisce. È l'errore che si prende chiunque monti Typst la prima volta.
+2. **Le tabelle da 4+ colonne scavalcano le due colonne.** In una colonna da
+   8 cm si spezzano perfino le parole del titolo: sopra quella soglia il tema le
+   fa flottare a piena larghezza, che è ciò che fa un manuale stampato.
+3. ⚠️ **Typst 0.15.1 ha un bug interno** nella costruzione dell'albero dei tag
+   PDF (`internal error: parent group`) su documenti con float dentro strutture
+   annidate. L'esportatore **riprova con `--no-pdf-tags` e lo dichiara a video**:
+   il volume è completo e i segnalibri ci sono, ma manca il livello di
+   accessibilità per i lettori di schermo. La riga di fallback si toglie il
+   giorno che una versione nuova compila — non prima, e non in silenzio.
 
 ## Conseguenze
 
@@ -93,9 +110,15 @@ ADR.
 
 ## Copertura
 
-*(da scrivere in fase di attuazione — questo ADR è ancora una proposta)*
-
-- `scripts/export_booklet_typst.py` — il secondo binario
+- `scripts/export_booklet_typst.py` — il secondo binario, nel manifest, con la
+  degradazione pulita se `typst` non è installato
+- `scripts/typst/tema-rumblingstone.typ` — il tema: due colonne, carta avorio,
+  box read-aloud, aperture di capitolo col fregio, tabelle larghe che scavalcano
+  le colonne
+- `scripts/typst/fonts/` — EB Garamond e Cinzel **con il loro OFL.txt**: la
+  tipografia è embedded, quindi il PDF ha la stessa faccia ovunque
+- [`docs/guides/GUIDA-FLUSSO-LOCALE.md`](../../docs/guides/GUIDA-FLUSSO-LOCALE.md)
+  — come le due catene lavorano insieme
 - [`docs/guides/GUIDA-BOOKLET-E-PDF.md`](../../docs/guides/GUIDA-BOOKLET-E-PDF.md)
   — la traccia stampa accanto a quella schermo
 - [ADR-0013](ADR-0013-standard-generazione-booklet-sessioni.md) — la catena HTML,

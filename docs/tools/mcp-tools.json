@@ -748,6 +748,45 @@
       "deterministic": false
     },
     {
+      "name": "export_booklet_typst",
+      "description": "Edizione da stampa (ADR-0020): dallo stesso manifest dei booklet produce UN volume PDF con tipografia OFL embedded, due colonne, fregi di capitolo e segnalibri. Affianca export_booklet_pdf.py senza sostituirlo.",
+      "invocation": "python3 scripts/export_booklet_typst.py MANIFEST.json --all",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "manifest": {
+            "type": "string",
+            "description": "Il manifest del booklet (lo stesso della catena HTML)."
+          },
+          "all": {
+            "type": "boolean",
+            "description": "Tutti i capitoli, ⚠ DM inclusi (default: solo ✉ player)."
+          },
+          "keep-typ": {
+            "type": "boolean",
+            "description": "Conserva il sorgente .typ generato (di norma è temporaneo)."
+          },
+          "list": {
+            "type": "boolean",
+            "description": "Elenca i capitoli risolti ed esci."
+          }
+        },
+        "required": [
+          "manifest"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<cartella del manifest>/<nome>-STAMPA.pdf"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "binario typst assente o compilazione fallita",
+        "2": "manifest mancante o uso errato"
+      },
+      "deterministic": true
+    },
+    {
       "name": "extract_scene_prompts",
       "description": "Estrae le scene illustrabili di un arco (read-aloud + copertura immagini) e genera lo scheletro del file dei prompt immagine (ADR-0015); rigenerazione idempotente che non perde le schede gia compilate.",
       "invocation": "python3 scripts/extract_scene_prompts.py <arco>",

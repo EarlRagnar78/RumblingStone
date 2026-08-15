@@ -28,7 +28,20 @@ python3 ../../scripts/build_booklet_html.py DRAPPO-FASCICOLO-SCHEDE.manifest.jso
 python3 ../../scripts/build_booklet_html.py DRAPPO-PROP.manifest.json --format both
 ```
 
-## I PDF
+## L'edizione da stampa — un volume solo
+
+Accanto ai PDF per capitolo c'è la **seconda catena** (ADR-0020): stesso
+manifest, un volume unico con tipografia embedded, fregi di capitolo e
+segnalibri veri.
+
+```bash
+python3 ../../scripts/export_booklet_typst.py DRAPPO-BOOKLET-DM.manifest.json --all
+```
+
+Produce `DRAPPO-BOOKLET-DM-STAMPA.pdf` — **63 pagine, un file**. Serve il binario
+`typst` (Apache 2.0): se manca, lo script dice come installarlo ed esce pulito.
+
+## I PDF per capitolo
 
 ```bash
 python3 ../../scripts/export_booklet_pdf.py DRAPPO-BOOKLET-DM.manifest.json --all

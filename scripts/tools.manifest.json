@@ -3476,6 +3476,104 @@
       "docs": [
         "docs/guides/GUIDA-BOOKLET-E-PDF.md"
       ]
+    },
+    {
+      "id": "export_booklet_typst",
+      "path": "scripts/export_booklet_typst.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/export_booklet_typst.py MANIFEST.json --all",
+      "summary": "Edizione da stampa (ADR-0020): dallo stesso manifest dei booklet produce UN volume PDF con tipografia OFL embedded, due colonne, fregi di capitolo e segnalibri. Affianca export_booklet_pdf.py senza sostituirlo.",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "typst"
+      ],
+      "args": [
+        {
+          "name": "manifest",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il manifest del booklet (lo stesso della catena HTML)."
+        },
+        {
+          "name": "--all",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Tutti i capitoli, ⚠ DM inclusi (default: solo ✉ player)."
+        },
+        {
+          "name": "--keep-typ",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Conserva il sorgente .typ generato (di norma è temporaneo)."
+        },
+        {
+          "name": "--list",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Elenca i capitoli risolti ed esci."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "<manifest>.manifest.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "scripts/typst/tema-rumblingstone.typ",
+          "kind": "text",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<cartella del manifest>/<nome>-STAMPA.pdf",
+          "kind": "pdf",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "binario typst assente o compilazione fallita",
+        "2": "manifest mancante o uso errato"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "A parità di master e tema, il PDF è riproducibile."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/export_booklet_typst.py --help",
+      "tests": [],
+      "docs": [
+        "docs/guides/GUIDA-BOOKLET-E-PDF.md",
+        "docs/guides/GUIDA-FLUSSO-LOCALE.md"
+      ]
     }
   ]
 }

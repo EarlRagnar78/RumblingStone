@@ -1,0 +1,110 @@
+{
+  "brand": "IL DRAPPO DI TARSILIA · PF1e",
+  "title": "Il Drappo di Tarsilia",
+  "subtitle": "Tre giorni, otto contrade, novanta secondi di corsa",
+  "banner": "BOOKLET DEL DM — COMPLETO",
+  "meta": "Modulo autoconclusivo per Pathfinder 1e (Core Rulebook) · sei personaggi pregenerati di 3° livello · tre sessioni da 3-4 ore · Tarsilia, Regno dei Fiumi, Golarion, 4712 AR · materiale del DM",
+  "header": "Tutti i capitoli del modulo in stile Manuale del Giocatore: regia, luoghi, agende dei villain, le tre giornate, statblocchi, mappe e collaudo. Le pagine ✉ sono le uniche da mettere in mano ai giocatori.",
+  "footer": "Il Drappo di Tarsilia",
+  "player_footer": "Novanta secondi",
+  "intro_md": "DRAPPO-BOOKLET-INTRO.md",
+  "cover_image": "../ALLEGATI/tavole/il-drappo.svg",
+  "out": "DRAPPO-BOOKLET-DM.html",
+  "chapters": [
+    {
+      "title": "✉ Benvenuti a Tarsilia",
+      "file": "DRAPPO-VOLANTINO-GIOCATORI.md",
+      "tag": "player"
+    },
+    {
+      "title": "I · Hub e quickstart",
+      "file": "../00-HUB-E-QUICKSTART-DM.md",
+      "tag": "dm"
+    },
+    {
+      "title": "II · La regia, minuto per minuto",
+      "file": "../07-GUIDA-DM-PASSO-PASSO.md",
+      "tag": "dm"
+    },
+    {
+      "title": "III · La cassetta del DM — cast, pronuncia, read-aloud, schermo, suoni",
+      "file": "../08-CASSETTA-DEL-DM.md",
+      "tag": "dm"
+    },
+    {
+      "title": "IV · Le otto contrade",
+      "file": "../CONTRADE-DI-TARSILIA.md",
+      "tag": "dm"
+    },
+    {
+      "title": "V · Regole della corsa",
+      "file": "../REGOLE-DELLA-CORSA-PF1E.md",
+      "tag": "dm"
+    },
+    {
+      "title": "VI · L'Investitura e i diciotto eventi",
+      "file": "../05-INIZIAZIONE-E-EVENTI-PG.md",
+      "tag": "dm"
+    },
+    {
+      "title": "VII · I luoghi dove si complotta",
+      "file": "../04-LUOGHI-E-INTRIGO.md",
+      "tag": "dm"
+    },
+    {
+      "title": "VIII · Le agende dei villain",
+      "file": "../06-VILLAIN-E-AGENDE.md",
+      "tag": "dm"
+    },
+    {
+      "title": "IX · Giorno 1 — La Sorte",
+      "file": "../01-GIORNO-1-LA-SORTE.md",
+      "tag": "dm"
+    },
+    {
+      "title": "X · Giorno 2 — I Partiti e la Cena",
+      "file": "../02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+      "tag": "dm"
+    },
+    {
+      "title": "XI · Giorno 3 — Lo Stacco e la Corsa",
+      "file": "../03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+      "tag": "dm"
+    },
+    {
+      "title": "XII · Statblocchi PF1e",
+      "file": "../STATBLOCCHI-PF1E.md",
+      "tag": "dm"
+    },
+    {
+      "title": "XIII · Le sei schede",
+      "file": "../PREGEN-SEI-SCHEDE-PF1E.md",
+      "tag": "dm"
+    },
+    {
+      "title": "XIV · Playtest alfa",
+      "file": "../PLAYTEST-ALFA.md",
+      "tag": "dm"
+    },
+    {
+      "title": "XV · Le mappe",
+      "file": "../ALLEGATI/mappe/README.md",
+      "tag": "dm"
+    },
+    {
+      "title": "XVI · IP e licenze",
+      "file": "../IP-E-LICENZE.md",
+      "tag": "dm"
+    },
+    {
+      "title": "XVII · Stato del modulo (da copiare per gruppo)",
+      "file": "../STATO-DEL-MODULO.md",
+      "tag": "dm"
+    },
+    {
+      "title": "XVIII · Schede di feedback — da alfa a beta",
+      "file": "../PLAYTEST-SCHEDA-FEEDBACK.md",
+      "tag": "dm"
+    }
+  ]
+}

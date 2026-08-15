@@ -1,0 +1,34 @@
+{
+  "brand": "IL DRAPPO DI TARSILIA · PF1e",
+  "title": "I prop da stampare",
+  "subtitle": "Quattro fogli che passano di mano",
+  "banner": "DA STAMPARE E CONSEGNARE",
+  "meta": "Il contratto di Vesca · la pagina del registro dei morti · la ricevuta del mediatore · il decreto — con in coda le note per il DM, che non si stampano",
+  "header": "Ogni documento che la fiction consegna, si consegna davvero (ADR-0018). Si stampano su carta pesante, si danno quando la scena li dà, e non si ritirano più.",
+  "footer": "Il Drappo di Tarsilia · prop",
+  "player_footer": "Il Drappo di Tarsilia",
+  "cover_image": "../ALLEGATI/tavole/il-drappo.svg",
+  "out": "DRAPPO-PROP.html",
+  "chapters": [
+    {
+      "title": "✉ Prop 1 · Il contratto di Vesca",
+      "file": "../ALLEGATI/handout/PROP-01-il-contratto-di-vesca.hb.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ Prop 2 · La pagina del registro",
+      "file": "../ALLEGATI/handout/PROP-02-la-pagina-del-registro.hb.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ Prop 3 · La ricevuta del mediatore",
+      "file": "../ALLEGATI/handout/PROP-03-la-ricevuta-del-mediatore.hb.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ Prop 4 · Il decreto",
+      "file": "../ALLEGATI/handout/PROP-04-il-decreto.hb.md",
+      "tag": "player"
+    }
+  ]
+}

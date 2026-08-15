@@ -1,0 +1,16 @@
+{
+  "brand": "IL DRAPPO DI TARSILIA · PF1e",
+  "title": "La dirigenza dell'Istrice",
+  "subtitle": "Sei schede pregenerate di 3° livello — fronte e retro",
+  "banner": "FASCICOLO DELLE SCHEDE",
+  "meta": "Pathfinder 1e, Core Rulebook · 20 punti acquisto · 3.000 mo di equipaggiamento · da stampare fronte-retro, una a testa",
+  "header": "Davanti i numeri, dietro chi sei: background da leggere ad alta voce, cosa sai, cosa vuoi, e cosa pensi degli altri cinque.",
+  "footer": "La dirigenza dell'Istrice",
+  "player_footer": "La dirigenza dell'Istrice",
+  "cover_image": "../ALLEGATI/tavole/ritratto-vanna.svg",
+  "out": "DRAPPO-FASCICOLO-SCHEDE.html",
+  "chapters": [
+    {"title": "✉ I numeri — le sei schede", "file": "../PREGEN-SEI-SCHEDE-PF1E.md", "tag": "player"},
+    {"title": "✉ Il retro — background e legami", "file": "../FASCICOLO-SCHEDE-GIOCATORE.md", "tag": "player"}
+  ]
+}

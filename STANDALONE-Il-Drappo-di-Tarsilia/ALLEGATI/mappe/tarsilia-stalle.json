@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "title": "Tarsilia — le stalle dell'Istrice (assalto notturno)",
+  "scale_m_per_square": 1.5,
+  "map_size": [21, 15],
+  "base_terrain": "🟫",
+  "north": "N",
+  "regions": [
+    { "terrain": "🟨", "rect": [2, 2, 8, 4], "label": "Fienile — soppalco a 3 m. Si sale con la scala (2 round) o Scalare CD 12; caduta 1d6 + prono" },
+    { "terrain": "🟨", "rect": [2, 6, 17, 2], "label": "Corridoio coperto di paglia asciutta — brucia al primo olio o incantesimo di fuoco" }
+  ],
+  "structures": [
+    { "type": "🏰", "line": [[1, 1], [20, 1]] },
+    { "type": "🏰", "line": [[20, 1], [20, 14]] },
+    { "type": "🏰", "line": [[20, 14], [1, 14]] },
+    { "type": "🏰", "line": [[1, 14], [1, 1]] },
+    { "type": "🏰", "line": [[5, 9], [5, 13]], "label": "Assi di separazione dei box, alte 1,5 m: copertura, si scavalcano con Acrobazia CD 10" },
+    { "type": "🏰", "line": [[9, 9], [9, 13]] },
+    { "type": "🏰", "line": [[13, 9], [13, 13]] },
+    { "type": "🏰", "line": [[17, 9], [17, 13]] },
+    { "type": "🏰", "line": [[5, 9], [17, 9]] },
+    { "type": "🚪", "at": [1, 8] },
+    { "type": "🚪", "at": [20, 5] },
+    { "type": "🚪", "at": [14, 2] },
+    { "type": "🪜", "at": [6, 3] },
+    { "type": "🛢", "at": [3, 12] },
+    { "type": "📦", "at": [18, 12] },
+    { "type": "🪓", "at": [18, 3] },
+    { "type": "🏮", "at": [10, 7] }
+  ],
+  "hazards": [
+    { "type": "🔥", "at": [10, 6], "label": "Paglia (tutto il corridoio)", "effect": "Se prende fuoco: 1d6/round a chi ci sta. Fumo in 3 round: Tempra CD 15 a round o soffocare, −2 a tutto" },
+    { "type": "🎯", "at": [6, 3], "label": "BOTOLA DEL FIENILE (G4)", "effect": "Da qui entra Sfregio mentre i bravacci fanno rumore alla porta sul canale. Percezione CD 20 per sentirlo" },
+    { "type": "🎯", "at": [14, 2], "label": "FINESTRA ALTA (O3)", "effect": "Via di fuga di Sfregio. Acrobazia CD 12 per uscirne senza rallentare" }
+  ],
+  "units": [
+    { "faction": "Istrice", "name": "Ombra (dorme in stalla)", "token": "🔵", "at": [8, 7], "cr": "druida 3", "note": "Percezione +10: è lei che si accorge" },
+    { "faction": "Cavalli", "name": "Il cavallo della contrada", "token": "🟢", "at": [7, 11], "cr": "animale GS 1", "note": "H12 — calcia 1d4+2 a chiunque gli sia adiacente a fine round, amici compresi" },
+    { "faction": "Cavalli", "name": "Regina, la mula", "token": "🟢", "at": [11, 11], "cr": "animale", "note": "22 anni. Batte lo zoccolo: è il primo allarme. Liberata, blocca il corridoio" },
+    { "faction": "Assalitori", "name": "Sfregio", "token": "⚫", "at": [6, 3], "cr": "ladro 4, GS 3", "note": "entra dalla botola. NON ingaggia. Fugge a 8 pf" },
+    { "faction": "Assalitori", "name": "Bravaccio 1", "token": "🔴", "at": [2, 8], "cr": "guerriero 1", "note": "porta sul canale (B9): fanno rumore apposta" },
+    { "faction": "Assalitori", "name": "Bravaccio 2", "token": "🔴", "at": [2, 7], "cr": "guerriero 1", "note": "" },
+    { "faction": "Assalitori", "name": "Bravaccio 3 (Pico)", "token": "🔴", "at": [3, 8], "cr": "guerriero 1", "note": "17 anni. Se i PG l'hanno curato al Giorno 1, si arrende subito" },
+    { "faction": "Assalitori", "name": "Bravaccio 4", "token": "🔴", "at": [3, 9], "cr": "guerriero 1", "note": "" }
+  ],
+  "notes": [
+    "Coordinate come nel testo del Giorno 2 §6: B9 porta sul canale, G4 botola del fienile, H12 box del cavallo, O3 finestra alta.",
+    "Obiettivo di Sfregio, in ordine: azzoppare il cavallo con la pasta corrosiva (1 round intero, cavallo fermo) → avvelenare l'abbeveratoio → portarsi via Nocca.",
+    "Se i PG preparano una trappola: iniziativa a loro, +2 CA a chi è in copertura preparata, e Sfregio perde l'attacco furtivo del primo round.",
+    "Sconfitta dei PG: nessuno viene finito. Gli assalitori prendono ciò per cui sono venuti e se ne vanno."
+  ]
+}

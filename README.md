@@ -24,6 +24,20 @@ The campaign is organized into chronological and locational arcs:
 - **08_La Battaglia Di Hammerfist**: Strategic, large-scale warfare defending the dwarven settlement.
 - **09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist**: Narrative continuation and aftermath of the major conflict.
 
+## Standalone Module — *Il Drappo di Tarsilia* (Pathfinder 1e · Golarion)
+
+Besides the main campaign, the repo ships one **self-contained module** that shares
+none of its setting: [`STANDALONE-Il-Drappo-di-Tarsilia/`](STANDALONE-Il-Drappo-di-Tarsilia/).
+
+Three sessions of 3–4 hours for **six players**, **six pregenerated 3rd-level
+characters**, **Pathfinder 1st Edition** (Core Rulebook only), set in an original
+river city of Golarion's River Kingdoms. It reuses the *system* of the Channathgate
+race arc — the author's own material — and nothing else: no Faerûn, no *Red Hand of
+Doom*, no campaign PCs. Start at
+[`00-HUB-E-QUICKSTART-DM.md`](STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md);
+the IP rundown is in
+[`IP-E-LICENZE.md`](STANDALONE-Il-Drappo-di-Tarsilia/IP-E-LICENZE.md).
+
 ## Characters
 
 ### PG (Player Characters)

@@ -210,6 +210,42 @@ CRITERI DI ACCETTAZIONE
    e questo lavoro è il suo Lotto 6.
 6. Nessun file della campagna modificato.
 
+QUANTE IMMAGINI SERVONO DAVVERO — la stima, misurata su un manuale WotC
+    ⚠️ Le cifre di riferimento sono APPROSSIMATE: vengono dalle convenzioni dei
+    volumi pubblicati (un cartonato d'avventura 5e da ~200-250 pagine), non da un
+    censimento fatto sui libri. Servono a dare un ordine di grandezza, non a
+    inseguire un numero.
+
+    Densità di un cartonato WotC: circa UN PEZZO D'ARTE OGNI 2-2,5 PAGINE, così
+    distribuito — ~1 apertura per capitolo (8-10), ~35-55 tavole di scena e di
+    evento, ~15-25 ritratti di PNG, ~10-20 creature specifiche dell'avventura,
+    ~25-40 mappe (versioni giocatore incluse), 3-8 handout. Totale ~90-130 pezzi.
+
+    IL DRAPPO, impaginato in Typst, sta su 55-70 pagine. Alla densità WotC
+    farebbero 25-30 pezzi. NE SERVONO DICIOTTO, e meno è meglio (la skill
+    rumblingstone-art-direction §8: un modulo con sei immagini scelte batte un
+    modulo con venti generate):
+      1  copertina
+      6  ritratti dei PG                            832x1216
+      5  ritratti PNG chiave: Vesca, Attu, Roncetti, Sfregio, Nonna Grasa
+      3  tavole d'ambiente/evento: la Ruota gremita, la Cena dei Partiti,
+         l'assalto notturno alle stalle              1536x864
+      1  il Drappo, come oggetto
+      2  spot piccoli: la bilancia dell'Oca, la pagina del registro
+    GIÀ FATTI e da non rifare: 19 fregi di capitolo, 8 stemmi, 2 mappe tattiche
+    (+1 versione giocatore da produrre), 4 prop, 6 ritratti-segnaposto vettoriali.
+
+    Costo reale su una macchina come quella del DM (RTX 4050 Laptop, 6 GB):
+    ~1,5-2 minuti a immagine con SDXL, ma il GATE DI RIFIUTO fa scartare 2-3
+    generazioni su 4 — quindi conta 1,5-2 ORE di macchina per i diciotto, più il
+    tempo di guardarli il giorno dopo. Il collo di bottiglia è il giudizio, non
+    la GPU.
+
+    LA CAMPAGNA PRINCIPALE è un altro ordine di grandezza: 9 archi × (1 apertura +
+    2-3 scene + 2-4 PNG) ≈ 55-70 pezzi, che con le mappe diventano 90-110 — cioè
+    il contenuto artistico di un cartonato intero. NON si affronta in blocco: si
+    fa UN ARCO ALLA VOLTA, e si comincia da quello che il tavolo sta giocando.
+
 COSA NON FARE
 - Non riscrivere il testo del modulo: è collaudato.
 - Non rinominare le contrade: la decisione del DM è di tenere i nomi senesi per ora

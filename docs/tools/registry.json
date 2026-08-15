@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 41,
+  "tool_count": 42,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -1591,6 +1591,88 @@
       "tests": [],
       "docs": [
         "scripts/README-automation.md"
+      ]
+    },
+    {
+      "id": "build_chapter_marks",
+      "path": "scripts/build_chapter_marks.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/build_chapter_marks.py --all",
+      "summary": "Genera i fregi di capitolo in SVG: due serie distinte (campagna per arco, drappo per capitolo), medaglioni monocromatici originali disegnati con primitive geometriche.",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--serie",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": [
+            "campagna",
+            "drappo"
+          ],
+          "repeatable": false,
+          "desc": "Quale serie generare."
+        },
+        {
+          "name": "-o/--out",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cartella di destinazione (default: quella canonica della serie)."
+        },
+        {
+          "name": "--all",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Entrambe le serie, nei posti canonici."
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "path": "STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/tavole/fregi/fregio-*.svg",
+          "kind": "svg",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "docs/assets/fregi/fregio-*.svg",
+          "kind": "svg",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "2": "errore uso (né --serie né --all)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Disegni statici: la rigenerazione è byte-identica."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/build_chapter_marks.py --help",
+      "tests": [],
+      "docs": [
+        "docs/guides/GUIDA-BOOKLET-E-PDF.md"
       ]
     },
     {

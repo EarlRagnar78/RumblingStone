@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "title": "Tarsilia — le stalle dei Boschispini (assalto notturno)",
+  "title": "Tarsilia — le stalle dell'Istrice (assalto notturno)",
   "scale_m_per_square": 1.5,
   "map_size": [21, 15],
   "base_terrain": "🟫",
@@ -34,7 +34,7 @@
     { "type": "🎯", "at": [14, 2], "label": "FINESTRA ALTA (O3)", "effect": "Via di fuga di Sfregio. Acrobazia CD 12 per uscirne senza rallentare" }
   ],
   "units": [
-    { "faction": "Boschispini", "name": "Ombra (dorme in stalla)", "token": "🔵", "at": [8, 7], "cr": "druida 3", "note": "Percezione +10: è lei che si accorge" },
+    { "faction": "Istrice", "name": "Ombra (dorme in stalla)", "token": "🔵", "at": [8, 7], "cr": "druida 3", "note": "Percezione +10: è lei che si accorge" },
     { "faction": "Cavalli", "name": "Il cavallo della contrada", "token": "🟢", "at": [7, 11], "cr": "animale GS 1", "note": "H12 — calcia 1d4+2 a chiunque gli sia adiacente a fine round, amici compresi" },
     { "faction": "Cavalli", "name": "Regina, la mula", "token": "🟢", "at": [11, 11], "cr": "animale", "note": "22 anni. Batte lo zoccolo: è il primo allarme. Liberata, blocca il corridoio" },
     { "faction": "Assalitori", "name": "Sfregio", "token": "⚫", "at": [6, 3], "cr": "ladro 4, GS 3", "note": "entra dalla botola. NON ingaggia. Fugge a 8 pf" },

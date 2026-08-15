@@ -45,13 +45,13 @@ decidono che non si può.
 
 | Capitano | Contrada | Classe | GS | pf | CA | Il numero che conta |
 |---|---|---|---|---|---|---|
-| **Ottavia Vesca** | Trama d'Argento | esperta 5 | 3 | 27 | 12 | Percepire Intenzioni +11, Diplomazia +10 |
-| **Gerlando Attu** | Piuma d'Oro | esperto 5 | 3 | 25 | 13 | Valutare +13, Raggirare +11 |
-| **Zoe Barbanera** | Cresta di Marea | guerriera 4 | 3 | 38 | 17 | Professione (pilota) +9, Intimidire +8 |
-| **Ubalda Trenchi** | Bastione di Ferro | guerriera 6 | 5 | 55 | 20 | attacco +11 (1d8+5), e **dodici miliziani** |
-| **Peleo Vanni** | Guglie del Verme | mago 5 | 4 | 27 | 12 | *individuazione dei pensieri*, *invisibilità*, Sapienza Magica +13 |
-| **Sirena Occo** | Ombre Bisbiglianti | ladra 5 | 4 | 33 | 19 | Raggirare +12, Furtività +13, attacco furtivo +3d6 |
-| **Lino Rasca** | Corno Dorato | bardo 5 | 4 | 30 | 15 | Intrattenere **+14**, *ammaliare persone* CD 16 |
+| **Ottavia Vesca** | Bruco | esperta 5 | 3 | 27 | 12 | Percepire Intenzioni +11, Diplomazia +10 |
+| **Gerlando Attu** | Oca | esperto 5 | 3 | 25 | 13 | Valutare +13, Raggirare +11 |
+| **Zoe Barbanera** | Onda | guerriera 4 | 3 | 38 | 17 | Professione (pilota) +9, Intimidire +8 |
+| **Ubalda Trenchi** | Torre | guerriera 6 | 5 | 55 | 20 | attacco +11 (1d8+5), e **dodici miliziani** |
+| **Peleo Vanni** | Drago | mago 5 | 4 | 27 | 12 | *individuazione dei pensieri*, *invisibilità*, Sapienza Magica +13 |
+| **Sirena Occo** | Civetta | ladra 5 | 4 | 33 | 19 | Raggirare +12, Furtività +13, attacco furtivo +3d6 |
+| **Lino Rasca** | Leocorno | bardo 5 | 4 | 30 | 15 | Intrattenere **+14**, *ammaliare persone* CD 16 |
 
 > **Se serve un profilo completo**, costruiscilo al volo con la ricetta rapida: array
 > eroico (15, 14, 13, 12, 10, 8), livello = GS + 1 per le classi da PG, max pf al 1°
@@ -126,7 +126,7 @@ Intimidire CD 14 fatto da chi ne ha appena messo giù uno. Nessuno di loro morir
 Sfregio.
 **Pico** — uno dei quattro, diciassette anni, quello della rissa alla fontana.
 
-### 4.3 · Miliziano del Bastione — GS 1
+### 4.3 · Miliziano del Torre — GS 1
 
 **Umano guerriero 2** · pf 20 · **CA** 18 (+5 corazza a scaglie, +2 scudo, +1 Des)
 TS Tem +5, Rif +1, Vol +0
@@ -180,13 +180,13 @@ Una riga a testa: in Corsa serve solo il bonus di Cavalcare e quanto reggono.
 
 | Contrada | Fantino | **Cavalcare** | CA | pf | Scudiscio | Come corre |
 |---|---|---|---|---|---|---|
-| **Piuma d'Oro** | Selmo Ancora | **+12** | 15 | 22 | +7 | il migliore in pista, e lo sa. Scudiscia alla curva sud dove il palco non vede |
-| **Cresta di Marea** | Tilde Barbanera *(nipote)* | **+10** | 15 | 18 | +6 | pulita, testarda, non tradisce mai un patto |
-| **Trama d'Argento** | «il Muto» | **+9** | 16 | 20 | +6 | non commette irregolarità. Nemmeno una. È il fastidio |
-| **Bastione di Ferro** | cap. Losco | +8 | 17 | 24 | +6 | ostacola, non sorpassa |
-| **Guglie del Verme** | Peleo Vanni in persona | +6 | 12 | 15 | +3 | corre per misurare, non per vincere |
-| **Ombre Bisbiglianti** | ignoto, maschera | +8 | 15 | 18 | +7 | scommette contro la propria contrada. Il DM sa quando |
-| **Corno Dorato** | Fiora Rasca | +8 | 14 | 16 | +5 | corre bene e canta meglio |
+| **Oca** | Selmo Ancora | **+12** | 15 | 22 | +7 | il migliore in pista, e lo sa. Scudiscia alla curva sud dove il palco non vede |
+| **Onda** | Tilde Barbanera *(nipote)* | **+10** | 15 | 18 | +6 | pulita, testarda, non tradisce mai un patto |
+| **Bruco** | «il Muto» | **+9** | 16 | 20 | +6 | non commette irregolarità. Nemmeno una. È il fastidio |
+| **Torre** | cap. Losco | +8 | 17 | 24 | +6 | ostacola, non sorpassa |
+| **Drago** | Peleo Vanni in persona | +6 | 12 | 15 | +3 | corre per misurare, non per vincere |
+| **Civetta** | ignoto, maschera | +8 | 15 | 18 | +7 | scommette contro la propria contrada. Il DM sa quando |
+| **Leocorno** | Fiora Rasca | +8 | 14 | 16 | +5 | corre bene e canta meglio |
 
 **Corruzione**: ogni fantino rivale ha un prezzo, e non è sempre in monete.
 TS Volontà CD 15 (+5 se l'offerta è enorme), con bonus pari all'Onore che gli porta

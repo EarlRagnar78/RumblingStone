@@ -65,7 +65,7 @@ basta, e il rione risponde. **Morale +1**, senza tiri. Alcune cose si danno.
 
 ### §1-bis · Se hanno preso Nocca
 
-Nella tintoria della Trama d'Argento, terzo tino, legato ma non malmenato: la
+Nella tintoria del Bruco, terzo tino, legato ma non malmenato: la
 consegna era «tenetelo fino a mezzogiorno». I due che lo guardano sono **bravacci del
 canale** (§`STATBLOCCHI-PF1E.md` §4.2) e uno dei due è **Pico**, il ragazzo della
 rissa alla fontana — se i PG lo hanno curato al Giorno 1, apre la porta lui e chiede
@@ -86,7 +86,7 @@ la gente decide oggi chi tifare, e il rumore che farà al terzo giro dipende da 
 
 | Cosa | Prova | Effetto |
 |---|---|---|
-| **La sbandierata** contro gli alfieri della Piuma d'Oro | Intrattenere (danza) o Acrobazia, contrapposta (+9 il rivale) | ±1 Morale |
+| **La sbandierata** contro gli alfieri dell'Oca | Intrattenere (danza) o Acrobazia, contrapposta (+9 il rivale) | ±1 Morale |
 | **Il Duce in armatura** — chi apre il corteo, e deve reggere quaranta chili di ferro vecchio al sole per un'ora | Tempra CD 13, poi Tempra CD 15 | riuscendo entrambe: **+1 Morale**. Fallendo la seconda: sviene davanti a tutti, **−1** |
 | **Il tamburino** — se lasciano salire **Bardo il Bardo** sul carro | nessuna | **+1 Morale**, e suona male, e non importa |
 
@@ -101,7 +101,7 @@ Un'ora prima dello Stacco, sotto il porticato dove si preparano i fantini.
 
 **Se Nocca non ha confessato** (`02-GIORNO-2` §5): **Gerlando Attu** si avvicina al
 recinto dei fantini e lo dice a voce normale, a due passi da tre giornalai e da
-mezza Piuma d'Oro: quaranta monete d'argento, tre mesi fa, un paese a valle.
+mezza Oca: quaranta monete d'argento, tre mesi fa, un paese a valle.
 
 > **ATTU (cortese, quasi dispiaciuto — e non sta recitando):** *«Non lo dico per
 > farti male. Lo dico adesso perché fra un'ora non conterebbe più niente. Se corri e
@@ -117,14 +117,24 @@ d'uscita.
 - Berenice che ci fa una canzone lì per lì (Intrattenere CD 22): il rione ride, e chi
   ride non si indigna. **Morale −1**;
 - Melchio che dice la verità sul registro dei morti (nessuna prova, ma costa: da quel
-  momento la Trama d'Argento ha un nemico pubblico e il modulo prende un'altra
+  momento il Bruco ha un nemico pubblico e il modulo prende un'altra
   temperatura);
 - Tesio che tira fuori il registro del 4692 davanti alla Sovrintendente: non salva il
   Morale, ma apre il finale alternativo del §7.
 
-**Se Nocca ha confessato**: Attu lo dice lo stesso, e non succede niente. Il rione lo
-sapeva già dalla sua contrada. **Morale −0**, e Attu, che è un uomo intelligente,
-capisce di aver speso male una carta buona.
+**Se Nocca ha confessato**: Attu se ne accorge a metà frase — e **cambia bersaglio
+senza cambiare tono**. Non spreca il momento: tira fuori l'altra carta, che ha in
+mano dal primo giorno.
+
+> **ATTU (identico, senza una pausa):** *«…e allora parliamo di una cosa che invece
+> non sapete. La vostra Capitana ha firmato per il grano due inverni fa. Da sola.
+> Duecentoquaranta monete d'oro, e non le ho mai chieste indietro. Adesso sapete
+> anche perché.»*
+
+**Effetto**: **Morale −2** invece di −3, e **Onore invariato** — il colpo va su Vanna,
+non sul fantino. Le contro-mosse del giocatore di Vanna valgono uguale.
+*(Correzione del playtest alfa, rilievo I: con la confessione al Giorno 2, la scena
+evaporava in sei minuti e il Giorno 3 perdeva il suo unico colpo basso.)*
 
 ---
 
@@ -138,7 +148,7 @@ di rincorsa.
 > *Sotto le funi non si sente più la piazza. Si sente il fiato dei cavalli, che è
 > corto e forte, e il cuoio che scricchiola quando qualcuno stringe.*
 >
-> *Il fantino della Piuma d'Oro passa lo scudiscio nella mano sinistra e poi in
+> *Il fantino dell'Oca passa lo scudiscio nella mano sinistra e poi in
 > quella destra e poi di nuovo nella sinistra. Lo fa da tre minuti e non se ne
 > accorge.*
 >
@@ -167,7 +177,7 @@ Le CD e i modificatori stanno in `REGOLE-DELLA-CORSA-PF1E.md` §6.
 2. **il giro dei posti**: ogni PG non-fantino che ha ancora un'azione per quel giro
    dichiara e tira;
 3. **il tiro di Nocca**, con tutti i bonus già sul tavolo;
-4. **i tre rivali vivi** (Piuma d'Oro, Cresta di Marea, Trama d'Argento): un d20 a
+4. **i tre rivali vivi** (Oca, Onda, Bruco): un d20 a
    testa. Le altre quattro contrade si risolvono con la tabella qui sotto;
 5. **chiusura**: chi guadagna, chi perde, e una cosa che cambia nella piazza.
 
@@ -176,9 +186,9 @@ insieme, e narra:
 
 | 1d6 | Cosa succede laggiù |
 |---|---|
-| 1 | il Bastione ostacola le Guglie e ci finiscono male tutte e due |
-| 2 | il Corno Dorato prende la testa per un tratto e la piazza urla |
-| 3 | le Ombre Bisbiglianti corrono pulito e nessuno se lo aspettava |
+| 1 | la Torre ostacola il Drago e ci finiscono male tutte e due |
+| 2 | il Leocorno prende la testa per un tratto e la piazza urla |
+| 3 | la Civetta corre pulito e nessuno se lo aspettava |
 | 4 | uno dei quattro cade. Il cavallo continua **scosso** |
 | 5 | due di loro si scudisciano a vicenda e perdono un tratto entrambe |
 | 6 | niente. Corrono e basta |
@@ -186,16 +196,16 @@ insieme, e narra:
 ### Primo giro — si conta chi c'è
 
 Nessuna interferenza speciale. Serve a far capire il ritmo del sistema.
-**Il patto con Attu**, se stretto, scatta qui: alla Curva Nord i Boschispini devono
-ostacolare la Cresta di Marea, e se non lo fanno, Attu se ne accorge.
+**Il patto con Attu**, se stretto, scatta qui: alla Curva Nord l'Istrice deve
+ostacolare l'Onda, e se non lo fanno, Attu se ne accorge.
 
 ### Secondo giro — si comincia a barare
 
-- **La Piuma d'Oro** scudiscia Nocca alla Curva Sud, dove il palco non vede.
+- **La Oca** scudiscia Nocca alla Curva Sud, dove il palco non vede.
   Attacco +7 contro CA di Nocca.
-- **La Trama d'Argento** non fa niente di irregolare. Corre bene, e questo è il
+- **La Bruco** non fa niente di irregolare. Corre bene, e questo è il
   fastidio.
-- **Se c'è un patto con Barbanera**: i battellieri della Cresta di Marea aprono un
+- **Se c'è un patto con Barbanera**: i battellieri dell'Onda aprono un
   varco sul Dritto. **+2 Lunghezze**, alla lettera e non oltre.
 
 ### Terzo giro — vedi §6
@@ -208,7 +218,7 @@ All'inizio del terzo giro, **succede**. Cosa esattamente dipende dal Giorno 2.
 
 | Se al Giorno 2… | Alla curva nord adesso |
 |---|---|
-| **l'acqua della stalla è stata avvelenata** (anche solo per un'altra contrada: l'abbeveratoio è comune) | il cavallo della **Piuma d'Oro** impazzisce, punta il transennato e lo prende in pieno |
+| **l'acqua della stalla è stata avvelenata** (anche solo per un'altra contrada: l'abbeveratoio è comune) | il cavallo della **Oca** impazzisce, punta il transennato e lo prende in pieno |
 | **il cavallo dei PG è stato azzoppato** | è il loro cavallo che cede, alla curva, addosso alla barriera |
 | **niente di tutto questo** | un fantino cade e la ressa spinge il transennato: le assi cedono per il peso della gente |
 
@@ -268,10 +278,10 @@ Il decreto si legge lo stesso, com'è scritto. La Sovrintendente non fa eccezion
 non le fa neanche stavolta. Ma:
 
 - **Vesca**, che ha vinto quello che voleva, si alza in consiglio e chiede che il
-  nome «Boschispini» resti sul seggio accorpato. Le viene concesso. È una cosa
+  nome «Istrice» resti sul seggio accorpato. Le viene concesso. È una cosa
   piccola e non è niente, e per il rione è tutto.
 - Se **Tesio** ha portato il registro del 4692 alla Sovrintendente (§3), Roncetti
-  apre una verifica sui confini: cinquanta passi di bosco tornano ai Boschispini, e
+  apre una verifica sui confini: cinquanta passi di bosco tornano all'Istrice, e
   quel bosco vale, per legge di Tarsilia, **il diritto a ripresentarsi fra due anni**.
 - Se hanno **il guado rubato** nel Peso (`01-GIORNO-1` §4, via 4), Attu lo tira fuori
   adesso, e la verifica non parte.
@@ -311,10 +321,10 @@ entrato all'ospizio a marzo dicendo che cercava un modello.
   primo sguardo e gli altri otto subito dopo;
 - **chiunque**, se qualcuno pensa a guardare il Drappo invece di portarselo via.
 
-**Perché conta.** Il Drappo va nell'oratorio di chi vince. Se vince la Piuma d'Oro,
-i nove raccoglitori dei Boschispini stanno appesi per un anno nell'oratorio dei
+**Perché conta.** Il Drappo va nell'oratorio di chi vince. Se vince l'Oca,
+i nove raccoglitori dell'Istrice stanno appesi per un anno nell'oratorio dei
 banchieri, e Attu dovrà spiegare a tutti quelli che entrano chi sono. Se vince la
-Trama d'Argento, stanno appesi da Vesca. **Rasca l'ha fatto apposta** e non lo
+Bruco, stanno appesi da Vesca. **Rasca l'ha fatto apposta** e non lo
 ammetterà mai: quando glielo chiedono, alza le spalle e dice che gli servivano delle
 facce.
 
@@ -326,7 +336,7 @@ Rasca lascia Tarsilia quella notte e non ritira il compenso.
 
 ### Un paragrafo a testa — da leggere alla fine, uno alla volta
 
-- **Vanna** — il debito con la Piuma d'Oro esiste ancora. Se hanno vinto, Attu lo
+- **Vanna** — il debito con l'Oca esiste ancora. Se hanno vinto, Attu lo
   riscuote a dicembre, per intero, con cortesia. Se hanno perso, non lo riscuote mai,
   e questo è il peso più grosso che le sia mai stato messo addosso.
 - **Nocca** — corra o non corra, vinca o no: Ferrante è ancora in città, e adesso ha
@@ -346,7 +356,7 @@ Rasca lascia Tarsilia quella notte e non ritira il compenso.
 | Cosa hanno fatto | Cosa torna |
 |---|---|
 | Rubato il guado | Attu ha una prova, e le prove non scadono |
-| Salvato la gente perdendo | i Boschispini hanno il nome sul seggio e nessun potere: è la posizione migliore da cui cospirare |
+| Salvato la gente perdendo | l'Istrice ha il nome sul seggio e nessun potere: è la posizione migliore da cui cospirare |
 | Accettato l'offerta di Vesca | gli ottanta tintori lavorano, i raccoglitori pure, e l'anno prossimo i figli di entrambi non sanno più a quale contrada appartengono |
 | Ucciso qualcuno | la milizia di Ubalda Trenchi ha un fascicolo aperto. Trenchi non dimentica e non ha fretta |
 | Ignorato il transennato | nessuno lo dirà mai in faccia a nessuno |
@@ -369,7 +379,7 @@ Il montepremi della corsa: **500 mo** alla contrada vincitrice, **200** alla sec
 trova la città chiusa.
 
 Se hanno preso Sfregio vivo, la ricevuta del mediatore vale **300 mo** venduta alle
-Ombre Bisbiglianti — oppure vale molto di più tenuta in tasca.
+Civetta — oppure vale molto di più tenuta in tasca.
 
 ---
 

@@ -49,15 +49,15 @@ a contrada; c'è mezza città sui gradini a guardare gratis.
   sente il tamburo, si calma se gli parli sotto voce)*.
 - **Fallimento**: niente. E la piazza lo ha visto sbandare.
 - **Fallimento di 5+**: cade in prova. Nessun danno serio, **Morale −1**, e da questo
-  momento tre osterie danno i Boschispini per ultimi.
+  momento tre osterie danno l'Istrice per ultimi.
 
 **Ombra, in contemporanea**: Addestrare Animali CD 14 per capire in che stato è
 davvero il cavallo. Riuscendo, sa che ha bisogno di **ferri nuovi** — 12 mo dal
-maniscalco del Bastione, che li fa bene, o 4 dal maniscalco della Trama d'Argento,
+maniscalco del Torre, che li fa bene, o 4 dal maniscalco del Bruco,
 che li fa in fretta. *(Il secondo li fa storti. Non per malizia: ha ottant'anni.)*
 
 **Chi altro c'è in pista**: Barbanera prova due volte e se ne va; il fantino della
-Piuma d'Oro prova sei volte e fa il tempo migliore; Peleo Vanni misura le curve con
+Oca prova sei volte e fa il tempo migliore; Peleo Vanni misura le curve con
 una corda annodata e prende appunti, e se i PG gli hanno pagato le 150 mo, adesso è
 il momento in cui consegna il foglio.
 
@@ -84,9 +84,16 @@ tenenti.
 
 ### Come si gioca
 
-**Un'ora di gioco, non di più.** Il Capitano dei PG (Vanna) è dentro; gli altri PG
-sono fuori, e questo è voluto: **giocali comunque**, in parallelo, con la scena §3
-che comincia nelle osterie mentre la trattativa è in corso.
+**Cinquanta minuti, e il timer è in-fiction.** Metti una sveglia da cucina: quando
+suona, **la campana di mezzogiorno chiude il mercato del grano** e i Capitani escono,
+patti o non patti. Non è una scorciatoia del DM: è il regolamento del Drappo, e i
+giocatori possono usarlo a loro favore tirando per le lunghe.
+
+Il Capitano dei PG (Vanna) è dentro; gli altri cinque sono fuori — e **fuori
+succedono cose adesso, non dopo**: il duello dei canti del §3 comincia **in
+parallelo**, nelle osterie, mentre la trattativa è in corso. *(Playtest alfa, serata
+2: con i Partiti giocati in blocco, cinque giocatori sono rimasti fuori scena per
+settantadue minuti.)*
 
 > ⚠️ Se il tavolo ha sei giocatori e ne isoli uno per un'ora, hai perso la serata.
 > Taglia ogni cinque minuti: dentro / fuori / dentro. Tesio può ascoltare da fuori
@@ -97,9 +104,9 @@ che comincia nelle osterie mentre la trattativa è in corso.
 
 | Chi | Chiede | Offre | La trappola |
 |---|---|---|---|
-| **Attu** (Piuma d'Oro) | ostacolare la Cresta di Marea alla curva nord | cancella un terzo del debito | vale **solo se la Piuma d'Oro arriva prima**. Percepire Intenzioni CD 20 per accorgersene, oppure **leggere il foglio** — che è lì, e nessuno lo legge mai |
-| **Barbanera** (Cresta di Marea) | niente, se non che i Boschispini non aiutino Attu | scorta ai battellieri per il cavallo e la stalla, stanotte | mantiene alla lettera e non oltre: se il patto dice «alla stalla», al fantino non ci pensa nessuno |
-| **Vesca** (Trama d'Argento) | il ritiro, ancora | il contratto di ieri, immutato | nessuna. E questo è il problema |
+| **Attu** (Oca) | ostacolare l'Onda alla curva nord | cancella un terzo del debito | vale **solo se l'Oca arriva prima**. Percepire Intenzioni CD 20 per accorgersene, oppure **leggere il foglio** — che è lì, e nessuno lo legge mai |
+| **Barbanera** (Onda) | niente, se non che l'Istrice non aiutino Attu | scorta ai battellieri per il cavallo e la stalla, stanotte | mantiene alla lettera e non oltre: se il patto dice «alla stalla», al fantino non ci pensa nessuno |
+| **Vesca** (Bruco) | il ritiro, ancora | il contratto di ieri, immutato | nessuna. E questo è il problema |
 
 **Meccanica**: `REGOLE-DELLA-CORSA-PF1E.md` §4. Ogni patto stretto **si scrive su un
 foglietto** e resta al centro del tavolo fino alla fine del modulo.
@@ -107,8 +114,8 @@ foglietto** e resta al centro del tavolo fino alla fine del modulo.
 **Le altre quattro contrade** trattano fra loro anche se i PG non fanno niente. Al
 termine dell'ora, annuncia due patti che sono stati stretti senza di loro:
 
-1. **Bastione ↔ Guglie del Verme**: si lasciano strada a vicenda. Innocuo.
-2. **Piuma d'Oro ↔ Ombre Bisbiglianti**: Attu ha comprato qualcosa. Non si sa cosa.
+1. **Torre ↔ Drago**: si lasciano strada a vicenda. Innocuo.
+2. **Oca ↔ Civetta**: Attu ha comprato qualcosa. Non si sa cosa.
    *(È l'informazione su Nocca. Emerge in §5.)*
 
 **Se i PG non stringono nessun patto**: legittimo, e va premiato con la sola cosa che
@@ -129,12 +136,12 @@ Dillo esplicitamente al giocatore: **è una scommessa, e deve saperlo**.
 
 | Dove | Contro | Intrattenere del rivale | Se vincono |
 |---|---|---|---|
-| **La Cesta Rotta** (osteria dei battellieri) | il cantore della Cresta di Marea, che è ubriaco | +6 | qui si vince facile, e vale poco: **Morale +1** |
-| **Il Fondaco** (osteria dei tintori) | **il coro della Trama d'Argento**, sei voci | +11 *(coro: +2 in più)* | **Morale +2** e il fantino rivale scosso. Perdere qui fa male |
-| **Il teatro sul ponte** | **Lino Rasca** in persona, Corno Dorato | +14 | vedi sotto |
+| **La Cesta Rotta** (osteria dei battellieri) | il cantore dell'Onda, che è ubriaco | +6 | qui si vince facile, e vale poco: **Morale +1** |
+| **Il Fondaco** (osteria dei tintori) | **il coro del Bruco**, sei voci | +11 *(coro: +2 in più)* | **Morale +2** e il fantino rivale scosso. Perdere qui fa male |
+| **Il teatro sul ponte** | **Lino Rasca** in persona, Leocorno | +14 | vedi sotto |
 
 **Il duello con Rasca** non è un duello. Rasca è il pittore del Drappo e l'uomo per
-cui Berenice ha lasciato il Corno Dorato tre anni fa. Se lei sale sul palco, lui
+cui Berenice ha lasciato il Leocorno tre anni fa. Se lei sale sul palco, lui
 smette di cantare a metà strofa e le fa una domanda davanti a duecento persone.
 
 > **Regia — è una scena di Berenice, e gli altri cinque guardano.** La domanda la
@@ -177,10 +184,10 @@ che passa in mezzo alle tavole perché è tradizione che passi.
    scoprono chi, nel rione, è già dall'altra parte. Se non la lasciano parlare:
    Morale invariato, e qualcuno dirà per anni che la dirigenza aveva paura.
 3. **Il fieno.** A metà cena, il carrettiere che rifornisce la stalla manda a dire
-   che il fieno di domani non arriva: la Trama d'Argento ha comprato tutto il carico.
+   che il fieno di domani non arriva: il Bruco ha comprato tutto il carico.
    Ombra ha due ore per trovarne altrove (Diplomazia CD 15 con i battellieri se c'è
    il patto con Barbanera; Sopravvivenza CD 16 per tagliarne di fresco; 30 mo per
-   comprarlo dal Bastione).
+   comprarlo dal Torre).
 4. **Rasca**, se Berenice è scesa dal palco (§3), la trova qui. Cinque minuti, due
    sedie, tutto il tavolo in ascolto.
 
@@ -199,9 +206,9 @@ paese a valle, e Nocca ha corso, e ha vinto, e Ferrante ha perso il lavoro.
 > risolvono niente adesso. Voglio che tu dica alla tua Capitana quello che hai fatto.
 > Davanti a lei. Poi facciamo come vuoi tu.»*
 
-Ferrante ha già venduto la storia alle Ombre Bisbiglianti, che l'hanno venduta ad
+Ferrante ha già venduto la storia alla Civetta, che l'hanno venduta ad
 Attu (§2). **Attu la userà comunque**, al Giorno 3, con o senza il permesso di
-nessuno. L'unica variabile è se i Boschispini lo sanno prima.
+nessuno. L'unica variabile è se l'Istrice lo sanno prima.
 
 | Cosa fa Nocca | Effetto |
 |---|---|
@@ -215,7 +222,7 @@ nessuno. L'unica variabile è se i Boschispini lo sanno prima.
 ## §6 · Notte — l'assalto alle stalle
 
 **Quando**: dopo mezzanotte, quando la Cena è finita e in giro c'è solo chi è di
-guardia. Mappa: `ALLEGATI/mappe/` → *le stalle dei Boschispini*, 21 × 15 quadretti, 1,5 m
+guardia. Mappa: `ALLEGATI/mappe/` → *le stalle dell'Istrice*, 21 × 15 quadretti, 1,5 m
 per quadretto.
 
 **Chi arriva**: **Sfregio** (`STATBLOCCHI-PF1E.md` §3) con **quattro bravacci del
@@ -344,7 +351,7 @@ per primi, dài **+2 alla CA** a chi è in copertura preparata e togli l'attacco
 furtivo di Sfregio nel primo round. Un party che si prepara **deve** vincere più
 facilmente: è il patto.
 
-**3 · Vanno loro alla Trama d'Argento, di notte.** Vesca è sveglia, in tintoria, e
+**3 · Vanno loro al Bruco, di notte.** Vesca è sveglia, in tintoria, e
 sta lavorando. Lascia che la trovino così. Non nega niente e non ammette niente:
 dice che di Sfregio non sa nulla, ed è vero. Se lo dice guardando in faccia Melchio
 (Percepire Intenzioni +9), il giocatore ci crederà, e avrà ragione.

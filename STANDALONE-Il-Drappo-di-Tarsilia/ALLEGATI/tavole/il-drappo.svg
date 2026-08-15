@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="900" viewBox="0 0 520 900" font-family="Georgia,'Liberation Serif','DejaVu Serif',serif">
+<title>Il Drappo di Tarsilia</title>
+<defs>
+<pattern id="grain" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="none"/><circle cx="1.5" cy="1.5" r="0.5" fill="#000" opacity="0.05"/><circle cx="4.5" cy="3.5" r="0.4" fill="#000" opacity="0.04"/></pattern>
+<radialGradient id="vign" cx="50%" cy="45%" r="72%"><stop offset="60%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#3a2c14" stop-opacity="0.30"/></radialGradient>
+</defs>
+<rect width="520" height="900" fill="#efe3c6"/>
+<rect width="520" height="900" fill="url(#grain)"/>
+<path d="M60 70 L 460 70 L 460 790 L 260 850 L 60 790 Z" fill="#e8dcc0" stroke="#2c2313" stroke-width="3"/>
+<rect x="46" y="52" width="428" height="16" rx="4" fill="#7a5230" stroke="#2c2313" stroke-width="2"/>
+<rect x="66" y="76" width="388" height="250" fill="#c9d9e2"/>
+<circle cx="360" cy="140" r="34" fill="#f2d98a" opacity="0.8"/>
+<ellipse cx="260" cy="430" rx="168" ry="104" fill="#b08d68" stroke="#6b5b47" stroke-width="3"/>
+<rect x="192" y="392" width="136" height="76" fill="#6b5b47"/>
+<g transform="translate(119,399)"><ellipse cx="0" cy="0" rx="15" ry="7" fill="#5a4438"/><rect x="-4" y="-13" width="8" height="12" rx="3" fill="#ded3ba" stroke="#2c2313" stroke-width="1"/></g>
+<g transform="translate(145,371)"><ellipse cx="0" cy="0" rx="15" ry="7" fill="#5a4438"/><rect x="-4" y="-13" width="8" height="12" rx="3" fill="#5a4438" stroke="#2c2313" stroke-width="1"/></g>
+<g transform="translate(185,350)"><ellipse cx="0" cy="0" rx="15" ry="7" fill="#5a4438"/><rect x="-4" y="-13" width="8" height="12" rx="3" fill="#a9b2b8" stroke="#2c2313" stroke-width="1"/></g>
+<g transform="translate(234,339)"><ellipse cx="0" cy="0" rx="15" ry="7" fill="#5a4438"/><rect x="-4" y="-13" width="8" height="12" rx="3" fill="#2e4a34" stroke="#2c2313" stroke-width="1"/></g>
+<g transform="translate(286,339)"><ellipse cx="0" cy="0" rx="15" ry="7" fill="#5a4438"/><rect x="-4" y="-13" width="8" height="12" rx="3" fill="#141418" stroke="#2c2313" stroke-width="1"/></g>
+<g transform="translate(335,350)"><ellipse cx="0" cy="0" rx="15" ry="7" fill="#5a4438"/><rect x="-4" y="-13" width="8" height="12" rx="3" fill="#101014" stroke="#2c2313" stroke-width="1"/></g>
+<g transform="translate(375,371)"><ellipse cx="0" cy="0" rx="15" ry="7" fill="#5a4438"/><rect x="-4" y="-13" width="8" height="12" rx="3" fill="#b8496e" stroke="#2c2313" stroke-width="1"/></g>
+<g transform="translate(401,399)"><ellipse cx="0" cy="0" rx="15" ry="7" fill="#5a4438"/><rect x="-4" y="-13" width="8" height="12" rx="3" fill="#1d6b63" stroke="#2c2313" stroke-width="1"/></g>
+<rect x="286" y="560" width="164" height="196" fill="#dccfae" opacity="0.5"/>
+<g transform="translate(316,600)"><circle cx="0" cy="0" r="19" fill="#e7d3b4" stroke="#6b5b47" stroke-width="1.6"/><circle cx="-6" cy="-3" r="2.1" fill="#3b2e1e"/><circle cx="6" cy="-3" r="2.1" fill="#3b2e1e"/><path d="M-7 8 q 7 -3 14 0" fill="none" stroke="#3b2e1e" stroke-width="1.6" stroke-linecap="round"/><path d="M-19 -4 q 19 -22 38 0" fill="none" stroke="#6b5b47" stroke-width="2"/></g>
+<g transform="translate(368,600)"><circle cx="0" cy="0" r="19" fill="#e7d3b4" stroke="#6b5b47" stroke-width="1.6"/><circle cx="-6" cy="-3" r="2.1" fill="#3b2e1e"/><circle cx="6" cy="-3" r="2.1" fill="#3b2e1e"/><path d="M-7 8 q 7 4 14 0" fill="none" stroke="#3b2e1e" stroke-width="1.6" stroke-linecap="round"/><path d="M-19 -4 q 19 -22 38 0" fill="none" stroke="#6b5b47" stroke-width="2"/></g>
+<g transform="translate(420,600)"><circle cx="0" cy="0" r="19" fill="#e7d3b4" stroke="#6b5b47" stroke-width="1.6"/><circle cx="-6" cy="-3" r="2.1" fill="#3b2e1e"/><circle cx="6" cy="-3" r="2.1" fill="#3b2e1e"/><path d="M-7 8 q 7 -3 14 0" fill="none" stroke="#3b2e1e" stroke-width="1.6" stroke-linecap="round"/><path d="M-19 -4 q 19 -22 38 0" fill="none" stroke="#6b5b47" stroke-width="2"/></g>
+<g transform="translate(316,660)"><circle cx="0" cy="0" r="19" fill="#e7d3b4" stroke="#6b5b47" stroke-width="1.6"/><circle cx="-6" cy="-3" r="2.1" fill="#3b2e1e"/><circle cx="6" cy="-3" r="2.1" fill="#3b2e1e"/><path d="M-7 8 q 7 4 14 0" fill="none" stroke="#3b2e1e" stroke-width="1.6" stroke-linecap="round"/><path d="M-19 -4 q 19 -22 38 0" fill="none" stroke="#6b5b47" stroke-width="2"/></g>
+<g transform="translate(368,660)"><circle cx="0" cy="0" r="19" fill="#e7d3b4" stroke="#6b5b47" stroke-width="1.6"/><circle cx="-6" cy="-3" r="2.1" fill="#3b2e1e"/><circle cx="6" cy="-3" r="2.1" fill="#3b2e1e"/><path d="M-7 8 q 7 -3 14 0" fill="none" stroke="#3b2e1e" stroke-width="1.6" stroke-linecap="round"/><path d="M-19 -4 q 19 -22 38 0" fill="none" stroke="#6b5b47" stroke-width="2"/></g>
+<g transform="translate(420,660)"><circle cx="0" cy="0" r="19" fill="#e7d3b4" stroke="#6b5b47" stroke-width="1.6"/><circle cx="-6" cy="-3" r="2.1" fill="#3b2e1e"/><circle cx="6" cy="-3" r="2.1" fill="#3b2e1e"/><path d="M-7 8 q 7 4 14 0" fill="none" stroke="#3b2e1e" stroke-width="1.6" stroke-linecap="round"/><path d="M-19 -4 q 19 -22 38 0" fill="none" stroke="#6b5b47" stroke-width="2"/></g>
+<g transform="translate(316,720)"><circle cx="0" cy="0" r="19" fill="#e7d3b4" stroke="#6b5b47" stroke-width="1.6"/><circle cx="-6" cy="-3" r="2.1" fill="#3b2e1e"/><circle cx="6" cy="-3" r="2.1" fill="#3b2e1e"/><path d="M-7 8 q 7 -3 14 0" fill="none" stroke="#3b2e1e" stroke-width="1.6" stroke-linecap="round"/><path d="M-19 -4 q 19 -22 38 0" fill="none" stroke="#6b5b47" stroke-width="2"/></g>
+<g transform="translate(368,720)"><circle cx="0" cy="0" r="19" fill="#e7d3b4" stroke="#6b5b47" stroke-width="1.6"/><circle cx="-6" cy="-3" r="2.1" fill="#3b2e1e"/><circle cx="6" cy="-3" r="2.1" fill="#3b2e1e"/><path d="M-7 8 q 7 4 14 0" fill="none" stroke="#3b2e1e" stroke-width="1.6" stroke-linecap="round"/><path d="M-19 -4 q 19 -22 38 0" fill="none" stroke="#6b5b47" stroke-width="2"/></g>
+<g transform="translate(420,720)"><circle cx="0" cy="0" r="19" fill="#e7d3b4" stroke="#6b5b47" stroke-width="1.6"/><circle cx="-6" cy="-3" r="2.1" fill="#3b2e1e"/><circle cx="6" cy="-3" r="2.1" fill="#3b2e1e"/><path d="M-7 8 q 7 -3 14 0" fill="none" stroke="#3b2e1e" stroke-width="1.6" stroke-linecap="round"/><path d="M-19 -4 q 19 -22 38 0" fill="none" stroke="#6b5b47" stroke-width="2"/></g>
+<text x="368" y="782" font-size="11" fill="#7d2f26" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">nove</text>
+<circle cx="86" cy="600" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="103" cy="600" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="120" cy="600" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="137" cy="600" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="154" cy="600" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="171" cy="600" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="188" cy="600" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="205" cy="600" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="222" cy="600" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="239" cy="600" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="256" cy="600" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="86" cy="644" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="103" cy="644" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="120" cy="644" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="137" cy="644" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="154" cy="644" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="171" cy="644" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="188" cy="644" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="205" cy="644" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="222" cy="644" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="239" cy="644" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<circle cx="256" cy="644" r="9" fill="#cbb894" stroke="#a89572" stroke-width="1"/>
+<rect x="66" y="336" width="388" height="40" fill="#f4ecd8" opacity="0.85" stroke="#6b5b47" stroke-width="1"/>
+<text x="260" y="363" font-size="19" fill="#2c2313" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="3">VA' E TORNA VINCITORE</text>
+<text x="260" y="40" font-size="26" fill="#2c2313" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="6">IL DRAPPO</text>
+<rect width="520" height="900" fill="url(#vign)"/>
+<rect x="10" y="10" width="500" height="880" fill="none" stroke="#2c2313" stroke-width="3"/>
+<rect x="17" y="17" width="486" height="866" fill="none" stroke="#2c2313" stroke-width="1"/>
+<text x="260.0" y="874" text-anchor="middle" font-size="11" fill="#5b4a2c" font-style="italic">dipinto da Lino Rasca — guardate in basso a destra</text>
+</svg>

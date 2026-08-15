@@ -206,9 +206,9 @@
 <rect x="74" y="556" width="112" height="252" rx="4" fill="none" stroke="#2c2313" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.75"/>
 <text x="78" y="569" font-size="10.5" font-weight="bold" fill="#2c2313">Palco della Sovrintendente — Tesio e Melchio: protestare, testimoniare</text>
 <rect x="1166" y="1256" width="476" height="112" rx="4" fill="none" stroke="#2c2313" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.75"/>
-<text x="1170" y="1269" font-size="10.5" font-weight="bold" fill="#2c2313">Palazzo della Piuma d'Oro — le finestre danno sulla Curva Sud</text>
+<text x="1170" y="1269" font-size="10.5" font-weight="bold" fill="#2c2313">Palazzo dell'Oca — le finestre danno sulla Curva Sud</text>
 <rect x="74" y="1228" width="196" height="140" rx="4" fill="none" stroke="#2c2313" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.75"/>
-<text x="78" y="1241" font-size="10.5" font-weight="bold" fill="#2c2313">Oratorio dei Boschispini — benedizione del cavallo all'alba</text>
+<text x="78" y="1241" font-size="10.5" font-weight="bold" fill="#2c2313">Oratorio dell'Istrice — benedizione del cavallo all'alba</text>
 <path d="M368 346L1488 346L1488 1102L368 1102L368 346" fill="none" stroke="#ffffff" stroke-width="3.6" opacity="0.55" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M368 346L1488 346L1488 1102L368 1102L368 346" fill="none" stroke="#b94a3c" stroke-width="2" stroke-dasharray="7 4" stroke-linejoin="round" stroke-linecap="round"/>
 <circle cx="368" cy="346" r="3.4" fill="#b94a3c" stroke="#ffffff" stroke-width="1"/>
@@ -268,7 +268,7 @@
 <text x="68" y="1544" font-size="11" fill="#3b2e1e">L24 — il Muto (Cavalcare +9)</text>
 <circle cx="54" cy="1555" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
 <text x="54" y="1558.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">9</text>
-<text x="68" y="1559" font-size="11" fill="#3b2e1e">L28 — Bastione · Guglie · Ombre · Corno (1d6 per giro)</text>
+<text x="68" y="1559" font-size="11" fill="#3b2e1e">L28 — Torre · Drago · Ombre · Corno (1d6 per giro)</text>
 <circle cx="54" cy="1570" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
 <text x="54" y="1573.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">10</text>
 <text x="68" y="1574" font-size="11" fill="#3b2e1e">O31 — Rincorsa (l'ottava estratta) (—)</text>
@@ -280,9 +280,9 @@
 <rect x="46" y="1608" width="15" height="12" rx="2" fill="none" stroke="#2c2313" stroke-width="1.4" stroke-dasharray="4 3"/>
 <text x="68" y="1619" font-size="11" fill="#3b2e1e">B18–E26 — Palco della Sovrintendente — Tesio e Melchio: protestare, testimoniare</text>
 <rect x="46" y="1623" width="15" height="12" rx="2" fill="none" stroke="#2c2313" stroke-width="1.4" stroke-dasharray="4 3"/>
-<text x="68" y="1634" font-size="11" fill="#3b2e1e">AO43–BE46 — Palazzo della Piuma d'Oro — le finestre danno sulla Curva Sud</text>
+<text x="68" y="1634" font-size="11" fill="#3b2e1e">AO43–BE46 — Palazzo dell'Oca — le finestre danno sulla Curva Sud</text>
 <rect x="46" y="1638" width="15" height="12" rx="2" fill="none" stroke="#2c2313" stroke-width="1.4" stroke-dasharray="4 3"/>
-<text x="68" y="1649" font-size="11" fill="#3b2e1e">B42–H46 — Oratorio dei Boschispini — benedizione del cavallo all'alba</text>
+<text x="68" y="1649" font-size="11" fill="#3b2e1e">B42–H46 — Oratorio dell'Istrice — benedizione del cavallo all'alba</text>
 <text x="46" y="1683" font-size="12" font-weight="bold" fill="#3b2e1e" letter-spacing="2">LEGENDA</text>
 <path d="M120 1679H1838" stroke="#7a6a50" stroke-width="0.7" opacity="0.7"/>
 <rect x="46.0" y="1689" width="19" height="15" fill="url(#t_wall)" stroke="#7a6a50" stroke-width="0.7"/>

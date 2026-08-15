@@ -1,4 +1,4 @@
-# Tarsilia — le stalle dei Boschispini (assalto notturno)
+# Tarsilia — le stalle dell'Istrice (assalto notturno)
 
 **Dimensioni**: 31,5 m × 22,5 m (21 colonne × 15 righe, scala 1,5 m/quadretto)  
 **Origine**: generata da `scripts/compile_map_json.py` (contratto JSON → griglia; non modificare la griglia a mano, rigenerala dal JSON)  
@@ -8,7 +8,7 @@
 ## Griglia
 
 ```
-Tarsilia — le stalle dei Boschispini (assalto notturno)
+Tarsilia — le stalle dell'Istrice (assalto notturno)
 COLONNE:  A B C D E F G H I J K L M N O P Q R S T U
 01 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫 🟫
 02 🟫 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰 🏰
@@ -51,7 +51,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U
 
 | Fazione | Unità | Token | Q.tà | GS/EL | Area (coord.) |
 |---|---|---|---|---|---|
-| Boschispini | Ombra (dorme in stalla) | 🔵 | 1 | druida 3 | I8 |
+| Istrice | Ombra (dorme in stalla) | 🔵 | 1 | druida 3 | I8 |
 | Cavalli | Il cavallo della contrada | 🟢 | 1 | animale GS 1 | H12 |
 | Cavalli | Regina, la mula | 🟢 | 1 | animale | L12 |
 | Assalitori | Sfregio | ⚫ | 1 | ladro 4, GS 3 | G4 |

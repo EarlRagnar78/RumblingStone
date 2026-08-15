@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La dirigenza dell&#x27;Istrice</title>
+<style>
+  :root{
+    --chrome-bg:#efe9dd; --chrome-ink:#3a3126; --chrome-line:#d8cdb8;
+    --tab-bg:#e2d8c2; --tab-active:#58180D; --tab-active-ink:#f5edd6;
+    --sheet:#EEE5CE; --ink:#2b241c; --rubric:#58180D; --brass:#c9ad6a;
+    --note-bg:#e0e5c1; --desc-bg:#faf3e3; --banner:#B31515; --banner-ink:#f7ecd4;
+    --shadow:0 10px 26px rgba(43,36,28,.35);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --chrome-bg:#221e19; --chrome-ink:#d8cdb8; --chrome-line:#3b342b;
+           --tab-bg:#2f2921; --shadow:0 12px 30px rgba(0,0,0,.6); }
+  }
+  :root[data-theme="dark"]{ --chrome-bg:#221e19; --chrome-ink:#d8cdb8; --chrome-line:#3b342b;
+           --tab-bg:#2f2921; --shadow:0 12px 30px rgba(0,0,0,.6); }
+  :root[data-theme="light"]{ --chrome-bg:#efe9dd; --chrome-ink:#3a3126; --chrome-line:#d8cdb8;
+           --tab-bg:#e2d8c2; --shadow:0 10px 26px rgba(43,36,28,.35); }
+
+  body{ background:var(--chrome-bg); color:var(--chrome-ink);
+        font-family:Georgia,'Times New Roman',serif; margin:0; }
+  header.top{ padding:1.4rem 1rem .6rem; text-align:center; }
+  header.top h1{ font-size:1.15rem; margin:0; letter-spacing:.06em; text-transform:uppercase; }
+  header.top p{ margin:.35rem auto 0; max-width:46rem; font-size:.9rem; opacity:.8; font-style:italic; }
+
+  nav.tabs{ display:flex; gap:.5rem; justify-content:center; flex-wrap:wrap;
+            padding:.8rem 1rem 1.2rem; position:sticky; top:0;
+            background:var(--chrome-bg); border-bottom:1px solid var(--chrome-line); z-index:5;
+            max-width:64rem; margin:0 auto;}
+  nav.tabs button{ font:inherit; font-size:.72rem; letter-spacing:.05em;
+      padding:.35rem .6rem; border:1px solid var(--chrome-line);
+      background:var(--tab-bg); color:var(--chrome-ink); cursor:pointer; border-radius:2px;}
+  nav.tabs button[aria-selected="true"]{ background:var(--tab-active); color:var(--tab-active-ink);
+      border-color:var(--tab-active); }
+  nav.tabs button:focus-visible{ outline:2px solid var(--rubric); outline-offset:2px; }
+
+  main{ display:flex; flex-direction:column; align-items:center; gap:2rem; padding:2rem .8rem 4rem; }
+  section.pane{ display:none; flex-direction:column; gap:2rem; align-items:center; width:100%; }
+  section.pane.on{ display:flex; }
+
+  .sheet{ background:var(--sheet); color:var(--ink); width:min(52rem,100%);
+      box-shadow:var(--shadow); padding:2.6rem 2.8rem 3.4rem; position:relative;
+      background-image:radial-gradient(ellipse at 18% 8%, rgba(201,173,106,.16), transparent 55%),
+                       radial-gradient(ellipse at 85% 95%, rgba(88,24,13,.07), transparent 50%);
+      border:1px solid #d9ccab; }
+  .sheet, .sheet table{ font-size:.94rem; line-height:1.45; }
+
+  .cover{ text-align:center; display:flex; flex-direction:column; justify-content:center;
+          min-height:34rem; gap:1rem;}
+  .cover .brand{ letter-spacing:.35em; font-size:.8rem; color:var(--rubric); }
+  .cover h2{ font-variant:small-caps; font-size:2.6rem; margin:.1em 0; color:var(--rubric);
+             line-height:1.05; text-wrap:balance;}
+  .cover h3{ font-style:italic; font-weight:normal; font-size:1.25rem; margin:0; }
+  .rule{ border:none; height:3px; width:60%; margin:0.6rem auto;
+         background:linear-gradient(90deg,transparent,var(--rubric),transparent); }
+  .banner{ display:inline-block; margin:0 auto; background:var(--banner); color:var(--banner-ink);
+      padding:.35rem 1.6rem; letter-spacing:.25em; font-size:.85rem;
+      clip-path:polygon(4% 0,96% 0,100% 50%,96% 100%,4% 100%,0 50%); }
+  .covermeta{ font-size:.8rem; font-style:italic; opacity:.85; max-width:34rem; margin:1.6rem auto 0;
+      border-top:1px solid var(--brass); padding-top:.8rem;}
+
+  .twocol{ column-count:2; column-gap:2.2rem; }
+  @media (max-width:44rem){ .twocol{ column-count:1; } .sheet{ padding:1.6rem 1.2rem 2.4rem; } }
+  .twocol > *{ break-inside:avoid; }
+
+  .sheet h2.sec{ font-variant:small-caps; color:var(--rubric); font-size:1.5rem;
+      margin:1.1rem 0 .3rem; border-bottom:2px solid var(--brass); padding-bottom:.15rem;
+      column-span:all; text-wrap:balance;}
+  .sheet h3.sub{ font-variant:small-caps; color:var(--rubric); font-size:1.12rem; margin:.9rem 0 .25rem;}
+  .sheet h4.sub4{ font-variant:small-caps; color:var(--rubric); font-size:1rem; margin:.7rem 0 .2rem;}
+  .sheet p{ margin:.45rem 0; text-align:justify; hyphens:auto;}
+  .sheet .lede::first-letter{ font-size:3.1em; float:left; line-height:.82;
+      padding:.04em .08em 0 0; color:var(--rubric); font-family:Georgia,serif;}
+  .sheet ul{ margin:.4rem 0 .7rem 1.2rem; padding:0;}
+  .sheet ol{ margin:.4rem 0 .7rem 1.4rem; padding:0;}
+  .sheet li{ margin:.22rem 0;}
+  .atmo{ font-style:italic; text-align:center; margin:1rem 0;}
+
+  .tablewrap{ overflow-x:auto; margin:.6rem 0 1rem; column-span:all;}
+  .sheet table{ border-collapse:collapse; width:100%; min-width:34rem;}
+  .sheet th{ background:var(--rubric); color:var(--banner-ink); text-align:left;
+      padding:.3rem .55rem; font-variant:small-caps; font-weight:normal; letter-spacing:.04em;}
+  .sheet td{ padding:.3rem .55rem; vertical-align:top; border-bottom:1px solid #d6c69c;}
+  .sheet tbody tr:nth-child(odd){ background:rgba(201,173,106,.14); }
+
+  .note,.desc{ padding:.8rem 1rem; margin:.9rem 0; break-inside:avoid; }
+  .note{ background:var(--note-bg); border-top:3px solid var(--rubric);
+         border-bottom:3px solid var(--rubric); box-shadow:2px 2px 0 rgba(43,36,28,.15);}
+  .desc{ background:var(--desc-bg); border:2px solid var(--brass); position:relative;}
+  .desc::before,.desc::after{ content:"❧"; position:absolute; color:var(--brass); font-size:.9rem;}
+  .desc::before{ top:-2px; left:6px;} .desc::after{ bottom:-2px; right:6px; transform:rotate(180deg);}
+  .note h4,.desc h4{ margin:.1rem 0 .35rem; font-variant:small-caps; color:var(--rubric); font-size:1rem;}
+  .readaloud{ font-style:italic; }
+  .vague{ font-style:italic; font-size:.86rem; opacity:.9; }
+
+  pre.mono{ background:rgba(201,173,106,.18); border:1px solid var(--brass); padding:.6rem .8rem;
+      overflow-x:auto; font-size:.8rem; line-height:1.35; font-family:ui-monospace,Consolas,monospace;}
+  .figure{ margin:.8rem auto; text-align:center; }
+  .figure svg{ max-width:100%; height:auto; border:1px solid var(--brass); background:#efe6cf;}
+  .figure img{ max-width:100%; height:auto; border:1px solid var(--brass);}
+  .figure.placeholder{ border:2px dashed var(--brass); padding:1.6rem; background:rgba(201,173,106,.12);}
+
+  .pagefoot{ display:flex; justify-content:space-between; align-items:baseline;
+      margin-top:2.2rem; border-top:1px solid var(--brass); padding-top:.5rem;
+      font-size:.72rem; letter-spacing:.14em; color:var(--rubric); font-variant:small-caps;}
+  .pagefoot .n{ font-family:Georgia,serif; font-size:1rem; font-variant-numeric:tabular-nums;}
+  .dmtag{ position:absolute; top:.9rem; right:1rem; font-size:.62rem; letter-spacing:.2em;
+      color:var(--banner); border:1px solid var(--banner); padding:.15rem .5rem; }
+  .pgtag{ position:absolute; top:.9rem; right:1rem; font-size:.62rem; letter-spacing:.2em;
+      color:#2f5d31; border:1px solid #2f5d31; padding:.15rem .5rem; }
+  .caption{ font-size:.78rem; text-align:center; opacity:.75; max-width:40rem; font-style:italic;}
+  .printbtn{ position:fixed; right:1rem; bottom:1rem; z-index:9; font:inherit; font-size:.8rem;
+      padding:.5rem .9rem; border:1px solid var(--chrome-line); border-radius:4px; cursor:pointer;
+      background:var(--tab-active); color:var(--tab-active-ink); box-shadow:var(--shadow);}
+
+  /* ── Stampa / PDF A4 (ADR-0013 §5): via testata e tab, resta SOLO la
+     scheda attiva, pergamena a piena pagina, colori esatti. ───────────── */
+  @media print{
+    @page{ size:A4; margin:0; }
+    header.top, nav.tabs, .printbtn{ display:none !important; }
+    body{ background:var(--sheet); }
+    main{ display:block; padding:0; }
+    section.pane{ display:none; }
+    section.pane.on{ display:block; }
+    .sheet{ width:100%; box-sizing:border-box; min-height:calc(100vh - 2px);
+            box-shadow:none; border:none; margin:0;
+            padding:14mm 16mm 16mm; break-after:page;
+            -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    .sheet:last-child{ break-after:auto; }
+    .tablewrap{ overflow-x:visible; }
+    .sheet table{ min-width:0; }
+    /* le mappe ASCII/emoji non hanno scrollbar su carta: si riducono
+       quanto basta per stare nel foglio senza tagli */
+    pre.mono{ font-size:.6rem; line-height:1.3; overflow:visible; }
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <h1>La dirigenza dell&#x27;Istrice</h1>
+  <p>Davanti i numeri, dietro chi sei: background da leggere ad alta voce, cosa sai, cosa vuoi, e cosa pensi degli altri cinque.</p>
+</header>
+<nav class="tabs" role="tablist"><button role="tab" aria-selected="true" data-pane="c0">Copertina</button><button role="tab" aria-selected="false" data-pane="c1">✉ I numeri — le sei schede</button><button role="tab" aria-selected="false" data-pane="c2">✉ Il retro — background e legami</button></nav>
+<main>
+<section class="pane on" id="c0">
+  <div class="sheet cover">
+    <div class="brand">IL DRAPPO DI TARSILIA · PF1e</div>
+    <h2>La dirigenza dell&#x27;Istrice</h2>
+    <h3>Sei schede pregenerate di 3° livello — fronte e retro</h3>
+    <hr class="rule">
+    <div><span class="banner">FASCICOLO DELLE SCHEDE</span></div>
+    <div class="figure"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 560" font-family="Georgia,'Liberation Serif','DejaVu Serif',serif">
+<title>VANNA CORSARI — il Capitano</title>
+<defs>
+<pattern id="grain" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="none"/><circle cx="1.5" cy="1.5" r="0.5" fill="#000" opacity="0.05"/><circle cx="4.5" cy="3.5" r="0.4" fill="#000" opacity="0.04"/></pattern>
+<radialGradient id="vign" cx="50%" cy="45%" r="72%"><stop offset="60%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#3a2c14" stop-opacity="0.30"/></radialGradient>
+</defs>
+<rect width="420" height="560" fill="#efe3c6"/>
+<rect width="420" height="560" fill="url(#grain)"/>
+<g opacity="0.13" transform="translate(110,120) scale(1.0)"><path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="#2e4a34"/></g>
+<circle cx="210" cy="216" r="137" fill="#d8c8a4" stroke="#2c2313" stroke-width="3"/>
+<circle cx="210" cy="216" r="128" fill="#c9b58e"/>
+<clipPath id="cl-vanna"><circle cx="210" cy="216" r="128"/></clipPath>
+<g clip-path="url(#cl-vanna)">
+<path d="M92 356 q 118 -96 236 0 v 80 h -236 Z" fill="#2e4a34"/>
+<rect x="190" y="232" width="40" height="46" fill="#d9b391"/>
+<ellipse cx="210" cy="208" rx="52" ry="62" fill="#d9b391"/>
+<path d="M156 202 q 6 -76 54 -76 q 48 0 54 76 q -18 -34 -54 -34 q -36 0 -54 34 Z" fill="#3a2c22"/>
+<circle cx="191" cy="204" r="4" fill="#2b2118"/>
+<circle cx="229" cy="204" r="4" fill="#2b2118"/>
+<path d="M196 242 q 14 8 28 0" fill="none" stroke="#8a5a44" stroke-width="2.4" stroke-linecap="round"/>
+</g>
+<circle cx="210" cy="216" r="128" fill="none" stroke="#2c2313" stroke-width="2"/>
+<rect x="30" y="378" width="360" height="106" fill="#f4ecd8" opacity="0.92" stroke="#2c2313" stroke-width="2"/>
+<text x="210" y="408" font-size="20" fill="#2c2313" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="1.5">VANNA CORSARI</text>
+<text x="210" y="432" font-size="13" fill="#7d2f26" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="4">IL CAPITANO</text>
+<text x="210" y="456" font-size="12.5" fill="#5b4a2c" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">umana guerriera 3</text>
+<text x="210" y="474" font-size="11.5" fill="#5b4a2c" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">«mani rovinate dalla resina»</text>
+<text x="210" y="52" font-size="12" fill="#5b4a2c" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="5">IL DRAPPO DI TARSILIA</text>
+<text x="210" y="74" font-size="13" fill="#2e4a34" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">contrada dell'Istrice</text>
+<rect width="420" height="560" fill="url(#vign)"/>
+<rect x="10" y="10" width="400" height="540" fill="none" stroke="#2c2313" stroke-width="3"/>
+<rect x="17" y="17" width="386" height="526" fill="none" stroke="#2c2313" stroke-width="1"/>
+<text x="210.0" y="534" text-anchor="middle" font-size="11" fill="#5b4a2c" font-style="italic">segnaposto vettoriale — sostituibile col ritratto generato</text>
+</svg>
+</div>
+    <p class="covermeta">Pathfinder 1e, Core Rulebook · 20 punti acquisto · 3.000 mo di equipaggiamento · da stampare fronte-retro, una a testa</p>
+  </div>
+  
+</section>
+<section class="pane" id="c1">
+  <div class="sheet"><span class="pgtag">✉ HANDOUT GIOCATORE</span>
+    <div class="chapter-body"><h2 class="sec">Le sei schede — la dirigenza dell'Istrice</h2>
+<p><strong>Pathfinder 1e, Core Rulebook. Sei personaggi di 3° livello</strong>, costruiti a <strong>20 punti acquisto</strong>, ricchezza iniziale <strong>3.000 mo</strong> (tabella PF1e per il 3°).</p>
+<p>Ogni scheda sta in una pagina: si stampa, si dà in mano, si gioca. In fondo a ciascuna c'è <strong>«Come si gioca in un minuto»</strong>: se un giocatore arriva in ritardo e non ha letto niente, legge quelle cinque righe e sa cosa fare.</p>
+<div class="desc"><p class="readaloud"><strong>Nota unica sui numeri.</strong> Slot incantesimi, CD e bonus sono ricavati dalle tabelle del Core Rulebook. Se il manuale sul tuo tavolo dice diverso su un valore, <strong>vince il manuale</strong>: nessuno di questi numeri è così importante da fermare la serata.</p></div>
+<div class="desc"><p class="readaloud"><strong>Perché sei personaggi e non sei avventurieri qualsiasi.</strong> I sei uffici della contrada <em>sono</em> i sei posti a tavola. Nessuno è "il tizio in più": togli il Fantino e nessuno corre, togli lo Stalliere e il cavallo muore.</p></div>
+<hr class="rule">
+<h2 class="sec">1 · VANNA CORSARI — il Capitano</h2>
+<p><strong>Umana guerriera 3</strong> · N · femmina, 38 anni · <strong>GS 2</strong> <em>Ha fatto sei anni di milizia fluviale e li ha lasciati per un motivo che non racconta. Ha le mani rovinate dalla resina come tutti quelli del rione.</em></p>
+<p><strong>Iniziativa</strong> +5 · <strong>Percezione</strong> +3 · <strong>Velocità</strong> 6 m</p>
+<h3 class="sub">Difesa</h3>
+<p><strong>CA</strong> 18, contatto 11, colto alla sprovvista 17 (+5 armatura, +2 scudo, +1 Des) <strong>pf</strong> 27 (3d10+6) <strong>TS</strong> Tempra <strong>+6</strong>, Riflessi <strong>+3</strong>, Volontà <strong>+5</strong> <em>(mantello +1 incluso)</em></p>
+<h3 class="sub">Attacco</h3>
+<p><strong>Mischia</strong> spada lunga da maestro <strong>+8</strong> (1d8+3/19–20) &amp;nbsp;&amp;nbsp;con <strong>Attacco Poderoso</strong>: <strong>+7</strong> (1d8+5) <strong>Mischia</strong> pugnale +6 (1d4+3/19–20) <strong>BAB</strong> +3 · <strong>CMB</strong> +6 · <strong>CMD</strong> 17</p>
+<h3 class="sub">Statistiche</h3>
+<p><strong>For</strong> 17 (+3) · <strong>Des</strong> 13 (+1) · <strong>Cos</strong> 14 (+2) · <strong>Int</strong> 10 (+0) · <strong>Sag</strong> 12 (+1) · <strong>Car</strong> 13 (+1)</p>
+<p><strong>Talenti</strong>: Attacco Poderoso · Focalizzazione nell'Arma (spada lunga) · Iniziativa Migliorata · Persuasivo · Volontà di Ferro <strong>Abilità</strong>: Intimidire <strong>+9</strong>, Diplomazia <strong>+6</strong>, Cavalcare <strong>+4</strong>, Percezione +3, Sopravvivenza +5, Nuotare +2 <strong>Equipaggiamento</strong>: camicia di maglia <strong>+1</strong> (1.250) · scudo pesante d'acciaio da maestro (170) · spada lunga da maestro (315) · pugnale (2) · <strong>mantello della resistenza +1</strong> (1.000) · 2 pozioni di <em>cura ferite leggere</em> (100) · cavallo da sella leggero con sella e bardatura (99) · kit da avventuriero e corda di seta (34) · livrea da cerimonia dell'Istrice (30) · <strong>+ 0 mo</strong> in tasca, e questo è un fatto che la riguarda</p>
+<h3 class="sub">Il suo problema</h3>
+<p>Il debito della contrada verso l'Oca lo ha firmato lei, due inverni fa, per comprare grano. Gerlando Attu non l'ha mai riscosso e non ne parla mai: è peggio che se lo facesse.</p>
+<h3 class="sub">Come si gioca in un minuto</h3>
+<p>Sei quella che decide, e le decisioni le prendi ad alta voce davanti a sessanta persone che ti guardano. Parli poco e concludi. <strong>Fai tu i patti</strong> (Diplomazia +6, Intimidire +9): quando un altro Capitano ti offre qualcosa, chiedi <em>cosa vuole in cambio</em> prima di dire sì. In Corsa stai <strong>alle funi</strong>. Se picchia qualcuno, probabilmente sei tu.</p>
+<hr class="rule">
+<h2 class="sec">2 · NOCCA PETTIROSSO — il Fantino</h2>
+<p><strong>Halfling ranger 3</strong> · CB · maschio, 26 anni · <strong>GS 2</strong> <em>Bracconiere. Cavalca da quando aveva sei anni e non ha mai posseduto una sella. Pesa quarantadue chili bagnato, ed è l'unico motivo per cui l'Istrice ha ancora una possibilità.</em></p>
+<p><strong>Iniziativa</strong> +4 · <strong>Percezione</strong> +7 · <strong>Velocità</strong> 4,5 m</p>
+<h3 class="sub">Difesa</h3>
+<p><strong>CA</strong> 18, contatto 15, colto alla sprovvista 14 (+3 armatura, +4 Des, +1 taglia) <strong>pf</strong> 28 (3d10+3) <strong>TS</strong> Tempra <strong>+6</strong>, Riflessi <strong>+9</strong>, Volontà <strong>+4</strong> <em>(+2 razziale su tutti; +2 ulteriore contro la paura)</em></p>
+<h3 class="sub">Attacco</h3>
+<p><strong>Mischia</strong> spada corta <strong>+7</strong> (1d4/19–20) <em>(Finezza nell'Arma)</em> &amp;nbsp;&amp;nbsp;<strong>con due armi</strong>: spada corta +5 (1d4) e pugnale +5 (1d3/19–20) <strong>Distanza</strong> fionda +7 (1d3, gittata 15 m) <strong>Scudiscio</strong> +7 (1 non letale, e −2 alla prossima prova di Cavalcare del bersaglio) <strong>BAB</strong> +3 · <strong>CMB</strong> +2 · <strong>CMD</strong> 16 <strong>Nemico prescelto</strong>: umanoidi (umani) <strong>+2</strong></p>
+<h3 class="sub">Statistiche</h3>
+<p><strong>For</strong> 10 (+0) · <strong>Des</strong> 18 (+4) · <strong>Cos</strong> 13 (+1) · <strong>Int</strong> 10 (+0) · <strong>Sag</strong> 13 (+1) · <strong>Car</strong> 14 (+2)</p>
+<p><strong>Talenti</strong>: Finezza nell'Arma · Combattere con Due Armi <em>(stile di combattimento)</em> · Combattere in Sella <strong>Capacità di classe</strong>: seguire tracce, empatia selvatica +5, andatura nella boscaglia <em>(la sua, di fatto, è "andatura nei vicoli")</em> <strong>Abilità</strong>: <strong>Cavalcare +10</strong>, <strong>Furtività +19</strong> <em>(+14 senza il mantello)</em>, Percezione +7, Addestrare Animali +7, Sopravvivenza +6, Scalare +5, Guarire +2, Conoscenze (natura) +4, Intimidire +3 <strong>Equipaggiamento</strong>: cuoio borchiato da maestro (175) · spada corta (10) · pugnale (2) · fionda e 20 proiettili (0,2) · <strong>scudiscio di cuoio intrecciato</strong> (1) · <strong>mantello dell'elfo</strong> <em>(+5 Furtività, 2.500)</em> · 2 pozioni di <em>cura ferite leggere</em> (100) · <strong>+ ~212 mo</strong>, che sono della contrada e lui lo sa</p>
+<h3 class="sub">Il suo problema</h3>
+<p>Tre mesi fa ha accettato quaranta monete d'argento da un uomo che non conosceva, per non correre. Poi ha corso lo stesso e non ha restituito i soldi. Quell'uomo è in città (<code>02-GIORNO-2</code> §5).</p>
+<h3 class="sub">Come si gioca in un minuto</h3>
+<p>Tu sei quello che corre, e per due sessioni su tre non corri: <strong>sei il pezzo più prezioso e più fragile della contrada</strong>, e tutti lo sanno. Chi vuole far perdere i Istrice, viene a cercare te. Cavalcare <strong>+10</strong> è il numero migliore del tavolo: in Corsa <strong>non</strong> subisci il −5 per l'assenza di sella — a pelo ci sei nato — e sommi il <strong>Ritmo del cavallo</strong>. Fuori dalla Corsa sei un bracconiere che si muove nei vicoli come nel bosco: <strong>Furtività +19</strong> col mantello addosso, e due lame corte.</p>
+<hr class="rule">
+<h2 class="sec">3 · OMBRA DEI SALICI — lo Stalliere</h2>
+<p><strong>Umana druida 3 (dominio Terra)</strong> · NB · femmina, 44 anni · <strong>GS 2</strong> <em>Non è il suo nome. Il suo nome nessuno lo usa da quando è tornata dal bosco, e lei non ha corretto nessuno. Cura le bestie del rione da vent'anni e non ha mai perso un parto.</em></p>
+<p><strong>Iniziativa</strong> +1 · <strong>Percezione</strong> +10 · <strong>Velocità</strong> 6 m</p>
+<h3 class="sub">Difesa</h3>
+<p><strong>CA</strong> 15, contatto 12, colto alla sprovvista 14 (+2 armatura, +1 scudo, +1 Des, +1 deviazione) <strong>pf</strong> 24 (3d8+3) <strong>TS</strong> Tempra <strong>+4</strong>, Riflessi <strong>+2</strong>, Volontà <strong>+7</strong></p>
+<h3 class="sub">Attacco</h3>
+<p><strong>Mischia</strong> bastone ferrato +2 (1d6) · falcetto +2 (1d6) <strong>Dardo acido</strong> <em>(dominio Terra)</em> raggio di contatto <strong>+3</strong>, 1d6+1, <strong>7 volte al giorno</strong> <strong>BAB</strong> +2 · <strong>CMB</strong> +2 · <strong>CMD</strong> 13</p>
+<h3 class="sub">Statistiche</h3>
+<p><strong>For</strong> 10 (+0) · <strong>Des</strong> 13 (+1) · <strong>Cos</strong> 13 (+1) · <strong>Int</strong> 12 (+1) · <strong>Sag</strong> 18 (+4) · <strong>Car</strong> 10 (+0)</p>
+<p><strong>Incantesimi preparati</strong> (CD 14 + livello dell'incantesimo)</p>
+<ul><li><strong>0°</strong> (4): <em>individuazione del magico</em> · <em>creare acqua</em> · <em>stabilizzare</em> · <em>luce</em></li><li><strong>1°</strong> (3 + 1 dominio): <em>cura ferite leggere</em> · <em>intralciare</em> (CD 15) · <em>amicizia con gli animali</em> · <strong>dominio</strong>: <em>pietra magica</em></li><li><strong>2°</strong> (2 + 1 dominio): <strong>ritardare veleno</strong> · <em>forza toro</em> · <strong>dominio</strong>: <em>ammorbidire terra e pietra</em></li></ul>
+<p><strong>Talenti</strong>: Addestramento nelle Abilità (Addestrare Animali) · Incantesimi in Combattimento · Vigore Sovrannaturale <strong>Abilità</strong>: <strong>Addestrare Animali +9</strong>, <strong>Guarire +10</strong>, Sopravvivenza +10, Percezione +10, Cavalcare +6, Conoscenze (natura) +6, Sapienza Magica +6 <strong>Equipaggiamento</strong>: armatura di cuoio (10) · scudo di legno leggero (3) · falcetto (6) · bastone ferrato · **bacchetta di <em>cura ferite leggere</em>, 25 cariche** (375) · 2 pergamene di <em>ritardare veleno</em> (300) · 2 antitossine (100) · kit dell'erborista e sacca del guaritore (55) · <strong>anello di protezione +1</strong> (2.000) <em>— era di sua madre, e non lo dice a nessuno</em> · <strong>+ ~150 mo</strong></p>
+<h3 class="sub">Il suo problema</h3>
+<p><em>Ritardare veleno</em> lo prepara ogni mattina da sei anni, sempre, e non ha mai dovuto usarlo. Questa settimana lo userà.</p>
+<h3 class="sub">Come si gioca in un minuto</h3>
+<p>Il cavallo è <strong>tuo</strong>. Dormi in stalla, controlli l'acqua, tocchi i ferri prima di ogni uscita. Le tue tre prove sono <strong>Addestrare Animali</strong> (calmarlo, spingerlo, chiamarlo in corsa), <strong>Guarire</strong> (avvelenamenti, ferite, la gente dell'ospizio) e <strong>Percezione +10</strong>, che è il numero più alto del tavolo: <strong>sei tu quella che si accorge</strong>. In Corsa stai <strong>dentro il transennato alla curva nord</strong>, dove nessuno dovrebbe stare.</p>
+<hr class="rule">
+<h2 class="sec">4 · TESIO MARCA — il Tenente</h2>
+<p><strong>Umano mago 3 (illusionista)</strong> · NM · maschio, 31 anni · <strong>GS 2</strong> <em>Scriba del catasto. Ha studiato due anni al Drago e li ha lasciati senza titolo. Sa dov'è ogni registro della città perché li ha copiati tutti.</em></p>
+<p><strong>Iniziativa</strong> +2 · <strong>Percezione</strong> +3 · <strong>Velocità</strong> 9 m</p>
+<h3 class="sub">Difesa</h3>
+<p><strong>CA</strong> 12, contatto 12, colto alla sprovvista 10 <em>(16 con</em> armatura magica <em>attiva)</em> <strong>pf</strong> 20 (3d6+3) <strong>TS</strong> Tempra <strong>+2</strong>, Riflessi <strong>+3</strong>, Volontà <strong>+4</strong></p>
+<h3 class="sub">Attacco</h3>
+<p><strong>Distanza</strong> balestra leggera +3 (1d8/19–20) · <strong>Mischia</strong> pugnale +0 (1d4−1) <strong>Raggio accecante</strong> <em>(scuola)</em> raggio di contatto <strong>+3</strong>, acceca 1 round (TS Tempra CD 15 nega), <strong>7 volte al giorno</strong> <strong>BAB</strong> +1 · <strong>CMB</strong> +0 · <strong>CMD</strong> 12</p>
+<h3 class="sub">Statistiche</h3>
+<p><strong>For</strong> 8 (−1) · <strong>Des</strong> 14 (+2) · <strong>Cos</strong> 13 (+1) · <strong>Int</strong> 18 (+4) · <strong>Sag</strong> 12 (+1) · <strong>Car</strong> 12 (+1)</p>
+<p><strong>Scuola</strong>: Illusione · <strong>scuole opposte</strong>: Necromanzia, Evocazione <em>(costano due slot a memorizzarle)</em> <strong>Incantesimi preparati</strong> (CD 14 + livello; <strong>+1 per le illusioni</strong>)</p>
+<ul><li><strong>0°</strong> (4): <em>prestidigitazione</em> · <em>individuazione del magico</em> · <em>lettura del magico</em> · <em>luce</em></li><li><strong>1°</strong> (3 + 1 scuola): <em>armatura magica</em> · <em>charme su persone</em> (CD 16) · <em>dardo incantato</em> · <strong>scuola</strong>: <em>immagine silenziosa</em> (CD 16)</li><li><strong>2°</strong> (2 + 1 scuola): <em>individuazione dei pensieri</em> (CD 16) · <em>tocco dell'idiota</em> · <strong>scuola</strong>: <em>invisibilità</em></li></ul>
+<p><strong>Talenti</strong>: Vergare Pergamene <em>(bonus)</em> · Focalizzazione Incantatore (illusione) · Incantesimi in Combattimento · Iniziativa Migliorata <strong>Famiglio</strong>: <strong>Conto</strong>, un corvo <em>(il padrone guadagna +3 a Valutare)</em> <strong>Abilità</strong>: Sapienza Magica +10, Conoscenze (locali) +10, Valutare <strong>+12</strong>, Linguistica +9, Conoscenze (arcane) +9, Raggirare +4, Furtività +4, Percezione +3, Percepire Intenzioni +3 <strong>Equipaggiamento</strong>: libro degli incantesimi · balestra leggera e 20 quadrelli (37) · pugnale (2) · <strong>borsa conservante di tipo I</strong> (2.500) · 2 pergamene di <em>comprensione dei linguaggi</em> (50) · pergamena di <em>invisibilità</em> (150) · calamaio, penne, quaranta fogli di carta buona (45) · sigilli del catasto — <strong>non</strong> suoi (0) · <strong>+ ~200 mo</strong></p>
+<h3 class="sub">Il suo problema</h3>
+<p>Le copie dei registri se le è tenute. Tutte. Compreso quello in cui risulta che il confine del bosco di spini, nel 4692, era <strong>cinquanta passi più in là</strong> di dove sta adesso.</p>
+<h3 class="sub">Come si gioca in un minuto</h3>
+<p>Non sei un incantatore da battaglia e non sai mentire in faccia alla gente (Raggirare +4): <strong>menti con le carte e con la magia</strong>. <em>Individuazione dei pensieri</em> in una trattativa vale più di qualsiasi Diplomazia; <em>immagine silenziosa</em> apre porte che non esistono. Conosci ogni registro, catasto e contratto della città (Conoscenze locali +10, Valutare +12). In Corsa stai <strong>al palco della Sovrintendente</strong>, dove si protesta.</p>
+<hr class="rule">
+<h2 class="sec">5 · BERENICE «BRUMA» SALLO — l'Alfiere</h2>
+<p><strong>Mezzelfa barda 3</strong> · CN · femmina, 27 anni · <strong>GS 2</strong> <em>Cantava al teatro sul ponte, con il Leocorno. Se ne è andata sbattendo una porta e non è mai tornata a spiegare perché. Adesso canta per quelli che non pagano.</em></p>
+<p><strong>Iniziativa</strong> +2 · <strong>Percezione</strong> +7 · <strong>Velocità</strong> 9 m</p>
+<h3 class="sub">Difesa</h3>
+<p><strong>CA</strong> 16, contatto 12, colto alla sprovvista 14 (+4 armatura, +2 Des) <strong>pf</strong> 24 (3d8+3) <strong>TS</strong> Tempra <strong>+2</strong>, Riflessi <strong>+5</strong>, Volontà <strong>+3</strong> <em>(+2 contro ammaliamento; immune al sonno)</em></p>
+<h3 class="sub">Attacco</h3>
+<p><strong>Mischia</strong> spada lunga +2 (1d8/19–20) · <strong>frusta</strong> +2 <em>(1 non letale, portata 4,5 m, disarma e fa inciampare)</em> <strong>BAB</strong> +2 · <strong>CMB</strong> +2 · <strong>CMD</strong> 14</p>
+<h3 class="sub">Statistiche</h3>
+<p><strong>For</strong> 10 (+0) · <strong>Des</strong> 14 (+2) · <strong>Cos</strong> 13 (+1) · <strong>Int</strong> 12 (+1) · <strong>Sag</strong> 10 (+0) · <strong>Car</strong> 18 (+4)</p>
+<p><strong>Esibizione bardica</strong>: <strong>12 round al giorno</strong> — controcanto · affascinare · <strong>ispirare coraggio +1</strong> · <strong>ispirare competenza +2</strong> <em>(un alleato, a una prova di abilità: è il talento che decide la Corsa)</em> · distrazione <strong>Incantesimi conosciuti</strong> (CD 14 + livello) — 0°: <em>messaggio</em>, <em>luce danzante</em>, <em>prestidigitazione</em>, <em>lettura del magico</em> · 1°: <em>ammaliare persone</em> (CD 15), <em>cura ferite leggere</em>, <em>ventriloquio</em></p>
+<p><strong>Talenti</strong>: Addestramento nelle Abilità (Intrattenere: canto) <em>(razziale)</em> · Persuasivo · Incantesimi in Combattimento <strong>Abilità</strong>: <strong>Intrattenere (canto) +13</strong>, Diplomazia <strong>+12</strong>, Raggirare +10, Intrattenere (danza) +8, Acrobazia +7, Percezione +7, Conoscenze (locali) +6, Percepire Intenzioni +5, Conoscenze (storia) +5, Sapienza Magica +5, Furtività +4 <strong>Conoscenza bardica</strong>: +1 a <strong>tutte</strong> le Conoscenze, anche senza gradi <strong>Equipaggiamento</strong>: camicia di maglia da maestro (250) · spada lunga (15) · frusta (1) · <strong>liuto da maestro</strong> (100) · <strong>bandiera della contrada, asta di frassino</strong> (5) · <strong>mantello della resistenza +1</strong> (1.000) · 2 pozioni di <em>cura ferite leggere</em> (100) · abiti di scena, tre cambi (75) · <strong>+ ~1.450 mo</strong> <em>depositati all'Oca, ed è l'unica dei sei ad avere un conto</em></p>
+<h3 class="sub">Il suo problema</h3>
+<p>Il pittore del Drappo di quest'anno è Lino Rasca, Capitano del Leocorno. È la porta che ha sbattuto.</p>
+<h3 class="sub">Come si gioca in un minuto</h3>
+<p><strong>Tu sei il Morale del Rione.</strong> Il contatore che il DM tiene sul tavolo sale quasi sempre per qualcosa che hai fatto tu: canti, sbandierate, discorsi dal carro. Intrattenere <strong>+13</strong> vince quasi ogni duello di canto; Diplomazia <strong>+12</strong> ti rende la seconda voce nei Partiti dopo il Capitano. In Corsa stai <strong>sul carro degli alfieri</strong>, e ispiri competenza a Nocca nel tratto che conta.</p>
+<hr class="rule">
+<h2 class="sec">6 · FRA' MELCHIO VANZI — il Vicario</h2>
+<p><strong>Umano chierico 3 di Sarenrae</strong> · NB · maschio, 52 anni · <strong>GS 2</strong> <em>Tiene l'ospizio. Quaranta letti d'inverno, quindici d'estate, e un registro dei morti che aggiorna lui a mano. Non predica: distribuisce.</em></p>
+<p><strong>Iniziativa</strong> +0 · <strong>Percezione</strong> +1 · <strong>Velocità</strong> 6 m</p>
+<h3 class="sub">Difesa</h3>
+<p><strong>CA</strong> 16, contatto 10, colto alla sprovvista 16 (+4 armatura, +2 scudo) <strong>pf</strong> 27 (3d8+6) <strong>TS</strong> Tempra <strong>+5</strong>, Riflessi <strong>+1</strong>, Volontà <strong>+7</strong></p>
+<h3 class="sub">Attacco</h3>
+<p><strong>Mischia</strong> scimitarra +3 (1d6+1/18–20) <em>(arma preferita di Sarenrae)</em> <strong>BAB</strong> +2 · <strong>CMB</strong> +3 · <strong>CMD</strong> 13 <strong>Canalizzare energia positiva</strong>: 2d6 cure, <strong>4 volte al giorno</strong>, CD 12 — con <strong>Canalizzazione Selettiva</strong> escludi fino a 1 creatura <em>(scegli chi non curi: succede più spesso di quanto credi)</em> <strong>Sfidare la morte</strong> <em>(dominio Guarigione)</em>: tocco, cura <strong>1d4+1</strong>, 7 volte al giorno</p>
+<h3 class="sub">Statistiche</h3>
+<p><strong>For</strong> 12 (+1) · <strong>Des</strong> 10 (+0) · <strong>Cos</strong> 14 (+2) · <strong>Int</strong> 10 (+0) · <strong>Sag</strong> 18 (+4) · <strong>Car</strong> 13 (+1)</p>
+<p><strong>Domini</strong>: <strong>Guarigione</strong>, <strong>Sole</strong> <strong>Incantesimi preparati</strong> (CD 14 + livello)</p>
+<ul><li><strong>0°</strong> (4): <em>individuazione del magico</em> · <em>stabilizzare</em> · <em>guida</em> · <em>creare acqua</em></li><li><strong>1°</strong> (3 + 1 dominio): <em>cura ferite leggere</em> ×2 · <em>benedizione</em> · <strong>dominio</strong>: <em>cura ferite leggere</em></li><li><strong>2°</strong> (2 + 1 dominio): <strong>ristorare inferiore</strong> · <em>aiuto</em> · <strong>dominio</strong>: <em>cura ferite moderate</em></li></ul>
+<p><strong>Talenti</strong>: Canalizzazione Selettiva · Incantesimi in Combattimento · Vigore Sovrannaturale <strong>Abilità</strong>: <strong>Guarire +10</strong>, <strong>Percepire Intenzioni +9</strong>, Diplomazia +7, Conoscenze (religioni) +4 <strong>Equipaggiamento</strong>: camicia di maglia da maestro (250) · scudo pesante di legno (7) · scimitarra (15) · <strong>simbolo sacro d'argento</strong> (25) · 4 pozioni di <em>cura ferite leggere</em> (200) · 2 antitossine (100) · <strong>periapto delle ferite risanate</strong> (1.500) · registro dell'ospizio, penne, inchiostro (10) · <strong>+ ~890 mo, che sono i soldi dell'ospizio e non i suoi</strong></p>
+<h3 class="sub">Il suo problema</h3>
+<p>Nel registro dei morti dell'ospizio, negli ultimi due inverni, ci sono nove nomi di raccoglitori di resina. Sarenrae dice di perdonare. Melchio ha smesso di chiedere a Sarenrae come si fa.</p>
+<h3 class="sub">Come si gioca in un minuto</h3>
+<p>Sei la coscienza del tavolo, e la coscienza qui costa: <strong>ogni patto che gli altri stringono, tu lo devi guardare in faccia</strong>. Curi (Guarire +10, canalizzare 4 volte, periapto), e con <strong>Percepire Intenzioni +9</strong> sei quello che capisce quando un Capitano sta mentendo. In Corsa stai <strong>al palco</strong>, accanto a Tesio: lui protesta, tu testimoni. Quando qualcuno cade in pista, corri tu.</p>
+<hr class="rule">
+<h2 class="sec">Le sei righe che legano i sei</h2>
+<p>Da leggere ad alta voce prima della sessione 1, una a testa, in quest'ordine:</p>
+<ol><li><strong>Vanna</strong>: <em>«Il debito l'ho firmato io. Nessuno di voi lo sapeva.»</em></li><li><strong>Melchio</strong>: <em>«Io lo sapevo.»</em></li><li><strong>Berenice</strong>: <em>«Il Drappo di quest'anno l'ha dipinto Rasca. Non chiedetemi di andare a parlargli.»</em></li><li><strong>Tesio</strong>: <em>«Il confine del bosco è sbagliato di cinquanta passi. Ho le carte.»</em></li><li><strong>Ombra</strong>: <em>«Quando ci danno il cavallo, dormo in stalla. Da subito.»</em></li><li><strong>Nocca</strong>: <em>«…io devo dire una cosa. Ma dopo.»</em></li></ol>
+<p>E poi si comincia.</p></div>
+    <div class="pagefoot"><span>La dirigenza dell&#x27;Istrice · ✉ I numeri — le sei schede</span>
+    <span class="n">2</span></div>
+  </div>
+</section>
+<section class="pane" id="c2">
+  <div class="sheet"><span class="pgtag">✉ HANDOUT GIOCATORE</span>
+    <div class="chapter-body"><h2 class="sec">Fascicolo dei personaggi — da stampare e dare in mano</h2>
+<div class="desc"><p class="readaloud"><strong>Come si usa.</strong> Una scheda a testa, <strong>fronte e retro</strong>: davanti i numeri (<code>PREGEN-SEI-SCHEDE-PF1E.md</code>), dietro questa pagina — chi sei, come parli, cosa vuoi, e cosa pensi degli altri cinque.</p><p class="readaloud">Il <strong>ritratto</strong> è in <code>ALLEGATI/tavole/ritratto-&lt;nome&gt;.svg</code>: si stampa in alto a destra del retro, o si sostituisce con l'immagine generata.</p><p class="readaloud"><strong>Da leggere prima di cominciare</strong>: il tuo paragrafo in corsivo, ad alta voce, al tavolo. Sono venti secondi a testa e valgono più di mezz'ora di presentazioni.</p></div>
+<hr class="rule">
+<h2 class="sec">La matrice dei legami</h2>
+<p>Ogni riga dice cosa <strong>quel personaggio</strong> pensa degli altri. Ritagliala e dàlla a tutti: è il pezzo che fa scattare il tavolo nei primi dieci minuti.</p>
+<div class="tablewrap"><table><thead><tr><th>pensa di →</th><th><strong>Vanna</strong></th><th><strong>Nocca</strong></th><th><strong>Ombra</strong></th><th><strong>Tesio</strong></th><th><strong>Berenice</strong></th><th><strong>Melchio</strong></th></tr></thead><tbody><tr><td><strong>Vanna</strong></td><td>—</td><td>«È l'unica cosa che abbiamo. Mi fa paura.»</td><td>«Le devo una cosa che non ho mai pagato.»</td><td>«Sa troppo e lo dice troppo tardi.»</td><td>«Se ne andrà anche da noi.»</td><td>«Mi guarda come se sapesse.»</td></tr><tr><td><strong>Nocca</strong></td><td>«Mi ha preso quando nessuno mi voleva.»</td><td>—</td><td>«È l'unica che parla al cavallo prima che a me. Giusto così.»</td><td>«Mi ha coperto una volta. Non gliel'ho chiesto.»</td><td>«Canta di me e io faccio finta di niente.»</td><td>«Non gli ho ancora detto la cosa.»</td></tr><tr><td><strong>Ombra</strong></td><td>«Firma troppo in fretta.»</td><td>«Pesa quaranta chili ed è tutto quello che abbiamo.»</td><td>—</td><td>«Ha copiato dei fogli che non doveva. Lo so.»</td><td>«Ha la voce di sua madre.»</td><td>«Tiene i morti in ordine. Serve.»</td></tr><tr><td><strong>Tesio</strong></td><td>«Comanda bene e conta male.»</td><td>«Deve dire una cosa. Aspetto.»</td><td>«Il suo nome vero sta in un registro del 4692.»</td><td>—</td><td>«Mi ha chiesto di non cercare Rasca. Ho cercato.»</td><td>«È l'unico onesto e per questo è il più pericoloso.»</td></tr><tr><td><strong>Berenice</strong></td><td>«Se cade lei, cade tutto.»</td><td>«Vorrei essere leggera come lui, e non intendo di peso.»</td><td>«Non sorride mai e non è triste. Non l'avevo mai visto.»</td><td>«Sa cose su tutti. Anche su di me.»</td><td>—</td><td>«Gli ho mentito una volta, in confessione.»</td></tr><tr><td><strong>Melchio</strong></td><td>«Porta un peso che ha firmato da sola.»</td><td>«Un ragazzo con un debito. Ne ho visti troppi.»</td><td>«So chi era. Non lo dirò mai.»</td><td>«Ruba carta e crede che non sia rubare.»</td><td>«È tornata. Non tutti tornano.»</td><td>—</td></tr></tbody></table></div>
+<hr class="rule">
+<h2 class="sec">1 · VANNA CORSARI — il Capitano</h2>
+<p><em>Ritratto: <code>ALLEGATI/tavole/ritratto-vanna.svg</code></em></p>
+<div class="desc"><p class="readaloud"><strong>Da leggere ad alta voce.</strong> <em>«Ho fatto sei anni di milizia sul fiume e me ne sono andata, e no, non lo racconto. Sono tornata qui perché qui c'era mia madre, e mia madre è morta il primo inverno, e io sono rimasta lo stesso. Due anni fa ho firmato per il grano. Ho firmato io, da sola, senza chiedere a nessuno, perché la gente aveva fame e chiedere avrebbe voluto dire aspettare. Il banchiere non ha mai riscosso. Ogni volta che mi saluta per nome mi si stringe qualcosa nello sterno.»</em></p></div>
+<p><strong>Come parli</strong>: poco, e concludi. Frasi corte. Non fai domande retoriche. <strong>Tre cose che sai</strong>: chi nel rione ha fame davvero · come si organizza una squadra · che Attu non fa niente per niente. <strong>Tre cose che vuoi</strong>: che il rione non si sciolga · pagare il debito senza chiedere aiuto a nessuno · dormire una notte intera. <strong>La cosa che non dici</strong>: che se l'accorpamento arrivasse, in fondo, sarebbe un sollievo. <strong>Il tuo primo gesto in gioco</strong>: all'Investitura premi il pollice sull'asse della porta, dove ci sono i pollici di quarant'anni di Capitani.</p>
+<hr class="rule">
+<h2 class="sec">2 · NOCCA PETTIROSSO — il Fantino</h2>
+<p><em>Ritratto: <code>ALLEGATI/tavole/ritratto-nocca.svg</code></em></p>
+<div class="desc"><p class="readaloud"><strong>Da leggere ad alta voce.</strong> <em>«Peso quarantadue chili e non ho mai avuto una sella, e queste due cose insieme sono l'unico motivo per cui qualcuno mi guarda. A undici anni rubavo lepri nel bosco degli spini e il guardaboschi mi ha preso, e invece di darmi al bargello mi ha messo su un cavallo per vedere se stavo su. Ci sono stato. Tre mesi fa uno mi ha dato quaranta monete d'argento perché non corressi una corsa a valle. Ho corso. Ho vinto. Le monete ce le ho ancora.»</em></p></div>
+<p><strong>Come parli</strong>: veloce, e ti interrompi. Cambi discorso quando arrivi vicino alla cosa. <strong>Tre cose che sai</strong>: come si sta su un cavallo che non ti vuole · dove si passa nei vicoli · che gli adulti ti perdonano se ridi per primo. <strong>Tre cose che vuoi</strong>: correre · che Vanna non lo scopra da un altro · non tornare a rubare lepri. <strong>La cosa che non dici</strong>: che hai paura della curva nord da quando hai visto cadere uno, due anni fa. <strong>Il tuo primo gesto in gioco</strong>: ti togli le scarpe sulla soglia dell'oratorio e non le riprendi fino a dopo la Corsa.</p>
+<hr class="rule">
+<h2 class="sec">3 · OMBRA DEI SALICI — lo Stalliere</h2>
+<p><em>Ritratto: <code>ALLEGATI/tavole/ritratto-ombra.svg</code></em></p>
+<div class="desc"><p class="readaloud"><strong>Da leggere ad alta voce.</strong> <em>«Non è il mio nome. Il mio nome non lo usa più nessuno da vent'anni e io non ho corretto nessuno, che è un modo di essere d'accordo. Curo le bestie del rione: parti, coliche, zoccoli, ferite che vanno pulite due volte al giorno. Non ho mai perso un parto. Dormo in stalla anche quando non c'è niente da guardare, perché a casa il silenzio è di un tipo che non mi piace.»</em></p></div>
+<p><strong>Come parli</strong>: constatazioni. Non usi aggettivi sulle emozioni: dici cosa hai fatto. <strong>Tre cose che sai</strong>: quando una bestia ha paura e di cosa · quali erbe si trovano nel bosco a fine estate · che Nonna Grasa compra il fieno di tasca sua. <strong>Tre cose che vuoi</strong>: che il cavallo arrivi intero alla Corsa · che nessuno ti chieda del 4692 · sentirti chiamare per nome, una volta. <strong>La cosa che non dici</strong>: vent'anni fa tenevi tu il morso quando un cavallo si impennò in un vicolo, e un ragazzo di undici anni morì. Era il figlio di Nonna Grasa. <strong>Il tuo primo gesto in gioco</strong>: prendi in mano il morso del cavallo che ancora non c'è, e speri che non tintinni.</p>
+<hr class="rule">
+<h2 class="sec">4 · TESIO MARCA — il Tenente</h2>
+<p><em>Ritratto: <code>ALLEGATI/tavole/ritratto-tesio.svg</code></em></p>
+<div class="desc"><p class="readaloud"><strong>Da leggere ad alta voce.</strong> <em>«Sono arrivato qui che avevo undici anni e non ero di nessuno. Mi hanno adottato al quinto anno invece che al settimo, per deroga, perché sapevo leggere e al rione serviva uno che sapesse leggere. Ho studiato due anni alla scuola del Drago e me ne sono andato senza titolo, e anche di questo non parlo. Adesso copio atti al catasto. Li copio tutti. Anche quelli che non mi chiedono.»</em></p></div>
+<p><strong>Come parli</strong>: preciso, con date e numeri di protocollo. Ti tradisci quando ti entusiasmi. <strong>Tre cose che sai</strong>: dove sta ogni registro della città · chi ha comprato cosa negli ultimi dieci anni · che il confine del bosco è sbagliato di cinquanta passi. <strong>Tre cose che vuoi</strong>: che l'adozione non venga mai messa in discussione · dimostrare la faccenda dei cinquanta passi · un titolo, uno qualsiasi. <strong>La cosa che non dici</strong>: che le copie te le tieni per paura, non per strategia. <strong>Il tuo primo gesto in gioco</strong>: all'Investitura dichiari ad alta voce una cosa che sai e che gli altri non sanno. <strong>La scegli tu</strong>, adesso.</p>
+<hr class="rule">
+<h2 class="sec">5 · BERENICE «BRUMA» SALLO — l'Alfiere</h2>
+<p><em>Ritratto: <code>ALLEGATI/tavole/ritratto-berenice.svg</code></em></p>
+<div class="desc"><p class="readaloud"><strong>Da leggere ad alta voce.</strong> <em>«Mia madre era del Leocorno e mi ha portata alla fontana dell'Istrice a undici mesi, che è una cosa che nel suo rione non le hanno perdonato. Ho cantato al teatro sul ponte per sei anni. Poi una sera me ne sono andata sbattendo una porta, e sono passati tre anni e non sono più tornata a spiegare perché. Adesso canto per gente che non paga, e la verità è che qui mi ascoltano meglio.»</em></p></div>
+<p><strong>Come parli</strong>: a effetto, e poi ti pentì e correggi. Fai battute quando sei in difficoltà. <strong>Tre cose che sai</strong>: come si tiene una piazza · tutte le ballate delle otto contrade · che il pittore del Drappo di quest'anno è Lino Rasca. <strong>Tre cose che vuoi</strong>: vincere il duello dei canti al Fondaco · non incontrare Rasca · incontrare Rasca. <strong>La cosa che non dici</strong>: la porta l'hai sbattuta tu, e avevi torto. <strong>Il tuo primo gesto in gioco</strong>: alzi la bandiera e la fai girare tre volte in una stanza che è troppo piccola per farla girare.</p>
+<hr class="rule">
+<h2 class="sec">6 · FRA' MELCHIO VANZI — il Vicario</h2>
+<p><em>Ritratto: <code>ALLEGATI/tavole/ritratto-melchio.svg</code></em></p>
+<div class="desc"><p class="readaloud"><strong>Da leggere ad alta voce.</strong> <em>«Tengo l'ospizio da diciannove anni. Quaranta letti d'inverno, quindici d'estate, e un registro dei morti che aggiorno a mano perché chi li ha conosciuti deve scriverli. Sarenrae dice di perdonare. Negli ultimi due inverni ho scritto nove nomi di raccoglitori, tutti morti della stessa tosse, e ho smesso di chiederLe come si fa.»</em></p></div>
+<p><strong>Come parli</strong>: piano, e finisci le frasi. Non predichi mai: distribuisci. <strong>Tre cose che sai</strong>: chi sta male e da quanto · come si tratta una ferita sporca · i nove nomi, a memoria. <strong>Tre cose che vuoi</strong>: che l'ospizio resti aperto · che Rico smetta di lavorare · riuscire a perdonare qualcuno, entro quest'anno. <strong>La cosa che non dici</strong>: hai scritto tre volte una lettera al consiglio sulla resina scaldata male, e tre volte non l'hai spedita. <strong>Il tuo primo gesto in gioco</strong>: leggi ad alta voce <strong>tre nomi</strong> dal registro dei morti. Li scegli tu.</p>
+<hr class="rule">
+<h2 class="sec">Le sei righe d'apertura, in ordine</h2>
+<p>Da leggere una a testa, in quest'ordine, <strong>dopo</strong> l'Investitura e <strong>prima</strong> del decreto. È l'ultima cosa che succede prima che comincino i guai.</p>
+<ol><li><strong>Vanna</strong>: <em>«Il debito l'ho firmato io. Nessuno di voi lo sapeva.»</em></li><li><strong>Melchio</strong>: <em>«Io lo sapevo.»</em></li><li><strong>Berenice</strong>: <em>«Il Drappo di quest'anno l'ha dipinto Rasca. Non chiedetemi di andare a parlargli.»</em></li><li><strong>Tesio</strong>: <em>«Il confine del bosco è sbagliato di cinquanta passi. Ho le carte.»</em></li><li><strong>Ombra</strong>: <em>«Quando ci danno il cavallo, dormo in stalla. Da subito.»</em></li><li><strong>Nocca</strong>: <em>«…io devo dire una cosa. Ma dopo.»</em></li></ol>
+<hr class="rule">
+<h2 class="sec">Nota per il DM</h2>
+<p>Ogni «cosa che non dici» è <strong>un segreto che il giocatore possiede</strong>, non un colpo di scena che gli spetta subire. Se un giocatore decide di rivelarlo prima del previsto, <strong>va premiato</strong>: il segreto è suo e l'ha speso quando ha voluto.</p>
+<p>I collegamenti fra i segreti — Ombra e Nonna Grasa, Berenice e Rasca, i nove nomi di Melchio e il Drappo — sono in <code>05-INIZIAZIONE-E-EVENTI-PG.md</code> §4.</p></div>
+    <div class="pagefoot"><span>La dirigenza dell&#x27;Istrice · ✉ Il retro — background e legami</span>
+    <span class="n">3</span></div>
+  </div>
+</section></main>
+<button class="printbtn" onclick="window.print()" title="Stampa/salva in PDF SOLO la scheda aperta (A4)">🖨 Salva PDF</button>
+<script>
+  const tabs=document.querySelectorAll('nav.tabs button');
+  function show(id){
+    tabs.forEach(x=>x.setAttribute('aria-selected',x.dataset.pane===id));
+    document.querySelectorAll('section.pane').forEach(p=>p.classList.toggle('on',p.id===id));
+    window.scrollTo({top:0});
+  }
+  tabs.forEach(b=>b.addEventListener('click',()=>{
+    show(b.dataset.pane); history.replaceState(null,'','#'+b.dataset.pane);
+  }));
+  // deep-link #cN: apre direttamente quella scheda (usato anche
+  // dall'export PDF headless — ADR-0013 §5)
+  if(location.hash && document.getElementById(location.hash.slice(1)))
+    show(location.hash.slice(1));
+</script>
+</body>
+</html>

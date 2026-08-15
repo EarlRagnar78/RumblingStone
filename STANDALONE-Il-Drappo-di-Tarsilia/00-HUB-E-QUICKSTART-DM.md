@@ -25,9 +25,16 @@
 | `01-GIORNO-1-LA-SORTE.md` | Sessione 1 |
 | `02-GIORNO-2-I-PARTITI-E-LA-CENA.md` | Sessione 2 |
 | `03-GIORNO-3-LO-STACCO-E-LA-CORSA.md` | Sessione 3 |
+| `04-LUOGHI-E-INTRIGO.md` | quindici luoghi pronti: osterie, botteghe, il mercato delle informazioni, le dicerie |
+| `05-INIZIAZIONE-E-EVENTI-PG.md` | il rito d'apertura + **diciotto eventi personali**, tre per PG |
+| `06-VILLAIN-E-AGENDE.md` | le agende dei villain **ora per ora**, il giro del mondo, gli **incontri scalabili** 4/5/6/7 |
+| `07-GUIDA-DM-PASSO-PASSO.md` | **la regia**: le tre serate minuto per minuto, i rilanci, le voci dei PNG |
+| `FASCICOLO-SCHEDE-GIOCATORE.md` | i sei background da dare in mano + la matrice dei legami |
+| `PLAYTEST-ALFA.md` | audit meccanico, dry-run delle tre serate, le nove correzioni applicate |
 | `STATBLOCCHI-PF1E.md` | PNG, rivali, sicari, cavalli |
 | `ALLEGATI/mappe/` | la Ruota e le stalle: JSON, master emoji-grid, SVG (vedi il `README.md` lì dentro) |
-| `ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md` | art direction per i sei ritratti e le tre tavole |
+| `ALLEGATI/tavole/` | **tavole vettoriali**: mappa della città, il Drappo, sei ritratti (rigenerabili) |
+| `ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md` | art direction e prompt per l'edizione raster |
 | `IP-E-LICENZE.md` | Community Use Policy Paizo, OGL, provenienza |
 
 ---
@@ -43,7 +50,7 @@ prima che qualcuno tenesse i conti.
 Chi vince se lo porta nell'oratorio della contrada e tiene per un anno il **seggio
 girevole** in consiglio — l'unico voto che cambia mano.
 
-**Chi sono i PG.** La dirigenza dei **Boschispini**, la contrada povera: boscaioli,
+**Chi sono i PG.** La dirigenza dei **Istrice**, la contrada povera: boscaioli,
 raccoglitori di resina, l'ospizio dei profughi di guerra. Non vincono da
 quarant'anni. Sei uffici, sei giocatori:
 
@@ -58,8 +65,8 @@ quarant'anni. Sei uffici, sei giocatori:
 
 **Cosa c'è in ballo, davvero.** Sei giorni fa la Sovrintendente ha letto un decreto:
 le contrade che non si piazzano nei primi tre in cinque anni perdono il seggio e
-**vengono accorpate** alla contrada confinante. I Boschispini sono al quinto anno.
-Confinano con la **Trama d'Argento**, che li vuole: sotto il bosco di spini c'è la
+**vengono accorpate** alla contrada confinante. L'Istrice è al quinto anno.
+Confinano con la **Bruco**, che li vuole: sotto il bosco di spini c'è la
 resina, e la resina la comprano i tintori.
 
 **Come finisce.** Con una corsa di novanta secondi e una scelta che si fa mentre la
@@ -79,12 +86,18 @@ dopo, anche.
 1. la propria scheda da `PREGEN-SEI-SCHEDE-PF1E.md` (una pagina a testa);
 2. il **volantino delle otto contrade** — la tabella §1 di `CONTRADE-DI-TARSILIA.md`,
    con gli stemmi;
-3. la **mappa della Ruota** — l'SVG in `ALLEGATI/mappe/rendered/` (indice in
-   `ALLEGATI/mappe/README.md`). Una sola copia, sta al centro del tavolo.
+3. il **retro della scheda** da `FASCICOLO-SCHEDE-GIOCATORE.md`, con il ritratto da
+   `ALLEGATI/tavole/ritratto-<nome>.svg`;
+4. la **matrice dei legami** (prima tabella del fascicolo), una copia a testa;
+5. la **mappa della Ruota** (`ALLEGATI/mappe/rendered/`) e la **mappa della città**
+   (`ALLEGATI/tavole/tarsilia-citta.svg`): una copia ciascuna, al centro del tavolo.
 
 **Per il DM:**
 
+- **`07-GUIDA-DM-PASSO-PASSO.md`** — è il file che tieni aperto tutta la sera;
 - questo file e il file della giornata che si gioca;
+- `06-VILLAIN-E-AGENDE.md` §1 (l'agenda di Vesca) e `05-INIZIAZIONE` §5 (la griglia
+  degli eventi personali, da spuntare);
 - `REGOLE-DELLA-CORSA-PF1E.md` §2 e §4 (una pagina in tutto: i due contatori e la
   Corsa);
 - il segnapunti dei contatori — due righe su un foglio, si aggiornano a vista.
@@ -97,9 +110,12 @@ ordine di corsa.
 
 ## §3 · Tarsilia in dieci righe
 
+**Siamo nel 4712 AR**, ultima settimana d'estate. Le due date che compaiono nel
+modulo — il 4692 e il 4705 — stanno vent'anni e sette anni indietro.
+
 Città di legno e mattone crudo su palafitte di ontano, quattromila anime, cinque
 ponti di cui due che dondolano. Vive di tre cose: il pedaggio sul fiume, la resina
-dei Boschispini e i tintori della Trama d'Argento, che comprano la resina e la
+dell'Istrice e i tintori del Bruco, che comprano la resina e la
 rivendono lavorata a valle. Non ha mura verso il fiume e ne ha di ottime verso terra,
 il che dice quello che c'è da sapere su chi la assale di solito.
 
@@ -113,7 +129,7 @@ convincere.
 La **Ruota** è la piazza: un anello di terra battuta largo quanto una strada
 maestra, intorno al vecchio mercato coperto del grano. Ci si corre tre giri. Le
 curve sono due, una a nord davanti al Ponte Storto e una a sud sotto le finestre
-della Piuma d'Oro, e sono lì che si cade.
+dell'Oca, e sono lì che si cade.
 
 ---
 
@@ -133,7 +149,7 @@ della Piuma d'Oro, e sono lì che si cade.
 | Quando | Cosa accade | Dove agiscono i PG |
 |---|---|---|
 | G1, mattina | La Sovrintendente legge i cavalli e le contrade | truccare la Sorte (o no) |
-| G1, sera | La Trama d'Argento manda la prima offerta | comprare, rifiutare, mentire |
+| G1, sera | La Bruco manda la prima offerta | comprare, rifiutare, mentire |
 | G2, pomeriggio | I Capitani si chiudono nel mercato del grano: i **Partiti** | contrattare o restare soli |
 | G2, sera | La **Cena della vigilia**, tutta la contrada nei vicoli | il duello dei canti |
 | G2, notte | Qualcuno entra nelle stalle | difendere cavallo e fantino |
@@ -182,7 +198,8 @@ non deve provarci.
 > giornata, incluse le prove non combattive e i premi narrativi.
 
 **Ricchezza.** Le sei schede partono a 3.000 mo di equipaggiamento (ricchezza da 3°
-livello PF1e). Il modulo distribuisce **circa 1.900 mo** in tre giorni, quasi tutta
+livello PF1e) — **quel tetto vale per il tesoro che il modulo distribuisce, non per
+l'equipaggiamento iniziale**, che segue la tabella standard. Il modulo distribuisce **circa 1.900 mo** in tre giorni, quasi tutta
 in oggetti consumabili e in denaro della contrada, che è denaro *vincolato*: serve a
 comprare fieno, silenzio e ferri. Nessun oggetto magico permanente sopra le 500 mo.
 È voluto — è un modulo in cui il problema non si risolve comprando.
@@ -208,7 +225,7 @@ Il modulo si chiude e sta in piedi da solo. Se il tavolo ne vuole ancora, i tre
 semi già piantati sono questi — e sono semi, non capitoli scritti:
 
 1. **La resina.** Chiunque abbia vinto, a valle qualcuno ha già firmato contratti
-   sulla resina dei Boschispini per l'anno prossimo. Firmati a Cassomir, non a
+   sulla resina dell'Istrice per l'anno prossimo. Firmati a Cassomir, non a
    Tarsilia.
 2. **Chi ha dipinto il Drappo.** Il pittore di quest'anno ha lasciato la città la
    notte prima della corsa e non ha ritirato il compenso.

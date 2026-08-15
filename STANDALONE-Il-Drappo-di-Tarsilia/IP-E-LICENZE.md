@@ -74,22 +74,33 @@ policy cambiano, e questa formula è quella nota al momento della stesura.
 
 ---
 
-## §4 · Le bonifiche §7 del rapporto originale
+## §4 · Le bonifiche §7 del rapporto originale — stato reale
 
-La checklist del rapporto di Channathgate, punto per punto, applicata qui:
+> ⚠️ **Decisione del DM, 2026-08-15**: *«per il momento usa gli scudi di Golarion e i
+> nomi senesi, poi bonificheremo anche quelli»*. Il modulo ha quindi **rimesso i nomi
+> delle contrade senesi** (Oca, Torre, Bruco, Istrice, Drago, Civetta, Leocorno,
+> Onda). Questa sezione dice la verità su cosa ne consegue, perché una nota IP che
+> dichiara il falso è il difetto peggiore che un file come questo possa avere.
+
+La checklist del rapporto di Channathgate, punto per punto, **allo stato attuale**:
 
 | # | Bonifica richiesta | Stato |
 |---|---|---|
-| 1 | Rinominare le contrade | ✅ **fatto** — otto nomi nuovi (Piuma d'Oro, Bastione di Ferro, Trama d'Argento, Boschispini, Guglie del Verme, Ombre Bisbiglianti, Corno Dorato, Cresta di Marea) |
-| 2 | Eliminare i titoli araldici ufficiali | ✅ **fatto** — nessun titolo. «Capitano» è usato come nome comune dell'ufficio |
-| 3 | Cambiare le livree | ✅ già chiuso nella serie Golarion (2026-08-09) |
+| 1 | Rinominare le contrade | ❌ **sospesa per decisione del DM** — i nomi sono quelli reali |
+| 2 | Eliminare i titoli araldici ufficiali | ✅ **fatto** — nessun titolo («Nobile», «Sovrana», «Priora»). «Capitano» è usato come nome comune dell'ufficio |
+| 3 | Cambiare le livree | ✅ già chiuso nella serie Golarion (2026-08-09): le otto livree derivano dalla divinità patrona, non dall'allegato A del Regolamento |
 | 4 | Riscrivere i motti da zero | ✅ **fatto** — otto motti nuovi, nessuno dei quali parafrasa i motti reali (confronto in `CONTRADE-DI-TARSILIA.md` §1) |
-| 5 | Rimuovere «Piazza il Campo» e la geometria a nove spicchi | ✅ **fatto** — la piazza è **la Ruota**: un anello rettangolare intorno a un mercato coperto, geometria diversa, nome diverso |
+| 5 | Rimuovere «Piazza il Campo» e la geometria a nove spicchi | ✅ **fatto** — la piazza è **la Ruota**: anello rettangolare intorno a un mercato coperto, nome e geometria diversi |
 | 6 | Rinominare l'evento | ✅ **fatto** — è **il Drappo**. La parola *palio* non compare nel modulo |
-| 7 | Correggere le note IP e documentare la provenienza delle immagini | ✅ **questo file**, più `ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md` §5 |
+| 7 | Correggere le note IP e documentare la provenienza delle immagini | ✅ **questo file**, più `ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md` §5. Le tavole vettoriali sono generate da `ALLEGATI/tavole/build_tavole.py`: provenienza tracciata per costruzione |
 | 8 | Riambientare fuori da Forgotten Realms | ✅ **fatto** — §2 |
 
-**Il lessico è stato sostituito**, non solo i nomi propri:
+**Sei su otto chiuse, una sospesa, una già chiusa altrove.** Restano aperti insieme
+il punto 1 (i nomi) e le **figure degli scudi** — oca, torre, bruco, istrice, drago,
+civetta, leocorno, onda — che sommate ai nomi ricostruiscono l'evocazione che il
+rapporto §3 individuava come il vero rischio.
+
+**Il lessico è comunque sostituito**, e questo resta vero:
 
 | Channathgate (3.5) | Tarsilia (PF1e) |
 |---|---|
@@ -102,19 +113,13 @@ La checklist del rapporto di Channathgate, punto per punto, applicata qui:
 | il drappellone / il cencio | **il Drappo** |
 | Piazza del Palio | **la Ruota** |
 
-### Cosa resta aperto
+### Cosa serve per chiudere anche il punto 1
 
-**Le otto figure degli stemmi.** Gli scudi riusati sono quelli della serie Golarion,
-e le figure restano oca, torre, bruco, istrice, drago, civetta, unicorno, onda — un
-insieme che, preso tutto insieme, richiama ancora il bestiario senese anche con nomi
-e motti nuovi. Per un'edizione pubblicabile vanno sostituite almeno quattro figure su
-otto. È tracciato come **Lotto 3** in
-[`plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md`](../plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md).
-
-**I cartigli dentro gli SVG** portano ancora i motti della serie di origine, non
-quelli del §1 delle contrade. Al tavolo non si nota; in stampa sì.
-
----
+Una passata sola, e il modulo è già attrezzata per riceverla: i nomi delle contrade
+compaiono in **nove file** e sono sostituibili con una tabella di rimpiazzo (l'ultima
+è stata fatta nella direzione opposta il 2026-08-15). Insieme vanno cambiate almeno
+**quattro figure su otto** negli scudi, altrimenti il cumulo resta. È il **Lotto 3**
+in [`plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md`](../plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md).
 
 ## §5 · Le icone degli stemmi
 
@@ -133,8 +138,9 @@ compatibile anche con l'uso commerciale **con attribuzione**. L'obbligo è assol
 |---|---|
 | **Giocarlo al proprio tavolo** | ✅ senza riserve |
 | **Darlo ai propri giocatori** | ✅ |
-| **Pubblicarlo gratis** | ✅ con la nota CUP del §3 e l'attribuzione del §5 |
-| **Venderlo** | ❌ non allo stato: la CUP vieta espressamente di far pagare l'accesso, e restano aperte le figure degli stemmi (§4). Servirebbe togliere gli agganci Golarion (§3, via d'uscita) e rifare quattro scudi |
+| **Pubblicarlo gratis** | 🟡 con la nota CUP del §3 e l'attribuzione del §5 — e sapendo che i **nomi delle contrade sono quelli reali** (§4, punto 1 sospeso): rischio basso ma non nullo, esattamente come per l'arco di Channathgate |
+| **Venderlo** | ❌ non allo stato. La CUP vieta espressamente di far pagare l'accesso, e restano aperti il punto 1 e le figure degli scudi. Servirebbe: togliere gli agganci Golarion (§3, via d'uscita), rinominare le contrade, rifare quattro scudi |
 
-Rispetto al resto del repo la differenza è netta, ed è tutto il senso di questo
-lavoro: **qui il blocco assorbente WotC non c'è**. Quello che resta è governabile.
+La differenza rispetto al resto del repo resta netta, ed è tutto il senso di questo
+lavoro: **qui il blocco assorbente WotC non c'è**. Quello che resta è governabile, e
+adesso è scritto quanto manca.

@@ -9,7 +9,7 @@ la mappa della Ruota, le sei schede.
 | 0 | Quickstart della serata |
 | 1 | Il decreto — apertura in piazza |
 | 2 | Il rione al mattino — sei micro-scene, una per PG |
-| 3 | L'offerta della Trama d'Argento |
+| 3 | L'offerta del Bruco |
 | 4 | Il Peso di contrada — il problema della giornata |
 | 5 | La Sorte dei cavalli |
 | 6 | Sera: la rissa alla fontana |
@@ -24,8 +24,8 @@ la mappa della Ruota, le sei schede.
 tre alla Corsa.
 
 **Il problema della serata**: per essere ammessi alla corsa ogni contrada deve
-consegnare alla bilancia della Piuma d'Oro un **Peso di contrada** — cento monete
-d'oro di merce propria, pesata in pubblico. I Boschispini hanno **140 monete
+consegnare alla bilancia dell'Oca un **Peso di contrada** — cento monete
+d'oro di merce propria, pesata in pubblico. L'Istrice ha **140 monete
 d'argento in una brocca**, cioè quattordici. Mancano ottantasei monete d'oro entro il
 tramonto.
 
@@ -53,7 +53,7 @@ ufficiale, quella che vale.
 > confinante, che ne assume debiti, oneri e boschi.»*
 >
 > *Piega il foglio. Poi lo dice anche in parole normali, perché è quel tipo di*
-> *persona: «Quest'anno riguarda una contrada sola. I Boschispini lo sanno da marzo.»*
+> *persona: «Quest'anno riguarda una contrada sola. L'Istrice lo sanno da marzo.»*
 >
 > *Da qualche parte dietro di voi una donna dice «ah», piano, come chi ha capito solo
 > adesso una cosa che le avevano già spiegato.*
@@ -66,16 +66,21 @@ nessuno, oggi: è peggio).
 **Vidalia Roncetti** (Sovrintendente) resta poi sotto il porticato a firmare le
 ammissioni. Chi le si avvicina scopre tre cose, se chiede: (a) il Peso si consegna
 **entro il tramonto**; (b) l'articolo nono non lo ha scritto lei; (c) lo ha proposto
-la Trama d'Argento nel consiglio di marzo, e non l'ha nascosto a nessuno.
+il Bruco nel consiglio di marzo, e non l'ha nascosto a nessuno.
 
 ---
 
 ## §2 · Il rione al mattino — sei micro-scene
 
-Sei scene brevi, due-tre minuti l'una, in quest'ordine. Ognuna dà a **un** PG una
-cosa che gli altri non hanno. Non richiedono prove: si giocano e basta.
+**Tre in scena adesso, tre da distribuire dopo.** Sei micro-scene consecutive
+lasciano gli ultimi due giocatori ad aspettare venti minuti *(playtest alfa, serata
+1)*. Quindi: gioca **A, C, F** qui, e tieni **B, D, E** per i buchi del §4, quando
+gli altri stanno contrattando.
 
-**A · Vanna, davanti alla bilancia della Piuma d'Oro.** Gerlando Attu la fa passare
+Ognuna dà a **un** PG una cosa che gli altri non hanno. Non richiedono prove: si
+giocano e basta.
+
+**A · Vanna, davanti alla bilancia dell'Oca.** Gerlando Attu la fa passare
 avanti a tre persone in coda, la saluta per nome, non nomina il debito. Le dice che
 il Peso lo può anticipare lui — e mentre lo dice guarda altrove, come chi ha già
 fatto il conto di quanto quel favore varrà a dicembre.
@@ -111,7 +116,7 @@ polso sinistro, e Nocca quella fascia l'ha già vista tre mesi fa. *(Prosegue in
 ## §3 · L'offerta
 
 A metà mattina, Ottavia Vesca arriva **a piedi**, senza scorta, all'oratorio dei
-Boschispini. Chiede se può entrare. Aspetta che le dicano di sì.
+Istrice. Chiede se può entrare. Aspetta che le dicano di sì.
 
 > **Read-aloud (lead: Game of Thrones — chi ha ragione anche lui).**
 >
@@ -141,16 +146,16 @@ stesso.
 **Se i PG accettano** → vedi §8, contingenza 1. Il modulo non finisce: cambia.
 
 **Se rifiutano**, Vesca non si offende. Rimette il foglio in tasca, dice *«ci
-proverò lo stesso»*, e da quel momento la Trama d'Argento fa tre cose: compra il
+proverò lo stesso»*, e da quel momento il Bruco fa tre cose: compra il
 fantino (fallisce), compra il fieno (riesce, Giorno 2), manda Sfregio (Giorno 2
 notte). Nessuna delle tre è personale.
 
 **Altri due emissari**, se c'è tempo — entrambi al pomeriggio, entrambi in due minuti:
 
-- **Sirena Occo** (Ombre Bisbiglianti) vende, a scelta: il testo dell'articolo nono
+- **Sirena Occo** (Civetta) vende, a scelta: il testo dell'articolo nono
   *prima* della modifica, oppure il nome dell'uomo con la fascia grigia. Prezzo: un
   segreto dei PG, di quelli veri.
-- **Peleo Vanni** (Guglie del Verme) offre di misurare le curve della Ruota per loro:
+- **Peleo Vanni** (Drago) offre di misurare le curve della Ruota per loro:
   150 mo, **+2 a una prova di Cavalcare in Corsa**. Non tratta. Se i PG contrattano,
   ripete la cifra con la stessa intonazione.
 
@@ -158,9 +163,16 @@ notte). Nessuna delle tre è personale.
 
 ## §4 · Il Peso di contrada
 
-**Ottantasei monete d'oro entro il tramonto.** Questo è il cuore giocabile della
-serata: quattro vie, tutte percorribili, tutte con un costo. I PG possono
+**Ottantasei monete d'oro di merce entro il tramonto.** Questo è il cuore giocabile
+della serata: quattro vie, tutte percorribili, tutte con un costo. I PG possono
 combinarle.
+
+> ⚙️ **Le monete non si pesano.** Il Peso è **merce prodotta dal rione**, e la
+> bilancia dell'Oca lo verifica in pubblico: resina, legname, tessuto, grano. Un
+> giocatore che apre la borsa e offre contanti si sente rispondere, con cortesia, che
+> *«il Peso si pesa, non si conta»*. Dillo la prima volta che qualcuno ci prova, e
+> nessuno se la prenderà. *(Correzione del playtest alfa, rilievo 3: pagando in
+> contanti l'intera serata evaporava.)*
 
 ### Via 1 — La resina (onesta, lenta)
 
@@ -187,9 +199,9 @@ settimane. Serve **tutto il rione**, e il rione va convinto.
 
 ### Via 2 — L'anticipo di Attu (facile, cara)
 
-La Piuma d'Oro anticipa il Peso intero. Nessuna prova: basta chiedere.
+La Oca anticipa il Peso intero. Nessuna prova: basta chiedere.
 **Costo**: il debito sale di 150 mo e — clausola detta ad alta voce, con
-noncuranza — i Boschispini **non ostacoleranno la Piuma d'Oro in Corsa**.
+noncuranza — l'Istrice **non ostacoleranno l'Oca in Corsa**.
 Chi ascolta con Percepire Intenzioni CD 15 capisce che quella clausola vale più dei
 150 mo.
 
@@ -216,7 +228,7 @@ per la bilancia. Rubarne un quarto è un colpo notturno da manuale.
 **Se riesce**: 100 mo. **E**: il guado rubato è riconoscibile — un colore
 particolare — e alla bilancia se ne accorge **Attu**, non Vesca. Attu non dice
 niente. Se lo tiene. *(Riemerge al Giorno 3, §7.)*
-**Se fallisce**: la milizia del Bastione arresta chi prende, 50 mo di cauzione,
+**Se fallisce**: la milizia del Torre arresta chi prende, 50 mo di cauzione,
 **Morale −2** e la contrada viene ammessa lo stesso, con una nota sul registro.
 
 > **Se il tavolo trova una quinta via**, dàgliela. Il Peso è un problema di
@@ -234,7 +246,7 @@ brutte figure per arrivarci.
 **Meccanica completa**: `REGOLE-DELLA-CORSA-PF1E.md` §2. Qui c'è solo la scena.
 
 Al tramonto la Sovrintendente sale sul palchetto con due sacchetti di tela grezza. Un
-chierichetto della Piuma d'Oro li tiene. Otto cavalli sono legati sotto il porticato
+chierichetto dell'Oca li tiene. Otto cavalli sono legati sotto il porticato
 e li si vede tutti: due sono bestie vere, quattro sono cavalli, due sono rozze e una
 di quelle ha la groppa storta.
 
@@ -258,7 +270,7 @@ cosa fa il PG.
 > *La Sovrintendente pesca, guarda il biglietto, e lo dice al modo in cui si dicono i
 > nomi alla lettura di un testamento, senza colore.*
 >
-> *«Boschispini: **[nome del cavallo]**.»*
+> *«Istrice: **[nome del cavallo]**.»*
 >
 > *Il rione fa un rumore. Quale rumore lo sapete voi.*
 >
@@ -273,7 +285,7 @@ cosa fa il PG.
 **Quando**: dopo la Sorte, se resta un'ora. Se non resta, spostala in apertura del
 Giorno 2.
 
-Alla fontana del canale dei tintori si incrociano cinque ragazzi della Trama
+Alla fontana del canale dei tintori si incrociano cinque ragazzi del Bruco
 d'Argento e la gente del rione che torna dal bosco. Non è un agguato: sono ragazzi
 che hanno bevuto e che oggi hanno sentito il loro Capitano prendersi del ladro di
 contrade in piazza.
@@ -298,7 +310,7 @@ diventare un'altra cosa.
 più all'ospizio, che è **di un'altra contrada** e che Melchio curerà lo stesso —
 la piazza lo saprà. **Morale +1** se lo cura, **−1** se lo caccia.
 
-**Sviluppi**: se un PG uccide un tintore, la milizia del Bastione arresta il PG.
+**Sviluppi**: se un PG uccide un tintore, la milizia del Torre arresta il PG.
 Ubalda Trenchi non fa sconti a nessuno e la contrada corre in cinque. Il modulo
 regge: si gioca il Giorno 2 con un PG in cella e una missione in più.
 
@@ -335,13 +347,13 @@ Poi una riga sola, detta al tavolo e non a un personaggio:
 
 ## §8 · Contingenze — se i PG fanno X
 
-**1 · Accettano l'offerta di Vesca.** Il modulo prosegue: i Boschispini si ritirano,
+**1 · Accettano l'offerta di Vesca.** Il modulo prosegue: l'Istrice si ritira,
 il rione lo scopre la mattina dopo e **il Morale crolla a 0**. Il Giorno 2 diventa
 «tenere insieme un rione che vi ha visti firmare», il Giorno 3 la contrada corre lo
 stesso perché **Nocca si iscrive a titolo personale** — e allora la corsa si fa
 contro la propria dirigenza. È una versione migliore, non peggiore: giocala.
 
-**2 · Vanno a menare le mani alla Trama d'Argento.** Ubalda Trenchi (Bastione) li
+**2 · Vanno a menare le mani al Bruco.** Ubalda Trenchi (Torre) li
 ferma con dodici miliziani. Non combatte: elenca. Chi insiste passa la notte in
 cella e il Peso non viene consegnato → la contrada è **ammessa d'ufficio con
 riserva** e parte con **Morale 1**.

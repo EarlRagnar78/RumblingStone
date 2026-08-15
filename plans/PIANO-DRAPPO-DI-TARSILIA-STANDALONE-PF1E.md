@@ -1,6 +1,6 @@
 # PIANO — «Il Drappo di Tarsilia»: il Palio come modulo autonomo (Golarion · PF1e)
 
-**Stato**: 🟡 in corso — Lotto 1 chiuso (impianto giocabile completo)
+**Stato**: 🟡 in corso — Lotti 1 e 2 chiusi (impianto + profondità AP + booklet)
 **Aperto**: 2026-08-14
 **Richiesta-fonte (DM, 2026-08-14)**: *«dato il palio di Channathgate possiamo fare
 una variante per sessioni di qualche ora, per 6 persone, per 3 giorni, ambientata a
@@ -22,7 +22,7 @@ da Faerûn»*. La serie di stemmi Golarion (PR #100–#102) era già il primo pe
 | | |
 |---|---|
 | **Si costruisce** | un modulo **autonomo**: città originale, sei PG pregenerati, tre giorni di gioco, regole PF1e, allegati propri |
-| **Si riusa** | il **sistema** del Palio (Tratta, Partiti, Morale/Onore, Mossa, Corsa) — materiale originale dell'autore — e gli **otto stemmi Golarion** già in repo |
+| **Si riusa** | il **sistema** del Palio (Sorte, Partiti, Morale/Onore, Stacco, Corsa) — materiale originale dell'autore — e gli **otto stemmi Golarion** già in repo |
 | **NON si tocca** | l'arco P2D di Channathgate: resta com'è, in 3.5, dentro la campagna. Nessun file dell'arco 09 viene modificato |
 | **NON si eredita** | Faerûn, il Red Hand of Doom, i quattro PG della campagna, il Collezionista, Rethmar, la Cronaca Vivente |
 
@@ -40,8 +40,8 @@ nel piano e nelle note di provenienza, e nient'altro.
 | **Durata** | **3 sessioni da 3–4 ore**, una per giornata di corsa | la richiesta; la struttura del Palio è già a giornate |
 | **Avanzamento** | **pietre miliari** (4° a fine Giorno 2) | con la traccia media servirebbero ~24.000 px totali: un modulo d'intrigo non li produce e non deve provarci |
 | **Nome dell'evento** | «il **Drappo**», non «il Palio di X» | bonifica §7.6 del rapporto IP: *palio* resta nome comune, l'identità senese no |
-| **Contrade** | otto, **rinominate da zero**, motti **scritti ex novo**, nessun titolo araldico reale | bonifiche §7.1, §7.2, §7.4 |
-| **Immagini** | 8 stemmi SVG (riuso), 2 mappe generate dalla pipeline, prompt-sheet per i ritratti | il repo non genera raster: genera vettoriale e *istruzioni* per ComfyUI locale |
+| **Contrade** | otto, **nomi senesi** (decisione DM 2026-08-15: *«poi bonificheremo anche quelli»*), motti **scritti ex novo**, nessun titolo araldico reale | §7.2 e §7.4 chiuse, **§7.1 sospesa** → Lotto 4 |
+| **Immagini** | 8 stemmi SVG (riuso) · 2 mappe tattiche dalla pipeline · **mappa città, il Drappo e 6 ritratti** da `build_tavole.py` · prompt-sheet per l'edizione raster | il repo non genera raster: genera **vettoriale** e *istruzioni* per ComfyUI locale |
 
 ## 3. Lotti
 
@@ -52,11 +52,11 @@ nel piano e nelle note di provenienza, e nient'altro.
 - [x] `CONTRADE-DI-TARSILIA.md` — le otto contrade: livree, motti nuovi, canti con
       effetti, rivalità, tabella di corrispondenza con gli stemmi SVG
 - [x] `REGOLE-DELLA-CORSA-PF1E.md` — il sottosistema: Morale del Rione, Onore del
-      Fantino, la Mossa, la Corsa come inseguimento PF1e, il nerbo, il cavallo scosso
+      Fantino, lo Stacco, la Corsa a nove tratti, lo scudiscio, il cavallo scosso
 - [x] `PREGEN-SEI-SCHEDE-PF1E.md` — sei schede complete (statblock, equipaggiamento,
       ufficio, obiettivo personale, come si gioca in un minuto)
-- [x] `01-GIORNO-1-LA-TRATTA.md` · `02-GIORNO-2-I-PARTITI-E-LA-CENA.md` ·
-      `03-GIORNO-3-LA-MOSSA-E-LA-CORSA.md` — le tre sessioni
+- [x] `01-GIORNO-1-LA-SORTE.md` · `02-GIORNO-2-I-PARTITI-E-LA-CENA.md` ·
+      `03-GIORNO-3-LO-STACCO-E-LA-CORSA.md` — le tre sessioni
 - [x] `STATBLOCCHI-PF1E.md` — PNG, rivali, sicari, cavalli
 - [x] `ALLEGATI/mappe/` — 2 mappe dal contratto JSON (piazza, stalle) + render
 - [x] `ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md` — art direction
@@ -66,20 +66,52 @@ nel piano e nelle note di provenienza, e nient'altro.
 **Criterio di accettazione**: un DM che non ha mai letto la campagna RumblingStone
 apre l'hub, stampa sei schede e gioca tre serate senza aprire nient'altro.
 
-### Lotto 2 — Collaudo al tavolo ⬜ *(gated: serve una sessione vera)*
+### Lotto 2 — Profondità da modulo AP ✅ *(chiuso 2026-08-15)*
 
-- [ ] Giocare il Giorno 1 e annotare: durata reale, punti morti, prove che nessuno
-      ha usato
-- [ ] Tarare i tempi (il sospetto è che il Giorno 2 sia lungo e il Giorno 1 corto)
-- [ ] Ritratti: il DM passa i prompt a ComfyUI locale e carica i PNG
+Nato dall'audit del DM: *«ci sono eventi per i personaggi? come entrano nelle
+contrade? ci sono osterie e botteghe? un master ha tutto sotto controllo o ha bisogno
+di un'AI? c'è stata una sessione alfa di playtest?»* — sei «no» onesti, e questo lotto
+li chiude.
 
-### Lotto 3 — Edizione pubblicabile ⬜ *(gated: decisione DM su ADR-0005)*
+- [x] **Nomi senesi ripristinati** su decisione DM (Oca, Torre, Bruco, Istrice, Drago,
+      Civetta, Leocorno, Onda) con gli scudi Golarion; nota IP riscritta **onesta**:
+      6 bonifiche su 8 chiuse, 1 sospesa, 1 chiusa altrove
+- [x] `04-LUOGHI-E-INTRIGO.md` — quindici luoghi giocabili, il mercato delle
+      informazioni della Civetta, le dicerie (1d6), tre luoghi che non servono a niente
+- [x] `05-INIZIAZIONE-E-EVENTI-PG.md` — come si entra in una contrada, **il rito
+      d'Investitura** come scena d'apertura, **diciotto eventi personali** (3 per PG)
+      con griglia di controllo
+- [x] `06-VILLAIN-E-AGENDE.md` — agende **ora per ora** di Vesca, Sfregio, Salle e
+      Attu; il giro del mondo se i PG stanno fermi; le contromosse; **incontri
+      scalabili 4/5/6/7 giocatori** e la variante di 5° livello
+- [x] `07-GUIDA-DM-PASSO-PASSO.md` — la regia: 45 minuti di preparazione, le tre
+      serate minuto per minuto, otto rilanci, le voci dei PNG, le sei cose da non fare
+- [x] `FASCICOLO-SCHEDE-GIOCATORE.md` — sei background in prima persona + **matrice
+      dei legami 6×6**
+- [x] `ALLEGATI/tavole/build_tavole.py` — mappa della città, il Drappo, sei ritratti,
+      tutti vettoriali e rigenerabili
+- [x] `PLAYTEST-ALFA.md` — audit meccanico (18 rilievi) + dry-run cronometrato delle
+      tre serate + **nove correzioni applicate al modulo**
+- [x] `homebrew/` — **tre booklet** (DM, Giocatori, Fascicolo) in HTML pergamena +
+      sorgente Homebrewery + **22 PDF A4** esportati
 
-- [ ] Audit IP dedicato del solo standalone (il tetto WotC qui non si applica:
-      va verificato che *davvero* non si applichi, riga per riga)
-- [ ] Sostituzione delle figure degli stemmi che restano nel bestiario senese
-      (oca, torre, bruco, istrice) — l'ultima criticità §3 aperta
-- [ ] Impaginazione Homebrewery + PDF
+**Criterio di accettazione**: un DM che non ha mai letto il modulo apre
+`07-GUIDA-DM-PASSO-PASSO.md`, spende quarantacinque minuti, e gioca tre serate senza
+inventare niente di strutturale.
+
+### Lotto 3 — Collaudo al tavolo ⬜ *(gated: serve una sessione vera)*
+
+- [ ] Giocare il Giorno 1 e annotare durata reale, punti morti, prove mai usate
+- [ ] Rispondere alle sei domande aperte di `PLAYTEST-ALFA.md` §5
+- [ ] Ritratti raster: il DM passa i prompt a ComfyUI locale
+- [ ] Aggiungere il §6 al playtest → il modulo passa da **alfa** a **beta**
+
+### Lotto 4 — Edizione pubblicabile ⬜ *(gated: decisione DM su ADR-0005)*
+
+- [ ] Rinominare le contrade (bonifica §7.1, oggi **sospesa per scelta del DM**)
+- [ ] Sostituire almeno quattro figure su otto negli stemmi
+- [ ] Rigenerare i cartigli degli scudi coi motti nuovi
+- [ ] Audit IP dedicato del solo standalone
 
 ## 4. Engine e impegno per fase (regola DM 2026-07-22)
 

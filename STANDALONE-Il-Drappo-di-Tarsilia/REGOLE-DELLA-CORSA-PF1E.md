@@ -71,7 +71,22 @@ fallimenti**. Ogni PG può contribuire una volta.
 | Comprare il chierichetto che porta i sacchetti | Diplomazia | 15 (e 25 mo) |
 | *Prestidigitazione* / *mano magica* | Sapienza Magica per non farsi notare | 17 |
 
-- **3 successi**: i Boschispini prendono un **Cavallone**. Nessuno se ne accorge.
+**L'assegnazione, se nessuno bara** — usala così com'è, è già equilibrata:
+
+| Contrada | Cavallo | Ritmo |
+|---|---|---|
+| **Oca** | Fumo di Sera *(comprato a Cassomir per 200 mo)* | **+4** |
+| **Onda** | Vetta | **+4** |
+| **Bruco** | Mano Lesta | +1 |
+| **Torre** | Bricco | +1 |
+| **Leocorno** | Aria | +1 |
+| **Civetta** | Nespola | +1 |
+| **Drago** | Sasso | −2 |
+| **Istrice** | **La Storta** | **−2** |
+
+- **3 successi**: l'Istrice prende un **Cavallone**. Nessuno se ne accorge — e il
+  cavallo che i PG si prendono **lo tolgono a qualcuno**: scambia con l'Onda (Vetta),
+  mai con l'Oca, perché Attu il suo se l'è comprato e nessuna urna lo separa da lui.
 - **3 fallimenti**: prendono una **Rozza**, e la Sovrintendente ha visto qualcosa.
   Non accusa nessuno — chiede al Capitano, in privato, se ha bisogno di aiuto. Il
   Morale del Rione **−1** quando si sparge la voce.
@@ -157,9 +172,20 @@ mezz'ora se non ci si ferma a discutere.
 
 ### 6.1 Il tiro base
 
-Ogni tratto, ogni fantino tira **Cavalcare** contro la CD del tratto. Nocca corre **a
-pelo**: −5 a Cavalcare, come da regola sul cavalcare senza sella. Somma il **Ritmo**
-del cavallo (§2) e il modificatore di Morale.
+Ogni tratto, ogni fantino tira **Cavalcare** contro la CD del tratto. Somma il
+**Ritmo** del cavallo (§2) e il modificatore di Morale.
+
+> ⚙️ **Il −5 per cavalcare a pelo non si applica ai fantini di contrada.** La regola
+> standard di PF1e penalizza chi monta senza sella; **un fantino del Drappo a pelo ci
+> è nato**, ed è esattamente il motivo per cui la contrada lo tiene invece di mandare
+> un cavaliere in armatura. Vale per tutti e otto i fantini, PG e PNG. Chiunque
+> **non** sia un fantino di contrada e provi a montare in corsa si becca il −5 pieno.
+> *(Correzione del playtest alfa, rilievo 1: con il malus pieno e una Rozza, il
+> fantino falliva la Curva Nord due volte su tre e cadeva.)*
+
+**Le Lunghezze** — il punteggio della Corsa. Tutte le contrade **partono da 0**; lo
+Stacco assegna ±1 (§5). Non c'è un tetto: si segnano su un foglio a vista, una riga
+per contrada, e si aggiungono tratto per tratto. Vince chi ne ha di più dopo il nono.
 
 | Tratto | CD | Nota |
 |---|---|---|
@@ -191,7 +217,7 @@ le azioni della folla.
 | **Tetto del mercato del grano** | chiunque abbia scalato | vede **tutto**: una volta per corsa, dichiara in anticipo cosa farà un avversario nel tratto seguente |
 
 > **Regia del giro.** Apri ogni giro con due righe di stato («terzo giro, siete
-> secondi, il cavallo della Trama d'Argento ha schiuma alla bocca»), poi il giro di
+> secondi, il cavallo del Bruco ha schiuma alla bocca»), poi il giro di
 > tavolo nell'ordine dei posti, poi il tiro di Nocca. Chiudi sul cambio di
 > posizione. Mai tirare prima di aver fatto parlare tutti e sei.
 
@@ -240,7 +266,8 @@ bonus, e nessuno che ringrazi. Doveva farlo.
 | Percepire il tradimento nella clausola | 20 |
 | Tratto Dritto · Curva Nord · Curva Sud | 12 · 17 · 15 |
 | Dritto in rischio (2 Lunghezze) | 17 |
-| Cavalcare a pelo | −5 al tiro |
+| Cavalcare a pelo — **fantino di contrada** | nessun malus |
+| Cavalcare a pelo — chiunque altro | −5 al tiro |
 | Non cadere dopo un critico di scudiscio | 15 |
 | Fermare un cavallo scosso | 20 |
 | Corruzione del fantino (TS Volontà) | 15, +5 se l'offerta è enorme |

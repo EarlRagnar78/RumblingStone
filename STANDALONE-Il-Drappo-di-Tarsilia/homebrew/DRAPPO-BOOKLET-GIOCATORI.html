@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Il Drappo di Tarsilia</title>
+<style>
+  :root{
+    --chrome-bg:#efe9dd; --chrome-ink:#3a3126; --chrome-line:#d8cdb8;
+    --tab-bg:#e2d8c2; --tab-active:#58180D; --tab-active-ink:#f5edd6;
+    --sheet:#EEE5CE; --ink:#2b241c; --rubric:#58180D; --brass:#c9ad6a;
+    --note-bg:#e0e5c1; --desc-bg:#faf3e3; --banner:#B31515; --banner-ink:#f7ecd4;
+    --shadow:0 10px 26px rgba(43,36,28,.35);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --chrome-bg:#221e19; --chrome-ink:#d8cdb8; --chrome-line:#3b342b;
+           --tab-bg:#2f2921; --shadow:0 12px 30px rgba(0,0,0,.6); }
+  }
+  :root[data-theme="dark"]{ --chrome-bg:#221e19; --chrome-ink:#d8cdb8; --chrome-line:#3b342b;
+           --tab-bg:#2f2921; --shadow:0 12px 30px rgba(0,0,0,.6); }
+  :root[data-theme="light"]{ --chrome-bg:#efe9dd; --chrome-ink:#3a3126; --chrome-line:#d8cdb8;
+           --tab-bg:#e2d8c2; --shadow:0 10px 26px rgba(43,36,28,.35); }
+
+  body{ background:var(--chrome-bg); color:var(--chrome-ink);
+        font-family:Georgia,'Times New Roman',serif; margin:0; }
+  header.top{ padding:1.4rem 1rem .6rem; text-align:center; }
+  header.top h1{ font-size:1.15rem; margin:0; letter-spacing:.06em; text-transform:uppercase; }
+  header.top p{ margin:.35rem auto 0; max-width:46rem; font-size:.9rem; opacity:.8; font-style:italic; }
+
+  nav.tabs{ display:flex; gap:.5rem; justify-content:center; flex-wrap:wrap;
+            padding:.8rem 1rem 1.2rem; position:sticky; top:0;
+            background:var(--chrome-bg); border-bottom:1px solid var(--chrome-line); z-index:5;
+            max-width:64rem; margin:0 auto;}
+  nav.tabs button{ font:inherit; font-size:.72rem; letter-spacing:.05em;
+      padding:.35rem .6rem; border:1px solid var(--chrome-line);
+      background:var(--tab-bg); color:var(--chrome-ink); cursor:pointer; border-radius:2px;}
+  nav.tabs button[aria-selected="true"]{ background:var(--tab-active); color:var(--tab-active-ink);
+      border-color:var(--tab-active); }
+  nav.tabs button:focus-visible{ outline:2px solid var(--rubric); outline-offset:2px; }
+
+  main{ display:flex; flex-direction:column; align-items:center; gap:2rem; padding:2rem .8rem 4rem; }
+  section.pane{ display:none; flex-direction:column; gap:2rem; align-items:center; width:100%; }
+  section.pane.on{ display:flex; }
+
+  .sheet{ background:var(--sheet); color:var(--ink); width:min(52rem,100%);
+      box-shadow:var(--shadow); padding:2.6rem 2.8rem 3.4rem; position:relative;
+      background-image:radial-gradient(ellipse at 18% 8%, rgba(201,173,106,.16), transparent 55%),
+                       radial-gradient(ellipse at 85% 95%, rgba(88,24,13,.07), transparent 50%);
+      border:1px solid #d9ccab; }
+  .sheet, .sheet table{ font-size:.94rem; line-height:1.45; }
+
+  .cover{ text-align:center; display:flex; flex-direction:column; justify-content:center;
+          min-height:34rem; gap:1rem;}
+  .cover .brand{ letter-spacing:.35em; font-size:.8rem; color:var(--rubric); }
+  .cover h2{ font-variant:small-caps; font-size:2.6rem; margin:.1em 0; color:var(--rubric);
+             line-height:1.05; text-wrap:balance;}
+  .cover h3{ font-style:italic; font-weight:normal; font-size:1.25rem; margin:0; }
+  .rule{ border:none; height:3px; width:60%; margin:0.6rem auto;
+         background:linear-gradient(90deg,transparent,var(--rubric),transparent); }
+  .banner{ display:inline-block; margin:0 auto; background:var(--banner); color:var(--banner-ink);
+      padding:.35rem 1.6rem; letter-spacing:.25em; font-size:.85rem;
+      clip-path:polygon(4% 0,96% 0,100% 50%,96% 100%,4% 100%,0 50%); }
+  .covermeta{ font-size:.8rem; font-style:italic; opacity:.85; max-width:34rem; margin:1.6rem auto 0;
+      border-top:1px solid var(--brass); padding-top:.8rem;}
+
+  .twocol{ column-count:2; column-gap:2.2rem; }
+  @media (max-width:44rem){ .twocol{ column-count:1; } .sheet{ padding:1.6rem 1.2rem 2.4rem; } }
+  .twocol > *{ break-inside:avoid; }
+
+  .sheet h2.sec{ font-variant:small-caps; color:var(--rubric); font-size:1.5rem;
+      margin:1.1rem 0 .3rem; border-bottom:2px solid var(--brass); padding-bottom:.15rem;
+      column-span:all; text-wrap:balance;}
+  .sheet h3.sub{ font-variant:small-caps; color:var(--rubric); font-size:1.12rem; margin:.9rem 0 .25rem;}
+  .sheet h4.sub4{ font-variant:small-caps; color:var(--rubric); font-size:1rem; margin:.7rem 0 .2rem;}
+  .sheet p{ margin:.45rem 0; text-align:justify; hyphens:auto;}
+  .sheet .lede::first-letter{ font-size:3.1em; float:left; line-height:.82;
+      padding:.04em .08em 0 0; color:var(--rubric); font-family:Georgia,serif;}
+  .sheet ul{ margin:.4rem 0 .7rem 1.2rem; padding:0;}
+  .sheet ol{ margin:.4rem 0 .7rem 1.4rem; padding:0;}
+  .sheet li{ margin:.22rem 0;}
+  .atmo{ font-style:italic; text-align:center; margin:1rem 0;}
+
+  .tablewrap{ overflow-x:auto; margin:.6rem 0 1rem; column-span:all;}
+  .sheet table{ border-collapse:collapse; width:100%; min-width:34rem;}
+  .sheet th{ background:var(--rubric); color:var(--banner-ink); text-align:left;
+      padding:.3rem .55rem; font-variant:small-caps; font-weight:normal; letter-spacing:.04em;}
+  .sheet td{ padding:.3rem .55rem; vertical-align:top; border-bottom:1px solid #d6c69c;}
+  .sheet tbody tr:nth-child(odd){ background:rgba(201,173,106,.14); }
+
+  .note,.desc{ padding:.8rem 1rem; margin:.9rem 0; break-inside:avoid; }
+  .note{ background:var(--note-bg); border-top:3px solid var(--rubric);
+         border-bottom:3px solid var(--rubric); box-shadow:2px 2px 0 rgba(43,36,28,.15);}
+  .desc{ background:var(--desc-bg); border:2px solid var(--brass); position:relative;}
+  .desc::before,.desc::after{ content:"❧"; position:absolute; color:var(--brass); font-size:.9rem;}
+  .desc::before{ top:-2px; left:6px;} .desc::after{ bottom:-2px; right:6px; transform:rotate(180deg);}
+  .note h4,.desc h4{ margin:.1rem 0 .35rem; font-variant:small-caps; color:var(--rubric); font-size:1rem;}
+  .readaloud{ font-style:italic; }
+  .vague{ font-style:italic; font-size:.86rem; opacity:.9; }
+
+  pre.mono{ background:rgba(201,173,106,.18); border:1px solid var(--brass); padding:.6rem .8rem;
+      overflow-x:auto; font-size:.8rem; line-height:1.35; font-family:ui-monospace,Consolas,monospace;}
+  .figure{ margin:.8rem auto; text-align:center; }
+  .figure svg{ max-width:100%; height:auto; border:1px solid var(--brass); background:#efe6cf;}
+  .figure img{ max-width:100%; height:auto; border:1px solid var(--brass);}
+  .figure.placeholder{ border:2px dashed var(--brass); padding:1.6rem; background:rgba(201,173,106,.12);}
+
+  .pagefoot{ display:flex; justify-content:space-between; align-items:baseline;
+      margin-top:2.2rem; border-top:1px solid var(--brass); padding-top:.5rem;
+      font-size:.72rem; letter-spacing:.14em; color:var(--rubric); font-variant:small-caps;}
+  .pagefoot .n{ font-family:Georgia,serif; font-size:1rem; font-variant-numeric:tabular-nums;}
+  .dmtag{ position:absolute; top:.9rem; right:1rem; font-size:.62rem; letter-spacing:.2em;
+      color:var(--banner); border:1px solid var(--banner); padding:.15rem .5rem; }
+  .pgtag{ position:absolute; top:.9rem; right:1rem; font-size:.62rem; letter-spacing:.2em;
+      color:#2f5d31; border:1px solid #2f5d31; padding:.15rem .5rem; }
+  .caption{ font-size:.78rem; text-align:center; opacity:.75; max-width:40rem; font-style:italic;}
+  .printbtn{ position:fixed; right:1rem; bottom:1rem; z-index:9; font:inherit; font-size:.8rem;
+      padding:.5rem .9rem; border:1px solid var(--chrome-line); border-radius:4px; cursor:pointer;
+      background:var(--tab-active); color:var(--tab-active-ink); box-shadow:var(--shadow);}
+
+  /* ── Stampa / PDF A4 (ADR-0013 §5): via testata e tab, resta SOLO la
+     scheda attiva, pergamena a piena pagina, colori esatti. ───────────── */
+  @media print{
+    @page{ size:A4; margin:0; }
+    header.top, nav.tabs, .printbtn{ display:none !important; }
+    body{ background:var(--sheet); }
+    main{ display:block; padding:0; }
+    section.pane{ display:none; }
+    section.pane.on{ display:block; }
+    .sheet{ width:100%; box-sizing:border-box; min-height:calc(100vh - 2px);
+            box-shadow:none; border:none; margin:0;
+            padding:14mm 16mm 16mm; break-after:page;
+            -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    .sheet:last-child{ break-after:auto; }
+    .tablewrap{ overflow-x:visible; }
+    .sheet table{ min-width:0; }
+    /* le mappe ASCII/emoji non hanno scrollbar su carta: si riducono
+       quanto basta per stare nel foglio senza tagli */
+    pre.mono{ font-size:.6rem; line-height:1.3; overflow:visible; }
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <h1>Il Drappo di Tarsilia</h1>
+  <p>Le otto contrade, il lessico del Drappo, i due contatori e le tre giornate. Tutto quello che serve ai giocatori, e niente di quello che non devono sapere.</p>
+</header>
+<nav class="tabs" role="tablist"><button role="tab" aria-selected="true" data-pane="c0">Copertina</button><button role="tab" aria-selected="false" data-pane="c1">✉ Benvenuti a Tarsilia</button><button role="tab" aria-selected="false" data-pane="c2">✉ I sei della dirigenza</button></nav>
+<main>
+<section class="pane on" id="c0">
+  <div class="sheet cover">
+    <div class="brand">IL DRAPPO DI TARSILIA · PF1e</div>
+    <h2>Il Drappo di Tarsilia</h2>
+    <h3>Quello che i vostri personaggi sanno da sempre</h3>
+    <hr class="rule">
+    <div><span class="banner">FASCICOLO DEI GIOCATORI</span></div>
+    <div class="figure"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 760" font-family="Georgia,'Liberation Serif','DejaVu Serif',serif">
+<title>Tarsilia — la città</title>
+<defs>
+<pattern id="grain" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="none"/><circle cx="1.5" cy="1.5" r="0.5" fill="#000" opacity="0.05"/><circle cx="4.5" cy="3.5" r="0.4" fill="#000" opacity="0.04"/></pattern>
+<radialGradient id="vign" cx="50%" cy="45%" r="72%"><stop offset="60%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#3a2c14" stop-opacity="0.30"/></radialGradient>
+</defs>
+<rect width="1080" height="760" fill="#efe3c6"/>
+<rect width="1080" height="760" fill="url(#grain)"/>
+<path d="M0 520 C 180 492, 320 548, 520 536 C 720 524, 880 566, 1080 546 L 1080 668 L 0 668 Z" fill="#6aa5c4" opacity="0.55"/>
+<path d="M0 520 C 180 492, 320 548, 520 536 C 720 524, 880 566, 1080 546" fill="none" stroke="#3d708f" stroke-width="2"/>
+<path d="M0 554 C 200 530, 340 584, 540 572 C 740 560, 900 600, 1080 584" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.24"/>
+<path d="M0 582 C 200 558, 340 612, 540 600 C 740 588, 900 628, 1080 612" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.24"/>
+<path d="M0 612 C 200 588, 340 642, 540 630 C 740 618, 900 658, 1080 642" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.24"/>
+<rect x="0" y="660" width="1080" height="100" fill="#c9b58e" opacity="0.6"/>
+<text x="240" y="652" font-size="24" fill="#123a5c" text-anchor="middle" font-weight="bold" font-style="italic" letter-spacing="4">il Sellen</text>
+<text x="1024" y="700" font-size="12" fill="#5b4a2c" text-anchor="end" font-weight="normal" font-style="italic" letter-spacing="0">verso Cassomir, tre giorni di barca</text>
+<path d="M40 120 L 260 74 L 560 62 L 860 82 L 1040 128" fill="none" stroke="#2c2313" stroke-width="7" stroke-linecap="round"/>
+<rect x="139" y="83" width="22" height="26" fill="#8d8271" stroke="#2c2313" stroke-width="2"/>
+<rect x="399" y="53" width="22" height="26" fill="#8d8271" stroke="#2c2313" stroke-width="2"/>
+<rect x="699" y="57" width="22" height="26" fill="#8d8271" stroke="#2c2313" stroke-width="2"/>
+<rect x="949" y="91" width="22" height="26" fill="#8d8271" stroke="#2c2313" stroke-width="2"/>
+<text x="560" y="46" font-size="13" fill="#5b4a2c" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="4">MURA VERSO TERRA</text>
+<ellipse cx="540" cy="300" rx="152" ry="112" fill="#b08d68" stroke="#2c2313" stroke-width="3"/>
+<rect x="462" y="248" width="156" height="104" rx="6" fill="#6b5b47" stroke="#2c2313" stroke-width="2.5"/>
+<text x="540" y="296" font-size="12" fill="#f0e6cf" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">MERCATO</text>
+<text x="540" y="314" font-size="12" fill="#f0e6cf" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">DEL GRANO</text>
+<text x="540" y="168" font-size="19" fill="#2c2313" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="5">LA RUOTA</text>
+<text x="540" y="450" font-size="12" fill="#5b4a2c" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">tre giri · novanta secondi</text>
+<circle cx="540" cy="188" r="9" fill="#b94a3c" stroke="#2c2313" stroke-width="2"/>
+<text x="520" y="182" font-size="11" fill="#7d2f26" text-anchor="end" font-weight="bold" font-style="normal" letter-spacing="0">curva nord</text>
+<circle cx="540" cy="412" r="9" fill="#b94a3c" stroke="#2c2313" stroke-width="2"/>
+<text x="560" y="416" font-size="11" fill="#7d2f26" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">curva sud</text>
+<rect x="139" y="498" width="22" height="176" fill="#e6ccb2" stroke="#2c2313" stroke-width="2"/>
+<text x="150" y="586" font-size="11" fill="#2c2313" text-anchor="middle" transform="rotate(-90 150 586)">Ponte Storto</text>
+<rect x="319" y="498" width="22" height="176" fill="#e6ccb2" stroke="#2c2313" stroke-width="2"/>
+<text x="330" y="586" font-size="11" fill="#2c2313" text-anchor="middle" transform="rotate(-90 330 586)">Ponte dei Tini</text>
+<rect x="549" y="498" width="22" height="176" fill="#e6ccb2" stroke="#2c2313" stroke-width="2"/>
+<text x="560" y="586" font-size="11" fill="#2c2313" text-anchor="middle" transform="rotate(-90 560 586)">Ponte del Teatro</text>
+<rect x="749" y="498" width="22" height="176" fill="#e6ccb2" stroke="#2c2313" stroke-width="2"/>
+<text x="760" y="586" font-size="11" fill="#2c2313" text-anchor="middle" transform="rotate(-90 760 586)">Ponte Vecchio</text>
+<rect x="919" y="498" width="22" height="176" fill="#e6ccb2" stroke="#2c2313" stroke-width="2"/>
+<text x="930" y="586" font-size="11" fill="#2c2313" text-anchor="middle" transform="rotate(-90 930 586)">il Quinto Ponte</text>
+<text x="930" y="700" font-size="11" fill="#7d2f26" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">(dondola)</text>
+<rect x="85" y="155" width="110" height="70" rx="5" fill="#ded3ba" stroke="#2c2313" stroke-width="2"/>
+<rect x="85" y="155" width="110" height="12" rx="2" fill="#22406e"/>
+<rect x="85" y="218" width="110" height="7" fill="#8a6416"/>
+<text x="140" y="196" font-size="13" fill="#2c2313" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">OCA</text>
+<text x="140" y="212" font-size="8.5" fill="#2c2313" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">Abadar</text>
+<rect x="245" y="115" width="110" height="70" rx="5" fill="#5a4438" stroke="#2c2313" stroke-width="2"/>
+<rect x="245" y="115" width="110" height="12" rx="2" fill="#e4e9ec"/>
+<rect x="245" y="178" width="110" height="7" fill="#dfa93b"/>
+<text x="300" y="156" font-size="13" fill="#f4ecd8" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">TORRE</text>
+<text x="300" y="172" font-size="8.5" fill="#f4ecd8" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">Iomedae · Gorum</text>
+<rect x="735" y="117" width="110" height="70" rx="5" fill="#b8496e" stroke="#2c2313" stroke-width="2"/>
+<rect x="735" y="117" width="110" height="12" rx="2" fill="#d7dce2"/>
+<rect x="735" y="180" width="110" height="7" fill="#dfa93b"/>
+<text x="790" y="158" font-size="13" fill="#f4ecd8" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">LEOCORNO</text>
+<text x="790" y="174" font-size="8.5" fill="#f4ecd8" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">Shelyn</text>
+<rect x="895" y="159" width="110" height="70" rx="5" fill="#141418" stroke="#2c2313" stroke-width="2"/>
+<rect x="895" y="159" width="110" height="12" rx="2" fill="#e6e6e2"/>
+<rect x="895" y="222" width="110" height="7" fill="#7b52c0"/>
+<text x="950" y="200" font-size="13" fill="#f4ecd8" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">DRAGO</text>
+<text x="950" y="216" font-size="8.5" fill="#f4ecd8" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">Nethys</text>
+<rect x="86" y="308" width="128" height="84" rx="5" fill="#2e4a34" stroke="#2c2313" stroke-width="3"/>
+<rect x="86" y="308" width="128" height="12" rx="2" fill="#7a5230"/>
+<rect x="86" y="385" width="128" height="7" fill="#e0a83c"/>
+<text x="150" y="356" font-size="15" fill="#f4ecd8" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">ISTRICE</text>
+<text x="150" y="372" font-size="8.5" fill="#f4ecd8" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">Sarenrae · Erastil</text>
+<text x="150" y="300" font-size="11" fill="#7d2f26" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">★ la vostra contrada</text>
+<rect x="245" y="365" width="110" height="70" rx="5" fill="#a9b2b8" stroke="#2c2313" stroke-width="2"/>
+<rect x="245" y="365" width="110" height="12" rx="2" fill="#23272b"/>
+<rect x="245" y="428" width="110" height="7" fill="#74d98a"/>
+<text x="300" y="406" font-size="13" fill="#2c2313" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">BRUCO</text>
+<text x="300" y="422" font-size="8.5" fill="#2c2313" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">Norgorber</text>
+<rect x="735" y="363" width="110" height="70" rx="5" fill="#101014" stroke="#2c2313" stroke-width="2"/>
+<rect x="735" y="363" width="110" height="12" rx="2" fill="#d9a521"/>
+<rect x="735" y="426" width="110" height="7" fill="#aeb8c8"/>
+<text x="790" y="404" font-size="13" fill="#f4ecd8" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">CIVETTA</text>
+<text x="790" y="420" font-size="8.5" fill="#f4ecd8" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">Calistria</text>
+<rect x="895" y="313" width="110" height="70" rx="5" fill="#1d6b63" stroke="#2c2313" stroke-width="2"/>
+<rect x="895" y="313" width="110" height="12" rx="2" fill="#e2ecec"/>
+<rect x="895" y="376" width="110" height="7" fill="#123a5c"/>
+<text x="950" y="354" font-size="13" fill="#f4ecd8" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">ONDA</text>
+<text x="950" y="370" font-size="8.5" fill="#f4ecd8" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">Gozreh · Desna</text>
+<path d="M52 236 q 22 -30 44 0 q 22 -30 44 0 q 22 -30 44 0" fill="none" stroke="#2e4a34" stroke-width="3"/>
+<text x="56" y="268" font-size="12" fill="#2e4a34" text-anchor="start" font-weight="normal" font-style="italic" letter-spacing="0">il bosco di spini</text>
+<path d="M240 442 L 372 500" stroke="#6aa5c4" stroke-width="9" opacity="0.75"/>
+<text x="200" y="452" font-size="10" fill="#1d4a63" text-anchor="end" font-weight="normal" font-style="italic" letter-spacing="0">canale dei tintori</text>
+<text x="54" y="46" font-size="34" fill="#2c2313" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="8">TARSILIA</text>
+<text x="54" y="68" font-size="12.5" fill="#5b4a2c" text-anchor="start" font-weight="normal" font-style="italic" letter-spacing="0">città‑stato del Regno dei Fiumi · quattromila anime · otto contrade</text>
+<rect width="1080" height="760" fill="url(#vign)"/>
+<rect x="10" y="10" width="1060" height="740" fill="none" stroke="#2c2313" stroke-width="3"/>
+<rect x="17" y="17" width="1046" height="726" fill="none" stroke="#2c2313" stroke-width="1"/>
+<text x="540.0" y="734" text-anchor="middle" font-size="11" fill="#5b4a2c" font-style="italic">Il Drappo di Tarsilia · tavola generata — build_tavole.py</text>
+</svg>
+</div>
+    <p class="covermeta">Contrada dell&#x27;Istrice · Tarsilia, Regno dei Fiumi · 4712 AR · nessuno spoiler: si può leggere prima della prima serata</p>
+  </div>
+  
+</section>
+<section class="pane" id="c1">
+  <div class="sheet"><span class="pgtag">✉ HANDOUT GIOCATORE</span>
+    <div class="chapter-body"><h2 class="sec">✉ Benvenuti a Tarsilia</h2>
+<p><em>Da leggere prima della prima serata. Non c'è dentro nessuno spoiler: sono le cose che i vostri personaggi sanno da sempre.</em></p>
+<hr class="rule">
+<h2 class="sec">Dove siete</h2>
+<p><strong>Tarsilia</strong>, città-stato del Regno dei Fiumi, sul Sellen, tre giorni di barca a monte di Cassomir. Quattromila anime, cinque ponti di cui due che dondolano, e nessun re.</p>
+<p>Vive di tre cose: il pedaggio sul fiume, <strong>la resina</strong> che raccogliete voi, e i tintori che quella resina la comprano e la rivendono lavorata a valle.</p>
+<p>Non ha mura verso il fiume e ne ha di ottime verso terra, il che dice tutto su chi la assale di solito.</p>
+<h2 class="sec">Cosa si corre</h2>
+<p>Il <strong>Drappo</strong>: un telo dipinto ogni anno da un pittore diverso. Chi vince se lo porta nell'oratorio della contrada e tiene per un anno il <strong>seggio girevole</strong> in consiglio — l'unico voto che cambia mano.</p>
+<p>Si corre sulla <strong>Ruota</strong>: un anello di terra battuta intorno al vecchio mercato coperto del grano. <strong>Tre giri.</strong> Due curve: una a nord davanti al Ponte Storto, una a sud sotto le finestre del palazzo dell'Oca. È lì che si cade.</p>
+<h2 class="sec">Le otto contrade</h2>
+<div class="tablewrap"><table><thead><tr><th>#</th><th>Contrada</th><th>Dèi</th><th>Livrea</th><th>Motto</th><th>Di che campa</th></tr></thead><tbody><tr><td>1</td><td><strong>Oca</strong></td><td>Abadar</td><td>marmo e lapis, bordata d'oro</td><td><em>«Si paga tutto, anche il tempo»</em></td><td>banche, pesi e misure</td></tr><tr><td>2</td><td><strong>Torre</strong></td><td>Iomedae, Gorum</td><td>ferro rugginoso e argento</td><td><em>«Chi tiene la porta tiene la città»</em></td><td>milizia, fabbri</td></tr><tr><td>3</td><td><strong>Bruco</strong></td><td>Norgorber</td><td>argento e nero-fumo, verde veleno</td><td><em>«Il filo lo vedi quando è già cucito»</em></td><td>tintorie, tessuti</td></tr><tr><td>4</td><td><strong>★ Istrice</strong></td><td>Sarenrae, Erastil</td><td>verde legnoferro e bruno</td><td><em>«Chi non ha niente divide lo stesso»</em></td><td>resina, legname, l'ospizio</td></tr><tr><td>5</td><td><strong>Drago</strong></td><td>Nethys</td><td>nero e argento, listata di viola</td><td><em>«Due mani, e nessuna vuota»</em></td><td>scuola di magia, alchimisti</td></tr><tr><td>6</td><td><strong>Civetta</strong></td><td>Calistria</td><td>nero e giallo vespa</td><td><em>«Chi conta i debiti dorme poco»</em></td><td>prestiti, cause, informazioni</td></tr><tr><td>7</td><td><strong>Leocorno</strong></td><td>Shelyn</td><td>rosa e argento, l'oro del corno</td><td><em>«Suona finché qualcuno risponde»</em></td><td>musici, pittori, il teatro</td></tr><tr><td>8</td><td><strong>Onda</strong></td><td>Gozreh, Desna</td><td>verde fiume e argento lunare</td><td><em>«Il fiume non chiede permesso»</em></td><td>battellieri, pescatori</td></tr></tbody></table></div>
+<p><strong>Voi siete l'Istrice.</strong> Non vi piazzate da quarant'anni.</p>
+<h2 class="sec">Le tre giornate</h2>
+<div class="tablewrap"><table><thead><tr><th><strong>Giorno 1 — La Sorte</strong></th><th>si consegna il Peso di contrada, e un'urna decide quale cavallo vi tocca</th></tr></thead><tbody><tr><td><strong>Giorno 2 — I Partiti e la Cena</strong></td><td>gli otto Capitani si chiudono nel mercato del grano a fare patti. La sera, tutto il rione mangia nei vicoli</td></tr><tr><td><strong>Giorno 3 — Lo Stacco e la Corsa</strong></td><td>benedizione all'alba, corteo, e tre giri della Ruota</td></tr></tbody></table></div>
+<h2 class="sec">Le parole che sentirete</h2>
+<div class="tablewrap"><table><thead><tr><th>Parola</th><th>Cosa vuol dire</th></tr></thead><tbody><tr><td><strong>la Sorte</strong></td><td>l'estrazione pubblica che abbina i cavalli alle contrade</td></tr><tr><td><strong>il Peso di contrada</strong></td><td>cento monete d'oro <strong>di merce vostra</strong>, pesata in pubblico, per essere ammessi</td></tr><tr><td><strong>i Partiti</strong></td><td>i patti segreti fra Capitani: un favore in corsa scambiato con qualcosa fuori dalla corsa</td></tr><tr><td><strong>le funi</strong></td><td>le corde della partenza. Sette cavalli dentro, l'ottavo di rincorsa</td></tr><tr><td><strong>lo Stacco</strong></td><td>il momento della partenza. Finte, scudisciate, psicologia</td></tr><tr><td><strong>lo scudiscio</strong></td><td>la frusta. Frustare <strong>il fantino</strong> avversario è legale; frustare <strong>il cavallo</strong> no</td></tr><tr><td><strong>il cavallo scosso</strong></td><td>un cavallo che perde il fantino continua a correre, <strong>e può vincere</strong></td></tr><tr><td><strong>il Drappo</strong></td><td>il telo dipinto. Il premio</td></tr></tbody></table></div>
+<h2 class="sec">I due contatori</h2>
+<p>Il DM ne tiene due a vista sul tavolo. Sono vostri: proteggeteli.</p>
+<ul><li><strong>Morale del Rione (0-10)</strong> — quanto la contrada ci crede. Sale con canti, bandiere e gesti pubblici. In Corsa vale bonus a Cavalcare e Iniziativa.</li><li><strong>Onore del Fantino (0-10)</strong> — quanto la contrada tratta bene chi corre per lei.</li></ul>
+<h2 class="sec">Tre cose da sapere sul tavolo</h2>
+<ol><li><strong>Non è un modulo che si vince ammazzando.</strong> Tre combattimenti in tre sere, tutti brevi e tutti evitabili.</li><li><strong>Ognuno dei sei ha un posto in Corsa</strong> e un'azione per giro, anche chi non cavalca. Sceglietelo prima dello Stacco.</li><li><strong>Chiunque, in qualunque momento, può battere due dita sul tavolo.</strong> Si taglia e si riprende dieci secondi prima, senza spiegazioni.</li></ol>
+<hr class="rule">
+<p><em>Va' e torna vincitore.</em></p></div>
+    <div class="pagefoot"><span>Novanta secondi · ✉ Benvenuti a Tarsilia</span>
+    <span class="n">2</span></div>
+  </div>
+</section>
+<section class="pane" id="c2">
+  <div class="sheet"><span class="pgtag">✉ HANDOUT GIOCATORE</span>
+    <div class="chapter-body"><h2 class="sec">Fascicolo dei personaggi — da stampare e dare in mano</h2>
+<div class="desc"><p class="readaloud"><strong>Come si usa.</strong> Una scheda a testa, <strong>fronte e retro</strong>: davanti i numeri (<code>PREGEN-SEI-SCHEDE-PF1E.md</code>), dietro questa pagina — chi sei, come parli, cosa vuoi, e cosa pensi degli altri cinque.</p><p class="readaloud">Il <strong>ritratto</strong> è in <code>ALLEGATI/tavole/ritratto-&lt;nome&gt;.svg</code>: si stampa in alto a destra del retro, o si sostituisce con l'immagine generata.</p><p class="readaloud"><strong>Da leggere prima di cominciare</strong>: il tuo paragrafo in corsivo, ad alta voce, al tavolo. Sono venti secondi a testa e valgono più di mezz'ora di presentazioni.</p></div>
+<hr class="rule">
+<h2 class="sec">La matrice dei legami</h2>
+<p>Ogni riga dice cosa <strong>quel personaggio</strong> pensa degli altri. Ritagliala e dàlla a tutti: è il pezzo che fa scattare il tavolo nei primi dieci minuti.</p>
+<div class="tablewrap"><table><thead><tr><th>pensa di →</th><th><strong>Vanna</strong></th><th><strong>Nocca</strong></th><th><strong>Ombra</strong></th><th><strong>Tesio</strong></th><th><strong>Berenice</strong></th><th><strong>Melchio</strong></th></tr></thead><tbody><tr><td><strong>Vanna</strong></td><td>—</td><td>«È l'unica cosa che abbiamo. Mi fa paura.»</td><td>«Le devo una cosa che non ho mai pagato.»</td><td>«Sa troppo e lo dice troppo tardi.»</td><td>«Se ne andrà anche da noi.»</td><td>«Mi guarda come se sapesse.»</td></tr><tr><td><strong>Nocca</strong></td><td>«Mi ha preso quando nessuno mi voleva.»</td><td>—</td><td>«È l'unica che parla al cavallo prima che a me. Giusto così.»</td><td>«Mi ha coperto una volta. Non gliel'ho chiesto.»</td><td>«Canta di me e io faccio finta di niente.»</td><td>«Non gli ho ancora detto la cosa.»</td></tr><tr><td><strong>Ombra</strong></td><td>«Firma troppo in fretta.»</td><td>«Pesa quaranta chili ed è tutto quello che abbiamo.»</td><td>—</td><td>«Ha copiato dei fogli che non doveva. Lo so.»</td><td>«Ha la voce di sua madre.»</td><td>«Tiene i morti in ordine. Serve.»</td></tr><tr><td><strong>Tesio</strong></td><td>«Comanda bene e conta male.»</td><td>«Deve dire una cosa. Aspetto.»</td><td>«Il suo nome vero sta in un registro del 4692.»</td><td>—</td><td>«Mi ha chiesto di non cercare Rasca. Ho cercato.»</td><td>«È l'unico onesto e per questo è il più pericoloso.»</td></tr><tr><td><strong>Berenice</strong></td><td>«Se cade lei, cade tutto.»</td><td>«Vorrei essere leggera come lui, e non intendo di peso.»</td><td>«Non sorride mai e non è triste. Non l'avevo mai visto.»</td><td>«Sa cose su tutti. Anche su di me.»</td><td>—</td><td>«Gli ho mentito una volta, in confessione.»</td></tr><tr><td><strong>Melchio</strong></td><td>«Porta un peso che ha firmato da sola.»</td><td>«Un ragazzo con un debito. Ne ho visti troppi.»</td><td>«So chi era. Non lo dirò mai.»</td><td>«Ruba carta e crede che non sia rubare.»</td><td>«È tornata. Non tutti tornano.»</td><td>—</td></tr></tbody></table></div>
+<hr class="rule">
+<h2 class="sec">1 · VANNA CORSARI — il Capitano</h2>
+<p><em>Ritratto: <code>ALLEGATI/tavole/ritratto-vanna.svg</code></em></p>
+<div class="desc"><p class="readaloud"><strong>Da leggere ad alta voce.</strong> <em>«Ho fatto sei anni di milizia sul fiume e me ne sono andata, e no, non lo racconto. Sono tornata qui perché qui c'era mia madre, e mia madre è morta il primo inverno, e io sono rimasta lo stesso. Due anni fa ho firmato per il grano. Ho firmato io, da sola, senza chiedere a nessuno, perché la gente aveva fame e chiedere avrebbe voluto dire aspettare. Il banchiere non ha mai riscosso. Ogni volta che mi saluta per nome mi si stringe qualcosa nello sterno.»</em></p></div>
+<p><strong>Come parli</strong>: poco, e concludi. Frasi corte. Non fai domande retoriche. <strong>Tre cose che sai</strong>: chi nel rione ha fame davvero · come si organizza una squadra · che Attu non fa niente per niente. <strong>Tre cose che vuoi</strong>: che il rione non si sciolga · pagare il debito senza chiedere aiuto a nessuno · dormire una notte intera. <strong>La cosa che non dici</strong>: che se l'accorpamento arrivasse, in fondo, sarebbe un sollievo. <strong>Il tuo primo gesto in gioco</strong>: all'Investitura premi il pollice sull'asse della porta, dove ci sono i pollici di quarant'anni di Capitani.</p>
+<hr class="rule">
+<h2 class="sec">2 · NOCCA PETTIROSSO — il Fantino</h2>
+<p><em>Ritratto: <code>ALLEGATI/tavole/ritratto-nocca.svg</code></em></p>
+<div class="desc"><p class="readaloud"><strong>Da leggere ad alta voce.</strong> <em>«Peso quarantadue chili e non ho mai avuto una sella, e queste due cose insieme sono l'unico motivo per cui qualcuno mi guarda. A undici anni rubavo lepri nel bosco degli spini e il guardaboschi mi ha preso, e invece di darmi al bargello mi ha messo su un cavallo per vedere se stavo su. Ci sono stato. Tre mesi fa uno mi ha dato quaranta monete d'argento perché non corressi una corsa a valle. Ho corso. Ho vinto. Le monete ce le ho ancora.»</em></p></div>
+<p><strong>Come parli</strong>: veloce, e ti interrompi. Cambi discorso quando arrivi vicino alla cosa. <strong>Tre cose che sai</strong>: come si sta su un cavallo che non ti vuole · dove si passa nei vicoli · che gli adulti ti perdonano se ridi per primo. <strong>Tre cose che vuoi</strong>: correre · che Vanna non lo scopra da un altro · non tornare a rubare lepri. <strong>La cosa che non dici</strong>: che hai paura della curva nord da quando hai visto cadere uno, due anni fa. <strong>Il tuo primo gesto in gioco</strong>: ti togli le scarpe sulla soglia dell'oratorio e non le riprendi fino a dopo la Corsa.</p>
+<hr class="rule">
+<h2 class="sec">3 · OMBRA DEI SALICI — lo Stalliere</h2>
+<p><em>Ritratto: <code>ALLEGATI/tavole/ritratto-ombra.svg</code></em></p>
+<div class="desc"><p class="readaloud"><strong>Da leggere ad alta voce.</strong> <em>«Non è il mio nome. Il mio nome non lo usa più nessuno da vent'anni e io non ho corretto nessuno, che è un modo di essere d'accordo. Curo le bestie del rione: parti, coliche, zoccoli, ferite che vanno pulite due volte al giorno. Non ho mai perso un parto. Dormo in stalla anche quando non c'è niente da guardare, perché a casa il silenzio è di un tipo che non mi piace.»</em></p></div>
+<p><strong>Come parli</strong>: constatazioni. Non usi aggettivi sulle emozioni: dici cosa hai fatto. <strong>Tre cose che sai</strong>: quando una bestia ha paura e di cosa · quali erbe si trovano nel bosco a fine estate · che Nonna Grasa compra il fieno di tasca sua. <strong>Tre cose che vuoi</strong>: che il cavallo arrivi intero alla Corsa · che nessuno ti chieda del 4692 · sentirti chiamare per nome, una volta. <strong>La cosa che non dici</strong>: vent'anni fa tenevi tu il morso quando un cavallo si impennò in un vicolo, e un ragazzo di undici anni morì. Era il figlio di Nonna Grasa. <strong>Il tuo primo gesto in gioco</strong>: prendi in mano il morso del cavallo che ancora non c'è, e speri che non tintinni.</p>
+<hr class="rule">
+<h2 class="sec">4 · TESIO MARCA — il Tenente</h2>
+<p><em>Ritratto: <code>ALLEGATI/tavole/ritratto-tesio.svg</code></em></p>
+<div class="desc"><p class="readaloud"><strong>Da leggere ad alta voce.</strong> <em>«Sono arrivato qui che avevo undici anni e non ero di nessuno. Mi hanno adottato al quinto anno invece che al settimo, per deroga, perché sapevo leggere e al rione serviva uno che sapesse leggere. Ho studiato due anni alla scuola del Drago e me ne sono andato senza titolo, e anche di questo non parlo. Adesso copio atti al catasto. Li copio tutti. Anche quelli che non mi chiedono.»</em></p></div>
+<p><strong>Come parli</strong>: preciso, con date e numeri di protocollo. Ti tradisci quando ti entusiasmi. <strong>Tre cose che sai</strong>: dove sta ogni registro della città · chi ha comprato cosa negli ultimi dieci anni · che il confine del bosco è sbagliato di cinquanta passi. <strong>Tre cose che vuoi</strong>: che l'adozione non venga mai messa in discussione · dimostrare la faccenda dei cinquanta passi · un titolo, uno qualsiasi. <strong>La cosa che non dici</strong>: che le copie te le tieni per paura, non per strategia. <strong>Il tuo primo gesto in gioco</strong>: all'Investitura dichiari ad alta voce una cosa che sai e che gli altri non sanno. <strong>La scegli tu</strong>, adesso.</p>
+<hr class="rule">
+<h2 class="sec">5 · BERENICE «BRUMA» SALLO — l'Alfiere</h2>
+<p><em>Ritratto: <code>ALLEGATI/tavole/ritratto-berenice.svg</code></em></p>
+<div class="desc"><p class="readaloud"><strong>Da leggere ad alta voce.</strong> <em>«Mia madre era del Leocorno e mi ha portata alla fontana dell'Istrice a undici mesi, che è una cosa che nel suo rione non le hanno perdonato. Ho cantato al teatro sul ponte per sei anni. Poi una sera me ne sono andata sbattendo una porta, e sono passati tre anni e non sono più tornata a spiegare perché. Adesso canto per gente che non paga, e la verità è che qui mi ascoltano meglio.»</em></p></div>
+<p><strong>Come parli</strong>: a effetto, e poi ti pentì e correggi. Fai battute quando sei in difficoltà. <strong>Tre cose che sai</strong>: come si tiene una piazza · tutte le ballate delle otto contrade · che il pittore del Drappo di quest'anno è Lino Rasca. <strong>Tre cose che vuoi</strong>: vincere il duello dei canti al Fondaco · non incontrare Rasca · incontrare Rasca. <strong>La cosa che non dici</strong>: la porta l'hai sbattuta tu, e avevi torto. <strong>Il tuo primo gesto in gioco</strong>: alzi la bandiera e la fai girare tre volte in una stanza che è troppo piccola per farla girare.</p>
+<hr class="rule">
+<h2 class="sec">6 · FRA' MELCHIO VANZI — il Vicario</h2>
+<p><em>Ritratto: <code>ALLEGATI/tavole/ritratto-melchio.svg</code></em></p>
+<div class="desc"><p class="readaloud"><strong>Da leggere ad alta voce.</strong> <em>«Tengo l'ospizio da diciannove anni. Quaranta letti d'inverno, quindici d'estate, e un registro dei morti che aggiorno a mano perché chi li ha conosciuti deve scriverli. Sarenrae dice di perdonare. Negli ultimi due inverni ho scritto nove nomi di raccoglitori, tutti morti della stessa tosse, e ho smesso di chiederLe come si fa.»</em></p></div>
+<p><strong>Come parli</strong>: piano, e finisci le frasi. Non predichi mai: distribuisci. <strong>Tre cose che sai</strong>: chi sta male e da quanto · come si tratta una ferita sporca · i nove nomi, a memoria. <strong>Tre cose che vuoi</strong>: che l'ospizio resti aperto · che Rico smetta di lavorare · riuscire a perdonare qualcuno, entro quest'anno. <strong>La cosa che non dici</strong>: hai scritto tre volte una lettera al consiglio sulla resina scaldata male, e tre volte non l'hai spedita. <strong>Il tuo primo gesto in gioco</strong>: leggi ad alta voce <strong>tre nomi</strong> dal registro dei morti. Li scegli tu.</p>
+<hr class="rule">
+<h2 class="sec">Le sei righe d'apertura, in ordine</h2>
+<p>Da leggere una a testa, in quest'ordine, <strong>dopo</strong> l'Investitura e <strong>prima</strong> del decreto. È l'ultima cosa che succede prima che comincino i guai.</p>
+<ol><li><strong>Vanna</strong>: <em>«Il debito l'ho firmato io. Nessuno di voi lo sapeva.»</em></li><li><strong>Melchio</strong>: <em>«Io lo sapevo.»</em></li><li><strong>Berenice</strong>: <em>«Il Drappo di quest'anno l'ha dipinto Rasca. Non chiedetemi di andare a parlargli.»</em></li><li><strong>Tesio</strong>: <em>«Il confine del bosco è sbagliato di cinquanta passi. Ho le carte.»</em></li><li><strong>Ombra</strong>: <em>«Quando ci danno il cavallo, dormo in stalla. Da subito.»</em></li><li><strong>Nocca</strong>: <em>«…io devo dire una cosa. Ma dopo.»</em></li></ol>
+<hr class="rule">
+<h2 class="sec">Nota per il DM</h2>
+<p>Ogni «cosa che non dici» è <strong>un segreto che il giocatore possiede</strong>, non un colpo di scena che gli spetta subire. Se un giocatore decide di rivelarlo prima del previsto, <strong>va premiato</strong>: il segreto è suo e l'ha speso quando ha voluto.</p>
+<p>I collegamenti fra i segreti — Ombra e Nonna Grasa, Berenice e Rasca, i nove nomi di Melchio e il Drappo — sono in <code>05-INIZIAZIONE-E-EVENTI-PG.md</code> §4.</p></div>
+    <div class="pagefoot"><span>Novanta secondi · ✉ I sei della dirigenza</span>
+    <span class="n">3</span></div>
+  </div>
+</section></main>
+<button class="printbtn" onclick="window.print()" title="Stampa/salva in PDF SOLO la scheda aperta (A4)">🖨 Salva PDF</button>
+<script>
+  const tabs=document.querySelectorAll('nav.tabs button');
+  function show(id){
+    tabs.forEach(x=>x.setAttribute('aria-selected',x.dataset.pane===id));
+    document.querySelectorAll('section.pane').forEach(p=>p.classList.toggle('on',p.id===id));
+    window.scrollTo({top:0});
+  }
+  tabs.forEach(b=>b.addEventListener('click',()=>{
+    show(b.dataset.pane); history.replaceState(null,'','#'+b.dataset.pane);
+  }));
+  // deep-link #cN: apre direttamente quella scheda (usato anche
+  // dall'export PDF headless — ADR-0013 §5)
+  if(location.hash && document.getElementById(location.hash.slice(1)))
+    show(location.hash.slice(1));
+</script>
+</body>
+</html>

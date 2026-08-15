@@ -6,7 +6,7 @@ master emoji-grid e l'SVG sono generati e non si modificano a mano.
 | Mappa | Sorgente | Master stampabile | SVG da tavolo |
 |---|---|---|---|
 | **La Ruota** (piazza e pista) | `tarsilia-la-ruota.json` | `tarsilia-la-ruota.md` | `rendered/tarsilia-la-ruota_map01_tarsilia-la-ruota-pista-del-drappo.svg` |
-| **Le stalle dei Boschispini** | `tarsilia-stalle.json` | `tarsilia-stalle.md` | `rendered/tarsilia-stalle_map01_tarsilia-le-stalle-dei-boschispini-assalto-nottu.svg` |
+| **Le stalle dell'Istrice** | `tarsilia-stalle.json` | `tarsilia-stalle.md` | `rendered/tarsilia-stalle_map01_tarsilia-le-stalle-dell-istrice-assalto-notturno.svg` |
 
 ## Rigenerare
 

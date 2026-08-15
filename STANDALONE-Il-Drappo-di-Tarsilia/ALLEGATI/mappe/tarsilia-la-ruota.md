@@ -66,13 +66,13 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @mark 6 ; L18 ; Selmo Ancora (Cavalcare +12)
 @mark 7 ; L20 ; Tilde Barbanera (Cavalcare +10)
 @mark 8 ; L24 ; il Muto (Cavalcare +9)
-@mark 9 ; L28 ; Bastione · Guglie · Ombre · Corno (1d6 per giro)
+@mark 9 ; L28 ; Torre · Drago · Ombre · Corno (1d6 per giro)
 @mark 10 ; O31 ; Rincorsa (l'ottava estratta) (—)
 @path Giro della Ruota (3 giri, senso orario) ; L10 AZ10 AZ37 L37 loop ; #b94a3c
 @zone S15-AT32 ; Mercato coperto del grano — i Partiti si trattano qui; dal tetto si vede tutta la pista
 @zone B18-E26 ; Palco della Sovrintendente — Tesio e Melchio: protestare, testimoniare
-@zone AO43-BE46 ; Palazzo della Piuma d'Oro — le finestre danno sulla Curva Sud
-@zone B42-H46 ; Oratorio dei Boschispini — benedizione del cavallo all'alba
+@zone AO43-BE46 ; Palazzo dell'Oca — le finestre danno sulla Curva Sud
+@zone B42-H46 ; Oratorio dell'Istrice — benedizione del cavallo all'alba
 ```
 
 ### 🌍 AMBIENTE (cosa impone il terreno — regole, non prosa)
@@ -89,15 +89,15 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 
 | Fazione | Unità | Token | Q.tà | GS/EL | Area (coord.) |
 |---|---|---|---|---|---|
-| Boschispini | Nocca (fantino) | 🔵 | 1 | ranger 3 | L22 |
-| Boschispini | Vanna — alle funi | 🔵 | 1 | guerriera 3 | I23 |
-| Boschispini | Ombra — dentro il transennato | 🔵 | 1 | druida 3 | AE7 |
-| Boschispini | Berenice — carro degli alfieri | 🔵 | 1 | barda 3 | D29 |
-| Boschispini | Tesio e Melchio — palco | 🔵 | 1 | mago 3 · chierico 3 | D22 |
-| Piuma d'Oro | Selmo Ancora | 🔴 | 1 | Cavalcare +12 | L18 |
-| Cresta di Marea | Tilde Barbanera | 🔴 | 1 | Cavalcare +10 | L20 |
-| Trama d'Argento | il Muto | 🔴 | 1 | Cavalcare +9 | L24 |
-| Comprimarie | Bastione · Guglie · Ombre · Corno | 🟣 | 1 | 1d6 per giro | L28 |
+| Istrice | Nocca (fantino) | 🔵 | 1 | ranger 3 | L22 |
+| Istrice | Vanna — alle funi | 🔵 | 1 | guerriera 3 | I23 |
+| Istrice | Ombra — dentro il transennato | 🔵 | 1 | druida 3 | AE7 |
+| Istrice | Berenice — carro degli alfieri | 🔵 | 1 | barda 3 | D29 |
+| Istrice | Tesio e Melchio — palco | 🔵 | 1 | mago 3 · chierico 3 | D22 |
+| Oca | Selmo Ancora | 🔴 | 1 | Cavalcare +12 | L18 |
+| Onda | Tilde Barbanera | 🔴 | 1 | Cavalcare +10 | L20 |
+| Bruco | il Muto | 🔴 | 1 | Cavalcare +9 | L24 |
+| Comprimarie | Torre · Drago · Ombre · Corno | 🟣 | 1 | 1d6 per giro | L28 |
 | Comprimarie | Rincorsa (l'ottava estratta) | 🟣 | 1 | — | O31 |
 
 - **Disposizione iniziale**: [chi è dove e perché — vedi tabella Forze]
@@ -111,7 +111,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 |---|---|---|---|
 | A (iniziale) | — | com'è disegnata | — |
 | B | [trigger] | Anello di terra battuta largo 9 quadretti (13,5 m) intorno al mercato coperto del grano. | [effetto] |
-| B | [trigger] | Il giro si conta in TRE tratti: il Dritto (i due rettilinei laterali, contati insieme), la Curva Nord davanti al Ponte Storto, la Curva Sud sotto il palazzo della Piuma d'Oro. Tre giri = nove tratti. | [effetto] |
+| B | [trigger] | Il giro si conta in TRE tratti: il Dritto (i due rettilinei laterali, contati insieme), la Curva Nord davanti al Ponte Storto, la Curva Sud sotto il palazzo dell'Oca. Tre giri = nove tratti. | [effetto] |
 | B | [trigger] | Dal tetto del mercato del grano si vede l'intera pista: chi ci sale può anticipare una mossa avversaria, una volta per corsa. | [effetto] |
 | B | [trigger] | La folla sta ovunque fuori dalla pista. Dentro il transennato della Curva Nord sta la gente dell'ospizio, che è lì da stamattina perché è il posto dove si vede meglio e non si paga. | [effetto] |
 

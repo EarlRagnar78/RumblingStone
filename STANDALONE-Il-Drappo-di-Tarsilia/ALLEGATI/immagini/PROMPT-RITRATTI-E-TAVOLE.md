@@ -177,3 +177,127 @@ il-drappo.png
 `PROVENIENZA.txt` con che modello e che prompt è stata generata ogni immagine.
 È la lacuna che il rapporto IP della campagna aveva già segnalato per le tavole
 dell'arco di Channathgate (§7.7): qui si evita partendo, non si rincorre dopo.
+
+---
+
+## §6 · I cinque PNG che meritano un ritratto
+
+Tutti col blocco del §1 **e l'ancora storica**, formato **832 × 1216**. I tratti
+vengono dal foglio del cast (`08-CASSETTA-DEL-DM.md` §1): non inventarne di nuovi,
+è la scheda-personaggio della skill `rumblingstone-art-direction` §3.
+
+### 6.1 · Ottavia Vesca — Capitana del Bruco
+
+```
+a fifty-year-old woman, dyer's hands stained blue-black to the elbow, close-set
+watchful eyes, grey hair pulled back hard, plain indigo work dress with a
+guild collar, standing in a dye-house doorway, one hand still wet,
+speaks-before-you-finish expression
+```
+*Colore suo*: **indaco**. *Segno*: le mani macchiate, sempre visibili.
+
+### 6.2 · Gerlando Attu — Capitano dell'Oca
+
+```
+a forty-two-year-old man, banker's build, dressed exactly half a grade below
+what he could afford, close-trimmed beard, a ledger strap across his chest,
+counting-house shelves behind him, faint smile that does not reach the eyes
+```
+*Colore suo*: **marmo e lapis**. *Segno*: la cinghia del registro.
+
+### 6.3 · Vidalia Roncetti — Sovrintendente al Drappo
+
+```
+a magistrate in her sixties, ceremonial sash over sober robes, reading glasses
+held not worn, a rolled decree in one hand, standing under a public portico,
+the face of someone who has read the article aloud a hundred times
+```
+*Colore suo*: **grigio ferro e oro spento**. *Segno*: il decreto arrotolato.
+
+### 6.4 · Sfregio — il sicario del Bruco
+
+```
+a wiry man in his thirties, old blade scar from cheekbone to jaw, hood down,
+hands relaxed and empty, leaning in a canal alley at dusk, unremarkable
+clothes chosen to be forgotten, calm and entirely present
+```
+*Colore suo*: **nessuno — grigio sporco**. *Segno*: la cicatrice. ⚠️ Niente arma in
+vista: la minaccia sta nella calma, non nel coltello.
+
+### 6.5 · Nonna Grasa — l'ospizio dell'Istrice
+
+```
+a seventy-one-year-old woman, broad and short, apron over layers, hands folded
+over a tally stick, seated by a hospice hearth with beds behind her,
+kind face that is also doing arithmetic
+```
+*Colore suo*: **bruno di terra**. *Segno*: il bastoncino dei conti.
+
+---
+
+## §7 · La copertina e i due spot
+
+### 7.1 · Copertina — 832 × 1216
+
+```
+the painted cloth prize hanging above a crowded square at dusk, seen from below,
+banners of eight quarters along the rooftops, dust and low sun, no faces
+readable, the cloth is the hero of the image
+```
+
+### 7.2 · Spot — la bilancia dell'Oca · 800 × 800
+
+```
+a public weighing scale of dark iron in a market portico, one pan heaped with
+raw resin, the other with counterweights, close crop, morning light
+```
+
+### 7.3 · Spot — la pagina del registro · 800 × 800
+
+```
+an open parish register on a wooden lectern, nine names in the same hand in the
+right-hand column, candle stub, close crop, no readable text
+```
+
+---
+
+## §8 · La città e la piazza — il patto valido anche per Channathgate
+
+Queste due sono le uniche **tavole d'ambiente larghe** (1536 × 864) e seguono un
+**patto d'inquadratura** che vale anche per l'illustrazione della piazza di
+Channathgate (`09_.../P2D-Palio-Allegati/`), così le due città della stessa
+famiglia di materiale si somigliano senza essere la stessa città.
+
+**Il patto, in quattro regole:**
+
+1. **punto di vista alto ma non a volo d'uccello** — da un tetto o da una loggia,
+   l'altezza da cui un abitante guarderebbe davvero;
+2. **la piazza è vuota al centro e piena ai bordi** — la corsa non è ancora
+   cominciata, e il vuoto in mezzo è la promessa;
+3. **nessun volto leggibile**: la folla è tessuto e colore, non ritratti;
+4. **un solo elemento verticale domina** — il Drappo a Tarsilia, il campanile a
+   Channathgate. È la cosa che l'occhio trova per prima e che distingue le due
+   città l'una dall'altra.
+
+### 8.1 · Tarsilia dall'alto — 1536 × 864
+
+```
+a river town seen from a rooftop at late afternoon, tiled roofs stepping down to
+a canal and a wooden bridge, a rectangular market ring at the centre with a
+covered market inside it, eight banners on the surrounding roofs, hills of thorn
+scrub beyond, no readable faces, warm dust in the air
+```
+
+### 8.2 · La Ruota, il giorno prima — 1536 × 864
+
+```
+a rectangular racing ring around a covered market, sand freshly laid, wooden
+barriers along the north curve, empty in the middle and crowded at the edges,
+the painted cloth prize hoisted on a pole above the south side, late summer
+light, no readable faces
+```
+
+> **Per Channathgate**: stesso patto, stesso formato, **piazza diversa** — geometria
+> a conchiglia invece che ad anello, campanile al posto del Drappo, pietra chiara
+> invece di intonaco ocra. Il patto tiene insieme la famiglia; i quattro dettagli la
+> distinguono.

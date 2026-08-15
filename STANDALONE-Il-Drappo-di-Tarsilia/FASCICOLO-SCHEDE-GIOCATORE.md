@@ -30,6 +30,8 @@ tutti: è il pezzo che fa scattare il tavolo nei primi dieci minuti.
 
 ## 1 · VANNA CORSARI — il Capitano
 
+![Ritratto](ALLEGATI/tavole/ritratto-vanna.svg)
+
 *Ritratto: `ALLEGATI/tavole/ritratto-vanna.svg`*
 
 > **Da leggere ad alta voce.** *«Ho fatto sei anni di milizia sul fiume e me ne sono
@@ -52,6 +54,8 @@ porta, dove ci sono i pollici di quarant'anni di Capitani.
 ---
 
 ## 2 · NOCCA PETTIROSSO — il Fantino
+
+![Ritratto](ALLEGATI/tavole/ritratto-nocca.svg)
 
 *Ritratto: `ALLEGATI/tavole/ritratto-nocca.svg`*
 
@@ -77,6 +81,8 @@ le riprendi fino a dopo la Corsa.
 
 ## 3 · OMBRA DEI SALICI — lo Stalliere
 
+![Ritratto](ALLEGATI/tavole/ritratto-ombra.svg)
+
 *Ritratto: `ALLEGATI/tavole/ritratto-ombra.svg`*
 
 > **Da leggere ad alta voce.** *«Non è il mio nome. Il mio nome non lo usa più nessuno
@@ -98,6 +104,8 @@ c'è, e speri che non tintinni.
 ---
 
 ## 4 · TESIO MARCA — il Tenente
+
+![Ritratto](ALLEGATI/tavole/ritratto-tesio.svg)
 
 *Ritratto: `ALLEGATI/tavole/ritratto-tesio.svg`*
 
@@ -121,6 +129,8 @@ sai e che gli altri non sanno. **La scegli tu**, adesso.
 
 ## 5 · BERENICE «BRUMA» SALLO — l'Alfiere
 
+![Ritratto](ALLEGATI/tavole/ritratto-berenice.svg)
+
 *Ritratto: `ALLEGATI/tavole/ritratto-berenice.svg`*
 
 > **Da leggere ad alta voce.** *«Mia madre era del Leocorno e mi ha portata alla
@@ -143,6 +153,8 @@ stanza che è troppo piccola per farla girare.
 ---
 
 ## 6 · FRA' MELCHIO VANZI — il Vicario
+
+![Ritratto](ALLEGATI/tavole/ritratto-melchio.svg)
 
 *Ritratto: `ALLEGATI/tavole/ritratto-melchio.svg`*
 
@@ -176,14 +188,3 @@ decreto. È l'ultima cosa che succede prima che comincino i guai.
 4. **Tesio**: *«Il confine del bosco è sbagliato di cinquanta passi. Ho le carte.»*
 5. **Ombra**: *«Quando ci danno il cavallo, dormo in stalla. Da subito.»*
 6. **Nocca**: *«…io devo dire una cosa. Ma dopo.»*
-
----
-
-## Nota per il DM
-
-Ogni «cosa che non dici» è **un segreto che il giocatore possiede**, non un colpo di
-scena che gli spetta subire. Se un giocatore decide di rivelarlo prima del previsto,
-**va premiato**: il segreto è suo e l'ha speso quando ha voluto.
-
-I collegamenti fra i segreti — Ombra e Nonna Grasa, Berenice e Rasca, i nove nomi di
-Melchio e il Drappo — sono in `05-INIZIAZIONE-E-EVENTI-PG.md` §4.

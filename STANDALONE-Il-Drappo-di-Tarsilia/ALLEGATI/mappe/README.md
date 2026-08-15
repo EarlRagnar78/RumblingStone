@@ -6,6 +6,7 @@ master emoji-grid e l'SVG sono generati e non si modificano a mano.
 | Mappa | Sorgente | Master stampabile | SVG da tavolo |
 |---|---|---|---|
 | **La Ruota** (piazza e pista) | `tarsilia-la-ruota.json` | `tarsilia-la-ruota.md` | `rendered/tarsilia-la-ruota_map01_tarsilia-la-ruota-pista-del-drappo.svg` |
+| **La Ruota — versione giocatore** | `tarsilia-la-ruota-giocatori.json` | `tarsilia-la-ruota-giocatori.md` | `rendered/tarsilia-la-ruota-giocatori_map01_tarsilia-versione-giocatore.svg` |
 | **Le stalle dell'Istrice** | `tarsilia-stalle.json` | `tarsilia-stalle.md` | `rendered/tarsilia-stalle_map01_tarsilia-le-stalle-dell-istrice-assalto-notturno.svg` |
 
 ## Rigenerare
@@ -34,6 +35,13 @@ JSON — si importano native, senza ridisegnare niente:
 | `uvtt/tarsilia-stalle_map01_*.uvtt` | 32 | 2 | 2 |
 
 Si rigenerano con `python3 scripts/export_uvtt.py <mappa>.md -o uvtt`.
+
+## Quale delle due Ruote si mette sul tavolo
+
+La versione **del DM** porta le posizioni di partenza, le insidie e le note tattiche:
+è quella che sta dietro lo schermo. Quella **dei giocatori** ha la stessa geometria e
+niente altro — si stampa e si mette in mezzo al tavolo senza consegnare mezza serata
+di informazioni.
 
 ## Coordinate
 

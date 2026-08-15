@@ -50,6 +50,25 @@ I PDF finiscono in `<cartella del manifest>/pdf/`, con **prefisso `pg-`**
 | `.hb.md` | modificare l'impaginazione nell'editor Homebrewery self-hosted | no (serve il container per l'editor) |
 | `pdf/*.pdf` | stampare, o inviare una pagina sola a un giocatore | **sì** (Chromium headless) |
 
+### 1.1 Il soffitto di questa catena — dichiarato, così non lo si cerca invano
+
+Questa pipeline arriva fin dove arriva **il browser**, e Chromium impagina pagine
+web, non libri. Restano fuori, e **nessuna quantità di CSS li recupera**:
+
+- il controllo su **vedove e orfane**;
+- la **crenatura** fine e la spaziatura ottica;
+- un **indice** che diventi una struttura di segnalibri degna;
+- i **font embedded** — oggi è Georgia, un font di sistema: su una macchina che
+  non ce l'ha il PDF cambia faccia;
+- il **volume unico** invece di un file per capitolo.
+
+Non sono difetti del codice: sono il soffitto dello strumento. La strada per
+superarlo — **un secondo binario, Typst, che affianca questa catena senza
+sostituirla** — sta in
+[ADR-0020](../../plans/adr/ADR-0020-edizione-da-stampa-su-un-secondo-binario.md),
+oggi **una proposta** in attesa del via libera del DM sulla dipendenza esterna.
+Finché è così, quello che leggi qui sotto è tutta la verità operativa.
+
 ---
 
 ## 2. Prerequisiti

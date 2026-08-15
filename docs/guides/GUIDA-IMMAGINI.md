@@ -42,6 +42,32 @@ Nessuno è «il migliore»: cambiano per come reagiscono al prompt.
 **Regola pratica**: scene → Gemini · oggetti e carte → GPT Image · hero map da
 una mappa esistente → ComfyUI.
 
+### 1.1 ⚖️ Se generi in locale, la licenza sta nei **pesi**, non nel software
+
+È il punto dove si sbaglia più facilmente, e l'errore si scopre un anno dopo.
+ComfyUI è GPL-3.0 e non limita ciò che produce; **i pesi del modello sì**
+([ADR-0019](../../plans/adr/ADR-0019-licenza-dei-pesi-non-del-software.md)):
+
+| Pesi | Licenza | Uso qui |
+|---|---|---|
+| **SDXL** | OpenRAIL++-M — commerciale ammesso | ✅ **default**: ControlNet e LoRA più maturi, gira su 8 GB di VRAM |
+| **FLUX.1 [schnell]** | **Apache 2.0** | ✅ se serve testo leggibile in-immagine o la garanzia più solida |
+| **FLUX.1 [dev]** | Non-Commercial v2.0 | ❌ **vietato**: la licenza esclude anche l'uso «indirettamente connesso ad attività commerciali» |
+
+E ogni immagine generata porta la sua riga in `PROVENIENZA.txt`: **file · modello
+· licenza · seed · data**. Senza quella riga non si committa — è l'unica cosa che
+rende la scelta reversibile fra un anno.
+
+### 1.2 Prima di generare: la direzione artistica
+
+Se stai per fare **più di un'immagine** che devono stare insieme (una serie di
+ritratti, le tavole di un modulo), i venti minuti meglio spesi non sono sul
+prompt: sono sulle sei leve della skill
+[`rumblingstone-art-direction`](../../skills/rumblingstone-art-direction/SKILL.md)
+— ancora storica, schede-personaggio, lock di seed e luce, e soprattutto il
+**gate di rifiuto**, cioè quando un'immagine si butta invece di tenerla perché
+«è già venuta».
+
 ---
 
 ## 2. Come si scrive un prompt che funziona
@@ -216,6 +242,8 @@ Esempio reale di handout con immagine:
 | Cosa | Dove |
 |---|---|
 | Lo standard dei prompt (anatomia, bibbia visiva, spoiler) | [ADR-0015](../../plans/adr/ADR-0015-standard-prompt-immagine.md) |
+| **Il mestiere**: coerenza di un set, schede-personaggio, lock, gate di rifiuto | [`rumblingstone-art-direction`](../../skills/rumblingstone-art-direction/SKILL.md) |
+| **Quale modello si può usare** e cosa si registra | [ADR-0019](../../plans/adr/ADR-0019-licenza-dei-pesi-non-del-software.md) |
 | Esemplare compilato (46 scene, 3 prompt scritti) | `07_il Portale Della Forgia Eterna/Immagini/PROMPT-IMMAGINI-07ILP.md` |
 | Vocabolario di stile e confini IP | `skills/rumblingstone-mapmaking/references/stile-illustrazione-handout.md` |
 | Hero map da una mappa renderizzata (GPU) | `skills/rumblingstone-mapmaking/references/hero-map-comfyui.md` · [`scripts/comfyui-local/README.md`](../../scripts/comfyui-local/README.md) |

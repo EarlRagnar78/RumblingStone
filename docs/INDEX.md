@@ -70,6 +70,10 @@ Il **perché** delle scelte strutturali. Indice completo in [`plans/adr/`](../pl
 | [ADR-0014](../plans/adr/ADR-0014-regia-sensoriale-obbligatoria.md) | Regia sensoriale obbligatoria nei master (descrizioni sempre, occhio da avventuriero) |
 | [ADR-0015](../plans/adr/ADR-0015-standard-prompt-immagine.md) | Standard dei prompt immagine (estrazione scene, anatomia, coerenza d'arco) |
 | [ADR-0016](../plans/adr/ADR-0016-lingua-sorgente-e-edizioni.md) | **Lingua sorgente italiana**; l'inglese è un'edizione derivata per transcreation, mai la stesura. Loc kit in `campaign/GLOSSARIO-E-LOCALIZZAZIONE.md` |
+| [ADR-0017](../plans/adr/ADR-0017-moduli-autoconclusivi-classe-di-artefatto.md) | I moduli autoconclusivi (`STANDALONE-*`) sono una classe di artefatto a sé: contratto di file, gate proprio, generatori locali ammessi a condizioni |
+| [ADR-0018](../plans/adr/ADR-0018-apparato-uso-obbligatorio.md) | L'apparato d'uso (cast, pronuncia, indice read-aloud, schermo) è parte del contenuto, non un extra |
+| [ADR-0019](../plans/adr/ADR-0019-licenza-dei-pesi-non-del-software.md) | **Per le immagini generate la licenza sta nei pesi, non nel software**: SDXL e FLUX schnell sì, FLUX dev no; provenienza obbligatoria |
+| [ADR-0020](../plans/adr/ADR-0020-edizione-da-stampa-su-un-secondo-binario.md) | 🟡 *proposta* — l'edizione da stampa esce da Typst, non dal browser; la catena HTML resta intatta |
 
 ## 5. Archivio piani
 

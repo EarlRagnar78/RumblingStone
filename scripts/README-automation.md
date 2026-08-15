@@ -33,6 +33,9 @@ python3 scripts/dm.py doctor                      # environment diagnosis
 > opzionali, troubleshooting, checklist di consegna). Qui sotto c'è la
 > **mappa degli strumenti**; là c'è il **come si fa**.
 
+> 🎨 **Immagini della campagna** (prompt, generatori, coerenza d'arco):
+> [`docs/guides/GUIDA-IMMAGINI.md`](../docs/guides/GUIDA-IMMAGINI.md).
+
 **Sottocomandi `dm.py`** (ognuno inoltra i flag allo script sottostante):
 
 | Sottocomando | Flag | Fa girare | Fase Playbook |
@@ -45,6 +48,7 @@ python3 scripts/dm.py doctor                      # environment diagnosis
 | `handout` | `--tipo T` (obbl.) · `--da <file>` · `--out <file>` | `hype_homebrew --handout` | prep |
 | `hype` | `setup`\|`start`\|`docker`\|`docker-stop` | wrapper `homebrew-local/*.sh` | prep |
 | `dossier` | *(nessuno)* | `dm_dossier` | §4 (solo DM) |
+| `prompts` | `<arco>` (obbl.) · `-o <file>` · `--list` | `extract_scene_prompts` | prep (prompt immagine dell'arco, ADR-0015) |
 | `booklet` | `<manifest.json>` (obbl.) · `--out <file>` · `--format html\|hb\|both` · `--pdf` (pagine ✉) · `--pdf-all` (TUTTE le schede, prefissi pg-/dm-) | `build_booklet_html` (+ `export_booklet_pdf`) | prep (booklet pergamena, ADR-0013: HTML autonomo e/o `.hb.md` per il self-hosted/Docker; PDF A4 per scheda) |
 | `skills` | `build`\|`sync` · `--no-deploy` | `build-skills.sh` / `sync-skills.sh` | infra |
 | `doctor` | `--ci` (avvisi non fatali) | diagnosi ambiente | infra |
@@ -94,6 +98,7 @@ Gli script Python usano solo stdlib; ognuno con argparse espone anche
 | `hype_homebrew.py` | Impagina recap o handout in layout Homebrewery V3 | `--recap <file>` (default: l'ultimo) · `--pg <PG>` (veste dell'ultimo recap per-PG → `recaps/homebrew/pg/`) · `--handout TIPO` · `--da <file>` · `--sezione <str>` · `--out <file>` · `--cronologia` | recap/handout + `campaign/templates/homebrew/*.hb.md` | `.hb.md` da incollare su homebrewery.naturalcrit.com |
 | `dm_dossier.py` | ⚠️ **SOLO DM**: fotografia di tutte le trame da state.md (§0-§7) con cornici stile RHoD, banner SOLO DM | *(nessuno)* | `campaign/state.md` | `campaign/DM-DOSSIER.hb.md` |
 | `build_booklet_html.py` | Booklet in stile **«pergamena Homebrewery»** (stile CANONICO, **ADR-0013**): copertina, tab per capitolo, cornici, SVG inline, raster embeddate come data-URI (Pillow opzionale per ricomprimere >600 KB). Doppia via: HTML autonomo e/o sorgente **Homebrewery V3** `.hb.md` per l'editor self-hosted/Docker (`dm.py hype`). CSS di stampa incluso: in stampa resta SOLO la scheda attiva, A4 a piena pergamena (bottone «🖨 Salva PDF», deep-link `#cN`). I markdown restano i master (ADR-0003). Regola player-facing: teaser di sessione SEPARATO e spoiler-free (titolo evocativo, mai il nome dello scontro) | `<manifest.json>` (obbl.) · `--out <file>` · `--format html\|hb\|both` | manifest `*.manifest.json` + i master .md che elenca (es. `07_.../homebrew/sessione-terros/*.manifest.json`, `09_.../homebrew/PALIO-BOOKLET.manifest.json`) | `.html` autonomo (no server/Docker) e/o `.hb.md` V3 |
+| `extract_scene_prompts.py` | **Scene illustrabili di un arco → scheletro dei prompt immagine** (ADR-0015): trova i read-aloud dei master, ne ricava fonte/sezione/estratto, censisce le immagini già presenti e scrive una **scheda per scena** da compilare. Rigenerazione **idempotente**: le schede già scritte restano, quelle aggiunte a mano (artefatti, ritratti) vengono riportate in coda | `<arco>` (obbl.) · `-o <file>` · `--list` | i master `.md` dell'arco + `<arco>/Immagini/` | `<arco>/Immagini/PROMPT-IMMAGINI-<TAG>.md` |
 | `export_booklet_pdf.py` | **PDF A4 delle schede** di un booklet (ADR-0013 §5-bis): Chromium/Chrome headless sull'HTML già generato, resa identica al browser; default = un PDF per ogni pagina ✉ player (hint/echi/teaser), così ogni giocatore riceve solo la sua | `<manifest.json>` (obbl.) · `--pane cN…` · `--all` · `--list` · `--outdir <dir>` · `--browser <bin>` | manifest + HTML del booklet; binario Chromium/Chrome (PATH, `$BOOKLET_CHROME`, /opt/pw-browsers) | `pdf/NN-<titolo>.pdf` accanto al manifest (gitignored: artefatti locali) |
 
 ### Bestiario / catalogo mostri

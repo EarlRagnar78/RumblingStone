@@ -36,9 +36,15 @@ skills/
 ├── rumblingstone-automation/ # dm.py CLI + session-state pipeline (ADR-0007)
 ├── rumblingstone-debugging/ # root-cause debugging, SOLO infrastruttura scripts/CI (vendored da obra/superpowers, MIT — ADR-0010)
 ├── rumblingstone-plans/    # plan-archive discipline (INDEX, CHANGELOG, ADRs)
+├── rumblingstone-playtest/ # collaudo: audit, dry-run, feedback, alfa→beta→collaudato
+├── rumblingstone-art-direction/ # coerenza di un set di immagini: ancora storica, schede-personaggio, lock, gate di rifiuto
 ├── pathfinder-1e-srd/      # PF1e rules, templates, 3.5<->PF conversion
 ├── npc-villain-boosting/   # when/whether/how to boost PNGs, villains, monsters
 └── dnd-35-rules/           # legacy meta-router (points to the skills above)
+
+STANDALONE-Il-Drappo-di-Tarsilia/  # self-contained PF1e module set in Golarion —
+           # shares the race SYSTEM with arc 09's Palio and nothing else
+           # (no Faerûn, no RHoD, no campaign PCs). Start at 00-HUB-E-QUICKSTART-DM.md
 
 plans/     # work-plan archive: INDEX.md (status + % + gates), CHANGELOG.md, adr/
 scripts/   # DM automation — single entrypoint: python3 scripts/dm.py
@@ -70,6 +76,8 @@ AI agents that support SKILL.md will discover them automatically:
 - `skills/rumblingstone-mapmaking/` — map generation workflow (Watabou, templates, VTT export)
 - `skills/rumblingstone-automation/` — `dm.py` CLI + session-state pipeline: session end wizard, per-PG recaps, next-session brief, canon writes only under the ADR-0007 triple constraint (group branch + confirmed diff + `auto:` regions)
 - `skills/rumblingstone-plans/` — work-plan archive conventions (INDEX, gates, ADRs)
+- `skills/rumblingstone-playtest/` — **come si collauda**: audit meccanico, dry-run cronometrato, schede di feedback, ciclo alfa → beta → collaudato ([ADR-0018](plans/adr/ADR-0018-apparato-uso-obbligatorio.md))
+- `skills/rumblingstone-art-direction/` — **il mestiere dell'art director**: cosa hanno in comune tutte le immagini di un set (ancora storica in pubblico dominio, schede-personaggio, lock di seed/luce/camera) e **quando un'immagine si butta** invece di tenerla perché «è già venuta» ([ADR-0019](plans/adr/ADR-0019-licenza-dei-pesi-non-del-software.md))
 - `skills/rumblingstone-debugging/` — systematic root-cause debugging for infrastructure ONLY (scripts/, CI, pytest, renderer, dm.py); vendored from obra/superpowers (MIT), policy in ADR-0010
 - `skills/pathfinder-1e-srd/` — Pathfinder 1e rules, simple templates, CR benchmarks, 3.5↔PF1e conversion
 - `skills/npc-villain-boosting/` — decision framework + workflow for boosting PNGs/villains/monsters

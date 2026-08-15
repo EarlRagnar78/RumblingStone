@@ -8,6 +8,17 @@
 > ⚠️ **Nota**: questa è un'analisi documentale di conformità, non un parere legale
 > professionale. Per un uso commerciale reale serve un avvocato IP e/o un contatto
 > formale con il CTPS (che rilascia autorizzazioni onerose o "nulla osta").
+>
+> 🔄 **Aggiornamento 2026-08-09**: la criticità **§3.2 (livree identiche) è RISOLTA** —
+> gli 8 stemmi SVG sono stati ricolorati con **livree proprie di Channathgate**
+> (palette canonica in `...P2D-PALIO-CONTRADE-STEMMI-CANTI.md` §Livree). Il punto 3
+> della checklist §7 è chiuso; i punti 1-2 e 4-9 restano aperti.
+>
+> 🔄 **Aggiornamento 2026-08-10**: le **figure** degli otto scudi sono ora icone
+> **game-icons.net** in **CC BY 3.0**, ricolorate in livrea. L'obbligo di attribuzione è
+> assolto da `P2D-Palio-Allegati/stemmi/CREDITS.md` (autori, icona per icona, modifiche
+> dichiarate); i testi di licenza sono versionati in `stemmi/game-icons/`. Chiude la
+> riserva sul `CREDITS.md` del punto 7 della checklist §7.
 
 ---
 
@@ -16,8 +27,8 @@
 | Scenario d'uso | Esito | Motivazione |
 |---|---|---|
 | **Uso privato al tavolo** (DM + gruppo) | ✅ **OK** | Nessuna riproduzione/esposizione *al pubblico* rilevante ex art. 9 Reg.; nessun fine di lucro. |
-| **Pubblicazione gratuita su GitHub** (stato attuale) | ⚠️ **Rischio basso ma non nullo** | Opera trasformativa fantasy, non commerciale, con note IP esplicite; restano però gli elementi evocativi cumulativi del §3 (in particolare titoli araldici ufficiali + livree identiche + motti parafrasati). |
-| **Uso commerciale (vendita del modulo, merchandising, loghi su prodotti)** | ❌ **NON conforme "senza problemi"** | Vedi §3–§5: l'insieme nome + titolo ufficiale + colori identici + motto parafrasato identifica in modo inequivocabile le Contrade reali, i cui simboli, denominazioni e colori sono **marchi registrati** gestiti dal CTPS; la produzione di beni con riferimenti alle Contrade/Palio richiede **espressa autorizzazione contrattuale** del Consorzio. In più c'è un **blocco indipendente e assorbente**: l'IP Wizards of the Coast (§6). |
+| **Pubblicazione gratuita su GitHub** (stato attuale) | ⚠️ **Rischio basso ma non nullo** | Opera trasformativa fantasy, non commerciale, con note IP esplicite; restano però gli elementi evocativi cumulativi del §3 (in particolare titoli araldici ufficiali + motti parafrasati; le livree **non sono più identiche** dal 2026-08-09, §3.2). |
+| **Uso commerciale (vendita del modulo, merchandising, loghi su prodotti)** | ❌ **NON conforme "senza problemi"** | Vedi §3–§5: l'insieme nome + titolo ufficiale + motto parafrasato identifica ancora le Contrade reali (i **colori non concorrono più** all'evocazione dal 2026-08-09, §3.2), i cui simboli, denominazioni e colori sono **marchi registrati** gestiti dal CTPS; la produzione di beni con riferimenti alle Contrade/Palio richiede **espressa autorizzazione contrattuale** del Consorzio. In più c'è un **blocco indipendente e assorbente**: l'IP Wizards of the Coast (§6). |
 
 **Conclusione operativa**: l'affermazione richiesta — *"i file possono essere usati per
 fini commerciali senza problemi"* — **non può essere confermata**. Per un'edizione
@@ -57,12 +68,31 @@ File: `...P2D-PALIO-CHANNATHGATE-AVVENTURA.md` §1.
 Le denominazioni ufficiali sono tra i segni distintivi registrati/gestiti dal CTPS. È
 l'elemento **più facilmente attaccabile** in un contesto commerciale.
 
-### 3.2 Livree (combinazioni di colori) identiche — 8 su 8
-I colori sono esattamente le livree ufficiali (che il Consorzio dichiara registrate come
-marchi): Oca *verde e bianco bordati di rosso*; Torre *amaranto listato di bianco e
-azzurro*; Bruco *giallo e verde listati d'azzurro*; Istrice *bianco con liste rosso, nero
-e azzurro*; Drago *rosa/rosso e verde listati di giallo*; Civetta *nero e rosso listati
-di bianco*; Leocorno *bianco e arancio listati d'azzurro*; Onda *bianco e celeste*.
+### 3.2 Livree (combinazioni di colori) identiche — 8 su 8 ✅ **RISOLTA (2026-08-09)**
+**Rilievo originario (2026-07-18)**: i colori erano esattamente le livree ufficiali (che
+il Consorzio dichiara registrate come marchi): Oca *verde e bianco bordati di rosso*;
+Torre *amaranto listato di bianco e azzurro*; Bruco *giallo e verde listati d'azzurro*;
+Istrice *bianco con liste rosso, nero e azzurro*; Drago *rosa/rosso e verde listati di
+giallo*; Civetta *nero e rosso listati di bianco*; Leocorno *bianco e arancio listati
+d'azzurro*; Onda *bianco e celeste*.
+
+**Bonifica applicata**: gli 8 SVG sono stati ricolorati con livree derivate dalla
+divinità patrona e dal nome faerûniano del quartiere. Nessuna delle nuove combinazioni
+coincide con quelle delle **17** contrade reali:
+
+| Contrada · Distretto | Livrea precedente (Siena) | Livrea Channathgate |
+|---|---|---|
+| Oca · *The Golden Plume* | verde e bianco, bordi rossi | **porpora e oro, bordata di bianco perla** |
+| Torre · *The Iron Bastion* | amaranto, liste bianco/azzurro | **acciaio brunito e scarlatto, bordata d'argento** |
+| Bruco · *The Silver Weft* | giallo e verde, liste azzurre | **argento sericeo e nero-fumo, listata di verde-veleno** |
+| Istrice · *The Quill-Wood Refuge* | bianco, liste rosso/nero/azzurro | **verde legnoferro e bruno di terra, bordata d'avorio** |
+| Drago · *The Spell-Wyrm Spires* | rosa/rosso e verde, liste gialle | **blu notte e argento, listata di viola arcano** |
+| Civetta · *The Whispering Shadows* | nero e rosso, liste bianche | **nero e viola di Shar, listata d'argento freddo** |
+| Leocorno · *The Gilded Horn* | bianco e arancio, liste azzurre | **cremisi di Sune e argento di Milil, oro dell'arpa** |
+| Onda · *The Tidal Crest* | bianco e celeste | **verde-fiume e argento lunare, bordata di blu profondo** |
+
+Codici esadecimali canonici: `...P2D-PALIO-CONTRADE-STEMMI-CANTI.md` §Livree di
+Channathgate. I testi master (AVVENTURA §1, STEMMI-CANTI §1-8) dichiarano le nuove livree.
 
 ### 3.3 Motti: dichiarati "originali", in realtà parafrasi riconoscibili
 La nota IP interna (AVVENTURA §1, STEMMI-CANTI coda) afferma che i motti sono
@@ -119,8 +149,12 @@ festa»* — la loro politica di tutela copre anche contesti d'uso offensivi.
 - **Note IP presenti** in AVVENTURA §1 e STEMMI-CANTI (coda): dichiarano ispirazione
   storico-culturale e **uso non commerciale** — coerenti con lo stato attuale del repo,
   ma vanno corrette dove affermano che i motti sono "originali" (sono parafrasi, §3.3).
-- **Icone game-icons.net** (solo proposte in STEMMI-CANTI, non ancora integrate):
-  licenza **CC BY 3.0**, compatibile anche con uso commerciale **con attribuzione**. ✅
+- **Icone game-icons.net** — **integrate** negli otto scudi dal 2026-08-10: licenza
+  **CC BY 3.0**, compatibile anche con uso commerciale **con attribuzione**. Obbligo
+  assolto in `P2D-Palio-Allegati/stemmi/CREDITS.md` (menzione *"Icons made by Lorc,
+  Delapouite and Caro Asercion"* richiesta dal `license.txt` fornito, autori per singola
+  icona, e dichiarazione delle modifiche: ricolorazione, scala, rimozione del riquadro di
+  fondo). File di licenza versionati in `stemmi/game-icons/`. ✅
 
 ---
 
@@ -130,8 +164,8 @@ festa»* — la loro politica di tutela copre anche contesti d'uso offensivi.
    colori delle Contrade e per prassi **agisce in giudizio**; la produzione di beni con
    riferimenti alle Contrade è subordinata ad **autorizzazione contrattuale onerosa**.
 2. Anche senza copia fotografica degli stemmi, la **combinazione** nome + titolo
-   ufficiale + livrea identica + motto parafrasato realizza un richiamo inequivocabile
-   ai segni tutelati: profilo di rischio per **contraffazione/evocazione di marchio
+   ufficiale + motto parafrasato realizza ancora un richiamo ai segni tutelati
+   (la livrea identica — terzo elemento del cumulo — è stata rimossa, §3.2): profilo di rischio per **contraffazione/evocazione di marchio
    rinomato** (art. 20, co. 1, lett. c, c.p.i.) e **concorrenza sleale per agganciamento**
    (art. 2598 c.c.), azionabile in Italia (foro naturale: Siena/sezioni specializzate).
 3. L'eccezione parodistica/trasformativa aiuta l'opera **gratuita**; in ambito
@@ -161,7 +195,8 @@ oltre alle bonifiche Palio del §7.
    Onda): animali/simboli diversi o nomi di fantasia.
 2. **Eliminare i titoli ufficiali** ("Nobile", "Sovrana", "Priora", "Capitana" riferiti
    a quelle contrade).
-3. **Cambiare le livree**: combinazioni di colori diverse da tutte le 17 reali.
+3. ~~**Cambiare le livree**: combinazioni di colori diverse da tutte le 17 reali.~~
+   ✅ **FATTO (2026-08-09)** — vedi §3.2.
 4. **Riscrivere i motti da zero** (non parafrasi di quelli reali).
 5. **Rimuovere "Piazza il Campo"** dal PNG panorama (rinominare la fascia testo) e
    attenuare la geometria "a nove spicchi".
@@ -169,7 +204,9 @@ oltre alle bonifiche Palio del §7.
    **nome comune** storico (le corse dette "palio" esistono in decine di città: il
    termine generico non è monopolizzabile, l'identità senese sì).
 7. Correggere le **note IP** interne (§3.3) e documentare la **provenienza delle tavole
-   raster**; se si integrano icone game-icons.net, aggiungere `CREDITS.md` (CC BY 3.0).
+   raster**. *(Le livree dichiarate nei testi sono allineate agli SVG ricolorati; il
+   `CREDITS.md` per le icone game-icons.net ✅ **è stato aggiunto il 2026-08-10**. Resta da
+   tracciare la sola provenienza dei due PNG forniti dal DM.)*
 8. **Riambientare fuori da Forgotten Realms** (§6) o pubblicare solo sotto uso privato.
 9. In alternativa alle bonifiche 1–6: richiedere al CTPS un **contratto di
    autorizzazione** (oneroso) o, per usi non commerciali pubblici, un **nulla osta**.
@@ -180,7 +217,8 @@ oltre alle bonifiche Palio del §7.
 
 - **Nessuna violazione "attiva" del Regolamento** in senso stretto: il Regolamento
   disciplina la festa reale (corse, sorteggi, cavalli) e non è replicato testualmente;
-  gli stemmi reali (allegato A) **non** sono riprodotti graficamente.
+  gli stemmi reali (allegato A) **non** sono riprodotti graficamente — e dal 2026-08-09
+  **neppure i colori** dell'allegato A sono più replicati (§3.2).
 - **Compatibilità con le politiche CTPS**: accettabile **solo** finché l'uso resta
   privato/non commerciale, come dichiarato nelle note IP interne. Gli elementi del §3
   restano il punto debole e andrebbero bonificati anche solo per prudenza nella

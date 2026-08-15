@@ -51,6 +51,12 @@ Questa è un'analisi documentale di conformità, **non un parere legale
 professionale**: un uso commerciale reale richiederebbe comunque un
 avvocato IP.
 
+## Guida operativa
+
+La traduzione pratica di questa posture, caso per caso (mandare materiale ai
+giocatori, stampare, pubblicare gratis, vendere, illustrazioni), sta in
+[`docs/guides/GUIDA-CONDIVISIONE-IP.md`](../../docs/guides/GUIDA-CONDIVISIONE-IP.md).
+
 ## Conseguenze
 
 - Chiarito, una volta per tutte, perché il repo non è commercializzabile

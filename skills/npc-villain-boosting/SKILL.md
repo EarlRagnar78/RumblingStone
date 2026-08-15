@@ -11,6 +11,9 @@ description: >
 
 # NPC / Villain / Monster Boosting — When, Whether, How
 
+> 📘 **Guida passo-passo per umani** (dove va il file, formato statblock,
+> catalogo, gate CI): [`docs/guides/GUIDA-BESTIARIO.md`](../../docs/guides/GUIDA-BESTIARIO.md).
+
 The party (4 PCs, level 13, artifact-heavy — see
 `rumblingstone-campaign/references/campaign-party.md`) outguns most printed
 *Red Hand of Doom* content, which is written for levels 5–12. This skill

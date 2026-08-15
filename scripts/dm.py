@@ -162,6 +162,17 @@ def cmd_dossier(args: argparse.Namespace, extra: list[str]) -> int:
     return run("dm_dossier.py", *extra)
 
 
+def cmd_prompts(args: argparse.Namespace, extra: list[str]) -> int:
+    # Prompt immagine dell'arco (ADR-0015): lo script estrae le scene,
+    # i prompt li scrive l'agente/DM nelle schede generate
+    po = [args.arc]
+    if args.out:
+        po += ["-o", args.out]
+    if args.list:
+        po += ["--list"]
+    return run("extract_scene_prompts.py", *po, *extra)
+
+
 def cmd_booklet(args: argparse.Namespace, extra: list[str]) -> int:
     # Booklet HTML «pergamena» (stile canonico del Palio) da manifest JSON
     bo = [args.manifest]
@@ -346,6 +357,12 @@ def main(argv: list[str] | None = None) -> int:
 
     sub.add_parser("dossier", help="⚠️ SOLO DM: dossier di tutte le trame (da state.md) in Homebrewery V3")
 
+    p = sub.add_parser("prompts", help="scene illustrabili di un arco → scheletro dei "
+                                      "prompt immagine (ADR-0015)")
+    p.add_argument("arc", help="cartella dell'arco (es. \"07_il Portale Della Forgia Eterna\")")
+    p.add_argument("-o", "--out", help="file di output (default: <arco>/Immagini/PROMPT-IMMAGINI-*.md)")
+    p.add_argument("--list", action="store_true", help="elenca soltanto le scene trovate")
+
     p = sub.add_parser("booklet", help="booklet in stile pergamena da manifest JSON "
                                        "(ADR-0013): HTML autonomo e/o sorgente Homebrewery V3")
     p.add_argument("manifest", help="manifest *.manifest.json del booklet")
@@ -383,7 +400,7 @@ def main(argv: list[str] | None = None) -> int:
     return {
         "prep": cmd_prep, "maps": cmd_maps, "post": cmd_post, "recap": cmd_recap,
         "handout": cmd_handout, "hype": cmd_hype, "dossier": cmd_dossier,
-        "booklet": cmd_booklet,
+        "booklet": cmd_booklet, "prompts": cmd_prompts,
         "session": cmd_session, "skills": cmd_skills, "doctor": cmd_doctor,
     }[args.cmd](args, extra)
 

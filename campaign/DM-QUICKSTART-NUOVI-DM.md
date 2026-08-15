@@ -30,6 +30,10 @@
 
 ## 2. Setup una-tantum (5 min)
 
+> 📘 Se la **macchina è nuova** (o sei un secondo DM), parti da
+> [`docs/guides/GUIDA-SETUP-MACCHINA.md`](../docs/guides/GUIDA-SETUP-MACCHINA.md):
+> prerequisiti, skill per agenti, hook git, branch di gruppo e verifica finale.
+
 ```bash
 git clone <repo> && cd RumblingStone
 python3 scripts/dm.py doctor          # diagnosi: ti dice cosa manca

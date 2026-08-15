@@ -27,6 +27,86 @@ Il repo ha tre **livelli** di contenuto. Trattarli allo stesso modo è la fonte 
 
 ---
 
+## §1-bis — Il buco tattico di questo party (rilievo dal tavolo, 2026-07-31)
+
+> Due giocatori hanno detto la stessa cosa da due lati diversi. **Artemis**: *«non
+> individuo mai niente»*. **Thorik**: *«non si incontrano mai incantatori»*.
+> Non è capriccio: è vero, ed è un problema di design che si può misurare.
+
+### Perché succede
+
+Guarda cosa ha combattuto il party nell'ARC-07: elementali, un golem di
+mithral, uno xorn, cristalli viventi, Terros. **Costrutti ed elementali, per un
+arco intero.** Sono nemici che:
+
+- non usano **illusioni** → *See the Unseen* di Artemis non serve mai;
+- non lanciano **buff da identificare** → la Sapienza Forgiata dell'Anello non
+  serve mai;
+- non si **nascondono**, non mentono, non fingono di essere altro → non c'è
+  niente da scoprire, solo cose da colpire;
+- combattono in **linea retta** → nessun sotterfugio, nessuna trappola sociale.
+
+Il party non ha ladro: **Artemis È il reparto informazioni.** Se non c'è niente
+da individuare, un terzo del suo personaggio resta a casa. E se tutti i nemici
+picchiano e basta, ogni scontro ha la stessa forma.
+
+### ⚠️ Attenzione: i demoni peggiorerebbero le cose
+
+L'istinto è «mettiamoci dei demoni». **Contro questo party specifico è la
+scelta sbagliata**, per un motivo preciso: i demoni hanno **Resistenza agli
+Incantesimi**, e l'**Eldritch Blast è un'abilità magica** — quindi ci sbatte
+contro. Un arco di demoni **spegnerebbe Artemis invece di accenderlo**, che è
+l'opposto della richiesta.
+
+Se vuoi comunque degli extraplanari, prendi quelli che **premiano l'indagine**
+invece dei bruti: **erinni, succubi, yugoloth mercanti** — travestimento,
+charme, teletrasporto, patti. Pochi, non orde: così la RI conta meno e la
+menzogna conta di più.
+
+### Cosa funziona davvero: incantatori mortali
+
+Niente RI, superficie d'indagine completa. **E ce li hai già scritti in casa** —
+il problema non è inventarli, è **usarli**:
+
+| Chi | Dove | Perché è la risposta |
+|---|---|---|
+| **Zalkatar** (Illithid Warlock Drow, GS 13) | `09_.../…Zalkatar.md` — Torre Invisibile, già in `state.md` come thread di Artemis | *Black tentacles*, *slow*, *dimension door*, Mind Blast, golem, enigmi arcani, portali dimensionali. **È il pacchetto completo, ed è già il nemico designato di Artemis.** L'Anello dà +4 ai TS contro le sue psionica |
+| **Thayan Red Wizard 7** (GS 9) e **Drow Wizard 7** (GS 8) | `Bestiario/mostri/` | *Evard's black tentacles*, *fireball*, *dimension door*, *invisibility*. Pronti da mettere in campo, anche a coppie |
+| **Chierici Mano Rossa** (hobgoblin doom hand) e **Morlin Coalhewer** (GS 12) | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/` | La Mano Rossa **è piena di incantatori**: se Hammerfist è solo fanteria, stai buttando via metà del materiale |
+| **Sethrax il Velato**, **Xal'thor** | `Bestiario/villain/` | Villain con agenda, non mostri: si travestono, mentono, preparano |
+
+### Le tre mosse che accendono l'indagine (senza cambiare niente)
+
+1. **Fai mentire il campo di battaglia.** Non «tira Osservare»: metti in scena
+   qualcosa che **è diverso da come appare** e che, se non lo scoprono, gli
+   costa. Numeri veri nascosti da un'illusione, un comandante travestito da
+   gregario, una porta che non c'è. Artemis passa da «tiro un dado» a **«ci
+   saremmo entrati dentro»**.
+2. **Dai da dissolvere, non solo da colpire.** Un nemico buffato è un nemico
+   che si può **smontare**. È l'unico modo perché identificare un'aura sia una
+   giocata e non colore.
+3. **Sotterfugio senza ladro.** Il party ne è capace e non lo sa: *Ombra di
+   Maschera* (invisibilità superiore su sé + 1 alleato), *Flee the Scene*, la
+   furtività del monaco, la Corona che comprende le lingue. Costruisci
+   infiltrazioni dove **il fallimento è l'esposizione, non la morte** — così
+   possono provarci senza rischiare un TPK. Esemplare già scritto:
+   `ARC07-DEF-4` SCENA 3, «Infiltrazione e Zog'tar».
+
+### Dove metterlo, in ordine di calendario
+
+- **#4, viaggio a −1.000**: c'è già l'infiltrazione, e c'è **Vatore**. Usalo
+  come duellante di astuzia, non di spada.
+- **ARC-08 Hammerfist**: metti in campo i chierici della Mano Rossa. Un assedio
+  con incantatori dietro le linee è un'altra battaglia.
+- **ARC-09, Torre Invisibile**: **Zalkatar è la risposta grossa** e va
+  anticipato con degli indizi già adesso, non presentato da zero.
+
+> **Registralo:** se applichi questa sezione, arma un eco in `state.md` §7.E —
+> così il tavolo vede che la lamentela è stata ascoltata *dentro la fiction*,
+> non con un annuncio.
+
+---
+
 ## §2 — Pre-session checklist (15 min prima del tavolo)
 
 Apri i file in questo ordine:

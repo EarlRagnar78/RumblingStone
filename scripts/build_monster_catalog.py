@@ -163,10 +163,20 @@ def read_file_safe(path):
     return ""
 
 def should_skip(path):
-    skip_dirs = {'.git', 'node_modules', '.claude', '.cursor', '.windsurf', '.gemini', '.chatgpt', '.agents', '.github', 'Immagini', 'immage_campaign', 'Mappe', 'Musica', 'skills', 'Script', 'Old', 'png_La_mano_rossa_del_destino_files', 'tokens', 'homebrew'}
+    # 'docs' = documentazione (guide, ADR renderizzati, contratti tool): può
+    # CITARE uno statblock d'esempio, non ne è mai la fonte — indicizzarla
+    # inquinerebbe il catalogo (es. GUIDA-BESTIARIO.md letta come mostro CR 10).
+    # 'STANDALONE-*' = moduli autoconclusivi (altro sistema, altra ambientazione):
+    # i loro statblock sono locali al modulo e non appartengono al Bestiario della
+    # campagna — indicizzarli mescolerebbe PF1e e 3.5 nello stesso catalogo.
+    skip_dirs = {'.git', 'node_modules', '.claude', '.cursor', '.windsurf', '.gemini', '.chatgpt', '.agents', '.github', 'Immagini', 'immage_campaign', 'Mappe', 'Musica', 'skills', 'Script', 'Old', 'png_La_mano_rossa_del_destino_files', 'tokens', 'homebrew', 'docs', 'campaign',
+                 'STANDALONE-Il-Drappo-di-Tarsilia'}
     for part in path.parts:
         if part in skip_dirs or part.endswith('_files'):
             return True
+    # 'docs' e 'campaign' = documentazione e diari: CITANO statblock (esempi,
+    # tabelle di GS, log di sessione) ma non ne sono la fonte. Le fonti sono
+    # Bestiario/ e le cartelle d'arco.
     # .hb.md = artefatti di layout Homebrewery (ADR-0003), mai fonti di statblock
     if path.name.endswith('.hb.md'):
         return True

@@ -120,6 +120,40 @@ La presenza della Terra stabilizza la furia del Fuoco, mentre il Fuoco infonde e
 *   **Azione:** Movimento.
 *   **Descrizione:** Salti oltre i limiti normali ed esplodi in un anello di fuoco all'atterraggio. (Vedi Dettagli in basso).
 
+#### 7. Diventare una Collina (Su) `[SBLOCCATO — Terros abbattuto, 2026-07-31]`
+*   **Azione:** nessuna la prima volta (si attiva **da sé**); **movimento** dopo.
+*   **Durata:** 1 minuto. **Frequenza:** 1/giorno.
+*   **Effetto:** come *Ingrandire Persona* — diventi di taglia **Grande**.
+    *   **FOR +2**, **DES −2**, spazio e portata **raddoppiati**.
+    *   **−1** al tiro per colpire e alla CA (taglia).
+    *   **+4** al modificatore di taglia per **spinta, lotta e sgambetto**.
+    *   Il tuo **danno senz'armi sale di un dado** (taglia Grande).
+    *   **−4** a Nascondersi. L'armatura e i vestiti si adattano; il resto no.
+
+> ⚠️ **Attenzione al conto della DES.** Fra il **−2 permanente** del rito dello
+> Smeraldo e il **−2** dell'ingrandimento, da Grande hai **4 punti di DES in
+> meno** rispetto a prima del Piano della Terra: CA senz'armatura, Riflessi e
+> iniziativa scendono di conseguenza. Diventare una collina ti rende più forte
+> e **più facile da colpire**. È il punto.
+
+**Come si attiva — non lo decidi tu.**
+
+I Bracieri non lo concedono a richiesta. Sono guanti da fabbro, e un fabbro
+prende il martello grosso solo quando serve il martello grosso.
+
+| Quando | Cosa serve |
+|---|---|
+| **La prima volta** | **automatico, gratis**: la prima volta che uno scontro contro una creatura **Enorme o più grande** ti porta **sotto metà punti ferita**, i Bracieri si accendono da soli. Nessun tiro, nessuna azione, nessuna scelta |
+| **Dopo** | **1/giorno, azione di movimento**, ma **solo** se sul campo c'è almeno una di queste tre: una creatura **Enorme o più grande** · **un compagno a 0 pf o meno** · **tu sotto metà pf** |
+| **Fuori da quelle condizioni** | i guanti restano freddi. Puoi provarci quanto vuoi: non succede niente, e non ti spiegano perché |
+
+> **I BRACIERI, la prima volta** (e solo quella volta parlano):
+> *«Bestia grossa.»* Una pausa, come chi misura un pezzo prima di batterlo.
+> *«Ci vuole un martello più grosso.»*
+
+Le volte successive **non commentano**. Il metallo si scalda, le spalle si
+allargano, e tu sai già cosa fare.
+
 ---
 
 ##### Dettagli del Potere: Salto Fiammeggiante
@@ -196,6 +230,7 @@ Se soddisfatto, i guanti possono occasionalmente agire di propria volontà per p
 | **Martello (Sinergia)** | (Su) | Free | 1/rnd | Su **Critico**: attiva *Colpi del Fuoco* o *Pugno Frana* gratis. |
 | **Cariche Devastazione**| (Su) | Free | 3/gg (**4** benedetto) | Su **Critico**: 1C→+2d6F / 2C→+3d6F / 3C→+4d6F. Su 18-20 nat: 1 carica gratis. |
 | **Frantumare (Shatter)**| (Su) | Free | 1/gg | Dopo critico: *Shatter* CL 13 CD 16 sul nemico. Devastante vs strutture/cristallo. |
+| **Diventare una Collina** | (Su) | Mov (1ª volta: **auto**) | 1/gg | Taglia **Grande**: FOR +2, DES −2, portata ×2, **+4 spinta/lotta**, danno senz'armi +1 dado. Solo in condizioni di pericolo (vedi §7). |
 
 ---
 
@@ -206,3 +241,22 @@ Se soddisfatto, i guanti possono occasionalmente agire di propria volontà per p
 | — | Stadio Fuoco (Risveglio Bracieri di Moradin) | ✅ giocato |
 | — | Stadio Terra (Risveglio Completo) | ✅ giocato |
 | … | … | … |
+
+---
+
+## ✅ «Diventare una Collina» — sbloccato
+
+Il potere è **scritto sopra, al §7 dei Poteri Attivati**. La condizione era
+*dimostrare il proprio valore contro Terros l'Antico*: il guardiano è caduto il
+**2026-07-31** e la Forgia ha registrato.
+
+**Cosa resta da fare al DM** *(spunta man mano)*:
+
+- [x] `05_Bracieri_Gemelli_Scheda_PG_Completa.md` — potere §7 + riga nel cheat sheet
+- [ ] `03_Risveglio_Completo_Bracieri_Terra.md` — progressione dello stadio Terra
+- [ ] `PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md` §4 — matrice versioni
+- [ ] `campaign/state.md` §6 — changelog artefatti
+- [ ] `05_Bracieri_Gemelli_Scheda_PG_Completa.html` — rigenerare l'HTML gemello
+
+⚠️ **Non anticipare al giocatore che il potere esiste.** La prima attivazione è
+automatica e deve arrivargli addosso senza preavviso: è metà dell'effetto.

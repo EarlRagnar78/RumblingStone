@@ -50,6 +50,34 @@ I PDF finiscono in `<cartella del manifest>/pdf/`, con **prefisso `pg-`**
 | `.hb.md` | modificare l'impaginazione nell'editor Homebrewery self-hosted | no (serve il container per l'editor) |
 | `pdf/*.pdf` | stampare, o inviare una pagina sola a un giocatore | **sì** (Chromium headless) |
 
+### 1.1 Il soffitto di questa catena — dichiarato, così non lo si cerca invano
+
+Questa pipeline arriva fin dove arriva **il browser**, e Chromium impagina pagine
+web, non libri. Restano fuori, e **nessuna quantità di CSS li recupera**:
+
+- il controllo su **vedove e orfane**;
+- la **crenatura** fine e la spaziatura ottica;
+- un **indice** che diventi una struttura di segnalibri degna;
+- i **font embedded** — oggi è Georgia, un font di sistema: su una macchina che
+  non ce l'ha il PDF cambia faccia;
+- il **volume unico** invece di un file per capitolo.
+
+Non sono difetti del codice: sono il soffitto dello strumento. Per superarlo c'è la **seconda catena**, quella da stampa
+([ADR-0020](../../plans/adr/ADR-0020-edizione-da-stampa-su-un-secondo-binario.md)):
+
+```bash
+python3 scripts/export_booklet_typst.py MANIFEST.json --all
+```
+
+Legge **lo stesso manifest** e produce **un volume unico** `-STAMPA.pdf` con
+tipografia OFL embedded (EB Garamond + Cinzel), due colonne, fregi di capitolo,
+tabelle larghe che scavalcano le colonne e **segnalibri PDF veri**. Serve il
+binario `typst` (Apache 2.0): se manca, lo script dice come installarlo ed esce
+pulito — **questa catena qui sotto continua a funzionare da sola**.
+
+Come le due catene si incastrano con tutto il resto:
+[GUIDA-FLUSSO-LOCALE](GUIDA-FLUSSO-LOCALE.md).
+
 ---
 
 ## 2. Prerequisiti

@@ -91,7 +91,23 @@ stato d'arco); la mappa **CM-1**; l'handout **«Lo Stato dei Custodi»** (§9).
 - **Cuore di Moradin**: **SPESO** (resurrezione).
 - **Thorik**: **−2 COS** permanente. **Hella**: viva (Ibrido Treant, Collana, Durik). **Bracieri** completi. **Ring** riforgiato.
 - **Carry-over B4** verso Fauci: registrato al master #4 (esito Skullcrusher + N ferite).
-- **Countdown**: siete arrivati al **Giorno 3** (≈ March Clock Day 18-19): il **sync** con l'ARC-08.
+- **Countdown**: siete arrivati al **Giorno 3** (≈ March Clock Day 18-19): il **sync** con l'ARC-08. Valore preciso in consegna, secondo il registro dei riposi (`ARC07-DEF-2` §0-bis): **≈ 3g 03h** se hanno dormito prima di Terros, **≈ 3g 15h** se no. Il viaggio a −1.000 **non consuma orologio** (il Rubino riporta all'istante di partenza).
+
+### In che stato consegni il party all'ARC-08 (per ramo)
+
+Il ramo cambia **come si apre** la Battaglia di Hammerfist, non se si vince.
+
+| Orologio in consegna | Cosa trovano arrivando | Effetto sull'ARC-08 |
+|---|---|---|
+| **≈ 3g 15h** (nessun riposo prima di Terros) | l'orda è accampata, torri d'assedio quasi pronte, mura **intatte**. C'è ancora tempo per schierarsi | **Fase 0 piena**: consiglio di guerra, preparativi, scelta delle posizioni. L'ARC-08 parte come scritto |
+| **≈ 3g 03h** (riposo prima di Terros — ramo probabile) | la **prima ondata è già passata**: una torre in posizione a est, i primi caduti sui camminamenti, il fumo che piega col vento | **Fase 0 accorciata**: un solo giro di preparativi invece di due. I nani hanno già dei feriti da curare, e il consiglio di guerra si tiene **in piedi**, non seduti |
+| **sotto 2 giorni** (solo con altri due riposi ordinari — improbabile) | **breccia aperta**, combattimento dentro le mura | pannello velato su A8 e **Fase 0 dura** (`ARC07-DEF-2` §8) |
+
+> ⚠️ **Nessuno dei due rami probabili è una punizione.** La differenza è di
+> **tono e di respiro**, non di vittoria: chi ha dormito arriva riposato in un
+> assedio più avanti, chi non ha dormito arriva stanco in un assedio più
+> indietro. **È lo scambio giusto, e vale la pena farglielo notare a cose fatte**
+> — dopo la battaglia, non prima.
 
 ### 🐾 Supporto Pathfinder 1e (dove il 3.5 è vago) — opzionale, dichiarato
 > - **Il ritorno nel tempo**: nessun costo meccanico ai PG (il Rubino paga, ed è

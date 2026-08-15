@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="560" viewBox="0 0 420 560" font-family="Georgia,'Liberation Serif','DejaVu Serif',serif">
+<title>TESIO MARCA — il Tenente</title>
+<defs>
+<pattern id="grain" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="none"/><circle cx="1.5" cy="1.5" r="0.5" fill="#000" opacity="0.05"/><circle cx="4.5" cy="3.5" r="0.4" fill="#000" opacity="0.04"/></pattern>
+<radialGradient id="vign" cx="50%" cy="45%" r="72%"><stop offset="60%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#3a2c14" stop-opacity="0.30"/></radialGradient>
+</defs>
+<rect width="420" height="560" fill="#efe3c6"/>
+<rect width="420" height="560" fill="url(#grain)"/>
+<g opacity="0.13" transform="translate(110,120) scale(1.0)"><path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="#2e4a34"/></g>
+<circle cx="210" cy="216" r="137" fill="#d8c8a4" stroke="#2c2313" stroke-width="3"/>
+<circle cx="210" cy="216" r="128" fill="#c9b58e"/>
+<clipPath id="cl-tesio"><circle cx="210" cy="216" r="128"/></clipPath>
+<g clip-path="url(#cl-tesio)">
+<path d="M92 356 q 118 -96 236 0 v 80 h -236 Z" fill="#3a3550"/>
+<rect x="190" y="232" width="40" height="46" fill="#dbb694"/>
+<ellipse cx="210" cy="208" rx="52" ry="62" fill="#dbb694"/>
+<path d="M156 202 q 6 -76 54 -76 q 48 0 54 76 q -18 -34 -54 -34 q -36 0 -54 34 Z" fill="#241f1a"/>
+<circle cx="191" cy="204" r="4" fill="#2b2118"/>
+<circle cx="229" cy="204" r="4" fill="#2b2118"/>
+<path d="M196 242 q 14 8 28 0" fill="none" stroke="#8a5a44" stroke-width="2.4" stroke-linecap="round"/>
+</g>
+<circle cx="210" cy="216" r="128" fill="none" stroke="#2c2313" stroke-width="2"/>
+<rect x="30" y="378" width="360" height="106" fill="#f4ecd8" opacity="0.92" stroke="#2c2313" stroke-width="2"/>
+<text x="210" y="408" font-size="20" fill="#2c2313" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="1.5">TESIO MARCA</text>
+<text x="210" y="432" font-size="13" fill="#7d2f26" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="4">IL TENENTE</text>
+<text x="210" y="456" font-size="12.5" fill="#5b4a2c" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">umano mago 3</text>
+<text x="210" y="474" font-size="11.5" fill="#5b4a2c" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">«dita macchiate d'inchiostro, un corvo sull'avambraccio»</text>
+<text x="210" y="52" font-size="12" fill="#5b4a2c" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="5">IL DRAPPO DI TARSILIA</text>
+<text x="210" y="74" font-size="13" fill="#2e4a34" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">contrada dell'Istrice</text>
+<rect width="420" height="560" fill="url(#vign)"/>
+<rect x="10" y="10" width="400" height="540" fill="none" stroke="#2c2313" stroke-width="3"/>
+<rect x="17" y="17" width="386" height="526" fill="none" stroke="#2c2313" stroke-width="1"/>
+<text x="210.0" y="534" text-anchor="middle" font-size="11" fill="#5b4a2c" font-style="italic">segnaposto vettoriale — sostituibile col ritratto generato</text>
+</svg>

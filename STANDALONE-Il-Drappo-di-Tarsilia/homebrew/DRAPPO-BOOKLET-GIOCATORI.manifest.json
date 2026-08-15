@@ -1,0 +1,16 @@
+{
+  "brand": "IL DRAPPO DI TARSILIA · PF1e",
+  "title": "Il Drappo di Tarsilia",
+  "subtitle": "Quello che i vostri personaggi sanno da sempre",
+  "banner": "FASCICOLO DEI GIOCATORI",
+  "meta": "Contrada dell'Istrice · Tarsilia, Regno dei Fiumi · 4712 AR · nessuno spoiler: si può leggere prima della prima serata",
+  "header": "Le otto contrade, il lessico del Drappo, i due contatori e le tre giornate. Tutto quello che serve ai giocatori, e niente di quello che non devono sapere.",
+  "footer": "Novanta secondi",
+  "player_footer": "Novanta secondi",
+  "cover_image": "../ALLEGATI/tavole/tarsilia-citta.svg",
+  "out": "DRAPPO-BOOKLET-GIOCATORI.html",
+  "chapters": [
+    {"title": "✉ Benvenuti a Tarsilia", "file": "DRAPPO-VOLANTINO-GIOCATORI.md", "tag": "player"},
+    {"title": "✉ I sei della dirigenza", "file": "../FASCICOLO-SCHEDE-GIOCATORE.md", "tag": "player"}
+  ]
+}

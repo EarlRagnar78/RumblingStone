@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240" role="img" aria-label="Stemma dell'Onda — The Tidal Crest (Gozreh/Desna)">
+  <!-- LIVREA GOLARION · The Tidal Crest (Gozreh/Desna): verde-fiume e argento lunare, bordata di blu profondo, stellata -->
+  <defs><clipPath id="go8"><path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z"/></clipPath></defs>
+  <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="#e2ecec" stroke="#123a5c" stroke-width="6"/>
+  <g clip-path="url(#go8)">
+    <path d="M100 20 H180 V150 Q180 210 100 232 Z" fill="#e2ecec"/>
+    <!-- bande d'onda -->
+    <path d="M20 118 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 V232 H20 Z" fill="#2e8c7e"/>
+    <path d="M20 150 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 V232 H20 Z" fill="#1d6b63"/>
+    <path d="M20 182 q20 -14 40 0 q20 14 40 0 q20 -14 40 0 q20 14 40 0 V232 H20 Z" fill="#124240"/>
+    <!-- falce e stelle di Desna -->
+    <path d="M48 44 a13 13 0 1 0 5 22 a10 10 0 1 1 -5 -22z" fill="#dfa93b" stroke="#8a6416" stroke-width="1.8"/>
+    <g fill="#dfa93b" stroke="#8a6416" stroke-width="0.8"><g transform="translate(74,34) scale(0.30)"><path d="M0 -16 L4.5 -4.5 L16 -4.5 L6.5 3 L10 15 L0 7.5 L-10 15 L-6.5 3 L-16 -4.5 L-4.5 -4.5 Z"/></g><g transform="translate(36,74) scale(0.24)"><path d="M0 -16 L4.5 -4.5 L16 -4.5 L6.5 3 L10 15 L0 7.5 L-10 15 L-6.5 3 L-16 -4.5 L-4.5 -4.5 Z"/></g><g transform="translate(66,66) scale(0.19)"><path d="M0 -16 L4.5 -4.5 L16 -4.5 L6.5 3 L10 15 L0 7.5 L-10 15 L-6.5 3 L-16 -4.5 L-4.5 -4.5 Z"/></g></g>
+    <!-- FIGURA · · game-icons.net "big-wave-lorc" di Lorc, CC BY 3.0 (sostituibile: il gruppo porta il fill della livrea) -->
+    <g fill="#123a5c"><g transform="translate(34.44 33.39) scale(0.24774)"><path d="M319.406 75.156c-50.542.49-104.39 20.876-150.094 72.844-10.232 9.65-19.88 19.59-29.187 29.313-20.516 21.433-39.694 41.877-60.22 56.468-18.484 13.142-37.73 21.617-61 22.75v89.876c53.93-32.793 59.934-67.832 115.595-136.312 6.38-6.524 12.727-13.19 19.125-19.875 9.96-10.407 20.016-20.803 30.563-30.657 46.422-36.83 92.022-27.93 107.218 2.5 4.6-49.27 57.958-30.564 66.813 18.875 6.91-33.696 20.327-44.354 34.03-31.625-28.136 49.585-26.61 110.87-8.406 164.937 20.51 60.915 61.743 114.13 110.344 133.75v-20.563c-38.34-19.194-74.662-65.71-92.657-119.156-15.937-47.336-17.777-99.07 2.75-141.655 8.492 16.92 16.342 43.406 21.94 79.53 17.992-84.587 54.762-72.463 56.624-10.593 42.998-66.287-52.197-161.48-163.438-160.406zm-35.656 95.78C194.225 181.69 66.158 359.648 43.625 494.97h91.25c1.02-133.954 71.114-282.045 148.875-324.033zm32.406 13.69c-76.76 49.056-114.574 208.732-109.812 310.343h78.437c-41.213-80.74-23.207-252.666 31.376-310.345zm21.875 26.218c-34.686 82.23-25.705 191.077 25.158 284.125h78c-75.605-53.774-120.09-190.455-103.157-284.126z"/></g></g>
+    <!-- /FIGURA -->
+  </g>
+  <path d="M20 20 H180 V150 Q180 210 100 232 Q20 210 20 150 Z" fill="none" stroke="#123a5c" stroke-width="6"/>
+  <rect x="17" y="182" width="166" height="26" rx="4" fill="#0c2a3e" opacity="0.85"/>
+  <text x="100" y="200" font-family="Georgia,&quot;Liberation Serif&quot;,&quot;DejaVu Serif&quot;,serif" font-size="10.5" fill="#cfe0d6" text-anchor="middle" font-style="italic" textLength="148.6" lengthAdjust="spacingAndGlyphs">Il cielo mi colora, il fiume mi arma</text>
+  <text x="100" y="14" font-family="Georgia,&quot;Liberation Serif&quot;,&quot;DejaVu Serif&quot;,serif" font-size="11" fill="#123a5c" text-anchor="middle" font-weight="bold" textLength="118.0" lengthAdjust="spacingAndGlyphs">L'ONDA · Gozreh/Desna</text>
+</svg>

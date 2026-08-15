@@ -151,7 +151,9 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 | Diapason Armonico | ⚠️ **SPESO sulla Sentinella** (Grido Superiore innescato dalla Frequenza): niente stun anti-arrocco contro Terros | master §7b/§8 (canone giocato) |
 | Frequenza della Confusione | ✅ ancora disponibile (è conoscenza): **il malus round 1 su Terros si attiva con la SOLA Frequenza** — nauseato, −4 att/CA | master §8 |
 | Posizione del party | dentro il Tempio di Mithral, oltre l'Anticamera, verso la camera sferica | master §7→§8 |
-| Countdown Hammerfist | ~3 giorni e 18 ore a fine parte | master §0 |
+| Riposi già fatti (Piano del Fuoco prima della piramide · Sala dopo il Fuoco) | ✅ **a canone e già conteggiati** | `ARC07-DEF-2` §0-bis |
+| Countdown Hammerfist | **~3g 20h** entrando nella camera · **~3g 08h** se dormono prima | `ARC07-DEF-2` §0-bis (registro completo) |
+| Riposo prima della camera del boss | possibile e **probabile**: −12 h, ma il prezzo vero è che **Terros va scalato a 34 DV** (arrivano a risorse piene) | master §8c-4 + §4 qui sotto |
 
 ### I risultati del viaggio di Hella (SOLO DM — servono al #3, non stasera)
 
@@ -208,6 +210,13 @@ esistono solo come echi.
    §0-bis, tattiche round-per-round, DPR atteso ~5 round, contingenze
    pronte (parlano con lui / fuga / caduta / TPK-safe: espulsi e segnati,
    mai massacro).
+   - 📖 **Tieni aperto il §8c «Manuale d'uso del guardiano»** (nuovo): è la
+     lista di cosa i PG possono tirare fuori — Eldritch Blast e modalità
+     sonica, Chilling Tentacles, tentativi di lotta, sinergie degli
+     artefatti — con **la risposta di Terros già scritta accanto**. Serve a
+     non improvvisare a tavolo aperto. Le tre cose da sapere prima di
+     sederti: la RD **non** ferma il Blast di Artemis; la Trinità Divina
+     **non** supera la RD 10/—; Terros **non inizia mai una lotta**.
    - I tre **contro-momenti firmati** — Thorik «Radice a Terra», Tordek
      «Frantuma-Scudo», Artemis stalattiti disintegrate in volo — **NON
      sono scritti in chiaro negli handout** (ADR-0013 §3-ter: gli hint
@@ -249,8 +258,9 @@ esistono solo come echi.
   Altare già centrato) — e T-5 come ricordo dell'Anticamera.
 - I **read-aloud della serata**: §8a «i sei secondi della soglia», §8b «il
   distacco», e le tre pagine di **«FASE 2 — la regia dei tre round»** (§9).
-- Statblock di **Terros** (§8); handout §13 (Iscrizione, carta «Corona
-  2/3» per fine serata, Benedizioni).
+- Statblock di **Terros** (§8) **e il §8c «Manuale d'uso del guardiano»**
+  (le risposte pronte a Blast/tentacoli/lotta/sinergie); handout §13
+  (Iscrizione, carta «Corona 2/3» per fine serata, Benedizioni).
 - Le **4 pagine hint/echi** di questo booklet (capitoli III–VI).
 - *(Solo se Artemis prende il Seme)* il bigliettino privato: *«Un favore,
   a mia scelta, a mio tempo. — V.»* (§13.4).
@@ -267,6 +277,101 @@ esistono solo come echi.
 - **Terros non insegue** oltre la camera; **non uccide i caduti**; alla
   sconfitta del party: espulsi, affaticati, −12 ore di countdown (§8
   Contingenze).
+
+## 4. Canone nuovo di stasera (decisioni DM 2026-07-31)
+
+Cinque cose sono cambiate rispetto alla stampa precedente. Se hai il master
+vecchio in mano, **butta quelle pagine**.
+
+| Cosa | Prima | **Adesso** |
+|---|---|---|
+| **Piattaforma dell'Altare** | «Ø 6 m» (Terros da solo ne occupava 9 quadretti su 16) | **13,5 × 9 m = 9 × 6 quadretti**, angoli smussati. MAPPA T-6 ridisegnata |
+| **Spinta di Terros** | a ogni schianto a segno | **1 volta per round, la scegli tu**, su uno dei colpi andati a segno. Gratis, nessun AdO per nessuno |
+| **Chi resiste alla Spinta** | prova di FOR CD 25 | idem, **ma i nani con i piedi a terra sommano +4** (Stabilità nanica — non vale fluttuando) |
+| **«Radice a Terra» di Thorik** | prova contrapposta vs **Lotta +40** — matematicamente impossibile | **prova di FOR contro CD 25 statica**, con due bonus che i suoi indizi gli hanno seminato |
+| **§8c** | non esisteva | **manuale d'uso del guardiano**: cosa fa Terros contro Blast, tentacoli, lotta e sinergie |
+
+### La geografia della Spinta, in due righe
+
+L'Altare non è un disco simmetrico: è **lungo 9 quadretti e largo 6**.
+
+- **Asse lungo:** Terros ne occupa 3, restano **3 per lato**. La prima spinta
+  ti porta sul bordo di rune; la **seconda** ti butta nello zero-G.
+- **Asse corto:** margine di **1-2 quadretti**. È l'**asse letale**: di qui
+  **una sola spinta ti fa uscire**.
+- Chi esce **deriva** (niente 2d6: la parete è a ~25 m). Rientrare = volo,
+  oppure spinta da una superficie a metà velocità. Thorik ha Aegis Fang
+  Returning come gancio; **Tordek no** — per lui sono **due round fuori scena**.
+- ⚒️ **Ma Tordek ha «Ancoraggio della Montagna»** (Bracieri, 2/giorno, azione
+  **immediata**): annulla il movimento forzato **dopo** che hai annunciato
+  l'esito. Ha due «no» in tasca, e valgono **solo per sé** — non può ancorare
+  Thorik. Quando finiscono, l'arrocco dei 172 pf lo trova senza rete.
+
+### «Radice a Terra» — perché la CD è 25 e come ci si arriva
+
+È una **prova di Forza**: `d20 + modificatore di FOR` (Thorik ha FOR 20 → **+5**)
+contro **CD 25**. Non è contrapposta: la vecchia stesura la faceva tirare
+contro Lotta +40 ed era **impossibile** (massimo 27 contro minimo 41).
+
+| Elemento | Bonus |
+|---|---|
+| Thorik, FOR 20 | +5 |
+| **Azione preparata** «quando Terros riemerge», invece di inseguirlo nella pietra | **+4** |
+| **Lancia piantata** nelle crepe e peso addosso, invece che impugnata | **+4** |
+| Aiuto in azione (Tordek o Artemis) | +2 |
+
+**Con entrambi i gesti: +15 → serve 10+ (55%). Alla cieca: +7 → serve 18+ (15%).**
+
+> 🎯 **I due bonus sono esattamente i due indizi del suo handout**: l'aneddoto
+> di caccia di Aegis Fang (*«non era stato lui a raggiungerlo»* → non lo
+> insegui, lo **aspetti**) e l'immagine muta della Corona (*due mani sotto un
+> architrave che scende* → non spingi, **reggi**). Il seme che gli hai dato
+> ieri sera **vale 8 punti**. Se il giocatore descrive uno dei due gesti senza
+> citare l'indizio, **concedi il bonus lo stesso**: si premia il gesto, non la
+> citazione. E non dirgli mai «usa l'indizio» — se lo scopre da solo è la
+> scena della serata.
+>
+> Successo = Terros **inchiodato in superficie 1 round, niente rigenerazione**.
+> È la risposta all'arrocco dei 172 pf, ora che il Diapason è speso.
+
+### Se hanno dormito prima di entrare (probabile)
+
+**Il prezzo non è l'orologio: è Terros.** Tornano tutti i poteri 1/giorno
+(Trinità, Colpo dell'Alba Oscura, Firestorm, i 3 Quicken di Artemis), quindi
+scatta il ramo già previsto dal riquadro *Scalare lo scontro*: **Terros a 34 DV**
+(390 pf, attacchi +32) e **Scudo di Geodi già attivo quando la soglia si apre**.
+Riposando hanno dato tempo anche a lui — e lo vedono in faccia.
+
+L'orologio **non** è la leva: costa −12 h, ma la soglia critica resta lontana
+(sotto). **Non recitare un'urgenza che i numeri non sostengono**: mostra
+l'affresco, non minacciare la scadenza.
+
+### L'orologio di Hammerfist — registro dei riposi `[CANONE 2026-07-31]`
+
+Due tariffe, e una è un regalo che **i giocatori non devono sapere**:
+
+| Dove dormono | 8 ore costano |
+|---|---|
+| ovunque (Faerûn, Sottosuolo, Piano del Fuoco, Piano della Terra) | **−12 h** |
+| **Sala della Forgia Eterna** | **−4 h** — è un luogo divino, il tempo vi scorre più lento |
+
+> Non annunciare mai lo sconto. Se qualcuno nota che il timer è sceso meno del
+> previsto, la risposta sta nel mondo: *«Moradin non conta le ore come le
+> contano gli uomini.»*
+
+I riposi già giocati (Piano del Fuoco prima della piramide, Sala dopo il Piano
+del Fuoco) sono **a canone e già conteggiati**. Da stasera in poi:
+
+| Ramo | Al rito di Hella | In consegna all'ARC-08 |
+|---|---|---|
+| entrano da Terros **senza dormire** | 3g 16h | ≈ 3g 15h → **Fase 0 piena** |
+| **dormono** prima di Terros | 3g 04h | ≈ 3g 03h → **Fase 0 accorciata** (prima ondata già passata) |
+
+La soglia critica dei **2 giorni** (pannello velato su A8 + ARC-08 in Fase 0
+dura) è **fuori portata in entrambi i rami**: servirebbero altri due riposi
+ordinari. Registro completo, progressione dell'affresco A7 valore per valore e
+stato di consegna all'ARC-08: **`ARC07-DEF-2` §0-bis** (è il file che possiede
+l'orologio) e `ARC07-DEF-5`.
 
 
 \page
@@ -323,6 +428,8 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 | §6-bis | **Seme-Mercato di Varis** | quest personale di Artemis, **nel Tempio dopo la Sentinella** (indipendente) |
 | §7 | **Tempio di Mithral** | 7a salto gravitazionale co-op · 7b Sentinella + **risveglio pieno dei Bracieri** |
 | §8 | **BOSS: Terros l'Antico** (CR 15) | statblock 3.5, scenografia, coreografia, **tattiche-regia RHoD**, DPR, contingenze |
+| §8a-8b | **L'arrivo e il distacco** | la soglia, i primi sei secondi, l'Altare che si centra |
+| **§8c** | **Manuale d'uso del guardiano** | **cosa fa Terros quando gli arrivano addosso Blast, tentacoli, lotta e sinergie** — e cosa cambia se i PG hanno dormito |
 | §9 | **Rituale dello Smeraldo** | 3 fasi — scelta-costo di Thorik, sinergia di TUTTI, emersione di Durik |
 | §10 | **La Forgia Ricorda** | pannelli-conseguenza negli affreschi (Sala + Stanza della Corona) |
 | §11 | **Echo Ledger** | conseguenze a lungo termine del beat |
@@ -366,7 +473,9 @@ il PDF **Benedizioni di Moradin**.
 combinati di tutti e tre** (§9) → gli affreschi della Sala **e** della Stanza
 della Corona incidono un nuovo pannello (§10, "La Forgia Ricorda") → si apre
 la strada alla resurrezione di Hella (#3). Countdown Hammerfist a fine parte:
-**~3 giorni e 18 ore**.
+**~3g 20h** — o **~3g 08h** se hanno dormito prima di Terros. Le due tariffe
+del riposo (ordinario **−12 h**, Sala della Forgia **−4 h**) e il registro
+completo stanno in `ARC07-DEF-2` §0-bis.
 
 ---
 
@@ -385,7 +494,9 @@ la strada alla resurrezione di Hella (#3). Countdown Hammerfist a fine parte:
 | Sentinella: liberarsi dalla Magnetite — FOR (Thorik) | 28 | §7b |
 | Risveglio Bracieri — Volontà / Tempra | 20 / 22 | §7b |
 | Frequenza della Confusione — Intrattenere Canto (Anello +4) | 18 | §8 |
-| Terros: Push — FOR nega · Onda/Stalattiti/da lui — Riflessi | 25 · 22 | §8 |
+| Terros: **Spinta** — prova di FOR nega (**+4 ai nani a terra**; **1/round**, sceglie Terros) | 25 | §8 |
+| Terros: Onda Gravitazionale / Pioggia di Stalattiti — Riflessi | 22 | §8 |
+| **«Radice a Terra»** (Thorik inchioda Terros) — prova di FOR vs **CD statica** (non contrapposta) | 25 | §8 |
 | Rituale F2: Thorik Tempra/FOR (**16** se Tordek riesce) · Tordek TxC/Conc. · Artemis UMD/TxC | 26 · 25 · 25 | §9 |
 
 ### Iniziativa tipo & pf da tracciare
@@ -396,7 +507,10 @@ la strada alla resurrezione di Hella (#3). Countdown Hammerfist a fine parte:
 pf** (90 = si rifugia nel cristallo +4 CA). Xorn 52 pf (15 = scava via).
 
 ### Il giro di Terros, in breve (3.5: UNA azione per round)
-1. **Full-attack** 2 schianti +30 (2d10+10 + Push FOR 25) — la base.
+1. **Full-attack** 2 schianti +30 (2d10+10). **UNO** dei colpi a segno porta
+   la **Spinta** (3 m, prova di FOR CD 25, nani a terra +4) — gratis, la
+   scegli tu, **una sola volta per round**. Nessun attacco di opportunità
+   per nessuno.
 2. **Onda Gravitazionale** (poi ricarica 1d4): tutti "cadono" 9 m, Rifl 22.
 3. **Stalattiti** (ricarica 5-6/d6): 8d6 raggio 9 m, Rifl 22 ½ — *Artemis
    con azione preparata le disintegra (contatto CA 12)*.
@@ -1045,6 +1159,72 @@ finora la propria avidità nell'arco:
 > pagarlo caro (se è avido) — e in entrambi i casi la scelta **torna** più
 > avanti. Registra l'esito nell'**Echo Ledger** (§11).
 
+> ### ✅ CANONE GIOCATO (DM 2026-07-31) — la terza strada: PRESO, MAI TOCCATO
+>
+> **Cos'è successo davvero.** La gemma **è caduta da sola** dalla parete e,
+> pesantissima per la sua taglia, si è **conficcata nel pavimento** come una
+> punta di trapano — *«densa in un modo che le gemme non sono»*. Artemis **non
+> ha rifiutato** e **non ha accettato**: l'ha recuperata **senza toccarla a
+> mani nude** e l'ha fatta **mettere nello zaino di TORDEK**. Il Seme viaggia
+> col party, sigillato in una sacca che non è la sua.
+>
+> **Cosa ha rilevato Artemis** (Vista Potenziata + Sapienza Forgiata
+> dell'Anello): oggetto magico, **Trasmutazione + Ammaliamento**. Le due scuole
+> raccontano da sole cos'è, per chi sa leggerle: la **Trasmutazione** è
+> l'innesto che cresce e si radica; l'**Ammaliamento** è **la parte che parla**.
+> Un mercante non pianta una trappola: pianta un **venditore**.
+>
+> **La visione del bazar (giocata).** Prima ancora del contatto, ad Artemis è
+> arrivato **negli occhi della mente** il mercato di Varis: banchi, teli,
+> registri, la ricchezza ordinata di un posto dove tutto ha un prezzo scritto.
+> ⚠️ **La visione NON è il contratto**: è la **vetrina**. L'Ammaliamento serve
+> a far vedere la merce; il **Marchio si chiude solo col tocco**. Artemis ha
+> guardato la vetrina e non è entrato — ma adesso **sa cosa c'è dentro**, e
+> quello non si dimentica.
+>
+> **Stato meccanico — il Marchio NON è attivo.** Il vincolo si chiude **col
+> tocco** (*«la voce arriva col tocco della gemma»*, e Varis chiede di
+> incastonarla nell'Anello). Quindi, oggi:
+>
+> | | Stato |
+> |---|---|
+> | **Marchio di Varis** | ❌ **non attivo**. Varis **non** localizza Artemis, non ha crediti da riscuotere |
+> | **Frammento di Mercato** (lo sconto/+4) | ❌ non ottenuto: il premio si paga col tocco |
+> | **+1 morale del rifiuto** | ❌ non ottenuto: non ha rifiutato |
+> | **Il Seme** | ✅ **posseduto**, integro, tiepido, nello **zaino di Tordek** |
+>
+> **Come reagisce Varis (e perché è meglio così).** Il mercante **non sa** che
+> gli è successo. La sua esca non è stata né morsa né distrutta: è stata
+> **presa e messa da parte**, che per un mercante è la risposta più
+> inquietante di tutte — significa che il cliente ha capito il prezzo e **ha
+> deciso di decidere dopo**. Il Seme resta un'offerta aperta a tempo
+> indeterminato, e Varis, quando se ne accorgerà, la leggerà come una
+> **contro-mossa**: non un pollo, non uno sfuggito, ma **qualcuno che tratta**.
+> *(Aggiorna così la nota su Vatore al #4: non riconosce la firma di un
+> debitore, riconosce quella di un collega.)*
+>
+> **Il dettaglio che vale la campagna: è nello zaino di TORDEK.** Artemis non
+> ha resistito alla tentazione — l'ha **rimandata**, e nel farlo l'ha
+> **appoggiata sulla schiena di qualcun altro**. Tordek porta un innesto
+> planare tiepido, e **non sa cosa sia**. Non serve nessuna meccanica per
+> renderlo pesante: basta ricordarsene.
+>
+> - **Se Tordek lo tocca** (curiosità, inventario, un compagno che rovista):
+>   la voce di Varis arriva **a lui**, ricalibrata su un monaco nanico — non
+>   offre tesori, offre **certezze** («posso dirti dove sarà tuo fratello
+>   quando servirà»). Il Marchio si chiuderebbe su **Tordek**, non su Artemis.
+> - **Se lo tocca Artemis più avanti**: vale la riga «Prende la gemma» della
+>   tabella qui sopra, senza sconti — l'offerta non scade.
+> - **Se lo distruggono** (Sapienza Magica CD 20): vale la riga «Rifiuta», ma
+>   **tardi** — Varis ha già capito che è stato riconosciuto.
+>
+> **Semi da far germogliare (nessuna meccanica, solo memoria).** Lo zaino di
+> Tordek è **appena più caldo** degli altri quando lo posa. I Bracieri, che
+> hanno una coscienza e un carattere da vecchio fabbro, **non commentano** —
+> e quel silenzio, per chi lo nota, dice più di un avvertimento.
+>
+> → **Echo Ledger (§11): «Il Seme dorme nello zaino sbagliato».**
+
 > **Nota su Sal/Vatore (per il DM).** Questo marchio si intreccia col #4
 > (Viaggio a 1.000 anni fa), dove **Sal è presente come "Vatore"**: se Artemis
 > porta il Marchio di Varis, il DM può far riconoscere a Vatore la "firma" del
@@ -1190,10 +1370,14 @@ golem (~5.000 mo di frammenti di mithral).
 
 **Dati per il DM (non da leggere).** Camera **sferica**, Ø **60 m**, a
 **gravità zero** ovunque tranne l'**Altare della Forza** (piattaforma di
-mithral, **6 m**, gravità normale, rune verde smeraldo). Dormiente
-sull'Altare, **Terros**: **10 m** di mole stratificata (basalto, granito,
-marmo, adamantio), geologia vivente. Vedi **MAPPA T-6** (che ritrae la
-situazione **dal round 2 in poi**, ad Altare centrato).
+mithral, **13,5 × 9 m** = **9 × 6 quadretti** da 1,5 m con gli angoli
+smussati, gravità normale, rune verde smeraldo) `[CANONE — DM 2026-07-31;
+ERRATA: le vecchie stesure dicevano «Ø 6 m», misura in cui Terros da solo
+occupava 9 quadretti su 16]`. Dormiente sull'Altare, **Terros**: **10 m**
+di mole stratificata (basalto, granito, marmo, adamantio), geologia
+vivente — ma sulla griglia **occupa 3×3 quadretti** (Enorme, spazio 4,5 m):
+i 10 m sono l'altezza che vedono i PG, non l'impronta. Vedi **MAPPA T-6**
+(che ritrae la situazione **dal round 2 in poi**, ad Altare centrato).
 
 **Come ci si entra (canone DM 2026-07-30).** Nessuna porta da forzare,
 nessun enigma: il corridoio finisce in una **soglia circolare** di mithral
@@ -1364,9 +1548,26 @@ QUALITÀ / ATTACCHI SPECIALI (tutti 3.5, nel turno di Terros)
    terra/pietra (l'Altare CONTA come terra); −4 att/danno vs
    chi è in aria/volo. → dilemma per i PG: stabilità (Altare)
    vs evitare il bonus del boss (zero-G).
-2) PUSH / SPINGERE (Ex): a ogni schianto a segno, il bersaglio
-   fa FOR CD 25 o è spinto 3 m; in zero-G sbatte contro il muro
-   (2d6 contundenti).
+2) PUSH / SPINGERE (Ex) `[CANONE — DM 2026-07-31]`: UNA VOLTA PER
+   ROUND, a scelta di Terros, uno degli schianti andati a segno
+   porta con sé la spinta. NON costa nulla: cavalca l'attacco (nei
+   round in cui usa Onda/Stalattiti/Scudo non ci sono schianti,
+   quindi non c'è spinta). Terros NON si muove e NON provoca:
+   nessun attacco di opportunità da nessuna delle due parti — il
+   movimento forzato non ne provoca mai.
+   • Il bersaglio tira una PROVA DI FORZA (d20 + mod. FOR) CD 25
+     o è spinto 3 m in linea retta lontano da Terros. Non cade prono.
+   • ⚒️ I NANI CON I PIEDI A TERRA sommano +4 (Stabilità nanica:
+     vale sulle prove di caratteristica contro spinta e sgambetto,
+     MA solo stando saldi — non fluttuando nello zero-G).
+     Thorik sull'Altare +9 (serve 16+); nello zero-G +5 (serve 20).
+     Tordek sull'Altare +6 (serve 19+); nello zero-G +2 (mai).
+   • FUORI DAL BORDO: entri nello zero-G e DERIVI. I 2d6 contro la
+     parete valgono solo se sei già a meno di 3 m da essa (di norma
+     la parete è a ~25 m). Per rientrare: volo, oppure spinta da una
+     superficie in linea retta a metà velocità (§0-bis). Thorik ha
+     Aegis Fang Returning come gancio; TORDEK NON HA NIENTE — è lui
+     il vero bersaglio della Spinta, e sono due round fuori scena.
 3) EARTH GLIDE (Ex): come azione di movimento entra nell'Altare/
    parete e riemerge (fino a 6 m) alle spalle di un caster.
    *Move Earth* lo stordisce (Tempra CD 15) e lo blocca 1 round.
@@ -1394,13 +1595,34 @@ C) SCUDO DI GEODI (standard; ricarica 1d3 round): solleva lastre
    frantumi lo scudo e lascia Terros FRASTORNATO per il round di
    Thorik.
 
-CONTRO-MOMENTO (Thorik, "Radice a Terra"): quando Terros usa
-   Earth Glide per sfuggire/ricaricarsi, Thorik può conficcare
-   Aegis Fang nelle crepe con una PROVA DI FORZA CONTRAPPOSTA
-   (Thorik +FOR vs Lotta +40 di Terros — usa Aiuto e la
-   Benedizione): se vince, blocca Terros in superficie 1 round
-   (niente rigenerazione), attirando su di sé gli schianti. È
-   la barriera inamovibile del party.
+CONTRO-MOMENTO (Thorik, "Radice a Terra") `[CANONE — DM 2026-07-31,
+   ERRATA]`: quando Terros usa Earth Glide per sfuggire/ricaricarsi,
+   Thorik conficca Aegis Fang nelle crepe e lo inchioda in superficie
+   per 1 round (NIENTE RIGENERAZIONE), attirando su di sé gli schianti.
+   È la barriera inamovibile del party — ed è la risposta all'arrocco
+   dei 172 pf ora che il Diapason è speso.
+   ► ERRATA: la vecchia stesura chiedeva una prova CONTRAPPOSTA vs
+     Lotta +40. Era ingiocabile (Thorik massimo 27 contro minimo 41:
+     nessuna combinazione di dadi vince). Si risolve invece con una
+     PROVA DI FORZA (d20 + mod. FOR) contro CD 25 STATICA — stessa
+     soglia della Spinta, stessa famiglia di manovra.
+   ► COME SI ARRIVA A FARLA (i due indizi degli artefatti, §13):
+     | Elemento | Bonus |
+     |---|---|
+     | Thorik, FOR 20                                        | +5 |
+     | AZIONE PREPARATA "quando Terros riemerge" invece di    | +4 |
+     |   inseguirlo (indizio di Aegis Fang: «non era stato    |    |
+     |   lui a raggiungerlo»)                                 |    |
+     | LANCIA PIANTATA e peso addosso, invece che impugnata   | +4 |
+     |   (indizio della Corona: due mani sotto un architrave) |    |
+     | Aiuto in azione (Tordek o Artemis)                     | +2 |
+     Con entrambi gli indizi colti: +15 → SERVE 10+ (55%).
+     Senza indizi, alla cieca: +7 → serve 18+ (15%).
+     ⚠️ NON aggiungere la Stabilità nanica: vale per RESISTERE a una
+     spinta, non per inchiodare qualcun altro.
+   ► La differenza fra 15% e 55% è il premio per aver letto gli hint.
+     Se il giocatore descrive UNO dei due gesti senza nominarlo,
+     concedi il bonus lo stesso: si premia il gesto, non la citazione.
 
 TALENTI: Attacco Poderoso, Incalzare, Fendente Poderoso, Spinta
    Migliorata, Critico Migliorato (schianto), Spaccare Migliorato,
@@ -1454,7 +1676,7 @@ R4+: alterna Earth Glide mordi-e-fuggi, Onda e Scudo. Sotto il
 |---|---|---|
 | **Thorik** (Aegis Fang +21) | ~18 dopo RD 10 | serve 5+; 1d10+7+3d6 sacro ≈ 28, −RD 10 |
 | **Tordek** (Raffica +12/+12/+7/+2) | ~12 dopo RD 10 | la RD morde il monaco; i danni **sonici** (×1,5) e il Pugno Frana sono il suo vero contributo |
-| **Artemis** (Blast +16 vs **contatto 8**) | ~33; **~49 in modalità sonica** | colpo automatico; **star DPS designato** |
+| **Artemis** (Blast +16 vs **contatto 8**) | ~33; **~49 in modalità sonica**; **~63** nel round quickened | colpo automatico; la RD **non** si applica (abilità magica); **star DPS designato** — regole della modalità sonica in **§8c-1** |
 | **Party** | **~65-75/round** | Terros 345 pf → **~5 round** ✓ epico, non slog |
 
 | Bersaglio di Terros | Danno medio/round | Letalità |
@@ -1525,8 +1747,8 @@ R4+: alterna Earth Glide mordi-e-fuggi, Onda e Scudo. Sotto il
 | **Fuggono a metà scontro** | Terros NON insegue oltre la camera (è vincolato all'Altare). Ma la Forgia registra: al ritorno lo trovano **guarito del tutto** e lo Scudo di Geodi parte già attivo. Il countdown di Hammerfist, intanto, è sceso. |
 | **Distruggono/danneggiano l'Altare** | Impossibile scalfirlo (mithral consacrato, Durezza 20, autoriparante) — ma il TENTATIVO è sacrilegio: Terros entra in **furia** (+2 att/danni, −2 CA) e i Bracieri di Tordek **si raffreddano** di disapprovazione (nessun malus meccanico: solo il gelo del vecchio fabbro nella mente). |
 | **Qualcuno precipita nell'oceano di roccia (fuori dal Tempio)** | Non è lava: è **roccia semi-liquida**. Affonda lentamente (3 round per sommersione): Nuotare CD 20 (faticoso) o corda dei compagni; sommerso = soffocamento + 2d6 schiacciamento/round. Drammatico, non istantaneamente letale. |
-| **Vogliono riposare dentro il Tempio prima del boss** | Possibile (l'Anticamera post-Sentinella è sicura), MA il countdown di Hammerfist scorre: mostra l'orologio (§0). Ogni riposo qui è ore rubate alla montagna che brucia. |
-| **I PG CADONO (sconfitta contro Terros)** | Niente TPK gratuito: il voto di Terros è **custodire**, non massacrare. I caduti vengono **espulsi** — la gravità del Nodo li sputa fuori e si risvegliano sulla riva dell'Oceano di Roccia, interi ma **segnati**: 1 livello di affaticamento che nessun riposo qui rimuove, e il countdown di Hammerfist è sceso di **−12 ore**. Nella Sala, l'affresco A5 mostra ora un **pannello velato** (la Forgia registra anche le sconfitte). Possono ritentare: Terros li aspetta, guarito. *La sconfitta costa tempo e orgoglio, non la campagna.* |
+| **Vogliono riposare dentro il Tempio prima del boss** | Possibile (l'Anticamera post-Sentinella è sicura), e **probabile**. Costa **−12 h** di orologio (tariffa ordinaria, `ARC07-DEF-2` §0-bis) — ma il prezzo vero **non è il timer**: è che **Terros ti arriva a risorse piene**, quindi scatta il ramo «party straripante di risorse» del riquadro *Scalare lo scontro* (**§8c-4**). Mostra l'affresco A7, non minacciare la scadenza: a 3g 08h la soglia critica è ancora lontana. |
+| **I PG CADONO (sconfitta contro Terros)** | Niente TPK gratuito: il voto di Terros è **custodire**, non massacrare. I caduti vengono **espulsi** — la gravità del Nodo li sputa fuori e si risvegliano sulla riva dell'Oceano di Roccia, interi ma **segnati**: 1 livello di affaticamento che nessun riposo qui rimuove, e il countdown di Hammerfist è sceso di **−12 ore** (tariffa ordinaria). Nella Sala, l'affresco A5 mostra ora un **pannello velato** (la Forgia registra anche le sconfitte). Possono ritentare: Terros li aspetta, guarito. *La sconfitta costa tempo e orgoglio, non la campagna.* |
 
 **Durata attesa 4–6 round. XP** ~5.400/PG (CR 15, 3 PG) `[verif. ✓ ERRATA/TESORO-WBL 2026-07-23]`.
 **Loot**: **Geode Titanico** (5.000 mo, cristalli d'adamantio) + **Cuore di
@@ -1534,6 +1756,228 @@ Terros** (oggetto meraviglioso: componente da **20.000 mo**, o base per un
 *Amuleto di Armatura Naturale +5*) — l'occhio di Artemis ci si posa subito.
 
 ---
+
+### 8c. QUANDO ARRIVA ADDOSSO A TERROS — manuale d'uso del guardiano `[CANONE — DM 2026-07-31]`
+
+> **Cos'è questa sezione e cosa NON è.** Non è un prontuario di combo per i
+> giocatori: è la **lista delle cose che il party può tirare fuori e cosa fa
+> Terros quando succede**. Ogni voce è scritta nell'ordine: *cosa arriva →
+> quanto fa male davvero → come reagisce il guardiano*. Serve a non dover
+> improvvisare la risposta a tavolo aperto, non a suggerire tattiche a nessuno.
+
+#### 8c-1. Artemis — il Blast, e i tentacoli neri
+
+**Cosa arriva.** Eldritch Blast **7d6** + 1d6 fuoco + 1d6 freddo (*Dual Flame
+Blessing*), tocco a distanza **contro CA di contatto 8**. Con *Eldritch Spear*
+la gittata è **75 m**: dentro una sfera di 60 m, **Artemis colpisce da
+ovunque a ovunque**. Con *Quicken Spell-Like Ability* (**3/giorno**) ne tira
+**due** in un round.
+
+| Fatto | Cosa comporta per te |
+|---|---|
+| È un'**abilità magica**, non un'arma | **la RD 10/— non la ferma**. Non toglierne 10: è l'unico danno del party che entra pieno |
+| Colpisce vs **contatto 8** | non tirare per capire se colpisce: colpisce. Tira solo per i danni |
+| ~**33** a colpo · ~**63** nel round quickened | è lo **star DPS designato**, previsto dal design |
+
+**«Modalità sonica» — la regola che mancava.** Le tabelle DPR citavano un
+`~49 in modalità sonica` senza definirlo da nessuna parte. Definizione a
+canone: Artemis può far passare il Blast attraverso l'**Anello** intonando la
+**Frequenza della Confusione** (che il party possiede, §6) — **azione
+veloce**, il danno diventa **sonico**, Terros lo subisce **×1,5** (~49).
+**Costo:** è la stessa azione veloce del Quicken → **o** un blast sonico
+**o** due blast normali, mai entrambi. Se il party non avesse la Frequenza,
+la modalità non esisterebbe.
+
+**Come reagisce Terros.** Non spreca schianti contro chi vola (**−4**). I
+suoi due soli agganci su Artemis sono il **Lancio di roccia** (+19, 18 m) e
+soprattutto la **Pioggia di Stalattiti**, che si centra **dove vuoi tu**,
+anche a 40 m. ⚠️ **Se Artemis fa il kiting a distanza di sicurezza, centragli
+addosso le stalattiti almeno un round su due**: altrimenti diventa
+intoccabile e la scena si spegne. Non è cattiveria, è l'unica risposta che il
+mostro ha.
+
+**Chilling Tentacles (i «tentacoli neri»).** Invocazione *Greater*: *black
+tentacles* a **CL 13** + **2d6 freddo/round** a chiunque sia dentro. Area
+**raggio 6 m** (cerchio da 12 m). Presa dei tentacoli **+21**. I tentacoli
+sono **immuni a ogni danno**. `[INFERRED: durata 1 round/livello]`
+
+| Interazione | Verdetto per il DM |
+|---|---|
+| Presa **+21** vs **Lotta +40** di Terros | **inutile**: serve il 20 naturale (5%). Se esce, concedi il momento — la montagna che inciampa — ma non è una tattica |
+| **2d6 freddo/round** | **funziona e non si può parare**: niente TS, niente tiro per colpire, ed è energia → **la RD non la ferma**. ~7/round |
+| Contro la **rigenerazione 15/round** | è qui il valore vero: la rigenerazione effettiva **scende da 15 a 8** finché Terros è nel campo |
+| **Earth Glide** | **la tua risposta**: Terros sprofonda nell'Altare, è *dentro* la pietra, fuori dall'area, e riemerge dove vuole. Il campo non lo segue nel sasso |
+| **Zero-G** | i tentacoli nascono da una **superficie**: nel vuoto non c'è nulla. Si possono ancorare **solo sull'Altare** (o sulla parete) |
+| **Onda Gravitazionale** | non dissipa il campo: i tentacoli si rovesciano verso il nuovo «sotto». Immagine gratis, nessun effetto |
+
+⚠️ **Il campo colpisce anche il party, e tu non devi avvisarli.** Presa +21
+contro Thorik (~+18) e Tordek: agguantati spesso, e **agguantato** significa
+niente attacco completo, niente muro di scudi, −2 DES alla CA — mentre
+incassa due schianti da 2d10+10. **Un campo di tentacoli sull'Altare fa
+saltare anche il rito del §9.** Se Artemis lo cala sui compagni, lascia che
+succeda: è una sua scelta, ed è il tipo di errore che si ricorda.
+*L'unico piazzamento buono esiste* (sulla metà d'Altare occupata da Terros,
+con i due nani arretrati oltre i 6 m di raggio) — se lo trovano da soli, se
+lo sono guadagnati.
+
+**Le altre invocazioni, e cosa devi sapere prima che le usino.**
+
+| Invocazione | Contro Terros |
+|---|---|
+| *Word of Changing* (**Baleful Polymorph**) | **morta**: Terros è immune agli **effetti di forma**. Dillo al giocatore **prima** che la bruci — non è un gotcha, è informazione che il personaggio ha |
+| *Dark Foresight* | funziona: +2 intuizione a CA e Riflessi, mai colto alla sprovvista. È il TS Riflessi contro Onda e Stalattiti |
+| *Flee the Scene* | la sua uscita di sicurezza: azione di movimento, rompe la presa, attraversa lo zero-G. Il doppio illusorio **inganna davvero** Terros in volo (la percezione tremorica legge solo la pietra) |
+| *See the Unseen* · *Voidsense* | inerti qui |
+
+#### 8c-2. Tordek — l'Ancoraggio contro la Spinta, e perché non può lottare
+
+⚒️ **Preparati a questa, perché è già sulla sua scheda e cambia il duello.**
+I Bracieri completi hanno **Ancoraggio della Montagna (Su), 2/giorno, azione
+IMMEDIATA**: *«quando verresti spinto/mosso contro volontà, diventi
+inamovibile — ignori il movimento forzato, +4 al TS contro l'effetto
+scatenante»* (`05_Bracieri_Gemelli_Scheda_PG_Completa.md` §5).
+
+**È il contro esatto della Spinta**, e arriva **dopo** che hai annunciato il
+risultato — azione immediata, quindi il giocatore può bruciarlo a colpo già
+descritto. Conseguenze pratiche:
+
+- Tordek è il bersaglio designato della Spinta (niente volo, niente lancia
+  Returning) **ma ha due «no» in tasca**. Se lo spingi al round 1, probabilmente
+  ne consuma uno subito: **quello è il momento in cui il combattimento diventa
+  una gara di risorse**, ed è giusto così.
+- **Vale solo su sé stesso**: non può ancorare Thorik. Se sbatti fuori il tank,
+  Tordek può solo guardare.
+- Al terzo tentativo l'Ancoraggio è finito. **Tienilo a mente prima di
+  "sprecare" le prime due Spinte su di lui**: se lo prosciughi presto,
+  l'arrocco dei 172 pf lo trova senza rete.
+- Nella fiction è la stessa immagine dell'indizio della Corona a Thorik (le due
+  mani sotto l'architrave): **i nani non schivano, reggono**. Falli sentire
+  parenti.
+
+#### 8c-2b. La lotta: perché Tordek non può, e perché Terros non deve
+
+**La regola prima di tutto: in 3.5 NON esiste alcun limite di taglia alla
+lotta.** La taglia entra solo come modificatore (Enorme **+8**). Quindi
+Tordek **può legalmente provarci** — e va detto così al tavolo, perché il
+muro non è un divieto del DM, è aritmetica sulla scheda.
+
+| | Lotta |
+|---|---|
+| **Tordek** (Guerriero 4/Monaco 9 → BAB +10, FOR 14, taglia +0) | **+12** · con *Lotta Migliorata* **+16** |
+| **Terros** | **+40** |
+
+- Tordek massimo **36**. Terros minimo **41**. **Non esiste tiro in cui vince.**
+- **Ingrandito** (Grande: FOR 16, taglia +4) → **+21**: massimo 41 contro
+  minimo 41, e **le parità vanno al modificatore più alto**. **Ancora
+  impossibile.** Servirebbe la taglia Mastodontica.
+
+> **⚠️ TERROS NON INIZIA MAI UNA LOTTA. Decisione di design, applicala.**
+> Rovesciati, i numeri sono automatici: tocco +30 contro CA di contatto ~20,
+> poi +40 contro +16. Tordek agguantato non ha uscite, e Terros gli
+> infliggerebbe **2d10+10 a ogni prova**, senza dover colpire. Sarebbe un
+> bottone che uccide un PG in due round e chiude male la serata.
+> **E non è nemmeno in personaggio:** il suo strumento è la **Spinta**, che
+> *allontana*. Lottare *avvicina*, ed è l'opposto del voto (liberare l'Altare).
+> **Se sono i PG ad aprire la porta**, Terros può rispondere per le rime **una
+> volta sola**, poi lascia andare: *«La collina chiude la mano attorno al tuo
+> braccio, e per un istante capisci cosa significa che una montagna ti abbia
+> notato.»* Un round di terrore, non una condanna.
+
+**E la spallata coordinata dei 172 pf?** Spinta = prova di Forza
+contrapposta; Terros difende con **+18** (FOR +10, Enorme +8 — *Spinta
+Migliorata* è un bonus di chi **inizia**, quindi in difesa non se lo somma:
+non lasciartelo contestare al tavolo). Tordek in carica con Aiuto arriva a
+**+6** → **vince il 7%**. Resta come colore, ma **non è più la risposta
+all'arrocco: la risposta è «Radice a Terra»** (§8 statblock), che è stata
+riportata a CD 25 statica proprio per questo.
+
+#### 8c-3. Le sinergie degli artefatti — cosa cambia e cosa no
+
+**Due dati di Terros azzoppano metà delle clausole: è di allineamento
+Neutrale, e la sua RD è 10/—.**
+
+| Sinergia | Effetto reale su Terros |
+|---|---|
+| **S1 — Paradox Blessing** (Corona+Anello): +1 CA schivare vs **Legali** entro 3 m | ❌ **inerte**: Terros è Neutrale |
+| **S2 — Corona+Anello attiva**: Visione Planare + dissolvi illusioni | ⚠️ nessuna illusione. Ma concedi che la **Visione Planare** mostri Terros **dentro la pietra** durante l'Earth Glide, negandogli l'agguato per un round `[INFERRED — ruling]` |
+| **S3 — Colpo dell'Alba Oscura** (Aegis Fang+Anello, 1/giorno) | ✅ +2 attacco, +2d6 sacro. I sacri stanno **sopra** l'unica sottrazione della RD → entrano interi (+7). Vale il massimo **quando è alzato lo Scudo di Geodi** (CA 30) |
+| **S4 — Trinità Divina** (i tre portatori entro 9 m, una azione di movimento a testa) | vedi la scomposizione qui sotto |
+
+**La Trinità Divina, clausola per clausola.**
+
+| Clausola | Su Terros |
+|---|---|
+| Immunità a **paura e charme** | ❌ **inerte**: Terros non ha un solo effetto di paura o mentale |
+| **+4 sacro ai TS** | ✅✅ **l'unico motivo per cui vale**: Riflessi 22 (Onda, Stalattiti), Forza 25 (Spinta) |
+| **+2 CA sacro** | ⚠️ quasi cosmetico: attacca a **+30**, colpisce comunque |
+| I colpi **superano la RD come Buono/Legale** | ❌ **inerte**: la RD è **10/—**, non la supera nulla. **È la clausola su cui conteranno: chiariscila prima che brucino la carta per questo** |
+| **Aura di Timore** (Vol CD 20, 18 m) | ✅ gli elementali **non** sono immuni al mentale: Terros ha Vol +12 → **fallisce il 35%** e resta **Scosso** (−2 anche alla Lotta contrapposta) |
+
+> **Sintesi da tenere a mente mentre arbitri: contro Terros la Trinità è uno
+> scudo di tiri salvezza, non un potenziamento del danno.** Se al tavolo se la
+> vendono come «adesso gli passiamo la RD», correggili subito — meglio la
+> delusione prima che l'accusa di aver barato dopo.
+>
+> **E il conto che nessuno fa:** la Trinità è **1/giorno**, dura **5 round**,
+> e il rito del §9 chiede a Thorik **Tempra CD 26 ogni round per tre round**.
+> Se la accendono negli ultimi round dello scontro e Terros cade in fretta, i
+> round residui **traboccano nel rito**. Non suggerirlo. Ma se ci arrivano da
+> soli, concedilo pieno: è una giocata bellissima.
+
+#### 8c-4. Se hanno dormito prima di entrare
+
+Il riposo costa **−12 h** di countdown (§0), ma la conseguenza che ti riguarda
+è un'altra: **tornano tutti i poteri 1/giorno** — Trinità, Colpo dell'Alba
+Oscura, Firestorm, Ombra di Maschera, Luce di Lathander, i 3 Quicken di
+Artemis. Arrivano a **risorse piene**, cosa che le tabelle DPR non assumono.
+
+**Allora usa il ramo già previsto dal riquadro *Scalare lo scontro*:** Terros
+**avanzato a 34 DV** (390 pf, attacchi +32, CD +1) e **Scudo di Geodi già
+attivo all'ingresso**. Non è una punizione per aver riposato: è ciò che tiene
+lo scontro sui 4-6 round invece che su 3. E ti regala l'immagine giusta —
+**riposando hanno dato tempo anche a lui**: quando la soglia si apre, il
+guardiano è **già in piedi, già schermato, già in attesa**. Il prezzo del
+sonno lo vedono in faccia prima che sull'affresco.
+
+**Orologio, estratto** `[CANONE — DM 2026-07-31]`. Il registro completo dei
+riposi, con le tariffe e la progressione dell'affresco A7, vive in
+**`ARC07-DEF-2` §0-bis**, che è il file che possiede l'orologio: se i numeri
+divergono, vale quello.
+
+Le due tariffe: **riposo ordinario −12 h** (Faerûn, Sottosuolo, Piano del Fuoco,
+Piano della Terra) · **riposo nella Sala della Forgia Eterna −4 h** (la Sala è
+un luogo divino, il tempo vi scorre più lento — i giocatori **non lo sanno**).
+
+| Ramo | Prima di Terros | Al rito di Hella | In consegna all'ARC-08 |
+|---|---|---|---|
+| **Entrano senza dormire** | 3g 20h | **3g 16h** | ≈ 3g 15h |
+| **Dormono prima di Terros** (probabile) | **−12 h** | **3g 04h** | ≈ 3g 03h |
+
+La soglia dei **2 giorni** (`ARC07-DEF-2` §8, pannello velato su A8 + ARC-08 in
+Fase 0 dura) resta **lontana in entrambi i rami**: servirebbero altri due riposi
+ordinari per avvicinarla. **Quindi non recitare un'urgenza che i numeri non
+sostengono.** Il prezzo del riposo qui **non è il timer: è Terros**, che ti
+arriva a risorse piene. Mostra l'affresco, non minacciare l'orologio.
+
+---
+
+> ### ✅ CANONE GIOCATO (DM 2026-07-31) — TERROS È CADUTO
+>
+> Il party è entrato nella camera **senza aver riposato** (niente ramo «34 DV»:
+> Terros è stato affrontato al profilo pieno standard) e **ha vinto**. Il
+> guardiano si è sbriciolato sull'Altare, lo Smeraldo è emerso dal torace, e
+> l'Altare è sceso a livello del pavimento. Il rito del §9 è stato giocato
+> subito dopo (vedi il blocco lì).
+>
+> **Conseguenze già maturate:**
+> - **Loot dell'arco disponibile**: Geode Titanico (5.000 mo) + **Cuore di
+>   Terros** (20.000 mo) + residuo golem + geodi.
+> - Sbloccata la condizione del **TODO «Diventare una Collina»** sui Bracieri
+>   Gemelli (`PG/Artefatti/Artefatti-Pg/Tordek/05_Bracieri_Gemelli_Scheda_PG_Completa.md`):
+>   Tordek ha dimostrato il proprio valore contro il guardiano. **Il potere va
+>   ora scritto sulla scheda** — finché il TODO è aperto non esiste al tavolo.
+> - L'ultimo suono di Terros è stato di **assenso**, non d'odio (il party aveva
+>   curato i Cristalli, §6).
 
 ## §9 — IL RITUALE DELLO SMERALDO: «L'Incudine del Mondo» (volontà + poteri di TUTTI)
 
@@ -1568,6 +2012,45 @@ L'Altare porta la gravità a livelli intollerabili. Thorik si inginocchia.
 > **Regia (asimmetria).** Thorik **non sa** che la presenza verde è Hella; per
 > la giocatrice di Hella è uno dei suoi echi (§1). **Non spiegarlo finché non
 > torna Hella (#3).**
+
+> ### ✅ CANONE GIOCATO (DM 2026-07-31, rettifica) — scelta B: il PESO NEL CORPO, e lo prende TORDEK
+>
+> **Nessun sacrificio materiale.** Il bottino dell'arco è **intatto**: Geode
+> Titanico, **Cuore di Terros**, residuo golem e geodi restano al party, e
+> nessuno si è spogliato dell'equipaggiamento. Il party **non** entra povero a
+> Hammerfist.
+>
+> ⚠️ **Deviazione dal modulo, voluta: il Peso l'ha accettato TORDEK, non
+> Thorik.** La Fase 1 era scritta per il portatore della Corona; al tavolo si è
+> inginocchiato il monaco. *(Se al tavolo era invece Thorik, questa è l'unica
+> riga da correggere, insieme a `state.md` §1.)*
+>
+> | | Effetto permanente |
+> |---|---|
+> | **TORDEK** | **−2 DES** e **+2 COS**, permanenti. Le articolazioni hanno fatto lega con la pietra |
+> | **Thorik** | nessun cambiamento nuovo (resta il **−2 COS** più vecchio, di un'altra scena) |
+> | **Bottino** | ✅ **integro**, Cuore di Terros compreso |
+>
+> **Perché funziona meglio così, e come giocarlo.** Tordek è il monaco: la DES
+> è la sua statistica di mestiere (CA senz'armatura, Riflessi, Raffica). Perdere
+> 2 DES per guadagnare 2 COS significa che **ha barattato la propria agilità
+> con la capacità di reggere** — cioè ha smesso di essere quello che schiva ed è
+> diventato quello che sta. Per un monaco è una piccola morte, e per il
+> portatore dei **Bracieri Gemelli** è la cosa più coerente che potesse
+> succedere: *«Incudine e Martello»*, e l'incudine non schiva.
+>
+> - **Ricalcola sulla scheda**: CA senz'armatura, Riflessi, iniziativa, prove di
+>   DES — tutti **−1**. Pf massimi **+1/DV** e Tempra **+1**.
+> - **I Bracieri non lo lodano.** Un vecchio fabbro non fa complimenti a chi ha
+>   fatto la cosa giusta: la dà per scontata. Al massimo, molto dopo, una riga
+>   secca — *«Adesso pesi.»*
+> - **La presenza verde** (§9 Fase 1) si è stretta alle spalle di **Tordek**:
+>   è Hella, e lui **non lo sa**. Per la sua giocatrice è un eco. Non spiegarlo
+>   fino al #3 — e quando lo spiegherai, ricordati che è **lui** che ha sentito
+>   quelle mani, non Thorik.
+> - **Thorik ha guardato senza poter fare niente.** Il portatore della Corona,
+>   quello che regge sempre, questa volta **non ha retto lui**. Vale una riga
+>   nella catarsi davanti ad A3 (master #2, §4).
 
 ### FASE 2 — Forgiare la Connessione (3 round, TUTTI insieme) ⭐
 > **QUESTO è il cuore meccanico ed emotivo che era andato perso nella
@@ -1931,8 +2414,10 @@ futuro). *Lista completa degli 8 affreschi e del gancio → master #2.*
 > nebbia della parete di Nord-Ovest, la quarta figura ha ora un contorno. La
 > Corona di Thorik pesa di una gemma in più.*
 
-Countdown Hammerfist: **~3 giorni e 18 ore** (~90 ore). Il party è esausto:
-Moradin consiglia un riposo lungo. **Poi**: gli affreschi e la Stanza della
+Countdown Hammerfist: **~3g 20h**, o **~3g 08h** se hanno dormito prima di
+Terros (registro completo: `ARC07-DEF-2` §0-bis). Il party è esausto: Moradin
+consiglia un riposo lungo — **nella Sala costa solo −4 h**, e loro non sanno
+perché. **Poi**: gli affreschi e la Stanza della
 Corona (master #2), quindi la **resurrezione di Hella** (master #3).
 
 **Tesori ordinari della parte**: mithral grezzo + geodi (~5.200 mo) + Geode
@@ -2115,33 +2600,46 @@ COL →  A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R  S  T
 
 ```
 ════════════════════════════════════════════════════════════════════════
- CAMERA CENTRALE — sfera Ø 60 m · ZERO-G ovunque TRANNE l'Altare (6 m)
+ CAMERA CENTRALE — sfera Ø 60 m · ZERO-G ovunque TRANNE l'ALTARE
+ ALTARE 13,5 × 9 m = 9 × 6 quadretti da 1,5 m, angoli smussati
  Vista: piano equatoriale attorno all'Altare (24 col × 16 righe · 1,5 m)
 ════════════════════════════════════════════════════════════════════════
-COL →  A B C D E F G H I J K L M N O P Q R S T U V W X
-01    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️   ← muro curvo: crash 2d6 se spinti (Push)
+COL → A B C D E F G H I J K L M N O P Q R S T U V W X
+01    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️   ← muro curvo: crash 2d6 solo se sei già a <3 m
 02    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️
-03    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️      ZONA ZERO-G
+03    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️        ZONA ZERO-G (Ø 60 m)
 04    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️   ← 🔮 Artemis vola qui (Terros −4 vs aria)
 05    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️
-06    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟡🟡🟡🟡🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️   ← 🟡 = bordo Altare (rune smeraldo)
-07    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟩🟩🟩🟩🟩🟩🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️
-08    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟩🟩🟩⬛⬛🟩🟩🟩🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️   ← ⬛ = TERROS (init: sull'Altare)
-09    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟩🟩🟩⬛⬛🟩🟩🟩🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️
-10    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟩🛡️🟩🟩🟩🥋🟩🟩🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️   ← 🛡️Thorik  🥋Tordek (sull'Altare)
-11    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟩🟩🟩🟩🟩🟩🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️
-12    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟡🟡🟡🟡🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️   ← ALTARE Ø 6 m = gravità normale
+06    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟡🟡🟡🟡🟡🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️   ← 🟡 bordo di rune: ci finisci con la 1ª spinta
+07    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟩🟩🟩🟩🟩🟩🟩🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️
+08    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟩🟩⬛⬛⬛🥋🟩🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️   ← ⬛ TERROS (Enorme, 3×3 quadretti)
+09    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟩🛡️⬛⬛⬛🟩🟩🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️   ← 🛡️ Thorik   🥋 Tordek (sull'Altare)
+10    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟩🟩⬛⬛⬛🟩🟩🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️
+11    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🟡🟡🟡🟡🟡🟡🟡🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️   ← ALTARE 13,5 × 9 m (9×6 quadretti) = gravità normale
+12    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️
 13    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️
-14    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️      Earth Glide: Terros
-15    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️      entra/esce dall'Altare
+14    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️        Earth Glide: Terros
+15    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️        entra/esce dall'Altare
 16    🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️🌫️
 ════════════════════════════════════════════════════════════════════════
 LEGENDA · 🟩 Altare calpestabile (grav. normale) · 🟡 bordo/rune smeraldo
-⬛ Terros (Enorme, 4,5 m) · 🛡️ Thorik · 🥋 Tordek · 🔮 Artemis · 🌫️ ZERO-G
-DILEMMA: sull'Altare = Earth Mastery +1 per Terros MA stabilità e no-Onda-in-
-aria; in zero-G = eviti Earth Mastery MA Push ti sbatte al muro (2d6) e ti
-serve volo/Equilibrio. Artemis in 🌫️ = quasi intoccabile (−4 boss) = star DPS.
-Terros NON vola: tienilo in zero-G → perde la rigenerazione e fatica.
+⬛ Terros (Enorme, 4,5 m = 3×3) · 🛡️ Thorik · 🥋 Tordek · 🔮 Artemis · 🌫️ ZERO-G
+────────────────────────────────────────────────────────────────────────
+⚙️ GEOGRAFIA DELLA SPINTA (3 m = 2 quadretti, 1/round — vedi §8 statblock)
+  ASSE LUNGO (E-O, 9 quadretti): Terros ne occupa 3, restano 3 per lato.
+    La 1ª spinta ti porta sul bordo 🟡; la 2ª ti butta nello zero-G.
+  ASSE CORTO (N-S, 6 quadretti): margine 1-2 quadretti. È l'ASSE LETALE:
+    di qui una sola spinta ti fa uscire. I giocatori lo imparano al round 2.
+  ↳ Questa asimmetria È il posizionamento: tenere il fianco corto verso
+    Terros è l'errore che paga il tank.
+────────────────────────────────────────────────────────────────────────
+DILEMMA DELL'ALTARE (ha DUE lati, non uno):
+  SULL'ALTARE  = Earth Mastery +1 per Terros contro di te,
+                 MA i due nani hanno +4 di Stabilità contro la Spinta.
+  IN ZERO-G    = eviti l'Earth Mastery, MA perdi del tutto la Stabilità
+                 (Tordek non resiste più a nessuna spinta) e ti serve volo.
+  Artemis in 🌫️ = quasi intoccabile (−4 al boss) = star DPS.
+  Terros NON vola: tienilo in zero-G → perde la rigenerazione e fatica.
 ────────────────────────────────────────────────────────────────────────
 ⚠️ QUESTA GRIGLIA È LO STATO DAL ROUND 2 (Altare già centrato). Al round 1
 l'Altare è ATTRACCATO alla soglia nord e si stacca col risveglio (§8a-8b).

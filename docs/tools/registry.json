@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 39,
+  "tool_count": 43,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -1594,6 +1594,88 @@
       ]
     },
     {
+      "id": "build_chapter_marks",
+      "path": "scripts/build_chapter_marks.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/build_chapter_marks.py --all",
+      "summary": "Genera i fregi di capitolo in SVG: due serie distinte (campagna per arco, drappo per capitolo), medaglioni monocromatici originali disegnati con primitive geometriche.",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--serie",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": [
+            "campagna",
+            "drappo"
+          ],
+          "repeatable": false,
+          "desc": "Quale serie generare."
+        },
+        {
+          "name": "-o/--out",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cartella di destinazione (default: quella canonica della serie)."
+        },
+        {
+          "name": "--all",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Entrambe le serie, nei posti canonici."
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "path": "STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/tavole/fregi/fregio-*.svg",
+          "kind": "svg",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "docs/assets/fregi/fregio-*.svg",
+          "kind": "svg",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "2": "errore uso (né --serie né --all)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Disegni statici: la rigenerazione è byte-identica."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/build_chapter_marks.py --help",
+      "tests": [],
+      "docs": [
+        "docs/guides/GUIDA-BOOKLET-E-PDF.md"
+      ]
+    },
+    {
       "id": "dm_dossier",
       "path": "scripts/dm_dossier.py",
       "category": "D-materials",
@@ -1768,6 +1850,191 @@
       "docs": [
         "scripts/README-automation.md",
         "plans/adr/ADR-0013-standard-generazione-booklet-sessioni.md"
+      ]
+    },
+    {
+      "id": "export_booklet_typst",
+      "path": "scripts/export_booklet_typst.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/export_booklet_typst.py MANIFEST.json --all",
+      "summary": "Edizione da stampa (ADR-0020): dallo stesso manifest dei booklet produce UN volume PDF con tipografia OFL embedded, due colonne, fregi di capitolo e segnalibri. Affianca export_booklet_pdf.py senza sostituirlo.",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "typst"
+      ],
+      "args": [
+        {
+          "name": "manifest",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il manifest del booklet (lo stesso della catena HTML)."
+        },
+        {
+          "name": "--all",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Tutti i capitoli, ⚠ DM inclusi (default: solo ✉ player)."
+        },
+        {
+          "name": "--keep-typ",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Conserva il sorgente .typ generato (di norma è temporaneo)."
+        },
+        {
+          "name": "--list",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Elenca i capitoli risolti ed esci."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "<manifest>.manifest.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "scripts/typst/tema-rumblingstone.typ",
+          "kind": "text",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<cartella del manifest>/<nome>-STAMPA.pdf",
+          "kind": "pdf",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "binario typst assente o compilazione fallita",
+        "2": "manifest mancante o uso errato"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "A parità di master e tema, il PDF è riproducibile."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/export_booklet_typst.py --help",
+      "tests": [],
+      "docs": [
+        "docs/guides/GUIDA-BOOKLET-E-PDF.md",
+        "docs/guides/GUIDA-FLUSSO-LOCALE.md"
+      ]
+    },
+    {
+      "id": "extract_scene_prompts",
+      "path": "scripts/extract_scene_prompts.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/extract_scene_prompts.py <arco>",
+      "summary": "Estrae le scene illustrabili di un arco (read-aloud + copertura immagini) e genera lo scheletro del file dei prompt immagine (ADR-0015); rigenerazione idempotente che non perde le schede gia compilate.",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "arc",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cartella dell'arco (es. \"07_il Portale Della Forgia Eterna\")."
+        },
+        {
+          "name": "-o/--output",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "File di output (default: <arco>/Immagini/PROMPT-IMMAGINI-<TAG>.md)."
+        },
+        {
+          "name": "--list",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Elenca soltanto le scene trovate, senza scrivere."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "<arco>/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "<arco>/Immagini/",
+          "kind": "directory",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<arco>/Immagini/PROMPT-IMMAGINI-<TAG>.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "nessuna scena trovata",
+        "2": "uso errato / arco assente"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Ordine file+riga deterministico; a parita di contenuto la rigenerazione e byte-identica (le schede compilate sono conservate)."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/extract_scene_prompts.py --help",
+      "tests": [],
+      "docs": [
+        "scripts/README-automation.md",
+        "plans/adr/ADR-0015-standard-prompt-immagine.md"
       ]
     },
     {
@@ -3060,6 +3327,60 @@
       "docs": [
         "skills/rumblingstone-module-standard/SKILL.md"
       ]
+    },
+    {
+      "id": "validate_standalone",
+      "path": "scripts/validate_standalone.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/validate_standalone.py",
+      "summary": "Gate CI per i moduli autoconclusivi STANDALONE-*: file obbligatori, riferimenti incrociati, schede pregenerate, termini 5e vietati, read-aloud minimi e contatori dichiarati.",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--dir",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Valida solo questa cartella (relativa alla radice del repo)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "STANDALONE-*/**/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "stdout",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "master conformi",
+        "1": "violazioni checklist"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true
     },
     {
       "id": "converters/html-to-markdown",

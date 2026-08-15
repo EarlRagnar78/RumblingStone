@@ -1,8 +1,9 @@
 # Parte 2D — Le 8 Contrade: Stemmi, Motti, Canti, Rivalità
 
 > Allegato di `...P2D-PALIO-DM-MASTER-REFERENCE.md`. Gli **stemmi** sono **originali**
-> (arte vettoriale propria in `P2D-Palio-Allegati/stemmi/`), **non riproduzioni** di
-> quelli reali di Siena. I **motti** qui usati sono **originali**, *ispirati* alla
+> (`P2D-Palio-Allegati/stemmi/`) e **non riproducono** quelli reali di Siena: scudi,
+> livree e simboli faerûniani sono propri della campagna; le **figure** sono icone
+> game-icons.net in CC BY 3.0, ricolorate (attribuzione in `stemmi/CREDITS.md`). I **motti** qui usati sono **originali**, *ispirati* alla
 > tradizione senese (fatti storici di pubblico dominio) ma **riscritti** per la campagna.
 > Le divinità sono **faerûniane** (conversione da Golarion).
 
@@ -31,7 +32,7 @@ tipico · CANTO (con effetto meccanico) · aggancio a Rethmar (Meraviglia)**.
 
 ## 1 · L'OCA — *"Al suono dell'oro, all'armi"*
 ![Stemma Oca](P2D-Palio-Allegati/stemmi/01-oca.svg)
-- **Divinità**: Waukeen (commercio, ricchezza). **Colori**: verde e bianco bordati di rosso.
+- **Divinità**: Waukeen (commercio, ricchezza). **Colori**: porpora e oro, bordati di bianco perla.
 - **Patrono**: **Lady Kaal**, Presidente del Consiglio. **Anima**: aristocrazia terriera e
   banchieri; il rione più ricco, dai palazzi ordinati e freddi.
 - **Rivale**: la Torre. **Fantino tipico**: **Cavaliere** mercenario d'élite, speroni d'oro.
@@ -46,7 +47,7 @@ tipico · CANTO (con effetto meccanico) · aggancio a Rethmar (Meraviglia)**.
 
 ## 2 · LA TORRE — *"Oltre il ferro, la volontà"*
 ![Stemma Torre](P2D-Palio-Allegati/stemmi/02-torre.svg)
-- **Divinità**: Torm (dovere) / Tempus (guerra). **Colori**: amaranto listato di bianco e azzurro.
+- **Divinità**: Torm (dovere) / Tempus (guerra). **Colori**: acciaio brunito e scarlatto, bordati d'argento.
 - **Patrono**: **Lord Jarmaath** (militare) + **Cap. Brenna Sorvane** (milizia).
   **Anima**: veterani, fabbri d'armi, milizia pesante; taverne che sanno di fumo e olio d'armi.
 - **Rivale**: l'Oca. **Fantino tipico**: **Cavaliere** d'acciaio, iper-disciplinato.
@@ -59,7 +60,7 @@ tipico · CANTO (con effetto meccanico) · aggancio a Rethmar (Meraviglia)**.
 ## 3 · IL BRUCO — *"Nell'ombra mi rivolto"*
 ![Stemma Bruco](P2D-Palio-Allegati/stemmi/03-bruco.svg)
 - **Divinità**: Mask (ombre, furto, segreti — **già in campagna**, arco Zalkatar/Artemis).
-  **Colori**: giallo e verde listati d'azzurro.
+  **Colori**: argento sericeo e nero-fumo, listati di verde-veleno.
 - **Patrono**: **Maestro Varis "Seta-Argento"** (mercato nero). **Anima**: ricettatori,
   contrabbandieri, la mala urbana; vicoli dove ogni porta ha due chiavi.
 - **Rivale**: la Civetta. **Fantino tipico**: **Ladro** spietato, aghi nel nerbo.
@@ -72,8 +73,9 @@ tipico · CANTO (con effetto meccanico) · aggancio a Rethmar (Meraviglia)**.
 
 ## 4 · L'ISTRICE — *"Pungo solo chi mi assale"*
 ![Stemma Istrice](P2D-Palio-Allegati/stemmi/04-istrice.svg)
-- **Divinità**: Ilmater (sofferenza) / Chauntea (comunità). **Colori**: bianco con arabeschi
-  rosso, nero, azzurro; nello stemma, **catene spezzate** (i profughi liberati).
+- **Divinità**: Ilmater (sofferenza) / Chauntea (comunità). **Colori**: verde legnoferro e bruno
+  di terra, bordati d'avorio; nello stemma, **catene spezzate** di rosso Ilmater (i
+  profughi liberati) su campagna di bruno di terra.
 - **Patrono**: **Capitana Lorana** e gli ~800 **profughi di Tretino/Drellin**. **Anima**:
   disperati accampati nei sobborghi, guardati con sospetto dai ricchi; il rione che non
   dovrebbe nemmeno avere un cavallo.
@@ -97,8 +99,8 @@ tipico · CANTO (con effetto meccanico) · aggancio a Rethmar (Meraviglia)**.
 
 ## 5 · IL DRAGO — *"Il cuore che arde parla in fiamme"*
 ![Stemma Drago](P2D-Palio-Allegati/stemmi/05-drago.svg)
-- **Divinità**: Mystra (magia). **Colori**: rosa/rosso e verde listati di giallo; nello
-  stemma, un drago avvolto attorno alla **stella di Mystra**.
+- **Divinità**: Mystra (magia). **Colori**: blu notte e argento, listati di
+  viola arcano; nello stemma, una testa di drago che soffia verso la **stella d'oro di Mystra**.
 - **Patrono**: **Maester Pyriel** (sapere/accademia). **Anima**: speziali, alchimisti,
   maghi di corte; il rione profuma di zolfo e pergamena.
 - **Rivale**: la Civetta (che ruba i loro segreti). **Fantino tipico**: un Magus, o un
@@ -111,8 +113,8 @@ tipico · CANTO (con effetto meccanico) · aggancio a Rethmar (Meraviglia)**.
 
 ## 6 · LA CIVETTA — *"Guardo dove la notte tace"*
 ![Stemma Civetta](P2D-Palio-Allegati/stemmi/06-civetta.svg)
-- **Divinità**: Shar (perdita, vendetta, segreti). **Colori**: nero e rosso listati di
-  bianco; nello stemma, la civetta davanti al **disco nero di Shar**.
+- **Divinità**: Shar (perdita, vendetta, segreti). **Colori**: nero e viola di Shar, listati
+  d'argento freddo; nello stemma, la civetta davanti al **disco nero di Shar**.
 - **Patrono**: **Conte Valerius** (nobiltà decaduta). **Anima**: burocrati, spie,
   parassiti di corte; palazzi che cadono a pezzi dietro facciate d'oro.
 - **Rivale**: il Bruco e il Drago. **Fantino tipico**: un Investigatore/sicario nobiliare,
@@ -125,8 +127,8 @@ tipico · CANTO (con effetto meccanico) · aggancio a Rethmar (Meraviglia)**.
 
 ## 7 · L'UNICORNO — *"Ferisce e sana il corno che porto"*
 ![Stemma Unicorno](P2D-Palio-Allegati/stemmi/07-unicorno.svg)
-- **Divinità**: Sune (bellezza) / Milil (canto). **Colori**: bianco e arancio listati
-  d'azzurro; nello stemma, il corno dell'unicorno a forma di **spirale d'arpa**.
+- **Divinità**: Sune (bellezza) / Milil (canto). **Colori**: cremisi di Sune e argento di
+  Milil; nello stemma, il **corno dorato** che dà il nome al distretto.
 - **Patrono**: **Aldric Thornwall** (gilde/artigiani). **Anima**: sarti, falegnami,
   menestrelli; il rione più bello e il più codardo — vuole solo che la guerra "passi oltre".
 - **Rivale**: nessuna fissa — **ago della bilancia**. **Fantino tipico**: un Bardo o un
@@ -140,8 +142,8 @@ tipico · CANTO (con effetto meccanico) · aggancio a Rethmar (Meraviglia)**.
 ## 8 · L'ONDA *(NUOVA)* — *"Il cielo mi colora, il fiume mi arma"*
 ![Stemma Onda](P2D-Palio-Allegati/stemmi/08-onda.svg)
 - **Divinità**: Valkur (marinai, vento favorevole) / Selûne (luna, navigazione).
-  **Colori**: bianco e celeste; nello stemma, un **luccio fluviale** saltante su tre onde
-  sotto una **falce di Selûne**.
+  **Colori**: verde-fiume e argento lunare, bordati di blu profondo; nello stemma, un
+  **cavallone** che si leva su tre onde sotto una **falce d'oro di Selûne**.
 - **Patrono**: il **Gonfaloniere di Channathgate** e la **Gilda dei Barcaioli** — è la
   **contrada di casa**, l'unica non legata a una fazione di Rethmar. Molti barcaioli
   dell'Onda sono **gli stessi che traghettarono i profughi** giù dal Cannath: legame
@@ -188,28 +190,89 @@ spesso più efficace che offrirgli di vincere.
 
 ---
 
-## Nota grafica — upgrade delle figure degli stemmi (opzionale)
-Gli scudi (`P2D-Palio-Allegati/stemmi/*.svg`) sono **originali** e ridisegnati in stile
-araldico piatto unificato. Se vuoi figure **ancora più rifinite mantenendo lo stesso stile
-fantasy e senza problemi di copyright**, l'opzione migliore e coerente è **game-icons.net**:
-migliaia di icone SVG monocromatiche, **stesso tratto**, licenza **CC BY 3.0** (gratis, con
-**attribuzione**). Sono `<path>` che si incollano dentro gli scudi al posto della figura
-attuale. Mappatura consigliata:
+## Livree di Channathgate (palette canonica)
 
-| Contrada | Icona game-icons.net (nome) | Autore tipico |
+Dal 2026-08-09 gli scudi **non usano più le livree di Siena**: ogni distretto ha una
+livrea propria, derivata dalla **divinità patrona** e dal **nome faerûniano del
+quartiere**. Nessuna combinazione coincide con quelle delle 17 contrade reali (chiude il
+punto 3 della checklist di bonifica in `...P2D-PALIO-VERIFICA-LEGALE-IP.md` §7).
+
+| Contrada · Distretto | Livrea | Campo | Secondario | Bordo / liste | Metallo figura |
+|---|---|---|---|---|---|
+| Oca · *The Golden Plume* | porpora e oro, bordata di bianco perla | `#4a2560` / `#3e1e52` | `#d9a63c` oro | `#f0eada` perla | `#f0eada` |
+| Torre · *The Iron Bastion* | acciaio brunito e scarlatto, bordata d'argento | `#3c4854` / `#333e48` | `#a6242c` scarlatto | `#c9d2d8` argento | `#dce3e8` |
+| Bruco · *The Silver Weft* | argento sericeo e nero-fumo, listata di verde-veleno | `#a9b2b8` / `#97a1a8` | `#23272b` nero-fumo | `#74d98a` veleno | `#2b3036` |
+| Istrice · *The Quill-Wood Refuge* | verde legnoferro e bruno di terra, bordata d'avorio | `#2e4a34` / `#27402c` | `#7a5230` bruno | `#e8dfc6` avorio | `#7a5230` |
+| Drago · *The Spell-Wyrm Spires* | blu notte e argento, listata di viola arcano | `#1b2a5a` / `#16224a` | `#c7d0de` argento | `#7b52c0` viola | `#c7d0de` |
+| Civetta · *The Whispering Shadows* | nero e viola di Shar, listata d'argento freddo | `#101014` | `#4b2a6b` viola Shar | `#aeb8c8` argento | `#e4e8f0` |
+| Unicorno · *The Gilded Horn* | cremisi di Sune e argento di Milil, oro dell'arpa | `#9e1f3d` / `#8a1a35` | `#dfa93b` oro arpa | `#d7dce2` argento | `#f2f4f7` |
+| Onda · *The Tidal Crest* | verde-fiume e argento lunare, bordata di blu profondo | `#e7ede4` cielo | `#2e8c7e`·`#1d6b63`·`#124240` onde | `#123a5c` blu | `#e7ede4` |
+
+**Rosso Ilmater** `#c4565a` è usato solo per le catene spezzate dell'Istrice.
+
+**Oro araldico** `#dfa93b` (lumeggiato `#8a6416`) lega quattro scudi con lo stesso metallo:
+becco e zampe dell'Oca (*beccata e membrata d'oro*), stella di Mystra, falce di Selûne,
+corno dell'Unicorno. **La Civetta resta interamente d'argento**: il disco facciale dorato è
+stato provato e scartato dal DM — su Shar il contrasto argento-su-nero regge meglio da solo. La Torre è **muragliata**: i giunti dei conci
+sono in `#8d9aa6`, cioè un argento più scuro di quello della torre — la regola araldica del
+*masoned*, che dà la trama senza introdurre un colore nuovo.
+
+> **Nota di canone**: stella di Mystra e falce di Selûne sono canonicamente **d'argento**
+> (Selûne *è* la luna d'argento). Qui sono d'oro per scelta del DM: l'oro su blu notte è la
+> coppia più leggibile dell'armoriale, e risolve la falce che sul campo chiaro dell'Onda
+> spariva. Per tornare al canone basta rimettere `fill="#e3eaf6"` e `fill="#f2f5ec"`.
+
+---
+
+## Nota grafica — le figure degli stemmi
+
+Dal 2026-08-10 le **figure** degli otto scudi sono icone di **game-icons.net**, ricolorate
+nella livrea del distretto e inserite negli scudi originali della campagna. Attribuzione
+completa e testi di licenza: **`P2D-Palio-Allegati/stemmi/CREDITS.md`**.
+
+> *Icons made by Lorc, Delapouite and Caro Asercion — https://game-icons.net — CC BY 3.0*
+
+| Contrada · Distretto | Icona | Autore |
 |---|---|---|
-| Oca | `goose` / `duck` | Delapouite |
-| Torre | `tower` / `defensive-wall` | Delapouite / Lorc |
-| Bruco | `caterpillar` / `worms` | Lorc |
-| Istrice | `hedgehog` / `porcupine` | Delapouite |
-| Drago | `dragon-head` / `spiked-dragon-head` | Lorc |
-| Civetta | `owl` | Delapouite |
-| Unicorno | `unicorn` | Delapouite / Caro Asercion |
-| Onda | `jumping-dog`→ meglio `salmon`/`fish` + `moon` | Delapouite / Lorc |
+| Oca · *The Golden Plume* | `goose` | Delapouite |
+| Torre · *The Iron Bastion* | `white-tower` | Lorc |
+| Bruco · *The Silver Weft* | `caterpillar` | Delapouite |
+| Istrice · *The Quill-Wood Refuge* | `porcupine` | Caro Asercion |
+| Drago · *The Spell-Wyrm Spires* | `spiked-dragon-head` | Delapouite |
+| Civetta · *The Whispering Shadows* | `barn-owl` | Caro Asercion |
+| Unicorno · *The Gilded Horn* | `unicorn` | Delapouite |
+| Onda · *The Tidal Crest* | `big-wave` | Lorc |
 
-**Attribuzione da includere** (es. in un `CREDITS.md`): *"Alcune icone da game-icons.net
-(Lorc, Delapouite, Caro Asercion), CC BY 3.0."* — Dimmi "usa game-icons" e le integro io
-negli scudi (scarico i path e li incastono, tenendo cornici e colori attuali).
+I file sorgente stanno in `P2D-Palio-Allegati/stemmi/game-icons/` insieme ai due testi di
+licenza. In archivio anche `stone-tower` (Lorc), variante non usata per la Torre.
+
+**Restano originali della campagna** — e fuori da questa attribuzione — la sagoma dello
+scudo, le livree, i cartigli dei motti e i simboli faerûniani sovrapposti: moneta di
+Waukeen, guanto di Torm, stella di Mystra, disco di Shar, falce di Selûne, catene spezzate
+dell'Istrice, corno dorato dell'Unicorno.
+
+**Come si sostituisce una figura**: in ogni file la figura è isolata fra i marcatori
+`<!-- FIGURA ... -->` e `<!-- /FIGURA -->`, e il gruppo esterno porta il `fill` della
+livrea — quindi **un `<path>` incollato lì dentro eredita il colore giusto senza altre
+modifiche**. Le icone game-icons hanno `viewBox="0 0 512 512"`: va scartato il riquadro di
+fondo `M0 0h512v512H0z` e ricalcolato il `transform` di scala.
+
+**Manuale completo della pipeline**: `P2D-Palio-Allegati/stemmi/PROCEDURA.md` — anatomia
+dello scudo, calcolo di scala e posizione delle icone, tecnica delle dorature, contratto del
+cartiglio, e i comandi di verifica (`tools/measure_shields.py`, `tools/build_armorial.py`,
+`golarion/build_golarion_shields.py`).
+
+## Serie alternativa — Golarion / Pathfinder
+
+`P2D-Palio-Allegati/stemmi/golarion/` contiene gli **stessi otto scudi** con il pantheon di
+Golarion al posto di quello faerûniano: Abadar, Iomedae/Gorum, Norgorber, Sarenrae/Erastil,
+Nethys, Calistria, Shelyn, Gozreh/Desna. Stesse figure, **stesse meccaniche 3.5** — cambiano
+solo divinità, livrea e simbolo in campo. Mappatura, livree e note di licenza Paizo:
+`golarion/README.md`. Rigenerabile con `golarion/build_golarion_shields.py`.
+
+Serve a due cose: girare l'arco in un tavolo Pathfinder senza riscrivere nulla, e — visto che
+AVVENTURA §1 dichiara le divinità faerûniane «riconvertite da Golarion» — **documentare il
+pantheon di partenza**, che non era scritto da nessuna parte.
 
 ## Nota IP (ripetuta qui per chiarezza)
 Nomi delle contrade e riferimenti al Palio = **fatti storico-culturali** citati come

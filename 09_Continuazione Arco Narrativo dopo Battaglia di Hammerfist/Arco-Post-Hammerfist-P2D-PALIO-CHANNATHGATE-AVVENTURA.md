@@ -65,12 +65,14 @@ e confraternite laiche: non erano mai atee, ma di una religiosità **civica e fe
 > **Nota di conversione (Golarion → Faerûn)**: la campagna è ambientata nei Reami.
 > Le divinità sono state riconvertite dal pantheon di Golarion a quello faerûniano.
 >
-> **Nota patrimonio/IP**: il Palio di Siena e le sue contrade sono citati come
-> **ispirazione storico-culturale** (fatti di pubblico dominio). **Tutti i motti e gli
-> stemmi di questo arco sono ORIGINALI** — riscritti/ridisegnati da zero, coerenti in
-> tutti i file (AVVENTURA, CONTRADE-STEMMI-CANTI, SVG) — proprio per evitare qualunque
-> riproduzione dell'iconografia moderna tutelata dal *Consorzio per la Tutela del Palio*.
-> Uso non commerciale, da tavolo; nessun asset di terzi incluso.
+> **Nota patrimonio/IP** *(aggiornata 2026-08-10)*: il Palio di Siena e le sue contrade
+> sono citati come **ispirazione storico-culturale** (fatti di pubblico dominio). Scudi,
+> **livree** e simboli divini sono **originali** di questa campagna, e dal 2026-08-09 le
+> livree **non coincidono più** con quelle reali (vedi VERIFICA-LEGALE-IP §3.2). I **motti**
+> sono riscritti ma restano **parafrasi riconoscibili** di quelli reali: non dichiararli
+> "originali" (VERIFICA-LEGALE-IP §3.3). Le **figure** degli stemmi **non sono nostre**:
+> sono icone **game-icons.net in CC BY 3.0**, ricolorate — attribuzione obbligatoria in
+> `P2D-Palio-Allegati/stemmi/CREDITS.md`. Uso non commerciale, da tavolo.
 
 Ogni contrada ha un **motto** (originale), uno **stemma** originale, dei **colori**, una
 **ballata di guerra**, una **chiave araldica d'argento** (il *Sigillo*), un **Oratorio**
@@ -79,43 +81,43 @@ sul Drappellone per attivare la Meraviglia (vedi INTEGRAZIONE §4–§5).
 
 #### 1 — L'Oca *(Nobile Contrada dell'Oca)* → **Waukeen** (commercio, oro)
 - **Motto** *(originale)*: *"Al suono dell'oro, all'armi"* (ironico: qui l'oro suona la resa).
-- **Stemma** *(SVG: `stemmi/01-oca.svg`)*: oca araldica d'argento dal collo a S, corona d'oro sul capo, moneta di Waukeen in campo. **Colori**: verde e bianco bordati di rosso.
+- **Stemma** *(SVG: `stemmi/01-oca.svg`)*: oca araldica di bianco perla in cammino, **beccata e membrata d'oro**, moneta di Waukeen in punta. **Colori**: porpora e oro, bordati di bianco perla.
 - **Anima**: aristocrazia terriera e banchieri. Corre per il **potere temporale**. **Rivale**: la Torre.
 
 #### 2 — La Torre *(Contrada della Torre)* → **Torm / Tempus** (onore, guerra)
 - **Motto** *(originale)*: *"Oltre il ferro, la volontà"*.
-- **Stemma** *(SVG: `stemmi/02-torre.svg`)*: mastio merlato d'oro dal portone serrato, il guanto di Torm sull'architrave. **Colori**: amaranto listato di bianco e azzurro.
+- **Stemma** *(SVG: `stemmi/02-torre.svg`)*: mastio **muragliato** d'argento dalle feritoie scarlatte, il guanto di Torm sul portone. **Colori**: acciaio brunito e scarlatto, bordati d'argento.
 - **Anima**: veterani, milizia pesante, fabbri d'armi. Corre per l'**onore marziale**. **Rivale**: l'Oca.
 - **→ È la contrada dei GOLEM** (vedi INTEGRAZIONE §5): il suo Sigillo risveglia i Golem d'Assedio di Rethmar.
 
 #### 3 — Il Bruco *(Nobil Contrada del Bruco)* → **Mask** (ombre, furto, segreti)
 - **Motto** *(originale)*: *"Nell'ombra mi rivolto"* (eco di un'antica rivolta popolare del rione).
-- **Stemma** *(SVG: `stemmi/03-bruco.svg`)*: bruco verde cupo dal dorso punteggiato d'oro, coronato, su una foglia. **Colori**: giallo e verde listati d'azzurro.
+- **Stemma** *(SVG: `stemmi/03-bruco.svg`)*: bruco di nero-fumo segmentato, sopra la banda di seta. **Colori**: argento sericeo e nero-fumo, listati di verde-veleno.
 - **Anima**: ricettatori e malavita urbana. Corre per **l'oro delle scommesse**. **Rivale**: la Civetta.
 
 #### 4 — L'Istrice *(Contrada Sovrana dell'Istrice)* → **Ilmater / Chauntea** (sofferenza, comunità)
 - **Motto** *(originale)*: *"Pungo solo chi mi assale"* — **perfetto per i profughi difensori**.
-- **Stemma** *(SVG: `stemmi/04-istrice.svg`)*: istrice bruno dagli aculei levati, coronato all'antica, fra **catene spezzate**. **Colori**: bianco con arabeschi rosso, nero e azzurro.
+- **Stemma** *(SVG: `stemmi/04-istrice.svg`)*: istrice d'avorio dagli aculei levati, su campagna di bruno di terra, fra **catene spezzate** di rosso Ilmater. **Colori**: verde legnoferro e bruno di terra, bordati d'avorio.
 - **Anima**: disperati, profughi, umili. Corre per il **riscatto sociale**. **Rivale**: l'Oca. *(Unica contrada "Sovrana".)*
 
 #### 5 — Il Drago *(Contrada del Drago)* → **Mystra** (magia)
 - **Motto** *(originale)*: *"Il cuore che arde parla in fiamme"*.
-- **Stemma** *(SVG: `stemmi/05-drago.svg`)*: drago d'oro avvolto in volo attorno alla **stella di Mystra**. **Colori**: rosa/rosso e verde listati di giallo.
+- **Stemma** *(SVG: `stemmi/05-drago.svg`)*: testa di drago d'argento che soffia verso la **stella d'oro di Mystra**, in punta. **Colori**: blu notte e argento, listati di viola arcano.
 - **Anima**: speziali, alchimisti, accademia arcana. Corre per il **dominio della conoscenza**. **Rivale**: la Civetta.
 
 #### 6 — La Civetta *(Contrada Priora della Civetta)* → **Shar** (perdita, vendetta, segreti)
 - **Motto** *(originale)*: *"Guardo dove la notte tace"* — **perfetto per spie e nobiltà d'ombra**.
-- **Stemma** *(SVG: `stemmi/06-civetta.svg`)*: civetta d'argento dagli occhi d'oro su ramo, davanti al **disco nero di Shar**. **Colori**: nero e rosso listati di bianco.
+- **Stemma** *(SVG: `stemmi/06-civetta.svg`)*: civetta d'argento di fronte, davanti al **disco nero di Shar**. **Colori**: nero e viola di Shar, listati d'argento freddo.
 - **Anima**: nobiltà decaduta, burocrati, parassiti di corte. Corre per la **vendetta politica**. **Rivale**: il Bruco / il Drago.
 
 #### 7 — L'Unicorno *(Contrada del Leocorno)* → **Sune / Milil** (bellezza, canto)
 - **Motto** *(originale, ispirato)*: *"Ferisce e sana il corno che porto"*.
-- **Stemma** *(SVG: `stemmi/07-unicorno.svg`)*: testa d'unicorno d'argento in profilo, criniera arancio, corno a **spirale d'arpa**. **Colori**: bianco e arancio listati d'azzurro.
+- **Stemma** *(SVG: `stemmi/07-unicorno.svg`)*: testa d'unicorno d'argento in profilo, dal **corno dorato** che dà il nome al distretto. **Colori**: cremisi di Sune e argento di Milil, con l'oro dell'arpa.
 - **Anima**: artigiani, sarti, ceto medio. Corre per il **prestigio culturale**. **Rivale**: nessuna fissa (**ago della bilancia**).
 
 #### 8 — L'Onda *(NUOVA — contrada di casa di Channathgate)* → **Valkur / Selûne** (marinai, luna)
 - **Motto** *(originale)*: *"Il cielo mi colora, il fiume mi arma"*.
-- **Stemma**: luccio fluviale saltante su tre onde sotto la falce di Selûne (`P2D-Palio-Allegati/stemmi/08-onda.svg`). **Colori**: bianco e celeste.
+- **Stemma**: cavallone di blu profondo che si leva su tre onde di verde-fiume, sotto la **falce d'oro di Selûne** (`P2D-Palio-Allegati/stemmi/08-onda.svg`). **Colori**: verde-fiume e argento lunare, bordati di blu profondo.
 - **Anima**: barcaioli, pescatori, portuali del Fiume Cannath — la **contrada di casa**,
   patrocinata dal **Gonfaloniere** e dalla **Gilda dei Barcaioli**. Molti sono gli stessi
   che traghettarono i profughi: **alleanza segreta con l'Istrice**. Corre per l'**onore del

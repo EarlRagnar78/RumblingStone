@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="760" viewBox="0 0 1080 760" font-family="Georgia,'Liberation Serif','DejaVu Serif',serif">
+<title>Tarsilia — la città</title>
+<defs>
+<pattern id="grain" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="none"/><circle cx="1.5" cy="1.5" r="0.5" fill="#000" opacity="0.05"/><circle cx="4.5" cy="3.5" r="0.4" fill="#000" opacity="0.04"/></pattern>
+<radialGradient id="vign" cx="50%" cy="45%" r="72%"><stop offset="60%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#3a2c14" stop-opacity="0.30"/></radialGradient>
+</defs>
+<rect width="1080" height="760" fill="#efe3c6"/>
+<rect width="1080" height="760" fill="url(#grain)"/>
+<path d="M0 520 C 180 492, 320 548, 520 536 C 720 524, 880 566, 1080 546 L 1080 668 L 0 668 Z" fill="#6aa5c4" opacity="0.55"/>
+<path d="M0 520 C 180 492, 320 548, 520 536 C 720 524, 880 566, 1080 546" fill="none" stroke="#3d708f" stroke-width="2"/>
+<path d="M0 554 C 200 530, 340 584, 540 572 C 740 560, 900 600, 1080 584" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.24"/>
+<path d="M0 582 C 200 558, 340 612, 540 600 C 740 588, 900 628, 1080 612" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.24"/>
+<path d="M0 612 C 200 588, 340 642, 540 630 C 740 618, 900 658, 1080 642" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.24"/>
+<rect x="0" y="660" width="1080" height="100" fill="#c9b58e" opacity="0.6"/>
+<text x="240" y="652" font-size="24" fill="#123a5c" text-anchor="middle" font-weight="bold" font-style="italic" letter-spacing="4">il Sellen</text>
+<text x="1024" y="700" font-size="12" fill="#5b4a2c" text-anchor="end" font-weight="normal" font-style="italic" letter-spacing="0">verso Cassomir, tre giorni di barca</text>
+<path d="M40 120 L 260 74 L 560 62 L 860 82 L 1040 128" fill="none" stroke="#2c2313" stroke-width="7" stroke-linecap="round"/>
+<rect x="139" y="83" width="22" height="26" fill="#8d8271" stroke="#2c2313" stroke-width="2"/>
+<rect x="399" y="53" width="22" height="26" fill="#8d8271" stroke="#2c2313" stroke-width="2"/>
+<rect x="699" y="57" width="22" height="26" fill="#8d8271" stroke="#2c2313" stroke-width="2"/>
+<rect x="949" y="91" width="22" height="26" fill="#8d8271" stroke="#2c2313" stroke-width="2"/>
+<text x="560" y="46" font-size="13" fill="#5b4a2c" text-anchor="middle" font-weight="normal" font-style="normal" letter-spacing="4">MURA VERSO TERRA</text>
+<ellipse cx="540" cy="300" rx="152" ry="112" fill="#b08d68" stroke="#2c2313" stroke-width="3"/>
+<rect x="462" y="248" width="156" height="104" rx="6" fill="#6b5b47" stroke="#2c2313" stroke-width="2.5"/>
+<text x="540" y="296" font-size="12" fill="#f0e6cf" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">MERCATO</text>
+<text x="540" y="314" font-size="12" fill="#f0e6cf" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">DEL GRANO</text>
+<text x="540" y="168" font-size="19" fill="#2c2313" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="5">LA RUOTA</text>
+<text x="540" y="450" font-size="12" fill="#5b4a2c" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">tre giri · novanta secondi</text>
+<circle cx="540" cy="188" r="9" fill="#b94a3c" stroke="#2c2313" stroke-width="2"/>
+<text x="520" y="182" font-size="11" fill="#7d2f26" text-anchor="end" font-weight="bold" font-style="normal" letter-spacing="0">curva nord</text>
+<circle cx="540" cy="412" r="9" fill="#b94a3c" stroke="#2c2313" stroke-width="2"/>
+<text x="560" y="416" font-size="11" fill="#7d2f26" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="0">curva sud</text>
+<rect x="139" y="498" width="22" height="176" fill="#e6ccb2" stroke="#2c2313" stroke-width="2"/>
+<text x="150" y="586" font-size="11" fill="#2c2313" text-anchor="middle" transform="rotate(-90 150 586)">Ponte Storto</text>
+<rect x="319" y="498" width="22" height="176" fill="#e6ccb2" stroke="#2c2313" stroke-width="2"/>
+<text x="330" y="586" font-size="11" fill="#2c2313" text-anchor="middle" transform="rotate(-90 330 586)">Ponte dei Tini</text>
+<rect x="549" y="498" width="22" height="176" fill="#e6ccb2" stroke="#2c2313" stroke-width="2"/>
+<text x="560" y="586" font-size="11" fill="#2c2313" text-anchor="middle" transform="rotate(-90 560 586)">Ponte del Teatro</text>
+<rect x="749" y="498" width="22" height="176" fill="#e6ccb2" stroke="#2c2313" stroke-width="2"/>
+<text x="760" y="586" font-size="11" fill="#2c2313" text-anchor="middle" transform="rotate(-90 760 586)">Ponte Vecchio</text>
+<rect x="919" y="498" width="22" height="176" fill="#e6ccb2" stroke="#2c2313" stroke-width="2"/>
+<text x="930" y="586" font-size="11" fill="#2c2313" text-anchor="middle" transform="rotate(-90 930 586)">il Quinto Ponte</text>
+<text x="930" y="700" font-size="11" fill="#7d2f26" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">(dondola)</text>
+<rect x="85" y="155" width="110" height="70" rx="5" fill="#ded3ba" stroke="#2c2313" stroke-width="2"/>
+<rect x="85" y="155" width="110" height="12" rx="2" fill="#22406e"/>
+<rect x="85" y="218" width="110" height="7" fill="#8a6416"/>
+<text x="140" y="196" font-size="13" fill="#2c2313" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">OCA</text>
+<text x="140" y="212" font-size="8.5" fill="#2c2313" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">Abadar</text>
+<rect x="245" y="115" width="110" height="70" rx="5" fill="#5a4438" stroke="#2c2313" stroke-width="2"/>
+<rect x="245" y="115" width="110" height="12" rx="2" fill="#e4e9ec"/>
+<rect x="245" y="178" width="110" height="7" fill="#dfa93b"/>
+<text x="300" y="156" font-size="13" fill="#f4ecd8" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">TORRE</text>
+<text x="300" y="172" font-size="8.5" fill="#f4ecd8" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">Iomedae · Gorum</text>
+<rect x="735" y="117" width="110" height="70" rx="5" fill="#b8496e" stroke="#2c2313" stroke-width="2"/>
+<rect x="735" y="117" width="110" height="12" rx="2" fill="#d7dce2"/>
+<rect x="735" y="180" width="110" height="7" fill="#dfa93b"/>
+<text x="790" y="158" font-size="13" fill="#f4ecd8" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">LEOCORNO</text>
+<text x="790" y="174" font-size="8.5" fill="#f4ecd8" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">Shelyn</text>
+<rect x="895" y="159" width="110" height="70" rx="5" fill="#141418" stroke="#2c2313" stroke-width="2"/>
+<rect x="895" y="159" width="110" height="12" rx="2" fill="#e6e6e2"/>
+<rect x="895" y="222" width="110" height="7" fill="#7b52c0"/>
+<text x="950" y="200" font-size="13" fill="#f4ecd8" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">DRAGO</text>
+<text x="950" y="216" font-size="8.5" fill="#f4ecd8" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">Nethys</text>
+<rect x="86" y="308" width="128" height="84" rx="5" fill="#2e4a34" stroke="#2c2313" stroke-width="3"/>
+<rect x="86" y="308" width="128" height="12" rx="2" fill="#7a5230"/>
+<rect x="86" y="385" width="128" height="7" fill="#e0a83c"/>
+<text x="150" y="356" font-size="15" fill="#f4ecd8" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">ISTRICE</text>
+<text x="150" y="372" font-size="8.5" fill="#f4ecd8" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">Sarenrae · Erastil</text>
+<text x="150" y="300" font-size="11" fill="#7d2f26" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="0">★ la vostra contrada</text>
+<rect x="245" y="365" width="110" height="70" rx="5" fill="#a9b2b8" stroke="#2c2313" stroke-width="2"/>
+<rect x="245" y="365" width="110" height="12" rx="2" fill="#23272b"/>
+<rect x="245" y="428" width="110" height="7" fill="#74d98a"/>
+<text x="300" y="406" font-size="13" fill="#2c2313" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">BRUCO</text>
+<text x="300" y="422" font-size="8.5" fill="#2c2313" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">Norgorber</text>
+<rect x="735" y="363" width="110" height="70" rx="5" fill="#101014" stroke="#2c2313" stroke-width="2"/>
+<rect x="735" y="363" width="110" height="12" rx="2" fill="#d9a521"/>
+<rect x="735" y="426" width="110" height="7" fill="#aeb8c8"/>
+<text x="790" y="404" font-size="13" fill="#f4ecd8" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">CIVETTA</text>
+<text x="790" y="420" font-size="8.5" fill="#f4ecd8" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">Calistria</text>
+<rect x="895" y="313" width="110" height="70" rx="5" fill="#1d6b63" stroke="#2c2313" stroke-width="2"/>
+<rect x="895" y="313" width="110" height="12" rx="2" fill="#e2ecec"/>
+<rect x="895" y="376" width="110" height="7" fill="#123a5c"/>
+<text x="950" y="354" font-size="13" fill="#f4ecd8" text-anchor="middle" font-weight="bold" font-style="normal" letter-spacing="2">ONDA</text>
+<text x="950" y="370" font-size="8.5" fill="#f4ecd8" text-anchor="middle" font-weight="normal" font-style="italic" letter-spacing="0">Gozreh · Desna</text>
+<path d="M52 236 q 22 -30 44 0 q 22 -30 44 0 q 22 -30 44 0" fill="none" stroke="#2e4a34" stroke-width="3"/>
+<text x="56" y="268" font-size="12" fill="#2e4a34" text-anchor="start" font-weight="normal" font-style="italic" letter-spacing="0">il bosco di spini</text>
+<path d="M240 442 L 372 500" stroke="#6aa5c4" stroke-width="9" opacity="0.75"/>
+<text x="200" y="452" font-size="10" fill="#1d4a63" text-anchor="end" font-weight="normal" font-style="italic" letter-spacing="0">canale dei tintori</text>
+<text x="54" y="46" font-size="34" fill="#2c2313" text-anchor="start" font-weight="bold" font-style="normal" letter-spacing="8">TARSILIA</text>
+<text x="54" y="68" font-size="12.5" fill="#5b4a2c" text-anchor="start" font-weight="normal" font-style="italic" letter-spacing="0">città‑stato del Regno dei Fiumi · quattromila anime · otto contrade</text>
+<rect width="1080" height="760" fill="url(#vign)"/>
+<rect x="10" y="10" width="1060" height="740" fill="none" stroke="#2c2313" stroke-width="3"/>
+<rect x="17" y="17" width="1046" height="726" fill="none" stroke="#2c2313" stroke-width="1"/>
+<text x="540.0" y="734" text-anchor="middle" font-size="11" fill="#5b4a2c" font-style="italic">Il Drappo di Tarsilia · tavola generata — build_tavole.py</text>
+</svg>

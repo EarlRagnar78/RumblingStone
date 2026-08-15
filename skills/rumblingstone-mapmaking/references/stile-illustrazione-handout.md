@@ -29,6 +29,31 @@ artisti viventi né titoli di prodotti protetti. Niente `by <nome>`,
 niente "in the style of <artista>", niente immagini altrui come reference.
 Lo *stile come categoria* è libero; i *file e la firma di una persona* no.
 
+### L'ancora che invece si può usare: la scuola storica
+
+C'è un modo di ottenere **coerenza fra dieci immagini generate** senza nominare
+nessuno, ed è quello che il divieto sopra lascia aperto: ancorare il prompt a una
+**scuola pittorica in pubblico dominio da secoli**, che è una categoria storica e
+non la firma di una persona.
+
+- ✅ `flemish panel painting`, `venetian cinquecento`, `italian trecento tempera on
+  wood`, `northern renaissance oil glazing`, `dutch golden age chiaroscuro`,
+  `egg tempera, gold-leaf ground, flat picture plane`
+- ❌ il nome proprio di un pittore, anche morto da secoli, se serve a evocare **le
+  sue opere specifiche** invece della tecnica del periodo. La differenza è
+  «tempera e fondo oro del Trecento» (tecnica) contro «come la tavola X di Y»
+  (opera). La prima si descrive, la seconda si copia.
+
+Funziona meglio del solito elenco di aggettivi perché **fissa insieme** palette,
+resa della luce, trattamento delle mani e dei volti e perfino la profondità di
+campo: sono un pacchetto storico, non scelte indipendenti. È il sostituto
+economico dell'art director che il repo non ha.
+
+⚠️ **Con una cautela di ambientazione**: la scuola va scelta per la *resa*, non per
+il *luogo*. Ancorare un modulo a «pittura senese» quando il modulo sta già
+allontanandosi da Siena per ragioni di diritto rimetterebbe dalla porta di servizio
+proprio l'associazione che si sta togliendo. Scegli la tecnica, non la provincia.
+
 ---
 
 ## Vocabolario del look "eroico classico da manuale" (convenzioni, non autori)

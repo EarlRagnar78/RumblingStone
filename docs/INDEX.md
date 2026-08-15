@@ -40,6 +40,7 @@ Contratto macchina e vista umana — **generati** dal manifest, sempre allineati
 | [`docs/guides/GUIDA-CONDIVISIONE-IP.md`](guides/GUIDA-CONDIVISIONE-IP.md) | **Guida completa condivisione**: cosa si può fare con il materiale (tavolo, giocatori, amici, pubblicazione gratuita, vendita) — i tre corpi di IP, la procedura per ogni caso, confini per le illustrazioni, casi pratici risolti, checklist |
 | [`docs/guides/GUIDA-SETUP-MACCHINA.md`](guides/GUIDA-SETUP-MACCHINA.md) | **Guida completa setup**: da repo clonato a «funziona tutto» — prerequisiti (cosa serve e cosa è opzionale), skill per agenti, hook git, branch di gruppo (ADR-0007), extra (PDF/pandoc/container), verifica finale coi controlli della CI, troubleshooting |
 | [`docs/guides/GUIDA-BOOKLET-E-PDF.md`](guides/GUIDA-BOOKLET-E-PDF.md) | **Guida completa end-to-end**: dai master ai booklet (HTML/Homebrewery) ai **PDF A4** per giocatori e DM — prerequisiti per ogni sistema, anatomia del manifest, container opzionali, troubleshooting, checklist di consegna |
+| [`docs/guides/GUIDA-FLUSSO-LOCALE.md`](guides/GUIDA-FLUSSO-LOCALE.md) | **Come far lavorare insieme tutti i tool**: le quattro famiglie e cosa fa ognuna, la regola «il markdown è la verità», il flusso di una serata prima/al tavolo/dopo, le **due catene dei booklet** (schermo e stampa), la catena delle immagini, e cosa il repo **non** fa e perché |
 | [`docs/guides/GUIDA-IMMAGINI.md`](guides/GUIDA-IMMAGINI.md) | **Guida completa immagini**: quale generatore per cosa, come si scrive un prompt che funziona (esempio smontato + i 3 trucchi), preparare un arco intero con `dm.py prompts`, bibbia visiva e scena-madre, dove salvare/come agganciare i risultati, troubleshooting, checklist spoiler+IP |
 | [`docs/guides/GUIDA-MAPPE.md`](guides/GUIDA-MAPPE.md) | **Guida completa mappe**: le 3 modalità, griglia emoji e legenda universale, contratto JSON per eserciti/strutture, import Watabou e ultra-clear, render SVG, export **PNG e UVTT (Foundry/Roll20 con muri e luci)**, troubleshooting della CI |
 | [`docs/guides/GUIDA-BESTIARIO.md`](guides/GUIDA-BESTIARIO.md) | **Guida completa bestiario**: dove va un mostro/PNG/villain, naming e CR, formato statblock obbligatorio, dossier, flag di canone, rigenerazione del catalogo, gate CI, **quando potenziare invece di creare** |
@@ -70,6 +71,10 @@ Il **perché** delle scelte strutturali. Indice completo in [`plans/adr/`](../pl
 | [ADR-0014](../plans/adr/ADR-0014-regia-sensoriale-obbligatoria.md) | Regia sensoriale obbligatoria nei master (descrizioni sempre, occhio da avventuriero) |
 | [ADR-0015](../plans/adr/ADR-0015-standard-prompt-immagine.md) | Standard dei prompt immagine (estrazione scene, anatomia, coerenza d'arco) |
 | [ADR-0016](../plans/adr/ADR-0016-lingua-sorgente-e-edizioni.md) | **Lingua sorgente italiana**; l'inglese è un'edizione derivata per transcreation, mai la stesura. Loc kit in `campaign/GLOSSARIO-E-LOCALIZZAZIONE.md` |
+| [ADR-0017](../plans/adr/ADR-0017-moduli-autoconclusivi-classe-di-artefatto.md) | I moduli autoconclusivi (`STANDALONE-*`) sono una classe di artefatto a sé: contratto di file, gate proprio, generatori locali ammessi a condizioni |
+| [ADR-0018](../plans/adr/ADR-0018-apparato-uso-obbligatorio.md) | L'apparato d'uso (cast, pronuncia, indice read-aloud, schermo) è parte del contenuto, non un extra |
+| [ADR-0019](../plans/adr/ADR-0019-licenza-dei-pesi-non-del-software.md) | **Per le immagini generate la licenza sta nei pesi, non nel software**: SDXL e FLUX schnell sì, FLUX dev no; provenienza obbligatoria |
+| [ADR-0020](../plans/adr/ADR-0020-edizione-da-stampa-su-un-secondo-binario.md) | L'edizione da stampa esce da **Typst** su un secondo binario, non dal browser; la catena HTML resta intatta |
 
 ## 5. Archivio piani
 

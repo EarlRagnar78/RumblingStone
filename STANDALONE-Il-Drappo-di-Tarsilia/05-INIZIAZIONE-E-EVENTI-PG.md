@@ -178,6 +178,21 @@ li porta in casa. Melchio è l'unico che li riconosce a colpo d'occhio.
 
 ---
 
+## §4-bis · Come si tratta un segreto di PG (nota di regia)
+
+> ⚠️ **Questa sezione stava per errore in fondo a `FASCICOLO-SCHEDE-GIOCATORE.md`**,
+> che è un file ✉ **da mettere in mano ai giocatori**: elencava i collegamenti fra i
+> segreti a chi non doveva ancora conoscerli. Spostata qui il 2026-08-15.
+
+Ogni «cosa che non dici» è **un segreto che il giocatore possiede**, non un colpo di
+scena che gli spetta subire. Se un giocatore decide di rivelarlo prima del previsto,
+**va premiato**: il segreto è suo e l'ha speso quando ha voluto.
+
+I collegamenti fra i segreti — Ombra e Nonna Grasa, Berenice e Rasca, i nove nomi di
+Melchio e il Drappo — sono nel §4 qui sopra.
+
+---
+
 ## §5 · Griglia di controllo — chi ha avuto la sua scena?
 
 Fotocopiala e segna. Se a fine serata una riga è vuota, quel giocatore ha guardato.

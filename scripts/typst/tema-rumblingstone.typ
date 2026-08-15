@@ -31,6 +31,16 @@
   ]
 }
 
+// Typst non ha un «content → string» nativo: serve per leggere il «§N» dai titoli.
+#let to-string(c) = {
+  if type(c) == str { c }
+  else if c.has("text") { c.text }
+  else if c.has("children") { c.children.map(to-string).join("") }
+  else if c.has("body") { to-string(c.body) }
+  else if c == [ ] { " " }
+  else { "" }
+}
+
 #let fregio() = align(center)[
   #v(0.3em)
   #text(fill: seppia, size: 11pt)[❦]
@@ -97,12 +107,33 @@
   set text(font: "EB Garamond", size: 10.2pt, fill: inchiostro, lang: "it")
   set par(justify: true, leading: 0.62em, first-line-indent: 1.1em)
 
+  // Il § nei TITOLI diventa un numero dentro un medaglione — la stessa cornice
+  // circolare dei fregi di capitolo, così il libro ha un segno solo invece di
+  // due. Nei RIMANDI dentro il testo il § resta piatto: serve a ritrovare la
+  // sezione («vedi §4»), e sostituirlo lì romperebbe i riferimenti.
+  let medaglione(n) = box(baseline: 16%)[
+    #circle(radius: 0.52em, stroke: 0.7pt + seppia, fill: none)[
+      #align(center + horizon)[
+        #text(font: "Cinzel", size: 0.66em, fill: seppia, weight: 600)[#n]
+      ]
+    ]
+  ]
   show heading: it => {
     set text(font: "Cinzel", fill: if it.level == 1 { rosso } else { seppia })
     set block(above: 1.1em, below: 0.65em)
     if it.level == 1 { text(size: 15pt, weight: 600)[#it.body] }
-    else if it.level == 2 { text(size: 11.5pt, weight: 600)[#it.body] }
-    else { text(size: 10pt, weight: 600)[#it.body] }
+    else {
+      // «§3 · Titolo» → medaglione(3) + Titolo. Se il titolo non comincia con
+      // un §, resta esattamente com'è.
+      let grezzo = to-string(it.body)
+      let m = grezzo.match(regex("^§\s*([0-9]+(?:[-–][a-z]+)?)\s*(?:·|-|—)?\s*(.*)$"))
+      let dim = if it.level == 2 { 11.5pt } else { 10pt }
+      if m != none {
+        text(size: dim, weight: 600)[#medaglione(m.captures.at(0))~#m.captures.at(1)]
+      } else {
+        text(size: dim, weight: 600)[#it.body]
+      }
+    }
   }
   show strong: set text(fill: rgb("#4a2c12"), weight: 600)
   show raw: set text(font: "DejaVu Sans Mono", size: 8.6pt)

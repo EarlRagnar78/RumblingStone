@@ -11,21 +11,100 @@
   "cover_image": "../ALLEGATI/tavole/il-drappo.svg",
   "out": "DRAPPO-BOOKLET-DM.html",
   "chapters": [
-    {"title": "✉ Benvenuti a Tarsilia", "file": "DRAPPO-VOLANTINO-GIOCATORI.md", "tag": "player"},
-    {"title": "I · Hub e quickstart", "file": "../00-HUB-E-QUICKSTART-DM.md", "tag": "dm"},
-    {"title": "II · La regia, minuto per minuto", "file": "../07-GUIDA-DM-PASSO-PASSO.md", "tag": "dm"},
-    {"title": "III · Le otto contrade", "file": "../CONTRADE-DI-TARSILIA.md", "tag": "dm"},
-    {"title": "IV · Regole della corsa", "file": "../REGOLE-DELLA-CORSA-PF1E.md", "tag": "dm"},
-    {"title": "V · L'Investitura e i diciotto eventi", "file": "../05-INIZIAZIONE-E-EVENTI-PG.md", "tag": "dm"},
-    {"title": "VI · I luoghi dove si complotta", "file": "../04-LUOGHI-E-INTRIGO.md", "tag": "dm"},
-    {"title": "VII · Le agende dei villain", "file": "../06-VILLAIN-E-AGENDE.md", "tag": "dm"},
-    {"title": "VIII · Giorno 1 — La Sorte", "file": "../01-GIORNO-1-LA-SORTE.md", "tag": "dm"},
-    {"title": "IX · Giorno 2 — I Partiti e la Cena", "file": "../02-GIORNO-2-I-PARTITI-E-LA-CENA.md", "tag": "dm"},
-    {"title": "X · Giorno 3 — Lo Stacco e la Corsa", "file": "../03-GIORNO-3-LO-STACCO-E-LA-CORSA.md", "tag": "dm"},
-    {"title": "XI · Statblocchi PF1e", "file": "../STATBLOCCHI-PF1E.md", "tag": "dm"},
-    {"title": "XII · Le sei schede", "file": "../PREGEN-SEI-SCHEDE-PF1E.md", "tag": "dm"},
-    {"title": "XIII · Playtest alfa", "file": "../PLAYTEST-ALFA.md", "tag": "dm"},
-    {"title": "XIV · Le mappe", "file": "../ALLEGATI/mappe/README.md", "tag": "dm"},
-    {"title": "XV · IP e licenze", "file": "../IP-E-LICENZE.md", "tag": "dm"}
+    {
+      "title": "✉ Benvenuti a Tarsilia",
+      "file": "DRAPPO-VOLANTINO-GIOCATORI.md",
+      "tag": "player"
+    },
+    {
+      "title": "I · Hub e quickstart",
+      "file": "../00-HUB-E-QUICKSTART-DM.md",
+      "tag": "dm"
+    },
+    {
+      "title": "II · La regia, minuto per minuto",
+      "file": "../07-GUIDA-DM-PASSO-PASSO.md",
+      "tag": "dm"
+    },
+    {
+      "title": "III · La cassetta del DM — cast, pronuncia, read-aloud, schermo, suoni",
+      "file": "../08-CASSETTA-DEL-DM.md",
+      "tag": "dm"
+    },
+    {
+      "title": "IV · Le otto contrade",
+      "file": "../CONTRADE-DI-TARSILIA.md",
+      "tag": "dm"
+    },
+    {
+      "title": "V · Regole della corsa",
+      "file": "../REGOLE-DELLA-CORSA-PF1E.md",
+      "tag": "dm"
+    },
+    {
+      "title": "VI · L'Investitura e i diciotto eventi",
+      "file": "../05-INIZIAZIONE-E-EVENTI-PG.md",
+      "tag": "dm"
+    },
+    {
+      "title": "VII · I luoghi dove si complotta",
+      "file": "../04-LUOGHI-E-INTRIGO.md",
+      "tag": "dm"
+    },
+    {
+      "title": "VIII · Le agende dei villain",
+      "file": "../06-VILLAIN-E-AGENDE.md",
+      "tag": "dm"
+    },
+    {
+      "title": "IX · Giorno 1 — La Sorte",
+      "file": "../01-GIORNO-1-LA-SORTE.md",
+      "tag": "dm"
+    },
+    {
+      "title": "X · Giorno 2 — I Partiti e la Cena",
+      "file": "../02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+      "tag": "dm"
+    },
+    {
+      "title": "XI · Giorno 3 — Lo Stacco e la Corsa",
+      "file": "../03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+      "tag": "dm"
+    },
+    {
+      "title": "XII · Statblocchi PF1e",
+      "file": "../STATBLOCCHI-PF1E.md",
+      "tag": "dm"
+    },
+    {
+      "title": "XIII · Le sei schede",
+      "file": "../PREGEN-SEI-SCHEDE-PF1E.md",
+      "tag": "dm"
+    },
+    {
+      "title": "XIV · Playtest alfa",
+      "file": "../PLAYTEST-ALFA.md",
+      "tag": "dm"
+    },
+    {
+      "title": "XV · Le mappe",
+      "file": "../ALLEGATI/mappe/README.md",
+      "tag": "dm"
+    },
+    {
+      "title": "XVI · IP e licenze",
+      "file": "../IP-E-LICENZE.md",
+      "tag": "dm"
+    },
+    {
+      "title": "XVII · Stato del modulo (da copiare per gruppo)",
+      "file": "../STATO-DEL-MODULO.md",
+      "tag": "dm"
+    },
+    {
+      "title": "XVIII · Schede di feedback — da alfa a beta",
+      "file": "../PLAYTEST-SCHEDA-FEEDBACK.md",
+      "tag": "dm"
+    }
   ]
 }

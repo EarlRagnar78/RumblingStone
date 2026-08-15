@@ -70,6 +70,36 @@ Verificato da `scripts/validate_standalone.py` (gate CI):
 - **Non** valgono: ADR-0007 (scritture canone), il `state.md` di campagna, il
   Bestiario condiviso.
 
+### 4. I generatori locali al modulo — la deroga ad ADR-0012, dichiarata
+
+[ADR-0012](ADR-0012-standard-ingegneria-tool-verificabile.md) impone lo standard di
+authoring a *«ogni nuovo tool eseguibile del repo (Python o shell, **sotto `scripts/`
+o `converters/`**)»*. Un modulo autoconclusivo produce però i **propri** generatori —
+il Drappo ha `ALLEGATI/tavole/build_tavole.py`, che disegna la mappa della città, il
+Drappo e i sei ritratti — e quel file è **fuori dal perimetro**: non sta in
+`scripts/`, non è nel manifest, e nessun gate lo guardava.
+
+Due strade e una sola sensata:
+
+- ❌ **spostarlo in `scripts/`** — inquinerebbe il toolkit della campagna con codice
+  che conosce le otto contrade di Tarsilia e non serve a nient'altro. E contraddice
+  il §1 di questo ADR: il modulo possiede i propri asset;
+- ✅ **ammettere i generatori locali, con condizioni verificate**.
+
+**Un modulo autoconclusivo può avere generatori propri** sotto la sua cartella, a
+quattro condizioni — tutte controllate da `validate_standalone.py`:
+
+1. **stdlib-only**, senza binari esterni: un generatore che richiede installazioni è
+   un generatore che fra sei mesi non gira più;
+2. **docstring di modulo** che dica cosa produce e con quale comando si rigenera;
+3. **citato in un `.md` del modulo**, così esiste anche per chi non fruga nelle
+   cartelle;
+4. **compila** — smoke minimo, in CI insieme al resto del gate.
+
+Restano invece **fuori discussione** in un generatore locale: scrivere fuori dalla
+propria cartella, toccare canone, chiamare la rete. Un tool che fa una di queste cose
+non è locale al modulo: va in `scripts/` e segue ADR-0012 per intero.
+
 ## Conseguenze
 
 - Più facile: un modulo nuovo nasce con un gate il giorno stesso, e nessuno deve
@@ -85,7 +115,8 @@ Verificato da `scripts/validate_standalone.py` (gate CI):
 
 ## Copertura
 
-- `scripts/validate_standalone.py` — il gate, in CI a ogni PR
+- `scripts/validate_standalone.py` — il gate, in CI a ogni PR (incluse le quattro
+  condizioni del §4)
 - `scripts/build_monster_catalog.py` — l'esclusione
 - `STANDALONE-Il-Drappo-di-Tarsilia/` — l'implementazione di riferimento
 - [ADR-0018](ADR-0018-apparato-uso-obbligatorio.md) — cosa deve contenere la guida

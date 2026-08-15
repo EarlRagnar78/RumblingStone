@@ -16,6 +16,8 @@ regex può fare bene e un revisore umano fa male:
   5. **Read-aloud** — ogni file-giornata deve avere almeno un box di prosa: un
      modulo senza testo da leggere ad alta voce non si gioca, si riassume.
   6. **I due contatori** — devono essere dichiarati con il valore di partenza.
+  7. **Generatori locali** (ADR-0017 §4) — i `.py` sotto la cartella del modulo devono
+     essere stdlib-only, avere una docstring, essere citati in un `.md` e compilare.
 
 Esce con codice 1 se trova errori: è pensato per la CI.
 
@@ -172,6 +174,40 @@ def check_counters(mod: Path, errors: list[str]) -> None:
             errors.append(f"{mod.name}: il contatore «{name}» non dichiara il valore di partenza")
 
 
+def check_generators(mod: Path, errors: list[str], warnings: list[str]) -> None:
+    """I generatori locali al modulo (ADR-0017 §4): stdlib, docstring, citati, compilano.
+
+    Un modulo autoconclusivo possiede i propri generatori — stanno sotto la sua
+    cartella e non in `scripts/`, quindi ADR-0012 non li copre. Le quattro condizioni
+    che li tengono vivi si verificano qui.
+    """
+    import py_compile
+    import tempfile
+
+    third_party = re.compile(
+        r"^\s*(?:import|from)\s+(cairosvg|PIL|numpy|yaml|requests|lxml|jinja2|bs4)\b", re.M
+    )
+    docs = "\n".join(
+        f.read_text(encoding="utf-8", errors="ignore") for f in mod.rglob("*.md")
+    )
+    for gen in sorted(mod.rglob("*.py")):
+        rel = gen.relative_to(ROOT)
+        src = gen.read_text(encoding="utf-8", errors="ignore")
+        if not re.match(r'^(#![^\n]*\n)?\s*"""', src):
+            errors.append(f"{rel}: generatore senza docstring di modulo (ADR-0017 §4.2)")
+        if third_party.search(src):
+            errors.append(f"{rel}: generatore non stdlib-only (ADR-0017 §4.1)")
+        if gen.name not in docs:
+            errors.append(f"{rel}: generatore mai citato in un .md del modulo (ADR-0017 §4.3)")
+        try:
+            with tempfile.NamedTemporaryFile(suffix=".pyc", delete=True) as tmp:
+                py_compile.compile(str(gen), cfile=tmp.name, doraise=True)
+        except py_compile.PyCompileError as exc:
+            errors.append(f"{rel}: non compila — {exc.msg.splitlines()[0]}")
+        if "rigenera" not in src.lower() and "regenera" not in src.lower():
+            warnings.append(f"{rel}: la docstring non dice come si rigenera")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--dir", help="valida solo questa cartella (relativa alla radice)")
@@ -191,6 +227,7 @@ def main() -> int:
         check_banned(mod, errors)
         check_readaloud(mod, errors)
         check_counters(mod, errors)
+        check_generators(mod, errors, warnings)
 
     for w in warnings:
         print(f"  ⚠ {w}")

@@ -38,6 +38,7 @@
 | `ALLEGATI/mappe/` | la Ruota e le stalle: JSON, master emoji-grid, SVG (vedi il `README.md` lì dentro) |
 | `ALLEGATI/tavole/` | **tavole vettoriali**: mappa della città, il Drappo, sei ritratti (rigenerabili) |
 | `ALLEGATI/handout/` | **i quattro prop da stampare**: il contratto di Vesca, la pagina del registro, la ricevuta, il decreto |
+| `homebrew/` | **quattro booklet** impaginati (DM · Giocatori · Fascicolo schede · Prop) + i PDF |
 | `ALLEGATI/mappe/uvtt/` | le due mappe pronte per **Foundry / Roll20** |
 | `ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md` | art direction e prompt per l'edizione raster |
 | `IP-E-LICENZE.md` | Community Use Policy Paizo, OGL, provenienza |

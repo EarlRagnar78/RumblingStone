@@ -199,10 +199,15 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 | `06-VILLAIN-E-AGENDE.md` | le agende dei villain **ora per ora**, il giro del mondo, gli **incontri scalabili** 4/5/6/7 |
 | `07-GUIDA-DM-PASSO-PASSO.md` | **la regia**: le tre serate minuto per minuto, i rilanci, le voci dei PNG |
 | `FASCICOLO-SCHEDE-GIOCATORE.md` | i sei background da dare in mano + la matrice dei legami |
+| `08-CASSETTA-DEL-DM.md` | **l'apparato d'uso**: foglio del cast, pronuncia, indice dei read-aloud, inserto per lo schermo, i suoni, il momento da fotografare, accessibilità |
+| `STATO-DEL-MODULO.md` | la memoria fra le tre serate: contatori, patti, scelte, **Echo Ledger**. Da copiare per gruppo |
 | `PLAYTEST-ALFA.md` | audit meccanico, dry-run delle tre serate, le nove correzioni applicate |
+| `PLAYTEST-SCHEDA-FEEDBACK.md` | scheda giocatore, debrief del DM, come si passa da alfa a beta |
 | `STATBLOCCHI-PF1E.md` | PNG, rivali, sicari, cavalli |
 | `ALLEGATI/mappe/` | la Ruota e le stalle: JSON, master emoji-grid, SVG (vedi il `README.md` lì dentro) |
 | `ALLEGATI/tavole/` | **tavole vettoriali**: mappa della città, il Drappo, sei ritratti (rigenerabili) |
+| `ALLEGATI/handout/` | **i quattro prop da stampare**: il contratto di Vesca, la pagina del registro, la ricevuta, il decreto |
+| `ALLEGATI/mappe/uvtt/` | le due mappe pronte per **Foundry / Roll20** |
 | `ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md` | art direction e prompt per l'edizione raster |
 | `IP-E-LICENZE.md` | Community Use Policy Paizo, OGL, provenienza |
 
@@ -261,9 +266,16 @@ dopo, anche.
 5. la **mappa della Ruota** (`ALLEGATI/mappe/rendered/`) e la **mappa della città**
    (`ALLEGATI/tavole/tarsilia-citta.svg`): una copia ciascuna, al centro del tavolo.
 
+**I quattro prop** (`ALLEGATI/handout/`) si stampano e si consegnano **quando la
+fiction li consegna**, mai prima: il decreto al Giorno 1, il contratto quando Vesca lo
+posa, il registro a Melchio alla prima serata, la ricevuta se perquisiscono Sfregio.
+Una volta dati, **non si ritirano**.
+
 **Per il DM:**
 
-- **`07-GUIDA-DM-PASSO-PASSO.md`** — è il file che tieni aperto tutta la sera;
+- **`07-GUIDA-DM-PASSO-PASSO.md`** e **`08-CASSETTA-DEL-DM.md`** — sono i due file
+  che tieni aperti tutta la sera;
+- **`STATO-DEL-MODULO.md`**, copiato e stampato: si compila a matita a fine serata;
 - questo file e il file della giornata che si gioca;
 - `06-VILLAIN-E-AGENDE.md` §1 (l'agenda di Vesca) e `05-INIZIAZIONE` §5 (la griglia
   degli eventi personali, da spuntare);
@@ -680,7 +692,253 @@ Da leggere prima di sedersi. Servono quando ti manca la battuta.
 
 \page
 
-# III · Le otto contrade
+# III · La cassetta del DM — cast, pronuncia, read-aloud, schermo, suoni
+
+{{note
+##### ⚠ SOLO DM
+Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
+}}
+
+# La cassetta del DM — le sei pagine che non si leggono per piacere
+
+> **A cosa serve.** Un modulo scritto bene si gioca male se il DM passa la serata a
+> cercare. Qui c'è l'apparato d'uso: **chi è chi in una pagina**, come si pronunciano
+> i nomi, **dove sono tutti i read-aloud**, l'inserto per lo schermo, i suoni, e il
+> momento che il tavolo racconterà.
+>
+> Si stampa **una volta** e si tiene aperto tutte e tre le serate.
+
+| § | Cosa | Quando serve |
+|---|---|---|
+| 1 | **Il foglio del cast** — ventotto nomi, una riga a testa | sempre |
+| 2 | **Come si pronunciano** | in preparazione |
+| 3 | **Indice dei read-aloud** | in preparazione, ad alta voce |
+| 4 | **L'inserto dello schermo** — una pagina, tutte le CD | sempre |
+| 5 | **I suoni** — cue per serata | in preparazione |
+| 6 | **Il momento da fotografare** | uno per serata |
+| 7 | **Accessibilità** | se serve al tuo tavolo |
+
+---
+
+## §1 · Il foglio del cast
+
+**Legenda**: ✦ compare in tutte e tre le serate · ◆ una volta sola · ⚔ statblocco in
+`STATBLOCCHI-PF1E.md`
+
+### Chi comanda
+
+| | Nome | Ruolo | Vuole | Il tic vocale | Dove |
+|---|---|---|---|---|---|
+| ✦⚔ | **Vidalia Roncetti** | Sovrintendente al Drappo | che Tarsilia esista fra vent'anni | dice **esattamente cosa farà**, prima di farlo | porticato, palco |
+| ✦⚔ | **Ottavia Vesca** | Capitana del **Bruco** | il bosco di spini, per rimettere al lavoro 80 tintori | **finisce le frasi degli altri** senza accorgersene | tintoria, ovunque |
+| ✦⚔ | **Gerlando Attu** | Capitano dell'**Oca** | il terzo Drappo di fila | parla di **cifre e di tempo** anche parlando d'altro | banco, mercato del grano |
+| ✦⚔ | **Zoe Barbanera** | Capitana dell'**Onda** | che l'Oca perda | frasi **corte**; non guarda chi non stima | la Cesta Rotta |
+| ◆⚔ | **Ubalda Trenchi** | Capitana della **Torre**, milizia | che la corsa fili liscia | **elenca** invece di minacciare | ovunque ci siano guai |
+| ◆⚔ | **Peleo Vanni** | Capitano del **Drago** | dati per un trattato | ripete il prezzo **con la stessa intonazione** | pista, banco delle misure |
+| ◆⚔ | **Sirena Occo** | Capitana della **Civetta**, avvocata | sapere prima degli altri | fa **domande di cui sa la risposta** | il suo studio |
+| ◆⚔ | **Lino Rasca** | Capitano del **Leocorno**, pittore del Drappo | che il Drappo finisca dove se lo merita | si **interrompe** a metà frase | teatro sul ponte |
+
+### Il rione dell'Istrice — casa vostra
+
+| | Nome | Ruolo | Vuole | Il tic | Dove |
+|---|---|---|---|---|---|
+| ✦ | **Nonna Grasa** | 71 anni, nessun ufficio, le si chiede tutto | i quaranta letti d'inverno anche l'anno prossimo | dice **numeri** al posto dei sentimenti | oratorio, ospizio |
+| ✦ | **Orsa** | ostessa della Zoppa, braccia da fabbro | che suo figlio non faccia il raccoglitore | **versa da bere e poi chiede** | la Zoppa |
+| ◆ | **Bardo il Bardo** | mezzelfo, 24 anni, tamburino | essere preso sul serio | suona male **e ci tiene** | corteo, carro |
+| ◆ | **Rico** | raccoglitore, tosse da aprile | tornare al bosco | si scusa **prima** di tossire | ospizio |
+| ◆ | **Regina** | mula, 22 anni | niente | batte lo zoccolo: è il primo allarme | stalla |
+
+### Chi porta guai
+
+| | Nome | Ruolo | Vuole | Il tic | Dove |
+|---|---|---|---|---|---|
+| ◆⚔ | **Sfregio** | ladro 4, esecutore | essere pagato, non lasciare tracce | **non beve** e conta le uscite | Fondaco, poi la stalla |
+| ◆ | **Corvino Salle** | il mediatore, da Cassomir | che nessuno sappia per chi lavora | **paga** invece di rispondere | solo se lo cercano |
+| ◆ | **Ferrante** | allibratore rovinato, fascia grigia al polso | che Nocca lo dica alla sua Capitana | parla **basso e stanco**, senza minaccia | mercato del pesce, poi ovunque |
+| ◆⚔ | **Pico** | 17 anni, bravaccio a giornata | non essere lì | guarda **per terra** quando parla | fontana, poi la stalla |
+
+### Chi vende qualcosa
+
+| | Nome | Bottega | Prezzo | Il gancio |
+|---|---|---|---|---|
+| ◆ | **mastro Ovidio** | maniscalco della Torre | 12 mo, ferri fatti bene | vuole un testimone per la causa del fratello |
+| ◆ | **il vecchio Cima** | maniscalco del Bruco, 80 anni | 4 mo, ferri **storti** | non per malizia: non ci vede |
+| ◆ | **Delia** | speziale, mezzelfa di 90 anni | listino | compra veleni **senza chiedere** |
+| ◆ | **Cerbo** | guardiano del magazzino, 61 anni | — | dorme lì perché a casa c'è la nuora. **Urla, non combatte** |
+| ◆ | **Bolsa** | carrettiere | 30 mo il carico di fieno | sempre in ritardo, sempre sudato |
+| ◆ | **Cencio** | sarto, sordo da un orecchio | 5-30 mo | livrea nuova = **+1 Morale** alla sbandierata |
+
+### I fantini rivali *(tutti ⚔)*
+
+| Contrada | Fantino | Cavalcare | Come corre |
+|---|---|---|---|
+| **Oca** | Selmo Ancora | **+12** | il migliore. Scudiscia alla Curva Sud dove il palco non vede |
+| **Onda** | Tilde Barbanera | +10 | pulita, mantiene i patti alla lettera |
+| **Bruco** | «il Muto» | +9 | **nessuna irregolarità**. Mai. È il fastidio |
+| **Leocorno** | Fiora Rasca | +8 | corre bene e canta meglio |
+
+---
+
+## §2 · Come si pronunciano
+
+I nomi di Tarsilia sono italiani e si leggono come si scrivono. **Quelli di Golarion
+no**, e un DM che esita su un nome smette di usarlo.
+
+| Nome | Si legge | Chi è |
+|---|---|---|
+| **Abadar** | *à-ba-dar* | città, ricchezza, legge — patrono dell'**Oca** |
+| **Iomedae** | *io-mé-dae* (tre sillabe e mezzo, non «iomedài») | onore e giustizia — **Torre** |
+| **Gorum** | *gò-rum* | la guerra — **Torre** |
+| **Norgorber** | *nor-gòr-ber* | segreti, veleno, omicidio — **Bruco** |
+| **Sarenrae** | *sa-rèn-rae* | sole, guarigione, redenzione — **Istrice** |
+| **Erastil** | *e-rà-stil* | comunità e famiglia — **Istrice** |
+| **Nethys** | *nè-this* | la magia, mezza bianca e mezza nera — **Drago** |
+| **Calistria** | *ca-lì-stria* | vendetta, inganno, spie — **Civetta** |
+| **Shelyn** | *shè-lin* | bellezza, arte, musica — **Leocorno** |
+| **Gozreh** | *gòz-re* (la *h* non si sente) | mare e cielo — **Onda** |
+| **Desna** | *dès-na* | luna, stelle, viaggio — **Onda** |
+| **Cassomir** | *cas-so-mìr* | la città a valle |
+| **Sellen** | *sèl-len* | il fiume |
+
+> **Il nome che sbaglierai**: *Tarsilia* ha l'accento sulla **i** — *tar-sì-lia*.
+
+---
+
+## §3 · Indice dei read-aloud
+
+**Leggili ad alta voce in preparazione.** Se ti manca il fiato o inciampi su un nome,
+il testo è sbagliato — e si corregge prima, non davanti a sei persone.
+
+| # | Box | File | Quando | Righe | Pilastro |
+|---|---|---|---|---|---|
+| 1 | L'Investitura — la resina di Nonna Grasa | `05-INIZIAZIONE` §2 | S1 apertura | 6 | Casa di Davide |
+| 2 | Chiusura del rito — *«adesso è colpa vostra»* | `05-INIZIAZIONE` §2 | S1 | 3 | — |
+| 3 | Il decreto in piazza | `01-GIORNO-1` §1 | S1 | 11 | Andor |
+| 4 | L'offerta di Vesca | `01-GIORNO-1` §3 | S1 | 12 | Game of Thrones |
+| 5 | La Sorte — il nome del cavallo | `01-GIORNO-1` §5 | S1 chiusura | 7 | — |
+| 6 | Il mercato del grano | `02-GIORNO-2` §2 | S2 | 9 | Game of Thrones |
+| 7 | La Cena della vigilia | `02-GIORNO-2` §4 | S2 | 10 | LotR |
+| 8 | Ferrante — *«non voglio le monete»* | `02-GIORNO-2` §5 | S2 | 3 | Mercer |
+| 9 | Le stalle — l'aceto sulla paglia | `02-GIORNO-2` §6 | S2 | 5 | Salvatore |
+| 10 | La benedizione | `03-GIORNO-3` §1 | S3 | 11 | LotR |
+| 11 | Attu al recinto dei fantini | `03-GIORNO-3` §3 | S3 | 4 | Game of Thrones |
+| 12 | Sotto le funi | `03-GIORNO-3` §4 | S3 | 8 | Salvatore |
+| 13 | **Il transennato che cede** | `03-GIORNO-3` §6 | S3 climax | 5 | Salvatore |
+| 14 | Il decreto, la seconda volta | `03-GIORNO-3` §7.2 | S3 | 7 | Andor |
+| 15 | Le bandiere ripiegate | `03-GIORNO-3` chiusura | S3 ultima riga | 3 | — |
+
+**I tre che devi saper leggere a memoria**: il **4** (l'offerta), il **13** (il
+transennato), il **15** (le bandiere). Sono i tre punti in cui il tavolo tace.
+
+---
+
+## §4 · L'inserto dello schermo — una pagina, tutto
+
+### Le CD che userai davvero
+
+| Cosa | CD |
+|---|---|
+| **Corsa** — Dritto · Curva Nord · Curva Sud | **12 · 17 · 15** |
+| Dritto in rischio (2 Lunghezze) | 17 |
+| Non cadere dopo un critico di scudiscio | 15 |
+| Fermare un cavallo scosso | 20 |
+| Chiamare il cavallo (Add. Animali, curva nord) | 15 |
+| Il canto sopra il rumore (Intrattenere, dal carro) | 16 |
+| Protestare dal palco (Diplomazia) | 18 |
+| Testimoniare un fallo (Percepire Intenzioni) | 15 |
+| Urlare un ordine (Intimidire, alle funi) | 15 |
+| **Truccare la Sorte** (per prova) | 14-18 |
+| Patto normale / che costa una posizione | atteggiamento / **+5** |
+| Percepire il tradimento nella clausola | **20** |
+| Corruzione del fantino (TS Volontà) | 15 (+5 se enorme) |
+| Vedere un fallo dal palco | 12 |
+
+### I due contatori
+
+```
+MORALE  0 1 2 3 4 5 6 7 8 9 10     ONORE  0 1 2 3 4 5 6 7 8 9 10
+            ▲ parte qui                          ▲ parte qui
+0-2 → −1 Cavalcare/Iniziativa      ≤3 → il fantino tira i remi in barca
+6-8 → +1                            10 → accetta un ordine suicida
+9-10 → +2, e un rilancio
+```
+
+### Il giro di un tratto, in cinque passi
+
+1. due righe di stato → 2. il giro dei posti (chi ha ancora l'azione) → 3. il tiro
+del fantino → 4. i tre rivali vivi (un d20 a testa) → 5. chi guadagna, e **una cosa
+che cambia nella piazza**.
+
+### Le pietre miliari, all'ora scritta
+
+`G1 mattina` la Sorte · `G1 sera` l'offerta · `G2 mezzogiorno` i Partiti ·
+`G2 sera` la Cena · `G2 notte` le stalle · `G3 alba` la benedizione ·
+`G3 mezzogiorno` lo Stacco · `G3 pomeriggio` la Corsa · `G3 sera` il decreto.
+
+### Se ti blocchi
+
+chiedi a chi ha parlato meno cosa sta facendo · innesca un evento personale · fai
+entrare un PNG che vuole una cosa · sposta l'orologio · tira una diceria.
+
+---
+
+## §5 · I suoni
+
+Non serve una colonna sonora. Servono **quattro cue per serata**, e il silenzio in
+mezzo. Nessun titolo di brano: **descrizioni**, così ognuno usa quello che ha.
+
+| Serata | Momento | Che suono |
+|---|---|---|
+| **S1** | l'Investitura | niente. **Silenzio, e sedie che si spostano** |
+| | il decreto in piazza | brusio di folla che si spegne su una voce sola |
+| | il Peso, nel bosco | lavoro: asce lontane, respiro, insetti |
+| | la Sorte | **un tamburo solo**, lento, e poi stop netto sul nome |
+| **S2** | i Partiti | interno freddo: passi su pietra, eco, nessuna musica |
+| | il duello dei canti | voci reali, sopra le righe. Se il tavolo canta, **lascialo cantare** |
+| | la Cena | tavolate, stoviglie, una fisarmonica che stona |
+| | le stalle | **niente fino al primo tiro.** Poi solo cavalli |
+| **S3** | la benedizione | ambiente di chiesa, e uno zoccolo sul mattone |
+| | il corteo | tamburi e ottoni, forte, e **abbassa a metà**: la gente parla sopra |
+| | lo Stacco | **taglia tutto.** Fiato di cavalli |
+| | la Corsa | percussioni che accelerano per tre giri. Al terzo, **spegni sul crollo** |
+
+> **La regola dei suoni**: si spengono nei momenti importanti, non si alzano. Il
+> silenzio dopo il fragore è quello che il tavolo sente.
+
+---
+
+## §6 · Il momento da fotografare
+
+Un modulo che non sa qual è il suo picco lo brucia correndo. Uno per serata:
+
+| Serata | Il momento | Come si riconosce |
+|---|---|---|
+| **S1** | **Vesca posa il foglio piegato in tre e non lo apre** | il tavolo smette di prendere appunti |
+| **S2** | **la Cena, quando passa il cavallo fra le tavole** | ottanta persone smettono di masticare, e i giocatori pure |
+| **S3** | **il transennato che si piega verso l'interno** | nessuno parla per cinque secondi. Poi parlano tutti insieme |
+
+**Cosa fare quando arriva**: rallenta, non aggiungere niente, e **chiudi sulla
+domanda**. Se il tavolo tace, hai vinto: non riempire il silenzio.
+
+---
+
+## §7 · Accessibilità
+
+Poco lavoro, e riguarda più tavoli di quanto sembri.
+
+| Bisogno | Cosa fare |
+|---|---|
+| **Daltonismo** (1 su 12 fra i maschi) | sulle mappe, PG e nemici sono **blu e rosso**: aggiungi ai segnalini una **forma** diversa (cerchio/quadrato) o un numero. La legenda numera già ogni unità: usa i numeri, non i colori |
+| **Dislessia** | dai le schede **senza corsivo**: i background del fascicolo si leggono ad alta voce **tu**, non il giocatore. Il fascicolo funziona uguale |
+| **Vista** | i booklet HTML si ingrandiscono senza rompersi (testo fluido, SVG vettoriali): apri il file invece di stampare, e usa lo zoom del browser |
+| **Udito** | i cue del §5 sono **descrizioni**, non suoni obbligatori. Il modulo si gioca identico in silenzio |
+| **Carico cognitivo** | la Corsa a nove tratti è il punto più denso: se al tavolo serve, gioca il **terzo giro in un tratto solo** — un tiro, e l'esito. Non perde niente di essenziale |
+| **Sicurezza emotiva** | il contratto del tavolo sta in `00-HUB` §6. Le due dita sul tavolo valgono **anche per il DM** |
+
+
+\page
+
+# IV · Le otto contrade
 
 {{note
 ##### ⚠ SOLO DM
@@ -892,7 +1150,7 @@ tracciato come Lotto 3 in `plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md`.
 
 \page
 
-# IV · Regole della corsa
+# V · Regole della corsa
 
 {{note
 ##### ⚠ SOLO DM
@@ -1177,7 +1435,7 @@ bonus, e nessuno che ringrazi. Doveva farlo.
 
 \page
 
-# V · L'Investitura e i diciotto eventi
+# VI · L'Investitura e i diciotto eventi
 
 {{note
 ##### ⚠ SOLO DM
@@ -1380,7 +1638,7 @@ Fotocopiala e segna. Se a fine serata una riga è vuota, quel giocatore ha guard
 
 \page
 
-# VI · I luoghi dove si complotta
+# VII · I luoghi dove si complotta
 
 {{note
 ##### ⚠ SOLO DM
@@ -1614,7 +1872,7 @@ città.
 
 \page
 
-# VII · Le agende dei villain
+# VIII · Le agende dei villain
 
 {{note
 ##### ⚠ SOLO DM
@@ -1879,7 +2137,7 @@ Capita, se il gruppo arriva da un'altra avventura. Tre correzioni e basta:
 
 \page
 
-# VIII · Giorno 1 — La Sorte
+# IX · Giorno 1 — La Sorte
 
 {{note
 ##### ⚠ SOLO DM
@@ -2268,7 +2526,7 @@ di notte, gli altri fanno la Sorte: le due scene si intrecciano bene.
 
 \page
 
-# IX · Giorno 2 — I Partiti e la Cena
+# X · Giorno 2 — I Partiti e la Cena
 
 {{note
 ##### ⚠ SOLO DM
@@ -2645,7 +2903,7 @@ sessione 3 regge: taglia il corteo (§2 del Giorno 3) e vai.
 
 \page
 
-# X · Giorno 3 — Lo Stacco e la Corsa
+# XI · Giorno 3 — Lo Stacco e la Corsa
 
 {{note
 ##### ⚠ SOLO DM
@@ -3046,7 +3304,7 @@ Civetta — oppure vale molto di più tenuta in tasca.
 
 \page
 
-# XI · Statblocchi PF1e
+# XII · Statblocchi PF1e
 
 {{note
 ##### ⚠ SOLO DM
@@ -3272,7 +3530,7 @@ qualsiasi cosa, e questa è la regola più dura del modulo.
 
 \page
 
-# XII · Le sei schede
+# XIII · Le sei schede
 
 {{note
 ##### ⚠ SOLO DM
@@ -3636,7 +3894,7 @@ E poi si comincia.
 
 \page
 
-# XIII · Playtest alfa
+# XIV · Playtest alfa
 
 {{note
 ##### ⚠ SOLO DM
@@ -3791,7 +4049,7 @@ prima sessione reale:
 
 \page
 
-# XIV · Le mappe
+# XV · Le mappe
 
 {{note
 ##### ⚠ SOLO DM
@@ -3835,7 +4093,7 @@ Scala: **1,5 m per quadretto** su entrambe.
 
 \page
 
-# XV · IP e licenze
+# XVI · IP e licenze
 
 {{note
 ##### ⚠ SOLO DM
@@ -3918,22 +4176,33 @@ policy cambiano, e questa formula è quella nota al momento della stesura.
 
 ---
 
-## §4 · Le bonifiche §7 del rapporto originale
+## §4 · Le bonifiche §7 del rapporto originale — stato reale
 
-La checklist del rapporto di Channathgate, punto per punto, applicata qui:
+> ⚠️ **Decisione del DM, 2026-08-15**: *«per il momento usa gli scudi di Golarion e i
+> nomi senesi, poi bonificheremo anche quelli»*. Il modulo ha quindi **rimesso i nomi
+> delle contrade senesi** (Oca, Torre, Bruco, Istrice, Drago, Civetta, Leocorno,
+> Onda). Questa sezione dice la verità su cosa ne consegue, perché una nota IP che
+> dichiara il falso è il difetto peggiore che un file come questo possa avere.
+
+La checklist del rapporto di Channathgate, punto per punto, **allo stato attuale**:
 
 | # | Bonifica richiesta | Stato |
 |---|---|---|
-| 1 | Rinominare le contrade | ✅ **fatto** — otto nomi nuovi (Oca, Torre, Bruco, Istrice, Drago, Civetta, Leocorno, Onda) |
-| 2 | Eliminare i titoli araldici ufficiali | ✅ **fatto** — nessun titolo. «Capitano» è usato come nome comune dell'ufficio |
-| 3 | Cambiare le livree | ✅ già chiuso nella serie Golarion (2026-08-09) |
+| 1 | Rinominare le contrade | ❌ **sospesa per decisione del DM** — i nomi sono quelli reali |
+| 2 | Eliminare i titoli araldici ufficiali | ✅ **fatto** — nessun titolo («Nobile», «Sovrana», «Priora»). «Capitano» è usato come nome comune dell'ufficio |
+| 3 | Cambiare le livree | ✅ già chiuso nella serie Golarion (2026-08-09): le otto livree derivano dalla divinità patrona, non dall'allegato A del Regolamento |
 | 4 | Riscrivere i motti da zero | ✅ **fatto** — otto motti nuovi, nessuno dei quali parafrasa i motti reali (confronto in `CONTRADE-DI-TARSILIA.md` §1) |
-| 5 | Rimuovere «Piazza il Campo» e la geometria a nove spicchi | ✅ **fatto** — la piazza è **la Ruota**: un anello rettangolare intorno a un mercato coperto, geometria diversa, nome diverso |
+| 5 | Rimuovere «Piazza il Campo» e la geometria a nove spicchi | ✅ **fatto** — la piazza è **la Ruota**: anello rettangolare intorno a un mercato coperto, nome e geometria diversi |
 | 6 | Rinominare l'evento | ✅ **fatto** — è **il Drappo**. La parola *palio* non compare nel modulo |
-| 7 | Correggere le note IP e documentare la provenienza delle immagini | ✅ **questo file**, più `ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md` §5 |
+| 7 | Correggere le note IP e documentare la provenienza delle immagini | ✅ **questo file**, più `ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md` §5. Le tavole vettoriali sono generate da `ALLEGATI/tavole/build_tavole.py`: provenienza tracciata per costruzione |
 | 8 | Riambientare fuori da Forgotten Realms | ✅ **fatto** — §2 |
 
-**Il lessico è stato sostituito**, non solo i nomi propri:
+**Sei su otto chiuse, una sospesa, una già chiusa altrove.** Restano aperti insieme
+il punto 1 (i nomi) e le **figure degli scudi** — oca, torre, bruco, istrice, drago,
+civetta, leocorno, onda — che sommate ai nomi ricostruiscono l'evocazione che il
+rapporto §3 individuava come il vero rischio.
+
+**Il lessico è comunque sostituito**, e questo resta vero:
 
 | Channathgate (3.5) | Tarsilia (PF1e) |
 |---|---|
@@ -3946,19 +4215,13 @@ La checklist del rapporto di Channathgate, punto per punto, applicata qui:
 | il drappellone / il cencio | **il Drappo** |
 | Piazza del Palio | **la Ruota** |
 
-### Cosa resta aperto
+### Cosa serve per chiudere anche il punto 1
 
-**Le otto figure degli stemmi.** Gli scudi riusati sono quelli della serie Golarion,
-e le figure restano oca, torre, bruco, istrice, drago, civetta, unicorno, onda — un
-insieme che, preso tutto insieme, richiama ancora il bestiario senese anche con nomi
-e motti nuovi. Per un'edizione pubblicabile vanno sostituite almeno quattro figure su
-otto. È tracciato come **Lotto 3** in
-[`plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md`](../plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md).
-
-**I cartigli dentro gli SVG** portano ancora i motti della serie di origine, non
-quelli del §1 delle contrade. Al tavolo non si nota; in stampa sì.
-
----
+Una passata sola, e il modulo è già attrezzata per riceverla: i nomi delle contrade
+compaiono in **nove file** e sono sostituibili con una tabella di rimpiazzo (l'ultima
+è stata fatta nella direzione opposta il 2026-08-15). Insieme vanno cambiate almeno
+**quattro figure su otto** negli scudi, altrimenti il cumulo resta. È il **Lotto 3**
+in [`plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md`](../plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md).
 
 ## §5 · Le icone degli stemmi
 
@@ -3977,9 +4240,278 @@ compatibile anche con l'uso commerciale **con attribuzione**. L'obbligo è assol
 |---|---|
 | **Giocarlo al proprio tavolo** | ✅ senza riserve |
 | **Darlo ai propri giocatori** | ✅ |
-| **Pubblicarlo gratis** | ✅ con la nota CUP del §3 e l'attribuzione del §5 |
-| **Venderlo** | ❌ non allo stato: la CUP vieta espressamente di far pagare l'accesso, e restano aperte le figure degli stemmi (§4). Servirebbe togliere gli agganci Golarion (§3, via d'uscita) e rifare quattro scudi |
+| **Pubblicarlo gratis** | 🟡 con la nota CUP del §3 e l'attribuzione del §5 — e sapendo che i **nomi delle contrade sono quelli reali** (§4, punto 1 sospeso): rischio basso ma non nullo, esattamente come per l'arco di Channathgate |
+| **Venderlo** | ❌ non allo stato. La CUP vieta espressamente di far pagare l'accesso, e restano aperti il punto 1 e le figure degli scudi. Servirebbe: togliere gli agganci Golarion (§3, via d'uscita), rinominare le contrade, rifare quattro scudi |
 
-Rispetto al resto del repo la differenza è netta, ed è tutto il senso di questo
-lavoro: **qui il blocco assorbente WotC non c'è**. Quello che resta è governabile.
+La differenza rispetto al resto del repo resta netta, ed è tutto il senso di questo
+lavoro: **qui il blocco assorbente WotC non c'è**. Quello che resta è governabile, e
+adesso è scritto quanto manca.
+
+
+\page
+
+# XVII · Stato del modulo (da copiare per gruppo)
+
+{{note
+##### ⚠ SOLO DM
+Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
+}}
+
+# Stato del modulo — la memoria fra le tre serate
+
+> **Perché esiste.** Tre serate senza uno stato scritto sono tre serate scollegate: i
+> patti del Giorno 2 si dimenticano al Giorno 3, e gli echi non tornano mai.
+>
+> **Come si usa.** Si stampa **una copia sola**, si compila **a matita alla fine di
+> ogni serata** (cinque minuti, mentre i giocatori si alzano), e si rilegge **ad alta
+> voce all'inizio della successiva**. Non serve altro.
+>
+> ⚠️ Questo file è un **modello vuoto**. Per giocarlo, copialo — non compilarlo qui
+> dentro, o il prossimo gruppo eredita le scelte del precedente.
+
+---
+
+## §0 · Intestazione
+
+| | |
+|---|---|
+| **Gruppo** | ______________________ |
+| **DM** | ______________________ |
+| **Date** | S1 ____ / S2 ____ / S3 ____ |
+| **Giocatori presenti** | S1 ____ · S2 ____ · S3 ____ |
+
+---
+
+## §1 · I due contatori
+
+Segna il valore **a fine serata** e, sotto, **perché**. La colonna «perché» è quella
+che conta: è ciò che rileggi all'inizio della serata dopo.
+
+| | Morale | Perché | Onore | Perché |
+|---|:--:|---|:--:|---|
+| **inizio S1** | **3** | — | **5** | — |
+| fine S1 | ___ | | ___ | |
+| fine S2 | ___ | | ___ | |
+| **allo Stacco** | ___ | | ___ | |
+| fine corsa | ___ | | ___ | |
+
+---
+
+## §2 · I patti scritti
+
+Ogni patto del Giorno 2 si scrive su un foglietto e finisce qui. **In Corsa vale come
+è scritto**, non come i giocatori ricordano di averlo inteso.
+
+| # | Con chi | Cosa danno | Cosa chiedono | La clausola | Rispettato? |
+|---|---|---|---|---|---|
+| 1 | | | | | ⬜ sì ⬜ no |
+| 2 | | | | | ⬜ sì ⬜ no |
+| 3 | | | | | ⬜ sì ⬜ no |
+
+**Patti rifiutati consapevolmente** (valgono Morale +1 a testa se il rione lo sa):
+_______________________________________________
+
+---
+
+## §3 · Le scelte che cambiano il finale
+
+Spunta man mano. Sono le sette che il §7 del Giorno 3 legge per decidere l'esito.
+
+| Scelta | Quando | Esito |
+|---|---|---|
+| L'offerta di Vesca | G1 §3 | ⬜ rifiutata ⬜ accettata ⬜ rimandata |
+| Come hanno pagato il Peso | G1 §4 | ⬜ resina ⬜ anticipo di Attu ⬜ legno vecchio ⬜ colpo al magazzino ⬜ cantina ⬜ altro: ______ |
+| La Sorte | G1 §5 | ⬜ truccata ⬜ onesta ⬜ fallita · **cavallo**: __________ **Ritmo**: ___ |
+| Nocca confessa | G2 §5 | ⬜ sì ⬜ no ⬜ ha minacciato Ferrante ⬜ altro |
+| Le stalle | G2 §6 | ⬜ Sfregio fermato ⬜ cavallo azzoppato ⬜ acqua avvelenata ⬜ Nocca rapito ⬜ Sfregio catturato vivo |
+| La ricevuta di Salle | G2-G3 | ⬜ non trovata ⬜ trovata ⬜ venduta ⬜ **portata a Vesca** |
+| **La curva nord** | G3 §6 | ⬜ hanno salvato ⬜ non hanno salvato ⬜ parzialmente (feriti: ___ morti: ___) |
+
+**Piazzamento finale**: ⬜ 1° ⬜ 2° ⬜ 3° ⬜ fuori dai primi tre
+**Il seggio**: ⬜ salvo ⬜ perso ⬜ perso col nome mantenuto (§7.1)
+
+---
+
+## §4 · Echo Ledger
+
+Il registro degli echi: **cosa hanno fatto → cosa torna → quando**. Si compila
+durante, non dopo. Un eco che non è scritto non torna mai.
+
+| # | Evento | L'eco | Quando riemerge | Chi lo porta |
+|---|---|---|---|---|
+| E-01 | | | | |
+| E-02 | | | | |
+| E-03 | | | | |
+| E-04 | | | | |
+| E-05 | | | | |
+
+**Gli echi già scritti nel modulo** — spunta quelli che si sono accesi:
+
+- ⬜ **Vanna e il debito** → a dicembre Attu si comporta come lei si è comportata con lui
+- ⬜ **Nocca e Ferrante** → se confessa e sopravvive, Ferrante gli offre un lavoro pulito
+- ⬜ **Ombra e Nonna Grasa** → se usa *ritardare veleno*, il rione la chiama **Berta**
+- ⬜ **Tesio e i cinquanta passi** → se consegna il registro, entro un anno è scrivano della Sovrintendente
+- ⬜ **Berenice e Rasca** → se ha cantato con lui, Rasca lascia una lettera alla Zoppa
+- ⬜ **Melchio e i nove nomi** → li riconosce nel Drappo, a colpo d'occhio
+- ⬜ **Il guado rubato** → Attu ha una prova, e le prove non scadono
+- ⬜ **Chi ha parlato con Sirena Occo** → al G3 qualcosa che le hanno detto torna dalla bocca di un altro
+
+---
+
+## §5 · Spotlight — chi ha davvero giocato
+
+Conta **quante volte ha tirato** ciascuno, o anche solo quante volte ha parlato in
+personaggio. Se qualcuno sta sotto la metà della media, la serata dopo comincia
+da lui.
+
+| | Vanna | Nocca | Ombra | Tesio | Berenice | Melchio |
+|---|:--:|:--:|:--:|:--:|:--:|:--:|
+| **S1** | | | | | | |
+| **S2** | | | | | | |
+| **S3** | | | | | | |
+
+**Eventi personali giocati** (griglia completa in `05-INIZIAZIONE` §5):
+S1 ____/6 · S2 ____/6 · S3 ____/6
+
+---
+
+## §6 · Le tre righe di ripresa
+
+Da scrivere a fine serata e **leggere ad alta voce** all'inizio della successiva.
+Non un riassunto: **tre fatti**, quelli che pesano.
+
+**Fine S1** → 1. _______________ 2. _______________ 3. _______________
+
+**Fine S2** → 1. _______________ 2. _______________ 3. _______________
+
+---
+
+## §7 · Cosa portare alla serata dopo
+
+- ⬜ i foglietti dei patti (§2)
+- ⬜ il foglio dei contatori aggiornato
+- ⬜ i prop già consegnati — **non ritirarli mai**: restano ai giocatori
+- ⬜ la griglia degli eventi personali
+- ⬜ una cosa che i giocatori hanno inventato e che tu farai diventare vera
+
+
+\page
+
+# XVIII · Schede di feedback — da alfa a beta
+
+{{note
+##### ⚠ SOLO DM
+Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
+}}
+
+# Schede di feedback — come si passa da alfa a beta
+
+> **La regola che rende utile un playtest**: non chiedere *«ti è piaciuto?»*. Chiedi
+> **cosa ricordano senza guardare gli appunti** e **dove si sono annoiati**. La prima
+> domanda misura la cortesia, le altre due misurano il modulo.
+>
+> Metodo completo nella skill `rumblingstone-playtest`.
+
+---
+
+## §1 · Scheda giocatore — **due minuti, a fine serata**
+
+Si stampa una copia a testa. Si compila **prima di alzarsi**, in silenzio, e non si
+firma. Il DM la legge **il giorno dopo**, non davanti a loro.
+
+---
+
+**Serata n. ____ · il mio personaggio era ____________________**
+
+**1.** Senza guardare niente: **le tre cose che mi ricordo di stasera**.
+
+1. _______________________________________________
+2. _______________________________________________
+3. _______________________________________________
+
+**2.** Il momento in cui **mi sono annoiato o distratto** è stato:
+_______________________________________________
+*(se non è successo, scrivi «mai» — è un dato buono)*
+
+**3.** Il momento in cui **ho pensato «adesso tocca a me»**:
+_______________________________________________
+
+**4.** Una cosa che **non ho capito** e ho fatto finta di sì:
+_______________________________________________
+
+**5.** Il mio personaggio, stasera, ha **contato**? (cerchia)
+
+`per niente` — `poco` — `abbastanza` — `molto` — `era la mia serata`
+
+**6.** Una decisione che abbiamo preso e di cui **non conosciamo ancora il prezzo**:
+_______________________________________________
+
+**7.** Se potessi cambiare **una** cosa di stasera:
+_______________________________________________
+
+---
+
+### Solo alla terza serata
+
+**8.** Ottavia Vesca, per me, era: (cerchia)
+
+`una cattiva` — `una che aveva torto` — `una che aveva ragione` — `non ho capito chi fosse`
+
+**9.** Alla curva nord abbiamo scelto ____________. **Ci ho messo** ⬜ un attimo ⬜ un po' ⬜ tanto **a decidere**, e adesso penso che sia stata ⬜ la scelta giusta ⬜ quella sbagliata ⬜ non lo so.
+
+**10.** Il finale è stato ⬜ meritato ⬜ ingiusto ⬜ scontato ⬜ sorprendente.
+
+---
+
+## §2 · Debrief del DM — **cinque minuti, a modulo chiuso**
+
+| Domanda | Risposta |
+|---|---|
+| Durata reale delle tre serate | S1 ____ · S2 ____ · S3 ____ |
+| Il blocco che è **sforato di più** | |
+| Il blocco che è **evaporato** (meno di metà del previsto) | |
+| Quante volte ho dovuto **improvvisare qualcosa di strutturale** | ____ *(target: zero)* |
+| Quante volte ho **cercato un'informazione** per più di 30 secondi | ____ *(target: sotto 5)* |
+| La regola che ho dovuto **decidere a occhio** perché non era scritta | |
+| Il PNG che mi è **venuto meglio** / **peggio** | |
+| Il read-aloud che **non ha funzionato letto** | |
+| I contatori: li ho mossi **in silenzio** qualche volta? | ⬜ mai ⬜ una ⬜ spesso |
+| Prop consegnati e loro effetto | |
+| Cosa taglierei | |
+| Cosa aggiungerei | |
+
+---
+
+## §3 · Le sei domande che il playtest alfa non poteva risolvere
+
+Sono in `PLAYTEST-ALFA.md` §5. Qui si rispondono **col tavolo vero**.
+
+| # | Domanda | Risposta dal tavolo |
+|---|---|---|
+| 1 | L'Investitura fa scattare il tavolo o imbarazza? | |
+| 2 | La Corsa a nove tratti annoia al secondo giro? | |
+| 3 | Vesca viene odiata o compresa? *(→ domanda 8 dei giocatori)* | |
+| 4 | Il dilemma della curva nord tiene con chi vuole vincere? | |
+| 5 | Quanto durano davvero i Partiti? | |
+| 6 | Le sei schede sono equilibrate come spotlight? *(→ §5 di `STATO-DEL-MODULO`)* | |
+
+---
+
+## §4 · Come si chiude il ciclo
+
+1. **La sera stessa**: raccogli le schede, non leggerle.
+2. **Il giorno dopo**: leggile tutte insieme e cerca **le ripetizioni**, non le
+   opinioni singole. Se tre giocatori su sei scrivono lo stesso punto morto, quello è
+   un difetto del modulo. Se lo scrive uno solo, è una serata.
+3. **Entro la settimana**: applica le correzioni **ai file**, non a un elenco di
+   buoni propositi. Ogni correzione va scritta con **il rilievo che l'ha causata**,
+   come nel §4 del playtest alfa.
+4. **Aggiungi il §6 a `PLAYTEST-ALFA.md`** con i tempi reali: da quel momento il
+   modulo è **beta**.
+5. **Terza replica con un altro gruppo** → il modulo è **collaudato**. Prima di
+   allora, quello che sai è come è andata con *quelle sei persone*.
+
+> **Il criterio per smettere**: un modulo è finito quando due gruppi diversi lo
+> giocano senza che il DM debba inventare niente di strutturale, e senza che nessuno
+> scriva la stessa noia due volte.
 

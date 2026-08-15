@@ -6,9 +6,10 @@ stemmi vettoriali inline, **niente dipendenze esterne**.
 
 | Booklet | A chi va | Cosa contiene |
 |---|---|---|
-| **`DRAPPO-BOOKLET-DM.html`** | ⚠️ solo DM | tutto: regia, luoghi, agende dei villain, le tre giornate, statblocchi, playtest, IP — 16 capitoli |
+| **`DRAPPO-BOOKLET-DM.html`** | ⚠️ solo DM | tutto: regia, luoghi, agende dei villain, le tre giornate, statblocchi, playtest, stato del modulo, feedback, IP — 18 capitoli |
 | **`DRAPPO-BOOKLET-GIOCATORI.html`** | ✉ giocatori | benvenuti a Tarsilia + i sei background. **Zero spoiler**: si può mandare prima della prima serata |
 | **`DRAPPO-FASCICOLO-SCHEDE.html`** | ✉ giocatori | le sei schede (numeri) + il retro (background, legami, ritratto). Da stampare fronte-retro |
+| **`DRAPPO-PROP.html`** | ✉ da consegnare | i quattro prop: il contratto, il registro, la ricevuta, il decreto. Una pagina l'uno |
 
 Accanto a ogni `.html` c'è il gemello **`.hb.md`**: è il sorgente da incollare in
 [Homebrewery](https://homebrewery.naturalcrit.com/) se preferisci impaginare là.
@@ -24,6 +25,7 @@ cd STANDALONE-Il-Drappo-di-Tarsilia/homebrew
 python3 ../../scripts/build_booklet_html.py DRAPPO-BOOKLET-DM.manifest.json --format both
 python3 ../../scripts/build_booklet_html.py DRAPPO-BOOKLET-GIOCATORI.manifest.json --format both
 python3 ../../scripts/build_booklet_html.py DRAPPO-FASCICOLO-SCHEDE.manifest.json --format both
+python3 ../../scripts/build_booklet_html.py DRAPPO-PROP.manifest.json --format both
 ```
 
 ## I PDF
@@ -32,10 +34,11 @@ python3 ../../scripts/build_booklet_html.py DRAPPO-FASCICOLO-SCHEDE.manifest.jso
 python3 ../../scripts/export_booklet_pdf.py DRAPPO-BOOKLET-DM.manifest.json --all
 python3 ../../scripts/export_booklet_pdf.py DRAPPO-BOOKLET-GIOCATORI.manifest.json --all
 python3 ../../scripts/export_booklet_pdf.py DRAPPO-FASCICOLO-SCHEDE.manifest.json --all
+python3 ../../scripts/export_booklet_pdf.py DRAPPO-PROP.manifest.json --all
 ```
 
-Finiscono in `pdf/`, un file A4 per capitolo (**22 in tutto**: 17 per il DM, 3 per i
-giocatori, 3 per il fascicolo, copertine incluse).
+Finiscono in `pdf/`, un file A4 per capitolo (**una quarantina**: 19 per il DM, 3 per i
+giocatori, 3 per il fascicolo, 5 per i prop, copertine incluse).
 
 > ⚠️ **I PDF non sono committati**: `.gitignore` esclude `*.pdf` in tutto il repo,
 > perché sono **artefatti rigenerabili** e pesano. I due comandi qui sopra li

@@ -23,6 +23,18 @@ python3 scripts/export_map_png.py rendered/<file>.svg --scale 3   # artefatto lo
 python3 scripts/export_uvtt.py <mappa>.md -o <cartella>           # Foundry / Roll20
 ```
 
+## Su Foundry / Roll20
+
+Le due mappe sono **già esportate** in `uvtt/`, con muri, porte e luci derivati dal
+JSON — si importano native, senza ridisegnare niente:
+
+| File | Muri | Porte | Luci |
+|---|:--:|:--:|:--:|
+| `uvtt/tarsilia-la-ruota_map01_*.uvtt` | 24 | 2 | 0 |
+| `uvtt/tarsilia-stalle_map01_*.uvtt` | 32 | 2 | 2 |
+
+Si rigenerano con `python3 scripts/export_uvtt.py <mappa>.md -o uvtt`.
+
 ## Coordinate
 
 Le griglie sono **lettera × numero** e partono da **A01** in alto a sinistra. Le

@@ -34,6 +34,25 @@ dyed indigo), late-summer light
 **Negativi consigliati**: `modern clothing, plastic sheen, glamour, neon, text,
 watermark, logo, oversaturated`.
 
+**L'ancora storica — il pezzo che tiene insieme la serie.** Il blocco qui sopra
+descrive il look; quello che fa somigliare fra loro **dieci immagini generate in
+sessioni diverse** è aggiungere una **scuola pittorica in pubblico dominio**, che è
+una categoria storica e non la firma di nessuno (vedi
+`stile-illustrazione-handout.md`, §«L'ancora che invece si può usare»). Per Tarsilia:
+
+```
+northern renaissance oil glazing, flemish panel painting light,
+egg-tempera restraint in the flesh tones
+```
+
+Fissa in un colpo solo palette, resa della luce, trattamento delle mani e profondità
+di campo — sono un pacchetto storico, non scelte indipendenti.
+
+> ⚠️ **Non** ancorare a «pittura senese», per quanto calzi: il modulo si sta
+> allontanando da Siena per ragioni di diritto (`IP-E-LICENZE.md` §4), e rimetterla
+> nella direzione artistica la farebbe rientrare dalla finestra. Si sceglie la
+> **tecnica**, non la provincia.
+
 **Formato**: 832 × 1216 (verticale), che è la proporzione giusta per stare in cima a
 una scheda stampata.
 

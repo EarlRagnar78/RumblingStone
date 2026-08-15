@@ -7,30 +7,30 @@ valore aggiunto ed è compatibile con le licenze»* — con due link:
 `r/rpg/comments/1rd55ll` (*my favourite DM tools after testing 15 different apps*) e
 `r/dndai/comments/1be4zkb` (*RPG AI tools mega-discussion thread*).
 
-> **La conclusione in una riga**: di quindici app testate da altri, **una sola idea
-> vale il costo di importarla** — la trascrizione della sessione registrata, che oggi
-> è l'unico anello mancante fra il tavolo e `session_recap.py`. Tutto il resto o è già
-> nel repo in forma migliore, o è un servizio a pagamento che non si può importare, o
-> è arte con licenza non verificabile.
+> **La conclusione in due righe**: di quindici app testate da altri, **due idee
+> valgono il costo** — la trascrizione locale della sessione (§3) e **l'ancora a una
+> scuola pittorica in pubblico dominio** per tenere insieme le immagini generate
+> (§3-bis). Il resto o è già nel repo in forma migliore, o è un servizio che non si
+> può importare. E il commento più utile dei due thread **non consiglia un tool: ne
+> critica uno** — vedi §3.1.
 
 ---
 
-## §0 · Quello che non sono riuscito a leggere — dichiarato prima di tutto
+## §0 · Come è stata fatta, e cosa è cambiato in corsa
 
-**I due thread non sono raggiungibili da questo ambiente.** Reddit è bloccato a monte:
-il proxy di rete risponde `CONNECT tunnel failed, 403` su `curl`, la fetch diretta
-rifiuta il dominio, e anche gli estrattori esterni falliscono sull'URL. Ho recuperato
-**solo** quanto i motori di ricerca espongono come anteprima:
+**Prima passata (blind)**: i due thread **non sono raggiungibili da questo ambiente** —
+Reddit è bloccato a monte, il proxy risponde `CONNECT tunnel failed, 403` su `curl`,
+la fetch diretta rifiuta il dominio, gli estrattori esterni falliscono sull'URL. Ho
+avuto solo l'anteprima dei motori di ricerca: l'elenco troncato *«Notion; Saga20;
+Syrinscape …»* e la riga d'apertura del mega-thread. L'analisi partiva quindi dalle
+**categorie**, non dai nomi.
 
-- del thread r/rpg, l'elenco per come compare nello snippet — *«Notion (World builder);
-  Saga20 (Campaign tracker); Syrinscape (Music) …»*, troncato lì;
-- del thread r/dndai, la sola riga d'apertura: è un **mega-thread aperto del marzo
-  2024** in cui ognuno posta il proprio tool, senza una lista redazionale.
-
-Quindi **non ho letto i commenti né la lista completa**, e non fingo di averlo fatto.
-Quello che segue è l'analisi delle **categorie** che quei thread coprono e dei tool
-nominati o dominanti oggi, ciascuno verificato alla fonte — licenza inclusa. Se il DM
-incolla il testo dei due thread, l'analisi si aggiorna sui nomi veri in mezz'ora.
+**Seconda passata (2026-08-15, testo fornito dal DM)**: il DM ha incollato il
+contenuto dei due thread, commenti compresi. Da lì sono usciti **cinque nomi nuovi**
+che la prima passata non poteva conoscere — Lost Atlas, Shieldmaiden, Pocketbard,
+Tokenstamp 2, Owlbear Rodeo — e, cosa più utile, **un'obiezione argomentata alla
+raccomandazione principale**. Questo documento è la versione dopo la seconda passata:
+dove la prima aveva ragione l'ho lasciata, dove aveva un buco l'ho detto.
 
 ---
 
@@ -89,7 +89,7 @@ tavolo. Un titolo di brano funziona solo per chi ha quell'abbonamento.
 
 ---
 
-## §3 · L'unica proposta che paga — la trascrizione locale della sessione
+## §3 · La proposta principale — la trascrizione locale della sessione
 
 **Il divario**, in una riga: `session_recap.py` legge
 `campaign/sessions/YYYY-MM-DD_session-*.md` e ne ricava il recap per i giocatori. Ma
@@ -122,6 +122,73 @@ non il codice:
 **Costo stimato**: mezza giornata per lo script + l'ADR. **Guadagno**: chiude C3 della
 ricerca precedente e toglie l'attrito dove la campagna lo perde davvero.
 
+### 3.1 · L'obiezione, che è fondata — e come cambia la proposta
+
+Il commento più votato del thread r/rpg non consiglia un tool: **ne critica uno**, e
+colpisce esattamente questa proposta.
+
+> *«I giocatori che amano prendere appunti e a volte fraintendono alcune cose, che
+> diventano veri e propri punti della trama che rubo da loro? Quella cosa è morta con
+> le note delle sessioni trascritte.»*
+
+Ha ragione, e non è un dettaglio di gusto. **L'errore di memoria di un giocatore è
+materiale narrativo**: il PNG che si ricorda male, il nome storpiato che diventa un
+soprannome, il patto che il tavolo crede di aver stretto e che nessuno ha stretto. Una
+trascrizione fedele non li registra: **li cancella**, perché sostituisce il ricordo
+con il verbale.
+
+Due conseguenze, e le scrivo qui perché la proposta del §3 non nasca già sbagliata:
+
+1. **La trascrizione serve al DM, non ai giocatori.** Alimenta il verbale, che
+   alimenta `state_apply.py`. **Non** si consegna al tavolo come sostituto degli
+   appunti: chi vuole prendere appunti continua a prenderli, ed è un bene che lo
+   faccia.
+2. Il verbale guadagna un campo che oggi non ha — **«cosa hanno capito male»**. Non è
+   un errore da correggere: è la lista dei ganci regalati. Va scritta a mano dal DM,
+   perché è l'unica riga che una macchina non può ricavare dall'audio: richiede di
+   sapere cosa **era** vero.
+
+Lo stesso commento fa un'osservazione più generale che il repo farebbe bene a tenere:
+*«più gadget aggiungo, più pressione metto su di me e il gioco diventa meno divertente
+per tutti»*. È il §6 di questo documento detto da un altro.
+
+---
+
+## §3-bis · La seconda idea che paga — l'ancora storica per le immagini
+
+Viene dal thread r/dndai, ed è l'unica cosa **non commerciale** in mezzo a una fila di
+lanci di prodotto: un commento consiglia di studiare **pittori medievali e
+pre-rinascimentali** come riferimento, notando che *«alcuni stili fiamminghi e
+veneziani starebbero benissimo»* per generazioni fantasy.
+
+Sembra un consiglio di gusto. È invece la risposta a un problema **tecnico e legale**
+che il repo ha già scritto nero su bianco nel capitolato del booklet: *«la coerenza fra
+dieci illustrazioni generate resta il punto debole di qualsiasi pipeline automatica»*.
+
+- ADR-0005 e la skill di stile vietano di nominare un **illustratore vivente** o di
+  usare tavole altrui come reference. Giusto, e resta.
+- Ma una **scuola pittorica in pubblico dominio da secoli** non è la firma di nessuno:
+  è una **categoria storica**. `flemish panel painting`, `venetian cinquecento`,
+  `northern renaissance oil glazing`, `egg tempera, gold-leaf ground` si possono
+  chiedere senza toccare il diritto di nessuno.
+- E funziona meglio di un elenco di aggettivi perché **fissa insieme** palette, resa
+  della luce, trattamento di mani e volti e profondità di campo: sono un pacchetto
+  storico, non scelte indipendenti. È il sostituto economico dell'art director che
+  qui non c'è.
+
+⚠️ **Con una cautela che vale specificamente per il Drappo**: la scuola si sceglie per
+la *resa*, non per il *luogo*. Ancorare a «pittura senese» — che sarebbe la scelta
+ovvia — rimetterebbe dalla finestra l'associazione che `IP-E-LICENZE.md` §4 sta
+togliendo dalla porta.
+
+**Applicato subito** (costo: due paragrafi, nessun codice):
+
+- `skills/rumblingstone-mapmaking/references/stile-illustrazione-handout.md` — nuova
+  sezione «L'ancora che invece si può usare: la scuola storica», con il confine fra
+  *tecnica del periodo* (lecita) e *opera specifica* (no);
+- `ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md` §1 — il blocco d'ancoraggio per la
+  serie di Tarsilia, con la cautela su Siena.
+
 ---
 
 ## §4 · Quello che ho verificato e scartato
@@ -136,22 +203,52 @@ ricerca precedente e toglie l'attrito dove la campagna lo perde davvero.
 | **Improved Initiative · Fight Club · DM's Toolbox** | varie, alcune libere | ❌ **fuori perimetro**: sono app da usare *durante* la partita; il repo produce documenti |
 | **game-icons.net · Watabou · font OFL** | CC BY 3.0 · permissivi · OFL | ✅ **già dentro**, con attribuzione in `CREDITS.md` |
 
+### I cinque nomi emersi solo nella seconda passata
+
+| Tool | Cos'è, verificato | Verdetto |
+|---|---|---|
+| **Lost Atlas** | **motore di ricerca** su 5.000+ mappe tattiche gratuite di autori terzi (Angela Maps, Tehox, Morvold Press…). Non produce niente: indicizza | 🟡 **ottimo per il tavolo di casa, inutile qui.** Due ragioni, e la seconda conta più della prima: (a) è un **aggregatore**, quindi la licenza è quella del singolo autore, diversa mappa per mappa — «gratis da usare in partita» non è «ridistribuibile dentro un modulo»; (b) le mappe del repo **non sono immagini**: sono un contratto JSON da cui escono muri, porte e luci per l'esportazione UVTT, e sono vincolate alle tattiche scritte nel testo. Una mappa trovata è bella e non sa dov'è la botola del fienile |
+| **Shieldmaiden** | tracker di combattimento web, core gratuito, 5e sotto OGL. Cita **Delapouite, Lorc e Skoll** nei crediti: sono gli autori di **game-icons.net**, la stessa fonte CC BY 3.0 già usata per gli stemmi | ❌ come tool (**fuori perimetro**: si usa durante la partita) — ✅ **come conferma di due scelte del repo**, vedi sotto |
+| **Owlbear Rodeo** | VTT leggero, agnostico rispetto al sistema, gratis nell'uso base | 🟡 **da citare, non da importare**: gli SVG del repo si trascinano dentro come immagini e il modulo diventa giocabile online senza toccare niente. Una riga nel README delle mappe, quando serve |
+| **Tokenstamp 2** | ritaglia un'immagine dentro un bordo circolare da token | 🟡 utile **solo dopo** che esisteranno i ritratti raster (Lotto 6). Oggi non c'è niente da ritagliare |
+| **Pocketbard · Donjon · Fantasy Name Generator** | libreria sonora mobile · generatori (donjon oggi con componenti AI) · liste di nomi | ❌ i nomi di Tarsilia sono **scritti**, non estratti: è la scelta che rende il modulo IP-clean. E il suono resta descritto (§2.3) |
+
+**Su Shieldmaiden vale la pena fermarsi**, perché il post chiama la sua funzione di
+**auto-bilanciamento** *«fondamentale»* — potere rifare i conti di un incontro **a
+metà sessione** quando si vede che sta diventando un TPK o una passeggiata.
+
+Quella funzione qui esiste già, **su carta**: sono le tabelle di scalabilità 4/5/6/7
+giocatori di `06-VILLAIN-E-AGENDE.md`, calcolate in anticipo proprio perché al tavolo
+non ci sia niente da calcolare. La differenza è che l'app fa i conti dal vivo e il
+modulo li ha **già fatti**: per un modulo stampato la seconda è la forma giusta.
+
+Resta però confermato che **D5 della ricerca precedente non era un capriccio**: un
+budget incontri PF1e come script (`suggest_encounter.py` fa la matematica 3.5) è la
+versione riusabile della cosa che un DM su quindici app ha giudicato decisiva.
+
 ---
 
-## §5 · E il mini-modulo? — niente, ed è una buona notizia
+## §5 · E il mini-modulo? — una modifica sola, e conta
 
-Su `STANDALONE-Il-Drappo-di-Tarsilia/` la risposta onesta è **nessun cambiamento**:
+Dopo la seconda passata la risposta cambia in un punto: **l'ancora storica del §3-bis
+è già applicata** a `ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md`. È l'unica cosa dei
+due thread che tocca il Drappo, ed è anche la più economica: due paragrafi che
+rendono i sei ritratti una serie invece di sei immagini scollegate.
+
+Per il resto **non cambia niente**, e non per pigrizia:
 
 - i **suoni** sono già nella forma portabile (§2.3);
 - la **continuità fra le serate** ha già `STATO-DEL-MODULO.md`, che è di carta e sta in
   una pagina: per tre serate un tracker in abbonamento sarebbe sovradimensionato;
 - la **trascrizione** del §3 è pensata per la campagna lunga. Su tre serate il verbale
-  non serve: il modulo finisce prima che la memoria diventi un problema.
+  non serve: il modulo finisce prima che la memoria diventi un problema;
+- le **mappe** non si cercano su un motore di ricerca perché non sono immagini (§4);
+- il **bilanciamento** è già precalcolato sulle tabelle 4/5/6/7 (§4).
 
 Quello che al Drappo manca davvero resta quello già misurato nel capitolato
 (`PROMPT-GENERAZIONE-BOOKLET-DEFINITIVO.md`): **immagini raster**, tipografia
 embedded, mappa in versione giocatore, PDF unico. Nessuno dei quindici tool testati da
-altri lo risolve al posto nostro.
+altri lo risolve al posto nostro — ma il §3-bis rende migliore il primo dei quattro.
 
 ---
 
@@ -166,3 +263,10 @@ Da questa ricerca esce una regola riusabile, e vale la pena scriverla:
 Le prime due si verificano in dieci minuti. La terza è quella che scarta quasi tutto:
 il repo non ha un problema di funzionalità mancanti, ha un problema di **arte**, e
 l'arte non si risolve abbonandosi a un tracker di campagna.
+
+E una quarta soglia, che la seconda passata ha aggiunto e che nessuna licenza copre:
+
+> **Un tool che automatizza una cosa che il tavolo faceva a mano va guardato due
+> volte**, perché quella cosa fatta a mano poteva produrre qualcosa che
+> l'automazione non produce. Gli appunti sbagliati dei giocatori sono il caso
+> esemplare (§3.1): il tool li elimina *e* elimina i ganci che contenevano.

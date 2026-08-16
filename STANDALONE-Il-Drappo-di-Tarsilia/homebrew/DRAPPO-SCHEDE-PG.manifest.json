@@ -1,0 +1,22 @@
+{
+  "brand": "IL DRAPPO DI TARSILIA · PF1e",
+  "title": "Le sei schede dell'Istrice",
+  "subtitle": "Sei pregenerati di 3° livello — una pagina a testa, da stampare e dare in mano",
+  "banner": "SCHEDE DA TAVOLO",
+  "meta": "Pathfinder 1e, Core Rulebook · 20 punti acquisto · 3.000 mo",
+  "footer": "La dirigenza dell'Istrice",
+  "player_footer": "La dirigenza dell'Istrice",
+  "front_matter": false,
+  "out": "DRAPPO-SCHEDE-PG.html",
+  "chapters": [
+    {
+      "title": "✉ Le sei schede",
+      "file": "../PREGEN-SEI-SCHEDE-PF1E.md",
+      "tag": "player",
+      "layout": "schede",
+      "retro": "../FASCICOLO-SCHEDE-GIOCATORE.md",
+      "ritratti": ["../ALLEGATI/immagini/web", "../ALLEGATI/immagini", "../ALLEGATI/tavole"],
+      "footer": "IL DRAPPO DI TARSILIA · PATHFINDER 1E · SCHEDA DA TAVOLO"
+    }
+  ]
+}

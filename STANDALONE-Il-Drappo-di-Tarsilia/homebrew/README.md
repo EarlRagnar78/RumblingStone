@@ -1,4 +1,4 @@
-# I tre booklet del Drappo
+# I booklet del Drappo
 
 Impaginati con il motore del repo (lo stesso del booklet del Palio di Channathgate e
 della sessione della Forgia Eterna): stile pergamena, tab DM/giocatore, mappe e
@@ -10,6 +10,7 @@ stemmi vettoriali inline, **niente dipendenze esterne**.
 | **`DRAPPO-BOOKLET-GIOCATORI.html`** | ✉ giocatori | benvenuti a Tarsilia + i sei background. **Zero spoiler**: si può mandare prima della prima serata |
 | **`DRAPPO-FASCICOLO-SCHEDE.html`** | ✉ giocatori | le sei schede (numeri) + il retro (background, legami, ritratto). Da stampare fronte-retro |
 | **`DRAPPO-PROP.html`** | ✉ da consegnare | i quattro prop: il contratto, il registro, la ricevuta, il decreto. Una pagina l'uno |
+| **`DRAPPO-SCHEDE-PG.manifest.json`** | ✉ giocatori | **solo stampa**: le sei schede vere, una pagina A4 a testa, ritratto compreso — vedi più sotto |
 
 Accanto a ogni `.html` c'è il gemello **`.hb.md`**: è il sorgente da incollare in
 [Homebrewery](https://homebrewery.naturalcrit.com/) se preferisci impaginare là.
@@ -40,6 +41,30 @@ python3 ../../scripts/export_booklet_typst.py DRAPPO-BOOKLET-DM.manifest.json --
 
 Produce `DRAPPO-BOOKLET-DM-STAMPA.pdf` — **63 pagine, un file**. Serve il binario
 `typst` (Apache 2.0): se manca, lo script dice come installarlo ed esce pulito.
+
+## Le sei schede — una pagina A4 a testa
+
+```bash
+python3 ../../scripts/export_booklet_typst.py DRAPPO-SCHEDE-PG.manifest.json
+```
+
+Produce `DRAPPO-SCHEDE-PG-STAMPA.pdf`: **sei pagine, sei schede**, niente
+copertina e niente indice — si stampa e si dà in mano. Ogni pagina ha la fascia
+alta col ritratto, il pannello di sinistra con chi sei (background in prima
+persona, equipaggiamento, legami, il tuo problema), quello di destra con lo
+statblocco (CA, pf, TS, i sei attributi, attacchi, abilità, talenti,
+incantesimi), e in fondo «come si gioca in un minuto».
+
+> **Questo manifest è solo per la stampa.** I dati arrivano da
+> `../PREGEN-SEI-SCHEDE-PF1E.md` e `../FASCICOLO-SCHEDE-GIOCATORE.md`, che
+> restano i master: cambia la CA lì e cambia sulla scheda. La versione a
+> **schermo** delle stesse due pagine è `DRAPPO-FASCICOLO-SCHEDE.html`, che le
+> impagina come testo — non passarci `export_booklet_typst.py` aspettandoti le
+> schede: il layout a pannelli lo accende `"layout": "schede"`, che sta solo qui.
+
+I ritratti li prende da `../ALLEGATI/immagini/web/` (le derivate leggere; senza
+di quelle il PDF passerebbe da 0,9 MB a una quarantina). Se un ritratto manca,
+la scheda esce con una cornice tratteggiata al suo posto e l'esportatore lo dice.
 
 ## I PDF per capitolo
 

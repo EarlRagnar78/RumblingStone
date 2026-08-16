@@ -115,6 +115,12 @@ Tre cose emerse solo montando la pipeline, e che vale la pena aver scritto:
 - `scripts/typst/tema-rumblingstone.typ` — il tema: due colonne, carta avorio,
   box read-aloud, aperture di capitolo col fregio, tabelle larghe che scavalcano
   le colonne
+- `scripts/typst/scheda-pg.typ` + `scripts/dmcore/schede.py` — **le schede
+  pregenerate come schede, non come capitoli** (`"layout": "schede"` nel
+  manifest): una pagina A4 per personaggio, a due pannelli, coi dati letti dai
+  master `PREGEN-*.md` e `FASCICOLO-*.md` invece che ricopiati. Il testo a
+  colonne va bene per un manuale e non per un foglio che sta in mano tre serate:
+  a metà combattimento nessuno cerca la CA dentro un paragrafo
 - `scripts/typst/fonts/` — EB Garamond e Cinzel **con il loro OFL.txt**: la
   tipografia è embedded, quindi il PDF ha la stessa faccia ovunque
 - [`docs/guides/GUIDA-FLUSSO-LOCALE.md`](../../docs/guides/GUIDA-FLUSSO-LOCALE.md)

@@ -39,7 +39,7 @@
 | `ALLEGATI/mappe/` | la Ruota, **la Ruota in versione giocatore** e le stalle: JSON, master emoji-grid, SVG |
 | `ALLEGATI/tavole/` | **tavole vettoriali**: mappa della città, il Drappo, sei ritratti (rigenerabili) |
 | `ALLEGATI/handout/` | **i quattro prop da stampare**: il contratto di Vesca, la pagina del registro, la ricevuta, il decreto |
-| `homebrew/` | **quattro booklet** impaginati (DM · Giocatori · Fascicolo schede · Prop) + i PDF |
+| `homebrew/` | **quattro booklet** impaginati (DM · Giocatori · Fascicolo schede · Prop) + i PDF, e il manifest delle **sei schede da stampa** (`DRAPPO-SCHEDE-PG`) |
 | `ALLEGATI/mappe/uvtt/` | le due mappe pronte per **Foundry / Roll20** |
 | `ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md` | art direction e prompt per l'edizione raster |
 | `PROMPT-GENERAZIONE-BOOKLET-DEFINITIVO.md` | **cosa manca per l'edizione illustrata** e il prompt pronto da passare a una sessione nuova |
@@ -91,14 +91,25 @@ dopo, anche.
 
 **Per i giocatori** — sei fascicoli:
 
-1. la propria scheda da `PREGEN-SEI-SCHEDE-PF1E.md` (una pagina a testa);
+1. la propria **scheda**: sei pagine A4, una a testa, numeri e persona sullo stesso
+   foglio, col ritratto dipinto. Si generano in un comando —
+
+   ```bash
+   python3 scripts/export_booklet_typst.py \
+       STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-SCHEDE-PG.manifest.json
+   ```
+
+   e vengono da `PREGEN-SEI-SCHEDE-PF1E.md` + `FASCICOLO-SCHEDE-GIOCATORE.md`, che
+   restano i master: si può anche stampare direttamente quei due file, ma il PDF è
+   quello che si dà in mano;
 2. il **volantino delle otto contrade** — la tabella §1 di `CONTRADE-DI-TARSILIA.md`,
    con gli stemmi;
-3. il **retro della scheda** da `FASCICOLO-SCHEDE-GIOCATORE.md`, con il ritratto da
-   `ALLEGATI/tavole/ritratto-<nome>.svg`;
-4. la **matrice dei legami** (prima tabella del fascicolo), una copia a testa;
-5. la **mappa della Ruota** (`ALLEGATI/mappe/rendered/`) e la **mappa della città**
-   (`ALLEGATI/tavole/tarsilia-citta.svg`): una copia ciascuna, al centro del tavolo.
+3. la **matrice dei legami** (prima tabella di `FASCICOLO-SCHEDE-GIOCATORE.md`), una
+   copia a testa — sulla scheda ognuno vede **solo la propria riga**, e la matrice
+   intera al centro del tavolo è ciò che fa scattare il gruppo nei primi dieci minuti;
+4. la **mappa della Ruota** (`ALLEGATI/mappe/rendered/`, la versione giocatore) e la
+   **mappa della città** (`ALLEGATI/tavole/tarsilia-citta.svg`): una copia ciascuna,
+   al centro del tavolo.
 
 **I quattro prop** (`ALLEGATI/handout/`) si stampano e si consegnano **quando la
 fiction li consegna**, mai prima: il decreto al Giorno 1, il contratto quando Vesca lo

@@ -14,6 +14,15 @@ due colonne, fregi di capitolo e segnalibri PDF generati dagli heading.
     schermo  →  build_booklet_html.py  →  .html + .hb.md      (invariato)
     stampa   →  export_booklet_typst.py →  un PDF con indice   (questo)
 
+**Le schede pregenerate non sono un capitolo.** Un capitolo di manuale si legge;
+una scheda si tiene in mano per tre sessioni. Un capitolo del manifest marcato
+`"layout": "schede"` viene quindi impaginato con `typst/scheda-pg.typ`: **una
+pagina A4 per personaggio**, fascia alta col ritratto, pannello sinistro con chi
+sei, pannello destro con lo statblocco, e in fondo «come si gioca in un minuto».
+I dati arrivano dagli stessi master markdown del tavolo (ADR-0003) — nessuna
+copia dei numeri da qualche parte, quindi nessuna copia che possa restare
+vecchia.
+
 Uso:
     python3 scripts/export_booklet_typst.py MANIFEST.json            # solo pagine ✉ player
     python3 scripts/export_booklet_typst.py MANIFEST.json --all      # tutto, DM incluso
@@ -41,8 +50,12 @@ import sys
 import unicodedata
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from dmcore.schede import Scheda, SchedaError, leggi_schede  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 TEMA = ROOT / "scripts" / "typst" / "tema-rumblingstone.typ"
+SCHEDA_PG = ROOT / "scripts" / "typst" / "scheda-pg.typ"
 FONTS = ROOT / "scripts" / "typst" / "fonts"
 
 INSTALLA = """\
@@ -78,7 +91,10 @@ def slug(s: str) -> str:
 # Copre il sottoinsieme che i master del repo usano davvero. Ogni caso in più va
 # aggiunto QUI e non nel .typ generato, che è un artefatto.
 
-_SPECIALI = ("\\", "#", "$", "@", "<", ">", "*", "_", "`")
+# `~` in Typst è uno spazio unificatore e `[` `]` delimitano il contenuto: se non
+# si scappano, `+ ~200 mo` si stampa «+  200 mo» — il numero resta, la tilde
+# sparisce, e nessuno se ne accorge finché non lo legge un giocatore.
+_SPECIALI = ("\\", "#", "$", "@", "<", ">", "*", "_", "`", "[", "]", "~")
 
 
 def _esc(s: str) -> str:
@@ -91,20 +107,42 @@ def _unesc(s: str) -> str:
     return re.sub(r"\x00(\d+)\x00", lambda m: "\\" + chr(int(m.group(1))), s)
 
 
+# L'ordine delle alternative è la regola: `**a *b***` chiude grassetto e corsivo
+# sullo stesso asterisco, quindi la variante che finisce con `***` va provata
+# PRIMA di quella che finisce con `**` — altrimenti la chiusura si mangia due
+# asterischi su tre e il terzo resta stampato sulla pagina.
+_ENFASI = re.compile(r"(`[^`]+`|\*\*\*.+?\*\*\*|\*\*.+?\*\*\*|\*\*.+?\*\*|\*[^*]+\*)")
+
+
+def _inline(s: str) -> str:
+    """Il corpo ricorsivo di `inline`: ricorsivo perché l'enfasi si annida.
+
+    `**bacchetta di *cura ferite leggere*, 25 cariche**` è grassetto **con
+    dentro** un corsivo: trattandolo a un livello solo, il corsivo interno
+    faceva chiudere il grassetto nel punto sbagliato e il resto della riga —
+    tutto l'equipaggiamento — usciva in corsivo con un asterisco orfano in coda.
+    """
+    fuori = []
+    for p in _ENFASI.split(s):
+        if not p:
+            continue
+        if p.startswith("`") and p.endswith("`") and len(p) > 1:
+            fuori.append('#raw("' + p[1:-1].replace('"', '\\"') + '")')
+        elif p.startswith("***") and p.endswith("***") and len(p) > 6:
+            fuori.append("*_" + _inline(p[3:-3]) + "_*")
+        elif p.startswith("**") and p.endswith("**") and len(p) > 4:
+            fuori.append("*" + _inline(p[2:-2]) + "*")     # in Typst * = grassetto
+        elif p.startswith("*") and p.endswith("*") and len(p) > 2:
+            fuori.append("_" + _esc(p[1:-1]) + "_")        # in Typst _ = corsivo
+        else:
+            fuori.append(_esc(p))
+    return "".join(fuori)
+
+
 def inline(s: str) -> str:
     """Grassetto, corsivo, codice e link, nell'ordine che evita le collisioni."""
     s = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", s)  # link → solo il testo
-    out = []
-    for p in re.split(r"(`[^`]+`|\*\*[^*]+\*\*|\*[^*]+\*)", s):
-        if p.startswith("`") and p.endswith("`") and len(p) > 1:
-            out.append('#raw("' + p[1:-1].replace('"', '\\"') + '")')
-        elif p.startswith("**") and p.endswith("**"):
-            out.append("*" + _esc(p[2:-2]) + "*")     # in Typst * = grassetto
-        elif p.startswith("*") and p.endswith("*") and len(p) > 2:
-            out.append("_" + _esc(p[1:-1]) + "_")     # in Typst _ = corsivo
-        else:
-            out.append(_esc(p))
-    return _unesc("".join(out))
+    return _unesc(_inline(s))
 
 
 def _celle(riga: str) -> list[str]:
@@ -191,16 +229,112 @@ def md_to_typ(md: str) -> str:
     return "\n".join(out)
 
 
+# ── le schede pregenerate ────────────────────────────────────────────────────
+# Qui il convertitore generico non basta. Per mettere la CA in un riquadro, i sei
+# attributi in una griglia e i legami in una colonna a parte bisogna sapere
+# **quale numero è quale**: lo sa `dmcore.schede`, che legge i master. Questo
+# pezzo traduce il risultato in una chiamata a `#scheda()` e nient'altro — la
+# forma sta tutta in `typst/scheda-pg.typ`.
+
+def _riga(md: str) -> str:
+    """Un campo di prosa (anche andato a capo nel master) → contenuto Typst."""
+    return "[" + inline(" ".join(md.split())) + "]"
+
+
+def _blocco(md: str) -> str:
+    """Un campo con struttura (gli slot degli incantesimi) → contenuto Typst."""
+    return "[" + md_to_typ(md).strip() + "]"
+
+
+def _str(s: str) -> str:
+    return json.dumps(s, ensure_ascii=False)
+
+
+def _tuple_str(righe) -> str:
+    """Array Typst di tuple di stringhe, con la virgola finale che serve a 1 solo elemento."""
+    return "(" + "".join("(" + ", ".join(_str(x) for x in r) + "), " for r in righe) + ")"
+
+
+def _tuple_corpo(righe, come=_riga) -> str:
+    """Array Typst di tuple `(etichetta, contenuto)`."""
+    return "(" + "".join(f"({_str(e)}, {come(c)}), " for e, c in righe) + ")"
+
+
+def _scheda_typ(s: Scheda, indice: int, totale: int, piede: str) -> str:
+    # L'equipaggiamento sta col background — è la roba che il personaggio ha
+    # addosso, non un numero da consultare in combattimento. Tutto il resto
+    # (talenti, abilità, incantesimi, capacità di classe) va nello statblocco.
+    equip = s.voce("equipaggiamento")
+    destra = [(v.etichetta, v.corpo) for v in s.voci if v is not equip]
+
+    campi: list[str] = [
+        f"nome: {_str(s.nome)}",
+        f"ruolo: {_str(s.ruolo)}",
+        f"numero: {_str(s.numero or str(indice))}",
+        f"totale: {_str(str(totale))}",
+        f"classe: {_str(s.classe)}",
+        f"rapide: {_tuple_str(s.rapide)}",
+        f"ca: {_str(s.ca)}",
+        f"pf: {_str(s.pf)}",
+        f"pf-dado: {_str(s.pf_dado)}",
+        f"ts: {_tuple_str(s.ts)}",
+        f"attributi: {_tuple_str(s.attributi)}",
+        f"manovre: {_tuple_str(s.manovre)}",
+        "attacchi: (" + "".join(
+            f"({_riga(riga)}, {'true' if rientro else 'false'}), " for riga, rientro in s.attacchi
+        ) + ")",
+        f"destra: {_tuple_corpo(destra, _blocco)}",
+        f"retro: {_tuple_corpo([(v.etichetta, v.corpo) for v in s.voci_retro])}",
+        f"legami: {_tuple_corpo(s.legami)}",
+        f"piede: {_str(piede)}",
+    ]
+    for chiave, valore, come in (
+        ("occhiello", s.occhiello, _riga),
+        ("ca-dettaglio", s.ca_dettaglio, _riga),
+        ("ts-nota", s.ts_nota, _riga),
+        ("ad-alta-voce", s.ad_alta_voce, _riga),
+        ("equipaggiamento", equip.corpo if equip else "", _blocco),
+        ("problema", s.problema, _riga),
+        ("minuto", s.minuto, _riga),
+    ):
+        if valore.strip():
+            campi.append(f"{chiave}: {come(valore)}")
+    if s.ritratto is not None:
+        campi.append(f"ritratto: {_str(typ_path(s.ritratto))}")
+
+    return "#scheda(\n  " + ",\n  ".join(campi) + ",\n)"
+
+
+def schede(cap: dict, base: Path, f: Path) -> str:
+    """Il sorgente Typst di un capitolo `"layout": "schede"`."""
+    retro = cap.get("retro")
+    ritratti = cap.get("ritratti") or []
+    if isinstance(ritratti, str):
+        ritratti = [ritratti]
+    elenco = leggi_schede(
+        f,
+        (base / retro).resolve() if retro else None,
+        [(base / d).resolve() for d in ritratti],
+    )
+    mancanti = [s.nome for s in elenco if s.ritratto is None]
+    if mancanti:
+        print(f"  ⚠ schede senza ritratto: {', '.join(mancanti)}", file=sys.stderr)
+    piede = cap.get("footer", "")
+    return "\n\n".join(
+        _scheda_typ(s, i, len(elenco), piede) for i, s in enumerate(elenco, 1)
+    )
+
+
 # ── assemblaggio ─────────────────────────────────────────────────────────────
 
-def capitoli(man: dict, base: Path, tutti: bool) -> list[tuple[str, Path]]:
+def capitoli(man: dict, base: Path, tutti: bool) -> list[tuple[dict, str, Path]]:
     fuori = []
     for c in man.get("chapters", []):
         if not tutti and c.get("tag") != "player":
             continue
         f = (base / c["file"]).resolve()
         if f.exists():
-            fuori.append((c.get("title") or f.stem, f))
+            fuori.append((c, c.get("title") or f.stem, f))
         else:
             print(f"  ⚠ capitolo mancante, saltato: {c['file']}", file=sys.stderr)
     return fuori
@@ -222,16 +356,22 @@ def fregio_per(titolo: str, file: Path, base: Path) -> str | None:
 def sorgente(man: dict, base: Path, tutti: bool) -> str:
     parti = [
         f'#import "{typ_path(TEMA)}": *',
+        f'#import "{typ_path(SCHEDA_PG)}": scheda',
         "#show: libro.with(",
         f'  titolo: {json.dumps(man.get("title", ""), ensure_ascii=False)},',
         f'  sottotitolo: {json.dumps(man.get("subtitle", ""), ensure_ascii=False)},',
         f'  brand: {json.dumps(man.get("brand", ""), ensure_ascii=False)},',
         f'  meta: {json.dumps(man.get("banner", ""), ensure_ascii=False)},',
         f'  capitolo: {json.dumps(man.get("footer", ""), ensure_ascii=False)},',
+        f'  apparato: {"true" if man.get("front_matter", True) else "false"},',
         ")",
         "",
     ]
-    for titolo, f in capitoli(man, base, tutti):
+    for cap, titolo, f in capitoli(man, base, tutti):
+        if cap.get("layout") == "schede":
+            parti.append(schede(cap, base, f))
+            parti.append("")
+            continue
         fr = fregio_per(titolo, f, base)
         parti.append(f"#capitolo-aperto({json.dumps(titolo, ensure_ascii=False)}, "
                      f"{'none' if not fr else json.dumps(fr, ensure_ascii=False)})")
@@ -258,8 +398,9 @@ def main() -> int:
     base = mp.parent
 
     if args.list:
-        for t, f in capitoli(man, base, True):
-            print(f"  {t}  ←  {f.relative_to(ROOT) if ROOT in f.parents else f}")
+        for cap, t, f in capitoli(man, base, True):
+            marchio = "  [schede]" if cap.get("layout") == "schede" else ""
+            print(f"  {t}{marchio}  ←  {f.relative_to(ROOT) if ROOT in f.parents else f}")
         return 0
 
     binario = shutil.which("typst")
@@ -269,7 +410,12 @@ def main() -> int:
 
     typ = base / f"{mp.stem.replace('.manifest', '')}.typ"
     pdf = base / f"{mp.stem.replace('.manifest', '')}-STAMPA.pdf"
-    typ.write_text(sorgente(man, base, args.all), encoding="utf-8")
+    try:
+        src = sorgente(man, base, args.all)
+    except SchedaError as e:
+        print(f"✗ export_booklet_typst: {e}", file=sys.stderr)
+        return 1
+    typ.write_text(src, encoding="utf-8")
 
     base_cmd = [binario, "compile", "--font-path", str(FONTS), "--root", str(ROOT)]
     esito = subprocess.run(base_cmd + [str(typ), str(pdf)], capture_output=True, text=True)

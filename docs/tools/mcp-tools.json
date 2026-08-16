@@ -749,7 +749,7 @@
     },
     {
       "name": "export_booklet_typst",
-      "description": "Edizione da stampa (ADR-0020): dallo stesso manifest dei booklet produce UN volume PDF con tipografia OFL embedded, due colonne, fregi di capitolo e segnalibri. Affianca export_booklet_pdf.py senza sostituirlo.",
+      "description": "Edizione da stampa (ADR-0020): dallo stesso manifest dei booklet produce UN volume PDF con tipografia OFL embedded, due colonne, fregi di capitolo e segnalibri. Un capitolo marcato \"layout\": \"schede\" viene invece impaginato come scheda pregenerata — una pagina A4 per personaggio, ritratto, statblocco e background — leggendo i master PREGEN-*.md e FASCICOLO-*.md. Affianca export_booklet_pdf.py senza sostituirlo.",
       "invocation": "python3 scripts/export_booklet_typst.py MANIFEST.json --all",
       "inputSchema": {
         "type": "object",
@@ -781,7 +781,7 @@
       ],
       "exit_codes": {
         "0": "ok",
-        "1": "binario typst assente o compilazione fallita",
+        "1": "binario typst assente, compilazione fallita o master delle schede illeggibile",
         "2": "manifest mancante o uso errato"
       },
       "deterministic": true

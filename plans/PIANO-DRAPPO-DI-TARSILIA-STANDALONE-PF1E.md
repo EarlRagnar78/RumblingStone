@@ -169,6 +169,30 @@ contiene anche il prompt autosufficiente da passare a una sessione nuova.
 **Criterio di accettazione**: i quattro booklet si rigenerano da zero, ogni immagine
 ha la sua riga in `PROVENIENZA.txt`, e nessun file della campagna risulta modificato.
 
+### Lotto 8 — Le sei schede come schede vere ✅ *(chiuso 2026-08-16)*
+
+Il modulo aveva le sei pregenerate come **testo**: due master markdown impaginati a
+colonne, che è la forma giusta per un manuale e quella sbagliata per un foglio che
+sta in mano tre serate. Questo lotto le trasforma in **schede** — una pagina A4 a
+testa, sul modello delle pregen dei moduli brevi PF1e.
+
+- [x] `scripts/typst/scheda-pg.typ`: la pagina a due pannelli — fascia alta con
+      ritratto e i tre valori sempre consultati, sinistra «chi sei», destra lo
+      statblocco, piede «come si gioca in un minuto»
+- [x] `scripts/dmcore/schede.py`: legge i **master esistenti** (`PREGEN-*.md` +
+      `FASCICOLO-*.md`) e li restituisce strutturati — nessuna seconda copia dei
+      numeri, quindi nessuna copia che possa restare vecchia
+- [x] `export_booklet_typst.py`: capitolo `"layout": "schede"` e chiave di manifest
+      `front_matter: false` (sei fogli, senza copertina né indice da saltare)
+- [x] `ALLEGATI/immagini/web/`: le derivate leggere dei sei ritratti — il PDF passa
+      da ~40 MB a 0,9 MB
+- [x] `homebrew/DRAPPO-SCHEDE-PG.manifest.json` + `scripts/tests/test_schede.py`
+      (16 test: regole di taglio su master sintetici, le sei schede vere, `inline`)
+
+**Criterio di accettazione**: `DRAPPO-SCHEDE-PG-STAMPA.pdf` esce di **esattamente sei
+pagine**, ogni scheda ha il suo ritratto, e cambiare un numero nel master lo cambia in
+stampa senza toccare altro.
+
 ## 4. Engine e impegno per fase (regola DM 2026-07-22)
 
 | Fase | Engine | Impegno | Dieta di contesto |

@@ -7,13 +7,16 @@ Due livelli, perché i difetti stanno a due livelli diversi:
     scheda sembra un dato del personaggio, non un bug del parser.
   * **sul modulo vero** — `Il Drappo di Tarsilia`. Se un master cambia forma e
     il lettore smette di trovare la CA, si scopre qui e non in stampa.
+
+Solo `unittest`: la CI gira `python -m unittest discover -s scripts/tests` e non
+installa pytest.
 """
 from __future__ import annotations
 
 import sys
+import tempfile
+import unittest
 from pathlib import Path
-
-import pytest
 
 REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO / "scripts"))
@@ -26,7 +29,7 @@ PREGEN = DRAPPO / "PREGEN-SEI-SCHEDE-PF1E.md"
 FASCICOLO = DRAPPO / "FASCICOLO-SCHEDE-GIOCATORE.md"
 
 
-# ── regole di taglio, su master sintetici ────────────────────────────────────
+# ── regole di taglio, su un master sintetico ─────────────────────────────────
 
 MINIMA = """\
 # prova
@@ -73,124 +76,146 @@ Decidi, e ad alta voce.
 """
 
 
-@pytest.fixture(scope="module")
-def minima(tmp_path_factory):
-    p = tmp_path_factory.mktemp("schede") / "PREGEN-PROVA.md"
-    p.write_text(MINIMA, encoding="utf-8")
-    return leggi_schede(p)[0]
+class TestMasterSintetico(unittest.TestCase):
+    """Le regole di taglio, sulle forme che i master usano davvero."""
 
+    @classmethod
+    def setUpClass(cls):
+        cls._tmp = tempfile.TemporaryDirectory()
+        p = Path(cls._tmp.name) / "PREGEN-PROVA.md"
+        p.write_text(MINIMA, encoding="utf-8")
+        cls.s = leggi_schede(p)[0]
 
-def test_intestazione(minima):
-    assert (minima.numero, minima.nome, minima.ruolo) == ("1", "TIZIA CAIA", "il Capitano")
-    assert minima.classe == "Umana guerriera 3 · N · femmina, 38 anni · GS 2"
-    assert minima.occhiello.endswith("nei master veri.")
-    assert minima.rapide == [("Iniziativa", "+5"), ("Percezione", "+3"), ("Velocità", "6 m")]
+    @classmethod
+    def tearDownClass(cls):
+        cls._tmp.cleanup()
 
+    def test_intestazione(self):
+        s = self.s
+        self.assertEqual((s.numero, s.nome, s.ruolo), ("1", "TIZIA CAIA", "il Capitano"))
+        self.assertEqual(s.classe, "Umana guerriera 3 · N · femmina, 38 anni · GS 2")
+        self.assertTrue(s.occhiello.endswith("nei master veri."))
+        self.assertEqual(
+            s.rapide, [("Iniziativa", "+5"), ("Percezione", "+3"), ("Velocità", "6 m")]
+        )
 
-def test_difesa(minima):
-    assert (minima.ca, minima.pf, minima.pf_dado) == ("18", "27", "3d10+6")
-    assert minima.ca_dettaglio.startswith("contatto 11")
-    assert minima.ts == [("Tempra", "+6"), ("Riflessi", "+3"), ("Volontà", "+5")]
-    # la nota fra parentesi va a capo nel master: deve arrivare intera
-    assert minima.ts_nota == "mantello +1 incluso"
+    def test_difesa(self):
+        s = self.s
+        self.assertEqual((s.ca, s.pf, s.pf_dado), ("18", "27", "3d10+6"))
+        self.assertTrue(s.ca_dettaglio.startswith("contatto 11"))
+        self.assertEqual(s.ts, [("Tempra", "+6"), ("Riflessi", "+3"), ("Volontà", "+5")])
+        # la nota fra parentesi va a capo nel master: deve arrivare intera
+        self.assertEqual(s.ts_nota, "mantello +1 incluso")
 
+    def test_attributi_e_manovre(self):
+        self.assertEqual(self.s.attributi[0], ("For", "17", "+3"))
+        self.assertEqual(len(self.s.attributi), 6)
+        self.assertEqual(self.s.manovre, [("BAB", "+3"), ("CMB", "+6"), ("CMD", "17")])
 
-def test_attributi_e_manovre(minima):
-    assert minima.attributi[0] == ("For", "17", "+3")
-    assert len(minima.attributi) == 6
-    assert minima.manovre == [("BAB", "+3"), ("CMB", "+6"), ("CMD", "17")]
+    def test_attacco_rientro_e_continuazione(self):
+        """Il rientro `&nbsp;` resta una riga a sé; la frase spezzata a metà no."""
+        righe = self.s.attacchi
+        self.assertEqual(righe[0], ("**Mischia** spada lunga **+8** (1d8+3/19–20)", False))
+        self.assertEqual(righe[1], ("con **Attacco Poderoso**: **+7** (1d8+5)", True))
+        self.assertFalse(righe[2][1])
+        self.assertIn("Canalizzazione Selettiva", righe[2][0])   # ricucita, non spezzata
+        self.assertEqual(len(righe), 3)
 
+    def test_voci_niente_fantasmi(self):
+        """Le tre voci vere, e nessuna delle tre trappole del markdown a capo."""
+        self.assertEqual(
+            [v.etichetta for v in self.s.voci],
+            ["Incantesimi preparati", "Talenti", "Equipaggiamento"],
+        )
+        equip = self.s.voce("equipaggiamento")
+        self.assertIn("mantello della resistenza +1", equip.corpo)  # prezzo a capo
+        self.assertIn("+ ~212 mo", equip.corpo)                     # resto in tasca
+        self.assertIn("**dominio**: *pietra magica*",
+                      self.s.voce("incantesimi").corpo)             # slot di dominio
 
-def test_attacco_rientro_e_continuazione(minima):
-    """Il rientro `&nbsp;` resta una riga a sé; la frase spezzata a metà no."""
-    righe = minima.attacchi
-    assert righe[0] == ("**Mischia** spada lunga **+8** (1d8+3/19–20)", False)
-    assert righe[1] == ("con **Attacco Poderoso**: **+7** (1d8+5)", True)
-    assert righe[2][1] is False
-    assert "Canalizzazione Selettiva" in righe[2][0]        # ricucita, non spezzata
-    assert len(righe) == 3
+    def test_filetto_non_finisce_nel_testo(self):
+        """`---` fra una scheda e l'altra: Typst lo stamperebbe come lineetta lunga."""
+        self.assertEqual(self.s.minuto, "Decidi, e ad alta voce.")
+        self.assertFalse(self.s.problema.endswith("—"))
 
-
-def test_voci_niente_fantasmi(minima):
-    """Le tre voci vere, e nessuna delle tre trappole del markdown a capo."""
-    assert [v.etichetta for v in minima.voci] == [
-        "Incantesimi preparati", "Talenti", "Equipaggiamento",
-    ]
-    equip = minima.voce("equipaggiamento")
-    assert "mantello della resistenza +1" in equip.corpo    # prezzo a capo: non è una voce
-    assert "+ ~212 mo" in equip.corpo                       # né lo è il resto in tasca
-    incantesimi = minima.voce("incantesimi")
-    assert "**dominio**: *pietra magica*" in incantesimi.corpo  # né lo slot di dominio
-
-
-def test_filetto_non_finisce_nel_testo(minima):
-    """`---` fra una scheda e l'altra: Typst lo stamperebbe come lineetta lunga."""
-    assert minima.minuto == "Decidi, e ad alta voce."
-    assert not minima.problema.endswith("—")
-
-
-def test_master_senza_schede(tmp_path):
-    p = tmp_path / "PREGEN-VUOTO.md"
-    p.write_text("# niente qui\n\ntesto\n", encoding="utf-8")
-    with pytest.raises(SchedaError):
-        leggi_schede(p)
+    def test_master_senza_schede(self):
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / "PREGEN-VUOTO.md"
+            p.write_text("# niente qui\n\ntesto\n", encoding="utf-8")
+            with self.assertRaises(SchedaError):
+                leggi_schede(p)
 
 
 # ── il modulo vero ───────────────────────────────────────────────────────────
 
-@pytest.fixture(scope="module")
-def drappo():
-    return leggi_schede(PREGEN, FASCICOLO, [DRAPPO / "ALLEGATI" / "immagini" / "web"])
+class TestDrappo(unittest.TestCase):
+    """Le sei schede del Drappo, lette dai master che il tavolo usa davvero."""
 
+    @classmethod
+    def setUpClass(cls):
+        cls.schede = leggi_schede(
+            PREGEN, FASCICOLO, [DRAPPO / "ALLEGATI" / "immagini" / "web"]
+        )
 
-def test_sei_schede_complete(drappo):
-    assert len(drappo) == 6
-    for s in drappo:
-        assert s.nome and s.ruolo and s.classe, s.nome
-        assert s.ca and s.pf, s.nome
-        assert len(s.attributi) == 6, s.nome
-        assert len(s.ts) == 3, s.nome
-        assert s.attacchi, s.nome
-        assert s.minuto, s.nome                     # il piede della scheda
-        assert s.voce("equipaggiamento"), s.nome
-        assert s.voce("abilità"), s.nome
-        assert s.voce("talenti"), s.nome
+    def test_sei_schede_complete(self):
+        self.assertEqual(len(self.schede), 6)
+        for s in self.schede:
+            with self.subTest(scheda=s.nome):
+                self.assertTrue(s.nome and s.ruolo and s.classe)
+                self.assertTrue(s.ca and s.pf)
+                self.assertEqual(len(s.attributi), 6)
+                self.assertEqual(len(s.ts), 3)
+                self.assertTrue(s.attacchi)
+                self.assertTrue(s.minuto)               # il piede della scheda
+                self.assertIsNotNone(s.voce("equipaggiamento"))
+                self.assertIsNotNone(s.voce("abilità"))
+                self.assertIsNotNone(s.voce("talenti"))
 
+    def test_ogni_scheda_ha_il_suo_ritratto(self):
+        """`FRA' MELCHIO VANZI` → `ritratto-melchio.jpg`: la parola giusta, non la prima."""
+        self.assertEqual(
+            [s.ritratto.name for s in self.schede],
+            ["ritratto-vanna.jpg", "ritratto-nocca.jpg", "ritratto-ombra.jpg",
+             "ritratto-tesio.jpg", "ritratto-berenice.jpg", "ritratto-melchio.jpg"],
+        )
 
-def test_ogni_scheda_ha_il_suo_ritratto(drappo):
-    """`FRA' MELCHIO VANZI` → `ritratto-melchio.jpg`: la parola giusta, non la prima."""
-    assert [s.ritratto.name for s in drappo] == [
-        "ritratto-vanna.jpg", "ritratto-nocca.jpg", "ritratto-ombra.jpg",
-        "ritratto-tesio.jpg", "ritratto-berenice.jpg", "ritratto-melchio.jpg",
-    ]
+    def test_meta_sinistra_dal_fascicolo(self):
+        for s in self.schede:
+            with self.subTest(scheda=s.nome):
+                self.assertTrue(s.ad_alta_voce.startswith("«"))
+                self.assertEqual(len(s.legami), 5)      # gli altri cinque, mai sé stesso
+                self.assertEqual([v.etichetta for v in s.voci_retro][:2],
+                                 ["Come parli", "Tre cose che sai"])
 
-
-def test_meta_sinistra_dal_fascicolo(drappo):
-    for s in drappo:
-        assert s.ad_alta_voce.startswith("«"), s.nome
-        assert len(s.legami) == 5, s.nome           # gli altri cinque, mai sé stesso
-        assert [v.etichetta for v in s.voci_retro][:2] == ["Come parli", "Tre cose che sai"]
-
-
-def test_incantatori_hanno_gli_slot(drappo):
-    per_nome = {s.nome.split()[0]: s for s in drappo}
-    for chi in ("OMBRA", "TESIO", "BERENICE"):
-        assert per_nome[chi].voce("incantesimi"), chi
+    def test_incantatori_hanno_gli_slot(self):
+        per_nome = {s.nome.split()[0]: s for s in self.schede}
+        for chi in ("OMBRA", "TESIO", "BERENICE"):
+            with self.subTest(scheda=chi):
+                self.assertIsNotNone(per_nome[chi].voce("incantesimi"))
 
 
 # ── la traduzione a Typst ────────────────────────────────────────────────────
 
-@pytest.mark.parametrize("md, atteso", [
-    # enfasi annidata: il caso che stampava mezza riga in corsivo
-    ("**bacchetta di *cura ferite leggere*, 25 cariche**",
-     "*bacchetta di _cura ferite leggere_, 25 cariche*"),
-    # grassetto e corsivo che chiudono sullo stesso asterisco
-    ("**2 pozioni di *cura ferite leggere***", "*2 pozioni di _cura ferite leggere_*"),
-    ("***tutto insieme***", "*_tutto insieme_*"),
-    # `~` in Typst è uno spazio unificatore: non deve sparire dal prezzo
-    ("**+ ~212 mo**", "*+ \\~212 mo*"),
-    # due grassetti di fila non si fondono in uno
-    ("**Cavalcare +10**, **Furtività +19**", "*Cavalcare +10*, *Furtività +19*"),
-])
-def test_inline(md, atteso):
-    assert inline(md) == atteso
+class TestInline(unittest.TestCase):
+
+    CASI = [
+        # enfasi annidata: il caso che stampava mezza riga in corsivo
+        ("**bacchetta di *cura ferite leggere*, 25 cariche**",
+         "*bacchetta di _cura ferite leggere_, 25 cariche*"),
+        # grassetto e corsivo che chiudono sullo stesso asterisco
+        ("**2 pozioni di *cura ferite leggere***", "*2 pozioni di _cura ferite leggere_*"),
+        ("***tutto insieme***", "*_tutto insieme_*"),
+        # `~` in Typst è uno spazio unificatore: non deve sparire dal prezzo
+        ("**+ ~212 mo**", "*+ \\~212 mo*"),
+        # due grassetti di fila non si fondono in uno
+        ("**Cavalcare +10**, **Furtività +19**", "*Cavalcare +10*, *Furtività +19*"),
+    ]
+
+    def test_enfasi_e_caratteri_speciali(self):
+        for md, atteso in self.CASI:
+            with self.subTest(md=md):
+                self.assertEqual(inline(md), atteso)
+
+
+if __name__ == "__main__":
+    unittest.main()

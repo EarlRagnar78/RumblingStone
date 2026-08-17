@@ -131,6 +131,46 @@ restare vecchia. Se cambi la CA nel `PREGEN-*.md`, cambia nella scheda stampata.
 Esempio completo nel repo:
 `STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-SCHEDE-PG.manifest.json`.
 
+**Un PDF per giocatore**, oltre al fascicolo:
+
+```bash
+python3 scripts/export_booklet_typst.py MANIFEST.json --per-scheda
+```
+
+Scrive anche `schede/<nome>-<N>-<pg>.pdf`, uno per personaggio, **senza
+frontespizio**. Non è una comodità: sulla scheda c'è «la cosa che non dici».
+Girare il volume intero nel gruppo brucia i segreti di tutti prima della prima
+serata — il fascicolo completo è per il DM e per la stampante, i singoli per i
+giocatori.
+
+Ogni scheda viene compilata da un **sorgente suo**, non ritagliata per numero di
+pagina: il ritaglio regge finché ogni scheda sta in una pagina sola, cioè finché
+qualcuno non allunga un equipaggiamento.
+
+### 1.3 Cosa controlla la CI, e cosa no
+
+| Livello | Chi lo controlla |
+|---|---|
+| il **markdown** delle schede (sezioni obbligatorie, GS dichiarato) | `validate_standalone.py` §3, in CI |
+| i **link** del modulo, immagini comprese | `validate_standalone.py` §2, in CI |
+| il **manifest** delle schede (master e ritratti risolvibili) | `export_booklet_typst.py --list` in CI + `scripts/tests/test_schede.py` |
+| i **parametri** che l'esportatore passa al template `.typ` | `test_schede.py::TestSorgenteTypst` |
+| l'**impaginazione vera** | ⚠️ **nessuno**: `typst` non è installato in CI. Si guarda a occhio, in locale |
+
+Per guardarla a occhio senza aprire il PDF, le pagine si rendono in PNG:
+
+```bash
+python3 scripts/export_booklet_typst.py MANIFEST.json --keep-typ
+typst compile --font-path scripts/typst/fonts --root . \
+    --format png --ppi 110 <nome>.typ 'pagina{n}.png'
+```
+
+> ⚠️ **Le derivate leggere delle immagini sono gitignorate.** `.gitignore` blocca
+> `*.jpg` in tutto il repo: se un master punta a `.../web/*.jpg` e quei file non
+> sono committati con un'eccezione `!`, il link è rotto in un clone fresco anche
+> se sulla tua macchina funziona. `validate_standalone.py` lo segnala e dice
+> perché.
+
 ---
 
 ## 2. Prerequisiti

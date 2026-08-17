@@ -66,6 +66,22 @@ I ritratti li prende da `../ALLEGATI/immagini/web/` (le derivate leggere; senza
 di quelle il PDF passerebbe da 0,9 MB a una quarantina). Se un ritratto manca,
 la scheda esce con una cornice tratteggiata al suo posto e l'esportatore lo dice.
 
+### Una scheda per giocatore
+
+```bash
+python3 ../../scripts/export_booklet_typst.py DRAPPO-SCHEDE-PG.manifest.json --per-scheda
+```
+
+Aggiunge `schede/DRAPPO-SCHEDE-PG-<N>-<pg>.pdf`, sei file da una pagina, **senza
+frontespizio**.
+
+> ⚠️ **Il fascicolo unico non si gira nel gruppo.** Su ogni scheda c'è *«la cosa
+> che non dici»* — la paura di Nocca per la curva nord, il morso che teneva Ombra
+> vent'anni fa, il torto che Berenice sa di avere. Sei segreti che il modulo
+> spende nelle tre serate, e che il PDF completo brucia tutti insieme prima
+> ancora di cominciare. Il fascicolo è per te e per la stampante; ai giocatori
+> vanno i singoli.
+
 ## I PDF per capitolo
 
 ```bash

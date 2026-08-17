@@ -140,5 +140,36 @@ prima sessione reale:
    volte ha tirato ciascuno. Se qualcuno sta sotto la metà della media, la scheda va
    corretta, non il giocatore.
 
+## §6 · Audit meccanico delle sei schede — 2026-08-17
+
+Passata 1 della skill `rumblingstone-playtest`, rifatta **sulle sole schede** quando
+sono diventate schede impaginate. Non è una rilettura: i numeri sono stati **ricalcolati
+a macchina** dai master (`scripts/dmcore/schede.py` + aritmetica PF1e Core), perché
+l'audit del §2 aveva guardato il modulo e non la matematica dei sei pregenerati.
+
+| # | Rilievo | Gravità | Esito |
+|---|---|---|---|
+| **A1** | **Economia** — i sei equipaggiamenti contro i 3.000 mo del 3° livello | 🟢 | verificato: 3.000,0 · 3.000,2 · 2.999 · 2.984 · 2.996 · 2.997. Scarto massimo **16 mo** (Tesio, 0,5%): è l'arrotondamento del «~200 mo in tasca», non un errore |
+| **A2** | **CA, contatto e colto alla sprovvista** contro i componenti dichiarati | 🟢 | tutte e sei coerenti |
+| **A3** | **CMB** = BAB + For + taglia | 🟢 | tutte e sei coerenti |
+| **A4** | **CMD di Ombra: 13** | 🟠 | **corretto → 14**. L'anello di protezione +1 è un bonus di *deviazione*, e la deviazione entra nel CMD [PF1e Core]. Un −1 sul CMD è invisibile finché qualcuno non prova a spingerla via dal transennato della curva nord — cioè esattamente la scena per cui esiste |
+| **A5** | **CD di *charme su persone* di Tesio: 16** | 🟠 | **corretto → 15**. Focalizzazione Incantatore (illusione) dà +1 **alle illusioni**; *charme su persone* è Ammaliamento. La CD sbagliata era **a favore** del PG e nessuno l'avrebbe segnalata |
+| **A6** | **Poteri a «3 + modificatore»** — dardo acido, raggio accecante, sfidare la morte, canalizzare, round di esibizione bardica | 🟢 | 7 · 7 · 7 · 4 · 12: tutti coerenti |
+| **A7** | **CD degli incantesimi** (10 + livello + attributo) sulle altre cinque schede | 🟢 | coerenti, illusioni di Tesio comprese |
+| **A8** | **Componenti della CA non dichiarati su Tesio** | 🟢 | non è un errore (12 = 10 + 2 Des): è l'unica scheda che non li elenca. Lasciato com'è — uniformarlo cambierebbe un master per motivi cosmetici |
+
+### Le due correzioni, nel formato del §4
+
+| | cosa cambia | perché | file |
+|---|---|---|---|
+| **J** | CMD di Ombra dei Salici: 13 → **14** | rilievo A4: la deviazione dell'anello conta nel CMD | `PREGEN-SEI-SCHEDE-PF1E.md` §3 |
+| **K** | *charme su persone* di Tesio: CD 16 → **15** | rilievo A5: la focalizzazione è sulle illusioni, non sugli ammaliamenti | `PREGEN-SEI-SCHEDE-PF1E.md` §4 |
+
+> **Cosa questa passata NON dice.** È audit a tavolino: non misura se le schede danno
+> a tutti la stessa quantità di scena. Quella è la domanda 6 del §5, e si risponde
+> **contando i tiri** alla prima serata vera.
+
+---
+
 > **Come si chiude questo file**: dopo la prima sessione vera, il DM aggiunge un §6
 > con i tempi reali e i punti morti trovati. Allora il modulo passa da alfa a beta.

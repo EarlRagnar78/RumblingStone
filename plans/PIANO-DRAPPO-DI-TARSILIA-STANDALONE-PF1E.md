@@ -193,6 +193,42 @@ testa, sul modello delle pregen dei moduli brevi PF1e.
 pagine**, ogni scheda ha il suo ritratto, e cambiare un numero nel master lo cambia in
 stampa senza toccare altro.
 
+**Chiusura del lotto (2026-08-17)** — audit richiesto dal DM, con la flag che ne è uscita:
+
+- [x] `--per-scheda`: un PDF per giocatore, compilato da un **sorgente suo** e non
+      ritagliato per numero di pagina (il ritaglio regge finché ogni scheda sta in una
+      pagina sola). Serve perché il fascicolo unico brucerebbe i sei segreti insieme
+- [x] **Sette smoke CI mancanti**: `build_booklet_html`, `export_booklet_pdf`,
+      `export_booklet_typst`, `build_chapter_marks`, `extract_scene_prompts`,
+      `import_watabou`, `campaign_branch` dichiaravano `ci_smoke` nel manifest e non
+      venivano eseguiti da nessuno — il contratto ADR-0012 prometteva una verifica
+      inesistente. Più uno step nuovo che risolve il manifest delle schede senza typst
+- [x] **Test anti-drift** fra i parametri emessi dall'esportatore e la firma di
+      `#let scheda(...)`: senza typst in CI, un rinomino nel template romperebbe ogni
+      build in silenzio
+- [x] `scripts/README-automation.md`: la tool map non citava l'esportatore da stampa
+- [x] **Audit meccanico delle sei schede** (skill `rumblingstone-playtest`, passata 1)
+      → `PLAYTEST-ALFA.md` §6: due correzioni applicate (CMD di Ombra, CD di Tesio)
+- [x] `validate_standalone.py`: il gate sui link **esisteva già** e prende le immagini
+      rotte; gli è stata aggiunta la **ragione** quando il file manca perché è una
+      derivata gitignorata — la trappola in cui sono cadute due sessioni di fila
+
+### ⚠️ Divergenza con `claude/golarion-pathfinder-campaign-xbyvzt`
+
+Le schede sono state fatte su `claude/golarion-pregen-character-sheets-cstheq` mentre
+un'altra sessione lavorava allo **stesso modulo** sul branch nominato nel capitolato.
+Nessuno dei due è stato mergiato in `main`. **Decisione del DM (2026-08-17): i due rami
+restano separati e li unisce lui.** Qui c'è cosa troverà.
+
+| File | Conflitto | Come si scioglie |
+|---|---|---|
+| `scripts/export_booklet_typst.py` | `md_to_typ(md)` là è diventata `md_to_typ(md, base)`; `inline()` toccata da entrambi (loro: entità HTML — io: enfasi annidata e `~`) | **tenere entrambe**: sono correzioni disgiunte. Le due firme si conciliano passando `base` e lasciando il corpo di `inline()` nella versione ricorsiva |
+| `scripts/typst/tema-rumblingstone.typ` | loro `#figura`, io il parametro `apparato:` | additivi: nessuna scelta da fare |
+| derivate delle immagini | loro `scripts/build_image_derivatives.py` (1400 px, q88, regole per famiglia) — io sei JPEG a 1000 px/q82 e una ricetta in un README | **vince il loro tool**: rigenerare le derivate con lui e buttare la mia ricetta |
+| `.gitignore` | solo mio | **tenere il mio**: senza l'eccezione `!.../web/*.jpg`, il loro ramo ha **dodici link rotti** (verificato eseguendo `validate_standalone.py` su quel branch) |
+| `FASCICOLO-SCHEDE-GIOCATORE.md` | loro l'hanno gia' ripuntato alle derivate | **vince il loro**: chiude il debito che avevo dichiarato aperto |
+| `plans/CHANGELOG.md`, `docs/tools/*` | righe/artefatti generati da entrambi | append e rigenerazione (`tools_manifest.py --emit-all`) |
+
 ## 4. Engine e impegno per fase (regola DM 2026-07-22)
 
 | Fase | Engine | Impegno | Dieta di contesto |

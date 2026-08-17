@@ -769,6 +769,10 @@
           "list": {
             "type": "boolean",
             "description": "Elenca i capitoli risolti ed esci."
+          },
+          "per-scheda": {
+            "type": "boolean",
+            "description": "In piu', un PDF per ogni scheda in schede/ (senza frontespizio): da mandare a un giocatore solo."
           }
         },
         "required": [
@@ -777,12 +781,13 @@
         "additionalProperties": false
       },
       "outputs": [
-        "<cartella del manifest>/<nome>-STAMPA.pdf"
+        "<cartella del manifest>/<nome>-STAMPA.pdf",
+        "<cartella del manifest>/schede/<nome>-<N>-<pg>.pdf"
       ],
       "exit_codes": {
         "0": "ok",
         "1": "binario typst assente, compilazione fallita o master delle schede illeggibile",
-        "2": "manifest mancante o uso errato"
+        "2": "manifest mancante, uso errato, o --per-scheda senza capitoli \"layout\": \"schede\""
       },
       "deterministic": true
     },

@@ -3525,6 +3525,15 @@
           "choices": null,
           "repeatable": false,
           "desc": "Elenca i capitoli risolti ed esci."
+        },
+        {
+          "name": "--per-scheda",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "In piu', un PDF per ogni scheda in schede/ (senza frontespizio): da mandare a un giocatore solo."
         }
       ],
       "inputs": [
@@ -3560,12 +3569,19 @@
           "overwrites": true,
           "generated_header": false,
           "schema": null
+        },
+        {
+          "path": "<cartella del manifest>/schede/<nome>-<N>-<pg>.pdf",
+          "kind": "pdf",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
         }
       ],
       "exit_codes": {
         "0": "ok",
         "1": "binario typst assente, compilazione fallita o master delle schede illeggibile",
-        "2": "manifest mancante o uso errato"
+        "2": "manifest mancante, uso errato, o --per-scheda senza capitoli \"layout\": \"schede\""
       },
       "determinism": {
         "deterministic": true,
@@ -3587,7 +3603,8 @@
       "docs": [
         "docs/guides/GUIDA-BOOKLET-E-PDF.md",
         "docs/guides/GUIDA-FLUSSO-LOCALE.md",
-        "plans/adr/ADR-0020-edizione-da-stampa-su-un-secondo-binario.md"
+        "plans/adr/ADR-0020-edizione-da-stampa-su-un-secondo-binario.md",
+        "scripts/README-automation.md"
       ]
     }
   ]

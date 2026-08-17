@@ -305,8 +305,14 @@ def _scheda_typ(s: Scheda, indice: int, totale: int, piede: str) -> str:
     return "#scheda(\n  " + ",\n  ".join(campi) + ",\n)"
 
 
-def schede(cap: dict, base: Path, f: Path) -> str:
-    """Il sorgente Typst di un capitolo `"layout": "schede"`."""
+def schede_di(cap: dict, base: Path, f: Path) -> list[tuple[str, str]]:
+    """Le schede di un capitolo `"layout": "schede"`, una per elemento.
+
+    Tenerle separate serve a `--per-scheda`: un PDF per giocatore si ottiene
+    compilando **un sorgente che contiene solo quella scheda**, non ritagliando
+    la pagina N dal volume. Il ritaglio per numero regge finché ogni scheda sta
+    in una pagina sola — cioè finché qualcuno non allunga un equipaggiamento.
+    """
     retro = cap.get("retro")
     ritratti = cap.get("ritratti") or []
     if isinstance(ritratti, str):
@@ -320,9 +326,15 @@ def schede(cap: dict, base: Path, f: Path) -> str:
     if mancanti:
         print(f"  ⚠ schede senza ritratto: {', '.join(mancanti)}", file=sys.stderr)
     piede = cap.get("footer", "")
-    return "\n\n".join(
-        _scheda_typ(s, i, len(elenco), piede) for i, s in enumerate(elenco, 1)
-    )
+    return [
+        (f"{s.numero or i}-{slug(s.nome)}", _scheda_typ(s, i, len(elenco), piede))
+        for i, s in enumerate(elenco, 1)
+    ]
+
+
+def schede(cap: dict, base: Path, f: Path) -> str:
+    """Il sorgente Typst di tutte le schede del capitolo, in fila."""
+    return "\n\n".join(corpo for _, corpo in schede_di(cap, base, f))
 
 
 # ── assemblaggio ─────────────────────────────────────────────────────────────
@@ -353,8 +365,11 @@ def fregio_per(titolo: str, file: Path, base: Path) -> str | None:
     return None
 
 
-def sorgente(man: dict, base: Path, tutti: bool) -> str:
-    parti = [
+def intestazione(man: dict, apparato: bool | None = None) -> list[str]:
+    """Import e `#show: libro.with(...)`: la testa di ogni sorgente generato."""
+    if apparato is None:
+        apparato = bool(man.get("front_matter", True))
+    return [
         f'#import "{typ_path(TEMA)}": *',
         f'#import "{typ_path(SCHEDA_PG)}": scheda',
         "#show: libro.with(",
@@ -363,10 +378,14 @@ def sorgente(man: dict, base: Path, tutti: bool) -> str:
         f'  brand: {json.dumps(man.get("brand", ""), ensure_ascii=False)},',
         f'  meta: {json.dumps(man.get("banner", ""), ensure_ascii=False)},',
         f'  capitolo: {json.dumps(man.get("footer", ""), ensure_ascii=False)},',
-        f'  apparato: {"true" if man.get("front_matter", True) else "false"},',
+        f'  apparato: {"true" if apparato else "false"},',
         ")",
         "",
     ]
+
+
+def sorgente(man: dict, base: Path, tutti: bool) -> str:
+    parti = intestazione(man)
     for cap, titolo, f in capitoli(man, base, tutti):
         if cap.get("layout") == "schede":
             parti.append(schede(cap, base, f))
@@ -382,12 +401,70 @@ def sorgente(man: dict, base: Path, tutti: bool) -> str:
     return "\n".join(parti)
 
 
+def compila(binario: str, typ: Path, pdf: Path) -> tuple[subprocess.CompletedProcess, bool]:
+    """Un `typst compile`, col ripiego sui tag PDF dichiarato dal chiamante.
+
+    Typst 0.15.1 ha un bug interno nella costruzione dell'albero dei tag PDF
+    («internal error: parent group») su documenti con float dentro strutture
+    annidate. I tag sono accessibilità, non impaginazione: se inciampa lì si
+    riprova senza — e lo si DICE, invece di consegnare un PDF diverso da quello
+    che il comando promette.
+    """
+    cmd = [binario, "compile", "--font-path", str(FONTS), "--root", str(ROOT)]
+    esito = subprocess.run(cmd + [str(typ), str(pdf)], capture_output=True, text=True)
+    if esito.returncode != 0 and "internal error" in esito.stderr and "tags" in esito.stderr:
+        return subprocess.run(cmd + ["--no-pdf-tags", str(typ), str(pdf)],
+                              capture_output=True, text=True), True
+    return esito, False
+
+
+def per_scheda(man: dict, base: Path, tutti: bool, binario: str, nome: str,
+               tieni_typ: bool) -> int:
+    """Un PDF per scheda in `<manifest>/schede/`, da mandare a un giocatore solo.
+
+    Non è una comodità: sulla scheda c'è «la cosa che non dici». Girare il
+    volume intero nel gruppo brucia i sei segreti prima della prima serata —
+    il fascicolo completo è per il DM e per la stampante, i singoli per i
+    giocatori. Perciò qui l'apparato è **sempre** spento: una copertina e un
+    indice su un foglio solo non hanno senso.
+    """
+    fuori = base / "schede"
+    trovate: list[tuple[str, str]] = []
+    for cap, _, f in capitoli(man, base, tutti):
+        if cap.get("layout") == "schede":
+            trovate += schede_di(cap, base, f)
+    if not trovate:
+        print("✗ --per-scheda: nessun capitolo «\"layout\": \"schede\"» nel manifest.\n"
+              "  È la chiave che accende l'impaginazione a scheda — vedi "
+              "docs/guides/GUIDA-BOOKLET-E-PDF.md §1.2.", file=sys.stderr)
+        return 2
+
+    fuori.mkdir(exist_ok=True)
+    testa = intestazione(man, apparato=False)
+    for etichetta, corpo in trovate:
+        typ = fuori / f"{nome}-{etichetta}.typ"
+        pdf = typ.with_suffix(".pdf")
+        typ.write_text("\n".join(testa + [corpo, ""]), encoding="utf-8")
+        esito, _ = compila(binario, typ, pdf)
+        if not tieni_typ:
+            typ.unlink(missing_ok=True)
+        if esito.returncode != 0:
+            print(esito.stderr.strip()[:2000], file=sys.stderr)
+            print(f"✗ --per-scheda: compilazione fallita su {etichetta}", file=sys.stderr)
+            return 1
+    print(f"✓ --per-scheda: {len(trovate)} schede → {fuori.relative_to(ROOT)}/ "
+          f"(una a testa, senza frontespizio)")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("manifest", help="il manifest del booklet (lo stesso dell'HTML)")
     ap.add_argument("--all", action="store_true", help="tutti i capitoli, ⚠ DM inclusi")
     ap.add_argument("--keep-typ", action="store_true", help="conserva il sorgente .typ generato")
     ap.add_argument("--list", action="store_true", help="elenca i capitoli e esci")
+    ap.add_argument("--per-scheda", action="store_true",
+                    help="in più, un PDF per ogni scheda in schede/ (da mandare a un giocatore solo)")
     args = ap.parse_args()
 
     mp = Path(args.manifest).resolve()
@@ -417,19 +494,7 @@ def main() -> int:
         return 1
     typ.write_text(src, encoding="utf-8")
 
-    base_cmd = [binario, "compile", "--font-path", str(FONTS), "--root", str(ROOT)]
-    esito = subprocess.run(base_cmd + [str(typ), str(pdf)], capture_output=True, text=True)
-
-    # Typst 0.15.1 ha un bug interno nella costruzione dell'albero dei tag PDF
-    # («internal error: parent group») su documenti con float dentro strutture
-    # annidate. I tag sono accessibilità, non impaginazione: se inciampa lì,
-    # si riprova senza — e lo si DICE, invece di consegnare un PDF diverso da
-    # quello che il comando promette.
-    degradato = False
-    if esito.returncode != 0 and "internal error" in esito.stderr and "tags" in esito.stderr:
-        degradato = True
-        esito = subprocess.run(base_cmd + ["--no-pdf-tags", str(typ), str(pdf)],
-                               capture_output=True, text=True)
+    esito, degradato = compila(binario, typ, pdf)
 
     if not args.keep_typ:
         typ.unlink(missing_ok=True)
@@ -447,6 +512,10 @@ def main() -> int:
     n = len(capitoli(man, base, args.all))
     print(f"✓ export_booklet_typst: {n} capitoli → {pdf.relative_to(ROOT)} "
           f"({pdf.stat().st_size // 1024} KB, un volume con segnalibri)")
+
+    if args.per_scheda:
+        return per_scheda(man, base, args.all, binario,
+                          mp.stem.replace(".manifest", ""), args.keep_typ)
     return 0
 
 

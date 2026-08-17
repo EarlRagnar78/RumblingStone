@@ -13,6 +13,8 @@ installa pytest.
 """
 from __future__ import annotations
 
+import json
+import re
 import sys
 import tempfile
 import unittest
@@ -22,11 +24,13 @@ REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO / "scripts"))
 
 from dmcore.schede import SchedaError, leggi_schede  # noqa: E402
-from export_booklet_typst import inline  # noqa: E402
+from export_booklet_typst import ROOT, inline, schede_di, sorgente  # noqa: E402
 
 DRAPPO = REPO / "STANDALONE-Il-Drappo-di-Tarsilia"
 PREGEN = DRAPPO / "PREGEN-SEI-SCHEDE-PF1E.md"
 FASCICOLO = DRAPPO / "FASCICOLO-SCHEDE-GIOCATORE.md"
+MANIFEST = DRAPPO / "homebrew" / "DRAPPO-SCHEDE-PG.manifest.json"
+TEMPLATE = REPO / "scripts" / "typst" / "scheda-pg.typ"
 
 
 # ── regole di taglio, su un master sintetico ─────────────────────────────────
@@ -215,6 +219,84 @@ class TestInline(unittest.TestCase):
         for md, atteso in self.CASI:
             with self.subTest(md=md):
                 self.assertEqual(inline(md), atteso)
+
+
+class TestSorgenteTypst(unittest.TestCase):
+    """Il ponte fra l'esportatore e il template `.typ`.
+
+    ⚠️ **In CI non c'è typst**, quindi nessuno compila davvero: se qualcuno
+    rinomina un parametro dentro `#let scheda(...)`, ogni PDF smette di
+    costruirsi e la CI resta verde. Questi test sono l'unico posto dove quella
+    rottura si vede senza il binario.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        man = json.loads(MANIFEST.read_text(encoding="utf-8"))
+        base = MANIFEST.parent
+        cls.src = sorgente(man, base, True)
+        cls.cap = man["chapters"][0]
+        cls.pezzi = schede_di(cls.cap, base, (base / cls.cap["file"]).resolve())
+
+    @staticmethod
+    def _firma_template() -> set[str]:
+        """I nomi dei parametri di `#let scheda(...)`, letti dal template."""
+        testo = TEMPLATE.read_text(encoding="utf-8")
+        inizio = testo.index("#let scheda(")
+        corpo, livello = [], 0
+        for ch in testo[inizio + len("#let scheda") :]:
+            if ch == "(":
+                livello += 1
+                if livello == 1:
+                    continue
+            elif ch == ")":
+                livello -= 1
+                if livello == 0:
+                    break
+            corpo.append(ch)
+        return set(re.findall(r"(?:^|,)\s*([a-z][a-z-]*)\s*:", "".join(corpo), re.M))
+
+    @staticmethod
+    def _parametri_emessi(src: str) -> set[str]:
+        """I nomi che l'esportatore scrive dentro le chiamate `#scheda(...)`."""
+        return {
+            m.group(1)
+            for blocco in re.findall(r"#scheda\(\n(.*?)\n\)", src, re.S)
+            for m in re.finditer(r"^  ([a-z][a-z-]*):", blocco, re.M)
+        }
+
+    def test_nessun_parametro_inventato(self):
+        """Ogni nome emesso esiste nella firma del template — e viceversa."""
+        firma = self._firma_template()
+        emessi = self._parametri_emessi(self.src)
+        self.assertTrue(emessi, "nessuna chiamata #scheda( trovata nel sorgente")
+        self.assertEqual(emessi - firma, set(),
+                         "l'esportatore passa parametri che il template non ha")
+        # I facoltativi non compaiono se il master non li ha: si controlla che
+        # ogni parametro della firma sia almeno RAGGIUNGIBILE, non obbligatorio.
+        mai_usati = firma - emessi
+        self.assertEqual(mai_usati, set(),
+                         f"parametri del template che nessuna scheda riempie: {mai_usati}")
+
+    def test_una_chiamata_per_scheda(self):
+        self.assertEqual(self.src.count("#scheda("), 6)
+        self.assertEqual(len(self.pezzi), 6)
+        for etichetta, corpo in self.pezzi:
+            with self.subTest(scheda=etichetta):
+                self.assertEqual(corpo.count("#scheda("), 1)   # --per-scheda: una sola
+                self.assertRegex(etichetta, r"^\d+-[a-z0-9-]+$")
+
+    def test_ritratti_puntano_a_file_veri(self):
+        """I percorsi Typst sono relativi alla RADICE: qui si verifica che esistano."""
+        percorsi = re.findall(r'ritratto: "([^"]+)"', self.src)
+        self.assertEqual(len(percorsi), 6)
+        for p in percorsi:
+            with self.subTest(ritratto=p):
+                self.assertTrue((ROOT / p.lstrip("/")).is_file(), f"ritratto assente: {p}")
+
+    def test_niente_apparato_sul_fascicolo_delle_schede(self):
+        """`front_matter: false` nel manifest → nessuna copertina da saltare."""
+        self.assertIn("apparato: false", self.src)
 
 
 if __name__ == "__main__":

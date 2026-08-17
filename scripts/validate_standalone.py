@@ -118,7 +118,23 @@ def check_crossrefs(mod: Path, errors: list[str]) -> None:
                 continue
             if (f.parent / ref).exists() or (ROOT / ref).exists():
                 continue
-            errors.append(f"{f.relative_to(ROOT)}: link rotto ({ref})")
+            errors.append(f"{f.relative_to(ROOT)}: link rotto ({ref}){_perche_manca(ref)}")
+
+
+def _perche_manca(ref: str) -> str:
+    """La riga in più quando il file manca per un motivo che si ripete.
+
+    Le derivate leggere delle immagini (`.../web/*.jpg`) sono generate e
+    finiscono sotto la regola `*.jpg` del `.gitignore`: su una macchina che le
+    ha appena rigenerate il master «funziona», in un clone fresco il link è
+    rotto. Dire solo «link rotto» manda a cercare un errore di battitura che
+    non c'è — è successo due volte, su due rami diversi.
+    """
+    p = Path(ref)
+    if p.suffix.lower() in (".jpg", ".jpeg", ".webp") and "web" in p.parts:
+        return ("  ← derivata generata: o la committi (serve un'eccezione «!» nel "
+                ".gitignore, che blocca *.jpg) o il master punta al PNG originale")
+    return ""
 
 
 def check_pregen(mod: Path, errors: list[str], warnings: list[str]) -> None:

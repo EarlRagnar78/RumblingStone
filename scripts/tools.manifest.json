@@ -3483,7 +3483,7 @@
       "category": "D-materials",
       "language": "python",
       "invocation": "python3 scripts/export_booklet_typst.py MANIFEST.json --all",
-      "summary": "Edizione da stampa (ADR-0020): dallo stesso manifest dei booklet produce UN volume PDF con tipografia OFL embedded, due colonne, fregi di capitolo e segnalibri. Affianca export_booklet_pdf.py senza sostituirlo.",
+      "summary": "Edizione da stampa (ADR-0020): dallo stesso manifest dei booklet produce UN volume PDF con tipografia OFL embedded, due colonne, fregi di capitolo e segnalibri. Un capitolo marcato \"layout\": \"schede\" viene invece impaginato come scheda pregenerata — una pagina A4 per personaggio, ritratto, statblocco e background — leggendo i master PREGEN-*.md e FASCICOLO-*.md. Affianca export_booklet_pdf.py senza sostituirlo.",
       "stability": "beta",
       "stdlib_only": true,
       "external_bins": [
@@ -3525,6 +3525,15 @@
           "choices": null,
           "repeatable": false,
           "desc": "Elenca i capitoli risolti ed esci."
+        },
+        {
+          "name": "--per-scheda",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "In piu', un PDF per ogni scheda in schede/ (senza frontespizio): da mandare a un giocatore solo."
         }
       ],
       "inputs": [
@@ -3539,6 +3548,18 @@
           "kind": "text",
           "required": true,
           "schema": null
+        },
+        {
+          "path": "scripts/typst/scheda-pg.typ",
+          "kind": "text",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "**/PREGEN-*.md, **/FASCICOLO-*.md (capitoli \"layout\": \"schede\")",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
         }
       ],
       "outputs": [
@@ -3548,12 +3569,19 @@
           "overwrites": true,
           "generated_header": false,
           "schema": null
+        },
+        {
+          "path": "<cartella del manifest>/schede/<nome>-<N>-<pg>.pdf",
+          "kind": "pdf",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
         }
       ],
       "exit_codes": {
         "0": "ok",
-        "1": "binario typst assente o compilazione fallita",
-        "2": "manifest mancante o uso errato"
+        "1": "binario typst assente, compilazione fallita o master delle schede illeggibile",
+        "2": "manifest mancante, uso errato, o --per-scheda senza capitoli \"layout\": \"schede\""
       },
       "determinism": {
         "deterministic": true,
@@ -3569,10 +3597,14 @@
       "consumes_schema": null,
       "produces_schema": null,
       "ci_smoke": "python scripts/export_booklet_typst.py --help",
-      "tests": [],
+      "tests": [
+        "scripts/tests/test_schede.py"
+      ],
       "docs": [
         "docs/guides/GUIDA-BOOKLET-E-PDF.md",
-        "docs/guides/GUIDA-FLUSSO-LOCALE.md"
+        "docs/guides/GUIDA-FLUSSO-LOCALE.md",
+        "plans/adr/ADR-0020-edizione-da-stampa-su-un-secondo-binario.md",
+        "scripts/README-automation.md"
       ]
     }
   ]

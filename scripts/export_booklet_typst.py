@@ -14,6 +14,15 @@ due colonne, fregi di capitolo e segnalibri PDF generati dagli heading.
     schermo  →  build_booklet_html.py  →  .html + .hb.md      (invariato)
     stampa   →  export_booklet_typst.py →  un PDF con indice   (questo)
 
+**Le schede pregenerate non sono un capitolo.** Un capitolo di manuale si legge;
+una scheda si tiene in mano per tre sessioni. Un capitolo del manifest marcato
+`"layout": "schede"` viene quindi impaginato con `typst/scheda-pg.typ`: **una
+pagina A4 per personaggio**, fascia alta col ritratto, pannello sinistro con chi
+sei, pannello destro con lo statblocco, e in fondo «come si gioca in un minuto».
+I dati arrivano dagli stessi master markdown del tavolo (ADR-0003) — nessuna
+copia dei numeri da qualche parte, quindi nessuna copia che possa restare
+vecchia.
+
 Uso:
     python3 scripts/export_booklet_typst.py MANIFEST.json            # solo pagine ✉ player
     python3 scripts/export_booklet_typst.py MANIFEST.json --all      # tutto, DM incluso
@@ -41,8 +50,12 @@ import sys
 import unicodedata
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from dmcore.schede import Scheda, SchedaError, leggi_schede  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 TEMA = ROOT / "scripts" / "typst" / "tema-rumblingstone.typ"
+SCHEDA_PG = ROOT / "scripts" / "typst" / "scheda-pg.typ"
 FONTS = ROOT / "scripts" / "typst" / "fonts"
 
 INSTALLA = """\
@@ -78,7 +91,10 @@ def slug(s: str) -> str:
 # Copre il sottoinsieme che i master del repo usano davvero. Ogni caso in più va
 # aggiunto QUI e non nel .typ generato, che è un artefatto.
 
-_SPECIALI = ("\\", "#", "$", "@", "<", ">", "*", "_", "`")
+# `~` in Typst è uno spazio unificatore e `[` `]` delimitano il contenuto: se non
+# si scappano, `+ ~200 mo` si stampa «+  200 mo» — il numero resta, la tilde
+# sparisce, e nessuno se ne accorge finché non lo legge un giocatore.
+_SPECIALI = ("\\", "#", "$", "@", "<", ">", "*", "_", "`", "[", "]", "~")
 
 
 def _esc(s: str) -> str:
@@ -91,20 +107,42 @@ def _unesc(s: str) -> str:
     return re.sub(r"\x00(\d+)\x00", lambda m: "\\" + chr(int(m.group(1))), s)
 
 
+# L'ordine delle alternative è la regola: `**a *b***` chiude grassetto e corsivo
+# sullo stesso asterisco, quindi la variante che finisce con `***` va provata
+# PRIMA di quella che finisce con `**` — altrimenti la chiusura si mangia due
+# asterischi su tre e il terzo resta stampato sulla pagina.
+_ENFASI = re.compile(r"(`[^`]+`|\*\*\*.+?\*\*\*|\*\*.+?\*\*\*|\*\*.+?\*\*|\*[^*]+\*)")
+
+
+def _inline(s: str) -> str:
+    """Il corpo ricorsivo di `inline`: ricorsivo perché l'enfasi si annida.
+
+    `**bacchetta di *cura ferite leggere*, 25 cariche**` è grassetto **con
+    dentro** un corsivo: trattandolo a un livello solo, il corsivo interno
+    faceva chiudere il grassetto nel punto sbagliato e il resto della riga —
+    tutto l'equipaggiamento — usciva in corsivo con un asterisco orfano in coda.
+    """
+    fuori = []
+    for p in _ENFASI.split(s):
+        if not p:
+            continue
+        if p.startswith("`") and p.endswith("`") and len(p) > 1:
+            fuori.append('#raw("' + p[1:-1].replace('"', '\\"') + '")')
+        elif p.startswith("***") and p.endswith("***") and len(p) > 6:
+            fuori.append("*_" + _inline(p[3:-3]) + "_*")
+        elif p.startswith("**") and p.endswith("**") and len(p) > 4:
+            fuori.append("*" + _inline(p[2:-2]) + "*")     # in Typst * = grassetto
+        elif p.startswith("*") and p.endswith("*") and len(p) > 2:
+            fuori.append("_" + _esc(p[1:-1]) + "_")        # in Typst _ = corsivo
+        else:
+            fuori.append(_esc(p))
+    return "".join(fuori)
+
+
 def inline(s: str) -> str:
     """Grassetto, corsivo, codice e link, nell'ordine che evita le collisioni."""
     s = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", s)  # link → solo il testo
-    out = []
-    for p in re.split(r"(`[^`]+`|\*\*[^*]+\*\*|\*[^*]+\*)", s):
-        if p.startswith("`") and p.endswith("`") and len(p) > 1:
-            out.append('#raw("' + p[1:-1].replace('"', '\\"') + '")')
-        elif p.startswith("**") and p.endswith("**"):
-            out.append("*" + _esc(p[2:-2]) + "*")     # in Typst * = grassetto
-        elif p.startswith("*") and p.endswith("*") and len(p) > 2:
-            out.append("_" + _esc(p[1:-1]) + "_")     # in Typst _ = corsivo
-        else:
-            out.append(_esc(p))
-    return _unesc("".join(out))
+    return _unesc(_inline(s))
 
 
 def _celle(riga: str) -> list[str]:
@@ -191,16 +229,124 @@ def md_to_typ(md: str) -> str:
     return "\n".join(out)
 
 
+# ── le schede pregenerate ────────────────────────────────────────────────────
+# Qui il convertitore generico non basta. Per mettere la CA in un riquadro, i sei
+# attributi in una griglia e i legami in una colonna a parte bisogna sapere
+# **quale numero è quale**: lo sa `dmcore.schede`, che legge i master. Questo
+# pezzo traduce il risultato in una chiamata a `#scheda()` e nient'altro — la
+# forma sta tutta in `typst/scheda-pg.typ`.
+
+def _riga(md: str) -> str:
+    """Un campo di prosa (anche andato a capo nel master) → contenuto Typst."""
+    return "[" + inline(" ".join(md.split())) + "]"
+
+
+def _blocco(md: str) -> str:
+    """Un campo con struttura (gli slot degli incantesimi) → contenuto Typst."""
+    return "[" + md_to_typ(md).strip() + "]"
+
+
+def _str(s: str) -> str:
+    return json.dumps(s, ensure_ascii=False)
+
+
+def _tuple_str(righe) -> str:
+    """Array Typst di tuple di stringhe, con la virgola finale che serve a 1 solo elemento."""
+    return "(" + "".join("(" + ", ".join(_str(x) for x in r) + "), " for r in righe) + ")"
+
+
+def _tuple_corpo(righe, come=_riga) -> str:
+    """Array Typst di tuple `(etichetta, contenuto)`."""
+    return "(" + "".join(f"({_str(e)}, {come(c)}), " for e, c in righe) + ")"
+
+
+def _scheda_typ(s: Scheda, indice: int, totale: int, piede: str) -> str:
+    # L'equipaggiamento sta col background — è la roba che il personaggio ha
+    # addosso, non un numero da consultare in combattimento. Tutto il resto
+    # (talenti, abilità, incantesimi, capacità di classe) va nello statblocco.
+    equip = s.voce("equipaggiamento")
+    destra = [(v.etichetta, v.corpo) for v in s.voci if v is not equip]
+
+    campi: list[str] = [
+        f"nome: {_str(s.nome)}",
+        f"ruolo: {_str(s.ruolo)}",
+        f"numero: {_str(s.numero or str(indice))}",
+        f"totale: {_str(str(totale))}",
+        f"classe: {_str(s.classe)}",
+        f"rapide: {_tuple_str(s.rapide)}",
+        f"ca: {_str(s.ca)}",
+        f"pf: {_str(s.pf)}",
+        f"pf-dado: {_str(s.pf_dado)}",
+        f"ts: {_tuple_str(s.ts)}",
+        f"attributi: {_tuple_str(s.attributi)}",
+        f"manovre: {_tuple_str(s.manovre)}",
+        "attacchi: (" + "".join(
+            f"({_riga(riga)}, {'true' if rientro else 'false'}), " for riga, rientro in s.attacchi
+        ) + ")",
+        f"destra: {_tuple_corpo(destra, _blocco)}",
+        f"retro: {_tuple_corpo([(v.etichetta, v.corpo) for v in s.voci_retro])}",
+        f"legami: {_tuple_corpo(s.legami)}",
+        f"piede: {_str(piede)}",
+    ]
+    for chiave, valore, come in (
+        ("occhiello", s.occhiello, _riga),
+        ("ca-dettaglio", s.ca_dettaglio, _riga),
+        ("ts-nota", s.ts_nota, _riga),
+        ("ad-alta-voce", s.ad_alta_voce, _riga),
+        ("equipaggiamento", equip.corpo if equip else "", _blocco),
+        ("problema", s.problema, _riga),
+        ("minuto", s.minuto, _riga),
+    ):
+        if valore.strip():
+            campi.append(f"{chiave}: {come(valore)}")
+    if s.ritratto is not None:
+        campi.append(f"ritratto: {_str(typ_path(s.ritratto))}")
+
+    return "#scheda(\n  " + ",\n  ".join(campi) + ",\n)"
+
+
+def schede_di(cap: dict, base: Path, f: Path) -> list[tuple[str, str]]:
+    """Le schede di un capitolo `"layout": "schede"`, una per elemento.
+
+    Tenerle separate serve a `--per-scheda`: un PDF per giocatore si ottiene
+    compilando **un sorgente che contiene solo quella scheda**, non ritagliando
+    la pagina N dal volume. Il ritaglio per numero regge finché ogni scheda sta
+    in una pagina sola — cioè finché qualcuno non allunga un equipaggiamento.
+    """
+    retro = cap.get("retro")
+    ritratti = cap.get("ritratti") or []
+    if isinstance(ritratti, str):
+        ritratti = [ritratti]
+    elenco = leggi_schede(
+        f,
+        (base / retro).resolve() if retro else None,
+        [(base / d).resolve() for d in ritratti],
+    )
+    mancanti = [s.nome for s in elenco if s.ritratto is None]
+    if mancanti:
+        print(f"  ⚠ schede senza ritratto: {', '.join(mancanti)}", file=sys.stderr)
+    piede = cap.get("footer", "")
+    return [
+        (f"{s.numero or i}-{slug(s.nome)}", _scheda_typ(s, i, len(elenco), piede))
+        for i, s in enumerate(elenco, 1)
+    ]
+
+
+def schede(cap: dict, base: Path, f: Path) -> str:
+    """Il sorgente Typst di tutte le schede del capitolo, in fila."""
+    return "\n\n".join(corpo for _, corpo in schede_di(cap, base, f))
+
+
 # ── assemblaggio ─────────────────────────────────────────────────────────────
 
-def capitoli(man: dict, base: Path, tutti: bool) -> list[tuple[str, Path]]:
+def capitoli(man: dict, base: Path, tutti: bool) -> list[tuple[dict, str, Path]]:
     fuori = []
     for c in man.get("chapters", []):
         if not tutti and c.get("tag") != "player":
             continue
         f = (base / c["file"]).resolve()
         if f.exists():
-            fuori.append((c.get("title") or f.stem, f))
+            fuori.append((c, c.get("title") or f.stem, f))
         else:
             print(f"  ⚠ capitolo mancante, saltato: {c['file']}", file=sys.stderr)
     return fuori
@@ -219,19 +365,32 @@ def fregio_per(titolo: str, file: Path, base: Path) -> str | None:
     return None
 
 
-def sorgente(man: dict, base: Path, tutti: bool) -> str:
-    parti = [
+def intestazione(man: dict, apparato: bool | None = None) -> list[str]:
+    """Import e `#show: libro.with(...)`: la testa di ogni sorgente generato."""
+    if apparato is None:
+        apparato = bool(man.get("front_matter", True))
+    return [
         f'#import "{typ_path(TEMA)}": *',
+        f'#import "{typ_path(SCHEDA_PG)}": scheda',
         "#show: libro.with(",
         f'  titolo: {json.dumps(man.get("title", ""), ensure_ascii=False)},',
         f'  sottotitolo: {json.dumps(man.get("subtitle", ""), ensure_ascii=False)},',
         f'  brand: {json.dumps(man.get("brand", ""), ensure_ascii=False)},',
         f'  meta: {json.dumps(man.get("banner", ""), ensure_ascii=False)},',
         f'  capitolo: {json.dumps(man.get("footer", ""), ensure_ascii=False)},',
+        f'  apparato: {"true" if apparato else "false"},',
         ")",
         "",
     ]
-    for titolo, f in capitoli(man, base, tutti):
+
+
+def sorgente(man: dict, base: Path, tutti: bool) -> str:
+    parti = intestazione(man)
+    for cap, titolo, f in capitoli(man, base, tutti):
+        if cap.get("layout") == "schede":
+            parti.append(schede(cap, base, f))
+            parti.append("")
+            continue
         fr = fregio_per(titolo, f, base)
         parti.append(f"#capitolo-aperto({json.dumps(titolo, ensure_ascii=False)}, "
                      f"{'none' if not fr else json.dumps(fr, ensure_ascii=False)})")
@@ -242,12 +401,70 @@ def sorgente(man: dict, base: Path, tutti: bool) -> str:
     return "\n".join(parti)
 
 
+def compila(binario: str, typ: Path, pdf: Path) -> tuple[subprocess.CompletedProcess, bool]:
+    """Un `typst compile`, col ripiego sui tag PDF dichiarato dal chiamante.
+
+    Typst 0.15.1 ha un bug interno nella costruzione dell'albero dei tag PDF
+    («internal error: parent group») su documenti con float dentro strutture
+    annidate. I tag sono accessibilità, non impaginazione: se inciampa lì si
+    riprova senza — e lo si DICE, invece di consegnare un PDF diverso da quello
+    che il comando promette.
+    """
+    cmd = [binario, "compile", "--font-path", str(FONTS), "--root", str(ROOT)]
+    esito = subprocess.run(cmd + [str(typ), str(pdf)], capture_output=True, text=True)
+    if esito.returncode != 0 and "internal error" in esito.stderr and "tags" in esito.stderr:
+        return subprocess.run(cmd + ["--no-pdf-tags", str(typ), str(pdf)],
+                              capture_output=True, text=True), True
+    return esito, False
+
+
+def per_scheda(man: dict, base: Path, tutti: bool, binario: str, nome: str,
+               tieni_typ: bool) -> int:
+    """Un PDF per scheda in `<manifest>/schede/`, da mandare a un giocatore solo.
+
+    Non è una comodità: sulla scheda c'è «la cosa che non dici». Girare il
+    volume intero nel gruppo brucia i sei segreti prima della prima serata —
+    il fascicolo completo è per il DM e per la stampante, i singoli per i
+    giocatori. Perciò qui l'apparato è **sempre** spento: una copertina e un
+    indice su un foglio solo non hanno senso.
+    """
+    fuori = base / "schede"
+    trovate: list[tuple[str, str]] = []
+    for cap, _, f in capitoli(man, base, tutti):
+        if cap.get("layout") == "schede":
+            trovate += schede_di(cap, base, f)
+    if not trovate:
+        print("✗ --per-scheda: nessun capitolo «\"layout\": \"schede\"» nel manifest.\n"
+              "  È la chiave che accende l'impaginazione a scheda — vedi "
+              "docs/guides/GUIDA-BOOKLET-E-PDF.md §1.2.", file=sys.stderr)
+        return 2
+
+    fuori.mkdir(exist_ok=True)
+    testa = intestazione(man, apparato=False)
+    for etichetta, corpo in trovate:
+        typ = fuori / f"{nome}-{etichetta}.typ"
+        pdf = typ.with_suffix(".pdf")
+        typ.write_text("\n".join(testa + [corpo, ""]), encoding="utf-8")
+        esito, _ = compila(binario, typ, pdf)
+        if not tieni_typ:
+            typ.unlink(missing_ok=True)
+        if esito.returncode != 0:
+            print(esito.stderr.strip()[:2000], file=sys.stderr)
+            print(f"✗ --per-scheda: compilazione fallita su {etichetta}", file=sys.stderr)
+            return 1
+    print(f"✓ --per-scheda: {len(trovate)} schede → {fuori.relative_to(ROOT)}/ "
+          f"(una a testa, senza frontespizio)")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("manifest", help="il manifest del booklet (lo stesso dell'HTML)")
     ap.add_argument("--all", action="store_true", help="tutti i capitoli, ⚠ DM inclusi")
     ap.add_argument("--keep-typ", action="store_true", help="conserva il sorgente .typ generato")
     ap.add_argument("--list", action="store_true", help="elenca i capitoli e esci")
+    ap.add_argument("--per-scheda", action="store_true",
+                    help="in più, un PDF per ogni scheda in schede/ (da mandare a un giocatore solo)")
     args = ap.parse_args()
 
     mp = Path(args.manifest).resolve()
@@ -258,8 +475,9 @@ def main() -> int:
     base = mp.parent
 
     if args.list:
-        for t, f in capitoli(man, base, True):
-            print(f"  {t}  ←  {f.relative_to(ROOT) if ROOT in f.parents else f}")
+        for cap, t, f in capitoli(man, base, True):
+            marchio = "  [schede]" if cap.get("layout") == "schede" else ""
+            print(f"  {t}{marchio}  ←  {f.relative_to(ROOT) if ROOT in f.parents else f}")
         return 0
 
     binario = shutil.which("typst")
@@ -269,21 +487,14 @@ def main() -> int:
 
     typ = base / f"{mp.stem.replace('.manifest', '')}.typ"
     pdf = base / f"{mp.stem.replace('.manifest', '')}-STAMPA.pdf"
-    typ.write_text(sorgente(man, base, args.all), encoding="utf-8")
+    try:
+        src = sorgente(man, base, args.all)
+    except SchedaError as e:
+        print(f"✗ export_booklet_typst: {e}", file=sys.stderr)
+        return 1
+    typ.write_text(src, encoding="utf-8")
 
-    base_cmd = [binario, "compile", "--font-path", str(FONTS), "--root", str(ROOT)]
-    esito = subprocess.run(base_cmd + [str(typ), str(pdf)], capture_output=True, text=True)
-
-    # Typst 0.15.1 ha un bug interno nella costruzione dell'albero dei tag PDF
-    # («internal error: parent group») su documenti con float dentro strutture
-    # annidate. I tag sono accessibilità, non impaginazione: se inciampa lì,
-    # si riprova senza — e lo si DICE, invece di consegnare un PDF diverso da
-    # quello che il comando promette.
-    degradato = False
-    if esito.returncode != 0 and "internal error" in esito.stderr and "tags" in esito.stderr:
-        degradato = True
-        esito = subprocess.run(base_cmd + ["--no-pdf-tags", str(typ), str(pdf)],
-                               capture_output=True, text=True)
+    esito, degradato = compila(binario, typ, pdf)
 
     if not args.keep_typ:
         typ.unlink(missing_ok=True)
@@ -301,6 +512,10 @@ def main() -> int:
     n = len(capitoli(man, base, args.all))
     print(f"✓ export_booklet_typst: {n} capitoli → {pdf.relative_to(ROOT)} "
           f"({pdf.stat().st_size // 1024} KB, un volume con segnalibri)")
+
+    if args.per_scheda:
+        return per_scheda(man, base, args.all, binario,
+                          mp.stem.replace(".manifest", ""), args.keep_typ)
     return 0
 
 

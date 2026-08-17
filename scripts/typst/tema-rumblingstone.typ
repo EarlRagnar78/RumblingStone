@@ -79,7 +79,11 @@
   else { corpo }
 }
 
-#let libro(titolo: "", sottotitolo: "", brand: "", meta: "", capitolo: "", corpo) = {
+// `apparato: false` toglie frontespizio e indice. Serve a un fascicolo di
+// schede: sei fogli da stampare e dare in mano, dove una copertina e un indice
+// sarebbero due pagine da saltare ogni volta che si va alla fotocopiatrice.
+#let libro(titolo: "", sottotitolo: "", brand: "", meta: "", capitolo: "",
+           apparato: true, corpo) = {
   set document(title: titolo)
   set page(
     paper: "a4",
@@ -137,6 +141,11 @@
   }
   show strong: set text(fill: rgb("#4a2c12"), weight: 600)
   show raw: set text(font: "DejaVu Sans Mono", size: 8.6pt)
+
+  if not apparato {
+    corpo
+    return
+  }
 
   // Frontespizio
   align(center)[

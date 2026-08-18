@@ -135,7 +135,7 @@ parto.*
 ### Attacco
 **Mischia** bastone ferrato +2 (1d6) · falcetto +2 (1d6)
 **Dardo acido** *(dominio Terra)* raggio di contatto **+3**, 1d6+1, **7 volte al giorno**
-**BAB** +2 · **CMB** +2 · **CMD** 13
+**BAB** +2 · **CMB** +2 · **CMD** 14
 
 ### Statistiche
 **For** 10 (+0) · **Des** 13 (+1) · **Cos** 13 (+1) · **Int** 12 (+1) · **Sag** 18 (+4) · **Car** 10 (+0)
@@ -155,7 +155,7 @@ Percezione +10, Cavalcare +6, Conoscenze (natura) +6, Sapienza Magica +6
 (6) · bastone ferrato · **bacchetta di *cura ferite leggere*, 25 cariche** (375) ·
 2 pergamene di *ritardare veleno* (300) · 2 antitossine (100) · kit dell'erborista e
 sacca del guaritore (55) · **anello di protezione +1** (2.000) *— era di sua madre,
-e non lo dice a nessuno* · **+ ~150 mo**
+e non lo dice a nessuno; la deviazione entra anche nel CMD* · **+ ~150 mo**
 
 ### Il suo problema
 *Ritardare veleno* lo prepara ogni mattina da sei anni, sempre, e non ha mai dovuto
@@ -197,7 +197,7 @@ CD 15 nega), **7 volte al giorno**
 slot a memorizzarle)*
 **Incantesimi preparati** (CD 14 + livello; **+1 per le illusioni**)
 - **0°** (4): *prestidigitazione* · *individuazione del magico* · *lettura del magico* · *luce*
-- **1°** (3 + 1 scuola): *armatura magica* · *charme su persone* (CD 16) · *dardo
+- **1°** (3 + 1 scuola): *armatura magica* · *charme su persone* (CD 15) · *dardo
   incantato* · **scuola**: *immagine silenziosa* (CD 16)
 - **2°** (2 + 1 scuola): *individuazione dei pensieri* (CD 16) · *tocco dell'idiota* ·
   **scuola**: *invisibilità*

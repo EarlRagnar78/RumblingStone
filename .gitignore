@@ -342,3 +342,13 @@ scripts/comfyui-local/ComfyUI/
 **/rendered/hero/
 # Export VTT: artefatti locali di export_uvtt.py (import nativo Foundry/Roll20)
 **/rendered/vtt/
+
+# Sorgenti Typst generati dai manifest dei booklet (--keep-typ): artefatti
+**/homebrew/*.typ
+
+# Eccezione al blocco «*.jpg» qui sopra, che serve a tenere fuori foto e scansioni.
+# Queste sei sono le derivate leggere dei ritratti dipinti (~100 KB l'una): le
+# schede da stampa le usano al posto dei PNG da 6 MB, e senza di esse un clone
+# fresco produrrebbe un PDF da quaranta megabyte senza dire niente a nessuno.
+# Come si rigenerano: STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/immagini/web/README.md
+!STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/immagini/web/*.jpg

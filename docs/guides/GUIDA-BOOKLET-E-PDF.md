@@ -78,6 +78,99 @@ pulito — **questa catena qui sotto continua a funzionare da sola**.
 Come le due catene si incastrano con tutto il resto:
 [GUIDA-FLUSSO-LOCALE](GUIDA-FLUSSO-LOCALE.md).
 
+### 1.2 Le schede pregenerate non sono un capitolo
+
+Un capitolo si legge una volta; una **scheda** sta in mano al giocatore per tre
+serate. Impaginare le schede come testo corrente — un paragrafo dopo l'altro su
+due colonne — le rende illeggibili proprio quando servono: a metà combattimento,
+nessuno cerca la CA dentro una frase.
+
+Perciò un capitolo del manifest può dichiararsi **scheda**:
+
+```json
+{
+  "title": "✉ Le sei schede",
+  "file": "../PREGEN-SEI-SCHEDE-PF1E.md",
+  "tag": "player",
+  "layout": "schede",
+  "retro": "../FASCICOLO-SCHEDE-GIOCATORE.md",
+  "ritratti": ["../ALLEGATI/immagini/web", "../ALLEGATI/immagini"],
+  "footer": "IL DRAPPO DI TARSILIA · PATHFINDER 1E · SCHEDA DA TAVOLO"
+}
+```
+
+L'esportatore lo impagina con `scripts/typst/scheda-pg.typ`: **una pagina A4 per
+personaggio**, con
+
+- in **alto** il nome, classe/livello/razza e il ritratto, più i tre valori che
+  si consultano di continuo (iniziativa, percezione, velocità);
+- a **sinistra** chi sei — il background in prima persona da leggere ad alta
+  voce, l'equipaggiamento, il legame con gli altri personaggi, il tuo problema;
+- a **destra** quanto fai — CA, pf, tiri salvezza, la griglia dei sei attributi
+  coi modificatori, attacchi, abilità, talenti, incantesimi;
+- in **fondo**, a piena larghezza, «come si gioca in un minuto».
+
+| Campo | Cosa fa |
+|---|---|
+| `layout: "schede"` | accende l'impaginazione a scheda per quel capitolo |
+| `file` | il master dei **numeri** (`PREGEN-*.md`) — obbligatorio |
+| `retro` | il master della **persona** (`FASCICOLO-*.md`) — facoltativo: senza, esce la sola metà destra |
+| `ritratti` | cartelle dove cercare `ritratto-<nome>.<jpg\|png\|webp\|svg>`, in ordine di preferenza |
+| `footer` | la riga in fondo alla pagina |
+| `front_matter: false` | *(chiave del manifest, non del capitolo)* niente frontespizio né indice — sei fogli e basta |
+
+I dati arrivano **dagli stessi master markdown che il tavolo usa già**: non
+esiste una seconda copia dei numeri, quindi non esiste una copia che possa
+restare vecchia. Se cambi la CA nel `PREGEN-*.md`, cambia nella scheda stampata.
+
+> **I ritratti pesanti vanno ridotti.** Un PNG da 6 MB per scheda fa un PDF da
+> quaranta megabyte. Metti le derivate leggere in una cartella `web/` e
+> nominala **per prima** in `ritratti` — vedi
+> `STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/immagini/web/README.md`.
+
+Esempio completo nel repo:
+`STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-SCHEDE-PG.manifest.json`.
+
+**Un PDF per giocatore**, oltre al fascicolo:
+
+```bash
+python3 scripts/export_booklet_typst.py MANIFEST.json --per-scheda
+```
+
+Scrive anche `schede/<nome>-<N>-<pg>.pdf`, uno per personaggio, **senza
+frontespizio**. Non è una comodità: sulla scheda c'è «la cosa che non dici».
+Girare il volume intero nel gruppo brucia i segreti di tutti prima della prima
+serata — il fascicolo completo è per il DM e per la stampante, i singoli per i
+giocatori.
+
+Ogni scheda viene compilata da un **sorgente suo**, non ritagliata per numero di
+pagina: il ritaglio regge finché ogni scheda sta in una pagina sola, cioè finché
+qualcuno non allunga un equipaggiamento.
+
+### 1.3 Cosa controlla la CI, e cosa no
+
+| Livello | Chi lo controlla |
+|---|---|
+| il **markdown** delle schede (sezioni obbligatorie, GS dichiarato) | `validate_standalone.py` §3, in CI |
+| i **link** del modulo, immagini comprese | `validate_standalone.py` §2, in CI |
+| il **manifest** delle schede (master e ritratti risolvibili) | `export_booklet_typst.py --list` in CI + `scripts/tests/test_schede.py` |
+| i **parametri** che l'esportatore passa al template `.typ` | `test_schede.py::TestSorgenteTypst` |
+| l'**impaginazione vera** | ⚠️ **nessuno**: `typst` non è installato in CI. Si guarda a occhio, in locale |
+
+Per guardarla a occhio senza aprire il PDF, le pagine si rendono in PNG:
+
+```bash
+python3 scripts/export_booklet_typst.py MANIFEST.json --keep-typ
+typst compile --font-path scripts/typst/fonts --root . \
+    --format png --ppi 110 <nome>.typ 'pagina{n}.png'
+```
+
+> ⚠️ **Le derivate leggere delle immagini sono gitignorate.** `.gitignore` blocca
+> `*.jpg` in tutto il repo: se un master punta a `.../web/*.jpg` e quei file non
+> sono committati con un'eccezione `!`, il link è rotto in un clone fresco anche
+> se sulla tua macchina funziona. `validate_standalone.py` lo segnala e dice
+> perché.
+
 ---
 
 ## 2. Prerequisiti

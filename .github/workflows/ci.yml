@@ -76,6 +76,24 @@ jobs:
           python scripts/dm_dossier.py --help > /dev/null
           python scripts/validate_modules.py --help > /dev/null
           python scripts/tools_manifest.py --help > /dev/null
+          # Catena editoriale e da stampa: questi sette dichiaravano `ci_smoke`
+          # nel manifest e non venivano eseguiti da nessuno — il contratto
+          # prometteva una verifica che non esisteva (ADR-0012).
+          python scripts/build_booklet_html.py --help > /dev/null
+          python scripts/export_booklet_pdf.py --help > /dev/null
+          python scripts/export_booklet_typst.py --help > /dev/null
+          python scripts/build_chapter_marks.py --help > /dev/null
+          python scripts/extract_scene_prompts.py --help > /dev/null
+          python scripts/import_watabou.py --help > /dev/null
+          python scripts/campaign_branch.py --help > /dev/null
+
+      - name: Schede pregenerate — manifest risolvibile senza typst
+        run: |
+          # typst non è installato in CI: si verifica ciò che si può verificare
+          # senza, cioè che il manifest delle schede risolva i suoi master e i
+          # suoi ritratti. La compilazione vera resta locale.
+          python scripts/export_booklet_typst.py \
+            STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-SCHEDE-PG.manifest.json --list
 
       - name: Map JSON contract + UVTT export round-trip (M1/M2)
         run: |

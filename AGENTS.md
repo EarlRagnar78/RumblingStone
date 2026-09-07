@@ -21,11 +21,14 @@ campaign/
 ├── DM-CAMPAIGN-PLAYBOOK.md  # DM operational guide (workflow + examples + reset)
 ├── state.md                 # Living world state (§0 dashboard first)
 ├── sessions/                # Session logs (YYYY-MM-DD_session-N.md)
-├── npcs/                    # NPC cards (name, stat block, motivation, status)
-├── locations/               # Location descriptions and maps metadata
-├── encounters/              # Custom encounter files (CR, monsters, tactics)
+├── recaps/                  # Generated recaps (group and per-PC)
+├── ai-media-prompts/        # Image/audio prompt masters (ADR-0015)
 ├── templates/               # Blank state + session templates for new groups
-└── lore/                    # House rules, world adaptations, timeline
+└── lore/                    # House rules, campaign history, DM/player strategy
+
+# NPCs, locations and encounters do NOT live under campaign/. NPC and villain
+# cards are in Bestiario/png/ and Bestiario/villain/; locations and encounters
+# are inside the arc modules (00_… to 09_…), with their tactical maps.
 
 skills/
 ├── dnd-35-srd/             # D&D 3.5 SRD mechanics (no setting bias)
@@ -158,8 +161,8 @@ non hanno alcun meccanismo di scoperta. È questa sezione a instradarli.
 ### File naming
 
 - Sessions: `campaign/sessions/YYYY-MM-DD_session-N.md`
-- NPCs: `campaign/npcs/[name-kebab-case].md`
-- Encounters: `campaign/encounters/[location-name]_encounter.md`
+- NPCs and villains: `Bestiario/png/` and `Bestiario/villain/` (statblock + catalog entry)
+- Encounters: inside the arc module that uses them, next to their tactical map
 
 ### NPC file format
 
@@ -207,7 +210,7 @@ non hanno alcun meccanismo di scoperta. È questa sezione a instradarli.
 2. **Non-SRD**: flag as `[Private source]`; do not reproduce copyrighted text verbatim
 3. **House rules** live in `campaign/lore/house-rules.md`; always check before ruling
 4. **RAW vs RAI**: state which you're providing; give both if ambiguous
-5. **Red Hand of Doom adaptations**: documented in `campaign/lore/rhod-adaptations.md`
+5. **Red Hand of Doom adaptations**: documented in `skills/rumblingstone-campaign/references/campaign-coherence.md` (canonical) and summarised in `campaign/DM-QUICKSTART-NUOVI-DM.md`
 6. **DM Strategy & Player Profiles**: For adult-oriented, non-linear sessions (Shine Time, State Machine design), consult `skills/rumblingstone-campaign/references/campaign-dm-strategy.md` (canonical). The lore folder file `campaign/lore/dm-player-strategy.md` is now a pointer to that canonical source.
 7. **Living world state**: Before describing what NPCs know, where parties/villains currently are, or what threads are open, load `campaign/state.md`. It is the single source of truth for *current* world state (changes per session).
 8. **Coherence**: Before introducing artifact powers, NPC knowledge, or callbacks to past PG actions, consult `skills/rumblingstone-campaign/references/campaign-coherence.md`.
@@ -222,7 +225,7 @@ non hanno alcun meccanismo di scoperta. È questa sezione a instradarli.
 | DO | DON'T |
 |---|---|
 | Read session logs before generating continuations | Invent events that contradict session logs |
-| Check `campaign/npcs/` before describing NPCs | Invent NPC stats not in files |
+| Check `Bestiario/png/` and `Bestiario/villain/` before describing NPCs | Invent NPC stats not in files |
 | Use 3.5 SRD for all mechanics | Use 5e rules (different system) |
 | Load the focused skill for the question (`dnd-35-srd`, `forgotten-realms-lore`, …) | Quote non-SRD books verbatim |
 | Close/prep sessions via `dm.py session` (ADR-0007) | Hand-edit `state.md` `auto:` regions or write canon on `main` |

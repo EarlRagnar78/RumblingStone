@@ -276,10 +276,22 @@ class IlMirrorNonEUnaFonte(unittest.TestCase):
                         and isinstance(primo.value, ast.Constant)
                         and isinstance(primo.value.value, str)):
                     docstring.add(id(primo.value))
+            # Seconda esenzione, della stessa famiglia della prima: una stringa
+            # PASSATA a una funzione che riconosce il mirror non lo legge — gli
+            # chiede se lo e', ed e' il codice che serve a escluderlo. Trovata
+            # dal test su `validate_docs._is_generated_mirror(".claude/skills/x")`.
+            interrogazioni = set()
+            for nodo in ast.walk(albero):
+                if isinstance(nodo, ast.Call):
+                    nome = getattr(nodo.func, "attr", None) or getattr(nodo.func, "id", "")
+                    if "mirror" in (nome or "").lower():
+                        for arg in nodo.args:
+                            interrogazioni.add(id(arg))
             for nodo in ast.walk(albero):
                 if (isinstance(nodo, ast.Constant) and isinstance(nodo.value, str)
                         and MIRROR in nodo.value
-                        and id(nodo) not in docstring):
+                        and id(nodo) not in docstring
+                        and id(nodo) not in interrogazioni):
                     colpevoli.append(f"{f.relative_to(radice)}:{nodo.lineno}")
         self.assertEqual(colpevoli, [],
                          "questi leggono dal mirror invece che da skills/: "

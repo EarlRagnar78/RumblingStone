@@ -502,7 +502,7 @@ workflow: `✓ pesi vietati rifiutati, reroll senza motivo rifiutato` e
 >
 > | Lotto | Classe | `[engine · effort · qualità]` |
 > |---|---|---|
-> | **4a** `validate_docs` | **C** costruzione | `[Sonnet 5 · medio-alto · il gate boccia una cartella documentata e inesistente, e **non** boccia i 4 falsi positivi noti]` |
+> | **4a** ✅ `validate_docs` | **C** costruzione | `[Sonnet 5 · medio-alto · il gate boccia una cartella documentata e inesistente, e **non** boccia i 4 falsi positivi noti]` — **chiuso 2026-09-07: 6 difetti veri, zero falsi positivi** |
 > | **4b** link e path locali | **M** meccanico | `[inline · basso · 0 link rotti su 241, 0 path `/home/jfs/`]` |
 > | **4c** i due tempi di `state.md` | **K** canone | `[**Opus 5, mai delegato** · xhigh · nessun contenuto cancellato, solo etichettato; **due domande al DM** poste, non indovinate]` |
 > | **4d** `state.yaml` (ADR-0017) | **K** canone | `[**Opus 5** · xhigh-max · `state.md` **rigenerato è identico** a quello committato]` |
@@ -538,6 +538,43 @@ prendono **uno alla volta**, ciascuno col suo commit e i suoi gate.
 | 4f | **G2-quater** — prodotto e partita | il reset per gruppo nuovo **perdeva**: azzerava `state.md` e `sessions/` e lasciava `state.yaml`, `state-changelog.md`, `campaign-history.md` e i recap al gruppo dopo | dipende da 4d/4e |
 | 4g | schede PG a dati | `PG/schede/*.yaml` + `.md` generati | oggi le schede PG **non esistono come dato** da nessuna parte |
 | 4h | ADR-0018 — `groups/<slug>/` | multi-gruppo per directory invece che per branch | **PR dedicata**, come dice la #99 stessa |
+
+### 4.2-bis · Com'è andato 4a (2026-09-07)
+
+Portato `validate_docs.py` dalla #99 e giudicato **sul repo di oggi**, un mese
+dopo che è stato scritto: trova **sei percorsi citati e inesistenti**, e li ho
+verificati uno per uno prima di toccare i documenti — **nessun falso positivo**.
+
+| Dove | Cosa asseriva |
+|---|---|
+| `AGENTS.md` 24-26 | l'albero di `campaign/` elencava `npcs/`, `locations/`, `encounters/` |
+| `AGENTS.md` 161-162 | convenzioni di nome per due di quelle cartelle |
+| `AGENTS.md` 210 | `campaign/lore/rhod-adaptations.md`, che non esiste in nessun posto |
+| `AGENTS.md` 225 | *«Check `campaign/npcs/` before describing NPCs»* |
+| `README.md` 54 | i PNG «dettagliati in» una cartella che non c'è |
+
+⚠️ **Il peggiore è il quarto**, e non è un refuso: è una **istruzione** nel
+documento che un agente legge per primo, che lo manda a cercare in una cartella
+mai esistita. I PNG vivono in `Bestiario/png/` (32 file) e `Bestiario/villain/`.
+
+**Corretti puntando alla realtà, non cancellando**: l'albero adesso elenca le
+cartelle vere (`recaps/`, `ai-media-prompts/`) e dice a chiare lettere dove
+stanno davvero PNG, luoghi e incontri; gli adattamenti di RHoD puntano a
+`campaign-coherence.md`, che è dove sono per davvero.
+
+🔎 **Due gate hanno trovato roba da soli, mentre chiudevo il lotto.**
+
+1. `tools_manifest --check` si è accorto che il tool nuovo **non aveva un
+   descrittore** — scritto nella forma di oggi, non copiato dalla #99 che ha
+   un'altra forma. **59 tool**.
+2. `test_nessuno_script_legge_dal_mirror` ha bocciato una riga dei test di
+   `validate_docs`: `_is_generated_mirror(".claude/skills/x")`. ⚠️ **Falso
+   positivo**, e della **stessa famiglia** di quello che quel test aveva già
+   incontrato una volta — il suo commento dice *«un guardiano che accusa sé
+   stesso è un guardiano che verrà spento»*. Una stringa **passata a** una
+   funzione che riconosce il mirror non lo legge: gli chiede se lo è, ed è il
+   codice che serve a **escluderlo**. Aggiunta l'esenzione mirata, e verificato
+   che la regola morde ancora su un file che legge davvero dal mirror.
 
 ### 4.3 · Il lotto 4d, e perché vale la pena
 

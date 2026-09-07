@@ -1883,6 +1883,38 @@
       "deterministic": true
     },
     {
+      "name": "validate_docs",
+      "description": "«Il documento che un agente legge per primo descrive una cartella che non c'e'. Come faccio ad accorgermene prima che lui ci vada a cercare?»\n\nGate anti-deriva fra documentazione e filesystem: ogni percorso citato nei documenti d'ingresso (AGENTS.md, README.md, docs/INDEX.md) deve esistere davvero.",
+      "use_case": "«Il documento che un agente legge per primo descrive una cartella che non c'e'. Come faccio ad accorgermene prima che lui ci vada a cercare?»",
+      "invocation": "python3 scripts/validate_docs.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "doc": {
+            "type": "string",
+            "description": "Documenti da controllare, al posto dei tre d'ingresso."
+          },
+          "verbose": {
+            "type": "boolean",
+            "description": "Elenca anche i percorsi verificati e trovati."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Rapporto machine-readable invece del testo."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "tutti i percorsi citati esistono",
+        "1": "percorsi citati e inesistenti",
+        "2": "uso errato"
+      },
+      "deterministic": true
+    },
+    {
       "name": "validate_lingua",
       "description": "«Ci sono refusi meccanici di italiano, del tipo che una macchina trova meglio di me?»\n\nRefusi meccanici dell'italiano nel contenuto: accenti (perche' -> perche acuto, ne', se stesso), po' con apostrofo, qual e', d eufonica davanti a consonante, spazio prima della punteggiatura, doppi spazi. Salta blocchi di codice, inline, URL, front-matter e guide alla pronuncia. Non bloccante in CI finche' il rumore non e' a zero; --strict alza gli avvisi a errori.",
       "use_case": "«Ci sono refusi meccanici di italiano, del tipo che una macchina trova meglio di me?»",

@@ -622,14 +622,16 @@ Vale per **ogni** commit di **ogni** fase.
 
 ## Le decisioni che restano al DM
 
+<!-- decisioni-dm: RIPRESA-PR -->
+
 | # | Fase | Domanda |
 |---|---|---|
-| D1 | F1 | I tre master `Hammerfist-Lotto-*` deprecati: **si archiviano** in `_ARCHIVIO/` (proposta) o **si tengono coi loro SVG**? |
+| ~~D1~~ | F1 | ✅ **decisa 2026-09-05: archiviazione.** I tre master e i loro 7 SVG in `_ARCHIVIO/`; gli SVG non cancellati, così la cartella resta dentro il raggio di `validate_maps` |
 | D2 | F3 | I diciotto raster si generano **sulla tua macchina** — quando? La fase si chiude senza, ma la catena resta non collaudata sul risultato vero |
 | D3 | F4 · 4c | Le due domande di G1: il **−2 COS di Thorik** e il **Giorno di Marcia 19 vs ~15** |
 | D4 | F4 | I **13 stemmi e mappe** del `PALIO-BOOKLET` che la #99 lascia in sospeso: si producono o si tolgono i riferimenti? |
 | ~~D5~~ | ~~fuori piano~~ | ✅ **deciso e fatto il 2026-09-04**: il DM l'ha messo in cima alla coda, ed è chiuso insieme al punto cieco di `validate_maps` (ADR-0043) |
-| D6 | F1 | `…P1C-Rituale-COMPLETO-SCALE` mappa 3 dichiara **40×40** e ha **26×29** celle: il renderer avvisa e disegna lo stesso. La griglia è contenuto — la ridisegno o la lascio con l'avviso? |
+| ~~D6~~ | F1 | ✅ **decisa 2026-09-04: ridisegnata.** `…P1C` mappa 3 dichiarava 40×40 e aveva righe da 24 a 26 celle: rifatta **26×29**, nessuna coordinata del testo cambiata |
 
 ---
 

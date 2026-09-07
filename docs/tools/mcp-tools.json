@@ -1684,6 +1684,36 @@
       "deterministic": true
     },
     {
+      "name": "decisioni_dm",
+      "description": "«Che cosa sta aspettando da me, oggi? E come faccio a fidarmi che quell'elenco sia aggiornato?»\n\nLe decisioni aperte al DM: la fonte sono le tabelle marcate dentro i piani, l'aggregato di STATO-E-ORDINE §4 e' generato, e il drift fra le due cose e' rosso in CI.",
+      "use_case": "«Che cosa sta aspettando da me, oggi? E come faccio a fidarmi che quell'elenco sia aggiornato?»",
+      "invocation": "python3 scripts/decisioni_dm.py --check",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Gate CI: segnala il drift fra piani e aggregato, non scrive."
+          },
+          "emit": {
+            "type": "boolean",
+            "description": "Rigenera l'aggregato in STATO-E-ORDINE fra i marker auto:begin/auto:end."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "plans/STATO-E-ORDINE-DEI-PIANI.md"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "drift fra piani e aggregato, o fonte malformata",
+        "2": "uso errato (nessuna opzione)"
+      },
+      "deterministic": true
+    },
+    {
       "name": "dm",
       "description": "«Devo fare una cosa con il repo e non ricordo quale script: da dove passo?»\n\nEntrypoint unico: orchestra tutti gli script per fase del Playbook (prep/post/session/recap/handout/maps/hype/dossier/skills/doctor). ADR-0002. Il sottocomando «volume» (ADR-0031) esegue la catena editoriale in ordine da un manifest a un volume, e chiude ricordando il cancello d'uscita IP: non e' automatizzabile, ma e' il momento in cui va detto.",
       "use_case": "«Devo fare una cosa con il repo e non ricordo quale script: da dove passo?»",

@@ -178,17 +178,36 @@ riuscita non si sa descrivere è un lotto tagliato male.
 
 ## 4 · Le decisioni ferme al DM
 
-| # | Piano | Domanda |
-|---|---|---|
-| ~~D1~~ | ① F1 | ✅ **decisa 2026-09-05: archiviazione.** I tre master e i **loro 7 SVG** in `08_…/Mappe/_ARCHIVIO/` — gli SVG non cancellati, così la cartella resta dentro il raggio di `validate_maps` |
-| **D2** | ① F3 | 🖥 **Aperta.** Quando generi i diciotto raster sulla tua macchina. Il codice è dentro (F3 3a-3c); manca solo il passo che vuole la GPU, e il collo di bottiglia sono ~1,5-2 h di **giudizio** |
-| ~~D6~~ | ① F1 | ✅ **decisa 2026-09-04: ridisegnata.** La griglia di `…P1C` mappa 3, da 40×40 dichiarate a **26×29** reali. *(Mancava del tutto in questa tabella fino al 2026-09-06 — è il difetto che ha fatto nascere la regola qui sotto.)* |
-| D3 | ① F4 | Il **−2 COS di Thorik** e il **Giorno di Marcia 19 vs ~15** |
-| D4 | ① F4 | I **13 stemmi** del `PALIO-BOOKLET`: produrli o togliere i riferimenti? |
-| D7 | ② | **Quali mappe pubblicate sono lo standard** — bloccante |
-| D8 | ② | Il tavolo stampa a colori o in **bianco e nero**? |
-| D9 | ② | Doppia versione DM/giocatori: su tutte o solo sulle hero map? Oggi ce l'ha **una** |
-| D10 | ② §6 | Le **6 mappe** con l'intestazione sbagliata: le sistemo io una per una o le guardi prima tu? |
+> ⚠️ **Questa tabella è generata**, come `docs/tools/registry.json` lo è dal
+> manifest. La fonte sono le tabelle marcate `<!-- decisioni-dm: … -->` dentro i
+> piani: si modifica **là**, e qui si rigenera con
+> `python3 scripts/decisioni_dm.py --emit`. Il gate `--check` fa rossa la CI se
+> le due cose divergono — vedi
+> [ADR-0047](adr/ADR-0047-le-decisioni-aperte-hanno-una-casa-sola.md).
+>
+> ⚠️ **`D<n>` non è un identificatore globale**: otto piani hanno il loro
+> `D1..Dn` con significati diversi (in `REVISIONE-ARC07` sono 17 decisioni *già
+> prese*). L'identità è la coppia **piano#Dn**, e la colonna «Piano» serve a
+> quello, non all'ordine.
+
+<!-- auto:begin key=decisioni-dm -->
+
+**7 aperte** · 3 chiuse — generato da `scripts/decisioni_dm.py --emit`, non si scrive a mano.
+
+| # | Piano | Ambito | Domanda |
+|---|---|---|---|
+| **D2** | `RIPRESA-PR` | F3 | I diciotto raster si generano **sulla tua macchina** — quando? La fase si chiude senza, ma la catena resta non collaudata sul risultato vero |
+| **D3** | `RIPRESA-PR` | F4 · 4c | Le due domande di G1: il **−2 COS di Thorik** e il **Giorno di Marcia 19 vs ~15** |
+| **D4** | `RIPRESA-PR` | F4 | I **13 stemmi e mappe** del `PALIO-BOOKLET` che la #99 lascia in sospeso: si producono o si tolgono i riferimenti? |
+| **D7** | `RICERCA-MESTIERE` | metro di paragone | Quali due o tre **mappe pubblicate sono lo standard** che vuoi raggiungere? Senza un riferimento scelto da te, l'audit misura contro un'idea mia di «mappa buona» — **bloccante** |
+| **D8** | `RICERCA-MESTIERE` | stampa | Il tavolo stampa **a colori o in bianco e nero**? Cambia il peso di A1.6 e A1.7 da «bello avere» a bloccante |
+| **D9** | `RICERCA-MESTIERE` | doppia versione | DM/giocatori: la vuoi **su tutte le mappe** o solo sulle hero map? Oggi ce l'ha **una** |
+| **D10** | `RICERCA-MESTIERE` | §6 | Le **sei mappe con l'intestazione discorde**: le sistemo io una per una, o le guardi prima tu? |
+| ~~D1~~ | `RIPRESA-PR` | F1 | ✅ **decisa 2026-09-05: archiviazione.** I tre master e i loro 7 SVG in `_ARCHIVIO/`; gli SVG non cancellati, così la cartella resta dentro il raggio di `validate_maps` |
+| ~~D5~~ | `RIPRESA-PR` | ~~fuori piano~~ | ✅ **deciso e fatto il 2026-09-04**: il DM l'ha messo in cima alla coda, ed è chiuso insieme al punto cieco di `validate_maps` (ADR-0043) |
+| ~~D6~~ | `RIPRESA-PR` | F1 | ✅ **decisa 2026-09-04: ridisegnata.** `…P1C` mappa 3 dichiarava 40×40 e aveva righe da 24 a 26 celle: rifatta **26×29**, nessuna coordinata del testo cambiata |
+
+<!-- auto:end key=decisioni-dm -->
 
 ---
 
@@ -196,6 +215,19 @@ riuscita non si sa descrivere è un lotto tagliato male.
 
 Chi chiude un lotto aggiorna **quattro** cose nello stesso commit: la checklist
 del piano, `INDEX.md`, `CHANGELOG.md` e — se cambia l'ordine o le dipendenze —
-**questo documento**. Le prime tre le controlla `check_plans_discipline`; la
-quarta no, ed è una debolezza dichiarata: questo file è una **fotografia**, e
-una fotografia invecchia.
+**questo documento**.
+
+Le prime tre le controlla `check_plans_discipline`. La quarta era *«una debolezza
+dichiarata»*, e il 2026-09-06 ha ceduto: §4 dava una decisione aperta il giorno
+dopo che era stata presa, ne ometteva un'altra, e ne elencava **quattro che non
+esistevano in nessun piano**. Adesso **§4 è generata** e il drift è rosso in CI
+([ADR-0047](adr/ADR-0047-le-decisioni-aperte-hanno-una-casa-sola.md)):
+
+```bash
+python3 scripts/decisioni_dm.py --check   # gate: l'aggregato combacia coi piani?
+python3 scripts/decisioni_dm.py --emit    # rigenera §4 dopo aver toccato un piano
+```
+
+⚠️ **Il resto di questo documento resta scritto a mano**, e resta una
+fotografia: l'ordine delle fasi, le dipendenze, i costi. Il gate copre la
+tabella delle decisioni, non il giudizio che c'è attorno.

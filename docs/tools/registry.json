@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 57,
+  "tool_count": 58,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -4050,6 +4050,71 @@
       "docs": [
         "plans/adr/ADR-0009-gate-tracciatura-changelog-adr.md"
       ]
+    },
+    {
+      "id": "decisioni_dm",
+      "path": "scripts/decisioni_dm.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/decisioni_dm.py --check",
+      "summary": "Le decisioni aperte al DM: la fonte sono le tabelle marcate dentro i piani, l'aggregato di STATO-E-ORDINE §4 e' generato, e il drift fra le due cose e' rosso in CI.",
+      "use_case": "«Che cosa sta aspettando da me, oggi? E come faccio a fidarmi che quell'elenco sia aggiornato?»",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Gate CI: segnala il drift fra piani e aggregato, non scrive."
+        },
+        {
+          "name": "--emit",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Rigenera l'aggregato in STATO-E-ORDINE fra i marker auto:begin/auto:end."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "plans/STATO-E-ORDINE-DEI-PIANI.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "drift fra piani e aggregato, o fonte malformata",
+        "2": "uso errato (nessuna opzione)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "A parita' di tabelle nei piani l'aggregato esce byte-identico: e' il presupposto del --check."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true
     },
     {
       "id": "dm",

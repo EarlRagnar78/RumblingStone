@@ -38,6 +38,13 @@ jobs:
       - name: Validate skill trees (frontmatter, links, data YAML)
         run: python scripts/validate_skills.py
 
+      # La quarta cosa della regola d'oro. Le prime tre le controlla il gate qui
+      # sotto; questa no, ed era «una debolezza dichiarata» — finche' il
+      # 2026-09-06 la tabella non si e' trovata sfasata di due righe su otto,
+      # con quattro identificatori che non esistevano in nessun piano. ADR-0047.
+      - name: Decisioni aperte al DM — l'aggregato combacia coi piani
+        run: python scripts/decisioni_dm.py --check
+
       - name: Plans discipline gate — CHANGELOG obbligatorio + promemoria ADR (ADR-0009)
         if: github.event_name == 'pull_request'
         run: python scripts/check_plans_discipline.py --base "origin/${{ github.base_ref }}"
@@ -101,6 +108,7 @@ jobs:
           python scripts/dm_dossier.py --help > /dev/null
           python scripts/validate_modules.py --help > /dev/null
           python scripts/tools_manifest.py --help > /dev/null
+          python scripts/decisioni_dm.py --help > /dev/null
           # Catena editoriale e da stampa: questi sette dichiaravano `ci_smoke`
           # nel manifest e non venivano eseguiti da nessuno — il contratto
           # prometteva una verifica che non esisteva (ADR-0012).

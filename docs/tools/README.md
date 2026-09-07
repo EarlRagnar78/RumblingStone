@@ -5,9 +5,9 @@
 
 > Vista umana del contratto machine-readable [`registry.json`](registry.json). Fonte di verita': `scripts/tools.manifest.json`.
 
-**57 tool** · convenzione exit code `0=ok · 1=errore-dominio · 2=errore-uso`.
+**58 tool** · convenzione exit code `0=ok · 1=errore-dominio · 2=errore-uso`.
 
-**Da un client MCP** ([`mcp-tools.json`](mcp-tools.json), [ADR-0030](../../plans/adr/ADR-0030-server-mcp-sui-tool.md)): `python3 scripts/mcp_server.py` — JSON-RPC su stdio, catalogo preso da questo stesso manifest. È **read-only per difetto**: i tool marcati «Canone» qui sotto sono elencati ma non partono senza `--allow-write`, perché il canone si scrive su un branch di gruppo con l'occhio del DM sopra (ADR-0007). Le voci esposte sono 52: le cartelle di `converters/` non sono programmi e non compaiono.
+**Da un client MCP** ([`mcp-tools.json`](mcp-tools.json), [ADR-0030](../../plans/adr/ADR-0030-server-mcp-sui-tool.md)): `python3 scripts/mcp_server.py` — JSON-RPC su stdio, catalogo preso da questo stesso manifest. È **read-only per difetto**: i tool marcati «Canone» qui sotto sono elencati ma non partono senza `--allow-write`, perché il canone si scrive su un branch di gruppo con l'occhio del DM sopra (ADR-0007). Le voci esposte sono 53: le cartelle di `converters/` non sono programmi e non compaiono.
 
 ## A · Session Prep (incontri · mappe · tesoro)
 
@@ -84,6 +84,7 @@
 | Tool | Scopo | Parametri | Determ. | Canone | Git | Exit |
 |---|---|---|:--:|:--:|:--:|---|
 | `check_plans_discipline.py` | «Ho toccato scripts/ o un ADR: ho lasciato la riga di tracciatura che la regola d'oro chiede?»<br>Gate ADR-0009: modifiche strutturali (scripts/, skills/, converters/, .github/, plans/adr/) senza riga in plans/CHANGELOG.md -> exit 1. | --base · --head · --json | ✔ | — | — | `0` · `1` |
+| `decisioni_dm.py` | «Che cosa sta aspettando da me, oggi? E come faccio a fidarmi che quell'elenco sia aggiornato?»<br>Le decisioni aperte al DM: la fonte sono le tabelle marcate dentro i piani, l'aggregato di STATO-E-ORDINE §4 e' generato, e il drift fra le due cose e' rosso in CI. | --check · --emit | ✔ | — | — | `0` · `1` · `2` |
 | `dm.py` | «Devo fare una cosa con il repo e non ricordo quale script: da dove passo?»<br>Entrypoint unico: orchestra tutti gli script per fase del Playbook (prep/post/session/recap/handout/maps/hype/dossier/skills/doctor). ADR-0002. Il sottocomando «volume» (ADR-0031) esegue la catena editoriale in ordine da un manifest a un volume, e chiude ricordando il cancello d'uscita IP: non e' automatizzabile, ma e' il momento in cui va detto. | **prep|post|session|recap|handout|maps|hype|dossier|skills|doctor|volume** | ✔ | ✔ | ✔ | `0` · `1` · `2` |
 | `install-git-hooks.sh` | «Come faccio a non scoprire in CI quello che il repo poteva dirmi prima del push?»<br>Installa gli hook git locali: post-merge (resync mirror skill) e pre-push (gate ADR-0009). | — | ✔ | — | — | `0` · `1` |
 | `mcp_server.py` | «Voglio che l'agente chiami gli strumenti del repo da solo: come glieli espongo?»<br>Espone i tool del repo a un client MCP: JSON-RPC su stdio, stdlib, catalogo preso da questo stesso manifest (ADR-0012, ADR-0030). E' una superficie d'esecuzione e si difende come tale: solo allowlist, mai una shell, argomenti validati sullo schema prima di partire, percorsi confinati sotto la radice del repo, timeout e tetto all'output. I tool che scrivono contenuto o fanno commit sono ELENCATI ma non partono senza --allow-write, perche' il canone si scrive su un branch di gruppo con l'occhio del DM sopra (ADR-0007). Un'uscita diversa da zero e' un risultato tradotto con gli exit_codes del manifest, non un errore di protocollo. | --allow-write · --verbose · --timeout · --self-check | ✔ | — | — | `0` · `1` |

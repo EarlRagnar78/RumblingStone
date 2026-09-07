@@ -42,6 +42,13 @@ jobs:
       # sotto; questa no, ed era «una debolezza dichiarata» — finche' il
       # 2026-09-06 la tabella non si e' trovata sfasata di due righe su otto,
       # con quattro identificatori che non esistevano in nessun piano. ADR-0047.
+      # Finding T4 dell'audit 2026-08-05: AGENTS.md documentava campaign/npcs/,
+      # locations/ ed encounters/ — nessuna delle tre e' mai esistita, e la riga
+      # 225 mandava gli agenti a cercarle. Un documento d'ingresso che descrive
+      # una struttura che non c'e' non e' un refuso: e' un'istruzione sbagliata.
+      - name: Documentazione contro filesystem — i percorsi citati esistono
+        run: python scripts/validate_docs.py
+
       - name: Decisioni aperte al DM — l'aggregato combacia coi piani
         run: python scripts/decisioni_dm.py --check
 
@@ -109,6 +116,7 @@ jobs:
           python scripts/validate_modules.py --help > /dev/null
           python scripts/tools_manifest.py --help > /dev/null
           python scripts/decisioni_dm.py --help > /dev/null
+          python scripts/validate_docs.py --help > /dev/null
           # Catena editoriale e da stampa: questi sette dichiaravano `ci_smoke`
           # nel manifest e non venivano eseguiti da nessuno — il contratto
           # prometteva una verifica che non esisteva (ADR-0012).

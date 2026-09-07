@@ -4678,6 +4678,84 @@
       ]
     },
     {
+      "id": "validate_docs",
+      "path": "scripts/validate_docs.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/validate_docs.py",
+      "summary": "Gate anti-deriva fra documentazione e filesystem: ogni percorso citato nei documenti d'ingresso (AGENTS.md, README.md, docs/INDEX.md) deve esistere davvero.",
+      "use_case": "«Il documento che un agente legge per primo descrive una cartella che non c'e'. Come faccio ad accorgermene prima che lui ci vada a cercare?»",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--doc",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Documenti da controllare, al posto dei tre d'ingresso."
+        },
+        {
+          "name": "--verbose",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Elenca anche i percorsi verificati e trovati."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Rapporto machine-readable invece del testo."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "AGENTS.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "README.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "docs/INDEX.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "tutti i percorsi citati esistono",
+        "1": "percorsi citati e inesistenti",
+        "2": "uso errato"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Legge il filesystem e i documenti: a parita' dei due, l'esito e' identico."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true
+    },
+    {
       "id": "validate_lingua",
       "path": "scripts/validate_lingua.py",
       "category": "G-orchestration-governance",

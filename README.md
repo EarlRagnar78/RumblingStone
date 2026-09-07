@@ -51,7 +51,7 @@ The core heroes of the campaign (Detailed in `PG/`):
 
 ### PNG (NPCs & Villains)
 
-Important non-player characters and antagonists (Detailed in `Bestiario/villain/`, `Bestiario/png/` and `campaign/npcs/`):
+Important non-player characters and antagonists (Detailed in `Bestiario/villain/` and `Bestiario/png/`):
 
 - **Maestro Varis "Seta-Argento"**: Opportunistic planar merchant, urban broker in Rethmar, CR 6.
 - **Conte Valerius**: Nobility entangled in funding the enemy, demanding social/political finesse to defeat.

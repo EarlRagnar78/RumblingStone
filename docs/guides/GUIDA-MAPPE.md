@@ -216,6 +216,41 @@ Due vie per generarle:
 > (posa, luce, palette, tecnica), **mai** nomi di artisti viventi, «in the
 > style of X», né immagini altrui usate come style reference.
 
+### 4.1 Far combaciare l'illustrazione con la pianta — Blender come geometria
+
+C'è un divario che nessun prompt colma. In un modulo pubblicato **la tavola
+della locanda e la pianta della locanda sono la stessa stanza**; qui erano due
+cose scollegate, perché la pianta nasce da un contratto JSON e l'illustrazione da
+una descrizione, e nessuno garantiva che la curva nord fosse a nord.
+
+```bash
+python3 scripts/render_map_blender.py mappa.json --piano-solo   # la geometria, senza Blender
+python3 scripts/render_map_blender.py mappa.json                # veduta ortografica
+python3 scripts/render_map_blender.py mappa.json --profondita   # ← il pezzo che conta
+```
+
+`render_map_blender.py` risolve la geometria con **lo stesso `paint()`** che
+alimenta l'SVG — quindi il 3D non può divergere dalla pianta —, fonde le celle
+uguali in solidi, e la fa rendere a Blender (GPL) in ortografica.
+
+Il secondo uso vale più del primo: **`--profondita`** produce il passo di
+profondità, che si dà a **ControlNet depth** in ComfyUI. L'illustrazione generata
+eredita la pianta reale invece di inventarsela.
+
+Tre cose da sapere prima di usarlo:
+
+- **Blender qui non disegna**: per un ritratto un generatore fa meglio e costa
+  meno. Serve alla geometria, che è l'unica cosa che un generatore non sa fare;
+- **il livello tattico resta fuori**: unità e insidie non sono geometria, sono
+  note del DM — la stessa ragione per cui esiste la mappa in versione giocatore.
+  Le insidie si tengono con `--con-insidie`;
+- **le texture sono opzionali e CC0**: convenzione e fonte in
+  [`scripts/blender/texture/README.md`](../../scripts/blender/texture/README.md).
+  Senza, il render esce coi colori piatti dell'SVG.
+
+Se `blender` non è installato, il tool dice come si installa, **lascia scritto il
+piano di scena** ed esce pulito: quando lo installi, il render riparte da lì.
+
 ---
 
 ## 5. Consegna: SVG, PNG, UVTT

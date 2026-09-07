@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 54,
+  "tool_count": 58,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -374,6 +374,63 @@
       "docs": [
         "scripts/README-automation.md"
       ]
+    },
+    {
+      "id": "blender/costruisci_mappa",
+      "path": "scripts/blender/costruisci_mappa.py",
+      "category": "B-maps-pipeline",
+      "language": "python",
+      "invocation": "blender -b -noaudio -P scripts/blender/costruisci_mappa.py -- --piano <piano.json>",
+      "summary": "Lo script che gira DENTRO Blender: dal piano di scena costruisce i solidi, la camera e il lock di luce, e rende. Non si lancia a mano — il driver e' render_map_blender.py, dove sta tutta la logica provabile senza GPU.",
+      "use_case": "«Che cosa gira dentro Blender quando chiedo il render di una mappa, e perché questo file non si lancia a mano?»",
+      "stability": "local-only",
+      "stdlib_only": true,
+      "external_bins": [
+        "blender"
+      ],
+      "args": [
+        {
+          "name": "--piano",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il piano di scena scritto dal driver."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "<slug>.piano.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<uscita dichiarata nel piano>.png",
+          "kind": "png",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "eseguito fuori da Blender, piano illeggibile o render fallito"
+      },
+      "determinism": {
+        "deterministic": false,
+        "seed_flag": null,
+        "notes": "Il render dipende dalla versione di Blender, dal motore disponibile (EEVEE/Cycles) e dalle texture locali."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true
     },
     {
       "id": "compile_map_json",
@@ -867,6 +924,177 @@
         "scripts/README-automation.md",
         "plans/RICERCA-GENERATORI-MAPPE-QUALITA-RHOD.md"
       ]
+    },
+    {
+      "id": "render_map_blender",
+      "path": "scripts/render_map_blender.py",
+      "category": "B-maps-pipeline",
+      "language": "python",
+      "invocation": "python3 scripts/render_map_blender.py mappa.json --piano-solo",
+      "summary": "La mappa in volume: risolve la geometria con lo stesso paint() che alimenta l'SVG, fonde le celle in solidi e la fa rendere a Blender in ortografica. Con --profondita produce il passo di profondità per ControlNet depth, così l'illustrazione eredita la pianta esatta.",
+      "use_case": "«Questa mappa in volume, per una tavola o per ControlNet: come la ottengo senza che la geometria del 3D e quella dell'SVG possano divergere?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "blender"
+      ],
+      "args": [
+        {
+          "name": "mappa",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il JSON della mappa (contratto tactical_map)."
+        },
+        {
+          "name": "--out",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "PNG di uscita (default: <cartella>/rendered/blender/<slug>.png)."
+        },
+        {
+          "name": "--vista",
+          "type": "choice",
+          "required": false,
+          "default": "orto",
+          "choices": [
+            "orto",
+            "tre-quarti"
+          ],
+          "repeatable": false,
+          "desc": "Ortografica dall'alto (default) o prospettica."
+        },
+        {
+          "name": "--profondita",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Rende il passo di profondità invece della veduta: input di ControlNet depth."
+        },
+        {
+          "name": "--larghezza",
+          "type": "int",
+          "required": false,
+          "default": 2048,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Larghezza del render in pixel."
+        },
+        {
+          "name": "--campioni",
+          "type": "int",
+          "required": false,
+          "default": 64,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Campioni per pixel."
+        },
+        {
+          "name": "--luce-azimut",
+          "type": "float",
+          "required": false,
+          "default": 315.0,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Direzione della luce in gradi: e' il lock di luce del set."
+        },
+        {
+          "name": "--luce-elevazione",
+          "type": "float",
+          "required": false,
+          "default": 55.0,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Altezza della luce in gradi."
+        },
+        {
+          "name": "--con-insidie",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Tiene le insidie nella pianta (default: fuori, sono note del DM)."
+        },
+        {
+          "name": "--blender",
+          "type": "str",
+          "required": false,
+          "default": "blender",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Comando di Blender, se non e' nel PATH."
+        },
+        {
+          "name": "--piano-solo",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scrive il piano di scena ed esce: nessun Blender, nessun render."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "<mappa>.json",
+          "kind": "json",
+          "required": true,
+          "schema": "scripts/schemas/tactical_map.schema.json"
+        },
+        {
+          "path": "scripts/blender/costruisci_mappa.py",
+          "kind": "text",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "scripts/blender/texture/<chiave>/",
+          "kind": "directory",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<cartella>/rendered/blender/<slug>.piano.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        },
+        {
+          "path": "<cartella>/rendered/blender/<slug>[-depth].png",
+          "kind": "png",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "binario blender assente, JSON non valido o render fallito",
+        "2": "mappa non trovata",
+        "130": "interruzione utente"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Il piano di scena e' byte-identico a parita' di mappa e opzioni (--piano-solo e' provato in CI). Il PNG dipende dalla versione di Blender e dalle texture locali, quindi e' gitignorato come artefatto di presentazione."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true
     },
     {
       "id": "render_map_svg",
@@ -1816,6 +2044,228 @@
       "docs": [
         "docs/guides/GUIDA-IMMAGINI.md"
       ]
+    },
+    {
+      "id": "comfyui_batch",
+      "path": "scripts/comfyui_batch.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/comfyui_batch.py --lista",
+      "summary": "Genera la serie di immagini di un modulo pilotando l'API locale di ComfyUI: legge i prompt annotati dal markdown master, compone look comune e ancora storica, fissa i seed, salva i PNG coi nomi attesi e scrive PROVENIENZA.txt. Rifiuta i pesi non commerciali (ADR-0019).",
+      "use_case": "«Le diciotto immagini del modulo: come le rigenero identiche fra un anno, e come faccio a sapere con che pesi — e con che licenza — sono nate?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--prompts",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Markdown coi prompt annotati (default: quello del Drappo)."
+        },
+        {
+          "name": "--out",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cartella dei PNG (default: quella del markdown)."
+        },
+        {
+          "name": "--modello",
+          "type": "choice",
+          "required": false,
+          "default": "sdxl",
+          "choices": [
+            "flux-schnell",
+            "sdxl"
+          ],
+          "repeatable": false,
+          "desc": "Quali pesi usare. FLUX.1 [dev] non e' fra le scelte: e' vietato da ADR-0019."
+        },
+        {
+          "name": "--checkpoint",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Nome del file di checkpoint, se diverso da quello del registro."
+        },
+        {
+          "name": "--serie",
+          "type": "choice",
+          "required": false,
+          "default": "base",
+          "choices": [
+            "base",
+            "extra",
+            "tutto"
+          ],
+          "repeatable": false,
+          "desc": "base = i 18 del capitolato (default) - extra = solo gli oltre - tutto."
+        },
+        {
+          "name": "--solo",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Genera solo questo id (ripetibile)."
+        },
+        {
+          "name": "--reroll",
+          "type": "int",
+          "required": false,
+          "default": 0,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cambia seed in modo deterministico: 1 = secondo tentativo, 2 = terzo."
+        },
+        {
+          "name": "--motivo",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Perche' il tentativo precedente si butta. OBBLIGATORIO con --reroll: finisce in SCARTI.txt."
+        },
+        {
+          "name": "--steps",
+          "type": "int",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Passi di campionamento (default: dal registro del modello)."
+        },
+        {
+          "name": "--cfg",
+          "type": "float",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Aderenza al prompt, CFG (default: dal registro del modello)."
+        },
+        {
+          "name": "--server",
+          "type": "str",
+          "required": false,
+          "default": "http://127.0.0.1:8188",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Indirizzo dell'API ComfyUI locale."
+        },
+        {
+          "name": "--attesa-max",
+          "type": "int",
+          "required": false,
+          "default": 900,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Secondi massimi di attesa per immagine."
+        },
+        {
+          "name": "--autore",
+          "type": "str",
+          "required": false,
+          "default": "DM",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Chi ha generato, per la riga di PROVENIENZA.txt."
+        },
+        {
+          "name": "--forza",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Rigenera anche i PNG gia' presenti (default: li salta)."
+        },
+        {
+          "name": "--fissa-seed",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Dopo la generazione scrive il seed usato nel markdown master."
+        },
+        {
+          "name": "--lista",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Elenca la serie risolta ed esci. Nessun side-effect."
+        },
+        {
+          "name": "--dry-run",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Compone e stampa i prompt: nessuna rete, nessun file."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<cartella dei prompt>/<id>.png",
+          "kind": "png",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "<cartella dei prompt>/PROVENIENZA.txt",
+          "kind": "text",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        },
+        {
+          "path": "<cartella dei prompt>/SCARTI.txt",
+          "kind": "text",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "ComfyUI non raggiungibile, generazione fallita o pesi non commerciali rifiutati",
+        "2": "markdown mancante, senza annotazioni, id inesistente, o --reroll senza --motivo",
+        "130": "interruzione utente"
+      },
+      "determinism": {
+        "deterministic": false,
+        "seed_flag": "--reroll",
+        "notes": "Il seed e' deterministico (derivato dall'id, o fissato nel markdown) e la riga di provenienza lo registra; l'immagine dipende pero' dai pesi installati e dalla versione di ComfyUI, quindi non e' byte-identica fra macchine. --lista e --dry-run sono invece deterministici e girano in CI."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": true
+      },
+      "idempotent": true
     },
     {
       "id": "dm_dossier",
@@ -3600,6 +4050,71 @@
       "docs": [
         "plans/adr/ADR-0009-gate-tracciatura-changelog-adr.md"
       ]
+    },
+    {
+      "id": "decisioni_dm",
+      "path": "scripts/decisioni_dm.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/decisioni_dm.py --check",
+      "summary": "Le decisioni aperte al DM: la fonte sono le tabelle marcate dentro i piani, l'aggregato di STATO-E-ORDINE §4 e' generato, e il drift fra le due cose e' rosso in CI.",
+      "use_case": "«Che cosa sta aspettando da me, oggi? E come faccio a fidarmi che quell'elenco sia aggiornato?»",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Gate CI: segnala il drift fra piani e aggregato, non scrive."
+        },
+        {
+          "name": "--emit",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Rigenera l'aggregato in STATO-E-ORDINE fra i marker auto:begin/auto:end."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "plans/STATO-E-ORDINE-DEI-PIANI.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "drift fra piani e aggregato, o fonte malformata",
+        "2": "uso errato (nessuna opzione)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "A parita' di tabelle nei piani l'aggregato esce byte-identico: e' il presupposto del --check."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true
     },
     {
       "id": "dm",

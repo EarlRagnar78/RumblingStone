@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1912" height="1796" viewBox="0 0 1912 1796" font-family="Georgia, 'Palatino Linotype', 'Times New Roman', serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1912" height="2010" viewBox="0 0 1912 2010" font-family="Georgia, 'Palatino Linotype', 'Times New Roman', serif">
 <defs>
 <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="11" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0.36 0 0 0 0 0.28 0 0 0 0 0.16 0 0 0 0.18 0"/><feComposite operator="over" in2="SourceGraphic"/></filter>
 <filter id="rough" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.6"/></filter>
@@ -21,10 +21,10 @@
 <radialGradient id="g_2b9348" cx="0.35" cy="0.3" r="0.8"><stop offset="0" stop-color="#8ac49a"/><stop offset="0.55" stop-color="#2b9348"/><stop offset="1" stop-color="#1c602f"/></radialGradient>
 <radialGradient id="g_d62828" cx="0.35" cy="0.3" r="0.8"><stop offset="0" stop-color="#e88989"/><stop offset="0.55" stop-color="#d62828"/><stop offset="1" stop-color="#8b1a1a"/></radialGradient>
 </defs>
-<rect width="1912" height="1796" fill="#efe4c9" filter="url(#grain)"/>
-<rect width="1912" height="1796" fill="url(#vign)"/>
-<rect x="5" y="5" width="1902" height="1786" fill="none" stroke="#3b2e1e" stroke-width="0.8" opacity="0.8"/>
-<rect x="9" y="9" width="1894" height="1778" fill="none" stroke="#3b2e1e" stroke-width="2" opacity="0.85"/>
+<rect width="1912" height="2010" fill="#efe4c9" filter="url(#grain)"/>
+<rect width="1912" height="2010" fill="url(#vign)"/>
+<rect x="5" y="5" width="1902" height="2000" fill="none" stroke="#3b2e1e" stroke-width="0.8" opacity="0.8"/>
+<rect x="9" y="9" width="1894" height="1992" fill="none" stroke="#3b2e1e" stroke-width="2" opacity="0.85"/>
 <text x="46" y="34" font-size="19" font-weight="bold" fill="#3b2e1e" letter-spacing="0.5">CAMPO DROW 2 - FORWARD BASE (98m × 80m, Grid 65×53, Scala 1.5m/sq)</text>
 <text x="46" y="51" font-size="11" font-style="italic" fill="#7a6a50">65×53 quadretti · scala 1,5 m/quadretto</text>
 <rect x="41" y="75" width="1830" height="1494" fill="#e6d9b8" stroke="#3b2e1e" stroke-width="1.6"/>
@@ -273,6 +273,34 @@
 <text x="37" y="1497.0" font-size="10" text-anchor="end" fill="#b1a184">51</text>
 <text x="37" y="1525.0" font-size="10" text-anchor="end" fill="#b1a184">52</text>
 <text x="37" y="1553.0" font-size="10" text-anchor="end" fill="#b1a184">53</text>
+<rect x="410" y="472" width="1120" height="448" rx="4" fill="none" stroke="#2c2313" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.75"/>
+<text x="414" y="485" font-size="10.5" font-weight="bold" fill="#2c2313">Area tende (25 tende, ~40 drow)</text>
+<rect x="662" y="752" width="308" height="112" rx="4" fill="none" stroke="#2c2313" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.75"/>
+<text x="666" y="765" font-size="10.5" font-weight="bold" fill="#2c2313">Recinto ogre</text>
+<rect x="410" y="948" width="756" height="56" rx="4" fill="none" stroke="#2c2313" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.75"/>
+<text x="414" y="961" font-size="10.5" font-weight="bold" fill="#2c2313">Tenda comando, tesoro, prigioni</text>
+<path d="M452 318L1712 318L1712 1354L452 1354L452 318" fill="none" stroke="#ffffff" stroke-width="3.6" opacity="0.55" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M452 318L1712 318L1712 1354L452 1354L452 318" fill="none" stroke="#d62828" stroke-width="2" stroke-dasharray="7 4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="452" cy="318" r="3.4" fill="#d62828" stroke="#ffffff" stroke-width="1"/>
+<path d="M452 318L455.5 324.06L448.5 324.06Z" fill="#d62828"/>
+<path d="M872 122L872 262L872 458" fill="none" stroke="#ffffff" stroke-width="3.6" opacity="0.55" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M872 122L872 262L872 458" fill="none" stroke="#2b9348" stroke-width="2" stroke-dasharray="7 4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="872" cy="122" r="3.4" fill="#2b9348" stroke="#ffffff" stroke-width="1"/>
+<path d="M872 458L868.5 451.94L875.5 451.94Z" fill="#2b9348"/>
+<circle cx="460.4" cy="953.6" r="7" fill="#1a140a" stroke="#ffffff" stroke-width="1.1"/>
+<text x="460.4" y="957" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">1</text>
+<circle cx="572.4" cy="953.6" r="7" fill="#1a140a" stroke="#ffffff" stroke-width="1.1"/>
+<text x="572.4" y="957" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">2</text>
+<circle cx="1132.4" cy="953.6" r="7" fill="#1a140a" stroke="#ffffff" stroke-width="1.1"/>
+<text x="1132.4" y="957" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">3</text>
+<circle cx="852.4" cy="785.6" r="7" fill="#1a140a" stroke="#ffffff" stroke-width="1.1"/>
+<text x="852.4" y="789" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">4</text>
+<circle cx="852.4" cy="421.6" r="7" fill="#1a140a" stroke="#ffffff" stroke-width="1.1"/>
+<text x="852.4" y="425" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">5</text>
+<circle cx="880.4" cy="253.6" r="7" fill="#1a140a" stroke="#ffffff" stroke-width="1.1"/>
+<text x="880.4" y="257" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">6</text>
+<circle cx="880.4" cy="1401.6" r="7" fill="#1a140a" stroke="#ffffff" stroke-width="1.1"/>
+<text x="880.4" y="1405" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">7</text>
 <g transform="translate(1844,102) rotate(0)"><circle r="20" fill="#efe4c9" fill-opacity="0.82" stroke="#3b2e1e" stroke-width="1"/><path d="M0 -15L2.4 -2.4L15 0L2.4 2.4L0 15L-2.4 2.4L-15 0L-2.4 -2.4Z" fill="#7a6a50" opacity="0.5"/><path d="M0 -15L3.6 0L0 -3.3L-3.6 0Z" fill="#3b2e1e"/><text x="0" y="-21" font-size="11" font-weight="bold" text-anchor="middle" fill="#3b2e1e">N</text></g>
 <rect x="46" y="1583" width="28" height="7" fill="#3b2e1e" stroke="#3b2e1e" stroke-width="1"/>
 <rect x="74" y="1583" width="28" height="7" fill="#efe4c9" stroke="#3b2e1e" stroke-width="1"/>
@@ -280,29 +308,64 @@
 <rect x="130" y="1583" width="28" height="7" fill="#efe4c9" stroke="#3b2e1e" stroke-width="1"/>
 <rect x="158" y="1583" width="28" height="7" fill="#3b2e1e" stroke="#3b2e1e" stroke-width="1"/>
 <text x="196" y="1591" font-size="11" fill="#3b2e1e">7,5 m (5 quadretti)</text>
-<text x="46" y="1620" font-size="12" font-weight="bold" fill="#3b2e1e" letter-spacing="2">LEGENDA</text>
-<path d="M120 1616H1866" stroke="#7a6a50" stroke-width="0.7" opacity="0.7"/>
-<rect x="46.0" y="1626" width="19" height="15" fill="url(#t_struct)" stroke="#7a6a50" stroke-width="0.7"/>
-<text x="73.0" y="1638" font-size="11" fill="#3b2e1e">⬛ — Edificio / corpo di fabbrica (muratura piena: blocca vista e movimento)</text>
-<rect x="46.0" y="1648" width="19" height="15" fill="url(#t_forest)" stroke="#7a6a50" stroke-width="0.7"/>
-<text x="73.0" y="1660" font-size="11" fill="#3b2e1e">🌲 — Foresta densa (Furtività +5, copertura)</text>
-<rect x="46.0" y="1670" width="19" height="15" fill="url(#t_grass)" stroke="#7a6a50" stroke-width="0.7"/>
-<text x="73.0" y="1682" font-size="11" fill="#3b2e1e">🟩 — Pianura / area aperta</text>
-<circle cx="55.0" cy="1700" r="7.5" fill="url(#g_212529)" stroke="#241c10" stroke-width="1.2"/>
-<text x="73.0" y="1704" font-size="11" fill="#3b2e1e">⚫ — Boss / comandante</text>
-<circle cx="55.0" cy="1722" r="7.5" fill="url(#g_2b9348)" stroke="#241c10" stroke-width="1.2"/>
-<text x="73.0" y="1726" font-size="11" fill="#3b2e1e">🟢 — Creatura evocata / bestia</text>
-<circle cx="55.0" cy="1744" r="7.5" fill="url(#g_d62828)" stroke="#241c10" stroke-width="1.2"/>
-<text x="73.0" y="1748" font-size="11" fill="#3b2e1e">🔴 — Nemico standard</text>
-<use href="#pr_skull" x="956.0" y="1625" width="18" height="18"/>
-<text x="983.0" y="1638" font-size="11" fill="#3b2e1e">💀 — Fossa / trappola</text>
-<use href="#pr_door" x="956.0" y="1647" width="18" height="18"/>
-<text x="983.0" y="1660" font-size="11" fill="#3b2e1e">🚪 — Porta / ingresso</text>
-<use href="#pr_rocks" x="956.0" y="1669" width="18" height="18"/>
-<text x="983.0" y="1682" font-size="11" fill="#3b2e1e">🪨 — Rocce/macerie (copertura +4 CA, terreno difficile)</text>
-<use href="#pr_gem" x="956.0" y="1691" width="18" height="18"/>
-<text x="983.0" y="1704" font-size="11" fill="#3b2e1e">💎 — Tesoro / oggetto magico</text>
-<use href="#pr_tower" x="956.0" y="1713" width="18" height="18"/>
-<text x="983.0" y="1726" font-size="11" fill="#3b2e1e">🗼 — Torre / struttura alta</text>
-<text x="46" y="1780" font-size="9" font-style="italic" fill="#7a6a50">fonte: SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md · SVG generato da scripts/render_map_svg.py (stile pergamena) — non modificare a mano</text>
+<text x="46" y="1618" font-size="12" font-weight="bold" fill="#3b2e1e" letter-spacing="2">INDICAZIONI</text>
+<path d="M142 1614H1866" stroke="#7a6a50" stroke-width="0.7" opacity="0.7"/>
+<circle cx="54" cy="1631" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
+<text x="54" y="1634.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">1</text>
+<text x="68" y="1635" font-size="11" fill="#3b2e1e">O32 — Wyrmlord Luogotenente (Boss GS 12)</text>
+<circle cx="54" cy="1646" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
+<text x="54" y="1649.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">2</text>
+<text x="68" y="1650" font-size="11" fill="#3b2e1e">S32 — Tesoro (5.000 gp + oggetti magici)</text>
+<circle cx="54" cy="1661" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
+<text x="54" y="1664.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">3</text>
+<text x="68" y="1665" font-size="11" fill="#3b2e1e">AM32 — Prigioni (10 civili)</text>
+<circle cx="54" cy="1676" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
+<text x="54" y="1679.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">4</text>
+<text x="68" y="1680" font-size="11" fill="#3b2e1e">AC26 — Recinto ogre (2 Ogre GS 9)</text>
+<circle cx="54" cy="1691" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
+<text x="54" y="1694.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">5</text>
+<text x="68" y="1695" font-size="11" fill="#3b2e1e">AC13 — Torretta di guardia (9 m, visuale 360°)</text>
+<circle cx="54" cy="1706" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
+<text x="54" y="1709.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">6</text>
+<text x="68" y="1710" font-size="11" fill="#3b2e1e">AD7 — Cancello nord (7,5 m)</text>
+<circle cx="54" cy="1721" r="7" fill="#1a140a" stroke="#fff" stroke-width="1"/>
+<text x="54" y="1724.4" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#fff">7</text>
+<text x="68" y="1725" font-size="11" fill="#3b2e1e">AD48 — Cancello sud</text>
+<line x1="46" y1="1736" x2="62" y2="1736" stroke="#d62828" stroke-width="2" stroke-dasharray="6 3"/>
+<path d="M64 1736L59.67 1738.5L59.67 1733.5Z" fill="#d62828"/>
+<text x="70" y="1740" font-size="11" fill="#3b2e1e">Ronda perimetro: O9 → BH9 → BH46 → O46 → (loop)</text>
+<line x1="46" y1="1751" x2="62" y2="1751" stroke="#2b9348" stroke-width="2" stroke-dasharray="6 3"/>
+<path d="M64 1751L59.67 1753.5L59.67 1748.5Z" fill="#2b9348"/>
+<text x="70" y="1755" font-size="11" fill="#3b2e1e">Avanzata PG (cancello nord): AD2 → AD7 → AD14</text>
+<rect x="46" y="1759" width="15" height="12" rx="2" fill="none" stroke="#2c2313" stroke-width="1.4" stroke-dasharray="4 3"/>
+<text x="68" y="1770" font-size="11" fill="#3b2e1e">N15–BA30 — Area tende (25 tende, ~40 drow)</text>
+<rect x="46" y="1774" width="15" height="12" rx="2" fill="none" stroke="#2c2313" stroke-width="1.4" stroke-dasharray="4 3"/>
+<text x="68" y="1785" font-size="11" fill="#3b2e1e">W25–AG28 — Recinto ogre</text>
+<rect x="46" y="1789" width="15" height="12" rx="2" fill="none" stroke="#2c2313" stroke-width="1.4" stroke-dasharray="4 3"/>
+<text x="68" y="1800" font-size="11" fill="#3b2e1e">N32–AN33 — Tenda comando, tesoro, prigioni</text>
+<text x="46" y="1834" font-size="12" font-weight="bold" fill="#3b2e1e" letter-spacing="2">LEGENDA</text>
+<path d="M120 1830H1866" stroke="#7a6a50" stroke-width="0.7" opacity="0.7"/>
+<rect x="46.0" y="1840" width="19" height="15" fill="url(#t_struct)" stroke="#7a6a50" stroke-width="0.7"/>
+<text x="73.0" y="1852" font-size="11" fill="#3b2e1e">⬛ — Edificio / corpo di fabbrica (muratura piena: blocca vista e movimento)</text>
+<rect x="46.0" y="1862" width="19" height="15" fill="url(#t_forest)" stroke="#7a6a50" stroke-width="0.7"/>
+<text x="73.0" y="1874" font-size="11" fill="#3b2e1e">🌲 — Foresta densa (Furtività +5, copertura)</text>
+<rect x="46.0" y="1884" width="19" height="15" fill="url(#t_grass)" stroke="#7a6a50" stroke-width="0.7"/>
+<text x="73.0" y="1896" font-size="11" fill="#3b2e1e">🟩 — Pianura / area aperta</text>
+<circle cx="55.0" cy="1914" r="7.5" fill="url(#g_212529)" stroke="#241c10" stroke-width="1.2"/>
+<text x="73.0" y="1918" font-size="11" fill="#3b2e1e">⚫ — Boss / comandante</text>
+<circle cx="55.0" cy="1936" r="7.5" fill="url(#g_2b9348)" stroke="#241c10" stroke-width="1.2"/>
+<text x="73.0" y="1940" font-size="11" fill="#3b2e1e">🟢 — Creatura evocata / bestia</text>
+<circle cx="55.0" cy="1958" r="7.5" fill="url(#g_d62828)" stroke="#241c10" stroke-width="1.2"/>
+<text x="73.0" y="1962" font-size="11" fill="#3b2e1e">🔴 — Nemico standard</text>
+<use href="#pr_skull" x="956.0" y="1839" width="18" height="18"/>
+<text x="983.0" y="1852" font-size="11" fill="#3b2e1e">💀 — Fossa / trappola</text>
+<use href="#pr_door" x="956.0" y="1861" width="18" height="18"/>
+<text x="983.0" y="1874" font-size="11" fill="#3b2e1e">🚪 — Porta / ingresso</text>
+<use href="#pr_rocks" x="956.0" y="1883" width="18" height="18"/>
+<text x="983.0" y="1896" font-size="11" fill="#3b2e1e">🪨 — Rocce/macerie (copertura +4 CA, terreno difficile)</text>
+<use href="#pr_gem" x="956.0" y="1905" width="18" height="18"/>
+<text x="983.0" y="1918" font-size="11" fill="#3b2e1e">💎 — Tesoro / oggetto magico</text>
+<use href="#pr_tower" x="956.0" y="1927" width="18" height="18"/>
+<text x="983.0" y="1940" font-size="11" fill="#3b2e1e">🗼 — Torre / struttura alta</text>
+<text x="46" y="1994" font-size="9" font-style="italic" fill="#7a6a50">fonte: SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md · SVG generato da scripts/render_map_svg.py (stile pergamena) — non modificare a mano</text>
 </svg>

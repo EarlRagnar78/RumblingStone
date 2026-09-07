@@ -156,15 +156,28 @@ contiene anche il prompt autosufficiente da passare a una sessione nuova.
 
 - [x] Inventario di cosa esiste, e i sei divari verso il livello Paizo/WotC (§1-§2)
 - [x] Prompt d'appalto con vincoli IP, strumenti del repo, criteri di accettazione (§3)
-- [ ] **[1]** Illustrazioni raster: 6 ritratti + 3 tavole + il Drappo, e i prompt
-      mancanti per i cinque PNG che meritano un ritratto
-- [ ] **[2]** Tipografia OFL embedded — ⚠️ tocca `build_booklet_html.py`, che impagina
-      **tutti** i booklet del repo: serve un ADR, o un tema opt-in da manifest
-- [ ] **[3]** `tarsilia-la-ruota-giocatori.json`: la mappa senza token, hazard e note
-- [ ] **[4]** PDF unico con segnalibri (estendendo `export_booklet_pdf.py`)
+- [x] **[1a]** I **venti prompt** scritti e verificati contro la bibbia visiva, con
+      look comune, ancora storica fiamminga e patto d'inquadratura *(Lotto 7)*
+- [x] **[1b]** La **catena di generazione**: `scripts/comfyui_batch.py` legge i prompt
+      annotati dal markdown, compone le leve, fissa i seed, POSTa i workflow e scrive
+      `PROVENIENZA.txt`. Manifest + 25 test + smoke in CI (ADR-0012), pesi non
+      commerciali **rifiutati** (ADR-0019), procedura in `ALLEGATI/immagini/README.md`
+- [ ] **[1c]** I **diciotto raster** — ⚠️ *gated: serve la GPU del DM*. La catena è
+      pronta e collaudata a secco; l'esecuzione è ~1,5-2 ore di macchina più il gate
+      di rifiuto **il giorno dopo**
+- [x] **[1-bis]** Blender come **geometria**, non come illustratore:
+      `scripts/render_map_blender.py` risolve la pianta con lo **stesso** `paint()`
+      dell'SVG, fonde le celle in solidi e la fa rendere in ortografica;
+      `--profondita` produce il passo per ControlNet depth. Manifest + 27 test +
+      controllo di determinismo in CI. ⚠️ Il **render** non è mai stato eseguito:
+      Blender non c'è in questo ambiente — provato tutto ciò che sta prima di `bpy`
+- [x] **[2]** Tipografia OFL embedded — chiusa da **ADR-0020** sul secondo binario
+      Typst (EB Garamond + Cinzel), senza toccare `build_booklet_html.py`
+- [x] **[3]** `tarsilia-la-ruota-giocatori.json`: la mappa senza token, hazard e note *(Lotto 7)*
+- [x] **[4]** PDF unico con segnalibri — `export_booklet_typst.py`, volume da 63 pagine
 - [ ] **[5]** Carte da tavolo: otto segnaposto contrada + ordine di corsa, estendendo
       `ALLEGATI/tavole/build_tavole.py`
-- [ ] **[6]** Frontespizio vero
+- [ ] **[6]** Frontespizio vero — il **prompt** della copertina c'è *(Lotto 7)*, manca il raster
 
 **Criterio di accettazione**: i quattro booklet si rigenerano da zero, ogni immagine
 ha la sua riga in `PROVENIENZA.txt`, e nessun file della campagna risulta modificato.

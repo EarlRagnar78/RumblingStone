@@ -53,8 +53,10 @@ Hammerfist si gioca su **due livelli di personaggi**:
 4. `hammerfist_encounters-...-Guida-agli-Scontri-final.md` — gli scontri
    sessione per sessione.
 5. `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` — **master visivo**
-   (matrice mappe in testa); griglie di precisione nei tre
-   `Mappe/Hammerfist-L{1,2,3}-REVISED-Ultra-Clear.md`.
+   (matrice mappe in testa); griglie ultra-clear di **TUTTE** le 17 mappe
+   nei tre `Mappe/Hammerfist-L{1,2,3}-REVISED-Ultra-Clear.md`
+   (L1 = Sessione 1, L2 = Sessione 2, L3 = Sessioni 3-4 — lotto
+   MAPPE-UC 2026-07-23).
 6. `ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` — schede PNG/unità +
    regolamento di massa.
 7. `ARC08-03-REGISTRO-PERDITE.md` — tracciamento perdite da tavolo.
@@ -97,9 +99,9 @@ master** rilevanti alla sessione.
 | `mass_combat_guide_Dm.md` | Sistema di combattimento di massa | Canonico (**fonte unica normativa**, C1; raccordo ARC-09) |
 | `combat_prompts_guide.md` | Sequenza di prompt per il combattimento di massa | Canonico (di supporto) |
 | `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` | **Master visivo** (17 mappe, matrice in testa) | Canonico (master, A8) |
-| `Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md` | Griglia di precisione 1A-2 | Canonico (master tattico, A8) |
-| `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md` | Griglia di precisione 2A | Canonico (master tattico, A8) |
-| `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` | Griglia di precisione 3X/H3-1 | Canonico (master tattico, A8) |
+| `Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md` | Griglie ultra-clear Sessione 1: 1A-1, 1A-2, 1A-3 | Canonico (master tattico, A8+MAPPE-UC) |
+| `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md` | Griglie ultra-clear Sessione 2: 2A (+2B/2C viste), MAPPA 1/2A-1, 2, 3, 4, 2B-Corretta | Canonico (master tattico, A8+MAPPE-UC) |
+| `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` | Griglie ultra-clear Sessioni 3-4: 3X/H3-1, 3Y, 3Z, 5, 4X, 4-finale | Canonico (master tattico, A8+MAPPE-UC) |
 
 ### Deprecati — non usare (banner + puntatore al master)
 
@@ -109,9 +111,9 @@ master** rilevanti alla sessione.
 | `ARC08-91-DEPRECATO-atlante-visivo-v2.md` | Generazione superata dell'atlante (A8) | idem |
 | `ARC08-92-DEPRECATO-atlante-visivo-v3-complete.md` | Generazione superata dell'atlante (A8) | idem |
 | `ARC08-93-DEPRECATO-sessione-interrotta.md` | Stub generico fuori canone (A6) | `ARC08-01-GUIDA-DM.md` |
-| `Mappe/Hammerfist-Lotto-1-Ricognizione.md` | Generazione mappe superata (A8) | `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` (+ L1-REVISED) |
-| `Mappe/Hammerfist-Lotto-2-Assedio.md` | Generazione mappe superata (A8) | idem (+ L2-REVISED) |
-| `Mappe/Hammerfist-Lotto-3-FINALE.md` | Generazione mappe superata (A8) | idem (+ L3-REVISED) |
+| `Mappe/_ARCHIVIO/Hammerfist-Lotto-1-Ricognizione.md` | Generazione mappe superata (A8) | `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` (+ L1-REVISED) |
+| `Mappe/_ARCHIVIO/Hammerfist-Lotto-2-Assedio.md` | Generazione mappe superata (A8) | idem (+ L2-REVISED) |
+| `Mappe/_ARCHIVIO/Hammerfist-Lotto-3-FINALE.md` | Generazione mappe superata (A8) | idem (+ L3-REVISED) |
 
 ### Di servizio
 

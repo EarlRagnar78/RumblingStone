@@ -1,10 +1,12 @@
-> ⚠️ **DEPRECATED (2026-07)** — piano ARC-08 A8: generazione superata
-> (manca inoltre MAPPA 3Y "Il Ponte Sospeso", mai stata qui — vedi il
-> master). **Master**: `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md`
+> ⚠️ **DEPRECATED (2026-07)** — piano ARC-08 A8: generazione superata.
+> **Master**: `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md`
 > (mappe 3X, 3Y, 3Z, 5, 4X, 4-finale — matrice di contenuto in testa a
-> quel file). Per la griglia di precisione della 3X vedi anche
-> `Hammerfist-L3-REVISED-Ultra-Clear.md` (lì rinominata H3-1).
-> Contenuto mantenuto per storico (D12), non cancellato.
+> quel file). Le griglie ultra-clear di TUTTE le mappe delle Sessioni
+> 3-4 — 3X (lì H3-1), **3Y** (qui mai esistita), 3Z, 5, 4X, 4-finale —
+> sono in `../Hammerfist-L3-REVISED-Ultra-Clear.md` (lotto MAPPE-UC
+> 2026-07-23): usare QUELLE, non le griglie qui sotto. Contenuto
+> mantenuto per storico (D12), non cancellato; archiviato qui il
+> 2026-09-05 (decisione D1) — vedi `README.md`.
 
 # HAMMERFIST TACTICAL MAPS - LOTTO 3 FINALE
 ## Sessione 3: Dalle Profondità + Sessione 4: Vittoria Finale (5 Mappe)

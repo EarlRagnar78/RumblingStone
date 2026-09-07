@@ -58,7 +58,55 @@ E ogni immagine generata porta la sua riga in `PROVENIENZA.txt`: **file · model
 · licenza · seed · data**. Senza quella riga non si committa — è l'unica cosa che
 rende la scelta reversibile fra un anno.
 
-### 1.2 Prima di generare: la direzione artistica
+### 1.2 Generare una **serie** invece di dieci immagini sciolte
+
+Dalla GUI si producono immagini; **una serie ripetibile no**. Fra un anno, con due
+tavole da rifare, non si sa più né il prompt esatto né il seed:
+
+```bash
+python3 scripts/comfyui_batch.py --lista      # cosa manca, senza toccare niente
+python3 scripts/comfyui_batch.py --dry-run    # i prompt composti, senza rete
+python3 scripts/comfyui_batch.py              # genera i mancanti
+```
+
+`comfyui_batch.py` legge i prompt **dal markdown** (che resta il master), compone
+look comune e ancora storica, fissa i seed, POSTa i workflow all'API locale di
+ComfyUI e scrive le righe di `PROVENIENZA.txt`. Rifiuta i pesi non commerciali da
+solo. Vuole prompt **annotati**: il formato è una riga di commento HTML, e
+l'esemplare compilato è
+`STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/immagini/` (prompt + `README.md` con la
+procedura completa, gate di rifiuto incluso).
+
+### 1.2-bis Quello che si butta, e perché
+
+`PROVENIENZA.txt` registra **la scelta**. Ma il lavoro vero dell'art director non
+è scegliere: è **buttare** — e quel giudizio, finché non lo si scrive, non lascia
+traccia. Fra un anno, chi rifà la serie ripercorre gli stessi vicoli ciechi uno
+per uno, perché nessuno gli ha detto che li avevi già percorsi.
+
+Da qui `SCARTI.txt`, accanto al primo e con la stessa forma:
+
+```
+<id> · seed <n> · reroll <k> · <motivo>
+```
+
+Il motivo è **testo libero e obbligatorio**. Un reroll senza motivo **non parte**:
+
+```bash
+python3 scripts/comfyui_batch.py --solo ritratto-vanna --reroll 1 --forza \
+    --motivo «tre dita alla mano sinistra, e la posa non regge l'inquadratura»
+```
+
+Senza `--motivo` lo script esce **2**, prima di leggere, scrivere o chiamare la
+rete: un rifiuto che non si sa spiegare non deve nemmeno cominciare. E scrivere
+«brutta» non serve a nessuno — serve la frase che l'anno prossimo ti risparmia
+il tentativo.
+
+> Il **gate di rifiuto** — quando un'immagine si butta invece di tenerla perché
+> «è già venuta» — sta in `skills/rumblingstone-art-direction/SKILL.md` §6, e si
+> applica **il giorno dopo**, non subito dopo quaranta generazioni.
+
+### 1.3 Prima di generare: la direzione artistica
 
 Se stai per fare **più di un'immagine** che devono stare insieme (una serie di
 ritratti, le tavole di un modulo), i venti minuti meglio spesi non sono sul

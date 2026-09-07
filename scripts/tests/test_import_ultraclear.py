@@ -19,7 +19,10 @@ import import_ultraclear as I     # noqa: E402
 import compile_map_json as C      # noqa: E402
 
 FIX = Path(__file__).resolve().parent / "fixtures" / "ultraclear"
-GOLDEN_MD = ROOT.parent / "08_La Battaglia Di Hammerfist" / "Mappe" / "Hammerfist-L2-REVISED-Ultra-Clear.md"
+# Il golden case e' una fixture CONGELATA, non il master vivo: vedi il commento
+# in testa al file. Un campione di collaudo deve stare fermo, e il master di
+# campagna e' migliorato sotto il test (F1 della ripresa PR, 2026-09-05).
+GOLDEN_MD = FIX / "golden-hammerfist-L2-2026-07.md"
 GOLDEN_JSON = ROOT / "examples" / "hammerfist-L2-assedio.json"
 
 

@@ -38,6 +38,13 @@ jobs:
       - name: Validate skill trees (frontmatter, links, data YAML)
         run: python scripts/validate_skills.py
 
+      # La quarta cosa della regola d'oro. Le prime tre le controlla il gate qui
+      # sotto; questa no, ed era «una debolezza dichiarata» — finche' il
+      # 2026-09-06 la tabella non si e' trovata sfasata di due righe su otto,
+      # con quattro identificatori che non esistevano in nessun piano. ADR-0047.
+      - name: Decisioni aperte al DM — l'aggregato combacia coi piani
+        run: python scripts/decisioni_dm.py --check
+
       - name: Plans discipline gate — CHANGELOG obbligatorio + promemoria ADR (ADR-0009)
         if: github.event_name == 'pull_request'
         run: python scripts/check_plans_discipline.py --base "origin/${{ github.base_ref }}"
@@ -101,6 +108,7 @@ jobs:
           python scripts/dm_dossier.py --help > /dev/null
           python scripts/validate_modules.py --help > /dev/null
           python scripts/tools_manifest.py --help > /dev/null
+          python scripts/decisioni_dm.py --help > /dev/null
           # Catena editoriale e da stampa: questi sette dichiaravano `ci_smoke`
           # nel manifest e non venivano eseguiti da nessuno — il contratto
           # prometteva una verifica che non esisteva (ADR-0012).
@@ -114,6 +122,46 @@ jobs:
           python scripts/build_image_derivatives.py --help > /dev/null
           python scripts/validate_booklets.py --help > /dev/null
           python scripts/extract_statblocks.py --help > /dev/null
+          # Catena raster e 3D (F3 della ripresa PR). Qui non c'e' GPU, non c'e'
+          # Blender e ComfyUI non e' in ascolto: si prova tutto cio' che si puo'
+          # provare SENZA — la risoluzione della serie, la composizione dei
+          # prompt, la geometria del piano di scena. Il resto e' sulla macchina
+          # del DM, e la CI non finge di coprirlo.
+          python scripts/comfyui_batch.py --help > /dev/null
+          # --lista tiene i «diciotto» a diciotto: le due tavole in piu' sono
+          # serie=extra, e al diciannovesimo di serie=base la CI si fa rossa.
+          # Non e' un divieto, e' un modo di obbligare a decidere.
+          python scripts/comfyui_batch.py --lista > /dev/null
+          python scripts/comfyui_batch.py --dry-run > /dev/null
+          python scripts/render_map_blender.py --help > /dev/null
+
+      # Tre cose che un --help non prova: che i cancelli MORDANO. Un gate che
+      # esiste e non si verifica e' un gate che un giorno smette di funzionare
+      # senza dirlo — la stessa classe di difetto di ADR-0043.
+      - name: Catena raster — i cancelli mordono
+        run: |
+          # 1. pesi non commerciali: exit 1 PRIMA di scrivere o chiamare la rete
+          if python scripts/comfyui_batch.py --checkpoint flux1-dev.safetensors --dry-run > /dev/null 2>&1; then
+            echo "✗ FLUX.1 [dev] e' passato: il cancello di ADR-0019 non morde piu'"; exit 1
+          fi
+          # 2. un reroll senza motivo non passa: e' il sesto requisito (SCARTI.txt)
+          if python scripts/comfyui_batch.py --reroll 1 > /dev/null 2>&1; then
+            echo "✗ --reroll senza --motivo e' passato: gli scarti tornano senza traccia"; exit 1
+          fi
+          echo "✓ pesi vietati rifiutati, reroll senza motivo rifiutato"
+
+      - name: Piano di scena 3D — deterministico
+        run: |
+          # La geometria si risolve senza Blender e senza GPU, e due giri devono
+          # dare lo stesso file: se il piano non e' riproducibile, non lo e'
+          # nemmeno l'immagine che ne esce.
+          python scripts/render_map_blender.py scripts/examples/esempio-accampamento-mano-rossa.json \
+            -o "$RUNNER_TEMP/ci-3d/x.png" --piano-solo
+          cp "$RUNNER_TEMP"/ci-3d/*.piano.json "$RUNNER_TEMP/piano-1.json"
+          python scripts/render_map_blender.py scripts/examples/esempio-accampamento-mano-rossa.json \
+            -o "$RUNNER_TEMP/ci-3d/x.png" --piano-solo
+          cmp "$RUNNER_TEMP/piano-1.json" "$RUNNER_TEMP"/ci-3d/*.piano.json
+          echo "✓ piano 3D byte-identico su due giri"
 
       - name: Manifest dei booklet (schema, file, immagini, parità fra le catene)
         run: python scripts/validate_booklets.py --spiega

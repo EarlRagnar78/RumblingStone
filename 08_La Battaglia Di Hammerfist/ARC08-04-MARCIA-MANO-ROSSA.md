@@ -63,8 +63,8 @@ Il flashback dei pregen "Eroi di Hammerfist" (Borin Ferropugno, Dara
 Occhiolesto, Thorin Runaforte, Nala Cantapietre — D6, qualche
 settimana prima dell'assedio) è la finestra di gioco su questa marcia.
 Mappe già pronte in `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` (master
-visivo, piano ARC-08 A8; griglia di precisione per la 1A-2 in
-`Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md`):
+visivo, piano ARC-08 A8; griglie ultra-clear di 1A-1, 1A-2 e 1A-3 in
+`Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md`, lotto MAPPE-UC):
 
 - **MAPPA 1A-1 — Il Sentiero Nascosto**: infiltrazione oltre una
   pattuglia di 3 Worg Riders in avanscoperta della colonna (skill

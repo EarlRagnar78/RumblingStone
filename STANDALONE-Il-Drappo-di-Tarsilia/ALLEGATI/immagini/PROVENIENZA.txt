@@ -17,6 +17,21 @@
 #    I master vanno trattati come sorgente e non come output (all'opposto di
 #    quanto vale per SVG e PDF, che si rifanno in un comando).
 #
+# ─────────────────────────────────────────────────────────────────────────
+# CATENA LOCALE ComfyUI (dal 2026-09-05) — convive con le righe Gemini qui
+# sotto, non le sostituisce. Le righe generate da scripts/comfyui_batch.py
+# hanno un formato diverso, e si riconoscono dal fatto che il seed c'è:
+#   <file> · <modello e versione> · <licenza dei pesi> · seed <n> · <data> · <chi>
+#
+# Pesi ammessi: SDXL (OpenRAIL++-M) · FLUX.1 [schnell] (Apache-2.0).
+# FLUX.1 [dev] è VIETATO — la sua licenza esclude anche l'uso «indirettamente
+# connesso ad attività commerciali». Lo script esce 1 da solo, prima di
+# scrivere qualsiasi cosa e prima di ogni chiamata di rete (ADR-0019).
+#
+# A mano si aggiungono solo gli asset importati; il resto lo scrive lo script,
+# che aggiorna la riga esistente invece di accodarne una seconda.
+# ─────────────────────────────────────────────────────────────────────────
+#
 # ⚠️ SynthID: ogni immagine porta un watermark invisibile e permanente. Non limita
 #    l'uso; è un fatto da conoscere. E un'immagine puramente generata con ogni
 #    probabilità NON è tutelabile da copyright: si può usare, non si può

@@ -288,6 +288,21 @@ RIGHE ↓
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 SCALA GRID: 1 quadrato = 1.5m × 1.5m | DIMENSIONI TOTALI: 65 colonne × 53 righe = 98m × 80m
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+--- ANNOTAZIONI (overlay professionale reso da render_map_svg.py) ---
+@north N
+@mark 1 ; O32 ; Wyrmlord Luogotenente (Boss GS 12)
+@mark 2 ; S32 ; Tesoro (5.000 gp + oggetti magici)
+@mark 3 ; AM32 ; Prigioni (10 civili)
+@mark 4 ; AC26 ; Recinto ogre (2 Ogre GS 9)
+@mark 5 ; AC13 ; Torretta di guardia (9 m, visuale 360°)
+@mark 6 ; AD7 ; Cancello nord (7,5 m)
+@mark 7 ; AD48 ; Cancello sud
+@path Ronda perimetro ; O9 BH9 BH46 O46 loop ; #d62828
+@path Avanzata PG (cancello nord) ; AD2 AD7 AD14 ; #2b9348
+@zone N15-BA30 ; Area tende (25 tende, ~40 drow)
+@zone W25-AG28 ; Recinto ogre
+@zone N32-AN33 ; Tenda comando, tesoro, prigioni
 ```
 
 ### Forze Campo 2

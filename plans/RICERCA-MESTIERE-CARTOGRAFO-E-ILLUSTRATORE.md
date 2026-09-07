@@ -192,11 +192,16 @@ cui sei mappe sono rimaste così).
 
 ## §7 — Le domande al DM prima di partire
 
-1. **Il metro di paragone**: quali due o tre mappe pubblicate sono *lo standard*
-   che vuoi raggiungere? Senza un riferimento scelto da te, l'audit misura
-   contro un'idea mia di «mappa buona».
-2. **Stampa**: il tavolo stampa a colori o in bianco e nero? Cambia il peso di
-   A1.6 e A1.7 da «bello avere» a **bloccante**.
-3. **Doppia versione** (DM/giocatori): la vuoi su tutte le mappe o solo sulle
-   hero map? Oggi ce l'ha **una** mappa.
-4. **Le sei mappe di §6**: le sistemo io una per una, o le guardi prima tu?
+> I numeri **D7-D10** erano citati in `STATO-E-ORDINE` §4 **senza esistere qui**:
+> l'aggregato se li era inventati, ed è il difetto che ha fatto nascere
+> [ADR-0047](adr/ADR-0047-le-decisioni-aperte-hanno-una-casa-sola.md). Numerazione
+> conservata così com'era, perché i riferimenti già scritti restino validi.
+
+<!-- decisioni-dm: RICERCA-MESTIERE -->
+
+| # | Ambito | Domanda |
+|---|---|---|
+| D7 | metro di paragone | Quali due o tre **mappe pubblicate sono lo standard** che vuoi raggiungere? Senza un riferimento scelto da te, l'audit misura contro un'idea mia di «mappa buona» — **bloccante** |
+| D8 | stampa | Il tavolo stampa **a colori o in bianco e nero**? Cambia il peso di A1.6 e A1.7 da «bello avere» a bloccante |
+| D9 | doppia versione | DM/giocatori: la vuoi **su tutte le mappe** o solo sulle hero map? Oggi ce l'ha **una** |
+| D10 | §6 | Le **sei mappe con l'intestazione discorde**: le sistemo io una per una, o le guardi prima tu? |

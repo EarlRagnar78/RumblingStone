@@ -40,6 +40,11 @@ sparse nelle PR mergiate e la storia si frammenta. Fonte delle regole:
    gate) e la sua sezione "Prossimi passaggi";
 3. **una riga in `plans/CHANGELOG.md`**:
    `| data | piano | lotto | riferimento (PR #N / commit) | esito |`.
+4. se il lotto **chiude o apre una decisione del DM**: la riga nella tabella
+   marcata `<!-- decisioni-dm: … -->` **dentro il piano**, poi
+   `python3 scripts/decisioni_dm.py --emit` per rigenerare l'aggregato di
+   `STATO-E-ORDINE` §4 (ADR-0047). Chiusa = identificatore **barrato**:
+   `~~D1~~`. Si tocca il piano, mai l'aggregato.
 
 ## 🔍 Regola di apertura (obbligatoria — ADR-0044)
 
@@ -151,6 +156,13 @@ gira in CI su ogni PR e come hook `pre-push` locale
 - **Blocca** (rosso in CI, push rifiutato) modifiche a file strutturali
   (`scripts/`, `skills/`, `converters/`, `.github/`, `plans/adr/`) senza una
   riga in `plans/CHANGELOG.md` nello stesso range di commit.
+- **Blocca** l'aggregato di `STATO-E-ORDINE` §4 che non combacia con le tabelle
+  dei piani (`scripts/decisioni_dm.py --check`, ADR-0047). Era la quarta cosa
+  della regola d'oro, l'unica non controllata: il 2026-09-06 dava una decisione
+  aperta il giorno dopo che era stata presa, ne ometteva un'altra e ne elencava
+  quattro **inesistenti in ogni piano**.
+  ⚠️ `D<n>` **non è globale**: otto piani hanno il loro `D1..Dn` con significati
+  diversi, quindi conta solo ciò che porta il marker, e l'identità è `piano#Dn`.
 - **Promemoria ADR** (warning non bloccante): nuova skill, nuovo script
   top-level o modifica ai workflow CI senza alcun tocco a `plans/adr/` →
   invito esplicito a valutare un ADR. Non bloccante di proposito: «serve

@@ -95,10 +95,10 @@ affidata a chi legge il diff.
 >
 > | | Lotto | Classe | `[engine · effort · qualità]` |
 > |---|---|---|---|
-> | **1a** | **D1**: archiviare i `Lotto-*` o tenerne gli SVG | **G** giudizio | `[Opus 5, sessione principale · alto · il DM conferma la scelta]` |
-> | **1b** | portare i tre master markdown e i quattro file di puntamento | **M** meccanico | `[inline · basso · i link risolvono, `validate_modules` verde]` |
-> | **1c** | risolvere i conflitti sui file di puntamento (3 commit di drift) | **C** costruzione | `[Sonnet 5 · medio · nessun riferimento perso rispetto a prima]` |
-> | **1d** | rigenerare gli SVG da zero | **M** meccanico | `[inline · basso · byte-identici a quelli della PR — già provato su L3]` |
+> | **1a** ✅ | **D1**: archiviare i `Lotto-*` o tenerne gli SVG | **G** giudizio | `[Opus 5, sessione principale · alto · il DM conferma la scelta]` — **chiuso 2026-09-05: archiviazione** |
+> | **1b** ✅ | portare i tre master markdown e i quattro file di puntamento | **M** meccanico | `[inline · basso · i link risolvono, `validate_modules` verde]` — **chiuso 2026-09-05** |
+> | **1c** ✅ | risolvere i conflitti sui file di puntamento (3 commit di drift) | **C** costruzione | `[Sonnet 5 · medio · nessun riferimento perso rispetto a prima]` — **chiuso 2026-09-05: un solo conflitto vero** |
+> | **1d** ✅ | rigenerare gli SVG da zero | **M** meccanico | `[inline · basso · byte-identici a quelli della PR — già provato su L3]` — **chiuso 2026-09-05: 11 SVG, 7 byte-identici e 4 diversi solo nella legenda/nel nome** |
 >
 > ⚠️ **1a viene prima di tutto**: dopo ADR-0043 la CI **forza** quella decisione,
 > quindi 1b non parte finché 1a non è presa.
@@ -130,10 +130,36 @@ così. Due strade, e la scelta è del DM:
   riscrittura controllata dei riferimenti + `README.md` che documenta la
   politica). Allora la cancellazione degli SVG è **conseguente**, non silenziosa.
 
-📌 **Proposta**: la **(b)**. Il repo ha già la procedura, i `Lotto-*` sono
+✅ **Deciso dal DM il 2026-09-05: la (b), archiviazione** — eseguita in
+`08_…/Mappe/_ARCHIVIO/`, con una variante che costa zero e non perde niente:
+**i sette SVG sono venuti dietro ai loro master invece di essere cancellati**.
+`validate_maps` cerca ogni `**/rendered/*.svg`, quindi `_ARCHIVIO/rendered/`
+resta **dentro** il suo raggio: i sette restano rigenerabili e in sincrono, il
+conteggio non si muove (**31 SVG / 17 master**, come prima), e non serve nessuna
+riga di opt-out. L'obiettivo della (b) — togliere tre master deprecati dalla
+cartella dove stanno i tre definitivi — è raggiunto lo stesso.
+
+🐛 **Il costo era sottostimato in questo piano, e va detto.** §1.1 diceva «il
+riferimento in `L2-REVISED`», al singolare. I riferimenti erano **quattordici in
+cinque file**: `MAPPE-CENSIMENTO` (7 righe), `ARC08-00-INDICE` (3), `ARC08-01-GUIDA-DM`
+(1 — e punta a **MAPPA 3Z Incrocio Silenzioso**, che è una delle cinque mappe che
+il lotto 1b deve portare dentro `L3`), `Atlante-…-COMPLETE` (1), `L2-REVISED` (1),
+più due in `campaign/state.md` **lasciati intatti** perché è un log append-only.
+Tutti riscritti a `_ARCHIVIO/…`. **È lo stesso errore di R5**: un conteggio fatto
+leggendo invece che con un `grep`, in un piano scritto *prima* che ADR-0045
+avesse la sua quarta regola.
+
+📌 **Proposta originale**: la **(b)**. Il repo ha già la procedura, i `Lotto-*` sono
 sorgenti assorbiti esattamente come quelli di ARC-07, e lasciare in `Mappe/` tre
 master deprecati accanto ai tre definitivi è la condizione che genera il prossimo
 errore di puntamento.
+
+### 1.2-bis · La coda `⬛` si accorcia
+
+Archiviare `Hammerfist-Lotto-3-FINALE` toglie **1.256 celle** dalla coda di
+riclassificazione di `LEGENDA-FUNZIONALE-SPEC` §6.2: la coda viva passa da
+**8.216 in 24 file** a **6.960 in 23**. La riga è barrata, non cancellata, e il
+totale del 2026-09-04 resta scritto com'era — era vero allora.
 
 ### 1.3 · Come si porta dentro
 
@@ -147,6 +173,62 @@ contenuto**, e lo si riverifica.
 3. **Rigenerare gli SVG da zero** con `render_map_svg.py`. Non copiare quelli
    della PR: si rigenerano, e devono venire identici — è già stato provato su L3.
 4. Eseguire la scelta 1.2 (archiviazione o mantenimento).
+
+### 1.3-bis · Com'è andata (2026-09-05)
+
+**I tre master.** `L1` e `L3` erano **intatti** su `main` dal merge-base, quindi
+sono entrati per intero dal branch; `L2` aveva una sola riga di differenza — la
+mia, del lotto 1a — e le è stata riapplicata sopra. Da **1 mappa ciascuno** a
+**3 · 3 · 5 = 11**, e la **3Y Ponte Sospeso** adesso esiste.
+
+**I quattro file di puntamento** si sono fusi a tre vie sul merge-base: tre
+puliti, **un conflitto solo**, ed è esattamente quello che avevo segnalato
+chiudendo 1a — il puntatore 3Z di `ARC08-01-GUIDA-DM`. Risolto tenendo la
+versione della PR, che nomina `L3-REVISED` come **griglia canonica** invece del
+master deprecato, e correggendole il path storico verso `_ARCHIVIO/`. La drift
+di `main` è sopravvissuta: l'Incontro 2F è ancora lì.
+
+**Gli 11 SVG rigenerati da zero.** Sette **byte-identici** a quelli della PR.
+Tre differiscono, e uno cambia nome — tutti e quattro per un motivo solo, che ho
+verificato riga per riga: **zero differenze fuori dal blocco legenda**.
+
+| Cosa | Perché |
+|---|---|
+| 3 SVG con legenda diversa | [ADR-0042](adr/ADR-0042-tre-glifi-per-tre-cose.md), mergiata **dopo** la #63: `⬛ — Struttura (tenda, edificio, dais)` è diventato `⬛ — Edificio / corpo di fabbrica`, e `⛺ — Tenda` ha guadagnato la sua chiosa |
+| 1 SVG che cambia solo nome | `…drago-sui-.svg` → `…drago-sui.svg`: la `slug` corretta dal lotto A di `PIANO-QUALITA-DEL-CODICE`, **la stessa correzione** che aspetta la #52 |
+
+⚠️ **La riga del piano diceva «byte-identici», ed era vera per il disegno, non
+per il file.** Vale la pena tenerla scritta così: quando un renderer migliora,
+«identico» smette di essere il collaudo giusto — quello giusto è *«identico
+fuori dai punti in cui il repo è migliorato, e su quelli spiegabile»*.
+
+**I tre master archiviati** hanno preso l'intestazione migliore della PR — quella
+che manda a `L1/L2/L3-REVISED` *tutte* le griglie, non solo una — **senza** la
+frase «gli SVG di questo file sono stati rimossi», che dopo 1a sarebbe falsa.
+
+### 1.3-ter · Il test che si è rotto, e perché non era una regressione
+
+`test_import_ultraclear` ha due test sul **golden case**, e il golden case
+**era il master vivo** `Hammerfist-L2-REVISED-Ultra-Clear.md`. Portando dentro
+la #63 sono diventati rossi:
+
+- **R1 non più riportato** — la #63 ha reso **uniforme** la griglia che il test
+  si aspettava difettosa. Il difetto è stato corretto: buona notizia;
+- **Dara Occhiolesto non più fra le unità** — il file è passato da **1 mappa a
+  3**, quindi il blocco di annotazioni non appartiene più a `maps[0]`.
+
+Nessuna regressione dell'importatore: **si è mosso il campione**. Il rimedio è
+congelarlo — `scripts/tests/fixtures/ultraclear/golden-hammerfist-L2-2026-07.md`,
+il master com'era su `main` il 2026-09-05, con in testa il commento che dice
+perché sta lì. Verificato che riproduce **tutti e quattro** i difetti-tipo
+(R1, R3, R5, R4) e Dara a `[8, 61]` col token 🟢: nessuna asserzione tolta.
+
+⚠️ **Che cosa si perde.** Prima il test toccava un file vero, e un file vero che
+cambia sotto un collaudo lo fa suonare. Adesso non suona più — e il file vivo
+non ha nessun test che lo guardi. È un compromesso, non un miglioramento netto:
+**un campione di collaudo deve stare fermo, e un documento di campagna non sta
+fermo**; ma chi domani rompesse l'importatore *sul formato nuovo* a tre mappe non
+lo saprebbe da qui. Se serve coprirlo, è un lotto **C** a sé, non questo.
 
 ### 1.4 · Validazione
 
@@ -168,9 +250,9 @@ qualsiasi trova la griglia, e nessun link punta a un master archiviato.
 >
 > | | Lotto | Classe | `[engine · effort · qualità]` |
 > |---|---|---|---|
-> | **2a** | portare i due master con le direttive `@` e il JSON della scena nuova | **M** meccanico | `[inline · basso · `grep` trova i due master fra quelli che usano `@`]` |
-> | **2b** | rigenerare i tre SVG | **M** meccanico | `[inline · basso · 2 su 3 byte-identici, il terzo cambia **solo** nome]` |
-> | **2c** | la scena «Foresta in Fiamme» passa lo standard di modulo | **C** costruzione | `[Sonnet 5 · medio · `validate_modules` verde, scala 1,5 m/quadretto]` |
+> | **2a** ✅ | portare i due master con le direttive `@` e il JSON della scena nuova | **M** meccanico | `[inline · basso · `grep` trova i due master fra quelli che usano `@`]` — **chiuso 2026-09-05: fusione pulita su entrambi** |
+> | **2b** ✅ | rigenerare i tre SVG | **M** meccanico | `[inline · basso · 2 su 3 byte-identici, il terzo cambia **solo** nome]` — **chiuso 2026-09-05: la rinominazione era già su `main`** |
+> | **2c** ✅ | la scena «Foresta in Fiamme» passa lo standard di modulo | **C** costruzione | `[Sonnet 5 · medio · `validate_modules` verde, scala 1,5 m/quadretto]` — **chiuso 2026-09-05** |
 
 **Perché per seconda.** Costa **una rinominazione** e chiude una dimostrazione
 che serve al metodo, non solo a quella scena.
@@ -210,6 +292,34 @@ Come F1: contenuto, non commit. Estrarre i master e il JSON, applicarli su
 **Definizione di fatto**: `grep` delle direttive `@` trova i due master scritti
 a mano fra quelli che le usano, e la scena «Foresta in Fiamme» ha un SVG.
 
+### 2.4 · Com'è andata (2026-09-05)
+
+✅ **Definizione di fatto soddisfatta.** `grep '^@north\|^@mark\|^@path\|^@zone'`
+trova adesso **tre** master scritti a mano fra quelli che usano le direttive —
+i due previsti più la scena nuova — e «Foresta in Fiamme» ha il suo SVG.
+`validate_maps`: **40 SVG / 18 master**.
+
+**Nessun conflitto.** Entrambi i master si sono fusi puliti: la PR aggiunge solo
+blocchi `@` in coda alle griglie, e non tocca niente di ciò che è cambiato dopo.
+
+⚠️ **Due previsioni del piano erano sbagliate, tutte e due in meglio.**
+
+| Il piano diceva | Com'è davvero |
+|---|---|
+| «costo: **una rinominazione**» | **già fatta**: `main` porta `…grid-65-53-sca` dal lotto A di `PIANO-QUALITA-DEL-CODICE`, e il rigenerato ci è caduto sopra da solo. Costo zero |
+| «attesi **+3** SVG» | **+1**. Il `Cerchio Sacro` e la `map01` dei campi drow **esistono già** su `main`: li ha renderizzati il gate di [ADR-0043](adr/ADR-0043-le-montagne-sono-muri-e-nessun-master-esce-dal-controllo.md), che il 4 settembre ha trovato «due master di ARC-09 con quattro mappe mai renderizzate». Quindi qui **due SVG guadagnano l'overlay** e **uno solo nasce** |
+
+**I quattro SVG rigenerati**: uno byte-identico a quello della PR («Foresta in
+Fiamme»), tre diversi — e come in F1, **zero differenze fuori dal blocco
+legenda**: è la riscrittura di ADR-0042, che sposta `⬛` in cima e lo chiama
+`Edificio / corpo di fabbrica`. La `map01` dei campi drow si è rigenerata
+**identica a quella committata su `main`**: non compare nemmeno fra i file
+modificati.
+
+📌 **La dimostrazione che serviva al metodo è fatta**: le direttive `@` di
+ADR-0006 funzionano su master **scritti a mano**, in place, senza ricostruire la
+griglia — il disegno esistente non si è perso in nessuno dei tre.
+
 ---
 
 ## FASE 3 — #106: la catena dei raster e Blender come geometria
@@ -219,9 +329,9 @@ a mano fra quelli che le usano, e la scena «Foresta in Fiamme» ha un SVG.
 >
 > | | Lotto | Classe | `[engine · effort · qualità]` |
 > |---|---|---|---|
-> | **3a** | portare i due script e i loro 418 test | **M** meccanico | `[inline · basso · i test passano com'erano]` |
-> | **3b** | `SCARTI.txt` — il registro di cosa si butta e perché | **C** costruzione | `[Sonnet 5 · medio · un test che prova che un `--reroll` senza motivo **non** passa]` |
-> | **3c** | gli smoke in CI e il controllo di determinismo del piano di scena | **C** costruzione | `[Sonnet 5 · medio · il controllo boccia un piano non deterministico]` |
+> | **3a** ✅ | portare i due script e i loro 418 test | **M** meccanico | `[inline · basso · i test passano com'erano]` — **chiuso 2026-09-05: non passavano, e la ragione era buona** |
+> | **3b** ✅ | `SCARTI.txt` — il registro di cosa si butta e perché | **C** costruzione | `[Sonnet 5 · medio · un test che prova che un `--reroll` senza motivo **non** passa]` — **chiuso 2026-09-05: 7 test, e il gate morde anche in CI** |
+> | **3c** ✅ | gli smoke in CI e il controllo di determinismo del piano di scena | **C** costruzione | `[Sonnet 5 · medio · il controllo boccia un piano non deterministico]` — **chiuso 2026-09-05** |
 > | **3d** | 🖥 generare i diciotto raster e sceglierli | **G** giudizio | `[**il DM**, sulla sua macchina · — · diciotto immagini che lui tiene]` |
 >
 > ⚠️ **3d non è un lotto di agente.** Il collo di bottiglia è **il giudizio, non
@@ -287,6 +397,89 @@ motivata**.
 
 ⚠️ **Il collo di bottiglia è il giudizio, non la GPU**: ~1,5-2 ore, e quasi tutte
 sono scegliere quale delle quattro varianti tenere.
+
+### 3.5-bis · Com'è andata (2026-09-05) — 3a, 3b, 3c
+
+**3d resta al DM**, come previsto: qui non c'è GPU, Blender non è installato e
+ComfyUI non è in ascolto. Tutto il resto è dentro.
+
+#### 3a — «i test passano com'erano». Non passavano.
+
+Dieci test rossi su `render_map_blender`, per una ragione sola:
+`render_map_svg.slugify` **su `main` si chiama `nome_mappa`**. È la rinominazione
+del lotto A di `PIANO-QUALITA-DEL-CODICE` — **la terza volta** che quel lotto si
+presenta in questa ripresa: in F1 come nome di file SVG, in F2 come la
+«rinominazione» che era già stata fatta, qui come chiamata rotta. Una riga, e i
+**52 test** dei due script passano.
+
+🔎 **Il criterio del piano era ingenuo, e vale scriverlo.** «I test passano
+com'erano» presuppone che l'ambiente attorno sia fermo. A 222 commit di distanza
+non lo è mai: il criterio giusto per un lotto di trapianto è *«i test passano
+dopo aver riallineato le chiamate a ciò che il repo espone oggi, e il
+riallineamento è meccanico»*.
+
+⚠️ **E c'era una mina, che il piano non poteva vedere.** La PR committa un
+`PROVENIENZA.txt` che avrebbe **cancellato venti righe di provenienza vera** —
+le immagini che il DM ha generato il 2026-08-15 con Gemini, col C2PA, le
+dimensioni, e l'avvertenza che **il seed non è esposto dal servizio**, quindi
+quella serie non è rigenerabile e il PNG *è* l'artefatto. Proprio il contenuto
+che ADR-0019 esiste per proteggere, cancellato dallo strumento che serve a
+proteggerlo. Il file di `main` è stato **ripristinato** e gli si è aggiunto in
+testa il blocco che descrive la catena ComfyUI: le due convenzioni convivono, e
+si distinguono perché nelle righe nuove **il seed c'è**.
+🔎 Verificato che il *codice* invece era a posto: `scrivi_provenienza` conserva
+il file e sostituisce solo la riga omonima. Il pericolo era il file committato,
+non lo script — e sono due cose che si controllano separatamente.
+
+**Il manifest ha cambiato forma** dal merge-base: `use_case` è entrato, e
+`ci_smoke`/`consumes_schema`/`produces_schema`/`docs`/`tests` sono usciti. I tre
+descrittori sono stati **convertiti** alla forma di oggi, non incollati, e i tre
+registri derivati (`registry.json`, `docs/tools/README.md`, `mcp-tools.json`)
+**rigenerati** con `--emit-all` invece che fusi a mano. **57 tool conformi.**
+
+**Un contratto che non tornava**, trovato da un test e non da noi:
+`test_ambiente` pretende che ogni binario dichiarato nel manifest stia nel
+registro di `binari.py`, e **`blender` non c'era**. Senza, `dm.py doctor` non
+avrebbe mai potuto dire che manca. Registrato, con la degradazione scritta:
+*la geometria si risolve lo stesso — `--piano-solo` scrive il piano senza
+Blender, ed è quello il pezzo deterministico; mancano il PNG e il passo di
+profondità, che sono presentazione e non canone.*
+
+#### 3b — il sesto requisito
+
+`SCARTI.txt` accanto a `PROVENIENZA.txt`, forma `id · seed · reroll · motivo`,
+intestazione che spiega la regola. `--motivo` è **obbligatorio con `--reroll`**:
+senza, exit **2** *prima* di leggere, scrivere o chiamare la rete — un rifiuto
+che non si sa spiegare non deve nemmeno cominciare. La scrittura è idempotente
+sulla coppia `(id, reroll)`, come già `scrivi_provenienza` sulla scelta.
+
+📌 **Lo scarto si registra prima di rigenerare**, non dopo: il tentativo di ieri
+è stato buttato comunque, anche se quello di oggi fallisce.
+
+**Sette test**, di cui tre provano che il gate **morde**: reroll senza motivo
+esce 2 e **non crea nessun file**; un motivo di soli spazi non conta; e
+`--reroll 0` non chiede niente, perché il gate riguarda il rifiuto e non la
+generazione — chiedere un motivo dove non c'è nulla da buttare sarebbe attrito
+senza scopo.
+
+#### 3c — la CI prova che i cancelli mordono
+
+Agli smoke si aggiungono `--help`, `--lista` e `--dry-run` della catena raster,
+più **due passi che un `--help` non prova**:
+
+| Passo | Cosa boccia |
+|---|---|
+| **i cancelli mordono** | un `flux1-dev` che *passasse* fa rossa la CI; un `--reroll` senza motivo che *passasse* pure |
+| **piano 3D deterministico** | due giri di `--piano-solo` che non danno lo stesso file |
+
+⚠️ Il secondo è scritto al contrario di come viene naturale: **fallisce se il
+comando riesce**. È l'unico modo di provare un divieto — e senza, un gate che un
+giorno smette di funzionare non lo dice a nessuno, che è la stessa classe di
+difetto di ADR-0043.
+
+Entrambi i passi sono stati **eseguiti in locale** prima di scriverli nel
+workflow: `✓ pesi vietati rifiutati, reroll senza motivo rifiutato` e
+`✓ piano 3D byte-identico su due giri` (48 solidi da 660 celle).
 
 ### 3.6 · Validazione
 
@@ -429,14 +622,16 @@ Vale per **ogni** commit di **ogni** fase.
 
 ## Le decisioni che restano al DM
 
+<!-- decisioni-dm: RIPRESA-PR -->
+
 | # | Fase | Domanda |
 |---|---|---|
-| D1 | F1 | I tre master `Hammerfist-Lotto-*` deprecati: **si archiviano** in `_ARCHIVIO/` (proposta) o **si tengono coi loro SVG**? |
+| ~~D1~~ | F1 | ✅ **decisa 2026-09-05: archiviazione.** I tre master e i loro 7 SVG in `_ARCHIVIO/`; gli SVG non cancellati, così la cartella resta dentro il raggio di `validate_maps` |
 | D2 | F3 | I diciotto raster si generano **sulla tua macchina** — quando? La fase si chiude senza, ma la catena resta non collaudata sul risultato vero |
 | D3 | F4 · 4c | Le due domande di G1: il **−2 COS di Thorik** e il **Giorno di Marcia 19 vs ~15** |
 | D4 | F4 | I **13 stemmi e mappe** del `PALIO-BOOKLET` che la #99 lascia in sospeso: si producono o si tolgono i riferimenti? |
 | ~~D5~~ | ~~fuori piano~~ | ✅ **deciso e fatto il 2026-09-04**: il DM l'ha messo in cima alla coda, ed è chiuso insieme al punto cieco di `validate_maps` (ADR-0043) |
-| D6 | F1 | `…P1C-Rituale-COMPLETO-SCALE` mappa 3 dichiara **40×40** e ha **26×29** celle: il renderer avvisa e disegna lo stesso. La griglia è contenuto — la ridisegno o la lascio con l'avviso? |
+| ~~D6~~ | F1 | ✅ **decisa 2026-09-04: ridisegnata.** `…P1C` mappa 3 dichiarava 40×40 e aveva righe da 24 a 26 celle: rifatta **26×29**, nessuna coordinata del testo cambiata |
 
 ---
 

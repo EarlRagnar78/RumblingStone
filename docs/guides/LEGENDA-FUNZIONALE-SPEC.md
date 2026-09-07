@@ -380,10 +380,15 @@ tende, quali edifici e quali dais vuol dire leggere la mappa, non contare i
 caratteri. La coda si smaltisce quando quella mappa viene toccata per altri
 motivi.
 
+📌 **Aggiornamento 2026-09-05.** La coda viva è di **6.960** celle in **23** file:
+le 1.256 di `Hammerfist-Lotto-3-FINALE` sono uscite quando il master è stato
+archiviato (D1). Il conteggio di 8.216 resta corretto **come misura del
+2026-09-04** e non si riscrive: era vero allora.
+
 | File | Celle `⬛` | Sospetto, da verificare leggendo |
 |---|---:|---|
 | `SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md` | 2.173 | accampamento → quasi tutte **tende** ⛺ |
-| `Hammerfist-Lotto-3-FINALE.md` | 1.256 | fortezza → **edifici**, resta `⬛` |
+| ~~`Hammerfist-Lotto-3-FINALE.md`~~ | ~~1.256~~ | 🗄 **archiviato** il 2026-09-05 in `08_…/Mappe/_ARCHIVIO/` (decisione D1): fuori dalla coda, il master definitivo è `Hammerfist-L3-REVISED-Ultra-Clear` |
 | `ARC07-MAPPE-DEFINITIVO.md` | 800 | forgia → edifici **+ l'Altare**: il candidato **dais** 🔳 più probabile del repo (e ha già 93 celle `⛺`) |
 | `ARC07-DEF-5-RITORNO-HAMMERFIST.md` | 684 | fortezza → **edifici** |
 | `tarsilia-la-ruota-giocatori.md` | 642 | città → **edifici** |

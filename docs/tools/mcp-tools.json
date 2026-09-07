@@ -154,6 +154,33 @@
       "deterministic": true
     },
     {
+      "name": "blender_costruisci_mappa",
+      "description": "«Che cosa gira dentro Blender quando chiedo il render di una mappa, e perché questo file non si lancia a mano?»\n\nLo script che gira DENTRO Blender: dal piano di scena costruisce i solidi, la camera e il lock di luce, e rende. Non si lancia a mano — il driver e' render_map_blender.py, dove sta tutta la logica provabile senza GPU.",
+      "use_case": "«Che cosa gira dentro Blender quando chiedo il render di una mappa, e perché questo file non si lancia a mano?»",
+      "invocation": "blender -b -noaudio -P scripts/blender/costruisci_mappa.py -- --piano <piano.json>",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "piano": {
+            "type": "string",
+            "description": "Il piano di scena scritto dal driver."
+          }
+        },
+        "required": [
+          "piano"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<uscita dichiarata nel piano>.png"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "eseguito fuori da Blender, piano illeggibile o render fallito"
+      },
+      "deterministic": false
+    },
+    {
       "name": "compile_map_json",
       "description": "«Ho la mappa descritta in JSON: come diventa un master valido senza che io conti i quadretti a mano?»\n\nModalita' 3: compila un contratto JSON rigido in un master griglia-emoji, validando geometria e simboli e rigettando input errati.",
       "use_case": "«Ho la mappa descritta in JSON: come diventa un master valido senza che io conti i quadretti a mano?»",
@@ -363,6 +390,80 @@
       "exit_codes": {
         "0": "ok",
         "1": "errore (JSON non valido o dungeon troppo grande)"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "render_map_blender",
+      "description": "«Questa mappa in volume, per una tavola o per ControlNet: come la ottengo senza che la geometria del 3D e quella dell'SVG possano divergere?»\n\nLa mappa in volume: risolve la geometria con lo stesso paint() che alimenta l'SVG, fonde le celle in solidi e la fa rendere a Blender in ortografica. Con --profondita produce il passo di profondità per ControlNet depth, così l'illustrazione eredita la pianta esatta.",
+      "use_case": "«Questa mappa in volume, per una tavola o per ControlNet: come la ottengo senza che la geometria del 3D e quella dell'SVG possano divergere?»",
+      "invocation": "python3 scripts/render_map_blender.py mappa.json --piano-solo",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "mappa": {
+            "type": "string",
+            "description": "Il JSON della mappa (contratto tactical_map)."
+          },
+          "out": {
+            "type": "string",
+            "description": "PNG di uscita (default: <cartella>/rendered/blender/<slug>.png)."
+          },
+          "vista": {
+            "type": "string",
+            "description": "Ortografica dall'alto (default) o prospettica.",
+            "enum": [
+              "orto",
+              "tre-quarti"
+            ]
+          },
+          "profondita": {
+            "type": "boolean",
+            "description": "Rende il passo di profondità invece della veduta: input di ControlNet depth."
+          },
+          "larghezza": {
+            "type": "integer",
+            "description": "Larghezza del render in pixel."
+          },
+          "campioni": {
+            "type": "integer",
+            "description": "Campioni per pixel."
+          },
+          "luce-azimut": {
+            "type": "number",
+            "description": "Direzione della luce in gradi: e' il lock di luce del set."
+          },
+          "luce-elevazione": {
+            "type": "number",
+            "description": "Altezza della luce in gradi."
+          },
+          "con-insidie": {
+            "type": "boolean",
+            "description": "Tiene le insidie nella pianta (default: fuori, sono note del DM)."
+          },
+          "blender": {
+            "type": "string",
+            "description": "Comando di Blender, se non e' nel PATH."
+          },
+          "piano-solo": {
+            "type": "boolean",
+            "description": "Scrive il piano di scena ed esce: nessun Blender, nessun render."
+          }
+        },
+        "required": [
+          "mappa"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<cartella>/rendered/blender/<slug>.piano.json",
+        "<cartella>/rendered/blender/<slug>[-depth].png"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "binario blender assente, JSON non valido o render fallito",
+        "2": "mappa non trovata",
+        "130": "interruzione utente"
       },
       "deterministic": true
     },
@@ -750,6 +851,108 @@
         "2": "cartella mancante"
       },
       "deterministic": true
+    },
+    {
+      "name": "comfyui_batch",
+      "description": "«Le diciotto immagini del modulo: come le rigenero identiche fra un anno, e come faccio a sapere con che pesi — e con che licenza — sono nate?»\n\nGenera la serie di immagini di un modulo pilotando l'API locale di ComfyUI: legge i prompt annotati dal markdown master, compone look comune e ancora storica, fissa i seed, salva i PNG coi nomi attesi e scrive PROVENIENZA.txt. Rifiuta i pesi non commerciali (ADR-0019).",
+      "use_case": "«Le diciotto immagini del modulo: come le rigenero identiche fra un anno, e come faccio a sapere con che pesi — e con che licenza — sono nate?»",
+      "invocation": "python3 scripts/comfyui_batch.py --lista",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "prompts": {
+            "type": "string",
+            "description": "Markdown coi prompt annotati (default: quello del Drappo)."
+          },
+          "out": {
+            "type": "string",
+            "description": "Cartella dei PNG (default: quella del markdown)."
+          },
+          "modello": {
+            "type": "string",
+            "description": "Quali pesi usare. FLUX.1 [dev] non e' fra le scelte: e' vietato da ADR-0019.",
+            "enum": [
+              "flux-schnell",
+              "sdxl"
+            ]
+          },
+          "checkpoint": {
+            "type": "string",
+            "description": "Nome del file di checkpoint, se diverso da quello del registro."
+          },
+          "serie": {
+            "type": "string",
+            "description": "base = i 18 del capitolato (default) - extra = solo gli oltre - tutto.",
+            "enum": [
+              "base",
+              "extra",
+              "tutto"
+            ]
+          },
+          "solo": {
+            "type": "string",
+            "description": "Genera solo questo id (ripetibile)."
+          },
+          "reroll": {
+            "type": "integer",
+            "description": "Cambia seed in modo deterministico: 1 = secondo tentativo, 2 = terzo."
+          },
+          "motivo": {
+            "type": "string",
+            "description": "Perche' il tentativo precedente si butta. OBBLIGATORIO con --reroll: finisce in SCARTI.txt."
+          },
+          "steps": {
+            "type": "integer",
+            "description": "Passi di campionamento (default: dal registro del modello)."
+          },
+          "cfg": {
+            "type": "number",
+            "description": "Aderenza al prompt, CFG (default: dal registro del modello)."
+          },
+          "server": {
+            "type": "string",
+            "description": "Indirizzo dell'API ComfyUI locale."
+          },
+          "attesa-max": {
+            "type": "integer",
+            "description": "Secondi massimi di attesa per immagine."
+          },
+          "autore": {
+            "type": "string",
+            "description": "Chi ha generato, per la riga di PROVENIENZA.txt."
+          },
+          "forza": {
+            "type": "boolean",
+            "description": "Rigenera anche i PNG gia' presenti (default: li salta)."
+          },
+          "fissa-seed": {
+            "type": "boolean",
+            "description": "Dopo la generazione scrive il seed usato nel markdown master."
+          },
+          "lista": {
+            "type": "boolean",
+            "description": "Elenca la serie risolta ed esci. Nessun side-effect."
+          },
+          "dry-run": {
+            "type": "boolean",
+            "description": "Compone e stampa i prompt: nessuna rete, nessun file."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<cartella dei prompt>/<id>.png",
+        "<cartella dei prompt>/PROVENIENZA.txt",
+        "<cartella dei prompt>/SCARTI.txt"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "ComfyUI non raggiungibile, generazione fallita o pesi non commerciali rifiutati",
+        "2": "markdown mancante, senza annotazioni, id inesistente, o --reroll senza --motivo",
+        "130": "interruzione utente"
+      },
+      "deterministic": false
     },
     {
       "name": "dm_dossier",
@@ -1477,6 +1680,36 @@
       "exit_codes": {
         "0": "ok",
         "1": "CHANGELOG mancante per modifica strutturale"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "decisioni_dm",
+      "description": "«Che cosa sta aspettando da me, oggi? E come faccio a fidarmi che quell'elenco sia aggiornato?»\n\nLe decisioni aperte al DM: la fonte sono le tabelle marcate dentro i piani, l'aggregato di STATO-E-ORDINE §4 e' generato, e il drift fra le due cose e' rosso in CI.",
+      "use_case": "«Che cosa sta aspettando da me, oggi? E come faccio a fidarmi che quell'elenco sia aggiornato?»",
+      "invocation": "python3 scripts/decisioni_dm.py --check",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Gate CI: segnala il drift fra piani e aggregato, non scrive."
+          },
+          "emit": {
+            "type": "boolean",
+            "description": "Rigenera l'aggregato in STATO-E-ORDINE fra i marker auto:begin/auto:end."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "plans/STATO-E-ORDINE-DEI-PIANI.md"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "drift fra piani e aggregato, o fonte malformata",
+        "2": "uso errato (nessuna opzione)"
       },
       "deterministic": true
     },

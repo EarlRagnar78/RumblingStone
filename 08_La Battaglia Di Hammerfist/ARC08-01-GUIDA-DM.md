@@ -982,6 +982,7 @@ Abilità chiave: Artigianato (ingegneria) +12, Disattivare Congegni +10.
 
 
 **MAPPA 1A-1: IL SENTIERO NASCOSTO**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md` → MAPPA 1A-1 REVISED (20×100, 1,5 m: pattuglia, rocce 1-7, skill challenge)
 ```
 SCALA: Ogni carattere ~ 5 metri
                     NORD ↑ (Verso il punto di osservazione)
@@ -1016,6 +1017,7 @@ SCALA: Ogni carattere ~ 5 metri
 
 
 **MAPPA 1A-2: IL TORRIONE DI VEDETTA**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md` → MAPPA 1A-2 REVISED (40×40, 1,5 m)
 ```
 SCALA: Ogni carattere ~ 3 metri
                     NORD ↑ (Vista sul campo nemico a 400m)
@@ -1054,6 +1056,7 @@ SCALA: Ogni carattere ~ 3 metri
 
 
 **MAPPA 1A-3: IL CAMPO DELLA MANO ROSSA (VISTA NARRATIVA)**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md` → MAPPA 1A-3 REVISED (griglia strategica 40×50, 6 m/q, con tabella FORZE)
 ```
 (Vista a 400m di distanza)
 
@@ -1204,6 +1207,7 @@ I giocatori possono scegliere tra:
 *Obiettivo: Resistere il più a lungo possibile, infliggendo quante più perdite nemiche.*
 
 **MAPPA 2A-1: POSIZIONAMENTO INIZIALE (TURNO 1)**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 1 REVISED (griglia di regia 60×108, 3 m/q — stesse fasce, con rotte delle fasi)
 ```
 SCALA: Ogni carattere ~ 10 metri
                     NORD ↑
@@ -1246,6 +1250,7 @@ SCALA: Ogni carattere ~ 10 metri
 <div style="page-break-before:always"></div>
 
 ## **MAPPA 2: SCHIERAMENTO DIFENSIVO STRATEGICO E POSIZIONI PG**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 2 REVISED (tabella postazioni su coordinate della griglia 2A) + MAPPA 2A REVISED (griglia 120×80)
 *(Versione aggiornata con posizioni PG)*
 
 ```
@@ -1285,6 +1290,7 @@ SCALA: Ogni carattere ~ 5 metri
 <div style="page-break-before:always"></div>
 
 ## **MAPPA 2-BIS: VISTE TATTICHE DELLE MURA ESTERNE (Versione Corretta e Chiarificata)**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 2A REVISED: VISTA 1 (top-down con griglia), VISTA 3 (sezione = C), VISTA 4 (frontale = B)
 
 ### **A) Vista dall'Alto (Top-Down View) Corretta**
 *Per il posizionamento strategico. Le difese principali sono a SUD, verso l'attaccante.*
@@ -1368,6 +1374,7 @@ ATTACCANTE
 <div style="page-break-before:always"></div>
 
 ## **MAPPA 3: MOVIMENTI E FASI DELL'ASSALTO (GIORNO 1)**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 3 REVISED (rotte delle fasi tracciate sulla griglia della MAPPA 1 REVISED)
 *(Invariata)*
 
 ```
@@ -1399,6 +1406,7 @@ FASE 2: ASSALTO DIRETTO (Round 6-10)
 ```
 
 ## **MAPPA 4: EVOLUZIONE DINAMICA DELLE MURA (GIORNO 1-2)**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 4 REVISED (stati A-C con coordinate della griglia 2A)
 ### **FASE A: PRIMI DANNI (Turni 6-10)**
 *Dopo il bombardamento iniziale dei giganti e l'assalto degli arieti.*
 ```
@@ -1578,6 +1586,7 @@ Le Cantitrici devono completare il loro rituale (5 round) ma sono vulnerabili du
 *Obiettivo: Sopravvivere all'attacco mirato del drago e ritirarsi nel cuore della montagna.*
 
 **MAPPA 2B: ATTACCO AL COMANDO (TURNO 16-20)**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 2B-CORRETTA REVISED (40×26, 1,5 m: cono del soffio, posizioni e opzioni PNG)
 ```
 BASTIONI CENTRALI - ATTACCO AEREO (180m x 120m)
                     NORD ↑
@@ -1609,6 +1618,7 @@ BASTIONI CENTRALI - ATTACCO AEREO (180m x 120m)
 <div style="page-break-before:always"></div>
 
 #### **MAPPA 2B-CORRETTA: L'ATTACCO A CONO**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 2B-CORRETTA REVISED (40×26, 1,5 m)
 ```
 SCALA: Ogni carattere ~ 3 metri
                     NORD ↑ (Esterno delle Mura)
@@ -1736,6 +1746,7 @@ SOFFIO DRACONICO - AREA EFFETTO (Round 3)
 
 ### 🏃‍♂️ **La Ritirata Disperata**
 **NUOVA MAPPA - RITIRATA VERSO IL CUORE:**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA H3-1 (evacuazione 40×40, 1,5 m: statua, tunnel 5 nani/round, timeline)
 ```
 EVACUAZIONE VERSO TUNNELS (Round 5-6)
 
@@ -1802,6 +1813,7 @@ I PG possono scegliere:
 > *"Il passaggio principale si apre in una caverna più vasta: una selva di stalagmiti si leva dal pavimento come alberi pietrificati, e le torce vi proiettano in mezzo ombre lunghe e mutevoli. Sei bocche di tunnel si spalancano tutt'intorno all'incrocio, nere e mute. I superstiti si stringono al centro, gli scudi rivolti verso l'esterno, mentre il respiro di Re Thorek rantola sulla barella improvvisata. Le urla degli orchi sono lontane, ora. Troppo lontane. Il silenzio della pietra, che per un nano è sempre stato una carezza, qui pesa come una lastra tombale. Non siete soli."*
 
 **MAPPA 3Z: L'INCROCIO SILENZIOSO**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 3Z REVISED (33×33, 1,5 m: stalagmiti S1-S8, 6 tunnel, rotte dell'imboscata)
 *Scala: 1 carattere ≈ 2 metri.* ⚠️ *Deviazione dalla convenzione repo (1,5 m/quadretto): la griglia originale è mantenuta per non alterare portate e distanze già usate nel testo. Non mischiare quadretti di mappe a scale diverse nella stessa scena.*
 
 ```
@@ -1876,9 +1888,9 @@ Se più di 4 bugbear sono caduti, i superstiti si dileguano nei tunnel. Gli hobg
 - ❌ **Fallimento:** Re Thorek viene ucciso — la campagna dell'arco crolla (vedi ARC08-10 Esiti e Contingenze prima di permettere questo esito)
 
 **Riferimenti tattici (griglia completa 33×33, posizioni quadretto per quadretto):**
-- `Mappe/Hammerfist-Lotto-3-FINALE.md` → MAPPA 3Z: INCROCIO SILENZIOSO
-- `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` → MAPPA 3Z (immagine [158] `hammerfist-3z.png`)
-- `../07_il Portale Della Forgia Eterna/Mappe/TACTICAL-GRIDS-COMPLETE.md` → MAP 19: SILENT CROSSROADS (file combinato, vedi nota di cross-reference)
+- `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` → **MAPPA 3Z REVISED** (griglia canonica: stalagmiti S1-S8, 6 tunnel, rotte dell'imboscata, companion DM)
+- `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` → MAPPA 3Z (master narrativo; immagine [158] `hammerfist-3z.png`)
+- storico (DEPRECATED, D12): `Mappe/_ARCHIVIO/Hammerfist-Lotto-3-FINALE.md` → MAPPA 3Z; `../07_il Portale Della Forgia Eterna/Mappe/TACTICAL-GRIDS-COMPLETE.md` → MAP 19: SILENT CROSSROADS (file combinato)
 
 Superata l'imboscata, la colonna riprende la marcia verso nord: l'antica porta di mithril del Cuore della Montagna è ormai vicina.
 
@@ -1904,11 +1916,13 @@ Superata l'imboscata, la colonna riprende la marcia verso nord: l'antica porta d
 <div style="page-break-before:always"></div>
 
 **MAPPA 3A: LA CAVERNA SACRA**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 5 REVISED (67×53, 1,5 m — questa scena è lo stato A)
 
 CUORE DELLA MONTAGNA (scala 1:800, ogni carattere = 5m)
                     NORD ↑
 
 ## **MAPPA 5: IL CUORE DELLA MONTAGNA (SESSIONE 3)**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 5 REVISED (67×53, 1,5 m: altare, statue, ondate, apparizione round 8)
 *Il santuario finale dove i nani superstiti fanno la loro ultima resistenza.*
 
 ```
@@ -1979,6 +1993,7 @@ I 90 nani superstiti si barricano nella Caverna Sacra. I PG devono affrontare on
 I PNG sopravvissuti devono proteggere Re Thorek morente e i superstiti nanici fino all'apparizione miracolosa dei Rumbling Stones.
 
 ### **MAPPA: IL CUORE DELLA MONTAGNA**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 5 REVISED (67×53, 1,5 m)
 
 ```
 IL CUORE DELLA MONTAGNA - CAVERNA SACRA (100m x 80m)
@@ -2174,6 +2189,7 @@ TERZA ONDATA - INFILTRAZIONE (Round 7-8)
 <div style="page-break-before:always"></div>
 
 **MAPPA 3B: LA SVOLTA**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 5 REVISED, stato F "La Svolta" (post-apparizione)
 ```
 DOPO L'APPARIZIONE - NUOVE FORZE (Round 11-15)
                     NORD ↑
@@ -2291,6 +2307,7 @@ Ogni PG può scegliere un'azione speciale:
 I giocatori prendono controllo dei loro veri PG (Rumbling Stones) e ribaltano immediatamente la situazione, trasformando una sconfitta certa in contrattacco vittorioso.
 
 ### **MAPPA: LA TRASFORMAZIONE**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 5 REVISED, stato F (controffensiva)
 
 ```
 DOPO L'APPARIZIONE - NUOVE FORZE (Round 11-15)
@@ -2463,6 +2480,7 @@ RESA DEI CONTI FINALE (Round 14-15)
 I Rumbling Stones guidano l'assalto finale fuori dalle caverne, coordinando con gli alleati aerei (gufi giganti + druido orso + bardo tempeste) per sconfiggere definitivamente l'esercito della Mano Rossa.
 
 ### **MAPPA: IL CAMPO DI BATTAGLIA FINALE**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 4 REVISED (60×68, 3 m/q) + MAPPA 4X REVISED (quote)
 
 ```
 CAMPO DI BATTAGLIA ESTERNO - VISTA DALL'ALTO (300m x 200m)
@@ -2484,6 +2502,7 @@ CAMPO DI BATTAGLIA ESTERNO - VISTA DALL'ALTO (300m x 200m)
 
 ```
 ### **MAPPA: LA BATTAGLIA FINALE ALL ESTERNO**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 4 REVISED (60×68, 3 m/q)
 
 ```
 VALLE DELL'AVVISTAMENTO (120m x 80m)
@@ -2527,6 +2546,7 @@ VALLE DELL'AVVISTAMENTO (120m x 80m)
 *Obiettivo: Sconfiggere Fauci di Palude e spezzare il morale nemico.*
 
 **MAPPA 4A: SCONTRO AEREO E TERRESTRE**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 4 REVISED (griglia di regia + VISTA ALTITUDINI 0-60 m)
 ```
 VISTA LATERALE
     60m ☁️ TEMPESTA CONTROLLATA ☁️ [MAESTRO TEMPESTAS]
@@ -2863,6 +2883,7 @@ VENDETTA DEL GENERALE
 
 ### 🏆 **LA VITTORIA AGRODOLCE**
 **MAPPA 4B: IL CAMPO DELLA VITTORIA**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 4 REVISED, stato E "Vittoria" (campo della memoria)
 ```
 CAMPO DOPO LA VITTORIA
 
@@ -2904,6 +2925,7 @@ CAMPO DOPO LA VITTORIA
 - **Re Thorek:** Vivo ma segnato per sempre
 
 **MAPPA: IL CAMPO DELLA MEMORIA**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 4 REVISED, stato E (cerimonia: `Cerimonia-delle-100-Asce.md`)
 ```
 CERIMONIA DELLE ASCE - TRAMONTO
 
@@ -3007,6 +3029,7 @@ CERIMONIA DELLE ASCE - TRAMONTO
 ## **6. CAPITOLO 4: MAPPE TATTICHE DETTAGLIATE**
 
 ### **MAPPA 1: DISPOSIZIONE GENERALE DELLA BATTAGLIA (GIORNO 1)**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 1 REVISED (griglia di regia 60×108, 3 m/q)
 ```
 SCALA: Ogni carattere ~ 10 metri
                     NORD ↑
@@ -3048,6 +3071,7 @@ SCALA: Ogni carattere ~ 10 metri
 ```
 
 ### **MAPPA 2: SCHIERAMENTO DIFENSIVO STRATEGICO E POSIZIONI PG**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 2 REVISED (tabella su coordinate 2A)
 ```
 SCALA: Ogni carattere ~ 5 metri
                     NORD ↑ (Verso il nemico)
@@ -3084,6 +3108,7 @@ SCALA: Ogni carattere ~ 5 metri
 ```
 
 ### **MAPPA 2-BIS: VISTE TATTICHE DELLE MURA ESTERNE**
+> 🗺️ **Griglia ultra-clear:** `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 2A REVISED (VISTA 1/3/4)
 
 #### **A) Vista dall'Alto (Top-Down View) Corretta**
 ```

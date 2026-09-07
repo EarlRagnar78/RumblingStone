@@ -1,9 +1,12 @@
 > ⚠️ **DEPRECATED (2026-07)** — piano ARC-08 A8: generazione superata.
 > **Master**: `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` (mappe 2A,
 > 2B, 2C, 2, 3, 4-danni, 2B-corretta — matrice di contenuto in testa a
-> quel file). Per la griglia di precisione della 2A vedi anche
-> `Hammerfist-L2-REVISED-Ultra-Clear.md`. Contenuto mantenuto per
-> storico (D12), non cancellato.
+> quel file). Le griglie ultra-clear di TUTTE le mappe della sessione
+> (2A + viste 2B/2C, MAPPA 1/2A-1, 2, 3, 4-danni, 2B-Corretta) sono in
+> `../Hammerfist-L2-REVISED-Ultra-Clear.md` (lotto MAPPE-UC 2026-07-23):
+> usare QUELLE, non le griglie qui sotto. Contenuto mantenuto per storico
+> (D12), non cancellato; archiviato qui il 2026-09-05 (decisione D1) —
+> vedi `README.md`.
 
 # HAMMERFIST TACTICAL MAPS - LOTTO 2
 ## Sessione 2: Tre Giorni di Sangue e Ferro - Assedio Fortezza (7 Mappe)

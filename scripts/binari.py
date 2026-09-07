@@ -138,6 +138,16 @@ OPZIONALI = (
          "  cercato in PATH, in $BOOKLET_CHROME e in /opt/pw-browsers",
          "i booklet restano in HTML, che e' il formato che si legge al tavolo; "
          "il PDF e' per chi stampa."),
+    _opz("blender", "il render 3D delle mappe (`render_map_blender.py`) e il passo "
+                    "di profondita' che alimenta ControlNet",
+         "  Debian/Ubuntu  sudo apt install blender\n"
+         "  Fedora         sudo dnf install blender\n"
+         "  macOS          brew install --cask blender\n"
+         "  oppure blender.org/download — poi --blender /percorso/a/blender",
+         "la geometria si risolve lo stesso: `--piano-solo` scrive il piano di "
+         "scena senza Blender, ed e' quello il pezzo deterministico. Senza il "
+         "binario mancano solo il PNG e il passo di profondita', che sono "
+         "presentazione e non canone."),
     _opz("inkscape", "i PNG delle mappe con resa SVG fedele (`--renderer inkscape`)",
          "  Debian/Ubuntu  sudo apt install inkscape\n"
          "  Fedora         sudo dnf install inkscape",

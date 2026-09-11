@@ -11,11 +11,20 @@
 
 ---
 
-### VISTA 1: GRID COMPLETA CON COORDINATE NUMERATE (53×10)
+### VISTA 1: GRID COMPLETA CON COORDINATE NUMERATE (21×53)
+
+> ⚠️ **Estratto, non griglia intera** (verificato 2026-09-11). Il corridoio è
+> lungo **53 righe**; qui ne sono disegnate **21** — le prime dieci, poi coppie a
+> intervalli (15-16, 27-28, 35-36, 44-45, 51-52) e l'ultima. È la stenografia di
+> un corridoio lungo, non una griglia incompleta per errore.
+>
+> 🐛 L'intestazione diceva «53 COLONNE × 10 RIGHE»: **trasposta e sbagliata**.
+> Il 53 era giusto ma sull'asse delle righe. Corretta a **21 colonne × 53 righe**;
+> nessuna cella toccata.
 
 ```
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-NORD ↑ (Da Sala Forgia, Portal Fuoco)                   CORRIDOIO DEL FUOCO 80m                                      GRIGLIA 53 COLONNE × 10 RIGHE                      SUD ↓ (Verso Forgia Adamantina)
+NORD ↑ (Da Sala Forgia, Portal Fuoco)                   CORRIDOIO DEL FUOCO 80m                                      GRIGLIA 21 COLONNE × 53 RIGHE                      SUD ↓ (Verso Forgia Adamantina)
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
 COLONNE →  A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R  S  T  U  V  W  X  Y  Z AA AB AC AD AE AF AG AH AI AJ AK AL AM AN AO AP AQ AR AS AT AU AV AW AX AY AZ BA BB BC
@@ -252,6 +261,14 @@ HEAT ZONES (Overlay):
 ---
 
 ### VISTA 1: GRID COMPLETA CIRCOLARE CON COORDINATE (33×33)
+
+> ⚠️ **Estratto** (verificato 2026-09-11). L'arena è **33×33**, e l'intestazione
+> è corretta: qui sono disegnate **18 righe su 33** più la 25.
+>
+> 🐛 **Difetto aperto, non corretto qui**: c'è una **riga 17 duplicata** — una
+> alla riga 290 del sorgente e una alla 297. Quale delle due debba essere un
+> altro numero (19? 24?) lo sa solo chi ha disegnato l'arena, e indovinarlo
+> sposterebbe delle celle. Vedi D12.
 
 ```
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════

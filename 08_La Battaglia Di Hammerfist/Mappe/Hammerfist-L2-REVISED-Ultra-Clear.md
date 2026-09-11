@@ -379,6 +379,15 @@ VISTA DAL CAMPO DI BATTAGLIA (Nemici Guardano Alto) ↑
 
 ### VISTA 1: GRIGLIA DI REGIA CON COORDINATE (60×108, 1 quadretto = 3 m)
 
+> ⚠️ **Estratto** (verificato 2026-09-11). L'intestazione è **corretta**: sono
+> disegnate **99 righe su 108**, larghe 60. Mancano nove righe, e l'area
+> dichiarata resta quella giusta — non si rimpicciolisce l'etichetta per far
+> tornare il conto.
+>
+> ✅ Le altre due mappe di questo master **non hanno difetti**: la 2A è davvero
+> 120×80 e la 2B davvero 40×26. La tabella §6 di `RICERCA-MESTIERE` dava la 2A
+> per «griglia vera 50×80»: era falso.
+
 ```
 MAPPA 1 REVISED: Disposizione Generale Giorno 1 (0-300 m)
 COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF AG AH AI AJ AK AL AM AN AO AP AQ AR AS AT AU AV AW AX AY AZ BA BB BC BD BE BF BG BH

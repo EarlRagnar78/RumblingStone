@@ -26,6 +26,15 @@
 ### CAMPO DROW 1 (Hex C07) - Burning Operations Base
 
 **Dimensioni:** 80m × 60m (53×40 griglia 1.5m/quadrato)
+
+> ⚠️ **Estratto, non griglia intera** (verificato 2026-09-11). L'area dichiarata è
+> **corretta** — 80 ÷ 1,5 = 53 colonne, 60 ÷ 1,5 = 40 righe — ma qui sono disegnate
+> **9 righe su 40**, larghe ~33 celle su 53.
+>
+> 🔴 **L'intestazione non va rimpicciolita per farla combaciare**: ridurla a quel
+> che è disegnato restringerebbe il campo di battaglia da 80×60 m a circa 50×14 m.
+> Completare la griglia è **progettazione**, non correzione: cosa c'è nelle righe
+> mancanti è una scelta di gioco.
 **Forze:** 30 Drow (20 guerrieri, 8 pyromancer, 2 commanders)
 
 ```

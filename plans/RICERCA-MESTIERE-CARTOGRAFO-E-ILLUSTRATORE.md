@@ -190,6 +190,49 @@ cui sei mappe sono rimaste così).
 
 ---
 
+## §6-bis — Rilette una per una (2026-09-11): fatte
+
+Il DM ha chiesto di leggerle tutte, proporre mappa per mappa e archiviare solo
+dove si tocca la griglia. **Non se n'è toccata nessuna**, quindi nessuna copia in
+`_ARCHIVIO/`: `git` conserva ogni versione, e una copia avrebbe creato un secondo
+master che `validate_maps` sorveglia come vivo — l'effetto collaterale di D1,
+dove però i master erano superati davvero.
+
+⚠️ **Due volte la misura ha smentito chi la citava**, ed è la parte da ricordare.
+Prima ha smentito §6, che era sbagliata in tre righe su sei. Poi, guardando le
+celle una per una, ha smentito **la mia stessa proposta**: avevo classificato tre
+mappe come «etichetta sbagliata, griglia giusta», e **due delle tre erano
+estratti**. Contare le colonne non basta: bisogna guardare *quali righe ci sono*.
+
+| Master · mappa | Griglia vera | L'intestazione | Fatto |
+|---|---|---|---|
+| `Portale-Forgia-L1` · 1 | **completa**, 20 × 14 | diceva 13 righe | ✅ corretta a `20 colonne × 14 righe`, e l'area a **30 × 21 m** che ne discende |
+| `Portale-Forgia-L2` · 1 | **estratto**: 21 righe su 53 | «53 COLONNE × 10 RIGHE» — **trasposta** | ✅ corretta a `21 colonne × 53 righe` + marcata estratto |
+| `Portale-Forgia-L2` · 2 | **estratto**: 18 righe su 33 | `33×33`, **corretta** | ✅ marcata estratto · 🐛 riga `17` duplicata → **D12** |
+| `…P1C-Rituale` · Campo Drow 1 | **estratto**: 9 righe su 40 | `53×40`, **corretta** (80÷1,5=53 · 60÷1,5=40) | ✅ marcata estratto |
+| `Hammerfist-L2` · Disp. Generale | **estratto**: 99 righe su 108 | `60×108`, **corretta** | ✅ marcata estratto |
+| `Hammerfist-L2` · 2A | completa, 120 × 80 | `120×80`, **corretta** | — nessun difetto |
+| `Hammerfist-L2` · 2B | completa, 40 × 26 | `40×26`, **corretta** | — nessun difetto |
+
+🔴 **Perché quattro mappe su sette si marcano invece di correggerle.** In quei
+casi l'intestazione **non mente**: dichiara l'area giusta, e la griglia è
+disegnata a metà. Rimpicciolire l'etichetta per farla combaciare
+**restringerebbe il campo di battaglia** — nel Campo Drow 1 da 80 × 60 m a circa
+50 × 14. Completare quelle righe è **progettazione**, non correzione: cosa c'è
+dentro è una scelta di gioco, e non spetta a un lotto di igiene.
+
+⚠️ **§6 dava `Hammerfist-L2` 2A per «griglia vera 50×80»**: falso, ha esattamente
+120 colonne e 80 righe. E l'ipotesi che «120×80 fossero metri» non regge — a
+1,5 m sarebbero 80×53 quadretti, e i quadretti disegnati sono 120×80.
+
+La sesta riga di §6 era `Hammerfist-Lotto-2-Assedio`, finita in `_ARCHIVIO/` con
+D1: master deprecato, fuori perimetro.
+
+**Verifica**: `validate_maps` **40 SVG / 18 master**, invariato. Nessuna cella
+toccata, nessun SVG rigenerato, nessun rename.
+
+---
+
 ## §7 — Le domande al DM prima di partire
 
 > I numeri **D7-D10** erano citati in `STATO-E-ORDINE` §4 **senza esistere qui**:
@@ -201,7 +244,8 @@ cui sei mappe sono rimaste così).
 
 | # | Ambito | Domanda |
 |---|---|---|
-| D7 | metro di paragone | Quali due o tre **mappe pubblicate sono lo standard** che vuoi raggiungere? Senza un riferimento scelto da te, l'audit misura contro un'idea mia di «mappa buona» — **bloccante** |
-| D8 | stampa | Il tavolo stampa **a colori o in bianco e nero**? Cambia il peso di A1.6 e A1.7 da «bello avere» a bloccante |
-| D9 | doppia versione | DM/giocatori: la vuoi **su tutte le mappe** o solo sulle hero map? Oggi ce l'ha **una** |
-| D10 | §6 | Le **sei mappe con l'intestazione discorde**: le sistemo io una per una, o le guardi prima tu? |
+| ~~D7~~ | metro di paragone | ✅ **decisa 2026-09-11: le mappe di *Red Hand of Doom* e quelle di *Rise of the Runelords* (Paizo)** — *«voglio quella qualità e risultato, o il più vicino possibile»*. 🔎 Le prime **sono già nel repo**: **69 immagini** in `00_Red Hand Of Doom/Immagini/`, divise in `MappeIncontri`, `MappeLuoghiTattiche`, `MappeVarie` — il metro si guarda, non si immagina. ⚠️ **Rise of the Runelords non si porta nel repo**: è IP Paizo (ADR-0005). Si nomina come riferimento e si tiene fuori; l'audit cita numeri e criteri, mai i file |
+| ~~D8~~ | stampa | ✅ **decisa 2026-09-11: a colori.** A1.6 (daltonismo) e A1.7 (resa in grigi) **restano non bloccanti**: la seconda perde quasi tutto il suo senso, la prima no — il daltonismo non dipende dalla stampante, e va tenuta come avviso |
+| ~~D9~~ | doppia versione | ✅ **decisa 2026-09-11: né tutte né solo le hero map — quelle che nascondono qualcosa.** Il DM: *«per le mappe che hanno interazione con i giocatori e che devono nascondere cose ai giocatori o dettagli che devono scoprire»*. Il criterio è **funzionale**, quindi decidibile da chi scrive la mappa e non da una lista: se la griglia contiene una porta segreta, un nemico non ancora visto, una trappola o un indizio da scoprire, serve la versione giocatori. Oggi ce l'ha **una sola** (`tarsilia-la-ruota-giocatori`) |
+| ~~D10~~ | §6 | ✅ **decisa e fatta il 2026-09-11.** Il DM: leggile tutte, proponi mappa per mappa, e archivia **solo dove tocchi la griglia** — oggi **nessuna**, quindi nessuna copia in `_ARCHIVIO/` e `git` fa da archivio. 🔎 Rileggendole una per una **la mia stessa proposta si è rivelata sbagliata su due mappe su tre**: solo `L1` era una pura etichetta da correggere; `L2` mappa 1 e mappa 2 sono **estratti**, non griglie mal etichettate. Vedi §6-bis, riscritta sulle celle contate. Fatte: **1 etichetta corretta** (`L1` 20×13 → 20×14, con l'area a 21 m che ne discende), **1 intestazione trasposta corretta** (`L2` mappa 1 → 21 colonne × 53 righe) e **4 marcature di estratto**. `validate_maps` resta a 40 SVG / 18 master, nessuna cella toccata |
+| D12 | §6-bis | 🐛 **`Portale-Forgia-L2` mappa 2 ha una riga `17` duplicata** — una alla riga 290 del sorgente, una alla 297. Quale delle due debba portare un altro numero (19? 24?) lo sa solo chi ha disegnato l'arena circolare: **indovinarlo sposterebbe delle celle**, quindi è rimasto com'è e marcato nel master |

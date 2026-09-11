@@ -4,7 +4,7 @@
 ---
 
 ## MAPPA PF-1: STANZA DELLA CORONA (Boss Fight Belkram)
-**Dimensioni:** 30m × 20m (20 colonne × 13 righe, 1.5m/quadrato)  
+**Dimensioni:** 30m × 21m (20 colonne × 14 righe, 1.5m/quadrato)  
 **Incontro:** Belkram + 2 Yochlol + Xanathira
 
 ### 🎯 COMPRENSIONE: Arena boss rettangolare, 4 pilastri angoli, trono centro elevato
@@ -15,7 +15,7 @@
 
 ```
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-NORD ↑ (Porta Ingresso PG)                    STANZA DELLA CORONA                        GRIGLIA 20 COLONNE × 13 RIGHE
+NORD ↑ (Porta Ingresso PG)                    STANZA DELLA CORONA                        GRIGLIA 20 COLONNE × 14 RIGHE
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
 COLONNE →  A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R  S  T

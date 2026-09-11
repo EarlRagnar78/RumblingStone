@@ -332,10 +332,11 @@ griglia — il disegno esistente non si è perso in nessuno dei tre.
 > | **3a** ✅ | portare i due script e i loro 418 test | **M** meccanico | `[inline · basso · i test passano com'erano]` — **chiuso 2026-09-05: non passavano, e la ragione era buona** |
 > | **3b** ✅ | `SCARTI.txt` — il registro di cosa si butta e perché | **C** costruzione | `[Sonnet 5 · medio · un test che prova che un `--reroll` senza motivo **non** passa]` — **chiuso 2026-09-05: 7 test, e il gate morde anche in CI** |
 > | **3c** ✅ | gli smoke in CI e il controllo di determinismo del piano di scena | **C** costruzione | `[Sonnet 5 · medio · il controllo boccia un piano non deterministico]` — **chiuso 2026-09-05** |
-> | **3d** | 🖥 generare i diciotto raster e sceglierli | **G** giudizio | `[**il DM**, sulla sua macchina · — · diciotto immagini che lui tiene]` |
+> | **3d** | 🖥 **collaudare la catena e confrontare**, non generare diciotto | **G** giudizio | `[**il DM**, sulla sua macchina · ~20 min · due o tre immagini SDXL messe accanto a quelle di Gemini, e una scelta presa **guardando**]` — riformulato 2026-09-11, vedi §3.6 |
 >
-> ⚠️ **3d non è un lotto di agente.** Il collo di bottiglia è **il giudizio, non
-> la GPU**: ~1,5-2 ore, e quasi tutte sono scegliere quale variante tenere.
+> ⚠️ **3d non è un lotto di agente**, e non è più da 1,5-2 ore: le diciotto
+> immagini **esistono già** (§3.6). Il collo di bottiglia resta il giudizio, ma
+> ora si esercita su un confronto di due o tre immagini, non su una serie intera.
 
 **Perché per terza.** Vale molto e non è urgente al tavolo: nessuna sessione si
 blocca perché mancano i diciotto raster del Drappo. E l'ultimo passo **non si può
@@ -492,6 +493,76 @@ workflow: `✓ pesi vietati rifiutati, reroll senza motivo rifiutato` e
 - `tools_manifest --check` con i due tool nuovi
 - verifica esplicita del divieto: un checkpoint `flux1-dev` **esce 1 prima** di
   scrivere qualsiasi cosa
+
+---
+
+### 3.6 · 3d riformulato (2026-09-11): le immagini ci sono già
+
+🔎 **Il lotto 3d è stato scritto su un fatto che oggi è falso.** Diceva
+«generare i diciotto raster», e i diciotto **esistono tutti** — più le due
+`serie=extra`. Li ha generati il DM **con Gemini** il 2026-08-15, sono montati
+nel modulo con i loro derivati web, `PROVENIENZA.txt` è compilato e
+`validate_standalone` è verde. È la **quinta stima invecchiata** di questa
+ripresa, e l'unica che stava per costare al DM due ore di lavoro inutile.
+
+**Perché lo strumento diceva il contrario.** `comfyui_batch --lista` dava «sei
+da fare»: cinque ritratti e una tavola. Non mancavano — avevano un **nome
+diverso** da quello che la specifica si aspettava:
+
+| La specifica diceva | Il file è | Chi ha ragione |
+|---|---|---|
+| `ritratto-vesca` · `ritratto-attu` · `ritratto-roncetti` · `ritratto-sfregio` · `ritratto-grasa` | `png-vesca` · `png-attu` · `png-roncetti` · `png-sfregio` · `png-nonna-grasa` | **il file** |
+| `tavola-tarsilia-dallalto` | `tavola-tarsilia-citta` | **il file** |
+
+Il nome giusto è quello dei file per due ragioni indipendenti: i documenti del
+modulo ci puntano già (`![Ottavia Vesca](…/web/png-vesca.jpg)`), e `png-` è la
+convenzione del repo per i **personaggi non giocanti** (`Bestiario/png/`) — la
+stessa distinzione che l'elenco §5 della specifica fa due righe più sotto, «i 6
+PG» contro «i 5 PNG». Allineati gli `id`: **18 su 18 già presenti**.
+
+⚠️ Cambiare un `id` cambia il seed derivato, ma nessuna di quelle sei aveva un
+seed fissato e nessuna è mai stata generata con questa catena: non si perde
+niente.
+
+### 3.6-bis · La decisione vera, e cosa ha scelto il DM
+
+L'arte del Drappo è di **Gemini**; la catena costruita in F3 genera con **SDXL
+in locale**. Quale delle due è il canone del modulo? ADR-0019 §2 aveva già
+inquadrato il caso:
+
+| | Gemini (quello che c'è) | SDXL locale (quello che la catena fa) |
+|---|---|---|
+| Riproducibilità | **nessun seed esposto**: irripetibile, il PNG *è* la sorgente | seed → identica su qualsiasi macchina |
+| Licenza | contratto di servizio, **cambia**; e verificato su fonti **secondarie** | OpenRAIL++-M, **perpetua** |
+| Provenienza | **firmata C2PA**, verificabile — qui Gemini è migliore | la scrivi tu |
+| Qualità | conosciuta, e il DM la giudica buona | **mai vista** |
+
+⚠️ Una cosa che **non** discrimina: un'immagine puramente generata con ogni
+probabilità non è tutelabile da copyright. Vale per entrambe.
+
+✅ **Scelta del DM (2026-09-11): collaudo prima di scegliere.** *«Voglio fare
+prima un collaudo con 2 o 3 immagini e vedere davvero la qualità prima di
+buttare quelle di Gemini, che sono carine»*. Sul suo computer, con ComfyUI in
+ascolto:
+
+```bash
+python3 scripts/comfyui_batch.py \
+  --solo ritratto-vanna --solo tavola-la-ruota \
+  --out /tmp/confronto-sdxl
+```
+
+🔴 **`--out` su una cartella a parte è la parte importante**: nessuna immagine
+attuale viene toccata, e il confronto si fa affiancandole. Se una variante non
+convince, `--reroll 1 --motivo "…"` — e il motivo finisce in `SCARTI.txt`
+(ADR-0046), che è il punto: la serie diventa **motivata**, non solo scelta.
+
+**Cosa si ottiene comunque, quale che sia l'esito**: la catena raster viene
+provata contro un ComfyUI vero per la prima volta. È il buco dichiarato di F3 —
+il sesto requisito su sei — e si chiude al costo di due immagini invece che
+diciotto.
+
+**Quando D2 si chiude**: quando il DM ha guardato il confronto e ha detto **A**
+(le Gemini restano canone) o **B** (si rigenera la serie con SDXL). Non prima.
 
 ---
 
@@ -765,7 +836,7 @@ Vale per **ogni** commit di **ogni** fase.
 | # | Fase | Domanda |
 |---|---|---|
 | ~~D1~~ | F1 | ✅ **decisa 2026-09-05: archiviazione.** I tre master e i loro 7 SVG in `_ARCHIVIO/`; gli SVG non cancellati, così la cartella resta dentro il raggio di `validate_maps` |
-| D2 | F3 | I diciotto raster si generano **sulla tua macchina** — quando? La fase si chiude senza, ma la catena resta non collaudata sul risultato vero |
+| D2 | F3 · 3d | **Riformulata il 2026-09-11: la domanda di prima partiva da un fatto falso.** Diceva *«i diciotto raster si generano sulla tua macchina — quando?»*, ma **esistono tutti e diciotto** (più le due extra), generati dal DM **con Gemini** il 2026-08-15, montati nel modulo, `validate_standalone` verde. `comfyui_batch --lista` dava «6 da fare» per un **disallineamento di nomi**, corretto in questo lotto. La domanda vera è: **l'arte del Drappo è di Gemini, la catena di F3 genera con SDXL in locale — quale delle due è il canone del modulo?** Le differenze che contano (ADR-0019 §2, che questo caso l'aveva previsto): Gemini **non espone il seed**, quindi la serie è irripetibile e il PNG è la sorgente; i suoi termini sono un **contratto che cambia**, verificato per di più su fonti secondarie; SDXL è OpenRAIL++-M, **perpetua**. Di contro la provenienza di Gemini è **firmata C2PA**, e SDXL su queste immagini **nessuno l'ha visto**. 🔵 **Metodo scelto dal DM il 2026-09-11: collaudo prima di scegliere** — la decisione **resta aperta**, si chiude quando il DM ha visto il confronto. Il DM: *«voglio fare prima un collaudo con 2 o 3 immagini e vedere davvero la qualità prima di buttare quelle di Gemini, che sono carine»*. Si generano **due o tre** immagini con SDXL in una cartella a parte, si mettono accanto alle attuali, e A (tenere Gemini) o B (rigenerare tutto) si sceglie **guardando**. Il collaudo chiude anche il buco vero di F3 — la catena mai provata contro un ComfyUI reale — al costo di due immagini invece che diciotto |
 | D3 | F4 · 4c | Le due domande di G1: il **−2 COS di Thorik** e il **Giorno di Marcia 19 vs ~15** |
 | D4 | F4 | I **13 stemmi e mappe** del `PALIO-BOOKLET` che la #99 lascia in sospeso: si producono o si tolgono i riferimenti? |
 | D11 | F4 · 4b | **L'ADR ex-0018 della #72 si recupera?** Decide che, *se e quando* si pubblica, si pubblica un **AP originale autonomo**, mai un'espansione di RHoD — e porta con sé il **perimetro della v1** (archi 07+08 dentro, 195.739 parole dell'arco 09 fuori, arco 06 da riscrivere, `campaign/` privato per sempre), il vincolo sui marchi, e la regola che *rinominare non basta*. ⚠️ **La conclusione ce l'hai già** (`PIANO-VENDIBILITA` C1 e §5 linea 4); quello che non esiste da nessuna parte è **la misura per arco** e il perimetro. 🔴 **Due cose da sapere prima di dire sì**: l'ADR è in stato **«proposta — gate: decisione DM + verifica di un avvocato IP»**, quindi recuperarlo apre una domanda, non la chiude; e l'audit su cui poggia (`AUDIT-DERIVAZIONE-IP-CAMPAGNA.md`) **non è nel repo**, quindi andrebbe rifatto o il perimetro resta un'asserzione senza prova. 🔎 Rimisurato oggi, il debito è **cresciuto**: `Belkram` era in 49 file, ora **82**; `Moradin` da 1.502 a **1.680** occorrenze; e le fonti WotC dichiarate in `campaign/lore/campaign-history.md` compaiono anche **dentro le skill**, che l'ADR non aveva guardato |
@@ -800,29 +871,46 @@ Vale per **ogni** commit di **ogni** fase.
 
 | Cosa | Aspetta | Perché non posso deciderlo io |
 |---|---|---|
-| **3d** — i diciotto raster | **D2** | serve la tua macchina, e il collo di bottiglia è il giudizio sulle immagini, non il tempo GPU |
+| **3d** — il collaudo e il confronto (non più i diciotto: ci sono già) | **D2** | serve la tua macchina, e il giudizio è tuo: guardare due immagini SDXL accanto alle Gemini e dire quale resta canone |
 | **4c** — i due tempi di `state.md` | **D3** | è canone: due fatti del tavolo che solo tu sai |
 | I 13 stemmi e mappe del `PALIO-BOOKLET` | **D4** | si producono o si tolgono i riferimenti: è una scelta di prodotto |
 | Recuperare l'ADR ex-0018 della #72 | **D11** | ed è una *proposta* con gate legale, non una decisione tecnica |
 | **4d** `state.yaml` · **4g** schede PG a dati · **4h** `groups/<slug>/` | 4c prima | K e G: si prendono uno alla volta, e 4h vuole una PR dedicata |
 
-### ⚠️ Quattro PR aperte col contenuto già su `main`
+### Le PR: da sei a due (chiuse il 2026-09-11)
 
-È il rischio da cui questa ripresa è partita — *«non vorrei piani e PR che si
-sovrappongono o che sono parzialmente obsolete ma che per sbaglio le mergio»* — e
-**oggi è ancora aperto**:
+Il rischio da cui questa ripresa è partita — *«non vorrei piani e PR che si
+sovrappongono o che sono parzialmente obsolete ma che per sbaglio le mergio»* —
+**non è più aperto**. Tre PR il cui contenuto era già su `main` sono state
+chiuse su decisione del DM, ognuna con la sua motivazione scritta nel thread.
 
-| PR | Stato reale | Cosa succede se si mergia per sbaglio |
+| PR | Esito | Perché |
 |---|---|---|
-| **#63** | contenuto portato (F1: lotti 1a-1d) | riporta indietro 11 SVG e i puntatori a tre vie già risolti |
-| **#52** | contenuto portato (F2: lotti 2a-2c) | idem sugli overlay `@` |
-| **#67** | giudicata **superata** in R9 | reintroduce un handout fuori pipeline che **detta tattica al giocatore** |
-| **#106** | aperta **solo** per 3d | il resto è già su `main` |
-| **#99** | in corso, lotto per lotto | 4a e 4b sono dentro; il resto no |
+| ~~#63~~ | 🔒 **chiusa** | contenuto portato dalla F1 (1a-1d). Mergiarla avrebbe riportato indietro 11 SVG rigenerati e tre file di puntamento già fusi a tre vie |
+| ~~#52~~ | 🔒 **chiusa** | contenuto portato dalla F2 (2a-2c): le direttive `@` girano su tre master scritti a mano |
+| ~~#67~~ | 🔒 **chiusa, superata** | l'oggetto esiste su `main` dal 31 luglio come booklet da manifest, e la versione della PR **detta tattica al giocatore** — contraria alla norma di oggi, non solo vecchia |
+| **#106** | 🟡 aperta | resta **solo** per 3d, che aspetta **D2**. Tutto il resto della catena raster è su `main` |
+| **#99** | 🟡 aperta | segnaposto della F4: 4a e 4b sono dentro, da 4c in poi no |
 
-🔴 **Nessuna di queste va mergiata.** #63, #52 e #67 si **chiudono** (il contenuto
-è già dove serve); #106 e #99 restano aperte come segnaposto di ciò che manca.
-Chiuderle è un'azione sul tuo repo e aspetta una tua parola.
+⚠️ **Le due che restano non vanno mergiate**: sono segnaposto di lavoro che
+manca, non rami da integrare. Si chiuderanno quando l'ultimo lotto che le
+riguarda sarà su `main` — 3d per la #106, 4h per la #99.
+
+### Cosa manca per dire che questa revisione è finita
+
+Cinque cose, e **tre delle cinque aspettano te**:
+
+| | Cosa | Chi |
+|---|---|---|
+| 1 | **3d** — ⚠️ **non più «generare i diciotto»**: esistono già (§3.6). Resta il **collaudo di due o tre immagini** con SDXL e il confronto con quelle di Gemini, ~20 min sulla macchina del DM. Poi la #106 si chiude | DM (**D2**, metodo scelto) |
+| 2 | **4c** — i due tempi di `state.md`, che sblocca 4d · 4g · 4h | DM (**D3**) |
+| 3 | **D4** e **D11** — gli stemmi del Palio, e se recuperare l'ADR ex-0018 | DM |
+| 4 | **4d → 4h** — il canone come dato, uno alla volta; poi la #99 si chiude | macchina, dopo il 2 |
+| 5 | Le tre code dichiarate: attuazione di **ADR-0048**, i **51 link** dei booklet generati, i **161 rilievi** di prosa | macchina, quando si vuole |
+
+🔴 **Il collo di bottiglia non è il lavoro: sono le decisioni.** Le voci 1, 2 e 3
+non hanno alcun ostacolo tecnico — la macchina può eseguirle il giorno dopo la
+risposta. La 4 dipende dalla 2. Solo la 5 è libera da subito.
 
 ---
 

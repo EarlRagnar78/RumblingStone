@@ -326,6 +326,11 @@ riaperta di soppiatto dentro un file che nessun validatore guarda.
 recuperare — è il secondo caso, dopo la #109, in cui «superata» vuol dire
 davvero superata.
 
+✅ **Fatta il 2026-09-11**, su decisione del DM, insieme a #63 e #52 (il cui
+contenuto la ripresa aveva già portato con F1 e F2). La motivazione qui sopra è
+stata scritta nel thread della PR, non solo qui: chi la ritrova fra sei mesi
+deve poter leggere **perché** è chiusa senza dover cercare il piano.
+
 ---
 
 ## Cosa resta da decidere al DM

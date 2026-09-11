@@ -206,13 +206,22 @@ Salva i PNG in questa cartella con questi nomi esatti, così i riferimenti dei
 documenti li trovano. I nomi **non si scelgono qui**: sono gli `id` delle
 annotazioni §1-bis, e `comfyui_batch.py` li scrive già così.
 
+> 🔎 **Corretti il 2026-09-11.** I cinque PNG e la tavola della città erano
+> elencati come `ritratto-*` e `tavola-tarsilia-dallalto`, mentre i file veri —
+> e i rimandi dei documenti — dicono `png-*` e `tavola-tarsilia-citta`. Il nome
+> giusto è **quello dei file**: `png-` è la convenzione del repo per i
+> personaggi non giocanti (`Bestiario/png/`), ed è la distinzione che questo
+> stesso elenco fa due righe più sotto («i 6 PG» contro «i 5 PNG»). Finché non
+> combaciavano, `comfyui_batch --lista` dava per **«da fare» sei immagini che
+> esistono**.
+
 **I diciotto del capitolato** (`serie=base`):
 
 ```
 ritratto-vanna.png · ritratto-nocca.png · ritratto-ombra.png
 ritratto-tesio.png · ritratto-berenice.png · ritratto-melchio.png     ← i 6 PG
-ritratto-vesca.png · ritratto-attu.png · ritratto-roncetti.png
-ritratto-sfregio.png · ritratto-grasa.png                             ← i 5 PNG
+png-vesca.png · png-attu.png · png-roncetti.png
+png-sfregio.png · png-nonna-grasa.png                                 ← i 5 PNG
 tavola-la-ruota.png · tavola-la-cena.png · tavola-le-stalle.png       ← le 3 tavole
 il-drappo.png · copertina.png
 spot-bilancia.png · spot-registro.png                                 ← i 2 spot
@@ -221,7 +230,7 @@ spot-bilancia.png · spot-registro.png                                 ← i 2 s
 **Oltre il capitolato** (`serie=extra`, §8 — si generano solo se li chiedi):
 
 ```
-tavola-tarsilia-dallalto.png · tavola-la-ruota-vigilia.png
+tavola-tarsilia-citta.png · tavola-la-ruota-vigilia.png
 ```
 
 ⚠️ **Prima di condividere o stampare fuori dal tavolo**: annota in
@@ -241,7 +250,7 @@ vengono dal foglio del cast (`08-CASSETTA-DEL-DM.md` §1): non inventarne di nuo
 
 ### 6.1 · Ottavia Vesca — Capitana del Bruco
 
-<!-- img id=ritratto-vesca size=832x1216 stile=ritratto serie=base -->
+<!-- img id=png-vesca size=832x1216 stile=ritratto serie=base -->
 ```
 a fifty-year-old woman, dyer's hands stained blue-black to the elbow, close-set
 watchful eyes, grey hair pulled back hard, plain indigo work dress with a
@@ -252,7 +261,7 @@ speaks-before-you-finish expression
 
 ### 6.2 · Gerlando Attu — Capitano dell'Oca
 
-<!-- img id=ritratto-attu size=832x1216 stile=ritratto serie=base -->
+<!-- img id=png-attu size=832x1216 stile=ritratto serie=base -->
 ```
 a forty-two-year-old man, banker's build, dressed exactly half a grade below
 what he could afford, close-trimmed beard, a ledger strap across his chest,
@@ -262,7 +271,7 @@ counting-house shelves behind him, faint smile that does not reach the eyes
 
 ### 6.3 · Vidalia Roncetti — Sovrintendente al Drappo
 
-<!-- img id=ritratto-roncetti size=832x1216 stile=ritratto serie=base -->
+<!-- img id=png-roncetti size=832x1216 stile=ritratto serie=base -->
 ```
 a magistrate in her sixties, ceremonial sash over sober robes, reading glasses
 held not worn, a rolled decree in one hand, standing under a public portico,
@@ -272,7 +281,7 @@ the face of someone who has read the article aloud a hundred times
 
 ### 6.4 · Sfregio — il sicario del Bruco
 
-<!-- img id=ritratto-sfregio size=832x1216 stile=ritratto serie=base -->
+<!-- img id=png-sfregio size=832x1216 stile=ritratto serie=base -->
 ```
 a wiry man in his thirties, old blade scar from cheekbone to jaw, hood down,
 hands relaxed and empty, leaning in a canal alley at dusk, unremarkable
@@ -283,7 +292,7 @@ vista: la minaccia sta nella calma, non nel coltello.
 
 ### 6.5 · Nonna Grasa — l'ospizio dell'Istrice
 
-<!-- img id=ritratto-grasa size=832x1216 stile=ritratto serie=base -->
+<!-- img id=png-nonna-grasa size=832x1216 stile=ritratto serie=base -->
 ```
 a seventy-one-year-old woman, broad and short, apron over layers, hands folded
 over a tally stick, seated by a hospice hearth with beds behind her,
@@ -342,7 +351,7 @@ famiglia di materiale si somigliano senza essere la stessa città.
 
 ### 8.1 · Tarsilia dall'alto — 1536 × 864
 
-<!-- img id=tavola-tarsilia-dallalto size=1536x864 stile=tavola serie=extra -->
+<!-- img id=tavola-tarsilia-citta size=1536x864 stile=tavola serie=extra -->
 ```
 a river town seen from a rooftop at late afternoon, tiled roofs stepping down to
 a canal and a wooden bridge, a rectangular market ring at the centre with a

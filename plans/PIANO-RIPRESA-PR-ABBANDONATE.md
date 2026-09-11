@@ -503,7 +503,7 @@ workflow: `✓ pesi vietati rifiutati, reroll senza motivo rifiutato` e
 > | Lotto | Classe | `[engine · effort · qualità]` |
 > |---|---|---|
 > | **4a** ✅ `validate_docs` | **C** costruzione | `[Sonnet 5 · medio-alto · il gate boccia una cartella documentata e inesistente, e **non** boccia i 4 falsi positivi noti]` — **chiuso 2026-09-07: 6 difetti veri, zero falsi positivi** |
-> | **4b** link e path locali | **M** meccanico | `[inline · basso · 0 link rotti su 241, 0 path `/home/jfs/`]` |
+> | **4b** ✅ link, path locali e un ADR | **K** canone (era **M**) | `[Opus 5 · alto · `python3 scripts/validate_docs.py --sorgenti` esce 0 su **701 documenti**; ADR-0048 riverificato riga per riga contro il codice di oggi]` — **chiuso 2026-09-10: 22 difetti veri, 9 falsi positivi corretti nel validatore** |
 > | **4c** i due tempi di `state.md` | **K** canone | `[**Opus 5, mai delegato** · xhigh · nessun contenuto cancellato, solo etichettato; **due domande al DM** poste, non indovinate]` |
 > | **4d** `state.yaml` (ADR-0017) | **K** canone | `[**Opus 5** · xhigh-max · `state.md` **rigenerato è identico** a quello committato]` |
 > | **4e** una sola via di scrittura | **C** costruzione | `[Sonnet 5 · alto · un test **sui file veri**, non su fixture — vedi §4.4]` |
@@ -531,7 +531,7 @@ prendono **uno alla volta**, ciascuno col suo commit e i suoi gate.
 | # | Lotto | Cosa porta | Perché in questa posizione |
 |---|---|---|---|
 | 4a | **G2** — `validate_docs.py` | gate bloccante sulla deriva doc↔realtà | **Indipendente da tutto.** Chiude un difetto reale: `AGENTS.md` documentava `campaign/npcs/`, `locations/`, `encounters/` — **nessuna delle tre è mai esistita**. Ed è progettato attorno ai falsi positivi: alla prima esecuzione **9 hit di cui 4 falsi**, corretti nel validatore e non nei documenti |
-| 4b | **G3** — link e path locali | 18 link relativi rotti su 241 · 4 file con path assoluti `/home/jfs/…` | igiene pura, nessuna decisione |
+| 4b | **G3** — link, path locali e un ADR | **22 difetti veri** (la stima «18 su 241» era di un mese prima e sbagliata in tutte le cifre) · 7 file con path dentro un checkout personale | ⚠️ **non era igiene pura**: uno dei link rotti citava una decisione mai registrata, e recuperarla ha reso il lotto **K** |
 | 4c | **G1** — i due tempi di `state.md` | §1 collocava i PG **dopo Hammerfist** mentre §0 marca l'arco 08 `⬜ NON giocato` | ⚠️ tocca il canone, ma **non cancella niente: etichetta**. Estende la tabella a due tempi che §6 aveva già, DM-confermata. Porta con sé **due domande al DM** (il −2 COS di Thorik, il Giorno di Marcia 19 vs ~15) |
 | 4d | **G2-bis** — ADR-0017, `state.yaml` | i fatti come dati, `state.md` **generato** | il pezzo grosso. Vedi 4.3 |
 | 4e | **G2-ter** — una sola via di scrittura | clock villain, «chi sa cosa», numeri di Rethmar migrati a dati; il log di sessione prende un front-matter coi delta | dipende da 4d |
@@ -575,6 +575,107 @@ stanno davvero PNG, luoghi e incontri; gli adattamenti di RHoD puntano a
    funzione che riconosce il mirror non lo legge: gli chiede se lo è, ed è il
    codice che serve a **escluderlo**. Aggiunta l'esenzione mirata, e verificato
    che la regola morde ancora su un file che legge davvero dal mirror.
+
+### 4.2-ter · Com'è andato 4b (2026-09-10)
+
+**La stima era sbagliata in tutte e tre le cifre**, ed è la quarta volta in
+questa campagna. Il piano diceva *«18 link rotti su 241 · 4 file con
+`/home/…`»*; il repo di oggi ne dà **26 su 558**, e i file sono **7**. Ma il
+numero conta meno della scomposizione, perché è la scomposizione che ha
+cambiato la classe del lotto.
+
+| Classe | N | Cos'era davvero |
+|---|---|---|
+| Falsi positivi **del validatore** | 9 | `paths_from_links` catturava `![alt](path)` scritto **dentro i backtick** |
+| Rinomine con prova nel repo | 14 | slug di ADR cambiati a numero invariato, prefisso `plans/` raddoppiato, `.webp`→`.png`, `file:///` → link relativo |
+| Vendored, fuori scopo | 2 | `scripts/typst/packages/…`, ADR-0026 |
+| **Una decisione mai registrata** | 1 | ed è il motivo per cui 4b non è più **M** |
+
+🔎 **Il falso positivo più bello**: fra le nove righe c'era, per intero, la riga
+di `plans/CHANGELOG.md` che descriveva *proprio questo difetto* nel convertitore
+markdown→Typst. Il gate ha ripetuto l'errore che quella riga documentava.
+Corretto nel validatore — `senza_code_span` — **senza toccare un documento**.
+
+⚠️ **Il difetto vero non era un link rotto.**
+`docs/guides/LEGENDA-FUNZIONALE-SPEC.md:26` citava
+`ADR-0014-legenda-funzionale-fonte-unica.md`, che non esiste in nessun posto:
+era l'ADR-0014 della **PR #72**, e il commit `82e1c16` dice che di quella PR se
+ne recuperarono **due** (ex-0016 → ADR-0039, ex-0017 → ADR-0040) perché
+*«i numeri ADR 0014-0018 erano stati occupati da altre decisioni nel
+frattempo»*. Il terzo era rimasto indietro. Decisione DM: **recuperarlo** →
+[ADR-0048](adr/ADR-0048-legenda-funzionale-fonte-unica.md).
+
+🔴 **Il costo del ritardo si misura**, e l'ADR lo dice: `⛰` è entrato in
+`WALL_SYMS` con ADR-0043 e `⛺` con ADR-0042 — **due ADR separati per due
+sintomi della stessa causa**, perché la fonte unica non c'era. Ognuno era
+corretto; nessuno poteva togliere la causa. L'ADR nasce **«accettata, non
+attuata»**: l'attuazione è il lotto 1.1 di `PIANO-VENDIBILITA`, ⬜.
+
+**Il cancello, e i suoi due errori di taratura trovati misurando.**
+`validate_docs` cresce di tre cose: la correzione sui backtick, il modo
+`--sorgenti` (enumera da `git ls-files`, **quarta regola di ADR-0045**) e il
+controllo sui percorsi assoluti.
+
+1. ⚠️ **Il primo regex era troppo largo.** Cercava `/home/<utente>/` e ha
+   segnalato **undici righe di `converters/*/DEPLOYMENT.md`** — `User=htmlconverter`
+   in una unit systemd, `ENV PATH=/home/converter/…` in un Dockerfile, il path
+   standard di Homebrew su Linux. Tutte **corrette**: sono destinazioni di
+   deploy su un server, non la scrivania di chi scrive. Il segno che distingue
+   le due cose è **il nome del repo dentro il percorso**. Limite dichiarato: un
+   path personale che non nomina il repo non viene visto.
+2. 🔎 **Poi il cancello ha morso il proprio file di test** — il fixture contiene
+   il difetto per costruzione. È il caso per cui la direttiva d'uscita esiste, e
+   ha richiesto di farla funzionare **anche fuori dai markdown** (dentro un
+   commento della lingua ospite).
+
+**`--sorgenti` gira solo sui link**, non su alberi e path inline: quelli sono
+tarati sui tre documenti d'ingresso, e scatenarli su 700 file aprirebbe una
+superficie di falsi positivi che nessuno ha misurato. È l'errore che 4a aveva
+evitato apposta.
+
+**I due script di `Tordek/` resi portabili** (decisione DM). 🔎 E rendendoli
+portabili si è visto che i path di `generate_therysol.py` erano rotti **due
+volte**: oltre alla macchina, puntavano a una cartella che nel frattempo si era
+spostata di un livello. Finché il path era assoluto e irraggiungibile, la
+seconda rottura **non era visibile**. ⚠️ Ora però partono, e partendo
+sovrascrivono HTML editato a mano: il README lo dice.
+
+**I due ADR rimasti della #72, giudicati prima di proporli** (⚠️ e non dopo: era
+il rilievo del DM — *«bisogna valutare se sono superati prima di marcarli
+recuperabili»*, che è ADR-0044 applicata a sé stessa).
+
+**ex-0015 — dipendenze a livelli e pacchettizzazione. 🔴 Contraddetto, non
+superato: non si recupera.** Proponeva tre livelli di dipendenza, con un
+livello 1 che ammetteva `numpy` · `scipy` · `networkx` · `tcod` per un linter di
+progettazione. Il 3 settembre **ADR-0037** ha deciso l'opposto, e con il DM:
+*«gli script Python di questo repo usano la sola libreria standard; le dipendenze
+esterne ammesse sono binari, non pacchetti Python»*, perché gli strumenti girano
+sul portatile del DM la sera della sessione. Recuperare ex-0015 significherebbe
+**riaprire ADR-0037**, non colmare un vuoto. E le due gambe su cui stava in piedi
+non ci sono più: il consumatore che giustificava il livello 1
+(`scripts/lint_map_design.py`) **non è mai stato scritto**, e l'audit che ne
+misurava il guadagno non è nel repo. L'unica parte viva — la pacchettizzazione,
+`pyproject.toml` assente e **24** `sys.path.insert` — ha già casa in **ADR-0040**
+e nel lotto 0.2 di `PIANO-VENDIBILITA`.
+
+**ex-0018 — l'edizione commerciale come AP originale. 🟡 Non superato: la
+conclusione sì, la misura no.** Diventa **D11**, con i suoi due avvertimenti
+scritti nella domanda: l'ADR è una *proposta* con gate legale, e l'audit da cui
+dipende non è in repo.
+
+**L'indice degli ADR, chiuso nello stesso lotto.** `docs/INDEX.md` §4 si era
+fermato ad **ADR-0020** mentre `plans/adr/` era arrivata a **0048**: **28
+assenze**, invisibili a tutto quello che 4b aveva costruito fin lì, perché
+nessun link era rotto — i percorsi citati esistevano tutti, mancavano le righe.
+È la forma esatta delle 13 skill su 18 di ADR-0041. Le 28 righe sono scritte a
+mano, perché la colonna «Tema» è editoriale; ma **la completezza no**: un terzo
+controllo di `--sorgenti` conta gli ADR **dalla cartella** e boccia se l'indice
+ne salta uno. Scriverle e basta, sapendo che ridriverebbero, era l'errore che
+questo repo continua a registrare.
+
+**Lasciato fuori, dichiarato**: i **51 link rotti su 51** nei booklet generati,
+che sono un difetto del generatore e non della documentazione. Un lotto nuovo,
+non 4b.
 
 ### 4.3 · Il lotto 4d, e perché vale la pena
 
@@ -667,8 +768,61 @@ Vale per **ogni** commit di **ogni** fase.
 | D2 | F3 | I diciotto raster si generano **sulla tua macchina** — quando? La fase si chiude senza, ma la catena resta non collaudata sul risultato vero |
 | D3 | F4 · 4c | Le due domande di G1: il **−2 COS di Thorik** e il **Giorno di Marcia 19 vs ~15** |
 | D4 | F4 | I **13 stemmi e mappe** del `PALIO-BOOKLET` che la #99 lascia in sospeso: si producono o si tolgono i riferimenti? |
+| D11 | F4 · 4b | **L'ADR ex-0018 della #72 si recupera?** Decide che, *se e quando* si pubblica, si pubblica un **AP originale autonomo**, mai un'espansione di RHoD — e porta con sé il **perimetro della v1** (archi 07+08 dentro, 195.739 parole dell'arco 09 fuori, arco 06 da riscrivere, `campaign/` privato per sempre), il vincolo sui marchi, e la regola che *rinominare non basta*. ⚠️ **La conclusione ce l'hai già** (`PIANO-VENDIBILITA` C1 e §5 linea 4); quello che non esiste da nessuna parte è **la misura per arco** e il perimetro. 🔴 **Due cose da sapere prima di dire sì**: l'ADR è in stato **«proposta — gate: decisione DM + verifica di un avvocato IP»**, quindi recuperarlo apre una domanda, non la chiude; e l'audit su cui poggia (`AUDIT-DERIVAZIONE-IP-CAMPAGNA.md`) **non è nel repo**, quindi andrebbe rifatto o il perimetro resta un'asserzione senza prova. 🔎 Rimisurato oggi, il debito è **cresciuto**: `Belkram` era in 49 file, ora **82**; `Moradin` da 1.502 a **1.680** occorrenze; e le fonti WotC dichiarate in `campaign/lore/campaign-history.md` compaiono anche **dentro le skill**, che l'ADR non aveva guardato |
 | ~~D5~~ | ~~fuori piano~~ | ✅ **deciso e fatto il 2026-09-04**: il DM l'ha messo in cima alla coda, ed è chiuso insieme al punto cieco di `validate_maps` (ADR-0043) |
 | ~~D6~~ | F1 | ✅ **decisa 2026-09-04: ridisegnata.** `…P1C` mappa 3 dichiarava 40×40 e aveva righe da 24 a 26 celle: rifatta **26×29**, nessuna coordinata del testo cambiata |
+
+---
+
+## Cosa resta dopo 4b (2026-09-11)
+
+> Scritto perché ne resti traccia su `main`, non in una chat. Due tabelle,
+> divise per **chi aspetta chi**: la prima non aspetta nessuno, la seconda
+> aspetta te.
+>
+> ⚠️ Le domande **non sono ricopiate qui**. Vivono nella tabella marcata di §«Le
+> decisioni che restano al DM», e l'elenco unico è
+> [STATO-E-ORDINE §4](STATO-E-ORDINE-DEI-PIANI.md), generato da
+> `decisioni_dm.py` ([ADR-0047](adr/ADR-0047-le-decisioni-aperte-hanno-una-casa-sola.md)).
+> Un secondo elenco a mano accanto a quello generato è **esattamente** lo
+> sfasamento che quell'ADR esiste per impedire: qui ci sono solo i numeri.
+
+### Il lavoro che non aspetta nessuno
+
+| Cosa | Dove vive | Classe |
+|---|---|---|
+| **Attuazione di ADR-0048** — `scripts/legend.yaml` e i consumatori che ne derivano. L'ADR è *accettata, non attuata*: una decisione **senza cancello** finché il lotto non si chiude | lotto **1.1** di [`PIANO-VENDIBILITA`](PIANO-VENDIBILITA.md) | C |
+| **I 51 link rotti su 51 nei booklet generati** — il generatore copia link relativi alla radice dentro file tre livelli più in basso. Si aggiusta la sorgente, non l'artefatto | `build_booklet_html.py` · `hype_homebrew.py` | M |
+| **4e** una sola via di scrittura · **4f** prodotto e partita | §4.2, dipendono da 4d | C |
+| **`validate_prosa`: 161 rilievi in 340 file** (non bloccante). ⚠️ Il piano diceva «13»: era una misura vecchia e di un altro validatore | `scripts/validate_prosa.py` | M |
+
+### Il lavoro fermo su una tua decisione
+
+| Cosa | Aspetta | Perché non posso deciderlo io |
+|---|---|---|
+| **3d** — i diciotto raster | **D2** | serve la tua macchina, e il collo di bottiglia è il giudizio sulle immagini, non il tempo GPU |
+| **4c** — i due tempi di `state.md` | **D3** | è canone: due fatti del tavolo che solo tu sai |
+| I 13 stemmi e mappe del `PALIO-BOOKLET` | **D4** | si producono o si tolgono i riferimenti: è una scelta di prodotto |
+| Recuperare l'ADR ex-0018 della #72 | **D11** | ed è una *proposta* con gate legale, non una decisione tecnica |
+| **4d** `state.yaml` · **4g** schede PG a dati · **4h** `groups/<slug>/` | 4c prima | K e G: si prendono uno alla volta, e 4h vuole una PR dedicata |
+
+### ⚠️ Quattro PR aperte col contenuto già su `main`
+
+È il rischio da cui questa ripresa è partita — *«non vorrei piani e PR che si
+sovrappongono o che sono parzialmente obsolete ma che per sbaglio le mergio»* — e
+**oggi è ancora aperto**:
+
+| PR | Stato reale | Cosa succede se si mergia per sbaglio |
+|---|---|---|
+| **#63** | contenuto portato (F1: lotti 1a-1d) | riporta indietro 11 SVG e i puntatori a tre vie già risolti |
+| **#52** | contenuto portato (F2: lotti 2a-2c) | idem sugli overlay `@` |
+| **#67** | giudicata **superata** in R9 | reintroduce un handout fuori pipeline che **detta tattica al giocatore** |
+| **#106** | aperta **solo** per 3d | il resto è già su `main` |
+| **#99** | in corso, lotto per lotto | 4a e 4b sono dentro; il resto no |
+
+🔴 **Nessuna di queste va mergiata.** #63, #52 e #67 si **chiudono** (il contenuto
+è già dove serve); #106 e #99 restano aperte come segnaposto di ciò che manca.
+Chiuderle è un'azione sul tuo repo e aspetta una tua parola.
 
 ---
 

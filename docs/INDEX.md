@@ -75,6 +75,34 @@ Il **perché** delle scelte strutturali. Indice completo in [`plans/adr/`](../pl
 | [ADR-0018](../plans/adr/ADR-0018-apparato-uso-obbligatorio.md) | L'apparato d'uso (cast, pronuncia, indice read-aloud, schermo) è parte del contenuto, non un extra |
 | [ADR-0019](../plans/adr/ADR-0019-licenza-dei-pesi-non-del-software.md) | **Per le immagini generate la licenza sta nei pesi, non nel software**: SDXL e FLUX schnell sì, FLUX dev no; provenienza obbligatoria |
 | [ADR-0020](../plans/adr/ADR-0020-edizione-da-stampa-su-un-secondo-binario.md) | L'edizione da stampa esce da **Typst** su un secondo binario, non dal browser; la catena HTML resta intatta |
+| [ADR-0021](../plans/adr/ADR-0021-statblocchi-machine-readable.md) | I numeri delle schede sono un **dato**, non una frase: statblocchi machine-readable, GS coerente, gate in CI |
+| [ADR-0022](../plans/adr/ADR-0022-competenza-guadagnata-sul-campo.md) | La competenza si guadagna sul campo, **ma con un tetto**: Acume, Perizia, Metodo |
+| [ADR-0023](../plans/adr/ADR-0023-colophon-di-edizione.md) | Ogni volume porta il proprio colophon, e **la data non si deduce** |
+| [ADR-0024](../plans/adr/ADR-0024-skill-edizione.md) | La diciassettesima skill: `rumblingstone-edizione`, il mestiere di chi risponde di cosa esce dal repo |
+| [ADR-0025](../plans/adr/ADR-0025-riapertura-prosa-tradotta.md) | Il banco di prova di ADR-0016 ha dato **esito negativo**: la norma della prosa si misura, non si dichiara |
+| [ADR-0026](../plans/adr/ADR-0026-vendoring-pacchetti-typst.md) | I pacchetti Typst si **vendorizzano**: la build non scarica niente |
+| [ADR-0027](../plans/adr/ADR-0027-imposizione-con-pdfcpu.md) | `pdfcpu` come seconda dipendenza binaria, e la regola di **degradazione** quando manca |
+| [ADR-0028](../plans/adr/ADR-0028-abbazia-master-markdown.md) | Anche un modulo nato in HTML ha un **master markdown** |
+| [ADR-0029](../plans/adr/ADR-0029-licenza-doppia-testo-e-script.md) | **Licenza doppia**: CC BY-NC-SA sul testo, MIT sugli script |
+| [ADR-0030](../plans/adr/ADR-0030-server-mcp-sui-tool.md) | Il server MCP esiste, ed è **read-only per difetto** |
+| [ADR-0031](../plans/adr/ADR-0031-dm-volume-ordine-dei-mestieri.md) | `dm.py volume`: l'ordine dei mestieri, e il cancello detto a voce |
+| [ADR-0032](../plans/adr/ADR-0032-misurare-la-leggibilita.md) | Misurare la **leggibilità** dell'artefatto, e perché veraPDF resta fuori dalla CI |
+| [ADR-0033](../plans/adr/ADR-0033-derivare-e-dichiararlo.md) | Leggere prima di derivare, e **non derivare alla cieca** |
+| [ADR-0034](../plans/adr/ADR-0034-generare-dalle-tabelle.md) | Generare dalle tabelle, e **dichiarare la taratura** |
+| [ADR-0035](../plans/adr/ADR-0035-due-prose-due-norme.md) | **Due prose, due norme**: quella di gioco e quella dei documenti non si giudicano con lo stesso metro |
+| [ADR-0036](../plans/adr/ADR-0036-misurare-il-miglioramento-non-lo-stato.md) | Misurare **il miglioramento**, non lo stato |
+| [ADR-0037](../plans/adr/ADR-0037-stdlib-only-e-le-sue-eccezioni.md) | **Stdlib-only**, e le eccezioni che esistono davvero: binari sì, pacchetti Python no (salvo `pyyaml` e `Pillow`) |
+| [ADR-0038](../plans/adr/ADR-0038-l-el-viene-da-una-gerarchia-dichiarata.md) | L'EL viene da una **gerarchia dichiarata**, non da un numero nel codice |
+| [ADR-0039](../plans/adr/ADR-0039-profili-regole-multisistema.md) | **Profili di regole multi-sistema**: il motore è neutro, 3.5 / PF1e / 5e sono file sostituibili (era ADR-0016 nella #72) |
+| [ADR-0040](../plans/adr/ADR-0040-separazione-prodotto-e-toolkit-estraibile.md) | Separazione dei due prodotti e rilicenziamento del toolkit (era ADR-0017 nella #72) |
+| [ADR-0041](../plans/adr/ADR-0041-instradamento-delle-skill-con-un-gate.md) | L'instradamento delle skill è un principio, e **un gate lo verifica** |
+| [ADR-0042](../plans/adr/ADR-0042-tre-glifi-per-tre-cose.md) | Tre cose sotto un glifo: `⬛` si separa in **edificio, tenda e dais** |
+| [ADR-0043](../plans/adr/ADR-0043-le-montagne-sono-muri-e-nessun-master-esce-dal-controllo.md) | **Le montagne sono muri**, e nessun master esce dal controllo di `validate_maps` |
+| [ADR-0044](../plans/adr/ADR-0044-prima-si-guardano-i-piani-che-ci-sono.md) | Prima di aprire un piano, **si guardano quelli che ci sono** |
+| [ADR-0045](../plans/adr/ADR-0045-ogni-lotto-dichiara-engine-effort-e-qualita.md) | Ogni lotto dichiara **engine, effort e qualità attesa** — e se lavora su un insieme, il comando che lo enumera |
+| [ADR-0046](../plans/adr/ADR-0046-un-rifiuto-senza-motivo-non-parte.md) | **Un rifiuto senza motivo non parte**: `--reroll` esige `--motivo`, e lo scarto si registra |
+| [ADR-0047](../plans/adr/ADR-0047-le-decisioni-aperte-hanno-una-casa-sola.md) | Le decisioni aperte hanno **una casa sola**, e l'elenco si genera |
+| [ADR-0048](../plans/adr/ADR-0048-legenda-funzionale-fonte-unica.md) | La **legenda funzionale è la fonte unica**: la funzione di gioco di un simbolo è un dato, non prosa né un `set` cablato (era ADR-0014 nella #72) |
 
 ## 5. Archivio piani
 

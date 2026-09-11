@@ -86,5 +86,132 @@ class TestGateReale(unittest.TestCase):
             doc.unlink()
 
 
+class TestLinkDentroBacktick(unittest.TestCase):
+    """Lotto 4b: un link citato dentro i backtick e' sintassi, non un rimando.
+
+    Nove hit su ventisei erano di questa forma — fra cui, per intero, la riga di
+    `plans/CHANGELOG.md` che descriveva proprio questo difetto nel convertitore
+    Typst. Il rischio della correzione e' l'opposto: spegnere il controllo. I due
+    test vanno letti in coppia.
+    """
+
+    def _link(self, riga: str) -> list[str]:
+        doc = ROOT / "plans" / "FINTO.md"
+        return [p for _, p in vd.paths_from_links(riga + "\n", doc)]
+
+    def test_link_dentro_backtick_non_conta(self):
+        self.assertEqual(self._link("il convertitore non gestisce `![alt](path)` e"), [])
+        self.assertEqual(self._link("usciva stampato come `![Stemma](non/esiste.png)`"), [])
+
+    def test_link_fuori_backtick_conta_ancora(self):
+        """La correzione non deve spegnere il controllo: stesso link, senza backtick."""
+        self.assertEqual(self._link("vedi [la spec](adr/ADR-9999-inventato.md)"),
+                         ["plans/adr/ADR-9999-inventato.md"])
+
+    def test_backtick_riaperti_sulla_stessa_riga(self):
+        """Due span di codice: quel che sta *in mezzo* resta un link vero."""
+        got = self._link("`![a](x)` poi [vero](adr/ADR-9999-inventato.md) poi `![b](y)`")
+        self.assertEqual(got, ["plans/adr/ADR-9999-inventato.md"])
+
+    def test_la_lunghezza_della_riga_e_conservata(self):
+        """Si svuota, non si toglie: i numeri di colonna devono restare veri."""
+        riga = "prima `![alt](path)` dopo"
+        self.assertEqual(len(vd.senza_code_span(riga)), len(riga))
+
+
+class TestPercorsiAssoluti(unittest.TestCase):
+    def _scrivi(self, testo: str) -> str:
+        doc = ROOT / "scripts" / "tests" / "fixtures" / "_tmp_assoluti.md"
+        doc.parent.mkdir(parents=True, exist_ok=True)
+        doc.write_text(testo, encoding="utf-8")
+        return str(doc.relative_to(ROOT))
+
+    def test_boccia_un_checkout_personale(self):
+        # Il fixture contiene il difetto per costruzione: la direttiva vale anche
+        # per questo file.  validate-docs: ignore
+        rel = self._scrivi("cd /home/tizio/Scrivania/RumblingStone/campaign\n")  # validate-docs: ignore
+        try:
+            self.assertEqual(len(vd.percorsi_assoluti(rel)), 1)
+        finally:
+            (ROOT / rel).unlink()
+
+    def test_la_direttiva_lo_lascia_passare(self):
+        """Chi *descrive* il difetto invece di commetterlo deve poterlo scrivere."""
+        rel = self._scrivi("cd /home/tizio/RumblingStone <!-- validate-docs: ignore -->\n")
+        try:
+            self.assertEqual(vd.percorsi_assoluti(rel), [])
+        finally:
+            (ROOT / rel).unlink()
+
+    def test_le_home_di_servizio_non_sono_un_difetto(self):
+        """Il primo giro ne segnalo' undici in `converters/`, tutte corrette.
+
+        Unit systemd, Dockerfile, il path standard di Homebrew su Linux: sono
+        destinazioni di deploy, non la scrivania di chi scrive. Il segno che
+        distingue le due cose e' il nome del repo dentro il percorso.
+        """
+        rel = self._scrivi(
+            'WorkingDirectory=/home/htmlconverter/tools/html-converter\n'
+            'export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"\n'
+            'ENV PATH="/home/converter/.local/bin:${PATH}"\n'
+        )
+        try:
+            self.assertEqual(vd.percorsi_assoluti(rel), [])
+        finally:
+            (ROOT / rel).unlink()
+
+
+class TestSorgenti(unittest.TestCase):
+    def test_esclude_generati_e_vendored(self):
+        for rel in ("07_arco/homebrew/X.hb.md", "build/out.md",
+                    "scripts/typst/packages/preview/droplet/0.3.1/README.md",
+                    ".claude/skills/x/SKILL.md"):
+            self.assertTrue(vd._e_generato(rel), f"{rel} andrebbe escluso")
+
+    def test_tiene_i_sorgenti(self):
+        for rel in ("plans/CHANGELOG.md", "docs/guides/GUIDA-MAPPE.md",
+                    ".github/workflows/ci.yml"):
+            self.assertFalse(vd._e_generato(rel), f"{rel} andrebbe tenuto")
+
+    def test_enumera_dal_repo_non_da_un_elenco_a_mano(self):
+        """Quarta regola di ADR-0045: l'insieme si conta, non si dichiara."""
+        md = vd.sorgenti(".md")
+        self.assertIn("plans/CHANGELOG.md", md)
+        self.assertGreater(len(md), 400)
+        self.assertFalse([f for f in md if f.endswith(".hb.md")])
+
+
+class TestIndiceADR(unittest.TestCase):
+    """Lotto 4b: un elenco a mano accanto a una cartella si sfasa.
+
+    `docs/INDEX.md` §4 si era fermato ad ADR-0020 mentre `plans/adr/` era a 0048:
+    ventotto assenze, invisibili al controllo sui percorsi perche' nessun link
+    era rotto. Stessa forma delle 13 skill su 18 di ADR-0041.
+    """
+
+    def test_il_repo_e_allineato(self):
+        self.assertEqual(vd.indice_adr(), [], "ADR esistenti e non elencati")
+
+    def test_conta_dalla_cartella_non_dall_elenco(self):
+        """Quarta regola di ADR-0045: l'insieme si conta dalla fonte."""
+        su_disco = {f.name for f in (ROOT / vd.CARTELLA_ADR).glob("ADR-*.md")}
+        citati = set(vd.LINK_ADR.findall((ROOT / vd.INDICE_ADR).read_text(encoding="utf-8")))
+        self.assertGreater(len(su_disco), 40)
+        self.assertEqual(su_disco - citati, set())
+
+
+class TestGateSorgentiSulRepoVero(unittest.TestCase):
+    def test_zero_link_rotti_e_zero_percorsi_assoluti(self):
+        """La condizione per tenere `--sorgenti` in CI. Lotto 4b."""
+        tops = vd._toplevel_dirs()
+        problemi = []
+        for d in vd.sorgenti(".md"):
+            problemi.extend(vd.check_doc(d, tops, solo_link=True))
+        for d in vd.sorgenti(".md", ".py"):
+            problemi.extend(vd.percorsi_assoluti(d))
+        problemi.extend(vd.indice_adr())
+        self.assertEqual(problemi, [], f"il repo non e' pulito: {problemi}")
+
+
 if __name__ == "__main__":
     unittest.main()

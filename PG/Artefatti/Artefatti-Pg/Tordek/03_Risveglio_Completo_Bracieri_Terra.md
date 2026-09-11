@@ -2,7 +2,7 @@
 *(Scena Narrativa e Interattiva per il DM)*
 
 > **NAVIGAZIONE:**
-> *   [← Torna a PortaleForgia P4 (Sezione Tempio)](file:///home/jfs/Scrivania/00-Giochi_di_ruolo/00_dnd_3.5/00_Red_hand_of_Doom_GitHub/RumblingStone/07_il%20Portale%20Della%20Forgia%20Eterna/PortaleForgia-P4-PianoTerra-COMPLETO.md)
+> *   [← Torna a PortaleForgia P4 (Sezione Tempio)](../../../../07_il%20Portale%20Della%20Forgia%20Eterna/_ARCHIVIO/PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md)
 > *   *Questa scena avviene DOPO il Puzzle Gravitazionale e PRIMA dell'ingresso nella Camera dell'Altare Centrale.*
 
 **Contesto:** Il PG si trova nel **Tempio Mithral**. I corridoi a gravità variabile convergono in un'anticamera esagonale progettata come ultima difesa. Non è solo una stanza; è una trappola selettiva.
@@ -171,5 +171,5 @@ I guanti sono ora i **Bracieri Gemelli di Moradin (Completi/Awakened)**.
 Ora che il gruppo è riunito e l'artefatto è completo, la porta verso la Camera dell'Altare Centrale si apre. Il Boss Finale vi attende, ma ora siete pronti.
 
 > **PROSEGUIRE:**
-> *   [→ Vai a PortaleForgia P4 (Boss Fight: Elementale Anziano)](file:///home/jfs/Scrivania/00-Giochi_di_ruolo/00_dnd_3.5/00_Red_hand_of_Doom_GitHub/RumblingStone/07_il%20Portale%20Della%20Forgia%20Eterna/PortaleForgia-P4-PianoTerra-COMPLETO.md#8-boss-fight-elementale-della-terra-anziano-cr-13)
+> *   [→ Vai a PortaleForgia P4 (Boss Fight: Elementale Anziano)](../../../../07_il%20Portale%20Della%20Forgia%20Eterna/_ARCHIVIO/PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md#8-boss-fight-elementale-della-terra-anziano-cr-13)
 

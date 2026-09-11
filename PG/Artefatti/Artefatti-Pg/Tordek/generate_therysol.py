@@ -1,8 +1,17 @@
 import re
 import os
+from pathlib import Path
 
-SOURCE_FILE = "/home/jfs/Scrivania/00-Giochi_di_ruolo/00_dnd_3.5/00_Red_hand_of_Doom_GitHub/RumblingStone/Bestiario/png/Therysol/Therysol.md"
-OUTPUT_FILE = "/home/jfs/Scrivania/00-Giochi_di_ruolo/00_dnd_3.5/00_Red_hand_of_Doom_GitHub/RumblingStone/Bestiario/png/Therysol/Therysol.html"
+# La radice del repo, risalendo da PG/Artefatti/Artefatti-Pg/Tordek/.
+# Prima erano due path cablati alla scrivania di chi lo scrisse: lo script
+# partiva su un computer solo. Vedi README-tooling-locale.md.
+ROOT = Path(__file__).resolve().parents[4]
+
+# ⚠️ I due path erano rotti due volte: la macchina sbagliata e, sotto quella,
+# una cartella che nel frattempo si e' spostata di un livello. Renderli
+# relativi lo ha fatto vedere.
+SOURCE_FILE = str(ROOT / "Bestiario/png/Therysol/Therysol/Therysol.md")
+OUTPUT_FILE = str(ROOT / "Bestiario/png/Therysol/Therysol/Therysol.html")
 
 # HTML Template with Ice/Crystal Theme (Revised CSS)
 HTML_TEMPLATE = """<!DOCTYPE html>

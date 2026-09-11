@@ -75,7 +75,7 @@ Alla fine del punto 1, il toolkit esce da GPL-3 e la licenza è scelta dall'auto
   dipendenze di terzi restano sotto le loro licenze — tutte permissive e
   compatibili con la ridistribuzione (BSD-3 / MIT / BSD-2, ADR-0015);
 - i **profili di regole** hanno un regime proprio e non seguono la licenza del
-  motore: OGL 1.0a per 3.5 e PF1e, CC BY 4.0 per 5e ([ADR-0016](ADR-0016-profili-regole-multisistema.md));
+  motore: OGL 1.0a per 3.5 e PF1e, CC BY 4.0 per 5e ([ADR-0039](ADR-0039-profili-regole-multisistema.md));
 - la campagna **non** viene rilicenziata e **non** viene venduta. ADR-0005 resta
   in vigore su di essa senza modifiche.
 

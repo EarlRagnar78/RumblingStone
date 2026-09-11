@@ -49,6 +49,9 @@ jobs:
       - name: Documentazione contro filesystem — i percorsi citati esistono
         run: python scripts/validate_docs.py
 
+      - name: Link e percorsi locali — su tutti i sorgenti scritti a mano
+        run: python scripts/validate_docs.py --sorgenti
+
       - name: Decisioni aperte al DM — l'aggregato combacia coi piani
         run: python scripts/decisioni_dm.py --check
 

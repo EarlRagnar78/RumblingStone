@@ -7,7 +7,7 @@
 > toccarlo, non dedotto dal codice sei mesi dopo.
 > Decisione: [ADR-0030](adr/ADR-0030-server-mcp-sui-tool.md) ·
 > Lotto **G1** di [PIANO-CHIUSURA-CATENA-EDITORIALE](PIANO-CHIUSURA-CATENA-EDITORIALE.md) ·
-> Chiude la promessa di [ADR-0012](adr/ADR-0012-tool-manifest-fonte-di-verita.md).
+> Chiude la promessa di [ADR-0012](adr/ADR-0012-standard-ingegneria-tool-verificabile.md).
 
 ## 1. Il problema
 
@@ -57,7 +57,7 @@ trattata come tale. Sei difese, ognuna contro una cosa precisa.
 | **S-6** | **Timeout e tetto all'output** (120 s, 256 KiB) | un tool che appende, e un output che soffoca il contesto del client |
 
 **S-5 merita una riga in più**, perché è l'unica che non nasce da un manuale di
-sicurezza ma da questo repo: [ADR-0007](adr/ADR-0007-branch-per-gruppo.md) vuole
+sicurezza ma da questo repo: [ADR-0007](adr/ADR-0007-scritture-canone-triplo-vincolo.md) vuole
 che il canone si scriva su un branch di gruppo, dopo la sessione, con l'occhio
 del DM sopra. Cinque tool su cinquanta possono scriverlo — `session_wizard`,
 `state_apply`, `dm`, `new-campaign-group`, `import_html_module` — e quattro di

@@ -1,8 +1,11 @@
 import re
 import os
+from pathlib import Path
 
 # --- Configuration ---
-input_path = '/home/jfs/Scrivania/00-Giochi_di_ruolo/00_dnd_3.5/00_Red_hand_of_Doom_GitHub/RumblingStone/PG/Artefatti/Artefatti-Pg/Tordek/04_Bracieri_Gemelli_Scheda_PG_Fuoco.html'
+# La scheda sta accanto a questo script. Prima era un path cablato alla
+# scrivania di chi lo scrisse. Vedi README-tooling-locale.md.
+input_path = str(Path(__file__).resolve().parent / "04_Bracieri_Gemelli_Scheda_PG_Fuoco.html")
 output_path = input_path # Overwrite safely
 
 # --- New CSS ---

@@ -4,9 +4,9 @@
 **Data**: 2026-09-02
 **Decisione-fonte**: lotto **G1** di
 [PIANO-CHIUSURA-CATENA-EDITORIALE](../PIANO-CHIUSURA-CATENA-EDITORIALE.md)
-**Chiude la promessa di**: [ADR-0012](ADR-0012-tool-manifest-fonte-di-verita.md) ·
+**Chiude la promessa di**: [ADR-0012](ADR-0012-standard-ingegneria-tool-verificabile.md) ·
 **Progetto per esteso**: [`SPEC-SERVER-MCP.md`](../SPEC-SERVER-MCP.md) ·
-**Vincolata da**: [ADR-0007](ADR-0007-branch-per-gruppo.md)
+**Vincolata da**: [ADR-0007](ADR-0007-scritture-canone-triplo-vincolo.md)
 
 ## Contesto
 

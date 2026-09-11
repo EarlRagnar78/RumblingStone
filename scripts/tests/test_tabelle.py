@@ -277,16 +277,33 @@ class IlMirrorNonEUnaFonte(unittest.TestCase):
                         and isinstance(primo.value.value, str)):
                     docstring.add(id(primo.value))
             # Seconda esenzione, della stessa famiglia della prima: una stringa
-            # PASSATA a una funzione che riconosce il mirror non lo legge — gli
-            # chiede se lo e', ed e' il codice che serve a escluderlo. Trovata
-            # dal test su `validate_docs._is_generated_mirror(".claude/skills/x")`.
+            # PASSATA a una funzione che CLASSIFICA un percorso non lo legge —
+            # le chiede cos'e', ed e' il codice che serve a escluderlo. Trovata
+            # dal test su `validate_docs._is_generated_mirror(".claude/skills/x")`,
+            # allargata dal lotto 4b a `_e_generato`, che al mirror delega.
+            #
+            # I nomi si dichiarano: un'esenzione per forma del nome ("contiene
+            # mirror") prima o poi assolve qualcosa che legge davvero.
+            CLASSIFICATORI = {"_is_generated_mirror", "_e_generato"}
             interrogazioni = set()
             for nodo in ast.walk(albero):
                 if isinstance(nodo, ast.Call):
                     nome = getattr(nodo.func, "attr", None) or getattr(nodo.func, "id", "")
-                    if "mirror" in (nome or "").lower():
+                    if nome in CLASSIFICATORI:
                         for arg in nodo.args:
                             interrogazioni.add(id(arg))
+                        # La stringa puo' arrivare da un `for x in (...)`: se il
+                        # letterale sta nella tupla iterata e la variabile finisce
+                        # in una di queste chiamate, e' la stessa interrogazione.
+                        for arg in nodo.args:
+                            if isinstance(arg, ast.Name):
+                                for ciclo in ast.walk(albero):
+                                    if (isinstance(ciclo, ast.For)
+                                            and isinstance(ciclo.target, ast.Name)
+                                            and ciclo.target.id == arg.id
+                                            and isinstance(ciclo.iter, (ast.Tuple, ast.List))):
+                                        for el in ciclo.iter.elts:
+                                            interrogazioni.add(id(el))
             for nodo in ast.walk(albero):
                 if (isinstance(nodo, ast.Constant) and isinstance(nodo.value, str)
                         and MIRROR in nodo.value

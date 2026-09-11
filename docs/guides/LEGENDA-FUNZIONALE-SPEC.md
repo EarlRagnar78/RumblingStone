@@ -23,11 +23,12 @@
 > **Perché**: oggi la funzione di gioco di un simbolo vive in prosa dentro
 > un'etichetta e in `set` cablati in due script, **già divergenti**
 > (`docs/audit/AUDIT-LEVEL-DESIGN-E-INQUADRATURA.md` §2.1).
-> **Decisioni**: [ADR-0014](../../plans/adr/ADR-0014-legenda-funzionale-fonte-unica.md)
-> (fonte unica) · [ADR-0016](../../plans/adr/ADR-0016-profili-regole-multisistema.md)
-> (profili multi-sistema e confini di licenza).
-> **Attuazione**: lotti A1 e P3 di
-> [`PIANO-PRODOTTO-TOOLKIT-VENDIBILE`](../../plans/PIANO-PRODOTTO-TOOLKIT-VENDIBILE.md).
+> **Decisioni**: [ADR-0048](../../plans/adr/ADR-0048-legenda-funzionale-fonte-unica.md)
+> (fonte unica; era ADR-0014 nella #72) ·
+> [ADR-0039](../../plans/adr/ADR-0039-profili-regole-multisistema.md)
+> (profili multi-sistema e confini di licenza; era ADR-0016).
+> **Attuazione**: lotto 1.1 di
+> [`PIANO-VENDIBILITA`](../../plans/PIANO-VENDIBILITA.md).
 > **Data**: 2026-07-26 · **Stato**: specifica proposta, gate DM.
 
 ---

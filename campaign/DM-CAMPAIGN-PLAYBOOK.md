@@ -211,7 +211,7 @@ stampa la checklist rimanente.
 ### 4.1 Rinomina il draft
 
 ```bash
-cd /home/jfs/00_Antigravity_workspace/RumblingStone
+cd "$(git rev-parse --show-toplevel)"
 mv campaign/sessions/_draft-in-corso.md "campaign/sessions/$(date +%Y-%m-%d)_session-N.md"
 ```
 
@@ -473,7 +473,7 @@ Il materiale di preparazione (archi, PNG, skills, stat block, mappe) è **riutil
 ### 7.1 Backup del gruppo attuale
 
 ```bash
-cd /home/jfs/00_Antigravity_workspace/RumblingStone
+cd "$(git rev-parse --show-toplevel)"
 git checkout main
 
 # crea un branch dedicato al gruppo corrente (snapshot eterno)

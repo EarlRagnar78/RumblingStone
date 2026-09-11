@@ -192,13 +192,14 @@ riuscita non si sa descrivere è un lotto tagliato male.
 
 <!-- auto:begin key=decisioni-dm -->
 
-**7 aperte** · 3 chiuse — generato da `scripts/decisioni_dm.py --emit`, non si scrive a mano.
+**8 aperte** · 3 chiuse — generato da `scripts/decisioni_dm.py --emit`, non si scrive a mano.
 
 | # | Piano | Ambito | Domanda |
 |---|---|---|---|
 | **D2** | `RIPRESA-PR` | F3 | I diciotto raster si generano **sulla tua macchina** — quando? La fase si chiude senza, ma la catena resta non collaudata sul risultato vero |
 | **D3** | `RIPRESA-PR` | F4 · 4c | Le due domande di G1: il **−2 COS di Thorik** e il **Giorno di Marcia 19 vs ~15** |
 | **D4** | `RIPRESA-PR` | F4 | I **13 stemmi e mappe** del `PALIO-BOOKLET` che la #99 lascia in sospeso: si producono o si tolgono i riferimenti? |
+| **D11** | `RIPRESA-PR` | F4 · 4b | **L'ADR ex-0018 della #72 si recupera?** Decide che, *se e quando* si pubblica, si pubblica un **AP originale autonomo**, mai un'espansione di RHoD — e porta con sé il **perimetro della v1** (archi 07+08 dentro, 195.739 parole dell'arco 09 fuori, arco 06 da riscrivere, `campaign/` privato per sempre), il vincolo sui marchi, e la regola che *rinominare non basta*. ⚠️ **La conclusione ce l'hai già** (`PIANO-VENDIBILITA` C1 e §5 linea 4); quello che non esiste da nessuna parte è **la misura per arco** e il perimetro. 🔴 **Due cose da sapere prima di dire sì**: l'ADR è in stato **«proposta — gate: decisione DM + verifica di un avvocato IP»**, quindi recuperarlo apre una domanda, non la chiude; e l'audit su cui poggia (`AUDIT-DERIVAZIONE-IP-CAMPAGNA.md`) **non è nel repo**, quindi andrebbe rifatto o il perimetro resta un'asserzione senza prova. 🔎 Rimisurato oggi, il debito è **cresciuto**: `Belkram` era in 49 file, ora **82**; `Moradin` da 1.502 a **1.680** occorrenze; e le fonti WotC dichiarate in `campaign/lore/campaign-history.md` compaiono anche **dentro le skill**, che l'ADR non aveva guardato |
 | **D7** | `RICERCA-MESTIERE` | metro di paragone | Quali due o tre **mappe pubblicate sono lo standard** che vuoi raggiungere? Senza un riferimento scelto da te, l'audit misura contro un'idea mia di «mappa buona» — **bloccante** |
 | **D8** | `RICERCA-MESTIERE` | stampa | Il tavolo stampa **a colori o in bianco e nero**? Cambia il peso di A1.6 e A1.7 da «bello avere» a bloccante |
 | **D9** | `RICERCA-MESTIERE` | doppia versione | DM/giocatori: la vuoi **su tutte le mappe** o solo sulle hero map? Oggi ce l'ha **una** |

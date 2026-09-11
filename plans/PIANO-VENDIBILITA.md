@@ -181,12 +181,17 @@ Le due catene di lavoro sono **indipendenti**: la provenienza serve prima di
 
 ### Fase 1 — Il dominio e la legenda unica
 
-- **⬜ 1.1 — La legenda come fonte unica** (ADR-0039). Recuperare
-  `LEGENDA-FUNZIONALE-SPEC.md` dalla PR #72 (283 righe, 62 simboli). ⚠️ Chiude un
-  difetto **ancora aperto**: `SYMBOLS` del renderer e `WALL_SYMS` dell'export
-  UVTT sono due tabelle separate, e l'SVG stampato e la scena Foundry non
-  concordano su cosa sia un muro. *Accettazione*: `legend/single-source` fallisce
-  se un consumatore usa un set proprio.
+- **⬜ 1.1 — La legenda come fonte unica**
+  ([ADR-0048](adr/ADR-0048-legenda-funzionale-fonte-unica.md), era ADR-0014
+  della #72). La spec è **già in repo** dal 2026-09-04
+  (`docs/guides/LEGENDA-FUNZIONALE-SPEC.md`, 62 simboli): resta da fare
+  l'attuazione, cioè `scripts/legend.yaml` e i consumatori che ne derivano.
+  ⚠️ Chiude un difetto **ancora aperto**: `SYMBOLS` del renderer e `WALL_SYMS`
+  dell'export UVTT sono due tabelle separate, e l'SVG stampato e la scena
+  Foundry non concordano su cosa sia un muro. 🔴 **Il costo del ritardo è
+  misurato**: ADR-0042 e ADR-0043 hanno rattoppato due sintomi di questa stessa
+  causa, uno per volta, con due ADR separati. *Accettazione*:
+  `legend/single-source` fallisce se un consumatore usa un set proprio.
 - **⬜ 1.2 — I tre profili di regole**. ⚠️ `move_cost: 4` di PF1e è l'unico valore
   della specifica mai verificato sul PRD: da confermare prima di rilasciare quel
   profilo. *Accettazione*: `rules/profile-incomplete` è **error**;

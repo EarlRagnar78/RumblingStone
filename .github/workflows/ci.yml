@@ -59,6 +59,11 @@ jobs:
         if: github.event_name == 'pull_request'
         run: python scripts/check_plans_discipline.py --base "origin/${{ github.base_ref }}"
 
+      - name: Legenda — la fonte e' una sola (ADR-0048)
+        run: |
+          python scripts/build_legend.py --check
+          python scripts/build_legenda_skill.py --check
+
       - name: Validate generated maps (well-formed, in-sync SVGs)
         run: python scripts/validate_maps.py
 

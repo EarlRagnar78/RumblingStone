@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 59,
+  "tool_count": 61,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -431,6 +431,77 @@
         "network": false
       },
       "idempotent": true
+    },
+    {
+      "id": "build_legend",
+      "path": "scripts/build_legend.py",
+      "category": "B-maps-pipeline",
+      "language": "python",
+      "invocation": "python3 scripts/build_legend.py",
+      "summary": "Deriva scripts/legend.json dalla fonte unica scritta a mano scripts/legend.yaml (ADR-0048). Il YAML porta i commenti — la memoria di perche' una tenda e' un muro sta accanto al dato — ma pyyaml e' un debito dichiarato (ADR-0037) e non puo' entrare nel percorso di rendering: il generatore lo usa, i consumatori leggono il JSON con json di stdlib.",
+      "use_case": "«Ho cambiato un simbolo nella legenda: come lo faccio arrivare a renderer, export UVTT, import e catena Blender tutti insieme?»",
+      "stability": "stable",
+      "stdlib_only": false,
+      "external_bins": [
+        "python3"
+      ],
+      "external_deps": [
+        "pyyaml"
+      ],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Non scrive: esce 1 se legend.json e' fuori sincronia."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "scripts/legend.yaml",
+          "kind": "yaml",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "scripts/legend.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "fuori sincronia (--check)",
+        "2": "pyyaml mancante"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Ordine del sorgente, chiavi in ordine dichiarato."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false,
+        "notes": ""
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/build_legend.py --check",
+      "tests": [
+        "scripts/tests/test_legenda_fonte_unica.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0048-legenda-funzionale-fonte-unica.md"
+      ]
     },
     {
       "id": "compile_map_json",
@@ -3573,6 +3644,74 @@
       "tests": [],
       "docs": [
         "scripts/README.md"
+      ]
+    },
+    {
+      "id": "build_legenda_skill",
+      "path": "scripts/build_legenda_skill.py",
+      "category": "F-skill-pipeline",
+      "language": "python",
+      "invocation": "python3 scripts/build_legenda_skill.py",
+      "summary": "Genera le tabelle di skills/rumblingstone-mapmaking/references/legenda-universale.md dalla fonte unica, fra i marcatori legenda:auto-begin/end. Era una copia a mano: le 63 voci coincidevano, ma niente lo garantiva, e un blocco di nota infilato fra le righe spezzava gia' una tabella in due.",
+      "use_case": "«La pagina della skill che i giocatori e gli agenti leggono dice ancora la verita' su cosa sia un muro?»",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [
+        "python3"
+      ],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Non scrive: esce 1 se la pagina e' fuori sincronia."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "scripts/legend.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "skills/rumblingstone-mapmaking/references/legenda-universale.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "fuori sincronia (--check)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false,
+        "notes": "Riscrive solo il tratto fra i marcatori; la prosa intorno resta a mano."
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/build_legenda_skill.py --check",
+      "tests": [
+        "scripts/tests/test_legenda_fonte_unica.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0048-legenda-funzionale-fonte-unica.md"
       ]
     },
     {

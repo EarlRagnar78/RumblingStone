@@ -5,9 +5,9 @@
 
 > Vista umana del contratto machine-readable [`registry.json`](registry.json). Fonte di verita': `scripts/tools.manifest.json`.
 
-**59 tool** · convenzione exit code `0=ok · 1=errore-dominio · 2=errore-uso`.
+**61 tool** · convenzione exit code `0=ok · 1=errore-dominio · 2=errore-uso`.
 
-**Da un client MCP** ([`mcp-tools.json`](mcp-tools.json), [ADR-0030](../../plans/adr/ADR-0030-server-mcp-sui-tool.md)): `python3 scripts/mcp_server.py` — JSON-RPC su stdio, catalogo preso da questo stesso manifest. È **read-only per difetto**: i tool marcati «Canone» qui sotto sono elencati ma non partono senza `--allow-write`, perché il canone si scrive su un branch di gruppo con l'occhio del DM sopra (ADR-0007). Le voci esposte sono 54: le cartelle di `converters/` non sono programmi e non compaiono.
+**Da un client MCP** ([`mcp-tools.json`](mcp-tools.json), [ADR-0030](../../plans/adr/ADR-0030-server-mcp-sui-tool.md)): `python3 scripts/mcp_server.py` — JSON-RPC su stdio, catalogo preso da questo stesso manifest. È **read-only per difetto**: i tool marcati «Canone» qui sotto sono elencati ma non partono senza `--allow-write`, perché il canone si scrive su un branch di gruppo con l'occhio del DM sopra (ADR-0007). Le voci esposte sono 56: le cartelle di `converters/` non sono programmi e non compaiono.
 
 ## A · Session Prep (incontri · mappe · tesoro)
 
@@ -22,6 +22,7 @@
 | Tool | Scopo | Parametri | Determ. | Canone | Git | Exit |
 |---|---|---|:--:|:--:|:--:|---|
 | `costruisci_mappa.py` | «Che cosa gira dentro Blender quando chiedo il render di una mappa, e perché questo file non si lancia a mano?»<br>Lo script che gira DENTRO Blender: dal piano di scena costruisce i solidi, la camera e il lock di luce, e rende. Non si lancia a mano — il driver e' render_map_blender.py, dove sta tutta la logica provabile senza GPU. | **--piano** | — | — | — | `0` · `1` |
+| `build_legend.py` | «Ho cambiato un simbolo nella legenda: come lo faccio arrivare a renderer, export UVTT, import e catena Blender tutti insieme?»<br>Deriva scripts/legend.json dalla fonte unica scritta a mano scripts/legend.yaml (ADR-0048). Il YAML porta i commenti — la memoria di perche' una tenda e' un muro sta accanto al dato — ma pyyaml e' un debito dichiarato (ADR-0037) e non puo' entrare nel percorso di rendering: il generatore lo usa, i consumatori leggono il JSON con json di stdlib. | --check | ✔ | — | — | `0` · `1` · `2` |
 | `compile_map_json.py` | «Ho la mappa descritta in JSON: come diventa un master valido senza che io conti i quadretti a mano?»<br>Modalita' 3: compila un contratto JSON rigido in un master griglia-emoji, validando geometria e simboli e rigettando input errati. | spec · -o/--output · --validate-only | ✔ | — | — | `0` · `1` · `2` |
 | `export_map_png.py` | «L'SVG è bello a schermo, ma devo stamparlo o caricarlo su Roll20: come lo rasterizzo senza perdere i tratti?»<br>Rasterizza un SVG renderizzato in PNG hi-res via Inkscape o Chromium headless (stampa, VTT, input hero-map ComfyUI). | **svg** · -o/--out · --scale · --renderer · --browser · --inkscape | — | — | — | `0` · `1` |
 | `export_uvtt.py` | «Giochiamo su Foundry stasera: come porto questa mappa dentro con muri, porte e luci già a posto?»<br>Esporta un master griglia-emoji in file Universal VTT (.uvtt/.dd2vtt) con muri, porte e luci per import nativo in Foundry/Roll20. | file · -o/--output · --map · --ppg · --ext | ✔ | — | — | `0` · `1` · `2` |
@@ -73,6 +74,7 @@
 | Tool | Scopo | Parametri | Determ. | Canone | Git | Exit |
 |---|---|---|:--:|:--:|:--:|---|
 | `build-skills.sh` | «Come faccio arrivare le skill aggiornate all'agente che uso, nel formato che vuole lui?»<br>Costruisce i pacchetti skill per-agente (compact.md/structured.yaml/machine.json) e li deploya in ~/.<agent>/skills/. | --no-deploy · --skill · --measure · --dry-run | ✔ | — | — | `0` · `1` |
+| `build_legenda_skill.py` | «La pagina della skill che i giocatori e gli agenti leggono dice ancora la verita' su cosa sia un muro?»<br>Genera le tabelle di skills/rumblingstone-mapmaking/references/legenda-universale.md dalla fonte unica, fra i marcatori legenda:auto-begin/end. Era una copia a mano: le 63 voci coincidevano, ma niente lo garantiva, e un blocco di nota infilato fra le righe spezzava gia' una tabella in due. | --check | ✔ | — | — | `0` · `1` |
 | `compress_skills.py` | «Questa skill è lunga e mangia contesto: quanto si stringe senza perdere quello che dice?»<br>Comprime le skill per gli agenti (riduzione token), producendo compact.md/structured.yaml/machine.json. | **--input/-i** · **--output/-o** · --measure/-m | ✔ | — | — | `0` · `1` |
 | `index_skills.py` | «L'agente deve pescare solo il pezzo di skill che gli serve: come glielo indicizzo?»<br>Genera index.json per una skill compressa (per retrieval selettivo). | **--input/-i** · **--build/-b** · **--output/-o** | ✔ | — | — | `0` · `2` |
 | `measure_tokens.py` | «Quanto contesto costano le skill oggi, in numeri e non a occhio?»<br>Misura la dimensione in token delle skill (tiktoken se disponibile, altrimenti chars/4). | --tokenizer · --json | ✔ | — | — | `0` |

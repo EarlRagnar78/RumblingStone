@@ -68,6 +68,8 @@ def _carica(nome: str, percorso: Path):
 
 cmj = _carica("compile_map_json", ROOT / "scripts" / "compile_map_json.py")
 rms = _carica("render_map_svg", ROOT / "scripts" / "render_map_svg.py")
+sys.path.insert(0, str(ROOT / "scripts"))
+from dmcore import legenda  # noqa: E402
 
 INSTALLA = """\
 Il binario «blender» non è nel PATH. È GPL e gira anche headless:
@@ -87,42 +89,24 @@ riparte da lì senza rifare niente.
 # da 3. Zero = superficie piatta (si vede il colore, non un volume); negativo =
 # scavato. Sono i valori che rendono leggibile una vista dall'alto: contano i
 # RAPPORTI fra le altezze, non la loro esattezza archeologica.
-ALTEZZE: dict[str, float] = {
-    # scavi
-    "🕳": -2.5,   # voragine
-    "🟦": -0.6,   # acqua profonda
-    "🌊": -0.3,   # acqua corrente
-    # superfici piatte: restano a zero e parlano col colore
-    "🟩": 0.0, "🟫": 0.0, "🟨": 0.0, "⬜": 0.0, "🟧": 0.0, "🟥": 0.0,
-    # rilievi bassi
-    "🌿": 0.4, "🪨": 0.9, "❄": 0.1, "🕸": 0.6,
-    # arredo e ingombri
-    "📦": 1.1, "🏺": 0.9, "🛏": 0.5, "🪓": 1.6, "⚰": 0.8, "🏮": 1.4, "🗿": 2.2,
-    # strutture
-    "⬛": 3.2,    # edificio, tenda, dais
-    "🏰": 4.0,    # muro / roccia solida
-    "🏛": 5.5,    # edificio / tempio
-    "🗼": 9.0,    # torre
-    "🟪": 5.0,    # pilastro
-    "⛰": 7.0,    # creste rocciose
-    "🌲": 5.0,    # chioma
-    "🌳": 5.5,
-    "🌉": 0.8,    # ponte: impalcato appena sopra il piano
-}
-# Le porte sono un varco, non un volume: se fossero alte quanto il muro, la
-# pianta perderebbe l'unica informazione che una porta porta.
-PIATTI = {"🚪", "⬇", "🎯", "⭐", "✨", "⚔", "🖼"}
+# ⚠️ Le tre tabelle indicizzate per simbolo — altezze, piatti, texture — NON
+# si dichiarano qui. Dal 2026-09-12 la fonte e' `scripts/legend.yaml`
+# (ADR-0048), che le porta come `render.altezza_m`, `render.piatto` e
+# `render.texture`.
+#
+# 🐛 Le ha trovate il gate `legend/single-source` al primo uso: non erano
+# nell'inventario di nessuno, e una portava un commento fossile — «edificio,
+# tenda, dais» accanto a ⬛, il significato di PRIMA di ADR-0042. ⛺ e 🔳 non
+# hanno ancora un'altezza propria e si estrudono al default: terzo sintomo
+# della stessa causa, decisione D2 di plans/PIANO-VENDIBILITA.md §8.
+ALTEZZE: dict[str, float] = dict(legenda.altezze())
+PIATTI = set(legenda.piatti())
 ALTEZZA_ICONA_DEFAULT = 0.6
 
 # Chiave di texture per famiglia di superficie. NON è uno slug di Poly Haven:
 # è il nome della cartella che il DM riempie con l'asset che sceglie, verificando
 # la licenza del singolo file. Vedi scripts/blender/texture/README.md.
-TEXTURE: dict[str, str] = {
-    "🟩": "erba", "🌿": "erba", "🌲": "fogliame", "🌳": "fogliame",
-    "🟫": "terra-battuta", "🟨": "sabbia", "⬜": "pavimento",
-    "🏰": "muratura", "⬛": "legno", "🏛": "pietra-chiara", "🟪": "pietra-chiara",
-    "⛰": "roccia", "🪨": "roccia", "🟦": "acqua", "🌊": "acqua",
-}
+TEXTURE: dict[str, str] = dict(legenda.texture())
 
 # Il LOCK DI LUCE del set (skill rumblingstone-art-direction §4): dichiarato una
 # volta e riusato per tutte le mappe di un modulo. Luci che arrivano da parti

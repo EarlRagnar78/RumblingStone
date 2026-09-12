@@ -54,6 +54,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from dmcore import legenda  # noqa: E402
 from dmcore.testo import slug  # noqa: E402
 
 
@@ -80,93 +81,25 @@ INK = "#3b2e1e"         # dark ink
 INK_SOFT = "#7a6a50"    # faded ink
 
 # ---------------------------------------------------------------------------
-# Symbol table — universal legend of the repo
-# (SUPPLEMENTO-P1C drow maps + Ultra-Clear maps ARC-07/08).
-# mode "fill":   textured terrain square ("pat" = procedural pattern id)
-# mode "unit":   colored token circle (radial gradient + ink ring)
-# mode "icon":   illustrated in-house prop ("prop" = symbol id) anchored by
-#                a ground blot; the underlying terrain is inherited from the
-#                nearest terrain cell. Icons without a prop (local symbols)
-#                fall back to the emoji glyph.
+# Symbol table — la legenda universale del repo.
+#
+# ⚠️ NON si dichiara qui. Dal 2026-09-12 (ADR-0048) la fonte e' una sola,
+# `scripts/legend.yaml`, e questo modulo la legge come tutti gli altri. Prima
+# la stessa informazione viveva in cinque posti, e le due volte in cui erano
+# divergiti era costato un ADR per volta (ADR-0042, ADR-0043).
+#
+# Per aggiungere o cambiare un simbolo: si modifica `scripts/legend.yaml` e si
+# rigenera con `python3 scripts/build_legend.py`. Il gate
+# `legend/single-source` boccia chi ridichiara un set proprio.
 # ---------------------------------------------------------------------------
-SYMBOLS: dict[str, dict] = {
-    # terrain (textured fills)
-    "🌲": {"mode": "fill", "pat": "t_forest", "fill": "#55754d", "it": "Foresta densa (Furtività +5, copertura)"},
-    "🌿": {"mode": "fill", "pat": "t_veg", "fill": "#9db97b", "it": "Vegetazione bassa"},
-    "🟩": {"mode": "fill", "pat": "t_grass", "fill": "#b3c489", "it": "Pianura / area aperta"},
-    "🟫": {"mode": "fill", "pat": "t_earth", "fill": "#b08d68", "it": "Terra battuta / sentiero"},
-    "🟨": {"mode": "fill", "pat": "t_sand", "fill": "#e4cf9c", "it": "Sabbia / area segnalata"},
-    "🟧": {"mode": "fill", "pat": "t_lava", "fill": "#d59650", "it": "Lava raffreddata / pericolo"},
-    "🟥": {"mode": "fill", "pat": "t_lethal", "fill": "#b94a3c", "it": "Zona letale"},
-    "🟦": {"mode": "fill", "pat": "t_deep", "fill": "#4c7ba3", "it": "Acqua profonda"},
-    "🌊": {"mode": "fill", "pat": "t_water", "fill": "#6aa5c4", "it": "Acqua / corrente"},
-    "⬛": {"mode": "fill", "pat": "t_struct", "fill": "#6b5b47",
-           "it": "Edificio / corpo di fabbrica (muratura piena: blocca vista e movimento)"},
-    "🔳": {"mode": "fill", "pat": "t_dais", "fill": "#b9a884",
-           "it": "Dais / pedana rialzata (ci si sale sopra: NON e' un muro)"},
-    "⬜": {"mode": "fill", "pat": "t_floor", "fill": "#d8cdb4", "it": "Pavimento lavorato"},
-    "🏰": {"mode": "fill", "pat": "t_wall", "fill": "#3f3931", "it": "Muro / roccia solida"},
-    "🟪": {"mode": "fill", "pat": "t_pillar", "fill": "#8a67b5", "it": "Pilastro / mithral"},
-    "⛰": {"mode": "fill", "pat": "t_mountain", "fill": "#8d8271", "it": "Montagne / creste rocciose"},
-    "🪨": {"mode": "icon", "prop": "pr_rocks", "fill": "#ced4da", "it": "Rocce/macerie (copertura +4 CA, terreno difficile)"},
-    "🔥": {"mode": "icon", "prop": "pr_fire", "fill": "#ffb4a2", "it": "Fuoco (1d6 fuoco/round)"},
-    "💥": {"mode": "icon", "prop": "pr_boom", "fill": "#ffb4a2", "it": "Fiamme / esplosione"},
-    "💀": {"mode": "icon", "prop": "pr_skull", "fill": "#e9ecef", "it": "Fossa / trappola"},
-    "🕳": {"mode": "icon", "prop": "pr_pit", "fill": "#495057", "it": "Voragine / buco"},
-    # units (tokens)
-    "🔵": {"mode": "unit", "fill": "#1d6fd8", "it": "PG / alleati"},
-    "🔴": {"mode": "unit", "fill": "#d62828", "it": "Nemico standard"},
-    "⚫": {"mode": "unit", "fill": "#212529", "it": "Boss / comandante"},
-    "🟡": {"mode": "unit", "fill": "#f4b400", "it": "Incantatore nemico"},
-    "🟢": {"mode": "unit", "fill": "#2b9348", "it": "Creatura evocata / bestia"},
-    "🟣": {"mode": "unit", "fill": "#9d4edd", "it": "Creatura speciale"},
-    # specials (illustrated props)
-    "🌳": {"mode": "icon", "prop": "pr_tree", "fill": "#b7e4c7", "it": "Treant / creatura vegetale"},
-    "⭐": {"mode": "icon", "prop": "pr_star", "fill": "#fff3b0", "it": "Obiettivo primario"},
-    "🚪": {"mode": "icon", "prop": "pr_door", "fill": "#e6ccb2", "it": "Porta / ingresso"},
-    "🗼": {"mode": "icon", "prop": "pr_tower", "fill": "#dee2e6", "it": "Torre / struttura alta"},
-    "🏺": {"mode": "icon", "prop": "pr_urn", "fill": "#f8f9fa", "it": "Contenitore / bottino"},
-    "🔔": {"mode": "icon", "prop": "pr_bell", "fill": "#fff3b0", "it": "Allarme / trappola sonora"},
-    "💎": {"mode": "icon", "prop": "pr_gem", "fill": "#caf0f8", "it": "Tesoro / oggetto magico"},
-    "👑": {"mode": "icon", "prop": "pr_crown", "fill": "#fff3b0", "it": "Trono / Corona"},
-    "🏮": {"mode": "icon", "prop": "pr_brazier", "fill": "#ffd166", "it": "Braciere / fonte di luce"},
-    "🪓": {"mode": "icon", "prop": "pr_rack", "fill": "#e9ecef", "it": "Rastrelliera / armi"},
-    "🛏": {"mode": "icon", "prop": "pr_bed", "fill": "#e9ecef", "it": "Giaciglio"},
-    "📦": {"mode": "icon", "prop": "pr_crate", "fill": "#e6ccb2", "it": "Casse / rifornimenti"},
-    "🐴": {"mode": "icon", "prop": "pr_horse", "fill": "#e6ccb2", "it": "Cavalcature"},
-    "🕸": {"mode": "icon", "prop": "pr_web", "fill": "#dee2e6", "it": "Ragnatele (terreno difficile)"},
-    "❄": {"mode": "icon", "prop": "pr_ice", "fill": "#caf0f8", "it": "Ghiaccio"},
-    "⚡": {"mode": "icon", "prop": "pr_bolt", "fill": "#fff3b0", "it": "Energia / pericolo magico"},
-    "🌀": {"mode": "icon", "prop": "pr_portal", "fill": "#caf0f8", "it": "Portale / vortice"},
-    # markers and props promoted from the arcs' local legends
-    "⬇": {"mode": "icon", "prop": "pr_down", "fill": "#dee2e6", "it": "Discesa / pendenza"},
-    "🏛": {"mode": "icon", "prop": "pr_temple", "fill": "#dee2e6", "it": "Edificio / tempio"},
-    "🌋": {"mode": "icon", "prop": "pr_volcano", "fill": "#ffb4a2", "it": "Bocca vulcanica / fumarola"},
-    "🗿": {"mode": "icon", "prop": "pr_statue", "fill": "#dee2e6", "it": "Statua"},
-    "🌉": {"mode": "icon", "prop": "pr_bridge", "fill": "#e6ccb2", "it": "Ponte / passerella"},
-    "🎯": {"mode": "icon", "prop": "pr_target", "fill": "#fff3b0", "it": "Obiettivo tattico"},
-    "🖼": {"mode": "icon", "prop": "pr_mural", "fill": "#dee2e6", "it": "Affresco / quadro"},
-    "✨": {"mode": "icon", "prop": "pr_sparkle", "fill": "#fff3b0", "it": "Effetto magico attivo"},
-    "⚔": {"mode": "icon", "prop": "pr_swords", "fill": "#dee2e6", "it": "Zona di scontro"},
-    # dungeon & wilderness dressing (available to every map master)
-    "⚰": {"mode": "icon", "prop": "pr_coffin", "fill": "#e6ccb2", "it": "Sarcofago / bara"},
-    "🛢": {"mode": "icon", "prop": "pr_barrel", "fill": "#e6ccb2", "it": "Barile"},
-    "🪜": {"mode": "icon", "prop": "pr_stairs", "fill": "#dee2e6", "it": "Scale / rampa"},
-    "🦴": {"mode": "icon", "prop": "pr_bones", "fill": "#e9ecef", "it": "Ossa / resti"},
-    "🍄": {"mode": "icon", "prop": "pr_mushrooms", "fill": "#ffb4a2", "it": "Funghi giganti"},
-    "🕯": {"mode": "icon", "prop": "pr_candles", "fill": "#fff3b0", "it": "Candele / rituale"},
-    "🌾": {"mode": "icon", "prop": "pr_bush", "fill": "#b7e4c7", "it": "Erba alta / cespugli (occultamento)"},
-    "⛺": {"mode": "icon", "prop": "pr_tent", "fill": "#e6ccb2",
-           "it": "Tenda (telo teso: blocca la vista, si abbatte)"},
-    "🔮": {"mode": "icon", "prop": "pr_crystal", "fill": "#caf0f8", "it": "Cristalli / altare magico"},
-    "🪑": {"mode": "icon", "prop": "pr_table", "fill": "#e6ccb2", "it": "Tavolo e sedie"},
-    "🧱": {"mode": "icon", "prop": "pr_lowwall", "fill": "#e6ccb2", "it": "Muretto / copertura bassa (+4 CA)"},
-}
+SYMBOLS: dict[str, dict] = dict(legenda.simboli())
 DEFAULT_TERRAIN = {"mode": "fill", "fill": PAPER, "it": ""}
 
 # walls, buildings, pillars and massifs cast a shadow and get the heavy
-# ink outline (plus a light grid on top, so squares stay countable)
-HEAVY_PATS = {"t_wall", "t_struct", "t_pillar", "t_mountain"}
+# ink outline (plus a light grid on top, so squares stay countable).
+# Indicizzato per pattern e non per simbolo perche' e' cosi' che il ciclo di
+# pittura lo interroga; il dato sta in `legend.yaml` come `render.heavy`.
+HEAVY_PATS = set(legenda.pattern_pesanti())
 
 # paint order: backgrounds first, solids last (small overlaps hide seams)
 Z_ORDER = ["t_grass", "t_veg", "t_sand", "t_earth", "t_floor", "t_lava",

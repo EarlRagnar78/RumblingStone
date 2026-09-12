@@ -38,7 +38,8 @@ are **generated artifacts — never hand-edit them**. CI
    `python3 scripts/render_map_svg.py <file.md>`
 2. Scale is **1,5 m/quadretto**, declared in the file header.
 3. Use ONLY the universal legend symbols (`references/legenda-universale.md`);
-   the `SYMBOLS` table in `scripts/render_map_svg.py` is the source of truth.
+   `scripts/legend.yaml` is the source of truth (ADR-0048): renderer, UVTT
+   export, importer and the Blender chain all derive from it.
    Local extra symbols render as raw emoji and must be declared in the file.
 4. Every map ships with the three companion blocks (Ambiente / Tattiche /
    Evoluzione) per `campaign/templates/mappa-tattica-template.md`.

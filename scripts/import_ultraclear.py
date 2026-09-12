@@ -63,13 +63,17 @@ SCHEMA_VERSION = "1.0"
 DEFAULT_BASE_TERRAIN = "🟩"
 DEFAULT_SCALE = 1.5
 
+from dmcore import legenda  # noqa: E402
+
 SYMBOLS = rms.SYMBOLS
 FILL_SYMS = {s for s, d in SYMBOLS.items() if d.get("mode") == "fill"}
 UNIT_SYMS = {s for s, d in SYMBOLS.items() if d.get("mode") == "unit"}
 ICON_SYMS = {s for s, d in SYMBOLS.items() if d.get("mode") == "icon"}
 
 # icons that read as environmental hazards rather than built structures
-HAZARD_SYMS = {"🔥", "💥", "💀", "🕳", "⚡", "❄", "🕸"}
+# ⚠️ Non si dichiara qui: dal 2026-09-12 la fonte e' `scripts/legend.yaml`
+# (ADR-0048), e il gate `legend/single-source` boccia chi ridichiara un set.
+HAZARD_SYMS = set(legenda.pericoli())
 
 # keyword → (role, symbol) for reconstructing geometry from a coordinate table
 # (used only when the grid is unusable and the table is authoritative). Ordered:

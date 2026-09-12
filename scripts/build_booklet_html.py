@@ -56,6 +56,9 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from dmcore.testo import riscala_link  # noqa: E402
+
 # ---------------------------------------------------------------------------
 # Lo stile «pergamena» canonico (identico all'anteprima visiva e all'artefatto
 # del Palio). Se lo tocchi, tocchi TUTTI i booklet futuri: fallo di proposito.
@@ -637,18 +640,30 @@ def build_hb(manifest_path: Path, out_override: Path | None = None) -> Path:
         f"{{{{banner {mf.get('banner', 'BOOKLET')}}}}}\n",
         f"{{{{footnote\n  {mf.get('meta', '')}\n}}}}\n",
     ]
+    # La destinazione si calcola PRIMA di incorporare i capitoli: serve a
+    # riscalare i loro link relativi. Un capitolo in `07_arco/X.md` che linka
+    # `../plans/adr/Y.md` punta alla radice del repo; incorporato alla lettera
+    # in `07_arco/homebrew/sessione/BOOKLET.hb.md` — due livelli piu' in basso —
+    # lo stesso link finisce su `07_arco/homebrew/plans/adr/Y.md`, che non
+    # esiste. Erano **41 link rotti su 44** in otto booklet (lotto E1).
+    html_out = out_override or (base / mf.get("out", manifest_path.stem.replace(".manifest", "") + ".html"))
+    stem = html_out.name[:-5] if html_out.name.endswith(".html") else html_out.name
+    out = html_out.parent / (stem + ".hb.md")
+    dest = out.resolve().parent
+
+    def _incorpora(sorgente: Path) -> str:
+        return riscala_link(sorgente.read_text(encoding="utf-8"),
+                            sorgente.resolve().parent, dest)
+
     if mf.get("intro_md"):
-        parts += ["\\page\n", (base / mf["intro_md"]).read_text(encoding="utf-8")]
+        parts += ["\\page\n", _incorpora(base / mf["intro_md"])]
     for ch in mf["chapters"]:
         parts.append("\n\\page\n")
         parts.append(f"# {ch['title']}\n")
         tag = HB_TAGS.get(ch.get("tag", ""))
         if tag:
             parts.append(tag + "\n")
-        parts.append((base / ch["file"]).read_text(encoding="utf-8"))
-    html_out = out_override or (base / mf.get("out", manifest_path.stem.replace(".manifest", "") + ".html"))
-    stem = html_out.name[:-5] if html_out.name.endswith(".html") else html_out.name
-    out = html_out.parent / (stem + ".hb.md")
+        parts.append(_incorpora(base / ch["file"]))
     out.write_text("\n".join(parts) + "\n", encoding="utf-8")
     return out
 

@@ -156,7 +156,7 @@ tutti: è il pezzo che fa scattare il tavolo nei primi dieci minuti.
 
 ## 1 · VANNA CORSARI — il Capitano
 
-![Ritratto](ALLEGATI/immagini/web/ritratto-vanna.jpg)
+![Ritratto](../ALLEGATI/immagini/web/ritratto-vanna.jpg)
 
 *Ritratto: `ALLEGATI/tavole/ritratto-vanna.svg`*
 
@@ -181,7 +181,7 @@ porta, dove ci sono i pollici di quarant'anni di Capitani.
 
 ## 2 · NOCCA PETTIROSSO — il Fantino
 
-![Ritratto](ALLEGATI/immagini/web/ritratto-nocca.jpg)
+![Ritratto](../ALLEGATI/immagini/web/ritratto-nocca.jpg)
 
 *Ritratto: `ALLEGATI/tavole/ritratto-nocca.svg`*
 
@@ -207,7 +207,7 @@ le riprendi fino a dopo la Corsa.
 
 ## 3 · OMBRA DEI SALICI — lo Stalliere
 
-![Ritratto](ALLEGATI/immagini/web/ritratto-ombra.jpg)
+![Ritratto](../ALLEGATI/immagini/web/ritratto-ombra.jpg)
 
 *Ritratto: `ALLEGATI/tavole/ritratto-ombra.svg`*
 
@@ -231,7 +231,7 @@ c'è, e speri che non tintinni.
 
 ## 4 · TESIO MARCA — il Tenente
 
-![Ritratto](ALLEGATI/immagini/web/ritratto-tesio.jpg)
+![Ritratto](../ALLEGATI/immagini/web/ritratto-tesio.jpg)
 
 *Ritratto: `ALLEGATI/tavole/ritratto-tesio.svg`*
 
@@ -255,7 +255,7 @@ sai e che gli altri non sanno. **La scegli tu**, adesso.
 
 ## 5 · BERENICE «BRUMA» SALLO — l'Alfiere
 
-![Ritratto](ALLEGATI/immagini/web/ritratto-berenice.jpg)
+![Ritratto](../ALLEGATI/immagini/web/ritratto-berenice.jpg)
 
 *Ritratto: `ALLEGATI/tavole/ritratto-berenice.svg`*
 
@@ -280,7 +280,7 @@ stanza che è troppo piccola per farla girare.
 
 ## 6 · FRA' MELCHIO VANZI — il Vicario
 
-![Ritratto](ALLEGATI/immagini/web/ritratto-melchio.jpg)
+![Ritratto](../ALLEGATI/immagini/web/ritratto-melchio.jpg)
 
 *Ritratto: `ALLEGATI/tavole/ritratto-melchio.svg`*
 

@@ -119,6 +119,55 @@ class TestLinkDentroBacktick(unittest.TestCase):
         self.assertEqual(len(vd.senza_code_span(riga)), len(riga))
 
 
+class TestLinkDentroCommentiHtml(unittest.TestCase):
+    """Lotto E1: terza famiglia di falsi positivi, stessa forma delle prime due.
+
+    I tre `URL` rimasti nei booklet dopo la correzione del generatore erano
+    tutti dentro un commento HTML che *spiega al DM la sintassi da usare*:
+
+        <!-- Copertina: carica un'immagine sul brew e inserisci qui:
+             ![background](URL){position:absolute,...} -->
+
+    Un commento non viene reso da nessun lettore markdown, quindi non puo'
+    contenere un riferimento vivo. I due test vanno letti in coppia.
+    """
+
+    def _link(self, testo: str) -> list[str]:
+        doc = ROOT / "plans" / "FINTO.md"
+        return [p for _, p in vd.paths_from_links(testo, doc)]
+
+    def test_link_dentro_un_commento_non_conta(self):
+        self.assertEqual(self._link("<!-- usa ![bg](URL) qui -->\n"), [])
+        self.assertEqual(
+            self._link("<!-- vedi [x](adr/ADR-9999-inventato.md) -->\n"), [])
+
+    def test_commento_su_piu_righe(self):
+        testo = ("<!-- Copertina: carica un'immagine\n"
+                 "     e inserisci ![bg](adr/ADR-9999-inventato.md) -->\n")
+        self.assertEqual(self._link(testo), [])
+
+    def test_link_fuori_dal_commento_conta_ancora(self):
+        """La correzione non deve spegnere il controllo."""
+        self.assertEqual(self._link("vedi [x](adr/ADR-9999-inventato.md)\n"),
+                         ["plans/adr/ADR-9999-inventato.md"])
+
+    def test_quel_che_sta_dopo_il_commento_conta(self):
+        testo = "<!-- ![bg](URL) --> poi [vero](adr/ADR-9999-inventato.md)\n"
+        self.assertEqual(self._link(testo), ["plans/adr/ADR-9999-inventato.md"])
+
+    def test_i_numeri_di_riga_restano_veri(self):
+        """Si svuota, non si toglie: la riga 3 deve restare la riga 3."""
+        testo = "<!-- a\nb -->\n[x](adr/ADR-9999-inventato.md)\n"
+        righe = [n for n, _ in vd.paths_from_links(testo, ROOT / "plans" / "FINTO.md")]
+        self.assertEqual(righe, [3])
+
+    def test_le_direttive_restano_leggibili_altrove(self):
+        """`ignored_lines` legge il testo GREZZO: svuotare i commenti nei link
+        non deve renderla cieca alle proprie direttive."""
+        testo = "a\n`x/y/z` <!-- validate-docs: ignore -->\nb\n"
+        self.assertEqual(vd.ignored_lines(testo), {2})
+
+
 class TestPercorsiAssoluti(unittest.TestCase):
     def _scrivi(self, testo: str) -> str:
         doc = ROOT / "scripts" / "tests" / "fixtures" / "_tmp_assoluti.md"

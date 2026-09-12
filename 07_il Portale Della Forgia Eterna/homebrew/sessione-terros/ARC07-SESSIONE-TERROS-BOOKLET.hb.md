@@ -137,7 +137,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 > un PNG in mezzo a milleseicento righe mentre quattro persone aspettano.
 >
 > Questa è la fetta che mancava — l'**apparato d'uso** di
-> [ADR-0018](../plans/adr/ADR-0018-apparato-uso-obbligatorio.md), che l'arco
+> [ADR-0018](../../../plans/adr/ADR-0018-apparato-uso-obbligatorio.md), che l'arco
 > aveva **una voce su nove** (il quick-reference dentro ogni master). Sei pagine
 > che nessuno legge per piacere, e che si aprono ogni volta che si gioca.
 >
@@ -385,8 +385,8 @@ onestà di `ARC08-16-CUE-SONORI.md`).
 
 ## Materiale collegato
 
-- [ADR-0018](../plans/adr/ADR-0018-apparato-uso-obbligatorio.md) — perché l'apparato è parte del contenuto
-- [`PIANO-TRAVASO-DRAPPO-CAMPAGNA`](../plans/PIANO-TRAVASO-DRAPPO-CAMPAGNA.md) — il lotto A1 è questo file
+- [ADR-0018](../../../plans/adr/ADR-0018-apparato-uso-obbligatorio.md) — perché l'apparato è parte del contenuto
+- [`PIANO-TRAVASO-DRAPPO-CAMPAGNA`](../../../plans/PIANO-TRAVASO-DRAPPO-CAMPAGNA.md) — il lotto A1 è questo file
 - `ARC07-00-INDICE.md` — l'indice dell'arco (file → parte → stato)
 - `STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md` — il modello
 - `08_La Battaglia Di Hammerfist/ARC08-16-CUE-SONORI.md` — il modello dei suoni

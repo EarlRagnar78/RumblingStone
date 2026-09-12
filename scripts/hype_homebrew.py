@@ -30,6 +30,10 @@ import sys
 from datetime import date
 from pathlib import Path
 
+import sys as _sys
+_sys.path.insert(0, str(Path(__file__).resolve().parent))
+from dmcore.testo import riscala_link  # noqa: E402
+
 REPO = Path(__file__).resolve().parent.parent
 RECAPS = REPO / "campaign" / "recaps"
 TEMPLATES = REPO / "campaign" / "templates" / "homebrew"
@@ -336,6 +340,12 @@ def hype_handout(tipo: str, da: str | None, out: str | None,
 
     out_path = Path(out) if out else (Path(da).with_suffix(".hb.md") if da
                                       else REPO / f"{tipo}.hb.md")
+    # Se l'handout finisce in una cartella diversa dal sorgente, i suoi link
+    # relativi vanno riscalati o puntano al vuoto (lotto E1, 2026-09-12).
+    # Col default `--out` assente sorgente e destinazione coincidono e questa
+    # riga non fa niente.
+    if da:
+        hb = riscala_link(hb, Path(da).resolve().parent, out_path.resolve().parent)
     out_path.write_text(hb, encoding="utf-8")
     print(f"[hype] ✓ {out_path} — incolla su homebrewery.naturalcrit.com")
     return out_path

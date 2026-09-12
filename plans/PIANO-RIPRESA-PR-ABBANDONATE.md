@@ -1165,9 +1165,113 @@ Vale per **ogni** commit di **ogni** fase.
 | Cosa | Dove vive | Classe |
 |---|---|---|
 | **Attuazione di ADR-0048** — `scripts/legend.yaml` e i consumatori che ne derivano. L'ADR è *accettata, non attuata*: una decisione **senza cancello** finché il lotto non si chiude | lotto **1.1** di [`PIANO-VENDIBILITA`](PIANO-VENDIBILITA.md) | C |
-| **I 51 link rotti su 51 nei booklet generati** — il generatore copia link relativi alla radice dentro file tre livelli più in basso. Si aggiusta la sorgente, non l'artefatto | `build_booklet_html.py` · `hype_homebrew.py` | M |
+| 🆕 **I salti di titolo nei booklet** — `HB_TAGS` emette un `#####` sotto un `#`: veraPDF lo rifiuta (PDF/UA 7.4.2-1), e due booklet **non sono committabili** finché non si corregge. Trovato chiudendo E1; il test che lo prende guarda **solo** `10-stand-alone/` | `build_booklet_html.py` | C |
+| ~~**I 51 link rotti nei booklet generati**~~ | ✅ **chiuso 2026-09-12, lotto E1** (§4.7). Erano **44**, non 51 — nono presupposto invecchiato — e non erano un difetto solo: **41 di profondità** nel generatore, **3 falsi positivi** del validatore. Adesso **0** | C |
 | **4e** una sola via di scrittura · **4f** prodotto e partita | §4.2, dipendono da 4d | C |
 | **`validate_prosa`: 161 rilievi in 340 file** (non bloccante). ⚠️ Il piano diceva «13»: era una misura vecchia e di un altro validatore | `scripts/validate_prosa.py` | M |
+
+### 4.7 · Lotto **E1** — i link dei booklet generati `[✅ chiuso 2026-09-12]`
+
+`[C costruzione · Opus 5 · medio · l'insieme si conta con
+`git ls-files -z '*.hb.md'` → **34 artefatti**, e il criterio d'uscita è
+**0 link rotti** su tutti e 34, non solo sugli 8 di oggi]`
+
+#### FASE 1 — Audit, e la stima era vecchia un'altra volta
+
+🔎 Il piano diceva **«51 link rotti su 51»**. Rimisurati oggi: **44 su 34
+artefatti**, concentrati in **8 file**. **Nono presupposto invecchiato** di
+questa campagna.
+
+| File | Link rotti |
+|---|---|
+| `DRAPPO-BOOKLET-DM.hb.md` | 14 |
+| `PALIO-BOOKLET.hb.md` | 13 |
+| `DRAPPO-BOOKLET-GIOCATORI` · `DRAPPO-FASCICOLO-SCHEDE` | 6 + 6 |
+| `ARC07-SESSIONE-TERROS-BOOKLET` | 2 |
+| `ARC07-BOOKLET-FASCICOLO-1` · `PALIO-BOOKLET-FASCICOLO-P2D` · `recap-2026-05-05` | 1 ciascuno |
+
+**E non è un difetto solo, sono due.** Classificati uno per uno:
+
+| N | Classe | Cos'è |
+|---|---|---|
+| **41** | 🔴 **profondità** | il difetto vero. Il sorgente sta in `07_il Portale…/X.md`, dove `../plans/adr/…` risolve **giusto** sulla radice del repo; il generatore lo copia in `07_il Portale…/homebrew/sessione-terros/`, cioè **due livelli più in basso**, e il link diventa `…/homebrew/plans/adr/…`, che non esiste |
+| **3** | 🟡 ~~segnaposto `URL`~~ → 🔴 **falso positivo del validatore** | 🔎 **La classificazione di questa riga era sbagliata, e l'ha smentita il lavoro stesso.** Non sono buchi di contenuto: sono `![bg](URL)` scritti **dentro un commento HTML** che spiega al DM la sintassi da usare. Un commento non viene reso da nessun lettore markdown, quindi **non può contenere un riferimento vivo**. È la **terza famiglia di falsi positivi** di questo gate, e ha la stessa forma delle due di 4b |
+
+⚠️ **Il difetto è nel generatore, non negli artefatti**: `build_booklet_html.py`
+e `hype_homebrew.py` **concatenano il markdown sorgente alla lettera**, senza
+riscalare i link relativi alla profondità del file che producono.
+
+#### FASE 2 — Sviluppo
+
+1. **Un solo posto**: `dmcore/testo.py` — è già la casa delle trasformazioni di
+   stringhe condivise, e nacque per lo stesso motivo (sette `slug` divergenti).
+   Nuova funzione che, dato il testo, la cartella del **sorgente** e quella
+   della **destinazione**, riscrive ogni link **relativo** perché continui a
+   puntare allo stesso file.
+2. **Cosa non si tocca**, ed è la parte che decide se la correzione è sicura:
+   URL assoluti (`http`, `https`, `mailto`), àncore (`#…`), percorsi assoluti
+   (`/…`) e i segnaposto tipo `URL` — un segnaposto **non si inventa**, resta
+   rotto e si conta a parte.
+3. **I due generatori** la chiamano nel punto in cui incorporano un sorgente.
+4. **Gli 8 artefatti si rigenerano**, non si correggono a mano.
+
+#### FASE 3 — Validazione
+
+| Prova | Criterio |
+|---|---|
+| il gate morde **a rovescio** | un link relativo giusto nel sorgente, dopo la copia in una cartella più profonda, deve risultare **rotto** senza la correzione e **sano** con |
+| non spegne niente | URL assoluti, àncore e percorsi assoluti **non si toccano**: test in coppia |
+| sul repo vero | `validate_docs` sui 34 `.hb.md` → **0 link rotti**, tranne i 3 segnaposto `URL`, che restano **contati e dichiarati** |
+| rigenerazione | il `.hb.md` rigenerato differisce dal committato **solo nei link** |
+
+#### Com'è andata — **44 → 0**
+
+| | |
+|---|---|
+| **41 di profondità** | corretti **nel generatore**: `dmcore/testo.py` ha `riscala_link`, e i due generatori la chiamano nel punto in cui incorporano un sorgente. Gli **8 artefatti rigenerati dai manifest**, non corretti a mano |
+| **3 nei commenti** | corretti **nel validatore**: `senza_commenti_html` svuota i commenti prima di cercare i link, come `senza_code_span` fa coi backtick |
+
+✅ **Il diff della rigenerazione è pulito**: **48 righe cambiate, tutte con un
+link dentro**, zero effetti collaterali su 5 file. Era il criterio di §Fase 3 e
+regge.
+
+✅ **Le prove a rovescio**, tutte e due fatte togliendo la correzione:
+· senza `riscala_link` il booklet rigenerato torna rotto e
+`test_nessun_link_rotto_nei_booklet` va **rosso**;
+· i test dei commenti HTML sono **in coppia** — quattro provano che un link
+dentro un commento non conta, due che fuori conta ancora e che i **numeri di
+riga restano veri**.
+
+⚠️ **E una verifica che valeva la pena fare**: le direttive
+`<!-- validate-docs: ignore -->` **sono anch'esse commenti**. Svuotarli
+nell'estrattore dei link non le rende cieche, perché `ignored_lines` legge il
+**testo grezzo** — e adesso c'è un test che lo dice.
+
+**Test: 691 → 710** (+13 sul riscalatore, +6 sui commenti HTML).
+
+#### 🐛 E rigenerando è caduto fuori un difetto che non c'entrava
+
+Il primo giro ho rigenerato **tutti** i manifest, non solo i cinque che
+servivano, e sono comparsi **due `.hb.md` mai tracciati** — l'abbazia di
+`10-stand-alone/` e le schede PG del Drappo. Quello dell'abbazia ha fatto
+**rosso `test_tipografia`**: i suoi quattro `⚠ SOLO DM` sono `#####` messi
+subito dopo un `#`, cioè un **salto di titolo da 1 a 5** — quel che veraPDF
+rifiuta in PDF/UA 7.4.2-1, e per cui quel test esiste.
+
+⚠️ **I due file sono stati tolti**: non erano nel perimetro del lotto, e
+committarli avrebbe allargato il lavoro di due artefatti nuovi per un effetto
+collaterale. Ma il difetto **è vero e resta**: `HB_TAGS` in
+`build_booklet_html.py` emette un livello 5 sotto un livello 1, quindi **quei
+due booklet oggi non sono committabili**. → lotto suo, non E1.
+
+🔎 Il test scandisce **solo** `10-stand-alone/`: gli altri booklet hanno lo
+stesso salto e nessuno li guarda. È la forma di ADR-0041 — un controllo che
+esiste su una cartella sola.
+
+🔴 **Il limite dichiarato**: i `.hb.md` si incollano in Homebrewery, dove un
+link relativo **non risolve comunque**. Questa correzione serve a chi li legge
+**nel repo o su GitHub**, non al brew. Sistemarli è giusto lo stesso — un link
+rotto è un link rotto — ma non aspettarsi che cambi qualcosa al tavolo.
 
 ### Il lavoro fermo su una tua decisione
 

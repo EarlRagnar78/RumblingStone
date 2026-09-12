@@ -307,7 +307,7 @@ ordine di corsa.
 
 ## §3 · Tarsilia in dieci righe
 
-![Tarsilia](ALLEGATI/immagini/web/tavola-tarsilia-citta.jpg)
+![Tarsilia](../ALLEGATI/immagini/web/tavola-tarsilia-citta.jpg)
 *Tarsilia dal tetto della Torre.*
 
 **Siamo nel 4712 AR**, ultima settimana d'estate. Le due date che compaiono nel
@@ -739,8 +739,8 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 ---
 
-![Vidalia Roncetti](ALLEGATI/immagini/web/png-roncetti.jpg)
-![Nonna Grasa](ALLEGATI/immagini/web/png-nonna-grasa.jpg)
+![Vidalia Roncetti](../ALLEGATI/immagini/web/png-roncetti.jpg)
+![Nonna Grasa](../ALLEGATI/immagini/web/png-nonna-grasa.jpg)
 
 ## §1 · Il foglio del cast
 
@@ -978,7 +978,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 ---
 
-![La Ruota la vigilia](ALLEGATI/immagini/web/tavola-la-ruota-vigilia.jpg)
+![La Ruota la vigilia](../ALLEGATI/immagini/web/tavola-la-ruota-vigilia.jpg)
 
 ## §1 · I nomi — quando chiedono come si chiama il garzone
 
@@ -2234,11 +2234,11 @@ Ogni luogo ha:
 
 ---
 
-![Tarsilia dall'alto](ALLEGATI/immagini/web/tavola-tarsilia-citta.jpg)
+![Tarsilia dall'alto](../ALLEGATI/immagini/web/tavola-tarsilia-citta.jpg)
 
 ## §1 · Il rione dell'Istrice (casa vostra)
 
-![Nonna Grasa](ALLEGATI/immagini/web/png-nonna-grasa.jpg)
+![Nonna Grasa](../ALLEGATI/immagini/web/png-nonna-grasa.jpg)
 
 ### 1.1 · L'oratorio dell'Istrice
 
@@ -2355,7 +2355,7 @@ qualcuno lo guardi.
 
 ## §3 · Botteghe e servizi
 
-![La bilancia dell'Oca](ALLEGATI/immagini/web/spot-bilancia.jpg)
+![La bilancia dell'Oca](../ALLEGATI/immagini/web/spot-bilancia.jpg)
 
 | # | Bottega | Chi | Cosa vende | Prezzo | Gancio |
 |---|---|---|---|---|---|
@@ -2471,9 +2471,9 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 ---
 
-![Ottavia Vesca](ALLEGATI/immagini/web/png-vesca.jpg)
-![Gerlando Attu](ALLEGATI/immagini/web/png-attu.jpg)
-![Sfregio](ALLEGATI/immagini/web/png-sfregio.jpg)
+![Ottavia Vesca](../ALLEGATI/immagini/web/png-vesca.jpg)
+![Gerlando Attu](../ALLEGATI/immagini/web/png-attu.jpg)
+![Sfregio](../ALLEGATI/immagini/web/png-sfregio.jpg)
 
 ## §1 · Ottavia Vesca — Capitana del Bruco
 
@@ -3064,11 +3064,11 @@ brutte figure per arrivarci.
 
 ---
 
-![La Ruota, il giorno prima](ALLEGATI/immagini/web/tavola-la-ruota-vigilia.jpg)
+![La Ruota, il giorno prima](../ALLEGATI/immagini/web/tavola-la-ruota-vigilia.jpg)
 
 ## §5 · La Sorte dei cavalli
 
-![La Ruota il giorno della corsa](ALLEGATI/immagini/web/tavola-la-ruota.jpg)
+![La Ruota il giorno della corsa](../ALLEGATI/immagini/web/tavola-la-ruota.jpg)
 *La Ruota, il giorno della corsa.*
 
 **Meccanica completa**: `REGOLE-DELLA-CORSA-PF1E.md` §2. Qui c'è solo la scena.
@@ -3410,7 +3410,7 @@ che passa in mezzo alle tavole perché è tradizione che passi.
 
 ---
 
-![La Cena della vigilia](ALLEGATI/immagini/web/tavola-la-cena.jpg)
+![La Cena della vigilia](../ALLEGATI/immagini/web/tavola-la-cena.jpg)
 
 ## §5 · L'uomo con la fascia grigia
 
@@ -3438,11 +3438,11 @@ nessuno. L'unica variabile è se l'Istrice lo sanno prima.
 
 ---
 
-![Le stalle, dopo mezzanotte](ALLEGATI/immagini/web/tavola-le-stalle.jpg)
+![Le stalle, dopo mezzanotte](../ALLEGATI/immagini/web/tavola-le-stalle.jpg)
 
 ## §6
 
-![Le stalle dopo mezzanotte](ALLEGATI/immagini/web/tavola-le-stalle.jpg) · Notte — l'assalto alle stalle
+![Le stalle dopo mezzanotte](../ALLEGATI/immagini/web/tavola-le-stalle.jpg) · Notte — l'assalto alle stalle
 
 **Quando**: dopo mezzanotte, quando la Cena è finita e in giro c'è solo chi è di
 guardia. Mappa: `ALLEGATI/mappe/` → *le stalle dell'Istrice*, 21 × 15 quadretti, 1,5 m
@@ -3766,7 +3766,7 @@ Stacco venga annullato — con i fischi che ne conseguono.
 
 ---
 
-![La Ruota il giorno della corsa](ALLEGATI/immagini/web/tavola-la-ruota.jpg)
+![La Ruota il giorno della corsa](../ALLEGATI/immagini/web/tavola-la-ruota.jpg)
 
 ## §5 · La Corsa — la regia dei tre giri
 
@@ -3903,7 +3903,7 @@ non le fa neanche stavolta. Ma:
 
 ---
 
-![Il Drappo](ALLEGATI/immagini/web/il-drappo.jpg)
+![Il Drappo](../ALLEGATI/immagini/web/il-drappo.jpg)
 
 ## §8 · Il Drappo di Lino Rasca
 
@@ -4022,7 +4022,7 @@ voci originali (pasta corrosiva, Ritmo dei cavalli) sono marcate come tali.
 
 ## §1 · Vidalia Roncetti — Sovrintendente al Drappo
 
-![Vidalia Roncetti](ALLEGATI/immagini/web/png-roncetti.jpg)
+![Vidalia Roncetti](../ALLEGATI/immagini/web/png-roncetti.jpg)
 
 **Umana esperta 6** · LN · femmina, 61 anni · **GS 4**
 *Forestiera residente da trentotto anni. Terzo mandato. Non si compra e — cosa più
@@ -4853,7 +4853,7 @@ rendiconto di **cosa è stato staccato e cosa no**.
 
 > ⚠️ Analisi documentale, **non parere legale**. Per un uso commerciale reale serve
 > un avvocato IP, e vale ancora la posture di
-> [`plans/adr/ADR-0005`](../plans/adr/ADR-0005-confini-ip-uso-non-commerciale.md).
+> [`plans/adr/ADR-0005`](../../plans/adr/ADR-0005-confini-ip-uso-non-commerciale.md).
 
 ---
 
@@ -4966,7 +4966,7 @@ Una passata sola, e il modulo è già attrezzata per riceverla: i nomi delle con
 compaiono in **nove file** e sono sostituibili con una tabella di rimpiazzo (l'ultima
 è stata fatta nella direzione opposta il 2026-08-15). Insieme vanno cambiate almeno
 **quattro figure su otto** negli scudi, altrimenti il cumulo resta. È il **Lotto 3**
-in [`plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md`](../plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md).
+in [`plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md`](../../plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md).
 
 ## §5 · Le icone degli stemmi
 

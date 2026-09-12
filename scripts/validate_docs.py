@@ -255,9 +255,45 @@ def senza_code_span(riga: str) -> str:
     return "".join(fuori)
 
 
+def senza_commenti_html(testo: str) -> str:
+    """Il testo con i commenti HTML svuotati, righe e lunghezze conservate.
+
+    Terza famiglia di falsi positivi di questo gate, e la stessa forma delle
+    due precedenti: un link dentro un commento **non e' un rimando**, e' una
+    riga che spiega al DM la sintassi da usare. I tre `URL` rimasti nei
+    booklet dopo il lotto E1 erano tutti cosi':
+
+        <!-- Copertina: carica un'immagine sul brew e inserisci qui:
+             ![background](URL){position:absolute,...} -->
+
+    Un commento non viene reso da nessun lettore markdown, quindi il suo
+    contenuto non puo' essere un riferimento vivo. Si svuota, non si toglie:
+    i numeri di riga e di colonna devono restare veri.
+
+    ⚠️ Vale **solo** dentro l'estrazione dei link: le direttive
+    `<!-- validate-docs: ignore -->` e i marcatori `auto:begin` sono anche
+    loro commenti, e vengono letti altrove **sul testo grezzo**.
+    """
+    fuori, i = [], 0
+    while True:
+        a = testo.find("<!--", i)
+        if a < 0:
+            fuori.append(testo[i:])
+            return "".join(fuori)
+        b = testo.find("-->", a)
+        if b < 0:                       # commento non chiuso: svuota fino in fondo
+            fuori.append(testo[i:a])
+            fuori.append("".join(c if c == "\n" else " " for c in testo[a:]))
+            return "".join(fuori)
+        b += 3
+        fuori.append(testo[i:a])
+        fuori.append("".join(c if c == "\n" else " " for c in testo[a:b]))
+        i = b
+
+
 def paths_from_links(text: str, doc: Path) -> list[tuple[int, str]]:
     out: list[tuple[int, str]] = []
-    for lineno, riga in enumerate(text.splitlines(), start=1):
+    for lineno, riga in enumerate(senza_commenti_html(text).splitlines(), start=1):
         raw = senza_code_span(riga)
         for _, tgt in LINK.findall(raw):
             if tgt.startswith(("http://", "https://", "#", "mailto:")):

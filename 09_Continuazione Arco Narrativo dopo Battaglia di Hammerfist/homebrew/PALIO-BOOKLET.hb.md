@@ -562,7 +562,7 @@ tipico · CANTO (con effetto meccanico) · aggancio a Rethmar (Meraviglia)**.
 ---
 
 ## 1 · L'OCA — *"Al suono dell'oro, all'armi"*
-![Stemma Oca](P2D-Palio-Allegati/stemmi/01-oca.svg)
+![Stemma Oca](../P2D-Palio-Allegati/stemmi/01-oca.svg)
 - **Divinità**: Waukeen (commercio, ricchezza). **Colori**: porpora e oro, bordati di bianco perla.
 - **Patrono**: **Lady Kaal**, Presidente del Consiglio. **Anima**: aristocrazia terriera e
   banchieri; il rione più ricco, dai palazzi ordinati e freddi.
@@ -577,7 +577,7 @@ tipico · CANTO (con effetto meccanico) · aggancio a Rethmar (Meraviglia)**.
   torto richiede darle **numeri migliori**, non insulti.
 
 ## 2 · LA TORRE — *"Oltre il ferro, la volontà"*
-![Stemma Torre](P2D-Palio-Allegati/stemmi/02-torre.svg)
+![Stemma Torre](../P2D-Palio-Allegati/stemmi/02-torre.svg)
 - **Divinità**: Torm (dovere) / Tempus (guerra). **Colori**: acciaio brunito e scarlatto, bordati d'argento.
 - **Patrono**: **Lord Jarmaath** (militare) + **Cap. Brenna Sorvane** (milizia).
   **Anima**: veterani, fabbri d'armi, milizia pesante; taverne che sanno di fumo e olio d'armi.
@@ -589,7 +589,7 @@ tipico · CANTO (con effetto meccanico) · aggancio a Rethmar (Meraviglia)**.
   Voto **Difesa compatta**; +cavalleria pesante di Channathgate.
 
 ## 3 · IL BRUCO — *"Nell'ombra mi rivolto"*
-![Stemma Bruco](P2D-Palio-Allegati/stemmi/03-bruco.svg)
+![Stemma Bruco](../P2D-Palio-Allegati/stemmi/03-bruco.svg)
 - **Divinità**: Mask (ombre, furto, segreti — **già in campagna**, arco Zalkatar/Artemis).
   **Colori**: argento sericeo e nero-fumo, listati di verde-veleno.
 - **Patrono**: **Maestro Varis "Seta-Argento"** (mercato nero). **Anima**: ricettatori,
@@ -603,7 +603,7 @@ tipico · CANTO (con effetto meccanico) · aggancio a Rethmar (Meraviglia)**.
   pietrificate** fuori dalle mura (aggancio Il Collezionista).
 
 ## 4 · L'ISTRICE — *"Pungo solo chi mi assale"*
-![Stemma Istrice](P2D-Palio-Allegati/stemmi/04-istrice.svg)
+![Stemma Istrice](../P2D-Palio-Allegati/stemmi/04-istrice.svg)
 - **Divinità**: Ilmater (sofferenza) / Chauntea (comunità). **Colori**: verde legnoferro e bruno
   di terra, bordati d'avorio; nello stemma, **catene spezzate** di rosso Ilmater (i
   profughi liberati) su campagna di bruno di terra.
@@ -629,7 +629,7 @@ tipico · CANTO (con effetto meccanico) · aggancio a Rethmar (Meraviglia)**.
   fantino profugo potrebbe **uccidere** un rivale per vendetta, non solo disarcionarlo.
 
 ## 5 · IL DRAGO — *"Il cuore che arde parla in fiamme"*
-![Stemma Drago](P2D-Palio-Allegati/stemmi/05-drago.svg)
+![Stemma Drago](../P2D-Palio-Allegati/stemmi/05-drago.svg)
 - **Divinità**: Mystra (magia). **Colori**: blu notte e argento, listati di
   viola arcano; nello stemma, una testa di drago che soffia verso la **stella d'oro di Mystra**.
 - **Patrono**: **Maester Pyriel** (sapere/accademia). **Anima**: speziali, alchimisti,
@@ -643,7 +643,7 @@ tipico · CANTO (con effetto meccanico) · aggancio a Rethmar (Meraviglia)**.
   draghi** (Abithriax/Tyrgarun) e scherma i bombardamenti. **−1 GS** ondate aeree Fase 1.
 
 ## 6 · LA CIVETTA — *"Guardo dove la notte tace"*
-![Stemma Civetta](P2D-Palio-Allegati/stemmi/06-civetta.svg)
+![Stemma Civetta](../P2D-Palio-Allegati/stemmi/06-civetta.svg)
 - **Divinità**: Shar (perdita, vendetta, segreti). **Colori**: nero e viola di Shar, listati
   d'argento freddo; nello stemma, la civetta davanti al **disco nero di Shar**.
 - **Patrono**: **Conte Valerius** (nobiltà decaduta). **Anima**: burocrati, spie,
@@ -657,7 +657,7 @@ tipico · CANTO (con effetto meccanico) · aggancio a Rethmar (Meraviglia)**.
   **aprire una breccia**. Esito **ambiguo** (CONSEGUENZE §Civetta).
 
 ## 7 · L'UNICORNO — *"Ferisce e sana il corno che porto"*
-![Stemma Unicorno](P2D-Palio-Allegati/stemmi/07-unicorno.svg)
+![Stemma Unicorno](../P2D-Palio-Allegati/stemmi/07-unicorno.svg)
 - **Divinità**: Sune (bellezza) / Milil (canto). **Colori**: cremisi di Sune e argento di
   Milil; nello stemma, il **corno dorato** che dà il nome al distretto.
 - **Patrono**: **Aldric Thornwall** (gilde/artigiani). **Anima**: sarti, falegnami,
@@ -671,7 +671,7 @@ tipico · CANTO (con effetto meccanico) · aggancio a Rethmar (Meraviglia)**.
   fulmini sonici) + logistica/fortificazioni immense.
 
 ## 8 · L'ONDA *(NUOVA)* — *"Il cielo mi colora, il fiume mi arma"*
-![Stemma Onda](P2D-Palio-Allegati/stemmi/08-onda.svg)
+![Stemma Onda](../P2D-Palio-Allegati/stemmi/08-onda.svg)
 - **Divinità**: Valkur (marinai, vento favorevole) / Selûne (luna, navigazione).
   **Colori**: verde-fiume e argento lunare, bordati di blu profondo; nello stemma, un
   **cavallone** che si leva su tre onde sotto una **falce d'oro di Selûne**.
@@ -2962,13 +2962,13 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 ## 1. La Piazza del Palio — pista e Zone di inseguimento
 **File**: `P2D-Palio-Allegati/mappe/piazza-del-palio.svg`
 
-![Piazza del Palio](P2D-Palio-Allegati/mappe/piazza-del-palio.svg)
+![Piazza del Palio](../P2D-Palio-Allegati/mappe/piazza-del-palio.svg)
 
 **Vista cinematografica** (tavola illustrata della Piazza — veduta aerea del
 Campo e vista a livello strada verso "The Seat"; fornita dal DM 2026-07-17,
 da usare come handout d'atmosfera e schermo d'apertura del Giorno 3):
 
-![Vista cinematografica della Piazza del Palio](P2D-Palio-Allegati/immagini/piazza-del-palio-panorama.png)
+![Vista cinematografica della Piazza del Palio](../P2D-Palio-Allegati/immagini/piazza-del-palio-panorama.png)
 
 Anello a **conchiglia**, senso **orario**, **3 giri**, fondo di **tufo**. Sei Zone (Chase),
 quattro curve pericolose (dettaglio regole in GIORNO3-4 §4):
@@ -2991,7 +2991,7 @@ illustrata coi nomi FR dei quartieri — **master visivo della città**, DM
 2026-07-17; corrispondenze in `...P2D-PALIO-DISTRETTI-CHANNATHGATE.md`).
 Schema vettoriale di servizio: `P2D-Palio-Allegati/mappe/channathgate-citta.svg`
 
-![Channathgate](P2D-Palio-Allegati/mappe/channathgate-citta.svg)
+![Channathgate](../P2D-Palio-Allegati/mappe/channathgate-citta.svg)
 
 Città-porto sul **Fiume Cannath** (~35 mi a est di Rethmar). Mura, **Porta dell'Alba**
 (Dawn Way), **Porta del Porto**, **Darsena/Flotta** (Onda). Otto rioni-contrada attorno
@@ -3004,7 +3004,7 @@ alla **Piazza del Guado** centrale. Usa questa mappa per: gli spostamenti fra ri
 ## 3. Rotta di soccorso — Channathgate ▸ Rethmar
 **File**: `P2D-Palio-Allegati/mappe/rotta-soccorso.svg`
 
-![Rotta di soccorso](P2D-Palio-Allegati/mappe/rotta-soccorso.svg)
+![Rotta di soccorso](../P2D-Palio-Allegati/mappe/rotta-soccorso.svg)
 
 La **sincronizzazione** col fronte (INTEGRAZIONE §3): due vie per i rinforzi vinti al Palio.
 - **Dawn Way** (~35 mi, ~1,5 gg): cavalleria pesante (Torre).
@@ -3016,7 +3016,7 @@ La **sincronizzazione** col fronte (INTEGRAZIONE §3): due vie per i rinforzi vi
 ## 4. Stalla — mappa tattica dell'assalto drow (Giorno 2 notte)
 **File**: `P2D-Palio-Allegati/mappe/stalla-assalto-drow.svg`
 
-![Stalla — assalto drow](P2D-Palio-Allegati/mappe/stalla-assalto-drow.svg)
+![Stalla — assalto drow](../P2D-Palio-Allegati/mappe/stalla-assalto-drow.svg)
 
 Griglia **1 quadretto = 5 ft**, GS 11–12 (statblocchi in `...P2D-PALIO-STATBLOCCHI.md` §3).
 - I drow entrano dalla **botola/fogna** (angolo SO) con *Oscurità*; puntano al **BOX** del

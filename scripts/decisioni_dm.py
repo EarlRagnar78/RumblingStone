@@ -48,7 +48,14 @@ CHIAVE = "decisioni-dm"
 # che racconta questa ADR — lo trasforma in una tabella fantasma. Trovato al
 # primo uso vero del gate, da lui stesso.
 MARKER = re.compile(r"^<!--\s*decisioni-dm:\s*(?P<etichetta>[^>]+?)\s*-->$")
-RIGA = re.compile(r"^\|\s*(?P<id>~~D\d+~~|D\d+)\s*\|(?P<resto>.*)\|\s*$")
+# La cella dell'id tollera enfasi e fregi: `**D13** 🆕` e' la stessa decisione
+# di `D13`. Prima non lo era, e il modo in cui falliva era il peggiore
+# possibile — la riga veniva **saltata in silenzio**, il conto restava
+# plausibile, e l'aggregato risultava allineato senza contenerla. Trovato
+# scrivendo D13 (lotto 4c): un difetto che il gate di ADR-0047 esiste per
+# impedire, nella forma in cui il gate non lo vedeva.
+CELLA_ID = r"[*_\s]*(?P<barre>~~)?[*_\s]*(?P<id>D\d+)[*_\s]*(?:~~)?[*_\s]*(?:[^\w|]*)"
+RIGA = re.compile(rf"^\|{CELLA_ID}\|(?P<resto>.*)\|\s*$")
 INIZIO = f"<!-- auto:begin key={CHIAVE} -->"
 FINE = f"<!-- auto:end key={CHIAVE} -->"
 
@@ -94,9 +101,8 @@ def leggi_fonti(root: Path) -> tuple[list[Decisione], list[str]]:
                     r = RIGA.match(successiva.rstrip())
                     if not r:
                         continue           # intestazione o riga di separazione
-                    grezzo = r.group("id")
-                    aperta = not grezzo.startswith("~~")
-                    ident = grezzo.strip("~")
+                    ident = r.group("id")
+                    aperta = r.group("barre") is None
                     celle = [c.strip() for c in r.group("resto").split("|")]
                     ambito = celle[0] if celle else ""
                     testo = celle[1] if len(celle) > 1 else ""

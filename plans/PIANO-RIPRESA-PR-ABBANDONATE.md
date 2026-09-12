@@ -575,7 +575,7 @@ diciotto.
 > |---|---|---|
 > | **4a** ✅ `validate_docs` | **C** costruzione | `[Sonnet 5 · medio-alto · il gate boccia una cartella documentata e inesistente, e **non** boccia i 4 falsi positivi noti]` — **chiuso 2026-09-07: 6 difetti veri, zero falsi positivi** |
 > | **4b** ✅ link, path locali e un ADR | **K** canone (era **M**) | `[Opus 5 · alto · `python3 scripts/validate_docs.py --sorgenti` esce 0 su **701 documenti**; ADR-0048 riverificato riga per riga contro il codice di oggi]` — **chiuso 2026-09-10: 22 difetti veri, 9 falsi positivi corretti nel validatore** |
-> | **4c** i due tempi di `state.md` | **K** canone | `[**Opus 5, mai delegato** · xhigh · nessun contenuto cancellato, solo etichettato; **due domande al DM** poste, non indovinate]` |
+> | **4c** ✅ i due tempi di `state.md` | **K** canone | `[**Opus 5, mai delegato** · xhigh · nessun contenuto cancellato, solo etichettato; l'insieme si conta con `grep -n "resurrection\|resurrezione" campaign/state.md` — **15 righe**, di cui 4 al tempo sbagliato e 6 nel changelog append-only, lasciate intatte]` — **chiuso 2026-09-12: 4 asserzioni al tempo sbagliato, 2 costi mai versati, 1 verbo al passato** |
 > | **4d** `state.yaml` (ADR-0017) | **K** canone | `[**Opus 5** · xhigh-max · `state.md` **rigenerato è identico** a quello committato]` |
 > | **4e** una sola via di scrittura | **C** costruzione | `[Sonnet 5 · alto · un test **sui file veri**, non su fixture — vedi §4.4]` |
 > | **4f** prodotto e partita | **C** costruzione | `[Sonnet 5 · alto · un test che dimostra che il reset **non eredita niente**]` |
@@ -603,7 +603,7 @@ prendono **uno alla volta**, ciascuno col suo commit e i suoi gate.
 |---|---|---|---|
 | 4a | **G2** — `validate_docs.py` | gate bloccante sulla deriva doc↔realtà | **Indipendente da tutto.** Chiude un difetto reale: `AGENTS.md` documentava `campaign/npcs/`, `locations/`, `encounters/` — **nessuna delle tre è mai esistita**. Ed è progettato attorno ai falsi positivi: alla prima esecuzione **9 hit di cui 4 falsi**, corretti nel validatore e non nei documenti |
 | 4b | **G3** — link, path locali e un ADR | **22 difetti veri** (la stima «18 su 241» era di un mese prima e sbagliata in tutte le cifre) · 7 file con path dentro un checkout personale | ⚠️ **non era igiene pura**: uno dei link rotti citava una decisione mai registrata, e recuperarla ha reso il lotto **K** |
-| 4c | **G1** — i due tempi di `state.md` | §1 collocava i PG **dopo Hammerfist** mentre §0 marca l'arco 08 `⬜ NON giocato` | ⚠️ tocca il canone, ma **non cancella niente: etichetta**. Estende la tabella a due tempi che §6 aveva già, DM-confermata. Porta con sé **due domande al DM** (il −2 COS di Thorik, il Giorno di Marcia 19 vs ~15) |
+| 4c ✅ | **G1** — i due tempi di `state.md` | §1 collocava i PG **dopo Hammerfist** mentre §0 marca l'arco 08 `⬜ NON giocato` | ⚠️ tocca il canone, ma **non cancella niente: etichetta**. Chiuso il 2026-09-12 — vedi **§4.2-quater**: due costi risultavano **versati senza essere stati giocati**, e il ridisegno dei Doni che ne è nato è una **proposta separata**, non canone |
 | 4d | **G2-bis** — ADR-0017, `state.yaml` | i fatti come dati, `state.md` **generato** | il pezzo grosso. Vedi 4.3 |
 | 4e | **G2-ter** — una sola via di scrittura | clock villain, «chi sa cosa», numeri di Rethmar migrati a dati; il log di sessione prende un front-matter coi delta | dipende da 4d |
 | 4f | **G2-quater** — prodotto e partita | il reset per gruppo nuovo **perdeva**: azzerava `state.md` e `sessions/` e lasciava `state.yaml`, `state-changelog.md`, `campaign-history.md` e i recap al gruppo dopo | dipende da 4d/4e |
@@ -767,6 +767,147 @@ passa da 1.677 a **546 righe**; lo storico esce in `state-changelog.md`.
 vincola la **forma**, non la **verità**. Un fatto sbagliato con un tempo giusto
 passa.
 
+### 4.5-bis · D3 risposta dal DM (2026-09-11): una domanda su due si scioglie
+
+**Il calendario non era un difetto.** L'apparente contraddizione — `state.md`
+dice Giorno di Marcia **19** mentre l'arco 08 è ⬜ **non giocato** — è il
+**viaggio nel tempo**, ed è già scritto in due master:
+
+| Dove | Cosa dice |
+|---|---|
+| `ARC08-00-INDICE` righe 17-19 | i PG *«riemergono al Cuore della Montagna al **Giorno 3** e chiudono la battaglia al **March Clock Day 19** (sync con la caduta di Terrelton)»* |
+| `ARC07-DEF-5` §94 | *«siete arrivati al **Giorno 3** (≈ March Clock Day 18-19): il **sync** con l'ARC-08»* |
+| `state.md` riga 54 | lo chiama già **«Day 19 (target sync)»** |
+
+Il Giorno 3 è il terzo giorno **dell'assedio**, il Day 19 è il **March Clock**:
+due orologi diversi, e il documento li allinea. Quel che resta è **una parola**:
+la riga 136 dice *«Current March Day: 19 (Terrelton just fell…)»* al passato,
+come se fosse già successo, mentre è il bersaglio a cui il salto del Rubino
+consegna i PG. Si corregge il tempo verbale, non il numero.
+
+🔎 **Ottavo presupposto invecchiato.** Il piano dava «19 vs ~15» per una
+contraddizione di canone da far decidere al DM. Non lo era: era una domanda a
+cui il repo aveva **già** risposto in due posti, e che nessuno aveva collegato.
+
+**Il COS di Thorik invece è un difetto vero, e all'incontrario.** Il DM: *«non
+ha ancora giocato la parte della resurrezione di Hella»*. Quindi `state.md` riga
+76 non ha un'ambiguità: **registra come pagato un prezzo mai pagato** — *«−2 perm
+CON sacrificed for Hella's resurrection (NEVER restored)»*. Oggi Thorik ha
+**−4 DES e +2 COS**, e basta. È il vero «secondo tempo» del file, e sta sulla
+scheda di un PG, non sul calendario.
+
+### 4.5-ter · Le tre strade di Thorik esistono già, e il documento sa di essere sbilanciato
+
+Il DM ha chiesto se esista un'alternativa migliore al −2 COS.
+[`ARC07-DEF-3`](../07_il%20Portale%20Della%20Forgia%20Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md)
+§5 ne ha **tre**, più il rifiuto, e la regola d'oro dice che *«la resurrezione
+non è in ostaggio: col Cuore, Hella torna comunque. I sacrifici comprano la
+qualità del ritorno»*.
+
+| Strada | Costo | Peso vero a livello 13 |
+|---|---|---|
+| **Il Sangue della Stirpe** (base) | −2 COS permanente | −13 pf, −1 Tempra, **per sempre** |
+| **La Memoria della Battaglia** | −3.000 PE | ≈ **23%** di un livello (13→14 costa 13.000 PE) |
+| **Il Filo dell'Ascia** | Aegis Fang perde *Returning* fino al pieno risveglio | si sente **ogni round** di ARC-08, e finisce |
+| Rifiuto | — | Hella senza RD 3/−; allo Step 5 servono 3 successi su 3 |
+
+⚠️ **E il difetto che il DM ha visto è reale — il documento lo ammette da solo**,
+con la nota *«il più pesante dei tre — cade sul PG più carico di artefatti»*.
+Misurati accanto, gli altri due doni **non costano niente**: Tordek paga **−500
+PE** (≈ 4% di un livello) e Artemis **uno slot per 24 h**.
+
+🔴 **Quindi la sproporzione non si risolve alleggerendo Thorik.** Qualunque cosa
+paghi lui, finché gli altri due pagano una cifra simbolica il tema del prezzo non
+regge. Le due leve sono indipendenti, e vanno mosse insieme.
+
+### 4.2-quater · Com'è andato 4c (2026-09-12)
+
+**Il lotto ha trovato più di quel che cercava, e la parte in più era la peggiore.**
+Cercava «i due tempi»; ha trovato **due costi registrati come pagati per una
+scena mai giocata**.
+
+#### Le cinque correzioni, e le sei righe non toccate
+
+| Dove | Cosa diceva | Cosa dice adesso |
+|---|---|---|
+| §1 tabella party | i quattro PG **dopo Hammerfist**, in viaggio verso le quest dell'ARC-09 | **due colonne**: «adesso al tavolo» (Sala della Forgia, P4 chiuso) e «canone preparato». Nessun contenuto tolto |
+| §1 riga Thorik | *«−2 perm CON sacrificed for Hella's resurrection (NEVER restored)»* | **−4 DES / +2 COS / +4 CAR**, e basta. Il costo del rito è marcato **non ancora versato** |
+| §1 riga Hella | *«Full; Treant Hybrid template active post-resurrection»* | 🔴 **morta**, corpo nella Sala. Il template si assegna **al rito** |
+| §7 debiti | Thorik *«he sacrificed 2 perm CON»* e Tordek *«500 XP sacrificed»*, al passato | *«non ancora contratto — si contrae al rito»* |
+| §2.1 orologio | *«Day 19 (Terrelton just fell as Hammerfist ended)»* | il Giorno 19 è il **punto di sincronia** a cui il calendario tornerà, non un giorno trascorso (D3) |
+
+🟢 **Le sei righe del changelog append-only che citano il «−2 COS» sono rimaste
+intatte**: sono quel che i piani dicevano il 2026-07-02 e il 2026-07-23, e §8 di
+`state.md` dice di sé *«never delete entries — they become campaign history»*.
+La correzione si registra in coda, non si retrodata.
+
+#### La riga che non si era sfasata, e perché conta
+
+`state.md` §6 diceva già la verità sulla Collana dei Semi Eterni:
+*«Hella (dead — resurrection pending) … Hella not yet resurrected»*. Due
+sezioni dello stesso file, sullo stesso fatto, in due tempi diversi — e la
+sezione **onesta** era quella degli artefatti, che nessuno legge per sapere chi
+è vivo. 🔎 **Nessun cancello poteva vederlo**: entrambe le righe erano
+sintatticamente perfette e i percorsi che citano esistono tutti.
+`validate_docs` vede la deriva doc↔filesystem, non la deriva fra due frasi.
+
+#### Il ridisegno dei Doni è **fuori dal master**, ed è voluto
+
+Il DM ha chiesto di togliere il −2 COS, di rendere adeguati i doni di Tordek e
+Artemis, e di **confrontare il nuovo col vecchio prima di approvare**. Il
+risultato è [`PROPOSTA-DONI-RESURREZIONE-HELLA-v2`](PROPOSTA-DONI-RESURREZIONE-HELLA-v2.md),
+🔵 **proposta**: `ARC07-DEF-3` §5 **non è stato toccato**.
+
+Due cose che la misura ha aggiunto a §4.5-ter, e che spostano la diagnosi:
+
+1. 🔴 **Il costo di Artemis non è «leggero»: non esiste.** *«1 slot invocazione
+   alto per 24 h»* è vocabolario da incantatore preparato applicato a un
+   **Warlock 13** (`state.md` §1), le cui invocazioni sono **a volontà**. Non è
+   una sproporzione, è un errore di sistema: il rapporto fra il prezzo più alto
+   e il più basso non è largo, è **indefinito** (∞ contro 0).
+2. 🔴 **Il difetto vero non è il prezzo, è che le tre strade danno lo stesso
+   dono.** Tutte e tre le strade di Thorik comprano `Pelle di Adamantio (RD
+   3/−)`: non sono una scelta, sono un **listino**, e chi ragiona prende la più
+   economica. Ne segue che **il −2 COS lo paga solo chi interpreta contro il
+   proprio interesse** — il design mette una tassa sulla buona fede. Cambiare i
+   numeri non lo toglie.
+
+#### 🐛 E scrivendo D13, il gate delle decisioni ha mostrato un punto cieco
+
+Ho scritto la riga nuova come `restato **verde a 12 decisioni**. Non l'ha rifiutata: l'ha **saltata in
+silenzio**. `RIGA` pretendeva la cella dell'id esattamente `D13` o `~~D13~~`,
+e con l'enfasi la riga non era più una decisione — era una riga di tabella
+qualsiasi.
+
+🔴 **È il modo peggiore in cui un gate può fallire**: non dà un errore da
+correggere, dà un **conto plausibile**. L'aggregato risultava «allineato» e non
+conteneva la decisione. È esattamente il difetto che ADR-0047 esiste per
+impedire, nella forma in cui il gate non lo vedeva — e la seconda volta in due
+lotti che un cancello di questa fase ha trovato una taratura sbagliata **sua**
+(4b: gli 11 falsi positivi sui deploy dei convertitori, poi il proprio file di
+test).
+
+**Corretto**: la cella dell'id tollera enfasi e fregi, e il barrato si legge da
+un gruppo suo invece che dal prefisso della stringa. Due test, **in coppia**
+come per i backtick di 4b: uno prova che `**D1**`, `**D2** 🆕`, `_D3_` e
+`~~**D4**~~` adesso contano; l'altro che allargarla **non ha spento il
+controllo** — `vedi D2`, `D3-bis` e una cella vuota restano fuori. Il conto
+è passato a **13 decisioni, 4 aperte**.
+
+#### ⚠️ E un errore mio, che è costato lavoro
+
+Provando che il gate mordesse ho modificato la riga di D13 nel piano e poi ho
+rimesso a posto con `git checkout` — **su un file che conteneva tutto il lavoro
+non committato di questo lotto**, che è sparito e ho dovuto riscrivere. Il
+backup che avevo lanciato nella stessa riga di comando non era stato scritto,
+e non me n'ero accorto perché ne avevo silenziato l'errore.
+
+**Le due regole che ne restano**, e valgono oltre questo lotto: `git checkout`
+su un file con lavoro non committato **non è un annulla**, è una perdita; e un
+backup conta solo se se ne **verifica** la scrittura. La prova rifatta come si
+deve — riga di D13 tolta, gate **rosso** con uscita 1, riga rimessa, gate verde
+— è in §4.6.
+
 ### 4.4 · La regressione da non ripetere
 
 🔁 La #99 racconta una sua regressione: lo split dello storico aveva rotto
@@ -799,6 +940,20 @@ Oltre ai gate soliti, per ogni lotto di F4:
 - per 4f: un test che dimostri che il reset per gruppo nuovo **non eredita
   niente** — è la falla che quel lotto chiude, e due delle sue perdite le aveva
   aperte l'agente stesso
+
+**Fatto in 4c (2026-09-12)**, e i cancelli si provano **a rovescio**, come da
+inizio campagna:
+
+| Prova | Esito |
+|---|---|
+| `pytest scripts/tests -q` | ✅ **685 passati**, 5 saltati, 2.095 sotto-test (erano 683: +2 sul gate delle decisioni) |
+| `validate_docs.py` · `--sorgenti` | ✅ 3 documenti · ✅ **704 documenti**, nessun percorso inesistente né assoluto |
+| `decisioni_dm.py --check` | ✅ **13 decisioni, 4 aperte**, aggregato allineato |
+| `check_plans_discipline.py` · `tools_manifest.py --check` · `validate_maps.py` | ✅ · ✅ 59 tool · ✅ |
+| 🔴 **il gate morde**: riga di D13 **tolta** dal piano | ✅ `decisioni_dm --check` **rosso, uscita 1**; riga rimessa → verde |
+| 🔴 **il gate morde**: D13 **aggiunta e non emessa** | ✅ rosso al primo `--check`, verde dopo `--emit` |
+| 🔴 **la regex allargata non ha spento il controllo** | ✅ `vedi D2`, `D3-bis` e una cella vuota **restano fuori** (test in coppia) |
+| `git diff --stat` | ✅ nessun `.svg`, `.png`, `.uvtt` toccato: 4c non rigenera artefatti |
 
 ---
 
@@ -837,9 +992,10 @@ Vale per **ogni** commit di **ogni** fase.
 |---|---|---|
 | ~~D1~~ | F1 | ✅ **decisa 2026-09-05: archiviazione.** I tre master e i loro 7 SVG in `_ARCHIVIO/`; gli SVG non cancellati, così la cartella resta dentro il raggio di `validate_maps` |
 | D2 | F3 · 3d | **Riformulata il 2026-09-11: la domanda di prima partiva da un fatto falso.** Diceva *«i diciotto raster si generano sulla tua macchina — quando?»*, ma **esistono tutti e diciotto** (più le due extra), generati dal DM **con Gemini** il 2026-08-15, montati nel modulo, `validate_standalone` verde. `comfyui_batch --lista` dava «6 da fare» per un **disallineamento di nomi**, corretto in questo lotto. La domanda vera è: **l'arte del Drappo è di Gemini, la catena di F3 genera con SDXL in locale — quale delle due è il canone del modulo?** Le differenze che contano (ADR-0019 §2, che questo caso l'aveva previsto): Gemini **non espone il seed**, quindi la serie è irripetibile e il PNG è la sorgente; i suoi termini sono un **contratto che cambia**, verificato per di più su fonti secondarie; SDXL è OpenRAIL++-M, **perpetua**. Di contro la provenienza di Gemini è **firmata C2PA**, e SDXL su queste immagini **nessuno l'ha visto**. 🔵 **Metodo scelto dal DM il 2026-09-11: collaudo prima di scegliere** — la decisione **resta aperta**, si chiude quando il DM ha visto il confronto. Il DM: *«voglio fare prima un collaudo con 2 o 3 immagini e vedere davvero la qualità prima di buttare quelle di Gemini, che sono carine»*. Si generano **due o tre** immagini con SDXL in una cartella a parte, si mettono accanto alle attuali, e A (tenere Gemini) o B (rigenerare tutto) si sceglie **guardando**. Il collaudo chiude anche il buco vero di F3 — la catena mai provata contro un ComfyUI reale — al costo di due immagini invece che diciotto |
-| D3 | F4 · 4c | Le due domande di G1: il **−2 COS di Thorik** e il **Giorno di Marcia 19 vs ~15** |
-| D4 | F4 | I **13 stemmi e mappe** del `PALIO-BOOKLET` che la #99 lascia in sospeso: si producono o si tolgono i riferimenti? |
-| D11 | F4 · 4b | **L'ADR ex-0018 della #72 si recupera?** Decide che, *se e quando* si pubblica, si pubblica un **AP originale autonomo**, mai un'espansione di RHoD — e porta con sé il **perimetro della v1** (archi 07+08 dentro, 195.739 parole dell'arco 09 fuori, arco 06 da riscrivere, `campaign/` privato per sempre), il vincolo sui marchi, e la regola che *rinominare non basta*. ⚠️ **La conclusione ce l'hai già** (`PIANO-VENDIBILITA` C1 e §5 linea 4); quello che non esiste da nessuna parte è **la misura per arco** e il perimetro. 🔴 **Due cose da sapere prima di dire sì**: l'ADR è in stato **«proposta — gate: decisione DM + verifica di un avvocato IP»**, quindi recuperarlo apre una domanda, non la chiude; e l'audit su cui poggia (`AUDIT-DERIVAZIONE-IP-CAMPAGNA.md`) **non è nel repo**, quindi andrebbe rifatto o il perimetro resta un'asserzione senza prova. 🔎 Rimisurato oggi, il debito è **cresciuto**: `Belkram` era in 49 file, ora **82**; `Moradin` da 1.502 a **1.680** occorrenze; e le fonti WotC dichiarate in `campaign/lore/campaign-history.md` compaiono anche **dentro le skill**, che l'ADR non aveva guardato |
+| ~~D3~~ | F4 · 4c | ✅ **chiusa il 2026-09-12, eseguita nello stesso commit in cui e' stata dichiarata chiusa** (la lezione di D4). Il DM ha risposto il 2026-09-11 e il lotto 4c ha applicato entrambe le risposte: il **Giorno di Marcia 19** e' il punto di sincronia a cui il calendario torna col viaggio nel tempo — non un difetto, un tempo verbale, corretto; il **-2 COS di Thorik** era registrato come versato per una scena mai giocata, tolto dal presente insieme ai **-500 PE di Tordek**, che avevano lo stesso difetto e che nessuno aveva notato. 🔎 **E il lotto ha trovato il resto della stessa crepa**: §1 collocava tutti e quattro i PG dopo Hammerfist e dava **Hella viva**, mentre §6 dello stesso file la dava *«dead — resurrection pending»*. Vedi **§4.2-quater** |
+| **D13** 🆕 | F4 · 4c | 🔵 **Si adottano i Tre Doni v2?** Nasce dalla richiesta del DM del 2026-09-12: *«togliere il -2 COS ... rivedi i doni di Tordek e Artemis che devono essere adeguati ... una volta creato questo nuova modalita si confronta con quello esistente per valutare il bilanciamento prima di approvarlo»*. La proposta e' [`PROPOSTA-DONI-RESURREZIONE-HELLA-v2`](PROPOSTA-DONI-RESURREZIONE-HELLA-v2.md) e **`ARC07-DEF-3` §5 non e' stato toccato**. 🔴 **Il difetto misurato non e' il prezzo di Thorik**: (a) il costo di Artemis e' **zero per errore di sistema** — chiede uno *slot* a un Warlock, che non ne ha; (b) le tre strade di ogni PG danno **lo stesso dono**, quindi non sono una scelta ma un listino, e il -2 COS lo paga **solo chi interpreta contro il proprio interesse**. v2 risponde con **tre strade, tre doni diversi** su tre registri di costo comparabili (Carne / Voto / Oggetto), il permanente diventa una **cessione** che il party non perde, e il prezzo si registra col meccanismo gia' approvato di §6 (nessuna coercizione adesso, il conto in ARC-08/09). 🔵 **Tre domande**: (1) tutto v2, o solo la correzione minima di §5.4 (due righe: doni diversi per Thorik + *danno* a COS invece di *risucchio*), o si resta a v1? (2) **al tuo tavolo si gioca il danno alle caratteristiche?** Se no, il registro Carne va rifatto **prima** di approvare: e' il singolo modo in cui v2 fallisce. (3) il registro **Oggetto** — cessione permanente di *Returning*, Ancoraggio, Dono dell'Unita — ti va? E' la gamba su cui poggia la simmetria del prezzo permanente |
+| ~~D4~~ | F4 | ✅ **chiusa il 2026-09-11: non era una domanda.** Misurato invece di ricordare: il `PALIO-BOOKLET` cita **14 file** — 8 stemmi, 4 mappe, 2 immagini — ed **esistono tutti e 14**. SVG veri da 2,7-5,4 KB, due PNG da ~2 MB, e `CREDITS.md` con l'attribuzione **CC BY 3.0** a game-icons.net già in regola. Niente da produrre, niente da togliere. 🔎 Settimo presupposto invecchiato di questa campagna, e la chiusura era rimasta indietro di un giro: annunciata il 2026-09-11 e non eseguita nello stesso commit |
+| D11 | F4 · 4b | **L'ADR ex-0018 della #72: recuperato il 2026-09-11 come [ADR-0049](adr/ADR-0049-edizione-commerciale-ap-originale.md), e resta 🔵 *proposta* — non accettata.** Dice che, *se e quando* si pubblica, si pubblica un **AP originale autonomo**, mai un'espansione di RHoD, e porta il **perimetro della v1**. ✅ **I due avvertimenti che bloccavano la domanda sono tolti**: l'audit mancante è stato **rifatto da zero** ([`AUDIT-DERIVAZIONE-IP-CAMPAGNA`](../docs/audit/AUDIT-DERIVAZIONE-IP-CAMPAGNA.md)), e la tesi **regge sul repo di oggi** — archi 07+08 a **0,2** e **0,7** occorrenze RHoD per 1.000 parole contro il **5,6** dell'arco 09. 🔎 **E la misura ha aggiunto due cose che la #72 non sapeva**: il **`Bestiario/` è a 3,0** e **esce col modulo** — un perimetro che tace su di lui lascia fuori il conto una dipendenza vera — e i **moduli autoconclusivi sono già puliti** (`10-stand-alone` e il Drappo a **0,0**), quindi su quest'asse il prodotto della linea 3 di `PIANO-VENDIBILITA` è pronto. 🔴 **Cosa resta da decidere al DM**: (a) si adotta il perimetro così com'è? (b) il **bestiario** sta dentro o fuori? (c) l'ADR resta proposta finché non c'è la **verifica di un avvocato IP**, che l'audit non sostituisce — conta i nomi, non la struttura |
 | ~~D5~~ | ~~fuori piano~~ | ✅ **deciso e fatto il 2026-09-04**: il DM l'ha messo in cima alla coda, ed è chiuso insieme al punto cieco di `validate_maps` (ADR-0043) |
 | ~~D6~~ | F1 | ✅ **decisa 2026-09-04: ridisegnata.** `…P1C` mappa 3 dichiarava 40×40 e aveva righe da 24 a 26 celle: rifatta **26×29**, nessuna coordinata del testo cambiata |
 
@@ -872,7 +1028,8 @@ Vale per **ogni** commit di **ogni** fase.
 | Cosa | Aspetta | Perché non posso deciderlo io |
 |---|---|---|
 | **3d** — il collaudo e il confronto (non più i diciotto: ci sono già) | **D2** | serve la tua macchina, e il giudizio è tuo: guardare due immagini SDXL accanto alle Gemini e dire quale resta canone |
-| **4c** — i due tempi di `state.md` | **D3** | è canone: due fatti del tavolo che solo tu sai |
+| ~~**4c**~~ | ~~D3~~ | ✅ **fatto il 2026-09-12** |
+| **I Tre Doni v2** — approvare, ridurre al minimo di §5.4, o restare a v1 | **D13** | è canone e regolamento insieme: quanto deve costare un dono al *tuo* tavolo lo sai solo tu, e una delle tre domande (*si gioca il danno alle caratteristiche?*) decide se metà della proposta regge |
 | I 13 stemmi e mappe del `PALIO-BOOKLET` | **D4** | si producono o si tolgono i riferimenti: è una scelta di prodotto |
 | Recuperare l'ADR ex-0018 della #72 | **D11** | ed è una *proposta* con gate legale, non una decisione tecnica |
 | **4d** `state.yaml` · **4g** schede PG a dati · **4h** `groups/<slug>/` | 4c prima | K e G: si prendono uno alla volta, e 4h vuole una PR dedicata |
@@ -896,21 +1053,27 @@ chiuse su decisione del DM, ognuna con la sua motivazione scritta nel thread.
 manca, non rami da integrare. Si chiuderanno quando l'ultimo lotto che le
 riguarda sarà su `main` — 3d per la #106, 4h per la #99.
 
-### Cosa manca per dire che questa revisione è finita
+### Cosa manca per dire che questa revisione è finita (agg. 2026-09-11)
 
-Cinque cose, e **tre delle cinque aspettano te**:
+Le decisioni aperte sono scese **da 8 a 5**, e la forma del residuo è cambiata:
+**quasi tutto quel che resta aspetta il DM**, non la macchina.
 
-| | Cosa | Chi |
-|---|---|---|
-| 1 | **3d** — ⚠️ **non più «generare i diciotto»**: esistono già (§3.6). Resta il **collaudo di due o tre immagini** con SDXL e il confronto con quelle di Gemini, ~20 min sulla macchina del DM. Poi la #106 si chiude | DM (**D2**, metodo scelto) |
-| 2 | **4c** — i due tempi di `state.md`, che sblocca 4d · 4g · 4h | DM (**D3**) |
-| 3 | **D4** e **D11** — gli stemmi del Palio, e se recuperare l'ADR ex-0018 | DM |
-| 4 | **4d → 4h** — il canone come dato, uno alla volta; poi la #99 si chiude | macchina, dopo il 2 |
-| 5 | Le tre code dichiarate: attuazione di **ADR-0048**, i **51 link** dei booklet generati, i **161 rilievi** di prosa | macchina, quando si vuole |
+| | Cosa | Chi | Stato |
+|---|---|---|---|
+| 1 | **3d** — il collaudo di 2-3 immagini SDXL accanto a quelle di Gemini, poi la #106 si chiude | DM (**D2**) | 🟡 metodo scelto, **rimandato dal DM** |
+| 2 | ~~**4c**~~ — i due tempi di `state.md` | — | ✅ **chiuso 2026-09-12** (§4.2-quater). Sblocca **4d · 4g · 4h** |
+| 2-bis | **D13** — i Tre Doni v2: approvare, ridurre al minimo, o restare a v1 | DM | 🔵 **decidibile**: la proposta e il confronto sono scritti, il master **non** è stato toccato |
+| 3 | **D11** — il perimetro dell'AP originale, e se il **bestiario** ci sta dentro | DM | 🟢 **decidibile**: l'audit che mancava è stato rifatto |
+| 4 | **D12** — la riga `17` duplicata nell'arena circolare di `L2` | DM | 🟢 piccola, ma indovinarla sposterebbe celle |
+| 5 | **4d → 4h** — il canone come dato, uno alla volta; poi la #99 si chiude | macchina | 🟢 **sbloccati**: il 2 è chiuso |
+| 6 | Le code dichiarate: attuazione di **ADR-0048**, i **51 link** dei booklet generati, i **161 rilievi** di prosa | macchina, quando si vuole | ⬜ |
 
-🔴 **Il collo di bottiglia non è il lavoro: sono le decisioni.** Le voci 1, 2 e 3
-non hanno alcun ostacolo tecnico — la macchina può eseguirle il giorno dopo la
-risposta. La 4 dipende dalla 2. Solo la 5 è libera da subito.
+✅ **Chiuse dall'ultima revisione di questa sezione**: D4 (era morta — gli
+allegati del Palio esistono tutti), D7, D8, D9 e D10.
+
+🔴 **Il collo di bottiglia non è cambiato: sono le decisioni.** Le voci 1-4 non
+hanno alcun ostacolo tecnico. La 5 dipende dalla 2. Solo la 6 è libera da subito,
+ed è la meno importante.
 
 ---
 

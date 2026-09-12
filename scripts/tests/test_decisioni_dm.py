@@ -52,6 +52,35 @@ class TestLetturaDelleFonti(unittest.TestCase):
         d, _ = dd.leggi_fonti(self.root)
         self.assertEqual([(x.ident, x.aperta) for x in d], [("D1", False), ("D2", True)])
 
+    def test_l_enfasi_sulla_cella_id_non_nasconde_la_decisione(self):
+        """Lotto 4c: `**D13** 🆕` era la stessa decisione di `D13`, e il gate
+        la saltava **in silenzio** — il conto restava plausibile e l'aggregato
+        risultava allineato senza contenerla. E' il difetto che ADR-0047 esiste
+        per impedire, nella forma in cui il gate non lo vedeva."""
+        _finto(self.root, "PIANO-X.md",
+               "<!-- decisioni-dm: X -->\n\n| # | F | D |\n|---|---|---|\n"
+               "| **D1** | F1 | in grassetto |\n"
+               "| **D2** \U0001f195 | F2 | grassetto e fregio |\n"
+               "| _D3_ | F3 | in corsivo |\n"
+               "| ~~**D4**~~ | F4 | chiusa e in grassetto |\n")
+        d, e = dd.leggi_fonti(self.root)
+        self.assertEqual(e, [])
+        self.assertEqual([(x.ident, x.aperta) for x in d],
+                         [("D1", True), ("D2", True), ("D3", True), ("D4", False)])
+
+    def test_allargare_la_cella_id_non_ha_spento_il_controllo(self):
+        """La correzione non deve trasformare ogni riga di tabella in una
+        decisione: intestazioni, separatori e righe che *parlano* di una D
+        senza esserlo restano fuori. I due test vanno letti in coppia."""
+        _finto(self.root, "PIANO-X.md",
+               "<!-- decisioni-dm: X -->\n\n| # | F | D |\n|---|---|---|\n"
+               "| D1 | F1 | vera |\n"
+               "| vedi D2 | F | una menzione, non un id |\n"
+               "| D3-bis | F | un id inventato |\n"
+               "| | F | cella vuota |\n")
+        d, _ = dd.leggi_fonti(self.root)
+        self.assertEqual([x.ident for x in d], ["D1"])
+
     def test_una_tabella_senza_marker_non_conta(self):
         """`D<n>` non e' globale: in REVISIONE-ARC07 sono 17 decisioni gia' prese,
         e contarle qui accavallerebbe il Rubino con la griglia di P1C."""

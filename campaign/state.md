@@ -71,12 +71,22 @@ Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per det
 
 ## 1. Party — Current Position & Condition
 
-| PC | Class | Location | HP / status | Open personal threads |
-|---|---|---|---|---|
-| Thorik | Dwarf Fighter 13 | Hammerfist Holds, war council chamber | Full; -2 perm CON sacrificed for Hella's resurrection (NEVER restored). **−2 DES / +2 COS permanenti dal rito dello Smeraldo** (2026-07-31): è il **portatore** ad aver accettato il Peso del Mondo — ricalcolare CA senz'armatura, Riflessi, iniziativa. ⚠️ Il +2 COS va letto **sopra** il −2 COS di Hella, non al posto suo | Decide whether to lead defense of Rethmar personally vs. delegate |
-| Tordek | Dwarf Fighter 4 / Monk 9 | Hammerfist → traveling to Dauth Tournament | Full; Bracieri Earth phase complete. ✅ **Nessun malus permanente dal rito**: il Peso del Mondo l'ha accettato **Thorik**, il portatore (correzione DM 2026-08-06 — fino a quella data il pegno era attribuito a Tordek per errore). CA senz'armatura, Riflessi, iniziativa e Raffica restano quelli di prima | Tournament of the Eight Gates (3 days, interrupted by Githyanki Day 3) |
-| Hella | Dream Dwarf Ranger 1 / Druid 12 | Hammerfist → traveling to Sacred Forest | Full; Treant Hybrid template active post-resurrection | Sacred Forest ritual (pass = druid circle ally at Rethmar) |
-| Artemis | Human Warlock 13 | Hammerfist → traveling to Invisible Tower (Dauth region) | Full; Ring of Chaotic Illumination active | Confront Zalkatar (CR 13 illithid warlock); Ring evolution at stake |
+> 🕐 **Questa sezione ha due tempi, e fino al 2026-09-12 li mescolava.** La
+> regola dell'intestazione — *«tutto ciò che questo file dice dell'Arco 08 e
+> dell'Arco 09 è canone preparato, non ancora giocato»* — vale anche qui, e
+> qui non era applicata: la tabella collocava i quattro PG **dopo** la
+> Battaglia di Hammerfist e in viaggio verso le quest dell'Arco 09, mentre
+> §0 marca l'Arco 08 `⬜ NON giocato` e l'Arco 07 `🟡 in corso`. Le due
+> colonne separano quel che è vero **adesso al tavolo** da quel che è
+> **previsto** dal canone preparato. Nessun contenuto è stato cancellato:
+> è stato etichettato *(lotto 4c, D3 — DM 2026-09-11)*.
+
+| PC | Class | 🟢 Dov'è **adesso** (tavolo, ARC-07 P4 chiuso) | 🔵 Dove lo porta il canone **preparato** (post ARC-08) | HP / status **oggi** | Open personal threads |
+|---|---|---|---|---|---|
+| Thorik | Dwarf Fighter 13 | Sala della Forgia Eterna, dopo il riposo (orologio Hammerfist **3g 16h**) | Hammerfist Holds, war council chamber | Full. **−4 DES / +2 COS / +4 CAR permanenti**, e sono tutto quel che ha pagato: −2 DES dalla Corona quando l'ha indossata, −2 DES / +2 COS / +4 CAR dal rito dello Smeraldo del 2026-07-31 (è il **portatore** ad aver accettato il Peso del Mondo). Ricalcolare CA senz'armatura, Riflessi, iniziativa. ⚠️ **Nessun −2 COS.** Il costo della resurrezione di Hella è **non ancora versato**: la scena (`ARC07-DEF-3` §5) non è stata giocata, e quale strada prenderà lo decide lui al tavolo | Decide whether to lead defense of Rethmar personally vs. delegate |
+| Tordek | Dwarf Fighter 4 / Monk 9 | Sala della Forgia Eterna, dopo il riposo | → Torneo di Dauth | Full; Bracieri Earth phase complete. ✅ **Nessun malus permanente dal rito**: il Peso del Mondo l'ha accettato **Thorik**, il portatore (correzione DM 2026-08-06 — fino a quella data il pegno era attribuito a Tordek per errore). CA senz'armatura, Riflessi, iniziativa e Raffica restano quelli di prima. ⚠️ Anche i **−500 PE** della resurrezione sono **non ancora versati** | Tournament of the Eight Gates (3 days, interrupted by Githyanki Day 3) |
+| Hella | Dream Dwarf Ranger 1 / Druid 12 | 🔴 **morta**, corpo nella Sala, semi innestati — la resurrezione (P3B / `ARC07-DEF-3`) è **il prossimo beat da giocare** | Hammerfist → Foresta Sacra, template Ibrido Treant attivo, PG a pieno titolo | n/d finché non torna. Il template Ibrido Treant e i tre Doni **si assegnano al rito**, non prima | Sacred Forest ritual (pass = druid circle ally at Rethmar) |
+| Artemis | Human Warlock 13 | Sala della Forgia Eterna, dopo il riposo | → Torre Invisibile (regione di Dauth) | Full; Ring of Chaotic Illumination active. ⚠️ Anche il suo costo del rito è **non ancora versato** | Confront Zalkatar (CR 13 illithid warlock); Ring evolution at stake |
 
 **Active companions:**
 
@@ -133,7 +143,14 @@ Two independent clocks drive Arc 09:
 | 40 | Notte dei Drow / advance scout phase (Fase 0 begins) | ⏳ Pending |
 | **42** | **Horde arrives at Rethmar (ex-Brindol) and encamps** | 🎯 **Rethmar assault begins** |
 
-**Current March Day:** **19** (Terrelton just fell as Hammerfist ended).
+**Current March Day:** **19** — 🔵 **è il punto di sincronia previsto, non un
+giorno già trascorso.** Terrelton cadrà mentre la Battaglia di Hammerfist si
+chiude, e la Battaglia **non è stata giocata**. Il Giorno 19 non è «dove siamo»:
+è **dove il calendario tornerà**, perché i PG viaggiano indietro nel tempo nel
+P5 e riemergono al Cuore della Montagna al Giorno 3 dell'orologio interno, che
+è il March Clock Day 18-19 (`ARC08-00-INDICE` §17-19; `ARC07-DEF-5` §94; §0
+riga «Day 19 (target sync)»). *Il calendario avanti non è un difetto: è la
+Forgia Eterna che fa il suo mestiere — DM 2026-09-11, D3.*
 **Days remaining to Rethmar:** **23** (PG-quest window = Arc 09, Days 20-41).
 
 ### 2.2 Red Hand of Doom — Horde Composition (Baseline ~10,000)
@@ -319,8 +336,8 @@ the listed consequence triggers.
 |---|---|---|---|
 | Thorik | Re Thorek Hammerfist | Lead defense at Rethmar OR send Aegis Fang as proxy | Loss of Custode Eterno status; dwarven mercenaries withdraw |
 | *(ramo aperto, non ancora contratto)* **Hella**, e solo dopo **Thorik** | Ushgar «Occhio Reso» | Un atto scritto che assegni terra ai suoi ausiliari, in cambio del **ritardo degli orchi nella prima ondata** a Rethmar. **Ordine deciso dal DM 2026-08-05**: si offre prima l'uscita laterale di Hella (il Cerchio non si oppone all'insediamento); la firma di Thorik è il secondo passo, non il primo | Se firma **Hella**: problema con i druidi del Cerchio Sacro, e P1B a rischio se il rituale non è stato fatto. Se firma **Thorik**: si attiva la penale della riga qui sopra — **perdita dello status di Custode Eterno**. Se non si tratta: Ushgar si prende la terra da un villaggio |
-| Thorik | Hella (implicit) | He sacrificed 2 perm CON for her resurrection — she owes a moral debt | Affects Hella's ethics rolls in arguments with Thorik |
-| Tordek | Hella | 500 XP sacrificed for her resurrection | Affects romantic-bond progression at Sacred Forest |
+| 🔵 *(non ancora contratto — si contrae al rito)* **Thorik** | Hella | Il **Dono** che sceglierà a `ARC07-DEF-3` §5, qualunque strada prenda: è quello a creare il debito morale, non un numero deciso in anticipo. ⚠️ Fino al 2026-09-12 questa riga diceva *«he sacrificed 2 perm CON»* al passato, per una scena mai giocata | Affects Hella's ethics rolls in arguments with Thorik |
+| 🔵 *(non ancora contratto — si contrae al rito)* **Tordek** | Hella | Il suo Dono a `ARC07-DEF-3` §5. Stessa correzione: i «500 PE» erano registrati come versati e non lo sono | Affects romantic-bond progression at Sacred Forest |
 | Tordek | Tournament organizers | Show up at Dauth by **Day 29** (eve of the preliminaries — invite Day 24, arrival Day 28, Tournament Day 1-3 = Day 30-32, HOOKS-INTEGRATION-MASTER §1.1) | Disqualification; 150 Lance di Re Thorek reinforcements lost (D10 — separate from the 300 mercenaries won at the Tournament itself) |
 | Artemis | Varis "Seta-Argento" | Deliver one Underdark artifact per quarter · **⚠️ 2026-07-31: ha il Seme-Mercato in mano, non toccato (nessun Marchio). La partita con Varis è aperta e alla pari** | Varis cuts off the Mantello dei Tiri Salvezza supply |
 | Artemis | Mask cult (suspected) | Unknown — they've been watching the Ring | Black-bag attempt during a vulnerable moment |
@@ -1536,4 +1553,35 @@ entries — they become campaign history.
             Caos Ultimo solo se Zalkatar cade alla Torre Invisibile.
             Nuove schede in stile di casa: Aegis Fang Stadio 0 e Anello
             Riforgiato (entrambe con blocco DM "cosa arriva e da dove").
+
+2026-09-12  LOTTO 4c — I DUE TEMPI DI state.md, SEPARATI (D3, DM 2026-09-11).
+            §1 collocava i quattro PG DOPO la Battaglia di Hammerfist e in
+            viaggio verso le quest dell'Arco 09, mentre §0 marca l'Arco 08
+            come NON giocato e l'Arco 07 come in corso: la regola
+            dell'intestazione ("tutto cio' che questo file dice dell'Arco 08
+            e 09 e' canone preparato") non era applicata alla tabella che
+            piu' di tutte descrive il presente. §1 ha adesso due colonne,
+            "adesso al tavolo" e "canone preparato": nessun contenuto tolto,
+            solo etichettato.
+            COSTO MAI VERSATO. Il DM: "non ha ancora giocato la parte della
+            resurrezione di Hella". §1 registrava per Thorik "-2 perm CON
+            sacrificed for Hella's resurrection (NEVER restored)" e §7 lo
+            ripeteva come debito morale contratto, insieme ai "500 PE" di
+            Tordek: costi di una scena mai giocata, scritti al passato. Tolti
+            dal presente e marcati "si contrae al rito" (ARC07-DEF-3 §5).
+            Oggi Thorik ha -4 DES / +2 COS / +4 CAR, e basta.
+            Hella e' morta: la riga di §1 lo dice, come gia' faceva la riga
+            della Collana dei Semi Eterni in §6 - l'unica delle due che non
+            si era sfasata.
+            GIORNO DI MARCIA 19. Non e' un difetto di canone ma un tempo
+            verbale: "Terrelton just fell as Hammerfist ended" al passato per
+            un evento non giocato. Il Giorno 19 e' il punto di SINCRONIA a
+            cui il calendario tornera' quando i PG viaggeranno indietro nel
+            tempo nel P5 (ARC08-00-INDICE 17-19; ARC07-DEF-5 §94).
+            LOG APPEND-ONLY INTATTI: le voci 2026-07-02 e 2026-07-23 citano
+            il "-2 COS" perche' e' quel che i piani dicevano in quelle date.
+            Sono record storici, e restano.
+            DONI v2: la proposta di ridisegno dei tre Doni (§5 di ARC07-DEF-3)
+            e' in plans/PROPOSTA-DONI-RESURREZIONE-HELLA-v2.md e NON e' canone
+            finche' il DM non la approva. Il master non e' stato toccato.
 ```

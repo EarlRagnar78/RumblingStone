@@ -47,6 +47,7 @@ Contratto macchina e vista umana — **generati** dal manifest, sempre allineati
 | [`docs/guides/TOOL-AUTHORING-STANDARD.md`](guides/TOOL-AUTHORING-STANDARD.md) | **Standard obbligatorio** per ogni nuovo tool (checklist + verifica CI) |
 | [`docs/audit/AUDIT-REPORT.md`](audit/AUDIT-REPORT.md) | Report d'audit degli script (findings azionabili) |
 | [`docs/audit/SCORECARD.md`](audit/SCORECARD.md) | Scorecard 12-assi per script |
+| [`docs/audit/AUDIT-DERIVAZIONE-IP-CAMPAGNA.md`](audit/AUDIT-DERIVAZIONE-IP-CAMPAGNA.md) | Quanto il testo di campagna **nomina** cose di altri, per arco e per 1.000 parole — misura, non parere legale |
 
 ## 4. Governance & decisioni (ADR)
 
@@ -103,6 +104,7 @@ Il **perché** delle scelte strutturali. Indice completo in [`plans/adr/`](../pl
 | [ADR-0046](../plans/adr/ADR-0046-un-rifiuto-senza-motivo-non-parte.md) | **Un rifiuto senza motivo non parte**: `--reroll` esige `--motivo`, e lo scarto si registra |
 | [ADR-0047](../plans/adr/ADR-0047-le-decisioni-aperte-hanno-una-casa-sola.md) | Le decisioni aperte hanno **una casa sola**, e l'elenco si genera |
 | [ADR-0048](../plans/adr/ADR-0048-legenda-funzionale-fonte-unica.md) | La **legenda funzionale è la fonte unica**: la funzione di gioco di un simbolo è un dato, non prosa né un `set` cablato (era ADR-0014 nella #72) |
+| [ADR-0049](../plans/adr/ADR-0049-edizione-commerciale-ap-originale.md) | 🔵 **Proposta**: l'edizione commerciale è un **AP originale autonomo**, mai un'espansione di *Red Hand of Doom* — gate: decisione DM + avvocato IP (era ADR-0018 nella #72) |
 
 ## 5. Archivio piani
 

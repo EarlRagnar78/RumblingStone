@@ -21,7 +21,17 @@
 #   mode: icon  prop illustrato in-house ("prop"); senza prop, ripiega
 #               sull'emoji. Il terreno sotto si eredita dalla cella vicina.
 #   heavy: true ombra portata + contorno marcato (muri, strutture, massicci)
-#   altezza_m   estrusione 3D in metri per la catena Blender (negativa = scavo)
+#   altezza_m   estrusione 3D in metri per la catena Blender (negativa = scavo).
+#               ⚠️ NON e' un numero libero: e' un MODULO DI GRIGLIA. Decisione
+#               DM del 2026-09-12 — *«muri piccoli 1.5 metri e poi multipli di
+#               1.5 o approssimazioni piu' vicine possibili»*. Il quadretto del
+#               repo e' 1,5 m (spec §3.5), quindi:
+#                 · cio' che STA IN PIEDI  -> quadretti interi (1.5 * n)
+#                 · l'ingombro che si SCAVALCA -> mezzo quadretto (0.75)
+#                 · cio' che e' PIATTO -> 0.0
+#               Oggi: 15 altezze a quadretto intero, 9 a mezzo, 7 piatte.
+#               Un'altezza fuori modulo la boccia
+#               test_legenda_fonte_unica.TestLeAltezzeSonoModuliDiGriglia.
 #   piatto: true resta a quota zero: un varco non e' un volume
 #   texture     cartella di texture per famiglia di superficie — NON uno slug
 #               di Poly Haven: la riempie il DM verificando la licenza
@@ -49,7 +59,7 @@ version: 1
 symbols:
   "🌲":
     label: "Foresta densa (Furtività +5, copertura)"
-    render: {mode: fill, pat: t_forest, fill: "#55754d", altezza_m: 5.0, texture: fogliame}
+    render: {mode: fill, pat: t_forest, fill: "#55754d", altezza_m: 4.5, texture: fogliame}
     function:
       blocks_movement: false
       blocks_sight: true
@@ -66,7 +76,7 @@ symbols:
       nameable: false
   "🌿":
     label: "Vegetazione bassa"
-    render: {mode: fill, pat: t_veg, fill: "#9db97b", altezza_m: 0.4, texture: erba}
+    render: {mode: fill, pat: t_veg, fill: "#9db97b", altezza_m: 0.75, texture: erba}
     function:
       blocks_movement: false
       blocks_sight: false
@@ -128,7 +138,7 @@ symbols:
       hazard: {kind: magic, severity: lethal}
   "🟦":
     label: "Acqua profonda"
-    render: {mode: fill, pat: t_deep, fill: "#4c7ba3", altezza_m: -0.6, texture: acqua}
+    render: {mode: fill, pat: t_deep, fill: "#4c7ba3", altezza_m: -1.5, texture: acqua}
     function:
       blocks_movement: false
       blocks_sight: false
@@ -138,7 +148,7 @@ symbols:
       nameable: false
   "🌊":
     label: "Acqua / corrente"
-    render: {mode: fill, pat: t_water, fill: "#6aa5c4", altezza_m: -0.3, texture: acqua}
+    render: {mode: fill, pat: t_water, fill: "#6aa5c4", altezza_m: -0.75, texture: acqua}
     function:
       blocks_movement: false
       blocks_sight: false
@@ -161,7 +171,7 @@ symbols:
   # cosi' nessuna cella gia' disegnata si muove sotto i piedi di nessuno.
   "⬛":
     label: "Edificio / corpo di fabbrica (muratura piena: blocca vista e movimento)"
-    render: {mode: fill, pat: t_struct, fill: "#6b5b47", heavy: true, altezza_m: 3.2, texture: legno}
+    render: {mode: fill, pat: t_struct, fill: "#6b5b47", heavy: true, altezza_m: 3.0, texture: legno}
     function:
       blocks_movement: true
       blocks_sight: true
@@ -187,7 +197,7 @@ symbols:
       nameable: false
   "🏰":
     label: "Muro / roccia solida"
-    render: {mode: fill, pat: t_wall, fill: "#3f3931", heavy: true, altezza_m: 4.0, texture: muratura}
+    render: {mode: fill, pat: t_wall, fill: "#3f3931", heavy: true, altezza_m: 4.5, texture: muratura}
     function:
       blocks_movement: true
       blocks_sight: true
@@ -196,7 +206,7 @@ symbols:
       nameable: false
   "🟪":
     label: "Pilastro / mithral"
-    render: {mode: fill, pat: t_pillar, fill: "#8a67b5", heavy: true, altezza_m: 5.0, texture: pietra-chiara}
+    render: {mode: fill, pat: t_pillar, fill: "#8a67b5", heavy: true, altezza_m: 4.5, texture: pietra-chiara}
     function:
       blocks_movement: true
       blocks_sight: true
@@ -211,7 +221,7 @@ symbols:
   # di terreno per il passo, non ⛰.
   "⛰":
     label: "Montagne / creste rocciose"
-    render: {mode: fill, pat: t_mountain, fill: "#8d8271", heavy: true, altezza_m: 7.0, texture: roccia}
+    render: {mode: fill, pat: t_mountain, fill: "#8d8271", heavy: true, altezza_m: 7.5, texture: roccia}
     function:
       blocks_movement: true
       blocks_sight: true
@@ -221,7 +231,7 @@ symbols:
   # 🪨 resta FUORI dai muri ed e' corretto: copertura PARZIALE, non totale.
   "🪨":
     label: "Rocce/macerie (copertura +4 CA, terreno difficile)"
-    render: {mode: icon, prop: pr_rocks, fill: "#ced4da", altezza_m: 0.9, texture: roccia}
+    render: {mode: icon, prop: pr_rocks, fill: "#ced4da", altezza_m: 0.75, texture: roccia}
     function:
       blocks_movement: false
       blocks_sight: false
@@ -270,7 +280,7 @@ symbols:
   # qui non c'e', e l'uscita e' identica byte per byte.
   "🕳":
     label: "Voragine / buco"
-    render: {mode: icon, prop: pr_pit, fill: "#495057", altezza_m: -2.5}
+    render: {mode: icon, prop: pr_pit, fill: "#495057", altezza_m: -3.0}
     function:
       blocks_movement: true
       blocks_sight: false
@@ -298,7 +308,7 @@ symbols:
     render: {mode: unit, fill: "#9d4edd"}
   "🌳":
     label: "Treant / creatura vegetale"
-    render: {mode: icon, prop: pr_tree, fill: "#b7e4c7", altezza_m: 5.5, texture: fogliame}
+    render: {mode: icon, prop: pr_tree, fill: "#b7e4c7", altezza_m: 6.0, texture: fogliame}
     function:
       blocks_movement: true
       blocks_sight: true
@@ -348,7 +358,7 @@ symbols:
       nameable: true
   "🏺":
     label: "Contenitore / bottino"
-    render: {mode: icon, prop: pr_urn, fill: "#f8f9fa", altezza_m: 0.9}
+    render: {mode: icon, prop: pr_urn, fill: "#f8f9fa", altezza_m: 0.75}
     function:
       blocks_movement: false
       blocks_sight: false
@@ -388,7 +398,7 @@ symbols:
       nameable: true
   "🏮":
     label: "Braciere / fonte di luce"
-    render: {mode: icon, prop: pr_brazier, fill: "#ffd166", altezza_m: 1.4}
+    render: {mode: icon, prop: pr_brazier, fill: "#ffd166", altezza_m: 1.5}
     function:
       blocks_movement: true
       blocks_sight: false
@@ -398,7 +408,7 @@ symbols:
       light: {raggio_m: 9.0, colore: "ffd9a0"}
   "🪓":
     label: "Rastrelliera / armi"
-    render: {mode: icon, prop: pr_rack, fill: "#e9ecef", altezza_m: 1.6}
+    render: {mode: icon, prop: pr_rack, fill: "#e9ecef", altezza_m: 1.5}
     function:
       blocks_movement: true
       blocks_sight: false
@@ -408,7 +418,7 @@ symbols:
       nameable: true
   "🛏":
     label: "Giaciglio"
-    render: {mode: icon, prop: pr_bed, fill: "#e9ecef", altezza_m: 0.5}
+    render: {mode: icon, prop: pr_bed, fill: "#e9ecef", altezza_m: 0.75}
     function:
       blocks_movement: false
       blocks_sight: false
@@ -418,7 +428,7 @@ symbols:
       nameable: true
   "📦":
     label: "Casse / rifornimenti"
-    render: {mode: icon, prop: pr_crate, fill: "#e6ccb2", altezza_m: 1.1}
+    render: {mode: icon, prop: pr_crate, fill: "#e6ccb2", altezza_m: 1.5}
     function:
       blocks_movement: true
       blocks_sight: true
@@ -438,7 +448,7 @@ symbols:
       nameable: true
   "🕸":
     label: "Ragnatele (terreno difficile)"
-    render: {mode: icon, prop: pr_web, fill: "#dee2e6", altezza_m: 0.6}
+    render: {mode: icon, prop: pr_web, fill: "#dee2e6", altezza_m: 0.75}
     function:
       blocks_movement: false
       blocks_sight: false
@@ -449,7 +459,7 @@ symbols:
       hazard: {kind: magic, severity: minor}
   "❄":
     label: "Ghiaccio"
-    render: {mode: icon, prop: pr_ice, fill: "#caf0f8", altezza_m: 0.1}
+    render: {mode: icon, prop: pr_ice, fill: "#caf0f8", altezza_m: 0.0}
     function:
       blocks_movement: false
       blocks_sight: false
@@ -493,7 +503,7 @@ symbols:
       nameable: false
   "🏛":
     label: "Edificio / tempio"
-    render: {mode: icon, prop: pr_temple, fill: "#dee2e6", altezza_m: 5.5, texture: pietra-chiara}
+    render: {mode: icon, prop: pr_temple, fill: "#dee2e6", altezza_m: 6.0, texture: pietra-chiara}
     function:
       blocks_movement: true
       blocks_sight: true
@@ -513,7 +523,7 @@ symbols:
       hazard: {kind: fire, severity: lethal}
   "🗿":
     label: "Statua"
-    render: {mode: icon, prop: pr_statue, fill: "#dee2e6", altezza_m: 2.2}
+    render: {mode: icon, prop: pr_statue, fill: "#dee2e6", altezza_m: 1.5}
     function:
       blocks_movement: true
       blocks_sight: true
@@ -523,7 +533,7 @@ symbols:
       nameable: true
   "🌉":
     label: "Ponte / passerella"
-    render: {mode: icon, prop: pr_bridge, fill: "#e6ccb2", altezza_m: 0.8}
+    render: {mode: icon, prop: pr_bridge, fill: "#e6ccb2", altezza_m: 0.75}
     function:
       blocks_movement: false
       blocks_sight: false
@@ -574,7 +584,7 @@ symbols:
       nameable: true
   "⚰":
     label: "Sarcofago / bara"
-    render: {mode: icon, prop: pr_coffin, fill: "#e6ccb2", altezza_m: 0.8}
+    render: {mode: icon, prop: pr_coffin, fill: "#e6ccb2", altezza_m: 0.75}
     function:
       blocks_movement: true
       blocks_sight: false
@@ -647,9 +657,19 @@ symbols:
   # ⛺ e' muro dal 2026-09-04 (ADR-0042): un telo teso blocca la vista.
   # Prima le tende disegnate col glifo giusto non bloccavano nulla e quelle
   # disegnate con ⬛ bloccavano tutto: i due errori si annullavano per caso.
+  # ALTEZZA 1,0 m — decisione DM del 2026-09-12: «le tende falle piu' basse».
+  # Chiude la seconda meta' del buco di ADR-0042: la tenda si estrudeva al
+  # default di 0,6 m mentre un edificio sta a 3,2.
+  #
+  # ⚠️ Incoerenza fra le due catene, dichiarata: ⛺ e' un MURO nell'export UVTT
+  # (un telo teso blocca la vista, ADR-0042) ma a 1 m nel render 3D e' piu'
+  # bassa di una creatura in piedi. Le due catene rispondono a domande diverse
+  # — la linea di vista nel VTT, il volume nella scena Blender — e la scelta e'
+  # del DM. Se un giorno stona guardando una scena renderizzata, il numero da
+  # cambiare e' questo, non il muro.
   "⛺":
     label: "Tenda (telo teso: blocca la vista, si abbatte)"
-    render: {mode: icon, prop: pr_tent, fill: "#e6ccb2"}
+    render: {mode: icon, prop: pr_tent, fill: "#e6ccb2", altezza_m: 0.75}
     function:
       blocks_movement: true
       blocks_sight: true
@@ -677,9 +697,13 @@ symbols:
       obscurement: none
       move_cost: 2
       nameable: true
+  # ALTEZZA 1,5 m — decisione DM del 2026-09-12. Era l'unico simbolo che si
+  # chiama «muro» e un'altezza non ce l'aveva: si estrudeva al default generico
+  # di 0,6 m, cioe' un gradino. A 1,5 m e' una copertura all'altezza del petto,
+  # che e' esattamente cio' che l'etichetta promette (+4 CA).
   "🧱":
     label: "Muretto / copertura bassa (+4 CA)"
-    render: {mode: icon, prop: pr_lowwall, fill: "#e6ccb2"}
+    render: {mode: icon, prop: pr_lowwall, fill: "#e6ccb2", altezza_m: 1.5}
     function:
       blocks_movement: false
       blocks_sight: false

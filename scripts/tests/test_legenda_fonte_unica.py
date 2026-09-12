@@ -221,6 +221,59 @@ class TestLeDerogheSonoDichiarate(unittest.TestCase):
         self.assertIn("ADR-0049", legenda.deroghe()["🌲"])
 
 
+class TestLeAltezzeSonoModuliDiGriglia(unittest.TestCase):
+    """Un'altezza non e' un numero libero: e' un multiplo del quadretto.
+
+    Decisione DM del 2026-09-12 — *«muri piccoli 1.5 metri e poi multipli di
+    1.5 o approssimazioni piu' vicine possibili»*. Il quadretto del repo e'
+    1,5 m per tutti e tre i sistemi (`LEGENDA-FUNZIONALE-SPEC` §3.5), quindi
+    cio' che sta in piedi occupa quadretti interi e l'ingombro che si scavalca
+    mezzo quadretto.
+
+    Prima erano numeri a occhio — 3.2, 2.2, 1.6, 1.4, 1.1, 0.9, 0.8, 0.6, 0.4,
+    -0.3, -0.6 — e nessuno di essi voleva dire niente rispetto alla griglia su
+    cui la scena e' costruita.
+    """
+
+    PASSO = 0.75  # mezzo quadretto
+
+    def _e_modulo(self, v):
+        return abs(v / self.PASSO - round(v / self.PASSO)) < 1e-9
+
+    def test_ogni_altezza_e_un_modulo(self):
+        for sim, v in legenda.altezze().items():
+            self.assertTrue(self._e_modulo(v),
+                            f"{sim} = {v} m non e' un multiplo di mezzo quadretto")
+
+    def test_cio_che_sta_in_piedi_occupa_quadretti_interi(self):
+        for sim in ("🗼", "⛰", "🏛", "🌳", "🌲", "🟪", "🏰", "⬛", "🧱", "📦"):
+            v = legenda.altezze()[sim]
+            self.assertAlmostEqual(v / 1.5, round(v / 1.5), places=9,
+                                   msg=f"{sim} = {v} m non e' un quadretto intero")
+
+    def test_il_muro_piccolo_e_un_quadretto(self):
+        """La riga che il DM ha dettato: «muri piccoli 1.5 metri»."""
+        self.assertEqual(legenda.altezze()["🧱"], 1.5)
+
+    def test_l_acqua_profonda_resta_piu_profonda_di_quella_bassa(self):
+        """L'unico posto dove la semantica ha battuto l'arrotondamento.
+
+        `🟦` stava a -0,6: il modulo piu' vicino sarebbe -0,75, lo stesso a cui
+        finisce `🌊` (-0,3). Due glifi che esistono per distinguere l'acqua
+        alta dalla bassa sarebbero diventati la stessa profondita'. `🟦` prende
+        un quadretto pieno, che e' anche quello che «profonda» vuol dire.
+        """
+        a = legenda.altezze()
+        self.assertLess(a["🟦"], a["🌊"])
+        self.assertEqual(a["🟦"], -1.5)
+
+    def test_la_scala_resta_leggibile_dal_basso_verso_l_alto(self):
+        a = legenda.altezze()
+        for basso, alto in (("🌊", "🌿"), ("⛺", "🧱"), ("🧱", "⬛"),
+                            ("⬛", "🏰"), ("🏰", "🏛"), ("🏛", "⛰"), ("⛰", "🗼")):
+            self.assertLess(a[basso], a[alto], f"{basso} deve stare sotto {alto}")
+
+
 class TestLaMigrazioneNonHaCambiatoNiente(unittest.TestCase):
     """Il criterio d'uscita di ADR-0048 §4: nessuna regressione visiva."""
 
@@ -238,26 +291,46 @@ class TestLaMigrazioneNonHaCambiatoNiente(unittest.TestCase):
         self.assertEqual(set(legenda.pericoli()), self.CONGELATI["pericoli"])
         self.assertEqual(set(legenda.pattern_pesanti()), self.CONGELATI["pesanti"])
 
-    def test_le_tre_tabelle_del_blender_valgono_quel_che_valevano(self):
-        """Le ha trovate il gate, non l'inventario: non erano in nessuna misura."""
-        self.assertEqual(set(legenda.piatti()), self.CONGELATI["piatti"])
-        self.assertEqual(len(legenda.altezze()), 29)
-        self.assertEqual(len(legenda.texture()), 15)
-        self.assertEqual(legenda.altezze()["🗼"], 9.0, "la torre")
-        self.assertEqual(legenda.altezze()["🕳"], -2.5, "la voragine e' uno scavo")
+    def test_le_tre_tabelle_del_blender_le_ha_trovate_il_gate(self):
+        """Non erano in nessuna misura: le ha scoperte `legend/single-source`.
 
-    def test_il_buco_di_adr_0042_nel_blender_resta_dichiarato(self):
-        """⛺ e 🔳 non hanno un'altezza propria: si estrudono al default.
-
-        🐛 Terzo sintomo della causa che ADR-0048 chiude, e il primo trovato
-        **da un gate** invece che da un bug al tavolo. Non si corregge qui
-        perche' l'altezza di una tenda e' contenuto, non refactoring:
-        decisione D2 di PIANO-VENDIBILITA §8. Questo test esiste perche' il
-        giorno in cui qualcuno la decide, sia lui a togliere il test — non il
-        buco a sopravvivere in silenzio.
+        ⚠️ **I valori delle altezze non sono piu' quelli di allora, e non e'
+        una regressione**: il 2026-09-12 il DM le ha portate tutte sul modulo
+        di griglia (`TestLeAltezzeSonoModuliDiGriglia`). Qui restano fissate la
+        **cardinalita'** delle tre tabelle e i due insiemi che quella decisione
+        non tocca, perche' sono la prova che la migrazione le ha prese tutte.
         """
-        for sim in ("⛺", "🔳"):
-            self.assertNotIn(sim, legenda.altezze(), sim)
+        self.assertEqual(set(legenda.piatti()), self.CONGELATI["piatti"])
+        self.assertEqual(len(legenda.altezze()), 31)
+        self.assertEqual(len(legenda.texture()), 15)
+        self.assertEqual(legenda.altezze()["🗼"], 9.0, "la torre: 6 quadretti")
+        self.assertLess(legenda.altezze()["🕳"], 0, "la voragine resta uno scavo")
+
+    def test_il_buco_di_adr_0042_nel_blender_e_chiuso_a_meta(self):
+        """⛺ ha la sua altezza; 🔳 no, e la differenza e' voluta.
+
+        🐛 Era il terzo sintomo della causa che ADR-0048 chiude, e il primo
+        trovato **da un gate** invece che da un bug al tavolo: tenda e dais si
+        estrudevano al default generico di 0,6 m mentre un edificio sta a 3,2.
+
+        Il DM ha deciso la tenda il 2026-09-12 (1 m, *«falle piu' basse»*) e
+        insieme il muretto, che era l'unico simbolo chiamato «muro» senza
+        altezza. **Il dais no**, e non e' una dimenticanza: `🔳` non compare in
+        **nessuna cella** del repo — e' nato con ADR-0042 e non e' ancora stato
+        usato. Decidere adesso l'altezza di una pedana che nessuno ha disegnato
+        vorrebbe dire inventarla; il giorno che serve, costa zero.
+        """
+        self.assertEqual(legenda.altezze()["⛺"], 0.75)
+        self.assertEqual(legenda.altezze()["🧱"], 1.5)
+        self.assertNotIn("🔳", legenda.altezze(),
+                         "il dais resta al default finche' qualcuno non lo usa")
+
+    def test_la_tenda_e_piu_bassa_del_muretto_e_il_muretto_del_muro(self):
+        """L'ordine che il DM ha dato, come invariante invece che come numeri."""
+        a = legenda.altezze()
+        self.assertLess(a["⛺"], a["🧱"], "la tenda e' piu' bassa del muretto")
+        self.assertLess(a["🧱"], a["🏰"], "il muretto e' piu' basso del muro")
+        self.assertLess(a["🏰"], a["🗼"], "e la torre svetta su tutto")
 
     def test_i_63_simboli_ci_sono_tutti(self):
         """62 era il numero della spec di luglio; 🔳 e' entrato con ADR-0042."""

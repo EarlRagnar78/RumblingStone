@@ -1,3 +1,13 @@
+<!-- validate-docs: ignore-begin -->
+> 🧊 **ISTANTANEA CONGELATA — NON È CANONE.** Copia del file com'era **prima**
+> del lotto dei Doni v4-bis (2026-09-12). Serve a rileggere la versione
+> precedente senza passare da `git`. **Non si gioca da qui** e **non si
+> aggiorna**: il file vivo sta al percorso indicato dal nome (i `~` sono le
+> barre). I link qui dentro sono storici e non risolvono: per questo il
+> file porta la direttiva d'esclusione.
+
+---
+
 # RumblingStone Campaign — Artifacts Reference (D&D 3.5)
 
 This file documents all **campaign-specific artifacts** created for the RumblingStone campaign.
@@ -231,23 +241,9 @@ Created during Hella's resurrection ritual from 3 Treant seeds that germinated a
 
 ### Hella's Resurrection Gifts (Permanent, from party sacrifices)
 
-> ⚠️ **NOT YET PAID — the rite has not been played.** Each gift is a *transplant*:
-> the donor gives a power **of his own artifact**, which leaves it **permanently**
-> and grows in one of the Necklace's seeds (`ARC07-DEF-3` §5, DM 2026-09-12).
-> A PC who refuses leaves that seed **dormant**, and **his artifact reacts**.
-
-- **Lo Scudo del Custode** (from Thorik — he gives the Crown's **+2 deflection**,
-  keeping **−1 AC** forever): 1/day, immediate action, Hella takes the damage
-  aimed at an ally within 9 m, **halved**. 🔄 *Eco del Custode*: whenever she uses
-  it, **Thorik is hasted 3 rounds and moves toward the one she protected**.
-- **Pelle di Adamantio:** **DR 3/adamantine** (from Tordek — he gives *Ancoraggio
-  della Montagna*, which leaves the Braziers forever). This is Hella's **only**
-  DR: the Treant Hybrid grants none, and she took the Root path, not the Guard path.
-- **Il Rovo Eldritch** (from Artemis — he gives **1d6 of Eldritch Blast**,
-  7d6 → 6d6, forever): **at will**, standard action, ranged touch 18 m, **2d6**
-  (half thorns, half fire).
-- 🌱 **The seed gives back:** once per seed, ever — Hella's call, immediate action
-  — the seed returns to the donor what he gave, **for one whole scene**.
+- **Pelle di Adamantio:** DR 3/- (from Thorik's blood sacrifice)
+- **Timeless Body:** Immunity to poison, disease, aging (from Tordek's Ki sacrifice)
+- **Spontaneous Rebirth (1/day):** Auto-stabilize + temp HP when reaching 0 HP (from Artemis's chaos spark)
 
 ### Treant Hybrid Template (Permanent Transformation)
 
@@ -388,3 +384,5 @@ All synergies activate when artifact bearers are within 30 ft (9m) of each other
 **Offered by:** Lathander and Mask (dual divine patronage)
 **Source:** `PG/Artefatti/Artefatti-Pg/PrestigeClass/lord_sun_shadow/`
 **Outcome:** Artemis **rejected** this path, choosing to remain a warlock and forge his own destiny. The Ring of Chaotic Illumination evolved as a result, absorbing the divine essences differently.
+
+<!-- validate-docs: ignore-end -->

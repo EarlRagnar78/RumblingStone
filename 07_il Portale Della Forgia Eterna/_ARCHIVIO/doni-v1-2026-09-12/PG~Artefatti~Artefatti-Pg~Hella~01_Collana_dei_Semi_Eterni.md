@@ -1,3 +1,13 @@
+<!-- validate-docs: ignore-begin -->
+> 🧊 **ISTANTANEA CONGELATA — NON È CANONE.** Copia del file com'era **prima**
+> del lotto dei Doni v4-bis (2026-09-12). Serve a rileggere la versione
+> precedente senza passare da `git`. **Non si gioca da qui** e **non si
+> aggiorna**: il file vivo sta al percorso indicato dal nome (i `~` sono le
+> barre). I link qui dentro sono storici e non risolvono: per questo il
+> file porta la direttiva d'esclusione.
+
+---
+
 # Collana dei Semi Eterni
 *(Necklace of Eternal Seeds — artefatto legato di Hella Oakenshield)*
 
@@ -85,31 +95,14 @@ un'impronta che è tornata a riempirsi. Finché Durik è evocato ed entro
 ferito / distrutto). Non è telepatia: è la connessione razziale Dream
 Dwarf amplificata dal viaggio `[INFERRED — needs DM confirmation]`.
 
-#### 6. I Doni dei Semi (3 slot) `[CANONE — DM 2026-09-12]`
+#### 6. I Doni dei Semi (3 slot — NON SPESI)
 I tre semi custodiscono i **sacrifici che i compagni offrirono al
-rituale**, e da oggi si sa **quali**: al rito ogni PG dona **un potere del
-proprio artefatto**, che lascia quell'artefatto **per sempre** e
-**germoglia qui** (`ARC07-DEF-3` §5 — il trapianto).
-
-| Seme | Chi ha donato, e cosa | 🌱 Cosa germoglia |
-|---|---|---|
-| **I** | 🛡️ Thorik — il **+2 di deflessione** della Corona | **Lo Scudo del Custode**: 1/giorno, azione immediata, Hella prende su di sé il danno destinato a un alleato entro **9 m**, **dimezzato**. 🔄 E **Thorik è accelerato 3 round, verso chi è stato protetto** |
-| **II** | ⚒️ Tordek — **Ancoraggio della Montagna** (2/g) dai Bracieri | **Pelle di Adamantio: RD 3/adamantino**. 🔎 È la **sua unica** riduzione del danno: l'Ibrido Treant non ne dà, e la Via della Guardia (RD 2/−) non è la strada che ha scelto |
-| **III** | 🔮 Artemis — **1d6 di *Eldritch Blast*** (7d6 → 6d6) | **Il Rovo Eldritch**: **a volontà**, azione standard, contatto a distanza 18 m, **2d6** — metà rovi, metà fuoco. Non si prepara e non finisce mai |
-
-**Un seme non donato resta dormiente**: evoca il suo guardiano come sopra, ma
-**non germoglia niente**. Si può colmare **in gioco** più avanti (quest personali
-ARC-09), e il Dono si attiva **all'indietro**.
-
-🌱 **LA RESTITUZIONE.** *Una volta sola, per sempre, per ciascun seme
-germogliato*: nel momento del bisogno **Hella decide** — **azione immediata** — e
-il seme **rende al donatore ciò che aveva dato, per una scena intera**. La Corona
-torna a proteggere Thorik, l'Ancoraggio torna nei Bracieri, l'*Eldritch Blast*
-torna a 7d6. Il seme **resta germogliato**, ma non restituirà mai più.
-**Spendere la restituzione NON consuma l'evocazione del seme.**
-
-> È la riga che rende il dono un **deposito** invece che una perdita — e chi lo
-> rende è **la resuscitata**.
+rituale**. Ciascun seme può, una volta sola, restituire quel sacrificio
+come **dono** al compagno che lo fece, nel momento del bisogno
+(state.md §6: "party gift slots — unspent: 3").
+`[Meccanica esatta da definire col DM — INFERRED: proposta = azione
+immediata di Hella, il dono replica o compensa ciò che fu sacrificato;
+spendere un dono NON consuma l'evocazione del seme]`.
 
 ---
 
@@ -193,3 +186,5 @@ con un atto `[INFERRED — leva narrativa per il DM, non meccanica]`.
 | ARC-07 P4 (in corso) | Il Sogno della Terra porta l'Impronta di Durik verso la camera dello Smeraldo |
 | ARC-07 P3B (da giocare) | **La Collana germoglia** al rituale di resurrezione; Durik Riforgiato la riconosce |
 | ARC-08/09 | Stati futuri (vedi tabella sopra) |
+
+<!-- validate-docs: ignore-end -->

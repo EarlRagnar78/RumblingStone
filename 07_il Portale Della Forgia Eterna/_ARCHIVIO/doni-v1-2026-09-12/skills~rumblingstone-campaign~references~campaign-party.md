@@ -1,3 +1,13 @@
+<!-- validate-docs: ignore-begin -->
+> 🧊 **ISTANTANEA CONGELATA — NON È CANONE.** Copia del file com'era **prima**
+> del lotto dei Doni v4-bis (2026-09-12). Serve a rileggere la versione
+> precedente senza passare da `git`. **Non si gioca da qui** e **non si
+> aggiorna**: il file vivo sta al percorso indicato dal nome (i `~` sono le
+> barre). I link qui dentro sono storici e non risolvono: per questo il
+> file porta la direttiva d'esclusione.
+
+---
+
 # The Rumbling Stone — Party Reference (D&D 3.5)
 
 Campaign: RumblingStone (Red Hand of Doom adaptation, Cannath Vale / Forgotten Realms 1372 DR)
@@ -118,7 +128,7 @@ Current party level: **13** | Party size: **4 PCs**
 **Combat Notes:**
 
 - Collana dei Semi Eterni grants: +4 WIS, +3 natural AC, Avatar of Root (Huge Treant form 1/day), summon Adamantine Treant (3/day); 3rd seed summons Durik instead of generic Treant
-- Resurrection gifts — ⚠️ **not yet paid, the rite has not been played** (`ARC07-DEF-3` §5, v4-bis DM 2026-09-12): **Scudo del Custode** (1/day immediate, takes an ally's damage halved; Thorik is then hasted 3 rounds toward the protected one), **Pelle di Adamantio** (DR 3/adamantine — her *only* DR), **Rovo Eldritch** (at-will ranged touch 18 m, 2d6). Each is a power **transplanted out of the donor's artifact, permanently**; a refused gift leaves that seed dormant
+- Additional resurrection gifts: DR 3/- (Pelle di Adamantio), Timeless Body, Spontaneous Rebirth (1/day auto-stabilize at 0 HP)
 - Viaggio Onirico gifts (variable based on trial outcomes): Marchio della Veritade, perception abilities, Via della Guardia (DR 2/—) or Via della Radice (Resist Cold 15 + Regen on sacred ground)
 - Primary healer via Cure spells and Wand of Cure Moderate Wounds
 - Augment Summoning + Natural Spell + Power of Nature for powerful summons while wild-shaped
@@ -253,3 +263,5 @@ After the destruction of Drellin's Ferry (where Thorik died and was resurrected)
 
 For full story arc details: `references/campaign-story-arcs.md`
 For full narrative history: `campaign/lore/campaign-history.md`
+
+<!-- validate-docs: ignore-end -->

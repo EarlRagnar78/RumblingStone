@@ -1,3 +1,13 @@
+<!-- validate-docs: ignore-begin -->
+> 🧊 **ISTANTANEA CONGELATA — NON È CANONE.** Copia del file com'era **prima**
+> del lotto dei Doni v4-bis (2026-09-12). Serve a rileggere la versione
+> precedente senza passare da `git`. **Non si gioca da qui** e **non si
+> aggiorna**: il file vivo sta al percorso indicato dal nome (i `~` sono le
+> barre). I link qui dentro sono storici e non risolvono: per questo il
+> file porta la direttiva d'esclusione.
+
+---
+
 # ARTEFATTI — Matrice Versioni × Contenuto (task T4, piano trasversale)
 
 > **Scopo**: fare per `PG/Artefatti/` ciò che `ARC07-MATRICE-VERSIONI.md` ha
@@ -70,19 +80,14 @@ Cartella `Artefatti-Pg/Aegis Fang/`:
 | `DEPRECATO-Avvneture_per_nani-refuso-duplicato.txt` | appunti, duplicato byte-identico | 📸 deprecato (T6a: `git mv` dal refuso `Avvneture_per_nani.txt`, banner in testa) |
 | `~$gis Fang.docx`, `~WRL0191.tmp` | file temporanei Word | ✅ **RIMOSSI (conferma DM 2026-07-04)** — `git rm`, erano lock/autosave Word senza contenuto utile |
 
-> **↩ Eco del rituale P3B (v4-bis, DM 2026-09-12)**: Aegis Fang **non viene
-> donata** al rituale di Hella — il dono di Thorik è il **+2 di deflessione
-> della Corona**. L'arma però è **senziente (Ego 14)** e reagisce alla scelta
-> del portatore: 🟢 se dona, **smette di dubitare di lui** (nessuna prova di
-> opposizione per un arco); 🔴 se rifiuta, **lo giudica** nelle scene che
-> riguardano Hella o dei nani da proteggere. **Riportato** nel master
-> `00_Aegis_Fang-MASTER-DM.md` (§ *Costi e vincoli*). Fonte:
-> `../../07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md` §5.
->
-> ⚠️ **Superata la riga precedente**, che toglieva il *Returning* col «Filo
-> dell'Ascia»: contraddiceva il profilo dello Stadio 1 (*«+4 Sacra
-> **Ritornante**»*). Istantanea in
-> `../../07_il Portale Della Forgia Eterna/_ARCHIVIO/doni-v1-2026-09-12/`.
+> **↩ Eco del rituale P3B (T9)**: se al rituale di Hella **Thorik ha scelto
+> l'alternativa «Filo dell'Ascia»** invece del sangue, **Aegis Fang perde la
+> proprietà *Returning*** fino al pieno risveglio (post-Siege,
+> `05_Aegis_Fang_Final_Awakening.html`): ogni lancio dell'ascia va recuperato
+> a mano. **Riportato** nel master `00_Aegis_Fang-MASTER-DM.md` (§ *Costi e
+> vincoli*) in T6b. Fonte: `../../07_il Portale Della Forgia
+> Eterna/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` §2-BIS → *Tabella
+> echi*, riga «Alternativa Filo dell'Ascia».
 
 ## 3. RING OF CHAOTIC ILLUMINATION (Artemis)
 
@@ -160,3 +165,5 @@ speso). Non è un errore di questo file: è l'eredità del "written forward"
 2026-07-04)**: il DM ha scelto la **doppia colonna** — state.md §6 ora ha
 le colonne «Oggi al tavolo (ARC-07 P4)» e «Preparato (ingresso ARC-09)»
 nella stessa tabella; l'ambiguità è chiusa.
+
+<!-- validate-docs: ignore-end -->

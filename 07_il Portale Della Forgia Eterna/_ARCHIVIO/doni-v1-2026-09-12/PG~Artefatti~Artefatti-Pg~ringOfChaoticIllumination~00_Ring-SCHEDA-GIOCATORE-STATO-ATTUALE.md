@@ -1,3 +1,13 @@
+<!-- validate-docs: ignore-begin -->
+> 🧊 **ISTANTANEA CONGELATA — NON È CANONE.** Copia del file com'era **prima**
+> del lotto dei Doni v4-bis (2026-09-12). Serve a rileggere la versione
+> precedente senza passare da `git`. **Non si gioca da qui** e **non si
+> aggiorna**: il file vivo sta al percorso indicato dal nome (i `~` sono le
+> barre). I link qui dentro sono storici e non risolvono: per questo il
+> file porta la direttiva d'esclusione.
+
+---
+
 # RING OF CHAOTIC ILLUMINATION — Scheda Giocatore (STATO ATTUALE)
 
 > **Come si usa questa scheda (DM)**: è l'**unica** scheda da dare al
@@ -54,25 +64,10 @@ con la volontà di Artemis e col suo percorso (vedi Cerebromorphosis).
 
 ---
 
-## ⚒️ Il dono al rito di Hella (`ARC07-DEF-3` §5) — **DM 2026-09-12**
-
-Al rito di resurrezione, **Artemis può donare un dado del proprio *Eldritch
-Blast***. Non è un potere dell'Anello: è un pezzo di quel che **è**.
-
-| | Effetto |
-|---|---|
-| **Se dona** | 🔴 **L'*Eldritch Blast* scende da 7d6 a 6d6, per sempre.** È il potere che Artemis usa **a ogni turno**: ~11% del colpo, per il resto della campagna. 🌱 Hella riceve **Il Rovo Eldritch** — **a volontà**, azione standard, contatto a distanza 18 m, **2d6** (metà rovi, metà fuoco) |
-| 🟢 **Reazione dell'Anello al dono** | **non commenta** — e per un oggetto nato dal *caos ordinato* della Forgia il silenzio è assenso. 🟢 Poi, la prima volta che Hella usa il Rovo davanti ad Artemis, **l'Anello si illumina di riflesso**: riconosce la propria fiamma |
-| 🔴 **Reazione al rifiuto** | **si spegne 24 ore**, tutto compreso: Ali d'Ombra, Passo d'Ombra, i quattro 1/giorno, la Doppia Fiamma. Non è Moradin — è l'Anello, **nato dalla Colonna di Mithral della Forgia**, che ha visto il portatore dire di no **alla Forgia**. Dopo, tutto come prima. ⚠️ E il DM segna in privato che **«ciò che dorme nell'Anello» ha visto** |
-| 🌱 **La restituzione** | **una volta sola, per sempre** (Collana, potere #6): Hella può **rendergli il settimo dado per una scena intera**. Poi mai più |
-
-⚠️ **Se Artemis non dona, l'*Eldritch Blast* resta a 7d6** e questa sezione non si applica.
-🔎 **Nota di sistema**: le invocazioni di un warlock sono **a volontà**, non a slot — un warlock paga sull'Anello o sul proprio Blast, mai su una tabella di incantesimi.
-
----
-
 ### Registro sblocchi (compila il DM, a penna)
 
 | Data (sessione) | Cosa si è sbloccato/attivato | Visto dal giocatore? |
 |---|---|---|
 | … | … | … |
+
+<!-- validate-docs: ignore-end -->

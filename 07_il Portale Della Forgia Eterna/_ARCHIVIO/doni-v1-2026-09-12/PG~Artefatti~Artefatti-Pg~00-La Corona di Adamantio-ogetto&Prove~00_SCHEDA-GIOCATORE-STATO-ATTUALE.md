@@ -1,3 +1,13 @@
+<!-- validate-docs: ignore-begin -->
+> 🧊 **ISTANTANEA CONGELATA — NON È CANONE.** Copia del file com'era **prima**
+> del lotto dei Doni v4-bis (2026-09-12). Serve a rileggere la versione
+> precedente senza passare da `git`. **Non si gioca da qui** e **non si
+> aggiorna**: il file vivo sta al percorso indicato dal nome (i `~` sono le
+> barre). I link qui dentro sono storici e non risolvono: per questo il
+> file porta la direttiva d'esclusione.
+
+---
+
 # CORONA DI ADAMANTIO — Scheda Giocatore (STATO ATTUALE)
 
 > **Come si usa questa scheda (DM)**: è l'**unica** scheda da dare al
@@ -28,7 +38,7 @@ d'oro, una di verde. La terza è fredda.*
 
 | Potere | Effetto (D&D 3.5) | Da |
 |---|---|---|
-| **Corona di Protezione** (Str) | **+2 deflessione alla CA** — ⚠️ **+1 se Thorik ha donato al rito di Hella** (vedi in fondo) | Rit. 1 |
+| **Corona di Protezione** (Str) | **+2 deflessione alla CA** | Rit. 1 |
 | **Consapevolezza della Pietra** (Sop) | su terra/pietra naturale **+1 morale** att./danni e **+2 intuizione CA**; **porte segrete**, **trappole** e **Comprendere Linguaggi** a volontà *(DM 2026-07-04)* | Rit. 1 |
 | **Intuito di Moradin** (Sop) | **Vista del Vero** 1/giorno; **+4 intuizione** Artigianato (fabbro) | Rit. 2 |
 | ⭐ **Volontà Adamantina** (Sop) | su terra/pietra: **immune a charme e compulsione**, **+4 razziale ai TS** vs altri effetti mentali | **Rit. 3** |
@@ -179,20 +189,4 @@ LaCorona_di_Adamantio-DM.md]`
 |---|---|---|
 | … | … | … |
 
----
-
-## ⚒️ Il dono al rito di Hella (`ARC07-DEF-3` §5) — **DM 2026-09-12**
-
-Al rito di resurrezione, **Thorik può donare il +2 di deflessione della Corona**.
-Non le regala un potere: **le passa il suo mestiere**, quello di stare davanti.
-
-| | Effetto |
-|---|---|
-| **Se dona** | 🔴 **La Corona protegge di 1 in meno, per sempre**: la deflessione scende a **+1**. 🌱 Hella riceve **Lo Scudo del Custode** (1/g, immediata: prende su di sé il danno di un alleato entro 9 m, **dimezzato**) |
-| 🔄 **L'Eco del Custode** | ogni volta che Hella usa lo Scudo, **Thorik è accelerato 3 round** e **si muove verso chi lei ha appena protetto** (almeno un'azione di movimento per round che riduca la distanza, o l'accelerazione si spegne). 🟢 E **la Corona si scalda**: è l'unico segno che dà |
-| 🟢 **Reazione della Corona al dono** | non protesta — la pietra accetta di essere spesa, è quello che fa la pietra. Al **Rituale 4** la Senzienza si sveglierà avendo **già una cosa da dire su di lui** |
-| 🔴 **Reazione al rifiuto** | la Corona **tace**, e il **−2 DES** che gli ha preso resta: si è pagata la gemma e non si è pagata lei. Al Rituale 4 la Senzienza arriva **fredda** — i poteri sì, il tono no |
-| 🌱 **La restituzione** | **una volta sola, per sempre** (Collana, potere #6): nel momento del bisogno Hella può **rendergli la deflessione per una scena intera**. Poi mai più |
-
-⚠️ **Se Thorik non dona, questa sezione non si applica**: la Corona resta a **+2**.
-
+<!-- validate-docs: ignore-end -->

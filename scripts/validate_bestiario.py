@@ -121,6 +121,23 @@ def check_dossier(path: Path):
         err(f"{rel}: dossier senza titolo H1")
 
 
+ARCHIVI = {"_ARCHIVIO", "Old"}
+
+
+def in_archivio(path) -> bool:
+    """Vero se il file sta in una cartella d'archivio.
+
+    Gli archivi contengono **copie** di file vivi. Chi *indicizza* deve
+    saltarle, o ogni copia diventa un record doppio: e' successo il 2026-09-12,
+    quando dodici istantanee fecero passare il catalogo da 305 a 311 record e
+    resero rosso questo gate con un doppione di «Battaglia Finale - Fase 0».
+    ⚠️ La regola vale per chi indicizza, **non** per chi sorveglia: la
+    decisione **D1** tiene apposta `_ARCHIVIO/` dentro il raggio di
+    `validate_maps`, perche' li' lo scopo e' che nessun master sfugga.
+    """
+    return bool(ARCHIVI.intersection(path.parts))
+
+
 def is_statblock(path: Path) -> bool:
     return bool(HAS_CR_RE.search(path.name.lower())) and path.suffix == ".md" \
         and path.name == path.name.lower()
@@ -185,7 +202,7 @@ def main(argv=None):
         if not d.is_dir():
             continue
         for path in sorted(d.rglob("*.md")):
-            if path.name.startswith("README"):
+            if path.name.startswith("README") or in_archivio(path):
                 continue
             if is_statblock(path):
                 check_statblock(path)
@@ -219,7 +236,8 @@ def main(argv=None):
 
     n_stat = sum(1 for s in ("mostri", "villain", "png")
                  for p in (BEST / s).rglob("*.md")
-                 if not p.name.startswith("README") and is_statblock(p))
+                 if not p.name.startswith("README") and not in_archivio(p)
+                 and is_statblock(p))
 
     if args.json:
         report = {

@@ -168,8 +168,15 @@ def should_skip(path):
     # 'STANDALONE-*' = moduli autoconclusivi (altro sistema, altra ambientazione):
     # i loro statblock sono locali al modulo e non appartengono al Bestiario della
     # campagna — indicizzarli mescolerebbe PF1e e 3.5 nello stesso catalogo.
+    # '_ARCHIVIO' = istantanee e sorgenti assorbiti: sono COPIE di file vivi, e
+    # indicizzarle duplica ogni statblock che contengono. Trovato il 2026-09-12,
+    # nel momento esatto in cui si archiviarono 12 file: il catalogo passo' a
+    # 311 record e `validate_bestiario` divento' rosso con un doppione di
+    # «Battaglia Finale – Fase 0». E' la forma del rischio che D10 aveva
+    # dichiarato — «una copia crea un secondo master» — comparsa al primo giro.
+    # `validate_modules.py` escludeva gia' `_ARCHIVIO` per la stessa ragione.
     skip_dirs = {'.git', 'node_modules', '.claude', '.cursor', '.windsurf', '.gemini', '.chatgpt', '.agents', '.github', 'Immagini', 'immage_campaign', 'Mappe', 'Musica', 'skills', 'Script', 'Old', 'png_La_mano_rossa_del_destino_files', 'tokens', 'homebrew', 'docs', 'campaign',
-                 'STANDALONE-Il-Drappo-di-Tarsilia'}
+                 '_ARCHIVIO', 'STANDALONE-Il-Drappo-di-Tarsilia'}
     for part in path.parts:
         if part in skip_dirs or part.endswith('_files'):
             return True

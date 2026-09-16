@@ -64,6 +64,11 @@ jobs:
           python scripts/build_legend.py --check
           python scripts/build_legenda_skill.py --check
 
+      - name: Stato di campagna — dati validi e state.md rigenerato identico (ADR-0050)
+        run: |
+          python scripts/validate_state.py
+          python scripts/render_state.py --check
+
       - name: Validate generated maps (well-formed, in-sync SVGs)
         run: python scripts/validate_maps.py
 

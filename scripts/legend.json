@@ -13,7 +13,7 @@
       "function": {
         "blocks_movement": false,
         "blocks_sight": true,
-        "deroga_uvtt": "il muro UVTT e' binario e il bosco no: blocca la vista ATTRAVERSO la cella, non DENTRO. Farlo muro pieno vorrebbe dire che un PG in mezzo agli alberi non vede il quadretto adiacente. Il glifo del margine e' il lotto di ADR-0049 (decisione DM del 2026-09-12).",
+        "deroga_uvtt": "il muro UVTT e' binario e il bosco no: blocca la vista ATTRAVERSO la cella, non DENTRO. Farlo muro pieno vorrebbe dire che un PG in mezzo agli alberi non vede il quadretto adiacente. Il glifo del margine e' il lotto di ADR-0051 (decisione DM del 2026-09-12).",
         "cover": "half",
         "obscurement": "heavy",
         "move_cost": 4,

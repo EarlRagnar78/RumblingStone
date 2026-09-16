@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 61,
+  "tool_count": 63,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -1512,6 +1512,86 @@
       ]
     },
     {
+      "id": "render_state",
+      "path": "scripts/render_state.py",
+      "category": "C-post-session-canon",
+      "language": "python",
+      "invocation": "python3 scripts/render_state.py",
+      "summary": "Genera le tabelle di canone di campaign/state.md a partire da campaign/state.yaml, dentro le otto regioni marcate `<!-- gen:state:NOME -->` (ADR-0050). Il DM continua a leggere un documento, non uno YAML. Senza il rendering lo YAML sarebbe una seconda fonte di verita' accanto a state.md, cioe' il difetto che la decisione esiste per chiudere: un master e una vista, mai due master.",
+      "use_case": "«Ho corretto un fatto di canone: come lo faccio arrivare alla tabella che leggo al tavolo, senza toccarla a mano?»",
+      "stability": "stable",
+      "stdlib_only": false,
+      "external_bins": [
+        "python3"
+      ],
+      "external_deps": [
+        "pyyaml"
+      ],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Gate CI: segnala il drift, non scrive."
+        },
+        {
+          "name": "--stdout",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Stampa senza toccare i file."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "campaign/state.yaml",
+          "kind": "yaml",
+          "required": true,
+          "schema": "scripts/schemas/campaign_state.schema.json"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "campaign/state.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok / in sync",
+        "1": "drift (--check) o errore di dominio",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Stesso YAML, stesso testo: idempotente."
+      },
+      "side_effects": {
+        "writes_canon": true,
+        "git_commit": false,
+        "network": false,
+        "notes": "Riscrive SOLO il tratto fra i marcatori; §5, §7 e i banner restano a mano."
+      },
+      "idempotent": true,
+      "consumes_schema": "scripts/schemas/campaign_state.schema.json",
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/render_state.py --check",
+      "tests": [
+        "scripts/tests/test_state_data.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0050-stato-di-campagna-dati-e-prosa.md"
+      ]
+    },
+    {
       "id": "session_wizard",
       "path": "scripts/session_wizard.py",
       "category": "C-post-session-canon",
@@ -1853,6 +1933,78 @@
       "tests": [],
       "docs": [
         "scripts/README-automation.md"
+      ]
+    },
+    {
+      "id": "validate_state",
+      "path": "scripts/validate_state.py",
+      "category": "C-post-session-canon",
+      "language": "python",
+      "invocation": "python3 scripts/validate_state.py",
+      "summary": "Gate su campaign/state.yaml: lo schema piu' le regole di coerenza che uno schema non esprime, fra cui R7 — le righe che NON dichiarano il proprio tempo si contano invece di indovinarle (oggi 58). Limite dichiarato: uno schema vincola la forma, non la verita'; cio' che rende impossibile e' scrivere un fatto senza dire a quale tempo appartiene, dove il canone quel tempo lo dichiara.",
+      "use_case": "«Questo file di stato e' ancora coerente, e quanti fatti sono rimasti senza un tempo?»",
+      "stability": "stable",
+      "stdlib_only": false,
+      "external_bins": [
+        "python3"
+      ],
+      "external_deps": [
+        "pyyaml"
+      ],
+      "args": [
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Uscita machine-readable."
+        },
+        {
+          "name": "--verbose",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Elenca archi e INFERRED."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "campaign/state.yaml",
+          "kind": "yaml",
+          "required": true,
+          "schema": "scripts/schemas/campaign_state.schema.json"
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "valido",
+        "1": "violazioni",
+        "2": "errore d'uso o dipendenza mancante"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false,
+        "notes": ""
+      },
+      "idempotent": true,
+      "consumes_schema": "scripts/schemas/campaign_state.schema.json",
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/validate_state.py",
+      "tests": [
+        "scripts/tests/test_state_data.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0050-stato-di-campagna-dati-e-prosa.md"
       ]
     },
     {
@@ -4650,7 +4802,7 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/validate_docs.py",
-      "summary": "Gate anti-deriva fra documentazione e filesystem: ogni percorso citato nei documenti d'ingresso (AGENTS.md, README.md, docs/INDEX.md) deve esistere davvero.",
+      "summary": "Gate anti-deriva fra documentazione e filesystem: ogni percorso citato nei documenti d'ingresso (AGENTS.md, README.md, docs/INDEX.md) deve esistere davvero. Dal 2026-09-16 enumera anche i file NUOVI non ancora in stage (prima un documento appena creato era invisibile al controllo) e boccia due ADR che condividono lo stesso numero.",
       "use_case": "«Il documento che un agente legge per primo descrive una cartella che non c'e'. Come faccio ad accorgermene prima che lui ci vada a cercare?»",
       "stability": "stable",
       "stdlib_only": true,
@@ -4682,6 +4834,15 @@
           "choices": null,
           "repeatable": false,
           "desc": "Rapporto machine-readable invece del testo."
+        },
+        {
+          "name": "--prossimo-adr",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Stampa l'ultimo ADR sul disco e il primo numero libero. Da eseguire PRIMA di scrivere un ADR nuovo: quinta voce della regola d'oro (ADR-0009). Esce 1 se una collisione esiste gia'."
         }
       ],
       "inputs": [

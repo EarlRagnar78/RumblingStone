@@ -30,7 +30,7 @@
 >
 > | | La §4 dice | L'export UVTT | Perché |
 > |---|---|---|---|
-> | `🌲` | blocca la vista | **non** è muro | il muro del VTT è binario e il bosco no — §7 lo dice contro se stessa. → [ADR-0049](../../plans/adr/ADR-0049-il-margine-del-bosco-e-un-glifo-a-se.md): il margine avrà un glifo suo |
+> | `🌲` | blocca la vista | **non** è muro | il muro del VTT è binario e il bosco no — §7 lo dice contro se stessa. → [ADR-0051](../../plans/adr/ADR-0051-il-margine-del-bosco-e-un-glifo-a-se.md): il margine avrà un glifo suo |
 > | `🌳` | blocca la vista | **non** è muro | è una **creatura** (§4.2 → §7): si muove |
 > | `📦` | blocca la vista | ✅ **è muro** | ratificato: costa +4 polilinee sui 2 `.uvtt` committati |
 >

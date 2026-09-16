@@ -1327,6 +1327,175 @@ ed è la meno importante.
 
 ---
 
+### 4.8 · Lotto **4d** — `state.yaml` `[4d-1 ✅ chiuso 2026-09-16 · 4d-2 ⬜]`
+
+> `[K canone · Opus 5 · xhigh · `python3 scripts/render_state.py --check` esce 0:
+> `state.md` **rigenerato è byte-identico** a quello committato]`
+
+#### 4.8.0 · Informazioni mancanti e assunzioni
+
+**Cosa non so, e come procedo**
+
+1. **Non so se i fatti in `state.md` siano veri.** Lo schema vincola la forma;
+   la verità la sa il DM. → **assunzione**: `state.md` di oggi è la verità di
+   riferimento, e il lotto la trasferisce senza giudicarla. È anche il motivo
+   per cui il criterio d'uscita è la **byte-identità** e non «sembra giusto».
+2. **Non so se le §5 e §7 debbano diventare dati.** Le otto regioni del
+   generatore della #99 non le coprono. → **assunzione**: restano prosa, e il
+   lotto lo **dichiara** invece di lasciarlo scoprire a qualcuno fra sei mesi.
+
+**Assunzioni di progetto**
+
+3. **I dati NON si recuperano dal ramo.** Vedi §4.8.1: sono una fotografia del
+   10 agosto. Si recupera la **macchina**; `state.yaml` si scrive da
+   `state.md` di **oggi**.
+4. **Il lotto si spezza in due**, e non è prudenza generica: **4d-1** non tocca
+   la via di scrittura del canone, **4d-2** sì — e su quella la #99 ha già
+   registrato una regressione propria.
+
+#### 4.8.1 · Audit: il ramo #99 è **384 commit indietro**, ed è il fatto che decide tutto
+
+| Cosa | Misura sul repo di oggi (`b701d39`) |
+|---|---|
+| `state.md` | **1.625 righe** — §8 changelog **1.178 (72%)**, parte viva **447** |
+| righe tabellari | **183** in tutto il file |
+| chi tocca `state.md` | **20 file**: 12 script + 8 test |
+| marcatori di regione in `state.md` | 🔴 **zero** |
+
+Il ramo `refs/pull/99/head` (`fce0490`, **10 agosto**) porta:
+
+| File | Righe | Stato su `main` |
+|---|---:|---|
+| `campaign/state.yaml` | 766 | non esiste |
+| `campaign/state-changelog.md` | 1.423 | non esiste |
+| `scripts/render_state.py` | 249 | non esiste |
+| `scripts/validate_state.py` | 234 | non esiste |
+| `scripts/schemas/campaign_state.schema.json` | 475 | non esiste |
+| `scripts/tests/test_state_data.py` | 257 | non esiste |
+| `scripts/state_apply.py` | 387 | esiste, **140 righe divergenti** |
+| `scripts/state_sync.py` | 154 | esiste, 27 divergenti |
+| `scripts/tests/test_state_apply.py` | 136 | esiste, 39 divergenti |
+
+🔴 **E i dati non si possono portare.** Confrontando la parte **viva** dei due
+`state.md`: **229 righe** che il ramo ha e `main` no, **103** che `main` ha e il
+ramo no. Il canone del **2026-09-11 e 2026-09-12** — D3, D4, D11, D13, i Tre
+Doni, la Collana, i due tempi di 4c — nel ramo **non esiste**. Portare il suo
+`state.yaml` sarebbe **annullare cinque settimane di canone in silenzio**, e la
+byte-identità lo direbbe subito.
+
+#### 4.8.2 · 🔴 Il fatto che riorienta il lotto: la via di scrittura è **già inerte**
+
+`state.md` non ha **nessun** marcatore di regione, e `state_apply.py` ne ha
+bisogno. Eseguito sul repo di oggi:
+
+```
+[apply] ⚠ march_clock non applicabile (regione 'march-clock' assente
+        — lancia `state_apply.py --migrate` … regioni presenti: nessuna)
+[apply] proposte NON meccaniche — applicale a mano in state.md
+```
+
+**Nessuna scrittura automatica funziona**, né il March Clock né il changelog:
+degrada con eleganza e dice al DM di fare a mano. Quindi 4d **non sostituisce
+una via di scrittura che funziona con una migliore**: accende una via che non è
+mai stata accesa. Cambia il rischio — non c'è un comportamento buono da
+preservare — e cambia il criterio: quel che va protetto è il **contenuto** del
+file, non il flusso.
+
+#### 4.8.3 · L'ADR ha il numero occupato — **terza volta**
+
+Il ramo porta `plans/adr/ADR-0017-stato-dati-e-prosa.md` (211 righe). Su `main`
+**ADR-0017 è «moduli autoconclusivi e classe di artefatto»**: un'altra
+decisione, presa nel frattempo.
+
+🔎 È lo **stesso identico schema** già visto due volte: ex-0016 → **ADR-0039**,
+ex-0017 → **ADR-0040** (dalla #72), ex-0014 → **ADR-0048** (lotto 4b). Una PR
+lasciata aperta perde i suoi numeri. → il recupero diventa **ADR-0050**, con la
+nota di rinumerazione e la riverifica riga per riga contro il codice di oggi,
+come si è fatto per le altre tre.
+
+#### 4.8.4 · Cosa coprono le otto regioni, e cosa **no**
+
+| Regione | Sezione di `main` | Righe tabellari |
+|---|---|---:|
+| `archi` | §0 dashboard | 23 |
+| `party` | §1 | 5 |
+| `difensori` · `scenari` | §2 (parziale) | 62 |
+| `villain` | §3 | 14 |
+| `conoscenze` | §4 | 32 |
+| `artefatti` | §6 | 9 |
+| `echi` | sparsi | — |
+| **nessuna** | **§5 promesse** | **10** |
+| **nessuna** | **§7 thread narrativi** | **14** |
+
+⚠️ **§5 e §7 restano prosa**, ed è una scelta dichiarata: sono le due sezioni
+che il DM riscrive di più a mano, e modellarle adesso vorrebbe dire indovinare
+uno schema per contenuto che cambia forma ogni sessione.
+
+#### 4.8.5 — FASE 2 · Sviluppo, in due lotti
+
+**4d-1 — la macchina e i dati** *(non tocca la via di scrittura)*
+
+1. Portare `render_state.py`, `validate_state.py`, lo schema JSON e
+   `test_state_data.py`, **riverificati** contro il codice di oggi.
+2. Scrivere `campaign/state.yaml` **da `state.md` di oggi**, sezione per
+   sezione. È la parte grossa e non si può automatizzare: la struttura viene
+   dal ramo, i **valori** dal canone attuale.
+3. Inserire le otto coppie di marcatori `<!-- gen:state:… -->` in `state.md`.
+4. **ADR-0050**, recuperato e rinumerato.
+5. Gate `render_state --check` in CI.
+
+**4d-2 — lo storico e la via di scrittura** *(lotto separato)*
+
+Lo split di §8 in `campaign/state-changelog.md` e `state_apply` che scrive lì.
+⚠️ È il punto in cui la #99 registra una **regressione propria**: *«lo split
+dello storico aveva rotto `state_apply --migrate`. La CI non l'aveva vista
+perché quei test girano su fixture»*. I due test **sui file veri** si portano
+**prima** della modifica, non dopo.
+
+#### 4.8.5-bis · Com'è andata (2026-09-16) — **4d-1 chiuso**
+
+**Il criterio d'uscita è stato raggiunto**: `state.md` rigenerato torna
+byte-identico. Il diff contro il file di partenza è di **32 righe, tutte
+marcatori** — 8 regioni × (apertura + banner + riga vuota) + 8 chiusure. Zero
+righe di contenuto toccate.
+
+`state.yaml` porta **99 record** in 8 sezioni, estratti da `state.md` di oggi:
+22 archi · 31 conoscenze · 13 villain · 9 difensori · 8 artefatti · 7 echi ·
+5 scenari · 4 PG.
+
+🔴 **La promessa dell'ADR andava ridimensionata, e misurarlo è stato il punto.**
+ADR-0050 diceva *«un fatto senza tempo dichiarato non è esprimibile»*. Il canone
+il tempo lo dichiara in **due forme diverse** — per riga in §0, come **due
+colonne** in §1 e §6 — e in **quattro sezioni non lo dichiara affatto**: §3, §4
+e le due tabelle di Rethmar, **58 righe**. Il generatore della #99 risolveva
+aggiungendo una colonna `Tempo`; quella forma è del 10 agosto e 4c l'ha superata.
+
+Assegnarne uno riga per riga sarebbe **dedurlo**, cioè inventare canone dentro
+un lotto di infrastruttura. Quindi il campo è opzionale lì e la regola **R7**
+di `validate_state.py` le **conta a ogni esecuzione**. Un numero che si vede non
+cresce in silenzio; il giorno che il DM li dichiara, scende da sé.
+
+🐛 **E ho trovato un difetto mio, già mergiato.** `ADR-0049` era **già occupato**
+dall'edizione commerciale (arrivato con la #138, lotto 4c) quando gli ho dato lo
+stesso numero per il margine del bosco nella #141: non l'ho controllato. È
+esattamente la regolarità che questo lotto stava documentando — *una PR lasciata
+aperta perde i propri numeri* — e stavolta l'ho causata io in due giorni.
+Rinumerato in **ADR-0051** e corretto in **9 file**.
+
+🔎 **Altre due àncore invecchiate**, trovate eseguendo i test del ramo: cercavano
+`MORTA` in maiuscolo, mentre il canone di oggi scrive `🔴 **morta**`. Un'ancora
+è una citazione del canone, quindi invecchia col canone.
+
+#### 4.8.6 — FASE 3 · Validazione
+
+| Prova | Criterio |
+|---|---|
+| **Byte-identità** | `render_state.py --check` → `state.md` rigenerato **identico** a quello committato |
+| **Il gate morde** | cambiare un valore in `state.yaml` senza rigenerare → rosso |
+| **Lo schema morde** | un fatto **senza `oggi`/`tempo`** → rosso. È il vincolo che chiude C1 alla radice |
+| **Nessuna perdita** | ogni riga tabellare delle sei sezioni coperte ha un record in `state.yaml`, contata nei **due sensi** |
+| **Non-regressione** | i **20 file** che toccano `state.md` — 737 test verdi, `dm.py doctor --ci`, `next_session`, `session_recap` |
+
 ## Come si misura che il piano è finito
 
 Non «quattro PR chiuse». Queste:

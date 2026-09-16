@@ -257,7 +257,7 @@ ciò che porta il primo utente.
 
 | # | Decisione | Perché ora, e cosa costa |
 |---|---|---|
-| ~~**D1**~~ | ✅ **DECISA il 2026-09-12 — la spec funzionale è ratificata.** Vedi §10 per cosa è entrato e a che prezzo. In sintesi: i campi neutri entrano tutti per i **56 simboli** che ne hanno uno; `📦` diventa muro; `🌲` e `🌳` **no**, con deroga motivata; la luce resta quella del codice, scritta in metri. | ✅ Costo pagato: **+4 polilinee** su ciascuno dei 2 `.uvtt` committati, **zero** SVG. Il resto è additivo. 🔵 Ne è nata [**ADR-0049**](adr/ADR-0049-il-margine-del-bosco-e-un-glifo-a-se.md): `🌲` avrà un glifo per il margine, con una coda di **1.873 celle** da rileggere |
+| ~~**D1**~~ | ✅ **DECISA il 2026-09-12 — la spec funzionale è ratificata.** Vedi §10 per cosa è entrato e a che prezzo. In sintesi: i campi neutri entrano tutti per i **56 simboli** che ne hanno uno; `📦` diventa muro; `🌲` e `🌳` **no**, con deroga motivata; la luce resta quella del codice, scritta in metri. | ✅ Costo pagato: **+4 polilinee** su ciascuno dei 2 `.uvtt` committati, **zero** SVG. Il resto è additivo. 🔵 Ne è nata [**ADR-0051**](adr/ADR-0051-il-margine-del-bosco-e-un-glifo-a-se.md): `🌲` avrà un glifo per il margine, con una coda di **1.873 celle** da rileggere |
 | ~~**D2**~~ | ✅ **DECISA il 2026-09-12 — e allargata: le altezze diventano moduli di griglia.** Il DM: *«i muri normalmente sono 1.5, le tende falle più basse 1m»*. 🔎 **Il «1.5» non erano i muri veri**: nel repo `🏰` sta a 4 m, `⬛` a 3,2, `🗼` a 9 — un muro di pietra a 1,5 m sarebbe più basso di un uomo. Era `🧱` **muretto / copertura bassa**, l'unico simbolo chiamato «muro» che un'altezza non ce l'aveva: si estrudeva al default generico di 0,6 m, cioè un gradino, mentre l'etichetta promette copertura al petto. Poi il DM ha esteso la regola: *«muri piccoli 1.5 metri e poi multipli di 1.5 o approssimazioni più vicine possibili»*. Il quadretto del repo è 1,5 m, quindi **tutte e 31** le altezze sono state portate sul modulo: quadretti interi per ciò che sta in piedi (15), mezzo quadretto per l'ingombro che si scavalca (9), zero per ciò che è piatto (7). Prima erano numeri a occhio — 3.2 · 2.2 · 1.6 · 1.4 · 1.1 · 0.9 · 0.8 · 0.6 · 0.4 — che non volevano dire niente rispetto alla griglia su cui la scena è costruita. | ✅ Costo zero: nessun artefatto 3D è committato. 48 celle `🧱`, 9 `⛺`. 🔵 **Resta il dais** `🔳`, e non è una dimenticanza: **zero celle nel repo** — è nato con ADR-0042 e nessuno l'ha ancora disegnato. Deciderlo adesso sarebbe inventarlo; il giorno che serve costa zero |
 
 ### Aperte da prima, senza costo misurato
@@ -526,7 +526,7 @@ non è comodità:
 
 | | Perché deroga |
 |---|---|
-| `🌲` | il muro del VTT è binario e il bosco no. Muro pieno = un PG **dentro** gli alberi non vede il quadretto adiacente, e l'inseguimento nel bosco — il motivo per cui quelle mappe esistono — diventa ingiocabile. → [ADR-0049](adr/ADR-0049-il-margine-del-bosco-e-un-glifo-a-se.md) |
+| `🌲` | il muro del VTT è binario e il bosco no. Muro pieno = un PG **dentro** gli alberi non vede il quadretto adiacente, e l'inseguimento nel bosco — il motivo per cui quelle mappe esistono — diventa ingiocabile. → [ADR-0051](adr/ADR-0051-il-margine-del-bosco-e-un-glifo-a-se.md) |
 | `🌳` | è una **creatura**, non terreno: un treant si muove, un muro no. Lo dice la spec stessa (§4.2 → §7) |
 | `🚪` | ha già la sua geometria: `door: true` produce un varco. Chiusa è un muro, aperta un passaggio, e lo stato non è una proprietà del simbolo |
 
@@ -560,7 +560,7 @@ misurato **prima** di rigenerarli e coincidente (+4 polilinee ciascuno).
 
 | | Cosa | Dove va |
 |---|---|---|
-| ⬜ | `🌲`: il glifo del margine e la coda di **1.873 celle** | **ADR-0049**, lotto 1.1-ter |
+| ⬜ | `🌲`: il glifo del margine e la coda di **1.873 celle** | **ADR-0051**, lotto 1.1-ter |
 | ✅ | **D2** — `⛺` 1 m e `🧱` 1,5 m, decise il 2026-09-12 (§8) | fatto |
 | 🔵 | l'altezza del dais `🔳` | libera: **zero celle** nel repo, si decide quando serve |
 | ⬜ | i tre profili di regole; ⚠️ la riga `move_cost: 4` di **PF1e** resta fuori finché non è verificata sul PRD (il valore neutro `4` è 3.5 RAW ed è entrato) | lotto **1.2** |

@@ -1,0 +1,502 @@
+# Lo stato di campagna come DATO (ADR-0050)
+# ============================================================================
+# Questo file e' il master dei fatti tabellari di `campaign/state.md`. Le
+# tabelle di §0, §1, §2.4, §3, §4, §6 e §7.E dentro quel documento sono
+# GENERATE da qui con `python3 scripts/render_state.py`, fra i marcatori
+# `<!-- gen:state:NOME -->`.
+#
+# ⚠️ NON si modificano le tabelle in state.md: si modifica QUESTO file e si
+#    rigenera. La CI confronta i due (`render_state.py --check`).
+#
+# 🔴 Un master, mai due. Senza il rendering questo file sarebbe una SECONDA
+#    fonte di verita' accanto a state.md — cioe' il difetto C2 che l'audit
+#    della PR #99 aveva appena chiuso, ricreato dalla sua stessa correzione.
+#
+# Cosa NON sta qui, e non e' una dimenticanza:
+#   · §5 (promesse e debiti) e §7 (fili narrativi) restano PROSA. Sono le due
+#     sezioni che il DM riscrive di piu' a mano, e modellarle adesso vorrebbe
+#     dire indovinare uno schema per contenuto che cambia forma ogni sessione.
+#   · §2 tranne i difensori e gli scenari di Rethmar: il waypoint ledger e le
+#     condizioni dell'orda sono un modello a se'.
+#   · §8, lo storico: e' il lotto 4d-2.
+#
+# ⚠️ I DATI NON VENGONO DALLA PR #99. Quel ramo e' fermo al 10 agosto ed e'
+#    384 commit indietro: portare il suo `state.yaml` avrebbe annullato in
+#    silenzio il canone del 2026-09-11 e 09-12 (D3, D4, D11, D13, i Tre Doni,
+#    la Collana, i due tempi di 4c). Del ramo si e' recuperata la MACCHINA;
+#    i valori sono stati estratti da `state.md` di oggi, e il criterio
+#    d'uscita e' che rigenerandolo torni identico byte per byte.
+#
+# ⚠️ IL TEMPO, dichiarato dove il canone lo dichiara. `archi` porta `tempo`
+#    (giocato / in_corso / preparato); `party` e `artefatti` portano i due
+#    tempi come DUE COLONNE (`oggi` e `preparato`), che e' come il DM li ha
+#    scritti. `villain` e `conoscenze` NON hanno un tempo per riga, e non
+#    gliene ho inventato uno: `validate_state.py` li CONTA e lo dice. Un
+#    numero che si vede vale piu' di un valore indovinato.
+# ============================================================================
+schema_version: 1
+archi:
+- arco: 00 Setup RHoD
+  tempo: giocato
+  stato: completato
+  march_clock: Day 0
+  pg_livello: '5'
+  note: null
+- arco: 01 Miniera
+  tempo: giocato
+  stato: completato
+  march_clock: null
+  pg_livello: '6'
+  note: null
+- arco: 02 Scaladossa-abbattor-funghi
+  tempo: giocato
+  stato: completato
+  march_clock: null
+  pg_livello: '7'
+  note: null
+- arco: 03 La Cittadella
+  tempo: giocato
+  stato: completato
+  march_clock: null
+  pg_livello: '8'
+  note: null
+- arco: 04 Tomba di Belkram
+  tempo: giocato
+  stato: completato
+  march_clock: null
+  pg_livello: '9'
+  note: null
+- arco: 05 Stanza Runica
+  tempo: giocato
+  stato: completato
+  march_clock: null
+  pg_livello: '10'
+  note: null
+- arco: 06 Corona di Adamantio
+  tempo: giocato
+  stato: completato
+  march_clock: null
+  pg_livello: '11'
+  note: null
+- arco: 07 Portale della Forgia Eterna
+  tempo: in_corso
+  stato: '**in corso**'
+  march_clock: null
+  pg_livello: 13 (D8)
+  note: 'Giocati: Forgia (P1-P2), Piano del Fuoco/Topazio (P3), viaggio spirituale Hella+Durik (P3B-spirito); **in corso: Piano della Terra (P4)**'
+- arco: 07 P3B Resurrezione di Hella + P5 Viaggio 1.000 anni
+  tempo: preparato
+  stato: da giocare
+  march_clock: null
+  pg_livello: '13'
+  note: Si gioca DOPO la Terra (ARC-07 D2); raccordo D16 (Rubino) riporta i PG al 1372, Cuore della Montagna → ARC-08
+- arco: 08 Battaglia di Hammerfist
+  tempo: preparato
+  stato: '**pianificato — canone preparato, NON giocato**'
+  march_clock: '**Day 19 (target sync)**'
+  pg_livello: 13 (consolida, D9)
+  note: 'Esito atteso: vittoria, Cerimonia 100 Asce, Custodi Eterni (piano ARC-08 §0, E1-E8)'
+- arco: 09 P1A Quest Hellas (Cerchio Sacro)
+  tempo: preparato
+  stato: '**preparato in anticipo**'
+  march_clock: Day 20-30 window
+  pg_livello: '13'
+  note: Deadline Day 30
+- arco: 09 P1B Cerchio Treant
+  tempo: preparato
+  stato: '**preparato in anticipo**'
+  march_clock: Day 22-28
+  pg_livello: '13'
+  note: null
+- arco: 09 P1C Rituale Hellas
+  tempo: preparato
+  stato: '**preparato in anticipo**'
+  march_clock: Day 25-30
+  pg_livello: '13'
+  note: null
+- arco: 09 P2 Rhest (Saarvith + Regiarix)
+  tempo: preparato
+  stato: '**preparato in anticipo**'
+  march_clock: Day 25-32
+  pg_livello: '13'
+  note: -1 drago se fatto
+- arco: 09 P2A Torre Invisibile (Zalkatar)
+  tempo: preparato
+  stato: '**preparato in anticipo**'
+  march_clock: Day 28-35
+  pg_livello: '13'
+  note: -1 drago se fatto
+- arco: 09 P2B Torneo di Dauth (Tordek)
+  tempo: preparato
+  stato: '**preparato in anticipo**'
+  march_clock: Day 25-34
+  pg_livello: '13'
+  note: +300 mercenari nani
+- arco: 09 P2C Salvatore Mercante
+  tempo: preparato
+  stato: '**preparato in anticipo**'
+  march_clock: Day 28-36
+  pg_livello: '13'
+  note: Sal clock 0/6
+- arco: 09 P3 Starsong Hill (Tiri-Kitor)
+  tempo: preparato
+  stato: '**preparato in anticipo**'
+  march_clock: Day 30-35
+  pg_livello: 13-14
+  note: +cavalleria civette
+- arco: 09 P3 Ghostlord
+  tempo: preparato
+  stato: '**preparato in anticipo**'
+  march_clock: Day 25-32
+  pg_livello: 13-14
+  note: '3 branch: ostile/neutralizzato/alleato'
+- arco: 09 P3 Sabotaggio Campi Drow
+  tempo: preparato
+  stato: '**preparato in anticipo**'
+  march_clock: Day 30-36
+  pg_livello: 13-14
+  note: -Fase 0 + -75 esperimenti fungini (45 Servitori + 30 Sporeborn; 8 Guardiani Neri sopravvivono)
+- arco: 09 P3 Missioni Brevi CR12
+  tempo: preparato
+  stato: '**preparato in anticipo**'
+  march_clock: Day 30-38
+  pg_livello: 13-14
+  note: null
+- arco: '**09 P3 Battaglia Finale Rethmar**'
+  tempo: preparato
+  stato: '**preparato in anticipo**'
+  march_clock: '**Day 42**'
+  pg_livello: '14'
+  note: Fase 0-4
+party:
+- pg: Thorik
+  classe: Dwarf Fighter 13
+  oggi: Sala della Forgia Eterna, dopo il riposo (orologio Hammerfist **3g 16h**)
+  preparato: Hammerfist Holds, war council chamber
+  hp: 'Full. **−4 DES / +2 COS / +4 CAR permanenti**, e sono tutto quel che ha pagato: −2 DES dalla Corona quando l''ha indossata, −2 DES / +2 COS / +4 CAR dal rito dello Smeraldo del 2026-07-31 (è il **portatore** ad aver accettato il Peso del Mondo). Ricalcolare CA senz''armatura, Riflessi, iniziativa. ⚠️ **Nessun −2 COS.** Il costo della resurrezione è **non ancora versato**: la scena (`ARC07-DEF-3` §5) non è stata giocata. Quando la giocherà, dona il **+2 di deflessione della Corona** e resta a **−1 CA permanente** — e ogni volta che Hella userà lo **Scudo del Custode**, lui sarà **accelerato 3 round verso chi lei ha protetto**. Può anche **rifiutare**: allora Aegis Fang (Ego 14) lo **giudica** finché non rischia qualcosa di suo per lei'
+  filoni: Decide whether to lead defense of Rethmar personally vs. delegate
+- pg: Tordek
+  classe: Dwarf Fighter 4 / Monk 9
+  oggi: Sala della Forgia Eterna, dopo il riposo
+  preparato: → Torneo di Dauth
+  hp: 'Full; Bracieri Earth phase complete. ✅ **Nessun malus permanente dal rito**: il Peso del Mondo l''ha accettato **Thorik**, il portatore (correzione DM 2026-08-06 — fino a quella data il pegno era attribuito a Tordek per errore). CA senz''armatura, Riflessi, iniziativa e Raffica restano quelli di prima. ⚠️ Il costo della resurrezione è **non ancora versato**, e 🔎 **non sono più i «−500 PE»**: in v4-bis dona **Ancoraggio della Montagna** (2/g), che **lascia i Bracieri per sempre** → Hella ottiene **RD 3/adamantino**. Se rifiuta, i Bracieri **tacciono una settimana**'
+  filoni: Tournament of the Eight Gates (3 days, interrupted by Githyanki Day 3)
+- pg: Hella
+  classe: Dream Dwarf Ranger 1 / Druid 12
+  oggi: 🔴 **morta**, corpo nella Sala, semi innestati — la resurrezione (P3B / `ARC07-DEF-3`) è **il prossimo beat da giocare**
+  preparato: Hammerfist → Foresta Sacra, template Ibrido Treant attivo, PG a pieno titolo
+  hp: n/d finché non torna. Il template Ibrido Treant e i tre Doni **si assegnano al rito**, non prima
+  filoni: Sacred Forest ritual (pass = druid circle ally at Rethmar)
+- pg: Artemis
+  classe: Human Warlock 13
+  oggi: Sala della Forgia Eterna, dopo il riposo
+  preparato: → Torre Invisibile (regione di Dauth)
+  hp: 'Full; Ring of Chaotic Illumination active, **Eldritch Blast 7d6**. ⚠️ Il costo del rito è **non ancora versato**: dona **1d6 di Eldritch Blast** (7d6 → **6d6**, per sempre) → Hella ottiene **il Rovo Eldritch**, a volontà. Se rifiuta, l''Anello **si spegne 24 ore**'
+  filoni: Confront Zalkatar (CR 13 illithid warlock); Ring evolution at stake
+artefatti:
+- artefatto: Aegis Fang
+  portatore: Thorik
+  oggi: 'Pre-full-awakening: +2 Returning Dwarven Waraxe; bonded'
+  preparato: Unchanged until the Siege (P5) is won → then Stage 1 full awakening (see Aegis master)
+- artefatto: Corona di Adamantio
+  portatore: Thorik
+  oggi: '✅ **Topazio + SMERALDO accesi** e **Rituale Legacy 3 «Incudine del Mondo» COMPLETATO** (giocato 2026-07-31). Poteri attivi: Stone''s Awareness (incl. traps + comprehend languages), +2 deflection AC, Moradin''s Insight, Topazio 1/mese (attivazione 1 ora), **Smeraldo/Terra 1/settimana**, e i due sbloccati dal Rituale 3 — **Adamantine Will** (immune charme/compulsione + 4 razziale vs mentale su pietra) e **Mantle of Stone and Spirit** (**Mind Blank permanente**, RD 5/epico, Comunione 1/mese da un Nodo). ✅ Il pegno del Rituale 3 l''ha versato **Thorik**, il portatore (−2 DES / +2 COS permanenti) — correzione DM 2026-08-06: fino a quella data era attribuito a Tordek per errore. ⚠️ Si somma al **−2 DES** che la Corona gli aveva già preso quando l''ha indossata (`PortaleForgia-P1-REVISED-Corretta.md`, «Limitazioni»). **Totale: −4 al punteggio** (DES 10 → 8 → 6), che sono **−2 al modificatore** (da +0 a −2): −2 a CA, Riflessi, iniziativa e prove di DES. In cambio **+4 CAR** (8 → 12) e **+2 COS**. 🔒 **Non rimovibile volontariamente** finché mancano gemme (DM 2026-09-04): l''unica volta che è uscita dalla testa è stato **per incastonare lo Smeraldo**. Mancano Corona +3, Senzienza e il Rubino: si sbloccano col **Rituale 4** = viaggio a −1.000'
+  preparato: 'All 3 gems lit: + Emerald earthquake 1/week; Ruby single-use SPENT at the ancient battle (≈372 DR)'
+- artefatto: Ring of Chaotic Illumination
+  portatore: Artemis
+  oggi: 'Reforged at Eternal Forge: full base powers'
+  preparato: Unchanged; awaits further evolution at Invisible Tower
+- artefatto: Bracieri Gemelli di Moradin
+  portatore: Tordek
+  oggi: 'Fire ✅ + Earth ✅: Salto Infuocato 3/day, Fire Resist 10, DR 5/adamantine, Jump +10; Benedizione della Forgia active (4 charges/day — permanent, DM 2026-07-04); **Ancoraggio della Montagna 2/day** (immediata, nega il movimento forzato). ⭐ **NUOVO 2026-07-31 — «Diventare una Collina»** sbloccato dalla caduta di Terros: taglia Grande 1 min, 1/giorno, **prima attivazione automatica e gratuita** quando uno scontro con una creatura Enorme+ porta Tordek sotto metà pf; dopo, azione di movimento **solo in condizioni di pericolo**'
+  preparato: Unchanged
+- artefatto: Cintura della Devastazione (custom PG, D17)
+  portatore: Tordek
+  oggi: 'Active — Devastation Gauntlets (MIC) moved to **belt slot** so wrists stay free for the Bracieri; ~3/day devastation charges (+2d6). Sheet: `PG/Artefatti/Artefatti-Pg/Tordek/00_Cintura_della_Devastazione.md`. Exact values → ARC-07 B5'
+  preparato: Unchanged
+- artefatto: Collana dei Semi Eterni
+  portatore: Hella (dead — resurrection pending)
+  oggi: Forged, awaiting the P3B ritual; Hella not yet resurrected
+  preparato: 'Active post-resurrection: Treant summoning (limited), Avatar form (1/day). **I 3 slot-dono hanno una meccanica dal 2026-09-12** (`ARC07-DEF-3` §5, DM): ogni PG dona **un potere del proprio artefatto**, che lo lascia per sempre e **germoglia in un seme** — Thorik il **+2 di deflessione** → *Scudo del Custode*; Tordek l''**Ancoraggio** → *Pelle di Adamantio* RD 3/adamantino; Artemis **1d6 di Eldritch Blast** → *Rovo Eldritch* a volontà. 🌱 E il seme **restituisce** al donatore ciò che ha ricevuto, **una volta sola**, quando Hella decide. Slot **ancora non spesi**: il rito non è stato giocato'
+- artefatto: Cuore di Moradin
+  portatore: Crown set (altar)
+  oggi: Intact — will be expended as catalyst in the P3B ritual
+  preparato: 'SPENT: single-use expended to resurrect Hella'
+- artefatto: Orbe delle Otto Porte (Githyanki artifact, campaign canon)
+  portatore: Tournament prize, not yet held
+  oggi: Not in play
+  preparato: Awaits Tournament outcome — N/A until Tordek wins
+echi:
+- id: E-07a
+  data: '2026-07-31'
+  autore: Artemis
+  fatto: prende il Seme-Mercato di Varis ma **non lo tocca**, e lo fa portare a **Tordek**
+  tono: grigio
+  miccia: lunga (ARC-09)
+  payoff: 'Varis scopre di essere stato riconosciuto e trattato da pari: apre una **trattativa**, non una riscossione. E il giorno in cui serve un favore, la gemma è già in mano al party — sulla schiena sbagliata'
+  stato: armato
+  tag: 🔫 armato
+- id: E-07b
+  data: '2026-07-31'
+  autore: Tordek
+  fatto: porta nello zaino un innesto planare **senza sapere cosa sia**
+  tono: grigio/inquieto
+  miccia: media
+  payoff: Il primo che tocca il Seme se ne prende il Marchio. Se è Tordek, Varis gli offre **certezze** invece che tesori — l'esca giusta per un monaco che ha perso una compagna
+  stato: armato
+  tag: 🔫 armato
+- id: E-07c
+  data: '2026-07-31'
+  autore: Thorik
+  fatto: 'Al rito dello Smeraldo gli viene chiesto **«un pezzo di te stesso»**, e **non lo delega**: si inginocchia sotto il Peso invece di comprarne l''uscita col bottino dell''arco. −2 DES / +2 COS permanenti.'
+  tono: luminoso, costoso
+  miccia: media
+  payoff: '**Ha pagato dove non si vede, e lo applaudono per la metà che si vede.** La DES era già la sua statistica povera — **10 di base**, e la Corona gliene aveva già tolti 2 quando se l''è messa in testa: questi altri due la portano a **6 di punteggio** (−4 in tutto), che al tavolo sono **un punto solo** di CA, Riflessi e iniziativa in più rispetto a ieri. Nessuno al tavolo lo noterà. Il +2 COS invece lo rende *più bravo* nell''unica cosa per cui lo misurano — reggere. Riemerge la prima volta che un nano di Hammerfist (o Re Thorek) lo elogia per quanto sa incassare e **lui non corregge nessuno**: l''unico che sa il prezzo è lui. Poi paga davvero quando al party viene chiesto un altro pegno e **Thorik si muove per primo**, perché adesso conosce il cambio e non si fida a lasciarlo accettare a un altro.'
+  stato: armato
+  tag: 🔫 armato
+- id: E-07e
+  data: '2026-07-31'
+  autore: Tordek
+  fatto: «Guarda il portatore pagare» — eco mai realmente esistita.
+  tono: null
+  miccia: null
+  payoff: 'Annullata il 2026-08-09. Nasceva dall''attribuzione sbagliata del pegno — era «il portatore guarda un altro reggere il peso» — e il 2026-08-06 era stata semplicemente rovesciata su Tordek. Ma un''eco registra **una scelta**, e Tordek qui non ne ha fatta nessuna: non gli è stato chiesto niente e non ha rinunciato a niente. Rovesciare un''eco non la rende vera. L''ID **non si riusa**; le righe vive di Tordek restano E-07a/E-07b. Rimpiazzata da E-07f.'
+  stato: annullata
+  tag: ✖ annullata
+- id: E-07f
+  data: '2026-07-31'
+  autore: Thorik
+  coautore: Hella
+  fatto: 'Sotto la gravità, mentre le ossa scricchiolano, una **luce verde tenue** gli si stringe alle spalle: *«Non sei solo a portare questo peso. Mai più solo.»* Lui la prende per Moradin. Era Hella, morta, a tre metri da lui nella stessa sala.'
+  tono: intimo
+  miccia: 'lunga (oltre il #3)'
+  payoff: '⚠️ **Non spiegarlo prima della resurrezione (#3)** — è l''asimmetria scritta dal modulo (`ARC07-DEF-1` §9 Fase 1, regia). Paga due volte: **(a)** quando Hella torna e quelle parole tornano con lei — e il momento smette retroattivamente di essere la promessa di un dio e diventa quella di una compagna morta che stava per riportare indietro; **(b)** al Dono 1 del rito di Hella, perché è **questa** frase la ragione per cui Thorik dirà di sì al prezzo, non la devozione a Moradin. Per la giocatrice di Hella è il suo eco dal Sogno della Terra.'
+  stato: armato
+  tag: 🔫 armato
+- id: E-07d
+  data: '2026-07-31'
+  autore: Terros
+  fatto: l'ultimo suono del guardiano è di **assenso** (avevano curato i Cristalli)
+  tono: luminoso
+  miccia: lunga
+  payoff: 'La Forgia registra la vittoria **onorata**. Un guardiano che approva è una porta che resta aperta: eco al #4 e nella Cronaca'
+  stato: armato
+  tag: 🔫 armato
+- id: E-08a
+  data: '2026-08-05'
+  autore: DM
+  fatto: 'approvata l''ala orchesca della Mano Rossa: dentro l''orda c''è **chi paga più di quanto incassa**'
+  tono: grigio
+  miccia: lunga (ARC-09 → dopoguerra)
+  payoff: 'Qualunque cosa i PG scelgano, la valle avrà orchi **anche dopo la guerra**: la domanda è se con un atto o con un assedio. Riemerge quando si contano i vivi a Rethmar'
+  stato: armato
+  tag: 🔫 armato
+villain:
+- villain: Sonjak (Drow Cleric Matrona) — also "Matrona Sajak" in Sal's operative code
+  dove: Underdark, Cannath Vale border
+  agenda: Subvert dwarven citadel from below; coordinate with Il Collezionista; manage Sal as surface field agent
+  clock: 4/8
+  trigger: Drow night-raid on Hammerfist temple (sets up Phase 0 of Rethmar)
+- villain: Salvatore "Sal" della Luna d'Argento
+  dove: Desert road, Cannath Vale → Rethmar (Shaar)
+  agenda: Profile party's artifacts and magical defenses; plant Sabotage Oil on weapons before Rethmar; deliver living statues to Varis
+  clock: 0/6
+  trigger: Sabotage Oil applied — weapon TS failure risk at Phase 3 boss; Phase 4 statue activation proceeds at full strength
+- villain: Il Collezionista (Rakshasa)
+  dove: Mobile — last seen brokering with drow
+  agenda: Acquire the Crown's spare gem before party can use it; manipulate Conte Valerius
+  clock: 5/8
+  trigger: Sponsors anti-party legal pressure; Conte Valerius freezes assets
+- villain: Zalkatar (Illithid Warlock)
+  dove: Invisible Tower, Dauth region
+  agenda: Mind-strip a captured githyanki for fleet intel
+  clock: 6/8
+  trigger: Tower goes mobile; harder to find next session
+- villain: Wyrmlord Saarvith + Regiarix
+  dove: Lake Rhest ruins
+  agenda: Rebuild dragonrider corps from black dragon spawn
+  clock: 3/8
+  trigger: Rhest becomes a fortified war camp; CR +1 to assault
+- villain: Xal'thor (Illithid Coordinator, psionic)
+  dove: En route with an Illithid invasion force (psionic thralls, larvae, a small core of dominated Githyanki — NOT the free Githyanki dragon-rider force led by Vaereth, which is a separate and hostile faction)
+  agenda: Day 3 fixed assault on the Dauth Tournament to seize Tordek's **Bracieri Gemelli** (planar keys to the Eternal Forge); does NOT target the Orbe delle Otto Porte
+  clock: 'Fixed: triggers Day 3 of Tournament regardless'
+  trigger: Tournament becomes combat encounter
+- villain: Sethrax il Velato (Illithid emissary, Zalkatar's conclave)
+  dove: Dauth — infiltrated as tournament finalist "Kethran Mano di Pietra"
+  agenda: Extract a "Seme di Porta" from the Orbe delle Otto Porte during the Tournament's peak resonance, deliver it to Zalkatar at the Invisible Tower
+  clock: Sync to Tournament (Day 1 = arrival; Day 2 = entered as finalist; Day 3 Round 7 = forced unmasking by Xal'thor's portal)
+  trigger: Sethrax flees to Invisible Tower with the seed → Zalkatar gains +2 effective CR + new orb-derived Mind Blast in P2A finale (Artemis's quest)
+- villain: Azarr Kul (High Wyrmlord) — **Ritual Clock, see §2.0** (NOT the March Clock; the horde's physical approach is tracked separately in §2.1, currently Day 19 of 42)
+  dove: Fane of Tiamat (Shaar)
+  agenda: 'Ritual sacrifices/planar conjunctions to summon the Avatar of Tiamat during the Rethmar siege (Day 40-42, Phase 2). Advances only on explicit triggers: +1 per Warpriest élite mass sacrifice (Day 35-38), +2 if Giant Wave ×1 breaches the walls (Phase 1), +3 if Giant Wave ×2 breaches (Phase 3) — see `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` §4b'
+  clock: 9/18
+  trigger: Avatar of Tiamat manifests over Rethmar during Phase 2's 10-round ritual (D8)
+- villain: Conte Valerius (manipulator)
+  dove: Capital city
+  agenda: Legalize horde funding via "patriotic emergency" loans
+  clock: 2/8
+  trigger: Party loses access to legitimate guild merchants
+- villain: '**Mira Serani «l''Aranea»** (aranea mutaforma, Red Hand intel) — canonizzata 2026-07-20, `Bestiario/villain/Mira_Serani/`'
+  dove: Mobile — infiltrata nell'onda profughi (Guado → Rethmar)
+  agenda: Raccogliere intel su difese di Rethmar e **artefatti dei PG** per l'orda; spacciarsi per la figlia morta di Lorana (bimba/adolescente); **evitare Lorana**
+  clock: Trigger, non clock numerico
+  trigger: '**Hard counter**: se incrocia Lorana → smascherata a vista, combatte solo per fuggire. Ogni intel raccolta **alimenta i clock esistenti** (Sal/Sonjak/Fase 0-1), non ne apre uno nuovo'
+- villain: '**Ghaurush «Cenerevento»** (Ogre magi/Stregone 8, GS 16; GS 18 al secondo incontro) — approvato 2026-08-05, `Bestiario/villain/Ghaurush_Cenerevento/`'
+  dove: Retrovie dell'orda, dove ci sono acqua corrente e roccia
+  agenda: 'Negoziare, o prendere con la forza, le gallerie alte di Hammerfist. **Non serve Tiamat: incassa**'
+  clock: 0/6
+  trigger: 'Prende le gallerie alte senza trattare: **+1 CS alla Fase 1 di Rethmar**, e le due lettere che prova i traffici Sonjak↔Collezionista restano inutilizzate'
+- villain: '**Zin''thara Vel''Ryn «la Voce di Ragnatela»** (Illusionista 9/Danzatrice delle Ombre 2, GS 12) — approvata 2026-08-05, `Bestiario/villain/Zin_thara_Vel_Ryn/`'
+  dove: Campi drow del Sottosuolo, sotto la linea Rethmar
+  agenda: Accumulare prove contro Sonjak per comprarsi un esilio in superficie
+  clock: 2/8
+  trigger: 'Ha prove sufficienti per trattare: si offre al miglior offerente — PG, Il Collezionista o la Mano Rossa. Se non sono i PG, il ramo si chiude'
+- villain: '**Ushgar «Occhio Reso»** (Orco montano/Barbaro 13, GS 13) — approvato 2026-08-05, `Bestiario/villain/Ushgar_Occhio_Reso/`'
+  dove: Campo degli ausiliari orcheschi, sottovento e fuori dalla palizzata
+  agenda: 'Ottenere **terra scritta** per i suoi prima che la guerra finisca. **Decisione DM 2026-08-05**: ramo aperto passando prima dall''uscita laterale di Hella'
+  clock: 0/4
+  trigger: Si prende la terra da solo, da un villaggio che non c'entra niente, e la carta se la fa firmare con le mani
+conoscenze:
+- png: Sonjak (= Matrona Sajak)
+  sa_che: The party freed the Cristal Warriors but does NOT know they have all 3 Crown gems
+  come: Drow scouts witnessed the mine assault
+- png: Ghaurush «Cenerevento»
+  sa_che: Che i Custodi Eterni portano **artefatti divini**; **non** sa quali
+  come: Rapporti dell'avanguardia della Mano Rossa (2026-08-05)
+- png: Zin'thara Vel'Ryn
+  sa_che: Che i Custodi Eterni hanno liberato i Guerrieri di Cristallo, come Sonjak; **non** sa nulla della Corona
+  come: Rete di informatori drow nei campi (2026-08-05)
+- png: Ushgar «Occhio Reso»
+  sa_che: Che i quattro Custodi viaggiano con artefatti; **non** sa quali, **e non gli importa**
+  come: Voci di caserma fra gli ausiliari (2026-08-05)
+- png: Sonjak
+  sa_che: Sal is operating on the desert road toward Rethmar; does NOT know Sal's temporal identity (Vatore)
+  come: Standard briefing to field agent
+- png: Ghostlord / Zeth il Murato
+  sa_che: Party existence unknown; aware of Red Hand using his lair as undead factory
+  come: Sensed via lair's magical senses
+- png: Conte Valerius
+  sa_che: The party visited Hammerfist; does NOT know about the Crown or Sal
+  come: Public dispatches — updated 2026-05-02
+- png: Azarr Kul
+  sa_che: Party are Custodi Eterni; does NOT know artifact details
+  come: General intelligence from Red Hand scouts
+- png: Xal'thor
+  sa_che: Tordek carries the Twin Braziers (planar keys to Eternal Forge)
+  come: Planar observation; cross-referenced with Forgia Eterna records
+- png: Zalkatar (via Sethrax)
+  sa_che: The Orbe delle Otto Porte at Dauth Tournament has Githyanki planar origin and emits a "Seme di Porta" extractable at peak resonance
+  come: Telepathic dispatch from Sethrax (covert) — refreshed daily; updated 2026-05-03
+- png: Sethrax il Velato
+  sa_che: Tordek is the orb's primary attuned monk; the orb's first opening triggers a Githyanki "Eco delle Fenditure" vision; does NOT yet know Xal'thor's separate invasion plan
+  come: Direct observation Day 1–2 of Tournament
+- png: Varis "Seta-Argento"
+  sa_che: Some statues might be alive; does NOT know Sal is the supplier chain origin
+  come: Involuntary observation 3 months ago
+- png: Il Collezionista
+  sa_che: Artemis carries the Ring of Chaotic Illumination
+  come: Witnessed at minotaur lair; sent guild operatives to track
+- png: Il Collezionista
+  sa_che: Therysol is alive and hunting him
+  come: Inferred from missing guild operatives in Underdark
+- png: Re Thorek Hammerfist
+  sa_che: The party are now Custodi Eterni; he has named them so
+  come: Awarded post-siege
+- png: Maestro Varis "Seta-Argento"
+  sa_che: Artemis is a buyer of Underdark relics; willing to broker
+  come: Three transactions to date
+- png: Salvatore "Sal"
+  sa_che: The party are Custodi Eterni carrying major divine artifacts; knows their names, abilities, and routes
+  come: Briefed by Il Collezionista before deploying to desert road
+- png: Conte Valerius
+  sa_che: The party visited Hammerfist; does NOT yet know about the Crown
+  come: Public dispatches
+- png: Druid Circle of the Sacred Forest
+  sa_che: Hella is approaching for the ritual; reserves judgment
+  come: Hella's letter, sent two days ago
+- png: Capitana Lythiel Alar-Wen (Wood Elf Ranger 8, Sacred Forest scout, GS 8)
+  sa_che: Hella is the druidess Saraah promised the Acorn of the Circle to
+  come: Direct recognition during Hammerfist Battle Sessione 4; canonized 2026-05-04
+- png: Maestro Tempestas (Half-elf Bard 12/Arcmage 2, GS 14, Rethmar **intelligence agent** — NOT delivery service)
+  sa_che: The party survived Lorana's city (Arco 00); they are Custodi Eterni; he carries **only one letter** (Brenna Sorvane → Thorik) on Day 21 + intel exchange mission; intercepted drow conversation 3 weeks ago about "il dottore della torre invisibile vuole il portatore dell'anello caotico" + "fine Mirtul, poi la torre cammina" — relevance recognized only when Artemis's Ring vibrates
+  come: Intercepted via accidental Shadow Walk side-emergence near Cannath Vale Nord (fiume con tre rapide); revised v2 2026-05-04 (Tempestas role narrowed to intel agent; he no longer delivers Tordek/Hella/Artemis personal hooks)
+- png: Sorella Maewen "Pugno-di-Cedro" (Mezza-elfa Monk 9/Cleric 2 of Ilmater, GS 10, monk-courier of Confraternita Monastica di Dauth)
+  sa_che: Aeleth Verdebronzo is dead (will discover on arrival); Tordek matches the description of the 4th tournament invitee "Pugno di Pietra del Nord" (recognizable by Custode Eterno rune)
+  come: Travels Cannath Vale with 5 tournament invites; arrives Sacred Forest Day 24 looking for Aeleth; canonized 2026-05-04
+- png: Lathander + Mask (divine, divinatory)
+  sa_che: Artemis rejected the Lord of Sun and Shadow PrC at Belkram (Arco 04); the Ring he carries is Zalkatar's research instrument; Zalkatar is a 3-century-old ex-cleric of Mask who became Mind Flayer by choice; both deities OBSERVE without intervening unless Artemis explicitly requests post-Tower "courtesy"
+  come: Direct divine awareness; activates as dream visitation Notte 22-23 of post-Hammerfist; canonized 2026-05-04
+- png: Brenna Sorvane (Consigliere militare Rethmar)
+  sa_che: Hammerfist defeated Red Hand vanguard; Custodi Eterni include Thorik who is a battle-tested commander; Halveth is corrupt by Conte Valerius; Lorana is alive in Rethmar
+  come: Reports from Tempestas (her primary messenger); canonized 2026-05-04 via her sealed letter to Thorik
+- png: Therysol
+  sa_che: Il Collezionista's guild has a hidden cell in Dauth
+  come: Captured guild operative interrogated
+- png: Norro Wiston (ex-Portavoce del Guado di Drellin, profugo a Rethmar)
+  sa_che: The party are the Custodi Eterni; Thorik died and was resurrected at the Guado (he was present, Arco 00)
+  come: Direct witness; arrived Rethmar ~Day 16-18 with the refugee wave — canonized 2026-07-20
+- png: Sertieren il Saggio (mago halfling profugo, ospite della biblioteca di Pyriel)
+  sa_che: His *sending* to Silverymoon is blocked by a ritual interference on the Wyrmbones; does NOT know who runs it
+  come: Failed attempts Day 14-18 — canonized 2026-07-20
+- png: Lirien Amaranti («Il Giullare Spezzato»)
+  sa_che: He can recognize the Maestro's hand in the living statues (does NOT know the network leads to Varis/Sal/Il Collezionista); knows the street-talk of the Ponte Nuovo
+  come: Apprenticeship trauma + tavern ears — canonized 2026-07-20
+- png: Mira Serani «l'Aranea»
+  sa_che: The party already met her (disguised as a refugee child) on the road to Hammerfist and let her go; knows fragments of the PCs' artifacts/routes; does NOT know Lorana survived and is at Rethmar
+  come: Embedded Red Hand spy since Drellin's Ferry — canonized 2026-07-20
+- png: Lorana (hard counter to l'Aranea)
+  sa_che: Believes her daughter Mira is dead (carries her brooch); does NOT know the child was murdered and impersonated by an aranea — will recognize the impostor **on sight** if they meet
+  come: Grief + the brooch; the truth is a DM secret in `Bestiario/png/Lorana/…/Lorana.md` — canonized 2026-07-20
+- png: Tiri Kitor wild elves
+  sa_che: Nothing yet — first contact pending Starsong Hill
+  come: null
+difensori_rethmar:
+- contingente: Guarnigione Rethmar (Valerius + milizia)
+  conteggio: 1,200
+  condizione: Fixed
+- contingente: Rifugiati armati (Elsir/Channath Vale)
+  conteggio: '600'
+  condizione: +150/villaggio evacuato in tempo
+- contingente: Truppe Consiglio Rethmar
+  conteggio: '400'
+  condizione: Via Thorik/Brenna letter
+- contingente: '**Alleanza Elfi Starsong Hill**'
+  conteggio: +120 (100 ranger + 20 gufi giganti)
+  condizione: SOLO se P3-Starsong quest OK (D9 — tribù Tiri Kitor ~500 anime, invia 1/5 come forza da guerra)
+- contingente: '**Nani di Dauth** (torneo vinto)'
+  conteggio: '+300'
+  condizione: SOLO se Tordek vince torneo
+- contingente: '**Lance di Re Thorek**'
+  conteggio: '+150'
+  condizione: 'Flusso separato, condizionato da hook politici (sigillo Maewen + lettera Thorik) — max combinato con la riga sopra: **450** (D10)'
+- contingente: '**Druidi Cerchio Sacro + Treant Hella**'
+  conteggio: '+150'
+  condizione: SOLO se P1B Hella ritual OK
+- contingente: '**Ghostlord redento come alleato**'
+  conteggio: +600 non-morti buoni
+  condizione: Branch raro
+- contingente: Mercenari Salvatore (rischio tradimento)
+  conteggio: ±300
+  condizione: Instabile
+scenari_rethmar:
+- scenario: Worst (Ghostlord ostile, Xal'thor allea, 0 quest)
+  orda: 12,700
+  difensori: 2,200
+  rapporto: '**5.8:1** ☠'
+- scenario: Baseline (0 quest)
+  orda: 9,400
+  difensori: 2,200
+  rapporto: '**4.3:1**'
+- scenario: Medio (2–3 quest + sabotaggi parziali)
+  orda: 8,000
+  difensori: 2,620
+  rapporto: '**3.1:1**'
+- scenario: Ottimale (tutte quest + Rhest + Tower)
+  orda: 6,800
+  difensori: 3,770
+  rapporto: '**1.80:1**'
+- scenario: Leggendario (ottimale + Ghostlord redento + Collezionista stop)
+  orda: 6,400
+  difensori: 4,370
+  rapporto: '**1.46:1**'

@@ -92,6 +92,30 @@ Ogni lotto **ancora da fare** dichiara tre cose in intestazione:
 | **G · Giudizio** | decidere cosa è vero, cosa si butta, cosa si sovrappone | **`Opus 5`, sessione principale** | alto-xhigh | il DM riconosce il proprio problema |
 | **K · Canone** | tocca la verità della campagna | **`Opus 5`, mai delegato** | xhigh-max | conferma esplicita del DM |
 
+## Prima di **creare** un ADR o un piano — il numero si guarda, non si indovina
+
+```bash
+python3 scripts/validate_docs.py --prossimo-adr
+```
+
+🐛 **`ADR-0049` è stato assegnato due volte in due giorni** (PR #138 e #141),
+perché chi scriveva il secondo non ha guardato la cartella. Nessun controllo
+poteva vederlo: nessun link era rotto e nessun ADR mancava dall'indice, che
+mostrava due righe con lo stesso numero.
+
+Il numero di un ADR è la sua **identità** — si cita nei commit, nei piani, nel
+codice e nei changelog — e due decisioni che lo condividono rendono ambigua ogni
+citazione **già scritta**. Il comando stampa l'ultimo numero sul disco e il
+primo libero, contandoli da `plans/adr/` e non dall'indice.
+
+Per un **piano** nuovo vale la stessa cosa in altra forma: si legge
+`plans/INDEX.md` prima di aprirlo (ADR-0044). Un piano duplicato non rompe le
+citazioni, ma divide il lavoro in due posti che divergono.
+
+⚠️ Il gate in CI (`validate_docs --sorgenti`) prende la collisione **dopo** che
+il file esiste. Questo comando è la metà preventiva, e funziona solo se lo
+esegui.
+
 **Come si sceglie la classe — la tabella illustra, queste domande decidono.**
 Si risponde nell'ordine; la prima che scatta assegna la classe.
 

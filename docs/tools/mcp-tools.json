@@ -633,6 +633,36 @@
       "deterministic": true
     },
     {
+      "name": "render_state",
+      "description": "«Ho corretto un fatto di canone: come lo faccio arrivare alla tabella che leggo al tavolo, senza toccarla a mano?»\n\nGenera le tabelle di canone di campaign/state.md a partire da campaign/state.yaml, dentro le otto regioni marcate `<!-- gen:state:NOME -->` (ADR-0050). Il DM continua a leggere un documento, non uno YAML. Senza il rendering lo YAML sarebbe una seconda fonte di verita' accanto a state.md, cioe' il difetto che la decisione esiste per chiudere: un master e una vista, mai due master.",
+      "use_case": "«Ho corretto un fatto di canone: come lo faccio arrivare alla tabella che leggo al tavolo, senza toccarla a mano?»",
+      "invocation": "python3 scripts/render_state.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Gate CI: segnala il drift, non scrive."
+          },
+          "stdout": {
+            "type": "boolean",
+            "description": "Stampa senza toccare i file."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "campaign/state.md"
+      ],
+      "exit_codes": {
+        "0": "ok / in sync",
+        "1": "drift (--check) o errore di dominio",
+        "2": "errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
       "name": "session_wizard",
       "description": "«La sessione è appena finita e ho la testa piena: come fisso quello che è successo prima di dimenticarlo?»\n\nWizard di fine sessione: Q&A con default -> session log canonico conforme al template, committato subito (ADR-0007).",
       "use_case": "«La sessione è appena finita e ho la testa piena: come fisso quello che è successo prima di dimenticarlo?»",
@@ -760,6 +790,34 @@
       ],
       "exit_codes": {
         "0": "ok"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "validate_state",
+      "description": "«Questo file di stato e' ancora coerente, e quanti fatti sono rimasti senza un tempo?»\n\nGate su campaign/state.yaml: lo schema piu' le regole di coerenza che uno schema non esprime, fra cui R7 — le righe che NON dichiarano il proprio tempo si contano invece di indovinarle (oggi 58). Limite dichiarato: uno schema vincola la forma, non la verita'; cio' che rende impossibile e' scrivere un fatto senza dire a quale tempo appartiene, dove il canone quel tempo lo dichiara.",
+      "use_case": "«Questo file di stato e' ancora coerente, e quanti fatti sono rimasti senza un tempo?»",
+      "invocation": "python3 scripts/validate_state.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "json": {
+            "type": "boolean",
+            "description": "Uscita machine-readable."
+          },
+          "verbose": {
+            "type": "boolean",
+            "description": "Elenca archi e INFERRED."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "valido",
+        "1": "violazioni",
+        "2": "errore d'uso o dipendenza mancante"
       },
       "deterministic": true
     },
@@ -1935,7 +1993,7 @@
     },
     {
       "name": "validate_docs",
-      "description": "«Il documento che un agente legge per primo descrive una cartella che non c'e'. Come faccio ad accorgermene prima che lui ci vada a cercare?»\n\nGate anti-deriva fra documentazione e filesystem: ogni percorso citato nei documenti d'ingresso (AGENTS.md, README.md, docs/INDEX.md) deve esistere davvero.",
+      "description": "«Il documento che un agente legge per primo descrive una cartella che non c'e'. Come faccio ad accorgermene prima che lui ci vada a cercare?»\n\nGate anti-deriva fra documentazione e filesystem: ogni percorso citato nei documenti d'ingresso (AGENTS.md, README.md, docs/INDEX.md) deve esistere davvero. Dal 2026-09-16 enumera anche i file NUOVI non ancora in stage (prima un documento appena creato era invisibile al controllo) e boccia due ADR che condividono lo stesso numero.",
       "use_case": "«Il documento che un agente legge per primo descrive una cartella che non c'e'. Come faccio ad accorgermene prima che lui ci vada a cercare?»",
       "invocation": "python3 scripts/validate_docs.py",
       "inputSchema": {
@@ -1952,6 +2010,10 @@
           "json": {
             "type": "boolean",
             "description": "Rapporto machine-readable invece del testo."
+          },
+          "prossimo-adr": {
+            "type": "boolean",
+            "description": "Stampa l'ultimo ADR sul disco e il primo numero libero. Da eseguire PRIMA di scrivere un ADR nuovo: quinta voce della regola d'oro (ADR-0009). Esce 1 se una collisione esiste gia'."
           }
         },
         "required": [],

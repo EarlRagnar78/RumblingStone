@@ -205,7 +205,7 @@ riuscita non si sa descrivere è un lotto tagliato male.
 | ~~D4~~ | `RIPRESA-PR` | F4 | ✅ **chiusa il 2026-09-11: non era una domanda.** Misurato invece di ricordare: il `PALIO-BOOKLET` cita **14 file** — 8 stemmi, 4 mappe, 2 immagini — ed **esistono tutti e 14**. SVG veri da 2,7-5,4 KB, due PNG da ~2 MB, e `CREDITS.md` con l'attribuzione **CC BY 3.0** a game-icons.net già in regola. Niente da produrre, niente da togliere. 🔎 Settimo presupposto invecchiato di questa campagna, e la chiusura era rimasta indietro di un giro: annunciata il 2026-09-11 e non eseguita nello stesso commit |
 | ~~D5~~ | `RIPRESA-PR` | ~~fuori piano~~ | ✅ **deciso e fatto il 2026-09-04**: il DM l'ha messo in cima alla coda, ed è chiuso insieme al punto cieco di `validate_maps` (ADR-0043) |
 | ~~D6~~ | `RIPRESA-PR` | F1 | ✅ **decisa 2026-09-04: ridisegnata.** `…P1C` mappa 3 dichiarava 40×40 e aveva righe da 24 a 26 celle: rifatta **26×29**, nessuna coordinata del testo cambiata |
-| ~~D1~~ | `VENDIBILITA` | ✅ **DECISA il 2026-09-12 — la spec funzionale è ratificata.** Vedi §10 per cosa è entrato e a che prezzo. In sintesi: i campi neutri entrano tutti per i **56 simboli** che ne hanno uno; `📦` diventa muro; `🌲` e `🌳` **no**, con deroga motivata; la luce resta quella del codice, scritta in metri. | ✅ Costo pagato: **+4 polilinee** su ciascuno dei 2 `.uvtt` committati, **zero** SVG. Il resto è additivo. 🔵 Ne è nata [**ADR-0049**](adr/ADR-0049-il-margine-del-bosco-e-un-glifo-a-se.md): `🌲` avrà un glifo per il margine, con una coda di **1.873 celle** da rileggere |
+| ~~D1~~ | `VENDIBILITA` | ✅ **DECISA il 2026-09-12 — la spec funzionale è ratificata.** Vedi §10 per cosa è entrato e a che prezzo. In sintesi: i campi neutri entrano tutti per i **56 simboli** che ne hanno uno; `📦` diventa muro; `🌲` e `🌳` **no**, con deroga motivata; la luce resta quella del codice, scritta in metri. | ✅ Costo pagato: **+4 polilinee** su ciascuno dei 2 `.uvtt` committati, **zero** SVG. Il resto è additivo. 🔵 Ne è nata [**ADR-0051**](adr/ADR-0051-il-margine-del-bosco-e-un-glifo-a-se.md): `🌲` avrà un glifo per il margine, con una coda di **1.873 celle** da rileggere |
 | ~~D2~~ | `VENDIBILITA` | ✅ **DECISA il 2026-09-12 — e allargata: le altezze diventano moduli di griglia.** Il DM: *«i muri normalmente sono 1.5, le tende falle più basse 1m»*. 🔎 **Il «1.5» non erano i muri veri**: nel repo `🏰` sta a 4 m, `⬛` a 3,2, `🗼` a 9 — un muro di pietra a 1,5 m sarebbe più basso di un uomo. Era `🧱` **muretto / copertura bassa**, l'unico simbolo chiamato «muro» che un'altezza non ce l'aveva: si estrudeva al default generico di 0,6 m, cioè un gradino, mentre l'etichetta promette copertura al petto. Poi il DM ha esteso la regola: *«muri piccoli 1.5 metri e poi multipli di 1.5 o approssimazioni più vicine possibili»*. Il quadretto del repo è 1,5 m, quindi **tutte e 31** le altezze sono state portate sul modulo: quadretti interi per ciò che sta in piedi (15), mezzo quadretto per l'ingombro che si scavalca (9), zero per ciò che è piatto (7). Prima erano numeri a occhio — 3.2 · 2.2 · 1.6 · 1.4 · 1.1 · 0.9 · 0.8 · 0.6 · 0.4 — che non volevano dire niente rispetto alla griglia su cui la scena è costruita. | ✅ Costo zero: nessun artefatto 3D è committato. 48 celle `🧱`, 9 `⛺`. 🔵 **Resta il dais** `🔳`, e non è una dimenticanza: **zero celle nel repo** — è nato con ADR-0042 e nessuno l'ha ancora disegnato. Deciderlo adesso sarebbe inventarlo; il giorno che serve costa zero |
 | ~~D7~~ | `RICERCA-MESTIERE` | metro di paragone | ✅ **decisa 2026-09-11: le mappe di *Red Hand of Doom* e quelle di *Rise of the Runelords* (Paizo)** — *«voglio quella qualità e risultato, o il più vicino possibile»*. 🔎 Le prime **sono già nel repo**: **69 immagini** in `00_Red Hand Of Doom/Immagini/`, divise in `MappeIncontri`, `MappeLuoghiTattiche`, `MappeVarie` — il metro si guarda, non si immagina. ⚠️ **Rise of the Runelords non si porta nel repo**: è IP Paizo (ADR-0005). Si nomina come riferimento e si tiene fuori; l'audit cita numeri e criteri, mai i file |
 | ~~D8~~ | `RICERCA-MESTIERE` | stampa | ✅ **decisa 2026-09-11: a colori.** A1.6 (daltonismo) e A1.7 (resa in grigi) **restano non bloccanti**: la seconda perde quasi tutto il suo senso, la prima no — il daltonismo non dipende dalla stampante, e va tenuta come avviso |
@@ -232,6 +232,41 @@ esistevano in nessun piano**. Adesso **§4 è generata** e il drift è rosso in 
 python3 scripts/decisioni_dm.py --check   # gate: l'aggregato combacia coi piani?
 python3 scripts/decisioni_dm.py --emit    # rigenera §4 dopo aver toccato un piano
 ```
+
+### La quinta voce — prima di **creare** un ADR o un piano
+
+⚠️ **Le quattro sopra riguardano chi *chiude* un lotto. Questa riguarda chi
+*apre* un documento**, ed è nata da un errore vero.
+
+🐛 **`ADR-0049` è stato assegnato due volte in due giorni**: all'edizione
+commerciale (PR #138) e poi al margine del bosco (PR #141), perché chi scriveva
+il secondo non aveva guardato la cartella. Nessun controllo poteva vederlo —
+nessun link era rotto e nessun ADR mancava dall'indice, che mostrava
+semplicemente due righe con lo stesso numero.
+
+**Il numero di un ADR è la sua identità**: si cita nei commit, nei piani, nel
+codice e nei changelog. Due decisioni che lo condividono rendono ambigua ogni
+citazione **all'indietro**, sui documenti già scritti.
+
+```bash
+python3 scripts/validate_docs.py --prossimo-adr   # PRIMA di scrivere l'ADR
+```
+
+Stampa l'ultimo numero sul disco e il primo libero, e **esce 1** se una
+collisione esiste già. Il numero si conta da `plans/adr/`, non dall'indice:
+quarta regola di ADR-0045, e in questo caso l'indice era proprio il documento
+che non se n'era accorto.
+
+**Per un piano nuovo** il numero non c'è, ma la regola è la stessa e ha già la
+sua decisione: si legge `plans/INDEX.md` **prima** di aprirlo
+([ADR-0044](adr/ADR-0044-prima-si-guardano-i-piani-che-ci-sono.md)).
+Un piano duplicato non rompe le citazioni, ma divide il lavoro in due posti che
+divergono — ed è già costato sei settimane con la PR #72.
+
+⚠️ **Il limite, dichiarato**: `validate_docs --sorgenti` vede la collisione
+**dopo** che il file esiste, quindi in CI arriva comunque; `--prossimo-adr` è la
+metà preventiva, e funziona solo se la si esegue. È una regola con un cancello
+in fondo, non un cancello all'ingresso.
 
 ⚠️ **Il resto di questo documento resta scritto a mano**, e resta una
 fotografia: l'ordine delle fasi, le dipendenze, i costi. Il gate copre la

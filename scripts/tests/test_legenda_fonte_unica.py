@@ -216,9 +216,9 @@ class TestLeDerogheSonoDichiarate(unittest.TestCase):
                          "il muro si deriva da blocks_sight meno le deroghe")
 
     def test_la_foresta_e_una_decisione_non_una_dimenticanza(self):
-        """🌲 non e' muro per scelta del DM: il glifo del margine e' ADR-0049."""
+        """🌲 non e' muro per scelta del DM: il glifo del margine e' ADR-0051."""
         self.assertNotIn("🌲", legenda.muri())
-        self.assertIn("ADR-0049", legenda.deroghe()["🌲"])
+        self.assertIn("ADR-0051", legenda.deroghe()["🌲"])
 
 
 class TestLeAltezzeSonoModuliDiGriglia(unittest.TestCase):

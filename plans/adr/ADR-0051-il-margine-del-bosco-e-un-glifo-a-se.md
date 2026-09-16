@@ -1,4 +1,4 @@
-# ADR-0049 — Il margine del bosco è un glifo a sé: `🌲` diventa opaco, la fascia attraversabile no
+# ADR-0051 — Il margine del bosco è un glifo a sé: `🌲` diventa opaco, la fascia attraversabile no
 
 **Stato**: accettata — decisione DM del 2026-09-12 — **non ancora attuata**
 

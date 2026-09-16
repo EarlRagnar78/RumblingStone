@@ -40,6 +40,9 @@ dell'Arco 09 è canone preparato (design), non ancora giocato al tavolo**
 
 Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per dettaglio.
 
+<!-- gen:state:archi -->
+<!-- GENERATO da scripts/render_state.py a partire da campaign/state.yaml — non modificare a mano (ADR-0050) -->
+
 | Arc | Fase | Stato | March Clock | PG Lv | Note |
 |---|---|---|---|---|---|
 | 00 Setup RHoD | ✅ | completato | Day 0 | 5 | — |
@@ -64,6 +67,7 @@ Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per det
 | 09 P3 Sabotaggio Campi Drow | ⬜ | **preparato in anticipo** | Day 30-36 | 13-14 | -Fase 0 + -75 esperimenti fungini (45 Servitori + 30 Sporeborn; 8 Guardiani Neri sopravvivono) |
 | 09 P3 Missioni Brevi CR12 | ⬜ | **preparato in anticipo** | Day 30-38 | 13-14 | — |
 | **09 P3 Battaglia Finale Rethmar** | ⬜ | **preparato in anticipo** | **Day 42** | 14 | Fase 0-4 |
+<!-- /gen:state:archi -->
 
 **Legenda**: ✅ completato · 🟡 in corso / imminente · ⬜ non iniziato · ❌ fallito · ⏸ sospeso
 
@@ -81,12 +85,16 @@ Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per det
 > **previsto** dal canone preparato. Nessun contenuto è stato cancellato:
 > è stato etichettato *(lotto 4c, D3 — DM 2026-09-11)*.
 
+<!-- gen:state:party -->
+<!-- GENERATO da scripts/render_state.py a partire da campaign/state.yaml — non modificare a mano (ADR-0050) -->
+
 | PC | Class | 🟢 Dov'è **adesso** (tavolo, ARC-07 P4 chiuso) | 🔵 Dove lo porta il canone **preparato** (post ARC-08) | HP / status **oggi** | Open personal threads |
 |---|---|---|---|---|---|
 | Thorik | Dwarf Fighter 13 | Sala della Forgia Eterna, dopo il riposo (orologio Hammerfist **3g 16h**) | Hammerfist Holds, war council chamber | Full. **−4 DES / +2 COS / +4 CAR permanenti**, e sono tutto quel che ha pagato: −2 DES dalla Corona quando l'ha indossata, −2 DES / +2 COS / +4 CAR dal rito dello Smeraldo del 2026-07-31 (è il **portatore** ad aver accettato il Peso del Mondo). Ricalcolare CA senz'armatura, Riflessi, iniziativa. ⚠️ **Nessun −2 COS.** Il costo della resurrezione è **non ancora versato**: la scena (`ARC07-DEF-3` §5) non è stata giocata. Quando la giocherà, dona il **+2 di deflessione della Corona** e resta a **−1 CA permanente** — e ogni volta che Hella userà lo **Scudo del Custode**, lui sarà **accelerato 3 round verso chi lei ha protetto**. Può anche **rifiutare**: allora Aegis Fang (Ego 14) lo **giudica** finché non rischia qualcosa di suo per lei | Decide whether to lead defense of Rethmar personally vs. delegate |
 | Tordek | Dwarf Fighter 4 / Monk 9 | Sala della Forgia Eterna, dopo il riposo | → Torneo di Dauth | Full; Bracieri Earth phase complete. ✅ **Nessun malus permanente dal rito**: il Peso del Mondo l'ha accettato **Thorik**, il portatore (correzione DM 2026-08-06 — fino a quella data il pegno era attribuito a Tordek per errore). CA senz'armatura, Riflessi, iniziativa e Raffica restano quelli di prima. ⚠️ Il costo della resurrezione è **non ancora versato**, e 🔎 **non sono più i «−500 PE»**: in v4-bis dona **Ancoraggio della Montagna** (2/g), che **lascia i Bracieri per sempre** → Hella ottiene **RD 3/adamantino**. Se rifiuta, i Bracieri **tacciono una settimana** | Tournament of the Eight Gates (3 days, interrupted by Githyanki Day 3) |
 | Hella | Dream Dwarf Ranger 1 / Druid 12 | 🔴 **morta**, corpo nella Sala, semi innestati — la resurrezione (P3B / `ARC07-DEF-3`) è **il prossimo beat da giocare** | Hammerfist → Foresta Sacra, template Ibrido Treant attivo, PG a pieno titolo | n/d finché non torna. Il template Ibrido Treant e i tre Doni **si assegnano al rito**, non prima | Sacred Forest ritual (pass = druid circle ally at Rethmar) |
 | Artemis | Human Warlock 13 | Sala della Forgia Eterna, dopo il riposo | → Torre Invisibile (regione di Dauth) | Full; Ring of Chaotic Illumination active, **Eldritch Blast 7d6**. ⚠️ Il costo del rito è **non ancora versato**: dona **1d6 di Eldritch Blast** (7d6 → **6d6**, per sempre) → Hella ottiene **il Rovo Eldritch**, a volontà. Se rifiuta, l'Anello **si spegne 24 ore** | Confront Zalkatar (CR 13 illithid warlock); Ring evolution at stake |
+<!-- /gen:state:party -->
 
 **Active companions:**
 
@@ -205,6 +213,9 @@ sabotages):** ~7,200
 **Baseline (no PG quests completed):** ~2,200 → ratio **4.5:1** → sconfitta
 quasi certa.
 
+<!-- gen:state:difensori -->
+<!-- GENERATO da scripts/render_state.py a partire da campaign/state.yaml — non modificare a mano (ADR-0050) -->
+
 | Contingent | Count | Condition |
 |---|---|---|
 | Guarnigione Rethmar (Valerius + milizia) | 1,200 | Fixed |
@@ -216,6 +227,7 @@ quasi certa.
 | **Druidi Cerchio Sacro + Treant Hella** | +150 | SOLO se P1B Hella ritual OK |
 | **Ghostlord redento come alleato** | +600 non-morti buoni | Branch raro |
 | Mercenari Salvatore (rischio tradimento) | ±300 | Instabile |
+<!-- /gen:state:difensori -->
 
 **Nota D13 (piano ARC-08 A11)**: il Capitano Lunapiena e i suoi 12
 Ranger Elfici (Hammerfist Arc-08) sono una compagnia **indipendente**
@@ -231,6 +243,9 @@ sui nuovi totali D9/D10, vedi
 §3 (5 scenari worst/baseline/medio/ottimale/leggendario, Orda e
 Difensori con la stessa metodologia dual-clock di §2 qui sopra).
 
+<!-- gen:state:scenari -->
+<!-- GENERATO da scripts/render_state.py a partire da campaign/state.yaml — non modificare a mano (ADR-0050) -->
+
 | Scenario PG | Horde | Difensori | Rapporto |
 |---|---|---|---|
 | Worst (Ghostlord ostile, Xal'thor allea, 0 quest) | 12,700 | 2,200 | **5.8:1** ☠ |
@@ -238,6 +253,7 @@ Difensori con la stessa metodologia dual-clock di §2 qui sopra).
 | Medio (2–3 quest + sabotaggi parziali) | 8,000 | 2,620 | **3.1:1** |
 | Ottimale (tutte quest + Rhest + Tower) | 6,800 | 3,770 | **1.80:1** |
 | Leggendario (ottimale + Ghostlord redento + Collezionista stop) | 6,400 | 4,370 | **1.46:1** |
+<!-- /gen:state:scenari -->
 
 **Riferimento Hammerfist:** 900/300 = **3:1** (battaglia vinta con
 sacrifici — baseline narrativo).
@@ -267,6 +283,9 @@ State machine, not script. Each villain has an agenda that advances each
 in-world day **whether or not the party intervenes**. When a clock fills,
 the listed consequence triggers.
 
+<!-- gen:state:villain -->
+<!-- GENERATO da scripts/render_state.py a partire da campaign/state.yaml — non modificare a mano (ADR-0050) -->
+
 | Villain | Where | Agenda | Clock | Trigger if filled |
 |---|---|---|---|---|
 | Sonjak (Drow Cleric Matrona) — also "Matrona Sajak" in Sal's operative code | Underdark, Cannath Vale border | Subvert dwarven citadel from below; coordinate with Il Collezionista; manage Sal as surface field agent | 4/8 | Drow night-raid on Hammerfist temple (sets up Phase 0 of Rethmar) |
@@ -282,6 +301,7 @@ the listed consequence triggers.
 | **Ghaurush «Cenerevento»** (Ogre magi/Stregone 8, GS 16; GS 18 al secondo incontro) — approvato 2026-08-05, `Bestiario/villain/Ghaurush_Cenerevento/` | Retrovie dell'orda, dove ci sono acqua corrente e roccia | Negoziare, o prendere con la forza, le gallerie alte di Hammerfist. **Non serve Tiamat: incassa** | 0/6 | Prende le gallerie alte senza trattare: **+1 CS alla Fase 1 di Rethmar**, e le due lettere che prova i traffici Sonjak↔Collezionista restano inutilizzate |
 | **Zin'thara Vel'Ryn «la Voce di Ragnatela»** (Illusionista 9/Danzatrice delle Ombre 2, GS 12) — approvata 2026-08-05, `Bestiario/villain/Zin_thara_Vel_Ryn/` | Campi drow del Sottosuolo, sotto la linea Rethmar | Accumulare prove contro Sonjak per comprarsi un esilio in superficie | 2/8 | Ha prove sufficienti per trattare: si offre al miglior offerente — PG, Il Collezionista o la Mano Rossa. Se non sono i PG, il ramo si chiude |
 | **Ushgar «Occhio Reso»** (Orco montano/Barbaro 13, GS 13) — approvato 2026-08-05, `Bestiario/villain/Ushgar_Occhio_Reso/` | Campo degli ausiliari orcheschi, sottovento e fuori dalla palizzata | Ottenere **terra scritta** per i suoi prima che la guerra finisca. **Decisione DM 2026-08-05**: ramo aperto passando prima dall'uscita laterale di Hella | 0/4 | Si prende la terra da solo, da un villaggio che non c'entra niente, e la carta se la fa firmare con le mani |
+<!-- /gen:state:villain -->
 
 ---
 
@@ -290,6 +310,9 @@ the listed consequence triggers.
 > Who currently knows what. **Agents must NOT have an NPC reveal something
 > they have not learned in-fiction.** Add new rows when an NPC learns
 > something; never silently retcon.
+
+<!-- gen:state:conoscenze -->
+<!-- GENERATO da scripts/render_state.py a partire da campaign/state.yaml — non modificare a mano (ADR-0050) -->
 
 | NPC | Knows that... | Learned how / when |
 |---|---|---|
@@ -324,6 +347,7 @@ the listed consequence triggers.
 | Mira Serani «l'Aranea» | The party already met her (disguised as a refugee child) on the road to Hammerfist and let her go; knows fragments of the PCs' artifacts/routes; does NOT know Lorana survived and is at Rethmar | Embedded Red Hand spy since Drellin's Ferry — canonized 2026-07-20 |
 | Lorana (hard counter to l'Aranea) | Believes her daughter Mira is dead (carries her brooch); does NOT know the child was murdered and impersonated by an aranea — will recognize the impostor **on sight** if they meet | Grief + the brooch; the truth is a DM secret in `Bestiario/png/Lorana/…/Lorana.md` — canonized 2026-07-20 |
 | Tiri Kitor wild elves | Nothing yet — first contact pending Starsong Hill | — |
+<!-- /gen:state:conoscenze -->
 
 ---
 
@@ -357,6 +381,9 @@ full mechanics.
 > forward-written state that becomes true only after P4 → P3B → P5 are
 > played. For tonight's session ALWAYS use the "Today" column.
 
+<!-- gen:state:artefatti -->
+<!-- GENERATO da scripts/render_state.py a partire da campaign/state.yaml — non modificare a mano (ADR-0050) -->
+
 | Artifact | Holder | **Today at the table (ARC-07 P4)** | **Prepared (ARC-09 entry)** |
 |---|---|---|---|
 | Aegis Fang | Thorik | Pre-full-awakening: +2 Returning Dwarven Waraxe; bonded | Unchanged until the Siege (P5) is won → then Stage 1 full awakening (see Aegis master) |
@@ -367,6 +394,7 @@ full mechanics.
 | Collana dei Semi Eterni | Hella (dead — resurrection pending) | Forged, awaiting the P3B ritual; Hella not yet resurrected | Active post-resurrection: Treant summoning (limited), Avatar form (1/day). **I 3 slot-dono hanno una meccanica dal 2026-09-12** (`ARC07-DEF-3` §5, DM): ogni PG dona **un potere del proprio artefatto**, che lo lascia per sempre e **germoglia in un seme** — Thorik il **+2 di deflessione** → *Scudo del Custode*; Tordek l'**Ancoraggio** → *Pelle di Adamantio* RD 3/adamantino; Artemis **1d6 di Eldritch Blast** → *Rovo Eldritch* a volontà. 🌱 E il seme **restituisce** al donatore ciò che ha ricevuto, **una volta sola**, quando Hella decide. Slot **ancora non spesi**: il rito non è stato giocato |
 | Cuore di Moradin | Crown set (altar) | Intact — will be expended as catalyst in the P3B ritual | SPENT: single-use expended to resurrect Hella |
 | Orbe delle Otto Porte (Githyanki artifact, campaign canon) | Tournament prize, not yet held | Not in play | Awaits Tournament outcome — N/A until Tordek wins |
+<!-- /gen:state:artefatti -->
 
 **Spent / single-use already burned** *(per column: Ruby & Cuore are spent
 only in the "Prepared" time; at today's table the Cuore is still intact)*:
@@ -420,6 +448,9 @@ Format and rules: `skills/rumblingstone-narrative-style/references/consequence-e
 Arm 1–3 echoes per session from Key decisions; fire ≥1 per session when
 fiction allows. Max ~12 armed — prune during prep.
 
+<!-- gen:state:echi -->
+<!-- GENERATO da scripts/render_state.py a partire da campaign/state.yaml — non modificare a mano (ADR-0050) -->
+
 | ID | Origin (sess., PC, choice) | Tone | Fuse | Payoff sketch | Status |
 |----|----------------------------|------|------|---------------|--------|
 | **E-07a** | 2026-07-31 · **Artemis** · prende il Seme-Mercato di Varis ma **non lo tocca**, e lo fa portare a **Tordek** | grigio | lunga (ARC-09) | Varis scopre di essere stato riconosciuto e trattato da pari: apre una **trattativa**, non una riscossione. E il giorno in cui serve un favore, la gemma è già in mano al party — sulla schiena sbagliata | 🔫 armato |
@@ -429,6 +460,7 @@ fiction allows. Max ~12 armed — prune during prep.
 | **E-07f** | 2026-07-31 · **Thorik** *(e **Hella**, dall'altra parte)* · Sotto la gravità, mentre le ossa scricchiolano, una **luce verde tenue** gli si stringe alle spalle: *«Non sei solo a portare questo peso. Mai più solo.»* Lui la prende per Moradin. Era Hella, morta, a tre metri da lui nella stessa sala. | intimo | lunga (oltre il #3) | ⚠️ **Non spiegarlo prima della resurrezione (#3)** — è l'asimmetria scritta dal modulo (`ARC07-DEF-1` §9 Fase 1, regia). Paga due volte: **(a)** quando Hella torna e quelle parole tornano con lei — e il momento smette retroattivamente di essere la promessa di un dio e diventa quella di una compagna morta che stava per riportare indietro; **(b)** al Dono 1 del rito di Hella, perché è **questa** frase la ragione per cui Thorik dirà di sì al prezzo, non la devozione a Moradin. Per la giocatrice di Hella è il suo eco dal Sogno della Terra. | 🔫 armato |
 | **E-07d** | 2026-07-31 · **Terros** · l'ultimo suono del guardiano è di **assenso** (avevano curato i Cristalli) | luminoso | lunga | La Forgia registra la vittoria **onorata**. Un guardiano che approva è una porta che resta aperta: eco al #4 e nella Cronaca | 🔫 armato |
 | **E-08a** | 2026-08-05 · **DM** · approvata l'ala orchesca della Mano Rossa: dentro l'orda c'è **chi paga più di quanto incassa** | grigio | lunga (ARC-09 → dopoguerra) | Qualunque cosa i PG scelgano, la valle avrà orchi **anche dopo la guerra**: la domanda è se con un atto o con un assedio. Riemerge quando si contano i vivi a Rethmar | 🔫 armato |
+<!-- /gen:state:echi -->
 
 ### §7.R Reputation (Fama / Infamia) + Anointing Threads
 

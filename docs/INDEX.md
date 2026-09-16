@@ -104,8 +104,9 @@ Il **perché** delle scelte strutturali. Indice completo in [`plans/adr/`](../pl
 | [ADR-0046](../plans/adr/ADR-0046-un-rifiuto-senza-motivo-non-parte.md) | **Un rifiuto senza motivo non parte**: `--reroll` esige `--motivo`, e lo scarto si registra |
 | [ADR-0047](../plans/adr/ADR-0047-le-decisioni-aperte-hanno-una-casa-sola.md) | Le decisioni aperte hanno **una casa sola**, e l'elenco si genera |
 | [ADR-0048](../plans/adr/ADR-0048-legenda-funzionale-fonte-unica.md) | La **legenda funzionale è la fonte unica**: la funzione di gioco di un simbolo è un dato, non prosa né un `set` cablato (era ADR-0014 nella #72) |
-| [ADR-0049](../plans/adr/ADR-0049-il-margine-del-bosco-e-un-glifo-a-se.md) | **Il margine del bosco è un glifo a sé**: `🌲` diventa opaco, la fascia che si attraversa no — perché il muro del VTT è binario e il bosco non lo è |
 | [ADR-0049](../plans/adr/ADR-0049-edizione-commerciale-ap-originale.md) | 🔵 **Proposta**: l'edizione commerciale è un **AP originale autonomo**, mai un'espansione di *Red Hand of Doom* — gate: decisione DM + avvocato IP (era ADR-0018 nella #72) |
+| [ADR-0050](../plans/adr/ADR-0050-stato-di-campagna-dati-e-prosa.md) | **Lo stato di campagna: dati validati per i fatti, markdown per la prosa** — le tabelle di `state.md` si generano da `state.yaml`; il tempo non dichiarato si **conta**, non si indovina (era ADR-0017 nella #99) |
+| [ADR-0051](../plans/adr/ADR-0051-il-margine-del-bosco-e-un-glifo-a-se.md) | **Il margine del bosco è un glifo a sé**: `🌲` diventa opaco, la fascia che si attraversa no — perché il muro del VTT è binario e il bosco non lo è |
 
 ## 5. Archivio piani
 

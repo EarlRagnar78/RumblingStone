@@ -8,6 +8,7 @@ quelli che ne difendono la credibilità.
 """
 from __future__ import annotations
 
+import subprocess
 import sys
 import unittest
 from pathlib import Path
@@ -264,3 +265,114 @@ class TestGateSorgentiSulRepoVero(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestIFileNuoviNonSonoInvisibili(unittest.TestCase):
+    """🐛 Il cancello era cieco ai file non ancora in stage (2026-09-16).
+
+    `sorgenti()` enumerava da `git ls-files`, che elenca i **tracciati**: un
+    documento appena creato non veniva guardato finche' qualcuno non lo
+    aggiungeva. Chi scriveva un ADR nuovo con un link rotto dentro vedeva
+    **verde in locale e rosso in CI** un minuto dopo, al primo `git add`.
+
+    E' successo davvero: `ADR-0050`, creato nel lotto 4d-1, citava un nome di
+    file inventato per ADR-0041, e il giro completo dei sedici cancelli —
+    eseguito apposta prima di spingere — l'aveva dato verde **due volte**. Il
+    difetto non era la disattenzione di chi scriveva: era che il controllo
+    locale **non poteva** vederlo.
+    """
+
+    def test_un_file_nuovo_entra_nell_enumerazione(self):
+        nuovo = ROOT / "plans" / "adr" / "ZZZ-prova-file-nuovo.md"
+        nuovo.write_text("[x](ADR-9999-che-non-esiste.md)\n", encoding="utf-8")
+        try:
+            self.assertIn("plans/adr/ZZZ-prova-file-nuovo.md", vd.sorgenti(),
+                          "un file nuovo non tracciato deve essere gia' guardato")
+        finally:
+            nuovo.unlink()
+
+    def test_e_il_gate_lo_boccia(self):
+        """L'altra meta': vederlo non basta, deve anche diventare rosso."""
+        nuovo = ROOT / "plans" / "adr" / "ZZZ-prova-file-nuovo.md"
+        nuovo.write_text("[x](ADR-9999-che-non-esiste.md)\n", encoding="utf-8")
+        try:
+            esito = subprocess.run(
+                [sys.executable, "scripts/validate_docs.py", "--sorgenti"],
+                cwd=ROOT, capture_output=True, text=True)
+            self.assertEqual(esito.returncode, 1)
+            self.assertIn("ZZZ-prova-file-nuovo", esito.stdout + esito.stderr)
+        finally:
+            nuovo.unlink()
+
+    def test_i_file_ignorati_restano_fuori(self):
+        """`--exclude-standard` e' la meta' che impedisce al gate di esplodere.
+
+        Senza, l'enumerazione si mangerebbe `build/`, le cache e tutto cio'
+        che `.gitignore` tiene fuori — e un gate che boccia troppo viene
+        spento al primo giro.
+        """
+        sorgente = (ROOT / "scripts" / "validate_docs.py").read_text(encoding="utf-8")
+        self.assertIn("--exclude-standard", sorgente)
+        for f in vd.sorgenti():
+            self.assertFalse(f.startswith("build/"), f)
+
+
+class TestIlNumeroDiUnAdrEUnico(unittest.TestCase):
+    """🐛 `ADR-0049` e' stato dato DUE VOLTE in due giorni (2026-09-16).
+
+    Prima all'edizione commerciale (PR #138), poi al margine del bosco
+    (PR #141), perche' chi scriveva il secondo — io — non ha guardato la
+    cartella. **Nessun controllo poteva vederlo**: nessun link era rotto e
+    nessun ADR mancava dall'indice, che si limitava a mostrare due righe con
+    lo stesso numero.
+
+    Il numero di un ADR e' la sua identita': si cita nei commit, nei piani, nel
+    codice e nei changelog. Due decisioni che lo condividono rendono ambigua
+    ogni citazione **all'indietro**, sui documenti gia' scritti — e il repo ne
+    ha centinaia.
+
+    ⚠️ Il limite: il gate vede la collisione **dopo** che il file esiste. La
+    meta' preventiva e' `--prossimo-adr`, ed e' per quello che la regola d'oro
+    dice di eseguirlo PRIMA di scrivere.
+    """
+
+    def test_sul_repo_vero_nessun_numero_e_doppio(self):
+        self.assertEqual(vd.adr_duplicati(), [])
+
+    def test_il_gate_morde(self):
+        """Ricreata la collisione vera, non una inventata."""
+        gemello = ROOT / "plans" / "adr" / "ADR-0051-ZZZ-prova-collisione.md"
+        gemello.write_text("# prova\n", encoding="utf-8")
+        try:
+            duplicati = vd.adr_duplicati()
+            self.assertTrue(duplicati, "due file con ADR-0051 devono dare rosso")
+            self.assertEqual({p["path"] for p in duplicati}, {"ADR-0051"})
+            esito = subprocess.run(
+                [sys.executable, "scripts/validate_docs.py", "--sorgenti"],
+                cwd=ROOT, capture_output=True, text=True)
+            self.assertEqual(esito.returncode, 1)
+        finally:
+            gemello.unlink()
+
+    def test_il_prossimo_numero_e_quello_giusto(self):
+        """La meta' che rende la regola seguibile invece che solo esigibile."""
+        usati = vd.numeri_adr()
+        atteso = f"ADR-{max(int(n) for n in usati) + 1:04d}"
+        self.assertEqual(vd.prossimo_adr(), atteso)
+        esito = subprocess.run(
+            [sys.executable, "scripts/validate_docs.py", "--prossimo-adr"],
+            cwd=ROOT, capture_output=True, text=True)
+        self.assertEqual(esito.returncode, 0, esito.stderr)
+        self.assertIn(atteso, esito.stdout)
+
+    def test_il_comando_segnala_le_collisioni_gia_presenti(self):
+        gemello = ROOT / "plans" / "adr" / "ADR-0051-ZZZ-prova-collisione.md"
+        gemello.write_text("# prova\n", encoding="utf-8")
+        try:
+            esito = subprocess.run(
+                [sys.executable, "scripts/validate_docs.py", "--prossimo-adr"],
+                cwd=ROOT, capture_output=True, text=True)
+            self.assertEqual(esito.returncode, 1)
+            self.assertIn("ADR-0051", esito.stderr)
+        finally:
+            gemello.unlink()

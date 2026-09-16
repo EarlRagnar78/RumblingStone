@@ -33,7 +33,23 @@ Gli script sottostanti restano usabili direttamente e usano solo stdlib.
 
 ## ⚖️ Regole non negoziabili (ADR-0007, triplo vincolo)
 
-Gli script scrivono canone (`campaign/state.md`, `campaign/sessions/*`)
+### 🔴 Prima di tutto: il canone di campagna ha **tre** master, non uno
+
+| File | Cosa ci sta | Come ci si scrive |
+|---|---|---|
+| `campaign/state.yaml` | i fatti tabellari di §0, §1, §2.4, §3, §4, §6, §7.E | **qui**, poi `python3 scripts/render_state.py` |
+| `campaign/state.md` | §2 waypoint e orda, §5, §7, i banner dei due tempi, la prosa | qui, **fuori** dai marcatori `gen:state:` |
+| `campaign/state-changelog.md` | lo storico | append-only, in coda |
+
+⚠️ `state.md` è **insieme master e vista**: dentro `<!-- gen:state:NOME -->` il
+contenuto è generato da `state.yaml`. Modificarlo lì non è «una modifica che poi
+si rigenera»: è una modifica che **sparisce** al prossimo `render_state.py`,
+senza errore e senza avviso. `render_state.py --check` gira in CI e diventa
+rosso, ma la modifica è già persa.
+
+Non esiste una via `state.md` → `state.yaml`. Il flusso è a senso unico.
+
+Gli script scrivono canone (i tre file sopra, `campaign/sessions/*`)
 SOLO se valgono **tutte insieme**:
 
 1. **Branch**: mai su `main`/`master` — il canone vivo di un gruppo sta su
@@ -42,14 +58,18 @@ SOLO se valgono **tutte insieme**:
 2. **Conferma**: il DM vede e conferma il **diff esatto, blocco per
    blocco** (`--yes` esiste solo per test/CI).
 3. **Regioni marcate**: in `state.md` si scrive solo dentro
-   `<!-- auto:begin key=… -->` / `<!-- auto:end key=… -->` (v1: `march-clock`
-   §2.1 e `changelog` §8, append-only). Tutto il resto — prosa, tabelle
-   villain, §1 party — resta **proposta a video** da applicare a mano.
-4. **Reversibilità**: `state.md` pulito in git prima dell'apply, commit
+   `<!-- auto:begin key=… -->` / `<!-- auto:end key=… -->` (`march-clock` §2.1)
+   e in `state-changelog.md` dentro `changelog` (append-only). I **clock dei
+   villain** si scrivono invece nel loro campo di `state.yaml`, e la vista si
+   rigenera nello stesso giro. Tutto il resto — prosa, §1 party, morte e fuga
+   dei PNG — resta **proposta a video**, e la proposta dice **in quale dei tre
+   master** va.
+4. **Reversibilità**: i tre master puliti in git prima dell'apply, commit
    dedicato subito dopo; l'undo è sempre `git revert`.
 
-Un agente che "aggiorna state.md" a mano fuori dalle regioni marcate, o su
-`main`, sta violando l'ADR: fermarsi e proporre il flusso corretto.
+Un agente che "aggiorna state.md" a mano fuori dalle regioni marcate, o dentro
+una regione `gen:state:` invece che in `state.yaml`, o su `main`, sta violando
+l'ADR: fermarsi e proporre il flusso corretto.
 
 ## Flusso di sessione (`dm.py session`)
 

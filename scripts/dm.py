@@ -447,13 +447,23 @@ def cmd_doctor(args: argparse.Namespace, extra: list[str]) -> int:
         else:
             print("  ○ campaign/group.yaml assente — `dm.py session branch "
                   "--group <nome>` per attivare il flusso ADR-0007")
+        # Le due regioni vivono in due file dal 2026-09-16 (lotto 4d-2): lo
+        # storico ha il suo, e cercarle entrambe in state.md darebbe sempre
+        # «assenti» anche col changelog marcato correttamente.
         _state = REPO / "campaign" / "state.md"
+        _clog = REPO / "campaign" / "state-changelog.md"
+        _regs = set()
         if _state.exists():
-            _regs = _find_regions(_state.read_text(encoding="utf-8"))
-            if {"march-clock", "changelog"} <= set(_regs):
-                ok("marker auto: presenti in state.md (march-clock, changelog)")
+            _regs |= set(_find_regions(_state.read_text(encoding="utf-8")))
+        if _clog.exists():
+            _regs |= set(_find_regions(_clog.read_text(encoding="utf-8")))
+        if _state.exists():
+            mancanti = {"march-clock", "changelog"} - _regs
+            if not mancanti:
+                ok("marker auto: presenti (march-clock in state.md, "
+                   "changelog in state-changelog.md)")
             else:
-                print("  ○ marker auto: assenti in state.md — "
+                print(f"  ○ marker auto: manca {', '.join(sorted(mancanti))} — "
                       "`state_apply.py --migrate` sul branch gruppo")
     except Exception as exc:  # doctor non deve mai crashare
         warn(f"check sessione ADR-0007 falliti: {exc}")

@@ -1142,6 +1142,8 @@ Vale per **ogni** commit di **ogni** fase.
 | ~~D13~~ | F4 · 4c | ✅ **DECISA E ATTUATA il 2026-09-12, nello stesso commit.** Il DM ha approvato la **v4-bis**, con l'ultima taratura sua: **−1 CA invece di −2** per Thorik. 🛡️ **Thorik** dona il **+2 di deflessione della Corona** → **Scudo del Custode** (1/g, immediata: Hella prende il danno di un alleato entro 9 m **dimezzato**) + **l'Eco del Custode**, che e' l'idea del DM: quando lei scuda qualcuno **lui e' accelerato 3 round e si muove verso chi e' stato protetto** — l'anello si chiude, la protezione data torna al donatore trasformata in velocita'. ⚒️ **Tordek** dona **Ancoraggio della Montagna** → **Pelle di Adamantio RD 3/adamantino**. 🔮 **Artemis** dona **1d6 di Eldritch Blast** (7d6 → 6d6) → **Rovo Eldritch** a volonta': il DM ha visto che il dono precedente **si sovrapponeva** a quello di Thorik (stessa casella, dare tempo a un altro). ⚒️ **Reazioni degli artefatti al dono e al rifiuto**, tutte reversibili e tutte fondate sulla personalita' gia' in scheda. 🌱 **E il potere #6 della Collana non e' piu' `[da definire col DM]`**: il seme **restituisce** al donatore, una volta sola, e decide Hella. **Attuato in 17 file** + **12 istantanee** in `_ARCHIVIO/doni-v1-2026-09-12/`. Vedi **§4.2-quinquies** |
 | ~~D4~~ | F4 | ✅ **chiusa il 2026-09-11: non era una domanda.** Misurato invece di ricordare: il `PALIO-BOOKLET` cita **14 file** — 8 stemmi, 4 mappe, 2 immagini — ed **esistono tutti e 14**. SVG veri da 2,7-5,4 KB, due PNG da ~2 MB, e `CREDITS.md` con l'attribuzione **CC BY 3.0** a game-icons.net già in regola. Niente da produrre, niente da togliere. 🔎 Settimo presupposto invecchiato di questa campagna, e la chiusura era rimasta indietro di un giro: annunciata il 2026-09-11 e non eseguita nello stesso commit |
 | D11 | F4 · 4b | **L'ADR ex-0018 della #72: recuperato il 2026-09-11 come [ADR-0049](adr/ADR-0049-edizione-commerciale-ap-originale.md), e resta 🔵 *proposta* — non accettata.** Dice che, *se e quando* si pubblica, si pubblica un **AP originale autonomo**, mai un'espansione di RHoD, e porta il **perimetro della v1**. ✅ **I due avvertimenti che bloccavano la domanda sono tolti**: l'audit mancante è stato **rifatto da zero** ([`AUDIT-DERIVAZIONE-IP-CAMPAGNA`](../docs/audit/AUDIT-DERIVAZIONE-IP-CAMPAGNA.md)), e la tesi **regge sul repo di oggi** — archi 07+08 a **0,2** e **0,7** occorrenze RHoD per 1.000 parole contro il **5,6** dell'arco 09. 🔎 **E la misura ha aggiunto due cose che la #72 non sapeva**: il **`Bestiario/` è a 3,0** e **esce col modulo** — un perimetro che tace su di lui lascia fuori il conto una dipendenza vera — e i **moduli autoconclusivi sono già puliti** (`10-stand-alone` e il Drappo a **0,0**), quindi su quest'asse il prodotto della linea 3 di `PIANO-VENDIBILITA` è pronto. 🔴 **Cosa resta da decidere al DM**: (a) si adotta il perimetro così com'è? (b) il **bestiario** sta dentro o fuori? (c) l'ADR resta proposta finché non c'è la **verifica di un avvocato IP**, che l'audit non sostituisce — conta i nomi, non la struttura |
+| **D14** 🆕 | F4 · 4d-2 | 🔴 **Dove va la riga del March Clock che scrive la macchina?** Accendendo la via di scrittura (`state_apply --migrate`, mai eseguita prima) è emerso che `migrate()` presumeva «`**Current March Day:**`» fosse una **riga a sé**. Il lotto 4c l'ha resa l'**inizio di un paragrafo di cinque righe** che spiega perché il Giorno 19 è un bersaglio e non un passato. Marcandone solo la prima, `apply_march_clock` l'avrebbe sostituita lasciando le altre quattro **orfane a metà frase** — canone corrotto al primo aggiornamento vero. ✅ **Il lotto rifiuta di indovinare**: la marcatura è bloccata con un errore che dice perché, e il changelog (che sta in un file suo) **non ne è penalizzato**. ⚠️ Allargare la regione fino alla riga vuota cancellerebbe la nota del DM a ogni aggiornamento: è il danno peggiore dei due, quindi non l'ho fatto. **Serve una riga autonoma per la macchina accanto alla prosa** — e dove metterla, e come dirla, è contenuto. Finché resta aperta, il March Clock **resta manuale** (come è sempre stato) |
+| **D16** 🆕 | F4 · 4d-2 | 🔵 **I villain hanno bisogno di un campo `stato`?** Accendendo la scrittura in `state.yaml` i **clock** sono diventati meccanici (numero in un campo dichiarato), ma «Regiarix killed» e «Sonjak escaped» **no**: i record `villain` di §3 hanno `villain · dove · agenda · clock · trigger`, e **nessun campo per lo stato**. Oggi la proposta dice al DM di scriverlo dentro `dove` o `agenda`, cioè di infilare un fatto strutturato dentro una frase — che è lo stesso difetto che ADR-0050 ha appena chiuso altrove. ⚠️ Dedurne uno adesso sarebbe **inventare schema dentro un lotto di infrastruttura**, esattamente come dedurre il `tempo` delle 58 righe di 4d-1: non l'ho fatto. Le tre strade: (a) campo `stato` con enumerazione chiusa (`attivo` · `morto` · `latitante` · `neutralizzato`) — rende meccaniche morte e fughe, ma va deciso cosa significa ciascun valore per il **morale delle armate** (`Armate-CALCOLI §4`); (b) niente campo, e la morte resta prosa per sempre — coerente col fatto che un villain morto spesso **torna**, e dirlo è narrazione; (c) campo `stato` **più** una riga di §7 per il come — due scritture per un fatto, che è il prezzo di avere sia il dato sia la storia. 🔴 Finché resta aperta, morte e fuga **restano proposte a mano**, e il tool lo dice nominando `state.yaml` |
 | ~~D5~~ | ~~fuori piano~~ | ✅ **deciso e fatto il 2026-09-04**: il DM l'ha messo in cima alla coda, ed è chiuso insieme al punto cieco di `validate_maps` (ADR-0043) |
 | ~~D6~~ | F1 | ✅ **decisa 2026-09-04: ridisegnata.** `…P1C` mappa 3 dichiarava 40×40 e aveva righe da 24 a 26 celle: rifatta **26×29**, nessuna coordinata del testo cambiata |
 
@@ -1327,7 +1329,7 @@ ed è la meno importante.
 
 ---
 
-### 4.8 · Lotto **4d** — `state.yaml` `[4d-1 ✅ chiuso 2026-09-16 · 4d-2 ⬜]`
+### 4.8 · Lotto **4d** — `state.yaml` `[4d-1 ✅ · 4d-2 ✅ — chiusi il 2026-09-16]`
 
 > `[K canone · Opus 5 · xhigh · `python3 scripts/render_state.py --check` esce 0:
 > `state.md` **rigenerato è byte-identico** a quello committato]`
@@ -1485,6 +1487,171 @@ Rinumerato in **ADR-0051** e corretto in **9 file**.
 🔎 **Altre due àncore invecchiate**, trovate eseguendo i test del ramo: cercavano
 `MORTA` in maiuscolo, mentre il canone di oggi scrive `🔴 **morta**`. Un'ancora
 è una citazione del canone, quindi invecchia col canone.
+
+#### 4.8.7 · Lotto **4d-2** — lo storico e la via di scrittura
+
+> `[C costruzione · Opus 5 · alto · le 1.179 righe spostate sono **identiche
+> byte per byte**, e `state_apply` scrive davvero nel file nuovo — provato sul
+> file vero, non su fixture]`
+
+##### Audit, misurato su `14694c4`
+
+| | |
+|---|---:|
+| `state.md` | **1.657 righe** |
+| di cui §8 changelog | **1.179 (71%)** |
+| blocchi fenced dentro §8 | **tre**, consecutivi — `state_apply` appende all'ultimo |
+| consumatori della **regione** changelog | **due** |
+
+🔎 **Il raggio d'azione è molto più piccolo di quanto «71% del file» faccia
+temere.** Cercando `changelog` in sei script, quattro lo nominano solo in
+commenti che parlano di `plans/CHANGELOG.md`, un altro file. Chi tocca davvero
+la regione è:
+
+- `state_apply.py` — la scrive (`append_changelog`, `--migrate`);
+- `dm.py` §doctor — verifica che i marcatori `march-clock` e `changelog`
+  esistano in `state.md`.
+
+##### 🔴 La via di scrittura è a **un comando** dall'essere accesa
+
+`state_apply.py --migrate` eseguito sul repo di oggi inserisce i marcatori e
+tocca **4 righe**. Non è mai stato lanciato: per questo `state_apply` degrada
+dicendo al DM di fare a mano (§4.8.2). 4d-2 la accende, ed è metà del suo senso.
+
+##### La regressione da non ripetere, e come
+
+⚠️ La #99 registra un difetto **proprio**: *«lo split dello storico aveva rotto
+`state_apply --migrate`. La CI non l'aveva vista perché quei test girano su
+fixture»*. È il motivo per cui 4d-2 è stato separato da 4d-1, e il rimedio non è
+attenzione: i test di questo lotto girano **sui file veri del repo**, non su un
+fixture costruito per passare.
+
+##### Assunzioni dichiarate
+
+1. **Il contenuto si sposta alla lettera.** Nessuna riga riscritta, riordinata o
+   ricompattata: il criterio d'uscita è la **byte-identità** delle 1.179 righe
+   spostate. Un changelog è append-only per decisione, e riscriverlo mentre lo
+   si sposta renderebbe impossibile dire cosa è cambiato.
+2. **§8 non sparisce da `state.md`: diventa un puntatore.** Chi apre il file e
+   cerca lo storico dev'essere mandato dove è finito, non trovare un buco.
+3. **Il reset per gruppo nuovo resta fuori.** `campaign/templates/state-blank.md`
+   esiste ma **nessuno script lo legge**: il reset automatico non c'è ancora, e
+   la perdita che la #99 descriveva non è viva su `main`. Diventa un vincolo per
+   il lotto **4f**, che dovrà conoscere `state.yaml` e `state-changelog.md`.
+
+##### Com'è andata — **chiuso**, con un difetto trovato accendendo la luce
+
+**Lo split è pulito**: `state.md` da **1.657 a 486 righe**, e le **1.177 righe**
+spostate sono **identiche byte per byte** — confrontate contro `git`, non contro
+una copia fatta al momento. §8 resta come **puntatore**, non come buco.
+
+**La via di scrittura è cablata e accesa**: `state_apply` legge e scrive due
+file, `--migrate` marca in entrambi, `dm.py doctor` cerca ogni regione dove
+adesso vive. Il changelog è marcato e l'append funziona — provato sul **file
+vero**, in memoria, senza toccarlo.
+
+🔴 **E accendendola è saltato fuori un difetto che sarebbe costato canone.**
+`migrate()` presumeva che «`**Current March Day:**`» fosse una riga a sé; il
+lotto 4c l'ha resa l'**inizio di un paragrafo di cinque righe**. Marcandone solo
+la prima, `apply_march_clock` l'avrebbe sostituita lasciando le altre quattro
+**orfane a metà frase**. Non era mai emerso perché `--migrate` non era mai stato
+eseguito.
+
+Il lotto **rifiuta di indovinare**: la marcatura è bloccata con un errore che
+dice perché, e — seconda correzione — **una regione insicura non blocca più
+quella sicura**, perché punire il changelog per la prosa di `state.md` sarebbe
+punire il file sbagliato. Dove vada la riga della macchina è la **decisione
+D14**; finché è aperta il March Clock resta manuale, com'è sempre stato.
+
+##### Validazione
+
+| Prova | Criterio |
+|---|---|
+| **byte-identità dello spostamento** | le righe del nuovo file combaciano con quelle tolte, carattere per carattere |
+| **la via di scrittura funziona** | `state_apply --migrate` poi `--check`: i marcatori ci sono e la proposta è applicabile |
+| **sui file veri** | i test leggono `campaign/state-changelog.md`, non un fixture — è la lezione della #99 |
+| **il puntatore regge** | `validate_docs --sorgenti` verde: §8 di `state.md` cita un percorso che esiste |
+| **non-regressione** | `dm.py doctor`, `render_state --check`, 763 test |
+
+#### 4.8.8 · Lotto **4d-2** (seguito) — i tre master, e la trappola che 4d-1 aveva aperto
+
+[K canone · Opus 5 · alto · `python3 -m pytest scripts/tests -q` → 799 test;
+`render_state.py --check` verde dopo un `state_apply` andato a buon fine; sei
+cancelli nuovi **provati all'indietro**, tutti rossi]
+
+##### Il difetto, misurato prima di scrivere una riga
+
+Da quando le otto tabelle di `state.md` sono generate (4d-1), `state.md` è
+**insieme master e vista**, e la differenza la fanno i marcatori
+`<!-- gen:state:… -->`. `state_apply` però chiudeva ogni sessione stampando:
+
+> `[apply] proposte NON meccaniche — applicale a mano in state.md:`
+
+Per metà delle proposte quella era l'istruzione per **perderle**. Provato sul
+repo vero: cambiando «Dwarf Fighter 13» in «14» dentro `state.md`,
+`render_state --check` diventa rosso e la modifica **sparisce** alla
+rigenerazione successiva. Non esiste una via md → yaml: il flusso è a senso
+unico.
+
+La stessa riga stava in `state_sync.py` («*apply by hand to `campaign/state.md`*»),
+e sbagliava per lo stesso motivo.
+
+##### Dove vive ogni fatto — `scripts/dmcore/masters.py`
+
+| Master | Cosa ci sta | Trigger che ci finiscono |
+|---|---|---|
+| `campaign/state.yaml` | i fatti tabellari di §0, §1, §2.4, §3, §4, §6, §7.E | `ritual_clock` · `villain_clock` · `npc_killed` · `npc_escaped` |
+| `campaign/state.md` | §2 waypoint e orda, §5, §7, i banner dei due tempi | `march_clock` · `alliance` |
+| `campaign/state-changelog.md` | lo storico, append-only | (ci scrive solo la macchina) |
+
+La copertura è un **cancello**: un trigger nuovo senza la sua riga fa rossa la
+CI, perché senza destinazione la proposta tornerebbe al messaggio generico.
+
+##### Cosa diventa meccanico, e cosa **no**
+
+Scrive da sé: i **clock dei villain** (§3), che sono un numero in un campo
+dichiarato. Il record si trova per nome e numeratore; **zero corrispondenze o
+più d'una lasciano la proposta a mano**, senza ripiego. Con tredici villain in
+tabella, sceglierne uno a caso è canone rotto in silenzio.
+
+⚠️ **Morte e fuga restano proposte, e non è una dimenticanza**: i record
+`villain` non hanno un campo `stato`. Dichiararne uno è una modifica di
+**schema** — si decide e si documenta, non si deduce da una riga di log a fine
+sessione. Diventa la decisione **D16**.
+
+Anche `Sethrax` resta a mano, ed è il caso che mostra che la regola funziona: il
+suo clock è «*Sync to Tournament (Day 1 = arrivo…)*», non `n/m`. Non è un
+contatore e il tool non finge che lo sia.
+
+##### Come si scrive in uno YAML senza riscriverlo
+
+`yaml.safe_dump` rigenererebbe tutte e **502** le righe — commenti di testa
+compresi, che lì non sono decorazione ma la spiegazione di ADR-0050 — per
+cambiare tre caratteri. Un diff di 502 righe per un clock che passa da `9/18` a
+`10/18` è un diff che nessuno rilegge.
+
+Quindi `dmcore/statedata.py` modifica **la riga**, e poi **verifica contro il
+parser** che sia cambiato esattamente quel campo e nient'altro: carica prima e
+dopo, applica la modifica attesa alla struttura caricata, e confronta. La
+modifica testuale è veloce e ingenua; la verifica è totale. Se la seconda non
+conferma la prima, non si scrive niente. Misurato sul file vero: **una riga su
+502**, commenti intatti.
+
+E dopo il master, la vista: `state_apply` rigenera le regioni `gen:state:`
+nello stesso giro. Senza, un `state_apply` andato a buon fine lascerebbe il
+repo in uno stato che `render_state --check` boccia in CI. Se i marcatori
+mancano, **non si scrive nemmeno il master**: o tutti e due, o nessuno.
+
+##### Validazione
+
+| Prova | Criterio |
+|---|---|
+| **sul repo vero** | `state_apply` eseguito davvero sul canone: 1 riga in `state.yaml`, 1 in `state.md`, 1 nel changelog — poi `git checkout` |
+| **la vista segue il master** | `render_state --check` verde **dopo** l'apply, non prima |
+| **i cancelli mordono** | 6 sabotaggi (destinazione tolta, destinazione sbagliata, vista non rigenerata, nome non catturato, riga sbagliata, messaggio generico) → **tutti rossi** |
+| **si degrada, non si rompe** | senza `state.yaml` il clock resta una proposta a mano, exit 0 |
+| **la guardia copre i tre file** | era tarata solo su `state.md`; adesso un `state.yaml` sporco blocca la scrittura |
+| **non-regressione** | 799 test, `validate_state`, `dm.py doctor` |
 
 #### 4.8.6 — FASE 3 · Validazione
 

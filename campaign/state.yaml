@@ -298,78 +298,91 @@ echi:
   tag: 🔫 armato
 villain:
 - villain: Sonjak (Drow Cleric Matrona) — also "Matrona Sajak" in Sal's operative code
+  png_id: sonjak
   dove: Underdark, Cannath Vale border
   agenda: Subvert dwarven citadel from below; coordinate with Il Collezionista; manage Sal as surface field agent
   clock: 4/8
   stato: attivo
   trigger: Drow night-raid on Hammerfist temple (sets up Phase 0 of Rethmar)
 - villain: Salvatore "Sal" della Luna d'Argento
+  png_id: salvatore
   dove: Desert road, Cannath Vale → Rethmar (Shaar)
   agenda: Profile party's artifacts and magical defenses; plant Sabotage Oil on weapons before Rethmar; deliver living statues to Varis
   clock: 0/6
   stato: attivo
   trigger: Sabotage Oil applied — weapon TS failure risk at Phase 3 boss; Phase 4 statue activation proceeds at full strength
 - villain: Il Collezionista (Rakshasa)
+  png_id: il-collezionista
   dove: Mobile — last seen brokering with drow
   agenda: Acquire the Crown's spare gem before party can use it; manipulate Conte Valerius
   clock: 5/8
   stato: attivo
   trigger: Sponsors anti-party legal pressure; Conte Valerius freezes assets
 - villain: Zalkatar (Illithid Warlock)
+  png_id: zalkatar
   dove: Invisible Tower, Dauth region
   agenda: Mind-strip a captured githyanki for fleet intel
   clock: 6/8
   stato: attivo
   trigger: Tower goes mobile; harder to find next session
 - villain: Wyrmlord Saarvith + Regiarix
+  png_id: saarvith-regiarix
   dove: Lake Rhest ruins
   agenda: Rebuild dragonrider corps from black dragon spawn
   clock: 3/8
   stato: attivo
   trigger: Rhest becomes a fortified war camp; CR +1 to assault
 - villain: Xal'thor (Illithid Coordinator, psionic)
+  png_id: xal-thor
   dove: En route with an Illithid invasion force (psionic thralls, larvae, a small core of dominated Githyanki — NOT the free Githyanki dragon-rider force led by Vaereth, which is a separate and hostile faction)
   agenda: Day 3 fixed assault on the Dauth Tournament to seize Tordek's **Bracieri Gemelli** (planar keys to the Eternal Forge); does NOT target the Orbe delle Otto Porte
   clock: 'Fixed: triggers Day 3 of Tournament regardless'
   stato: attivo
   trigger: Tournament becomes combat encounter
 - villain: Sethrax il Velato (Illithid emissary, Zalkatar's conclave)
+  png_id: sethrax
   dove: Dauth — infiltrated as tournament finalist "Kethran Mano di Pietra"
   agenda: Extract a "Seme di Porta" from the Orbe delle Otto Porte during the Tournament's peak resonance, deliver it to Zalkatar at the Invisible Tower
   clock: Sync to Tournament (Day 1 = arrival; Day 2 = entered as finalist; Day 3 Round 7 = forced unmasking by Xal'thor's portal)
   stato: attivo
   trigger: Sethrax flees to Invisible Tower with the seed → Zalkatar gains +2 effective CR + new orb-derived Mind Blast in P2A finale (Artemis's quest)
 - villain: Azarr Kul (High Wyrmlord) — **Ritual Clock, see §2.0** (NOT the March Clock; the horde's physical approach is tracked separately in §2.1, currently Day 19 of 42)
+  png_id: azarr-kul
   dove: Fane of Tiamat (Shaar)
   agenda: 'Ritual sacrifices/planar conjunctions to summon the Avatar of Tiamat during the Rethmar siege (Day 40-42, Phase 2). Advances only on explicit triggers: +1 per Warpriest élite mass sacrifice (Day 35-38), +2 if Giant Wave ×1 breaches the walls (Phase 1), +3 if Giant Wave ×2 breaches (Phase 3) — see `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` §4b'
   clock: 9/18
   stato: attivo
   trigger: Avatar of Tiamat manifests over Rethmar during Phase 2's 10-round ritual (D8)
 - villain: Conte Valerius (manipulator)
+  png_id: conte-valerius
   dove: Capital city
   agenda: Legalize horde funding via "patriotic emergency" loans
   clock: 2/8
   stato: attivo
   trigger: Party loses access to legitimate guild merchants
 - villain: '**Mira Serani «l''Aranea»** (aranea mutaforma, Red Hand intel) — canonizzata 2026-07-20, `Bestiario/villain/Mira_Serani/`'
+  png_id: mira-serani
   dove: Mobile — infiltrata nell'onda profughi (Guado → Rethmar)
   agenda: Raccogliere intel su difese di Rethmar e **artefatti dei PG** per l'orda; spacciarsi per la figlia morta di Lorana (bimba/adolescente); **evitare Lorana**
   clock: Trigger, non clock numerico
   stato: attivo
   trigger: '**Hard counter**: se incrocia Lorana → smascherata a vista, combatte solo per fuggire. Ogni intel raccolta **alimenta i clock esistenti** (Sal/Sonjak/Fase 0-1), non ne apre uno nuovo'
 - villain: '**Ghaurush «Cenerevento»** (Ogre magi/Stregone 8, GS 16; GS 18 al secondo incontro) — approvato 2026-08-05, `Bestiario/villain/Ghaurush_Cenerevento/`'
+  png_id: ghaurush
   dove: Retrovie dell'orda, dove ci sono acqua corrente e roccia
   agenda: 'Negoziare, o prendere con la forza, le gallerie alte di Hammerfist. **Non serve Tiamat: incassa**'
   clock: 0/6
   stato: attivo
   trigger: 'Prende le gallerie alte senza trattare: **+1 CS alla Fase 1 di Rethmar**, e le due lettere che prova i traffici Sonjak↔Collezionista restano inutilizzate'
 - villain: '**Zin''thara Vel''Ryn «la Voce di Ragnatela»** (Illusionista 9/Danzatrice delle Ombre 2, GS 12) — approvata 2026-08-05, `Bestiario/villain/Zin_thara_Vel_Ryn/`'
+  png_id: zin-thara
   dove: Campi drow del Sottosuolo, sotto la linea Rethmar
   agenda: Accumulare prove contro Sonjak per comprarsi un esilio in superficie
   clock: 2/8
   stato: attivo
   trigger: 'Ha prove sufficienti per trattare: si offre al miglior offerente — PG, Il Collezionista o la Mano Rossa. Se non sono i PG, il ramo si chiude'
 - villain: '**Ushgar «Occhio Reso»** (Orco montano/Barbaro 13, GS 13) — approvato 2026-08-05, `Bestiario/villain/Ushgar_Occhio_Reso/`'
+  png_id: ushgar
   dove: Campo degli ausiliari orcheschi, sottovento e fuori dalla palizzata
   agenda: 'Ottenere **terra scritta** per i suoi prima che la guerra finisca. **Decisione DM 2026-08-05**: ramo aperto passando prima dall''uscita laterale di Hella'
   clock: 0/4
@@ -377,96 +390,127 @@ villain:
   trigger: Si prende la terra da solo, da un villaggio che non c'entra niente, e la carta se la fa firmare con le mani
 conoscenze:
 - png: Sonjak (= Matrona Sajak)
+  png_id: sonjak
   sa_che: The party freed the Cristal Warriors but does NOT know they have all 3 Crown gems
   come: Drow scouts witnessed the mine assault
 - png: Ghaurush «Cenerevento»
+  png_id: ghaurush
   sa_che: Che i Custodi Eterni portano **artefatti divini**; **non** sa quali
   come: Rapporti dell'avanguardia della Mano Rossa (2026-08-05)
 - png: Zin'thara Vel'Ryn
+  png_id: zin-thara
   sa_che: Che i Custodi Eterni hanno liberato i Guerrieri di Cristallo, come Sonjak; **non** sa nulla della Corona
   come: Rete di informatori drow nei campi (2026-08-05)
 - png: Ushgar «Occhio Reso»
+  png_id: ushgar
   sa_che: Che i quattro Custodi viaggiano con artefatti; **non** sa quali, **e non gli importa**
   come: Voci di caserma fra gli ausiliari (2026-08-05)
 - png: Sonjak
+  png_id: sonjak
   sa_che: Sal is operating on the desert road toward Rethmar; does NOT know Sal's temporal identity (Vatore)
   come: Standard briefing to field agent
 - png: Ghostlord / Zeth il Murato
+  png_id: ghostlord
   sa_che: Party existence unknown; aware of Red Hand using his lair as undead factory
   come: Sensed via lair's magical senses
 - png: Conte Valerius
+  png_id: conte-valerius
   sa_che: The party visited Hammerfist; does NOT know about the Crown or Sal
   come: Public dispatches — updated 2026-05-02
 - png: Azarr Kul
+  png_id: azarr-kul
   sa_che: Party are Custodi Eterni; does NOT know artifact details
   come: General intelligence from Red Hand scouts
 - png: Xal'thor
+  png_id: xal-thor
   sa_che: Tordek carries the Twin Braziers (planar keys to Eternal Forge)
   come: Planar observation; cross-referenced with Forgia Eterna records
 - png: Zalkatar (via Sethrax)
+  png_id: zalkatar
   sa_che: The Orbe delle Otto Porte at Dauth Tournament has Githyanki planar origin and emits a "Seme di Porta" extractable at peak resonance
   come: Telepathic dispatch from Sethrax (covert) — refreshed daily; updated 2026-05-03
 - png: Sethrax il Velato
+  png_id: sethrax
   sa_che: Tordek is the orb's primary attuned monk; the orb's first opening triggers a Githyanki "Eco delle Fenditure" vision; does NOT yet know Xal'thor's separate invasion plan
   come: Direct observation Day 1–2 of Tournament
 - png: Varis "Seta-Argento"
+  png_id: varis
   sa_che: Some statues might be alive; does NOT know Sal is the supplier chain origin
   come: Involuntary observation 3 months ago
 - png: Il Collezionista
+  png_id: il-collezionista
   sa_che: Artemis carries the Ring of Chaotic Illumination
   come: Witnessed at minotaur lair; sent guild operatives to track
 - png: Il Collezionista
+  png_id: il-collezionista
   sa_che: Therysol is alive and hunting him
   come: Inferred from missing guild operatives in Underdark
 - png: Re Thorek Hammerfist
+  png_id: re-thorek
   sa_che: The party are now Custodi Eterni; he has named them so
   come: Awarded post-siege
 - png: Maestro Varis "Seta-Argento"
+  png_id: varis
   sa_che: Artemis is a buyer of Underdark relics; willing to broker
   come: Three transactions to date
 - png: Salvatore "Sal"
+  png_id: salvatore
   sa_che: The party are Custodi Eterni carrying major divine artifacts; knows their names, abilities, and routes
   come: Briefed by Il Collezionista before deploying to desert road
 - png: Conte Valerius
+  png_id: conte-valerius
   sa_che: The party visited Hammerfist; does NOT yet know about the Crown
   come: Public dispatches
 - png: Druid Circle of the Sacred Forest
+  png_id: cerchio-sacro
   sa_che: Hella is approaching for the ritual; reserves judgment
   come: Hella's letter, sent two days ago
 - png: Capitana Lythiel Alar-Wen (Wood Elf Ranger 8, Sacred Forest scout, GS 8)
+  png_id: lythiel
   sa_che: Hella is the druidess Saraah promised the Acorn of the Circle to
   come: Direct recognition during Hammerfist Battle Sessione 4; canonized 2026-05-04
 - png: Maestro Tempestas (Half-elf Bard 12/Arcmage 2, GS 14, Rethmar **intelligence agent** — NOT delivery service)
+  png_id: tempestas
   sa_che: The party survived Lorana's city (Arco 00); they are Custodi Eterni; he carries **only one letter** (Brenna Sorvane → Thorik) on Day 21 + intel exchange mission; intercepted drow conversation 3 weeks ago about "il dottore della torre invisibile vuole il portatore dell'anello caotico" + "fine Mirtul, poi la torre cammina" — relevance recognized only when Artemis's Ring vibrates
   come: Intercepted via accidental Shadow Walk side-emergence near Cannath Vale Nord (fiume con tre rapide); revised v2 2026-05-04 (Tempestas role narrowed to intel agent; he no longer delivers Tordek/Hella/Artemis personal hooks)
 - png: Sorella Maewen "Pugno-di-Cedro" (Mezza-elfa Monk 9/Cleric 2 of Ilmater, GS 10, monk-courier of Confraternita Monastica di Dauth)
+  png_id: maewen
   sa_che: Aeleth Verdebronzo is dead (will discover on arrival); Tordek matches the description of the 4th tournament invitee "Pugno di Pietra del Nord" (recognizable by Custode Eterno rune)
   come: Travels Cannath Vale with 5 tournament invites; arrives Sacred Forest Day 24 looking for Aeleth; canonized 2026-05-04
 - png: Lathander + Mask (divine, divinatory)
+  png_id: lathander-mask
   sa_che: Artemis rejected the Lord of Sun and Shadow PrC at Belkram (Arco 04); the Ring he carries is Zalkatar's research instrument; Zalkatar is a 3-century-old ex-cleric of Mask who became Mind Flayer by choice; both deities OBSERVE without intervening unless Artemis explicitly requests post-Tower "courtesy"
   come: Direct divine awareness; activates as dream visitation Notte 22-23 of post-Hammerfist; canonized 2026-05-04
 - png: Brenna Sorvane (Consigliere militare Rethmar)
+  png_id: brenna-sorvane
   sa_che: Hammerfist defeated Red Hand vanguard; Custodi Eterni include Thorik who is a battle-tested commander; Halveth is corrupt by Conte Valerius; Lorana is alive in Rethmar
   come: Reports from Tempestas (her primary messenger); canonized 2026-05-04 via her sealed letter to Thorik
 - png: Therysol
+  png_id: therysol
   sa_che: Il Collezionista's guild has a hidden cell in Dauth
   come: Captured guild operative interrogated
 - png: Norro Wiston (ex-Portavoce del Guado di Drellin, profugo a Rethmar)
+  png_id: norro-wiston
   sa_che: The party are the Custodi Eterni; Thorik died and was resurrected at the Guado (he was present, Arco 00)
   come: Direct witness; arrived Rethmar ~Day 16-18 with the refugee wave — canonized 2026-07-20
 - png: Sertieren il Saggio (mago halfling profugo, ospite della biblioteca di Pyriel)
+  png_id: sertieren
   sa_che: His *sending* to Silverymoon is blocked by a ritual interference on the Wyrmbones; does NOT know who runs it
   come: Failed attempts Day 14-18 — canonized 2026-07-20
 - png: Lirien Amaranti («Il Giullare Spezzato»)
+  png_id: lirien
   sa_che: He can recognize the Maestro's hand in the living statues (does NOT know the network leads to Varis/Sal/Il Collezionista); knows the street-talk of the Ponte Nuovo
   come: Apprenticeship trauma + tavern ears — canonized 2026-07-20
 - png: Mira Serani «l'Aranea»
+  png_id: mira-serani
   sa_che: The party already met her (disguised as a refugee child) on the road to Hammerfist and let her go; knows fragments of the PCs' artifacts/routes; does NOT know Lorana survived and is at Rethmar
   come: Embedded Red Hand spy since Drellin's Ferry — canonized 2026-07-20
 - png: Lorana (hard counter to l'Aranea)
+  png_id: lorana
   sa_che: Believes her daughter Mira is dead (carries her brooch); does NOT know the child was murdered and impersonated by an aranea — will recognize the impostor **on sight** if they meet
   come: Grief + the brooch; the truth is a DM secret in `Bestiario/png/Lorana/…/Lorana.md` — canonized 2026-07-20
 - png: Tiri Kitor wild elves
+  png_id: tiri-kitor
   sa_che: Nothing yet — first contact pending Starsong Hill
   come: null
 difensori_rethmar:
@@ -566,3 +610,141 @@ march_clock:
   - giorno: '**42**'
     waypoint: '**Horde arrives at Rethmar (ex-Brindol) and encamps**'
     stato: 🎯 **Rethmar assault begins**
+
+# ---------------------------------------------------------------------------
+# Anagrafica dei PNG (§3 e §4) — decisione D17, chiusa dal DM il 2026-09-17
+#
+# La CHIAVE fra lo stato vivo e il `Bestiario/`. Prima di questa sezione, chi
+# voleva la scheda di un PNG partendo da state.yaml doveva indovinare la
+# stringa: misurato, 11 villain su 13 e 23 righe di §4 su 31 si agganciavano
+# per somiglianza, e il resto no.
+#
+# 🔴 E allentare il confronto NON aiutava, peggiorava. Un matcher piu'
+#    permissivo agganciava «Zalkatar» a Xal'thor o Zarim (due illithid
+#    diversi), «Saarvith + Regiarix» a Wyrmlord Karruk, e il Cerchio Druidico
+#    a `druid-bear-ally-cr12.md`. Trasformava «non lo so» in un errore sicuro
+#    di se', che e' il modo in cui un LLM sbaglia.
+#
+# `scheda` e' un percorso VERIFICATO: la regola R11 di validate_state controlla
+# che il file esista a ogni esecuzione. Dove manca, manca dichiaratamente, e la
+# regola R12 lo conta — un buco contato vale piu' di un valore indovinato.
+#
+# ⚠️ Lo `stato` NON sta qui, e non e' una dimenticanza: oggi vive sulle righe
+#    di §3 (ADR-0052). Spostarlo qui e' il passo che rende possibile dare uno
+#    stato anche ai PNG di §4, e si fa quando questa anagrafica ha dimostrato
+#    di reggere. Un campo in due posti sarebbe il difetto dei due master.
+# ---------------------------------------------------------------------------
+png:
+- id: sonjak
+  nome: Sonjak (Matrona Sajak)
+  tipo: persona
+  scheda: Bestiario/villain/Sonjak/Sonjak.md
+- id: salvatore
+  nome: Salvatore «Sal» della Luna d'Argento
+  tipo: persona
+  scheda: Bestiario/villain/Salvatore/Salvatore.md
+- id: il-collezionista
+  nome: Il Collezionista (Rakshasa)
+  tipo: persona
+  scheda: Bestiario/villain/Il_Collezionista_Rakshasa/Il_Collezionista_Rakshasa.md
+- id: zalkatar
+  nome: Zalkatar (Illithid Warlock)
+  tipo: persona
+  scheda: 09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md
+- id: saarvith-regiarix
+  nome: Wyrmlord Saarvith + Regiarix
+  tipo: persona
+  scheda: 09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md
+- id: xal-thor
+  nome: Xal'thor (Illithid Coordinator)
+  tipo: persona
+  scheda: Bestiario/villain/Xal_thor/Xal_thor/Xal_thor.md
+- id: sethrax
+  nome: Sethrax il Velato
+  tipo: persona
+  scheda: Bestiario/villain/Sethrax_il_Velato/Sethrax.md
+- id: azarr-kul
+  nome: Azarr Kul (High Wyrmlord)
+  tipo: persona
+  scheda: Bestiario/villain/Azarr_Kul/Azarr_Kul/Azarr_Kul.md
+- id: conte-valerius
+  nome: Conte Valerius
+  tipo: persona
+  scheda: Bestiario/villain/Conte_Valerius/Conte_Valerius/Conte_Valerius.md
+- id: mira-serani
+  nome: Mira Serani «l'Aranea»
+  tipo: persona
+  scheda: Bestiario/villain/Mira_Serani/Mira_Serani.md
+- id: ghaurush
+  nome: Ghaurush «Cenerevento»
+  tipo: persona
+  scheda: Bestiario/villain/Ghaurush_Cenerevento/Ghaurush_Cenerevento.md
+- id: zin-thara
+  nome: Zin'thara Vel'Ryn «la Voce di Ragnatela»
+  tipo: persona
+  scheda: Bestiario/villain/Zin_thara_Vel_Ryn/Zin_thara_Vel_Ryn.md
+- id: ushgar
+  nome: Ushgar «Occhio Reso»
+  tipo: persona
+  scheda: Bestiario/villain/Ushgar_Occhio_Reso/Ushgar_Occhio_Reso.md
+- id: ghostlord
+  nome: Ghostlord / Zeth il Murato
+  tipo: persona
+  scheda: Bestiario/villain/Ghostlord/Ghostlord.md
+- id: varis
+  nome: Varis «Seta-Argento»
+  tipo: persona
+  scheda: Bestiario/png/Varis_Seta_Argento/Varis_Seta_Argento.md
+- id: re-thorek
+  nome: Re Thorek Hammerfist
+  tipo: persona
+  scheda: Bestiario/png/Re_Thorek_Hammerfist.md
+- id: lythiel
+  nome: Capitana Lythiel Alar-Wen
+  tipo: persona
+  scheda: Bestiario/png/Lythiel/Lythiel.md
+- id: tempestas
+  nome: Maestro Tempestas
+  tipo: persona
+  scheda: Bestiario/png/Tempestas/Tempestas.md
+- id: maewen
+  nome: Sorella Maewen «Pugno-di-Cedro»
+  tipo: persona
+  scheda: Bestiario/png/Maewen/Maewen.md
+- id: therysol
+  nome: Therysol
+  tipo: persona
+  scheda: Bestiario/png/Therysol/Therysol/Therysol.md
+- id: lirien
+  nome: Lirien Amaranti «Il Giullare Spezzato»
+  tipo: persona
+  scheda: Bestiario/png/Lirien/Lirien.md
+- id: lorana
+  nome: Capitana Lorana
+  tipo: persona
+  scheda: Bestiario/png/Lorana/Lorana/Lorana.md
+- id: brenna-sorvane
+  nome: Brenna Sorvane
+  tipo: persona
+  scheda: Bestiario/png/Consiglio_Rethmar/Consiglio_Rethmar.md
+- id: norro-wiston
+  nome: Norro Wiston
+  tipo: persona
+  scheda: Bestiario/png/Guado_di_Drellin/Profughi_Guado_di_Drellin.md
+- id: sertieren
+  nome: Sertieren il Saggio
+  tipo: persona
+  scheda: Bestiario/png/Guado_di_Drellin/Profughi_Guado_di_Drellin.md
+- id: cerchio-sacro
+  nome: Cerchio Druidico della Foresta Sacra
+  tipo: gruppo
+  scheda: Bestiario/mostri/cerchio-druid7-cr7.md
+- id: tiri-kitor
+  nome: Tiri Kitor (elfi selvaggi di Witchwood)
+  tipo: gruppo
+  scheda: Bestiario/png/Witchwood_Tiri_Kitor/Witchwood_e_Tiri_Kitor.md
+- id: lathander-mask
+  nome: Lathander + Mask
+  tipo: divinita
+  scheda: null
+  perche_senza_scheda: 'due divinita'', non una creatura: una scheda del Bestiario non sarebbe la cosa giusta'

@@ -108,6 +108,7 @@ Il **perché** delle scelte strutturali. Indice completo in [`plans/adr/`](../pl
 | [ADR-0050](../plans/adr/ADR-0050-stato-di-campagna-dati-e-prosa.md) | **Lo stato di campagna: dati validati per i fatti, markdown per la prosa** — le tabelle di `state.md` si generano da `state.yaml`; il tempo non dichiarato si **conta**, non si indovina (era ADR-0017 nella #99) |
 | [ADR-0051](../plans/adr/ADR-0051-il-margine-del-bosco-e-un-glifo-a-se.md) | **Il margine del bosco è un glifo a sé**: `🌲` diventa opaco, la fascia che si attraversa no — perché il muro del VTT è binario e il bosco non lo è |
 | [ADR-0052](../plans/adr/ADR-0052-cosa-e-dato-e-cosa-e-prosa.md) | **Cosa è dato e cosa è prosa**, con il criterio invece della categoria: un fatto va in `state.yaml` quando qualcun altro lo rileggerà per deciderne un altro, e resta prosa quando serve a capire *perché*. Chiude D14 e D16 |
+| [ADR-0053](../plans/adr/ADR-0053-la-chiave-verso-il-bestiario-si-dichiara.md) | **La chiave verso il Bestiario si dichiara, non si deduce**: un'anagrafica dei PNG con `scheda` verificata contro il filesystem, perché un confronto di stringhe più permissivo non riduce l'ignoranza — la traveste da risposta. Chiude D17 |
 
 ## 5. Archivio piani
 

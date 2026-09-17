@@ -4,7 +4,7 @@
 **Location**: Hammerfist (infiltrazione, flashback) → Dauth (dopo)
 **Motivation**: occhi e orecchie di Hammerfist; barda di corte e spia maestra.
 **CR**: 12 | **Race/Class**: Nana, Bardo 8 / Spia Maestra 4
-**Key stats**: → scheda giocatore in `08_.../ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` §3 (stampabile, verificata ERRATA §3). NON duplicare.
+**Key stats**: → scheda giocatore in `08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` §3 (stampabile, verificata ERRATA §3). NON duplicare.
 **Esiti possibili (D14, si blocca al gioco)**:
 - Se sopravvive: **passa a Dauth** — aggancio possibile col Torneo (ARC-09 P2B).
 - Ruolo pregen: infiltrazione/sabotaggio; la sua Ispirare Coraggio sostiene i 90 al finale.

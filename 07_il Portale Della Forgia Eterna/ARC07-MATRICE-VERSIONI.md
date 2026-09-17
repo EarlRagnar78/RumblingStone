@@ -49,7 +49,7 @@
 | Viaggio di Hella — appunti | `PortaleForgia-P4-pianoTerra-P3b-Hella-...-risultati.md` (minuscolo) | appunti grezzi DM | ~~DEPRECATO~~ (A7) |
 | **P3B** — Resurrezione Hella | `_ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` | rituale completo | **MASTER** (eletto in B2, integra il viaggio giocato) |
 | P3B — merge breve | `_ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-RICALIBRATO-alternative.md` | merge sintetico | ~~DEPRECATO~~ (B2) |
-| **P5** — Viaggio 1.000 anni | `_ARCHIVIO/PortaleForgia-P5-DEFINITIVO-PARTE1.md` + `-PARTE2.md` | atto completo | **MASTER lungo** (fonte per il fast-play B3) |
+| **P5** — Viaggio 1.000 anni | `_ARCHIVIO/PortaleForgia-P5-DEFINITIVO-PARTE1.md` + `_ARCHIVIO/PortaleForgia-P5-DEFINITIVO-PARTE2.md` | atto completo | **MASTER lungo** (fonte per il fast-play B3) |
 | P5 — versione precedente | `_ARCHIVIO/PortaleForgia-FINAL-P5.md` | prima stesura completa | ~~DEPRECATO~~ (superato da DEFINITIVO) |
 | P5 — sintesi | `_ARCHIVIO/PortaleForgia-P5-RICALIBRATO.md` | sintesi "God Mode" | *ricalibrazione/sintesi* → base tono per B3 |
 | P5 — fast-play | `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md` | formato veloce D1 | **MASTER da tavolo** (creato in B3) |

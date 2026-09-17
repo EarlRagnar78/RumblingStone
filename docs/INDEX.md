@@ -109,6 +109,7 @@ Il **perché** delle scelte strutturali. Indice completo in [`plans/adr/`](../pl
 | [ADR-0051](../plans/adr/ADR-0051-il-margine-del-bosco-e-un-glifo-a-se.md) | **Il margine del bosco è un glifo a sé**: `🌲` diventa opaco, la fascia che si attraversa no — perché il muro del VTT è binario e il bosco non lo è |
 | [ADR-0052](../plans/adr/ADR-0052-cosa-e-dato-e-cosa-e-prosa.md) | **Cosa è dato e cosa è prosa**, con il criterio invece della categoria: un fatto va in `state.yaml` quando qualcun altro lo rileggerà per deciderne un altro, e resta prosa quando serve a capire *perché*. Chiude D14 e D16 |
 | [ADR-0053](../plans/adr/ADR-0053-la-chiave-verso-il-bestiario-si-dichiara.md) | **La chiave verso il Bestiario si dichiara, non si deduce**: un'anagrafica dei PNG con `scheda` verificata contro il filesystem, perché un confronto di stringhe più permissivo non riduce l'ignoranza — la traveste da risposta. Chiude D17 |
+| [ADR-0054](../plans/adr/ADR-0054-un-archivio-non-e-una-copia.md) | **Un archivio non è una copia, e un cancello non è una forma**: il censimento degli statblocchi d'arco riconosce tutte e tre le forme in uso (ne vedeva una, e perdeva un'avventura intera) e rientra sui master che la matrice delle versioni dichiara dentro `_ARCHIVIO/`, senza indicizzarli. Apre D18 |
 
 ## 5. Archivio piani
 

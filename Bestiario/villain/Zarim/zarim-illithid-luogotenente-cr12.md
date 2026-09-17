@@ -1,6 +1,6 @@
-# zarim-illithid-luogotenente-cr12 [ACCEPTED — DM-canon 2026-05-05]
+# Zarim — luogotenente illithid di Xal'thor [ACCEPTED — DM-canon 2026-05-05]
 
-**Faction**: red-hand | **Role**: elite-psi-caster | **Environment**: urban,dungeon | **CR**: 12
+**Faction**: illithid-xal-thor | **Role**: elite-psi-caster | **Environment**: urban,dungeon | **CR**: 12
 
 
 

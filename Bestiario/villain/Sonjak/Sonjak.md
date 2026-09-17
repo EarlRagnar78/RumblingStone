@@ -148,6 +148,8 @@ dominato e maledetto dai drow (morte negata) — come strumento corrotto.
   ancora** che la mandante è Sonjak — il collegamento raid→Sonjak può essere un
   "a-ha" investigativo successivo, coerente col ritardo Sal/Sajak sotto.
 
+🔴 **Chi le ha fatte half-illithid (canone DM, 2026-09-17).** Il template non si nasce con esso: glielo innesta **Zalkatar**, l'Illithid Warlock della Torre Invisibile, che ARC-04 chiama *«il Padrone delle Menti»*. Sonjak gli vende **schiavi drow** — i Grimlock Ceremorphi della Tomba di Belkram sono «ex-schiavi drow» — e lui paga in potenza. Urialle, GS 14, è il pezzo pregiato di quello scambio, ed è lei che uccide Hella. Dossier del filo: `Bestiario/villain/Zalkatar/Zalkatar.md`.
+
 Schede post-mortem: `Bestiario/villain/Belkram/Belkram.md`, `Bestiario/villain/Urialle/Urialle.md`.
 Log dell'evento: `campaign/sessions/RETROATTIVI-ARC07-INFERRED.md` (R0).
 

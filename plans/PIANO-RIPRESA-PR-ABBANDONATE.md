@@ -1145,6 +1145,7 @@ Vale per **ogni** commit di **ogni** fase.
 | ~~D14~~ | F4 · 4d-2 | ✅ **CHIUSA E ATTUATA il 2026-09-16, nello stesso commit.** Il DM: *«la riga va in state.yml e poi riportata in state.md»*. Misurata, la risposta regge: la tabella dei waypoint è **dato puro** (10 righe) e il March Day è **un campo** (`march_clock.giorno_corrente`); il paragrafo di cinque righe che spiega perché il Giorno 19 è un bersaglio e non un passato resta **prosa, sotto e fuori** dalla regione generata. Separati, la macchina riscrive la sua riga a ogni sessione senza mai toccare la nota del DM — che era il nodo. ⚠️ La regione `auto:march-clock` **sparisce**, e marcarla oggi sarebbe *peggio* di prima: una regione dentro una `gen:state:` sono due scrittori sullo stesso testo. Sparisce anche `RETHMAR_DAY = 42`, cablato in `state_apply`: era la seconda fonte di verità più piccola del repo, e sopravviveva perché nessuno aveva mai eseguito il tool. Vedi **§4.8.9** e [ADR-0052](adr/ADR-0052-cosa-e-dato-e-cosa-e-prosa.md) |
 | ~~D16~~ | F4 · 4d-2 | ✅ **CHIUSA E ATTUATA il 2026-09-16, nello stesso commit.** Il DM ha scelto l'enumerazione **con il compagno**: `attivo · latitante · neutralizzato · morto · ignoto`, più `reversibile`. ⚒️ `neutralizzato` copre il caso più frequente al tavolo — sconfitto ma non morto — e senza di lui il DM dovrebbe scrivere `morto` per non scrivere `attivo`. 🔴 **E `reversibile` è la metà che conta**: in questa campagna un morto torna (il Ghostlord nasce da un morto, Sal è protetto da un paradosso auto-consistente, Hella è morta in attesa del rito), quindi registrare «morto» senza dire se è definitivo è registrare **meno di quel che il canone sa**. La regola **R9** lo pretende. ⚠️ `state_apply` scrive `stato` ma **non** `reversibile`: il primo è la lettura letterale del log, il secondo è una decisione narrativa, e R9 la chiede al DM alla prima esecuzione — provato sul canone vero. 🔎 **§4 conoscenze è stata esclusa dopo averla misurata**, benché il DM avesse chiesto di includerla: tre righe non sono persone e tre persone compaiono sotto due nomi, quindi `stato` lì vorrebbe dire un valore privo di senso in tre casi e due copie divergenti in altri tre. Va nell'anagrafica del lotto della chiave. Vedi **§4.8.9** |
 | ~~D17~~ | F4 · 4d-4 | ✅ **CHIUSA il 2026-09-17 — e la domanda aveva una premessa falsa, trovata dal DM.** Era posta come «i due villain senza scheda: si scrivono, si contano o escono da §3?». 🐛 **Tre delle quattro voci che avevo dichiarato senza scheda ce l'avevano.** Il DM: *«controlla bene negli archi o nel bestiario se c'è qualcosa magari annegato come prosa»*. **Zalkatar** ha uno statblocco a **GS 13** (14d4+70, CA 24) in `09_…/P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md`; **Saarvith + Regiarix** ne hanno uno a **GS 13** in `09_…/P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`, e il file `FASE4` accanto dichiara esplicitamente *«le statistiche sono lì; questo è la regia dello scontro»*; il **Cerchio Druidico** ne ha uno in `Bestiario/mostri/cerchio-druid7-cr7.md`, marcato [ACCEPTED — DM-canon 2026-05-05]. L'errore non è stato non trovarle: ho cercato **solo dentro `Bestiario/`**, e allargando la ricerca ho **troncato l'output a sei righe** concludendo da una lista tagliata. ✅ Non c'era niente da scrivere né da togliere: c'era da **cercare meglio**. Resta **un** buco su 28 (`lathander-mask`), ed è corretto. ⚠️ **Conseguenza di progetto**: una scheda non vive per forza nel `Bestiario/`, e un cancello tarato lì avrebbe continuato a dare per mancanti due boss da GS 13. Nasce **R13**, che mette alla prova ogni buco dichiarato contro tutto il repo. Vedi **§4.8.10** e [ADR-0053](adr/ADR-0053-la-chiave-verso-il-bestiario-si-dichiara.md) |\n| ~~D6~~ | F1 | ✅ **decisa 2026-09-04: ridisegnata.** `…P1C` mappa 3 dichiarava 40×40 e aveva righe da 24 a 26 celle: rifatta **26×29**, nessuna coordinata del testo cambiata |
+| ~~D18~~ | F4 · 4d-6 | ✅ **DECISA E ATTUATA il 2026-09-17, nello stesso commit.** Il DM: *«spezzarli per intestazione verificando che non esistano già»*. Il catalogo portava **19 record intitolati al documento** invece che alla creatura, perché `build_monster_catalog.py` faceva **un record per file** e prendeva il primo GS: «Parte 2A – Torre Invisibile», GS 10. **19 → 8**, pool **372 → 397**. 🔎 Quel che ne è uscito non sono comparse: gli **otto fantini del Palio**, i **Sicari di Sonjak**, il Gonfaloniere Aldemar Vosk, la Drow Chierica di Lolth, gli esempi d'onda di Rethmar — tutti chiusi dentro un record solo. ⚠️ **La deduplica è ancorata a un fatto dichiarato**: si confrontano i nomi **solo** dentro l'insieme delle voci del Bestiario che citano *quel* documento come `Source`. È il modo di rispettare ADR-0053 (un matcher permissivo traveste l'ignoranza) senza rinunciare a dedurre: il legame documento↔voce l'ha scritto qualcuno, la somiglianza sceglie solo *quale* voce sta per *quale* intestazione. 🔴 **E il rischio opposto ha il suo presidio**: il record di file sparisce solo quando **ogni** creatura che il documento nomina ha già la sua voce — gli otto che restano sono quelli dove non è vero, e toglierli significherebbe meno rumore e **meno creature**. 🐛 Due difetti nei nomi generati, trovati misurando: la numerazione del Palio è **multi-livello** (`### 3.2 Drow Chierica`) e lasciava nomi che cominciavano per cifra, e la coda tagliata lasciava parentesi mai chiuse («Aldemar Vosk (LN»). 🔎 **E il cancello nuovo ha trovato un errore mio al primo giro**: contava **due** «Skullcrusher il Nero», perché la voce che avevo appena scritto puntava al file che il drago lo *nomina* soltanto — i numeri stanno in `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md`. Correggendo il puntamento è poi caduto fuori che `P6-INTEGRAZIONE` restava scoperto, e dentro c'erano **Re Thorek I** (Grr 16, il re di mille anni prima che si inginocchia davanti alla Corona) e **Durin Hammerfist**, l'antenato di Othrek: due PNG di canone che non aveva nessuno. Vedi **§4.8.12** e [ADR-0054](adr/ADR-0054-un-archivio-non-e-una-copia.md) |
 
 ---
 
@@ -1817,6 +1818,272 @@ forza nel `Bestiario/`** — due boss da GS 13 stanno in un arco.
 |---|---|---|
 | ⬜ | `stato` sale dall'anagrafica: allora anche i PNG di §4 ne hanno uno | il `tipo` esiste già per quel giorno |
 | ⬜ | tabelle non modellate (§2.2, §2.3, §2.5, §5, §7.R) | 46 righe |
+
+#### 4.8.11 · Lotto **4d-5** — i PNG d'arco che nessuno strumento raggiungeva
+
+[K canone · Opus 5 · alto · `python3 -m pytest scripts/tests -q` → 839 test;
+catalogo da **305 a 352** voci; il cancello nuovo ha trovato da solo **tre file**
+che la mia ricerca a mano aveva saltato]
+
+##### FASE 1 · Audit
+
+Richiesta del DM: *«verifica se in tutta la prosa degli archi ci sono altri PNG,
+villain e mostri che non sono presenti nel bestiario png e villain, e aggiungili»*.
+
+| Misura | |
+|---|---:|
+| documenti d'arco con statblocchi **in prosa** (Taglia/Tipo, DV, CA, TS) | **19** |
+| soggetti con statistiche estratti | **47 + 14** nominati con classe e livello |
+| già raggiungibili dagli strumenti | 10 |
+| 🔴 **con statistiche scritte e invisibili a ogni strumento** | **47** |
+
+🔴 **Il difetto, in una riga**: `build_monster_catalog.py` e
+`suggest_encounter.py` costruiscono il pool degli incontri scansionando i file
+che hanno **la forma** dello statblocco, e la forma d'arco spesso non la ha. Il
+campione del Torneo di Dauth (Monk 14), il boss dei campi drow (GS 13) e il
+Drago Rosso che guida l'invasione (GS 15) erano **scritti e irraggiungibili**.
+
+##### FASE 2 · Sviluppo — POINTER, non copie
+
+Quarantasette voci nuove col pattern **già in uso** nel repo
+(`capitana-lorana-cr7.md`): una voce che **rimanda** al file d'arco. Le
+statistiche restano dove il DM le ha scritte, perché duplicarle creerebbe la
+seconda copia che **ADR-0021** vieta.
+
+- **PNG nominati** (13): Grandmaster Rihan · Tetsu «Serpente di Vento» · Lady
+  Koryn · Ironclad Bruiser · Mistress of Mirrors · Thrain Ironfist · Grom
+  Skullcrusher · Zhen Windwhisper · Kira · Maestra Shen · Killiar Arrowswift
+- **Villain** (5): Xilthra Vel'ssin · Saarvith & Regiarix · Kragar il Re delle
+  Catene · Il Campione Caduto · Xal'thor «Forma del Nucleo»
+- **Creature** (29): la Torre Invisibile (golem, oblex, grell, sciami), i campi
+  drow, la colonia fungina, i comprimari dell'arena
+
+⚠️ **Grom Skullcrusher non è l'Ogre Skullcrusher**: barbaro GS 14 contro ogre
+GS 5. È la forma d'errore che 4d-4 aveva documentato, e un test la fissa.
+
+##### FASE 3 · Validazione
+
+| Prova | Criterio |
+|---|---|
+| **il pool è cresciuto** | `suggest_encounter` passa da **305 a 352** creature |
+| **il cancello trova da solo** | ha segnalato **3 file** che la ricerca a mano aveva saltato: i villain iconici del torneo, le comparse dell'arena, i nemici della Quest di Hella |
+| **i POINTER non copiano** | un test boccia una voce POINTER che porti statistiche: sarebbe la seconda copia |
+| **due vie di raggiungibilità** | il criterio è «gli strumenti ci arrivano», non «esiste una voce»: `build_monster_catalog` raggiunge già alcuni file d'arco direttamente |
+| **non-regressione** | 839 test, `validate_bestiario` (162 statblock), nove gate verdi |
+
+🐛 **E il cancello è nato sbagliato due volte, in un modo istruttivo.** Prima
+cercava l'aggancio nel campo `source_file` del catalogo — che però registra il
+file **scansionato**, cioè la voce del Bestiario, non l'arco a cui rimanda: dava
+per scoperti quattro file agganciati. Poi ignorava la seconda via, quella
+diretta. Il criterio giusto non è «esiste una voce nel Bestiario»: è **«gli
+strumenti ci arrivano»**.
+
+##### 4.8.11-bis · Il DM ha dato la fazione, e trovando dove metterla è saltato fuori un difetto peggiore
+
+Il lotto aveva lasciato `faction: unknown` sui comprimari del Torneo. Il DM
+l'ha chiusa il 2026-09-17: *«sono emissari al soldo degli Zhentarim; gli
+interessano gli scambi commerciali di merci del mercato nero extraplanare,
+venuti per il Torneo di Dauth, e in parte minacciati anche loro dall'avanzata
+della Mano Rossa»*.
+
+Combacia con la lore canonica già in repo — *«THE ZHENTARIM (The Black
+Network) — Goals: economic and political domination of all Faerûn trade
+routes»* — quindi la fazione `zhentarim` nasce **dichiarata**, non inventata.
+**15 voci**, più il dossier `Bestiario/villain/Zhentarim_Dauth/`.
+
+⚠️ **E la mia frase precedente era imprecisa**: avevo scritto «sedici
+comprimari del Torneo», ma le voci con `faction: unknown` erano **27**, di cui
+15 del Torneo. Le altre sono la Torre di Zalkatar (7), gli illithid di Xal'thor
+(2) e l'Erinni, che è finita a `red-hand` perché il suo stesso file la colloca
+nell'onda epica di Rethmar.
+
+🔴 **Il difetto vero, trovato applicando la fazione.**
+`build_monster_catalog.py` **indovinava** fazione, ruolo e ambiente da euristiche
+su parole chiave, e **ignorava le intestazioni** che ogni statblocco dichiara e
+che `validate_bestiario` pretende. Due valori per lo stesso fatto: quello nel
+file, e quello nel catalogo — e negli strumenti finiva il secondo. L'ho visto
+perché l'intestazione diceva `zhentarim` e il catalogo registrava
+`dauth-defender`, mentre il file *sembrava* giusto a chiunque lo aprisse.
+
+| Campo | Record in cui il catalogo contraddiceva il file |
+|---|---:|
+| `faction` | **56** |
+| `role` | **138** |
+| `environment` | **77** |
+
+Esempi: «Aberrazione Fungina Alfa» marcata `drow-sonjak` perché la parola
+«drow» compariva nel testo; il Grell della Torre Invisibile marcato `mountain`.
+
+**Corretto**: il valore dichiarato vince, l'euristica resta come ripiego per i
+documenti che non dichiarano niente (i `.txt`, i moduli d'arco). È ADR-0041
+applicato a questo tool.
+
+⚠️ **Una regressione evitata di misura**: prima l'euristica *normalizzava* tutto
+su una lista chiusa. Leggendo le intestazioni, le **6** creature che dichiarano
+`mano-rossa` si sarebbero separate dalle **68** che dichiarano `red-hand` — e
+`suggest_encounter --faction red-hand` avrebbe smesso di trovare Ushgar e
+Ghaurush. Un alias dichiarato per l'unico sinonimo certo, e nient'altro.
+
+##### Cosa resta
+
+| | | |
+|---|---|---:|
+| 🔵 | **9 voci ancora `unknown`**: la Torre di Zalkatar e gli illithid di Xal'thor. Il DM non ne ha parlato, e derivare `zalkatar-torre` dal pattern `<padrone>-<dominio>` sarebbe una mia scelta | 9 |
+| 🔵 | **vocabolario da consolidare**: `underdark` è usato come fazione (è un ambiente), e `rhod-allies` sta accanto a `red-hand` | 4 valori |
+
+#### 4.8.12 · Lotto **4d-6** — il censimento conosceva una forma su tre, e gli archivi erano master
+
+`[K canone · Opus 5 · alto · `python3 -m pytest scripts/tests/test_censimento_forme.py scripts/tests/test_png_archi_nel_bestiario.py` verde su 3 cancelli provati all'indietro; `validate_bestiario` in sync su 372 record; 130 citazioni POINTER tutte risolte]`
+
+Il DM, il 2026-09-17: *«considera tutta la prosa davvero negli archi, vedi
+nell'arco la Torre di Zalkatar se c'è qualcosa non detto, vedi anche negli
+archivi se è stato tralasciato qualcosa»*. Rimisurando **senza troncare
+l'output** — la lezione esplicita di D17 — il cancello scritto il giorno prima
+si è rivelato sbagliato in tre modi indipendenti.
+
+##### FASE 1 · Accertamento
+
+| Cosa | Misura |
+|---|---:|
+| Forme di statblocco in uso nel repo | **3** (il matcher ne conosceva **1**) |
+| Documenti d'arco con statistiche, rimisurati | **23 → 38** |
+| File d'archivio con statblocchi che la matrice dichiara **MASTER** | **5 su 5** |
+| Citazioni POINTER abbreviate (`08_.../ARC08-01-…`) | **11** |
+| Citazioni POINTER con percorso sbagliato di un livello | **6** |
+| Record del catalogo intitolati al documento invece che alla creatura | **19** |
+
+🔴 **Il caso che decide il lotto.** Il matcher pretendeva il trattino (`- CA:`);
+`10-stand-alone/L'Abbazia della Rotta Sicura` scrive `**CA** 15`, quindi valeva
+**zero marche su zero**. Un'avventura stand-alone **intera** — 1.419 righe, con
+un appendice di statblocchi tutto suo — era fuori dal censimento in silenzio, e
+non aveva una sola voce nel Bestiario.
+
+🔎 **E la Torre di Zalkatar era coperta**, contrariamente al sospetto: tutte e
+nove le creature hanno voce propria. Quel che non era detto sta altrove — vedi
+D18 sotto.
+
+##### FASE 2 · Sviluppo
+
+1. **`scripts/dmcore/censimento.py`** (nuovo): le tre forme, la soglia, e
+   `master_archiviati()` che legge `ARC07-MATRICE-VERSIONI.md` invece di
+   indovinare dal nome della cartella. L'inline resta **stretto** apposta.
+2. **20 voci POINTER nuove**: il cast dell'Abbazia (9), i master d'archivio
+   dell'ARC-07 (Terros GS 15, Skullcrusher il Nero, Zog'tar Deatheye, lo Xorn
+   Anziano, l'Elementale Anziano, Thorgrim Barbadiferro), l'ARC-06 (Yochlol
+   half-illithid, Dire Worg corrotto), l'ARC-04 (Grimlock Ceremorfo, Drow
+   Psionica, Carcassa Vivente). Pool: **352 → 372**.
+3. **17 percorsi POINTER corretti**, e il criterio d'aggancio passa da
+   «sottostringa» a «`Path.exists()`».
+4. **`FUORI_RAGGIO`**: cinque documenti che portano numeri ma non creature (le
+   schede dei PG, il sistema di combattimento di massa, le guide della Corona),
+   ognuno **con il motivo scritto**.
+
+##### FASE 3 · Validazione
+
+| Prova | Esito |
+|---|---|
+| Rimettere l'esclusione cieca di `_ARCHIVIO` | 🔴 rosso (`Terros.md` esce dal raggio) |
+| Restringere il matcher alla forma col trattino | 🔴 rosso (9 test) |
+| Riabbreviare un percorso a `08_.../…` | 🔴 rosso |
+| `python3 -m pytest scripts/tests -q` | ✅ **843 → 853** passati (2.832 → 2.938 subtest) |
+| `validate_bestiario` · `validate_state` · `validate_docs --sorgenti` · `tools_manifest --check` | ✅ tutti verdi |
+
+⚠️ **Non tocca** `test_archivi_non_indicizzati.py`: i master d'archivio
+diventano **raggiungibili** via POINTER, non **indicizzati**. Ogni
+`source_file` resta dentro `Bestiario/`, quindi la regola dei doppioni
+(305 → 311 nell'incidente del 2026-09-12) continua a valere.
+
+Vedi [ADR-0054](adr/ADR-0054-un-archivio-non-e-una-copia.md).
+
+##### 4.8.12-bis · D18 decisa — un documento con dodici creature non è una voce sola
+
+Il DM ha chiuso D18 nella forma proposta: *«spezzarli per intestazione
+verificando che non esistano già»*.
+
+| Misura | Prima | Dopo |
+|---|---:|---:|
+| Record intitolati al documento | **19** | **8** |
+| Voci nel pool degli incontri | 372 | **397** |
+| Test | 853 | **865** |
+
+Gli **otto** che restano non sono un residuo da ripulire: sono i documenti in
+cui almeno una creatura non ha ancora una voce propria, e il record di file è
+l'unica cosa che la tiene nel pool. Toglierli darebbe meno rumore e **meno
+creature** — il difetto opposto a quello che D18 chiude.
+
+⚠️ **Dove poteva far danno.** Confrontare nomi per somiglianza è l'errore che
+ADR-0053 vieta. Qui il confronto è lecito perché ristretto alle voci che citano
+**quel** documento come `Source`: il legame l'ha scritto qualcuno, la
+somiglianza sceglie solo *quale* voce sta per *quale* intestazione.
+
+🔎 **Il cancello ha trovato un errore mio al primo giro**, e ne è venuta fuori
+una catena: contava due «Skullcrusher il Nero» → la voce puntava al file che il
+drago lo *nomina* soltanto → ripuntandola a `P5-FASTPLAY` il `P6-INTEGRAZIONE`
+è rimasto scoperto → dentro c'erano **Re Thorek I** (Grr 16) e **Durin
+Hammerfist**, l'antenato di Othrek. Due PNG di canone che nessuno strumento
+raggiungeva, trovati da una correzione di percorso.
+
+#### 4.8.13 · Lotto **4d-7** — il Padrone delle Menti ha un nome, e gli illithid una fazione
+
+`[K canone · Opus 5 · alto · `python3 -m pytest scripts/tests/test_catalogo_una_voce_per_creatura.py` verde; 871 test; `validate_bestiario` in sync su 397 record]`
+
+Il DM, il 2026-09-17: *«sì, è Zalkatar il Padrone delle Menti»*. Una riga, e
+chiude la quarta domanda di 4d-6 — *«gli illithid di Xal'thor cosa facevano?»*
+
+##### La risposta era che la domanda riguardava l'altro conclave
+
+Le due ipotesi del DM erano **l'Anello del Caos** e **lo scambio di schiavi con
+Sonjak**. Misurate contro il canone scritto:
+
+| Ipotesi | Esito |
+|---|---|
+| Xal'thor cerca l'Anello | ❌ la sua scheda dichiara *«**unico bersaglio** al Torneo: i Bracieri Gemelli»* e rifiuta esplicitamente l'Orbe. Un terzo obiettivo gli toglierebbe l'unica cosa che lo rende **il villain di Tordek** |
+| Scambio di schiavi con Sonjak | ✅ **non è un'ipotesi: è già giocato e mai spiegato.** I Grimlock Ceremorphi di ARC-04 sono **«ex-schiavi drow»**, e le Yochlol half-illithid del raid alla Corona portano un template che *qualcuno* ha innestato |
+
+🔴 **Ma il compratore non poteva essere Xal'thor, e il canone lo dice con le sue
+parole.** I due conclavi si disprezzano proprio su questo: Xal'thor chiama
+Zalkatar *«biologo da torre, ossessionato da esperimenti sterili»*; Zalkatar
+chiama lui *«cacciatore di mandria»*. Un vivaio di girini con celle d'innesto
+**è** il biologo da torre.
+
+E c'era una terza prova che nessuno aveva letto insieme alle altre: il **Ring of
+Chaotic Illumination si risveglia in quel laboratorio**
+(`campaign-artifacts.md`), quando Artemis rifiuta la classe di prestigio. Il
+conclave che gestiva quella stanza ha una ragione **documentata** per inseguire
+Artemis — e l'arco di Artemis **è già** la Torre di Zalkatar.
+
+##### Cosa è entrato
+
+- **`Bestiario/villain/Zalkatar/Zalkatar.md`** — dossier `[NON-CREATURA]` che
+  registra il canone con le sue quattro prove, e il filo Sonjak → laboratorio →
+  Anello → Torre.
+- **Due fazioni dichiarate**: `illithid-zalkatar` (13 voci: la Torre, Sethrax, i
+  custodi) e `illithid-xal-thor` (6: Xal'thor, la Forma del Nucleo, Zarim, gli
+  schiavi psionici). Le **9 voci `unknown`** che 4d-6 aveva lasciato al DM sono
+  chiuse.
+- **Cross-riferimenti** nei tre punti dove il DM li cercherà: i due file del
+  laboratorio ARC-04, la scheda di Sonjak, quella di Urialle.
+
+🐛 **Quel che la misura ha trovato per strada.** Prima di questo canone gli
+illithid stavano su **quattro** etichette diverse: **Zarim** era marcato
+`red-hand` mentre la sua stessa scheda dice *«legato alla fazione di Xal'thor»*,
+Xal'thor era `aberration`, la sua Forma del Nucleo `unknown`. E
+`build_monster_catalog.py` teneva la parola **`zalkatar` nell'elenco di parole
+chiave di `red-hand`**: un illithid warlock classificato come Mano Rossa.
+
+⚠️ **E scrivere il cross-riferimento ha spostato una fazione da solo.** Citare
+Zalkatar nella scheda di **Urialle** ha fatto passare l'euristica da
+`aberration` a `illithid-zalkatar` — ma Urialle combatte per **Sonjak**: lui le
+ha solo innestato il template. La correzione non è stata togliere la citazione,
+è stata **dichiarare** la sua fazione (ADR-0041): un valore dichiarato non lo
+sposta una menzione.
+
+🔎 **E il marcatore `[NON-CREATURA]` è una stringa esatta, non prosa.** La prima
+stesura del dossier scriveva `[NON-CREATURA — dossier di fazione]`, e il
+builder cerca la forma letterale: Zalkatar era finito nel pool degli incontri
+come un mostro da GS 13. L'ha visto il cancello delle non-creature, che tiene un
+elenco **deliberatamente chiuso** — *«aggiungerne una è una riga qui e una
+scelta»*.
 
 #### 4.8.6 — FASE 3 · Validazione
 

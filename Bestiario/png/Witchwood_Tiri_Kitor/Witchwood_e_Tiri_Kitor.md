@@ -23,7 +23,7 @@
 **Location**: Starsong Hill (Tiri Kitor), fra le paludi di Rhest
 **Motivation**: proteggere la tribù (~500 anime) e i luoghi sacri; **decide se e quanto** la sua gente marci con Rethmar.
 **CR**: `[INFERRED]` (leader; per lo scontro/alleanza usa gli statblock d'arco) | **Race/Class**: elfa (druida/bardo) `[Private — RHoD]`
-**Key stats**: puntatore → statblock d'arco in `Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-STATBLOCCHI.md`.
+**Key stats**: puntatore → statblock d'arco in `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-STATBLOCCHI.md`.
 **Esiti possibili**:
 - È **il perno del P3-Starsong**: se i PG la convincono, invia **1/5 della tribù come forza da guerra** (+120: 100 ranger + 20 gufi giganti, difensori §2.4). Se falliscono, i Tiri Kitor restano a difendere solo i propri boschi.
 - La sua fiducia si guadagna aiutando la tribù (la Quest della Creatura, STATBLOCCHI §4) — non con la retorica.
@@ -40,7 +40,7 @@ Boost log: (vuoto)
 **Location**: pattuglie ai margini delle paludi di Rhest
 **Motivation**: difendere i confini della tribù; è la lama dove Sellyria è la voce.
 **CR**: **11-12** (statblock esistente) | **Race/Class**: elfo ranger/guerriero
-**Key stats**: → **statblock canonico d'arco**: `Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-STATBLOCCHI.md` §1 (Killiar Arrowswift, CR 11-12) — 3-4 cacciatori con lui nella scena d'incontro (§35).
+**Key stats**: → **statblock canonico d'arco**: `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-STATBLOCCHI.md` §1 (Killiar Arrowswift, CR 11-12) — 3-4 cacciatori con lui nella scena d'incontro (§35).
 **Esiti possibili**:
 - È il **primo contatto** dei PG con i Tiri Kitor (scena d'incontro): la sua lettura dei PG orienta l'accoglienza di Sellyria.
 - Se alleato → guida i 100 ranger a Rethmar; se ostile/diffidente → l'incontro rischia lo scontro.

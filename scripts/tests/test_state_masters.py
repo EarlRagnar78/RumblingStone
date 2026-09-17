@@ -114,8 +114,11 @@ class TestSiScriveUnCampoSolo(unittest.TestCase):
         self.assertEqual(STATE_YAML.read_text(encoding="utf-8"), self.testo)
 
     def test_un_campo_inesistente_e_un_errore_non_un_no_op(self):
+        # ⚠️ Questo test usava `stato`, che dal 2026-09-16 **esiste** (D16): un
+        # test che afferma l'assenza di un campo scade quando il campo nasce, e
+        # se non lo si aggiorna diventa la prova che il lotto non ha funzionato.
         with self.assertRaises(sd.StateDataError):
-            sd.imposta_campo(self.testo, "villain", 0, "stato", "morto")
+            sd.imposta_campo(self.testo, "villain", 0, "movente_segreto", "x")
 
     def test_un_indice_fuori_intervallo_e_un_errore(self):
         with self.assertRaises(sd.StateDataError):
@@ -183,6 +186,146 @@ class TestNonSiIndovinaIlVillain(unittest.TestCase):
         self.assertEqual(m.groups(), ("Sonjak", "3", "4"))
 
 
+# ------------------------------------------- D16 · lo stato vivo di una persona
+
+
+class TestLoStatoDiUnaPersonaEUnDato(unittest.TestCase):
+    """🔵 **D16**, decisa dal DM il 2026-09-16.
+
+    Prima di questo campo, «Regiarix killed» si scriveva dentro `dove` o
+    `agenda` — un fatto strutturato infilato in una frase, cioe' lo stesso
+    difetto che ADR-0050 aveva chiuso altrove. Adesso e' un'enumerazione chiusa,
+    e chi la legge non deve interpretare prosa.
+    """
+
+    def setUp(self):
+        self.dati = yaml.safe_load(STATE_YAML.read_text(encoding="utf-8"))
+
+    def test_ogni_villain_e_ogni_PG_dichiara_il_proprio_stato(self):
+        for sez in ("villain", "party"):
+            for i, r in enumerate(self.dati[sez]):
+                with self.subTest(sezione=sez, riga=i):
+                    self.assertIn(r.get("stato"), VALORI_STATO,
+                                  f"{sez}[{i}] non dichiara uno stato valido")
+
+    def test_hella_e_morta_e_il_canone_dice_che_torna(self):
+        """Il caso che fa guadagnare il campo il suo posto.
+
+        Fino a oggi la morte di Hella viveva dentro `hp`, come prosa
+        («n/d finche' non torna»): nessuno script poteva accorgersene, e §1 e §6
+        si erano gia' contraddetti una volta proprio su questo (lotto 4c).
+        """
+        hella = next(p for p in self.dati["party"] if p["pg"] == "Hella")
+        self.assertEqual(hella["stato"], "morto")
+        self.assertIs(hella["reversibile"], True,
+                      "il rito di resurrezione e' canone preparato: non e' definitiva")
+
+    def test_uscire_di_scena_senza_dire_se_e_definitivo_e_bocciato(self):
+        """R9 provata all'indietro: il cancello deve mordere."""
+        import validate_state as vs
+        finto = {"villain": [{"villain": "X", "stato": "morto"}], "party": []}
+        self.assertTrue(vs.reversibilita_mancante(finto))
+        finto["villain"][0]["reversibile"] = False
+        self.assertEqual(vs.reversibilita_mancante(finto), [])
+
+    def test_attivo_non_pretende_la_reversibilita(self):
+        """L'altra meta': il cancello non deve chiedere un campo privo di senso."""
+        import validate_state as vs
+        self.assertEqual(
+            vs.reversibilita_mancante({"villain": [{"villain": "X", "stato": "attivo"}]}), [])
+
+    def test_gli_ignoti_si_contano(self):
+        """R8, come R7: un buco contato vale piu' di un valore indovinato."""
+        import validate_state as vs
+        self.assertEqual(
+            vs.stati_ignoti({"villain": [{"stato": "ignoto"}, {"stato": "attivo"}],
+                             "party": []}),
+            {"villain": 1})
+
+    def test_la_vista_porta_lo_stato_nella_tabella(self):
+        import render_state as rs
+        reso = rs.rendi("villain", self.dati)
+        self.assertIn("| Villain | Stato |", reso)
+        self.assertIn("attivo", reso)
+
+    def test_la_reversibilita_si_legge_nella_vista(self):
+        import render_state as rs
+        reso = rs.rendi("party", self.dati)
+        self.assertIn("reversibile", reso,
+                      "un morto che torna deve vedersi anche nel markdown")
+
+    def test_conoscenze_NON_ha_lo_stato_ed_e_una_scelta_misurata(self):
+        """🔴 §4 e' stata esclusa dopo averla guardata, non per dimenticanza.
+
+        Tre righe non sono persone e tre persone vi compaiono sotto due nomi:
+        `stato` li' vorrebbe dire un valore privo di senso in tre casi e due
+        copie divergenti in altri tre. Se un giorno §4 diventa un'anagrafica,
+        questo test cade e va riscritto — ed e' il momento giusto per farlo.
+        """
+        import validate_state as vs
+        self.assertNotIn("conoscenze", vs.CON_STATO)
+        nomi = [c["png"] for c in self.dati["conoscenze"]]
+        non_persone = [n for n in nomi
+                       if any(k in n for k in ("Circle", "Lathander", "wild elves"))]
+        self.assertGreaterEqual(len(non_persone), 3,
+                                "se §4 e' diventata un'anagrafica, questo test va rifatto")
+
+
+# ------------------------------------------------- D14 · il tempo della macchina
+
+
+class TestIlMarchClockEUnDato(unittest.TestCase):
+    """🔵 **D14**: la riga della macchina in state.yaml, la nota del DM in prosa."""
+
+    def setUp(self):
+        self.testo = STATE_YAML.read_text(encoding="utf-8")
+        self.dati = yaml.safe_load(self.testo)
+
+    def test_il_giorno_corrente_e_un_campo(self):
+        self.assertIsInstance(self.dati["march_clock"]["giorno_corrente"], int)
+
+    def test_i_giorni_mancanti_si_DERIVANO_e_non_si_scrivono_due_volte(self):
+        """🐛 La prima versione di questo test NON mordeva, e il giro dei
+        sabotaggi l'ha scoperto.
+
+        Confrontava il reso col valore atteso **sui dati di oggi**: 42 − 19 fa
+        23, quindi cablare `**23**` nel renderer lo faceva passare lo stesso. Un
+        test che concorda col difetto che dovrebbe trovare non prova niente.
+
+        Adesso muove il dato e verifica che il reso lo SEGUA: un numero cablato
+        resta fermo mentre il dato cambia, ed e' l'unica differenza osservabile
+        fra derivato e scritto due volte.
+        """
+        import copy
+
+        import render_state as rs
+        for giorno in (19, 25, 40):
+            with self.subTest(giorno=giorno):
+                d = copy.deepcopy(self.dati)
+                d["march_clock"]["giorno_corrente"] = giorno
+                atteso = d["march_clock"]["giorno_arrivo"] - giorno
+                reso = rs.rendi_march_clock(d)
+                self.assertIn(f"**Current March Day:** **{giorno}**", reso)
+                self.assertIn(f"**Days remaining to Rethmar:** **{atteso}**", reso)
+
+    def test_il_giorno_di_arrivo_non_e_piu_cablato_nel_tool(self):
+        """`RETHMAR_DAY = 42` viveva in state_apply: era una seconda fonte di
+        verita', e sopravviveva perche' nessuno aveva mai eseguito il tool."""
+        self.assertFalse(hasattr(state_apply, "RETHMAR_DAY"))
+
+    def test_si_scrive_il_campo_senza_riscrivere_il_file(self):
+        nuovo = sd.imposta_campo_oggetto(self.testo, "march_clock",
+                                         "giorno_corrente", 25)
+        a, b = self.testo.splitlines(), nuovo.splitlines()
+        self.assertEqual(len(a), len(b))
+        self.assertEqual(sum(1 for x, y in zip(a, b) if x != y), 1)
+
+    def test_i_waypoint_sono_dieci_righe_di_dato(self):
+        self.assertEqual(len(self.dati["march_clock"]["waypoints"]), 10)
+
+
+VALORI_STATO = ("attivo", "latitante", "neutralizzato", "morto", "ignoto")
+
 # --------------------------------------------------------- il flusso completo
 
 
@@ -194,12 +337,21 @@ villain:
   dove: Underdark
   agenda: Sovvertire la cittadella
   clock: 4/8
+  stato: attivo
   trigger: Incursione notturna
 - villain: Azarr Kul (High Wyrmlord)
   dove: Fane of Tiamat
   agenda: Sacrifici rituali
   clock: 9/18
+  stato: attivo
   trigger: Avatar di Tiamat
+march_clock:
+  giorno_corrente: 19
+  giorno_arrivo: 42
+  waypoints:
+  - giorno: '1'
+    waypoint: L'orda parte
+    stato: passato
 archi: []
 party: []
 artefatti: []
@@ -212,13 +364,14 @@ scenari_rethmar: []
 MINI_STATE = (
     "# Campaign State\n\n"
     "### 2.1 March Clock\n\n"
-    "**Current March Day:** **19** (Terrelton just fell).\n"
-    "**Days remaining to Rethmar:** **23** (window).\n\n"
     "prosa che non si tocca MAI\n\n"
     "## 3. Villain\n\n"
     + "".join(f"<!-- gen:state:{n} -->\n(da rigenerare)\n<!-- /gen:state:{n} -->\n\n"
               for n in ("villain", "archi", "party", "artefatti", "echi",
-                        "conoscenze", "difensori", "scenari"))
+                        "conoscenze", "difensori", "scenari",
+                        # D14: i waypoint e le due righe della macchina sono
+                        # regioni generate come le altre otto
+                        "waypoints", "march_clock"))
     +
     "## 8. Changelog (append-only)\n\n"
     "> Lo storico vive in [`state-changelog.md`](state-changelog.md).\n"

@@ -40,6 +40,10 @@ Regole di coerenza (oltre allo schema)
   R6  echi: gli annullati portano il perché, gli armati portano il payoff,
       e nessun ID si riusa
   R7  il tempo non dichiarato si CONTA, non si indovina (vedi sotto)
+  R8  le persone con stato `ignoto` si CONTANO, per la stessa ragione di R7
+  R9  `reversibile` è obbligatorio appena `stato` non è `attivo`: in questa
+      campagna un morto torna, e registrare l'uscita di scena senza dire se è
+      definitiva è registrare meno di quello che il canone sa
 
 Uso
   python3 scripts/validate_state.py [--file PATH] [--json] [--verbose]
@@ -91,6 +95,10 @@ def _type_ok(value, spec) -> bool:
         if t == "string" and isinstance(value, str):
             return True
         if t == "integer" and isinstance(value, int) and not isinstance(value, bool):
+            return True
+        # `bool` è sottoclasse di `int` in Python: l'ordine conta, e `integer`
+        # sopra lo esclude apposta — `giorno_corrente: true` non è il Giorno 1.
+        if t == "boolean" and isinstance(value, bool):
             return True
         if t == "null" and value is None:
             return True
@@ -210,6 +218,53 @@ def righe_senza_tempo(d: dict) -> "dict[str, int]":
     return fuori
 
 
+#: Le sezioni le cui righe sono UNA PERSONA, e quindi hanno uno stato vivo.
+#:
+#: ⚠️ §4 `conoscenze` **non** è qui, ed è una scelta misurata il 2026-09-16, non
+#: una dimenticanza: tre delle sue righe non sono persone («Druid Circle of the
+#: Sacred Forest», «Lathander + Mask», «Tiri Kitor wild elves») e tre persone
+#: vi compaiono sotto **due nomi diversi** (Sonjak, Varis, Zalkatar/Sethrax).
+#: Metterci `stato` costringerebbe a un valore privo di senso in tre righe e a
+#: due copie divergenti in altre tre. La casa giusta è l'anagrafica dei PNG, che
+#: è il lotto successivo — quello della chiave verso `Bestiario/`.
+CON_STATO = ("villain", "party")
+
+
+def stati_ignoti(d: dict) -> "dict[str, int]":
+    """R8 · quante persone hanno lo stato `ignoto`, sezione per sezione.
+
+    Come R7: non è un errore, è un numero che deve restare **visibile**.
+    `ignoto` è la risposta onesta quando i PG non sanno l'esito, e va contato
+    perché scenda quando il DM lo dichiara — non perché si smetta di usarlo.
+    """
+    fuori = {}
+    for nome in CON_STATO:
+        n = sum(1 for r in d.get(nome) or [] if r.get("stato") == "ignoto")
+        if n:
+            fuori[nome] = n
+    return fuori
+
+
+def reversibilita_mancante(d: dict) -> "list[str]":
+    """R9 · `reversibile` è obbligatorio appena lo stato non è `attivo`.
+
+    In questa campagna un morto torna — il Ghostlord nasce da un morto, Sal è
+    protetto da un paradosso auto-consistente, Hella è morta in attesa del rito.
+    Registrare «morto» senza dire se è definitivo è registrare **meno** di
+    quello che il canone sa, e chi legge il dato dopo non ha modo di accorgersene.
+    """
+    errs = []
+    for nome in CON_STATO:
+        for i, r in enumerate(d.get(nome) or []):
+            if r.get("stato") not in (None, "attivo") and "reversibile" not in r:
+                chi = r.get("villain") or r.get("pg") or f"#{i}"
+                errs.append(f"R9 · {nome}[{i}] ({chi}): stato "
+                            f"'{r.get('stato')}' senza `reversibile` — "
+                            "dire se il canone prevede un ritorno non è "
+                            "opzionale quando qualcuno esce di scena")
+    return errs
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(
         prog="validate_state.py",
@@ -234,7 +289,8 @@ def main(argv=None) -> int:
         return 1
 
     schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
-    errors = validate_schema(data, schema) + coherence_rules(data, schema)
+    errors = (validate_schema(data, schema) + coherence_rules(data, schema)
+              + reversibilita_mancante(data))
 
     if args.json:
         print(json.dumps({"report_version": 1, "file": str(args.file.relative_to(ROOT)),
@@ -249,6 +305,10 @@ def main(argv=None) -> int:
         return 1
 
     aperti = len(data.get("inferred", []))
+    # Chi non e' in scena si CONTA nella riga di riepilogo: un villain
+    # neutralizzato che nessuno nota e' un villain che torna per sbaglio.
+    persone = (data.get("villain") or []) + (data.get("party") or [])
+    fuori_scena = sum(1 for r in persone if r.get("stato") != "attivo")
     buchi = righe_senza_tempo(data)
     if buchi:
         tot = sum(buchi.values())
@@ -258,9 +318,17 @@ def main(argv=None) -> int:
               "una colonna «Tempo»,")
         print("     e dedurne uno sarebbe inventare canone. Il numero resta in "
               "vista finché il DM non decide.")
+    ignoti = stati_ignoti(data)
+    if ignoti:
+        tot = sum(ignoti.values())
+        print(f"  ⚠ R8 · {tot} persone con stato `ignoto` — "
+              + ", ".join(f"{k} {v}" for k, v in sorted(ignoti.items())))
+        print("     Non è un errore: è la risposta onesta quando i PG non "
+              "sanno l'esito. Scende quando il DM lo dichiara.")
     print(f"✓ validate_state: {args.file.name} valido — "
           f"{len(data['archi'])} archi, {len(data['party'])} PG, "
-          f"{len(data['artefatti'])} artefatti, {aperti} [INFERRED] aperti")
+          f"{len(data['artefatti'])} artefatti, {aperti} [INFERRED] aperti, "
+          f"{fuori_scena} fuori scena")
     if args.verbose:
         for a in data["archi"]:
             print(f"    {a['tempo']:10s} {a['arco']}")

@@ -61,10 +61,12 @@ STORIA = Master(
 #: la sua riga qui fa rossa la CI, perche' senza destinazione la proposta
 #: tornerebbe al messaggio generico che il lotto 4d-2 ha tolto.
 DESTINAZIONE: "dict[str, Master]" = {
-    # Il banner «Current March Day» di §2.1 e' prosa: il lotto 4c l'ha reso
-    # l'inizio di un paragrafo di cinque righe. La colonna `march_clock` di §0
-    # invece sta in state.yaml — quando serve toccarla, la nota lo dice.
-    "march_clock": PROSA,
+    # 🔵 Era PROSA fino al 2026-09-16, e la decisione **D14** l'ha spostato.
+    # Il banner di §2.1 e la spiegazione del DM erano lo STESSO paragrafo, e per
+    # questo la regione non si poteva marcare. Separati, il numero e' un campo
+    # (`march_clock.giorno_corrente`) e la nota resta prosa accanto: la macchina
+    # riscrive la sua riga senza mai toccare quella del DM.
+    "march_clock": DATI,
     # §3 e' la tabella `villain`, generata: il clock e' un campo del record.
     "ritual_clock": DATI,
     "villain_clock": DATI,

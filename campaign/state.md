@@ -88,12 +88,12 @@ Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per det
 <!-- gen:state:party -->
 <!-- GENERATO da scripts/render_state.py a partire da campaign/state.yaml — non modificare a mano (ADR-0050) -->
 
-| PC | Class | 🟢 Dov'è **adesso** (tavolo, ARC-07 P4 chiuso) | 🔵 Dove lo porta il canone **preparato** (post ARC-08) | HP / status **oggi** | Open personal threads |
-|---|---|---|---|---|---|
-| Thorik | Dwarf Fighter 13 | Sala della Forgia Eterna, dopo il riposo (orologio Hammerfist **3g 16h**) | Hammerfist Holds, war council chamber | Full. **−4 DES / +2 COS / +4 CAR permanenti**, e sono tutto quel che ha pagato: −2 DES dalla Corona quando l'ha indossata, −2 DES / +2 COS / +4 CAR dal rito dello Smeraldo del 2026-07-31 (è il **portatore** ad aver accettato il Peso del Mondo). Ricalcolare CA senz'armatura, Riflessi, iniziativa. ⚠️ **Nessun −2 COS.** Il costo della resurrezione è **non ancora versato**: la scena (`ARC07-DEF-3` §5) non è stata giocata. Quando la giocherà, dona il **+2 di deflessione della Corona** e resta a **−1 CA permanente** — e ogni volta che Hella userà lo **Scudo del Custode**, lui sarà **accelerato 3 round verso chi lei ha protetto**. Può anche **rifiutare**: allora Aegis Fang (Ego 14) lo **giudica** finché non rischia qualcosa di suo per lei | Decide whether to lead defense of Rethmar personally vs. delegate |
-| Tordek | Dwarf Fighter 4 / Monk 9 | Sala della Forgia Eterna, dopo il riposo | → Torneo di Dauth | Full; Bracieri Earth phase complete. ✅ **Nessun malus permanente dal rito**: il Peso del Mondo l'ha accettato **Thorik**, il portatore (correzione DM 2026-08-06 — fino a quella data il pegno era attribuito a Tordek per errore). CA senz'armatura, Riflessi, iniziativa e Raffica restano quelli di prima. ⚠️ Il costo della resurrezione è **non ancora versato**, e 🔎 **non sono più i «−500 PE»**: in v4-bis dona **Ancoraggio della Montagna** (2/g), che **lascia i Bracieri per sempre** → Hella ottiene **RD 3/adamantino**. Se rifiuta, i Bracieri **tacciono una settimana** | Tournament of the Eight Gates (3 days, interrupted by Githyanki Day 3) |
-| Hella | Dream Dwarf Ranger 1 / Druid 12 | 🔴 **morta**, corpo nella Sala, semi innestati — la resurrezione (P3B / `ARC07-DEF-3`) è **il prossimo beat da giocare** | Hammerfist → Foresta Sacra, template Ibrido Treant attivo, PG a pieno titolo | n/d finché non torna. Il template Ibrido Treant e i tre Doni **si assegnano al rito**, non prima | Sacred Forest ritual (pass = druid circle ally at Rethmar) |
-| Artemis | Human Warlock 13 | Sala della Forgia Eterna, dopo il riposo | → Torre Invisibile (regione di Dauth) | Full; Ring of Chaotic Illumination active, **Eldritch Blast 7d6**. ⚠️ Il costo del rito è **non ancora versato**: dona **1d6 di Eldritch Blast** (7d6 → **6d6**, per sempre) → Hella ottiene **il Rovo Eldritch**, a volontà. Se rifiuta, l'Anello **si spegne 24 ore** | Confront Zalkatar (CR 13 illithid warlock); Ring evolution at stake |
+| PC | Class | Stato | 🟢 Dov'è **adesso** (tavolo, ARC-07 P4 chiuso) | 🔵 Dove lo porta il canone **preparato** (post ARC-08) | HP / status **oggi** | Open personal threads |
+|---|---|---|---|---|---|---|
+| Thorik | Dwarf Fighter 13 | 🔴 attivo | Sala della Forgia Eterna, dopo il riposo (orologio Hammerfist **3g 16h**) | Hammerfist Holds, war council chamber | Full. **−4 DES / +2 COS / +4 CAR permanenti**, e sono tutto quel che ha pagato: −2 DES dalla Corona quando l'ha indossata, −2 DES / +2 COS / +4 CAR dal rito dello Smeraldo del 2026-07-31 (è il **portatore** ad aver accettato il Peso del Mondo). Ricalcolare CA senz'armatura, Riflessi, iniziativa. ⚠️ **Nessun −2 COS.** Il costo della resurrezione è **non ancora versato**: la scena (`ARC07-DEF-3` §5) non è stata giocata. Quando la giocherà, dona il **+2 di deflessione della Corona** e resta a **−1 CA permanente** — e ogni volta che Hella userà lo **Scudo del Custode**, lui sarà **accelerato 3 round verso chi lei ha protetto**. Può anche **rifiutare**: allora Aegis Fang (Ego 14) lo **giudica** finché non rischia qualcosa di suo per lei | Decide whether to lead defense of Rethmar personally vs. delegate |
+| Tordek | Dwarf Fighter 4 / Monk 9 | 🔴 attivo | Sala della Forgia Eterna, dopo il riposo | → Torneo di Dauth | Full; Bracieri Earth phase complete. ✅ **Nessun malus permanente dal rito**: il Peso del Mondo l'ha accettato **Thorik**, il portatore (correzione DM 2026-08-06 — fino a quella data il pegno era attribuito a Tordek per errore). CA senz'armatura, Riflessi, iniziativa e Raffica restano quelli di prima. ⚠️ Il costo della resurrezione è **non ancora versato**, e 🔎 **non sono più i «−500 PE»**: in v4-bis dona **Ancoraggio della Montagna** (2/g), che **lascia i Bracieri per sempre** → Hella ottiene **RD 3/adamantino**. Se rifiuta, i Bracieri **tacciono una settimana** | Tournament of the Eight Gates (3 days, interrupted by Githyanki Day 3) |
+| Hella | Dream Dwarf Ranger 1 / Druid 12 | ⚫ morto *(reversibile)* | 🔴 **morta**, corpo nella Sala, semi innestati — la resurrezione (P3B / `ARC07-DEF-3`) è **il prossimo beat da giocare** | Hammerfist → Foresta Sacra, template Ibrido Treant attivo, PG a pieno titolo | n/d finché non torna. Il template Ibrido Treant e i tre Doni **si assegnano al rito**, non prima | Sacred Forest ritual (pass = druid circle ally at Rethmar) |
+| Artemis | Human Warlock 13 | 🔴 attivo | Sala della Forgia Eterna, dopo il riposo | → Torre Invisibile (regione di Dauth) | Full; Ring of Chaotic Illumination active, **Eldritch Blast 7d6**. ⚠️ Il costo del rito è **non ancora versato**: dona **1d6 di Eldritch Blast** (7d6 → **6d6**, per sempre) → Hella ottiene **il Rovo Eldritch**, a volontà. Se rifiuta, l'Anello **si spegne 24 ore** | Confront Zalkatar (CR 13 illithid warlock); Ring evolution at stake |
 <!-- /gen:state:party -->
 
 **Active companions:**
@@ -138,6 +138,9 @@ Two independent clocks drive Arc 09:
 
 ### 2.1 March Clock — Official AP Waypoints
 
+<!-- gen:state:waypoints -->
+<!-- GENERATO da scripts/render_state.py a partire da campaign/state.yaml — non modificare a mano (ADR-0050) -->
+
 | Day | Waypoint | Status |
 |---|---|---|
 | 1 | Horde leaves Fane of Tiamat (Shaar) | ✅ Past |
@@ -150,16 +153,28 @@ Two independent clocks drive Arc 09:
 | 35-37 | **Sonjak halt** — aberrazioni experiments + supply convoy wait | ⏳ Pending |
 | 40 | Notte dei Drow / advance scout phase (Fase 0 begins) | ⏳ Pending |
 | **42** | **Horde arrives at Rethmar (ex-Brindol) and encamps** | 🎯 **Rethmar assault begins** |
+<!-- /gen:state:waypoints -->
 
-**Current March Day:** **19** — 🔵 **è il punto di sincronia previsto, non un
-giorno già trascorso.** Terrelton cadrà mentre la Battaglia di Hammerfist si
-chiude, e la Battaglia **non è stata giocata**. Il Giorno 19 non è «dove siamo»:
-è **dove il calendario tornerà**, perché i PG viaggiano indietro nel tempo nel
-P5 e riemergono al Cuore della Montagna al Giorno 3 dell'orologio interno, che
-è il March Clock Day 18-19 (`ARC08-00-INDICE` §17-19; `ARC07-DEF-5` §94; §0
-riga «Day 19 (target sync)»). *Il calendario avanti non è un difetto: è la
-Forgia Eterna che fa il suo mestiere — DM 2026-09-11, D3.*
-**Days remaining to Rethmar:** **23** (PG-quest window = Arc 09, Days 20-41).
+<!-- gen:state:march_clock -->
+<!-- GENERATO da scripts/render_state.py a partire da campaign/state.yaml — non modificare a mano (ADR-0050) -->
+
+**Current March Day:** **19**
+**Days remaining to Rethmar:** **23** (PG-quest window = Arc 09, Days 20-41)
+<!-- /gen:state:march_clock -->
+
+🔵 **Il Giorno 19 è il punto di sincronia previsto, non un giorno già
+trascorso.** Terrelton cadrà mentre la Battaglia di Hammerfist si chiude, e la
+Battaglia **non è stata giocata**. Il Giorno 19 non è «dove siamo»: è **dove il
+calendario tornerà**, perché i PG viaggiano indietro nel tempo nel P5 e
+riemergono al Cuore della Montagna al Giorno 3 dell'orologio interno, che è il
+March Clock Day 18-19 (`ARC08-00-INDICE` §17-19; `ARC07-DEF-5` §94; §0 riga «Day
+19 (target sync)»). *Il calendario avanti non è un difetto: è la Forgia Eterna
+che fa il suo mestiere — DM 2026-09-11, D3.*
+
+> ⚠️ I due numeri qui sopra sono **generati** da `campaign/state.yaml`
+> (`march_clock.giorno_corrente`): li scrive `state_apply` a fine sessione.
+> Questa nota invece è **prosa del DM** e nessuno script la tocca — è la
+> separazione decisa con **D14**.
 
 ### 2.2 Red Hand of Doom — Horde Composition (Baseline ~10,000)
 
@@ -286,21 +301,21 @@ the listed consequence triggers.
 <!-- gen:state:villain -->
 <!-- GENERATO da scripts/render_state.py a partire da campaign/state.yaml — non modificare a mano (ADR-0050) -->
 
-| Villain | Where | Agenda | Clock | Trigger if filled |
-|---|---|---|---|---|
-| Sonjak (Drow Cleric Matrona) — also "Matrona Sajak" in Sal's operative code | Underdark, Cannath Vale border | Subvert dwarven citadel from below; coordinate with Il Collezionista; manage Sal as surface field agent | 4/8 | Drow night-raid on Hammerfist temple (sets up Phase 0 of Rethmar) |
-| Salvatore "Sal" della Luna d'Argento | Desert road, Cannath Vale → Rethmar (Shaar) | Profile party's artifacts and magical defenses; plant Sabotage Oil on weapons before Rethmar; deliver living statues to Varis | 0/6 | Sabotage Oil applied — weapon TS failure risk at Phase 3 boss; Phase 4 statue activation proceeds at full strength |
-| Il Collezionista (Rakshasa) | Mobile — last seen brokering with drow | Acquire the Crown's spare gem before party can use it; manipulate Conte Valerius | 5/8 | Sponsors anti-party legal pressure; Conte Valerius freezes assets |
-| Zalkatar (Illithid Warlock) | Invisible Tower, Dauth region | Mind-strip a captured githyanki for fleet intel | 6/8 | Tower goes mobile; harder to find next session |
-| Wyrmlord Saarvith + Regiarix | Lake Rhest ruins | Rebuild dragonrider corps from black dragon spawn | 3/8 | Rhest becomes a fortified war camp; CR +1 to assault |
-| Xal'thor (Illithid Coordinator, psionic) | En route with an Illithid invasion force (psionic thralls, larvae, a small core of dominated Githyanki — NOT the free Githyanki dragon-rider force led by Vaereth, which is a separate and hostile faction) | Day 3 fixed assault on the Dauth Tournament to seize Tordek's **Bracieri Gemelli** (planar keys to the Eternal Forge); does NOT target the Orbe delle Otto Porte | Fixed: triggers Day 3 of Tournament regardless | Tournament becomes combat encounter |
-| Sethrax il Velato (Illithid emissary, Zalkatar's conclave) | Dauth — infiltrated as tournament finalist "Kethran Mano di Pietra" | Extract a "Seme di Porta" from the Orbe delle Otto Porte during the Tournament's peak resonance, deliver it to Zalkatar at the Invisible Tower | Sync to Tournament (Day 1 = arrival; Day 2 = entered as finalist; Day 3 Round 7 = forced unmasking by Xal'thor's portal) | Sethrax flees to Invisible Tower with the seed → Zalkatar gains +2 effective CR + new orb-derived Mind Blast in P2A finale (Artemis's quest) |
-| Azarr Kul (High Wyrmlord) — **Ritual Clock, see §2.0** (NOT the March Clock; the horde's physical approach is tracked separately in §2.1, currently Day 19 of 42) | Fane of Tiamat (Shaar) | Ritual sacrifices/planar conjunctions to summon the Avatar of Tiamat during the Rethmar siege (Day 40-42, Phase 2). Advances only on explicit triggers: +1 per Warpriest élite mass sacrifice (Day 35-38), +2 if Giant Wave ×1 breaches the walls (Phase 1), +3 if Giant Wave ×2 breaches (Phase 3) — see `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` §4b | 9/18 | Avatar of Tiamat manifests over Rethmar during Phase 2's 10-round ritual (D8) |
-| Conte Valerius (manipulator) | Capital city | Legalize horde funding via "patriotic emergency" loans | 2/8 | Party loses access to legitimate guild merchants |
-| **Mira Serani «l'Aranea»** (aranea mutaforma, Red Hand intel) — canonizzata 2026-07-20, `Bestiario/villain/Mira_Serani/` | Mobile — infiltrata nell'onda profughi (Guado → Rethmar) | Raccogliere intel su difese di Rethmar e **artefatti dei PG** per l'orda; spacciarsi per la figlia morta di Lorana (bimba/adolescente); **evitare Lorana** | Trigger, non clock numerico | **Hard counter**: se incrocia Lorana → smascherata a vista, combatte solo per fuggire. Ogni intel raccolta **alimenta i clock esistenti** (Sal/Sonjak/Fase 0-1), non ne apre uno nuovo |
-| **Ghaurush «Cenerevento»** (Ogre magi/Stregone 8, GS 16; GS 18 al secondo incontro) — approvato 2026-08-05, `Bestiario/villain/Ghaurush_Cenerevento/` | Retrovie dell'orda, dove ci sono acqua corrente e roccia | Negoziare, o prendere con la forza, le gallerie alte di Hammerfist. **Non serve Tiamat: incassa** | 0/6 | Prende le gallerie alte senza trattare: **+1 CS alla Fase 1 di Rethmar**, e le due lettere che prova i traffici Sonjak↔Collezionista restano inutilizzate |
-| **Zin'thara Vel'Ryn «la Voce di Ragnatela»** (Illusionista 9/Danzatrice delle Ombre 2, GS 12) — approvata 2026-08-05, `Bestiario/villain/Zin_thara_Vel_Ryn/` | Campi drow del Sottosuolo, sotto la linea Rethmar | Accumulare prove contro Sonjak per comprarsi un esilio in superficie | 2/8 | Ha prove sufficienti per trattare: si offre al miglior offerente — PG, Il Collezionista o la Mano Rossa. Se non sono i PG, il ramo si chiude |
-| **Ushgar «Occhio Reso»** (Orco montano/Barbaro 13, GS 13) — approvato 2026-08-05, `Bestiario/villain/Ushgar_Occhio_Reso/` | Campo degli ausiliari orcheschi, sottovento e fuori dalla palizzata | Ottenere **terra scritta** per i suoi prima che la guerra finisca. **Decisione DM 2026-08-05**: ramo aperto passando prima dall'uscita laterale di Hella | 0/4 | Si prende la terra da solo, da un villaggio che non c'entra niente, e la carta se la fa firmare con le mani |
+| Villain | Stato | Where | Agenda | Clock | Trigger if filled |
+|---|---|---|---|---|---|
+| Sonjak (Drow Cleric Matrona) — also "Matrona Sajak" in Sal's operative code | 🔴 attivo | Underdark, Cannath Vale border | Subvert dwarven citadel from below; coordinate with Il Collezionista; manage Sal as surface field agent | 4/8 | Drow night-raid on Hammerfist temple (sets up Phase 0 of Rethmar) |
+| Salvatore "Sal" della Luna d'Argento | 🔴 attivo | Desert road, Cannath Vale → Rethmar (Shaar) | Profile party's artifacts and magical defenses; plant Sabotage Oil on weapons before Rethmar; deliver living statues to Varis | 0/6 | Sabotage Oil applied — weapon TS failure risk at Phase 3 boss; Phase 4 statue activation proceeds at full strength |
+| Il Collezionista (Rakshasa) | 🔴 attivo | Mobile — last seen brokering with drow | Acquire the Crown's spare gem before party can use it; manipulate Conte Valerius | 5/8 | Sponsors anti-party legal pressure; Conte Valerius freezes assets |
+| Zalkatar (Illithid Warlock) | 🔴 attivo | Invisible Tower, Dauth region | Mind-strip a captured githyanki for fleet intel | 6/8 | Tower goes mobile; harder to find next session |
+| Wyrmlord Saarvith + Regiarix | 🔴 attivo | Lake Rhest ruins | Rebuild dragonrider corps from black dragon spawn | 3/8 | Rhest becomes a fortified war camp; CR +1 to assault |
+| Xal'thor (Illithid Coordinator, psionic) | 🔴 attivo | En route with an Illithid invasion force (psionic thralls, larvae, a small core of dominated Githyanki — NOT the free Githyanki dragon-rider force led by Vaereth, which is a separate and hostile faction) | Day 3 fixed assault on the Dauth Tournament to seize Tordek's **Bracieri Gemelli** (planar keys to the Eternal Forge); does NOT target the Orbe delle Otto Porte | Fixed: triggers Day 3 of Tournament regardless | Tournament becomes combat encounter |
+| Sethrax il Velato (Illithid emissary, Zalkatar's conclave) | 🔴 attivo | Dauth — infiltrated as tournament finalist "Kethran Mano di Pietra" | Extract a "Seme di Porta" from the Orbe delle Otto Porte during the Tournament's peak resonance, deliver it to Zalkatar at the Invisible Tower | Sync to Tournament (Day 1 = arrival; Day 2 = entered as finalist; Day 3 Round 7 = forced unmasking by Xal'thor's portal) | Sethrax flees to Invisible Tower with the seed → Zalkatar gains +2 effective CR + new orb-derived Mind Blast in P2A finale (Artemis's quest) |
+| Azarr Kul (High Wyrmlord) — **Ritual Clock, see §2.0** (NOT the March Clock; the horde's physical approach is tracked separately in §2.1, currently Day 19 of 42) | 🔴 attivo | Fane of Tiamat (Shaar) | Ritual sacrifices/planar conjunctions to summon the Avatar of Tiamat during the Rethmar siege (Day 40-42, Phase 2). Advances only on explicit triggers: +1 per Warpriest élite mass sacrifice (Day 35-38), +2 if Giant Wave ×1 breaches the walls (Phase 1), +3 if Giant Wave ×2 breaches (Phase 3) — see `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` §4b | 9/18 | Avatar of Tiamat manifests over Rethmar during Phase 2's 10-round ritual (D8) |
+| Conte Valerius (manipulator) | 🔴 attivo | Capital city | Legalize horde funding via "patriotic emergency" loans | 2/8 | Party loses access to legitimate guild merchants |
+| **Mira Serani «l'Aranea»** (aranea mutaforma, Red Hand intel) — canonizzata 2026-07-20, `Bestiario/villain/Mira_Serani/` | 🔴 attivo | Mobile — infiltrata nell'onda profughi (Guado → Rethmar) | Raccogliere intel su difese di Rethmar e **artefatti dei PG** per l'orda; spacciarsi per la figlia morta di Lorana (bimba/adolescente); **evitare Lorana** | Trigger, non clock numerico | **Hard counter**: se incrocia Lorana → smascherata a vista, combatte solo per fuggire. Ogni intel raccolta **alimenta i clock esistenti** (Sal/Sonjak/Fase 0-1), non ne apre uno nuovo |
+| **Ghaurush «Cenerevento»** (Ogre magi/Stregone 8, GS 16; GS 18 al secondo incontro) — approvato 2026-08-05, `Bestiario/villain/Ghaurush_Cenerevento/` | 🔴 attivo | Retrovie dell'orda, dove ci sono acqua corrente e roccia | Negoziare, o prendere con la forza, le gallerie alte di Hammerfist. **Non serve Tiamat: incassa** | 0/6 | Prende le gallerie alte senza trattare: **+1 CS alla Fase 1 di Rethmar**, e le due lettere che prova i traffici Sonjak↔Collezionista restano inutilizzate |
+| **Zin'thara Vel'Ryn «la Voce di Ragnatela»** (Illusionista 9/Danzatrice delle Ombre 2, GS 12) — approvata 2026-08-05, `Bestiario/villain/Zin_thara_Vel_Ryn/` | 🔴 attivo | Campi drow del Sottosuolo, sotto la linea Rethmar | Accumulare prove contro Sonjak per comprarsi un esilio in superficie | 2/8 | Ha prove sufficienti per trattare: si offre al miglior offerente — PG, Il Collezionista o la Mano Rossa. Se non sono i PG, il ramo si chiude |
+| **Ushgar «Occhio Reso»** (Orco montano/Barbaro 13, GS 13) — approvato 2026-08-05, `Bestiario/villain/Ushgar_Occhio_Reso/` | 🔴 attivo | Campo degli ausiliari orcheschi, sottovento e fuori dalla palizzata | Ottenere **terra scritta** per i suoi prima che la guerra finisca. **Decisione DM 2026-08-05**: ramo aperto passando prima dall'uscita laterale di Hella | 0/4 | Si prende la terra da solo, da un villaggio che non c'entra niente, e la carta se la fa firmare con le mani |
 <!-- /gen:state:villain -->
 
 ---

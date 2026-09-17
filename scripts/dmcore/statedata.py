@@ -33,6 +33,71 @@ def _serve_yaml() -> None:
                              "(pip install pyyaml)")
 
 
+def _riga_del_campo_oggetto(testo: str, sezione: str,
+                            campo: str) -> "tuple[int, str] | None":
+    """Come `_riga_del_campo`, per una sezione che e' un OGGETTO e non una lista.
+
+    `march_clock` (§2.1) ha questa forma: chiavi a rientro di due spazi sotto la
+    chiave di primo livello, senza trattini.
+    """
+    righe = testo.splitlines(keepends=True)
+    inizio = next((n for n, r in enumerate(righe)
+                   if r.startswith(f"{sezione}:")), None)
+    if inizio is None:
+        return None
+    for n in range(inizio + 1, len(righe)):
+        r = righe[n]
+        if r.strip() and not r[0].isspace():
+            break  # un'altra chiave di primo livello
+        if r.startswith("  ") and not r[2:3].isspace() and r[2:].startswith(f"{campo}:"):
+            return n, "  "
+    return None
+
+
+def imposta_campo_oggetto(testo: str, sezione: str, campo: str, valore) -> str:
+    """Un campo di una sezione-oggetto, con la stessa verifica di `imposta_campo`."""
+    _serve_yaml()
+    prima = yaml.safe_load(testo)
+    if not isinstance(prima, dict) or not isinstance(prima.get(sezione), dict):
+        raise StateDataError(f"sezione '{sezione}' assente o non e' un oggetto")
+    trovata = _riga_del_campo_oggetto(testo, sezione, campo)
+    if trovata is None:
+        raise StateDataError(f"campo '{campo}' di {sezione} non trovato su una "
+                             "riga propria: modifica a mano")
+    return _riscrivi(testo, prima, trovata, campo, valore,
+                     lambda d: d[sezione].__setitem__(campo, valore),
+                     f"{sezione}.{campo}")
+
+
+def _riscrivi(testo: str, prima, trovata, campo: str, valore, applica,
+              etichetta: str) -> str:
+    """La riga si riscrive col parser, e il risultato si verifica col parser.
+
+    🔴 La verifica e' il punto del modulo. Senza, questa e' una sed.
+    """
+    n, prefisso = trovata
+    reso = yaml.safe_dump({campo: valore}, default_flow_style=False,
+                          allow_unicode=True, sort_keys=False).rstrip("\n")
+    if "\n" in reso:
+        raise StateDataError(f"il valore di '{campo}' si serializza su piu' "
+                             "righe: modifica a mano")
+    righe = testo.splitlines(keepends=True)
+    fine = "\n" if righe[n].endswith("\n") else ""
+    righe[n] = prefisso + reso + fine
+    nuovo = "".join(righe)
+    try:
+        dopo = yaml.safe_load(nuovo)
+    except yaml.YAMLError as exc:
+        raise StateDataError(f"il risultato non e' YAML valido: {exc}") from exc
+    atteso = copy.deepcopy(prima)
+    applica(atteso)
+    if dopo != atteso:
+        raise StateDataError(
+            f"la modifica di {etichetta} ha toccato altro: non si scrive "
+            "(confronto contro il parser)")
+    return nuovo
+
+
 def _riga_del_campo(testo: str, sezione: str, indice: int,
                     campo: str) -> "tuple[int, str] | None":
     """(numero di riga, prefisso) del campo, cercando per struttura del blocco.
@@ -86,32 +151,9 @@ def imposta_campo(testo: str, sezione: str, indice: int, campo: str,
         raise StateDataError(
             f"campo '{campo}' di {sezione}[{indice}] non trovato su una riga "
             "propria: potrebbe essere uno scalare multiriga. Modifica a mano.")
-    n, prefisso = trovata
-
-    # La riga si serializza col parser, non con un f-string: cosi' le virgolette
-    # e i caratteri speciali li decide pyyaml e non io.
-    reso = yaml.safe_dump({campo: valore}, default_flow_style=False,
-                          allow_unicode=True, sort_keys=False).rstrip("\n")
-    if "\n" in reso:
-        raise StateDataError(f"il valore di '{campo}' si serializza su piu' "
-                             "righe: modifica a mano")
-    righe = testo.splitlines(keepends=True)
-    fine = "\n" if righe[n].endswith("\n") else ""
-    righe[n] = prefisso + reso + fine
-    nuovo = "".join(righe)
-
-    # 🔴 La verifica e' il punto del modulo. Senza, questa e' una sed.
-    try:
-        dopo = yaml.safe_load(nuovo)
-    except yaml.YAMLError as exc:
-        raise StateDataError(f"il risultato non e' YAML valido: {exc}") from exc
-    atteso = copy.deepcopy(prima)
-    atteso[sezione][indice][campo] = valore
-    if dopo != atteso:
-        raise StateDataError(
-            f"la modifica di {sezione}[{indice}].{campo} ha toccato altro: "
-            "non si scrive (confronto contro il parser)")
-    return nuovo
+    return _riscrivi(testo, prima, trovata, campo, valore,
+                     lambda d: d[sezione][indice].__setitem__(campo, valore),
+                     f"{sezione}[{indice}].{campo}")
 
 
 def trova_villain(dati: dict, nome: "str | None" = None,

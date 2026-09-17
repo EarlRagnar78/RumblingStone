@@ -12,6 +12,7 @@ fixture.
 """
 from __future__ import annotations
 
+import re
 import subprocess
 import sys
 import unittest
@@ -146,44 +147,68 @@ class TestLaViaDiScritturaFunziona(unittest.TestCase):
                          "la regione non deve coprire il primo blocco")
 
 
-class TestIlMarchClockNonSiMarcaAllaCIECA(unittest.TestCase):
-    """🔴 Trovato accendendo la via di scrittura, e sarebbe costato canone.
+class TestIlMarchClockNonSiMarcaPiuPerchePercheNonServe(unittest.TestCase):
+    """🔵 **D14, chiusa dal DM il 2026-09-16.** Questa classe provava un RIFIUTO.
 
-    `migrate()` presumeva che «**Current March Day:**» fosse una riga a se'.
-    Il lotto 4c (2026-09-12) l'ha resa l'inizio di un **paragrafo di cinque
-    righe** che spiega perche' il Giorno 19 e' un bersaglio e non un passato.
+    `migrate()` presumeva che «`**Current March Day:**`» fosse una riga a se'; il
+    lotto 4c l'aveva resa l'inizio di un **paragrafo di cinque righe** che spiega
+    perche' il Giorno 19 e' un bersaglio e non un passato. Marcandone solo la
+    prima, `apply_march_clock` l'avrebbe sostituita lasciando le altre quattro
+    **orfane a meta' frase**, e il lotto 4d-2 scelse di **rifiutare** invece di
+    indovinare dove finisse il paragrafo.
 
-    Marcandone solo la prima riga, `apply_march_clock` l'avrebbe sostituita
-    lasciando le altre quattro **orfane, a meta' frase**. Non era mai emerso
-    perche' `--migrate` non era mai stato eseguito su questo file.
+    Il rifiuto era la cosa giusta, ma era un blocco. Il DM l'ha sciolto: il
+    numero e' un **dato** (`march_clock.giorno_corrente`) e la sua riga si
+    rigenera come le tabelle; la spiegazione resta **prosa**, sotto e fuori
+    dalla regione. Non condividono piu' una riga, quindi non si contendono piu'
+    uno scrittore.
 
-    Si rifiuta invece di indovinare: allargare la regione fino alla riga vuota
-    cancellerebbe la nota del DM al primo aggiornamento, che e' il danno
-    peggiore dei due. Dove vada la riga della macchina e' una **decisione**.
+    ⚠️ I test sotto non sono i vecchi «resi verdi»: quelli provavano che il
+    rifiuto scattasse, e quel comportamento non esiste piu'. Provano che la
+    separazione **c'e' davvero nel file vero** — perche' se un giorno qualcuno
+    riportasse i due dentro la stessa riga, si tornerebbe al blocco senza che
+    nessuno se ne accorga.
     """
 
-    def test_sul_file_vero_la_marcatura_viene_rifiutata(self):
-        with self.assertRaises(sa.RegionError) as ctx:
-            sa.migrate(STATE.read_text(encoding="utf-8"))
-        self.assertIn("paragrafo", str(ctx.exception))
+    def test_in_state_md_non_resta_nessuna_regione_auto(self):
+        """Marcarne una dentro una regione `gen:` sarebbe due scrittori sullo
+        stesso testo: il difetto dei due master, ricreato dalla sua correzione."""
+        self.assertEqual(sa.find_regions(STATE.read_text(encoding="utf-8")), {})
 
-    def test_una_riga_autonoma_invece_si_marca(self):
-        """L'altra meta': la guardia non deve bloccare il caso sano."""
-        sano = ("## 3 Clock\n\n**Current March Day:** **19**\n"
-                "**Days remaining to Rethmar:** **23**\n\nAltro testo.\n")
-        marcato, aggiunti = sa.migrate(sano)
-        self.assertEqual(aggiunti, ["march-clock"])
-        self.assertIn("<!-- auto:begin key=march-clock -->", marcato)
+    def test_migrate_non_ha_piu_niente_da_marcare_e_lo_dice(self):
+        testo, aggiunti = sa.migrate(STATE.read_text(encoding="utf-8"))
+        self.assertEqual(aggiunti, [])
+        self.assertEqual(testo, STATE.read_text(encoding="utf-8"))
 
-    def test_una_regione_insicura_non_blocca_quella_sicura(self):
-        """Punire il changelog perche' state.md ha la prosa annegata sarebbe
-        punire il file sbagliato."""
+    def test_la_riga_della_macchina_e_dentro_la_regione_generata(self):
+        testo = STATE.read_text(encoding="utf-8")
+        regione = re.search(
+            r"<!-- gen:state:march_clock -->\n(.*?)\n<!-- /gen:state:march_clock -->",
+            testo, re.S)
+        self.assertIsNotNone(regione, "la regione march_clock non c'e' piu'")
+        self.assertIn("**Current March Day:**", regione.group(1))
+
+    def test_la_nota_del_DM_e_FUORI_dalla_regione(self):
+        """🔴 Il cuore di D14: se la spiegazione rientrasse nella regione, il
+        primo aggiornamento la cancellerebbe."""
+        testo = STATE.read_text(encoding="utf-8")
+        regione = re.search(
+            r"<!-- gen:state:march_clock -->\n(.*?)\n<!-- /gen:state:march_clock -->",
+            testo, re.S).group(1)
+        ancora = "punto di sincronia previsto"
+        self.assertIn(ancora, testo, "la nota del DM e' sparita dal canone")
+        self.assertNotIn(ancora, regione,
+                         "la nota del DM e' finita DENTRO la regione generata: "
+                         "il prossimo render_state la cancella")
+
+    def test_la_via_di_scrittura_dello_storico_resta_accesa(self):
+        """L'altra meta': togliere il march-clock non deve spegnere il changelog."""
         esito = subprocess.run(
             [sys.executable, "scripts/state_apply.py", "--migrate", "--no-guard"],
             cwd=ROOT, capture_output=True, text=True)
-        self.assertIn("changelog", esito.stdout + esito.stderr)
-        self.assertEqual(CHANGELOG.read_text(encoding="utf-8").count(
-            "<!-- auto:begin key=changelog -->"), 1)
+        self.assertEqual(
+            CHANGELOG.read_text(encoding="utf-8").count(
+                "<!-- auto:begin key=changelog -->"), 1, esito.stdout + esito.stderr)
 
 
 if __name__ == "__main__":

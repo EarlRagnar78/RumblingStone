@@ -90,6 +90,39 @@ def _eco_stato(rec: dict) -> str:
     return _cell(rec.get("tag") or rec.get("stato"))
 
 
+#: Il glifo con cui la vista mostra lo stato di una persona (§3 villain, §1 PG).
+#: Il DATO resta la parola: il glifo è presentazione, e cambiarlo non cambia
+#: quello che gli script leggono.
+GLIFO_STATO = {
+    "attivo": "🔴 attivo",
+    "latitante": "🟠 latitante",
+    "neutralizzato": "🟡 neutralizzato",
+    "morto": "⚫ morto",
+    "ignoto": "❔ ignoto",
+}
+
+
+def _stato_persona(rec: dict) -> str:
+    """Stato + reversibilità, che in questa campagna è metà dell'informazione.
+
+    Un morto qui torna: il Ghostlord nasce da un morto, Sal è protetto da un
+    paradosso auto-consistente. Dire «morto» e basta sarebbe dire meno di quel
+    che il canone sa — per questo `reversibile` è obbligatorio appena lo stato
+    non è `attivo` (regola R9 di `validate_state`).
+    """
+    stato = rec.get("stato")
+    reso = GLIFO_STATO.get(stato, _cell(stato))
+    if rec.get("reversibile") is True:
+        reso += " *(reversibile)*"
+    elif rec.get("reversibile") is False:
+        reso += " *(definitivo)*"
+    return reso
+
+
+def _giorno(rec: dict) -> str:
+    return _cell(rec.get("giorno"))
+
+
 # ---------------------------------------------------------------------------
 # Le tabelle sono DATI, non otto funzioni cablate.
 #
@@ -116,12 +149,22 @@ TABELLE = {
     },
     "party": {
         "chiave": "party",
-        "intestazione": ("| PC | Class | 🟢 Dov'è **adesso** (tavolo, ARC-07 P4 chiuso) "
+        "intestazione": ("| PC | Class | Stato | 🟢 Dov'è **adesso** (tavolo, ARC-07 P4 chiuso) "
                          "| 🔵 Dove lo porta il canone **preparato** (post ARC-08) "
                          "| HP / status **oggi** | Open personal threads |"),
-        "separatore": "|---|---|---|---|---|---|",
-        "campi": [("pg", _cell), ("classe", _cell), ("oggi", _cell),
-                  ("preparato", _cell), ("hp", _cell), ("filoni", _cell)],
+        "separatore": "|---|---|---|---|---|---|---|",
+        "campi": [("pg", _cell), ("classe", _cell), (None, _stato_persona),
+                  ("oggi", _cell), ("preparato", _cell), ("hp", _cell),
+                  ("filoni", _cell)],
+        "composto": True,
+    },
+    # §2.1 — i waypoint sono dato puro: dieci righe di giorno/luogo/esito.
+    "waypoints": {
+        "chiave": "march_clock",
+        "sotto": "waypoints",
+        "intestazione": "| Day | Waypoint | Status |",
+        "separatore": "|---|---|---|",
+        "campi": [("giorno", _cell), ("waypoint", _cell), ("stato", _cell)],
     },
     "difensori": {
         "chiave": "difensori_rethmar",
@@ -138,10 +181,11 @@ TABELLE = {
     },
     "villain": {
         "chiave": "villain",
-        "intestazione": "| Villain | Where | Agenda | Clock | Trigger if filled |",
-        "separatore": "|---|---|---|---|---|",
-        "campi": [("villain", _cell), ("dove", _cell), ("agenda", _cell),
-                  ("clock", _cell), ("trigger", _cell)],
+        "intestazione": "| Villain | Stato | Where | Agenda | Clock | Trigger if filled |",
+        "separatore": "|---|---|---|---|---|---|",
+        "campi": [("villain", _cell), (None, _stato_persona), ("dove", _cell),
+                  ("agenda", _cell), ("clock", _cell), ("trigger", _cell)],
+        "composto": True,
     },
     "conoscenze": {
         "chiave": "conoscenze",
@@ -169,12 +213,20 @@ TABELLE = {
 }
 
 
+def _record(spec: dict, d: dict) -> list:
+    """I record di una tabella, anche quando stanno sotto una sottochiave."""
+    blocco = d.get(spec["chiave"]) or []
+    if spec.get("sotto"):
+        blocco = (blocco or {}).get(spec["sotto"]) or []
+    return blocco
+
+
 def rendi(nome: str, d: dict) -> str:
     """Una tabella, dalla sua specifica. Deterministico: stesso YAML, stesso testo."""
     spec = TABELLE[nome]
     out = [BANNER, "", spec["intestazione"], spec["separatore"]]
     composto = spec.get("composto")
-    for rec in d.get(spec["chiave"]) or []:
+    for rec in _record(spec, d):
         if composto:
             # il formattatore riceve il record intero: certe celle della vista
             # nascono da piu' campi (l'origine di un'eco e' data + autore + fatto)
@@ -186,7 +238,32 @@ def rendi(nome: str, d: dict) -> str:
     return "\n".join(out)
 
 
+def rendi_march_clock(d: dict) -> str:
+    """Le due righe che scrive la macchina — decisione **D14**.
+
+    🔴 Fino al 2026-09-16 queste due righe e il ragionamento del DM erano lo
+    stesso paragrafo, e per questo `state_apply --migrate` si **rifiutava** di
+    marcarle: sostituirle avrebbe lasciato orfane a metà frase le quattro righe
+    che spiegano perché il Giorno 19 è un bersaglio e non un passato.
+
+    Adesso il numero è un campo e la spiegazione sta sotto, fuori dalla regione:
+    la macchina riscrive la sua riga a ogni sessione senza mai toccare la nota
+    del DM. È l'attuazione della risposta del DM: *«la riga va in state.yaml e
+    poi riportata in state.md»*.
+    """
+    mc = d.get("march_clock") or {}
+    corrente, arrivo = mc.get("giorno_corrente"), mc.get("giorno_arrivo")
+    if corrente is None or arrivo is None:
+        raise ValueError("march_clock: servono giorno_corrente e giorno_arrivo")
+    finestra = mc.get("finestra")
+    coda = f" ({finestra})" if finestra else ""
+    return (f"{BANNER}\n\n"
+            f"**Current March Day:** **{corrente}**\n"
+            f"**Days remaining to Rethmar:** **{arrivo - corrente}**{coda}")
+
+
 RENDERERS = {nome: (lambda d, n=nome: rendi(n, d)) for nome in TABELLE}
+RENDERERS["march_clock"] = rendi_march_clock
 
 
 def region_re(name: str) -> re.Pattern:

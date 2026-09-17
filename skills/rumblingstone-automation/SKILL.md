@@ -57,13 +57,15 @@ SOLO se valgono **tutte insieme**:
    mergia mai in `main`).
 2. **Conferma**: il DM vede e conferma il **diff esatto, blocco per
    blocco** (`--yes` esiste solo per test/CI).
-3. **Regioni marcate**: in `state.md` si scrive solo dentro
-   `<!-- auto:begin key=… -->` / `<!-- auto:end key=… -->` (`march-clock` §2.1)
-   e in `state-changelog.md` dentro `changelog` (append-only). I **clock dei
-   villain** si scrivono invece nel loro campo di `state.yaml`, e la vista si
-   rigenera nello stesso giro. Tutto il resto — prosa, §1 party, morte e fuga
-   dei PNG — resta **proposta a video**, e la proposta dice **in quale dei tre
-   master** va.
+3. **Regioni marcate**: in `state.md` **non resta nessuna regione `auto:`**
+   (decisione D14): tutto ciò che la macchina scrive passa da `state.yaml` e
+   torna come vista generata. L'unica regione `auto:` è `changelog`, in
+   `state-changelog.md`, append-only. Dentro `state.yaml` la macchina scrive
+   **quattro** cose: `march_clock.giorno_corrente`, il `clock` dei villain, e il
+   loro `stato` su morte e fuga. Tutto il resto — prosa, §1 party, alleanze —
+   resta **proposta a video**, e la proposta dice **in quale dei tre master** va.
+   ⚠️ `state_apply` scrive `stato` ma **non** `reversibile`: se il canone prevede
+   un ritorno lo dice il DM, e la regola R9 di `validate_state` glielo chiede.
 4. **Reversibilità**: i tre master puliti in git prima dell'apply, commit
    dedicato subito dopo; l'undo è sempre `git revert`.
 

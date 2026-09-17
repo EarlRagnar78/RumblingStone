@@ -10,10 +10,14 @@ Divisione dei ruoli (piano AUTOMAZIONE §3):
   - tutto il resto (prosa, tabelle villain, §1 party) resta proposta da
     applicare a mano: viene stampato, mai toccato.
 
-Regioni gestite:
-  march-clock   righe "Current March Day" / "Days remaining" (§2.1, state.md)
-  changelog     blocco append-only (state-changelog.md)
-  clock villain campo `clock` dei record di `campaign/state.yaml` (§3)
+Cosa scrive, e dove:
+  changelog       regione `auto:changelog` di `state-changelog.md` (append-only)
+  march clock     `march_clock.giorno_corrente` in state.yaml — **D14**
+  clock villain   campo `clock` dei record di state.yaml (§3)
+  morte / fuga    campo `stato` dei record di state.yaml (§3) — **D16**
+
+Dopo ogni scrittura in `state.yaml` le regioni `gen:state:` di `state.md` si
+rigenerano nello stesso giro: il master e la sua vista non restano mai sfasati.
 
 I tre master (ADR-0050, `dmcore/masters.py`): i fatti tabellari stanno in
 `campaign/state.yaml` e da li' si RIGENERANO in state.md; la prosa sta in
@@ -61,11 +65,10 @@ STATE_YAML_REL = Path("campaign") / "state.yaml"
 CHANGELOG_REL = Path("campaign") / "state-changelog.md"
 SESSIONS_REL = Path("campaign") / "sessions"
 
-#: Day di arrivo dell'orda a Rethmar (waypoint finale §2.1 — canone RHoD adattato).
-RETHMAR_DAY = 42
-
-MARCH_DAY_RE = re.compile(r"\*\*Current March Day:\*\*\s*\*\*(\d+)\*\*")
-DAYS_LEFT_RE = re.compile(r"\*\*Days remaining to Rethmar:\*\*")
+#: ⚠️ `RETHMAR_DAY = 42` stava qui, cablato. Era la seconda fonte di verita' piu'
+#: piccola del repo, e sopravviveva perche' nessuno aveva mai eseguito il tool:
+#: il giorno d'arrivo e' un DATO (`march_clock.giorno_arrivo`), e la vista se lo
+#: deriva. Tolto con D14.
 FENCE_RE = re.compile(r"^```", re.M)
 
 
@@ -73,49 +76,29 @@ FENCE_RE = re.compile(r"^```", re.M)
 
 
 def migrate(text: str) -> "tuple[str, list[str]]":
-    """Avvolge nei marker le zone gestite. Idempotente: salta le regioni
-    già presenti. Ritorna (testo, regioni aggiunte)."""
-    added: list[str] = []
-    existing = find_regions(text)
+    """Non c'e' piu' niente da marcare in `state.md` — **decisione D14**.
 
-    if "march-clock" not in existing:
-        m = MARCH_DAY_RE.search(text)
-        if not m:
-            raise RegionError("riga '**Current March Day:**' non trovata: "
-                              "impossibile migrare la regione march-clock")
-        start = text.rfind("\n", 0, m.start()) + 1
-        # la regione copre la riga del Day e l'eventuale riga Days remaining
-        end = text.find("\n", m.end()) + 1
-        m2 = DAYS_LEFT_RE.search(text, end)
-        if m2 and m2.start() == end:  # riga immediatamente successiva
-            end = text.find("\n", m2.end()) + 1
-        # 🔴 Se la riga NON e' autonoma, marcarla corromperebbe il canone.
-        #
-        # Questo codice presumeva una riga a se'. Il lotto 4c (2026-09-12) ha
-        # trasformato il March Day nell'inizio di un PARAGRAFO di cinque righe
-        # — «**Current March Day:** **19** — e' il punto di sincronia previsto,
-        # non un giorno gia' trascorso…» — che spiega perche' quel numero e' un
-        # bersaglio e non un passato.
-        #
-        # Marcandone solo la prima riga, `apply_march_clock` la sostituirebbe e
-        # lascerebbe le altre quattro **orfane, a meta' frase**. Trovato
-        # accendendo la via di scrittura nel lotto 4d-2: non era mai emerso
-        # perche' `--migrate` non era mai stato eseguito.
-        #
-        # Si rifiuta invece di indovinare dove finisce il paragrafo: allargare
-        # la regione fino alla riga vuota cancellerebbe la nota del DM al primo
-        # aggiornamento, che e' il danno peggiore dei due.
-        resto = text[end:].split("\n", 1)[0]
-        if resto.strip() and not resto.lstrip().startswith(("|", "#", "-", "*", ">")):
-            raise RegionError(
-                "la riga '**Current March Day:**' continua nel paragrafo "
-                f"successivo ({resto.strip()[:48]}…): marcarla corromperebbe il "
-                "canone al primo aggiornamento. Serve una riga autonoma per la "
-                "macchina, accanto alla prosa — decisione del DM")
-        text = text[:start] + wrap("march-clock", text[start:end]) + "\n" + text[end:]
-        added.append("march-clock")
+    🔵 Questa funzione marcava la regione `auto:march-clock`, e si **rifiutava**
+    di farlo: il lotto 4c aveva reso «`**Current March Day:**`» l'inizio di un
+    paragrafo di cinque righe, e sostituirne solo la prima avrebbe lasciato le
+    altre quattro **orfane a meta' frase**. Il rifiuto era la cosa giusta, ma
+    era un blocco, non una soluzione.
 
-    return text, added
+    Il DM ha sciolto il nodo il 2026-09-16: **il numero e' un dato**
+    (`march_clock.giorno_corrente` in `state.yaml`) e la sua vista si rigenera
+    come le altre otto tabelle; **la spiegazione resta prosa**, sotto e fuori
+    dalla regione generata. I due non condividono piu' una riga, quindi non si
+    contendono piu' uno scrittore.
+
+    Marcare oggi quella riga con `auto:` sarebbe **peggio** che prima: creerebbe
+    una regione dentro una regione `gen:state:`, cioe' due scrittori sullo stesso
+    testo — il difetto dei due master, ricreato dalla sua stessa correzione.
+
+    Resta come funzione, e non come buco, perche' `--migrate` deve continuare a
+    rispondere qualcosa di vero se un giorno `state.md` avra' di nuovo zone che
+    la macchina scrive fuori dal rendering.
+    """
+    return text, []
 
 
 def migrate_changelog(text: str) -> "tuple[str, list[str]]":
@@ -143,16 +126,6 @@ def migrate_changelog(text: str) -> "tuple[str, list[str]]":
 
 
 # ------------------------------------------------------------------ apply
-
-
-def apply_march_clock(text: str, new_day: int, session_label: str) -> str:
-    content = (
-        f"**Current March Day:** **{new_day}** "
-        f"(aggiornato da `state_apply` — {session_label}).\n"
-        f"**Days remaining to Rethmar:** **{RETHMAR_DAY - new_day}** "
-        f"(arrivo dell'orda a Rethmar: Day {RETHMAR_DAY}).\n"
-    )
-    return replace_region(text, "march-clock", content)
 
 
 def append_changelog(text: str, line: str) -> str:
@@ -224,6 +197,37 @@ def _clock_villain(dati_yaml: str, name: str, groups: tuple) -> "tuple[int, str,
     return None
 
 
+#: Come il trigger del log si traduce in uno stato dichiarato (D16, 2026-09-16).
+#:
+#: ⚠️ `npc_killed` → `morto` è la lettura letterale del log, ma **non decide se
+#: è definitivo**: `reversibile` non si tocca qui. In questa campagna un morto
+#: torna, e dirlo è del DM — la regola R9 di `validate_state` glielo chiederà
+#: alla prima esecuzione, che è il posto giusto per chiederlo.
+STATO_DA_TRIGGER = {"npc_killed": "morto", "npc_escaped": "latitante"}
+
+
+def _stato_villain(dati_yaml: str, name: str, groups: tuple) -> "tuple[int, str, str] | None":
+    """(indice, stato nuovo, etichetta) per una morte o una fuga, o None.
+
+    None quando il nome del log non corrisponde a **esattamente un** villain di
+    §3: il PNG può non essere in tabella (il log nomina chiunque), o il nome può
+    essere ambiguo. In entrambi i casi resta una proposta a mano.
+    """
+    import yaml as _yaml
+
+    dati = _yaml.safe_load(dati_yaml)
+    chi = groups[0]
+    trovati = [i for i, r in enumerate(dati.get("villain") or [])
+               if chi.lower() in str(r.get("villain", "")).lower()]
+    if len(trovati) != 1:
+        return None
+    i = trovati[0]
+    nuovo = STATO_DA_TRIGGER[name]
+    if dati["villain"][i].get("stato") == nuovo:
+        return None
+    return i, nuovo, f"{chi}: stato → {nuovo}"
+
+
 def _confirm(prompt: str, assume_yes: bool) -> bool:
     if assume_yes:
         return True
@@ -291,23 +295,63 @@ def run(repo: Path, session_name: "str | None", check: bool, assume_yes: bool,
 
     for name, raw, groups in ev["hits"]:
         if name == "march_clock":
+            # 🔵 D14, chiusa dal DM il 2026-09-16: il March Day e' un CAMPO di
+            # state.yaml, non piu' una riga da sostituire dentro la prosa. Prima
+            # la riga della macchina e la nota del DM erano lo stesso paragrafo,
+            # e per questo `--migrate` si rifiutava di marcarla.
             a, b = int(groups[0]), int(groups[1])
             if a == b:
                 continue
+            if ydata is None:
+                print(f"[apply] ⚠ {STATE_YAML_REL} assente — march_clock resta manuale")
+                manual.append((name, _suggest(name, groups)))
+                continue
             try:
-                candidate = apply_march_clock(text, b, session_label)
-            except RegionError as exc:
+                from dmcore.statedata import StateDataError, imposta_campo_oggetto
+                nuovo_yaml = imposta_campo_oggetto(
+                    ydata, "march_clock", "giorno_corrente", b)
+            except StateDataError as exc:
                 print(f"[apply] ⚠ march_clock non applicabile ({exc}) — resta manuale")
                 manual.append((name, _suggest(name, groups)))
                 continue
-            if candidate == text:
-                print(f"[apply] march-clock già a Day {b} — niente da fare (idempotente)")
+            if nuovo_yaml == ydata:
+                print(f"[apply] march clock già a Day {b} — niente da fare (idempotente)")
                 continue
-            print(f"\n[apply] proposta march-clock: Day {a} → Day {b}")
-            print(_diff(text, candidate, str(STATE_REL)) or "  (nessuna differenza)")
+            print(f"\n[apply] proposta march_clock: Day {a} → Day {b} "
+                  f"(in {STATE_YAML_REL})")
+            print(_diff(ydata, nuovo_yaml, str(STATE_YAML_REL)))
             if _confirm("[apply] applico questo blocco?", assume_yes):
-                text = candidate
+                ydata = nuovo_yaml
                 applied.append(f"March Clock Day {a} → Day {b}")
+            else:
+                manual.append((name, _suggest(name, groups)))
+        elif name in STATO_DA_TRIGGER:
+            if ydata is None:
+                print(f"[apply] ⚠ {STATE_YAML_REL} assente — {name} resta manuale")
+                manual.append((name, _suggest(name, groups)))
+                continue
+            esito = _stato_villain(ydata, name, groups)
+            if esito is None:
+                print(f"[apply] ⚠ {name} «{groups[0]}»: nessun villain di §3 "
+                      f"identificato con certezza (o già a posto) — resta manuale")
+                manual.append((name, _suggest(name, groups)))
+                continue
+            indice, valore, etichetta = esito
+            try:
+                from dmcore.statedata import StateDataError, imposta_campo
+                nuovo_yaml = imposta_campo(ydata, "villain", indice, "stato", valore)
+            except StateDataError as exc:
+                print(f"[apply] ⚠ {etichetta} non applicabile ({exc}) — resta manuale")
+                manual.append((name, _suggest(name, groups)))
+                continue
+            print(f"\n[apply] proposta {name} → {STATE_YAML_REL} (§3 villain)")
+            print(_diff(ydata, nuovo_yaml, str(STATE_YAML_REL)))
+            print(f"[apply] ⚠ `reversibile` NON viene scritto: se il canone "
+                  f"prevede un ritorno lo dice il DM, e la regola R9 di "
+                  f"`validate_state` lo chiederà alla prossima esecuzione.")
+            if _confirm("[apply] applico questo blocco?", assume_yes):
+                ydata = nuovo_yaml
+                applied.append(etichetta)
             else:
                 manual.append((name, _suggest(name, groups)))
         elif name in ("ritual_clock", "villain_clock"):

@@ -1142,8 +1142,9 @@ Vale per **ogni** commit di **ogni** fase.
 | ~~D13~~ | F4 · 4c | ✅ **DECISA E ATTUATA il 2026-09-12, nello stesso commit.** Il DM ha approvato la **v4-bis**, con l'ultima taratura sua: **−1 CA invece di −2** per Thorik. 🛡️ **Thorik** dona il **+2 di deflessione della Corona** → **Scudo del Custode** (1/g, immediata: Hella prende il danno di un alleato entro 9 m **dimezzato**) + **l'Eco del Custode**, che e' l'idea del DM: quando lei scuda qualcuno **lui e' accelerato 3 round e si muove verso chi e' stato protetto** — l'anello si chiude, la protezione data torna al donatore trasformata in velocita'. ⚒️ **Tordek** dona **Ancoraggio della Montagna** → **Pelle di Adamantio RD 3/adamantino**. 🔮 **Artemis** dona **1d6 di Eldritch Blast** (7d6 → 6d6) → **Rovo Eldritch** a volonta': il DM ha visto che il dono precedente **si sovrapponeva** a quello di Thorik (stessa casella, dare tempo a un altro). ⚒️ **Reazioni degli artefatti al dono e al rifiuto**, tutte reversibili e tutte fondate sulla personalita' gia' in scheda. 🌱 **E il potere #6 della Collana non e' piu' `[da definire col DM]`**: il seme **restituisce** al donatore, una volta sola, e decide Hella. **Attuato in 17 file** + **12 istantanee** in `_ARCHIVIO/doni-v1-2026-09-12/`. Vedi **§4.2-quinquies** |
 | ~~D4~~ | F4 | ✅ **chiusa il 2026-09-11: non era una domanda.** Misurato invece di ricordare: il `PALIO-BOOKLET` cita **14 file** — 8 stemmi, 4 mappe, 2 immagini — ed **esistono tutti e 14**. SVG veri da 2,7-5,4 KB, due PNG da ~2 MB, e `CREDITS.md` con l'attribuzione **CC BY 3.0** a game-icons.net già in regola. Niente da produrre, niente da togliere. 🔎 Settimo presupposto invecchiato di questa campagna, e la chiusura era rimasta indietro di un giro: annunciata il 2026-09-11 e non eseguita nello stesso commit |
 | D11 | F4 · 4b | **L'ADR ex-0018 della #72: recuperato il 2026-09-11 come [ADR-0049](adr/ADR-0049-edizione-commerciale-ap-originale.md), e resta 🔵 *proposta* — non accettata.** Dice che, *se e quando* si pubblica, si pubblica un **AP originale autonomo**, mai un'espansione di RHoD, e porta il **perimetro della v1**. ✅ **I due avvertimenti che bloccavano la domanda sono tolti**: l'audit mancante è stato **rifatto da zero** ([`AUDIT-DERIVAZIONE-IP-CAMPAGNA`](../docs/audit/AUDIT-DERIVAZIONE-IP-CAMPAGNA.md)), e la tesi **regge sul repo di oggi** — archi 07+08 a **0,2** e **0,7** occorrenze RHoD per 1.000 parole contro il **5,6** dell'arco 09. 🔎 **E la misura ha aggiunto due cose che la #72 non sapeva**: il **`Bestiario/` è a 3,0** e **esce col modulo** — un perimetro che tace su di lui lascia fuori il conto una dipendenza vera — e i **moduli autoconclusivi sono già puliti** (`10-stand-alone` e il Drappo a **0,0**), quindi su quest'asse il prodotto della linea 3 di `PIANO-VENDIBILITA` è pronto. 🔴 **Cosa resta da decidere al DM**: (a) si adotta il perimetro così com'è? (b) il **bestiario** sta dentro o fuori? (c) l'ADR resta proposta finché non c'è la **verifica di un avvocato IP**, che l'audit non sostituisce — conta i nomi, non la struttura |
-| **D14** 🆕 | F4 · 4d-2 | 🔴 **Dove va la riga del March Clock che scrive la macchina?** Accendendo la via di scrittura (`state_apply --migrate`, mai eseguita prima) è emerso che `migrate()` presumeva «`**Current March Day:**`» fosse una **riga a sé**. Il lotto 4c l'ha resa l'**inizio di un paragrafo di cinque righe** che spiega perché il Giorno 19 è un bersaglio e non un passato. Marcandone solo la prima, `apply_march_clock` l'avrebbe sostituita lasciando le altre quattro **orfane a metà frase** — canone corrotto al primo aggiornamento vero. ✅ **Il lotto rifiuta di indovinare**: la marcatura è bloccata con un errore che dice perché, e il changelog (che sta in un file suo) **non ne è penalizzato**. ⚠️ Allargare la regione fino alla riga vuota cancellerebbe la nota del DM a ogni aggiornamento: è il danno peggiore dei due, quindi non l'ho fatto. **Serve una riga autonoma per la macchina accanto alla prosa** — e dove metterla, e come dirla, è contenuto. Finché resta aperta, il March Clock **resta manuale** (come è sempre stato) |
-| **D16** 🆕 | F4 · 4d-2 | 🔵 **I villain hanno bisogno di un campo `stato`?** Accendendo la scrittura in `state.yaml` i **clock** sono diventati meccanici (numero in un campo dichiarato), ma «Regiarix killed» e «Sonjak escaped» **no**: i record `villain` di §3 hanno `villain · dove · agenda · clock · trigger`, e **nessun campo per lo stato**. Oggi la proposta dice al DM di scriverlo dentro `dove` o `agenda`, cioè di infilare un fatto strutturato dentro una frase — che è lo stesso difetto che ADR-0050 ha appena chiuso altrove. ⚠️ Dedurne uno adesso sarebbe **inventare schema dentro un lotto di infrastruttura**, esattamente come dedurre il `tempo` delle 58 righe di 4d-1: non l'ho fatto. Le tre strade: (a) campo `stato` con enumerazione chiusa (`attivo` · `morto` · `latitante` · `neutralizzato`) — rende meccaniche morte e fughe, ma va deciso cosa significa ciascun valore per il **morale delle armate** (`Armate-CALCOLI §4`); (b) niente campo, e la morte resta prosa per sempre — coerente col fatto che un villain morto spesso **torna**, e dirlo è narrazione; (c) campo `stato` **più** una riga di §7 per il come — due scritture per un fatto, che è il prezzo di avere sia il dato sia la storia. 🔴 Finché resta aperta, morte e fuga **restano proposte a mano**, e il tool lo dice nominando `state.yaml` |
+| ~~D14~~ | F4 · 4d-2 | ✅ **CHIUSA E ATTUATA il 2026-09-16, nello stesso commit.** Il DM: *«la riga va in state.yml e poi riportata in state.md»*. Misurata, la risposta regge: la tabella dei waypoint è **dato puro** (10 righe) e il March Day è **un campo** (`march_clock.giorno_corrente`); il paragrafo di cinque righe che spiega perché il Giorno 19 è un bersaglio e non un passato resta **prosa, sotto e fuori** dalla regione generata. Separati, la macchina riscrive la sua riga a ogni sessione senza mai toccare la nota del DM — che era il nodo. ⚠️ La regione `auto:march-clock` **sparisce**, e marcarla oggi sarebbe *peggio* di prima: una regione dentro una `gen:state:` sono due scrittori sullo stesso testo. Sparisce anche `RETHMAR_DAY = 42`, cablato in `state_apply`: era la seconda fonte di verità più piccola del repo, e sopravviveva perché nessuno aveva mai eseguito il tool. Vedi **§4.8.9** e [ADR-0052](adr/ADR-0052-cosa-e-dato-e-cosa-e-prosa.md) |
+| ~~D16~~ | F4 · 4d-2 | ✅ **CHIUSA E ATTUATA il 2026-09-16, nello stesso commit.** Il DM ha scelto l'enumerazione **con il compagno**: `attivo · latitante · neutralizzato · morto · ignoto`, più `reversibile`. ⚒️ `neutralizzato` copre il caso più frequente al tavolo — sconfitto ma non morto — e senza di lui il DM dovrebbe scrivere `morto` per non scrivere `attivo`. 🔴 **E `reversibile` è la metà che conta**: in questa campagna un morto torna (il Ghostlord nasce da un morto, Sal è protetto da un paradosso auto-consistente, Hella è morta in attesa del rito), quindi registrare «morto» senza dire se è definitivo è registrare **meno di quel che il canone sa**. La regola **R9** lo pretende. ⚠️ `state_apply` scrive `stato` ma **non** `reversibile`: il primo è la lettura letterale del log, il secondo è una decisione narrativa, e R9 la chiede al DM alla prima esecuzione — provato sul canone vero. 🔎 **§4 conoscenze è stata esclusa dopo averla misurata**, benché il DM avesse chiesto di includerla: tre righe non sono persone e tre persone compaiono sotto due nomi, quindi `stato` lì vorrebbe dire un valore privo di senso in tre casi e due copie divergenti in altri tre. Va nell'anagrafica del lotto della chiave. Vedi **§4.8.9** |
+| **D17** 🆕 | F4 · 4d-4 | 🔵 **I due villain senza scheda: si scrivono o si tolgono da §3?** Il lotto della chiave verso `Bestiario/` (campo `scheda:` + cancello che verifica il percorso) è deciso, ma misurando è emerso che **Zalkatar (Illithid Warlock)** e **Wyrmlord Saarvith + Regiarix** hanno una riga in §3 con agenda e clock in corsa, e **nessuna scheda nel Bestiario** — mentre gli altri 11 ce l'hanno. Le strade: (a) si scrivono le due schede mancanti, e il cancello può pretendere che `scheda:` esista su tutte le righe; (b) il campo resta opzionale e le righe senza scheda **si contano** come le 58 righe senza `tempo` (forma di ADR-0041); (c) le due righe escono da §3 perché non sono villain attivi ma comparse. ⚠️ È **contenuto, non infrastruttura**: scrivere due schede è canone, e non lo decido io. Stesso discorso per gli **8 PNG su 31** di §4 che non si agganciano |
 | ~~D5~~ | ~~fuori piano~~ | ✅ **deciso e fatto il 2026-09-04**: il DM l'ha messo in cima alla coda, ed è chiuso insieme al punto cieco di `validate_maps` (ADR-0043) |
 | ~~D6~~ | F1 | ✅ **decisa 2026-09-04: ridisegnata.** `…P1C` mappa 3 dichiarava 40×40 e aveva righe da 24 a 26 celle: rifatta **26×29**, nessuna coordinata del testo cambiata |
 
@@ -1652,6 +1653,96 @@ mancano, **non si scrive nemmeno il master**: o tutti e due, o nessuno.
 | **si degrada, non si rompe** | senza `state.yaml` il clock resta una proposta a mano, exit 0 |
 | **la guardia copre i tre file** | era tarata solo su `state.md`; adesso un `state.yaml` sporco blocca la scrittura |
 | **non-regressione** | 799 test, `validate_state`, `dm.py doctor` |
+
+#### 4.8.9 · Lotto **4d-3** — cosa è dato e cosa è prosa (D14 e D16 chiuse)
+
+[K canone · Opus 5 · alto · `python3 -m pytest scripts/tests -q` → 814 test;
+`render_state.py --check` verde dopo un `state_apply` sul canone vero; **sette**
+cancelli nuovi provati all'indietro, di cui **uno non mordeva e il giro l'ha
+scoperto**]
+
+##### FASE 1 · Audit — cosa c'è davvero in `state.md`
+
+| Misura | Numero |
+|---|---|
+| righe totali | **486** |
+| dentro le regioni generate | **131** in 8 regioni |
+| **righe-dati tabellari ancora FUORI da `state.yaml`** | **56** in 6 tabelle |
+| §7 fili narrativi | **24 bullet**, semi-strutturati (tag, fonte, conseguenza) — payload in prosa |
+
+Le sei tabelle non modellate: §2.1 March Clock (10) · §2.2 orda (13) ·
+§2.3 additivi condizionali (11) · §2.5 infiltratori (8) · §5 promesse (9) ·
+§7.R reputazione (5).
+
+🔎 **E il pezzo che cambia la risposta alla domanda del DM**: i dati di PNG e
+villain **esistono già**, altrove e fatti meglio — `Bestiario/` ha **32 PNG** e
+**35 villain**, `validate_bestiario` conta **115 statblock validi**, e
+`scripts/monster_catalog.yaml` è un indice macchina di **305 voci**
+(`id · name · cr · faction · role · environment · source_file`).
+
+🔴 **Quel che manca non è il dato: è la chiave.** Misurato riga per riga:
+**11 villain su 13** e **23 PNG su 31** di `state.yaml` si agganciano a una
+cartella del `Bestiario/` **solo per somiglianza di stringa**, e **Zalkatar** e
+**Saarvith/Regiarix** lì **non esistono affatto**. Un algoritmo deterministico
+non può seguire un collegamento che nessuno ha dichiarato; un LLM lo indovina,
+che è peggio.
+
+##### FASE 2 · Sviluppo
+
+**D16 — lo stato vivo è un dato.** `stato`
+(`attivo · latitante · neutralizzato · morto · ignoto`) e `reversibile`,
+obbligatorio appena lo stato non è `attivo`. Su **§3 villain (13)** e
+**§1 party (4)**.
+
+⚠️ **§4 conoscenze è stata esclusa dopo averla misurata, e il DM aveva chiesto
+di includerla.** Guardandola riga per riga: **tre righe non sono persone**
+(«Druid Circle of the Sacred Forest», «Lathander + Mask», «Tiri Kitor wild
+elves») e **tre persone compaiono sotto due nomi diversi** (Sonjak, Varis,
+Zalkatar/Sethrax). Mettere `stato` lì vorrebbe dire un valore privo di senso in
+tre casi e **due copie divergenti** in altri tre — cioè ricreare il difetto C2
+dentro la sua stessa correzione. La casa giusta è l'anagrafica dei PNG, che è il
+lotto della chiave: §4 ci si aggancia invece di duplicare.
+
+**D14 — il tempo della macchina.** Risposta del DM: *«la riga va in state.yaml e
+poi riportata in state.md»*. Misurata, regge: la tabella dei waypoint è **dato
+puro** (10 righe) e il March Day è **un campo**. Il paragrafo di cinque righe
+resta **prosa, sotto e fuori** dalla regione generata.
+
+Conseguenze: la regione `auto:march-clock` **sparisce**, e marcarla oggi sarebbe
+*peggio* di prima — una regione dentro una regione `gen:state:` sono due
+scrittori sullo stesso testo. Sparisce anche `RETHMAR_DAY = 42`, cablato in
+`state_apply`: era la seconda fonte di verità più piccola del repo, e
+sopravviveva perché **nessuno aveva mai eseguito il tool**.
+
+##### FASE 3 · Validazione
+
+| Prova | Criterio |
+|---|---|
+| **sul canone vero** | `state_apply` eseguito davvero con March Clock, morte, fuga e clock: 4 scritture nel master, vista rigenerata, poi ripristino |
+| **la consegna macchina → DM funziona** | dopo la scrittura di `stato`, **R9 scatta** e chiede al DM se è definitivo: è il punto di passaggio, non un errore |
+| **i cancelli mordono** | 7 sabotaggi → 7 rossi |
+| **byte-identità della prosa** | fuori dalle regioni generate, `state.md` non cambia di un carattere |
+| **non-regressione** | 814 test, `validate_state`, `validate_docs --sorgenti`, `dm.py doctor` |
+
+🐛 **Un cancello non mordeva, e il giro dei sabotaggi l'ha scoperto.** Il test
+sui «giorni mancanti derivati» confrontava il reso col valore atteso **sui dati
+di oggi**: 42 − 19 fa 23, quindi cablare `**23**` nel renderer lo faceva passare
+lo stesso. Un test che concorda col difetto che dovrebbe trovare non prova
+niente. Rifatto: adesso **muove il dato** su tre giorni diversi e verifica che il
+reso lo segua — un numero cablato resta fermo mentre il dato cambia, ed è
+l'unica differenza osservabile fra derivato e scritto due volte.
+
+🐛 **E ho di nuovo inventato il nome di un file ADR** citando ADR-0041 — la
+quarta volta in questa campagna. `validate_docs --sorgenti` l'ha ripreso prima
+del commit, che è esattamente il lavoro per cui esiste.
+
+##### Cosa resta aperto
+
+| | Cosa | Numero |
+|---|---|---|
+| ⬜ | **la chiave verso `Bestiario/`** — campo `scheda:` + cancello che verifica il percorso; è il lotto successivo, deciso dal DM | 2 villain e 8 PNG da risolvere a mano |
+| ⬜ | le tabelle ancora non modellate (§2.2, §2.3, §2.5, §5, §7.R) | **46 righe** |
+| ⬜ | §7 fili narrativi: semi-strutturati, e modellarli adesso vorrebbe dire indovinare uno schema | 24 bullet |
 
 #### 4.8.6 — FASE 3 · Validazione
 

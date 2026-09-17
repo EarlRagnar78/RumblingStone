@@ -94,7 +94,14 @@ class TestNessunaPerditaDiCanone(unittest.TestCase):
         for regione, spec in rs.TABELLE.items():
             righe = [r for r in rs.rendi(regione, d).splitlines()
                      if r.startswith("| ") and not r.startswith("|--")]
-            atteso = len(d[spec["chiave"]])
+            # I record di una tabella possono stare sotto una SOTTOCHIAVE:
+            # `waypoints` vive dentro `march_clock`, che porta anche i due
+            # numeri della macchina (D14). Si risolve dalla specifica, non
+            # chiamando la funzione che il test dovrebbe verificare.
+            blocco = d[spec["chiave"]]
+            if spec.get("sotto"):
+                blocco = blocco[spec["sotto"]]
+            atteso = len(blocco)
             self.assertEqual(len(righe) - 1, atteso,
                              f"{regione}: {len(righe)-1} righe per {atteso} record")
 

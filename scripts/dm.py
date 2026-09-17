@@ -458,10 +458,13 @@ def cmd_doctor(args: argparse.Namespace, extra: list[str]) -> int:
         if _clog.exists():
             _regs |= set(_find_regions(_clog.read_text(encoding="utf-8")))
         if _state.exists():
-            mancanti = {"march-clock", "changelog"} - _regs
+            # ⚠️ `march-clock` non e' piu' qui: con D14 (2026-09-16) il March Day
+            # e' un campo di state.yaml e la sua riga si RIGENERA come le altre
+            # tabelle. Quel che il doctor deve cercare in state.md sono i
+            # marcatori `gen:state:`, che `render_state --check` gia' verifica.
+            mancanti = {"changelog"} - _regs
             if not mancanti:
-                ok("marker auto: presenti (march-clock in state.md, "
-                   "changelog in state-changelog.md)")
+                ok("marker auto: changelog presente in state-changelog.md")
             else:
                 print(f"  ○ marker auto: manca {', '.join(sorted(mancanti))} — "
                       "`state_apply.py --migrate` sul branch gruppo")

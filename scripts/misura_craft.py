@@ -96,8 +96,14 @@ PG = ("Thorik", "Tordek", "Hella", "Artemis")
 #: Il terzo campo non è decorazione: un congegno che nessun documento del repo
 #: dichiara non è un criterio, è un gusto personale — e non entra qui.
 CONGEGNI = [
+    # 🔴 Contava SOLO i box che cominciano con prosa in corsivo nuda, e
+    # saltava quelli scritti nella forma che `editorial-standards` §2
+    # PRESCRIVE — `> **Read-aloud (pilastro lead).** *prosa*`. Cioe' i
+    # migliori. DEF-4 segnava 5 read-aloud e ne ha **15**: cinque nudi e
+    # **dieci etichettati**. Trovato il 2026-09-18 usando lo strumento per
+    # riscrivere DEF-4, e ha reso false tre cifre gia' pubblicate.
     ("read-aloud narrativo",
-     re.compile(r"^>\s*[*_][^*_\s]", re.M),
+     re.compile(r"^>\s*(?:\*\*Read-aloud[^*\n]*\*\*\s*)?[*_][^*_\s]", re.M | re.I),
      "module-standard §6 — prosa NUOVA per ogni ambiente"),
 
     ("contingenze «se i PG…»",
@@ -215,7 +221,10 @@ def box_read_aloud(testo: str) -> "list[list[str]]":
     # ⚠️ Lo stesso `[*_][^*_\s]` del rilevatore: `> **Nota**` NON apre un box.
     # Scritto largo, questa funzione contava le note editoriali come read-aloud
     # e dava 51 box «con parentesi» su 67 in DEF-1 — erano note, non letture.
-    apre = re.compile(r"^>\s*[*_][^*_\s]")
+    # ⚠️ Stessa correzione del rilevatore gemello: un box **etichettato**
+    # `> **Read-aloud (X).** *prosa*` — la forma PRESCRITTA — apre un box
+    # come uno nudo. Senza, `--box` misurava DEF-4 su 2 box invece che 15.
+    apre = re.compile(r"^>\s*(?:\*\*Read-aloud[^*\n]*\*\*\s*)?[*_][^*_\s]", re.I)
     box, corrente = [], []
     for riga in testo.splitlines():
         if apre.match(riga) or (corrente and riga.startswith(">")):
@@ -230,6 +239,9 @@ def box_read_aloud(testo: str) -> "list[list[str]]":
 
 
 #: Un nome proprio: maiuscola interna alla frase, non a inizio riga o dopo punto.
+#: L'etichetta di regia: rivolta al DM, non si legge ad alta voce.
+_ETICHETTA = re.compile(r"\*\*Read-aloud[^*\n]*\*\*", re.I)
+
 _NOME = re.compile(r"(?<![.!?»\n]\s)(?<!^)\b([A-ZÀ-Ù][a-zà-ù']{2,})")
 
 
@@ -243,10 +255,15 @@ def difetti_dei_box(testo: str) -> "dict[str, int]":
     for b in box_read_aloud(testo):
         if len(b) > TETTO_RIGHE:
             lunghi += 1
-        testo_box = " ".join(b)
-        if "(" in testo_box:
+        # 🔴 Si misura il CORPO, non l'etichetta. `**Read-aloud (LotR lead).**`
+        # e' rivolta al DM e non si legge ad alta voce: contarne le parentesi
+        # e i nomi dei pilastri faceva risultare *peggiore* ogni box scritto
+        # nella forma prescritta. Terza volta che lo stesso difetto — un metro
+        # tarato su una forma sola — compare in questo file.
+        corpo = _ETICHETTA.sub("", " ".join(b))
+        if "(" in corpo:
             parentesi += 1
-        if len(set(_NOME.findall(testo_box))) > 1:
+        if len(set(_NOME.findall(corpo))) > 1:
             nomi += 1
     return {"box": len(box_read_aloud(testo)), "oltre 12 righe": lunghi,
             "con parentesi": parentesi, ">1 nome proprio": nomi}

@@ -126,6 +126,32 @@ esiste **una volta in tutto il repo**. Il lint che avrebbe dovuto
 presidiarlo conta le occorrenze della **parola** «read-aloud» e gira solo
 sui 5 master DEF: **96 file su 100 non sono mai stati guardati**.
 
+## 🔴 Addendum 2 — il terzo strato, e tre cifre pubblicate da correggere
+
+Il 2026-09-18, **usando** lo strumento per riscrivere DEF-4, i numeri non si
+muovevano mentre il testo cambiava. Il difetto era lo stesso di questo ADR, al
+terzo giro: **un metro tarato su una forma sola**.
+
+`editorial-standards.md` §2 **prescrive** `> **Read-aloud (X).** *prosa*`, e il
+rilevatore contava solo i box che cominciano con corsivo **nudo** — saltando
+**proprio quelli scritti a norma**. Con tre conseguenze:
+
+1. **DEF-4 ha 15 read-aloud, non 5**; **DEF-5 ne ha 4, non zero**; e la frase
+   «DEF-4 ha il divario più grave col Palio» era **invertita** — 15,7 contro
+   13,4 ogni 1.000 righe.
+2. `box_read_aloud()` aveva lo stesso buco: `--box` misurava DEF-4 su **2** box
+   invece che 12.
+3. `difetti_dei_box()` contava parentesi e nomi propri **dell'etichetta**, che
+   è rivolta al DM e non si legge: ogni box a norma risultava **peggiore**.
+   DEF-4 segnava 9 «con parentesi» e ne ha **2**.
+
+🟢 **Reggono le due conclusioni più forti**, riverificate: Torre di Zalkatar e
+Battaglia Finale sono davvero a **zero** read-aloud, in 12 e 16 file.
+
+**La lezione che questo ADR incassa**: la regola dell'addendum 1 — *leggere la
+fonte che dichiara il congegno* — non basta. Serve anche **usare lo strumento
+su un caso vero**: tre difetti su tre sono emersi scrivendo, non leggendo.
+
 ## Alternative scartate
 
 1. **Contare la copertura dei nove pilastri.** Scartata: contraddice la fusion

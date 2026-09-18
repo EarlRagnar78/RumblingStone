@@ -1,7 +1,11 @@
 # Zog'tar Deatheye — mezzo-ogre barbaro [POINTER — statblocco nell'arco] [RIMANDO]
 **Key stats**: → `07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P5-DEFINITIVO-PARTE2.md` (i numeri stanno li'; duplicarli qui creerebbe una seconda copia che diverge alla prima errata — ADR-0021).
 
-**Faction**: red-hand | **Role**: melee-heavy | **Environment**: mountain | **CR**: 14
+**Faction**: orda-antica-372dr | **Role**: melee-heavy | **Environment**: mountain | **CR**: 14
+> 🕰️ **Fazione d'epoca.** L'assedio di Hammerfist e' del **~372 DR**, mille anni
+> prima della Mano Rossa: tenerli insieme farebbe proporre a `suggest_encounter`
+> un incontro che mescola due ere e non puo' esistere. `orda-antica-372dr`
+> esisteva gia' per Balvar Fuocospento, il consigliere della stessa orda.
 **Source**: `07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P5-DEFINITIVO-PARTE2.md` (statblocco d'arco, GS 14, Mezzo-Ogre/Orco Barbaro 10 / Guerriero 4)
 **Status**: POINTER — NON duplicare lo statblock qui. Usare sempre il file d'arco.
 

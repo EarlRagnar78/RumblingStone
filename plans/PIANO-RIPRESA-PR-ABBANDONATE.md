@@ -2085,6 +2085,70 @@ come un mostro da GS 13. L'ha visto il cancello delle non-creature, che tiene un
 elenco **deliberatamente chiuso** — *«aggiungerne una è una riga qui e una
 scelta»*.
 
+#### 4.8.14 · Lotto **4d-8** — una fazione dice da che parte stai, non dove vivi
+
+`[M igiene · Opus 5 · medio · `python3 -m pytest scripts/tests/test_vocabolario_delle_fazioni.py` verde; 883 test; 27 → 26 valori di `faction`; 397 → 384 record]`
+
+Il DM: *«fai il vocabolario delle fazioni e cerchiamo di mergiare o droppare
+questi doppioni»*. Misurando, le due voci di coda si sono rivelate **lo stesso
+problema visto da due lati**: il campo `faction` conteneva cose che non sono
+schieramenti, e lo stesso soggetto ne portava due valori diversi.
+
+##### 1 · Tre valori non erano fazioni
+
+| Valore | N | Cos'era |
+|---|---:|---|
+| `underdark` | 3 | un **ambiente** — e i tre file lo dichiaravano *anche* in `Environment` |
+| `rhod-allies` | 1 | un contenitore da un membro |
+| `rakshasa-hunter` | 1 | uno **scopo**, che sta già in `Role` |
+
+🔴 **Perché un ambiente come fazione fa danno**: l'asse delle alleanze
+(`faction_alliances.yaml`) si costruisce **sulle** fazioni, e un valore che
+descrive il posto non può entrare in nessuna alleanza. `--faction underdark`
+dava tre creature arbitrarie dove `--env underdark` le dà tutte.
+
+I tre file sono trascrizioni PCGen di RHoD **mai collocate in un arco**:
+l'alleanza non è stabilita, e dichiararne una sarebbe inventarla → `unknown`,
+col perché scritto nel file. I due singoletti diventano **`alleati-del-vale`**.
+
+##### 2 · Tredici soggetti avevano due record, e sei si contraddicevano
+
+Una scheda canonica più un POINTER `-crN` accanto, nato quando lo scanner non
+raggiungeva i file annidati. Adesso li raggiunge entrambi.
+
+⚠️ **Non erano copie uguali**: in ogni coppia **uno dichiara le intestazioni e
+l'altro le fa indovinare**. Tyrgarun era `dragon` da una parte e `red-hand`
+dall'altra; l'Avatar di Tiamat `rethmar-defender` contro `red-hand`; il **Conte
+Valerius** aveva **due GS**, 14 e 6.
+
+La regola non è «tengo il canonico» ma **tengo quello che dichiara** — ADR-0041
+applicato a una coppia. Sei contraddizioni risolte in favore del valore scritto
+a mano. 🔵 Vale **solo** fra due file del `Bestiario/`: un POINTER verso un file
+d'arco resta, perché lì è l'unica cosa che tiene la creatura nel pool.
+
+##### 3 · E due fazioni d'epoca — un errore mio, trovato dal censimento
+
+🔎 Avevo messo **Skullcrusher il Nero** e **Zog'tar Deatheye** in `red-hand`, ma
+il loro assedio è del **~372 DR**, mille anni prima della Mano Rossa — ed
+esisteva **già** `orda-antica-372dr` per **Balvar Fuocospento**, consigliere
+della stessa orda. Senza la correzione `--faction red-hand` poteva proporre un
+drago di mille anni fa accanto a un hobgoblin del 1372.
+
+Simmetrico: **`hammerfist-372dr`** per i difensori di quell'assedio (Re Thorek I,
+Durin, Thorgrim), distinti da `hammerfist-hero` che sono gli eroi del **1372**.
+
+##### Validazione
+
+| Sabotaggio | Esito |
+|---|---|
+| spegnere la deduplica dei gemelli | 🔴 tornano i 13 doppioni, e Tyrgarun due fazioni |
+| rimettere un ambiente come fazione | 🔴 3 test |
+| far tornare Skullcrusher Mano Rossa | 🔴 le due ere si mescolano |
+
+⚠️ **Una soglia che SCENDE va motivata**: il pool passa da 397 a 384 e questa è
+l'unica volta in cui quel numero cala. Non è una perdita — sono i 13 soggetti
+doppi ridotti a uno: **tredici record in meno, zero creature in meno**.
+
 #### 4.8.6 — FASE 3 · Validazione
 
 | Prova | Criterio |

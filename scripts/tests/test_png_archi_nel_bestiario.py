@@ -261,8 +261,11 @@ class TestIlCatalogoLeggeQuelCheEDichiarato(unittest.TestCase):
         dichiarano `red-hand`."""
         fazioni = {m["faction"] for m in CATALOGO}
         self.assertNotIn("mano-rossa", fazioni)
+        # 71 e non 74: **Skullcrusher il Nero** e **Zog'tar Deatheye** sono
+        # passati a `orda-antica-372dr` (l'assedio del ~372 DR e' mille anni
+        # prima della Mano Rossa), e la deduplica ha tolto un gemello.
         self.assertGreaterEqual(
-            len([m for m in CATALOGO if m["faction"] == "red-hand"]), 74)
+            len([m for m in CATALOGO if m["faction"] == "red-hand"]), 71)
 
     def test_le_voci_dell_abbazia_sono_entrate(self):
         """🔴 Un'avventura **intera** stava fuori dal censimento fino al 4d-6.

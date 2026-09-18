@@ -1,7 +1,10 @@
 # Re Thorek I — il re di Hammerfist a ~372 DR [POINTER — statblocco nell'arco] [RIMANDO]
 **Key stats**: → `07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P6-INTEGRAZIONE-Completa.md` (i numeri stanno li'; duplicarli qui creerebbe una seconda copia che diverge alla prima errata — ADR-0021).
 
-**Faction**: dauth-defender | **Role**: leader | **Environment**: mountain | **CR**: 16
+**Faction**: hammerfist-372dr | **Role**: leader | **Environment**: mountain | **CR**: 16
+> 🕰️ **Fazione d'epoca**, simmetrica a `orda-antica-372dr`: i difensori di
+> Hammerfist nel **~372 DR**. Distinti da `hammerfist-hero`, che sono gli eroi
+> del **1372** — mescolarli metterebbe due ere nello stesso incontro.
 **Source**: `07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P6-INTEGRAZIONE-Completa.md` (statblocco d'arco, Guerriero 16; battaglia antica di ~372 DR (ARC-07 P6))
 **Status**: POINTER — NON duplicare lo statblock qui. Usare sempre il file d'arco.
 

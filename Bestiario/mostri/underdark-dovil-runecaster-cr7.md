@@ -1,5 +1,10 @@
 # Dovil Runecaster / Deep Diviner (Diviner 5/Deep Diviner 1/Fighter 1) [TRANSCRIBED — PCGen, L1 2026-07-08]
-**Faction**: underdark | **Role**: caster-arcane | **Environment**: underdark | **CR**: 7 | **Source**: PCGen export `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Underdark dovil runecaster deep diviner cr7.htm` | **Status**: transcribed-pcgen
+**Faction**: unknown | **Role**: caster-arcane | **Environment**: underdark | **CR**: 7 | **Source**: PCGen export `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Underdark dovil runecaster deep diviner cr7.htm` | **Status**: transcribed-pcgen
+> ⚠️ **`underdark` era una fazione, ma e' un ambiente.** Questa scheda e' una
+> trascrizione PCGen del modulo RHoD **mai collocata in un arco** di questa
+> campagna: l'alleanza non e' stabilita, e dichiararne una sarebbe inventarla.
+> Il fatto vero — che vive nel Sottosuolo — sta gia' in `Environment: underdark`,
+> e `suggest_encounter --env underdark` la trova insieme a tutte le altre.
 
 
 ```statblocco

@@ -1,7 +1,11 @@
 # Skullcrusher il Nero — drago nero ancestrale [POINTER — statblocco nell'arco] [RIMANDO]
 **Key stats**: → `07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md` e `07_il Portale Della Forgia Eterna/ERRATA-ARC07-35-Verification.md` §2.3 (i numeri stanno li'; duplicarli qui creerebbe una seconda copia che diverge alla prima errata — ADR-0021).
 
-**Faction**: red-hand | **Role**: flier | **Environment**: aerial | **CR**: 12
+**Faction**: orda-antica-372dr | **Role**: flier | **Environment**: aerial | **CR**: 12
+> 🕰️ **Fazione d'epoca.** L'assedio di Hammerfist e' del **~372 DR**, mille anni
+> prima della Mano Rossa: tenerli insieme farebbe proporre a `suggest_encounter`
+> un incontro che mescola due ere e non puo' esistere. `orda-antica-372dr`
+> esisteva gia' per Balvar Fuocospento, il consigliere della stessa orda.
 **Source**: `07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md` (statblocco giocabile, GS 12: CA 27, PF 240, soffio acido 12d4 CD 24; battaglia antica di ~372 DR)
 **Status**: POINTER — NON duplicare lo statblock qui. Usare sempre il file d'arco.
 

@@ -74,6 +74,17 @@ FACTION_KEYWORDS = {
     "cerchio-druid": ["hella", "cerchio sacro", "druida", "druid", "treant"],
     "rethmar-defender": ["rethmar", "valerius", "lorana"],
     "dauth-defender": ["dauth", "thorek", "dwarf defender", "tordek", "morlin", "rurik"],
+    # Le due fazioni del ~372 DR: l'assedio antico di Hammerfist e' mille anni
+    # prima della Mano Rossa, e tenerli insieme farebbe proporre incontri che
+    # mescolano due ere. `orda-antica-372dr` esisteva gia' per Balvar
+    # Fuocospento; `hammerfist-372dr` e' il suo simmetrico difensivo.
+    "orda-antica-372dr": ["zog'tar", "zogtar", "balvar fuocospento",
+                          "skullcrusher il nero"],
+    "hammerfist-372dr": ["thorek i", "durin hammerfist", "thorgrim barbadiferro"],
+    # Gli alleati dei PG che non appartengono a un gruppo nominato. Prima erano
+    # due fazioni da un membro solo (`rhod-allies`, `rakshasa-hunter`) che
+    # descrivevano uno **scopo**, non uno schieramento: quello sta in `Role`.
+    "alleati-del-vale": ["jorr natherson", "therysol", "therisol"],
     "hammerfist-hero": ["borin ferropugno", "dara occhiolesto", "thorin runaforte", "nala cantapietre", "tempestas", "dana forgiapietra", "lunapiena", "ventolesto", "orion pelleorsa"],
     "red-hand": ["hobgoblin", "red hand", "mano rossa", "wyrmlord", "goblin", "worg", "bugbear", "orc", "ogre", "ettin", "hell hound", "kulkor", "draxoksus", "koth", "azarr kul", "tiamat", "saarvith"],
     # ⚠️ «zalkatar» stava in questo elenco: e' un illithid warlock della
@@ -379,9 +390,61 @@ def copertura_del_bestiario(root):
     return fuori
 
 
+def _superate_dal_gemello(root):
+    """I file del `Bestiario/` il cui gemello porta lo stesso soggetto — e che
+    quindi non devono produrre un secondo record.
+
+    🔴 **Il difetto misurato il 2026-09-17.** Tredici soggetti avevano **due**
+    record nel pool: una scheda canonica (`Xal_thor/Xal_thor.md`) e un POINTER
+    `-crN` accanto (`xal-thor-illithid-commander-cr14.md`), nato quando lo
+    scanner non raggiungeva ancora i file annidati. Adesso li raggiunge
+    entrambi, e `suggest_encounter` puo' proporre lo stesso villain due volte.
+
+    ⚠️ **E non erano due copie uguali.** In ogni coppia **uno dichiara le
+    intestazioni e l'altro le fa indovinare**, e in **sei** casi il risultato
+    diverge: Tyrgarun era `dragon` da una parte e `red-hand` dall'altra,
+    l'Avatar di Tiamat `rethmar-defender` contro `red-hand`, Therysol
+    `rakshasa-hunter` contro `unknown`. Il Conte Valerius aveva perfino **due
+    GS**, 14 e 6.
+
+    Quindi la scelta non e' «tengo il canonico»: e' **tengo quello che
+    dichiara**, che e' ADR-0041 applicato a una coppia. A parita' (entrambi
+    dichiarano, o nessuno dei due) vince il file che **non** e' il POINTER.
+
+    🔵 Vale **solo** fra due file del `Bestiario/`. Un POINTER che rimanda a un
+    file d'arco resta indicizzato: li' e' l'unica cosa che tiene la creatura
+    nel pool, ed e' tutto il senso del lotto 4d-5.
+    """
+    perse = set()
+    for p in sorted((root / "Bestiario").rglob("*.md")):
+        testo = read_file_safe(p)
+        testa = testo.split("\n", 1)[0]
+        if "[POINTER" not in testa and "[RIMANDO]" not in testa:
+            continue
+        rel = str(p.relative_to(root))
+        for citato in _fonti_dichiarate(testo):
+            bersaglio = None
+            for base in (root, p.parent, p.parent.parent):
+                if (base / citato).exists():
+                    bersaglio = str((base / citato).resolve().relative_to(root.resolve()))
+                    break
+            if not bersaglio or bersaglio == rel or not bersaglio.startswith("Bestiario/"):
+                continue
+            io_dichiaro = DICH_FACTION.search(testo) is not None
+            lui_dichiara = DICH_FACTION.search(read_file_safe(root / bersaglio)) is not None
+            if io_dichiaro and not lui_dichiara:
+                perse.add(bersaglio)
+            elif lui_dichiara and not io_dichiaro:
+                perse.add(rel)
+            else:
+                perse.add(rel)          # a parita', il POINTER cede
+    return perse
+
+
 def scan_directory(root):
     records = []
     copertura = copertura_del_bestiario(root)
+    superate = _superate_dal_gemello(root)
     valid_ext = {'.md', '.txt', '.htm', '.html', '.pcg'}
     # sorted() => walk deterministico su ogni filesystem/checkout (il CI gate
     # "catalogo in sync" confronta byte-per-byte)
@@ -390,6 +453,8 @@ def scan_directory(root):
             continue
         if should_skip(path.relative_to(ROOT)):
             continue
+        if str(path.relative_to(ROOT)) in superate:
+            continue   # il gemello porta lo stesso soggetto e dichiara di piu'
         if path.suffix.lower() not in valid_ext:
             continue
         # Only include files that look like statblocks

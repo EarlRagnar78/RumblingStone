@@ -150,14 +150,18 @@ class TestLaDeduplicaNonProduceDoppioni(unittest.TestCase):
 
 class TestIlPoolNonSiRestringe(unittest.TestCase):
     def test_il_pool_e_cresciuto_spezzando(self):
-        """305 → 352 (4d-5) → 372 (4d-6) → **397** (D18).
+        """305 → 352 (4d-5) → 372 (4d-6) → 397 (D18) → **384** (4d-8).
 
-        ⚠️ Il numero e' sceso a 395 e risalito a 397 mentre il lotto girava:
-        leggendo **tutti** i percorsi di una riga `Key stats` (non solo il primo)
-        la deduplica ha assorbito tre doppioni, e il censimento ha poi preteso
-        due voci nuove — **Re Thorek I** e **Durin Hammerfist**.
+        🔴 **Ed e' l'unica volta in cui questa soglia SCENDE.** Il calo non e'
+        una perdita: sono i **13 soggetti che avevano due record** — una scheda
+        canonica e un POINTER `-crN` accanto — ridotti a uno. Tredici creature
+        in meno nel conteggio, **zero** creature in meno nel pool.
+
+        ⚠️ Una soglia che cala va motivata o diventa un tappeto: se domani il
+        numero scende ancora senza che nessuno abbia scritto perche', il
+        cancello deve tornare rosso.
         """
-        self.assertGreaterEqual(len(CATALOGO), 397)
+        self.assertGreaterEqual(len(CATALOGO), 384)
 
     def test_ogni_record_ha_una_fonte_che_esiste(self):
         for m in CATALOGO:
@@ -211,7 +215,9 @@ class TestIDueConclaviIllithid(unittest.TestCase):
         zal = {m["name"] for m in CATALOGO if m["faction"] == "illithid-zalkatar"}
         xal = {m["name"] for m in CATALOGO if m["faction"] == "illithid-xal-thor"}
         self.assertGreaterEqual(len(zal), 11, "la Torre Invisibile ha perso i suoi custodi")
-        self.assertGreaterEqual(len(xal), 5, "l'invasione planare ha perso i suoi")
+        # 4 e non 6: la deduplica di 4d-8 ha tolto i gemelli di Xal'thor e Zarim,
+        # che erano due record ciascuno.
+        self.assertGreaterEqual(len(xal), 4, "l'invasione planare ha perso i suoi")
         self.assertEqual(zal & xal, set(), "i due conclavi sono rivali, non si sovrappongono")
 
     def test_i_custodi_della_torre_sono_di_zalkatar(self):

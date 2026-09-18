@@ -1,5 +1,9 @@
 # Jorr Natherson, guida delle paludi [TRANSCRIBED — PCGen, L1 2026-07-08]
-**Faction**: rhod-allies | **Role**: ranged | **Environment**: forest | **CR**: 7 | **Source**: PCGen export `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Jorr Natherson.htm`; stadio 2: `Jorr Natherson 8liv.htm` | **Status**: transcribed-pcgen
+**Faction**: alleati-del-vale | **Role**: ranged | **Environment**: forest | **CR**: 7 | **Source**: PCGen export `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Jorr Natherson.htm`; stadio 2: `Jorr Natherson 8liv.htm` | **Status**: transcribed-pcgen
+> 🔁 **Consolidata il 2026-09-17.** Era una fazione da un membro solo, e
+> descriveva uno **scopo**, non uno schieramento: quello sta gia' in `Role`.
+> `alleati-del-vale` raccoglie gli alleati dei PG che non appartengono a un
+> gruppo nominato (Cerchio, Starsong, Rethmar, Dauth, Martello di Moradin).
 
 
 ```statblocco

@@ -102,6 +102,15 @@ jobs:
         continue-on-error: true
         run: python scripts/validate_prosa.py
 
+      # 🔴 BLOCCANTE, e la ragione sta in ADR-0056: una norma editoriale che
+      # nessuno misura non fa rumore quando viene ignorata. «read-aloud-adulti»
+      # prescriveva box <= 12 righe da agosto e nessuno guardava; ADR-0014 era
+      # stato applicato a UN documento su cento. Questo passo non controlla che
+      # le norme siano rispettate — controlla che esista scritto CHI le guarda,
+      # e boccia un rimando a uno strumento che non esiste.
+      - name: Norme editoriali — ogni norma ha un misuratore o una ragione
+        run: python scripts/validate_norme_editoriali.py
+
       # Terzo della stessa famiglia: misura la LEGGIBILITA' dell'artefatto, che
       # nessun exit code vede. Gerarchia dei titoli (i segnalibri del PDF),
       # caratteri per riga dalle metriche vere del font, e le coppie di colori

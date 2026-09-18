@@ -73,7 +73,10 @@ SOGLIA = 4
 #: Dove la provenienza dei file d'arco 07 è dichiarata riga per riga.
 MATRICE = "07_il Portale Della Forgia Eterna/ARC07-MATRICE-VERSIONI.md"
 
-_RIGA_MASTER = re.compile(r"\*\*MASTER", re.IGNORECASE)
+#: 🔴 `**MASTER` da solo NON basta: la tabella storica della matrice lo usa al
+#: passato («era la versione viva *prima* del consolidamento»), e leggerlo al
+#: presente ha eletto otto archivi come master vivi. Serve la marca esplicita.
+_RIGA_MASTER_VIVO = re.compile(r"\*{0,2}MASTER VIVO\*{0,2}", re.IGNORECASE)
 _CITAZIONE = re.compile(r"`([^`]+\.md)`")
 
 
@@ -83,13 +86,30 @@ def marche(testo: str) -> int:
 
 
 def master_archiviati(root: Path) -> "set[str]":
-    """I file dentro `_ARCHIVIO/` che la matrice delle versioni dichiara MASTER.
+    """I file dentro `_ARCHIVIO/` che la matrice dichiara master **al presente**.
 
-    Si leggono dalla tabella, non si indovinano: una riga che porta ``**MASTER``
-    nella colonna di stato rende master **ogni** file che cita. La riga P4
-    combat/boss ne cita due (`-RICALIBRATO.md` e `Terros.md`) e valgono entrambi.
+    🔴 **Oggi restituisce l'insieme vuoto, ed è il punto.** Questa funzione
+    nacque il 2026-09-17 (ADR-0054) leggendo ``**MASTER`` ovunque nella
+    matrice — e la matrice usa quella parola nella sua **tabella storica**,
+    dove significa «era la versione viva *prima* del consolidamento». Il
+    risultato: otto file d'archivio eletti master vivi, e otto voci del
+    Bestiario che puntavano a **generazioni superate** invece che al master
+    DEF che si apre al tavolo.
 
-    Restituisce percorsi relativi alla radice del repo.
+    Misurando il 2026-09-18 si è visto che **nessuna delle otto creature
+    esisteva solo lì**: Skullcrusher, Zog'tar, Durin e Re Thorek I hanno lo
+    statblocco in `ARC07-DEF-4`, Terros e lo Xorn in `ARC07-DEF-1`, l'
+    «Elementale della Terra Anziano GS 13» *era Terros* prima della
+    ricalibrazione, e Thorgrim non ha numeri da nessuna parte. Le voci sono
+    state ripuntate ai master vivi e la matrice adesso scrive *(fino al
+    consolidamento)* **nella cella**, non solo nella legenda.
+
+    ⚠️ **Non si cancella, si svuota.** La regola resta vera — se un giorno la
+    matrice dichiarasse un master *vivo* dentro `_ARCHIVIO/`, il censimento
+    deve raggiungerlo — ma adesso pretende la marca esplicita
+    ``MASTER VIVO``, che nessuna riga porta. Una funzione che torna vuota e
+    dice perché è più onesta di una che non c'è: `test_censimento_forme.py`
+    prova entrambi i lati.
     """
     matrice = root / MATRICE
     if not matrice.exists():
@@ -97,7 +117,7 @@ def master_archiviati(root: Path) -> "set[str]":
     base = matrice.parent.relative_to(root)
     fuori = set()
     for riga in matrice.read_text(encoding="utf-8", errors="replace").splitlines():
-        if not _RIGA_MASTER.search(riga):
+        if not _RIGA_MASTER_VIVO.search(riga):
             continue
         for citato in _CITAZIONE.findall(riga):
             if "_ARCHIVIO" not in citato:

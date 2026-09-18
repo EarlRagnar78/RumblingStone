@@ -99,33 +99,77 @@ class TestLeTreForme(unittest.TestCase):
 
 
 class TestIMasterCheStannoInUnArchivio(unittest.TestCase):
-    def test_la_matrice_li_dichiara_e_noi_li_leggiamo(self):
+    """🔴 **Questa classe provava il contrario, fino al 2026-09-18.**
+
+    Il 17 settembre chiedeva «almeno sette file d'archivio eletti MASTER», e
+    passava. Era verde su un difetto: la matrice usa la parola ``MASTER`` nella
+    sua **tabella storica**, dove significa «era la versione viva *prima* del
+    consolidamento», e il parser la leggeva al presente. Otto voci del
+    Bestiario hanno puntato a **generazioni superate** invece che al master
+    DEF che si apre al tavolo.
+
+    Misurando, **nessuna delle otto creature esisteva solo lì**. Adesso la
+    funzione pretende la marca esplicita ``MASTER VIVO`` e la matrice scrive
+    *(fino al consolidamento)* **nella cella**, non solo nella legenda.
+    """
+
+    def test_oggi_nessun_archivio_e_dichiarato_master_vivo(self):
         eletti = master_archiviati(ROOT)
-        self.assertGreaterEqual(len(eletti), 7,
-                                "la matrice delle versioni dichiara MASTER almeno sette "
-                                "file dentro _ARCHIVIO/; se ne leggiamo meno, il parser "
-                                "ha smesso di vedere la tabella")
-        for atteso in ("Terros.md",
-                       "PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md",
-                       "PortaleForgia-P5-DEFINITIVO-PARTE2.md"):
-            with self.subTest(file=atteso):
-                self.assertTrue(any(e.endswith(atteso) for e in eletti))
+        self.assertEqual(eletti, set(),
+                         "un archivio e' tornato a dichiararsi master vivo: se e' "
+                         "voluto, la matrice deve portare MASTER VIVO nella cella e "
+                         "questo test va aggiornato di proposito\n  "
+                         + "\n  ".join(sorted(eletti)))
 
-    def test_i_master_dichiarati_esistono(self):
-        """Stessa disciplina di R11: un percorso dichiarato si prova."""
-        for e in sorted(master_archiviati(ROOT)):
-            with self.subTest(file=e.rsplit("/", 1)[-1]):
-                self.assertTrue((ROOT / e).exists(), e)
+    def test_la_regola_resta_viva_e_si_prova(self):
+        """⚠️ Svuotata non vuol dire spenta: se un giorno la matrice dichiara
+        un master **vivo** dentro `_ARCHIVIO/`, il censimento deve
+        raggiungerlo. Si prova su una matrice finta, perche' quella vera —
+        giustamente — non ne ha piu' nessuno."""
+        import tempfile
+        from dmcore.censimento import MATRICE
+        with tempfile.TemporaryDirectory() as d:
+            radice = Path(d)
+            (radice / MATRICE).parent.mkdir(parents=True)
+            (radice / "07_il Portale Della Forgia Eterna" / "_ARCHIVIO").mkdir()
+            (radice / "07_il Portale Della Forgia Eterna" / "_ARCHIVIO"
+             / "vivo.md").write_text("x", encoding="utf-8")
+            (radice / MATRICE).write_text(
+                "| P9 | `_ARCHIVIO/vivo.md` | boss | **MASTER VIVO** |\n",
+                encoding="utf-8")
+            self.assertEqual(
+                master_archiviati(radice),
+                {"07_il Portale Della Forgia Eterna/_ARCHIVIO/vivo.md"})
 
-    def test_entrano_nel_censimento_e_le_copie_no(self):
-        """La distinzione che tutto questo esiste per fare.
+    def test_la_forma_storica_NON_elegge(self):
+        """Il lato che morde: e' la riga esatta che ha ingannato il parser."""
+        import tempfile
+        from dmcore.censimento import MATRICE
+        with tempfile.TemporaryDirectory() as d:
+            radice = Path(d)
+            (radice / MATRICE).parent.mkdir(parents=True)
+            (radice / "07_il Portale Della Forgia Eterna" / "_ARCHIVIO").mkdir()
+            (radice / "07_il Portale Della Forgia Eterna" / "_ARCHIVIO"
+             / "vecchio.md").write_text("x", encoding="utf-8")
+            (radice / MATRICE).write_text(
+                "| P5 | `_ARCHIVIO/vecchio.md` | atto | **MASTER lungo** |\n",
+                encoding="utf-8")
+            self.assertEqual(master_archiviati(radice), set())
 
-        Un master dichiarato dentro `_ARCHIVIO/` **dev'esserci**; un'istantanea
-        archiviata **non deve**. Prima del 4d-6 valeva il secondo caso per
-        entrambi, e `Terros.md` — un boss da GS 15 — era fuori dal raggio.
+    def test_gli_archivi_sono_tutti_fuori_dal_censimento(self):
+        """⚠️ **Anche questo diceva il contrario.** Pretendeva
+        `_ARCHIVIO/Terros.md` **dentro** il censimento, e quindi una voce del
+        Bestiario che lo citasse.
+
+        Ma `Terros.md` non e' un modulo: e' un **memo di design in inglese**
+        («Analysis Context», «Is CR Correct», «Design Philosophy»), e lo
+        statblocco giocabile di Terros sta in `ARC07-DEF-1` — CR 15, PF 345 —
+        dove la voce del Bestiario adesso punta.
         """
         censiti = set(documenti_con_statistiche(ROOT))
-        self.assertIn("07_il Portale Della Forgia Eterna/_ARCHIVIO/Terros.md", censiti)
+        dentro = sorted(c for c in censiti if "_ARCHIVIO" in c)
+        self.assertEqual(dentro, [],
+                         f"un archivio e' rientrato nel censimento: {dentro}")
         copie = [c for c in censiti if "doni-v1-2026-09-12" in c]
         self.assertEqual(copie, [], "un'istantanea archiviata e' rientrata nel censimento: "
                                     "e' il difetto che porto' il catalogo da 305 a 311")

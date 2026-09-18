@@ -150,18 +150,29 @@ class TestLaDeduplicaNonProduceDoppioni(unittest.TestCase):
 
 class TestIlPoolNonSiRestringe(unittest.TestCase):
     def test_il_pool_e_cresciuto_spezzando(self):
-        """305 → 352 (4d-5) → 372 (4d-6) → 397 (D18) → **384** (4d-8).
+        """305 → 352 (4d-5) → 372 (4d-6) → 397 (D18) → 384 (4d-8) → **381**.
 
-        🔴 **Ed e' l'unica volta in cui questa soglia SCENDE.** Il calo non e'
-        una perdita: sono i **13 soggetti che avevano due record** — una scheda
-        canonica e un POINTER `-crN` accanto — ridotti a uno. Tredici creature
-        in meno nel conteggio, **zero** creature in meno nel pool.
+        🔴 **La soglia scende per la seconda volta, e ogni unita' ha un nome.**
+        Il primo calo (397 → 384) furono i **13 soggetti con due record** — una
+        scheda canonica e un POINTER `-crN` accanto — ridotti a uno.
 
-        ⚠️ Una soglia che cala va motivata o diventa un tappeto: se domani il
+        Il secondo (384 → 381) e' del 2026-09-18 e sono **tre**, uno per
+        ragione diversa:
+
+        | −1 | Chi | Perche' |
+        |---|---|---|
+        | 1 | **Elementale della Terra Anziano GS 13** | **era Terros**: l'archivio, sotto quel titolo, scrive «TERROS ANZIANO». Un boss con due GS in due record |
+        | 2 | **Thorgrim Barbadiferro GS 13** | **non ha uno statblocco in tutto il repo**: nel modulo e' una prova sociale CD 20. Il GS 13 l'avevo inventato io |
+        | 3 | **Skullcrusher, secondo record** | riaffiorato per un attimo togliendo l'ERRATA dalle fonti dichiarate della voce, e richiuso rimettendocela |
+
+        ⚠️ **Zero creature giocabili in meno nel pool.** Una era doppia, una
+        non era una creatura, una era un artefatto della deduplica.
+
+        Una soglia che cala va motivata o diventa un tappeto: se domani il
         numero scende ancora senza che nessuno abbia scritto perche', il
         cancello deve tornare rosso.
         """
-        self.assertGreaterEqual(len(CATALOGO), 384)
+        self.assertGreaterEqual(len(CATALOGO), 381)
 
     def test_ogni_record_ha_una_fonte_che_esiste(self):
         for m in CATALOGO:
@@ -187,16 +198,36 @@ class TestLeDecisioniDiCanoneDel17Settembre(unittest.TestCase):
         self.assertNotIn("Skullcrusher il Nero** (Adult Black Dragon CR 11)", archivio,
                          "il file d'archivio porta ancora il numero vecchio")
         self.assertIn("GS 12, non CR 11", archivio, "manca l'errata accanto alla riga")
+        # 🔎 E la voce non cita piu' l'archivio: i numeri (PF 240, CA 27) sono
+        # nel master vivo, e il FASTPLAY che citava non ha **nessuna** marca.
+        voce = (ROOT / "Bestiario" / "villain"
+                / "skullcrusher-il-nero-cr12.md").read_text(encoding="utf-8")
+        self.assertNotIn("_ARCHIVIO", voce.split("## Notes")[0],
+                         "la testa della voce torna a puntare a un archivio")
+        self.assertIn("ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md", voce)
 
     def test_il_boss_del_piano_della_terra_giocato_e_terros(self):
+        """🔴 **Il 17 settembre questo test si accontentava di un avviso.**
+
+        C'erano **due** voci per lo stesso boss — Terros a GS 15 e «Elementale
+        della Terra Anziano» a GS 13 — e il test chiedeva solo che la seconda
+        dicesse «al tavolo vale Terros». Un avviso dentro una voce non impedisce
+        a `suggest_encounter --cr 13` di proporla.
+
+        Misurando la fonte il 18: l'archivio, sotto il titolo «BOSS FIGHT:
+        ELEMENTALE DELLA TERRA ANZIANO (CR 13)», scrive ***«TERROS ANZIANO -
+        Elementale della Terra Anziano»***. Non era un altro mostro: era
+        Terros prima della ricalibrazione. La voce a GS 13 e' stata rimossa.
+        """
         terros = [x for x in CATALOGO if "Terros" in x["name"]]
         self.assertEqual(len(terros), 1)
         self.assertEqual(terros[0]["cr"], 15.0)
-        cornice = (ROOT / "Bestiario" / "mostri"
-                   / "elementale-terra-anziano-cr13.md").read_text(encoding="utf-8")
-        piatto = " ".join(cornice.replace("**", "").split())
-        self.assertIn("Al tavolo vale Terros, GS 15", piatto,
-                      "la voce a GS 13 non dice che non e' il boss che si gioca")
+        self.assertFalse((ROOT / "Bestiario" / "mostri"
+                          / "elementale-terra-anziano-cr13.md").exists(),
+                         "il doppione a GS 13 e' tornato")
+        doppi = [x for x in CATALOGO
+                 if "Elementale della Terra Anziano" in x["name"]]
+        self.assertEqual(doppi, [], f"Terros ha di nuovo due record: {doppi}")
 
 
 class TestIDueConclaviIllithid(unittest.TestCase):

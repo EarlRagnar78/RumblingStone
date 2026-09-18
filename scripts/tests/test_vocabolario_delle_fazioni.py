@@ -120,8 +120,13 @@ class TestUnaFazioneNonEUnAmbiente(unittest.TestCase):
 class TestLeDueEreNonSiMescolano(unittest.TestCase):
     """🕰️ Un incontro che mette insieme il ~372 DR e il 1372 non puo' esistere."""
 
+    #: ⚠️ **Durin ha cambiato cognome e Thorgrim e' uscito dal pool**, il
+    #: 2026-09-18. Il master vivo `ARC07-DEF-4` §4-bis lo chiama **Durin
+    #: Rocciadura** (Guerriero 6), l'archivio lo chiamava **Hammerfist**
+    #: (Guerriero 8): vince il master, e il cognome e' la decisione D4 aperta
+    #: al DM. Thorgrim e' `[NON-CREATURA]`: non ha statblocco da nessuna parte.
     ANTICHI = ("Skullcrusher il Nero", "Zog'tar Deatheye", "Balvar Fuocospento",
-               "Re Thorek I", "Durin Hammerfist", "Thorgrim Barbadiferro")
+               "Re Thorek I", "Durin Rocciadura")
 
     def test_l_orda_antica_non_e_la_mano_rossa(self):
         indice = {m["name"]: m["faction"] for m in CATALOGO}
@@ -129,8 +134,7 @@ class TestLeDueEreNonSiMescolano(unittest.TestCase):
                              ("Zog'tar Deatheye", "orda-antica-372dr"),
                              ("Balvar Fuocospento", "orda-antica-372dr"),
                              ("Re Thorek I", "hammerfist-372dr"),
-                             ("Durin Hammerfist", "hammerfist-372dr"),
-                             ("Thorgrim Barbadiferro", "hammerfist-372dr")):
+                             ("Durin Rocciadura", "hammerfist-372dr")):
             trovato = next((f for n, f in indice.items() if n.startswith(nome)), None)
             with self.subTest(soggetto=nome):
                 self.assertEqual(trovato, attesa)

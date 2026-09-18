@@ -39,6 +39,15 @@ token): l'agente non la ri-verifica a mano.
   esito per riuscita e una per fallimento**, chiusura di round. I dadi senza
   descrizione spengono la scena. Esemplare: `ARC07-DEF-1` §9 «FASE 2 — la
   regia dei tre round».
+- **La quarta colonna** ([ADR-0057](../../../plans/adr/ADR-0057-la-quarta-colonna-e-di-tutto-il-repo.md)):
+  un blocco che descrive un ambiente **per sensi** chiude con **«Cosa NON
+  dire»**, vincolante quanto le righe sopra. In tabella è la quarta colonna
+  (Occhi / Orecchie / Pelle-naso / **Cosa NON dire**); in elenco è l'ultimo
+  punto. Serve contro un rischio preciso: *il DM che, descrivendo
+  l'atmosfera, racconta anche la scoperta*. Viene dall'Abbazia della Rotta
+  Sicura, che ne ha 39 — **il dettaglio che non dici appartiene a chi fa la
+  domanda**. ⚠️ Non è un obbligo su ogni read-aloud: vale dove il sensoriale
+  è **strutturato in scheda**.
 - Etichettare la regia: `**Read-aloud (pilastro lead).**`, così il prossimo
   agente sa quale voce continuare.
 - I dialoghi dei PNG: `**NOME (registro/tono):** *«battuta»*`: il tono

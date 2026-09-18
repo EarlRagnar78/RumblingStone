@@ -81,11 +81,55 @@ compito non c'è, applica la domanda. Le skill marcate **obbligatorie** vanno
 caricate anche se il DM non le nomina — è il DM ad averlo chiesto, e non
 doverle chiedere è il punto.
 
+### 🥇 REGOLA D'ORO DELLA PROSA — una skill non è il suo `SKILL.md`
+
+> **Prima di scrivere una riga di prosa di gioco, o di misurarla, o di dire che
+> uno standard manca: apri i `references/` e leggili. Tutti quelli che la
+> riga della tabella ti assegna, per intero. Il `SKILL.md` è l'indice, non la
+> norma.**
+
+🔴 **Questa regola nasce da un fallimento misurato, il 2026-09-18.** Un agente
+— io — ha costruito un metro dello stile leggendo **due** `SKILL.md` e nessun
+`references/`, e ha concluso che certi standard «non esistevano». Esistevano:
+`read-aloud-adulti.md` prescrive da agosto **box ≤ 12 righe, un solo nome
+proprio nuovo, niente parentesi**; `editorial-standards.md` §2 prescrive la
+forma dei dialoghi che avevo dichiarato «inventata». E `ADR-0014` — *regia
+sensoriale obbligatoria*, luglio — era stato applicato a **un documento su
+cento**: la chiusura su «Che fate?», dovuta a *ogni* box di combattimento,
+esisteva **una volta in tutto il repo**.
+
+⚠️ **Non era un problema di scopribilità.** Tutti e 56 i `references/` sono
+già citati dai loro `SKILL.md`: un cancello sulla citazione sarebbe verde e
+inutile. Il problema è che **una norma che nessuno misura non fa rumore quando
+viene ignorata** — per settimane, in silenzio.
+
+Quindi la regola ha **tre obblighi**, e il terzo è quello che la rende diversa
+da un buon proposito:
+
+1. **Leggi i `references/`**, non il loro elenco. Sono la norma; il `SKILL.md`
+   è la mappa. Dieci file solo in `narrative-style`.
+2. **Misura prima di affermare.** «Questo standard manca», «lo stile non è
+   arrivato qui», «questa forma non la usa nessuno» sono affermazioni
+   *misurabili*: `python3 scripts/misura_craft.py [--box|--copertura|--spotlight]`.
+   Un'affermazione sullo stato del repo senza una misura accanto non vale.
+3. **Se introduci una norma, registrala.**
+   [`skills/REGISTRO-NORME-EDITORIALI.md`](skills/REGISTRO-NORME-EDITORIALI.md) elenca
+   ogni norma con **chi la misura**, o con **il perché nessuno la misura**.
+   Il gate `python3 scripts/validate_norme_editoriali.py` boccia un file
+   normativo non registrato e un rimando a uno strumento che non esiste
+   ([ADR-0056](plans/adr/ADR-0056-una-norma-senza-misura-non-esiste.md)).
+
+> **Il corollario scomodo**: introdurre uno standard **non è** aver fatto il
+> lavoro. I due commit che hanno portato `read-aloud-adulti.md` e `ADR-0014`
+> erano ottimi e sono rimasti lettera morta, uno perché non ha toccato un solo
+> file d'arco, l'altro perché ne ha toccato uno. **Una norma nuova arriva con
+> il suo lotto di applicazione e la sua misura, o non è arrivata.**
+
 ### Cosa carico, in base a cosa sto per fare
 
 | Sto per… | Carico (obbligatorie in **grassetto**) |
 |---|---|
-| Scrivere prosa che un **giocatore** leggerà o sentirà — read-aloud, handout, dialoghi, teaser, recap, echi | **`rumblingstone-narrative-style`** (+ il suo `references/italiano-nativo.md`, obbligatorio) |
+| Scrivere prosa che un **giocatore** leggerà o sentirà — read-aloud, handout, dialoghi, teaser, recap, echi | **`rumblingstone-narrative-style`** e i suoi `references/` — **obbligatori e da leggere**, non da elencare: `italiano-nativo.md` (la lingua), `read-aloud-adulti.md` (le soglie: ≤12 righe, un nome proprio, niente parentesi), `editorial-standards.md` (le due forme prescritte), `style-pillars.md` (la *fusion rule*) |
 | Scrivere un **documento del repo** — guida, ADR, piano, README, corpo di PR, messaggio di commit | **`rumblingstone-prosa-documenti`** ⚠️ regole opposte alla riga sopra: non mescolarle |
 | Costruire o giocare un **caso**: mistero, indizi, enigma, ricomposizione, vicolo cieco | **`rumblingstone-indagine`** (sopra `narrative-style`, che resta il fondo) |
 | Consolidare un beat d'arco in un **master definitivo** di qualità AP | **`rumblingstone-module-standard`** |

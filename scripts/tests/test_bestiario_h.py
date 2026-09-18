@@ -100,11 +100,24 @@ class TestNonCreature(unittest.TestCase):
         il proprietario della stanza in cui l'Anello di Artemis si e' risvegliato.
         E' un dossier di fazione, non una creatura: le sue creature dichiarano
         `**Faction**: illithid-zalkatar`.
+
+        🔴 **La nona e' un errore mio, del 2026-09-17.** `thorgrim-barbadiferro.md`
+        era `thorgrim-barbadiferro-cr13.md` e dichiarava `**Role**: melee-heavy |
+        **CR**: 13`, citando `_ARCHIVIO/PortaleForgia-P5-DEFINITIVO-PARTE2.md`.
+        Quel file **non lo nomina nemmeno una volta**, e uno statblocco per
+        Thorgrim **non esiste in tutto il repo**: nel modulo e' una **prova
+        sociale**, Diplomazia/Intimidire CD 20. Con quella voce nel pool,
+        `suggest_encounter --cr 13` poteva proporre al DM un nano senza PF ne'
+        CA. E' ADR-0053 — una chiave dedotta invece che dichiarata — e la
+        differenza fra le altre otto e questa e' che le altre **non sono
+        creature**, mentre questa **non ha numeri**: due ragioni diverse per
+        la stessa marca.
         """
         attese = {"Consiglio_Rethmar.md", "Profughi_Guado_di_Drellin.md",
                   "ondata-giganti-fanteria-cr15.md", "Witchwood_e_Tiri_Kitor.md",
                   "Secondo_Anello_Rethmar.md", "duergar-scala-di-ossa-cr11.md",
-                  "Zhentarim_Dauth.md", "Zalkatar.md"}
+                  "Zhentarim_Dauth.md", "Zalkatar.md",
+                  "thorgrim-barbadiferro.md"}
         trovate = {f.name for f in (REPO / "Bestiario").rglob("*.md")
                    if E.e_non_creatura(f.read_text(encoding="utf-8"))}
         self.assertEqual(attese, trovate)

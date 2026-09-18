@@ -1921,6 +1921,41 @@
       "deterministic": true
     },
     {
+      "name": "misura_craft",
+      "description": "«Lo stile e i congegni nuovi sono arrivati in questa parte, o e' rimasta indietro?»\n\nConta i congegni di mestiere dichiarati (read-aloud, contingenze, orologi, pilastro lead/support...) in ogni arco e li confronta con i due banchi: Abbazia e Palio.",
+      "use_case": "«Lo stile e i congegni nuovi sono arrivati in questa parte, o e' rimasta indietro?»",
+      "invocation": "python3 scripts/misura_craft.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "densita": {
+            "type": "boolean",
+            "description": "Normalizza ogni conteggio su 1.000 righe (confronto fra documenti di taglia diversa)."
+          },
+          "box": {
+            "type": "boolean",
+            "description": "I box read-aloud contro le soglie di read-aloud-adulti.md (<=12 righe, un nome proprio, niente parentesi)."
+          },
+          "copertura": {
+            "type": "boolean",
+            "description": "Quanti congegni su N, e quali hanno i banchi che qui mancano."
+          },
+          "mancanti": {
+            "type": "boolean",
+            "description": "Elenca, per ogni bersaglio, i congegni a zero."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "un modello di percorso non pesca nessun file"
+      },
+      "deterministic": true
+    },
+    {
       "name": "new_campaign_group",
       "description": "«Comincio una campagna nuova con un altro gruppo: come parto da uno stato pulito senza perdere questo?»\n\nReset branch-per-gruppo: nuovo branch di campagna con stato azzerato dai template.",
       "use_case": "«Comincio una campagna nuova con un altro gruppo: come parto da uno stato pulito senza perdere questo?»",
@@ -2082,6 +2117,24 @@
       "exit_codes": {
         "0": "master conformi",
         "1": "violazioni checklist"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "validate_norme_editoriali",
+      "description": "«Questa norma di stile la guarda qualcuno, o e' ferma da settimane senza che nessuno se ne accorga?»\n\nVerifica che ogni norma editoriale sia registrata e che ogni rimando a uno strumento di misura esista davvero.",
+      "use_case": "«Questa norma di stile la guarda qualcuno, o e' ferma da settimane senza che nessuno se ne accorga?»",
+      "invocation": "python3 scripts/validate_norme_editoriali.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
       },
       "deterministic": true
     },

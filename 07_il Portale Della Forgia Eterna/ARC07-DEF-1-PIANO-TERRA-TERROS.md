@@ -364,6 +364,16 @@ lontani.
   gravità tira, sempre (2× ridotta a "solo" opprimente dalla Benedizione);
   i cristalli sono freddi al tocco, mai ghiacciati — il freddo educato
   della pietra che non ha fretta.
+- 🚫 **Cosa NON dire** *(vincolante quanto le quattro righe sopra —
+  [ADR-0057](../plans/adr/ADR-0057-la-quarta-colonna-e-di-tutto-il-repo.md))*:
+  - **che il BOOM sono i cristalli *vivi*.** È la rivelazione dell'**Incontro
+    2** (§6, Campo Cristalli Viventi): qui si sente solo una campana sepolta
+    che nessuno ha suonato. Se lo dici adesso, §6 diventa una conferma.
+  - **che il *pull* laterale indica la strada.** La bussola è **Aegis Fang che
+    vibra**, e si guadagna orientandosi. Il pull è una stranezza del posto: se
+    lo trasformi in un'indicazione, togli l'unica prova di orientamento del §4.
+  - **«magia elementale».** I PG sentono **ozono**. La categoria sta nello
+    statblock, non nel naso di chi cammina (ADR-0014 §2, il mostro spiegato).
 
 > **Read-aloud (orizzonte).** *Davanti, nella direzione che indica Aegis Fang:
 > a portata di mano, piattaforme di cristallo unite da ponti di pietra

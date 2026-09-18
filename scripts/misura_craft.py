@@ -318,7 +318,7 @@ def main() -> int:
     ap.add_argument("--densita", action="store_true",
                     help="normalizza ogni conteggio su 1.000 righe (confronto fra documenti di taglia diversa)")
     ap.add_argument("--spotlight", action="store_true",
-                    help="equilibrio dei quattro PG contro la norma «no PC >40%» di pc-protagonism.md")
+                    help="equilibrio dei quattro PG contro la norma «no PC oltre il 40%%» di pc-protagonism.md")
     ap.add_argument("--box", action="store_true",
                     help="i box read-aloud contro le soglie di read-aloud-adulti.md")
     ap.add_argument("--copertura", action="store_true",

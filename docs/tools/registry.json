@@ -4646,6 +4646,15 @@
           "desc": "I box read-aloud contro le soglie di read-aloud-adulti.md (<=12 righe, un nome proprio, niente parentesi)."
         },
         {
+          "name": "--spotlight",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Equilibrio dei quattro PG contro la norma «nessun PG oltre il 40%» di pc-protagonism.md."
+        },
+        {
           "name": "--copertura",
           "type": "bool",
           "required": false,
@@ -4692,6 +4701,7 @@
       "produces_schema": null,
       "ci_smoke": "python scripts/misura_craft.py --help",
       "tests": [
+        "scripts/tests/test_help_di_ogni_tool.py",
         "scripts/tests/test_misura_craft.py"
       ],
       "docs": [
@@ -5141,6 +5151,7 @@
       "produces_schema": null,
       "ci_smoke": "python scripts/validate_norme_editoriali.py",
       "tests": [
+        "scripts/tests/test_help_di_ogni_tool.py",
         "scripts/tests/test_norme_editoriali.py"
       ],
       "docs": [

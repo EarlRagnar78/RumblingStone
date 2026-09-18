@@ -1936,6 +1936,10 @@
             "type": "boolean",
             "description": "I box read-aloud contro le soglie di read-aloud-adulti.md (<=12 righe, un nome proprio, niente parentesi)."
           },
+          "spotlight": {
+            "type": "boolean",
+            "description": "Equilibrio dei quattro PG contro la norma «nessun PG oltre il 40%» di pc-protagonism.md."
+          },
           "copertura": {
             "type": "boolean",
             "description": "Quanti congegni su N, e quali hanno i banchi che qui mancano."

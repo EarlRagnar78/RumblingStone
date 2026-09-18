@@ -314,6 +314,49 @@ class TestIlBoxETICHETTATOEUnBoxAnchEsso(unittest.TestCase):
                 self.assertEqual(conta("read-aloud narrativo", testo), atteso)
 
 
+class TestIDueCongegniDiMercer(unittest.TestCase):
+    """🔴 Quarta e quinta cosa dichiarata e mai applicata di questo repo.
+
+    Il DM il 2026-09-18 ha chiesto *«qualcosa che stimoli i PG a soluzioni
+    creative — vedi se c'è tra le skill»*. C'era, in `style-pillars.md`
+    §Mercer, e in due forme:
+
+    - **`[HDYWTDT]`** — al colpo che uccide un boss la narrazione passa a chi
+      l'ha tirato, e la skill dice che il marcatore **va scritto** nel testo
+      dell'incontro. Era a **zero in tutti e nove gli archi**.
+    - **yes-and with teeth** — l'invenzione del giocatore entra nel canone
+      **e** genera una complicazione. Mai applicata.
+
+    ⚠️ Nessuno dei due era nel metro, ed è il motivo per cui erano invisibili:
+    *se una cosa sta in una skill e in nessun rilevatore, prima o poi sparisce.*
+    """
+
+    def test_il_marcatore_del_finisher_conta(self):
+        self.assertEqual(
+            conta("[HDYWTDT] il finisher al giocatore",
+                  "`[HDYWTDT — il finisher a chi lo abbatte]`"), 1)
+
+    def test_assorbi_e_rilancia_conta(self):
+        self.assertGreaterEqual(
+            conta("assorbi e rilancia (yes-and with teeth)",
+                  "La regola e' **assorbi, poi rilancia** (yes-and with teeth)"), 1)
+
+    def test_dove_sono_arrivati(self):
+        """Il fatto misurato. DEF-4 e' l'unico documento che li porta, ed e'
+        la riscrittura del 2026-09-18. Quando arriveranno altrove, questo
+        cancello va aggiornato **di proposito** — come e' gia' successo per
+        la regia di round, poche ore dopo averlo scritto."""
+        for congegno in ("[HDYWTDT] il finisher al giocatore",
+                         "assorbi e rilancia (yes-and with teeth)"):
+            con = []
+            for nome in MC.BERSAGLI:
+                testo, _, _ = MC.carica(MC.BERSAGLI[nome])
+                if conta(congegno, testo):
+                    con.append(nome)
+            with self.subTest(congegno=congegno):
+                self.assertEqual(con, ["DEF-4 Viaggio 1.000 anni"])
+
+
 class TestIBersagliNonSiCampionanoInSilenzio(unittest.TestCase):
     """🔴 Il difetto che non era in nessun rilevatore.
 

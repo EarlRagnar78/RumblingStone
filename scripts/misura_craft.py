@@ -196,6 +196,18 @@ CONGEGNI = [
                 r"apertura di round|chiusura di round|micro-box", re.I),
      "ADR-0014 §1 — nessuna sequenza a battute senza regia"),
 
+    # ── Due congegni della skill dello stile che il metro non conosceva, e che
+    # erano a ZERO in tutti e nove gli archi. Trovati il 2026-09-18 perche' il
+    # DM ha chiesto «soluzioni creative» e la risposta era gia' scritta.
+    ("[HDYWTDT] il finisher al giocatore",
+     re.compile(r"\[HDYWTDT", re.I),
+     "style-pillars §Mercer — «write [HDYWTDT] at boss-death points»"),
+
+    ("assorbi e rilancia (yes-and with teeth)",
+     re.compile(r"yes-and|assorbi,? poi rilancia|assorbi e rilancia|"
+                r"invenzion\w+ del giocatore|un'idea che non è scritta", re.I),
+     "style-pillars §Mercer — l'invenzione entra nel canone E genera una complicazione"),
+
     ("grigio politico",
      re.compile(r"fazione recuperabil|crede di aver ragione|ha (?:le sue|una sua) ragion|"
                 r"\bLeva\b\s*[=:]|ricattabil|vizio\s*/\s*leva|non è (?:un )?(?:cattivo|mostro)\b",

@@ -129,6 +129,62 @@ Cuore della Montagna, Giorno 3 dell'assedio del 1372).
 
 ---
 
+## §0-ter — QUANDO UN GIOCATORE HA UN'IDEA CHE NON È SCRITTA QUI
+
+> **Una pagina sola, e serve mentre giochi.** Questo master ha molte vie
+> scritte. I giocatori ne troveranno una che non c'è — è quello che si spera —
+> e quel momento decide se la serata resta in piedi o si affloscia in un
+> «mmh, non credo si possa».
+
+### La regola, dalla skill dello stile: **assorbi, poi rilancia**
+
+`references/style-pillars.md` §Mercer la chiama *«yes-and with teeth»*:
+**l'invenzione del giocatore entra nel canone *e* genera una complicazione.**
+Non «sì»; non «no». **Sì, e adesso c'è un problema nuovo.**
+
+| Il giocatore dice | ❌ Come si spegne | ✅ Come si assorbe e si rilancia |
+|---|---|---|
+| *«Conosco un nano di qui — mio bisnonno me ne parlava»* | «Non c'è nessuno così» | «C'è. È il fratello di Durin, e ti riconosce dal naso. **Ma sta sul camminamento est, e stanotte non dovrebbe esserci nessuno lì.**» |
+| *«Verso l'olio delle lanterne sulle scale e do fuoco»* | «Non è previsto» | «Funziona: due scale bruciano. **Il fumo sale dritto sul camminamento dove siete voi**, e adesso non vedete chi arriva» |
+| *«Grido ai nani che la profezia parla di noi»* | tira Diplomazia | «La linea si rinsalda, +2 morale. **E l'orda sente il nome**: da adesso puntano voi» |
+| *«Prendo la lastra di Balvar e la porto via»* | «È troppo pesante» | «Te la carichi. **Pesa, −1 alla DES finché non la posi**, e Balvar adesso sa esattamente dove sei» |
+
+**Il metro, in una riga**: se l'idea è **specifica** e il giocatore accetta che
+il mondo reagisca, **funziona**. Se è generica («cerco un modo»), chiedi
+*«come, di preciso?»* — e poi funziona.
+
+### Tre cose da non fare, che costano il tavolo
+
+1. **Non chiedere un tiro per dire di no.** Un tiro è una domanda vera solo se
+   entrambi gli esiti ti vanno bene. Se l'idea non deve riuscire, dillo e di'
+   **perché**, in finzione.
+2. **Non far pagare l'ingegno più della forza bruta.** Se spaccare la porta
+   costa un round e aprirla con l'astuzia ne costa tre, hai insegnato al tavolo
+   a spaccare le porte.
+3. **Non salvare la scena scritta.** Se l'idea del giocatore salta un incontro
+   che avevi preparato, **è saltato**. Il tempo che avanza lo spendi
+   sull'orologio della notte — e i giocatori se ne accorgono, e ti ringraziano.
+
+### 🎁 Il finisher va al giocatore — `[HDYWTDT]`
+
+`style-pillars.md` §Mercer lo chiede per iscritto: al colpo che uccide un boss,
+**la narrazione passa a chi l'ha tirato**. In questo master ci sono **due**
+punti, e li trovi marcati nel testo:
+
+- `[HDYWTDT — il finisher a chi abbatte Zog'tar]` → §4-bis
+- `[HDYWTDT — il finisher a chi abbatte Skullcrusher]` → §4
+
+🔎 **Non è un abbellimento, ed è la quarta cosa dichiarata e mai applicata di
+questo repo**: il marcatore `[HDYWTDT]` era a **zero in tutti e nove gli
+archi**, benché la skill dica che va scritto *«at boss-death points in
+encounter content»*.
+
+⚠️ **Come si fa senza che diventi imbarazzante**: non si dice «descrivi tu».
+Si dice **«com'è che lo fai?»**, e si aspetta. Se il giocatore non vuole,
+descrivi tu in una riga e vai avanti: è un regalo, non un compito.
+
+---
+
 ## §1 — HIGHLIGHT ASIMMETRICI PER PG (i QUATTRO, Hella è tornata)
 
 ### 🛡️ THORIK — la profezia fatta carne (Casa di Davide lead)
@@ -423,11 +479,25 @@ tre pezzi migliori della notte, e sommati sono anche il rischio più grosso. È
 il bivio, ed è **vero** — non una finta scelta con una risposta giusta.
 
 ### SCENA 2 — Thorgrim Barbadiferro e gli Antenati `[FAST-PLAY — assorbita in 1-bis se giochi le scene complete]`
-> **Read-aloud.** *Vi conducono da **Thorgrim Barbadiferro**, antico portatore di
-> Aegis Fang, e da **Re Thorek I**. Il vecchio guerriero fissa la Corona sulla
-> vostra fronte: «Quella gemma… mio nonno la perse contro Skullcrusher. Se dite
-> il vero, mostratela.» Aegis Fang, nelle vostre mani e nelle sue, canta la
-> stessa nota — a mille anni di distanza.*
+> **Read-aloud (Mercer lead, Casa di Davide support).** *Il vecchio è seduto e
+> non si alza. Ha le mani appoggiate sulle ginocchia, e sono mani che hanno
+> tenuto la stessa ascia che tenete voi: si vede dal callo, nello stesso punto.
+> Guarda la gemma sulla vostra fronte per il tempo di tre respiri. Poi gli
+> occhi gli si riempiono e lui non se ne accorge, perché sta già parlando.*
+>
+> **THORGRIM (voce che non trema, occhi che sì):** *«Mio nonno l'ha persa. Se
+> dite il vero, mettetemela in mano.»*
+>
+> *Quando l'ascia passa fra le sue dita e le vostre, per un istante le due prese
+> si toccano sul legno. E il legno **suona**.*
+
+⚠️ **Perché questo box è stato riscritto** *(2026-09-18)*. Il precedente
+portava **otto nomi propri** in cinque righe — Thorgrim, Barbadiferro, Aegis
+Fang, Re Thorek, Skullcrusher, la Corona — ed è **l'esempio testuale** che
+`read-aloud-adulti.md` §1 usa per spiegare il difetto: *«Se in un box compaiono
+Skullcrusher, Thorgrim e Barbadiferro, la metà del tavolo ne ha persi due»*.
+Adesso il nome proprio nuovo è **uno**, il resto sono mani, callo e legno — e
+il tono di Thorgrim è dichiarato, come chiede `editorial-standards` §2.
 - **Prova di gruppo**: Diplomazia/Intimidire **CD 20** → fiducia piena
   (invisibilità, benedizioni, mappa del campo). Fallimento: aiuti dimezzati
   (−2 alla Scena 3).
@@ -620,21 +690,31 @@ un PG nano gli chiede chi ha lasciato a Hammerfist — **Diplomazia CD 18**, e
 funziona solo se non l'hanno ancora minacciato.
 
 > **Read-aloud — il primo incontro (dentro la tenda del comando, Scena 3).**
-> *In fondo alla tenda del generale, dove la luce dei bracieri non arriva, c'è
-> un nano seduto su uno sgabello da bottega. Vecchio come una radice. Ha un
-> grembiule di cuoio addosso, e sulle ginocchia una lastra di ardesia che sta
+> **Read-aloud (Andor lead) — 1 di 3, poi FERMATI.** *In fondo alla tenda, dove
+> la luce dei bracieri non arriva, un vecchio è seduto su uno sgabello da
+> bottega. Grembiule di cuoio. Sulle ginocchia una lastra di ardesia che sta
 > incidendo con una punta di ferro, piano, come se fuori non ci fossero
 > diecimila tende e un drago.*
+
+> **2 di 3 — dopo che qualcuno ha reagito.** *Alza la testa. Vi guarda uno per
+> uno, con calma. Quando arriva alla gemma sulla fronte del vostro capo si
+> ferma un istante di troppo. Poi torna a incidere. **Non chiama la guardia.***
+
+> **3 di 3 — solo quando il silenzio diventa scomodo.**
+> **BALVAR (voce da vecchio artigiano, nessuna minaccia, nessuna fretta):**
+> *«Quella corona la finirono con tre gemme. Tu ne hai due.»* — *un colpo di
+> punta sull'ardesia* — *«Quindi non è oggi.»*
 >
-> *Alza la testa quando entrate. E — questa è la cosa che vi gela — **non
-> chiama la guardia**.*
->
-> *Vi guarda uno per uno, con calma, e quando arriva alla Corona sulla fronte
-> del vostro capo si ferma un istante di troppo. Poi torna a incidere.*
->
-> **BALVAR** (voce da vecchio artigiano, nessuna minaccia, nessuna fretta):
-> *«Quella corona la finirono con tre gemme. Tu ne hai due.»* Un colpo di
-> punta sull'ardesia. *«Quindi non è oggi.»*
+> **Che fate?**
+
+⚠️ **Spezzato in tre il 2026-09-18, e non per pignoleria.** Era **un box da 15
+righe**, sopra il tetto di 12 di `read-aloud-adulti.md` §2, e la self-check
+della skill dello stile ha una domanda apposta: *«Did any box grow past the
+ceiling because the prose got interesting? → cut; the ceiling wins»*. Qui la
+prosa **era** diventata interessante, ed è il motivo per cui era cresciuta.
+Spezzandolo in tre beat si guadagna anche una cosa che il box unico non aveva:
+**Balvar aspetta che i PG reagiscano prima di parlare**, e il suo silenzio
+diventa la prima battuta.
 
 ### La cosa che lo rende memorabile: sa da dove venite
 
@@ -716,15 +796,31 @@ Balvar è morto da mille anni comunque vada. Ma:
 > interno. È il capostipite della stirpe di **Fauci di Palude**: ogni ferita che
 > gli infliggete qui, la Forgia la ricorderà mille anni dopo (§7, carry-over B4).
 
-> **Read-aloud (Salvatore — l'ingresso del mostro).** *Il cielo si spezza.
-> **Skullcrusher il Nero** cala come una montagna alata, e l'acido gli sfrigola
-> dalle fauci prima ancora che apra la bocca. Dove atterra, la pietra fuma.
-> Aegis Fang urla nella mente di Thorik — non canta, URLA: «SANGUE ANTICO.
-> ARTEFICE DI LACRIME. IL PRIMO NERO.» E la Corona vi mostra due immagini
-> sovrapposte, tremanti l'una sull'altra: questo drago, adesso — e Fauci di
-> Palude, mille anni nel futuro, sopra le mura di una Hammerfist che brucia. Sono
-> lo stesso sangue. E voi state per insegnare a quel sangue, per la prima volta,
-> che cosa vuol dire aver paura.*
+> **Read-aloud (Salvatore lead).** *Prima arriva il freddo. L'ombra passa e
+> l'aria del cortile perde dieci gradi in un respiro, e la pelle lo sa prima
+> che lo sappiate voi. Poi il rumore: non un ruggito — un **risucchio**, come
+> quando il mare si tira indietro prima di tornare. Le braci della forgia si
+> piegano tutte nella stessa direzione. Un nano vicino a voi lascia cadere lo
+> scudo e non si china a raccoglierlo.*
+>
+> *Dove atterra, la pietra fuma. L'acido gli cola dalle fauci chiuse e si
+> mangia il selciato come acqua nella neve.*
+>
+> **Che fate?**
+
+> 🎚️ **Se e solo se Thorik tiene Aegis Fang in mano** — *un secondo box, corto,
+> e a lui soltanto*: **AEGIS FANG (non canta: urla, dentro il cranio):**
+> *«SANGUE ANTICO. ARTEFICE DI LACRIME.»* — *e per un istante la Corona ti
+> mostra due immagini sovrapposte: questo drago adesso, e un altro drago sopra
+> mura che bruciano, che non hai mai visto.*
+
+⚠️ **Perché è stato spezzato in due** *(2026-09-18)*. Il box unico portava
+**nove nomi propri** e finiva su *«state per insegnare a quel sangue cosa vuol
+dire aver paura»* — che dice ai giocatori cosa stanno per fare, cioè
+**l'esito**. Adesso l'ingresso è **quello che il corpo sente** (freddo, il
+risucchio, le braci che si piegano, lo scudo che cade), la visione è un
+**micro-box per un solo PG** come chiede `ADR-0014` §1, e l'ultima riga è
+**«Che fate?»** invece di una promessa.
 
 ```
 ============================================================
@@ -830,7 +926,35 @@ cambia davvero.
   quell'arma entra nel sangue: Fauci, mille anni dopo, la riconoscerà (gancio
   inverso B4).
 
+### 🏟️ IL CORTILE — cosa c'è, e cosa ci si può fare che qui non è scritto
+
+> **Perché questa tabella esiste.** Il duello aveva la regia, le tattiche del
+> drago e la scalatura, ma **niente sull'arena**: un tavolo che volesse essere
+> furbo non trovava appigli, e restava l'iniziativa. Qui non ci sono soluzioni
+> pronte — ci sono **cose**, e una riga su cosa succede se qualcuno le usa.
+> Per tutto il resto vale il §0-ter: **assorbi, poi rilancia**.
+
+| Nel cortile c'è | Se qualcuno lo usa |
+|---|---|
+| **Le corde degli arieti**, tese e bagnate | tirarle mentre è basso: Lotta contrapposta con **+4** per la leva. Non lo atterra: gli **inchioda un'ala a terra per un round**, ed è tutto quello che serve |
+| **La fucina originale**, accesa da stanotte | ci si può spingere dentro qualcosa. Il drago è **immune all'acido, non al calore della forgia**: 4d6 e — più utile — il fumo gli toglie l'olfatto per 1d4 round |
+| **La cisterna sotto il pozzo** | l'acido colpisce l'acqua e **ribolle**: nuvola che oscura, −4 agli attacchi di tutti. Danneggia i PG quanto lui. È una **scelta**, non un trucco |
+| **Le campane della torre nord** | il suono nell'aria fredda copre il battito d'ali: chi le suona toglie al drago il vantaggio del suono in picchiata (e si fa **bersagliare**) |
+| **Ottocento nani che guardano** | chiamarli è gratis. Arrivano, **e muoiono**: tira sul Registro delle Perdite di ARC-08. Il drago fa un attacco pieno su di loro invece che sui PG. Nessuno lo dice al tavolo prima |
+
+🚫 **Cosa NON dire.** Che la fucina funziona contro di lui. Se lo dici, la
+tabella diventa un elenco di mosse; se aspetti, resta un cortile. Il DM **non
+legge questa tabella ai giocatori**: la tiene sotto gli occhi e risponde.
+
+⚠️ **E se hanno un'idea che non è in tabella**, la risposta è già scritta in
+§0-ter: sì, e adesso c'è un problema nuovo. **Questa tabella è un esempio di
+tono, non l'elenco delle cose permesse.**
+
 ### ► ESITO DEL DUELLO (aperto — MAI fisso) → carry-over B4 (§7)
+
+`[HDYWTDT — il finisher a chi mette a terra il drago. «Com'è che lo fai?», e
+aspetta. È il momento più grosso della campagna finora: non riempirlo tu.]`
+
 1. **UCCISO** (0 pf): impresa immensa, la profezia in pieno. → Fauci nel 1372
    parte con **−10% PF** e Presenza ridotta contro i portatori (B4).
 2. **FERITO GRAVE** (fugge sotto ⅓ pf): esito "medio", il più probabile. →
@@ -895,7 +1019,8 @@ GUARDIE (4): Hobgoblin Guerriero 8 · CA 20 · PF 60 · spadone +14 (2d6+6)
 - **Soglia 30% pf**: combatte disperato, cerca di **portare un PG con sé** nella
   morte (un ultimo Colpo Possente pieno −10/+20).
 - **Sviluppi.** Zog'tar **muore in questa scena** (la storia dice così), ma il
-  COME conta (esito §3). Alla sua morte, l'Occhio di Ossidiana si spegne; il
+  COME conta (esito §3). `[HDYWTDT — il finisher a chi lo abbatte: «com'è che
+  lo fai?», e aspetta. Se non vuole, una riga tua e si va avanti.]` Alla sua morte, l'Occhio di Ossidiana si spegne; il
   campo perde il direttore. *Se catturato/interrogato invece che ucciso*: Moradin
   approva la saggezza pragmatica (nessun tono «nessuna pietà» sul Rubino).
 

@@ -46,6 +46,9 @@
 | `editorial-standards.md` | terminologia canonica (CD non DC, 5e bandito, metri) | 🟢 `validate_modules.py` §BANNED — ma **solo sui 5 master DEF** |
 | `editorial-standards.md` | blockquote **3-10 righe**; max **1-2 MAIUSCOLE** per read-aloud | 🟡 parziale — `--box` usa il tetto **12** di `read-aloud-adulti`; le due fonti non concordano sul minimo e lo script **non sceglie per loro**. Le maiuscole non sono misurate |
 | `style-pillars.md` | *fusion rule*: **un lead, max due support** per scena | 🟢 congegno `PILASTRO dichiarato (lead/support)` — conta la marca, non la conformità |
+| `style-pillars.md` §Mercer | **`[HDYWTDT]`**: al colpo che uccide un boss la narrazione passa al giocatore, e il marcatore **va scritto** nel testo dell'incontro | 🟢 congegno `[HDYWTDT] il finisher al giocatore` — 🔴 era a **zero in tutti e nove gli archi** |
+| `style-pillars.md` §Mercer | **yes-and with teeth**: l'invenzione del giocatore entra nel canone **e** genera una complicazione | 🟡 congegno `assorbi e rilancia (yes-and with teeth)` — conta chi **dichiara** il congegno, non chi lo applica al tavolo: quello lo sa solo il DM |
+| `SKILL.md` §Self-check | **sette domande prima di consegnare**, più il controllo di coerenza | 🟡 cinque delle sette hanno un comando (vedi `AGENTS.md` §quarto obbligo); la **4** (numeri di serie) è giudizio puro, e la **2** è un indicatore |
 | `pc-protagonism.md` | **nessun PG oltre il 40%** delle scene marcate; **≥1 scena** a testa | 🟡 `misura_craft --spotlight` — indicatore: conta le **menzioni del nome**, non le scene marcate, che il repo non marca |
 | `consequence-echoes.md` | **≥1 eco armato** quando la finzione lo consente; **≥2** alla convergenza | 🟡 congegno `eco / conseguenze a distanza` conta le **menzioni**, non gli echi armati e pagati |
 | `passate-redazionali.md` | **massimo una chiusa a effetto** per documento; massimo un tricolon | 🟢 `validate_prosa.py --documenti` (lotto D di PROSA-CHE-NON-SEMBRI-GENERATA) |
@@ -83,12 +86,12 @@
 
 | | Norme registrate |
 |---|---:|
-| 🟢 misurate | 13 |
-| 🟡 misurate in parte, con il limite scritto | 6 |
+| 🟢 misurate | 14 |
+| 🟡 misurate in parte, con il limite scritto | 8 |
 | 🔴 **non misurate, con la ragione scritta** | 11 |
 | ⚪ non applicabili | 2 |
 
-🔴 **Undici norme su trentuno non sono guardate da niente**, e nove delle undici
+🔴 **Undici norme su trentaquattro non sono guardate da niente**, e nove delle undici
 hanno la stessa causa: **i moduli non marcano le cose di cui la norma parla**
 (i nodi d'indagine, la tinta d'arco, le scene di spotlight). Non è un buco di
 codice: è che **la norma presuppone un dato che il testo non porta**. Scrivere

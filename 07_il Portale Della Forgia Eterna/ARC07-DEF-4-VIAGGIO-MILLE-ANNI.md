@@ -33,6 +33,7 @@
 | §1 | **Highlight per PG** | il beat di ciascuno dei QUATTRO (Hella è tornata) |
 | §2 | **Le Zone di Hammerfist ≈372 DR** | Atlante: fortezza, campo dell'orda, mura all'alba |
 | §3 | **Le Scene** (doppia modalità) | Cronache · **arrivo esteso (Durin, Re Thorek, notte, Zeth)** · Infiltrazione+Zog'tar · Mura · Rubino |
+| **§4-quater** | **IL RITUALE DELLA FORGIA ETERNA** | **il Rituale Legacy 4: il Rubino entra, la Corona passa a +3, la Senzienza arriva calda o fredda secondo `DEF-3` §5, e Aegis Fang si sveglia allo Stage 1. Dopo il combattimento, senza costi** |
 | §4-bis | **Zog'tar & PNG antichi** | statblock+tattiche per [COMBATTIMENTO COMPLETO]: Zog'tar, guardie, Durin |
 | **§4-ter** | **BALVAR FUOCOSPENTO** (GS 13) | **il consigliere runaio: sa che i PG vengono dal futuro, e ha incatenato Skullcrusher all'orda** |
 | §4 | **BOSS: Skullcrusher il Nero** | statblock, tattiche round-per-round, scaling, «la Forgia ricorda» |
@@ -975,6 +976,99 @@ aspetta. È il momento più grosso della campagna finora: non riempirlo tu.]`
 
 ---
 
+## §4-quater — IL RITUALE DELLA FORGIA ETERNA `[CANONE — state.md §5; D-B/D-A, DM 2026-09-19]`
+
+> **Cos'è, e perché esisteva solo in `state.md`.** Questo viaggio **è** il
+> **Rituale Legacy 4**, che la matrice degli artefatti chiama *«Siege of the
+> Eternal Forge»*. `state.md` §5 dice che **Corona +3, Senzienza e Rubino si
+> sbloccano qui**. Fino a oggi il master consegnava il duello e basta: il DM
+> tornava dal tavolo a segnare un avanzamento che nel modulo non era successo.
+>
+> ⏱️ **Quando** *(decisione DM)*: **dopo il combattimento**, sull'esito
+> dell'incontro. Non è una prova sotto pressione ed è **senza ulteriori costi** —
+> il prezzo di questo arco Thorik lo ha già versato altrove.
+
+### Il rito si fa comunque. Cambia il tono, non l'esito
+
+Il canone di §6 è esplicito: la fortezza regge perché **la profezia è incisa**.
+Anche un duello andato malissimo finisce con gli antenati che ricacciano il
+drago. Quindi il Rituale **non si fallisce**: si gioca in una delle quattro voci
+che l'incontro ha appena scelto.
+
+| Esito del duello | La voce del rito | La riga che il DM dice |
+|---|---|---|
+| **UCCISO** | trionfo, e un imbarazzo | i nani antichi non sanno se inginocchiarsi o abbracciarli, e provano tutti e due |
+| **FERITO GRAVE** *(il più probabile)* | mestiere | nessuno canta. Si conta chi manca, poi si accende la pietra |
+| **FUGGITO** | sollievo con un'ombra | il drago vi ha visti. Il rito si fa lo stesso, e qualcuno guarda il cielo mentre si fa |
+| **VINTO SPORCO** *(§6, gli avi intervengono)* | misericordia e dovere | siete venuti a salvarli, e vi hanno salvati loro. La pietra si accende uguale, e pesa di più |
+
+### La scena, in tre momenti
+
+> **Read-aloud (LotR lead) — l'incudine.** *Quello che chiamano altare è
+> un'incudine, e si vede: il piano è segnato da mille anni di martelli. Intorno
+> non c'è un tempio, c'è un cortile pieno di feriti. Un nano molto vecchio
+> appoggia sull'incudine una pietra rossa grande come una noce, e si tira
+> indietro di un passo. Nessuno spiega niente. Tutti guardano la corona.*
+
+**Momento 1 — la pietra entra.** Il Rubino trova il suo incasso, quello che per
+tutto l'arco non rifletteva la luce. Non serve un tiro: **la Corona lo prende da
+sé**, come una serratura che riconosce la chiave. La Corona passa a **+3**.
+
+> **Read-aloud (Salvatore) — l'incasso che si chiude.** *Il vuoto sulla corona
+> si riempie e smette di essere un vuoto. Per la prima volta da quando Thorik
+> l'ha in testa, l'oro torna indietro da tutte e tre le pietre, e la luce che ne
+> esce non è di nessuna delle tre: è di quello che adesso sono insieme. Il metallo
+> gli si scalda contro la fronte, poi si raffredda, e resta caldo come una mano.*
+
+**Momento 2 — la Corona parla, o non lo fa.** Qui **si incassa la promessa di
+`ARC07-DEF-3` §5**, e i due rami sono già canone:
+
+| Al rito di DEF-3, Thorik… | La Senzienza arriva | E la prima cosa che dice |
+|---|---|---|
+| **ha donato** il +2 di deflessione | **sveglia**, e con qualcosa da dire su di lui | *«Tre volte hai pagato tu. La terza non te l'ho chiesta io.»* |
+| **ha rifiutato** | **fredda**: i poteri sì, il tono no | una voce corretta e senza calore, che dà informazioni e non commenti. ⚠️ **Reversibile**: si scalda in ARC-09, quando lui rischia qualcosa di suo |
+
+> 🎭 **Grigio politico.** La Corona **non è dalla parte di Thorik**. Il suo
+> *Want* è la montagna, non il portatore: ha accettato tre gemme e un pegno
+> perché le servivano, e lo dirà con la stessa calma con cui dice tutto il resto.
+
+**Momento 3 — Aegis Fang si sveglia** *(decisione DM: è una scena, non una riga
+di scheda)*. `state.md` §5 dice: *«Unchanged until the Siege is won → then Stage
+1 full awakening»*. L'Assedio è questo, ed è appena stato vinto.
+
+> **Read-aloud (Mercer lead) — l'ascia prende la parola.** *L'ascia si scalda
+> nella mano di Thorik, e non è il calore della forgia. È la prima volta in tre
+> anni che si fa sentire senza essere interrogata. Nel cortile nessuno se ne
+> accorge, perché nessuno sta guardando le armi.*
+
+- **AEGIS FANG (Ego 14, servo del popolo nanico prima che del portatore):**
+  *«Ho visto. Non chiedo più.»* — se al rito di DEF-3 Thorik **ha donato**.
+- **AEGIS FANG:** *«Ho visto anche cosa non hai dato.»* — se **ha rifiutato**.
+  L'ascia non lo abbandona: lo **guarda**, e il giudizio finisce la prima volta
+  che lui rischia qualcosa di suo per Hella.
+
+> **`[HDYWTDT]`** Il primo uso dello Stage 1 non lo descrive il DM. Si chiede al
+> giocatore di Thorik: *«L'ascia parla, e per la prima volta non risponde a una
+> domanda. Cosa ti dice, e tu cosa fai con quella frase davanti a ottocento nani
+> che ti stanno guardando?»*
+
+> **Chiusura.** Tre pietre accese, un'ascia che ha appena parlato, e un cortile
+> che non sa ancora di essere una leggenda. **«Che fate?»**
+
+### ⚠️ Due cose per il DM, e una da decidere
+
+- **Il Rubino è a uso singolo e si spende nel ritorno** (D16, `DEF-5` §3). Non
+  è un potere nuovo in tasca: è il motore del viaggio di casa.
+- **Non ci sono altri costi qui** — né TS, né pegni, né punti caratteristica.
+- 🔵 **`[INFERRED — needs DM confirmation]`** La matrice degli artefatti
+  attribuisce al Rituale 4 anche *«buff forza/coraggio 1/settimana»* e
+  *«Mantle of Stone and Spirit»*; ma `state.md` dà il **Mantle già al Rituale
+  3**. La riga della matrice sembra una mappatura vecchia. **Qui non ho scritto
+  nessuno dei due**: se il buff 1/settimana è canone, va aggiunto e la matrice
+  va allineata.
+
+---
+
 ## §4-bis — ZOG'TAR DEATHEYE & PNG antichi (per [COMBATTIMENTO COMPLETO])
 
 > Statblock e tattiche per chi gioca l'infiltrazione + boss su griglia (§3
@@ -1176,6 +1270,9 @@ con un **terrore reverenziale mal mascherato**.
 | **Seme del Ghostlord** (§1-bis, incontro con Zeth) | i PG assistono all'inizio della Lichificazione di Zeth (mano del Collezionista attraverso il tempo) | ARC-09 (dilemma etico di Hella su Zeth il Murato) | **state.md §7** + `Bestiario/villain/Ghostlord/` |
 | **Scelte-costo vs Zog'tar** (§4-bis) | Thorik affaticato / Cintura di Tordek «assaggiata» o disciplinata / tono del Rubino | ARC-08 (vs Fauci) | §4-bis + B4 |
 | **Tono del Rubino** (esito duello) | «nessuna pietà» (UCCISO) / «dovere» (FERITO) / «vigile» (FUGGITO) → colore della Corona in ARC-08 | ARC-08 ingresso | `ARC07-CONSEGUENZE-ECHI.md` §2 |
+| **La Senzienza arriva calda o fredda** (§4-quater) | il ramo lo ha deciso `DEF-3` §5: se Thorik ha donato il +2 di deflessione la Corona **commenta**, se ha rifiutato **informa e basta**. ⚠️ Il freddo e' **reversibile** | ARC-08 e ARC-09, ogni volta che la Corona parla | `state.md` §5 · `ARC07-CONSEGUENZE-ECHI.md` |
+| **Aegis Fang allo Stage 1** (§4-quater) | l'ascia ha smesso di interrogare Thorik — **oppure** lo giudica, e il giudizio finisce la prima volta che lui rischia qualcosa di suo per Hella | ARC-08, alla prima scena che riguarda Hella o nani da proteggere | `Bestiario/` scheda Aegis Fang + `state.md` §5 |
+| **La prima frase dell'ascia, detta dal giocatore** (`[HDYWTDT]`, §4-quater) | quella frase e' canone: ottocento nani l'hanno sentita, e a Hammerfist qualcuno la **ripetera' storta** | ARC-08, arrivo al Cuore della Montagna | `ARC07-CONSEGUENZE-ECHI.md` |
 | **Cronache dei Quattro Eroi compiute** | fama crescente presso i nani → Custodi Eterni | ARC-08 E5 / Cerimonia 100 Asce | ARC-08 |
 | **Sigillo di Ossidiana** (se rubato a Vatore) | artefatto di Shar (anti-luce / furto d'ombra, divora anime) — vedi §5 Artefatto; contrasta l'Anello di Artemis | ARC-09 | `state.md §7 [SIGILLO DI OSSIDIANA]` + `Bestiario/villain/Salvatore/` |
 

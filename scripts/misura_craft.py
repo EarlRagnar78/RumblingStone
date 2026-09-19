@@ -260,6 +260,82 @@ _ETICHETTA = re.compile(r"\*\*Read-aloud[^*\n]*\*\*", re.I)
 
 _NOME = re.compile(r"(?<![.!?»\n]\s)(?<!^)\b([A-ZÀ-Ù][a-zà-ù']{2,})")
 
+#: 🔴 Nono difetto della stessa famiglia, trovato il 2026-09-19 misurando la
+#: riscrittura di DEF-4. `_NOME` prova a escludere le maiuscole d'inizio frase
+#: con due lookbehind, ma nel testo di un box **non ci arriva mai**: il
+#: prefisso `> `, l'asterisco del corsivo e l'etichetta si frappongono fra il
+#: punto e la maiuscola. Risultato: «Conoscete», «Quando», «Prima», «Dove»,
+#: «Che», «Non», «Tra», «Notte» contati come nomi propri — e **nove box su
+#: quattordici** di DEF-4 dichiarati fuori norma quando i veri erano **uno**.
+#: Lo stesso numero l'avevo pubblicato per DEF-3 (13 su 16) e nel corpo della
+#: PR #151. La cura non e' un elenco di eccezioni — sarebbe il metro tarato su
+#: un campione, di nuovo — ma **normalizzare prima di cercare**: via i
+#: marcatori, poi si guarda solo dentro le frasi, mai la loro prima parola.
+_APERTURE = re.compile(r"^>\s*|[*_`]", re.M)
+_FINE_FRASE = re.compile(r"(?<=[.!?…»])\s+")
+
+
+def _registro_dei_nomi() -> "set[str]":
+    """I nomi propri della campagna, **presi dai dati del repo**.
+
+    🔴 **Perche' non una regex, e perche' non una lista scritta a mano.** Per
+    tre giri ho provato a distinguere un nome proprio da una maiuscola di
+    frase con la posizione: escludere la prima parola, poi recuperarla se il
+    documento la usa anche a meta' frase. Ogni patch spostava l'errore —
+    «Quei», «Nessun», «Silenzio» passavano perche' in italiano una maiuscola
+    segue anche un trattino, i due punti e l'apertura di un dialogo.
+
+    Una regex **non puo'** fare questa distinzione, e una lista che scrivo io
+    sarebbe il metro tarato sul campione per la decima volta. Ma il repo un
+    registro ce l'ha gia': i nomi dei file del **Bestiario** e la prima colonna
+    delle tabelle di **`state.md`** — attori, artefatti, luoghi. Si legge da li'.
+
+    ⚠️ **Tre limiti, dichiarati.**
+
+    1. Un nome che non sta ne' nel Bestiario ne' in `state.md` non si vede. E'
+       il prezzo giusto: quel nome, al tavolo, non e' ancora canone.
+    2. Un nome di **piu' parole** si conta a pezzi — «Mano Rossa» e «Cuore
+       della Leggenda» valgono due. Il conteggio e' quindi **prudente al
+       rialzo**: segnala piu' di quanto serva, mai meno.
+    3. 🔴 **Il piu' importante.** La norma di `read-aloud-adulti.md` §1 dice
+       «un solo nome proprio **NUOVO** per box», e *nuovo* dipende da cosa il
+       tavolo ha gia' incontrato, cioe' dall'ordine di lettura. Questo metro
+       conta i nomi **distinti**, non i nuovi: e' un **indizio**, non il
+       verdetto. Un box con tre nomi tutti noti da sei sessioni non viola
+       niente, e il giudizio resta di chi scrive.
+    """
+    nomi: "set[str]" = set()
+    bestiario = ROOT / "Bestiario"
+    if bestiario.exists():
+        for f in bestiario.rglob("*"):
+            for parte in re.split(r"[/_\-. ]", f.stem):
+                if _PAROLA_MAIUSCOLA.fullmatch(parte):
+                    nomi.add(parte)
+    stato = ROOT / "campaign" / "state.md"
+    if stato.exists():
+        for riga in stato.read_text(encoding="utf-8").splitlines():
+            if not riga.startswith("|"):
+                continue
+            prima = riga.strip("|").split("|")[0].strip().strip("*[]`")
+            for parte in prima.split():
+                if _PAROLA_MAIUSCOLA.fullmatch(parte):
+                    nomi.add(parte)
+    return nomi
+
+
+_PAROLA_MAIUSCOLA = re.compile(r"[A-ZÀ-Ù][a-zà-ù']{2,}")
+_REGISTRO: "set[str] | None" = None
+
+
+def nomi_propri(corpo: str) -> "set[str]":
+    """I nomi propri di un box: le parole che stanno nel registro del repo."""
+    global _REGISTRO
+    if _REGISTRO is None:
+        _REGISTRO = _registro_dei_nomi()
+    piano = _APERTURE.sub("", _ETICHETTA.sub("", corpo))
+    return {w.strip("«»\"'()[],;:.!?—-") for w in piano.split()
+            if w.strip("«»\"'()[],;:.!?—-") in _REGISTRO}
+
 
 def difetti_dei_box(testo: str) -> "dict[str, int]":
     """Quante volte i box violano le soglie dichiarate.
@@ -279,7 +355,7 @@ def difetti_dei_box(testo: str) -> "dict[str, int]":
         corpo = _ETICHETTA.sub("", " ".join(b))
         if "(" in corpo:
             parentesi += 1
-        if len(set(_NOME.findall(corpo))) > 1:
+        if len(nomi_propri(corpo)) > 1:
             nomi += 1
     return {"box": len(box_read_aloud(testo)), "oltre 12 righe": lunghi,
             "con parentesi": parentesi, ">1 nome proprio": nomi}

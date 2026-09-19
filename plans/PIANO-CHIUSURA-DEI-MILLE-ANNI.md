@@ -34,7 +34,7 @@ Misurato su `ARC07-DEF-4` (1.325 righe):
 
 ---
 
-## 1 · I cinque buchi, misurati
+## 1 · I cinque buchi, misurati — **quattro chiusi, uno era del metro**
 
 ### 🔴 G1 — Il Rituale 4 non ha un nome nel posto dove si gioca
 
@@ -115,19 +115,38 @@ COS»*. `state.md` e DEF-3 furono aggiornati; **i file a valle no**.
 ⚠️ **Non è un refuso, è un costo permanente su un PG** che tre documenti
 attribuiscono e uno nega. Un DM che prepara DEF-5 applica −2 COS a Thorik.
 
-### 🟡 G4 — Il mestiere: quello che la riscrittura di ieri ha lasciato
+### 🟢 G4 — Il mestiere: **il difetto era nel metro, non nei box**
 
-| | DEF-4 oggi |
+> 🔴 **CORREZIONE (2026-09-19, M2.5).** Avevo pubblicato «**9 box su 14** con
+> più di un nome proprio» per DEF-4, «**13 su 16**» per DEF-3, e la stessa
+> cifra nel corpo della PR #151. **Erano gonfiate fino a tre volte.**
+>
+> Il rilevatore contava come nomi propri le **maiuscole d'inizio frase** —
+> «Conoscete», «Quando», «Prima», «Notte», «Quei», «Nessun», «Silenzio» —
+> perché i due lookbehind che dovevano escluderle non arrivavano mai al testo:
+> il prefisso `>`, l'asterisco del corsivo e l'etichetta si frappongono fra il
+> punto e la maiuscola.
+>
+> **Tre patch di posizione hanno solo spostato l'errore**, perché in italiano
+> una maiuscola segue anche il trattino, i due punti e l'apertura di un
+> dialogo. La cura non è una regex più furba né una lista scritta da me: è il
+> **registro che il repo già possiede** — i nomi dei file del `Bestiario` e la
+> prima colonna delle tabelle di `state.md`. **322 nomi**, presi dai dati.
+
+| | DEF-4, col metro corretto |
 |---|---:|
-| box read-aloud etichettati | 14 |
+| box read-aloud | 18 |
 | **oltre le 12 righe** | **0** 🟢 |
 | con parentesi | 2 🟡 |
-| **con più di un nome proprio** | **9** 🔴 |
-| box che presuppongono un'azione del giocatore (norma *Dungeon*) | 2 su 41 🟢 |
+| **con più di un nome proprio** | **3** *(non 9)* |
+| box che presuppongono un'azione del giocatore (*Dungeon*) | 2 su 41 🟢 |
 
-Nove box su quattordici restano il difetto che la riscrittura di ieri **ha
-dichiarato e non ha chiuso**. Va detto che è il più costoso da correggere:
-richiede riscrivere prosa buona, non aggiungere apparato.
+🔎 **E i tre non sono violazioni.** Sono *«Mano Rossa»* + *«Skullcrusher»*
+dentro la profezia incisa, *«Cuore della Leggenda»* + *«Hammerfist»*, e
+*«Anello»* + *«Artemis»*: due su tre sono **un nome solo spezzato in due
+parole**, e tutti sono nomi **noti da sei sessioni**. La norma dice «un solo
+nome proprio **NUOVO**», e *nuovo* dipende dall'ordine di lettura: una
+macchina non lo sa, e il metro ora lo **dichiara**.
 
 ---
 
@@ -164,12 +183,12 @@ facile il successivo**.
 | | Lotto | Cosa fa | Perché qui |
 |---|---|---|---|
 | ✅ | **M2.0** 🔴 **Le sei righe «−2 COS»** *(chiuso 2026-09-19, D-D confermata)* | allineare `ARC07-00-INDICE`, `DEF-4` r.318 e `DEF-5` (4 punti) a `state.md` — con la ragione scritta e il rimando al commit `d4eea53` | **primo, e prima di scrivere qualunque riga nuova**: lasciare una contraddizione viva dentro il file che sto per ampliare vuol dire rischiare di ripeterla |
-| ⬜ | **M2.1** §4-quater «Il Rituale della Forgia Eterna» | la scena in cui il Rubino entra nella Corona **durante o dopo il duello**, col nome canonico, e la Corona passa a **+3** | è il buco G1, ed è il pezzo che tutti gli altri presuppongono |
-| ⬜ | **M2.2** Il bivio della Senzienza | dentro M2.1: **due rami scritti**, «Thorik ha donato» e «Thorik non ha donato», con cosa cambia **al tavolo** in entrambi | senza, M2.1 vale per metà dei tavoli |
-| ⬜ | **M2.3** Il risveglio di **Aegis Fang** *(riscritto dopo la correzione di G2)* | vincere l'Assedio porta l'ascia allo **Stage 1**: il master lo deve **consegnare**, non lasciarlo a `state.md`. E l'Ego 14 ha una cosa da dire su Thorik, diversa nei due rami di DEF-3 §5 | è l'altro avanzamento che il canone attribuisce a questo viaggio e che il modulo non nomina |
+| ✅ | **M2.1** §4-quater «Il Rituale della Forgia Eterna» | la scena in cui il Rubino entra nella Corona **durante o dopo il duello**, col nome canonico, e la Corona passa a **+3** | è il buco G1, ed è il pezzo che tutti gli altri presuppongono |
+| ✅ | **M2.2** Il bivio della Senzienza | dentro M2.1: **due rami scritti**, «Thorik ha donato» e «Thorik non ha donato», con cosa cambia **al tavolo** in entrambi | senza, M2.1 vale per metà dei tavoli |
+| ✅ | **M2.3** Il risveglio di **Aegis Fang** *(riscritto dopo la correzione di G2)* | vincere l'Assedio porta l'ascia allo **Stage 1**: il master lo deve **consegnare**, non lasciarlo a `state.md`. E l'Ego 14 ha una cosa da dire su Thorik, diversa nei due rami di DEF-3 §5 | è l'altro avanzamento che il canone attribuisce a questo viaggio e che il modulo non nomina |
 | ⬜ | **M2.4** Cucitura D16 | correggere ciò che M1.4 trova | dopo M2.1, perché il Rituale cambia cosa arriva a DEF-5 |
-| ⬜ | **M2.5** I nove box | riscrivere i box con più di un nome proprio, **uno alla volta, tenendo il migliore** | ultimo: è l'unico lotto che tocca prosa già buona, e va fatto quando il resto è fermo |
-| ⬜ | **M2.6** Echo Ledger | le conseguenze nuove in `state.md` §7.E e in `ARC07-CONSEGUENZE-ECHI.md` | la regola: un'eco che non è nel registro non riemerge |
+| ✅ | **M2.5** ~~I nove box~~ → **verificato: non ha senso riscriverli** *(D-C, 2026-09-19)* | la verifica che il DM ha chiesto ha trovato che i nove erano **tre**, e che i tre non violano la norma. Il lotto si chiude **correggendo il metro**, non la prosa | il guadagno misurato è zero: riscrivere prosa buona per inseguire un numero sbagliato sarebbe stato il danno |
+| ✅ | **M2.6** Echo Ledger | le conseguenze nuove in `state.md` §7.E e in `ARC07-CONSEGUENZE-ECHI.md` | la regola: un'eco che non è nel registro non riemerge |
 
 ## FASE 3 — Validazione
 
@@ -217,7 +236,7 @@ l'apparato è fermo permette di misurare **solo** l'effetto della prosa.
 |---|---|---|
 | ✅ | **D-A** — il risveglio Stage 1 di **Aegis Fang** si gioca **come scena** | **decisa dal DM 2026-09-19** |
 | ✅ | **D-B** — Il Rituale 4 si gioca **DOPO il combattimento**, all'esito dell'incontro, e **senza ulteriori costi** | **decisa dal DM 2026-09-19** |
-| 🟡 | **D-C** — I nove box: **prima si verifica se riscriverli migliora davvero**, e solo allora si procede | **condizionata dal DM 2026-09-19**: serve una prova su un campione prima di toccare i nove |
+| ✅ | **D-C** — verificato: **non si riscrivono** | i nove erano **tre**, e i tre sono nomi noti o un nome spezzato in due parole. Il difetto stava nel metro, ed è corretto |
 | ✅ | **D-D** — allineare i tre master a `state.md` (**niente −2 COS**) | **confermata dal DM 2026-09-19** → M2.0 chiuso |
 
 ---

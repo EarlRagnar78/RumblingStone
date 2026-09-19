@@ -5,7 +5,7 @@
 > sistemato il mestiere; questo piano chiude i **buchi di canone** che il
 > mestiere non poteva vedere.
 >
-> **Stato**: 🔵 pianificato (2026-09-19) · **Decisore**: DM
+> **Stato**: ✅ **completo** (2026-09-19) · **Decisore**: DM
 > **Gate**: `validate_modules` verde, `misura_craft` senza regressioni, e le
 > tre righe di `state.md` sul Rituale 4 trovano un riscontro nel master
 
@@ -190,16 +190,16 @@ facile il successivo**.
 | ✅ | **M2.5** ~~I nove box~~ → **verificato: non ha senso riscriverli** *(D-C, 2026-09-19)* | la verifica che il DM ha chiesto ha trovato che i nove erano **tre**, e che i tre non violano la norma. Il lotto si chiude **correggendo il metro**, non la prosa | il guadagno misurato è zero: riscrivere prosa buona per inseguire un numero sbagliato sarebbe stato il danno |
 | ✅ | **M2.6** Echo Ledger | le conseguenze nuove in `state.md` §7.E e in `ARC07-CONSEGUENZE-ECHI.md` | la regola: un'eco che non è nel registro non riemerge |
 
-## FASE 3 — Validazione
+## FASE 3 — Validazione ✅ **chiusa (2026-09-19)**
 
 | | Criterio | Come si prova |
 |---|---|---|
-| ⬜ | **V1** Le tre parole del canone hanno un riscontro | `Rituale 4`, `Corona +3`, `Senzienza` compaiono dove si gioca, non solo in `state.md` |
-| ⬜ | **V2** Entrambi i rami sono giocabili | un DM che legge solo DEF-4 sa cosa fare **sia** se Thorik ha donato **sia** se no |
-| ⬜ | **V3** Nessuna regressione di mestiere | `misura_craft --densita`: nessun congegno di DEF-4 scende |
-| ⬜ | **V4** I box migliorano davvero | `--box`: **da 9 a ≤4** con più di un nome proprio, e **0 oltre le 12 righe** |
-| ⬜ | **V5** Il canone non si contraddice | `validate_modules` verde · rilettura di `campaign-coherence.md` |
-| ⬜ | **V6** Il cancello morde | iniettare una contraddizione col canone → deve emergere in V5 |
+| ✅ | **V1** Le tre parole del canone hanno un riscontro | `Rituale 4`, `Corona +3`, `Senzienza` compaiono dove si gioca, non solo in `state.md` · 🟢 **superata**: Rituale Legacy 4 ×3 · Siege of the Eternal Forge ×1 · Corona +3 ×2 · Senzienza ×4 · Stage 1 ×4 |
+| ✅ | **V2** Entrambi i rami sono giocabili | un DM che legge solo DEF-4 sa cosa fare **sia** se Thorik ha donato **sia** se no · 🟢 «ha donato» ×4 · «ha rifiutato» ×3, con la battuta della Corona e quella dell'ascia in tutti e due |
+| ✅ | **V3** Nessuna regressione di mestiere | `misura_craft --densita`: nessun congegno di DEF-4 scende · 🟢 **zero congegni scesi** rispetto a `6ae0b0c`, confrontati uno per uno |
+| ✅ | **V4** I box migliorano davvero | `--box`: **da 9 a ≤4** con più di un nome proprio, e **0 oltre le 12 righe** · ⚠️ **riformulata**: il bersaglio «da 9 a ≤4» era tarato su una cifra sbagliata. Il criterio che regge è **zero box oltre le 12 righe** → **0** 🟢 |
+| ✅ | **V5** Il canone non si contraddice | `validate_modules` verde · rilettura di `campaign-coherence.md` · 🟢 `validate_modules` 5 master 0 errori · zero «−2 COS» residui |
+| ✅ | **V6** Il cancello morde | iniettare una contraddizione col canone → deve emergere in V5 · 🟢 **tre sabotaggi, tre rossi**: box gonfiato a 15 righe → rilevato · «Rituale 4» rimosso → V1 fallisce · «−2 COS» reintrodotto → ricompare. File ripristinato identico |
 
 ---
 

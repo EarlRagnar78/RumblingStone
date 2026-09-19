@@ -34,7 +34,7 @@ Misurato su `ARC07-DEF-4` (1.325 righe):
 
 ---
 
-## 1 · I quattro buchi, misurati
+## 1 · I cinque buchi, misurati
 
 ### 🔴 G1 — Il Rituale 4 non ha un nome nel posto dove si gioca
 
@@ -85,12 +85,35 @@ sveglierà avendo già una cosa da dire su di lui»*, oppure *«arriva fredda»*
 e DEF-4 **non la incassa**. Il bivio esiste già nel canone; manca il posto
 dove si paga.
 
-### 🟡 G3 — La cucitura del ritorno
+### 🟢 G3 — La cucitura del ritorno: **verificata, regge**
 
-Il Rubino *«si consuma nel ritorno al 1372»*, raccordo **D16**. DEF-4 lo cita 5
-volte, DEF-5 due. La cucitura probabilmente regge, ma **non è stata verificata
-riga per riga** — e le due volte che ho dato per buona una cucitura in questa
-campagna, non lo era.
+Il Rubino **si accende** a −1.000 alla vittoria (DEF-4 §636-638) e **si
+consuma** nel ritorno al 1372 (DEF-5 §3). I quattro riemergono al **Cuore
+della Montagna, Giorno 3 dell'assedio**: DEF-4 §9 e l'apertura di DEF-5 dicono
+la stessa cosa con le stesse parole. La scala mappa di CM-1 eredita
+dichiaratamente i 3 m della geometria ARC-08. **Nessuna contraddizione.**
+
+### 🔴 G5 — «−2 COS»: sei righe che il canone ha smentito, e nessuno le ha tolte
+
+🔎 **Trovato da M1.4, cercando altro.** `state.md` riga 93 dice, in grassetto e
+con l'avviso: **«⚠️ Nessun −2 COS.»** Thorik ha **+2 COS** dal rito dello
+Smeraldo, e il costo della resurrezione **non è ancora versato**.
+
+Tre master d'arco dicono il contrario, in **sei punti**:
+
+| File | Dove | Cosa dice |
+|---|---|---|
+| `ARC07-00-INDICE.md` | r. 41 | «Thorik **−2 COS**» nel canone in uscita |
+| `ARC07-DEF-4` | r. 318 | «Cosa NON guarisce: i **−2 COS permanenti** di Thorik» |
+| `ARC07-DEF-5` | r. 26 · 92 · 127 · 370 | quattro volte, incluso il **canone in uscita** dell'arco |
+
+**Chi è più recente**: `git log -S` dice che «Nessun −2 COS» è entrato in
+`state.md` il **2026-09-12** col commit `d4eea53` — il redesign dei **Doni v2**,
+quello il cui titolo di lotto era testualmente *«3 scelte per PG, niente −2
+COS»*. `state.md` e DEF-3 furono aggiornati; **i file a valle no**.
+
+⚠️ **Non è un refuso, è un costo permanente su un PG** che tre documenti
+attribuiscono e uno nega. Un DM che prepara DEF-5 applica −2 COS a Thorik.
 
 ### 🟡 G4 — Il mestiere: quello che la riscrittura di ieri ha lasciato
 
@@ -123,14 +146,14 @@ richiede riscrivere prosa buona, non aggiungere apparato.
 
 ---
 
-## FASE 1 — Audit / accertamento
+## FASE 1 — Audit / accertamento ✅ **chiusa**
 
 | | Lotto | Cosa produce | Come si verifica |
 |---|---|---|---|
 | ✅ | **M1.1** Copertura del canone dei −1.000 | la tabella di §0 | fatta: 3 parole su 6 a zero |
 | ✅ | **M1.2** Stato del mestiere di DEF-4 | la tabella di G4 | fatta |
 | ✅ | **M1.3** Il ramo Senzienza, tracciato su tre archi — **ha trovato l'errore di G2** | dove la scelta si fa (DEF-3 §5), dove si paga (DEF-4), dove rimbalza (ARC-09 + Aegis Fang) | ogni passaggio o esiste in un file o è un buco elencato |
-| ⬜ | **M1.4** La cucitura D16 riga per riga | DEF-4 §9 ↔ DEF-5 §apertura: chi consuma il Rubino, dove atterrano, in che giorno | 🔴 nessuna contraddizione, o la si scrive |
+| ✅ | **M1.4** La cucitura D16 riga per riga | 🟢 **regge** (G3) — ma cercando ha trovato **G5**: sei «−2 COS» che `state.md` smentisce | fatta |
 | ✅ | **M1.5** `ARC07-CONSEGUENZE-ECHI.md` conosce il bivio? | **no**: Senzienza 0 · deflessione 0 · Rituale 4 0 · Corona +3 0 · Aegis Fang 1 | misurato |
 
 ## FASE 2 — Sviluppo
@@ -140,6 +163,7 @@ facile il successivo**.
 
 | | Lotto | Cosa fa | Perché qui |
 |---|---|---|---|
+| ⬜ | **M2.0** 🔴 **Le sei righe «−2 COS»** | allineare `ARC07-00-INDICE`, `DEF-4` r.318 e `DEF-5` (4 punti) a `state.md` — con la ragione scritta e il rimando al commit `d4eea53` | **primo, e prima di scrivere qualunque riga nuova**: lasciare una contraddizione viva dentro il file che sto per ampliare vuol dire rischiare di ripeterla |
 | ⬜ | **M2.1** §4-quater «Il Rituale della Forgia Eterna» | la scena in cui il Rubino entra nella Corona **durante o dopo il duello**, col nome canonico, e la Corona passa a **+3** | è il buco G1, ed è il pezzo che tutti gli altri presuppongono |
 | ⬜ | **M2.2** Il bivio della Senzienza | dentro M2.1: **due rami scritti**, «Thorik ha donato» e «Thorik non ha donato», con cosa cambia **al tavolo** in entrambi | senza, M2.1 vale per metà dei tavoli |
 | ⬜ | **M2.3** Il risveglio di **Aegis Fang** *(riscritto dopo la correzione di G2)* | vincere l'Assedio porta l'ascia allo **Stage 1**: il master lo deve **consegnare**, non lasciarlo a `state.md`. E l'Ego 14 ha una cosa da dire su Thorik, diversa nei due rami di DEF-3 §5 | è l'altro avanzamento che il canone attribuisce a questo viaggio e che il modulo non nomina |
@@ -162,9 +186,11 @@ facile il successivo**.
 
 ## 3 · L'ordine che propongo, e perché
 
-1. **M1.3 + M1.4 + M1.5** — un solo giro di lettura, mezz'ora. Senza sapere
-   dove il ramo Senzienza tocca terra, M2.2 si scrive al buio.
-2. **M2.1 → M2.2 → M2.3** — un commit solo: sono la stessa scena.
+1. ✅ **FASE 1 chiusa.** Ha prodotto due cose che nessuno cercava: la
+   **correzione di G2** e il ritrovamento di **G5**.
+2. **M2.0** — le sei righe «−2 COS», da sole e per prime. È igiene di canone,
+   non richiede decisioni, e va fatta prima di ampliare quei file.
+3. **M2.1 → M2.2 → M2.3** — un commit solo: sono la stessa scena.
 3. **M2.4** — piccolo, e chiude l'arco verso DEF-5.
 4. **M2.6** — le eco, mentre il contenuto è fresco.
 5. **M2.5** — i nove box, per ultimo e **da solo**, perché è l'unico lotto in
@@ -192,6 +218,7 @@ l'apparato è fermo permette di misurare **solo** l'effetto della prosa.
 | 🔵 | **D-A** *(riscritta dopo la correzione di G2)* — il risveglio Stage 1 di **Aegis Fang** si gioca **dentro** DEF-4, come scena, o si registra soltanto in `state.md` a fine arco? | è il grado di un artefatto di un PG: farne una scena o un aggiornamento di scheda è una scelta di peso narrativo |
 | 🔵 | **D-B** — Il Rituale 4 si gioca **durante** il duello (sotto pressione) o **dopo** (come rito)? | cambia il tono della scena finale dell'arco |
 | 🔵 | **D-C** — I nove box: si riscrivono, o il difetto si accetta e si registra? | costa prosa buona, ed è una scelta di gusto |
+| 🟢 | **D-D** — G5: confermi che si allineano i tre master a `state.md` (**niente −2 COS**)? | è un costo permanente su un PG. La direzione è chiara — `state.md` è più recente e la regola 7 lo rende la fonte — ma tocca la scheda di Thorik, e preferisco un tuo sì |
 
 ---
 

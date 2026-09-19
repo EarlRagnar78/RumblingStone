@@ -23,7 +23,7 @@
 > **Stato al tavolo**: si gioca **subito dopo** la vittoria del −1000 (master
 > #4). Chiude l'ARC-07 e apre l'**ARC-08** (Battaglia di Hammerfist).
 > **Canone in uscita** (fonte stabile `state.md §1/§6`, D8): Corona **3 gemme
-> accese**; **Cuore di Moradin SPESO**; **Thorik −2 COS** permanente; **Hella
+> accese**; **Cuore di Moradin SPESO**; **Thorik −4 DES / +2 COS / +4 CAR** permanenti (**−1 CA** in più se ha donato al rito); **Hella
 > viva** (Ibrido Treant, Collana, Durik); party **APL 13**.
 
 ---
@@ -89,7 +89,7 @@ stato d'arco); la mappa **CM-1**; l'handout **«Lo Stato dei Custodi»** (§9).
 ### Lo stato dell'ARC-07 in uscita (canone — `state.md §1/§6`)
 - **Corona di Adamantio**: **3 gemme accese** (Topazio/Tempo, Smeraldo/Terra, Rubino/Leggenda). Il Rubino è ora **single-use SPESO** (motore del ritorno).
 - **Cuore di Moradin**: **SPESO** (resurrezione).
-- **Thorik**: **−2 COS** permanente. **Hella**: viva (Ibrido Treant, Collana, Durik). **Bracieri** completi. **Ring** riforgiato.
+- **Thorik**: **−4 DES / +2 COS / +4 CAR** permanenti; **−1 CA** se ha donato il +2 di deflessione al rito. **Hella**: viva (Ibrido Treant, Collana, Durik). **Bracieri** completi. **Ring** riforgiato.
 - **Carry-over B4** verso Fauci: registrato al master #4 (esito Skullcrusher + N ferite).
 - **Countdown**: siete arrivati al **Giorno 3** (≈ March Clock Day 18-19): il **sync** con l'ARC-08. Valore preciso in consegna, secondo il registro dei riposi (`ARC07-DEF-2` §0-bis): **≈ 3g 03h** se hanno dormito prima di Terros, **≈ 3g 15h** se no. Il viaggio a −1.000 **non consuma orologio** (il Rubino riporta all'istante di partenza).
 
@@ -124,8 +124,10 @@ Il ramo cambia **come si apre** la Battaglia di Hammerfist, non se si vince.
 ### 🛡️ THORIK — la profezia chiusa (Casa di Davide lead)
 - Torna con la **Corona completa** (3 gemme) e con la certezza, incisa nelle
   ossa, di **essere** ciò che le Cronache promettevano. Non porta più un mito:
-  **è** il mito. Ma paga: −2 COS permanente, e il peso di un drago che ora, nel
-  presente, lo aspetta (Fauci → ARC-08).
+  **è** il mito. Ma ha pagato in Destrezza — **quattro punti**, fra la Corona e il
+  rito dello Smeraldo — e nessuno al tavolo se n'è accorto, perché lo elogiano
+  per il Peso che regge e non per la velocità che ha venduto. Più il peso di un
+  drago che ora, nel presente, lo aspetta (Fauci → ARC-08).
 - Aegis Fang, all'arrivo, **sente Fauci sopra** (*«sangue Skullcrusher chiama»*):
   è il gancio inverso del carry-over B4 che si arma per Hammerfist.
 
@@ -367,7 +369,8 @@ avete fatto nel passato presenterà il conto.*
 
 ### Handout giocatore
 1. **«Lo Stato dei Custodi»** — riepilogo di cosa portano nell'ARC-08: Corona 3
-   gemme (poteri), artefatti al massimo stato, i costi pagati (Thorik −2 COS), il
+   gemme (poteri), artefatti al massimo stato, i costi pagati (Thorik **−4 DES**, e **−1 CA** se ha
+   donato al rito), il
    carry-over vs Fauci. Da consegnare a chiusura d'arco.
 2. **La tavola dell'Affresco A8** (master #2) al 60→80%: la leggenda quasi
    completa, che l'ARC-08 porterà al 100%.

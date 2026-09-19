@@ -163,7 +163,7 @@ facile il successivo**.
 
 | | Lotto | Cosa fa | Perché qui |
 |---|---|---|---|
-| ⬜ | **M2.0** 🔴 **Le sei righe «−2 COS»** | allineare `ARC07-00-INDICE`, `DEF-4` r.318 e `DEF-5` (4 punti) a `state.md` — con la ragione scritta e il rimando al commit `d4eea53` | **primo, e prima di scrivere qualunque riga nuova**: lasciare una contraddizione viva dentro il file che sto per ampliare vuol dire rischiare di ripeterla |
+| ✅ | **M2.0** 🔴 **Le sei righe «−2 COS»** *(chiuso 2026-09-19, D-D confermata)* | allineare `ARC07-00-INDICE`, `DEF-4` r.318 e `DEF-5` (4 punti) a `state.md` — con la ragione scritta e il rimando al commit `d4eea53` | **primo, e prima di scrivere qualunque riga nuova**: lasciare una contraddizione viva dentro il file che sto per ampliare vuol dire rischiare di ripeterla |
 | ⬜ | **M2.1** §4-quater «Il Rituale della Forgia Eterna» | la scena in cui il Rubino entra nella Corona **durante o dopo il duello**, col nome canonico, e la Corona passa a **+3** | è il buco G1, ed è il pezzo che tutti gli altri presuppongono |
 | ⬜ | **M2.2** Il bivio della Senzienza | dentro M2.1: **due rami scritti**, «Thorik ha donato» e «Thorik non ha donato», con cosa cambia **al tavolo** in entrambi | senza, M2.1 vale per metà dei tavoli |
 | ⬜ | **M2.3** Il risveglio di **Aegis Fang** *(riscritto dopo la correzione di G2)* | vincere l'Assedio porta l'ascia allo **Stage 1**: il master lo deve **consegnare**, non lasciarlo a `state.md`. E l'Ego 14 ha una cosa da dire su Thorik, diversa nei due rami di DEF-3 §5 | è l'altro avanzamento che il canone attribuisce a questo viaggio e che il modulo non nomina |
@@ -215,10 +215,10 @@ l'apparato è fermo permette di misurare **solo** l'effetto della prosa.
 
 | | Decisione | Perché serve il DM |
 |---|---|---|
-| 🔵 | **D-A** *(riscritta dopo la correzione di G2)* — il risveglio Stage 1 di **Aegis Fang** si gioca **dentro** DEF-4, come scena, o si registra soltanto in `state.md` a fine arco? | è il grado di un artefatto di un PG: farne una scena o un aggiornamento di scheda è una scelta di peso narrativo |
-| 🔵 | **D-B** — Il Rituale 4 si gioca **durante** il duello (sotto pressione) o **dopo** (come rito)? | cambia il tono della scena finale dell'arco |
-| 🔵 | **D-C** — I nove box: si riscrivono, o il difetto si accetta e si registra? | costa prosa buona, ed è una scelta di gusto |
-| 🟢 | **D-D** — G5: confermi che si allineano i tre master a `state.md` (**niente −2 COS**)? | è un costo permanente su un PG. La direzione è chiara — `state.md` è più recente e la regola 7 lo rende la fonte — ma tocca la scheda di Thorik, e preferisco un tuo sì |
+| ✅ | **D-A** — il risveglio Stage 1 di **Aegis Fang** si gioca **come scena** | **decisa dal DM 2026-09-19** |
+| ✅ | **D-B** — Il Rituale 4 si gioca **DOPO il combattimento**, all'esito dell'incontro, e **senza ulteriori costi** | **decisa dal DM 2026-09-19** |
+| 🟡 | **D-C** — I nove box: **prima si verifica se riscriverli migliora davvero**, e solo allora si procede | **condizionata dal DM 2026-09-19**: serve una prova su un campione prima di toccare i nove |
+| ✅ | **D-D** — allineare i tre master a `state.md` (**niente −2 COS**) | **confermata dal DM 2026-09-19** → M2.0 chiuso |
 
 ---
 

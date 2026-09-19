@@ -315,8 +315,9 @@ dove, alla fine, Skullcrusher cala. Vedi M7-B (arena del duello).
   caratteristica temporanei azzerati e **tutti gli usi giornalieri ricaricati**
   (invocazioni, poteri dei Bracieri, sinergie 1/giorno, incantesimi di Hella).
   **Nessun tiro, nessun costo, non è una scelta.**
-  - **Cosa NON guarisce**: i **−2 COS permanenti** di Thorik (è un prezzo pagato,
-    non una ferita), gli oggetti spesi (Cuore di Moradin, Diapason, Rubino
+  - **Cosa NON guarisce**: i costi **permanenti** di Thorik — **−4 DES** fra Corona
+    e rito dello Smeraldo, e il **−1 CA** se al rito di `DEF-3` §5 ha donato il +2 di
+    deflessione (sono prezzi pagati, non ferite) — gli oggetti spesi (Cuore di Moradin, Diapason, Rubino
     quando si accenderà) e le condizioni narrative dell'Echo Ledger.
   - **Perché esiste**: senza questa regola il party arriva al duello con
     Skullcrusher con quello che è avanzato da Terros e dal rito — cioè, molto

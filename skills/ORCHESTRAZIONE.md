@@ -80,7 +80,7 @@ escludono. Dalla 3 in poi l'ordine è comodità, non precedenza.
 | # | Fra | Vince | Perché, e dov'è scritto |
 |---|---|---|---|
 | C1 | `rumblingstone-campaign` **vs** qualunque skill di stile | **campaign** | `AGENTS.md` regola 8: *«la coerenza batte lo stile»*. Una bella scena che contraddice `state.md` è un errore, non una scelta |
-| C2 | `narrative-style` **vs** `prosa-documenti` | **nessuna: si sceglie** | ADR-0035, *due prose due norme*. Decide **chi legge**, non l'argomento. Mescolarle è il difetto, non il compromesso |
+| C2 | `narrative-style` **vs** `prosa-documenti` | **nessuna: si sceglie** — ma con un **pavimento in comune** | ADR-0035, *due prose due norme*. Decide **chi legge**, non l'argomento; mescolare i due registri è il difetto, non il compromesso. ⚠️ **Non sono però opposte in tutto**: §9 di `italiano-nativo.md` vale su **entrambi i lati** — l'antitesi «non X: è Y» e il trattino lungo come respiro suonano generati ovunque — e il rimando esiste in tutte e due le skill. Si sceglie il **registro**, non il pavimento |
 | C3 | `indagine` **vs** `narrative-style` | **indagine sopra, narrative-style sotto** | `AGENTS.md`: *«sopra `narrative-style`, che resta il fondo»*. È la sovrapposizione più grossa del repo — **5 trigger condivisi** |
 | C4 | `indagine` **vs** i tetti del read-aloud | **i tetti** | `AGENTS.md` regola 11: *«with the read-aloud ceilings winning any conflict»*. Un nodo d'indizio non giustifica un box da quindici righe |
 | C5 | `editoria` **vs** `art-direction` (una copertina) | **additive** | `editoria` decide **come sta sulla pagina**, `art-direction` **cosa si vede**. Non si contraddicono: la copertina vuole entrambe |

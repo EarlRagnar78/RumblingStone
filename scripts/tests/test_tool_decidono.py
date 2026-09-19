@@ -81,6 +81,17 @@ class TestValidateSkills(BaseDecisione):
             (root / "AGENTS.md").write_text(
                 "## Skills\n\n| Skill | Che cos'e' |\n|---|---|\n"
                 "| `skills/finta/` | una skill di prova |\n", encoding="utf-8")
+            # ADR-0058, stessa logica di ADR-0041 un gradino piu' in la': un repo
+            # con una skill che non sta in nessuno strato non e' sano. Il
+            # mini-repo la colloca, cosi' ogni test boccia per il proprio difetto
+            # e non per la gerarchia mancante.
+            (root / "skills" / "ORCHESTRAZIONE.md").write_text(
+                "# Orchestrazione\n\n<!-- orchestrazione: strati -->\n\n"
+                "| Strato | Domanda | Skill | Come si compone |\n|---|---|---|---|\n"
+                "| **L2 · CHE COSA E'** | prova | `finta` | additive |\n\n"
+                "<!-- orchestrazione: conflitti -->\n\n"
+                "| # | Fra | Vince | Perche' |\n|---|---|---|---|\n",
+                encoding="utf-8")
 
     def test_una_skill_sana_passa(self):
         with cartella() as d:

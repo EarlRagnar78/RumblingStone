@@ -155,6 +155,89 @@ def check_agents_routing(root: Path) -> list[str]:
     return errors
 
 
+def check_orchestrazione(root: Path) -> list[str]:
+    """ADR-0058: ogni skill sta in **uno** strato, e ogni conflitto ha un vincitore.
+
+    🔴 **Il difetto che presidia.** Le regole di precedenza fra skill esistevano
+    gia' — in **cinque punti diversi** di `AGENTS.md`, tutte in prosa: «la
+    coerenza batte lo stile», «sopra `narrative-style`, che resta il fondo»,
+    «regole opposte», «le righe si sommano», «read-aloud ceilings winning any
+    conflict». Prosa sparsa non si puo' verificare, e una skill nuova poteva
+    nascere senza che nessuno decidesse dove sta.
+
+    Tre controlli, e nessuno giudica il testo:
+
+    1. **Copertura**: ogni skill su disco compare in **esattamente uno** strato.
+       Una skill nuova non collocata e' rossa; una collocata due volte anche.
+    2. **Onesta'**: gli strati non nominano skill inesistenti.
+    3. **Conflitti**: ogni riga della tabella dei conflitti nomina skill vere e
+       porta un vincitore dichiarato.
+    """
+    errors: list[str] = []
+    f = root / "skills" / "ORCHESTRAZIONE.md"
+    if not f.exists():
+        return ["skills/ORCHESTRAZIONE.md: assente (ADR-0058)"]
+    text = f.read_text(encoding="utf-8")
+
+    def _tabella(marca: str) -> "list[str]":
+        i = text.find(marca)
+        if i < 0:
+            return []
+        fine = text.find("\n## ", i)
+        return [r for r in text[i:fine if fine > 0 else len(text)].splitlines()
+                if r.startswith("|")]
+
+    righe_strati = _tabella("<!-- orchestrazione: strati -->")
+    if not righe_strati:
+        return ["ORCHESTRAZIONE.md: manca il marcatore «orchestrazione: strati»"]
+
+    on_disk = {d.name for d in (root / "skills").iterdir()
+               if d.is_dir() and (d / "SKILL.md").exists()}
+
+    collocate: "dict[str, list[str]]" = {}
+    for riga in righe_strati:
+        celle = [c.strip() for c in riga.strip("|").split("|")]
+        if len(celle) < 3 or celle[0].startswith(("---", "Strato")):
+            continue
+        strato = celle[0]
+        for nome in SKILL_REF_RE.findall(riga) or re.findall(r"`([a-z0-9-]+)`", celle[2]):
+            collocate.setdefault(nome, []).append(strato)
+
+    for nome in sorted(on_disk - set(collocate)):
+        errors.append(
+            f"ORCHESTRAZIONE.md: la skill '{nome}' non sta in nessuno strato "
+            "(ADR-0058 — una skill senza posto nella gerarchia viene saltata "
+            "o caricata a caso)")
+    for nome in sorted(set(collocate) - on_disk):
+        errors.append(f"ORCHESTRAZIONE.md: lo strato cita '{nome}', che non esiste")
+    for nome, strati in sorted(collocate.items()):
+        if len(strati) > 1:
+            errors.append(
+                f"ORCHESTRAZIONE.md: '{nome}' sta in {len(strati)} strati "
+                f"({', '.join(strati)}) — la gerarchia deve essere una sola")
+
+    righe_conf = _tabella("<!-- orchestrazione: conflitti -->")
+    if not righe_conf:
+        errors.append("ORCHESTRAZIONE.md: manca il marcatore «orchestrazione: conflitti»")
+    for riga in righe_conf:
+        celle = [c.strip() for c in riga.strip("|").split("|")]
+        if len(celle) < 4 or celle[0].startswith(("---", "#")):
+            continue
+        # ⚠️ La tabella usa i nomi CORTI («indagine», «narrative-style»), che e'
+        # come il repo li scrive in prosa. Il gate risolve il prefisso invece di
+        # pretendere nomi lunghi: una tabella illeggibile non la rilegge nessuno.
+        for nome in re.findall(r"`([a-z0-9-]+)`", celle[1]):
+            if nome not in on_disk and f"rumblingstone-{nome}" not in on_disk:
+                errors.append(
+                    f"ORCHESTRAZIONE.md conflitto {celle[0]}: cita '{nome}', "
+                    "che non e' una skill")
+        if not celle[2]:
+            errors.append(
+                f"ORCHESTRAZIONE.md conflitto {celle[0]}: nessun vincitore "
+                "dichiarato — un conflitto senza risoluzione si ridiscute ogni volta")
+    return errors
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument(
@@ -171,7 +254,9 @@ def main() -> int:
     link_errors = check_links(root)
     yaml_errors = check_yaml_data(root)
     routing_errors = check_agents_routing(root)
-    errors = skill_errors + link_errors + yaml_errors + routing_errors
+    orch_errors = check_orchestrazione(root)
+    errors = (skill_errors + link_errors + yaml_errors + routing_errors
+              + orch_errors)
     n_skills = len(list((root / "skills").glob("*/SKILL.md")))
 
     if args.json:

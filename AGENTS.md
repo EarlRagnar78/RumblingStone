@@ -164,6 +164,43 @@ una complicazione) — erano a **zero in tutti e nove gli archi** e non erano
 nemmeno nel metro. Adesso sono due congegni di `misura_craft`. **Se una cosa
 sta in una skill e in nessun rilevatore, prima o poi sparisce.**
 
+#### 🧭 Quinto obbligo: **l'ordine di caricamento è a strati, e sta in un dato**
+
+Il DM: *«fai un ordine gerarchico delle skill che eviti di far saltare le skill
+[…] verifica se ci sono skill che si sovrappongono e orchestrale in maniera
+smart, con meccanismi davvero misurabili»*.
+
+> **5. Prima di caricare, applica l'algoritmo a cinque domande di
+> [`skills/ORCHESTRAZIONE.md`](skills/ORCHESTRAZIONE.md).** Cinque strati più
+> la consultazione, otto conflitti ognuno con un vincitore dichiarato, e un
+> gate (`validate_skills.py`) che boccia una skill senza posto nella gerarchia.
+
+| # | Domanda | Cosa carichi |
+|---|---|---|
+| 1 | **Tocco il canone?** | sì → **L0 sempre**, e batte tutti (regola 8) |
+| 2 | **Chi legge?** | giocatore → `narrative-style` · il repo → `prosa-documenti`. ⚠️ **una sola delle due, mai entrambe** (ADR-0035) |
+| 3 | **Che cosa sto scrivendo?** | L2: `indagine` · `module-standard` · `npc-villain-boosting` |
+| 4 | **In che forma esce?** | L3: `editoria` · `edizione` · `mapmaking` · `art-direction` |
+| 5 | **Che gesto sto facendo?** | L4: `plans` · `automation` · `playtest` · `debugging` |
+
+Solo la **2** ha una risposta sola; dalla 3 in poi si somma. La consultazione
+(SRD, lore) si apre per un **fatto**, mai per decidere.
+
+🔎 **La gerarchia non è stata inventata**: esisteva già, sparsa in **cinque
+frasi** di questo documento («la coerenza batte lo stile», «sopra
+`narrative-style`, che resta il fondo», «regole opposte», «le righe si
+sommano», «read-aloud ceilings winning any conflict»). Erano tutte corrette e
+**nessuna verificabile**. Le diciotto skill entrano in diciotto caselle, una
+per una — ed è la prova che la struttura c'era.
+
+⚠️ **E «massimizzare l'uso» è il bersaglio sbagliato, dichiarato in
+[ADR-0058](plans/adr/ADR-0058-orchestrazione-a-strati-delle-skill.md).**
+Caricarle tutte e diciotto sarebbe il danno: `narrative-style` e
+`prosa-documenti` dettano regole **opposte** sullo stesso italiano, e insieme
+danno un testo che sbaglia in entrambi i modi. **Il bersaglio misurabile è
+*zero omissioni di ciò che è obbligatorio*** — e l'obbligo vero è su **L0-L2**.
+L4 e LR **non** si caricano per sicurezza.
+
 ### Cosa carico, in base a cosa sto per fare
 
 | Sto per… | Carico (obbligatorie in **grassetto**) |

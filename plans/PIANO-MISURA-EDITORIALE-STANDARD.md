@@ -1,0 +1,263 @@
+# PIANO — La misura editoriale si porta agli standard del mestiere
+
+> **Cos'è**: portare le misure di qualità del repo dalla forma che hanno oggi
+> — conteggi di congegni, senza pesi e senza soglia — alla forma che l'editoria
+> professionale usa da decenni: **tipologia d'errore con severità pesata,
+> soglia dichiarata prima, campionamento, accordo fra valutatori**.
+>
+> **Stato**: 🔵 pianificato (2026-09-19) · **Decisore**: DM
+> **Gate del piano**: `python3 scripts/punteggio_mqm.py --soglia` esce 0 su
+> tutti i master DEF, e il κ misurato fra i due campioni è ≥ 0,6
+
+---
+
+## 0 · Perché, in una riga
+
+`misura_craft.py` risponde alla domanda «questo congegno c'è?». È utile e ha
+già trovato difetti veri, ma è una metrica **che mi sono inventato**: non ha
+pesi, non ha una soglia di accettazione, e il suo metro d'oro l'ha scritto un
+solo valutatore. Il mestiere ha risposto a questo problema prima di noi.
+
+---
+
+## 1 · Cosa misura davvero l'editoria — la ricerca, con le fonti
+
+### 1.1 · MQM e ISO 5060 — la tipologia con severità
+
+**MQM** (Multidimensional Quality Metrics) è in uso industriale da dieci anni.
+Due componenti: una **tipologia d'errore** gerarchica (Accuracy, Fluency,
+Terminology, Style, Locale, Non-translation) e un **modello di punteggio**.
+A ogni errore si assegna una **severità definita dall'impatto sul lettore**,
+con moltiplicatori canonici **minore 1 · maggiore 5 · critico 25**.
+
+Dal febbraio 2024 la stessa impostazione è **norma ISO** — `ISO 5060:2024`,
+*Evaluation of translation output* — e la sua definizione di errore è quella
+che serve qui: **«mancato rispetto delle specifiche di progetto»**. Non
+«brutto»: *difforme da ciò che era stato dichiarato*. È esattamente il
+problema del repo — una skill dichiara una norma, un documento non ce l'ha.
+
+MQM è dichiarato applicabile a output **umano, automatico e generato da IA**:
+non stiamo forzando uno strumento fuori dal suo dominio.
+
+### 1.2 · La soglia si dichiara prima
+
+Il punteggio MQM si ottiene dalle penalità normalizzate sul conteggio di
+riferimento. Esempio tipico del framework: una tolleranza di **10 errori
+minori oppure 2 maggiori per 1.000 parole** dà un punteggio di 99. Il pass/fail
+ha **due** condizioni, e la prima è assoluta:
+
+> **nessun errore critico** **E** punteggio ≥ soglia.
+
+### 1.3 · Campionamento, non censimento
+
+`ISO 2859-1` (AQL) per la regola generale. Nella pratica LQA si campiona —
+tipicamente il 10% — e si riserva la revisione totale a ciò che è ad alto
+rischio. Il monito che riguarda noi da vicino: *evitare di essere falsamente
+rassicurati da pochi esempi puliti*.
+
+### 1.4 · L'accordo fra valutatori
+
+Krippendorff α / Cohen κ. Per un giudice LLM il bersaglio dichiarato in
+letteratura è **κ 0,7–0,8** (il soffitto umano-umano); **sotto 0,6 la metrica
+è dominata dal rumore del giudice**, non dal segnale. È il pilastro di cui il
+repo oggi non ha *niente*.
+
+### 1.5 · Paizo / Dungeon — e una regola che il repo non aveva scritto
+
+Le linee guida ufficiali di *Dungeon* prescrivono due cose verificabili sul
+read-aloud:
+
+1. il testo **non fa riferimento a chi guarda**;
+2. si evitano *«vedi»*, *«appena entri nella stanza»* e **qualunque frase che
+   presupponga un'azione del giocatore**.
+
+🔴 **Misurato sul repo, oggi**: su **1.334** box read-aloud, **229 — il 17% —**
+presuppongono un'azione del giocatore. Per arco: 143 ARC-07, 53 ARC-09,
+22 ARC-08, 11 ARC-06. Questa norma **non era scritta da nessuna parte** in
+`skills/`, e nessuno strumento la guardava.
+
+⚠️ **E non tutte e 229 sono errori.** Una parte sono visioni d'artefatto — la
+Corona che parla al suo portatore — dove la seconda persona è la scelta
+giusta. È il motivo per cui questa classe nasce **minore**, con un'esenzione
+dichiarata, e non maggiore.
+
+---
+
+## 2 · Assunzioni dichiarate, e cosa manca
+
+1. **La tipologia non si importa, si mappa.** Le sette dimensioni MQM
+   contengono *Locale* e *Non-translation*, che qui non esistono. Portarsele
+   dietro vuote farebbe sembrare il sistema più rigoroso di quanto è — lo
+   stesso difetto della quarta colonna vuota. Si mappano le **40 norme già
+   registrate** in `skills/REGISTRO-NORME-EDITORIALI.md`, non altro.
+2. **La soglia nasce dal repo, non da un manuale.** Vedi §4: una soglia
+   importata boccerebbe lavoro buono.
+3. **Il punteggio non giudica la bellezza.** Misura la *conformità alle
+   specifiche dichiarate* (ISO 5060). Un documento a punteggio pieno può
+   essere noioso; nessuna metrica di questa famiglia lo vede, e va detto
+   invece che lasciato credere.
+4. **Il campione umano costa tempo al DM.** Se quel tempo non c'è, il piano
+   si ferma alla FASE 2 e il κ resta non misurato — il che va **scritto**,
+   non aggirato con un secondo modello che finge di essere un secondo parere.
+
+---
+
+## 3 · Il modello di punteggio
+
+### 3.1 · Le severità
+
+| Severità | Peso | Cos'è qui | Esempi dal repo |
+|---|---:|---|---|
+| **critico** | **25** | rende il documento ingiocabile, o **viola il canone** (regola 8 di `AGENTS.md`) | statblocco inventato · contraddizione con `state.md` · EL oltre APL+4 senza `Boost log:` |
+| **maggiore** | **5** | viola una norma **prescrittiva** registrata | box oltre le 12 righe · forma del dialogo fuori da `editorial-standards.md` §2 · read-aloud assente dove `module-standard` §6 lo impone |
+| **minore** | **1** | un congegno **assente dove sarebbe servito**, o una prassi disattesa | nessun `[HDYWTDT]` ai punti di morte di un boss · più di un nome proprio nuovo in un box · la regola Paizo di §1.5 |
+
+🔎 **Il critico è pass/fail assoluto.** Un solo critico boccia il documento
+qualunque sia il punteggio, ed è la differenza più importante rispetto a
+`misura_craft` di oggi, dove tutto pesa uguale.
+
+### 3.2 · La formula
+
+```
+penalità = Σ (conteggio_errori × peso_severità)
+punteggio = 100 × (1 − penalità / righe_di_riferimento × 1000 / 1000)
+```
+
+Normalizzato **per 1.000 righe**, non in percentuale su un totale arbitrario:
+un master DEF da 1.300 righe e un handout da 40 non si confrontano altrimenti.
+
+---
+
+## 4 · Le soglie — calibrate sul repo, non importate
+
+Questo è il punto che il DM ha posto esplicitamente: **una soglia ragionevole,
+che non butti via niente**.
+
+🔎 **Perché importare una soglia è sbagliato, con la prova.** Ho calcolato
+**Gulpease** (l'indice tarato sull'italiano) su tutto il repo:
+
+| | mediana | sotto 40 | fuori scala (>100) | nella fascia «professionale» 80-89 |
+|---|---:|---:|---:|---:|
+| read-aloud (1.334 box) | **67,1** | 3 | 77 = **6%** | 102 = **8%** |
+| documenti del repo (53) | **65,4** | 0 | 0 | 21% |
+
+La fascia «testo professionale per pubblico generale» è **80-89**. Se
+importassimo quella soglia, **boccheremmo il 92% dei read-aloud del repo** —
+compresi quelli scritti meglio. E ci sono due ragioni per cui sarebbe una
+sciocchezza:
+
+- un read-aloud **non è** un foglio informativo: la prosa spezzata che
+  `read-aloud-adulti.md` *prescrive* fa esplodere la formula, e infatti il
+  **6%** dei box esce dalla scala 0-100;
+- Gulpease **non discrimina** qui: 67,1 contro 65,4 fra due prose che il repo
+  governa con norme **opposte** (ADR-0035). Come voto è cieco.
+
+> **Regola di calibrazione**: la soglia iniziale è il **valore che il repo ha
+> già oggi**, arrotondato in basso. Il cancello **nasce verde** e non butta
+> niente; da lì si stringe per gradi, e ogni stretta porta la sua ragione
+> scritta (ADR-0036: si misura il miglioramento, non lo stato).
+
+| Classe di documento | Soglia iniziale | Come si ottiene | Quando si stringe |
+|---|---|---|---|
+| **master DEF** | il P25 attuale della classe | misurato in F1.4 | quando il 75% supera la soglia successiva |
+| **file d'arco non-DEF** | P10 attuale | idem | idem |
+| **handout / player-facing** | P25 attuale **+ zero critici** | idem | mai sul critico: quello è già assoluto |
+| **documenti del repo** | solo critici | la prosa-documenti ha norme diverse | — |
+
+⚠️ **Gulpease resta, ma declassato**: non è un voto, è un **guard rail** sui 3
+box sotto 40. Entra come **minore**, e solo quando il box è fuori dalla fascia
+*e* non è prosa spezzata (>100 non conta).
+
+---
+
+## FASE 1 — Audit / accertamento
+
+| | Lotto | Cosa produce | Come si verifica |
+|---|---|---|---|
+| ⬜ | **F1.1** Mappare le 40 norme del registro su tipologia × severità | una colonna nuova in `REGISTRO-NORME-EDITORIALI.md` | `validate_norme_editoriali.py` estende il controllo: ogni norma ha una severità o una ragione scritta per non averla |
+| ⬜ | **F1.2** Separare rilevabile da giudizio | quante delle 40 hanno uno strumento (oggi ~22) e quante no | conteggio, nel registro |
+| ⬜ | **F1.3** Potere discriminante di ogni congegno | tabella: per ciascuno, quanti documenti separa | 🔴 un congegno che **non separa mai** due documenti è rumore e si toglie — è il controllo *non-discriminating* della skill-creator |
+| ⬜ | **F1.4** Distribuzione attuale per classe | P10/P25/P50/P75 del punteggio su tutto il repo | è l'input delle soglie di §4: **prima si misura, poi si sceglie** |
+| ⬜ | **F1.5** Estrarre i due campioni | campione **A** (DM) e campione **B** (secondo modello), disgiunti | vedi §5 |
+
+## FASE 2 — Sviluppo
+
+| | Lotto | Cosa produce |
+|---|---|---|
+| ⬜ | **F2.1** `scripts/punteggio_mqm.py` | legge il registro, applica severità e pesi, stampa punteggio + dettaglio errori per documento; `--json` per la CI |
+| ⬜ | **F2.2** `specifiche-qualita.yaml` | le soglie per classe, **fuori dal codice**: è una decisione di prodotto e deve poterla cambiare il DM senza toccare Python |
+| ⬜ | **F2.3** Il rilevatore della regola Paizo | la norma di §1.5, con l'esenzione «visione d'artefatto» dichiarata nel registro |
+| ⬜ | **F2.4** Gulpease come guard rail | `--leggibilita`, severità minore, esente sopra 100 |
+| ⬜ | **F2.5** `ADR-0059` | la decisione: *il punteggio di qualità è MQM adattato, e la soglia nasce dal repo*. Numero verificato libero (l'ultimo è 0058) |
+| ⬜ | **F2.6** Gate in CI | `punteggio_mqm.py --soglia` fra i cancelli, **non bloccante alla prima messa in opera** — un giro di osservazione, poi bloccante |
+
+## FASE 3 — Validazione
+
+| | Lotto | Criterio di superamento |
+|---|---|---|
+| ⬜ | **F3.1** Il cancello morde, per ogni severità | un critico iniettato → **rosso anche con punteggio alto**; un maggiore iniettato → punteggio scende di 5 volte un minore; rimosso → verde |
+| ⬜ | **F3.2** Nessun documento buono bocciato | alla soglia iniziale, **zero** master DEF in rosso. Se ne cade uno, la soglia è sbagliata, non il documento |
+| ⬜ | **F3.3** κ sui due campioni | **κ ≥ 0,6** o la metrica si dichiara non affidabile e **non entra in CI**. Sotto 0,6 è rumore del giudice, non segnale |
+| ⬜ | **F3.4** Stabilità | tre esecuzioni sullo stesso commit danno lo stesso punteggio (le regex sì per costruzione; il giudizio LLM va misurato) |
+| ⬜ | **F3.5** Non-regressione | `misura_craft` continua a girare: il punteggio **affianca**, non sostituisce |
+
+---
+
+## 5 · I due campioni, e perché sono diversi
+
+Il DM ha scelto **due campioni distinti** invece di un doppio passaggio sullo
+stesso. È la scelta giusta e vale la pena dire perché: due valutatori sullo
+*stesso* campione misurano l'accordo ma non la copertura; due campioni
+disgiunti misurano **anche** se la metrica regge su materiale diverso.
+
+| | Campione A | Campione B |
+|---|---|---|
+| **chi valuta** | il DM | un secondo modello, **diverso** da quello che produce il punteggio |
+| **dimensione** | 20 documenti | 20 documenti |
+| **estrazione** | stratificata per classe e per arco, seme fisso | idem, **disgiunto da A** |
+| **cosa misura** | l'accordo fra la macchina e chi decide | la tenuta su materiale che il DM non ha visto |
+| **cosa NON misura** | 🔴 niente sulla bellezza: solo conformità | 🔴 l'accordo fra due macchine **non è** un secondo parere umano |
+
+⚠️ **Il κ che conta è quello del campione A.** Se il campione B dà κ alto e A
+basso, la metrica è coerente con sé stessa e in disaccordo col DM — e in quel
+caso ha torto la metrica.
+
+---
+
+## 6 · Cosa questo piano NON copre
+
+- **L'impaginazione.** La ricerca sul lato editoriale/grafico è la tappa
+  successiva e ha standard suoi, tutti misurabili e già individuati:
+  `PDF/UA — ISO 14289` con i **136 checkpoint verificabili** del Matterhorn
+  Protocol e il validatore **veraPDF**; `PDF/X — ISO 15930` per la stampa;
+  e le misure tipografiche (45-75 caratteri per riga su colonna singola,
+  40-50 su due colonne; interlinea 1,4-1,6 per il testo corrente). Diventerà
+  un piano gemello.
+- **La qualità narrativa.** Nessuna metrica di questa famiglia sa se una scena
+  è bella. Restano il collaudo al tavolo (`rumblingstone-playtest`) e il
+  giudizio del DM.
+
+---
+
+## 7 · Decisioni aperte
+
+| | Decisione | Perché serve il DM |
+|---|---|---|
+| 🔵 | **Le soglie iniziali** (§4) | F1.4 le propone dalla distribuzione, ma «quanto stringiamo» è prodotto, non tecnica |
+| 🔵 | **Il tempo del campione A** | 20 documenti da annotare. Senza, il κ non esiste e va dichiarato |
+| 🔵 | **La regola Paizo: 229 box** | si correggono, si esentano per classe, o si lascia il rilevatore solo come avviso? |
+
+---
+
+## Fonti
+
+[MQM Council](https://www.themqm.org/) ·
+[MQM scoring models](https://www.themqm.org/mqm-pillars/the-mqm-scoring-models/) ·
+[ISO 5060:2024](https://www.iso.org/standard/80701.html) ·
+[ISO 2859-1 / AQL](https://blog.ansi.org/ansi/iso-2859-1-2026-aql-sampling/) ·
+[LQA: campionamento vs revisione totale](https://www.acclaro.com/blog/do-you-still-need-language-quality-assurance-a-practical-guide-for-localization-teams/) ·
+[Agreement metrics per LLM-as-judge](https://www.alphaxiv.org/abs/2606.00093) ·
+[Dungeon writers' guidelines](https://paizo.com/writersguidelines/dungeon_writer_guidelines.pdf) ·
+[PDF/UA — ISO 14289](https://pdfa.org/resource/iso-14289-pdfua/) ·
+[PDF/X — ISO 15930](https://pdfa.org/resource/iso-15930-pdfx/) ·
+[Indice Gulpease](https://it.wikipedia.org/wiki/Indice_Gulpease)

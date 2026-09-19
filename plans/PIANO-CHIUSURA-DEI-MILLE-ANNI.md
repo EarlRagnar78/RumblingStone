@@ -47,23 +47,43 @@ passaggio in cui la Corona **cambia grado**.
 **Conseguenza al tavolo**: il DM gioca il duello, torna, e `state.md` gli
 chiede di segnare un avanzamento d'artefatto che nel modulo non è mai successo.
 
-### 🔴 G2 — La Senzienza, e il colpo che rimbalza su Aegis Fang
+### 🔴 G2 — Il viaggio **è** l'Assedio, e l'Assedio sveglia Aegis Fang
 
-È il buco più grosso, e attraversa tre archi. `PROPOSTA-DONI-RESURREZIONE-HELLA`
-§III lo dice per esteso:
+> 🔴 **CORREZIONE (2026-09-19, FASE 1).** La prima stesura di questo piano —
+> commit `3a7238a`, già spinto — diceva che donando il +2 di deflessione **la
+> Corona non parlerà mai** e che si **rompe** la condizione di risveglio di
+> Aegis Fang, *«Assedio della Forgia + Corona Senziente»*. **Era falso**, e la
+> FASE 1 l'ha preso al primo controllo.
+>
+> | Avevo scritto | Il canone corrente |
+> |---|---|
+> | la Corona non parlerà mai | `state.md` §456: *«la Corona si scalda **o resta fredda al Rituale 4** — tutte **reversibili**»*, e `ARC07-DEF-3` §5 lo conferma su entrambi i rami |
+> | Aegis Fang richiede «Corona Senziente» | **«Corona Senziente» ha 0 occorrenze in `state.md`.** La riga vera è: *«Unchanged until the **Siege (P5)** is won → then Stage 1 full awakening»* |
+>
+> **Da dove veniva l'errore**: da `PROPOSTA-DONI-RESURREZIONE-HELLA` §III, che
+> è una versione **superata** del disegno dei Doni — quella in cui il dono III
+> *era* la Senzienza stessa. Nel canone v4-bis Thorik dona il **+2 di
+> deflessione**, e la Senzienza non è in gioco. Avevo letto un documento di
+> proposta come se fosse canone: è l'errore che la regola 8 esiste per
+> impedire, e l'ho fatto nel piano che la cita.
 
-> se Thorik dona il **+2 di deflessione** al rito di DEF-3, **la Corona non
-> parlerà mai**. Torna dal viaggio con il Rubino e la Corona +3, ma **senza la
-> Senzienza**. E il colpo rimbalza: `state.md` dice che il risveglio pieno di
-> **Aegis Fang** richiede *«Assedio della Forgia + Corona Senziente»* — una
-> delle due condizioni **non si verificherà più**, e ne serve una nuova.
+**Il buco vero, verificato, è più semplice e più grosso.** Il viaggio a −1.000
+**è** l'Assedio (P5). `state.md` dice che vincerlo sveglia **Aegis Fang allo
+Stage 1**. Misurato su DEF-4: «Aegis» compare **14 volte**, il suo **risveglio
+zero**.
 
-**Quindi**: una scelta fatta in **DEF-3 §5** determina se un potere di **DEF-4**
-esiste, e se una quest di **ARC-09** diventa necessaria. Oggi DEF-4 non lo sa,
-e `ARC07-CONSEGUENZE-ECHI.md` va verificato.
+| Cosa il canone attribuisce al viaggio | DEF-4 lo consegna? |
+|---|---|
+| Rubino acceso | 🟢 sì, 26 occorrenze |
+| Corona a tre gemme | 🟢 sì, nel §9 |
+| **Corona +3 / Rituale 4** | 🔴 **no**, zero |
+| **Senzienza, calda o fredda secondo il ramo di DEF-3 §5** | 🔴 **no**, una menzione |
+| **Aegis Fang → Stage 1** | 🔴 **no**, zero |
 
-⚠️ **Questo non lo decido io.** Inventare la quest sostitutiva di ARC-09 è
-canone nuovo: è la decisione **D-A** in §5.
+**Quindi**: DEF-3 §5 fa una **promessa** — *«al Rituale 4 la Senzienza si
+sveglierà avendo già una cosa da dire su di lui»*, oppure *«arriva fredda»* —
+e DEF-4 **non la incassa**. Il bivio esiste già nel canone; manca il posto
+dove si paga.
 
 ### 🟡 G3 — La cucitura del ritorno
 
@@ -92,10 +112,10 @@ richiede riscrivere prosa buona, non aggiungere apparato.
 
 1. **Il canone vince sul modulo.** Dove `state.md` e il master divergono, si
    allinea il master — mai il contrario senza decisione del DM (regola 8).
-2. **G2 non si chiude scrivendo la quest ARC-09.** Si chiude **scrivendo il
-   bivio** dentro DEF-4, con entrambi i rami, e lasciando la quest a una
-   decisione. Un piano che inventa canone per chiudere un buco di canone ne
-   crea due.
+2. **G2 non si chiude inventando canone.** Il bivio **esiste già** in DEF-3 §5
+   e in `state.md`: qui si scrive solo **dove si incassa**. ⚠️ E vale la
+   correzione di G2: prima di usare una riga come canone, si verifica che sia
+   in `state.md` e non in un documento di **proposta** superato.
 3. **La riscrittura di ieri non si tocca.** I congegni introdotti (regia di
    round, quarta colonna, `[HDYWTDT]`) restano; questo piano **aggiunge**.
 4. **Il duello con Skullcrusher è collaudato sulla carta e non al tavolo.**
@@ -109,9 +129,9 @@ richiede riscrivere prosa buona, non aggiungere apparato.
 |---|---|---|---|
 | ✅ | **M1.1** Copertura del canone dei −1.000 | la tabella di §0 | fatta: 3 parole su 6 a zero |
 | ✅ | **M1.2** Stato del mestiere di DEF-4 | la tabella di G4 | fatta |
-| ⬜ | **M1.3** Il ramo Senzienza, tracciato su tre archi | dove la scelta si fa (DEF-3 §5), dove si paga (DEF-4), dove rimbalza (ARC-09 + Aegis Fang) | ogni passaggio o esiste in un file o è un buco elencato |
+| ✅ | **M1.3** Il ramo Senzienza, tracciato su tre archi — **ha trovato l'errore di G2** | dove la scelta si fa (DEF-3 §5), dove si paga (DEF-4), dove rimbalza (ARC-09 + Aegis Fang) | ogni passaggio o esiste in un file o è un buco elencato |
 | ⬜ | **M1.4** La cucitura D16 riga per riga | DEF-4 §9 ↔ DEF-5 §apertura: chi consuma il Rubino, dove atterrano, in che giorno | 🔴 nessuna contraddizione, o la si scrive |
-| ⬜ | **M1.5** `ARC07-CONSEGUENZE-ECHI.md` conosce il bivio? | sì/no, misurato | grep + lettura |
+| ✅ | **M1.5** `ARC07-CONSEGUENZE-ECHI.md` conosce il bivio? | **no**: Senzienza 0 · deflessione 0 · Rituale 4 0 · Corona +3 0 · Aegis Fang 1 | misurato |
 
 ## FASE 2 — Sviluppo
 
@@ -122,7 +142,7 @@ facile il successivo**.
 |---|---|---|---|
 | ⬜ | **M2.1** §4-quater «Il Rituale della Forgia Eterna» | la scena in cui il Rubino entra nella Corona **durante o dopo il duello**, col nome canonico, e la Corona passa a **+3** | è il buco G1, ed è il pezzo che tutti gli altri presuppongono |
 | ⬜ | **M2.2** Il bivio della Senzienza | dentro M2.1: **due rami scritti**, «Thorik ha donato» e «Thorik non ha donato», con cosa cambia **al tavolo** in entrambi | senza, M2.1 vale per metà dei tavoli |
-| ⬜ | **M2.3** La riga di rimbalzo su Aegis Fang | nel ramo «ha donato»: la condizione di risveglio si rompe, **e il modulo lo dice al DM** invece di lasciarglielo scoprire in ARC-09 | è un avviso, non una quest: costa tre righe |
+| ⬜ | **M2.3** Il risveglio di **Aegis Fang** *(riscritto dopo la correzione di G2)* | vincere l'Assedio porta l'ascia allo **Stage 1**: il master lo deve **consegnare**, non lasciarlo a `state.md`. E l'Ego 14 ha una cosa da dire su Thorik, diversa nei due rami di DEF-3 §5 | è l'altro avanzamento che il canone attribuisce a questo viaggio e che il modulo non nomina |
 | ⬜ | **M2.4** Cucitura D16 | correggere ciò che M1.4 trova | dopo M2.1, perché il Rituale cambia cosa arriva a DEF-5 |
 | ⬜ | **M2.5** I nove box | riscrivere i box con più di un nome proprio, **uno alla volta, tenendo il migliore** | ultimo: è l'unico lotto che tocca prosa già buona, e va fatto quando il resto è fermo |
 | ⬜ | **M2.6** Echo Ledger | le conseguenze nuove in `state.md` §7.E e in `ARC07-CONSEGUENZE-ECHI.md` | la regola: un'eco che non è nel registro non riemerge |
@@ -169,7 +189,7 @@ l'apparato è fermo permette di misurare **solo** l'effetto della prosa.
 
 | | Decisione | Perché serve il DM |
 |---|---|---|
-| 🔵 | **D-A** — Aegis Fang: se la Corona non parlerà mai, la condizione di risveglio si sostituisce con cosa? | è canone nuovo su un artefatto di un PG |
+| 🔵 | **D-A** *(riscritta dopo la correzione di G2)* — il risveglio Stage 1 di **Aegis Fang** si gioca **dentro** DEF-4, come scena, o si registra soltanto in `state.md` a fine arco? | è il grado di un artefatto di un PG: farne una scena o un aggiornamento di scheda è una scelta di peso narrativo |
 | 🔵 | **D-B** — Il Rituale 4 si gioca **durante** il duello (sotto pressione) o **dopo** (come rito)? | cambia il tono della scena finale dell'arco |
 | 🔵 | **D-C** — I nove box: si riscrivono, o il difetto si accetta e si registra? | costa prosa buona, ed è una scelta di gusto |
 

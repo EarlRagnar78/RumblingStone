@@ -139,7 +139,7 @@ CONGEGNI = [
 
     ("prove grezze di caratteristica",
      re.compile(r"\b(?:FOR|DES|COS|INT|SAG|CAR|Forza|Destrezza|Costituzione|"
-                r"Intelligenza|Saggezza|Carisma)\s*(?:grezz|C[DA]\s*\d)", re.I),
+                r"Intelligenza|Saggezza|Carisma)\b[*_\s]*(?:grezz|C[DA]\s*\d)", re.I),
      "skill indagine — le SEI PORTE, per i PG senza gradi"),
 
     ("nodo d'indizio",
@@ -210,7 +210,11 @@ CONGEGNI = [
 
     ("grigio politico",
      re.compile(r"fazione recuperabil|crede di aver ragione|ha (?:le sue|una sua) ragion|"
-                r"\bLeva\b\s*[=:]|ricattabil|vizio\s*/\s*leva|non è (?:un )?(?:cattivo|mostro)\b",
+                r"\bLeva\b\s*[=:]|ricattabil|vizio\s*/\s*leva|non è (?:un )?(?:cattivo|mostro)\b|"
+                # la self-check di narrative-style chiede testualmente un «Want
+                # che non riguarda i PG»: se il metro non lo vede, la domanda 5
+                # non ha uno strumento.
+                r"\bWant\b[^.\n]{0,40}non riguarda",
                 re.I),
      "pilastro 5 (GoT) — ogni fazione crede di aver ragione"),
 ]

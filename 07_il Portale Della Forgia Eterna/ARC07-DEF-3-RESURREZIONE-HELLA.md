@@ -191,14 +191,14 @@ Ibrido Treant, Empatia vegetale +4, Fotosintesi, Earth Dream amplificato (1/g
 
 > **Read-aloud (LotR lead + liturgia).** *La Sala della Forgia si è fatta
 > silenziosa in un modo nuovo. Non il silenzio del vuoto: il silenzio di una
-> sala che trattiene il fiato. Gli otto affreschi vi guardano dalle pareti —
+> sala che trattiene il fiato. Gli otto affreschi guardano dalle pareti —
 > Moradin che forgia, i Quattro Eroi che prendono contorno, Hammerfist che
-> brucia nel suo riquadro. Al centro, l'Altare del Cuore di Moradin arde della
-> sua fiamma dorata che non consuma. E lì, sulla pietra di mithral, giace il
-> corpo di Hella: le mani incrociate sul petto, la pelle color cera, i tre semi
-> di treant posati — uno su ciascuna mano, uno sulla fronte — che pulsano piano,
-> come se già sapessero. Therysol si scosta dalla veglia, e per la prima volta
-> in giorni non ha più bisogno di montare la guardia. Tocca a voi, adesso.*
+> brucia nel suo riquadro. Al centro, l'Altare arde di una fiamma dorata che
+> non consuma. E lì, sulla pietra di mithral, giace il corpo di Hella: le mani
+> incrociate sul petto, la pelle color cera, i tre semi di treant posati, uno
+> su ciascuna mano e uno sulla fronte, che pulsano piano come se già sapessero.
+> Therysol si scosta dalla veglia. Per la prima volta in giorni non ha più
+> bisogno di montare la guardia, e non sa dove mettere le mani.*
 
 **Terreno (callout):** l'Altare 2×2 m al centro dell'ottagono (MAPPA S-1 del
 master #2); attorno, un **cerchio rituale di 3 m di raggio** — Thorik a Nord,
@@ -207,6 +207,73 @@ l'energia). I tre semi sul corpo formano un **triangolo** inscritto nel cerchio
 dei tre officianti. Vedi **MAPPA R-1**. Zona **sacra e sicura** — ma non
 "comoda": chi partecipa al rito non può fare altro (nessuna azione esterna
 durante gli step).
+
+### La Sala per sensi — e cosa non dire *(ADR-0057)*
+
+| 👁 Occhi | 👂 Orecchie | ✋ Pelle e naso | 🚫 **Cosa NON dire** |
+|---|---|---|---|
+| l'oro dell'Altare non proietta ombre: le cose vicine sembrano **ritagliate** | il silenzio ha un **fondo basso**, come una nota tenuta troppo a lungo da qualcuno che non respira | il pavimento è **tiepido sotto le suole**, più caldo dell'aria | ❌ che il fondo basso **è il Cuore che batte dentro l'Altare**: è la rivelazione di §3, e detta qui §3 diventa una conferma |
+| i semi sul corpo hanno una **venatura che si muove**, lenta, come linfa in un tronco tagliato | quando qualcuno parla, la voce **non ha eco**: la sala se la prende | odore di **ferro caldo e di terra piovuta**, due cose che non stanno insieme | ❌ che la terra piovuta **è Hella**: che il corpo stia già cambiando è ciò che i PG devono **notare da soli** |
+| la Corona sulla fronte di Thorik ha **due gemme accese e un incasso vuoto** | | il metallo dell'Altare **non è freddo**, e un nano lo trova sbagliato | ❌ che l'incasso vuoto **è il Rubino e si apre col viaggio**: vedi §2-bis, si guadagna |
+
+### Le sei porte — interagire con la Sala *(prove grezze, ADR-0022)*
+
+Nessuna richiede un grado speso. Sono **opzionali**: chi non le tocca non perde
+niente, chi le tocca entra nel rito già dentro la scena.
+
+| Prova | CD | Cosa dà |
+|---|---:|---|
+| **SAG** grezza — ascoltare il fondo basso | 14 | il ritmo è **sessanta al minuto**: un cuore a riposo. Non dice di chi |
+| **INT** grezza — leggere l'affresco A6 | 16 | la scena del portale ha **tre punti di luce**, non due: qualcuno, mille anni fa, aveva tutte e tre le gemme |
+| **COS** grezza — restare a mani nude sul mithral | 12 | il metallo **restituisce** calore invece di prenderlo: +1 al primo tiro del rito, e la sensazione che la pietra sia d'accordo |
+| **CAR** grezza — parlare a Therysol mentre si scosta | 13 | dice a bassa voce la cosa che non ha detto in sei giorni: *«Ho contato i respiri che non faceva. Sono arrivata a undicimila e ho smesso.»* → eco |
+| **FOR** grezza — spostare l'Altare per allineare il Sud | 18 | non si muove di un dito. **Il fallimento è l'informazione**: l'Altare è ancorato alla montagna, non appoggiato |
+| **DES** grezza — posare i semi in un triangolo perfetto | 15 | +1 allo Step 4. ⚠️ **Thorik ha −2 a DES** per il prezzo delle gemme: se prova lui, è la statistica che ha venduto |
+
+---
+
+## §2-bis — LE DUE GEMME ACCESE, E LA TERZA CHE MANCA `[CANONE — state.md §5]`
+
+> **Perché sta qui.** I PG hanno speso due archi a cercare quelle pietre. Se il
+> rito le ignora, quelle sessioni diventano un corridoio verso questa. Questa
+> sezione è **breve apposta**: non è una scena, è la riga che fa pesare il
+> passato dentro il presente.
+
+| Gemma | Come è entrata nella Corona | Cosa si vede **adesso**, nel rito |
+|---|---|---|
+| **Topazio** | recuperato nel **Piano del Fuoco** (P3) | quando l'Altare arde allo Step 1, il topazio **arde insieme** e prende lo stesso ritmo. È l'unica gemma che *risponde* al fuoco della forgia |
+| **Smeraldo della Forza** | forgiato dopo Terros l'Antico, al rito in cui **Thorik ha versato un pezzo di sé** | allo Step 5 lo smeraldo **si raffredda**, e Thorik lo sente. La Terra riconosce chi le ha già pagato una volta |
+| **Rubino** | ❌ **manca** | l'incasso vuoto sulla Corona, per tutta la scena, **non riflette la luce dorata**. È un buco nero piccolo come un'unghia in mezzo all'oro |
+
+### La riga che nessuno ha ancora detto a Thorik
+
+`state.md` §7.E lo registra come eco **E-07c**: al rito dello Smeraldo gli è
+stato chiesto *«un pezzo di te stesso»*, e non l'ha delegato. Ha pagato
+**−2 DES e +2 COS**, che sommati ai −2 DES della Corona fanno **−4 al
+punteggio** — un punto solo di CA, Riflessi e iniziativa al tavolo.
+
+> 🎭 **Grigio politico — il Want di Thorik che non riguarda i PG.** Nessuno al
+> tavolo se n'è accorto, e lui **non corregge nessuno**. Lo elogiano per quanto
+> sa incassare, cioè per il +2 COS: per la metà che si vede. Fra un attimo
+> §5 gli chiederà di pagare **di nuovo**, e il DM che conosce questa riga sa
+> perché Thorik si muove per primo — non per generosità, ma perché adesso
+> conosce il cambio e non si fida a lasciarlo accettare a un altro.
+
+> **Read-aloud (Casa di Davide lead) — solo se un PG guarda la Corona.** *La
+> corona sulla fronte di Thorik ha due pietre vive e un vuoto. Il topazio tiene
+> il calore della sala, lo smeraldo lo respinge, e in mezzo l'incasso scoperto
+> resta scuro: l'oro gli arriva addosso e non ne torna indietro niente. È un
+> difetto di un'unghia su un oggetto che ha attraversato due ere, e chiunque lo
+> guardi abbastanza a lungo finisce per guardare solo quello.*
+
+⚠️ **Non dire** che l'incasso si riempie col viaggio a −1.000: **è la posta di
+§12**. Qui è un difetto che si nota, non una promessa che si annuncia.
+
+> **Assorbi e rilancia.** Se un giocatore inventa una spiegazione per il vuoto
+> — «l'ha persa qualcuno», «è stata rubata», «non è mai esistita» — **prendila
+> nel canone** e dalle un prezzo: quella diventa la versione che i nani di
+> Hammerfist raccontano, e sarà **sbagliata** in un modo che a −1.000 costerà
+> mezz'ora di diffidenza a chi la ripete.
 
 ---
 
@@ -240,6 +307,49 @@ durante gli step).
 > **Setup.** Corpo di Hella al centro, il Cuore di Moradin posato **sopra** il
 > suo cuore (allineamento preciso). I tre semi (mani + fronte). I tre officianti
 > ai punti cardinali, il Sud vuoto. Moradin guida telepaticamente.
+
+### ⚙️ Come si gioca questo rito — la regia `(ADR-0014)`
+
+> **Il difetto che questa sezione chiude.** Sei step con sei CD sono una lista
+> di tiri. Un rito è una **scena a turni**: ha un'apertura, un giro in cui
+> ciascuno fa la sua cosa, un esito detto per la riuscita **e** uno per il
+> fallimento, e una chiusura. Senza, il tavolo tira dadi e aspetta.
+
+**Ordine di gioco fisso**: Thorik → Tordek → Artemis → Moradin. Non è
+iniziativa: è **liturgia**, e l'ordine è parte del rito. Chi salta il turno lo
+salta davanti agli altri tre.
+
+**Apertura di round**, una per step — una riga, non di più:
+
+| Step | Apertura di round da leggere |
+|---|---|
+| 1 | *L'oro dell'Altare si alza di un dito.* |
+| 2 | *Il battito rallenta, e chiede a qualcuno di seguirlo.* |
+| 3 | *La pelle di Hella ha ancora il colore della cera.* |
+| 4 | *I semi smettono di pulsare. Stanno decidendo.* |
+| 5 | *Il Sud del cerchio è vuoto, e qualcosa lo sta guardando da lì.* |
+| 6 | *La sala prende fiato al posto vostro.* |
+
+**Esito, in due righe già scritte.** Una per la riuscita, una per il fallimento.
+Il DM le legge senza inventare, e la scena non si spegne mai sul numero:
+
+| Step | ✅ Riuscita | ❌ Fallimento *(mai «non succede niente»)* |
+|---|---|---|
+| **1** | l'oro sale fino alla volta e **gli otto affreschi si illuminano in fila**, da Moradin fino a Hammerfist | la preghiera esce **storta** — una sillaba antica sbagliata. Therysol alza la testa: lo ha sentito. Ritenta, ma adesso c'è un testimone |
+| **2** | i due battiti si sovrappongono e per un istante **non si distingue quale sia di chi** | Tordek prende **2d6 non letali** e la cosa peggiore: per un secondo ha sentito il buio in cui lei era, e adesso lo sa |
+| **3** | le ferite si chiudono **al contrario**, dall'interno, e il colore torna dal petto alle dita | l'Anello sputa **un colore solo**. Il corpo si stabilizza a metà: ha colore ma non calore |
+| **4** | le radici entrano **senza sangue**, e il corpo le accetta come se le avesse sempre avute | un seme **non germoglia**. Resta un seme. Da qualche parte, più avanti, mancherà qualcosa |
+| **5** | tre voci diventano **una voce**, e la sala la restituisce più forte di come è entrata | il richiamo torna indietro **vuoto**, come una corda che non ha preso. Si può ritentare: ma ogni tentativo la porta più lontano |
+| **6** | → §7 | → §9, tabella dei modi di fallimento |
+
+> **Chiusura di round, ogni volta.** Il DM chiude lo step guardando i giocatori
+> e chiedendo: **«Che fate?»** — anche quando la risposta giusta è «il prossimo
+> tira». Un rito in cui non si può scegliere niente è un filmato.
+
+> **`[HDYWTDT]`** Allo **Step 5**, se il richiamo riesce, il colpo finale della
+> scena **non lo descrive il DM**: si chiede al giocatore di Tordek — o a chi ha
+> tirato meglio — *«Hella torna. Com'è la tua voce, l'ultima volta che la
+> chiami?»* La frase che dice diventa canone, e Hella la ricorderà al risveglio.
 
 **STEP 1 — Invocazione (Thorik · Conoscenze religioni CD 15).** La preghiera
 nanica antica (handout §12): *«Khazâd ai-mênu, Moradin Uzbad… Hella Vala-mara,
@@ -695,6 +805,26 @@ cerchio del lutto si chiude.
 
 ---
 
+### I modi di fallimento — zero successi apre gioco, non lo chiude
+
+> **Il principio.** Un rito che può solo riuscire non è una prova. Un rito che
+> può solo fallire è una punizione. Qui **ogni esito produce una scena
+> successiva**, e la peggiore è anche la più giocabile.
+
+| Successi allo Step 5 | Cosa torna | Cosa apre |
+|---:|---|---|
+| **3 su 3** | Hella intera, i tre doni attecchiscono | il ponte di §12 parte pulito |
+| **2 su 3** | Hella intera, un dono **attecchisce a metà** | il PG che ha fallito lo scopre **a −1.000**, nel momento peggiore: il suo dono non risponde al primo tentativo |
+| **1 su 3** | Hella torna con **1 livello negativo** e non ricorda i nomi per 1d4 minuti | una scena vera al risveglio: **chi le dice il proprio nome per primo** conta, e Hella lo ricorderà per tutto l'arco |
+| **0 su 3** | Hella **non torna adesso** | 🔎 **Questo non è un game over.** Il Cuore regge per **un'ora**, e Moradin lo dice: *«Il canale è aperto. Non è lei a non voler tornare.»* La sala diventa un'indagine di un'ora — cosa manca al cerchio? Il Sud vuoto. Il seme non germogliato. La gemma mancante. La risposta esiste ed è nei §2, §2-bis e §6, e il tavolo la ricompone da sé |
+
+⚠️ **Il vicolo cieco ha una porta**: se l'ora scade senza che il tavolo trovi
+niente, **Therysol** parla — e dice la cosa che ha visto in sei giorni di
+veglia, non una soluzione ma un fatto: *«Il corpo si gira verso sud. L'ho
+rimesso dritto undici volte.»* Da lì si riparte.
+
+---
+
 ## §10 — ECHO LEDGER (conseguenze a lungo termine)
 
 | Evento (qui) | Eco | Quando riemerge | Dove si gestisce |
@@ -776,6 +906,47 @@ ora aprire il **portale del Tempo** (affresco A6). Al di là c'è Hammerfist com
 era **mille anni fa**, e una battaglia che deciderà — nel passato — le sorti del
 presente. → **master #4: il Viaggio a 1.000 anni fa** (duello con Skullcrusher;
 Hella è il 4° PG).
+
+### La soglia — come si gioca l'apertura, invece di annunciarla
+
+> **Il difetto che questa sotto-sezione chiude.** «Poi si apre il portale» è una
+> didascalia. L'ultima scena di un arco è il posto dove **la scelta costa**, e
+> qui ce n'è una vera: la Corona può aprire il portale **con due gemme su tre**,
+> e nessuno sa cosa vuol dire attraversare un varco tenuto aperto da un oggetto
+> incompleto.
+
+> **Read-aloud (Andor lead — la tensione che non alza la voce).** *L'affresco
+> A6 non è cambiato in mille anni, ma adesso ha tre punti di luce e due sono
+> accesi. Il terzo resta un cerchio inciso e vuoto, alto sulla parete, alla
+> stessa altezza dell'incasso scoperto sulla corona. Nessuno lo ha fatto
+> notare. Lo hanno visto tutti.*
+
+**Il fatto da mettere sul tavolo, con parole da DM e non da manuale**: Moradin
+non promette. Dice quello che sa, e non di più.
+
+> **MORADIN (piano, senza enfasi):** *«Con due pietre il varco si apre. Con due
+> pietre il varco si richiude quando decide lui, non quando decidete voi. La
+> terza non ve la posso dare: è di là.»*
+
+| La scelta | Cosa costa | Cosa apre |
+|---|---|---|
+| **Attraversare adesso** | il ritorno non è garantito dal lato di qua: si torna **solo** trovando il Rubino a −1.000 | il master #4 parte con una posta reale invece che con un viaggio turistico |
+| **Cercare prima un'alternativa** | l'orologio di Hammerfist scorre (**3g 16h** in `state.md`), e i PG lo sanno | una sessione in più, e un arrivo a Hammerfist con meno tempo |
+| **Mandare avanti uno solo** | Moradin rifiuta: *«Il varco conta quattro. Ne ha contati quattro anche mille anni fa.»* | niente — ma la battuta dice al tavolo **che di là li aspettano in quattro** |
+
+> 🎭 **Grigio politico.** Therysol non vuole che vadano. Il suo *Want* non
+> riguarda i PG: ha vegliato un corpo per sei giorni e non ha nessuna
+> intenzione di rifarlo. Se qualcuno glielo chiede, lo dice. Se nessuno glielo
+> chiede, **resta zitta e se ne ricorda**.
+
+> **Chiusura della scena, e dell'arco.** Il portale è chiuso. La Corona è
+> pronta. Quattro persone sono in piedi davanti a un affresco, e una di loro
+> respira da tre ore. **«Che fate?»**
+
+⚠️ **Non dire** che il Rubino sta *dentro* la battaglia di −1.000 e si spende
+lì: è la posta del master #4, e `state.md` la registra come **single-use SPENT
+at the ancient battle**. Qui il tavolo deve solo sapere che di là c'è una
+pietra, non cosa le succederà.
 
 ### Handout giocatore
 1. **La Preghiera della Resurrezione** (nanico + traduzione) — da leggere/far

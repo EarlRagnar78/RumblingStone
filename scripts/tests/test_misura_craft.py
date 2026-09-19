@@ -234,11 +234,12 @@ class TestGliStandardRedazionaliScrittiEMaiApplicati(unittest.TestCase):
         `d9c357b` a **ARC07-DEF-1 e basta**. Questo test non impone che resti
         così: impone che **cambiarlo sia deliberato**.
 
-        ✅ **Ed è successo il 2026-09-18, poche ore dopo.** La riscrittura di
-        DEF-4 ha portato la regia di round nel **secondo** documento del repo,
-        e questo cancello è diventato rosso — che era esattamente il suo scopo.
-        Aggiornato a mano, di proposito. Il prossimo a farlo diventare rosso
-        sarà DEF-5 o la Battaglia Finale, e si aggiungerà allo stesso modo.
+        ✅ **Ed è successo due volte.** Il 2026-09-18 la riscrittura di DEF-4
+        ha portato la regia di round nel **secondo** documento; il 2026-09-19
+        quella di DEF-3 nel **terzo** — il rito corale aveva sei step e nessuna
+        regia, che è il caso esatto che ADR-0014 §1 nomina. Ogni volta il
+        cancello è diventato rosso, che era il suo scopo, e ogni volta è stato
+        aggiornato a mano. Tre su nove archi: la strada è ancora lunga.
         """
         con = []
         for nome in MC.BERSAGLI:
@@ -246,6 +247,7 @@ class TestGliStandardRedazionaliScrittiEMaiApplicati(unittest.TestCase):
             if conta("regia di round (una battuta per attore)", testo):
                 con.append(nome)
         self.assertEqual(sorted(con), ["DEF-1 Piano della Terra",
+                                       "DEF-3 Resurrezione Hella",
                                        "DEF-4 Viaggio 1.000 anni"],
                          "la regia di round e' comparsa altrove (bene!) oppure "
                          "e' sparita da uno dei due (male): aggiornare di proposito")
@@ -342,10 +344,12 @@ class TestIDueCongegniDiMercer(unittest.TestCase):
                   "La regola e' **assorbi, poi rilancia** (yes-and with teeth)"), 1)
 
     def test_dove_sono_arrivati(self):
-        """Il fatto misurato. DEF-4 e' l'unico documento che li porta, ed e'
-        la riscrittura del 2026-09-18. Quando arriveranno altrove, questo
-        cancello va aggiornato **di proposito** — come e' gia' successo per
-        la regia di round, poche ore dopo averlo scritto."""
+        """Il fatto misurato, aggiornato il 2026-09-19: da UNO a DUE documenti.
+
+        DEF-4 li ha portati per primo (riscrittura del 2026-09-18), DEF-3 il
+        giorno dopo — il `[HDYWTDT]` allo Step 5 del rito, dove il richiamo
+        riesce e la voce finale la sceglie il giocatore invece del DM. Quando
+        arriveranno altrove, questo cancello va aggiornato **di proposito**."""
         for congegno in ("[HDYWTDT] il finisher al giocatore",
                          "assorbi e rilancia (yes-and with teeth)"):
             con = []
@@ -354,7 +358,8 @@ class TestIDueCongegniDiMercer(unittest.TestCase):
                 if conta(congegno, testo):
                     con.append(nome)
             with self.subTest(congegno=congegno):
-                self.assertEqual(con, ["DEF-4 Viaggio 1.000 anni"])
+                self.assertEqual(sorted(con), ["DEF-3 Resurrezione Hella",
+                                               "DEF-4 Viaggio 1.000 anni"])
 
 
 class TestIBersagliNonSiCampionanoInSilenzio(unittest.TestCase):

@@ -2371,6 +2371,88 @@
       ]
     },
     {
+      "id": "fase1",
+      "path": "scripts/fase1.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/fase1.py <bersagli>",
+      "summary": "L'analisi in sola lettura che precede ogni modifica: mette in fila cio' che il repo gia' sa sul bersaglio — quali norme del registro lo coprono, quali skill apre l'algoritmo a strati, quali dati di stato lo dichiarano (snapshot storico, archivio, DEPRECATO, matrice delle versioni), i 322 nomi propri del Bestiario e le misure di oggi. Una regex nuova viene dopo, mai prima.",
+      "use_case": "«Sto per toccare questi file: cosa il repo mi sta gia' dicendo, prima che io scriva un rilevatore che se lo inventa?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "bersagli",
+          "type": "path",
+          "required": true,
+          "repeatable": true,
+          "desc": "file o modelli glob relativi alla radice del repo"
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "desc": "esce 1 se un bersaglio e' un archivio dichiarato"
+        }
+      ],
+      "inputs": [
+        {
+          "path": "skills/REGISTRO-NORME-EDITORIALI.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "skills/ORCHESTRAZIONE.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "campaign/state.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "stdout",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "analisi stampata",
+        "1": "--check: un bersaglio e' un archivio dichiarato"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Sola lettura."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/fase1.py 'plans/INDEX.md'",
+      "tests": [
+        "scripts/tests/test_help_di_ogni_tool.py",
+        "scripts/tests/test_fase1.py"
+      ],
+      "docs": [
+        "plans/PIANO-QUATTRO-ORDINI-2026-09-20.md"
+      ]
+    },
+    {
       "id": "genera_creatura",
       "path": "scripts/genera_creatura.py",
       "category": "E-bestiary-catalog",
@@ -3199,6 +3281,99 @@
       "tests": [],
       "docs": [
         "scripts/README.md"
+      ]
+    },
+    {
+      "id": "misura_craft",
+      "path": "scripts/misura_craft.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/misura_craft.py",
+      "summary": "Conta i congegni di mestiere dichiarati (read-aloud, contingenze, orologi, pilastro lead/support...) in ogni arco e li confronta con i due banchi: Abbazia e Palio.",
+      "use_case": "«Lo stile e i congegni nuovi sono arrivati in questa parte, o e' rimasta indietro?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--densita",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Normalizza ogni conteggio su 1.000 righe (confronto fra documenti di taglia diversa)."
+        },
+        {
+          "name": "--box",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "I box read-aloud contro le soglie di read-aloud-adulti.md (<=12 righe, un nome proprio, niente parentesi)."
+        },
+        {
+          "name": "--spotlight",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Equilibrio dei quattro PG contro la norma «nessun PG oltre il 40%» di pc-protagonism.md."
+        },
+        {
+          "name": "--copertura",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Quanti congegni su N, e quali hanno i banchi che qui mancano."
+        },
+        {
+          "name": "--mancanti",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Elenca, per ogni bersaglio, i congegni a zero."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "07_il Portale Della Forgia Eterna/**/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "un modello di percorso non pesca nessun file"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Scansione ordinata, nessuna scrittura."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/misura_craft.py --help",
+      "tests": [
+        "scripts/tests/test_help_di_ogni_tool.py",
+        "scripts/tests/test_misura_craft.py"
+      ],
+      "docs": [
+        "plans/PIANO-PORTARE-IL-MESTIERE-DEI-BANCHI.md"
       ]
     },
     {
@@ -5196,6 +5371,53 @@
       ]
     },
     {
+      "id": "validate_norme_editoriali",
+      "path": "scripts/validate_norme_editoriali.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/validate_norme_editoriali.py",
+      "summary": "Verifica che ogni norma editoriale sia registrata e che ogni rimando a uno strumento di misura esista davvero.",
+      "use_case": "«Questa norma di stile la guarda qualcuno, o e' ferma da settimane senza che nessuno se ne accorga?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [],
+      "inputs": [
+        {
+          "path": "skills/REGISTRO-NORME-EDITORIALI.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Sola lettura."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/validate_norme_editoriali.py",
+      "tests": [
+        "scripts/tests/test_help_di_ogni_tool.py",
+        "scripts/tests/test_norme_editoriali.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0056-una-norma-senza-misura-non-esiste.md"
+      ]
+    },
+    {
       "id": "validate_prosa",
       "path": "scripts/validate_prosa.py",
       "category": "G-orchestration-governance",
@@ -5579,146 +5801,6 @@
         "network": false
       },
       "idempotent": true
-    },
-    {
-      "id": "misura_craft",
-      "path": "scripts/misura_craft.py",
-      "category": "G-orchestration-governance",
-      "language": "python",
-      "invocation": "python3 scripts/misura_craft.py",
-      "summary": "Conta i congegni di mestiere dichiarati (read-aloud, contingenze, orologi, pilastro lead/support...) in ogni arco e li confronta con i due banchi: Abbazia e Palio.",
-      "use_case": "«Lo stile e i congegni nuovi sono arrivati in questa parte, o e' rimasta indietro?»",
-      "stability": "beta",
-      "stdlib_only": true,
-      "external_bins": [],
-      "args": [
-        {
-          "name": "--densita",
-          "type": "bool",
-          "required": false,
-          "default": false,
-          "choices": null,
-          "repeatable": false,
-          "desc": "Normalizza ogni conteggio su 1.000 righe (confronto fra documenti di taglia diversa)."
-        },
-        {
-          "name": "--box",
-          "type": "bool",
-          "required": false,
-          "default": false,
-          "choices": null,
-          "repeatable": false,
-          "desc": "I box read-aloud contro le soglie di read-aloud-adulti.md (<=12 righe, un nome proprio, niente parentesi)."
-        },
-        {
-          "name": "--spotlight",
-          "type": "bool",
-          "required": false,
-          "default": false,
-          "choices": null,
-          "repeatable": false,
-          "desc": "Equilibrio dei quattro PG contro la norma «nessun PG oltre il 40%» di pc-protagonism.md."
-        },
-        {
-          "name": "--copertura",
-          "type": "bool",
-          "required": false,
-          "default": false,
-          "choices": null,
-          "repeatable": false,
-          "desc": "Quanti congegni su N, e quali hanno i banchi che qui mancano."
-        },
-        {
-          "name": "--mancanti",
-          "type": "bool",
-          "required": false,
-          "default": false,
-          "choices": null,
-          "repeatable": false,
-          "desc": "Elenca, per ogni bersaglio, i congegni a zero."
-        }
-      ],
-      "inputs": [
-        {
-          "path": "07_il Portale Della Forgia Eterna/**/*.md",
-          "kind": "markdown",
-          "required": true,
-          "schema": null
-        }
-      ],
-      "outputs": [],
-      "exit_codes": {
-        "0": "ok",
-        "1": "un modello di percorso non pesca nessun file"
-      },
-      "determinism": {
-        "deterministic": true,
-        "seed_flag": null,
-        "notes": "Scansione ordinata, nessuna scrittura."
-      },
-      "side_effects": {
-        "writes_canon": false,
-        "git_commit": false,
-        "network": false
-      },
-      "idempotent": true,
-      "consumes_schema": null,
-      "produces_schema": null,
-      "ci_smoke": "python scripts/misura_craft.py --help",
-      "tests": [
-        "scripts/tests/test_help_di_ogni_tool.py",
-        "scripts/tests/test_misura_craft.py"
-      ],
-      "docs": [
-        "plans/PIANO-PORTARE-IL-MESTIERE-DEI-BANCHI.md"
-      ]
-    },
-    {
-      "id": "validate_norme_editoriali",
-      "path": "scripts/validate_norme_editoriali.py",
-      "category": "G-orchestration-governance",
-      "language": "python",
-      "invocation": "python3 scripts/validate_norme_editoriali.py",
-      "summary": "Verifica che ogni norma editoriale sia registrata e che ogni rimando a uno strumento di misura esista davvero.",
-      "use_case": "«Questa norma di stile la guarda qualcuno, o e' ferma da settimane senza che nessuno se ne accorga?»",
-      "stability": "beta",
-      "stdlib_only": true,
-      "external_bins": [],
-      "args": [],
-      "inputs": [
-        {
-          "path": "skills/REGISTRO-NORME-EDITORIALI.md",
-          "kind": "markdown",
-          "required": true,
-          "schema": null
-        }
-      ],
-      "outputs": [],
-      "exit_codes": {
-        "0": "ok",
-        "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
-      },
-      "determinism": {
-        "deterministic": true,
-        "seed_flag": null,
-        "notes": "Sola lettura."
-      },
-      "side_effects": {
-        "writes_canon": false,
-        "git_commit": false,
-        "network": false
-      },
-      "idempotent": true,
-      "consumes_schema": null,
-      "produces_schema": null,
-      "ci_smoke": "python scripts/validate_norme_editoriali.py",
-      "tests": [
-        "scripts/tests/test_help_di_ogni_tool.py",
-        "scripts/tests/test_norme_editoriali.py"
-      ],
-      "docs": [
-        "plans/adr/ADR-0056-una-norma-senza-misura-non-esiste.md"
-      ]
     }
   ]
 }

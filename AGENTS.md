@@ -201,6 +201,40 @@ danno un testo che sbaglia in entrambi i modi. **Il bersaglio misurabile è
 *zero omissioni di ciò che è obbligatorio*** — e l'obbligo vero è su **L0-L2**.
 L4 e LR **non** si caricano per sicurezza.
 
+#### 🔎 Sesto obbligo: **la FASE 1 si esegue in sola lettura, prima di toccare**
+
+Il DM, il 2026-09-20: *«mettere una golden rule che esegue i passi della Fase 1
+di analisi in sola lettura […] e si usa preferibilmente il registro delle
+norme, l'algoritmo a strati e i 322 nomi di Bestiario prima di qualsiasi regex,
+in modo da eliminare errori di analisi ricorrenti»*.
+
+> **6. Prima di modificare qualunque cosa, esegui
+> `python3 scripts/fase1.py <bersagli>`.** I quattro passi vanno in
+> **quest'ordine**, e una regex nuova è l'ultima risorsa.
+
+| # | La domanda | Chi la risponde, e perché prima della regex |
+|---|---|---|
+| **1** | «questa cosa la misura già qualcuno?» | [`skills/REGISTRO-NORME-EDITORIALI.md`](skills/REGISTRO-NORME-EDITORIALI.md). Se sì **si riusa**: *una norma, un rilevatore* ([RICERCA-STANDARD-PROSA](plans/RICERCA-STANDARD-PROSA-WOTC-PAIZO-2026-09.md) §4) |
+| **2** | «quali skill devo avere aperte?» | [`skills/ORCHESTRAZIONE.md`](skills/ORCHESTRAZIONE.md), le cinque domande. Il bersaglio risponde **da sé** alla 2: un file sotto `plans/` parla al repo, uno d'arco parla al tavolo |
+| **3** | «cosa è archivio, cosa è superato, chi sono i nomi propri?» | i **322 nomi** da `Bestiario/` e `state.md`; `_SNAPSHOT-STORICO.md`; `ESCLUSI_NOME`; le matrici delle versioni |
+| **4** | «da che numero parto?» | `misura_craft`, sui bersagli veri e non su un campione |
+
+🔴 **Non è una precauzione: è la classifica dei difetti veri.** Quattordici
+misure sbagliate fra il 2026-09-17 e il 2026-09-20, e **nessuna** veniva da una
+regex scritta male. Venivano tutte dall'aver scritto una regex **prima di
+guardare se il dato c'era già** — la virgola contata come trigger (82 coppie
+invece di 5), «web» che cattura *web enhancement* (80% invece di 39%), «caso»
+che è italiano comune (55 indagini invece di 3), le maiuscole d'inizio frase
+contate come nomi propri (nove box invece di tre, **e il numero falso finito
+nel corpo di una PR**), un filtro di percorso che non scattava mai (1.548 file
+invece di 511).
+
+⚠️ **Questa regola nasce già violata.** L'ordine del DM è arrivato mentre
+scrivevo la FASE 1 di `PIANO-QUATTRO-ORDINI-2026-09-20`, e quella FASE 1 aveva
+appena commesso **due** degli errori dell'elenco. Il cancello `--check` esiste
+per il primo dei due: `fase1.py --check` **esce 1** se stai per modificare un
+archivio che il repo dichiara tale.
+
 ### Cosa carico, in base a cosa sto per fare
 
 | Sto per… | Carico (obbligatorie in **grassetto**) |

@@ -1864,6 +1864,37 @@
       "deterministic": true
     },
     {
+      "name": "fase1",
+      "description": "«Sto per toccare questi file: cosa il repo mi sta gia' dicendo, prima che io scriva un rilevatore che se lo inventa?»\n\nL'analisi in sola lettura che precede ogni modifica: mette in fila cio' che il repo gia' sa sul bersaglio — quali norme del registro lo coprono, quali skill apre l'algoritmo a strati, quali dati di stato lo dichiarano (snapshot storico, archivio, DEPRECATO, matrice delle versioni), i 322 nomi propri del Bestiario e le misure di oggi. Una regex nuova viene dopo, mai prima.",
+      "use_case": "«Sto per toccare questi file: cosa il repo mi sta gia' dicendo, prima che io scriva un rilevatore che se lo inventa?»",
+      "invocation": "python3 scripts/fase1.py <bersagli>",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "bersagli": {
+            "type": "string",
+            "description": "file o modelli glob relativi alla radice del repo"
+          },
+          "check": {
+            "type": "boolean",
+            "description": "esce 1 se un bersaglio e' un archivio dichiarato"
+          }
+        },
+        "required": [
+          "bersagli"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "analisi stampata",
+        "1": "--check: un bersaglio e' un archivio dichiarato"
+      },
+      "deterministic": true
+    },
+    {
       "name": "install_git_hooks",
       "description": "«Come faccio a non scoprire in CI quello che il repo poteva dirmi prima del push?»\n\nInstalla gli hook git locali: post-merge (resync mirror skill) e pre-push (gate ADR-0009).",
       "use_case": "«Come faccio a non scoprire in CI quello che il repo poteva dirmi prima del push?»",

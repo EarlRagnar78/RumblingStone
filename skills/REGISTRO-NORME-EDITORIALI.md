@@ -79,6 +79,8 @@
 | `rumblingstone-module-standard` §8 | sidebar **«Scalare lo scontro»** obbligatoria per i boss | 🟢 congegno `scalare lo scontro` — e dice **zero** in tutti i 71 file di ARC-08 e ARC-09 |
 | `rumblingstone-prosa-documenti` | norme sui **documenti** del repo (non sul contenuto di gioco) | 🟢 `validate_prosa.py --documenti` |
 | `rumblingstone-editoria` | impaginazione, riquadri, statblocchi in stampa | 🟢 `validate_booklets.py --stampa` |
+| `ADR-0060` (norma WotC/Paizo) | **caratteristiche e abilità maiuscole** nelle quattro forme meccaniche: `Forza 25` · `Nuotare +9` · `prova di X` con una CD · `bonus di X` | 🟢 `validate_prosa.py --caratteristiche` — 258 occorrenze sotto controllo, soglia **zero**, e **fuori dalle quattro forme non si misura** (una frase discorsiva senza CD non si vede: costerebbe più falsi positivi di quanti errori trovi) |
+| `ADR-0060` (norma WotC/Paizo) | le **sigle** di caratteristica — `For 25`, `Des 14`, 688 occorrenze | ⚪ non applicabile — sono maiuscole per costruzione, non c'è niente da controllare |
 
 ---
 
@@ -86,10 +88,18 @@
 
 | | Norme registrate |
 |---|---:|
-| 🟢 misurate | 14 |
+| 🟢 misurate | 15 |
 | 🟡 misurate in parte, con il limite scritto | 8 |
 | 🔴 **non misurate, con la ragione scritta** | 11 |
-| ⚪ non applicabili | 2 |
+| ⚪ non applicabili | 3 |
+
+🔎 **Una norma è passata da 🔴 a 🟢, e non perché sia cambiato il repo.** Le
+maiuscole di caratteristiche e abilità erano archiviate come non misurabili
+dal 2026-09-19 con una ragione che sembrava definitiva: *«in italiano* Forza
+*è anche un sostantivo comune»*. Vero del rilevatore, falso della norma.
+Cercare la **forma** invece della parola porta 2.014 occorrenze inutilizzabili
+a **258 sotto controllo con zero falsi positivi** ([ADR-0060](../plans/adr/ADR-0060-la-forma-rende-misurabile-cio-che-la-parola-non-distingue.md)).
+Prima di scrivere «non misurabile», vale la pena cercare la forma.
 
 🔴 **Undici norme su trentaquattro non sono guardate da niente**, e nove delle undici
 hanno la stessa causa: **i moduli non marcano le cose di cui la norma parla**

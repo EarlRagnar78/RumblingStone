@@ -184,7 +184,7 @@ senza il suo punto di riscossione è una nota.
    artefatto che parla al suo portatore) e la **visione interiore** già
    accaduta al personaggio.
 
-### 2D · Le caratteristiche entrano fra le cose misurate
+### 2D · Le caratteristiche entrano fra le cose misurate ✅ *(chiuso 2026-09-20)*
 
 1. Nuovo controllo in `validate_prosa.py` sulle quattro forme di §1.3
    (l'unico posto del repo dove vivono i controlli di norma editoriale sul
@@ -197,7 +197,7 @@ senza il suo punto di riscossione è una nota.
    Numero verificato libero: l'ultimo scritto è 0058, il 0059 è **prenotato**
    da `PIANO-MISURA-EDITORIALE` §F2.5.
 
-### 2E · La sesta regola d'oro — la FASE 1 si esegue, non si ricorda
+### 2E · La sesta regola d'oro — la FASE 1 si esegue, non si ricorda ✅ *(chiuso 2026-09-20)*
 
 > **6. Prima di modificare qualunque cosa, esegui la FASE 1 in sola lettura, e
 > in quest'ordine: il registro delle norme, l'algoritmo a strati, i dati che il

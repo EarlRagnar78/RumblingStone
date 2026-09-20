@@ -69,13 +69,60 @@ danno della violazione.
 - **«La prosa è bella».** Nessuna di queste norme lo misura. Sono tutte
   conformità a specifiche (ISO 5060), e un testo a punteggio pieno può essere
   noioso. Resta il collaudo al tavolo.
-- **Le maiuscole di caratteristiche e abilità** (§1.2). In italiano la
+- 🔴 ~~**Le maiuscole di caratteristiche e abilità** (§1.2). In italiano la
   convenzione WotC non si trasferisce pulita: *Forza* è anche un sostantivo
-  comune, e un rilevatore darebbe più falsi positivi che errori. Si registra
-  come norma **non misurata, con la ragione**, come prescrive ADR-0056.
+  comune, e un rilevatore darebbe più falsi positivi che errori.~~
+  **Ritirata il 2026-09-20: vedi §3-bis.** Era vera del rilevatore che avevo in
+  mente, e falsa della norma.
 - **Il conteggio parole per sezione.** Le guide Paizo lo fissano per i loro
   formati; qui i formati sono altri, e importare un numero altrui sarebbe
   l'errore di taratura già documentato con Gulpease.
+
+---
+
+## 3-bis · 🔴 Una previsione sbagliata, e la misura che la corregge
+
+Il DM, il giorno dopo la pubblicazione:
+
+> *«se compaiono nello statblock di un PNG o mostro sono seguiti da un numero,
+> come ad esempio* Forza 25*; nel caso di prove non dovrebbe essere nella forma
+> simile a* prova di Forza CD 25*? In questo modo è più facile distinguerli?
+> Puoi verificare se apporta dei miglioramenti misurandoli?»*
+
+Verificato, e l'obiezione è fondata. **Non si cerca la parola: si cerca la
+forma meccanica**, che un sostantivo comune non ha mai.
+
+| | Occorrenze nei 511 file di gioco | Fuori norma | Falsi positivi, contati a mano |
+|---|---|---|---|
+| il matcher nudo, quello che avevo in mente | **2.014** | — | inutilizzabile |
+| **F1** caratteristica + punteggio (`Forza 25`) | 1 | 0 | 0 |
+| **F2** abilità + modificatore, **nessuno spazio dopo il segno** (`Nuotare +9`) | 213 | 0 | 0 |
+| **F3** `prova/tiro/TS di X` con una **CD sulla stessa riga** | 38 | 2 | 0 |
+| **F4** `bonus/modificatore di X` | 6 | 1 | 0 |
+| **le quattro forme insieme** | **258** | **3** | **0** |
+
+🔎 **Tre cose che solo la misura poteva dire, e nessuna era prevedibile.**
+
+- **F1 trova una sola occorrenza**, perché questo repo scrive le caratteristiche
+  **in sigla**: `For 25`, `Des 14`, **688** volte. La forma nominata dal DM è
+  giusta, il repo la applica già, in un'altra grafia.
+- **F2 ha dovuto vietare lo spazio dopo il segno.** Scritta larga catturava
+  *«40.500 mo in oggetti di artigianato + 1 Sacrificio Personale»*: tre falsi
+  positivi su tre, azzerati dalla stretta senza perdere un caso vero.
+- **`intuizione` è stata tolta dall'elenco delle abilità, e l'ha trovata il
+  cancello stesso.** Col lemma dentro, il conto saliva da 3 a **25**, e le
+  ventidue in più erano *«bonus di intuizione +4»* — in 3.5 un **tipo di
+  bonus**, non l'abilità, che è *Percepire Intenzioni*. È il quindicesimo caso
+  della famiglia «un criterio largo si inventa copertura», e il primo trovato
+  **prima** del commit invece che in una PR dopo.
+
+Il controllo è `validate_prosa.py --caratteristiche`, la decisione è
+[ADR-0060](adr/ADR-0060-la-forma-rende-misurabile-cio-che-la-parola-non-distingue.md),
+le tre violazioni sono corrette e la soglia è **zero**.
+
+> **La regola che ne esce**, e vale oltre questo caso: prima di dichiarare non
+> misurabile una norma su un termine ambiguo, **cerca la forma**. Poi, se la
+> forma non c'è, scrivilo — ma scrivilo dopo averla cercata.
 
 ---
 

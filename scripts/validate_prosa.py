@@ -696,6 +696,107 @@ def file_di_contenuto() -> list[Path]:
     return sorted(out)
 
 
+# ─────────────────────────────────────────────────────────────────────────
+# §1.2 — caratteristiche e abilità maiuscole (norma WotC/Paizo)
+#
+# 🔴 **Questa norma era stata archiviata come non misurabile**, il 2026-09-19,
+# con questa ragione scritta: *«in italiano* Forza *è anche un sostantivo
+# comune, e un rilevatore darebbe più falsi positivi che errori»*. Era vero del
+# matcher che avevo in mente — `\bforza\b` pesca **2.014** occorrenze nei 511
+# file di gioco, quasi tutte sostantivi comuni — e **falso della norma**.
+#
+# Il DM, il 2026-09-20: *«se compaiono nello statblock di un PNG sono seguiti da
+# un numero… nel caso di prove non dovrebbe essere nella forma "prova di Forza
+# CD 25"? In questo modo è più facile distinguerli?»*. Sì: non si cerca la
+# **parola**, si cerca la **forma meccanica**, che un sostantivo comune non ha.
+#
+# Misurato sui 511 file di gioco: **258 occorrenze sotto le quattro forme, 3
+# fuori norma, zero falsi positivi** (controllati a mano, uno per uno).
+#
+# ⚠️ Due tarature che solo la misura poteva dare:
+#
+#  * **F1 trova quasi nulla** perché questo repo scrive le caratteristiche in
+#    **sigla** — `For 25`, `Des 14`, 688 volte — e le sigle sono maiuscole per
+#    costruzione. La forma nominata dal DM esiste, è giusta, e qui è rara.
+#  * **F2 ha dovuto vietare lo spazio dopo il segno.** Scritta `\s*[+-]\s*\d`
+#    catturava *«40.500 mo in oggetti di artigianato + 1 Sacrificio Personale»*:
+#    tre falsi positivi su tre. `Nuotare +9` sì, `artigianato + 1` no.
+CARATTERISTICHE = ("forza", "destrezza", "costituzione", "intelligenza",
+                   "saggezza", "carisma")
+#: Le abilità 3.5 nella grafia italiana del repo. Elenco esplicito e non una
+#: classe di parole: un'abilità in più che manca è un falso negativo (si
+#: aggiunge), una parola comune di troppo sarebbe un falso positivo (non si
+#: recupera più).
+#:
+#: 🔴 **`intuizione` è uscita da qui, e l'ha trovata il cancello stesso.** Al
+#: primo giro l'elenco la conteneva e il conto saliva da 3 a 25: ventidue erano
+#: *«bonus di intuizione +4»*, che in 3.5 è un **tipo di bonus** (*insight
+#: bonus*) e va minuscolo. L'abilità 3.5 è *Percepire Intenzioni*; *Intuizione*
+#: è il nome 5e/PF, e questa campagna è 3.5. Quindicesimo caso della stessa
+#: famiglia — un criterio largo che si inventa copertura — e il primo in cui a
+#: trovarlo è stato il controllo nuovo prima del commit, non una PR dopo.
+ABILITA = ("acrobazia", "addestrare animali", "artigianato", "artista della fuga",
+           "ascoltare", "camuffare", "cavalcare", "cercare", "concentrazione",
+           "decifrare scritture", "diplomazia", "disattivare congegni",
+           "equilibrio", "falsificare", "guarire", "intimidire",
+           "nascondersi", "nuotare", "osservare", "percepire intenzioni",
+           "professione", "raccogliere informazioni", "rapidità di mano",
+           "saltare", "sapienza magica", "scalare", "scassinare serrature",
+           "seguire tracce", "sopravvivenza", "utilizzare congegni magici",
+           "valutare")
+_TUTTE = "|".join(re.escape(x) for x in CARATTERISTICHE + ABILITA)
+_CAR = "|".join(re.escape(x) for x in CARATTERISTICHE)
+_ABI = "|".join(re.escape(x) for x in ABILITA)
+
+FORME_CARATTERISTICA = (
+    ("F1 punteggio nello statblock", re.compile(rf"\b({_CAR})\s+(\d{{1,2}})\b", re.I), None),
+    ("F2 abilità col modificatore", re.compile(rf"\b({_ABI})\s*[+-]\d{{1,2}}\b", re.I), None),
+    ("F3 prova con una CD", re.compile(
+        rf"\b(?:prov[ae]|tiri?|TS|test|verifich?[ae])\s+(?:di|su|sulla|sul|della|del)\s+({_TUTTE})\b", re.I),
+     re.compile(r"\b(?:CD|DC)\s*\d+", re.I)),
+    ("F4 modificatore o bonus", re.compile(
+        rf"\b(?:mod\.?|modificatore|bonus|malus|penalità)\s+(?:di|a|alla|al)\s+({_TUTTE})\b", re.I), None),
+)
+
+
+def controlla_caratteristiche(f: Path) -> list[str]:
+    """Caratteristiche e abilità maiuscole, cercate per forma e non per parola."""
+    rel = f.relative_to(ROOT) if ROOT in f.parents else f
+    fuori: list[str] = []
+    for n, riga in enumerate(f.read_text(encoding="utf-8", errors="ignore").splitlines(), 1):
+        for nome, rx, condizione in FORME_CARATTERISTICA:
+            if condizione is not None and not condizione.search(riga):
+                continue
+            for m in rx.finditer(riga):
+                if m.group(1)[0].islower():
+                    fuori.append(
+                        f"{rel}:{n}: «{m.group(0).strip()}» — {nome}: caratteristiche "
+                        f"e abilità vanno maiuscole (norma WotC/Paizo)")
+    return fuori
+
+
+def file_di_gioco() -> list[Path]:
+    """Il contenuto di gioco, **archivi esclusi come il repo li dichiara**.
+
+    Non si riscrive un elenco di esclusioni: si riusa `ESCLUSI`/`ESCLUSI_NOME`
+    di `misura_craft` e il marcatore `_SNAPSHOT-STORICO.md` che le cartelle
+    d'archivio si mettono da sole. È il passo 3 della sesta regola d'oro.
+    """
+    import misura_craft as mc
+
+    snapshot = {p.parent for p in ROOT.rglob("_SNAPSHOT-STORICO.md")}
+    out = file_di_contenuto()
+    bestiario = ROOT / "Bestiario"
+    if bestiario.is_dir():
+        out += [p for p in bestiario.rglob("*.md") if not p.name.endswith(".hb.md")]
+    return sorted(
+        p for p in out
+        if not any(x in p.parts for x in mc.ESCLUSI)
+        and not any(x in p.name for x in mc.ESCLUSI_NOME)
+        and not any(s in p.parents for s in snapshot)
+    )
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("files", nargs="*")
@@ -703,6 +804,9 @@ def main(argv=None) -> int:
                     help="i rilievi diventano errori (exit 1)")
     ap.add_argument("--documenti", action="store_true",
                     help="misura guide, ADR, piani e skill invece del contenuto")
+    ap.add_argument("--caratteristiche", action="store_true",
+                    help="caratteristiche e abilità maiuscole (norma WotC/Paizo), "
+                         "cercate per forma meccanica e non per parola")
     ap.add_argument("--prima-dopo", action="store_true",
                     help="confronta i file con una revisione git: dice se una "
                          "riscrittura ha tolto tic o ne ha aggiunti")
@@ -720,6 +824,20 @@ def main(argv=None) -> int:
             print(r if r.startswith("    ") else f"  · {r}")
         print(f"  ({len(bersagli)} file confrontati con {args.rispetto_a})")
         return 0
+
+    if args.caratteristiche:
+        bersagli = [Path(f).resolve() for f in args.files] if args.files else file_di_gioco()
+        rilievi = [r for f in bersagli if f.is_file()
+                   for r in controlla_caratteristiche(f)]
+        if not rilievi:
+            print(f"✓ validate_prosa --caratteristiche: {len(bersagli)} file di gioco "
+                  f"— ogni caratteristica e abilità in forma meccanica è maiuscola")
+            return 0
+        print(f"✗ validate_prosa --caratteristiche: {len(rilievi)} rilievi "
+              f"in {len(bersagli)} file di gioco")
+        for r in rilievi:
+            print(f"  - {r}")
+        return 1
 
     if args.documenti:
         bersagli = [Path(f).resolve() for f in args.files] if args.files else documenti()

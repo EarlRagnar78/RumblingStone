@@ -114,6 +114,18 @@ jobs:
       - name: Norme editoriali — ogni norma ha un misuratore o una ragione
         run: python scripts/validate_norme_editoriali.py
 
+      # Il gemello del passo sopra, dall'altro lato: quello controlla che ogni
+      # norma dica CHI la guarda, questo che ogni «nessuno la guarda» dica
+      # COSA MANCA — e lo rimisura invece di fidarsi della prosa. La ragione
+      # scritta a mano invecchia in silenzio: e' successo ai «27 ADR mancanti»,
+      # che erano zero e non erano mai stati ventisette. ADR-0062.
+      #
+      # ⚠️ Una superficie vuota NON e' un difetto e non boccia: boccia una riga
+      # che ha smesso di dire il vero, cioe' una norma diventata misurabile che
+      # il registro dichiara ancora 🔴.
+      - name: Superficie delle norme scoperte — manca il codice o manca il dato?
+        run: python scripts/superficie_norme.py --check
+
       # Terzo della stessa famiglia: misura la LEGGIBILITA' dell'artefatto, che
       # nessun exit code vede. Gerarchia dei titoli (i segnalibri del PDF),
       # caratteri per riga dalle metriche vere del font, e le coppie di colori

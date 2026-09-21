@@ -2080,6 +2080,33 @@
       "deterministic": true
     },
     {
+      "name": "superficie_norme",
+      "description": "«Undici norme sono marcate non-misurate: quante posso davvero chiudere scrivendo codice?» La risposta misurata e' una su nove.\n\nPer ogni norma editoriale che nessuno misura, dice se manca il CODICE o manca il DATO: superficie vuota (la convenzione esiste e ha zero occorrenze), convenzione assente (nessuno ha deciso come si marca), oggetto assente (il file non esiste) o fuori dominio (il fatto non sta nel testo). Deterministico e idempotente: solo conteggi di forme dichiarate su un insieme di file ordinato.",
+      "use_case": "«Undici norme sono marcate non-misurate: quante posso davvero chiudere scrivendo codice?» La risposta misurata e' una su nove.",
+      "invocation": "python3 scripts/superficie_norme.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "json": {
+            "type": "boolean",
+            "description": "Report in JSON, per la catena."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Esce 1 se una riga ha smesso di dire il vero. Una superficie VUOTA non boccia: e' un fatto, non un difetto."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
+      },
+      "deterministic": true
+    },
+    {
       "name": "tools_manifest",
       "description": "«Il manifest dice ancora la verità sugli script, o qualcuno ha aggiunto un flag senza dichiararlo?»\n\nFonte di verita' -> artefatti: valida scripts/tools.manifest.json contro lo schema, verifica la copertura degli script e genera registry.json, README.md e mcp-tools.json.",
       "use_case": "«Il manifest dice ancora la verità sugli script, o qualcuno ha aggiunto un flag senza dichiararlo?»",

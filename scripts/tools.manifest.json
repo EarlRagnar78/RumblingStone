@@ -5562,6 +5562,72 @@
       ]
     },
     {
+      "id": "superficie_norme",
+      "path": "scripts/superficie_norme.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/superficie_norme.py",
+      "summary": "Per ogni norma editoriale che nessuno misura, dice se manca il CODICE o manca il DATO: superficie vuota (la convenzione esiste e ha zero occorrenze), convenzione assente (nessuno ha deciso come si marca), oggetto assente (il file non esiste) o fuori dominio (il fatto non sta nel testo). Deterministico e idempotente: solo conteggi di forme dichiarate su un insieme di file ordinato.",
+      "use_case": "«Undici norme sono marcate non-misurate: quante posso davvero chiudere scrivendo codice?» La risposta misurata e' una su nove.",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Report in JSON, per la catena."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se una riga ha smesso di dire il vero. Una superficie VUOTA non boccia: e' un fatto, non un difetto."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "skills/REGISTRO-NORME-EDITORIALI.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Sola lettura."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/validate_norme_editoriali.py",
+      "tests": [
+        "scripts/tests/test_help_di_ogni_tool.py",
+        "scripts/tests/test_norme_editoriali.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0056-una-norma-senza-misura-non-esiste.md"
+      ]
+    },
+    {
       "id": "validate_prosa",
       "path": "scripts/validate_prosa.py",
       "category": "G-orchestration-governance",

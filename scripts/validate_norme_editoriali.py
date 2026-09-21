@@ -53,6 +53,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "scripts"))
 REGISTRO = ROOT / "skills" / "REGISTRO-NORME-EDITORIALI.md"
 
 #: La superficie normativa: dove vivono le regole di prosa, stile e linea
@@ -239,7 +240,33 @@ def controlla() -> "list[str]":
             "rivendica: una norma che conta senza essere registrata e' il "
             "difetto che ADR-0056 presidia, al contrario")
 
-    # 6 · il conto del §4 e' quello vero
+    # 6 · ogni 🔴 ha la sua riga in superficie_norme, e la riga non mente
+    #
+    # ⚠️ ADR-0056 pretende che un «non misurato» porti una **ragione scritta**.
+    # Dal 2026-09-21 pretende una cosa in piu': che la ragione sia **rimisurata
+    # da un comando**. Una ragione in prosa invecchia come qualunque altra cosa
+    # scritta a mano — e' successo ai «27 ADR mancanti», che erano zero.
+    try:
+        import superficie_norme as sn  # noqa: PLC0415
+        errori.extend(sn.problemi())
+        coperte = {r["chiave"] for r in sn.misura()}
+        # 🐛 La prima stesura contava «🔴 in tutta la cella» e ne trovava **11**
+        # invece di 9: due righe 🟢 citano un 🔴 dentro la loro spiegazione — il
+        # `[HDYWTDT]` che «era a zero in tutti e nove gli archi», e la norma
+        # positiva che «misura e non pesa». Lo stesso difetto che il conto del
+        # §4 aveva prima di F1.2, ripetuto da me nel controllo che lo presidia.
+        # Il criterio giusto e' il **prefisso**, ed e' gia' scritto in
+        # `conto_vero`: si riusa invece di ricopiarlo.
+        rosse = conto_vero(testo)["🔴"]
+        if rosse != len(coperte):
+            errori.append(
+                f"il registro ha {rosse} norme 🔴 e superficie_norme ne descrive "
+                f"{len(coperte)}: ogni «non misurato» deve avere la sua riga, "
+                "altrimenti la ragione torna a essere prosa che nessuno rimisura")
+    except ImportError:          # pragma: no cover
+        errori.append("manca scripts/superficie_norme.py, che il registro richiama")
+
+    # 7 · il conto del §4 e' quello vero
     conto = conto_vero(testo)
     for emoji, atteso in re.findall(r"^\|\s*(🟢|🟡|🔴|⚪)[^|]*\|\s*(\d+)\s*\|$",
                                     testo, re.M):

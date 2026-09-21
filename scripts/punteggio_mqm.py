@@ -238,6 +238,20 @@ def stampa_norme(spec: dict) -> None:
         print(f"\n⚠️  Il registro elenca {tot} norme; qui ne entrano "
               f"{len(spec['norme'])}.")
         print("   Le altre non hanno un rilevatore, e valere zero sarebbe una bugia.")
+        # 🔎 «Le altre» era una frase, e una frase non dice **cosa manca**.
+        # Dal 2026-09-21 ogni norma scoperta porta il suo stato di superficie,
+        # cosi' la riga smette di essere una scusa e diventa un elenco di lavoro
+        # con il suo prerequisito accanto (ADR-0062).
+        import superficie_norme as sn  # noqa: PLC0415
+        conta: "dict[str, int]" = {}
+        for r in sn.misura():
+            conta[r["stato"]] = conta.get(r["stato"], 0) + 1
+        print("\n   Delle scoperte, cosa manca davvero — "
+              "`python3 scripts/superficie_norme.py` per il dettaglio:")
+        for stato, n in sorted(conta.items()):
+            print(f"     {sn.ETICHETTA[stato]:26} {n}")
+        print("   🔎 Per otto su nove **non manca il codice**: manca il dato, la")
+        print("      convenzione di marcatura, o il fatto non sta nel testo.")
         pesi = [spec["severita"][n["severita"]]["peso"] for n in spec["norme"].values()]
         print(f"   🔎 E pesano poco: {sum(1 for p in pesi if p == 1)} minori su "
               f"{len(pesi)}. Il punteggio di oggi misura il bordo, non il centro "

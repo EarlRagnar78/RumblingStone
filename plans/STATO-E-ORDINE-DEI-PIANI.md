@@ -302,7 +302,7 @@ per momento del ciclo.
 
 | | Lotto | Dove | Il comando che dice a che punto è |
 |---|---|---|---|
-| ⬜ | **2C** — i box read-aloud che presuppongono un'azione del giocatore | [PIANO-QUATTRO-ORDINI](PIANO-QUATTRO-ORDINI-2026-09-20.md) §2C | `python3 scripts/misura_craft.py --p1` → **104 box su 477, in 29 file**, con la lista |
+| ✅ | **2C** — i box read-aloud che presuppongono un'azione del giocatore | [PIANO-QUATTRO-ORDINI](PIANO-QUATTRO-ORDINI-2026-09-20.md) §2C | *chiuso il 2026-09-21*: `misura_craft --p1` → **22 su 477**, e sono un **elenco nominale** (12 dialoghi · 6 falsi positivi · 2 visioni · 1 canto · 1 condizionale), ancorato file per file da `test_ogni_residuo_e_uno_dei_ventidue_dichiarati`. ⚠️ **Non si porta a zero**: il rilevatore dichiara di non distinguere il dialogo dalla narrazione |
 | ⬜ | **M1-M3** — marcare gli incontri | [PIANO-MARCATURA-DEGLI-INCONTRI](PIANO-MARCATURA-DEGLI-INCONTRI.md) | `python3 scripts/validate_modules.py --tetto-el` → oggi **zero incontri marcati** |
 | ⬜ | **F1.1/F1.2/F1.3** — mappare le norme su severità | [PIANO-MISURA-EDITORIALE](PIANO-MISURA-EDITORIALE-STANDARD.md) | `python3 scripts/punteggio_mqm.py --norme` → **4 norme su ~40** entrano nel punteggio |
 | ⬜ | **F1.5 + F3.3** — i due campioni e il κ | idem | 🔴 **bloccato sul DM**: il campione A costa il suo tempo, e senza κ ≥ 0,6 la metrica non entra in CI |
@@ -325,6 +325,6 @@ per momento del ciclo.
 | | Decisione | Perché non la posso prendere io |
 |---|---|---|
 | 🔵 | **Aprire il piano di marcatura degli incontri?** | è lavoro su decine di file, e sblocca il primo critico vero del punteggio |
-| 🔵 | **I 104 box P1 si correggono tutti?** | ordinato il 2026-09-20; resta da eseguire, ed è l'ultimo lotto aperto di QUATTRO-ORDINI |
+| ~~🔵~~ | ~~**I 104 box P1 si correggono tutti?**~~ | ✅ **eseguito il 2026-09-21**, e la risposta misurata è «82 sì, 22 no»: gli altri 22 sono dialogo, canto, visione, condizionale o falso positivo del rilevatore, e correggerli avrebbe **rotto dodici battute** per far scendere un numero. QUATTRO-ORDINI è **chiuso** |
 | 🔵 | **Il campione A per il κ** | costa tempo al DM, e senza non si sa se la metrica concorda con lui |
 | 🔵 | **Un EL oltre il tetto si ribilancia o si dichiara?** | è una decisione di difficoltà, e oggi non si sa nemmeno quanti siano |

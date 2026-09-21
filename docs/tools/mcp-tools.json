@@ -1760,6 +1760,41 @@
       "deterministic": true
     },
     {
+      "name": "campioni_kappa",
+      "description": "«Il punteggio dice 97,9: il DM sarebbe d'accordo?» Se non lo e', il numero misura il suo autore.\n\nEstrae i due campioni disgiunti (20+20, stratificati per classe, seme fisso) e calcola il kappa di Cohen fra il giudizio di un valutatore e quello della macchina. Sotto kappa 0,60 la metrica si dichiara NON affidabile e non entra in CI: e' la regola del piano, e il 2026-09-21 ha detto di no (kappa 0,0 con accordo osservato e atteso entrambi a 0,95).",
+      "use_case": "«Il punteggio dice 97,9: il DM sarebbe d'accordo?» Se non lo e', il numero misura il suo autore.",
+      "invocation": "python3 scripts/campioni_kappa.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "estrai": {
+            "type": "boolean",
+            "description": "F1.5: scrive i due campioni disgiunti a seme fisso."
+          },
+          "scheda": {
+            "type": "string",
+            "description": "Stampa la scheda da compilare per il campione A o B. Il punteggio della macchina NON e' mostrato, apposta.",
+            "enum": [
+              "A",
+              "B"
+            ]
+          },
+          "kappa": {
+            "type": "boolean",
+            "description": "F3.3: l'accordo fra i voti e la macchina, se i voti ci sono."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
+      },
+      "deterministic": true
+    },
+    {
       "name": "check_plans_discipline",
       "description": "«Ho toccato scripts/ o un ADR: ho lasciato la riga di tracciatura che la regola d'oro chiede?»\n\nGate ADR-0009: modifiche strutturali (scripts/, skills/, converters/, .github/, plans/adr/) senza riga in plans/CHANGELOG.md -> exit 1.",
       "use_case": "«Ho toccato scripts/ o un ADR: ho lasciato la riga di tracciatura che la regola d'oro chiede?»",
@@ -2064,6 +2099,14 @@
           "json": {
             "type": "boolean",
             "description": "il rapporto in JSON"
+          },
+          "scrivi-baseline": {
+            "type": "boolean",
+            "description": "Fotografa i punteggi di oggi, documento per documento, in campaign/misure/baseline-punteggi.json. E' il pezzo che mancava ad ADR-0036: senza una linea di base il miglioramento si confronta a occhio."
+          },
+          "confronta": {
+            "type": "boolean",
+            "description": "Chi e' migliorato e chi e' peggiorato dalla baseline a oggi. Avvisa se le norme pesate sono cambiate: a metro diverso i punteggi non sono confrontabili."
           }
         },
         "required": [],

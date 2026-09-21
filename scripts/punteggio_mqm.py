@@ -260,6 +260,70 @@ def stampa_norme(spec: dict) -> None:
     print("   e' cablato e non scatta mai. Pronto, non attivo.\n")
 
 
+BASELINE = ROOT / "campaign" / "misure" / "baseline-punteggi.json"
+
+
+def scrivi_baseline(esiti: "list[dict]", data: str) -> int:
+    """La fotografia dei punteggi di oggi, versionata.
+
+    🔴 **Il pezzo che mancava ad ADR-0036.** Quella decisione dice *«si misura
+    il miglioramento, non lo stato»*, e finche' non esisteva una **linea di
+    base** il miglioramento non si poteva misurare: si eseguiva
+    `--distribuzione` due volte e si confrontava a occhio. Un confronto a
+    memoria non e' una misura.
+
+    Si salva il punteggio **documento per documento**, non solo i percentili:
+    l'aggregato dice *che* qualcosa e' peggiorato, non **quale**. Il file e'
+    committato apposta — il diff di una baseline e' esattamente il racconto di
+    cosa e' cambiato nel repo, e in `git` quel racconto resta.
+    """
+    dati = {
+        "data": data,
+        "versione_specifiche": carica_specifiche().get("versione"),
+        "norme_pesate": len(carica_specifiche()["norme"]),
+        "documenti": {e["file"]: e["punteggio"] for e in sorted(
+            esiti, key=lambda x: x["file"]) if e.get("punteggio") is not None},
+    }
+    BASELINE.parent.mkdir(parents=True, exist_ok=True)
+    BASELINE.write_text(json.dumps(dati, ensure_ascii=False, indent=2) + "\n",
+                        encoding="utf-8")
+    print(f"✓ baseline scritta in {BASELINE.relative_to(ROOT)} — "
+          f"{len(dati['documenti'])} documenti, {dati['norme_pesate']} norme pesate")
+    return 0
+
+
+def confronta_baseline(esiti: "list[dict]") -> int:
+    """Chi e' migliorato, chi e' peggiorato, chi e' nuovo — dalla baseline a oggi."""
+    if not BASELINE.exists():
+        print("✗ nessuna baseline: `--scrivi-baseline` la crea")
+        return 1
+    b = json.loads(BASELINE.read_text(encoding="utf-8"))
+    prima = b["documenti"]
+    oggi = {e["file"]: e["punteggio"] for e in esiti if e.get("punteggio") is not None}
+    su, giu = [], []
+    for f, p in sorted(oggi.items()):
+        if f in prima and abs(p - prima[f]) > 0.005:
+            (su if p > prima[f] else giu).append((f, prima[f], p))
+    nuovi = sorted(set(oggi) - set(prima))
+    spariti = sorted(set(prima) - set(oggi))
+    print(f"\nCONFRONTO CON LA BASELINE del {b['data']}\n" + "=" * 66)
+    if b["norme_pesate"] != len(carica_specifiche()["norme"]):
+        print(f"⚠️  Le norme pesate sono cambiate: {b['norme_pesate']} → "
+              f"{len(carica_specifiche()['norme'])}. **I punteggi non sono")
+        print("    confrontabili**: un metro con piu' denti da' numeri piu'")
+        print("    bassi sugli stessi documenti. Riscrivi la baseline.\n")
+    for etichetta, elenco in (("🟢 migliorati", su), ("🔴 peggiorati", giu)):
+        print(f"\n  {etichetta}: {len(elenco)}")
+        for f, a, z in elenco[:15]:
+            print(f"      {a:6.2f} → {z:6.2f}  ({z - a:+.2f})  {f}")
+    if nuovi:
+        print(f"\n  ➕ nuovi: {len(nuovi)}")
+    if spariti:
+        print(f"  ➖ spariti: {len(spariti)}")
+    print()
+    return 0
+
+
 def stampa_distribuzione(esiti: "list[dict]") -> None:
     """Lotto F1.4: da dove nascono le soglie."""
     print("\nF1.4 — DISTRIBUZIONE DEL PUNTEGGIO PER CLASSE\n" + "=" * 62)
@@ -291,6 +355,10 @@ def main(argv=None) -> int:
     ap.add_argument("--norme", action="store_true",
                     help="cosa entra nel punteggio, con la severita' e il rilevatore")
     ap.add_argument("--json", action="store_true", help="il rapporto in JSON")
+    ap.add_argument("--scrivi-baseline", action="store_true",
+                    help="fotografa i punteggi di oggi in campaign/misure/ (ADR-0036)")
+    ap.add_argument("--confronta", action="store_true",
+                    help="chi e' migliorato e chi e' peggiorato dalla baseline a oggi")
     args = ap.parse_args(argv)
 
     spec = carica_specifiche()
@@ -308,6 +376,13 @@ def main(argv=None) -> int:
     if args.distribuzione:
         stampa_distribuzione(esiti)
         return 0
+
+    if args.scrivi_baseline:
+        from datetime import date  # noqa: PLC0415
+        return scrivi_baseline(esiti, date.today().isoformat())
+
+    if args.confronta:
+        return confronta_baseline(esiti)
 
     bocciati = []
     for e in sorted(esiti, key=lambda x: x["punteggio"]):

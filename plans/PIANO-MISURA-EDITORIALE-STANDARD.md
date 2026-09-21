@@ -251,7 +251,56 @@ box sotto 40. Entra come **minore**, e solo quando il box è fuori dalla fascia
 > misura — è informativo quanto uno assente ovunque, cioè per niente: i test
 > provano proprio questo caso, che è il meno ovvio dei due.
 | ✅ | **F1.4** Distribuzione attuale per classe | P10/P25/P50/P75 del punteggio su tutto il repo | è l'input delle soglie di §4: **prima si misura, poi si sceglie** |
-| ⬜ | **F1.5** Estrarre i due campioni | campione **A** (DM) e campione **B** (secondo modello), disgiunti | vedi §5 |
+| ✅ | **F1.5** Estrarre i due campioni | `campioni_kappa.py --estrai` → **20 + 20, disgiunti** (sovrapposizione 0), stratificati per classe con almeno un documento per classe, **seme fisso 20260921** | `campaign/misure/campioni-kappa.json` |
+
+> ### 🔴 F3.3 — il κ è **0,0**, e non perché i giudici siano in disaccordo
+>
+> Il campione **B** è stato giudicato il 2026-09-21 (giudice: il modello di
+> questa sessione, **bias dichiarato**: ha scritto metà dei rilevatori, quindi
+> il suo κ è un **limite superiore ottimistico**). Il risultato:
+>
+> ```
+> n=20   Po=0,95   Pe=0,95   κ = 0,0   («lieve», sotto la soglia 0,60)
+> ```
+>
+> **I due giudici concordano nel 95% dei casi — e concorderebbero nel 95% dei
+> casi tirando i dadi.** L'accordo osservato è identico a quello atteso per
+> caso, quindi porta **zero informazione**. È esattamente il difetto che il κ
+> esiste per rendere visibile, e che la percentuale grezza avrebbe nascosto:
+> «95% d'accordo» sarebbe sembrato un ottimo risultato.
+>
+> **La causa non è il giudice: è la soglia.** La macchina ha promosso **20 su
+> 20**. Il documento che il giudice ha bocciato —
+> `06_…/CoronaDiAdamantio/maps.md`, una griglia ASCII disallineata con la
+> legenda in inglese (*Wall*, *Throne*, *Hidden Portal*) e senza intestazione —
+> prende **100,0**. Non perché sia buono: perché **nessuna delle 12 norme
+> pesate lo tocca**. Non ha box read-aloud, quindi non ha difetti nei box; non
+> ha prosa, quindi non ha calchi. Un documento che non contiene niente di
+> misurabile è, per questa metrica, perfetto.
+>
+> #### Cosa ne consegue, in ordine
+>
+> 1. 🔴 **La metrica NON è validata**, e lo dice la regola che il piano si è
+>    dato: sotto κ 0,60 si dichiara non affidabile. `punteggio_mqm --soglia`
+>    resta in CI come **cancello d'osservazione** — utile a prendere una
+>    regressione — ma il suo verde **non è un giudizio di qualità**.
+> 2. ⚠️ **Il campione A, oggi, darebbe κ ≈ 0 qualunque cosa voti il DM.** Se
+>    la macchina promuove tutto, nessun insieme di voti può produrre accordo
+>    informativo. Chiedere al DM le sue venti valutazioni *adesso* gli
+>    costerebbe tempo per un numero già noto.
+> 3. ✅ **Ma la scheda A resta utile per un'altra domanda**, e vale la pena
+>    dirla: non «la metrica è affidabile?» ma **«cosa deve imparare a vedere?»**.
+>    I documenti che il DM boccia e la macchina promuove sono l'elenco esatto
+>    delle norme che mancano al punteggio.
+> 4. 🔵 **Il passo che sblocca il κ non è un giudice migliore: è una norma che
+>    morda su un documento vuoto.** Il candidato naturale è il controllo di
+>    conformità 3.5/PF1e, che sarebbe il primo `critico` della catena — oggi il
+>    pass/fail è cablato e non scatta mai.
+>
+> 🔎 **E questo lotto ha fatto il suo mestiere.** F3.3 era scritto come *«κ ≥
+> 0,6 o la metrica si dichiara non affidabile»*: il criterio è stato applicato
+> alla lettera e la risposta è no. Un lotto di validazione che non può dire di
+> no non è una validazione.
 
 ## FASE 2 — Sviluppo
 
@@ -274,7 +323,7 @@ box sotto 40. Entra come **minore**, e solo quando il box è fuori dalla fascia
 |---|---|---|
 | ✅ | **F3.1** Il cancello morde, per ogni severità | un critico iniettato → **rosso anche con punteggio alto**; un maggiore iniettato → punteggio scende di 5 volte un minore; rimosso → verde |
 | ✅ | **F3.2** Nessun documento buono bocciato | alla soglia iniziale, **zero** master DEF in rosso. Se ne cade uno, la soglia è sbagliata, non il documento |
-| ⬜ | **F3.3** κ sui due campioni | **κ ≥ 0,6** o la metrica si dichiara non affidabile e **non entra in CI**. Sotto 0,6 è rumore del giudice, non segnale |
+| 🟡 | **F3.3** κ sui due campioni | **ESEGUITO sul campione B il 2026-09-21: κ = 0,0.** La metrica **si dichiara non affidabile**, come la regola prescrive. ⚠️ La causa non è il giudice — Po e Pe sono **entrambi 0,95** — ma la soglia, che promuove 20 su 20. Il campione **A resta da votare**, e il suo valore oggi non è il κ ma **l'elenco di cosa la metrica non vede**: `campioni_kappa.py --scheda A` |
 | ⬜ | **F3.5** Non-regressione | `misura_craft` continua a girare: il punteggio **affianca**, non sostituisce |
 
 ---

@@ -3622,6 +3622,24 @@
           "required": false,
           "default": false,
           "desc": "il rapporto in JSON"
+        },
+        {
+          "name": "--scrivi-baseline",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "desc": "Fotografa i punteggi di oggi, documento per documento, in campaign/misure/baseline-punteggi.json. E' il pezzo che mancava ad ADR-0036: senza una linea di base il miglioramento si confronta a occhio.",
+          "choices": null,
+          "repeatable": false
+        },
+        {
+          "name": "--confronta",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "desc": "Chi e' migliorato e chi e' peggiorato dalla baseline a oggi. Avvisa se le norme pesate sono cambiate: a metro diverso i punteggi non sono confrontabili.",
+          "choices": null,
+          "repeatable": false
         }
       ],
       "inputs": [
@@ -5647,6 +5665,84 @@
           "choices": null,
           "repeatable": false,
           "desc": "Esce 1 se una riga di §6.2 non dice il vero. Senza, stampa la tabella con gli esiti."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "skills/REGISTRO-NORME-EDITORIALI.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Sola lettura."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/validate_norme_editoriali.py",
+      "tests": [
+        "scripts/tests/test_help_di_ogni_tool.py",
+        "scripts/tests/test_norme_editoriali.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0056-una-norma-senza-misura-non-esiste.md"
+      ]
+    },
+    {
+      "id": "campioni_kappa",
+      "path": "scripts/campioni_kappa.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/campioni_kappa.py",
+      "summary": "Estrae i due campioni disgiunti (20+20, stratificati per classe, seme fisso) e calcola il kappa di Cohen fra il giudizio di un valutatore e quello della macchina. Sotto kappa 0,60 la metrica si dichiara NON affidabile e non entra in CI: e' la regola del piano, e il 2026-09-21 ha detto di no (kappa 0,0 con accordo osservato e atteso entrambi a 0,95).",
+      "use_case": "«Il punteggio dice 97,9: il DM sarebbe d'accordo?» Se non lo e', il numero misura il suo autore.",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--estrai",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "F1.5: scrive i due campioni disgiunti a seme fisso."
+        },
+        {
+          "name": "--scheda",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": [
+            "A",
+            "B"
+          ],
+          "repeatable": false,
+          "desc": "Stampa la scheda da compilare per il campione A o B. Il punteggio della macchina NON e' mostrato, apposta."
+        },
+        {
+          "name": "--kappa",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "F3.3: l'accordo fra i voti e la macchina, se i voti ci sono."
         }
       ],
       "inputs": [

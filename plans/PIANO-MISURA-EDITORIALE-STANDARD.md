@@ -5,7 +5,7 @@
 > professionale usa da decenni: **tipologia d'errore con severità pesata,
 > soglia dichiarata prima, campionamento, accordo fra valutatori**.
 >
-> **Stato**: 🔵 pianificato (2026-09-19) · **Decisore**: DM
+> **Stato**: 🟡 **in corso** (2026-09-19 · F1.4 + F2.1 + F2.2 + F2.5 chiusi il 2026-09-21) · **Decisore**: DM
 > **Gate del piano**: `python3 scripts/punteggio_mqm.py --soglia` esce 0 su
 > tutti i master DEF, e il κ misurato fra i due campioni è ≥ 0,6
 
@@ -202,26 +202,26 @@ box sotto 40. Entra come **minore**, e solo quando il box è fuori dalla fascia
 | ⬜ | **F1.1** Mappare le 44 norme del registro su tipologia × severità | una colonna nuova in `REGISTRO-NORME-EDITORIALI.md` | `validate_norme_editoriali.py` estende il controllo: ogni norma ha una severità o una ragione scritta per non averla |
 | ⬜ | **F1.2** Separare rilevabile da giudizio | quante delle 44 hanno uno strumento (oggi 15 piene + 8 parziali) e quante no | conteggio, nel registro |
 | ⬜ | **F1.3** Potere discriminante di ogni congegno | tabella: per ciascuno, quanti documenti separa | 🔴 un congegno che **non separa mai** due documenti è rumore e si toglie — è il controllo *non-discriminating* della skill-creator |
-| ⬜ | **F1.4** Distribuzione attuale per classe | P10/P25/P50/P75 del punteggio su tutto il repo | è l'input delle soglie di §4: **prima si misura, poi si sceglie** |
+| ✅ | **F1.4** Distribuzione attuale per classe | P10/P25/P50/P75 del punteggio su tutto il repo | è l'input delle soglie di §4: **prima si misura, poi si sceglie** |
 | ⬜ | **F1.5** Estrarre i due campioni | campione **A** (DM) e campione **B** (secondo modello), disgiunti | vedi §5 |
 
 ## FASE 2 — Sviluppo
 
 | | Lotto | Cosa produce |
 |---|---|---|
-| ⬜ | **F2.1** `scripts/punteggio_mqm.py` | legge il registro, applica severità e pesi, stampa punteggio + dettaglio errori per documento; `--json` per la CI |
-| ⬜ | **F2.2** `specifiche-qualita.yaml` | le soglie per classe, **fuori dal codice**: è una decisione di prodotto e deve poterla cambiare il DM senza toccare Python |
+| ✅ | **F2.1** `scripts/punteggio_mqm.py` | legge il registro, applica severità e pesi, stampa punteggio + dettaglio errori per documento; `--json` per la CI |
+| ✅ | **F2.2** `specifiche-qualita.yaml` | le soglie per classe, **fuori dal codice**: è una decisione di prodotto e deve poterla cambiare il DM senza toccare Python |
 | ⬜ | **F2.3** Il rilevatore della regola Paizo | la norma di §1.5, con l'esenzione «visione d'artefatto» dichiarata nel registro |
 | ⬜ | **F2.4** Gulpease come guard rail | `--leggibilita`, severità minore, esente sopra 100 |
-| ⬜ | **F2.5** `ADR-0059` | la decisione: *il punteggio di qualità è MQM adattato, e la soglia nasce dal repo*. Numero **ancora libero e riservato a questo piano**: nel frattempo sono stati scritti ADR-0060 e ADR-0061, che hanno saltato il 0059 apposta |
-| ⬜ | **F2.6** Gate in CI | `punteggio_mqm.py --soglia` fra i cancelli, **non bloccante alla prima messa in opera** — un giro di osservazione, poi bloccante |
+| ✅ | **F2.5** `ADR-0059` | la decisione: *il punteggio di qualità è MQM adattato, e la soglia nasce dal repo*. Numero **ancora libero e riservato a questo piano**: nel frattempo sono stati scritti ADR-0060 e ADR-0061, che hanno saltato il 0059 apposta |
+| ✅ | **F2.6** Gate in CI | `punteggio_mqm.py --soglia` fra i cancelli, **non bloccante alla prima messa in opera** — un giro di osservazione, poi bloccante |
 
 ## FASE 3 — Validazione
 
 | | Lotto | Criterio di superamento |
 |---|---|---|
-| ⬜ | **F3.1** Il cancello morde, per ogni severità | un critico iniettato → **rosso anche con punteggio alto**; un maggiore iniettato → punteggio scende di 5 volte un minore; rimosso → verde |
-| ⬜ | **F3.2** Nessun documento buono bocciato | alla soglia iniziale, **zero** master DEF in rosso. Se ne cade uno, la soglia è sbagliata, non il documento |
+| ✅ | **F3.1** Il cancello morde, per ogni severità | un critico iniettato → **rosso anche con punteggio alto**; un maggiore iniettato → punteggio scende di 5 volte un minore; rimosso → verde |
+| ✅ | **F3.2** Nessun documento buono bocciato | alla soglia iniziale, **zero** master DEF in rosso. Se ne cade uno, la soglia è sbagliata, non il documento |
 | ⬜ | **F3.3** κ sui due campioni | **κ ≥ 0,6** o la metrica si dichiara non affidabile e **non entra in CI**. Sotto 0,6 è rumore del giudice, non segnale |
 | ⬜ | **F3.4** Stabilità | tre esecuzioni sullo stesso commit danno lo stesso punteggio (le regex sì per costruzione; il giudizio LLM va misurato) |
 | ⬜ | **F3.5** Non-regressione | `misura_craft` continua a girare: il punteggio **affianca**, non sostituisce |
@@ -286,3 +286,32 @@ caso ha torto la metrica.
 [PDF/UA — ISO 14289](https://pdfa.org/resource/iso-14289-pdfua/) ·
 [PDF/X — ISO 15930](https://pdfa.org/resource/iso-15930-pdfx/) ·
 [Indice Gulpease](https://it.wikipedia.org/wiki/Indice_Gulpease)
+
+---
+
+## 8 · 🔎 Cosa ha trovato l'attuazione, il 2026-09-21
+
+Il piano prevedeva che F1.4 producesse dei numeri. Ne ha prodotti, e ha anche
+trovato **tre difetti nello strumento che li produceva**, tutti della stessa
+famiglia che questo repo insegue da una settimana.
+
+| | Difetto | Come è venuto fuori |
+|---|---|---|
+| 🔴 | **Le prime soglie erano inventate** — «P25 99,7», «P10 97,8» — scritte nel YAML **prima** di eseguire F1.4. I valori veri sono P25 **97,90** e P10 **100,00** | eseguendo il comando che le avrebbe dovute produrre |
+| 🔴 | Il classificatore usava `Path.match`, che confronta solo la **coda** del percorso: **294 documenti su 515** finivano «fuori classe», cioè senza soglia, cioè non bocciabili | la prima esecuzione di `--distribuzione` |
+| 🟡 | La regola «soglia = P10» **non si applica alla classe `arco`**: la distribuzione è così schiacciata sul 100 che il P10 *è* 100, e usarlo boccerebbe la coda — l'opposto dell'istruzione del DM | guardando la tabella |
+
+E la domanda del DM sul rilevatore dei critici — *«ci sono le regole 3.5 e PF1e
+come skill, non si possono usare per farlo in maniera deterministica?»* — ha
+una risposta misurata: **uno dei tre casi sì, e non ha superficie**.
+
+`validate_modules.py --tetto-el` esiste, legge l'APL da `state.md` (13),
+calcola il tetto (17) e cerca gli incontri che lo sforano. Trova **zero
+incontri marcati**, perché la forma che `AGENTS.md` prescrive — `**EL**: [N]` —
+ha **zero occorrenze** nel repo, mentre i 150 «EL N» nudi mescolano
+dichiarazioni (*«Boss Fight - EL 14»*) e menzioni (*«Standard Treasure for
+EL 16»*). Allargare la regex darebbe un numero, e sarebbe finto.
+
+> **Quindi il controllo dice che non ha superficie, invece di dire zero.**
+> Marcare gli incontri è un lotto nuovo; il giorno in cui è fatto, questa
+> norma si accende da sola e diventa il **primo critico vero** del punteggio.

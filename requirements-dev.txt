@@ -1,0 +1,25 @@
+# Dipendenze di SVILUPPO — chi lavora sul repo, e la CI. Non servono al DM.
+#
+# 🔴 **Perché questo file esiste, con la data.** Il 2026-09-21 la CI è andata
+# rossa su tre file di test scritti in stile pytest: la CI eseguiva
+# `python -m unittest discover` e pytest non era installato. Due file non si
+# importavano nemmeno; il terzo, fatto di funzioni nude, `unittest` lo importava
+# **senza eseguirlo** — e quello girava a vuoto in silenzio, che è peggio del
+# rosso. In locale si vedevano 966 prove, in CI ne giravano **942**.
+#
+# La decisione del DM è stata di **ammettere pytest** invece di continuare a
+# scrivere i test due volte. ADR-0037 §«Le dipendenze di sviluppo» dice perché
+# non contraddice lo stdlib-only: il piano è un altro. Lo strumento del DM deve
+# partire sul suo portatile senza rete; **un test non gira sul portatile del
+# DM**, gira qui e in CI, dove `pip install` è un passo del workflow.
+#
+#   pip install -r requirements-dev.txt
+
+-r requirements.txt
+
+# Le TestCase esistenti continuano a girare identiche: pytest le raccoglie
+# senza modifiche, e `python -m unittest discover` resta il secondo corridore.
+# Il cancello `scripts/tests/test_i_test_girano_in_ci.py` verifica che i due
+# **vedano lo stesso numero di prove**: è la misura del difetto del 2026-09-21,
+# non una promessa di non ripeterlo.
+pytest>=8.0

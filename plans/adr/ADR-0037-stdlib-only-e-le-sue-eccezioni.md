@@ -142,3 +142,67 @@ volta da chi risponde.
 
 Fuori da questi casi la risposta alla domanda «c'è una libreria migliore?» è
 *«sì, e non si usa lo stesso»*.
+
+---
+
+## 🔴 Emendamento del 2026-09-21 — le dipendenze di sviluppo sono un piano diverso
+
+**Stato**: accettato dal DM il 2026-09-21 · **Non rovescia** la decisione:
+la restringe a ciò che davvero la motiva.
+
+### Cosa è successo
+
+La CI è andata rossa su tre file di test scritti in stile pytest. La CI esegue
+`python -m unittest discover -s scripts/tests` e **pytest non era installato**:
+due file non si importavano (`ModuleNotFoundError`), il terzo era fatto di
+funzioni nude, che `unittest` importa **senza eseguire**. In locale si vedevano
+**966** prove, in CI ne giravano **942**.
+
+🔎 **Il terzo caso è quello che conta.** Il rosso si vede; una prova che non
+gira **in silenzio** no. Ventiquattro prove scritte e nessuna eseguita dove
+decide.
+
+### La distinzione che mancava
+
+La decisione del 2026-09-03 dice *«gli script Python di questo repo usano la
+sola libreria standard»*, e la sua ragione è **dove girano**: il portatile del
+DM, la sera, senza rete. Quella ragione **non si applica ai test**.
+
+| | Dove gira | `pip install` è… | Regola |
+|---|---|---|---|
+| **esecuzione** (`scripts/`) | portatile del DM, la sera della sessione | un rischio alle 20:45 | **stdlib-only**, tre eccezioni dichiarate |
+| **sviluppo** (`scripts/tests/`, CI) | qui e sul runner | **un passo del workflow** | dipendenze ammesse, elencate in `requirements-dev.txt` |
+
+> **L'emendamento, in una riga**: *lo stdlib-only vale su ciò che il DM esegue.
+> Un test non lo esegue il DM.*
+
+**Ammesso**: `pytest`, in `requirements-dev.txt`. Le `TestCase` esistenti
+girano identiche sotto entrambi i corridori, quindi **non si perde niente** e
+non c'è una migrazione da fare.
+
+⚠️ **Il vincolo che resta, e che è la parte operativa.** Ammettere pytest
+riapre esattamente il buco del 2026-09-21 al contrario: con pytest le funzioni
+nude girano, con `unittest` no, e chi scrive non se ne accorge. Quindi il repo
+**gira entrambi i corridori** e il cancello
+`scripts/tests/test_i_test_girano_in_ci.py` verifica che **vedano lo stesso
+numero di prove**. Una divergenza è rossa: è la misura del difetto, non la
+promessa di non ripeterlo.
+
+### Due file di dipendenze, e la terza libreria
+
+Il testo sopra dice *«nessun file di dipendenze: non esistono
+`requirements.txt` né `pyproject.toml`»*. Da oggi esistono, e la ragione è la
+tabella qui sopra: **due piani diversi vogliono due file diversi**.
+
+🔴 **E misurando per scriverli è saltata fuori una terza libreria.** Un
+attraversamento `ast` di tutti i `scripts/**/*.py` trova, fuori dalla libreria
+standard, **`pyyaml` (13 file), `Pillow` (3), `tiktoken` (2)** — e `tiktoken`
+questa ADR non la nominava. Degrada bene in entrambi i chiamanti
+(`compress_skills.py` ripiega su parole × 1,3, `measure_tokens.py` su
+caratteri ÷ 4), quindi è un'eccezione della stessa famiglia di Pillow, non un
+debito come `pyyaml`. È la **seconda volta** che questa ADR sbaglia il conto
+delle proprie librerie contandole a memoria, e la seconda volta che la
+correzione arriva da un attraversamento invece che da una rilettura.
+
+`bpy` e `mathutils` restano fuori da entrambi i file: non si installano con
+pip, sono il Python interno di Blender.

@@ -64,11 +64,23 @@ class TestFase1(unittest.TestCase):
         self.assertIn("L0 · CANONE", r.stdout)
 
     def test_le_tre_fonti_della_misura_portano_il_loro_stato(self):
-        """Un meccanismo che punta a un file inesistente deve dirlo."""
+        """Lo stato e' letto dal filesystem, non scritto in prosa.
+
+        🔎 Questa prova si e' aggiornata da sola il 2026-09-21, ed e' il punto:
+        cercava «🔵 pianificato, NON esiste» perche' `punteggio_mqm.py` non
+        c'era, e ha cominciato a fallire **il giorno in cui e' stato scritto**.
+        Ora verifica l'invariante vera: ogni fonte porta uno stato, e lo stato
+        corrisponde all'esistenza del file che la prova.
+        """
         r = self.corri("plans/INDEX.md")
         self.assertIn("Le tre fonti della misura", r.stdout)
-        self.assertIn("🔵 pianificato, NON esiste", r.stdout,
-                      "punteggio_mqm.py esiste ora? allora aggiorna questa prova")
+        sys.path.insert(0, str(ROOT / "scripts"))
+        import fase1
+
+        for _descrizione, prova, _dove in fase1.FONTI_DELLA_MISURA:
+            atteso = "🟢 in vigore" if (ROOT / prova).exists() else "🔵 pianificato"
+            self.assertIn(atteso, r.stdout,
+                          f"{prova}: lo stato stampato non corrisponde al filesystem")
 
     def test_riconosce_il_registro_di_chi_legge(self):
         """ADR-0035: un bersaglio misto dichiara che sono due lotti, non uno."""

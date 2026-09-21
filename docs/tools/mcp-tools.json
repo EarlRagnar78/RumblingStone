@@ -2022,6 +2022,48 @@
       "deterministic": true
     },
     {
+      "name": "punteggio_mqm",
+      "description": "«Questo documento e' sopra o sotto la soglia di qualita' dichiarata per la sua classe, e per quali errori pesati?»\n\nIl punteggio di qualita' editoriale, MQM adattato (ISO 5060): severita' pesate minore 1 / maggiore 5 / critico 25 col critico pass-fail assoluto, soglia per classe di documento, e specifiche in un YAML fuori dal codice. Non scrive rilevatori: riusa misura_craft e validate_prosa, e dichiara quante norme del registro restano fuori. --distribuzione stampa P10/P25/P50/P75 per classe, che e' da dove nascono le soglie.",
+      "use_case": "«Questo documento e' sopra o sotto la soglia di qualita' dichiarata per la sua classe, e per quali errori pesati?»",
+      "invocation": "python3 scripts/punteggio_mqm.py [--soglia|--distribuzione|--norme]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "modelli": {
+            "type": "string",
+            "description": "modelli glob; se assenti, tutto il contenuto di gioco vivo"
+          },
+          "soglia": {
+            "type": "boolean",
+            "description": "cancello: esce 1 se un documento e' sotto la soglia della sua classe"
+          },
+          "distribuzione": {
+            "type": "boolean",
+            "description": "P10/P25/P50/P75 per classe (lotto F1.4)"
+          },
+          "norme": {
+            "type": "boolean",
+            "description": "cosa entra nel punteggio, con severita' e rilevatore"
+          },
+          "json": {
+            "type": "boolean",
+            "description": "il rapporto in JSON"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "rapporto stampato, o --soglia superata",
+        "1": "--soglia: un documento sotto soglia o con un critico",
+        "2": "manca pyyaml"
+      },
+      "deterministic": true
+    },
+    {
       "name": "tools_manifest",
       "description": "«Il manifest dice ancora la verità sugli script, o qualcuno ha aggiunto un flag senza dichiararlo?»\n\nFonte di verita' -> artefatti: valida scripts/tools.manifest.json contro lo schema, verifica la copertura degli script e genera registry.json, README.md e mcp-tools.json.",
       "use_case": "«Il manifest dice ancora la verità sugli script, o qualcuno ha aggiunto un flag senza dichiararlo?»",

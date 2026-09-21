@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 66,
+  "tool_count": 67,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -4863,6 +4863,108 @@
       "tests": [],
       "docs": [
         "scripts/README-automation.md"
+      ]
+    },
+    {
+      "id": "punteggio_mqm",
+      "path": "scripts/punteggio_mqm.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/punteggio_mqm.py [--soglia|--distribuzione|--norme]",
+      "summary": "Il punteggio di qualita' editoriale, MQM adattato (ISO 5060): severita' pesate minore 1 / maggiore 5 / critico 25 col critico pass-fail assoluto, soglia per classe di documento, e specifiche in un YAML fuori dal codice. Non scrive rilevatori: riusa misura_craft e validate_prosa, e dichiara quante norme del registro restano fuori. --distribuzione stampa P10/P25/P50/P75 per classe, che e' da dove nascono le soglie.",
+      "use_case": "«Questo documento e' sopra o sotto la soglia di qualita' dichiarata per la sua classe, e per quali errori pesati?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_bins": [],
+      "external_deps": [
+        "pyyaml"
+      ],
+      "args": [
+        {
+          "name": "modelli",
+          "type": "path",
+          "required": false,
+          "repeatable": true,
+          "desc": "modelli glob; se assenti, tutto il contenuto di gioco vivo"
+        },
+        {
+          "name": "--soglia",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "desc": "cancello: esce 1 se un documento e' sotto la soglia della sua classe"
+        },
+        {
+          "name": "--distribuzione",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "desc": "P10/P25/P50/P75 per classe (lotto F1.4)"
+        },
+        {
+          "name": "--norme",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "desc": "cosa entra nel punteggio, con severita' e rilevatore"
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "desc": "il rapporto in JSON"
+        }
+      ],
+      "inputs": [
+        {
+          "path": "scripts/specifiche-qualita.yaml",
+          "kind": "yaml",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "skills/REGISTRO-NORME-EDITORIALI.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "stdout",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "rapporto stampato, o --soglia superata",
+        "1": "--soglia: un documento sotto soglia o con un critico",
+        "2": "manca pyyaml"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Sola lettura; dipende da specifiche-qualita.yaml."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/punteggio_mqm.py --soglia",
+      "tests": [
+        "scripts/tests/test_help_di_ogni_tool.py",
+        "scripts/tests/test_punteggio_mqm.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0059-il-punteggio-di-qualita-e-mqm-adattato.md",
+        "plans/PIANO-MISURA-EDITORIALE-STANDARD.md"
       ]
     },
     {

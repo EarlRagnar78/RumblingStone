@@ -307,4 +307,4 @@ e i nove box falsi non sarebbero mai entrati nel conteggio.
 |---|---|---|
 | 🔵 | **Ribilanciare `§4` per l'Aura** | è una decisione di difficoltà, e il DM ha ora il numero per prenderla. Farla d'iniziativa vorrebbe dire alzare un boss che il DM ha già tarato |
 | 🔵 | Fondere le due copie della cartella Corona (`PG/` e lo snapshot ARC-06) | l'`[INFERRED]` di `_SNAPSHOT-STORICO.md` è del 2026-07-02 e aspetta ancora il DM |
-| ⬜ | I 51 link rotti dei booklet generati, i 27 ADR mancanti in `docs/INDEX.md` | code di altri lotti, già registrate |
+| ✅ | ~~I 51 link rotti dei booklet generati, i 27 ADR mancanti in `docs/INDEX.md`~~ | 🐛 **Nessuna delle due esisteva quando questa riga è stata scritta.** I link erano **44**, non 51, e li ha chiusi il lotto **E1 di `RIPRESA-PR`** il **12 settembre**, che nello stesso archivio li registra a zero. Gli ADR mancanti erano **zero**: il buco più grande mai avuto è stato **uno**, il 12 settembre, e dal 16 l'indice è completo. Misurato il 2026-09-21 con `validate_booklets` e `validate_docs --sorgenti`, i due comandi che la riga stessa citava. Vedi `STATO-E-ORDINE` §6.2-bis |

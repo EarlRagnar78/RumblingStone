@@ -304,9 +304,44 @@ per momento del ciclo.
 |---|---|---|---|
 | ✅ | **2C** — i box read-aloud che presuppongono un'azione del giocatore | [PIANO-QUATTRO-ORDINI](PIANO-QUATTRO-ORDINI-2026-09-20.md) §2C | *chiuso il 2026-09-21*: `misura_craft --p1` → **22 su 477**, e sono un **elenco nominale** (12 dialoghi · 6 falsi positivi · 2 visioni · 1 canto · 1 condizionale), ancorato file per file da `test_ogni_residuo_e_uno_dei_ventidue_dichiarati`. ⚠️ **Non si porta a zero**: il rilevatore dichiara di non distinguere il dialogo dalla narrazione |
 | ⬜ | **M1-M3** — marcare gli incontri | [PIANO-MARCATURA-DEGLI-INCONTRI](PIANO-MARCATURA-DEGLI-INCONTRI.md) | `python3 scripts/validate_modules.py --tetto-el` → oggi **zero incontri marcati** |
-| ⬜ | **F1.1/F1.2/F1.3** — mappare le norme su severità | [PIANO-MISURA-EDITORIALE](PIANO-MISURA-EDITORIALE-STANDARD.md) | `python3 scripts/punteggio_mqm.py --norme` → **4 norme su ~40** entrano nel punteggio |
-| ⬜ | **F1.5 + F3.3** — i due campioni e il κ | idem | 🔴 **bloccato sul DM**: il campione A costa il suo tempo, e senza κ ≥ 0,6 la metrica non entra in CI |
-| ⬜ | i 27 ADR mancanti in `docs/INDEX.md` §4 | lotto mai aperto | `python3 scripts/validate_docs.py --sorgenti` (il controllo `indice_adr` li conta) |
+| ✅ | **F1.1/F1.2/F1.3** — mappare le norme su severità | [PIANO-MISURA-EDITORIALE](PIANO-MISURA-EDITORIALE-STANDARD.md) | *chiuso il 2026-09-21*: `punteggio_mqm --norme` → **4 norme su 39** (non «~40»: il numero era scritto a mano e sbagliato). La severità è una colonna del registro — **1 critico · 15 maggiori · 20 minori** — e `misura_craft --discriminante` dice che i congegni-rumore sono **zero su 23** |
+| ⬜ | **F1.5 + F3.3** — i due campioni e il κ | idem | 🔴 **bloccato sul DM** *(misurato 2026-09-21)*: il campione A costa il suo tempo, e senza κ ≥ 0,6 la metrica non entra in CI |
+| ✅ | ~~i 27 ADR mancanti in `docs/INDEX.md` §4~~ | *nessun lotto: non c'era niente da fare* | `validate_docs --sorgenti` → **0** *(misurato 2026-09-21)*. 🐛 **I 27 non sono mai esistiti**: il buco più grande che `plans/adr/` abbia mai avuto è stato **uno**, il 2026-09-12, e da `14694c4` (16 settembre) l'indice è completo. Vedi §6.5 |
+
+### 6.2-bis · 🐛 Quello che questa tabella ha sbagliato su se stessa
+
+Delle cinque righe di §6.2, scritte il 20-21 settembre, **una era falsa nel
+momento in cui è stata scritta** e una portava un numero già corretto da nove
+giorni. Il conto, verificato eseguendo i comandi che le righe stesse citavano:
+
+| Riga | Quel che diceva | Quel che dice il comando |
+|---|---|---|
+| **2C** | 104 box | ✅ **104** — esatta |
+| **M1-M3** | zero incontri marcati | ✅ **zero** — esatta |
+| **F1.1-F1.3** | «4 norme su **~40**» | 🟡 4 su **39**: il tilde copriva un numero mai contato |
+| **F1.5 + F3.3** | bloccato sul DM | ✅ esatta |
+| **i 27 ADR** | 27 mancanti | 🔴 **zero**, e non per poco: il buco più grande mai esistito è stato **uno** |
+
+E la riga gemella in `PIANO-QUATTRO-ORDINI` §310 parlava di *«51 link rotti dei
+booklet generati»*: erano **44**, sono stati chiusi il **12 settembre** dal
+lotto E1 di `RIPRESA-PR`, che nello stesso documento li registra a **zero**.
+Due rami dello stesso archivio dicevano due cose diverse sullo stesso fatto.
+
+⚠️ **E il difetto non è dove sembra.** §6 nasce con un principio dichiarato —
+*«ogni cosa da fare ha un comando che la rimisura, perché un elenco che dipende
+dalla memoria di una chat non è un elenco, è un ricordo»* — e quel principio è
+giusto. Ma **scrivere il comando accanto alla riga non è eseguirlo**: i 27 sono
+stati scritti *citando* `validate_docs --sorgenti`, che in quel momento
+stampava zero. Il gate esisteva, girava in CI, era verde, e la riga lo
+contraddiceva.
+
+**Cosa cambia, quindi.** Ogni riga di §6.2 porta da oggi la **data della
+misura** fra parentesi. Non prova che il comando sia stato eseguito — niente lo
+prova — ma rende visibile *quando* si dice che sia stato, e una data ferma da
+due settimane accanto a un numero è la cosa che fa venire il dubbio. Un
+cancello vero su questo è una proposta, non una decisione mia: è in **§6.4**.
+
+---
 
 ### 6.3 · Le tre cose decise in questa tornata che NON vanno ridiscusse
 
@@ -327,4 +362,5 @@ per momento del ciclo.
 | 🔵 | **Aprire il piano di marcatura degli incontri?** | è lavoro su decine di file, e sblocca il primo critico vero del punteggio |
 | ~~🔵~~ | ~~**I 104 box P1 si correggono tutti?**~~ | ✅ **eseguito il 2026-09-21**, e la risposta misurata è «82 sì, 22 no»: gli altri 22 sono dialogo, canto, visione, condizionale o falso positivo del rilevatore, e correggerli avrebbe **rotto dodici battute** per far scendere un numero. QUATTRO-ORDINI è **chiuso** |
 | 🔵 | **Il campione A per il κ** | costa tempo al DM, e senza non si sa se la metrica concorda con lui |
+| 🔵 | **Un cancello sulle righe di §6.2?** | Si potrebbe far girare in CI i comandi che §6.2 cita e bocciare una riga ⬜ il cui comando stampa zero. 🔴 **Ma è un gate che esegue testo scritto a mano**, e costa il tempo di tutti quei comandi a ogni PR. L'alternativa povera — la data della misura, già applicata — non prova niente e costa zero. Quale delle due vale, lo decide chi paga la CI |
 | 🔵 | **Un EL oltre il tetto si ribilancia o si dichiara?** | è una decisione di difficoltà, e oggi non si sa nemmeno quanti siano |

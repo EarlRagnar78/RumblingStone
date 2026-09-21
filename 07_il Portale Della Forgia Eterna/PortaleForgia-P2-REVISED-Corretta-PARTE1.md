@@ -43,11 +43,11 @@
 
 > *L'ultimo passo nel portale dorato dissolve il mondo materiale. Per un istante - singolo battito di cuore che sembra durare eoni - non siete più VIVI nel senso tradizionale. Siete CONSAPEVOLEZZA PURA, sospesi in mare di luce e suono.*
 >
-> *Thorik, senti Corona sulla fronte non come metallo freddo, ma come ESTENSIONE della tua anima. Aegis Fang nella mano pulsa in sincronia con battito cuore. Sei TU, ma anche più che tu.*
+> *Thorik, la Corona sulla fronte non è più metallo freddo: è ESTENSIONE della tua anima. Aegis Fang nella mano pulsa in sincronia con battito cuore. Sei TU, ma anche più che tu.*
 >
-> *Tordek, percepisci ki - energia vitale - scorrere libera come mai prima. Corpo non è prigione qui. Corpo è STRUMENTO perfetto. La Cintura della Devastazione brilla con energia nuova, come se montagna stessa la benedicesse.*
+> *Tordek, il ki - energia vitale - scorre libero come mai prima. Corpo non è prigione qui. Corpo è STRUMENTO perfetto. La Cintura della Devastazione brilla con energia nuova, come se montagna stessa la benedicesse.*
 >
-> *Artemis, Ring of Chaotic Illumination esplode in arcobaleno di colori: ORO (Lathander), ARGENTO (Mask), VIOLA (tuo potere warlock), intrecciati come fili su telaio cosmico. Per primo istante da quando Ring si fuse con te... senti PACE. Non controllo. Non lotta. Solo... accettazione.*
+> *Artemis, Ring of Chaotic Illumination esplode in arcobaleno di colori: ORO (Lathander), ARGENTO (Mask), VIOLA (tuo potere warlock), intrecciati come fili su telaio cosmico. Per primo istante da quando Ring si fuse con te... c'è PACE. Non controllo. Non lotta. Solo... accettazione.*
 >
 > *(Se trasportano corpo Hella: Il corpo brilla con luce verde smeraldo - spirito druida riconosce questo luogo come sacro)*
 >
@@ -103,17 +103,17 @@ Dopo che tutti PG hanno superato/dissipato effetto iniziale:
 
 **NARRAZIONE PRINCIPALE:**
 
-> *Aprite completamente gli occhi - o forse per prima volta VERAMENTE vedete - e la Sala della Forgia Eterna si rivela in tutta la sua gloria impossibile.*
+> *E la Sala della Forgia Eterna si rivela in tutta la sua gloria impossibile.*
 >
-> **FORMA:** *Ottagono perfetto. Otto lati identici, ognuno lungo quanto strada cittadina. Simmetria così assoluta che fa male osservarla - perché realizzate che nulla nel mondo mortale è così PERFETTO. Questa sala non fu COSTRUITA. Fu FORGIATA. Ogni angolo, ogni runa, ogni venatura d'oro fu martellata in esistenza da mano divina.*
+> **FORMA:** *Ottagono perfetto. Otto lati identici, ognuno lungo quanto strada cittadina. Simmetria così assoluta che fa male osservarla: nulla nel mondo mortale è così PERFETTO. Questa sala non fu COSTRUITA. Fu FORGIATA. Ogni angolo, ogni runa, ogni venatura d'oro fu martellata in esistenza da mano divina.*
 >
-> **PAVIMENTO:** *Adamantio levigato come specchio d'acqua. Ma non riflette solo immagine - riflette POSSIBILITÀ. Guardate giù e vedete voi stessi. Ma anche... versioni alternative? Voi più giovani? Voi più vecchi? Voi che mai furono ma potrebbero essere? Riflesso cambia ogni volta che sbattete occhi. È disorientante. Affascinante. Terrificante.*
+> **PAVIMENTO:** *Adamantio levigato come specchio d'acqua. Ma non riflette solo immagine - riflette POSSIBILITÀ. In basso ci siete voi. Ma anche... versioni alternative? Voi più giovani? Voi più vecchi? Voi che mai furono ma potrebbero essere? Il riflesso cambia a ogni battito di ciglia. È disorientante. Affascinante. Terrificante.*
 >
-> **PARETI:** *Basalto nero come notte senza stelle, venato d'oro che PULSA. Non luce statica - BATTITO. Come vene di creatura titanica. Ogni tre secondi: *thum-THUM... thum-THUM...* Sentite vibrazione attraverso suole stivali, nel petto, nelle ossa. È battito cardiaco MONTAGNA stessa. O forse... battito cardiaco di Moradin?*
+> **PARETI:** *Basalto nero come notte senza stelle, venato d'oro che PULSA. Non luce statica - BATTITO. Come vene di creatura titanica. Ogni tre secondi: *thum-THUM... thum-THUM...* La vibrazione passa per le suole degli stivali, nel petto, nelle ossa. È battito cardiaco MONTAGNA stessa. O forse... battito cardiaco di Moradin?*
 >
-> **SOFFITTO:** *Cupola 15 metri sopra, tempestata di cristalli luminescenti. Ma non disposizione casuale - COSTELLAZIONI. Riconoscete costellazioni NANICHE: il Martello (simbolo forza), l'Incudine (simbolo pazienza), la Corona Eterna (simbolo destino), il Focolare (simbolo casa). È cielo nanico. Cielo che nessun nano vivente ha mai visto, ma che TUTTI nani conoscono nei sogni.*
+> **SOFFITTO:** *Cupola 15 metri sopra, tempestata di cristalli luminescenti. Ma non disposizione casuale - COSTELLAZIONI, e sono NANICHE: il Martello (simbolo forza), l'Incudine (simbolo pazienza), la Corona Eterna (simbolo destino), il Focolare (simbolo casa). È cielo nanico. Cielo che nessun nano vivente ha mai visto, ma che TUTTI nani conoscono nei sogni.*
 >
-> **AL CENTRO:** *Altare massiccio. Adamantio puro, 2 metri per lato, alto quanto nano. E su di esso... FORGIA. Ma non forgia normale. Fiamme DORATE bruciano senza combustibile, senza fumo, senza calore disperso. Guardandole realizzate: queste sono fiamme DIVINE. Moradin stesso le accese. E ardono da millenni senza consumarsi.*
+> **AL CENTRO:** *Altare massiccio. Adamantio puro, 2 metri per lato, alto quanto nano. E su di esso... FORGIA. Ma non forgia normale. Fiamme DORATE bruciano senza combustibile, senza fumo, senza calore disperso. Sono fiamme DIVINE. Moradin stesso le accese. E ardono da millenni senza consumarsi.*
 >
 > **SUONI:**
 > - *Crepitio forgia centrale (come carbone ardente, ma più profondo)*
@@ -444,13 +444,13 @@ COPERTURA:
 
 **Narrazione:**
 
-> *Thorik, allunghi mano destra verso fiamme dorate. Corona sulla fronte pulsa così forte che senti vibrazione nelle ossa craniche. E Aegis Fang - nella sinistra - inizia cantare. Non metafora. CANTA letteralmente: nota pura, continua, come campana titanica.*
+> *Thorik, la mano destra verso le fiamme dorate. Corona sulla fronte pulsa così forte che la vibrazione arriva alle ossa craniche. E Aegis Fang - nella sinistra - inizia cantare. Non metafora. CANTA letteralmente: nota pura, continua, come campana titanica.*
 >
-> *Tocchi fiamme.*
+> *E al contatto...*
 >
-> *Aspettavi dolore. Bruciatura. Ma...*
+> *...non dolore. Non bruciatura. Ma...*
 >
-> *...CALORE. Calore abbraccio paterno. Come quando padre nano mette figlio sulle ginocchia vicino forgia, insegnandogli rune prima. Sentì... AMORE. Moradin ti AMA. Come padre ama figlio imperfetto ma amato.*
+> *...CALORE. Calore abbraccio paterno. Come quando padre nano mette figlio sulle ginocchia vicino forgia, insegnandogli rune prima. E poi... AMORE. Moradin ti AMA. Come padre ama figlio imperfetto ma amato.*
 >
 > *E poi - VISIONE FLASH (2 secondi):*
 > - *Vedi te stesso deporre 3 gemme brillanti nell'Altare*
@@ -460,7 +460,7 @@ COPERTURA:
 > - *Tu prendi Cuore, lo posi sul petto corpo Hella*
 > - *Lei INSPIRA. Occhi aprono. VIVA.*
 >
-> *Visione termina. Mano ancora nelle fiamme. Nessun danno. Pelle perfetta. Ma... senti CERTEZZA. Questo accadrà. Se compi prove. Se meriti.*
+> *Visione termina. Mano ancora nelle fiamme. Nessun danno. Pelle perfetta. Ma resta la CERTEZZA. Questo accadrà. Se compi prove. Se meriti.*
 
 **Effetto Meccanico - BENEDIZIONE FORGIA (Thorik):**
 
@@ -485,11 +485,11 @@ Thorik riceve benedizione temporanea (dura fino a completamento Piano Fuoco):
 
 **Narrazione:**
 
-> *Tordek, avvicini le mani alle fiamme. Alla tua vita, la **Cintura della Devastazione** - metallo scuro inciso con rune distruttive - sembra... VIBRARE. Come se riconoscesse la forgia come antenata.*
+> *Tordek, le mani vicino alle fiamme. Alla tua vita, la **Cintura della Devastazione** - metallo scuro inciso con rune distruttive - sembra... VIBRARE. Come se riconoscesse la forgia come antenata.*
 >
-> *Tocchi le fiamme. La Cintura brilla rosso incandescente per 3 secondi. E senti... connessione. Il monaco cerca equilibrio. Ma questa cintura è DISTRUZIONE. Opposti? O... complementari?*
+> *Al contatto, la Cintura brilla rosso incandescente per 3 secondi. E c'è... connessione. Il monaco cerca equilibrio. Ma questa cintura è DISTRUZIONE. Opposti? O... complementari?*
 >
-> *E ascolti voce Moradin (solo tu):*
+> *E la voce di Moradin (solo tu):*
 > **"Monaco saggio. Comprendi che distruzione è PARTE ciclo. Vecchio deve essere distrutto perché nuovo nasca. Forgia distrugge minerale grezzo, crea arma perfetta. La tua cintura... è strumento forgia. Usa saggiamente."**
 
 **Effetto Meccanico - POTENZIAMENTO CINTURA DELLA DEVASTAZIONE:**
@@ -513,13 +513,13 @@ La Cintura della Devastazione riceve upgrade temporaneo (dura fino completamento
 
 **Narrazione:**
 
-> *Artemis, avvicini mano sinistra (quella con Ring fuso) alle fiamme. Ring inizia ciclare colori freneticamente: ORO-ARGENTO-VIOLA-ORO-ARGENTO...*
+> *Artemis, la mano sinistra (quella con Ring fuso) vicino alle fiamme. Ring inizia ciclare colori freneticamente: ORO-ARGENTO-VIOLA-ORO-ARGENTO...*
 >
-> *Tocchi fiamme.*
+> *E al contatto...*
 >
 > *E...*
 >
-> *...fiamme CAMBIANO COLORE. Per 10 secondi, non sono più dorate. Sono ARCOBALENO. Oro (Lathander), Argento (Mask), Viola (tuo potere warlock), intrecciati come fili su telaio. E senti DUE voci (simultanee, paradossalmente armoniose):*
+> *...fiamme CAMBIANO COLORE. Per 10 secondi, non sono più dorate. Sono ARCOBALENO. Oro (Lathander), Argento (Mask), Viola (tuo potere warlock), intrecciati come fili su telaio. E DUE voci (simultanee, paradossalmente armoniose):*
 >
 > **LATHANDER:** *"Fuoco è cambiamento. Alba brucia via notte."*
 > **MASK:** *"Fuoco è trasformazione. Ombra danza nelle fiamme."*
@@ -595,7 +595,7 @@ Spirito Hella riceve beneficio:
 
 **Descrizione Dettagliata:**
 
-> *Questa colonna è... anomalia. Mithral è metallo nanico comune, ma le incisioni sono DELICATE. Quasi elfiche. Viti intrecciate salgono spiraliformi, ogni foglia così dettagliata che sembra potrebbe staccarsi e fluttuare via. Toccando metallo, è CALDO - non bruciante, ma come se fosse vivo. E sentite suono debole: come vento tra alberi lontani.*
+> *Questa colonna è... anomalia. Mithral è metallo nanico comune, ma le incisioni sono DELICATE. Quasi elfiche. Viti intrecciate salgono spiraliformi, ogni foglia così dettagliata che sembra potrebbe staccarsi e fluttuare via. Toccando metallo, è CALDO - non bruciante, ma come se fosse vivo. E c'è un suono debole: come vento tra alberi lontani.*
 
 **Simbolismo:** Grazia e Bellezza - valori insoliti per nani, ma Moradin abbraccia TUTTI aspetti creazione
 
@@ -612,7 +612,7 @@ Spirito Hella riceve beneficio:
 
 **Narrazione Visione:**
 
-> *Artemis, tocchi colonna mithral e chiudi occhi. Ring pulsa delicatamente. E vedi...*
+> *Artemis, al contatto con la colonna mithral il Ring pulsa delicatamente. E la pietra mostra...*
 >
 > *...MORADIN e CORELLON LARETHIAN (dio elfico) seduti fianco a fianco. Anno -5000. Prima guerre razziali. Prima odio. Solo... cooperazione. Creano qualcosa insieme: questa sala. Moradin forgia adamantio, Corellon incanta cristalli. Lavorano in armonia perfetta.*
 >
@@ -620,7 +620,7 @@ Spirito Hella riceve beneficio:
 >
 > *Corellon risponde: "E questa sala sarà testimone. Quando nano e non-nano cooperano... miracoli accadono."*
 >
-> *Visione termina. Capisci: questa sala fu creata con cooperazione inter-razziale. E TU - con Ring che rappresenta dualità - sei erede di quella cooperazione.*
+> *Visione termina. Questa sala fu creata con cooperazione inter-razziale. E TU - con Ring che rappresenta dualità - sei erede di quella cooperazione.*
 
 **Effetto Meccanico - BENEDIZIONE UNITÀ:**
 
@@ -643,7 +643,7 @@ Artemis riceve bonus permanente (resto avventura):
 
 **Narrazione:**
 
-> *Thorik, tocchi colonna est. Corona sulla fronte esplode luce. E senti... FORZA. Non fisica (anche se quella). Forza SPIRITUALE. Determinazione assoluta. Come montagna che resiste erosione millenni. Senti Moradin sussurrare: "Forza non è solo muscoli. È volontà che non piega."*
+> *Thorik, al contatto con la colonna est la Corona esplode di luce. E arriva... FORZA. Non fisica (anche se quella). Forza SPIRITUALE. Determinazione assoluta. Come montagna che resiste erosione millenni. E Moradin sussurra: "Forza non è solo muscoli. È volontà che non piega."*
 
 **Effetto Meccanico - BENEDIZIONE FORZA MONTAGNA:**
 
@@ -663,7 +663,7 @@ Thorik riceve (dura 24 ore, poi rinnovabile toccando di nuovo):
 
 **Narrazione:**
 
-> *Tordek, tocchi colonna ovest. La Cintura della Devastazione vibra. E senti... RESILIENZA. Pelle indurisce leggermente. Respiro rallenta, diventa profondo. Come entrare meditazione combattimento profonda. Moradin: "Monaco comprende: sopravvivere è primo passo verso vittoria."*
+> *Tordek, al contatto con la colonna ovest la Cintura della Devastazione vibra. E arriva... RESILIENZA. La pelle indurisce leggermente. Il respiro rallenta, diventa profondo. Come entrare meditazione combattimento profonda. Moradin: "Monaco comprende: sopravvivere è primo passo verso vittoria."*
 
 **Effetto Meccanico - BENEDIZIONE PELLE PIETRA:**
 
@@ -707,14 +707,14 @@ PG che tocca riceve (dura 8 ore):
 
 **Narrazione:**
 
-> *Tordek, siedi in posizione loto perfetta, esattamente tra le quattro colonne. Chiudi occhi. Respiri rallentano. Entri trance monaco profonda.*
+> *Tordek, in posizione loto perfetta, esattamente tra le quattro colonne: i respiri rallentano, e la trance monaco si apre.*
 >
-> *E VEDI (occhio spirituale):*
+> *E l'occhio spirituale mostra:*
 > - *Energia ki fluire tra colonne in circuito: NORD → EST → SUD → OVEST → NORD, ciclo infinito*
 > - *Colonne non sono solo pietra - sono MERIDIANI del demiplane, come meridiani ki in corpo umano*
-> - *E vedI MORADIN - Anno -5000 - piantare colonne mentre canta Nanico Primordiale*
+> - *E MORADIN - Anno -5000 - che pianta le colonne mentre canta Nanico Primordiale*
 >
-> *Comprendi: Sala è CORPO VIVENTE. Altare è cuore. Colonne sono ossa. Venature oro sono sangue. E tu... ora sei parte di questo corpo. Temporaneamente.*
+> *La Sala è CORPO VIVENTE. Altare è cuore. Colonne sono ossa. Venature oro sono sangue. E tu... ora sei parte di questo corpo. Temporaneamente.*
 
 **Effetto Meccanico - TALENTO BONUS PERMANENTE:**
 
@@ -828,7 +828,7 @@ Tutti PG che osservano affresco per almeno 1 minuto:
 
 **Narrazione Visione Condivisa:**
 
-> *Affresco ESPLODE chiarezza per 10 secondi. Vedete futuro POSSIBILE (non garantito):*
+> *Affresco ESPLODE chiarezza per 10 secondi su un futuro POSSIBILE (non garantito):*
 >
 > - *Hammerfist salva, mura integre, bandiere naniche sventolano*
 > - *Voi quattro (Hella VIVA!) davanti Re Thorek, ricevete medaglie*
@@ -837,7 +837,7 @@ Tutti PG che osservano affresco per almeno 1 minuto:
 > - *Tordek medita sereno, aura ki visibile*
 > - *Folla nani sotto balcone acclama: "Eroi! Salvatori!"*
 >
-> *Poi visione svanisce. Ma sensazione resta: **QUESTO È POSSIBILE.** Dipende da voi. Destino non scritto. Futuro creabile.*
+> *Poi visione svanisce, e quello che resta è **QUESTO È POSSIBILE.** Dipende da voi. Destino non scritto. Futuro creabile.*
 
 **Effetto Meccanico - SPERANZA RINNOVATA:**
 
@@ -881,7 +881,7 @@ Tutti PG:
 >
 > *Piangi. Non vergogna - rilascio catartico. Lacrime scendono guance, bagnano barba. Tordek e Artemis vedono ma non giudicano. Capiscono.*
 >
-> *Corona sulla fronte brilla INTENSAMENTE - luce come *Daylight*. E senti voce Moradin (orgogliosa):*
+> *Corona sulla fronte brilla INTENSAMENTE - luce come *Daylight*. E la voce di Moradin (orgogliosa):*
 > **"Figlio mio. Piangere non è debolezza. È FORZA. Riconoscere dolore e continuare comunque. Questo è coraggio vero."**
 
 **Effetto Meccanico - BENEDIZIONE VULNERABILITÀ:**
@@ -892,7 +892,7 @@ Thorik recupera **3d8+13 HP** immediatamente (15-37 HP, media ~27)
 
 **SUCCESSO:**
 
-> *Thorik, rimani composto ma commosso. Corona pulsa dolcemente. Senti approvazione Moradin ma... meno intensa. Controllo emotivo è bene, MA vulnerabilità ha valore.*
+> *Thorik composto ma commosso. Corona pulsa dolcemente. L'approvazione di Moradin arriva, ma... meno intensa. Controllo emotivo è bene, MA vulnerabilità ha valore.*
 
 **Effetto Meccanico:** Recupera **2d8+13 HP** (16-29 HP, media ~23) - meno potente
 
@@ -904,9 +904,9 @@ Thorik recupera **3d8+13 HP** immediatamente (15-37 HP, media ~27)
 
 **Stato Iniziale (Parte 2):**
 
-> *Affresco diverso da altri. Superficie NON solida - LIQUIDA, ondeggia come acqua verticale. E oltre... FUOCO. Non dipinto. REALE. Sentite calore emanare onde.*
+> *Affresco diverso da altri. Superficie NON solida - LIQUIDA, ondeggia come acqua verticale. E oltre... FUOCO. Non dipinto. REALE. Il calore arriva a onde.*
 >
-> *Intravvedete oltre:*
+> *Oltre:*
 > - *Roccia nera vetrificata*
 > - *Fiumi lava scorrono come acqua*
 > - *Cielo arancione-sangue senza nuvole*
@@ -922,7 +922,7 @@ Thorik recupera **3d8+13 HP** immediatamente (15-37 HP, media ~27)
 
 **Narrazione:**
 
-> *Thorik, quando ti avvicini entro 3 metri, Corona pulsa. Rune attorno cornice affresco brillano oro fuso. Fiamme superficie si SEPARANO, formano cerchio ingresso 2,5m diametro.*
+> *Thorik, entro 3 metri la Corona pulsa. Rune attorno cornice affresco brillano oro fuso. Fiamme superficie si SEPARANO, formano cerchio ingresso 2,5m diametro.*
 >
 > *Testo fluttuante appare (Nanico, leggibile tutti):*
 
@@ -971,7 +971,7 @@ Quando PG tornano con Topazio attivato:
 
 **Descrizione Affresco Completo:**
 
-> *Affresco mostra Piano Elementale Terra. Guardandolo, sentite PESO. Gravità tira verso superficie. Vedete:*
+> *Affresco mostra Piano Elementale Terra. Da lì arriva il PESO: la gravità tira verso la superficie. Oltre:*
 > - *Cristalli giganti grandi come torri*
 > - *Stalattiti adamantine pendono da soffitto invisibile oscurità*
 > - *Geodi brillano luce interna*
@@ -1186,7 +1186,7 @@ Aegis Fang acquisisce (permanente vs Fauci Palude):
 
 > *Quando posate corpo Hella davanti affresco vuoto, luce verde (energia druida) esce corpo. Tocca superficie. Per 10 secondi, HELLA FANTASMA appare tela - semi-trasparente, bellissima, serena.*
 >
-> *Sorride. Tocca vetro da interno (vedete mano premere superficie). Lascia simbolo: **Quercia e Martello Intrecciati** (druida + nanico). Poi svanisce.*
+> *Sorride. Tocca vetro da interno (la mano preme la superficie). Lascia simbolo: **Quercia e Martello Intrecciati** (druida + nanico). Poi svanisce.*
 
 **Significato:** Promessa - Hella TORNERÀ. Spirito attende con speranza.
 
@@ -1241,7 +1241,7 @@ Aegis Fang acquisisce (permanente vs Fauci Palude):
 
 **Narrativo:**
 
-> *Pregate davanti Altare. Forgia Eterna pulsa. Fiamme dorate si STACCANO, fluttuano verso voi come farfalle luminose, toccano pelle. Sentite... indurimento. Non spiacevole. Come indossare armatura invisibile. Moradin: "Figli pietra. Vi proteggo come montagna protegge valle."*
+> *Pregate davanti Altare. Forgia Eterna pulsa. Fiamme dorate si STACCANO, fluttuano verso voi come farfalle luminose, toccano pelle. E arriva... un indurimento. Non spiacevole. Come indossare armatura invisibile. Moradin: "Figli pietra. Vi proteggo come montagna protegge valle."*
 
 ---
 
@@ -1259,7 +1259,7 @@ Aegis Fang acquisisce (permanente vs Fauci Palude):
 
 **Narrativo:**
 
-> *Respirate profondamente aria Sala. E quando espirate... sentite controllo perfetto. Temperatura corpo si STABILIZZA. Non sentite più caldo/freddo normali. Solo... equilibrio. Moradin: "Corpi mortali fragili. Vi rendo... meno fragili."*
+> *Respirate profondamente aria Sala. E all'espirazione... controllo perfetto. Temperatura corpo si STABILIZZA. Caldo e freddo normali non arrivano più. Solo... equilibrio. Moradin: "Corpi mortali fragili. Vi rendo... meno fragili."*
 
 ---
 
@@ -1277,7 +1277,7 @@ Aegis Fang acquisisce (permanente vs Fauci Palude):
 
 **Narrativo:**
 
-> *Toccate petto con mano. Sentite... CALORE interno. Come brace addormentata. Quando necessario, potrete "svegliarla". Tirare fuori energia vitale dalla brace. Guarire ferite. Moradin: "Forgia non solo crea armi. Crea VITA. Portate questa forgia dentro voi."*
+> *Una mano sul petto, e c'è... CALORE interno. Come brace addormentata. Quando necessario, potrete "svegliarla". Tirare fuori energia vitale dalla brace. Guarire ferite. Moradin: "Forgia non solo crea armi. Crea VITA. Portate questa forgia dentro voi."*
 
 **Meccanica Importante:** Questo è **auto-guarigione**, NON richiede *Cure Moderate Wounds* di Aegis Fang. Liberando capacità ascia per usi tattici.
 
@@ -1301,7 +1301,7 @@ Aegis Fang acquisisce (permanente vs Fauci Palude):
 > *Moradin voce risuona Sala (dopo che accettate andare Piano Fuoco):*
 > **"Figli coraggiosi. Affronterete FUOCO PRIMORDIALE. Luogo dove mortali bruciano istantaneamente. Ma voi... non brucerete. Vi avvolgo mantello invisibile. Fiamme vedranno FRATELLI, non intrusi. Camminate tra fuoco come pesci nuotano acqua."**
 >
-> *Aura dorata vi circonda, si assorbe pelle. Sentite... invulnerabilità. Non arroganza. Protezione.*
+> *Aura dorata vi circonda, si assorbe pelle. E arriva... invulnerabilità. Non arroganza. Protezione.*
 
 ---
 

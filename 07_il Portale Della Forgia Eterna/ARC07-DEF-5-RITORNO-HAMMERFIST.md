@@ -155,13 +155,13 @@ Il ramo cambia **come si apre** la Battaglia di Hammerfist, non se si vince.
 
 ### ZONA 1 — Lo Strappo fra le Ere (il ritorno)
 > **Read-aloud (Salvatore — il viaggio a ritroso).** *La luce del Rubino vi
-> avvolge, e il mondo si frantuma in rosso. Vi sentite allungare, strappare,
-> compressi in un filo sottile di esistenza tirato attraverso mille anni. Non
+> avvolge, e il mondo si frantuma in rosso. Il rosso vi allunga, vi strappa, vi
+> comprime in un filo sottile di esistenza tirato attraverso mille anni. Non
 > c'è dolore — solo una vertigine cosmica, e VITE che vi lampeggiano davanti al
 > contrario: il drago che risale in cielo, Zog'tar che si rialza, le mura di
 > Hammerfist che si anneriscono di secoli in pochi battiti, cinque generazioni
-> che nascono e muoiono a ritroso. Vedete Thorek I diventare polvere, e la sua
-> stirpe fiorire fino a un re che non conoscete ancora, curvo su un trono, che
+> che nascono e muoiono a ritroso. Thorek I diventa polvere, e la sua
+> stirpe fiorisce fino a un re che non conoscete ancora, curvo su un trono, che
 > muore. Poi — pietra. Fuoco. Il rombo di una battaglia. Siete tornati. E siete
 > tornati nel momento peggiore.*
 

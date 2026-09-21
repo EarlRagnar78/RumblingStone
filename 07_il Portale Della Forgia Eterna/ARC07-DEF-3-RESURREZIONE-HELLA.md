@@ -285,15 +285,15 @@ punteggio** — un punto solo di CA, Riflessi e iniziativa al tavolo.
 > cristallizzata. Si usa solo per le emergenze supreme. Riportare una druida
 > dalla morte… si qualifica.»*
 
-> **Read-aloud (Salvatore — il sacro che si sente nel corpo).** *Thorik, posi
-> le mani sulla superficie di mithral, e l'Altare SI APRE. Non c'erano cuciture,
+> **Read-aloud (Salvatore — il sacro che si sente nel corpo).** *Sotto le mani
+> di Thorik il mithral SI APRE. Non c'erano cuciture,
 > un istante fa: ora una camera interna di trenta centimetri si schiude come un
 > fiore di metallo. Dentro, sospeso nella luce dorata, un cristallo di rubino
 > sanguigno grande come il tuo pugno — e ha la forma ESATTA di un cuore nanico:
 > quattro camere, i vasi visibili, tutto scolpito in rubino divino trasparente.
-> E pulsa. Sessanta battiti al minuto. Il ritmo di un cuore a riposo. Quando lo
-> sfiori, senti calore. Vita. Creazione pura. E capisci, senza che nessuno te
-> lo dica, che questo si spenderà UNA volta sola.*
+> E pulsa. Sessanta battiti al minuto. Il ritmo di un cuore a riposo. Da vicino
+> arriva il calore. Vita. Creazione pura. E la sua luce non promette un secondo
+> battito: una cosa così si spende UNA volta sola.*
 
 > **⚠️ Canone (state.md §6):** il Cuore di Moradin è **single-use**. Dopo il
 > rito è **SPESO** — NON torna nell'Altare. Se un file/engine lo "riusa" dopo
@@ -357,10 +357,10 @@ azaghâl núr!»* (*Nano è caduto, Moradin Re… Hella Potere-casa, ritorna vit
 Successo: l'Altare arde d'oro, il Cuore accelera a 90 bpm.
 
 **STEP 2 — Canalizzazione (Tordek · Concentrazione CD 20).**
-> *Tordek, chiudi gli occhi. I respiri rallentano. Senti un battito — il Cuore
-> di Moradin — e il tuo ki batte allo stesso ritmo. L'energia della vita fluisce
-> dal Cuore, attraverso te, verso Hella. Ma senti una lotta: il suo spirito VUOLE
-> tornare, e la morte resiste. Tira. Contrasta. Devi tirarla indietro.*
+> *Tordek, il respiro rallenta da sé. C'è un battito — il Cuore di Moradin — e
+> il tuo ki lo prende come misura. L'energia della vita fluisce dal Cuore,
+> attraverso te, verso Hella. Dall'altra parte c'è una lotta: il suo spirito
+> VUOLE tornare, e la morte non molla la presa. La corda è tesa fra le due.*
 Fallimento: 2d6 non letali, riprova.
 
 **STEP 3 — Stabilizzazione (Artemis · Utilizzare Oggetti Magici CD 18).** L'Anello

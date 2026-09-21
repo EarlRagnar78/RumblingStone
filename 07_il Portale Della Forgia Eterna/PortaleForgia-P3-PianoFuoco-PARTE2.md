@@ -28,11 +28,11 @@
 
 **Narrazione:**
 
-> *Dopo attraversamento tremendo oceano lava (saltando tra isole piccole, rischiando cadute multiple), raggiungete isola più grande. Roccia solidificata, 30 metri diametro, abbastanza stabile. Pensate sia luogo riposo sicuro...*
+> *Dopo attraversamento tremendo oceano lava (saltando tra isole piccole, rischiando cadute multiple), raggiungete isola più grande. Roccia solidificata, 30 metri diametro, abbastanza stabile. Sembra luogo riposo sicuro...*
 >
-> *...ma vi sbagliate.*
+> *...e non lo è.*
 >
-> *Al centro isola, vedete ACCAMPAMENTO. Non naturale - COSTRUITO. Strutture rudimentali roccia fusa modellata: muri bassi, fucina primitiva, gabbie.*
+> *Al centro isola, un ACCAMPAMENTO. Non naturale - COSTRUITO. Strutture rudimentali roccia fusa modellata: muri bassi, fucina primitiva, gabbie.*
 >
 > *GABBIE. Dentro: tre creature umanoidi. Nani? No... troppo sottili. Umani? Pelle colore sbagliato - grigio cenere. Uno solleva testa quando vi vede. Occhi IMPLORANO silenziosamente. È... SCHIAVO.*
 >
@@ -354,7 +354,7 @@ Aggirare isola senza farsi vedere:
 
 **Narrazione:**
 
-> *Schiavi crollano ginocchia quando aprite gabbie. Kazimir, il più vecchio (tiefling ~40 anni apparenti), piange silenziosamente. "Grazie... grazie... anni... ANNI intrappolati qui..."*
+> *A gabbie aperte, schiavi crollano ginocchia. Kazimir, il più vecchio (tiefling ~40 anni apparenti), piange silenziosamente. "Grazie... grazie... anni... ANNI intrappolati qui..."*
 >
 > *Ysolde tocca terra solida fuori gabbia con reverenza religiosa. "Credevo morire qui. Bruciare in fucina salamandra. Tu... salvato noi."*
 >
@@ -846,7 +846,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 
 **Narrazione Se Successo:**
 
-> *Thorik, reciti preghiera antica - parole che generazioni nani hanno cantato da millenni. Mentre cammini settimo giro, rune Altare RISPONDONO. Brillano oro liquido, formano pattern che sembrano... respirare. Aria attorno Altare trema, realtà stessa si PIEGA leggermente.*
+> *Thorik, la preghiera antica - parole che generazioni nani hanno cantato da millenni. Al settimo giro, rune Altare RISPONDONO. Brillano oro liquido, formano pattern che sembrano... respirare. Aria attorno Altare trema, realtà stessa si PIEGA leggermente.*
 
 ---
 
@@ -860,7 +860,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 
 **Narrazione Se Successo:**
 
-> *Artemis, Ring pulsa SELVAGGIAMENTE - cicla colori oro/argento/viola così veloce diventa BIANCO puro. Allunghi mano verso oceano lava sotto piramide. E... TIRI. Come pescatore tira rete, tiri ENERGIA PURA da Piano Fuoco. Fiamme invisibili fluiscono verso Ring, poi da Ring verso Altare. Doloroso - senti calore interno - ma Benedizioni proteggono. Rune Altare assorbono energia, brillano sempre più intenso.*
+> *Artemis, Ring pulsa SELVAGGIAMENTE - cicla colori oro/argento/viola così veloce diventa BIANCO puro. Allunghi mano verso oceano lava sotto piramide. E... TIRI. Come pescatore tira rete, tiri ENERGIA PURA da Piano Fuoco. Fiamme invisibili fluiscono verso Ring, poi da Ring verso Altare. Doloroso - il calore arriva da dentro - ma Benedizioni proteggono. Rune Altare assorbono energia, brillano sempre più intenso.*
 
 ---
 
@@ -874,7 +874,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 
 **Narrazione Se Successo:**
 
-> *Tordek, siedi posizione loto perfetta centro Altare. Chiudi occhi. Respiri rallentano. Senti... PULSAZIONE. Altare BATTE come cuore. E ki tuo batte stesso ritmo. Sincronia. Armonia. Monaco e Altare diventano UNO per momento eterno.*
+> *Tordek, in posizione loto perfetta al centro dell'Altare: i respiri rallentano, e arriva... la PULSAZIONE. Altare BATTE come cuore. E ki tuo batte stesso ritmo. Sincronia. Armonia. Monaco e Altare diventano UNO per momento eterno.*
 >
 > *E attorno, energia canalizzata da Artemis inizia... SOLIDIFICARSI. Non più invisibile - ora VISIBILE. Fili dorati girano, intrecciano, formano pattern geometrico tridimensionale sopra piedistallo.*
 
@@ -898,11 +898,11 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 >
 > *(Pausa drammatica 5 secondi silenzio)*
 >
-> *Quando vista torna, VEDETE.*
+> *Quando vista torna:*
 >
 > *Centro piedistallo, incavo non più vuoto. Dentro: GEMMA.*
 >
-> *Topazio. Ma non topazio normale. Topazio che CONTIENE tempo stesso. Guardandolo, vedete riflessi IMPOSSIBILI:*
+> *Topazio. Ma non topazio normale. Topazio che CONTIENE tempo stesso. Dentro, riflessi IMPOSSIBILI:*
 >
 > - *Voi stessi neonati*
 > - *Voi stessi anziani*
@@ -913,7 +913,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 >
 > *...Corona REAGISCE. Incavo superiore Corona (fronte) brilla. Topazio VOLA da piedistallo, si INSERISCE automaticamente in Corona. CLICK. Fusione perfetta. Come se fosse sempre stato parte.*
 >
-> *E sentite POTERE. Topazio attivato. Prima gemma recuperata. Due rimangono.*
+> *E il POTERE arriva. Topazio attivato. Prima gemma recuperata. Due rimangono.*
 
 ---
 
@@ -958,9 +958,9 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 
 > *Topazio fuso in Corona pulsa caldo (non doloroso). Aegis Fang canta TRIONFANTE: "PRIMA PROVA COMPLETA! Portatore, ben fatto! Ora... tornare. Riposare. Preparare prossima."*
 >
-> *Guardate attorno. Piattaforma piramide... cambia. Altare Tempo, scopo completato, inizia DISSOLVERE. Rune dorate sbiadiscono. Piedistallo adamantio si liquefa lentamente, scorre via come mercurio.*
+> *Attorno, la piattaforma piramide... cambia. Altare Tempo, scopo completato, inizia DISSOLVERE. Rune dorate sbiadiscono. Piedistallo adamantio si liquefa lentamente, scorre via come mercurio.*
 >
-> *E distante, vedete PORTALE. Non c'era prima. Ora SÌ. Cerchio dorato identico a quello arrivo, sospeso 3m sopra bordo piattaforma. Via ritorno Sala Forgia Eterna.*
+> *E distante, un PORTALE. Non c'era prima. Ora SÌ. Cerchio dorato identico a quello arrivo, sospeso 3m sopra bordo piattaforma. Via ritorno Sala Forgia Eterna.*
 >
 > *Tempo lasciare Piano Fuoco. Missione completa.*
 
@@ -993,7 +993,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 
 **Attraversamento Portale Ritorno:**
 
-> *Attraversate portale. Transizione INVERSA - da calore opprimente a... fresco. Freddo quasi. Temperatura Sala Forgia sembra GELIDA dopo Piano Fuoco, anche se è normale 20°C.*
+> *Oltre il portale, transizione INVERSA - da calore opprimente a... fresco. Freddo quasi. Temperatura Sala Forgia sembra GELIDA dopo Piano Fuoco, anche se è normale 20°C.*
 >
 > *Atterrate piattaforma spawn Sala. Affresco Ovest (A4 - Portale Fuoco) dietro voi... cambia. Non più portale liquido ondeggiante. Ora: AFFRESCO STATICO mostrante VITTORIA vostra.*
 >
@@ -1005,11 +1005,11 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 
 **Affresco A5 (Est) - Portale Terra APPARE:**
 
-> *E mentre osservate Affresco Fuoco chiuso, sentite... vibrazione. Girate. Affresco EST - quello che era VUOTO Parte 2 - ora ESISTE.*
+> *E dall'Affresco Fuoco chiuso arriva... una vibrazione. Alle spalle, l'Affresco EST - quello che era VUOTO Parte 2 - ora ESISTE.*
 >
-> *Materializza davanti occhi (30 secondi processo): Cornice oro/adamantio, poi superficie, poi immagine.*
+> *Materializza in 30 secondi: Cornice oro/adamantio, poi superficie, poi immagine.*
 >
-> *Vedete Piano Elementale Terra:*
+> *Il Piano Elementale Terra:*
 >
 > - *Cristalli giganti grandi torri*
 > - *Gravità distorta - rocce galleggiano*

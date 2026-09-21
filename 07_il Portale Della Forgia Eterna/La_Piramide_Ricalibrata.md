@@ -36,13 +36,13 @@
 
 > *Avete già scalato 12 dei titanici blocchi di ossidiana levigata che compongono la base della piramide invertita. Ne rimangono altri 12. Ognuno è un muro nero, liscio e perfetto, alto 3 metri.*
 >
-> *Man mano che salite, il calore non viene solo da sotto, ma dalla PIETRA STESSA. La piramide sta pulsando.*
+> *Più si sale, e il calore non viene solo da sotto, ma dalla PIETRA STESSA. La piramide sta pulsando.*
 >
-> *Artemis, con la tua* Individuazione del Magico *costantemente attiva, vedi quello che gli altri ignorano. Non è solo pietra calda. È un circuito. Rune in una lingua ignota – Ignan Primordiale – affiorano sulla superficie nera dei blocchi proprio mentre ci passate sopra. Brillano di un violetto surreale, rilasciano una scarica di energia ritmica, e poi svaniscono.*
+> *Artemis, con la tua* Individuazione del Magico *costantemente attiva, c'è quello che gli altri non colgono. Non è solo pietra calda. È un circuito. Rune in una lingua ignota – Ignan Primordiale – affiorano sulla superficie nera dei blocchi proprio mentre ci passate sopra. Brillano di un violetto surreale, rilasciano una scarica di energia ritmica, e poi svaniscono.*
 >
 > *È come scalare il sistema nervoso di un dio addormentato.*
 >
-> *E quando superate l'ultimo blocco, alzando la testa oltre il bordo della piattaforma, Artemis vede per la prima volta la verità: questa non è solo una struttura sospesa. È il TAPPO. La parete esterna di ossidiana che state scalando è l'unica cosa che trattiene la pressione di un intero vulcano.*
+> *E oltre l'ultimo blocco, al bordo della piattaforma, la verità si mostra per la prima volta: questa non è solo una struttura sospesa. È il TAPPO. La parete esterna di ossidiana che state scalando è l'unica cosa che trattiene la pressione di un intero vulcano.*
 
 ### **Arrivo alla Piramide: Il Tappo del Vulcano**
 
@@ -280,7 +280,7 @@
 **Fallimento:** Sovraccarico - Artemis subisce 3d6 danni da fuoco (Resistenza applica) e deve riprovare (+2 CD).  
 
 **Narrazione Successo:**
-> *Artemis, il Ring pulsa SELVAGGIAMENTE - cicla colori oro/argento/viola così velocemente da diventare BIANCO puro. Allunghi la mano verso l'oceano di lava sotto l'isola dove c'è l'altare. E... TIRI. Come un pescatore tira una rete, tiri ENERGIA PURA dal Piano del Fuoco. Fiamme invisibili fluiscono verso il Ring, poi dal Ring verso l'Altare. È doloroso - senti calore interno - ma le Benedizioni proteggono. Le rune dell'Altare assorbono tutto, brillando con intensità solare.*
+> *Artemis, il Ring pulsa SELVAGGIAMENTE - cicla colori oro/argento/viola così velocemente da diventare BIANCO puro. Allunghi la mano verso l'oceano di lava sotto l'isola dove c'è l'altare. E... TIRI. Come un pescatore tira una rete, tiri ENERGIA PURA dal Piano del Fuoco. Fiamme invisibili fluiscono verso il Ring, poi dal Ring verso l'Altare. È doloroso - il calore arriva da dentro - ma le Benedizioni proteggono. Le rune dell'Altare assorbono tutto, brillando con intensità solare.*
 
 ---
 
@@ -293,7 +293,7 @@
 **Fallimento:** Nube tossica (TS Tempra CD 18 o Nauseati) e feedback temporale (invecchiamento estetico 1d4 anni).  
 
 **Narrazione Successo:**
-> *Tordek, siedi in posizione del loto perfetta al centro dell'Altare. Chiudi gli occhi. I respiri rallentano. Senti... PULSAZIONE. L'Altare BATTE come un cuore. E il tuo Ki batte allo stesso ritmo. Sincronia. Armonia. Monaco e Altare diventano UNO per un momento eterno.*
+> *Tordek, in posizione del loto perfetta al centro dell'Altare: i respiri rallentano, e arriva... la PULSAZIONE. L'Altare BATTE come un cuore. E il tuo Ki batte allo stesso ritmo. Sincronia. Armonia. Monaco e Altare diventano UNO per un momento eterno.*
 > *Attorno a te, l'energia canalizzata da Artemis inizia a... SOLIDIFICARSI. Non più invisibile - ora VISIBILE. Fili dorati girano, si intrecciano, formano un pattern geometrico tridimensionale sopra il piedistallo.*
 
 ---
@@ -308,7 +308,7 @@
 * *Nota:* Il **Rubino Perfetto** (5.000 mo) e i **Rubini Elementali** (3.500 mo) appena recuperati, più parte del loot della Salamandra, sono perfetti per questo scopo.
 
 **Effetto Visivo (Giustificazione):**
-> *Non appena le gemme (o gli oggetti magici) toccano l'altare, non fondono. **Sublimano.** Una fiamma divina, bianca e fredda come la stasi, avvolge ogni oggetto prezioso. La materia fisica viene consumata istantaneamente, trasformata in puro "valore" concettuale. Vedete l'essenza stessa delle gemme — la loro rarità, la loro bellezza — fluire come fumo dorato e venire **assorbita avidamente** dalla forma spettrale del Topazio, rendendolo reale e solido.*
+> *Non appena le gemme (o gli oggetti magici) toccano l'altare, non fondono. **Sublimano.** Una fiamma divina, bianca e fredda come la stasi, avvolge ogni oggetto prezioso. La materia fisica viene consumata istantaneamente, trasformata in puro "valore" concettuale. L'essenza stessa delle gemme — la loro rarità, la loro bellezza — fluisce come fumo dorato e viene **assorbita avidamente** dalla forma spettrale del Topazio, rendendolo reale e solido.*
 
 ---
 
@@ -328,9 +328,9 @@
 >
 > *(Pausa drammatica)*
 >
-> *Quando la vista torna, VEDETE.*
+> *Quando la vista torna:*
 > *Al centro del piedistallo, l'incavo non è più vuoto. Dentro: UNA GEMMA.*
-> *Un Topazio. Ma non un topazio normale. Un Topazio che CONTIENE il tempo stesso. Guardandolo, vedete riflessi IMPOSSIBILI:*
+> *Un Topazio. Ma non un topazio normale. Un Topazio che CONTIENE il tempo stesso. Dentro, riflessi IMPOSSIBILI:*
 >
 > * *Voi stessi neonati.*
 > * *Voi stessi anziani.*
@@ -342,7 +342,7 @@
 > *E quando Thorik lo tocca...*
 > *...la Corona REAGISCE. L'incavo superiore (fronte) brilla. Il Topazio VOLA dal piedistallo, si INSERISCE automaticamente nella Corona con un CLICK definitivo. Fusione perfetta. Come se fosse sempre stato parte di essa.*
 >
-> *E sentite il POTERE. Il Topazio è attivato. La prima gemma recuperata. Ne rimangono due.*
+> *E il POTERE arriva. Il Topazio è attivato. La prima gemma recuperata. Ne rimangono due.*
 
 ---
 
@@ -384,9 +384,9 @@
 **Narrazione:**
 > *Topazio fuso in Corona pulsa caldo (non doloroso). Aegis Fang canta TRIONFANTE: "PRIMA PROVA COMPLETA! Portatore, ben fatto! Ora... tornare. Riposare. Preparare prossima."*
 >
-> *Guardate attorno. Piattaforma piramide... cambia. Altare Tempo, scopo completato, inizia DISSOLVERE. Rune dorate sbiadiscono. Piedistallo adamantio si liquefa lentamente, scorre via come mercurio. L'isola non esiste più, sprofonda nel magma.*
+> *Attorno, la piattaforma piramide... cambia. Altare Tempo, scopo completato, inizia DISSOLVERE. Rune dorate sbiadiscono. Piedistallo adamantio si liquefa lentamente, scorre via come mercurio. L'isola non esiste più, sprofonda nel magma.*
 >
-> *E distante, a 9 metri, sospeso nel vuoto sopra la colonna di fuoco, vedete il PORTALE. Non c'era prima. Ora SÌ. Cerchio dorato identico a quello arrivo, sospeso 3m sopra il nulla. Via ritorno Sala Forgia Eterna.*
+> *E distante, a 9 metri, sospeso nel vuoto sopra la colonna di fuoco, il PORTALE. Non c'era prima. Ora SÌ. Cerchio dorato identico a quello arrivo, sospeso 3m sopra il nulla. Via ritorno Sala Forgia Eterna.*
 >
 > *Tempo lasciare Piano Fuoco. Missione completa.*
 

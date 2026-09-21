@@ -61,7 +61,7 @@ di prova** (§5), una via più dura ma sempre percorribile.
 ## 3. Atto 1 — La pattuglia su civette (arrivo)
 
 **Read-aloud:**
-> *Non li sentite arrivare. Un'ombra taglia il sole, poi un'altra, e all'improvviso
+> *Niente li annuncia. Un'ombra taglia il sole, poi un'altra, e all'improvviso
 > quattro **civette grandi come cavalli** planano in cerchio sopra di voi, silenziose
 > come nevischio. In groppa, elfi dalla pelle scura come corteccia bagnata, archi
 > già tesi. La più vicina non urla un ordine: aspetta, e la sua freccia sa aspettare

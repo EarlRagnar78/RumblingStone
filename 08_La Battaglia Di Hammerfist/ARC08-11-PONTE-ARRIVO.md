@@ -73,7 +73,7 @@ P6-INTEGRAZIONE-Completa.md` r.621-753)**:
 > **Read-aloud (raccordo, DM)** — cuce il salto all'Incontro 3B; il
 > testo pieno della manifestazione è in P6:
 >
-> *"Il mondo si frantuma in luce rossa. Vi sentite tirare attraverso le
+> *"Il mondo si frantuma in luce rossa. Il rosso vi tira attraverso le
 > ere — non c'è dolore, solo vertigine cosmica. Poi: pietra, calore,
 > il rombo di un assedio. Non la quiete della Forgia — il **fragore**
 > del Cuore della Montagna che sta per cadere. Sopra l'altare di

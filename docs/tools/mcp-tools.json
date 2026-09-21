@@ -2363,6 +2363,29 @@
       "deterministic": true
     },
     {
+      "name": "verifica_sezione6",
+      "description": "«La tabella dice che restano 27 ADR da indicizzare: e' ancora vero?» Nel caso vero era gia' zero, e nessuno l'aveva eseguito.\n\nEsegue davvero i comandi che le righe di STATO-E-ORDINE §6.2 citano, e boccia una riga che il comando smentisce. Distingue i CANCELLI (stampano un verdetto: un ✓ senza avvisi accanto a una riga ⬜ e' una bugia) dalle MISURE (stampano numeri: la riga deve dichiarare il numero atteso in <!-- attesa: N -->). Esegue testo scritto a mano, quindi forma rigida, allowlist di script e shell=False.",
+      "use_case": "«La tabella dice che restano 27 ADR da indicizzare: e' ancora vero?» Nel caso vero era gia' zero, e nessuno l'aveva eseguito.",
+      "invocation": "python3 scripts/verifica_sezione6.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Esce 1 se una riga di §6.2 non dice il vero. Senza, stampa la tabella con gli esiti."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
+      },
+      "deterministic": true
+    },
+    {
       "name": "import_html_module",
       "description": "«Questo modulo scritto a mano in HTML come entra nelle catene del repo, senza riscriverlo?»\n\nTravasa un modulo scritto a mano in HTML (10-stand-alone/*/) nel master markdown che ADR-0003 vuole: le classi del vocabolario diventano blockquote (read-aloud), cornici {{note}} e chiavi d'area, e le tavole SVG in linea escono in file separati e autonomi (i <defs> condivisi vengono copiati dentro ogni tavola, e le maiuscole degli attributi SVG ripristinate — XML e' case-sensitive, html.parser no). E' un'operazione UNA VOLTA SOLA: se i master esistono gia' si ferma, perche' da quel momento il markdown e' il master e rilanciare butterebbe via le correzioni. Davanti a un tag che non conosce lascia passare il contenuto e lo dichiara.",
       "use_case": "«Questo modulo scritto a mano in HTML come entra nelle catene del repo, senza riscriverlo?»",

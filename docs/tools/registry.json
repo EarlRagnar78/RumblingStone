@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 68,
+  "tool_count": 69,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -5687,6 +5687,63 @@
         "network": false
       },
       "idempotent": true
+    },
+    {
+      "id": "verifica_sezione6",
+      "path": "scripts/verifica_sezione6.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/verifica_sezione6.py",
+      "summary": "Esegue davvero i comandi che le righe di STATO-E-ORDINE §6.2 citano, e boccia una riga che il comando smentisce. Distingue i CANCELLI (stampano un verdetto: un ✓ senza avvisi accanto a una riga ⬜ e' una bugia) dalle MISURE (stampano numeri: la riga deve dichiarare il numero atteso in <!-- attesa: N -->). Esegue testo scritto a mano, quindi forma rigida, allowlist di script e shell=False.",
+      "use_case": "«La tabella dice che restano 27 ADR da indicizzare: e' ancora vero?» Nel caso vero era gia' zero, e nessuno l'aveva eseguito.",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se una riga di §6.2 non dice il vero. Senza, stampa la tabella con gli esiti."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "skills/REGISTRO-NORME-EDITORIALI.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Sola lettura."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/validate_norme_editoriali.py",
+      "tests": [
+        "scripts/tests/test_help_di_ogni_tool.py",
+        "scripts/tests/test_norme_editoriali.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0056-una-norma-senza-misura-non-esiste.md"
+      ]
     },
     {
       "id": "converters/html-to-markdown",

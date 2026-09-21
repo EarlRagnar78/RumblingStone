@@ -126,6 +126,13 @@ jobs:
       - name: Superficie delle norme scoperte — manca il codice o manca il dato?
         run: python scripts/superficie_norme.py --check
 
+      # ⚠️ Gira in un passo SUO e per ultimo fra i cancelli editoriali, perche'
+      # esegue davvero i comandi che §6.2 cita — e sono i piu' lenti del repo.
+      # Il difetto che presidia: i «27 ADR mancanti» erano zero, con il comando
+      # che lo smentiva citato accanto alla riga, verde in CI. ADR-0063.
+      - name: §6.2 — i comandi citati si eseguono, non si credono
+        run: python scripts/verifica_sezione6.py --check
+
       # Terzo della stessa famiglia: misura la LEGGIBILITA' dell'artefatto, che
       # nessun exit code vede. Gerarchia dei titoli (i segnalibri del PDF),
       # caratteri per riga dalle metriche vere del font, e le coppie di colori

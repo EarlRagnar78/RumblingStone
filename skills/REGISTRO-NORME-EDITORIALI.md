@@ -33,57 +33,57 @@
 
 ## 1 · `rumblingstone-narrative-style/references/` — la voce e la pagina
 
-| File | Norma verificabile | Stato |
-|---|---|---|
-| `read-aloud-adulti.md` | box **≤ 12 righe** (2-4 per un round, 8-12 apertura, 4-6 rivelazione) | 🟢 `misura_craft --box` |
-| `read-aloud-adulti.md` | **un solo nome proprio nuovo** per box | 🟢 `misura_craft --box` |
-| `read-aloud-adulti.md` | **niente parentesi né incisi** lunghi | 🟢 `misura_craft --box` |
-| `read-aloud-adulti.md` | max **due livelli** di subordinate | 🔴 non misurato — servirebbe un parser sintattico dell'italiano; il segnale povero (contare le virgole) darebbe falsi positivi come i 64/64 di `PIANO-PROSA-CHE-NON-SEMBRI-GENERATA` |
-| `read-aloud-adulti.md` | box di combattimento chiude su **«Che fate?»** | 🟢 congegno `chiusura su decision point` |
-| `editorial-standards.md` | `**Read-aloud (pilastro lead).**` etichettato | 🟢 congegno `regia etichettata **Read-aloud (X)**` |
-| `editorial-standards.md` | `**NOME (registro/tono):** *«battuta»*` | 🟢 congegno `dialogo nella forma dichiarata` |
-| `editorial-standards.md` | **la quarta colonna**: un blocco sensoriale chiude con «Cosa NON dire» (ADR-0057) | 🟡 congegno `quarta colonna sensoriale` — conta **chi ce l'ha**, non accusa chi non ce l'ha: non esiste modo automatico di sapere se un blocco *avrebbe dovuto* averla |
-| `editorial-standards.md` | terminologia canonica (CD non DC, 5e bandito, metri) | 🟢 `validate_modules.py` §BANNED — ma **solo sui 5 master DEF** |
-| `editorial-standards.md` | blockquote **3-10 righe**; max **1-2 MAIUSCOLE** per read-aloud | 🟡 parziale — `--box` usa il tetto **12** di `read-aloud-adulti`; le due fonti non concordano sul minimo e lo script **non sceglie per loro**. Le maiuscole non sono misurate |
-| `style-pillars.md` | *fusion rule*: **un lead, max due support** per scena | 🟢 congegno `PILASTRO dichiarato (lead/support)` — conta la marca, non la conformità |
-| `style-pillars.md` §Mercer | **`[HDYWTDT]`**: al colpo che uccide un boss la narrazione passa al giocatore, e il marcatore **va scritto** nel testo dell'incontro | 🟢 congegno `[HDYWTDT] il finisher al giocatore` — 🔴 era a **zero in tutti e nove gli archi** |
-| `style-pillars.md` §Mercer | **yes-and with teeth**: l'invenzione del giocatore entra nel canone **e** genera una complicazione | 🟡 congegno `assorbi e rilancia (yes-and with teeth)` — conta chi **dichiara** il congegno, non chi lo applica al tavolo: quello lo sa solo il DM |
-| `SKILL.md` §Self-check | **sette domande prima di consegnare**, più il controllo di coerenza | 🟡 cinque delle sette hanno un comando (vedi `AGENTS.md` §quarto obbligo); la **4** (numeri di serie) è giudizio puro, e la **2** è un indicatore |
-| `pc-protagonism.md` | **nessun PG oltre il 40%** delle scene marcate; **≥1 scena** a testa | 🟡 `misura_craft --spotlight` — indicatore: conta le **menzioni del nome**, non le scene marcate, che il repo non marca |
-| `consequence-echoes.md` | **≥1 eco armato** quando la finzione lo consente; **≥2** alla convergenza | 🟡 congegno `eco / conseguenze a distanza` conta le **menzioni**, non gli echi armati e pagati |
-| `passate-redazionali.md` | **massimo una chiusa a effetto** per documento; massimo un tricolon | 🟢 `validate_prosa.py --documenti` (lotto D di PROSA-CHE-NON-SEMBRI-GENERATA) |
-| `italiano-nativo.md` | almeno una **dislocazione a sinistra** o un **c'è presentativo** | 🔴 non misurato — è una norma *positiva* su costrutti sintattici; il rilevatore andrebbe scritto e provato su un corpus, e non esiste |
-| `italiano-nativo.md` §9 | i **tic dell'IA**: antitesi «non X: è Y», tricolon, chiuse a effetto | 🟢 `validate_prosa.py` |
-| `varieta-fra-archi.md` | **mai due archi di fila** con la stessa tinta dominante | 🔴 non misurato — richiede che ogni arco **dichiari** la sua tinta, e nessuno lo fa: è un prerequisito di dato, non di codice |
-| `living-world.md` · `quest-design-baldur.md` | nessuna norma numerica: sono repertori di pattern | ⚪ non applicabile |
+| File | Norma verificabile | Severità | Stato |
+|---|---|---|---|
+| `read-aloud-adulti.md` | box **≤ 12 righe** (2-4 per un round, 8-12 apertura, 4-6 rivelazione) | **maggiore** · `box_oltre_12_righe` | 🟢 `misura_craft --box` |
+| `read-aloud-adulti.md` | **un solo nome proprio nuovo** per box | **minore** · `box_piu_di_un_nome_proprio` | 🟢 `misura_craft --box` |
+| `read-aloud-adulti.md` | **niente parentesi né incisi** lunghi | **minore** · `box_con_parentesi` | 🟢 `misura_craft --box` |
+| `read-aloud-adulti.md` | max **due livelli** di subordinate | **minore** | 🔴 non misurato — servirebbe un parser sintattico dell'italiano; il segnale povero (contare le virgole) darebbe falsi positivi come i 64/64 di `PIANO-PROSA-CHE-NON-SEMBRI-GENERATA` |
+| `read-aloud-adulti.md` | box di combattimento chiude su **«Che fate?»** | **maggiore** | 🟢 congegno `chiusura su decision point` |
+| `editorial-standards.md` | `**Read-aloud (pilastro lead).**` etichettato | **maggiore** | 🟢 congegno `regia etichettata **Read-aloud (X)**` |
+| `editorial-standards.md` | `**NOME (registro/tono):** *«battuta»*` | **maggiore** | 🟢 congegno `dialogo nella forma dichiarata` |
+| `editorial-standards.md` | **la quarta colonna**: un blocco sensoriale chiude con «Cosa NON dire» (ADR-0057) | **minore** | 🟡 congegno `quarta colonna sensoriale` — conta **chi ce l'ha**, non accusa chi non ce l'ha: non esiste modo automatico di sapere se un blocco *avrebbe dovuto* averla |
+| `editorial-standards.md` | terminologia canonica (CD non DC, 5e bandito, metri) | **maggiore** | 🟢 `validate_modules.py` §BANNED — ma **solo sui 5 master DEF** |
+| `editorial-standards.md` | blockquote **3-10 righe**; max **1-2 MAIUSCOLE** per read-aloud | **minore** | 🟡 parziale — `--box` usa il tetto **12** di `read-aloud-adulti`; le due fonti non concordano sul minimo e lo script **non sceglie per loro**. Le maiuscole non sono misurate |
+| `style-pillars.md` | *fusion rule*: **un lead, max due support** per scena | **minore** | 🟢 congegno `PILASTRO dichiarato (lead/support)` — conta la marca, non la conformità |
+| `style-pillars.md` §Mercer | **`[HDYWTDT]`**: al colpo che uccide un boss la narrazione passa al giocatore, e il marcatore **va scritto** nel testo dell'incontro | **minore** | 🟢 congegno `[HDYWTDT] il finisher al giocatore` — 🔴 era a **zero in tutti e nove gli archi** |
+| `style-pillars.md` §Mercer | **yes-and with teeth**: l'invenzione del giocatore entra nel canone **e** genera una complicazione | **minore** | 🟡 congegno `assorbi e rilancia (yes-and with teeth)` — conta chi **dichiara** il congegno, non chi lo applica al tavolo: quello lo sa solo il DM |
+| `SKILL.md` §Self-check | **sette domande prima di consegnare**, più il controllo di coerenza | **minore** | 🟡 cinque delle sette hanno un comando (vedi `AGENTS.md` §quarto obbligo); la **4** (numeri di serie) è giudizio puro, e la **2** è un indicatore |
+| `pc-protagonism.md` | **nessun PG oltre il 40%** delle scene marcate; **≥1 scena** a testa | **maggiore** | 🟡 `misura_craft --spotlight` — indicatore: conta le **menzioni del nome**, non le scene marcate, che il repo non marca |
+| `consequence-echoes.md` | **≥1 eco armato** quando la finzione lo consente; **≥2** alla convergenza | **maggiore** | 🟡 congegno `eco / conseguenze a distanza` conta le **menzioni**, non gli echi armati e pagati |
+| `passate-redazionali.md` | **massimo una chiusa a effetto** per documento; massimo un tricolon | **minore** | 🟢 `validate_prosa.py --documenti` (lotto D di PROSA-CHE-NON-SEMBRI-GENERATA) |
+| `italiano-nativo.md` | almeno una **dislocazione a sinistra** o un **c'è presentativo** | **minore** | 🔴 non misurato — è una norma *positiva* su costrutti sintattici; il rilevatore andrebbe scritto e provato su un corpus, e non esiste |
+| `italiano-nativo.md` §9 | i **tic dell'IA**: antitesi «non X: è Y», tricolon, chiuse a effetto | **minore** | 🟢 `validate_prosa.py` |
+| `varieta-fra-archi.md` | **mai due archi di fila** con la stessa tinta dominante | **minore** | 🔴 non misurato — richiede che ogni arco **dichiari** la sua tinta, e nessuno lo fa: è un prerequisito di dato, non di codice |
+| `living-world.md` · `quest-design-baldur.md` | nessuna norma numerica: sono repertori di pattern | — non è una norma: sono repertori di pattern, e un repertorio non si viola | ⚪ non applicabile |
 
 ## 2 · `rumblingstone-indagine/references/` — il caso
 
-| File | Norma verificabile | Stato |
-|---|---|---|
-| `nodi-e-sei-porte.md` | **≥3 porte** per nodo, **≥1 fisica** (FOR/DES/COS) | 🔴 non misurato — i nodi non sono marcati nei moduli; è il gate **I6** del `PIANO-INDAGINE-E-DEDUZIONE`, dichiarato ⬜ e gated su I5 |
-| `nodi-e-sei-porte.md` | ogni fatto raggiungibile da **≥2 nodi diversi** | 🔴 non misurato — stesso prerequisito |
-| `congegno-e-enigmi.md` · `famiglie-di-caso.md` | **6-9 nodi** per caso | 🔴 non misurato — stesso prerequisito |
-| `congegno-e-enigmi.md` | **almeno un congegno per campagna** deve scattare davvero | 🔴 non misurato — è un fatto di **gioco**, non di testo: lo sa solo il tavolo |
-| `ricomposizione.md` | **mai più di 9** elementi nella ricomposizione | 🔴 non misurato — stesso prerequisito dei nodi |
-| `registro-e-ricompense.md` | tetto **livello + 3** per abilità di classe; **max +6**; 1 grado per PG per livello (ADR-0022) | 🔴 non misurato — 🔎 **trovato dal cancello stesso, al primo giro**: avevo scritto «`validate_pg.py`», che **non esiste**. Nessuno script del repo controlla i gradi dei PG |
-| `documento-ed-errore-fecondo.md` | box **≤ ~12 righe**, un solo nome proprio | 🟢 `misura_craft --box` — **stessa norma** di `read-aloud-adulti.md`, ripetuta qui |
+| File | Norma verificabile | Severità | Stato |
+|---|---|---|---|
+| `nodi-e-sei-porte.md` | **≥3 porte** per nodo, **≥1 fisica** (FOR/DES/COS) | **maggiore** | 🔴 non misurato — i nodi non sono marcati nei moduli; è il gate **I6** del `PIANO-INDAGINE-E-DEDUZIONE`, dichiarato ⬜ e gated su I5 |
+| `nodi-e-sei-porte.md` | ogni fatto raggiungibile da **≥2 nodi diversi** | **maggiore** | 🔴 non misurato — stesso prerequisito |
+| `congegno-e-enigmi.md` · `famiglie-di-caso.md` | **6-9 nodi** per caso | **minore** | 🔴 non misurato — stesso prerequisito |
+| `congegno-e-enigmi.md` | **almeno un congegno per campagna** deve scattare davvero | **minore** | 🔴 non misurato — è un fatto di **gioco**, non di testo: lo sa solo il tavolo |
+| `ricomposizione.md` | **mai più di 9** elementi nella ricomposizione | **minore** | 🔴 non misurato — stesso prerequisito dei nodi |
+| `registro-e-ricompense.md` | tetto **livello + 3** per abilità di classe; **max +6**; 1 grado per PG per livello (ADR-0022) | **maggiore** | 🔴 non misurato — 🔎 **trovato dal cancello stesso, al primo giro**: avevo scritto «`validate_pg.py`», che **non esiste**. Nessuno script del repo controlla i gradi dei PG |
+| `documento-ed-errore-fecondo.md` | box **≤ ~12 righe**, un solo nome proprio | **maggiore** | 🟢 `misura_craft --box` — **stessa norma** di `read-aloud-adulti.md`, ripetuta qui |
 
 ## 3 · Skill e ADR normativi fuori dai `references/`
 
 | Dove | Norma verificabile | Stato |
 |---|---|---|
-| `ADR-0014` §1 | **nessuna sequenza a battute senza regia** (apertura di round, una battuta per attore, esito riuscita **e** fallimento, chiusura) | 🟢 congegno `regia di round (una battuta per attore)` — e dice che esiste **in un documento solo** |
-| `ADR-0014` §2 | **occhio da avventuriero**: scala per paragone, niente metrature nel box | 🔴 non misurato — distinguere «grande come una piazza» da «Ø 60 m» dentro un box è fattibile e **non è stato fatto**: candidato naturale al prossimo lotto |
-| `rumblingstone-module-standard` | le 16 sezioni obbligatorie della checklist | 🟡 `validate_modules.py` — **solo su `ARC*-DEF-*.md`**: 96 file su 100 non sono mai guardati |
-| `rumblingstone-module-standard` §8 | sidebar **«Scalare lo scontro»** obbligatoria per i boss | 🟢 congegno `scalare lo scontro` — e dice **zero** in tutti i 71 file di ARC-08 e ARC-09 |
-| `rumblingstone-prosa-documenti` | norme sui **documenti** del repo (non sul contenuto di gioco) | 🟢 `validate_prosa.py --documenti` |
-| `rumblingstone-editoria` | impaginazione, riquadri, statblocchi in stampa | 🟢 `validate_booklets.py --stampa` |
-| `ADR-0060` (norma WotC/Paizo) | **caratteristiche e abilità maiuscole** nelle quattro forme meccaniche: `Forza 25` · `Nuotare +9` · `prova di X` con una CD · `bonus di X` | 🟢 `validate_prosa.py --caratteristiche` — 258 occorrenze sotto controllo, soglia **zero**, e **fuori dalle quattro forme non si misura** (una frase discorsiva senza CD non si vede: costerebbe più falsi positivi di quanti errori trovi) |
-| `read-aloud-adulti.md` + linee guida *Dungeon* | il read-aloud **non presuppone un'azione né un senso del giocatore** | 🟢 `misura_craft --p1` — da **104 box su 477 (22%)** a **22 (5%)** col lotto 2C, e i 22 sono un elenco nominale, non un residuo: 12 dialoghi, 1 canto, 2 visioni interiori, 6 falsi positivi del rilevatore, 1 condizionale. Il cancello è `test_ogni_residuo_e_uno_dei_ventidue_dichiarati`, che àncora il conto **file per file**: un rilievo in più è rosso, e va corretto il testo, non il test. ⚠️ Resta vero che il rilevatore non distingue la **narrazione** dal **dialogo** — per questo il conto atteso non è zero, e non lo sarà mai |
-| `ADR-0059` (MQM) | il **punteggio di qualità pesato**: severità 1 / 5 / **25**, soglia per classe, critico pass-fail | 🟢 `punteggio_mqm.py --soglia` — 515 documenti, soglie da `specifiche-qualita.yaml` misurate con `--distribuzione`. ⚠️ Copre **4 norme su 40**: entra solo ciò che ha già un rilevatore |
-| `npc-villain-boosting` | **EL ≤ APL+4**, e oltre il tetto serve un `Boost log:` | 🔴 non misurato — il controllo **esiste** (`validate_modules.py --tetto-el`, APL letto da `state.md`) ma **non ha superficie**: la forma `**EL**: [N]` che `AGENTS.md` prescrive ha **zero occorrenze**, e i 150 «EL N» nudi mescolano dichiarazioni e menzioni. Prerequisito: marcare gli incontri |
-| `ADR-0060` (norma WotC/Paizo) | le **sigle** di caratteristica — `For 25`, `Des 14`, 688 occorrenze | ⚪ non applicabile — sono maiuscole per costruzione, non c'è niente da controllare |
+| `ADR-0014` §1 | **nessuna sequenza a battute senza regia** (apertura di round, una battuta per attore, esito riuscita **e** fallimento, chiusura) | **maggiore** | 🟢 congegno `regia di round (una battuta per attore)` — e dice che esiste **in un documento solo** |
+| `ADR-0014` §2 | **occhio da avventuriero**: scala per paragone, niente metrature nel box | **minore** | 🔴 non misurato — distinguere «grande come una piazza» da «Ø 60 m» dentro un box è fattibile e **non è stato fatto**: candidato naturale al prossimo lotto |
+| `rumblingstone-module-standard` | le 16 sezioni obbligatorie della checklist | **maggiore** | 🟡 `validate_modules.py` — **solo su `ARC*-DEF-*.md`**: 96 file su 100 non sono mai guardati |
+| `rumblingstone-module-standard` §8 | sidebar **«Scalare lo scontro»** obbligatoria per i boss | **maggiore** | 🟢 congegno `scalare lo scontro` — e dice **zero** in tutti i 71 file di ARC-08 e ARC-09 |
+| `rumblingstone-prosa-documenti` | norme sui **documenti** del repo (non sul contenuto di gioco) | **minore** | 🟢 `validate_prosa.py --documenti` |
+| `rumblingstone-editoria` | impaginazione, riquadri, statblocchi in stampa | **maggiore** | 🟢 `validate_booklets.py --stampa` |
+| `ADR-0060` (norma WotC/Paizo) | **caratteristiche e abilità maiuscole** nelle quattro forme meccaniche: `Forza 25` · `Nuotare +9` · `prova di X` con una CD · `bonus di X` | **minore** · `caratteristica_minuscola` | 🟢 `validate_prosa.py --caratteristiche` — 258 occorrenze sotto controllo, soglia **zero**, e **fuori dalle quattro forme non si misura** (una frase discorsiva senza CD non si vede: costerebbe più falsi positivi di quanti errori trovi) |
+| `read-aloud-adulti.md` + linee guida *Dungeon* | il read-aloud **non presuppone un'azione né un senso del giocatore** | **minore** | 🟢 `misura_craft --p1` — da **104 box su 477 (22%)** a **22 (5%)** col lotto 2C, e i 22 sono un elenco nominale, non un residuo: 12 dialoghi, 1 canto, 2 visioni interiori, 6 falsi positivi del rilevatore, 1 condizionale. Il cancello è `test_ogni_residuo_e_uno_dei_ventidue_dichiarati`, che àncora il conto **file per file**: un rilievo in più è rosso, e va corretto il testo, non il test. ⚠️ Resta vero che il rilevatore non distingue la **narrazione** dal **dialogo** — per questo il conto atteso non è zero, e non lo sarà mai |
+| `ADR-0059` (MQM) | il **punteggio di qualità pesato**: severità 1 / 5 / **25**, soglia per classe, critico pass-fail | — è il metro, non una norma che un documento possa violare | 🟢 `punteggio_mqm.py --soglia` — 515 documenti, soglie da `specifiche-qualita.yaml` misurate con `--distribuzione`. ⚠️ Copre **4 norme su 40**: entra solo ciò che ha già un rilevatore |
+| `npc-villain-boosting` | **EL ≤ APL+4**, e oltre il tetto serve un `Boost log:` | **critico** | 🔴 non misurato — il controllo **esiste** (`validate_modules.py --tetto-el`, APL letto da `state.md`) ma **non ha superficie**: la forma `**EL**: [N]` che `AGENTS.md` prescrive ha **zero occorrenze**, e i 150 «EL N» nudi mescolano dichiarazioni e menzioni. Prerequisito: marcare gli incontri |
+| `ADR-0060` (norma WotC/Paizo) | le **sigle** di caratteristica — `For 25`, `Des 14`, 688 occorrenze | — non applicabile: le sigle sono maiuscole per costruzione | ⚪ non applicabile — sono maiuscole per costruzione, non c'è niente da controllare |
 
 ---
 
@@ -91,10 +91,62 @@
 
 | | Norme registrate |
 |---|---:|
-| 🟢 misurate | 16 |
-| 🟡 misurate in parte, con il limite scritto | 9 |
-| 🔴 **non misurate, con la ragione scritta** | 12 |
-| ⚪ non applicabili | 3 |
+| 🟢 misurate | 19 |
+| 🟡 misurate in parte, con il limite scritto | 7 |
+| 🔴 **non misurate, con la ragione scritta** | 11 |
+| ⚪ non applicabili | 2 |
+
+> 🐛 **Questi quattro numeri erano sbagliati tutti e quattro**, e nessuno se
+> n'era accorto perché erano scritti a mano: dicevano **16+9+12+3 = 40** su
+> **39** righe vere, e il paragrafo qui sotto parlava di *«undici norme su
+> trentaquattro»* — tre numeri, tre verità diverse. Dal lotto **F1.2** il
+> confronto lo fa `validate_norme_editoriali.py`, che li conta sulle **righe**
+> e non sulle occorrenze delle emoji (prima ne contava **47**, prosa inclusa).
+
+### Le severità — quanto costa violare ciascuna
+
+| Severità | Peso | Quante | Cosa ci finisce |
+|---|---:|---:|---|
+| **critico** | 25 | **1** | solo `EL ≤ APL+4` senza `Boost log:`. È l'unica norma **di questo registro** che rende un documento ingiocabile: gli altri due critici di ADR-0059 — statblocco inventato, contraddizione con `state.md` — sono norme di **canone**, e il canone qui non ci abita |
+| **maggiore** | 5 | **15** | le norme **prescrittive** con una forma o un numero: box ≤ 12 righe, la forma del dialogo, le 16 sezioni obbligatorie, lo spotlight sotto il 40%, le tre porte per nodo |
+| **minore** | 1 | **20** | i congegni assenti dove sarebbero serviti e le prassi disattese: `[HDYWTDT]`, i tic dell'IA, la regola Paizo sui read-aloud, le maiuscole di caratteristica |
+| — | — | **3** | e la ragione è scritta accanto: due non sono norme che un documento possa violare (i repertori di pattern, il punteggio stesso), una non è applicabile |
+
+⚠️ **Un candidato al critico che non è stato promosso, e perché.** *«Ogni fatto
+raggiungibile da ≥2 nodi diversi»* (`nodi-e-sei-porte.md`) è la norma che più
+somiglia a un critico: un fatto con una sola fonte è la causa documentata di un
+caso che muore in un vicolo cieco. È rimasta **maggiore** perché **nessuno la
+misura** — e un pass/fail assoluto appeso a un rilevatore che non esiste è un
+pass/fail su niente. Il giorno che i nodi si marcano, la promozione è una riga.
+
+### Severità × misura — la tabella incrociata (F1.2)
+
+Il conto di sopra dice *quante norme sono guardate*. Incrociarlo con la
+severità dice una cosa diversa e più utile: **quanto vale quel che nessuno
+guarda**.
+
+| | 🟢 misurata | 🟡 in parte | 🔴 per niente | totale |
+|---|---:|---:|---:|---:|
+| **critico** (25) | — | — | **1** | 1 |
+| **maggiore** (5) | 9 | 3 | 3 | 15 |
+| **minore** (1) | 9 | 4 | 7 | 20 |
+| senza peso | 1 | — | — | 3 *(+2 ⚪)* |
+
+🔎 **Tre cose che la tabella dice e le due colonne separate non dicevano.**
+
+1. **L'unico critico è l'unico completamente scoperto.** `EL ≤ APL+4` è la
+   norma più cara del registro ed è **🔴**: il controllo esiste
+   (`validate_modules --tetto-el`) ma non ha superficie, perché la forma
+   `**EL**: [N]` ha zero occorrenze. La severità più alta e la copertura più
+   bassa cadono sulla stessa riga.
+2. **Le maggiori stanno meglio delle minori**: 9 su 15 sono misurate (60%),
+   contro 9 su 20 fra le minori (45%). Non è un caso — le prescrittive hanno
+   una forma o un numero, e una forma si cerca. Le prassi no.
+3. **Ma il punteggio pesa il bordo, non il centro.** Delle quattro norme che
+   entrano in ADR-0059, **tre sono minori** e una sola è maggiore. Il
+   punteggio di oggi è quasi tutto fatto di penalità da 1 punto: è tarato, è
+   verde, e **non può bocciare quasi niente** — il che spiega perché la classe
+   `arco` ha P10, P25, P50 e P75 tutti a 100,00.
 
 🔎 **Una norma è passata da 🔴 a 🟢, e non perché sia cambiato il repo.** Le
 maiuscole di caratteristiche e abilità erano archiviate come non misurabili
@@ -104,7 +156,7 @@ Cercare la **forma** invece della parola porta 2.014 occorrenze inutilizzabili
 a **258 sotto controllo con zero falsi positivi** ([ADR-0060](../plans/adr/ADR-0060-la-forma-rende-misurabile-cio-che-la-parola-non-distingue.md)).
 Prima di scrivere «non misurabile», vale la pena cercare la forma.
 
-🔴 **Undici norme su trentaquattro non sono guardate da niente**, e nove delle undici
+🔴 **Undici norme su trentanove non sono guardate da niente**, e nove delle undici
 hanno la stessa causa: **i moduli non marcano le cose di cui la norma parla**
 (i nodi d'indagine, la tinta d'arco, le scene di spotlight). Non è un buco di
 codice: è che **la norma presuppone un dato che il testo non porta**. Scrivere

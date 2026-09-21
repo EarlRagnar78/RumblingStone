@@ -4760,6 +4760,15 @@
           "required": false,
           "default": false,
           "desc": "i read-aloud che presuppongono un'azione o un senso del giocatore (norma Dungeon/Paizo)"
+        },
+        {
+          "name": "--discriminante",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "desc": "Quante coppie di bersagli ogni congegno separa, in conteggio grezzo e in densita' per 1.000 righe: un congegno che non ne separa nessuna non produce informazione (lotto F1.3 di PIANO-MISURA-EDITORIALE).",
+          "choices": null,
+          "repeatable": false
         }
       ],
       "inputs": [

@@ -5,7 +5,7 @@
 > professionale usa da decenni: **tipologia d'errore con severità pesata,
 > soglia dichiarata prima, campionamento, accordo fra valutatori**.
 >
-> **Stato**: 🟡 **in corso** (2026-09-19 · F1.4 + F2.1 + F2.2 + F2.5 chiusi il 2026-09-21) · **Decisore**: DM
+> **Stato**: 🟡 **in corso** (2026-09-19 · F1.1 + F1.2 + F1.3 + F1.4 + F2.1 + F2.2 + F2.5 + F2.6 + F3.1 + F3.2 chiusi il 2026-09-21) · **Decisore**: DM
 > **Gate del piano**: `python3 scripts/punteggio_mqm.py --soglia` esce 0 su
 > tutti i master DEF, e il κ misurato fra i due campioni è ≥ 0,6
 
@@ -199,9 +199,57 @@ box sotto 40. Entra come **minore**, e solo quando il box è fuori dalla fascia
 
 | | Lotto | Cosa produce | Come si verifica |
 |---|---|---|---|
-| ⬜ | **F1.1** Mappare le 44 norme del registro su tipologia × severità | una colonna nuova in `REGISTRO-NORME-EDITORIALI.md` | `validate_norme_editoriali.py` estende il controllo: ogni norma ha una severità o una ragione scritta per non averla |
-| ⬜ | **F1.2** Separare rilevabile da giudizio | quante delle 44 hanno uno strumento (oggi 15 piene + 8 parziali) e quante no | conteggio, nel registro |
-| ⬜ | **F1.3** Potere discriminante di ogni congegno | tabella: per ciascuno, quanti documenti separa | 🔴 un congegno che **non separa mai** due documenti è rumore e si toglie — è il controllo *non-discriminating* della skill-creator |
+| ✅ | **F1.1** Mappare le norme del registro su tipologia × severità | una colonna nuova in `REGISTRO-NORME-EDITORIALI.md` | `validate_norme_editoriali.py` estende il controllo: ogni norma ha una severità o una ragione scritta per non averla |
+| ✅ | **F1.2** Separare rilevabile da giudizio | quante hanno uno strumento e quante no — **derivato, non scritto** | conteggio nel registro, e un gate che lo confronta con le righe vere |
+| ✅ | **F1.3** Potere discriminante di ogni congegno | `misura_craft --discriminante`: per ciascuno, quante coppie di bersagli separa | 🔴 un congegno che **non separa mai** due documenti è rumore e si toglie — è il controllo *non-discriminating* della skill-creator |
+
+> ### 🔎 Cosa hanno trovato F1.1-F1.3, il 2026-09-21
+>
+> **Le norme non erano 44 e non erano 34: sono 39**, e i tre numeri diversi
+> che circolavano erano tutti scritti a mano. Il piano diceva 44, il registro
+> ne dichiarava *«16+9+12+3»* (cioè 40) in tabella e *«undici su
+> trentaquattro»* nel paragrafo sotto, e il riepilogo del cancello ne stampava
+> **47** perché contava le **emoji in tutto il file**, prosa compresa. Dal
+> lotto F1.2 il conto lo deriva `validate_norme_editoriali.py` dalle righe, e
+> un numero scritto a mano che non combacia fa rossa la CI.
+>
+> **F1.1 — la severità, e una tabella incrociata che le due colonne separate
+> non potevano dare.** Delle 39 norme: **1 critica**, 15 maggiori, 20 minori,
+> 3 senza peso con la ragione accanto. Incrociando severità e copertura:
+>
+> * **l'unico critico è l'unico completamente scoperto.** `EL ≤ APL+4` è la
+>   norma più cara del registro ed è 🔴, perché il suo controllo esiste ma non
+>   ha superficie. La severità più alta e la copertura più bassa cadono sulla
+>   stessa riga;
+> * le **maggiori** stanno meglio delle minori — 9 su 15 misurate contro 9 su
+>   20 — e non per caso: una norma prescrittiva ha una forma, e una forma si
+>   cerca;
+> * 🔴 **ma il punteggio di ADR-0059 pesa il bordo, non il centro**: delle
+>   quattro norme che ci entrano, **tre sono minori**. Il punteggio di oggi è
+>   quasi tutto penalità da 1 punto, e questo spiega perché la classe `arco`
+>   ha P10, P25, P50 e P75 tutti a **100,00** — non è che i documenti siano
+>   perfetti, è che quel che li separerebbe non è pesato.
+>
+> ⚠️ **Un candidato al critico non promosso, e perché.** *«Ogni fatto
+> raggiungibile da ≥2 nodi diversi»* è la causa documentata di un caso che
+> muore in un vicolo cieco, quindi somiglia molto a un critico. È rimasta
+> **maggiore** perché **nessuno la misura**, e un pass/fail assoluto appeso a
+> un rilevatore inesistente è un pass/fail su niente.
+>
+> **F1.3 — la previsione del piano non ha retto, ed è un esito.** Il lotto era
+> aperto sull'ipotesi che qualche congegno fosse rumore da togliere. Misurato:
+> **zero congegni su 23 non separano nessuna coppia**; il più debole — «ADR
+> interni al documento» — ne separa **11 su 66**, e le separa tutte perché un
+> solo bersaglio su dodici ce l'ha. La tabella di `misura_craft` non ha righe
+> da buttare.
+>
+> 🔎 **E la misura ha avuto bisogno di due colonne, non una.** Il conteggio
+> grezzo separa anche solo perché ARC-08 ha 6.096 righe e DEF-5 ne ha 516:
+> qualunque congegno frequente li distingue, per la ragione sbagliata. La
+> densità per 1.000 righe toglie la taglia di mezzo, ed è la colonna su cui si
+> decide. Un congegno costante in densità — presente ovunque nella stessa
+> misura — è informativo quanto uno assente ovunque, cioè per niente: i test
+> provano proprio questo caso, che è il meno ovvio dei due.
 | ✅ | **F1.4** Distribuzione attuale per classe | P10/P25/P50/P75 del punteggio su tutto il repo | è l'input delle soglie di §4: **prima si misura, poi si sceglie** |
 | ⬜ | **F1.5** Estrarre i due campioni | campione **A** (DM) e campione **B** (secondo modello), disgiunti | vedi §5 |
 

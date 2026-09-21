@@ -177,13 +177,22 @@ def stampa_norme(spec: dict) -> None:
         print(f"  {n['severita']:9} (×{peso:2})  {chiave}")
         print(f"  {'':14}  rilevatore: {n['rilevatore']}")
         print(f"  {'':14}  {n['norma']}")
+    # 🐛 Il conto era approssimato («~53») perche' contava le righe di TUTTE le
+    # tabelle del registro, compresa quella del conto onesto. Le norme vere si
+    # contano con lo stesso codice del cancello: una norma, un rilevatore —
+    # applicato anche al contare.
+    import validate_norme_editoriali as vne  # noqa: PLC0415
     registro = ROOT / "skills" / "REGISTRO-NORME-EDITORIALI.md"
     if registro.exists():
-        righe = [r for r in registro.read_text(encoding="utf-8").splitlines()
-                 if r.startswith("|") and not r.startswith("|---")]
-        print(f"\n⚠️  Il registro elenca ~{len(righe) - 4} norme; qui ne entrano "
+        conto = vne.conto_vero(registro.read_text(encoding="utf-8"))
+        tot = sum(conto.values())
+        print(f"\n⚠️  Il registro elenca {tot} norme; qui ne entrano "
               f"{len(spec['norme'])}.")
         print("   Le altre non hanno un rilevatore, e valere zero sarebbe una bugia.")
+        pesi = [spec["severita"][n["severita"]]["peso"] for n in spec["norme"].values()]
+        print(f"   🔎 E pesano poco: {sum(1 for p in pesi if p == 1)} minori su "
+              f"{len(pesi)}. Il punteggio di oggi misura il bordo, non il centro "
+              "— vedi la tabella incrociata del registro (lotto F1.2).")
     print("\n⛔ Nessun rilevatore di severita' «critico» esiste oggi: il pass/fail")
     print("   e' cablato e non scatta mai. Pronto, non attivo.\n")
 

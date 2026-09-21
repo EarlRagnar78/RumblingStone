@@ -502,6 +502,70 @@ BERSAGLI = {
 }
 
 
+def potere_discriminante(dati: dict, etichette: "list[str]",
+                         righe: dict) -> "list[tuple]":
+    """Per ogni congegno: quante coppie di bersagli separa, su tutte le coppie.
+
+    **Che domanda risponde.** Un congegno serve a **distinguere** un documento
+    da un altro. Se su tutti i bersagli da' lo stesso numero — tipicamente
+    zero — non distingue niente: e' una riga in piu' nella tabella che nessuno
+    puo' usare per decidere. E' il controllo *non-discriminating* della
+    skill-creator, applicato al mestiere invece che alle skill.
+
+    **Due misure, e la seconda corregge la prima.** Il conteggio grezzo separa
+    anche solo perche' un documento e' piu' lungo: ARC-08 ha 6.096 righe e
+    DEF-5 ne ha 516, quindi *qualunque* congegno frequente li separa. La
+    densita' per 1.000 righe toglie la taglia di mezzo, e un congegno che
+    separa **solo** in grezzo separa per la ragione sbagliata.
+    """
+    nomi = list(dati)
+    coppie = [(a, b) for i, a in enumerate(nomi) for b in nomi[i + 1:]]
+    fuori = []
+    for e in etichette:
+        grezzo = sum(1 for a, b in coppie if dati[a][e] != dati[b][e])
+        dens = sum(1 for a, b in coppie
+                   if abs(dati[a][e] * 1000 / righe[a]
+                          - dati[b][e] * 1000 / righe[b]) > 0.05)
+        zeri = sum(1 for n in nomi if dati[n][e] == 0)
+        fuori.append((e, grezzo, dens, zeri, len(coppie), len(nomi)))
+    return sorted(fuori, key=lambda r: (r[2], r[1]))
+
+
+def stampa_discriminante(dati: dict, etichette: "list[str]", righe: dict) -> None:
+    righe_out = potere_discriminante(dati, etichette, righe)
+    tot_coppie, tot_bers = righe_out[0][4], righe_out[0][5]
+    print(f"\n\nPOTERE DISCRIMINANTE — quante delle {tot_coppie} coppie di "
+          f"bersagli ogni congegno separa\n")
+    print("⚠️  Non e' un voto sui documenti: e' un voto sui CONGEGNI. Un congegno")
+    print("    a zero coppie non dice niente su nessun documento, e la tabella in")
+    print("    cui compare e' piu' lunga senza essere piu' informativa.\n")
+    print("    La colonna che decide e' «densita'»: il grezzo separa anche solo")
+    print("    perche' un bersaglio e' dieci volte piu' lungo di un altro.\n")
+    print(f"{'congegno':38} {'grezzo':>7} {'densita':>8} "
+          f"{'a zero':>7} {'verdetto':>10}")
+    for e, grezzo, dens, zeri, tot, nb in righe_out:
+        if dens == 0:
+            v = "🔴 rumore"
+        elif zeri == nb - 1:
+            v = "🟡 un solo"
+        elif dens < tot // 4:
+            v = "🟡 debole"
+        else:
+            v = "🟢 separa"
+        print(f"{e[:38]:38} {grezzo:>4}/{tot:<2} {dens:>5}/{tot:<2} "
+              f"{zeri:>3}/{nb:<3} {v:>10}")
+    rumore = [e for e, _, d, *_ in righe_out if d == 0]
+    print(f"\n  🔴 {len(rumore)} congegni su {len(righe_out)} non separano "
+          f"nessuna coppia.")
+    for e in rumore:
+        print(f"       {e}")
+    print("\n  ⚠️  «rumore» non vuol dire «norma da buttare»: vuol dire che il")
+    print("      RILEVATORE, su questi bersagli, non produce informazione. Un")
+    print("      congegno a zero ovunque puo' essere una norma vera che nessuno")
+    print("      applica — e allora il difetto sta nei documenti, non nel metro.")
+    print("      I due casi si distinguono guardando i documenti, non la tabella.\n")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--densita", action="store_true",
@@ -517,6 +581,9 @@ def main() -> int:
     ap.add_argument("--p1", action="store_true",
                     help="i read-aloud che presuppongono un'azione o un senso "
                          "del giocatore (norma Dungeon/Paizo), file per file")
+    ap.add_argument("--discriminante", action="store_true",
+                    help="quante coppie di bersagli ogni congegno separa: "
+                         "un congegno che non ne separa nessuna e' rumore")
     args = ap.parse_args()
 
     if args.p1:
@@ -600,6 +667,9 @@ def main() -> int:
             print(f"{nome:30} {d['box']:>5} {d['oltre 12 righe']:>10} "
                   f"{d['con parentesi']:>10} {d['>1 nome proprio']:>8}")
         print()
+
+    if args.discriminante:
+        stampa_discriminante(dati, etichette, righe)
 
     if args.copertura:
         banchi = [n for n in dati if n.startswith("★")]

@@ -166,10 +166,16 @@ Tutto quanto sopra, PIÙ:
 > ora è vetro scuro. *"Nessuna pietà"* — la Corona ricorda. **Non è
 > riattivabile**: chiunque dica il contrario, è un'incoerenza da segnalare.
 
-**Poteri dei Rituali Legacy 3-4** *(Volontà d'Adamantio; Manto di Pietra e
-Spirito)*: `[da confermare col DM — sbloccati se l'Incudine del Mondo e
-l'Assedio della Forgia Eterna sono stati completati come da
-LaCorona_di_Adamantio-DM.md]`
+**Poteri dei Rituali Legacy 3-4.** ✅ **Confermati dal DM il 2026-09-20**, e la
+riga «da confermare» che stava qui contraddiceva la tabella di PAGINA 1, dove
+*Volontà d'Adamantio* e *Manto di Pietra e Spirito* sono già **attivi** e
+marcati **Rit. 3**.
+
+| Potere | Da quale rituale | Stato |
+|---|---|---|
+| **Volontà d'Adamantio** · **Manto di Pietra e Spirito** | **Rituale 3**, l'Incudine del Mondo | ✅ **già tuoi** — vedi PAGINA 1 |
+| **Corona +3** · **Senzienza** · **Rubino** | **Rituale 4**, l'Assedio della Forgia Eterna | ⬜ al viaggio a −1.000 |
+| ⭐ ***Aura della Forgia Eterna*** **1/settimana** | **Rituale 4**, alla vittoria | ⬜ *Possenza Divina* e *Protezione dal Male* a te e ai tuoi; a ogni nano entro 30 m anche *Benedizione* e uno *Scolpire Pietra*; **+4 di morale** ad attacchi e TS per ogni nano che ti veda; i nemici dei nani **Volontà CD 20** o **scossi** 1 minuto |
 
 ---
 

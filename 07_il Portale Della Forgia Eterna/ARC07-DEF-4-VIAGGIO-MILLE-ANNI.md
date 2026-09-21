@@ -1060,12 +1060,47 @@ di scheda)*. `state.md` §5 dice: *«Unchanged until the Siege is won → then S
 - **Il Rubino è a uso singolo e si spende nel ritorno** (D16, `DEF-5` §3). Non
   è un potere nuovo in tasca: è il motore del viaggio di casa.
 - **Non ci sono altri costi qui** — né TS, né pegni, né punti caratteristica.
-- 🔵 **`[INFERRED — needs DM confirmation]`** La matrice degli artefatti
-  attribuisce al Rituale 4 anche *«buff forza/coraggio 1/settimana»* e
-  *«Mantle of Stone and Spirit»*; ma `state.md` dà il **Mantle già al Rituale
-  3**. La riga della matrice sembra una mappatura vecchia. **Qui non ho scritto
-  nessuno dei due**: se il buff 1/settimana è canone, va aggiunto e la matrice
-  va allineata.
+
+### Momento 4 — l'Aura della Forgia Eterna `[CANONE — DM 2026-09-20]`
+
+**Il quarto potere, quello che la Corona non aveva mai avuto.** La matrice
+degli artefatti lo chiama *Aura of the Eternal Forge* e lo dà al **Rituale 4,
+alla vittoria nella battaglia antica**. È adesso.
+
+| Chi | Cosa riceve |
+|---|---|
+| **I quattro** | *Possenza Divina* e *Protezione dal Male* |
+| **Ogni nano entro 30 metri** | *Possenza Divina*, *Protezione dal Male*, *Benedizione*, e un uso di *Scolpire Pietra* |
+| **Thorik** | irradia **+4 di morale** ad attacchi e tiri salvezza per ogni nano che lo veda |
+| **I nemici dei nani** | **Volontà CD 20** o **scossi** per 1 minuto |
+
+⏱️ **Durata e cadenza**: dura **fino all'alba** la prima volta, e da allora
+resta alla Corona come potere **1/settimana**. Non è una ricarica: è la cosa
+che la Corona sa fare da quando è intera.
+
+> **Read-aloud (LotR lead) — l'aura.** *Il vecchio che ha posato la pietra
+> alza la testa, e non guarda Thorik: guarda dietro di lui. In tutto il
+> cortile i feriti stanno smettendo di essere feriti. Un fabbro con una
+> gamba sola si tira su appoggiandosi al muro, e il muro gli si apre sotto
+> la mano come argilla, e lui ci infila la gamba e resta in piedi. Nessuno
+> grida. Ottocento nani guardano un uomo con una corona e capiscono, tutti
+> insieme e senza parlare, di essere dentro una storia che verrà raccontata.*
+
+⚠️ **Tre cose per il DM, e la prima è di bilancio.**
+
+- **L'Aura arriva DOPO il duello, non prima.** L'innesco è *«vittoria nella
+  battaglia antica»*, non l'arrivo: `§4` resta tarato come è scritto, e nessun
+  numero di Skullcrusher va toccato. 🔎 Una fonte d'artefatto più vecchia la
+  dava *«automatica all'arrivo»*, ed è una mappatura superata — quella
+  descriveva un Rituale 4 di una scena sola.
+- **Metà dell'Aura la giocate già**, sotto un altro nome. La **Guarigione del
+  passaggio** di `§3 SCENA 1` — pf pieni, usi ricaricati, niente tiri — è la
+  metà curativa di questo stesso potere, attribuita al portale. Resta lì e non
+  si somma: qui arriva **solo la metà che potenzia**.
+- **Il Manto di Pietra e Spirito NON è di questo rituale**, e il giocatore lo
+  sa: è sulla sua scheda dal **Rituale 3**, riga «Rit. 3», *Mente Vuota*
+  permanente e RD 5/epico. La riga della matrice che lo dava qui era una
+  mappatura vecchia, ed è stata corretta.
 
 ---
 

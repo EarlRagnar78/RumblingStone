@@ -63,12 +63,27 @@ Rituale 4 (`campaign-artifacts.md` §78; `00_corona_di_adamantio_completa_italia
 | «buff forza/coraggio» | *Possenza Divina* + *Protezione dal Male* ai viaggiatori; *Possenza Divina*, *Protezione dal Male*, *Benedizione* e un uso di *Scolpire Pietra* a **tutti i nani entro 30 m**; **+4 morale** ad attacchi e TS per i nani in vista; nemici **Volontà CD 20** o *scossi* 1 minuto |
 | «1/settimana» | **evento unico e irripetibile**, *«automatico all'arrivo nel passato»*, **durata: fino all'alba** |
 
-⚠️ **E qui c'è la conseguenza scomoda, che va scritta prima di scrivere la
-scena.** Se l'Aura è automatica all'arrivo e dura fino all'alba, allora ha
-coperto **tutto il beat**, duello con Skullcrusher compreso: +4 morale e
-*Possenza Divina* su un party di quattro non sono colore, sono circa **due
-gradi di EL**. Il master non l'ha mai scritta, quindi le sei scene di `§3` e
-il boss di `§4` sono tarati **senza**.
+⚠️ ~~**E qui c'è la conseguenza scomoda.** Se l'Aura è automatica all'arrivo e
+dura fino all'alba, allora ha coperto tutto il beat, duello compreso: sono
+circa due gradi di EL, e `§4` è tarato senza.~~
+
+> 🔴 **CORREZIONE del 2026-09-21, e il difetto era di nuovo mio.** Quella
+> conseguenza **non esiste**, e l'avevo dedotta dalla fonte sbagliata. La
+> matrice degli artefatti — che è la fonte viva — dà come innesco del Rituale 4
+> *«**vittoria nella battaglia antica (P5)**»*, non l'arrivo. L'«automatica
+> all'arrivo» viene da `00_corona_di_adamantio_completa_italiano.md`, che
+> descrive un Rituale 4 **di una scena sola**: una struttura superata.
+>
+> Quindi l'Aura arriva **dopo** il duello, `§4` resta tarato come è scritto, e
+> **nessun numero di Skullcrusher va toccato**. È la terza volta in questa
+> campagna che leggo una fonte superata come se fosse canone, ed è la terza
+> volta che a prendermi è il confronto con la matrice.
+
+🔎 **E scrivendo la scena è saltato fuori che metà del potere si gioca già.**
+La **Guarigione del passaggio** di `§3 SCENA 1` — pf pieni, usi ricaricati,
+nessun tiro, canone dal 2026-07-31 — **è** la metà curativa dell'*Aura*,
+attribuita al portale invece che alla Corona. Resta dov'è e non si somma: al
+Rituale 4 arriva solo la metà che potenzia.
 
 ### 1.2 · C — il «229» è falso, e lo è per la ragione di sempre
 
@@ -142,7 +157,7 @@ volta sola, come nome di Thorgrim.
 
 ## FASE 2 — Sviluppo
 
-### 2A · Il Rituale 4 dice la verità sulla scheda
+### 2A · Il Rituale 4 dice la verità sulla scheda ✅ *(chiuso 2026-09-21)*
 
 1. `ARC07-DEF-4` §4-quater: il blocco `[INFERRED]` esce e diventa **canone
    scritto**. Il Mantle non compare (è già suo dal Rituale 3); l'*Aura della
@@ -158,7 +173,7 @@ volta sola, come nome di Thorgrim.
    che elenca il Manto come «da confermare col DM» contraddice la riga 35
    della stessa scheda, dove è **confermato e attivo**. Si allinea.
 
-### 2B · Gli echi conoscono il bivio
+### 2B · Gli echi conoscono il bivio ✅ *(chiuso 2026-09-21)*
 
 Due righe nuove nella **TABELLA ECHI** (§1) e una sezione **§2-bis** che porta
 il bivio nel formato del file (*evento → eco → quando riemerge → file che lo

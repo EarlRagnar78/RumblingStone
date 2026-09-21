@@ -53,7 +53,7 @@ Cartella `Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/`:
 | Rituale 2 — Trial of the Deep Hall | tempio profano Underdark | Moradin's Insight (True Seeing 1/giorno; +4 Artigianato-fabbro) | ✅ giocato `[INFERRED: verificare che il giocatore lo stia usando]` |
 | Gemma TOPAZIO (Tempo Immutabile) | rituale Piano del Fuoco (P3) | viaggio temporale 1/mese (costo: invecchia 1d10 anni) | ✅ **unica gemma accesa OGGI** (D8/D16) |
 | Rituale 3 — Anvil of the World + Gemma SMERALDO | Piano della Terra (P4, IN CORSO) | Adamantine Will; Muro di Pietra / Terremoto controllato 1/settimana (1.000 mo) | 🟡 in palio |
-| Gemma RUBINO (Dwarven Might) + Rituale 4 — Siege of the Eternal Forge | vittoria nella battaglia antica (P5) | buff forza/coraggio 1/settimana; Mantle of Stone and Spirit; **il Rubino si consuma nel ritorno al 1372** (D16) | ⬜ da giocare — Rubino poi SPESO |
+| Gemma RUBINO (Dwarven Might) + Rituale 4 — Siege of the Eternal Forge | vittoria nella battaglia antica (P5) | ***Aura della Forgia Eterna*** 1/settimana — *Possenza Divina* e *Protezione dal Male* ai quattro; *Possenza Divina*, *Protezione dal Male*, *Benedizione* e uno *Scolpire Pietra* a ogni nano entro 30 m; **+4 morale** ad attacchi e TS per i nani in vista; nemici **Volontà CD 20** o **scossi** 1 minuto. La prima volta dura **fino all'alba**. Più **Corona +3**, **Senzienza**, e **il Rubino si consuma nel ritorno al 1372** (D16). ⚠️ **Il Mantle of Stone and Spirit NON è di questo rituale**: è del **Rituale 3** — vedi r.145 e la scheda giocatore r.35 (correzione DM 2026-09-20: la regola è che decide la scheda che il giocatore ha letto) | ⬜ da giocare — Rubino poi SPESO |
 
 ## 2. AEGIS FANG (Thorik)
 

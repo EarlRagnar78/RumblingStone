@@ -10,7 +10,12 @@ description: >
   "mando ai giocatori", "lo metto su GitHub", "consegno l'handout", "colophon",
   "crediti", "licenza", "OGL", "Product Identity", "Open Content", "diritti",
   "IP", "versione del volume", "ristampa", "errata", "che edizione è", "questo
-  PDF è vecchio", "si può vendere", "posso monetizzare".
+  PDF è vecchio", "si può vendere", "posso monetizzare". ⚠️ Trigger ANCHE quando
+  la licenza riguarda uno **strumento o un materiale che si vorrebbe adottare**,
+  non solo ciò che esce: "è open source?", "che licenza ha", "MIT", "GPL",
+  "Creative Commons", "posso usare questo tool", "posso includere questo
+  font/asset/modello", "i pesi di questo modello sono liberi?" — valutare se una
+  cosa può ENTRARE è lo stesso mestiere di valutare se può uscire.
 ---
 
 # RumblingStone — Edizione

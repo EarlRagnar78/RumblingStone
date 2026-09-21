@@ -33,7 +33,6 @@
 | §1 | **Highlight per PG** | il beat di ciascuno dei QUATTRO (Hella è tornata) |
 | §2 | **Le Zone di Hammerfist ≈372 DR** | Atlante: fortezza, campo dell'orda, mura all'alba |
 | §3 | **Le Scene** (doppia modalità) | Cronache · **arrivo esteso (Durin, Re Thorek, notte, Zeth)** · Infiltrazione+Zog'tar · Mura · Rubino |
-| **§4-quater** | **IL RITUALE DELLA FORGIA ETERNA** | **il Rituale Legacy 4: il Rubino entra, la Corona passa a +3, la Senzienza arriva calda o fredda secondo `DEF-3` §5, e Aegis Fang si sveglia allo Stage 1. Dopo il combattimento, senza costi** |
 | §4-bis | **Zog'tar & PNG antichi** | statblock+tattiche per [COMBATTIMENTO COMPLETO]: Zog'tar, guardie, Durin |
 | **§4-ter** | **BALVAR FUOCOSPENTO** (GS 13) | **il consigliere runaio: sa che i PG vengono dal futuro, e ha incatenato Skullcrusher all'orda** |
 | §4 | **BOSS: Skullcrusher il Nero** | statblock, tattiche round-per-round, scaling, «la Forgia ricorda» |
@@ -130,62 +129,6 @@ Cuore della Montagna, Giorno 3 dell'assedio del 1372).
 
 ---
 
-## §0-ter — QUANDO UN GIOCATORE HA UN'IDEA CHE NON È SCRITTA QUI
-
-> **Una pagina sola, e serve mentre giochi.** Questo master ha molte vie
-> scritte. I giocatori ne troveranno una che non c'è — è quello che si spera —
-> e quel momento decide se la serata resta in piedi o si affloscia in un
-> «mmh, non credo si possa».
-
-### La regola, dalla skill dello stile: **assorbi, poi rilancia**
-
-`references/style-pillars.md` §Mercer la chiama *«yes-and with teeth»*:
-**l'invenzione del giocatore entra nel canone *e* genera una complicazione.**
-Non «sì»; non «no». **Sì, e adesso c'è un problema nuovo.**
-
-| Il giocatore dice | ❌ Come si spegne | ✅ Come si assorbe e si rilancia |
-|---|---|---|
-| *«Conosco un nano di qui — mio bisnonno me ne parlava»* | «Non c'è nessuno così» | «C'è. È il fratello di Durin, e ti riconosce dal naso. **Ma sta sul camminamento est, e stanotte non dovrebbe esserci nessuno lì.**» |
-| *«Verso l'olio delle lanterne sulle scale e do fuoco»* | «Non è previsto» | «Funziona: due scale bruciano. **Il fumo sale dritto sul camminamento dove siete voi**, e adesso non vedete chi arriva» |
-| *«Grido ai nani che la profezia parla di noi»* | tira Diplomazia | «La linea si rinsalda, +2 morale. **E l'orda sente il nome**: da adesso puntano voi» |
-| *«Prendo la lastra di Balvar e la porto via»* | «È troppo pesante» | «Te la carichi. **Pesa, −1 alla DES finché non la posi**, e Balvar adesso sa esattamente dove sei» |
-
-**Il metro, in una riga**: se l'idea è **specifica** e il giocatore accetta che
-il mondo reagisca, **funziona**. Se è generica («cerco un modo»), chiedi
-*«come, di preciso?»* — e poi funziona.
-
-### Tre cose da non fare, che costano il tavolo
-
-1. **Non chiedere un tiro per dire di no.** Un tiro è una domanda vera solo se
-   entrambi gli esiti ti vanno bene. Se l'idea non deve riuscire, dillo e di'
-   **perché**, in finzione.
-2. **Non far pagare l'ingegno più della forza bruta.** Se spaccare la porta
-   costa un round e aprirla con l'astuzia ne costa tre, hai insegnato al tavolo
-   a spaccare le porte.
-3. **Non salvare la scena scritta.** Se l'idea del giocatore salta un incontro
-   che avevi preparato, **è saltato**. Il tempo che avanza lo spendi
-   sull'orologio della notte — e i giocatori se ne accorgono, e ti ringraziano.
-
-### 🎁 Il finisher va al giocatore — `[HDYWTDT]`
-
-`style-pillars.md` §Mercer lo chiede per iscritto: al colpo che uccide un boss,
-**la narrazione passa a chi l'ha tirato**. In questo master ci sono **due**
-punti, e li trovi marcati nel testo:
-
-- `[HDYWTDT — il finisher a chi abbatte Zog'tar]` → §4-bis
-- `[HDYWTDT — il finisher a chi abbatte Skullcrusher]` → §4
-
-🔎 **Non è un abbellimento, ed è la quarta cosa dichiarata e mai applicata di
-questo repo**: il marcatore `[HDYWTDT]` era a **zero in tutti e nove gli
-archi**, benché la skill dica che va scritto *«at boss-death points in
-encounter content»*.
-
-⚠️ **Come si fa senza che diventi imbarazzante**: non si dice «descrivi tu».
-Si dice **«com'è che lo fai?»**, e si aspetta. Se il giocatore non vuole,
-descrivi tu in una riga e vai avanti: è un regalo, non un compito.
-
----
-
 ## §1 — HIGHLIGHT ASIMMETRICI PER PG (i QUATTRO, Hella è tornata)
 
 ### 🛡️ THORIK — la profezia fatta carne (Casa di Davide lead)
@@ -227,24 +170,6 @@ descrivi tu in una riga e vai avanti: è un regalo, non un compito.
 > Mappa **M7-A**. Tre ambienti, una notte e un'alba: la fortezza giovane, il
 > mare di tende dell'orda, le mura all'assalto.
 
-### 🎚️ Scheda sensoriale delle tre zone — e cosa NON dire
-
-> **Come si usa.** Le prime tre colonne sono quello che i PG colgono **in sei
-> secondi** senza tirare. La quarta è **vincolante quanto le altre**
-> ([ADR-0057](../plans/adr/ADR-0057-la-quarta-colonna-e-di-tutto-il-repo.md)):
-> sono le cose che il tavolo deve **scoprire**, e che l'atmosfera, se ti scaldi,
-> racconta al posto loro.
-
-| Zona | Occhi | Orecchie | Pelle / naso | 🚫 Cosa NON dire |
-|---|---|---|---|---|
-| **1** Fortezza giovane | Pietra bianca, spigoli ancora vivi. **Una** statua di re, non venti | Scalpelli. Di giorno, a quest'ora, in tempo di guerra | Polvere di taglio fresco, che sa di calcare e non di fuliggine | **Che la targa è la profezia su di loro.** Lasciala leggere: è il nodo della Scena 1 |
-| **2** Mare di tende | Mille fuochi fino all'orizzonte; una tenda più alta, nera | Un russare che non si interrompe mai del tutto | Grasso bruciato, ferro, bestia | **Quale tenda è quella del generale.** Si deduce da dove *non* passano le pattuglie (Osservare CD 18) |
-| **3** Mura all'alba | Scale contro la pietra; nani spalla a spalla che non indietreggiano | Il boato di diecimila gole che diventa **una** | Fumo, sangue di nano (ferro dolce), corda bagnata degli arieti | **Che la linea terrà.** Non lo sai nemmeno tu: dipende dalla prova di gruppo |
-
-⚠️ **Le tre righe «non dire» non sono suggerimenti di stile.** Ognuna protegge
-una prova che sta più avanti in questo stesso documento. Dirle in anticipo non
-rovina l'atmosfera: rovina **la scena dopo**.
-
 ### ZONA 1 — La Fortezza Giovane (Hammerfist appena eretta)
 > **Read-aloud (LotR lead — deep time al contrario).** *Conoscete Hammerfist:
 > le sue sale annerite dai secoli, le statue consumate, i nomi dei re incisi e
@@ -272,26 +197,13 @@ guardia (GP1-GP4 agli angoli); la **tenda del comando** (Zog'tar) al centro;
 notte = furtività CD 20; ogni fuoco è luce fioca a 3 m. Vedi M7-A zoom.
 
 ### ZONA 3 — Le Mura all'Alba (l'assalto)
-> **Read-aloud (Salvatore lead, LotR support).** *Il primo ariete arriva alle
-> mura che il sole non è ancora sopra il crinale. Il legno prende la pietra con
-> un tonfo che sentite nello sterno prima che nelle orecchie, e il camminamento
-> vi si muove sotto i piedi di un dito. Un nano accanto a voi si sputa nelle
-> mani, riprende l'ascia e non dice niente. Quello dopo di lui si è già
-> incastrato la barba nella cinghia dell'elmo, e non ha il tempo di
-> tirarla fuori. In basso, le scale salgono.*
->
-> **Che fate?**
-
-⚠️ **Perché questo box è stato riscritto** *(riscrittura 2026-09-18)*. Il
-precedente diceva *«Dove vi gettate, la linea tiene»* e chiamava i PG *«quattro
-leggende venute dal futuro»*. Due difetti dichiarati, non questioni di gusto:
-
-- `editorial-standards.md` §2 — **mai risolvere l'azione dei PG dentro il
-  read-aloud**. «La linea tiene» era l'**esito della prova di gruppo** della
-  Scena 4, letto prima che qualcuno tirasse.
-- `read-aloud-adulti.md` §4 — *il predestinato senza costo* e *tutto epico*
-  sono due delle sei cose che fanno staccare un lettore adulto. Il nano che si
-  sputa nelle mani fa lo stesso lavoro e non chiede di essere creduto.
+> **Read-aloud (LotR + Salvatore — la linea che tiene).** *All'alba l'orda si
+> getta contro le mura come una marea contro uno scoglio. Scale, arieti, il
+> boato di diecimila gole che diventa una cosa sola. I nani reggono, a malapena,
+> spalla contro spalla sui camminamenti. E voi siete quattro — ma quattro
+> leggende venute dal futuro a compiere una promessa. Dove vi gettate, la linea
+> tiene. Dove passate, i nani rialzano il capo e gridano il nome che la targa di
+> bronzo ha appena inciso.*
 
 **Terreno (callout):** camminamenti sopraelevati (+4,5 m); brecce dove gli
 arieti mordono; scale d'assedio (Forza per rovesciarle); il cortile interno
@@ -316,9 +228,8 @@ dove, alla fine, Skullcrusher cala. Vedi M7-B (arena del duello).
   caratteristica temporanei azzerati e **tutti gli usi giornalieri ricaricati**
   (invocazioni, poteri dei Bracieri, sinergie 1/giorno, incantesimi di Hella).
   **Nessun tiro, nessun costo, non è una scelta.**
-  - **Cosa NON guarisce**: i costi **permanenti** di Thorik — **−4 DES** fra Corona
-    e rito dello Smeraldo, e il **−1 CA** se al rito di `DEF-3` §5 ha donato il +2 di
-    deflessione (sono prezzi pagati, non ferite) — gli oggetti spesi (Cuore di Moradin, Diapason, Rubino
+  - **Cosa NON guarisce**: i **−2 COS permanenti** di Thorik (è un prezzo pagato,
+    non una ferita), gli oggetti spesi (Cuore di Moradin, Diapason, Rubino
     quando si accenderà) e le condizioni narrative dell'Echo Ledger.
   - **Perché esiste**: senza questa regola il party arriva al duello con
     Skullcrusher con quello che è avanzato da Terros e dal rito — cioè, molto
@@ -334,43 +245,8 @@ dove, alla fine, Skullcrusher cala. Vedi M7-B (arena del duello).
 - **Shock temporale (all'arrivo)**: TS Volontà **CD 20** o **confusi 1d4 round**
   (−2 concentrazione/percezione), poi chiarezza. *(È l'unico prezzo del
   passaggio: il corpo torna intero, la testa no.)*
-
-#### 🔍 Nodo d'indizio — la targa di bronzo *(Fatto · Lettura · Nome)*
-
-> **Perché è un nodo e non una prova.** Questo master ha un'indagine dentro — i
-> PG devono capire **che la profezia parla di loro** — e finora era una prova
-> sola, **CD 18**, che si superava o si sbagliava. La skill `rumblingstone-indagine`
-> chiede tre strati e **almeno tre porte**, perché un tavolo di picchiatori
-> deve poterci entrare lo stesso.
-
-| Strato | Cosa dà | Come si prende |
-|---|---|---|
-| **Fatto** | *«La targa dice: quattro eroi dal fuoco e dalla pietra.»* | **gratis**, chiunque sappia leggere il nanico. Non si tira |
-| **Lettura** | *«L'inchiostro del cesello è fresco. È stata incisa oggi.»* | **una** porta qualsiasi, sotto |
-| **Nome** | *«Quei quattro siamo noi, e lo eravamo già prima di partire.»* | **due** porte diverse, o una porta + la Lettura |
-
-**Le sei porte** — tre bastano, e almeno una è fisica, così anche chi non ha
-gradi entra:
-
-| Porta | Prova | Cosa vede |
-|---|---|---|
-| 🧠 Sapere | Conoscenze (storia) **CD 18** | la profezia non è nelle cronache che hanno letto nel 1372: **è stata cancellata** |
-| 👁️ Guardare | Osservare **CD 15** | i trucioli di bronzo sono ancora per terra sotto la targa |
-| ✋ **Toccare** | **FOR o DES grezza CD 12** — passarci sopra il pollice | il taglio è **vivo**, taglia il polpastrello. Chiunque, nessun grado richiesto |
-| 👃 Annusare | Sopravvivenza **CD 14** o un nano, gratis | odore di metallo caldo: il cesello ha lavorato **stamattina** |
-| 🗣️ Chiedere | Diplomazia **CD 12** a un qualsiasi nano di guardia | *«L'ha incisa il Re stanotte. Ha detto che gli è venuto in sogno»* |
-| ⚒️ Mestiere | Artigianato (fabbro) **CD 15** — Tordek, gratis | riconosce la **mano**: è lo stesso cesello della fucina che userà tra mille anni |
-
-🚫 **Cosa NON dire**: che la profezia parla di loro. Anche se nessuno prende il
-**Nome** subito, non si regala: torna alla Scena 2 quando Thorgrim mostra la
-gemma, e alla Scena 6 quando il Rubino si accende. **Un vicolo cieco non
-esiste** — l'indizio ripassa, cambiato.
-
-- **Se prendono il Nome in Scena 1** → arrivano al consiglio di guerra sapendo
-  chi sono: Re Thorek I li riconosce **prima** che mostrino la Corona, e la
-  prova di gruppo della Scena 1-bis scende a **CD 16**.
-- **Se non lo prendono** → non perdono niente. Lo prendono dopo, e la scena in
-  cui lo prendono diventa la più forte della serata.
+- **Prova di gruppo**: Conoscenze (storia)/Sapienza **CD 18** — capire che nulla
+  di ciò che faranno è "opzionale": è **già** accaduto.
 - ► **Esito**: accettano/subiscono il ruolo. Imposta il tono «nessuna pietà» vs
   «misericordia» del Rubino (eco §7).
 
@@ -379,34 +255,26 @@ esiste** — l'indizio ripassa, cambiato.
 > COMPLETE]**: gioca l'arrivo esteso qui sotto — è il cuore "umano" del viaggio.
 
 **La pattuglia di Durin (riconoscimento — 3 vie).** Nel bosco a est delle mura,
-una pattuglia nanica (6 veterani) li ferma.
-
-**DURIN (teso, voce che gli scappa in alto):** *«FERMI! Chi siete?»* La guida è
+una pattuglia nanica (6 veterani) li ferma: *«FERMI! CHI SIETE?»* La guida è
 **Durin Rocciadura** (Guerriero 6, statblock §4-bis), veterano spaventato e
-onesto. Fissa la Corona sulla fronte di Thorik.
-
-**DURIN (piano, quasi a sé stesso):** *«Quella cosa… brilla come il sole
-forgiato. È… una leggenda?»* **Tre modi di farsi riconoscere** (tutti
+onesto. Fissa la Corona sulla fronte di Thorik: *«Quella cosa… brilla come il
+sole forgiato. È… una leggenda?»* **Tre modi di farsi riconoscere** (tutti
 funzionano, nessun tiro se sinceri):
-- **A — Mostrare la Corona**: Durin cade in ginocchio.
-  **DURIN (rotto):** *«La Corona dei Padri. Pensavo fosse un mito.»*
+- **A — Mostrare la Corona**: Durin cade in ginocchio. *«La Corona dei Padri.
+  Pensavo fosse un mito.»*
 - **B — Invocare Moradin** (preghiera sincera): un **tuono** solo, dal cielo
-  sereno. Durin e i suoi si inginocchiano.
-  **DURIN (fermo, per la prima volta):** *«Il Padre ha parlato.»*
+  sereno. Durin e i suoi si inginocchiano: *«Il Padre ha parlato.»*
 - **C — Mostrare potere divino** (Benedizione della Forgia, aura dorata su
-  Aegis Fang):
-  **DURIN (a bassa voce, ai suoi):** *«Dio ha parlato attraverso l'arma.»*
+  Aegis Fang): *«Dio ha parlato attraverso l'arma.»*
 Esito identico: Durin passa da diffidente a **fedele fino alla morte**, li porta
 a cavallo al castello. *(Se attaccano la pattuglia: è un tragico
 malinteso — i nani che erano venuti a salvare li credono spie; §6 Contingenze.)*
 
 **Re Thorek I — il consiglio di guerra.** Il re antico (Guerriero 16, 182 anni,
 Frostcleaver in pugno) chiede di vedere la Corona che «suo nonno perse contro
-Skullcrusher 50 anni fa». Riconosciutala, si inginocchia e recita la profezia.
-
-**RE THOREK I (lento, passato remoto, come chi cita a memoria):** *«Quattro
-eroi dal fuoco e dalla pietra… nella notte più oscura salveranno gli antenati
-e i futuri.»* Poi, alla tavola di guerra: **800 nani** contro **10.000
+Skullcrusher 50 anni fa». Riconosciutala, si inginocchia e recita la profezia:
+*«Quattro eroi dal fuoco e dalla pietra… nella notte più oscura salveranno gli
+antenati e i futuri.»* Poi, alla tavola di guerra: **800 nani** contro **10.000
 nemici** + il drago; le mura reggono 2 ore; l'unica chance è **uccidere Zog'tar
 di notte** (per fiaccare l'orda) e **affrontare Skullcrusher** all'alba.
 - **Handout 1A — Piano di Battaglia** (§9): forze, obiettivi, equipaggiamento.
@@ -436,70 +304,12 @@ mangiano), fabbri che affilano le armi, chierici che benedicono.
   IDEALE) vs **lungo** (6 h: recupero pieno, ma solo 2 h all'alba — tempo
   strettissimo). Il momentum spinge al riposo breve.
 
----
-
-### ⏳ L'OROLOGIO DELLA NOTTE — otto ore, e ogni cosa ne costa
-
-> **Perché esiste.** La scelta del riposo qui sopra era già un orologio, scritto
-> a parole: «5 ore» contro «2 ore». Ma un tempo che non si segna non si sente,
-> e il tavolo non può *scegliere di correre un rischio* se non sa quanto ha in
-> mano. Questo è il congegno che i due banchi del repo — il Palio e l'Abbazia —
-> usano per reggere la tensione, e questo master ne aveva **una menzione sola**.
-
-**Si segna su un foglio, in vista.** Dal tramonto all'alba ci sono **8 tacche**.
-Ogni tacca è mezz'ora scarsa di gioco reale.
-
-| Cosa | Tacche |
-|---|---:|
-| Consiglio di guerra con Re Thorek I (Scena 1-bis) | **1** |
-| Riposo **breve** | **2** · Riposo **lungo** | **5** |
-| Banchetto e benedizioni (facoltativo, +1 morale 12 h) | **1** |
-| I tre semi di Hella, piantati e vegliati | **1** |
-| Attraversare il mare di tende (Scena 3, skill challenge) | **2** |
-| Ogni **fallimento** nello skill challenge | **+1** |
-| Parlare con Balvar invece di ucciderlo subito (§4-ter) | **1** |
-| Cercare il Mastro Costruttore Zeth (seme del Ghostlord) | **1** |
-
-**Quando le tacche finiscono, sorge il sole.** Non è una punizione: è la Scena 4
-che comincia, con i PG dove sono in quel momento.
-
-| Tacche spese all'uscita dalla tenda | Come si arriva alle mura |
-|---|---|
-| ≤ 6 | in tempo. Si rientra, si schiera, §4 normale |
-| 7 | 🟡 si rientra **correndo**: nessun riposo prima del drago, −1 a tutti i TS del primo round di §4 |
-| 8 | 🔴 **l'alba vi coglie fuori dalle mura.** Non morite: attraversate un campo che si sta svegliando. Prova di gruppo Muoversi Silenziosamente **CD 20**, poi §4 comincia con i PG **fuori**, e Skullcrusher li vede per primo |
-
-⚠️ **L'orologio corre sulle SCELTE, non sul tempo reale.** Un tavolo che discute
-mezz'ora su cosa fare non spende una tacca; un tavolo che decide di andare a
-cercare Zeth sì. È la regola dell'Abbazia (`ADR-10` interno: *l'oppressione
-avanza sulle scoperte*), e serve a non punire proprio il comportamento che
-questo master vuole ottenere — **guardarsi intorno**.
-
-🔎 **E qui l'orologio dice una cosa che il testo prima non diceva**: parlare con
-Balvar, cercare Zeth e fare il banchetto costano **3 tacche** in tutto. Sono i
-tre pezzi migliori della notte, e sommati sono anche il rischio più grosso. È
-il bivio, ed è **vero** — non una finta scelta con una risposta giusta.
-
 ### SCENA 2 — Thorgrim Barbadiferro e gli Antenati `[FAST-PLAY — assorbita in 1-bis se giochi le scene complete]`
-> **Read-aloud (Mercer lead, Casa di Davide support).** *Il vecchio è seduto e
-> non si alza. Ha le mani appoggiate sulle ginocchia, e sono mani che hanno
-> tenuto la stessa ascia che tenete voi: si vede dal callo, nello stesso punto.
-> Guarda la gemma sulla vostra fronte per il tempo di tre respiri. Poi gli
-> occhi gli si riempiono e lui non se ne accorge, perché sta già parlando.*
->
-> **THORGRIM (voce che non trema, occhi che sì):** *«Mio nonno l'ha persa. Se
-> dite il vero, mettetemela in mano.»*
->
-> *Quando l'ascia passa fra le sue dita e le vostre, per un istante le due prese
-> si toccano sul legno. E il legno **suona**.*
-
-⚠️ **Perché questo box è stato riscritto** *(2026-09-18)*. Il precedente
-portava **otto nomi propri** in cinque righe — Thorgrim, Barbadiferro, Aegis
-Fang, Re Thorek, Skullcrusher, la Corona — ed è **l'esempio testuale** che
-`read-aloud-adulti.md` §1 usa per spiegare il difetto: *«Se in un box compaiono
-Skullcrusher, Thorgrim e Barbadiferro, la metà del tavolo ne ha persi due»*.
-Adesso il nome proprio nuovo è **uno**, il resto sono mani, callo e legno — e
-il tono di Thorgrim è dichiarato, come chiede `editorial-standards` §2.
+> **Read-aloud.** *Vi conducono da **Thorgrim Barbadiferro**, antico portatore di
+> Aegis Fang, e da **Re Thorek I**. Il vecchio guerriero fissa la Corona sulla
+> vostra fronte: «Quella gemma… mio nonno la perse contro Skullcrusher. Se dite
+> il vero, mostratela.» Aegis Fang, nelle vostre mani e nelle sue, canta la
+> stessa nota — a mille anni di distanza.*
 - **Prova di gruppo**: Diplomazia/Intimidire **CD 20** → fiducia piena
   (invisibilità, benedizioni, mappa del campo). Fallimento: aiuti dimezzati
   (−2 alla Scena 3).
@@ -546,41 +356,6 @@ il tono di Thorgrim è dichiarato, come chiede `editorial-standards` §2.
 **round di sorpresa pieno** se nessuno ha parlato/lanciato incantesimi
 rivelatori. Round-by-round e le scelte-costo dei PG → **§4-bis**.
 
-#### ⚖️ Due vie che non passano dall'iniziativa
-
-> `module-standard` §7 ne chiede **almeno due per scontro**, e questa scena ne
-> aveva **zero**: c'era un solo modo di risolvere Zog'tar, ed era ucciderlo.
-> ⚠️ Nessuna delle due è «vincere gratis»: entrambe costano, e una **non lo
-> ammazza**.
-
-**Via A — l'Occhio contro il suo padrone** *(Artemis, Hella, chi ha visto la runa)*.
-L'**Occhio di Ossidiana** è un artefatto **maledetto** e Zog'tar lo sa a metà:
-il prezzo è che la luce divina lo brucia. Chi lo capisce — Sapienza Magica
-**CD 20**, oppure **gratis** se in Scena 1-bis hanno accettato la Benedizione
-di Moradin e la vedono reagire — può **mostrargliela invece di colpirlo**:
-Intimidire **CD 22** con la Corona scoperta o la Luce di Lathander in mano.
-- **Riesce** → Zog'tar **arretra**, e arretrando esce dalla tenda davanti alle
-  sue guardie. Perde la faccia, e con lei il campo: l'orda all'alba combatte a
-  **−1 morale**, che vale i due nemici in più della Scena 4 tolti.
-- ► **Esito nuovo**: *umiliato, non ucciso*. 🔴 **Ed è un problema, non un
-  premio**: Zog'tar **vive**, e in ARC-08 la Mano Rossa ha un generale in più
-  nella sua storia. Registra nell'Echo Ledger (§7).
-
-**Via B — il corridore che non parte** *(chiunque, e non serve nessun grado)*.
-Se la complicazione **6** dello skill challenge è uscita, c'è un corridore
-hobgoblin che sta per andare alla tenda. Fermarlo **non richiede di ucciderlo**:
-- **DES grezza CD 14** — sgambetto nel buio, e il ragazzo cade nel fuoco altrui;
-- **Raggirare CD 16** in orchesco (chi lo parla) — *«Messaggio già passato, torna
-  in fila»*;
-- **FOR grezza CD 16** — una mano sulla bocca, e lo si tiene finché non sviene.
-- **Riesce** → Zog'tar non è pre-allertato, e il round di sorpresa resta pieno.
-- **Fallisce** → il corridore arriva. **Non è la fine**: Zog'tar sveglio è più
-  duro, e il §4-bis ha già la riga per quel caso.
-
-⚠️ **Perché due e non una.** Una via alternativa sola diventa «la soluzione
-giusta» e il tavolo la cerca invece di giocare. Due che costano in modi diversi
-— una la fama del nemico, l'altra il fiato — restano **scelte**.
-
 - ► **Esito (entrambe le modalità)**: *ucciso in silenzio / spettacolare*. Se
   **spettacolare** (esplosione, decapitazione davanti alle guardie), il terrore
   dilaga MA **Skullcrusher interviene furioso** → §4 inizia col drago già in
@@ -589,40 +364,15 @@ giusta» e il tavolo la cerca invece di giocare. Due che costano in modi diversi
   sorpresa.
 
 ### SCENA 4 — Le Mura sotto Assalto (alba)
-> **Read-aloud (Salvatore lead).** *Il camminamento è largo quanto un tavolo da
-> pranzo e lungo quanto la fortezza. Sotto, l'orda non urla più: ha smesso
-> quando ha cominciato a salire, e il silenzio che ha lasciato è peggio. Un
-> uncino morde la pietra a tre passi da voi, poi un altro, poi sei insieme. Il
-> capitano delle mura guarda voi, non i suoi.*
->
-> **Che fate?**
-
-**Le tre vie, e nessuna è quella giusta.** La prova è **collettiva**: il party
-sceglie **una** via, tutti tirano quella. Non c'è una scelta migliore — c'è
-quella che costa meno a *questo* gruppo.
-
-| Via | Prova | Se riesce | Il costo, anche riuscendo |
-|---|---|---|---|
-| **Tenere la breccia** | Forza o attacco, **CD 18** | la falla regge; i nani vi vedono farlo | ci si arriva al duello **stanchi**: −2 al primo tiro d'iniziativa del §4 |
-| **Rincuorare i difensori** | Diplomazia o Guarire, **CD 18** | +2 morale a tutta la linea per l'assalto | la breccia la tiene qualcun altro, e **qualcuno muore**: tira sul *Registro delle Perdite* di ARC-08 |
-| **Sabotare gli arieti** | Disattivare o Artigianato, **CD 20** | due arieti fuori uso, l'assalto rallenta di mezz'ora | siete **fuori** dalle mura quando il drago arriva: §4 comincia con i PG separati di 18 m |
-
-**🚫 Modi di fallimento — il fallimento è un costo, mai uno stop.** Nessuna
-combinazione di tiri ferma l'avventura: il duello con Skullcrusher si gioca
-comunque, perché è già accaduto.
-
-| Successi (su 4) | Cosa cambia davvero |
-|---|---|
-| 4 | le mura reggono pulite; §4 parte con i PG schierati e **Re Thorek in piedi dietro di loro** |
-| 2-3 | reggono a stento. §4 parte normale |
-| 1 | i nani perdono il camminamento est: il duello si combatte **con Re Thorek a 8 pf alle spalle**. Pressione emotiva, **nessun malus meccanico** — il re non è una barra della vita |
-| 0 | 🔴 **la breccia cede.** Il duello si sposta **dentro il cortile**, in mezzo ai feriti: M7-B con 6 quadretti di terreno difficile e **due nani a terra** che Hella può scegliere di raggiungere invece di combattere. Nessun malus: una **scelta in più**, e più dura |
-
-⚠️ **La riga a zero successi è il punto di questa tabella.** Il modo più veloce
-di insegnare a un tavolo che indagare e rischiare non conviene è punire il
-fallimento con meno gioco. Qui a zero successi **si gioca di più**, non di meno.
-
-- ► **Esito**: *mura tenute saldamente / a stento / breccia ceduta*.
+> **Read-aloud.** *All'alba l'orda si getta contro le mura. Voi siete quattro,
+> ma dove vi gettate la linea tiene.*
+- **Prova di gruppo (scelta collettiva)**: tenere una breccia (Forza/combattere
+  **CD 18**), rincuorare i difensori (Diplomazia/Guarire **CD 18**), o sabotare
+  gli arieti (Disattivare/Artigianato **CD 20**). Metà successi = la fortezza
+  regge fino al drago.
+- Fallimento: i nani perdono terreno; il duello (§4) si combatte con **Re Thorek
+  a 8 pf** alle spalle (pressione emotiva, nessun malus meccanico).
+- ► **Esito**: *mura tenute saldamente / a stento*.
 
 ### SCENA 5 — ⚔️ Il Duello con Skullcrusher → **§4** (unico scontro tattico)
 
@@ -664,59 +414,22 @@ mano ferma.
 Non comanda l'orda. **Consiglia**, e per questo è più pericoloso del generale:
 Zog'tar sa uccidere diecimila uomini, Balvar sa **dove** vanno colpite le mura.
 
-#### ⚖️ Il grigio — perché **crede di aver ragione** *(pilastro GoT)*
-
-> **Aggiunto nella riscrittura del 2026-09-18.** Balvar era già il personaggio
-> migliore del master, ma era scritto come **un nemico interessante**, non come
-> una fazione. La differenza è che di un nemico interessante si chiede *come lo
-> batto*; di una fazione che crede di aver ragione si chiede *cosa vuole, e cosa
-> gli costa averlo*. È l'unica riga che il pilastro 5 chiede davvero.
-
-| | |
-|---|---|
-| **Vuole** | che Hammerfist **cada in fretta**. Non per odio: perché un assedio lungo significa fame dentro le mura, e lui l'ha già vista una volta |
-| **Crede** | che i re nanici mentano ai loro, e che le sue rune abbiano protetto per trent'anni una fortezza che l'ha esiliato **senza processo** |
-| **La leva** | = suo nipote. È dentro le mura, ha diciannove anni, e Balvar sa esattamente su quale camminamento monta la guardia |
-| **Ricattabile** | sì, e da nessuno che non gliene parli **per primo**. Se i PG lo minacciano, si chiude; se gli dicono che il ragazzo è vivo, no |
-| **Non è un mostro** | e questo è il punto: se il tavolo lo tratta da mostro, lo scontro funziona lo stesso. Se lo tratta da nano, il master cambia forma |
-
-⚠️ **È una fazione recuperabile, non una fazione debole.** Balvar in combattimento
-resta un GS 13, e le sue rune fanno male. Recuperarlo **non lo indebolisce**:
-gli cambia bersaglio. *(È la stessa regola dell'`ADR-06` interno dell'Abbazia
-sui corsari — il banco l'aveva già capito.)*
-
-🚫 **Cosa NON dire.** Che il nipote esiste. Balvar non lo nomina mai per primo:
-si arriva al ragazzo solo se qualcuno **guarda** cosa sta incidendo sull'ardesia
-(Osservare **CD 20**: è un nome nanico, e sotto una data di nascita), oppure se
-un PG nano gli chiede chi ha lasciato a Hammerfist — **Diplomazia CD 18**, e
-funziona solo se non l'hanno ancora minacciato.
-
 > **Read-aloud — il primo incontro (dentro la tenda del comando, Scena 3).**
-> **Read-aloud (Andor lead) — 1 di 3, poi FERMATI.** *In fondo alla tenda, dove
-> la luce dei bracieri non arriva, un vecchio è seduto su uno sgabello da
-> bottega. Grembiule di cuoio. Sulle ginocchia una lastra di ardesia che sta
+> *In fondo alla tenda del generale, dove la luce dei bracieri non arriva, c'è
+> un nano seduto su uno sgabello da bottega. Vecchio come una radice. Ha un
+> grembiule di cuoio addosso, e sulle ginocchia una lastra di ardesia che sta
 > incidendo con una punta di ferro, piano, come se fuori non ci fossero
 > diecimila tende e un drago.*
-
-> **2 di 3 — dopo che qualcuno ha reagito.** *Alza la testa. Vi guarda uno per
-> uno, con calma. Quando arriva alla gemma sulla fronte del vostro capo si
-> ferma un istante di troppo. Poi torna a incidere. **Non chiama la guardia.***
-
-> **3 di 3 — solo quando il silenzio diventa scomodo.**
-> **BALVAR (voce da vecchio artigiano, nessuna minaccia, nessuna fretta):**
-> *«Quella corona la finirono con tre gemme. Tu ne hai due.»* — *un colpo di
-> punta sull'ardesia* — *«Quindi non è oggi.»*
 >
-> **Che fate?**
-
-⚠️ **Spezzato in tre il 2026-09-18, e non per pignoleria.** Era **un box da 15
-righe**, sopra il tetto di 12 di `read-aloud-adulti.md` §2, e la self-check
-della skill dello stile ha una domanda apposta: *«Did any box grow past the
-ceiling because the prose got interesting? → cut; the ceiling wins»*. Qui la
-prosa **era** diventata interessante, ed è il motivo per cui era cresciuta.
-Spezzandolo in tre beat si guadagna anche una cosa che il box unico non aveva:
-**Balvar aspetta che i PG reagiscano prima di parlare**, e il suo silenzio
-diventa la prima battuta.
+> *Alza la testa quando entrate. E — questa è la cosa che vi gela — **non
+> chiama la guardia**.*
+>
+> *Vi guarda uno per uno, con calma, e quando arriva alla Corona sulla fronte
+> del vostro capo si ferma un istante di troppo. Poi torna a incidere.*
+>
+> **BALVAR** (voce da vecchio artigiano, nessuna minaccia, nessuna fretta):
+> *«Quella corona la finirono con tre gemme. Tu ne hai due.»* Un colpo di
+> punta sull'ardesia. *«Quindi non è oggi.»*
 
 ### La cosa che lo rende memorabile: sa da dove venite
 
@@ -798,31 +511,15 @@ Balvar è morto da mille anni comunque vada. Ma:
 > interno. È il capostipite della stirpe di **Fauci di Palude**: ogni ferita che
 > gli infliggete qui, la Forgia la ricorderà mille anni dopo (§7, carry-over B4).
 
-> **Read-aloud (Salvatore lead).** *Prima arriva il freddo. L'ombra passa e
-> l'aria del cortile perde dieci gradi in un respiro, e la pelle lo sa prima
-> che lo sappiate voi. Poi il rumore: non un ruggito — un **risucchio**, come
-> quando il mare si tira indietro prima di tornare. Le braci della forgia si
-> piegano tutte nella stessa direzione. Un nano vicino a voi lascia cadere lo
-> scudo e non si china a raccoglierlo.*
->
-> *Dove atterra, la pietra fuma. L'acido gli cola dalle fauci chiuse e si
-> mangia il selciato come acqua nella neve.*
->
-> **Che fate?**
-
-> 🎚️ **Se e solo se Thorik tiene Aegis Fang in mano** — *un secondo box, corto,
-> e a lui soltanto*: **AEGIS FANG (non canta: urla, dentro il cranio):**
-> *«SANGUE ANTICO. ARTEFICE DI LACRIME.»* — *e per un istante la Corona ti
-> mostra due immagini sovrapposte: questo drago adesso, e un altro drago sopra
-> mura che bruciano, che non hai mai visto.*
-
-⚠️ **Perché è stato spezzato in due** *(2026-09-18)*. Il box unico portava
-**nove nomi propri** e finiva su *«state per insegnare a quel sangue cosa vuol
-dire aver paura»* — che dice ai giocatori cosa stanno per fare, cioè
-**l'esito**. Adesso l'ingresso è **quello che il corpo sente** (freddo, il
-risucchio, le braci che si piegano, lo scudo che cade), la visione è un
-**micro-box per un solo PG** come chiede `ADR-0014` §1, e l'ultima riga è
-**«Che fate?»** invece di una promessa.
+> **Read-aloud (Salvatore — l'ingresso del mostro).** *Il cielo si spezza.
+> **Skullcrusher il Nero** cala come una montagna alata, e l'acido gli sfrigola
+> dalle fauci prima ancora che apra la bocca. Dove atterra, la pietra fuma.
+> Aegis Fang urla nella mente di Thorik — non canta, URLA: «SANGUE ANTICO.
+> ARTEFICE DI LACRIME. IL PRIMO NERO.» E la Corona vi mostra due immagini
+> sovrapposte, tremanti l'una sull'altra: questo drago, adesso — e Fauci di
+> Palude, mille anni nel futuro, sopra le mura di una Hammerfist che brucia. Sono
+> lo stesso sangue. E voi state per insegnare a quel sangue, per la prima volta,
+> che cosa vuol dire aver paura.*
 
 ```
 ============================================================
@@ -851,46 +548,6 @@ vero climax è Fauci nel 1372. Non gonfiarlo: qui si SEMINA.
 > sotto in base a quanti scambi i PG hanno "vinto" (0-1 = fuggito, 2 = ferito
 > grave, 3 = ucciso). Registra comunque N ferite per B4. **[COMBATTIMENTO
 > COMPLETO]** = la regia round-per-round qui sotto, su M7-B.
-
-### 🎬 La regia dei primi due round — una battuta per attore *(ADR-0014 §1)*
-
-> **Perché c'è.** Sotto trovi le tattiche **del drago**, che questo master aveva
-> già e sono buone. Quello che mancava è l'altra metà, che `ADR-0014` prescrive
-> dal luglio 2026 per **ogni** sequenza a battute e che esisteva in **un solo
-> documento del repo**: i PG agiscono uno alla volta, e se ogni turno è un tiro
-> senza descrizione il pathos evapora al terzo round.
->
-> **Non sono numeri nuovi.** CD e danni restano quelli del §4. Qui c'è solo
-> **cosa leggere, quando**, e sono sei secondi a testa.
-
-**Apertura di round — cosa è cambiato nel mondo.** Prima di ogni giro, una riga
-sola: *dove* è il drago (in cielo, in picchiata, a terra) e *cosa* ha lasciato
-il round prima (una crepa, un nano che non si rialza, il fumo dell'acido).
-
-**Il giro, in quattro battute** *(ordine di gioco dichiarato: chi ha vinto
-l'iniziativa parla per primo, ma la descrizione segue sempre questo ordine)*:
-
-| | Attore | Riuscita — **una riga** | Fallimento — **una riga, e non è «manchi»** |
-|---|---|---|---|
-| 1 | **THORIK** — regge | l'ascia entra fra due scaglie e ci resta un istante di troppo: il drago **si gira verso di lui**, ed è quello che serviva | il colpo scivola sulla scaglia bagnata d'acido. Thorik resta in piedi, ma adesso ha le mani che bruciano |
-| 2 | **TORDEK** — colpisce | il pugno prende l'ala dove l'osso è sottile: un suono secco, e la picchiata si sbilancia | il drago si alza di un metro e il colpo passa sotto. Tordek finisce in avanti e per un momento **non vede dov'è** |
-| 3 | **ARTEMIS** — sceglie il bersaglio | il blast arriva **all'occhio**, e per un round il drago tiene la testa girata di tre quarti | l'ombra si apre troppo presto. Il drago la vede arrivare e **ricorda da dove è partita** |
-| 4 | **HELLA** — cambia il campo | le radici salgono dal cortile e chiudono una via di fuga: il drago **deve** restare | la pietra non risponde — qui la terra è giovane e non la conosce. Hella sente l'assenza, e le costa |
-
-**Chiusura di round — l'avanzamento visibile.** Una riga che dica cosa è
-**cambiato**, non quanti pf restano: la prima scaglia che manca, il fiato che si
-accorcia, il primo passo indietro che il drago fa senza volerlo.
-
-> **Round 1 — apertura da leggere.** *L'ombra passa sul cortile prima del
-> rumore. Quando il rumore arriva, è il vostro stesso nome gridato da ottocento
-> nani che hanno smesso di combattere per guardare in alto.*
->
-> **Che fate?**
-
-⚠️ **Dal round 3 si smette.** La regia serve a far **atterrare** l'inizio; se la
-tieni per otto round diventa una lettura e il combattimento si ferma. Dal terzo
-round si torna alle tattiche del drago qui sotto, e si descrive solo quello che
-cambia davvero.
 
 ### Tattiche di Skullcrusher — regia round per round (stile RHoD, aggancio M7-B)
 > Scritte dal punto di vista del drago. Skullcrusher è **giovane nella sua
@@ -928,35 +585,7 @@ cambia davvero.
   quell'arma entra nel sangue: Fauci, mille anni dopo, la riconoscerà (gancio
   inverso B4).
 
-### 🏟️ IL CORTILE — cosa c'è, e cosa ci si può fare che qui non è scritto
-
-> **Perché questa tabella esiste.** Il duello aveva la regia, le tattiche del
-> drago e la scalatura, ma **niente sull'arena**: un tavolo che volesse essere
-> furbo non trovava appigli, e restava l'iniziativa. Qui non ci sono soluzioni
-> pronte — ci sono **cose**, e una riga su cosa succede se qualcuno le usa.
-> Per tutto il resto vale il §0-ter: **assorbi, poi rilancia**.
-
-| Nel cortile c'è | Se qualcuno lo usa |
-|---|---|
-| **Le corde degli arieti**, tese e bagnate | tirarle mentre è basso: Lotta contrapposta con **+4** per la leva. Non lo atterra: gli **inchioda un'ala a terra per un round**, ed è tutto quello che serve |
-| **La fucina originale**, accesa da stanotte | ci si può spingere dentro qualcosa. Il drago è **immune all'acido, non al calore della forgia**: 4d6 e — più utile — il fumo gli toglie l'olfatto per 1d4 round |
-| **La cisterna sotto il pozzo** | l'acido colpisce l'acqua e **ribolle**: nuvola che oscura, −4 agli attacchi di tutti. Danneggia i PG quanto lui. È una **scelta**, non un trucco |
-| **Le campane della torre nord** | il suono nell'aria fredda copre il battito d'ali: chi le suona toglie al drago il vantaggio del suono in picchiata (e si fa **bersagliare**) |
-| **Ottocento nani che guardano** | chiamarli è gratis. Arrivano, **e muoiono**: tira sul Registro delle Perdite di ARC-08. Il drago fa un attacco pieno su di loro invece che sui PG. Nessuno lo dice al tavolo prima |
-
-🚫 **Cosa NON dire.** Che la fucina funziona contro di lui. Se lo dici, la
-tabella diventa un elenco di mosse; se aspetti, resta un cortile. Il DM **non
-legge questa tabella ai giocatori**: la tiene sotto gli occhi e risponde.
-
-⚠️ **E se hanno un'idea che non è in tabella**, la risposta è già scritta in
-§0-ter: sì, e adesso c'è un problema nuovo. **Questa tabella è un esempio di
-tono, non l'elenco delle cose permesse.**
-
 ### ► ESITO DEL DUELLO (aperto — MAI fisso) → carry-over B4 (§7)
-
-`[HDYWTDT — il finisher a chi mette a terra il drago. «Com'è che lo fai?», e
-aspetta. È il momento più grosso della campagna finora: non riempirlo tu.]`
-
 1. **UCCISO** (0 pf): impresa immensa, la profezia in pieno. → Fauci nel 1372
    parte con **−10% PF** e Presenza ridotta contro i portatori (B4).
 2. **FERITO GRAVE** (fugge sotto ⅓ pf): esito "medio", il più probabile. →
@@ -973,134 +602,6 @@ aspetta. È il momento più grosso della campagna finora: non riempirlo tu.]`
 | Party **logorato** (Sc.3/4 fallite, risorse spese, Hella ancora fragile) | Skullcrusher NON usa il soffio 2 volte di fila; a ⅓ pf **fugge subito** (esito FUGGITO garantito) invece di premere |
 | **Hella appena risorta** — vuoi proteggerla | Il drago la ignora finché non lo ferisce (predatore: va per la minaccia, non per la novità) — dà alla giocatrice spazio per il suo primo scontro |
 | Un PG **abbattuto** | Skullcrusher lo ignora (caccia chi è in piedi e lo minaccia): finestra per stabilizzarlo |
-
----
-
-## §4-quater — IL RITUALE DELLA FORGIA ETERNA `[CANONE — state.md §5; D-B/D-A, DM 2026-09-19]`
-
-> **Cos'è, e perché esisteva solo in `state.md`.** Questo viaggio **è** il
-> **Rituale Legacy 4**, che la matrice degli artefatti chiama *«Siege of the
-> Eternal Forge»*. `state.md` §5 dice che **Corona +3, Senzienza e Rubino si
-> sbloccano qui**. Fino a oggi il master consegnava il duello e basta: il DM
-> tornava dal tavolo a segnare un avanzamento che nel modulo non era successo.
->
-> ⏱️ **Quando** *(decisione DM)*: **dopo il combattimento**, sull'esito
-> dell'incontro. Non è una prova sotto pressione ed è **senza ulteriori costi** —
-> il prezzo di questo arco Thorik lo ha già versato altrove.
-
-### Il rito si fa comunque. Cambia il tono, non l'esito
-
-Il canone di §6 è esplicito: la fortezza regge perché **la profezia è incisa**.
-Anche un duello andato malissimo finisce con gli antenati che ricacciano il
-drago. Quindi il Rituale **non si fallisce**: si gioca in una delle quattro voci
-che l'incontro ha appena scelto.
-
-| Esito del duello | La voce del rito | La riga che il DM dice |
-|---|---|---|
-| **UCCISO** | trionfo, e un imbarazzo | i nani antichi non sanno se inginocchiarsi o abbracciarli, e provano tutti e due |
-| **FERITO GRAVE** *(il più probabile)* | mestiere | nessuno canta. Si conta chi manca, poi si accende la pietra |
-| **FUGGITO** | sollievo con un'ombra | il drago vi ha visti. Il rito si fa lo stesso, e qualcuno guarda il cielo mentre si fa |
-| **VINTO SPORCO** *(§6, gli avi intervengono)* | misericordia e dovere | siete venuti a salvarli, e vi hanno salvati loro. La pietra si accende uguale, e pesa di più |
-
-### La scena, in tre momenti
-
-> **Read-aloud (LotR lead) — l'incudine.** *Quello che chiamano altare è
-> un'incudine, e si vede: il piano è segnato da mille anni di martelli. Intorno
-> non c'è un tempio, c'è un cortile pieno di feriti. Un nano molto vecchio
-> appoggia sull'incudine una pietra rossa grande come una noce, e si tira
-> indietro di un passo. Nessuno spiega niente. Tutti guardano la corona.*
-
-**Momento 1 — la pietra entra.** Il Rubino trova il suo incasso, quello che per
-tutto l'arco non rifletteva la luce. Non serve un tiro: **la Corona lo prende da
-sé**, come una serratura che riconosce la chiave. La Corona passa a **+3**.
-
-> **Read-aloud (Salvatore) — l'incasso che si chiude.** *Il vuoto sulla corona
-> si riempie e smette di essere un vuoto. Per la prima volta da quando Thorik
-> l'ha in testa, l'oro torna indietro da tutte e tre le pietre, e la luce che ne
-> esce non è di nessuna delle tre: è di quello che adesso sono insieme. Il metallo
-> gli si scalda contro la fronte, poi si raffredda, e resta caldo come una mano.*
-
-**Momento 2 — la Corona parla, o non lo fa.** Qui **si incassa la promessa di
-`ARC07-DEF-3` §5**, e i due rami sono già canone:
-
-| Al rito di DEF-3, Thorik… | La Senzienza arriva | E la prima cosa che dice |
-|---|---|---|
-| **ha donato** il +2 di deflessione | **sveglia**, e con qualcosa da dire su di lui | *«Tre volte hai pagato tu. La terza non te l'ho chiesta io.»* |
-| **ha rifiutato** | **fredda**: i poteri sì, il tono no | una voce corretta e senza calore, che dà informazioni e non commenti. ⚠️ **Reversibile**: si scalda in ARC-09, quando lui rischia qualcosa di suo |
-
-> 🎭 **Grigio politico.** La Corona **non è dalla parte di Thorik**. Il suo
-> *Want* è la montagna, non il portatore: ha accettato tre gemme e un pegno
-> perché le servivano, e lo dirà con la stessa calma con cui dice tutto il resto.
-
-**Momento 3 — Aegis Fang si sveglia** *(decisione DM: è una scena, non una riga
-di scheda)*. `state.md` §5 dice: *«Unchanged until the Siege is won → then Stage
-1 full awakening»*. L'Assedio è questo, ed è appena stato vinto.
-
-> **Read-aloud (Mercer lead) — l'ascia prende la parola.** *L'ascia si scalda
-> nella mano di Thorik, e non è il calore della forgia. È la prima volta in tre
-> anni che si fa sentire senza essere interrogata. Nel cortile nessuno se ne
-> accorge, perché nessuno sta guardando le armi.*
-
-- **AEGIS FANG (Ego 14, servo del popolo nanico prima che del portatore):**
-  *«Ho visto. Non chiedo più.»* — se al rito di DEF-3 Thorik **ha donato**.
-- **AEGIS FANG:** *«Ho visto anche cosa non hai dato.»* — se **ha rifiutato**.
-  L'ascia non lo abbandona: lo **guarda**, e il giudizio finisce la prima volta
-  che lui rischia qualcosa di suo per Hella.
-
-> **`[HDYWTDT]`** Il primo uso dello Stage 1 non lo descrive il DM. Si chiede al
-> giocatore di Thorik: *«L'ascia parla, e per la prima volta non risponde a una
-> domanda. Cosa ti dice, e tu cosa fai con quella frase davanti a ottocento nani
-> che ti stanno guardando?»*
-
-> **Chiusura.** Tre pietre accese, un'ascia che ha appena parlato, e un cortile
-> che non sa ancora di essere una leggenda. **«Che fate?»**
-
-### ⚠️ Due cose per il DM, e una da decidere
-
-- **Il Rubino è a uso singolo e si spende nel ritorno** (D16, `DEF-5` §3). Non
-  è un potere nuovo in tasca: è il motore del viaggio di casa.
-- **Non ci sono altri costi qui** — né TS, né pegni, né punti caratteristica.
-
-### Momento 4 — l'Aura della Forgia Eterna `[CANONE — DM 2026-09-20]`
-
-**Il quarto potere, quello che la Corona non aveva mai avuto.** La matrice
-degli artefatti lo chiama *Aura of the Eternal Forge* e lo dà al **Rituale 4,
-alla vittoria nella battaglia antica**. È adesso.
-
-| Chi | Cosa riceve |
-|---|---|
-| **I quattro** | *Possenza Divina* e *Protezione dal Male* |
-| **Ogni nano entro 30 metri** | *Possenza Divina*, *Protezione dal Male*, *Benedizione*, e un uso di *Scolpire Pietra* |
-| **Thorik** | irradia **+4 di morale** ad attacchi e tiri salvezza per ogni nano che lo veda |
-| **I nemici dei nani** | **Volontà CD 20** o **scossi** per 1 minuto |
-
-⏱️ **Durata e cadenza**: dura **fino all'alba** la prima volta, e da allora
-resta alla Corona come potere **1/settimana**. Non è una ricarica: è la cosa
-che la Corona sa fare da quando è intera.
-
-> **Read-aloud (LotR lead) — l'aura.** *Il vecchio che ha posato la pietra
-> alza la testa, e non guarda Thorik: guarda dietro di lui. In tutto il
-> cortile i feriti stanno smettendo di essere feriti. Un fabbro con una
-> gamba sola si tira su appoggiandosi al muro, e il muro gli si apre sotto
-> la mano come argilla, e lui ci infila la gamba e resta in piedi. Nessuno
-> grida. Ottocento nani guardano un uomo con una corona e capiscono, tutti
-> insieme e senza parlare, di essere dentro una storia che verrà raccontata.*
-
-⚠️ **Tre cose per il DM, e la prima è di bilancio.**
-
-- **L'Aura arriva DOPO il duello, non prima.** L'innesco è *«vittoria nella
-  battaglia antica»*, non l'arrivo: `§4` resta tarato come è scritto, e nessun
-  numero di Skullcrusher va toccato. 🔎 Una fonte d'artefatto più vecchia la
-  dava *«automatica all'arrivo»*, ed è una mappatura superata — quella
-  descriveva un Rituale 4 di una scena sola.
-- **Metà dell'Aura la giocate già**, sotto un altro nome. La **Guarigione del
-  passaggio** di `§3 SCENA 1` — pf pieni, usi ricaricati, niente tiri — è la
-  metà curativa di questo stesso potere, attribuita al portale. Resta lì e non
-  si somma: qui arriva **solo la metà che potenzia**.
-- **Il Manto di Pietra e Spirito NON è di questo rituale**, e il giocatore lo
-  sa: è sulla sua scheda dal **Rituale 3**, riga «Rit. 3», *Mente Vuota*
-  permanente e RD 5/epico. La riga della matrice che lo dava qui era una
-  mappatura vecchia, ed è stata corretta.
 
 ---
 
@@ -1149,8 +650,7 @@ GUARDIE (4): Hobgoblin Guerriero 8 · CA 20 · PF 60 · spadone +14 (2d6+6)
 - **Soglia 30% pf**: combatte disperato, cerca di **portare un PG con sé** nella
   morte (un ultimo Colpo Possente pieno −10/+20).
 - **Sviluppi.** Zog'tar **muore in questa scena** (la storia dice così), ma il
-  COME conta (esito §3). `[HDYWTDT — il finisher a chi lo abbatte: «com'è che
-  lo fai?», e aspetta. Se non vuole, una riga tua e si va avanti.]` Alla sua morte, l'Occhio di Ossidiana si spegne; il
+  COME conta (esito §3). Alla sua morte, l'Occhio di Ossidiana si spegne; il
   campo perde il direttore. *Se catturato/interrogato invece che ucciso*: Moradin
   approva la saggezza pragmatica (nessun tono «nessuna pietà» sul Rubino).
 
@@ -1305,9 +805,6 @@ con un **terrore reverenziale mal mascherato**.
 | **Seme del Ghostlord** (§1-bis, incontro con Zeth) | i PG assistono all'inizio della Lichificazione di Zeth (mano del Collezionista attraverso il tempo) | ARC-09 (dilemma etico di Hella su Zeth il Murato) | **state.md §7** + `Bestiario/villain/Ghostlord/` |
 | **Scelte-costo vs Zog'tar** (§4-bis) | Thorik affaticato / Cintura di Tordek «assaggiata» o disciplinata / tono del Rubino | ARC-08 (vs Fauci) | §4-bis + B4 |
 | **Tono del Rubino** (esito duello) | «nessuna pietà» (UCCISO) / «dovere» (FERITO) / «vigile» (FUGGITO) → colore della Corona in ARC-08 | ARC-08 ingresso | `ARC07-CONSEGUENZE-ECHI.md` §2 |
-| **La Senzienza arriva calda o fredda** (§4-quater) | il ramo lo ha deciso `DEF-3` §5: se Thorik ha donato il +2 di deflessione la Corona **commenta**, se ha rifiutato **informa e basta**. ⚠️ Il freddo e' **reversibile** | ARC-08 e ARC-09, ogni volta che la Corona parla | `state.md` §5 · `ARC07-CONSEGUENZE-ECHI.md` |
-| **Aegis Fang allo Stage 1** (§4-quater) | l'ascia ha smesso di interrogare Thorik — **oppure** lo giudica, e il giudizio finisce la prima volta che lui rischia qualcosa di suo per Hella | ARC-08, alla prima scena che riguarda Hella o nani da proteggere | `Bestiario/` scheda Aegis Fang + `state.md` §5 |
-| **La prima frase dell'ascia, detta dal giocatore** (`[HDYWTDT]`, §4-quater) | quella frase e' canone: ottocento nani l'hanno sentita, e a Hammerfist qualcuno la **ripetera' storta** | ARC-08, arrivo al Cuore della Montagna | `ARC07-CONSEGUENZE-ECHI.md` |
 | **Cronache dei Quattro Eroi compiute** | fama crescente presso i nani → Custodi Eterni | ARC-08 E5 / Cerimonia 100 Asce | ARC-08 |
 | **Sigillo di Ossidiana** (se rubato a Vatore) | artefatto di Shar (anti-luce / furto d'ombra, divora anime) — vedi §5 Artefatto; contrasta l'Anello di Artemis | ARC-09 | `state.md §7 [SIGILLO DI OSSIDIANA]` + `Bestiario/villain/Salvatore/` |
 

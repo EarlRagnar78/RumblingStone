@@ -232,18 +232,134 @@ class TestGliStandardRedazionaliScrittiEMaiApplicati(unittest.TestCase):
 
         `ADR-0014` (regia sensoriale obbligatoria) fu applicato nel commit
         `d9c357b` a **ARC07-DEF-1 e basta**. Questo test non impone che resti
-        così: impone che **cambiarlo sia deliberato**. Quando la regia di
-        round arriverà in un secondo documento, questo cancello va aggiornato
-        a mano — ed è esattamente il segnale che il lotto è stato fatto.
+        così: impone che **cambiarlo sia deliberato**.
+
+        ✅ **Ed è successo due volte.** Il 2026-09-18 la riscrittura di DEF-4
+        ha portato la regia di round nel **secondo** documento; il 2026-09-19
+        quella di DEF-3 nel **terzo** — il rito corale aveva sei step e nessuna
+        regia, che è il caso esatto che ADR-0014 §1 nomina. Ogni volta il
+        cancello è diventato rosso, che era il suo scopo, e ogni volta è stato
+        aggiornato a mano. Tre su nove archi: la strada è ancora lunga.
         """
         con = []
         for nome in MC.BERSAGLI:
             testo, _, _ = MC.carica(MC.BERSAGLI[nome])
             if conta("regia di round (una battuta per attore)", testo):
                 con.append(nome)
-        self.assertEqual(con, ["DEF-1 Piano della Terra"],
+        self.assertEqual(sorted(con), ["DEF-1 Piano della Terra",
+                                       "DEF-3 Resurrezione Hella",
+                                       "DEF-4 Viaggio 1.000 anni"],
                          "la regia di round e' comparsa altrove (bene!) oppure "
-                         "e' sparita da DEF-1 (male): aggiornare di proposito")
+                         "e' sparita da uno dei due (male): aggiornare di proposito")
+
+
+class TestIlBoxETICHETTATOEUnBoxAnchEsso(unittest.TestCase):
+    """🔴 **Il difetto piu' grave dello strumento, e il terzo della stessa
+    famiglia.** Trovato il 2026-09-18 **usando** lo strumento per riscrivere
+    DEF-4: i numeri non si muovevano mentre il testo cambiava.
+
+    `editorial-standards.md` §2 **prescrive** la forma
+    `> **Read-aloud (pilastro lead).** *prosa*`. Il rilevatore contava solo i
+    box che cominciano con prosa in corsivo **nuda**, e saltava tutti quelli
+    etichettati — cioe' **i migliori**, quelli scritti a norma.
+
+    ⚠️ **Ha reso false tre cifre gia' pubblicate**: «DEF-4 ha 5 read-aloud»
+    (ne ha 15), «DEF-5 ne ha zero» (ne ha 4), «DEF-4 ha il divario piu' grave
+    col Palio» (era gia' **sopra** il Palio in densita'). Reggono invece le
+    due piu' forti: la Torre e la Battaglia Finale sono davvero a **zero**.
+    """
+
+    ETICHETTATO = "> **Read-aloud (LotR lead).** *La sala si apre.*\n"
+    NUDO = "> *La sala si apre.*\n"
+    NOTA = "> **Sistema: D&D 3.5 SRD** (max PF1e).\n"
+
+    def test_il_box_etichettato_conta(self):
+        self.assertEqual(conta("read-aloud narrativo", self.ETICHETTATO), 1)
+
+    def test_il_box_nudo_conta_ancora(self):
+        self.assertEqual(conta("read-aloud narrativo", self.NUDO), 1)
+
+    def test_la_nota_editoriale_resta_fuori(self):
+        """Il lato che morde da sopra: allargare per prendere gli etichettati
+        non deve far rientrare le note, che erano il difetto **originale**."""
+        self.assertEqual(conta("read-aloud narrativo", self.NOTA), 0)
+
+    def test_anche_box_read_aloud_riconosce_l_etichetta(self):
+        """La funzione gemella aveva lo stesso buco: `--box` misurava DEF-4
+        su **2** box invece che su 12."""
+        self.assertEqual(len(MC.box_read_aloud(self.ETICHETTATO)), 1)
+        self.assertEqual(len(MC.box_read_aloud(self.NOTA)), 0)
+
+    def test_l_etichetta_non_conta_come_prosa_da_leggere(self):
+        """🔴 Il terzo strato dello stesso difetto. `**Read-aloud (Salvatore
+        lead)**` e' rivolta al DM e non si legge ad alta voce: contarne le
+        parentesi e i nomi dei pilastri faceva risultare **peggiore** ogni box
+        scritto nella forma prescritta. DEF-4 segnava 9 box «con parentesi»
+        e ne ha **2**."""
+        d = MC.difetti_dei_box(self.ETICHETTATO)
+        self.assertEqual(d["con parentesi"], 0,
+                         "le parentesi dell'etichetta sono tornate a contare")
+        self.assertEqual(d[">1 nome proprio"], 0,
+                         "«LotR» e' un nome di pilastro, non un nome proprio "
+                         "della scena")
+
+    def test_i_numeri_veri_dei_read_aloud(self):
+        """Le cifre corrette, fissate perche' non si possa tornare indietro
+        in silenzio. Se cambiano, e' perche' qualcuno ha scritto o tolto
+        prosa — e allora si aggiornano **di proposito**."""
+        for nome, atteso in (("★ Abbazia (stand-alone)", 11),
+                             ("★ Palio di Channathgate", 41),
+                             ("ARC-09 Torre di Zalkatar", 0),
+                             ("ARC-09 Battaglia Finale", 0)):
+            with self.subTest(bersaglio=nome):
+                testo, _, _ = MC.carica(MC.BERSAGLI[nome])
+                self.assertEqual(conta("read-aloud narrativo", testo), atteso)
+
+
+class TestIDueCongegniDiMercer(unittest.TestCase):
+    """🔴 Quarta e quinta cosa dichiarata e mai applicata di questo repo.
+
+    Il DM il 2026-09-18 ha chiesto *«qualcosa che stimoli i PG a soluzioni
+    creative — vedi se c'è tra le skill»*. C'era, in `style-pillars.md`
+    §Mercer, e in due forme:
+
+    - **`[HDYWTDT]`** — al colpo che uccide un boss la narrazione passa a chi
+      l'ha tirato, e la skill dice che il marcatore **va scritto** nel testo
+      dell'incontro. Era a **zero in tutti e nove gli archi**.
+    - **yes-and with teeth** — l'invenzione del giocatore entra nel canone
+      **e** genera una complicazione. Mai applicata.
+
+    ⚠️ Nessuno dei due era nel metro, ed è il motivo per cui erano invisibili:
+    *se una cosa sta in una skill e in nessun rilevatore, prima o poi sparisce.*
+    """
+
+    def test_il_marcatore_del_finisher_conta(self):
+        self.assertEqual(
+            conta("[HDYWTDT] il finisher al giocatore",
+                  "`[HDYWTDT — il finisher a chi lo abbatte]`"), 1)
+
+    def test_assorbi_e_rilancia_conta(self):
+        self.assertGreaterEqual(
+            conta("assorbi e rilancia (yes-and with teeth)",
+                  "La regola e' **assorbi, poi rilancia** (yes-and with teeth)"), 1)
+
+    def test_dove_sono_arrivati(self):
+        """Il fatto misurato, aggiornato il 2026-09-19: da UNO a DUE documenti.
+
+        DEF-4 li ha portati per primo (riscrittura del 2026-09-18), DEF-3 il
+        giorno dopo — il `[HDYWTDT]` allo Step 5 del rito, dove il richiamo
+        riesce e la voce finale la sceglie il giocatore invece del DM. Quando
+        arriveranno altrove, questo cancello va aggiornato **di proposito**."""
+        for congegno in ("[HDYWTDT] il finisher al giocatore",
+                         "assorbi e rilancia (yes-and with teeth)"):
+            con = []
+            for nome in MC.BERSAGLI:
+                testo, _, _ = MC.carica(MC.BERSAGLI[nome])
+                if conta(congegno, testo):
+                    con.append(nome)
+            with self.subTest(congegno=congegno):
+                self.assertEqual(sorted(con), ["DEF-3 Resurrezione Hella",
+                                               "DEF-4 Viaggio 1.000 anni"])
 
 
 class TestIBersagliNonSiCampionanoInSilenzio(unittest.TestCase):

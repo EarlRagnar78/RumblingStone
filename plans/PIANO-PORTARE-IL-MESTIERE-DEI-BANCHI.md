@@ -70,7 +70,7 @@ Sì, e in tre punti precisi, tutti misurati contro i banchi:
 
 | Congegno | DEF-4 | Abbazia | Palio | Cosa vuol dire |
 |---|---:|---:|---:|---|
-| **read-aloud narrativo** | **5** | 11 | 41 | 🔴 DEF-4 ha **5 letture** in 955 righe. Il Palio ne ha 41 in 3.070. È il divario più grave |
+| ~~read-aloud narrativo~~ | ~~**5**~~ → **15** | 11 | 41 | 🔴 **QUESTA RIGA ERA FALSA.** Il rilevatore saltava i box scritti nella forma **prescritta** (`> **Read-aloud (X).** *prosa*`): DEF-4 ne ha **15**, dieci etichettati. In densità era **già sopra** il Palio — 15,7 contro 13,4 ogni 1.000 righe. Vedi §1.5 |
 | **orologio / countdown** | **1** | 31 | 41 | 🔴 una sola menzione. I due banchi reggono la tensione **con gli orologi**; DEF-4 no |
 | **modi di fallimento** | **0** | 2 | 1 | il fallimento come *costo* invece che come *stop* non è scritto da nessuna parte |
 | **nodo d'indizio** | **0** | 15 | 7 | zero — ed è un modulo con un'indagine (le Cronache dei Quattro Eroi) |
@@ -108,11 +108,11 @@ Palio hanno e questo documento no):
 | DEF-2 Ritorno e affreschi | 1 | 909 | 47% | 8 | 0 vie non combattive, 0 indizi |
 | DEF-3 Resurrezione Hella | 1 | 852 | 41% | 8 | 0 orologi *(3)*, 0 vie non combattive |
 | **DEF-4 Viaggio 1.000 anni** | 1 | 955 | **65%** | 6 | **5 read-aloud, 1 orologio** |
-| DEF-5 Ritorno Hammerfist | 1 | 513 | 41% | 9 | 🔴 **0 read-aloud narrativi** |
-| ARC-09 Torre di Zalkatar | 12 | 1.193 | 59% | 5 | 🔴 **0 read-aloud, 0 dialogo** in 12 file |
+| DEF-5 Ritorno Hammerfist | 1 | 513 | 41% | 9 | ~~0 read-aloud~~ → **4** (§1.5). Resta il più povero del gruppo DEF |
+| ARC-09 Torre di Zalkatar | 12 | 1.193 | 59% | 5 | 🔴 **0 read-aloud, 0 dialogo** in 12 file — *verificato col metro corretto: regge* |
 | ARC-09 Torneo di Dauth | 22 | 4.680 | 65% | 4 | 8 read-aloud in 4.680 righe (1,7/1.000) |
 | ARC-09 Rhest | 8 | 1.151 | 59% | 5 | **0 dialogo**, 0 echi |
-| ARC-09 Battaglia Finale | 16 | 3.218 | 47% | 7 | 🔴 **0 read-aloud** in 16 file |
+| ARC-09 Battaglia Finale | 16 | 3.218 | 47% | 7 | 🔴 **0 read-aloud** in 16 file — *verificato col metro corretto: regge* |
 | ARC-08 Hammerfist | 13 | 6.096 | 59% | 5 | 🟢 90 read-aloud: il più ricco. 0 indizi |
 
 ### Le tre assenze che attraversano **tutto** il repo
@@ -299,6 +299,99 @@ sarebbe ripetere l'errore che questo piano documenta.
   finale dell'arco; la Battaglia Finale è 16 file. → lotti S2, S5.
 
 ---
+
+### 1.5 · 🔴 Tre cifre pubblicate erano false, e le ha trovate lo strumento usandolo
+
+Il DM, il 2026-09-18: *«possiamo fare una prova di riscrittura della parte dopo
+la resurrezione di Hella, misurando quanto migliora?»*. Riscrivendo DEF-4 i
+numeri **non si muovevano** mentre il testo cambiava, ed è così che è saltato
+fuori il difetto più grave dello strumento — **il terzo della stessa famiglia**.
+
+`editorial-standards.md` §2 **prescrive** la forma
+`> **Read-aloud (pilastro lead).** *prosa*`. Il rilevatore contava solo i box
+che cominciano con prosa in corsivo **nuda**, e saltava tutti gli etichettati:
+**cioè i migliori, quelli scritti a norma**.
+
+| Avevo pubblicato | È vero |
+|---|---|
+| DEF-4 ha **5** read-aloud | ne ha **15** — cinque nudi, **dieci etichettati** |
+| DEF-5 ne ha **zero** | ne ha **4**. Resta il più povero del gruppo DEF, ma non è zero |
+| «DEF-4 ha il divario più grave col Palio» | 🔴 **invertito**: 15,7 ogni 1.000 righe contro i 13,4 del Palio. DEF-4 era **già sopra** |
+
+🟢 **Reggono le due più forti**, riverificate col metro corretto: la **Torre di
+Zalkatar** ha davvero **0 read-aloud e 0 dialogo** in 12 file, e la **Battaglia
+Finale** **0** in 16.
+
+E il difetto aveva un **terzo strato**: `--box` contava le parentesi e i nomi
+propri **dell'etichetta** — `**Read-aloud (Salvatore lead)**` — facendo
+risultare *peggiore* ogni box scritto nella forma prescritta. DEF-4 segnava
+**9 box «con parentesi»** e ne ha **2**.
+
+⚠️ **Le tre correzioni sono ora sotto cancello** (`test_misura_craft.py`,
+classe `TestIlBoxETICHETTATOEUnBoxAnchEsso`), e il lato che morde è provato da
+sopra **e** da sotto: allargare per prendere gli etichettati non deve far
+rientrare le note editoriali, che erano il difetto originale.
+
+---
+
+## FASE 1-quater — La prova di riscrittura di DEF-4 *(fatta)*
+
+**Cosa è stato fatto**: applicati a `ARC07-DEF-4` i congegni che il documento
+non aveva, **sostituendo** dove il testo era debole invece di aggiungere in
+coda. Originale archiviato in
+`_ARCHIVIO/ARC07-DEF-4-VIAGGIO-MILLE-ANNI-prima-riscrittura-2026-09-18.md`.
+
+### Il risultato, misurato con lo stesso metro corretto su prima e dopo
+
+**Otto congegni su nove passati da zero a presente.** Il nono — *ADR interni al
+documento* — resta a zero **di proposito**: è la decisione D1 del DM.
+
+| Congegno | Prima | Dopo |
+|---|---:|---:|
+| quarta colonna sensoriale (ADR-0057) | 0 | **4** |
+| grigio politico | 0 | **5** |
+| dialogo nella forma prescritta | 0 | **4** |
+| chiusura su «Che fate?» | 0 | **3** |
+| regia di round (ADR-0014) | 0 | **3** |
+| prove grezze di caratteristica | 0 | **3** |
+| nodo d'indizio | 0 | **2** |
+| modi di fallimento dichiarati | 0 | **2** |
+| orologio / countdown | 1 | **5** |
+| vie non combattive | 1 | **3** |
+| battute di dialogo | 59 | **73** |
+| spotlight per PG | 60 | **72** |
+
+### 🔴 E quello che NON è migliorato, che è la parte onesta
+
+| I box contro `read-aloud-adulti.md` | Prima | Dopo |
+|---|---:|---:|
+| box read-aloud | 12 | 12 |
+| oltre le 12 righe | 1 | **1** |
+| con parentesi | 2 | **2** |
+| con più di un nome proprio | 9 | **9** |
+
+**Non si è mosso niente, e il motivo è semplice: ho riscritto due box su
+dodici.** I dieci che restano sono quelli di prima. La riscrittura ha portato
+**congegni**, non prosa nuova — e sulla prosa, che è la cosa che il tavolo
+sente, questo lotto ha fatto poco.
+
+🟢 I due box riscritti rispettano la norma (9 e 7 righe, zero parentesi, zero
+nomi propri nuovi), e i due difetti che correggono erano **citabili**, non di
+gusto: la Zona 3 diceva *«Dove vi gettate, la linea tiene»* — l'esito della
+prova di gruppo della Scena 4, **letto prima che qualcuno tirasse**, che
+`editorial-standards` §2 vieta — e chiamava i PG *«quattro leggende venute dal
+futuro»*, che è *il predestinato senza costo* di `read-aloud-adulti` §4.
+
+### La quantità, dichiarata
+
+**955 → 1.200 righe · 9.630 → 12.488 parole (+30%).** Il DM aveva chiesto che
+la quantità crescesse **solo se necessario e senza annoiare**. Le 2.858 parole
+in più sono: la scheda sensoriale delle tre zone, l'orologio della notte, il
+nodo d'indizio a sei porte, le due vie non combattive su Zog'tar, la tabella
+dei modi di fallimento della Scena 4, il grigio di Balvar e la regia dei primi
+due round. **Nessuna è prosa da leggere ad alta voce**: sono tutte cose che il
+DM guarda mentre gioca. ⚠️ Resta un giudizio del tavolo, non una misura: un
+master di 1.200 righe si sfoglia più lentamente di uno da 955.
 
 ## FASE 2 — Sviluppo / attuazione
 

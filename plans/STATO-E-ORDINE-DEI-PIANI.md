@@ -276,3 +276,55 @@ in fondo, non un cancello all'ingresso.
 ⚠️ **Il resto di questo documento resta scritto a mano**, e resta una
 fotografia: l'ordine delle fasi, le dipendenze, i costi. Il gate copre la
 tabella delle decisioni, non il giudizio che c'è attorno.
+
+---
+
+## 6 · 🔁 Ripartire da qui — la tornata del 2026-09-20/21
+
+> **A cosa serve questa sezione.** La tornata si chiude con dei lotti aperti, e
+> il DM riprende **in un'altra conversazione**. Qui c'è tutto ciò che serve a
+> ripartire senza rileggere niente: **ogni cosa da fare ha un comando che la
+> rimisura**, perché un elenco che dipende dalla memoria di una chat non è un
+> elenco, è un ricordo.
+
+### 6.1 · Il primo comando da dare, sempre
+
+```bash
+python3 scripts/fase1.py <i file che stai per toccare>
+```
+
+È la **sesta regola d'oro** (`G6`, `AGENTS.md`): quattro passi in sola lettura
+prima di qualunque modifica, `--check` esce 1 se stai per toccare un archivio.
+L'ordine delle sei regole sta in [`skills/REGOLE-DORO.md`](../skills/REGOLE-DORO.md),
+per momento del ciclo.
+
+### 6.2 · Cosa resta, e il comando che lo rimisura
+
+| | Lotto | Dove | Il comando che dice a che punto è |
+|---|---|---|---|
+| ⬜ | **2C** — i box read-aloud che presuppongono un'azione del giocatore | [PIANO-QUATTRO-ORDINI](PIANO-QUATTRO-ORDINI-2026-09-20.md) §2C | `python3 scripts/misura_craft.py --p1` → **104 box su 477, in 29 file**, con la lista |
+| ⬜ | **M1-M3** — marcare gli incontri | [PIANO-MARCATURA-DEGLI-INCONTRI](PIANO-MARCATURA-DEGLI-INCONTRI.md) | `python3 scripts/validate_modules.py --tetto-el` → oggi **zero incontri marcati** |
+| ⬜ | **F1.1/F1.2/F1.3** — mappare le norme su severità | [PIANO-MISURA-EDITORIALE](PIANO-MISURA-EDITORIALE-STANDARD.md) | `python3 scripts/punteggio_mqm.py --norme` → **4 norme su ~40** entrano nel punteggio |
+| ⬜ | **F1.5 + F3.3** — i due campioni e il κ | idem | 🔴 **bloccato sul DM**: il campione A costa il suo tempo, e senza κ ≥ 0,6 la metrica non entra in CI |
+| ⬜ | i 27 ADR mancanti in `docs/INDEX.md` §4 | lotto mai aperto | `python3 scripts/validate_docs.py --sorgenti` (il controllo `indice_adr` li conta) |
+
+### 6.3 · Le tre cose decise in questa tornata che NON vanno ridiscusse
+
+1. **Il Rituale 4 è chiuso.** Decide la scheda che il giocatore ha letto: il
+   *Manto di Pietra e Spirito* è del Rituale 3, l'*Aura della Forgia Eterna*
+   del Rituale 4, e le tre fonti concordano sulla **CD 20**. L'innesco è la
+   **vittoria**, non l'arrivo: `§4` non va ribilanciato.
+2. **Fondere le skill peggiora.** Misurato: F1 da 0,744 a 0,728, richiamo sotto
+   1,000. Non si rifà.
+3. **La soglia del punteggio nasce dal repo.** I numeri vengono da
+   `punteggio_mqm.py --distribuzione`, e si rimisurano con quel comando prima
+   di cambiarli. Mai scriverne uno a memoria: è già successo, il 2026-09-21.
+
+### 6.4 · Le decisioni aperte al DM, in ordine di costo
+
+| | Decisione | Perché non la posso prendere io |
+|---|---|---|
+| 🔵 | **Aprire il piano di marcatura degli incontri?** | è lavoro su decine di file, e sblocca il primo critico vero del punteggio |
+| 🔵 | **I 104 box P1 si correggono tutti?** | ordinato il 2026-09-20; resta da eseguire, ed è l'ultimo lotto aperto di QUATTRO-ORDINI |
+| 🔵 | **Il campione A per il κ** | costa tempo al DM, e senza non si sa se la metrica concorda con lui |
+| 🔵 | **Un EL oltre il tetto si ribilancia o si dichiara?** | è una decisione di difficoltà, e oggi non si sa nemmeno quanti siano |

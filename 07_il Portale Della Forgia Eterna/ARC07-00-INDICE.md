@@ -38,7 +38,7 @@ del master in gioco (già dentro il file); le **Benedizioni di Moradin**
 (il "Golem di Mithral" delle immagini = la **Sentinella**, master #1 §7b);
 **Skullcrusher** (non Skulldark/Infernotooth); **1.000 anni prima ≈ 372 DR**;
 Corona in uscita = **3 gemme accese** (Topazio/Tempo, Smeraldo/Terra,
-Rubino/Leggenda-**speso**); **Cuore di Moradin SPESO**; **Thorik −2 COS**;
+Rubino/Leggenda-**speso**); **Cuore di Moradin SPESO**; **Thorik −4 DES / +2 COS / +4 CAR** (più **−1 CA** se ha donato il +2 di deflessione al rito, `DEF-3` §5);
 Tordek ha la **Cintura della Devastazione**; compagno di Hella = **Durik**
 (maschio); la battaglia contro **Fauci di Palude** è dell'**ARC-08** (i master
 non la duplicano, vi rimandano).

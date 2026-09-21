@@ -23,7 +23,10 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install pyyaml
+        # ADR-0037, emendamento 2026-09-21: due piani. requirements.txt e' cio'
+        # che il DM esegue (stdlib + tre eccezioni dichiarate); il file -dev
+        # aggiunge pytest, che gira solo qui e in locale.
+        run: pip install -r requirements-dev.txt
 
       - name: Python scripts compile
         run: python -m compileall -q scripts converters
@@ -236,8 +239,26 @@ jobs:
           python scripts/compile_map_json.py /tmp/ci-uc.draft.json --validate-only
           python -c "import json; r=json.load(open('/tmp/ci-uc.conflicts.json')); assert r['report_version'] and 'conflicts' in r, 'report malformato'; print('import_ultraclear OK')"
 
-      - name: Unit tests — dmcore / state_apply / next_session (ADR-0007)
+      # 🔴 Entrambi i corridori, e non e' ridondanza. Il 2026-09-21 tre file di
+      # test giravano in locale sotto pytest e NON in CI sotto unittest: due non
+      # si importavano, uno era fatto di funzioni nude che `unittest` importa
+      # senza eseguire — 966 prove viste, 942 eseguite. Con pytest ammesso
+      # (emendamento ad ADR-0037) il buco si riapre al contrario, quindi si
+      # girano tutti e due e `test_i_test_girano_in_ci.py` verifica che vedano
+      # lo stesso numero.
+      # ADR-0059: il punteggio pesato. Nasce verde per costruzione (la soglia
+      # viene dalla distribuzione misurata del repo), quindi un rosso qui e' un
+      # documento che e' peggiorato, non una soglia importata da un manuale.
+      - name: Punteggio di qualita' editoriale (MQM, ADR-0059)
+        run: |
+          python scripts/punteggio_mqm.py --soglia
+          python scripts/validate_modules.py --tetto-el
+
+      - name: Unit tests — unittest (il corridore storico, ADR-0007)
         run: python -m unittest discover -s scripts/tests -v
+
+      - name: Unit tests — pytest (il secondo corridore, ADR-0037 em. 2026-09-21)
+        run: python -m pytest scripts/tests -q
 
       - name: dm.py unified CLI smoke test (K-C3)
         run: |
@@ -281,7 +302,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install pyyaml
+        run: pip install -r requirements.txt
 
       - name: Build all per-agent skill packages
         run: ./scripts/build-skills.sh --no-deploy

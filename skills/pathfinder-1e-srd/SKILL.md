@@ -6,7 +6,10 @@ description: >
   "PF1e", "PFRPG", "simple template", "advanced template", "CMB/CMD", "monster
   statistics by CR", "NPC codex", or when backporting Pathfinder material into a
   D&D 3.5 game. This campaign RUNS on D&D 3.5; PF1e is a compatible toolkit used
-  mainly to boost NPCs, villains, and monsters quickly.
+  mainly to boost NPCs, villains, and monsters quickly. ALSO trigger for anything
+  about the standalone module — "il Drappo di Tarsilia", "il Drappo", "la mini
+  campagna", "il modulo autonomo", "Golarion", "le sei schede pregenerate", "il
+  Palio": quello NON gira su 3.5, gira su PF1e, e sono le sue regole.
 ---
 
 # Pathfinder 1e SRD — Rules & Conversion Toolkit

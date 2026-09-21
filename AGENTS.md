@@ -106,13 +106,13 @@ viene ignorata** — per settimane, in silenzio.
 Quindi la regola ha **tre obblighi**, e il terzo è quello che la rende diversa
 da un buon proposito:
 
-1. **Leggi i `references/`**, non il loro elenco. Sono la norma; il `SKILL.md`
+1. **`G1` · Leggi i `references/`**, non il loro elenco. Sono la norma; il `SKILL.md`
    è la mappa. Dieci file solo in `narrative-style`.
-2. **Misura prima di affermare.** «Questo standard manca», «lo stile non è
+2. **`G2` · Misura prima di affermare.** «Questo standard manca», «lo stile non è
    arrivato qui», «questa forma non la usa nessuno» sono affermazioni
    *misurabili*: `python3 scripts/misura_craft.py [--box|--copertura|--spotlight]`.
    Un'affermazione sullo stato del repo senza una misura accanto non vale.
-3. **Se introduci una norma, registrala.**
+3. **`G3` · Se introduci una norma, registrala.**
    [`skills/REGISTRO-NORME-EDITORIALI.md`](skills/REGISTRO-NORME-EDITORIALI.md) elenca
    ogni norma con **chi la misura**, o con **il perché nessuno la misura**.
    Il gate `python3 scripts/validate_norme_editoriali.py` boccia un file
@@ -124,6 +124,116 @@ da un buon proposito:
 > erano ottimi e sono rimasti lettera morta, uno perché non ha toccato un solo
 > file d'arco, l'altro perché ne ha toccato uno. **Una norma nuova arriva con
 > il suo lotto di applicazione e la sua misura, o non è arrivata.**
+
+#### 🔴 Quarto obbligo: **la self-check prima di consegnare** *(aggiunto lo stesso giorno)*
+
+Il DM, poche ore dopo la prima stesura: *«perché non è partita automaticamente?
+Non è che c'è una skill che l'aveva previsto?»*
+
+**Ce l'aveva.** `rumblingstone-narrative-style` ha una sezione
+**«Self-check before delivering generated content»**: il controllo di coerenza
+più **sette domande**. Non era partita perché i tre obblighi qui sopra dicono
+**«leggi»** e **«misura»**, non **«esegui la self-check prima di consegnare»** —
+e una riscrittura è esattamente il momento in cui serve.
+
+> **`G4` · 4. Prima di consegnare prosa di gioco, esegui la self-check della skill.**
+> Non «tienila a mente»: **eseguila**, domanda per domanda. Dove la domanda è
+> misurabile, la risposta è un **comando**, non un'impressione.
+
+| Domanda della self-check | Come si risponde |
+|---|---|
+| 1 · Quale pilastro guida la scena? *(se «tutti» → riscrivi)* | `misura_craft` → `PILASTRO dichiarato (lead/support)` |
+| 2 · Almeno un PG agisce, sceglie o riceve un'eco? | `--spotlight` (indicatore) |
+| 3 · Ho scritto o fatto riemergere un'eco? | congegno `eco / conseguenze a distanza` |
+| 4 · Sopravvive senza i numeri di serie — niente nomi presi in prestito? | **giudizio**, nessuna misura |
+| 5 · Ogni PNG nominato ha un *Want* che non riguarda i PG? | congegno `grigio politico` |
+| 6 · La rete d'indizi è ridondante, e la risposta sbagliata porta comunque da qualche parte? | congegni `nodo d'indizio` + `modi di fallimento` |
+| 7 · **Qualche box è cresciuto oltre il tetto perché la prosa era venuta bene?** *(→ taglia; vince il tetto)* | `misura_craft --box`, colonna `>12 righe` |
+
+🔎 **La settima non è un esempio scelto a caso: è quella che ho fallito.** La
+riscrittura di `ARC07-DEF-4` del 2026-09-18 ha lasciato un box da **15 righe**
+— proprio quello meglio scritto, l'ingresso di Balvar — e l'ho corretto solo
+dopo che il DM ha fatto questa domanda. Spezzandolo in tre battute il testo è
+**migliorato**, perché il silenzio del vecchio è diventato la prima battuta.
+La domanda 7 esiste per quello.
+
+⚠️ **E la self-check non basta da sola**: due congegni che la skill dichiara —
+`[HDYWTDT]` (il finisher va al giocatore, ai punti di morte dei boss) e
+*yes-and with teeth* (l'invenzione del giocatore entra nel canone **e** genera
+una complicazione) — erano a **zero in tutti e nove gli archi** e non erano
+nemmeno nel metro. Adesso sono due congegni di `misura_craft`. **Se una cosa
+sta in una skill e in nessun rilevatore, prima o poi sparisce.**
+
+#### 🧭 Quinto obbligo: **l'ordine di caricamento è a strati, e sta in un dato**
+
+Il DM: *«fai un ordine gerarchico delle skill che eviti di far saltare le skill
+[…] verifica se ci sono skill che si sovrappongono e orchestrale in maniera
+smart, con meccanismi davvero misurabili»*.
+
+> **`G5` · 5. Prima di caricare, applica l'algoritmo a cinque domande di
+> [`skills/ORCHESTRAZIONE.md`](skills/ORCHESTRAZIONE.md).** Cinque strati più
+> la consultazione, otto conflitti ognuno con un vincitore dichiarato, e un
+> gate (`validate_skills.py`) che boccia una skill senza posto nella gerarchia.
+
+| # | Domanda | Cosa carichi |
+|---|---|---|
+| 1 | **Tocco il canone?** | sì → **L0 sempre**, e batte tutti (regola 8) |
+| 2 | **Chi legge?** | giocatore → `narrative-style` · il repo → `prosa-documenti`. ⚠️ **una sola delle due, mai entrambe** (ADR-0035) |
+| 3 | **Che cosa sto scrivendo?** | L2: `indagine` · `module-standard` · `npc-villain-boosting` |
+| 4 | **In che forma esce?** | L3: `editoria` · `edizione` · `mapmaking` · `art-direction` |
+| 5 | **Che gesto sto facendo?** | L4: `plans` · `automation` · `playtest` · `debugging` |
+
+Solo la **2** ha una risposta sola; dalla 3 in poi si somma. La consultazione
+(SRD, lore) si apre per un **fatto**, mai per decidere.
+
+🔎 **La gerarchia non è stata inventata**: esisteva già, sparsa in **cinque
+frasi** di questo documento («la coerenza batte lo stile», «sopra
+`narrative-style`, che resta il fondo», «regole opposte», «le righe si
+sommano», «read-aloud ceilings winning any conflict»). Erano tutte corrette e
+**nessuna verificabile**. Le diciotto skill entrano in diciotto caselle, una
+per una — ed è la prova che la struttura c'era.
+
+⚠️ **E «massimizzare l'uso» è il bersaglio sbagliato, dichiarato in
+[ADR-0058](plans/adr/ADR-0058-orchestrazione-a-strati-delle-skill.md).**
+Caricarle tutte e diciotto sarebbe il danno: `narrative-style` e
+`prosa-documenti` dettano regole **opposte** sullo stesso italiano, e insieme
+danno un testo che sbaglia in entrambi i modi. **Il bersaglio misurabile è
+*zero omissioni di ciò che è obbligatorio*** — e l'obbligo vero è su **L0-L2**.
+L4 e LR **non** si caricano per sicurezza.
+
+#### 🔎 Sesto obbligo: **la FASE 1 si esegue in sola lettura, prima di toccare**
+
+Il DM, il 2026-09-20: *«mettere una golden rule che esegue i passi della Fase 1
+di analisi in sola lettura […] e si usa preferibilmente il registro delle
+norme, l'algoritmo a strati e i 322 nomi di Bestiario prima di qualsiasi regex,
+in modo da eliminare errori di analisi ricorrenti»*.
+
+> **`G6` · 6. Prima di modificare qualunque cosa, esegui
+> `python3 scripts/fase1.py <bersagli>`.** I quattro passi vanno in
+> **quest'ordine**, e una regex nuova è l'ultima risorsa.
+
+| # | La domanda | Chi la risponde, e perché prima della regex |
+|---|---|---|
+| **1** | «questa cosa la misura già qualcuno?» | [`skills/REGISTRO-NORME-EDITORIALI.md`](skills/REGISTRO-NORME-EDITORIALI.md). Se sì **si riusa**: *una norma, un rilevatore* ([RICERCA-STANDARD-PROSA](plans/RICERCA-STANDARD-PROSA-WOTC-PAIZO-2026-09.md) §4) |
+| **2** | «quali skill devo avere aperte?» | [`skills/ORCHESTRAZIONE.md`](skills/ORCHESTRAZIONE.md), le cinque domande. Il bersaglio risponde **da sé** alla 2: un file sotto `plans/` parla al repo, uno d'arco parla al tavolo |
+| **3** | «cosa è archivio, cosa è superato, chi sono i nomi propri?» | i **322 nomi** da `Bestiario/` e `state.md`; `_SNAPSHOT-STORICO.md`; `ESCLUSI_NOME`; le matrici delle versioni |
+| **4** | «da che numero parto?» | `misura_craft`, sui bersagli veri e non su un campione |
+
+🔴 **Non è una precauzione: è la classifica dei difetti veri.** Quattordici
+misure sbagliate fra il 2026-09-17 e il 2026-09-20, e **nessuna** veniva da una
+regex scritta male. Venivano tutte dall'aver scritto una regex **prima di
+guardare se il dato c'era già** — la virgola contata come trigger (82 coppie
+invece di 5), «web» che cattura *web enhancement* (80% invece di 39%), «caso»
+che è italiano comune (55 indagini invece di 3), le maiuscole d'inizio frase
+contate come nomi propri (nove box invece di tre, **e il numero falso finito
+nel corpo di una PR**), un filtro di percorso che non scattava mai (1.548 file
+invece di 511).
+
+⚠️ **Questa regola nasce già violata.** L'ordine del DM è arrivato mentre
+scrivevo la FASE 1 di `PIANO-QUATTRO-ORDINI-2026-09-20`, e quella FASE 1 aveva
+appena commesso **due** degli errori dell'elenco. Il cancello `--check` esiste
+per il primo dei due: `fase1.py --check` **esce 1** se stai per modificare un
+archivio che il repo dichiara tale.
 
 ### Cosa carico, in base a cosa sto per fare
 

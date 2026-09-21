@@ -1864,6 +1864,37 @@
       "deterministic": true
     },
     {
+      "name": "fase1",
+      "description": "«Sto per toccare questi file: cosa il repo mi sta gia' dicendo, prima che io scriva un rilevatore che se lo inventa?»\n\nL'analisi in sola lettura che precede ogni modifica: mette in fila cio' che il repo gia' sa sul bersaglio — quali norme del registro lo coprono, quali skill apre l'algoritmo a strati, quali dati di stato lo dichiarano (snapshot storico, archivio, DEPRECATO, matrice delle versioni), i 322 nomi propri del Bestiario e le misure di oggi. Una regex nuova viene dopo, mai prima.",
+      "use_case": "«Sto per toccare questi file: cosa il repo mi sta gia' dicendo, prima che io scriva un rilevatore che se lo inventa?»",
+      "invocation": "python3 scripts/fase1.py <bersagli>",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "bersagli": {
+            "type": "string",
+            "description": "file o modelli glob relativi alla radice del repo"
+          },
+          "check": {
+            "type": "boolean",
+            "description": "esce 1 se un bersaglio e' un archivio dichiarato"
+          }
+        },
+        "required": [
+          "bersagli"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "analisi stampata",
+        "1": "--check: un bersaglio e' un archivio dichiarato"
+      },
+      "deterministic": true
+    },
+    {
       "name": "install_git_hooks",
       "description": "«Come faccio a non scoprire in CI quello che il repo poteva dirmi prima del push?»\n\nInstalla gli hook git locali: post-merge (resync mirror skill) e pre-push (gate ADR-0009).",
       "use_case": "«Come faccio a non scoprire in CI quello che il repo poteva dirmi prima del push?»",
@@ -1936,6 +1967,10 @@
             "type": "boolean",
             "description": "I box read-aloud contro le soglie di read-aloud-adulti.md (<=12 righe, un nome proprio, niente parentesi)."
           },
+          "spotlight": {
+            "type": "boolean",
+            "description": "Equilibrio dei quattro PG contro la norma «nessun PG oltre il 40%» di pc-protagonism.md."
+          },
           "copertura": {
             "type": "boolean",
             "description": "Quanti congegni su N, e quali hanno i banchi che qui mancano."
@@ -1943,6 +1978,10 @@
           "mancanti": {
             "type": "boolean",
             "description": "Elenca, per ogni bersaglio, i congegni a zero."
+          },
+          "p1": {
+            "type": "boolean",
+            "description": "i read-aloud che presuppongono un'azione o un senso del giocatore (norma Dungeon/Paizo)"
           }
         },
         "required": [],
@@ -1983,6 +2022,48 @@
       "exit_codes": {
         "0": "ok",
         "1": "errore"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "punteggio_mqm",
+      "description": "«Questo documento e' sopra o sotto la soglia di qualita' dichiarata per la sua classe, e per quali errori pesati?»\n\nIl punteggio di qualita' editoriale, MQM adattato (ISO 5060): severita' pesate minore 1 / maggiore 5 / critico 25 col critico pass-fail assoluto, soglia per classe di documento, e specifiche in un YAML fuori dal codice. Non scrive rilevatori: riusa misura_craft e validate_prosa, e dichiara quante norme del registro restano fuori. --distribuzione stampa P10/P25/P50/P75 per classe, che e' da dove nascono le soglie.",
+      "use_case": "«Questo documento e' sopra o sotto la soglia di qualita' dichiarata per la sua classe, e per quali errori pesati?»",
+      "invocation": "python3 scripts/punteggio_mqm.py [--soglia|--distribuzione|--norme]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "modelli": {
+            "type": "string",
+            "description": "modelli glob; se assenti, tutto il contenuto di gioco vivo"
+          },
+          "soglia": {
+            "type": "boolean",
+            "description": "cancello: esce 1 se un documento e' sotto la soglia della sua classe"
+          },
+          "distribuzione": {
+            "type": "boolean",
+            "description": "P10/P25/P50/P75 per classe (lotto F1.4)"
+          },
+          "norme": {
+            "type": "boolean",
+            "description": "cosa entra nel punteggio, con severita' e rilevatore"
+          },
+          "json": {
+            "type": "boolean",
+            "description": "il rapporto in JSON"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "rapporto stampato, o --soglia superata",
+        "1": "--soglia: un documento sotto soglia o con un critico",
+        "2": "manca pyyaml"
       },
       "deterministic": true
     },
@@ -2106,6 +2187,10 @@
           "json": {
             "type": "boolean",
             "description": "Report in JSON (opt-in)."
+          },
+          "tetto-el": {
+            "type": "boolean",
+            "description": "il tetto EL <= APL+4 su tutto il contenuto di gioco (il Boost log lo deroga)"
           }
         },
         "required": [],

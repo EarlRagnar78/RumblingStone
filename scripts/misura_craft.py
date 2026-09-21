@@ -96,8 +96,14 @@ PG = ("Thorik", "Tordek", "Hella", "Artemis")
 #: Il terzo campo non è decorazione: un congegno che nessun documento del repo
 #: dichiara non è un criterio, è un gusto personale — e non entra qui.
 CONGEGNI = [
+    # 🔴 Contava SOLO i box che cominciano con prosa in corsivo nuda, e
+    # saltava quelli scritti nella forma che `editorial-standards` §2
+    # PRESCRIVE — `> **Read-aloud (pilastro lead).** *prosa*`. Cioe' i
+    # migliori. DEF-4 segnava 5 read-aloud e ne ha **15**: cinque nudi e
+    # **dieci etichettati**. Trovato il 2026-09-18 usando lo strumento per
+    # riscrivere DEF-4, e ha reso false tre cifre gia' pubblicate.
     ("read-aloud narrativo",
-     re.compile(r"^>\s*[*_][^*_\s]", re.M),
+     re.compile(r"^>\s*(?:\*\*Read-aloud[^*\n]*\*\*\s*)?[*_][^*_\s]", re.M | re.I),
      "module-standard §6 — prosa NUOVA per ogni ambiente"),
 
     ("contingenze «se i PG…»",
@@ -133,7 +139,7 @@ CONGEGNI = [
 
     ("prove grezze di caratteristica",
      re.compile(r"\b(?:FOR|DES|COS|INT|SAG|CAR|Forza|Destrezza|Costituzione|"
-                r"Intelligenza|Saggezza|Carisma)\s*(?:grezz|C[DA]\s*\d)", re.I),
+                r"Intelligenza|Saggezza|Carisma)\b[*_\s]*(?:grezz|C[DA]\s*\d)", re.I),
      "skill indagine — le SEI PORTE, per i PG senza gradi"),
 
     ("nodo d'indizio",
@@ -190,9 +196,25 @@ CONGEGNI = [
                 r"apertura di round|chiusura di round|micro-box", re.I),
      "ADR-0014 §1 — nessuna sequenza a battute senza regia"),
 
+    # ── Due congegni della skill dello stile che il metro non conosceva, e che
+    # erano a ZERO in tutti e nove gli archi. Trovati il 2026-09-18 perche' il
+    # DM ha chiesto «soluzioni creative» e la risposta era gia' scritta.
+    ("[HDYWTDT] il finisher al giocatore",
+     re.compile(r"\[HDYWTDT", re.I),
+     "style-pillars §Mercer — «write [HDYWTDT] at boss-death points»"),
+
+    ("assorbi e rilancia (yes-and with teeth)",
+     re.compile(r"yes-and|assorbi,? poi rilancia|assorbi e rilancia|"
+                r"invenzion\w+ del giocatore|un'idea che non è scritta", re.I),
+     "style-pillars §Mercer — l'invenzione entra nel canone E genera una complicazione"),
+
     ("grigio politico",
      re.compile(r"fazione recuperabil|crede di aver ragione|ha (?:le sue|una sua) ragion|"
-                r"\bLeva\b\s*[=:]|ricattabil|vizio\s*/\s*leva|non è (?:un )?(?:cattivo|mostro)\b",
+                r"\bLeva\b\s*[=:]|ricattabil|vizio\s*/\s*leva|non è (?:un )?(?:cattivo|mostro)\b|"
+                # la self-check di narrative-style chiede testualmente un «Want
+                # che non riguarda i PG»: se il metro non lo vede, la domanda 5
+                # non ha uno strumento.
+                r"\bWant\b[^.\n]{0,40}non riguarda",
                 re.I),
      "pilastro 5 (GoT) — ogni fazione crede di aver ragione"),
 ]
@@ -215,7 +237,10 @@ def box_read_aloud(testo: str) -> "list[list[str]]":
     # ⚠️ Lo stesso `[*_][^*_\s]` del rilevatore: `> **Nota**` NON apre un box.
     # Scritto largo, questa funzione contava le note editoriali come read-aloud
     # e dava 51 box «con parentesi» su 67 in DEF-1 — erano note, non letture.
-    apre = re.compile(r"^>\s*[*_][^*_\s]")
+    # ⚠️ Stessa correzione del rilevatore gemello: un box **etichettato**
+    # `> **Read-aloud (X).** *prosa*` — la forma PRESCRITTA — apre un box
+    # come uno nudo. Senza, `--box` misurava DEF-4 su 2 box invece che 15.
+    apre = re.compile(r"^>\s*(?:\*\*Read-aloud[^*\n]*\*\*\s*)?[*_][^*_\s]", re.I)
     box, corrente = [], []
     for riga in testo.splitlines():
         if apre.match(riga) or (corrente and riga.startswith(">")):
@@ -230,7 +255,86 @@ def box_read_aloud(testo: str) -> "list[list[str]]":
 
 
 #: Un nome proprio: maiuscola interna alla frase, non a inizio riga o dopo punto.
+#: L'etichetta di regia: rivolta al DM, non si legge ad alta voce.
+_ETICHETTA = re.compile(r"\*\*Read-aloud[^*\n]*\*\*", re.I)
+
 _NOME = re.compile(r"(?<![.!?»\n]\s)(?<!^)\b([A-ZÀ-Ù][a-zà-ù']{2,})")
+
+#: 🔴 Nono difetto della stessa famiglia, trovato il 2026-09-19 misurando la
+#: riscrittura di DEF-4. `_NOME` prova a escludere le maiuscole d'inizio frase
+#: con due lookbehind, ma nel testo di un box **non ci arriva mai**: il
+#: prefisso `> `, l'asterisco del corsivo e l'etichetta si frappongono fra il
+#: punto e la maiuscola. Risultato: «Conoscete», «Quando», «Prima», «Dove»,
+#: «Che», «Non», «Tra», «Notte» contati come nomi propri — e **nove box su
+#: quattordici** di DEF-4 dichiarati fuori norma quando i veri erano **uno**.
+#: Lo stesso numero l'avevo pubblicato per DEF-3 (13 su 16) e nel corpo della
+#: PR #151. La cura non e' un elenco di eccezioni — sarebbe il metro tarato su
+#: un campione, di nuovo — ma **normalizzare prima di cercare**: via i
+#: marcatori, poi si guarda solo dentro le frasi, mai la loro prima parola.
+_APERTURE = re.compile(r"^>\s*|[*_`]", re.M)
+_FINE_FRASE = re.compile(r"(?<=[.!?…»])\s+")
+
+
+def _registro_dei_nomi() -> "set[str]":
+    """I nomi propri della campagna, **presi dai dati del repo**.
+
+    🔴 **Perche' non una regex, e perche' non una lista scritta a mano.** Per
+    tre giri ho provato a distinguere un nome proprio da una maiuscola di
+    frase con la posizione: escludere la prima parola, poi recuperarla se il
+    documento la usa anche a meta' frase. Ogni patch spostava l'errore —
+    «Quei», «Nessun», «Silenzio» passavano perche' in italiano una maiuscola
+    segue anche un trattino, i due punti e l'apertura di un dialogo.
+
+    Una regex **non puo'** fare questa distinzione, e una lista che scrivo io
+    sarebbe il metro tarato sul campione per la decima volta. Ma il repo un
+    registro ce l'ha gia': i nomi dei file del **Bestiario** e la prima colonna
+    delle tabelle di **`state.md`** — attori, artefatti, luoghi. Si legge da li'.
+
+    ⚠️ **Tre limiti, dichiarati.**
+
+    1. Un nome che non sta ne' nel Bestiario ne' in `state.md` non si vede. E'
+       il prezzo giusto: quel nome, al tavolo, non e' ancora canone.
+    2. Un nome di **piu' parole** si conta a pezzi — «Mano Rossa» e «Cuore
+       della Leggenda» valgono due. Il conteggio e' quindi **prudente al
+       rialzo**: segnala piu' di quanto serva, mai meno.
+    3. 🔴 **Il piu' importante.** La norma di `read-aloud-adulti.md` §1 dice
+       «un solo nome proprio **NUOVO** per box», e *nuovo* dipende da cosa il
+       tavolo ha gia' incontrato, cioe' dall'ordine di lettura. Questo metro
+       conta i nomi **distinti**, non i nuovi: e' un **indizio**, non il
+       verdetto. Un box con tre nomi tutti noti da sei sessioni non viola
+       niente, e il giudizio resta di chi scrive.
+    """
+    nomi: "set[str]" = set()
+    bestiario = ROOT / "Bestiario"
+    if bestiario.exists():
+        for f in bestiario.rglob("*"):
+            for parte in re.split(r"[/_\-. ]", f.stem):
+                if _PAROLA_MAIUSCOLA.fullmatch(parte):
+                    nomi.add(parte)
+    stato = ROOT / "campaign" / "state.md"
+    if stato.exists():
+        for riga in stato.read_text(encoding="utf-8").splitlines():
+            if not riga.startswith("|"):
+                continue
+            prima = riga.strip("|").split("|")[0].strip().strip("*[]`")
+            for parte in prima.split():
+                if _PAROLA_MAIUSCOLA.fullmatch(parte):
+                    nomi.add(parte)
+    return nomi
+
+
+_PAROLA_MAIUSCOLA = re.compile(r"[A-ZÀ-Ù][a-zà-ù']{2,}")
+_REGISTRO: "set[str] | None" = None
+
+
+def nomi_propri(corpo: str) -> "set[str]":
+    """I nomi propri di un box: le parole che stanno nel registro del repo."""
+    global _REGISTRO
+    if _REGISTRO is None:
+        _REGISTRO = _registro_dei_nomi()
+    piano = _APERTURE.sub("", _ETICHETTA.sub("", corpo))
+    return {w.strip("«»\"'()[],;:.!?—-") for w in piano.split()
+            if w.strip("«»\"'()[],;:.!?—-") in _REGISTRO}
 
 
 def difetti_dei_box(testo: str) -> "dict[str, int]":
@@ -243,13 +347,98 @@ def difetti_dei_box(testo: str) -> "dict[str, int]":
     for b in box_read_aloud(testo):
         if len(b) > TETTO_RIGHE:
             lunghi += 1
-        testo_box = " ".join(b)
-        if "(" in testo_box:
+        # 🔴 Si misura il CORPO, non l'etichetta. `**Read-aloud (LotR lead).**`
+        # e' rivolta al DM e non si legge ad alta voce: contarne le parentesi
+        # e i nomi dei pilastri faceva risultare *peggiore* ogni box scritto
+        # nella forma prescritta. Terza volta che lo stesso difetto — un metro
+        # tarato su una forma sola — compare in questo file.
+        corpo = _ETICHETTA.sub("", " ".join(b))
+        if "(" in corpo:
             parentesi += 1
-        if len(set(_NOME.findall(testo_box))) > 1:
+        if len(nomi_propri(corpo)) > 1:
             nomi += 1
     return {"box": len(box_read_aloud(testo)), "oltre 12 righe": lunghi,
             "con parentesi": parentesi, ">1 nome proprio": nomi}
+
+
+# ─────────────────────────────────────────────────────────────────────────
+# P1 — il read-aloud che presuppone un'azione o un senso del giocatore
+#
+# La norma viene dalle linee guida di *Dungeon* (Paizo) e dice due cose:
+# il box **non fa riferimento a chi guarda**, e si evita **qualunque frase che
+# presupponga un'azione del giocatore**. La ragione non e' di gusto: il box che
+# dice «entri e senti paura» decide al posto del giocatore due cose che sono
+# sue — che sia entrato, e cosa prova.
+#
+# 🔴 **Il numero pubblicato il 2026-09-19 era falso, e in modo istruttivo.**
+# Diceva «229 box su 1.334». Quel conteggio usava un criterio di «box» scritto
+# per la ricerca invece di riusare `box_read_aloud`, che sta in questo file da
+# settembre. Rimisurato con il rilevatore vero: **104 box su 540**, cioe' il
+# denominatore era **piu' del doppio**. Quattordicesimo caso della famiglia
+# «un criterio largo si inventa copertura», e la cura e' sempre la stessa:
+# riusare il dato invece di riscriverlo. Per questo P1 vive **qui**, accanto a
+# `box_read_aloud`, e non in uno script suo.
+#
+# ⚠️ **Due esclusioni, e una sola e' un'esenzione.**
+#
+#   * I **file che non sono prosa da tavolo** (prompt d'immagine, archivi
+#     dichiarati con `_SNAPSHOT-STORICO.md`, `DEPRECATO`) non si misurano: non
+#     e' clemenza, e' che la norma non parla di loro.
+#   * Il **dialogo** e la **visione interiore** — un PNG o un artefatto che
+#     parla al suo portatore — usano la seconda persona a ragione. La norma
+#     riguarda la **narrazione**, non le battute, e questo rilevatore **non sa
+#     distinguerle**: il giudizio resta di chi corregge, e il numero e' un
+#     indizio.
+#
+# 🔎 **Un verbo e' uscito dall'elenco, misurando**: `avanz*`. L'unico rilievo
+# che produceva era *«Nonna Grasa conta le candele avanzate»* — participio, non
+# seconda persona.
+_P1_VEDERE = (r"ved(?:i|ete|rai|rete)|noti|notate|scorgi|scorgete|osservi|osservate|"
+              r"senti|sentite|odi|udite|percepisci|percepite|ti accorgi|vi accorgete")
+_P1_AGIRE = (r"entr(?:i|ate)|arriv(?:i|ate)|ti avvicini|vi avvicinate|apri|aprite|"
+             r"vari?chi|varcate|scendi|scendete|sali|salite|attraversi|attraversate|"
+             r"ti volti|vi voltate|guardi|guardate|tocchi|toccate|prendi|prendete|"
+             r"cammini|camminate")
+P1 = re.compile(r"\b(" + _P1_VEDERE + r"|" + _P1_AGIRE + r")\b", re.I)
+
+#: Le cartelle che non portano prosa da leggere al tavolo. `Immagini/` contiene
+#: i master di prompt (ADR-0015): sono citazioni in corsivo, non read-aloud.
+ESCLUSI_P1 = ("Immagini",)
+
+
+def cartelle_snapshot() -> "set[Path]":
+    """Le cartelle che si dichiarano archivio con un file, non con un nome."""
+    return {p.parent for p in ROOT.rglob("_SNAPSHOT-STORICO.md")}
+
+
+def file_di_gioco_p1() -> "list[Path]":
+    """Il contenuto di gioco vivo, con le esclusioni che il repo gia' dichiara."""
+    snapshot = cartelle_snapshot()
+    fuori = []
+    for d in sorted(ROOT.iterdir()):
+        if not d.is_dir() or d.name.startswith(".") or d.name in (
+                "plans", "docs", "skills", "scripts", "converters", "campaign"):
+            continue
+        for f in d.rglob("*.md"):
+            if any(x in f.parts for x in ESCLUSI + ESCLUSI_P1):
+                continue
+            if any(x in f.name for x in ESCLUSI_NOME) or f.name.endswith(".hb.md"):
+                continue
+            if any(s in f.parents for s in snapshot):
+                continue
+            fuori.append(f)
+    return fuori
+
+
+def box_con_p1(testo: str) -> "list[tuple[str, str]]":
+    """I box che violano P1: (verbo trovato, prime parole del box)."""
+    fuori = []
+    for b in box_read_aloud(testo):
+        corpo = _ETICHETTA.sub("", " ".join(b))
+        m = P1.search(corpo)
+        if m:
+            fuori.append((m.group(1), corpo.strip()[:100]))
+    return fuori
 
 
 #: Fuori misura, con la ragione scritta: una versione superata o una errata
@@ -318,14 +507,41 @@ def main() -> int:
     ap.add_argument("--densita", action="store_true",
                     help="normalizza ogni conteggio su 1.000 righe (confronto fra documenti di taglia diversa)")
     ap.add_argument("--spotlight", action="store_true",
-                    help="equilibrio dei quattro PG contro la norma «no PC >40%» di pc-protagonism.md")
+                    help="equilibrio dei quattro PG contro la norma «no PC oltre il 40%%» di pc-protagonism.md")
     ap.add_argument("--box", action="store_true",
                     help="i box read-aloud contro le soglie di read-aloud-adulti.md")
     ap.add_argument("--copertura", action="store_true",
                     help="quanti congegni su N, e quali hanno i banchi che qui mancano")
     ap.add_argument("--mancanti", action="store_true",
                     help="elenca, per ogni bersaglio, i congegni a ZERO")
+    ap.add_argument("--p1", action="store_true",
+                    help="i read-aloud che presuppongono un'azione o un senso "
+                         "del giocatore (norma Dungeon/Paizo), file per file")
     args = ap.parse_args()
+
+    if args.p1:
+        files = file_di_gioco_p1()
+        per_file, tot_box, tot_p1 = {}, 0, 0
+        for f in files:
+            testo = f.read_text(encoding="utf-8", errors="replace")
+            tot_box += len(box_read_aloud(testo))
+            colpiti = box_con_p1(testo)
+            if colpiti:
+                per_file[f.relative_to(ROOT)] = colpiti
+                tot_p1 += len(colpiti)
+        pct = (100 * tot_p1 / tot_box) if tot_box else 0
+        print(f"\nP1 — read-aloud che presuppongono un'azione del giocatore")
+        print(f"    norma: linee guida *Dungeon* (Paizo) · rilevatore: box_read_aloud\n")
+        print(f"    {tot_p1} box su {tot_box} = {pct:.0f}%   in {len(per_file)} file "
+              f"su {len(files)} misurati\n")
+        for rel, colpiti in sorted(per_file.items(), key=lambda kv: -len(kv[1])):
+            print(f"  {len(colpiti):3}  {rel}")
+            for verbo, inizio in colpiti[:3]:
+                print(f"       [{verbo}] {inizio}")
+        print("\n⚠️  Il dialogo e la visione interiore usano la seconda persona a")
+        print("    ragione: la norma riguarda la narrazione. Questo conteggio e' un")
+        print("    indizio, e il giudizio resta di chi corregge.\n")
+        return 0
 
     dati, righe, nfile = {}, {}, {}
     for nome, modelli in BERSAGLI.items():

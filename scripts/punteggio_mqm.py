@@ -88,7 +88,41 @@ def _caratteristiche(_testo: str, percorso: Path) -> "dict[str, int]":
     return {"caratteristica_minuscola": len(vp.controlla_caratteristiche(percorso))}
 
 
-RILEVATORI = (_difetti_box, _caratteristiche)
+def _prosa(_testo: str, percorso: Path) -> "dict[str, int]":
+    """Le sei norme che `validate_prosa` misurava **senza che nessuno le pesasse**.
+
+    🔎 **Il difetto, e perche' era invisibile.** Non mancava il rilevatore:
+    `validate_prosa` conta i calchi dall'inglese, la terminologia fuori
+    glossario, le maiuscole di enfasi, l'antitesi ripetuta e il trattino come
+    respiro **da settembre**. Mancava il **nome**: `controlla()` restituiva
+    stringhe gia' formattate, e contarle per norma avrebbe voluto dire
+    riconoscere la frase italiana con cui erano scritte. Il ponte non si poteva
+    costruire, quindi non c'era.
+
+    Il conto: da **4 norme pesate a 10**, e da **una sola maggiore a due** —
+    la terminologia non canonica e' `maggiore`, ed e' la prima norma pesata che
+    non sia una prassi da un punto.
+    """
+    conta: "dict[str, int]" = {k: 0 for k in vp.NORME if k != "caratteristica_minuscola"}
+    for chiave, _ in vp.rilievi(percorso):
+        if chiave in conta:
+            conta[chiave] += 1
+    return conta
+
+
+def _p1(testo: str, _percorso: Path) -> "dict[str, int]":
+    """Il read-aloud che presuppone un'azione o un senso del giocatore.
+
+    ⚠️ **Il rilevatore dichiara di non distinguere il dialogo dalla
+    narrazione**, quindi i suoi 22 rilievi sul repo sono in maggioranza
+    legittimi (lotto 2C). Entra come **minore** apposta: e' un indizio pesato
+    poco, non un'accusa. Pesarlo di piu' vorrebbe dire far pagare a un
+    documento le battute dei suoi PNG.
+    """
+    return {"read_aloud_presuppone": len(mc.box_con_p1(testo))}
+
+
+RILEVATORI = (_difetti_box, _caratteristiche, _prosa, _p1)
 
 
 def carica_specifiche() -> dict:

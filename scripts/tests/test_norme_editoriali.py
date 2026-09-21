@@ -237,9 +237,19 @@ class TestIlContoSiDeriva(unittest.TestCase):
                         sum(testo.count(e) for e in ("🟢", "🟡", "🔴", "⚪")))
 
     def test_un_conto_sbagliato_nel_paragrafo_boccia(self):
-        testo = REGISTRO.read_text(encoding="utf-8").replace(
-            "| 🟢 misurate | 19 |", "| 🟢 misurate | 42 |")
-        errori = self._con_registro(testo)
+        """⚠️ Il numero vero si **deriva**, non si scrive nel test.
+
+        La prima stesura sabotava la stringa letterale «| 🟢 misurate | 19 |»,
+        e il test e' diventato rosso il giorno in cui due norme sono entrate
+        nel registro: provava la sua stessa copia del numero. Lo stesso
+        difetto che il controllo sotto prova esiste per prendere.
+        """
+        testo = REGISTRO.read_text(encoding="utf-8")
+        vero = G.conto_vero(testo)["🟢"]
+        sabotato = testo.replace(f"| 🟢 misurate | {vero} |",
+                                 f"| 🟢 misurate | {vero + 23} |")
+        self.assertNotEqual(sabotato, testo, "l'ancora del §4 e' cambiata forma")
+        errori = self._con_registro(sabotato)
         self.assertTrue(any("si deriva, non si ricorda" in e for e in errori), errori)
 
 

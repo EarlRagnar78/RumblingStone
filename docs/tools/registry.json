@@ -4753,6 +4753,13 @@
           "choices": null,
           "repeatable": false,
           "desc": "Elenca, per ogni bersaglio, i congegni a zero."
+        },
+        {
+          "name": "--p1",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "desc": "i read-aloud che presuppongono un'azione o un senso del giocatore (norma Dungeon/Paizo)"
         }
       ],
       "inputs": [
@@ -4784,7 +4791,8 @@
       "ci_smoke": "python scripts/misura_craft.py --help",
       "tests": [
         "scripts/tests/test_help_di_ogni_tool.py",
-        "scripts/tests/test_misura_craft.py"
+        "scripts/tests/test_misura_craft.py",
+        "scripts/tests/test_p1_read_aloud.py"
       ],
       "docs": [
         "plans/PIANO-PORTARE-IL-MESTIERE-DEI-BANCHI.md"
@@ -5253,6 +5261,13 @@
           "choices": null,
           "repeatable": false,
           "desc": "Report in JSON (opt-in)."
+        },
+        {
+          "name": "--tetto-el",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "desc": "il tetto EL <= APL+4 su tutto il contenuto di gioco (il Boost log lo deroga)"
         }
       ],
       "inputs": [

@@ -1978,6 +1978,10 @@
           "mancanti": {
             "type": "boolean",
             "description": "Elenca, per ogni bersaglio, i congegni a zero."
+          },
+          "p1": {
+            "type": "boolean",
+            "description": "i read-aloud che presuppongono un'azione o un senso del giocatore (norma Dungeon/Paizo)"
           }
         },
         "required": [],
@@ -2183,6 +2187,10 @@
           "json": {
             "type": "boolean",
             "description": "Report in JSON (opt-in)."
+          },
+          "tetto-el": {
+            "type": "boolean",
+            "description": "il tetto EL <= APL+4 su tutto il contenuto di gioco (il Boost log lo deroga)"
           }
         },
         "required": [],

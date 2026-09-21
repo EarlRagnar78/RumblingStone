@@ -80,6 +80,7 @@
 | `rumblingstone-prosa-documenti` | norme sui **documenti** del repo (non sul contenuto di gioco) | 🟢 `validate_prosa.py --documenti` |
 | `rumblingstone-editoria` | impaginazione, riquadri, statblocchi in stampa | 🟢 `validate_booklets.py --stampa` |
 | `ADR-0060` (norma WotC/Paizo) | **caratteristiche e abilità maiuscole** nelle quattro forme meccaniche: `Forza 25` · `Nuotare +9` · `prova di X` con una CD · `bonus di X` | 🟢 `validate_prosa.py --caratteristiche` — 258 occorrenze sotto controllo, soglia **zero**, e **fuori dalle quattro forme non si misura** (una frase discorsiva senza CD non si vede: costerebbe più falsi positivi di quanti errori trovi) |
+| `read-aloud-adulti.md` + linee guida *Dungeon* | il read-aloud **non presuppone un'azione né un senso del giocatore** | 🟡 `misura_craft --p1` — **104 box su 477 (22%)** fuori norma, in 29 file. ⚠️ Parziale per costruzione: il rilevatore non distingue la **narrazione** dal **dialogo**, dove la seconda persona è corretta. Il numero è un indizio, la correzione è il lotto 2C |
 | `ADR-0059` (MQM) | il **punteggio di qualità pesato**: severità 1 / 5 / **25**, soglia per classe, critico pass-fail | 🟢 `punteggio_mqm.py --soglia` — 515 documenti, soglie da `specifiche-qualita.yaml` misurate con `--distribuzione`. ⚠️ Copre **4 norme su 40**: entra solo ciò che ha già un rilevatore |
 | `npc-villain-boosting` | **EL ≤ APL+4**, e oltre il tetto serve un `Boost log:` | 🔴 non misurato — il controllo **esiste** (`validate_modules.py --tetto-el`, APL letto da `state.md`) ma **non ha superficie**: la forma `**EL**: [N]` che `AGENTS.md` prescrive ha **zero occorrenze**, e i 150 «EL N» nudi mescolano dichiarazioni e menzioni. Prerequisito: marcare gli incontri |
 | `ADR-0060` (norma WotC/Paizo) | le **sigle** di caratteristica — `For 25`, `Des 14`, 688 occorrenze | ⚪ non applicabile — sono maiuscole per costruzione, non c'è niente da controllare |
@@ -91,7 +92,7 @@
 | | Norme registrate |
 |---|---:|
 | 🟢 misurate | 16 |
-| 🟡 misurate in parte, con il limite scritto | 8 |
+| 🟡 misurate in parte, con il limite scritto | 9 |
 | 🔴 **non misurate, con la ragione scritta** | 12 |
 | ⚪ non applicabili | 3 |
 

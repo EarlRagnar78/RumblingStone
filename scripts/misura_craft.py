@@ -361,6 +361,86 @@ def difetti_dei_box(testo: str) -> "dict[str, int]":
             "con parentesi": parentesi, ">1 nome proprio": nomi}
 
 
+# ─────────────────────────────────────────────────────────────────────────
+# P1 — il read-aloud che presuppone un'azione o un senso del giocatore
+#
+# La norma viene dalle linee guida di *Dungeon* (Paizo) e dice due cose:
+# il box **non fa riferimento a chi guarda**, e si evita **qualunque frase che
+# presupponga un'azione del giocatore**. La ragione non e' di gusto: il box che
+# dice «entri e senti paura» decide al posto del giocatore due cose che sono
+# sue — che sia entrato, e cosa prova.
+#
+# 🔴 **Il numero pubblicato il 2026-09-19 era falso, e in modo istruttivo.**
+# Diceva «229 box su 1.334». Quel conteggio usava un criterio di «box» scritto
+# per la ricerca invece di riusare `box_read_aloud`, che sta in questo file da
+# settembre. Rimisurato con il rilevatore vero: **104 box su 540**, cioe' il
+# denominatore era **piu' del doppio**. Quattordicesimo caso della famiglia
+# «un criterio largo si inventa copertura», e la cura e' sempre la stessa:
+# riusare il dato invece di riscriverlo. Per questo P1 vive **qui**, accanto a
+# `box_read_aloud`, e non in uno script suo.
+#
+# ⚠️ **Due esclusioni, e una sola e' un'esenzione.**
+#
+#   * I **file che non sono prosa da tavolo** (prompt d'immagine, archivi
+#     dichiarati con `_SNAPSHOT-STORICO.md`, `DEPRECATO`) non si misurano: non
+#     e' clemenza, e' che la norma non parla di loro.
+#   * Il **dialogo** e la **visione interiore** — un PNG o un artefatto che
+#     parla al suo portatore — usano la seconda persona a ragione. La norma
+#     riguarda la **narrazione**, non le battute, e questo rilevatore **non sa
+#     distinguerle**: il giudizio resta di chi corregge, e il numero e' un
+#     indizio.
+#
+# 🔎 **Un verbo e' uscito dall'elenco, misurando**: `avanz*`. L'unico rilievo
+# che produceva era *«Nonna Grasa conta le candele avanzate»* — participio, non
+# seconda persona.
+_P1_VEDERE = (r"ved(?:i|ete|rai|rete)|noti|notate|scorgi|scorgete|osservi|osservate|"
+              r"senti|sentite|odi|udite|percepisci|percepite|ti accorgi|vi accorgete")
+_P1_AGIRE = (r"entr(?:i|ate)|arriv(?:i|ate)|ti avvicini|vi avvicinate|apri|aprite|"
+             r"vari?chi|varcate|scendi|scendete|sali|salite|attraversi|attraversate|"
+             r"ti volti|vi voltate|guardi|guardate|tocchi|toccate|prendi|prendete|"
+             r"cammini|camminate")
+P1 = re.compile(r"\b(" + _P1_VEDERE + r"|" + _P1_AGIRE + r")\b", re.I)
+
+#: Le cartelle che non portano prosa da leggere al tavolo. `Immagini/` contiene
+#: i master di prompt (ADR-0015): sono citazioni in corsivo, non read-aloud.
+ESCLUSI_P1 = ("Immagini",)
+
+
+def cartelle_snapshot() -> "set[Path]":
+    """Le cartelle che si dichiarano archivio con un file, non con un nome."""
+    return {p.parent for p in ROOT.rglob("_SNAPSHOT-STORICO.md")}
+
+
+def file_di_gioco_p1() -> "list[Path]":
+    """Il contenuto di gioco vivo, con le esclusioni che il repo gia' dichiara."""
+    snapshot = cartelle_snapshot()
+    fuori = []
+    for d in sorted(ROOT.iterdir()):
+        if not d.is_dir() or d.name.startswith(".") or d.name in (
+                "plans", "docs", "skills", "scripts", "converters", "campaign"):
+            continue
+        for f in d.rglob("*.md"):
+            if any(x in f.parts for x in ESCLUSI + ESCLUSI_P1):
+                continue
+            if any(x in f.name for x in ESCLUSI_NOME) or f.name.endswith(".hb.md"):
+                continue
+            if any(s in f.parents for s in snapshot):
+                continue
+            fuori.append(f)
+    return fuori
+
+
+def box_con_p1(testo: str) -> "list[tuple[str, str]]":
+    """I box che violano P1: (verbo trovato, prime parole del box)."""
+    fuori = []
+    for b in box_read_aloud(testo):
+        corpo = _ETICHETTA.sub("", " ".join(b))
+        m = P1.search(corpo)
+        if m:
+            fuori.append((m.group(1), corpo.strip()[:100]))
+    return fuori
+
+
 #: Fuori misura, con la ragione scritta: una versione superata o una errata
 #: corrige non dice niente sul mestiere del documento vivo.
 ESCLUSI = ("_ARCHIVIO", "homebrew", "build")
@@ -434,7 +514,34 @@ def main() -> int:
                     help="quanti congegni su N, e quali hanno i banchi che qui mancano")
     ap.add_argument("--mancanti", action="store_true",
                     help="elenca, per ogni bersaglio, i congegni a ZERO")
+    ap.add_argument("--p1", action="store_true",
+                    help="i read-aloud che presuppongono un'azione o un senso "
+                         "del giocatore (norma Dungeon/Paizo), file per file")
     args = ap.parse_args()
+
+    if args.p1:
+        files = file_di_gioco_p1()
+        per_file, tot_box, tot_p1 = {}, 0, 0
+        for f in files:
+            testo = f.read_text(encoding="utf-8", errors="replace")
+            tot_box += len(box_read_aloud(testo))
+            colpiti = box_con_p1(testo)
+            if colpiti:
+                per_file[f.relative_to(ROOT)] = colpiti
+                tot_p1 += len(colpiti)
+        pct = (100 * tot_p1 / tot_box) if tot_box else 0
+        print(f"\nP1 — read-aloud che presuppongono un'azione del giocatore")
+        print(f"    norma: linee guida *Dungeon* (Paizo) · rilevatore: box_read_aloud\n")
+        print(f"    {tot_p1} box su {tot_box} = {pct:.0f}%   in {len(per_file)} file "
+              f"su {len(files)} misurati\n")
+        for rel, colpiti in sorted(per_file.items(), key=lambda kv: -len(kv[1])):
+            print(f"  {len(colpiti):3}  {rel}")
+            for verbo, inizio in colpiti[:3]:
+                print(f"       [{verbo}] {inizio}")
+        print("\n⚠️  Il dialogo e la visione interiore usano la seconda persona a")
+        print("    ragione: la norma riguarda la narrazione. Questo conteggio e' un")
+        print("    indizio, e il giudizio resta di chi corregge.\n")
+        return 0
 
     dati, righe, nfile = {}, {}, {}
     for nome, modelli in BERSAGLI.items():

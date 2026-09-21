@@ -61,6 +61,27 @@ ORCHESTRAZIONE = ROOT / "skills" / "ORCHESTRAZIONE.md"
 #: Le cartelle i cui documenti parlano al **repo**, non al tavolo (ADR-0035).
 CARTELLE_DOCUMENTO = ("plans", "docs", "skills", "scripts", ".github")
 
+#: 🔎 **Le tre fonti della misura, e perche' si stampano con lo stato.**
+#: Il DM, il 2026-09-20: *«il file con le misure dovrebbe essere
+#: PIANO-MISURA-EDITORIALE-STANDARD, giusto? Vedi se la golden rule lo
+#: specifica, o deve essere aggiunto per fare in modo che sia un meccanismo
+#: deterministico usato dagli agenti»*. La risposta e' «si', e non ancora»: quel
+#: piano e' dove vivra' **quanto vale un difetto** (MQM, severita', soglie, κ),
+#: ed e' pianificato allo 0%. Nominarlo senza dire che i suoi due artefatti non
+#: esistono renderebbe il meccanismo **meno** deterministico, non piu'. Ogni
+#: riga porta quindi il file che ne prova l'esistenza (ADR-0061 §Limiti 3).
+FONTI_DELLA_MISURA = (
+    ("quali norme esistono, e chi le guarda",
+     "skills/REGISTRO-NORME-EDITORIALI.md",
+     "skills/REGISTRO-NORME-EDITORIALI.md — gate validate_norme_editoriali.py"),
+    ("come si misura una cosa",
+     "scripts/misura_craft.py",
+     "misura_craft.py · validate_prosa.py · validate_booklets.py · validate_modules.py"),
+    ("quanto vale un difetto, e qual e' la soglia",
+     "scripts/punteggio_mqm.py",
+     "plans/PIANO-MISURA-EDITORIALE-STANDARD.md — MQM adattato, severita' 1/5/25, κ ≥ 0,6"),
+)
+
 #: Le marche di stato che il repo si e' gia' dato, e chi le dichiara.
 MARCHE = {
     "_SNAPSHOT-STORICO.md": "snapshot storico dichiarato nella cartella",
@@ -204,6 +225,11 @@ def main() -> int:
         print(f"\n    ⚠️  {len(senza)} norme senza misuratore, con la ragione scritta:")
         for f, norma, chi in senza[:6]:
             print(f"    🔴 {norma[:58]:58} {chi[:40]}")
+    print("\n    Le tre fonti della misura, e in che stato sono oggi:")
+    for descrizione, prova, dove in FONTI_DELLA_MISURA:
+        stato = "🟢 in vigore" if (ROOT / prova).exists() else "🔵 pianificato, NON esiste"
+        print(f"      {stato:28} {descrizione}")
+        print(f"      {'':28} {dove}")
 
     # ── Passo 2 ──────────────────────────────────────────────────────────
     print("\n2 · L'ALGORITMO A STRATI — quali skill devo avere aperte")

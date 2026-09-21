@@ -92,6 +92,20 @@ class TestValidateSkills(BaseDecisione):
                 "<!-- orchestrazione: conflitti -->\n\n"
                 "| # | Fra | Vince | Perche' |\n|---|---|---|---|\n",
                 encoding="utf-8")
+            # ADR-0061, stesso motivo un gradino piu' in la': un repo senza la
+            # tabella delle regole d'oro non e' sano, e senza questa riga ogni
+            # test bocciava per quello invece che per il proprio difetto.
+            (root / "skills" / "REGOLE-DORO.md").write_text(
+                "# Regole d'oro\n\n<!-- regole-doro: tabella -->\n\n"
+                "| id | Momento | Quando scatta | Cosa produce | Comando | Chi lo verifica |\n"
+                "|---|---|---|---|---|---|\n"
+                "| **G1** | 🟦 PRIMA | prova | prova | prova | prova |\n\n"
+                "<!-- regole-doro: conflitti -->\n\n"
+                "| # | Fra | Verdetto | Perche' |\n|---|---|---|---|\n",
+                encoding="utf-8")
+            (root / "AGENTS.md").write_text(
+                (root / "AGENTS.md").read_text(encoding="utf-8") + "\n`G1`\n",
+                encoding="utf-8")
 
     def test_una_skill_sana_passa(self):
         with cartella() as d:

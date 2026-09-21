@@ -238,6 +238,114 @@ def check_orchestrazione(root: Path) -> list[str]:
     return errors
 
 
+#: I momenti del ciclo, e il loro ordine. Una regola fuori da questi non ha un
+#: posto nel ciclo, e una regola senza posto nel ciclo si salta.
+MOMENTI = ("🟦 PRIMA", "🟨 DURANTE", "🟥 DOPO")
+
+
+def check_regole_doro(root: Path) -> list[str]:
+    """ADR-0061: ogni regola d'oro ha un momento, un comando vero, un verificatore.
+
+    🔴 **Il difetto che presidia**, misurato su `AGENTS.md` il 2026-09-20:
+
+    * le sei regole avevano **tre forme diverse** (tre voci di elenco, tre
+      titoli con blockquote) e **nessun pattern le estraeva tutte**;
+    * `AGENTS.md` conteneva **tre** elenchi che partono da `1.`, e «regola 8»
+      si riferiva al terzo: il numero da solo non identificava niente;
+    * l'ordine dei numeri **non** era l'ordine di esecuzione (G1 non e'
+      eseguibile prima di G5);
+    * **nessun cancello** le guardava, che e' la condizione di ADR-0056
+      applicata alle regole che ADR-0056 ha generato.
+
+    Quattro controlli, e nessuno giudica il merito di una regola:
+
+    1. **Identita'**: gli id sono `G1`..`GN`, unici, e ci sono tutti.
+    2. **Momento**: ogni regola ne dichiara uno fra quelli previsti.
+    3. **Comando**: se una regola nomina uno script, quello script **esiste**
+       (ADR-0053 applicata alle regole d'oro).
+    4. **Conflitti**: ogni riga della tabella dei conflitti porta un verdetto.
+    """
+    errors: list[str] = []
+    f = root / "skills" / "REGOLE-DORO.md"
+    if not f.exists():
+        return ["skills/REGOLE-DORO.md: assente (ADR-0061)"]
+    text = f.read_text(encoding="utf-8")
+
+    def _tabella(marca: str) -> "list[str]":
+        i = text.find(marca)
+        if i < 0:
+            return []
+        fine = text.find("\n## ", i)
+        return [r for r in text[i:fine if fine > 0 else len(text)].splitlines()
+                if r.startswith("|")]
+
+    righe = _tabella("<!-- regole-doro: tabella -->")
+    if not righe:
+        return ["REGOLE-DORO.md: manca il marcatore «regole-doro: tabella»"]
+
+    visti: "dict[str, str]" = {}
+    for riga in righe:
+        celle = [c.strip() for c in riga.strip("|").split("|")]
+        if len(celle) < 6 or celle[0].startswith(("---", "id")):
+            continue
+        m = re.fullmatch(r"\*\*(G\d+)\*\*", celle[0])
+        if not m:
+            errors.append(
+                f"REGOLE-DORO.md: id '{celle[0]}' non e' nella forma **G<numero>** "
+                "— il numero nudo collide con le altre liste numerate di AGENTS.md")
+            continue
+        gid = m.group(1)
+        if gid in visti:
+            errors.append(f"REGOLE-DORO.md: l'id {gid} compare due volte")
+        visti[gid] = celle[1]
+        if celle[1] not in MOMENTI:
+            errors.append(
+                f"REGOLE-DORO.md {gid}: momento '{celle[1]}' non previsto "
+                f"(attesi: {', '.join(MOMENTI)}) — una regola senza momento "
+                "nel ciclo si salta")
+        if not celle[5]:
+            errors.append(
+                f"REGOLE-DORO.md {gid}: nessun verificatore dichiarato — "
+                "una regola che nessuno guarda e' un'intenzione (ADR-0056)")
+        # 🔴 Sedicesimo caso della famiglia, e stavolta l'ha preso il test
+        # scritto per provare il cancello all'indietro. La prima stesura
+        # cercava r"`(scripts/...)`" con i backtick attaccati al percorso, ma
+        # le celle scrivono `python3 scripts/fase1.py <bersagli>`: il backtick
+        # sta prima di «python3», non prima di «scripts/», e il controllo
+        # **non e' mai scattato**, ne' sul repo vero ne' sul sabotaggio.
+        for cella in (celle[4], celle[5]):
+            for percorso in re.findall(r"\b(scripts/[\w./-]+\.py)", cella):
+                if not (root / percorso).exists():
+                    errors.append(
+                        f"REGOLE-DORO.md {gid}: nomina '{percorso}', che non esiste")
+
+    if visti:
+        attesi = {f"G{i}" for i in range(1, len(visti) + 1)}
+        mancanti = sorted(attesi - set(visti), key=lambda s: int(s[1:]))
+        if mancanti:
+            errors.append(
+                f"REGOLE-DORO.md: id mancanti nella sequenza: {', '.join(mancanti)}")
+
+    agents = (root / "AGENTS.md").read_text(encoding="utf-8")
+    for gid in sorted(visti, key=lambda s: int(s[1:])):
+        if gid not in agents:
+            errors.append(
+                f"AGENTS.md: la regola {gid} e' nella tabella e non nella "
+                "narrazione — le due devono nominare le stesse regole")
+
+    righe_conf = _tabella("<!-- regole-doro: conflitti -->")
+    if not righe_conf:
+        errors.append("REGOLE-DORO.md: manca il marcatore «regole-doro: conflitti»")
+    for riga in righe_conf:
+        celle = [c.strip() for c in riga.strip("|").split("|")]
+        if len(celle) < 4 or celle[0].startswith(("---", "#")):
+            continue
+        if not celle[2]:
+            errors.append(
+                f"REGOLE-DORO.md conflitto {celle[0]}: nessun verdetto dichiarato")
+    return errors
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument(
@@ -255,8 +363,9 @@ def main() -> int:
     yaml_errors = check_yaml_data(root)
     routing_errors = check_agents_routing(root)
     orch_errors = check_orchestrazione(root)
+    regole_errors = check_regole_doro(root)
     errors = (skill_errors + link_errors + yaml_errors + routing_errors
-              + orch_errors)
+              + orch_errors + regole_errors)
     n_skills = len(list((root / "skills").glob("*/SKILL.md")))
 
     if args.json:

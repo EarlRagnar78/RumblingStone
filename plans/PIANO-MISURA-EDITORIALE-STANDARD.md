@@ -71,15 +71,32 @@ read-aloud:
 2. si evitano *«vedi»*, *«appena entri nella stanza»* e **qualunque frase che
    presupponga un'azione del giocatore**.
 
-🔴 **Misurato sul repo, oggi**: su **1.334** box read-aloud, **229 — il 17% —**
+🔴 ~~**Misurato sul repo, oggi**: su **1.334** box read-aloud, **229 — il 17% —**
 presuppongono un'azione del giocatore. Per arco: 143 ARC-07, 53 ARC-09,
-22 ARC-08, 11 ARC-06. Questa norma **non era scritta da nessuna parte** in
-`skills/`, e nessuno strumento la guardava.
+22 ARC-08, 11 ARC-06.~~ **Cifre corrette il 2026-09-20, vedi sotto.** Resta
+vero il resto: questa norma **non era scritta da nessuna parte** in `skills/`,
+e nessuno strumento la guardava.
 
-⚠️ **E non tutte e 229 sono errori.** Una parte sono visioni d'artefatto — la
-Corona che parla al suo portatore — dove la seconda persona è la scelta
-giusta. È il motivo per cui questa classe nasce **minore**, con un'esenzione
-dichiarata, e non maggiore.
+> 🔴 **CORREZIONE (2026-09-20).** Il conteggio di sopra usava un criterio di
+> «box» scritto per questa ricerca invece di riusare `box_read_aloud`, che è il
+> rilevatore che il repo **già possiede**. Rimisurato con quello:
+>
+> | | Box totali | Con la violazione | % |
+> |---|---|---|---|
+> | pubblicato il 2026-09-19 | 1.334 | **229** | 17% |
+> | col rilevatore vero | 626 | **131** | 21% |
+> | al netto di archivi dichiarati, prompt d'immagine e `DEPRECATO` | **540** | **104** | **19%** |
+>
+> Il **denominatore era più del doppio** di quello vero. La percentuale regge
+> — anzi peggiora di due punti — ma il numero assoluto che il DM ha visto era
+> il doppio del lavoro reale. Dettaglio in
+> [PIANO-QUATTRO-ORDINI](PIANO-QUATTRO-ORDINI-2026-09-20.md) §1.2.
+
+⚠️ **E non tutte e 104 sono errori dello stesso tipo.** Una parte sono visioni
+d'artefatto — la Corona che parla al suo portatore — dove la seconda persona è
+la scelta giusta: lì la norma non si applica perché quello è **dialogo**, non
+narrazione. È il motivo per cui questa classe nasce **minore**, con il
+perimetro dichiarato, e non maggiore.
 
 ---
 
@@ -88,7 +105,7 @@ dichiarata, e non maggiore.
 1. **La tipologia non si importa, si mappa.** Le sette dimensioni MQM
    contengono *Locale* e *Non-translation*, che qui non esistono. Portarsele
    dietro vuote farebbe sembrare il sistema più rigoroso di quanto è — lo
-   stesso difetto della quarta colonna vuota. Si mappano le **40 norme già
+   stesso difetto della quarta colonna vuota. Si mappano le **44 norme già
    registrate** in `skills/REGISTRO-NORME-EDITORIALI.md`, non altro.
 2. **La soglia nasce dal repo, non da un manuale.** Vedi §4: una soglia
    importata boccerebbe lavoro buono.
@@ -138,18 +155,26 @@ che non butti via niente**.
 
 | | mediana | sotto 40 | fuori scala (>100) | nella fascia «professionale» 80-89 |
 |---|---:|---:|---:|---:|
-| read-aloud (1.334 box) | **67,1** | 3 | 77 = **6%** | 102 = **8%** |
+| ~~read-aloud (1.334 box)~~ | ~~67,1~~ | ~~3~~ | ~~77 = 6%~~ | ~~102 = 8%~~ |
+| **read-aloud, rimisurato (475 box)** | **70,1** | **1** | **70 = 15%** | **53 = 11%** |
 | documenti del repo (53) | **65,4** | 0 | 0 | 21% |
 
+> 🔎 **Rimisurato il 2026-09-20 sul set vero dei box** (stessa correzione di
+> §1.5: si riusa `box_read_aloud` invece di un criterio proprio). **La
+> conclusione non cambia, e su un punto si rafforza**: i box *fuori scala* —
+> quelli in cui la prosa spezzata prescritta fa esplodere la formula — passano
+> dal 6% al **15%**, due volte e mezzo. L'argomento «Gulpease non è tarato su
+> questo genere di testo» regge meglio sui numeri veri che su quelli vecchi.
+
 La fascia «testo professionale per pubblico generale» è **80-89**. Se
-importassimo quella soglia, **boccheremmo il 92% dei read-aloud del repo** —
+importassimo quella soglia, **boccheremmo l'89% dei read-aloud del repo** —
 compresi quelli scritti meglio. E ci sono due ragioni per cui sarebbe una
 sciocchezza:
 
 - un read-aloud **non è** un foglio informativo: la prosa spezzata che
   `read-aloud-adulti.md` *prescrive* fa esplodere la formula, e infatti il
-  **6%** dei box esce dalla scala 0-100;
-- Gulpease **non discrimina** qui: 67,1 contro 65,4 fra due prose che il repo
+  **15%** dei box esce dalla scala 0-100;
+- Gulpease **non discrimina** qui: 70,1 contro 65,4 fra due prose che il repo
   governa con norme **opposte** (ADR-0035). Come voto è cieco.
 
 > **Regola di calibrazione**: la soglia iniziale è il **valore che il repo ha
@@ -164,7 +189,7 @@ sciocchezza:
 | **handout / player-facing** | P25 attuale **+ zero critici** | idem | mai sul critico: quello è già assoluto |
 | **documenti del repo** | solo critici | la prosa-documenti ha norme diverse | — |
 
-⚠️ **Gulpease resta, ma declassato**: non è un voto, è un **guard rail** sui 3
+⚠️ **Gulpease resta, ma declassato**: non è un voto, è un **guard rail** sull'unico
 box sotto 40. Entra come **minore**, e solo quando il box è fuori dalla fascia
 *e* non è prosa spezzata (>100 non conta).
 
@@ -174,8 +199,8 @@ box sotto 40. Entra come **minore**, e solo quando il box è fuori dalla fascia
 
 | | Lotto | Cosa produce | Come si verifica |
 |---|---|---|---|
-| ⬜ | **F1.1** Mappare le 40 norme del registro su tipologia × severità | una colonna nuova in `REGISTRO-NORME-EDITORIALI.md` | `validate_norme_editoriali.py` estende il controllo: ogni norma ha una severità o una ragione scritta per non averla |
-| ⬜ | **F1.2** Separare rilevabile da giudizio | quante delle 40 hanno uno strumento (oggi ~22) e quante no | conteggio, nel registro |
+| ⬜ | **F1.1** Mappare le 44 norme del registro su tipologia × severità | una colonna nuova in `REGISTRO-NORME-EDITORIALI.md` | `validate_norme_editoriali.py` estende il controllo: ogni norma ha una severità o una ragione scritta per non averla |
+| ⬜ | **F1.2** Separare rilevabile da giudizio | quante delle 44 hanno uno strumento (oggi 15 piene + 8 parziali) e quante no | conteggio, nel registro |
 | ⬜ | **F1.3** Potere discriminante di ogni congegno | tabella: per ciascuno, quanti documenti separa | 🔴 un congegno che **non separa mai** due documenti è rumore e si toglie — è il controllo *non-discriminating* della skill-creator |
 | ⬜ | **F1.4** Distribuzione attuale per classe | P10/P25/P50/P75 del punteggio su tutto il repo | è l'input delle soglie di §4: **prima si misura, poi si sceglie** |
 | ⬜ | **F1.5** Estrarre i due campioni | campione **A** (DM) e campione **B** (secondo modello), disgiunti | vedi §5 |
@@ -188,7 +213,7 @@ box sotto 40. Entra come **minore**, e solo quando il box è fuori dalla fascia
 | ⬜ | **F2.2** `specifiche-qualita.yaml` | le soglie per classe, **fuori dal codice**: è una decisione di prodotto e deve poterla cambiare il DM senza toccare Python |
 | ⬜ | **F2.3** Il rilevatore della regola Paizo | la norma di §1.5, con l'esenzione «visione d'artefatto» dichiarata nel registro |
 | ⬜ | **F2.4** Gulpease come guard rail | `--leggibilita`, severità minore, esente sopra 100 |
-| ⬜ | **F2.5** `ADR-0059` | la decisione: *il punteggio di qualità è MQM adattato, e la soglia nasce dal repo*. Numero verificato libero (l'ultimo è 0058) |
+| ⬜ | **F2.5** `ADR-0059` | la decisione: *il punteggio di qualità è MQM adattato, e la soglia nasce dal repo*. Numero **ancora libero e riservato a questo piano**: nel frattempo sono stati scritti ADR-0060 e ADR-0061, che hanno saltato il 0059 apposta |
 | ⬜ | **F2.6** Gate in CI | `punteggio_mqm.py --soglia` fra i cancelli, **non bloccante alla prima messa in opera** — un giro di osservazione, poi bloccante |
 
 ## FASE 3 — Validazione
@@ -245,7 +270,7 @@ caso ha torto la metrica.
 |---|---|---|
 | 🔵 | **Le soglie iniziali** (§4) | F1.4 le propone dalla distribuzione, ma «quanto stringiamo» è prodotto, non tecnica |
 | 🔵 | **Il tempo del campione A** | 20 documenti da annotare. Senza, il κ non esiste e va dichiarato |
-| 🔵 | **La regola Paizo: 229 box** | si correggono, si esentano per classe, o si lascia il rilevatore solo come avviso? |
+| 🔵 | **La regola Paizo: 104 box** *(era «229», cifra corretta in §1.5)* | si correggono, si esentano per classe, o si lascia il rilevatore solo come avviso? |
 
 ---
 

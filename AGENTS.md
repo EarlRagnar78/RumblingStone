@@ -106,13 +106,13 @@ viene ignorata** — per settimane, in silenzio.
 Quindi la regola ha **tre obblighi**, e il terzo è quello che la rende diversa
 da un buon proposito:
 
-1. **Leggi i `references/`**, non il loro elenco. Sono la norma; il `SKILL.md`
+1. **`G1` · Leggi i `references/`**, non il loro elenco. Sono la norma; il `SKILL.md`
    è la mappa. Dieci file solo in `narrative-style`.
-2. **Misura prima di affermare.** «Questo standard manca», «lo stile non è
+2. **`G2` · Misura prima di affermare.** «Questo standard manca», «lo stile non è
    arrivato qui», «questa forma non la usa nessuno» sono affermazioni
    *misurabili*: `python3 scripts/misura_craft.py [--box|--copertura|--spotlight]`.
    Un'affermazione sullo stato del repo senza una misura accanto non vale.
-3. **Se introduci una norma, registrala.**
+3. **`G3` · Se introduci una norma, registrala.**
    [`skills/REGISTRO-NORME-EDITORIALI.md`](skills/REGISTRO-NORME-EDITORIALI.md) elenca
    ogni norma con **chi la misura**, o con **il perché nessuno la misura**.
    Il gate `python3 scripts/validate_norme_editoriali.py` boccia un file
@@ -136,7 +136,7 @@ più **sette domande**. Non era partita perché i tre obblighi qui sopra dicono
 **«leggi»** e **«misura»**, non **«esegui la self-check prima di consegnare»** —
 e una riscrittura è esattamente il momento in cui serve.
 
-> **4. Prima di consegnare prosa di gioco, esegui la self-check della skill.**
+> **`G4` · 4. Prima di consegnare prosa di gioco, esegui la self-check della skill.**
 > Non «tienila a mente»: **eseguila**, domanda per domanda. Dove la domanda è
 > misurabile, la risposta è un **comando**, non un'impressione.
 
@@ -170,7 +170,7 @@ Il DM: *«fai un ordine gerarchico delle skill che eviti di far saltare le skill
 […] verifica se ci sono skill che si sovrappongono e orchestrale in maniera
 smart, con meccanismi davvero misurabili»*.
 
-> **5. Prima di caricare, applica l'algoritmo a cinque domande di
+> **`G5` · 5. Prima di caricare, applica l'algoritmo a cinque domande di
 > [`skills/ORCHESTRAZIONE.md`](skills/ORCHESTRAZIONE.md).** Cinque strati più
 > la consultazione, otto conflitti ognuno con un vincitore dichiarato, e un
 > gate (`validate_skills.py`) che boccia una skill senza posto nella gerarchia.
@@ -208,7 +208,7 @@ di analisi in sola lettura […] e si usa preferibilmente il registro delle
 norme, l'algoritmo a strati e i 322 nomi di Bestiario prima di qualsiasi regex,
 in modo da eliminare errori di analisi ricorrenti»*.
 
-> **6. Prima di modificare qualunque cosa, esegui
+> **`G6` · 6. Prima di modificare qualunque cosa, esegui
 > `python3 scripts/fase1.py <bersagli>`.** I quattro passi vanno in
 > **quest'ordine**, e una regex nuova è l'ultima risorsa.
 

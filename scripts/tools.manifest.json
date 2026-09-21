@@ -3355,6 +3355,24 @@
           "desc": "Quante coppie di bersagli ogni congegno separa, in conteggio grezzo e in densita' per 1.000 righe: un congegno che non ne separa nessuna non produce informazione (lotto F1.3 di PIANO-MISURA-EDITORIALE).",
           "choices": null,
           "repeatable": false
+        },
+        {
+          "name": "--metrature",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "desc": "I read-aloud che parlano da architetto (ADR-0014 §2): numero + unita' di spazio nella voce narrante. Cerca la FORMA, non il numero — «tre round» e' legittimo, «diametro 9 metri» no.",
+          "choices": null,
+          "repeatable": false
+        },
+        {
+          "name": "--costrutto-italiano",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "desc": "I box senza un «c'e'» presentativo ne' una dislocazione a sinistra (italiano-nativo.md §8). INDIZIO che sovrastima: la dislocazione e' rilevata a meta', quindi questa norma NON pesa nel punteggio.",
+          "choices": null,
+          "repeatable": false
         }
       ],
       "inputs": [

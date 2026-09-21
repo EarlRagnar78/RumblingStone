@@ -122,7 +122,22 @@ def _p1(testo: str, _percorso: Path) -> "dict[str, int]":
     return {"read_aloud_presuppone": len(mc.box_con_p1(testo))}
 
 
-RILEVATORI = (_difetti_box, _caratteristiche, _prosa, _p1)
+def _metrature(testo: str, _percorso: Path) -> "dict[str, int]":
+    """ADR-0014 §2: la metratura nella voce narrante.
+
+    ⚠️ **La norma gemella NON entra qui, ed e' una scelta.** «Almeno un `c'e'`
+    presentativo o una dislocazione a sinistra» (`italiano-nativo.md` §8) e'
+    rilevata **a meta'**: la dislocazione vuole un'analisi sintattica che una
+    regex non fa. Pesarla produrrebbe penalita' **false** su box che la norma
+    la rispettano in un modo che il pattern non vede — 281 rilievi su 477, il
+    59%, che e' il numero di una sovrastima e non di un difetto. Si misura con
+    `--costrutto-italiano` e non si pesa: contare male in negativo e' peggio
+    che non contare.
+    """
+    return {"metratura_nella_voce_narrante": len(mc.metrature_nei_box(testo))}
+
+
+RILEVATORI = (_difetti_box, _caratteristiche, _prosa, _p1, _metrature)
 
 
 def carica_specifiche() -> dict:

@@ -52,7 +52,7 @@
 | `pc-protagonism.md` | **nessun PG oltre il 40%** delle scene marcate; **≥1 scena** a testa | **maggiore** | 🟡 `misura_craft --spotlight` — indicatore: conta le **menzioni del nome**, non le scene marcate, che il repo non marca |
 | `consequence-echoes.md` | **≥1 eco armato** quando la finzione lo consente; **≥2** alla convergenza | **maggiore** | 🟡 congegno `eco / conseguenze a distanza` conta le **menzioni**, non gli echi armati e pagati |
 | `passate-redazionali.md` | **massimo una chiusa a effetto** per documento; massimo un tricolon | **minore** · `antitesi_ripetuta` | 🟢 `validate_prosa.py --documenti` (lotto D di PROSA-CHE-NON-SEMBRI-GENERATA) |
-| `italiano-nativo.md` | almeno una **dislocazione a sinistra** o un **c'è presentativo** | **minore** | 🔴 non misurato — è una norma *positiva* su costrutti sintattici; il rilevatore andrebbe scritto e provato su un corpus, e non esiste |
+| `italiano-nativo.md` §8 | almeno una **dislocazione a sinistra** o un **c'è presentativo** | **minore** | 🟡 `misura_craft --costrutto-italiano` — **281 box su 477 (59%)**, e il numero dice che è una **sovrastima**, non un difetto. Il «c'è» presentativo si riconosce con certezza; la **dislocazione a sinistra** («Il libro, l'ho letto») vuole sapere che *libro* è l'oggetto di *letto*, e una regex non lo sa: il pattern prende i casi col clitico dopo la virgola e perde gli altri. 🔴 **Misura e non pesa, apposta**: una norma *positiva* rilevata a metà produce penalità **false** su chi la rispetta in un modo che il pattern non vede. Contare male in negativo è peggio che non contare |
 | `italiano-nativo.md` §9 | i **tic dell'IA**: antitesi «non X: è Y», tricolon, chiuse a effetto | **minore** · `calco_dall_inglese` | 🟢 `validate_prosa.py` |
 | `italiano-nativo.md` §9.2 | il **trattino lungo come respiro**: sopra il 3% delle parole di un read-aloud è un tic | **minore** · `trattino_come_respiro` | 🟢 `validate_prosa.py` — 🐛 **misurata da settembre e mai registrata**, trovata dal cancello dei pesi il 2026-09-21: il controllo di copertura guardava che ogni *file* normativo fosse elencato, non che ogni *misura* avesse la sua riga |
 | `varieta-fra-archi.md` | **mai due archi di fila** con la stessa tinta dominante | **minore** | 🔴 non misurato — richiede che ogni arco **dichiari** la sua tinta, e nessuno lo fa: è un prerequisito di dato, non di codice |
@@ -75,7 +75,7 @@
 | Dove | Norma verificabile | Stato |
 |---|---|---|
 | `ADR-0014` §1 | **nessuna sequenza a battute senza regia** (apertura di round, una battuta per attore, esito riuscita **e** fallimento, chiusura) | **maggiore** | 🟢 congegno `regia di round (una battuta per attore)` — e dice che esiste **in un documento solo** |
-| `ADR-0014` §2 | **occhio da avventuriero**: scala per paragone, niente metrature nel box | **minore** | 🔴 non misurato — distinguere «grande come una piazza» da «Ø 60 m» dentro un box è fattibile e **non è stato fatto**: candidato naturale al prossimo lotto |
+| `ADR-0014` §2 | **occhio da avventuriero**: scala per paragone, niente metrature nel box | **minore** · `metratura_nella_voce_narrante` | 🟢 `misura_craft --metrature` — **28 box su 477 (6%)**, in 9 file. Cerca la **forma** numero + unità di *spazio* (m · cm · quadretti · °C · Ø), non il numero: «tre round» e «sessanta battiti al minuto» sono legittimi. Falsi positivi **contati a mano: 1 su 28**, un PNG che dice «8-15 km» in un dialogo |
 | `rumblingstone-module-standard` §5 | un testo **per i giocatori** porta almeno **un'ancora nominata**: un nome del canone che chi legge riconosca | **maggiore** · `testo_giocatori_senza_ancore` | 🟢 `validate_prosa.py` — 🐛 **stessa storia del trattino**: misurata e mai registrata. 🔎 Nasce da un rilievo del tavolo — la giocatrice di Hella non capiva i suoi echi, e contando le ancore nei quattro testi per-PG della stessa sessione: Tordek 8, Thorik 5, Artemis 4, **Hella 0** |
 | `rumblingstone-module-standard` | le 16 sezioni obbligatorie della checklist | **maggiore** | 🟡 `validate_modules.py` — **solo su `ARC*-DEF-*.md`**: 96 file su 100 non sono mai guardati |
 | `rumblingstone-module-standard` §8 | sidebar **«Scalare lo scontro»** obbligatoria per i boss | **maggiore** | 🟢 congegno `scalare lo scontro` — e dice **zero** in tutti i 71 file di ARC-08 e ARC-09 |
@@ -93,9 +93,9 @@
 
 | | Norme registrate |
 |---|---:|
-| 🟢 misurate | 21 |
-| 🟡 misurate in parte, con il limite scritto | 7 |
-| 🔴 **non misurate, con la ragione scritta** | 11 |
+| 🟢 misurate | 22 |
+| 🟡 misurate in parte, con il limite scritto | 8 |
+| 🔴 **non misurate, con la ragione scritta** | 9 |
 | ⚪ non applicabili | 2 |
 
 > 🐛 **Questi quattro numeri erano sbagliati tutti e quattro**, e nessuno se
@@ -131,7 +131,7 @@ guarda**.
 |---|---:|---:|---:|---:|---:|
 | **critico** (25) | — | — | **1** | 1 | 0 |
 | **maggiore** (5) | 10 | 3 | 3 | 16 | **3** |
-| **minore** (1) | 10 | 4 | 7 | 21 | **8** |
+| **minore** (1) | 11 | 5 | 5 | 21 | **9** |
 | senza peso | 1 | — | — | 3 *(+2 ⚪)* | — |
 
 🔎 **Tre cose che la tabella dice e le due colonne separate non dicevano.**

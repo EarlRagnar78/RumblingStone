@@ -89,6 +89,12 @@ norme:
     severita: minore
     rilevatore: "misura_craft.box_con_p1"
     norma: "read-aloud-adulti.md + linee guida Dungeon — il read-aloud non presuppone un'azione né un senso"
+  metratura_nella_voce_narrante:
+    severita: minore
+    rilevatore: "misura_craft.metrature_nei_box"
+    norma: "ADR-0014 §2 — occhio da avventuriero: scala per paragone, le metrature nel blocco dati"
+    # Falsi positivi contati a mano il 2026-09-21: **1 su 28**, ed è un PNG che
+    # dice «8-15 km» in un dialogo. Precisione 96%.
 
 # ── I tre casi critici, e quale dei tre è decidibile ─────────────────────
 #

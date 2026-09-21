@@ -430,6 +430,99 @@ def file_di_gioco_p1() -> "list[Path]":
     return fuori
 
 
+# ─────────────────────────────────────────────────────────────────────────
+# ADR-0014 §2 — «occhio da avventuriero, non da architetto»
+#
+# La norma: il box descrive cio' che si coglie in **sei secondi**, con scala
+# **per paragone** («una bolla grande come la piazza di un mercato»). Le
+# metrature restano, ma nel blocco «Dati per il DM (non da leggere)» o sulla
+# mappa: **mai nella voce narrante**.
+#
+# ⚠️ **Si cerca la FORMA, non il numero** — e' la lezione di ADR-0060, che ha
+# portato 2.014 occorrenze inutilizzabili a 258 con zero falsi positivi. Un
+# numero dentro un box e' quasi sempre legittimo: «tre round», «sessanta
+# battiti al minuto», «l'anno -5000», «tre nani». Quel che la norma vieta e'
+# **numero + unita' di spazio**, che e' la firma dell'architetto.
+#
+# Le unita' sono tre famiglie, e nessun'altra:
+#   * **lunghezza e area** — m, metri, cm, km, mq, m² (e il simbolo Ø);
+#   * **la griglia** — quadretti e caselle: dato tattico puro, letto ad alta
+#     voce dice al giocatore che sta guardando una mappa;
+#   * **temperatura** — °C, °F: un numero che nessun personaggio puo' percepire.
+#
+# 🔴 **Fuori dall'elenco NON si misura**, e la ragione e' la stessa di
+# ADR-0060: il tempo («sei secondi»), il peso, il conteggio di creature e la
+# data sono numeri che la voce narrante usa a ragione. Allargare l'elenco
+# costerebbe piu' falsi positivi di quanti errori trovi.
+_UNITA_SPAZIO = (r"m(?:etri|etro)?|cm|centimetri|km|chilometri|mq|m²|"
+                 r"quadretti|quadretto|caselle|casella|piedi|pollici")
+METRATURA = re.compile(
+    r"(?:Ø\s*\d|"                                    # Ø 60
+    r"\b\d+(?:[.,]\d+)?\s*(?:" + _UNITA_SPAZIO + r")\b|"   # 9 metri · 6 quadretti
+    r"\b\d+(?:[.,]\d+)?\s*°\s*[CF]\b|"            # 49 °C
+    r"\b\d+(?:[.,]\d+)?°[CF]\b)",                   # 120°F
+    re.I)
+
+
+def metrature_nei_box(testo: str) -> "list[tuple[str, str]]":
+    """I box che parlano da architetto: `(la metratura trovata, inizio del box)`.
+
+    Riusa `box_read_aloud` — *una norma, un rilevatore* — quindi il
+    denominatore e' lo stesso di `--box` e di `--p1`, e i tre numeri si
+    confrontano fra loro.
+
+    Deterministica e idempotente: dipende solo dal testo.
+    """
+    fuori = []
+    for b in box_read_aloud(testo):
+        corpo = _ETICHETTA.sub("", " ".join(b))
+        m = METRATURA.search(corpo)
+        if m:
+            fuori.append((m.group(0).strip(), corpo.strip()[:100]))
+    return fuori
+
+
+# ─────────────────────────────────────────────────────────────────────────
+# `italiano-nativo.md` §8 — la norma POSITIVA
+#
+# *«C'e' almeno una dislocazione a sinistra o un c'e' presentativo?»*. E' la
+# sola norma del registro scritta **al positivo**: non vieta una forma, ne
+# pretende una.
+#
+# 🔴 **E si misura a meta', dichiarata.** Il `c'e'` presentativo ha una forma
+# fissa e si riconosce con certezza. La **dislocazione a sinistra** («Il
+# libro, l'ho letto») vuole sapere che «libro» e' l'oggetto di «letto», cioe'
+# un'analisi che una regex non fa: il pattern qui sotto prende i casi col
+# clitico dopo la virgola e **perde gli altri**.
+#
+# ⚠️ **Per questo il rilevatore misura e NON pesa.** Una norma positiva
+# rilevata a meta' produce penalita' false: punirebbe un box che la rispetta
+# con una dislocazione che la regex non vede. Entra nel registro come 🟡 col
+# limite scritto, e **resta fuori dal punteggio** finche' la meta' mancante
+# non ha un rilevatore vero. Contare male in negativo e' peggio che non
+# contare.
+PRESENTATIVO = re.compile(r"\bc(?:'|’)(?:è|era|erano|eran)\b|\bci (?:sono|erano|fu|furono)\b", re.I)
+DISLOCAZIONE = re.compile(r",\s*(?:lo|la|li|le|ne|ci|gli)\s+\w{2,}(?:i|e|a|o|ò|ano|ono|ete|emmo)\b", re.I)
+
+
+def box_senza_costrutto_italiano(testo: str) -> "list[str]":
+    """I box che non portano ne' un «c'e'» presentativo ne' una dislocazione.
+
+    ⚠️ **Sovrastima per costruzione**: la meta' «dislocazione» e' rilevata da
+    un pattern conservativo, quindi un box che rispetta la norma in un modo
+    che il pattern non vede finisce qui. Il numero e' un **indizio**, non
+    un'accusa — ed e' la ragione per cui non pesa nel punteggio.
+    """
+    fuori = []
+    for b in box_read_aloud(testo):
+        corpo = _ETICHETTA.sub("", " ".join(b))
+        if len(corpo.split()) < 25:
+            continue          # un box di due righe non deve portare un costrutto
+        if not PRESENTATIVO.search(corpo) and not DISLOCAZIONE.search(corpo):
+            fuori.append(corpo.strip()[:100])
+    return fuori
+
+
 def box_con_p1(testo: str) -> "list[tuple[str, str]]":
     """I box che violano P1: (verbo trovato, prime parole del box)."""
     fuori = []
@@ -566,6 +659,31 @@ def stampa_discriminante(dati: dict, etichette: "list[str]", righe: dict) -> Non
     print("      I due casi si distinguono guardando i documenti, non la tabella.\n")
 
 
+def _stampa_per_file(titolo: str, sottotitolo: str, rilevatore, avviso: str) -> None:
+    """La vista file-per-file, condivisa da `--p1`, `--metrature` e gli altri.
+
+    Un solo formatter per tutti i rilevatori di box: il denominatore e' sempre
+    `box_read_aloud`, quindi i numeri si confrontano fra loro.
+    """
+    per_file, tot_box, tot = {}, 0, 0
+    for f in file_di_gioco_p1():
+        testo = f.read_text(encoding="utf-8", errors="replace")
+        tot_box += len(box_read_aloud(testo))
+        colpiti = rilevatore(testo)
+        if colpiti:
+            per_file[f.relative_to(ROOT)] = colpiti
+            tot += len(colpiti)
+    pct = (100 * tot / tot_box) if tot_box else 0
+    print(f"\n{titolo}\n    {sottotitolo}\n")
+    print(f"    {tot} box su {tot_box} = {pct:.0f}%   in {len(per_file)} file\n")
+    for percorso, colpiti in sorted(per_file.items(),
+                                    key=lambda kv: (-len(kv[1]), str(kv[0]))):
+        print(f"{len(colpiti):5d}  {percorso}")
+        for marca, inizio in colpiti[:3]:
+            print(f"       [{marca}] {inizio[:96]}")
+    print(f"\n{avviso}\n")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--densita", action="store_true",
@@ -581,6 +699,12 @@ def main() -> int:
     ap.add_argument("--p1", action="store_true",
                     help="i read-aloud che presuppongono un'azione o un senso "
                          "del giocatore (norma Dungeon/Paizo), file per file")
+    ap.add_argument("--metrature", action="store_true",
+                    help="i read-aloud che parlano da architetto (ADR-0014 §2): "
+                         "numero + unita' di spazio nella voce narrante")
+    ap.add_argument("--costrutto-italiano", action="store_true",
+                    help="i box senza «c'e'» presentativo ne' dislocazione a "
+                         "sinistra (italiano-nativo.md §8) — INDIZIO, sovrastima")
     ap.add_argument("--discriminante", action="store_true",
                     help="quante coppie di bersagli ogni congegno separa: "
                          "un congegno che non ne separa nessuna e' rumore")
@@ -667,6 +791,31 @@ def main() -> int:
             print(f"{nome:30} {d['box']:>5} {d['oltre 12 righe']:>10} "
                   f"{d['con parentesi']:>10} {d['>1 nome proprio']:>8}")
         print()
+
+    if args.metrature:
+        _stampa_per_file(
+            "METRATURE NELLA VOCE NARRANTE (ADR-0014 §2)",
+            "norma: «occhio da avventuriero, non da architetto» · rilevatore: box_read_aloud",
+            metrature_nei_box,
+            "⚠️  Un numero in un box e' quasi sempre legittimo — «tre round»,\n"
+            "    «sessanta battiti al minuto», «tre nani». Qui si cerca la FORMA\n"
+            "    numero + unita' di SPAZIO, che e' la firma dell'architetto.\n"
+            "    Falsi positivi contati a mano il 2026-09-21: **1 su 28**, ed e'\n"
+            "    un PNG che dice «8-15 km» in un dialogo.")
+
+    if args.costrutto_italiano:
+        _stampa_per_file(
+            "BOX SENZA UN COSTRUTTO ITALIANO (italiano-nativo.md §8)",
+            "norma POSITIVA: almeno un «c'e'» presentativo o una dislocazione a sinistra",
+            lambda testo: [(">=25 parole", x) for x in box_senza_costrutto_italiano(testo)],
+            "🔴  **SOVRASTIMA, e apposta non pesa nel punteggio.** Il «c'e'»\n"
+            "    presentativo si riconosce con certezza; la **dislocazione a\n"
+            "    sinistra** («Il libro, l'ho letto») vuole sapere che «libro» e'\n"
+            "    l'oggetto di «letto», e una regex non lo sa. Il pattern prende i\n"
+            "    casi col clitico dopo la virgola e **perde gli altri**, quindi un\n"
+            "    box che rispetta la norma in un modo che non vede finisce qui.\n"
+            "    Una norma positiva rilevata a meta' produce penalita' FALSE:\n"
+            "    contare male in negativo e' peggio che non contare.")
 
     if args.discriminante:
         stampa_discriminante(dati, etichette, righe)

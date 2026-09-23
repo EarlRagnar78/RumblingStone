@@ -474,7 +474,7 @@ confrontava fra loro.
 L'ordine è fisso: ognuno lascia il repo verde e l'impronta di E0 **identica**,
 e va in un commit suo.
 
-#### ⬜ E0 · L'impronta di partenza
+#### ✅ E0 · L'impronta di partenza *(chiuso 2026-09-23)*
 `[engine: Opus, sessione principale · effort: medio · qualità: due esecuzioni sullo stesso commit danno lo stesso file, byte per byte]`
 **Classe C.** Uno script `scripts/impronta_creature.py` (sola lettura, stdlib)
 che scrive in JSON, ordinato e deterministico:
@@ -493,6 +493,25 @@ di tutto il lotto**: un sotto-lotto che la cambia ha cambiato un comportamento, 
 si ferma lì.
 **Accettazione**: test verde; e la prova che morde, cioè una mutazione di una
 riga in `tetti_dai_ts` fa cadere il test.
+
+✅ **Fatto** (`scripts/impronta_creature.py`, fixture da 1,7 MB, 4 test).
+Due esecuzioni danno lo stesso file byte per byte, in 2,6 secondi. Dentro:
+108 statblocchi con **17 letture intermedie** ciascuno (dadi vita, `pf-dado`
+sospetto con e senza GS, sestina della scheda e della fonte, numeri della
+fonte, tetti dei TS, composizione, talenti, provenienza, i quattro vincoli),
+`genera` con e senza fonte, `giudica`, `pf_dado_corretto` normale e forzato;
+95 derivazioni; 720 creature (GS 1-20 × 6 ruoli × mostro umanoide, PNG con
+classe, bestia magica Grande × `--piu-cattivi`); taratura, riepilogo, i due
+`--check` e la proposta di `--correggi-pf-dado`.
+Due mutazioni provate, e cadono tutte e due sulla chiave che le nomina:
+`+ 1` in `tetti_dai_ts` (354 chiavi su 85 schede, a partire da
+`bruto-deforme-sottosuolo-cr11.md/letture/tetti_dai_ts/Cos`) e il flag `re.M`
+tolto a `INIZIATIVA_SCRITTA` (a partire da `blue-psion-cr1.md/letture/iniziativa_ambigua`).
+🔎 **Una cosa che il piano non sapeva**: nessuna scheda del Bestiario è oggi
+scrivibile da `derive_statblocks --apply-ts` (le due proposte sono rimandi),
+quindi `con_attributi`, la metà di `derive_statblocks` che chiama
+`genera_attributi`, sul Bestiario non gira mai. L'impronta la fa girare su tre
+schede di prova in una cartella temporanea (chiave `apply_ts`).
 
 #### ⬜ E1 · L'ADR e i moduli vuoti
 `[engine: Opus, sessione principale · effort: alto · qualità: il DM riconosce la decisione, e D1 è risposta]`
@@ -599,6 +618,7 @@ Non si passa al sotto-lotto successivo finché tutti questi non sono verdi:
 ```bash
 python3 -m pytest -q scripts/tests/                     # ≥ 1165 verdi, piu' i test nuovi
 python3 -m pytest -q scripts/tests/test_impronta_creature.py   # impronta di E0 identica
+python3 scripts/impronta_creature.py --confronta        # la stessa, e dice dove diverge
 python3 scripts/extract_statblocks.py --check           # 0 problemi
 python3 scripts/validate_bestiario.py                   # catalogo in sync
 python3 scripts/validate_bestiario.py --rules           # 5 avvisi, gli stessi

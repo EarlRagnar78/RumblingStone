@@ -310,35 +310,37 @@ def con_attributi(f: Path, sb: Statblocco, L: Lettura) -> str:
     e `attributi` con Cos 18, mentre la formula del DM diceva Cos 20.
 
     Adesso le caratteristiche non le sceglie piu' questo script: vengono da
-    `genera_attributi.genera`, la stessa funzione con gli stessi strati (la
+    `dmcore.caratteristiche.genera` (quella di `genera_attributi`), la stessa funzione con gli stessi strati (la
     prosa della scheda, la fonte citata, i vincoli, l'array), e i TS si
     ricalcolano da quelle sulla base di `deriva`. Il blocco porta la marca di
     `genera_attributi`, quindi il suo `--check` lo verifica come uno suo.
     """
-    import conformita_statblocchi as C
-    import genera_attributi as GA
+    # la scelta e il lettore stanno in `dmcore` (ADR-0066): prima questa
+    # funzione importava `genera_attributi` e `conformita_statblocchi`
+    from dmcore import caratteristiche as CAR
+    from dmcore import lettura_creatura as LC
     # il blocco provvisorio da cui `genera` sceglie **non ha TS**: quelli della
     # matrice non sono un dato, e il tetto dei TS li leggerebbe come tali
     from dataclasses import replace
     testo = inserisci(f.read_text(encoding="utf-8"), replace(sb, ts="", fonte=""))
     ruolo = re.search(r"\*\*Role\*\*:\s*([^|\n]+)", testo, re.I)
     gs = float(str(L.gs or sb.gs).replace(",", "."))
-    v, note = GA.genera(f.name, ruolo.group(1).strip() if ruolo else "", gs, testo)
-    extra = C.talenti(testo)
+    v, note = CAR.genera(f.name, ruolo.group(1).strip() if ruolo else "", gs, testo)
+    extra = LC.talenti(testo)
     ts = {k: L.base_ts[k] + mod(v[c]) + extra.get(n, 0) if isinstance(v[c], int)
           else L.base_ts[k] + extra.get(n, 0)
           for k, c, n in (("temp", "Cos", "Temp"), ("rifl", "Des", "Rifl"), ("vol", "Sag", "Vol"))}
     sb.ts = f"Temp {ts['temp']:+d}, Rifl {ts['rifl']:+d}, Vol {ts['vol']:+d}"
-    sb.attributi = GA.riga_attributi(v).split(": ", 1)[1]
+    sb.attributi = CAR.riga_attributi(v).split(": ", 1)[1]
     sb.fonte = (f"derivati dalle tabelle: ts, attributi (il resto è letto dalla prosa) — "
                 f"caratteristiche da `genera_attributi` ({note[0]}) · TS: base "
                 f"{L.base_ts['temp']:+d}/{L.base_ts['rifl']:+d}/{L.base_ts['vol']:+d} "
                 f"+ Cos/Des/Sag → {sb.ts}")
     testo = inserisci(f.read_text(encoding="utf-8"), sb)
-    coda = (GA.CODA_SCHEDA if note[0].startswith("letta dalla riga")
-            else GA.CODA_FONTE if note[0].startswith("trascritt") else GA.CODA_ARRAY)
-    marca = GA.MARCA + coda + "".join(" " + n for n in note if n.startswith("⚠"))
-    m = GA.BLOCCO.search(testo)
+    coda = (LC.CODA_SCHEDA if note[0].startswith("letta dalla riga")
+            else LC.CODA_FONTE if note[0].startswith("trascritt") else LC.CODA_ARRAY)
+    marca = LC.MARCA + coda + "".join(" " + n for n in note if n.startswith("⚠"))
+    m = LC.BLOCCO.search(testo)
     fine = testo.index("```", m.end(1)) + 3
     return testo[:fine] + "\n\n" + marca + testo[fine:]
 

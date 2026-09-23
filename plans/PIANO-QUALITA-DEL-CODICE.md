@@ -628,7 +628,7 @@ percorso), lo stesso import messo **dentro una funzione** del lettore (3 test
 rossi), e il grafo di E2 ricostruito da `git show`, dove trova il vecchio ciclo
 `genera_attributi → conformita_statblocchi → genera_attributi`.
 
-#### ⬜ E5 · La scelta delle caratteristiche in un posto
+#### ✅ E5 · La scelta delle caratteristiche in un posto *(chiuso 2026-09-23)*
 `[engine: Opus, sessione principale · effort: alto · qualità: impronta identica, taratura 1,50 / 1,51 invariata]`
 **Classe C.** Spostare in `dmcore/caratteristiche.py` gli strati di
 `genera_attributi.genera` e le loro tabelle (`PROFILI`, `PER_TAGLIA`, `RAZZE`,
@@ -639,6 +639,22 @@ di comando; `derive_statblocks.con_attributi` chiama `dmcore.caratteristiche`
 direttamente.
 **Accettazione**: impronta identica; `genera_attributi --check` e
 `--taratura` invariati; E4 verde.
+
+✅ **Fatto**: 24 simboli in `dmcore/caratteristiche.py` (gli array, `PROFILI`,
+`PER_TAGLIA`, `RAZZE`, i vincoli, `dalla_fonte`, `_dall_array`, `genera`,
+`riga_attributi`), tagliati con `ast` e con **alberi identici** a quelli di
+prima. `genera_attributi` tiene `statblocchi`, `proponi`, `applica`,
+`controlla`, `taratura` e la riga di comando, e scende da 1.170 a 352 righe.
+`derive_statblocks.con_attributi` chiama `dmcore.caratteristiche` e
+`dmcore.lettura_creatura`, e non importa più né il generatore né il
+verificatore. Impronta identica, `--check` 93 blocchi, taratura 1,5 / 1,51,
+E4 verde e di nuovo rosso con un import della scelta aggiunto al verificatore.
+
+📏 **Il conto delle righe, onesto.** I quattro script passano da **3.503 a
+2.465**; i tre moduli nuovi ne hanno **1.241**, e il totale sale a **3.706
+(+203)**. La differenza sono docstring dei moduli e import degli alias, che E8
+toglie. Il lotto non promette meno righe: promette una lettura e una scelta
+in un posto solo.
 
 #### ⬜ E6 · Una tabella dei ruoli *(bloccato su D2)*
 `[engine: Opus, sessione principale · effort: xhigh · qualità: il DM ha visto il diff dei blocchi prima del commit]`

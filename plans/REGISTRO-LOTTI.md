@@ -69,6 +69,7 @@ registro esiste.
 | 2026-09-23 | **QUALITA E3a** il lettore in un posto, prima metà | **C** costruzione, rischio alto | Opus, sessione principale | ✅ | Il rischio dichiarato (una regex che perde un flag) si toglie alla radice se il codice non si ricopia: tagliarlo con `ast` e confrontare gli alberi dà la prova prima ancora dell'impronta. |
 | 2026-09-23 | **QUALITA E3b** il lettore in un posto, seconda metà | **C** costruzione, rischio alto | Opus, sessione principale | ✅ | L'unica funzione che non si poteva spostare alla lettera (`tetti_dai_ts`, che chiamava il verificatore) è anche l'unica dove l'impronta ha fatto da prova vera: l'equivalenza col vecchio `ts_attesi(s, {})` l'ha confermata lei. |
 | 2026-09-23 | **QUALITA E4** il grafo degli import | **C** costruzione | Opus, sessione principale | ✅ | Previsto Sonnet/medio, fatto nella sessione principale perché il contesto del lotto c'era già: cambiare engine avrebbe buttato la cache per un file da 170 righe. |
+| 2026-09-23 | **QUALITA E5** la scelta in un posto | **C** costruzione | Opus, sessione principale | ✅ | Con E3 fatto bene, E5 è stato il più semplice del lotto: il lettore era già fuori, e la scelta si è staccata senza toccare una riga del suo codice. |
 
 ---
 

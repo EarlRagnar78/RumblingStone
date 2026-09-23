@@ -164,3 +164,8 @@ caso dei due razorfiend, i cui TS derivati contraddicono solo la formula dei
 dadi vita. Per quelli la decisione è del DM (D10 e D11 di
 `RICERCA-CONFORMITA-MECCANICA-STATBLOCCHI` §9).
 
+**D11, deciso dal DM lo stesso giorno.** `--apply-ts` resta, ma scrive anche le
+caratteristiche da cui ricava i TS, e le prende da `genera_attributi.genera`
+invece che dalla matrice di questo script. Una sola logica sceglie le
+caratteristiche di una scheda, chiunque scriva il blocco.
+

@@ -205,5 +205,38 @@ class TestIlRepoVero(unittest.TestCase):
         self.assertIn("goblin-warrior1-cr05.md", C.decisioni_aperte())
 
 
+class TestIlGiroCircolare(unittest.TestCase):
+    """🐛 Il bonus di `pf-dado` ricavato dai pf, e la Cos ricavata da quel bonus.
+
+    Khorn scrive «8d10+24, Cos 16» e Tempra +9; la ricostruzione supponeva la
+    media dei pf e gli dava `8d10+32`, e il generatore ne ricavava Cos 18.
+    """
+
+    def test_la_tempra_viene_prima_della_media(self):
+        s = C.leggi(ROOT / "Bestiario/png/Khorn/khorn-ufficiale-hammerfist-cr8.md")
+        c = C.pf_dado_corretto(s, forza=True)
+        self.assertEqual(c["nuovo"], "8d10+24")
+        self.assertIn("dalla Tempra +9", c["bonus"])
+
+    @staticmethod
+    def _guerriero(pf: int, temp: str) -> C.Scheda:
+        s = scheda(f"gs: 4\ntipo: Medium humanoid (human), Fighter 4\npf: {pf}\n"
+                   f"pf-dado: 1d8+4\nts: Temp {temp}, Rifl +1, Vol +1\n"
+                   "attributi: For 16 Des 12 Cos 10 Int 10 Sag 10 Car 8\n"
+                   "attacchi:\n  - Mischia spada lunga +6 (1d8+4)")
+        s.provenienza = "generate"
+        return s
+
+    def test_dentro_la_fascia_vince_la_tempra(self):
+        c = C.pf_dado_corretto(self._guerriero(30, "+5"), forza=True)
+        self.assertEqual(c["nuovo"], "4d10+4")        # Guerriero 4 (+4) → Cos +1
+        self.assertIn("dalla Tempra +5", c["bonus"])
+
+    def test_fuori_fascia_si_torna_ai_pf(self):
+        # la prova che morde: la Tempra dice Cos +0, ma 4d10 non arrivano a 41
+        c = C.pf_dado_corretto(self._guerriero(41, "+4"), forza=True)
+        self.assertIn("dai pf 41", c["bonus"])
+
+
 if __name__ == "__main__":
     unittest.main()

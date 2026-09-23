@@ -142,8 +142,9 @@ e non un lotto.
 python3 scripts/validate_bestiario.py --rules   # 21-09: 0 avvisi (§4 spiega perché) · 23-09: 29
 grep -c '^pf:' Bestiario/*/*-cr*.md | grep -c ':1'
 grep -rl '^attributi:' Bestiario --include='*.md' | wc -l   # 21-09: 14 · 23-09: 109
-python3 scripts/genera_attributi.py --check      # 94 blocchi generati, riproducibili
-python3 scripts/genera_attributi.py --taratura   # errore dello strato 3: 1,91 punti
+python3 scripts/genera_attributi.py --check      # 93 blocchi generati, riproducibili
+python3 scripts/genera_attributi.py --taratura   # errore dello strato 3: 1,91 → 1,63 → 1,50 punti
+python3 scripts/conformita_statblocchi.py --riepilogo   # 23-09 sera: 95 tornano, 0 scarti del generatore
 ```
 
 ---
@@ -159,6 +160,7 @@ python3 scripts/genera_attributi.py --taratura   # errore dello strato 3: 1,91 p
 | ✅ | **4** · la tabella PF1e in un YAML versionato | `scripts/pf1e-statistiche-per-gs.yaml`, **31 righe e 11 colonne** trascritte dalla fonte OGL il 2026-09-23. 🔴 Il repo ne aveva **due copie** diverse, e le otto righe dichiarate «verificate» sbagliavano danno, CD e TS cattivo (il GS 12 aveva l'attacco del GS 11): la skill e la costante erano state scritte dalla stessa mano, e il test che le confrontava confrontava lo stesso errore. `dmcore`, `validate_bestiario` e la skill leggono ora un dato solo |
 | ✅ | **5** · gli `attributi` nei 96 statblocchi | 🔵 **il DM ha deciso: generarli.** Fatto per **94** (gli altri due erano `[POINTER]`), con `genera_attributi.py` e alle condizioni di [ADR-0064](adr/ADR-0064-gli-attributi-si-scrivono-nel-bestiario.md). **39 copiati** dalla sestina che la scheda stessa scrive, **37 trascritti** dalla fonte, **18 scelti**. ⚠️ La prima versione di questo esito diceva «55 scelti»: 39 di quei 55 avevano i numeri del DM nella prosa (vedi l'emendamento di ADR-0064) |
 | ✅ | **6** · pf, TS, BAB, lotta e attacco tornano con le caratteristiche *(chiesto il 2026-09-23)* | `conformita_statblocchi.py`, alle condizioni di [ADR-0065](adr/ADR-0065-la-conformita-si-corregge-dove-il-dato-non-e-una-scelta.md). Primo giro: 11 statblocchi corretti a mano, uno per uno. **Secondo giro, coi talenti** (idea del DM), l'iniziativa e la variante Advanced: altri **4** corretti (Ghaurush «Cenere Piena» CA 23 → 25, Mira Serani Vol +8 → +9 col talento che nominava, phantom fungus Init −1 → +0, blue psion lotta −4 → −5). Dopo le decisioni D8 e D9 del DM (For 18 al chierico gnoll; Karruk in tre stati d'ira, col BAB da +16 a +14): su **107** verificabili **86 tornano**, 5 uguali alla fonte, **7 decisioni aperte** (§9), **0 da correggere**, 9 scarti di un punto su caratteristiche scelte |
+| ✅ | **6-ter** · i 9 scarti del generatore *(2026-09-23 sera)* | **Nessuno dei nove era del generatore soltanto**, e guardarli uno per uno ha dato quattro cause diverse. 🐛 **Il lettore**: una parentesi dopo il punteggio («For 25 (21 base +4 innesto)») nascondeva la sestina di tre schede, e Zin'thara, una maga con Int 22, aveva Car 21. 🐛 **Un giro circolare**: dove la Cos era generata, il bonus di `pf-dado` veniva ricavato dai pf supponendo la media, e il generatore ricavava la Cos da quel bonus; Khorn scrive «8d10+24, Cos 16» e ne usciva con Cos 18. Ora il bonus viene prima dalla **Tempra**, che è un'identità esatta, e dai pf solo se la Tempra li mette fuori fascia. ✅ **Il tetto dei TS** (strato 2-quinquies): un TS sotto l'atteso abbassa Cos, Des o Sag, ma solo se il valore viene dall'array. ✅ **L'iniziativa senza talenti** ammette due Des, e l'array sceglie fra quelle due. 🔧 **Quattro correzioni di numeri del DM**, con marca e conto: ogre micelio lotta +18 → **+22** (Lottare Migliorato elencato e non contato) e Tempra +10 → **+11** (era la Cos prima dell'innesto); ogre frantumapietra Riflessi +1 → **+2** (Des 8 confermata da CA, contatto e iniziativa); Teschio Nero Tempra +12 → **+13** (Cos 18 scritta due volte). Oggi: **95 tornano, 0 scarti del generatore, 0 da correggere, 7 decisioni aperte**. La taratura scende a **1,50 / 1,54** |
 
 🔎 **Il template PF1e nei commit.** `5bdbbce` ha fatto nascere
 `genera_creatura --piu-cattivi`: Advanced applicato **senza alzare il GS**. Nel
@@ -180,11 +182,21 @@ sono venute fuori dopo aver fissato le regole del generatore: lo strato scelto
 ci sbaglia di **1,84 punti**, contro 1,63 sul banco su cui le regole sono state
 scelte. Regge.
 
-⚠️ **Cosa resta, e da chi dipende.** Le 7 decisioni di §9 sono del DM. Gli 8
-scarti su caratteristiche generate si chiudono insegnando al generatore a
-leggere anche i TS (Temp → Cos, Rifl → Des, Vol → Sag); per ora non si toccano
-gli statblocchi, perché farli tornare con un numero scelto sarebbe il contrario
-di ADR-0065 §1.
+⚠️ **Cosa resta, e da chi dipende.** Le 7 decisioni di §9 sono del DM. Gli
+scarti su caratteristiche generate sono chiusi (lotto 6-ter): il generatore
+legge i TS, e dove un numero del DM era il solo a non tornare si è corretto
+quello, alle condizioni di ADR-0065 §2.
+
+🔵 **Un residuo che non è di questo piano.** I razorfiend verde e bianco, e
+altre sei schede (Lorana, Varis, Salvatore, Azarr Kul, Ushgar, Sethrax),
+portano `ts` scritti da `derive_statblocks --apply-ts` con una matrice di
+caratteristiche propria (For 14, Cos 13). Nei razorfiend quella matrice è
+smentita dalla formula del DM, `10d12+50`, che vuol dire Cos 20: la Tempra
+derivata (+8) è di quattro punti sotto quella della variante blu, che il DM ha
+scritto a mano (+12) con gli stessi dadi vita. Oggi il verificatore non la
+vede, perché senza `tipo` né `pf-dado` la composizione non si legge. Rigenerare
+quei `ts` dalle caratteristiche di adesso è un lotto di `derive_statblocks`
+(ADR-0033), non di questo.
 
 ---
 

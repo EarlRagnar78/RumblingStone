@@ -10,15 +10,15 @@ ca-dettaglio: (+4 Des, +4 *armatura magica*, +1 anello, +1 amuleto), contatto 15
 pf: 44
 pf-dado: 9d4+2d8+11
 ts: Temp +6, Rifl +12, Vol +9
-attributi: For 8 Des 18 Cos 12 Int 11 Sag 10 Car 21
+attributi: For 8 Des 18 Cos 12 Int 22 Sag 12 Car 16
 velocita: 'Ryn «la Voce di Ragnatela» — Ombraiola di Sonjak [ACCEPTED — DM-canon]
 attacchi:
   - Mischia pugnale +1 +7 (1d4+1)
 ```
 
-> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «9d4», una parte sola dei dadi vita. I dadi vengono dalla formula che la scheda scrive, il bonus ricavato dai pf 44 (la Cos di questa scheda è generata).
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «9d4», una parte sola dei dadi vita. I dadi vengono dalla formula che la scheda scrive, il bonus da Cos 12.
 
-> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
 Medium humanoid (elf), femmina, NE. **DV 9d4 + 2d8**. **hp 44**. **CA 20** (+4 Des, +4 *armatura magica*, +1 anello, +1 amuleto), contatto 15, colto alla sprovvista 20 (**schivare prodigioso**). Iniziativa +4. Vel 9 m.
 **TS** Temp +6, Rifl +12, Vol +9 (+2 razziale vs incantesimi, +2 vs ammaliamenti; *mantello della resistenza +2* incluso). **BAB/Lotta** +5/+4. **RI 22**.

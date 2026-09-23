@@ -19,15 +19,17 @@ uguali)»*.
 ## Il principio: prima si copia, poi si legge, poi si sceglie, e il caso per ultimo
 
 Cinque strati, in quest'ordine. Ogni caratteristica scende di strato solo se il
-precedente non la determina. Misurato sui 94 file, 2026-09-23:
+precedente non la determina. Misurato sui 93 file, 2026-09-23 (Karruk e'
+uscito dalla marca: le sue caratteristiche ora sono del DM):
 
 | strato | da dove viene | file |
 |---|---|---:|
-| **0a · copiato** | la sestina che la **scheda stessa** scrive nella prosa, in inglese o in italiano | **39** |
+| **0a · copiato** | la sestina che la **scheda stessa** scrive nella prosa, in inglese o in italiano | **41** |
 | **0b · trascritto** | la fonte citata in `Bestiario/pregen-pcgen/` (export PCGen, SRD) | **37** |
 | **1 · letto** | la Destrezza scritta in `ca-dettaglio` (`+3 Dex`) | } sugli |
-| **2 · derivato** | Des dalla CA di contatto; Cos da `pf` e `pf-dado`; For da BAB e lotta | } altri |
-| **3 · scelto** | array del **Manuale del DM 3.5**, per ruolo, con taglia e razza SRD | **18** |
+| **2 · derivato** | Des dalla CA di contatto e dall'iniziativa; Cos da `pf` e `pf-dado`; For da BAB e lotta | } altri |
+| **2-quinquies · tetto** | un TS scritto **sotto** l'atteso abbassa Cos, Des o Sag; l'iniziativa senza talenti ammette due Des | } 15 |
+| **3 · scelto** | array del **Manuale del DM 3.5**, per ruolo, con taglia e razza SRD | **15** |
 
 🔴 **Gli strati 0a e 0b la prima stesura non li aveva.** Generava numeri per
 42 file che citano la loro fonte, e per 27 che li scrivevano due righe sotto il
@@ -46,8 +48,14 @@ confronta, su due banchi separati:
 
 | banco | file | errore medio | entro ±1 di mod |
 |---|---:|---:|---:|
-| fonti citate — **in campione** (le regole sono state scelte guardandole) | 37 | 1,63 | 83% |
-| sestine delle schede — **fuori campione** (trovate dopo) | 39 | **1,84** | 79% |
+| fonti citate — **in campione** (le regole sono state scelte guardandole) | 37 | 1,50 | 85% |
+| sestine delle schede — **fuori campione** (trovate dopo) | 41 | **1,54** | 83% |
+
+Prima dello strato 2-quinquies erano 1,63 e 1,84. ⚠️ Il banco fuori campione non e'
+piu' del tutto fuori: le tre sestine nuove sono dell'ogre micelio, dell'ogre
+frantumapietra e di Zin'thara (Karruk ne e' uscito), e l'ogre frantumapietra
+era uno degli otto scarti da cui il tetto e' nato. Sulle altre 38 le regole
+non sono state scelte.
 
 Il secondo numero e' quello che conta: dice quanto il generatore vale su un
 file che non ha visto. Le mentali (Int e Car sopra i 2 punti) restano le piu'
@@ -83,6 +91,16 @@ canone non e' uno strumento, e' un dado che scrive sui file.
 🐛 **`pf-dado` in 20 statblocchi su 95 e' il danno di un'arma**, non i dadi
 vita: `1d8+7` accanto a «hp 93 (12 HD)». Il controllo e' `pf_dado_sospetto`,
 e lo usa anche `validate_bestiario --rules`.
+
+🐛 **Una parentesi dopo il punteggio nascondeva la sestina** (`_NOTA`):
+«For 25 (21 base +4 innesto)». Tre schede finivano all'array, e Zin'thara, una
+maga con Int 22, ne usciva con Car 21.
+
+🐛 **Il giro circolare con `pf-dado`**: dove la Cos era generata,
+`conformita_statblocchi` ricavava il bonus dei dadi vita dai pf supponendo la
+media, e `cos_da_pf` ricavava la Cos da quel bonus. Il generatore confermava
+se stesso: Khorn scrive «8d10+24, Cos 16» e ne usciva con Cos 18. Ora il bonus
+viene prima dalla Tempra, che e' un'identita' esatta.
 
 ## Cosa NON fa, dichiarato
 
@@ -413,10 +431,16 @@ _V = r"(\d+|—|-(?!\s*\d))"     # un punteggio, o «—»; «-4» e' un modific
 #: capiva solo l'inglese, e il bruto deforme, che scrive in italiano, finiva
 #: all'array con la Forza ricavata da una lotta che dimentica un talento.
 _SEP = r"\s*[,;]?\s*"
+#: 🐛 **La parentesi dopo il punteggio.** L'ogre micelio scrive «For 25 (21
+#: base +4 innesto), Des 8» e Zin'thara «Int 22 (20 + *fascia* +2)»: la regola
+#: di prima non ammetteva niente fra il numero e la virgola, e le due schede
+#: finivano all'array — Zin'thara, una maga, con Car 21 e Int 11. La
+#: parentesi spiega il numero e non lo sostituisce: si salta, e il numero resta.
+_NOTA = r"(?:\s*\([^)\n]{0,60}\))?"
 SESTINA = re.compile(
-    r"\b(?:Str|For)\w*\s*:?\s*" + _V + _SEP + r"(?:Dex|Des)\w*\s*:?\s*" + _V +
-    _SEP + r"(?:Con|Cos)\w*\s*:?\s*" + _V + _SEP + r"Int\w*\s*:?\s*" + _V +
-    _SEP + r"(?:Wis|Sag)\w*\s*:?\s*" + _V + _SEP + r"(?:Cha|Car)\w*\s*:?\s*" + _V, re.I)
+    r"\b(?:Str|For)\w*\s*:?\s*" + _V + _NOTA + _SEP + r"(?:Dex|Des)\w*\s*:?\s*" + _V + _NOTA +
+    _SEP + r"(?:Con|Cos)\w*\s*:?\s*" + _V + _NOTA + _SEP + r"Int\w*\s*:?\s*" + _V + _NOTA +
+    _SEP + r"(?:Wis|Sag)\w*\s*:?\s*" + _V + _NOTA + _SEP + r"(?:Cha|Car)\w*\s*:?\s*" + _V, re.I)
 PCG_STAT = re.compile(r"^STAT:(STR|DEX|CON|INT|WIS|CHA)\|SCORE:(\d+)", re.M)
 _PCG = ("STR", "DEX", "CON", "INT", "WIS", "CHA")
 
@@ -627,6 +651,69 @@ def for_da_lotta(testo: str, gs: float = 30.0) -> "tuple[int, str] | None":
     return da_modificatore(m), "ricavata da BAB e lotta"
 
 
+def iniziativa_ambigua(testo: str) -> "tuple[int, int] | None":
+    """(mod Des con Iniziativa Migliorata, mod Des senza) se i talenti non sono elencati.
+
+    `des_da_iniziativa` rifiuta, giustamente, di scegliere fra i due: senza
+    elenco un +4 puo' essere il talento o la Destrezza. Ma un valore che non e'
+    **nessuno dei due** e' sbagliato comunque, ed e' quel che l'array dava ai
+    razorfiend verde e bianco (Des 17 con iniziativa +5).
+    """
+    pulito = senza_note(testo)
+    m = INIZIATIVA_SCRITTA.search(pulito)
+    if not m or re.search(r"\b(?:Talenti|Feats)\b", pulito, re.I):
+        return None
+    i = int(m.group(1))
+    return i - 4, i
+
+
+#: Quale caratteristica porta quale TS (SRD 3.5).
+TS_CARATTERISTICA = (("Temp", "Cos"), ("Rifl", "Des"), ("Vol", "Sag"))
+TS_SCRITTI = re.compile(r"^ts:\s*Temp\s*([+-]\d+),\s*Rifl\s*([+-]\d+),\s*Vol\s*([+-]\d+)", re.M)
+
+
+def tetti_dai_ts(nome_file: str, testo: str) -> "dict[str, tuple[int, str]]":
+    """Strato 2-quinquies: un TS scritto e' un **tetto** al modificatore.
+
+    TS = base di classe e di tipo + mod della caratteristica + talenti, quindi
+    mod ≤ TS scritto − base. E' un tetto e non un'identita': un oggetto, un
+    bonus razziale o un incantesimo che la scheda non dichiara alzano il TS, e
+    `conformita_statblocchi` per questo accetta un TS **sopra** l'atteso. Un
+    TS **sotto** l'atteso, invece, dice che la caratteristica e' troppo alta.
+
+    🔎 Nasce dagli otto scarti che `conformita_statblocchi` dava «del
+    generatore» il 2026-09-23: il razorfiend blu aveva Des 17 dall'array e
+    Riflessi +8, cioe' drago 10 DV (+7) e Des +1. Per questo e' il vincolo
+    **piu' debole** della catena: abbassa solo un valore scelto dall'array,
+    e davanti a un numero ricavato da pf, CA, iniziativa o lotta si annota.
+
+    Non si usa dove la base non si sa (composizione ignota) o dove un'altra
+    caratteristica entra nei TS (Grazia divina, Benedizione oscura: il Car).
+    Restituisce {caratteristica: (modificatore massimo, nota)}.
+    """
+    import conformita_statblocchi as C       # qui: C importa questo modulo
+    ts = TS_SCRITTI.search(testo)
+    if not ts:
+        return {}
+    m_tipo = re.search(r"^tipo:\s*(.+)$", testo, re.M) or \
+        re.search(r"\*\*Size/Type\*\*:?\s*([^|\n]+)", testo)
+    tipo = m_tipo.group(1).strip() if m_tipo else ""
+    gruppi, nota = C.composizione(testo, tipo)
+    if not (gruppi and nota):
+        return {}
+    if any(g.nome.lower() in ("paladin", "paladino", "pal", "blackguard") and g.n >= 2
+           for g in gruppi):
+        return {}
+    s = C.Scheda(file=Path(nome_file), gs=0.0, tipo=tipo, attributi={}, provenienza="",
+                 gruppi=gruppi, composizione_nota=True, testo=testo)
+    minimi, _ = C.ts_attesi(s, {})       # caratteristiche assenti: mod 0
+    fuori = {}
+    for (nome, car), scritto, base in zip(TS_CARATTERISTICA, ts.groups(), minimi):
+        fuori[car] = (int(scritto) - base,
+                      f"ricavata da {nome} {int(scritto):+d} (base {base:+d})")
+    return fuori
+
+
 def profilo_di(ruolo: str) -> "tuple[str, ...]":
     basso = ruolo.lower()
     for chiave, ordine in PROFILI:
@@ -783,6 +870,7 @@ def genera(nome_file: str, ruolo: str, gs: float, testo: str,
     fonte_numeri = numeri_della_fonte(testo) if fonte and not scheda else {}
     lotta_scritta = LOTTA_SCRITTA.search(senza_note(testo))
     iniz_scritta = INIZIATIVA_SCRITTA.search(senza_note(testo))
+    ricavate = set()
     for campo, trova in (("Des", des_vincolata), ("Des", des_da_iniziativa),
                          ("Cos", cos_da_pf), ("For", for_da_lotta)):
         if campo == "Cos" and nonmorto:
@@ -827,6 +915,37 @@ def genera(nome_file: str, ruolo: str, gs: float, testo: str,
                         "lo statblocco è stato adattato e vince lo statblocco")
         else:
             note.append(f"{campo} {valore} **{come}** — il vincolo batte l'array")
+        ricavate.add(campo)
+
+    # l'iniziativa senza elenco dei talenti: due candidati, l'array sceglie
+    iniz = iniziativa_ambigua(testo)
+    if iniz and not fonte and "Des" not in ricavate and isinstance(valori["Des"], int) \
+            and mod(valori["Des"]) not in iniz:
+        prima = valori["Des"]
+        # il piu' vicino all'array; a pari distanza il piu' basso, cioe' il
+        # talento: e' il piu' comune dei talenti dei mostri, e l'array non
+        # gonfia una caratteristica per spiegare un numero
+        scelto = min(iniz, key=lambda m: (abs(m - mod(prima)), m))
+        valori["Des"] = da_modificatore(scelto) + (prima % 2)
+        ricavate.add("Des")
+        note.append(f"Des {valori['Des']} **ricavata dall'iniziativa {iniz[1]:+d}**, "
+                    f"con Iniziativa Migliorata {'supposta' if scelto == iniz[0] else 'esclusa'}: "
+                    "la scheda non elenca i talenti, e dei due valori possibili si tiene "
+                    "il più vicino all'array")
+
+    # il tetto dei TS: ultimo e piu' debole, tocca solo un valore dell'array
+    for campo, (tetto, come) in tetti_dai_ts(nome_file, testo).items():
+        prima = valori[campo]
+        if not isinstance(prima, int) or mod(prima) <= tetto:
+            continue
+        if campo == "Cos" and nonmorto:
+            continue
+        if fonte or campo in ricavate or tetto < -5:
+            note.append(f"⚠ {campo} al più {da_modificatore(tetto) + 1} {come}, "
+                        f"ma {prima} viene da un dato più forte: si tiene, da verificare.")
+            continue
+        valori[campo] = da_modificatore(tetto) + (prima % 2)
+        note.append(f"{campo} {valori[campo]} **{come}** — il tetto del TS batte l'array")
 
     # SRD 3.5, tipo non morto: **nessun punteggio di Costituzione**. I suoi pf
     # vengono da d12 senza modificatore, e un Cos 10 scritto accanto sarebbe

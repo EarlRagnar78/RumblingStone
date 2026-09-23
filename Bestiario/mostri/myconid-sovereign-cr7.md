@@ -18,7 +18,7 @@ voci:
   - Talenti: Tempra Possente, Volontà di Ferro, Attacco Poderoso, Spinta/Iniziativa Migliorata, Allerta
 ```
 
-> [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
+> [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili. ⚠ Cos al più 17 ricavata da Temp +14 (base +11), ma 18 viene da un dato più forte: si tiene, da verificare. ⚠ Sag al più 15 ricavata da Vol +8 (base +6), ma 16 viene da un dato più forte: si tiene, da verificare.
 
 Large plant, 14d8+56. **hp 119**; **AC 20** (-1 taglia, +11 naturale), touch 9, flat-footed 20. Vel 6 m. TS Temp +14, Rifl +5, Vol +8. BAB +10; Lotta +22. RI 20.
 **Mischia** schianto +17 (2d6+8). **Nube di spore**, **spore telepatiche**, **spore stordenti**. Scurovisione 18 m, visione crepuscolare, tratti vegetali. Talenti: Tempra Possente, Volontà di Ferro, Attacco Poderoso, Spinta/Iniziativa Migliorata, Allerta.

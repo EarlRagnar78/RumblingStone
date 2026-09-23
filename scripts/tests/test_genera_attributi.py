@@ -235,8 +235,77 @@ class TestIlRepoVero(unittest.TestCase):
     def test_la_taratura_non_peggiora(self):
         # 2026-09-23: 1,63 in campione, 1,84 fuori. Una regola nuova che le
         # alza va spiegata, non taciuta.
-        self.assertLessEqual(G.taratura("fonti")["mae"], 1.70)
-        self.assertLessEqual(G.taratura("schede")["mae"], 1.90)
+        # 2026-09-23, col tetto dei TS e l'iniziativa a due candidati:
+        # 1,50 in campione e 1,54 fuori (erano 1,63 e 1,84)
+        self.assertLessEqual(G.taratura("fonti")["mae"], 1.60)
+        self.assertLessEqual(G.taratura("schede")["mae"], 1.65)
+
+
+DRAGO = ("```statblocco\ngs: 9\ntipo: Large dragon\nca: 24\npf: 115\n"
+         "pf-dado: 10d12+50\nts: Temp +12, Rifl +8, Vol +9\niniziativa: +5\n```\n")
+
+
+class TestLaParentesiDopoIlNumero(unittest.TestCase):
+    """🐛 L'ogre micelio e Zin'thara finivano all'array per una parentesi."""
+
+    def test_la_parentesi_si_salta_e_il_numero_resta(self):
+        riga = ("**Car** For 25 (21 base +4 innesto), Des 8, Cos 17 (15 +2 innesto), "
+                "Int 4, Sag 10, Car 5.")
+        v, _ = G.dalla_scheda(riga)
+        self.assertEqual((v["For"], v["Cos"], v["Int"]), (25, 17, 4))
+
+    def test_anche_la_parentesi_lunga_dell_ira(self):
+        riga = ("**Car** For 25 (*cintura della forza del gigante +2*; **29 in ira**), "
+                "Des 8, Cos 15 (**19 in ira**), Int 6, Sag 10, Car 7.")
+        v, _ = G.dalla_scheda(riga)
+        self.assertEqual((v["For"], v["Cos"]), (25, 15))   # fuori ira, non 29
+
+
+class TestIlTettoDeiTS(unittest.TestCase):
+    """Un TS scritto sotto l'atteso dice che la caratteristica e' troppo alta."""
+
+    def test_il_tetto_del_drago(self):
+        # drago 10 DV: tutti buoni, +7. Rifl +8 → Des al piu' +1
+        t = G.tetti_dai_ts("prova-cr9.md", DRAGO)
+        self.assertEqual((t["Des"][0], t["Cos"][0], t["Sag"][0]), (1, 5, 2))
+
+    def test_abbassa_un_valore_dell_array(self):
+        # senza iniziativa, che la Des la fisserebbe prima del tetto
+        v, note = G.genera("prova-cr9.md", "skirmisher", 9.0, DRAGO.replace("iniziativa: +5\n", ""))
+        self.assertLessEqual(G.mod(v["Des"]), 1)
+        self.assertTrue(any("tetto del TS" in n for n in note))
+
+    def test_non_tocca_i_numeri_della_scheda(self):
+        # la prova che morde: il tetto e' il vincolo piu' debole, e davanti
+        # ai numeri del DM si annota invece di scrivere
+        testo = DRAGO + "\nStr 22, Dex 17, Con 20, Int 10, Wis 11, Cha 9\n"
+        v, note = G.genera("prova-cr9.md", "skirmisher", 9.0, testo)
+        self.assertEqual(v["Des"], 17)
+        self.assertTrue(any(n.startswith("⚠ Des al più") for n in note))
+
+    def test_senza_composizione_non_c_e_tetto(self):
+        # un TS senza una base nota non limita niente: indovinarla e' inventare
+        self.assertEqual(G.tetti_dai_ts("x-cr3.md", "ts: Temp +2, Rifl +2, Vol +2\n"), {})
+
+    def test_il_paladino_si_salta(self):
+        testo = ("```statblocco\ngs: 5\ntipo: Medium humanoid (human), Paladin 5\n"
+                 "pf: 40\nts: Temp +6, Rifl +3, Vol +3\n```\n")
+        self.assertEqual(G.tetti_dai_ts("x-cr5.md", testo), {})
+
+
+class TestLIniziativaADueCandidati(unittest.TestCase):
+    """Senza elenco dei talenti +5 e' Des +5, o Des +1 col talento: mai Des +3."""
+
+    def test_i_due_candidati(self):
+        self.assertEqual(G.iniziativa_ambigua("iniziativa: +5\n"), (1, 5))
+
+    def test_con_i_talenti_non_e_ambigua(self):
+        self.assertIsNone(G.iniziativa_ambigua("iniziativa: +5\n**Talenti** Robustezza\n"))
+
+    def test_il_generatore_sceglie_fra_i_due(self):
+        testo = DRAGO.replace("ts: Temp +12, Rifl +8, Vol +9\n", "")
+        v, _ = G.genera("prova-cr9.md", "skirmisher", 9.0, testo)
+        self.assertIn(G.mod(v["Des"]), (1, 5))
 
 
 if __name__ == "__main__":

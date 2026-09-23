@@ -4,35 +4,35 @@
 
 ```statblocco
 gs: 8
-tipo: Large undead (incorporeal), 9d12
+tipo: Large undead (incorporeal), fantasma PF1e su leone crudele, 9d8
 ca: 20
-ca-dettaglio: (−1 taglia, +4 Des, +7 deflessione), contatto 20, colto alla sprovvista 16
-pf: 58
-pf-dado: 9d12
-ts: Temp +3, Rifl +7, Vol +7
+ca-dettaglio: (−1 taglia, +4 Des, +7 deflessione dal Carisma), contatto 20, colto alla sprovvista 16
+pf: 103
+pf-dado: 9d8+63
+ts: Temp +10, Rifl +7, Vol +7
 velocita: 12 m, volare 12 m (perfetta)
-iniziativa: +6
+iniziativa: +4
 attributi: For — Des 18 Cos — Int 11 Sag 12 Car 24
 attacchi:
-  - Mischia morso incorporeo +10 (2d6 freddo + energia negativa)
+  - Mischia tocco corruttore +9 (8d6, contatto incorporeo; Tempra CD 21 dimezza)
 voci:
-  - BAB +4; lotta — (incorporeo)
+  - BAB +6; lotta — (incorporeo)
   - Incorporeo: 50% di mancare contro gli attacchi non magici; passa attraverso muri e pavimenti
-  - Attacco completo: il morso, più eventuali artigli come attacchi secondari
-  - Gemito Terrificante: Volontà CD 17 o in preda al panico per 2d4 round (dalla scheda del Bestiario; la fonte d'arco non lo nomina)
-  - Volare 12 m (perfetta)
+  - Resistenza a incanalare +4; ringiovanimento (torna in 2d4 giorni se non si scioglie il suo legame con la tana del Ghostlord)
+  - Gemito Terrificante: Volontà CD 21 o in preda al panico per 2d4 round (effetto di paura, sonoro)
+  - Percezione e Furtività +8 razziale
   - Regia: 2-3 esemplari per sala portano l'incontro a GS 13
-fonte: trascritto dalla fonte d'arco `Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-STATBLOCCHI.md` §2 (D5, DM 2026-09-23)
+fonte: fantasma PF1e (scelto dal DM il 2026-09-23 come la versione più forte, D5) sul leone della fonte d'arco `Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-STATBLOCCHI.md` §2
 ```
 
-> [INFERRED — needs DM confirmation] **D5, deciso dal DM il 2026-09-23: si trascrive la fonte d'arco.** La scheda portava `8d12+40` (pf 92) con Cos 20, che un non morto non ha, e una spada corta +15 (1d6+8): un artefatto del generatore, che dalla fonte si era allontanato. Dalla fonte: 9d12 (pf 58), CA 20, BAB +4, morso incorporeo +10, TS +3/+7/+7. `attributi` ricavati: Des 18 dal +4 di Des nella CA, Sag 12 dalla Volontà (+6 base, +1), Car 24 dalla deflessione +7 (quella del fantasma è il modificatore di Carisma), For e Cos «—» (incorporeo, non morto); Int 11 resta quella della scheda. Il valore vecchio: pf 92, CA 15, TS +7/+5/+7, spada corta +15.
+> [INFERRED — needs DM confirmation] **D5, deciso dal DM il 2026-09-23: la versione più forte fra 3.5 e PF1e, e coerente con le sue regole.** Sulla stessa base della fonte d'arco (9 DV, Des 18, Sag 12, Car 24 dalla sua deflessione +7), il **fantasma PF1e** vince su quello 3.5 quasi ovunque: pf 9d8 + Car per DV = **103** contro 9d12 = 58; Tempra dal Carisma **+10** contro +3; BAB ¾ **+6** contro ½ +4; **tocco corruttore 8d6** (1d6 per GS) contro 1d6. CA 20 e Riflessi +7 sono uguali nelle due. Dal PF1e: iniziativa **+4** (Des +4, nessun talento: chiude D12), tocco corruttore **+9** (BAB +6, Des +4, Grande −1), CD **21** per tocco e gemito (10 + metà dei DV + Car). Il morso incorporeo +10 della fonte non è un potere del fantasma e sparisce. ⚠ **Le regole del template sono citate a memoria**: i siti del SRD 3.5 e del PRD erano bloccati dalla rete di questo ambiente il 2026-09-23. Da rileggere sul PRD: il dado del tocco corruttore e le CD. I valori prima di oggi: pf 92, CA 15, TS +7/+5/+7, spada corta +15; poi, trascritta la fonte, pf 58, TS +3/+7/+7, morso +10.
 
-**Source**: MM Dire Lion + Ghost template (MM p.117) — Ghostlord lair guardians
+**Source**: leone crudele della fonte d'arco (`09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-STATBLOCCHI.md` §2) + template **fantasma PF1e** (D5) — Ghostlord lair guardians
 **Status**: inferred — base template only; DM should finalize exact stats at the table.
 
 ## Summary
 
-Undead incorporeal dire lion. Incorporeal bite +10 (2d6 cold + negative energy); Frightful Moan (DC 17 Will or panicked 2d4 rounds); fly 40 ft (perfect). Use 2-3 per chamber to scale toward EL 11-13. Source: Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-STATBLOCCHI.md §2.
+Undead incorporeal dire lion, PF1e ghost. Corrupting touch +9 (8d6, Fort DC 21 half); Frightful Moan (Will DC 21 or panicked 2d4 rounds); fly 40 ft (perfect); 103 hp. Use 2-3 per chamber to scale toward EL 11-13. Source: Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-STATBLOCCHI.md §2.
 
 ## Notes
 

@@ -264,7 +264,7 @@ def composizione(testo: str, tipo: str) -> "tuple[list[Gruppo], bool]":
     chiave = T.normalizza_tipo(tipo) if tipo else None
     if chiave not in T.TIPI:
         return gruppi, bool(gruppi) and (totale is None or totale == livelli)
-    dado, bab, buoni = T.TIPI[chiave]
+    dado, bab, buoni = NON_MORTO_PF1E if non_morto_pf1e(tipo) else T.TIPI[chiave]
     scritti = dadi_di_pf(testo)
     if chiave == "humanoid" and not gruppi and (totale or 0) <= 1:
         # un umanoide da 1 DV ha un livello di classe al posto del DV razziale
@@ -327,12 +327,29 @@ def bab_atteso(s: Scheda) -> int:
 COSTRUTTO_PF = {8: 0, 4: 0, 2: 0, 1: 10, 0: 20, -1: 30, -2: 40, -4: 60, -8: 80}
 
 
+#: PF1e, tipo non morto: DV d8, BAB 3/4, Volonta' buona, e il **Carisma** al
+#: posto della Costituzione per pf e Tempra. Vale solo dove la scheda lo
+#: dichiara nel `tipo` («… PF1e»): il leone spettrale (D5, 2026-09-23) e' un
+#: fantasma PF1e perche' il DM ha scelto la versione piu' forte fra le due.
+NON_MORTO_PF1E = (8, 0.75, ("vol",))
+PF1E = re.compile(r"\bPF1e\b", re.I)
+
+
+def non_morto_pf1e(tipo: str) -> bool:
+    return bool(PF1E.search(tipo)) and T.normalizza_tipo(tipo) == "undead"
+
+
+def cos_o_car(s: "Scheda", attr: dict) -> int:
+    """Il modificatore che fa da Costituzione: il Carisma per un non morto PF1e."""
+    return mod(attr.get("Car")) if non_morto_pf1e(s.tipo) else mod(attr.get("Cos"))
+
+
 def pf_bonus(s: Scheda, attr: dict) -> "int | None":
     """Il bonus fisso ai pf: DV × mod Cos, +3 per Robustezza. None se non si sa."""
     if T.normalizza_tipo(s.tipo) == "construct":
         return None         # la fonte SRD scrive bonus che la tabella per taglia non spiega
     dv = sum(g.n for g in s.gruppi)
-    return dv * mod(attr.get("Cos")) + GA.robustezza(s.testo, dv)
+    return dv * cos_o_car(s, attr) + GA.robustezza(s.testo, dv)
 
 
 def pf_attesi(s: Scheda, attr: dict) -> "dict | None":
@@ -377,7 +394,7 @@ def ts_attesi(s: Scheda, attr: dict) -> "tuple[tuple, tuple]":
                 v = buono if k in g.buoni else cattivo
                 lo[k] += v
                 hi[k] += v
-    mods = [mod(attr.get("Cos")), mod(attr.get("Des")), mod(attr.get("Sag"))]
+    mods = [cos_o_car(s, attr), mod(attr.get("Des")), mod(attr.get("Sag"))]
     # Grazia divina (paladino) e Benedizione oscura (blackguard): Car a tutti i TS
     if any(g.nome.lower() in ("paladin", "paladino", "pal", "blackguard") and g.n >= 2
            for g in s.gruppi):

@@ -234,6 +234,23 @@ class TestIncorporeo(unittest.TestCase):
         self.assertEqual(C.verifica(s)["attacco"][1], 6)     # BAB 3 + For 3, non Des 4
 
 
+class TestNonMortoPF1e(unittest.TestCase):
+    """D5: il fantasma PF1e ha d8, BAB 3/4 e il Carisma al posto della Costituzione."""
+    CORPO = ("gs: 8\ntipo: Large undead (incorporeal){pf1e}, 9d8\nca: 20\npf: 103\n"
+             "pf-dado: 9d8+63\nts: Temp +10, Rifl +7, Vol +7\n"
+             "attributi: For — Des 18 Cos — Int 11 Sag 12 Car 24")
+
+    def test_dichiarato_torna(self):
+        e = C.verifica(scheda(self.CORPO.format(pf1e=", fantasma PF1e")))
+        self.assertEqual({k: v[2] for k, v in e.items() if isinstance(v, tuple)},
+                         {"pf": 0, "Temp": 0, "Rifl": 0, "Vol": 0})
+
+    def test_senza_dichiarazione_e_un_non_morto_3_5(self):
+        # la prova che morde: senza «PF1e» il Carisma non entra, e Tempra e pf non tornano
+        e = C.verifica(scheda(self.CORPO.format(pf1e="")))
+        self.assertTrue(any(v[2] for k, v in e.items() if isinstance(v, tuple) and k in ("pf", "Temp")))
+
+
 class TestIlGiroCircolare(unittest.TestCase):
     """🐛 Il bonus di `pf-dado` ricavato dai pf, e la Cos ricavata da quel bonus.
 

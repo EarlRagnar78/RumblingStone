@@ -31,8 +31,9 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 import conformita_statblocchi as C  # noqa: E402
 import derive_statblocks as D  # noqa: E402
-import genera_attributi as GA  # noqa: E402
 from dmcore.statblock import estrai  # noqa: E402
+from dmcore import caratteristiche as CAR  # noqa: E402
+from dmcore import lettura_creatura as LC  # noqa: E402
 
 SCHEDA = """\
 # Sergente di Prova
@@ -66,11 +67,11 @@ class TestLeCaratteristicheVengonoScritte(unittest.TestCase):
 
     def test_il_blocco_porta_attributi_e_la_marca_di_genera_attributi(self):
         self.assertRegex(self.t, r"(?m)^attributi: For \d+ Des \d+ Cos \d+")
-        self.assertIn(GA.MARCA, self.t)
+        self.assertIn(LC.MARCA, self.t)
         self.assertIn("derivati dalle tabelle: ts, attributi", self.t)
 
     def test_un_verificatore_indipendente_li_trova_coerenti(self):
-        g = C.giudica(C.leggi(self.f))
+        g = C.giudica(LC.leggi(self.f))
         self.assertEqual(g["provenienza"], "generate")
         self.assertTrue(g["verificabile"])
         self.assertEqual(g["scarti"], {})
@@ -78,9 +79,9 @@ class TestLeCaratteristicheVengonoScritte(unittest.TestCase):
                          {"Temp", "Rifl", "Vol"})
 
     def test_genera_attributi_li_riproduce_rileggendo_il_file(self):
-        v, _ = GA.genera(self.f.name, "melee-heavy", 3.0, self.t)
+        v, _ = CAR.genera(self.f.name, "melee-heavy", 3.0, self.t)
         scritta = next(r for r in self.t.splitlines() if r.startswith("attributi:"))
-        self.assertEqual(GA.riga_attributi(v), scritta)
+        self.assertEqual(CAR.riga_attributi(v), scritta)
 
     def test_i_ts_della_matrice_non_scelgono_le_caratteristiche(self):
         # la prova che morde: la prima stesura dava Cos 12 (tetto dai TS della

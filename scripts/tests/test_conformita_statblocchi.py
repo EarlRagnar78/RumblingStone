@@ -17,15 +17,15 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 import conformita_statblocchi as C  # noqa: E402
-import genera_attributi as GA  # noqa: E402
+from dmcore import lettura_creatura as LC  # noqa: E402
 
 
-def scheda(corpo: str, prosa: str = "", titolo: str = "# Prova") -> C.Scheda:
+def scheda(corpo: str, prosa: str = "", titolo: str = "# Prova") -> LC.Scheda:
     """Una scheda finta su disco, letta dal lettore vero."""
     d = Path(tempfile.mkdtemp())
     p = d / "prova-cr3.md"
     p.write_text(f"{titolo}\n\n```statblocco\n{corpo}\n```\n\n{prosa}\n", encoding="utf-8")
-    return C.leggi(p)
+    return LC.leggi(p)
 
 
 class TestLeIdentitaDelSRD(unittest.TestCase):
@@ -61,7 +61,7 @@ class TestIFalsiPositiviGiaTrovati(unittest.TestCase):
     def test_i_dv_razziali_nel_tipo_non_sono_il_totale(self):
         # «Minotauro (6 HD) / Barbarian 1», e il totale 7 sta accanto ai pf
         t = "tipo: Large monstrous humanoid, Minotauro (6 HD) / Barbarian 1\n**hp 67** (7 HD)"
-        self.assertEqual(C.dv_totali(t), 7)
+        self.assertEqual(LC.dv_totali(t), 7)
 
     def test_una_classe_non_srd_rende_la_composizione_ignota(self):
         s = scheda("gs: 10\ntipo: Medium humanoid (dwarf), Paladin 8 / Hammer of Moradin 2\n"
@@ -92,7 +92,7 @@ class TestIFalsiPositiviGiaTrovati(unittest.TestCase):
         self.assertEqual(C.scarti(C.verifica(s)), {})
 
     def test_lottare_migliorato_si_riconosce_anche_in_italiano(self):
-        self.assertTrue(C.LOTTA_MIGLIORATA.search("Talenti: Lottare Migliorato"))
+        self.assertTrue(LC.LOTTA_MIGLIORATA.search("Talenti: Lottare Migliorato"))
 
 
 class TestIlTemplateSpiegaLoScarto(unittest.TestCase):
@@ -119,7 +119,7 @@ class TestITalentiMordono(unittest.TestCase):
 
     def test_iniziativa_migliorata_scritta_compressa(self):
         # «Iniziativa/Scacciare Migliorato» sono due talenti in una parola
-        self.assertEqual(C.talenti("Talenti: Iniziativa/Scacciare Migliorato")["init"], 4)
+        self.assertEqual(LC.talenti("Talenti: Iniziativa/Scacciare Migliorato")["init"], 4)
 
     def test_iniziativa_e_un_identita(self):
         s = scheda("gs: 3\nca: 14\npf: 15\niniziativa: -1\nts: Temp +6, Rifl +0, Vol +0\n"
@@ -169,17 +169,17 @@ class TestLaVarianteAdvanced(unittest.TestCase):
 class TestPfDado(unittest.TestCase):
     def test_la_formula_scritta_vince(self):
         t = "pf-dado: 4d8\n**DV 4d8 + 6d12**. **hp 77**"
-        self.assertEqual(GA.dadi_vita(t)[0], [(4, 8), (6, 12)])
-        self.assertIn("formula scritta", GA.pf_dado_sospetto(t, 9))
+        self.assertEqual(LC.dadi_vita(t)[0], [(4, 8), (6, 12)])
+        self.assertIn("formula scritta", LC.pf_dado_sospetto(t, 9))
 
     def test_robustezza_e_robustezza_migliorata_non_sono_lo_stesso_talento(self):
-        self.assertEqual(GA.robustezza("Talenti: Robustezza", 5), 3)
-        self.assertEqual(GA.robustezza("Talenti: Robustezza Migliorata", 5), 5)
-        self.assertEqual(GA.robustezza("Talenti: Robustezza, Robustezza Migliorata", 5), 8)
+        self.assertEqual(LC.robustezza("Talenti: Robustezza", 5), 3)
+        self.assertEqual(LC.robustezza("Talenti: Robustezza Migliorata", 5), 5)
+        self.assertEqual(LC.robustezza("Talenti: Robustezza, Robustezza Migliorata", 5), 8)
 
     def test_il_gs_si_legge_se_non_lo_passano(self):
         # `1d8+2` per un chierico di 3° passava per dadi vita a chi non dava il GS
-        self.assertIsNotNone(GA.pf_dado_sospetto("gs: 4\npf-dado: 1d8+2\n"))
+        self.assertIsNotNone(LC.pf_dado_sospetto("gs: 4\npf-dado: 1d8+2\n"))
 
     def test_la_ricostruzione_dalle_classi(self):
         s = scheda("gs: 12\ntipo: Medium humanoid (dwarf), Cleric 6 / Expert 6\nca: 23\npf: 93\n"
@@ -259,13 +259,13 @@ class TestIlGiroCircolare(unittest.TestCase):
     """
 
     def test_la_tempra_viene_prima_della_media(self):
-        s = C.leggi(ROOT / "Bestiario/png/Khorn/khorn-ufficiale-hammerfist-cr8.md")
+        s = LC.leggi(ROOT / "Bestiario/png/Khorn/khorn-ufficiale-hammerfist-cr8.md")
         c = C.pf_dado_corretto(s, forza=True)
         self.assertEqual(c["nuovo"], "8d10+24")
         self.assertIn("dalla Tempra +9", c["bonus"])
 
     @staticmethod
-    def _guerriero(pf: int, temp: str) -> C.Scheda:
+    def _guerriero(pf: int, temp: str) -> LC.Scheda:
         s = scheda(f"gs: 4\ntipo: Medium humanoid (human), Fighter 4\npf: {pf}\n"
                    f"pf-dado: 1d8+4\nts: Temp {temp}, Rifl +1, Vol +1\n"
                    "attributi: For 16 Des 12 Cos 10 Int 10 Sag 10 Car 8\n"

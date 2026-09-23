@@ -66,6 +66,8 @@ import extract_statblocks as E  # noqa: E402
 import genera_attributi as GA  # noqa: E402
 import genera_creatura as GC  # noqa: E402
 from dmcore.statblock import rendi  # noqa: E402
+from dmcore import caratteristiche as CAR  # noqa: E402
+from dmcore import lettura_creatura as LC  # noqa: E402
 
 FIXTURE = ROOT / "scripts" / "tests" / "fixtures" / "impronta-creature.json"
 
@@ -105,29 +107,29 @@ def letture(p: Path, testo: str) -> dict:
     m_tipo = re.search(r"^tipo:\s*(.+)$", testo, re.M) or \
         re.search(r"\*\*Size/Type\*\*:?\s*([^|\n]+)", testo)
     tipo = m_tipo.group(1).strip() if m_tipo else ""
-    gruppi, nota = C.composizione(testo, tipo)
+    gruppi, nota = LC.composizione(testo, tipo)
     fuori = {
-        "taglia": GA.taglia_di(testo),
-        "dadi_vita": GA.dadi_vita(testo),
-        "pf_dado_sospetto": GA.pf_dado_sospetto(testo),
-        "pf_dado_sospetto_col_gs": GA.pf_dado_sospetto(testo, gs),
-        "dalla_scheda": GA.dalla_scheda(testo),
-        "dalla_fonte": GA.dalla_fonte(p.name, testo),
-        "sestine_citate": GA.sestine_citate(testo),
-        "numeri_della_fonte": GA.numeri_della_fonte(testo),
-        "tetti_dai_ts": GA.tetti_dai_ts(str(p), testo),
-        "iniziativa_ambigua": GA.iniziativa_ambigua(testo),
-        "senza_note": len(GA.senza_note(testo)),
+        "taglia": LC.taglia_di(testo),
+        "dadi_vita": LC.dadi_vita(testo),
+        "pf_dado_sospetto": LC.pf_dado_sospetto(testo),
+        "pf_dado_sospetto_col_gs": LC.pf_dado_sospetto(testo, gs),
+        "dalla_scheda": LC.dalla_scheda(testo),
+        "dalla_fonte": CAR.dalla_fonte(p.name, testo),
+        "sestine_citate": LC.sestine_citate(testo),
+        "numeri_della_fonte": LC.numeri_della_fonte(testo),
+        "tetti_dai_ts": LC.tetti_dai_ts(str(p), testo),
+        "iniziativa_ambigua": CAR.iniziativa_ambigua(testo),
+        "senza_note": len(LC.senza_note(testo)),
         "composizione": [gruppi, nota],
-        "dv_totali": C.dv_totali(testo),
-        "dadi_di_pf": C.dadi_di_pf(testo),
-        "talenti": C.talenti(testo),
-        "provenienza": C.provenienza(testo),
+        "dv_totali": LC.dv_totali(testo),
+        "dadi_di_pf": LC.dadi_di_pf(testo),
+        "talenti": LC.talenti(testo),
+        "provenienza": LC.provenienza(testo),
         "template_dichiarati": C.template_dichiarati(testo),
     }
     if gs is not None:
         fuori["vincoli"] = {f.__name__: f(testo, gs) for f in (
-            GA.des_vincolata, GA.des_da_iniziativa, GA.cos_da_pf, GA.for_da_lotta)}
+            CAR.des_vincolata, CAR.des_da_iniziativa, CAR.cos_da_pf, CAR.for_da_lotta)}
     return fuori
 
 
@@ -136,15 +138,15 @@ def bestiario() -> dict:
     for p in sorted(ROOT.glob("Bestiario/**/*-cr*.md")):
         testo = p.read_text(encoding="utf-8", errors="replace")
         voce = {"controlla": E.controlla(p)}
-        if GA.BLOCCO.search(testo):
+        if LC.BLOCCO.search(testo):
             voce["letture"] = letture(p, testo)
             gs = _gs(testo)
             ruolo = re.search(r"\*\*Role\*\*:\s*([^\|\n]+)", testo, re.I)
             ruolo = ruolo.group(1).strip() if ruolo else ""
             if gs is not None:
-                voce["genera"] = GA.genera(p.name, ruolo, gs, testo)
-                voce["genera_senza_fonte"] = GA.genera(p.name, ruolo, gs, testo, usa_fonte=False)
-        s = C.leggi(p)
+                voce["genera"] = CAR.genera(p.name, ruolo, gs, testo)
+                voce["genera_senza_fonte"] = CAR.genera(p.name, ruolo, gs, testo, usa_fonte=False)
+        s = LC.leggi(p)
         if s:
             voce["scheda"] = {k: getattr(s, k) for k in (
                 "gs", "tipo", "attributi", "provenienza", "gruppi", "composizione_nota",

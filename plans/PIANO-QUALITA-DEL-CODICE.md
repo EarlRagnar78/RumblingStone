@@ -1,6 +1,6 @@
 # PIANO — La qualità del codice, misurata prima e dopo
 
-> **Stato**: 🟡 **riaperto il 2026-09-23 col lotto E** (§8, una libreria per le creature). I lotti 0, A, B, C, D sono chiusi dal 2026-09-03
+> **Stato**: 🟡 **riaperto il 2026-09-23 col lotto E** (§8, una libreria per le creature). I lotti 0, A, B, C, D sono chiusi dal 2026-09-03; del lotto E resta E9, bloccato su D3
 > **Aperto**: 2026-09-03
 > **Nasce da**: domanda del DM — *«per ogni script si dovrebbe guardare: c'è una
 > libreria o un tool open source che risolve il problema? posso usare oggetti già
@@ -416,23 +416,23 @@ Nel lotto B ha trovato un difetto nel test stesso, che rileggendolo non si vedev
 | Il cancello blocco/prosa | ADR-0033, emendamento 2026-09-23 | resta in `extract_statblocks` |
 | `slug` e testo | lotto A di questo piano | già in `dmcore/testo.py` |
 
-### §8.2 · La misura di partenza (presa il 2026-09-23 su `45306c8`, rimisurata dopo le decisioni D1-D12 della conformità)
+### §8.2 · La misura di partenza (presa il 2026-09-23 su `45306c8`, rimisurata dopo le decisioni D1-D12 della conformità), e dopo E8
 
-| Cosa | Oggi | Come si rimisura |
-|---|---:|---|
-| Righe dei quattro script | **3.503** | `wc -l scripts/{derive_statblocks,genera_attributi,genera_creatura,conformita_statblocchi}.py` |
-| Funzioni e classi di primo livello | GA 32 · C 33 · D 5 · GC 26 | `grep -cE "^def \|^class " …` |
-| Espressioni regolari di modulo | GA 25 · C 14 · D 4 · GC 0 | `grep -cE "^[A-Z_]+ = re.compile" …` |
-| Simboli che `conformita_statblocchi` importa da `genera_attributi` | **23** | lo script di §8.7, passo 3 |
-| Import circolare `genera_attributi` ↔ `conformita_statblocchi` | **1**, pigro dentro `tetti_dai_ts` | `grep -n "import conformita_statblocchi" scripts/genera_attributi.py` |
-| Implementazioni della base dei TS (buono 2 + L/2, cattivo L/3) | **4**: `derive_statblocks.deriva`, `genera_creatura._tiri_salvezza`, `conformita_statblocchi.ts_attesi` (riscrive la formula invece di usare `T.ts_buono`), `genera_attributi` (tramite il verificatore) | `grep -n "ts_buono\|ts_cattivo\|2 + .*// 2" scripts/*.py` |
-| Lettori di classi e DV dal testo | **3**: `derive_statblocks.leggi_scheda`, `genera_attributi.dadi_vita`, `conformita_statblocchi.composizione` | lettura dei tre |
-| Tabelle «ruolo → ordine delle caratteristiche» | **2**: `genera_attributi.PROFILI` (33 chiavi), `genera_creatura.RUOLI[…].priorita` (6 ruoli). **Dei 6 ruoli, 2 coincidono** (bruto, comandante); schermagliatore, tiratore, blaster e controllore ordinano diverso | `python3 -c` di §8.7, passo 4 |
-| Corpi di funzione identici in file diversi (§5) | **1** | lo script di §5 |
-| Script che usano `dmcore` | **28 su 63** | `grep -l "from dmcore" scripts/*.py \| wc -l` |
-| Test | **1165** verdi, 21 saltati | `python3 -m pytest -q scripts/tests/` |
-| Taratura dello strato scelto | **1,50** in campione · **1,51** fuori | `python3 scripts/genera_attributi.py --taratura` |
-| Conformità | **102** tornano · 5 come la fonte · 0 decisioni · 0 da correggere · 0 scarti del generatore | `python3 scripts/conformita_statblocchi.py --riepilogo` |
+| Cosa | Prima del lotto | Dopo E8 | Come si rimisura |
+|---|---:|---|---|
+| Righe dei quattro script | **3.503** | **2.431**, più **1.288** nei tre moduli di `dmcore`: **3.719** in tutto (+216) | `wc -l scripts/{derive_statblocks,genera_attributi,genera_creatura,conformita_statblocchi}.py` |
+| Funzioni e classi di primo livello | GA 32 · C 33 · D 5 · GC 26 | GA 6 · C 24 · D 5 · GC 26; in `dmcore` progressione 5 · lettore 23 · scelta 14 | `grep -cE "^def \|^class " …` |
+| Espressioni regolari di modulo | GA 25 · C 14 · D 4 · GC 0 | GA 2 · C 6 · D 4 · GC 0; in `dmcore` progressione 1 · lettore 26 · scelta 4 | `grep -cE "^[A-Z_]+ = re.compile" …` |
+| Simboli che `conformita_statblocchi` importa da `genera_attributi` | **23** | **0** (E3b) | lo script di §8.7, passo 3 |
+| Import circolare `genera_attributi` ↔ `conformita_statblocchi` | **1**, pigro dentro `tetti_dai_ts` | **0** (E3b), e E4 lo vieta con un test | `grep -n "import conformita_statblocchi" scripts/genera_attributi.py` |
+| Implementazioni della base dei TS (buono 2 + L/2, cattivo L/3) | **4**: `derive_statblocks.deriva`, `genera_creatura._tiri_salvezza`, `conformita_statblocchi.ts_attesi` (riscrive la formula invece di usare `T.ts_buono`), `genera_attributi` (tramite il verificatore) | **1**: `dmcore.progressione.ts_base_di` e `ts_base`, su `T.ts_buono` e `T.ts_cattivo` | `grep -n "ts_buono\|ts_cattivo\|2 + .*// 2" scripts/*.py` |
+| Lettori di classi e DV dal testo | **3**: `derive_statblocks.leggi_scheda`, `genera_attributi.dadi_vita`, `conformita_statblocchi.composizione` | **3 in 2 posti**: `dadi_vita` e `composizione` nel lettore di `dmcore`; `derive_statblocks.leggi_scheda` resta dov'è (ADR-0066, punto 6) | lettura dei tre |
+| Tabelle «ruolo → ordine delle caratteristiche» | **2**: `genera_attributi.PROFILI` (33 chiavi), `genera_creatura.RUOLI[…].priorita` (6 ruoli). **Dei 6 ruoli, 2 coincidono** (bruto, comandante); schermagliatore, tiratore, blaster e controllore ordinano diverso | **1**: `PROFILI` (D2 = a); i sei ruoli di `genera_creatura` ne nominano un profilo (E6) | `python3 -c` di §8.7, passo 4 |
+| Corpi di funzione identici in file diversi (§5) | **1** | **1**, lo stesso di prima (`col_label` delle mappe), fuori dal lotto | lo script di §5 |
+| Script che usano `dmcore` | **28 su 63** | **29 su 64**: il sessantaquattresimo è `impronta_creature` (E0), che lo usa | `grep -l "from dmcore" scripts/*.py \| wc -l` |
+| Test | **1165** verdi, 21 saltati | **1194** verdi, 21 saltati | `python3 -m pytest -q scripts/tests/` |
+| Taratura dello strato scelto | **1,50** in campione · **1,51** fuori | **1,50** · **1,51**, invariata | `python3 scripts/genera_attributi.py --taratura` |
+| Conformità | **102** tornano · 5 come la fonte · 0 decisioni · 0 da correggere · 0 scarti del generatore | invariata | `python3 scripts/conformita_statblocchi.py --riepilogo` |
 
 🔎 **Il fatto che cambia il disegno.** Il verificatore **dipende già** dal lettore
 del generatore: 23 simboli, fra cui `PF_DADO`, `dadi_vita`, `pf_dado_sospetto`,
@@ -720,13 +720,35 @@ dell'incantatore tolta, `profilo_esatto` che ripiega, un aumento ogni 5 livelli,
 le caratteristiche in ordine alfabetico. `genera_creatura` 1.014 → 1.013 righe,
 `caratteristiche` 494 → 541.
 
-#### ⬜ E8 · Gli alias se ne vanno, e il conto finale
+#### ✅ E8 · Gli alias se ne vanno, e il conto finale *(chiuso 2026-09-23)*
 `[engine: Sonnet 5 · effort: medio · qualità: i numeri di §8.2 rimisurati, e nessun chiamante dei nomi vecchi]`
 **Classe M.** Togliere gli alias lasciati da E2-E5 dove nessuno li chiama più
 (test compresi, che passano ai nomi nuovi). Rimisurare §8.2 e scrivere i numeri
 nuovi accanto ai vecchi.
 **Accettazione**: tutti i gate di §8.5 verdi; `grep` dei nomi vecchi vuoto fuori
 da `dmcore`.
+
+✅ **Fatto**: `genera_attributi` importa da `dmcore` solo gli 11 nomi che usa
+(erano 66, più `PRESTIGIO` rifatto a dizionario) e scende da 352 a 334 righe;
+`conformita_statblocchi` ne tiene 6 più i moduli `L`, `P` e `T` (erano 32, con
+`BAB`, `LOTTA`, `_classe`, `_NOMI`, `_PRESTIGIO` rinominati) e scende da 643 a
+628. Dove il verificatore usava un alias rinominato ora scrive `L.LOTTA_TAGLIA`,
+`L.LOTTA_MIGLIORATA`, `L.numeri_della_fonte`. I chiamanti esterni passano ai
+moduli: 103 punti in sei file (`impronta_creature`, quattro test,
+`validate_bestiario`, che ora prende `pf_dado_sospetto` dal lettore e non carica
+più tutto il generatore).
+**La verifica** non è un `grep`, che non distingue `GA.genera` da un
+`genera` qualsiasi: `ast` legge ogni `modulo.attributo` dei quattro script in
+tutto `scripts/`, e ogni nome che uno script riceve da `dmcore` ha **zero**
+chiamanti esterni; un secondo giro controlla che nessun attributo letto manchi
+dal modulo (zero). Il primo giro ne aveva perso uno, `C.LOTTA_MIGLIORATA`,
+perché era un'assegnazione e non un import: l'ha trovato il test.
+⚠️ **Restano nove nomi che uno script riprende da `dmcore` e altri leggono
+passando per lo script**, e restano di proposito: `derive_statblocks` prende
+sette nomi da `dmcore.tabelle` ed `estrai` da `dmcore.statblock` da prima del
+lotto E, e `test_tabelle` verifica con `assertIs` che il derivatore usi proprio
+quelle tabelle e non una copia; `genera_creatura.rendi` lo chiama
+`suggest_encounter`. Nessuno dei nove viene da E2-E5. I numeri nuovi di §8.2 stanno accanto ai vecchi, nella colonna «Dopo E8».
 
 #### ⬜ E9 · `dm.py bestiario` *(bloccato su D3)*
 `[engine: Sonnet 5 · effort: medio · qualità: dm.py bestiario <azione> --help esce 0 e dà lo stesso output dello script]`
@@ -744,7 +766,7 @@ con `scripts/X.py --help`; `dm.py doctor --ci` verde.
 Non si passa al sotto-lotto successivo finché tutti questi non sono verdi:
 
 ```bash
-python3 -m pytest -q scripts/tests/                     # ≥ 1165 verdi, piu' i test nuovi
+python3 -m pytest -q scripts/tests/                     # ≥ 1194 verdi (1165 prima del lotto)
 python3 -m pytest -q scripts/tests/test_impronta_creature.py   # impronta di E0 identica
 python3 scripts/impronta_creature.py --confronta        # la stessa, e dice dove diverge
 python3 scripts/extract_statblocks.py --check           # 0 problemi
@@ -781,25 +803,25 @@ E tre regole di metodo, già provate in questo piano:
 
 ### §8.7 · Da dove si comincia, in una chat nuova
 
-🔁 **Dopo la PR #158 (E0-E5) si riparte da qui, non dalla misura più sotto**,
-che è quella di prima del lotto e non torna più di proposito:
+🔁 **Dopo la seconda PR del lotto (E6-E8) si riparte da qui.** Il blocco che
+stava qui dopo la PR #158 e la misura più sotto sono di prima, e non tornano più
+di proposito:
 
 ```bash
-git fetch origin main && git log --oneline -1 origin/main                   # #158 mergiata
-wc -l scripts/{derive_statblocks,genera_attributi,genera_creatura,conformita_statblocchi}.py   # 2465
-wc -l scripts/dmcore/{progressione,lettura_creatura,caratteristiche}.py      # 113 · 634 · 494
-python3 scripts/impronta_creature.py --confronta                            # identica
-python3 -m pytest -q scripts/tests/ | tail -1                               # 1188 passed
-python3 scripts/decisioni_dm.py --check                                     # D2, D3 di QUALITA-CODICE aperte
+git fetch origin main && git log --oneline -1 origin/main                   # la PR di E6-E8 mergiata
+wc -l scripts/{derive_statblocks,genera_attributi,genera_creatura,conformita_statblocchi}.py   # 2431
+wc -l scripts/dmcore/{progressione,lettura_creatura,caratteristiche}.py      # 113 · 634 · 541
+python3 scripts/impronta_creature.py --confronta                            # identica (rigenerata in E6)
+python3 -m pytest -q scripts/tests/ | tail -1                               # 1194 passed
+python3 scripts/decisioni_dm.py --check                                     # D3 di QUALITA-CODICE aperta
 ```
 
-Il prossimo passo è **D2** (il DM sceglie quale tabella dei ruoli vince), poi
-**E6**, che è l'unico sotto-lotto che **cambia l'impronta**: si rigenera in un
-commit suo, con le celle e il motivo. La misura di D2 è il passo 4 qui sotto, e
-funziona ancora (gli alias di `genera_attributi` restano fino a E8): 2 ruoli su
-6 coincidono, e i 4 che divergono sono schermagliatore, tiratore, controllore e
-blaster. ⚠️ Le mutazioni si provano con `PYTHONDONTWRITEBYTECODE=1` e la cache
-svuotata dopo il ripristino (E2).
+Resta **E9**, bloccato su **D3**: il DM ha scelto di lasciarla aperta, e la
+seconda PR non l'ha toccata. Gli alias sono spariti in E8, quindi un
+`dm.py bestiario` fatto adesso passa argomenti a script con l'interfaccia
+definitiva e non tocca `dm.py` due volte, che era il rischio scritto in D3.
+⚠️ Le mutazioni si provano con `PYTHONDONTWRITEBYTECODE=1` e la cache svuotata
+dopo il ripristino (E2).
 
 **Prima di tutto la misura.** Se un numero non torna con §8.2, qualcuno ha già
 lavorato: si rilegge questo piano prima di eseguirlo.
@@ -824,17 +846,15 @@ python3 - <<'PY'
 import re; t = open("scripts/conformita_statblocchi.py").read()
 print(len(sorted(set(re.findall(r"\bGA\.(\w+)", t)))))
 PY
-# 4 · le due tabelle dei ruoli
+# 4 · la tabella dei ruoli: dopo E6 e' una, e ogni ruolo di genera_creatura ne
+#     nomina un profilo (prima di E6 i ruoli avevano un ordine loro, e su 6
+#     ne coincidevano 2)
 python3 - <<'PY'
 import sys; sys.path.insert(0, "scripts")
-import genera_attributi as GA, genera_creatura as GC
-# i ruoli di genera_creatura sono in italiano, i profili in inglese: la
-# corrispondenza e' quella usata per la misura di §8.2
-VERSO = {"bruto": "brute", "schermagliatore": "skirmisher", "tiratore": "ranged",
-         "comandante": "commander", "controllore": "arcane", "blaster": "blaster"}
-for k, r in GC.RUOLI.items():                  # 6 ruoli: 2 coincidono (bruto, comandante)
-    gc = tuple(c.capitalize() for c in r.priorita)
-    print(f"{k:16} {'=' if gc == GA.profilo_di(VERSO[k]) else '≠'} {gc} {GA.profilo_di(VERSO[k])}")
+import genera_creatura as GC
+from dmcore import caratteristiche as CAR
+for k, r in GC.RUOLI.items():
+    print(f"{k:16} {r.profilo:11} {CAR.profilo_esatto(r.profilo)}")
 PY
 ```
 

@@ -448,8 +448,8 @@ Tre moduli nuovi in `scripts/dmcore/`, separati per **chi li può importare**:
 | Modulo | Contiene | Chi lo importa |
 |---|---|---|
 | `dmcore/progressione.py` | base dei TS e del BAB per classe e tipo (`Gruppo`, `CLASSE_LIVELLO`, `_classe`, `ts_attesi` senza caratteristiche, `bab_atteso`), costruita su `dmcore.tabelle` | tutti |
-| `dmcore/lettura_creatura.py` | il lettore: `BLOCCO`, `PF_DADO`, `PEZZO_DADO`, `DV_DICHIARATI`, `SESTINA`, `BAB_SCRITTO`, `LOTTA_*`, `INIZIATIVA_*`, `senza_note`, `taglia_di`, `dadi_vita`, `robustezza`, `pf_dado_sospetto`, `dalla_scheda`, `numeri_della_fonte`, `composizione`, `dv_totali`, `dadi_di_pf`, `talenti` | tutti, verificatore compreso (se D1 = sì) |
-| `dmcore/caratteristiche.py` | la **scelta**: gli strati di `genera_attributi.genera` (scheda, fonte, vincoli, tetto dei TS, iniziativa a due candidati, array per ruolo con taglia e razza), `PROFILI`, `PER_TAGLIA`, `RAZZE` | i generatori (`genera_attributi`, `derive_statblocks`, il ramo PNG di `genera_creatura`), **mai** `conformita_statblocchi` |
+| `dmcore/lettura_creatura.py` | il lettore: `BLOCCO`, `PF_DADO`, `PEZZO_DADO`, `DV_DICHIARATI`, `SESTINA`, `BAB_SCRITTO`, `LOTTA_*`, `INIZIATIVA_*`, `senza_note`, `taglia_di`, `dadi_vita`, `robustezza`, `pf_dado_sospetto`, `dalla_scheda`, `numeri_della_fonte`, `composizione`, `dv_totali`, `dadi_di_pf`, `talenti`, e (E1) `plausibile` e `tetti_dai_ts`, che il verificatore usa | tutti, verificatore compreso (D1 = sì) |
+| `dmcore/caratteristiche.py` | la **scelta**: gli strati di `genera_attributi.genera` (scheda, fonte, vincoli, l'uso del tetto dei TS, iniziativa a due candidati, array per ruolo con taglia e razza), `PROFILI`, `PER_TAGLIA`, `RAZZE` | i generatori (`genera_attributi`, `derive_statblocks`, il ramo PNG di `genera_creatura`), **mai** `conformita_statblocchi` |
 
 I quattro script restano dove sono e con la stessa interfaccia: CI,
 `tools.manifest.json`, skill e test li chiamano per nome. Dentro restano la riga
@@ -513,12 +513,25 @@ quindi `con_attributi`, la metà di `derive_statblocks` che chiama
 `genera_attributi`, sul Bestiario non gira mai. L'impronta la fa girare su tre
 schede di prova in una cartella temporanea (chiave `apply_ts`).
 
-#### ⬜ E1 · L'ADR e i moduli vuoti
+#### ✅ E1 · L'ADR e i moduli vuoti *(chiuso 2026-09-23)*
 `[engine: Opus, sessione principale · effort: alto · qualità: il DM riconosce la decisione, e D1 è risposta]`
 **Classe G.** L'ADR con il disegno di §8.3, i tre moduli con la sola docstring
 e un `__all__` vuoto. Si scrive **dopo** la risposta a D1.
 **Accettazione**: `validate_docs --sorgenti` verde; l'ADR indicizzato in
 `docs/INDEX.md` §4.
+
+✅ **Fatto**: [ADR-0066](adr/ADR-0066-le-creature-hanno-una-libreria-e-il-verificatore-non-importa-la-scelta.md),
+D1 chiusa (**sì**), e `dmcore/progressione.py`, `dmcore/lettura_creatura.py`,
+`dmcore/caratteristiche.py` con la sola docstring.
+🔎 **Il disegno di §8.3 cambia in due punti, e l'ADR li dichiara.** Fra i 23
+simboli che il verificatore prende dal generatore ci sono `tetti_dai_ts` e
+`plausibile`, che §8.3 metteva nella scelta: `pf_dado_corretto` li usa per
+ricostruire il bonus di `pf-dado`, e dalla scelta il verificatore non può
+importare. Nessuno dei due sceglie (il primo ricava un limite da un TS scritto,
+il secondo rifiuta un modificatore ricavato che il GS non regge), quindi vanno
+nel lettore. Per la stessa ragione **E3a sposta 22 simboli e non 23**:
+`tetti_dai_ts` usa `composizione`, `Scheda` e `talenti` del verificatore, e si
+sposta con loro in E3b.
 
 #### ⬜ E2 · La progressione in un posto
 `[engine: Sonnet 5 o Opus · effort: alto · qualità: impronta identica, e un solo posto nel repo calcola la base dei TS]`
@@ -647,7 +660,7 @@ E tre regole di metodo, già provate in questo piano:
 
 | # | Ambito | Domanda |
 |---|---|---|
-| D1 | E1 · E3 | **Il verificatore condivide il lettore?** Oggi lo fa già: importa 23 simboli da `genera_attributi`. **Sì** (consigliato): il lettore va in `dmcore/lettura_creatura.py` e lo usano tutti; l'indipendenza sta nelle regole e nella scelta, che il verificatore non importa mai (E4 lo prova). **No**: il verificatore tiene un lettore suo, copiato, più sicuro contro un errore di lettura condiviso e con una seconda copia da tenere allineata a mano |
+| ~~D1~~ | E1 · E3 | ✅ **decisa dal DM il 2026-09-23: sì**, il verificatore condivide il lettore ([ADR-0066](adr/ADR-0066-le-creature-hanno-una-libreria-e-il-verificatore-non-importa-la-scelta.md)). **Il verificatore condivide il lettore?** Oggi lo fa già: importa 23 simboli da `genera_attributi`. **Sì** (consigliato): il lettore va in `dmcore/lettura_creatura.py` e lo usano tutti; l'indipendenza sta nelle regole e nella scelta, che il verificatore non importa mai (E4 lo prova). **No**: il verificatore tiene un lettore suo, copiato, più sicuro contro un errore di lettura condiviso e con una seconda copia da tenere allineata a mano |
 | D2 | E6 | **Quale tabella dei ruoli vince?** Dei 6 ruoli di `genera_creatura`, 4 ordinano le caratteristiche diversamente dal profilo corrispondente di `genera_attributi` (schermagliatore, tiratore, blaster, controllore). **(a)** vince `genera_attributi`: cambiano i PNG che `genera_creatura` genera d'ora in poi, nessun blocco del Bestiario; **(b)** vince `genera_creatura`: cambiano gli `attributi` di alcuni dei 15 blocchi scelti dall'array, che il DM vede prima; **(c)** si tengono separate e si dichiara perché |
 | D3 | E9 | **`dm.py bestiario` si fa in questo lotto o dopo?** Costa poco e non dipende dalla libreria; farlo prima di E8 vuol dire toccare `dm.py` due volte se un'interfaccia cambia |
 

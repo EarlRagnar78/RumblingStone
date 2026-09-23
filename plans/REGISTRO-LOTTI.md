@@ -66,6 +66,7 @@ registro esiste.
 | 2026-09-23 | **QUALITA E0** l'impronta delle creature | **C** costruzione | Opus, sessione principale | ✅ | Il piano chiedeva i risultati finali; l'impronta registra anche le **letture intermedie**, perché un errore di lettura su una scheda può compensarsene un altro nel conto finale. E far girare davvero ogni ramo ha trovato un pezzo che sul Bestiario non gira mai (`con_attributi`). |
 | 2026-09-23 | **QUALITA E1** ADR-0066 e i moduli vuoti | **G** giudizio | Opus, sessione principale | ✅ | Il disegno del piano era stato scritto guardando i nomi dei simboli, non chi li chiama: due dei 23 che §8.3 metteva nella scelta li usa il verificatore. Contare le chiamate prima di assegnare un simbolo a un modulo. |
 | 2026-09-23 | **QUALITA E2** la progressione in un posto | **C** costruzione | Opus, sessione principale | ✅ | Una prova di mutazione può mentire in tutte e due le direzioni: stessa lunghezza e stesso secondo lasciano in `__pycache__` il bytecode sbagliato. Il metodo di §7 va eseguito senza cache. |
+| 2026-09-23 | **QUALITA E3a** il lettore in un posto, prima metà | **C** costruzione, rischio alto | Opus, sessione principale | ✅ | Il rischio dichiarato (una regex che perde un flag) si toglie alla radice se il codice non si ricopia: tagliarlo con `ast` e confrontare gli alberi dà la prova prima ancora dell'impronta. |
 
 ---
 

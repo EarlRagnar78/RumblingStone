@@ -529,9 +529,10 @@ simboli che il verificatore prende dal generatore ci sono `tetti_dai_ts` e
 ricostruire il bonus di `pf-dado`, e dalla scelta il verificatore non può
 importare. Nessuno dei due sceglie (il primo ricava un limite da un TS scritto,
 il secondo rifiuta un modificatore ricavato che il GS non regge), quindi vanno
-nel lettore. Per la stessa ragione **E3a sposta 22 simboli e non 23**:
+nel lettore. Per la stessa ragione **E3a non sposta tutti e 23 i simboli**:
 `tetti_dai_ts` usa `composizione`, `Scheda` e `talenti` del verificatore, e si
-sposta con loro in E3b.
+sposta con loro in E3b. *(Corretto in E3a: E1 diceva «22»; erano 21, perché
+`ABBREVIAZIONI` era già passato in E2 con la progressione.)*
 
 #### ✅ E2 · La progressione in un posto *(chiuso 2026-09-23)*
 `[engine: Sonnet 5 o Opus · effort: alto · qualità: impronta identica, e un solo posto nel repo calcola la base dei TS]`
@@ -561,7 +562,7 @@ con la mutazione al contrario sarebbe risultato verde con il codice sbagliato. L
 mutazioni del lotto si provano con `PYTHONDONTWRITEBYTECODE=1` e la cache
 svuotata dopo il ripristino.
 
-#### ⬜ E3 · Il lettore in un posto
+#### 🟡 E3 · Il lettore in un posto *(E3a chiuso 2026-09-23)*
 `[engine: Opus, sessione principale · effort: alto · qualità: impronta identica, e il verificatore non importa più niente da genera_attributi]`
 **Classe C, con rischio alto**: è la parte più grande (una trentina di simboli)
 e quella dove una virgola sposta un numero. Spostare in
@@ -577,6 +578,16 @@ su 60 schede. Resta dov'è, e lo si dichiara nell'ADR.
 scripts/conformita_statblocchi.py` vuoto; `test_conformita_statblocchi.py`,
 `test_genera_attributi.py` e `test_statblock.py` verdi senza modifiche alle
 asserzioni (cambiano solo gli import).
+
+✅ **E3a fatto**: 43 simboli di primo livello di `genera_attributi` in
+`dmcore/lettura_creatura.py` (i 21 che il verificatore usava, più le loro
+dipendenze: `ORDINE`, `TAGLIA`, `CLASSE_NEL_TIPO`, `FORMULA_DV`, `SESTINA` con le sue
+parti, `sestine_citate`, `dalla_scheda`, le marche). Tagliati dal sorgente con
+`ast` e non ricopiati: **l'albero sintattico di ognuno dei 43 è identico** a
+quello di prima, flag delle regex compresi. `genera_attributi` li reimporta
+tutti (36 nomi pubblici) come alias fino a E8. Il verificatore legge con
+`L.` e dal generatore prende ancora un solo nome, `tetti_dai_ts`.
+Impronta identica; i test di §8.4 verdi senza toccare un'asserzione.
 
 #### ⬜ E4 · Il grafo degli import
 `[engine: Sonnet 5 · effort: medio · qualità: il test morde su un import proibito aggiunto a mano]`

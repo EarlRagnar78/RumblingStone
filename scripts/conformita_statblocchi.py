@@ -71,6 +71,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from dmcore import tabelle as T  # noqa: E402
+from dmcore import lettura_creatura as L  # noqa: E402
 import genera_attributi as GA  # noqa: E402
 
 # ---------------------------------------------------------------------------
@@ -88,11 +89,11 @@ _NOMI = P.NOMI_DI_CLASSE
 
 TS_CAMPO = re.compile(r"^ts:\s*Temp\s*([+-]\d+),\s*Rifl\s*([+-]\d+),\s*Vol\s*([+-]\d+)", re.M)
 ATTRIBUTI = re.compile(r"^attributi:\s*(.+)$", re.M)
-BAB, LOTTA, LOTTA_TAGLIA = GA.BAB_SCRITTO, GA.LOTTA_SCRITTA, GA.LOTTA_TAGLIA
+BAB, LOTTA, LOTTA_TAGLIA = L.BAB_SCRITTO, L.LOTTA_SCRITTA, L.LOTTA_TAGLIA
 MISCHIA = re.compile(r"^\s*-\s*Mischia\s+(.+)$", re.M)
 FOCALIZZATA = re.compile(r"\b(?:Weapon Focus|Arma Focalizzata)\b", re.I)
 ACCURATA = re.compile(r"\b(?:Weapon Finesse|Arma Accurata)\b", re.I)
-LOTTA_MIGLIORATA = GA.LOTTA_MIGLIORATA
+LOTTA_MIGLIORATA = L.LOTTA_MIGLIORATA
 PERFETTA = re.compile(r"\b(?:perfett[oa]|masterwork|mwk)\b", re.I)
 
 #: I template semplici PF1e (skill `pathfinder-1e-srd`, «rebuild rules»), come
@@ -113,7 +114,7 @@ TALENTI = (
     (re.compile(r"\b(?:Lightning Reflexes|Riflessi Fulminei|Riflessi Rapidi)\b", re.I), "Rifl", 2),
     (re.compile(r"\b(?:Iron Will|Volont[aà] di Ferro|Ferrea Volont[aà])\b", re.I), "Vol", 2),
     # «Iniziativa/Scacciare Migliorato»: due talenti scritti in uno
-    (GA.INIZIATIVA_MIGLIORATA, "init", 4),
+    (L.INIZIATIVA_MIGLIORATA, "init", 4),
 )
 #: Il mantello della resistenza: +N a tutti i TS.
 RESISTENZA = re.compile(r"(?:cloak of resistance|mantello (?:della|di) resistenza)\s*\+(\d)", re.I)
@@ -122,7 +123,7 @@ INIZIATIVA = re.compile(r"^iniziativa:\s*([+-]?\d+)", re.M)
 
 def talenti(testo: str) -> dict:
     """{campo: bonus} dei talenti e degli oggetti che la scheda dichiara."""
-    pulito = GA.senza_note(testo)
+    pulito = L.senza_note(testo)
     fuori = {}
     for regex, campo, bonus in TALENTI:
         if regex.search(pulito):
@@ -156,11 +157,11 @@ class Scheda:
 
 
 def provenienza(testo: str) -> str:
-    if GA.MARCA + GA.CODA_SCHEDA in testo:
+    if L.MARCA + L.CODA_SCHEDA in testo:
         return "copiate"
-    if GA.MARCA + GA.CODA_FONTE in testo:
+    if L.MARCA + L.CODA_FONTE in testo:
         return "trascritte"
-    if GA.MARCA in testo:
+    if L.MARCA in testo:
         return "generate"
     return "a mano"
 
@@ -194,22 +195,22 @@ def dv_totali(testo: str) -> "int | None":
     m = DV_PROSA.search("\n".join(righe))
     if m:
         return int(m.group(1))
-    m = GA.DV_DICHIARATI.search(testo)
+    m = L.DV_DICHIARATI.search(testo)
     if m:
         return int(next(g for g in m.groups() if g))
-    dado_pf = GA.PF_DADO.search(testo)
-    pezzi = GA.PEZZO_DADO.findall(dado_pf.group(1)) if dado_pf else []
-    if pezzi and not GA.pf_dado_sospetto(testo):
+    dado_pf = L.PF_DADO.search(testo)
+    pezzi = L.PEZZO_DADO.findall(dado_pf.group(1)) if dado_pf else []
+    if pezzi and not L.pf_dado_sospetto(testo):
         return sum(int(a) for a, _ in pezzi)
     return None
 
 
 def dadi_di_pf(testo: str) -> "list[tuple[int, int]]":
     """I dadi di `pf-dado`, se il campo registra davvero i dadi vita."""
-    m = GA.PF_DADO.search(testo)
-    if not m or GA.pf_dado_sospetto(testo):
+    m = L.PF_DADO.search(testo)
+    if not m or L.pf_dado_sospetto(testo):
         return []
-    return [(int(a), int(b)) for a, b in GA.PEZZO_DADO.findall(m.group(1))]
+    return [(int(a), int(b)) for a, b in L.PEZZO_DADO.findall(m.group(1))]
 
 
 def composizione(testo: str, tipo: str) -> "tuple[list[Gruppo], bool]":
@@ -269,7 +270,7 @@ def leggi(p: Path) -> "Scheda | None":
     t = p.read_text(encoding="utf-8", errors="replace")
     if "[POINTER" in t or "[RIMANDO]" in t:
         return None
-    m = GA.BLOCCO.search(t)
+    m = L.BLOCCO.search(t)
     a = ATTRIBUTI.search(t)
     gs = re.search(r"^gs:\s*([\d.,]+)", t, re.M)
     if not (m and a and gs):
@@ -286,8 +287,8 @@ def leggi(p: Path) -> "Scheda | None":
     s.pf = int(mp.group(1)) if mp else None
     mt = TS_CAMPO.search(t)
     s.ts = tuple(int(x) for x in mt.groups()) if mt else None
-    # i numeri si leggono fuori dalle note (vedi GA.senza_note)
-    pulito = GA.senza_note(t)
+    # i numeri si leggono fuori dalle note (vedi L.senza_note)
+    pulito = L.senza_note(t)
     mb = BAB.search(pulito)
     s.bab = int(mb.group(1)) if mb else None
     ml = LOTTA.search(pulito)
@@ -330,7 +331,7 @@ def pf_bonus(s: Scheda, attr: dict) -> "int | None":
     if T.normalizza_tipo(s.tipo) == "construct":
         return None         # la fonte SRD scrive bonus che la tabella per taglia non spiega
     dv = sum(g.n for g in s.gruppi)
-    return dv * cos_o_car(s, attr) + GA.robustezza(s.testo, dv)
+    return dv * cos_o_car(s, attr) + L.robustezza(s.testo, dv)
 
 
 def pf_attesi(s: Scheda, attr: dict) -> "dict | None":
@@ -344,11 +345,11 @@ def pf_attesi(s: Scheda, attr: dict) -> "dict | None":
     bonus = pf_bonus(s, attr)
     if bonus is None:
         scritti = dadi_di_pf(s.testo)
-        m = GA.PF_DADO.search(s.testo)
+        m = L.PF_DADO.search(s.testo)
         if not (scritti and m):
             return None
         bonus = sum(int(x.replace(" ", "")) for x in
-                    GA.BONUS_DADO.findall(GA.PEZZO_DADO.sub("", m.group(1))))
+                    L.BONUS_DADO.findall(L.PEZZO_DADO.sub("", m.group(1))))
     media = sum(g.n * (g.dado + 1) / 2 for g in s.gruppi)
     return {"media": math.floor(media + bonus),
             "minimo": sum(g.n for g in s.gruppi) + bonus,
@@ -395,7 +396,7 @@ def verifica(s: Scheda, attr: "dict | None" = None) -> dict:
         # classi ne' DV, e nessuno la controllava
         att = mod(attr["Des"]) + talenti(s.testo).get("init", 0)
         d = int(mi.group(1)) - att
-        if d == 4 and not re.search(r"\b(?:Talenti|Feats)\b", GA.senza_note(s.testo), re.I):
+        if d == 4 and not re.search(r"\b(?:Talenti|Feats)\b", L.senza_note(s.testo), re.I):
             d = 0     # la scheda non elenca i talenti: il +4 non si verifica
         out["iniziativa"] = (int(mi.group(1)), att, d)
     dadi_scritti = any(g.bab < 0 for g in s.gruppi)
@@ -414,7 +415,7 @@ def verifica(s: Scheda, attr: "dict | None" = None) -> dict:
     babs = ({bab} if bab is not None else set()) | ({s.bab} if s.bab is not None else set())
     if s.bab is not None and bab is not None:
         out["BAB"] = (s.bab, bab, s.bab - bab)
-    taglia = GA.taglia_di(s.testo) or GA.taglia_di(f"tipo: {s.tipo}")
+    taglia = L.taglia_di(s.testo) or L.taglia_di(f"tipo: {s.tipo}")
     if s.lotta is not None and babs:
         extra = 4 if LOTTA_MIGLIORATA.search(s.testo) else 0     # afferrare migliorato no
         attesi = [b + mod(attr.get("For")) + LOTTA_TAGLIA.get(taglia, 0) + extra for b in babs]
@@ -453,7 +454,7 @@ def con_template(attr: dict, nome: str) -> dict:
             for k, v in attr.items()}
 
 
-numeri_della_fonte = GA.numeri_della_fonte
+numeri_della_fonte = L.numeri_della_fonte
 
 
 PIANO_DECISIONI = ROOT / "plans" / "RICERCA-CONFORMITA-MECCANICA-STATBLOCCHI.md"
@@ -487,11 +488,11 @@ def verifica_variante_advanced(s: Scheda) -> dict:
     e GS +1. 🔎 Il primo caso misurato, Ghaurush «Cenere Piena», scrive CA 23:
     conta l'armatura naturale e dimentica la Destrezza.
     """
-    m = VARIANTE.search(GA.senza_note(s.testo))
+    m = VARIANTE.search(L.senza_note(s.testo))
     if not m or s.pf is None:
         return {}
     riga, out = m.group(0), {}
-    dv = sum(g.n for g in s.gruppi) or sum(n for n, _ in (GA.dadi_vita(s.testo) or ([], 0, ""))[0])
+    dv = sum(g.n for g in s.gruppi) or sum(n for n, _ in (L.dadi_vita(s.testo) or ([], 0, ""))[0])
     ca = re.search(r"^ca:\s*(\d+)", s.testo, re.M)
     mp, mc = re.search(r"\bhp\s*(\d+)", riga), re.search(r"\bCA\s*(\d+)", riga)
     if mp and dv:
@@ -601,10 +602,10 @@ def pf_dado_corretto(s: Scheda, forza: bool = False) -> "dict | None":
     i pf sono il numero del DM e la Cos generata no. None se i dadi non si
     ricostruiscono senza indovinare.
     """
-    motivo = GA.pf_dado_sospetto(s.testo, s.gs)
-    if (not motivo and not forza) or s.pf is None or not GA.PF_DADO.search(s.testo):
+    motivo = L.pf_dado_sospetto(s.testo, s.gs)
+    if (not motivo and not forza) or s.pf is None or not L.PF_DADO.search(s.testo):
         return None
-    dv = GA.dadi_vita(s.testo)
+    dv = L.dadi_vita(s.testo)
     if forza and dv and dv[2] == "pf-dado":
         # la ricostruzione non puo' partire dal campo che sta verificando
         dv = None
@@ -622,7 +623,7 @@ def pf_dado_corretto(s: Scheda, forza: bool = False) -> "dict | None":
         return None
     hd = sum(n for n, _ in dadi)
     media = sum(n * (f + 1) / 2 for n, f in dadi)
-    robusto = GA.robustezza(s.testo, sum(n for n, _ in dadi))
+    robusto = L.robustezza(s.testo, sum(n for n, _ in dadi))
     tipo = T.normalizza_tipo(s.tipo)
     if bonus is not None:
         da_bonus = "è quello scritto nella formula"
@@ -633,7 +634,7 @@ def pf_dado_corretto(s: Scheda, forza: bool = False) -> "dict | None":
     elif s.provenienza in AFFIDABILI and isinstance(s.attributi.get("Cos"), int):
         bonus = hd * mod(s.attributi["Cos"]) + robusto
         da_bonus = f"da Cos {s.attributi['Cos']}" + (
-            " e Robustezza Migliorata" if GA.ROBUSTEZZA_MIGLIORATA.search(s.testo)
+            " e Robustezza Migliorata" if L.ROBUSTEZZA_MIGLIORATA.search(s.testo)
             else " e Robustezza" if robusto else "")
     else:
         # 🐛 **Il giro circolare** (2026-09-23): il bonus si ricavava dai pf
@@ -644,19 +645,19 @@ def pf_dado_corretto(s: Scheda, forza: bool = False) -> "dict | None":
         # un'identita' esatta. Viene prima lei, se i pf stanno nella fascia.
         tetto = GA.tetti_dai_ts(str(s.file), s.testo).get("Cos")
         m = tetto[0] if tetto else None
-        if m is not None and GA.plausibile(m, s.gs) and \
+        if m is not None and L.plausibile(m, s.gs) and \
                 hd + hd * m + robusto <= s.pf <= sum(n * f for n, f in dadi) + hd * m + robusto:
             bonus = hd * m + robusto
             temp = TS_CAMPO.search(s.testo).group(1)
             da_bonus = f"ricavato dalla Tempra {temp} (la Cos di questa scheda è generata)"
         else:
             m = round((s.pf - media - robusto) / hd)
-            if not GA.plausibile(m, s.gs):
+            if not L.plausibile(m, s.gs):
                 return None
             bonus = hd * m + robusto
             da_bonus = f"ricavato dai pf {s.pf} (la Cos di questa scheda è generata)"
     nuovo = _formula(dadi, bonus)
-    vecchio = GA.PF_DADO.search(s.testo).group(1).strip()
+    vecchio = L.PF_DADO.search(s.testo).group(1).strip()
     lo, hi = hd + bonus, sum(n * f for n, f in dadi) + bonus
     return {"file": s.file, "vecchio": vecchio, "nuovo": nuovo, "motivo": motivo,
             "dadi": da_dove, "bonus": da_bonus, "media": math.floor(media + bonus),
@@ -670,15 +671,15 @@ def _togli_pf_dado(p: Path, s: Scheda) -> dict:
     dado vita che un dado vita preso da un attacco». I dadi di una classe di
     prestigio non SRD non si indovinano.
     """
-    vecchio = GA.PF_DADO.search(s.testo).group(1).strip()
-    motivo = GA.pf_dado_sospetto(s.testo, s.gs)
+    vecchio = L.PF_DADO.search(s.testo).group(1).strip()
+    motivo = L.pf_dado_sospetto(s.testo, s.gs)
     t = p.read_text(encoding="utf-8")
     t = re.sub(r"^pf-dado:.*\n", "", t, count=1, flags=re.M)
     marca = (f"{MARCA_PF}tolto da `scripts/conformita_statblocchi.py`: portava «{vecchio}», "
              f"che non sono i dadi vita ({motivo}). I dadi non si ricostruiscono senza "
              "inventare: la composizione delle classi non e' leggibile o comprende una classe "
              "non SRD. Da completare a mano.")
-    m = GA.BLOCCO.search(t)
+    m = L.BLOCCO.search(t)
     fine = t.index("```", m.end(1)) + 3
     p.write_text(t[:fine] + "\n\n" + marca + t[fine:], encoding="utf-8")
     return {"file": p, "vecchio": vecchio, "nuovo": "(tolto)", "media": "-", "pf": s.pf,
@@ -710,7 +711,7 @@ def rigenera_pf_dado(scrivi: bool) -> "list[dict]":
         vecchia = RIGA_MARCA_PF.search(t)
         s = leggi(p) if vecchia else None
         c = pf_dado_corretto(s, forza=True) if s else None
-        ora = GA.PF_DADO.search(t)
+        ora = L.PF_DADO.search(t)
         if not (c and ora):
             continue
         m = re.search(r"era «([^»]+)», ([^.]+)\.", vecchia.group(0))
@@ -731,11 +732,11 @@ def correggi_pf_dado(scrivi: bool) -> "list[dict]":
     for p in sorted(ROOT.glob("Bestiario/**/*-cr*.md")):
         s = leggi(p)
         c = pf_dado_corretto(s) if s else None
-        if not c and s and GA.pf_dado_sospetto(s.testo, s.gs):
+        if not c and s and L.pf_dado_sospetto(s.testo, s.gs):
             if scrivi:
                 fatte.append(_togli_pf_dado(p, s))
             else:
-                fatte.append({"file": p, "vecchio": GA.PF_DADO.search(s.testo).group(1).strip(),
+                fatte.append({"file": p, "vecchio": L.PF_DADO.search(s.testo).group(1).strip(),
                               "nuovo": "(da togliere)", "media": "-", "pf": s.pf,
                               "legale": True, "fascia": None})
             continue
@@ -750,7 +751,7 @@ def correggi_pf_dado(scrivi: bool) -> "list[dict]":
             "dado solo" in c["motivo"] or "classi del tipo tirano" in c["motivo"] or \
             "dichiara" in c["motivo"] else "una parte sola dei dadi vita"
         marca = _marca_corretto(c, arma)
-        m = GA.BLOCCO.search(t)
+        m = L.BLOCCO.search(t)
         fine = t.index("```", m.end(1)) + 3
         t = t[:fine] + "\n\n" + marca + t[fine:]
         p.write_text(t, encoding="utf-8")
@@ -765,17 +766,17 @@ def controlla_pf_dado() -> "list[str]":
         if MARCA_PF + "corretto" in t:
             s = leggi(p)
             c = pf_dado_corretto(s, forza=True) if s else None
-            ora = GA.PF_DADO.search(t)
+            ora = L.PF_DADO.search(t)
             if not c or not ora or c["nuovo"] != ora.group(1).strip() or \
                     f"il bonus {c['bonus']}." not in t:
                 problemi.append(f"{p.name}: pf-dado «{ora.group(1).strip() if ora else '—'}», "
                                 f"la regola da' «{c['nuovo'] if c else 'niente'}»")
-        if MARCA_PF + "tolto" in t and GA.PF_DADO.search(t):
+        if MARCA_PF + "tolto" in t and L.PF_DADO.search(t):
             problemi.append(f"{p.name}: il `pf-dado` tolto e' tornato")
         if t.count(MARCA_PF) > 1:
             problemi.append(f"{p.name}: due marche `pf-dado` — la correzione non e' idempotente")
-        if GA.pf_dado_sospetto(t):
-            problemi.append(f"{p.name}: {GA.pf_dado_sospetto(t)}")
+        if L.pf_dado_sospetto(t):
+            problemi.append(f"{p.name}: {L.pf_dado_sospetto(t)}")
     return problemi
 
 

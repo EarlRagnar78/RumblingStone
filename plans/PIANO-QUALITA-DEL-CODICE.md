@@ -498,7 +498,7 @@ riga in `tetti_dai_ts` fa cadere il test.
 Due esecuzioni danno lo stesso file byte per byte, in 2,6 secondi. Dentro:
 108 statblocchi con **17 letture intermedie** ciascuno (dadi vita, `pf-dado`
 sospetto con e senza GS, sestina della scheda e della fonte, numeri della
-fonte, tetti dei TS, composizione, talenti, provenienza, i quattro vincoli),
+fonte, tetti dei TS, composizione, talenti, provenienza, e i vincoli su Des, Cos e For),
 `genera` con e senza fonte, `giudica`, `pf_dado_corretto` normale e forzato;
 95 derivazioni; 720 creature (GS 1-20 × 6 ruoli × mostro umanoide, PNG con
 classe, bestia magica Grande × `--piu-cattivi`); taratura, riepilogo, i due

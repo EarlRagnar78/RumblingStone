@@ -15,6 +15,15 @@ rendono possibile:
 | **BAB** | somma dei BAB di classe e di tipo, ciascuno arrotondato in basso |
 | **lotta** | BAB + mod For + modificatore speciale di taglia |
 | **attacco** | BAB + mod For (o Des con Arma Accurata) + taglia + bonus dell'arma |
+| **iniziativa** | mod Des (+4 con Iniziativa Migliorata) |
+| **variante Advanced** | pf +2 per DV, CA +4, GS +1 rispetto allo statblocco base |
+
+🔎 **I talenti, su suggerimento del DM** (2026-09-23): Tempra Possente,
+Riflessi Fulminei, Volonta' di Ferro, Iniziativa Migliorata e il mantello
+della resistenza entrano nel conto. Alzano il **minimo** atteso, e cosi' si
+vede la scheda che elenca un talento e non ne conta il bonus (Mira Serani,
+«Vol +8 (Ferrea Volonta')»). Lotta, attacco e iniziativa si controllano anche
+senza la composizione dei DV, perche' usano il BAB scritto.
 
 ## Il principio: si verifica solo dove il dato non e' una scelta
 
@@ -36,10 +45,11 @@ con uno dei due tutto torna, lo scarto e' un potenziamento e non un errore.
 
 ## Cosa NON verifica, dichiarato
 
-Oggetti magici, talenti diversi da Robustezza, Arma Focalizzata e Arma
-Accurata, bonus razziali ai TS, incantesimi attivi. Per questo un TS **sopra**
-l'atteso di 1-4 punti e' accettato (mantello della resistenza, Grande Tempra):
-e' un TS **sotto** l'atteso a non avere spiegazione.
+Oggetti magici diversi dal mantello della resistenza, talenti diversi da
+quelli elencati sopra, bonus razziali ai TS, incantesimi attivi, la
+non-competenza nelle armi esotiche. Per questo un TS **sopra** l'atteso di 1-4
+punti e' accettato; e' un TS **sotto** l'atteso a non avere spiegazione. Una
+scheda che non elenca i suoi talenti non si giudica sul +4 dell'iniziativa.
 
 ## Uso
 
@@ -94,11 +104,43 @@ ACCURATA = re.compile(r"\b(?:Weapon Finesse|Arma Accurata)\b", re.I)
 LOTTA_MIGLIORATA = GA.LOTTA_MIGLIORATA
 PERFETTA = re.compile(r"\b(?:perfett[oa]|masterwork|mwk)\b", re.I)
 
-#: I due template semplici PF1e che il repo usa per potenziare senza alzare il GS.
+#: I template semplici PF1e (skill `pathfinder-1e-srd`, «rebuild rules»), come
+#: variazione delle caratteristiche. Advanced e' quello di `genera_creatura
+#: --piu-cattivi`; Giant e' quello del bruto deforme.
 TEMPLATE = {
     "Advanced": {"For": 4, "Des": 4, "Cos": 4, "Int": 4, "Sag": 4, "Car": 4},
     "Giant": {"For": 4, "Des": -2, "Cos": 4},
+    "Young": {"For": -4, "Des": 4, "Cos": -4},
 }
+
+#: SRD 3.5: i talenti che spostano un numero verificabile. 🔎 **Il DM, il
+#: 2026-09-23: «forse l'intuizione per trovare questi errori sono i talenti».**
+#: Senza, un TS si accettava fra la base e la base +4, e quella fascia
+#: nascondeva proprio la scheda che elenca Volonta' di Ferro e non ne conta il +2.
+TALENTI = (
+    (re.compile(r"\b(?:Great Fortitude|Tempra Possente|Grande Tempra)\b", re.I), "Temp", 2),
+    (re.compile(r"\b(?:Lightning Reflexes|Riflessi Fulminei|Riflessi Rapidi)\b", re.I), "Rifl", 2),
+    (re.compile(r"\b(?:Iron Will|Volont[aà] di Ferro|Ferrea Volont[aà])\b", re.I), "Vol", 2),
+    # «Iniziativa/Scacciare Migliorato»: due talenti scritti in uno
+    (GA.INIZIATIVA_MIGLIORATA, "init", 4),
+)
+#: Il mantello della resistenza: +N a tutti i TS.
+RESISTENZA = re.compile(r"(?:cloak of resistance|mantello (?:della|di) resistenza)\s*\+(\d)", re.I)
+INIZIATIVA = re.compile(r"^iniziativa:\s*([+-]?\d+)", re.M)
+
+
+def talenti(testo: str) -> dict:
+    """{campo: bonus} dei talenti e degli oggetti che la scheda dichiara."""
+    pulito = GA.senza_note(testo)
+    fuori = {}
+    for regex, campo, bonus in TALENTI:
+        if regex.search(pulito):
+            fuori[campo] = fuori.get(campo, 0) + bonus
+    m = RESISTENZA.search(pulito)
+    if m:
+        for c in ("Temp", "Rifl", "Vol"):
+            fuori[c] = fuori.get(c, 0) + int(m.group(1))
+    return fuori
 
 
 def mod(v):
@@ -340,6 +382,8 @@ def ts_attesi(s: Scheda, attr: dict) -> "tuple[tuple, tuple]":
     if any(g.nome.lower() in ("paladin", "paladino", "pal", "blackguard") and g.n >= 2
            for g in s.gruppi):
         mods = [m + max(0, mod(attr.get("Car"))) for m in mods]
+    extra = talenti(s.testo)
+    mods = [m + extra.get(c, 0) for m, c in zip(mods, ("Temp", "Rifl", "Vol"))]
     return (tuple(lo[k] + m for k, m in zip(lo, mods)),
             tuple(hi[k] + m for k, m in zip(hi, mods)))
 
@@ -358,36 +402,39 @@ def verifica(s: Scheda, attr: "dict | None" = None) -> dict:
     """Ogni identita': (dichiarato, atteso, scarto) o None se non verificabile."""
     attr = attr or s.attributi
     out = {}
-    if not s.gruppi:
-        return out
+    mi = INIZIATIVA.search(s.testo)
+    if mi and isinstance(attr.get("Des"), int):
+        # iniziativa = mod Des (+4 Iniziativa Migliorata): non dipende da
+        # classi ne' DV, e nessuno la controllava
+        att = mod(attr["Des"]) + talenti(s.testo).get("init", 0)
+        d = int(mi.group(1)) - att
+        if d == 4 and not re.search(r"\b(?:Talenti|Feats)\b", GA.senza_note(s.testo), re.I):
+            d = 0     # la scheda non elenca i talenti: il +4 non si verifica
+        out["iniziativa"] = (int(mi.group(1)), att, d)
     dadi_scritti = any(g.bab < 0 for g in s.gruppi)
-    atteso = pf_attesi(s, attr) if (s.pf is not None and (s.composizione_nota or dadi_scritti)) else None
+    atteso = pf_attesi(s, attr) if (s.gruppi and s.pf is not None
+                                    and (s.composizione_nota or dadi_scritti)) else None
     if atteso:
         lo, hi = atteso["minimo"], atteso["massimo"]
         scarto = 0 if lo <= s.pf <= hi else (s.pf - lo if s.pf < lo else s.pf - hi)
         out["pf"] = (s.pf, f"{lo}-{hi}", scarto)
         out["pf_media"] = atteso["media"]
-    if not s.composizione_nota:
-        return out
-    if s.ts:
-        lo, hi = ts_attesi(s, attr)
-        for nome, dich, a, b in zip(("Temp", "Rifl", "Vol"), s.ts, lo, hi):
-            d = 0 if a <= dich <= b + 4 else (dich - a if dich < a else dich - b - 4)
-            out[nome] = (dich, a if a == b else f"{a}..{b}", d)
-    bab = bab_atteso(s)
     # lotta e attacco tornano se tornano con **uno dei due** BAB, lo scritto o
-    # il calcolato: un BAB sbagliato e' un errore solo, non tre
-    babs = {bab} | ({s.bab} if s.bab is not None else set())
-    if s.bab is not None:
+    # il calcolato: un BAB sbagliato e' un errore solo, non tre. E si
+    # controllano **anche senza composizione**: lotta = BAB + For + taglia usa
+    # tre numeri che la scheda scrive, e il BAB scritto basta.
+    bab = bab_atteso(s) if s.composizione_nota else None
+    babs = ({bab} if bab is not None else set()) | ({s.bab} if s.bab is not None else set())
+    if s.bab is not None and bab is not None:
         out["BAB"] = (s.bab, bab, s.bab - bab)
     taglia = GA.taglia_di(s.testo) or GA.taglia_di(f"tipo: {s.tipo}")
-    if s.lotta is not None:
+    if s.lotta is not None and babs:
         extra = 4 if LOTTA_MIGLIORATA.search(s.testo) else 0     # afferrare migliorato no
         attesi = [b + mod(attr.get("For")) + LOTTA_TAGLIA.get(taglia, 0) + extra for b in babs]
         att = min(attesi, key=lambda a: abs(s.lotta - a))
         out["lotta"] = (s.lotta, att, s.lotta - att)
     a = attacco_dichiarato(s.mischia) if s.mischia else None
-    if a:
+    if a and babs:
         dich, pot = a
         car = "Des" if (ACCURATA.search(s.testo) and mod(attr.get("Des")) > mod(attr.get("For"))) else "For"
         fisso = (mod(attr.get(car)) + taglia + pot
@@ -396,6 +443,13 @@ def verifica(s: Scheda, attr: "dict | None" = None) -> dict:
         att = min((b + fisso for b in babs), key=lambda a: abs(dich - a))
         d = dich - att
         out["attacco"] = (dich, att, 0 if -1 <= d <= 2 else d)
+    if not s.composizione_nota:
+        return out
+    if s.ts:
+        lo, hi = ts_attesi(s, attr)
+        for nome, dich, a, b in zip(("Temp", "Rifl", "Vol"), s.ts, lo, hi):
+            d = 0 if a <= dich <= b + 4 else (dich - a if dich < a else dich - b - 4)
+            out[nome] = (dich, a if a == b else f"{a}..{b}", d)
     return out
 
 
@@ -431,11 +485,58 @@ def decisioni_aperte() -> dict:
     return fuori
 
 
+VARIANTE = re.compile(r"^.*\bVariante\b.*\bAdvanced\b.*$", re.M | re.I)
+
+
+def verifica_variante_advanced(s: Scheda) -> dict:
+    """La variante Advanced che una scheda descrive in prosa torna con la regola?
+
+    PF1e, rebuild: +4 a tutte le caratteristiche e +2 di armatura naturale,
+    quindi **pf +2 per DV** (Cos +4) e **CA +4** (+2 naturale, +2 da Des +4),
+    e GS +1. 🔎 Il primo caso misurato, Ghaurush «Cenere Piena», scrive CA 23:
+    conta l'armatura naturale e dimentica la Destrezza.
+    """
+    m = VARIANTE.search(GA.senza_note(s.testo))
+    if not m or s.pf is None:
+        return {}
+    riga, out = m.group(0), {}
+    dv = sum(g.n for g in s.gruppi) or sum(n for n, _ in (GA.dadi_vita(s.testo) or ([], 0, ""))[0])
+    ca = re.search(r"^ca:\s*(\d+)", s.testo, re.M)
+    mp, mc = re.search(r"\bhp\s*(\d+)", riga), re.search(r"\bCA\s*(\d+)", riga)
+    if mp and dv:
+        att = s.pf + 2 * dv
+        out["variante pf"] = (int(mp.group(1)), att, int(mp.group(1)) - att)
+    if mc and ca:
+        att = int(ca.group(1)) + 4
+        out["variante CA"] = (int(mc.group(1)), att, int(mc.group(1)) - att)
+    mg = re.search(r"\bCR\s*(\d+)", riga)
+    if mg:
+        att = int(s.gs) + 1
+        out["variante GS"] = (int(mg.group(1)), att, int(mg.group(1)) - att)
+    return out
+
+
+def template_dichiarati(testo: str) -> "list[str]":
+    """I template che la scheda dichiara in Source, Boost log o titolo."""
+    righe = [r for r in testo.splitlines()
+             if r.startswith(("# ", "**Faction**", "**Source**", "Boost log"))]
+    fuori = []
+    for nome, regex in (("Advanced", r"\bAdvanced\b"), ("Giant", r"\*?\bGiant\b\*?\s*\(|template semplice PF1e \*\*Giant"),
+                        ("Young", r"\bYoung\b(?! Adult)"), ("Skeleton", r"\bSkeleton\b"),
+                        ("Ghost", r"\bGhost template\b"), ("Mezzo-immondo", r"mezzo-immondo|half-fiend")):
+        if any(re.search(regex, r, re.I) for r in righe):
+            fuori.append(nome)
+    return fuori
+
+
 def giudica(s: Scheda) -> dict:
     esito = verifica(s)
+    esito.update(verifica_variante_advanced(s))
     fuori = scarti(esito)
     spiegazione = None
-    if fuori:
+    # la variante in prosa si confronta con la sua regola, e un'ipotesi di
+    # template su caratteristiche **scelte** non spiega niente
+    if fuori and s.provenienza != "generate" and not any(k.startswith("variante") for k in fuori):
         for nome in TEMPLATE:
             if not scarti(verifica(s, con_template(s.attributi, nome))):
                 spiegazione = nome
@@ -449,7 +550,7 @@ def giudica(s: Scheda) -> dict:
     return {"file": str(percorso), "provenienza": s.provenienza,
             "verificabile": bool(esito), "esito": esito, "scarti": fuori,
             "template": spiegazione, "come_la_fonte": come_la_fonte,
-            "decisione": decisione}
+            "decisione": decisione, "template_dichiarati": template_dichiarati(s.testo)}
 
 
 def tutte() -> "list[dict]":

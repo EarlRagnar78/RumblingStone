@@ -11,7 +11,7 @@ tipo: Medium magical beast (shapechanger), 9 DV (3 aranea + 6 Stregone), LE
 ca: 13
 ca-dettaglio: (10 +1 naturale +2 Des)
 pf: 47
-ts: Temp +7, Rifl +7, Vol +8
+ts: Temp +7, Rifl +7, Vol +9
 attributi: For 11 Des 15 Cos 14 Int 14 Sag 13 Car 16
 velocita: 15 m, scalare 7,5 m (forma vera)
 iniziativa: +6
@@ -21,6 +21,8 @@ voci:
   - Abilità: For 11, Des 15, Cos 14, Int 14, Sag 13, Car 16
   - Talenti: Arma Accurata, Ferrea Volontà, Iniziativa Migliorata, Incantare
 ```
+
+> [INFERRED — needs DM confirmation] correzione 3.5 da `scripts/conformita_statblocchi.py`: Volontà +8 → **+9**: aranea 3 DV (+1) + Stregone 6 (+5) + Sag 13 (+1) + **Ferrea Volontà** (+2). La scheda nominava il talento accanto al numero che non lo contava.
 
 > [INFERRED — needs DM confirmation] correzione 3.5 da `scripts/conformita_statblocchi.py`: Tempra +6 → **+7**: aranea 3 DV (bestia magica, Tempra buona +3) + Stregone 6 (+2) + Cos 14 (+2).
 
@@ -42,7 +44,7 @@ un'adolescente Media, a seconda di cosa le conviene.
 12, colto alla sprovvista 11 — **CA tipica in combattimento 17** (*armatura
 magica* precastata), + *immagine speculare* come vera difesa. Init +6;
 Vel 15 m, scalare 7,5 m (forma vera); scurovisione 18 m. TS **Temp +7,
-Rifl +7, Vol +8** (Ferrea Volontà). BAB +6/+1; Lotta +6.
+Rifl +7, Vol +9** (Ferrea Volontà). BAB +6/+1; Lotta +6.
 
 **Mischia** morso +7 (Arma Accurata) (1d6 + veleno). **Veleno** (Str):
 Tempra **CD 15**, 1d6 For / 1d6 For. **Ragnatela** (Str): 8/giorno, +7 a

@@ -9,7 +9,7 @@ ca-dettaglio: (-1 size, +2 Dex, +3 natural, +6 MW breastplate)
 pf: 80
 pf-dado: 4d8+6d10+40
 ts: Temp +12, Rifl +6, Vol +3
-attributi: For 28 Des 14 Cos 18 Int 7 Sag 12 Car 11
+attributi: For 20 Des 14 Cos 18 Int 7 Sag 12 Car 11
 ```
 
 > [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «4d8», una parte sola dei dadi vita. I dadi vengono dalla formula che la scheda scrive, il bonus è quello scritto nella formula.

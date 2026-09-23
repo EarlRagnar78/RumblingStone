@@ -15,7 +15,7 @@ iniziativa: +4
 fonte: valori approssimati nella prosa d'origine (scritti con «~»)
 ```
 
-> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ For 42 ricavata da BAB e lotta, ma la scheda scrive 33: si tiene la scheda, da verificare.
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ For 26 ricavata da BAB e lotta, ma la scheda scrive 33: si tiene la scheda, da verificare.
 
 > **Nota rinomina (2026-07-02, D11 v2 / A7)**: file precedentemente
 > `tyrgarun-black-adult-cr13.md` (black adult, riserva). Corretto a **blue Old

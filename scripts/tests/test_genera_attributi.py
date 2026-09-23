@@ -159,6 +159,25 @@ class TestLaForzaDallaLotta(unittest.TestCase):
         self.assertEqual(G.for_da_lotta(t, 1)[0], 12)
 
 
+class TestLaTagliaSiTrova(unittest.TestCase):
+    def test_dal_size_type(self):
+        self.assertEqual(G.taglia_di("**Size/Type**: Large giant | **HD**: 12d8"), -1)
+
+    def test_dal_dettaglio_della_ca_e_non_dalla_prosa(self):
+        # il loxo sciamano: «(-1 size…)» nella CA, e «Medium animal» e' il compagno
+        t = "ca-dettaglio: (-1 size, +7 natural)\nAnimal companion: dire wolf (Medium animal)."
+        self.assertEqual(G.taglia_di(t), -1)
+
+
+class TestLaDestrezzaDallIniziativa(unittest.TestCase):
+    def test_con_iniziativa_migliorata(self):
+        t = blocco(det="") + "\niniziativa: +6\n\nTalenti: Iniziativa/Vergare Migliorato\n"
+        self.assertEqual(G.des_da_iniziativa(t, 7)[0], 14)
+
+    def test_senza_elenco_di_talenti_non_si_ricava(self):
+        self.assertIsNone(G.des_da_iniziativa(blocco() + "\niniziativa: +5\n", 9))
+
+
 class TestLeRegoleDiTipo(unittest.TestCase):
     def test_il_non_morto_non_ha_costituzione(self):
         t = blocco(tipo="Medium undead HD 8d12", dado="pf-dado: 8d12")

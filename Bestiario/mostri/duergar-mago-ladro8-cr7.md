@@ -10,7 +10,7 @@ ca-dettaglio: touch 13, flat-footed 11 (+1 vs trappole)
 pf: 37
 pf-dado: 3d6+4d4+14
 ts: Temp +4, Rifl +6, Vol +5
-attributi: For 10 Des 16 Cos 14 Int 16 Sag 10 Car 9
+attributi: For 10 Des 14 Cos 14 Int 16 Sag 10 Car 9
 velocita: 6 m
 iniziativa: +6
 attacchi:

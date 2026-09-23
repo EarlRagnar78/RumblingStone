@@ -16,6 +16,8 @@ attacchi:
   - Mischia spadone Large +11/+6 (3d6+7)
 ```
 
+> [INFERRED — needs DM confirmation] correzione 3.5 da `scripts/conformita_statblocchi.py`: variante «Cenere Piena», CA 23 → **25** (29 con *scudo*): il template Advanced dà +2 di armatura naturale **e** +4 Des, cioè altri +2 alla CA. La regola rapida PF1e dice lo stesso: +4 alla CA.
+
 > [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «5d8», una parte sola dei dadi vita. I dadi vengono dalla formula che la scheda scrive, il bonus da Cos 21.
 
 > [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ Des 14 derivata dalla CA di contatto, ma la scheda scrive 10: si tiene la scheda, da verificare.
@@ -53,7 +55,7 @@ Large giant (ogre magi), LE. **DV 5d8 + 8d4** (Stregone 8). **hp 107** (Con 21 c
 **Il puzzle dell'adamantio (la parte memorabile)**: con *pelle di pietra* attiva ha **RD 10/adamantio**. I pugni di Tordek (Bracieri, adamantio) e i Treant Adamantini di Hella la **superano**; **Aegis Fang no** (è sacra, non adamantina). Il tank del gruppo scopre di essere l'unico che non buca — e la soluzione è il compagno che di solito sta dietro.
 **Il puzzle del fuoco**: la Rigenerazione 5 si spegne **solo** con fuoco o acido. L'unico fuoco affidabile del party è quello di Tordek e Artemis — e ogni fiamma che accendono è una minaccia per Hella (vulnerabilità ×1,5). **Ucciderlo costa a Hella lo spazio in cui stare.**
 
-**Variante «Cenere Piena» (Advanced, template semplice PF1e) — CR 17**: +4 a tutte le caratteristiche, +2 CA naturale, +2 a tiri per colpire, TS e CD. Risultato: **hp 133, CA 23** (27 con *scudo*), For 25 → spadone +13/+8 (3d6+9), **cono di freddo CD 23**, *palla di fuoco* CD 22. Usare questa versione **solo se Ghaurush combatte da solo** (EL 17 = APL+4, tetto della skill di boosting).
+**Variante «Cenere Piena» (Advanced, template semplice PF1e) — CR 17**: +4 a tutte le caratteristiche, +2 CA naturale, +2 a tiri per colpire, TS e CD. Risultato: **hp 133, CA 25** (29 con *scudo*), For 25 → spadone +13/+8 (3d6+9), **cono di freddo CD 23**, *palla di fuoco* CD 22. Usare questa versione **solo se Ghaurush combatte da solo** (EL 17 = APL+4, tetto della skill di boosting).
 
 Boost log: 2026-08-02 — livelli di classe (Stregone 8) su base SRD *Ogre Mage* + equipaggiamento PNG da tabella — CR 8 → **16**; variante *Advanced* (PF1e simple template) CR 16 → **17** — motivo: serviva un incantatore-bruto della Mano Rossa capace di reggere più di 2 round contro 4 PG di livello 13 con artefatti.
 Benchmark: PF T1-1 riga CR 16 (CA 31, pf 200, att +25, CD 24) → **CA molto sotto, pf sotto, CD sotto**. Questo è atteso e voluto: un PNG-incantatore 3.5 non regge i benchmark PF sui numeri puri. La sua CS reale viene da **negazione del contatto** (volo + dislocamento + forma gassosa), **danni senza TS** (muro di fuoco, assorbimento vitale) e **rigenerazione**. Se il DM lo vuole "solido" a numeri, usare la variante *Advanced*.

@@ -15,7 +15,7 @@ velocita: 30 ft
 iniziativa: +1
 ```
 
-> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ For 2 ricavata da BAB e lotta, ma la scheda scrive 9: si tiene la scheda, da verificare.
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ For 10 ricavata da BAB e lotta, ma la scheda scrive 9: si tiene la scheda, da verificare.
 
 **Size/Type**: Small humanoid (goblinoid) | **HD**: 1d8+1 (5 HP)
 **AC**: 15 (+1 size, +1 Dex, +2 leather, +1 light shield) | **Init**: +1 | **Speed**: 30 ft

@@ -203,9 +203,17 @@ def da_modificatore(m: int) -> int:
 
 
 def taglia_di(testo: str) -> int:
-    tipo = re.search(r"^tipo:\s*(.+)$", testo, re.M)
+    # 🐛 le schede di maggio scrivono la taglia in «**Size/Type**», non in
+    # `tipo`: leggendo solo il campo, una creatura Grande pesava come Media, e
+    # la Forza ricavata dalla lotta del razorfiend rosso usciva 30 invece di 22
+    tipo = (re.search(r"^tipo:\s*(.+)$", testo, re.M)
+            or re.search(r"\*\*Size/Type\*\*:?\s*([^|\n]+)", testo))
     if not tipo:
-        return 0
+        # se nessuno la scrive, la dice il dettaglio della CA: «(-1 size, …)».
+        # 🐛 Non la prosa: il primo «Medium …» del loxo sciamano e' il suo
+        # compagno animale, e la creatura e' Grande.
+        m = re.search(r"^ca-dettaglio:.*?([+-]\d)\s*(?:size|taglia)\b", testo, re.M | re.I)
+        return int(m.group(1)) if m else 0
     basso = tipo.group(1).lower()
     for nome, val in TAGLIA.items():
         if re.search(rf"\b{nome}\b", basso):
@@ -556,11 +564,19 @@ def numeri_della_fonte(testo: str) -> dict:
         m = re.search(r"\bhp\s*(\d+)", f)
         if m:
             out["pf"] = int(m.group(1))
+        m = re.search(r"\bInit(?:iative)?\s*:?\s*([+-]?\d+)", f)
+        if m:
+            out["iniziativa"] = int(m.group(1))
         # PCGen: «+3 (1d10+3, Sword, bastard, Masterwork)» e' il primo attacco
         m = re.search(r"([+-]\d+)\s*\(\d+d\d+(?:[+-]\d+)?,\s*[A-Z]", f)
         if m:
             out["attacco"] = int(m.group(1))
     return out
+
+
+INIZIATIVA_SCRITTA = re.compile(r"^iniziativa:\s*([+-]?\d+)", re.M)
+INIZIATIVA_MIGLIORATA = re.compile(
+    r"\b(?:Improved Initiative|Iniziativa(?:/[\w ]+?)? Migliorat[ao])\b", re.I)
 
 
 def senza_note(testo: str) -> str:
@@ -572,6 +588,23 @@ def senza_note(testo: str) -> str:
     """
     return "\n".join(r for r in testo.splitlines()
                      if not r.lstrip().startswith(("- ⚠", "fonte:", ">")))
+
+
+def des_da_iniziativa(testo: str, gs: float = 30.0) -> "tuple[int, str] | None":
+    """Strato 2-quater: iniziativa = mod Des (+4 con Iniziativa Migliorata).
+
+    E' un'identita' esatta del SRD, e su 66 schede il campo c'e'. Si usa solo
+    se la scheda elenca i suoi talenti: senza elenco, un +4 puo' essere il
+    talento o la Destrezza, e scegliere sarebbe indovinare.
+    """
+    pulito = senza_note(testo)
+    m = INIZIATIVA_SCRITTA.search(pulito)
+    if not m or not re.search(r"\b(?:Talenti|Feats)\b", pulito, re.I):
+        return None
+    mod_des = int(m.group(1)) - (4 if INIZIATIVA_MIGLIORATA.search(pulito) else 0)
+    if not -5 <= mod_des <= 3 + gs:
+        return None
+    return da_modificatore(mod_des), "ricavata dall'iniziativa"
 
 
 def for_da_lotta(testo: str, gs: float = 30.0) -> "tuple[int, str] | None":
@@ -749,7 +782,9 @@ def genera(nome_file: str, ruolo: str, gs: float, testo: str,
     nonmorto = bool(NON_MORTO.search(tipo))
     fonte_numeri = numeri_della_fonte(testo) if fonte and not scheda else {}
     lotta_scritta = LOTTA_SCRITTA.search(senza_note(testo))
-    for campo, trova in (("Des", des_vincolata), ("Cos", cos_da_pf), ("For", for_da_lotta)):
+    iniz_scritta = INIZIATIVA_SCRITTA.search(senza_note(testo))
+    for campo, trova in (("Des", des_vincolata), ("Des", des_da_iniziativa),
+                         ("Cos", cos_da_pf), ("For", for_da_lotta)):
         if campo == "Cos" and nonmorto:
             continue
         vincolo = trova(testo, gs)
@@ -757,6 +792,9 @@ def genera(nome_file: str, ruolo: str, gs: float, testo: str,
             continue
         valore, come = vincolo
         prima = valori[campo]
+        if (trova is des_da_iniziativa and fonte and not scheda and iniz_scritta
+                and fonte_numeri.get("iniziativa") == int(iniz_scritta.group(1))):
+            continue                  # stessa iniziativa della fonte: non adattata
         if (campo == "For" and fonte and not scheda and lotta_scritta
                 and fonte_numeri.get("lotta") == int(next(g for g in lotta_scritta.groups() if g))):
             # lo statblocco ha la stessa lotta della fonte: non e' stato

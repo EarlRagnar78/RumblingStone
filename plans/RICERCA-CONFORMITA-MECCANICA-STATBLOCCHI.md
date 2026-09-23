@@ -158,7 +158,13 @@ python3 scripts/genera_attributi.py --taratura   # errore dello strato 3: 1,91 p
 | 🟡 | **3** · promuovere `--rules` a cancello | **la parte che morde è promossa**: il controllo su `pf-dado` è un cancello (vedi 2-bis). Il benchmark per GS resta un avviso, ed è giusto: i suoi 5 avvisi sono quattro incantatori con pochi pf e un cavaliere gnoll da 11 pf, informazioni e non errori |
 | ✅ | **4** · la tabella PF1e in un YAML versionato | `scripts/pf1e-statistiche-per-gs.yaml`, **31 righe e 11 colonne** trascritte dalla fonte OGL il 2026-09-23. 🔴 Il repo ne aveva **due copie** diverse, e le otto righe dichiarate «verificate» sbagliavano danno, CD e TS cattivo (il GS 12 aveva l'attacco del GS 11): la skill e la costante erano state scritte dalla stessa mano, e il test che le confrontava confrontava lo stesso errore. `dmcore`, `validate_bestiario` e la skill leggono ora un dato solo |
 | ✅ | **5** · gli `attributi` nei 96 statblocchi | 🔵 **il DM ha deciso: generarli.** Fatto per **94** (gli altri due erano `[POINTER]`), con `genera_attributi.py` e alle condizioni di [ADR-0064](adr/ADR-0064-gli-attributi-si-scrivono-nel-bestiario.md). **39 copiati** dalla sestina che la scheda stessa scrive, **37 trascritti** dalla fonte, **18 scelti**. ⚠️ La prima versione di questo esito diceva «55 scelti»: 39 di quei 55 avevano i numeri del DM nella prosa (vedi l'emendamento di ADR-0064) |
-| ✅ | **6** · pf, TS, BAB, lotta e attacco tornano con le caratteristiche *(chiesto il 2026-09-23)* | `conformita_statblocchi.py`, alle condizioni di [ADR-0065](adr/ADR-0065-la-conformita-si-corregge-dove-il-dato-non-e-una-scelta.md). Sui **95** statblocchi verificabili: **77 tornano**, 3 sono uguali alla fonte, **7 decisioni aperte** (§9), **0 da correggere**, 8 scarti di un punto su caratteristiche generate. **11 statblocchi corretti** a mano, ognuno con la sua marca e il suo conto SRD |
+| ✅ | **6** · pf, TS, BAB, lotta e attacco tornano con le caratteristiche *(chiesto il 2026-09-23)* | `conformita_statblocchi.py`, alle condizioni di [ADR-0065](adr/ADR-0065-la-conformita-si-corregge-dove-il-dato-non-e-una-scelta.md). Primo giro: 11 statblocchi corretti a mano, uno per uno. **Secondo giro, coi talenti** (idea del DM), l'iniziativa e la variante Advanced: altri **4** corretti (Ghaurush «Cenere Piena» CA 23 → 25, Mira Serani Vol +8 → +9 col talento che nominava, phantom fungus Init −1 → +0, blue psion lotta −4 → −5). Oggi su **107** verificabili: **84 tornano**, 5 uguali alla fonte, **9 decisioni aperte** (§9), **0 da correggere**, 9 scarti di un punto su caratteristiche scelte |
+
+🔎 **Il template PF1e nei commit.** `5bdbbce` ha fatto nascere
+`genera_creatura --piu-cattivi`: Advanced applicato **senza alzare il GS**. Nel
+Bestiario nessuno statblocco viene da lì; i template dichiarati sono il Giant
+del bruto e l'Advanced di Ghaurush, e il verificatore ora controlla la variante
+scritta contro la sua regola: aveva la CA sbagliata di 2.
 
 🔎 **Il sospetto del DM sui template PF1e, misurato.** *«Controlla se sono
 questi i casi che non tornano: sono creature potenziate coi template PF1e»*. Il
@@ -201,4 +207,6 @@ scarto esce come «decisione aperta» e non come errore.
 | D5 | `ghost-lion-spettrale-cr8` | **Come si legge il template?** Non morto con Cos 20 e `8d12+40`: nel 3.5 un non morto non ha Costituzione, e il bonus ai pf e' della regola PF1e (Carisma). L'attacco +15 non torna con BAB da non morto (+4) ne' da animale (+6) |
 | D6 | `loxo-warrior3-cr4` | **Bestia magica o umanoide mostruoso?** La scheda dichiara bestia magica (`3d10`), ma i suoi TS (Temp +7, Rifl +2) non tornano con nessuna delle due progressioni |
 | D7 | `druid-bear-ally-cr12` | **I 120 pf sono in forma selvatica?** Con `12d8` e Cos 13 il massimo possibile e' 108. In forma d'orso (Cos 19) la fascia arriva a 144 e 120 ci sta: se e' cosi', la scheda lo deve dire |
+| D8 | `gnoll-cleric-yeenoghu-cr7` | **For 17 o For 18?** La lotta +10 (BAB +6) e l'attacco del mazzafrusto +1 (+12) presuppongono mod For +4; la riga delle caratteristiche dice 17 (+3). Il danno (1d8+5) torna con entrambe, a una o a due mani |
+| D9 | `wyrmlord-karruk-cr10` | **In ira o no?** Con BAB +16, Grande (+4) e For 28 (+9) la lotta e' **+29**, non +28; l'attacco +24 e il danno 2d8+13 indicano ancora un'altra Forza. La velocita' dice «(raging)»: forse alcuni numeri sono in ira e altri no |
 

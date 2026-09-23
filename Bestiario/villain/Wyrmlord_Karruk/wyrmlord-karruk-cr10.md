@@ -15,7 +15,7 @@ iniziativa: +0
 
 > [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «12d8», una parte sola dei dadi vita. I dadi vengono dalla formula che la scheda scrive, il bonus è quello scritto nella formula.
 
-> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ Cos 20 ricavata da pf 168 su 17 DV, ma la scheda scrive 24: si tiene la scheda, da verificare. ⚠ For 34 ricavata da BAB e lotta, ma la scheda scrive 28: si tiene la scheda, da verificare.
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ Cos 20 ricavata da pf 168 su 17 DV, ma la scheda scrive 24: si tiene la scheda, da verificare. ⚠ For 26 ricavata da BAB e lotta, ma la scheda scrive 28: si tiene la scheda, da verificare.
 
 **Size/Type**: Large giant | **HD**: 12d8+5d12+85 (168 HP)
 **AC**: 23 (-1 size, +8 natural, +6 +1 breastplate) | **Init**: +0 | **Speed**: 40 ft (raging)

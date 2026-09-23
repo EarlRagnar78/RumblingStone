@@ -106,6 +106,66 @@ class TestIlTemplateSpiegaLoScarto(unittest.TestCase):
         self.assertEqual(g["template"], "Advanced")
 
 
+class TestITalentiMordono(unittest.TestCase):
+    """Il DM: «forse l'intuizione per trovare questi errori sono i talenti»."""
+
+    def test_volonta_di_ferro_alza_il_minimo(self):
+        # Mira Serani: «Vol +8 (Ferrea Volonta')» col talento che non contava
+        corpo = ("gs: 8\ntipo: Medium magical beast, 9 DV (3 aranea + 6 Stregone)\nca: 15\npf: 47\n"
+                 "ts: Temp +7, Rifl +7, Vol +8\nattributi: For 11 Des 15 Cos 14 Int 14 Sag 13 Car 16\n"
+                 "voci:\n  - Talenti: Ferrea Volontà")
+        s = scheda(corpo, "**hp 47** (9 HD)", titolo="# Mira (Stregone 6)")
+        self.assertIn("Vol", C.scarti(C.verifica(s)))
+
+    def test_iniziativa_migliorata_scritta_compressa(self):
+        # «Iniziativa/Scacciare Migliorato» sono due talenti in una parola
+        self.assertEqual(C.talenti("Talenti: Iniziativa/Scacciare Migliorato")["init"], 4)
+
+    def test_iniziativa_e_un_identita(self):
+        s = scheda("gs: 3\nca: 14\npf: 15\niniziativa: -1\nts: Temp +6, Rifl +0, Vol +0\n"
+                   "attributi: For 14 Des 10 Cos 16 Int 2 Sag 11 Car 9\nvoci:\n  - Talenti: Allerta")
+        self.assertEqual(C.verifica(s)["iniziativa"][2], -1)
+
+    def test_senza_elenco_di_talenti_il_piu_quattro_non_si_giudica(self):
+        # il razorfiend rosso eredita Iniziativa Migliorata dalla base nera
+        s = scheda("gs: 9\nca: 24\npf: 115\niniziativa: +5\nts: Temp +12, Rifl +8, Vol +9\n"
+                   "attributi: For 22 Des 12 Cos 20 Int 8 Sag 13 Car 12")
+        self.assertEqual(C.verifica(s)["iniziativa"][2], 0)
+
+    def test_la_lotta_si_verifica_anche_senza_composizione(self):
+        # BAB, For e taglia sono scritti: i DV non servono
+        s = scheda("gs: 1\nca: 15\npf: 5\nts: Temp +3, Rifl +2, Vol +0\n"
+                   "attributi: For 8 Des 14 Cos 12 Int 12 Sag 10 Car 12",
+                   "**Size/Type**: Small humanoid | **BAB/Grapple**: +0/-4")
+        self.assertEqual(C.verifica(s)["lotta"][2], 1)
+
+
+class TestLaVarianteAdvanced(unittest.TestCase):
+    def test_la_ca_conta_anche_la_destrezza(self):
+        # Ghaurush «Cenere Piena» scriveva CA 23: +2 naturale, dimenticata la Des
+        corpo = ("gs: 16\nca: 21\npf: 107\npf-dado: 5d8+8d4+65\nts: Temp +11, Rifl +3, Vol +11\n"
+                 "attributi: For 21 Des 10 Cos 21 Int 14 Sag 14 Car 22")
+        prosa = "**Variante «Cenere Piena» (Advanced) — CR 17**: **hp 133, CA 23**."
+        esito = C.verifica_variante_advanced(scheda(corpo, "DV 5d8 + 8d4. " + prosa))
+        self.assertEqual(esito["variante pf"][2], 0)
+        self.assertEqual(esito["variante CA"][2], -2)
+        self.assertEqual(esito["variante GS"][2], 0)
+
+    def test_la_marca_non_e_la_variante(self):
+        corpo = ("gs: 16\nca: 21\npf: 107\npf-dado: 5d8+8d4+65\nts: Temp +11, Rifl +3, Vol +11\n"
+                 "attributi: For 21 Des 10 Cos 21 Int 14 Sag 14 Car 22")
+        prosa = ("> [INFERRED] variante Advanced, CA 23 → 25\n\n"
+                 "**Variante (Advanced) — CR 17**: **hp 133, CA 25**.")
+        self.assertEqual(C.verifica_variante_advanced(scheda(corpo, "DV 5d8 + 8d4.\n\n" + prosa))["variante CA"][2], 0)
+
+    def test_un_template_non_spiega_caratteristiche_scelte(self):
+        s = scheda("gs: 4\ntipo: Large giant, 4 HD\nca: 18\npf: 34\npf-dado: 4d8+16\n"
+                   "ts: Temp +8, Rifl +2, Vol +3\nattributi: For 21 Des 8 Cos 15 Int 6 Sag 10 Car 7",
+                   "**hp 34** (4 HD). BAB +3; Lotta +14.")
+        s.provenienza = "generate"
+        self.assertIsNone(C.giudica(s)["template"])
+
+
 class TestPfDado(unittest.TestCase):
     def test_la_formula_scritta_vince(self):
         t = "pf-dado: 4d8\n**DV 4d8 + 6d12**. **hp 77**"

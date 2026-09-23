@@ -10,7 +10,7 @@ ca-dettaglio: touch 11, flat-footed 21 (piastre +1, scudo pesante +1, +1 Des)
 pf: 76
 pf-dado: 8d10+32
 ts: Temp +9, Rifl +3, Vol +4
-attributi: For 16 Des 12 Cos 18 Int 9 Sag 11 Car 15
+attributi: For 16 Des 4 Cos 18 Int 9 Sag 11 Car 15
 velocita: 6 m
 iniziativa: +1
 attacchi:

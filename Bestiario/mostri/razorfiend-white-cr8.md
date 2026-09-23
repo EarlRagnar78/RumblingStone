@@ -6,7 +6,7 @@ gs: 8
 ca: 23
 pf: 94
 ts: Temp +7, Rifl +6, Vol +6
-attributi: For 16 Des 15 Cos 19 Int 7 Sag 12 Car 11
+attributi: For 24 Des 13 Cos 23 Int 7 Sag 12 Car 11
 velocita: 40 ft, fly 50 ft (average), swim 30 ft
 iniziativa: +4
 fonte: derivati dalle tabelle: ts (il resto è letto dalla prosa) — caratteristiche: matrice standard (13, 12, 11, 10, 9, 8) + 2 da DV/4 → For 14, Cos 13, Des 11 · TS: tipo «dragon», TS buoni ('temp', 'rifl', 'vol') → Temp +7, Rifl +6, Vol +6

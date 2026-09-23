@@ -104,3 +104,60 @@ nuovo e il conto SRD che li separa.
   base e di prestigio, *Improving Monsters*, lotta e modificatore di taglia.
 - PF1e Bestiary, Table 1–1, trascritta in `scripts/pf1e-statistiche-per-gs.yaml`.
 - `Bestiario/pregen-pcgen/`: le fonti PCGen e SRD citate dalle schede.
+
+---
+
+## Emendamento — 2026-09-23, secondo giro: talenti, iniziativa, template
+
+Il DM: *«forse l'intuizione per trovare questi errori sono i talenti e gli
+aggiustamenti del 3.5 […] cerca nei commit passati il template PF1e, capisci
+come si costruisce e si verifica, e integralo nella validazione»*.
+
+**I commit.** `5bdbbce` (3 settembre) ha creato `genera_creatura.py` con
+`--piu-cattivi`: il template **Advanced** PF1e applicato **senza alzare il GS**,
++4 a tutte le caratteristiche e +2 di armatura naturale, con una voce nel blocco
+che lo dichiara. Nessuno statblocco del Bestiario viene da lì: il generatore
+non scrive in `Bestiario/`. I template dichiarati nel Bestiario sono il **Giant**
+del bruto deforme (incorporato, nel Boost log) e l'**Advanced** della variante
+«Cenere Piena» di Ghaurush, scritta in prosa coi suoi numeri.
+
+**Cosa entra nella verifica.**
+
+- **I talenti che spostano un numero** (Tempra Possente, Riflessi Fulminei,
+  Volontà di Ferro, Iniziativa Migliorata, anche nella forma compressa
+  «Iniziativa/Scacciare Migliorato») e il mantello della resistenza alzano il
+  **minimo** atteso dei TS. La fascia +4 sopra resta, perché gli oggetti non si
+  leggono tutti.
+- **L'iniziativa** è un'identità esatta (mod Des, +4 col talento) su 66
+  statblocchi, e nessuno la controllava. Dove la scheda non elenca i talenti, il
+  +4 non si giudica.
+- **Lotta, attacco e iniziativa** si controllano anche senza la composizione dei
+  DV: usano il BAB scritto. Da 95 a **107** statblocchi verificabili.
+- **La variante Advanced** in prosa si confronta con la sua regola: pf +2 per DV,
+  CA +4, GS +1.
+
+**Cosa ha trovato.** Quattro errori veri, corretti con la marca:
+
+| Statblocco | Era | È | Perché |
+|---|---|---|---|
+| Ghaurush, variante «Cenere Piena» | CA 23 (27) | **25 (29)** | Advanced dà +2 naturale **e** +4 Des: la variante contava solo la prima |
+| Mira Serani | Vol +8 | **+9** | la scheda scriveva «Vol +8 (Ferrea Volontà)» senza contare il talento |
+| phantom fungus | Init −1 | **+0** | la fonte SRD scrive Initiative +0, e la Des è 10 |
+| blue psion | lotta −4 | **−5** | For 8 confermata da attacco e danno; Piccola −4 |
+
+E due decisioni in più per il DM (D8, D9), dove lotta, attacco e caratteristiche
+puntano in direzioni diverse.
+
+**Nessuno scarto si spiega con un template ipotizzato**: la sola variante
+dichiarata aveva l'errore nella CA, e un'ipotesi di template su caratteristiche
+**scelte** non dimostra niente, quindi non si applica più.
+
+**E il verificatore ha avuto i suoi difetti anche in questo giro**, tutti con una
+prova: la taglia letta solo dal campo `tipo` (il razorfiend rosso diventava
+Medio), poi dalla prosa (il «Medium animal» del loxo sciamano era il suo compagno
+animale), la variante letta dentro la marca che la correggeva.
+
+**I conti di oggi**: 107 verificabili, **84 tornano**, 5 uguali alla fonte, **9
+decisioni aperte**, **0 da correggere**, 9 scarti di un punto su caratteristiche
+scelte.
+

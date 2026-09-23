@@ -234,27 +234,6 @@ CARATTERE: dict[str, list[tuple[str, str, str]]] = {
 TIPI_COMUNI = ("humanoid", "monstrous humanoid", "magical beast", "giant",
                "aberration", "undead", "outsider", "animal")
 
-#: Per GS, il numero di DV con cui si parte. **Convenzione 3.5 dichiarata, non
-#: una tabella del SRD**: il SRD non ha un «DV per GS», e questa è la regola
-#: pratica (un mostro standard ha grosso modo tanti DV quanto il GS). È
-#: dichiarata qui invece che nascosta dentro il codice perché è esattamente il
-#: genere di numero che, non dichiarato, fra sei mesi sembra una fonte.
-def dv_di_partenza(gs: int, tipo: str) -> int:
-    """DV ≈ GS, con lo scarto che il tipo impone al SRD.
-
-    I non-morti e i costrutti hanno BAB e TS bassi: a pari DV valgono meno, e ne
-    servono di più. I draghi hanno d12, BAB pieno e tre TS buoni: ne servono meno.
-    """
-    dado, bab, buoni = T.TIPI[tipo]
-    scarto = 0
-    if bab <= 0.5:
-        scarto += 2
-    if len(buoni) >= 3:
-        scarto -= 1
-    if dado >= 12:
-        scarto -= 1
-    return max(1, gs + scarto)
-
 
 # ===========================================================================
 # Costruire

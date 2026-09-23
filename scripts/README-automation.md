@@ -21,6 +21,7 @@ python3 scripts/dm.py post                        # XP ledger + state.md diff pr
 python3 scripts/dm.py recap --hype                # player recap + Homebrewery V3 version
 python3 scripts/dm.py handout --tipo profezia --da <file> --sezione "HANDOUT 1"
 python3 scripts/dm.py maps validate               # or: maps render <file.md>
+python3 scripts/dm.py bestiario creatura --gs 7 --ruolo bruto   # or: estrai/deriva/attributi/conformita
 python3 scripts/dm.py dossier                     # ⚠️ SOLO DM: dossier trame → DM-DOSSIER.hb.md
 python3 scripts/dm.py hype setup && dm.py hype start   # Homebrewery locale (localhost:8000)
 python3 scripts/dm.py skills build --no-deploy    # rebuild pacchetti skill multi-agente
@@ -46,6 +47,7 @@ python3 scripts/dm.py doctor                      # environment diagnosis
 | `session` | `end`\|`next`\|`recap`\|`status`\|`branch` · `--session <file>` (end; senza → wizard) · `--yes` · `--last-n N` · `--hype` · `--pg <PG>` (recap) · `--group <nome>` | `campaign_branch` + `session_wizard` + `update_xp` + `state_apply` / `next_session` / `session_recap --pg` + `hype_homebrew --pg` | §4 + §7 (branch-per-gruppo, ADR-0007) |
 | `recap` | `--last-n N` · `--pdf` · `--hype` | `session_recap` (+ `hype_homebrew`) | §4.6 |
 | `handout` | `--tipo T` (obbl.) · `--da <file>` · `--out <file>` | `hype_homebrew --handout` | prep |
+| `bestiario` | `estrai`\|`deriva`\|`attributi`\|`creatura`\|`conformita` + i flag dello script (anche `--help`) | `extract_statblocks` / `derive_statblocks` / `genera_attributi` / `genera_creatura` / `conformita_statblocchi` | prep (creature; il codice d'uscita è quello dello script) |
 | `hype` | `setup`\|`start`\|`docker`\|`docker-stop` | wrapper `homebrew-local/*.sh` | prep |
 | `dossier` | *(nessuno)* | `dm_dossier` | §4 (solo DM) |
 | `prompts` | `<arco>` (obbl.) · `-o <file>` · `--list` | `extract_scene_prompts` | prep (prompt immagine dell'arco, ADR-0015) |

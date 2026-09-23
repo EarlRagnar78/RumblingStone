@@ -1,6 +1,6 @@
 # PIANO — La qualità del codice, misurata prima e dopo
 
-> **Stato**: 🟡 **riaperto il 2026-09-23 col lotto E** (§8, una libreria per le creature). I lotti 0, A, B, C, D sono chiusi dal 2026-09-03; del lotto E resta E9, bloccato su D3
+> **Stato**: ✅ **chiuso il 2026-09-23**. I lotti 0, A, B, C, D sono chiusi dal 2026-09-03; il lotto E (§8, una libreria per le creature), riaperto il 2026-09-23, è chiuso lo stesso giorno con E9
 > **Aperto**: 2026-09-03
 > **Nasce da**: domanda del DM — *«per ogni script si dovrebbe guardare: c'è una
 > libreria o un tool open source che risolve il problema? posso usare oggetti già
@@ -392,7 +392,7 @@ Nel lotto B ha trovato un difetto nel test stesso, che rileggendolo non si vedev
 
 ---
 
-## §8 · Lotto E — Una libreria per le creature *(aperto 2026-09-23)*
+## §8 · Lotto E — Una libreria per le creature *(aperto e chiuso il 2026-09-23)*
 
 > **Nasce da** la domanda del DM del 2026-09-23: *«se i tre script usano le
 > stesse funzioni, si possono unire in una libreria unica, lasciando nei tre
@@ -750,7 +750,7 @@ lotto E, e `test_tabelle` verifica con `assertIs` che il derivatore usi proprio
 quelle tabelle e non una copia; `genera_creatura.rendi` lo chiama
 `suggest_encounter`. Nessuno dei nove viene da E2-E5. I numeri nuovi di §8.2 stanno accanto ai vecchi, nella colonna «Dopo E8».
 
-#### ⬜ E9 · `dm.py bestiario` *(bloccato su D3)*
+#### ✅ E9 · `dm.py bestiario` *(chiuso 2026-09-23, D3 = sì)*
 `[engine: Sonnet 5 · effort: medio · qualità: dm.py bestiario <azione> --help esce 0 e dà lo stesso output dello script]`
 **Classe C.** Un sottocomando `dm.py bestiario {estrai,deriva,attributi,creatura,conformita}`
 che passa gli argomenti allo script (come fanno già `prep` e `maps`, con
@@ -761,12 +761,31 @@ chiamano per nome. Si aggiornano `scripts/README-automation.md`, la skill
 **Accettazione**: un test che per ogni azione confronta `dm.py bestiario X --help`
 con `scripts/X.py --help`; `dm.py doctor --ci` verde.
 
+✅ **Fatto**: `dm.py bestiario {estrai,deriva,attributi,creatura,conformita}`
+passa i flag allo script con `run`, come `prep` e `maps`. Il sottoparser ha
+`add_help=False`, altrimenti `--help` lo prenderebbe `dm.py` e l'aiuto dello
+script non arriverebbe mai; senza azione elenca le cinque ed esce 2. Il codice
+d'uscita è quello dello script. `test_dm_bestiario.py`, 8 test: l'aiuto di ogni
+azione è quello dello script, a meno della riga «[dm] → …» che `dm.py` stampa
+prima di lanciare; flag e codice d'uscita passano; il sottocomando è nel
+manifest dei tool. **Quattro mutazioni su quattro** li fanno rossi. La prima
+non mordeva: il test leggeva la mappa da `dm.BESTIARIO`, e un'azione mandata
+allo script sbagliato cambiava tutte e due le parti del confronto. Adesso il
+contratto è scritto nel test. Aggiornati `README-automation.md`, la skill
+`rumblingstone-automation`, `tools.manifest.json` e i tre artefatti di
+`docs/tools/`.
+Con E9 sono entrate tre correzioni di ordine: la prima delle due
+`dv_di_partenza` di `genera_creatura`, che la seconda sostituiva al caricamento
+del modulo e nessuno chiamava (impronta identica); il riferimento della riga
+«Lotto E aperto» nel CHANGELOG (PR #155, non «questo commit»); il conteggio di
+`REGISTRO-LOTTI.md`, che diceva quattordici righe e ne ha 41.
+
 ### §8.5 · Il collaudo, dopo ogni sotto-lotto
 
 Non si passa al sotto-lotto successivo finché tutti questi non sono verdi:
 
 ```bash
-python3 -m pytest -q scripts/tests/                     # ≥ 1194 verdi (1165 prima del lotto)
+python3 -m pytest -q scripts/tests/                     # ≥ 1202 verdi (1165 prima del lotto)
 python3 -m pytest -q scripts/tests/test_impronta_creature.py   # impronta di E0 identica
 python3 scripts/impronta_creature.py --confronta        # la stessa, e dice dove diverge
 python3 scripts/extract_statblocks.py --check           # 0 problemi
@@ -799,29 +818,26 @@ E tre regole di metodo, già provate in questo piano:
 |---|---|---|
 | ~~D1~~ | E1 · E3 | ✅ **decisa dal DM il 2026-09-23: sì**, il verificatore condivide il lettore ([ADR-0066](adr/ADR-0066-le-creature-hanno-una-libreria-e-il-verificatore-non-importa-la-scelta.md)). **Il verificatore condivide il lettore?** Oggi lo fa già: importa 23 simboli da `genera_attributi`. **Sì** (consigliato): il lettore va in `dmcore/lettura_creatura.py` e lo usano tutti; l'indipendenza sta nelle regole e nella scelta, che il verificatore non importa mai (E4 lo prova). **No**: il verificatore tiene un lettore suo, copiato, più sicuro contro un errore di lettura condiviso e con una seconda copia da tenere allineata a mano |
 | ~~D2~~ | E6 | ✅ **decisa dal DM il 2026-09-23: (a)**, vince `genera_attributi`; attuata in E6. **Quale tabella dei ruoli vince?** Dei 6 ruoli di `genera_creatura`, 4 ordinano le caratteristiche diversamente dal profilo corrispondente di `genera_attributi` (schermagliatore, tiratore, blaster, controllore). **(a)** vince `genera_attributi`: cambiano i PNG che `genera_creatura` genera d'ora in poi, nessun blocco del Bestiario; **(b)** vince `genera_creatura`: cambiano gli `attributi` di alcuni dei 15 blocchi scelti dall'array, che il DM vede prima; **(c)** si tengono separate e si dichiara perché |
-| D3 | E9 | **`dm.py bestiario` si fa in questo lotto o dopo?** Costa poco e non dipende dalla libreria; farlo prima di E8 vuol dire toccare `dm.py` due volte se un'interfaccia cambia |
+| ~~D3~~ | E9 | ✅ **decisa dal DM il 2026-09-23: sì, subito**; attuata in E9. **`dm.py bestiario` si fa in questo lotto o dopo?** Costa poco e non dipende dalla libreria; farlo prima di E8 vuol dire toccare `dm.py` due volte se un'interfaccia cambia |
 
 ### §8.7 · Da dove si comincia, in una chat nuova
 
-🔁 **Dopo la seconda PR del lotto (E6-E8) si riparte da qui.** Il blocco che
-stava qui dopo la PR #158 e la misura più sotto sono di prima, e non tornano più
-di proposito:
+🔁 **Il lotto è chiuso.** Chi lo riapre, o apre un lotto sulle stesse creature,
+parte da qui e non dalla misura più sotto, che è quella di prima del lotto:
 
 ```bash
-git fetch origin main && git log --oneline -1 origin/main                   # la PR di E6-E8 mergiata
-wc -l scripts/{derive_statblocks,genera_attributi,genera_creatura,conformita_statblocchi}.py   # 2431
+git fetch origin main && git log --oneline -1 origin/main                   # la PR di E6-E9 mergiata
+wc -l scripts/{derive_statblocks,genera_attributi,genera_creatura,conformita_statblocchi}.py   # 2410
 wc -l scripts/dmcore/{progressione,lettura_creatura,caratteristiche}.py      # 113 · 634 · 541
 python3 scripts/impronta_creature.py --confronta                            # identica (rigenerata in E6)
-python3 -m pytest -q scripts/tests/ | tail -1                               # 1194 passed
-python3 scripts/decisioni_dm.py --check                                     # D3 di QUALITA-CODICE aperta
+python3 -m pytest -q scripts/tests/ | tail -1                               # 1202 passed
+python3 scripts/dm.py bestiario creatura --help | sed -n 2p                  # usage: genera_creatura.py …
+python3 scripts/decisioni_dm.py --check                                     # nessuna decisione di QUALITA-CODICE aperta
 ```
 
-Resta **E9**, bloccato su **D3**: il DM ha scelto di lasciarla aperta, e la
-seconda PR non l'ha toccata. Gli alias sono spariti in E8, quindi un
-`dm.py bestiario` fatto adesso passa argomenti a script con l'interfaccia
-definitiva e non tocca `dm.py` due volte, che era il rischio scritto in D3.
 ⚠️ Le mutazioni si provano con `PYTHONDONTWRITEBYTECODE=1` e la cache svuotata
-dopo il ripristino (E2).
+dopo il ripristino (E2). L'impronta si rigenera solo in un commit suo, con le
+celle che cambiano e il perché (E6).
 
 **Prima di tutto la misura.** Se un numero non torna con §8.2, qualcuno ha già
 lavorato: si rilegge questo piano prima di eseguirlo.

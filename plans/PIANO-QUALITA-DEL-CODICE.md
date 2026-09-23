@@ -605,7 +605,7 @@ importa `genera_attributi` e `genera_attributi` non importa il verificatore,
 nemmeno dentro una funzione. Il piano metteva questa scomparsa in E4; è
 arrivata con E3b, e E4 la rende un test.
 
-#### ⬜ E4 · Il grafo degli import
+#### ✅ E4 · Il grafo degli import *(chiuso 2026-09-23)*
 `[engine: Sonnet 5 · effort: medio · qualità: il test morde su un import proibito aggiunto a mano]`
 **Classe C.** Un test (`test_grafo_import_creature.py`) che legge gli import con
 `ast` e verifica:
@@ -616,6 +616,17 @@ arrivata con E3b, e E4 la rende un test.
 
 **Accettazione**: verde; e rosso aggiungendo a mano
 `import dmcore.caratteristiche` in `conformita_statblocchi.py`.
+
+✅ **Fatto**: `test_grafo_import_creature.py`, 9 test, stdlib. Legge gli import
+di tutti gli script e di tutto `dmcore` con `ast.walk`, quindi anche quelli
+dentro una funzione, e verifica: nessun ciclo che passi per i sette nodi del
+lotto; nessun percorso dal verificatore a `dmcore.caratteristiche`; nessun
+modulo raggiunto dal verificatore che ci arrivi; la libreria non importa
+script; il verificatore non raggiunge il generatore. **Morde** tre volte:
+l'import aggiunto a mano nel verificatore (rosso, e il messaggio dice il
+percorso), lo stesso import messo **dentro una funzione** del lettore (3 test
+rossi), e il grafo di E2 ricostruito da `git show`, dove trova il vecchio ciclo
+`genera_attributi → conformita_statblocchi → genera_attributi`.
 
 #### ⬜ E5 · La scelta delle caratteristiche in un posto
 `[engine: Opus, sessione principale · effort: alto · qualità: impronta identica, taratura 1,50 / 1,51 invariata]`

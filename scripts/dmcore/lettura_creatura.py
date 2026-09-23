@@ -21,10 +21,12 @@ from __future__ import annotations
 
 import html
 import re
+from dataclasses import dataclass, field
 from pathlib import Path
 
 from dmcore import tabelle as T
-from dmcore.progressione import DADO_DI_CLASSE
+from dmcore.progressione import CLASSE_LIVELLO, DADO_DI_CLASSE, TS, Gruppo, ts_base
+from dmcore.progressione import classe as _classe
 
 __all__ = [
     "ORDINE", "TAGLIA", "BLOCCO", "CLASSE_NEL_TIPO", "taglia_di", "PF_DADO",
@@ -34,7 +36,11 @@ __all__ = [
     "INTESTAZIONE", "sestine_citate", "dalla_scheda", "BAB_SCRITTO", "LOTTA_SCRITTA",
     "LOTTA_TAGLIA", "LOTTA_MIGLIORATA", "numeri_della_fonte", "INIZIATIVA_SCRITTA",
     "INIZIATIVA_MIGLIORATA", "senza_note", "MARCA", "CODA_FONTE", "CODA_SCHEDA",
-    "CODA_ARRAY"
+    "CODA_ARRAY", "TS_CAMPO", "ATTRIBUTI", "MISCHIA", "TALENTI", "RESISTENZA",
+    "talenti", "Scheda", "provenienza", "DV_PROSA", "DV_ACCANTO_AI_PF",
+    "LIVELLO_IGNOTO", "dv_totali", "dadi_di_pf", "composizione", "leggi",
+    "NON_MORTO_PF1E", "PF1E", "non_morto_pf1e", "TS_CARATTERISTICA", "TS_SCRITTI",
+    "tetti_dai_ts"
 ]
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -360,3 +366,269 @@ CODA_SCHEDA = ("copiati dalla riga delle caratteristiche di questa stessa scheda
 CODA_ARRAY = ("generati da `scripts/genera_attributi.py`: array del Manuale del DM "
               "con taglia e razza SRD, vincolati da CA e pf dove il file li "
               "dichiara. Confermali o correggili.")
+
+
+# ---------------------------------------------------------------------------
+# La scheda come la legge il verificatore (da conformita_statblocchi, lotto E3b)
+# ---------------------------------------------------------------------------
+TS_CAMPO = re.compile(r"^ts:\s*Temp\s*([+-]\d+),\s*Rifl\s*([+-]\d+),\s*Vol\s*([+-]\d+)", re.M)
+ATTRIBUTI = re.compile(r"^attributi:\s*(.+)$", re.M)
+MISCHIA = re.compile(r"^\s*-\s*Mischia\s+(.+)$", re.M)
+#: SRD 3.5: i talenti che spostano un numero verificabile. 🔎 **Il DM, il
+#: 2026-09-23: «forse l'intuizione per trovare questi errori sono i talenti».**
+#: Senza, un TS si accettava fra la base e la base +4, e quella fascia
+#: nascondeva proprio la scheda che elenca Volonta' di Ferro e non ne conta il +2.
+TALENTI = (
+    (re.compile(r"\b(?:Great Fortitude|Tempra Possente|Grande Tempra)\b", re.I), "Temp", 2),
+    (re.compile(r"\b(?:Lightning Reflexes|Riflessi Fulminei|Riflessi Rapidi)\b", re.I), "Rifl", 2),
+    (re.compile(r"\b(?:Iron Will|Volont[aà] di Ferro|Ferrea Volont[aà])\b", re.I), "Vol", 2),
+    # «Iniziativa/Scacciare Migliorato»: due talenti scritti in uno
+    (INIZIATIVA_MIGLIORATA, "init", 4),
+)
+#: Il mantello della resistenza: +N a tutti i TS.
+RESISTENZA = re.compile(r"(?:cloak of resistance|mantello (?:della|di) resistenza)\s*\+(\d)", re.I)
+
+
+def talenti(testo: str) -> dict:
+    """{campo: bonus} dei talenti e degli oggetti che la scheda dichiara."""
+    pulito = senza_note(testo)
+    fuori = {}
+    for regex, campo, bonus in TALENTI:
+        if regex.search(pulito):
+            fuori[campo] = fuori.get(campo, 0) + bonus
+    m = RESISTENZA.search(pulito)
+    if m:
+        for c in ("Temp", "Rifl", "Vol"):
+            fuori[c] = fuori.get(c, 0) + int(m.group(1))
+    return fuori
+
+
+@dataclass
+class Scheda:
+    file: Path
+    gs: float
+    tipo: str
+    attributi: dict
+    provenienza: str
+    gruppi: list = field(default_factory=list)
+    composizione_nota: bool = False
+    pf: "int | None" = None
+    ts: "tuple | None" = None
+    bab: "int | None" = None
+    lotta: "int | None" = None
+    mischia: str = ""
+    testo: str = ""
+
+
+def provenienza(testo: str) -> str:
+    if MARCA + CODA_SCHEDA in testo:
+        return "copiate"
+    if MARCA + CODA_FONTE in testo:
+        return "trascritte"
+    if MARCA in testo:
+        return "generate"
+    return "a mano"
+
+
+def _attributi(riga: str) -> dict:
+    return {k: (int(v) if v.isdigit() else "—")
+            for k, v in re.findall(r"(For|Des|Cos|Int|Sag|Car)\s+(\d+|—|-)", riga)}
+
+
+DV_PROSA = re.compile(r"\((\d+)\s*(?:HD|DV)\)")
+#: «**hp 67** (7 HD)»: il totale sta accanto ai pf. La prosa ripete il `tipo`,
+#: e il primo «(6 HD)» del minotauro e' quello razziale.
+DV_ACCANTO_AI_PF = re.compile(r"\b(?:hp|pf)\**\s*\d+\**\s*\((\d+)\s*(?:HD|DV)\)", re.I)
+#: «Diviner 5», «Hammer of Moradin 2»: un nome con un livello che non e' una
+#: classe SRD. Se c'e', la composizione non si conosce e TS e BAB non si
+#: verificano: indovinare la progressione di una classe ignota e' inventare.
+LIVELLO_IGNOTO = re.compile(r"\b([A-Z][a-z]+(?:\s+(?:of|di|del)?\s*[A-Z][a-z]+)*)\s+(\d{1,2})\b")
+
+
+def dv_totali(testo: str) -> "int | None":
+    """I DV totali: prima la prosa «(7 HD)», poi il `tipo`, poi `pf-dado`.
+
+    🐛 Il `tipo` del minotauro dice «Minotauro (6 HD) / Barbarian 1»: quei 6
+    sono i DV **razziali**, e il totale (7) sta nella prosa. Leggere il `tipo`
+    per primo dava BAB +6 a una creatura che ne ha +7.
+    """
+    m = DV_ACCANTO_AI_PF.search(testo)
+    if m:
+        return int(m.group(1))
+    righe = [r for r in testo.splitlines() if not r.startswith("tipo:")]
+    m = DV_PROSA.search("\n".join(righe))
+    if m:
+        return int(m.group(1))
+    m = DV_DICHIARATI.search(testo)
+    if m:
+        return int(next(g for g in m.groups() if g))
+    dado_pf = PF_DADO.search(testo)
+    pezzi = PEZZO_DADO.findall(dado_pf.group(1)) if dado_pf else []
+    if pezzi and not pf_dado_sospetto(testo):
+        return sum(int(a) for a, _ in pezzi)
+    return None
+
+
+def dadi_di_pf(testo: str) -> "list[tuple[int, int]]":
+    """I dadi di `pf-dado`, se il campo registra davvero i dadi vita."""
+    m = PF_DADO.search(testo)
+    if not m or pf_dado_sospetto(testo):
+        return []
+    return [(int(a), int(b)) for a, b in PEZZO_DADO.findall(m.group(1))]
+
+
+def composizione(testo: str, tipo: str) -> "tuple[list[Gruppo], bool]":
+    """I gruppi di DV, e se la composizione e' **nota** (classi e tipo).
+
+    Le classi si leggono nel `tipo`. I DV razziali sono il totale dichiarato
+    meno i livelli di classe; un umanoide con classi non ne ha (il suo DV
+    razziale e' sostituito dal primo livello), a meno che il totale dichiarato
+    dica il contrario (gnoll, bugbear).
+
+    Una scheda scritta come «Medium humanoid, 8d10» ha una classe che **non
+    dichiara**: il d10 dice guerriero o paladino, non quale. Li' i pf si
+    verificano sui dadi scritti, e TS e BAB no.
+    """
+    gruppi = []
+    titolo = re.search(r"^# (.+)$", testo, re.M)
+    # le classi stanno nel `tipo`; se il `tipo` non ne nomina, nel titolo
+    # («Gnoll Warrior 2»). Mai in entrambi: il titolo ripete spesso il tipo.
+    for sorgente in (tipo, titolo.group(1) if titolo else ""):
+        for nome, liv in CLASSE_LIVELLO.findall(sorgente):
+            c = _classe(nome)
+            if c:
+                gruppi.append(Gruppo(nome, int(liv), c[0], c[1], c[2]))
+        if gruppi:
+            break
+    livelli = sum(g.n for g in gruppi)
+    totale = dv_totali(testo)
+    ignoti = [n for n, _ in LIVELLO_IGNOTO.findall(tipo)
+              if not CLASSE_LIVELLO.match(f"{n} 1") and T.normalizza_tipo(n) is None
+              and n.lower() not in ("hd", "dv")]
+    if ignoti:
+        return gruppi, False
+    chiave = T.normalizza_tipo(tipo) if tipo else None
+    if chiave not in T.TIPI:
+        return gruppi, bool(gruppi) and (totale is None or totale == livelli)
+    dado, bab, buoni = NON_MORTO_PF1E if non_morto_pf1e(tipo) else T.TIPI[chiave]
+    scritti = dadi_di_pf(testo)
+    if chiave == "humanoid" and not gruppi and (totale or 0) <= 1:
+        # un umanoide da 1 DV ha un livello di classe al posto del DV razziale
+        # (SRD): se la classe non e' scritta, TS e BAB non si sanno
+        return [Gruppo("classe non dichiarata", n, f, (), -1.0) for n, f in scritti], False
+    if not gruppi and scritti and any(f != dado for _, f in scritti):
+        # classe non dichiarata: i dadi ci sono, la progressione no
+        return [Gruppo("classe non dichiarata", n, f, (), -1.0) for n, f in scritti], False
+    if totale is None:
+        razziali = 0 if (gruppi and chiave == "humanoid") else None
+    else:
+        razziali = totale - livelli
+    if razziali is None or razziali < 0:
+        return gruppi, False
+    if razziali > 0:
+        gruppi.insert(0, Gruppo(chiave, razziali, dado, buoni, bab))
+    return gruppi, True
+
+
+def leggi(p: Path) -> "Scheda | None":
+    t = p.read_text(encoding="utf-8", errors="replace")
+    if "[POINTER" in t or "[RIMANDO]" in t:
+        return None
+    m = BLOCCO.search(t)
+    a = ATTRIBUTI.search(t)
+    gs = re.search(r"^gs:\s*([\d.,]+)", t, re.M)
+    if not (m and a and gs):
+        return None
+    tipo = re.search(r"^tipo:\s*(.+)$", t, re.M)
+    if not tipo:
+        # schede del maggio scritte nel formato SRD: il tipo sta in «Size/Type»
+        tipo = re.search(r"\*\*Size/Type\*\*:?\s*([^|\n]+)", t)
+    tipo = tipo.group(1).strip() if tipo else ""
+    s = Scheda(file=p, gs=float(gs.group(1).replace(",", ".")), tipo=tipo,
+               attributi=_attributi(a.group(1)), provenienza=provenienza(t), testo=t)
+    s.gruppi, s.composizione_nota = composizione(t, tipo)
+    mp = re.search(r"^pf:\s*(\d+)", t, re.M)
+    s.pf = int(mp.group(1)) if mp else None
+    mt = TS_CAMPO.search(t)
+    s.ts = tuple(int(x) for x in mt.groups()) if mt else None
+    # i numeri si leggono fuori dalle note (vedi senza_note)
+    pulito = senza_note(t)
+    mb = BAB_SCRITTO.search(pulito)
+    s.bab = int(mb.group(1)) if mb else None
+    ml = LOTTA_SCRITTA.search(pulito)
+    s.lotta = int(next(g for g in ml.groups() if g)) if ml else None
+    mm = MISCHIA.search(m.group(1))
+    s.mischia = mm.group(1) if mm else ""
+    return s
+
+
+#: PF1e, tipo non morto: DV d8, BAB 3/4, Volonta' buona, e il **Carisma** al
+#: posto della Costituzione per pf e Tempra. Vale solo dove la scheda lo
+#: dichiara nel `tipo` («… PF1e»): il leone spettrale (D5, 2026-09-23) e' un
+#: fantasma PF1e perche' il DM ha scelto la versione piu' forte fra le due.
+NON_MORTO_PF1E = (8, 0.75, ("vol",))
+PF1E = re.compile(r"\bPF1e\b", re.I)
+
+
+def non_morto_pf1e(tipo: str) -> bool:
+    return bool(PF1E.search(tipo)) and T.normalizza_tipo(tipo) == "undead"
+
+
+# ---------------------------------------------------------------------------
+# Il tetto dei TS (da genera_attributi, lotto E3b): un limite, non una scelta
+# ---------------------------------------------------------------------------
+#: Quale caratteristica porta quale TS (SRD 3.5).
+TS_CARATTERISTICA = (("Temp", "Cos"), ("Rifl", "Des"), ("Vol", "Sag"))
+TS_SCRITTI = re.compile(r"^ts:\s*Temp\s*([+-]\d+),\s*Rifl\s*([+-]\d+),\s*Vol\s*([+-]\d+)", re.M)
+
+
+def tetti_dai_ts(nome_file: str, testo: str) -> "dict[str, tuple[int, str]]":
+    """Strato 2-quinquies: un TS scritto e' un **tetto** al modificatore.
+
+    TS = base di classe e di tipo + mod della caratteristica + talenti, quindi
+    mod ≤ TS scritto − base. E' un tetto e non un'identita': un oggetto, un
+    bonus razziale o un incantesimo che la scheda non dichiara alzano il TS, e
+    `conformita_statblocchi` per questo accetta un TS **sopra** l'atteso. Un
+    TS **sotto** l'atteso, invece, dice che la caratteristica e' troppo alta.
+
+    🔎 Nasce dagli otto scarti che `conformita_statblocchi` dava «del
+    generatore» il 2026-09-23: il razorfiend blu aveva Des 17 dall'array e
+    Riflessi +8, cioe' drago 10 DV (+7) e Des +1. Per questo e' il vincolo
+    **piu' debole** della catena: abbassa solo un valore scelto dall'array,
+    e davanti a un numero ricavato da pf, CA, iniziativa o lotta si annota.
+
+    Non si usa dove la base non si sa (composizione ignota) o dove un'altra
+    caratteristica entra nei TS (Grazia divina, Benedizione oscura: il Car).
+    Restituisce {caratteristica: (modificatore massimo, nota)}.
+    """
+    ts = TS_SCRITTI.search(testo)
+    if not ts:
+        return {}
+    # 🐛 **Un TS derivato non e' un dato** (2026-09-23, trovato provando il
+    # lotto D sui razorfiend). Se la riga `fonte:` dichiara che i `ts` li ha
+    # scritti `derive_statblocks`, vengono da una matrice di caratteristiche
+    # sua: usarli come tetto abbassava la Sag del razorfiend verde da 16 a 10
+    # per far tornare un numero che nessuno ha scelto.
+    fonte = re.search(r"^fonte:\s*derivati dalle tabelle:\s*([^(—\n]*)", testo, re.M)
+    if fonte and re.search(r"\bts\b", fonte.group(1)):
+        return {}
+    m_tipo = re.search(r"^tipo:\s*(.+)$", testo, re.M) or \
+        re.search(r"\*\*Size/Type\*\*:?\s*([^|\n]+)", testo)
+    tipo = m_tipo.group(1).strip() if m_tipo else ""
+    gruppi, nota = composizione(testo, tipo)
+    if not (gruppi and nota):
+        return {}
+    if any(g.nome.lower() in ("paladin", "paladino", "pal", "blackguard") and g.n >= 2
+           for g in gruppi):
+        return {}
+    # la base della progressione piu' i talenti che la scheda dichiara: e' il
+    # minimo atteso di `conformita_statblocchi.ts_attesi` con le caratteristiche
+    # a modificatore 0, e fino al lotto E3b si otteneva chiamando quello
+    lo, _ = ts_base(gruppi)
+    extra = talenti(testo)
+    minimi = [lo[k] + extra.get(nome, 0) for k, (nome, _) in zip(TS, TS_CARATTERISTICA)]
+    fuori = {}
+    for (nome, car), scritto, base in zip(TS_CARATTERISTICA, ts.groups(), minimi):
+        fuori[car] = (int(scritto) - base,
+                      f"ricavata da {nome} {int(scritto):+d} (base {base:+d})")
+    return fuori

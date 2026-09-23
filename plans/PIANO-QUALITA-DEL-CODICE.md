@@ -562,7 +562,7 @@ con la mutazione al contrario sarebbe risultato verde con il codice sbagliato. L
 mutazioni del lotto si provano con `PYTHONDONTWRITEBYTECODE=1` e la cache
 svuotata dopo il ripristino.
 
-#### 🟡 E3 · Il lettore in un posto *(E3a chiuso 2026-09-23)*
+#### ✅ E3 · Il lettore in un posto *(chiuso 2026-09-23)*
 `[engine: Opus, sessione principale · effort: alto · qualità: impronta identica, e il verificatore non importa più niente da genera_attributi]`
 **Classe C, con rischio alto**: è la parte più grande (una trentina di simboli)
 e quella dove una virgola sposta un numero. Spostare in
@@ -588,6 +588,22 @@ quello di prima, flag delle regex compresi. `genera_attributi` li reimporta
 tutti (36 nomi pubblici) come alias fino a E8. Il verificatore legge con
 `L.` e dal generatore prende ancora un solo nome, `tetti_dai_ts`.
 Impronta identica; i test di §8.4 verdi senza toccare un'asserzione.
+
+✅ **E3b fatto**: 19 simboli del verificatore (`Scheda`, `leggi`,
+`composizione`, `dv_totali`, `dadi_di_pf`, `talenti`, `provenienza`, le loro
+regex, il non morto PF1e) e i 3 del tetto dei TS di `genera_attributi`
+(`TS_CARATTERISTICA`, `TS_SCRITTI`, `tetti_dai_ts`) nel lettore, che ora ha
+57 nomi pubblici. Gli alberi dei 19 sono identici a quelli di prima **tranne
+tre rinomine** fatte apposta: il prefisso `L.` che dentro il modulo non serve
+più, e `BAB`/`LOTTA`, che erano alias del verificatore, diventano
+`BAB_SCRITTO`/`LOTTA_SCRITTA`. `tetti_dai_ts` è l'unica funzione riscritta: chiamava
+`ts_attesi(s, {})` del verificatore per avere la base più i talenti, e adesso
+somma `progressione.ts_base` e `talenti` direttamente. Impronta identica, e
+l'impronta registra i tetti di ogni scheda.
+**Il ciclo fra i due script non c'è più**: `conformita_statblocchi` non
+importa `genera_attributi` e `genera_attributi` non importa il verificatore,
+nemmeno dentro una funzione. Il piano metteva questa scomparsa in E4; è
+arrivata con E3b, e E4 la rende un test.
 
 #### ⬜ E4 · Il grafo degli import
 `[engine: Sonnet 5 · effort: medio · qualità: il test morde su un import proibito aggiunto a mano]`

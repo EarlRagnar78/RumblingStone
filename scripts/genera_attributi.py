@@ -201,7 +201,7 @@ from dmcore.lettura_creatura import (  # noqa: E402,F401
     parole_del_file, INTESTAZIONE, sestine_citate, dalla_scheda, BAB_SCRITTO,
     LOTTA_SCRITTA, LOTTA_TAGLIA, LOTTA_MIGLIORATA, numeri_della_fonte,
     INIZIATIVA_SCRITTA, INIZIATIVA_MIGLIORATA, senza_note, MARCA, CODA_FONTE,
-    CODA_SCHEDA, CODA_ARRAY,
+    CODA_SCHEDA, CODA_ARRAY, TS_CARATTERISTICA, TS_SCRITTI, tetti_dai_ts,
 )
 
 NON_MORTO = re.compile(r"\b(?:undead|non[ -]?mort[oi])\b", re.I)
@@ -364,61 +364,6 @@ def iniziativa_ambigua(testo: str) -> "tuple[int, int] | None":
         return None
     i = int(m.group(1))
     return i - 4, i
-
-
-#: Quale caratteristica porta quale TS (SRD 3.5).
-TS_CARATTERISTICA = (("Temp", "Cos"), ("Rifl", "Des"), ("Vol", "Sag"))
-TS_SCRITTI = re.compile(r"^ts:\s*Temp\s*([+-]\d+),\s*Rifl\s*([+-]\d+),\s*Vol\s*([+-]\d+)", re.M)
-
-
-def tetti_dai_ts(nome_file: str, testo: str) -> "dict[str, tuple[int, str]]":
-    """Strato 2-quinquies: un TS scritto e' un **tetto** al modificatore.
-
-    TS = base di classe e di tipo + mod della caratteristica + talenti, quindi
-    mod ≤ TS scritto − base. E' un tetto e non un'identita': un oggetto, un
-    bonus razziale o un incantesimo che la scheda non dichiara alzano il TS, e
-    `conformita_statblocchi` per questo accetta un TS **sopra** l'atteso. Un
-    TS **sotto** l'atteso, invece, dice che la caratteristica e' troppo alta.
-
-    🔎 Nasce dagli otto scarti che `conformita_statblocchi` dava «del
-    generatore» il 2026-09-23: il razorfiend blu aveva Des 17 dall'array e
-    Riflessi +8, cioe' drago 10 DV (+7) e Des +1. Per questo e' il vincolo
-    **piu' debole** della catena: abbassa solo un valore scelto dall'array,
-    e davanti a un numero ricavato da pf, CA, iniziativa o lotta si annota.
-
-    Non si usa dove la base non si sa (composizione ignota) o dove un'altra
-    caratteristica entra nei TS (Grazia divina, Benedizione oscura: il Car).
-    Restituisce {caratteristica: (modificatore massimo, nota)}.
-    """
-    import conformita_statblocchi as C       # qui: C importa questo modulo
-    ts = TS_SCRITTI.search(testo)
-    if not ts:
-        return {}
-    # 🐛 **Un TS derivato non e' un dato** (2026-09-23, trovato provando il
-    # lotto D sui razorfiend). Se la riga `fonte:` dichiara che i `ts` li ha
-    # scritti `derive_statblocks`, vengono da una matrice di caratteristiche
-    # sua: usarli come tetto abbassava la Sag del razorfiend verde da 16 a 10
-    # per far tornare un numero che nessuno ha scelto.
-    fonte = re.search(r"^fonte:\s*derivati dalle tabelle:\s*([^(—\n]*)", testo, re.M)
-    if fonte and re.search(r"\bts\b", fonte.group(1)):
-        return {}
-    m_tipo = re.search(r"^tipo:\s*(.+)$", testo, re.M) or \
-        re.search(r"\*\*Size/Type\*\*:?\s*([^|\n]+)", testo)
-    tipo = m_tipo.group(1).strip() if m_tipo else ""
-    gruppi, nota = C.composizione(testo, tipo)
-    if not (gruppi and nota):
-        return {}
-    if any(g.nome.lower() in ("paladin", "paladino", "pal", "blackguard") and g.n >= 2
-           for g in gruppi):
-        return {}
-    s = C.Scheda(file=Path(nome_file), gs=0.0, tipo=tipo, attributi={}, provenienza="",
-                 gruppi=gruppi, composizione_nota=True, testo=testo)
-    minimi, _ = C.ts_attesi(s, {})       # caratteristiche assenti: mod 0
-    fuori = {}
-    for (nome, car), scritto, base in zip(TS_CARATTERISTICA, ts.groups(), minimi):
-        fuori[car] = (int(scritto) - base,
-                      f"ricavata da {nome} {int(scritto):+d} (base {base:+d})")
-    return fuori
 
 
 def profilo_di(ruolo: str) -> "tuple[str, ...]":

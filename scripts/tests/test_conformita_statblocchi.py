@@ -202,7 +202,18 @@ class TestIlRepoVero(unittest.TestCase):
         self.assertEqual(r["da_correggere"], 0)
 
     def test_le_decisioni_aperte_hanno_una_casa(self):
-        self.assertIn("goblin-warrior1-cr05.md", C.decisioni_aperte())
+        # ogni decisione aperta punta a uno statblocco che esiste
+        nomi = {p.name for p in ROOT.glob("Bestiario/**/*.md")}
+        for f in C.decisioni_aperte():
+            self.assertIn(f, nomi)
+
+    def test_una_decisione_chiusa_non_scusa_piu(self):
+        # D1 (goblin, For 11) e' barrata dal 2026-09-23: il goblin torna a
+        # essere giudicato, e se non tornasse sarebbe «da correggere»
+        self.assertNotIn("goblin-warrior1-cr05.md", C.decisioni_aperte())
+        g = next(x for x in C.tutte() if x["file"].endswith("goblin-warrior1-cr05.md"))
+        self.assertIsNone(g["decisione"])
+        self.assertEqual(g["scarti"], {})
 
 
 class TestIlGiroCircolare(unittest.TestCase):

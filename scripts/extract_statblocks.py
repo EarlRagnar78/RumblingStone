@@ -176,6 +176,25 @@ NOTA = re.compile(r"^\s*(?:>|- ⚠|fonte:)")
 #: 18 nel blocco, ed e' scelto apposta, ADR-0034).
 FORBICE_GS = re.compile(r"(?:\bGS\b|\bCR\b|Grado di Sfida)[^\n\d]{0,24}\d{1,2}\s*[-–—]\s*\d{1,2}\b")
 NUMERI = re.compile(r"[+-]?\d+")
+#: Una sezione che descrive **un'altra** serie di statistiche della stessa
+#: creatura: la forma umana di un druido che combatte in forma d'orso (D7), una
+#: variante. I suoi numeri sono diversi per definizione, e non sono la prosa del
+#: blocco. Si taglia dall'intestazione alla successiva di pari livello o piu' alta.
+ALTRA_FORMA = re.compile(r"^(#{2,4})\s+(?:Forma|Variante)\b", re.I)
+
+
+def senza_altre_forme(testo: str) -> str:
+    fuori, livello = [], None
+    for riga in testo.splitlines():
+        m = re.match(r"^(#{1,6})\s", riga)
+        if livello is not None and m and len(m.group(1)) <= livello:
+            livello = None
+        a = ALTRA_FORMA.match(riga)
+        if a:
+            livello = len(a.group(1))
+        if livello is None:
+            fuori.append(riga)
+    return "\n".join(fuori)
 
 
 def diverge_dalla_prosa(testo: str, sb: Statblocco) -> list[str]:
@@ -194,7 +213,8 @@ def diverge_dalla_prosa(testo: str, sb: Statblocco) -> list[str]:
     rimasto indietro.
     """
     from dmcore.statblock import togli_blocco
-    prosa = "\n".join(r for r in togli_blocco(testo).splitlines() if not NOTA.match(r))
+    prosa = "\n".join(r for r in senza_altre_forme(togli_blocco(testo)).splitlines()
+                      if not NOTA.match(r))
     try:
         letto, _ = estrai(prosa)
     except Exception:          # un lettore che crolla non e' una divergenza

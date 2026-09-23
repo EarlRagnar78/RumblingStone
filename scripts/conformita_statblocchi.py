@@ -436,7 +436,11 @@ def verifica(s: Scheda, attr: "dict | None" = None) -> dict:
     a = attacco_dichiarato(s.mischia) if s.mischia else None
     if a and babs:
         dich, pot = a
-        car = "Des" if (ACCURATA.search(s.testo) and mod(attr.get("Des")) > mod(attr.get("For"))) else "For"
+        # SRD, sottotipo incorporeo: senza Forza, gli attacchi in mischia usano
+        # la Destrezza. Il leone spettrale (D5) risultava +3 invece di +7.
+        incorporeo = re.search(r"\bincorpore", s.tipo, re.I)
+        car = "Des" if (incorporeo or (ACCURATA.search(s.testo)
+                                       and mod(attr.get("Des")) > mod(attr.get("For")))) else "For"
         fisso = (mod(attr.get(car)) + taglia + pot
                  + (1 if not pot and PERFETTA.search(s.mischia) else 0)
                  + (1 if FOCALIZZATA.search(s.testo) else 0))

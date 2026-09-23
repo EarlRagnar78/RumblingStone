@@ -207,30 +207,44 @@ class AncoreIncantatori(unittest.TestCase):
 class AncorePerGS(unittest.TestCase):
     """La tabella PF1e per GS contro Table 1–1 come sta nella skill."""
 
-    def test_le_righe_verificate_coincidono_con_la_skill(self):
+    def test_le_righe_della_skill_coincidono_con_la_tabella(self):
+        """Ogni riga che la skill scrive deve dire quel che dice il YAML.
+
+        🐛 Fino al 2026-09-23 questo test confrontava la skill con una costante
+        copiata dalla skill: due copie dello stesso errore, e verde. Adesso la
+        tabella viene dalla fonte OGL, e il test controlla **tutte** le colonne
+        che la skill riporta, danno e TS compresi, che prima erano sbagliati.
+        """
         righe = _righe_markdown(SKILL_PF.read_text(encoding="utf-8"),
                                 "| CR | AC | hp | High attack |")
-        visti = set()
+        self.assertGreaterEqual(len(righe), 8)
         for cella in righe:
             gs = int(cella[0])
-            visti.add(gs)
             atteso = tabelle.PER_GS[gs]
             with self.subTest(gs=gs):
                 self.assertEqual(atteso[0], int(cella[1]), "CA")
                 self.assertEqual(atteso[1], int(cella[2]), "pf")
                 self.assertEqual(atteso[2], int(cella[3]), "attacco")
+                self.assertEqual(atteso[3], int(cella[4]), "danno")
                 self.assertEqual(atteso[4], int(cella[5]), "CD primaria")
-        self.assertEqual(visti, set(tabelle.PER_GS_VERIFICATE),
-                         "le righe verificate devono essere ESATTAMENTE quelle "
-                         "che la skill scrive: ne' meno (perderemmo un controllo) "
-                         "ne' di piu' (ci fideremmo di una riga non vista)")
+                self.assertEqual(atteso[5], int(cella[6]), "TS buono")
+                self.assertEqual(atteso[6], int(cella[7]), "TS cattivo")
 
-    def test_riga_gs_dice_se_e_verificata(self):
+    def test_la_tabella_e_intera_e_viene_dalla_fonte(self):
+        """31 righe (GS ½ e da 1 a 30), e i punti noti della Tabella 1–1."""
+        self.assertEqual(len(tabelle.TABELLA_1_1), 31)
         riga, verificata = tabelle.riga_gs(13)
         self.assertTrue(verificata)
-        self.assertEqual(riga["pf"], 180)
-        _, verificata = tabelle.riga_gs(3)
-        self.assertFalse(verificata, "GS 3 e' estrapolato e deve dichiararlo")
+        self.assertEqual((riga["pf"], riga["ca"], riga["attacco"]), (180, 28, 22))
+        self.assertEqual(tabelle.TABELLA_1_1[0.5]["pf"], 10)
+        self.assertEqual(tabelle.TABELLA_1_1[30]["ts_cattivo"], 26)
+
+    def test_un_yaml_malformato_fallisce_e_non_da_una_tabella_vuota(self):
+        import tempfile
+        with tempfile.NamedTemporaryFile("w", suffix=".yaml", delete=False) as f:
+            f.write("righe:\n  - gs: 1, pf: 15\n")
+        with self.assertRaises(ValueError):
+            tabelle._leggi_per_gs(Path(f.name))
 
     def test_la_tabella_cresce(self):
         """Nessun GS che costa meno del precedente: sarebbe un errore di battitura."""

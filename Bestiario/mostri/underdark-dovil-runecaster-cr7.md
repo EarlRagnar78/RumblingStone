@@ -13,7 +13,6 @@ tipo: Medium humanoid (dwarf, hill), Diviner 5 / Deep Diviner 1 / Fighter 1, N
 ca: 20
 ca-dettaglio: touch 12, flat-footed 19 (piastre complete)
 pf: 37
-pf-dado: 2d6+2
 ts: Temp +5, Rifl +3, Vol +6
 attributi: For 12 Des 14 Cos 15 Int 16 Sag 10 Car 6
 velocita: 6 m
@@ -23,6 +22,8 @@ attacchi:
 voci:
   - Talenti: Incantare in Combattimento, Iniziativa/Vergare Migliorato, Smiting Spell, Focalizzazione (Divinazione), Arma Focalizzata (spadone)
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` tolto da `scripts/conformita_statblocchi.py`: portava «2d6+2», che non sono i dadi vita (pf-dado «2d6+2» ha 2 dadi, il testo dichiara 7 DV). I dadi non si ricostruiscono senza inventare: la composizione delle classi non e' leggibile o comprende una classe non SRD. Da completare a mano.
 
 > [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 

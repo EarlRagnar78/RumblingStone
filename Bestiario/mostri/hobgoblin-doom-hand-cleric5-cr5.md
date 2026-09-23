@@ -8,7 +8,7 @@ tipo: Medium humanoid (goblinoid), Cleric 5 (Mano del Destino di Tiamat), LE
 ca: 20
 ca-dettaglio: touch 10, flat-footed 20 (+7 banded mail +1, +3 scudo pesante)
 pf: 41
-pf-dado: 1d8+2
+pf-dado: 5d8+15
 ts: Temp +7, Rifl +1, Vol +7
 attributi: For 13 Des 10 Cos 16 Int 10 Sag 16 Car 12
 velocita: 6 m
@@ -18,6 +18,8 @@ attacchi:
 voci:
   - Talenti: Incantare in Combattimento, Arma Focalizzata (mazza pesante)
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d8+2», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD, il bonus da Cos 16.
 
 > [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 

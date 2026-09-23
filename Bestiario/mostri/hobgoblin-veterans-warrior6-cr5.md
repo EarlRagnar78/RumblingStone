@@ -8,7 +8,7 @@ tipo: Medium humanoid (goblinoid), Warrior 6, LE
 ca: 19
 ca-dettaglio: touch 11, flat-footed 18
 pf: 43
-pf-dado: 1d8+2
+pf-dado: 6d8+12
 ts: Temp +8, Rifl +4, Vol +2
 attributi: For 14 Des 13 Cos 14 Int 10 Sag 9 Car 8
 velocita: 6 m
@@ -18,6 +18,8 @@ attacchi:
 voci:
   - Talenti: Allerta, Critico Potente, Arma Focalizzata (spada lunga)
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d8+2», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD, il bonus da Cos 14.
 
 > [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 

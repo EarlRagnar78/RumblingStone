@@ -8,7 +8,7 @@ tipo: Medium humanoid (dwarf, Shield Dwarf), Cleric 6 / Expert 6, LG
 ca: 23
 ca-dettaglio: touch 10, flat-footed 23 (piastre +1)
 pf: 93
-pf-dado: 1d8+7
+pf-dado: 6d8+6d6+36
 ts: Temp +10, Rifl +3, Vol +14
 attributi: For 16 Des 8 Cos 16 Int 10 Sag 19 Car 10
 velocita: 6 m
@@ -18,6 +18,8 @@ attacchi:
 voci:
   - Talenti: Creare Armi e Armature Magiche, Incantare in Combattimento, Heavy Armor Optimization, Arma Focalizzata (martello)
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d8+7», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD, il bonus da Cos 16.
 
 > [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili. ⚠ la CA di contatto suggerisce Des 10, la fonte dice 8: si tiene la fonte, la differenza può essere deviazione o schivata, da verificare.
 

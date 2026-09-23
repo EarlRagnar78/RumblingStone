@@ -74,7 +74,13 @@ CONSENTITI = frozenset({
     "misura_craft.py", "punteggio_mqm.py", "validate_docs.py",
     "validate_modules.py", "validate_prosa.py", "validate_norme_editoriali.py",
     "validate_booklets.py", "superficie_norme.py", "decisioni_dm.py",
+    # aggiunti il 2026-09-23 su ordine del DM (lotti degli statblocchi): sono
+    # in sola lettura con le opzioni che §6.2 cita, e SCRITTURA li protegge
+    "genera_attributi.py", "validate_bestiario.py", "conformita_statblocchi.py",
 })
+#: Le opzioni che scrivono. Un comando in allowlist citato con una di queste
+#: **non si esegue**: §6.2 misura, e una riga non deve poter far scrivere la CI.
+SCRITTURA = re.compile(r"^--(?:scrivi|rigenera|correggi|apply|emit|fix|write)", re.I)
 
 #: La forma ammessa, e nient'altro. `[\w.-]` esclude ogni metacarattere di shell.
 COMANDO = re.compile(r"`(?:python3\s+)?(?:scripts/)?(\w+\.py|\w+)\s*((?:--[\w-]+\s*)*)`")
@@ -116,13 +122,33 @@ def righe_di_62() -> "list[dict]":
 
 def _comandi(cella: str) -> "list[list[str]]":
     """I comandi citati, **solo** quelli che passano la forma e l'allowlist."""
-    fuori = []
+    return _comandi_e_rifiutati(cella)[0]
+
+
+def _comandi_e_rifiutati(cella: str) -> "tuple[list[list[str]], list[str]]":
+    """(eseguibili, rifiutati con la ragione).
+
+    🐛 **Fino al 2026-09-23 un comando fuori allowlist spariva in silenzio**, e
+    la riga contava come verificata: la riga sugli statblocchi citava
+    `genera_attributi.py --check`, che questo cancello non ha mai eseguito, e
+    il cancello diceva «nessuna riga mente». Ora un comando che esiste in
+    `scripts/` ma non si puo' eseguire e' un rifiuto con la sua ragione.
+    Una parola fra backtick che non e' uno script resta ignorata.
+    """
+    fuori, rifiutati = [], []
     for nome, flag in COMANDO.findall(cella):
         script = nome if nome.endswith(".py") else f"{nome}.py"
-        if script not in CONSENTITI or not (ROOT / "scripts" / script).exists():
+        if not (ROOT / "scripts" / script).exists():
+            continue
+        if script not in CONSENTITI:
+            rifiutati.append(f"`{script}` non e' in CONSENTITI")
+            continue
+        scrive = [f for f in flag.split() if SCRITTURA.match(f)]
+        if scrive:
+            rifiutati.append(f"`{script} {' '.join(scrive)}` scriverebbe")
             continue
         fuori.append([sys.executable, f"scripts/{script}", *flag.split()])
-    return fuori
+    return fuori, rifiutati
 
 
 def esegui(argv: "list[str]") -> "tuple[int, str]":
@@ -142,6 +168,9 @@ def _specie(uscita: str) -> str:
 def verifica() -> "tuple[list[str], list[dict]]":
     errori, esiti = [], []
     for r in righe_di_62():
+        for rifiuto in _comandi_e_rifiutati(r["cella"])[1]:
+            errori.append(f"«{r['lotto']}» cita un comando che questo cancello non esegue: "
+                          f"{rifiuto}. Una riga non verificata non conta come verificata")
         if not r["comandi"]:
             esiti.append(dict(r, esito="nessun comando citato", specie="—"))
             if r["stato"] == "aperto" and "bloccato sul DM" not in r["cella"]:

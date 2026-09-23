@@ -12,7 +12,7 @@ tipo: Medium humanoid (human, Shaaran), Ranger 4 / Rogue 3, CG
 ca: 17
 ca-dettaglio: touch 13, flat-footed 14
 pf: 46
-pf-dado: 1d8+1
+pf-dado: 4d8+3d6+14
 ts: Temp +7, Rifl +10, Vol +3
 attributi: For 10 Des 16 Cos 14 Int 13 Sag 12 Car 8
 velocita: 9 m
@@ -22,6 +22,8 @@ attacchi:
 voci:
   - Talenti: Resistenza Fisica, Iniziativa Migliorata, Tiro Rapido, Autosufficiente, Furtivo, Arma Focalizzata (arco lungo)
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d8+1», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD, il bonus da Cos 14.
 
 > [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 

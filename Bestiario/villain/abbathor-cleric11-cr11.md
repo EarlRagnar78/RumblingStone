@@ -8,7 +8,7 @@ tipo: Medium humanoid (dwarf), Cleric 11 di Abbathor (domini Inganno/Male), LE
 ca: 23
 ca-dettaglio: touch 10, flat-footed 23 (piastre +2, scudo)
 pf: 75
-pf-dado: 1d8+3
+pf-dado: 11d8+22
 ts: Temp +10, Rifl +4, Vol +12
 attributi: For 14 Des 10 Cos 14 Int 8 Sag 18 Car 12
 velocita: 6 m
@@ -16,6 +16,8 @@ iniziativa: +0
 attacchi:
   - Mischia morning star +1 +11/+6 (1d8+3); scudo +1 +6 (1d4+2)
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d8+3», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD, il bonus da Cos 14.
 
 > [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 

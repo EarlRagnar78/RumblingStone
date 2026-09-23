@@ -7,7 +7,6 @@ gs: 7
 ca: 21
 ca-dettaglio: touch 13, flat-footed 18
 pf: 47
-pf-dado: 1d4+5
 ts: Temp +7, Rifl +4, Vol +3
 attributi: For 20 Des 16 Cos 16 Int 13 Sag 8 Car 15
 velocita: 9 m, Volare 9 m (maldestra)
@@ -17,6 +16,8 @@ attacchi:
 voci:
   - Talenti: Diving Charge, Skill Focus (Sapienza Magica), Arma Focalizzata (morning star)
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` tolto da `scripts/conformita_statblocchi.py`: portava «1d4+5», che non sono i dadi vita (pf-dado «1d4+5» ha 1 dado, il testo dichiara 5 DV). I dadi non si ricostruiscono senza inventare: la composizione delle classi non e' leggibile o comprende una classe non SRD. Da completare a mano.
 
 > [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 

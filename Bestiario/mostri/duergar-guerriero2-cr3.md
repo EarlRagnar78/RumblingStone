@@ -8,7 +8,7 @@ tipo: Medium humanoid (dwarf, duergar), Fighter 2, LE
 ca: 19
 ca-dettaglio: touch 10, flat-footed 19
 pf: 20
-pf-dado: 1d10+3
+pf-dado: 2d10+8
 ts: Temp +6, Rifl +1, Vol +0
 attributi: For 17 Des 13 Cos 16 Int 10 Sag 10 Car 6
 velocita: 6 m
@@ -18,6 +18,8 @@ attacchi:
 voci:
   - Talenti: Schivare, Iniziativa Migliorata, Robustezza Migliorata
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d10+3», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD, il bonus da Cos 16 e Robustezza Migliorata.
 
 > [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili. ⚠ la CA di contatto suggerisce Des 10, la fonte dice 13: si tiene la fonte, la differenza può essere deviazione o schivata, da verificare.
 

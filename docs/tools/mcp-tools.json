@@ -1350,6 +1350,48 @@
       "deterministic": true
     },
     {
+      "name": "conformita_statblocchi",
+      "description": "«Questo statblocco è coerente con le sue caratteristiche, o c'è un numero che non torna col SRD?»\n\nVerifica le identità SRD 3.5 di ogni statblocco — pf nella fascia legale dei dadi vita, TS dalle progressioni di classe e di tipo, BAB, lotta, attacco — leggendo la provenienza delle caratteristiche (copiate, trascritte, a mano, generate). Per ogni scarto prova se un template semplice PF1e (Advanced, Giant) lo spiega, lo confronta con la fonte PCGen/SRD, e legge le decisioni aperte al DM dal piano. Con --correggi-pf-dado riscrive i `pf-dado` che portano il danno di un'arma o una parte sola dei dadi, ricostruendoli dalla formula scritta o dalle classi del tipo; --check è il cancello.",
+      "use_case": "«Questo statblocco è coerente con le sue caratteristiche, o c'è un numero che non torna col SRD?»",
+      "invocation": "python3 scripts/conformita_statblocchi.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "riepilogo": {
+            "type": "boolean",
+            "description": "Solo i conti."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Rapporto in JSON."
+          },
+          "proponi-pf-dado": {
+            "type": "boolean",
+            "description": "Stampa le correzioni di `pf-dado` senza scrivere."
+          },
+          "correggi-pf-dado": {
+            "type": "boolean",
+            "description": "Riscrive i `pf-dado` che non registrano i dadi vita (idempotente)."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Gate: ogni `pf-dado` registra i dadi vita e ogni correzione è riproducibile."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "Bestiario/{mostri,villain,png}/**/*-cr*.md",
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "un `pf-dado` non registra i dadi vita, o una correzione non è riproducibile (--check)"
+      },
+      "deterministic": true
+    },
+    {
       "name": "derive_statblocks",
       "description": "«Questa scheda descrive il mostro a parole ma non dice CA e pf: quali sarebbero, secondo le tabelle?»\n\nPROPONE i valori CA/pf/TS che la prosa di una scheda non dice, derivandoli dalle tabelle: SRD 3.5 come fonte primaria (tipo di creatura, progressioni dei TS, matrici elite/standard, taglia, armature) e la tabella per GS di Pathfinder 1e come sola GUARDIA, che ANNOTA la proposta quando e' fuori bersaglio invece di sopprimerla. ADR-0033. Scrive un campo solo, con --apply-ts: i TIRI SALVEZZA, e solo dove GS, CA e pf li ha gia' scritti il DM — la base dei TS e' esatta dalle tabelle e l'unica incertezza e' il modificatore di caratteristica, che viene dalla matrice dichiarata. CA e pf non si scrivono mai: dipendono da equipaggiamento e Costituzione, che da una scheda in prosa non si leggono.",
       "use_case": "«Questa scheda descrive il mostro a parole ma non dice CA e pf: quali sarebbero, secondo le tabelle?»",
@@ -1423,7 +1465,7 @@
     },
     {
       "name": "genera_attributi",
-      "description": "«Questo statblocco non ha For/Des/Cos: come verifico pf, TS e attacco senza inventarle?»\n\nScrive la riga `attributi` degli statblocchi che non ce l'hanno, in quattro strati: trascrive la sestina dalla fonte citata in Bestiario/pregen-pcgen/ (39 file), legge la Des da ca-dettaglio, ricava Des dalla CA di contatto e Cos da pf e pf-dado con guardia legata al GS, e solo per il resto sceglie dagli array elite/standard del Manuale del DM (dmcore.tabelle) per ruolo, con taglia e razza SRD e ±1 a somma zero a seme fisso. Ogni blocco porta [INFERRED — needs DM confirmation] con provenienza e divergenze. --taratura misura l'errore dello strato 3 contro le fonti (1,91 punti).",
+      "description": "«Questo statblocco non ha For/Des/Cos: come verifico pf, TS e attacco senza inventarle?»\n\nScrive la riga `attributi` degli statblocchi che non ce l'hanno, in cinque strati: copia la sestina che la scheda stessa scrive nella prosa (39 file, inglese o italiano), trascrive quella della fonte citata in Bestiario/pregen-pcgen/ (37), legge la Des da ca-dettaglio, ricava Des dalla CA di contatto, Cos da pf e pf-dado e For da BAB e lotta, e solo per il resto (18) sceglie dagli array elite/standard del Manuale del DM (dmcore.tabelle) con taglia e razza SRD e ±1 a somma zero a seme fisso. Ogni blocco porta [INFERRED] con provenienza e divergenze. --taratura misura lo strato scelto in campione (1,63) e fuori campione (1,84).",
       "use_case": "«Questo statblocco non ha For/Des/Cos: come verifico pf, TS e attacco senza inventarle?»",
       "invocation": "python3 scripts/genera_attributi.py",
       "inputSchema": {

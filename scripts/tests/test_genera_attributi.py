@@ -119,6 +119,46 @@ class TestLaFonteVince(unittest.TestCase):
         self.assertIsNone(G.dalla_fonte(f.name, f.read_text(encoding="utf-8")))
 
 
+class TestLaSchedaSiLeggePrima(unittest.TestCase):
+    """Lo strato 0a: 27 dei 55 «scelti» avevano i numeri scritti nella prosa."""
+
+    def test_la_sestina_inglese(self):
+        t = blocco() + "\n**Abilities**: Str 14, Dex 12, Con 14, Int 10, Wis 10, Cha 8\n"
+        v, come = G.dalla_scheda(t)
+        self.assertEqual((v["For"], v["Car"]), (14, 8))
+        self.assertIn("scheda stessa", come)
+
+    def test_la_sestina_italiana(self):
+        # il bruto deforme scrive in italiano, e la prima stesura non lo capiva
+        t = blocco() + "\n**Car** For 31, Des 13, Cos 23, Int 10, Sag 12, Car 11.\n"
+        self.assertEqual(G.dalla_scheda(t)[0]["For"], 31)
+
+    def test_due_sestine_sono_una_scelta(self):
+        t = blocco() + "\nStr 14, Dex 12, Con 14, Int 10, Wis 10, Cha 8\nStr 18, Dex 12, Con 14, Int 10, Wis 10, Cha 8\n"
+        self.assertIsNone(G.dalla_scheda(t))
+
+    def test_la_scheda_batte_la_fonte_e_i_vincoli(self):
+        t = blocco(det="ca-dettaglio: +4 Dex") + "\nStr 14, Dex 12, Con 14, Int 10, Wis 10, Cha 8\n"
+        v, note = G.genera("x-cr3.md", "brute", 3, t)
+        self.assertEqual(v["Des"], 12)                 # la scheda, non il +4 della CA
+        self.assertTrue(any(n.startswith("⚠ Des") for n in note))
+
+
+class TestLaForzaDallaLotta(unittest.TestCase):
+    def test_bab_lotta_e_taglia(self):
+        t = blocco(tipo="Large giant") + "\nBAB +3; Lotta +14.\n"
+        self.assertEqual(G.for_da_lotta(t, 4)[0], 24)   # 14 − 3 − 4 = +7
+
+    def test_lotta_migliorata_si_toglie(self):
+        t = blocco() + "\nBAB +5; Lotta +12. Talenti: Lottare Migliorato\n"
+        self.assertEqual(G.for_da_lotta(t, 7)[0], 16)   # 12 − 5 − 4 = +3
+
+    def test_le_marche_non_sono_numeri(self):
+        # la marca che scrive «BAB +1 → +0» veniva letta come il BAB
+        t = blocco() + "\nBAB +0; Lotta +1.\n\n> [INFERRED] BAB +1 → **+0**\n"
+        self.assertEqual(G.for_da_lotta(t, 1)[0], 12)
+
+
 class TestLeRegoleDiTipo(unittest.TestCase):
     def test_il_non_morto_non_ha_costituzione(self):
         t = blocco(tipo="Medium undead HD 8d12", dado="pf-dado: 8d12")
@@ -174,8 +214,10 @@ class TestIlRepoVero(unittest.TestCase):
                               r["file"].name)
 
     def test_la_taratura_non_peggiora(self):
-        # 2026-09-23: 1,91. Una regola nuova che la alza va spiegata, non taciuta.
-        self.assertLessEqual(G.taratura()["mae"], 1.95)
+        # 2026-09-23: 1,63 in campione, 1,84 fuori. Una regola nuova che le
+        # alza va spiegata, non taciuta.
+        self.assertLessEqual(G.taratura("fonti")["mae"], 1.70)
+        self.assertLessEqual(G.taratura("schede")["mae"], 1.90)
 
 
 if __name__ == "__main__":

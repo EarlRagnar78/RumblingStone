@@ -8,12 +8,12 @@ ca-dettaglio: (+4 chain shirt, +2 Dex, +1 light shield)
 pf: 5
 pf-dado: 1d8+1
 ts: Temp +3, Rifl +2, Vol +2
-attributi: For 15 Des 14 Cos 12 Int 8 Sag 11 Car 10
+attributi: For 13 Des 15 Cos 12 Int 12 Sag 13 Car 12
 velocita: 30 ft
 iniziativa: +2
 ```
 
-> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
 **Size/Type**: Medium humanoid (elf) | **HD**: 1d8+1 (5 HP)
 **AC**: 17 (+4 chain shirt, +2 Dex, +1 light shield) | **Init**: +2 | **Speed**: 30 ft

@@ -8,15 +8,17 @@ tipo: Large giant (ogre magi), LE
 ca: 23
 ca-dettaglio: (−1 taglia, +4 naturale, +7 giaco di maglia +3 Large, +3 deflessione), contatto 12, colto alla sprovvista 23 — 27 con *scudo* attivo
 pf: 137
-pf-dado: 5d8
+pf-dado: 5d8+10d4+90
 ts: Temp +13, Rifl +4, Vol +12
-attributi: For 16 Des 16 Cos 20 Int 13 Sag 10 Car 24
+attributi: For 21 Des 10 Cos 23 Int 14 Sag 14 Car 24
 velocita: 12 m (9 m in armatura), volo 12 m (buono, Sop, a volontà)
 attacchi:
   - Mischia spadone Large +13/+8 (3d6+7)
 ```
 
-> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «5d8», una parte sola dei dadi vita. I dadi vengono dalla formula che la scheda scrive, il bonus da Cos 23.
+
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ Des 16 derivata dalla CA di contatto, ma la scheda scrive 10: si tiene la scheda, da verificare.
 
 > **Versione di ritorno.** Statblock del primo incontro:
 > `ghaurush-cenerevento-cr16.md` (GS 16; variante *Advanced* GS 17). Questa è

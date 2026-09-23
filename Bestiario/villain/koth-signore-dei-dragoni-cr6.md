@@ -8,7 +8,7 @@ tipo: Medium humanoid (goblinoid), Bugbear (Humanoid 3) / Sorcerer 8, LE
 ca: 19
 ca-dettaglio: touch 12, flat-footed 17
 pf: 67
-pf-dado: 1d6+3
+pf-dado: 3d8+8d4+33
 ts: Temp +6, Rifl +9, Vol +9
 attributi: For 16 Des 15 Cos 16 Int 8 Sag 10 Car 17
 velocita: 9 m
@@ -18,6 +18,8 @@ attacchi:
 voci:
   - Talenti: Iniziativa Migliorata, Volontà/Riflessi, Persuasivo, Sudden Enlarge
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d6+3», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD e dai DV razziali dichiarati, il bonus da Cos 16.
 
 > [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 

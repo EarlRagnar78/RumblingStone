@@ -28,6 +28,9 @@ Solo stdlib.
 """
 from __future__ import annotations
 
+import re
+from pathlib import Path
+
 PROVENIENZA = {
     "TIPI": "SRD 3.5, «Table: Creature Improvement by Type»",
     "CLASSI": "SRD 3.5, tabelle delle classi (comprese le classi PNG)",
@@ -42,7 +45,8 @@ PROVENIENZA = {
                          "`dnd-35-srd/references/spells.md` §Liste di classe",
     "PF1E_SOLO": "PF1e PRD/OGL, incantesimi senza un equivalente 3.5 — l'ancora "
                  "è `pathfinder-1e-srd/references/conversion-guide.md`",
-    "PER_GS": "PF1e Bestiary Table 1–1 — il SRD 3.5 non ha un equivalente",
+    "PER_GS": "PF1e Bestiary Table 1–1, letta da scripts/pf1e-statistiche-per-gs.yaml "
+              "— il SRD 3.5 non ha un equivalente",
     "PASSI_GS": "PF1e Bestiary, appendice «Monster Advancement»",
     "EQUIPAGGIAMENTO": "PF1e, colonna «heroic NPC» — il SRD 3.5 dà la ricchezza "
                        "per livello del PG, non quella del PNG",
@@ -464,37 +468,60 @@ def cd_incantesimo(livello_incantesimo: int, modificatore: int) -> int:
 #   2. **bersaglio** (solo con `--piu-cattivi`): fornisce i numeri, e allora la
 #      creatura esce dichiaratamente più dura di quanto il GS 3.5 prometta.
 #
-#: GS → (CA, pf, attacco alto, danno medio, CD primaria, TS buono, TS cattivo)
-PER_GS = {
-    1:  (14, 15,  +5,  7, 12,  +5, +1),
-    2:  (16, 20,  +8, 10, 13,  +6, +2),
-    3:  (17, 30, +10, 15, 14,  +7, +3),
-    4:  (18, 40, +11, 20, 15,  +8, +4),
-    5:  (19, 55, +12, 25, 16,  +9, +5),
-    6:  (20, 70, +13, 25, 16, +10, +6),
-    7:  (20, 85, +14, 30, 17, +11, +7),
-    8:  (21, 100, +15, 30, 17, +11, +8),
-    9:  (23, 115, +16, 40, 18, +12, +9),
-    10: (24, 130, +18, 45, 19, +13, +9),
-    11: (25, 145, +19, 50, 20, +14, +10),
-    12: (27, 160, +19, 55, 20, +15, +11),
-    13: (28, 180, +21, 61, 21, +15, +11),
-    14: (29, 200, +22, 67, 22, +16, +12),
-    15: (30, 220, +23, 74, 23, +17, +12),
-    16: (31, 240, +24, 80, 24, +18, +13),
-    17: (32, 265, +25, 87, 25, +19, +13),
-    18: (33, 290, +26, 94, 25, +20, +14),
-    19: (34, 320, +27, 101, 26, +21, +15),
-    20: (35, 350, +28, 108, 27, +22, +15),
-}
+#: 🔴 **La tabella non sta piu' qui: sta in `scripts/pf1e-statistiche-per-gs.yaml`.**
+#: Fino al 2026-09-23 c'era una costante scritta a mano, con otto righe
+#: dichiarate «verificate» contro la skill. Rilette contro la fonte OGL
+#: (Bestiary, Table 1–1) sbagliavano **danno, CD primaria e TS cattivo**, e il
+#: GS 12 aveva l'attacco del GS 11: la skill e la costante erano state scritte
+#: dalla stessa mano, e il test che le confrontava confrontava due copie dello
+#: stesso errore. Ora il dato e' uno, e sta dove il DM lo legge.
+FILE_PER_GS = Path(__file__).resolve().parent.parent / "pf1e-statistiche-per-gs.yaml"
+_RIGA_YAML = re.compile(r"^\s*-\s*\{(.*)\}\s*$")
+
+
+def _leggi_per_gs(percorso: Path = FILE_PER_GS) -> "tuple[dict, dict]":
+    """Le righe della Tabella 1–1 e la tolleranza, senza pyyaml.
+
+    Il file ha una forma sola — una mappa in linea per riga sotto `righe:` —
+    e il lettore accetta **solo** quella: un file scritto diversamente fallisce
+    qui, rumorosamente, invece di dare una tabella vuota.
+    """
+    righe, tolleranza, sezione = {}, {}, None
+    for riga in percorso.read_text(encoding="utf-8").splitlines():
+        if not riga.strip() or riga.lstrip().startswith("#"):
+            continue
+        if not riga.startswith(" "):
+            sezione = riga.split(":")[0].strip()
+            continue
+        if sezione == "righe":
+            m = _RIGA_YAML.match(riga)
+            if not m:
+                raise ValueError(f"{percorso.name}: riga illeggibile: {riga!r}")
+            campi = dict(c.split(":") for c in m.group(1).split(","))
+            campi = {k.strip(): float(v) for k, v in campi.items()}
+            gs = campi.pop("gs")
+            righe[int(gs) if gs >= 1 else gs] = {k: int(v) for k, v in campi.items()}
+        elif sezione == "tolleranza":
+            k, v = riga.split(":")
+            tolleranza[k.strip()] = float(v)
+    if len(righe) < 30:
+        raise ValueError(f"{percorso.name}: {len(righe)} righe, la Tabella 1–1 ne ha 31")
+    return righe, tolleranza
+
+
+TABELLA_1_1, TOLLERANZA_PER_GS = _leggi_per_gs()
+
+#: GS → (CA, pf, attacco alto, danno medio alto, CD primaria, TS buono, TS cattivo),
+#: la forma che i chiamanti usavano gia'. Solo i GS interi da 1 a 20.
+PER_GS = {gs: (r["ca"], r["pf"], r["attacco_alto"], r["danno_alto"],
+               r["cd_primaria"], r["ts_buono"], r["ts_cattivo"])
+          for gs, r in TABELLA_1_1.items() if isinstance(gs, int) and 1 <= gs <= 20}
 CAMPI_PER_GS = ("ca", "pf", "attacco", "danno", "cd", "ts_buono", "ts_cattivo")
 
-#: ⚠️ Solo QUESTE righe sono verificate contro le righe d'ancora in repo
-#: (`pathfinder-1e-srd/references/monster-advancement.md`, Table 1–1). Le altre
-#: sono **estrapolate dalla tabella dei passi** qui sotto, che è verificata — e
-#: questa differenza va detta, non sepolta dentro una tabella dall'aria
-#: autorevole. Un giudizio duro non si dà su una riga che nessuno ha visto.
-PER_GS_VERIFICATE = frozenset({8, 10, 11, 12, 13, 14, 15, 16})
+#: Tutte le righe vengono dalla fonte, quindi sono tutte verificate. Il nome
+#: resta perche' i chiamanti lo usano per ammorbidire un giudizio: adesso non
+#: devono ammorbidire niente.
+PER_GS_VERIFICATE = frozenset(PER_GS)
 
 #: PF1e Bestiary, appendice «Monster Advancement» — quanto compra un passo di
 #: GS. Questa tabella è verificata su tutto l'arco, ed è la ragione per cui le

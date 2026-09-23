@@ -8,9 +8,9 @@ tipo: Medium humanoid (dwarf), Fighter 8, LG
 ca: 22
 ca-dettaglio: touch 11, flat-footed 21 (piastre +1, scudo pesante +1, +1 Des)
 pf: 76
-pf-dado: 1d8+6
+pf-dado: 8d10+32
 ts: Temp +9, Rifl +3, Vol +4
-attributi: For 14 Des 12 Cos 15 Int 9 Sag 11 Car 15
+attributi: For 16 Des 12 Cos 18 Int 9 Sag 11 Car 15
 velocita: 6 m
 iniziativa: +1
 attacchi:
@@ -18,6 +18,8 @@ attacchi:
 voci:
   - Talenti: Attacco Poderoso, Fendere, Arma Focalizzata e Specializzata (martello da guerra), Scudo Migliorato, Leadership (comanda le 150 lance), Iniziativa Migliorata
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d8+6», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD, il bonus ricavato dai pf 76 (la Cos di questa scheda è generata).
 
 > [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 

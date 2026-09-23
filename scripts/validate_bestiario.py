@@ -63,14 +63,22 @@ def warn(msg: str):
 # PF1e Monster-Statistics-by-CR benchmark (semplificato: hp medio e AC media
 # per CR, tolleranze larghe). Fonte: skills/pathfinder-1e-srd (monster-advancement).
 # Solo per il warning di --rules: un GS palesemente fuori scala va rivisto.
-PF_BENCH = {  # cr: (hp_min, hp_max, ac_min, ac_max)
-    1: (10, 25, 11, 16), 2: (16, 40, 12, 17), 3: (22, 55, 13, 18),
-    4: (28, 70, 14, 19), 5: (34, 85, 15, 20), 6: (40, 100, 16, 21),
-    7: (46, 120, 17, 22), 8: (52, 140, 18, 23), 9: (60, 160, 18, 24),
-    10: (68, 185, 19, 25), 11: (76, 210, 20, 26), 12: (84, 240, 21, 27),
-    13: (94, 270, 22, 28), 14: (104, 300, 22, 29), 15: (116, 340, 23, 30),
-    16: (128, 380, 24, 31), 17: (140, 420, 25, 32), 18: (152, 470, 26, 33),
-}
+#: Il benchmark PF1e per GS. Fino al 2026-09-23 era una tabella di fasce
+#: scritta qui, senza fonte dichiarata, e diversa da quella di `dmcore`. Ora
+#: le fasce si ricavano dalla Tabella 1–1 in `pf1e-statistiche-per-gs.yaml`
+#: con la tolleranza scritta nello stesso file: un dato, un posto.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from dmcore.tabelle import TABELLA_1_1, TOLLERANZA_PER_GS  # noqa: E402
+
+
+def banda(cr: float):
+    """(pf minimo, pf massimo, CA minima, CA massima) per un GS, o None."""
+    riga = TABELLA_1_1.get(int(cr)) if cr >= 1 else TABELLA_1_1.get(0.5)
+    if not riga:
+        return None
+    t = TOLLERANZA_PER_GS
+    return (riga["pf"] * t["pf_rapporto_min"], riga["pf"] * t["pf_rapporto_max"],
+            riga["ca"] - t["ca_sotto"], riga["ca"] + t["ca_sopra"], riga["pf"], riga["ca"])
 
 
 def filename_cr(name: str):
@@ -190,14 +198,17 @@ def check_rules(path: Path):
         return
     # (1) benchmark GS vs pf/CA (tolleranza larga: segnala solo fuori scala)
     cr = header_cr(text)
-    if cr is not None and int(cr) in PF_BENCH:
-        hp_min, hp_max, ac_min, ac_max = PF_BENCH[int(cr)]
+    b = banda(cr) if cr is not None else None
+    if b:
+        pf_min, pf_max, ca_min, ca_max, pf_t, ca_t = b
         hp = valore(text, "pf")
-        if hp is not None and (hp < hp_min * 0.5 or hp > hp_max * 1.5):
-            warn(f"{rel}: pf {hp} fuori scala per GS {cr:g} (atteso ~{hp_min}-{hp_max})")
+        if hp is not None and not (pf_min <= hp <= pf_max):
+            warn(f"{rel}: pf {hp} fuori scala per GS {cr:g} (Tabella 1–1: {pf_t}, "
+                 f"fascia {pf_min:.0f}-{pf_max:.0f})")
         ac = valore(text, "ca")
-        if ac is not None and (ac < ac_min - 4 or ac > ac_max + 4):
-            warn(f"{rel}: CA {ac} fuori scala per GS {cr:g} (atteso ~{ac_min}-{ac_max})")
+        if ac is not None and not (ca_min <= ac <= ca_max):
+            warn(f"{rel}: CA {ac} fuori scala per GS {cr:g} (Tabella 1–1: {ca_t}, "
+                 f"fascia {ca_min:.0f}-{ca_max:.0f})")
     # (1-bis) coerenza INTERNA della CA: in 3.5 la CA di contatto e quella da
     # colto alla sprovvista sono la CA piena meno alcuni bonus, quindi non
     # possono superarla. E' un'identita', non un benchmark: non ha tolleranza.
@@ -208,15 +219,15 @@ def check_rules(path: Path):
             if int(val) > ac:
                 warn(f"{rel}: CA {ac} ma «{etichetta} {val}» — in 3.5 contatto e "
                      "sprovvista tolgono bonus, non ne aggiungono")
-    # (1-ter) `pf-dado` deve registrare i dadi vita. In 20 statblocchi su 95
-    # registrava il danno dell'arma (`1d8+7` accanto a «hp 93 (12 HD)»): e' il
-    # campo da cui si ricava la Costituzione, e mentiva in silenzio. Il
-    # controllo vive in genera_attributi.py, che per primo ci e' inciampato:
-    # una norma, un rilevatore.
+    # (1-ter) `pf-dado` deve registrare i dadi vita. Il 2026-09-23 non lo
+    # faceva in 46 statblocchi su 95: 26 portavano il danno di un'arma, 20 una
+    # parte sola dei dadi. Corretti da conformita_statblocchi.py, che ora ne fa
+    # un cancello; qui resta l'avviso con la ragione. Il controllo vive in
+    # genera_attributi.py: una norma, un rilevatore.
     from genera_attributi import pf_dado_sospetto
     motivo = pf_dado_sospetto(text, cr)
     if motivo:
-        warn(f"{rel}: {motivo} — il campo sembra il danno di un'arma")
+        warn(f"{rel}: {motivo} — `pf-dado` non registra i dadi vita")
     # (2) policy flag: Status inferred ⇒ deve esserci un marcatore [INFERRED]
     m_status = re.search(r"\*\*Status\*\*[:\s]*([a-z\-]+)", low)
     if m_status and m_status.group(1).startswith("inferred") and "[inferred" not in low:

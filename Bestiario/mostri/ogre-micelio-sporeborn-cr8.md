@@ -8,13 +8,15 @@ tipo: Large giant (fungal graft), CE
 ca: 18
 ca-dettaglio: (−1 taglia, +7 naturale [+5 base, +2 corteccia fungina], +3 pelle, −1 Des), contatto 8, colto alla sprovvista 18
 pf: 68
-pf-dado: 4d8
+pf-dado: 4d8+4d12+27
 ts: Temp +10, Rifl +1, Vol +2
-attributi: For 27 Des 8 Cos 20 Int 7 Sag 13 Car 10
+attributi: For 16 Des 8 Cos 16 Int 7 Sag 13 Car 10
 velocita: 12 m
 attacchi:
   - Mischia randello enorme +13 (2d8+10) o 2 slam +13 (1d8+7)
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «4d8», una parte sola dei dadi vita. I dadi vengono dalla formula che la scheda scrive, il bonus ricavato dai pf 68 (la Cos di questa scheda è generata).
 
 > [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 

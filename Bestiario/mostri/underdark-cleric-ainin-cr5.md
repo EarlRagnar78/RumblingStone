@@ -13,7 +13,7 @@ tipo: Medium humanoid (dwarf, hill), Cleric 5, LN
 ca: 20
 ca-dettaglio: touch 9, flat-footed 20 (piastre complete)
 pf: 41
-pf-dado: 1d8+3
+pf-dado: 5d8+15
 ts: Temp +9, Rifl +0, Vol +7
 attributi: For 13 Des 8 Cos 16 Int 10 Sag 16 Car 10
 velocita: 6 m
@@ -23,6 +23,8 @@ attacchi:
 voci:
   - Talenti: Incantare in Combattimento, Tempra Possente, Competenza Marziale (martello), Arma Focalizzata (martello)
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d8+3», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD, il bonus da Cos 16.
 
 > [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 

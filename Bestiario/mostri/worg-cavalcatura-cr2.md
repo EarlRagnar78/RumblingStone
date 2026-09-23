@@ -8,7 +8,7 @@ tipo: Medium magical beast, NE, 6 HD (avanzato dal worg MM 4 HD)
 ca: 14
 ca-dettaglio: touch 12, flat-footed 12
 pf: 51
-pf-dado: 1d8+4
+pf-dado: 6d10+18
 ts: Temp +7, Rifl +7, Vol +4
 attributi: For 17 Des 15 Cos 15 Int 6 Sag 14 Car 10
 velocita: 15 m
@@ -18,6 +18,8 @@ attacchi:
 voci:
   - Talenti: Allerta, Attacco Naturale Migliorato (morso), Robustezza Migliorata
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d8+4», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD e dai DV razziali dichiarati, il bonus da Cos 15 e Robustezza Migliorata.
 
 > [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 

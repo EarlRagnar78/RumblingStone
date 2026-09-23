@@ -7,10 +7,12 @@ gs: 8
 ca: 22
 ca-dettaglio: (+10 +2 full plate, +2 large shield)
 pf: 60
-pf-dado: 5d10
+pf-dado: 5d10+3d10+16
 ts: Temp +8, Rifl +4, Vol +5
-attributi: For 19 Des 15 Cos 22 Int 9 Sag 12 Car 9
+attributi: For 19 Des 15 Cos 14 Int 9 Sag 12 Car 9
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «5d10», una parte sola dei dadi vita. I dadi vengono dalla formula che la scheda scrive, il bonus è quello scritto nella formula.
 
 > [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 

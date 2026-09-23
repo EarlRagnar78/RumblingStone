@@ -154,24 +154,51 @@ python3 scripts/genera_attributi.py --taratura   # errore dello strato 3: 1,91 p
 |---|---|---|
 | ✅ | **1** · `--rules` legge `pf:` e `ca:` | copertura **49% → 98%**. Il ripiego sulla forma vecchia resta per i file senza blocco; i `[POINTER]` si saltano, perché i loro numeri stanno nel file d'arco |
 | ✅ | **2** · la coerenza interna della CA | nata verde come previsto: **0 violazioni** |
-| ✅ | **2-bis** · `pf-dado` deve registrare i dadi vita *(non previsto)* | 🐛 in **20 statblocchi su 95** registra **il danno di un'arma**: `1d8+7` accanto a «hp 93 (12 HD)» è il martello di Morlin. Col dado di classe SRD e col dado solo a GS ≥ 2 i sospetti sono **26**, segnalati da `--rules` con la ragione. Il difetto è di dati, e si corregge a mano |
-| ⬜ | **3** · promuovere `--rules` a cancello | ⚠️ **non ancora**: i 26 `pf-dado` lo farebbero bloccare su dati che nessuno script deve correggere da sé |
-| ⬜ | **4** · la tabella PF1e in un YAML versionato | non iniziato |
-| ✅ | **5** · gli `attributi` nei 96 statblocchi | 🔵 **il DM ha deciso: generarli.** Fatto per **94** (gli altri due erano già `[POINTER]`), con `scripts/genera_attributi.py` e alle condizioni di [ADR-0064](adr/ADR-0064-gli-attributi-si-scrivono-nel-bestiario.md). **39 trascritti** dalla fonte citata in `pregen-pcgen/`, **55 scelti** dall'array del Manuale del DM con taglia e razza SRD; tutti marcati `[INFERRED]` con la provenienza |
+| ✅ | **2-bis** · `pf-dado` registra i dadi vita *(non previsto)* | 🐛 **46 statblocchi su 95** non lo facevano: **26** portavano il danno di un'arma, già presente in `attacchi`; **20** una parte sola dei dadi (`4d8` per un ogre con sei livelli da barbaro). **42 ricostruiti** dalla formula che la scheda scrive o dalle classi del tipo, **4 tolti** (classi di prestigio non SRD). Il `danno dell'arma` mancava dal campo `attacchi` in un solo file, il sergente hobgoblin, e ora c'è. La causa: il lettore di settembre li rifiutava, ma i blocchi scritti ad agosto non sono mai stati ricontrollati. Da oggi `conformita_statblocchi.py --check` è un cancello in CI |
+| 🟡 | **3** · promuovere `--rules` a cancello | **la parte che morde è promossa**: il controllo su `pf-dado` è un cancello (vedi 2-bis). Il benchmark per GS resta un avviso, ed è giusto: i suoi 5 avvisi sono quattro incantatori con pochi pf e un cavaliere gnoll da 11 pf, informazioni e non errori |
+| ✅ | **4** · la tabella PF1e in un YAML versionato | `scripts/pf1e-statistiche-per-gs.yaml`, **31 righe e 11 colonne** trascritte dalla fonte OGL il 2026-09-23. 🔴 Il repo ne aveva **due copie** diverse, e le otto righe dichiarate «verificate» sbagliavano danno, CD e TS cattivo (il GS 12 aveva l'attacco del GS 11): la skill e la costante erano state scritte dalla stessa mano, e il test che le confrontava confrontava lo stesso errore. `dmcore`, `validate_bestiario` e la skill leggono ora un dato solo |
+| ✅ | **5** · gli `attributi` nei 96 statblocchi | 🔵 **il DM ha deciso: generarli.** Fatto per **94** (gli altri due erano `[POINTER]`), con `genera_attributi.py` e alle condizioni di [ADR-0064](adr/ADR-0064-gli-attributi-si-scrivono-nel-bestiario.md). **39 copiati** dalla sestina che la scheda stessa scrive, **37 trascritti** dalla fonte, **18 scelti**. ⚠️ La prima versione di questo esito diceva «55 scelti»: 39 di quei 55 avevano i numeri del DM nella prosa (vedi l'emendamento di ADR-0064) |
+| ✅ | **6** · pf, TS, BAB, lotta e attacco tornano con le caratteristiche *(chiesto il 2026-09-23)* | `conformita_statblocchi.py`, alle condizioni di [ADR-0065](adr/ADR-0065-la-conformita-si-corregge-dove-il-dato-non-e-una-scelta.md). Sui **95** statblocchi verificabili: **77 tornano**, 3 sono uguali alla fonte, **7 decisioni aperte** (§9), **0 da correggere**, 8 scarti di un punto su caratteristiche generate. **11 statblocchi corretti** a mano, ognuno con la sua marca e il suo conto SRD |
 
-🔎 **Il §6 diceva «le caratteristiche non si indovinano: dove la fonte è un
-export PCGen i numeri si trascrivono».** Era giusto, e la prima stesura del
-generatore l'ha ignorato: produceva array per 42 file che citavano la propria
-fonte. Lo strato di trascrizione è arrivato dopo, e ha portato con sé una
-misura che prima non c'era: sulle 39 fonti la risposta vera è nota, e lo
-strato 3 generato **come se non ci fossero** sbaglia di **1,91 punti** in media
-(0,96 di modificatore, 79% entro ±1). Era 2,32 prima di taglia, razza e delle
-tabelle di `dmcore`, che la prima stesura aveva ricopiato sbagliando due righe.
+🔎 **Il sospetto del DM sui template PF1e, misurato.** *«Controlla se sono
+questi i casi che non tornano: sono creature potenziate coi template PF1e»*. Il
+verificatore rifà i conti con Advanced (+4 a tutto) e Giant (For e Cos +4, Des
+−2) su ogni scheda che non torna: **nessuno scarto si spiega così**. I
+potenziati tornano tutti, perché il template sta già nelle caratteristiche che
+il DM ha scritto (For 31 del bruto è For 27 del gigante di pietra più il Giant).
+Gli scarti rimasti sono errori di un punto nelle schede di maggio, o numeri che
+si contraddicono fra loro.
 
-⚠️ **Cosa resta aperto, e da chi dipende.** Le tre identità profonde (pf, TS,
-attacco) hanno ora la loro superficie: `attributi` c'è in tutti i 108
-statblocchi col blocco. Il rilevatore che le verifica è il prossimo lotto, e
-va scritto **sapendo** che 55 di quei 108 portano caratteristiche scelte: un
-pf che non torna con una Cos generata dice qualcosa sul generatore prima che
-sulla scheda. I 26 `pf-dado` e le 10 divergenze annotate fra fonte e scheda
-sono lavoro del DM.
+📏 **La taratura ha il suo banco fuori campione.** Le 39 sestine delle schede
+sono venute fuori dopo aver fissato le regole del generatore: lo strato scelto
+ci sbaglia di **1,84 punti**, contro 1,63 sul banco su cui le regole sono state
+scelte. Regge.
+
+⚠️ **Cosa resta, e da chi dipende.** Le 7 decisioni di §9 sono del DM. Gli 8
+scarti su caratteristiche generate si chiudono insegnando al generatore a
+leggere anche i TS (Temp → Cos, Rifl → Des, Vol → Sag); per ora non si toccano
+gli statblocchi, perché farli tornare con un numero scelto sarebbe il contrario
+di ADR-0065 §1.
+
+---
+
+## 9 · Decisioni aperte al DM
+
+Sono gli statblocchi dove `conformita_statblocchi.py` trova uno scarto e **due
+numeri scritti dal DM puntano in direzioni opposte**: correggere l'uno o
+l'altro cambia la creatura in modo diverso, e scegliere non spetta a uno
+script. Il verificatore legge questa tabella: finche' una riga e' aperta, lo
+scarto esce come «decisione aperta» e non come errore.
+
+<!-- decisioni-dm: CONFORMITA-STATBLOCCHI -->
+
+| # | Statblocco | Domanda |
+|---|---|---|
+| D1 | `goblin-warrior1-cr05` | **For 9 o For 11?** La riga delle caratteristiche e il danno (1d6−1) dicono For 9; la lotta −3 e l'attacco +2 presuppongono For 11, che e' la Forza del goblin SRD. Con For 9 la lotta e' −4 e l'attacco +1 |
+| D2 | `tyrgarun-blue-old-cr18` | **For 33 o lotta +46?** Con BAB +30, taglia Enorme (+8) e For 33 (+11) la lotta e' **+49**. Il +46 presuppone For 26-27: forse la Forza di un'altra categoria d'eta' |
+| D3 | `drow-assassina-lolth-cr10` | **For 12 o For 10-11?** La lotta +6 e il danno della spada corta +1 (1d6+1) presuppongono mod For +0; la riga delle caratteristiche dice 12. Riflessi e' gia' corretto (+13) |
+| D4 | `drow-trickster-arcano-cr11` | **BAB +4 o +5?** Ladro 3 (+2), Mago 5 (+2) e Trickster Arcano 2 (+1) danno +5; la lotta +3 con For 8 presuppone +4. La classe di prestigio e' nel titolo, e il verificatore non la conta |
+| D5 | `ghost-lion-spettrale-cr8` | **Come si legge il template?** Non morto con Cos 20 e `8d12+40`: nel 3.5 un non morto non ha Costituzione, e il bonus ai pf e' della regola PF1e (Carisma). L'attacco +15 non torna con BAB da non morto (+4) ne' da animale (+6) |
+| D6 | `loxo-warrior3-cr4` | **Bestia magica o umanoide mostruoso?** La scheda dichiara bestia magica (`3d10`), ma i suoi TS (Temp +7, Rifl +2) non tornano con nessuna delle due progressioni |
+| D7 | `druid-bear-ally-cr12` | **I 120 pf sono in forma selvatica?** Con `12d8` e Cos 13 il massimo possibile e' 108. In forma d'orso (Cos 19) la fascia arriva a 144 e 120 ci sta: se e' cosi', la scheda lo deve dire |
+

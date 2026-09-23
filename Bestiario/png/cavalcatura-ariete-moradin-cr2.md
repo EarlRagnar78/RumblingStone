@@ -8,7 +8,7 @@ tipo: Large animal (cavalcatura speciale da paladino), 6 HD, N
 ca: 18
 ca-dettaglio: touch 10, flat-footed 17
 pf: 45
-pf-dado: 1d6+4
+pf-dado: 6d8+18
 ts: Temp +8, Rifl +6, Vol +3
 attributi: For 19 Des 13 Cos 17 Int 6 Sag 13 Car 6
 velocita: 15 m
@@ -18,6 +18,8 @@ attacchi:
 voci:
   - Talenti: Resistenza Fisica, Armatura Naturale Migliorata, Correre
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d6+4», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD e dai DV razziali dichiarati, il bonus da Cos 17.
 
 > [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 

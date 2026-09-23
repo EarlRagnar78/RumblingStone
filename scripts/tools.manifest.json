@@ -1677,7 +1677,14 @@
         "git"
       ],
       "args": [],
-      "inputs": [],
+      "inputs": [
+        {
+          "path": "scripts/pf1e-statistiche-per-gs.yaml",
+          "kind": "yaml",
+          "required": true,
+          "schema": null
+        }
+      ],
       "outputs": [],
       "exit_codes": {},
       "determinism": {
@@ -5090,6 +5097,12 @@
           "kind": "yaml",
           "required": true,
           "schema": null
+        },
+        {
+          "path": "scripts/pf1e-statistiche-per-gs.yaml",
+          "kind": "yaml",
+          "required": true,
+          "schema": null
         }
       ],
       "outputs": [
@@ -6171,7 +6184,7 @@
       "category": "E-bestiary-catalog",
       "language": "python",
       "invocation": "python3 scripts/genera_attributi.py",
-      "summary": "Scrive la riga `attributi` degli statblocchi che non ce l'hanno, in quattro strati: trascrive la sestina dalla fonte citata in Bestiario/pregen-pcgen/ (39 file), legge la Des da ca-dettaglio, ricava Des dalla CA di contatto e Cos da pf e pf-dado con guardia legata al GS, e solo per il resto sceglie dagli array elite/standard del Manuale del DM (dmcore.tabelle) per ruolo, con taglia e razza SRD e ±1 a somma zero a seme fisso. Ogni blocco porta [INFERRED — needs DM confirmation] con provenienza e divergenze. --taratura misura l'errore dello strato 3 contro le fonti (1,91 punti).",
+      "summary": "Scrive la riga `attributi` degli statblocchi che non ce l'hanno, in cinque strati: copia la sestina che la scheda stessa scrive nella prosa (39 file, inglese o italiano), trascrive quella della fonte citata in Bestiario/pregen-pcgen/ (37), legge la Des da ca-dettaglio, ricava Des dalla CA di contatto, Cos da pf e pf-dado e For da BAB e lotta, e solo per il resto (18) sceglie dagli array elite/standard del Manuale del DM (dmcore.tabelle) con taglia e razza SRD e ±1 a somma zero a seme fisso. Ogni blocco porta [INFERRED] con provenienza e divergenze. --taratura misura lo strato scelto in campione (1,63) e fuori campione (1,84).",
       "use_case": "«Questo statblocco non ha For/Des/Cos: come verifico pf, TS e attacco senza inventarle?»",
       "stability": "beta",
       "stdlib_only": true,
@@ -6267,7 +6280,128 @@
       ],
       "docs": [
         "plans/RICERCA-CONFORMITA-MECCANICA-STATBLOCCHI.md",
-        "plans/adr/ADR-0064-gli-attributi-si-scrivono-nel-bestiario.md"
+        "plans/adr/ADR-0064-gli-attributi-si-scrivono-nel-bestiario.md",
+        "plans/adr/ADR-0065-la-conformita-si-corregge-dove-il-dato-non-e-una-scelta.md"
+      ]
+    },
+    {
+      "id": "conformita_statblocchi",
+      "path": "scripts/conformita_statblocchi.py",
+      "category": "E-bestiary-catalog",
+      "language": "python",
+      "invocation": "python3 scripts/conformita_statblocchi.py",
+      "summary": "Verifica le identità SRD 3.5 di ogni statblocco — pf nella fascia legale dei dadi vita, TS dalle progressioni di classe e di tipo, BAB, lotta, attacco — leggendo la provenienza delle caratteristiche (copiate, trascritte, a mano, generate). Per ogni scarto prova se un template semplice PF1e (Advanced, Giant) lo spiega, lo confronta con la fonte PCGen/SRD, e legge le decisioni aperte al DM dal piano. Con --correggi-pf-dado riscrive i `pf-dado` che portano il danno di un'arma o una parte sola dei dadi, ricostruendoli dalla formula scritta o dalle classi del tipo; --check è il cancello.",
+      "use_case": "«Questo statblocco è coerente con le sue caratteristiche, o c'è un numero che non torna col SRD?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--riepilogo",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Solo i conti."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Rapporto in JSON."
+        },
+        {
+          "name": "--proponi-pf-dado",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Stampa le correzioni di `pf-dado` senza scrivere."
+        },
+        {
+          "name": "--correggi-pf-dado",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Riscrive i `pf-dado` che non registrano i dadi vita (idempotente)."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Gate: ogni `pf-dado` registra i dadi vita e ogni correzione è riproducibile."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "Bestiario/{mostri,villain,png}/**/*-cr*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "Bestiario/pregen-pcgen/**",
+          "kind": "text",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": "plans/RICERCA-CONFORMITA-MECCANICA-STATBLOCCHI.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "Bestiario/{mostri,villain,png}/**/*-cr*.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "stdout",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "un `pf-dado` non registra i dadi vita, o una correzione non è riproducibile (--check)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": true,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/conformita_statblocchi.py --help",
+      "tests": [
+        "scripts/tests/test_conformita_statblocchi.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0065-la-conformita-si-corregge-dove-il-dato-non-e-una-scelta.md",
+        "plans/RICERCA-CONFORMITA-MECCANICA-STATBLOCCHI.md"
       ]
     }
   ]

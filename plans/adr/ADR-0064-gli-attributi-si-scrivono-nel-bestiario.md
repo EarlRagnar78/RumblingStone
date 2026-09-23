@@ -4,6 +4,7 @@
 - **Data**: 2026-09-23
 - **Contesto**: ordine del DM, 2026-09-21 — *«generare coerentemente gli stat block nei 96 stat blocchi che non li hanno usando dei generatori random che utilizzano le regole di dnd 3.5 e/o pathfinder 1e o gli stat array elite e std […] (usa le regole deterministiche più affidabili con una percentuale di random in modo che non siano tutti uguali se possibile)»*
 - **Emenda**: [ADR-0033](ADR-0033-derivare-e-dichiararlo.md), la regola «lo strumento propone, e scrive una cosa sola»
+- **Emendata da**: [ADR-0065](ADR-0065-la-conformita-si-corregge-dove-il-dato-non-e-una-scelta.md), lo stesso giorno — vedi *Emendamento* in fondo
 - **Rende possibile**: le tre identità profonde di [RICERCA-CONFORMITA-MECCANICA-STATBLOCCHI](../RICERCA-CONFORMITA-MECCANICA-STATBLOCCHI.md) §5
 
 ---
@@ -112,3 +113,33 @@ riscrive.
 - Manuale del DM 3.5, matrici delle caratteristiche dei PNG, già in
   `scripts/dmcore/tabelle.py`.
 - `Bestiario/pregen-pcgen/`: export PCGen e pagine SRD, archivio in sola lettura.
+
+---
+
+## Emendamento — 2026-09-23, qualche ora dopo
+
+🔴 **I conti di questo ADR erano sbagliati, e il motivo è uno strato mancante.**
+Correggendo `pf-dado` (ADR-0065) è venuto fuori che il sergente hobgoblin
+scrive nella sua prosa «**Abilities**: Str 14, Dex 12, Con 14, Int 10, Wis 10,
+Cha 8», e il generatore gli aveva dato Car 17. **27 dei 55** file contati qui
+come «scelti» avevano i numeri del DM due righe sotto il blocco; altri 12 li
+scrivevano in italiano («For 31, Des 13, Cos 23…»), e il lettore capiva solo
+l'inglese.
+
+| | questo ADR diceva | dopo l'emendamento |
+|---|---:|---:|
+| copiati dalla scheda stessa | — | **39** |
+| trascritti dalla fonte | 39 | **37** (due schede scrivono i loro, e vincono) |
+| scelti dall'array | 55 | **18** |
+
+La decisione resta quella del §1-4, con uno strato in più **prima** di tutti:
+la sestina che la scheda scrive. Quella è del DM e non si tocca, nemmeno quando
+un vincolo dice altro: la divergenza si annota.
+
+📏 **E la taratura ha guadagnato il banco che le mancava.** Le 39 sestine delle
+schede sono state trovate **dopo** aver fissato le regole, quindi sono un banco
+**fuori campione**: lo strato scelto ci sbaglia di **1,84 punti** (79% entro ±1
+di modificatore), contro 1,63 sul banco in campione. Il generatore regge su file
+che non ha visto; l'obiezione «in-campione» del §*Prezzo* ha adesso una risposta
+misurata.
+

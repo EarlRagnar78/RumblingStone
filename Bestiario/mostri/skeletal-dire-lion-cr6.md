@@ -10,9 +10,9 @@ ca-dettaglio: (-1 size, +2 Dex, +4 natural)
 pf: 104
 pf-dado: 16d12
 ts: Temp +5, Rifl +7, Vol +10
-attributi: For 26 Des 14 Cos — Int — Sag 10 Car 1
+attributi: For 25 Des 15 Cos — Int — Sag 10 Car 10
 ```
 
-> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
 Large undead HD 16d12 (104 HP with skeleton template 2x HD). AC 15 (-1 size, +2 Dex, +4 natural). Fort +5 Ref +7 Will +10. BAB +8/+22. 2 claws +18 (1d6+10) + bite +13 (1d8+5) + pounce/rake. Str 25 Dex 15 Con - Int - Wis 10 Cha 10. Immune cold, DR 5/bludgeoning. Notes: compagni-lich del Ghostlord, 2-3 sempre al fianco.

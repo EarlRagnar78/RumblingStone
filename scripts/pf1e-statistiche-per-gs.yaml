@@ -1,0 +1,68 @@
+# Tabella 1–1 del Bestiary di Pathfinder 1e: statistiche dei mostri per GS.
+#
+# Fonte: Pathfinder Roleplaying Game Bestiary, «Monster Creation», Table 1–1,
+#        contenuto aperto OGL 1.0a. Letta il 2026-09-23 da
+#        https://www.d20pfsrd.com/bestiary/rules-for-monsters/monster-creation/
+#        e trascritta riga per riga dall'HTML, non a memoria.
+#
+# Perche' e' un file e non una costante nel codice: il repo ne aveva due copie
+# (`PER_GS` in dmcore/tabelle.py e `PF_BENCH` in validate_bestiario.py) che non
+# concordavano nemmeno nella forma, e le otto righe dichiarate «verificate»
+# sbagliavano danno, CD e TS cattivo. Un dato che il DM puo' correggere sta
+# dove il DM lo legge.
+#
+# ⚠️ GS 22: la fonte scrive 400 pf, come il GS 21. La progressione (+40 per
+# passo dal 20 al 30) fa pensare a 440. Si trascrive la fonte e lo si dice: la
+# campagna non arriva a quel GS.
+#
+# Forma: una riga per GS, tutti i campi in chiaro. Il lettore e'
+# dmcore/tabelle.py (solo stdlib, nessun pyyaml).
+versione: 1
+data: 2026-09-23
+colonne: [gs, pf, ca, attacco_alto, attacco_basso, danno_alto, danno_basso, cd_primaria, cd_secondaria, ts_buono, ts_cattivo]
+
+# Quanto lontano dal bersaglio un mostro 3.5 e' ancora «in scala» per
+# validate_bestiario --rules. Il 3.5 sta sotto il PF1e a parita' di GS
+# (ADR-0033), quindi la fascia e' larga e asimmetrica: fuori scala e' chi ha
+# meno di un terzo dei pf del bersaglio o piu' del triplo, o una CA di oltre
+# 10 punti sotto o 6 sopra. Col vecchio PF_BENCH, che non dichiarava la fonte,
+# gli avvisi erano 3; con questa regola sono 5: quattro incantatori con pochi
+# pf e un cavaliere gnoll da 11 pf a GS 4 (misurato il 2026-09-23).
+tolleranza:
+  pf_rapporto_min: 0.3
+  pf_rapporto_max: 3.0
+  ca_sotto: 10
+  ca_sopra: 6
+
+righe:
+  - {gs: 0.5, pf: 10, ca: 11, attacco_alto: 1, attacco_basso: 0, danno_alto: 4, danno_basso: 3, cd_primaria: 11, cd_secondaria: 8, ts_buono: 3, ts_cattivo: 0}
+  - {gs: 1, pf: 15, ca: 12, attacco_alto: 2, attacco_basso: 1, danno_alto: 7, danno_basso: 5, cd_primaria: 12, cd_secondaria: 9, ts_buono: 4, ts_cattivo: 1}
+  - {gs: 2, pf: 20, ca: 14, attacco_alto: 4, attacco_basso: 3, danno_alto: 10, danno_basso: 7, cd_primaria: 13, cd_secondaria: 9, ts_buono: 5, ts_cattivo: 1}
+  - {gs: 3, pf: 30, ca: 15, attacco_alto: 6, attacco_basso: 4, danno_alto: 13, danno_basso: 9, cd_primaria: 14, cd_secondaria: 10, ts_buono: 6, ts_cattivo: 2}
+  - {gs: 4, pf: 40, ca: 17, attacco_alto: 8, attacco_basso: 6, danno_alto: 16, danno_basso: 12, cd_primaria: 15, cd_secondaria: 10, ts_buono: 7, ts_cattivo: 3}
+  - {gs: 5, pf: 55, ca: 18, attacco_alto: 10, attacco_basso: 7, danno_alto: 20, danno_basso: 15, cd_primaria: 15, cd_secondaria: 11, ts_buono: 8, ts_cattivo: 4}
+  - {gs: 6, pf: 70, ca: 19, attacco_alto: 12, attacco_basso: 8, danno_alto: 25, danno_basso: 18, cd_primaria: 16, cd_secondaria: 11, ts_buono: 9, ts_cattivo: 5}
+  - {gs: 7, pf: 85, ca: 20, attacco_alto: 13, attacco_basso: 10, danno_alto: 30, danno_basso: 22, cd_primaria: 17, cd_secondaria: 12, ts_buono: 10, ts_cattivo: 6}
+  - {gs: 8, pf: 100, ca: 21, attacco_alto: 15, attacco_basso: 11, danno_alto: 35, danno_basso: 26, cd_primaria: 18, cd_secondaria: 12, ts_buono: 11, ts_cattivo: 7}
+  - {gs: 9, pf: 115, ca: 23, attacco_alto: 17, attacco_basso: 12, danno_alto: 40, danno_basso: 30, cd_primaria: 18, cd_secondaria: 13, ts_buono: 12, ts_cattivo: 8}
+  - {gs: 10, pf: 130, ca: 24, attacco_alto: 18, attacco_basso: 13, danno_alto: 45, danno_basso: 33, cd_primaria: 19, cd_secondaria: 13, ts_buono: 13, ts_cattivo: 9}
+  - {gs: 11, pf: 145, ca: 25, attacco_alto: 19, attacco_basso: 14, danno_alto: 50, danno_basso: 37, cd_primaria: 20, cd_secondaria: 14, ts_buono: 14, ts_cattivo: 10}
+  - {gs: 12, pf: 160, ca: 27, attacco_alto: 21, attacco_basso: 15, danno_alto: 55, danno_basso: 41, cd_primaria: 21, cd_secondaria: 15, ts_buono: 15, ts_cattivo: 11}
+  - {gs: 13, pf: 180, ca: 28, attacco_alto: 22, attacco_basso: 16, danno_alto: 60, danno_basso: 45, cd_primaria: 21, cd_secondaria: 15, ts_buono: 16, ts_cattivo: 12}
+  - {gs: 14, pf: 200, ca: 29, attacco_alto: 23, attacco_basso: 17, danno_alto: 65, danno_basso: 48, cd_primaria: 22, cd_secondaria: 16, ts_buono: 17, ts_cattivo: 12}
+  - {gs: 15, pf: 220, ca: 30, attacco_alto: 24, attacco_basso: 18, danno_alto: 70, danno_basso: 52, cd_primaria: 23, cd_secondaria: 16, ts_buono: 18, ts_cattivo: 13}
+  - {gs: 16, pf: 240, ca: 31, attacco_alto: 26, attacco_basso: 19, danno_alto: 80, danno_basso: 60, cd_primaria: 24, cd_secondaria: 17, ts_buono: 19, ts_cattivo: 14}
+  - {gs: 17, pf: 270, ca: 32, attacco_alto: 27, attacco_basso: 20, danno_alto: 90, danno_basso: 67, cd_primaria: 24, cd_secondaria: 18, ts_buono: 20, ts_cattivo: 15}
+  - {gs: 18, pf: 300, ca: 33, attacco_alto: 28, attacco_basso: 21, danno_alto: 100, danno_basso: 75, cd_primaria: 25, cd_secondaria: 18, ts_buono: 20, ts_cattivo: 16}
+  - {gs: 19, pf: 330, ca: 34, attacco_alto: 29, attacco_basso: 22, danno_alto: 110, danno_basso: 82, cd_primaria: 26, cd_secondaria: 19, ts_buono: 21, ts_cattivo: 16}
+  - {gs: 20, pf: 370, ca: 36, attacco_alto: 30, attacco_basso: 23, danno_alto: 120, danno_basso: 90, cd_primaria: 27, cd_secondaria: 20, ts_buono: 22, ts_cattivo: 17}
+  - {gs: 21, pf: 400, ca: 37, attacco_alto: 31, attacco_basso: 24, danno_alto: 130, danno_basso: 98, cd_primaria: 27, cd_secondaria: 20, ts_buono: 23, ts_cattivo: 18}
+  - {gs: 22, pf: 400, ca: 39, attacco_alto: 32, attacco_basso: 25, danno_alto: 140, danno_basso: 105, cd_primaria: 28, cd_secondaria: 21, ts_buono: 23, ts_cattivo: 18}
+  - {gs: 23, pf: 480, ca: 40, attacco_alto: 33, attacco_basso: 26, danno_alto: 150, danno_basso: 113, cd_primaria: 29, cd_secondaria: 22, ts_buono: 24, ts_cattivo: 19}
+  - {gs: 24, pf: 520, ca: 42, attacco_alto: 35, attacco_basso: 27, danno_alto: 165, danno_basso: 124, cd_primaria: 30, cd_secondaria: 23, ts_buono: 25, ts_cattivo: 20}
+  - {gs: 25, pf: 560, ca: 43, attacco_alto: 36, attacco_basso: 28, danno_alto: 180, danno_basso: 135, cd_primaria: 30, cd_secondaria: 24, ts_buono: 26, ts_cattivo: 21}
+  - {gs: 26, pf: 600, ca: 44, attacco_alto: 37, attacco_basso: 29, danno_alto: 195, danno_basso: 145, cd_primaria: 31, cd_secondaria: 25, ts_buono: 27, ts_cattivo: 22}
+  - {gs: 27, pf: 640, ca: 45, attacco_alto: 38, attacco_basso: 30, danno_alto: 210, danno_basso: 155, cd_primaria: 32, cd_secondaria: 26, ts_buono: 28, ts_cattivo: 23}
+  - {gs: 28, pf: 680, ca: 46, attacco_alto: 39, attacco_basso: 31, danno_alto: 225, danno_basso: 165, cd_primaria: 33, cd_secondaria: 27, ts_buono: 29, ts_cattivo: 24}
+  - {gs: 29, pf: 720, ca: 47, attacco_alto: 40, attacco_basso: 32, danno_alto: 240, danno_basso: 175, cd_primaria: 34, cd_secondaria: 28, ts_buono: 30, ts_cattivo: 25}
+  - {gs: 30, pf: 760, ca: 48, attacco_alto: 41, attacco_basso: 33, danno_alto: 255, danno_basso: 185, cd_primaria: 35, cd_secondaria: 29, ts_buono: 31, ts_cattivo: 26}

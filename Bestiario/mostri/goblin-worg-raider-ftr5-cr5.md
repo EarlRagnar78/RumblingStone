@@ -8,7 +8,7 @@ tipo: Small humanoid (goblinoid), Fighter 5, LE
 ca: 19
 ca-dettaglio: touch 15, flat-footed 15
 pf: 42
-pf-dado: 1d4+1
+pf-dado: 5d10+10
 ts: Temp +6, Rifl +5, Vol +1
 attributi: For 11 Des 18 Cos 14 Int 12 Sag 10 Car 6
 velocita: 9 m
@@ -18,6 +18,8 @@ attacchi:
 voci:
   - Talenti: Arceria in Sella, Combattere in Sella, Tiro Ravvicinato, Tiro Preciso, Arma Focalizzata (arco corto)
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d4+1», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD, il bonus da Cos 14.
 
 > [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 

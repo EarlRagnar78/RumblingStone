@@ -8,7 +8,6 @@ tipo: Medium humanoid (dwarf), Paladin 8 / Hammer of Moradin 2, LG
 ca: 22
 ca-dettaglio: touch 10, flat-footed 22 (piastre +1)
 pf: 80
-pf-dado: 1d8+3
 ts: Temp +13, Rifl +3, Vol +8
 attributi: For 14 Des 8 Cos 14 Int 10 Sag 14 Car 14
 velocita: 6 m
@@ -18,6 +17,8 @@ attacchi:
 voci:
   - Talenti: Celestial Mount, Divine Armor, Volontà di Ferro, Arma Focalizzata (martello)
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` tolto da `scripts/conformita_statblocchi.py`: portava «1d8+3», che non sono i dadi vita (pf-dado «1d8+3» ha 1 dado, il testo dichiara 10 DV). I dadi non si ricostruiscono senza inventare: la composizione delle classi non e' leggibile o comprende una classe non SRD. Da completare a mano.
 
 > [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili. ⚠ la CA di contatto suggerisce Des 10, la fonte dice 8: si tiene la fonte, la differenza può essere deviazione o schivata, da verificare.
 

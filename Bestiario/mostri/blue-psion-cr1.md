@@ -8,12 +8,12 @@ ca-dettaglio: (+1 size, +2 Dex, +2 leather)
 pf: 5
 pf-dado: 1d8+1
 ts: Temp +3, Rifl +2, Vol +0
-attributi: For 8 Des 14 Cos 12 Int 15 Sag 13 Car 9
+attributi: For 8 Des 14 Cos 12 Int 12 Sag 10 Car 12
 velocita: 30 ft
 iniziativa: +2
 ```
 
-> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ For 2 ricavata da BAB e lotta, ma la scheda scrive 8: si tiene la scheda, da verificare.
 
 **Size/Type**: Small humanoid (goblinoid, psionic) | **HD**: 1d8+1 (5 HP)
 **AC**: 15 (+1 size, +2 Dex, +2 leather) | **Init**: +2 | **Speed**: 30 ft

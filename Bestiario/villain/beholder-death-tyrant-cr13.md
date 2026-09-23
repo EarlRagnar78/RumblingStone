@@ -10,7 +10,7 @@ ca-dettaglio: (-1 taglia, +11 naturale), touch 9, flat-footed 20
 pf: 71
 pf-dado: 11d12
 ts: Temp +3, Rifl +3, Vol +9
-attributi: For 17 Des 10 Cos — Int 12 Sag 10 Car 21
+attributi: For 10 Des 10 Cos — Int 12 Sag 10 Car 21
 velocita: Volare 15 m (media)
 iniziativa: +0
 attacchi:

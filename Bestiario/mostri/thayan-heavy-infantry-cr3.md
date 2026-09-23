@@ -9,9 +9,9 @@ ca-dettaglio: (+8 full plate, +1 shield, +1 Dex)
 pf: 23
 pf-dado: 3d10+6
 ts: Temp +5, Rifl +2, Vol +1
-attributi: For 16 Des 12 Cos 14 Int 7 Sag 13 Car 10
+attributi: For 15 Des 12 Cos 14 Int 10 Sag 10 Car 10
 ```
 
-> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
 HD 3d10+6 (23 HP). AC 20 (+8 full plate, +1 shield, +1 Dex). Fort +5 Ref +2 Will +1. BAB +3. MW bastard sword +7 (1d10+3/19-20). Str 15 Dex 12 Con 14 Int 10 Wis 10 Cha 10. Feats: EWP bastard sword, Weapon Focus, Power Attack, Cleave. Notes: 600 unità. Marchio Teschio Nero sul petto.

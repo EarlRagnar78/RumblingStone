@@ -7,10 +7,12 @@ gs: 10
 ca: 19
 ca-dettaglio: (+5 chain shirt, +1 Dex, +2 natural, +1 deflect)
 pf: 88
-pf-dado: 2d8
+pf-dado: 2d8+8d12+30
 ts: Temp +11, Rifl +4, Vol +5
 attributi: For 20 Des 12 Cos 16 Int 7 Sag 12 Car 11
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «2d8», una parte sola dei dadi vita. I dadi vengono dalla formula che la scheda scrive, il bonus è quello scritto nella formula.
 
 > [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 

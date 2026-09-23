@@ -79,3 +79,27 @@ un comando bloccato sul DM è esente e dichiarata tale.
 - [ADR-0047](ADR-0047-le-decisioni-aperte-hanno-una-casa-sola.md) — il dato ha una casa sola, e un gate lo verifica
 - [ADR-0062](ADR-0062-una-norma-senza-superficie-lo-dichiara.md) — un rilevatore senza superficie lo dichiara
 - `plans/STATO-E-ORDINE-DEI-PIANI.md` §6.2-bis — il conto delle cinque righe
+
+---
+
+## Emendamento — 2026-09-23: il comando che non si esegue non sparisce
+
+🐛 **Il cancello aveva il difetto che era nato per trovare.** Un comando citato
+che non stava in `CONSENTITI` veniva **saltato in silenzio**, e la riga contava
+come verificata: la riga sugli statblocchi citava `genera_attributi.py --check`,
+che il cancello non ha mai eseguito, e il cancello stampava «nessuna riga
+mente».
+
+Da oggi:
+
+- un comando citato che **esiste** in `scripts/` ma non si può eseguire è un
+  **errore**, con la ragione. Una parola fra backtick che non è uno script
+  resta ignorata;
+- le opzioni che **scrivono** (`--scrivi`, `--rigenera`, `--correggi…`,
+  `--apply`, `--emit`, `--fix`) non si eseguono mai, anche su uno script
+  ammesso: §6.2 misura, e una riga non deve poter far scrivere la CI;
+- l'allowlist si allarga di tre script in sola lettura (`genera_attributi`,
+  `validate_bestiario`, `conformita_statblocchi`). ⚠️ La regola del §2 dice
+  che l'allowlist la allarga **una persona**: qui lo fa l'agente, su ordine del
+  DM per i lotti degli statblocchi, ed è scritto perché il DM lo veda nella PR.
+

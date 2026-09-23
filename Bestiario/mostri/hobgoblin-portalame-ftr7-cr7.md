@@ -8,7 +8,7 @@ tipo: Medium humanoid (goblinoid), Fighter 7, LE
 ca: 19
 ca-dettaglio: touch 13, flat-footed 16 (Mobilità, Difesa con Due Armi)
 pf: 58
-pf-dado: 1d6+4
+pf-dado: 7d10+14
 ts: Temp +7, Rifl +5, Vol +3
 attributi: For 16 Des 16 Cos 15 Int 10 Sag 12 Car 8
 velocita: 9 m
@@ -18,6 +18,8 @@ attacchi:
 voci:
   - Talenti: Expeditious Dodge, Mobilità, Difesa/Combattere con Due Armi, TW Pounce, Arma Focalizzata e Specializzata (spada corta)
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d6+4», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD, il bonus da Cos 15.
 
 > [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 

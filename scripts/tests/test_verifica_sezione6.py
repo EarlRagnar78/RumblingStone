@@ -132,3 +132,28 @@ class TestIlCancelloMorde(unittest.TestCase):
 
 if __name__ == "__main__":  # pragma: no cover
     unittest.main()
+
+
+class TestIlComandoNonEseguitoNonSparisce(unittest.TestCase):
+    """🐛 2026-09-23: un comando fuori allowlist spariva, e la riga contava come verificata."""
+
+    def test_uno_script_vero_fuori_allowlist_e_un_rifiuto(self):
+        _, rifiutati = v6._comandi_e_rifiutati("`python3 scripts/tools_manifest.py --check`")
+        self.assertEqual(len(rifiutati), 1)
+        self.assertIn("CONSENTITI", rifiutati[0])
+
+    def test_un_opzione_che_scrive_non_si_esegue(self):
+        eseguibili, rifiutati = v6._comandi_e_rifiutati(
+            "`python3 scripts/conformita_statblocchi.py --correggi-pf-dado`")
+        self.assertEqual(eseguibili, [])
+        self.assertIn("scriverebbe", rifiutati[0])
+
+    def test_una_parola_fra_backtick_non_e_un_comando(self):
+        self.assertEqual(v6._comandi_e_rifiutati("il campo `attributi` e `pf-dado`"), ([], []))
+
+    def test_i_comandi_in_sola_lettura_si_eseguono(self):
+        eseguibili, rifiutati = v6._comandi_e_rifiutati(
+            "`python3 scripts/conformita_statblocchi.py --riepilogo`")
+        self.assertEqual(rifiutati, [])
+        self.assertEqual(eseguibili[0][1:], ["scripts/conformita_statblocchi.py", "--riepilogo"])
+

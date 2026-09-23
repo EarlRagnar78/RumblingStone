@@ -8,12 +8,12 @@ ca-dettaglio: (+8 +1 full plate, +3 Dex, +1 light shield)
 pf: 49
 pf-dado: 9d8+9
 ts: Temp +7, Rifl +6, Vol +11
-attributi: For 16 Des 16 Cos 12 Int 8 Sag 20 Car 11
+attributi: For 12 Des 16 Cos 12 Int 14 Sag 19 Car 16
 velocita: 20 ft
 iniziativa: +3
 ```
 
-> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
 **Size/Type**: Medium humanoid (elf) | **HD**: 9d8+9 (49 HP)
 **AC**: 22 (+8 +1 full plate, +3 Dex, +1 light shield) | **Init**: +3 | **Speed**: 20 ft

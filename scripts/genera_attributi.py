@@ -18,36 +18,41 @@ uguali)»*.
 
 ## Il principio: prima si copia, poi si legge, poi si sceglie, e il caso per ultimo
 
-Quattro strati, in quest'ordine. Ogni caratteristica scende di strato solo se il
+Cinque strati, in quest'ordine. Ogni caratteristica scende di strato solo se il
 precedente non la determina. Misurato sui 94 file, 2026-09-23:
 
 | strato | da dove viene | file |
 |---|---|---:|
-| **0 · trascritto** | la fonte citata in `Bestiario/pregen-pcgen/` (export PCGen, SRD) | **39** |
-| **1 · letto** | la Destrezza scritta in `ca-dettaglio` (`+3 Dex`) | } **48** dei 55 |
-| **2 · derivato** | Des dalla CA di contatto; Cos da `pf` e `pf-dado` | } Cos su **26** |
-| **3 · scelto** | array del **Manuale del DM 3.5**, per ruolo, con taglia e razza SRD | **55** |
+| **0a · copiato** | la sestina che la **scheda stessa** scrive nella prosa, in inglese o in italiano | **39** |
+| **0b · trascritto** | la fonte citata in `Bestiario/pregen-pcgen/` (export PCGen, SRD) | **37** |
+| **1 · letto** | la Destrezza scritta in `ca-dettaglio` (`+3 Dex`) | } sugli |
+| **2 · derivato** | Des dalla CA di contatto; Cos da `pf` e `pf-dado`; For da BAB e lotta | } altri |
+| **3 · scelto** | array del **Manuale del DM 3.5**, per ruolo, con taglia e razza SRD | **18** |
 
-🔴 **Lo strato 0 la prima stesura non l'aveva**, e generava numeri per 42 file
-che citano la loro fonte: per 39 di quelli la sestina c'e' e si copia. Le
-regole per sceglierla sono in `dalla_fonte`, e una che sembrava ragionevole e'
-stata tolta perche' dava al *myconid worker* la Forza del sovrano.
+🔴 **Gli strati 0a e 0b la prima stesura non li aveva.** Generava numeri per
+42 file che citano la loro fonte, e per 27 che li scrivevano due righe sotto il
+blocco. Il conto di ADR-0064 («55 scelti») era sbagliato per questo: i
+file davvero scelti sono **18**.
 
 🔴 **Lo strato 3 e' una scelta, non una misura**, e per questo **ogni blocco
 scritto porta `[INFERRED — needs DM confirmation]`**, con la sua provenienza e
-le divergenze trovate: e' la regola 5 di `AGENTS.md`, e non si aggira perche'
-il generatore e' bravo. Il confine con ADR-0033 lo discute ADR-0064.
+le divergenze trovate: e' la regola 5 di `AGENTS.md`. Il confine con ADR-0033
+lo discutono ADR-0064 e ADR-0065.
 
 ## Quanto sbaglia lo strato 3, misurato
 
-Dove la fonte c'e', la risposta vera e' nota: `--taratura` genera **come se
-la fonte non ci fosse** e confronta. Sui 39 file, errore medio **1,91 punti**
-(0,96 di modificatore), **79%** entro ±1 di modificatore. La prima stesura
-stava a 2,32: la differenza la fanno la taglia e la razza SRD e il riuso delle
-tabelle di `dmcore`. ⚠️ **Il numero e' in-campione**: le regole vengono
-dall'SRD, ma e' su questi 39 file che si e' visto che servivano. Le mentali
-(Int 2,7 · Car 2,3) restano le piu' lontane, perche' il ruolo dice come un
-PNG combatte e non quanto e' intelligente.
+Dove la risposta vera c'e', `--taratura` genera **come se non ci fosse** e
+confronta, su due banchi separati:
+
+| banco | file | errore medio | entro ±1 di mod |
+|---|---:|---:|---:|
+| fonti citate — **in campione** (le regole sono state scelte guardandole) | 37 | 1,63 | 83% |
+| sestine delle schede — **fuori campione** (trovate dopo) | 39 | **1,84** | 79% |
+
+Il secondo numero e' quello che conta: dice quanto il generatore vale su un
+file che non ha visto. Le mentali (Int e Car sopra i 2 punti) restano le piu'
+lontane, perche' il ruolo dice come un PNG combatte e non quanto e'
+intelligente.
 
 ## Gli array, e quando si usa quale
 
@@ -86,8 +91,8 @@ e lo usa anche `validate_bestiario --rules`.
   **solo** i blocchi che portano la sua marca.
 * **Non legge il PDF** del death tyrant: la sola stdlib non lo apre, e `--check`
   in CI deve poter rigenerare tutto. Quel file resta generato, e lo dice.
-* **Non verifica** che i pf e i TS gia' scritti tornino con le caratteristiche:
-  e' la verifica che queste caratteristiche **abilitano**, e sara' il lotto dopo.
+* **Non verifica** che pf, TS e attacco tornino con le caratteristiche: lo fa
+  `conformita_statblocchi.py`, che queste caratteristiche rendono possibile.
 
 ## Uso
 
@@ -250,6 +255,49 @@ def plausibile(m: int, gs: float) -> bool:
     return MOD_MINIMO <= m <= 3 + gs / 2
 
 
+#: La formula dei DV scritta dal DM: «**DV 4d8 + 6d12**», «HD 2d8+2d8+8»,
+#: «**HD**: 10d10+80». E' il dato piu' affidabile, perche' e' l'unico che
+#: nomina **tutti** i dadi: in parecchi file `pf-dado` registrava i soli DV
+#: razziali (`4d8` per un ogre con sei livelli da barbaro).
+FORMULA_DV = re.compile(
+    r"\b(?:DV|HD)\**:?\**\s*(\d+d\d+(?:\s*\+\s*\d+d\d+)*)(\s*[+-]\s*\d+(?!\s*d))?")
+
+
+def dadi_vita(testo: str) -> "tuple[list, int | None, str] | None":
+    """([(n, faccia)], bonus o None, da dove) — i dadi vita della creatura.
+
+    In quest'ordine: la formula scritta, poi `pf-dado` se non e' sospetto.
+    None se nessuno dei due c'e': ricostruirli dalle classi e' un altro
+    passo, e chi lo fa lo deve dichiarare.
+    """
+    m = FORMULA_DV.search(testo)
+    if m:
+        dadi = [(int(a), int(b)) for a, b in PEZZO_DADO.findall(m.group(1))]
+        bonus = int(m.group(2).replace(" ", "")) if m.group(2) else None
+        return dadi, bonus, "formula scritta"
+    md = PF_DADO.search(testo)
+    if md and not pf_dado_sospetto(testo):
+        dadi = [(int(a), int(b)) for a, b in PEZZO_DADO.findall(md.group(1))]
+        resto = BONUS_DADO.findall(PEZZO_DADO.sub("", md.group(1)))
+        return dadi, (sum(int(x.replace(" ", "")) for x in resto) if resto else None), "pf-dado"
+    return None
+
+
+ROBUSTEZZA = re.compile(r"\b(?:Toughness|Robustezza)\b(?!\s+Migliorata)", re.I)
+ROBUSTEZZA_MIGLIORATA = re.compile(r"\b(?:Improved Toughness|Robustezza Migliorata)\b", re.I)
+
+
+def robustezza(testo: str, dv: int) -> int:
+    """I pf fissi dei talenti: Robustezza +3, Robustezza Migliorata +1 per DV.
+
+    🐛 Contarle come lo stesso talento dava al duergar guerriero un bonus di 9
+    invece di 8, e da quel 9 diviso per 2 DV usciva Cos 18 dove la fonte dice 16.
+    """
+    migliorata = ROBUSTEZZA_MIGLIORATA.search(testo)
+    semplice = ROBUSTEZZA.search(ROBUSTEZZA_MIGLIORATA.sub("", testo))
+    return (3 if semplice else 0) + (dv if migliorata else 0)
+
+
 def pf_dado_sospetto(testo: str, gs: "float | None" = None) -> "str | None":
     """Perche' `pf-dado` **non** registra i dadi vita, o None se sembra farlo.
 
@@ -266,6 +314,18 @@ def pf_dado_sospetto(testo: str, gs: "float | None" = None) -> "str | None":
     dv = sum(int(a) for a, _ in pezzi)
     if not dv:
         return None
+    if gs is None:
+        # 🐛 chi chiamava senza GS saltava il terzo controllo, e `1d8+2` di un
+        # chierico di 3° passava per dadi vita. Il GS sta nel blocco: si legge.
+        mg = re.search(r"^gs:\s*([\d.,]+)", testo, re.M)
+        gs = float(mg.group(1).replace(",", ".")) if mg else None
+    # 0 · la formula scritta nomina altri dadi: il campo e' parziale o e' un'arma
+    f = FORMULA_DV.search(testo)
+    if f:
+        scritti = sorted((int(a), int(b)) for a, b in PEZZO_DADO.findall(f.group(1)))
+        if sorted((int(a), int(b)) for a, b in pezzi) != scritti:
+            return (f"pf-dado «{md.group(1).strip()}» non ha i dadi della formula scritta "
+                    f"«{f.group(1).strip()}»")
     # 1 · il testo dichiara i DV, e non tornano coi dadi
     dichiarati = DV_DICHIARATI.search(testo)
     if dichiarati:
@@ -317,10 +377,15 @@ def cos_da_pf(testo: str, gs: float = 30.0) -> "tuple[int, str] | None":
         return None
     media = sum(int(a) * (int(b) + 1) / 2 for a, b in pezzi)
     bonus = sum(int(x.replace(" ", "")) for x in BONUS_DADO.findall(PEZZO_DADO.sub("", md.group(1))))
-    m_cos = round((int(mp.group(1)) - media - bonus) / dv)
-    # il bonus scritto (`7d4+7`) E' gia' il Cos × DV: se c'e', si usa quello
+    talenti = robustezza(testo, dv)
+    m_cos = round((int(mp.group(1)) - media - talenti) / dv)
+    # il bonus scritto (`7d4+7`) e' Cos × DV **piu' i talenti**: tolti quelli,
+    # deve dividersi esatto per i DV, o non e' una Costituzione
     if bonus and dv:
-        m_cos = round(bonus / dv)
+        netto = bonus - talenti
+        if netto % dv:
+            return None
+        m_cos = netto // dv
     if not plausibile(m_cos, gs):
         return None
     return da_modificatore(m_cos), f"ricavata da pf {mp.group(1)} su {dv} DV"
@@ -335,10 +400,15 @@ def cos_da_pf(testo: str, gs: float = 30.0) -> "tuple[int, str] | None":
 #: numeri **esistono**: generarli era inventare quello che bastava copiare.
 CITAZIONE = re.compile(r"pregen-pcgen/[^)`|\]\n]*?\.(?:html?|pcg|txt)")
 _V = r"(\d+|—|-(?!\s*\d))"     # un punteggio, o «—»; «-4» e' un modificatore, e si scarta
+#: La sestina, in inglese (SRD, PCGen) **e in italiano** (le schede del DM:
+#: «For 31, Des 13, Cos 23, Int 10, Sag 12, Car 11»). 🐛 La prima stesura
+#: capiva solo l'inglese, e il bruto deforme, che scrive in italiano, finiva
+#: all'array con la Forza ricavata da una lotta che dimentica un talento.
+_SEP = r"\s*[,;]?\s*"
 SESTINA = re.compile(
-    r"\bStr\w*\s*:?\s*" + _V + r"\s*[,;]?\s*Dex\w*\s*:?\s*" + _V +
-    r"\s*[,;]?\s*Con\w*\s*:?\s*" + _V + r"\s*[,;]?\s*Int\w*\s*:?\s*" + _V +
-    r"\s*[,;]?\s*Wis\w*\s*:?\s*" + _V + r"\s*[,;]?\s*Cha\w*\s*:?\s*" + _V, re.I)
+    r"\b(?:Str|For)\w*\s*:?\s*" + _V + _SEP + r"(?:Dex|Des)\w*\s*:?\s*" + _V +
+    _SEP + r"(?:Con|Cos)\w*\s*:?\s*" + _V + _SEP + r"Int\w*\s*:?\s*" + _V +
+    _SEP + r"(?:Wis|Sag)\w*\s*:?\s*" + _V + _SEP + r"(?:Cha|Car)\w*\s*:?\s*" + _V, re.I)
 PCG_STAT = re.compile(r"^STAT:(STR|DEX|CON|INT|WIS|CHA)\|SCORE:(\d+)", re.M)
 _PCG = ("STR", "DEX", "CON", "INT", "WIS", "CHA")
 
@@ -433,6 +503,95 @@ def dalla_fonte(nome_file: str, testo: str) -> "tuple[dict, str] | None":
         return (dict(zip(ORDINE, t)),
                 f"trascritta da `{Path(fonte).name}`, sotto l'intestazione che porta il suo nome")
     return None
+
+
+def dalla_scheda(testo: str) -> "tuple[dict, str] | None":
+    """Strato 0a: le caratteristiche **scritte nella scheda stessa**.
+
+    🔴 **Lo strato che mancava anche alla seconda stesura**, trovato il
+    2026-09-23 correggendo `pf-dado`: il sergente hobgoblin scrive
+    «**Abilities**: Str 14, Dex 12, Con 14, Int 10, Wis 10, Cha 8» nella sua
+    prosa, e il generatore gli aveva dato Car 17. **27 dei 55** file che ADR-0064
+    contava come «scelti» avevano i numeri del DM scritti due righe sotto il
+    blocco. Sono i numeri che si giocano: battono la fonte e battono i vincoli.
+
+    Si legge fuori dal blocco e fuori dalle righe di marca, e solo se la
+    scheda porta **una** sestina: due (una variante, un'ira) sono una scelta.
+    """
+    fuori = BLOCCO.sub("", testo)
+    fuori = "\n".join(r for r in fuori.splitlines() if not r.startswith("> [INFERRED"))
+    trovate = {tuple(_punteggio(v) for v in m) for m in SESTINA.findall(fuori)}
+    if len(trovate) != 1:
+        return None
+    return dict(zip(ORDINE, trovate.pop())), "letta dalla riga delle caratteristiche della scheda stessa"
+
+
+BAB_SCRITTO = re.compile(r"(?:\bBAB|Attacco base)(?:/(?:Grapple|Lotta))?\**:?\**\s*([+-]\d+)")
+LOTTA_SCRITTA = re.compile(r"(?:\b(?:Lotta|Grapple)\**:?\**\s*([+-]\d+))|"
+                           r"(?:BAB/(?:Grapple|Lotta)\**:?\**\s*[+-]\d+/\**([+-]\d+))")
+#: SRD 3.5, modificatore speciale di taglia alla lotta.
+LOTTA_TAGLIA = {8: -16, 4: -12, 2: -8, 1: -4, 0: 0, -1: 4, -2: 8, -4: 12, -8: 16}
+LOTTA_MIGLIORATA = re.compile(r"\b(?:Improved Grapple|Lotta Migliorata|Lottare Migliorato)\b", re.I)
+
+
+def numeri_della_fonte(testo: str) -> dict:
+    """pf, TS, BAB e lotta come li scrive la prima fonte citata che li porta."""
+    out = {}
+    for rel in sorted(set(CITAZIONE.findall(testo))):
+        p = ROOT / "Bestiario" / rel
+        if not p.is_file():
+            continue
+        f = re.sub(r"\s+", " ", _testo_fonte(p))
+        m = re.search(r"Fort\w*\s*:?\s*([+-]\d+),?\s*Ref\w*\s*:?\s*([+-]\d+),?\s*Will\s*:?\s*([+-]\d+)", f)
+        if m:
+            out.update(zip(("Temp", "Rifl", "Vol"), (int(x) for x in m.groups())))
+        m = re.search(r"(?:Base Atk|Base Attack(?:/Grapple)?)\s*:?\s*([+-]\d+)(?:\s*/\s*([+-]\d+))?", f)
+        if m:
+            out["BAB"] = int(m.group(1))
+            if m.group(2):
+                out["lotta"] = int(m.group(2))
+        m = re.search(r"\bGrp\s*([+-]\d+)", f)
+        if m:
+            out["lotta"] = int(m.group(1))
+        m = re.search(r"\bhp\s*(\d+)", f)
+        if m:
+            out["pf"] = int(m.group(1))
+        # PCGen: «+3 (1d10+3, Sword, bastard, Masterwork)» e' il primo attacco
+        m = re.search(r"([+-]\d+)\s*\(\d+d\d+(?:[+-]\d+)?,\s*[A-Z]", f)
+        if m:
+            out["attacco"] = int(m.group(1))
+    return out
+
+
+def senza_note(testo: str) -> str:
+    """Il testo senza le righe di marca, le errata e le note di fonte.
+
+    🐛 Una marca che scrive «BAB +1 → **+0**» veniva letta come il BAB, e le
+    errata del retriever («la prosa diceva BAB +10») pure. I numeri di una
+    scheda si leggono solo dove la scheda li dichiara.
+    """
+    return "\n".join(r for r in testo.splitlines()
+                     if not r.lstrip().startswith(("- ⚠", "fonte:", ">")))
+
+
+def for_da_lotta(testo: str, gs: float = 30.0) -> "tuple[int, str] | None":
+    """Strato 2-ter: la Forza **si ricava** da BAB e lotta dichiarati.
+
+    lotta = BAB + mod For + taglia (SRD), quindi mod For = lotta − BAB − taglia,
+    togliendo 4 se c'e' Lotta Migliorata. Non dipende dai DV, ne' dalla classe:
+    solo da due numeri che il DM ha scritto.
+    """
+    pulito = senza_note(testo)
+    b, l = BAB_SCRITTO.search(pulito), LOTTA_SCRITTA.search(pulito)
+    if not (b and l):
+        return None
+    m = (int(next(g for g in l.groups() if g)) - int(b.group(1))
+         - LOTTA_TAGLIA.get(taglia_di(testo), 0) - (4 if LOTTA_MIGLIORATA.search(testo) else 0))
+    # la guardia di `plausibile` e' tarata sulla Cos ricavata da un `pf-dado`
+    # parziale; qui i numeri sono due, scritti dal DM, e la fascia e' piu' larga
+    if not (-5 <= m <= 3 + gs):
+        return None
+    return da_modificatore(m), "ricavata da BAB e lotta"
 
 
 def profilo_di(ruolo: str) -> "tuple[str, ...]":
@@ -576,7 +735,8 @@ def genera(nome_file: str, ruolo: str, gs: float, testo: str,
     m_tipo = re.search(r"^tipo:\s*(.+)$", testo, re.M)
     tipo = m_tipo.group(1) if m_tipo else ""
     png = bool(CLASSE_NEL_TIPO.search(tipo))
-    fonte = dalla_fonte(nome_file, testo) if usa_fonte else None
+    scheda = dalla_scheda(testo) if usa_fonte else None
+    fonte = scheda or (dalla_fonte(nome_file, testo) if usa_fonte else None)
     if fonte:
         valori, come = fonte
         note = [come]
@@ -587,7 +747,9 @@ def genera(nome_file: str, ruolo: str, gs: float, testo: str,
     # statblocco e' quello che si gioca, e dove divergono la scheda e' stata
     # adattata. La divergenza si scrive, perche' e' un'informazione per il DM.
     nonmorto = bool(NON_MORTO.search(tipo))
-    for campo, trova in (("Des", des_vincolata), ("Cos", cos_da_pf)):
+    fonte_numeri = numeri_della_fonte(testo) if fonte and not scheda else {}
+    lotta_scritta = LOTTA_SCRITTA.search(senza_note(testo))
+    for campo, trova in (("Des", des_vincolata), ("Cos", cos_da_pf), ("For", for_da_lotta)):
         if campo == "Cos" and nonmorto:
             continue
         vincolo = trova(testo, gs)
@@ -595,8 +757,19 @@ def genera(nome_file: str, ruolo: str, gs: float, testo: str,
             continue
         valore, come = vincolo
         prima = valori[campo]
+        if (campo == "For" and fonte and not scheda and lotta_scritta
+                and fonte_numeri.get("lotta") == int(next(g for g in lotta_scritta.groups() if g))):
+            # lo statblocco ha la stessa lotta della fonte: non e' stato
+            # adattato, e uno scarto di 1 e' della fonte (un oggetto, un
+            # talento che PCGen conta). Si tiene la Forza della fonte.
+            continue
         if fonte and isinstance(prima, int) and mod(prima) == mod(valore):
             continue                              # la fonte torna: si tiene la fonte
+        if scheda:
+            # i numeri scritti dal DM non si toccano: la divergenza si annota
+            note.append(f"⚠ {campo} {valore} {come}, ma la scheda scrive {prima}: "
+                        "si tiene la scheda, da verificare.")
+            continue
         if fonte and campo == "Cos" and " su 1 DV" in come:
             # con un DV solo non si sa se il pf e' la media o il massimo del
             # dado (PCGen da' il massimo al 1° livello): il conto e' ambiguo
@@ -620,7 +793,7 @@ def genera(nome_file: str, ruolo: str, gs: float, testo: str,
     # SRD 3.5, tipo non morto: **nessun punteggio di Costituzione**. I suoi pf
     # vengono da d12 senza modificatore, e un Cos 10 scritto accanto sarebbe
     # un errore di regole, non una scelta.
-    if nonmorto and valori["Cos"] != "—":
+    if nonmorto and valori["Cos"] != "—" and not scheda:
         valori["Cos"] = "—"
         note.append("Cos — : non morto, nessun punteggio di Costituzione (SRD, tipo Undead)")
     # SRD 3.5, modelli scheletro e zombi: Int —, Sag 10, Car 1. Sono i soli due
@@ -642,6 +815,8 @@ def riga_attributi(v: dict) -> str:
 MARCA = "> [INFERRED — needs DM confirmation] `attributi` "
 CODA_FONTE = ("trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da "
               "`scripts/genera_attributi.py`. Confermali o correggili.")
+CODA_SCHEDA = ("copiati dalla riga delle caratteristiche di questa stessa scheda "
+               "da `scripts/genera_attributi.py`.")
 CODA_ARRAY = ("generati da `scripts/genera_attributi.py`: array del Manuale del DM "
               "con taglia e razza SRD, vincolati da CA e pf dove il file li "
               "dichiara. Confermali o correggili.")
@@ -676,7 +851,9 @@ def proponi(rigenera: bool = False) -> "list[dict]":
         scritta = re.search(r"^attributi:.*$", t, re.M)
         fuori.append({"file": p, "ruolo": ruolo.group(1).strip(),
                       "attributi": v, "riga": riga_attributi(v), "note": note,
-                      "marca": MARCA + (CODA_FONTE if note[0].startswith("trascritt") else CODA_ARRAY)
+                      "marca": MARCA + (CODA_SCHEDA if note[0].startswith("letta dalla riga")
+                                        else CODA_FONTE if note[0].startswith("trascritt")
+                                        else CODA_ARRAY)
                                + "".join(" " + n for n in note if n.startswith("⚠")),
                       "scritta": scritta.group(0) if scritta else None})
     return fuori
@@ -742,20 +919,22 @@ def controlla() -> "list[str]":
     return problemi
 
 
-def taratura() -> dict:
+def taratura(insieme: str = "fonti") -> dict:
     """Quanto sbaglia lo strato 3 dove la risposta vera c'e'.
 
-    Sui file che hanno una fonte trascrivibile si genera **come se la fonte
-    non ci fosse** e si confronta con la fonte. E' l'unico banco di prova che
-    il repo offre gratis, e ha un limite da dire: le fonti sono **le stesse**
-    su cui le regole di taglia e razza sono state scelte, quindi il numero e'
-    in-campione. Le regole vengono dall'SRD, non dal dato; il dato dice solo
-    se aiutano.
+    Si genera **come se la risposta non ci fosse** e si confronta. Due banchi:
+
+    * ``fonti`` — le 39 sestine trascritte da `pregen-pcgen/`. **In-campione**:
+      e' su questi file che si e' visto che taglia e razza servivano;
+    * ``schede`` — le 27 sestine che le schede scrivono nella loro prosa,
+      trovate **dopo** aver fissato le regole. **Fuori campione**: e' il
+      numero che dice quanto il generatore vale su un file che non ha visto.
     """
     coppie = []
     for r in proponi(rigenera=True):
         t = r["file"].read_text(encoding="utf-8", errors="replace")
-        vera = dalla_fonte(r["file"].name, t)
+        vera = dalla_scheda(t) if insieme == "schede" else (
+            None if dalla_scheda(t) else dalla_fonte(r["file"].name, t))
         if not vera:
             continue
         gs = float(re.search(r"^gs:\s*([\d.,]+)", t, re.M).group(1).replace(",", "."))
@@ -770,7 +949,7 @@ def taratura() -> dict:
                 tutti.append(e)
                 mods.append(abs(mod(v[c]) - mod(g[c])))
     media = lambda xs: round(sum(xs) / len(xs), 2) if xs else 0.0  # noqa: E731
-    return {"file": len(coppie), "mae": media(tutti), "mae_mod": media(mods),
+    return {"insieme": insieme, "file": len(coppie), "mae": media(tutti), "mae_mod": media(mods),
             "entro_1_mod": round(sum(e <= 1 for e in mods) / len(mods), 2) if mods else 0.0,
             "per_caratteristica": {c: media(per_car.get(c, [])) for c in ORDINE},
             "coppie": coppie}
@@ -787,11 +966,14 @@ def main(argv=None) -> int:
                     help="errore dello strato 3 contro le fonti trascrivibili")
     args = ap.parse_args(argv)
     if args.taratura:
-        m = taratura()
-        print(f"TARATURA dello strato 3 su {m['file']} file con fonte (in-campione)")
-        print(f"  errore medio: {m['mae']} sul punteggio, {m['mae_mod']} sul modificatore; "
-              f"entro ±1 di modificatore: {m['entro_1_mod']:.0%}")
-        print("  per caratteristica: " + "  ".join(f"{c} {e}" for c, e in m["per_caratteristica"].items()))
+        for insieme, etichetta in (("fonti", "fonti citate, IN-CAMPIONE"),
+                                   ("schede", "sestine scritte nelle schede, FUORI CAMPIONE")):
+            m = taratura(insieme)
+            print(f"TARATURA dello strato 3 su {m['file']} file — {etichetta}")
+            print(f"  errore medio: {m['mae']} sul punteggio, {m['mae_mod']} sul modificatore; "
+                  f"entro ±1 di modificatore: {m['entro_1_mod']:.0%}")
+            print("  per caratteristica: " + "  ".join(
+                f"{c} {e}" for c, e in m["per_caratteristica"].items()))
         return 0
     if args.check:
         problemi = controlla()

@@ -6,14 +6,16 @@ gs: 10
 ca: 23
 ca-dettaglio: (-1 size, +8 natural, +6 +1 breastplate)
 pf: 168
-pf-dado: 12d8
+pf-dado: 12d8+5d12+85
 ts: Temp +18, Rifl +5, Vol +8
-attributi: For 16 Des 11 Cos 14 Int 8 Sag 12 Car 20
+attributi: For 28 Des 10 Cos 24 Int 10 Sag 12 Car 10
 velocita: 40 ft (raging)
 iniziativa: +0
 ```
 
-> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «12d8», una parte sola dei dadi vita. I dadi vengono dalla formula che la scheda scrive, il bonus è quello scritto nella formula.
+
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ Cos 20 ricavata da pf 168 su 17 DV, ma la scheda scrive 24: si tiene la scheda, da verificare. ⚠ For 34 ricavata da BAB e lotta, ma la scheda scrive 28: si tiene la scheda, da verificare.
 
 **Size/Type**: Large giant | **HD**: 12d8+5d12+85 (168 HP)
 **AC**: 23 (-1 size, +8 natural, +6 +1 breastplate) | **Init**: +0 | **Speed**: 40 ft (raging)

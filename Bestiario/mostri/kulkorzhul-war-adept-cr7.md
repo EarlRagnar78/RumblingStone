@@ -8,7 +8,7 @@ tipo: Medium humanoid (goblinoid, dragonblood), Sorcerer 7, LE
 ca: 16
 ca-dettaglio: touch 14, flat-footed 13
 pf: 33
-pf-dado: 1d8
+pf-dado: 7d4+14
 ts: Temp +5, Rifl +6, Vol +5
 attributi: For 10 Des 16 Cos 15 Int 12 Sag 8 Car 16
 velocita: 9 m
@@ -18,6 +18,8 @@ attacchi:
 voci:
   - Talenti: Draconic Heritage, Draconic Power, Draconic Vigor
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d8», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD, il bonus da Cos 15.
 
 > [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili. ⚠ la CA di contatto suggerisce Des 18, la fonte dice 16: si tiene la fonte, la differenza può essere deviazione o schivata, da verificare.
 

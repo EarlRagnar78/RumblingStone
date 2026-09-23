@@ -161,3 +161,35 @@ animale), la variante letta dentro la marca che la correggeva.
 decisioni aperte**, **0 da correggere**, 9 scarti di un punto su caratteristiche
 scelte.
 
+
+## Emendamento — 2026-09-23, terzo giro: i nove scarti del generatore
+
+Il giro precedente chiudeva con **9 scarti di un punto su caratteristiche
+scelte**, e la ricerca proponeva di chiuderli insegnando al generatore a leggere
+i TS. Guardati uno per uno, **nessuno era del generatore soltanto**.
+
+**Cosa cambia nella regola del §5.** Dove la Cos di una scheda è generata, il
+bonus di `pf-dado` non si ricava più dai pf supponendo la media: si ricava
+**dalla Tempra**, e dai pf solo se la Tempra li mettesse fuori dalla fascia che i
+dadi possono dare. La ragione è un giro circolare: il bonus veniva dai pf, la
+Cos del generatore veniva da quel bonus, e il generatore confermava se stesso.
+In 3.5 i pf si tirano e la media è una convenzione del Manuale dei Mostri; la
+Tempra è un'identità esatta. Khorn, che scrive «8d10+24, Cos 16» e Tempra +9, è
+tornato da `8d10+32` e Cos 18 alla sua formula.
+
+**Il §2 applicato quattro volte**, con marca e conto:
+
+| Statblocco | Era | È | Cosa lo conferma |
+|---|---|---|---|
+| ogre micelio | lotta +18 | **+22** | Lottare Migliorato elencato; For 25 confermata da attacco e danno |
+| ogre micelio | Tempra +10 | **+11** | il +10 era la Cos 15 prima dell'innesto; pf, `pf-dado` e la CD dello Sbuffo contano la 17 |
+| ogre frantumapietra | Riflessi +1 | **+2** | Des 8 scritta tre volte: «−1 Des» in CA, contatto 8, iniziativa −1 |
+| Teschio Nero | Tempra +12 | **+13** | Cos 18 scritta due volte: «Con 18» e `+40` su 10 DV |
+
+Le due schede di ogre avevano le caratteristiche nella prosa, e il lettore non
+le vedeva per una parentesi dopo il numero: è l'errore che ha reso visibili le
+prime due righe.
+
+**I conti di oggi**: 107 verificabili, **95 tornano**, 5 uguali alla fonte,
+**7 decisioni aperte**, **0 da correggere**, **0 scarti su caratteristiche
+scelte**.

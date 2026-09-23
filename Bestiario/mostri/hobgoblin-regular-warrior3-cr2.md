@@ -21,7 +21,7 @@ voci:
 
 > [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d8+1», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD, il bonus da Cos 14.
 
-> [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
+> [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili. ⚠ Sag al più 7 ricavata da Vol +1 (base +3), ma 9 viene da un dato più forte: si tiene, da verificare.
 
 Medium humanoid (goblinoid), Warrior 3, LE. **hp 23** (3 HD); **AC 19**, touch 11, flat-footed 18. Init +1; Vel 6 m. TS Temp +6, Rifl +3, Vol +1. BAB +3; Lotta +4.
 **Mischia** spada lunga perfetta +6 (1d8+1/19-20); scudo pesante +0 (1d4+1). **Distanza** arco lungo composito (+1) +4 (1d8+1/x3). Scurovisione 18 m. Talenti: Allerta, Arma Focalizzata (spada lunga). Linguaggi: Comune, Goblin.

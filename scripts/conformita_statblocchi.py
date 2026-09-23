@@ -645,11 +645,25 @@ def pf_dado_corretto(s: Scheda, forza: bool = False) -> "dict | None":
             " e Robustezza Migliorata" if GA.ROBUSTEZZA_MIGLIORATA.search(s.testo)
             else " e Robustezza" if robusto else "")
     else:
-        m = round((s.pf - media - robusto) / hd)
-        if not GA.plausibile(m, s.gs):
-            return None
-        bonus = hd * m + robusto
-        da_bonus = f"ricavato dai pf {s.pf} (la Cos di questa scheda è generata)"
+        # 🐛 **Il giro circolare** (2026-09-23): il bonus si ricavava dai pf
+        # **supponendo la media**, e poi `genera_attributi.cos_da_pf` ricavava
+        # la Cos da questo bonus. Il generatore confermava se stesso, e Khorn,
+        # che scrive «8d10+24, Cos 16» e Tempra +9, finiva con Cos 18. In 3.5
+        # i pf **si tirano**, e la media e' una convenzione; la Tempra e'
+        # un'identita' esatta. Viene prima lei, se i pf stanno nella fascia.
+        tetto = GA.tetti_dai_ts(str(s.file), s.testo).get("Cos")
+        m = tetto[0] if tetto else None
+        if m is not None and GA.plausibile(m, s.gs) and \
+                hd + hd * m + robusto <= s.pf <= sum(n * f for n, f in dadi) + hd * m + robusto:
+            bonus = hd * m + robusto
+            temp = TS_CAMPO.search(s.testo).group(1)
+            da_bonus = f"ricavato dalla Tempra {temp} (la Cos di questa scheda è generata)"
+        else:
+            m = round((s.pf - media - robusto) / hd)
+            if not GA.plausibile(m, s.gs):
+                return None
+            bonus = hd * m + robusto
+            da_bonus = f"ricavato dai pf {s.pf} (la Cos di questa scheda è generata)"
     nuovo = _formula(dadi, bonus)
     vecchio = GA.PF_DADO.search(s.testo).group(1).strip()
     lo, hi = hd + bonus, sum(n * f for n, f in dadi) + bonus

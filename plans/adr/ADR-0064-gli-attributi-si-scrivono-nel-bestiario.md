@@ -143,3 +143,21 @@ di modificatore), contro 1,63 sul banco in campione. Il generatore regge su file
 che non ha visto; l'obiezione «in-campione» del §*Prezzo* ha adesso una risposta
 misurata.
 
+
+## Emendamento — 2026-09-23, sera
+
+Due strati nuovi, entrambi **vincoli** e non scelte: un TS scritto sotto
+l'atteso fa da **tetto** a Cos, Des o Sag, e l'iniziativa di una scheda che non
+elenca i talenti ammette **due** Destrezze. Toccano solo un valore dell'array e,
+davanti a un numero del DM, si annotano. Il lettore della sestina ora salta la
+parentesi dopo il punteggio, e tre schede passano dall'array alla loro prosa.
+
+| | dopo il primo emendamento | adesso |
+|---|---:|---:|
+| copiati dalla scheda stessa | 39 | **41** (tre nuovi, Karruk uscito dalla marca) |
+| trascritti dalla fonte | 37 | 37 |
+| scelti dall'array | 18 | **15** |
+
+📏 La taratura scende a **1,50** in campione e **1,54** fuori (erano 1,63 e
+1,84). Il banco fuori campione ha però un file in comune con quelli da cui il
+tetto è nato, l'ogre frantumapietra: vedi ADR-0065, terzo emendamento.

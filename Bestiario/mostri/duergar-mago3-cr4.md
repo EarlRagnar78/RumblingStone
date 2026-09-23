@@ -8,9 +8,9 @@ tipo: Medium humanoid (dwarf, duergar), Wizard 3 (necromanzia; abiurazione proib
 ca: 13
 ca-dettaglio: touch 12, flat-footed 11
 pf: 16
-pf-dado: 3d4+9
+pf-dado: 3d4+6
 ts: Temp +3, Rifl +3, Vol +4
-attributi: For 8 Des 14 Cos 16 Int 16 Sag 10 Car 8
+attributi: For 8 Des 14 Cos 14 Int 16 Sag 10 Car 8
 velocita: 6 m
 iniziativa: +2
 attacchi:
@@ -19,7 +19,7 @@ voci:
   - Talenti: Incantare in Combattimento, Ingrandire Incantesimo, Focalizzazione (necromanzia)
 ```
 
-> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d8», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD, il bonus ricavato dai pf 16 (la Cos di questa scheda è generata).
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d8», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD, il bonus ricavato dalla Tempra +3 (la Cos di questa scheda è generata).
 
 > [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 

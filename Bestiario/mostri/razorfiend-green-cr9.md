@@ -5,12 +5,14 @@
 gs: 9
 ca: 24
 pf: 115
-ts: Temp +8, Rifl +7, Vol +7
-attributi: For 21 Des 13 Cos 18 Int 10 Sag 16 Car 8
+pf-dado: 10d12+50
+ts: Temp +12, Rifl +8, Vol +10
+attributi: For 21 Des 13 Cos 20 Int 10 Sag 16 Car 8
 velocita: 40 ft, fly 60 ft, swim 40 ft
 iniziativa: +5
-fonte: derivati dalle tabelle: ts (il resto è letto dalla prosa) — caratteristiche: matrice standard (13, 12, 11, 10, 9, 8) + 2 da DV/4 → For 14, Cos 13, Des 11 · TS: tipo «dragon», TS buoni ('temp', 'rifl', 'vol') → Temp +8, Rifl +7, Vol +7
 ```
+
+> [INFERRED — needs DM confirmation] `ts` ricalcolati dal SRD il 2026-09-23: drago 10 DV (TS tutti buoni, +7) + Cos 20 (+5) / Des 13 (+1) / Sag 16 (+3). Il blocco portava «Temp +8, Rifl +7, Vol +7», derivati da `derive_statblocks --apply-ts` con Cos 13, che la formula del DM smentisce. `pf-dado` trascritto dalla prosa («**HD**»). ⚠ La Volontà dipende da una Sag generata.
 
 > [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 

@@ -6,10 +6,11 @@
 gs: 14
 ca: 20
 pf: 79
-ts: Temp +4, Rifl +6, Vol +6
+ts: Temp +8, Rifl +13, Vol +11
 velocita: 9 m
-fonte: derivati dalle tabelle: ts (il resto è letto dalla prosa) — caratteristiche: matrice standard (13, 12, 11, 10, 9, 8) + 5 da DV/4 → For 16, Cos 14, Des 11 · TS: somma dei TS base di ogni classe (SRD: multiclasse si sommano) → Temp +4, Rifl +6, Vol +6
 ```
+
+> ⚠ `ts` ritrascritto dalla prosa di questa scheda (sezione dei tiri salvezza) il 2026-09-23. Il blocco portava «Temp +4, Rifl +6, Vol +6», derivati da `derive_statblocks --apply-ts` il 2 settembre con una matrice di caratteristiche sua, un giorno prima che il lettore imparasse questo formato (`d859a31`).
 
 **Nome nel Passato:** Vatore (il "Ladro d'Ombra" di Hammerfist, -1000 DR)
 **Nome nel Presente:** Salvatore "Sal" della Luna d'Argento

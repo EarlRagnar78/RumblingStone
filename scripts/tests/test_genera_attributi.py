@@ -283,6 +283,13 @@ class TestIlTettoDeiTS(unittest.TestCase):
         self.assertEqual(v["Des"], 17)
         self.assertTrue(any(n.startswith("⚠ Des al più") for n in note))
 
+    def test_un_ts_derivato_non_fa_da_tetto(self):
+        # la prova che morde: i `ts` scritti da derive_statblocks non sono del DM
+        testo = DRAGO.replace("```\n", "fonte: derivati dalle tabelle: ts (il resto è letto "
+                              "dalla prosa) — caratteristiche: matrice standard\n```\n", 1)
+        self.assertNotEqual(G.tetti_dai_ts("prova-cr9.md", DRAGO), {})
+        self.assertEqual(G.tetti_dai_ts("prova-cr9.md", testo), {})
+
     def test_senza_composizione_non_c_e_tetto(self):
         # un TS senza una base nota non limita niente: indovinarla e' inventare
         self.assertEqual(G.tetti_dai_ts("x-cr3.md", "ts: Temp +2, Rifl +2, Vol +2\n"), {})

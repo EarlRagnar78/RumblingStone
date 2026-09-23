@@ -1,13 +1,7 @@
-# Ushgar «Occhio Reso» — il capo-guerra che vuole un pezzo di carta
+# Ushgar «Occhio Reso» — il capo-guerra che vuole un pezzo di carta [RIMANDO]
 
 
-```statblocco
-gs: 13
-ca: 21
-pf: 140
-ts: Temp +10, Rifl +5, Vol +5
-fonte: derivati dalle tabelle: ts (il resto è letto dalla prosa) — caratteristiche: matrice elite (15, 14, 13, 12, 10, 8) + 3 da DV/4 → For 17, Cos 15, Des 13 · TS: somma dei TS base di ogni classe (SRD: multiclasse si sommano) → Temp +10, Rifl +5, Vol +5
-```
+> ⚠ **[RIMANDO]** i numeri stanno in `ushgar-occhio-reso-cr13.md`, in questa cartella. Fino al 2026-09-23 qui c'era un secondo blocco, con TS «Temp +10, Rifl +5, Vol +5» derivati da `derive_statblocks --apply-ts` il 2 settembre, contro i +14/+8/+8 dello statblocco: due copie divergenti (ADR-0021). Tolto; il dossier resta la scheda del PNG.
 
 > **[ACCEPTED — DM-canon]** Approvato dal DM il **2026-08-05**.
 > Statblock: `ushgar-occhio-reso-cr13.md` (questa cartella).

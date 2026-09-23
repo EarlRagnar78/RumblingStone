@@ -187,7 +187,26 @@ def guess_role(text):
                 return role
     return "generalist"
 
+#: Il `gs` del blocco statistiche (ADR-0021): e' il valore DICHIARATO.
+GS_DEL_BLOCCO = re.compile(r"^```statblocco\s*\n(?:(?!^```).*\n)*?gs:\s*([\d./]+)", re.M)
+
+
 def extract_cr(text, fname=""):
+    # 🐛 **Prima il blocco** (2026-09-23). I modelli si provano in un ordine
+    # fisso su tutto il testo, «CR» prima di «GS», quindi una scheda che scrive
+    # il suo livello come «GS 15» e nomina un'altra creatura («Tyrgarun, CR 18»)
+    # prendeva il CR dell'altra: Azarr Kul 18 invece di 15, Sonjak 14 (Urialle)
+    # invece di 13, Lythiel 5 (il suo gufo) invece di 8. Il blocco dichiara.
+    m = GS_DEL_BLOCCO.search(text)
+    if m:
+        val = m.group(1)
+        try:
+            if '/' in val:
+                num, den = val.split('/')
+                return float(num) / float(den)
+            return float(val)
+        except ValueError:
+            pass
     for pat in CR_PATTERNS:
         m = pat.search(text)
         if m:

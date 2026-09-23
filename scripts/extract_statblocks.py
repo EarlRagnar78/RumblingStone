@@ -168,6 +168,54 @@ def inserisci(testo: str, sb: Statblocco) -> str:
     return "\n".join(righe[:taglio] + ["", rendi(sb), ""] + righe[taglio:])
 
 
+#: Le righe che non sono prosa della scheda ma note su di lei: le marche
+#: `[INFERRED]` e le errata. 🐛 Ghaurush porta «CA 23 → **25**» in una marca, e
+#: il lettore la prendeva per la CA della prosa.
+NOTA = re.compile(r"^\s*(?:>|- ⚠|fonte:)")
+#: «GS 17-19»: una forbice non e' un valore da confrontare (Il Collezionista ha
+#: 18 nel blocco, ed e' scelto apposta, ADR-0034).
+FORBICE_GS = re.compile(r"(?:\bGS\b|\bCR\b|Grado di Sfida)[^\n\d]{0,24}\d{1,2}\s*[-–—]\s*\d{1,2}\b")
+NUMERI = re.compile(r"[+-]?\d+")
+
+
+def diverge_dalla_prosa(testo: str, sb: Statblocco) -> list[str]:
+    """I campi del blocco che la prosa della STESSA scheda scrive diversi.
+
+    🐛 **Perche' esiste** (2026-09-23): il 2 settembre `derive_statblocks
+    --apply-ts` ha scritto i TS di sei dossier con una matrice sua, perche' il
+    lettore non vedeva ancora la forma «- **Tempra:** +7». Il giorno dopo il
+    lettore l'ha imparata, e nessuno ha riletto i sei blocchi: Salvatore e'
+    rimasto tre settimane con Riflessi +6 dove il DM aveva scritto +13. Nessun
+    cancello confrontava il blocco con la prosa accanto.
+
+    Si confrontano solo i numeri: pf, CA e GS per il primo, i TS tutti e tre.
+    Dove la prosa scrive una forbice il campo si salta. Il verso della
+    correzione non lo decide questo controllo: dice solo che uno dei due e'
+    rimasto indietro.
+    """
+    from dmcore.statblock import togli_blocco
+    prosa = "\n".join(r for r in togli_blocco(testo).splitlines() if not NOTA.match(r))
+    try:
+        letto, _ = estrai(prosa)
+    except Exception:          # un lettore che crolla non e' una divergenza
+        return []
+    fuori = []
+    for campo in ("pf", "ca", "gs", "ts"):
+        b, p = getattr(sb, campo, ""), getattr(letto, campo, "")
+        if not (b and p):
+            continue
+        if campo == "gs":
+            if FORBICE_GS.search(prosa) or gs_numerico(b) == gs_numerico(p):
+                continue
+        elif campo == "ts":
+            if NUMERI.findall(b)[:3] == NUMERI.findall(p)[:3]:
+                continue
+        elif NUMERI.findall(b)[:1] == NUMERI.findall(p)[:1]:
+            continue
+        fuori.append(f"`{campo}` del blocco «{b}», la prosa della scheda scrive «{p}»")
+    return fuori
+
+
 def controlla(f: Path) -> list[str]:
     """I problemi del blocco di UNA scheda (lista vuota = tutto bene)."""
     rel = f.relative_to(ROOT) if ROOT in f.parents else f
@@ -187,6 +235,8 @@ def controlla(f: Path) -> list[str]:
     if atteso and sb.gs and gs_numerico(sb.gs) != gs_numerico(atteso):
         problemi.append(f"{rel}: il blocco dice GS {sb.gs} e il nome del file dice "
                         f"GS {atteso} — uno dei due è rimasto indietro")
+    for d in diverge_dalla_prosa(testo, sb):
+        problemi.append(f"{rel}: {d} — uno dei due è rimasto indietro")
     return problemi
 
 

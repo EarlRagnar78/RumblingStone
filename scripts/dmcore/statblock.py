@@ -293,7 +293,10 @@ def estrai(testo: str) -> tuple[Statblocco, list[str]]:
         if not getattr(sb, chiave):
             m = _RE[chiave].search(intero)
             if m:
-                setattr(sb, chiave, m.group(1).strip())
+                # 🐛 come sopra: `gs` ha due rami, e `group(1)` e' None quando
+                # scatta il secondo («→ CR 12» di Sethrax). Il lettore crollava.
+                valore = next((g for g in m.groups() if g), "")
+                setattr(sb, chiave, valore.strip())
     m = _RE["ca_dettaglio"].search(testo)
     if m:
         # La barra verticale separa i CAMPI nelle schede a coppie chiave/valore:

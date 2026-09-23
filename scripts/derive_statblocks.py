@@ -15,6 +15,10 @@ non ha un equivalente.
     dal GS                          →  il COLLAUDO                       [PF1e T.1–1]
 
 ⚠️ **Non esiste un `--apply`, ed è il risultato del lotto H, non una mancanza.**
+Esiste `--apply-ts`, e dal 2026-09-23 (D11) scrive i TS **insieme alle
+caratteristiche da cui vengono**, prese da `genera_attributi`: la prima volta
+che ha scritto, il 2 settembre, i suoi TS venivano da una matrice che le
+caratteristiche scritte poi accanto contraddicevano.
 
 Provato: con quelle tabelle e quel collaudo, **nessuna** delle schede rimaste
 produce numeri che superino il proprio controllo di sanità. Le schede sono
@@ -100,6 +104,9 @@ class Lettura:
     scudo: int = 0
     elite: bool = False
     manca: list[str] = field(default_factory=list)
+    #: la base dei TS che `deriva` calcola, senza caratteristiche: serve a
+    #: `--apply-ts` per rifare il conto con gli `attributi` di genera_attributi
+    base_ts: dict = field(default_factory=dict)
 
 
 def leggi_scheda(f: Path) -> Lettura:
@@ -229,6 +236,7 @@ def deriva(L: Lettura) -> tuple[Statblocco | None, list[str], list[str]]:
         for k in base:
             base[k] = ts_buono(dv_tot) if k in buoni else ts_cattivo(dv_tot)
         det_ts = f"tipo «{L.tipo}», TS buoni {buoni or '—'}"
+    L.base_ts = dict(base)
     temp = base["temp"] + mod(cos)
     rifl = base["rifl"] + mod(des)
     vol = base["vol"] + mod(arr[3])          # Sag dalla matrice
@@ -291,6 +299,50 @@ def deriva(L: Lettura) -> tuple[Statblocco | None, list[str], list[str]]:
 
 
 # ===========================================================================
+def con_attributi(f: Path, sb: Statblocco, L: Lettura) -> str:
+    """Il testo con il blocco scritto: i TS **e le caratteristiche da cui vengono**.
+
+    🔴 **D11, deciso dal DM il 2026-09-23**: *«tienila, ma deve scrivere anche le
+    caratteristiche da cui deriva, perché non contraddica genera_attributi»*.
+    Il 2 settembre questa opzione ha scritto i TS di otto schede con una matrice
+    sua (For, Cos, Des in ordine fisso), e poi `genera_attributi` ha messo
+    accanto caratteristiche **diverse**: il razorfiend verde aveva TS da Cos 13
+    e `attributi` con Cos 18, mentre la formula del DM diceva Cos 20.
+
+    Adesso le caratteristiche non le sceglie piu' questo script: vengono da
+    `genera_attributi.genera`, la stessa funzione con gli stessi strati (la
+    prosa della scheda, la fonte citata, i vincoli, l'array), e i TS si
+    ricalcolano da quelle sulla base di `deriva`. Il blocco porta la marca di
+    `genera_attributi`, quindi il suo `--check` lo verifica come uno suo.
+    """
+    import conformita_statblocchi as C
+    import genera_attributi as GA
+    # il blocco provvisorio da cui `genera` sceglie **non ha TS**: quelli della
+    # matrice non sono un dato, e il tetto dei TS li leggerebbe come tali
+    from dataclasses import replace
+    testo = inserisci(f.read_text(encoding="utf-8"), replace(sb, ts="", fonte=""))
+    ruolo = re.search(r"\*\*Role\*\*:\s*([^|\n]+)", testo, re.I)
+    gs = float(str(L.gs or sb.gs).replace(",", "."))
+    v, note = GA.genera(f.name, ruolo.group(1).strip() if ruolo else "", gs, testo)
+    extra = C.talenti(testo)
+    ts = {k: L.base_ts[k] + mod(v[c]) + extra.get(n, 0) if isinstance(v[c], int)
+          else L.base_ts[k] + extra.get(n, 0)
+          for k, c, n in (("temp", "Cos", "Temp"), ("rifl", "Des", "Rifl"), ("vol", "Sag", "Vol"))}
+    sb.ts = f"Temp {ts['temp']:+d}, Rifl {ts['rifl']:+d}, Vol {ts['vol']:+d}"
+    sb.attributi = GA.riga_attributi(v).split(": ", 1)[1]
+    sb.fonte = (f"derivati dalle tabelle: ts, attributi (il resto è letto dalla prosa) — "
+                f"caratteristiche da `genera_attributi` ({note[0]}) · TS: base "
+                f"{L.base_ts['temp']:+d}/{L.base_ts['rifl']:+d}/{L.base_ts['vol']:+d} "
+                f"+ Cos/Des/Sag → {sb.ts}")
+    testo = inserisci(f.read_text(encoding="utf-8"), sb)
+    coda = (GA.CODA_SCHEDA if note[0].startswith("letta dalla riga")
+            else GA.CODA_FONTE if note[0].startswith("trascritt") else GA.CODA_ARRAY)
+    marca = GA.MARCA + coda + "".join(" " + n for n in note if n.startswith("⚠"))
+    m = GA.BLOCCO.search(testo)
+    fine = testo.index("```", m.end(1)) + 3
+    return testo[:fine] + "\n\n" + marca + testo[fine:]
+
+
 def main(argv: list[str] | None = None) -> int:
     # ⚠️ `allow_abbrev=False`: senza, argparse accetta `--apply` come
     # abbreviazione di `--apply-ts`, e chi lo scrive aspettandosi la scrittura
@@ -305,7 +357,8 @@ def main(argv: list[str] | None = None) -> int:
     # Quindi propone, e la mano che scrive resta quella del DM.
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--apply-ts", action="store_true",
-                    help="scrive SOLO i TS, e solo dove tutto il resto è letto dalla prosa")
+                    help="scrive i TS e le caratteristiche da cui vengono (quelle di "
+                         "genera_attributi), solo dove tutto il resto è letto dalla prosa")
     a = ap.parse_args(argv)
 
     elenco = [f if f.is_absolute() else ROOT / f for f in a.file] or schede()
@@ -320,7 +373,8 @@ def main(argv: list[str] | None = None) -> int:
         # tocca mai. Derivare sopra un valore del DM vorrebbe dire sostituire
         # un numero vero con uno calcolato — il danno esatto che ADR-0021 teme.
         letto, _ = estrai(t)
-        sb, conti, manca = deriva(leggi_scheda(f))
+        L = leggi_scheda(f)
+        sb, conti, manca = deriva(L)
         rel = str(f.relative_to(ROOT))
         if sb is None:
             fermi[rel] = manca
@@ -361,7 +415,7 @@ def main(argv: list[str] | None = None) -> int:
         # dalla Costituzione, e nessuno dei due si legge da una scheda in prosa
         # con affidabilità sufficiente. Lì lo strumento resta un proponitore.
         if derivati == ["ts"] and letto.gs and letto.ca and letto.pf:
-            scrivibili.append((f, sb))
+            scrivibili.append((f, sb, L))
 
     if a.json:
         print(json.dumps({
@@ -372,10 +426,10 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     if a.apply_ts:
-        for f, sb in scrivibili:
-            f.write_text(inserisci(f.read_text(encoding="utf-8"), sb), encoding="utf-8")
-        print(f"  {len(scrivibili)} schede scritte (solo i TS; GS, CA e pf erano "
-              f"già scritti dal DM)")
+        for f, sb, L in scrivibili:
+            f.write_text(con_attributi(f, sb, L), encoding="utf-8")
+        print(f"  {len(scrivibili)} schede scritte (TS e le caratteristiche da cui "
+              f"vengono; GS, CA e pf erano già scritti dal DM)")
     print(f"  {len(fatti)} proposte col conto per esteso "
           f"(senza --apply-ts questo strumento non scrive)")
     if not a.apply_ts and scrivibili:

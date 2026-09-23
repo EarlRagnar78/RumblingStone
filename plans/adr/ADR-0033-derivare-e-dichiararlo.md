@@ -144,3 +144,28 @@ quella che **non esiste**, otterrebbe comunque una scrittura.
 un `Bestiario/dati/*.yaml` parallelo. Emenda **solo** §3, e solo per dire che la
 derivazione dichiarata è ammessa **se supera un collaudo**, cosa che oggi non
 succede per nessuna scheda.
+
+## Emendamento — 2026-09-23: leggere prima di derivare vuol dire anche rileggere
+
+Il principio di questo ADR era giusto e non è bastato. Il 2 settembre
+`--apply-ts` ha scritto i TS di otto schede **dove la prosa li aveva già**,
+perché il lettore non riconosceva ancora la forma dei dossier. Il giorno dopo
+il lettore l'ha imparata, e i blocchi scritti non sono stati riletti. Per tre
+settimane sei villain e PNG hanno avuto nel blocco TS diversi da quelli del DM,
+in un caso di sette punti.
+
+**Cosa si aggiunge.** Un campo del blocco che la prosa della stessa scheda
+scrive diverso è un errore di `extract_statblocks --check`, e fa rossa la CI.
+Il controllo non decide il verso: dice che uno dei due è rimasto indietro. Si
+confrontano solo numeri, si saltano le note e le forbici («GS 17-19»).
+
+**Il limite, dichiarato.** Dove la prosa tace il controllo non vede niente: è il
+caso dei due razorfiend, i cui TS derivati contraddicono solo la formula dei
+dadi vita. Per quelli la decisione è del DM (D10 e D11 di
+`RICERCA-CONFORMITA-MECCANICA-STATBLOCCHI` §9).
+
+**D11, deciso dal DM lo stesso giorno.** `--apply-ts` resta, ma scrive anche le
+caratteristiche da cui ricava i TS, e le prende da `genera_attributi.genera`
+invece che dalla matrice di questo script. Una sola logica sceglie le
+caratteristiche di una scheda, chiunque scriva il blocco.
+

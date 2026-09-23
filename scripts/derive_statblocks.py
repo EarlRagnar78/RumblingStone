@@ -72,8 +72,9 @@ from extract_statblocks import APERTURA, e_non_creatura, inserisci, schede  # no
 from dmcore.tabelle import (  # noqa: E402
     ALIAS_TIPO, ARMATURE, BASIC, CLASSI, ELITE, PER_GS as _PER_GS_PIENA,
     PER_GS_VERIFICATE, RUOLI_ELITE, SCUDI, TAGLIE, TIPI,
-    media_dado, mod, ts_buono, ts_cattivo,
+    media_dado, mod, ts_buono, ts_cattivo,  # noqa: F401 (ts_*: li legge test_bestiario_h)
 )
+from dmcore.progressione import ts_base_di  # noqa: E402
 
 #: Il collaudo usa due sole colonne della riga per GS: CA e pf. Le altre
 #: (attacco, danno, CD, tiri salvezza) servono al generatore, non a chi legge.
@@ -227,14 +228,13 @@ def deriva(L: Lettura) -> tuple[Statblocco | None, list[str], list[str]]:
     base = {"temp": 0, "rifl": 0, "vol": 0}
     if L.classi:
         for c, n in L.classi:
-            buoni = CLASSI[c][1]
+            per_classe = ts_base_di(n, CLASSI[c][1])
             for k in base:
-                base[k] += ts_buono(n) if k in buoni else ts_cattivo(n)
+                base[k] += per_classe[k]
         det_ts = "somma dei TS base di ogni classe (SRD: multiclasse si sommano)"
     else:
         buoni = TIPI[L.tipo][2] if L.tipo else ()
-        for k in base:
-            base[k] = ts_buono(dv_tot) if k in buoni else ts_cattivo(dv_tot)
+        base = ts_base_di(dv_tot, buoni)
         det_ts = f"tipo «{L.tipo}», TS buoni {buoni or '—'}"
     L.base_ts = dict(base)
     temp = base["temp"] + mod(cos)
@@ -310,35 +310,37 @@ def con_attributi(f: Path, sb: Statblocco, L: Lettura) -> str:
     e `attributi` con Cos 18, mentre la formula del DM diceva Cos 20.
 
     Adesso le caratteristiche non le sceglie piu' questo script: vengono da
-    `genera_attributi.genera`, la stessa funzione con gli stessi strati (la
+    `dmcore.caratteristiche.genera` (quella di `genera_attributi`), la stessa funzione con gli stessi strati (la
     prosa della scheda, la fonte citata, i vincoli, l'array), e i TS si
     ricalcolano da quelle sulla base di `deriva`. Il blocco porta la marca di
     `genera_attributi`, quindi il suo `--check` lo verifica come uno suo.
     """
-    import conformita_statblocchi as C
-    import genera_attributi as GA
+    # la scelta e il lettore stanno in `dmcore` (ADR-0066): prima questa
+    # funzione importava `genera_attributi` e `conformita_statblocchi`
+    from dmcore import caratteristiche as CAR
+    from dmcore import lettura_creatura as LC
     # il blocco provvisorio da cui `genera` sceglie **non ha TS**: quelli della
     # matrice non sono un dato, e il tetto dei TS li leggerebbe come tali
     from dataclasses import replace
     testo = inserisci(f.read_text(encoding="utf-8"), replace(sb, ts="", fonte=""))
     ruolo = re.search(r"\*\*Role\*\*:\s*([^|\n]+)", testo, re.I)
     gs = float(str(L.gs or sb.gs).replace(",", "."))
-    v, note = GA.genera(f.name, ruolo.group(1).strip() if ruolo else "", gs, testo)
-    extra = C.talenti(testo)
+    v, note = CAR.genera(f.name, ruolo.group(1).strip() if ruolo else "", gs, testo)
+    extra = LC.talenti(testo)
     ts = {k: L.base_ts[k] + mod(v[c]) + extra.get(n, 0) if isinstance(v[c], int)
           else L.base_ts[k] + extra.get(n, 0)
           for k, c, n in (("temp", "Cos", "Temp"), ("rifl", "Des", "Rifl"), ("vol", "Sag", "Vol"))}
     sb.ts = f"Temp {ts['temp']:+d}, Rifl {ts['rifl']:+d}, Vol {ts['vol']:+d}"
-    sb.attributi = GA.riga_attributi(v).split(": ", 1)[1]
+    sb.attributi = CAR.riga_attributi(v).split(": ", 1)[1]
     sb.fonte = (f"derivati dalle tabelle: ts, attributi (il resto è letto dalla prosa) — "
                 f"caratteristiche da `genera_attributi` ({note[0]}) · TS: base "
                 f"{L.base_ts['temp']:+d}/{L.base_ts['rifl']:+d}/{L.base_ts['vol']:+d} "
                 f"+ Cos/Des/Sag → {sb.ts}")
     testo = inserisci(f.read_text(encoding="utf-8"), sb)
-    coda = (GA.CODA_SCHEDA if note[0].startswith("letta dalla riga")
-            else GA.CODA_FONTE if note[0].startswith("trascritt") else GA.CODA_ARRAY)
-    marca = GA.MARCA + coda + "".join(" " + n for n in note if n.startswith("⚠"))
-    m = GA.BLOCCO.search(testo)
+    coda = (LC.CODA_SCHEDA if note[0].startswith("letta dalla riga")
+            else LC.CODA_FONTE if note[0].startswith("trascritt") else LC.CODA_ARRAY)
+    marca = LC.MARCA + coda + "".join(" " + n for n in note if n.startswith("⚠"))
+    m = LC.BLOCCO.search(testo)
     fine = testo.index("```", m.end(1)) + 3
     return testo[:fine] + "\n\n" + marca + testo[fine:]
 

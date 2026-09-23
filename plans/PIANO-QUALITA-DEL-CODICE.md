@@ -448,8 +448,8 @@ Tre moduli nuovi in `scripts/dmcore/`, separati per **chi li può importare**:
 | Modulo | Contiene | Chi lo importa |
 |---|---|---|
 | `dmcore/progressione.py` | base dei TS e del BAB per classe e tipo (`Gruppo`, `CLASSE_LIVELLO`, `_classe`, `ts_attesi` senza caratteristiche, `bab_atteso`), costruita su `dmcore.tabelle` | tutti |
-| `dmcore/lettura_creatura.py` | il lettore: `BLOCCO`, `PF_DADO`, `PEZZO_DADO`, `DV_DICHIARATI`, `SESTINA`, `BAB_SCRITTO`, `LOTTA_*`, `INIZIATIVA_*`, `senza_note`, `taglia_di`, `dadi_vita`, `robustezza`, `pf_dado_sospetto`, `dalla_scheda`, `numeri_della_fonte`, `composizione`, `dv_totali`, `dadi_di_pf`, `talenti` | tutti, verificatore compreso (se D1 = sì) |
-| `dmcore/caratteristiche.py` | la **scelta**: gli strati di `genera_attributi.genera` (scheda, fonte, vincoli, tetto dei TS, iniziativa a due candidati, array per ruolo con taglia e razza), `PROFILI`, `PER_TAGLIA`, `RAZZE` | i generatori (`genera_attributi`, `derive_statblocks`, il ramo PNG di `genera_creatura`), **mai** `conformita_statblocchi` |
+| `dmcore/lettura_creatura.py` | il lettore: `BLOCCO`, `PF_DADO`, `PEZZO_DADO`, `DV_DICHIARATI`, `SESTINA`, `BAB_SCRITTO`, `LOTTA_*`, `INIZIATIVA_*`, `senza_note`, `taglia_di`, `dadi_vita`, `robustezza`, `pf_dado_sospetto`, `dalla_scheda`, `numeri_della_fonte`, `composizione`, `dv_totali`, `dadi_di_pf`, `talenti`, e (E1) `plausibile` e `tetti_dai_ts`, che il verificatore usa | tutti, verificatore compreso (D1 = sì) |
+| `dmcore/caratteristiche.py` | la **scelta**: gli strati di `genera_attributi.genera` (scheda, fonte, vincoli, l'uso del tetto dei TS, iniziativa a due candidati, array per ruolo con taglia e razza), `PROFILI`, `PER_TAGLIA`, `RAZZE` | i generatori (`genera_attributi`, `derive_statblocks`, il ramo PNG di `genera_creatura`), **mai** `conformita_statblocchi` |
 
 I quattro script restano dove sono e con la stessa interfaccia: CI,
 `tools.manifest.json`, skill e test li chiamano per nome. Dentro restano la riga
@@ -474,7 +474,7 @@ confrontava fra loro.
 L'ordine è fisso: ognuno lascia il repo verde e l'impronta di E0 **identica**,
 e va in un commit suo.
 
-#### ⬜ E0 · L'impronta di partenza
+#### ✅ E0 · L'impronta di partenza *(chiuso 2026-09-23)*
 `[engine: Opus, sessione principale · effort: medio · qualità: due esecuzioni sullo stesso commit danno lo stesso file, byte per byte]`
 **Classe C.** Uno script `scripts/impronta_creature.py` (sola lettura, stdlib)
 che scrive in JSON, ordinato e deterministico:
@@ -494,14 +494,47 @@ si ferma lì.
 **Accettazione**: test verde; e la prova che morde, cioè una mutazione di una
 riga in `tetti_dai_ts` fa cadere il test.
 
-#### ⬜ E1 · L'ADR e i moduli vuoti
+✅ **Fatto** (`scripts/impronta_creature.py`, fixture da 1,7 MB, 4 test).
+Due esecuzioni danno lo stesso file byte per byte, in 2,6 secondi. Dentro:
+108 statblocchi con **17 letture intermedie** ciascuno (dadi vita, `pf-dado`
+sospetto con e senza GS, sestina della scheda e della fonte, numeri della
+fonte, tetti dei TS, composizione, talenti, provenienza, e i vincoli su Des, Cos e For),
+`genera` con e senza fonte, `giudica`, `pf_dado_corretto` normale e forzato;
+95 derivazioni; 720 creature (GS 1-20 × 6 ruoli × mostro umanoide, PNG con
+classe, bestia magica Grande × `--piu-cattivi`); taratura, riepilogo, i due
+`--check` e la proposta di `--correggi-pf-dado`.
+Due mutazioni provate, e cadono tutte e due sulla chiave che le nomina:
+`+ 1` in `tetti_dai_ts` (354 chiavi su 85 schede, a partire da
+`bruto-deforme-sottosuolo-cr11.md/letture/tetti_dai_ts/Cos`) e il flag `re.M`
+tolto a `INIZIATIVA_SCRITTA` (a partire da `blue-psion-cr1.md/letture/iniziativa_ambigua`).
+🔎 **Una cosa che il piano non sapeva**: nessuna scheda del Bestiario è oggi
+scrivibile da `derive_statblocks --apply-ts` (le due proposte sono rimandi),
+quindi `con_attributi`, la metà di `derive_statblocks` che chiama
+`genera_attributi`, sul Bestiario non gira mai. L'impronta la fa girare su tre
+schede di prova in una cartella temporanea (chiave `apply_ts`).
+
+#### ✅ E1 · L'ADR e i moduli vuoti *(chiuso 2026-09-23)*
 `[engine: Opus, sessione principale · effort: alto · qualità: il DM riconosce la decisione, e D1 è risposta]`
 **Classe G.** L'ADR con il disegno di §8.3, i tre moduli con la sola docstring
 e un `__all__` vuoto. Si scrive **dopo** la risposta a D1.
 **Accettazione**: `validate_docs --sorgenti` verde; l'ADR indicizzato in
 `docs/INDEX.md` §4.
 
-#### ⬜ E2 · La progressione in un posto
+✅ **Fatto**: [ADR-0066](adr/ADR-0066-le-creature-hanno-una-libreria-e-il-verificatore-non-importa-la-scelta.md),
+D1 chiusa (**sì**), e `dmcore/progressione.py`, `dmcore/lettura_creatura.py`,
+`dmcore/caratteristiche.py` con la sola docstring.
+🔎 **Il disegno di §8.3 cambia in due punti, e l'ADR li dichiara.** Fra i 23
+simboli che il verificatore prende dal generatore ci sono `tetti_dai_ts` e
+`plausibile`, che §8.3 metteva nella scelta: `pf_dado_corretto` li usa per
+ricostruire il bonus di `pf-dado`, e dalla scelta il verificatore non può
+importare. Nessuno dei due sceglie (il primo ricava un limite da un TS scritto,
+il secondo rifiuta un modificatore ricavato che il GS non regge), quindi vanno
+nel lettore. Per la stessa ragione **E3a non sposta tutti e 23 i simboli**:
+`tetti_dai_ts` usa `composizione`, `Scheda` e `talenti` del verificatore, e si
+sposta con loro in E3b. *(Corretto in E3a: E1 diceva «22»; erano 21, perché
+`ABBREVIAZIONI` era già passato in E2 con la progressione.)*
+
+#### ✅ E2 · La progressione in un posto *(chiuso 2026-09-23)*
 `[engine: Sonnet 5 o Opus · effort: alto · qualità: impronta identica, e un solo posto nel repo calcola la base dei TS]`
 **Classe C.** Spostare in `dmcore/progressione.py` `Gruppo`, `CLASSE_LIVELLO`,
 `_classe`, `_PRESTIGIO`, la base dei TS e `bab_atteso`. Le quattro copie della
@@ -513,7 +546,23 @@ vuoto; test nuovo `test_progressione.py` con i casi che il verificatore già
 conosce (umanoide a TS variabile, paladino con Grazia divina, classi di
 prestigio SRD) e una mutazione che lo fa cadere.
 
-#### ⬜ E3 · Il lettore in un posto
+✅ **Fatto**: `dmcore/progressione.py` (`Gruppo`, `ABBREVIAZIONI`, `PRESTIGIO`,
+`DADO_DI_CLASSE`, `CLASSE_LIVELLO`, `classe`, `ts_base_di`, `ts_base`,
+`bab_atteso`). Le quattro copie della base chiamano `ts_base_di` o `ts_base`;
+la formula riscritta nel verificatore è sparita e il `grep` è vuoto. Impronta
+identica. `test_progressione.py`: 10 test, **3/3 mutazioni** (la fascia
+dell'umanoide, il BAB arrotondato una volta sola sul totale, il BAB
+dell'assassino). La seconda la prendeva l'impronta e non il test, al primo
+giro: l'esempio del test dava lo stesso numero con i due arrotondamenti.
+🐛 **Un falso verde del metodo, trovato provando le mutazioni**: mutazione e
+ripristino della stessa lunghezza, nello stesso secondo, lasciano in
+`__pycache__` il bytecode della mutazione, perché Python confronta solo data e
+dimensione del sorgente. Il test ripristinato risultava rosso con il codice giusto;
+con la mutazione al contrario sarebbe risultato verde con il codice sbagliato. Le
+mutazioni del lotto si provano con `PYTHONDONTWRITEBYTECODE=1` e la cache
+svuotata dopo il ripristino.
+
+#### ✅ E3 · Il lettore in un posto *(chiuso 2026-09-23)*
 `[engine: Opus, sessione principale · effort: alto · qualità: impronta identica, e il verificatore non importa più niente da genera_attributi]`
 **Classe C, con rischio alto**: è la parte più grande (una trentina di simboli)
 e quella dove una virgola sposta un numero. Spostare in
@@ -530,7 +579,33 @@ scripts/conformita_statblocchi.py` vuoto; `test_conformita_statblocchi.py`,
 `test_genera_attributi.py` e `test_statblock.py` verdi senza modifiche alle
 asserzioni (cambiano solo gli import).
 
-#### ⬜ E4 · Il grafo degli import
+✅ **E3a fatto**: 43 simboli di primo livello di `genera_attributi` in
+`dmcore/lettura_creatura.py` (i 21 che il verificatore usava, più le loro
+dipendenze: `ORDINE`, `TAGLIA`, `CLASSE_NEL_TIPO`, `FORMULA_DV`, `SESTINA` con le sue
+parti, `sestine_citate`, `dalla_scheda`, le marche). Tagliati dal sorgente con
+`ast` e non ricopiati: **l'albero sintattico di ognuno dei 43 è identico** a
+quello di prima, flag delle regex compresi. `genera_attributi` li reimporta
+tutti (36 nomi pubblici) come alias fino a E8. Il verificatore legge con
+`L.` e dal generatore prende ancora un solo nome, `tetti_dai_ts`.
+Impronta identica; i test di §8.4 verdi senza toccare un'asserzione.
+
+✅ **E3b fatto**: 19 simboli del verificatore (`Scheda`, `leggi`,
+`composizione`, `dv_totali`, `dadi_di_pf`, `talenti`, `provenienza`, le loro
+regex, il non morto PF1e) e i 3 del tetto dei TS di `genera_attributi`
+(`TS_CARATTERISTICA`, `TS_SCRITTI`, `tetti_dai_ts`) nel lettore, che ora ha
+57 nomi pubblici. Gli alberi dei 19 sono identici a quelli di prima **tranne
+tre rinomine** fatte apposta: il prefisso `L.` che dentro il modulo non serve
+più, e `BAB`/`LOTTA`, che erano alias del verificatore, diventano
+`BAB_SCRITTO`/`LOTTA_SCRITTA`. `tetti_dai_ts` è l'unica funzione riscritta: chiamava
+`ts_attesi(s, {})` del verificatore per avere la base più i talenti, e adesso
+somma `progressione.ts_base` e `talenti` direttamente. Impronta identica, e
+l'impronta registra i tetti di ogni scheda.
+**Il ciclo fra i due script non c'è più**: `conformita_statblocchi` non
+importa `genera_attributi` e `genera_attributi` non importa il verificatore,
+nemmeno dentro una funzione. Il piano metteva questa scomparsa in E4; è
+arrivata con E3b, e E4 la rende un test.
+
+#### ✅ E4 · Il grafo degli import *(chiuso 2026-09-23)*
 `[engine: Sonnet 5 · effort: medio · qualità: il test morde su un import proibito aggiunto a mano]`
 **Classe C.** Un test (`test_grafo_import_creature.py`) che legge gli import con
 `ast` e verifica:
@@ -542,7 +617,18 @@ asserzioni (cambiano solo gli import).
 **Accettazione**: verde; e rosso aggiungendo a mano
 `import dmcore.caratteristiche` in `conformita_statblocchi.py`.
 
-#### ⬜ E5 · La scelta delle caratteristiche in un posto
+✅ **Fatto**: `test_grafo_import_creature.py`, 9 test, stdlib. Legge gli import
+di tutti gli script e di tutto `dmcore` con `ast.walk`, quindi anche quelli
+dentro una funzione, e verifica: nessun ciclo che passi per i sette nodi del
+lotto; nessun percorso dal verificatore a `dmcore.caratteristiche`; nessun
+modulo raggiunto dal verificatore che ci arrivi; la libreria non importa
+script; il verificatore non raggiunge il generatore. **Morde** tre volte:
+l'import aggiunto a mano nel verificatore (rosso, e il messaggio dice il
+percorso), lo stesso import messo **dentro una funzione** del lettore (3 test
+rossi), e il grafo di E2 ricostruito da `git show`, dove trova il vecchio ciclo
+`genera_attributi → conformita_statblocchi → genera_attributi`.
+
+#### ✅ E5 · La scelta delle caratteristiche in un posto *(chiuso 2026-09-23)*
 `[engine: Opus, sessione principale · effort: alto · qualità: impronta identica, taratura 1,50 / 1,51 invariata]`
 **Classe C.** Spostare in `dmcore/caratteristiche.py` gli strati di
 `genera_attributi.genera` e le loro tabelle (`PROFILI`, `PER_TAGLIA`, `RAZZE`,
@@ -553,6 +639,22 @@ di comando; `derive_statblocks.con_attributi` chiama `dmcore.caratteristiche`
 direttamente.
 **Accettazione**: impronta identica; `genera_attributi --check` e
 `--taratura` invariati; E4 verde.
+
+✅ **Fatto**: 24 simboli in `dmcore/caratteristiche.py` (gli array, `PROFILI`,
+`PER_TAGLIA`, `RAZZE`, i vincoli, `dalla_fonte`, `_dall_array`, `genera`,
+`riga_attributi`), tagliati con `ast` e con **alberi identici** a quelli di
+prima. `genera_attributi` tiene `statblocchi`, `proponi`, `applica`,
+`controlla`, `taratura` e la riga di comando, e scende da 1.170 a 352 righe.
+`derive_statblocks.con_attributi` chiama `dmcore.caratteristiche` e
+`dmcore.lettura_creatura`, e non importa più né il generatore né il
+verificatore. Impronta identica, `--check` 93 blocchi, taratura 1,5 / 1,51,
+E4 verde e di nuovo rosso con un import della scelta aggiunto al verificatore.
+
+📏 **Il conto delle righe, onesto.** I quattro script passano da **3.503 a
+2.465**; i tre moduli nuovi ne hanno **1.241**, e il totale sale a **3.706
+(+203)**. La differenza sono docstring dei moduli e import degli alias, che E8
+toglie. Il lotto non promette meno righe: promette una lettura e una scelta
+in un posto solo.
 
 #### ⬜ E6 · Una tabella dei ruoli *(bloccato su D2)*
 `[engine: Opus, sessione principale · effort: xhigh · qualità: il DM ha visto il diff dei blocchi prima del commit]`
@@ -599,6 +701,7 @@ Non si passa al sotto-lotto successivo finché tutti questi non sono verdi:
 ```bash
 python3 -m pytest -q scripts/tests/                     # ≥ 1165 verdi, piu' i test nuovi
 python3 -m pytest -q scripts/tests/test_impronta_creature.py   # impronta di E0 identica
+python3 scripts/impronta_creature.py --confronta        # la stessa, e dice dove diverge
 python3 scripts/extract_statblocks.py --check           # 0 problemi
 python3 scripts/validate_bestiario.py                   # catalogo in sync
 python3 scripts/validate_bestiario.py --rules           # 5 avvisi, gli stessi
@@ -627,11 +730,31 @@ E tre regole di metodo, già provate in questo piano:
 
 | # | Ambito | Domanda |
 |---|---|---|
-| D1 | E1 · E3 | **Il verificatore condivide il lettore?** Oggi lo fa già: importa 23 simboli da `genera_attributi`. **Sì** (consigliato): il lettore va in `dmcore/lettura_creatura.py` e lo usano tutti; l'indipendenza sta nelle regole e nella scelta, che il verificatore non importa mai (E4 lo prova). **No**: il verificatore tiene un lettore suo, copiato, più sicuro contro un errore di lettura condiviso e con una seconda copia da tenere allineata a mano |
+| ~~D1~~ | E1 · E3 | ✅ **decisa dal DM il 2026-09-23: sì**, il verificatore condivide il lettore ([ADR-0066](adr/ADR-0066-le-creature-hanno-una-libreria-e-il-verificatore-non-importa-la-scelta.md)). **Il verificatore condivide il lettore?** Oggi lo fa già: importa 23 simboli da `genera_attributi`. **Sì** (consigliato): il lettore va in `dmcore/lettura_creatura.py` e lo usano tutti; l'indipendenza sta nelle regole e nella scelta, che il verificatore non importa mai (E4 lo prova). **No**: il verificatore tiene un lettore suo, copiato, più sicuro contro un errore di lettura condiviso e con una seconda copia da tenere allineata a mano |
 | D2 | E6 | **Quale tabella dei ruoli vince?** Dei 6 ruoli di `genera_creatura`, 4 ordinano le caratteristiche diversamente dal profilo corrispondente di `genera_attributi` (schermagliatore, tiratore, blaster, controllore). **(a)** vince `genera_attributi`: cambiano i PNG che `genera_creatura` genera d'ora in poi, nessun blocco del Bestiario; **(b)** vince `genera_creatura`: cambiano gli `attributi` di alcuni dei 15 blocchi scelti dall'array, che il DM vede prima; **(c)** si tengono separate e si dichiara perché |
 | D3 | E9 | **`dm.py bestiario` si fa in questo lotto o dopo?** Costa poco e non dipende dalla libreria; farlo prima di E8 vuol dire toccare `dm.py` due volte se un'interfaccia cambia |
 
 ### §8.7 · Da dove si comincia, in una chat nuova
+
+🔁 **Dopo la PR #158 (E0-E5) si riparte da qui, non dalla misura più sotto**,
+che è quella di prima del lotto e non torna più di proposito:
+
+```bash
+git fetch origin main && git log --oneline -1 origin/main                   # #158 mergiata
+wc -l scripts/{derive_statblocks,genera_attributi,genera_creatura,conformita_statblocchi}.py   # 2465
+wc -l scripts/dmcore/{progressione,lettura_creatura,caratteristiche}.py      # 113 · 634 · 494
+python3 scripts/impronta_creature.py --confronta                            # identica
+python3 -m pytest -q scripts/tests/ | tail -1                               # 1188 passed
+python3 scripts/decisioni_dm.py --check                                     # D2, D3 di QUALITA-CODICE aperte
+```
+
+Il prossimo passo è **D2** (il DM sceglie quale tabella dei ruoli vince), poi
+**E6**, che è l'unico sotto-lotto che **cambia l'impronta**: si rigenera in un
+commit suo, con le celle e il motivo. La misura di D2 è il passo 4 qui sotto, e
+funziona ancora (gli alias di `genera_attributi` restano fino a E8): 2 ruoli su
+6 coincidono, e i 4 che divergono sono schermagliatore, tiratore, controllore e
+blaster. ⚠️ Le mutazioni si provano con `PYTHONDONTWRITEBYTECODE=1` e la cache
+svuotata dopo il ripristino (E2).
 
 **Prima di tutto la misura.** Se un numero non torna con §8.2, qualcuno ha già
 lavorato: si rilegge questo piano prima di eseguirlo.

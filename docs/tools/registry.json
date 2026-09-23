@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 72,
+  "tool_count": 73,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -3850,6 +3850,92 @@
         "network": false
       },
       "idempotent": true
+    },
+    {
+      "id": "impronta_creature",
+      "path": "scripts/impronta_creature.py",
+      "category": "E-bestiary-catalog",
+      "language": "python",
+      "invocation": "python3 scripts/impronta_creature.py",
+      "summary": "Scrive in JSON ordinato tutto quello che genera_attributi, conformita_statblocchi, derive_statblocks e genera_creatura calcolano sul Bestiario vero: le letture intermedie scheda per scheda (dadi vita, pf-dado sospetto, sestine, numeri della fonte, composizione, talenti, tetti dei TS), le caratteristiche generate con e senza fonte, il giudizio del verificatore, le derivazioni, la griglia di genera_creatura (GS 1-20 × 6 ruoli × 3 forme × piu-cattivi) e i numeri dei gate. E' il collaudo del lotto E di PIANO-QUALITA-DEL-CODICE: uno spostamento in dmcore/ che cambia l'impronta ha cambiato un comportamento.",
+      "use_case": "«Ho spostato codice che decide numeri delle creature: è cambiato qualcosa, e dove?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--scrivi",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scrive l'impronta nella fixture del test (solo in un commit che dice perché cambia)."
+        },
+        {
+          "name": "--confronta",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Confronta con la fixture; esce 1 e nomina le chiavi che divergono."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "Bestiario/{mostri,villain,png}/**/*-cr*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "Bestiario/pregen-pcgen/**",
+          "kind": "text",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "stdout",
+          "kind": "json",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "scripts/tests/fixtures/impronta-creature.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "l'impronta diverge dalla fixture (--confronta)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "i semi di genera_creatura sono le chiavi della griglia, non l'orologio"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/impronta_creature.py --help",
+      "tests": [
+        "scripts/tests/test_impronta_creature.py"
+      ],
+      "docs": [
+        "plans/PIANO-QUALITA-DEL-CODICE.md"
+      ]
     },
     {
       "id": "validate_bestiario",

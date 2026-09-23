@@ -72,8 +72,9 @@ from extract_statblocks import APERTURA, e_non_creatura, inserisci, schede  # no
 from dmcore.tabelle import (  # noqa: E402
     ALIAS_TIPO, ARMATURE, BASIC, CLASSI, ELITE, PER_GS as _PER_GS_PIENA,
     PER_GS_VERIFICATE, RUOLI_ELITE, SCUDI, TAGLIE, TIPI,
-    media_dado, mod, ts_buono, ts_cattivo,
+    media_dado, mod, ts_buono, ts_cattivo,  # noqa: F401 (ts_*: li legge test_bestiario_h)
 )
+from dmcore.progressione import ts_base_di  # noqa: E402
 
 #: Il collaudo usa due sole colonne della riga per GS: CA e pf. Le altre
 #: (attacco, danno, CD, tiri salvezza) servono al generatore, non a chi legge.
@@ -227,14 +228,13 @@ def deriva(L: Lettura) -> tuple[Statblocco | None, list[str], list[str]]:
     base = {"temp": 0, "rifl": 0, "vol": 0}
     if L.classi:
         for c, n in L.classi:
-            buoni = CLASSI[c][1]
+            per_classe = ts_base_di(n, CLASSI[c][1])
             for k in base:
-                base[k] += ts_buono(n) if k in buoni else ts_cattivo(n)
+                base[k] += per_classe[k]
         det_ts = "somma dei TS base di ogni classe (SRD: multiclasse si sommano)"
     else:
         buoni = TIPI[L.tipo][2] if L.tipo else ()
-        for k in base:
-            base[k] = ts_buono(dv_tot) if k in buoni else ts_cattivo(dv_tot)
+        base = ts_base_di(dv_tot, buoni)
         det_ts = f"tipo «{L.tipo}», TS buoni {buoni or '—'}"
     L.base_ts = dict(base)
     temp = base["temp"] + mod(cos)

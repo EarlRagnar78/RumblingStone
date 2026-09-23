@@ -74,25 +74,16 @@ from dmcore import tabelle as T  # noqa: E402
 import genera_attributi as GA  # noqa: E402
 
 # ---------------------------------------------------------------------------
-# Le classi: dado, TS buoni, BAB. Da dmcore, piu' le due di prestigio SRD che
-# compaiono nel Bestiario.
+# Le classi: dado, TS buoni, BAB. Stanno in `dmcore.progressione` (ADR-0066),
+# con le due classi di prestigio SRD che compaiono nel Bestiario; i nomi di
+# prima restano come alias finche' il lotto E8 non li toglie.
 # ---------------------------------------------------------------------------
-_PRESTIGIO = {"blackguard": (10, ("temp",), 1.0), "assassin": (6, ("rifl",), 0.75)}
+from dmcore import progressione as P  # noqa: E402
+from dmcore.progressione import CLASSE_LIVELLO, Gruppo  # noqa: E402,F401
 
-
-def _classe(nome: str) -> "tuple[int, tuple, float] | None":
-    n = nome.lower()
-    n = GA.ABBREVIAZIONI.get(n, n)
-    if n in _PRESTIGIO:
-        return _PRESTIGIO[n]
-    if n in T.CLASSI:
-        dado, buoni = T.CLASSI[n]
-        return dado, buoni, T.BAB_CLASSE.get(n, 0.75)
-    return None
-
-
-_NOMI = sorted(set(T.CLASSI) | set(_PRESTIGIO) | set(GA.ABBREVIAZIONI), key=len, reverse=True)
-CLASSE_LIVELLO = re.compile(r"\b(" + "|".join(map(re.escape, _NOMI)) + r")\w*\.?\s*(\d{1,2})\b", re.I)
+_PRESTIGIO = P.PRESTIGIO
+_classe = P.classe
+_NOMI = P.NOMI_DI_CLASSE
 
 
 TS_CAMPO = re.compile(r"^ts:\s*Temp\s*([+-]\d+),\s*Rifl\s*([+-]\d+),\s*Vol\s*([+-]\d+)", re.M)
@@ -145,16 +136,6 @@ def talenti(testo: str) -> dict:
 
 def mod(v):
     return T.mod(v) if isinstance(v, int) else 0
-
-
-@dataclass
-class Gruppo:
-    """Un gruppo di dadi vita: una classe, o i DV razziali del tipo."""
-    nome: str
-    n: int
-    dado: int
-    buoni: tuple
-    bab: float
 
 
 @dataclass
@@ -320,7 +301,7 @@ def leggi(p: Path) -> "Scheda | None":
 # Le identita'
 # ---------------------------------------------------------------------------
 def bab_atteso(s: Scheda) -> int:
-    return sum(math.floor(g.n * g.bab) for g in s.gruppi)
+    return P.bab_atteso(s.gruppi)
 
 
 #: SRD 3.5, tipo Costrutto: pf bonus per taglia (al posto della Costituzione).
@@ -382,18 +363,7 @@ def ts_attesi(s: Scheda, attr: dict) -> "tuple[tuple, tuple]":
     bugbear i Riflessi. Per quei DV il minimo li conta tutti cattivi e il
     massimo tutti buoni.
     """
-    lo = {"temp": 0, "rifl": 0, "vol": 0}
-    hi = dict(lo)
-    for g in s.gruppi:
-        for k in lo:
-            buono, cattivo = 2 + g.n // 2, g.n // 3
-            if g.nome == "humanoid":
-                lo[k] += cattivo
-                hi[k] += buono
-            else:
-                v = buono if k in g.buoni else cattivo
-                lo[k] += v
-                hi[k] += v
+    lo, hi = P.ts_base(s.gruppi)
     mods = [cos_o_car(s, attr), mod(attr.get("Des")), mod(attr.get("Sag"))]
     # Grazia divina (paladino) e Benedizione oscura (blackguard): Car a tutti i TS
     if any(g.nome.lower() in ("paladin", "paladino", "pal", "blackguard") and g.n >= 2

@@ -533,7 +533,7 @@ nel lettore. Per la stessa ragione **E3a sposta 22 simboli e non 23**:
 `tetti_dai_ts` usa `composizione`, `Scheda` e `talenti` del verificatore, e si
 sposta con loro in E3b.
 
-#### ⬜ E2 · La progressione in un posto
+#### ✅ E2 · La progressione in un posto *(chiuso 2026-09-23)*
 `[engine: Sonnet 5 o Opus · effort: alto · qualità: impronta identica, e un solo posto nel repo calcola la base dei TS]`
 **Classe C.** Spostare in `dmcore/progressione.py` `Gruppo`, `CLASSE_LIVELLO`,
 `_classe`, `_PRESTIGIO`, la base dei TS e `bab_atteso`. Le quattro copie della
@@ -544,6 +544,22 @@ come alias) finché E8 non li toglie.
 vuoto; test nuovo `test_progressione.py` con i casi che il verificatore già
 conosce (umanoide a TS variabile, paladino con Grazia divina, classi di
 prestigio SRD) e una mutazione che lo fa cadere.
+
+✅ **Fatto**: `dmcore/progressione.py` (`Gruppo`, `ABBREVIAZIONI`, `PRESTIGIO`,
+`DADO_DI_CLASSE`, `CLASSE_LIVELLO`, `classe`, `ts_base_di`, `ts_base`,
+`bab_atteso`). Le quattro copie della base chiamano `ts_base_di` o `ts_base`;
+la formula riscritta nel verificatore è sparita e il `grep` è vuoto. Impronta
+identica. `test_progressione.py`: 10 test, **3/3 mutazioni** (la fascia
+dell'umanoide, il BAB arrotondato una volta sola sul totale, il BAB
+dell'assassino). La seconda la prendeva l'impronta e non il test, al primo
+giro: l'esempio del test dava lo stesso numero con i due arrotondamenti.
+🐛 **Un falso verde del metodo, trovato provando le mutazioni**: mutazione e
+ripristino della stessa lunghezza, nello stesso secondo, lasciano in
+`__pycache__` il bytecode della mutazione, perché Python confronta solo data e
+dimensione del sorgente. Il test ripristinato risultava rosso con il codice giusto;
+con la mutazione al contrario sarebbe risultato verde con il codice sbagliato. Le
+mutazioni del lotto si provano con `PYTHONDONTWRITEBYTECODE=1` e la cache
+svuotata dopo il ripristino.
 
 #### ⬜ E3 · Il lettore in un posto
 `[engine: Opus, sessione principale · effort: alto · qualità: impronta identica, e il verificatore non importa più niente da genera_attributi]`

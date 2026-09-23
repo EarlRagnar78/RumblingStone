@@ -76,6 +76,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from dmcore import incantesimi as INC  # noqa: E402
 from dmcore import tabelle as T  # noqa: E402
+from dmcore.progressione import ts_base_di  # noqa: E402
 from dmcore.statblock import Statblocco, rendi  # noqa: E402
 
 # ===========================================================================
@@ -650,11 +651,11 @@ def _armatura_del_ruolo(R: Ruolo, livelli: int) -> tuple[int, int]:
 # ── i pezzi condivisi ───────────────────────────────────────────────────────
 
 def _tiri_salvezza(dv, buoni, m, conto) -> dict[str, int]:
+    base = ts_base_di(dv, buoni)
     ts = {}
     for k in ("temp", "rifl", "vol"):
-        base = T.ts_buono(dv) if k in buoni else T.ts_cattivo(dv)
         car = {"temp": "cos", "rifl": "des", "vol": "sag"}[k]
-        ts[k] = base + m[car]
+        ts[k] = base[k] + m[car]
     conto("TS = base per DV + modificatore → " + _ts_testo(ts))
     return ts
 

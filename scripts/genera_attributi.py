@@ -192,17 +192,12 @@ TAGLIA = {nome: ca for nome, (_, ca) in T.TAGLIE.items()}
 BLOCCO = re.compile(r"```statblocco\n(.*?)```", re.S)
 DES_SCRITTA = re.compile(r"([+-]\s*\d+)\s*(?:Des|Dex|destrezza)\b", re.I)
 CONTATTO = re.compile(r"(?:touch|contatto)\s*(\d+)", re.I)
-#: Le abbreviazioni con cui le schede scrivono le classi, e le due classi di
-#: prestigio SRD che compaiono nel Bestiario e non stanno in `dmcore`.
-ABBREVIAZIONI = {"ftr": "fighter", "wiz": "wizard", "clr": "cleric", "rog": "rogue",
-                 "rgr": "ranger", "brb": "barbarian", "bbn": "barbarian",
-                 "sor": "sorcerer", "mnk": "monk", "drd": "druid", "pal": "paladin",
-                 "guerrier": "guerriero", "chieric": "chierico", "barbar": "barbaro",
-                 "ladr": "ladro", "stregon": "stregone", "monac": "monaco",
-                 "druid": "druid", "magi": "mago"}
-PRESTIGIO = {"blackguard": 10, "assassin": 6}
-DADO_DI_CLASSE = {**{n: d for n, (d, _) in T.CLASSI.items()}, **PRESTIGIO,
-                  **{a: T.CLASSI[n][0] for a, n in ABBREVIAZIONI.items()}}
+#: Le abbreviazioni con cui le schede scrivono le classi, le due classi di
+#: prestigio SRD e il dado di ogni classe stanno in `dmcore.progressione`
+#: (ADR-0066). `PRESTIGIO` qui resta nella forma di prima: {classe: dado}.
+from dmcore.progressione import ABBREVIAZIONI, DADO_DI_CLASSE  # noqa: E402,F401
+from dmcore import progressione as _P  # noqa: E402
+PRESTIGIO = {n: v[0] for n, v in _P.PRESTIGIO.items()}
 #: Se il `tipo` nomina una classe, lo statblocco e' un PNG e gli array del
 #: Manuale del DM sono lo strumento giusto. Se no, e' una creatura.
 CLASSE_NEL_TIPO = re.compile(

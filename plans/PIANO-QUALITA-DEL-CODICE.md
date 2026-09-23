@@ -416,11 +416,11 @@ Nel lotto B ha trovato un difetto nel test stesso, che rileggendolo non si vedev
 | Il cancello blocco/prosa | ADR-0033, emendamento 2026-09-23 | resta in `extract_statblocks` |
 | `slug` e testo | lotto A di questo piano | già in `dmcore/testo.py` |
 
-### §8.2 · La misura di partenza (presa il 2026-09-23 su `45306c8`)
+### §8.2 · La misura di partenza (presa il 2026-09-23 su `45306c8`, rimisurata dopo le decisioni D1-D12 della conformità)
 
 | Cosa | Oggi | Come si rimisura |
 |---|---:|---|
-| Righe dei quattro script | **3.482** | `wc -l scripts/{derive_statblocks,genera_attributi,genera_creatura,conformita_statblocchi}.py` |
+| Righe dei quattro script | **3.503** | `wc -l scripts/{derive_statblocks,genera_attributi,genera_creatura,conformita_statblocchi}.py` |
 | Funzioni e classi di primo livello | GA 32 · C 33 · D 5 · GC 26 | `grep -cE "^def \|^class " …` |
 | Espressioni regolari di modulo | GA 25 · C 14 · D 4 · GC 0 | `grep -cE "^[A-Z_]+ = re.compile" …` |
 | Simboli che `conformita_statblocchi` importa da `genera_attributi` | **23** | lo script di §8.7, passo 3 |
@@ -430,9 +430,9 @@ Nel lotto B ha trovato un difetto nel test stesso, che rileggendolo non si vedev
 | Tabelle «ruolo → ordine delle caratteristiche» | **2**: `genera_attributi.PROFILI` (33 chiavi), `genera_creatura.RUOLI[…].priorita` (6 ruoli). **Dei 6 ruoli, 2 coincidono** (bruto, comandante); schermagliatore, tiratore, blaster e controllore ordinano diverso | `python3 -c` di §8.7, passo 4 |
 | Corpi di funzione identici in file diversi (§5) | **1** | lo script di §5 |
 | Script che usano `dmcore` | **28 su 63** | `grep -l "from dmcore" scripts/*.py \| wc -l` |
-| Test | **1159** verdi, 21 saltati | `python3 -m pytest -q scripts/tests/` |
-| Taratura dello strato scelto | **1,50** in campione · **1,54** fuori | `python3 scripts/genera_attributi.py --taratura` |
-| Conformità | **95** tornano · 5 come la fonte · 7 decisioni · 0 da correggere · 0 scarti del generatore | `python3 scripts/conformita_statblocchi.py --riepilogo` |
+| Test | **1165** verdi, 21 saltati | `python3 -m pytest -q scripts/tests/` |
+| Taratura dello strato scelto | **1,50** in campione · **1,51** fuori | `python3 scripts/genera_attributi.py --taratura` |
+| Conformità | **102** tornano · 5 come la fonte · 0 decisioni · 0 da correggere · 0 scarti del generatore | `python3 scripts/conformita_statblocchi.py --riepilogo` |
 
 🔎 **Il fatto che cambia il disegno.** Il verificatore **dipende già** dal lettore
 del generatore: 23 simboli, fra cui `PF_DADO`, `dadi_vita`, `pf_dado_sospetto`,
@@ -543,7 +543,7 @@ asserzioni (cambiano solo gli import).
 `import dmcore.caratteristiche` in `conformita_statblocchi.py`.
 
 #### ⬜ E5 · La scelta delle caratteristiche in un posto
-`[engine: Opus, sessione principale · effort: alto · qualità: impronta identica, taratura 1,50 / 1,54 invariata]`
+`[engine: Opus, sessione principale · effort: alto · qualità: impronta identica, taratura 1,50 / 1,51 invariata]`
 **Classe C.** Spostare in `dmcore/caratteristiche.py` gli strati di
 `genera_attributi.genera` e le loro tabelle (`PROFILI`, `PER_TAGLIA`, `RAZZE`,
 `ELITE`), `_dall_array`, `tetti_dai_ts`, `iniziativa_ambigua`, `des_vincolata`,
@@ -597,15 +597,15 @@ con `scripts/X.py --help`; `dm.py doctor --ci` verde.
 Non si passa al sotto-lotto successivo finché tutti questi non sono verdi:
 
 ```bash
-python3 -m pytest -q scripts/tests/                     # ≥ 1159 verdi, piu' i test nuovi
+python3 -m pytest -q scripts/tests/                     # ≥ 1165 verdi, piu' i test nuovi
 python3 -m pytest -q scripts/tests/test_impronta_creature.py   # impronta di E0 identica
 python3 scripts/extract_statblocks.py --check           # 0 problemi
 python3 scripts/validate_bestiario.py                   # catalogo in sync
 python3 scripts/validate_bestiario.py --rules           # 5 avvisi, gli stessi
 python3 scripts/genera_attributi.py --check             # 93 blocchi riproducibili
-python3 scripts/genera_attributi.py --taratura          # 1,50 / 1,54
+python3 scripts/genera_attributi.py --taratura          # 1,50 / 1,51
 python3 scripts/conformita_statblocchi.py --check
-python3 scripts/conformita_statblocchi.py --riepilogo   # 95 · 5 · 7 · 0 · 0
+python3 scripts/conformita_statblocchi.py --riepilogo   # 102 · 5 · 0 · 0 · 0
 python3 scripts/derive_statblocks.py                    # 2 proposte, 92 ferme
 python3 scripts/genera_creatura.py --gs 7 --ruolo bruto # stesso output di E0
 python3 scripts/decisioni_dm.py --check
@@ -640,11 +640,11 @@ lavorato: si rilegge questo piano prima di eseguirlo.
 git fetch origin main && git log --oneline -1 origin/main
 python3 scripts/fase1.py scripts/genera_attributi.py scripts/conformita_statblocchi.py \
     scripts/derive_statblocks.py scripts/genera_creatura.py      # regola G6, sola lettura
-wc -l scripts/{derive_statblocks,genera_attributi,genera_creatura,conformita_statblocchi}.py   # 3482
+wc -l scripts/{derive_statblocks,genera_attributi,genera_creatura,conformita_statblocchi}.py   # 3503
 grep -n "import conformita_statblocchi" scripts/genera_attributi.py                            # 1 riga
-python3 -m pytest -q scripts/tests/ | tail -1                                                  # 1159 passed
-python3 scripts/conformita_statblocchi.py --riepilogo                                          # 95 · 5 · 7 · 0 · 0
-python3 scripts/genera_attributi.py --taratura | grep "errore medio"                           # 1.5 · 1.54
+python3 -m pytest -q scripts/tests/ | tail -1                                                  # 1165 passed
+python3 scripts/conformita_statblocchi.py --riepilogo                                          # 102 · 5 · 0 · 0 · 0
+python3 scripts/genera_attributi.py --taratura | grep "errore medio"                           # 1.5 · 1.51
 python3 scripts/decisioni_dm.py --check                                                        # D1-D3 di QUALITA-CODICE aperte
 ```
 

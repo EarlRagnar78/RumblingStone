@@ -137,6 +137,21 @@ class TestGate(unittest.TestCase):
                          encoding="utf-8")
             self.assertEqual(E.controlla(f), [])
 
+    def test_un_altra_forma_non_e_la_prosa_del_blocco(self):
+        # D7: il druido combatte in forma d'orso (il blocco) e ha una forma
+        # umana con TS suoi, in una sezione a parte
+        forma = "\n## Forma umana\n\n- **Tempra:** +3 (+1 Base)\n- **Riflessi:** +1\n- **Volontà:** +2\n"
+        self.assertEqual(self._problemi(nota="", gs="7").__len__(), 0)
+        with tempfile.TemporaryDirectory() as d:
+            f = Path(d) / "lorana-cr7.md"
+            f.write_text(self.DOSSIER.format(ts="Temp +7, Rifl +4, Vol +5", nota="", gs="7") + forma,
+                         encoding="utf-8")
+            self.assertEqual(E.controlla(f), [])
+            # la prova che morde: la stessa sezione senza intestazione di forma e' prosa
+            f.write_text(self.DOSSIER.format(ts="Temp +3, Rifl +1, Vol +2", nota="", gs="7"),
+                         encoding="utf-8")
+            self.assertTrue(any("`ts` del blocco" in x for x in E.controlla(f)))
+
     def test_frazioni_equivalenti(self):
         self.assertEqual(E.gs_numerico("1/2"), E.gs_numerico("0.5"))
         self.assertEqual(E.gs_numerico("05"), 0.5)

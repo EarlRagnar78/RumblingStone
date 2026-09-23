@@ -57,24 +57,27 @@ Ispirato al druid lich di RHoD, ma upscalato a incontro per PG ~12.[web:78][web:
 
 ---
 
-## 2. Leoni Spettrali (guardie incorporee, CR 7–8)
+## 2. Leoni Spettrali (guardie incorporee, CR 8)
 
-Versione personalizzata basata su leone fantasma/ghost dire lion.[web:95][web:100]
+> **Lo statblocco sta nel Bestiario**: [`Bestiario/mostri/ghost-lion-spettrale-cr8.md`](../Bestiario/mostri/ghost-lion-spettrale-cr8.md).
+> Qui sotto c'è una copia di regia: **in caso di differenza vale il Bestiario**, perché due copie divergono alla prima errata (ADR-0021).
+> **Aggiornato il 2026-09-23 (D5 del DM)**: leone crudele di 9 DV con il template **fantasma PF1e**, scelto come la versione più forte fra 3.5 e PF1e. Prima questa sezione dava 9d12 (pf ~58), morso incorporeo +10 (2d6 freddo + energia negativa), TS +3/+7/+7.
 
-- Taglia/Tipo: Grande Non Morto Incorporeo.  
-- DV: 9d12 (pf ~58).  
-- Iniziativa: +6.  
-- Velocità: 12 m, volare 12 m (perfetta).  
-- CA: 20 (–1 taglia, +4 Des, +7 deflessione/incorporeo); contatto 20; colto alla sprovvista 16.  
-- BAB/Grapple: +4 / — (incorporeo).  
-- Attacco: morso incorporeo +10 (2d6 freddo + energia negativa).  
-- Attacco completo: 1 morso + eventuali artigli come attacchi secondari.  
-- TS: Temp +3, Rif +7, Vol +7.  
+- Taglia/Tipo: Grande Non Morto Incorporeo (fantasma PF1e).
+- DV: 9d8+63 (pf 103).
+- Iniziativa: +4.
+- Velocità: 12 m, volare 12 m (perfetta).
+- CA: 20 (–1 taglia, +4 Des, +7 deflessione); contatto 20; colto alla sprovvista 16.
+- BAB/Lotta: +6 / — (incorporeo).
+- Attacco: **tocco corruttore +9** (8d6, contatto incorporeo; Tempra CD 21 dimezza).
+- Gemito Terrificante: Volontà CD 21 o panico 2d4 round.
+- TS: Temp +10, Rif +7, Vol +7.
 - Qualità:
-  - Incorporeo, 50% miss chance vs attacchi non magici.  
-  - Passare attraverso muri/pavimenti.  
+  - Incorporeo, 50% di mancare contro gli attacchi non magici.
+  - Passare attraverso muri/pavimenti.
+  - Resistenza a incanalare +4, ringiovanimento.
 
-Usane 2–3 in camera del lich per portare l’incontro a CR 13.
+Usane 2–3 in camera del lich per portare l'incontro a CR 13.
 
 ---
 

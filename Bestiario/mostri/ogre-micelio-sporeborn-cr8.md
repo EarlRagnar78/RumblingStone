@@ -10,10 +10,13 @@ ca-dettaglio: (−1 taglia, +7 naturale [+5 base, +2 corteccia fungina], +3 pell
 pf: 68
 pf-dado: 4d8
 ts: Temp +10, Rifl +1, Vol +2
+attributi: For 27 Des 8 Cos 20 Int 7 Sag 13 Car 10
 velocita: 12 m
 attacchi:
   - Mischia randello enorme +13 (2d8+10) o 2 slam +13 (1d8+7)
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 Large giant (fungal graft), CE. **DV 4d8 + 4d12**. **hp 68**. **CA 18** (−1 taglia, +7 naturale [+5 base, +2 corteccia fungina], +3 pelle, −1 Des), contatto 8, colto alla sprovvista 18. Iniziativa −1. Vel 12 m.
 **TS** Temp +10, Rifl +1, Vol +2. **BAB/Lotta** +7/**+18**.

@@ -1,0 +1,823 @@
+#!/usr/bin/env python3
+"""genera_attributi.py — le caratteristiche dei PNG, VINCOLATE prima che generate.
+
+## Perche' esiste
+
+`RICERCA-CONFORMITA-MECCANICA-STATBLOCCHI` ha misurato il muro: solo **14
+statblocchi su 110** dichiarano `attributi`, e senza For/Des/Cos non si ricava
+nessuna delle identita' profonde — i pf dai DV e dalla Costituzione, i TS dalla
+progressione di classe, l'attacco da BAB + modificatore + taglia. Quelle tre
+identita' sono la strada verso il **primo `critico`** del punteggio, che il
+κ 0,0 di F3.3 dice mancare.
+
+Il DM, il 2026-09-21: *«generare coerentemente gli statblock nei 96 che non li
+hanno usando generatori random che utilizzano le regole di D&D 3.5 e/o PF1e o
+gli stat array elite e standard del manuale del DM (usa le regole deterministiche
+piu' affidabili con una percentuale di random in modo che non siano tutti
+uguali)»*.
+
+## Il principio: prima si copia, poi si legge, poi si sceglie, e il caso per ultimo
+
+Quattro strati, in quest'ordine. Ogni caratteristica scende di strato solo se il
+precedente non la determina. Misurato sui 94 file, 2026-09-23:
+
+| strato | da dove viene | file |
+|---|---|---:|
+| **0 · trascritto** | la fonte citata in `Bestiario/pregen-pcgen/` (export PCGen, SRD) | **39** |
+| **1 · letto** | la Destrezza scritta in `ca-dettaglio` (`+3 Dex`) | } **48** dei 55 |
+| **2 · derivato** | Des dalla CA di contatto; Cos da `pf` e `pf-dado` | } Cos su **26** |
+| **3 · scelto** | array del **Manuale del DM 3.5**, per ruolo, con taglia e razza SRD | **55** |
+
+🔴 **Lo strato 0 la prima stesura non l'aveva**, e generava numeri per 42 file
+che citano la loro fonte: per 39 di quelli la sestina c'e' e si copia. Le
+regole per sceglierla sono in `dalla_fonte`, e una che sembrava ragionevole e'
+stata tolta perche' dava al *myconid worker* la Forza del sovrano.
+
+🔴 **Lo strato 3 e' una scelta, non una misura**, e per questo **ogni blocco
+scritto porta `[INFERRED — needs DM confirmation]`**, con la sua provenienza e
+le divergenze trovate: e' la regola 5 di `AGENTS.md`, e non si aggira perche'
+il generatore e' bravo. Il confine con ADR-0033 lo discute ADR-0064.
+
+## Quanto sbaglia lo strato 3, misurato
+
+Dove la fonte c'e', la risposta vera e' nota: `--taratura` genera **come se
+la fonte non ci fosse** e confronta. Sui 39 file, errore medio **1,91 punti**
+(0,96 di modificatore), **79%** entro ±1 di modificatore. La prima stesura
+stava a 2,32: la differenza la fanno la taglia e la razza SRD e il riuso delle
+tabelle di `dmcore`. ⚠️ **Il numero e' in-campione**: le regole vengono
+dall'SRD, ma e' su questi 39 file che si e' visto che servivano. Le mentali
+(Int 2,7 · Car 2,3) restano le piu' lontane, perche' il ruolo dice come un
+PNG combatte e non quanto e' intelligente.
+
+## Gli array, e quando si usa quale
+
+Manuale del DM 3.5, PNG, tramite `dmcore.tabelle`:
+
+* **elite** — `15 14 13 12 10 8` — per le **creature** e per i ruoli di
+  `T.RUOLI_ELITE` (boss, elite, leader, caster…);
+* **standard** — `13 12 11 10 9 8` — per gli altri PNG con livelli di classe.
+
+Poi l'**avanzamento**, sul GS come surrogato dei DV (dichiarato: i DV totali
+stanno nel `tipo` solo nell'8% dei file); la **taglia** SRD per le creature
+(*Improving Monsters*: Large For +8, Des −2, Cos +4) e per i PNG di razza
+mostruosa; i **modificatori razziali** SRD per i PNG di razza comune. Non morti:
+**Cos —**. Scheletri e zombi: **Int —, Sag 10, Car 1**.
+
+## Il caso: quanto, e perche' a seme fisso
+
+Il DM ha chiesto *«una percentuale di random perche' non siano tutti uguali»*.
+La variazione e' **±1 su due caratteristiche secondarie, a somma zero**. Non
+tocca mai la caratteristica principale del ruolo, e non tocca lo strato 0.
+
+🔴 **Il seme e' il nome del file**, non l'orologio. Due esecuzioni sullo stesso
+repo danno gli **stessi** numeri: un generatore che a ogni giro cambia il
+canone non e' uno strumento, e' un dado che scrive sui file.
+
+## Cosa ha trovato strada facendo
+
+🐛 **`pf-dado` in 20 statblocchi su 95 e' il danno di un'arma**, non i dadi
+vita: `1d8+7` accanto a «hp 93 (12 HD)». Il controllo e' `pf_dado_sospetto`,
+e lo usa anche `validate_bestiario --rules`.
+
+## Cosa NON fa, dichiarato
+
+* **Non tocca i file con `attributi` scritti a mano**, ne' i `[POINTER]`, che
+  per progetto rimandano al file d'arco (ADR-0021). `--rigenera` riscrive
+  **solo** i blocchi che portano la sua marca.
+* **Non legge il PDF** del death tyrant: la sola stdlib non lo apre, e `--check`
+  in CI deve poter rigenerare tutto. Quel file resta generato, e lo dice.
+* **Non verifica** che i pf e i TS gia' scritti tornino con le caratteristiche:
+  e' la verifica che queste caratteristiche **abilitano**, e sara' il lotto dopo.
+
+## Uso
+
+    python3 scripts/genera_attributi.py              # proposta a video, non scrive
+    python3 scripts/genera_attributi.py --scrivi     # applica, marcando [INFERRED]
+    python3 scripts/genera_attributi.py --rigenera   # riscrive i soli blocchi suoi
+    python3 scripts/genera_attributi.py --taratura   # errore dello strato 3 sulle fonti
+    python3 scripts/genera_attributi.py --check      # esce 1 se un blocco generato non torna
+                                                     # con la regola, o e' duplicato
+"""
+from __future__ import annotations
+
+import argparse
+import html
+import random
+import re
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "scripts"))
+
+# 🔴 Le tabelle SRD stanno in `dmcore/tabelle.py`, e `genera_creatura` le usa
+# gia'. La prima stesura di questo script le aveva **ricopiate**, e ricopiando
+# aveva sbagliato due righe: il ranger a d10 (nel 3.5 e' d8) e «minuta» e
+# «minuscola» scambiate. Una tabella, un posto.
+from dmcore import tabelle as T  # noqa: E402
+
+#: Manuale del DM 3.5 — gli array dei PNG (identici alle *heroic*/*basic* PF1e).
+ARRAY_ELITE = T.ELITE
+ARRAY_STANDARD = T.BASIC
+
+#: Il ruolo dichiarato decide **l'ordine di priorita'** delle sei
+#: caratteristiche: il valore piu' alto dell'array va alla prima della riga.
+#: Si cerca la prima parola chiave che compare nel ruolo, in quest'ordine.
+PROFILI = (
+    ("psionic",     ("Int", "Cos", "Des", "Sag", "Car", "For")),
+    ("psi",         ("Int", "Cos", "Des", "Sag", "Car", "For")),
+    ("arcane",      ("Int", "Des", "Cos", "Car", "Sag", "For")),
+    ("blaster",     ("Int", "Des", "Cos", "Car", "Sag", "For")),
+    ("divine",      ("Sag", "Cos", "For", "Car", "Des", "Int")),
+    ("divino",      ("Sag", "Cos", "For", "Car", "Des", "Int")),
+    ("warpriest",   ("Sag", "For", "Cos", "Car", "Des", "Int")),
+    ("envoy",       ("Car", "Des", "Cos", "Int", "Sag", "For")),
+    ("subdolo",     ("Car", "Des", "Cos", "Int", "Sag", "For")),
+    ("infiltrator", ("Des", "Car", "Cos", "Int", "Sag", "For")),
+    ("stealth",     ("Des", "Car", "Cos", "Int", "Sag", "For")),
+    ("caster",      ("Car", "Des", "Cos", "Int", "Sag", "For")),
+    ("gish",        ("For", "Int", "Cos", "Des", "Sag", "Car")),
+    ("ranged",      ("Des", "For", "Cos", "Sag", "Int", "Car")),
+    ("scout",       ("Des", "Sag", "Cos", "For", "Int", "Car")),
+    ("skirmisher",  ("Des", "For", "Cos", "Sag", "Int", "Car")),
+    ("ambusher",    ("Des", "Sag", "Cos", "For", "Int", "Car")),
+    ("flier",       ("Des", "For", "Cos", "Sag", "Car", "Int")),
+    ("aerial",      ("Des", "Cos", "For", "Sag", "Car", "Int")),
+    ("mount",       ("For", "Cos", "Des", "Sag", "Car", "Int")),
+    ("brute",       ("For", "Cos", "Des", "Sag", "Car", "Int")),
+    ("defender",    ("Cos", "For", "Des", "Sag", "Car", "Int")),
+    ("guard",       ("Cos", "For", "Des", "Sag", "Car", "Int")),
+    ("tank",        ("Cos", "For", "Des", "Sag", "Car", "Int")),
+    ("guardian",    ("Cos", "For", "Des", "Sag", "Car", "Int")),
+    ("commander",   ("Car", "For", "Cos", "Sag", "Des", "Int")),
+    ("leader",      ("Car", "For", "Cos", "Sag", "Des", "Int")),
+    ("officer",     ("Car", "For", "Cos", "Sag", "Des", "Int")),
+    ("shock",       ("For", "Des", "Cos", "Sag", "Car", "Int")),
+    ("melee",       ("For", "Cos", "Des", "Sag", "Car", "Int")),
+    ("fodder",      ("For", "Cos", "Des", "Sag", "Car", "Int")),
+    ("wave",        ("For", "Cos", "Des", "Sag", "Car", "Int")),
+    ("hazard",      ("Cos", "For", "Des", "Sag", "Car", "Int")),
+)
+PROFILO_DI_RIPIEGO = ("For", "Cos", "Des", "Sag", "Car", "Int")
+ELITE = T.RUOLI_ELITE
+
+ORDINE = ("For", "Des", "Cos", "Int", "Sag", "Car")
+
+#: I modificatori di taglia alla CA, per ricavare la Destrezza dalla CA di contatto.
+TAGLIA = {nome: ca for nome, (_, ca) in T.TAGLIE.items()}
+
+BLOCCO = re.compile(r"```statblocco\n(.*?)```", re.S)
+DES_SCRITTA = re.compile(r"([+-]\s*\d+)\s*(?:Des|Dex|destrezza)\b", re.I)
+CONTATTO = re.compile(r"(?:touch|contatto)\s*(\d+)", re.I)
+#: Le abbreviazioni con cui le schede scrivono le classi, e le due classi di
+#: prestigio SRD che compaiono nel Bestiario e non stanno in `dmcore`.
+ABBREVIAZIONI = {"ftr": "fighter", "wiz": "wizard", "clr": "cleric", "rog": "rogue",
+                 "rgr": "ranger", "brb": "barbarian", "bbn": "barbarian",
+                 "sor": "sorcerer", "mnk": "monk", "drd": "druid", "pal": "paladin",
+                 "guerrier": "guerriero", "chieric": "chierico", "barbar": "barbaro",
+                 "ladr": "ladro", "stregon": "stregone", "monac": "monaco",
+                 "druid": "druid", "magi": "mago"}
+PRESTIGIO = {"blackguard": 10, "assassin": 6}
+DADO_DI_CLASSE = {**{n: d for n, (d, _) in T.CLASSI.items()}, **PRESTIGIO,
+                  **{a: T.CLASSI[n][0] for a, n in ABBREVIAZIONI.items()}}
+#: Se il `tipo` nomina una classe, lo statblocco e' un PNG e gli array del
+#: Manuale del DM sono lo strumento giusto. Se no, e' una creatura.
+CLASSE_NEL_TIPO = re.compile(
+    r"\b(" + "|".join(sorted(map(re.escape, DADO_DI_CLASSE), key=len, reverse=True))
+    + r")\w*\s*\d+", re.I)
+NON_MORTO = re.compile(r"\b(?:undead|non[ -]?mort[oi])\b", re.I)
+MODELLO_SENZA_MENTE = re.compile(r"skelet|schelet|zombi", re.I)
+
+
+mod = T.mod
+
+
+def da_modificatore(m: int) -> int:
+    """Il punteggio piu' basso che da' quel modificatore: 10 + 2m."""
+    return max(1, 10 + 2 * m)
+
+
+def taglia_di(testo: str) -> int:
+    tipo = re.search(r"^tipo:\s*(.+)$", testo, re.M)
+    if not tipo:
+        return 0
+    basso = tipo.group(1).lower()
+    for nome, val in TAGLIA.items():
+        if re.search(rf"\b{nome}\b", basso):
+            return val
+    return 0
+
+
+def des_vincolata(testo: str, gs: float = 30.0) -> "tuple[int, str] | None":
+    """Strato 1 e 2: la Destrezza che il file **gia' dichiara**."""
+    d = re.search(r"^ca-dettaglio:\s*(.+)$", testo, re.M)
+    if not d:
+        return None
+    m = DES_SCRITTA.search(d.group(1))
+    if m:
+        return da_modificatore(int(m.group(1).replace(" ", ""))), "letta da ca-dettaglio"
+    ca = re.search(r"^ca:\s*(\d+)", testo, re.M)
+    c = CONTATTO.search(d.group(1))
+    if c and ca:
+        # contatto = 10 + mod Des + taglia  →  mod Des = contatto − 10 − taglia
+        m_des = int(c.group(1)) - 10 - taglia_di(testo)
+        # la CA di contatto somma anche deviazione e schivata: se il numero
+        # che ne esce non e' credibile per il GS, la differenza non e' Destrezza
+        if -5 <= m_des and plausibile(m_des, gs):
+            return da_modificatore(m_des), "derivata dalla CA di contatto"
+    return None
+
+
+PF_DADO = re.compile(r"^pf-dado:\s*(.+)$", re.M)
+DV_DICHIARATI = re.compile(r"\((\d+)\s*(?:HD|DV)\)|^tipo:.*?\b(\d+)\s*(?:HD|DV)\b", re.M)
+PEZZO_DADO = re.compile(r"(\d+)d(\d+)")
+BONUS_DADO = re.compile(r"([+-]\s*\d+)")
+#: Sotto questo il modificatore non e' una Costituzione ma un `pf` scritto male.
+MOD_MINIMO = -2
+
+
+def plausibile(m: int, gs: float) -> bool:
+    """Un modificatore **derivato** e' credibile solo se il GS lo regge.
+
+    🐛 **La prima guardia era cieca al GS** (`-2 … +12`) e lasciava passare tre
+    Costituzioni da 34: un duergar mago da GS 4, un loxo da GS 4, un ogre da
+    GS 8. Tutti e tre per la stessa ragione — `pf-dado` registra solo i DV
+    razziali di una creatura che ha anche livelli di classe — e tutti e tre
+    con un +12 che nessuna creatura di quella sfida ha. Il tetto `3 + GS/2`
+    lascia passare il +8 del bruto da GS 11 (`14d8`, 172 pf: e' vero) e
+    respinge i tre.
+    """
+    return MOD_MINIMO <= m <= 3 + gs / 2
+
+
+def pf_dado_sospetto(testo: str, gs: "float | None" = None) -> "str | None":
+    """Perche' `pf-dado` **non** registra i dadi vita, o None se sembra farlo.
+
+    🐛 **Il campo non sempre registra i dadi vita.** In 20 statblocchi su 95
+    `pf-dado` porta **il danno dell'arma** — `1d8+7` accanto a «hp 93 (12
+    HD)» e' il martello di Morlin — e la prima stesura del generatore ne
+    ricavava Cos 24. Tre controlli, dal piu' certo al piu' indiziario; lo usa
+    anche `validate_bestiario --rules`, perche' una norma ha un rilevatore.
+    """
+    md = PF_DADO.search(testo)
+    if not md:
+        return None
+    pezzi = PEZZO_DADO.findall(md.group(1))
+    dv = sum(int(a) for a, _ in pezzi)
+    if not dv:
+        return None
+    # 1 · il testo dichiara i DV, e non tornano coi dadi
+    dichiarati = DV_DICHIARATI.search(testo)
+    if dichiarati:
+        n = int(next(g for g in dichiarati.groups() if g))
+        if n != dv:
+            return (f"pf-dado «{md.group(1).strip()}» ha {dv} dad{'o' if dv == 1 else 'i'}, "
+                    f"il testo dichiara {n} DV")
+    # 2 · l'umanoide senza DV razziali tira solo il dado delle sue classi (SRD)
+    tipo = re.search(r"^tipo:\s*(.+)$", testo, re.M)
+    if tipo and re.search(r"\bhumanoid|umanoide", tipo.group(1), re.I):
+        attesi = {DADO_DI_CLASSE[c.lower()] for c in CLASSE_NEL_TIPO.findall(tipo.group(1))}
+        facce = {int(b) for _, b in pezzi}
+        if attesi and not (facce & attesi):
+            return (f"pf-dado «{md.group(1).strip()}» in d{'/d'.join(map(str, sorted(facce)))}, "
+                    f"ma le classi del tipo tirano d{'/d'.join(map(str, sorted(attesi)))}")
+    # 3 · un dado solo a GS 2 o piu' e' quasi sempre un'arma (indizio, non prova)
+    if gs is not None and dv == 1 and gs >= 2 and not dichiarati:
+        return f"pf-dado «{md.group(1).strip()}» ha un dado solo a GS {gs:g}"
+    return None
+
+
+def cos_da_pf(testo: str, gs: float = 30.0) -> "tuple[int, str] | None":
+    """Strato 2-bis: la Costituzione **si ricava** da `pf` e `pf-dado`.
+
+    In 3.5 i punti ferita medi sono `DV × (faccia+1)/2 + DV × mod Cos`, quindi
+    col totale e i dadi il modificatore e' aritmetica:
+
+        mod Cos = (pf − media dei dadi − bonus scritti) / DV
+
+    🔴 **E serve una guardia, perche' il campo mente in un caso preciso.** In
+    molti file `pf-dado` registra i **soli DV razziali** di una creatura che ha
+    anche livelli di classe: `4d8` accanto a `pf 80` darebbe Cos +15, cioe' 40.
+    Misurato sul repo, l'identita' torna su **30 statblocchi su 95** e sugli
+    altri 65 il campo e' sotto-specificato. Fuori dalla fascia plausibile il
+    risultato **si butta** e si scende all'array: un numero derivato male e'
+    peggio di un numero scelto, perche' sembra misurato.
+    """
+    mp = re.search(r"^pf:\s*(\d+)", testo, re.M)
+    md = PF_DADO.search(testo)
+    if not (mp and md):
+        return None
+    pezzi = PEZZO_DADO.findall(md.group(1))
+    if not pezzi:
+        return None
+    dv = sum(int(a) for a, _ in pezzi)
+    if not dv:
+        return None
+    if pf_dado_sospetto(testo, gs):
+        return None
+    media = sum(int(a) * (int(b) + 1) / 2 for a, b in pezzi)
+    bonus = sum(int(x.replace(" ", "")) for x in BONUS_DADO.findall(PEZZO_DADO.sub("", md.group(1))))
+    m_cos = round((int(mp.group(1)) - media - bonus) / dv)
+    # il bonus scritto (`7d4+7`) E' gia' il Cos × DV: se c'e', si usa quello
+    if bonus and dv:
+        m_cos = round(bonus / dv)
+    if not plausibile(m_cos, gs):
+        return None
+    return da_modificatore(m_cos), f"ricavata da pf {mp.group(1)} su {dv} DV"
+
+
+# ---------------------------------------------------------------------------
+# Strato 0 · la fonte citata
+# ---------------------------------------------------------------------------
+#: 🔴 **Lo strato che la prima stesura non aveva.** 42 dei 94 statblocchi
+#: senza `attributi` citano un export in `Bestiario/pregen-pcgen/`, e 41 di
+#: quelle fonti portano le sei caratteristiche in chiaro. Per quei file i
+#: numeri **esistono**: generarli era inventare quello che bastava copiare.
+CITAZIONE = re.compile(r"pregen-pcgen/[^)`|\]\n]*?\.(?:html?|pcg|txt)")
+_V = r"(\d+|—|-(?!\s*\d))"     # un punteggio, o «—»; «-4» e' un modificatore, e si scarta
+SESTINA = re.compile(
+    r"\bStr\w*\s*:?\s*" + _V + r"\s*[,;]?\s*Dex\w*\s*:?\s*" + _V +
+    r"\s*[,;]?\s*Con\w*\s*:?\s*" + _V + r"\s*[,;]?\s*Int\w*\s*:?\s*" + _V +
+    r"\s*[,;]?\s*Wis\w*\s*:?\s*" + _V + r"\s*[,;]?\s*Cha\w*\s*:?\s*" + _V, re.I)
+PCG_STAT = re.compile(r"^STAT:(STR|DEX|CON|INT|WIS|CHA)\|SCORE:(\d+)", re.M)
+_PCG = ("STR", "DEX", "CON", "INT", "WIS", "CHA")
+
+
+def _testo_fonte(p: Path) -> str:
+    """Il testo della fonte, **con gli a capo**: servono a trovare le intestazioni."""
+    t = p.read_text(encoding="utf-8", errors="replace")
+    if p.suffix in (".htm", ".html"):
+        t = html.unescape(re.sub(r"<[^>]+>", " ", t))
+    return t
+
+
+def _punteggio(v: str):
+    return "—" if v in ("—", "-") else int(v)
+
+
+def _parole(testo: str) -> frozenset:
+    """Le parole di un nome, senza numeri e senza plurale inglese."""
+    fuori = set()
+    for w in re.findall(r"[a-zà-ù]+", testo.lower()):
+        if len(w) > 4 and w.endswith("s"):
+            w = w[:-1]
+        fuori.add(w)
+    return frozenset(fuori)
+
+
+def parole_del_file(nome_file: str) -> frozenset:
+    radice = re.sub(r"-cr[\d.]+$", "", Path(nome_file).stem)
+    return _parole(" ".join(t for t in radice.split("-") if not re.search(r"\d", t)))
+
+
+INTESTAZIONE = re.compile(r"^\s*\d+[.)]\s+([A-Za-z][A-Za-z ,'-]{2,60}?)\s*$", re.M)
+
+
+def sestine_citate(testo: str) -> "list[tuple[str, tuple, bool, frozenset]]":
+    """(fonte, sestina in ORDINE, dedicata?, parole dell'intestazione) per fonte.
+
+    *Dedicata* vuol dire che la fonte porta **una** sola sestina: e' la scheda
+    di quella creatura, non un file che ne raccoglie parecchie. Per le altre
+    conta l'**ultima intestazione numerata** prima della sestina («2. Myconid
+    Elite Guards»): e' l'unico modo di sapere di chi e' senza indovinare.
+    """
+    fuori = []
+    for rel in sorted(set(CITAZIONE.findall(testo))):
+        p = ROOT / "Bestiario" / rel
+        if not p.is_file():
+            continue
+        if p.suffix == ".pcg":
+            s = dict(PCG_STAT.findall(p.read_text(encoding="utf-8", errors="replace")))
+            if len(s) == 6:
+                fuori.append((rel, tuple(int(s[k]) for k in _PCG), True, frozenset()))
+            continue
+        t = _testo_fonte(p)
+        trovate = []
+        for m in SESTINA.finditer(t):
+            sestina = tuple(_punteggio(v) for v in m.groups())
+            capi = INTESTAZIONE.findall(t, 0, m.start())
+            trovate.append((sestina, _parole(capi[-1]) if capi else frozenset()))
+        distinte = {x for x, _ in trovate}
+        fuori += [(rel, x, len(distinte) == 1, capo) for x, capo in trovate]
+    return fuori
+
+
+def dalla_fonte(nome_file: str, testo: str) -> "tuple[dict, str] | None":
+    """Strato 0: una sestina **sola**, scelta con una regola che si puo' dire.
+
+    1. se le fonti *dedicate* concordano su una sestina, e' quella;
+    2. altrimenti, quella **sola** la cui intestazione ha le parole del nome
+       del file (`myconid-elite-guard` ↔ «Myconid Elite Guards»);
+    3. altrimenti niente.
+
+    🐛 **Una terza regola c'era, ed e' stata tolta.** «Fra le candidate, la
+    sola che torna con CA e pf del file» ha dato al *myconid worker* la
+    sestina del *sovrano*, For 26: la fonte e' una bozza con GS diversi da
+    quelli del Bestiario, e un numero che torna per caso non dice di chi e'.
+    Una trascrizione sbagliata con scritto «trascritta» e' peggio di un numero
+    generato, perche' sembra una misura.
+    """
+    cand = sestine_citate(testo)
+    if not cand:
+        return None
+    dedicate = {t for _, t, d, _ in cand if d}
+    if len(dedicate) == 1:
+        t = dedicate.pop()
+        fonte = next(f for f, x, d, _ in cand if d and x == t)
+        return dict(zip(ORDINE, t)), f"trascritta dalla fonte `{Path(fonte).name}`"
+    mie = parole_del_file(nome_file)
+    per_nome = {t for _, t, _, capo in cand if capo and capo == mie}
+    if len(per_nome) == 1:
+        t = per_nome.pop()
+        fonte = next(f for f, x, _, capo in cand if x == t and capo == mie)
+        return (dict(zip(ORDINE, t)),
+                f"trascritta da `{Path(fonte).name}`, sotto l'intestazione che porta il suo nome")
+    return None
+
+
+def profilo_di(ruolo: str) -> "tuple[str, ...]":
+    basso = ruolo.lower()
+    for chiave, ordine in PROFILI:
+        if chiave in basso:
+            return ordine
+    return PROFILO_DI_RIPIEGO
+
+
+#: SRD 3.5, *Improving Monsters*, «Changes to Statistics by Size», sommati a
+#: partire da Media. Si applicano solo alle **creature**: un PNG con livelli
+#: di classe ha gia' la taglia nella razza.
+PER_TAGLIA = {
+    8: (-10, 8, -2), 4: (-10, 6, -2), 2: (-8, 4, -2), 1: (-4, 2, -2), 0: (0, 0, 0),
+    -1: (8, -2, 4), -2: (16, -4, 8), -4: (24, -4, 12), -8: (32, -4, 16),
+}
+
+#: SRD 3.5, modificatori razziali, per i PNG con livelli di classe. L'ordine
+#: conta: `hobgoblin` prima di `goblin`, `duergar` prima di `nano`.
+RAZZE = (
+    ("hobgoblin",   {"Des": 2, "Cos": 2}),
+    ("bugbear",     {"For": 4, "Des": 2, "Cos": 2, "Car": -2}),
+    ("goblin",      {"For": -2, "Des": 2, "Car": -2}),
+    ("half-orc",    {"For": 2, "Int": -2, "Car": -2}),
+    ("mezzorc",     {"For": 2, "Int": -2, "Car": -2}),
+    ("orc",         {"For": 4, "Int": -2, "Sag": -2, "Car": -2}),
+    ("orco",        {"For": 4, "Int": -2, "Sag": -2, "Car": -2}),
+    ("duergar",     {"Cos": 2, "Car": -4}),
+    ("dwarf",       {"Cos": 2, "Car": -2}),
+    ("nano",        {"Cos": 2, "Car": -2}),
+    ("drow",        {"Des": 2, "Cos": -2, "Int": 2, "Car": 2}),
+    ("elf",         {"Des": 2, "Cos": -2}),
+    ("elfo",        {"Des": 2, "Cos": -2}),
+    ("svirfneblin", {"For": -2, "Des": 2, "Sag": 2, "Car": -4}),
+    ("gnome",       {"For": -2, "Cos": 2}),
+    ("gnomo",       {"For": -2, "Cos": 2}),
+    ("halfling",    {"For": -2, "Des": 2}),
+    ("kobold",      {"For": -4, "Des": 2, "Cos": -2}),
+    ("gnoll",       {"For": 4, "Cos": 2, "Int": -2, "Car": -2}),
+    ("lizardfolk",  {"For": 2, "Cos": 2, "Int": -2}),
+)
+
+
+def razza_di(nome_file: str, tipo: str) -> "tuple[str, dict] | None":
+    dove = (nome_file + " " + tipo).lower()
+    for nome, mods in RAZZE:
+        if re.search(rf"(?<![a-z]){re.escape(nome)}", dove):
+            return nome, mods
+    return None
+
+
+def _dall_array(nome_file: str, ruolo: str, gs: float, testo: str, png: bool) -> "tuple[dict, list[str]]":
+    """Strato 3: array del Manuale del DM per ruolo, piu' taglia, razza e caso."""
+    note = []
+    elite = any(k in ruolo.lower() for k in ELITE)
+    # 🔴 **Due regimi, e la prima stesura ne aveva uno solo.** Gli array del
+    # Manuale del DM sono tarati sui **PNG con livelli di classe**; applicati a
+    # un mostro da GS 11 davano Forza 15, cioe' meno di un guerriero di 3°.
+    # La distinzione la porta il campo `tipo`: se nomina una classe, e' un PNG.
+    # 🐛 **La prima stesura cercava in tutto il file** e classificava come PNG
+    # un gigante e una naga, perche' la loro prosa nomina «Barbaro 2» e
+    # «Sorcerer 8» — varianti e note, non il loro tipo. Si guarda **solo** il
+    # campo `tipo`, che e' quello che lo dichiara.
+    array = list(ARRAY_ELITE if (elite or not png) else ARRAY_STANDARD)
+    note.append(f"array {'elite' if (elite or not png) else 'standard'} del "
+                f"Manuale del DM ({'PNG con classe' if png else 'creatura'})")
+    priorita = list(profilo_di(ruolo))
+
+    rng = random.Random(nome_file)     # 🔴 il seme e' il NOME, non l'orologio
+    # il caso: ±1 a somma zero su due secondarie (mai la principale)
+    valori = dict(zip(priorita, array))
+    secondarie = priorita[2:]
+    if len(secondarie) >= 2:
+        su, giu = rng.sample(secondarie, 2)
+        valori[su] += 1
+        valori[giu] -= 1
+        note.append(f"variazione a seme fisso: {su} +1, {giu} −1")
+
+    # avanzamento: +1 ogni 4 DV (PHB). I DV totali ci sono nell'8% dei file,
+    # quindi si usa il GS come surrogato — dichiarato, non nascosto.
+    if png:
+        # PHB: +1 a una caratteristica ogni 4 livelli.
+        passo, dove = 4, priorita[:1]
+        nota = f"un avanzamento ogni 4 livelli, contati sul GS {gs:g}"
+    else:
+        # Una creatura da GS alto non e' un PNG con molti livelli: nel Manuale
+        # dei Mostri le sue caratteristiche crescono **con i DV**, e molto piu'
+        # in fretta. Il passo e' tarato perche' a GS 11 la principale stia
+        # intorno a 20-21, che e' la fascia del MM per quella sfida.
+        passo, dove = 2, priorita[:3]
+        nota = f"creatura: la principale sale ogni 2 GS, le due dopo ogni 4 (GS {gs:g})"
+    for i, c in enumerate(dove):
+        quanto = int(gs) // (passo if i == 0 else 4)
+        if quanto:
+            valori[c] += quanto
+    if int(gs) >= passo:
+        note.append(nota + " — surrogato dichiarato: i DV totali stanno nel campo "
+                    "`tipo` solo nell'8% dei file")
+
+    # SRD: la taglia per le creature, la razza per i PNG. La prima stesura non
+    # aveva ne' l'una ne' l'altra, e `--taratura` l'ha fatto vedere: sulla
+    # Forza sbagliava di quasi 4 punti, e il drago rosso usciva con For 17.
+    m_tipo = re.search(r"^tipo:\s*(.+)$", testo, re.M)
+    tipo = m_tipo.group(1) if m_tipo else ""
+    r = razza_di(nome_file, tipo) if png else None
+    if r:
+        for c, d in r[1].items():
+            valori[c] += d
+        note.append(f"modificatori razziali SRD: {r[0]} "
+                    + " ".join(f"{c} {d:+d}" for c, d in r[1].items()))
+    else:
+        # una creatura, o un PNG con livelli di classe ma di razza mostruosa
+        # (minotauro, ogre): la taglia gli spetta comunque
+        f, d, c = PER_TAGLIA.get(taglia_di(testo), (0, 0, 0))
+        if (f, d, c) != (0, 0, 0):
+            valori["For"] += f
+            valori["Des"] += d
+            valori["Cos"] += c
+            note.append(f"taglia (SRD, Improving Monsters): For {f:+d}, Des {d:+d}, Cos {c:+d}")
+    for k in valori:
+        valori[k] = max(1, valori[k])
+    return valori, note
+
+
+def genera(nome_file: str, ruolo: str, gs: float, testo: str,
+           usa_fonte: bool = True) -> "tuple[dict, list[str]]":
+    """Le sei caratteristiche, con la nota di **come** ciascuna e' stata ottenuta.
+
+    `usa_fonte=False` salta lo strato 0: serve a misurare quanto sbaglia lo
+    strato 3 sui file dove la risposta vera c'e' (`--taratura`).
+    """
+    # 🔴 **Due regimi, e la prima stesura ne aveva uno solo.** Gli array del
+    # Manuale del DM sono tarati sui **PNG con livelli di classe**; applicati a
+    # un mostro da GS 11 davano Forza 15, cioe' meno di un guerriero di 3°.
+    # La distinzione la porta il campo `tipo`: se nomina una classe, e' un PNG.
+    # 🐛 **La prima stesura cercava in tutto il file** e classificava come PNG
+    # un gigante e una naga, perche' la loro prosa nomina «Barbaro 2» e
+    # «Sorcerer 8» — varianti e note, non il loro tipo. Si guarda **solo** il
+    # campo `tipo`, che e' quello che lo dichiara.
+    m_tipo = re.search(r"^tipo:\s*(.+)$", testo, re.M)
+    tipo = m_tipo.group(1) if m_tipo else ""
+    png = bool(CLASSE_NEL_TIPO.search(tipo))
+    fonte = dalla_fonte(nome_file, testo) if usa_fonte else None
+    if fonte:
+        valori, come = fonte
+        note = [come]
+    else:
+        valori, note = _dall_array(nome_file, ruolo, gs, testo, png)
+
+    # il vincolo vince sempre, anche sulla fonte: la fonte e' l'origine, lo
+    # statblocco e' quello che si gioca, e dove divergono la scheda e' stata
+    # adattata. La divergenza si scrive, perche' e' un'informazione per il DM.
+    nonmorto = bool(NON_MORTO.search(tipo))
+    for campo, trova in (("Des", des_vincolata), ("Cos", cos_da_pf)):
+        if campo == "Cos" and nonmorto:
+            continue
+        vincolo = trova(testo, gs)
+        if not vincolo:
+            continue
+        valore, come = vincolo
+        prima = valori[campo]
+        if fonte and isinstance(prima, int) and mod(prima) == mod(valore):
+            continue                              # la fonte torna: si tiene la fonte
+        if fonte and campo == "Cos" and " su 1 DV" in come:
+            # con un DV solo non si sa se il pf e' la media o il massimo del
+            # dado (PCGen da' il massimo al 1° livello): il conto e' ambiguo
+            note.append(f"⚠ i pf suggeriscono {campo} {valore}, la fonte dice {prima}: "
+                        "con 1 DV il conto dipende da media o massimo, si tiene la fonte.")
+            continue
+        if fonte and come.startswith("derivata"):
+            # la CA di contatto somma anche deviazione e schivata: e' un
+            # indizio piu' debole di una fonte trascritta, e non la batte
+            note.append(f"⚠ la CA di contatto suggerisce {campo} {valore}, la fonte "
+                        f"dice {prima}: si tiene la fonte, la differenza può essere "
+                        "deviazione o schivata, da verificare.")
+            continue
+        valori[campo] = valore
+        if fonte:
+            note.append(f"⚠ {campo} {valore} {come}: la fonte dice {prima}, "
+                        "lo statblocco è stato adattato e vince lo statblocco")
+        else:
+            note.append(f"{campo} {valore} **{come}** — il vincolo batte l'array")
+
+    # SRD 3.5, tipo non morto: **nessun punteggio di Costituzione**. I suoi pf
+    # vengono da d12 senza modificatore, e un Cos 10 scritto accanto sarebbe
+    # un errore di regole, non una scelta.
+    if nonmorto and valori["Cos"] != "—":
+        valori["Cos"] = "—"
+        note.append("Cos — : non morto, nessun punteggio di Costituzione (SRD, tipo Undead)")
+    # SRD 3.5, modelli scheletro e zombi: Int —, Sag 10, Car 1. Sono i soli due
+    # casi in cui la regola scrive le mentali da se', e si applica quella.
+    if not fonte and MODELLO_SENZA_MENTE.search(tipo + " " + nome_file):
+        valori.update({"Int": "—", "Sag": 10, "Car": 1})
+        note.append("Int —, Sag 10, Car 1: modello scheletro/zombi (SRD)")
+    return valori, note
+
+
+def riga_attributi(v: dict) -> str:
+    return "attributi: " + " ".join(f"{k} {v[k]}" for k in ORDINE)
+
+
+#: La riga che marca un blocco **scritto da questo script**. E' specifica: un
+#: `[INFERRED` generico gia' presente nel file non basta, perche' parla
+#: d'altro, e `--check` e `--rigenera` devono ritrovare esattamente i blocchi
+#: suoi. La coda dice **da dove** vengono i numeri, file per file.
+MARCA = "> [INFERRED — needs DM confirmation] `attributi` "
+CODA_FONTE = ("trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da "
+              "`scripts/genera_attributi.py`. Confermali o correggili.")
+CODA_ARRAY = ("generati da `scripts/genera_attributi.py`: array del Manuale del DM "
+              "con taglia e razza SRD, vincolati da CA e pf dove il file li "
+              "dichiara. Confermali o correggili.")
+RIGA_MARCA = re.compile("^" + re.escape(MARCA) + ".*$", re.M)
+
+
+def statblocchi(rigenera: bool = False) -> "list[Path]":
+    """I file da generare; con `rigenera`, anche quelli gia' generati da qui."""
+    fuori = []
+    for p in sorted(ROOT.glob("Bestiario/*/*-cr*.md")) + sorted(ROOT.glob("Bestiario/*/*/*-cr*.md")):
+        t = p.read_text(encoding="utf-8", errors="replace")
+        if "[POINTER" in t or "[RIMANDO]" in t:
+            continue
+        if not BLOCCO.search(t):
+            continue
+        if re.search(r"^attributi:", t, re.M) and not (rigenera and MARCA in t):
+            continue
+        fuori.append(p)
+    return fuori
+
+
+def proponi(rigenera: bool = False) -> "list[dict]":
+    fuori = []
+    for p in statblocchi(rigenera):
+        t = p.read_text(encoding="utf-8", errors="replace")
+        ruolo = re.search(r"\*\*Role\*\*:\s*([^\|\n]+)", t, re.I)
+        gs = re.search(r"^gs:\s*([\d.,]+)", t, re.M)
+        if not (ruolo and gs):
+            continue
+        v, note = genera(p.name, ruolo.group(1).strip(),
+                         float(gs.group(1).replace(",", ".")), t)
+        scritta = re.search(r"^attributi:.*$", t, re.M)
+        fuori.append({"file": p, "ruolo": ruolo.group(1).strip(),
+                      "attributi": v, "riga": riga_attributi(v), "note": note,
+                      "marca": MARCA + (CODA_FONTE if note[0].startswith("trascritt") else CODA_ARRAY)
+                               + "".join(" " + n for n in note if n.startswith("⚠")),
+                      "scritta": scritta.group(0) if scritta else None})
+    return fuori
+
+
+def applica(prop: "list[dict]", rigenera: bool = False) -> int:
+    """Scrive i blocchi. Idempotente: un secondo giro non cambia un byte.
+
+    Senza `rigenera` salta i file che hanno gia' `attributi`; con `rigenera`
+    riscrive **solo** quelli che portano la marca di questo script, mai un
+    blocco scritto a mano.
+    """
+    scritti = 0
+    for r in prop:
+        t = r["file"].read_text(encoding="utf-8", errors="replace")
+        if r["scritta"]:
+            if not (rigenera and MARCA in t):
+                continue
+            nuovo_t = re.sub(r"^attributi:.*$", lambda _: r["riga"], t, count=1, flags=re.M)
+            nuovo_t = RIGA_MARCA.sub(lambda _: r["marca"], nuovo_t, count=1)
+            if nuovo_t != t:
+                r["file"].write_text(nuovo_t, encoding="utf-8")
+                scritti += 1
+            continue
+        m = BLOCCO.search(t)
+        corpo = m.group(1)
+        # dopo `ts:` se c'e', altrimenti in coda al blocco: e' il posto in cui
+        # i 14 file che gia' l'hanno lo scrivono.
+        if re.search(r"^ts:.*$", corpo, re.M):
+            nuovo = re.sub(r"^(ts:.*)$", lambda x: x.group(1) + "\n" + r["riga"],
+                           corpo, count=1, flags=re.M)
+        else:
+            nuovo = corpo.rstrip("\n") + "\n" + r["riga"] + "\n"
+        t = t[:m.start(1)] + nuovo + t[m.end(1):]
+        # la marca va subito sotto il blocco chiuso: sempre, e sempre li'
+        fine = t.index("```", m.start(1) + len(nuovo)) + 3
+        t = t[:fine] + "\n\n" + r["marca"] + t[fine:]
+        r["file"].write_text(t, encoding="utf-8")
+        scritti += 1
+    print(f"✓ scritti {scritti} blocchi `attributi`, tutti marcati [INFERRED]")
+    return 0
+
+
+VALORE = re.compile(r"(For|Des|Cos|Int|Sag|Car) (\d+|—)")
+
+
+def controlla() -> "list[str]":
+    """Tre promesse, e il cancello le verifica tutte e tre sui file veri."""
+    problemi = []
+    for r in proponi(rigenera=True):
+        nome = r["file"].name
+        if r["scritta"] and r["scritta"] != r["riga"]:
+            problemi.append(f"{nome}: scritto «{r['scritta']}», la regola da' «{r['riga']}»")
+        if r["scritta"] and r["marca"] not in r["file"].read_text(encoding="utf-8"):
+            problemi.append(f"{nome}: la marca non dice piu' da dove vengono i numeri")
+        for c, v in VALORE.findall(r["riga"]):
+            if v != "—" and not 1 <= int(v) <= 45:
+                problemi.append(f"{nome}: {c} {v} fuori da 1–45")
+    for p in ROOT.glob("Bestiario/**/*-cr*.md"):
+        t = p.read_text(encoding="utf-8", errors="replace")
+        if len(RIGA_MARCA.findall(t)) > 1 or len(re.findall(r"^attributi:", t, re.M)) > 1:
+            problemi.append(f"{p.name}: blocco o marca duplicati — la scrittura non e' idempotente")
+    return problemi
+
+
+def taratura() -> dict:
+    """Quanto sbaglia lo strato 3 dove la risposta vera c'e'.
+
+    Sui file che hanno una fonte trascrivibile si genera **come se la fonte
+    non ci fosse** e si confronta con la fonte. E' l'unico banco di prova che
+    il repo offre gratis, e ha un limite da dire: le fonti sono **le stesse**
+    su cui le regole di taglia e razza sono state scelte, quindi il numero e'
+    in-campione. Le regole vengono dall'SRD, non dal dato; il dato dice solo
+    se aiutano.
+    """
+    coppie = []
+    for r in proponi(rigenera=True):
+        t = r["file"].read_text(encoding="utf-8", errors="replace")
+        vera = dalla_fonte(r["file"].name, t)
+        if not vera:
+            continue
+        gs = float(re.search(r"^gs:\s*([\d.,]+)", t, re.M).group(1).replace(",", "."))
+        gen, _ = genera(r["file"].name, r["ruolo"], gs, t, usa_fonte=False)
+        coppie.append((r["file"].name, vera[0], gen))
+    per_car, tutti, mods = {}, [], []
+    for _, v, g in coppie:
+        for c in ORDINE:
+            if isinstance(v[c], int) and isinstance(g[c], int):
+                e = abs(v[c] - g[c])
+                per_car.setdefault(c, []).append(e)
+                tutti.append(e)
+                mods.append(abs(mod(v[c]) - mod(g[c])))
+    media = lambda xs: round(sum(xs) / len(xs), 2) if xs else 0.0  # noqa: E731
+    return {"file": len(coppie), "mae": media(tutti), "mae_mod": media(mods),
+            "entro_1_mod": round(sum(e <= 1 for e in mods) / len(mods), 2) if mods else 0.0,
+            "per_caratteristica": {c: media(per_car.get(c, [])) for c in ORDINE},
+            "coppie": coppie}
+
+
+def main(argv=None) -> int:
+    ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    ap.add_argument("--scrivi", action="store_true", help="applica ai file")
+    ap.add_argument("--rigenera", action="store_true",
+                    help="riscrive i soli blocchi marcati da questo script")
+    ap.add_argument("--check", action="store_true",
+                    help="esce 1 se un blocco generato non e' riproducibile")
+    ap.add_argument("--taratura", action="store_true",
+                    help="errore dello strato 3 contro le fonti trascrivibili")
+    args = ap.parse_args(argv)
+    if args.taratura:
+        m = taratura()
+        print(f"TARATURA dello strato 3 su {m['file']} file con fonte (in-campione)")
+        print(f"  errore medio: {m['mae']} sul punteggio, {m['mae_mod']} sul modificatore; "
+              f"entro ±1 di modificatore: {m['entro_1_mod']:.0%}")
+        print("  per caratteristica: " + "  ".join(f"{c} {e}" for c, e in m["per_caratteristica"].items()))
+        return 0
+    if args.check:
+        problemi = controlla()
+        for x in problemi:
+            print(f"✗ {x}")
+        if problemi:
+            return 1
+        gen = sum(1 for r in proponi(rigenera=True) if r["scritta"])
+        print(f"✓ genera_attributi: {gen} blocchi generati, tutti riproducibili "
+              f"e nei limiti; {len(proponi())} ancora da generare")
+        return 0
+    if args.rigenera:
+        return applica(proponi(rigenera=True), rigenera=True)
+    prop = proponi()
+    if args.scrivi:
+        return applica(prop)
+    print(f"\nPROPOSTA — {len(prop)} statblocchi senza `attributi`\n" + "=" * 70)
+    for r in prop[:12]:
+        print(f"\n  {r['file'].name}  [{r['ruolo']}]")
+        print(f"    {r['riga']}")
+        for n in r["note"]:
+            print(f"      · {n}")
+    if len(prop) > 12:
+        print(f"\n  … e altri {len(prop) - 12}. `--scrivi` li applica.")
+    return 0
+
+
+if __name__ == "__main__":  # pragma: no cover
+    sys.exit(main())

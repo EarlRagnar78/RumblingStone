@@ -10,6 +10,7 @@ ca-dettaglio: touch 13, flat-footed 11 (+1 vs trappole)
 pf: 37
 pf-dado: 1d6+1
 ts: Temp +4, Rifl +6, Vol +5
+attributi: For 7 Des 16 Cos 15 Int 16 Sag 10 Car 9
 velocita: 6 m
 iniziativa: +6
 attacchi:
@@ -17,6 +18,8 @@ attacchi:
 voci:
   - Talenti: Iniziativa Migliorata, Vergare Pergamene, Incantesimo Silenzioso, Arma Accurata
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 Medium humanoid (dwarf, duergar), Rogue 3 / Wizard 4. **hp 37** (7 HD); **AC 13**, touch 13, flat-footed 11 (+1 vs trappole). Init +6; Vel 6 m. TS Temp +4, Rifl +6, Vol +5. BAB +4; Lotta +4.
 **Mischia** spada corta +1 +7 (1d6+1/19-20). **Furtivo +2d6**; Eludere, Trovare/Sentire Trappole. Incantesimi da Wizard 4 + SLA duergar. Famiglio. Scurovisione 36 m, immune paralisi/veleno. Talenti: Iniziativa Migliorata, Vergare Pergamene, Incantesimo Silenzioso, Arma Accurata.

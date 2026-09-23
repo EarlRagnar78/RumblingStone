@@ -10,6 +10,7 @@ ca-dettaglio: touch 10, flat-footed 19
 pf: 20
 pf-dado: 1d10+3
 ts: Temp +6, Rifl +1, Vol +0
+attributi: For 17 Des 13 Cos 16 Int 10 Sag 10 Car 6
 velocita: 6 m
 iniziativa: +5
 attacchi:
@@ -17,6 +18,8 @@ attacchi:
 voci:
   - Talenti: Schivare, Iniziativa Migliorata, Robustezza Migliorata
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili. ⚠ la CA di contatto suggerisce Des 10, la fonte dice 13: si tiene la fonte, la differenza può essere deviazione o schivata, da verificare.
 
 Medium humanoid (dwarf, duergar), Fighter 2, LE. **hp 20**; **AC 19**, touch 10, flat-footed 19. Init +5; Vel 6 m. TS Temp +6, Rifl +1, Vol +0. BAB +2; Lotta +5.
 **Mischia** spada bastarda perfetta +3 (1d10+3). SLA duergar (*ingrandire*, *invisibilità* 1/giorno). Scurovisione 36 m, immune a paralisi/veleno, +2 vs incantesimi. For 17, Des 13, Cos 16. Talenti: Schivare, Iniziativa Migliorata, Robustezza Migliorata.

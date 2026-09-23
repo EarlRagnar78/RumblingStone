@@ -8,9 +8,12 @@ ca-dettaglio: (-1 size, +8 natural, +6 +1 breastplate)
 pf: 168
 pf-dado: 12d8
 ts: Temp +18, Rifl +5, Vol +8
+attributi: For 16 Des 11 Cos 14 Int 8 Sag 12 Car 20
 velocita: 40 ft (raging)
 iniziativa: +0
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 **Size/Type**: Large giant | **HD**: 12d8+5d12+85 (168 HP)
 **AC**: 23 (-1 size, +8 natural, +6 +1 breastplate) | **Init**: +0 | **Speed**: 40 ft (raging)

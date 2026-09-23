@@ -6164,6 +6164,111 @@
         "network": false
       },
       "idempotent": true
+    },
+    {
+      "id": "genera_attributi",
+      "path": "scripts/genera_attributi.py",
+      "category": "E-bestiary-catalog",
+      "language": "python",
+      "invocation": "python3 scripts/genera_attributi.py",
+      "summary": "Scrive la riga `attributi` degli statblocchi che non ce l'hanno, in quattro strati: trascrive la sestina dalla fonte citata in Bestiario/pregen-pcgen/ (39 file), legge la Des da ca-dettaglio, ricava Des dalla CA di contatto e Cos da pf e pf-dado con guardia legata al GS, e solo per il resto sceglie dagli array elite/standard del Manuale del DM (dmcore.tabelle) per ruolo, con taglia e razza SRD e ±1 a somma zero a seme fisso. Ogni blocco porta [INFERRED — needs DM confirmation] con provenienza e divergenze. --taratura misura l'errore dello strato 3 contro le fonti (1,91 punti).",
+      "use_case": "«Questo statblocco non ha For/Des/Cos: come verifico pf, TS e attacco senza inventarle?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--scrivi",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Applica ai file (idempotente: un file gia' generato non si riscrive)."
+        },
+        {
+          "name": "--rigenera",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Riscrive i soli blocchi marcati da questo script, mai quelli scritti a mano."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Gate: esce 1 se un blocco generato non torna con la regola, esce dai limiti o e' duplicato."
+        },
+        {
+          "name": "--taratura",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Errore dello strato 3 contro le fonti trascrivibili (in-campione)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "Bestiario/{mostri,villain,png}/**/*-cr*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "Bestiario/pregen-pcgen/**",
+          "kind": "text",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "Bestiario/{mostri,villain,png}/**/*-cr*.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "stdout",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "blocco generato non riproducibile, fuori limiti o duplicato (--check)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "il seme del caso e' il nome del file, non l'orologio"
+      },
+      "side_effects": {
+        "writes_canon": true,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/genera_attributi.py --help",
+      "tests": [
+        "scripts/tests/test_genera_attributi.py"
+      ],
+      "docs": [
+        "plans/RICERCA-CONFORMITA-MECCANICA-STATBLOCCHI.md",
+        "plans/adr/ADR-0064-gli-attributi-si-scrivono-nel-bestiario.md"
+      ]
     }
   ]
 }

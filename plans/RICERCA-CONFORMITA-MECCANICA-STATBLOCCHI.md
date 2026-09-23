@@ -139,7 +139,39 @@ e non un lotto.
 ## 7 · Come si riproduce questa misura
 
 ```bash
-python3 scripts/validate_bestiario.py --rules   # oggi: 0 avvisi, e §4 spiega perché
+python3 scripts/validate_bestiario.py --rules   # 21-09: 0 avvisi (§4 spiega perché) · 23-09: 29
 grep -c '^pf:' Bestiario/*/*-cr*.md | grep -c ':1'
-grep -rl '^attributi:' Bestiario --include='*.md' | wc -l
+grep -rl '^attributi:' Bestiario --include='*.md' | wc -l   # 21-09: 14 · 23-09: 109
+python3 scripts/genera_attributi.py --check      # 94 blocchi generati, riproducibili
+python3 scripts/genera_attributi.py --taratura   # errore dello strato 3: 1,91 punti
 ```
+
+---
+
+## 8 · Esito dei lotti (2026-09-21 → 2026-09-23)
+
+| | Lotto | Esito |
+|---|---|---|
+| ✅ | **1** · `--rules` legge `pf:` e `ca:` | copertura **49% → 98%**. Il ripiego sulla forma vecchia resta per i file senza blocco; i `[POINTER]` si saltano, perché i loro numeri stanno nel file d'arco |
+| ✅ | **2** · la coerenza interna della CA | nata verde come previsto: **0 violazioni** |
+| ✅ | **2-bis** · `pf-dado` deve registrare i dadi vita *(non previsto)* | 🐛 in **20 statblocchi su 95** registra **il danno di un'arma**: `1d8+7` accanto a «hp 93 (12 HD)» è il martello di Morlin. Col dado di classe SRD e col dado solo a GS ≥ 2 i sospetti sono **26**, segnalati da `--rules` con la ragione. Il difetto è di dati, e si corregge a mano |
+| ⬜ | **3** · promuovere `--rules` a cancello | ⚠️ **non ancora**: i 26 `pf-dado` lo farebbero bloccare su dati che nessuno script deve correggere da sé |
+| ⬜ | **4** · la tabella PF1e in un YAML versionato | non iniziato |
+| ✅ | **5** · gli `attributi` nei 96 statblocchi | 🔵 **il DM ha deciso: generarli.** Fatto per **94** (gli altri due erano già `[POINTER]`), con `scripts/genera_attributi.py` e alle condizioni di [ADR-0064](adr/ADR-0064-gli-attributi-si-scrivono-nel-bestiario.md). **39 trascritti** dalla fonte citata in `pregen-pcgen/`, **55 scelti** dall'array del Manuale del DM con taglia e razza SRD; tutti marcati `[INFERRED]` con la provenienza |
+
+🔎 **Il §6 diceva «le caratteristiche non si indovinano: dove la fonte è un
+export PCGen i numeri si trascrivono».** Era giusto, e la prima stesura del
+generatore l'ha ignorato: produceva array per 42 file che citavano la propria
+fonte. Lo strato di trascrizione è arrivato dopo, e ha portato con sé una
+misura che prima non c'era: sulle 39 fonti la risposta vera è nota, e lo
+strato 3 generato **come se non ci fossero** sbaglia di **1,91 punti** in media
+(0,96 di modificatore, 79% entro ±1). Era 2,32 prima di taglia, razza e delle
+tabelle di `dmcore`, che la prima stesura aveva ricopiato sbagliando due righe.
+
+⚠️ **Cosa resta aperto, e da chi dipende.** Le tre identità profonde (pf, TS,
+attacco) hanno ora la loro superficie: `attributi` c'è in tutti i 108
+statblocchi col blocco. Il rilevatore che le verifica è il prossimo lotto, e
+va scritto **sapendo** che 55 di quei 108 portano caratteristiche scelte: un
+pf che non torna con una Cos generata dice qualcosa sul generatore prima che
+sulla scheda. I 26 `pf-dado` e le 10 divergenze annotate fra fonte e scheda
+sono lavoro del DM.

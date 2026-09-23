@@ -8,9 +8,12 @@ ca-dettaglio: (+3 Dex, +5 mage armor, +0 armor)
 pf: 24
 pf-dado: 7d4+7
 ts: Temp +3, Rifl +5, Vol +7
+attributi: For 8 Des 16 Cos 12 Int 19 Sag 11 Car 12
 velocita: 30 ft
 iniziativa: +3
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 **Size/Type**: Medium humanoid (elf) | **HD**: 7d4+7 (24 HP)
 **AC**: 18 (+3 Dex, +5 mage armor, +0 armor) | **Init**: +3 | **Speed**: 30 ft

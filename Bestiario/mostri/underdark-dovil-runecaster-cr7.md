@@ -15,6 +15,7 @@ ca-dettaglio: touch 12, flat-footed 19 (piastre complete)
 pf: 37
 pf-dado: 2d6+2
 ts: Temp +5, Rifl +3, Vol +6
+attributi: For 12 Des 14 Cos 15 Int 16 Sag 10 Car 6
 velocita: 6 m
 iniziativa: +6
 attacchi:
@@ -22,6 +23,8 @@ attacchi:
 voci:
   - Talenti: Incantare in Combattimento, Iniziativa/Vergare Migliorato, Smiting Spell, Focalizzazione (Divinazione), Arma Focalizzata (spadone)
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 
 Medium humanoid (dwarf, hill), Diviner 5 / Deep Diviner 1 / Fighter 1, N. **hp 37** (7 HD); **AC 20**, touch 12, flat-footed 19 (piastre complete). Init +6; Vel 6 m. TS Temp +5, Rifl +3, Vol +6. BAB +3; Lotta +4.
 **Mischia** spadone +1 a due mani +5 (2d6+2/19-20). Incantesimi da Diviner 5 (scuola Divinazione; +2 Sapienza Magica sulle divinazioni); **Node Spellcasting**, Locate Node, famiglio. SLA da oggetto: *repair minor damage, comprehend languages*. Scurovisione 18 m, tratti nanici. Talenti: Incantare in Combattimento, Iniziativa/Vergare Migliorato, Smiting Spell, Focalizzazione (Divinazione), Arma Focalizzata (spadone).

@@ -10,11 +10,14 @@ ca-dettaglio: (−2 taglia, +1 Des, +14 naturale, +3 pelle), contatto 9, colto a
 pf: 172
 pf-dado: 14d8
 ts: Temp +18, Rifl +5, Vol +7
+attributi: For 36 Des 12 Cos 26 Int 8 Sag 11 Car 11
 velocita: 15 m (movimento veloce)
 attacchi:
   - Mischia randello enorme +20/+15 (3d8+15)
   - Distanza lancio di massi +11 (3d8+15, incremento di gittata 55 m)
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 Huge giant (earth), CE. **DV 14d8 + 2d12**. **hp 172**. **CA 26** (−2 taglia, +1 Des, +14 naturale, +3 pelle), contatto 9, colto alla sprovvista 25. Iniziativa +1. Vel **15 m** (movimento veloce). Spazio/portata **4,5 m / 4,5 m**.
 **TS** Temp +18, Rifl +5, Vol +7. **BAB/Lotta** +12/**+30**.

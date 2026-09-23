@@ -10,6 +10,7 @@ ca-dettaglio: touch 15, flat-footed 15
 pf: 42
 pf-dado: 1d4+1
 ts: Temp +6, Rifl +5, Vol +1
+attributi: For 11 Des 18 Cos 14 Int 12 Sag 10 Car 6
 velocita: 9 m
 iniziativa: +4
 attacchi:
@@ -17,6 +18,8 @@ attacchi:
 voci:
   - Talenti: Arceria in Sella, Combattere in Sella, Tiro Ravvicinato, Tiro Preciso, Arma Focalizzata (arco corto)
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 
 Small humanoid (goblinoid), Fighter 5, LE. **hp 42** (5 HD); **AC 19**, touch 15, flat-footed 15. Init +4; Vel 9 m. TS Temp +6, Rifl +5, Vol +1. BAB +5; Lotta +1.
 **Distanza** arco corto composito perfetto +12 (1d4/x3), +13 (1d4+1) entro 9 m (Tiro Ravvicinato/Preciso). **Mischia** scimitarra perfetta +7 (1d4/18-20). Scurovisione 18 m. Talenti: Arceria in Sella, Combattere in Sella, Tiro Ravvicinato, Tiro Preciso, Arma Focalizzata (arco corto).

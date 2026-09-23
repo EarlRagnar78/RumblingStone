@@ -10,10 +10,13 @@ ca-dettaglio: (−1 taglia, +4 naturale, +7 giaco di maglia +3 Large, +3 defless
 pf: 137
 pf-dado: 5d8
 ts: Temp +13, Rifl +4, Vol +12
+attributi: For 16 Des 16 Cos 20 Int 13 Sag 10 Car 24
 velocita: 12 m (9 m in armatura), volo 12 m (buono, Sop, a volontà)
 attacchi:
   - Mischia spadone Large +13/+8 (3d6+7)
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 > **Versione di ritorno.** Statblock del primo incontro:
 > `ghaurush-cenerevento-cr16.md` (GS 16; variante *Advanced* GS 17). Questa è

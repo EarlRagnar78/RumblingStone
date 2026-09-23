@@ -10,10 +10,13 @@ ca-dettaglio: (+7 giaco di maglia +2, +2 Des, +1 anello, +1 armatura naturale), 
 pf: 140
 pf-dado: 13d12
 ts: Temp +14, Rifl +8, Vol +8
+attributi: For 21 Des 14 Cos 18 Int 9 Sag 11 Car 10
 velocita: 12 m (movimento veloce)
 attacchi:
   - Mischia ascia bipenne +1 +20/+15/+10 (1d12+10/×3)
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 Medium humanoid (orc), CE. **DV 13d12**. **hp 140**. **CA 21** (+7 giaco di maglia +2, +2 Des, +1 anello, +1 armatura naturale), contatto 13, colto alla sprovvista 19. Iniziativa +6. Vel 12 m (movimento veloce).
 **TS** Temp +14, Rifl +8, Vol +8 (mantello di resistenza +2 incluso). **BAB/Lotta** +13/+19.

@@ -146,25 +146,77 @@ def is_statblock(path: Path) -> bool:
 CATALOG_IDS: dict = {}
 
 
+#: 🔴 **I campi che il repo usa davvero.** Il blocco ```statblocco``` scrive
+#: `pf:` e `ca:` in italiano — `gs`, `ca`, `pf` e `ts` sono presenti nel **98%**
+#: dei 110 statblocchi veri. Le due regex che stavano qui cercavano `hp N` e
+#: `ac N`: leggevano il **49%** e il **58%**, e il loro «zero avvisi» era meta'
+#: libreria mai guardata.
+#:
+#: ⚠️ **Non leggevano spazzatura, e va detto**: sui 53 file dove entrambe le
+#: forme comparivano il numero estratto coincideva **sempre** col `pf:`
+#: canonico, 53 su 53. Il difetto era **copertura**, non correttezza.
+#: Ventunesimo caso della famiglia «un criterio che non pesca si traveste da
+#: repo pulito» — RICERCA-CONFORMITA-MECCANICA-STATBLOCCHI §4.
+PF_CAMPO = {
+    "pf": re.compile(r"^pf:\s*(\d+)", re.M),
+    "ca": re.compile(r"^ca:\s*(\d+)", re.M),
+}
+#: La forma vecchia resta come ripiego per i pochi file che non hanno il blocco.
+PF_RIPIEGO = {
+    "pf": re.compile(r"\bhp\s*(\d+)"),
+    "ca": re.compile(r"\bac\s*(\d+)"),
+}
+CA_DETTAGLIO = re.compile(r"^ca-dettaglio:\s*(.+)$", re.M)
+CA_VOCI = re.compile(r"(touch|contatto|flat-?footed|colto alla sprovvista)\s*(\d+)", re.I)
+
+
+def valore(text: str, campo: str):
+    """Il valore canonico, col ripiego sulla forma vecchia. Deterministico."""
+    m = PF_CAMPO[campo].search(text)
+    if m:
+        return int(m.group(1))
+    m = PF_RIPIEGO[campo].search(text.lower())
+    return int(m.group(1)) if m else None
+
+
 def check_rules(path: Path):
     """Controlli di aderenza alle regole (--rules, solo warning)."""
     rel = str(path.relative_to(ROOT))
     text = path.read_text(encoding="utf-8", errors="replace")
     low = text.lower()
-    # (1) benchmark GS vs hp/AC (tolleranza larga: segnala solo fuori scala)
+    # I puntatori NON portano numeri per progetto (ADR-0021): i loro valori
+    # stanno nel file d'arco, e cercarli qui darebbe avvisi su un'assenza voluta.
+    if "[POINTER" in text or "[RIMANDO]" in text:
+        return
+    # (1) benchmark GS vs pf/CA (tolleranza larga: segnala solo fuori scala)
     cr = header_cr(text)
     if cr is not None and int(cr) in PF_BENCH:
         hp_min, hp_max, ac_min, ac_max = PF_BENCH[int(cr)]
-        m_hp = re.search(r"\bhp\s*(\d+)", low)
-        if m_hp:
-            hp = int(m_hp.group(1))
-            if hp < hp_min * 0.5 or hp > hp_max * 1.5:
-                warn(f"{rel}: hp {hp} fuori scala per CR {cr:g} (atteso ~{hp_min}-{hp_max})")
-        m_ac = re.search(r"\bac\s*(\d+)", low)
-        if m_ac:
-            ac = int(m_ac.group(1))
-            if ac < ac_min - 4 or ac > ac_max + 4:
-                warn(f"{rel}: AC {ac} fuori scala per CR {cr:g} (atteso ~{ac_min}-{ac_max})")
+        hp = valore(text, "pf")
+        if hp is not None and (hp < hp_min * 0.5 or hp > hp_max * 1.5):
+            warn(f"{rel}: pf {hp} fuori scala per GS {cr:g} (atteso ~{hp_min}-{hp_max})")
+        ac = valore(text, "ca")
+        if ac is not None and (ac < ac_min - 4 or ac > ac_max + 4):
+            warn(f"{rel}: CA {ac} fuori scala per GS {cr:g} (atteso ~{ac_min}-{ac_max})")
+    # (1-bis) coerenza INTERNA della CA: in 3.5 la CA di contatto e quella da
+    # colto alla sprovvista sono la CA piena meno alcuni bonus, quindi non
+    # possono superarla. E' un'identita', non un benchmark: non ha tolleranza.
+    ac = valore(text, "ca")
+    d = CA_DETTAGLIO.search(text)
+    if ac is not None and d:
+        for etichetta, val in CA_VOCI.findall(d.group(1)):
+            if int(val) > ac:
+                warn(f"{rel}: CA {ac} ma «{etichetta} {val}» — in 3.5 contatto e "
+                     "sprovvista tolgono bonus, non ne aggiungono")
+    # (1-ter) `pf-dado` deve registrare i dadi vita. In 20 statblocchi su 95
+    # registrava il danno dell'arma (`1d8+7` accanto a «hp 93 (12 HD)»): e' il
+    # campo da cui si ricava la Costituzione, e mentiva in silenzio. Il
+    # controllo vive in genera_attributi.py, che per primo ci e' inciampato:
+    # una norma, un rilevatore.
+    from genera_attributi import pf_dado_sospetto
+    motivo = pf_dado_sospetto(text, cr)
+    if motivo:
+        warn(f"{rel}: {motivo} — il campo sembra il danno di un'arma")
     # (2) policy flag: Status inferred ⇒ deve esserci un marcatore [INFERRED]
     m_status = re.search(r"\*\*Status\*\*[:\s]*([a-z\-]+)", low)
     if m_status and m_status.group(1).startswith("inferred") and "[inferred" not in low:

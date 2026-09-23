@@ -10,6 +10,7 @@ ca-dettaglio: touch 12, flat-footed 17
 pf: 67
 pf-dado: 1d6+3
 ts: Temp +6, Rifl +9, Vol +9
+attributi: For 16 Des 15 Cos 16 Int 8 Sag 10 Car 17
 velocita: 9 m
 iniziativa: +6
 attacchi:
@@ -17,6 +18,8 @@ attacchi:
 voci:
   - Talenti: Iniziativa Migliorata, Volontà/Riflessi, Persuasivo, Sudden Enlarge
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 
 Medium humanoid (goblinoid), Bugbear (Humanoid 3) / Sorcerer 8, LE. **hp 67** (11 HD); **AC 19**, touch 12, flat-footed 17. Init +6; Vel 9 m. TS Temp +6, Rifl +9, Vol +9. BAB +6; Lotta +9.
 **Mischia** morning star perfetta +10/+5 (1d6+3). Incantesimi da Sorcerer 8 (Car 16; tipici: *mage armor, shield, magic missile, detect thoughts, glitterdust*). Famiglio; Borsa Conservante I. Scurovisione 18 m. Talenti: Iniziativa Migliorata, Volontà/Riflessi, Persuasivo, Sudden Enlarge.

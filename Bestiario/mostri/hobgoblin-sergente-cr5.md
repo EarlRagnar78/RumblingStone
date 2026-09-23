@@ -8,9 +8,12 @@ ca-dettaglio: (+7 full plate, +2 heavy shield, +1 Dex)
 pf: 46
 pf-dado: 1d8
 ts: Temp +8, Rifl +2, Vol +2
+attributi: For 15 Des 12 Cos 14 Int 8 Sag 11 Car 17
 velocita: 20 ft (armored)
 iniziativa: +1
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 **Size/Type**: Medium humanoid (goblinoid) | **HD**: 1d8+5d10+12 (46 HP)
 **AC**: 20 (+7 full plate, +2 heavy shield, +1 Dex) | **Init**: +1 | **Speed**: 20 ft (armored)

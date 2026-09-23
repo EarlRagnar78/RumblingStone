@@ -10,10 +10,13 @@ ca-dettaglio: (+9 corazza di piastre +1, +1 Des, +1 anello), contatto 12, colto 
 pf: 74
 pf-dado: 11d8
 ts: Temp +11, Rifl +6, Vol +13
+attributi: For 15 Des 12 Cos 14 Int 8 Sag 20 Car 11
 velocita: 6 m (corazza)
 attacchi:
   - Mischia picca lunga +1 +13/+8 (1d8+5/×3, portata 3 m)
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 Medium humanoid (orc), CE. **DV 11d8**. **hp 74**. **CA 21** (+9 corazza di piastre +1, +1 Des, +1 anello), contatto 12, colto alla sprovvista 20. Iniziativa +1. Vel 6 m (corazza).
 **TS** Temp +11, Rifl +6, Vol +13 (mantello di resistenza +2 incluso). **BAB/Lotta** +8/+11.

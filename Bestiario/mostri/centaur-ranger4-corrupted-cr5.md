@@ -10,6 +10,9 @@ ca-dettaglio: (-1 size, +2 Dex, +3 natural, +3 studded)
 pf: 60
 pf-dado: 4d8
 ts: Temp +9, Rifl +7, Vol +4
+attributi: For 23 Des 14 Cos 17 Int 11 Sag 12 Car 8
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 Large monstrous HD 4d8+4d8+24 (60 HP). AC 17 (-1 size, +2 Dex, +3 natural, +3 studded). Fort +9 Ref +7 Will +4. BAB/Grapple +8/+16. Composite longbow (Str +4) +9/+4 (1d8+4/x3) Rapid Shot. 2 hooves +11 (1d6+4). Str 18 Dex 14 Con 18 Int 8 Wis 13 Cha 11. Favored enemy: human +2. Feats: Weapon Focus (longbow), Rapid Shot, Point Blank Shot, Track. Notes: 150 cavalleria Shaar.

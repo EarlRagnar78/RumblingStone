@@ -10,11 +10,14 @@ ca-dettaglio: (-1 taglia, +11 naturale), touch 9, flat-footed 20
 pf: 71
 pf-dado: 11d12
 ts: Temp +3, Rifl +3, Vol +9
+attributi: For 17 Des 10 Cos — Int 12 Sag 10 Car 21
 velocita: Volare 15 m (media)
 iniziativa: +0
 attacchi:
   - Mischia morso +4 (2d4)
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 Large undead, 11d12. **hp 71**; **AC 20** (-1 taglia, +11 naturale), touch 9, flat-footed 20. Init +0; Vel Volare 15 m (media). TS Temp +3, Rifl +3, Vol +9. BAB +5; Lotta +9. For 10, Des 10, Cos -, Sag 15, Car 17.
 **Mischia** morso +4 (2d4). **Raggi degli occhi** +4 tocco a distanza (10 occhi come beholder vivo, ma 1d4+1 tipicamente spenti). **Cono di antimagia** 170 ft dall'occhio centrale (come *antimagic field* LI 13; sopprime anche i propri raggi). Visione a 360°, +2 resistenza allo scacciare, tratti dei non morti. Skill: Cercare +4, Osservare +6.

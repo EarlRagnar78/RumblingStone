@@ -10,10 +10,13 @@ ca-dettaglio: (+4 Des, +4 *armatura magica*, +1 anello), contatto 15, colto alla
 pf: 38
 pf-dado: 3d6
 ts: Temp +5, Rifl +11, Vol +8
+attributi: For 9 Des 18 Cos 15 Int 12 Sag 9 Car 20
 velocita: 9 m
 attacchi:
   - Mischia stocco +5 (1d6)
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 Medium humanoid (elf), NE. **DV 3d6 + 7d4**. **hp 38**. **CA 19** (+4 Des, +4 *armatura magica*, +1 anello), contatto 15, colto alla sprovvista 15. Iniziativa +4. Vel 9 m.
 **TS** Temp +5, Rifl +11, Vol +8 (+2 razziale vs incantesimi, +2 vs ammaliamenti). **BAB/Lotta** +4/+3. **RI 21**.

@@ -12,6 +12,7 @@ ca: 13
 ca-dettaglio: (10 +1 naturale +2 Des)
 pf: 47
 ts: Temp +6, Rifl +7, Vol +8
+attributi: For 8 Des 14 Cos 16 Int 12 Sag 9 Car 16
 velocita: 15 m, scalare 7,5 m (forma vera)
 iniziativa: +6
 attacchi:
@@ -20,6 +21,8 @@ voci:
   - Abilità: For 11, Des 15, Cos 14, Int 14, Sag 13, Car 16
   - Talenti: Arma Accurata, Ferrea Volontà, Iniziativa Migliorata, Incantare
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 > ✅ **Canon (DM 2026-07-20)**: statblock calibrato per **PG di livello 8-9**,
 > coerente col ruolo AP di **spia mutaforma senza scrupoli** della Mano Rossa

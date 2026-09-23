@@ -10,6 +10,7 @@ ca-dettaglio: touch 12, flat-footed 11
 pf: 16
 pf-dado: 1d8
 ts: Temp +3, Rifl +3, Vol +4
+attributi: For 9 Des 14 Cos 14 Int 16 Sag 10 Car 8
 velocita: 6 m
 iniziativa: +2
 attacchi:
@@ -17,6 +18,8 @@ attacchi:
 voci:
   - Talenti: Incantare in Combattimento, Ingrandire Incantesimo, Focalizzazione (necromanzia)
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 Medium humanoid (dwarf, duergar), Wizard 3 (necromanzia; abiurazione proibita), LE. **hp 16**; **AC 13**, touch 12, flat-footed 11. Init +2; Vel 6 m. TS Temp +3, Rifl +3, Vol +4. BAB +1; Lotta +0.
 **Distanza** balestra leggera perfetta +3 (1d8). Incantesimi da Wizard 3 (4/3/2; CD 12+liv, necro +1): tipici *ray of frost, mage armor, magic missile, ray of enfeeblement, web*. SLA duergar. Famiglio. Scurovisione 36 m, immune paralisi/veleno. Int 15, Des 14. Talenti: Incantare in Combattimento, Ingrandire Incantesimo, Focalizzazione (necromanzia).

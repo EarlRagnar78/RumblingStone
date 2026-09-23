@@ -85,6 +85,14 @@ jobs:
       - name: Statblocchi machine-readable — blocchi validi e GS coerente (ADR-0021)
         run: python scripts/extract_statblocks.py --check
 
+      # Gli `attributi` generati (94 file, 2026-09-23) devono restare quelli
+      # che la regola produce: se qualcuno ritocca a mano un blocco marcato
+      # come generato, o il generatore cambia, qui si vede. Un blocco che il
+      # DM conferma perde la marca [INFERRED] e il cancello smette di
+      # guardarlo: e' il modo previsto di uscirne.
+      - name: Attributi generati — riproducibili, nei limiti, non duplicati
+        run: python scripts/genera_attributi.py --check
+
       - name: Validate DEF module masters (module-standard checklist, token-free review)
         run: python scripts/validate_modules.py
 

@@ -14,8 +14,11 @@ ca: 19
 ca-dettaglio: (piastre + Des cap)
 pf: 51
 ts: Temp +7, Rifl +3, Vol +3
+attributi: For 16 Des 13 Cos 14 Int 10 Sag 12 Car 8
 fonte: valori approssimati nella prosa d'origine (scritti con «~»)
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 
 Medium humanoid (dwarf), Fighter 6, allineamento non salvato (NONE). Caratteristiche attestate: For 16, Des 13, Cos 14, Int 10, Sag 12, Car 8. **Valori derivati `[INFERRED]`**: hp ~51 (6d10+12); AC ~19 (piastre + Des cap); TS Temp +7, Rifl +3, Vol +3; BAB +6; ascia da battaglia +11/+6 (1d8+4/x3). Scurovisione, tratti nanici.
 Notes: coppia di guerrieri nominati (Bothor e Melvur) dell'arco Underdark; il DM confermi ruolo e derivati.

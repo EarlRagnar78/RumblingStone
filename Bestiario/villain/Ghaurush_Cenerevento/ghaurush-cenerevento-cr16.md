@@ -10,10 +10,13 @@ ca-dettaglio: (−1 taglia, +4 naturale, +6 giaco di maglia +2 Large, +2 defless
 pf: 107
 pf-dado: 5d8
 ts: Temp +11, Rifl +3, Vol +11
+attributi: For 16 Des 14 Cos 22 Int 12 Sag 9 Car 23
 velocita: 12 m (9 m in armatura), volo 12 m (perfetto/buono, Sop, a volontà)
 attacchi:
   - Mischia spadone Large +11/+6 (3d6+7)
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 Large giant (ogre magi), LE. **DV 5d8 + 8d4** (Stregone 8). **hp 107** (Con 21 con *amuleto di salute +4*). **CA 21** (−1 taglia, +4 naturale, +6 giaco di maglia +2 Large, +2 deflessione), contatto 11, colto alla sprovvista 21 — **25 con *scudo* attivo**. Iniziativa **+4**. Vel 12 m (9 m in armatura), **volo 12 m (perfetto/buono, Sop, a volontà)**.
 **TS** Temp +11, Rifl +3, Vol +11. **BAB/Lotta** +7/**+16**.

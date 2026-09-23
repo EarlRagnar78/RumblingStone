@@ -9,10 +9,13 @@ ca-dettaglio: (-2 size, +27 natural)
 pf: 405
 pf-dado: 30d12+210
 ts: Temp +24, Rifl +19, Vol +22
+attributi: For 17 Des 24 Cos 24 Int 8 Sag 13 Car 9
 velocita: 12 m, scavare 6 m, volare 45 m (scarsa)
 iniziativa: +4
 fonte: valori approssimati nella prosa d'origine (scritti con «~»)
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 > **Nota rinomina (2026-07-02, D11 v2 / A7)**: file precedentemente
 > `tyrgarun-black-adult-cr13.md` (black adult, riserva). Corretto a **blue Old

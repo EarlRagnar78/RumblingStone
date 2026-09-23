@@ -10,10 +10,13 @@ ca-dettaglio: (+5 Des, +4 giaco di maglia mithral +1, +1 anello), contatto 16, c
 pf: 40
 pf-dado: 9d6
 ts: Temp +4, Rifl +12, Vol +5
+attributi: For 8 Des 20 Cos 12 Int 13 Sag 10 Car 20
 velocita: 9 m
 attacchi:
   - Mischia spada corta +1 +12/+7 (1d6+1/19-20)
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 Medium humanoid (elf), NE. **DV 9d6**. **hp 40**. **CA 20** (+5 Des, +4 giaco di maglia mithral +1, +1 anello), contatto 16, colto alla sprovvista 16. Iniziativa +9. Vel 9 m.
 **TS** Temp +4, Rifl +12, Vol +5 (+2 razziale vs incantesimi, +2 vs ammaliamenti, **+3 vs veleni**). **BAB/Lotta** +6/+6. **RI 20**.

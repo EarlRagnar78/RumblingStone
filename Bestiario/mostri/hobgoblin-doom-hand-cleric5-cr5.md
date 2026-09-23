@@ -10,6 +10,7 @@ ca-dettaglio: touch 10, flat-footed 20 (+7 banded mail +1, +3 scudo pesante)
 pf: 41
 pf-dado: 1d8+2
 ts: Temp +7, Rifl +1, Vol +7
+attributi: For 13 Des 10 Cos 16 Int 10 Sag 16 Car 12
 velocita: 6 m
 iniziativa: +0
 attacchi:
@@ -17,6 +18,8 @@ attacchi:
 voci:
   - Talenti: Incantare in Combattimento, Arma Focalizzata (mazza pesante)
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 
 Medium humanoid (goblinoid), Cleric 5 (Mano del Destino di Tiamat), LE. **hp 41** (5d8+15); **AC 20**, touch 10, flat-footed 20 (+7 banded mail +1, +3 scudo pesante). Init +0; Vel 6 m. TS Temp +7, Rifl +1, Vol +7. BAB +3; Lotta +4. For 13, Sag 16, Car 12 (dal .pcg di Zarr).
 **Mischia** mazza pesante +1 +6 (1d8+2); scudo +0 (1d4+1). **Intimorire non morti**; Colpire (Smite). Incantesimi da Chierico 5 (CD 13+liv): tipici *bane, cause fear, hold person, desecrate, summon undead I, spiritual weapon*. Aura del Male/Legge. Scurovisione 18 m. Talenti: Incantare in Combattimento, Arma Focalizzata (mazza pesante).

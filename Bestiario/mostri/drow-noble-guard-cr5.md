@@ -8,9 +8,12 @@ ca-dettaglio: (+5 MW mithral chain, +4 Dex, +1 light shield)
 pf: 28
 pf-dado: 2d10
 ts: Temp +5, Rifl +7, Vol +3
+attributi: For 15 Des 18 Cos 13 Int 10 Sag 12 Car 9
 velocita: 30 ft
 iniziativa: +4
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 **Size/Type**: Medium humanoid (elf) | **HD**: 2d10+2d6+8 (28 HP)
 **AC**: 20 (+5 MW mithral chain, +4 Dex, +1 light shield) | **Init**: +4 | **Speed**: 30 ft

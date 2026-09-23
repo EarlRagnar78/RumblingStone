@@ -10,6 +10,7 @@ ca: 25
 ca-dettaglio: (−2 taglia, +0 Des, +17 naturale)
 pf: 215
 ts: Temp +17, Rifl +10, Vol +11
+attributi: For 37 Des 10 Cos 25 Int 9 Sag 11 Car 10
 velocita: 12 m, scavare
 iniziativa: +4
 attacchi:
@@ -18,6 +19,8 @@ voci:
   - Talenti: Iniziativa Migliorata, Attacco Poderoso, Multiattacco, Armatura
 fonte: valori approssimati nella prosa d'origine (scritti con «~»)
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 > **Perché esiste (DM 2026-07-20):** l'orda di RumblingStone è **molto più
 > grande** dell'AP originale (~10.000 vs ~6.000), quindi servono **elementi

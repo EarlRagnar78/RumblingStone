@@ -15,6 +15,7 @@ ca-dettaglio: touch 9, flat-footed 20 (piastre complete)
 pf: 41
 pf-dado: 1d8+3
 ts: Temp +9, Rifl +0, Vol +7
+attributi: For 13 Des 8 Cos 16 Int 10 Sag 16 Car 10
 velocita: 6 m
 iniziativa: -1
 attacchi:
@@ -22,6 +23,8 @@ attacchi:
 voci:
   - Talenti: Incantare in Combattimento, Tempra Possente, Competenza Marziale (martello), Arma Focalizzata (martello)
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 
 Medium humanoid (dwarf, hill), Cleric 5, LN. **hp 41** (5 HD); **AC 20**, touch 9, flat-footed 20 (piastre complete). Init -1; Vel 6 m. TS Temp +9, Rifl +0, Vol +7. BAB +3; Lotta +4.
 **Mischia** martello da guerra perfetto +6 (1d8+3/x3); scudo +1 +0. Incantesimi da Cleric 5 (CD 13+liv; spontanee); SLA da oggetto: *comprehend languages, undetectable alignment*. **Hammer Specialist**, **Smite Giants**, aura del Bene/Legge, scacciare non morti. Scurovisione 18 m, +4 schivare vs giganti, stonecunning. Talenti: Incantare in Combattimento, Tempra Possente, Competenza Marziale (martello), Arma Focalizzata (martello).

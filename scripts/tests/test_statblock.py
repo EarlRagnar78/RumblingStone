@@ -85,6 +85,13 @@ class TestEstrazione(unittest.TestCase):
         self.assertIn("ca", mancanti)
         self.assertEqual(sb.ca, "")
 
+    def test_il_gs_fuori_dalla_finestra_col_secondo_ramo(self):
+        """🐛 «→ CR 12» in testa al dossier: il ripiego prendeva `group(1)`, che era None."""
+        testo = (REPO / "Bestiario/villain/Sethrax_il_Velato/Sethrax.md").read_text(encoding="utf-8")
+        sb, _ = estrai(togli_blocco(testo))
+        self.assertEqual(sb.gs, "12")
+        self.assertEqual(sb.ts, "Temp +5, Rifl +5, Vol +11")
+
     def test_mezzo_grado_di_sfida(self):
         sb, _ = estrai("**CR**: 1/2\n\nAC 12. hp 5. TS Temp +2, Rifl +0, Vol +0.")
         self.assertEqual(sb.gs, "1/2")
@@ -98,6 +105,37 @@ class TestGate(unittest.TestCase):
             f.write_text("# t\n\n```statblocco\ngs: 5\nca: 18\npf: 60\nts: Temp +7, Rifl +4, Vol +5\n```\n",
                          encoding="utf-8")
             self.assertTrue(any("rimasto indietro" in p for p in E.controlla(f)))
+
+    DOSSIER = ("# t\n\n```statblocco\ngs: 7\nca: 18\npf: 62\nts: {ts}\n```\n\n{nota}"
+               "**Grado di Sfida (GS):** {gs}\n\n**Punti Ferita:** 62\n**CA:** 18\n"
+               "- **Tempra:** +7 (+5 Base, +2 Cos)\n- **Riflessi:** +4 (+2 Base, +2 Des)\n"
+               "- **Volontà:** +5 (+2 Base, +2 Sag, +1 talento)\n")
+
+    def _problemi(self, **kw):
+        campi = {"ts": "Temp +7, Rifl +4, Vol +5", "nota": "", "gs": "7"} | kw
+        with tempfile.TemporaryDirectory() as d:
+            f = Path(d) / "lorana-cr7.md"
+            f.write_text(self.DOSSIER.format(**campi), encoding="utf-8")
+            return E.controlla(f)
+
+    def test_il_blocco_rimasto_indietro_rispetto_alla_prosa(self):
+        """La prova che morde: i TS derivati di Lorana contro quelli scritti dal DM."""
+        self.assertEqual(self._problemi(), [])
+        p = self._problemi(ts="Temp +6, Rifl +2, Vol +5")
+        self.assertTrue(any("`ts` del blocco" in x for x in p), p)
+
+    def test_una_marca_non_e_prosa(self):
+        # 🐛 Ghaurush: «CA 23 → 25» sta in una marca, e il lettore la leggeva
+        p = self._problemi(nota="> [INFERRED] correzione: CA 23 → **25**, pf 99.\n\n")
+        self.assertEqual(p, [])
+
+    def test_una_forbice_di_gs_non_si_confronta(self):
+        # Il Collezionista: «GS 17-19» in prosa, 18 nel blocco per scelta
+        with tempfile.TemporaryDirectory() as d:
+            f = Path(d) / "collezionista.md"
+            f.write_text(self.DOSSIER.format(ts="Temp +7, Rifl +4, Vol +5", nota="", gs="6-8"),
+                         encoding="utf-8")
+            self.assertEqual(E.controlla(f), [])
 
     def test_frazioni_equivalenti(self):
         self.assertEqual(E.gs_numerico("1/2"), E.gs_numerico("0.5"))

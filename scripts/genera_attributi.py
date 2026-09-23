@@ -695,6 +695,14 @@ def tetti_dai_ts(nome_file: str, testo: str) -> "dict[str, tuple[int, str]]":
     ts = TS_SCRITTI.search(testo)
     if not ts:
         return {}
+    # 🐛 **Un TS derivato non e' un dato** (2026-09-23, trovato provando il
+    # lotto D sui razorfiend). Se la riga `fonte:` dichiara che i `ts` li ha
+    # scritti `derive_statblocks`, vengono da una matrice di caratteristiche
+    # sua: usarli come tetto abbassava la Sag del razorfiend verde da 16 a 10
+    # per far tornare un numero che nessuno ha scelto.
+    fonte = re.search(r"^fonte:\s*derivati dalle tabelle:\s*([^(—\n]*)", testo, re.M)
+    if fonte and re.search(r"\bts\b", fonte.group(1)):
+        return {}
     m_tipo = re.search(r"^tipo:\s*(.+)$", testo, re.M) or \
         re.search(r"\*\*Size/Type\*\*:?\s*([^|\n]+)", testo)
     tipo = m_tipo.group(1).strip() if m_tipo else ""

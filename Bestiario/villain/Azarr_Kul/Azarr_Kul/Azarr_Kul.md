@@ -6,10 +6,11 @@
 gs: 15
 ca: 28
 pf: 119
-ts: Temp +12, Rifl +4, Vol +8
+ts: Temp +13, Rifl +7, Vol +13
 velocita: 9 m
-fonte: derivati dalle tabelle: ts (il resto è letto dalla prosa) — caratteristiche: matrice standard (13, 12, 11, 10, 9, 8) + 3 da DV/4 → For 15, Cos 13, Des 11 · TS: somma dei TS base di ogni classe (SRD: multiclasse si sommano) → Temp +12, Rifl +4, Vol +8
 ```
+
+> ⚠ `ts` ritrascritto dalla prosa di questa scheda (sezione dei tiri salvezza) il 2026-09-23. Il blocco portava «Temp +12, Rifl +4, Vol +8», derivati da `derive_statblocks --apply-ts` il 2 settembre con una matrice di caratteristiche sua, un giorno prima che il lettore imparasse questo formato (`d859a31`).
 
 **Razza/Tipo:** Hobgoblin Mezzo-Drago Blu (Umanoide Medio)
 **Classe:** Chierico 10 / Guerriero 4 (Livello Totale 14)

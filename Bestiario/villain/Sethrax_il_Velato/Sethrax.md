@@ -7,10 +7,11 @@ gs: 12
 ca: 22
 ca-dettaglio: (10 base, +5 Des “simulato”, +3 Sag, +1 Dodge, +4 bonus monaco, +1 Mental Barrier passivo)
 pf: 70
-ts: Temp +9, Rifl +7, Vol +7
+ts: Temp +5, Rifl +5, Vol +11
 velocita: 9 m
-fonte: derivati dalle tabelle: ts (il resto è letto dalla prosa) — caratteristiche: matrice standard (13, 12, 11, 10, 9, 8) + 4 da DV/4 → For 15, Cos 14, Des 11 · TS: somma dei TS base di ogni classe (SRD: multiclasse si sommano) → Temp +9, Rifl +7, Vol +7
 ```
+
+> ⚠ `ts` ritrascritto dalla prosa di questa scheda (sezione dei tiri salvezza) il 2026-09-23. Il blocco portava «Temp +9, Rifl +7, Vol +7», derivati da `derive_statblocks --apply-ts` il 2 settembre con una matrice di caratteristiche sua, un giorno prima che il lettore imparasse questo formato (`d859a31`).
 
 **Razza/Tipo:** Illithid (Mind Flayer — Aberrazione Medio)
 **Classe:** Psion 5 (Telepath) — DV totali 8d8 + 5d4 + 26 → CR 12

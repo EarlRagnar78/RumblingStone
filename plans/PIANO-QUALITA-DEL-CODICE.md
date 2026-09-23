@@ -1,6 +1,6 @@
 # PIANO — La qualità del codice, misurata prima e dopo
 
-> **Stato**: ✅ **completo** — tutti i lotti chiusi il 2026-09-03 (0, A, B, C, D)
+> **Stato**: 🟡 **riaperto il 2026-09-23 col lotto E** (§8, una libreria per le creature). I lotti 0, A, B, C, D sono chiusi dal 2026-09-03
 > **Aperto**: 2026-09-03
 > **Nasce da**: domanda del DM — *«per ogni script si dovrebbe guardare: c'è una
 > libreria o un tool open source che risolve il problema? posso usare oggetti già
@@ -389,3 +389,303 @@ riferimenti esistenti vanno guardati prima di rigenerare: `grep -rn "l-myn\|d-li
 **Il metodo che ha funzionato nel lotto B, e che vale per gli altri**: scritto il
 test, **mutare il codice che dovrebbe coprire** e verificare che il test cada.
 Nel lotto B ha trovato un difetto nel test stesso, che rileggendolo non si vedeva.
+
+---
+
+## §8 · Lotto E — Una libreria per le creature *(aperto 2026-09-23)*
+
+> **Nasce da** la domanda del DM del 2026-09-23: *«se i tre script usano le
+> stesse funzioni, si possono unire in una libreria unica, lasciando nei tre
+> script solo le funzioni diverse che chiamano la libreria comune? così è meglio
+> o più facile da unire in `dm.py`?»*
+> **Risposta breve**: è meglio, ed è la forma che `dmcore/` ha già per le tabelle
+> e per il blocco statistiche. Non ripara un difetto che esista oggi, perché la
+> classe di errori che l'ha fatta nascere la prende già il cancello di
+> `extract_statblocks --check` (ADR-0033, emendamento del 2026-09-23). Serve
+> perché la prossima correzione di un lettore si faccia in un posto e non in tre.
+> Per `dm.py` cambia poco: `dm.py` chiama i suoi strumenti con `subprocess`, e un
+> sottocomando `bestiario` costa una ventina di righe con o senza libreria.
+
+### §8.1 · Cosa NON rifà, e con chi confina
+
+| Confine | Di chi è | Cosa resta fuori da questo lotto |
+|---|---|---|
+| Come si genera un **mostro** dal GS | `PIANO-GENERATORE-CREATURE-E-PNG`, lotto B | il ramo mostri di `genera_creatura` costruisce dal bersaglio per GS, non dall'array, **per progetto**. Non si unifica |
+| I lotti J (template PF1e) e K (incontro tarato sul gruppo) | `PIANO-GENERATORE-CREATURE-E-PNG` §9-10 | non si toccano. Se partono prima di questo lotto, lavorano sul codice di oggi e il lotto E li rilegge |
+| Le regole della conformità | `RICERCA-CONFORMITA-MECCANICA-STATBLOCCHI` e ADR-0065 | il lotto sposta codice, non cambia una regola. Un numero del verificatore che cambia è un difetto del lotto |
+| Il cancello blocco/prosa | ADR-0033, emendamento 2026-09-23 | resta in `extract_statblocks` |
+| `slug` e testo | lotto A di questo piano | già in `dmcore/testo.py` |
+
+### §8.2 · La misura di partenza (presa il 2026-09-23 su `45306c8`)
+
+| Cosa | Oggi | Come si rimisura |
+|---|---:|---|
+| Righe dei quattro script | **3.482** | `wc -l scripts/{derive_statblocks,genera_attributi,genera_creatura,conformita_statblocchi}.py` |
+| Funzioni e classi di primo livello | GA 32 · C 33 · D 5 · GC 26 | `grep -cE "^def \|^class " …` |
+| Espressioni regolari di modulo | GA 25 · C 14 · D 4 · GC 0 | `grep -cE "^[A-Z_]+ = re.compile" …` |
+| Simboli che `conformita_statblocchi` importa da `genera_attributi` | **23** | lo script di §8.7, passo 3 |
+| Import circolare `genera_attributi` ↔ `conformita_statblocchi` | **1**, pigro dentro `tetti_dai_ts` | `grep -n "import conformita_statblocchi" scripts/genera_attributi.py` |
+| Implementazioni della base dei TS (buono 2 + L/2, cattivo L/3) | **4**: `derive_statblocks.deriva`, `genera_creatura._tiri_salvezza`, `conformita_statblocchi.ts_attesi` (riscrive la formula invece di usare `T.ts_buono`), `genera_attributi` (tramite il verificatore) | `grep -n "ts_buono\|ts_cattivo\|2 + .*// 2" scripts/*.py` |
+| Lettori di classi e DV dal testo | **3**: `derive_statblocks.leggi_scheda`, `genera_attributi.dadi_vita`, `conformita_statblocchi.composizione` | lettura dei tre |
+| Tabelle «ruolo → ordine delle caratteristiche» | **2**: `genera_attributi.PROFILI` (33 chiavi), `genera_creatura.RUOLI[…].priorita` (6 ruoli). **Dei 6 ruoli, 2 coincidono** (bruto, comandante); schermagliatore, tiratore, blaster e controllore ordinano diverso | `python3 -c` di §8.7, passo 4 |
+| Corpi di funzione identici in file diversi (§5) | **1** | lo script di §5 |
+| Script che usano `dmcore` | **28 su 63** | `grep -l "from dmcore" scripts/*.py \| wc -l` |
+| Test | **1159** verdi, 21 saltati | `python3 -m pytest -q scripts/tests/` |
+| Taratura dello strato scelto | **1,50** in campione · **1,54** fuori | `python3 scripts/genera_attributi.py --taratura` |
+| Conformità | **95** tornano · 5 come la fonte · 7 decisioni · 0 da correggere · 0 scarti del generatore | `python3 scripts/conformita_statblocchi.py --riepilogo` |
+
+🔎 **Il fatto che cambia il disegno.** Il verificatore **dipende già** dal lettore
+del generatore: 23 simboli, fra cui `PF_DADO`, `dadi_vita`, `pf_dado_sospetto`,
+`numeri_della_fonte`. L'indipendenza fra chi genera e chi verifica, che la
+risposta al DM dava per un principio da difendere, oggi è parziale. Il lotto
+la rende **esplicita e verificata** invece che sottintesa: si condividono le
+regole e il lettore, non la **scelta** (vedi D1).
+
+### §8.3 · Il disegno
+
+Tre moduli nuovi in `scripts/dmcore/`, separati per **chi li può importare**:
+
+| Modulo | Contiene | Chi lo importa |
+|---|---|---|
+| `dmcore/progressione.py` | base dei TS e del BAB per classe e tipo (`Gruppo`, `CLASSE_LIVELLO`, `_classe`, `ts_attesi` senza caratteristiche, `bab_atteso`), costruita su `dmcore.tabelle` | tutti |
+| `dmcore/lettura_creatura.py` | il lettore: `BLOCCO`, `PF_DADO`, `PEZZO_DADO`, `DV_DICHIARATI`, `SESTINA`, `BAB_SCRITTO`, `LOTTA_*`, `INIZIATIVA_*`, `senza_note`, `taglia_di`, `dadi_vita`, `robustezza`, `pf_dado_sospetto`, `dalla_scheda`, `numeri_della_fonte`, `composizione`, `dv_totali`, `dadi_di_pf`, `talenti` | tutti, verificatore compreso (se D1 = sì) |
+| `dmcore/caratteristiche.py` | la **scelta**: gli strati di `genera_attributi.genera` (scheda, fonte, vincoli, tetto dei TS, iniziativa a due candidati, array per ruolo con taglia e razza), `PROFILI`, `PER_TAGLIA`, `RAZZE` | i generatori (`genera_attributi`, `derive_statblocks`, il ramo PNG di `genera_creatura`), **mai** `conformita_statblocchi` |
+
+I quattro script restano dove sono e con la stessa interfaccia: CI,
+`tools.manifest.json`, skill e test li chiamano per nome. Dentro restano la riga
+di comando e ciò che è solo loro (`proponi`/`applica`/`--check` di
+`genera_attributi`, `verifica`/`giudica` del verificatore, `deriva` e il collaudo
+PF1e di `derive_statblocks`, il ramo mostri e gli incantesimi di
+`genera_creatura`).
+
+🔒 **La regola che tiene insieme il disegno** diventa un test (E4): nessun
+modulo importato da `conformita_statblocchi` può importare
+`dmcore.caratteristiche`. Se una stessa funzione sceglie e verifica, un errore
+di regola compare da tutte e due le parti e si conferma da solo: è successo con
+la Tabella 1–1, che skill e costante sbagliavano allo stesso modo e un test
+confrontava fra loro.
+
+📜 **La decisione va in un ADR**: il numero si prende con
+`python3 scripts/validate_docs.py --prossimo-adr` al momento di scriverlo
+(il 2026-09-23 il primo libero era ADR-0066).
+
+### §8.4 · I sotto-lotti
+
+L'ordine è fisso: ognuno lascia il repo verde e l'impronta di E0 **identica**,
+e va in un commit suo.
+
+#### ⬜ E0 · L'impronta di partenza
+`[engine: Opus, sessione principale · effort: medio · qualità: due esecuzioni sullo stesso commit danno lo stesso file, byte per byte]`
+**Classe C.** Uno script `scripts/impronta_creature.py` (sola lettura, stdlib)
+che scrive in JSON, ordinato e deterministico:
+- per ogni statblocco del Bestiario: `genera_attributi.genera(…)` (valori e
+  note), `conformita_statblocchi.giudica(…)`, l'esito di
+  `extract_statblocks.controlla(…)`;
+- per ogni scheda senza blocco: `derive_statblocks.deriva(leggi_scheda(…))`
+  (blocco, conti, mancanti);
+- per `genera_creatura.genera`: la griglia GS 1-20 × i 6 ruoli × tipo
+  umanoide/mostro × `--piu-cattivi` sì/no, a seme fisso;
+- `--taratura` di `genera_attributi` e `--riepilogo` del verificatore.
+
+L'impronta si committa in `scripts/tests/fixtures/impronta-creature.json`, e un
+test (`test_impronta_creature.py`) la rigenera e la confronta. **È il collaudo
+di tutto il lotto**: un sotto-lotto che la cambia ha cambiato un comportamento, e
+si ferma lì.
+**Accettazione**: test verde; e la prova che morde, cioè una mutazione di una
+riga in `tetti_dai_ts` fa cadere il test.
+
+#### ⬜ E1 · L'ADR e i moduli vuoti
+`[engine: Opus, sessione principale · effort: alto · qualità: il DM riconosce la decisione, e D1 è risposta]`
+**Classe G.** L'ADR con il disegno di §8.3, i tre moduli con la sola docstring
+e un `__all__` vuoto. Si scrive **dopo** la risposta a D1.
+**Accettazione**: `validate_docs --sorgenti` verde; l'ADR indicizzato in
+`docs/INDEX.md` §4.
+
+#### ⬜ E2 · La progressione in un posto
+`[engine: Sonnet 5 o Opus · effort: alto · qualità: impronta identica, e un solo posto nel repo calcola la base dei TS]`
+**Classe C.** Spostare in `dmcore/progressione.py` `Gruppo`, `CLASSE_LIVELLO`,
+`_classe`, `_PRESTIGIO`, la base dei TS e `bab_atteso`. Le quattro copie della
+base (§8.2) chiamano la funzione nuova. I nomi vecchi restano importabili dagli
+script (`from dmcore.progressione import ts_base as _ts_base`, e il vecchio nome
+come alias) finché E8 non li toglie.
+**Accettazione**: impronta identica; `grep -n "2 + .*// 2" scripts/*.py`
+vuoto; test nuovo `test_progressione.py` con i casi che il verificatore già
+conosce (umanoide a TS variabile, paladino con Grazia divina, classi di
+prestigio SRD) e una mutazione che lo fa cadere.
+
+#### ⬜ E3 · Il lettore in un posto
+`[engine: Opus, sessione principale · effort: alto · qualità: impronta identica, e il verificatore non importa più niente da genera_attributi]`
+**Classe C, con rischio alto**: è la parte più grande (una trentina di simboli)
+e quella dove una virgola sposta un numero. Spostare in
+`dmcore/lettura_creatura.py` i simboli di §8.3. **In due commit**:
+- **E3a**: i simboli di `genera_attributi` che il verificatore usa (i 23 di §8.2);
+- **E3b**: `composizione`, `dv_totali`, `dadi_di_pf`, `talenti`, `leggi`/`Scheda`
+  del verificatore.
+
+⚠️ `derive_statblocks.leggi_scheda` **non** entra: legge schede in prosa per
+derivare, con la sua struttura `Lettura`, e unificarlo cambierebbe le proposte
+su 60 schede. Resta dov'è, e lo si dichiara nell'ADR.
+**Accettazione**: impronta identica; `grep -n "import genera_attributi"
+scripts/conformita_statblocchi.py` vuoto; `test_conformita_statblocchi.py`,
+`test_genera_attributi.py` e `test_statblock.py` verdi senza modifiche alle
+asserzioni (cambiano solo gli import).
+
+#### ⬜ E4 · Il grafo degli import
+`[engine: Sonnet 5 · effort: medio · qualità: il test morde su un import proibito aggiunto a mano]`
+**Classe C.** Un test (`test_grafo_import_creature.py`) che legge gli import con
+`ast` e verifica:
+- nessun ciclo fra i quattro script e i tre moduli nuovi (l'import pigro in
+  `tetti_dai_ts` sparisce qui);
+- `conformita_statblocchi` e ogni modulo che importa non arrivano mai a
+  `dmcore.caratteristiche`, nemmeno indirettamente.
+
+**Accettazione**: verde; e rosso aggiungendo a mano
+`import dmcore.caratteristiche` in `conformita_statblocchi.py`.
+
+#### ⬜ E5 · La scelta delle caratteristiche in un posto
+`[engine: Opus, sessione principale · effort: alto · qualità: impronta identica, taratura 1,50 / 1,54 invariata]`
+**Classe C.** Spostare in `dmcore/caratteristiche.py` gli strati di
+`genera_attributi.genera` e le loro tabelle (`PROFILI`, `PER_TAGLIA`, `RAZZE`,
+`ELITE`), `_dall_array`, `tetti_dai_ts`, `iniziativa_ambigua`, `des_vincolata`,
+`des_da_iniziativa`, `cos_da_pf`, `for_da_lotta`, `dalla_fonte`.
+`genera_attributi` tiene `proponi`, `applica`, `controlla`, `taratura` e la riga
+di comando; `derive_statblocks.con_attributi` chiama `dmcore.caratteristiche`
+direttamente.
+**Accettazione**: impronta identica; `genera_attributi --check` e
+`--taratura` invariati; E4 verde.
+
+#### ⬜ E6 · Una tabella dei ruoli *(bloccato su D2)*
+`[engine: Opus, sessione principale · effort: xhigh · qualità: il DM ha visto il diff dei blocchi prima del commit]`
+**Classe K se D2 cambia l'ordine di una delle due tabelle**, perché cambia gli
+`attributi` di blocchi del Bestiario. Si attua la risposta a D2 e:
+- se cambia `PROFILI`: `genera_attributi --rigenera` in un commit suo, e il
+  diff dei blocchi va al DM **prima** del commit (come il lotto A di L7);
+- se cambia `genera_creatura`: l'impronta di E0 cambia sulla griglia dei PNG, e
+  la si rigenera in un commit suo, che dice quali celle e perché.
+
+**Accettazione**: una tabella sola; `conformita --riepilogo` senza scarti nuovi;
+impronta rigenerata e motivata nel commit.
+
+#### ⬜ E7 · Il ramo PNG di `genera_creatura` sulla libreria
+`[engine: Sonnet 5 · effort: alto · qualità: impronta identica sulla griglia dei mostri; sui PNG identica o motivata da E6]`
+**Classe C.** Il ramo `_genera_png` usa l'array e la tabella dei ruoli di
+`dmcore.caratteristiche`; il ramo mostri (dal bersaglio per GS) non si tocca
+(§8.1). Incantesimi, carattere e collaudo restano in `genera_creatura`.
+**Accettazione**: `test_genera_creatura.py` verde; impronta come detto.
+
+#### ⬜ E8 · Gli alias se ne vanno, e il conto finale
+`[engine: Sonnet 5 · effort: medio · qualità: i numeri di §8.2 rimisurati, e nessun chiamante dei nomi vecchi]`
+**Classe M.** Togliere gli alias lasciati da E2-E5 dove nessuno li chiama più
+(test compresi, che passano ai nomi nuovi). Rimisurare §8.2 e scrivere i numeri
+nuovi accanto ai vecchi.
+**Accettazione**: tutti i gate di §8.5 verdi; `grep` dei nomi vecchi vuoto fuori
+da `dmcore`.
+
+#### ⬜ E9 · `dm.py bestiario` *(bloccato su D3)*
+`[engine: Sonnet 5 · effort: medio · qualità: dm.py bestiario <azione> --help esce 0 e dà lo stesso output dello script]`
+**Classe C.** Un sottocomando `dm.py bestiario {estrai,deriva,attributi,creatura,conformita}`
+che passa gli argomenti allo script (come fanno già `prep` e `maps`, con
+`subprocess` e `parse_known_args`). Gli script restano: la CI e il manifest li
+chiamano per nome. Si aggiornano `scripts/README-automation.md`, la skill
+`rumblingstone-automation` (poi `./scripts/build-skills.sh --no-deploy` e
+`validate_skills.py`) e `tools.manifest.json` se il sottocomando ci va.
+**Accettazione**: un test che per ogni azione confronta `dm.py bestiario X --help`
+con `scripts/X.py --help`; `dm.py doctor --ci` verde.
+
+### §8.5 · Il collaudo, dopo ogni sotto-lotto
+
+Non si passa al sotto-lotto successivo finché tutti questi non sono verdi:
+
+```bash
+python3 -m pytest -q scripts/tests/                     # ≥ 1159 verdi, piu' i test nuovi
+python3 -m pytest -q scripts/tests/test_impronta_creature.py   # impronta di E0 identica
+python3 scripts/extract_statblocks.py --check           # 0 problemi
+python3 scripts/validate_bestiario.py                   # catalogo in sync
+python3 scripts/validate_bestiario.py --rules           # 5 avvisi, gli stessi
+python3 scripts/genera_attributi.py --check             # 93 blocchi riproducibili
+python3 scripts/genera_attributi.py --taratura          # 1,50 / 1,54
+python3 scripts/conformita_statblocchi.py --check
+python3 scripts/conformita_statblocchi.py --riepilogo   # 95 · 5 · 7 · 0 · 0
+python3 scripts/derive_statblocks.py                    # 2 proposte, 92 ferme
+python3 scripts/genera_creatura.py --gs 7 --ruolo bruto # stesso output di E0
+python3 scripts/decisioni_dm.py --check
+python3 scripts/validate_docs.py --sorgenti
+python3 scripts/check_plans_discipline.py --base origin/main
+python3 scripts/dm.py doctor --ci
+```
+
+E tre regole di metodo, già provate in questo piano:
+- **scritto un test, si muta il codice che copre** e si verifica che cada (§7);
+- **un sotto-lotto per commit**, con la riga di CHANGELOG nello stesso commit
+  (regola d'oro, ADR-0009);
+- **l'impronta non si rigenera mai per far passare un test**: si rigenera solo
+  in E6, in un commit suo, con il motivo scritto.
+
+### §8.6 · Le decisioni del DM
+
+<!-- decisioni-dm: QUALITA-CODICE -->
+
+| # | Ambito | Domanda |
+|---|---|---|
+| D1 | E1 · E3 | **Il verificatore condivide il lettore?** Oggi lo fa già: importa 23 simboli da `genera_attributi`. **Sì** (consigliato): il lettore va in `dmcore/lettura_creatura.py` e lo usano tutti; l'indipendenza sta nelle regole e nella scelta, che il verificatore non importa mai (E4 lo prova). **No**: il verificatore tiene un lettore suo, copiato, più sicuro contro un errore di lettura condiviso e con una seconda copia da tenere allineata a mano |
+| D2 | E6 | **Quale tabella dei ruoli vince?** Dei 6 ruoli di `genera_creatura`, 4 ordinano le caratteristiche diversamente dal profilo corrispondente di `genera_attributi` (schermagliatore, tiratore, blaster, controllore). **(a)** vince `genera_attributi`: cambiano i PNG che `genera_creatura` genera d'ora in poi, nessun blocco del Bestiario; **(b)** vince `genera_creatura`: cambiano gli `attributi` di alcuni dei 15 blocchi scelti dall'array, che il DM vede prima; **(c)** si tengono separate e si dichiara perché |
+| D3 | E9 | **`dm.py bestiario` si fa in questo lotto o dopo?** Costa poco e non dipende dalla libreria; farlo prima di E8 vuol dire toccare `dm.py` due volte se un'interfaccia cambia |
+
+### §8.7 · Da dove si comincia, in una chat nuova
+
+**Prima di tutto la misura.** Se un numero non torna con §8.2, qualcuno ha già
+lavorato: si rilegge questo piano prima di eseguirlo.
+
+```bash
+git fetch origin main && git log --oneline -1 origin/main
+python3 scripts/fase1.py scripts/genera_attributi.py scripts/conformita_statblocchi.py \
+    scripts/derive_statblocks.py scripts/genera_creatura.py      # regola G6, sola lettura
+wc -l scripts/{derive_statblocks,genera_attributi,genera_creatura,conformita_statblocchi}.py   # 3482
+grep -n "import conformita_statblocchi" scripts/genera_attributi.py                            # 1 riga
+python3 -m pytest -q scripts/tests/ | tail -1                                                  # 1159 passed
+python3 scripts/conformita_statblocchi.py --riepilogo                                          # 95 · 5 · 7 · 0 · 0
+python3 scripts/genera_attributi.py --taratura | grep "errore medio"                           # 1.5 · 1.54
+python3 scripts/decisioni_dm.py --check                                                        # D1-D3 di QUALITA-CODICE aperte
+```
+
+Il passo 3 e il passo 4 di §8.2, se servono di nuovo:
+
+```bash
+# 3 · i simboli che il verificatore prende dal generatore
+python3 - <<'PY'
+import re; t = open("scripts/conformita_statblocchi.py").read()
+print(len(sorted(set(re.findall(r"\bGA\.(\w+)", t)))))
+PY
+# 4 · le due tabelle dei ruoli
+python3 - <<'PY'
+import sys; sys.path.insert(0, "scripts")
+import genera_attributi as GA, genera_creatura as GC
+# i ruoli di genera_creatura sono in italiano, i profili in inglese: la
+# corrispondenza e' quella usata per la misura di §8.2
+VERSO = {"bruto": "brute", "schermagliatore": "skirmisher", "tiratore": "ranged",
+         "comandante": "commander", "controllore": "arcane", "blaster": "blaster"}
+for k, r in GC.RUOLI.items():                  # 6 ruoli: 2 coincidono (bruto, comandante)
+    gc = tuple(c.capitalize() for c in r.priorita)
+    print(f"{k:16} {'=' if gc == GA.profilo_di(VERSO[k]) else '≠'} {gc} {GA.profilo_di(VERSO[k])}")
+PY
+```
+
+**Le skill da aprire** (ORCHESTRAZIONE, cinque domande): `rumblingstone-debugging`
+per il codice, `rumblingstone-plans` per la tracciatura,
+`rumblingstone-prosa-documenti` per l'ADR e i commit. `dnd-35-srd` solo se un
+numero del verificatore cambia e bisogna capire quale regola ha toccato.
+
+**L'ordine**: rispondere a **D1** → **E0** → **E1** → **E2** → **E3a** → **E3b**
+→ **E4** → **E5** → (**D2** → **E6**) → **E7** → **E8** → (**D3** → **E9**).
+E0-E5 non dipendono dal DM oltre D1, e sono la parte che rende possibile il
+resto.
+
+**L'effort, sotto-lotto per sotto-lotto**: alto per E1-E3 ed E5, dove si sposta
+codice che decide numeri; xhigh per E6 se tocca il canone; medio per E0, E4, E8
+ed E9. **Una PR per il gruppo E0-E5**, una per E6-E9: la prima si rivede come
+spostamento puro (impronta identica), la seconda cambia comportamenti.
+
+⚠️ **Il rischio vero è E3.** È dove un'espressione regolare spostata perde un
+flag (`re.M`, `re.I`) e un numero cambia su tre schede su cento. L'impronta di E0
+esiste per quello: senza, un errore di lettura su una scheda passerebbe come un
+refactor riuscito.

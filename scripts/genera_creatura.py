@@ -104,9 +104,9 @@ from dmcore.statblock import Statblocco, rendi  # noqa: E402
 @dataclass(frozen=True)
 class Ruolo:
     nome: str
-    #: La chiave del profilo in `dmcore.caratteristiche.PROFILI`, cercata per
-    #: nome esatto e non per sottostringa come fa `profilo_di`: un profilo tolto
-    #: o rinominato là è un `KeyError` al primo PNG, non un ordine di ripiego.
+    #: La chiave del profilo in `dmcore.caratteristiche.PROFILI`, cercata con
+    #: `profilo_esatto` e non per sottostringa come fa `profilo_di`: un profilo
+    #: tolto o rinominato là è un `KeyError` al primo PNG, non un ordine di ripiego.
     profilo: str
     arma: str
     dado_arma: str
@@ -121,13 +121,6 @@ class Ruolo:
     risolve_attacco: bool = True
     descrizione: str = ""
 
-    @property
-    def priorita(self) -> tuple[str, ...]:
-        """L'ordine di assegnazione, in minuscolo: for, des, cos, int, sag, car."""
-        return tuple(c.lower() for c in _PROFILI[self.profilo])
-
-
-_PROFILI = dict(CAR.PROFILI)
 
 RUOLI = {
     "bruto": Ruolo(
@@ -568,31 +561,19 @@ def _genera_png(gs, tipo, taglia, R, classe, elite, conto, rng,
 
     if elite is None:
         elite = not e_png
-    matrice = T.ELITE if elite else T.BASIC
-    # ⚠️ La caratteristica da incantatore batte quella del ruolo.
-    #
-    # Difetto trovato dal test: un chierico costruito come «controllore»
-    # prendeva l'ordine del ruolo — Intelligenza per prima — e usciva con Int 18
-    # e Sag 13. Ma un chierico lancia su Saggezza: quella CD restava indietro di
-    # cinque punti rispetto alla riga del GS, e al tavolo sarebbe stato un
-    # incantatore che non fa mai passare un incantesimo. Il ruolo dice *come*
-    # combatte; la classe dice su *cosa* lancia, e sulla seconda non si tratta.
-    priorita = R.priorita
-    if nome_classe in T.INCANTATORI:
-        lancia_su = T.INCANTATORI[nome_classe][1]
-        if priorita[0] != lancia_su:
-            priorita = (lancia_su,) + tuple(c for c in priorita if c != lancia_su)
-            conto(f"la caratteristica da incantatore ({lancia_su.upper()}) passa "
-                  f"davanti a quella del ruolo ({R.priorita[0].upper()}): "
-                  f"{nome_classe} lancia su quella")
-    attr = dict(zip(priorita, matrice))
-    # SRD: +1 a un punteggio al 4° livello e ogni 4 livelli. Vanno sulla
-    # caratteristica primaria del ruolo — è quello che fa chiunque, e senza
-    # questi un mago di 9° usciva con Intelligenza 15, che al 9° livello non è
-    # un mago: è un apprendista con nove livelli.
-    aumenti = livelli // 4
-    primaria = priorita[0]
-    attr[primaria] += aumenti
+    matrice = CAR.ARRAY_ELITE if elite else CAR.ARRAY_STANDARD
+    # La scelta sta in `dmcore.caratteristiche.matrice_png`, con i due difetti
+    # che l'hanno fatta com'è; qui resta il conto che la racconta.
+    lancia_su = T.INCANTATORI[nome_classe][1] if nome_classe in T.INCANTATORI else ""
+    attr = {k.lower(): v for k, v in
+            CAR.matrice_png(R.profilo, livelli, elite, lancia_su.capitalize()).items()}
+    primaria = next(iter(attr))
+    del_ruolo = CAR.profilo_esatto(R.profilo)[0].lower()
+    if primaria != del_ruolo:
+        conto(f"la caratteristica da incantatore ({primaria.upper()}) passa "
+              f"davanti a quella del ruolo ({del_ruolo.upper()}): "
+              f"{nome_classe} lancia su quella")
+    aumenti = attr[primaria] - matrice[0]
     conto(("matrice élite " if elite else "matrice standard ") + str(matrice)
           + (f", +{aumenti} a {primaria.upper()} (SRD: uno ogni 4 livelli)"
              if aumenti else "")

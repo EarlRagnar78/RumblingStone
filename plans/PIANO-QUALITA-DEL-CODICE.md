@@ -697,12 +697,28 @@ numero, perché tira con l'arco.
 
 La fixture è rigenerata nel commit successivo a quello del codice, da sola.
 
-#### ⬜ E7 · Il ramo PNG di `genera_creatura` sulla libreria
+#### ✅ E7 · Il ramo PNG di `genera_creatura` sulla libreria *(chiuso 2026-09-23)*
 `[engine: Sonnet 5 · effort: alto · qualità: impronta identica sulla griglia dei mostri; sui PNG identica o motivata da E6]`
 **Classe C.** Il ramo `_genera_png` usa l'array e la tabella dei ruoli di
 `dmcore.caratteristiche`; il ramo mostri (dal bersaglio per GS) non si tocca
 (§8.1). Incantesimi, carattere e collaudo restano in `genera_creatura`.
 **Accettazione**: `test_genera_creatura.py` verde; impronta come detto.
+
+✅ **Fatto**: la scelta del PNG sta in `dmcore.caratteristiche.matrice_png`
+(matrice élite o standard nell'ordine del profilo, la caratteristica da
+incantatore davanti, +1 ogni 4 livelli sulla prima), con i due commenti sui
+difetti che l'avevano fatta così. `profilo_esatto` cerca un profilo per nome e
+solleva `KeyError` invece di ripiegare sul bruto come `profilo_di`, che legge
+una frase. `_genera_png` tiene solo il conto che racconta la scelta, e
+`Ruolo.priorita` sparisce. `matrice_png` non sostituisce `_dall_array`, e la
+docstring dice perché: quella ricostruisce una scheda che esiste, con il GS
+come surrogato dei livelli, la razza e un ±1 sul nome del file.
+Impronta identica su tutte le 720 celle. Sei test nuovi in
+`test_genera_creatura.py` (`UnaTabellaDeiRuoli`), e cinque mutazioni su cinque
+li fanno rossi: il tiratore su un altro profilo, la precedenza
+dell'incantatore tolta, `profilo_esatto` che ripiega, un aumento ogni 5 livelli,
+le caratteristiche in ordine alfabetico. `genera_creatura` 1.014 → 1.013 righe,
+`caratteristiche` 494 → 541.
 
 #### ⬜ E8 · Gli alias se ne vanno, e il conto finale
 `[engine: Sonnet 5 · effort: medio · qualità: i numeri di §8.2 rimisurati, e nessun chiamante dei nomi vecchi]`

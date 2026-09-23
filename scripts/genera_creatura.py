@@ -74,6 +74,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 
+from dmcore import caratteristiche as CAR  # noqa: E402
 from dmcore import incantesimi as INC  # noqa: E402
 from dmcore import tabelle as T  # noqa: E402
 from dmcore.progressione import ts_base_di  # noqa: E402
@@ -87,16 +88,26 @@ from dmcore.statblock import Statblocco, rendi  # noqa: E402
 # per cui sono dati e non rami del codice.
 #
 # Ogni ruolo dice tre cose e nient'altro:
-#   * l'ordine in cui la matrice élite/standard viene assegnata;
+#   * quale profilo di `dmcore.caratteristiche.PROFILI` ordina la matrice
+#     élite/standard;
 #   * l'arma e il modo di combattere;
 #   * se è un incantatore, e con che classe di norma.
+#
+# ⚖️ **La tabella dei ruoli è una sola** (D2 di `PIANO-QUALITA-DEL-CODICE`,
+# decisa dal DM il 2026-09-23: vince `genera_attributi`). Fino al lotto E6 ogni
+# ruolo qui aveva un suo ordine delle caratteristiche, e su sei ruoli quattro
+# non coincidevano con il profilo omonimo di `genera_attributi`: un tiratore
+# generato qui e un tiratore del Bestiario ricevevano la stessa matrice in un
+# ordine diverso. Ora il ruolo nomina il profilo, e l'ordine si legge da lì.
 
 
 @dataclass(frozen=True)
 class Ruolo:
     nome: str
-    #: L'ordine di assegnazione: for, des, cos, int, sag, car
-    priorita: tuple[str, ...]
+    #: La chiave del profilo in `dmcore.caratteristiche.PROFILI`, cercata con
+    #: `profilo_esatto` e non per sottostringa come fa `profilo_di`: un profilo
+    #: tolto o rinominato là è un `KeyError` al primo PNG, non un ordine di ripiego.
+    profilo: str
     arma: str
     dado_arma: str
     #: A distanza usa Destrezza per l'attacco.
@@ -113,27 +124,27 @@ class Ruolo:
 
 RUOLI = {
     "bruto": Ruolo(
-        "bruto", ("for", "cos", "des", "sag", "car", "int"),
+        "bruto", "brute",
         "mazzafrusto pesante", "1d10", naturale=2,
         descrizione="regge la linea e la sfonda; poca finezza, molta stazza"),
     "schermagliatore": Ruolo(
-        "schermagliatore", ("des", "for", "cos", "sag", "car", "int"),
+        "schermagliatore", "skirmisher",
         "spada corta", "1d6",
         descrizione="colpisce e si sposta; vive finche' non lo si inchioda"),
     "tiratore": Ruolo(
-        "tiratore", ("des", "cos", "sag", "for", "car", "int"),
+        "tiratore", "ranged",
         "arco lungo", "1d8", distanza=True,
         descrizione="sta dietro e fa male; il problema e' raggiungerlo"),
     "comandante": Ruolo(
-        "comandante", ("car", "for", "cos", "sag", "des", "int"),
+        "comandante", "commander",
         "spada lunga", "1d8", naturale=1,
         descrizione="vale per quello che fa fare agli altri, non per i suoi danni"),
     "controllore": Ruolo(
-        "controllore", ("int", "des", "cos", "sag", "car", "for"),
+        "controllore", "arcane",
         "bastone ferrato", "1d6", classe_tipica="mago", risolve_attacco=False,
         descrizione="toglie ai PG le opzioni; il danno viene dopo"),
     "blaster": Ruolo(
-        "blaster", ("int", "cos", "des", "sag", "car", "for"),
+        "blaster", "blaster",
         "pugnale", "1d4", classe_tipica="mago", risolve_attacco=False,
         descrizione="danno d'area a distanza; fragile se lo si raggiunge"),
 }
@@ -222,27 +233,6 @@ CARATTERE: dict[str, list[tuple[str, str, str]]] = {
 #: sceglie. Non è una tabella di regole: è una scorciatoia dichiarata.
 TIPI_COMUNI = ("humanoid", "monstrous humanoid", "magical beast", "giant",
                "aberration", "undead", "outsider", "animal")
-
-#: Per GS, il numero di DV con cui si parte. **Convenzione 3.5 dichiarata, non
-#: una tabella del SRD**: il SRD non ha un «DV per GS», e questa è la regola
-#: pratica (un mostro standard ha grosso modo tanti DV quanto il GS). È
-#: dichiarata qui invece che nascosta dentro il codice perché è esattamente il
-#: genere di numero che, non dichiarato, fra sei mesi sembra una fonte.
-def dv_di_partenza(gs: int, tipo: str) -> int:
-    """DV ≈ GS, con lo scarto che il tipo impone al SRD.
-
-    I non-morti e i costrutti hanno BAB e TS bassi: a pari DV valgono meno, e ne
-    servono di più. I draghi hanno d12, BAB pieno e tre TS buoni: ne servono meno.
-    """
-    dado, bab, buoni = T.TIPI[tipo]
-    scarto = 0
-    if bab <= 0.5:
-        scarto += 2
-    if len(buoni) >= 3:
-        scarto -= 1
-    if dado >= 12:
-        scarto -= 1
-    return max(1, gs + scarto)
 
 
 # ===========================================================================
@@ -550,31 +540,19 @@ def _genera_png(gs, tipo, taglia, R, classe, elite, conto, rng,
 
     if elite is None:
         elite = not e_png
-    matrice = T.ELITE if elite else T.BASIC
-    # ⚠️ La caratteristica da incantatore batte quella del ruolo.
-    #
-    # Difetto trovato dal test: un chierico costruito come «controllore»
-    # prendeva l'ordine del ruolo — Intelligenza per prima — e usciva con Int 18
-    # e Sag 13. Ma un chierico lancia su Saggezza: quella CD restava indietro di
-    # cinque punti rispetto alla riga del GS, e al tavolo sarebbe stato un
-    # incantatore che non fa mai passare un incantesimo. Il ruolo dice *come*
-    # combatte; la classe dice su *cosa* lancia, e sulla seconda non si tratta.
-    priorita = R.priorita
-    if nome_classe in T.INCANTATORI:
-        lancia_su = T.INCANTATORI[nome_classe][1]
-        if priorita[0] != lancia_su:
-            priorita = (lancia_su,) + tuple(c for c in priorita if c != lancia_su)
-            conto(f"la caratteristica da incantatore ({lancia_su.upper()}) passa "
-                  f"davanti a quella del ruolo ({R.priorita[0].upper()}): "
-                  f"{nome_classe} lancia su quella")
-    attr = dict(zip(priorita, matrice))
-    # SRD: +1 a un punteggio al 4° livello e ogni 4 livelli. Vanno sulla
-    # caratteristica primaria del ruolo — è quello che fa chiunque, e senza
-    # questi un mago di 9° usciva con Intelligenza 15, che al 9° livello non è
-    # un mago: è un apprendista con nove livelli.
-    aumenti = livelli // 4
-    primaria = priorita[0]
-    attr[primaria] += aumenti
+    matrice = CAR.ARRAY_ELITE if elite else CAR.ARRAY_STANDARD
+    # La scelta sta in `dmcore.caratteristiche.matrice_png`, con i due difetti
+    # che l'hanno fatta com'è; qui resta il conto che la racconta.
+    lancia_su = T.INCANTATORI[nome_classe][1] if nome_classe in T.INCANTATORI else ""
+    attr = {k.lower(): v for k, v in
+            CAR.matrice_png(R.profilo, livelli, elite, lancia_su.capitalize()).items()}
+    primaria = next(iter(attr))
+    del_ruolo = CAR.profilo_esatto(R.profilo)[0].lower()
+    if primaria != del_ruolo:
+        conto(f"la caratteristica da incantatore ({primaria.upper()}) passa "
+              f"davanti a quella del ruolo ({del_ruolo.upper()}): "
+              f"{nome_classe} lancia su quella")
+    aumenti = attr[primaria] - matrice[0]
     conto(("matrice élite " if elite else "matrice standard ") + str(matrice)
           + (f", +{aumenti} a {primaria.upper()} (SRD: uno ogni 4 livelli)"
              if aumenti else "")

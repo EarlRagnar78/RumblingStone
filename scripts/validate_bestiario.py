@@ -222,9 +222,9 @@ def check_rules(path: Path):
     # (1-ter) `pf-dado` deve registrare i dadi vita. Il 2026-09-23 non lo
     # faceva in 46 statblocchi su 95: 26 portavano il danno di un'arma, 20 una
     # parte sola dei dadi. Corretti da conformita_statblocchi.py, che ora ne fa
-    # un cancello; qui resta l'avviso con la ragione. Il controllo vive in
-    # genera_attributi.py: una norma, un rilevatore.
-    from genera_attributi import pf_dado_sospetto
+    # un cancello; qui resta l'avviso con la ragione. Il controllo vive nel
+    # lettore delle creature (ADR-0066): una norma, un rilevatore.
+    from dmcore.lettura_creatura import pf_dado_sospetto
     motivo = pf_dado_sospetto(text, cr)
     if motivo:
         warn(f"{rel}: {motivo} — `pf-dado` non registra i dadi vita")

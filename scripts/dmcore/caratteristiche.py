@@ -34,8 +34,8 @@ __all__ = [
     "ARRAY_ELITE", "ARRAY_STANDARD", "PROFILI", "PROFILO_DI_RIPIEGO", "ELITE",
     "DES_SCRITTA", "CONTATTO", "NON_MORTO", "MODELLO_SENZA_MENTE", "mod",
     "da_modificatore", "des_vincolata", "cos_da_pf", "dalla_fonte", "des_da_iniziativa",
-    "for_da_lotta", "iniziativa_ambigua", "profilo_di", "PER_TAGLIA", "RAZZE",
-    "razza_di", "genera", "riga_attributi"
+    "for_da_lotta", "iniziativa_ambigua", "profilo_di", "profilo_esatto", "matrice_png",
+    "PER_TAGLIA", "RAZZE", "razza_di", "genera", "riga_attributi"
 ]
 
 
@@ -250,6 +250,53 @@ def profilo_di(ruolo: str) -> "tuple[str, ...]":
         if chiave in basso:
             return ordine
     return PROFILO_DI_RIPIEGO
+
+
+def profilo_esatto(chiave: str) -> "tuple[str, ...]":
+    """L'ordine di un profilo cercato per nome, senza ripiego.
+
+    `profilo_di` legge il ruolo scritto in una scheda e cerca una parola dentro
+    una frase, quindi ripiega sul bruto se non trova niente. Chi dichiara il
+    profilo per nome, come i ruoli di `genera_creatura`, deve invece fallire:
+    un profilo tolto o rinominato qui e' un `KeyError`, non un ordine sbagliato.
+    """
+    for nome, ordine in PROFILI:
+        if nome == chiave:
+            return ordine
+    raise KeyError(f"nessun profilo {chiave!r} in PROFILI")
+
+
+def matrice_png(profilo: str, livelli: int, elite: bool,
+                lancia_su: str = "") -> "dict[str, int]":
+    """Le sei caratteristiche di un PNG costruito da zero con livelli di classe.
+
+    E' la scelta del ramo PNG di `genera_creatura` (D2 del piano, lotto E6-E7):
+    la matrice elite o standard nell'ordine del profilo, la caratteristica da
+    incantatore davanti a tutte se la classe lancia su un'altra, e il +1 ogni 4
+    livelli (SRD) sulla prima. Il dizionario segue l'ordine di assegnazione.
+
+    Non e' `_dall_array` e non la sostituisce: quella ricostruisce gli
+    `attributi` di una scheda che esiste gia', con il GS come surrogato dei
+    livelli, la razza e un ±1 a seme fisso sul nome del file. Questa parte da
+    livelli dichiarati e non ha niente da indovinare.
+    """
+    ordine = profilo_esatto(profilo)
+    # ⚠️ La caratteristica da incantatore batte quella del ruolo.
+    #
+    # Difetto trovato dal test: un chierico costruito come «controllore»
+    # prendeva l'ordine del ruolo, Intelligenza per prima, e usciva con Int 18
+    # e Sag 13. Ma un chierico lancia su Saggezza: quella CD restava indietro di
+    # cinque punti rispetto alla riga del GS, e al tavolo sarebbe stato un
+    # incantatore che non fa mai passare un incantesimo. Il ruolo dice *come*
+    # combatte; la classe dice su *cosa* lancia, e sulla seconda non si tratta.
+    if lancia_su and ordine[0] != lancia_su:
+        ordine = (lancia_su,) + tuple(c for c in ordine if c != lancia_su)
+    valori = dict(zip(ordine, ARRAY_ELITE if elite else ARRAY_STANDARD))
+    # SRD: +1 a un punteggio al 4° livello e ogni 4 livelli, sulla
+    # caratteristica primaria. Senza, un mago di 9° usciva con Intelligenza 15,
+    # che al 9° livello e' un apprendista con nove livelli.
+    valori[ordine[0]] += livelli // 4
+    return valori
 
 
 #: SRD 3.5, *Improving Monsters*, «Changes to Statistics by Size», sommati a

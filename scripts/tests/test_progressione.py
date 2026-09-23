@@ -74,7 +74,8 @@ class TestIlVerificatoreLaUsa(unittest.TestCase):
 
     def test_paladino_con_grazia_divina(self):
         import conformita_statblocchi as C
-        s = C.Scheda(file=Path("paladino-prova-cr4.md"), gs=4.0, tipo="Medium humanoid, Paladin 4",
+        from dmcore import lettura_creatura as LC
+        s = LC.Scheda(file=Path("paladino-prova-cr4.md"), gs=4.0, tipo="Medium humanoid, Paladin 4",
                      attributi={}, provenienza="a mano",
                      gruppi=[P.Gruppo("paladin", 4, 10, ("temp",), 1.0)], composizione_nota=True)
         self.assertEqual(P.ts_base(s.gruppi)[0], {"temp": 4, "rifl": 1, "vol": 1})

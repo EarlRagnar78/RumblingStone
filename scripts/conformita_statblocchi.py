@@ -73,31 +73,19 @@ from dmcore import tabelle as T  # noqa: E402
 from dmcore import lettura_creatura as L  # noqa: E402
 
 # ---------------------------------------------------------------------------
-# Le classi: dado, TS buoni, BAB. Stanno in `dmcore.progressione` (ADR-0066),
-# con le due classi di prestigio SRD che compaiono nel Bestiario; i nomi di
-# prima restano come alias finche' il lotto E8 non li toglie.
+# Le classi (dado, TS buoni, BAB) stanno in `dmcore.progressione`, e la scheda
+# come la legge questo verificatore in `dmcore.lettura_creatura` (ADR-0066, D1:
+# il verificatore condivide il lettore). Qui si importa solo quello che il
+# verificatore usa; il resto si chiama dal modulo, con `P.` e `L.`.
 # ---------------------------------------------------------------------------
 from dmcore import progressione as P  # noqa: E402
-from dmcore.progressione import CLASSE_LIVELLO, Gruppo  # noqa: E402,F401
-
-_PRESTIGIO = P.PRESTIGIO
-_classe = P.classe
-_NOMI = P.NOMI_DI_CLASSE
-
-#: La scheda come la legge questo verificatore sta in `dmcore.lettura_creatura`
-#: (ADR-0066, D1: il verificatore condivide il lettore); i nomi restano
-#: importabili da qui fino al lotto E8.
-from dmcore.lettura_creatura import (  # noqa: E402,F401
-    TS_CAMPO, ATTRIBUTI, MISCHIA, TALENTI, RESISTENZA, talenti, Scheda, provenienza,
-    _attributi, DV_PROSA, DV_ACCANTO_AI_PF, LIVELLO_IGNOTO, dv_totali, dadi_di_pf,
-    composizione, leggi, NON_MORTO_PF1E, PF1E, non_morto_pf1e,
+from dmcore.lettura_creatura import (  # noqa: E402
+    TS_CAMPO, Scheda, dadi_di_pf, leggi, non_morto_pf1e, talenti,
 )
 
 
-BAB, LOTTA, LOTTA_TAGLIA = L.BAB_SCRITTO, L.LOTTA_SCRITTA, L.LOTTA_TAGLIA
 FOCALIZZATA = re.compile(r"\b(?:Weapon Focus|Arma Focalizzata)\b", re.I)
 ACCURATA = re.compile(r"\b(?:Weapon Finesse|Arma Accurata)\b", re.I)
-LOTTA_MIGLIORATA = L.LOTTA_MIGLIORATA
 PERFETTA = re.compile(r"\b(?:perfett[oa]|masterwork|mwk)\b", re.I)
 
 #: I template semplici PF1e (skill `pathfinder-1e-srd`, «rebuild rules»), come
@@ -223,8 +211,8 @@ def verifica(s: Scheda, attr: "dict | None" = None) -> dict:
         out["BAB"] = (s.bab, bab, s.bab - bab)
     taglia = L.taglia_di(s.testo) or L.taglia_di(f"tipo: {s.tipo}")
     if s.lotta is not None and babs:
-        extra = 4 if LOTTA_MIGLIORATA.search(s.testo) else 0     # afferrare migliorato no
-        attesi = [b + mod(attr.get("For")) + LOTTA_TAGLIA.get(taglia, 0) + extra for b in babs]
+        extra = 4 if L.LOTTA_MIGLIORATA.search(s.testo) else 0     # afferrare migliorato no
+        attesi = [b + mod(attr.get("For")) + L.LOTTA_TAGLIA.get(taglia, 0) + extra for b in babs]
         att = min(attesi, key=lambda a: abs(s.lotta - a))
         out["lotta"] = (s.lotta, att, s.lotta - att)
     a = attacco_dichiarato(s.mischia) if s.mischia else None
@@ -258,9 +246,6 @@ def scarti(esito: dict) -> dict:
 def con_template(attr: dict, nome: str) -> dict:
     return {k: (v + TEMPLATE[nome].get(k, 0) if isinstance(v, int) else v)
             for k, v in attr.items()}
-
-
-numeri_della_fonte = L.numeri_della_fonte
 
 
 PIANO_DECISIONI = ROOT / "plans" / "RICERCA-CONFORMITA-MECCANICA-STATBLOCCHI.md"
@@ -341,7 +326,7 @@ def giudica(s: Scheda) -> dict:
                 break
     come_la_fonte = []
     if fuori and s.provenienza == "trascritte":
-        fonte = numeri_della_fonte(s.testo)
+        fonte = L.numeri_della_fonte(s.testo)
         come_la_fonte = [k for k, v in fuori.items() if fonte.get(k) == v[0]]
     decisione = decisioni_aperte().get(s.file.name) if fuori else None
     percorso = s.file.relative_to(ROOT) if s.file.is_relative_to(ROOT) else s.file

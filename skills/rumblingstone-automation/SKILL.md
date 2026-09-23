@@ -103,6 +103,12 @@ poi `state_apply.py --migrate --commit` (inserisce i marker `auto:`).
   accende anche `--piu-cattivi`). ⚠️ Non scrive mai dentro `Bestiario/`:
   propone, e nel canone copia il DM. Se nel catalogo c'è già qualcosa di simile,
   **potenziare** è meglio → skill `npc-villain-boosting`.
+- `bestiario <azione> [flag]`: i cinque script delle creature da un solo
+  ingresso, con i flag passati allo script. `estrai` → `extract_statblocks`,
+  `deriva` → `derive_statblocks`, `attributi` → `genera_attributi`,
+  `creatura` → `genera_creatura`, `conformita` → `conformita_statblocchi`.
+  `dm.py bestiario creatura --help` stampa l'aiuto dello script, e il codice
+  d'uscita è quello dello script. Gli script restano invocabili per nome.
 - `post --session <file>`: flusso manuale legacy (ledger + report-only).
 - `recap --hype` · `handout --tipo T --da <file>` · `dossier` (⚠️ solo DM) —
   vesti Homebrewery V3: i `.hb.md` sono **generati**, mai editati a mano.

@@ -17,6 +17,8 @@ Sottocomandi (fase del Playbook tra parentesi):
     session   (§4+§7) ciclo su branch-per-gruppo (ADR-0007): end/next/status/branch
     recap     (§4.6) recap spoiler-safe per i player (+ --hype → Homebrewery)
     handout   (prep) handout giocatori in markdown Homebrewery V3
+    bestiario (prep) i cinque script delle creature: estrai, deriva, attributi,
+                     creatura, conformita
     skills    (manutenzione) build/sync pipeline skill multi-agente
     doctor    (tutte) diagnosi ambiente e freschezza del catalogo
 
@@ -26,6 +28,7 @@ Esempi:
     python3 scripts/dm.py post --session 2026-05-03_session-3.md
     python3 scripts/dm.py recap --hype
     python3 scripts/dm.py handout --tipo lettera --da bozza.md
+    python3 scripts/dm.py bestiario creatura --gs 7 --ruolo bruto
     python3 scripts/dm.py doctor
 
 I flag non riconosciuti da `prep`/`recap` vengono inoltrati allo script
@@ -111,6 +114,28 @@ def cmd_maps(args: argparse.Namespace, extra: list[str]) -> int:
               "(gli SVG finiscono in rendered/ accanto al sorgente)")
         return 2
     return run("render_map_svg.py", *args.files, *extra)
+
+
+#: `dm.py bestiario <azione>` → lo script delle creature che la fa. Gli script
+#: restano invocabili per nome, perché la CI e il manifest li chiamano così
+#: (`PIANO-QUALITA-DEL-CODICE` §8, E9).
+BESTIARIO = {
+    "estrai": "extract_statblocks.py",
+    "deriva": "derive_statblocks.py",
+    "attributi": "genera_attributi.py",
+    "creatura": "genera_creatura.py",
+    "conformita": "conformita_statblocchi.py",
+}
+
+
+def cmd_bestiario(args: argparse.Namespace, extra: list[str]) -> int:
+    if not args.action:
+        print("[dm] uso: dm.py bestiario <azione> [flag dello script]")
+        for azione, script in BESTIARIO.items():
+            print(f"      {azione:11} → {script}")
+        print("[dm] i flag passano allo script: `dm.py bestiario <azione> --help`")
+        return 2
+    return run(BESTIARIO[args.action], *extra)
 
 
 def cmd_post(args: argparse.Namespace, extra: list[str]) -> int:
@@ -530,6 +555,13 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("action", choices=["render", "validate"])
     p.add_argument("files", nargs="*", help="file markdown con griglie (per render)")
 
+    # add_help=False: `--help` non lo prende dm.py ma lo script, così
+    # `dm.py bestiario creatura --help` stampa l'aiuto di genera_creatura.
+    p = sub.add_parser("bestiario", add_help=False,
+                       help="le creature: estrai / deriva / attributi / creatura / "
+                            "conformita (i flag passano allo script)")
+    p.add_argument("action", nargs="?", choices=list(BESTIARIO))
+
     p = sub.add_parser("post", help="Playbook §4: XP ledger + diff state.md proposto")
     p.add_argument("--session", help="scansiona solo questo file di sessione")
 
@@ -608,7 +640,7 @@ def main(argv: list[str] | None = None) -> int:
     return {
         "prep": cmd_prep, "maps": cmd_maps, "post": cmd_post, "recap": cmd_recap,
         "handout": cmd_handout, "hype": cmd_hype, "dossier": cmd_dossier,
-        "booklet": cmd_booklet, "prompts": cmd_prompts,
+        "booklet": cmd_booklet, "prompts": cmd_prompts, "bestiario": cmd_bestiario,
         "session": cmd_session, "volume": cmd_volume, "skills": cmd_skills, "doctor": cmd_doctor,
     }[args.cmd](args, extra)
 

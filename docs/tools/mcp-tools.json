@@ -1969,15 +1969,15 @@
     },
     {
       "name": "dm",
-      "description": "«Devo fare una cosa con il repo e non ricordo quale script: da dove passo?»\n\nEntrypoint unico: orchestra tutti gli script per fase del Playbook (prep/post/session/recap/handout/maps/hype/dossier/skills/doctor). ADR-0002. Il sottocomando «volume» (ADR-0031) esegue la catena editoriale in ordine da un manifest a un volume, e chiude ricordando il cancello d'uscita IP: non e' automatizzabile, ma e' il momento in cui va detto.",
+      "description": "«Devo fare una cosa con il repo e non ricordo quale script: da dove passo?»\n\nEntrypoint unico: orchestra tutti gli script per fase del Playbook (prep/post/session/recap/handout/maps/hype/dossier/skills/doctor/bestiario). ADR-0002. Il sottocomando «volume» (ADR-0031) esegue la catena editoriale in ordine da un manifest a un volume, e chiude ricordando il cancello d'uscita IP: non e' automatizzabile, ma e' il momento in cui va detto.",
       "use_case": "«Devo fare una cosa con il repo e non ricordo quale script: da dove passo?»",
       "invocation": "python3 scripts/dm.py",
       "inputSchema": {
         "type": "object",
         "properties": {
-          "prep|post|session|recap|handout|maps|hype|dossier|skills|doctor|volume": {
+          "prep|post|session|recap|handout|maps|hype|dossier|skills|doctor|volume|bestiario": {
             "type": "string",
-            "description": "Sottocomando di fase; i flag sono inoltrati allo script sottostante. «volume» e' la catena dei mestieri in ordine (prosa, lingua, manifest, colophon, schermo, stampa, imposizione) e assorbe il «dm.py stampa» mai fatto.",
+            "description": "Sottocomando di fase; i flag sono inoltrati allo script sottostante. «volume» e' la catena dei mestieri in ordine (prosa, lingua, manifest, colophon, schermo, stampa, imposizione) e assorbe il «dm.py stampa» mai fatto. «bestiario» passa i flag a uno dei cinque script delle creature (estrai, deriva, attributi, creatura, conformita).",
             "enum": [
               "prep",
               "post",
@@ -1989,12 +1989,13 @@
               "dossier",
               "skills",
               "doctor",
-              "volume"
+              "volume",
+              "bestiario"
             ]
           }
         },
         "required": [
-          "prep|post|session|recap|handout|maps|hype|dossier|skills|doctor|volume"
+          "prep|post|session|recap|handout|maps|hype|dossier|skills|doctor|volume|bestiario"
         ],
         "additionalProperties": false
       },

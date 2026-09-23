@@ -138,33 +138,15 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from dmcore import tabelle as T  # noqa: E402,F401
 
 
-#: Le abbreviazioni con cui le schede scrivono le classi, le due classi di
-#: prestigio SRD e il dado di ogni classe stanno in `dmcore.progressione`
-#: (ADR-0066). `PRESTIGIO` qui resta nella forma di prima: {classe: dado}.
-from dmcore.progressione import ABBREVIAZIONI, DADO_DI_CLASSE  # noqa: E402,F401
-from dmcore import progressione as _P  # noqa: E402
-PRESTIGIO = {n: v[0] for n, v in _P.PRESTIGIO.items()}
-#: Il lettore delle schede sta in `dmcore.lettura_creatura` (ADR-0066): lo usa
-#: anche il verificatore. I nomi restano importabili da qui fino al lotto E8.
-from dmcore.lettura_creatura import (  # noqa: E402,F401
-    ORDINE, TAGLIA, BLOCCO, CLASSE_NEL_TIPO, taglia_di, PF_DADO, DV_DICHIARATI,
-    PEZZO_DADO, BONUS_DADO, MOD_MINIMO, plausibile, FORMULA_DV, dadi_vita, ROBUSTEZZA,
-    ROBUSTEZZA_MIGLIORATA, robustezza, pf_dado_sospetto, CITAZIONE, SESTINA, PCG_STAT,
-    parole_del_file, INTESTAZIONE, sestine_citate, dalla_scheda, BAB_SCRITTO,
-    LOTTA_SCRITTA, LOTTA_TAGLIA, LOTTA_MIGLIORATA, numeri_della_fonte,
-    INIZIATIVA_SCRITTA, INIZIATIVA_MIGLIORATA, senza_note, MARCA, CODA_FONTE,
-    CODA_SCHEDA, CODA_ARRAY, TS_CARATTERISTICA, TS_SCRITTI, tetti_dai_ts,
+#: Il lettore delle schede sta in `dmcore.lettura_creatura` e la scelta delle
+#: caratteristiche in `dmcore.caratteristiche` (ADR-0066). Qui restano la
+#: proposta, la scrittura nel Bestiario, `--check` e `--taratura`, e si importa
+#: solo quello che usano: chi cerca una funzione del lettore o della scelta la
+#: trova in `dmcore`, non qui.
+from dmcore.lettura_creatura import (  # noqa: E402
+    BLOCCO, CODA_ARRAY, CODA_FONTE, CODA_SCHEDA, MARCA, ORDINE, dalla_scheda,
 )
-#: La scelta delle caratteristiche sta in `dmcore.caratteristiche` (ADR-0066):
-#: gli strati, gli array per ruolo, taglia e razza. Qui restano la proposta, la
-#: scrittura nel Bestiario, `--check` e `--taratura`. I nomi restano importabili
-#: da qui fino al lotto E8.
-from dmcore.caratteristiche import (  # noqa: E402,F401
-    ARRAY_ELITE, ARRAY_STANDARD, PROFILI, PROFILO_DI_RIPIEGO, ELITE, DES_SCRITTA,
-    CONTATTO, NON_MORTO, MODELLO_SENZA_MENTE, mod, da_modificatore, des_vincolata,
-    cos_da_pf, dalla_fonte, des_da_iniziativa, for_da_lotta, iniziativa_ambigua,
-    profilo_di, PER_TAGLIA, RAZZE, razza_di, genera, riga_attributi,
-)
+from dmcore.caratteristiche import dalla_fonte, genera, mod, riga_attributi  # noqa: E402
 
 
 RIGA_MARCA = re.compile("^" + re.escape(MARCA) + ".*$", re.M)

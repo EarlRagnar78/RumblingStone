@@ -70,13 +70,19 @@ registro esiste.
 | 2026-09-23 | **QUALITA E3b** il lettore in un posto, seconda metà | **C** costruzione, rischio alto | Opus, sessione principale | ✅ | L'unica funzione che non si poteva spostare alla lettera (`tetti_dai_ts`, che chiamava il verificatore) è anche l'unica dove l'impronta ha fatto da prova vera: l'equivalenza col vecchio `ts_attesi(s, {})` l'ha confermata lei. |
 | 2026-09-23 | **QUALITA E4** il grafo degli import | **C** costruzione | Opus, sessione principale | ✅ | Previsto Sonnet/medio, fatto nella sessione principale perché il contesto del lotto c'era già: cambiare engine avrebbe buttato la cache per un file da 170 righe. |
 | 2026-09-23 | **QUALITA E5** la scelta in un posto | **C** costruzione | Opus, sessione principale | ✅ | Con E3 fatto bene, E5 è stato il più semplice del lotto: il lettore era già fuori, e la scelta si è staccata senza toccare una riga del suo codice. |
+| 2026-09-23 | **QUALITA E6** una tabella dei ruoli (D2 = a) | **K** se toccava il Bestiario, altrimenti **C** | Opus, sessione principale, xhigh | ✅ **sotto stima** | Con la risposta (a) la parte **K** non c'era: nessun blocco del Bestiario cambia, e l'impronta lo dice sezione per sezione. Il giudizio stava altrove, nel dire al DM cosa cambia nei PNG generati: la tabella che vince toglie un punto ferita per livello al tiratore e al blaster, e un diff di 1.280 righe non lo mostra da solo. Scrivere quali celle cambiano **prima** di rigenerare (160 su 720, tutte PNG, quattro ruoli) ha fatto della rigenerazione una verifica invece di una resa. |
+| 2026-09-23 | **QUALITA E7** il ramo PNG sulla libreria | **C** costruzione | Opus, sessione principale (previsto Sonnet/alto) | ✅ | Sessione principale per la stessa ragione di E4: il contesto c'era. 🐛 L'unico errore del lotto è stato mio e meccanico: una sostituzione ancorata su una riga che nel file compare tre volte ha tagliato il ramo mostri. L'impronta l'ha presa al primo giro. Si ancora su un blocco che compare una volta sola, e lo si verifica con `count` prima di sostituire. |
+| 2026-09-23 | **QUALITA E8** gli alias e il conto finale | **M** meccanico | Opus, sessione principale (previsto Sonnet/medio) | ⚠️ **ha retto come M, ma il gate scritto non bastava** | L'accettazione diceva «`grep` dei nomi vecchi vuoto», e un `grep` non distingue `GA.genera` da un `genera` qualsiasi. Il gate vero è stato un censimento con `ast` dei `modulo.attributo`, e il primo giro ha perso un alias che era un'assegnazione e non un import: l'ha preso il test. Un lotto M ha bisogno di un gate che sappia leggere il codice, non il testo. |
+| 2026-09-23 | **QUALITA E9** `dm.py bestiario` | **C** costruzione | Opus, sessione principale (previsto Sonnet/medio) | ⚠️ **ha retto, ma il primo test mentiva** | Il codice era una ventina di righe e il contratto chiaro. 🔎 La prova di mutazione ha trovato un test che si confermava da solo: leggeva le azioni dalla stessa tabella del codice, e un'azione mandata allo script sbagliato passava. Un test di un instradamento deve avere la tabella attesa scritta **nel test**, non importata dal modulo. |
 
 ---
 
 ## Che cosa dicono le righe finora
 
-Sono **quattordici**, quindi non dicono ancora niente di statistico. Ma due
-portano lo stesso insegnamento, e vale la pena guardarlo:
+Quando questa sezione è stata scritta erano **quattordici**, e non dicevano
+ancora niente di statistico. Il 2026-09-23 sono **41**, e la sezione non è
+stata riletta su tutte: quel che segue vale per le prime quattordici. Due di
+quelle portano lo stesso insegnamento, e vale la pena guardarlo:
 
 > **La classe non si legge dalla dimensione del diff.** `F0` era una riga in un
 > insieme; `D6` era riempire delle righe mancanti. Tutti e due sembravano

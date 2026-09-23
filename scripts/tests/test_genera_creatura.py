@@ -27,6 +27,7 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 
 import genera_creatura as G  # noqa: E402
+from dmcore import caratteristiche as CAR  # noqa: E402
 from dmcore import incantesimi as INC  # noqa: E402
 from dmcore import tabelle as T  # noqa: E402
 
@@ -392,6 +393,57 @@ class IlCarattere(unittest.TestCase):
         visti = {G.genera(7, ruolo="bruto", rng=random.Random(s))[0].tattica
                  for s in range(20)}
         self.assertGreater(len(visti), 1)
+
+
+class UnaTabellaDeiRuoli(unittest.TestCase):
+    """D2 di `PIANO-QUALITA-DEL-CODICE` (E6-E7): l'ordine viene da `PROFILI`.
+
+    Fino a E6 ogni ruolo aveva un ordine suo, e su sei ruoli quattro non
+    coincidevano con il profilo omonimo con cui `genera_attributi` sceglie gli
+    `attributi` del Bestiario. Questi test guardano il blocco generato, non la
+    tabella: un ordine riscritto a mano nel generatore li fa rossi.
+    """
+
+    def test_ogni_ruolo_nomina_un_profilo_che_esiste(self):
+        for nome, R in G.RUOLI.items():
+            with self.subTest(ruolo=nome):
+                self.assertTrue(CAR.profilo_esatto(R.profilo))
+
+    def test_il_png_esce_nell_ordine_del_profilo(self):
+        # il guerriero non lancia: l'ordine e' quello del profilo e basta
+        for nome, R in G.RUOLI.items():
+            for elite in (True, False):
+                with self.subTest(ruolo=nome, elite=elite):
+                    sb, _ = G.genera(5, ruolo=nome, classe=("guerriero", 5),
+                                     elite=elite, rng=random.Random(0))
+                    letti = tuple(re.findall(r"([A-Z][a-z]{2}) \d+", sb.attributi))
+                    self.assertEqual(letti, CAR.profilo_esatto(R.profilo))
+
+    def test_il_tiratore_ha_le_caratteristiche_del_profilo_ranged(self):
+        # l'ancora numerica di D2 = a: prima usciva Cos 14 Sag 13 For 12
+        sb, _ = G.genera(5, ruolo="tiratore", classe=("guerriero", 5),
+                         rng=random.Random(0))
+        self.assertEqual(sb.attributi, "Des 16 For 14 Cos 13 Sag 12 Int 10 Car 8")
+
+    def test_un_profilo_che_non_esiste_non_ripiega(self):
+        self.assertEqual(CAR.profilo_di("sconosciuto"), CAR.PROFILO_DI_RIPIEGO)
+        with self.assertRaises(KeyError):
+            CAR.profilo_esatto("sconosciuto")
+        with self.assertRaises(KeyError):
+            CAR.profilo_esatto("psi onico")    # niente ricerca per sottostringa
+
+    def test_la_caratteristica_da_incantatore_passa_davanti(self):
+        v = CAR.matrice_png("arcane", 9, True, lancia_su="Sag")
+        self.assertEqual(list(v)[0], "Sag")
+        self.assertEqual(v["Sag"], 15 + 2)
+        self.assertEqual(list(v)[1:], [c for c in CAR.profilo_esatto("arcane") if c != "Sag"])
+
+    def test_un_aumento_ogni_quattro_livelli_sulla_prima(self):
+        for livelli, aumenti in ((3, 0), (4, 1), (11, 2), (20, 5)):
+            with self.subTest(livelli=livelli):
+                v = CAR.matrice_png("brute", livelli, False)
+                self.assertEqual(v["For"], CAR.ARRAY_STANDARD[0] + aumenti)
+                self.assertEqual(sorted(v.values())[:-1], sorted(CAR.ARRAY_STANDARD)[:-1])
 
 
 if __name__ == "__main__":

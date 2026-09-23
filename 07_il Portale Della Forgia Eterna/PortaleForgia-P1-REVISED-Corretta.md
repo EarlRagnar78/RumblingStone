@@ -383,7 +383,7 @@ I PG hanno appena combattuto una battaglia devastante nella **Stanza della Coron
 
 > *Hella giace immobile sul pavimento di pietra. I suoi occhi, un tempo vivaci e pieni di determinazione druidica, sono chiusi. Il sangue ha smesso di scorrere - la morte è stata istantanea. La spada del yochlol l'ha trapassata al cuore, uccidendola prima che potesse sentire dolore.*
 >
-> *Ma c'è qualcosa di... strano. Il suo volto non mostra sofferenza. Sembra... serena. Come se, nel momento finale, avesse accettato il destino. E sotto la sua pelle pallida, vedete una LUCE verde pallida pulsare debolmente - energia druidica, energia vitale, che non si è ancora dissipata completamente.*
+> *Ma c'è qualcosa di... strano. Il suo volto non mostra sofferenza. Sembra... serena. Come se, nel momento finale, avesse accettato il destino. E sotto la sua pelle pallida, una LUCE verde pallida pulsa debolmente - energia druidica, energia vitale, che non si è ancora dissipata completamente.*
 >
 > *Il suo spirito è ancora QUI. Legato al corpo. Legato al mondo. Come se sapesse che il suo viaggio non è finito.*
 
@@ -435,11 +435,11 @@ Quando Thorik si avvicina al corpo di Hella mentre indossa la Corona:
 
 **Evento Automatico:**
 
-> *Thorik, quando ti avvicini al corpo di Hella con la Corona sulla fronte, accade qualcosa. La luce verde pallida sotto la pelle di Hella RISPONDE alla luce dorata della Corona. Le due energie - druidica e divina nanica - si INTRECCIANO per un momento.*
+> *Thorik, la Corona sulla fronte, e accade qualcosa. La luce verde pallida sotto la pelle di Hella RISPONDE alla luce dorata della Corona. Le due energie - druidica e divina nanica - si INTRECCIANO per un momento.*
 >
 > *E poi... il corpo di Hella smette di decomporsi. Completamente. Non congela - semplicemente... ATTENDE. Come se il tempo stesso avesse deciso di fermarsi per lei, dando a voi la possibilità di fare ciò che deve essere fatto.*
 >
-> *Sentite voce di Moradin (solo Thorik, mentalmente attraverso Corona):*
+> *La voce di Moradin (solo Thorik, mentalmente attraverso Corona):*
 > **"Druida cadde difendendo i miei figli. Onorevole. Preserverò suo corpo fino a quando non completerete prova. 10 giorni avete. Non uno di più."**
 
 **Meccanica D&D 3.5:**
@@ -534,13 +534,13 @@ Quando Thorik (o altro nano PG, ma narrativamente dovrebbe essere Thorik) tocca 
 
 **Narrazione - VISIONE DIVINA:**
 
-> *Thorik, esiti per un momento. La Corona sembra chiamarti - non con suono, ma con CERTEZZA. Come se fosse sempre stata destinata a te. Allunghi la mano, dita tremanti leggermente, e tocchi il metallo freddo.*
+> *La Corona chiama - non con suono, ma con CERTEZZA. Come se fosse sempre stata destinata a te. Poi il metallo freddo, sotto le dita.*
 >
 > *E il mondo SCOMPARE.*
 >
 > *(PAUSA DRAMMATICA)*
 >
-> *Non sei più nella Stanza della Corona. Sei... ALTROVE. Un luogo che non dovrebbe esistere. Una FORGIA. Ma non una forgia normale - una forgia DIVINA. L'aria è così calda che dovrebbe incenerire la carne, ma senti solo... conforto. Calore abbraccio paterno.*
+> *Non sei più nella Stanza della Corona. Sei... ALTROVE. Un luogo che non dovrebbe esistere. Una FORGIA. Ma non una forgia normale - una forgia DIVINA. L'aria è così calda che dovrebbe incenerire la carne, e invece c'è solo... conforto. Calore abbraccio paterno.*
 >
 > *E davanti a te, alla forgia titanica, c'è...*
 >
@@ -550,7 +550,7 @@ Quando Thorik (o altro nano PG, ma narrativamente dovrebbe essere Thorik) tocca 
 >
 > *È IMMENSO. Tre metri di altezza almeno, largo il doppio. Muscoli come granito vivente. Barba intrecciata con fili d'oro, mithral, adamantio - ciascun filo spesso quanto tua coscia. Nei suoi occhi - occhi grandi quanto scudi - ardono fiamme della creazione.*
 >
-> *Tiene martello FROSTFORGE in mano sinistra. Testa adamantio stellare, manico come tronco albero ferro. E quando lo solleva... senti PESO. Peso autorità divina. Peso responsabilità. Peso amore.*
+> *Tiene martello FROSTFORGE in mano sinistra. Testa adamantio stellare, manico come tronco albero ferro. E quando lo solleva... arriva il PESO. Peso autorità divina. Peso responsabilità. Peso amore.*
 >
 > *E nella mano destra tiene... la Corona. Brillante come stella nascente.*
 >
@@ -637,7 +637,7 @@ Possibili risposte e reazioni Moradin:
 
 **Narrazione:**
 
-> *Sollevi la Corona dal trono. È sorprendentemente PESANTE - non per peso fisico, ma per peso SIMBOLICO. Senti millenni di storia, aspettative, responsabilità.*
+> *La Corona lascia il trono. È sorprendentemente PESANTE - non per peso fisico, ma per peso SIMBOLICO: millenni di storia, aspettative, responsabilità.*
 >
 > *La posi sulla fronte.*
 >
@@ -645,9 +645,9 @@ Possibili risposte e reazioni Moradin:
 >
 > *LUCE.*
 >
-> *Luce DORATA esplode dalla Corona, avvolgendoti completamente. Non accecante - abbracciante. Sentì calore che penetra ossa, muscoli, anima. E poi... la Corona STRINGE leggermente. Non dolorosamente. Solo... adattandosi. Diventando parte di te.*
+> *Luce DORATA esplode dalla Corona, avvolgendoti completamente. Non accecante - abbracciante. Un calore che penetra ossa, muscoli, anima. E poi... la Corona STRINGE leggermente. Non dolorosamente. Solo... adattandosi. Diventando parte di te.*
 >
-> *E SENTI:*
+> *E con la Corona arriva:*
 >
 > - *Presenza Moradin, costante sottofondo, come battito cardiaco secondario*
 > - *Connessione ad Aegis Fang amplificata - l'ascia CANTA nella tua mano*
@@ -777,13 +777,13 @@ Dopo che Artemis rifiutò Lord of Sun and Shadow (e mantenne CN invece CB), il R
 
 **Narrazione (Quando Thorik Indossa Corona):**
 
-> *Artemis, in piedi vicino al pilastro sud-ovest, senti improvvisamente il Ring of Chaotic Illumination REAGIRE alla Corona. Il metallo dell'anello - ossidiana nera con fulmini viola incisi - inizia a PULSARE rapidamente:*
+> *Artemis, in piedi vicino al pilastro sud-ovest, il Ring of Chaotic Illumination REAGISCE di colpo alla Corona. Il metallo dell'anello - ossidiana nera con fulmini viola incisi - inizia a PULSARE rapidamente:*
 >
 > *ORO (Lathander) → ARGENTO (Mask) → ORO → ARGENTO*
 >
 > *Ciclo si accelera, sempre più veloce, fino a diventare confusione di colori. E poi... si STABILIZZA. L'anello ora mostra METÀ ORO e METÀ ARGENTO, divisi da linea perfettamente dritta al centro. Come simbolo Yin-Yang nanico.*
 >
-> *E senti DUE voci simultaneamente (telepaticamente, solo tu):*
+> *E DUE voci, simultanee (telepaticamente, solo tu):*
 
 ---
 
@@ -838,7 +838,7 @@ Quando Artemis si avvicina al corpo preservato di Hella con Ring attivo:
 
 **Narrazione:**
 
-> *Artemis, ti avvicini al corpo di Hella. Il Ring pulsa dolcemente - non violentemente come prima, ma... tristemente? Come se piangesse per lei. E senti voce Mask (solo tu):*
+> *Artemis, accanto al corpo di Hella il Ring pulsa dolcemente - non violentemente come prima, ma... tristemente? Come se piangesse per lei. E la voce di Mask (solo tu):*
 >
 > **MASK:** *"Druida era... interessante. Serviva natura, ma comprendeva necessità segreti. Protettiva come me. Compassionevole come Lathander. Merita tornare. Ma tu, ragazzo... tu devi AIUTARE compagni recuperare gemme. Non puoi farlo da solo. Nessuno può. Questa è lezione: cooperazione vince solitudine."*
 
@@ -858,7 +858,7 @@ Dopo che Thorik indossa Corona e Aegis Fang canta, i PG devono capire: come ACCE
 
 **Corona Sussurra a Thorik:**
 
-> *Thorik, senti voce Moradin attraverso Corona (sussurro mentale):*
+> *Thorik, la voce di Moradin attraverso Corona (sussurro mentale):*
 > **"Portale è nascosto. Parete sud, centro. Ma si apre solo quando CANTO viene cantato. Canto della Pietra e del Fuoco. Canto dei miei figli. Lo conosci già. Tutti nani lo conoscono. Ricorda."**
 
 ---
@@ -957,9 +957,9 @@ E COMPLETA TUO DESTINO"
 
 > *Le rune brillano sempre più intensamente - oro liquido che scorre sulla pietra. E poi... il cerchio si APRE. Non come porta che si spalanca. Come... ferita nella realtà. La pietra all'interno del cerchio si DISSOLVE, sostituita da luce dorata liquida che ondeggia come acqua verticale.*
 >
-> *E oltre la luce... intravvedete qualcosa. Una SALA. Immensa. Ottagonale. Otto affreschi sui muri. Un altare al centro con fiamme dorate. E...*
+> *E oltre la luce... c'è qualcosa. Una SALA. Immensa. Ottagonale. Otto affreschi sui muri. Un altare al centro con fiamme dorate. E...*
 >
-> *...sentite CALORE. Non bruciante. Abbraccio. Come tornare casa dopo lungo viaggio.*
+> *...e arriva il CALORE. Non bruciante. Abbraccio. Come tornare casa dopo lungo viaggio.*
 >
 > *Il Portale della Forgia Eterna è APERTO.*
 >
@@ -1013,7 +1013,7 @@ Quando PG sono pronti:
 
 **Narrazione Finale Parte 1:**
 
-> *Vi avvicinate al portale uno dopo l'altro. La luce dorata liquida ondeggia davanti a voi, invitante ma aliena. Thorik, con Corona brillante sulla fronte e Aegis Fang cantante nella mano, guida. Tordek, Cintura della Devastazione stretti, lo segue. Artemis, Ring pulsante al dito, chiude fila.*
+> *Il portale prende uno alla volta. La luce dorata liquida ondeggia, invitante e aliena. Thorik porta la Corona brillante sulla fronte e Aegis Fang cantante nella mano; Tordek la Cintura della Devastazione stretta; Artemis il Ring pulsante al dito.*
 >
 > *(Se trasportano corpo Hella: Thorik la porta con dignità sulle spalle, avvolta in mantello)*
 >
@@ -1025,9 +1025,9 @@ Quando PG sono pronti:
 >
 > *(PAUSA DRAMMATICA)*
 >
-> *La sensazione è... indescrivibile. Non dolore. Non freddo. Solo... TRANSIZIONE. Come dissolversi in particelle di luce, poi ricostituirsi dall'altra parte. Per un istante - un battito cuore eterno - non siete corpo. Siete ESSENZA. Energia pura. Potenziale.*
+> *La transizione è... indescrivibile. Non dolore. Non freddo. Solo... TRANSIZIONE. Come dissolversi in particelle di luce, poi ricostituirsi dall'altra parte. Per un istante - un battito cuore eterno - non siete corpo. Siete ESSENZA. Energia pura. Potenziale.*
 >
-> *Sentite martelli distanti. Sentite canti nanici così antichi che precedono linguaggio. Sentite...*
+> *Martelli distanti. Canti nanici così antichi che precedono linguaggio. E...*
 >
 > *...CASA.*
 >
@@ -1039,9 +1039,9 @@ Quando PG sono pronti:
 
 ### **Arrivo (Collegamento Parte 2)**
 
-> *Atterrate - gentilmente, come se sala vi avesse accolto - su pavimento adamantio levigato come specchio. Aprite occhi.*
+> *Atterrate - gentilmente, come se sala vi avesse accolto - su pavimento adamantio levigato come specchio.*
 >
-> *E vedete.*
+> *E la Sala della Forgia Eterna è lì.*
 >
 > *(Descrizione completa Sala Forgia Eterna - VEDI PARTE 2)*
 

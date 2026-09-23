@@ -9,14 +9,19 @@ ca: 20
 ca-dettaglio: (+5 Des, +4 giaco di maglia mithral +1, +1 anello), contatto 16, colto alla sprovvista 16
 pf: 40
 pf-dado: 9d6
-ts: Temp +4, Rifl +12, Vol +5
+ts: Temp +4, Rifl +13, Vol +5
+attributi: For 12 Des 20 Cos 10 Int 18 Sag 12 Car 14
 velocita: 9 m
 attacchi:
   - Mischia spada corta +1 +12/+7 (1d6+1/19-20)
 ```
 
+> [INFERRED — needs DM confirmation] correzione 3.5 da `scripts/conformita_statblocchi.py`: Riflessi +12 → **+13**: Ladro 4 (+4) + Assassino 5 (+4) + Des 20 (+5). La Des 20 è confermata dall'attacco con Arma Accurata (+12). ⚠ La lotta +6 e il danno della spada presuppongono For 10-11, non 12: quella la decide il DM.
+
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ Cos 12 ricavata da pf 40 su 9 DV, ma la scheda scrive 10: si tiene la scheda, da verificare. ⚠ For 10 ricavata da BAB e lotta, ma la scheda scrive 12: si tiene la scheda, da verificare.
+
 Medium humanoid (elf), NE. **DV 9d6**. **hp 40**. **CA 20** (+5 Des, +4 giaco di maglia mithral +1, +1 anello), contatto 16, colto alla sprovvista 16. Iniziativa +9. Vel 9 m.
-**TS** Temp +4, Rifl +12, Vol +5 (+2 razziale vs incantesimi, +2 vs ammaliamenti, **+3 vs veleni**). **BAB/Lotta** +6/+6. **RI 20**.
+**TS** Temp +4, Rifl +13, Vol +5 (+2 razziale vs incantesimi, +2 vs ammaliamenti, **+3 vs veleni**). **BAB/Lotta** +6/+6. **RI 20**.
 **Mischia** spada corta +1 +12/+7 (1d6+1/19-20). **Distanza** balestra a mano +13 (1d4 + veleno).
 **Attacco furtivo** +5d6. **Attacco Mortale** (dopo 3 round di studio: Tempra **CD 19** o **morte**, oppure paralisi 1d6+5 round).
 **Car** For 12, Des 20, Cos 10, Int 18, Sag 12, Car 14.

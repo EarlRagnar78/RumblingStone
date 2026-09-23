@@ -10,6 +10,9 @@ ca-dettaglio: (+3 Dex, +4 natural)
 pf: 52
 pf-dado: 8d12
 ts: Temp +2, Rifl +5, Vol +8
+attributi: For 12 Des 16 Cos — Int 15 Sag 14 Car 16
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
 Medium undead HD 8d12 (52 HP). AC 17 (+3 Dex, +4 natural). Fort +2 Ref +5 Will +8. BAB/Grapple +4/+5. Claw +5 (1d4+1 + negative energy 1d6). Str 12 Dex 16 Con - Int 15 Wis 14 Cha 16. Spells as Wiz 6 (CL 6 CD 13+lvl): 0-4 1-5 2-4 3-3. Typical: magic missile, chill touch, ray of enfeeblement; scorching ray, ghoul touch; fireball, vampiric touch. Turn resistance +4. Notes: ~5 al servizio Ghostlord.

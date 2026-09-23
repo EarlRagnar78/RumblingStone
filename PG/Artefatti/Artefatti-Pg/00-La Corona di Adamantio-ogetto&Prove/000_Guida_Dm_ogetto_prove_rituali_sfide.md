@@ -121,7 +121,7 @@ Il Portatore viene trasportato spiritualmente a Hammerfist per una sfida tattica
 **Il Ritorno e lo Stress del Combattimento**
 Al termine dei 10 round, il Portatore torna bruscamente nel suo corpo.
 **(Leggi ad alta voce al giocatore):**
-> *Torni in te con un sussulto, il silenzio eterno sostituito di nuovo dal caos del tuo presente. Ma non sei illeso. Il peso di quella battaglia disperata, lo sforzo di manifestare il tuo spirito attraverso lo spazio e il tempo, ti ha lasciato una profonda cicatrice nell'anima. Senti un'incredibile stanchezza spirituale, e il ricordo vivido della sconfitta imminente dei tuoi fratelli ti opprime. Sebbene il tuo corpo sia intatto, il tuo spirito è affaticato.*
+> *Torni in te con un sussulto, il silenzio eterno sostituito di nuovo dal caos del tuo presente. Ma non sei illeso. Il peso di quella battaglia disperata, lo sforzo di manifestare il tuo spirito attraverso lo spazio e il tempo, ti ha lasciato una profonda cicatrice nell'anima. La stanchezza spirituale è incredibile, e il ricordo vivido della sconfitta imminente dei tuoi fratelli ti opprime. Sebbene il tuo corpo sia intatto, il tuo spirito è affaticato.*
 **Conseguenza Meccanica:** Per le successive 24 ore, il Portatore subisce una penalità di **-2 a tutti i Tiri Salvezza sulla Volontà**.
 
 **Il Sacrificio: Consacrare la Vittoria Spirituale**

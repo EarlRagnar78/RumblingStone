@@ -10,12 +10,15 @@ ca-dettaglio: (-1 taglia, +11 naturale), touch 9, flat-footed 20
 pf: 119
 pf-dado: 14d8+56
 ts: Temp +14, Rifl +5, Vol +8
+attributi: For 26 Des 10 Cos 18 Int 14 Sag 16 Car 16
 velocita: 6 m
 attacchi:
   - Mischia schianto +17 (2d6+8)
 voci:
   - Talenti: Tempra Possente, Volontà di Ferro, Attacco Poderoso, Spinta/Iniziativa Migliorata, Allerta
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 
 Large plant, 14d8+56. **hp 119**; **AC 20** (-1 taglia, +11 naturale), touch 9, flat-footed 20. Vel 6 m. TS Temp +14, Rifl +5, Vol +8. BAB +10; Lotta +22. RI 20.
 **Mischia** schianto +17 (2d6+8). **Nube di spore**, **spore telepatiche**, **spore stordenti**. Scurovisione 18 m, visione crepuscolare, tratti vegetali. Talenti: Tempra Possente, Volontà di Ferro, Attacco Poderoso, Spinta/Iniziativa Migliorata, Allerta.

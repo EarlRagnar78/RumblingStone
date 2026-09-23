@@ -251,9 +251,9 @@ rovina l'atmosfera: rovina **la scena dopo**.
 > riincisi. Ma QUESTA Hammerfist non ha ancora storia. Le mura sono bianche di
 > pietra appena tagliata, gli spigoli ancora vivi. Le statue dei re sono una
 > sola. E sulla porta, la targa di bronzo con la profezia dei Quattro Eroi è
-> stata incisa OGGI, l'inchiostro del cesello ancora fresco. Camminate dentro
-> la vostra stessa leggenda mentre viene scritta. È vertiginoso: ogni pietra
-> che toccate, tra mille anni, la toccherete di nuovo — vecchia di un millennio.*
+> stata incisa OGGI, l'inchiostro del cesello ancora fresco. Questa è la vostra
+> stessa leggenda, e la stanno scrivendo adesso: ogni pietra di queste mura è la
+> stessa che fra mille anni sarà vecchia di un millennio.*
 
 **Terreno (callout):** cortili di pietra chiara (movimento normale); la Sala del
 Trono di Re Thorek I; la fucina originale (i Bracieri di Tordek la
@@ -274,7 +274,7 @@ notte = furtività CD 20; ogni fuoco è luce fioca a 3 m. Vedi M7-A zoom.
 ### ZONA 3 — Le Mura all'Alba (l'assalto)
 > **Read-aloud (Salvatore lead, LotR support).** *Il primo ariete arriva alle
 > mura che il sole non è ancora sopra il crinale. Il legno prende la pietra con
-> un tonfo che sentite nello sterno prima che nelle orecchie, e il camminamento
+> un tonfo che prende lo sterno prima delle orecchie, e il camminamento
 > vi si muove sotto i piedi di un dito. Un nano accanto a voi si sputa nelle
 > mani, riprende l'ascia e non dice niente. Quello dopo di lui si è già
 > incastrato la barba nella cinghia dell'elmo, e non ha il tempo di

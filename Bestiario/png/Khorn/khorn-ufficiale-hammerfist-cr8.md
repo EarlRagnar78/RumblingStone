@@ -8,8 +8,9 @@ tipo: Medium humanoid (dwarf), Fighter 8, LG
 ca: 22
 ca-dettaglio: touch 11, flat-footed 21 (piastre +1, scudo pesante +1, +1 Des)
 pf: 76
-pf-dado: 1d8+6
+pf-dado: 8d10+32
 ts: Temp +9, Rifl +3, Vol +4
+attributi: For 16 Des 4 Cos 18 Int 9 Sag 11 Car 15
 velocita: 6 m
 iniziativa: +1
 attacchi:
@@ -17,6 +18,10 @@ attacchi:
 voci:
   - Talenti: Attacco Poderoso, Fendere, Arma Focalizzata e Specializzata (martello da guerra), Scudo Migliorato, Leadership (comanda le 150 lance), Iniziativa Migliorata
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d8+6», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD, il bonus ricavato dai pf 76 (la Cos di questa scheda è generata).
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 Medium humanoid (dwarf), Fighter 8, LG. **hp 76** (8d10+24, Cos 16); **AC 22**, touch 11, flat-footed 21 (piastre +1, scudo pesante +1, +1 Des). Init +1; Vel 6 m. TS Temp +9, Rifl +3, Vol +4 (+2 vs incantesimi; +4 schivare vs giganti). BAB +8; Lotta +11.
 **Mischia** martello da guerra +1 +14/+9 (1d8+6/x3); scudo pesante +10. **Distanza** balestra pesante +9 (1d10/19-20). Tratti nanici: scurovisione 18 m, stonecunning, +1 vs orchi/goblinoidi, stabilità.

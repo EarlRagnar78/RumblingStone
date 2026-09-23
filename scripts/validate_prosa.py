@@ -638,7 +638,37 @@ def documenti() -> list[Path]:
     return sorted(set(fuori))
 
 
-def controlla(f: Path) -> list[str]:
+#: La chiave con cui ogni rilievo dichiara **quale norma** ha violato.
+#:
+#: 🔎 **Perche' esiste, dal 2026-09-21.** `controlla()` restituiva una lista di
+#: stringhe gia' formattate, e `punteggio_mqm` non poteva usarne nessuna: per
+#: contare «quanti calchi» avrebbe dovuto riconoscere la frase italiana con cui
+#: il messaggio e' scritto. Cosi' quattro norme entravano nel punteggio e sei,
+#: **gia' misurate da questo file**, restavano fuori — non per mancanza di
+#: rilevatore, ma perche' il rilevatore non diceva il proprio nome.
+#:
+#: La forma e' quella di sempre per un misuratore: **una sola computazione, due
+#: viste**. `rilievi()` produce i record tipati; `controlla()` ne stampa i
+#: messaggi ed e' identica a prima per chi la chiama.
+NORME = (
+    "terminologia_non_canonica",
+    "testo_giocatori_senza_ancore",
+    "calco_dall_inglese",
+    "antitesi_ripetuta",
+    "maiuscole_di_enfasi",
+    "trattino_come_respiro",
+    "caratteristica_minuscola",
+)
+
+
+def rilievi(f: Path) -> "list[tuple[str, str]]":
+    """`(chiave della norma, messaggio)` — la computazione vera.
+
+    Deterministica e idempotente: dipende solo dal contenuto del file e dai
+    dati del repo (glossario, nomi canonici), mai dall'ordine delle chiamate
+    ne' da uno stato accumulato. Due esecuzioni sullo stesso commit danno la
+    stessa lista, nello stesso ordine.
+    """
     testo = f.read_text(encoding="utf-8", errors="ignore")
     rel = f.relative_to(ROOT) if ROOT in f.parents else f
     righe, readaloud = prosa_e_readaloud(testo)
@@ -646,46 +676,58 @@ def controlla(f: Path) -> list[str]:
         # Il file è per i giocatori: la prosa è tutta la pagina, non solo i box.
         # Restano fuori i titoli, che non sono prosa letta.
         readaloud = "\n".join(r for _, r in righe if not r.lstrip().startswith("#"))
-    fuori: list[str] = check_glossario(f, testo, rel)
+    fuori: "list[tuple[str, str]]" = [
+        ("terminologia_non_canonica", m) for m in check_glossario(f, testo, rel)]
     if e_per_i_giocatori(f):
-        fuori += check_ancore(f, righe, rel)
+        fuori += [("testo_giocatori_senza_ancore", m)
+                  for m in check_ancore(f, righe, rel)]
 
     for n, riga in righe:
         for pattern, perche in CALCHI_SEMPRE:
             m = re.search(pattern, riga, re.I)
             if m:
-                fuori.append(f"{rel}:{n}: calco — {perche}  «…{m.group(0)}…»")
+                fuori.append(("calco_dall_inglese",
+                              f"{rel}:{n}: calco — {perche}  «…{m.group(0)}…»"))
 
     if not readaloud.strip():
         return fuori
 
     for pattern, perche in CALCHI_READ_ALOUD:
         for m in re.finditer(pattern, readaloud, re.I):
-            fuori.append(f"{rel}: read-aloud — {perche}  «…{m.group(0)}…»")
+            fuori.append(("calco_dall_inglese",
+                          f"{rel}: read-aloud — {perche}  «…{m.group(0)}…»"))
 
     n_ant = len(ANTITESI.findall(readaloud))
     if n_ant > SOGLIE["antitesi"]:
-        fuori.append(
+        fuori.append((
+            "antitesi_ripetuta",
             f"{rel}: l'antitesi «non X: è Y» compare {n_ant} volte nei read-aloud "
             f"(massimo {SOGLIE['antitesi']} per documento): alla terza il tavolo sente il telaio"
-        )
+        ))
     ripulito = ETICHETTA_BATTUTA.sub(" ", CAPPELLO_DM.sub(" ", readaloud))
     portento = Counter(w for w in MAIUSCOLE.findall(ripulito) if w.upper() not in SIGLE)
     if len(portento) > SOGLIE["maiuscole"]:
         elenco = ", ".join(sorted(portento)[:6])
-        fuori.append(
+        fuori.append((
+            "maiuscole_di_enfasi",
             f"{rel}: {len(portento)} parole in maiuscolo di enfasi nei read-aloud "
             f"({elenco}) — massimo {SOGLIE['maiuscole']}: se sono due, non funzionano più"
-        )
+        ))
     parole = len(readaloud.split())
     if parole >= 80:
         densita = TRATTINO.findall(readaloud)
         if len(densita) / parole > 0.03:
-            fuori.append(
+            fuori.append((
+                "trattino_come_respiro",
                 f"{rel}: {len(densita)} trattini lunghi in {parole} parole di read-aloud "
                 f"— il trattino come respiro è un tic: punto e virgola, due punti, o niente"
-            )
+            ))
     return fuori
+
+
+def controlla(f: Path) -> list[str]:
+    """I soli messaggi, per chi stampa. Identica a prima del 2026-09-21."""
+    return [m for _, m in rilievi(f)]
 
 
 def file_di_contenuto() -> list[Path]:

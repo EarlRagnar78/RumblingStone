@@ -42,7 +42,7 @@ Durante la **Cerimonia delle 100 Asce** (Giorno 21, vedi `08_La Battaglia Di Ham
 
 > *Mentre Re Thorek ti porge la runa di pietra, **l'Anello al tuo dito si surriscalda improvvisamente**. Non è dolore — è una **pressione**, come quando qualcuno ti chiama in una stanza affollata e ancora non capisci da dove arrivi la voce.*
 >
-> *Senti — non con le orecchie, ma in un piano laterale della tua mente — **una voce maschile** che non è la tua. Non è Lathander. Non è Mask. È una **voce di esperimento**, secca, paziente, leggermente curiosa. Parla in una lingua che riconosci come **drow antico**, ma comprendi le tre parole essenziali:*
+> *Arriva — non con le orecchie, ma in un piano laterale della tua mente — **una voce maschile** che non è la tua. Non è Lathander. Non è Mask. È una **voce di esperimento**, secca, paziente, leggermente curiosa. Parla in una lingua che riconosci come **drow antico**, ma comprendi le tre parole essenziali:*
 >
 > *"**Lui sta camminando. Vieni.**"*
 >

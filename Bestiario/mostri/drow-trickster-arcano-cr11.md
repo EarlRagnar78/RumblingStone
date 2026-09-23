@@ -8,12 +8,17 @@ tipo: Medium humanoid (elf), NE
 ca: 19
 ca-dettaglio: (+4 Des, +4 *armatura magica*, +1 anello), contatto 15, colto alla sprovvista 15
 pf: 38
-pf-dado: 3d6
+pf-dado: 3d6+7d4+10
 ts: Temp +5, Rifl +11, Vol +8
+attributi: For 8 Des 18 Cos 12 Int 20 Sag 12 Car 14
 velocita: 9 m
 attacchi:
   - Mischia stocco +5 (1d6)
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «3d6», una parte sola dei dadi vita. I dadi vengono dalla formula che la scheda scrive, il bonus da Cos 12.
+
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
 Medium humanoid (elf), NE. **DV 3d6 + 7d4**. **hp 38**. **CA 19** (+4 Des, +4 *armatura magica*, +1 anello), contatto 15, colto alla sprovvista 15. Iniziativa +4. Vel 9 m.
 **TS** Temp +5, Rifl +11, Vol +8 (+2 razziale vs incantesimi, +2 vs ammaliamenti). **BAB/Lotta** +4/+3. **RI 21**.

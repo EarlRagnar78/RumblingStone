@@ -116,18 +116,141 @@ class TestIlCancelloMorde(unittest.TestCase):
 
     def test_un_rosso_senza_ragione_boccia(self):
         testo = REGISTRO.read_text(encoding="utf-8") + \
-            "\n| `x.md` | norma | 🔴 non misurato |\n"
+            "\n| `x.md` | norma | **minore** | 🔴 non misurato |\n"
         errori = self._con_registro(testo)
         self.assertTrue(any("senza una ragione" in e for e in errori), errori)
 
     def test_un_rosso_PUO_nominare_uno_strumento_inesistente(self):
         """⚠️ Il lato opposto, e serve: la riga di ADR-0022 cita
         `validate_pg.py` **per dire che non esiste**. Un cancello che
-        bocciasse anche quello impedirebbe di scrivere il vero."""
+        bocciasse anche quello impedirebbe di scrivere il vero.
+
+        ⚠️ L'asserzione e' su **quale** errore non deve esserci, non su
+        «nessun errore»: aggiungere una riga sposta di uno il conto del §4, e
+        un test che pretende la lista vuota proverebbe anche quello — cioe'
+        fallirebbe per una ragione che non e' la sua.
+        """
         testo = REGISTRO.read_text(encoding="utf-8") + \
-            "\n| `y.md` | norma | 🔴 non misurato — `validate_inesistente.py` non c'è |\n"
+            "\n| `y.md` | norma | **minore** | 🔴 non misurato — `validate_inesistente.py` non c'è |\n"
         errori = self._con_registro(testo)
-        self.assertEqual(errori, [], errori)
+        self.assertFalse([e for e in errori if "validate_inesistente" in e], errori)
+
+
+class TestLaSeveritaEDichiarata(unittest.TestCase):
+    """Lotto F1.1: ogni norma dice **quanto costa violarla**, o perche' no."""
+
+    def _con_registro(self, testo: str) -> "list[str]":
+        originale = REGISTRO.read_text(encoding="utf-8")
+        try:
+            REGISTRO.write_text(testo, encoding="utf-8")
+            return G.controlla()
+        finally:
+            REGISTRO.write_text(originale, encoding="utf-8")
+
+    def test_ogni_norma_del_registro_ha_una_severita(self):
+        for celle in G.righe_norma(REGISTRO.read_text(encoding="utf-8")):
+            self.assertEqual(len(celle), 4, celle)
+            sev = celle[2]
+            self.assertTrue(
+                any(s in sev for s in G.SEVERITA) or sev.startswith("—"),
+                f"«{celle[1][:60]}» ha severità «{sev}»")
+
+    def test_una_severita_inventata_boccia(self):
+        testo = REGISTRO.read_text(encoding="utf-8").replace(
+            "| **critico** |", "| **catastrofico** |", 1)
+        errori = self._con_registro(testo)
+        self.assertTrue(any("inventata" in e for e in errori), errori)
+
+    def test_una_riga_senza_la_colonna_boccia(self):
+        testo = REGISTRO.read_text(encoding="utf-8") + \
+            "\n| `z.md` | norma senza peso | 🟢 `misura_craft --box` |\n"
+        errori = self._con_registro(testo)
+        self.assertTrue(any("manca la severità" in e for e in errori), errori)
+
+    def test_il_trattino_va_bene_ma_con_la_ragione(self):
+        """Come per il 🔴: «non si pesa» e' una decisione **se porta il perche'**."""
+        nudo = REGISTRO.read_text(encoding="utf-8") + \
+            "\n| `w.md` | norma | — | 🟢 `misura_craft --box` |\n"
+        self.assertTrue(
+            any("severità assente" in e for e in self._con_registro(nudo)))
+        motivata = REGISTRO.read_text(encoding="utf-8") + \
+            "\n| `w.md` | norma | — non è una norma che un documento possa violare | 🟢 `misura_craft --box` |\n"
+        self.assertFalse(
+            [e for e in self._con_registro(motivata) if "severità" in e])
+
+
+class TestIlRegistroELoYamlNonDivergono(unittest.TestCase):
+    """ADR-0047 applicato ai pesi: il dato ha una casa sola, e un cancello lo dice."""
+
+    def _con_registro(self, testo: str) -> "list[str]":
+        originale = REGISTRO.read_text(encoding="utf-8")
+        try:
+            REGISTRO.write_text(testo, encoding="utf-8")
+            return G.controlla()
+        finally:
+            REGISTRO.write_text(originale, encoding="utf-8")
+
+    def test_lo_yaml_si_legge_senza_pyyaml(self):
+        """Il cancello gira in CI, dove `pyyaml` non e' garantito (ADR-0037)."""
+        sev = G.severita_dello_yaml()
+        self.assertIn("box_oltre_12_righe", sev)
+        self.assertEqual(sev["box_oltre_12_righe"], "maggiore")
+        self.assertTrue(set(sev.values()) <= set(G.SEVERITA), sev)
+
+    def test_ogni_chiave_pesata_e_rivendicata_dal_registro(self):
+        self.assertEqual([e for e in G.controlla() if "rivendica" in e], [])
+
+    def test_una_severita_divergente_boccia(self):
+        testo = REGISTRO.read_text(encoding="utf-8").replace(
+            "**maggiore** · `box_oltre_12_righe`",
+            "**minore** · `box_oltre_12_righe`")
+        errori = self._con_registro(testo)
+        self.assertTrue(any("una casa sola" in e for e in errori), errori)
+
+    def test_una_chiave_inventata_boccia(self):
+        testo = REGISTRO.read_text(encoding="utf-8").replace(
+            "`box_con_parentesi`", "`box_con_qualcosa`")
+        errori = self._con_registro(testo)
+        self.assertTrue(any("box_con_qualcosa" in e for e in errori), errori)
+
+
+class TestIlContoSiDeriva(unittest.TestCase):
+    """Lotto F1.2. 🐛 Il conto scritto a mano diceva 40 su 39 righe, e il
+    riepilogo del cancello ne contava **47** perche' contava le emoji in tutto
+    il file, prosa compresa."""
+
+    def _con_registro(self, testo: str) -> "list[str]":
+        originale = REGISTRO.read_text(encoding="utf-8")
+        try:
+            REGISTRO.write_text(testo, encoding="utf-8")
+            return G.controlla()
+        finally:
+            REGISTRO.write_text(originale, encoding="utf-8")
+
+    def test_il_conto_e_sulle_righe_non_sulle_emoji(self):
+        testo = REGISTRO.read_text(encoding="utf-8")
+        conto = G.conto_vero(testo)
+        self.assertEqual(sum(conto.values()), len(G.righe_norma(testo)))
+        # la prosa del registro contiene le stesse emoji: se il conto le
+        # prendesse, sarebbe piu' alto della somma delle righe.
+        self.assertLess(sum(conto.values()),
+                        sum(testo.count(e) for e in ("🟢", "🟡", "🔴", "⚪")))
+
+    def test_un_conto_sbagliato_nel_paragrafo_boccia(self):
+        """⚠️ Il numero vero si **deriva**, non si scrive nel test.
+
+        La prima stesura sabotava la stringa letterale «| 🟢 misurate | 19 |»,
+        e il test e' diventato rosso il giorno in cui due norme sono entrate
+        nel registro: provava la sua stessa copia del numero. Lo stesso
+        difetto che il controllo sotto prova esiste per prendere.
+        """
+        testo = REGISTRO.read_text(encoding="utf-8")
+        vero = G.conto_vero(testo)["🟢"]
+        sabotato = testo.replace(f"| 🟢 misurate | {vero} |",
+                                 f"| 🟢 misurate | {vero + 23} |")
+        self.assertNotEqual(sabotato, testo, "l'ancora del §4 e' cambiata forma")
+        errori = self._con_registro(sabotato)
+        self.assertTrue(any("si deriva, non si ricorda" in e for e in errori), errori)
 
 
 if __name__ == "__main__":

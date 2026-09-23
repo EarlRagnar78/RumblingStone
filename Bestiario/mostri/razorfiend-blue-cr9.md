@@ -7,9 +7,12 @@ ca: 24
 pf: 115
 pf-dado: 10d12+50
 ts: Temp +12, Rifl +8, Vol +9
+attributi: For 22 Des 17 Cos 20 Int 10 Sag 11 Car 9
 velocita: 40 ft, fly 80 ft (average), burrow 20 ft
 iniziativa: +5
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 **Size/Type**: Large dragon (electricity) | **HD**: 10d12+50 (115 HP)
 **AC**: 24 | **Init**: +5 | **Speed**: 40 ft, fly 80 ft (average), burrow 20 ft

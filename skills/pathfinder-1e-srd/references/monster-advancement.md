@@ -101,20 +101,26 @@ hit. **Use it to price any boost, including 3.5 ones:** if your boosted
 villain's AC, hp, attack, and DCs land on the CR 13 row, it *is* CR 13 no
 matter what the additive rules said.
 
-Anchor rows for this campaign's level band (Bestiary Table 1–1 values,
-cross-checked for consistency against the official per-step Monster
-Advancement deltas below):
+Rows for this campaign's level band, **transcribed from the OGL source**
+(Bestiary, «Monster Creation», Table 1–1) on 2026-09-23. The complete table,
+CR 1/2 to 30 with all eleven columns, is versioned in
+`scripts/pf1e-statistiche-per-gs.yaml`, and the scripts read it from there.
+
+⚠️ Until 2026-09-23 this section had eight rows written from memory, and
+they were wrong on average damage, primary DC and poor save in almost every
+row (CR 12 even had CR 11's attack). The code had copied them, and the test
+comparing the two was comparing the same mistake twice.
 
 | CR | AC | hp | High attack | Avg dmg (high) | Primary DC | Good save | Poor save |
 |---|---|---|---|---|---|---|---|
-| 8 | 21 | 100 | +15 | 30 | 17 | +11 | +8 |
+| 8 | 21 | 100 | +15 | 35 | 18 | +11 | +7 |
 | 10 | 24 | 130 | +18 | 45 | 19 | +13 | +9 |
 | 11 | 25 | 145 | +19 | 50 | 20 | +14 | +10 |
-| 12 | 27 | 160 | +19 | 55 | 20 | +15 | +11 |
-| 13 | 28 | 180 | +21 | 61 | 21 | +15 | +11 |
-| 14 | 29 | 200 | +22 | 67 | 22 | +16 | +12 |
-| 15 | 30 | 220 | +23 | 74 | 23 | +17 | +12 |
-| 16 | 31 | 240 | +24 | 80 | 24 | +18 | +13 |
+| 12 | 27 | 160 | +21 | 55 | 21 | +15 | +11 |
+| 13 | 28 | 180 | +22 | 60 | 21 | +16 | +12 |
+| 14 | 29 | 200 | +23 | 65 | 22 | +17 | +12 |
+| 15 | 30 | 220 | +24 | 70 | 23 | +18 | +13 |
+| 16 | 31 | 240 | +26 | 80 | 24 | +19 | +14 |
 
 **Table: Monster Advancement, what one CR step buys** (Bestiary appendix,
 verified): when raising a monster from the lower CR to the higher one, add:

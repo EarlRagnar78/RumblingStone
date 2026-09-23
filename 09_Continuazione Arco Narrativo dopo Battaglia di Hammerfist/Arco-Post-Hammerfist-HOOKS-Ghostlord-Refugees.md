@@ -37,7 +37,7 @@ I villaggi vicini al Thornwaste **stanno fuggendo**. Una di queste **carovane di
 
 ### 2.1 Read-aloud (DM)
 
-> *Sentite prima i bambini. Pianti, lamenti, una madre che cerca di tranquillizzare. Poi vedete: una carovana piccola — **3 carri di legno**, **2 muli**, **circa 30 persone** in totale. Camminano stancamente. Cinque uomini armati di forconi e una vecchia spada arrugginita ai lati. Un uomo anziano in mezzo, magro, con una **vestaglia rossiccia di guardia di villaggio** (sbiadita, vecchia di anni).*
+> *Prima arrivano i bambini: pianti, lamenti, una madre che cerca di tranquillizzare. Poi la carovana, piccola — **3 carri di legno**, **2 muli**, **circa 30 persone** in totale. Camminano stancamente. Cinque uomini armati di forconi e una vecchia spada arrugginita ai lati. Un uomo anziano in mezzo, magro, con una **vestaglia rossiccia di guardia di villaggio** (sbiadita, vecchia di anni).*
 >
 > *Quando vi vedono, si fermano tutti. La paura nei loro occhi è quella di chi ha visto cose che non si dovrebbero vedere. Il vecchio fa cenno ai cinque armati di abbassare i forconi (gesto rapido, abituato a comandare). Si avvicina. La sua voce è secca dalla polvere:*
 >

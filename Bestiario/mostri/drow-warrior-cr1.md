@@ -8,9 +8,12 @@ ca-dettaglio: (+4 chain shirt, +2 Dex, +1 light shield)
 pf: 5
 pf-dado: 1d8+1
 ts: Temp +3, Rifl +2, Vol +2
+attributi: For 13 Des 15 Cos 12 Int 12 Sag 13 Car 12
 velocita: 30 ft
 iniziativa: +2
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
 **Size/Type**: Medium humanoid (elf) | **HD**: 1d8+1 (5 HP)
 **AC**: 17 (+4 chain shirt, +2 Dex, +1 light shield) | **Init**: +2 | **Speed**: 30 ft

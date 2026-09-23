@@ -182,7 +182,47 @@ Fang Stage 1. La sezione dice anche **dove si scioglie il ramo freddo**
 (ARC-09, la prima volta che Thorik rischia qualcosa di suo), perché un eco
 senza il suo punto di riscossione è una nota.
 
-### 2C · I 104 box
+### 2C · I 104 box ✅ *(chiuso 2026-09-21)*
+
+**Esito: 104 → 22, in quattro giri.** Il conto non scende a zero e non
+deve: i 22 che restano sono cinque classi di cose che il rilevatore non sa
+distinguere dalla narrazione, elencate qui sotto una per una. Il cancello
+che le tiene ferme è `test_ogni_residuo_e_uno_dei_ventidue_dichiarati`, che
+àncora il conto **file per file** — provato all'indietro reintroducendo un
+«lo sentite nello sterno» in `ARC07-DEF-1`: rosso, e ripristinato verde.
+
+| Giro | Bersaglio | Rilevati | Corretti | Restano |
+|---|---|---:|---:|---:|
+| 1 | i cinque master DEF di ARC-07 + gli handout | 17 | 15 | 2 |
+| 2 | i beat non consolidati (P1 · P2 · P3 · Piramide · Boss Fauci) | 58 | 49 | 9 |
+| 3 | ARC-08 e ARC-09 | 17 | 8 | 9 |
+| 4 | le schede e le fonti d'artefatto in `PG/` | 12 | 10 | 2 |
+| | **totale** | **104** | **82** | **22** |
+
+**I 22, per classe** — l'elenco vive anche nel test, perché un elenco che
+sta solo in un piano non ferma nessuno:
+
+| Classe | Quanti | Cos'è |
+|---|---:|---|
+| **dialogo** | 12 | Moradin, Aegis Fang, Mask e Lathander, Re Thorek, Nania, Lythiel, Tempestas, la cellula di Dauth. Parlano in seconda persona a chi hanno davanti, ed è il loro registro: è la prima esenzione scritta in questo lotto |
+| **falso positivo del rilevatore** | 6 | tre classi, tutte vere: «chiunque lo *guardi*» e «chiunque *tocchi*» sono **terza persona congiuntiva**; «*VEDI* PARTE 2», «*Vedi* CONTRADE-STEMMI-CANTI» e «*vedi* `ARC07-DEF-1`» sono **rimandi per il DM** finiti dentro un box; «da dove *arrivi* la voce» è una **similitudine al congiuntivo** |
+| **visione interiore** | 2 | il sogno di Thorik in DEF-2, il flash della visione di Moradin in P2: la seconda esenzione |
+| **canto** | 1 | la ballata del Palio è un testo cantato a qualcuno |
+| **condizionale che la scelta la lascia** | 1 | «Non parla finché tu non la *prendi*» dice al DM cosa fa Lythiel **se** il giocatore prende la ghianda. È esattamente la forma che la norma chiede, e viene contata lo stesso |
+
+🔎 **Quel che la correzione ha mostrato, e che l'audit non aveva visto.** In
+ARC-07 la clausola d'azione era quasi sempre **ridondante**: la
+**Procedura** sopra il box scriveva già *«Quando Thorik tocca la
+Corona»*, e il box lo ripeteva in seconda persona. Togliere la ripetizione
+non ha tolto un'informazione a nessuno — ha tolto una riga che diceva due
+volte la stessa cosa, la seconda delle quali decideva per il giocatore.
+
+⚠️ **Il rapporto fra rilievi e difetti veri cambia per arco, e dice qualcosa
+sullo stile.** ARC-07 corregge 64 rilievi su 75 (85%): il sensoriale lo
+scrive in narrazione. ARC-08 e ARC-09 ne correggono 8 su 17 (47%): il
+sensoriale lo mettono in bocca a un personaggio. Non è che i due archi più
+recenti siano più disciplinati — è che hanno un'altra forma, e su quella
+forma la norma ha meno presa.
 
 1. **Il rilevatore entra nel repo prima delle correzioni**, come congegno di
    `misura_craft` (`--p1`), riusando `box_read_aloud`: *una norma, un
@@ -267,4 +307,4 @@ e i nove box falsi non sarebbero mai entrati nel conteggio.
 |---|---|---|
 | 🔵 | **Ribilanciare `§4` per l'Aura** | è una decisione di difficoltà, e il DM ha ora il numero per prenderla. Farla d'iniziativa vorrebbe dire alzare un boss che il DM ha già tarato |
 | 🔵 | Fondere le due copie della cartella Corona (`PG/` e lo snapshot ARC-06) | l'`[INFERRED]` di `_SNAPSHOT-STORICO.md` è del 2026-07-02 e aspetta ancora il DM |
-| ⬜ | I 51 link rotti dei booklet generati, i 27 ADR mancanti in `docs/INDEX.md` | code di altri lotti, già registrate |
+| ✅ | ~~I 51 link rotti dei booklet generati, i 27 ADR mancanti in `docs/INDEX.md`~~ | 🐛 **Nessuna delle due esisteva quando questa riga è stata scritta.** I link erano **44**, non 51, e li ha chiusi il lotto **E1 di `RIPRESA-PR`** il **12 settembre**, che nello stesso archivio li registra a zero. Gli ADR mancanti erano **zero**: il buco più grande mai avuto è stato **uno**, il 12 settembre, e dal 16 l'indice è completo. Misurato il 2026-09-21 con `validate_booklets` e `validate_docs --sorgenti`, i due comandi che la riga stessa citava. Vedi `STATO-E-ORDINE` §6.2-bis |

@@ -192,12 +192,16 @@ class TestDerivazione(unittest.TestCase):
         self.assertIsNone(sb)
         self.assertTrue(any("due modi" in m for m in manca), manca)
 
-    def test_le_righe_non_verificate_della_tabella_sono_dichiarate(self):
-        # Non tutte le righe per GS sono verificate contro la fonte: alcune le
-        # ho interpolate io, e un giudizio duro non si dà su una riga così.
-        self.assertTrue(D.PER_GS_VERIFICATE < set(D.PER_GS))
+    def test_la_riga_del_collaudo_viene_dalla_fonte(self):
+        # Fino al 2026-09-23 alcune righe erano interpolate a mano e il
+        # collaudo lo dichiarava. Ora la Tabella 1–1 e' trascritta intera da
+        # `pf1e-statistiche-per-gs.yaml`: nessuna riga da 1 a 20 e' interpolata,
+        # e il collaudo non deve piu' dirlo.
+        self.assertEqual(D.PER_GS_VERIFICATE, set(D.PER_GS))
         L = D.Lettura(nome="x", gs=9, dv=2, dado=8, tipo="humanoid", taglia="large")
-        self.assertIn("interpolata", D.deriva(L)[0].fonte)
+        fonte = D.deriva(L)[0].fonte
+        self.assertIn("PF1e Tab. 1–1", fonte)
+        self.assertNotIn("interpolata", fonte)
 
     def test_le_matrici_sono_quelle_del_SRD(self):
         self.assertEqual(D.ELITE, (15, 14, 13, 12, 10, 8))

@@ -8,13 +8,18 @@ tipo: Large giant, CE
 ca: 18
 ca-dettaglio: (−1 taglia, +5 naturale, +5 cotta di maglia, −1 Des), contatto 8, colto alla sprovvista 18 — 16 in ira
 pf: 77
-pf-dado: 4d8
+pf-dado: 4d8+6d12+23
 ts: Temp +11, Rifl +1, Vol +3
+attributi: For 24 Des 8 Cos 14 Int 8 Sag 12 Car 9
 velocita: 12 m (12 m anche in armatura: andatura veloce da Barbaro)
 attacchi:
   - Mischia randello enorme +15/+10 (2d8+10) — in ira +17/+12 (2d8+13); con Attacco Poderoso −5: +12/+7 (2d8+23)
   - Distanza roccia +7 (2d6+7, gittata 36 m)
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «4d8», una parte sola dei dadi vita. I dadi vengono dalla formula che la scheda scrive, il bonus ricavato dai pf 77 (la Cos di questa scheda è generata).
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
 
 Large giant, CE. **DV 4d8 + 6d12**. **hp 77** (**97 in ira**). **CA 18** (−1 taglia, +5 naturale, +5 cotta di maglia, −1 Des), contatto 8, colto alla sprovvista 18 — **16 in ira**. Iniziativa −1. Vel 12 m (12 m anche in armatura: andatura veloce da Barbaro).
 **TS** Temp +11, Rifl +1, Vol +3 (**+13/+1/+5 in ira**). **BAB/Lotta** +9/**+20**.

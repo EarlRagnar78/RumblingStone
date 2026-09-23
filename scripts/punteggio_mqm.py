@@ -88,7 +88,56 @@ def _caratteristiche(_testo: str, percorso: Path) -> "dict[str, int]":
     return {"caratteristica_minuscola": len(vp.controlla_caratteristiche(percorso))}
 
 
-RILEVATORI = (_difetti_box, _caratteristiche)
+def _prosa(_testo: str, percorso: Path) -> "dict[str, int]":
+    """Le sei norme che `validate_prosa` misurava **senza che nessuno le pesasse**.
+
+    🔎 **Il difetto, e perche' era invisibile.** Non mancava il rilevatore:
+    `validate_prosa` conta i calchi dall'inglese, la terminologia fuori
+    glossario, le maiuscole di enfasi, l'antitesi ripetuta e il trattino come
+    respiro **da settembre**. Mancava il **nome**: `controlla()` restituiva
+    stringhe gia' formattate, e contarle per norma avrebbe voluto dire
+    riconoscere la frase italiana con cui erano scritte. Il ponte non si poteva
+    costruire, quindi non c'era.
+
+    Il conto: da **4 norme pesate a 10**, e da **una sola maggiore a due** —
+    la terminologia non canonica e' `maggiore`, ed e' la prima norma pesata che
+    non sia una prassi da un punto.
+    """
+    conta: "dict[str, int]" = {k: 0 for k in vp.NORME if k != "caratteristica_minuscola"}
+    for chiave, _ in vp.rilievi(percorso):
+        if chiave in conta:
+            conta[chiave] += 1
+    return conta
+
+
+def _p1(testo: str, _percorso: Path) -> "dict[str, int]":
+    """Il read-aloud che presuppone un'azione o un senso del giocatore.
+
+    ⚠️ **Il rilevatore dichiara di non distinguere il dialogo dalla
+    narrazione**, quindi i suoi 22 rilievi sul repo sono in maggioranza
+    legittimi (lotto 2C). Entra come **minore** apposta: e' un indizio pesato
+    poco, non un'accusa. Pesarlo di piu' vorrebbe dire far pagare a un
+    documento le battute dei suoi PNG.
+    """
+    return {"read_aloud_presuppone": len(mc.box_con_p1(testo))}
+
+
+def _metrature(testo: str, _percorso: Path) -> "dict[str, int]":
+    """ADR-0014 §2: la metratura nella voce narrante.
+
+    ⚠️ **La norma gemella NON entra qui, ed e' una scelta.** «Almeno un `c'e'`
+    presentativo o una dislocazione a sinistra» (`italiano-nativo.md` §8) e'
+    rilevata **a meta'**: la dislocazione vuole un'analisi sintattica che una
+    regex non fa. Pesarla produrrebbe penalita' **false** su box che la norma
+    la rispettano in un modo che il pattern non vede — 281 rilievi su 477, il
+    59%, che e' il numero di una sovrastima e non di un difetto. Si misura con
+    `--costrutto-italiano` e non si pesa: contare male in negativo e' peggio
+    che non contare.
+    """
+    return {"metratura_nella_voce_narrante": len(mc.metrature_nei_box(testo))}
+
+
+RILEVATORI = (_difetti_box, _caratteristiche, _prosa, _p1, _metrature)
 
 
 def carica_specifiche() -> dict:
@@ -177,15 +226,102 @@ def stampa_norme(spec: dict) -> None:
         print(f"  {n['severita']:9} (×{peso:2})  {chiave}")
         print(f"  {'':14}  rilevatore: {n['rilevatore']}")
         print(f"  {'':14}  {n['norma']}")
+    # 🐛 Il conto era approssimato («~53») perche' contava le righe di TUTTE le
+    # tabelle del registro, compresa quella del conto onesto. Le norme vere si
+    # contano con lo stesso codice del cancello: una norma, un rilevatore —
+    # applicato anche al contare.
+    import validate_norme_editoriali as vne  # noqa: PLC0415
     registro = ROOT / "skills" / "REGISTRO-NORME-EDITORIALI.md"
     if registro.exists():
-        righe = [r for r in registro.read_text(encoding="utf-8").splitlines()
-                 if r.startswith("|") and not r.startswith("|---")]
-        print(f"\n⚠️  Il registro elenca ~{len(righe) - 4} norme; qui ne entrano "
+        conto = vne.conto_vero(registro.read_text(encoding="utf-8"))
+        tot = sum(conto.values())
+        print(f"\n⚠️  Il registro elenca {tot} norme; qui ne entrano "
               f"{len(spec['norme'])}.")
         print("   Le altre non hanno un rilevatore, e valere zero sarebbe una bugia.")
+        # 🔎 «Le altre» era una frase, e una frase non dice **cosa manca**.
+        # Dal 2026-09-21 ogni norma scoperta porta il suo stato di superficie,
+        # cosi' la riga smette di essere una scusa e diventa un elenco di lavoro
+        # con il suo prerequisito accanto (ADR-0062).
+        import superficie_norme as sn  # noqa: PLC0415
+        conta: "dict[str, int]" = {}
+        for r in sn.misura():
+            conta[r["stato"]] = conta.get(r["stato"], 0) + 1
+        print("\n   Delle scoperte, cosa manca davvero — "
+              "`python3 scripts/superficie_norme.py` per il dettaglio:")
+        for stato, n in sorted(conta.items()):
+            print(f"     {sn.ETICHETTA[stato]:26} {n}")
+        print("   🔎 Per otto su nove **non manca il codice**: manca il dato, la")
+        print("      convenzione di marcatura, o il fatto non sta nel testo.")
+        pesi = [spec["severita"][n["severita"]]["peso"] for n in spec["norme"].values()]
+        print(f"   🔎 E pesano poco: {sum(1 for p in pesi if p == 1)} minori su "
+              f"{len(pesi)}. Il punteggio di oggi misura il bordo, non il centro "
+              "— vedi la tabella incrociata del registro (lotto F1.2).")
     print("\n⛔ Nessun rilevatore di severita' «critico» esiste oggi: il pass/fail")
     print("   e' cablato e non scatta mai. Pronto, non attivo.\n")
+
+
+BASELINE = ROOT / "campaign" / "misure" / "baseline-punteggi.json"
+
+
+def scrivi_baseline(esiti: "list[dict]", data: str) -> int:
+    """La fotografia dei punteggi di oggi, versionata.
+
+    🔴 **Il pezzo che mancava ad ADR-0036.** Quella decisione dice *«si misura
+    il miglioramento, non lo stato»*, e finche' non esisteva una **linea di
+    base** il miglioramento non si poteva misurare: si eseguiva
+    `--distribuzione` due volte e si confrontava a occhio. Un confronto a
+    memoria non e' una misura.
+
+    Si salva il punteggio **documento per documento**, non solo i percentili:
+    l'aggregato dice *che* qualcosa e' peggiorato, non **quale**. Il file e'
+    committato apposta — il diff di una baseline e' esattamente il racconto di
+    cosa e' cambiato nel repo, e in `git` quel racconto resta.
+    """
+    dati = {
+        "data": data,
+        "versione_specifiche": carica_specifiche().get("versione"),
+        "norme_pesate": len(carica_specifiche()["norme"]),
+        "documenti": {e["file"]: e["punteggio"] for e in sorted(
+            esiti, key=lambda x: x["file"]) if e.get("punteggio") is not None},
+    }
+    BASELINE.parent.mkdir(parents=True, exist_ok=True)
+    BASELINE.write_text(json.dumps(dati, ensure_ascii=False, indent=2) + "\n",
+                        encoding="utf-8")
+    print(f"✓ baseline scritta in {BASELINE.relative_to(ROOT)} — "
+          f"{len(dati['documenti'])} documenti, {dati['norme_pesate']} norme pesate")
+    return 0
+
+
+def confronta_baseline(esiti: "list[dict]") -> int:
+    """Chi e' migliorato, chi e' peggiorato, chi e' nuovo — dalla baseline a oggi."""
+    if not BASELINE.exists():
+        print("✗ nessuna baseline: `--scrivi-baseline` la crea")
+        return 1
+    b = json.loads(BASELINE.read_text(encoding="utf-8"))
+    prima = b["documenti"]
+    oggi = {e["file"]: e["punteggio"] for e in esiti if e.get("punteggio") is not None}
+    su, giu = [], []
+    for f, p in sorted(oggi.items()):
+        if f in prima and abs(p - prima[f]) > 0.005:
+            (su if p > prima[f] else giu).append((f, prima[f], p))
+    nuovi = sorted(set(oggi) - set(prima))
+    spariti = sorted(set(prima) - set(oggi))
+    print(f"\nCONFRONTO CON LA BASELINE del {b['data']}\n" + "=" * 66)
+    if b["norme_pesate"] != len(carica_specifiche()["norme"]):
+        print(f"⚠️  Le norme pesate sono cambiate: {b['norme_pesate']} → "
+              f"{len(carica_specifiche()['norme'])}. **I punteggi non sono")
+        print("    confrontabili**: un metro con piu' denti da' numeri piu'")
+        print("    bassi sugli stessi documenti. Riscrivi la baseline.\n")
+    for etichetta, elenco in (("🟢 migliorati", su), ("🔴 peggiorati", giu)):
+        print(f"\n  {etichetta}: {len(elenco)}")
+        for f, a, z in elenco[:15]:
+            print(f"      {a:6.2f} → {z:6.2f}  ({z - a:+.2f})  {f}")
+    if nuovi:
+        print(f"\n  ➕ nuovi: {len(nuovi)}")
+    if spariti:
+        print(f"  ➖ spariti: {len(spariti)}")
+    print()
+    return 0
 
 
 def stampa_distribuzione(esiti: "list[dict]") -> None:
@@ -219,6 +355,10 @@ def main(argv=None) -> int:
     ap.add_argument("--norme", action="store_true",
                     help="cosa entra nel punteggio, con la severita' e il rilevatore")
     ap.add_argument("--json", action="store_true", help="il rapporto in JSON")
+    ap.add_argument("--scrivi-baseline", action="store_true",
+                    help="fotografa i punteggi di oggi in campaign/misure/ (ADR-0036)")
+    ap.add_argument("--confronta", action="store_true",
+                    help="chi e' migliorato e chi e' peggiorato dalla baseline a oggi")
     args = ap.parse_args(argv)
 
     spec = carica_specifiche()
@@ -236,6 +376,13 @@ def main(argv=None) -> int:
     if args.distribuzione:
         stampa_distribuzione(esiti)
         return 0
+
+    if args.scrivi_baseline:
+        from datetime import date  # noqa: PLC0415
+        return scrivi_baseline(esiti, date.today().isoformat())
+
+    if args.confronta:
+        return confronta_baseline(esiti)
 
     bocciati = []
     for e in sorted(esiti, key=lambda x: x["punteggio"]):

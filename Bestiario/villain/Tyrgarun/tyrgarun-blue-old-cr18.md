@@ -9,10 +9,13 @@ ca-dettaglio: (-2 size, +27 natural)
 pf: 405
 pf-dado: 30d12+210
 ts: Temp +24, Rifl +19, Vol +22
+attributi: For 33 Des 10 Cos 25 Int 18 Sag 19 Car 18
 velocita: 12 m, scavare 6 m, volare 45 m (scarsa)
 iniziativa: +4
 fonte: valori approssimati nella prosa d'origine (scritti con «~»)
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`. ⚠ For 26 ricavata da BAB e lotta, ma la scheda scrive 33: si tiene la scheda, da verificare.
 
 > **Nota rinomina (2026-07-02, D11 v2 / A7)**: file precedentemente
 > `tyrgarun-black-adult-cr13.md` (black adult, riserva). Corretto a **blue Old

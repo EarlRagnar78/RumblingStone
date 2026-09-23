@@ -48,7 +48,7 @@ La progressione dell'artefatto è la vera anima della missione. Ogni rituale dev
 **Il Ritorno e il Bisogno di Consacrazione:**
 Al suo ritorno dalla proiezione spirituale, il Portatore non si sentirà semplicemente stanco.
 **(Leggi ad alta voce al giocatore):**
-> *Torni in te con un sussulto, il silenzio eterno sostituito di nuovo dal caos del tuo presente. Ma qualcosa è cambiato. La corona sulla tua fronte è fredda, quasi inerte, e senti un vuoto spirituale, un'eco della battaglia che hai appena combattuto. Un pensiero, non tuo ma inciso nella tua anima, si fa strada con la chiarezza di una runa scolpita nella pietra: "La vittoria spirituale deve essere temprata nel metallo terreno. L'eco del martello deve essere onorata con l'acciaio." Senti un bisogno quasi fisico di dare forma tangibile a ciò che hai compiuto.*
+> *Torni in te con un sussulto, il silenzio eterno sostituito di nuovo dal caos del tuo presente. Ma qualcosa è cambiato. La corona sulla tua fronte è fredda, quasi inerte, e resta un vuoto spirituale, un'eco della battaglia che hai appena combattuto. Un pensiero, non tuo ma inciso nella tua anima, si fa strada con la chiarezza di una runa scolpita nella pietra: "La vittoria spirituale deve essere temprata nel metallo terreno. L'eco del martello deve essere onorata con l'acciaio." E la Corona lo chiede con un bisogno quasi fisico: dare forma tangibile a ciò che hai compiuto.*
 
 **Intervento di Moradin (Indizio attraverso l'Artefatto e gli Affreschi):**
 Se il giocatore è confuso, la corona stessa può guidarlo.
@@ -57,7 +57,7 @@ Se il giocatore è confuso, la corona stessa può guidarlo.
 
 **Il Rituale della Donazione (2.500 mo):**
 **(Quando il giocatore offre le armi/argento in un luogo sacro):**
-> *Mentre poni l'ultima spada sull'altare, il metallo non viene consumato dal fuoco, ma dalla volontà divina. L'argento e l'acciaio si liquefanno, trasformandosi in un fiume di luce liquida che scorre nell'aria e viene assorbito dalla Corona di Adamantio. Un calore rassicurante si diffonde dalla tua fronte, e senti la corona "svegliarsi" veramente per la prima volta. Il potere che hai sbloccato è ora stabile, ancorato alla realtà. Non hai perso un tesoro, hai forgiato un potere.*
+> *Mentre poni l'ultima spada sull'altare, il metallo non viene consumato dal fuoco, ma dalla volontà divina. L'argento e l'acciaio si liquefanno, trasformandosi in un fiume di luce liquida che scorre nell'aria e viene assorbito dalla Corona di Adamantio. Un calore rassicurante si diffonde dalla tua fronte, e la corona si "sveglia" veramente per la prima volta. Il potere che hai sbloccato è ora stabile, ancorato alla realtà. Non hai perso un tesoro, hai forgiato un potere.*
 
 ### **Rituale 2: Trial of the Deep Hall (Prova della Sala Profonda)**
 
@@ -73,7 +73,7 @@ L'affresco che si rivela (quello del nano liberato dalle catene) ora mostra, lun
 
 **Il Rituale della Donazione (12.500 mo):**
 **(Quando il giocatore offre le gemme o l'oggetto magistrale):**
-> *Le gemme che poni sull'incudine non si frantumano. Si dissolvono in una polvere di luce pura, ogni colore un diverso filo di potere. Questa polvere luminosa viene inalata dalla Gem of Immutable Time sulla tua fronte. Per un istante, vedi attraverso di essa: migliaia di passati e futuri possibili turbinano davanti ai tuoi occhi. Il topazio, prima opaco, ora brilla di una luce profonda e costante. Hai dato alla corona la capacità di vedere. Il potere è tuo.*
+> *Le gemme che poni sull'incudine non si frantumano. Si dissolvono in una polvere di luce pura, ogni colore un diverso filo di potere. Questa polvere luminosa viene inalata dalla Gem of Immutable Time sulla tua fronte. Per un istante la gemma si apre: migliaia di passati e futuri possibili turbinano davanti ai tuoi occhi. Il topazio, prima opaco, ora brilla di una luce profonda e costante. Hai dato alla corona la capacità di vedere. Il potere è tuo.*
 
 ### **Rituale 3: Anvil of the World (Incudine del Mondo)**
 
@@ -90,7 +90,7 @@ Quando il Portatore si trova davanti all'Incudine del Mondo, Moradin si manifest
 L'affresco che si rivela è una visione cosmica: il Portatore inginocchiato davanti all'Incudine, ma lo sfondo non è una caverna. È un turbine di fiumi d'oro fuso, costellazioni di diamanti e nebulose di mithril, tutto viene risucchiato nella forgia divina, mostrando visivamente dove finirà l'offerta.
 
 **Il Rituale della Donazione (40.500 mo + Sacrificio Personale):**
-> *L'oro e i gioielli che offri non bruciano. Si smaterializzano in pura energia creativa, risucchiati dall'Incudine del Mondo. La corona sulla tua fronte diventa incandescente, e senti i poteri di tutte e tre le gemme scattare in posizione, come i meccanismi perfetti di una serratura divina. Ora non è più solo un oggetto che indossi. È una parte di te. E tu sei una parte di essa.*
+> *L'oro e i gioielli che offri non bruciano. Si smaterializzano in pura energia creativa, risucchiati dall'Incudine del Mondo. La corona sulla tua fronte diventa incandescente, e i poteri di tutte e tre le gemme scattano in posizione, come i meccanismi perfetti di una serratura divina. Ora non è più solo un oggetto che indossi. È una parte di te. E tu sei una parte di essa.*
 
 ### **Rituale 4: Siege of the Eternal Forge (Assedio della Forgia Eterna)**
 
@@ -102,12 +102,12 @@ Quando il Portatore decide di attivare la *Gem of Immutable Time* in un Nodo Ter
 **2. La Creazione della Sfera Temporale (Descrizione per il Giocatore)**
 Una volta che il sacrificio (se necessario) è stato accettato, il potere si scatena.
 **(Leggi ad alta voce al giocatore):**
-> *Non appena la tua offerta viene accettata, la Gem of Immutable Time sulla tua fronte non brilla più: esplode in una luce accecante. Questa luce non si propaga, ma si ripiega su se stessa, creando una sfera di energia crepitante attorno a te e ai tuoi compagni. All'interno di questa bolla, il mondo esterno scompare, sostituito da un vortice di immagini e suoni. Vedete fortezze naniche sorgere e cadere in pochi secondi, generazioni di re passare come lampi di luce, intere ere geologiche scorrere come fiumi impetuosi. Siete alla deriva nella corrente del tempo stesso.*
+> *Non appena la tua offerta viene accettata, la Gem of Immutable Time sulla tua fronte non brilla più: esplode in una luce accecante. Questa luce non si propaga, ma si ripiega su se stessa, creando una sfera di energia crepitante attorno a te e ai tuoi compagni. All'interno di questa bolla, il mondo esterno scompare, sostituito da un vortice di immagini e suoni. Fortezze naniche sorgono e cadono in pochi secondi, generazioni di re passano come lampi di luce, intere ere geologiche scorrono come fiumi impetuosi. Siete alla deriva nella corrente del tempo stesso.*
 
 **3. L'Invecchiamento (Descrizione per il Giocatore)**
 Mentre sono nella sfera, il costo personale del viaggio si manifesta.
 **(Leggi ad alta voce al giocatore):**
-> *Senti l'enorme potere necessario per questo viaggio fluire attraverso di te. È una forza primordiale, e il tuo corpo mortale ne paga il prezzo. Senti i tuoi muscoli tendersi e le tue ossa scricchiolare sotto una pressione invisibile. Non è dolore, ma il peso degli anni che si comprime in pochi istanti. Vedi nuove ciocche grigie spuntare nella tua barba, sottili rughe apparire agli angoli dei tuoi occhi. Non stai semplicemente invecchiando: stai offrendo una parte della tua vita alla forgia del tempo in cambio di questo passaggio. [Tira 1d10 per determinare gli anni di invecchiamento].*
+> *L'enorme potere necessario per questo viaggio fluisce attraverso di te. È una forza primordiale, e il tuo corpo mortale ne paga il prezzo: i muscoli si tendono, le ossa scricchiolano sotto una pressione invisibile. Non è dolore, ma il peso degli anni che si comprime in pochi istanti. Nuove ciocche grigie spuntano nella barba, sottili rughe agli angoli degli occhi. Non stai semplicemente invecchiando: stai offrendo una parte della tua vita alla forgia del tempo in cambio di questo passaggio. [Tira 1d10 per determinare gli anni di invecchiamento].*
 
 **4. L'Arrivo e l'Aura of the Eternal Forge**
 La sfera temporale si dissolve con la stessa rapidità con cui si è formata, depositando il gruppo all'inizio della battaglia di Hammerfist. L'*Aura of the Eternal Forge* si scatena immediatamente, come descritto nel Capitolo 3. La battaglia si svolge, e i giocatori, potenziati dall'artefatto e dalle azioni passate del Portatore nel sogno, devono guidare i nani alla vittoria.
@@ -115,12 +115,12 @@ La sfera temporale si dissolve con la stessa rapidità con cui si è formata, de
 **5. L'Alba, la Vittoria e la Fine della Gemma (Descrizione per il Giocatore)**
 Quando la battaglia è vinta e i primi raggi dell'alba colpiscono le mura, avviene l'ultimo atto.
 **(Leggi ad alta voce al giocatore):**
-> *Mentre l'ultimo nemico cade e un grido di vittoria si leva dai nani superstiti, i primi raggi dell'alba trafiggono le nuvole di fumo. La luce dorata colpisce la Corona di Adamantio, e la Gem of Immutable Time, che ha brillato con un potere inimmaginabile, inizia a creparsi. Senti un'ultima, immensa ondata di energia temporale rilasciarsi, non per viaggiare, ma per "sigillare" questa nuova realtà, per cementare questa vittoria nella storia. La gemma si frantuma, non in schegge, ma in una miriade di punti di luce, una polvere di stelle che viene assorbita permanentemente dalla struttura stessa della corona, lasciando un topazio opaco e senza vita al suo posto. Il suo scopo è stato compiuto.*
+> *Mentre l'ultimo nemico cade e un grido di vittoria si leva dai nani superstiti, i primi raggi dell'alba trafiggono le nuvole di fumo. La luce dorata colpisce la Corona di Adamantio, e la Gem of Immutable Time, che ha brillato con un potere inimmaginabile, inizia a creparsi. Un'ultima, immensa ondata di energia temporale si rilascia, non per viaggiare, ma per "sigillare" questa nuova realtà, per cementare questa vittoria nella storia. La gemma si frantuma, non in schegge, ma in una miriade di punti di luce, una polvere di stelle che viene assorbita permanentemente dalla struttura stessa della corona, lasciando un topazio opaco e senza vita al suo posto. Il suo scopo è stato compiuto.*
 
 **6. L'Ultimo Intervento di Moradin (Descrizione per il Giocatore)**
 Nel silenzio che segue la dissoluzione della gemma, il Portatore sente un'ultima, pacata comunicazione dal suo dio.
 **(Leggi ad alta voce al giocatore):**
-> *Mentre la polvere di stelle si spegne, senti la voce di Moradin, non più tonante, ma calma e piena di rispetto paterno, risuonare nella tua anima.*
+> *Mentre la polvere di stelle si spegne, la voce di Moradin, non più tonante, ma calma e piena di rispetto paterno, risuona nella tua anima.*
 >
 > *"Hai impugnato il martello del tempo. Hai riforgiato il destino. La gemma è consumata, poiché un tale potere non è fatto per essere brandito alla leggera o due volte. Ma la sua eco, la sua luce, ora vive in te e in questa corona. Sei diventato più di un re, più di un eroe. Sei la Memoria Vivente della Pietra, il **Forgemind**. Va', e guida la mia gente. La tua leggenda è stata temprata."*
 >

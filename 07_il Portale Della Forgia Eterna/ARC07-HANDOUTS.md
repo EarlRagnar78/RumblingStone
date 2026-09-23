@@ -57,7 +57,7 @@
 > **Quando darlo**: quando la Corona mostra la **sovrapposizione temporale**
 > (P2 r.982-1007 / P5). Carta d'atmosfera, **senza meccaniche**.
 
-> *Per un istante vedi due immagini sovrapporsi come acqua su acqua: un drago
+> *Per un istante due immagini si sovrappongono come acqua su acqua: un drago
 > nero che taglia il cielo di una Hammerfist giovane e nera… e lo stesso volo,
 > lo stesso odio, sopra le mura della Hammerfist di oggi. Due draghi. Un solo
 > sangue. La Forgia sussurra: «Ciò che accade là, accade qui.»*

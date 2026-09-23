@@ -5,7 +5,7 @@
 > professionale usa da decenni: **tipologia d'errore con severità pesata,
 > soglia dichiarata prima, campionamento, accordo fra valutatori**.
 >
-> **Stato**: 🟡 **in corso** (2026-09-19 · F1.4 + F2.1 + F2.2 + F2.5 chiusi il 2026-09-21) · **Decisore**: DM
+> **Stato**: 🟡 **in corso** (2026-09-19 · F1.1 + F1.2 + F1.3 + F1.4 + F2.1 + F2.2 + F2.5 + F2.6 + F3.1 + F3.2 chiusi il 2026-09-21) · **Decisore**: DM
 > **Gate del piano**: `python3 scripts/punteggio_mqm.py --soglia` esce 0 su
 > tutti i master DEF, e il κ misurato fra i due campioni è ≥ 0,6
 
@@ -199,11 +199,108 @@ box sotto 40. Entra come **minore**, e solo quando il box è fuori dalla fascia
 
 | | Lotto | Cosa produce | Come si verifica |
 |---|---|---|---|
-| ⬜ | **F1.1** Mappare le 44 norme del registro su tipologia × severità | una colonna nuova in `REGISTRO-NORME-EDITORIALI.md` | `validate_norme_editoriali.py` estende il controllo: ogni norma ha una severità o una ragione scritta per non averla |
-| ⬜ | **F1.2** Separare rilevabile da giudizio | quante delle 44 hanno uno strumento (oggi 15 piene + 8 parziali) e quante no | conteggio, nel registro |
-| ⬜ | **F1.3** Potere discriminante di ogni congegno | tabella: per ciascuno, quanti documenti separa | 🔴 un congegno che **non separa mai** due documenti è rumore e si toglie — è il controllo *non-discriminating* della skill-creator |
+| ✅ | **F1.1** Mappare le norme del registro su tipologia × severità | una colonna nuova in `REGISTRO-NORME-EDITORIALI.md` | `validate_norme_editoriali.py` estende il controllo: ogni norma ha una severità o una ragione scritta per non averla |
+| ✅ | **F1.2** Separare rilevabile da giudizio | quante hanno uno strumento e quante no — **derivato, non scritto** | conteggio nel registro, e un gate che lo confronta con le righe vere |
+| ✅ | **F1.3** Potere discriminante di ogni congegno | `misura_craft --discriminante`: per ciascuno, quante coppie di bersagli separa | 🔴 un congegno che **non separa mai** due documenti è rumore e si toglie — è il controllo *non-discriminating* della skill-creator |
+
+> ### 🔎 Cosa hanno trovato F1.1-F1.3, il 2026-09-21
+>
+> **Le norme non erano 44 e non erano 34: sono 39**, e i tre numeri diversi
+> che circolavano erano tutti scritti a mano. Il piano diceva 44, il registro
+> ne dichiarava *«16+9+12+3»* (cioè 40) in tabella e *«undici su
+> trentaquattro»* nel paragrafo sotto, e il riepilogo del cancello ne stampava
+> **47** perché contava le **emoji in tutto il file**, prosa compresa. Dal
+> lotto F1.2 il conto lo deriva `validate_norme_editoriali.py` dalle righe, e
+> un numero scritto a mano che non combacia fa rossa la CI.
+>
+> **F1.1 — la severità, e una tabella incrociata che le due colonne separate
+> non potevano dare.** Delle 39 norme: **1 critica**, 15 maggiori, 20 minori,
+> 3 senza peso con la ragione accanto. Incrociando severità e copertura:
+>
+> * **l'unico critico è l'unico completamente scoperto.** `EL ≤ APL+4` è la
+>   norma più cara del registro ed è 🔴, perché il suo controllo esiste ma non
+>   ha superficie. La severità più alta e la copertura più bassa cadono sulla
+>   stessa riga;
+> * le **maggiori** stanno meglio delle minori — 9 su 15 misurate contro 9 su
+>   20 — e non per caso: una norma prescrittiva ha una forma, e una forma si
+>   cerca;
+> * 🔴 **ma il punteggio di ADR-0059 pesa il bordo, non il centro**: delle
+>   quattro norme che ci entrano, **tre sono minori**. Il punteggio di oggi è
+>   quasi tutto penalità da 1 punto, e questo spiega perché la classe `arco`
+>   ha P10, P25, P50 e P75 tutti a **100,00** — non è che i documenti siano
+>   perfetti, è che quel che li separerebbe non è pesato.
+>
+> ⚠️ **Un candidato al critico non promosso, e perché.** *«Ogni fatto
+> raggiungibile da ≥2 nodi diversi»* è la causa documentata di un caso che
+> muore in un vicolo cieco, quindi somiglia molto a un critico. È rimasta
+> **maggiore** perché **nessuno la misura**, e un pass/fail assoluto appeso a
+> un rilevatore inesistente è un pass/fail su niente.
+>
+> **F1.3 — la previsione del piano non ha retto, ed è un esito.** Il lotto era
+> aperto sull'ipotesi che qualche congegno fosse rumore da togliere. Misurato:
+> **zero congegni su 23 non separano nessuna coppia**; il più debole — «ADR
+> interni al documento» — ne separa **11 su 66**, e le separa tutte perché un
+> solo bersaglio su dodici ce l'ha. La tabella di `misura_craft` non ha righe
+> da buttare.
+>
+> 🔎 **E la misura ha avuto bisogno di due colonne, non una.** Il conteggio
+> grezzo separa anche solo perché ARC-08 ha 6.096 righe e DEF-5 ne ha 516:
+> qualunque congegno frequente li distingue, per la ragione sbagliata. La
+> densità per 1.000 righe toglie la taglia di mezzo, ed è la colonna su cui si
+> decide. Un congegno costante in densità — presente ovunque nella stessa
+> misura — è informativo quanto uno assente ovunque, cioè per niente: i test
+> provano proprio questo caso, che è il meno ovvio dei due.
 | ✅ | **F1.4** Distribuzione attuale per classe | P10/P25/P50/P75 del punteggio su tutto il repo | è l'input delle soglie di §4: **prima si misura, poi si sceglie** |
-| ⬜ | **F1.5** Estrarre i due campioni | campione **A** (DM) e campione **B** (secondo modello), disgiunti | vedi §5 |
+| ✅ | **F1.5** Estrarre i due campioni | `campioni_kappa.py --estrai` → **20 + 20, disgiunti** (sovrapposizione 0), stratificati per classe con almeno un documento per classe, **seme fisso 20260921** | `campaign/misure/campioni-kappa.json` |
+
+> ### 🔴 F3.3 — il κ è **0,0**, e non perché i giudici siano in disaccordo
+>
+> Il campione **B** è stato giudicato il 2026-09-21 (giudice: il modello di
+> questa sessione, **bias dichiarato**: ha scritto metà dei rilevatori, quindi
+> il suo κ è un **limite superiore ottimistico**). Il risultato:
+>
+> ```
+> n=20   Po=0,95   Pe=0,95   κ = 0,0   («lieve», sotto la soglia 0,60)
+> ```
+>
+> **I due giudici concordano nel 95% dei casi — e concorderebbero nel 95% dei
+> casi tirando i dadi.** L'accordo osservato è identico a quello atteso per
+> caso, quindi porta **zero informazione**. È esattamente il difetto che il κ
+> esiste per rendere visibile, e che la percentuale grezza avrebbe nascosto:
+> «95% d'accordo» sarebbe sembrato un ottimo risultato.
+>
+> **La causa non è il giudice: è la soglia.** La macchina ha promosso **20 su
+> 20**. Il documento che il giudice ha bocciato —
+> `06_…/CoronaDiAdamantio/maps.md`, una griglia ASCII disallineata con la
+> legenda in inglese (*Wall*, *Throne*, *Hidden Portal*) e senza intestazione —
+> prende **100,0**. Non perché sia buono: perché **nessuna delle 12 norme
+> pesate lo tocca**. Non ha box read-aloud, quindi non ha difetti nei box; non
+> ha prosa, quindi non ha calchi. Un documento che non contiene niente di
+> misurabile è, per questa metrica, perfetto.
+>
+> #### Cosa ne consegue, in ordine
+>
+> 1. 🔴 **La metrica NON è validata**, e lo dice la regola che il piano si è
+>    dato: sotto κ 0,60 si dichiara non affidabile. `punteggio_mqm --soglia`
+>    resta in CI come **cancello d'osservazione** — utile a prendere una
+>    regressione — ma il suo verde **non è un giudizio di qualità**.
+> 2. ⚠️ **Il campione A, oggi, darebbe κ ≈ 0 qualunque cosa voti il DM.** Se
+>    la macchina promuove tutto, nessun insieme di voti può produrre accordo
+>    informativo. Chiedere al DM le sue venti valutazioni *adesso* gli
+>    costerebbe tempo per un numero già noto.
+> 3. ✅ **Ma la scheda A resta utile per un'altra domanda**, e vale la pena
+>    dirla: non «la metrica è affidabile?» ma **«cosa deve imparare a vedere?»**.
+>    I documenti che il DM boccia e la macchina promuove sono l'elenco esatto
+>    delle norme che mancano al punteggio.
+> 4. 🔵 **Il passo che sblocca il κ non è un giudice migliore: è una norma che
+>    morda su un documento vuoto.** Il candidato naturale è il controllo di
+>    conformità 3.5/PF1e, che sarebbe il primo `critico` della catena — oggi il
+>    pass/fail è cablato e non scatta mai.
+>
+> 🔎 **E questo lotto ha fatto il suo mestiere.** F3.3 era scritto come *«κ ≥
+> 0,6 o la metrica si dichiara non affidabile»*: il criterio è stato applicato
+> alla lettera e la risposta è no. Un lotto di validazione che non può dire di
+> no non è una validazione.
 
 ## FASE 2 — Sviluppo
 
@@ -211,6 +308,10 @@ box sotto 40. Entra come **minore**, e solo quando il box è fuori dalla fascia
 |---|---|---|
 | ✅ | **F2.1** `scripts/punteggio_mqm.py` | legge il registro, applica severità e pesi, stampa punteggio + dettaglio errori per documento; `--json` per la CI |
 | ✅ | **F2.2** `specifiche-qualita.yaml` | le soglie per classe, **fuori dal codice**: è una decisione di prodotto e deve poterla cambiare il DM senza toccare Python |
+| ✅ | **F2.7** *(nuovo, ordine DM 2026-09-21)* **Richiamare i rilevatori che esistono e nessuno chiamava** | da **4 norme pesate a 11**, e da **1 maggiore a 3**. Nessun rilevatore nuovo: `validate_prosa` misurava sei di quelle norme da settembre, e mancava il **nome** — `controlla()` restituiva stringhe già formattate. Ora `rilievi()` emette record `(chiave, messaggio)` e `controlla()` ne è la proiezione, **identica byte per byte** su tutto il repo |
+| ✅ | **F2.8** *(nuovo, ordine DM 2026-09-21)* **I due rilevatori che mancavano davvero** | `--metrature` (ADR-0014 §2, **28 box su 477**, 1 falso positivo su 28 contato a mano) **entra nel punteggio**; `--costrutto-italiano` (`italiano-nativo.md` §8, **281 su 477**) **misura e non pesa**, perché la dislocazione a sinistra è rilevata a metà e una norma positiva rilevata a metà produce penalità false |
+| ✅ | **F2.9** *(nuovo, ordine DM 2026-09-21)* **La superficie delle norme scoperte** | `superficie_norme.py` + [ADR-0062](adr/ADR-0062-una-norma-senza-superficie-lo-dichiara.md): per ognuna delle **9** norme che nessuno misura, **manca il codice o manca il dato?** Misurato: per **otto su nove non manca il codice**. Quattro stati — superficie vuota (2) · convenzione assente (4) · oggetto assente (1) · fuori dominio (2) — e un gate in CI che boccia una riga che ha smesso di dire il vero |
+| ✅ | **F3.4** Stabilità | ✅ **misurata, non dichiarata**: `test_tutti_i_rilevatori.py` esegue **ogni** rilevatore due volte e il punteggio di un documento **tre**, su un campione deterministico — **460 sotto-prove**. Più le due proprietà che nessuno verifica mai: nessun rilevatore restituisce un `set` (l'ordine di iterazione non è garantito, e romperebbe ogni confronto prima/dopo) e **nessuno tocca il disco mentre misura**, provato con un'impronta SHA-256 prima e dopo |
 | ⬜ | **F2.3** Il rilevatore della regola Paizo | la norma di §1.5, con l'esenzione «visione d'artefatto» dichiarata nel registro |
 | ⬜ | **F2.4** Gulpease come guard rail | `--leggibilita`, severità minore, esente sopra 100 |
 | ✅ | **F2.5** `ADR-0059` | la decisione: *il punteggio di qualità è MQM adattato, e la soglia nasce dal repo*. Numero **ancora libero e riservato a questo piano**: nel frattempo sono stati scritti ADR-0060 e ADR-0061, che hanno saltato il 0059 apposta |
@@ -222,8 +323,7 @@ box sotto 40. Entra come **minore**, e solo quando il box è fuori dalla fascia
 |---|---|---|
 | ✅ | **F3.1** Il cancello morde, per ogni severità | un critico iniettato → **rosso anche con punteggio alto**; un maggiore iniettato → punteggio scende di 5 volte un minore; rimosso → verde |
 | ✅ | **F3.2** Nessun documento buono bocciato | alla soglia iniziale, **zero** master DEF in rosso. Se ne cade uno, la soglia è sbagliata, non il documento |
-| ⬜ | **F3.3** κ sui due campioni | **κ ≥ 0,6** o la metrica si dichiara non affidabile e **non entra in CI**. Sotto 0,6 è rumore del giudice, non segnale |
-| ⬜ | **F3.4** Stabilità | tre esecuzioni sullo stesso commit danno lo stesso punteggio (le regex sì per costruzione; il giudizio LLM va misurato) |
+| 🟡 | **F3.3** κ sui due campioni | **ESEGUITO sul campione B il 2026-09-21: κ = 0,0.** La metrica **si dichiara non affidabile**, come la regola prescrive. ⚠️ La causa non è il giudice — Po e Pe sono **entrambi 0,95** — ma la soglia, che promuove 20 su 20. Il campione **A resta da votare**, e il suo valore oggi non è il κ ma **l'elenco di cosa la metrica non vede**: `campioni_kappa.py --scheda A` |
 | ⬜ | **F3.5** Non-regressione | `misura_craft` continua a girare: il punteggio **affianca**, non sostituisce |
 
 ---

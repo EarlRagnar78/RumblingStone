@@ -1350,6 +1350,48 @@
       "deterministic": true
     },
     {
+      "name": "conformita_statblocchi",
+      "description": "«Questo statblocco è coerente con le sue caratteristiche, o c'è un numero che non torna col SRD?»\n\nVerifica le identità SRD 3.5 di ogni statblocco — pf nella fascia legale dei dadi vita, TS dalle progressioni di classe e di tipo coi talenti che li spostano, BAB, lotta, attacco, iniziativa, e la variante Advanced PF1e scritta in prosa (pf +2/DV, CA +4, GS +1) — leggendo la provenienza delle caratteristiche (copiate, trascritte, a mano, generate). Per ogni scarto prova se un template semplice PF1e (Advanced, Giant) lo spiega, lo confronta con la fonte PCGen/SRD, e legge le decisioni aperte al DM dal piano. Con --correggi-pf-dado riscrive i `pf-dado` che portano il danno di un'arma o una parte sola dei dadi, ricostruendoli dalla formula scritta o dalle classi del tipo; --check è il cancello.",
+      "use_case": "«Questo statblocco è coerente con le sue caratteristiche, o c'è un numero che non torna col SRD?»",
+      "invocation": "python3 scripts/conformita_statblocchi.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "riepilogo": {
+            "type": "boolean",
+            "description": "Solo i conti."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Rapporto in JSON."
+          },
+          "proponi-pf-dado": {
+            "type": "boolean",
+            "description": "Stampa le correzioni di `pf-dado` senza scrivere."
+          },
+          "correggi-pf-dado": {
+            "type": "boolean",
+            "description": "Riscrive i `pf-dado` che non registrano i dadi vita (idempotente)."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Gate: ogni `pf-dado` registra i dadi vita e ogni correzione è riproducibile."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "Bestiario/{mostri,villain,png}/**/*-cr*.md",
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "un `pf-dado` non registra i dadi vita, o una correzione non è riproducibile (--check)"
+      },
+      "deterministic": true
+    },
+    {
       "name": "derive_statblocks",
       "description": "«Questa scheda descrive il mostro a parole ma non dice CA e pf: quali sarebbero, secondo le tabelle?»\n\nPROPONE i valori CA/pf/TS che la prosa di una scheda non dice, derivandoli dalle tabelle: SRD 3.5 come fonte primaria (tipo di creatura, progressioni dei TS, matrici elite/standard, taglia, armature) e la tabella per GS di Pathfinder 1e come sola GUARDIA, che ANNOTA la proposta quando e' fuori bersaglio invece di sopprimerla. ADR-0033. Scrive un campo solo, con --apply-ts: i TIRI SALVEZZA, e solo dove GS, CA e pf li ha gia' scritti il DM — la base dei TS e' esatta dalle tabelle e l'unica incertezza e' il modificatore di caratteristica, che viene dalla matrice dichiarata. CA e pf non si scrivono mai: dipendono da equipaggiamento e Costituzione, che da una scheda in prosa non si leggono.",
       "use_case": "«Questa scheda descrive il mostro a parole ma non dice CA e pf: quali sarebbero, secondo le tabelle?»",
@@ -1418,6 +1460,44 @@
         "0": "ok",
         "1": "--check ha trovato blocchi rotti o GS incoerenti",
         "2": "uso errato o scheda inesistente"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "genera_attributi",
+      "description": "«Questo statblocco non ha For/Des/Cos: come verifico pf, TS e attacco senza inventarle?»\n\nScrive la riga `attributi` degli statblocchi che non ce l'hanno, in cinque strati: copia la sestina che la scheda stessa scrive nella prosa (39 file, inglese o italiano), trascrive quella della fonte citata in Bestiario/pregen-pcgen/ (37), legge la Des da ca-dettaglio, ricava Des dalla CA di contatto, Cos da pf e pf-dado e For da BAB e lotta, e solo per il resto (18) sceglie dagli array elite/standard del Manuale del DM (dmcore.tabelle) con taglia e razza SRD e ±1 a somma zero a seme fisso. Ogni blocco porta [INFERRED] con provenienza e divergenze. --taratura misura lo strato scelto in campione (1,63) e fuori campione (1,84).",
+      "use_case": "«Questo statblocco non ha For/Des/Cos: come verifico pf, TS e attacco senza inventarle?»",
+      "invocation": "python3 scripts/genera_attributi.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "scrivi": {
+            "type": "boolean",
+            "description": "Applica ai file (idempotente: un file gia' generato non si riscrive)."
+          },
+          "rigenera": {
+            "type": "boolean",
+            "description": "Riscrive i soli blocchi marcati da questo script, mai quelli scritti a mano."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Gate: esce 1 se un blocco generato non torna con la regola, esce dai limiti o e' duplicato."
+          },
+          "taratura": {
+            "type": "boolean",
+            "description": "Errore dello strato 3 contro le fonti trascrivibili (in-campione)."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "Bestiario/{mostri,villain,png}/**/*-cr*.md",
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "blocco generato non riproducibile, fuori limiti o duplicato (--check)"
       },
       "deterministic": true
     },
@@ -1760,6 +1840,41 @@
       "deterministic": true
     },
     {
+      "name": "campioni_kappa",
+      "description": "«Il punteggio dice 97,9: il DM sarebbe d'accordo?» Se non lo e', il numero misura il suo autore.\n\nEstrae i due campioni disgiunti (20+20, stratificati per classe, seme fisso) e calcola il kappa di Cohen fra il giudizio di un valutatore e quello della macchina. Sotto kappa 0,60 la metrica si dichiara NON affidabile e non entra in CI: e' la regola del piano, e il 2026-09-21 ha detto di no (kappa 0,0 con accordo osservato e atteso entrambi a 0,95).",
+      "use_case": "«Il punteggio dice 97,9: il DM sarebbe d'accordo?» Se non lo e', il numero misura il suo autore.",
+      "invocation": "python3 scripts/campioni_kappa.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "estrai": {
+            "type": "boolean",
+            "description": "F1.5: scrive i due campioni disgiunti a seme fisso."
+          },
+          "scheda": {
+            "type": "string",
+            "description": "Stampa la scheda da compilare per il campione A o B. Il punteggio della macchina NON e' mostrato, apposta.",
+            "enum": [
+              "A",
+              "B"
+            ]
+          },
+          "kappa": {
+            "type": "boolean",
+            "description": "F3.3: l'accordo fra i voti e la macchina, se i voti ci sono."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
+      },
+      "deterministic": true
+    },
+    {
       "name": "check_plans_discipline",
       "description": "«Ho toccato scripts/ o un ADR: ho lasciato la riga di tracciatura che la regola d'oro chiede?»\n\nGate ADR-0009: modifiche strutturali (scripts/, skills/, converters/, .github/, plans/adr/) senza riga in plans/CHANGELOG.md -> exit 1.",
       "use_case": "«Ho toccato scripts/ o un ADR: ho lasciato la riga di tracciatura che la regola d'oro chiede?»",
@@ -1982,6 +2097,18 @@
           "p1": {
             "type": "boolean",
             "description": "i read-aloud che presuppongono un'azione o un senso del giocatore (norma Dungeon/Paizo)"
+          },
+          "discriminante": {
+            "type": "boolean",
+            "description": "Quante coppie di bersagli ogni congegno separa, in conteggio grezzo e in densita' per 1.000 righe: un congegno che non ne separa nessuna non produce informazione (lotto F1.3 di PIANO-MISURA-EDITORIALE)."
+          },
+          "metrature": {
+            "type": "boolean",
+            "description": "I read-aloud che parlano da architetto (ADR-0014 §2): numero + unita' di spazio nella voce narrante. Cerca la FORMA, non il numero — «tre round» e' legittimo, «diametro 9 metri» no."
+          },
+          "costrutto-italiano": {
+            "type": "boolean",
+            "description": "I box senza un «c'e'» presentativo ne' una dislocazione a sinistra (italiano-nativo.md §8). INDIZIO che sovrastima: la dislocazione e' rilevata a meta', quindi questa norma NON pesa nel punteggio."
           }
         },
         "required": [],
@@ -2052,6 +2179,14 @@
           "json": {
             "type": "boolean",
             "description": "il rapporto in JSON"
+          },
+          "scrivi-baseline": {
+            "type": "boolean",
+            "description": "Fotografa i punteggi di oggi, documento per documento, in campaign/misure/baseline-punteggi.json. E' il pezzo che mancava ad ADR-0036: senza una linea di base il miglioramento si confronta a occhio."
+          },
+          "confronta": {
+            "type": "boolean",
+            "description": "Chi e' migliorato e chi e' peggiorato dalla baseline a oggi. Avvisa se le norme pesate sono cambiate: a metro diverso i punteggi non sono confrontabili."
           }
         },
         "required": [],
@@ -2064,6 +2199,33 @@
         "0": "rapporto stampato, o --soglia superata",
         "1": "--soglia: un documento sotto soglia o con un critico",
         "2": "manca pyyaml"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "superficie_norme",
+      "description": "«Undici norme sono marcate non-misurate: quante posso davvero chiudere scrivendo codice?» La risposta misurata e' una su nove.\n\nPer ogni norma editoriale che nessuno misura, dice se manca il CODICE o manca il DATO: superficie vuota (la convenzione esiste e ha zero occorrenze), convenzione assente (nessuno ha deciso come si marca), oggetto assente (il file non esiste) o fuori dominio (il fatto non sta nel testo). Deterministico e idempotente: solo conteggi di forme dichiarate su un insieme di file ordinato.",
+      "use_case": "«Undici norme sono marcate non-misurate: quante posso davvero chiudere scrivendo codice?» La risposta misurata e' una su nove.",
+      "invocation": "python3 scripts/superficie_norme.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "json": {
+            "type": "boolean",
+            "description": "Report in JSON, per la catena."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Esce 1 se una riga ha smesso di dire il vero. Una superficie VUOTA non boccia: e' un fatto, non un difetto."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
       },
       "deterministic": true
     },
@@ -2320,6 +2482,29 @@
       "exit_codes": {
         "0": "nessun rilievo (o rilievi non bloccanti)",
         "1": "rilievi con --strict"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "verifica_sezione6",
+      "description": "«La tabella dice che restano 27 ADR da indicizzare: e' ancora vero?» Nel caso vero era gia' zero, e nessuno l'aveva eseguito.\n\nEsegue davvero i comandi che le righe di STATO-E-ORDINE §6.2 citano, e boccia una riga che il comando smentisce. Distingue i CANCELLI (stampano un verdetto: un ✓ senza avvisi accanto a una riga ⬜ e' una bugia) dalle MISURE (stampano numeri: la riga deve dichiarare il numero atteso in <!-- attesa: N -->). Esegue testo scritto a mano, quindi forma rigida, allowlist di script e shell=False.",
+      "use_case": "«La tabella dice che restano 27 ADR da indicizzare: e' ancora vero?» Nel caso vero era gia' zero, e nessuno l'aveva eseguito.",
+      "invocation": "python3 scripts/verifica_sezione6.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Esce 1 se una riga di §6.2 non dice il vero. Senza, stampa la tabella con gli esiti."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
       },
       "deterministic": true
     },

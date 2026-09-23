@@ -10,6 +10,7 @@ ca-dettaglio: contatto 9, colto alla sprovvista 21 (-2 taglia, +1 Des, +13 natur
 pf: 150
 pf-dado: 12d8+96
 ts: Temp +16, Rifl +9, Vol +9
+attributi: For 28 Des 12 Cos 26 Int 11 Sag 13 Car 13
 velocita: 12 m, scalare 6 m
 iniziativa: +5
 sensi: scurovisione 18 m, fiuto, telepatia 30 m
@@ -22,6 +23,8 @@ voci:
   - Talenti: Fendere, Iniziativa Migliorata, Lottare Migliorato, Attacco Poderoso, Seguire Tracce
 fonte: SRD — letto dal file citato dalla scheda (`pregen-pcgen/00_cr10_…_SRD_Bebilith - D&D Wiki.htm`); la scheda diceva «CA da SRD» e il numero e' 22, non uno dei valori che si ricordano a memoria
 ```
+
+> [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 
 Huge outsider (chaotic, evil, extraplanar), 12d8+96. **hp 150**; **RD 10/bene**; scurovisione 18 m; **CA 22** (dal SRD). Init +5; Vel 12 m, scalare 6 m. TS Temp +16, Rifl +9, Vol +9. BAB +12 (Lotta +29); Lotta enorme.
 **Mischia** 2 morsi + zampe; **Squarciare Armatura** (rovina l'armatura del bersaglio), **Ferita** (morso sanguinante), *plane shift*, fiuto, telepatia 30 m. Talenti: Fendere, Iniziativa/Lottare Migliorato, Attacco Poderoso, Seguire Tracce.

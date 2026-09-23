@@ -6,11 +6,19 @@ gs: 5
 ca: 20
 ca-dettaglio: (+7 full plate, +2 heavy shield, +1 Dex)
 pf: 46
-pf-dado: 1d8
+pf-dado: 1d8+5d10+12
 ts: Temp +8, Rifl +2, Vol +2
+attributi: For 14 Des 12 Cos 14 Int 10 Sag 10 Car 8
 velocita: 20 ft (armored)
 iniziativa: +1
+attacchi:
+  - Mischia spada lunga perfetta +10/+5 (1d8+3/19-20)
+  - Distanza arco lungo +6 (1d8/×3)
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d8», una parte sola dei dadi vita. I dadi vengono dalla formula che la scheda scrive, il bonus è quello scritto nella formula.
+
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
 **Size/Type**: Medium humanoid (goblinoid) | **HD**: 1d8+5d10+12 (46 HP)
 **AC**: 20 (+7 full plate, +2 heavy shield, +1 Dex) | **Init**: +1 | **Speed**: 20 ft (armored)

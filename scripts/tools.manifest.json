@@ -1677,7 +1677,14 @@
         "git"
       ],
       "args": [],
-      "inputs": [],
+      "inputs": [
+        {
+          "path": "scripts/pf1e-statistiche-per-gs.yaml",
+          "kind": "yaml",
+          "required": true,
+          "schema": null
+        }
+      ],
       "outputs": [],
       "exit_codes": {},
       "determinism": {
@@ -3346,6 +3353,33 @@
           "required": false,
           "default": false,
           "desc": "i read-aloud che presuppongono un'azione o un senso del giocatore (norma Dungeon/Paizo)"
+        },
+        {
+          "name": "--discriminante",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "desc": "Quante coppie di bersagli ogni congegno separa, in conteggio grezzo e in densita' per 1.000 righe: un congegno che non ne separa nessuna non produce informazione (lotto F1.3 di PIANO-MISURA-EDITORIALE).",
+          "choices": null,
+          "repeatable": false
+        },
+        {
+          "name": "--metrature",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "desc": "I read-aloud che parlano da architetto (ADR-0014 §2): numero + unita' di spazio nella voce narrante. Cerca la FORMA, non il numero — «tre round» e' legittimo, «diametro 9 metri» no.",
+          "choices": null,
+          "repeatable": false
+        },
+        {
+          "name": "--costrutto-italiano",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "desc": "I box senza un «c'e'» presentativo ne' una dislocazione a sinistra (italiano-nativo.md §8). INDIZIO che sovrastima: la dislocazione e' rilevata a meta', quindi questa norma NON pesa nel punteggio.",
+          "choices": null,
+          "repeatable": false
         }
       ],
       "inputs": [
@@ -3595,6 +3629,24 @@
           "required": false,
           "default": false,
           "desc": "il rapporto in JSON"
+        },
+        {
+          "name": "--scrivi-baseline",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "desc": "Fotografa i punteggi di oggi, documento per documento, in campaign/misure/baseline-punteggi.json. E' il pezzo che mancava ad ADR-0036: senza una linea di base il miglioramento si confronta a occhio.",
+          "choices": null,
+          "repeatable": false
+        },
+        {
+          "name": "--confronta",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "desc": "Chi e' migliorato e chi e' peggiorato dalla baseline a oggi. Avvisa se le norme pesate sono cambiate: a metro diverso i punteggi non sono confrontabili.",
+          "choices": null,
+          "repeatable": false
         }
       ],
       "inputs": [
@@ -5045,6 +5097,12 @@
           "kind": "yaml",
           "required": true,
           "schema": null
+        },
+        {
+          "path": "scripts/pf1e-statistiche-per-gs.yaml",
+          "kind": "yaml",
+          "required": true,
+          "schema": null
         }
       ],
       "outputs": [
@@ -5535,6 +5593,207 @@
       ]
     },
     {
+      "id": "superficie_norme",
+      "path": "scripts/superficie_norme.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/superficie_norme.py",
+      "summary": "Per ogni norma editoriale che nessuno misura, dice se manca il CODICE o manca il DATO: superficie vuota (la convenzione esiste e ha zero occorrenze), convenzione assente (nessuno ha deciso come si marca), oggetto assente (il file non esiste) o fuori dominio (il fatto non sta nel testo). Deterministico e idempotente: solo conteggi di forme dichiarate su un insieme di file ordinato.",
+      "use_case": "«Undici norme sono marcate non-misurate: quante posso davvero chiudere scrivendo codice?» La risposta misurata e' una su nove.",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Report in JSON, per la catena."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se una riga ha smesso di dire il vero. Una superficie VUOTA non boccia: e' un fatto, non un difetto."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "skills/REGISTRO-NORME-EDITORIALI.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Sola lettura."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/validate_norme_editoriali.py",
+      "tests": [
+        "scripts/tests/test_help_di_ogni_tool.py",
+        "scripts/tests/test_norme_editoriali.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0056-una-norma-senza-misura-non-esiste.md"
+      ]
+    },
+    {
+      "id": "verifica_sezione6",
+      "path": "scripts/verifica_sezione6.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/verifica_sezione6.py",
+      "summary": "Esegue davvero i comandi che le righe di STATO-E-ORDINE §6.2 citano, e boccia una riga che il comando smentisce. Distingue i CANCELLI (stampano un verdetto: un ✓ senza avvisi accanto a una riga ⬜ e' una bugia) dalle MISURE (stampano numeri: la riga deve dichiarare il numero atteso in <!-- attesa: N -->). Esegue testo scritto a mano, quindi forma rigida, allowlist di script e shell=False.",
+      "use_case": "«La tabella dice che restano 27 ADR da indicizzare: e' ancora vero?» Nel caso vero era gia' zero, e nessuno l'aveva eseguito.",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se una riga di §6.2 non dice il vero. Senza, stampa la tabella con gli esiti."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "skills/REGISTRO-NORME-EDITORIALI.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Sola lettura."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/validate_norme_editoriali.py",
+      "tests": [
+        "scripts/tests/test_help_di_ogni_tool.py",
+        "scripts/tests/test_norme_editoriali.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0056-una-norma-senza-misura-non-esiste.md"
+      ]
+    },
+    {
+      "id": "campioni_kappa",
+      "path": "scripts/campioni_kappa.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/campioni_kappa.py",
+      "summary": "Estrae i due campioni disgiunti (20+20, stratificati per classe, seme fisso) e calcola il kappa di Cohen fra il giudizio di un valutatore e quello della macchina. Sotto kappa 0,60 la metrica si dichiara NON affidabile e non entra in CI: e' la regola del piano, e il 2026-09-21 ha detto di no (kappa 0,0 con accordo osservato e atteso entrambi a 0,95).",
+      "use_case": "«Il punteggio dice 97,9: il DM sarebbe d'accordo?» Se non lo e', il numero misura il suo autore.",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--estrai",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "F1.5: scrive i due campioni disgiunti a seme fisso."
+        },
+        {
+          "name": "--scheda",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": [
+            "A",
+            "B"
+          ],
+          "repeatable": false,
+          "desc": "Stampa la scheda da compilare per il campione A o B. Il punteggio della macchina NON e' mostrato, apposta."
+        },
+        {
+          "name": "--kappa",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "F3.3: l'accordo fra i voti e la macchina, se i voti ci sono."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "skills/REGISTRO-NORME-EDITORIALI.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Sola lettura."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/validate_norme_editoriali.py",
+      "tests": [
+        "scripts/tests/test_help_di_ogni_tool.py",
+        "scripts/tests/test_norme_editoriali.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0056-una-norma-senza-misura-non-esiste.md"
+      ]
+    },
+    {
       "id": "validate_prosa",
       "path": "scripts/validate_prosa.py",
       "category": "G-orchestration-governance",
@@ -5918,6 +6177,232 @@
         "network": false
       },
       "idempotent": true
+    },
+    {
+      "id": "genera_attributi",
+      "path": "scripts/genera_attributi.py",
+      "category": "E-bestiary-catalog",
+      "language": "python",
+      "invocation": "python3 scripts/genera_attributi.py",
+      "summary": "Scrive la riga `attributi` degli statblocchi che non ce l'hanno, in cinque strati: copia la sestina che la scheda stessa scrive nella prosa (39 file, inglese o italiano), trascrive quella della fonte citata in Bestiario/pregen-pcgen/ (37), legge la Des da ca-dettaglio, ricava Des dalla CA di contatto, Cos da pf e pf-dado e For da BAB e lotta, e solo per il resto (18) sceglie dagli array elite/standard del Manuale del DM (dmcore.tabelle) con taglia e razza SRD e ±1 a somma zero a seme fisso. Ogni blocco porta [INFERRED] con provenienza e divergenze. --taratura misura lo strato scelto in campione (1,63) e fuori campione (1,84).",
+      "use_case": "«Questo statblocco non ha For/Des/Cos: come verifico pf, TS e attacco senza inventarle?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--scrivi",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Applica ai file (idempotente: un file gia' generato non si riscrive)."
+        },
+        {
+          "name": "--rigenera",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Riscrive i soli blocchi marcati da questo script, mai quelli scritti a mano."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Gate: esce 1 se un blocco generato non torna con la regola, esce dai limiti o e' duplicato."
+        },
+        {
+          "name": "--taratura",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Errore dello strato 3 contro le fonti trascrivibili (in-campione)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "Bestiario/{mostri,villain,png}/**/*-cr*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "Bestiario/pregen-pcgen/**",
+          "kind": "text",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "Bestiario/{mostri,villain,png}/**/*-cr*.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "stdout",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "blocco generato non riproducibile, fuori limiti o duplicato (--check)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "il seme del caso e' il nome del file, non l'orologio"
+      },
+      "side_effects": {
+        "writes_canon": true,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/genera_attributi.py --help",
+      "tests": [
+        "scripts/tests/test_genera_attributi.py"
+      ],
+      "docs": [
+        "plans/RICERCA-CONFORMITA-MECCANICA-STATBLOCCHI.md",
+        "plans/adr/ADR-0064-gli-attributi-si-scrivono-nel-bestiario.md",
+        "plans/adr/ADR-0065-la-conformita-si-corregge-dove-il-dato-non-e-una-scelta.md"
+      ]
+    },
+    {
+      "id": "conformita_statblocchi",
+      "path": "scripts/conformita_statblocchi.py",
+      "category": "E-bestiary-catalog",
+      "language": "python",
+      "invocation": "python3 scripts/conformita_statblocchi.py",
+      "summary": "Verifica le identità SRD 3.5 di ogni statblocco — pf nella fascia legale dei dadi vita, TS dalle progressioni di classe e di tipo coi talenti che li spostano, BAB, lotta, attacco, iniziativa, e la variante Advanced PF1e scritta in prosa (pf +2/DV, CA +4, GS +1) — leggendo la provenienza delle caratteristiche (copiate, trascritte, a mano, generate). Per ogni scarto prova se un template semplice PF1e (Advanced, Giant) lo spiega, lo confronta con la fonte PCGen/SRD, e legge le decisioni aperte al DM dal piano. Con --correggi-pf-dado riscrive i `pf-dado` che portano il danno di un'arma o una parte sola dei dadi, ricostruendoli dalla formula scritta o dalle classi del tipo; --check è il cancello.",
+      "use_case": "«Questo statblocco è coerente con le sue caratteristiche, o c'è un numero che non torna col SRD?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--riepilogo",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Solo i conti."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Rapporto in JSON."
+        },
+        {
+          "name": "--proponi-pf-dado",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Stampa le correzioni di `pf-dado` senza scrivere."
+        },
+        {
+          "name": "--correggi-pf-dado",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Riscrive i `pf-dado` che non registrano i dadi vita (idempotente)."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Gate: ogni `pf-dado` registra i dadi vita e ogni correzione è riproducibile."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "Bestiario/{mostri,villain,png}/**/*-cr*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "Bestiario/pregen-pcgen/**",
+          "kind": "text",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": "plans/RICERCA-CONFORMITA-MECCANICA-STATBLOCCHI.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "Bestiario/{mostri,villain,png}/**/*-cr*.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "stdout",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "un `pf-dado` non registra i dadi vita, o una correzione non è riproducibile (--check)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": true,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/conformita_statblocchi.py --help",
+      "tests": [
+        "scripts/tests/test_conformita_statblocchi.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0065-la-conformita-si-corregge-dove-il-dato-non-e-una-scelta.md",
+        "plans/RICERCA-CONFORMITA-MECCANICA-STATBLOCCHI.md"
+      ]
     }
   ]
 }

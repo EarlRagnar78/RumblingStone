@@ -443,8 +443,8 @@ gravità: strisciate); linee di vista spezzate ogni 6-9 m (agguati facili);
 > triangoli, esagoni, cerchi concentrici — la geometria di una mente, non del
 > caso. E si MUOVONO: si inclinano verso di voi come girasoli verso un sole che
 > non c'è, e cantano. Non è metafora: ogni cristallo tiene una nota, e le
-> migliaia di note insieme formano un accordo così vasto che lo sentite nello
-> sterno prima che nelle orecchie. Al centro del giardino, alta come tre nani,
+> migliaia di note insieme formano un accordo così vasto che arriva allo
+> sterno prima che alle orecchie. Al centro del giardino, alta come tre nani,
 > una madre di luce: sfaccettature a migliaia, e dietro ognuna, un pensiero.*
 
 **Terreno (callout):** corridoio libero centrale (riga 06 della MAPPA T-3);
@@ -459,7 +459,7 @@ la zona si può **aggirare** da sud (+30 min).
 > esiste, si stende un oceano di roccia grigia — onde lente come pensieri di
 > montagna, creste che impiegano un'ora a rompersi, correnti di granito
 > liquido che scorrono senza suono. Toccarlo è come toccare il fianco di un
-> toro: cede, e sotto senti il muscolo. E là, sospeso a cinquanta metri sopra
+> toro: cede, e sotto c'è il muscolo. E là, sospeso a cinquanta metri sopra
 > le onde, RUOTA il Tempio: un cubo d'argento di cento metri di lato, perfetto
 > come un dado lanciato da un dio e mai atterrato. Aegis Fang, nella mano di
 > Thorik, vibra così forte che il braccio duole. Siete arrivati. Manca solo
@@ -1042,15 +1042,15 @@ gravità normale, con Terros dormiente all'altro capo della piattaforma.
 > troppo tempo. Non si muove. Non ha respiro. Occupa un terzo della
 > piattaforma. **Che fate?***
 
-> **Read-aloud (il risveglio del guardiano — LotR + Salvatore).** *All'inizio
-> lo scambiate per una formazione della caverna: una collina di roccia
+> **Read-aloud (il risveglio del guardiano — LotR + Salvatore).** *A prima
+> vista è una formazione della caverna: una collina di roccia
 > stratificata, ere sovrapposte come pagine di un libro di pietra. Poi la
-> collina RESPIRA. Una fenditura si apre lungo quella che credevate una parete
+> collina RESPIRA. Una fenditura si apre lungo quella che sembrava una parete
 > — è una palpebra. Due occhi di cristallo grezzo si accendono di una luce
 > minerale, fredda, priva di odio e priva di pietà, come lo sguarderebbe una
 > montagna. Non c'è collera: c'è PESO. Terros si erge, e ogni suo movimento è
-> il suono di una faglia che si assesta, un boato basso che sentite nei denti
-> prima che nelle orecchie. La gravità della sala si inclina verso di lui,
+> il suono di una faglia che si assesta, un boato basso che arriva ai denti
+> prima che alle orecchie. La gravità della sala si inclina verso di lui,
 > come se il piano stesso lo riconoscesse padrone. Aegis Fang, nella mano di
 > Thorik, tace di colpo: davanti all'Incudine del Mondo, anche una voce antica
 > abbassa il capo.*
@@ -1273,12 +1273,12 @@ R4+: alterna Earth Glide mordi-e-fuggi, Onda e Scudo. Sotto il
 > **Read-aloud — il primo scambio (coreografia, Salvatore).** *Terros non
 > carica: si LASCIA CADERE in avanti, e la camera intera cade con lui — l'Onda
 > Gravitazionale vi strappa l'Altare da sotto i piedi come una tovaglia. Thorik,
-> tu senti l'armatura diventare àncora e bandiera insieme: Aegis Fang morde il
-> bordo dell'Altare, il braccio urla, ma tieni. Tordek, il mondo ruota e tu
+> l'armatura è àncora e bandiera insieme: Aegis Fang morde il
+> bordo dell'Altare, il braccio urla, e il morso tiene. Tordek, il mondo ruota e tu
 > ruoti con lui — i Bracieri sussurrano una parola sola, «peso», e i tuoi piedi
 > trovano il muro come fosse pavimento. Artemis, tu sei l'unico per cui nulla è
-> cambiato: le Ali d'Ombra non obbediscono alla terra. Da lassù vedi tutto —
-> il boss, l'Altare, i tuoi compagni aggrappati al mondo capovolto. La sua
+> cambiato: le Ali d'Ombra non obbediscono alla terra. Da lassù restano sotto
+> di te il boss, l'Altare, i tuoi compagni aggrappati al mondo capovolto. La sua
 > testa di roccia si volta lenta verso di te, l'unico che non è caduto. Che
 > fate?*
 
@@ -2041,8 +2041,8 @@ futuro). *Lista completa degli 8 affreschi e del gancio → master #2.*
 
 ## §12 — RITORNO ALLA SALA (ponte al master #2)
 
-> **Read-aloud.** *Attraversate il portale a ritroso. La Sala della Forgia vi
-> accoglie con la sua luce dorata immutabile — ma qualcosa È mutato. L'affresco
+> **Read-aloud.** *Dall'altra parte del portale, la Sala della Forgia: la stessa
+> luce dorata immutabile — ma qualcosa È mutato. L'affresco
 > di Est si è chiuso come una porta; quello del Tempo brucia nitido; e nella
 > nebbia della parete di Nord-Ovest, la quarta figura ha ora un contorno. La
 > Corona di Thorik pesa di una gemma in più.*

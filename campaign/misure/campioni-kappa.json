@@ -1,0 +1,54 @@
+{
+  "seme": 20260921,
+  "per_campione": 20,
+  "A": {
+    "giudice": "il DM",
+    "file": [
+      "07_il Portale Della Forgia Eterna/PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md",
+      "08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md",
+      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2A-Torre-PARTE1-STATBLOCCHI.md",
+      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-BATTLE-STATS-e-VILLAIN-ICONICI-Parte2.md",
+      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO-Description.md",
+      "Bestiario/mostri/avversario-brawler-pugno-pesante-cr9.md",
+      "Bestiario/mostri/drow-assassina-lolth-cr10.md",
+      "Bestiario/mostri/ogre-micelio-sporeborn-cr8.md",
+      "Bestiario/mostri/razorfiend-blue-cr9.md",
+      "Bestiario/mostri/underdark-dovil-runecaster-cr7.md",
+      "Bestiario/png/Therysol/therysol-tiefling-mezzodrago-cr9.md",
+      "Bestiario/tokens/README.md",
+      "Bestiario/villain/Avatar_Tiamat/Avatar_Tiamat.md",
+      "Bestiario/villain/Generale_Grimjaw.md",
+      "Bestiario/villain/ozyrrandion-drago-verde-cr8.md",
+      "PG/Artefatti/Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/000_Guida_Dm_ogetto_prove_rituali_sfide.md",
+      "PG/Artefatti/Artefatti-Pg/Tordek/00_Cintura_della_Devastazione.md",
+      "STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/mappe/tarsilia-la-ruota-giocatori.md",
+      "STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/mappe/tarsilia-la-ruota.md",
+      "campaign/ai-media-prompts/06_ARC05_stanza-runica.md"
+    ]
+  },
+  "B": {
+    "giudice": "un secondo modello (bias dichiarato: ha scritto meta' dei rilevatori — il kappa di B e' un limite superiore ottimistico)",
+    "file": [
+      "06_Stanza-corona-di-adamantio/CoronaDiAdamantio/maps.md",
+      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md",
+      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-INCONTRI-VIAGGIO-CANNATH-VALE.md",
+      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1B-Foresta-In-Fiamme-MAPPA.md",
+      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-FASE1-ARRIVO-BLACKFENS.md",
+      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md",
+      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-MAPPE-COMPLETO.md",
+      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-OTTO-PORTE-e-ORBE.md",
+      "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md",
+      "10-stand-alone/L'abbazia Della Rotta Sicura/indice_maestro.md",
+      "Bestiario/mostri/goblin-worg-raider-ftr5-cr5.md",
+      "Bestiario/mostri/grimlock-ceremorfo-cr5.md",
+      "Bestiario/mostri/thug-sicario-ftr3-cr3.md",
+      "Bestiario/png/zhen-windwhisper-cr11.md",
+      "Bestiario/villain/Il_Collezionista_Rakshasa/il-collezionista-rakshasa-cr18.md",
+      "Bestiario/villain/abbathor-blackguard-cr9.md",
+      "Bestiario/villain/duergar-scala-di-ossa-cr11.md",
+      "PG/Artefatti/Artefatti-Pg/Tordek/05_Bracieri_Gemelli_Scheda_PG_Completa.md",
+      "STANDALONE-Il-Drappo-di-Tarsilia/PROMPT-PLAYTEST-BOOKLET-E-PLAYERGUIDE.md",
+      "campaign/KIT-ANTI-IMPROVVISAZIONE-VALLE.md"
+    ]
+  }
+}

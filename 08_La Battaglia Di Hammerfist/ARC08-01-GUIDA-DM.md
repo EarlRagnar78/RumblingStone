@@ -1910,7 +1910,7 @@ Superata l'imboscata, la colonna riprende la marcia verso nord: l'antica porta d
 ### 🕳️ **Il Cuore della Montagna**
 
 **Leggere:**
-> *"Attraverso un'antica porta di mithril ornata di rune che brillano di luce propria, entrate finalmente nel Cuore della Montagna. È una caverna naturale di bellezza mozzafiato: il soffitto si perde nell'oscurità sopra le vostre teste, mentre stalattiti di cristallo riflettono la luce delle torce in mille colori. Al centro si erge un altare di pietra nera dedicato a Moradin, circondato dalle statue di dieci re nanici con occhi di rubino che sembrano seguire ogni vostro movimento. Questo è il luogo più sacro di Hammerfist, dove riposano gli spiriti degli antenati."*
+> *"Attraverso un'antica porta di mithril ornata di rune che brillano di luce propria, si apre il Cuore della Montagna. È una caverna naturale di bellezza mozzafiato: il soffitto si perde nell'oscurità sopra le vostre teste, mentre stalattiti di cristallo riflettono la luce delle torce in mille colori. Al centro si erge un altare di pietra nera dedicato a Moradin, circondato dalle statue di dieci re nanici con occhi di rubino che sembrano seguire ogni vostro movimento. Questo è il luogo più sacro di Hammerfist, dove riposano gli spiriti degli antenati."*
 
 
 <div style="page-break-before:always"></div>
@@ -2455,7 +2455,7 @@ RESA DEI CONTI FINALE (Round 14-15)
 
 #### **INCONTRO 4A: I Presagi del Cielo**
 **Leggere:**
-> *"Dal nulla, il vento si alza con forza soprannaturale. Le nubi si rincorrono nel cielo formando spirali e vortici impossibili, mentre lampi di luce argentea illuminano l'oscurità crescente. Non è una tempesta naturale - c'è troppa intelligenza in quei movimenti, troppa precisione in quei fulmini che colpiscono esattamente dove si concentrano maggiormente i nemici. E poi lo sentite: una melodia, fiera e furiosa, che echeggia tra i tuoni come la voce degli dei in collera."*
+> *"Dal nulla, il vento si alza con forza soprannaturale. Le nubi si rincorrono nel cielo formando spirali e vortici impossibili, mentre lampi di luce argentea illuminano l'oscurità crescente. Non è una tempesta naturale - c'è troppa intelligenza in quei movimenti, troppa precisione in quei fulmini che colpiscono esattamente dove si concentrano maggiormente i nemici. E poi la melodia: fiera e furiosa, echeggia tra i tuoni come la voce degli dei in collera."*
 
 **Effetti Meteorologici:**
 - **Venti a 80 km/h:** CD 15 Equilibrio per rimanere in piedi

@@ -44,7 +44,7 @@
 
 **Narrazione Iniziale (Leggere Drammaticamente):**
 
-> *Attraversate il portale. E il mondo CAMBIA.*
+> *Oltre il portale, il mondo CAMBIA.*
 >
 > *Prima sensazione: CALORE. Non bruciatura - grazie Benedizioni Moradin - ma PRESENZA. Come essere avvolti in coperta appena uscita da forno. Opprimente. Onnipresente. Inevitabile.*
 >
@@ -52,9 +52,9 @@
 >
 > *Terza sensazione: SUONO. Crepitio costante come mille falò brucianti. Rombo distante lava in movimento. Esplosioni periodiche geyser fuoco. E... qualcos'altro. Canti? Voci? Creature elementali cantano in linguaggio incomprensibile - non Ignan che alcuni di voi conoscono, ma qualcosa PIÙ PRIMORDIALE.*
 >
-> *Guardate indietro: portale è ancora lì, cerchio dorato luminoso sospeso 2 metri sopra piattaforma roccia vetrificata nera. Via di fuga. Ma anche ricordo di casa che sembra infinitamente lontana ora.*
+> *Alle spalle: il portale è ancora lì, cerchio dorato luminoso sospeso 2 metri sopra piattaforma roccia vetrificata nera. Via di fuga. Ma anche ricordo di casa che sembra infinitamente lontana ora.*
 >
-> *Guardate avanti: paesaggio infernale.*
+> *Davanti: paesaggio infernale.*
 
 ---
 
@@ -64,7 +64,7 @@
 
 > *Siete su piattaforma circolare roccia basaltica vetrificata, diametro 9 metri (6 quadretti). Superficie è... liscia. Troppo liscia. Come se fusa e riformata migliaia volte. Nera come ossidiana ma con venature rosse incandescenti che pulsano debolmente.*
 >
-> *Temperature: ~120°F (49°C) ambiente. Mortali normali svengono in minuti. Voi, protetti da Benedizioni Moradin, sentite solo calore intenso ma sopportabile. Mantello Fiamma (Resist Fuoco 20) e Cuore Incrollabile (immunità calore non-letale) funzionano perfettamente.*
+> *Temperature: ~120°F (49°C) ambiente. Mortali normali svengono in minuti. Per voi, protetti da Benedizioni Moradin, il calore è intenso ma sopportabile. Mantello Fiamma (Resist Fuoco 20) e Cuore Incrollabile (immunità calore non-letale) funzionano perfettamente.*
 
 **Cielo (Se Può Chiamarsi Così):**
 
@@ -311,7 +311,7 @@ Thorik tiene Aegis Fang e ascia CANTA direzione Topazio del Tempo:
 
 **15 Minuti - Prima Pausa Visiva:**
 
-> *Vi fermate su piattaforma più ampia (12m diametro) per orientarvi. Guardate indietro: portale ora è puntino dorato lontanissimo. Guardate avanti: piramide rovesciata sembra... non più vicina. È illusione distanza, ma sconcertante.*
+> *Una piattaforma più ampia (12m diametro), buona per orientarsi. Alle spalle: il portale ora è puntino dorato lontanissimo. Davanti: la piramide rovesciata sembra... non più vicina. È illusione distanza, ma sconcertante.*
 >
 > *Aegis Fang canta incoraggiamento: "Persistenza, figlio. Montagne non scalano in secondi. Passo dopo passo."*
 >
@@ -321,15 +321,15 @@ Thorik tiene Aegis Fang e ascia CANTA direzione Topazio del Tempo:
 
 **45 Minuti - Metà Viaggio, Momento Riflessione:**
 
-> *Siete a metà campo lava solidificata. Fermate per riposo breve (5 minuti). Sedete su roccia tiepida (non bruciante grazie Benedizioni). Silenzio cade sul gruppo - tipo silenzio che viene quando realtà situazione colpisce.*
+> *Siete a metà campo lava solidificata. Riposo breve (5 minuti). La roccia è tiepida, non bruciante grazie Benedizioni. Silenzio cade sul gruppo - tipo silenzio che viene quando realtà situazione colpisce.*
 >
 > *Siete in ALTRO PIANO DI ESISTENZA. Non Underdark profondo. Non caverna remota. Letteralmente altro MONDO. Dimensione dove fisica funziona diverso. Dove elementali VIVONO, non visitano. Casa loro. Voi siete intrusi.*
 >
-> *Tordek, tu mediti brevemente. Senti... pace strana. Piano Fuoco è caotico, MA ha ordine proprio. Come fiume rapida - sembra caos, ma flusso acqua segue leggi natura. Comprensione monaco.*
+> *Tordek, una meditazione breve, e... pace strana. Piano Fuoco è caotico, MA ha ordine proprio. Come fiume rapida - sembra caos, ma flusso acqua segue leggi natura. Comprensione monaco.*
 >
-> *Artemis, Ring pulsa curiosamente. Voci Lathander/Mask sussurrano insieme: "Caos e Ordine qui danzano. Bello, no?" Sentì... ammirazione da entrambi dèi. Raro.*
+> *Artemis, Ring pulsa curiosamente. Voci Lathander/Mask sussurrano insieme: "Caos e Ordine qui danzano. Bello, no?" E arriva... ammirazione da entrambi dèi. Raro.*
 >
-> *Thorik, guardi piramide. Più vicina ora - distintamente visibile. Corona pulsa anticipazione. Aegis Fang: "Quasi là, portatore. Guardiano attende. Preparati per battaglia vita tua."*
+> *Thorik: la piramide è più vicina ora - distintamente visibile. Corona pulsa anticipazione. Aegis Fang: "Quasi là, portatore. Guardiano attende. Preparati per battaglia vita tua."*
 
 **Permettere Roleplay:** PG possono parlare, pianificare tattiche, condividere pensieri.
 
@@ -602,7 +602,7 @@ Elementali sono territoriali ma non malvagi. Attaccano intrusi per proteggere re
 >
 > *Aegis Fang canta: "Oltre fiume, cammino continua. Ma ponte... traditore. Attenzione massima."*
 >
-> *E mentre osservate ponte, qualcosa EMERGE da lava...*
+> *E mentre il ponte è ancora da attraversare, qualcosa EMERGE dalla lava...*
 
 ---
 

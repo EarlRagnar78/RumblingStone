@@ -8,8 +8,9 @@ tipo: Large dragon (air), 14 HD, LE
 ca: 26
 ca-dettaglio: touch 9, flat-footed 26
 pf: 139
-pf-dado: 1d8+6
+pf-dado: 14d12+56
 ts: Temp +13, Rifl +9, Vol +11
+attributi: For 19 Des 10 Cos 19 Int 14 Sag 15 Car 14
 velocita: 12 m, Volare 45 m (scarsa), nuota
 iniziativa: +0
 attacchi:
@@ -17,6 +18,10 @@ attacchi:
 voci:
   - Talenti: Attacco in Volata, Hover, Multiattacco (Migliorato), Armatura Naturale Migliorata
 ```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «1d8+6», il danno di un'arma, che resta in `attacchi`. I dadi vengono dalle classi del `tipo` coi dadi SRD e dai DV razziali dichiarati, il bonus da Cos 19.
+
+> [INFERRED — needs DM confirmation] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. Confermali o correggili.
 
 Large dragon (air), 14 HD, LE. **hp 139**; **AC 26**, touch 9, flat-footed 26. Init +0; Vel 12 m, Volare 45 m (scarsa), nuota. TS Temp +13, Rifl +9, Vol +11. BAB +14; Lotta +22.
 **Mischia** morso +17 (2d6+6); 2 artigli +15 (1d8+6); 2 ali +15 (1d6+6); coda +15 (1d8+10). **Soffio** cono di gas corrosivo (acido). Blindsense 18 m, scurovisione 36 m, sensi acuti, respira acqua, immunità acido. Talenti: Attacco in Volata, Hover, Multiattacco (Migliorato), Armatura Naturale Migliorata.

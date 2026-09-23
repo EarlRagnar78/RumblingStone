@@ -372,14 +372,14 @@ tornare — presagio della resurrezione, non garanzia.*
 
 ### A3 — «La Visione del Risveglio» (NORD-EST · personale Thorik)
 > **Read-aloud (Salvatore — la memoria che sanguina).** *Questo affresco mostra
-> eventi di poche ore fa. Thorik, sei TU. Ti vedi avvicinare esitante al trono
-> nella Stanza della Corona. Ti vedi toccare la Corona. Il flash di luce dorata,
+> eventi di poche ore fa. Thorik, sei TU. La figura dipinta si avvicina esitante
+> al trono nella Stanza della Corona, e tocca la Corona. Il flash di luce dorata,
 > la transizione — e poi il campo di battaglia dove hai combattuto fianco a
-> fianco con gli eroi che ti hanno preceduto. Uno lo riconosci: **THORGRIM
+> fianco con gli eroi che ti hanno preceduto. Uno di loro è **THORGRIM
 > BARBADIFERRO**, portatore della Corona otto secoli fa, il Frostcleaver in
-> pugno. Nel frastuono senza suono dell'affresco, leggi le sue labbra: «Portala
+> pugno. Nel frastuono senza suono dell'affresco le sue labbra dicono: «Portala
 > bene, fratello. Ora è tua.» E all'alba, quando la luce dorata inonda il campo,
-> ti vedi con la Corona FUSA alla fronte, diventata parte di te. L'affresco si
+> la Corona non è più posata: è FUSA alla fronte, parte di chi la porta. L'affresco si
 > ferma esattamente dove comincia il presente. Come se la Sala avesse aspettato
 > te per finire di dipingerlo.*
 - **Interazione (Thorik osserva 1 min, TS Volontà CD 17 — il fallimento è il
@@ -483,13 +483,13 @@ dipingendo con le loro scelte.
 
 **Procedura.** Thorik tocca A2 con la Corona; **tutti e 3 TS Volontà CD 18**;
 con **≥2 successi** la visione si apre per tutti.
-> **Read-aloud.** *L'affresco esplode di chiarezza per dieci secondi, e vedete
-> un futuro POSSIBILE, non promesso: Hammerfist salva, le bandiere naniche al
+> **Read-aloud.** *Per dieci secondi l'affresco esplode di chiarezza su un
+> futuro POSSIBILE, non promesso: Hammerfist salva, le bandiere naniche al
 > vento; voi quattro — **Hella viva** — davanti a Re Thorek; la mano di lei
 > nella mano di Thorik; Artemis con le ali d'ombra spiegate; Tordek in
 > meditazione, l'aura di ki visibile; e sotto il balcone, mille nani che
-> gridano: «Eroi! Salvatori!». Poi la visione svanisce. Ma la sensazione
-> resta, incisa più a fondo di qualsiasi affresco: QUESTO È POSSIBILE. Dipende
+> gridano: «Eroi! Salvatori!». Poi la visione svanisce, e quello che resta è
+> inciso più a fondo di qualsiasi affresco: QUESTO È POSSIBILE. Dipende
 > da voi.*
 - **Effetto — Speranza Rinnovata.** **+1 morale all'attacco per 1 ora**; e la
   determinazione del party ha un àncora (usala come DM se esitano: la Cronaca
@@ -523,8 +523,8 @@ dopo lettera, la **Cronaca dei Custodi** in rune naniche:
 
 > **Read-aloud (posando lo sguardo sull'incisione).** *Thorik, tu ricordi
 > questa parete coperta del sangue di Hella. Ora il sangue non c'è più: al suo
-> posto, la pietra si sta scolpendo da sola. Vedi la Corona incisa, due gemme
-> che ardono. E vedi lei — o l'ombra di lei — scavata nel granito il giorno in
+> posto, la pietra si sta scolpendo da sola. C'è la Corona incisa, due gemme
+> che ardono. E c'è lei — o l'ombra di lei — scavata nel granito il giorno in
 > cui è caduta. Ma l'ombra si sta chiudendo, come una ferita che rimargina dal
 > fondo. La montagna sta ricordando Hella viva prima ancora che lo sia.*
 
@@ -584,11 +584,11 @@ scena**: se dormono otto ore e il mondo ne conta quattro, **quattro ore devono
 stare da qualche parte**. Stanno nel sogno. Il tempo che la Forgia non spende
 fuori, lo spende **dentro di loro**.
 
-> **Read-aloud — l'addormentarsi (Salvatore + LotR).** *Vi stendete sul basalto
-> tiepido, e la Sala fa una cosa che nessuna locanda ha mai fatto: **si abbassa
+> **Read-aloud — l'addormentarsi (Salvatore + LotR).** *Il basalto è tiepido
+> sotto la schiena, e la Sala fa una cosa che nessuna locanda ha mai fatto: **si abbassa
 > di tono**. La luce dorata non si spegne — si ritira, come una brace coperta
-> per la notte. L'ultima cosa che sentite prima di andare giù è il rumore
-> minutissimo di uno scalpello che lavora molto lontano, dall'altra parte di
+> per la notte. L'ultima cosa prima di andare giù è un rumore
+> minutissimo: uno scalpello che lavora molto lontano, dall'altra parte di
 > una parete che non esiste.*
 >
 > *Poi dormite. E il sonno è lungo. Molto più lungo di una notte.*

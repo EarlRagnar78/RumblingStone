@@ -74,6 +74,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 
+from dmcore import caratteristiche as CAR  # noqa: E402
 from dmcore import incantesimi as INC  # noqa: E402
 from dmcore import tabelle as T  # noqa: E402
 from dmcore.progressione import ts_base_di  # noqa: E402
@@ -87,16 +88,26 @@ from dmcore.statblock import Statblocco, rendi  # noqa: E402
 # per cui sono dati e non rami del codice.
 #
 # Ogni ruolo dice tre cose e nient'altro:
-#   * l'ordine in cui la matrice élite/standard viene assegnata;
+#   * quale profilo di `dmcore.caratteristiche.PROFILI` ordina la matrice
+#     élite/standard;
 #   * l'arma e il modo di combattere;
 #   * se è un incantatore, e con che classe di norma.
+#
+# ⚖️ **La tabella dei ruoli è una sola** (D2 di `PIANO-QUALITA-DEL-CODICE`,
+# decisa dal DM il 2026-09-23: vince `genera_attributi`). Fino al lotto E6 ogni
+# ruolo qui aveva un suo ordine delle caratteristiche, e su sei ruoli quattro
+# non coincidevano con il profilo omonimo di `genera_attributi`: un tiratore
+# generato qui e un tiratore del Bestiario ricevevano la stessa matrice in un
+# ordine diverso. Ora il ruolo nomina il profilo, e l'ordine si legge da lì.
 
 
 @dataclass(frozen=True)
 class Ruolo:
     nome: str
-    #: L'ordine di assegnazione: for, des, cos, int, sag, car
-    priorita: tuple[str, ...]
+    #: La chiave del profilo in `dmcore.caratteristiche.PROFILI`, cercata per
+    #: nome esatto e non per sottostringa come fa `profilo_di`: un profilo tolto
+    #: o rinominato là è un `KeyError` al primo PNG, non un ordine di ripiego.
+    profilo: str
     arma: str
     dado_arma: str
     #: A distanza usa Destrezza per l'attacco.
@@ -110,30 +121,37 @@ class Ruolo:
     risolve_attacco: bool = True
     descrizione: str = ""
 
+    @property
+    def priorita(self) -> tuple[str, ...]:
+        """L'ordine di assegnazione, in minuscolo: for, des, cos, int, sag, car."""
+        return tuple(c.lower() for c in _PROFILI[self.profilo])
+
+
+_PROFILI = dict(CAR.PROFILI)
 
 RUOLI = {
     "bruto": Ruolo(
-        "bruto", ("for", "cos", "des", "sag", "car", "int"),
+        "bruto", "brute",
         "mazzafrusto pesante", "1d10", naturale=2,
         descrizione="regge la linea e la sfonda; poca finezza, molta stazza"),
     "schermagliatore": Ruolo(
-        "schermagliatore", ("des", "for", "cos", "sag", "car", "int"),
+        "schermagliatore", "skirmisher",
         "spada corta", "1d6",
         descrizione="colpisce e si sposta; vive finche' non lo si inchioda"),
     "tiratore": Ruolo(
-        "tiratore", ("des", "cos", "sag", "for", "car", "int"),
+        "tiratore", "ranged",
         "arco lungo", "1d8", distanza=True,
         descrizione="sta dietro e fa male; il problema e' raggiungerlo"),
     "comandante": Ruolo(
-        "comandante", ("car", "for", "cos", "sag", "des", "int"),
+        "comandante", "commander",
         "spada lunga", "1d8", naturale=1,
         descrizione="vale per quello che fa fare agli altri, non per i suoi danni"),
     "controllore": Ruolo(
-        "controllore", ("int", "des", "cos", "sag", "car", "for"),
+        "controllore", "arcane",
         "bastone ferrato", "1d6", classe_tipica="mago", risolve_attacco=False,
         descrizione="toglie ai PG le opzioni; il danno viene dopo"),
     "blaster": Ruolo(
-        "blaster", ("int", "cos", "des", "sag", "car", "for"),
+        "blaster", "blaster",
         "pugnale", "1d4", classe_tipica="mago", risolve_attacco=False,
         descrizione="danno d'area a distanza; fragile se lo si raggiunge"),
 }

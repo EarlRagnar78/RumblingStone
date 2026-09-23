@@ -154,3 +154,23 @@ passare il test.
   condivisa del toolkit e contiene le tabelle SRD e il blocco
   statistiche da cui questi moduli dipendono. Un secondo pacchetto dividerebbe
   in due la risposta a «dove sta questa funzione».
+
+## Emendamento — 2026-09-23: la tabella dei ruoli è una (D2)
+
+Il contesto contava due tabelle «ruolo → ordine delle caratteristiche»:
+`PROFILI`, che sceglie gli `attributi` dei blocchi del Bestiario, e i sei
+`Ruolo.priorita` di `genera_creatura`, che ordinavano la matrice dei PNG
+generati. Su sei ruoli ne coincidevano due. Il DM ha scelto la prima (D2 = a).
+
+**Cosa si decide.** Un ruolo di `genera_creatura` nomina un profilo di
+`dmcore.caratteristiche.PROFILI` e ne legge l'ordine per chiave esatta. Il ramo
+PNG di `genera_creatura` diventa così un generatore che importa la scelta, come
+il punto 1 già prevedeva; il ramo mostri non la usa.
+
+**Quello che si paga.** Cambiano i PNG che `genera_creatura` produce da qui in
+avanti, in quattro ruoli su sei: il tiratore e il blaster perdono un punto
+ferita per livello, il controllore e il blaster uno di Volontà. Nessun blocco
+già scritto nel Bestiario cambia, perché nessuno di loro è uscito da
+`genera_creatura`. Aggiungere un ruolo al generatore ora vuol dire scegliere un
+profilo esistente o aggiungerne uno a `PROFILI`, e un profilo nuovo là vale
+anche per le schede del Bestiario che ne contengono la parola.

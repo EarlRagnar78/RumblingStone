@@ -656,7 +656,7 @@ E4 verde e di nuovo rosso con un import della scelta aggiunto al verificatore.
 toglie. Il lotto non promette meno righe: promette una lettura e una scelta
 in un posto solo.
 
-#### ⬜ E6 · Una tabella dei ruoli *(bloccato su D2)*
+#### ✅ E6 · Una tabella dei ruoli *(chiuso 2026-09-23, D2 = a)*
 `[engine: Opus, sessione principale · effort: xhigh · qualità: il DM ha visto il diff dei blocchi prima del commit]`
 **Classe K se D2 cambia l'ordine di una delle due tabelle**, perché cambia gli
 `attributi` di blocchi del Bestiario. Si attua la risposta a D2 e:
@@ -667,6 +667,35 @@ in un posto solo.
 
 **Accettazione**: una tabella sola; `conformita --riepilogo` senza scarti nuovi;
 impronta rigenerata e motivata nel commit.
+
+✅ **Fatto, con D2 = (a)**: vince `genera_attributi`. `Ruolo.priorita` non è più
+un campo scritto a mano: ogni ruolo di `genera_creatura` nomina il suo profilo
+(bruto → `brute`, schermagliatore → `skirmisher`, tiratore → `ranged`,
+comandante → `commander`, controllore → `arcane`, blaster → `blaster`, la stessa
+corrispondenza della misura di §8.2) e l'ordine si legge da `PROFILI` per chiave
+esatta, non per sottostringa. `genera_creatura` importa `dmcore.caratteristiche`
+per la tabella; il resto del ramo PNG ci passa in E7.
+
+L'impronta cambia in **160 celle su 720**: tutte e sole quelle della forma `png`
+dei quattro ruoli che divergevano, 20 GS con e senza `--piu-cattivi`. Le sezioni
+`bestiario`, `derivazioni`, `apply_ts` e `gate` restano identiche, quindi nessun
+blocco del Bestiario cambia e `--riepilogo` non ha scarti nuovi. Il verdetto del
+collaudo PNG non cambia in nessuna cella. Con la matrice élite, prima
+dell'aumento ogni 4 livelli, al tavolo cambia questo:
+
+| Ruolo | Prima | Dopo | Cosa cambia nel blocco |
+|---|---|---|---|
+| schermagliatore | Des 15 For 14 Cos 13 Sag 12 Car 10 Int 8 | Des 15 For 14 Cos 13 Sag 12 Int 10 Car 8 | solo la riga delle caratteristiche |
+| controllore (mago) | Int 15 Des 14 Cos 13 Sag 12 Car 10 For 8 | Int 15 Des 14 Cos 13 Car 12 Sag 10 For 8 | Volontà −1 |
+| tiratore | Des 15 Cos 14 Sag 13 For 12 Car 10 Int 8 | Des 15 For 14 Cos 13 Sag 12 Int 10 Car 8 | **−1 pf per livello**, Tempra −1 |
+| blaster (mago) | Int 15 Cos 14 Des 13 Sag 12 Car 10 For 8 | Int 15 Des 14 Cos 13 Car 12 Sag 10 For 8 | **−1 pf per livello**, Tempra −1, Volontà −1; CA, iniziativa e Riflessi +1 |
+
+⚠️ Il costo vero è sui pf: un blaster mago di 9° passa da 40 a 31, un tiratore di
+5° da 37 a 32. Il collaudo li dava già per PNG che «non reggono un incontro da
+soli», e continua a darli così. La Forza in più del tiratore non entra in nessun
+numero, perché tira con l'arco.
+
+La fixture è rigenerata nel commit successivo a quello del codice, da sola.
 
 #### ⬜ E7 · Il ramo PNG di `genera_creatura` sulla libreria
 `[engine: Sonnet 5 · effort: alto · qualità: impronta identica sulla griglia dei mostri; sui PNG identica o motivata da E6]`
@@ -731,7 +760,7 @@ E tre regole di metodo, già provate in questo piano:
 | # | Ambito | Domanda |
 |---|---|---|
 | ~~D1~~ | E1 · E3 | ✅ **decisa dal DM il 2026-09-23: sì**, il verificatore condivide il lettore ([ADR-0066](adr/ADR-0066-le-creature-hanno-una-libreria-e-il-verificatore-non-importa-la-scelta.md)). **Il verificatore condivide il lettore?** Oggi lo fa già: importa 23 simboli da `genera_attributi`. **Sì** (consigliato): il lettore va in `dmcore/lettura_creatura.py` e lo usano tutti; l'indipendenza sta nelle regole e nella scelta, che il verificatore non importa mai (E4 lo prova). **No**: il verificatore tiene un lettore suo, copiato, più sicuro contro un errore di lettura condiviso e con una seconda copia da tenere allineata a mano |
-| D2 | E6 | **Quale tabella dei ruoli vince?** Dei 6 ruoli di `genera_creatura`, 4 ordinano le caratteristiche diversamente dal profilo corrispondente di `genera_attributi` (schermagliatore, tiratore, blaster, controllore). **(a)** vince `genera_attributi`: cambiano i PNG che `genera_creatura` genera d'ora in poi, nessun blocco del Bestiario; **(b)** vince `genera_creatura`: cambiano gli `attributi` di alcuni dei 15 blocchi scelti dall'array, che il DM vede prima; **(c)** si tengono separate e si dichiara perché |
+| ~~D2~~ | E6 | ✅ **decisa dal DM il 2026-09-23: (a)**, vince `genera_attributi`; attuata in E6. **Quale tabella dei ruoli vince?** Dei 6 ruoli di `genera_creatura`, 4 ordinano le caratteristiche diversamente dal profilo corrispondente di `genera_attributi` (schermagliatore, tiratore, blaster, controllore). **(a)** vince `genera_attributi`: cambiano i PNG che `genera_creatura` genera d'ora in poi, nessun blocco del Bestiario; **(b)** vince `genera_creatura`: cambiano gli `attributi` di alcuni dei 15 blocchi scelti dall'array, che il DM vede prima; **(c)** si tengono separate e si dichiara perché |
 | D3 | E9 | **`dm.py bestiario` si fa in questo lotto o dopo?** Costa poco e non dipende dalla libreria; farlo prima di E8 vuol dire toccare `dm.py` due volte se un'interfaccia cambia |
 
 ### §8.7 · Da dove si comincia, in una chat nuova

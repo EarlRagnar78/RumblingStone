@@ -736,6 +736,26 @@ E tre regole di metodo, già provate in questo piano:
 
 ### §8.7 · Da dove si comincia, in una chat nuova
 
+🔁 **Dopo la PR #158 (E0-E5) si riparte da qui, non dalla misura più sotto**,
+che è quella di prima del lotto e non torna più di proposito:
+
+```bash
+git fetch origin main && git log --oneline -1 origin/main                   # #158 mergiata
+wc -l scripts/{derive_statblocks,genera_attributi,genera_creatura,conformita_statblocchi}.py   # 2465
+wc -l scripts/dmcore/{progressione,lettura_creatura,caratteristiche}.py      # 113 · 634 · 494
+python3 scripts/impronta_creature.py --confronta                            # identica
+python3 -m pytest -q scripts/tests/ | tail -1                               # 1188 passed
+python3 scripts/decisioni_dm.py --check                                     # D2, D3 di QUALITA-CODICE aperte
+```
+
+Il prossimo passo è **D2** (il DM sceglie quale tabella dei ruoli vince), poi
+**E6**, che è l'unico sotto-lotto che **cambia l'impronta**: si rigenera in un
+commit suo, con le celle e il motivo. La misura di D2 è il passo 4 qui sotto, e
+funziona ancora (gli alias di `genera_attributi` restano fino a E8): 2 ruoli su
+6 coincidono, e i 4 che divergono sono schermagliatore, tiratore, controllore e
+blaster. ⚠️ Le mutazioni si provano con `PYTHONDONTWRITEBYTECODE=1` e la cache
+svuotata dopo il ripristino (E2).
+
 **Prima di tutto la misura.** Se un numero non torna con §8.2, qualcuno ha già
 lavorato: si rilegge questo piano prima di eseguirlo.
 

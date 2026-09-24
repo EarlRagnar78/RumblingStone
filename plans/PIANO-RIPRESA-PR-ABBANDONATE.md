@@ -2159,7 +2159,7 @@ doppi ridotti a uno: **tredici record in meno, zero creature in meno**.
 | **Nessuna perdita** | ogni riga tabellare delle sei sezioni coperte ha un record in `state.yaml`, contata nei **due sensi** |
 | **Non-regressione** | i **20 file** che toccano `state.md` — 737 test verdi, `dm.py doctor --ci`, `next_session`, `session_recap` |
 
-### 4.9 · Lotto **4e** — una sola via di scrittura `[4e-0 ✅ audit · 4e-1 ⬜ · 4e-2 ⬜ · 4e-3 ⬜]`
+### 4.9 · Lotto **4e** — una sola via di scrittura `[4e-0 ✅ audit · 4e-1 ✅ · 4e-2 ⬜ · 4e-3 ⬜]`
 
 > `[C costruzione · Opus 5, sessione principale (il piano diceva Sonnet 5) · alto ·
 > un test **sui file veri** (§4.4): i tredici villain di `campaign/state.yaml`
@@ -2261,6 +2261,33 @@ fra le 31 conoscenze senza tempo.
 | **i cancelli mordono** | `da` diverso dal valore di oggi, `png_id` inesistente, `stato` fuori enumerazione: nessuna scrittura, uscita non zero, e il motivo a video |
 | **una via sola** | front-matter più la stessa riga in prosa: una scrittura, non due |
 | **non-regressione** | pytest completo, `dm.py doctor --ci`, `check_plans_discipline`, `validate_docs --sorgenti` |
+
+#### 4.9.4 · Com'è andato 4e-1 (2026-09-24) — il delta come dato
+
+`scripts/dmcore/delta_sessione.py` legge il front-matter, lo valida contro
+`state.yaml` e lo trasforma in operazioni già risolte; `state_apply` le applica
+con lo stesso diff e la stessa conferma di prima. Con un front-matter, i
+trigger meccanici della regex si ignorano e **si stampano uno per uno**, perché
+una riga aggiunta a mano che il delta non ha deve restare visibile.
+
+**Due scelte prese durante il lotto**, perché il piano non le aveva viste:
+
+- **Il rituale non è un caso a parte.** Azarr Kul ha un `png_id` e un clock
+  `9/18` come gli altri: il delta lo muove con `clock`, e il riconoscimento
+  «è l'unico su diciotto» che la regex deve fare non serve più.
+- **Un log già applicato non è un errore.** Se il valore di oggi è già `a`, la
+  voce non produce niente; se non è né `da` né `a`, il log è stato scritto su un
+  altro stato e il delta intero si rifiuta. La via di oggi era idempotente, e
+  questa lo resta.
+
+| Prova | Esito |
+|---|---|
+| i tredici, su `state.yaml` vero | ✅ i 10 clock numerici si muovono e i 13 villain ricevono uno stato, ognuno sul suo indice |
+| sui file veri, end-to-end | ✅ `state.md`, `state.yaml`, `state-changelog.md` copiati: il delta scrive, la vista rigenerata coincide, il secondo giro non scrive, un `png_id` ignoto lascia i tre file **identici** con uscita 1 |
+| una via sola | ✅ un clock di Sonjak scritto solo in prosa **non** passa |
+| il recap non vede il delta | ✅ nessuna sezione pubblica contiene `png_id` |
+| 🔴 i cancelli mordono | ✅ **5 mutazioni su 5** rosse: regex non filtrata (1 test), niente tutto-o-niente (9), `da` del March Clock ignorato (1), niente idempotenza (2), `png_id` per somiglianza (16) |
+| non-regressione | ✅ **1.229** test, `dm.py doctor --ci`, `tools_manifest --check` |
 
 ## Come si misura che il piano è finito
 

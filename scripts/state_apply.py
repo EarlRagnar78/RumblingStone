@@ -10,6 +10,12 @@ Divisione dei ruoli (piano AUTOMAZIONE §3):
   - tutto il resto (prosa, tabelle villain, §1 party) resta proposta da
     applicare a mano: viene stampato, mai toccato.
 
+Da dove legge (lotto 4e): se il log comincia con un front-matter `delta:`
+(lo scrive il wizard), le quattro scritture meccaniche vengono SOLO da li', coi
+villain nominati per `png_id` (`dmcore/delta_sessione.py`). Senza front-matter
+si ricade sulla regex di `state_sync`, che conosce i nomi scritti nel suo
+sorgente e non gli altri.
+
 Cosa scrive, e dove:
   changelog       regione `auto:changelog` di `state-changelog.md` (append-only)
   march clock     `march_clock.giorno_corrente` in state.yaml — **D14**
@@ -52,6 +58,7 @@ from dmcore import REPO  # noqa: E402
 from dmcore import config as cfg  # noqa: E402
 from dmcore import gitio  # noqa: E402
 from dmcore.masters import per_master  # noqa: E402
+from dmcore import delta_sessione  # noqa: E402
 from dmcore.regions import RegionError, find_regions, replace_region, wrap  # noqa: E402
 from state_sync import extract_events, _suggest  # noqa: E402
 
@@ -293,7 +300,63 @@ def run(repo: Path, session_name: "str | None", check: bool, assume_yes: bool,
     manual: "list[tuple[str, str]]" = []
     session_label = f"sessione {ev['date']} ({ev['file']})"
 
-    for name, raw, groups in ev["hits"]:
+    # 🔵 Lotto 4e: se il log porta un front-matter coi delta, le scritture
+    # meccaniche vengono SOLO da li', per `png_id`. La regex resta per i log
+    # senza front-matter, e per quelli con il front-matter i suoi trigger
+    # meccanici si ignorano: le due vie insieme scriverebbero due volte.
+    hits = ev["hits"]
+    try:
+        delta = delta_sessione.estrai(spath.read_text(encoding="utf-8"))
+    except delta_sessione.DeltaError as exc:
+        print(f"[apply] ✗ {ev['file']}: {exc} — nessuna scrittura", file=sys.stderr)
+        return 1
+    if delta is not None:
+        if ydata is None:
+            print(f"[apply] ✗ il log porta un delta ma {STATE_YAML_REL} non "
+                  "esiste — nessuna scrittura", file=sys.stderr)
+            return 1
+        import yaml as _yaml  # pyyaml: debito dichiarato (ADR-0037)
+        try:
+            ops = delta_sessione.operazioni(delta, _yaml.safe_load(ydata))
+        except delta_sessione.DeltaError as exc:
+            print(f"[apply] ✗ delta di {ev['file']} non applicabile: {exc}\n"
+                  "        nessuna scrittura: un delta si applica tutto o "
+                  "niente", file=sys.stderr)
+            return 1
+        ignorati = [h for h in hits if h[0] in delta_sessione.MECCANICI]
+        hits = [h for h in hits if h[0] not in delta_sessione.MECCANICI]
+        print(f"[apply] front-matter: {len(ops)} scritture dal delta")
+        for _nome, raw, _g in ignorati:
+            # A video, non in silenzio: se il DM ha aggiunto a mano una riga
+            # che il delta non ha, deve vederla restare fuori.
+            print(f"[apply]   ignorata (la scrive solo il delta): {raw}")
+        for op in ops:
+            from dmcore.statedata import StateDataError, imposta_campo, imposta_campo_oggetto
+            try:
+                if op.indice is None:
+                    nuovo_yaml = imposta_campo_oggetto(ydata, op.sezione, op.campo, op.valore)
+                else:
+                    nuovo_yaml = imposta_campo(ydata, op.sezione, op.indice,
+                                               op.campo, op.valore)
+            except StateDataError as exc:
+                print(f"[apply] ✗ {op.etichetta}: {exc} — nessuna scrittura",
+                      file=sys.stderr)
+                return 1
+            print(f"\n[apply] proposta dal delta: {op.etichetta} (in {STATE_YAML_REL})")
+            print(_diff(ydata, nuovo_yaml, str(STATE_YAML_REL)))
+            if op.campo == "stato":
+                print("[apply] ⚠ `reversibile` NON viene scritto: se il canone "
+                      "prevede un ritorno lo dice il DM (regola R9).")
+            if _confirm("[apply] applico questo blocco?", assume_yes):
+                ydata = nuovo_yaml
+                applied.append(op.etichetta)
+            else:
+                # il trigger equivalente, solo per dire in quale master va
+                equivalente = ("march_clock" if op.indice is None else
+                               "villain_clock" if op.campo == "clock" else "npc_killed")
+                manual.append((equivalente, f"- {op.etichetta} (rifiutato a video)"))
+
+    for name, raw, groups in hits:
         if name == "march_clock":
             # 🔵 D14, chiusa dal DM il 2026-09-16: il March Day e' un CAMPO di
             # state.yaml, non piu' una riga da sostituire dentro la prosa. Prima

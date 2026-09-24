@@ -32,18 +32,10 @@ done
 
 $DRY_RUN && warn "DRY RUN mode"
 
-# ── In-repo agent path roots (NOT committed; see .gitignore) ────────────────
-# Format: agent_id:repo_relative_root:preferred_format
-# Each skill becomes <root>/<skill_name>/.
-declare -a AGENT_ENTRIES=(
-  "claude:.claude/skills:compact.md"
-  "codex:.agents/skills:machine.json"
-  "cursor:.cursor/skills:machine.json"
-  "windsurf:.windsurf/skills:compact.md"
-  "copilot:.github/copilot/skills:compact.md"
-  "chatgpt:.chatgpt/skills:compact.md"
-  "gemini:.gemini/skills:structured.yaml"
-)
+# ── Radici degli specchi nel repo (gitignorate): da scripts/agents.conf,
+# la stessa matrice che usa build-skills.sh. Ogni skill diventa <radice>/<skill>/.
+# shellcheck source=agents.conf
+source "${SCRIPT_DIR}/agents.conf"
 
 # Discover all skills (any skills/* with a SKILL.md)
 declare -a SKILL_NAMES=()
@@ -78,8 +70,10 @@ fi
 echo ""
 info "Syncing agent-specific packages to in-repo paths..."
 
-for entry in "${AGENT_ENTRIES[@]}"; do
-  IFS=':' read -r agent rel_root fmt <<< "${entry}"
+# Ordinati per nome: un array associativo non ha ordine, e il log deve essere lo stesso ogni volta.
+for agent in $(printf '%s\n' "${!AGENT_REPO_ROOTS[@]}" | sort); do
+  rel_root="${AGENT_REPO_ROOTS[$agent]}"
+  fmt="${AGENT_FORMAT[$agent]}"
   for skill_name in "${SKILL_NAMES[@]}"; do
     dest="${REPO_ROOT}/${rel_root}/${skill_name}"
     pkg="${REPO_ROOT}/build/${skill_name}/packages/${agent}"

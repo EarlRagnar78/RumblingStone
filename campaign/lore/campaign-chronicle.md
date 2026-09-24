@@ -121,8 +121,9 @@ The party descends through a chain of connected underground locations:
   - **Encounter composition** (from the XP ledger, `CalcoloPuntiEperienza-current.ods`):
     *"Il capo dei minotauri **maur** cr 11, una **gorgone** cr 8, un **rakasa**
     (il Collezionista)"*. ⚠️ The ledger records a **gorgon**; the DM and this
-    document record a **bonded basilisk**. **Basilisk stands** (2 sources of 3)
-    unless the DM rules otherwise.
+    document record a **bonded basilisk**. **Basilisk stands**: the DM named it
+    explicitly on 2026-07-26 (*«maur, basilisk e rachasa»*, recorded in
+    `plans/SOGGETTO-DISCESA-UNDERDARK-ARCHI-01-05.md` §9.3).
   - Source: *Underdark* p.95 (Maur), p.93 (Cristal Warriors)
 
 #### Gardens of Resplendent Hues (Pre-Arc 02, unnumbered) `[DM 2026-07-26]`

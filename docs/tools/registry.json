@@ -4107,6 +4107,12 @@
           "kind": "markdown",
           "required": true,
           "schema": null
+        },
+        {
+          "path": "scripts/agents.conf",
+          "kind": "text",
+          "required": true,
+          "schema": null
         }
       ],
       "outputs": [
@@ -4493,6 +4499,12 @@
         {
           "path": "skills/*/",
           "kind": "directory",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "scripts/agents.conf",
+          "kind": "text",
           "required": true,
           "schema": null
         }

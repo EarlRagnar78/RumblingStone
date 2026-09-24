@@ -7,32 +7,50 @@
   },
   "rami": [
     {
-      "ref": ["pr/99", "origin/claude/stone-audit-best-practices-yver7k"],
+      "ref": [
+        "pr/99",
+        "origin/claude/stone-audit-best-practices-yver7k"
+      ],
       "stato": "in-volo",
       "dove": "PR #99 aperta; PIANO-RIPRESA-PR-ABBANDONATE F4 (4f-4, 4f-5, 4g, 4h)"
     },
     {
-      "ref": ["pr/160", "origin/claude/festive-tesla-tgsauj"],
+      "ref": [
+        "pr/160",
+        "origin/claude/festive-tesla-tgsauj"
+      ],
       "stato": "in-volo",
       "dove": "PR #160 aperta: lotti 4e, 4f, 4i di PIANO-RIPRESA-PR-ABBANDONATE"
     },
     {
-      "ref": ["pr/143", "origin/claude/document-audit-prd-cleanup-j5ipln"],
+      "ref": [
+        "pr/143",
+        "origin/claude/document-audit-prd-cleanup-j5ipln"
+      ],
       "stato": "portato",
       "dove": "PR #143 chiusa: PIANO-PIPELINE-IBRIDE-GROUNDING-E-MISURA portato, ADR-0050 rinumerato ADR-0067 (commit c2a160e)"
     },
     {
-      "ref": ["pr/42", "origin/claude/dnd-map-generation-research-55pzry"],
+      "ref": [
+        "pr/42",
+        "origin/claude/dnd-map-generation-research-55pzry"
+      ],
       "stato": "rifiutato",
       "dove": "PR #42 chiusa senza merge il 2026-09-03: plans/CHANGELOG.md, INDEX RICERCA-GENERATORI-MAPPE P4"
     },
     {
-      "ref": ["pr/67", "origin/claude/terros-battle-hints-booklet-hfvbef"],
+      "ref": [
+        "pr/67",
+        "origin/claude/terros-battle-hints-booklet-hfvbef"
+      ],
       "stato": "superato",
       "dove": "PIANO-RICONCILIAZIONE-PR-APERTE: il booklet esiste in forma migliore in 07_…/homebrew/sessione-terros/"
     },
     {
-      "ref": ["pr/109", "origin/claude/golarion-pregen-character-sheets-cstheq"],
+      "ref": [
+        "pr/109",
+        "origin/claude/golarion-pregen-character-sheets-cstheq"
+      ],
       "stato": "superato",
       "dove": "STATO-E-ORDINE R5: #109 superata e chiusa; il caricamento delle skill e' ADR-0041"
     },
@@ -90,23 +108,23 @@
     },
     {
       "percorso": "SOGGETTO-DISCESA-UNDERDARK-ARCHI-01-05.md",
-      "stato": "da-decidere",
-      "dove": "D22 di PIANO-RIPRESA-PR-ABBANDONATE (§4.11.2)"
+      "stato": "portato",
+      "dove": "plans/SOGGETTO-DISCESA-UNDERDARK-ARCHI-01-05.md, datato (D22); le due conferme rimaste sono la D24"
     },
     {
       "percorso": "plans/PIANO-LEVEL-DESIGN-E-INQUADRATURA-SCENICA.md",
-      "stato": "da-decidere",
-      "dove": "D22 di PIANO-RIPRESA-PR-ABBANDONATE (§4.11.2)"
+      "stato": "portato",
+      "dove": "plans/PIANO-LEVEL-DESIGN-E-INQUADRATURA-SCENICA.md, 🔵 con i rami C e D rimisurati (D22)"
     },
     {
       "percorso": "scripts/agents.conf",
-      "stato": "da-decidere",
-      "dove": "D22 di PIANO-RIPRESA-PR-ABBANDONATE (§4.11.2)"
+      "stato": "portato",
+      "dove": "rifatto sul codice di oggi in scripts/agents.conf, letto da build-skills.sh e sync-skills.sh; test_agents_conf.py (D22)"
     },
     {
       "percorso": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DAY3-DAUTH-CITY-SIEGE.md",
-      "stato": "da-decidere",
-      "dove": "D22 di PIANO-RIPRESA-PR-ABBANDONATE (§4.11.2)"
+      "stato": "superato",
+      "dove": "il Giorno 3 su main, riscritto a luglio (ARC09 lotto A); la versione di maggio contraddice il canone: Karruk vi e' un hobgoblin chierico GS 12 a Dauth, nel Bestiario e' un gigante delle colline GS 10 riservato a Rethmar (D22, PIANO-RIPRESA §4.11.5)"
     }
   ]
 }

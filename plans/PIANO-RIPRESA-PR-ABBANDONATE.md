@@ -1149,8 +1149,9 @@ Vale per **ogni** commit di **ogni** fase.
 | ~~D18~~ | F4 · 4d-6 | ✅ **DECISA E ATTUATA il 2026-09-17, nello stesso commit.** Il DM: *«spezzarli per intestazione verificando che non esistano già»*. Il catalogo portava **19 record intitolati al documento** invece che alla creatura, perché `build_monster_catalog.py` faceva **un record per file** e prendeva il primo GS: «Parte 2A – Torre Invisibile», GS 10. **19 → 8**, pool **372 → 397**. 🔎 Quel che ne è uscito non sono comparse: gli **otto fantini del Palio**, i **Sicari di Sonjak**, il Gonfaloniere Aldemar Vosk, la Drow Chierica di Lolth, gli esempi d'onda di Rethmar — tutti chiusi dentro un record solo. ⚠️ **La deduplica è ancorata a un fatto dichiarato**: si confrontano i nomi **solo** dentro l'insieme delle voci del Bestiario che citano *quel* documento come `Source`. È il modo di rispettare ADR-0053 (un matcher permissivo traveste l'ignoranza) senza rinunciare a dedurre: il legame documento↔voce l'ha scritto qualcuno, la somiglianza sceglie solo *quale* voce sta per *quale* intestazione. 🔴 **E il rischio opposto ha il suo presidio**: il record di file sparisce solo quando **ogni** creatura che il documento nomina ha già la sua voce — gli otto che restano sono quelli dove non è vero, e toglierli significherebbe meno rumore e **meno creature**. 🐛 Due difetti nei nomi generati, trovati misurando: la numerazione del Palio è **multi-livello** (`### 3.2 Drow Chierica`) e lasciava nomi che cominciavano per cifra, e la coda tagliata lasciava parentesi mai chiuse («Aldemar Vosk (LN»). 🔎 **E il cancello nuovo ha trovato un errore mio al primo giro**: contava **due** «Skullcrusher il Nero», perché la voce che avevo appena scritto puntava al file che il drago lo *nomina* soltanto — i numeri stanno in `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md`. Correggendo il puntamento è poi caduto fuori che `P6-INTEGRAZIONE` restava scoperto, e dentro c'erano **Re Thorek I** (Grr 16, il re di mille anni prima che si inginocchia davanti alla Corona) e **Durin Hammerfist**, l'antenato di Othrek: due PNG di canone che non aveva nessuno. Vedi **§4.8.12** e [ADR-0054](adr/ADR-0054-un-archivio-non-e-una-copia.md) |
 | ~~D19~~ | F4 · 4f | ✅ **Risposta del DM il 2026-09-24, ed è un principio più largo della domanda**: *«la procedura dovrebbe essere quanto più automatizzata possibile: un DM normalmente non tocca affatto i file yml, al massimo se ha un'interfaccia scrive dei campi o seleziona i valori da un form già impostato»*. Quindi né lo scheletro da compilare né il derivato da rivedere a mano: il template è **derivato in automatico** dal prodotto, e ciò che resta di giudizio passa da un **modulo** a scelte. Procedura in §4.10.6, il via è **D21** |
 | ~~D21~~ | F4 · 4f | ✅ **Risposta del DM il 2026-09-24.** Sulla procedura di §4.10.6: sì al comando `dm.py gruppo nuovo`; sì a togliere da sole le conoscenze sul party e a chiedere una riga alla volta solo dove serve un giudizio; **gli artefatti restano nel prodotto**, senza portatore; arco e livello di partenza a scelta; PG con nome, razza, classe, livello e PF, al massimo sei; clock a zero e trigger lasciati. Attuato in **4f-4**, §4.10.7. Sulle proposte di fine sessione (4f-5) il DM ha chiesto di più: *«non c'è un tool chiamato dal DM a fine sessione che prende le domande e genera lo state.md e la parte relativa di state.yaml in maniera automatica?»*, con il ciclo intero preparazione → tavolo → chiusura e un **menu testuale** che chiami `dm.py` e che un'interfaccia grafica possa avvolgere. 4f-5 passa a quel piano, commit successivo |
-| D22 | F4 · 4i | **Cosa si fa dei file rimasti nei rami senza un posto?** Misurati in §4.11.2. Per ognuno si può **portarlo** su `main` com'era, datato; **dichiararlo superato**, scrivendo da cosa; **lasciarlo** nel ramo, scrivendo perché. Il caso che pesa è il `SOGGETTO-DISCESA-UNDERDARK-ARCHI-01-05` della #72: 773 righe sulla catena degli archi 01-05, sei revisioni con risposte del DM, e nessun documento su `main` lo nomina. La proposta è portarlo com'era in `campaign/lore/`, come per l'audit di level design. Per `agents.conf` la proposta è rifarlo sul codice di oggi, perché la matrice duplicata c'è ancora |
+| ~~D22~~ | F4 · 4i | ✅ **Risposta del DM il 2026-09-24**: per le domande aperte del soggetto, cercare le risposte in tutte le PR, anche chiuse, poi seguire le proposte; piano di level design, `agents.conf` e Giorno 3 di Dauth come proposto. Trovato: **avevi risposto a tutto** (changelog della #72, rev. 5 e 6), e 133 righe su 133 sono in cronaca. Il soggetto è in `plans/`, datato; il basilisco confermato con la tua citazione; restano due conferme, la **D24**. Esiti degli altri tre file in §4.11.5 |
 | D23 | F4 · 4i | **Si attiva su `main` la protezione «Require branches to be up to date before merging»?** È l'unico pezzo della regola che hai chiesto di valutare (§4.11.4) che non sta nel repo: la CI di una PR gira sul `main` del momento del push, e se `main` cambia dopo la PR resta verde su una base che non c'è più. Con la protezione, prima del merge GitHub chiede di riallineare la PR e la CI rigira. Costo: un clic su «Update branch» prima di ogni merge, e un giro di CI in più. Si attiva in *Settings → Branches* del repository; da qui non si può né attivare né verificare |
+| D24 | F4 · 4i | **Due conferme sulla discesa, le ultime.** Tutte le domande del soggetto della #72 hanno la tua risposta (revisioni 3-6), e sono nella cronaca. Restano: (1) **dove fugge il Collezionista**. Nella rev. 5 avevi chiesto di scegliere la soluzione più coerente; la proposta è il **Piano del Fuoco**, la forgia dei salamandri dove la sua gilda commercia, con un monile di ossidiana distinto dal Sigillo di Shar. Nella cronaca è ancora `[INFERRED — needs DM confirmation]`. (2) **il GS di Maur**: 11 nel registro XP e nella tua catena di rev. 5, «~10» nella cronaca. Proposta: sì al Piano del Fuoco, e GS 11 |
 | ~~D20~~ | F4 · 4f-2 | ✅ **DECISA E ATTUATA il 2026-09-24, nello stesso commit.** Il DM: *«D20 ok ma non tralasciare nulla»*. Split per sezione come in §4.10.4: **528 righe su 528** ritrovate nelle due metà (controllate contro git da un test), nessuna duplicata, una sola parola spostata («ESCAPED», che la cronaca racconta già tre volte). Tredici rimandi aggiornati in undici file; restano sul nome vecchio i documenti datati (`plans/`, l'audit IP, la baseline del 21 settembre), come registro di quando sono stati scritti |
 
 ---
@@ -2783,6 +2784,59 @@ qui non si può né attivare né verificare. È la **D23**.
 L'«overdrive», cioè una PR che fa più di quanto il suo piano dichiara, ha già
 la sua regola: piano, `INDEX` e `CHANGELOG` nello stesso commit, bloccata in
 CI da `check_plans_discipline.py`. Non serve altro.
+
+#### 4.11.5 · D22, i quattro file (2026-09-24)
+
+**Il soggetto della discesa.** Il DM ricordava di aver già risposto alle domande
+aperte, e aveva ragione. Il changelog della #72 lo registra due volte: alla
+revisione 5, *«il DM ha risposto a tutti i punti aperti tranne uno»*; alla 6,
+*«ultimo punto chiuso»*. Le risposte sono entrate nella cronaca: le 133 righe
+che il commit `960c621` aggiungeva allo storico ci sono tutte, e ciascuna porta
+la sua data `[DM 2026-07-26]`. Il §9.4 del soggetto, con le sue nove domande,
+era la fotografia della revisione 3.
+
+Cercando, sono venute fuori due cose rimaste in sospeso che nessuno aveva
+chiuso:
+
+- la **destinazione della fuga del Collezionista**. Il DM aveva chiesto di
+  scegliere la soluzione più coerente; la proposta (Piano del Fuoco) è entrata
+  in cronaca marcata `[INFERRED — needs DM confirmation]`, ed è ancora così in
+  ogni ramo;
+- il **GS di Maur**: 11 nel registro XP e nella catena di revisione 5, «~10»
+  nella cronaca.
+
+Vanno al DM come **D24**. Un terzo punto invece aveva già la sua risposta: la
+cronaca teneva il basilisco «salvo smentita del DM», ma il DM l'aveva nominato
+esplicitamente (*«maur, basilisk e rachasa»*). Riportata la citazione.
+
+Il soggetto è in `plans/SOGGETTO-DISCESA-UNDERDARK-ARCHI-01-05.md`, portato
+com'era con una testata che lo data e dice cosa è cambiato. Rimandi aggiornati:
+`campaign-history.md` → cronaca, ADR-0018 della #72 → ADR-0049.
+
+**Il piano di level design** è in `plans/`, 🔵, con i rami C e D rimisurati
+prima di portarlo. Sono validi tutti, con tre correzioni scritte nella testata:
+C2 dipende da un linter che non esiste ancora (è nel perimetro di
+`PIANO-VENDIBILITA`); D1 va dentro il brief d'inquadratura che la skill
+`rumblingstone-art-direction` ha già, e non in un template a parte; la parte
+sulle dipendenze Python a livelli è superata da ADR-0037. D4 ha una misura:
+dieci riferimenti a film e marchi in sette file di prompt.
+
+**`agents.conf`** è rifatto sul codice di oggi, con gli stessi valori della
+PR #1, che non erano cambiati. `build-skills.sh` e `sync-skills.sh` lo leggono e
+non hanno più una matrice propria; `test_agents_conf.py` fa rosso se una copia
+ricompare o se l'elenco di `AGENTS.md` dice un formato diverso da quello che
+si costruisce (4 mutazioni su 4).
+
+**Il Giorno 3 di Dauth di maggio** è superato, e in un punto contraddice il
+canone: vi compare un Karruk hobgoblin chierico e guerriero GS 12 che guida
+l'assedio di Dauth, mentre nel Bestiario Karruk è un gigante delle colline
+barbaro GS 10 (`[ACCEPTED — DM-canon 2026-05-05]`) e il Giorno 3 di oggi lo
+dichiara riservato a Rethmar. Di suo aveva due idee di bottino: una lettera per
+Azarr Kul con i numeri della difesa di Dauth, e un sigillo di Tiamat come prova
+che l'invasione era organizzata. Non portate: sono proposte, e toccano il
+canone.
+
+Il registro dei rami dopo la D22: **0 file da decidere**.
 
 ## Come si misura che il piano è finito
 

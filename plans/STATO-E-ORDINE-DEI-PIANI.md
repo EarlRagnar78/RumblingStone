@@ -94,16 +94,15 @@ tutti esistenti.
 
 ## 3 · Cosa resta da fare, per piano
 
-### ① Ripresa PR abbandonate — F0 ✅, restano F1-F4
+### ① Ripresa PR abbandonate — F0, F1, F2 ✅; F3 e F4 in corso
 
-- **F1 · #63** — le 14 griglie tattiche di Hammerfist che al tavolo mancano,
-  **3Y compresa**. Contenuto pronto e verificato byte-identico. ⚠️ Il gate di
-  ADR-0043 adesso **forza** la decisione D1 invece di lasciarla al diff.
-- **F2 · #52** — l'overlay `@` sui master scritti a mano. Costo: **una
-  rinominazione**.
-- **F3 · #106** — la catena raster: **cinque requisiti su sei**, e la fase
-  aggiunge il sesto (`SCARTI.txt`). ⚠️ L'ultimo passo vuole la **GPU del DM**.
-- **F4 · #99** — **a otto lotti**, `validate_docs` per primo.
+- ✅ **F1 · #63** e ✅ **F2 · #52**: chiuse il 2026-09-05, PR chiuse il
+  2026-09-11.
+- 🟡 **F3 · #106**: 3a-3c chiusi. Resta **3d**, che è la decisione D2 del
+  piano: il collaudo SDXL di due immagini accanto alle Gemini, sulla macchina
+  del DM.
+- 🟡 **F4 · #99**: 4a, 4b, 4c e 4d (4d-1 … 4d-8) chiusi. Restano **4e** (una
+  sola via di scrittura) e **4f** (prodotto e partita).
 
 ### ② Ricerca sul mestiere — tutta da eseguire
 
@@ -113,18 +112,18 @@ sono lo standard.
 
 ### Le PR ancora aperte, oggi
 
+*Rimisurato il 2026-09-24 sull'elenco delle PR aperte del repo. La tabella di
+prima era ferma al 2026-09-04: dava aperte #63, #52 e #67, chiuse l'11
+settembre, e non conosceva la #143.*
+
 | PR | Verdetto | Dove sta scritto | Che si fa |
 |---|---|---|---|
-| **#63** | abbandonata, **non** superata | ① F1 | si svuota — è la prossima |
-| **#52** | abbandonata, **non** superata | ① F2 | si svuota |
-| **#106** | abbandonata, **non** superata | ① F3 | si svuota, serve la GPU del DM |
-| **#99** | abbandonata, **non** superata | ① F4 | si svuota a otto lotti |
-| **#67** | **superata** | `RICONCILIAZIONE-PR` R9 | **si chiude**, niente da recuperare |
+| **#143** | contenuto portato su `main` | `PIPELINE-IBRIDE`, riga del CHANGELOG del 2026-09-24 | ✅ **chiusa il 2026-09-24**: il piano è entrato con la #160, l'ADR come **0067** (lo 0050 era occupato) |
+| **#106** | abbandonata, **non** superata | ① F3 · 3d | resta aperta finché il DM non ha fatto il collaudo SDXL (D2): serve la sua GPU |
+| **#99** | abbandonata, **non** superata | ① F4 · 4e, 4f | si svuota: 4e e 4f sono gli ultimi due lotti |
 
-⚠️ **Nessuna delle cinque si mergia com'è.** Le quattro abbandonate hanno una
-base di mesi fa: se ne porta il **contenuto**, non i commit. La #67 non ha
-contenuto da portare, e mergiarla rimetterebbe in circolo un handout che detta
-tattica al giocatore.
+⚠️ **Nessuna delle due si mergia com'è.** Hanno una base di agosto: se ne porta
+il **contenuto**, non i commit, come si è fatto con la #143.
 
 ### Code aperte che non sono un piano
 

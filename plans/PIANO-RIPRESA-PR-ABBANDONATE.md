@@ -1150,7 +1150,7 @@ Vale per **ogni** commit di **ogni** fase.
 | ~~D19~~ | F4 · 4f | ✅ **Risposta del DM il 2026-09-24, ed è un principio più largo della domanda**: *«la procedura dovrebbe essere quanto più automatizzata possibile: un DM normalmente non tocca affatto i file yml, al massimo se ha un'interfaccia scrive dei campi o seleziona i valori da un form già impostato»*. Quindi né lo scheletro da compilare né il derivato da rivedere a mano: il template è **derivato in automatico** dal prodotto, e ciò che resta di giudizio passa da un **modulo** a scelte. Procedura in §4.10.6, il via è **D21** |
 | ~~D21~~ | F4 · 4f | ✅ **Risposta del DM il 2026-09-24.** Sulla procedura di §4.10.6: sì al comando `dm.py gruppo nuovo`; sì a togliere da sole le conoscenze sul party e a chiedere una riga alla volta solo dove serve un giudizio; **gli artefatti restano nel prodotto**, senza portatore; arco e livello di partenza a scelta; PG con nome, razza, classe, livello e PF, al massimo sei; clock a zero e trigger lasciati. Attuato in **4f-4**, §4.10.7. Sulle proposte di fine sessione (4f-5) il DM ha chiesto di più: *«non c'è un tool chiamato dal DM a fine sessione che prende le domande e genera lo state.md e la parte relativa di state.yaml in maniera automatica?»*, con il ciclo intero preparazione → tavolo → chiusura e un **menu testuale** che chiami `dm.py` e che un'interfaccia grafica possa avvolgere. 4f-5 passa a quel piano, commit successivo |
 | ~~D22~~ | F4 · 4i | ✅ **Risposta del DM il 2026-09-24**: per le domande aperte del soggetto, cercare le risposte in tutte le PR, anche chiuse, poi seguire le proposte; piano di level design, `agents.conf` e Giorno 3 di Dauth come proposto. Trovato: **avevi risposto a tutto** (changelog della #72, rev. 5 e 6), e 133 righe su 133 sono in cronaca. Il soggetto è in `plans/`, datato; il basilisco confermato con la tua citazione; restano due conferme, la **D24**. Esiti degli altri tre file in §4.11.5 |
-| D23 | F4 · 4i | **Si attiva su `main` la protezione «Require branches to be up to date before merging»?** È l'unico pezzo della regola che hai chiesto di valutare (§4.11.4) che non sta nel repo: la CI di una PR gira sul `main` del momento del push, e se `main` cambia dopo la PR resta verde su una base che non c'è più. Con la protezione, prima del merge GitHub chiede di riallineare la PR e la CI rigira. Costo: un clic su «Update branch» prima di ogni merge, e un giro di CI in più. Si attiva in *Settings → Branches* del repository; da qui non si può né attivare né verificare |
+| ~~D23~~ | F4 · 4i | ✅ **Risposta del DM il 2026-09-24: da verificare dopo, e da riproporre come piano.** Diventa il lotto **4i-3** (§4.11.6), con le sue tre fasi. Misurato nel frattempo: `main` risulta `protected: false`, cioè oggi nemmeno una CI rossa impedisce il merge |
 | D24 | F4 · 4i | **Due conferme sulla discesa, le ultime.** Tutte le domande del soggetto della #72 hanno la tua risposta (revisioni 3-6), e sono nella cronaca. Restano: (1) **dove fugge il Collezionista**. Nella rev. 5 avevi chiesto di scegliere la soluzione più coerente; la proposta è il **Piano del Fuoco**, la forgia dei salamandri dove la sua gilda commercia, con un monile di ossidiana distinto dal Sigillo di Shar. Nella cronaca è ancora `[INFERRED — needs DM confirmation]`. (2) **il GS di Maur**: 11 nel registro XP e nella tua catena di rev. 5, «~10» nella cronaca. Proposta: sì al Piano del Fuoco, e GS 11 |
 | ~~D20~~ | F4 · 4f-2 | ✅ **DECISA E ATTUATA il 2026-09-24, nello stesso commit.** Il DM: *«D20 ok ma non tralasciare nulla»*. Split per sezione come in §4.10.4: **528 righe su 528** ritrovate nelle due metà (controllate contro git da un test), nessuna duplicata, una sola parola spostata («ESCAPED», che la cronaca racconta già tre volte). Tredici rimandi aggiornati in undici file; restano sul nome vecchio i documenti datati (`plans/`, l'audit IP, la baseline del 21 settembre), come registro di quando sono stati scritti |
 
@@ -2607,7 +2607,7 @@ separata dalla premessa (4f-2), un gruppo nuovo parte da un modulo (4f-4), e
 le proposte di fine sessione diventano domande nel piano del ciclo di sessione,
 dove il DM le ha portate (D21).
 
-### 4.11 · Lotto **4i** — i rimandi fra backtick, e il contenuto rimasto nei rami `[✅ chiuso il 2026-09-24 · 4i-1 · 4i-2 · il destino dei file è D22, la protezione del ramo è D23]`
+### 4.11 · Lotto **4i** — i rimandi fra backtick, e il contenuto rimasto nei rami `[4i-1 ✅ · 4i-2 ✅ · D22 ✅ · 4i-3 ⬜ la protezione di main, da verificare con il DM]`
 
 > **Classe R** (ricognizione) per la misura, **M** per le correzioni con una
 > sola risposta possibile. Le righe il cui destino è un giudizio sul contenuto
@@ -2837,6 +2837,38 @@ che l'invasione era organizzata. Non portate: sono proposte, e toccano il
 canone.
 
 Il registro dei rami dopo la D22: **0 file da decidere**.
+
+#### 4.11.6 · Lotto **4i-3** — la protezione di `main` (riproposta dalla D23) ⬜
+`[engine: DM nelle impostazioni di GitHub, poi Opus 5.5 per la verifica · effort: basso · qualità: il ramo risulta protetto e una PR indietro rispetto a main non si mergia senza riallinearsi]`
+
+Il DM ha rinviato la D23: *«dopo da verificare, magari da riproporre come
+piano»*. Eccolo, con le tre fasi.
+
+**FASE 1 · Audit (fatta il 2026-09-24, in sola lettura).** L'elenco dei rami
+via API dà per `main` **`protected: false`**. Non c'è quindi la regola chiesta
+dalla D23, e non ce n'è nessun'altra: una PR con la CI rossa si può mergiare.
+⚠️ Il campo riguarda la protezione **classica** dei rami; i *ruleset* di
+GitHub da qui non si leggono, ed è la prima cosa da guardare nelle
+impostazioni. La CI ha due job, «Validate skills & scripts» e «Build skill
+packages».
+
+**FASE 2 · Attivazione (del DM, in *Settings → Rules* o *Branches*).** Per `main`:
+
+| Regola | Perché | Costo |
+|---|---|---|
+| richiedere una PR prima del merge | nessun push diretto su `main`, che resta la libreria (ADR-0007) | nessuno: si lavora già così |
+| richiedere i due controlli verdi | una CI rossa non entra | nessuno |
+| richiedere il ramo **aggiornato** prima del merge | il punto della D23: la CI rigira sul `main` di oggi, e le regressioni fra due PR si vedono prima | un clic su «Update branch» e un giro di CI in più |
+| vietare il force-push su `main` | la storia non si riscrive | nessuno |
+
+**Da non attivare**: l'approvazione obbligatoria di un revisore. Il repo ha un
+solo manutentore, e la regola lo bloccherebbe sulle proprie PR.
+
+**FASE 3 · Verifica.** L'elenco dei rami dà `protected: true` per `main`; una
+PR rimasta indietro mostra «This branch is out-of-date» e il merge è
+disabilitato finché non si riallinea. Poi due righe: il passo «Update branch
+prima del merge» nella checklist di chiusura della skill `rumblingstone-plans`,
+e una nel Playbook dove si parla di rami.
 
 ## Come si misura che il piano è finito
 

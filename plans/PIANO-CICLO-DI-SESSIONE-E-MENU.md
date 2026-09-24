@@ -1,7 +1,9 @@
 # PIANO — Il ciclo di sessione automatizzato, e il menu che lo guida
 
 > **Stato**: 🔵 **pianificato** (2026-09-24). Nessun lotto eseguito; il primo
-> gate è la Fase 0 (ADR e decisioni del DM).
+> gate è la Fase 0 (ADR e decisioni del DM). **Rev. 2** (stesso giorno): il
+> metodo non è più solo TDD, ma contratto prima, nucleo puro e test a strati
+> (§5.0), su domanda del DM.
 >
 > **Origine**: risposta del DM alla D21 di `PIANO-RIPRESA-PR-ABBANDONATE`, punti
 > 7 e 8 (2026-09-24): *«non c'è un tool che è chiamato dal DM a fine sessione
@@ -173,14 +175,58 @@ gruppo. È l'ordine che `dm.py session end` segue già, allungato.
 
 ## §5 · Lotti
 
-Ogni lotto dichiara engine, effort e qualità (ADR-0045). Il metodo è **TDD**:
-per il codice con un contratto i test si scrivono prima, e ogni gate si prova
-facendolo mordere con una mutazione, come è convenzione del repo. Per i flussi
-interi servono test d'accettazione su una copia del repo sotto git, come quello
-di 4f-4; per i moduli, test di contratto sul JSON delle domande e delle
-risposte. BDD con un framework no: le storie di §4 sono già nella forma
-«dato che, quando, allora», e i test le traducono in `unittest` senza
-dipendenze.
+Ogni lotto dichiara engine, effort e qualità (ADR-0045).
+
+### §5.0 · Il metodo: contratto prima, nucleo puro, test a strati
+
+Rivisto il 2026-09-24 su domanda del DM: *«c'è un modo migliore del TDD per
+gestire agilmente aggiunte e modifiche future?»*. Il TDD da solo non basta,
+perché decide come si scrive il codice e non come il sistema regge i
+cambiamenti. Quello che rende facile aggiungere una domanda al modulo, una voce
+al menu o un'interfaccia grafica sono le scelte qui sotto; il TDD resta, nel
+posto dove rende.
+
+**1 · Il contratto prima del codice.** Per ogni modulo, per il menu e per ogni
+comando nuovo si scrive e si committa prima il contratto: lo schema JSON delle
+domande e delle risposte, le voci del menu, gli exit code nel manifest. Il
+codice e la futura interfaccia dipendono dal contratto, non l'uno dall'altra. È
+la forma che il repo usa già per i tool (ADR-0012) e per `state.yaml`.
+
+**2 · Contratti versionati, e solo additivi.** Ogni JSON porta un campo
+`versione`. Una modifica aggiunge campi e non cambia il significato di quelli
+che ci sono; chi legge ignora i campi che non conosce. Un cambiamento
+incompatibile è una versione nuova, e per un periodo le due convivono. È ciò
+che permette di aggiungere una domanda al modulo senza rompere l'interfaccia
+grafica che lo disegna.
+
+**3 · Nucleo puro, guscio sottile.** Le decisioni stanno in funzioni pure sotto
+`dmcore/` (dati in entrata, dati in uscita); disco, git e terminale stanno negli
+script. È la forma minima dell'architettura esagonale, ed è già quella di 4f-4:
+`dmcore/gruppo_nuovo.py` decide, `gruppo_nuovo.py` scrive. Il nucleo si prova
+senza git e senza tastiera, e un'interfaccia nuova è soltanto un altro guscio.
+
+**4 · Test a strati, ognuno dove rende.**
+
+| Cosa si prova | Tecnica | Perché questa |
+|---|---|---|
+| la logica del nucleo | **TDD**, il test prima del codice | il contratto è chiaro e il riscontro arriva in secondi |
+| un flusso intero (U1-U7) | **test d'accettazione** scritti dalle storie di §4, su una copia del repo sotto git | provano quello che vede il DM, non l'implementazione |
+| il JSON fra `dm.py` e un'interfaccia | **test di contratto**: lo schema valida gli esempi nelle due direzioni | `dm.py` e l'interfaccia possono cambiare separati |
+| i file generati (`state.md`, manifest, booklet) | **test d'approvazione**: l'uscita si confronta con una già approvata, che si rigenera solo in un commit suo | è già la regola dell'impronta delle creature e degli SVG byte-identici |
+| le invarianti (rilanciare non duplica, tutto o niente) | **proprietà** su input generati | trovano i casi che nessuno ha scritto. ⚠️ Senza librerie (ADR-0037): pochi generatori scritti a mano, mirati |
+| i test stessi | **mutazioni** | la convenzione del repo: un test che non si è mai visto fallire non conta |
+
+**5 · Le regole dell'architettura diventano controlli.** Ciò che il progetto
+deve mantenere nel tempo si controlla in CI a ogni PR: nessuna logica nel menu
+(ogni voce è una riga di `dm.py`), stdout solo per i dati, nessuna proposta che
+dica «scrivi in `state.yaml`». Nell'architettura evolutiva si chiamano
+*funzioni di fitness*; la CI del repo ne esegue già 22 (`validate_docs`,
+`check_plans_discipline`, `decisioni_dm --check`…).
+
+**6 · Dove il TDD non serve.** Il menu si prova prima a mano, perché la forma
+giusta si scopre usandolo, e poi si fissa con un test d'approvazione. La prosa
+di gioco non si progetta con i test: si misura con `misura_craft` e con la
+self-check di `rumblingstone-narrative-style`.
 
 ### Fase 0 · Le decisioni prima del codice
 
@@ -188,6 +234,13 @@ dipendenze.
 `[engine: Opus 5.5, sessione principale · effort: alto · qualità: il DM la legge e riconosce il proprio problema]`
 
 Estratta dalla bozza di §7. Classe **G**.
+
+#### ⬜ 0c · I contratti, prima del codice
+`[engine: Sonnet 5 · effort: medio · qualità: gli esempi del modulo di 4f-4 e del wizard passano lo schema; un esempio con un campo in più passa, uno con un campo cambiato no]`
+
+Classe **C**. Tre schemi JSON versionati in `scripts/schemas/`: il modulo (le
+domande), le risposte, il menu. Il modulo di `dm.py gruppo nuovo` è il primo
+esempio vero, perché esiste già (§5.0, punti 1 e 2).
 
 #### ⬜ 0b · Le risposte del DM a D1-D5
 `[engine: DM · effort: — · qualità: le cinque righe barrate in §8]`
@@ -319,6 +372,10 @@ a modo suo, e `dm.py` scriveva i suoi messaggi su stdout.
    manifest dei tool.
 4. Il codice mette in fila, controlla e scrive dati. La prosa di gioco la
    scrivono il DM o un agente con le skill; il codice prepara il brief (D3).
+5. I contratti JSON portano una versione e cambiano solo aggiungendo; chi li
+   legge ignora ciò che non conosce.
+6. Le decisioni stanno in funzioni pure sotto `dmcore/`; gli script sono il
+   guscio che legge, scrive e parla col DM.
 
 **Le conseguenze.** Si paga un refactoring (1a) e la disciplina di non mettere
 logica nel menu. Si guadagna un'interfaccia grafica che non riscrive niente, e
@@ -351,7 +408,7 @@ test che non hanno bisogno di una tastiera.
 
 ## Checklist di avanzamento
 
-- ⬜ Fase 0 · 0a ADR-0068 · 0b risposte a D1-D5
+- ⬜ Fase 0 · 0a ADR-0068 · 0c i contratti versionati · 0b risposte a D1-D5
 - ⬜ Fase 1 · 1a motore dei moduli · 1b proposte → domande (ex 4f-5) · 1c cronaca · 1d catena di chiusura
 - ⬜ Fase 2 · 2a controllo e turno del mondo · 2b ricognizione · 2c inventario · 2d brief di scrittura · 2e manifest
 - ⬜ Fase 3 · 3a menu testuale · 3b menu in JSON

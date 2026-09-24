@@ -17,7 +17,7 @@ jobs:
     # la prova, non perche' e' cambiata l'etichetta (PRATICHE PI-3).
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0   # serve al gate di tracciatura (diff vs base ref)
 
@@ -342,7 +342,7 @@ jobs:
     runs-on: ubuntu-24.04
     needs: validate
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-python@v5
         with:

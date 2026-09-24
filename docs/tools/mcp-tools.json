@@ -731,6 +731,8 @@
       },
       "outputs": [
         "campaign/state.md",
+        "campaign/state.yaml",
+        "campaign/state-changelog.md",
         "git-commit"
       ],
       "exit_codes": {

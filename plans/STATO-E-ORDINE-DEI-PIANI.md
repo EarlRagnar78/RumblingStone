@@ -103,9 +103,10 @@ tutti esistenti.
   piano: il collaudo SDXL di due immagini accanto alle Gemini, sulla macchina
   del DM.
 - 🟡 **F4 · #99**: 4a, 4b, 4c, 4d (4d-1 … 4d-8) e **4e** (una sola via di
-  scrittura, 2026-09-24) chiusi. Restano **4f** (prodotto e partita: 4f-0…4f-2
-  e 4f-4 fatti, `dm.py gruppo nuovo`; 4f-5 passa al piano del ciclo di sessione
-  per decisione D21; resta 4f-3, i documenti), **4g** (schede PG a dati), **4h**
+  scrittura, 2026-09-24) e **4f** (prodotto e partita, 2026-09-24: la partita
+  è un elenco, la cronaca è separata, `dm.py gruppo nuovo`; 4f-5 è passato al
+  piano del ciclo di sessione per decisione D21) chiusi. Restano **4g** (schede
+  PG a dati), **4h**
   (`groups/<slug>/`, PR dedicata) e **4i**, aggiunto il 2026-09-24 su richiesta
   del DM e chiuso lo stesso giorno: il gate vede i percorsi fra backtick in
   tutti i sorgenti, e `contenuti_nei_rami.py` dà un posto ai file rimasti nei

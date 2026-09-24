@@ -4413,11 +4413,31 @@
           "kind": "markdown",
           "required": true,
           "schema": null
+        },
+        {
+          "path": "campaign/state.yaml",
+          "kind": "yaml",
+          "required": false,
+          "schema": "scripts/schemas/campaign_state.schema.json"
         }
       ],
       "outputs": [
         {
           "path": "campaign/state.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "campaign/state.yaml",
+          "kind": "yaml",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": "scripts/schemas/campaign_state.schema.json"
+        },
+        {
+          "path": "campaign/state-changelog.md",
           "kind": "markdown",
           "overwrites": true,
           "generated_header": false,

@@ -2345,7 +2345,7 @@ dovrà conoscere `state.yaml`, `state-changelog.md` e adesso anche il
 front-matter), **4g** (schede PG a dati), **4h** (`groups/<slug>/`, PR
 dedicata).
 
-### 4.10 · Lotto **4f** — prodotto e partita `[4f-0 ✅ audit · 4f-1 ✅ · 4f-2 ✅ · 4f-4 ✅ · 4f-3 ⬜ · 4f-5 passa al piano del ciclo di sessione (D21)]`
+### 4.10 · Lotto **4f** — prodotto e partita `[✅ chiuso il 2026-09-24 · 4f-0 · 4f-1 · 4f-2 · 4f-4 · 4f-3 · 4f-5 passato a CICLO-SESSIONE 1b (D21)]`
 
 > `[C costruzione, con un sotto-lotto K (4f-2) · Opus, sessione principale ·
 > alto · un test che esegue il reset su una copia dei file veri e dimostra che
@@ -2388,7 +2388,7 @@ recupero di 4d-1 ha portato l'ADR e non il lotto che la attuava (G2-quater della
 |---|---|---|---|
 | **4f-1** | la partita come dato | C | un elenco unico dei file di partita e del loro template, letto dallo script di reset e dal test; `state-blank.md` coi marcatori, `state-blank.yaml`, `state-changelog-blank.md`; il reset che rigenera e **valida prima di dichiararsi finito**; `test_new_group.py`, il presidio che l'ADR promette |
 | **4f-2** | lo split di `campaign-history.md` | **K** | `campaign-premise.md` (prodotto) e `campaign-chronicle.md` (partita), con la regola di ADR-0050 §7 applicata sezione per sezione e nessuna riga persa; i rimandi aggiornati |
-| **4f-3** | documenti e chiusura | M | quickstart, playbook §7, manifest (anche `state_apply`, che non dichiara `state.yaml` e `state-changelog.md` fra le uscite), tracciatura |
+| **4f-3** ✅ | documenti e chiusura | M | quickstart, playbook §7, manifest (anche `state_apply`, che non dichiara `state.yaml` e `state-changelog.md` fra le uscite), tracciatura |
 
 #### 4.10.2 · La domanda che resta al DM: D19
 
@@ -2590,6 +2590,21 @@ che non fa partire niente. **10 mutazioni su 10** rosse. 🐛 La copia di prova
 collegava `.gitignore` come link simbolico, che git non segue: i `__pycache__`
 sporcavano l'albero e il comando si rifiutava di partire, giustamente. Il test
 ora copia il file.
+
+#### 4.10.8 · 4f-3 e la chiusura del lotto (2026-09-24)
+
+Dei tre documenti che 4f-3 doveva sistemare, quickstart e Playbook §7 sono
+stati riscritti dentro 4f-4, perché descrivevano il comando nuovo. Restava il
+manifest: `state_apply` scrive `campaign/state.yaml` dal lotto 4d-2 e
+`campaign/state-changelog.md` dalla divisione dello storico, e non li
+dichiarava fra le uscite; non dichiarava nemmeno `state.yaml` fra gli
+ingressi. Corretto. Il server MCP, che legge il manifest, lo elenca ancora fra
+chi scrive canone e lo blocca senza `--allow-write`.
+
+**Il lotto si chiude così**: la partita è un elenco (4f-1), la cronaca è
+separata dalla premessa (4f-2), un gruppo nuovo parte da un modulo (4f-4), e
+le proposte di fine sessione diventano domande nel piano del ciclo di sessione,
+dove il DM le ha portate (D21).
 
 ### 4.11 · Lotto **4i** — i rimandi fra backtick, e il contenuto rimasto nei rami `[✅ chiuso il 2026-09-24 · 4i-1 · 4i-2 · il destino dei file è D22, la protezione del ramo è D23]`
 

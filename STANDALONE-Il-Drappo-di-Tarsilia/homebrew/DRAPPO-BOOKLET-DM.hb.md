@@ -3485,7 +3485,7 @@ veleno da contatto)*
   (B9). Il rumore è l'operazione: lui non ha nessuna intenzione di combattere.
 - **Round 2**: scende nel box del cavallo (H12) e applica la pasta. Serve **1 round
   intero** e il cavallo deve stare fermo: Addestrare Animali del cavallo... ovvero,
-  Sfregio tira **Cavalcare +9 come prova di destrezza per calmarlo, CD 15**. Se
+  Sfregio tira **Cavalcare +9 come prova di Destrezza per calmarlo, CD 15**. Se
   fallisce, il cavallo urla e sveglia tutto il vicolo.
 - **Round 3+**: se lo scoprono, **non ingaggia**. Lancia la fiaschetta d'olio nella
   paglia (fuoco, §sotto), va di soppiatto verso la finestra alta (O3) e prova a
@@ -4814,8 +4814,8 @@ JSON — si importano native, senza ridisegnare niente:
 
 | File | Muri | Porte | Luci |
 |---|:--:|:--:|:--:|
-| `uvtt/tarsilia-la-ruota_map01_*.uvtt` | 24 | 2 | 0 |
-| `uvtt/tarsilia-stalle_map01_*.uvtt` | 32 | 2 | 2 |
+| `uvtt/tarsilia-la-ruota_map01_*.uvtt` | 28 | 2 | 0 |
+| `uvtt/tarsilia-stalle_map01_*.uvtt` | 20 | 5 | 2 |
 
 Si rigenerano con `python3 scripts/export_uvtt.py <mappa>.md -o uvtt`.
 

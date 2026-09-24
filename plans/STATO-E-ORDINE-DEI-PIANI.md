@@ -111,8 +111,8 @@ tutti esistenti.
   del DM: il gate vede i percorsi fra backtick in tutti i sorgenti,
   `contenuti_nei_rami.py` dà un posto ai file rimasti nei rami, e la D22 ha
   dato un esito a tutti e quattro. Resta **4i-3**, la protezione di `main`
-  (misurato `protected: false`), che il DM ha rinviato; e al DM la **D24**, due
-  conferma sulla discesa (dove fugge il Collezionista).
+  (misurato `protected: false`), che il DM ha rinviato; e al DM la **D24**,
+  l'ultima conferma sulla discesa (dove fugge il Collezionista).
 
 ### ② Ricerca sul mestiere — tutta da eseguire
 

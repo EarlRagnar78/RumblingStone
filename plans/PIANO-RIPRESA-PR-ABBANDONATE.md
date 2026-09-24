@@ -1147,7 +1147,7 @@ Vale per **ogni** commit di **ogni** fase.
 | ~~D17~~ | F4 · 4d-4 | ✅ **CHIUSA il 2026-09-17 — e la domanda aveva una premessa falsa, trovata dal DM.** Era posta come «i due villain senza scheda: si scrivono, si contano o escono da §3?». 🐛 **Tre delle quattro voci che avevo dichiarato senza scheda ce l'avevano.** Il DM: *«controlla bene negli archi o nel bestiario se c'è qualcosa magari annegato come prosa»*. **Zalkatar** ha uno statblocco a **GS 13** (14d4+70, CA 24) in `09_…/P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md`; **Saarvith + Regiarix** ne hanno uno a **GS 13** in `09_…/P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`, e il file `FASE4` accanto dichiara esplicitamente *«le statistiche sono lì; questo è la regia dello scontro»*; il **Cerchio Druidico** ne ha uno in `Bestiario/mostri/cerchio-druid7-cr7.md`, marcato [ACCEPTED — DM-canon 2026-05-05]. L'errore non è stato non trovarle: ho cercato **solo dentro `Bestiario/`**, e allargando la ricerca ho **troncato l'output a sei righe** concludendo da una lista tagliata. ✅ Non c'era niente da scrivere né da togliere: c'era da **cercare meglio**. Resta **un** buco su 28 (`lathander-mask`), ed è corretto. ⚠️ **Conseguenza di progetto**: una scheda non vive per forza nel `Bestiario/`, e un cancello tarato lì avrebbe continuato a dare per mancanti due boss da GS 13. Nasce **R13**, che mette alla prova ogni buco dichiarato contro tutto il repo. Vedi **§4.8.10** e [ADR-0053](adr/ADR-0053-la-chiave-verso-il-bestiario-si-dichiara.md) |\n| ~~D6~~ | F1 | ✅ **decisa 2026-09-04: ridisegnata.** `…P1C` mappa 3 dichiarava 40×40 e aveva righe da 24 a 26 celle: rifatta **26×29**, nessuna coordinata del testo cambiata |
 | ~~D18~~ | F4 · 4d-6 | ✅ **DECISA E ATTUATA il 2026-09-17, nello stesso commit.** Il DM: *«spezzarli per intestazione verificando che non esistano già»*. Il catalogo portava **19 record intitolati al documento** invece che alla creatura, perché `build_monster_catalog.py` faceva **un record per file** e prendeva il primo GS: «Parte 2A – Torre Invisibile», GS 10. **19 → 8**, pool **372 → 397**. 🔎 Quel che ne è uscito non sono comparse: gli **otto fantini del Palio**, i **Sicari di Sonjak**, il Gonfaloniere Aldemar Vosk, la Drow Chierica di Lolth, gli esempi d'onda di Rethmar — tutti chiusi dentro un record solo. ⚠️ **La deduplica è ancorata a un fatto dichiarato**: si confrontano i nomi **solo** dentro l'insieme delle voci del Bestiario che citano *quel* documento come `Source`. È il modo di rispettare ADR-0053 (un matcher permissivo traveste l'ignoranza) senza rinunciare a dedurre: il legame documento↔voce l'ha scritto qualcuno, la somiglianza sceglie solo *quale* voce sta per *quale* intestazione. 🔴 **E il rischio opposto ha il suo presidio**: il record di file sparisce solo quando **ogni** creatura che il documento nomina ha già la sua voce — gli otto che restano sono quelli dove non è vero, e toglierli significherebbe meno rumore e **meno creature**. 🐛 Due difetti nei nomi generati, trovati misurando: la numerazione del Palio è **multi-livello** (`### 3.2 Drow Chierica`) e lasciava nomi che cominciavano per cifra, e la coda tagliata lasciava parentesi mai chiuse («Aldemar Vosk (LN»). 🔎 **E il cancello nuovo ha trovato un errore mio al primo giro**: contava **due** «Skullcrusher il Nero», perché la voce che avevo appena scritto puntava al file che il drago lo *nomina* soltanto — i numeri stanno in `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md`. Correggendo il puntamento è poi caduto fuori che `P6-INTEGRAZIONE` restava scoperto, e dentro c'erano **Re Thorek I** (Grr 16, il re di mille anni prima che si inginocchia davanti alla Corona) e **Durin Hammerfist**, l'antenato di Othrek: due PNG di canone che non aveva nessuno. Vedi **§4.8.12** e [ADR-0054](adr/ADR-0054-un-archivio-non-e-una-copia.md) |
 | D19 | F4 · 4f | **Il template di `state.yaml` per un gruppo nuovo: scheletro o derivato?** Oggi il reset non tocca `state.yaml` e il gruppo nuovo eredita 750 righe del primo tavolo (§4.10.0). 4f-1 applica lo **scheletro** della #99: `png` resta (è prodotto: 28 voci con la chiave del Bestiario), ogni altra sezione riparte da un segnaposto dichiarato, March Day 1. L'alternativa è un template **derivato** che tenga le agende preparate dei 13 villain coi clock a zero e gli archi tutti «da giocare»: è più utile a chi riparte, ma ogni agenda porta scritto ciò che il primo tavolo ha già cambiato, quindi è una revisione riga per riga (classe **K**). 🔵 Proposta: lo scheletro adesso, il derivato solo se un secondo tavolo parte davvero |
-| D20 | F4 · 4f-2 | **Lo split di `campaign-history.md` si fa come in §4.10.4?** La regola è già decisa in ADR-0050 §7 (premessa = prodotto, cronaca = partita), ma il lotto è **K**: sposta il canone fra due file e tocca undici rimandi, due dei quali citano un numero di riga. Una sola parola cambia posto: «Il Collezionista (Rakshasa, **ESCAPED**)» sta nel grafo dei villain, che è premessa, ed è un evento del primo tavolo. 🔵 Proposta: split per sezione come in tabella, «ESCAPED» nella cronaca, `plans/` non toccato. Finché D20 è aperta il reset stampa `campaign-history.md` fra i `PENDENTI` |
+| ~~D20~~ | F4 · 4f-2 | ✅ **DECISA E ATTUATA il 2026-09-24, nello stesso commit.** Il DM: *«D20 ok ma non tralasciare nulla»*. Split per sezione come in §4.10.4: **528 righe su 528** ritrovate nelle due metà (controllate contro git da un test), nessuna duplicata, una sola parola spostata («ESCAPED», che la cronaca racconta già tre volte). Tredici rimandi aggiornati in undici file; restano sul nome vecchio i documenti datati (`plans/`, l'audit IP, la baseline del 21 settembre), come registro di quando sono stati scritti |
 
 ---
 
@@ -2341,7 +2341,7 @@ dovrà conoscere `state.yaml`, `state-changelog.md` e adesso anche il
 front-matter), **4g** (schede PG a dati), **4h** (`groups/<slug>/`, PR
 dedicata).
 
-### 4.10 · Lotto **4f** — prodotto e partita `[4f-0 ✅ audit · 4f-1 ✅ · 4f-2 🔵 attende D20 · 4f-3 ⬜]`
+### 4.10 · Lotto **4f** — prodotto e partita `[4f-0 ✅ audit · 4f-1 ✅ · 4f-2 ✅ · 4f-3 ⬜ · D19 ⬜]`
 
 > `[C costruzione, con un sotto-lotto K (4f-2) · Opus, sessione principale ·
 > alto · un test che esegue il reset su una copia dei file veri e dimostra che
@@ -2460,6 +2460,48 @@ com'erano, perché sono il registro di quando sono stati scritti.
 (tranne la parola spostata), e un test verifica che la premessa non nomini i
 quattro PG fuori dai titoli degli artefatti. Dopo lo split `campaign-history.md`
 esce dai `PENDENTI` e la cronaca entra nella partita, con un suo template.
+
+#### 4.10.5 · Com'è andato 4f-2 (2026-09-24) — premessa e cronaca
+
+Il DM: *«D20 ok ma non tralasciare nulla»*.
+
+| File | Righe | Contenuto |
+|---|---:|---|
+| `campaign/lore/campaign-premise.md` | 110 | intestazione nuova; AP, Setting, System, Theme; i due rimandi di testa; PART 4 (grafo dei villain) e PART 5 (riferimenti); l'indice dei rimandi |
+| `campaign/lore/campaign-chronicle.md` | 564 | intestazione nuova; titolo e «single source» originali; Party Name e Current Level; The Party e No-Rogue Strategy; PART 2 e PART 3 |
+| `campaign/templates/chronicle-blank.md` | — | la cronaca vuota per un gruppo nuovo; la premessa non ha template perché non si azzera |
+
+**Niente tralasciato, e come si sa.** Le righe non banali del file di prima
+erano **528**: sono tutte in una delle due metà, nessuna in entrambe.
+`test_nessuna_riga_persa_nello_split` lo verifica **contro git**, cercando
+l'ultimo commit in cui `campaign-history.md` esisteva, e non contro una copia
+fatta al momento. L'unica riga cambiata è quella del grafo dei villain, «(Rakshasa,
+ESCAPED)» → «(Rakshasa)». La fuga resta nella cronaca, che la raccontava già alle
+righe 92, 94 e 459 del file di prima.
+
+**I rimandi**: tredici, in undici file. Le quattro pagine della skill
+`rumblingstone-campaign` (compresa la gerarchia delle fonti, dove la cronaca e
+la premessa prendono insieme il terzo posto), tre file dell'arco 09, la
+Cerimonia delle 100 Asce, `Belkram.md` e `RETROATTIVI-ARC07-INFERRED.md`
+(«r.26» diventa «r.39», la stessa riga della tabella del party),
+`dm-player-strategy.md`, la regola in testa a `state.md`, `AGENTS.md`.
+**Restano sul nome vecchio, di proposito**, i documenti datati: `plans/`, l'audit
+IP del settembre, la baseline dei punteggi del 21 settembre (lo strumento conta
+già i file «spariti»), e un commento storico in `render_state.py`.
+
+⚠️ **Un difetto di canone trovato e non corretto.** La tabella del party dà
+Hella «✅ Alive (died in arc 06, resurrected as Treant Hybrid)»: è lo stato
+**preparato**. Al tavolo Hella è morta (`state.yaml`, `stato: morto`). La #99
+l'aveva marcato il 6 agosto e la correzione non è mai arrivata su `main`. Lo
+split sposta righe e non le riscrive: la cronaca lo dichiara in testa, e la
+riga si corregge nel lotto del canone, non qui.
+
+| Prova | Esito |
+|---|---|
+| i test della #99, portati | ✅ i due file esistono e il vecchio no; la premessa non racconta eventi (sei stringhe, che la cronaca deve contenere tutte); la cronaca contiene i quattro PG |
+| il reset | ✅ la cronaca si azzera dal suo template, la premessa resta identica; `PENDENTI` è vuoto |
+| 🔴 i cancelli mordono | ✅ **3 mutazioni su 3** rosse: una riga persa, «ESCAPED» di nuovo nel grafo (la prima prova la metteva nell'intestazione, che il test esclude: era la mutazione a sbagliare), la cronaca tolta dall'elenco della partita |
+| non-regressione | ✅ **1.248** test; `validate_skills` dopo il build, `validate_docs` e `--sorgenti`, `validate_modules`, `validate_bestiario`, `validate_state`, `render_state --check` |
 
 ## Come si misura che il piano è finito
 

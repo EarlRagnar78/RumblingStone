@@ -206,6 +206,16 @@ Il presidio non è la disciplina ma un test: `test_new_group.py` verifica che
 **ogni** file di stato sia coperto dal reset e che i template non contengano
 tracce del primo gruppo. La falla si riapre solo ignorando un test rosso.
 
+**Attuazione (2026-09-24, lotto 4f di `PIANO-RIPRESA-PR-ABBANDONATE` §4.10).**
+Quando questa ADR è arrivata su `main` col lotto 4d-1, il paragrafo qui sopra
+descriveva un test che **non c'era**. Cercato in tutti i rami e in tutte le 160
+PR del repo: è stato scritto **una volta sola**, il 2026-08-06, nel commit
+`c825d6d` della #99, che è ancora aperta. Nessuna PR chiusa lo contiene e `main`
+non l'ha mai avuto, come i template e lo split. Il test di oggi è riscritto da
+capo (4f-1, 4f-2): legge l'elenco della partita da `dmcore/partita.py` invece di
+analizzare lo script bash, esegue il reset su una copia dei file veri, e porta
+dentro i tre controlli della #99 sulla premessa e la cronaca.
+
 **Cosa questo lotto NON decide**: se il multi-gruppo debba restare
 *branch-per-gruppo* o diventare *directory-per-gruppo* (`groups/<nome>/`). La
 seconda è strutturalmente migliore — `main` tornerebbe a essere solo prodotto e

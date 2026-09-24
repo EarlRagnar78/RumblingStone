@@ -1,7 +1,7 @@
 # RumblingStone Campaign — Story Arc Reference (Agent Navigation)
 
 Quick-lookup reference for AI agents needing campaign state, arc progression, and narrative context.
-For full narrative details, see `campaign/lore/campaign-history.md`.
+For full narrative details, see `campaign/lore/campaign-chronicle.md` (this table) and `campaign/lore/campaign-premise.md` (shared premise).
 
 ---
 
@@ -148,5 +148,5 @@ Battle of Rethmar (Arc 09-P3, 5 Phases):
 | Cannath Vale map and locations | `references/fr-cannath-vale.md` |
 | All factions (canonical + custom) | `references/fr-factions.md` |
 | DM tools, quests, monster art | `references/dm-expansion-toolkit.md` |
-| Full narrative history | `campaign/lore/campaign-history.md` |
+| Full narrative history | `campaign/lore/campaign-chronicle.md` |
 | House rules | `campaign/lore/house-rules.md` |

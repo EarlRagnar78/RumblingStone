@@ -24,7 +24,7 @@ campaign/
 ├── recaps/                  # Generated recaps (group and per-PC)
 ├── ai-media-prompts/        # Image/audio prompt masters (ADR-0015)
 ├── templates/               # Blank state + session templates for new groups
-└── lore/                    # House rules, campaign history, DM/player strategy
+└── lore/                    # House rules, premise (shared) + chronicle (per group), DM/player strategy
 
 # NPCs, locations and encounters do NOT live under campaign/. NPC and villain
 # cards are in Bestiario/png/ and Bestiario/villain/; locations and encounters

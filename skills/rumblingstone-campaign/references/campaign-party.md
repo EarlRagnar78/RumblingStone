@@ -252,4 +252,4 @@ After the destruction of Drellin's Ferry (where Thorik died and was resurrected)
 - **Allied reinforcements:** Hammerfist dwarves, Circle of Eight, Druid Circle (conditional), Tiri Kitor elves (conditional), Ghostlord (negotiable)
 
 For full story arc details: `references/campaign-story-arcs.md`
-For full narrative history: `campaign/lore/campaign-history.md`
+For full narrative history: `campaign/lore/campaign-chronicle.md`

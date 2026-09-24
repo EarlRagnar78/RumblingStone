@@ -19,7 +19,7 @@ lower-rank file as needing an update.
 ```
 1. campaign/state.md                                 (most recent truth)
 2. skills/rumblingstone-campaign/references/*.md     (structured truth)
-3. campaign/lore/campaign-history.md                  (prose narration)
+3. campaign/lore/campaign-chronicle.md + campaign-premise.md  (prose narration)
 4. SRD / FR canon                                     (default backdrop)
 5. Inferred / model knowledge                         (last resort, must be flagged)
 ```

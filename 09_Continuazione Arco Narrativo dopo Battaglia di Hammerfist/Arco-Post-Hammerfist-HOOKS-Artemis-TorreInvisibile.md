@@ -123,7 +123,7 @@ Per ogni notte di viaggio, Artemis ha un sogno **leggermente più nitido**:
 
 #### Cornice retroattiva (canon richiamato)
 
-Artemis a Belkram (Arco 04) **rifiutò la prestige class Lord of Sun and Shadow** offerta congiuntamente da **Lathander** (sole, alba, rinascita) e **Mask** (ombra, segreto, ladroneria). Il rifiuto fu esplicito; l'Anello evolse per assorbire le essenze divine **diversamente** (vedi `campaign/lore/campaign-history.md` §Phase C — Belkram + Eternal Forge sub-quests, e `PG/Artefatti/Artefatti-Pg/PrestigeClass/lord_sun_shadow/`).
+Artemis a Belkram (Arco 04) **rifiutò la prestige class Lord of Sun and Shadow** offerta congiuntamente da **Lathander** (sole, alba, rinascita) e **Mask** (ombra, segreto, ladroneria). Il rifiuto fu esplicito; l'Anello evolse per assorbire le essenze divine **diversamente** (vedi `campaign/lore/campaign-chronicle.md` §Phase C — Belkram + Eternal Forge sub-quests, e `PG/Artefatti/Artefatti-Pg/PrestigeClass/lord_sun_shadow/`).
 
 Le due divinità **non hanno preso bene** il rifiuto, ma **non l'hanno punito**. Lathander è una divinità di pazienza generativa; Mask è una divinità di pazienza venatoria. Entrambi hanno aspettato.
 

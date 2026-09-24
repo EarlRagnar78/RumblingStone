@@ -116,7 +116,8 @@ class TestIlResetSuiFileVeri(unittest.TestCase):
         self.assertEqual(nuovo, md)
 
     def test_non_eredita_niente_della_partita(self):
-        for rel in ("campaign/state.yaml", "campaign/state.md", "campaign/state-changelog.md"):
+        for rel in ("campaign/state.yaml", "campaign/state.md", "campaign/state-changelog.md",
+                    "campaign/lore/campaign-chronicle.md"):
             testo = self._testo(rel)
             for nome in PG_DEL_PRIMO:
                 with self.subTest(file=rel, pg=nome):
@@ -138,8 +139,8 @@ class TestIlResetSuiFileVeri(unittest.TestCase):
     def test_il_prodotto_resta(self):
         dati = yaml.safe_load(self._testo("campaign/state.yaml"))
         self.assertEqual(dati["png"], STATO_VERO["png"], "l'anagrafica e' prodotto")
-        self.assertEqual(self._testo("campaign/lore/house-rules.md"),
-                         (ROOT / "campaign" / "lore" / "house-rules.md").read_text(encoding="utf-8"))
+        for rel in ("campaign/lore/house-rules.md", "campaign/lore/campaign-premise.md"):
+            self.assertEqual(self._testo(rel), (ROOT / rel).read_text(encoding="utf-8"), rel)
 
     def test_la_via_di_scrittura_funziona_sul_gruppo_nuovo(self):
         """Il primo `session end` del gruppo nuovo scrive, e la vista segue."""
@@ -167,6 +168,66 @@ class TestIlResetSuiFileVeri(unittest.TestCase):
         azzera_partita.azzera(self.radice)
         for rel, testo in prima.items():
             self.assertEqual(self._testo(rel), testo, rel)
+
+
+LORE = ROOT / "campaign" / "lore"
+PREMESSA = LORE / "campaign-premise.md"
+CRONACA = LORE / "campaign-chronicle.md"
+#: Eventi di questo tavolo, presi dal test della #99 (`c825d6d`) e dal file di
+#: oggi: la cronaca li racconta, la premessa non deve dirli.
+EVENTI = ("Hella Oakenshield DIES", "Thorik passes trial", "Artemis REJECTS",
+          "Hella returns as Treant", "ESCAPED", "Current Level")
+
+
+class TestLaPremessaELaCronaca(unittest.TestCase):
+    """Lotto 4f-2, decisione D20: `campaign-history.md` diviso in due."""
+
+    def test_i_due_file_esistono_e_il_vecchio_non_c_e_piu(self):
+        self.assertTrue(PREMESSA.exists())
+        self.assertTrue(CRONACA.exists())
+        self.assertFalse((LORE / "campaign-history.md").exists(),
+                         "andava diviso, non duplicato")
+
+    def test_la_premessa_non_racconta_eventi_del_tavolo(self):
+        """L'invariante della #99: non «la premessa non nomina mai un PG»,
+        troppo stretto dove gli artefatti portano il nome del portatore, ma
+        «la premessa non afferma cosa e' successo»."""
+        testo = PREMESSA.read_text(encoding="utf-8")
+        corpo = testo.split("\n---\n", 1)[1]  # l'intestazione cita «ESCAPED» per spiegarlo
+        self.assertEqual([e for e in EVENTI if e in corpo], [])
+        self.assertNotIn("| PC | Race |", testo, "la tabella del party e' cronaca")
+
+    def test_gli_eventi_sono_nella_cronaca(self):
+        """Senza questo, il test di sopra passerebbe anche con gli eventi persi."""
+        testo = CRONACA.read_text(encoding="utf-8")
+        self.assertEqual([e for e in EVENTI if e not in testo], [])
+        for nome in PG_DEL_PRIMO:
+            self.assertIn(nome, testo)
+
+    def test_nessuna_riga_persa_nello_split(self):
+        """Contro git, non contro una copia fatta al momento: l'ultimo commit in
+        cui `campaign-history.md` esisteva, trovato per contenuto."""
+        import subprocess
+        log = subprocess.run(["git", "log", "--format=%H", "--", "campaign/lore/campaign-history.md"],
+                             cwd=ROOT, capture_output=True, text=True).stdout.split()
+        prima = None
+        for sha in log:
+            r = subprocess.run(["git", "show", f"{sha}:campaign/lore/campaign-history.md"],
+                               cwd=ROOT, capture_output=True, text=True)
+            if r.returncode == 0:
+                prima = r.stdout
+                break
+        if prima is None:
+            self.skipTest("campaign-history.md non e' nella storia (clone shallow?)")
+        banale = lambda r: r.strip() in ("", "---")  # noqa: E731
+        from collections import Counter
+        attese = Counter(r for r in prima.splitlines() if not banale(r))
+        spostata = "        │   ├── Il Collezionista (Rakshasa, ESCAPED)"
+        attese[spostata] -= 1
+        attese[spostata.replace(", ESCAPED", "")] += 1
+        oggi = Counter(r for f in (PREMESSA, CRONACA)
+                       for r in f.read_text(encoding="utf-8").splitlines() if not banale(r))
+        self.assertEqual(sum((attese - oggi).values()), 0, list((attese - oggi))[:5])
 
 
 class TestIlResetSiFermaPrimaDiScrivere(unittest.TestCase):

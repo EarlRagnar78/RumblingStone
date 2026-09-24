@@ -37,6 +37,9 @@ PARTITA: "tuple[Voce, ...]" = (
          "poi le regioni `gen:state:` si rigenerano dal nuovo state.yaml"),
     Voce("campaign/state-changelog.md", "template",
          "campaign/templates/state-changelog-blank.md", "storico append-only"),
+    Voce("campaign/lore/campaign-chronicle.md", "template",
+         "campaign/templates/chronicle-blank.md",
+         "la cronaca del tavolo; la premessa (`campaign-premise.md`) e' prodotto e resta"),
     Voce("campaign/sessions/*.md", "svuota", nota="i log del gruppo di prima"),
     Voce("campaign/recaps/*.md", "svuota", nota="recap di gruppo e per PG"),
     Voce("campaign/recaps/pg/*.md", "svuota"),
@@ -50,7 +53,6 @@ PARTITA: "tuple[Voce, ...]" = (
 
 #: Partita dichiarata che il reset NON tocca ancora, col lotto che la chiude.
 #: Il reset la stampa a ogni esecuzione: una falla nota resta in vista.
-PENDENTI: "dict[str, str]" = {
-    "campaign/lore/campaign-history.md":
-        "mescola premessa (prodotto) e cronaca (partita): lo split e' il lotto 4f-2",
-}
+#: Vuoto dal lotto 4f-2 (2026-09-24), che ha diviso `campaign-history.md` in
+#: premessa e cronaca: era l'unica voce.
+PENDENTI: "dict[str, str]" = {}

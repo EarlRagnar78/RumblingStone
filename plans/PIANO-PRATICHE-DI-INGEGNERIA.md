@@ -1,6 +1,6 @@
 # PIANO — Le pratiche d'ingegneria del 2026, misurate sul repo
 
-> **Stato**: 🔵 pianificato (2026-09-24) · **Classe**: G per la scelta, C per i lotti
+> **Stato**: 🔵 pianificato (2026-09-24), **D1-D5 decise dal DM lo stesso giorno: sì a tutte** · **Classe**: G per la scelta, C per i lotti
 > **Nasce da**: domanda del DM del 2026-09-24, dopo la
 > [RICERCA-BDD-O-TDD](RICERCA-BDD-O-TDD-2026-09.md): *«non ha senso invece
 > integrare gli aspetti positivi di entrambi e limitare quelli negativi? Cioè,
@@ -201,13 +201,18 @@ pratica nuova che la fa diventare rossa si corregge o si toglie.
 
 | # | Lotto | Domanda |
 |---|---|---|
-| D1 | PI-2 | **La soglia delle 400 righe di codice per PR, come avviso in CI?** Oggi 13 merge su 34 la superano, e questa PR la supera di otto volte. Proposta: sì, avviso e non blocco |
-| D2 | PI-3 | **Dependabot, scansione dei segreti con push protection, `pip-audit`?** Le prime due si attivano nelle impostazioni del repository e sono gratuite perché il repo è pubblico. Proposta: sì a tutte e tre, `pip-audit` non bloccante per un mese |
-| D3 | PI-6 | **Le PR che toccano il canone si mergiano solo dopo la tua lettura dell'elenco?** Proposta: sì. Il resto lo verificano i gate |
-| D4 | PI-1 | **Il merge automatico delle PR verdi**, una volta protetto `main`? Proposta: sì, ed è ciò che rende economiche le PR piccole |
-| D5 | PI-2 | **I 39 rami remoti già interamente su `main` si cancellano?** L'elenco lo produce `misura_flusso`; `contenuti-nei-rami.json` conferma che non portano niente di nuovo. Proposta: sì, dopo che hai visto l'elenco |
+| ~~D1~~ | PI-2 | ✅ **Risposta del DM il 2026-09-24: sì** (*«d1-d5 del piano pratiche di ingegneria sì»*). **La soglia delle 400 righe di codice per PR, come avviso in CI?** Oggi 13 merge su 34 la superano, e questa PR la supera di otto volte. Proposta: sì, avviso e non blocco |
+| ~~D2~~ | PI-3 | ✅ **Risposta del DM il 2026-09-24: sì** (*«d1-d5 del piano pratiche di ingegneria sì»*). **Dependabot, scansione dei segreti con push protection, `pip-audit`?** Le prime due si attivano nelle impostazioni del repository e sono gratuite perché il repo è pubblico. Proposta: sì a tutte e tre, `pip-audit` non bloccante per un mese |
+| ~~D3~~ | PI-6 | ✅ **Risposta del DM il 2026-09-24: sì** (*«d1-d5 del piano pratiche di ingegneria sì»*). **Le PR che toccano il canone si mergiano solo dopo la tua lettura dell'elenco?** Proposta: sì. Il resto lo verificano i gate |
+| ~~D4~~ | PI-1 | ✅ **Risposta del DM il 2026-09-24: sì** (*«d1-d5 del piano pratiche di ingegneria sì»*). **Il merge automatico delle PR verdi**, una volta protetto `main`? Proposta: sì, ed è ciò che rende economiche le PR piccole |
+| ~~D5~~ | PI-2 | ✅ **Risposta del DM il 2026-09-24: sì** (*«d1-d5 del piano pratiche di ingegneria sì»*). L'elenco misurato dopo `git fetch --prune` è di **38** rami, ed è nella risposta al DM dello stesso giorno: si cancellano quando il DM lo conferma. **I 39 rami remoti già interamente su `main` si cancellano?** L'elenco lo produce `misura_flusso`; `contenuti-nei-rami.json` conferma che non portano niente di nuovo. Proposta: sì, dopo che hai visto l'elenco |
 
 PI-4 non ha una decisione qui: dipende dalla D6 di CICLO-SESSIONE.
+
+⚠️ **Da non confondere**: queste sono `PRATICHE#D1`-`D5`. Le D1-D6 di
+[PIANO-CICLO-DI-SESSIONE-E-MENU](PIANO-CICLO-DI-SESSIONE-E-MENU.md) §8 sono
+altre decisioni (cronaca automatica, alleanze, prosa, menu, immagini, BDD), e
+restano **aperte**.
 
 ## §8 · Ordine
 
@@ -218,7 +223,7 @@ PR sua: il primo esercizio della norma di PI-2 è questo piano stesso.
 ## Checklist di avanzamento
 
 - ✅ Fase 1 · audit (§2, 2026-09-24)
-- ⬜ PI-1 · `main` protetto e merge automatico (DM, con 4i-3)
+- ⬜ PI-1 · `main` protetto e merge automatico (DM, con 4i-3; le istruzioni passo passo sono state date al DM il 2026-09-24)
 - ⬜ PI-3 · Dependabot, segreti, `pip-audit`
 - ⬜ PI-6 · canone toccato nella PR
 - ⬜ PI-2 · `misura_flusso` e la norma delle 400 righe

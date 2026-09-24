@@ -122,7 +122,9 @@
 
 ### PIANO-PRATICHE-DI-INGEGNERIA
 - ✅ _(D1-D5 decise dal DM il 2026-09-24: sì a tutte)_
-- ⬜ _(DM: attivare nelle impostazioni protezione di `main`, merge automatico, scansione dei segreti con push protection, Dependabot; confermare i 38 rami da cancellare)_
+- 🟡 _(impostazioni attivate dal DM il 2026-09-24: `main` protetto; la revisione con l'IA di GitHub fallisce per il modello, da sistemare nelle impostazioni)_
+- ⬜ _(pulizia dei 38 rami già su `main` (D5 sì), nella conversazione successiva: STATO-E-ORDINE §7)_
+- ✅ _(D6 = (a): un ramo e una PR per lotto)_
 - ⬜ _(PI-3, PI-6, PI-2, PI-5 in PR separate; PI-4 dopo la D6 di CICLO-SESSIONE)_
 
 ### PIANO-AUTOMAZIONE-STATO-SESSIONI

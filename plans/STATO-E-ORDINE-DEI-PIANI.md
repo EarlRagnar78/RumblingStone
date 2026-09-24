@@ -129,6 +129,7 @@ settembre, e non conosceva la #143.*
 | PR | Verdetto | Dove sta scritto | Che si fa |
 |---|---|---|---|
 | **#143** | contenuto portato su `main` | `PIPELINE-IBRIDE`, riga del CHANGELOG del 2026-09-24 | ✅ **chiusa il 2026-09-24**: il piano è entrato con la #160, l'ADR come **0067** (lo 0050 era occupato) |
+| **#160** | lotti 4e, 4f, 4i di RIPRESA-PR, CICLO-SESSIONE, RICERCA-BDD, PRATICHE | CHANGELOG del 2026-09-24 | ✅ **mergiata il 2026-09-24**. Cosa ha lasciato aperto: §7 |
 | **#106** | abbandonata, **non** superata | ① F3 · 3d | resta aperta finché il DM non ha fatto il collaudo SDXL (D2): serve la sua GPU |
 | **#99** | abbandonata, **non** superata | ① F4 · 4f, 4g, 4h | si svuota: restano tre lotti, e 4h vuole una PR sua |
 
@@ -201,7 +202,7 @@ riuscita non si sa descrivere è un lotto tagliato male.
 
 <!-- auto:begin key=decisioni-dm -->
 
-**15 aperte** · 41 chiuse — generato da `scripts/decisioni_dm.py --emit`, non si scrive a mano.
+**15 aperte** · 42 chiuse — generato da `scripts/decisioni_dm.py --emit`, non si scrive a mano.
 
 | # | Piano | Ambito | Domanda |
 |---|---|---|---|
@@ -226,6 +227,7 @@ riuscita non si sa descrivere è un lotto tagliato male.
 | ~~D3~~ | `PRATICHE` | PI-6 | ✅ **Risposta del DM il 2026-09-24: sì** (*«d1-d5 del piano pratiche di ingegneria sì»*). **Le PR che toccano il canone si mergiano solo dopo la tua lettura dell'elenco?** Proposta: sì. Il resto lo verificano i gate |
 | ~~D4~~ | `PRATICHE` | PI-1 | ✅ **Risposta del DM il 2026-09-24: sì** (*«d1-d5 del piano pratiche di ingegneria sì»*). **Il merge automatico delle PR verdi**, una volta protetto `main`? Proposta: sì, ed è ciò che rende economiche le PR piccole |
 | ~~D5~~ | `PRATICHE` | PI-2 | ✅ **Risposta del DM il 2026-09-24: sì** (*«d1-d5 del piano pratiche di ingegneria sì»*). L'elenco misurato dopo `git fetch --prune` è di **38** rami, ed è nella risposta al DM dello stesso giorno: si cancellano quando il DM lo conferma. **I 39 rami remoti già interamente su `main` si cancellano?** L'elenco lo produce `misura_flusso`; `contenuti-nei-rami.json` conferma che non portano niente di nuovo. Proposta: sì, dopo che hai visto l'elenco |
+| ~~D6~~ | `PRATICHE` | tutti | ✅ **Risposta del DM il 2026-09-24: (a).** **Come si esegue la regola di D1 dopo la #160?** (a) un ramo e una PR per lotto, (b) si aspetta il merge della #160 e si riparte sullo stesso ramo un lotto alla volta. Da qui ogni lotto di questo piano ha un ramo suo e una PR sua in bozza |
 | ~~D1~~ | `QUALITA-CODICE` | E1 · E3 | ✅ **decisa dal DM il 2026-09-23: sì**, il verificatore condivide il lettore ([ADR-0066](adr/ADR-0066-le-creature-hanno-una-libreria-e-il-verificatore-non-importa-la-scelta.md)). **Il verificatore condivide il lettore?** Oggi lo fa già: importa 23 simboli da `genera_attributi`. **Sì** (consigliato): il lettore va in `dmcore/lettura_creatura.py` e lo usano tutti; l'indipendenza sta nelle regole e nella scelta, che il verificatore non importa mai (E4 lo prova). **No**: il verificatore tiene un lettore suo, copiato, più sicuro contro un errore di lettura condiviso e con una seconda copia da tenere allineata a mano |
 | ~~D2~~ | `QUALITA-CODICE` | E6 | ✅ **decisa dal DM il 2026-09-23: (a)**, vince `genera_attributi`; attuata in E6. **Quale tabella dei ruoli vince?** Dei 6 ruoli di `genera_creatura`, 4 ordinano le caratteristiche diversamente dal profilo corrispondente di `genera_attributi` (schermagliatore, tiratore, blaster, controllore). **(a)** vince `genera_attributi`: cambiano i PNG che `genera_creatura` genera d'ora in poi, nessun blocco del Bestiario; **(b)** vince `genera_creatura`: cambiano gli `attributi` di alcuni dei 15 blocchi scelti dall'array, che il DM vede prima; **(c)** si tengono separate e si dichiara perché |
 | ~~D3~~ | `QUALITA-CODICE` | E9 | ✅ **decisa dal DM il 2026-09-23: sì, subito**; attuata in E9. **`dm.py bestiario` si fa in questo lotto o dopo?** Costa poco e non dipende dalla libreria; farlo prima di E8 vuol dire toccare `dm.py` due volte se un'interfaccia cambia |
@@ -410,3 +412,59 @@ cancello vero su questo è una proposta, non una decisione mia: è in **§6.4**.
 | 🔵 | **Il campione A per il κ** | costa tempo al DM, e senza non si sa se la metrica concorda con lui |
 | ~~🔵~~ | ~~**Un cancello sulle righe di §6.2?**~~ | ✅ **DECISO E ATTUATO dal DM il 2026-09-21, nello stesso giorno in cui è stato proposto.** → [ADR-0063](adr/ADR-0063-i-comandi-citati-si-eseguono.md): `verifica_sezione6.py --check` in CI, in un **job suo** perché esegue i comandi più lenti del repo. 🔒 I tre presidi sul rischio dichiarato — forma rigida (niente pipe, `;`, `&&`, `$()`), allowlist di script, `shell=False` — con **sette prove** che verificano *cosa si rifiuta di eseguire*. 🔎 **E al primo giro ha trovato tre cose**: la riga di F1.1-F1.3 era **già invecchiata di poche ore** (diceva «4 norme su 39», il repo era a 12 su 41), due righe citavano una misura senza dichiarare cosa si aspettassero, e il mio primo criterio dava un **falso positivo** su M1-M3 — `--tetto-el` stampa `✓` perché nessun incontro sfora, ma è verde **a vuoto**: un `⚠` non conta come pulito |
 | 🔵 | **Un EL oltre il tetto si ribilancia o si dichiara?** | è una decisione di difficoltà, e oggi non si sa nemmeno quanti siano |
+
+---
+
+## 7 · 🔁 Ripartire da qui — la tornata del 2026-09-24 (PR #160)
+
+> **Perché questa sezione.** Il DM ha chiesto di mergiare la #160 e di
+> continuare in un'altra conversazione *«con tutto il resto, dalla pulizia a
+> tutto quello che è stato aperto in questa PR e non ancora concluso o
+> integrato in un piano, così siamo sicuri che non ci sia uno script, una
+> tecnica o una discussione che va persa»*. Ogni riga qui sotto rimanda al
+> posto dove la cosa è scritta per intero: questa sezione è l'indice, non la
+> copia.
+
+### 7.1 · Il primo comando, e come si lavora da qui
+
+```bash
+git fetch --prune origin
+python3 scripts/fase1.py <i file che stai per toccare>
+```
+
+Da qui **un lotto = un ramo = una PR in bozza** (PRATICHE D1 e D6). La soglia è
+di 400 righe di codice per PR, contenuti e file generati esclusi. La #160 ne
+aveva 3.357: è il motivo della regola, non un precedente.
+
+### 7.2 · Cosa resta, e dove sta scritto
+
+| | Cosa | Dove | Da dove si parte |
+|---|---|---|---|
+| ⬜ | **Pulizia dei rami già su `main`** (D5 sì, da eseguire qui) | [PRATICHE](PIANO-PRATICHE-DI-INGEGNERIA.md) §7.1 | rimisurare col comando di §7.1 del piano, poi cancellare. Dopo il merge della #160 anche `claude/festive-tesla-tgsauj` è su `main` |
+| ⬜ | **Il registro dei rami dopo il merge**: la voce `pr/160` passa da `in-volo` a `portato`, e la testata di `docs/audit/AUDIT-LEVEL-DESIGN-E-INQUADRATURA.md` esce dalla misura | `plans/contenuti-nei-rami.json` | `python3 scripts/contenuti_nei_rami.py --fetch` |
+| 🟡 | **PI-1 · 4i-3**, `main` protetto: verificato `protected: true`; manca la prova della prima PR indietro rispetto a `main`, e le due righe nella skill `rumblingstone-plans` e nel Playbook | [RIPRESA-PR](PIANO-RIPRESA-PR-ABBANDONATE.md) §4.11.6 | la prima PR del §7.1 che resta indietro |
+| ⬜ | **PI-3**: `dependabot.yml`, `pip-audit`, prova del blocco dei segreti; la revisione con l'IA di GitHub che fallisce per il modello; l'esito di CodeQL JavaScript | PRATICHE PI-3 | primo lotto da fare, ramo suo |
+| ⬜ | **PI-6** canone toccato nella PR, **PI-2** `misura_flusso`, **PI-5** proprietà sui parser, **PI-4** scenari tracciati (dopo CICLO D6) | PRATICHE §5 e §8 | in quest'ordine, una PR ciascuno |
+| ⬜ | **Ciclo di sessione e menu**: Fase 0 (ADR-0068, contratti, D1-D6), poi F1-F4 | [CICLO-SESSIONE](PIANO-CICLO-DI-SESSIONE-E-MENU.md) §5 | le D1-D6 del DM |
+| ⬜ | **RIPRESA-PR** 4g e 4h; PR aperte #99 e #106 | RIPRESA-PR, §3 qui sopra | `python3 scripts/contenuti_nei_rami.py --fetch` |
+| ✅ | **L'esperimento BDD**: feature, step e i 16 mutanti restano come prova riproducibile, fuori dalla CI | [RICERCA-BDD-O-TDD](RICERCA-BDD-O-TDD-2026-09.md) §3 | `plans/esperimenti/bdd-gruppo-nuovo/` |
+
+### 7.3 · Decise in questa tornata, da NON ridiscutere
+
+1. **Nessun YAML a mano** (RIPRESA D19): il DM risponde a domande, il codice
+   scrive. `dm.py gruppo nuovo` è la forma di riferimento.
+2. **Il Collezionista fugge nel Piano del Fuoco, e Varis non è lui**: Varis è un
+   suo informatore (RIPRESA D24, canone). Maur è GS 11.
+3. **Il TDD resta.** Il BDD è misurato: stessi difetti trovati, +42% di righe,
+   dipendenze contro ADR-0037. Se ne tiene la pratica o il framework lo decide
+   CICLO D6; la misura non si rifà.
+4. **Le pratiche d'ingegneria**: sette su dodici c'erano già, tre non si
+   applicano a uno strumento offline. PRATICHE D1-D6 decise.
+
+### 7.4 · Le decisioni aperte al DM che nascono da questa tornata
+
+| Decisione | Dove |
+|---|---|
+| **D1-D6** del ciclo di sessione (cronaca automatica, alleanze, chi scrive la prosa, che menu, immagini, BDD) | CICLO-SESSIONE §8 |
+| La revisione di sicurezza con l'IA di GitHub: cambiare modello o spegnerla | PRATICHE PI-3 |
+

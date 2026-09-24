@@ -143,6 +143,18 @@ Classe **C**, con una parte nelle impostazioni.
 - **SBOM**: rinviato a [PIANO-VENDIBILITA](PIANO-VENDIBILITA.md). Serve quando
   qualcuno riceve il toolkit, non prima.
 
+🔎 **Cosa è successo attivando le impostazioni (2026-09-24).** Insieme alla
+sicurezza si sono accesi due controlli nuovi sulle PR:
+- **CodeQL** (configurazione predefinita): `Analyze (python)` e
+  `Analyze (actions)` verdi al primo giro sulla #160;
+  `Analyze (javascript-typescript)` da guardare alla prossima PR;
+- **`github-advanced-security`**, la revisione di sicurezza con l'IA di GitHub:
+  **fallisce prima di leggere un file**, con `400 The requested model is not
+  supported`. Il modello lo sceglie il servizio, non il repo; il rilancio da
+  una sessione di agente è rifiutato (403). Va sistemato nelle impostazioni
+  (cambiare modello o spegnerla) e **non va messo fra i controlli
+  obbligatori** della regola di `main` finché non è verde.
+
 #### ⬜ PI-4 · Gli scenari del piano, tracciati fino ai test
 `[engine: Sonnet 5 · effort: medio · qualità: uno scenario senza test fa rosso, un test che cita uno scenario inesistente fa rosso; 2 mutazioni su 2]`
 
@@ -207,12 +219,70 @@ pratica nuova che la fa diventare rossa si corregge o si toglie.
 | ~~D4~~ | PI-1 | ✅ **Risposta del DM il 2026-09-24: sì** (*«d1-d5 del piano pratiche di ingegneria sì»*). **Il merge automatico delle PR verdi**, una volta protetto `main`? Proposta: sì, ed è ciò che rende economiche le PR piccole |
 | ~~D5~~ | PI-2 | ✅ **Risposta del DM il 2026-09-24: sì** (*«d1-d5 del piano pratiche di ingegneria sì»*). L'elenco misurato dopo `git fetch --prune` è di **38** rami, ed è nella risposta al DM dello stesso giorno: si cancellano quando il DM lo conferma. **I 39 rami remoti già interamente su `main` si cancellano?** L'elenco lo produce `misura_flusso`; `contenuti-nei-rami.json` conferma che non portano niente di nuovo. Proposta: sì, dopo che hai visto l'elenco |
 
+| ~~D6~~ | tutti | ✅ **Risposta del DM il 2026-09-24: (a).** **Come si esegue la regola di D1 dopo la #160?** (a) un ramo e una PR per lotto, (b) si aspetta il merge della #160 e si riparte sullo stesso ramo un lotto alla volta. Da qui ogni lotto di questo piano ha un ramo suo e una PR sua in bozza |
+
 PI-4 non ha una decisione qui: dipende dalla D6 di CICLO-SESSIONE.
 
 ⚠️ **Da non confondere**: queste sono `PRATICHE#D1`-`D5`. Le D1-D6 di
 [PIANO-CICLO-DI-SESSIONE-E-MENU](PIANO-CICLO-DI-SESSIONE-E-MENU.md) §8 sono
 altre decisioni (cronaca automatica, alleanze, prosa, menu, immagini, BDD), e
 restano **aperte**.
+
+### §7.1 · I rami della D5, misurati il 2026-09-24
+
+Dopo `git fetch --prune`: **38** rami remoti interamente contenuti in
+`origin/main`. Nessuno è un ramo di gruppo `campaign-group-*`, nessuno è la testa
+di una PR aperta (#99, #106). Il DM ha detto sì alla D5 e ha chiesto che la
+pulizia si faccia nella conversazione successiva: prima di cancellare si
+**rimisura**, perché nel frattempo un ramo può aver ricevuto commit.
+
+```bash
+git fetch --prune origin
+for b in $(git for-each-ref refs/remotes/origin --format='%(refname:short)' | grep -v -E 'HEAD|origin/main$'); do
+  git merge-base --is-ancestor "$b" origin/main && echo "${b#origin/}"
+done
+```
+
+| Ultimo commit | Ramo |
+|---|---|
+| 2026-07-01 | `claude/rhod-army-calculations-9TO1B` |
+| 2026-07-02 | `claude/hammerfist-adventure-review-lqmdfu` |
+| 2026-07-02 | `claude/lotto-orphan-subquests-xwyb27` |
+| 2026-07-02 | `claude/lotto-plan-token-availability-ahoco4` |
+| 2026-07-02 | `claude/lucid-bell-yv0vg0` |
+| 2026-07-02 | `claude/palio-channathgate-expansion` |
+| 2026-07-02 | `claude/piano-revisione-arco-09-dh32ad` |
+| 2026-07-03 | `claude/arc-07-09-review-fyxrc0` |
+| 2026-07-03 | `claude/arc-07-09-review-q3p3pp` |
+| 2026-07-03 | `claude/dnd-pathfinder-agent-skills-jjyp6u` |
+| 2026-07-03 | `claude/piano-revisione-arc07-exec-cafnw4` |
+| 2026-07-03 | `claude/piano-revisione-arc08-rumbling-stone-ha5zk2` |
+| 2026-07-10 | `claude/piano-revisione-completion-ujdv60` |
+| 2026-07-12 | `claude/campaign-assets-library-restructure-cx2uti` |
+| 2026-07-19 | `claude/analisi-pr-commit-plan-q94cud` |
+| 2026-07-19 | `claude/palio-compliance-check-enlu8j` |
+| 2026-07-20 | `claude/rumblingstone-campaign-state-management-pgkyc5` |
+| 2026-07-20 | `claude/rumblingstone-content-audit-n000d8` |
+| 2026-07-20 | `claude/rumblingstone-png-assets-ykunrc` |
+| 2026-07-20 | `claude/rumblingstone-skills-update-j7ke6y` |
+| 2026-07-23 | `claude/bugbear-assassin-section-recovery-1pyw3r` |
+| 2026-07-23 | `claude/rumblingstone-forgia-audit-vgzav8` |
+| 2026-07-24 | `claude/freecad-map-generation-qfaow8` |
+| 2026-07-24 | `claude/piani-completare-5b85qg` |
+| 2026-08-23 | `claude/rumblingstone-section-check-ustn8s` |
+| 2026-08-26 | `claude/adventure-game-generation-skills-cevaqt` |
+| 2026-09-01 | `claude/golarion-pathfinder-campaign-xbyvzt` |
+| 2026-09-01 | `claude/rumblingstone-campaign-tools-40pt1b` |
+| 2026-09-03 | `claude/lotto-d-piano-prosa-kj9bbm` |
+| 2026-09-03 | `claude/rumblingstone-analysis-kh4yfa` |
+| 2026-09-03 | `claude/rumblinstone-overdue-plans-nvjy9m` |
+| 2026-09-04 | `claude/monster-png-generation-questions-8c36yp` |
+| 2026-09-04 | `claude/rumblingstione-analysis-enhancement-p44wk5` |
+| 2026-09-21 | `claude/open-prs-plans-review-fu4qcp` |
+| 2026-09-23 | `claude/busy-planck-gkzrur` |
+| 2026-09-23 | `claude/funny-newton-l813cs` |
+| 2026-09-23 | `claude/gallant-sagan-to3cr6` |
+| 2026-09-23 | `claude/youthful-thompson-o1kktp` |
 
 ## §8 · Ordine
 

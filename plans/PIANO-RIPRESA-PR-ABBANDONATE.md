@@ -2532,7 +2532,7 @@ giudizio resta del DM. Si può però ridurlo a una scelta.
 | | Sotto-lotto | Cosa fa | Il DM |
 |---|---|---|---|
 | **4f-4** | il gruppo nuovo da un modulo | `dm.py gruppo nuovo` fa il branch, il reset e il modulo della sessione 0. Il template è **derivato**: villain con agenda, trigger e `png_id` preparati, clock a zero, `stato: attivo`; archi tutti da giocare; numeri di Rethmar come preparati; artefatti senza portatore. Le righe con tracce del primo tavolo si presentano **una alla volta**, con tre scelte: tieni, svuota il campo, segna da rivedere. «Da rivedere» diventa una voce `inferred`, il meccanismo che il repo usa già per le domande aperte | scrive il nome del gruppo e i PG (nome, classe, livello); **sceglie** arco di partenza e risposte |
-| **4f-5** | le proposte diventano domande | le proposte non meccaniche di `state_apply` (alleanze, party, conoscenze) non dicono più «scrivi in `state.yaml`»: diventano domande dello stesso modulo, con i valori possibili già elencati e la scrittura validata come quella del delta | sceglie |
+| **4f-5** → [CICLO-SESSIONE](PIANO-CICLO-DI-SESSIONE-E-MENU.md) 1b | le proposte diventano domande | le proposte non meccaniche di `state_apply` (alleanze, party, conoscenze) non dicono più «scrivi in `state.yaml`»: diventano domande dello stesso modulo, con i valori possibili già elencati e la scrittura validata come quella del delta | sceglie |
 | — | documenti | le tre righe della tabella qui sopra | — |
 
 **Il contratto è il JSON delle risposte, non il modulo.** È la forma che

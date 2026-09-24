@@ -664,7 +664,7 @@
     },
     {
       "name": "session_wizard",
-      "description": "«La sessione è appena finita e ho la testa piena: come fisso quello che è successo prima di dimenticarlo?»\n\nWizard di fine sessione: Q&A con default -> session log canonico conforme al template, committato subito (ADR-0007).",
+      "description": "«La sessione è appena finita e ho la testa piena: come fisso quello che è successo prima di dimenticarlo?»\n\nWizard di fine sessione: Q&A con default -> session log canonico conforme al template, con in testa il front-matter dei delta (villain per png_id, risolti contro state.yaml), committato subito (ADR-0007).",
       "use_case": "«La sessione è appena finita e ho la testa piena: come fisso quello che è successo prima di dimenticarlo?»",
       "invocation": "python3 scripts/session_wizard.py",
       "inputSchema": {
@@ -699,7 +699,7 @@
     },
     {
       "name": "state_apply",
-      "description": "«Le proposte di state_sync le ho lette e vanno bene: come le scrivo senza toccare la prosa che è mia?»\n\nApplica il sottoinsieme meccanico delle proposte di state_sync SOLO nelle regioni marcate 'auto:' di state.md, con diff e conferma (ADR-0007).",
+      "description": "«Le proposte di state_sync le ho lette e vanno bene: come le scrivo senza toccare la prosa che è mia?»\n\nApplica le scritture meccaniche di fine sessione in state.yaml (March Clock, clock e stato dei villain) e lo storico in state-changelog.md, con diff e conferma (ADR-0007); legge il front-matter dei delta del log, e solo senza ricade sulla regex di state_sync.",
       "use_case": "«Le proposte di state_sync le ho lette e vanno bene: come le scrivo senza toccare la prosa che è mia?»",
       "invocation": "python3 scripts/state_apply.py",
       "inputSchema": {
@@ -707,7 +707,7 @@
         "properties": {
           "migrate": {
             "type": "boolean",
-            "description": "Inserisce i marker auto: (idempotente)."
+            "description": "Marca la regione changelog di state-changelog.md (idempotente)."
           },
           "session": {
             "type": "string",
@@ -731,6 +731,8 @@
       },
       "outputs": [
         "campaign/state.md",
+        "campaign/state.yaml",
+        "campaign/state-changelog.md",
         "git-commit"
       ],
       "exit_codes": {
@@ -1870,6 +1872,33 @@
       "deterministic": true
     },
     {
+      "name": "azzera_partita",
+      "description": "«Un gruppo nuovo riparte da zero: cosa si azzera, cosa resta, e la sua CI e' verde?»\n\nAzzera la PARTITA per un gruppo nuovo (stato, storico, sessioni, recap) e lascia il prodotto; l'elenco e' dmcore/partita.py. Valida il nuovo state.yaml prima di scrivere e rigenera state.md (ADR-0050 §7).",
+      "use_case": "«Un gruppo nuovo riparte da zero: cosa si azzera, cosa resta, e la sua CI e' verde?»",
+      "invocation": "python3 scripts/azzera_partita.py",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Elenca cosa verrebbe azzerato, senza scrivere."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "campaign/state.yaml",
+        "campaign/state.md",
+        "campaign/state-changelog.md"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "il nuovo stato non passerebbe validate_state, o manca un template: niente scritto"
+      },
+      "deterministic": false
+    },
+    {
       "name": "campioni_kappa",
       "description": "«Il punteggio dice 97,9: il DM sarebbe d'accordo?» Se non lo e', il numero misura il suo autore.\n\nEstrae i due campioni disgiunti (20+20, stratificati per classe, seme fisso) e calcola il kappa di Cohen fra il giudizio di un valutatore e quello della macchina. Sotto kappa 0,60 la metrica si dichiara NON affidabile e non entra in CI: e' la regola del piano, e il 2026-09-21 ha detto di no (kappa 0,0 con accordo osservato e atteso entrambi a 0,95).",
       "use_case": "«Il punteggio dice 97,9: il DM sarebbe d'accordo?» Se non lo e', il numero misura il suo autore.",
@@ -1934,6 +1963,42 @@
       "exit_codes": {
         "0": "ok",
         "1": "CHANGELOG mancante per modifica strutturale"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "contenuti_nei_rami",
+      "description": "«Si e' perso qualcosa nelle PR chiuse o nei commit spinti dopo un merge, che su main non e' mai arrivato?»\n\nI file che esistono in un ramo o in una PR, chiuse comprese, e mai su main ne' per nome ne' per contenuto. Ogni riga deve avere un posto nel registro plans/contenuti-nei-rami.json; quelle senza posto sono il lavoro perso che si cerca (lotto 4i-2).",
+      "use_case": "«Si e' perso qualcosa nelle PR chiuse o nei commit spinti dopo un merge, che su main non e' mai arrivato?»",
+      "invocation": "python3 scripts/contenuti_nei_rami.py --fetch",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "fetch": {
+            "type": "boolean",
+            "description": "Scarica prima le teste di tutte le PR e i rami di origin (rete)."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Esce 1 se un file mai arrivato non ha un posto nel registro."
+          },
+          "base": {
+            "type": "string",
+            "description": "Il ramo di riferimento."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Report in JSON."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ogni file mai arrivato ha un posto (o nessun ramo da misurare)",
+        "1": "righe senza posto (solo con --check) o registro malformato",
+        "2": "uso errato"
       },
       "deterministic": true
     },
@@ -2037,6 +2102,42 @@
       "exit_codes": {
         "0": "analisi stampata",
         "1": "--check: un bersaglio e' un archivio dichiarato"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "gruppo_nuovo",
+      "description": "«Un altro gruppo rigioca la campagna: come parto dal materiale che c'e' senza aprire un file YAML?»\n\nIl gruppo nuovo da un modulo a domande, senza YAML a mano (D19, lotto 4f-4): deriva lo stato dal prodotto di oggi, chiede gruppo, arco, PG e le righe con tracce del primo tavolo una alla volta (tieni/svuota/rivedi), valida prima di scrivere, crea il ramo campaign-group-<nome>, azzera la partita e committa.",
+      "use_case": "«Un altro gruppo rigioca la campagna: come parto dal materiale che c'e' senza aprire un file YAML?»",
+      "invocation": "python3 scripts/dm.py gruppo nuovo",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "answers": {
+            "type": "string",
+            "description": "Risposte in JSON invece del modulo in terminale."
+          },
+          "domande": {
+            "type": "boolean",
+            "description": "Stampa il modulo come JSON (per un'interfaccia) ed esce."
+          },
+          "dry-run": {
+            "type": "boolean",
+            "description": "Fa le domande e dice cosa farebbe, senza scrivere."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "campaign/state.yaml",
+        "campaign/state.md",
+        "campaign/group.yaml"
+      ],
+      "exit_codes": {
+        "0": "fatto, o dry-run / domande",
+        "1": "risposte non valide, albero sporco, ramo gia' esistente o reset fallito (niente resta scritto)",
+        "2": "uso errato"
       },
       "deterministic": true
     },

@@ -48,6 +48,7 @@ Contratto macchina e vista umana — **generati** dal manifest, sempre allineati
 | [`docs/audit/AUDIT-REPORT.md`](audit/AUDIT-REPORT.md) | Report d'audit degli script (findings azionabili) |
 | [`docs/audit/SCORECARD.md`](audit/SCORECARD.md) | Scorecard 12-assi per script |
 | [`docs/audit/AUDIT-DERIVAZIONE-IP-CAMPAGNA.md`](audit/AUDIT-DERIVAZIONE-IP-CAMPAGNA.md) | Quanto il testo di campagna **nomina** cose di altri, per arco e per 1.000 parole — misura, non parere legale |
+| [`docs/audit/AUDIT-LEVEL-DESIGN-E-INQUADRATURA.md`](audit/AUDIT-LEVEL-DESIGN-E-INQUADRATURA.md) | Scarto fra il toolkit mappe/immagini e il livello di level design richiesto (2026-07-26, dalla PR #72, misure non rifatte) — fonte citata da ADR-0040 e ADR-0048 |
 
 ## 4. Governance & decisioni (ADR)
 
@@ -122,6 +123,7 @@ Il **perché** delle scelte strutturali. Indice completo in [`plans/adr/`](../pl
 | [ADR-0064](../plans/adr/ADR-0064-gli-attributi-si-scrivono-nel-bestiario.md) | **Gli `attributi` si scrivono nel Bestiario, e ognuno dice da dove viene**: emenda ADR-0033 su ordine del DM. Quattro strati — **trascritto** dalla fonte in `pregen-pcgen/` (39 file), letto, derivato, **scelto** dall'array del Manuale del DM con taglia e razza SRD (55) — e una marca `[INFERRED]` per file con provenienza e divergenze. Seme = nome del file; `--check` in CI; si esce togliendo la marca. Lo strato 3 sbaglia di **1,91 punti** sulle fonti, misurato |
 | [ADR-0065](../plans/adr/ADR-0065-la-conformita-si-corregge-dove-il-dato-non-e-una-scelta.md) | **La conformità 3.5 si corregge solo dove il numero sbagliato è uno**: `conformita_statblocchi.py` verifica pf, TS, BAB, lotta e attacco. La riga `attributi` è un'inferenza e i numeri sono del DM; un numero del DM si corregge solo se è l'unico che non torna (11 statblocchi), due numeri opposti sono una decisione del DM (7, in tabella `decisioni-dm`). `pf-dado` registra i dadi vita ovunque: 42 ricostruiti, 4 tolti. Nessuno scarto si spiega con un template PF1e |
 | [ADR-0066](../plans/adr/ADR-0066-le-creature-hanno-una-libreria-e-il-verificatore-non-importa-la-scelta.md) | **Le creature hanno una libreria, e il verificatore non ne importa la scelta**: tre moduli in `dmcore/` separati per chi li può importare. `progressione` (regole di classe e di tipo) e `lettura_creatura` (il lettore, D1 = sì) li usano tutti; `caratteristiche` (la scelta) mai il verificatore, e un test sul grafo degli import lo prova. Gli script restano con la stessa interfaccia; il collaudo è un'impronta di tutto quello che calcolano. `tetti_dai_ts` e `plausibile` vanno nel lettore, perché il verificatore li usa |
+| [ADR-0067](../plans/adr/ADR-0067-il-confine-dichiarato-fra-codice-e-llm.md) | **Il confine fra il codice e l'LLM è dichiarato**: gli script restano deterministici, stdlib e offline; una chiamata a un modello vive solo in un ponte opzionale che degrada pulito, non è mai un passo bloccante della CI e produce candidati, non artefatti |
 
 ## 5. Archivio piani
 

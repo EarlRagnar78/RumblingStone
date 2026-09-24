@@ -2,8 +2,10 @@
 # new-campaign-group.sh
 #
 # Helper to start a new campaign with a new player group, preserving
-# all preparation material (archs, PNGs, skills, maps) and only
-# resetting the "live state" (state.md + sessions/).
+# the PRODUCT (arcs, Bestiario, maps, skills, house rules) and resetting
+# the PARTITA (ADR-0050 §7). What counts as partita is NOT listed here:
+# it is data in scripts/dmcore/partita.py, executed by
+# scripts/azzera_partita.py and checked by scripts/tests/test_new_group.py.
 #
 # Usage:
 #   ./scripts/new-campaign-group.sh <new-group-name> [--backup-current <current-group-name>]
@@ -38,8 +40,8 @@ fi
 # --- sanity checks ---
 command -v git >/dev/null || err "git not found"
 [[ -d ".git" ]] || err "not a git repo"
-[[ -f "campaign/templates/state-blank.md" ]] || \
-    err "campaign/templates/state-blank.md not found — cannot reset"
+[[ -f "scripts/azzera_partita.py" ]] || \
+    err "scripts/azzera_partita.py not found — cannot reset"
 
 # --- check clean working tree ---
 if ! git diff-index --quiet HEAD --; then
@@ -68,14 +70,11 @@ NEW_BRANCH="campaign-group-$NEW_GROUP"
 echo "==> Creating new branch: $NEW_BRANCH"
 git checkout -b "$NEW_BRANCH"
 
-# --- reset live state ---
-echo "==> Resetting campaign/state.md from template..."
-cp campaign/templates/state-blank.md campaign/state.md
-
-echo "==> Clearing campaign/sessions/*.md..."
-rm -f campaign/sessions/*.md
-# keep a .gitkeep to preserve directory
-touch campaign/sessions/.gitkeep
+# --- reset partita (the list lives in scripts/dmcore/partita.py) ---
+# azzera_partita.py validates the new state BEFORE writing and checks the
+# regenerated state.md after: if it fails, nothing is committed.
+echo "==> Resetting the partita (state, changelog, sessions, recaps)..."
+python3 scripts/azzera_partita.py || err "reset failed — nothing committed, fix and rerun"
 
 # --- commit ---
 git add -A
@@ -86,9 +85,11 @@ echo "=========================================="
 echo "✅ Done. New campaign group '$NEW_GROUP' initialized."
 echo ""
 echo "Next steps:"
-echo "  1. Edit campaign/state.md §1 Party with your new PCs"
-echo "  2. Set starting APL and in-world date"
-echo "  3. git push -u origin $NEW_BRANCH"
-echo "  4. Play session 1, then apply workflow in:"
-echo "     campaign/DM-CAMPAIGN-PLAYBOOK.md §4"
+echo "  1. python3 scripts/dm.py session branch --group $NEW_GROUP   # group.yaml"
+echo "  2. git push -u origin $NEW_BRANCH"
+echo "  3. Play session 1, then: python3 scripts/dm.py session end"
+echo ""
+echo "This reset starts from the EMPTY template. To start from the product"
+echo "with a question form instead (party, arc, one row at a time), use:"
+echo "  python3 scripts/dm.py gruppo nuovo      (Playbook §7.2)"
 echo "=========================================="

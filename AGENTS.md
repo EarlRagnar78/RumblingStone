@@ -24,7 +24,7 @@ campaign/
 ├── recaps/                  # Generated recaps (group and per-PC)
 ├── ai-media-prompts/        # Image/audio prompt masters (ADR-0015)
 ├── templates/               # Blank state + session templates for new groups
-└── lore/                    # House rules, campaign history, DM/player strategy
+└── lore/                    # House rules, premise (shared) + chronicle (per group), DM/player strategy
 
 # NPCs, locations and encounters do NOT live under campaign/. NPC and villain
 # cards are in Bestiario/png/ and Bestiario/villain/; locations and encounters
@@ -62,7 +62,7 @@ regenerate via `dm.py recap --hype` / `dm.py handout`, never edit by hand.
 > **DMs: start with `campaign/DM-CAMPAIGN-PLAYBOOK.md`.** It contains the
 > pre/during/post-session workflow, worked examples for session files and
 > `state.md` diffs, the `§0 Campaign Status At-a-Glance` dashboard, and the
-> branch-per-group reset procedure (`scripts/new-campaign-group.sh`) for
+> branch-per-group reset procedure (`python3 scripts/dm.py gruppo nuovo`) for
 > running this campaign with a new group.
 
 ---
@@ -216,7 +216,7 @@ in modo da eliminare errori di analisi ricorrenti»*.
 |---|---|---|
 | **1** | «questa cosa la misura già qualcuno?» | [`skills/REGISTRO-NORME-EDITORIALI.md`](skills/REGISTRO-NORME-EDITORIALI.md). Se sì **si riusa**: *una norma, un rilevatore* ([RICERCA-STANDARD-PROSA](plans/RICERCA-STANDARD-PROSA-WOTC-PAIZO-2026-09.md) §4) |
 | **2** | «quali skill devo avere aperte?» | [`skills/ORCHESTRAZIONE.md`](skills/ORCHESTRAZIONE.md), le cinque domande. Il bersaglio risponde **da sé** alla 2: un file sotto `plans/` parla al repo, uno d'arco parla al tavolo |
-| **3** | «cosa è archivio, cosa è superato, chi sono i nomi propri?» | i **322 nomi** da `Bestiario/` e `state.md`; `_SNAPSHOT-STORICO.md`; `ESCLUSI_NOME`; le matrici delle versioni |
+| **3** | «cosa è archivio, cosa è superato, chi sono i nomi propri, cosa è rimasto nei rami?» | i **322 nomi** da `Bestiario/` e `state.md`; `_SNAPSHOT-STORICO.md`; `ESCLUSI_NOME`; le matrici delle versioni; i file di rami e PR mai arrivati su `main`, dal registro `plans/contenuti-nei-rami.json` |
 | **4** | «da che numero parto?» | `misura_craft`, sui bersagli veri e non su un campione |
 
 🔴 **Non è una precauzione: è la classifica dei difetti veri.** Quattordici

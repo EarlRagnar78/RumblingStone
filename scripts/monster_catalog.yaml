@@ -1529,8 +1529,8 @@ monsters:
     role: generalist
     environment: urban
     source_file: "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md"
-  - id: il-collezionista-maestro-varis-seta-argento-e1a912
-    name: "Il Collezionista (Maestro Varis \"Seta-Argento\")"
+  - id: il-collezionista-e1a912
+    name: "Il Collezionista"
     cr: 18.0
     faction: rakshasa
     role: boss-shadow-mastermind

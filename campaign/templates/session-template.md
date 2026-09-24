@@ -30,6 +30,11 @@ reveals, and outcomes — not blow-by-blow combat.]
 
 ## World events triggered
 
+> Il wizard (`dm.py session end`) scrive queste righe **e** un front-matter
+> `delta:` in testa al file, coi villain nominati per `png_id`: è da lì che
+> `state_apply` aggiorna `state.yaml`. Scritto a mano senza front-matter, il log
+> passa dalla regex di `state_sync`, che riconosce solo alcuni nomi.
+
 - **March Clock**: Day X → Day Y (+Z)  *(if applicable)*
 - **Ritual Clock Azarr Kul**: n/18 → n+1/18 *(or: no change)*
 - **Villain clocks**: [Sonjak 3→4, Sal 0→1, ...] *(only those touched)*

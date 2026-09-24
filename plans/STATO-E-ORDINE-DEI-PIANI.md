@@ -78,6 +78,7 @@ un fronte in un altro piano?*
 | **②** | [RICERCA-MESTIERE-CARTOGRAFO-E-ILLUSTRATORE](RICERCA-MESTIERE-CARTOGRAFO-E-ILLUSTRATORE.md) | la **F1 (audit)** può partire subito e in parallelo; la **F2 (gate)** dopo la F1 | La F2 senza la F1 tara le soglie a occhio, e un gate tarato male si disattiva entro un mese. La **F3 della ripresa** (la catena raster) è il **committente**: se parte prima che l'audit dica i criteri, automatizza senza saperli |
 | **③** | [PIANO-VENDIBILITA](PIANO-VENDIBILITA.md) | dopo che ① e ② hanno chiuso il cancello di qualità | Il DM ha già deciso: **prima la qualità, poi il mercato**. E il suo blocco **D1** (le immagini non arrivano al volume da stampa) è nel perimetro della ② |
 | **④** | I piani d'arco (`REVISIONE-ARC07/08/09`) | quando l'arco si gioca | Gated sul tavolo, non su di noi |
+| **⑤** | [PIANO-CICLO-DI-SESSIONE-E-MENU](PIANO-CICLO-DI-SESSIONE-E-MENU.md) | Fase 0 appena il DM risponde a D1-D5; la Fase 1 dopo 4f di ① | Aperto il 2026-09-24 dalla D21: assorbe 4f-5. Partire prima di chiudere 4f vorrebbe dire scrivere il delta allargato su un reset che cambia ancora |
 
 ### Le due sovrapposizioni da non creare
 
@@ -94,16 +95,24 @@ tutti esistenti.
 
 ## 3 · Cosa resta da fare, per piano
 
-### ① Ripresa PR abbandonate — F0 ✅, restano F1-F4
+### ① Ripresa PR abbandonate — F0, F1, F2 ✅; F3 e F4 in corso
 
-- **F1 · #63** — le 14 griglie tattiche di Hammerfist che al tavolo mancano,
-  **3Y compresa**. Contenuto pronto e verificato byte-identico. ⚠️ Il gate di
-  ADR-0043 adesso **forza** la decisione D1 invece di lasciarla al diff.
-- **F2 · #52** — l'overlay `@` sui master scritti a mano. Costo: **una
-  rinominazione**.
-- **F3 · #106** — la catena raster: **cinque requisiti su sei**, e la fase
-  aggiunge il sesto (`SCARTI.txt`). ⚠️ L'ultimo passo vuole la **GPU del DM**.
-- **F4 · #99** — **a otto lotti**, `validate_docs` per primo.
+- ✅ **F1 · #63** e ✅ **F2 · #52**: chiuse il 2026-09-05, PR chiuse il
+  2026-09-11.
+- 🟡 **F3 · #106**: 3a-3c chiusi. Resta **3d**, che è la decisione D2 del
+  piano: il collaudo SDXL di due immagini accanto alle Gemini, sulla macchina
+  del DM.
+- 🟡 **F4 · #99**: 4a, 4b, 4c, 4d (4d-1 … 4d-8) e **4e** (una sola via di
+  scrittura, 2026-09-24) e **4f** (prodotto e partita, 2026-09-24: la partita
+  è un elenco, la cronaca è separata, `dm.py gruppo nuovo`; 4f-5 è passato al
+  piano del ciclo di sessione per decisione D21) chiusi. Restano **4g** (schede
+  PG a dati), **4h**
+  (`groups/<slug>/`, PR dedicata) e **4i**, aggiunto il 2026-09-24 su richiesta
+  del DM: il gate vede i percorsi fra backtick in tutti i sorgenti,
+  `contenuti_nei_rami.py` dà un posto ai file rimasti nei rami, e la D22 ha
+  dato un esito a tutti e quattro. Resta **4i-3**, la protezione di `main`
+  (misurato `protected: false`), che il DM ha rinviato. La D24 è chiusa: il
+  Collezionista fugge nel Piano del Fuoco, e Varis è il suo informatore.
 
 ### ② Ricerca sul mestiere — tutta da eseguire
 
@@ -113,18 +122,19 @@ sono lo standard.
 
 ### Le PR ancora aperte, oggi
 
+*Rimisurato il 2026-09-24 sull'elenco delle PR aperte del repo. La tabella di
+prima era ferma al 2026-09-04: dava aperte #63, #52 e #67, chiuse l'11
+settembre, e non conosceva la #143.*
+
 | PR | Verdetto | Dove sta scritto | Che si fa |
 |---|---|---|---|
-| **#63** | abbandonata, **non** superata | ① F1 | si svuota — è la prossima |
-| **#52** | abbandonata, **non** superata | ① F2 | si svuota |
-| **#106** | abbandonata, **non** superata | ① F3 | si svuota, serve la GPU del DM |
-| **#99** | abbandonata, **non** superata | ① F4 | si svuota a otto lotti |
-| **#67** | **superata** | `RICONCILIAZIONE-PR` R9 | **si chiude**, niente da recuperare |
+| **#143** | contenuto portato su `main` | `PIPELINE-IBRIDE`, riga del CHANGELOG del 2026-09-24 | ✅ **chiusa il 2026-09-24**: il piano è entrato con la #160, l'ADR come **0067** (lo 0050 era occupato) |
+| **#160** | lotti 4e, 4f, 4i di RIPRESA-PR, CICLO-SESSIONE, RICERCA-BDD, PRATICHE | CHANGELOG del 2026-09-24 | ✅ **mergiata il 2026-09-24**. Cosa ha lasciato aperto: §7 |
+| **#106** | abbandonata, **non** superata | ① F3 · 3d | resta aperta finché il DM non ha fatto il collaudo SDXL (D2): serve la sua GPU |
+| **#99** | abbandonata, **non** superata | ① F4 · 4f, 4g, 4h | si svuota: restano tre lotti, e 4h vuole una PR sua |
 
-⚠️ **Nessuna delle cinque si mergia com'è.** Le quattro abbandonate hanno una
-base di mesi fa: se ne porta il **contenuto**, non i commit. La #67 non ha
-contenuto da portare, e mergiarla rimetterebbe in circolo un handout che detta
-tattica al giocatore.
+⚠️ **Nessuna delle due si mergia com'è.** Hanno una base di agosto: se ne porta
+il **contenuto**, non i commit, come si è fatto con la #143.
 
 ### Code aperte che non sono un piano
 
@@ -192,16 +202,32 @@ riuscita non si sa descrivere è un lotto tagliato male.
 
 <!-- auto:begin key=decisioni-dm -->
 
-**5 aperte** · 30 chiuse — generato da `scripts/decisioni_dm.py --emit`, non si scrive a mano.
+**15 aperte** · 42 chiuse — generato da `scripts/decisioni_dm.py --emit`, non si scrive a mano.
 
 | # | Piano | Ambito | Domanda |
 |---|---|---|---|
+| **D1** | `CICLO-SESSIONE` | F1 · 1c | **La cronaca si aggiorna da sola?** La chiusura aggiungerebbe una voce costruita dal log (Summary e Key decisions) in una regione marcata di `campaign-chronicle.md`. Oggi il vincolo 3 di ADR-0007 ammette scritture automatiche solo nelle regioni `auto:` di `state.md`: dire sì vuol dire estenderlo alla cronaca. Proposta: sì, in una regione marcata in coda |
+| **D2** | `CICLO-SESSIONE` | F1 · 1b | **Le alleanze diventano un dato?** Oggi non esistono in `state.yaml`: `state_sync` le riconosce nel testo del log (Dauth, Rethmar, Starsong, i druidi…) e le stampa. Per farne una domanda serve una tabella nuova (fazione, atteggiamento SRD, nota). È canone: i valori di partenza li scegli tu. Proposta: sì, con gli atteggiamenti SRD (ostile … amichevole) |
+| **D3** | `CICLO-SESSIONE` | F2 · 2d | **Chi scrive la prosa di gioco che manca** (interazioni dei PNG, testo degli handout, echi)? (a) il DM, o una sessione di agente con le skill, partendo dal brief; (b) una bozza del ponte di ADR-0067, che riapre il lotto E-bis escluso il 2026-07-20. Proposta: (a) adesso, (b) da rivalutare dopo il collaudo |
+| **D4** | `CICLO-SESSIONE` | F3 · 3a | **Che menu?** Numerato in testo semplice (libreria standard, funziona ovunque e si avvolge facilmente) oppure a schermo intero con `curses` (che su Windows non c'è). Proposta: numerato |
+| **D5** | `CICLO-SESSIONE` | F2 · 2c | **Le immagini mancanti si generano durante la preparazione?** Serve ComfyUI sulla macchina del DM e minuti per immagine. Proposta: la preparazione le **elenca** e lancia `comfyui_batch` solo se il DM lo chiede |
+| **D6** | `CICLO-SESSIONE` | F0 · 0c | **BDD con un framework, o solo la sua pratica?** Misurato in [RICERCA-BDD-O-TDD-2026-09](RICERCA-BDD-O-TDD-2026-09.md): `behave` trova gli stessi 16 difetti su 16 del TDD, con +42% di righe, +45% di tempo e 3 MB di dipendenze contro ADR-0037; in cambio il `.feature` si legge senza aprire Python. (a) la pratica senza framework: scenari con identificatore in §4, test che li citano, un gate stdlib che li tiene allineati; (b) `pytest-bdd` con un'eccezione ad ADR-0037; (c) niente, come oggi. Proposta: (a) |
+| **D1** | `PIPELINE-IBRIDE` | Lotto A | **Cosa fa il grounding quando trova un difetto in una mappa di canone già giocata?** 🔎 **Non è più una domanda astratta: la misura del 2026-09-16 c'è.** 97 sacche isolate su 40 griglie, di cui **58 con dentro un segnalino di creatura**, 15 porte cieche, 12 griglie che una creatura Grande non attraversa. Una sola sacca è stata verificata a mano fino in fondo, ed **era un difetto vero**: i tre box delle stalle di Tarsilia, chiusi da `🏰` senza `🚪`, con dentro il cavallo che la tattica scritta dice di raggiungere. Le altre 57 **non sono state triangolate**, e il conto grezzo non dice quante siano difetti. Le tre risposte restano: (a) **segnala e basta**, gate non bloccante, canone invariato; (b) **segnala e si correggono le mappe**, cioè toccare griglie approvate; (c) **si esenta il canone esistente**, col rischio dell'esenzione silenziosa che ADR-0032 §1 ha già evitato una volta. 🔵 La proposta resta **(a)**, e adesso con un motivo misurato: 58 segnali non triangolati non possono bloccare una CI. Ma Tarsilia va corretta comunque, perché è un modulo standalone destinato a uscire. ✅ **Tarsilia corretta il 2026-09-24** (variante B: `🧱` e una porta per box); la domanda di D1 resta aperta per le altre 57 |
+| **D2** | `PIPELINE-IBRIDE` | Lotto B · B1 | **Dove vive il contratto d'estrazione dalla prosa?** Dentro `skills/rumblingstone-mapmaking/SKILL.md`, dove ogni agente lo vede sempre e paga i token a ogni conversazione, oppure in un file di riferimento caricato solo quando la skill instrada là. `measure_tokens.py` sa dare il costo delle due strade sullo stesso testo: la domanda si può decidere con un numero invece che a occhio |
+| **D3** | `PIPELINE-IBRIDE` | Lotto E | **Il ponte `llm_bridge.py` si costruisce, o ADR-0067 resta scritta e il codice aspetta?** La proposta è aspettare: con A e B chiusi il ciclo funziona a mano, e allora si vedrà se il ponte fa risparmiare davvero. Serve una risposta solo quando A e B sono chiusi |
+| **D4** | `PIPELINE-IBRIDE` | Lotto D | **Quante scene il DM è disposto ad annotare?** Il banco di misura della prosa esiste solo se qualcuno dice quali testi sono buoni, e l'unico che può dirlo è chi li ha visti funzionare al tavolo. Con zero scene annotate il lotto D copre le prime tre famiglie di §6 e la quarta resta fuori, il che è una risposta legittima e va detta invece che rimandata |
 | **D2** | `MESTIERE-BANCHI` | F2 · S4-S6 | **ARC-08 e ARC-09 si rifiniscono nello stile, o si toccano solo dove manca un congegno operativo al tavolo?** Cambia l'ampiezza dei lotti da «aggiungere una sidebar» a «riscrivere prosa». I due archi sono chiusi come *piano* e ⬜ come *gioco*: la Torre non ha **una sola battuta** in 12 file e la Battaglia Finale **zero read-aloud** in 16, ma nessuno dei due è mai stato giocato, quindi nessuno li ha visti mancare |
 | **D3** | `MESTIERE-BANCHI` | F2 · S2-S3 | **DEF-1 è 🟡 in corso al tavolo: i lotti su di lui restano additivi?** Il piano assume di sì (si aggiungono sidebar, non si riscrive prosa già letta ai giocatori), ma è un'assunzione mia. DEF-1 ha **0 vie non combattive in 2.277 righe**: colmarlo è additivo, ma toccare i suoi read-aloud non lo sarebbe |
 | **D2** | `RIPRESA-PR` | F3 · 3d | **Riformulata il 2026-09-11: la domanda di prima partiva da un fatto falso.** Diceva *«i diciotto raster si generano sulla tua macchina — quando?»*, ma **esistono tutti e diciotto** (più le due extra), generati dal DM **con Gemini** il 2026-08-15, montati nel modulo, `validate_standalone` verde. `comfyui_batch --lista` dava «6 da fare» per un **disallineamento di nomi**, corretto in questo lotto. La domanda vera è: **l'arte del Drappo è di Gemini, la catena di F3 genera con SDXL in locale — quale delle due è il canone del modulo?** Le differenze che contano (ADR-0019 §2, che questo caso l'aveva previsto): Gemini **non espone il seed**, quindi la serie è irripetibile e il PNG è la sorgente; i suoi termini sono un **contratto che cambia**, verificato per di più su fonti secondarie; SDXL è OpenRAIL++-M, **perpetua**. Di contro la provenienza di Gemini è **firmata C2PA**, e SDXL su queste immagini **nessuno l'ha visto**. 🔵 **Metodo scelto dal DM il 2026-09-11: collaudo prima di scegliere** — la decisione **resta aperta**, si chiude quando il DM ha visto il confronto. Il DM: *«voglio fare prima un collaudo con 2 o 3 immagini e vedere davvero la qualità prima di buttare quelle di Gemini, che sono carine»*. Si generano **due o tre** immagini con SDXL in una cartella a parte, si mettono accanto alle attuali, e A (tenere Gemini) o B (rigenerare tutto) si sceglie **guardando**. Il collaudo chiude anche il buco vero di F3 — la catena mai provata contro un ComfyUI reale — al costo di due immagini invece che diciotto |
 | **D11** | `RIPRESA-PR` | F4 · 4b | **L'ADR ex-0018 della #72: recuperato il 2026-09-11 come [ADR-0049](adr/ADR-0049-edizione-commerciale-ap-originale.md), e resta 🔵 *proposta* — non accettata.** Dice che, *se e quando* si pubblica, si pubblica un **AP originale autonomo**, mai un'espansione di RHoD, e porta il **perimetro della v1**. ✅ **I due avvertimenti che bloccavano la domanda sono tolti**: l'audit mancante è stato **rifatto da zero** ([`AUDIT-DERIVAZIONE-IP-CAMPAGNA`](../docs/audit/AUDIT-DERIVAZIONE-IP-CAMPAGNA.md)), e la tesi **regge sul repo di oggi** — archi 07+08 a **0,2** e **0,7** occorrenze RHoD per 1.000 parole contro il **5,6** dell'arco 09. 🔎 **E la misura ha aggiunto due cose che la #72 non sapeva**: il **`Bestiario/` è a 3,0** e **esce col modulo** — un perimetro che tace su di lui lascia fuori il conto una dipendenza vera — e i **moduli autoconclusivi sono già puliti** (`10-stand-alone` e il Drappo a **0,0**), quindi su quest'asse il prodotto della linea 3 di `PIANO-VENDIBILITA` è pronto. 🔴 **Cosa resta da decidere al DM**: (a) si adotta il perimetro così com'è? (b) il **bestiario** sta dentro o fuori? (c) l'ADR resta proposta finché non c'è la **verifica di un avvocato IP**, che l'audit non sostituisce — conta i nomi, non la struttura |
 | **D12** | `RICERCA-MESTIERE` | §6-bis | 🐛 **`Portale-Forgia-L2` mappa 2 ha una riga `17` duplicata** — una alla riga 290 del sorgente, una alla 297. Quale delle due debba portare un altro numero (19? 24?) lo sa solo chi ha disegnato l'arena circolare: **indovinarlo sposterebbe delle celle**, quindi è rimasto com'è e marcato nel master |
 | ~~D1~~ | `MESTIERE-BANCHI` | F2 · S7 | ✅ **DECISA E ATTUATA il 2026-09-18, nello stesso commit.** Il DM ha **separato le due cose**: *«l'unica cosa da prendere è l'ADR quarta colonna, che può essere usata in diversi contesti nei vari archi [...] gli ADR interni li lascerei all'Abbazia [...] ma ovviamente la versione nell'Abbazia rimane così com'è senza estensione»*. → [ADR-0057](adr/ADR-0057-la-quarta-colonna-e-di-tutto-il-repo.md): la quarta colonna entra in `editorial-standards.md` §2 come norma del repo; i dodici ADR interni restano dell'Abbazia; l'Abbazia **non si tocca**. 🔎 **Misurato prima di scrivere la norma, e il numero ha cambiato cosa aspettarsi**: nel repo giocabile esisteva **un solo** blocco sensoriale strutturato (`ARC07-DEF-1` §4) — gli archi il sensoriale lo scrivono dentro la prosa dei read-aloud, non in schede. Come retrofit la norma vale **un posto**; il suo valore è prospettico, sui lotti S4-S6. ⚠️ **La forma è diversa dall'Abbazia, e apposta**: negli archi le schede sono **elenchi**, quindi la norma è sul *blocco* e non sulla colonna — in tabella è la quarta colonna, in elenco l'ultimo punto. Imporre la tabella avrebbe riscritto la forma per portare il contenuto |
+| ~~D1~~ | `PRATICHE` | PI-2 | ✅ **Risposta del DM il 2026-09-24: sì** (*«d1-d5 del piano pratiche di ingegneria sì»*). **La soglia delle 400 righe di codice per PR, come avviso in CI?** Oggi 13 merge su 34 la superano, e questa PR la supera di otto volte. Proposta: sì, avviso e non blocco |
+| ~~D2~~ | `PRATICHE` | PI-3 | ✅ **Risposta del DM il 2026-09-24: sì** (*«d1-d5 del piano pratiche di ingegneria sì»*). **Dependabot, scansione dei segreti con push protection, `pip-audit`?** Le prime due si attivano nelle impostazioni del repository e sono gratuite perché il repo è pubblico. Proposta: sì a tutte e tre, `pip-audit` non bloccante per un mese |
+| ~~D3~~ | `PRATICHE` | PI-6 | ✅ **Risposta del DM il 2026-09-24: sì** (*«d1-d5 del piano pratiche di ingegneria sì»*). **Le PR che toccano il canone si mergiano solo dopo la tua lettura dell'elenco?** Proposta: sì. Il resto lo verificano i gate |
+| ~~D4~~ | `PRATICHE` | PI-1 | ✅ **Risposta del DM il 2026-09-24: sì** (*«d1-d5 del piano pratiche di ingegneria sì»*). **Il merge automatico delle PR verdi**, una volta protetto `main`? Proposta: sì, ed è ciò che rende economiche le PR piccole |
+| ~~D5~~ | `PRATICHE` | PI-2 | ✅ **Risposta del DM il 2026-09-24: sì** (*«d1-d5 del piano pratiche di ingegneria sì»*). L'elenco misurato dopo `git fetch --prune` è di **38** rami, ed è nella risposta al DM dello stesso giorno: si cancellano quando il DM lo conferma. **I 39 rami remoti già interamente su `main` si cancellano?** L'elenco lo produce `misura_flusso`; `contenuti-nei-rami.json` conferma che non portano niente di nuovo. Proposta: sì, dopo che hai visto l'elenco |
+| ~~D6~~ | `PRATICHE` | tutti | ✅ **Risposta del DM il 2026-09-24: (a).** **Come si esegue la regola di D1 dopo la #160?** (a) un ramo e una PR per lotto, (b) si aspetta il merge della #160 e si riparte sullo stesso ramo un lotto alla volta. Da qui ogni lotto di questo piano ha un ramo suo e una PR sua in bozza |
 | ~~D1~~ | `QUALITA-CODICE` | E1 · E3 | ✅ **decisa dal DM il 2026-09-23: sì**, il verificatore condivide il lettore ([ADR-0066](adr/ADR-0066-le-creature-hanno-una-libreria-e-il-verificatore-non-importa-la-scelta.md)). **Il verificatore condivide il lettore?** Oggi lo fa già: importa 23 simboli da `genera_attributi`. **Sì** (consigliato): il lettore va in `dmcore/lettura_creatura.py` e lo usano tutti; l'indipendenza sta nelle regole e nella scelta, che il verificatore non importa mai (E4 lo prova). **No**: il verificatore tiene un lettore suo, copiato, più sicuro contro un errore di lettura condiviso e con una seconda copia da tenere allineata a mano |
 | ~~D2~~ | `QUALITA-CODICE` | E6 | ✅ **decisa dal DM il 2026-09-23: (a)**, vince `genera_attributi`; attuata in E6. **Quale tabella dei ruoli vince?** Dei 6 ruoli di `genera_creatura`, 4 ordinano le caratteristiche diversamente dal profilo corrispondente di `genera_attributi` (schermagliatore, tiratore, blaster, controllore). **(a)** vince `genera_attributi`: cambiano i PNG che `genera_creatura` genera d'ora in poi, nessun blocco del Bestiario; **(b)** vince `genera_creatura`: cambiano gli `attributi` di alcuni dei 15 blocchi scelti dall'array, che il DM vede prima; **(c)** si tengono separate e si dichiara perché |
 | ~~D3~~ | `QUALITA-CODICE` | E9 | ✅ **decisa dal DM il 2026-09-23: sì, subito**; attuata in E9. **`dm.py bestiario` si fa in questo lotto o dopo?** Costa poco e non dipende dalla libreria; farlo prima di E8 vuol dire toccare `dm.py` due volte se un'interfaccia cambia |
@@ -213,6 +239,12 @@ riuscita non si sa descrivere è un lotto tagliato male.
 | ~~D16~~ | `RIPRESA-PR` | F4 · 4d-2 | ✅ **CHIUSA E ATTUATA il 2026-09-16, nello stesso commit.** Il DM ha scelto l'enumerazione **con il compagno**: `attivo · latitante · neutralizzato · morto · ignoto`, più `reversibile`. ⚒️ `neutralizzato` copre il caso più frequente al tavolo — sconfitto ma non morto — e senza di lui il DM dovrebbe scrivere `morto` per non scrivere `attivo`. 🔴 **E `reversibile` è la metà che conta**: in questa campagna un morto torna (il Ghostlord nasce da un morto, Sal è protetto da un paradosso auto-consistente, Hella è morta in attesa del rito), quindi registrare «morto» senza dire se è definitivo è registrare **meno di quel che il canone sa**. La regola **R9** lo pretende. ⚠️ `state_apply` scrive `stato` ma **non** `reversibile`: il primo è la lettura letterale del log, il secondo è una decisione narrativa, e R9 la chiede al DM alla prima esecuzione — provato sul canone vero. 🔎 **§4 conoscenze è stata esclusa dopo averla misurata**, benché il DM avesse chiesto di includerla: tre righe non sono persone e tre persone compaiono sotto due nomi, quindi `stato` lì vorrebbe dire un valore privo di senso in tre casi e due copie divergenti in altri tre. Va nell'anagrafica del lotto della chiave. Vedi **§4.8.9** |
 | ~~D17~~ | `RIPRESA-PR` | F4 · 4d-4 | ✅ **CHIUSA il 2026-09-17 — e la domanda aveva una premessa falsa, trovata dal DM.** Era posta come «i due villain senza scheda: si scrivono, si contano o escono da §3?». 🐛 **Tre delle quattro voci che avevo dichiarato senza scheda ce l'avevano.** Il DM: *«controlla bene negli archi o nel bestiario se c'è qualcosa magari annegato come prosa»*. **Zalkatar** ha uno statblocco a **GS 13** (14d4+70, CA 24) in `09_…/P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md`; **Saarvith + Regiarix** ne hanno uno a **GS 13** in `09_…/P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`, e il file `FASE4` accanto dichiara esplicitamente *«le statistiche sono lì; questo è la regia dello scontro»*; il **Cerchio Druidico** ne ha uno in `Bestiario/mostri/cerchio-druid7-cr7.md`, marcato [ACCEPTED — DM-canon 2026-05-05]. L'errore non è stato non trovarle: ho cercato **solo dentro `Bestiario/`**, e allargando la ricerca ho **troncato l'output a sei righe** concludendo da una lista tagliata. ✅ Non c'era niente da scrivere né da togliere: c'era da **cercare meglio**. Resta **un** buco su 28 (`lathander-mask`), ed è corretto. ⚠️ **Conseguenza di progetto**: una scheda non vive per forza nel `Bestiario/`, e un cancello tarato lì avrebbe continuato a dare per mancanti due boss da GS 13. Nasce **R13**, che mette alla prova ogni buco dichiarato contro tutto il repo. Vedi **§4.8.10** e [ADR-0053](adr/ADR-0053-la-chiave-verso-il-bestiario-si-dichiara.md) |
 | ~~D18~~ | `RIPRESA-PR` | F4 · 4d-6 | ✅ **DECISA E ATTUATA il 2026-09-17, nello stesso commit.** Il DM: *«spezzarli per intestazione verificando che non esistano già»*. Il catalogo portava **19 record intitolati al documento** invece che alla creatura, perché `build_monster_catalog.py` faceva **un record per file** e prendeva il primo GS: «Parte 2A – Torre Invisibile», GS 10. **19 → 8**, pool **372 → 397**. 🔎 Quel che ne è uscito non sono comparse: gli **otto fantini del Palio**, i **Sicari di Sonjak**, il Gonfaloniere Aldemar Vosk, la Drow Chierica di Lolth, gli esempi d'onda di Rethmar — tutti chiusi dentro un record solo. ⚠️ **La deduplica è ancorata a un fatto dichiarato**: si confrontano i nomi **solo** dentro l'insieme delle voci del Bestiario che citano *quel* documento come `Source`. È il modo di rispettare ADR-0053 (un matcher permissivo traveste l'ignoranza) senza rinunciare a dedurre: il legame documento↔voce l'ha scritto qualcuno, la somiglianza sceglie solo *quale* voce sta per *quale* intestazione. 🔴 **E il rischio opposto ha il suo presidio**: il record di file sparisce solo quando **ogni** creatura che il documento nomina ha già la sua voce — gli otto che restano sono quelli dove non è vero, e toglierli significherebbe meno rumore e **meno creature**. 🐛 Due difetti nei nomi generati, trovati misurando: la numerazione del Palio è **multi-livello** (`### 3.2 Drow Chierica`) e lasciava nomi che cominciavano per cifra, e la coda tagliata lasciava parentesi mai chiuse («Aldemar Vosk (LN»). 🔎 **E il cancello nuovo ha trovato un errore mio al primo giro**: contava **due** «Skullcrusher il Nero», perché la voce che avevo appena scritto puntava al file che il drago lo *nomina* soltanto — i numeri stanno in `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md`. Correggendo il puntamento è poi caduto fuori che `P6-INTEGRAZIONE` restava scoperto, e dentro c'erano **Re Thorek I** (Grr 16, il re di mille anni prima che si inginocchia davanti alla Corona) e **Durin Hammerfist**, l'antenato di Othrek: due PNG di canone che non aveva nessuno. Vedi **§4.8.12** e [ADR-0054](adr/ADR-0054-un-archivio-non-e-una-copia.md) |
+| ~~D19~~ | `RIPRESA-PR` | F4 · 4f | ✅ **Risposta del DM il 2026-09-24, ed è un principio più largo della domanda**: *«la procedura dovrebbe essere quanto più automatizzata possibile: un DM normalmente non tocca affatto i file yml, al massimo se ha un'interfaccia scrive dei campi o seleziona i valori da un form già impostato»*. Quindi né lo scheletro da compilare né il derivato da rivedere a mano: il template è **derivato in automatico** dal prodotto, e ciò che resta di giudizio passa da un **modulo** a scelte. Procedura in §4.10.6, il via è **D21** |
+| ~~D21~~ | `RIPRESA-PR` | F4 · 4f | ✅ **Risposta del DM il 2026-09-24.** Sulla procedura di §4.10.6: sì al comando `dm.py gruppo nuovo`; sì a togliere da sole le conoscenze sul party e a chiedere una riga alla volta solo dove serve un giudizio; **gli artefatti restano nel prodotto**, senza portatore; arco e livello di partenza a scelta; PG con nome, razza, classe, livello e PF, al massimo sei; clock a zero e trigger lasciati. Attuato in **4f-4**, §4.10.7. Sulle proposte di fine sessione (4f-5) il DM ha chiesto di più: *«non c'è un tool chiamato dal DM a fine sessione che prende le domande e genera lo state.md e la parte relativa di state.yaml in maniera automatica?»*, con il ciclo intero preparazione → tavolo → chiusura e un **menu testuale** che chiami `dm.py` e che un'interfaccia grafica possa avvolgere. 4f-5 passa a quel piano, commit successivo |
+| ~~D22~~ | `RIPRESA-PR` | F4 · 4i | ✅ **Risposta del DM il 2026-09-24**: per le domande aperte del soggetto, cercare le risposte in tutte le PR, anche chiuse, poi seguire le proposte; piano di level design, `agents.conf` e Giorno 3 di Dauth come proposto. Trovato: **avevi risposto a tutto** (changelog della #72, rev. 5 e 6), e 133 righe su 133 sono in cronaca. Il soggetto è in `plans/`, datato; il basilisco confermato con la tua citazione; restano due conferme, la **D24**. Esiti degli altri tre file in §4.11.5 |
+| ~~D23~~ | `RIPRESA-PR` | F4 · 4i | ✅ **Risposta del DM il 2026-09-24: da verificare dopo, e da riproporre come piano.** Diventa il lotto **4i-3** (§4.11.6), con le sue tre fasi. Misurato nel frattempo: `main` risulta `protected: false`, cioè oggi nemmeno una CI rossa impedisce il merge |
+| ~~D24~~ | `RIPRESA-PR` | F4 · 4i | ✅ **Risposta del DM il 2026-09-24**: *«la destinazione del Piano del Fuoco è canone, e ha un senso anche per Therysol che vuole vendetta»*; e *«Varis era un informatore del Collezionista, non sono la stessa persona»*. Il GS di Maur (11) aveva già la sua risposta nel foglio XP. Attuato: la fuga nel Piano del Fuoco è canone in cronaca, coerenza, archi, lore di Cannath Vale, dossier del Collezionista e di Therysol. Varis verificato: la sua scheda (`Bestiario/png/Varis_Seta_Argento`) lo dà umano, GS 6, intermediario inconsapevole; la confusione stava solo nel dossier del Collezionista della prima stesura (aprile), nel titolo del suo file-rimando, in un prompt immagine e in due file di dati. Vedi §4.11.5 |
+| ~~D20~~ | `RIPRESA-PR` | F4 · 4f-2 | ✅ **DECISA E ATTUATA il 2026-09-24, nello stesso commit.** Il DM: *«D20 ok ma non tralasciare nulla»*. Split per sezione come in §4.10.4: **528 righe su 528** ritrovate nelle due metà (controllate contro git da un test), nessuna duplicata, una sola parola spostata («ESCAPED», che la cronaca racconta già tre volte). Tredici rimandi aggiornati in undici file; restano sul nome vecchio i documenti datati (`plans/`, l'audit IP, la baseline del 21 settembre), come registro di quando sono stati scritti |
 | ~~D1~~ | `VENDIBILITA` | ✅ **DECISA il 2026-09-12 — la spec funzionale è ratificata.** Vedi §10 per cosa è entrato e a che prezzo. In sintesi: i campi neutri entrano tutti per i **56 simboli** che ne hanno uno; `📦` diventa muro; `🌲` e `🌳` **no**, con deroga motivata; la luce resta quella del codice, scritta in metri. | ✅ Costo pagato: **+4 polilinee** su ciascuno dei 2 `.uvtt` committati, **zero** SVG. Il resto è additivo. 🔵 Ne è nata [**ADR-0051**](adr/ADR-0051-il-margine-del-bosco-e-un-glifo-a-se.md): `🌲` avrà un glifo per il margine, con una coda di **1.873 celle** da rileggere |
 | ~~D2~~ | `VENDIBILITA` | ✅ **DECISA il 2026-09-12 — e allargata: le altezze diventano moduli di griglia.** Il DM: *«i muri normalmente sono 1.5, le tende falle più basse 1m»*. 🔎 **Il «1.5» non erano i muri veri**: nel repo `🏰` sta a 4 m, `⬛` a 3,2, `🗼` a 9 — un muro di pietra a 1,5 m sarebbe più basso di un uomo. Era `🧱` **muretto / copertura bassa**, l'unico simbolo chiamato «muro» che un'altezza non ce l'aveva: si estrudeva al default generico di 0,6 m, cioè un gradino, mentre l'etichetta promette copertura al petto. Poi il DM ha esteso la regola: *«muri piccoli 1.5 metri e poi multipli di 1.5 o approssimazioni più vicine possibili»*. Il quadretto del repo è 1,5 m, quindi **tutte e 31** le altezze sono state portate sul modulo: quadretti interi per ciò che sta in piedi (15), mezzo quadretto per l'ingombro che si scavalca (9), zero per ciò che è piatto (7). Prima erano numeri a occhio — 3.2 · 2.2 · 1.6 · 1.4 · 1.1 · 0.9 · 0.8 · 0.6 · 0.4 — che non volevano dire niente rispetto alla griglia su cui la scena è costruita. | ✅ Costo zero: nessun artefatto 3D è committato. 48 celle `🧱`, 9 `⛺`. 🔵 **Resta il dais** `🔳`, e non è una dimenticanza: **zero celle nel repo** — è nato con ADR-0042 e nessuno l'ha ancora disegnato. Deciderlo adesso sarebbe inventarlo; il giorno che serve costa zero |
 | ~~D1~~ | `CONFORMITA-STATBLOCCHI` | `goblin-warrior1-cr05` | ✅ **decisa dal DM il 2026-09-23: For 11**, la Forza del goblin SRD. Cambiano la riga delle caratteristiche e il danno (1d6−1 → 1d6); lotta e attacco la presupponevano già |
@@ -380,3 +412,59 @@ cancello vero su questo è una proposta, non una decisione mia: è in **§6.4**.
 | 🔵 | **Il campione A per il κ** | costa tempo al DM, e senza non si sa se la metrica concorda con lui |
 | ~~🔵~~ | ~~**Un cancello sulle righe di §6.2?**~~ | ✅ **DECISO E ATTUATO dal DM il 2026-09-21, nello stesso giorno in cui è stato proposto.** → [ADR-0063](adr/ADR-0063-i-comandi-citati-si-eseguono.md): `verifica_sezione6.py --check` in CI, in un **job suo** perché esegue i comandi più lenti del repo. 🔒 I tre presidi sul rischio dichiarato — forma rigida (niente pipe, `;`, `&&`, `$()`), allowlist di script, `shell=False` — con **sette prove** che verificano *cosa si rifiuta di eseguire*. 🔎 **E al primo giro ha trovato tre cose**: la riga di F1.1-F1.3 era **già invecchiata di poche ore** (diceva «4 norme su 39», il repo era a 12 su 41), due righe citavano una misura senza dichiarare cosa si aspettassero, e il mio primo criterio dava un **falso positivo** su M1-M3 — `--tetto-el` stampa `✓` perché nessun incontro sfora, ma è verde **a vuoto**: un `⚠` non conta come pulito |
 | 🔵 | **Un EL oltre il tetto si ribilancia o si dichiara?** | è una decisione di difficoltà, e oggi non si sa nemmeno quanti siano |
+
+---
+
+## 7 · 🔁 Ripartire da qui — la tornata del 2026-09-24 (PR #160)
+
+> **Perché questa sezione.** Il DM ha chiesto di mergiare la #160 e di
+> continuare in un'altra conversazione *«con tutto il resto, dalla pulizia a
+> tutto quello che è stato aperto in questa PR e non ancora concluso o
+> integrato in un piano, così siamo sicuri che non ci sia uno script, una
+> tecnica o una discussione che va persa»*. Ogni riga qui sotto rimanda al
+> posto dove la cosa è scritta per intero: questa sezione è l'indice, non la
+> copia.
+
+### 7.1 · Il primo comando, e come si lavora da qui
+
+```bash
+git fetch --prune origin
+python3 scripts/fase1.py <i file che stai per toccare>
+```
+
+Da qui **un lotto = un ramo = una PR in bozza** (PRATICHE D1 e D6). La soglia è
+di 400 righe di codice per PR, contenuti e file generati esclusi. La #160 ne
+aveva 3.357: è il motivo della regola, non un precedente.
+
+### 7.2 · Cosa resta, e dove sta scritto
+
+| | Cosa | Dove | Da dove si parte |
+|---|---|---|---|
+| ⬜ | **Pulizia dei rami già su `main`** (D5 sì, da eseguire qui) | [PRATICHE](PIANO-PRATICHE-DI-INGEGNERIA.md) §7.1 | rimisurare col comando di §7.1 del piano, poi cancellare. Dopo il merge della #160 anche `claude/festive-tesla-tgsauj` è su `main` |
+| ⬜ | **Il registro dei rami dopo il merge**: la voce `pr/160` passa da `in-volo` a `portato`, e la testata di `docs/audit/AUDIT-LEVEL-DESIGN-E-INQUADRATURA.md` esce dalla misura | `plans/contenuti-nei-rami.json` | `python3 scripts/contenuti_nei_rami.py --fetch` |
+| 🟡 | **PI-1 · 4i-3**, `main` protetto: verificato `protected: true`; manca la prova della prima PR indietro rispetto a `main`, e le due righe nella skill `rumblingstone-plans` e nel Playbook | [RIPRESA-PR](PIANO-RIPRESA-PR-ABBANDONATE.md) §4.11.6 | la prima PR del §7.1 che resta indietro |
+| ⬜ | **PI-3**: `dependabot.yml`, `pip-audit`, prova del blocco dei segreti; la revisione con l'IA di GitHub che fallisce per il modello; l'esito di CodeQL JavaScript | PRATICHE PI-3 | primo lotto da fare, ramo suo |
+| ⬜ | **PI-6** canone toccato nella PR, **PI-2** `misura_flusso`, **PI-5** proprietà sui parser, **PI-4** scenari tracciati (dopo CICLO D6) | PRATICHE §5 e §8 | in quest'ordine, una PR ciascuno |
+| ⬜ | **Ciclo di sessione e menu**: Fase 0 (ADR-0068, contratti, D1-D6), poi F1-F4 | [CICLO-SESSIONE](PIANO-CICLO-DI-SESSIONE-E-MENU.md) §5 | le D1-D6 del DM |
+| ⬜ | **RIPRESA-PR** 4g e 4h; PR aperte #99 e #106 | RIPRESA-PR, §3 qui sopra | `python3 scripts/contenuti_nei_rami.py --fetch` |
+| ✅ | **L'esperimento BDD**: feature, step e i 16 mutanti restano come prova riproducibile, fuori dalla CI | [RICERCA-BDD-O-TDD](RICERCA-BDD-O-TDD-2026-09.md) §3 | `plans/esperimenti/bdd-gruppo-nuovo/` |
+
+### 7.3 · Decise in questa tornata, da NON ridiscutere
+
+1. **Nessun YAML a mano** (RIPRESA D19): il DM risponde a domande, il codice
+   scrive. `dm.py gruppo nuovo` è la forma di riferimento.
+2. **Il Collezionista fugge nel Piano del Fuoco, e Varis non è lui**: Varis è un
+   suo informatore (RIPRESA D24, canone). Maur è GS 11.
+3. **Il TDD resta.** Il BDD è misurato: stessi difetti trovati, +42% di righe,
+   dipendenze contro ADR-0037. Se ne tiene la pratica o il framework lo decide
+   CICLO D6; la misura non si rifà.
+4. **Le pratiche d'ingegneria**: sette su dodici c'erano già, tre non si
+   applicano a uno strumento offline. PRATICHE D1-D6 decise.
+
+### 7.4 · Le decisioni aperte al DM che nascono da questa tornata
+
+| Decisione | Dove |
+|---|---|
+| **D1-D6** del ciclo di sessione (cronaca automatica, alleanze, chi scrive la prosa, che menu, immagini, BDD) | CICLO-SESSIONE §8 |
+| La revisione di sicurezza con l'IA di GitHub: cambiare modello o spegnerla | PRATICHE PI-3 |
+

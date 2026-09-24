@@ -31,8 +31,8 @@ JSON — si importano native, senza ridisegnare niente:
 
 | File | Muri | Porte | Luci |
 |---|:--:|:--:|:--:|
-| `uvtt/tarsilia-la-ruota_map01_*.uvtt` | 24 | 2 | 0 |
-| `uvtt/tarsilia-stalle_map01_*.uvtt` | 32 | 2 | 2 |
+| `uvtt/tarsilia-la-ruota_map01_*.uvtt` | 28 | 2 | 0 |
+| `uvtt/tarsilia-stalle_map01_*.uvtt` | 20 | 5 | 2 |
 
 Si rigenerano con `python3 scripts/export_uvtt.py <mappa>.md -o uvtt`.
 

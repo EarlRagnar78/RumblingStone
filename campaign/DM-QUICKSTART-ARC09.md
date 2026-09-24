@@ -84,7 +84,7 @@ Tutti in `scripts/`, tutti autonomi (zero dipendenze esterne):
 | `state_sync.py` | Estrae/aggiorna `§0` dashboard di `state.md` | Post-session |
 | `update_xp.py` | Calcola XP post-encounter (DMG 3.5) | Post-encounter |
 | `session_recap.py --last-n N [--pdf]` | Recap+preview in italiano per i player (tono R.A. Salvatore, spoiler-safe) | Pre-session (1-2 giorni prima) |
-| `new-campaign-group.sh` | Reset per nuovo gruppo senza perdere materiale | Playbook §7 |
+| `dm.py gruppo nuovo` | Gruppo nuovo da un modulo, senza perdere materiale | Playbook §7 |
 
 **Esempio concreto**:
 
@@ -238,7 +238,7 @@ ripetibile: nessun agente/PG può "riusarlo" (violazione di coerenza da flaggare
 ✅ **XP automation** → `scripts/update_xp.py`
 ✅ **State sync** → `scripts/state_sync.py`
 ✅ **Recap player spoiler-safe** → `scripts/session_recap.py` (+ opzionale PDF A4)
-✅ **Reset nuovo gruppo** → `scripts/new-campaign-group.sh`
+✅ **Reset nuovo gruppo** → `python3 scripts/dm.py gruppo nuovo`
 ✅ **Narrative files Arc-09** → 70+ file in `09_Continuazione.../`
 ✅ **Hammerfist guide (rif.)** → `08_.../ARC08-01-GUIDA-DM.md`
 ✅ **Skills per domande** → `skills/` (4 skills)

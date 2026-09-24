@@ -23,8 +23,8 @@ finalmente **ucciso in via definitiva**, il dominio si spezzò e **Belkram si
 ravvide**: morì redento, libero.
 
 ## Stato di canone (D13)
-- **MORTO** — stato finale, non torna. (coherence.md r.47; campaign-history.md
-  r.26; piano ARC-07 G0.)
+- **MORTO** — stato finale, non torna. (coherence.md r.47; campaign-chronicle.md
+  r.39; piano ARC-07 G0.)
 - **Redento** nell'istante della morte definitiva (dominio drow spezzato).
 
 ## Key facts

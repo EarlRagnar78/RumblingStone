@@ -117,10 +117,19 @@ tools/map-editor/                     (progetto separato, self-contained)
 
 ## §4 — La colla: legenda condivisa `legend.json`
 
-Oggi la legenda vive solo in `render_map_svg.SYMBOLS` (Python). L'editor (JS) non
+> ✅ **Superato e chiuso per altra via il 2026-09-12** (riallineato il
+> 2026-09-24, quando `validate_docs` ha cominciato a controllare i percorsi fra
+> backtick). [ADR-0048](adr/ADR-0048-legenda-funzionale-fonte-unica.md) ha
+> rovesciato la direzione proposta qui sotto: la fonte unica non è `SYMBOLS`
+> ma `scripts/legend.yaml`, scritto a mano; `scripts/build_legend.py` ne deriva
+> `scripts/legend.json`, e `build_legend.py --check` è il gate di sincronia in
+> CI. Il renderer legge il JSON. All'editor serve solo importarlo: E1 non va
+> più fatto. Il testo qui sotto resta come proposta originale.
+
+Oggi (2026-07-23) la legenda vive solo in `render_map_svg.SYMBOLS` (Python). L'editor (JS) non
 deve **duplicarla** (diventerebbe una seconda verità che diverge). Soluzione:
 
-- **`scripts/export_legend_json.py`**: dumpa `SYMBOLS` → `scripts/schemas/legend.json`
+- **`scripts/export_legend_json.py`**: dumpa `SYMBOLS` → `scripts/schemas/legend.json` <!-- validate-docs: ignore -->
   (simbolo, `mode`, testo it, categoria). Sorgente unica = `SYMBOLS`.
 - **Gate CI**: `validate_maps`/uno smoke test verifica che `legend.json` sia
   **in sync** con `SYMBOLS` (rigenerato = byte-identico), come già si fa per gli SVG.
@@ -139,7 +148,7 @@ solo (interop schema/editor/tool).
 | Fase | Obiettivo | Engine | Impegno |
 |---|---|---|---|
 | **E0 — ADR + scaffold** | ADR «editor come sotto-progetto separato» (stack, offline, confini, test); scaffold `tools/map-editor/` con build statico e README | Opus | Medio |
-| **E1 — Legenda condivisa** | `export_legend_json.py` → `legend.json` + gate CI di sync (vale anche da solo) | Sonnet | Basso |
+| ~~**E1 — Legenda condivisa**~~ | ✅ fatto per altra via da ADR-0048 (2026-09-12): `legend.yaml` → `build_legend.py` → `legend.json`, gate `--check` in CI (§4) | — | — |
 | **E2 — Canvas + data model** | Griglia 1,5 m con snap; stato = oggetto contratto; pan/zoom; righello coordinate A1 come il master | Sonnet | Alto |
 | **E3 — Strumenti base** | Terreno (rect/polygon), muri (polilinea snap), strutture (porta/torre/tenda), hazard | Sonnet | Alto |
 | **E4 — Unità + overlay** | Unità singola (`at`) e di massa (`area.rect`+`quantity`); `north`, `movements` (path+loop+color), `zone`/`mark` da label | Sonnet | Alto |
@@ -259,7 +268,7 @@ trasforma una ultra-clear rotta in un contratto pulito senza riscriverla.
 ## §13 — MVP / walking skeleton
 
 Fetta verticale minima (dà valore e prova il round-trip prima di costruire i tool):
-> **E1 (legenda condivisa)** + un canvas che **importa un JSON contratto**, lo
+> **E1 (legenda condivisa, già fatta: §4)** + un canvas che **importa un JSON contratto**, lo
 > mostra sulla griglia, permette **undo/redo** e lo **ri-esporta byte-stabile**.
 > Se il JSON esportato ricompila identico al master atteso, il cuore (data model +
 > round-trip) è provato; solo allora si aggiungono gli strumenti di disegno
@@ -277,5 +286,5 @@ Fetta verticale minima (dà valore e prova il round-trip prima di costruire i to
 
 🔵 **PIANIFICATO** (2026-07-23). Primo gate = **E0 (ADR)**: senza la decisione
 architetturale «progetto separato + stack + anteprima» non si scrive front-end.
-E1 (legenda condivisa) è il prerequisito tecnico e ha valore autonomo, quindi è
-candidato a partire per primo anche prima dell'editor vero e proprio.
+E1 (legenda condivisa) era il prerequisito tecnico: ✅ **c'è dal 2026-09-12**,
+fatto per altra via da ADR-0048 (§4). Il primo gate resta E0.

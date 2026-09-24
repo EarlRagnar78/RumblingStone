@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 73,
+  "tool_count": 76,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -1597,7 +1597,7 @@
       "category": "C-post-session-canon",
       "language": "python",
       "invocation": "python3 scripts/session_wizard.py",
-      "summary": "Wizard di fine sessione: Q&A con default -> session log canonico conforme al template, committato subito (ADR-0007).",
+      "summary": "Wizard di fine sessione: Q&A con default -> session log canonico conforme al template, con in testa il front-matter dei delta (villain per png_id, risolti contro state.yaml), committato subito (ADR-0007).",
       "use_case": "«La sessione è appena finita e ho la testa piena: come fisso quello che è successo prima di dimenticarlo?»",
       "stability": "stable",
       "stdlib_only": true,
@@ -1639,6 +1639,12 @@
           "kind": "markdown",
           "required": true,
           "schema": null
+        },
+        {
+          "path": "campaign/state.yaml",
+          "kind": "yaml",
+          "required": false,
+          "schema": "scripts/schemas/campaign_state.schema.json"
         }
       ],
       "outputs": [
@@ -1690,7 +1696,7 @@
       "category": "C-post-session-canon",
       "language": "python",
       "invocation": "python3 scripts/state_apply.py",
-      "summary": "Applica il sottoinsieme meccanico delle proposte di state_sync SOLO nelle regioni marcate 'auto:' di state.md, con diff e conferma (ADR-0007).",
+      "summary": "Applica le scritture meccaniche di fine sessione in state.yaml (March Clock, clock e stato dei villain) e lo storico in state-changelog.md, con diff e conferma (ADR-0007); legge il front-matter dei delta del log, e solo senza ricade sulla regex di state_sync.",
       "use_case": "«Le proposte di state_sync le ho lette e vanno bene: come le scrivo senza toccare la prosa che è mia?»",
       "stability": "stable",
       "stdlib_only": true,
@@ -1705,7 +1711,7 @@
           "default": false,
           "choices": null,
           "repeatable": false,
-          "desc": "Inserisce i marker auto: (idempotente)."
+          "desc": "Marca la regione changelog di state-changelog.md (idempotente)."
         },
         {
           "name": "--session",
@@ -1756,11 +1762,31 @@
           "kind": "markdown",
           "required": true,
           "schema": null
+        },
+        {
+          "path": "campaign/state.yaml",
+          "kind": "yaml",
+          "required": false,
+          "schema": "scripts/schemas/campaign_state.schema.json"
         }
       ],
       "outputs": [
         {
           "path": "campaign/state.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "campaign/state.yaml",
+          "kind": "yaml",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": "scripts/schemas/campaign_state.schema.json"
+        },
+        {
+          "path": "campaign/state-changelog.md",
           "kind": "markdown",
           "overwrites": true,
           "generated_header": false,
@@ -4081,6 +4107,12 @@
           "kind": "markdown",
           "required": true,
           "schema": null
+        },
+        {
+          "path": "scripts/agents.conf",
+          "kind": "text",
+          "required": true,
+          "schema": null
         }
       ],
       "outputs": [
@@ -4469,6 +4501,12 @@
           "kind": "directory",
           "required": true,
           "schema": null
+        },
+        {
+          "path": "scripts/agents.conf",
+          "kind": "text",
+          "required": true,
+          "schema": null
         }
       ],
       "outputs": [
@@ -4576,6 +4614,91 @@
       "tests": [],
       "docs": [
         "scripts/README.md"
+      ]
+    },
+    {
+      "id": "azzera_partita",
+      "path": "scripts/azzera_partita.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/azzera_partita.py",
+      "summary": "Azzera la PARTITA per un gruppo nuovo (stato, storico, sessioni, recap) e lascia il prodotto; l'elenco e' dmcore/partita.py. Valida il nuovo state.yaml prima di scrivere e rigenera state.md (ADR-0050 §7).",
+      "use_case": "«Un gruppo nuovo riparte da zero: cosa si azzera, cosa resta, e la sua CI e' verde?»",
+      "stability": "stable",
+      "stdlib_only": false,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Elenca cosa verrebbe azzerato, senza scrivere."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "campaign/templates/",
+          "kind": "directory",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "campaign/state.yaml",
+          "kind": "yaml",
+          "required": true,
+          "schema": "scripts/schemas/campaign_state.schema.json"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "campaign/state.yaml",
+          "kind": "yaml",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": "scripts/schemas/campaign_state.schema.json"
+        },
+        {
+          "path": "campaign/state.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "campaign/state-changelog.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "il nuovo stato non passerebbe validate_state, o manca un template: niente scritto"
+      },
+      "determinism": {
+        "deterministic": false,
+        "seed_flag": null,
+        "notes": "La prima data segnaposto dei template diventa la data di oggi."
+      },
+      "side_effects": {
+        "writes_canon": true,
+        "git_commit": false,
+        "network": false,
+        "notes": "Cancella sessioni, recap, brief e i file generati dallo stato vecchio. Lo chiama new-campaign-group.sh sul branch del gruppo nuovo."
+      },
+      "idempotent": true,
+      "consumes_schema": "scripts/schemas/campaign_state.schema.json",
+      "produces_schema": "scripts/schemas/campaign_state.schema.json",
+      "ci_smoke": "python scripts/azzera_partita.py --help",
+      "tests": [
+        "scripts/tests/test_new_group.py"
+      ],
+      "docs": [
+        "scripts/README-automation.md"
       ]
     },
     {
@@ -4737,6 +4860,83 @@
       "docs": [
         "plans/adr/ADR-0009-gate-tracciatura-changelog-adr.md"
       ]
+    },
+    {
+      "id": "contenuti_nei_rami",
+      "path": "scripts/contenuti_nei_rami.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/contenuti_nei_rami.py --fetch",
+      "summary": "I file che esistono in un ramo o in una PR, chiuse comprese, e mai su main ne' per nome ne' per contenuto. Ogni riga deve avere un posto nel registro plans/contenuti-nei-rami.json; quelle senza posto sono il lavoro perso che si cerca (lotto 4i-2).",
+      "use_case": "«Si e' perso qualcosa nelle PR chiuse o nei commit spinti dopo un merge, che su main non e' mai arrivato?»",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [
+        "git"
+      ],
+      "args": [
+        {
+          "name": "--fetch",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scarica prima le teste di tutte le PR e i rami di origin (rete)."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se un file mai arrivato non ha un posto nel registro."
+        },
+        {
+          "name": "--base",
+          "type": "str",
+          "required": false,
+          "default": "origin/main",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il ramo di riferimento."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Report in JSON."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/contenuti-nei-rami.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ogni file mai arrivato ha un posto (o nessun ramo da misurare)",
+        "1": "righe senza posto (solo con --check) o registro malformato",
+        "2": "uso errato"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "A parita' di rami conosciuti dal clone il report e' identico; cambia quando cambiano i rami, per questo non e' un gate di CI."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true
     },
     {
       "id": "decisioni_dm",
@@ -4962,6 +5162,106 @@
       ],
       "docs": [
         "plans/PIANO-QUATTRO-ORDINI-2026-09-20.md"
+      ]
+    },
+    {
+      "id": "gruppo_nuovo",
+      "path": "scripts/gruppo_nuovo.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/dm.py gruppo nuovo",
+      "summary": "Il gruppo nuovo da un modulo a domande, senza YAML a mano (D19, lotto 4f-4): deriva lo stato dal prodotto di oggi, chiede gruppo, arco, PG e le righe con tracce del primo tavolo una alla volta (tieni/svuota/rivedi), valida prima di scrivere, crea il ramo campaign-group-<nome>, azzera la partita e committa.",
+      "use_case": "«Un altro gruppo rigioca la campagna: come parto dal materiale che c'e' senza aprire un file YAML?»",
+      "stability": "stable",
+      "stdlib_only": false,
+      "external_bins": [
+        "git"
+      ],
+      "args": [
+        {
+          "name": "--answers",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Risposte in JSON invece del modulo in terminale."
+        },
+        {
+          "name": "--domande",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Stampa il modulo come JSON (per un'interfaccia) ed esce."
+        },
+        {
+          "name": "--dry-run",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Fa le domande e dice cosa farebbe, senza scrivere."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "campaign/state.yaml",
+          "kind": "yaml",
+          "required": true,
+          "schema": "scripts/schemas/campaign_state.schema.json"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "campaign/state.yaml",
+          "kind": "yaml",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": "scripts/schemas/campaign_state.schema.json"
+        },
+        {
+          "path": "campaign/state.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "campaign/group.yaml",
+          "kind": "yaml",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "fatto, o dry-run / domande",
+        "1": "risposte non valide, albero sporco, ramo gia' esistente o reset fallito (niente resta scritto)",
+        "2": "uso errato"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "A parita' di state.yaml e risposte lo stato nuovo e' identico; cambia solo la data delle voci inferred."
+      },
+      "side_effects": {
+        "writes_canon": true,
+        "git_commit": true,
+        "network": false
+      },
+      "idempotent": false,
+      "consumes_schema": "scripts/schemas/campaign_state.schema.json",
+      "produces_schema": "scripts/schemas/campaign_state.schema.json",
+      "ci_smoke": "python scripts/gruppo_nuovo.py --help",
+      "tests": [
+        "scripts/tests/test_gruppo_nuovo.py"
+      ],
+      "docs": [
+        "scripts/README-automation.md",
+        "campaign/DM-CAMPAIGN-PLAYBOOK.md"
       ]
     },
     {

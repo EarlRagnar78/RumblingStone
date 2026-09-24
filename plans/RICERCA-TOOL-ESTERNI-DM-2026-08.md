@@ -103,7 +103,7 @@ soprattutto **interamente locale**: i pesi si scaricano una volta e poi non c'è
 nessuna rete. Il problema di riservatezza dei servizi cloud — la voce dei giocatori
 caricata su un server terzo — **non si pone**: l'audio non esce dalla macchina del DM.
 
-Forma proposta: `scripts/transcribe_session.py`, che prende un file audio e produce la
+Forma proposta: `scripts/transcribe_session.py`, che prende un file audio e produce la <!-- validate-docs: futuro -->
 **bozza** del verbale nel formato che `state_apply.py` e `session_recap.py` già
 leggono, con i campi obbligatori vuoti e da riempire.
 

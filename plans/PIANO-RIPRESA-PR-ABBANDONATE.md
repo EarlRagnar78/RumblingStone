@@ -576,8 +576,8 @@ diciotto.
 > | **4a** ✅ `validate_docs` | **C** costruzione | `[Sonnet 5 · medio-alto · il gate boccia una cartella documentata e inesistente, e **non** boccia i 4 falsi positivi noti]` — **chiuso 2026-09-07: 6 difetti veri, zero falsi positivi** |
 > | **4b** ✅ link, path locali e un ADR | **K** canone (era **M**) | `[Opus 5 · alto · `python3 scripts/validate_docs.py --sorgenti` esce 0 su **701 documenti**; ADR-0048 riverificato riga per riga contro il codice di oggi]` — **chiuso 2026-09-10: 22 difetti veri, 9 falsi positivi corretti nel validatore** |
 > | **4c** ✅ i due tempi di `state.md` | **K** canone | `[**Opus 5, mai delegato** · xhigh · nessun contenuto cancellato, solo etichettato; l'insieme si conta con `grep -n "resurrection\|resurrezione" campaign/state.md` — **15 righe**, di cui 4 al tempo sbagliato e 6 nel changelog append-only, lasciate intatte]` — **chiuso 2026-09-12: 4 asserzioni al tempo sbagliato, 2 costi mai versati, 1 verbo al passato** |
-> | **4d** `state.yaml` (ADR-0017) | **K** canone | `[**Opus 5** · xhigh-max · `state.md` **rigenerato è identico** a quello committato]` |
-> | **4e** una sola via di scrittura | **C** costruzione | `[Sonnet 5 · alto · un test **sui file veri**, non su fixture — vedi §4.4]` |
+> | **4d** ✅ `state.yaml` (ADR-0017) | **K** canone | `[**Opus 5** · xhigh-max · `state.md` **rigenerato è identico** a quello committato]` — **chiuso 2026-09-16/17 (4d-1 … 4d-8), riverificato il 2026-09-24** (§4.9.0) |
+> | **4e** ✅ una sola via di scrittura | **C** costruzione | `[Sonnet 5 · alto · un test **sui file veri**, non su fixture — vedi §4.4]` — **chiuso 2026-09-24** (§4.9): il front-matter coi delta, 8 mutazioni su 8 rosse |
 > | **4f** prodotto e partita | **C** costruzione | `[Sonnet 5 · alto · un test che dimostra che il reset **non eredita niente**]` |
 > | **4g** schede PG a dati | **K** canone | `[**Opus 5** · alto · le schede generate combaciano con quelle scritte a mano]` |
 > | **4h** `groups/<slug>/` | **G** giudizio | `[Opus 5 · xhigh · **PR dedicata**, come dice la #99 stessa]` |
@@ -601,7 +601,7 @@ prendono **uno alla volta**, ciascuno col suo commit e i suoi gate.
 
 | # | Lotto | Cosa porta | Perché in questa posizione |
 |---|---|---|---|
-| 4a | **G2** — `validate_docs.py` | gate bloccante sulla deriva doc↔realtà | **Indipendente da tutto.** Chiude un difetto reale: `AGENTS.md` documentava `campaign/npcs/`, `locations/`, `encounters/` — **nessuna delle tre è mai esistita**. Ed è progettato attorno ai falsi positivi: alla prima esecuzione **9 hit di cui 4 falsi**, corretti nel validatore e non nei documenti |
+| 4a | **G2** — `validate_docs.py` | gate bloccante sulla deriva doc↔realtà | **Indipendente da tutto.** Chiude un difetto reale: `AGENTS.md` documentava `campaign/npcs/`, `locations/`, `encounters/` — **nessuna delle tre è mai esistita**. Ed è progettato attorno ai falsi positivi: alla prima esecuzione **9 hit di cui 4 falsi**, corretti nel validatore e non nei documenti <!-- validate-docs: ignore --> |
 | 4b | **G3** — link, path locali e un ADR | **22 difetti veri** (la stima «18 su 241» era di un mese prima e sbagliata in tutte le cifre) · 7 file con path dentro un checkout personale | ⚠️ **non era igiene pura**: uno dei link rotti citava una decisione mai registrata, e recuperarla ha reso il lotto **K** |
 | 4c ✅ | **G1** — i due tempi di `state.md` | §1 collocava i PG **dopo Hammerfist** mentre §0 marca l'arco 08 `⬜ NON giocato` | ⚠️ tocca il canone, ma **non cancella niente: etichetta**. Chiuso il 2026-09-12 — vedi **§4.2-quater**: due costi risultavano **versati senza essere stati giocati**, e il ridisegno dei Doni che ne è nato è una **proposta separata**, non canone |
 | 4d | **G2-bis** — ADR-0017, `state.yaml` | i fatti come dati, `state.md` **generato** | il pezzo grosso. Vedi 4.3 |
@@ -609,6 +609,7 @@ prendono **uno alla volta**, ciascuno col suo commit e i suoi gate.
 | 4f | **G2-quater** — prodotto e partita | il reset per gruppo nuovo **perdeva**: azzerava `state.md` e `sessions/` e lasciava `state.yaml`, `state-changelog.md`, `campaign-history.md` e i recap al gruppo dopo | dipende da 4d/4e |
 | 4g | schede PG a dati | `PG/schede/*.yaml` + `.md` generati | oggi le schede PG **non esistono come dato** da nessuna parte |
 | 4h | ADR-0018 — `groups/<slug>/` | multi-gruppo per directory invece che per branch | **PR dedicata**, come dice la #99 stessa |
+| 4i | **G3-bis** — rimandi fra backtick e contenuti rimasti nei rami | il gate vede i percorsi citati fra backtick in tutti i sorgenti; un registro dà un posto a ogni file che esiste in un ramo e mai su `main` | richiesto dal DM il 2026-09-24, indipendente da 4f-4…4h. Vedi §4.11 |
 
 ### 4.2-bis · Com'è andato 4a (2026-09-07)
 
@@ -620,8 +621,8 @@ verificati uno per uno prima di toccare i documenti — **nessun falso positivo*
 |---|---|
 | `AGENTS.md` 24-26 | l'albero di `campaign/` elencava `npcs/`, `locations/`, `encounters/` |
 | `AGENTS.md` 161-162 | convenzioni di nome per due di quelle cartelle |
-| `AGENTS.md` 210 | `campaign/lore/rhod-adaptations.md`, che non esiste in nessun posto |
-| `AGENTS.md` 225 | *«Check `campaign/npcs/` before describing NPCs»* |
+| `AGENTS.md` 210 | `campaign/lore/rhod-adaptations.md`, che non esiste in nessun posto <!-- validate-docs: ignore --> |
+| `AGENTS.md` 225 | *«Check `campaign/npcs/` before describing NPCs»* <!-- validate-docs: ignore --> |
 | `README.md` 54 | i PNG «dettagliati in» una cartella che non c'è |
 
 ⚠️ **Il peggiore è il quarto**, e non è un refuso: è una **istruzione** nel
@@ -724,7 +725,7 @@ esterne ammesse sono binari, non pacchetti Python»*, perché gli strumenti gira
 sul portatile del DM la sera della sessione. Recuperare ex-0015 significherebbe
 **riaprire ADR-0037**, non colmare un vuoto. E le due gambe su cui stava in piedi
 non ci sono più: il consumatore che giustificava il livello 1
-(`scripts/lint_map_design.py`) **non è mai stato scritto**, e l'audit che ne
+(`scripts/lint_map_design.py`) **non è mai stato scritto**, e l'audit che ne <!-- validate-docs: ignore -->
 misurava il guadagno non è nel repo. L'unica parte viva — la pacchettizzazione,
 `pyproject.toml` assente e **24** `sys.path.insert` — ha già casa in **ADR-0040**
 e nel lotto 0.2 di `PIANO-VENDIBILITA`.
@@ -1146,6 +1147,12 @@ Vale per **ogni** commit di **ogni** fase.
 | ~~D16~~ | F4 · 4d-2 | ✅ **CHIUSA E ATTUATA il 2026-09-16, nello stesso commit.** Il DM ha scelto l'enumerazione **con il compagno**: `attivo · latitante · neutralizzato · morto · ignoto`, più `reversibile`. ⚒️ `neutralizzato` copre il caso più frequente al tavolo — sconfitto ma non morto — e senza di lui il DM dovrebbe scrivere `morto` per non scrivere `attivo`. 🔴 **E `reversibile` è la metà che conta**: in questa campagna un morto torna (il Ghostlord nasce da un morto, Sal è protetto da un paradosso auto-consistente, Hella è morta in attesa del rito), quindi registrare «morto» senza dire se è definitivo è registrare **meno di quel che il canone sa**. La regola **R9** lo pretende. ⚠️ `state_apply` scrive `stato` ma **non** `reversibile`: il primo è la lettura letterale del log, il secondo è una decisione narrativa, e R9 la chiede al DM alla prima esecuzione — provato sul canone vero. 🔎 **§4 conoscenze è stata esclusa dopo averla misurata**, benché il DM avesse chiesto di includerla: tre righe non sono persone e tre persone compaiono sotto due nomi, quindi `stato` lì vorrebbe dire un valore privo di senso in tre casi e due copie divergenti in altri tre. Va nell'anagrafica del lotto della chiave. Vedi **§4.8.9** |
 | ~~D17~~ | F4 · 4d-4 | ✅ **CHIUSA il 2026-09-17 — e la domanda aveva una premessa falsa, trovata dal DM.** Era posta come «i due villain senza scheda: si scrivono, si contano o escono da §3?». 🐛 **Tre delle quattro voci che avevo dichiarato senza scheda ce l'avevano.** Il DM: *«controlla bene negli archi o nel bestiario se c'è qualcosa magari annegato come prosa»*. **Zalkatar** ha uno statblocco a **GS 13** (14d4+70, CA 24) in `09_…/P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md`; **Saarvith + Regiarix** ne hanno uno a **GS 13** in `09_…/P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`, e il file `FASE4` accanto dichiara esplicitamente *«le statistiche sono lì; questo è la regia dello scontro»*; il **Cerchio Druidico** ne ha uno in `Bestiario/mostri/cerchio-druid7-cr7.md`, marcato [ACCEPTED — DM-canon 2026-05-05]. L'errore non è stato non trovarle: ho cercato **solo dentro `Bestiario/`**, e allargando la ricerca ho **troncato l'output a sei righe** concludendo da una lista tagliata. ✅ Non c'era niente da scrivere né da togliere: c'era da **cercare meglio**. Resta **un** buco su 28 (`lathander-mask`), ed è corretto. ⚠️ **Conseguenza di progetto**: una scheda non vive per forza nel `Bestiario/`, e un cancello tarato lì avrebbe continuato a dare per mancanti due boss da GS 13. Nasce **R13**, che mette alla prova ogni buco dichiarato contro tutto il repo. Vedi **§4.8.10** e [ADR-0053](adr/ADR-0053-la-chiave-verso-il-bestiario-si-dichiara.md) |\n| ~~D6~~ | F1 | ✅ **decisa 2026-09-04: ridisegnata.** `…P1C` mappa 3 dichiarava 40×40 e aveva righe da 24 a 26 celle: rifatta **26×29**, nessuna coordinata del testo cambiata |
 | ~~D18~~ | F4 · 4d-6 | ✅ **DECISA E ATTUATA il 2026-09-17, nello stesso commit.** Il DM: *«spezzarli per intestazione verificando che non esistano già»*. Il catalogo portava **19 record intitolati al documento** invece che alla creatura, perché `build_monster_catalog.py` faceva **un record per file** e prendeva il primo GS: «Parte 2A – Torre Invisibile», GS 10. **19 → 8**, pool **372 → 397**. 🔎 Quel che ne è uscito non sono comparse: gli **otto fantini del Palio**, i **Sicari di Sonjak**, il Gonfaloniere Aldemar Vosk, la Drow Chierica di Lolth, gli esempi d'onda di Rethmar — tutti chiusi dentro un record solo. ⚠️ **La deduplica è ancorata a un fatto dichiarato**: si confrontano i nomi **solo** dentro l'insieme delle voci del Bestiario che citano *quel* documento come `Source`. È il modo di rispettare ADR-0053 (un matcher permissivo traveste l'ignoranza) senza rinunciare a dedurre: il legame documento↔voce l'ha scritto qualcuno, la somiglianza sceglie solo *quale* voce sta per *quale* intestazione. 🔴 **E il rischio opposto ha il suo presidio**: il record di file sparisce solo quando **ogni** creatura che il documento nomina ha già la sua voce — gli otto che restano sono quelli dove non è vero, e toglierli significherebbe meno rumore e **meno creature**. 🐛 Due difetti nei nomi generati, trovati misurando: la numerazione del Palio è **multi-livello** (`### 3.2 Drow Chierica`) e lasciava nomi che cominciavano per cifra, e la coda tagliata lasciava parentesi mai chiuse («Aldemar Vosk (LN»). 🔎 **E il cancello nuovo ha trovato un errore mio al primo giro**: contava **due** «Skullcrusher il Nero», perché la voce che avevo appena scritto puntava al file che il drago lo *nomina* soltanto — i numeri stanno in `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md`. Correggendo il puntamento è poi caduto fuori che `P6-INTEGRAZIONE` restava scoperto, e dentro c'erano **Re Thorek I** (Grr 16, il re di mille anni prima che si inginocchia davanti alla Corona) e **Durin Hammerfist**, l'antenato di Othrek: due PNG di canone che non aveva nessuno. Vedi **§4.8.12** e [ADR-0054](adr/ADR-0054-un-archivio-non-e-una-copia.md) |
+| ~~D19~~ | F4 · 4f | ✅ **Risposta del DM il 2026-09-24, ed è un principio più largo della domanda**: *«la procedura dovrebbe essere quanto più automatizzata possibile: un DM normalmente non tocca affatto i file yml, al massimo se ha un'interfaccia scrive dei campi o seleziona i valori da un form già impostato»*. Quindi né lo scheletro da compilare né il derivato da rivedere a mano: il template è **derivato in automatico** dal prodotto, e ciò che resta di giudizio passa da un **modulo** a scelte. Procedura in §4.10.6, il via è **D21** |
+| ~~D21~~ | F4 · 4f | ✅ **Risposta del DM il 2026-09-24.** Sulla procedura di §4.10.6: sì al comando `dm.py gruppo nuovo`; sì a togliere da sole le conoscenze sul party e a chiedere una riga alla volta solo dove serve un giudizio; **gli artefatti restano nel prodotto**, senza portatore; arco e livello di partenza a scelta; PG con nome, razza, classe, livello e PF, al massimo sei; clock a zero e trigger lasciati. Attuato in **4f-4**, §4.10.7. Sulle proposte di fine sessione (4f-5) il DM ha chiesto di più: *«non c'è un tool chiamato dal DM a fine sessione che prende le domande e genera lo state.md e la parte relativa di state.yaml in maniera automatica?»*, con il ciclo intero preparazione → tavolo → chiusura e un **menu testuale** che chiami `dm.py` e che un'interfaccia grafica possa avvolgere. 4f-5 passa a quel piano, commit successivo |
+| ~~D22~~ | F4 · 4i | ✅ **Risposta del DM il 2026-09-24**: per le domande aperte del soggetto, cercare le risposte in tutte le PR, anche chiuse, poi seguire le proposte; piano di level design, `agents.conf` e Giorno 3 di Dauth come proposto. Trovato: **avevi risposto a tutto** (changelog della #72, rev. 5 e 6), e 133 righe su 133 sono in cronaca. Il soggetto è in `plans/`, datato; il basilisco confermato con la tua citazione; restano due conferme, la **D24**. Esiti degli altri tre file in §4.11.5 |
+| ~~D23~~ | F4 · 4i | ✅ **Risposta del DM il 2026-09-24: da verificare dopo, e da riproporre come piano.** Diventa il lotto **4i-3** (§4.11.6), con le sue tre fasi. Misurato nel frattempo: `main` risulta `protected: false`, cioè oggi nemmeno una CI rossa impedisce il merge |
+| ~~D24~~ | F4 · 4i | ✅ **Risposta del DM il 2026-09-24**: *«la destinazione del Piano del Fuoco è canone, e ha un senso anche per Therysol che vuole vendetta»*; e *«Varis era un informatore del Collezionista, non sono la stessa persona»*. Il GS di Maur (11) aveva già la sua risposta nel foglio XP. Attuato: la fuga nel Piano del Fuoco è canone in cronaca, coerenza, archi, lore di Cannath Vale, dossier del Collezionista e di Therysol. Varis verificato: la sua scheda (`Bestiario/png/Varis_Seta_Argento`) lo dà umano, GS 6, intermediario inconsapevole; la confusione stava solo nel dossier del Collezionista della prima stesura (aprile), nel titolo del suo file-rimando, in un prompt immagine e in due file di dati. Vedi §4.11.5 |
+| ~~D20~~ | F4 · 4f-2 | ✅ **DECISA E ATTUATA il 2026-09-24, nello stesso commit.** Il DM: *«D20 ok ma non tralasciare nulla»*. Split per sezione come in §4.10.4: **528 righe su 528** ritrovate nelle due metà (controllate contro git da un test), nessuna duplicata, una sola parola spostata («ESCAPED», che la cronaca racconta già tre volte). Tredici rimandi aggiornati in undici file; restano sul nome vecchio i documenti datati (`plans/`, l'audit IP, la baseline del 21 settembre), come registro di quando sono stati scritti |
 
 ---
 
@@ -1169,7 +1176,7 @@ Vale per **ogni** commit di **ogni** fase.
 | **Attuazione di ADR-0048** — `scripts/legend.yaml` e i consumatori che ne derivano. L'ADR è *accettata, non attuata*: una decisione **senza cancello** finché il lotto non si chiude | lotto **1.1** di [`PIANO-VENDIBILITA`](PIANO-VENDIBILITA.md) | C |
 | 🆕 **I salti di titolo nei booklet** — `HB_TAGS` emette un `#####` sotto un `#`: veraPDF lo rifiuta (PDF/UA 7.4.2-1), e due booklet **non sono committabili** finché non si corregge. Trovato chiudendo E1; il test che lo prende guarda **solo** `10-stand-alone/` | `build_booklet_html.py` | C |
 | ~~**I 51 link rotti nei booklet generati**~~ | ✅ **chiuso 2026-09-12, lotto E1** (§4.7). Erano **44**, non 51 — nono presupposto invecchiato — e non erano un difetto solo: **41 di profondità** nel generatore, **3 falsi positivi** del validatore. Adesso **0** | C |
-| **4e** una sola via di scrittura · **4f** prodotto e partita | §4.2, dipendono da 4d | C |
+| ~~**4e** una sola via di scrittura~~ ✅ chiuso 2026-09-24 (§4.9) · **4f** prodotto e partita | §4.2, dipendono da 4d | C |
 | **`validate_prosa`: 161 rilievi in 340 file** (non bloccante). ⚠️ Il piano diceva «13»: era una misura vecchia e di un altro validatore | `scripts/validate_prosa.py` | M |
 
 ### 4.7 · Lotto **E1** — i link dei booklet generati `[✅ chiuso 2026-09-12]`
@@ -1405,7 +1412,7 @@ file, non il flusso.
 
 #### 4.8.3 · L'ADR ha il numero occupato — **terza volta**
 
-Il ramo porta `plans/adr/ADR-0017-stato-dati-e-prosa.md` (211 righe). Su `main`
+Il ramo porta `plans/adr/ADR-0017-stato-dati-e-prosa.md` (211 righe). Su `main` <!-- validate-docs: ignore -->
 **ADR-0017 è «moduli autoconclusivi e classe di artefatto»**: un'altra
 decisione, presa nel frattempo.
 
@@ -1740,7 +1747,7 @@ del commit, che è esattamente il lavoro per cui esiste.
 | | Cosa | Numero |
 |---|---|---|
 | ⬜ | **la chiave verso `Bestiario/`** — campo `scheda:` + cancello che verifica il percorso; è il lotto successivo, deciso dal DM | 2 villain e 8 PNG da risolvere a mano |
-| ⬜ | le tabelle ancora non modellate (§2.2, §2.3, §2.5, §5, §7.R) | **46 righe** |
+| 🔵 | le tabelle ancora non modellate (§2.2, §2.3, §2.5, §5, §7.R) | **46 righe**: non un residuo, sono **prosa dichiarata** (verificato il 2026-09-24, §4.9.0) |
 | ⬜ | §7 fili narrativi: semi-strutturati, e modellarli adesso vorrebbe dire indovinare uno schema | 24 bullet |
 
 #### 4.8.10 · Lotto **4d-4** — la chiave verso il Bestiario (D17 chiusa)
@@ -1817,7 +1824,7 @@ forza nel `Bestiario/`** — due boss da GS 13 stanno in un arco.
 | | Cosa | |
 |---|---|---|
 | ⬜ | `stato` sale dall'anagrafica: allora anche i PNG di §4 ne hanno uno | il `tipo` esiste già per quel giorno |
-| ⬜ | tabelle non modellate (§2.2, §2.3, §2.5, §5, §7.R) | 46 righe |
+| 🔵 | tabelle non modellate (§2.2, §2.3, §2.5, §5, §7.R) | 46 righe, **prosa dichiarata** (§4.9.0) |
 
 #### 4.8.11 · Lotto **4d-5** — i PNG d'arco che nessuno strumento raggiungeva
 
@@ -2158,6 +2165,733 @@ doppi ridotti a uno: **tredici record in meno, zero creature in meno**.
 | **Lo schema morde** | un fatto **senza `oggi`/`tempo`** → rosso. È il vincolo che chiude C1 alla radice |
 | **Nessuna perdita** | ogni riga tabellare delle sei sezioni coperte ha un record in `state.yaml`, contata nei **due sensi** |
 | **Non-regressione** | i **20 file** che toccano `state.md` — 737 test verdi, `dm.py doctor --ci`, `next_session`, `session_recap` |
+
+### 4.9 · Lotto **4e** — una sola via di scrittura `[✅ chiuso il 2026-09-24 · 4e-0 · 4e-1 · 4e-2 · 4e-3]`
+
+> `[C costruzione · Opus 5, sessione principale (il piano diceva Sonnet 5) · alto ·
+> un test **sui file veri** (§4.4): i tredici villain di `campaign/state.yaml`
+> si raggiungono tutti dal log di sessione, e un delta vecchio o un `png_id`
+> inesistente **non scrive niente**]`
+
+#### 4.9.0 · FASE 1 · 4d è chiuso davvero? (2026-09-24, in sola lettura)
+
+Richiesta DM: *«verifica con fase1.py che 4d sia davvero chiuso (il piano
+dichiara 46 righe di tabelle non modellate come residuo)»*. `fase1.py --check`
+sui sette file della via di scrittura: nessun archivio, uscita 0.
+
+| Prova del contratto di 4d | Esito oggi |
+|---|---|
+| `render_state.py --check` | ✅ `state.md` allineato a `state.yaml` |
+| `validate_state.py` | ✅ valido; R7 conta **58** righe senza tempo, R12 **1** voce senza scheda (`lathander-mask`), come dichiarato |
+| i test di §4.8.6 (byte-identità, gate che morde, nessuna perdita nei due sensi, schema che morde) | ✅ esistono in `test_state_data.py`; i 75 test di stato passano |
+
+**Le 46 righe, rimisurate** sulle tabelle fuori dalle regioni `gen:state:`:
+
+| Tabella | Righe | Chi la dichiara |
+|---|---:|---|
+| §2.2 composizione dell'orda | 13 | `dmcore/masters.py`: §2 «waypoint e orda» è **prosa**, e *«modellarle è un lotto suo»* |
+| §2.3 additivi condizionali | 11 | idem |
+| §2.5 infiltrati e profughi | 8 | idem (è sotto §2) |
+| §5 promesse | 9 | §4.8.4: **resta prosa, scelta dichiarata** |
+| §7.R reputazione | 5 | §4.8.4: §7 resta prosa |
+| **totale** | **46** | |
+
+**Verdetto: 4d è chiuso sul suo contratto.** Le 46 righe non sono un residuo di
+4d: stanno fuori dalle otto regioni che 4d aveva promesso, e il repo le dichiara
+prosa in due posti. Il difetto era nel piano, che le elencava come ⬜ in due
+tabelle «Cosa resta» senza dire di chi fossero. Da qui non sono un lotto di
+questo piano. Modellarle sarebbe un lotto **K** e una decisione del DM: la
+colonna «Status (Day 19 sync)» di §2.5 è la stessa forma dei due tempi che 4c ha
+dovuto separare.
+
+#### 4.9.1 · FASE 1 · Cosa resta di 4e sul codice di oggi
+
+La #99 definiva 4e (commit `df9d74b`, 2026-08-06) in due parti:
+
+1. **i dati**: clock dei villain, «chi sa cosa», numeri di Rethmar. ✅ **Già su
+   `main`**, portati da 4d-1…4d-3: `villain.clock`, `villain.stato`, la regione
+   `conoscenze`, `difensori_rethmar` e `scenari_rethmar`, `march_clock`.
+2. **la via**: il log di sessione porta in testa un **front-matter coi delta**,
+   emesso dal wizard, e `state_apply` legge quello invece di cercare con regex
+   nella prosa. ⬜ **Non esiste.**
+
+La seconda parte non è estetica. Misurato oggi, prendendo ogni villain di
+`state.yaml` col nome breve che un DM scriverebbe nel log:
+
+| Trigger di `state_sync` | Villain che vede | Chi manca |
+|---|---:|---|
+| `villain_clock` (9 clock numerici, il rituale a parte) | **3 su 9** | Zalkatar, Saarvith, Valerius, **Ghaurush, Zin'thara, Ushgar**. Il Collezionista si vede solo se il log scrive «Rakshasa» |
+| `npc_killed` | **5 su 13** | Sal, il Collezionista, Xal'thor, Valerius, Mira Serani, **Ghaurush, Zin'thara, Ushgar** |
+| `npc_escaped` | 13 su 13 | nessuno, perché accetta **qualunque** parola maiuscola. Lo salva `_stato_villain`, che scarta i nomi non univoci |
+
+I nomi stanno **scritti nel sorgente** della regex. I tre villain canonizzati il
+2026-08-05 non ci sono mai entrati: un loro clock o una loro morte a fine
+sessione **non produce nemmeno la proposta a mano**, perché la riga non viene
+riconosciuta. È il difetto che la #99 aveva previsto per Ghaurush.
+
+La chiave c'è già, ed è di 4d-4: ogni record `villain` ha un `png_id`
+obbligatorio. Il front-matter nomina il villain per `png_id`, non per somiglianza
+di stringa.
+
+**Fuori da 4e, dichiarato:** le tre righe di §4 che fanno sapere dei «Custodi
+Eterni» a Ghaurush, Zin'thara e Ushgar prima che l'arco 08 sia giocato (la
+domanda nuova della #99). Sono canone, non via di scrittura, e R7 le conta già
+fra le 31 conoscenze senza tempo.
+
+#### 4.9.2 · FASE 2 · Sviluppo, in tre sotto-lotti
+
+| | Sotto-lotto | Cosa produce | Qualità |
+|---|---|---|---|
+| **4e-1** | il delta come dato | `dmcore/delta_sessione.py`: legge il front-matter, lo valida contro `state.yaml` (`png_id` esistente, `da` uguale al valore di oggi, `stato` nell'enumerazione dello schema) e lo emette in forma deterministica. `state_apply` lo usa **al posto** della regex per le quattro scritture meccaniche; senza front-matter si ricade sulla regex di oggi | test sui file veri: i 13 villain raggiungibili, un delta vecchio e un `png_id` ignoto **non scrivono**, un log con front-matter **e** righe di prosa non applica due volte |
+| **4e-2** | il wizard lo scrive | `session_wizard` risolve i nomi contro `state.yaml` **mentre il DM risponde**, gli mostra a chi ha agganciato cosa e scrive il front-matter. Il DM non scrive YAML | un nome che non si risolve lo dice subito e resta prosa; il file del wizard è letto da `state_apply` senza regex |
+| **4e-3** | documenti e chiusura | template di sessione, skill `rumblingstone-automation`, `README-automation`, docstring di `state_sync`, tracciatura | `validate_docs --sorgenti`, `validate_skills`, `tools_manifest --check` |
+
+**Assunzioni dichiarate.**
+
+1. **La regex resta** per i log senza front-matter. L'unico log in
+   `campaign/sessions/` è scritto in anticipo e non ne ha; toglierla romperebbe
+   la lettura dei log vecchi per guadagnare niente.
+2. **Il front-matter porta solo ciò che `state_apply` sa scrivere**: March
+   Clock, clock dei villain (rituale compreso), `stato`. Alleanze e prosa
+   restano nella sezione *World events triggered*, come proposta a mano.
+3. **`reversibile` non si scrive**, come oggi: lo dice il DM, e R9 glielo chiede.
+4. **pyyaml** resta il debito dichiarato di ADR-0037: `state_apply` lo importa
+   già. Il wizard lo usa solo per risolvere i nomi, e senza pyyaml scrive il log
+   senza front-matter e lo dice.
+
+#### 4.9.3 · FASE 3 · Validazione
+
+| Prova | Criterio |
+|---|---|
+| **sui file veri** | `state.md`, `state.yaml` e `state-changelog.md` del repo copiati in un repo temporaneo; `state_apply` con un log a front-matter scrive il campo giusto, rigenera la vista e `render_state --check` resta verde |
+| **i tredici** | ogni `png_id` di `villain` è raggiungibile dal front-matter; la regex resta com'è e un test dice quanti ne vede |
+| **i cancelli mordono** | `da` diverso dal valore di oggi, `png_id` inesistente, `stato` fuori enumerazione: nessuna scrittura, uscita non zero, e il motivo a video |
+| **una via sola** | front-matter più la stessa riga in prosa: una scrittura, non due |
+| **non-regressione** | pytest completo, `dm.py doctor --ci`, `check_plans_discipline`, `validate_docs --sorgenti` |
+
+#### 4.9.4 · Com'è andato 4e-1 (2026-09-24) — il delta come dato
+
+`scripts/dmcore/delta_sessione.py` legge il front-matter, lo valida contro
+`state.yaml` e lo trasforma in operazioni già risolte; `state_apply` le applica
+con lo stesso diff e la stessa conferma di prima. Con un front-matter, i
+trigger meccanici della regex si ignorano e **si stampano uno per uno**, perché
+una riga aggiunta a mano che il delta non ha deve restare visibile.
+
+**Le scelte prese durante il lotto**, che il piano non aveva visto:
+
+- **Il rituale non è un caso a parte.** Azarr Kul ha un `png_id` e un clock
+  `9/18` come gli altri: il delta lo muove con `clock`, e il riconoscimento
+  «è l'unico su diciotto» che la regex deve fare non serve più.
+- **Un log già applicato non è un errore.** Se il valore di oggi è già `a`, la
+  voce non produce niente; se non è né `da` né `a`, il log è stato scritto su un
+  altro stato e il delta intero si rifiuta. La via di oggi era idempotente, e
+  questa lo resta.
+
+| Prova | Esito |
+|---|---|
+| i tredici, su `state.yaml` vero | ✅ i 10 clock numerici si muovono e i 13 villain ricevono uno stato, ognuno sul suo indice |
+| sui file veri, end-to-end | ✅ `state.md`, `state.yaml`, `state-changelog.md` copiati: il delta scrive, la vista rigenerata coincide, il secondo giro non scrive, un `png_id` ignoto lascia i tre file **identici** con uscita 1 |
+| una via sola | ✅ un clock di Sonjak scritto solo in prosa **non** passa |
+| il recap non vede il delta | ✅ nessuna sezione pubblica contiene `png_id` |
+| 🔴 i cancelli mordono | ✅ **5 mutazioni su 5** rosse: regex non filtrata (1 test), niente tutto-o-niente (9), `da` del March Clock ignorato (1), niente idempotenza (2), `png_id` per somiglianza (16) |
+| non-regressione | ✅ **1.229** test, `dm.py doctor --ci`, `tools_manifest --check` |
+
+#### 4.9.5 · Com'è andato 4e-2 (2026-09-24) — il wizard scrive il delta
+
+Le domande del wizard non cambiano: March Clock, Ritual Clock, clock toccati,
+cambi di stato dei PNG. Cambia cosa succede alla risposta. `session_wizard`
+legge `campaign/state.yaml`, risolve ogni nome col `png_id` e valida **ogni
+voce da sola** contro lo stato di oggi. Quella che torna entra nel
+front-matter; quella che non torna esce con il suo motivo a video e resta
+nella prosa del log.
+
+La validazione per voce è la differenza rispetto a `state_apply`, che fa tutto
+o niente. Lì un delta sbagliato arriva a sera finita e non deve scrivere a
+metà; qui il DM è davanti al terminale, e una voce sbagliata non deve buttare
+via le altre che ha appena dato.
+
+| Prova | Esito |
+|---|---|
+| le risposte diventano dati | ✅ Ghaurush e il Ritual Clock vanno a `ghaurush` e `azarr-kul`, «Ushgar morto» a uno `stato`; un nome inesistente produce un avviso e nessuna voce |
+| una voce che non torna | ✅ esce da sola con «state.yaml dice», le altre restano |
+| un nome ambiguo | ✅ «Illithid» aggancia più villain e non ne sceglie nessuno |
+| dal wizard a `state_apply`, sui master veri | ✅ il log comincia col front-matter, `state_apply` scrive i quattro campi senza regex |
+| senza `state.yaml` | ✅ il log esce senza front-matter, come prima di 4e |
+| 🔴 i cancelli mordono | ✅ **3 mutazioni su 3** rosse: voce non validata da sola, nome ambiguo che sceglie il primo, front-matter non scritto |
+| non-regressione | ✅ **1.234** test, `dm.py doctor --ci`, `tools_manifest --check` |
+
+#### 4.9.6 · 4e-3 e la chiusura del lotto (2026-09-24)
+
+I documenti che descrivevano la via di scrittura di prima, e cosa dicono ora:
+
+| Documento | Diceva | Dice |
+|---|---|---|
+| skill `rumblingstone-automation` | «diff `state.md` (solo regioni auto)»; `--migrate` «inserisce i marker `auto:`» | il front-matter, il diff di `state.yaml` e della vista; `--migrate` marca solo lo storico |
+| `DM-CAMPAIGN-PLAYBOOK` §4 | «March Clock e changelog §8 nelle regioni marcate `auto:`» di `state.md` | il wizard scrive i delta, `state_apply` li porta in `state.yaml` |
+| `tools.manifest.json` (e `docs/tools/`) | `state_apply` scrive «SOLO nelle regioni `auto:` di state.md» | scrive in `state.yaml` e legge il front-matter; il wizard dichiara `state.yaml` come ingresso facoltativo |
+| ADR-0050 §4-bis | lo schema della #99, col March Clock in una regione `auto:` | una nota d'attuazione con lo schema di oggi (D14 l'aveva superato) |
+| `session-template.md`, `README-automation`, docstring di `state_sync` | niente sul front-matter | dove sta, chi lo scrive, e che la regex vale solo senza |
+
+**Nessuna ADR nuova.** La decisione c'era già, ADR-0050 §4-bis, scritta per la
+#99 il 6 agosto: questo lotto l'attua.
+
+**Come si sa che 4e è finito**, contro il criterio di §4.9: i tredici villain
+di `state.yaml` si raggiungono tutti dal log (10 clock numerici e 13 stati,
+ciascuno sul suo record), un delta vecchio o un `png_id` inesistente lasciano i
+tre master identici, e la prova gira sui file veri. **8 mutazioni su 8** fanno
+rosso fra 4e-1 e 4e-2.
+
+**Cosa resta di F4**: **4f** (prodotto e partita: il reset per gruppo nuovo
+dovrà conoscere `state.yaml`, `state-changelog.md` e adesso anche il
+front-matter), **4g** (schede PG a dati), **4h** (`groups/<slug>/`, PR
+dedicata).
+
+### 4.10 · Lotto **4f** — prodotto e partita `[✅ chiuso il 2026-09-24 · 4f-0 · 4f-1 · 4f-2 · 4f-4 · 4f-3 · 4f-5 passato a CICLO-SESSIONE 1b (D21)]`
+
+> `[C costruzione, con un sotto-lotto K (4f-2) · Opus, sessione principale ·
+> alto · un test che esegue il reset su una copia dei file veri e dimostra che
+> il gruppo nuovo **non eredita niente** della partita, e che la CI resta verde]`
+
+#### 4.10.0 · FASE 1 · Cosa eredita oggi un gruppo nuovo (2026-09-24)
+
+`scripts/new-campaign-group.sh` eseguito in un clone usa-e-getta, sul `main` di
+oggi:
+
+| Dopo il reset | Esito |
+|---|---|
+| `state.md` | copiato da `templates/state-blank.md`, che **non ha nessuno** dei 10 marcatori `gen:state:` → `render_state --check` **rosso**: la CI del gruppo nuovo fallisce al primo push |
+| `state.yaml` | **non toccato**: 750 righe del primo tavolo, 22 archi, 4 PG, 8 artefatti, 13 villain, e `validate_state` le dà per valide |
+| `state-changelog.md` | **non toccato**: 1.195 righe di storico del primo tavolo |
+| `lore/campaign-history.md` | **non toccato**: 630 righe, metà premessa e metà cronaca |
+| `recaps/` | **non toccati**: un recap e due `.hb.md`, compresa la cronologia |
+| `DM-DOSSIER.hb.md` | **non toccato**: è generato da `state.md` del primo tavolo |
+| `sessions/` | ✅ svuotato |
+
+🔴 **E ADR-0050 §7 dice il contrario.** L'ADR, accettata e recuperata in 4d-1,
+fissa la regola (il **prodotto** resta, la **partita** si azzera da template),
+decide lo split di `campaign-history.md` in premessa e cronaca, e nomina il
+presidio: *«`test_new_group.py` verifica che ogni file di stato sia coperto dal
+reset»*. Su `main` quel test **non esiste**, come i template e lo split. Il
+recupero di 4d-1 ha portato l'ADR e non il lotto che la attuava (G2-quater della
+#99, `c825d6d`).
+
+**Fuori da 4f, dichiarato:**
+
+- `PG/` (schede e immagini dei quattro PG) è partita, ma è il lotto **4g**.
+- Gli archi e il Bestiario sono scritti **per questi quattro PG**: artefatti col
+  nome del portatore, missioni personali. È prodotto e il reset non lo tocca. Un
+  gruppo con altri personaggi ha un problema di contenuto, non di infrastruttura.
+- `campaign/misure/` (i campioni del κ) è uno strumento del repo, non partita.
+
+#### 4.10.1 · Il taglio
+
+| | Sotto-lotto | Classe | Cosa produce |
+|---|---|---|---|
+| **4f-1** | la partita come dato | C | un elenco unico dei file di partita e del loro template, letto dallo script di reset e dal test; `state-blank.md` coi marcatori, `state-blank.yaml`, `state-changelog-blank.md`; il reset che rigenera e **valida prima di dichiararsi finito**; `test_new_group.py`, il presidio che l'ADR promette |
+| **4f-2** | lo split di `campaign-history.md` | **K** | `campaign-premise.md` (prodotto) e `campaign-chronicle.md` (partita), con la regola di ADR-0050 §7 applicata sezione per sezione e nessuna riga persa; i rimandi aggiornati |
+| **4f-3** ✅ | documenti e chiusura | M | quickstart, playbook §7, manifest (anche `state_apply`, che non dichiara `state.yaml` e `state-changelog.md` fra le uscite), tracciatura |
+
+#### 4.10.2 · La domanda che resta al DM: D19
+
+`state.yaml` mescola prodotto e partita dentro lo stesso record. `png` è prodotto puro
+(id, nome, scheda nel Bestiario) e passa al gruppo nuovo com'è. Le agende dei
+villain, i waypoint del March Clock e le righe degli archi sono **testo del
+primo tavolo**: «Skull Gorge bridge, crossed intact (PG did NOT sabotage)».
+
+- **Scelta di default in 4f-1**: lo **scheletro** della #99. `png` resta, ogni
+  altra sezione riparte da un record segnaposto dichiarato come tale, March Day
+  1, arrivo a Rethmar al Day 42. È la lettura di ADR-0050 §7 e l'unica che non
+  inventa canone.
+- **D19**: preferisci un template **derivato**, che tenga le agende preparate
+  dei 13 villain coi clock a zero, e gli archi tutti «da giocare»? Costa una
+  revisione riga per riga (classe **K**), perché ogni agenda va ripulita da ciò
+  che il primo tavolo ha già cambiato.
+
+#### 4.10.3 · Com'è andato 4f-1 (2026-09-24) — la partita come dato
+
+L'elenco di cosa è partita sta in `scripts/dmcore/partita.py`: tre master da
+template, cinque modelli di file da svuotare (sessioni, recap di gruppo e per
+PG, `.hb.md`, brief), tre file generati da togliere (`xp-ledger`, dossier,
+`group.yaml`, che porta il nome del gruppo di prima). `campaign-history.md` sta
+in un elenco a parte, `PENDENTI`, e il reset lo stampa a ogni esecuzione finché
+4f-2 non lo chiude. Lo esegue `scripts/azzera_partita.py`, che
+`new-campaign-group.sh` chiama al posto del suo `cp` e del suo `rm`.
+
+**L'ordine conta.** Il reset costruisce il nuovo `state.yaml` e lo passa a
+`validate_state` **prima di scrivere qualunque file**: se non torna, non tocca
+niente e il branch non si committa. Per poterlo fare, i controlli di
+`validate_state` sono diventati una funzione, `errori()`: con due elenchi, il
+giorno che se ne aggiunge uno il reset lo salterebbe.
+
+Il template di `state.yaml` è lo scheletro (D19 resta aperta per il derivato):
+i dieci archi e il Ritual Clock a 0/18 vengono da `state-blank.md`, il Day 42
+dall'AP, e `png` dallo `state.yaml` di prima perché è prodotto. Il template di
+`state.md` ora ha i 10 marcatori; diceva ancora «Day 40» per l'arrivo a
+Rethmar, e il canone è 42.
+
+| Prova | Esito |
+|---|---|
+| lo script vero, in un clone con git | ✅ branch, reset, commit: 10 file, 3.056 righe tolte; `render_state --check`, `validate_state`, `validate_docs --sorgenti` verdi sul gruppo nuovo |
+| sui file veri (`test_new_group.py`, 10 test) | ✅ CI verde; nessun nome dei quattro PG nei tre master; `png` identico; `house-rules.md` intatto; il primo `session end` del gruppo nuovo scrive e la vista segue; rifarlo dà lo stesso risultato |
+| l'elenco copre ogni uscita | ✅ ogni file che il manifest dichiara scritto sotto `campaign/` è in `PARTITA` o in `PENDENTI` |
+| 🔴 i cancelli mordono | ✅ **5 mutazioni su 5** rosse. 🐛 La prima (una voce tolta dall'elenco) **passava**: il test confrontava i percorsi con `fnmatch`, dove `*` attraversa le cartelle e `recaps/*.md` copriva anche `recaps/homebrew/`. Ora confronta come `Path.glob`, e conta i recap direttamente |
+| non-regressione | ✅ **1.244** test, `dm.py doctor --ci`, `tools_manifest --check` (74 tool) |
+
+#### 4.10.4 · 4f-2, la proposta di split (in attesa del DM: D20)
+
+`campaign-history.md` (630 righe) diviso secondo ADR-0050 §7, **spostando
+righe senza riscriverle**. La **premessa** comprende AP, ambientazione, grafo
+dei villain e riferimenti; la **cronaca** comprende il party, la timeline degli
+archi e la catena dei dungeon.
+
+| Parte (righe di oggi) | Va in | Perché |
+|---|---|---|
+| intestazione e PART 1: AP, Setting, System, Party Name, Theme (1-16, 18) | `campaign-premise.md` | «AP, ambientazione» |
+| «Current Level: 13» (17) | `campaign-chronicle.md` | è lo stato di questo tavolo |
+| The Party, No-Rogue Strategy (20-33) | cronaca | «il party» |
+| PART 2, timeline degli archi (35-434) | cronaca | «timeline degli archi» |
+| PART 3, catena dei dungeon (435-554) | cronaca | «con gli eventi di *questi* PG» |
+| PART 4, grafo dei villain (555-587) | premessa, **tranne una parola** | «Il Collezionista (Rakshasa, **ESCAPED**)» è un evento del primo tavolo: nella premessa resta «(Rakshasa)», e la fuga passa nella cronaca con il rimando |
+| PART 5 e indice dei rimandi (588-630) | premessa | «riferimenti» |
+
+**I rimandi.** Undici file fuori da `plans/` citano `campaign-history.md`: le
+quattro pagine della skill `rumblingstone-campaign`, tre file dell'arco 09, la
+Cerimonia delle 100 Asce, `Belkram.md`, `dm-player-strategy.md`, `state.md`.
+Due citano **un numero di riga** (`RETROATTIVI-ARC07-INFERRED.md` «r.26» e
+`Belkram.md`), che dopo lo split punta altrove. I documenti di `plans/` restano
+com'erano, perché sono il registro di quando sono stati scritti.
+
+**Il cancello**: le righe delle due metà, messe insieme, sono quelle di oggi
+(tranne la parola spostata), e un test verifica che la premessa non nomini i
+quattro PG fuori dai titoli degli artefatti. Dopo lo split `campaign-history.md`
+esce dai `PENDENTI` e la cronaca entra nella partita, con un suo template.
+
+#### 4.10.5 · Com'è andato 4f-2 (2026-09-24) — premessa e cronaca
+
+Il DM: *«D20 ok ma non tralasciare nulla»*.
+
+| File | Righe | Contenuto |
+|---|---:|---|
+| `campaign/lore/campaign-premise.md` | 110 | intestazione nuova; AP, Setting, System, Theme; i due rimandi di testa; PART 4 (grafo dei villain) e PART 5 (riferimenti); l'indice dei rimandi |
+| `campaign/lore/campaign-chronicle.md` | 564 | intestazione nuova; titolo e «single source» originali; Party Name e Current Level; The Party e No-Rogue Strategy; PART 2 e PART 3 |
+| `campaign/templates/chronicle-blank.md` | — | la cronaca vuota per un gruppo nuovo; la premessa non ha template perché non si azzera |
+
+**Niente tralasciato, e come si sa.** Le righe non banali del file di prima
+erano **528**: sono tutte in una delle due metà, nessuna in entrambe.
+`test_nessuna_riga_persa_nello_split` lo verifica **contro git**, cercando
+l'ultimo commit in cui `campaign-history.md` esisteva, e non contro una copia
+fatta al momento. L'unica riga cambiata è quella del grafo dei villain, «(Rakshasa,
+ESCAPED)» → «(Rakshasa)». La fuga resta nella cronaca, che la raccontava già alle
+righe 92, 94 e 459 del file di prima.
+
+**I rimandi**: tredici, in undici file. Le quattro pagine della skill
+`rumblingstone-campaign` (compresa la gerarchia delle fonti, dove la cronaca e
+la premessa prendono insieme il terzo posto), tre file dell'arco 09, la
+Cerimonia delle 100 Asce, `Belkram.md` e `RETROATTIVI-ARC07-INFERRED.md`
+(«r.26» diventa «r.39», la stessa riga della tabella del party),
+`dm-player-strategy.md`, la regola in testa a `state.md`, `AGENTS.md`.
+**Restano sul nome vecchio, di proposito**, i documenti datati: `plans/`, l'audit
+IP del settembre, la baseline dei punteggi del 21 settembre (lo strumento conta
+già i file «spariti»), e un commento storico in `render_state.py`.
+
+⚠️ **Un difetto di canone trovato e non corretto.** La tabella del party dà
+Hella «✅ Alive (died in arc 06, resurrected as Treant Hybrid)»: è lo stato
+**preparato**. Al tavolo Hella è morta (`state.yaml`, `stato: morto`). La #99
+l'aveva marcato il 6 agosto e la correzione non è mai arrivata su `main`. Lo
+split sposta righe e non le riscrive: la cronaca lo dichiara in testa, e la
+riga si corregge nel lotto del canone, non qui.
+
+| Prova | Esito |
+|---|---|
+| i test della #99, portati | ✅ i due file esistono e il vecchio no; la premessa non racconta eventi (sei stringhe, che la cronaca deve contenere tutte); la cronaca contiene i quattro PG |
+| il reset | ✅ la cronaca si azzera dal suo template, la premessa resta identica; `PENDENTI` è vuoto |
+| 🔴 i cancelli mordono | ✅ **3 mutazioni su 3** rosse: una riga persa, «ESCAPED» di nuovo nel grafo (la prima prova la metteva nell'intestazione, che il test esclude: era la mutazione a sbagliare), la cronaca tolta dall'elenco della partita |
+| non-regressione | ✅ **1.248** test; `validate_skills` dopo il build, `validate_docs` e `--sorgenti`, `validate_modules`, `validate_bestiario`, `validate_state`, `render_state --check` |
+
+#### 4.10.6 · D19, dopo la risposta del DM: nessun YAML a mano
+
+**Il principio** (DM, 2026-09-24): il DM non scrive YAML. Al massimo compila
+campi o sceglie valori da un modulo già impostato.
+
+**Dove il repo lo viola oggi**, misurato:
+
+| Posto | Cosa dice al DM |
+|---|---|
+| `new-campaign-group.sh` (scritto in 4f-1) | «Fill `campaign/state.yaml`: party, first villains» |
+| `dmcore/masters.py`, nota di `DATI` | ogni proposta non meccanica di fine sessione va scritta in `state.yaml`, poi `render_state` |
+| skill `rumblingstone-automation`, tabella dei tre master | `state.yaml`: «**qui**, poi `render_state.py`» |
+
+**Perché il template non può essere derivato del tutto in automatico.** Nello
+`state.yaml` di oggi, cercando i nomi dei PG, i giorni di marcia e i verbi di
+esito, portano tracce del primo tavolo **9 agende villain su 13**, **4 righe di
+difensori su 9**, **4 artefatti su 8** e **3 archi su 22** (conto euristico,
+con falsi positivi possibili). Quelle righe hanno bisogno di un giudizio, e il
+giudizio resta del DM. Si può però ridurlo a una scelta.
+
+**La procedura proposta:**
+
+| | Sotto-lotto | Cosa fa | Il DM |
+|---|---|---|---|
+| **4f-4** | il gruppo nuovo da un modulo | `dm.py gruppo nuovo` fa il branch, il reset e il modulo della sessione 0. Il template è **derivato**: villain con agenda, trigger e `png_id` preparati, clock a zero, `stato: attivo`; archi tutti da giocare; numeri di Rethmar come preparati; artefatti senza portatore. Le righe con tracce del primo tavolo si presentano **una alla volta**, con tre scelte: tieni, svuota il campo, segna da rivedere. «Da rivedere» diventa una voce `inferred`, il meccanismo che il repo usa già per le domande aperte | scrive il nome del gruppo e i PG (nome, classe, livello); **sceglie** arco di partenza e risposte |
+| **4f-5** → [CICLO-SESSIONE](PIANO-CICLO-DI-SESSIONE-E-MENU.md) 1b | le proposte diventano domande | le proposte non meccaniche di `state_apply` (alleanze, party, conoscenze) non dicono più «scrivi in `state.yaml`»: diventano domande dello stesso modulo, con i valori possibili già elencati e la scrittura validata come quella del delta | sceglie |
+| — | documenti | le tre righe della tabella qui sopra | — |
+
+**Il contratto è il JSON delle risposte, non il modulo.** È la forma che
+`session_wizard --answers` usa già: il modulo in terminale lo produce oggi, e
+una pagina locale potrà produrlo domani senza toccare la logica. È anche ciò che
+rende tutto testabile senza tastiera.
+
+⚠️ **Quello che l'automazione non toglie**: le nove agende restano un giudizio
+del DM. Il modulo gli risparmia di aprire un file e di scrivere YAML, non di
+decidere se l'agenda di Xal'thor, *«to seize Tordek's Bracieri Gemelli»*, vale
+anche per un tavolo dove Tordek non c'è.
+
+#### 4.10.7 · Com'è andato 4f-4 (2026-09-24) — il gruppo nuovo da un modulo
+
+**Il comando.** `python3 scripts/dm.py gruppo nuovo`. La logica sta in
+`dmcore/gruppo_nuovo.py`, senza terminale; `gruppo_nuovo.py` ha il modulo e i
+passi su disco e su git. Ordine: si deriva, si risponde, si **valida**, e solo
+dopo si crea il ramo. Se il reset fallisce si torna al ramo di partenza e il
+ramo nuovo si cancella.
+
+**Rimisurato prima di scrivere il codice**, perché la stima di §4.10.6 («9 agende
+villain su 13», «3 archi su 22») veniva da un conto euristico. Due correzioni:
+
+- «party» nelle agende è un falso positivo. *«Profile party's artifacts»* è
+  un'agenda preparata e vale per qualunque gruppo. Nelle conoscenze invece è
+  una traccia vera (*«The party visited Hammerfist»*), e quelle righe si tolgono
+  da sole, come hai deciso.
+- Con i nomi dei PG presi dal `party` dello stato e la parola «PG», le righe
+  da decidere una alla volta sono **10**: 5 fra agende e trigger di villain, 4
+  condizioni dei difensori, 1 waypoint (*«crossed intact (PG did NOT
+  sabotage)»*). Le conoscenze che si tolgono da sole sono **19 su 31**.
+
+**Il contratto per un'interfaccia.** `--domande` stampa il modulo come JSON,
+`--answers` prende le risposte in JSON: il modulo in terminale produce lo
+stesso oggetto. 🐛 Per farlo passare anche attraverso `dm.py` è servita una
+correzione: `dm.py` scriveva la riga `[dm] → script …` su **stdout**, e il JSON
+non era più JSON. Ora va su stderr; l'unico test che la leggeva la filtrava già.
+
+**Una riga senza risposta vale «rivedi».** Niente passa in silenzio e niente
+si cancella in silenzio: sono i due modi di sbagliare qui.
+
+**Documenti riallineati.** Il Playbook §7 faceva copiare `state-blank.md` a
+mano e compilare §1 nel markdown, contro D19 e contro le tabelle generate:
+riscritto attorno al comando. Rimandi aggiornati in `AGENTS.md`, `README.md`,
+quickstart, guida di setup, README-automation, skill `rumblingstone-automation`.
+`new-campaign-group.sh` non dice più «Fill campaign/state.yaml» e rimanda al
+modulo: la prima delle tre violazioni di D19 elencate in §4.10.6 è chiusa. Le
+altre due (`dmcore/masters.py` e la tabella dei tre master nella skill) sono
+il lavoro di 4f-5, che passa al piano del ciclo di sessione.
+
+**Validazione.** 19 test nuovi, fra cui il comando da capo a fondo su una copia
+del repo sotto git (ramo, reset, `group.yaml`, `render_state --check` verde),
+il modulo in terminale con le risposte su stdin, Ctrl-D a metà, l'albero sporco
+che non fa partire niente. **10 mutazioni su 10** rosse. 🐛 La copia di prova
+collegava `.gitignore` come link simbolico, che git non segue: i `__pycache__`
+sporcavano l'albero e il comando si rifiutava di partire, giustamente. Il test
+ora copia il file.
+
+#### 4.10.8 · 4f-3 e la chiusura del lotto (2026-09-24)
+
+Dei tre documenti che 4f-3 doveva sistemare, quickstart e Playbook §7 sono
+stati riscritti dentro 4f-4, perché descrivevano il comando nuovo. Restava il
+manifest: `state_apply` scrive `campaign/state.yaml` dal lotto 4d-2 e
+`campaign/state-changelog.md` dalla divisione dello storico, e non li
+dichiarava fra le uscite; non dichiarava nemmeno `state.yaml` fra gli
+ingressi. Corretto. Il server MCP, che legge il manifest, lo elenca ancora fra
+chi scrive canone e lo blocca senza `--allow-write`.
+
+**Il lotto si chiude così**: la partita è un elenco (4f-1), la cronaca è
+separata dalla premessa (4f-2), un gruppo nuovo parte da un modulo (4f-4), e
+le proposte di fine sessione diventano domande nel piano del ciclo di sessione,
+dove il DM le ha portate (D21).
+
+### 4.11 · Lotto **4i** — i rimandi fra backtick, e il contenuto rimasto nei rami `[4i-1 ✅ · 4i-2 ✅ · D22 ✅ · 4i-3 ⬜ la protezione di main, da verificare con il DM]`
+
+> **Classe R** (ricognizione) per la misura, **M** per le correzioni con una
+> sola risposta possibile. Le righe il cui destino è un giudizio sul contenuto
+> vanno al DM e non si toccano. Richiesta del DM del 2026-09-24: *«verifica
+> perché validate docs non controlla i rimandi rotti […] controlla che non si
+> sia perso in tutte le PR, anche quelle chiuse»*.
+
+#### 4.11.0 · FASE 1 · Perché il gate non l'ha visto
+
+Il lotto 4f-2 ha tolto `campaign-history.md`, e tre piani che lo citavano fra
+backtick sono rimasti verdi. `validate_docs --sorgenti` controllava i **link**
+markdown su tutto il repo, ma i percorsi fra backtick solo sui tre documenti
+d'ingresso. L'esclusione era scritta in §4.2-ter con un motivo onesto: «una
+superficie di falsi positivi che nessuno ha misurato». Nessuno l'ha mai
+misurata.
+
+🔎 **Il controllo era già esistito.** `scripts/validate_skill_paths.py`, scritto <!-- validate-docs: ignore -->
+il 2026-05-02 nella review della PR #1, faceva proprio questo sulle skill. È
+stato spinto sul ramo `optimize-skills-agent-folders` **dopo** il merge della
+PR, insieme a `scripts/agents.conf`: nessuno dei due è mai arrivato su `main`. <!-- validate-docs: ignore -->
+
+**Misurato il 2026-09-24**, prima di scrivere il controllo: **180 percorsi**
+inesistenti in **823** documenti. I falsi positivi erano 45, in quattro famiglie
+che il repo sa già riconoscere senza una lista a mano:
+
+| Famiglia | Da dove viene la risposta |
+|---|---|
+| segnaposto (`…`, `...`, `a\|b`) | il testo stesso |
+| file che uno script crea quando gira (recap, brief, ledger) | `tools.manifest.json` (uscite) e `dmcore/partita.py` |
+| cloni locali di terzi (ComfyUI, Homebrewery) | `git check-ignore` |
+| numero di riga attaccato (`file.py:42`) | il testo stesso |
+
+Il resto erano rimandi rotti veri, quasi tutti al Bestiario di prima del
+riordino in `mostri/`, `villain/`, `png/`.
+
+#### 4.11.1 · 4i-1 · Com'è andato (2026-09-24)
+
+**Il controllo.** `percorsi_inline()` in `validate_docs.py`, chiamato da
+`--sorgenti`, quindi già in CI senza un job nuovo. Resta fuori chi fa da
+registro: `plans/adr/`, `docs/audit/`, `CHANGELOG`, `REGISTRO-LOTTI`,
+`state-changelog.md`, gli `_ARCHIVIO/`. I loro link restano controllati.
+
+**Il marcatore nuovo, `<!-- validate-docs: futuro -->`**, per il piano che
+nomina un file che ancora non c'è. Scade da solo: quando il file arriva, la
+riga diventa rossa, perché il piano sta dicendo «da fare» di una cosa fatta.
+Chi nomina un percorso per dire che non esiste (`campaign/npcs/` «non è mai <!-- validate-docs: ignore -->
+esistita») usa la direttiva `ignore` che c'era già.
+
+**Le correzioni**: 122 righe in 32 file, più il documento recuperato.
+
+- **96 percorsi** risolti da un criterio solo: il nome del file compare
+  **una volta sola** nel repo. Nessuna scelta fra due candidati.
+- **Due errori di taratura del controllo**, corretti nel validatore e non nei
+  documenti: `git check-ignore` non riconosce come cartella una cartella che non
+  esiste, e le voci `ComfyUI/` e `homebrewery/` di `.gitignore` non scattavano.
+- **Rimandi vivi riscritti**: `rhod-adaptations.md` (mai esistito) diventa
+  `campaign-coherence.md`, che `AGENTS.md` regola 5 dà come sede canonica;
+  `campaign/npcs/` e `campaign/encounters/` escono da due skill; <!-- validate-docs: ignore -->
+  `campaign-history.md` diventa `campaign-chronicle.md` in quattro piani, con la
+  metà verificata sul testo (la tabella del party e le linee dell'orda stanno
+  nella cronaca).
+- **Cose superate nei piani, riallineate**: il lotto E1 di
+  `PIANO-EDITOR-VISUALE-MAPPE` (la legenda esportata in JSON con un gate di
+  sincronia) era fatto dal 2026-09-12 per altra via, con ADR-0048, e il piano e
+  `INDEX.md` lo davano da fare. La ricerca sui font citava `scripts/typst/fonts/`, <!-- validate-docs: ignore -->
+  oggi `scripts/fonts/`.
+- **Un documento recuperato**: `docs/audit/AUDIT-LEVEL-DESIGN-E-INQUADRATURA.md`
+  della PR #72. ADR-0040, ADR-0048 e `LEGENDA-FUNZIONALE-SPEC` ne citano delle
+  sezioni, e il file non c'era. Portato com'era, con una testata che lo
+  dichiara datato; le misure del 26 luglio non sono rifatte.
+- **Futuri dichiarati**: quattro file di `PIANO-PIPELINE-IBRIDE`, uno di
+  `RICERCA-TOOL-ESTERNI`, uno di `house-rules.md`.
+
+**Validazione.** Nove test nuovi in `test_validate_docs.py`, fra cui il caso di
+`campaign-history.md` preso com'era e il cablaggio in `main()`. **7 mutazioni
+su 7** rosse: controllo muto, `main` che non lo chiama, `futuro` che non scade,
+niente barra finale, datati allargati a tutto `plans/`, numero di riga non
+tolto, uscite di partita dimenticate.
+
+🐛 **Un errore mio di 4f-2, trovato da questo lotto.** Correggere un percorso
+nella cronaca ha fatto cadere `test_nessuna_riga_persa_nello_split`: il test
+confrontava lo split con i file **di oggi**, e la cronaca è partita, cambia a
+ogni sessione. Sarebbe caduto alla prima sessione giocata. Adesso legge i due
+file com'erano nel commit dello split; la mutazione (tolta la riga spostata)
+lo fa ancora rosso. E la stessa correzione nella scheda di Tyrgarun ha mosso
+l'impronta delle creature: rigenerata **in un commit suo**, come chiede il test,
+con la sola chiave che cambia.
+
+⚠️ **Limite dichiarato**: il controllo vede un percorso con almeno una barra e
+la prima cartella esistente. Un nome di file nudo (`campaign-history.md` senza
+cartella) non lo vede. Cercati a mano nei documenti vivi: due erano rimandi, nei
+piani di ARC-07 e ARC-09, e sono riscritti; gli altri raccontano la storia dello
+split e restano. `campaign/misure/baseline-punteggi.json` lo nomina ancora ed è
+una misura datata: resta com'è.
+
+#### 4.11.2 · 4i-2 · Il contenuto rimasto nei rami
+
+Misurato il 2026-09-24 su **217 riferimenti** (rami e teste di PR, chiuse
+comprese): i file che esistono in un ramo e **non sono mai esistiti su `main`**
+né col loro nome né col loro contenuto. Sono **61 percorsi**. Quasi tutti hanno
+già un posto: la #99 aperta (4g, 4h), questa PR, la #143 (portata come
+ADR-0067), la #42 e la #109 chiuse con motivazione, la #67 giudicata in
+`RICONCILIAZIONE-PR` R5, il ramo di gruppo del primo tavolo (partita, per
+ADR-0007). **Senza posto**:
+
+| Dove | File | Stato |
+|---|---|---|
+| ramo della PR #1, dopo il merge | `scripts/validate_skill_paths.py` | superato da 4i-1 per i markdown <!-- validate-docs: ignore --> |
+| ramo della PR #1, dopo il merge | `scripts/agents.conf` | ⚠️ **il difetto che correggeva c'è ancora**: la matrice degli agenti è duplicata in `build-skills.sh` e `sync-skills.sh` <!-- validate-docs: ignore --> |
+| PR #72 | `SOGGETTO-DISCESA-UNDERDARK-ARCHI-01-05.md`, 773 righe, sei revisioni con risposte del DM | 🔴 **nessun documento lo nomina**. Dice di sé: gli archi 01, 02, 03, 05 non hanno un solo markdown, e la catena «se si perde, si perde dalla testa del DM». La sua integrazione in `campaign-history` (133 righe) **è arrivata**; il soggetto no |
+| PR #72 | `plans/PIANO-LEVEL-DESIGN-E-INQUADRATURA-SCENICA.md` | ADR-0048 lo nomina come fonte del proprio lotto A1 <!-- validate-docs: ignore --> |
+| ramo `review-tournament-integration` | una versione di maggio del Giorno 3 di Dauth (228 righe) | il file su `main` è stato riscritto da zero a luglio (ARC09 lotto A, «i tre orfani»); le due versioni non sono mai state confrontate |
+
+Il destino di queste righe è la **D22**.
+
+#### 4.11.3 · 4i-2 · Com'è andato (2026-09-24)
+
+**Lo strumento.** `scripts/contenuti_nei_rami.py` rifà la misura qui sopra in
+quattro secondi. Un file è «mai arrivato» se su `main` non c'è mai stato né il
+suo percorso né il suo contenuto: un ADR rinumerato col testo identico non
+conta come perso, un file riscritto con un altro nome sì. `--fetch` scarica le
+teste di tutte le PR, chiuse comprese.
+
+**Il registro**, `plans/contenuti-nei-rami.json`, dà un posto a ogni riga: per
+ramo intero (la #99 e questa PR in volo, la #42 rifiutata, la #67 e la #109
+superate, la #143 portata, i rami di gruppo che sono partita) o per file (i
+quattro ADR della #72 portati con altri numeri, l'ADR-0015 rifiutato, i due
+piani commerciali assorbiti da `PIANO-VENDIBILITA`). Oggi: **65 file, 0 senza
+posto, 4 in attesa del DM**. `--check` esce 1 se ne compare uno nuovo senza
+posto; una voce che non trova più niente viene segnalata come scaduta, perché
+il file è arrivato o il ramo non c'è più.
+
+**Dove si vede senza cercarlo.** `fase1.py`, al passo 3, mostra i file ancora
+aperti nella stessa cartella del bersaglio. Provato sul piano dell'editor: esce
+`PIANO-LEVEL-DESIGN-E-INQUADRATURA-SCENICA.md` della #72, che è esattamente il
+lavoro che un piano nuovo sull'editor rischierebbe di riscrivere da zero.
+
+🐛 **Un test ha mentito al primo giro.** Il default di `leggi_registro()` era
+legato alla definizione, quindi `main()` leggeva sempre il registro del repo:
+il test «rosso senza posto» passava per il motivo sbagliato, e l'ha scoperto il
+test gemello «verde col posto». Dodici test, **7 mutazioni su 7** rosse sullo
+strumento e una sul filtro di `fase1.py`.
+
+⚠️ **Limiti dichiarati.** Vede i file, non le modifiche: un commit spinto dopo
+il merge che corregge un file già su `main` non compare (il commit `b5e04d2`
+della PR #1 toccava `AGENTS.md` e `sync-skills.sh`, ed è di questo tipo). E non
+è un gate di CI, di proposito: i rami cambiano per conto loro, e una PR
+diventerebbe rossa per il lavoro di un'altra.
+
+#### 4.11.4 · La regola chiesta dal DM: ha senso?
+
+La domanda: *«vedi se ha senso aggiungere questa nuova regola in modo che tutte
+le PR sono aggiornate con l'avanzamento dei piani, evitando regressioni o
+overdrive»*.
+
+**Una regola d'oro nuova no.** Ogni via da cui il difetto entrava ha adesso un
+meccanismo che non chiede disciplina:
+
+| Come si perdeva | Cosa lo vede adesso |
+|---|---|
+| una PR cita un file che un'altra PR ha tolto | `validate_docs --sorgenti` (4i-1), in CI su ogni PR |
+| un file resta su un ramo chiuso, o spinto dopo il merge | `contenuti_nei_rami.py` e il suo registro (4i-2) |
+| un piano nuovo riscrive lavoro che stava in una PR | `fase1.py` passo 3, cioè G6, che è già obbligatoria prima di toccare |
+
+Resta un buco che nessuno script del repo può chiudere. La CI di una PR gira
+sul `main` del momento del push: se `main` cambia dopo, la PR resta verde su
+una base che non c'è più, e il merge porta dentro la regressione. È successo a
+questa PR in piccolo: lo split di 4f-2 ha rotto tre rimandi che la CI non
+poteva vedere. Su GitHub la cura è un'impostazione del ramo `main`,
+*«Require branches to be up to date before merging»*: prima del merge la PR va
+riallineata e la CI rigira. Si attiva dalle impostazioni del repository, e da
+qui non si può né attivare né verificare. È la **D23**.
+
+L'«overdrive», cioè una PR che fa più di quanto il suo piano dichiara, ha già
+la sua regola: piano, `INDEX` e `CHANGELOG` nello stesso commit, bloccata in
+CI da `check_plans_discipline.py`. Non serve altro.
+
+#### 4.11.5 · D22, i quattro file (2026-09-24)
+
+**Il soggetto della discesa.** Il DM ricordava di aver già risposto alle domande
+aperte, e aveva ragione. Il changelog della #72 lo registra due volte: alla
+revisione 5, *«il DM ha risposto a tutti i punti aperti tranne uno»*; alla 6,
+*«ultimo punto chiuso»*. Le risposte sono entrate nella cronaca: le 133 righe
+che il commit `960c621` aggiungeva allo storico ci sono tutte, e ciascuna porta
+la sua data `[DM 2026-07-26]`. Il §9.4 del soggetto, con le sue nove domande,
+era la fotografia della revisione 3.
+
+Cercando, sono venute fuori due cose rimaste in sospeso che nessuno aveva
+chiuso:
+
+- la **destinazione della fuga del Collezionista**. Il DM aveva chiesto di
+  scegliere la soluzione più coerente; la proposta (Piano del Fuoco) è entrata
+  in cronaca marcata `[INFERRED — needs DM confirmation]`, ed è ancora così in
+  ogni ramo;
+- il **GS di Maur**: 11 nel registro XP e nella catena di revisione 5, «~10»
+  nella cronaca.
+
+Vanno al DM come **D24**. 🔎 Cercando di nuovo su richiesta del DM (*«mi sembra
+di aver già risposto»*), il GS di Maur la risposta ce l'aveva: il suo foglio XP
+dice «maur cr 11», e il «~10» della cronaca era il GS del Collezionista scritto
+nella stessa riga. Corretto. Per la destinazione della fuga, invece, il DM
+aveva **delegato** la scelta, e nessun commit, ramo o PR contiene una conferma:
+la D24 si restringe a quella. **Il DM l'ha chiusa lo stesso giorno**: il Piano
+del Fuoco è canone, anche perché dà senso alla caccia di Therysol, che risale la
+rotta su cui la gilda l'aveva venduta. E ha corretto un secondo errore: Varis
+non è il Collezionista, è il suo informatore. Verificato sulle schede: Varis ha
+la sua (umano, Ladro 4 / Esperto 4, GS 6), e tutte le altre lo trattano da
+intermediario. La confusione veniva dal dossier del Collezionista scritto ad
+aprile, quando «Varis» era il suo nome, ed era passata al titolo del file-rimando,
+al catalogo dei mostri che ne deriva, alla tabella delle alleanze di
+`suggest_encounter` e al titolo di un prompt immagine. Corretti tutti; nel dossier
+le scene dell'anno −1000 restano, con una nota che le dichiara superate da
+`ARC07-DEF-4`, dove per la rete agisce Vatore. Un terzo punto invece aveva già la sua risposta: la
+cronaca teneva il basilisco «salvo smentita del DM», ma il DM l'aveva nominato
+esplicitamente (*«maur, basilisk e rachasa»*). Riportata la citazione.
+
+Il soggetto è in `plans/SOGGETTO-DISCESA-UNDERDARK-ARCHI-01-05.md`, portato
+com'era con una testata che lo data e dice cosa è cambiato. Rimandi aggiornati:
+`campaign-history.md` → cronaca, ADR-0018 della #72 → ADR-0049.
+
+**Il piano di level design** è in `plans/`, 🔵, con i rami C e D rimisurati
+prima di portarlo. Sono validi tutti, con tre correzioni scritte nella testata:
+C2 dipende da un linter che non esiste ancora (è nel perimetro di
+`PIANO-VENDIBILITA`); D1 va dentro il brief d'inquadratura che la skill
+`rumblingstone-art-direction` ha già, e non in un template a parte; la parte
+sulle dipendenze Python a livelli è superata da ADR-0037. D4 ha una misura:
+dieci riferimenti a film e marchi in sette file di prompt.
+
+**`agents.conf`** è rifatto sul codice di oggi, con gli stessi valori della
+PR #1, che non erano cambiati. `build-skills.sh` e `sync-skills.sh` lo leggono e
+non hanno più una matrice propria; `test_agents_conf.py` fa rosso se una copia
+ricompare o se l'elenco di `AGENTS.md` dice un formato diverso da quello che
+si costruisce (4 mutazioni su 4).
+
+**Il Giorno 3 di Dauth di maggio** è superato, e in un punto contraddice il
+canone: vi compare un Karruk hobgoblin chierico e guerriero GS 12 che guida
+l'assedio di Dauth, mentre nel Bestiario Karruk è un gigante delle colline
+barbaro GS 10 (`[ACCEPTED — DM-canon 2026-05-05]`) e il Giorno 3 di oggi lo
+dichiara riservato a Rethmar. Di suo aveva due idee di bottino: una lettera per
+Azarr Kul con i numeri della difesa di Dauth, e un sigillo di Tiamat come prova
+che l'invasione era organizzata. Non portate: sono proposte, e toccano il
+canone.
+
+Il registro dei rami dopo la D22: **0 file da decidere**.
+
+#### 4.11.6 · Lotto **4i-3** — la protezione di `main` (riproposta dalla D23) ⬜
+`[engine: DM nelle impostazioni di GitHub, poi Opus 5.5 per la verifica · effort: basso · qualità: il ramo risulta protetto e una PR indietro rispetto a main non si mergia senza riallinearsi]`
+
+Il DM ha rinviato la D23: *«dopo da verificare, magari da riproporre come
+piano»*. Eccolo, con le tre fasi.
+
+**FASE 1 · Audit (fatta il 2026-09-24, in sola lettura).** L'elenco dei rami
+via API dà per `main` **`protected: false`**. Non c'è quindi la regola chiesta
+dalla D23, e non ce n'è nessun'altra: una PR con la CI rossa si può mergiare.
+⚠️ Il campo riguarda la protezione **classica** dei rami; i *ruleset* di
+GitHub da qui non si leggono, ed è la prima cosa da guardare nelle
+impostazioni. La CI ha due job, «Validate skills & scripts» e «Build skill
+packages».
+
+**FASE 2 · Attivazione (del DM, in *Settings → Rules* o *Branches*).** Per `main`:
+
+| Regola | Perché | Costo |
+|---|---|---|
+| richiedere una PR prima del merge | nessun push diretto su `main`, che resta la libreria (ADR-0007) | nessuno: si lavora già così |
+| richiedere i due controlli verdi | una CI rossa non entra | nessuno |
+| richiedere il ramo **aggiornato** prima del merge | il punto della D23: la CI rigira sul `main` di oggi, e le regressioni fra due PR si vedono prima | un clic su «Update branch» e un giro di CI in più |
+| vietare il force-push su `main` | la storia non si riscrive | nessuno |
+
+**Da non attivare**: l'approvazione obbligatoria di un revisore. Il repo ha un
+solo manutentore, e la regola lo bloccherebbe sulle proprie PR.
+
+**Verifica del 2026-09-24, dopo che il DM ha attivato le impostazioni.**
+Letto via API: `main` ora dà **`protected: true`** (prima `false`), e la PR #160
+risulta `mergeable_state: clean`, cioè controlli verdi e ramo allineato. Da qui
+**non si leggono** il dettaglio delle regole (i due controlli richiesti, il
+ramo aggiornato, il force-push vietato) né le impostazioni di merge automatico
+e di sicurezza: si vedranno alla prima PR rimasta indietro. Il lotto resta ⬜
+finché quella prova non c'è.
+
+**FASE 3 · Verifica.** L'elenco dei rami dà `protected: true` per `main`; una
+PR rimasta indietro mostra «This branch is out-of-date» e il merge è
+disabilitato finché non si riallinea. Poi due righe: il passo «Update branch
+prima del merge» nella checklist di chiusura della skill `rumblingstone-plans`,
+e una nel Playbook dove si parla di rami.
 
 ## Come si misura che il piano è finito
 

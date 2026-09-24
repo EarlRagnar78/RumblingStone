@@ -98,5 +98,48 @@ class TestFase1(unittest.TestCase):
         self.assertTrue(FASE1.exists())
 
 
+class TestRamiAccanto(unittest.TestCase):
+    """Lotto 4i-2: il lavoro rimasto nei rami, mostrato prima di riscriverlo."""
+
+    def _esegui(self, trovati: dict, registro: dict, bersaglio: str) -> str:
+        import io
+        from contextlib import redirect_stdout
+        from unittest import mock
+        sys.path.insert(0, str(ROOT / "scripts"))
+        import contenuti_nei_rami as cnr
+        import fase1
+        buf = io.StringIO()
+        with mock.patch.object(cnr, "riferimenti", lambda base: ["pr/1"]), \
+                mock.patch.object(cnr, "mai_arrivati", lambda base, refs: trovati), \
+                mock.patch.object(cnr, "leggi_registro", lambda: registro), redirect_stdout(buf):
+            fase1.rami_accanto([ROOT / bersaglio])
+        return buf.getvalue()
+
+    def test_mostra_solo_cio_che_e_ancora_aperto(self):
+        trovati = {"plans/APERTO.md": ["pr/1"], "plans/CHIUSO.md": ["pr/1"],
+                   "plans/SENZA.md": ["pr/1"], "altrove/X.md": ["pr/1"]}
+        registro = {"rami": [], "file": [
+            {"percorso": "plans/APERTO.md", "stato": "da-decidere", "dove": "D1"},
+            {"percorso": "plans/CHIUSO.md", "stato": "portato", "dove": "ADR"},
+            {"percorso": "altrove/X.md", "stato": "da-decidere", "dove": "D1"}]}
+        out = self._esegui(trovati, registro, "plans/INDEX.md")
+        self.assertIn("plans/APERTO.md", out)
+        self.assertIn("plans/SENZA.md", out)
+        self.assertNotIn("plans/CHIUSO.md", out, "un file con un posto chiuso e' rumore")
+        self.assertNotIn("altrove/X.md", out, "non e' accanto al bersaglio")
+        self.assertIn("1 senza posto, 2 in attesa del DM", out)
+
+    def test_un_clone_senza_rami_non_e_un_errore(self):
+        from unittest import mock
+        sys.path.insert(0, str(ROOT / "scripts"))
+        import contenuti_nei_rami as cnr
+        import fase1
+
+        def rotto(base):
+            raise RuntimeError("niente rami")
+        with mock.patch.object(cnr, "riferimenti", rotto), mock.patch("sys.stdout"):
+            fase1.rami_accanto([ROOT / "plans/INDEX.md"])  # non solleva
+
+
 if __name__ == "__main__":  # pragma: no cover
     unittest.main()

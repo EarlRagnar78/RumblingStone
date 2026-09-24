@@ -2,7 +2,7 @@
 
 ## Contenuto Nuovo per Archi 09 | Versione DM
 
-**Source of truth**: `campaign-history.md` + `campaign players.md`  
+**Source of truth**: `campaign-chronicle.md` + `campaign players.md`  
 **Design philosophy**: State Machine Reattiva — le agende dei villain evolvono,  
 i giocatori *cambiano il mondo* con ogni scelta.  
 **Principio guida**: Nessun bivio binario. Ogni scena è un **Triangolo di Rischio**.

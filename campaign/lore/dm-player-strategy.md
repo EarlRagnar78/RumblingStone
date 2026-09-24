@@ -13,9 +13,13 @@ session, current villain countdowns), see:
     campaign/state.md
 
 For history that is locked-in (events that already happened and cannot
-change), see:
+change), see the chronicle of this table (reset for a new group):
 
-    campaign/lore/campaign-history.md
+    campaign/lore/campaign-chronicle.md
+
+and, for what every group shares (AP, setting, villain graph):
+
+    campaign/lore/campaign-premise.md
 
 For coherence rules (what must remain consistent across sessions —
 artifact powers, NPC knowledge, PG promises and debts), see:

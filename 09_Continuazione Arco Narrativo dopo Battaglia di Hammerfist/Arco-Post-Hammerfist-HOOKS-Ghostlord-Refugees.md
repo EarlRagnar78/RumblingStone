@@ -106,7 +106,7 @@ Il party informa Ren che Talar è caduta. Ren prende il colpo. *"Allora dove and
 - **Encounter potenziali sulla strada:** il DM può aggiungere 1 attacco di non-morti vaganti durante la scorta (EL 8: 1 wight + 4 ghoul + 6 zombie).
 
 **Eco:**
-- Se il party scorta i profughi a una città sicura: **+1 reputazione regionale** ("i Custodi Eterni hanno salvato i 30 di Loccatella"). A Rethmar Phase 1, Lorana riceve questo gruppo nel suo settore di rifugiati → +30 alla "Riserva dei Rifugiati" (vedi `Bestiario/png/Lorana/Lorana.md` §LA RISERVA DEI RIFUGIATI). +Joran, l'ex-druido, può essere reclutato (Druid 5 di vecchia data) — un piccolo CR 5 alleato spirituale.
+- Se il party scorta i profughi a una città sicura: **+1 reputazione regionale** ("i Custodi Eterni hanno salvato i 30 di Loccatella"). A Rethmar Phase 1, Lorana riceve questo gruppo nel suo settore di rifugiati → +30 alla "Riserva dei Rifugiati" (vedi `Bestiario/png/Lorana/Lorana/Lorana.md` §LA RISERVA DEI RIFUGIATI). +Joran, l'ex-druido, può essere reclutato (Druid 5 di vecchia data) — un piccolo CR 5 alleato spirituale.
 
 ### 4.2 GRAY-B — *Indagare la fonte (entrare nel Thornwaste)*
 
@@ -225,7 +225,7 @@ Il party prosegue. Ren e i 30 vanno a Talar. Trovano ceneri. Probabilmente la me
 - **Hella hook (Saraah's Visione 3 — Talar in fiamme):** `Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md` §2.5.2
 - **Ghostlord PNG:** `Bestiario/villain/Ghostlord/Ghostlord.md`
 - **Ghostlord arc files:** `Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-TESTO.md`, `…MAPPE.md`, `…STATBLOCCHI.md`
-- **Capitana Lorana (Riserva dei Rifugiati a Rethmar):** `Bestiario/png/Lorana/Lorana.md`
+- **Capitana Lorana (Riserva dei Rifugiati a Rethmar):** `Bestiario/png/Lorana/Lorana/Lorana.md`
 - **Talar (caduta):** menzionata in `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md` Day 21
 - **Mother of Fungi connection (Hella sub-quest Boschetto):** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md` §5 `[INFERRED — sub-quest da scrivere in Lotto B]`
 - **Stato campagna:** `campaign/state.md`

@@ -5,7 +5,7 @@
 > consult this file *first* before describing NPC knowledge, location of
 > villains, status of artifacts, or open narrative threads.
 >
-> **Rule**: if this file disagrees with `campaign-history.md` or any
+> **Rule**: if this file disagrees with `campaign-chronicle.md` or any
 > `campaign-*.md` reference, **this file wins** (it is the most recent truth).
 > If you change a fact here, do not silently rewrite the history files —
 > append a new entry to the changelog at the bottom.

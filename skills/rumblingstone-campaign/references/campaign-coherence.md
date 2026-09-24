@@ -19,7 +19,7 @@ lower-rank file as needing an update.
 ```
 1. campaign/state.md                                 (most recent truth)
 2. skills/rumblingstone-campaign/references/*.md     (structured truth)
-3. campaign/lore/campaign-history.md                  (prose narration)
+3. campaign/lore/campaign-chronicle.md + campaign-premise.md  (prose narration)
 4. SRD / FR canon                                     (default backdrop)
 5. Inferred / model knowledge                         (last resort, must be flagged)
 ```
@@ -42,7 +42,7 @@ of events.
 |---|---|---|
 | Thorik dies at Drellin's Ferry | 00 | Death, then divine resurrection bonded to Aegis Fang |
 | Maur defeated at Minotaur Lair | Pre-01 | Killed |
-| Il Collezionista escapes Minotaur Lair | Pre-01 | Escaped (re-uses this villain forever) |
+| Il Collezionista escapes Minotaur Lair | Pre-01 | Escaped (re-uses this villain forever): invisible, only the monk saw him vanish and not where; an obsidian pendant took him to the **Plane of Fire**, the salamander forge where his guild trades — the same route on which Therysol was sold `[DM 2026-09-24]` |
 | Ring of Chaotic Illumination bonds to Artemis | 02 | Bonded; cannot be passed to another PC |
 | Hella dies in Crown Chamber | 06 | Died, then resurrected at Eternal Forge with cost |
 | Cuore di Moradin spent for Hella's resurrection | 07 | Single-use artifact; cannot be re-used |

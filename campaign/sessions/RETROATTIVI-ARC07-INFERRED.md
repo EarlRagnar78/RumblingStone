@@ -2,7 +2,7 @@
 
 > ⚠️ **`[INFERRED — needs DM confirmation]`**: questi log sono una
 > **ricostruzione dell'engine** dai file di canone (piano ARC-07 §G0-G3,
-> `campaign-history.md`, `coherence.md`, i master P1-P4 e il file-risultati del
+> `campaign-chronicle.md`, `coherence.md`, i master P1-P4 e il file-risultati del
 > viaggio). **L'intervista al DM (task B1) non è ancora avvenuta**: date,
 > giocatori presenti e dettagli di tavolo sono da confermare/correggere. Ogni
 > valore non attestato è marcato `[INFERRED]`. Formato AGENTS.md (Summary /
@@ -20,7 +20,7 @@
 Le **Yochlol half-illithid mandate da Sonjak** (Matrona Sajak) irrompono nella
 Stanza della Corona per strappare l'artefatto. Le guida **Urialle** (CR 14,
 EL 17 su party di ~13° — `06_.../villans.md` r.1). Nello scontro **Hella
-Oakenshield viene uccisa** (coherence.md r.47; campaign-history.md r.26). Il
+Oakenshield viene uccisa** (coherence.md r.47; campaign-chronicle.md r.39). Il
 vecchio portatore **Belkram**, dominato e maledetto dai drow (morte negata), si
 **ravvede nel momento della sua morte definitiva**: si spezza il dominio e
 muore redento. **Belkram e Urialle sono entrambi MORTI** (D13). La Corona resta

@@ -196,7 +196,7 @@ secoli e un registro contabile: dà alla Mano Rossa una faccia che non urla.
 3. **Il canone era già apparecchiato.** Gli orchi nella Mano Rossa non vanno
    giustificati: `campaign/state.md` §2.2 conta **1.800 ausiliari
    Goblin/Orchi/Worg Riders**, la prima ondata è «450 hobgoblin/orc infantry»
-   (`campaign/lore/campaign-history.md`) e il **Generale Grimjaw è un Orog**.
+   (`campaign/lore/campaign-chronicle.md`) e il **Generale Grimjaw è un Orog**.
    Esiste già una linea di comando orchesca dentro un'orda hobgoblin — e la
    frattura **Gruumsh / Tiamat** è teologia vera, non un espediente.
 

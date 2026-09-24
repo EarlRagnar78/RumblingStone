@@ -22,7 +22,7 @@ guardato il diff che produce.
 
 🔎 **Un difetto trovato rendendoli portabili**: i path di `generate_therysol.py`
 erano sbagliati **due volte**. Oltre alla macchina, puntavano a
-`Bestiario/png/Therysol/Therysol.md`, mentre quella cartella si è spostata di un
+`Bestiario/png/Therysol/Therysol/Therysol.md`, mentre quella cartella si è spostata di un
 livello (`Bestiario/png/Therysol/Therysol/`). Finché il path era assoluto e
 irraggiungibile, la seconda rottura non si poteva vedere.
 

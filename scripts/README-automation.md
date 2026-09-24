@@ -45,6 +45,7 @@ python3 scripts/dm.py doctor                      # environment diagnosis
 | `maps` | `render`\|`validate` + `files...` | `render_map_svg` / `validate_maps` | prep |
 | `post` | `--session <file>` | `update_xp` + `state_sync` | §4 post-sessione |
 | `session` | `end`\|`next`\|`recap`\|`status`\|`branch` · `--session <file>` (end; senza → wizard) · `--yes` · `--last-n N` · `--hype` · `--pg <PG>` (recap) · `--group <nome>` | `campaign_branch` + `session_wizard` + `update_xp` + `state_apply` / `next_session` / `session_recap --pg` + `hype_homebrew --pg` | §4 + §7 (branch-per-gruppo, ADR-0007) |
+| `gruppo` | `nuovo` · `--answers <json>` · `--domande` (il modulo come JSON) · `--dry-run` | `gruppo_nuovo` (+ `azzera_partita`) | §7 gruppo nuovo |
 | `recap` | `--last-n N` · `--pdf` · `--hype` | `session_recap` (+ `hype_homebrew`) | §4.6 |
 | `handout` | `--tipo T` (obbl.) · `--da <file>` · `--out <file>` | `hype_homebrew --handout` | prep |
 | `bestiario` | `estrai`\|`deriva`\|`attributi`\|`creatura`\|`conformita` + i flag dello script (anche `--help`) | `extract_statblocks` / `derive_statblocks` / `genera_attributi` / `genera_creatura` / `conformita_statblocchi` | prep (creature; il codice d'uscita è quello dello script) |
@@ -87,10 +88,12 @@ Gli script Python usano solo stdlib; ognuno con argparse espone anche
 |---|---|---|---|---|
 | `update_xp.py` | Registro XP cumulativo per PG | `--check` (mostra il diff, non scrive) | `campaign/sessions/*.md` `## XP awarded` | `campaign/pg/xp-ledger.md` (auto) |
 | `state_sync.py` | Propone modifiche al canone di campagna dopo una sessione, **dicendo in quale dei tre master va ciascuna** (ADR-0050) | `--since YYYY-MM-DD` · `--session <file>` | `## World events triggered` nei log | report diff markdown (il DM applica a mano) |
-| `state_apply.py` | **Applica** il sottoinsieme meccanico delle proposte — changelog dentro la regione `auto:`, e **in `campaign/state.yaml`** March Clock (D14), clock dei villain e `stato` su morte e fuga (D16) — con diff e conferma per blocco (ADR-0007); rigenera le regioni `gen:state:` dopo aver toccato il master | `--migrate` (inserisce i marker, idempotente) · `--session <file>` · `--check` · `--yes` · `--commit` | proposte di `state_sync` + regioni `auto:` + `state.yaml` | `state.yaml`, `state.md` e `state-changelog.md` aggiornati (su conferma; commit dedicato) |
+| `state_apply.py` | **Applica** il sottoinsieme meccanico delle proposte — changelog dentro la regione `auto:`, e **in `campaign/state.yaml`** March Clock (D14), clock dei villain e `stato` su morte e fuga (D16) — con diff e conferma per blocco (ADR-0007); rigenera le regioni `gen:state:` dopo aver toccato il master. Legge il **front-matter dei delta** del log (villain per `png_id`, tutto o niente); solo senza ricade sulla regex di `state_sync` | `--migrate` (inserisce i marker, idempotente) · `--session <file>` · `--check` · `--yes` · `--commit` | proposte di `state_sync` + regioni `auto:` + `state.yaml` | `state.yaml`, `state.md` e `state-changelog.md` aggiornati (su conferma; commit dedicato) |
 | `render_state.py` | Genera le **otto tabelle** di `state.md` da `state.yaml`: master e vista, mai due master | `--check` (gate CI) · `--stdout` | `campaign/state.yaml` | regioni `<!-- gen:state:… -->` di `campaign/state.md` |
 | `next_session.py` | Brief DM + teaser player per la prossima sessione (aggregatore deterministico: hook aperti, finestre §0 vs March Day, party §1, clock villain ≤2 tick) | `--last-n N` · `--hype` (vesti Homebrewery) | `state.md` + `sessions/*.md` | `campaign/next/brief-*-DM.md` (⚠️ SOLO DM) · `teaser-*-PLAYERS.md` (spoiler-safe) · `next/homebrew/*.hb.md` |
-| `session_wizard.py` | Wizard guidato di fine sessione: Q&A con default → session log canonico dal template (formato garantito per `update_xp`/`state_sync`), commit automatico | `--answers <file.json>` (non-interattivo, test/CI) · `--out <nome>` · `--no-commit` · `--no-guard` (solo test) | risposte del DM | `campaign/sessions/YYYY-MM-DD_session-N.md` |
+| `session_wizard.py` | Wizard guidato di fine sessione: Q&A con default → session log canonico dal template (formato garantito per `update_xp`/`state_sync`), con in testa il **front-matter dei delta** risolti contro `campaign/state.yaml` (`dmcore/delta_sessione.py`, lotto 4e), commit automatico | `--answers <file.json>` (non-interattivo, test/CI) · `--out <nome>` · `--no-commit` · `--no-guard` (solo test) | risposte del DM | `campaign/sessions/YYYY-MM-DD_session-N.md` |
+| `azzera_partita.py` | Azzera la **partita** per un gruppo nuovo (stato, storico, sessioni, recap, brief, dossier) e lascia il **prodotto** (ADR-0050 §7). L'elenco è un dato, `dmcore/partita.py`; valida il nuovo `state.yaml` **prima** di scrivere e rigenera `state.md`. Lo chiama `new-campaign-group.sh` | `--check` (elenca, non scrive) | i template in `campaign/templates/`, l'anagrafica `png` dello `state.yaml` di prima | i tre master azzerati; sessioni, recap e file generati tolti |
+| `gruppo_nuovo.py` | Il **gruppo nuovo da un modulo** (lotto 4f-4, D19/D21): deriva lo stato dal prodotto di oggi, chiede gruppo, arco, livello e PG, poi le righe con tracce del primo tavolo una alla volta (tieni/svuota/rivedi); valida prima di scrivere, crea il ramo, chiama `azzera_partita` e committa. La logica è in `dmcore/gruppo_nuovo.py` | `--answers <json>` · `--domande` · `--dry-run` | `campaign/state.yaml` di oggi, le risposte del DM | ramo `campaign-group-<nome>` con stato, `state.md` e `group.yaml` nuovi |
 | `campaign_branch.py` | Guardia e gestione del branch-per-gruppo (mai canone su `main`) | `status` · `guard` · `ensure [--group <nome>]` | `campaign/group.yaml` + git | branch `campaign-group-<nome>` attivo / exit code per la guardia |
 
 ### Materiali giocatore / DM (Homebrewery V3)
@@ -137,6 +140,7 @@ Gli script Python usano solo stdlib; ognuno con argparse espone anche
 | `dmcore/` (libreria) | Logica condivisa dei flussi ADR-0007: `regions` (marker `auto:` con contratto "fuori byte-identici"), `gitio` (guardia branch, commit), `config` (group.yaml), `visibility` (policy per-PG dei blocchi `## Split`), `censimento` (le **tre** forme di statblocco in uso negli archi, e i master che la matrice delle versioni dichiara dentro `_ARCHIVIO/` — ADR-0054) | *(non è un CLI — la importano gli script sopra)* | — | — |
 | `tests/` | Suite unittest dei flussi ADR-0007 (regioni, apply, guardia, next) su repo git temporanei | `python3 -m unittest discover -s scripts/tests` | fixture in-memory | verde/rosso (gira anche in CI) |
 | `check_plans_discipline.py` | Gate della regola d'oro dei piani (ADR-0009): modifiche strutturali (`scripts/`, `skills/`, `converters/`, `.github/`, `plans/adr/`) senza riga in `plans/CHANGELOG.md` → exit 1; promemoria ADR (warning) su nuova skill/nuovo script/workflow CI toccati senza `plans/adr/`. Gira in CI (solo PR) e come hook `pre-push` | `--base <ref>` (default `origin/main`) · `--head <ref>` · `--repo-root <dir>` | diff git base…head | exit 0/1 + report |
+| `contenuti_nei_rami.py` | I file che esistono in un ramo o in una PR, **chiuse comprese**, e mai su `main` né per nome né per contenuto. Ognuno deve avere un posto nel registro `plans/contenuti-nei-rami.json` (in volo, portato, superato, rifiutato, partita, da decidere). Lotto 4i-2; non è un gate di CI, perché i rami cambiano per conto loro. `fase1.py` ne mostra le righe aperte accanto al bersaglio | `--fetch` · `--check` · `--base` · `--json` | i rami del clone, il registro | report; exit 1 con `--check` se una riga non ha posto |
 | `install-git-hooks.sh` | Installa gli hook git locali: `post-merge` (resync mirror skill dopo `git pull`) e `pre-push` (gate ADR-0009) | *(nessuno)* | — | hook in `.git/hooks/` |
 
 ## Typical DM workflow
@@ -155,7 +159,10 @@ python3 scripts/dm.py recap --hype                                    # 1-2 days
 - **Add a map**: drop a new YAML in `scripts/map_templates/` (copy an
   existing one). `suggest_map.py` picks it up on next run.
 - **New trigger for state_sync**: edit the `TRIGGERS` regex list at the top
-  of `scripts/state_sync.py`.
+  of `scripts/state_sync.py`. ⚠️ Serve solo ai log **senza** front-matter: per
+  una scrittura meccanica nuova il posto è il delta
+  (`scripts/dmcore/delta_sessione.py`), che nomina per `png_id` invece che per
+  nome.
 
 ## Mappe di qualità professionale (stile "pergamena")
 

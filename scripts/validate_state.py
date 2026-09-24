@@ -393,6 +393,21 @@ def buchi_con_candidati(d: dict, radice: Path) -> "list[str]":
     return errs
 
 
+def errori(data: dict, radice: Path = ROOT) -> "list[str]":
+    """Tutte le violazioni bloccanti di uno stato, in un posto solo.
+
+    Lo usa anche `azzera_partita.py`, che valida il gruppo nuovo prima di
+    dichiararsi finito: con due elenchi di controlli, il giorno che se ne
+    aggiunge uno il reset lo salterebbe senza dirlo.
+    """
+    schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
+    return (validate_schema(data, schema) + coherence_rules(data, schema)
+            + reversibilita_mancante(data) + riferimenti_rotti(data)
+            + anagrafica_incoerente(data)
+            + schede_inesistenti(data, radice)
+            + buchi_con_candidati(data, radice))
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(
         prog="validate_state.py",
@@ -416,12 +431,7 @@ def main(argv=None) -> int:
         print(f"✗ validate_state: YAML malformato — {e}", file=sys.stderr)
         return 1
 
-    schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
-    errors = (validate_schema(data, schema) + coherence_rules(data, schema)
-              + reversibilita_mancante(data) + riferimenti_rotti(data)
-              + anagrafica_incoerente(data)
-              + schede_inesistenti(data, ROOT)
-              + buchi_con_candidati(data, ROOT))
+    errors = errori(data, ROOT)
 
     if args.json:
         print(json.dumps({"report_version": 1, "file": str(args.file.relative_to(ROOT)),

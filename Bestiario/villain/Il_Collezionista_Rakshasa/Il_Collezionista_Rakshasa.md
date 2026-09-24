@@ -1,4 +1,4 @@
-# IL COLLEZIONISTA (MAESTRO VARIS "SETA-ARGENTO")
+# IL COLLEZIONISTA
 
 ## PROFILO DEL VILLAIN
 
@@ -33,7 +33,28 @@ fonte: derivato-SRD 3.5 dai parametri dichiarati dalla scheda (tipo=outsider, ta
 ```
 
 **Vero Nome:** Ignoto (Sussurrato come "Avaritia" nei Piani Inferiori)
-**Identità di Copertura (Anno -1000):** Maestro Varis "Seta-Argento", Mercante Planare
+**Identità di Copertura (Anno -1000):** ~~Maestro Varis "Seta-Argento", Mercante Planare~~ — vedi la correzione qui sotto.
+
+> ⚠️ **Correzione DM 2026-09-24: Varis NON è il Collezionista.** È il suo
+> intermediario e informatore a Rethmar: un umano, Ladro 4 / Esperto 4, GS 6,
+> che del Rakshasa non conosce la vera natura (scheda:
+> `Bestiario/png/Varis_Seta_Argento/Varis_Seta_Argento.md`). Questa scheda è
+> della prima stesura (aprile 2026), quando «Varis» era il nome del
+> Collezionista, e il nome è rimasto nelle sezioni qui sotto. Come leggerle:
+>
+> - dove una scena è **a Rethmar o nel presente**, «Varis» è l'intermediario
+>   umano, e dietro di lui c'è il Collezionista;
+> - le scene dell'**Anno -1000** non possono avere l'umano di Rethmar: nel
+>   master giocabile di quell'epoca (`ARC07-DEF-4`) la rete agisce tramite
+>   **Vatore**, cioè Sal. Queste scene sono della prima stesura, e il master le
+>   supera.
+>
+> **La fuga dalla Tana dei Minotauri** `[DM 2026-09-24]`: invisibile, visto
+> svanire solo dal monaco, un monile di ossidiana lo porta nel **Piano del
+> Fuoco**, alla forgia dei salamandri dove la sua gilda commercia. È la stessa
+> rotta su cui la gilda vendette Therysol e suo fratello: la caccia di lei e la
+> fuga di lui sono la stessa strada. Il monile è un oggetto minore, distinto dal
+> Sigillo di Ossidiana di Shar.
 **Razza/Tipo:** Rakshasa Ak'chazar (Avanzato, Esterno Malvagio) Extra-Planare / Signore del Commercio
 **Allineamento:** Legale Malvagio (Tendenzialmente Neutrale Malvagio per affari)
 **Livello Approssimativo/GS:** GS 17-19 (Mai inteso per scontro fisico diretto, è un villain di manipolazione)

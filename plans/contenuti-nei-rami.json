@@ -1,0 +1,130 @@
+{
+  "_cos_e": "Il registro dei file che esistono in un ramo o in una PR e mai su main: a ognuno un posto. Lo legge scripts/contenuti_nei_rami.py (PIANO-RIPRESA-PR-ABBANDONATE §4.11, lotto 4i-2). Stati ammessi e significato: nello script, STATI.",
+  "misura": {
+    "data": "2026-09-24",
+    "riferimenti": 216,
+    "file_mai_arrivati": 65
+  },
+  "rami": [
+    {
+      "ref": [
+        "pr/99",
+        "origin/claude/stone-audit-best-practices-yver7k"
+      ],
+      "stato": "in-volo",
+      "dove": "PR #99 aperta; PIANO-RIPRESA-PR-ABBANDONATE F4 (4f-4, 4f-5, 4g, 4h)"
+    },
+    {
+      "ref": [
+        "pr/160",
+        "origin/claude/festive-tesla-tgsauj"
+      ],
+      "stato": "in-volo",
+      "dove": "PR #160 aperta: lotti 4e, 4f, 4i di PIANO-RIPRESA-PR-ABBANDONATE"
+    },
+    {
+      "ref": [
+        "pr/143",
+        "origin/claude/document-audit-prd-cleanup-j5ipln"
+      ],
+      "stato": "portato",
+      "dove": "PR #143 chiusa: PIANO-PIPELINE-IBRIDE-GROUNDING-E-MISURA portato, ADR-0050 rinumerato ADR-0067 (commit c2a160e)"
+    },
+    {
+      "ref": [
+        "pr/42",
+        "origin/claude/dnd-map-generation-research-55pzry"
+      ],
+      "stato": "rifiutato",
+      "dove": "PR #42 chiusa senza merge il 2026-09-03: plans/CHANGELOG.md, INDEX RICERCA-GENERATORI-MAPPE P4"
+    },
+    {
+      "ref": [
+        "pr/67",
+        "origin/claude/terros-battle-hints-booklet-hfvbef"
+      ],
+      "stato": "superato",
+      "dove": "PIANO-RICONCILIAZIONE-PR-APERTE: il booklet esiste in forma migliore in 07_…/homebrew/sessione-terros/"
+    },
+    {
+      "ref": [
+        "pr/109",
+        "origin/claude/golarion-pregen-character-sheets-cstheq"
+      ],
+      "stato": "superato",
+      "dove": "STATO-E-ORDINE R5: #109 superata e chiusa; il caricamento delle skill e' ADR-0041"
+    },
+    {
+      "ref": "origin/campaign-group-*",
+      "stato": "partita",
+      "dove": "ADR-0007: i rami di gruppo portano la partita, che su main non va"
+    }
+  ],
+  "file": [
+    {
+      "percorso": "plans/adr/ADR-0014-legenda-funzionale-fonte-unica.md",
+      "stato": "portato",
+      "dove": "ADR-0048 (lotto 4b, PIANO-RIPRESA §4.2-ter)"
+    },
+    {
+      "percorso": "plans/adr/ADR-0016-profili-regole-multisistema.md",
+      "stato": "portato",
+      "dove": "ADR-0039 (commit 82e1c16)"
+    },
+    {
+      "percorso": "plans/adr/ADR-0017-separazione-prodotto-e-rilicenziamento-toolkit.md",
+      "stato": "portato",
+      "dove": "ADR-0040 (commit 82e1c16)"
+    },
+    {
+      "percorso": "plans/adr/ADR-0018-edizione-commerciale-ap-originale.md",
+      "stato": "portato",
+      "dove": "ADR-0049, proposta (D11)"
+    },
+    {
+      "percorso": "plans/adr/ADR-0015-dipendenze-a-livelli-e-pacchettizzazione.md",
+      "stato": "rifiutato",
+      "dove": "PIANO-RIPRESA §4.2-ter: contraddetto da ADR-0037"
+    },
+    {
+      "percorso": "plans/PIANO-PRODOTTO-TOOLKIT-VENDIBILE.md",
+      "stato": "superato",
+      "dove": "PIANO-VENDIBILITA §6 lo assorbe (tabella delle fonti)"
+    },
+    {
+      "percorso": "plans/PIANO-EDIZIONE-COMMERCIALE-AP-ORIGINALE.md",
+      "stato": "superato",
+      "dove": "PIANO-VENDIBILITA §5 linea 4 lo assorbe (tabella delle fonti)"
+    },
+    {
+      "percorso": "docs/audit/AUDIT-LEVEL-DESIGN-E-INQUADRATURA.md",
+      "stato": "portato",
+      "dove": "lotto 4i-1: su main con una testata che lo data (la testata cambia il contenuto, per questo resta nella misura finche' la #160 non e' su main)"
+    },
+    {
+      "percorso": "scripts/validate_skill_paths.py",
+      "stato": "superato",
+      "dove": "validate_docs --sorgenti controlla i percorsi fra backtick in tutti i markdown (lotto 4i-1)"
+    },
+    {
+      "percorso": "SOGGETTO-DISCESA-UNDERDARK-ARCHI-01-05.md",
+      "stato": "portato",
+      "dove": "plans/SOGGETTO-DISCESA-UNDERDARK-ARCHI-01-05.md, datato (D22); le due conferme rimaste sono la D24"
+    },
+    {
+      "percorso": "plans/PIANO-LEVEL-DESIGN-E-INQUADRATURA-SCENICA.md",
+      "stato": "portato",
+      "dove": "plans/PIANO-LEVEL-DESIGN-E-INQUADRATURA-SCENICA.md, 🔵 con i rami C e D rimisurati (D22)"
+    },
+    {
+      "percorso": "scripts/agents.conf",
+      "stato": "portato",
+      "dove": "rifatto sul codice di oggi in scripts/agents.conf, letto da build-skills.sh e sync-skills.sh; test_agents_conf.py (D22)"
+    },
+    {
+      "percorso": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DAY3-DAUTH-CITY-SIEGE.md",
+      "stato": "superato",
+      "dove": "il Giorno 3 su main, riscritto a luglio (ARC09 lotto A); la versione di maggio contraddice il canone: Karruk vi e' un hobgoblin chierico GS 12 a Dauth, nel Bestiario e' un gigante delle colline GS 10 riservato a Rethmar (D22, PIANO-RIPRESA §4.11.5)"
+    }
+  ]
+}

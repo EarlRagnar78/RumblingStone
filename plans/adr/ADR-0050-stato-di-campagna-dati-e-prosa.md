@@ -133,6 +133,23 @@ delta si estraevano con **regex sulla prosa**, e i clock dei villain con una
 sarebbe stato visto. Un log **senza** front-matter continua a funzionare via
 regex: nessuna sessione già scritta va riscritta.
 
+**Attuazione (2026-09-24, lotto 4e di `PIANO-RIPRESA-PR-ABBANDONATE` §4.9).**
+Lo schema qui sopra è quello della #99, e D14 l'ha superato in un punto: il
+March Clock non va più in una regione `auto:` di `state.md` ma nel campo
+`march_clock.giorno_corrente` di `state.yaml`, come i clock. Oggi la via è:
+
+```
+session log (markdown + front-matter `delta:`, villain per png_id)
+        └─ state_apply            tutto o niente, diff e conferma per voce
+             ├─ March Clock, clock, stato → state.yaml → render_state → state.md
+             └─ riga storico              → state-changelog.md (regione auto:)
+```
+
+Il front-matter lo scrive `session_wizard`, che risolve i nomi contro
+`state.yaml` mentre il DM risponde. Il codice è `scripts/dmcore/delta_sessione.py`.
+La misura che lo giustifica, presa lo stesso giorno sui tredici villain: la
+regex ne vedeva **3 clock su 9** e **5 morti su 13**.
+
 ### 5. `[INFERRED]` come record
 
 Non più una stringa da cercare col grep, ma una voce con `id`, `dove`, `domanda`,
@@ -188,6 +205,16 @@ Da qui lo split di `campaign-history.md`, che mescolava i due: la **premessa**
 Il presidio non è la disciplina ma un test: `test_new_group.py` verifica che
 **ogni** file di stato sia coperto dal reset e che i template non contengano
 tracce del primo gruppo. La falla si riapre solo ignorando un test rosso.
+
+**Attuazione (2026-09-24, lotto 4f di `PIANO-RIPRESA-PR-ABBANDONATE` §4.10).**
+Quando questa ADR è arrivata su `main` col lotto 4d-1, il paragrafo qui sopra
+descriveva un test che **non c'era**. Cercato in tutti i rami e in tutte le 160
+PR del repo: è stato scritto **una volta sola**, il 2026-08-06, nel commit
+`c825d6d` della #99, che è ancora aperta. Nessuna PR chiusa lo contiene e `main`
+non l'ha mai avuto, come i template e lo split. Il test di oggi è riscritto da
+capo (4f-1, 4f-2): legge l'elenco della partita da `dmcore/partita.py` invece di
+analizzare lo script bash, esegue il reset su una copia dei file veri, e porta
+dentro i tre controlli della #99 sulla premessa e la cronaca.
 
 **Cosa questo lotto NON decide**: se il multi-gruppo debba restare
 *branch-per-gruppo* o diventare *directory-per-gruppo* (`groups/<nome>/`). La

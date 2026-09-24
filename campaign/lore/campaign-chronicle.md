@@ -1,21 +1,34 @@
+# Cronaca della campagna — gruppo corrente
+
+> **Cos'è**: ciò che è **successo a questo tavolo**, arco per arco. È **partita**:
+> il reset di un gruppo nuovo la riporta al template
+> `campaign/templates/chronicle-blank.md` (ADR-0050 §7).
+>
+> ⚠️ **Non è la fonte di verità sullo stato corrente**: quella è
+> `campaign/state.yaml` per i fatti e `campaign/state.md` per la prosa, e dove
+> questo file dice altro vince lo stato. Qui si racconta *come ci si è arrivati*.
+> Molti paragrafi descrivono in avanti archi **preparati e non ancora giocati**
+> (il confine è in `state.md` §0): la tabella del party qui sotto, per esempio,
+> dà Hella «Alive» come sarà **dopo** il rito, mentre al tavolo è morta dall'Arco
+> 06 (`state.md` §1).
+>
+> **Da dove viene**: da `campaign-history.md`, diviso il 2026-09-24 (lotto 4f-2,
+> decisione D20): le righe sono quelle di allora, spostate e non riscritte.
+> La **premessa condivisa** (AP, ambientazione, grafo dei villain, riferimenti)
+> sta in [`campaign-premise.md`](campaign-premise.md) e non si azzera.
+
+---
+
 # RumblingStone Campaign — Complete History & Narrative Reference
 
 Last updated: 1372 DR, Flamerule (in-world) / 2026-03-31 (real world)
 
 This file is the **single source of truth** for the RumblingStone campaign narrative.
-For rules, see `skills/dnd-35-srd/SKILL.md`. For artifacts, see `campaign-artifacts.md`.
-For party composition, see `campaign-party.md`. For locations, see `fr-cannath-vale.md`.
 
----
+## Il gruppo
 
-## PART 1: CAMPAIGN PREMISE
-
-**Adventure Path:** Red Hand of Doom (Jacobs & Baker, 2006), adapted to Forgotten Realms 1372 DR
-**Setting:** Cannath Vale (= Elsir Vale remapped to the Dalelands / Shining South region of Faerûn)
-**System:** D&D 3.5 Edition (d20 SRD / OGL)
 **Party Name:** The Rumbling Stone — a group of mostly dwarves who make heavy sounds and are not stealthy
 **Current Level:** 13 | **Party Size:** 4 PCs
-**Theme:** A heroic dwarven-centric saga combining the Red Hand of Doom horde invasion with a deep Underdark artifact quest, planar exploration, and personal story arcs
 
 ### The Party
 
@@ -43,7 +56,7 @@ The party has no rogue. They handle traps via Tordek's high Monk saves, arcane u
 - **Drellin's Ferry Assault:** The town is attacked and ultimately destroyed by the horde.
 - **Thorik dies** defending Drellin's Ferry. He is resurrected through divine intervention of Moradin and bonds with the artifact **Aegis Fang** (a dwarven waraxe adapted from FR lore).
 - **Capitana Lorana's garrison falls** during the same opening assault wave. The party meets Lorana there for the first time. **A travelling half-elf bard, Maestro Tempestas (canonized 2026-05-04)**, is caught in the assault while passing through on diplomatic business for Rethmar. He uses *Shadow Walk* and *Sleep* to help the party + Lorana evacuate ~23 civilians from a collapsing district. Tempestas considers himself in **lifelong debt** to the party from this moment. He reappears as a recurring messenger NPC in Arc 09 (post-Hammerfist hooks). See `Bestiario/png/Tempestas/Tempestas.md`.
-- Source files: `00_Red Hand Of Doom/`, `PG/Artefatti/Artefatti-Pg/Aegis Fang/`, `Bestiario/png/Lorana/Lorana.md`, `Bestiario/png/Tempestas/Tempestas.md`
+- Source files: `00_Red Hand Of Doom/`, `PG/Artefatti/Artefatti-Pg/Aegis Fang/`, `Bestiario/png/Lorana/Lorana/Lorana.md`, `Bestiario/png/Tempestas/Tempestas.md`
 
 ### Phase B: Hammerfist Hills & The Quest for the Corona (Levels 6–8)
 
@@ -88,7 +101,9 @@ The party descends through a chain of connected underground locations:
 - **Location:** Below Hammerfist Holds, first Underdark area
 - **Source:** Adapted from *Expedition to Undermountain* (p.165) and *Underdark* sourcebook
 - **Villains:**
-  - **Maur** — Underdark native creature, CR ~10 (defeated)
+  - **Maur** — Underdark native creature, **CR 11** (defeated) — the DM's XP ledger:
+    *«il capo dei minotauri maur cr 11»*. The old «CR ~10» was the Collezionista's
+    («un rakasa (il collezionista fuggito cr 10)», same ledger line).
   - **Il Collezionista** — A Rakshasa who uses a bonded basilisk to turn enemies into macabre statues and sells them to evil clients as trophies. **ESCAPED** — recurring villain.
 - **Key Events:**
   - Il Collezionista escaped the battle. He later formed a hook/alliance with the drow faction, providing them with strange and pure evil artifacts — possibly the same artifacts the drow seek during the Battle of Rethmar.
@@ -96,8 +111,10 @@ The party descends through a chain of connected underground locations:
     PC was down **except the monk (Tordek)**, who could not see where he went.
     He carried away an **obsidian pendant** (or comparable magic item) that moved
     him elsewhere — another location in Faerûn, or another plane, temporarily.
-    → **Proposed resolution `[INFERRED — needs DM confirmation]`: the Plane of
-    Fire, the salamander forge where his guild trades.** Rationale: his guild
+    → **Destination: the Plane of Fire, the salamander forge where his guild
+    trades** `[DM 2026-09-24]` (the DM had delegated the choice on 2026-07-26 and
+    confirmed it here, noting that it also gives sense to Therysol's hunt).
+    Rationale: his guild
     *already* has a canonical planar route (Therysol was sold "to salamanders in
     the Fire Elemental plane, forced to serve at the forge"); obsidian is already
     tied to the Fire Plane in campaign canon; and it plants Arc 07 three arcs
@@ -108,8 +125,9 @@ The party descends through a chain of connected underground locations:
   - **Encounter composition** (from the XP ledger, `CalcoloPuntiEperienza-current.ods`):
     *"Il capo dei minotauri **maur** cr 11, una **gorgone** cr 8, un **rakasa**
     (il Collezionista)"*. ⚠️ The ledger records a **gorgon**; the DM and this
-    document record a **bonded basilisk**. **Basilisk stands** (2 sources of 3)
-    unless the DM rules otherwise.
+    document record a **bonded basilisk**. **Basilisk stands**: the DM named it
+    explicitly on 2026-07-26 (*«maur, basilisk e rachasa»*, recorded in
+    `plans/SOGGETTO-DISCESA-UNDERDARK-ARCHI-01-05.md` §9.3).
   - Source: *Underdark* p.95 (Maur), p.93 (Cristal Warriors)
 
 #### Gardens of Resplendent Hues (Pre-Arc 02, unnumbered) `[DM 2026-07-26]`
@@ -455,8 +473,8 @@ and back to the surface for the Red Hand campaign mainline.
         ↓
 [Minotaur Lair — Pre-Arc 01, unnumbered]
   ├── Source: Expedition to Undermountain (p.165), Underdark sourcebook
-  ├── Maur (Underdark native, CR ~10, defeated)
-  ├── Il Collezionista (Rakshasa + bonded basilisk, ESCAPED)
+  ├── Maur (Underdark native, CR 11, defeated)
+  ├── Il Collezionista (Rakshasa + bonded basilisk, ESCAPED → Plane of Fire, temporarily)
   │   └── Later allies with Sonjak's drow guild → provides evil artifacts
   └── Cristal Warriors (Underdark p.93) — also encountered in 01
         ↓
@@ -549,82 +567,3 @@ and back to the surface for the Red Hand campaign mainline.
   ├── P3 Alliances: Starsong Hill, Ghostlord, Sabotaggio Drow
   └── P3 FINALE: Battle of Rethmar (5 phases → Azarr Kul + Avatar of Tiamat)
 ```
-
----
-
-## PART 4: VILLAIN CONNECTION GRAPH
-
-```
-[Red Hand of Tiamat (Azarr Kul)]
-    ├── Hobgoblin Horde + Ogres + Bugbears + Giants + etc
-    ├── Cult of the Dragon (Tiamat crusade)
-    └── Allied factions:
-        ├── [Githyanki Dragon-Rider Faction]
-        │   └── Red Dragons mounted by Githyanki knights
-        │   └── Attack at Dauth Tournament → steal sage monk artifact
-        │   └── If not defeated: join Battle of Rethmar
-        │
-        ├── [Drow Experimental Faction]
-        │   ├── Sonjak (Drow Cleric Matrona of Lolth)
-        │   │   └── Pact with Mother of Fungi
-        │   │   └── Modified Neverlight Grove → research lab
-        │   │   └── Fleshcrafting experiments (fungi + aberrations)
-        │   ├── Il Collezionista (Rakshasa, ESCAPED)
-        │   │   └── Basilisk → macabre statue trade
-        │   │   └── Allied with Sonjak's drow guild
-        │   │   └── Provides evil artifacts to drow faction
-        │   └── Night of the Drow at Rethmar (Phase 0)
-        │       └── Sabotage temple → steal evil artifact
-        │       └── Use orcs/hobgoblins as proxy disposable troops
-        │
-        └── [Zalkatar — Illithid Warlock Drow]
-            └── Previous owner of Ring of Chaotic Illumination
-            └── Boss of Invisible Tower (Arc 09, P2A)
-            └── CR 13 Aberration/Psionics
-```
-
----
-
-## PART 5: SOURCE REFERENCE LINKS
-
-### GitHub Campaign Repository
-
-- **Main repo:** <https://github.com/EarlRagnar78/RumblingStone>
-- **Monster Sheets:** <https://github.com/EarlRagnar78/RumblingStone/tree/main/00_Red%20Hand%20Of%20Doom/Bestiario/pregen-pcgen>
-- **Aegis Fang:** <https://github.com/EarlRagnar78/RumblingStone/tree/main/PG/Artefatti/Artefatti-Pg/Aegis%20Fang>
-- **Corona di Adamantio:** <https://github.com/EarlRagnar78/RumblingStone/tree/main/PG/Artefatti/Artefatti-Pg/00-La%20Corona%20di%20Adamantio-ogetto%26Prove>
-- **Ring of Chaotic Illumination:** <https://github.com/EarlRagnar78/RumblingStone/blob/main/PG/Artefatti/Ring%20of%20Chaotic%20Illumination.md>
-- **Tordek's Bracieri:** <https://github.com/EarlRagnar78/RumblingStone/tree/main/PG/Artefatti/Artefatti-Pg/Tordek>
-- **Lord of Sun and Shadow PrC (rejected):** <https://github.com/EarlRagnar78/RumblingStone/blob/main/PG/Artefatti/Artefatti-Pg/PrestigeClass/lord_sun_shadow/lord_sun_shadow.html>
-- **Cerebromorphosis:** <https://github.com/EarlRagnar78/RumblingStone/tree/main/PG/Artefatti/Artefatti-Pg/Artemis/Cerebromorphosis>
-- **Therysol NPC:** <https://github.com/EarlRagnar78/RumblingStone/tree/main/Bestiario/png/Therysol>
-- **Arc 08 Battle of Hammerfist:** `08_La Battaglia Di Hammerfist/` (9 files + Mappe/ + immagini/)
-- **Arc 09 Post-Hammerfist:** `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/` (74 markdown + 6 images)
-- **All Arc directories:** `01_LaMiniera/` through `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/`
-
-### External Adventure Sources (Archive.org, for DM reference only)
-
-- **Expedition to Undermountain (Minotaur Lair p.165, Belkram's Fall p.117):** archive.org/details/expedition-to-undermountain
-- **Underdark sourcebook (Maur p.95, Cristal Warriors p.93):** archive.org/details/Underdark
-- **Expedition to the Demonweb Pits (p.67):** archive.org/details/expedition-to-the-demonweb-pits_202303
-
-### Artifact Synergies
-
-- **PDF Quick Reference:** `07_il Portale Della Forgia Eterna/SinergieArteFattiQuickReference.pdf`
-- **Earth Awakening:** `PG/Artefatti/Artefatti-Pg/Tordek/03_Risveglio_Completo_Bracieri_Terra.md`
-- **Hella Resurrection:** `07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`
-
----
-
-## CROSS-REFERENCE INDEX
-
-| Topic | Reference File |
-|---|---|
-| Party composition & stats | `skills/rumblingstone-campaign/references/campaign-party.md` |
-| All campaign artifacts | `skills/rumblingstone-campaign/references/campaign-artifacts.md` |
-| Cannath Vale locations & map | `skills/forgotten-realms-lore/references/fr-cannath-vale.md` |
-| Campaign factions (canonical + custom) | `skills/forgotten-realms-lore/references/fr-factions.md` |
-| Story arc progression | `skills/rumblingstone-campaign/references/campaign-story-arcs.md` |
-| DM toolkit & expansion | `skills/rumblingstone-campaign/references/dm-expansion-toolkit.md` |
-| House rules | `campaign/lore/house-rules.md` |
-| Arc 09 master index | `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md` |

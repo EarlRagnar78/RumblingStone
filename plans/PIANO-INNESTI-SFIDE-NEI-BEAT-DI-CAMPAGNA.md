@@ -72,7 +72,7 @@ spedire un PG fuori dalla tenda e svegliare il campo.
 | *(opz.)* Corpo | Ogre Frantumapietra | 9 |
 
 **Lo slot esiste, ed è letteralmente scritto**: `campaign/state.md` §2.2 e
-`campaign/lore/campaign-history.md` danno alla Mano Rossa una **3ª linea di
+`campaign/lore/campaign-chronicle.md` danno alla Mano Rossa una **3ª linea di
 «45 giganti/artiglieria + maghi»**. Un gigante Enorme deforme che lancia massi
 a 55 metri **è** quella riga, non un'aggiunta.
 

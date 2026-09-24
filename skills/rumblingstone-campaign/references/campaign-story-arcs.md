@@ -1,7 +1,7 @@
 # RumblingStone Campaign — Story Arc Reference (Agent Navigation)
 
 Quick-lookup reference for AI agents needing campaign state, arc progression, and narrative context.
-For full narrative details, see `campaign/lore/campaign-history.md`.
+For full narrative details, see `campaign/lore/campaign-chronicle.md` (this table) and `campaign/lore/campaign-premise.md` (shared premise).
 
 ---
 
@@ -40,7 +40,7 @@ For full narrative details, see `campaign/lore/campaign-history.md`.
 |---|---|---|---|---|---|
 | Grell Patriarch | Aberration | ~8 | ☠️ Defeated | 01_LaMiniera | 01 |
 | Maur | Underdark native | ~10 | ☠️ Defeated | Minotaur Lair | Pre-01 |
-| Il Collezionista | Rakshasa | ~12 | 🏃 **ESCAPED** | Minotaur Lair → Drow alliance | Pre-01 → 09 |
+| Il Collezionista | Rakshasa | ~12 | 🏃 **ESCAPED** | Minotaur Lair → Plane of Fire (temporarily) → Drow alliance | Pre-01 → 09 |
 | Undead Beholder | Undead | ~13 | ☠️ Defeated | 03_la Cittadella | 03 |
 | Drow Sorcerer + Retriever | Drow slaver | ~11 | ☠️ Defeated | 03_la Cittadella | 03 |
 | Fauci di Palude | Black Dragon (Adult Advanced) | 15 | ☠️/🏃 **Conditional** (D10: default flees <50hp gravely wounded, may return; PG-kill branch = dies) | Battle of Hammerfist | 08 |
@@ -148,5 +148,5 @@ Battle of Rethmar (Arc 09-P3, 5 Phases):
 | Cannath Vale map and locations | `references/fr-cannath-vale.md` |
 | All factions (canonical + custom) | `references/fr-factions.md` |
 | DM tools, quests, monster art | `references/dm-expansion-toolkit.md` |
-| Full narrative history | `campaign/lore/campaign-history.md` |
+| Full narrative history | `campaign/lore/campaign-chronicle.md` |
 | House rules | `campaign/lore/house-rules.md` |

@@ -194,7 +194,7 @@ dati di campagna, cresciuto dentro una PR nata read-only. Il corpo lo ammette
 |---|---|
 | **ADR-0017** — `state.yaml` come sorgente dei fatti, `state.md` **generato** | `state.md` era **1677 righe di cui 1150 (68%) di changelog**. Lo storico esce in `state-changelog.md` e il file scende a 546 righe |
 | Il vincolo che chiude alla radice il difetto dei «due tempi» | `oggi` e `tempo` **obbligatori** nello schema: un fatto senza tempo dichiarato **non è esprimibile** |
-| **4 validatori nuovi** (`validate_docs/links/pg/state`) + `render_state --check` | `validate_docs` nasce perché `AGENTS.md` documentava `campaign/npcs/`, `locations/`, `encounters/`: **nessuna delle tre è mai esistita** |
+| **4 validatori nuovi** (`validate_docs/links/pg/state`) + `render_state --check` | `validate_docs` nasce perché `AGENTS.md` documentava `campaign/npcs/`, `locations/`, `encounters/`: **nessuna delle tre è mai esistita** <!-- validate-docs: ignore --> |
 | Schede PG a dati (`PG/schede/*.yaml` + `.md` generati) | oggi le schede PG non esistono come dato da nessuna parte |
 | **ADR-0018** — `groups/<slug>/` invece di branch-per-gruppo | e il **no a un memory store** per gli agenti: sarebbe non versionato e divergente |
 | Il reset per gruppo nuovo **perdeva** | azzerava `state.md` e `sessions/` e lasciava `state.yaml`, `state-changelog.md`, `campaign-history.md` e i recap al gruppo successivo |

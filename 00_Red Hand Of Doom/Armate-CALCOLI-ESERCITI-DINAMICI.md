@@ -143,20 +143,20 @@ Approssimato a **~10.000** come target narrativo.
 
 | Unità | CR | Numero | Fonte file | Deployment (arc/fase) |
 |---|---|---|---|---|
-| Hobgoblin Captain (company commander élite) | 8 | ~24 | `Bestiario/hobgoblin-captain-cr8.md` | Promossi dai 60 Warrior-3 §2.1 (1 per compagnia, Fase 1-3) |
-| Warpriest di Tiamat élite (upscale da CR7) | 11 | ~6 | `Bestiario/tiamat-warpriest-elite-cr11.md` | Sottogruppo dei 20 Warpriest §2.1, Fase 2 ritualisti |
-| Emissario Red Hand | 12 | 1-3 | `Bestiario/emissario-red-hand-cr12.md` | **Conditional** (Ghostlord branch; P3 Ghostlord alleanza) |
-| Zarim (Illithid luogotenente) | 12 | ×1 | `Bestiario/zarim-illithid-luogotenente-cr12.md` | Torneo Dauth P2B Day 2 (fixed) |
-| Xal'thor (Illithid Commander) | 14 | ×1 | `Bestiario/villain/Xal_thor/Xal_thor.md` (pointer) | Torneo Dauth P2B Day 3 (fixed) |
+| Hobgoblin Captain (company commander élite) | 8 | ~24 | `Bestiario/mostri/hobgoblin-captain-cr8.md` | Promossi dai 60 Warrior-3 §2.1 (1 per compagnia, Fase 1-3) |
+| Warpriest di Tiamat élite (upscale da CR7) | 11 | ~6 | `Bestiario/mostri/tiamat-warpriest-elite-cr11.md` | Sottogruppo dei 20 Warpriest §2.1, Fase 2 ritualisti |
+| Emissario Red Hand | 12 | 1-3 | `Bestiario/villain/emissario-red-hand-cr12.md` | **Conditional** (Ghostlord branch; P3 Ghostlord alleanza) |
+| Zarim (Illithid luogotenente) | 12 | ×1 | `Bestiario/villain/Zarim/zarim-illithid-luogotenente-cr12.md` | Torneo Dauth P2B Day 2 (fixed) |
+| Xal'thor (Illithid Commander) | 14 | ×1 | `Bestiario/villain/Xal_thor/Xal_thor/Xal_thor.md` (pointer) | Torneo Dauth P2B Day 3 (fixed) |
 | Saarvith | 11 | ×1 | `09_.../P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | Rhest P2 (PG deviabile) |
 | Zalkatar | 13 | ×1 | `09_.../P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` | Torre Invisibile P2A (PG deviabile) |
-| Wyrmlord Karruk | 10 | ×1 | `Bestiario/wyrmlord-karruk-cr10.md` | Rethmar Fase 1 assault leader |
-| Ondata Giganti — mass wave | 15 (EL) | ×2 ondate | `Bestiario/ondata-giganti-fanteria-cr15.md` | Rethmar Fase 1 (prima ondata) + Fase 3 (rinforzo) — assorbe gli 80 Hill Giant §2.1 + ogre/ettin supporto |
+| Wyrmlord Karruk | 10 | ×1 | `Bestiario/villain/Wyrmlord_Karruk/wyrmlord-karruk-cr10.md` | Rethmar Fase 1 assault leader |
+| Ondata Giganti — mass wave | 15 (EL) | ×2 ondate | `Bestiario/mostri/ondata-giganti-fanteria-cr15.md` | Rethmar Fase 1 (prima ondata) + Fase 3 (rinforzo) — assorbe gli 80 Hill Giant §2.1 + ogre/ettin supporto |
 | Azarr Kul (finale) | 15 | ×1 | `09_.../P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md` | Rethmar Fase 3 (arrivo Day 40+2) |
-| Avatar di Tiamat (climax) | 17 | ×1 | `Bestiario/avatar-tiamat-cr17.md` | **Conditional**: evocato solo se Ritual Clock ≥18 (Fase 3-4 climax) |
+| Avatar di Tiamat (climax) | 17 | ×1 | `Bestiario/villain/Avatar_Tiamat/avatar-tiamat-cr17.md` | **Conditional**: evocato solo se Ritual Clock ≥18 (Fase 3-4 climax) |
 | Il Collezionista (Rakshasa) | 18 | ×1 | `Bestiario/villain/Il_Collezionista_Rakshasa/Il_Collezionista_Rakshasa.md` (pointer) | **Conditional** shadow branch (non encounter ordinario) |
 | Xal'thor allied thralls (Illithid psion/guerrieri) | 6-8 | ~30-50 | (da `Bestiario/zarim-*` + MM) | **Conditional** se Xal'thor allea Mano Rossa (+400 unità §4) |
-| Ghost Lion Spettrale | 8 | ~6-12 | `Bestiario/ghost-lion-spettrale-cr8.md` | Ghostlord pride (Fase 2 se ostile) |
+| Ghost Lion Spettrale | 8 | ~6-12 | `Bestiario/mostri/ghost-lion-spettrale-cr8.md` | Ghostlord pride (Fase 2 se ostile) |
 
 **Note di coerenza**:
 

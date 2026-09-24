@@ -133,7 +133,7 @@ assente», «marker `auto:` assenti»): non è un errore — significa solo che
 il flusso automatico di chiusura sessione non è ancora attivo su questa
 copia.
 
-**Un secondo gruppo che rigioca la campagna da capo**: `scripts/new-campaign-group.sh`
+**Un secondo gruppo che rigioca la campagna da capo**: `python3 scripts/dm.py gruppo nuovo`
 (vedi `campaign/DM-CAMPAIGN-PLAYBOOK.md` §7 — «Reset per nuovo gruppo»).
 
 ---

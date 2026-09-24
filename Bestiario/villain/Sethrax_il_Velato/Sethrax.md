@@ -20,7 +20,7 @@ velocita: 9 m
 **Patrono:** **Zalkatar**, Illithid Warlock Drow della **Torre Invisibile** (vedi `Arco-Post-Hammerfist-P2A-Torre-PARTE4-FINALE-Boss-Zalkatar.md`).
 **Ruolo:** Emissario covert al Torneo di Dauth (Arco 09 P2B). Missione: estrarre un “seme di Porta” dall’Orbe delle Otto Porte per gli esperimenti planari di Zalkatar.
 **Countdown Clock:** Sincronizzato con il Torneo (eventi automatici Giorni 1–3). Esito finale impatta il clock di Zalkatar (P2A).
-**File correlati:** `09_Continuazione.../Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE2-Giorno2-Semifinali.md`, `…-PARTE3-Giorno3-Finale-e-Invasione.md`, `…-STATBLOCCHI-COMPLETO.md` voce **10**, `…-OTTO-PORTE-e-ORBE.md` §2.1.1, `Bestiario/villain/Xal_thor/Xal_thor.md` (fazione rivale).
+**File correlati:** `09_Continuazione.../Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE2-Giorno2-Semifinali.md`, `…-PARTE3-Giorno3-Finale-e-Invasione.md`, `…-STATBLOCCHI-COMPLETO.md` voce **10**, `…-OTTO-PORTE-e-ORBE.md` §2.1.1, `Bestiario/villain/Xal_thor/Xal_thor/Xal_thor.md` (fazione rivale).
 
 > **Questo file è la FONTE AUTORITATIVA per:**
 > - tutti i **trigger di smascheramento** (vedi sezione *Disguise Self psionico*),

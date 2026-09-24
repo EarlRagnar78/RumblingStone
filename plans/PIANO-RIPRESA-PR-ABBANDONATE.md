@@ -2159,7 +2159,7 @@ doppi ridotti a uno: **tredici record in meno, zero creature in meno**.
 | **Nessuna perdita** | ogni riga tabellare delle sei sezioni coperte ha un record in `state.yaml`, contata nei **due sensi** |
 | **Non-regressione** | i **20 file** che toccano `state.md` — 737 test verdi, `dm.py doctor --ci`, `next_session`, `session_recap` |
 
-### 4.9 · Lotto **4e** — una sola via di scrittura `[4e-0 ✅ audit · 4e-1 ✅ · 4e-2 ⬜ · 4e-3 ⬜]`
+### 4.9 · Lotto **4e** — una sola via di scrittura `[4e-0 ✅ audit · 4e-1 ✅ · 4e-2 ✅ · 4e-3 ⬜]`
 
 > `[C costruzione · Opus 5, sessione principale (il piano diceva Sonnet 5) · alto ·
 > un test **sui file veri** (§4.4): i tredici villain di `campaign/state.yaml`
@@ -2270,7 +2270,7 @@ con lo stesso diff e la stessa conferma di prima. Con un front-matter, i
 trigger meccanici della regex si ignorano e **si stampano uno per uno**, perché
 una riga aggiunta a mano che il delta non ha deve restare visibile.
 
-**Due scelte prese durante il lotto**, perché il piano non le aveva viste:
+**Le scelte prese durante il lotto**, che il piano non aveva visto:
 
 - **Il rituale non è un caso a parte.** Azarr Kul ha un `png_id` e un clock
   `9/18` come gli altri: il delta lo muove con `clock`, e il riconoscimento
@@ -2288,6 +2288,30 @@ una riga aggiunta a mano che il delta non ha deve restare visibile.
 | il recap non vede il delta | ✅ nessuna sezione pubblica contiene `png_id` |
 | 🔴 i cancelli mordono | ✅ **5 mutazioni su 5** rosse: regex non filtrata (1 test), niente tutto-o-niente (9), `da` del March Clock ignorato (1), niente idempotenza (2), `png_id` per somiglianza (16) |
 | non-regressione | ✅ **1.229** test, `dm.py doctor --ci`, `tools_manifest --check` |
+
+#### 4.9.5 · Com'è andato 4e-2 (2026-09-24) — il wizard scrive il delta
+
+Le domande del wizard non cambiano: March Clock, Ritual Clock, clock toccati,
+cambi di stato dei PNG. Cambia cosa succede alla risposta. `session_wizard`
+legge `campaign/state.yaml`, risolve ogni nome col `png_id` e valida **ogni
+voce da sola** contro lo stato di oggi. Quella che torna entra nel
+front-matter; quella che non torna esce con il suo motivo a video e resta
+nella prosa del log.
+
+La validazione per voce è la differenza rispetto a `state_apply`, che fa tutto
+o niente. Lì un delta sbagliato arriva a sera finita e non deve scrivere a
+metà; qui il DM è davanti al terminale, e una voce sbagliata non deve buttare
+via le altre che ha appena dato.
+
+| Prova | Esito |
+|---|---|
+| le risposte diventano dati | ✅ Ghaurush e il Ritual Clock vanno a `ghaurush` e `azarr-kul`, «Ushgar morto» a uno `stato`; un nome inesistente produce un avviso e nessuna voce |
+| una voce che non torna | ✅ esce da sola con «state.yaml dice», le altre restano |
+| un nome ambiguo | ✅ «Illithid» aggancia più villain e non ne sceglie nessuno |
+| dal wizard a `state_apply`, sui master veri | ✅ il log comincia col front-matter, `state_apply` scrive i quattro campi senza regex |
+| senza `state.yaml` | ✅ il log esce senza front-matter, come prima di 4e |
+| 🔴 i cancelli mordono | ✅ **3 mutazioni su 3** rosse: voce non validata da sola, nome ambiguo che sceglie il primo, front-matter non scritto |
+| non-regressione | ✅ **1.234** test, `dm.py doctor --ci`, `tools_manifest --check` |
 
 ## Come si misura che il piano è finito
 

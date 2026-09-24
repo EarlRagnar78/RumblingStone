@@ -23,3 +23,8 @@
 # **vedano lo stesso numero di prove**: è la misura del difetto del 2026-09-21,
 # non una promessa di non ripeterlo.
 pytest>=8.0
+
+# PRATICHE PI-3 (D2 del 2026-09-24): le vulnerabilita' note nelle dipendenze
+# dei due file. Gira in CI, non bloccante per il primo mese. Licenza
+# Apache-2.0. In locale: `pip-audit -r requirements-dev.txt`.
+pip-audit>=2.10

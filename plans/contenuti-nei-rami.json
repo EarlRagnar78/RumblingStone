@@ -3,7 +3,7 @@
   "misura": {
     "data": "2026-09-24",
     "riferimenti": 216,
-    "file_mai_arrivati": 65
+    "file_mai_arrivati": 50
   },
   "rami": [
     {
@@ -19,8 +19,8 @@
         "pr/160",
         "origin/claude/festive-tesla-tgsauj"
       ],
-      "stato": "in-volo",
-      "dove": "PR #160 aperta: lotti 4e, 4f, 4i di PIANO-RIPRESA-PR-ABBANDONATE"
+      "stato": "portato",
+      "dove": "PR #160 mergiata il 2026-09-24 (e26571e): lotti 4e, 4f, 4i di PIANO-RIPRESA-PR-ABBANDONATE; il ramo e' stato tolto dopo il merge"
     },
     {
       "ref": [
@@ -97,11 +97,6 @@
       "dove": "PIANO-VENDIBILITA §5 linea 4 lo assorbe (tabella delle fonti)"
     },
     {
-      "percorso": "docs/audit/AUDIT-LEVEL-DESIGN-E-INQUADRATURA.md",
-      "stato": "portato",
-      "dove": "lotto 4i-1: su main con una testata che lo data (la testata cambia il contenuto, per questo resta nella misura finche' la #160 non e' su main)"
-    },
-    {
       "percorso": "scripts/validate_skill_paths.py",
       "stato": "superato",
       "dove": "validate_docs --sorgenti controlla i percorsi fra backtick in tutti i markdown (lotto 4i-1)"
@@ -110,16 +105,6 @@
       "percorso": "SOGGETTO-DISCESA-UNDERDARK-ARCHI-01-05.md",
       "stato": "portato",
       "dove": "plans/SOGGETTO-DISCESA-UNDERDARK-ARCHI-01-05.md, datato (D22); le due conferme rimaste sono la D24"
-    },
-    {
-      "percorso": "plans/PIANO-LEVEL-DESIGN-E-INQUADRATURA-SCENICA.md",
-      "stato": "portato",
-      "dove": "plans/PIANO-LEVEL-DESIGN-E-INQUADRATURA-SCENICA.md, 🔵 con i rami C e D rimisurati (D22)"
-    },
-    {
-      "percorso": "scripts/agents.conf",
-      "stato": "portato",
-      "dove": "rifatto sul codice di oggi in scripts/agents.conf, letto da build-skills.sh e sync-skills.sh; test_agents_conf.py (D22)"
     },
     {
       "percorso": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DAY3-DAUTH-CITY-SIEGE.md",

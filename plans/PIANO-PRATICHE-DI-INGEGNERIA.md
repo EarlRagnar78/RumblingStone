@@ -128,7 +128,7 @@ Classe **C**.
 - **I rami**: l'elenco dei 39 già su `main` va al DM. Si cancellano solo con il
   suo sì (D5), perché un ramo cancellato si recupera solo conoscendo lo SHA.
 
-#### ⬜ PI-3 · La catena di fornitura
+#### 🟡 PI-3 · La catena di fornitura
 `[engine: Sonnet 5 per i file, DM per le impostazioni · effort: basso · qualità: un segreto finto in un commit di prova viene bloccato; Dependabot apre la prima PR]`
 
 Classe **C**, con una parte nelle impostazioni.
@@ -142,6 +142,38 @@ Classe **C**, con una parte nelle impostazioni.
   bloccante sulle vulnerabilità alte.
 - **SBOM**: rinviato a [PIANO-VENDIBILITA](PIANO-VENDIBILITA.md). Serve quando
   qualcuno riceve il toolkit, non prima.
+
+✅ **Fatto nel ramo `claude/focused-meitner-pgyb20` (2026-09-24).**
+- `.github/dependabot.yml`: `pip` e `github-actions` sulla radice, settimanale,
+  al massimo tre PR aperte per ecosistema. Nessuna etichetta personalizzata:
+  se l'etichetta non esiste nel repo, Dependabot lo scrive in ogni PR.
+- `pip-audit>=2.10` in `requirements-dev.txt` e un passo non bloccante in CI,
+  `pip-audit -r requirements-dev.txt`, subito dopo l'installazione. Provato qui:
+  risolve anche il `-r requirements.txt` annidato (13 pacchetti, nessuna
+  vulnerabilità nota) e su un file con `pyyaml==5.3` esce 1 con
+  `PYSEC-2020-96` e `PYSEC-2021-142`. Il cancello morde.
+- `runs-on: ubuntu-24.04` nei due job, al posto di `ubuntu-latest`. Oggi è la
+  stessa immagine, quindi non cambia niente; dal 19 ottobre non si sposta da
+  sola. È la regola che il workflow applica già a typst («versione FISSATA,
+  mai latest»). Si passa a 26.04 con una PR che la prova.
+
+⚠️ **Una cosa che il piano prometteva e che lo strumento non fa.** «Bloccante
+sulle vulnerabilità alte» presuppone un filtro per gravità, e `pip-audit` non
+ce l'ha: esce 1 su qualunque avviso noto. Dopo il primo mese (2026-10-24) le
+strade sono due: bloccante su tutto, con le eccezioni accettate dichiarate una
+per una in `--ignore-vuln`, oppure resta un avviso. Si decide guardando cosa
+avrà segnalato nel mese.
+
+⬜ **Resta**, e non si fa da un ramo:
+- la **prima PR di Dependabot**, che è il criterio di qualità del lotto: arriva
+  dopo il merge, e la prima attesa è l'aggiornamento delle tre azioni su
+  Node.js 20;
+- la **prova del blocco dei segreti** (un segreto finto in un commit di prova):
+  la fa il DM, perché un agente che tenta di spingere un segreto è esattamente
+  ciò che la protezione deve fermare, e il risultato non si distinguerebbe da un
+  rifiuto dei permessi della sessione;
+- la **revisione con l'IA di GitHub** che fallisce per il modello, e l'esito di
+  `Analyze (javascript-typescript)`: si leggono sui controlli di questa PR.
 
 🔎 **Cosa è successo attivando le impostazioni (2026-09-24).** Insieme alla
 sicurezza si sono accesi due controlli nuovi sulle PR:
@@ -246,51 +278,69 @@ pulizia si faccia nella conversazione successiva: prima di cancellare si
 
 ```bash
 git fetch --prune origin
+git fetch --unshallow origin 2>/dev/null   # vedi l'avvertenza qui sotto
 for b in $(git for-each-ref refs/remotes/origin --format='%(refname:short)' | grep -v -E 'HEAD|origin/main$'); do
   git merge-base --is-ancestor "$b" origin/main && echo "${b#origin/}"
 done
 ```
 
-| Ultimo commit | Ramo |
-|---|---|
-| 2026-07-01 | `claude/rhod-army-calculations-9TO1B` |
-| 2026-07-02 | `claude/hammerfist-adventure-review-lqmdfu` |
-| 2026-07-02 | `claude/lotto-orphan-subquests-xwyb27` |
-| 2026-07-02 | `claude/lotto-plan-token-availability-ahoco4` |
-| 2026-07-02 | `claude/lucid-bell-yv0vg0` |
-| 2026-07-02 | `claude/palio-channathgate-expansion` |
-| 2026-07-02 | `claude/piano-revisione-arco-09-dh32ad` |
-| 2026-07-03 | `claude/arc-07-09-review-fyxrc0` |
-| 2026-07-03 | `claude/arc-07-09-review-q3p3pp` |
-| 2026-07-03 | `claude/dnd-pathfinder-agent-skills-jjyp6u` |
-| 2026-07-03 | `claude/piano-revisione-arc07-exec-cafnw4` |
-| 2026-07-03 | `claude/piano-revisione-arc08-rumbling-stone-ha5zk2` |
-| 2026-07-10 | `claude/piano-revisione-completion-ujdv60` |
-| 2026-07-12 | `claude/campaign-assets-library-restructure-cx2uti` |
-| 2026-07-19 | `claude/analisi-pr-commit-plan-q94cud` |
-| 2026-07-19 | `claude/palio-compliance-check-enlu8j` |
-| 2026-07-20 | `claude/rumblingstone-campaign-state-management-pgkyc5` |
-| 2026-07-20 | `claude/rumblingstone-content-audit-n000d8` |
-| 2026-07-20 | `claude/rumblingstone-png-assets-ykunrc` |
-| 2026-07-20 | `claude/rumblingstone-skills-update-j7ke6y` |
-| 2026-07-23 | `claude/bugbear-assassin-section-recovery-1pyw3r` |
-| 2026-07-23 | `claude/rumblingstone-forgia-audit-vgzav8` |
-| 2026-07-24 | `claude/freecad-map-generation-qfaow8` |
-| 2026-07-24 | `claude/piani-completare-5b85qg` |
-| 2026-08-23 | `claude/rumblingstone-section-check-ustn8s` |
-| 2026-08-26 | `claude/adventure-game-generation-skills-cevaqt` |
-| 2026-09-01 | `claude/golarion-pathfinder-campaign-xbyvzt` |
-| 2026-09-01 | `claude/rumblingstone-campaign-tools-40pt1b` |
-| 2026-09-03 | `claude/lotto-d-piano-prosa-kj9bbm` |
-| 2026-09-03 | `claude/rumblingstone-analysis-kh4yfa` |
-| 2026-09-03 | `claude/rumblinstone-overdue-plans-nvjy9m` |
-| 2026-09-04 | `claude/monster-png-generation-questions-8c36yp` |
-| 2026-09-04 | `claude/rumblingstione-analysis-enhancement-p44wk5` |
-| 2026-09-21 | `claude/open-prs-plans-review-fu4qcp` |
-| 2026-09-23 | `claude/busy-planck-gkzrur` |
-| 2026-09-23 | `claude/funny-newton-l813cs` |
-| 2026-09-23 | `claude/gallant-sagan-to3cr6` |
-| 2026-09-23 | `claude/youthful-thompson-o1kktp` |
+🐛 **Rimisura del 2026-09-24, seconda conversazione: su un clone shallow il
+comando sbaglia in silenzio.** Il clone di una sessione d'agente scarica gli
+ultimi commit e basta, e `merge-base --is-ancestor` risponde «no» per ogni
+ramo la cui testa sta sotto il taglio. Il primo giro ha dato **13** rami su
+`main` invece di 38, e 25 rami vecchi di luglio sembravano portare lavoro mai
+arrivato. Con `git fetch --unshallow` il conto torna a **38, gli stessi 38** del
+primo elenco. `contenuti_nei_rami.py` lo avvisa già («clone shallow? usare
+--fetch»); il ciclo qui sopra no, per questo ora ha la riga in più.
+
+Rimisurati i 38, nessuno è la testa della #99 o della #106, e
+`claude/festive-tesla-tgsauj` non c'è più: GitHub l'ha tolto al merge della
+#160. **La cancellazione non è partita dalla sessione d'agente**: i permessi
+della sessione rifiutano `git push --delete` come azione distruttiva. La
+esegue il DM, con il comando in STATO-E-ORDINE §7.2. Lo SHA di ogni testa è
+nella tabella: con quello un ramo cancellato si ricrea
+(`git push origin <sha>:refs/heads/<ramo>`).
+
+| Ultimo commit | SHA della testa | Ramo |
+|---|---|---|
+| 2026-07-01 | `331ce0732b33dfea9a584bc0fe60635abe589d87` | `claude/rhod-army-calculations-9TO1B` |
+| 2026-07-02 | `3598c7b38f457af247cecabb0ec7628cdaa64327` | `claude/hammerfist-adventure-review-lqmdfu` |
+| 2026-07-02 | `68f2091851007999cbcb8cbcb0bb1ff0bd8f29d7` | `claude/lotto-orphan-subquests-xwyb27` |
+| 2026-07-02 | `ee04017bcfc15fefac08dd3f269aa3261117f879` | `claude/lotto-plan-token-availability-ahoco4` |
+| 2026-07-02 | `03df20aca8993225eb9d06ccf7164d7a9e42f49d` | `claude/lucid-bell-yv0vg0` |
+| 2026-07-02 | `0f728d0d2580d8bfb47bf6999964408ee0469255` | `claude/palio-channathgate-expansion` |
+| 2026-07-02 | `266217163bafd411b4a64c2eca21a8c53d19fec9` | `claude/piano-revisione-arco-09-dh32ad` |
+| 2026-07-03 | `1551c6615080f30d47641b098f5b23f1d07f75e6` | `claude/arc-07-09-review-fyxrc0` |
+| 2026-07-03 | `2d1d582dce8a77433b40c539015acdea72564cd5` | `claude/arc-07-09-review-q3p3pp` |
+| 2026-07-03 | `6ae17edc01b69d1d4ea45decdadc76077b0a134c` | `claude/dnd-pathfinder-agent-skills-jjyp6u` |
+| 2026-07-03 | `12ea2a8bb9d9f396193568a2a9a993874f823b54` | `claude/piano-revisione-arc07-exec-cafnw4` |
+| 2026-07-03 | `d149e7a388596933b615669c952022b49379c99b` | `claude/piano-revisione-arc08-rumbling-stone-ha5zk2` |
+| 2026-07-10 | `29105852574815c481f965567142da7fc70e10fa` | `claude/piano-revisione-completion-ujdv60` |
+| 2026-07-12 | `e824ca1e6d9ca0a37eec65315189c2fae7d36c40` | `claude/campaign-assets-library-restructure-cx2uti` |
+| 2026-07-19 | `b22925850cfc73b9411cd48f67a7939d1f5f1ef1` | `claude/analisi-pr-commit-plan-q94cud` |
+| 2026-07-19 | `651f98ff37a25e3d9f67273914f0313142595e30` | `claude/palio-compliance-check-enlu8j` |
+| 2026-07-20 | `597c83f130ee87852ef70a7b05d1d751793320fa` | `claude/rumblingstone-campaign-state-management-pgkyc5` |
+| 2026-07-20 | `62b9516cb7e942c4ec80921f49ccc8a7deb75df9` | `claude/rumblingstone-content-audit-n000d8` |
+| 2026-07-20 | `e2cab058fdb6e9b35c50f4f629939dc54b15663e` | `claude/rumblingstone-png-assets-ykunrc` |
+| 2026-07-20 | `3d848a126779f99b524830eb3a1eaa03a747d7e0` | `claude/rumblingstone-skills-update-j7ke6y` |
+| 2026-07-23 | `f09573aefe3190fe7d1ab24157a4c531b8f05e86` | `claude/bugbear-assassin-section-recovery-1pyw3r` |
+| 2026-07-23 | `5d815de48ee42af259679f15ba0d12f7d38b2acc` | `claude/rumblingstone-forgia-audit-vgzav8` |
+| 2026-07-24 | `7f9b660a0ad9b81f5217adc9ec230e3f74cfe9e8` | `claude/freecad-map-generation-qfaow8` |
+| 2026-07-24 | `5b8a5eeb81174f38ad762ed7738c164120d54e92` | `claude/piani-completare-5b85qg` |
+| 2026-08-23 | `0a2b2fc2973a955c07f0b6b1a979eeb8adb404bb` | `claude/rumblingstone-section-check-ustn8s` |
+| 2026-08-26 | `4cc505a06710d046ffaf72bbfed88ec19fe99f39` | `claude/adventure-game-generation-skills-cevaqt` |
+| 2026-09-01 | `d3c214003b8efb19372f99e64cd84bfb25cad01d` | `claude/golarion-pathfinder-campaign-xbyvzt` |
+| 2026-09-01 | `e3987b0b132b33a266a20fb314777d199168ad1c` | `claude/rumblingstone-campaign-tools-40pt1b` |
+| 2026-09-03 | `f4f9028758335f801756453e6ed9dc7ed1963a38` | `claude/lotto-d-piano-prosa-kj9bbm` |
+| 2026-09-03 | `8fdfd1b25956cdfeaf3514adadab35949de353e5` | `claude/rumblingstone-analysis-kh4yfa` |
+| 2026-09-03 | `97423d94c58a319dae623bcb9fbf151580e78022` | `claude/rumblinstone-overdue-plans-nvjy9m` |
+| 2026-09-04 | `8ce2ebedf1c8d599318a37846056f9fb4f86b3fc` | `claude/monster-png-generation-questions-8c36yp` |
+| 2026-09-04 | `2f55fc0b32ba47435a6f127cb043320b16b5b7b1` | `claude/rumblingstione-analysis-enhancement-p44wk5` |
+| 2026-09-21 | `dd2687517344ce239322fd798fb9992dad397998` | `claude/open-prs-plans-review-fu4qcp` |
+| 2026-09-23 | `e17c6fecb632f256255b02feefd749130518aec6` | `claude/busy-planck-gkzrur` |
+| 2026-09-23 | `2151b185efb08859f265abdf8575ffddb93ad834` | `claude/funny-newton-l813cs` |
+| 2026-09-23 | `b36ce256dcff7a3bb7f53c916eaaf22a5b6f54e6` | `claude/gallant-sagan-to3cr6` |
+| 2026-09-23 | `2a9700f197cec83a1ae0724c1ed2ee54aa9dc41d` | `claude/youthful-thompson-o1kktp` |
 
 ## §8 · Ordine
 
@@ -302,7 +352,7 @@ PR sua: il primo esercizio della norma di PI-2 è questo piano stesso.
 
 - ✅ Fase 1 · audit (§2, 2026-09-24)
 - ⬜ PI-1 · `main` protetto e merge automatico (DM, con 4i-3). 2026-09-24: `main` risulta `protected: true` via API; il dettaglio delle regole, il merge automatico e la sicurezza non si leggono da qui e si verificano alla prima PR indietro rispetto a `main`
-- ⬜ PI-3 · Dependabot, segreti, `pip-audit`
+- 🟡 PI-3 · Dependabot, segreti, `pip-audit`. 2026-09-24: `dependabot.yml`, `pip-audit` in CI (non bloccante), runner fissato a `ubuntu-24.04`; restano la prima PR di Dependabot, la prova del segreto (DM) e la revisione con l'IA (impostazioni)
 - ⬜ PI-6 · canone toccato nella PR
 - ⬜ PI-2 · `misura_flusso` e la norma delle 400 righe
 - ⬜ PI-5 · proprietà sui parser

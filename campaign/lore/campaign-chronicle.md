@@ -101,7 +101,9 @@ The party descends through a chain of connected underground locations:
 - **Location:** Below Hammerfist Holds, first Underdark area
 - **Source:** Adapted from *Expedition to Undermountain* (p.165) and *Underdark* sourcebook
 - **Villains:**
-  - **Maur** — Underdark native creature, CR ~10 (defeated)
+  - **Maur** — Underdark native creature, **CR 11** (defeated) — the DM's XP ledger:
+    *«il capo dei minotauri maur cr 11»*. The old «CR ~10» was the Collezionista's
+    («un rakasa (il collezionista fuggito cr 10)», same ledger line).
   - **Il Collezionista** — A Rakshasa who uses a bonded basilisk to turn enemies into macabre statues and sells them to evil clients as trophies. **ESCAPED** — recurring villain.
 - **Key Events:**
   - Il Collezionista escaped the battle. He later formed a hook/alliance with the drow faction, providing them with strange and pure evil artifacts — possibly the same artifacts the drow seek during the Battle of Rethmar.
@@ -469,7 +471,7 @@ and back to the surface for the Red Hand campaign mainline.
         ↓
 [Minotaur Lair — Pre-Arc 01, unnumbered]
   ├── Source: Expedition to Undermountain (p.165), Underdark sourcebook
-  ├── Maur (Underdark native, CR ~10, defeated)
+  ├── Maur (Underdark native, CR 11, defeated)
   ├── Il Collezionista (Rakshasa + bonded basilisk, ESCAPED)
   │   └── Later allies with Sonjak's drow guild → provides evil artifacts
   └── Cristal Warriors (Underdark p.93) — also encountered in 01

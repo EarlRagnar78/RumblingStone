@@ -212,7 +212,7 @@ The party descended through these locations in order, connected by passages and 
         ↓
 [Minotaur Lair — Pre-Arc 01, unnumbered]
   └── First Underdark area below Hammerfist
-  └── Maur (Underdark native, CR ~10, defeated)
+  └── Maur (Underdark native, CR 11, defeated)
   └── Il Collezionista (Rakshasa + basilisk, ESCAPED)
   └── Cristal Warriors (from Underdark p.93)
   └── Adapted from Expedition to Undermountain (p.165) and Underdark sourcebook

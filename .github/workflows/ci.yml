@@ -12,7 +12,10 @@ permissions:
 jobs:
   validate:
     name: Validate skills & scripts
-    runs-on: ubuntu-latest
+    # Fissato, come typst piu' sotto: dal 19 ottobre 2026 `ubuntu-latest`
+    # diventa Ubuntu 26 (avviso di GitHub). Si passa a 26.04 con una PR che
+    # la prova, non perche' e' cambiata l'etichetta (PRATICHE PI-3).
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
         with:
@@ -27,6 +30,16 @@ jobs:
         # che il DM esegue (stdlib + tre eccezioni dichiarate); il file -dev
         # aggiunge pytest, che gira solo qui e in locale.
         run: pip install -r requirements-dev.txt
+
+      # PRATICHE PI-3 (D2): le vulnerabilita' note nelle dipendenze dichiarate.
+      # `-r requirements-dev.txt` include requirements.txt, quindi guarda sia
+      # cio' che esegue il DM sia cio' che gira qui. Non bloccante fino al
+      # 2026-10-24, poi si decide cosa blocca: pip-audit non filtra per
+      # gravita', e «bloccante sulle alte» va tradotto in `--ignore-vuln`
+      # dichiarati uno per uno.
+      - name: Dipendenze — vulnerabilita' note (pip-audit, non bloccante)
+        continue-on-error: true
+        run: pip-audit -r requirements-dev.txt
 
       - name: Python scripts compile
         run: python -m compileall -q scripts converters
@@ -326,7 +339,7 @@ jobs:
 
   build:
     name: Build skill packages
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: validate
     steps:
       - uses: actions/checkout@v4

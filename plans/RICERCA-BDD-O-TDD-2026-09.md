@@ -7,7 +7,9 @@
 >
 > **Stato**: ✅ ricerca completa (2026-09-24) · **Alimenta**:
 > [PIANO-CICLO-DI-SESSIONE-E-MENU](PIANO-CICLO-DI-SESSIONE-E-MENU.md) §5.0 e la
-> sua decisione **D6** · **Non cambia**: nessun ADR e nessun metodo finché il DM
+> sua decisione **D6**; il lotto PI-4 di
+> [PIANO-PRATICHE-DI-INGEGNERIA](PIANO-PRATICHE-DI-INGEGNERIA.md) la esegue se
+> la risposta è (a) · **Non cambia**: nessun ADR e nessun metodo finché il DM
 > non risponde alla D6.
 
 ---

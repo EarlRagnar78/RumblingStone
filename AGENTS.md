@@ -216,7 +216,7 @@ in modo da eliminare errori di analisi ricorrenti»*.
 |---|---|---|
 | **1** | «questa cosa la misura già qualcuno?» | [`skills/REGISTRO-NORME-EDITORIALI.md`](skills/REGISTRO-NORME-EDITORIALI.md). Se sì **si riusa**: *una norma, un rilevatore* ([RICERCA-STANDARD-PROSA](plans/RICERCA-STANDARD-PROSA-WOTC-PAIZO-2026-09.md) §4) |
 | **2** | «quali skill devo avere aperte?» | [`skills/ORCHESTRAZIONE.md`](skills/ORCHESTRAZIONE.md), le cinque domande. Il bersaglio risponde **da sé** alla 2: un file sotto `plans/` parla al repo, uno d'arco parla al tavolo |
-| **3** | «cosa è archivio, cosa è superato, chi sono i nomi propri?» | i **322 nomi** da `Bestiario/` e `state.md`; `_SNAPSHOT-STORICO.md`; `ESCLUSI_NOME`; le matrici delle versioni |
+| **3** | «cosa è archivio, cosa è superato, chi sono i nomi propri, cosa è rimasto nei rami?» | i **322 nomi** da `Bestiario/` e `state.md`; `_SNAPSHOT-STORICO.md`; `ESCLUSI_NOME`; le matrici delle versioni; i file di rami e PR mai arrivati su `main`, dal registro `plans/contenuti-nei-rami.json` |
 | **4** | «da che numero parto?» | `misura_craft`, sui bersagli veri e non su un campione |
 
 🔴 **Non è una precauzione: è la classifica dei difetti veri.** Quattordici

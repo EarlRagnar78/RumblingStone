@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 74,
+  "tool_count": 75,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -4828,6 +4828,83 @@
       "docs": [
         "plans/adr/ADR-0009-gate-tracciatura-changelog-adr.md"
       ]
+    },
+    {
+      "id": "contenuti_nei_rami",
+      "path": "scripts/contenuti_nei_rami.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/contenuti_nei_rami.py --fetch",
+      "summary": "I file che esistono in un ramo o in una PR, chiuse comprese, e mai su main ne' per nome ne' per contenuto. Ogni riga deve avere un posto nel registro plans/contenuti-nei-rami.json; quelle senza posto sono il lavoro perso che si cerca (lotto 4i-2).",
+      "use_case": "«Si e' perso qualcosa nelle PR chiuse o nei commit spinti dopo un merge, che su main non e' mai arrivato?»",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [
+        "git"
+      ],
+      "args": [
+        {
+          "name": "--fetch",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scarica prima le teste di tutte le PR e i rami di origin (rete)."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se un file mai arrivato non ha un posto nel registro."
+        },
+        {
+          "name": "--base",
+          "type": "str",
+          "required": false,
+          "default": "origin/main",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il ramo di riferimento."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Report in JSON."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/contenuti-nei-rami.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ogni file mai arrivato ha un posto (o nessun ramo da misurare)",
+        "1": "righe senza posto (solo con --check) o registro malformato",
+        "2": "uso errato"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "A parita' di rami conosciuti dal clone il report e' identico; cambia quando cambiano i rami, per questo non e' un gate di CI."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true
     },
     {
       "id": "decisioni_dm",

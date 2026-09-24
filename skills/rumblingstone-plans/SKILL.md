@@ -56,9 +56,13 @@ sparse nelle PR mergiate e la storia si frammenta. Fonte delle regole:
 2. **Cerca per argomento, non per titolo.** Un piano che copre la tua richiesta
    può chiamarsi in un altro modo:
    `grep -ril "<parola chiave>" plans/*.md`.
-3. **Guarda anche le PR aperte.** Un piano può esistere e non essere ancora su
-   `main` — è successo con la #72, che stava in bozza da sei settimane con
-   dentro tre piani commerciali poi riscritti da zero da chi non l'aveva letta.
+3. **Guarda anche le PR aperte, e quelle chiuse.** Un piano può esistere e non
+   essere ancora su `main` — è successo con la #72, che stava in bozza da sei
+   settimane con dentro tre piani commerciali poi riscritti da zero da chi non
+   l'aveva letta. `python3 scripts/contenuti_nei_rami.py --fetch` elenca i file
+   di ogni ramo e PR mai arrivati su `main`, ognuno col suo posto in
+   `plans/contenuti-nei-rami.json`; `fase1.py` mostra quelli ancora aperti
+   accanto al file che stai per toccare.
 4. **Poi decidi, e scrivi quale delle tre è**:
 
 | Se… | Allora |
@@ -170,6 +174,11 @@ Prima di aprire (o dichiarare pronta) una PR che completa lavoro pianificato:
 - [ ] Se la PR introduce/tocca una skill: `./scripts/build-skills.sh
       --no-deploy` e `python3 scripts/validate_skills.py` verdi.
 - [ ] Nuova convenzione o scelta strutturale? → ADR in `plans/adr/`.
+- [ ] La PR si chiude **senza merge**, o sul suo ramo restano commit dopo il
+      merge? I file che non arrivano su `main` prendono una riga in
+      `plans/contenuti-nei-rami.json`, con lo stato e chi ne risponde
+      (`contenuti_nei_rami.py --check` verde). È così che si sono persi
+      `validate_skill_paths.py` (PR #1) e il soggetto della discesa (#72).
 
 ## 🤖 Enforcement automatico (ADR-0009)
 

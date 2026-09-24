@@ -32,7 +32,7 @@ e' eseguita quando questo output esiste.
     1 · il registro delle norme   «questa cosa la misura gia' qualcuno?»
     2 · l'algoritmo a strati      «quali skill devo avere aperte?»
     3 · i dati del repo           «cosa e' archivio, cosa e' superato, chi sono
-                                   i nomi propri?»
+                                   i nomi propri, cosa e' rimasto nei rami?»
     4 · le misure di oggi         «da che numero parto?»
 
 Una regex nuova viene **dopo** il passo 4, e va pubblicata con i suoi falsi
@@ -194,6 +194,38 @@ def espandi(modelli: "list[str]") -> "list[Path]":
     return tenuti
 
 
+def rami_accanto(files: "list[Path]") -> None:
+    """Il lavoro rimasto nei rami, prima di riscriverlo (lotto 4i-2).
+
+    «Qualunque piano nuovo rischia di riscriverne il contenuto: e' gia'
+    successo con la #72» (STATO-E-ORDINE ①). Qui si guarda se un ramo o una
+    PR, chiuse comprese, ha un file mai arrivato su `main` nella stessa
+    cartella di un bersaglio. Non ferma niente: lo mette in vista.
+    """
+    try:
+        import contenuti_nei_rami as cnr
+        refs = cnr.riferimenti("origin/main")
+        trovati = cnr.mai_arrivati("origin/main", refs) if refs else {}
+        esito = cnr.confronta(trovati, cnr.leggi_registro())
+    except Exception as exc:  # noqa: BLE001 - un clone senza rami non e' un errore
+        print(f"    ○ rami non misurati ({str(exc)[:60]}): "
+              "`python3 scripts/contenuti_nei_rami.py --fetch`")
+        return
+    cartelle = {f.relative_to(ROOT).parent.as_posix() for f in files}
+    # Solo cio' che e' ancora aperto: un file portato o superato ha gia' un
+    # posto, e in `plans/` «accanto» vorrebbe dire tutti i piani.
+    aperti = {v["percorso"] for v in esito["senza_posto"]} | set(
+        esito["per_stato"].get("da-decidere", []))
+    accanto = [p for p in sorted(aperti) if Path(p).parent.as_posix() in cartelle]
+    print(f"\n    Nei rami, {len(trovati)} file mai arrivati su main: "
+          f"{len(esito['senza_posto'])} senza posto, "
+          f"{len(esito['per_stato'].get('da-decidere', []))} in attesa del DM.")
+    for p in accanto:
+        print(f"    🌿 accanto a un bersaglio: {p}  ← {', '.join(trovati[p][:3])}")
+    if esito["senza_posto"]:
+        print("    ⚠️  righe senza posto: `python3 scripts/contenuti_nei_rami.py`")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("bersagli", nargs="+",
@@ -274,6 +306,7 @@ def main() -> int:
                 print(f"         {r[:150]}")
     if not archiviati:
         print("    ✅ Nessun bersaglio e' un archivio dichiarato.")
+    rami_accanto(files)
 
     # ── Passo 4 ──────────────────────────────────────────────────────────
     print("\n4 · LE MISURE DI OGGI — da che numero parti")

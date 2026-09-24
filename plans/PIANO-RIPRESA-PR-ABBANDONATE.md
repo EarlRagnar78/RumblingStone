@@ -1150,6 +1150,7 @@ Vale per **ogni** commit di **ogni** fase.
 | ~~D19~~ | F4 · 4f | ✅ **Risposta del DM il 2026-09-24, ed è un principio più largo della domanda**: *«la procedura dovrebbe essere quanto più automatizzata possibile: un DM normalmente non tocca affatto i file yml, al massimo se ha un'interfaccia scrive dei campi o seleziona i valori da un form già impostato»*. Quindi né lo scheletro da compilare né il derivato da rivedere a mano: il template è **derivato in automatico** dal prodotto, e ciò che resta di giudizio passa da un **modulo** a scelte. Procedura in §4.10.6, il via è **D21** |
 | D21 | F4 · 4f | **Si procede come in §4.10.6?** Il gruppo nuovo parte con un comando solo e un modulo a campi e scelte. Le proposte di fine sessione che oggi dicono «scrivi in `state.yaml`» diventano domande dello stesso modulo. Le risposte stanno in un JSON, e il modulo è solo la sua faccia: oggi il terminale, domani una pagina, senza toccare la logica. 🔵 Proposta: sì, con prima 4f-4 (il gruppo nuovo) e poi 4f-5 (le proposte di fine sessione), ognuno col suo commit |
 | D22 | F4 · 4i | **Cosa si fa dei file rimasti nei rami senza un posto?** Misurati in §4.11.2. Per ognuno si può **portarlo** su `main` com'era, datato; **dichiararlo superato**, scrivendo da cosa; **lasciarlo** nel ramo, scrivendo perché. Il caso che pesa è il `SOGGETTO-DISCESA-UNDERDARK-ARCHI-01-05` della #72: 773 righe sulla catena degli archi 01-05, sei revisioni con risposte del DM, e nessun documento su `main` lo nomina. La proposta è portarlo com'era in `campaign/lore/`, come per l'audit di level design. Per `agents.conf` la proposta è rifarlo sul codice di oggi, perché la matrice duplicata c'è ancora |
+| D23 | F4 · 4i | **Si attiva su `main` la protezione «Require branches to be up to date before merging»?** È l'unico pezzo della regola che hai chiesto di valutare (§4.11.4) che non sta nel repo: la CI di una PR gira sul `main` del momento del push, e se `main` cambia dopo la PR resta verde su una base che non c'è più. Con la protezione, prima del merge GitHub chiede di riallineare la PR e la CI rigira. Costo: un clic su «Update branch» prima di ogni merge, e un giro di CI in più. Si attiva in *Settings → Branches* del repository; da qui non si può né attivare né verificare |
 | ~~D20~~ | F4 · 4f-2 | ✅ **DECISA E ATTUATA il 2026-09-24, nello stesso commit.** Il DM: *«D20 ok ma non tralasciare nulla»*. Split per sezione come in §4.10.4: **528 righe su 528** ritrovate nelle due metà (controllate contro git da un test), nessuna duplicata, una sola parola spostata («ESCAPED», che la cronaca racconta già tre volte). Tredici rimandi aggiornati in undici file; restano sul nome vecchio i documenti datati (`plans/`, l'audit IP, la baseline del 21 settembre), come registro di quando sono stati scritti |
 
 ---
@@ -2544,7 +2545,7 @@ del DM. Il modulo gli risparmia di aprire un file e di scrivere YAML, non di
 decidere se l'agenda di Xal'thor, *«to seize Tordek's Bracieri Gemelli»*, vale
 anche per un tavolo dove Tordek non c'è.
 
-### 4.11 · Lotto **4i** — i rimandi fra backtick, e il contenuto rimasto nei rami `[4i-1 ✅ · 4i-2 ⬜]`
+### 4.11 · Lotto **4i** — i rimandi fra backtick, e il contenuto rimasto nei rami `[✅ chiuso il 2026-09-24 · 4i-1 · 4i-2 · il destino dei file è D22, la protezione del ramo è D23]`
 
 > **Classe R** (ricognizione) per la misura, **M** per le correzioni con una
 > sola risposta possibile. Le righe il cui destino è un giudizio sul contenuto
@@ -2640,7 +2641,7 @@ piani di ARC-07 e ARC-09, e sono riscritti; gli altri raccontano la storia dello
 split e restano. `campaign/misure/baseline-punteggi.json` lo nomina ancora ed è
 una misura datata: resta com'è.
 
-#### 4.11.2 · 4i-2 · Il contenuto rimasto nei rami (proposto)
+#### 4.11.2 · 4i-2 · Il contenuto rimasto nei rami
 
 Misurato il 2026-09-24 su **217 riferimenti** (rami e teste di PR, chiuse
 comprese): i file che esistono in un ramo e **non sono mai esistiti su `main`**
@@ -2658,8 +2659,69 @@ ADR-0007). **Senza posto**:
 | PR #72 | `plans/PIANO-LEVEL-DESIGN-E-INQUADRATURA-SCENICA.md` | ADR-0048 lo nomina come fonte del proprio lotto A1 <!-- validate-docs: ignore --> |
 | ramo `review-tournament-integration` | una versione di maggio del Giorno 3 di Dauth (228 righe) | il file su `main` è stato riscritto da zero a luglio (ARC09 lotto A, «i tre orfani»); le due versioni non sono mai state confrontate |
 
-Il destino di queste righe è la **D22**. 4i-2 costruisce lo strumento che rifà
-questa misura da solo e il registro che dà a ogni file un posto.
+Il destino di queste righe è la **D22**.
+
+#### 4.11.3 · 4i-2 · Com'è andato (2026-09-24)
+
+**Lo strumento.** `scripts/contenuti_nei_rami.py` rifà la misura qui sopra in
+quattro secondi. Un file è «mai arrivato» se su `main` non c'è mai stato né il
+suo percorso né il suo contenuto: un ADR rinumerato col testo identico non
+conta come perso, un file riscritto con un altro nome sì. `--fetch` scarica le
+teste di tutte le PR, chiuse comprese.
+
+**Il registro**, `plans/contenuti-nei-rami.json`, dà un posto a ogni riga: per
+ramo intero (la #99 e questa PR in volo, la #42 rifiutata, la #67 e la #109
+superate, la #143 portata, i rami di gruppo che sono partita) o per file (i
+quattro ADR della #72 portati con altri numeri, l'ADR-0015 rifiutato, i due
+piani commerciali assorbiti da `PIANO-VENDIBILITA`). Oggi: **65 file, 0 senza
+posto, 4 in attesa del DM**. `--check` esce 1 se ne compare uno nuovo senza
+posto; una voce che non trova più niente viene segnalata come scaduta, perché
+il file è arrivato o il ramo non c'è più.
+
+**Dove si vede senza cercarlo.** `fase1.py`, al passo 3, mostra i file ancora
+aperti nella stessa cartella del bersaglio. Provato sul piano dell'editor: esce
+`PIANO-LEVEL-DESIGN-E-INQUADRATURA-SCENICA.md` della #72, che è esattamente il
+lavoro che un piano nuovo sull'editor rischierebbe di riscrivere da zero.
+
+🐛 **Un test ha mentito al primo giro.** Il default di `leggi_registro()` era
+legato alla definizione, quindi `main()` leggeva sempre il registro del repo:
+il test «rosso senza posto» passava per il motivo sbagliato, e l'ha scoperto il
+test gemello «verde col posto». Dodici test, **7 mutazioni su 7** rosse sullo
+strumento e una sul filtro di `fase1.py`.
+
+⚠️ **Limiti dichiarati.** Vede i file, non le modifiche: un commit spinto dopo
+il merge che corregge un file già su `main` non compare (il commit `b5e04d2`
+della PR #1 toccava `AGENTS.md` e `sync-skills.sh`, ed è di questo tipo). E non
+è un gate di CI, di proposito: i rami cambiano per conto loro, e una PR
+diventerebbe rossa per il lavoro di un'altra.
+
+#### 4.11.4 · La regola chiesta dal DM: ha senso?
+
+La domanda: *«vedi se ha senso aggiungere questa nuova regola in modo che tutte
+le PR sono aggiornate con l'avanzamento dei piani, evitando regressioni o
+overdrive»*.
+
+**Una regola d'oro nuova no.** Ogni via da cui il difetto entrava ha adesso un
+meccanismo che non chiede disciplina:
+
+| Come si perdeva | Cosa lo vede adesso |
+|---|---|
+| una PR cita un file che un'altra PR ha tolto | `validate_docs --sorgenti` (4i-1), in CI su ogni PR |
+| un file resta su un ramo chiuso, o spinto dopo il merge | `contenuti_nei_rami.py` e il suo registro (4i-2) |
+| un piano nuovo riscrive lavoro che stava in una PR | `fase1.py` passo 3, cioè G6, che è già obbligatoria prima di toccare |
+
+Resta un buco che nessuno script del repo può chiudere. La CI di una PR gira
+sul `main` del momento del push: se `main` cambia dopo, la PR resta verde su
+una base che non c'è più, e il merge porta dentro la regressione. È successo a
+questa PR in piccolo: lo split di 4f-2 ha rotto tre rimandi che la CI non
+poteva vedere. Su GitHub la cura è un'impostazione del ramo `main`,
+*«Require branches to be up to date before merging»*: prima del merge la PR va
+riallineata e la CI rigira. Si attiva dalle impostazioni del repository, e da
+qui non si può né attivare né verificare. È la **D23**.
+
+L'«overdrive», cioè una PR che fa più di quanto il suo piano dichiara, ha già
+la sua regola: piano, `INDEX` e `CHANGELOG` nello stesso commit, bloccata in
+CI da `check_plans_discipline.py`. Non serve altro.
 
 ## Come si misura che il piano è finito
 

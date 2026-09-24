@@ -1965,6 +1965,42 @@
       "deterministic": true
     },
     {
+      "name": "contenuti_nei_rami",
+      "description": "«Si e' perso qualcosa nelle PR chiuse o nei commit spinti dopo un merge, che su main non e' mai arrivato?»\n\nI file che esistono in un ramo o in una PR, chiuse comprese, e mai su main ne' per nome ne' per contenuto. Ogni riga deve avere un posto nel registro plans/contenuti-nei-rami.json; quelle senza posto sono il lavoro perso che si cerca (lotto 4i-2).",
+      "use_case": "«Si e' perso qualcosa nelle PR chiuse o nei commit spinti dopo un merge, che su main non e' mai arrivato?»",
+      "invocation": "python3 scripts/contenuti_nei_rami.py --fetch",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "fetch": {
+            "type": "boolean",
+            "description": "Scarica prima le teste di tutte le PR e i rami di origin (rete)."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Esce 1 se un file mai arrivato non ha un posto nel registro."
+          },
+          "base": {
+            "type": "string",
+            "description": "Il ramo di riferimento."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Report in JSON."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ogni file mai arrivato ha un posto (o nessun ramo da misurare)",
+        "1": "righe senza posto (solo con --check) o registro malformato",
+        "2": "uso errato"
+      },
+      "deterministic": true
+    },
+    {
       "name": "decisioni_dm",
       "description": "«Che cosa sta aspettando da me, oggi? E come faccio a fidarmi che quell'elenco sia aggiornato?»\n\nLe decisioni aperte al DM: la fonte sono le tabelle marcate dentro i piani, l'aggregato di STATO-E-ORDINE §4 e' generato, e il drift fra le due cose e' rosso in CI.",
       "use_case": "«Che cosa sta aspettando da me, oggi? E come faccio a fidarmi che quell'elenco sia aggiornato?»",

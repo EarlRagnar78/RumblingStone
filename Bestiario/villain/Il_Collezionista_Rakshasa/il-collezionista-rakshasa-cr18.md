@@ -1,4 +1,4 @@
-# Il Collezionista (Maestro Varis "Seta-Argento") [POINTER — canonical file] [RIMANDO]
+# Il Collezionista [POINTER — canonical file] [RIMANDO]
 
 **Key stats**: → `Bestiario/villain/Il_Collezionista_Rakshasa/Il_Collezionista_Rakshasa.md` (il blocco sta lì).
 

@@ -155,3 +155,13 @@ Poiché non indossa armature, Therisol si affida a gingilli magici recuperati du
 *   **Doppia Voce:** Quando usa l'abilità *Egida del Fuoco Inverso* o il *Soffio*, la sua voce si sovrappone a quella maschile del fratello defunto.
 *   **Trauma dal Fuoco:** Nonostante la resistenza, il fuoco la terrorizza. Attiva la sua Egida al primo segno di fiamme magiche, anche se strategicamente non ottimale (es. contro un semplice dardo di fuoco), gridando ordini difensivi ai compagni.
 *   **Agile ma Fragile:** Con 44 PF a livello 8, non può reggere uno scontro prolungato in prima linea. Usa la sua alta CA (20) e mobilità per entrare in posizione, scaricare il soffio o attivare l'Egida per proteggere i "tank" del gruppo, e poi ritirarsi usando la balestra o incantesimi di supporto.
+---
+
+### **Nota di coerenza — la caccia al Collezionista** `[DM 2026-09-24]`
+
+La gilda del Collezionista vendette Theron e Ysolde ai salamandri della forgia
+nel Piano del Fuoco. Quando il Collezionista fuggì dalla Tana dei Minotauri
+(Pre-Arco 01), un monile di ossidiana lo portò **proprio lì**, alla forgia dove
+la sua gilda commercia. La caccia di Therysol e la fuga di lui sono la stessa
+strada: lei risale la rotta su cui è stata venduta, lui l'ha percorsa per
+salvarsi. Il suo odio per il fuoco e la sua vendetta puntano allo stesso posto.

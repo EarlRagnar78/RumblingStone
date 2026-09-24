@@ -111,8 +111,10 @@ The party descends through a chain of connected underground locations:
     PC was down **except the monk (Tordek)**, who could not see where he went.
     He carried away an **obsidian pendant** (or comparable magic item) that moved
     him elsewhere — another location in Faerûn, or another plane, temporarily.
-    → **Proposed resolution `[INFERRED — needs DM confirmation]`: the Plane of
-    Fire, the salamander forge where his guild trades.** Rationale: his guild
+    → **Destination: the Plane of Fire, the salamander forge where his guild
+    trades** `[DM 2026-09-24]` (the DM had delegated the choice on 2026-07-26 and
+    confirmed it here, noting that it also gives sense to Therysol's hunt).
+    Rationale: his guild
     *already* has a canonical planar route (Therysol was sold "to salamanders in
     the Fire Elemental plane, forced to serve at the forge"); obsidian is already
     tied to the Fire Plane in campaign canon; and it plants Arc 07 three arcs
@@ -472,7 +474,7 @@ and back to the surface for the Red Hand campaign mainline.
 [Minotaur Lair — Pre-Arc 01, unnumbered]
   ├── Source: Expedition to Undermountain (p.165), Underdark sourcebook
   ├── Maur (Underdark native, CR 11, defeated)
-  ├── Il Collezionista (Rakshasa + bonded basilisk, ESCAPED)
+  ├── Il Collezionista (Rakshasa + bonded basilisk, ESCAPED → Plane of Fire, temporarily)
   │   └── Later allies with Sonjak's drow guild → provides evil artifacts
   └── Cristal Warriors (Underdark p.93) — also encountered in 01
         ↓

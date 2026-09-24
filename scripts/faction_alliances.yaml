@@ -44,7 +44,7 @@ factions:
   - id: rakshasa
     label: "Il Collezionista e cultisti"
     baseline_env: [ urban, any ]
-    leader: "Maestro Varis Seta-Argento (Il Collezionista)"
+    leader: "Il Collezionista (Rakshasa) — tramite Varis «Seta-Argento», suo intermediario a Rethmar"
   - id: ghostlord-undead
     label: "Ghostlord / Lich del Thornwaste"
     baseline_env: [ forest, any ]

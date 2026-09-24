@@ -213,7 +213,7 @@ The party descended through these locations in order, connected by passages and 
 [Minotaur Lair — Pre-Arc 01, unnumbered]
   └── First Underdark area below Hammerfist
   └── Maur (Underdark native, CR 11, defeated)
-  └── Il Collezionista (Rakshasa + basilisk, ESCAPED)
+  └── Il Collezionista (Rakshasa + basilisk, ESCAPED → Plane of Fire)
   └── Cristal Warriors (from Underdark p.93)
   └── Adapted from Expedition to Undermountain (p.165) and Underdark sourcebook
         ↓
@@ -299,7 +299,7 @@ The Neverlight Grove content is adapted from **Out of the Abyss** (D&D 5e) conve
 | Villain | Race/Type | CR | Status | Location |
 |---|---|---|---|---|
 | Grell Patriarch | Aberration | ~8 | Defeated | 01_LaMiniera |
-| Il Collezionista | Rakshasa | ~12 | **ESCAPED** | Unknown — allied with drow, provides evil artifacts (Pre-01) |
+| Il Collezionista | Rakshasa | ~12 | **ESCAPED** | Fled to the Plane of Fire (temporarily, `[DM 2026-09-24]`); now allied with drow, provides evil artifacts (Pre-01) |
 | Maur | Underdark native | ~10 | Defeated | Minotaur Lair (Pre-Arc 01) |
 | Cristal Warriors | Construct/Elemental | ~7 | Defeated | Minotaur Lair + 01_LaMiniera (from *Underdark* p.93) |
 | Sonjak | Drow Cleric Matrona | ~14 | Active | Underdark/Surface ops |

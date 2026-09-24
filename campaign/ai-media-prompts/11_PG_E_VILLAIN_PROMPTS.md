@@ -131,8 +131,8 @@ lighting, realistic textures on dragon scales and scratched iron.
 [ASPECT RATIO] 4:3 (Portrait)
 ```
 
-### 📸 3.2 — VARIS "SETA-ARGENTO" (Il Collezionista)
-*Il Mercante Planare, L'Ombra Manipolatrice*
+### 📸 3.2 — IL COLLEZIONISTA (Rakshasa)
+*Il Signore del Commercio, L'Ombra Manipolatrice* — non Varis «Seta-Argento», che è il suo intermediario umano a Rethmar (correzione DM 2026-09-24)
 
 ```
 [PROMPT IMMAGINE BASE]

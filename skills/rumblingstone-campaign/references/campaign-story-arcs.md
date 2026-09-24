@@ -40,7 +40,7 @@ For full narrative details, see `campaign/lore/campaign-chronicle.md` (this tabl
 |---|---|---|---|---|---|
 | Grell Patriarch | Aberration | ~8 | ☠️ Defeated | 01_LaMiniera | 01 |
 | Maur | Underdark native | ~10 | ☠️ Defeated | Minotaur Lair | Pre-01 |
-| Il Collezionista | Rakshasa | ~12 | 🏃 **ESCAPED** | Minotaur Lair → Drow alliance | Pre-01 → 09 |
+| Il Collezionista | Rakshasa | ~12 | 🏃 **ESCAPED** | Minotaur Lair → Plane of Fire (temporarily) → Drow alliance | Pre-01 → 09 |
 | Undead Beholder | Undead | ~13 | ☠️ Defeated | 03_la Cittadella | 03 |
 | Drow Sorcerer + Retriever | Drow slaver | ~11 | ☠️ Defeated | 03_la Cittadella | 03 |
 | Fauci di Palude | Black Dragon (Adult Advanced) | 15 | ☠️/🏃 **Conditional** (D10: default flees <50hp gravely wounded, may return; PG-kill branch = dies) | Battle of Hammerfist | 08 |

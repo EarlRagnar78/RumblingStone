@@ -27,7 +27,7 @@ pyyaml>=6.0
 # ── opzionali, con degradazione dichiarata ───────────────────────────────
 # build_image_derivatives.py (stampa come installarla ed esce 1) e
 # build_booklet_html.py (le immagini restano a risoluzione piena).
-Pillow>=10.0
+Pillow>=12.3.0
 
 # compress_skills.py e measure_tokens.py. Senza, entrambi ripiegano su una
 # stima (parole × 1,3 e caratteri ÷ 4): il numero peggiora, il comando parte.

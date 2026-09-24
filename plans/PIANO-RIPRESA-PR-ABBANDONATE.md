@@ -1146,6 +1146,7 @@ Vale per **ogni** commit di **ogni** fase.
 | ~~D16~~ | F4 · 4d-2 | ✅ **CHIUSA E ATTUATA il 2026-09-16, nello stesso commit.** Il DM ha scelto l'enumerazione **con il compagno**: `attivo · latitante · neutralizzato · morto · ignoto`, più `reversibile`. ⚒️ `neutralizzato` copre il caso più frequente al tavolo — sconfitto ma non morto — e senza di lui il DM dovrebbe scrivere `morto` per non scrivere `attivo`. 🔴 **E `reversibile` è la metà che conta**: in questa campagna un morto torna (il Ghostlord nasce da un morto, Sal è protetto da un paradosso auto-consistente, Hella è morta in attesa del rito), quindi registrare «morto» senza dire se è definitivo è registrare **meno di quel che il canone sa**. La regola **R9** lo pretende. ⚠️ `state_apply` scrive `stato` ma **non** `reversibile`: il primo è la lettura letterale del log, il secondo è una decisione narrativa, e R9 la chiede al DM alla prima esecuzione — provato sul canone vero. 🔎 **§4 conoscenze è stata esclusa dopo averla misurata**, benché il DM avesse chiesto di includerla: tre righe non sono persone e tre persone compaiono sotto due nomi, quindi `stato` lì vorrebbe dire un valore privo di senso in tre casi e due copie divergenti in altri tre. Va nell'anagrafica del lotto della chiave. Vedi **§4.8.9** |
 | ~~D17~~ | F4 · 4d-4 | ✅ **CHIUSA il 2026-09-17 — e la domanda aveva una premessa falsa, trovata dal DM.** Era posta come «i due villain senza scheda: si scrivono, si contano o escono da §3?». 🐛 **Tre delle quattro voci che avevo dichiarato senza scheda ce l'avevano.** Il DM: *«controlla bene negli archi o nel bestiario se c'è qualcosa magari annegato come prosa»*. **Zalkatar** ha uno statblocco a **GS 13** (14d4+70, CA 24) in `09_…/P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md`; **Saarvith + Regiarix** ne hanno uno a **GS 13** in `09_…/P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`, e il file `FASE4` accanto dichiara esplicitamente *«le statistiche sono lì; questo è la regia dello scontro»*; il **Cerchio Druidico** ne ha uno in `Bestiario/mostri/cerchio-druid7-cr7.md`, marcato [ACCEPTED — DM-canon 2026-05-05]. L'errore non è stato non trovarle: ho cercato **solo dentro `Bestiario/`**, e allargando la ricerca ho **troncato l'output a sei righe** concludendo da una lista tagliata. ✅ Non c'era niente da scrivere né da togliere: c'era da **cercare meglio**. Resta **un** buco su 28 (`lathander-mask`), ed è corretto. ⚠️ **Conseguenza di progetto**: una scheda non vive per forza nel `Bestiario/`, e un cancello tarato lì avrebbe continuato a dare per mancanti due boss da GS 13. Nasce **R13**, che mette alla prova ogni buco dichiarato contro tutto il repo. Vedi **§4.8.10** e [ADR-0053](adr/ADR-0053-la-chiave-verso-il-bestiario-si-dichiara.md) |\n| ~~D6~~ | F1 | ✅ **decisa 2026-09-04: ridisegnata.** `…P1C` mappa 3 dichiarava 40×40 e aveva righe da 24 a 26 celle: rifatta **26×29**, nessuna coordinata del testo cambiata |
 | ~~D18~~ | F4 · 4d-6 | ✅ **DECISA E ATTUATA il 2026-09-17, nello stesso commit.** Il DM: *«spezzarli per intestazione verificando che non esistano già»*. Il catalogo portava **19 record intitolati al documento** invece che alla creatura, perché `build_monster_catalog.py` faceva **un record per file** e prendeva il primo GS: «Parte 2A – Torre Invisibile», GS 10. **19 → 8**, pool **372 → 397**. 🔎 Quel che ne è uscito non sono comparse: gli **otto fantini del Palio**, i **Sicari di Sonjak**, il Gonfaloniere Aldemar Vosk, la Drow Chierica di Lolth, gli esempi d'onda di Rethmar — tutti chiusi dentro un record solo. ⚠️ **La deduplica è ancorata a un fatto dichiarato**: si confrontano i nomi **solo** dentro l'insieme delle voci del Bestiario che citano *quel* documento come `Source`. È il modo di rispettare ADR-0053 (un matcher permissivo traveste l'ignoranza) senza rinunciare a dedurre: il legame documento↔voce l'ha scritto qualcuno, la somiglianza sceglie solo *quale* voce sta per *quale* intestazione. 🔴 **E il rischio opposto ha il suo presidio**: il record di file sparisce solo quando **ogni** creatura che il documento nomina ha già la sua voce — gli otto che restano sono quelli dove non è vero, e toglierli significherebbe meno rumore e **meno creature**. 🐛 Due difetti nei nomi generati, trovati misurando: la numerazione del Palio è **multi-livello** (`### 3.2 Drow Chierica`) e lasciava nomi che cominciavano per cifra, e la coda tagliata lasciava parentesi mai chiuse («Aldemar Vosk (LN»). 🔎 **E il cancello nuovo ha trovato un errore mio al primo giro**: contava **due** «Skullcrusher il Nero», perché la voce che avevo appena scritto puntava al file che il drago lo *nomina* soltanto — i numeri stanno in `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md`. Correggendo il puntamento è poi caduto fuori che `P6-INTEGRAZIONE` restava scoperto, e dentro c'erano **Re Thorek I** (Grr 16, il re di mille anni prima che si inginocchia davanti alla Corona) e **Durin Hammerfist**, l'antenato di Othrek: due PNG di canone che non aveva nessuno. Vedi **§4.8.12** e [ADR-0054](adr/ADR-0054-un-archivio-non-e-una-copia.md) |
+| D19 | F4 · 4f | **Il template di `state.yaml` per un gruppo nuovo: scheletro o derivato?** Oggi il reset non tocca `state.yaml` e il gruppo nuovo eredita 750 righe del primo tavolo (§4.10.0). 4f-1 applica lo **scheletro** della #99: `png` resta (è prodotto: 28 voci con la chiave del Bestiario), ogni altra sezione riparte da un segnaposto dichiarato, March Day 1. L'alternativa è un template **derivato** che tenga le agende preparate dei 13 villain coi clock a zero e gli archi tutti «da giocare»: è più utile a chi riparte, ma ogni agenda porta scritto ciò che il primo tavolo ha già cambiato, quindi è una revisione riga per riga (classe **K**). 🔵 Proposta: lo scheletro adesso, il derivato solo se un secondo tavolo parte davvero |
 
 ---
 
@@ -2338,6 +2339,67 @@ rosso fra 4e-1 e 4e-2.
 dovrà conoscere `state.yaml`, `state-changelog.md` e adesso anche il
 front-matter), **4g** (schede PG a dati), **4h** (`groups/<slug>/`, PR
 dedicata).
+
+### 4.10 · Lotto **4f** — prodotto e partita `[4f-0 ✅ audit · 4f-1 ⬜ · 4f-2 ⬜ · 4f-3 ⬜]`
+
+> `[C costruzione, con un sotto-lotto K (4f-2) · Opus, sessione principale ·
+> alto · un test che esegue il reset su una copia dei file veri e dimostra che
+> il gruppo nuovo **non eredita niente** della partita, e che la CI resta verde]`
+
+#### 4.10.0 · FASE 1 · Cosa eredita oggi un gruppo nuovo (2026-09-24)
+
+`scripts/new-campaign-group.sh` eseguito in un clone usa-e-getta, sul `main` di
+oggi:
+
+| Dopo il reset | Esito |
+|---|---|
+| `state.md` | copiato da `templates/state-blank.md`, che **non ha nessuno** dei 10 marcatori `gen:state:` → `render_state --check` **rosso**: la CI del gruppo nuovo fallisce al primo push |
+| `state.yaml` | **non toccato**: 750 righe del primo tavolo, 22 archi, 4 PG, 8 artefatti, 13 villain, e `validate_state` le dà per valide |
+| `state-changelog.md` | **non toccato**: 1.195 righe di storico del primo tavolo |
+| `lore/campaign-history.md` | **non toccato**: 630 righe, metà premessa e metà cronaca |
+| `recaps/` | **non toccati**: un recap e due `.hb.md`, compresa la cronologia |
+| `DM-DOSSIER.hb.md` | **non toccato**: è generato da `state.md` del primo tavolo |
+| `sessions/` | ✅ svuotato |
+
+🔴 **E ADR-0050 §7 dice il contrario.** L'ADR, accettata e recuperata in 4d-1,
+fissa la regola (il **prodotto** resta, la **partita** si azzera da template),
+decide lo split di `campaign-history.md` in premessa e cronaca, e nomina il
+presidio: *«`test_new_group.py` verifica che ogni file di stato sia coperto dal
+reset»*. Su `main` quel test **non esiste**, come i template e lo split. Il
+recupero di 4d-1 ha portato l'ADR e non il lotto che la attuava (G2-quater della
+#99, `c825d6d`).
+
+**Fuori da 4f, dichiarato:**
+
+- `PG/` (schede e immagini dei quattro PG) è partita, ma è il lotto **4g**.
+- Gli archi e il Bestiario sono scritti **per questi quattro PG**: artefatti col
+  nome del portatore, missioni personali. È prodotto e il reset non lo tocca. Un
+  gruppo con altri personaggi ha un problema di contenuto, non di infrastruttura.
+- `campaign/misure/` (i campioni del κ) è uno strumento del repo, non partita.
+
+#### 4.10.1 · Il taglio
+
+| | Sotto-lotto | Classe | Cosa produce |
+|---|---|---|---|
+| **4f-1** | la partita come dato | C | un elenco unico dei file di partita e del loro template, letto dallo script di reset e dal test; `state-blank.md` coi marcatori, `state-blank.yaml`, `state-changelog-blank.md`; il reset che rigenera e **valida prima di dichiararsi finito**; `test_new_group.py`, il presidio che l'ADR promette |
+| **4f-2** | lo split di `campaign-history.md` | **K** | `campaign-premise.md` (prodotto) e `campaign-chronicle.md` (partita), con la regola di ADR-0050 §7 applicata sezione per sezione e nessuna riga persa; i rimandi aggiornati |
+| **4f-3** | documenti e chiusura | M | quickstart, playbook §7, manifest (anche `state_apply`, che non dichiara `state.yaml` e `state-changelog.md` fra le uscite), tracciatura |
+
+#### 4.10.2 · La domanda che resta al DM: D19
+
+`state.yaml` mescola prodotto e partita dentro lo stesso record. `png` è prodotto puro
+(id, nome, scheda nel Bestiario) e passa al gruppo nuovo com'è. Le agende dei
+villain, i waypoint del March Clock e le righe degli archi sono **testo del
+primo tavolo**: «Skull Gorge bridge, crossed intact (PG did NOT sabotage)».
+
+- **Scelta di default in 4f-1**: lo **scheletro** della #99. `png` resta, ogni
+  altra sezione riparte da un record segnaposto dichiarato come tale, March Day
+  1, arrivo a Rethmar al Day 42. È la lettura di ADR-0050 §7 e l'unica che non
+  inventa canone.
+- **D19**: preferisci un template **derivato**, che tenga le agende preparate
+  dei 13 villain coi clock a zero, e gli archi tutti «da giocare»? Costa una
+  revisione riga per riga (classe **K**), perché ogni agenda va ripulita da ciò
+  che il primo tavolo ha già cambiato.
 
 ## Come si misura che il piano è finito
 

@@ -228,6 +228,14 @@ giusta si scopre usandolo, e poi si fissa con un test d'approvazione. La prosa
 di gioco non si progetta con i test: si misura con `misura_craft` e con la
 self-check di `rumblingstone-narrative-style`.
 
+**7 · E il BDD?** Misurato il 2026-09-24 su `gruppo nuovo`, su richiesta del DM:
+stessi 16 difetti trovati su 16, +42% di righe, +45% di tempo, 3 MB di
+dipendenze contro ADR-0037; il guadagno è una specifica leggibile senza aprire
+Python. La proposta è tenerne la pratica senza il framework: scenari
+Dato/Quando/Allora qui in §4, i test che li citano, un gate che li tiene
+allineati. Numeri e ragioni in
+[RICERCA-BDD-O-TDD-2026-09](RICERCA-BDD-O-TDD-2026-09.md); decide la **D6**.
+
 ### Fase 0 · Le decisioni prima del codice
 
 #### ⬜ 0a · ADR-0068, il menu è un guscio e ogni modulo ha un gemello in JSON
@@ -242,8 +250,8 @@ Classe **C**. Tre schemi JSON versionati in `scripts/schemas/`: il modulo (le
 domande), le risposte, il menu. Il modulo di `dm.py gruppo nuovo` è il primo
 esempio vero, perché esiste già (§5.0, punti 1 e 2).
 
-#### ⬜ 0b · Le risposte del DM a D1-D5
-`[engine: DM · effort: — · qualità: le cinque righe barrate in §8]`
+#### ⬜ 0b · Le risposte del DM a D1-D6
+`[engine: DM · effort: — · qualità: le sei righe barrate in §8]`
 
 ### Fase 1 · La chiusura che non lascia niente a mano
 
@@ -394,6 +402,7 @@ test che non hanno bisogno di una tastiera.
 | D3 | F2 · 2d | **Chi scrive la prosa di gioco che manca** (interazioni dei PNG, testo degli handout, echi)? (a) il DM, o una sessione di agente con le skill, partendo dal brief; (b) una bozza del ponte di ADR-0067, che riapre il lotto E-bis escluso il 2026-07-20. Proposta: (a) adesso, (b) da rivalutare dopo il collaudo |
 | D4 | F3 · 3a | **Che menu?** Numerato in testo semplice (libreria standard, funziona ovunque e si avvolge facilmente) oppure a schermo intero con `curses` (che su Windows non c'è). Proposta: numerato |
 | D5 | F2 · 2c | **Le immagini mancanti si generano durante la preparazione?** Serve ComfyUI sulla macchina del DM e minuti per immagine. Proposta: la preparazione le **elenca** e lancia `comfyui_batch` solo se il DM lo chiede |
+| D6 | F0 · 0c | **BDD con un framework, o solo la sua pratica?** Misurato in [RICERCA-BDD-O-TDD-2026-09](RICERCA-BDD-O-TDD-2026-09.md): `behave` trova gli stessi 16 difetti su 16 del TDD, con +42% di righe, +45% di tempo e 3 MB di dipendenze contro ADR-0037; in cambio il `.feature` si legge senza aprire Python. (a) la pratica senza framework: scenari con identificatore in §4, test che li citano, un gate stdlib che li tiene allineati; (b) `pytest-bdd` con un'eccezione ad ADR-0037; (c) niente, come oggi. Proposta: (a) |
 
 ---
 
@@ -408,7 +417,7 @@ test che non hanno bisogno di una tastiera.
 
 ## Checklist di avanzamento
 
-- ⬜ Fase 0 · 0a ADR-0068 · 0c i contratti versionati · 0b risposte a D1-D5
+- ⬜ Fase 0 · 0a ADR-0068 · 0c i contratti versionati · 0b risposte a D1-D6
 - ⬜ Fase 1 · 1a motore dei moduli · 1b proposte → domande (ex 4f-5) · 1c cronaca · 1d catena di chiusura
 - ⬜ Fase 2 · 2a controllo e turno del mondo · 2b ricognizione · 2c inventario · 2d brief di scrittura · 2e manifest
 - ⬜ Fase 3 · 3a menu testuale · 3b menu in JSON

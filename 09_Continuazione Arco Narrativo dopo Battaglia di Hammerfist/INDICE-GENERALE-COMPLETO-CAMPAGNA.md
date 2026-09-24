@@ -10,7 +10,7 @@
 
 This directory contains **74 markdown files** + **6 image files** (+ 2 new PNG files in `/Bestiario/png/Lorana/` and `/Bestiario/png/Consiglio_Rethmar/`).
 All location names use Cannath Vale equivalents (Rethmar, Shaarcah Forest, etc.).
-See `skills/dnd-35-rules/references/fr-cannath-vale.md` for the full RHoD→Cannath Vale mapping.
+See `skills/forgotten-realms-lore/references/fr-cannath-vale.md` for the full RHoD→Cannath Vale mapping.
 
 **Legend:** ✅ = Content complete | 📝 = Empty placeholder (TODO) | ⚠️ = Needs integration | ⚠️ storico/deprecato = brainstorm pre-canone, non normativo
 
@@ -24,14 +24,14 @@ File dedicati in `Bestiario/villain/` e `Bestiario/png/`. Ogni cartella contiene
 |---|---|---|---|---|
 | **Il Collezionista (Rakshasa)** | `Bestiario/villain/Il_Collezionista_Rakshasa/Il_Collezionista_Rakshasa.md` | 17–19 | Shadow mastermind; manipola Varis, Sal, Sonjak | 5/8 |
 | **Salvatore "Sal" / Vatore** | `Bestiario/villain/Salvatore/Salvatore.md` | 14 | Spia temporale; mercante del deserto; fornitore statue vive | 0/6 |
-| **Azarr Kul** | `Bestiario/villain/Azarr_Kul/Azarr_Kul.md` | 15 | Alto Wyrmlord di Tiamat; boss Fase 3 Rethmar (combatte a terra — Tyrgarun è un incontro separato, non una cavalcatura, D11 v2) | 9/18 |
+| **Azarr Kul** | `Bestiario/villain/Azarr_Kul/Azarr_Kul/Azarr_Kul.md` | 15 | Alto Wyrmlord di Tiamat; boss Fase 3 Rethmar (combatte a terra — Tyrgarun è un incontro separato, non una cavalcatura, D11 v2) | 9/18 |
 | **Sonjak / Matrona Sajak** | `Bestiario/villain/Sonjak/Sonjak.md` | 13 | Matrona Drow, comanda forze sotterranee; datore di lavoro di Sal | 4/8 |
-| **Conte Valerius** | `Bestiario/villain/Conte_Valerius/Conte_Valerius.md` | 6/14★ | Villain politico; finanzia la Mano Rossa; non si batte in combat | 2/8 |
+| **Conte Valerius** | `Bestiario/villain/Conte_Valerius/Conte_Valerius/Conte_Valerius.md` | 6/14★ | Villain politico; finanzia la Mano Rossa; non si batte in combat | 2/8 |
 | **Maestro Varis "Seta-Argento"** | `Bestiario/png/Varis_Seta_Argento/Varis_Seta_Argento.md` | 6 | Broker urbano Rethmar; anello della catena statue vive | — |
 | **Ghostlord / Zeth il Murato** | `Bestiario/villain/Ghostlord/Ghostlord.md` | 13 | Lich druidico Thornwaste; alleato o nemico; NPC di Hella | — |
-| **Xal'thor** | `Bestiario/villain/Xal_thor/Xal_thor.md` | 14 | Comandante Illithid (invasione psionica, NON Githyanki — vedi Vaereth); attacca Torneo Giorno 3 (fisso) | Fixed |
-| **Therysol** | `Bestiario/png/Therysol/Therysol.md` | 9 | Alleata Tiefling Mezzo-Drago; caccia Il Collezionista | — |
-| **Capitana Lorana** | `Bestiario/png/Lorana/Lorana.md` | 7 | PNG secondaria; guida rifugiati; voce non ufficiale Consiglio; NPC di riconnessione Arc 00 | — |
+| **Xal'thor** | `Bestiario/villain/Xal_thor/Xal_thor/Xal_thor.md` | 14 | Comandante Illithid (invasione psionica, NON Githyanki — vedi Vaereth); attacca Torneo Giorno 3 (fisso) | Fixed |
+| **Therysol** | `Bestiario/png/Therysol/Therysol/Therysol.md` | 9 | Alleata Tiefling Mezzo-Drago; caccia Il Collezionista | — |
+| **Capitana Lorana** | `Bestiario/png/Lorana/Lorana/Lorana.md` | 7 | PNG secondaria; guida rifugiati; voce non ufficiale Consiglio; NPC di riconnessione Arc 00 | — |
 | **Consiglio di Rethmar** | `Bestiario/png/Consiglio_Rethmar/Consiglio_Rethmar.md` | — | Organo collegiale 7 membri; 3 sedute Day 30/33/35; resa default senza intervento PG | — |
 
 ★ Conte Valerius GS 6 in combattimento fisico / GS 14 effettivo come villain politico-legale
@@ -406,7 +406,7 @@ lecito (metà al Palio, metà alle sedute del Consiglio).
 | File | Tipo |
 |---|---|
 | `Bestiario/png/Consiglio_Rethmar/Consiglio_Rethmar.md` | Scheda organo collegiale — 7 membri, agende, meccanica voto |
-| `Bestiario/png/Lorana/Lorana.md` | Scheda PNG secondaria — capitana rifugiati, voce campo |
+| `Bestiario/png/Lorana/Lorana/Lorana.md` | Scheda PNG secondaria — capitana rifugiati, voce campo |
 
 **Contenuti:**
 

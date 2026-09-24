@@ -541,7 +541,7 @@ Esiste (o va creato): `scripts/new-campaign-group.sh` che automatizza 7.1 e 7.2 
 |---|---|
 | Modificare file di arco (`09_.../*.md`) durante la sessione | Solo appunti nel draft; modifiche scenario in PLAN MODE tra sessioni |
 | Committare senza aggiornare `state.md` | `state.md` **deve** riflettere l'ultimo stato prima del commit |
-| Modificare `00_Red Hand Of Doom/` originale (AP canon) | Se serve una variante, crea file adattamento in `campaign/lore/rhod-adaptations.md` |
+| Modificare `00_Red Hand Of Doom/` originale (AP canon) | Se serve una variante, documentala in `skills/rumblingstone-campaign/references/campaign-coherence.md` (sede canonica degli adattamenti RHoD) |
 | Tenere lo stato di campagna "nella testa" | Tutto deve stare in `state.md` — alla 20ª sessione non ricordi dettagli del Day 14 |
 | Dimenticare il changelog in §8 | Un one-liner sempre, anche per cambi piccoli |
 | Far "rivelare" a un PNG qualcosa che non ha mai imparato in-fiction | Controlla `state.md §4 Open NPC Knowledge State` prima |
@@ -554,7 +554,7 @@ Esiste (o va creato): `scripts/new-campaign-group.sh` che automatizza 7.1 e 7.2 
 ## §9 — Riferimenti veloci
 
 - **Coerenza canoniche**: `skills/rumblingstone-campaign/references/campaign-coherence.md`
-- **Regole d'adattamento RHoD**: `campaign/lore/rhod-adaptations.md` (se esiste) + `campaign/lore/house-rules.md`
+- **Regole d'adattamento RHoD**: `skills/rumblingstone-campaign/references/campaign-coherence.md` (canonico) + `campaign/lore/house-rules.md`
 - **DM strategy meta**: `skills/rumblingstone-campaign/references/campaign-dm-strategy.md`
 - **Toolkit espansione**: `skills/rumblingstone-campaign/references/dm-expansion-toolkit.md`
 - **Fazioni FR**: `skills/forgotten-realms-lore/references/fr-factions.md`

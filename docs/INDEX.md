@@ -48,6 +48,7 @@ Contratto macchina e vista umana — **generati** dal manifest, sempre allineati
 | [`docs/audit/AUDIT-REPORT.md`](audit/AUDIT-REPORT.md) | Report d'audit degli script (findings azionabili) |
 | [`docs/audit/SCORECARD.md`](audit/SCORECARD.md) | Scorecard 12-assi per script |
 | [`docs/audit/AUDIT-DERIVAZIONE-IP-CAMPAGNA.md`](audit/AUDIT-DERIVAZIONE-IP-CAMPAGNA.md) | Quanto il testo di campagna **nomina** cose di altri, per arco e per 1.000 parole — misura, non parere legale |
+| [`docs/audit/AUDIT-LEVEL-DESIGN-E-INQUADRATURA.md`](audit/AUDIT-LEVEL-DESIGN-E-INQUADRATURA.md) | Scarto fra il toolkit mappe/immagini e il livello di level design richiesto (2026-07-26, dalla PR #72, misure non rifatte) — fonte citata da ADR-0040 e ADR-0048 |
 
 ## 4. Governance & decisioni (ADR)
 

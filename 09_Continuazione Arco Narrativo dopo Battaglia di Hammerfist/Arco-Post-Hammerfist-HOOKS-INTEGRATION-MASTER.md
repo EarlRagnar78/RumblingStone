@@ -334,7 +334,7 @@ Sintesi rapida per i 4 PG:
 - **Hook Thorik scena (lettera Brenna + intel):** `Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md`
 - **Hook Ghostlord (carovana profughi):** `Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md`
 - **Cerimonia delle 100 Asce (zona principale):** `08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md`
-- **PNG Lorana (riserva profughi a Rethmar):** `Bestiario/png/Lorana/Lorana.md`
+- **PNG Lorana (riserva profughi a Rethmar):** `Bestiario/png/Lorana/Lorana/Lorana.md`
 - **Battle of Hammerfist final phase:** `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md`
 - **Sacred Forest (P1) quest:** `Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md`
 - **Tournament (P2B) arc:** HUB in `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md` (dettaglio in `...Tordek-PARTE1-Giorno1-Preliminari.md` + `PARTE2-Giorno2-Semifinali.md` + `PARTE3-Giorno3-Finale-e-Invasione.md`)

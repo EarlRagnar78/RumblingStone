@@ -178,7 +178,7 @@ When creating custom items for the RumblingStone campaign, consider:
 
 **Red Hand of Doom specific items** (adapt from RHoD sourcebook, not reproduce):
 - Wyrmlord equipment: Leaders carry magical arms; specific items should come from
-  your physical RHoD book. Document them in `campaign/lore/rhod-adaptations.md`.
+  your physical RHoD book. Document them in `skills/rumblingstone-campaign/references/campaign-coherence.md`.
 - Tiamat cult items: Black/red coloration; fire or shadow attuned
 
 **Pricing reference**: See `references/items.md` for standard pricing formulas.

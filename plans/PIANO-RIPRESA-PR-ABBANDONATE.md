@@ -601,7 +601,7 @@ prendono **uno alla volta**, ciascuno col suo commit e i suoi gate.
 
 | # | Lotto | Cosa porta | Perché in questa posizione |
 |---|---|---|---|
-| 4a | **G2** — `validate_docs.py` | gate bloccante sulla deriva doc↔realtà | **Indipendente da tutto.** Chiude un difetto reale: `AGENTS.md` documentava `campaign/npcs/`, `locations/`, `encounters/` — **nessuna delle tre è mai esistita**. Ed è progettato attorno ai falsi positivi: alla prima esecuzione **9 hit di cui 4 falsi**, corretti nel validatore e non nei documenti |
+| 4a | **G2** — `validate_docs.py` | gate bloccante sulla deriva doc↔realtà | **Indipendente da tutto.** Chiude un difetto reale: `AGENTS.md` documentava `campaign/npcs/`, `locations/`, `encounters/` — **nessuna delle tre è mai esistita**. Ed è progettato attorno ai falsi positivi: alla prima esecuzione **9 hit di cui 4 falsi**, corretti nel validatore e non nei documenti <!-- validate-docs: ignore --> |
 | 4b | **G3** — link, path locali e un ADR | **22 difetti veri** (la stima «18 su 241» era di un mese prima e sbagliata in tutte le cifre) · 7 file con path dentro un checkout personale | ⚠️ **non era igiene pura**: uno dei link rotti citava una decisione mai registrata, e recuperarla ha reso il lotto **K** |
 | 4c ✅ | **G1** — i due tempi di `state.md` | §1 collocava i PG **dopo Hammerfist** mentre §0 marca l'arco 08 `⬜ NON giocato` | ⚠️ tocca il canone, ma **non cancella niente: etichetta**. Chiuso il 2026-09-12 — vedi **§4.2-quater**: due costi risultavano **versati senza essere stati giocati**, e il ridisegno dei Doni che ne è nato è una **proposta separata**, non canone |
 | 4d | **G2-bis** — ADR-0017, `state.yaml` | i fatti come dati, `state.md` **generato** | il pezzo grosso. Vedi 4.3 |
@@ -609,6 +609,7 @@ prendono **uno alla volta**, ciascuno col suo commit e i suoi gate.
 | 4f | **G2-quater** — prodotto e partita | il reset per gruppo nuovo **perdeva**: azzerava `state.md` e `sessions/` e lasciava `state.yaml`, `state-changelog.md`, `campaign-history.md` e i recap al gruppo dopo | dipende da 4d/4e |
 | 4g | schede PG a dati | `PG/schede/*.yaml` + `.md` generati | oggi le schede PG **non esistono come dato** da nessuna parte |
 | 4h | ADR-0018 — `groups/<slug>/` | multi-gruppo per directory invece che per branch | **PR dedicata**, come dice la #99 stessa |
+| 4i | **G3-bis** — rimandi fra backtick e contenuti rimasti nei rami | il gate vede i percorsi citati fra backtick in tutti i sorgenti; un registro dà un posto a ogni file che esiste in un ramo e mai su `main` | richiesto dal DM il 2026-09-24, indipendente da 4f-4…4h. Vedi §4.11 |
 
 ### 4.2-bis · Com'è andato 4a (2026-09-07)
 
@@ -620,8 +621,8 @@ verificati uno per uno prima di toccare i documenti — **nessun falso positivo*
 |---|---|
 | `AGENTS.md` 24-26 | l'albero di `campaign/` elencava `npcs/`, `locations/`, `encounters/` |
 | `AGENTS.md` 161-162 | convenzioni di nome per due di quelle cartelle |
-| `AGENTS.md` 210 | `campaign/lore/rhod-adaptations.md`, che non esiste in nessun posto |
-| `AGENTS.md` 225 | *«Check `campaign/npcs/` before describing NPCs»* |
+| `AGENTS.md` 210 | `campaign/lore/rhod-adaptations.md`, che non esiste in nessun posto <!-- validate-docs: ignore --> |
+| `AGENTS.md` 225 | *«Check `campaign/npcs/` before describing NPCs»* <!-- validate-docs: ignore --> |
 | `README.md` 54 | i PNG «dettagliati in» una cartella che non c'è |
 
 ⚠️ **Il peggiore è il quarto**, e non è un refuso: è una **istruzione** nel
@@ -724,7 +725,7 @@ esterne ammesse sono binari, non pacchetti Python»*, perché gli strumenti gira
 sul portatile del DM la sera della sessione. Recuperare ex-0015 significherebbe
 **riaprire ADR-0037**, non colmare un vuoto. E le due gambe su cui stava in piedi
 non ci sono più: il consumatore che giustificava il livello 1
-(`scripts/lint_map_design.py`) **non è mai stato scritto**, e l'audit che ne
+(`scripts/lint_map_design.py`) **non è mai stato scritto**, e l'audit che ne <!-- validate-docs: ignore -->
 misurava il guadagno non è nel repo. L'unica parte viva — la pacchettizzazione,
 `pyproject.toml` assente e **24** `sys.path.insert` — ha già casa in **ADR-0040**
 e nel lotto 0.2 di `PIANO-VENDIBILITA`.
@@ -1148,6 +1149,7 @@ Vale per **ogni** commit di **ogni** fase.
 | ~~D18~~ | F4 · 4d-6 | ✅ **DECISA E ATTUATA il 2026-09-17, nello stesso commit.** Il DM: *«spezzarli per intestazione verificando che non esistano già»*. Il catalogo portava **19 record intitolati al documento** invece che alla creatura, perché `build_monster_catalog.py` faceva **un record per file** e prendeva il primo GS: «Parte 2A – Torre Invisibile», GS 10. **19 → 8**, pool **372 → 397**. 🔎 Quel che ne è uscito non sono comparse: gli **otto fantini del Palio**, i **Sicari di Sonjak**, il Gonfaloniere Aldemar Vosk, la Drow Chierica di Lolth, gli esempi d'onda di Rethmar — tutti chiusi dentro un record solo. ⚠️ **La deduplica è ancorata a un fatto dichiarato**: si confrontano i nomi **solo** dentro l'insieme delle voci del Bestiario che citano *quel* documento come `Source`. È il modo di rispettare ADR-0053 (un matcher permissivo traveste l'ignoranza) senza rinunciare a dedurre: il legame documento↔voce l'ha scritto qualcuno, la somiglianza sceglie solo *quale* voce sta per *quale* intestazione. 🔴 **E il rischio opposto ha il suo presidio**: il record di file sparisce solo quando **ogni** creatura che il documento nomina ha già la sua voce — gli otto che restano sono quelli dove non è vero, e toglierli significherebbe meno rumore e **meno creature**. 🐛 Due difetti nei nomi generati, trovati misurando: la numerazione del Palio è **multi-livello** (`### 3.2 Drow Chierica`) e lasciava nomi che cominciavano per cifra, e la coda tagliata lasciava parentesi mai chiuse («Aldemar Vosk (LN»). 🔎 **E il cancello nuovo ha trovato un errore mio al primo giro**: contava **due** «Skullcrusher il Nero», perché la voce che avevo appena scritto puntava al file che il drago lo *nomina* soltanto — i numeri stanno in `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md`. Correggendo il puntamento è poi caduto fuori che `P6-INTEGRAZIONE` restava scoperto, e dentro c'erano **Re Thorek I** (Grr 16, il re di mille anni prima che si inginocchia davanti alla Corona) e **Durin Hammerfist**, l'antenato di Othrek: due PNG di canone che non aveva nessuno. Vedi **§4.8.12** e [ADR-0054](adr/ADR-0054-un-archivio-non-e-una-copia.md) |
 | ~~D19~~ | F4 · 4f | ✅ **Risposta del DM il 2026-09-24, ed è un principio più largo della domanda**: *«la procedura dovrebbe essere quanto più automatizzata possibile: un DM normalmente non tocca affatto i file yml, al massimo se ha un'interfaccia scrive dei campi o seleziona i valori da un form già impostato»*. Quindi né lo scheletro da compilare né il derivato da rivedere a mano: il template è **derivato in automatico** dal prodotto, e ciò che resta di giudizio passa da un **modulo** a scelte. Procedura in §4.10.6, il via è **D21** |
 | D21 | F4 · 4f | **Si procede come in §4.10.6?** Il gruppo nuovo parte con un comando solo e un modulo a campi e scelte. Le proposte di fine sessione che oggi dicono «scrivi in `state.yaml`» diventano domande dello stesso modulo. Le risposte stanno in un JSON, e il modulo è solo la sua faccia: oggi il terminale, domani una pagina, senza toccare la logica. 🔵 Proposta: sì, con prima 4f-4 (il gruppo nuovo) e poi 4f-5 (le proposte di fine sessione), ognuno col suo commit |
+| D22 | F4 · 4i | **Cosa si fa dei file rimasti nei rami senza un posto?** Misurati in §4.11.2. Per ognuno si può **portarlo** su `main` com'era, datato; **dichiararlo superato**, scrivendo da cosa; **lasciarlo** nel ramo, scrivendo perché. Il caso che pesa è il `SOGGETTO-DISCESA-UNDERDARK-ARCHI-01-05` della #72: 773 righe sulla catena degli archi 01-05, sei revisioni con risposte del DM, e nessun documento su `main` lo nomina. La proposta è portarlo com'era in `campaign/lore/`, come per l'audit di level design. Per `agents.conf` la proposta è rifarlo sul codice di oggi, perché la matrice duplicata c'è ancora |
 | ~~D20~~ | F4 · 4f-2 | ✅ **DECISA E ATTUATA il 2026-09-24, nello stesso commit.** Il DM: *«D20 ok ma non tralasciare nulla»*. Split per sezione come in §4.10.4: **528 righe su 528** ritrovate nelle due metà (controllate contro git da un test), nessuna duplicata, una sola parola spostata («ESCAPED», che la cronaca racconta già tre volte). Tredici rimandi aggiornati in undici file; restano sul nome vecchio i documenti datati (`plans/`, l'audit IP, la baseline del 21 settembre), come registro di quando sono stati scritti |
 
 ---
@@ -1408,7 +1410,7 @@ file, non il flusso.
 
 #### 4.8.3 · L'ADR ha il numero occupato — **terza volta**
 
-Il ramo porta `plans/adr/ADR-0017-stato-dati-e-prosa.md` (211 righe). Su `main`
+Il ramo porta `plans/adr/ADR-0017-stato-dati-e-prosa.md` (211 righe). Su `main` <!-- validate-docs: ignore -->
 **ADR-0017 è «moduli autoconclusivi e classe di artefatto»**: un'altra
 decisione, presa nel frattempo.
 
@@ -2541,6 +2543,123 @@ rende tutto testabile senza tastiera.
 del DM. Il modulo gli risparmia di aprire un file e di scrivere YAML, non di
 decidere se l'agenda di Xal'thor, *«to seize Tordek's Bracieri Gemelli»*, vale
 anche per un tavolo dove Tordek non c'è.
+
+### 4.11 · Lotto **4i** — i rimandi fra backtick, e il contenuto rimasto nei rami `[4i-1 ✅ · 4i-2 ⬜]`
+
+> **Classe R** (ricognizione) per la misura, **M** per le correzioni con una
+> sola risposta possibile. Le righe il cui destino è un giudizio sul contenuto
+> vanno al DM e non si toccano. Richiesta del DM del 2026-09-24: *«verifica
+> perché validate docs non controlla i rimandi rotti […] controlla che non si
+> sia perso in tutte le PR, anche quelle chiuse»*.
+
+#### 4.11.0 · FASE 1 · Perché il gate non l'ha visto
+
+Il lotto 4f-2 ha tolto `campaign-history.md`, e tre piani che lo citavano fra
+backtick sono rimasti verdi. `validate_docs --sorgenti` controllava i **link**
+markdown su tutto il repo, ma i percorsi fra backtick solo sui tre documenti
+d'ingresso. L'esclusione era scritta in §4.2-ter con un motivo onesto: «una
+superficie di falsi positivi che nessuno ha misurato». Nessuno l'ha mai
+misurata.
+
+🔎 **Il controllo era già esistito.** `scripts/validate_skill_paths.py`, scritto <!-- validate-docs: ignore -->
+il 2026-05-02 nella review della PR #1, faceva proprio questo sulle skill. È
+stato spinto sul ramo `optimize-skills-agent-folders` **dopo** il merge della
+PR, insieme a `scripts/agents.conf`: nessuno dei due è mai arrivato su `main`. <!-- validate-docs: ignore -->
+
+**Misurato il 2026-09-24**, prima di scrivere il controllo: **180 percorsi**
+inesistenti in **823** documenti. I falsi positivi erano 45, in quattro famiglie
+che il repo sa già riconoscere senza una lista a mano:
+
+| Famiglia | Da dove viene la risposta |
+|---|---|
+| segnaposto (`…`, `...`, `a\|b`) | il testo stesso |
+| file che uno script crea quando gira (recap, brief, ledger) | `tools.manifest.json` (uscite) e `dmcore/partita.py` |
+| cloni locali di terzi (ComfyUI, Homebrewery) | `git check-ignore` |
+| numero di riga attaccato (`file.py:42`) | il testo stesso |
+
+Il resto erano rimandi rotti veri, quasi tutti al Bestiario di prima del
+riordino in `mostri/`, `villain/`, `png/`.
+
+#### 4.11.1 · 4i-1 · Com'è andato (2026-09-24)
+
+**Il controllo.** `percorsi_inline()` in `validate_docs.py`, chiamato da
+`--sorgenti`, quindi già in CI senza un job nuovo. Resta fuori chi fa da
+registro: `plans/adr/`, `docs/audit/`, `CHANGELOG`, `REGISTRO-LOTTI`,
+`state-changelog.md`, gli `_ARCHIVIO/`. I loro link restano controllati.
+
+**Il marcatore nuovo, `<!-- validate-docs: futuro -->`**, per il piano che
+nomina un file che ancora non c'è. Scade da solo: quando il file arriva, la
+riga diventa rossa, perché il piano sta dicendo «da fare» di una cosa fatta.
+Chi nomina un percorso per dire che non esiste (`campaign/npcs/` «non è mai <!-- validate-docs: ignore -->
+esistita») usa la direttiva `ignore` che c'era già.
+
+**Le correzioni**: 122 righe in 32 file, più il documento recuperato.
+
+- **96 percorsi** risolti da un criterio solo: il nome del file compare
+  **una volta sola** nel repo. Nessuna scelta fra due candidati.
+- **Due errori di taratura del controllo**, corretti nel validatore e non nei
+  documenti: `git check-ignore` non riconosce come cartella una cartella che non
+  esiste, e le voci `ComfyUI/` e `homebrewery/` di `.gitignore` non scattavano.
+- **Rimandi vivi riscritti**: `rhod-adaptations.md` (mai esistito) diventa
+  `campaign-coherence.md`, che `AGENTS.md` regola 5 dà come sede canonica;
+  `campaign/npcs/` e `campaign/encounters/` escono da due skill; <!-- validate-docs: ignore -->
+  `campaign-history.md` diventa `campaign-chronicle.md` in quattro piani, con la
+  metà verificata sul testo (la tabella del party e le linee dell'orda stanno
+  nella cronaca).
+- **Cose superate nei piani, riallineate**: il lotto E1 di
+  `PIANO-EDITOR-VISUALE-MAPPE` (la legenda esportata in JSON con un gate di
+  sincronia) era fatto dal 2026-09-12 per altra via, con ADR-0048, e il piano e
+  `INDEX.md` lo davano da fare. La ricerca sui font citava `scripts/typst/fonts/`, <!-- validate-docs: ignore -->
+  oggi `scripts/fonts/`.
+- **Un documento recuperato**: `docs/audit/AUDIT-LEVEL-DESIGN-E-INQUADRATURA.md`
+  della PR #72. ADR-0040, ADR-0048 e `LEGENDA-FUNZIONALE-SPEC` ne citano delle
+  sezioni, e il file non c'era. Portato com'era, con una testata che lo
+  dichiara datato; le misure del 26 luglio non sono rifatte.
+- **Futuri dichiarati**: quattro file di `PIANO-PIPELINE-IBRIDE`, uno di
+  `RICERCA-TOOL-ESTERNI`, uno di `house-rules.md`.
+
+**Validazione.** Nove test nuovi in `test_validate_docs.py`, fra cui il caso di
+`campaign-history.md` preso com'era e il cablaggio in `main()`. **7 mutazioni
+su 7** rosse: controllo muto, `main` che non lo chiama, `futuro` che non scade,
+niente barra finale, datati allargati a tutto `plans/`, numero di riga non
+tolto, uscite di partita dimenticate.
+
+🐛 **Un errore mio di 4f-2, trovato da questo lotto.** Correggere un percorso
+nella cronaca ha fatto cadere `test_nessuna_riga_persa_nello_split`: il test
+confrontava lo split con i file **di oggi**, e la cronaca è partita, cambia a
+ogni sessione. Sarebbe caduto alla prima sessione giocata. Adesso legge i due
+file com'erano nel commit dello split; la mutazione (tolta la riga spostata)
+lo fa ancora rosso. E la stessa correzione nella scheda di Tyrgarun ha mosso
+l'impronta delle creature: rigenerata **in un commit suo**, come chiede il test,
+con la sola chiave che cambia.
+
+⚠️ **Limite dichiarato**: il controllo vede un percorso con almeno una barra e
+la prima cartella esistente. Un nome di file nudo (`campaign-history.md` senza
+cartella) non lo vede. Cercati a mano nei documenti vivi: due erano rimandi, nei
+piani di ARC-07 e ARC-09, e sono riscritti; gli altri raccontano la storia dello
+split e restano. `campaign/misure/baseline-punteggi.json` lo nomina ancora ed è
+una misura datata: resta com'è.
+
+#### 4.11.2 · 4i-2 · Il contenuto rimasto nei rami (proposto)
+
+Misurato il 2026-09-24 su **217 riferimenti** (rami e teste di PR, chiuse
+comprese): i file che esistono in un ramo e **non sono mai esistiti su `main`**
+né col loro nome né col loro contenuto. Sono **61 percorsi**. Quasi tutti hanno
+già un posto: la #99 aperta (4g, 4h), questa PR, la #143 (portata come
+ADR-0067), la #42 e la #109 chiuse con motivazione, la #67 giudicata in
+`RICONCILIAZIONE-PR` R5, il ramo di gruppo del primo tavolo (partita, per
+ADR-0007). **Senza posto**:
+
+| Dove | File | Stato |
+|---|---|---|
+| ramo della PR #1, dopo il merge | `scripts/validate_skill_paths.py` | superato da 4i-1 per i markdown <!-- validate-docs: ignore --> |
+| ramo della PR #1, dopo il merge | `scripts/agents.conf` | ⚠️ **il difetto che correggeva c'è ancora**: la matrice degli agenti è duplicata in `build-skills.sh` e `sync-skills.sh` <!-- validate-docs: ignore --> |
+| PR #72 | `SOGGETTO-DISCESA-UNDERDARK-ARCHI-01-05.md`, 773 righe, sei revisioni con risposte del DM | 🔴 **nessun documento lo nomina**. Dice di sé: gli archi 01, 02, 03, 05 non hanno un solo markdown, e la catena «se si perde, si perde dalla testa del DM». La sua integrazione in `campaign-history` (133 righe) **è arrivata**; il soggetto no |
+| PR #72 | `plans/PIANO-LEVEL-DESIGN-E-INQUADRATURA-SCENICA.md` | ADR-0048 lo nomina come fonte del proprio lotto A1 <!-- validate-docs: ignore --> |
+| ramo `review-tournament-integration` | una versione di maggio del Giorno 3 di Dauth (228 righe) | il file su `main` è stato riscritto da zero a luglio (ARC09 lotto A, «i tre orfani»); le due versioni non sono mai state confrontate |
+
+Il destino di queste righe è la **D22**. 4i-2 costruisce lo strumento che rifà
+questa misura da solo e il registro che dà a ogni file un posto.
 
 ## Come si misura che il piano è finito
 

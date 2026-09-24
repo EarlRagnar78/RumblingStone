@@ -344,7 +344,7 @@ ricognizione, **C** costruzione, **G** giudizio, **K** canone.
 > difetto arriva al tavolo** — una mappa con una stanza irraggiungibile si scopre
 > quando quattro giocatori ci sbattono contro.
 
-**Dove vive.** Un modulo nuovo `scripts/dmcore/grounding.py` con funzioni pure, e
+**Dove vive.** Un modulo nuovo `scripts/dmcore/grounding.py` con funzioni pure, e <!-- validate-docs: futuro -->
 due consumatori: `compile_map_json.py --grounding` (prima che la spec diventi un
 master) e `validate_maps.py` (sui 18 master esistenti). Il modulo legge le
 proprietà dei simboli da `dmcore.legenda`, che è la fonte unica di ADR-0048.
@@ -461,7 +461,7 @@ Entrambe piccole, entrambe prima di G1-G4:
    consumatore se lo ricalcola dal JSON grezzo, che è la malattia che ADR-0048
    ha curato.
 
-**Collaudo.** Test in `scripts/tests/test_grounding.py`: per ciascuno dei quattro
+**Collaudo.** Test in `scripts/tests/test_grounding.py`: per ciascuno dei quattro <!-- validate-docs: futuro -->
 controlli, una fixture che **deve** essere bocciata e una che **deve** passare
 (la forma di `test_gate_bocciano.py`). Più il giro sui 18 master, col conto
 riportato nella riga di CHANGELOG.
@@ -520,7 +520,7 @@ di partenza da migliorare, non un fallimento.
 > perché un fatto dimenticato si vede leggendo e non arriva al tavolo come un
 > muro sbagliato.
 
-**Lo script.** `scripts/fatti_scena.py`, stdlib, due modi.
+**Lo script.** `scripts/fatti_scena.py`, stdlib, due modi. <!-- validate-docs: futuro -->
 
 `--per <scena>` legge `campaign/state.md` (le regioni marcate `auto:`, il March
 Clock, i PG e i loro artefatti), i log in `campaign/sessions/` e gli archi
@@ -572,7 +572,7 @@ come fa la tabella di §1. Un numero senza comando non entra.
 > **Classe C** · engine e effort da decidere quando il bisogno esiste ·
 > **qualità: alta**, è una superficie d'esecuzione.
 
-`scripts/llm_bridge.py` secondo le sette condizioni di
+`scripts/llm_bridge.py` secondo le sette condizioni di <!-- validate-docs: futuro -->
 [ADR-0067](adr/ADR-0067-il-confine-dichiarato-fra-codice-e-llm.md). Il primo uso
 sensato è B1: prosa in ingresso, JSON candidato in uscita, `--validate-only` e
 grounding come porta.

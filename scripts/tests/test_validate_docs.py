@@ -211,6 +211,88 @@ class TestPercorsiAssoluti(unittest.TestCase):
             (ROOT / rel).unlink()
 
 
+class TestPercorsiInline(unittest.TestCase):
+    """I percorsi fra backtick su tutti i sorgenti (dal 2026-09-24).
+
+    Prima `--sorgenti` guardava solo i link: il lotto 4f-2 ha tolto
+    `campaign-history.md` e tre piani che lo citavano fra backtick sono rimasti
+    verdi. Il primo test e' quel caso, preso com'era.
+    """
+
+    REL = "scripts/tests/fixtures/_tmp_inline.md"
+
+    def _esito(self, testo: str, rel: "str | None" = None) -> list[dict]:
+        rel = rel or self.REL
+        doc = ROOT / rel
+        doc.parent.mkdir(parents=True, exist_ok=True)
+        doc.write_text(testo, encoding="utf-8")
+        try:
+            return vd.percorsi_inline(rel, vd._toplevel_dirs(), vd._uscite_a_runtime())
+        finally:
+            doc.unlink()
+
+    def test_il_rimando_rimasto_dopo_lo_split_e_rosso(self):
+        esito = self._esito("vedi `campaign/lore/campaign-history.md` §2\n")
+        self.assertEqual([(p["line"], p["path"]) for p in esito],
+                         [(1, "campaign/lore/campaign-history.md")])
+
+    def test_un_percorso_che_esiste_passa(self):
+        self.assertEqual(self._esito("vedi `campaign/lore/campaign-chronicle.md`\n"), [])
+
+    def test_i_documenti_datati_non_si_controllano(self):
+        """Un ADR dice cosa era vero quando e' stato scritto: non si riscrive."""
+        for rel in ("plans/adr/ADR-9999-ZZZ-prova.md", "plans/CHANGELOG.md",
+                    "docs/audit/ZZZ-prova.md", "00_x/_ARCHIVIO/y.md"):
+            self.assertTrue(vd._e_datato(rel), rel)
+        self.assertFalse(vd._e_datato("plans/PIANO-RIPRESA-PR-ABBANDONATE.md"))
+
+    def test_futuro_lascia_passare_un_file_che_non_c_e(self):
+        self.assertEqual(self._esito(
+            "Lo script `scripts/zzz_non_esiste.py` <!-- validate-docs: futuro -->\n"), [])
+
+    def test_futuro_diventa_rosso_quando_il_file_arriva(self):
+        """Il marcatore scade: il piano non puo' dire «da fare» di una cosa fatta."""
+        esito = self._esito(
+            "Lo script `scripts/validate_docs.py` <!-- validate-docs: futuro -->\n")
+        self.assertEqual([p["source"] for p in esito], ["futuro"])
+
+    def test_ignore_vale_anche_qui(self):
+        self.assertEqual(self._esito(
+            "`campaign/npcs/` non e' mai esistita <!-- validate-docs: ignore -->\n"), [])
+
+    def test_i_quattro_falsi_positivi_misurati(self):
+        """Le quattro famiglie trovate alla prima esecuzione, una riga ciascuna."""
+        self.assertEqual(self._esito(
+            "`campaign/sessions/…` e `scripts/foo|bar`\n"          # segnaposto
+            "`campaign/recaps/pg/thorik.md`\n"                     # uscita a runtime (partita)
+            "`scripts/comfyui-local/ComfyUI/` e `scripts/homebrew-local/homebrewery`\n"  # gitignore
+            "`scripts/validate_docs.py:42` e `scripts/validate_docs.py:10-20`\n"          # riga
+        ), [])
+
+    def test_una_cartella_ignorata_senza_barra_resta_ignorata(self):
+        """`git check-ignore` non sa che una cartella inesistente e' una cartella."""
+        self.assertEqual(vd._ignorati_da_git(["scripts/comfyui-local/ComfyUI"]),
+                         {"scripts/comfyui-local/ComfyUI", "scripts/comfyui-local/ComfyUI/"})
+
+    def test_main_sorgenti_lo_esegue(self):
+        """Il controllo non basta scriverlo: `--sorgenti` deve chiamarlo."""
+        from unittest import mock
+        doc = ROOT / self.REL
+        doc.parent.mkdir(parents=True, exist_ok=True)
+        doc.write_text("vedi `campaign/lore/campaign-history.md`\n", encoding="utf-8")
+        try:
+            with mock.patch.object(vd, "sorgenti", lambda *est: [self.REL]), \
+                    mock.patch("sys.stderr"), mock.patch("sys.stdout"):
+                self.assertEqual(vd.main(["--sorgenti"]), 1)
+        finally:
+            doc.unlink()
+
+    def test_il_repo_e_verde(self):
+        esito = subprocess.run([sys.executable, "scripts/validate_docs.py", "--sorgenti"],
+                               cwd=ROOT, capture_output=True, text=True)
+        self.assertEqual(esito.returncode, 0, esito.stderr[-2000:])
+
+
 class TestSorgenti(unittest.TestCase):
     def test_esclude_generati_e_vendored(self):
         for rel in ("07_arco/homebrew/X.hb.md", "build/out.md",

@@ -16,7 +16,9 @@ Cosa controlla
      il percorso completo da indentazione + connettore e ne verifica l'esistenza.
   2. **Link markdown relativi** nei documenti in elenco.
   3. **Path inline** in backtick, solo quando sono inequivocabili: il primo
-     segmento deve essere una directory top-level esistente del repo.
+     segmento deve essere una directory top-level esistente del repo. Con
+     `--sorgenti` (dal 2026-09-24) su tutti i markdown scritti a mano, tranne i
+     documenti datati (§PERCORSI FRA BACKTICK).
   4. **Percorsi assoluti alla macchina di chi scrive** (`/home/<utente>/…`), che
      rendono un documento vero solo su un computer — solo con `--sorgenti`.
 
@@ -408,6 +410,115 @@ def adr_duplicati() -> list[dict]:
             for f in file]
 
 
+# --- PERCORSI FRA BACKTICK SU TUTTI I SORGENTI (dal 2026-09-24) -------------
+# 🐛 Fino a questa data `--sorgenti` controllava solo i LINK markdown: un
+# percorso citato fra backtick, `campaign/lore/campaign-history.md`, restava
+# vero per il gate anche dopo che il file era sparito. Il lotto 4a l'aveva
+# escluso con un motivo onesto, «una superficie di falsi positivi che nessuno
+# ha misurato», e nessuno l'ha mai misurata. Misurata il 2026-09-24: 180 hit su
+# 823 documenti, di cui 45 falsi positivi in quattro famiglie riconoscibili
+# (segnaposto, uscite a runtime, file ignorati da git, numero di riga attaccato)
+# e il resto rimandi rotti veri, quasi tutti al Bestiario prima del riordino.
+#
+# Il controllo c'era gia' stato: `validate_skill_paths.py`, scritto il
+# 2026-05-02 nella review della PR #1 e spinto sul ramo DOPO il merge, quindi
+# mai arrivato su `main`.
+
+#: Documenti che fanno da REGISTRO: dicono cosa era vero quando sono stati
+#: scritti, e un percorso che poi e' cambiato non li rende sbagliati. I loro
+#: link restano controllati; i percorsi fra backtick no.
+DATATI_PREFISSO = ("plans/adr/", "docs/audit/")
+DATATI = {"plans/CHANGELOG.md", "plans/REGISTRO-LOTTI.md", "campaign/state-changelog.md"}
+
+#: Un piano puo' nominare un file che ANCORA non esiste: si dichiara sulla riga.
+#: Quando il file arriva, il marcatore diventa un errore: il piano va aggiornato.
+FUTURO = "<!-- validate-docs: futuro -->"
+
+SEGNAPOSTO_INLINE = re.compile(r"…|\.\.\.|\|")
+NUMERO_DI_RIGA = re.compile(r":\d+(?:-\d+)?$")
+
+
+def _e_datato(rel: str) -> bool:
+    return rel in DATATI or rel.startswith(DATATI_PREFISSO) or "/_ARCHIVIO/" in rel
+
+
+def _uscite_a_runtime() -> "list[re.Pattern]":
+    """I percorsi che uno script CREA quando gira: esistono dopo, non nel repo.
+
+    Due fonti, entrambe dati gia' presenti: le uscite dichiarate nel manifest
+    dei tool e l'elenco della partita (`dmcore/partita.py`). Nessuna lista a mano.
+    """
+    modelli: list[str] = []
+    man = ROOT / "scripts" / "tools.manifest.json"
+    if man.exists():
+        for t in json.loads(man.read_text(encoding="utf-8")).get("tools", []):
+            modelli += [o["path"] for o in t.get("outputs", []) if "/" in o["path"]]
+    try:
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from dmcore.partita import PARTITA  # noqa: PLC0415
+        modelli += [v.percorso for v in PARTITA]
+    except ImportError:  # pragma: no cover
+        pass
+    out = []
+    for m in modelli:
+        rx = "".join("[^/]*" if c == "*" else re.escape(c) for c in m.rstrip("/"))
+        rx = rx.replace("YYYY\\-MM\\-DD", "[0-9-]+")
+        out.append(re.compile(f"^{rx}(?:/.*)?$"))
+        # la cartella che contiene l'uscita esiste anche lei a runtime
+        out.append(re.compile("^" + re.escape(m.rstrip("/").rsplit("/", 1)[0]) + "$"))
+    return out
+
+
+def _ignorati_da_git(percorsi: "list[str]") -> "set[str]":
+    """I percorsi che `.gitignore` esclude: un clone locale, un'uscita di build.
+
+    Ogni percorso si chiede due volte, anche con la barra finale: una cartella
+    che NON esiste non la si riconosce come cartella, e un modello `ComfyUI/`
+    senza la barra non la prende (misurato: i due README di `homebrew-local` e
+    `comfyui-local` risultavano rotti con le loro voci gia' in `.gitignore`).
+    """
+    if not percorsi:
+        return set()
+    domande = [q for p in percorsi for q in (p, p.rstrip("/") + "/")]
+    r = subprocess.run(["git", "check-ignore", "--stdin"], cwd=ROOT, input="\n".join(domande),
+                       capture_output=True, text=True)
+    return {q.rstrip("/") for q in r.stdout.split()} | set(r.stdout.split())
+
+
+def percorsi_inline(rel: str, tops: set[str], runtime: "list[re.Pattern]") -> list[dict]:
+    """I percorsi fra backtick che non esistono, fuori dai documenti datati."""
+    if _e_datato(rel):
+        return []
+    testo = (ROOT / rel).read_text(encoding="utf-8", errors="ignore")
+    salta = ignored_lines(testo)
+    righe = testo.splitlines()
+    candidati: list[tuple[int, str]] = []
+    fuori: list[dict] = []
+    futuri_per_riga: "dict[int, list[str]]" = {}
+    for lineno, p in paths_from_inline(testo, tops):
+        if lineno in salta or _is_generated_mirror(p) or SEGNAPOSTO_INLINE.search(p):
+            continue
+        p = NUMERO_DI_RIGA.sub("", p)
+        if FUTURO in righe[lineno - 1]:
+            futuri_per_riga.setdefault(lineno, []).append(p)
+            continue
+        if _exists(p) or any(r.match(p) for r in runtime):
+            continue
+        candidati.append((lineno, p))
+    ignorati = _ignorati_da_git([p for _, p in candidati])
+    for lineno, p in candidati:
+        if p not in ignorati:
+            fuori.append({"doc": rel, "line": lineno, "path": p, "source": "inline",
+                          "reason": "percorso inesistente"})
+    for lineno, ps in futuri_per_riga.items():
+        if ps and all(_exists(p) for p in ps):
+            fuori.append({"doc": rel, "line": lineno, "path": ", ".join(ps),
+                          "source": "futuro",
+                          "reason": "il file promesso esiste: il marcatore «futuro» "
+                                    "e la riga del piano vanno aggiornati"})
+    return fuori
+
+
 def check_doc(doc_rel: str, tops: set[str], solo_link: bool = False) -> list[dict]:
     """I percorsi citati e inesistenti di un documento.
 
@@ -448,7 +559,7 @@ def main(argv=None) -> int:
     ap.add_argument("--doc", action="append", metavar="FILE",
                     help="Documento da controllare (ripetibile). Default: AGENTS.md, README.md, docs/INDEX.md.")
     ap.add_argument("--sorgenti", action="store_true",
-                    help="Tutti i markdown scritti a mano: link relativi + percorsi assoluti. "
+                    help="Tutti i markdown scritti a mano: link relativi, percorsi fra backtick, percorsi assoluti. "
                          "Esclude generati, mirror per-agente e pacchetti vendored.")
     ap.add_argument("--verbose", action="store_true", help="Elenca anche i percorsi verificati con successo.")
     ap.add_argument("--json", action="store_true", help="Report in JSON (opt-in).")
@@ -479,8 +590,10 @@ def main(argv=None) -> int:
 
     if args.sorgenti:
         docs = sorgenti(".md")
+        runtime = _uscite_a_runtime()
         for d in docs:
             problems.extend(check_doc(d, tops, solo_link=True))
+            problems.extend(percorsi_inline(d, tops, runtime))
         # I path assoluti si cercano anche negli script: e' li' che fanno danno.
         for d in sorgenti(".md", ".py"):
             problems.extend(percorsi_assoluti(d))
@@ -501,7 +614,8 @@ def main(argv=None) -> int:
     assoluti = [p for p in problems if p["source"] == "assoluto"]
     mancanti = [p for p in problems if p["source"] == "indice"]
     duplicati = [p for p in problems if p["source"] == "duplicato"]
-    inesistenti = [p for p in problems if p["source"] not in {"assoluto", "indice"}]
+    inesistenti = [p for p in problems if p["source"] not in {"assoluto", "indice", "futuro"}]
+    futuri = [p for p in problems if p["source"] == "futuro"]
 
     if not problems:
         coda = ", nessun percorso inesistente ne' assoluto" if args.sorgenti else ", nessun percorso inesistente"
@@ -519,6 +633,11 @@ def main(argv=None) -> int:
               file=sys.stderr)
         print("Correggere il documento (o creare il percorso). Finding T4, audit 2026-08-05.",
               file=sys.stderr)
+    if futuri:
+        print(f"\n{len(futuri)} riga/e dichiarano «futuro» un file che adesso esiste.",
+              file=sys.stderr)
+        print("Il piano racconta ancora come da fare una cosa fatta: aggiornarlo e "
+              "togliere il marcatore.", file=sys.stderr)
     if mancanti:
         print(f"\n{len(mancanti)} ADR esistono e non sono elencati in {INDICE_ADR} §4.",
               file=sys.stderr)

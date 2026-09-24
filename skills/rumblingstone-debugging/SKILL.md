@@ -15,7 +15,7 @@ description: >
 # Systematic Debugging (infrastruttura RumblingStone)
 
 > **Origine**: vendorizzata da [`obra/superpowers`](https://github.com/obra/superpowers)
-> `skills/systematic-debugging` (MIT License, © 2025 Jesse Vincent, commit
+> `skills/systematic-debugging` (MIT License, © 2025 Jesse Vincent, commit <!-- validate-docs: ignore -->
 > `d884ae0`, 2026-07-23) — adattata a questo repo: trigger ristretti a
 > `scripts/`/CI, esempi locali, riferimenti esterni rimossi. Politica di
 > vendoring: `plans/adr/ADR-0010-vendoring-skill-terzi.md`.

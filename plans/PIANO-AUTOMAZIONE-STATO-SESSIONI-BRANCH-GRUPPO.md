@@ -339,7 +339,7 @@ Stime in ore di lavoro focalizzato, incluse le prove. Ordine = dipendenze.
 ### Lotto D — Visibilità per-PG *(≈5-7h, rischio basso-medio)*
 - D1 Template sessione v2 (blocchi `## Split — <PG> @ <luogo>` +
   `Visto da:`); wizard li chiede quando il DM dichiara party diviso.
-- D2 `scripts/visibility.py` (policy unica, §3) + unit test.
+- D2 `scripts/dmcore/visibility.py` (policy unica, §3) + unit test.
 - D3 `session_recap.py --pg NOME` → recap per-PG in `campaign/recaps/pg/`;
   senza flag, output identico a oggi (golden test di regressione con
   `recap-2026-05-05.md` come riferimento).

@@ -205,29 +205,34 @@ class TestLaPremessaELaCronaca(unittest.TestCase):
             self.assertIn(nome, testo)
 
     def test_nessuna_riga_persa_nello_split(self):
-        """Contro git, non contro una copia fatta al momento: l'ultimo commit in
-        cui `campaign-history.md` esisteva, trovato per contenuto."""
+        """Contro git, non contro una copia fatta al momento: il commit che ha
+        tolto `campaign-history.md`, confrontato col suo genitore.
+
+        Si leggono i due file COM'ERANO in quel commit, non come sono oggi: la
+        cronaca e' partita e cambia a ogni sessione, e un test che la congela
+        cadrebbe alla prima (e' successo il 2026-09-24 correggendo un percorso)."""
         import subprocess
-        log = subprocess.run(["git", "log", "--format=%H", "--", "campaign/lore/campaign-history.md"],
-                             cwd=ROOT, capture_output=True, text=True).stdout.split()
-        prima = None
-        for sha in log:
-            r = subprocess.run(["git", "show", f"{sha}:campaign/lore/campaign-history.md"],
-                               cwd=ROOT, capture_output=True, text=True)
-            if r.returncode == 0:
-                prima = r.stdout
-                break
-        if prima is None:
-            self.skipTest("campaign-history.md non e' nella storia (clone shallow?)")
+
+        def git(*a):
+            return subprocess.run(["git", *a], cwd=ROOT, capture_output=True, text=True)
+
+        vecchio = "campaign/lore/campaign-history.md"
+        split = git("log", "--diff-filter=D", "--format=%H", "--", vecchio).stdout.split()
+        if not split:
+            self.skipTest("il commit dello split non e' nella storia (clone shallow?)")
+        sha = split[0]
+        prima = git("show", f"{sha}^:{vecchio}")
+        dopo = [git("show", f"{sha}:{f.relative_to(ROOT).as_posix()}") for f in (PREMESSA, CRONACA)]
+        if prima.returncode or any(d.returncode for d in dopo):
+            self.skipTest("lo split non e' leggibile dalla storia (clone shallow?)")
         banale = lambda r: r.strip() in ("", "---")  # noqa: E731
         from collections import Counter
-        attese = Counter(r for r in prima.splitlines() if not banale(r))
+        attese = Counter(r for r in prima.stdout.splitlines() if not banale(r))
         spostata = "        │   ├── Il Collezionista (Rakshasa, ESCAPED)"
         attese[spostata] -= 1
         attese[spostata.replace(", ESCAPED", "")] += 1
-        oggi = Counter(r for f in (PREMESSA, CRONACA)
-                       for r in f.read_text(encoding="utf-8").splitlines() if not banale(r))
-        self.assertEqual(sum((attese - oggi).values()), 0, list((attese - oggi))[:5])
+        allora = Counter(r for d in dopo for r in d.stdout.splitlines() if not banale(r))
+        self.assertEqual(sum((attese - allora).values()), 0, list((attese - allora))[:5])
 
 
 class TestIlResetSiFermaPrimaDiScrivere(unittest.TestCase):

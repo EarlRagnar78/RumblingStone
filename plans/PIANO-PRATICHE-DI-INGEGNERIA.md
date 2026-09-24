@@ -223,7 +223,7 @@ PR sua: il primo esercizio della norma di PI-2 è questo piano stesso.
 ## Checklist di avanzamento
 
 - ✅ Fase 1 · audit (§2, 2026-09-24)
-- ⬜ PI-1 · `main` protetto e merge automatico (DM, con 4i-3; le istruzioni passo passo sono state date al DM il 2026-09-24)
+- ⬜ PI-1 · `main` protetto e merge automatico (DM, con 4i-3). 2026-09-24: `main` risulta `protected: true` via API; il dettaglio delle regole, il merge automatico e la sicurezza non si leggono da qui e si verificano alla prima PR indietro rispetto a `main`
 - ⬜ PI-3 · Dependabot, segreti, `pip-audit`
 - ⬜ PI-6 · canone toccato nella PR
 - ⬜ PI-2 · `misura_flusso` e la norma delle 400 righe

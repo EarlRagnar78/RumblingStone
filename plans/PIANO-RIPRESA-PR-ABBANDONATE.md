@@ -2879,6 +2879,14 @@ packages».
 **Da non attivare**: l'approvazione obbligatoria di un revisore. Il repo ha un
 solo manutentore, e la regola lo bloccherebbe sulle proprie PR.
 
+**Verifica del 2026-09-24, dopo che il DM ha attivato le impostazioni.**
+Letto via API: `main` ora dà **`protected: true`** (prima `false`), e la PR #160
+risulta `mergeable_state: clean`, cioè controlli verdi e ramo allineato. Da qui
+**non si leggono** il dettaglio delle regole (i due controlli richiesti, il
+ramo aggiornato, il force-push vietato) né le impostazioni di merge automatico
+e di sicurezza: si vedranno alla prima PR rimasta indietro. Il lotto resta ⬜
+finché quella prova non c'è.
+
 **FASE 3 · Verifica.** L'elenco dei rami dà `protected: true` per `main`; una
 PR rimasta indietro mostra «This branch is out-of-date» e il merge è
 disabilitato finché non si riallinea. Poi due righe: il passo «Update branch

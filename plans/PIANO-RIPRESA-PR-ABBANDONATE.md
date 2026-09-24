@@ -1147,6 +1147,7 @@ Vale per **ogni** commit di **ogni** fase.
 | ~~D17~~ | F4 · 4d-4 | ✅ **CHIUSA il 2026-09-17 — e la domanda aveva una premessa falsa, trovata dal DM.** Era posta come «i due villain senza scheda: si scrivono, si contano o escono da §3?». 🐛 **Tre delle quattro voci che avevo dichiarato senza scheda ce l'avevano.** Il DM: *«controlla bene negli archi o nel bestiario se c'è qualcosa magari annegato come prosa»*. **Zalkatar** ha uno statblocco a **GS 13** (14d4+70, CA 24) in `09_…/P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md`; **Saarvith + Regiarix** ne hanno uno a **GS 13** in `09_…/P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`, e il file `FASE4` accanto dichiara esplicitamente *«le statistiche sono lì; questo è la regia dello scontro»*; il **Cerchio Druidico** ne ha uno in `Bestiario/mostri/cerchio-druid7-cr7.md`, marcato [ACCEPTED — DM-canon 2026-05-05]. L'errore non è stato non trovarle: ho cercato **solo dentro `Bestiario/`**, e allargando la ricerca ho **troncato l'output a sei righe** concludendo da una lista tagliata. ✅ Non c'era niente da scrivere né da togliere: c'era da **cercare meglio**. Resta **un** buco su 28 (`lathander-mask`), ed è corretto. ⚠️ **Conseguenza di progetto**: una scheda non vive per forza nel `Bestiario/`, e un cancello tarato lì avrebbe continuato a dare per mancanti due boss da GS 13. Nasce **R13**, che mette alla prova ogni buco dichiarato contro tutto il repo. Vedi **§4.8.10** e [ADR-0053](adr/ADR-0053-la-chiave-verso-il-bestiario-si-dichiara.md) |\n| ~~D6~~ | F1 | ✅ **decisa 2026-09-04: ridisegnata.** `…P1C` mappa 3 dichiarava 40×40 e aveva righe da 24 a 26 celle: rifatta **26×29**, nessuna coordinata del testo cambiata |
 | ~~D18~~ | F4 · 4d-6 | ✅ **DECISA E ATTUATA il 2026-09-17, nello stesso commit.** Il DM: *«spezzarli per intestazione verificando che non esistano già»*. Il catalogo portava **19 record intitolati al documento** invece che alla creatura, perché `build_monster_catalog.py` faceva **un record per file** e prendeva il primo GS: «Parte 2A – Torre Invisibile», GS 10. **19 → 8**, pool **372 → 397**. 🔎 Quel che ne è uscito non sono comparse: gli **otto fantini del Palio**, i **Sicari di Sonjak**, il Gonfaloniere Aldemar Vosk, la Drow Chierica di Lolth, gli esempi d'onda di Rethmar — tutti chiusi dentro un record solo. ⚠️ **La deduplica è ancorata a un fatto dichiarato**: si confrontano i nomi **solo** dentro l'insieme delle voci del Bestiario che citano *quel* documento come `Source`. È il modo di rispettare ADR-0053 (un matcher permissivo traveste l'ignoranza) senza rinunciare a dedurre: il legame documento↔voce l'ha scritto qualcuno, la somiglianza sceglie solo *quale* voce sta per *quale* intestazione. 🔴 **E il rischio opposto ha il suo presidio**: il record di file sparisce solo quando **ogni** creatura che il documento nomina ha già la sua voce — gli otto che restano sono quelli dove non è vero, e toglierli significherebbe meno rumore e **meno creature**. 🐛 Due difetti nei nomi generati, trovati misurando: la numerazione del Palio è **multi-livello** (`### 3.2 Drow Chierica`) e lasciava nomi che cominciavano per cifra, e la coda tagliata lasciava parentesi mai chiuse («Aldemar Vosk (LN»). 🔎 **E il cancello nuovo ha trovato un errore mio al primo giro**: contava **due** «Skullcrusher il Nero», perché la voce che avevo appena scritto puntava al file che il drago lo *nomina* soltanto — i numeri stanno in `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md`. Correggendo il puntamento è poi caduto fuori che `P6-INTEGRAZIONE` restava scoperto, e dentro c'erano **Re Thorek I** (Grr 16, il re di mille anni prima che si inginocchia davanti alla Corona) e **Durin Hammerfist**, l'antenato di Othrek: due PNG di canone che non aveva nessuno. Vedi **§4.8.12** e [ADR-0054](adr/ADR-0054-un-archivio-non-e-una-copia.md) |
 | D19 | F4 · 4f | **Il template di `state.yaml` per un gruppo nuovo: scheletro o derivato?** Oggi il reset non tocca `state.yaml` e il gruppo nuovo eredita 750 righe del primo tavolo (§4.10.0). 4f-1 applica lo **scheletro** della #99: `png` resta (è prodotto: 28 voci con la chiave del Bestiario), ogni altra sezione riparte da un segnaposto dichiarato, March Day 1. L'alternativa è un template **derivato** che tenga le agende preparate dei 13 villain coi clock a zero e gli archi tutti «da giocare»: è più utile a chi riparte, ma ogni agenda porta scritto ciò che il primo tavolo ha già cambiato, quindi è una revisione riga per riga (classe **K**). 🔵 Proposta: lo scheletro adesso, il derivato solo se un secondo tavolo parte davvero |
+| D20 | F4 · 4f-2 | **Lo split di `campaign-history.md` si fa come in §4.10.4?** La regola è già decisa in ADR-0050 §7 (premessa = prodotto, cronaca = partita), ma il lotto è **K**: sposta il canone fra due file e tocca undici rimandi, due dei quali citano un numero di riga. Una sola parola cambia posto: «Il Collezionista (Rakshasa, **ESCAPED**)» sta nel grafo dei villain, che è premessa, ed è un evento del primo tavolo. 🔵 Proposta: split per sezione come in tabella, «ESCAPED» nella cronaca, `plans/` non toccato. Finché D20 è aperta il reset stampa `campaign-history.md` fra i `PENDENTI` |
 
 ---
 
@@ -2340,7 +2341,7 @@ dovrà conoscere `state.yaml`, `state-changelog.md` e adesso anche il
 front-matter), **4g** (schede PG a dati), **4h** (`groups/<slug>/`, PR
 dedicata).
 
-### 4.10 · Lotto **4f** — prodotto e partita `[4f-0 ✅ audit · 4f-1 ✅ · 4f-2 ⬜ · 4f-3 ⬜]`
+### 4.10 · Lotto **4f** — prodotto e partita `[4f-0 ✅ audit · 4f-1 ✅ · 4f-2 🔵 attende D20 · 4f-3 ⬜]`
 
 > `[C costruzione, con un sotto-lotto K (4f-2) · Opus, sessione principale ·
 > alto · un test che esegue il reset su una copia dei file veri e dimostra che
@@ -2430,6 +2431,35 @@ Rethmar, e il canone è 42.
 | l'elenco copre ogni uscita | ✅ ogni file che il manifest dichiara scritto sotto `campaign/` è in `PARTITA` o in `PENDENTI` |
 | 🔴 i cancelli mordono | ✅ **5 mutazioni su 5** rosse. 🐛 La prima (una voce tolta dall'elenco) **passava**: il test confrontava i percorsi con `fnmatch`, dove `*` attraversa le cartelle e `recaps/*.md` copriva anche `recaps/homebrew/`. Ora confronta come `Path.glob`, e conta i recap direttamente |
 | non-regressione | ✅ **1.244** test, `dm.py doctor --ci`, `tools_manifest --check` (74 tool) |
+
+#### 4.10.4 · 4f-2, la proposta di split (in attesa del DM: D20)
+
+`campaign-history.md` (630 righe) diviso secondo ADR-0050 §7, **spostando
+righe senza riscriverle**. La **premessa** comprende AP, ambientazione, grafo
+dei villain e riferimenti; la **cronaca** comprende il party, la timeline degli
+archi e la catena dei dungeon.
+
+| Parte (righe di oggi) | Va in | Perché |
+|---|---|---|
+| intestazione e PART 1: AP, Setting, System, Party Name, Theme (1-16, 18) | `campaign-premise.md` | «AP, ambientazione» |
+| «Current Level: 13» (17) | `campaign-chronicle.md` | è lo stato di questo tavolo |
+| The Party, No-Rogue Strategy (20-33) | cronaca | «il party» |
+| PART 2, timeline degli archi (35-434) | cronaca | «timeline degli archi» |
+| PART 3, catena dei dungeon (435-554) | cronaca | «con gli eventi di *questi* PG» |
+| PART 4, grafo dei villain (555-587) | premessa, **tranne una parola** | «Il Collezionista (Rakshasa, **ESCAPED**)» è un evento del primo tavolo: nella premessa resta «(Rakshasa)», e la fuga passa nella cronaca con il rimando |
+| PART 5 e indice dei rimandi (588-630) | premessa | «riferimenti» |
+
+**I rimandi.** Undici file fuori da `plans/` citano `campaign-history.md`: le
+quattro pagine della skill `rumblingstone-campaign`, tre file dell'arco 09, la
+Cerimonia delle 100 Asce, `Belkram.md`, `dm-player-strategy.md`, `state.md`.
+Due citano **un numero di riga** (`RETROATTIVI-ARC07-INFERRED.md` «r.26» e
+`Belkram.md`), che dopo lo split punta altrove. I documenti di `plans/` restano
+com'erano, perché sono il registro di quando sono stati scritti.
+
+**Il cancello**: le righe delle due metà, messe insieme, sono quelle di oggi
+(tranne la parola spostata), e un test verifica che la premessa non nomini i
+quattro PG fuori dai titoli degli artefatti. Dopo lo split `campaign-history.md`
+esce dai `PENDENTI` e la cronaca entra nella partita, con un suo template.
 
 ## Come si misura che il piano è finito
 

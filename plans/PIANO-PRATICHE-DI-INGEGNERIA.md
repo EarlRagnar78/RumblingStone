@@ -155,6 +155,14 @@ sicurezza si sono accesi due controlli nuovi sulle PR:
   (cambiare modello o spegnerla) e **non va messo fra i controlli
   obbligatori** della regola di `main` finché non è verde.
 
+🔎 **Due scadenze viste nelle annotazioni della CI il 2026-09-24**, che
+appartengono a questo lotto:
+- **Node.js 20 è deprecato**: `actions/checkout@v4`, `actions/setup-python@v5`
+  e `actions/upload-artifact@v4` girano già forzate su Node.js 24. È il primo
+  lavoro che Dependabot per `github-actions` proporrà;
+- **`ubuntu-latest` diventa Ubuntu 26 dal 19 ottobre 2026.** Prima di quella
+  data si decide se fissare `ubuntu-24.04` o provare la CI su 26.
+
 #### ⬜ PI-4 · Gli scenari del piano, tracciati fino ai test
 `[engine: Sonnet 5 · effort: medio · qualità: uno scenario senza test fa rosso, un test che cita uno scenario inesistente fa rosso; 2 mutazioni su 2]`
 

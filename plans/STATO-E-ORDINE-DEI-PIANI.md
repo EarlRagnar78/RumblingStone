@@ -447,6 +447,9 @@ aveva 3.357: è il motivo della regola, non un precedente.
 | ⬜ | **PI-6** canone toccato nella PR, **PI-2** `misura_flusso`, **PI-5** proprietà sui parser, **PI-4** scenari tracciati (dopo CICLO D6) | PRATICHE §5 e §8 | in quest'ordine, una PR ciascuno |
 | ⬜ | **Ciclo di sessione e menu**: Fase 0 (ADR-0068, contratti, D1-D6), poi F1-F4 | [CICLO-SESSIONE](PIANO-CICLO-DI-SESSIONE-E-MENU.md) §5 | le D1-D6 del DM |
 | ⬜ | **RIPRESA-PR** 4g e 4h; PR aperte #99 e #106 | RIPRESA-PR, §3 qui sopra | `python3 scripts/contenuti_nei_rami.py --fetch` |
+| ⬜ | **Le azioni della CI su Node.js 20**, deprecato: `actions/checkout@v4`, `actions/setup-python@v5`, `actions/upload-artifact@v4` girano già forzate su Node.js 24 (avviso in ogni esecuzione dal 2026-09-24) | PRATICHE PI-3 | Dependabot per `github-actions` le propone da solo; altrimenti si alzano a mano di una versione maggiore, in una PR sua |
+| ⬜ | **`ubuntu-latest` passa a Ubuntu 26 dal 19 ottobre 2026** (avviso di GitHub) | PRATICHE PI-3 | prima di quella data: o si fissa `runs-on: ubuntu-24.04`, o si prova la CI su `ubuntu-26.04` in una PR e si tiene `latest` |
+| ⬜ | **`validate_lingua` rosso su `main`**: 24 refusi in 8 file (misurato il 2026-09-24). Il passo è non bloccante, ma GitHub lo annota come errore («exit code 1») anche con la CI verde, e confonde chi legge | nessun piano: nasce qui | `python3 scripts/validate_lingua.py`, poi correggere in una PR di soli refusi |
 | ✅ | **L'esperimento BDD**: feature, step e i 16 mutanti restano come prova riproducibile, fuori dalla CI | [RICERCA-BDD-O-TDD](RICERCA-BDD-O-TDD-2026-09.md) §3 | `plans/esperimenti/bdd-gruppo-nuovo/` |
 
 ### 7.3 · Decise in questa tornata, da NON ridiscutere

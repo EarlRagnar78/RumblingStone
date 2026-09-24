@@ -417,6 +417,19 @@ giocare**. Il rimedio è piccolo e la legenda ce l'ha già: `🚪` sul fronte di
 box, oppure `🧱` per i divisori, che è `blocks_movement: false` e `cover: half`,
 cioè esattamente un separé da stalla.
 
+🔎 **Rimisurato il 2026-09-24, e la causa è più precisa di così.** Una visita in
+ampiezza dalla porta sul canale (B9), con `blocks_movement` letto da
+`scripts/legend.json`: **220 celle libere, 184 raggiungibili, 36 isolate**, cioè
+i tre box da 12, con dentro i due `🟢`. Il master è identico al compilato del
+JSON, quindi il difetto sta in `tarsilia-stalle.json`: le cinque linee interne
+portano `🏰` e l'etichetta *«Assi di separazione dei box, alte 1,5 m: copertura,
+si scavalcano con Acrobazia CD 10»*, la stessa regola che il testo del Giorno 2
+§6 scrive per i box. Il simbolo contraddice l'etichetta che gli sta accanto:
+`🏰` è alto 4,5 m nel render e blocca tutto, `🧱` è alto **1,5 m** e dà
+copertura. Con `🧱` sulle cinque linee le celle isolate vanno a **zero** e
+l'export passa da **36 a 20 muri**. La correzione è contenuto del modulo, e
+aspetta la conferma del DM.
+
 **Cosa cambia nel lotto.** Il rumore **non** è zero, quindi il gate nasce non
 bloccante come `validate_lingua`, `validate_prosa` e `validate_tipografia`. Ma
 soprattutto nasce un prerequisito che questo piano non aveva visto.

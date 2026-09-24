@@ -664,7 +664,7 @@
     },
     {
       "name": "session_wizard",
-      "description": "«La sessione è appena finita e ho la testa piena: come fisso quello che è successo prima di dimenticarlo?»\n\nWizard di fine sessione: Q&A con default -> session log canonico conforme al template, committato subito (ADR-0007).",
+      "description": "«La sessione è appena finita e ho la testa piena: come fisso quello che è successo prima di dimenticarlo?»\n\nWizard di fine sessione: Q&A con default -> session log canonico conforme al template, con in testa il front-matter dei delta (villain per png_id, risolti contro state.yaml), committato subito (ADR-0007).",
       "use_case": "«La sessione è appena finita e ho la testa piena: come fisso quello che è successo prima di dimenticarlo?»",
       "invocation": "python3 scripts/session_wizard.py",
       "inputSchema": {
@@ -699,7 +699,7 @@
     },
     {
       "name": "state_apply",
-      "description": "«Le proposte di state_sync le ho lette e vanno bene: come le scrivo senza toccare la prosa che è mia?»\n\nApplica il sottoinsieme meccanico delle proposte di state_sync SOLO nelle regioni marcate 'auto:' di state.md, con diff e conferma (ADR-0007).",
+      "description": "«Le proposte di state_sync le ho lette e vanno bene: come le scrivo senza toccare la prosa che è mia?»\n\nApplica le scritture meccaniche di fine sessione in state.yaml (March Clock, clock e stato dei villain) e lo storico in state-changelog.md, con diff e conferma (ADR-0007); legge il front-matter dei delta del log, e solo senza ricade sulla regex di state_sync.",
       "use_case": "«Le proposte di state_sync le ho lette e vanno bene: come le scrivo senza toccare la prosa che è mia?»",
       "invocation": "python3 scripts/state_apply.py",
       "inputSchema": {
@@ -707,7 +707,7 @@
         "properties": {
           "migrate": {
             "type": "boolean",
-            "description": "Inserisce i marker auto: (idempotente)."
+            "description": "Marca la regione changelog di state-changelog.md (idempotente)."
           },
           "session": {
             "type": "string",

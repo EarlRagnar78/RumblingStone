@@ -87,10 +87,10 @@ Gli script Python usano solo stdlib; ognuno con argparse espone anche
 |---|---|---|---|---|
 | `update_xp.py` | Registro XP cumulativo per PG | `--check` (mostra il diff, non scrive) | `campaign/sessions/*.md` `## XP awarded` | `campaign/pg/xp-ledger.md` (auto) |
 | `state_sync.py` | Propone modifiche al canone di campagna dopo una sessione, **dicendo in quale dei tre master va ciascuna** (ADR-0050) | `--since YYYY-MM-DD` · `--session <file>` | `## World events triggered` nei log | report diff markdown (il DM applica a mano) |
-| `state_apply.py` | **Applica** il sottoinsieme meccanico delle proposte — changelog dentro la regione `auto:`, e **in `campaign/state.yaml`** March Clock (D14), clock dei villain e `stato` su morte e fuga (D16) — con diff e conferma per blocco (ADR-0007); rigenera le regioni `gen:state:` dopo aver toccato il master | `--migrate` (inserisce i marker, idempotente) · `--session <file>` · `--check` · `--yes` · `--commit` | proposte di `state_sync` + regioni `auto:` + `state.yaml` | `state.yaml`, `state.md` e `state-changelog.md` aggiornati (su conferma; commit dedicato) |
+| `state_apply.py` | **Applica** il sottoinsieme meccanico delle proposte — changelog dentro la regione `auto:`, e **in `campaign/state.yaml`** March Clock (D14), clock dei villain e `stato` su morte e fuga (D16) — con diff e conferma per blocco (ADR-0007); rigenera le regioni `gen:state:` dopo aver toccato il master. Legge il **front-matter dei delta** del log (villain per `png_id`, tutto o niente); solo senza ricade sulla regex di `state_sync` | `--migrate` (inserisce i marker, idempotente) · `--session <file>` · `--check` · `--yes` · `--commit` | proposte di `state_sync` + regioni `auto:` + `state.yaml` | `state.yaml`, `state.md` e `state-changelog.md` aggiornati (su conferma; commit dedicato) |
 | `render_state.py` | Genera le **otto tabelle** di `state.md` da `state.yaml`: master e vista, mai due master | `--check` (gate CI) · `--stdout` | `campaign/state.yaml` | regioni `<!-- gen:state:… -->` di `campaign/state.md` |
 | `next_session.py` | Brief DM + teaser player per la prossima sessione (aggregatore deterministico: hook aperti, finestre §0 vs March Day, party §1, clock villain ≤2 tick) | `--last-n N` · `--hype` (vesti Homebrewery) | `state.md` + `sessions/*.md` | `campaign/next/brief-*-DM.md` (⚠️ SOLO DM) · `teaser-*-PLAYERS.md` (spoiler-safe) · `next/homebrew/*.hb.md` |
-| `session_wizard.py` | Wizard guidato di fine sessione: Q&A con default → session log canonico dal template (formato garantito per `update_xp`/`state_sync`), commit automatico | `--answers <file.json>` (non-interattivo, test/CI) · `--out <nome>` · `--no-commit` · `--no-guard` (solo test) | risposte del DM | `campaign/sessions/YYYY-MM-DD_session-N.md` |
+| `session_wizard.py` | Wizard guidato di fine sessione: Q&A con default → session log canonico dal template (formato garantito per `update_xp`/`state_sync`), con in testa il **front-matter dei delta** risolti contro `campaign/state.yaml` (`dmcore/delta_sessione.py`, lotto 4e), commit automatico | `--answers <file.json>` (non-interattivo, test/CI) · `--out <nome>` · `--no-commit` · `--no-guard` (solo test) | risposte del DM | `campaign/sessions/YYYY-MM-DD_session-N.md` |
 | `campaign_branch.py` | Guardia e gestione del branch-per-gruppo (mai canone su `main`) | `status` · `guard` · `ensure [--group <nome>]` | `campaign/group.yaml` + git | branch `campaign-group-<nome>` attivo / exit code per la guardia |
 
 ### Materiali giocatore / DM (Homebrewery V3)
@@ -155,7 +155,10 @@ python3 scripts/dm.py recap --hype                                    # 1-2 days
 - **Add a map**: drop a new YAML in `scripts/map_templates/` (copy an
   existing one). `suggest_map.py` picks it up on next run.
 - **New trigger for state_sync**: edit the `TRIGGERS` regex list at the top
-  of `scripts/state_sync.py`.
+  of `scripts/state_sync.py`. ⚠️ Serve solo ai log **senza** front-matter: per
+  una scrittura meccanica nuova il posto è il delta
+  (`scripts/dmcore/delta_sessione.py`), che nomina per `png_id` invece che per
+  nome.
 
 ## Mappe di qualità professionale (stile "pergamena")
 

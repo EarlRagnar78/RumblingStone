@@ -13,6 +13,14 @@ Triggers recognized (regex, case-insensitive):
   - "Sonjak escaped/killed", "Salvatore ...", etc.
   - Alliance changes: "druidi confermati", "Dauth +N", "Rethmar +N", etc.
 
+⚠️ The villain names are written in the regexes below, and they are the ones
+that existed when the regexes were written: on 2026-09-24 `villain_clock` saw
+3 clocks out of 9 and `npc_killed` 5 deaths out of 13 (Ghaurush, Zin'thara and
+Ushgar: none). Since lot 4e a session log can carry a `delta:` front-matter
+naming villains by `png_id` (`dmcore/delta_sessione.py`, written by the
+wizard): when it is there, `state_apply` writes from it and ignores these
+triggers. They remain for logs without it.
+
 Output is a MARKDOWN DIFF REPORT, never overwriting state.md automatically.
 The DM reviews and applies. Zero risk of corrupting canon.
 

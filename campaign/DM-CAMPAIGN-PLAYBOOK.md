@@ -197,11 +197,15 @@ Template minimale (6 campi):
 
 Quando il gruppo va a casa, esegui questi 5 passi nell'ordine.
 **Scorciatoia v2 (ADR-0007)**: sul branch del gruppo,
-`python3 scripts/dm.py session end --session <file>` fa ledger XP +
-**applica** (dopo tua conferma, diff alla mano) i cambi meccanici di
-state.md — March Clock e changelog §8 — nelle regioni marcate `auto:`,
-e committa. Il resto del 4.2 (prosa, PNG, alleanze) resta manuale e ti
-viene stampato come proposta. Prima volta: `dm.py session branch --group
+`python3 scripts/dm.py session end` apre il wizard, che scrive il log con
+in testa i **delta** della serata (March Clock, clock e stato dei villain,
+coi nomi già agganciati a `state.yaml`: se un nome non aggancia, te lo dice
+subito). Poi fa il ledger XP e **applica** (dopo tua conferma, diff alla
+mano) quei delta in `campaign/state.yaml`, rigenera le tabelle di
+`state.md` e appende allo storico in `state-changelog.md`, e committa. Con
+`--session <file>` salta il wizard; un log scritto a mano senza delta passa
+dalla vecchia regex, che conosce solo alcuni nomi. Il resto del 4.2 (prosa,
+PNG, alleanze) resta manuale e ti viene stampato come proposta. Prima volta: `dm.py session branch --group
 <nome>` + `state_apply.py --migrate --commit` (vedi
 [`DM-QUICKSTART-NUOVI-DM.md`](DM-QUICKSTART-NUOVI-DM.md)).
 **Scorciatoia v1 (sempre valida)**: `python3 scripts/dm.py post` aggiorna

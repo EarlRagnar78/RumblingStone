@@ -64,6 +64,11 @@ SOLO se valgono **tutte insieme**:
    **quattro** cose: `march_clock.giorno_corrente`, il `clock` dei villain, e il
    loro `stato` su morte e fuga. Tutto il resto — prosa, §1 party, alleanze —
    resta **proposta a video**, e la proposta dice **in quale dei tre master** va.
+   **Da dove le legge** (lotto 4e): dal front-matter `delta:` del log, che
+   scrive il wizard e che nomina i villain per `png_id`. Un log senza
+   front-matter ricade sulla regex di `state_sync`, che conosce solo i nomi
+   scritti nel suo sorgente (3 clock su 9, 5 morti su 13 il 2026-09-24). Un
+   delta che non torna con lo stato di oggi non scrive **niente**.
    ⚠️ `state_apply` scrive `stato` ma **non** `reversibile`: se il canone prevede
    un ritorno lo dice il DM, e la regola R9 di `validate_state` glielo chiede.
 4. **Reversibilità**: i tre master puliti in git prima dell'apply, commit
@@ -77,13 +82,14 @@ l'ADR: fermarsi e proporre il flusso corretto.
 
 | Comando | Cosa fa | Script sottostanti |
 |---|---|---|
-| `session end` | wizard guidato fine-sessione (senza `--session`): log canonico in `campaign/sessions/`, blocchi `## Split — <PG> @ <luogo>` se il party si divide, poi ledger XP → diff `state.md` (solo regioni auto) → conferma → commit | `session_wizard` + `update_xp` + `state_apply` |
+| `session end` | wizard guidato fine-sessione (senza `--session`): log canonico in `campaign/sessions/` con in testa il **front-matter dei delta** (villain per `png_id`, risolti contro `state.yaml` mentre il DM risponde), blocchi `## Split — <PG> @ <luogo>` se il party si divide, poi ledger XP → diff di `state.yaml` e della vista → conferma → commit | `session_wizard` + `update_xp` + `state_apply` |
 | `session next [--hype]` | brief ⚠️SOLO-DM (finestre quest, clock ≤2 tick, hook aperti, `❓ forse già giocato`) + teaser player spoiler-safe in `campaign/next/` | `next_session` |
 | `session recap [--pg <PG>]` | recap di gruppo o personale per-PG (visibilità: i blocchi Split li vede solo quel PG; `## DM notes (private)` non esce MAI) | `session_recap` + `hype_homebrew --pg` |
 | `session status` / `session branch --group <nome>` | stato branch/guardie · setup branch di gruppo + `campaign/group.yaml` | `campaign_branch` |
 
 Setup una-tantum di un nuovo gruppo: `dm.py session branch --group <nome>`
-poi `state_apply.py --migrate --commit` (inserisce i marker `auto:`).
+poi `state_apply.py --migrate --commit` (marca la regione `changelog` di
+`state-changelog.md`; in `state.md` non c'è più niente da marcare).
 
 ## Altri sottocomandi
 

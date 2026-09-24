@@ -133,6 +133,23 @@ delta si estraevano con **regex sulla prosa**, e i clock dei villain con una
 sarebbe stato visto. Un log **senza** front-matter continua a funzionare via
 regex: nessuna sessione già scritta va riscritta.
 
+**Attuazione (2026-09-24, lotto 4e di `PIANO-RIPRESA-PR-ABBANDONATE` §4.9).**
+Lo schema qui sopra è quello della #99, e D14 l'ha superato in un punto: il
+March Clock non va più in una regione `auto:` di `state.md` ma nel campo
+`march_clock.giorno_corrente` di `state.yaml`, come i clock. Oggi la via è:
+
+```
+session log (markdown + front-matter `delta:`, villain per png_id)
+        └─ state_apply            tutto o niente, diff e conferma per voce
+             ├─ March Clock, clock, stato → state.yaml → render_state → state.md
+             └─ riga storico              → state-changelog.md (regione auto:)
+```
+
+Il front-matter lo scrive `session_wizard`, che risolve i nomi contro
+`state.yaml` mentre il DM risponde. Il codice è `scripts/dmcore/delta_sessione.py`.
+La misura che lo giustifica, presa lo stesso giorno sui tredici villain: la
+regex ne vedeva **3 clock su 9** e **5 morti su 13**.
+
 ### 5. `[INFERRED]` come record
 
 Non più una stringa da cercare col grep, ma una voce con `id`, `dove`, `domanda`,

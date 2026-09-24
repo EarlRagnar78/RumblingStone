@@ -101,8 +101,9 @@ tutti esistenti.
 - 🟡 **F3 · #106**: 3a-3c chiusi. Resta **3d**, che è la decisione D2 del
   piano: il collaudo SDXL di due immagini accanto alle Gemini, sulla macchina
   del DM.
-- 🟡 **F4 · #99**: 4a, 4b, 4c e 4d (4d-1 … 4d-8) chiusi. Restano **4e** (una
-  sola via di scrittura) e **4f** (prodotto e partita).
+- 🟡 **F4 · #99**: 4a, 4b, 4c, 4d (4d-1 … 4d-8) e **4e** (una sola via di
+  scrittura, 2026-09-24) chiusi. Restano **4f** (prodotto e partita), **4g**
+  (schede PG a dati) e **4h** (`groups/<slug>/`, PR dedicata).
 
 ### ② Ricerca sul mestiere — tutta da eseguire
 
@@ -120,7 +121,7 @@ settembre, e non conosceva la #143.*
 |---|---|---|---|
 | **#143** | contenuto portato su `main` | `PIPELINE-IBRIDE`, riga del CHANGELOG del 2026-09-24 | ✅ **chiusa il 2026-09-24**: il piano è entrato con la #160, l'ADR come **0067** (lo 0050 era occupato) |
 | **#106** | abbandonata, **non** superata | ① F3 · 3d | resta aperta finché il DM non ha fatto il collaudo SDXL (D2): serve la sua GPU |
-| **#99** | abbandonata, **non** superata | ① F4 · 4e, 4f | si svuota: 4e e 4f sono gli ultimi due lotti |
+| **#99** | abbandonata, **non** superata | ① F4 · 4f, 4g, 4h | si svuota: restano tre lotti, e 4h vuole una PR sua |
 
 ⚠️ **Nessuna delle due si mergia com'è.** Hanno una base di agosto: se ne porta
 il **contenuto**, non i commit, come si è fatto con la #143.

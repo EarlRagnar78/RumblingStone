@@ -576,8 +576,8 @@ diciotto.
 > | **4a** ✅ `validate_docs` | **C** costruzione | `[Sonnet 5 · medio-alto · il gate boccia una cartella documentata e inesistente, e **non** boccia i 4 falsi positivi noti]` — **chiuso 2026-09-07: 6 difetti veri, zero falsi positivi** |
 > | **4b** ✅ link, path locali e un ADR | **K** canone (era **M**) | `[Opus 5 · alto · `python3 scripts/validate_docs.py --sorgenti` esce 0 su **701 documenti**; ADR-0048 riverificato riga per riga contro il codice di oggi]` — **chiuso 2026-09-10: 22 difetti veri, 9 falsi positivi corretti nel validatore** |
 > | **4c** ✅ i due tempi di `state.md` | **K** canone | `[**Opus 5, mai delegato** · xhigh · nessun contenuto cancellato, solo etichettato; l'insieme si conta con `grep -n "resurrection\|resurrezione" campaign/state.md` — **15 righe**, di cui 4 al tempo sbagliato e 6 nel changelog append-only, lasciate intatte]` — **chiuso 2026-09-12: 4 asserzioni al tempo sbagliato, 2 costi mai versati, 1 verbo al passato** |
-> | **4d** `state.yaml` (ADR-0017) | **K** canone | `[**Opus 5** · xhigh-max · `state.md` **rigenerato è identico** a quello committato]` |
-> | **4e** una sola via di scrittura | **C** costruzione | `[Sonnet 5 · alto · un test **sui file veri**, non su fixture — vedi §4.4]` |
+> | **4d** ✅ `state.yaml` (ADR-0017) | **K** canone | `[**Opus 5** · xhigh-max · `state.md` **rigenerato è identico** a quello committato]` — **chiuso 2026-09-16/17 (4d-1 … 4d-8), riverificato il 2026-09-24** (§4.9.0) |
+> | **4e** ✅ una sola via di scrittura | **C** costruzione | `[Sonnet 5 · alto · un test **sui file veri**, non su fixture — vedi §4.4]` — **chiuso 2026-09-24** (§4.9): il front-matter coi delta, 8 mutazioni su 8 rosse |
 > | **4f** prodotto e partita | **C** costruzione | `[Sonnet 5 · alto · un test che dimostra che il reset **non eredita niente**]` |
 > | **4g** schede PG a dati | **K** canone | `[**Opus 5** · alto · le schede generate combaciano con quelle scritte a mano]` |
 > | **4h** `groups/<slug>/` | **G** giudizio | `[Opus 5 · xhigh · **PR dedicata**, come dice la #99 stessa]` |
@@ -1169,7 +1169,7 @@ Vale per **ogni** commit di **ogni** fase.
 | **Attuazione di ADR-0048** — `scripts/legend.yaml` e i consumatori che ne derivano. L'ADR è *accettata, non attuata*: una decisione **senza cancello** finché il lotto non si chiude | lotto **1.1** di [`PIANO-VENDIBILITA`](PIANO-VENDIBILITA.md) | C |
 | 🆕 **I salti di titolo nei booklet** — `HB_TAGS` emette un `#####` sotto un `#`: veraPDF lo rifiuta (PDF/UA 7.4.2-1), e due booklet **non sono committabili** finché non si corregge. Trovato chiudendo E1; il test che lo prende guarda **solo** `10-stand-alone/` | `build_booklet_html.py` | C |
 | ~~**I 51 link rotti nei booklet generati**~~ | ✅ **chiuso 2026-09-12, lotto E1** (§4.7). Erano **44**, non 51 — nono presupposto invecchiato — e non erano un difetto solo: **41 di profondità** nel generatore, **3 falsi positivi** del validatore. Adesso **0** | C |
-| **4e** una sola via di scrittura · **4f** prodotto e partita | §4.2, dipendono da 4d | C |
+| ~~**4e** una sola via di scrittura~~ ✅ chiuso 2026-09-24 (§4.9) · **4f** prodotto e partita | §4.2, dipendono da 4d | C |
 | **`validate_prosa`: 161 rilievi in 340 file** (non bloccante). ⚠️ Il piano diceva «13»: era una misura vecchia e di un altro validatore | `scripts/validate_prosa.py` | M |
 
 ### 4.7 · Lotto **E1** — i link dei booklet generati `[✅ chiuso 2026-09-12]`
@@ -1740,7 +1740,7 @@ del commit, che è esattamente il lavoro per cui esiste.
 | | Cosa | Numero |
 |---|---|---|
 | ⬜ | **la chiave verso `Bestiario/`** — campo `scheda:` + cancello che verifica il percorso; è il lotto successivo, deciso dal DM | 2 villain e 8 PNG da risolvere a mano |
-| ⬜ | le tabelle ancora non modellate (§2.2, §2.3, §2.5, §5, §7.R) | **46 righe** |
+| 🔵 | le tabelle ancora non modellate (§2.2, §2.3, §2.5, §5, §7.R) | **46 righe**: non un residuo, sono **prosa dichiarata** (verificato il 2026-09-24, §4.9.0) |
 | ⬜ | §7 fili narrativi: semi-strutturati, e modellarli adesso vorrebbe dire indovinare uno schema | 24 bullet |
 
 #### 4.8.10 · Lotto **4d-4** — la chiave verso il Bestiario (D17 chiusa)
@@ -1817,7 +1817,7 @@ forza nel `Bestiario/`** — due boss da GS 13 stanno in un arco.
 | | Cosa | |
 |---|---|---|
 | ⬜ | `stato` sale dall'anagrafica: allora anche i PNG di §4 ne hanno uno | il `tipo` esiste già per quel giorno |
-| ⬜ | tabelle non modellate (§2.2, §2.3, §2.5, §5, §7.R) | 46 righe |
+| 🔵 | tabelle non modellate (§2.2, §2.3, §2.5, §5, §7.R) | 46 righe, **prosa dichiarata** (§4.9.0) |
 
 #### 4.8.11 · Lotto **4d-5** — i PNG d'arco che nessuno strumento raggiungeva
 
@@ -2159,7 +2159,7 @@ doppi ridotti a uno: **tredici record in meno, zero creature in meno**.
 | **Nessuna perdita** | ogni riga tabellare delle sei sezioni coperte ha un record in `state.yaml`, contata nei **due sensi** |
 | **Non-regressione** | i **20 file** che toccano `state.md` — 737 test verdi, `dm.py doctor --ci`, `next_session`, `session_recap` |
 
-### 4.9 · Lotto **4e** — una sola via di scrittura `[4e-0 ✅ audit · 4e-1 ✅ · 4e-2 ✅ · 4e-3 ⬜]`
+### 4.9 · Lotto **4e** — una sola via di scrittura `[✅ chiuso il 2026-09-24 · 4e-0 · 4e-1 · 4e-2 · 4e-3]`
 
 > `[C costruzione · Opus 5, sessione principale (il piano diceva Sonnet 5) · alto ·
 > un test **sui file veri** (§4.4): i tredici villain di `campaign/state.yaml`
@@ -2312,6 +2312,32 @@ via le altre che ha appena dato.
 | senza `state.yaml` | ✅ il log esce senza front-matter, come prima di 4e |
 | 🔴 i cancelli mordono | ✅ **3 mutazioni su 3** rosse: voce non validata da sola, nome ambiguo che sceglie il primo, front-matter non scritto |
 | non-regressione | ✅ **1.234** test, `dm.py doctor --ci`, `tools_manifest --check` |
+
+#### 4.9.6 · 4e-3 e la chiusura del lotto (2026-09-24)
+
+I documenti che descrivevano la via di scrittura di prima, e cosa dicono ora:
+
+| Documento | Diceva | Dice |
+|---|---|---|
+| skill `rumblingstone-automation` | «diff `state.md` (solo regioni auto)»; `--migrate` «inserisce i marker `auto:`» | il front-matter, il diff di `state.yaml` e della vista; `--migrate` marca solo lo storico |
+| `DM-CAMPAIGN-PLAYBOOK` §4 | «March Clock e changelog §8 nelle regioni marcate `auto:`» di `state.md` | il wizard scrive i delta, `state_apply` li porta in `state.yaml` |
+| `tools.manifest.json` (e `docs/tools/`) | `state_apply` scrive «SOLO nelle regioni `auto:` di state.md» | scrive in `state.yaml` e legge il front-matter; il wizard dichiara `state.yaml` come ingresso facoltativo |
+| ADR-0050 §4-bis | lo schema della #99, col March Clock in una regione `auto:` | una nota d'attuazione con lo schema di oggi (D14 l'aveva superato) |
+| `session-template.md`, `README-automation`, docstring di `state_sync` | niente sul front-matter | dove sta, chi lo scrive, e che la regex vale solo senza |
+
+**Nessuna ADR nuova.** La decisione c'era già, ADR-0050 §4-bis, scritta per la
+#99 il 6 agosto: questo lotto l'attua.
+
+**Come si sa che 4e è finito**, contro il criterio di §4.9: i tredici villain
+di `state.yaml` si raggiungono tutti dal log (10 clock numerici e 13 stati,
+ciascuno sul suo record), un delta vecchio o un `png_id` inesistente lasciano i
+tre master identici, e la prova gira sui file veri. **8 mutazioni su 8** fanno
+rosso fra 4e-1 e 4e-2.
+
+**Cosa resta di F4**: **4f** (prodotto e partita: il reset per gruppo nuovo
+dovrà conoscere `state.yaml`, `state-changelog.md` e adesso anche il
+front-matter), **4g** (schede PG a dati), **4h** (`groups/<slug>/`, PR
+dedicata).
 
 ## Come si misura che il piano è finito
 

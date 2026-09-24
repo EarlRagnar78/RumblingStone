@@ -116,8 +116,8 @@ l'Anello si **intiepidisce di luce dorata** quando le passa vicino (Sapienza Mag
 CD 14 per accorgersene; altri PG possono vederlo brillare).
 
 > **Read-aloud (DM, solo per Artemis):**
-> *La vecchia ha gli occhi bianchi come latte, ma quando ti avvicini gira la testa
-> esatta verso di te, prima che tu dica una parola. Ti porge una pagnotta senza che
+> *La vecchia ha gli occhi bianchi come latte, e gira la testa esatta verso di te
+> prima che tu dica una parola. Ti porge una pagnotta senza che
 > tu l'abbia chiesta.*
 > *"Non ho spiccioli da cambiarti, quindi te la do e basta. Tu di monete ne hai
 > poche in tasca e molte al dito, vero?" Sorride. "Ti diranno che una maschera ti
@@ -151,10 +151,10 @@ avverte del prezzo. La scelta è sua. Quattro rami.
 #### Ramo GRAY-A — *Indossa la Maschera e accetta il debito*
 Artemis mette la Maschera di Beriah una volta.
 
-> **Read-aloud:** *Per un respiro vedi Dauth come la vede Lui: il taglio invisibile
-> tra ogni sorriso e la sua bugia, la lama nascosta nella manica del banditore, la
-> paura sotto la sicumera dei nobili. È vertiginoso. Poi la togli, e il mondo torna
-> opaco — ma un filo di quella vista ti resta.*
+> **Read-aloud:** *Per un respiro Dauth si mostra come la vede Lui: il taglio
+> invisibile tra ogni sorriso e la sua bugia, la lama nascosta nella manica del
+> banditore, la paura sotto la sicumera dei nobili. Poi la maschera scende, e il
+> mondo torna opaco — ma un filo di quella vista resta.*
 
 - **Beneficio meccanico**: **+5 competenza a Osservare e Percepire Intenzioni per
   tutta la permanenza a Dauth** (Day 30–32); una volta a scena, *lettura del

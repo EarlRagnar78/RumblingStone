@@ -53,7 +53,7 @@ Cartella `Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/`:
 | Rituale 2 — Trial of the Deep Hall | tempio profano Underdark | Moradin's Insight (True Seeing 1/giorno; +4 Artigianato-fabbro) | ✅ giocato `[INFERRED: verificare che il giocatore lo stia usando]` |
 | Gemma TOPAZIO (Tempo Immutabile) | rituale Piano del Fuoco (P3) | viaggio temporale 1/mese (costo: invecchia 1d10 anni) | ✅ **unica gemma accesa OGGI** (D8/D16) |
 | Rituale 3 — Anvil of the World + Gemma SMERALDO | Piano della Terra (P4, IN CORSO) | Adamantine Will; Muro di Pietra / Terremoto controllato 1/settimana (1.000 mo) | 🟡 in palio |
-| Gemma RUBINO (Dwarven Might) + Rituale 4 — Siege of the Eternal Forge | vittoria nella battaglia antica (P5) | buff forza/coraggio 1/settimana; Mantle of Stone and Spirit; **il Rubino si consuma nel ritorno al 1372** (D16) | ⬜ da giocare — Rubino poi SPESO |
+| Gemma RUBINO (Dwarven Might) + Rituale 4 — Siege of the Eternal Forge | vittoria nella battaglia antica (P5) | ***Aura della Forgia Eterna*** 1/settimana — *Possenza Divina* e *Protezione dal Male* ai quattro; *Possenza Divina*, *Protezione dal Male*, *Benedizione* e uno *Scolpire Pietra* a ogni nano entro 30 m; **+4 morale** ad attacchi e TS per i nani in vista; nemici **Volontà CD 20** o **scossi** 1 minuto. La prima volta dura **fino all'alba**. Più **Corona +3**, **Senzienza**, e **il Rubino si consuma nel ritorno al 1372** (D16). ⚠️ **Il Mantle of Stone and Spirit NON è di questo rituale**: è del **Rituale 3** — vedi r.145 e la scheda giocatore r.35 (correzione DM 2026-09-20: la regola è che decide la scheda che il giocatore ha letto) | ⬜ da giocare — Rubino poi SPESO |
 
 ## 2. AEGIS FANG (Thorik)
 
@@ -70,14 +70,19 @@ Cartella `Artefatti-Pg/Aegis Fang/`:
 | `DEPRECATO-Avvneture_per_nani-refuso-duplicato.txt` | appunti, duplicato byte-identico | 📸 deprecato (T6a: `git mv` dal refuso `Avvneture_per_nani.txt`, banner in testa) |
 | `~$gis Fang.docx`, `~WRL0191.tmp` | file temporanei Word | ✅ **RIMOSSI (conferma DM 2026-07-04)** — `git rm`, erano lock/autosave Word senza contenuto utile |
 
-> **↩ Eco del rituale P3B (T9)**: se al rituale di Hella **Thorik ha scelto
-> l'alternativa «Filo dell'Ascia»** invece del sangue, **Aegis Fang perde la
-> proprietà *Returning*** fino al pieno risveglio (post-Siege,
-> `05_Aegis_Fang_Final_Awakening.html`): ogni lancio dell'ascia va recuperato
-> a mano. **Riportato** nel master `00_Aegis_Fang-MASTER-DM.md` (§ *Costi e
-> vincoli*) in T6b. Fonte: `../../07_il Portale Della Forgia
-> Eterna/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` §2-BIS → *Tabella
-> echi*, riga «Alternativa Filo dell'Ascia».
+> **↩ Eco del rituale P3B (v4-bis, DM 2026-09-12)**: Aegis Fang **non viene
+> donata** al rituale di Hella — il dono di Thorik è il **+2 di deflessione
+> della Corona**. L'arma però è **senziente (Ego 14)** e reagisce alla scelta
+> del portatore: 🟢 se dona, **smette di dubitare di lui** (nessuna prova di
+> opposizione per un arco); 🔴 se rifiuta, **lo giudica** nelle scene che
+> riguardano Hella o dei nani da proteggere. **Riportato** nel master
+> `00_Aegis_Fang-MASTER-DM.md` (§ *Costi e vincoli*). Fonte:
+> `../../07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md` §5.
+>
+> ⚠️ **Superata la riga precedente**, che toglieva il *Returning* col «Filo
+> dell'Ascia»: contraddiceva il profilo dello Stadio 1 (*«+4 Sacra
+> **Ritornante**»*). Istantanea in
+> `../../07_il Portale Della Forgia Eterna/_ARCHIVIO/doni-v1-2026-09-12/`.
 
 ## 3. RING OF CHAOTIC ILLUMINATION (Artemis)
 

@@ -35,7 +35,7 @@ Allineamento: caotico neutrale o caotico buono (se alleato ad Artemis).
 
 Ogni cristallo può essere trattato come oggetto con le seguenti caratteristiche base:
 
-- CA: 5 (taglia Piccola, bonus di destrezza nullo).  
+- CA: 5 (taglia Piccola, bonus di Destrezza nullo).  
 - PF: 40.  
 - RD: 5/— contro danni fisici.  
 - Immunità: incantesimi di mente, veleno, effetti di morte, critici.  

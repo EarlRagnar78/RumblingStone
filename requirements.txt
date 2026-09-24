@@ -1,0 +1,37 @@
+# Dipendenze di ESECUZIONE degli strumenti del DM — scripts/
+#
+# ⚠️ Leggi prima ADR-0037 (`plans/adr/ADR-0037-stdlib-only-e-le-sue-eccezioni.md`).
+# La regola del repo resta **stdlib-only**, e questo file non la annulla: elenca
+# le tre eccezioni che esistono davvero, con chi le usa e cosa succede senza.
+# Il motivo della regola non è estetico — gli strumenti girano sul portatile del
+# DM la sera della sessione, spesso senza rete, e un `pip install` che fallisce
+# alle 20:45 è un booklet che non si stampa.
+#
+# Misurato sul repo il 2026-09-21 (`ast` su tutti i `scripts/**/*.py`): fuori
+# dalla libreria standard ci sono **queste tre e nient'altro**. `bpy` e
+# `mathutils` non sono qui perché non si installano con pip: sono il Python
+# interno di Blender, e `scripts/blender/` gira dentro Blender.
+#
+# ⚠️ `converters/` NON è coperto da questo file. È un mondo a parte (motori PDF,
+# OCR, modelli), dichiarato tale in AGENTS.md, e ha le sue dipendenze.
+#
+#   installa tutto:   pip install -r requirements.txt
+#   per sviluppare:   pip install -r requirements-dev.txt
+
+# ── obbligatoria ─────────────────────────────────────────────────────────
+# 13 file, fra cui dmcore/statedata.py: senza, lo stato di campagna non si
+# legge e i cancelli delle skill non partono. Non degrada: è un debito vero,
+# e ADR-0037 lo dice.
+pyyaml>=6.0
+
+# ── opzionali, con degradazione dichiarata ───────────────────────────────
+# build_image_derivatives.py (stampa come installarla ed esce 1) e
+# build_booklet_html.py (le immagini restano a risoluzione piena).
+Pillow>=10.0
+
+# compress_skills.py e measure_tokens.py. Senza, entrambi ripiegano su una
+# stima (parole × 1,3 e caratteri ÷ 4): il numero peggiora, il comando parte.
+# 🔎 Trovata misurando il 2026-09-21: è la **terza** libreria del repo, e
+# ADR-0037 ne nominava due. Stessa forma della correzione su Pillow che l'ADR
+# già porta.
+tiktoken>=0.5

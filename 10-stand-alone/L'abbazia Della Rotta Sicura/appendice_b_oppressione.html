@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Appendice B — Il borgo, l'oppressione, il bestiario</title>
+<style>
+  :root{--ink:#241c14;--soft:#5a4a36;--parch:#efe4c8;--hi:#f8f1dd;--rule:#a8926a;--acc:#7c2f2f;--mar:#2d5470}
+  *{box-sizing:border-box}
+  body{margin:0;background:#2a2420;color:var(--ink);
+       font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;line-height:1.5}
+  .page{max-width:1180px;margin:0 auto;background:var(--parch);padding:36px 44px 60px;box-shadow:0 0 40px rgba(0,0,0,.5)}
+  h1{font-size:2rem;margin:0 0 2px;font-variant:small-caps;letter-spacing:.5px}
+  .sub{font-style:italic;color:var(--soft);margin:0 0 18px}
+  h2{font-variant:small-caps;letter-spacing:1px;font-size:1.4rem;border-bottom:2px solid var(--rule);
+     padding-bottom:4px;margin:40px 0 14px}
+  h3{font-size:1.08rem;margin:22px 0 6px;font-variant:small-caps;letter-spacing:.5px}
+  h4{margin:14px 0 4px;font-size:1rem;font-variant:small-caps}
+  p{margin:0 0 10px}
+  .meta{display:flex;flex-wrap:wrap;gap:8px 26px;font-size:.86rem;color:var(--soft);
+        border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:8px 0;margin-bottom:22px}
+  .meta b{color:var(--ink)}
+  figure{margin:0 0 22px}
+  figcaption{font-size:.82rem;color:var(--soft);font-style:italic;text-align:center;margin-top:6px}
+  svg{display:block;width:100%;height:auto;background:var(--hi);border:1px solid var(--rule)}
+  table{width:100%;border-collapse:collapse;font-size:.85rem;margin:8px 0 18px}
+  th,td{border:1px solid var(--rule);padding:5px 7px;text-align:left;vertical-align:top}
+  th{background:rgba(0,0,0,.07);font-variant:small-caps;letter-spacing:.5px}
+  tbody tr:nth-child(even){background:rgba(0,0,0,.025)}
+  td.no{background:rgba(124,47,47,.06);font-style:italic;color:#6b3030}
+  .ra{border-left:3px solid var(--acc);background:rgba(124,47,47,.06);padding:8px 12px;font-style:italic;
+      font-size:.92rem;margin:0 0 10px}
+  .sb{border:1px solid var(--ink);border-left:5px solid var(--acc);background:rgba(0,0,0,.03);
+      padding:8px 11px;margin:0 0 12px;font-size:.85rem;break-inside:avoid}
+  .sb .nm{font-variant:small-caps;font-weight:700;font-size:.98rem;display:block;margin-bottom:2px}
+  .sb .tt{display:block;margin-top:4px;color:#6b3030}
+  .adr{border:1px solid var(--rule);border-left:5px solid var(--soft);padding:10px 14px;margin:0 0 12px;
+       font-size:.9rem;break-inside:avoid}
+  .warn{border:1px solid var(--acc);background:rgba(124,47,47,.07);padding:10px 14px;margin:0 0 16px;font-size:.92rem}
+  .note{border:1px solid var(--mar);background:rgba(45,84,112,.07);padding:10px 14px;margin:0 0 16px;font-size:.92rem}
+  .cols{column-count:2;column-gap:28px;column-rule:1px solid var(--rule)}
+  @media(max-width:880px){.cols{column-count:1}.page{padding:20px}table{font-size:.8rem}}
+  ul{margin:0 0 10px;padding-left:20px}li{margin-bottom:3px}
+  .myst{border:1px solid var(--rule);padding:9px 12px;margin:0 0 12px;font-size:.88rem;break-inside:avoid;
+        background:rgba(0,0,0,.02)}
+  .myst b.k{font-variant:small-caps;color:var(--acc)}
+  @media print{body{background:#fff}.page{box-shadow:none;max-width:none;padding:0}
+    figure,.adr,table,.sb,.myst{break-inside:avoid}svg{border:1px solid #999}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<h1>Appendice B — Il borgo, l'oppressione e il bestiario</h1>
+<p class="sub">Complemento a <i>L'Abbazia della Rotta Sicura</i> e all'Appendice A — struttura d'atmosfera, storia e governo, dettaglio sensoriale, bestiario, prove, misteri, protocollo di playtest</p>
+
+<div class="meta">
+  <span><b>Aggiunge:</b> scala d'oppressione a 6 stadi</span>
+  <span><b>Storia e governo del borgo</b></span>
+  <span><b>39 schede sensoriali</b></span>
+  <span><b>13 blocchi di bestiario SRD</b></span>
+  <span><b>5 prove strutturate · 6 misteri</b></span>
+</div>
+
+<div class="warn">
+<b>La cosa più importante di questo documento, in una riga.</b> La scala dell'oppressione avanza sulle
+<i>scoperte</i>, non sul tempo. Un gruppo che indaga bene fa scendere il buio più in fretta di un gruppo
+che perde tempo. Questo è deliberato: l'orrore deve essere la ricompensa della bravura, non la punizione
+della lentezza. Se lo leghi all'orologio, ottieni l'effetto opposto e i giocatori impareranno a non fare nulla.
+</div>
+
+<!-- ================= SCALA OPPRESSIONE ================= -->
+<h2>La Scala dell'Oppressione</h2>
+
+<figure>
+<svg viewBox="0 0 880 210" role="img" aria-label="Scala dell'oppressione a sei stadi">
+  <defs>
+    <linearGradient id="dread" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#efe4c8"/><stop offset="1" stop-color="#3c3226"/>
+    </linearGradient>
+  </defs>
+  <rect width="880" height="210" fill="#f8f1dd"/>
+  <rect x="50" y="70" width="780" height="24" fill="url(#dread)" stroke="#241c14" stroke-width="2"/>
+  <g font-family="sans-serif">
+    <g fill="#241c14">
+      <circle cx="70"  cy="82" r="15"/><circle cx="222" cy="82" r="15"/><circle cx="374" cy="82" r="15"/>
+      <circle cx="526" cy="82" r="15"/><circle cx="678" cy="82" r="15"/><circle cx="812" cy="82" r="15"/>
+    </g>
+    <g fill="#f2e8d0" font-size="14" font-weight="700" text-anchor="middle">
+      <text x="70"  y="87">0</text><text x="222" y="87">1</text><text x="374" y="87">2</text>
+      <text x="526" y="87">3</text><text x="678" y="87">4</text><text x="812" y="87">5</text>
+    </g>
+    <g font-size="11" font-weight="700" fill="#241c14" text-anchor="middle">
+      <text x="70"  y="52">NORMALE</text><text x="222" y="52">SOSPETTO</text><text x="374" y="52">SILENZIO</text>
+      <text x="526" y="52">SGUARDO</text><text x="678" y="52">DISCESA</text><text x="812" y="52">NOTTE</text>
+    </g>
+    <g font-size="10" fill="#5a4a36" text-anchor="middle">
+      <text x="70"  y="120">nessuna</text><text x="70" y="133">scoperta</text>
+      <text x="222" y="120">prima prova</text><text x="222" y="133">o il coro</text>
+      <text x="374" y="120">il borgo sa</text><text x="374" y="133">e tace</text>
+      <text x="526" y="120">canonica</text><text x="526" y="133">visitata</text>
+      <text x="678" y="120">botola aperta</text><text x="678" y="133">o prigionieri</text>
+      <text x="812" y="120">luna nuova</text><text x="812" y="133">Atto IV</text>
+    </g>
+    <g font-size="10.5" fill="#7c2f2f" text-anchor="middle" font-style="italic">
+      <text x="526" y="166">prima discesa</text>
+      <text x="678" y="166">seconda discesa</text>
+      <text x="812" y="166">terza discesa: bussa</text>
+    </g>
+    <g stroke="#7c2f2f" stroke-width="1.6" stroke-dasharray="4 3">
+      <path d="M526,98 V152"/><path d="M678,98 V152"/><path d="M812,98 V152"/>
+    </g>
+    <text x="50" y="192" font-size="10" fill="#5a4a36" font-style="italic">
+      L'oppressione sale con le scoperte, non con le ore. Non torna mai indietro.</text>
+  </g>
+</svg>
+<figcaption>La scala non regredisce. Una volta salita, il borgo non torna com'era.</figcaption>
+</figure>
+
+<table>
+<thead><tr><th>St.</th><th>Come ci si arriva</th><th>Il borgo</th><th>L'abbazia</th><th>Effetto meccanico</th></tr></thead>
+<tbody>
+<tr><td><b>0</b></td><td>Stato iniziale</td><td>Rumoroso, ospitale, indifferente. Le barche escono, i bambini giocano sul molo</td><td>Chiusa e ordinata. Timoteo saluta chiunque</td><td>Nessuno</td></tr>
+<tr><td><b>1</b></td><td>Prima prova documentale <i>oppure</i> il coro udito al mulino</td><td>Le conversazioni si abbassano quando i PG entrano, poi riprendono</td><td>Identica — ed è questo a inquietare</td><td>Nessuno</td></tr>
+<tr><td><b>2</b></td><td>Berto o Orsola hanno parlato apertamente, <i>oppure</i> le ventidue croci notate</td><td>Le porte si chiudono al tramonto. Nessuno nomina l'abbazia. Le madri chiamano dentro i figli un'ora prima</td><td>Timoteo comincia a fare domande alle Ancelle e non ottiene risposte</td><td>+2 alle CD di Diplomazia nel borgo dopo il tramonto</td></tr>
+<tr><td><b>3</b></td><td>I PG hanno visitato la canonica, <i>oppure</i> Madama Vela è stata interrogata</td><td>Qualcuno lascia una ciotola di sale sulla soglia dei PG. Nessuno ammette di averlo fatto</td><td>Le nove Ancelle non sono più in chiostro. Lo studio (14) viene chiuso a chiave se non lo era</td><td><b>Prima discesa</b> (sotto). Orologio +1 per ogni azione rumorosa</td></tr>
+<tr><td><b>4</b></td><td>Botola aperta, <i>oppure</i> un prigioniero visto o liberato</td><td>Le barche restano a secco. La Gomena Rotta chiude presto. Scàbbio rifiuta ogni noleggio</td><td>La chiesa non apre più nemmeno al tramonto. Le funzioni sono sospese &laquo;per lutto&raquo;</td><td><b>Seconda discesa.</b> Ogni PNG del borgo ha −4 alla reazione iniziale</td></tr>
+<tr><td><b>5</b></td><td>Luna nuova: parte l'orologio della notte</td><td>Buio totale. Nessuna finestra illuminata. I cani sono chiusi in casa e non abbaiano</td><td>Tutto il personale è sotto. Sopra non c'è nessuno</td><td><b>Terza discesa.</b> L'orologio della notte è attivo</td></tr>
+</tbody>
+</table>
+
+<h3>Le tre discese</h3>
+<p>Padre Anselmo scende al borgo tre volte, e ogni volta è più vicino. Non sono incontri: sono scene.
+<b>Non tirare iniziativa in nessuna delle tre</b> a meno che non siano i PG ad attaccare.</p>
+
+<h4>Prima discesa — stadio 3, nessuno lo vede</h4>
+<p class="ra">La mattina sulla soglia dell'osteria c'è del sale grosso disposto in una linea sottile,
+che nessuno ricorda di aver versato. Il cane dei Cassola, che dorme sempre fuori, stanotte era in cucina
+e non ha voluto uscire. Una delle imposte al primo piano è aperta verso l'interno: dall'esterno non si apre.</p>
+<p><b>Solo indizi.</b> Nessuna prova richiesta per notare il sale e il cane; <b>Osservare CD 15</b> per l'imposta.
+<b>Sapienza (religione) CD 14:</b> il sale sulla soglia è un rimedio popolare contro i non-morti,
+e qualcuno del borgo lo pratica ancora senza sapere perché.</p>
+
+<h4>Seconda discesa — stadio 4, qualcuno lo intravede</h4>
+<p class="ra">Chi è di guardia la vede: una figura scura scende la scalinata a una velocità che non ha senso,
+e a metà del secondo pianerottolo la vede scendere senza toccare i gradini. Poi si ferma. Resta immobile
+per il tempo di tre respiri, rivolta verso il borgo. Poi non c'è più.</p>
+<p><b>Osservare CD 18</b> per chi è sveglio; automatico per chi è di guardia sul molo o alla finestra.
+<b>Non si avvicina.</b> Sta contando le finestre illuminate. Se i PG lo inseguono, non lo raggiungono:
+al piede della scalinata non c'è nessuno e la sabbia non ha impronte.<br>
+<b>Effetto:</b> chiunque lo veda deve superare <b>TS Volontà CD 14</b> o restare <i>scosso</i> per 10 minuti.
+Non è un attacco: è la prima volta che il tavolo capisce con cosa ha a che fare.</p>
+
+<h4>Terza discesa — stadio 5, bussa</h4>
+<div class="warn">
+<p class="ra">Tre colpi. Non forti. La voce che arriva dall'altra parte della porta è cortese, calma,
+e chiama ciascuno di voi per nome. Dice che è venuto a chiarire un malinteso, che la porta è chiusa
+e che lui non entrerebbe mai in casa d'altri senza essere invitato. Poi aspetta. Sa aspettare bene.</p>
+<p><b>Questa è la scena chiave dell'intera avventura</b> e regge su una regola SRD:
+<b>un vampiro non può entrare in un'abitazione se non vi è invitato</b>. Padre Anselmo lo sa,
+i PG probabilmente lo hanno letto nel sacello (20) o nella cella (15), e adesso è dall'altra parte
+di due dita di legno a parlare con voce ragionevole.</p>
+<p><b>Cosa fa:</b> offre un patto. Che se ne vadano, con l'ingaggio di Orsola raddoppiato, e le nove Ancelle
+vive verranno rimandate a casa entro un mese. <b>Percepire Intenzioni CD 22</b>: dice la verità sulle nove.
+Non dice nulla delle undici che non ci sono più.</p>
+<p><b>Cosa non fa:</b> non forza la porta, non attacca, non alza la voce. Se i PG aprono, entra.
+Se qualcuno pronuncia una formula d'invito anche per scherzo, entra. <b>Chiedi esplicitamente
+&laquo;aprite?&raquo; e conta fino a tre in silenzio.</b></p>
+<p><b>Se rifiutano:</b> ringrazia, augura la buonanotte, e all'orologio della notte si aggiungono due passi
+perché ora sa esattamente dove sono e quanti sono.</p>
+</div>
+
+<!-- ================= STORIA E GOVERNO ================= -->
+<h2>Vènere Bassa — storia, governo, contado</h2>
+
+<h3>Chi governa</h3>
+<p>Vènere Bassa è un <b>villaggio franco</b> della <b>Signoria di Càlmara</b>, città portuale quaranta miglia
+a settentrione. Lo statuto le riconosce di non avere signore residente, in cambio di un tributo annuale
+e dell'obbligo di ospitare la flotta di Càlmara in caso di guerra. Guerre non ce ne sono da trent'anni.</p>
+<p>Formalmente il potere è del <b>castellano ser Aldemaro Fusco</b>, che risiede alla Torre del Guado a otto
+miglia, è gottoso, ha sessant'anni e considera l'incarico una punizione. Scende a Vènere Bassa due volte
+l'anno per le tasse. <b>Non si muoverà per delle voci</b>: serve una prova scritta e un morto con un nome.</p>
+<p>Nella pratica il borgo è retto da tre poteri che si guardano:</p>
+<ul>
+<li><b>L'Abbazia.</b> Possiede i due mulini, i diritti di pesca su due cale e il terzo del pescato di levante.
+È il creditore di metà delle famiglie. <b>Questo, e non la fede, è il motivo per cui nessuno fa domande.</b></li>
+<li><b>La Corporazione dei Pescatori</b>, guidata da <b>Maestra Rufa Scàbbio</b>, 68 anni, zia del barcaiolo.
+Sa contare e sa tacere. Se i PG le portano una prova, può indire l'assemblea del borgo — che è l'unico modo
+di ottenere venti uomini armati di rampino.</li>
+<li><b>La guardia</b>, quattro uomini e Dama Orsola. Rappresenta Càlmara e non ha alcun potere sull'abbazia,
+che gode di immunità ecclesiastica. Orsola lo sa e lo odia.</li>
+</ul>
+
+<h3>Cronologia</h3>
+<table>
+<thead><tr><th>Quando</th><th>Cosa</th><th>Chi lo sa oggi</th></tr></thead>
+<tbody>
+<tr><td>~800 anni fa</td><td>Sul capo esiste un santuario dedicato a una divinità marina divorante. Il promontorio ne porta il nome</td><td>Nessuno. Ricavabile in B5 e da Vecchia Nuta</td></tr>
+<tr><td>412 anni fa</td><td>Il Primo Abate fonda l'abbazia <i>per sigillare la grotta</i>, non per santificare il capo</td><td>Madre Ilaria (20), l'archivio (17)</td></tr>
+<tr><td>380 anni fa</td><td>Si costruisce la chiesa a fasce sopra il sacello antico</td><td>Conoscenza comune</td></tr>
+<tr><td>260 anni fa</td><td>Statuto di villaggio franco sotto Càlmara</td><td>Conoscenza comune</td></tr>
+<tr><td>60 anni fa</td><td>Naufragio della <i>Santa Croce</i>: 34 morti in una notte. Nasce la Notte dei Lumi</td><td>Conoscenza comune; i nomi in B6</td></tr>
+<tr><td>31 anni fa</td><td>La grande mareggiata distrugge il vecchio molo. Nel rifarlo si scopre la bocca della grotta, e la si dimentica</td><td>Vecchio Scàbbio, che c'era</td></tr>
+<tr><td><b>9 anni fa</b></td><td><b>Muore di febbre l'abate Corradino. Arriva Padre Anselmo. Cominciano le Ancelle. Malaluna perde la patente</b></td><td>Nessuno collega le quattro cose</td></tr>
+<tr><td>3 settimane fa</td><td>Madre Ilaria tenta di far fuggire due Ancelle e cade dalla scalinata</td><td>Il borgo sa che è morta. Nessuno sa come</td></tr>
+</tbody>
+</table>
+<div class="note"><b>Il nodo dei nove anni fa.</b> Quattro eventi nello stesso anno, e nessun PNG li mette in fila.
+Il momento in cui un giocatore lo fa ad alta voce è il momento migliore della sessione: non anticiparlo,
+e quando succede fermati e lascia parlare il tavolo.</div>
+
+<h3>Il contado — cosa c'è entro un giorno</h3>
+<table>
+<thead><tr><th>Luogo</th><th>Distanza</th><th>Cosa offre</th><th>Perché non risolve il problema</th></tr></thead>
+<tbody>
+<tr><td><b>Càlmara</b>, città portuale</td><td>40 mi · 2 giorni</td><td>Giustizia, magistrati, un tempio vero, magia acquistabile fino al 3° livello</td><td>Quattro giorni di andata e ritorno. La consegna è stanotte</td></tr>
+<tr><td><b>Torre del Guado</b></td><td>8 mi · 3 ore</td><td>Ser Aldemaro e sei soldati</td><td>Non muove un dito senza prova scritta. Con le brutte copie (16) manda i sei uomini <i>domani</i></td></tr>
+<tr><td><b>Saline di Mezzo</b></td><td>3 mi · 1 ora</td><td>Il salinaio ricorda che l'abbazia compra sale in quantità assurde per nove persone</td><td>È un indizio, non un aiuto. Ma è il quarto canale sul commercio marittimo</td></tr>
+<tr><td><b>Bosco di Salicorno</b></td><td>5 mi · 2 ore</td><td><b>Vecchia Nuta</b>, erborista, druida 3, esiliata dal borgo vent'anni fa per &laquo;malocchio&raquo;</td><td>Non salirà mai all'abbazia. Ma vedi sotto: è la quarta leva</td></tr>
+<tr><td><b>Lo Scoglio Nero</b></td><td>1 mi al largo</td><td>Il paiolo del concilio delle Sorelle</td><td>Ci si arriva solo in barca, e nessun pescatore ci va. Vedi mistero M6</td></tr>
+<tr><td><b>La strada costiera</b></td><td>—</td><td>Unica via di terra</td><td>Frana con la pioggia. Se piove, il borgo è isolato e ser Aldemaro non arriva</td></tr>
+</tbody>
+</table>
+
+<div class="sb"><span class="nm">Vecchia Nuta — la quarta leva</span>
+Umana druida 3 · NN · 71 anni · vive nel Bosco di Salicorno<br>
+<b>Cosa sa:</b> che le tre Sorelle esistono, come si chiamano, e che un concilio si scioglie se lo si separa.
+Da vent'anni tiene lontana dal bosco la loro influenza con un rito di confine.<br>
+<b>Cosa dà:</b> <b>tre corone di salicornia</b>. Chi ne indossa una è immune al primo effetto da concilio
+che lo colpisca nelle 24 ore (una volta ciascuna). Non le regala: chiede che qualcuno del borgo
+venga a dirle, a voce, che l'esilio è finito.<br>
+<b>Cosa non fa:</b> non combatte, non sale all'abbazia, non lascia il bosco. Ha settantun anni e ha già dato.
+<span class="tt"><b>Perché esiste:</b> è l'unico canale di lore fuori dall'abbazia. Un gruppo che sbaglia
+tutte le prove dentro l'abbazia può ancora capire cosa sta affrontando parlando con lei.</span></div>
+
+<h3>Calendario e feste</h3>
+<ul>
+<li><b>Benedizione delle Barche</b> (primo plenilunio di primavera). L'abate scende al borgo — <i>di notte</i>,
+&laquo;perché il mare si benedice al buio&raquo;. Nessuno ha mai trovato strano che una benedizione si faccia
+al buio. È la spiegazione ufficiale delle sue discese.</li>
+<li><b>Notte dei Lumi</b> (anniversario della <i>Santa Croce</i>). Si accendono ventidue lanterne sul molo
+per i dispersi in mare. Erano trentaquattro. Nessuno sa più perché siano diventate ventidue —
+sono le stesse ventidue croci sul pozzo. Vedi mistero M2.</li>
+<li><b>Luna nuova.</b> Non è una festa. Le barche restano a secco e nessuno lo ha mai deciso.</li>
+</ul>
+
+<!-- ================= SENSORIALE ================= -->
+<h2>Il dettaglio sensoriale — regola d'uso</h2>
+
+<div class="warn">
+<b>La regola in quattro righe.</b>
+<ol>
+<li>Tre sensi per area, mai di più: <b>occhi, orecchie, pelle-o-naso</b>. Circa dodici parole ciascuno.</li>
+<li>Quello che sta nelle tre colonne <b>è gratis</b>: lo dici entrando, senza prove.</li>
+<li>Quello che sta nella quarta colonna <b>non lo dici mai</b> spontaneamente: è la scoperta,
+e appartiene a chi tira il dado o fa la domanda giusta.</li>
+<li>Se ti accorgi di stare leggendo un paragrafo, hai già sbagliato. Le tre righe sono un innesco,
+non una descrizione.</li>
+</ol>
+La quarta colonna è la parte utile di queste tabelle. Senza di essa l'atmosfera divora l'indagine:
+il DM racconta tutto e ai giocatori non resta niente da trovare.
+</div>
+
+<h3>Il borgo</h3>
+<table>
+<thead><tr><th>Luogo</th><th>Occhi</th><th>Orecchie</th><th>Pelle / naso</th><th>Cosa NON dire</th></tr></thead>
+<tbody>
+<tr><td><b>1</b> Osteria</td><td>Travi incatramate, una gomena spezzata inchiodata sopra il bancone</td><td>Voci che si abbassano di un tono quando entrate</td><td>Odore di pesce affumicato e catrame caldo</td><td class="no">Che i tre boccali capovolti in un angolo sono dei corsari</td></tr>
+<tr><td><b>2</b> Mulino</td><td>Pale ferme controvento, imposte chiuse in pieno giorno</td><td>Il vento che entra nella tramoggia e ne esce cambiato</td><td>Farina secca in gola; sale nell'aria a mezzo miglio dal mare</td><td class="no">Che il suono sono voci, e quante sono</td></tr>
+<tr><td><b>3</b> Corpo di guardia</td><td>Quattro lance appoggiate al muro, nessuna consumata dall'uso</td><td>Una donna che riordina le stesse carte da mezz'ora</td><td>Fumo di torba, umido di muro nord</td><td class="no">Che Orsola ha una lettera di sua nipote sotto le carte</td></tr>
+<tr><td><b>4</b> Moli</td><td>Barche tirate a secco e capovolte, in un giorno di bonaccia</td><td>Scafi che battono piano contro il legno</td><td>Alghe marce sotto il sole, corda bagnata</td><td class="no">Che le barche si tirano a secco solo di luna nuova</td></tr>
+<tr><td><b>5</b> Piazza e pozzo</td><td>Croci di marinaio incise nella pietra del pozzo, di mani diverse</td><td>Secchio, catena, e nessun bambino</td><td>Acqua dolce che sa vagamente di ferro</td><td class="no">Che le ultime tre croci sono più piccole delle altre</td></tr>
+<tr><td><b>6</b> Cappella del borgo</td><td>Una barca rovesciata al posto dell'altare. Porta spalancata</td><td>Un vecchio che prega ad alta voce, senza vergogna</td><td>Cera d'api, legno vecchio, aria che circola</td><td class="no">Il confronto con l'abbazia: lascia che lo faccia il tavolo</td></tr>
+<tr><td><b>7</b> Scalinata</td><td>Centoquaranta gradini senza parapetto sul lato mare</td><td>Il rumore del borgo che sparisce dopo il primo pianerottolo</td><td>Il vento cambia direzione a metà salita</td><td class="no">La scheggiatura e il lembo di stoffa al secondo pianerottolo</td></tr>
+<tr><td><b>8</b> Il ritrovamento</td><td>Un telo cerato, e sotto una forma</td><td>Gabbiani, molti, che nessuno scaccia</td><td>Odore che non è di pesce</td><td class="no">Che le fratture sono da caduta e non da annegamento</td></tr>
+<tr><td><b>9</b> Casa di Vela</td><td>Imposte dipinte di verde, uniche nel borgo</td><td>Silenzio: nessuno passa da questa strada</td><td>Calce nuova, ancora umida</td><td class="no">Le nove ricevute firmate dall'abate</td></tr>
+<tr><td><b>10</b> Bocca della grotta</td><td>Un arco nero alla base della scogliera, largo dodici piedi</td><td>Il respiro della risacca dentro la roccia, ritmico</td><td>Aria fredda che esce, non entra</td><td class="no">Il palo del fanale appena dentro l'imboccatura</td></tr>
+</tbody>
+</table>
+
+<h3>L'abbazia — livello 0</h3>
+<table>
+<thead><tr><th>Area</th><th>Occhi</th><th>Orecchie</th><th>Pelle / naso</th><th>Cosa NON dire</th></tr></thead>
+<tbody>
+<tr><td><b>1</b> Sagrato</td><td>Pietra battuta, il vuoto su tre lati, le porte chiuse</td><td>Il vento copre ogni altro suono</td><td>Sale sulle labbra entro dieci secondi</td><td class="no">I due solchi paralleli consumati nel selciato</td></tr>
+<tr><td><b>2</b> Portico</td><td>Due battenti borchiati, un'acquasantiera</td><td>Il vento cade di colpo entrando sotto la volta</td><td>Pietra fredda; l'acquasantiera è asciutta al tatto</td><td class="no">Che l'incrostazione è sale marino, e i graffi vanno da dentro a fuori</td></tr>
+<tr><td><b>3</b> Navata</td><td>Sei colonne a fasce bianche e nere, panche lucide</td><td>Il mare, attutito, da tre lati contemporaneamente</td><td>Niente incenso. Niente cera. Solo aria ferma</td><td class="no">La sedia con schienale alto rivolta verso il portale</td></tr>
+<tr><td><b>4</b> Presbiterio</td><td>Un altare sulla roccia viva, una statua alta sette piedi</td><td>Silenzio più pieno che nel resto della chiesa</td><td>Un chierico sente che qualcosa <i>preme</i></td><td class="no">Che l'area è profanata — finché non lo dice la meccanica</td></tr>
+<tr><td><b>5</b> Abside</td><td>Una trifora aperta sul nulla, novanta piedi sopra l'acqua</td><td>La risacca arriva su di un ritardo che non torna</td><td>Vento salato addosso, dentro una chiesa</td><td class="no">Il bassorilievo sotto l'intonaco</td></tr>
+<tr><td><b>6</b> Sacrestia</td><td>Armadi, un leggio, un registro rilegato</td><td>Una porta che sbatte piano da qualche parte</td><td>Odore di lana bagnata, in una stanza asciutta</td><td class="no">I quattro sai umidi di acqua di mare</td></tr>
+<tr><td><b>7</b> Campanile</td><td>Scala a chiocciola, muri spessi tre piedi</td><td>Le campane sopra non suonano nemmeno col vento</td><td>Corrente fredda che sale, non scende</td><td class="no">Che la fune è tagliata, e il taglio è netto</td></tr>
+<tr><td><b>8</b> Loggia</td><td>Quattro pilastri e poi il precipizio</td><td>Il vento fischia fra i pilastri su due note</td><td>Spruzzi che arrivano fin quassù con l'alta marea</td><td class="no">La scarpa sotto il terzo pilastro</td></tr>
+<tr><td><b>9</b> Cappella</td><td>Una lastra tombale liscia al centro, senza nome</td><td>Un fruscio d'aria a livello del pavimento</td><td>Le candele piegano tutte nello stesso verso</td><td class="no">Che sotto c'è una botola</td></tr>
+<tr><td><b>10</b> Chiostro</td><td>Cielo aperto, un pozzo, nove ragazze che ricamano</td><td>Voci normali. Qualcuno ride. È peggio così</td><td>Sole tiepido, primo posto caldo dell'abbazia</td><td class="no">Che l'acqua del pozzo è salmastra</td></tr>
+<tr><td><b>11</b> Refettorio</td><td>Tre tavole lunghe, apparecchiate</td><td>Nessuno mangia a quest'ora</td><td>Odore di minestra d'orzo, poca per lo spazio</td><td class="no">Che i coperti sono ventidue</td></tr>
+<tr><td><b>12</b> Cucina</td><td>Un paiolo grande, ceste, scaffali pieni</td><td>Gocciolio regolare da un rubinetto di legno</td><td>Spezie che non c'entrano niente con questa costa</td><td class="no">Che il paiolo è annerito fuori e non dentro</td></tr>
+<tr><td><b>13</b> Dormitorio</td><td>Nove pagliericci, ventidue cassette lungo il muro</td><td>Silenzio pulito, di stanza in ordine</td><td>Lavanda secca; sotto, qualcosa di stantio</td><td class="no">Che tredici cassette non sono mai state svuotate</td></tr>
+<tr><td><b>14</b> Studio</td><td>Uno scrittoio, due scaffali, una porta chiusa a chiave</td><td>Dal chiostro arrivano le voci delle Ancelle</td><td>Inchiostro fresco e polvere di carta</td><td class="no">Il registro, e cosa contiene</td></tr>
+<tr><td><b>15</b> Cella dell'abate</td><td>Chiavistello all'esterno. Finestre murate. Nessun letto</td><td>Nulla. È l'unica stanza in cui non arriva il mare</td><td>Terra umida e sabbia. Freddo di cantina</td><td class="no">Cosa sia il cassone lungo sette piedi</td></tr>
+<tr><td><b>16</b> Scriptorium</td><td>Due scrittoi, risme, calamai allineati</td><td>Penne che nessuno usa</td><td>Colla animale, pergamena</td><td class="no">Che le lettere sono tutte della stessa mano</td></tr>
+<tr><td><b>17</b> Scala di servizio</td><td>Una porta rinforzata in fondo a un corridoio</td><td>Con l'orecchio al legno: passi, e una voce che conta</td><td>Aria che viene dal basso, e sa di acqua ferma</td><td class="no">Che conta fino a cinque, e cinque sono le celle</td></tr>
+</tbody>
+</table>
+
+<h3>Il sotterraneo</h3>
+<table>
+<thead><tr><th>Area</th><th>Occhi</th><th>Orecchie</th><th>Pelle / naso</th><th>Cosa NON dire</th></tr></thead>
+<tbody>
+<tr><td><b>18</b> Vestibolo</td><td>Una grata di ferro, oltre la quale la torcia non arriva</td><td>Gocciolio ritmico, e sotto qualcosa di più lento</td><td>Aria ferma, otto gradi più fredda</td><td class="no">Che il suono più lento è un respiro</td></tr>
+<tr><td><b>19</b> Cripta delle Colonne</td><td>Quattro pilastri a fasce, gli stessi della navata</td><td>L'eco restituisce una stanza più grande di quella che vedete</td><td>Pietra asciutta, polvere che non si alza</td><td class="no">La trappola, e quale sarcofago si muove</td></tr>
+<tr><td><b>20</b> Sacello</td><td>Un reliquiario d'argento non ossidato dopo quattrocento anni</td><td>Il gocciolio si ferma sulla soglia</td><td>L'unico posto caldo del sotterraneo</td><td class="no">Che è consacrato, e che i non-morti non entrano</td></tr>
+<tr><td><b>21</b> Corridoio</td><td>Cinque grate sulla parete di ponente. Pavimento pulito</td><td>Qualcuno tossisce, e smette subito</td><td>Odore di corpi vivi tenuti a lungo nello stesso posto</td><td class="no">Quali celle hanno la ciotola davanti</td></tr>
+<tr><td><b>22</b> Celle</td><td>Nicchie con le sbarre. In tre non c'è niente</td><td>Un movimento che si ritrae dalla luce</td><td>Freddo, umido, e paglia vecchia</td><td class="no">Chi sono, finché non parlano</td></tr>
+<tr><td><b>23</b> Corpo di guardia</td><td>Un tavolo, dadi, una cassa. Chiavi appese al muro</td><td>Voci d'uomini, e una terza voce che non è d'uomo</td><td>Vino, sudore, e un odore d'alga che non c'entra</td><td class="no">Che la terza voce è Grinza</td></tr>
+<tr><td><b>24</b> Cripta dei Marinai</td><td>Dodici loculi, e in ognuno due dita d'acqua salata</td><td>Sciabordio, a quaranta piedi sopra il mare</td><td>Salmastro fortissimo. Bruciore agli occhi</td><td class="no">Che i loculi non sono vuoti</td></tr>
+<tr><td><b>25</b> Scala alla grotta</td><td>Sessanta gradini scavati che scendono nel buio</td><td>Ogni dieci gradini il rumore dell'acqua cambia</td><td>L'aria diventa più calda scendendo, non più fredda</td><td class="no">A che punto della marea siete</td></tr>
+<tr><td><b>26</b> Banchina</td><td>Pietra squadrata, bitte di ferro, un fanale schermato</td><td>Remi, lontani, dentro la roccia</td><td>Vento che tira verso l'esterno</td><td class="no">Perché nessun corsaro va oltre il bordo della banchina</td></tr>
+<tr><td><b>27</b> Altare del Frangente</td><td>Uno sperone di roccia con sopra una mensa di pietra nera</td><td>L'acqua batte sotto lo sperone con un colpo secco</td><td>Freddo che aumenta man mano che ci si avvicina</td><td class="no">A che altezza arriva l'acqua al colmo della marea</td></tr>
+<tr><td><b>28</b> Recinto</td><td>Pali infissi nella roccia, sbarre, un cancello</td><td>Nulla. Chi ci sta dentro ha imparato a non fare rumore</td><td>Paglia bagnata</td><td class="no">Quante persone ci sono, finché non le contano</td></tr>
+<tr><td><b>29</b> Bocca di mare</td><td>Un'apertura di luce diversa in fondo alla caverna</td><td>Il mare aperto, improvvisamente vicino</td><td>Aria pulita, per la prima volta da un'ora</td><td class="no">Se la lancia dei corsari è già dentro</td></tr>
+</tbody>
+</table>
+
+<!-- ================= BESTIARIO ================= -->
+<h2>Appendice I — Bestiario</h2>
+<p>Tutto SRD 3.5. La riga in rosso è ciò che questa creatura fa <i>in questa avventura</i>,
+che è l'unica cosa che il manuale non può dirti.</p>
+
+<div class="cols">
+
+<div class="sb"><span class="nm">Scheletro umano · GS 1/3</span>
+NM Medio non-morto · <b>PF</b> 6 (1d12) · <b>CA</b> 15 · <b>Iniz</b> +5<br>
+<b>Att</b> artiglio +1 (1d4+1) o scimitarra +1 (1d6+1) · <b>TS</b> Temp +0, Rifl +2, Vol +2<br>
+RD 5/contundente, immune al freddo, tratti dei non-morti
+<span class="tt">A3, sei esemplari. Con A4 profanata hanno +1 e +2 pf per DV. Riconsacrare l'altare li riporta a livello base: è la ricompensa concreta per il chierico.</span></div>
+
+<div class="sb"><span class="nm">Wight · GS 3</span>
+ML Medio non-morto · <b>PF</b> 26 (4d12) · <b>CA</b> 15 · <b>Iniz</b> +1<br>
+<b>Att</b> schianto +3 (1d4+1 più risucchio di energia) · <b>TS</b> Temp +1, Rifl +2, Vol +4<br>
+<b>Risucchio di energia:</b> 1 livello negativo, Tempra CD 14 per non renderlo permanente.
+Chi muore diventa un wight sotto il loro controllo
+<span class="tt">C19, tre esemplari, ex Ancelle. Danno un round di preavviso (i coperchi si spostano). Chiamarle per nome — i nomi sono nel registro — le fa perdere un round. È l'unico modo di combatterle senza che faccia solo schifo.</span></div>
+
+<div class="sb"><span class="nm">Lacedon (ghoul acquatico) · GS 1</span>
+CM Medio non-morto · <b>PF</b> 13 (2d12) · <b>CA</b> 14 · <b>Vel</b> 9 m, nuotare 9 m<br>
+<b>Att</b> morso +2 (1d6+1 più paralisi) e 2 artigli +0 (1d3 più paralisi)<br>
+<b>Paralisi:</b> Tempra CD 12, 1d6+2 round. Gli elfi sono immuni. Fetore, Tempra CD 12
+<span class="tt">C24, sei esemplari. La paralisi contro 4 PG è il singolo pericolo più subdolo dell'avventura: due PG paralizzati e il combattimento è finito. Tieni aperta la ritirata verso 19 e usane quattro invece di sei se il gruppo è già logoro.</span></div>
+
+<div class="sb"><span class="nm">Skum · GS 2</span>
+ML Medio mostruoso (acquatico) · <b>PF</b> 13 (2d8+4) · <b>CA</b> 14 · <b>Vel</b> 6 m, nuotare 12 m<br>
+<b>Att</b> 2 artigli +4 (1d4+2) e morso +2 (1d6+1) · <b>TS</b> Temp +5, Rifl +3, Vol +3<br>
+Anfibio, scurovisione 18 m
+<span class="tt">Quattro esemplari in G27. Combattono in acqua e trascinano: prova contrapposta di Lottare per portare un PG sott'acqua. Sono la ragione per cui i PG non devono finire in acqua nello scontro finale.</span></div>
+
+<div class="sb"><span class="nm">Grinza — megera acquatica · GS 4</span>
+CM Medio mostruoso · <b>PF</b> 26 (4d8+8) · <b>CA</b> 14 · <b>Vel</b> 9 m, nuotare 12 m<br>
+<b>Att</b> 2 artigli +6 (1d4+4) · <b>TS</b> Temp +3, Rifl +3, Vol +4 · RI 14<br>
+<b>Sguardo mortale:</b> chiunque entro 9 m la veda, Tempra CD 13 o −2d6 Forza.
+<b>Orrore:</b> chi la vede, Tempra CD 13 o <i>indebolito</i> 3d6 round
+<span class="tt">C23, di guardia alle celle. Lo sguardo mortale è a <i>vista</i>, non un attacco: combatterla al buio con luce controllata dimezza il pericolo. Un ladro furbo lo capisce da solo.</span></div>
+
+<div class="sb"><span class="nm">Còlpa — megera verde · GS 5</span>
+NM Medio mostruoso · <b>PF</b> 45 (9d8+9) · <b>CA</b> 22 · <b>Vel</b> 9 m, nuotare 9 m<br>
+<b>Att</b> 2 artigli +11 (1d4+4) · <b>TS</b> Temp +4, Rifl +6, Vol +7 · RI 18, RD 5/freddo ferro<br>
+<b>Poteri:</b> <i>dancing lights, disguise self, ghost sound, invisibility, pass without trace,
+tongues, water breathing</i>, forza innaturale, imitazione perfetta di voci
+<span class="tt">La valvola di sicurezza. Entra <b>solo</b> se i PG hanno ignorato ogni segnale. Se entra, usa <i>disguise self</i> e imita la voce di un prigioniero: è più efficace di qualunque artiglio.</span></div>
+
+<div class="sb"><span class="nm">Marèa — annis · GS 6</span>
+CM Grande mostruoso · <b>PF</b> 51 (7d8+21) · <b>CA</b> 20 · <b>Vel</b> 12 m<br>
+<b>Att</b> 2 artigli +11 (1d6+7) e morso +9 (1d6+3) · <b>TS</b> Temp +5, Rifl +5, Vol +6<br>
+RD 2/—, RI 19 · <b>Stritolare</b> 2d6+10 se colpisce con entrambi gli artigli ·
+<i>disguise self, fog cloud</i> 3/giorno
+<span class="tt">Officia il rito in G27. Lo stritolare su un PG di 7° livello fa in media 17 danni per round: non lasciarla mai colpire due volte lo stesso bersaglio senza che il tavolo lo veda arrivare. È lei che ha lasciato i segni sulle caviglie di Madre Ilaria.</span></div>
+
+<div class="sb"><span class="nm">Concilio delle Sorelle</span>
+Tre megere entro 9 m l'una dall'altra, LI 9:<br>
+<i>animate dead, bestow curse</i> (Vol CD 17), <i>control weather, dream, forcecage, mind blank,
+mirage arcana</i> (Vol CD 18), <i>veil, vision</i><br>
+Ogni potere 1/giorno; occorre un'azione di round completo di tutte e tre
+<span class="tt"><b>EL 10 riunito.</b> Le corone di salicornia di Vecchia Nuta annullano il primo effetto da concilio su chi le porta. <i>Forcecage</i> è l'incantesimo che chiude la partita: se lo usi, usalo per separare, non per eliminare.</span></div>
+
+<div class="sb"><span class="nm">Corsaro · GS 2</span>
+Umano guerriero 3 · <b>PF</b> 22 · <b>CA</b> 16 · <b>Iniz</b> +2<br>
+<b>Att</b> scimitarra +6 (1d6+3, 18-20) o balestra leggera +5 (1d8, 19-20)<br>
+<b>TS</b> Temp +4, Rifl +3, Vol +1
+<span class="tt">Sei esemplari. <b>Scossi</b> (−2 a tutto) se entro 6 m da una megera. Non superano mai la banchina. Si arrendono se Malaluna cade o si volta: non sono fanatici, sono impiegati.</span></div>
+
+<div class="sb"><span class="nm">Arciere corsaro · GS 3</span>
+Umano ladro 3 · <b>PF</b> 15 · <b>CA</b> 17 · <b>Iniz</b> +4<br>
+<b>Att</b> arco corto +6 (1d6, ×3) · attacco furtivo +2d6, schivare prodigioso<br>
+<b>TS</b> Temp +2, Rifl +7, Vol +2
+<span class="tt">Due esemplari, sulla lancia. Sparano dal buio: i PG con torcia sono bersagli e loro no. Spegnere le luci è una scelta tattica valida e va premiata.</span></div>
+
+<div class="sb"><span class="nm">Guardia del borgo · GS 1/2</span>
+Umano guerriero 1 · <b>PF</b> 9 · <b>CA</b> 15 · <b>Att</b> lancia +3 (1d8+1)
+<span class="tt">Quattro, più Orsola. Non sono soldati: se muore uno, gli altri tre scappano a meno che Orsola non sia in vista.</span></div>
+
+<div class="sb"><span class="nm">Ancella · GS 1/3</span>
+Umana popolano 1 · <b>PF</b> 4 · <b>CA</b> 11 · nessun attacco significativo
+<span class="tt">Le nove vive in A10; le quattro prigioniere in C22. <b>Non combattono e non corrono a lungo</b> (velocità 6 m dopo la prigionia). Sono un carico, ed è questo il punto.</span></div>
+
+<div class="sb"><span class="nm">Rimandi</span>
+<b>Padre Anselmo Grifo</b> (vampiro, chierico 7, GS 9): documento principale.<br>
+<b>Madre Ilaria</b> e <b>Tiberio Sarda</b> (modello fantasma): documento principale.<br>
+<b>Ghebro Malaluna</b>, <b>Sedda Corvara</b>, <b>Ostro il Muto</b>: Appendice A.</div>
+
+</div>
+
+<!-- ================= INCONTRI E PROVE ================= -->
+<h2>Appendice II — Incontri e prove</h2>
+
+<h3>Tutti gli incontri</h3>
+<table>
+<thead><tr><th>#</th><th>Area</th><th>Composizione</th><th>EL</th><th>Terreno</th><th>Vittoria alternativa</th></tr></thead>
+<tbody>
+<tr><td>I1</td><td>3 · Navata (notte)</td><td>6 scheletri</td><td>5</td><td>Colonne = copertura, linea di vista spezzata</td><td>Riconsacrare A4 prima. Oppure passare dalla loggia (8) e non entrare mai</td></tr>
+<tr><td>I2</td><td>19 · Cripta</td><td>3 wight</td><td>6</td><td>Pilastri, sarcofagi, la fossa</td><td>Chiamarle per nome e non profanare i sarcofagi: restano immobili</td></tr>
+<tr><td>I3</td><td>23 · Corpo di guardia</td><td>4 corsari + Grinza</td><td>7</td><td>Stanza chiusa, chiavi al muro</td><td>Entrare dalla botola (9) e prendere le chiavi mentre sono altrove</td></tr>
+<tr><td>I4</td><td>24 · Cripta marinai</td><td>6 lacedon</td><td>5</td><td>Loculi allagati, spazio stretto</td><td><b>Facoltativo.</b> Tagliabile per intero</td></tr>
+<tr><td>I5</td><td>15 · Cella (giorno)</td><td>Padre Anselmo inerte</td><td>—</td><td>Stanza buia, cassone</td><td>È già la vittoria alternativa</td></tr>
+<tr><td>I6</td><td>26–27 · Grotta</td><td>Vedi tabella scenari A–D</td><td>8–12</td><td>Acqua, marea, banchina, sperone</td><td>L'altare al passo 7. La trattativa con Malaluna. Le campane in 18</td></tr>
+<tr><td>I7</td><td>1 · Sagrato</td><td>Anselmo + 1d3 skum (solo scenario A)</td><td>10</td><td>Vento, parapetto, novanta piedi di vuoto</td><td>Luce solare all'alba, se resistono fino a quel momento</td></tr>
+</tbody>
+</table>
+
+<h3>Le cinque prove</h3>
+<p>D&amp;D 3.5 non ha un sistema di sfide di abilità. Queste non sono sottosistemi: sono scene con
+condizione di vittoria, costo del fallimento e costo del tempo dichiarati in anticipo.</p>
+
+<table>
+<thead><tr><th>Prova</th><th>Obiettivo</th><th>Prove ammesse</th><th>Successo</th><th>Fallimento</th></tr></thead>
+<tbody>
+<tr><td><b>P1 · La discesa con i prigionieri</b><br>(dopo C22)</td><td>Portare 4 persone indebolite fuori dall'abbazia</td><td>3 successi su 5 tentativi. Equilibrio CD 12 · Guarire CD 13 · Diplomazia CD 12 (calmarli) · Nascondersi CD 15 · Forza CD 14 (portarne uno)</td><td>Escono. Orologio +1</td><td>Escono comunque, ma orologio +3 e uno dei quattro è a 1 pf</td></tr>
+<tr><td><b>P2 · La trattativa</b><br>(passo 4)</td><td>Portare Malaluna a ≥ 13 sulla tabella di reazione</td><td>Tiro di reazione modificato (Appendice A). Diplomazia, Percepire Intenzioni, Sapienza (nobiltà). <b>Le leve valgono più delle prove</b></td><td>Scenario C: i corsari cambiano lato</td><td>Scenario B. Nessuna penalità aggiuntiva: si combatte e basta</td></tr>
+<tr><td><b>P3 · Interrompere il rito</b><br>(passi 6–7)</td><td>Liberare chi è legato all'altare prima del colmo</td><td>Corsa · Nuotare CD 15 · Scassinare CD 18 o Forza CD 20 (i ceppi) · Concentrazione se sotto attacco</td><td>La vittima è libera. Se Marèa è ancora sull'altare, ci resta lei</td><td>Il rito si compie. Le Sorelle ottengono un round di <i>control weather</i>: la grotta si riempie di 2 ft d'acqua in più</td></tr>
+<tr><td><b>P4 · Convincere il borgo</b><br>(qualsiasi momento)</td><td>Ottenere uomini armati</td><td>Serve <b>una prova materiale</b>, non una prova di abilità: brutte copie (16), registro (14) o ricevute (9). Poi Diplomazia CD 15 con Orsola o CD 18 con Maestra Rufa</td><td>4 guardie (Orsola) o 20 pescatori con rampini (Rufa), disponibili al piede della scalinata</td><td>Nessun aiuto. Il borgo aspetta di vedere come va</td></tr>
+<tr><td><b>P5 · La porta</b><br>(terza discesa)</td><td>Non invitarlo dentro</td><td><b>Nessun tiro.</b> È una decisione</td><td>Non entra. Orologio +2</td><td>Entra. Combattimento in uno spazio chiuso, contro un GS 9, senza acqua corrente nel raggio di mezzo miglio</td></tr>
+</tbody>
+</table>
+
+<!-- ================= MISTERI ================= -->
+<h2>Appendice III — I sei misteri</h2>
+<div class="warn"><b>Regola d'ingaggio.</b> Ogni mistero qui sotto sfocia in una leva, un canale d'indizio
+o un vantaggio che <i>esistono già</i>. Nessuno di essi apre una linea narrativa nuova. Se ne aggiungi
+altri, tienili a questa regola: un mistero che non alimenta niente è un debito che paghi al tavolo,
+perché il gruppo lo inseguirà comunque.</div>
+
+<div class="myst"><b>M1 · Il sarcofago di Corradino</b> — C19<br>
+<b class="k">Cosa vedono:</b> uno degli otto sarcofagi ha la data di nove anni fa, mentre gli altri sette
+sono di secoli fa.<br>
+<b class="k">La verità:</b> l'abate predecessore, morto &laquo;di febbre&raquo; nella stessa stagione in cui
+arrivò Anselmo. Il corpo è dentro, con due fori alla base del collo e sepolto senza i riti dovuti
+(<b>Guarire CD 15</b> o <b>Sapienza (religione) CD 15</b>).<br>
+<b class="k">Cosa dà:</b> canale n. 4 sulla natura dell'abate, e il pezzo che permette a un giocatore di
+mettere in fila i quattro eventi di nove anni fa.<br>
+<b class="k">Se ignorato:</b> nulla. Gli altri tre canali reggono.</div>
+
+<div class="myst"><b>M2 · Ventidue croci, trentaquattro morti</b> — borgo, B5<br>
+<b class="k">Cosa vedono:</b> sul pozzo ci sono ventidue croci di marinaio, ma nel registro dei defunti
+(B6) i morti della <i>Santa Croce</i> sono trentaquattro. E ogni Notte dei Lumi si accendono
+ventidue lanterne, non trentaquattro.<br>
+<b class="k">La verità:</b> le croci non sono per i naufraghi. Sono per le Ancelle, e le incidono le madri.
+Ventidue è il numero delle scomparse fino a tre anni fa; le ultime tre croci, più piccole, sono recenti.
+Nessuno al borgo sa dire quando la tradizione ha cambiato significato — perché è cambiata di nascosto.<br>
+<b class="k">Cosa dà:</b> fa salire l'oppressione allo stadio 2 senza bisogno di parlare con Berto o Orsola.
+Ed è la scena che dice al tavolo che il borgo sa, e ha smesso di dirselo.<br>
+<b class="k">Se ignorato:</b> lo stadio 2 arriva comunque per altre vie.</div>
+
+<div class="myst"><b>M3 · Il pozzo salmastro</b> — A10<br>
+<b class="k">Cosa vedono:</b> il pozzo del chiostro dà acqua salmastra a duecentonovanta piedi sul mare,
+e la fune è lunga quaranta piedi, non trecento.<br>
+<b class="k">La verità:</b> comunica con la cripta (19). <b>Sapienza (dungeon) CD 16</b> per capirlo.<br>
+<b class="k">Cosa dà:</b> una <b>terza via di discesa</b> (Scalare CD 15, serve corda), stretta e silenziosa,
+che evita sia la botola sia il corpo di guardia. È il premio più concreto dell'esplorazione diurna.<br>
+<b class="k">Se ignorato:</b> restano le due vie note.</div>
+
+<div class="myst"><b>M4 · Non c'è uno specchio</b> — tutta l'abbazia<br>
+<b class="k">Cosa vedono:</b> niente. È un'assenza, e le assenze i giocatori le notano solo se qualcuno
+gliele nomina. In sacrestia c'è un chiodo con l'alone di qualcosa di rettangolare che non c'è più.<br>
+<b class="k">La verità:</b> Anselmo ha fatto togliere ogni superficie riflettente dell'abbazia nove anni fa.
+Le Ancelle si pettinano guardandosi nel fondo di un catino d'acqua.<br>
+<b class="k">Cosa dà:</b> canale n. 5 sulla natura dell'abate — e l'unico che si possa cogliere senza tirare,
+solo pensandoci.<br>
+<b class="k">Se ignorato:</b> nulla. <b>Ma se un giocatore lo nota da solo, dagli un punto azione o quello
+che usi</b>: è esattamente il tipo di attenzione che questa avventura vuole premiare.</div>
+
+<div class="myst"><b>M5 · Il secondo registro</b> — Sedda Corvara<br>
+<b class="k">Cosa vedono:</b> in trattativa, Sedda controlla una cifra su un libriccino che non è il registro
+di bordo.<br>
+<b class="k">La verità:</b> tiene una contabilità privata da otto mesi. Non per ricatto: per poter dimostrare
+un giorno di non aver voluto.<br>
+<b class="k">Cosa dà:</b> <b>prova documentale n. 3</b>, indipendente dall'abate e da Vela. Se i PG perdono
+il registro dell'abate, questo salva l'accusa. E ottenerlo significa che Sedda si è schierata.<br>
+<b class="k">Se ignorato:</b> restano registro e ricevute.</div>
+
+<div class="myst"><b>M6 · Il paiolo sullo Scoglio Nero</b> — 1 miglio al largo<br>
+<b class="k">Cosa vedono:</b> di notte, dalla loggia (8) o dal molo, una luce verde bassa sullo scoglio dove
+non abita nessuno (<b>Osservare CD 16</b>).<br>
+<b class="k">La verità:</b> è il paiolo del concilio. Distruggerlo (durezza 8, 30 pf, o immergerlo in acqua
+santa) <b>impedisce alle tre Sorelle di formare concilio per una settimana</b>.<br>
+<b class="k">Cosa dà:</b> se i PG ci arrivano prima dell'Atto IV, il concilio è escluso a priori e
+lo scenario A smette di essere letale. È l'unica azione preventiva davvero decisiva dell'avventura.<br>
+<b class="k">Se ignorato:</b> il concilio resta possibile, ed è la valvola che deve restare chiusa.
+<b>Costo:</b> due ore di barca e un'uscita notturna in mare, cioè due passi dell'orologio e
+Vecchio Scàbbio da convincere. Non è gratis, ed è giusto così.</div>
+
+<!-- ================= PLAYTEST ================= -->
+<h2>Protocollo di playtest</h2>
+
+<div class="warn"><b>Premessa onesta.</b> Questo materiale <b>non è playtestato</b>. Nessun numero qui dentro
+è stato verificato al tavolo, e l'audit del tuo repo principale segnalava già il playtest come la lacuna
+più grande. Quello che segue non sostituisce una sessione reale: serve a fare in modo che la prima sessione
+reale produca <i>dati</i> invece che impressioni.</div>
+
+<h3>Fase A — Dry-run solitario (90 minuti, senza giocatori)</h3>
+<p>Leggi solo le chiavi, mai le note di design, e rispondi sì/no. Ogni <b>no</b> è un intervento da fare
+prima della sessione.</p>
+<table>
+<thead><tr><th>#</th><th>Verifica</th><th>Criterio</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Leggendo solo l'Atto I, sai dire quale scena inizia la partita?</td><td>Se no: scegli il gancio ora, non al tavolo</td></tr>
+<tr><td>2</td><td>Un DM che non ha scritto questo troverebbe il registro in A14?</td><td>Servono almeno due percorsi verso quella stanza</td></tr>
+<tr><td>3</td><td>Sai dire a memoria le tre semine dell'acqua corrente?</td><td>Se ne ricordi meno di due, aggiungine una in A15</td></tr>
+<tr><td>4</td><td>Sai dire in quale area si scopre che l'abate è un vampiro, senza guardare?</td><td>Cinque canali: cassone, Ilaria, non mangia, Corradino, gli specchi</td></tr>
+<tr><td>5</td><td>Hai deciso cosa fai se aprono il cassone di giorno?</td><td>La risposta corretta è: glielo concedi</td></tr>
+<tr><td>6</td><td>Hai un piano se il party ignora l'abbazia e va dritto in barca alla grotta?</td><td>Scenario A, e lo sanno</td></tr>
+<tr><td>7</td><td>Le statistiche di Padre Anselmo sono state ricontrollate sul Manuale dei Mostri?</td><td><b>Sono derivate, non verificate.</b> Fallo</td></tr>
+<tr><td>8</td><td>Hai calcolato il danno medio di Marèa per round contro la CA del party?</td><td>Se supera il 30% dei pf del bersaglio, riduci a un artiglio nel primo round</td></tr>
+<tr><td>9</td><td>Sai a che stadio dell'oppressione sei a fine Atto II?</td><td>Dovrebbe essere 2 o 3</td></tr>
+<tr><td>10</td><td>Hai stampato la tabella della marea per i giocatori?</td><td>Va giocata a carte scoperte</td></tr>
+<tr><td>11</td><td>Sai quali quattro PNG hanno un parente nelle celle?</td><td>Orsola, Berto, Bertrada, la ciurma</td></tr>
+<tr><td>12</td><td>Hai la riga di consenso pronta per l'inizio?</td><td>Una frase, prima del gioco, sul tema delle vittime</td></tr>
+</tbody>
+</table>
+
+<h3>Fase B — Scheda di raccolta (da compilare durante la sessione)</h3>
+<p>Una riga per evento significativo. Compilala tu, non delegarla: dieci righe valgono più di
+tre pagine di appunti a memoria il giorno dopo.</p>
+<table>
+<thead><tr><th>Ora reale</th><th>Atto / area</th><th>Cosa è successo</th><th>Indizio colto? Quale canale?</th><th>Stadio opp.</th><th>Il tavolo era: annoiato / attento / teso</th></tr></thead>
+<tbody>
+<tr><td style="height:26px"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="height:26px"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="height:26px"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="height:26px"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="height:26px"></td><td></td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+<h3>Fase C — Criteri di accettazione</h3>
+<p>Numerici, verificabili, e falsificabili. Se non li superi, il materiale va corretto — non i giocatori.</p>
+<table>
+<thead><tr><th>Criterio</th><th>Soglia</th><th>Se fallisce</th></tr></thead>
+<tbody>
+<tr><td>Durata Atto I</td><td>≤ 75 minuti</td><td>Riduci le dicerie da 8 a 5 e fai arrivare Berto a 40 minuti</td></tr>
+<tr><td>Rivelazioni colte (su 6, tabella tre indizi)</td><td>≥ 4</td><td>I canali mancati vanno spostati su prove passive o su PNG che parlano</td></tr>
+<tr><td>Morti da marea</td><td>0</td><td>Il preavviso di 10 minuti non è arrivato: rendilo un evento scriptato, non descrittivo</td></tr>
+<tr><td>Fazioni aggirate o corrotte invece che combattute</td><td>≥ 1 su 3</td><td>Le leve non sono visibili. Fai avanzare Sedda per prima <b>sempre</b></td></tr>
+<tr><td>Round dello scontro finale</td><td>4–8</td><td>Sopra 8 è attrito: hai lasciato il party contro RD 10 e guarigione rapida 5</td></tr>
+<tr><td>Nessun PG raggiunge 0 pf per due round consecutivi senza opzioni</td><td>—</td><td>Rivedi la composizione dello scenario in tabella A–D</td></tr>
+<tr><td>Il tavolo sa dire a fine partita perché la chiesa restava chiusa</td><td>≥ 2 giocatori su 4</td><td>Rinforza i canali sull'abate: sono cinque e ne è passato meno di uno</td></tr>
+<tr><td>Almeno un giocatore ha esitato davanti alla proposta di Malaluna</td><td>—</td><td>La trattativa non è abbastanza allettante. Alza l'offerta o abbassa le loro risorse</td></tr>
+</tbody>
+</table>
+
+<!-- ================= ADR ================= -->
+<h2>Decisioni di progettazione (aggiunte)</h2>
+
+<div class="adr"><b>ADR-10 — L'oppressione avanza sulle scoperte, non sul tempo.</b><br>
+<i>Contesto:</i> un orologio d'atmosfera legato alle ore punisce l'esplorazione, cioè esattamente il
+comportamento che questa avventura vuole ottenere.<br>
+<i>Decisione:</i> la scala sale quando i PG capiscono qualcosa. L'orologio della notte, separato, resta
+legato al tempo ma parte solo allo stadio 5.<br>
+<i>Conseguenze:</i> due contatori invece di uno, e devi tenerli distinti. In cambio l'orrore diventa la
+ricompensa della bravura. Se li unisci, i giocatori impareranno che indagare fa peggiorare le cose.</div>
+
+<div class="adr"><b>ADR-11 — Le tre discese sono scene, non incontri.</b><br>
+<i>Decisione:</i> nessuna delle tre prevede iniziativa a meno che non siano i PG ad attaccare.
+La terza si regge sulla regola SRD dell'invito.<br>
+<i>Conseguenze:</i> il vampiro accumula minaccia senza consumare risorse del party, e alla terza discesa
+i giocatori hanno una decisione vera invece di un tiro. Costo: se un party attacca alla seconda discesa,
+Anselmo se ne va in forma gassosa e tu devi essere disposto a lasciarlo andare.</div>
+
+<div class="adr"><b>ADR-12 — Quarta colonna obbligatoria nelle tabelle sensoriali.</b><br>
+<i>Contesto:</i> il rischio del dettaglio atmosferico è che il DM racconti anche la scoperta.<br>
+<i>Decisione:</i> ogni scheda ha una colonna &laquo;cosa NON dire&raquo; che è vincolante quanto le altre tre.<br>
+<i>Conseguenze:</i> le tabelle raddoppiano di larghezza e diventano meno stampabili su A4 verticale.
+È il prezzo giusto: senza quella colonna l'atmosfera divora l'indagine.</div>
+
+<div class="adr"><b>ADR-13 — Il contado esiste per dire di no.</b><br>
+<i>Contesto:</i> aggiungere luoghi circostanti rischia di dare al party una via d'uscita facile
+(&laquo;andiamo a chiamare la città&raquo;).<br>
+<i>Decisione:</i> ogni luogo del contado offre qualcosa e ha una ragione strutturale per non risolvere
+il problema: distanza, burocrazia, età, esilio, frane.<br>
+<i>Conseguenze:</i> il mondo è più grande e il problema resta dei PG. Vecchia Nuta è l'unica eccezione
+parziale, e dà un consumabile limitato, non una soluzione.</div>
+
+<h3>Licenze</h3>
+<p>Tutto SRD 3.5 / OGL 1.0a: scheletro, wight, ghoul (lacedon), skum, sea hag, green hag, annis,
+regola del concilio, classi PNG guerriero/ladro/druido/popolano/esperto. Nessuna creatura da supplementi.
+Nessun toponimo, divinità o PNG di Faerûn. Càlmara, la Signoria, la Torre del Guado, il Bosco di Salicorno
+e lo Scoglio Nero sono invenzioni di questo testo. L'unica tavola è SVG originale.</p>
+
+<p style="text-align:center;font-style:italic;color:#5a4a36;margin-top:32px">
+— <i>Bussa tre volte, non forti, e vi chiama per nome. Poi aspetta. Sa aspettare molto bene.</i> —
+</p>
+
+</div>
+</body>
+</html>

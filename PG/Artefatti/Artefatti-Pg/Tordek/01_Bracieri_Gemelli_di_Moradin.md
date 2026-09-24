@@ -106,7 +106,7 @@ Se colpisci il bersaglio:
 *   Il bersaglio deve superare **TS Riflessi CD 19** o cadere **prono**.
 *   Tutte le creature adiacenti al bersaglio devono superare una prova di **Equilibrio CD 15** o cadere prone.
 
-#### 11. Ancoraggio della Montagna (2/giorno - Su)
+#### 11. Ancoraggio della Montagna (2/giorno - Su) ⚠️ *donabile al rito di Hella*
 Azione immediata.
 Quando verresti spinto, sbilanciato, trascinato o sollevato contro la tua volontà:
 *   Tratti il tuo corpo come "radicato nella roccia": **ignori il movimento forzato** di quell'effetto.
@@ -220,3 +220,20 @@ Leggenda narra che, nelle ere in cui i draghi credevano di dominare sia il cielo
 *   *Requisito:* Usare i pugni per rompere un geode tattico durante lo scontro.
 *   *Sacrificio:* Seppellire un oggetto magico caro (~10,000 mo).
 *   *Premio:* Sblocco Stato Terra (Ego 18).
+
+---
+
+## ⚒️ Il dono al rito di Hella (`ARC07-DEF-3` §5) — **DM 2026-09-12**
+
+Al rito di resurrezione, **Tordek può donare l'Ancoraggio della Montagna** (n. 11).
+È coerente con quel che è stato per lei nel buio: **l'ancora**.
+
+| | Effetto |
+|---|---|
+| **Se dona** | 🔴 **Il potere lascia i Bracieri per sempre**: niente più 2/giorno contro lo spostamento forzato. Si sente nel **P5** e in **ARC-08**, dove i giganti spingono e i draghi afferrano. 🌱 Hella riceve **Pelle di Adamantio — RD 3/adamantino**, che è la **sua unica** riduzione del danno |
+| 🟢 **Reazione dei Bracieri al dono** | la **Voce nella Forgia** commenta una volta sola e non ci torna più: *«Bene. Un'ancora serve a chi affonda, non a chi sta a riva.»* 🟢 E da lì in avanti **avvertono Tordek un round prima** quando sta per essere spostato con la forza: non lo impediscono più, ma glielo **fanno vedere arrivare** |
+| 🔴 **Reazione al rifiuto** | **tacciono una settimana**: niente avvertimenti, niente commenti, niente battute. Al settimo giorno riparlano, e **la prima frase è sul rifiuto** |
+| 🌱 **La restituzione** | **una volta sola, per sempre** (Collana, potere #6): Hella può **rendergli l'Ancoraggio per una scena intera**. Poi mai più |
+
+⚠️ **Se Tordek non dona, il potere n. 11 resta suo** e questa sezione non si applica.
+

@@ -1,0 +1,67 @@
+PROVENIENZA DELLE IMMAGINI — ARC-07, Il Portale della Forgia Eterna
+===================================================================
+Formato di riga (ADR-0019 §2):
+  <file> · <strumento> · <licenza/contratto> · seed <n> · <data> · <chi>
+
+⚠️ QUESTO FILE DICE LA VERITÀ, NON QUELLO CHE FAREBBE COMODO.
+Le immagini di quest'arco sono state generate PRIMA che il repo avesse una
+regola di provenienza (ADR-0019 è del 2026-08-15; questi file sono in repo
+dal 2026-08-09 o prima). Di loro NON si conosce:
+  · lo strumento che le ha prodotte,
+  · la licenza dei pesi o il contratto di servizio,
+  · il seme — quindi NON SONO RIPRODUCIBILI.
+Il master è l'unica copia: vale la stessa regola dei raster di Gemini
+(ADR-0019 §2-bis) — il file È il sorgente, si versiona e non si butta mai.
+
+Le righe qui sotto registrano ciò che il file certifica davvero. I campi
+ignoti sono DA CONFERMARE, e restano tali finché non lo conferma il DM:
+inventarli sarebbe peggio che lasciarli vuoti.
+
+FILE                                                          FORMATO  STRUMENTO        LICENZA          SEED  DATA        CHI
+Camera Forgia Adamantina … (Parte 3).webp                     WebP     DA CONFERMARE    DA CONFERMARE    —     ≤2026-08-09 DM
+Camera Nodo Terra … (Parte 4).webp                            WebP     DA CONFERMARE    DA CONFERMARE    —     ≤2026-08-09 DM
+Camera-Forgia-Adamantina-piano-del-fuoco.webp                 WebP     DA CONFERMARE    DA CONFERMARE    —     ≤2026-08-09 DM
+Caverne-Cristallo-con-Geodi-Giganti.webp                      WebP     DA CONFERMARE    DA CONFERMARE    —     ≤2026-08-09 DM
+ElderFireElemental.webp                                       WebP     DA CONFERMARE    DA CONFERMARE    —     ≤2026-08-09 DM
+Hella_elementale.png                                          PNG      DA CONFERMARE    DA CONFERMARE    —     ≤2026-08-09 DM
+Map of Piano Elementale del Fuoco … .webp                     WebP     DA CONFERMARE    DA CONFERMARE    —     ≤2026-08-09 DM
+Mappa della Sala della Forgia Eterna … .webp                  WebP     DA CONFERMARE    DA CONFERMARE    —     ≤2026-08-09 DM
+Mithral Golem Rooms e altare di smeraldo.webp                 WebP     DA CONFERMARE    DA CONFERMARE    —     ≤2026-08-09 DM
+MitralGolem.webp                                              WebP     DA CONFERMARE    DA CONFERMARE    —     ≤2026-08-09 DM
+Piano Fuoco - Corridoio Lava e Ponti Ossidiana (Parte 3).webp WebP     DA CONFERMARE    DA CONFERMARE    —     ≤2026-08-09 DM
+Piano Terra - Caverne Cristallo … (Parte 4).webp              WebP     DA CONFERMARE    DA CONFERMARE    —     ≤2026-08-09 DM
+Piano-Fuoco-Corridoio-Lava-e-Ponti-Ossidiana.webp             WebP     DA CONFERMARE    DA CONFERMARE    —     ≤2026-08-09 DM
+PortaleDellaForgiaEterna.webp                                 WebP     DA CONFERMARE    DA CONFERMARE    —     ≤2026-08-09 DM
+Sala Forgia Eterna - Camera Ottagono … (Parte 2).webp         WebP     DA CONFERMARE    DA CONFERMARE    —     ≤2026-08-09 DM
+Sala-Forgia-Eterna.webp                                       WebP     DA CONFERMARE    DA CONFERMARE    —     ≤2026-08-09 DM
+camera-nodo-terra.webp                                        WebP     DA CONFERMARE    DA CONFERMARE    —     ≤2026-08-09 DM
+
+DERIVATE DA IMPAGINAZIONE — web/
+--------------------------------
+Generate da `scripts/build_image_derivatives.py` (lato lungo 1600, JPEG q88)
+il 2026-08-31. Sono ARTEFATTI: si rigenerano, non si modificano (ADR-0003).
+Il JPEG non è un capriccio: Typst incorpora un JPEG così com'è (DCTDecode) e
+invece DECODIFICA E RICOMPRIME un WebP. Misurato su questo arco:
+    booklet di Terros, copertina WebP  → 11,7 MB
+    stessa copertina, derivata JPEG    →  1,7 MB
+
+⚠️ RILIEVO TROVATO GENERANDO LE DERIVATE — CINQUE COPPIE DI DUPLICATI
+---------------------------------------------------------------------
+Questi file sono BYTE-IDENTICI a due a due (md5 uguale), sotto nomi diversi:
+
+  2d41f94b…  Piano Fuoco - Corridoio Lava … (Parte 3).webp
+             Piano-Fuoco-Corridoio-Lava-e-Ponti-Ossidiana.webp
+  373e4538…  Sala Forgia Eterna - Camera Ottagono … (Parte 2).webp
+             Sala-Forgia-Eterna.webp
+  440a9e2c…  Camera Forgia Adamantina … (Parte 3).webp
+             Camera-Forgia-Adamantina-piano-del-fuoco.webp
+  ec294b1a…  Camera Nodo Terra … (Parte 4).webp
+             Mithral Golem Rooms e altare di smeraldo.webp
+             camera-nodo-terra.webp                      ← tre copie
+  f89fcb51…  Caverne-Cristallo-con-Geodi-Giganti.webp
+             Piano Terra - Caverne Cristallo … (Parte 4).webp
+
+Sono ~4,5 MB di byte ripetuti. NON sono stati cancellati di proposito: i nomi
+lunghi sono citati dai master dell'arco, e il piano di travaso vieta di
+toccare il testo già giocato (PIANO-TRAVASO §0.2). La deduplicazione è una
+decisione del DM, e vale la pena farla quando l'arco si chiude al tavolo.

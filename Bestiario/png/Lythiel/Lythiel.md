@@ -2,6 +2,15 @@
 **Token**: `Bestiario/tokens/da-catalogare/ranger-gufo-mascherata.webp` (ranger elfica mascherata con gufo)
 ## *Ranger Elfica del Cerchio del Sacred Forest, Cavaliere di Gufo, Voce di Hellas*
 
+
+```statblocco
+gs: 8
+ca: 19
+pf: 60
+ts: Temp +7, Rifl +10, Vol +6
+velocita: 9 m a piedi
+```
+
 **Razza/Tipo:** Elfa dei Boschi (Umanoide Medio, elfo)
 **Classe:** Ranger 8 (specializzazione Cavaliere di Gufo Gigante) — GS 8
 **Allineamento:** Caotico Buono

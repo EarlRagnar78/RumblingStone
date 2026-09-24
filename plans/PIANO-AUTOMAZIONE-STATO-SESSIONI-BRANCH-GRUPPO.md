@@ -339,7 +339,7 @@ Stime in ore di lavoro focalizzato, incluse le prove. Ordine = dipendenze.
 ### Lotto D — Visibilità per-PG *(≈5-7h, rischio basso-medio)*
 - D1 Template sessione v2 (blocchi `## Split — <PG> @ <luogo>` +
   `Visto da:`); wizard li chiede quando il DM dichiara party diviso.
-- D2 `scripts/visibility.py` (policy unica, §3) + unit test.
+- D2 `scripts/dmcore/visibility.py` (policy unica, §3) + unit test.
 - D3 `session_recap.py --pg NOME` → recap per-PG in `campaign/recaps/pg/`;
   senza flag, output identico a oggi (golden test di regressione con
   `recap-2026-05-05.md` come riferimento).
@@ -428,14 +428,14 @@ l'undo è sempre `git revert`; la prosa è strutturalmente intoccabile;
 
 ## §8 — Domande aperte per il DM — ✅ RISPOSTE (DM, 2026-07-20)
 
-1. **Nome branch** — ✅ **confermato**: `campaign-group-rumblingstone-dm-gianfranco`.
+1. **Nome branch**, ✅ **confermato**: `campaign-group-rumblingstone-dm-gianfranco`.
 2. **Migrazione marker** `<!-- auto:... -->` in `state.md` — ✅ **approvata**.
-3. **Lotto E-bis LLM** — ✅ **fuori dalla v1** (come da raccomandazione;
+3. **Lotto E-bis LLM**: ✅ **fuori dalla v1** (come da raccomandazione;
    resta nel piano come lotto opzionale futuro, spento di default).
-4. **Recap per-PG in veste Homebrewery** — ✅ **sì** (richiesta esplicita
+4. **Recap per-PG in veste Homebrewery**: ✅ **sì** (richiesta esplicita
    DM 2026-07-20: adattare la pipeline usata per la sessione di esempio e
    per il Palio di Channathgate → vedi §3-bis; recepito nei lotti D4/E1).
-5. **Lingua wizard** — italiano (assunto confermato tacitamente).
+5. **Lingua wizard**: italiano (assunto confermato tacitamente).
 
 ---
 

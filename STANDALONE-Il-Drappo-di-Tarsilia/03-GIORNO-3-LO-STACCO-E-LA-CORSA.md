@@ -166,6 +166,8 @@ Stacco venga annullato — con i fischi che ne conseguono.
 
 ---
 
+![La Ruota il giorno della corsa](ALLEGATI/immagini/web/tavola-la-ruota.jpg)
+
 ## §5 · La Corsa — la regia dei tre giri
 
 Nove tratti: **Dritto**, **Curva Nord**, **Curva Sud**, per tre volte.
@@ -300,6 +302,8 @@ non le fa neanche stavolta. Ma:
 > *«Il Drappo,» dice, «lo ha dipinto Lino Rasca. Guardatelo prima di portarlo via.»*
 
 ---
+
+![Il Drappo](ALLEGATI/immagini/web/il-drappo.jpg)
 
 ## §8 · Il Drappo di Lino Rasca
 

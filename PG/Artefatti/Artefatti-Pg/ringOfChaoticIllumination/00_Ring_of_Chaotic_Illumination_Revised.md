@@ -19,7 +19,7 @@
 > *"True power comes from Chaos and Light"*
 
 
-![Ring of Chaotic Illumination](ring-chaotic-illumination-evolved.webp)
+![Ring of Chaotic Illumination](ring-chaotic-illumination-evolved.png)
 
 
 The ring appears as a band of polished obsidian pulsating with an inner violet light. Following the bearer's interaction with the **Eternal Forge** and their rejection of the *Lord of Sun and Shadow* path to forge their own destiny, the ring has physically evolved to reflect this balance.

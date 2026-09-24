@@ -767,7 +767,7 @@ Tramite la runa, Varis contatta Artemis telepaticamente: *"Vedo che hai un Anell
 > Prima di entrare nella camera del Boss, i PG devono affrontare la **Sentinella di Mithral**.
 > Questo incontro è fondamentale per il risveglio completo dei *Bracieri Gemelli di Moradin*.
 >
-> [**→ VAI ALLA SCENA: Risveglio Completo (Mithral Golem Encounter)**](file:///home/jfs/Scrivania/00-Giochi_di_ruolo/00_dnd_3.5/00_Red_hand_of_Doom_GitHub/RumblingStone/PG/Artefatti/Artefatti-Pg/03_Risveglio_Completo_Bracieri_Terra.md)
+> [**→ VAI ALLA SCENA: Risveglio Completo (Mithral Golem Encounter)**](../../PG/Artefatti/Artefatti-Pg/Tordek/03_Risveglio_Completo_Bracieri_Terra.md)
 >
 > *Solo dopo aver completato questo incontro, procedere con la Boss Fight qui sotto.*
 

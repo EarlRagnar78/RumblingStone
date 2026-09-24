@@ -627,26 +627,26 @@ Dopo:
 
 **NARRAZIONE FINALE PARTE 2:**
 
-> *Vi radunate davanti Affresco Ovest (A4) - Portale del Fuoco Primordiale. Le fiamme danzano sulla superficie come acqua incendiata, invitanti e minacciose. Calore irradia onde che fanno tremare aria.*
+> *Davanti all'Affresco Ovest (A4) - Portale del Fuoco Primordiale - le fiamme danzano sulla superficie come acqua incendiata, invitanti e minacciose. Calore irradia onde che fanno tremare aria.*
 >
-> *Thorik, avanzi per primo. Corona sulla fronte pulsa in sincronia con fiamme portale. Aegis Fang canta debolmente nella mano - non paura, ma ANTICIPAZIONE. Ascia VUOLE attraversare. Vuole confrontare fuoco, dimostrare padronanza.*
+> *Thorik: la Corona sulla fronte pulsa in sincronia con fiamme portale. Aegis Fang canta debolmente nella mano - non paura, ma ANTICIPAZIONE. Ascia VUOLE attraversare. Vuole confrontare fuoco, dimostrare padronanza.*
 >
-> *Tordek, al tuo fianco, centri respiro. Cintura della Devastazione brillano rosso cupo. Senti ki scorrere, preparandoti a sfida. Monaco comprende: fuoco è maestro duro ma giusto. Tempra o distrugge. Nessuna via mezzo.*
+> *Tordek: Cintura della Devastazione brillano rosso cupo, e il ki scorre libero. Monaco comprende: fuoco è maestro duro ma giusto. Tempra o distrugge. Nessuna via mezzo.*
 >
-> *Artemis, dietro, Ring of Chaotic Illumination cicla rapidamente oro/argento/viola. Senti voci Lathander/Mask sussurrare insieme: "Fuoco è cambiamento. Abbraccialo." Warlock prepara invocazioni mentalmente, dita flettono, eldritch energy crepita sotto pelle.*
+> *Artemis: Ring of Chaotic Illumination cicla rapidamente oro/argento/viola, e le voci di Lathander/Mask sussurrano insieme: "Fuoco è cambiamento. Abbraccialo." Warlock prepara invocazioni mentalmente, dita flettono, eldritch energy crepita sotto pelle.*
 >
 > *(Se corpo Hella presente: Lo portate con reverenza. Spirito druida sente transizione imminente. Luce verde sotto pelle pulsa speranza.)*
 >
-> *Thorik posa mano sinistra contro portale. Superficie CEDE come gelatina calda. Fiamme si separano, rivelando cerchio ingresso 2,5m diametro. E oltre...*
+> *Una mano contro il portale, e la superficie CEDE come gelatina calda. Fiamme si separano, rivelando cerchio ingresso 2,5m diametro. E oltre...*
 >
-> *...vedete chiaramente ora: PIANO ELEMENTALE FUOCO.*
+> *...e ora è chiaro: PIANO ELEMENTALE FUOCO.*
 >
 > *Paesaggio alieno impossibile:*
 > - *Roccia nera vetrificata si estende infinita, riflettendo fiamme ovunque*
 > - *Fiumi lava scorrono come acqua normale, cascate magma cadono da nichilisti sospesi*
 > - *Cielo arancione-sangue senza sole - fonte luce è OVUNQUE, tutto brucia con intensità propria*
 > - *Aria ONDEGGIA calore, distorcendo visione come guardare attraverso acqua bollente*
-> - *E lontano, MOLTO lontano, vedete struttura: PIRAMIDE ROVESCIATA ossidiana nera, galleggiante 100m sopra oceano lava. Altare Tempo. Destinazione.*
+> - *E lontano, MOLTO lontano, una struttura: PIRAMIDE ROVESCIATA ossidiana nera, galleggiante 100m sopra oceano lava. Altare Tempo. Destinazione.*
 >
 > *Distanza stimata: 3 chilometri. In questo inferno.*
 >
@@ -656,9 +656,9 @@ Dopo:
 >
 > *Ring sussurra duale: **"Caos attende. Ma caos è opportunità. Sopravvivi. Prospera. VINCI."***
 >
-> *Controllate equipaggiamento ultima volta. Annuite l'uno all'altro. Prendete respiro profondo - ultimo respiro aria normale per ore.*
+> *L'ultimo controllo all'equipaggiamento. L'ultimo respiro d'aria normale per ore.*
 >
-> *E attraversate.*
+> *E poi il portale.*
 >
 > *Sensazione: Tuffarsi FORNACE. Ma Benedizioni Moradin attivano ISTANTANEAMENTE. Mantello Fiamma avvolge, Pelle Pietra indurisce, Cuore Incrollabile stabilizza temperatura corpo. Calore c'è - opprimente, onnipresente - ma SOPPORTABILE. Siete protetti. Preparati.*
 >

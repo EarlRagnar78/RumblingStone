@@ -7,10 +7,18 @@
   "header": "Le otto contrade, il lessico del Drappo, i due contatori e le tre giornate. Tutto quello che serve ai giocatori, e niente di quello che non devono sapere.",
   "footer": "Novanta secondi",
   "player_footer": "Novanta secondi",
-  "cover_image": "../ALLEGATI/tavole/tarsilia-citta.svg",
+  "cover_image": "../ALLEGATI/immagini/web/tavola-tarsilia-citta.jpg",
   "out": "DRAPPO-BOOKLET-GIOCATORI.html",
   "chapters": [
-    {"title": "✉ Benvenuti a Tarsilia", "file": "DRAPPO-VOLANTINO-GIOCATORI.md", "tag": "player"},
-    {"title": "✉ I sei della dirigenza", "file": "../FASCICOLO-SCHEDE-GIOCATORE.md", "tag": "player"}
+    {
+      "title": "✉ Benvenuti a Tarsilia",
+      "file": "DRAPPO-VOLANTINO-GIOCATORI.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ I sei della dirigenza",
+      "file": "../FASCICOLO-SCHEDE-GIOCATORE.md",
+      "tag": "player"
+    }
   ]
 }

@@ -158,7 +158,11 @@ def main(argv=None) -> int:
     lines.append(FOOTER)
 
     out.write_text("\n".join(lines), encoding="utf-8")
-    rel = out.relative_to(REPO) if out.is_absolute() else out
+    # Un percorso fuori dal repo e' legittimo (una prova, una cartella
+    # temporanea) e non deve diventare un traceback: `relative_to` alza
+    # ValueError, `is_relative_to` no.
+    rel = (out.relative_to(REPO)
+           if out.is_absolute() and out.is_relative_to(REPO) else out)
     print(f"[dossier] ✓ {rel} — incollalo in un brew PRIVATO (mai ai giocatori)")
     return 0
 

@@ -37,8 +37,8 @@ Fonti: `campaign/state.md` §1/§6, `skills/rumblingstone-campaign/references/ca
 
 | PG | Difese oggi (stato reale al tavolo) | Superficie d'attacco che resta |
 |---|---|---|
-| **Thorik** | **Mind Blank permanente** + Volontà Adamantina (Rituale 3 della Corona): niente charme, compulsioni, letture del pensiero, divinazioni. RD 5/epico, CA altissima, +2 deflessione | Danno diretto, **illusioni quasi-reali**, effetti d'area senza TS, terreno, RD che la sua ascia non buca |
-| **Tordek** | TS da monaco, RD 5/adamantio, Resistenza al fuoco 10, **Ancoraggio della Montagna 2/g** (immune al movimento forzato), lotta i casters | **−2 DES permanente** (Peso del Mondo, 2026-07-31): CA senz'armatura, Riflessi e iniziativa peggiorati. Ancoraggio è **2 volte al giorno**, non sempre |
+| **Thorik** | **Mind Blank permanente** + Volontà Adamantina (Rituale 3 della Corona): niente charme, compulsioni, letture del pensiero, divinazioni. RD 5/epico, CA altissima, +2 deflessione | Danno diretto, **illusioni quasi-reali**, effetti d'area senza TS, terreno, RD che la sua ascia non buca. **−2 DES permanenti** dal Peso del Mondo (2026-07-31), sopra i −2 della Corona indossata: CA, Riflessi e iniziativa un punto sotto |
+| **Tordek** | TS da monaco, RD 5/adamantio, Resistenza al fuoco 10, **Ancoraggio della Montagna 2/g** (immune al movimento forzato), lotta i casters | Nessun malus dal rito — il Peso del Mondo l'ha preso **Thorik** (correzione DM 2026-08-06). Ancoraggio è **2 volte al giorno**, non sempre; fuori da quelle due, il movimento forzato lo sposta come chiunque |
 | **Hella** | Cura, RD 3/—, Res. Freddo 10, rigenerazione su terra, Rinascita Spontanea 1/g | **Vulnerabilità al fuoco ×1,5** (Ibrido Treant). È la falla più grossa e più bella del gruppo |
 | **Artemis** | Volo a volontà, Passo d'Ombra, Res. Fuoco 10, Anello | d6 di DV, TS su Tempra il più debole, **tocchi a distanza** (nessun TS), *polvere scintillante* che gli cancella l'invisibilità, dissolvi sull'Anello |
 | **Gruppo** | Trinità Divina 1/g (5 round: +4 TS sacri, immunità paura/charme), niente ladro | Nessuna individuazione trappole affidabile; poca AoE; **la Trinità dura 5 round** — se lo scontro ne dura 8, gli ultimi 3 sono nudi |
@@ -196,7 +196,7 @@ secoli e un registro contabile: dà alla Mano Rossa una faccia che non urla.
 3. **Il canone era già apparecchiato.** Gli orchi nella Mano Rossa non vanno
    giustificati: `campaign/state.md` §2.2 conta **1.800 ausiliari
    Goblin/Orchi/Worg Riders**, la prima ondata è «450 hobgoblin/orc infantry»
-   (`campaign/lore/campaign-history.md`) e il **Generale Grimjaw è un Orog**.
+   (`campaign/lore/campaign-chronicle.md`) e il **Generale Grimjaw è un Orog**.
    Esiste già una linea di comando orchesca dentro un'orda hobgoblin — e la
    frattura **Gruumsh / Tiamat** è teologia vera, non un espediente.
 
@@ -337,20 +337,20 @@ ricette di adattamento originali. **Nessuno statblock trascritto.**
 
 ## Checklist lotti
 
-- [x] **L1** — Analisi difese/superfici del party e leve di design (§1-§2)
-- [x] **L2** — Ghaurush: statblock GS 16 + variante *Advanced* GS 17 + dossier
-- [x] **L3** — Comprimari ogre sotterranei: Frantumapietra GS 9, Micelio GS 8
-- [x] **L4** — Drow subdoli: Zin'thara GS 12 (statblock + dossier), Trickster
+- [x] **L1**: Analisi difese/superfici del party e leve di design (§1-§2)
+- [x] **L2**, Ghaurush: statblock GS 16 + variante *Advanced* GS 17 + dossier
+- [x] **L3**, Comprimari ogre sotterranei: Frantumapietra GS 9, Micelio GS 8
+- [x] **L4**, Drow subdoli: Zin'thara GS 12 (statblock + dossier), Trickster
       Arcano GS 11, Assassina di Lolth GS 10
-- [x] **L5** — Catalogo rigenerato (`build_monster_catalog.py`) e
+- [x] **L5**: Catalogo rigenerato (`build_monster_catalog.py`) e
       `validate_bestiario.py` verde
-- [x] **L6** — **Approvato dal DM il 2026-08-05.** 13 file passati a
+- [x] **L6**: **Approvato dal DM il 2026-08-05.** 13 file passati a
       `[ACCEPTED — DM-canon]`; righe applicate in `state.md` §3 (tre clock
       villain), §4, §5 e §7.E; changelog §8 aggiornato. Token: ancora da
       assegnare (`Bestiario/tokens/da-catalogare/`)
-- [x] **L7** — Ala orchesca in equivalenti SRD (§6): Chierico di Gruumsh GS 11,
+- [x] **L7**, Ala orchesca in equivalenti SRD (§6): Chierico di Gruumsh GS 11,
       Bruto Deforme del Sottosuolo GS 11, Ushgar «Occhio Reso» GS 13
       (statblock + dossier + ramo politico su `state.md` §5)
-- [x] **L8** — Indice d'uso della fonte privata (§7): roster valutato scheda
+- [x] **L8**, Indice d'uso della fonte privata (§7): roster valutato scheda
       per scheda contro il benchmark, ricette di adattamento, errata, aggancio
       orog ↔ Grimjaw — `Bestiario/INDICE-SONS-OF-GRUUMSH-FONTE-PRIVATA.md`

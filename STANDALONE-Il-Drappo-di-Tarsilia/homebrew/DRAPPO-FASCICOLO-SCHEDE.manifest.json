@@ -7,10 +7,18 @@
   "header": "Davanti i numeri, dietro chi sei: background da leggere ad alta voce, cosa sai, cosa vuoi, e cosa pensi degli altri cinque.",
   "footer": "La dirigenza dell'Istrice",
   "player_footer": "La dirigenza dell'Istrice",
-  "cover_image": "../ALLEGATI/tavole/ritratto-vanna.svg",
+  "cover_image": "../ALLEGATI/immagini/web/ritratto-vanna.jpg",
   "out": "DRAPPO-FASCICOLO-SCHEDE.html",
   "chapters": [
-    {"title": "✉ I numeri — le sei schede", "file": "../PREGEN-SEI-SCHEDE-PF1E.md", "tag": "player"},
-    {"title": "✉ Il retro — background e legami", "file": "../FASCICOLO-SCHEDE-GIOCATORE.md", "tag": "player"}
+    {
+      "title": "✉ I numeri — le sei schede",
+      "file": "../PREGEN-SEI-SCHEDE-PF1E.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ Il retro — background e legami",
+      "file": "../FASCICOLO-SCHEDE-GIOCATORE.md",
+      "tag": "player"
+    }
   ]
 }

@@ -38,7 +38,7 @@ del master in gioco (già dentro il file); le **Benedizioni di Moradin**
 (il "Golem di Mithral" delle immagini = la **Sentinella**, master #1 §7b);
 **Skullcrusher** (non Skulldark/Infernotooth); **1.000 anni prima ≈ 372 DR**;
 Corona in uscita = **3 gemme accese** (Topazio/Tempo, Smeraldo/Terra,
-Rubino/Leggenda-**speso**); **Cuore di Moradin SPESO**; **Thorik −2 COS**;
+Rubino/Leggenda-**speso**); **Cuore di Moradin SPESO**; **Thorik −4 DES / +2 COS / +4 CAR** (più **−1 CA** se ha donato il +2 di deflessione al rito, `DEF-3` §5);
 Tordek ha la **Cintura della Devastazione**; compagno di Hella = **Durik**
 (maschio); la battaglia contro **Fauci di Palude** è dell'**ARC-08** (i master
 non la duplicano, vi rimandano).
@@ -106,6 +106,9 @@ point è il Day 19** (`state.md §2.1`):
 
 ## 🔗 PUNTATORI RAPIDI
 
+- **Da aprire al tavolo, insieme al master della serata**: `ARC07-CASSETTA-DEL-DM.md`
+  — foglio del cast col tic vocale, pronuncia, **indice dei 260 read-aloud**, i suoni,
+  il momento da fotografare, accessibilità (apparato d'uso, ADR-0018)
 - Corona (fonte canonica DM): `PG/Artefatti/LaCorona_di_Adamantio-DM.md`
 - Scheda Collana: `PG/Artefatti/Artefatti-Pg/Hella/01_Collana_dei_Semi_Eterni.md`
 - Cintura della Devastazione: `PG/Artefatti/Artefatti-Pg/Tordek/00_Cintura_della_Devastazione.md`
@@ -114,3 +117,6 @@ point è il Day 19** (`state.md §2.1`):
 - Fili aperti in uscita (Echo Ledger): `ARC07-DEF-5-RITORNO-HAMMERFIST.md §7`
 - Fascicoli da stampa: `homebrew/ARC07-BOOKLET-FASCICOLO-*.hb.md`
 - Asset (immagini/musica/PDF): `ARC07-ATLANTE-ASSET.md`; handout: `ARC07-HANDOUTS.md`
+- **Prop da stampare e consegnare** (generati dal file sopra, senza la regia DM):
+  `homebrew/HANDOUT-1-cronache-quattro-eroi.hb.md` · `HANDOUT-3-volta-otto-affreschi` ·
+  `HANDOUT-4-carta-visione-due-traiettorie` · `HANDOUT-5-benedizioni-di-moradin`

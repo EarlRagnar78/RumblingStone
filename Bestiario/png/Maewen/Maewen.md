@@ -1,6 +1,15 @@
 # SORELLA MAEWEN "PUGNO-DI-CEDRO" — LA MONACA-CORRIERE
 ## *Mezza-elfa anziana, voce della Confraternita Monastica di Dauth, cercatrice di campioni*
 
+
+```statblocco
+gs: 10
+ca: 19
+pf: 68
+ts: Temp +9, Rifl +9, Vol +11
+velocita: 15 m (Monk fast movement)
+```
+
 **Razza/Tipo:** Mezza-elfa (Umanoide Medio)
 **Classe:** Monk 9 / Cleric 2 (di Ilmater) — GS 10
 **Allineamento:** Legale Buono

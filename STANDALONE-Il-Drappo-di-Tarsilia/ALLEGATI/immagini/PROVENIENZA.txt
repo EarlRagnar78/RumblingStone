@@ -1,0 +1,62 @@
+# PROVENIENZA delle immagini (ADR-0019)
+#
+# Una riga per file: nome · sorgente · credenziale · dimensioni · data.
+# STRUMENTO: Gemini (Google), modello dichiarato dal DM «Flash 3.6 thinking»,
+#    abbonamento Gemini Pro annuale. Confermato dal DM il 2026-08-15; il manifesto
+#    C2PA nel file certifica in modo indipendente la firma Google LLC.
+#
+# LICENZA: Google non rivendica la proprietà del contenuto generato e ne consente
+#    l'uso anche commerciale, nel rispetto delle policy e della legge applicabile.
+#    ⚠️ Verificato su fonti concordanti (incluso un thread di supporto Google che
+#    cita i termini) e NON sulla pagina primaria, che è irraggiungibile da questo
+#    ambiente: prima di una pubblicazione vera, rileggere i termini correnti.
+#
+# ⚠️ SEED: NON DISPONIBILE, e non è una dimenticanza — Gemini non lo espone.
+#    Conseguenza operativa: la serie NON è rigenerabile identica. Quindi qui
+#    **il master PNG è l'artefatto**, non il prompt: se si perde, non torna uguale.
+#    I master vanno trattati come sorgente e non come output (all'opposto di
+#    quanto vale per SVG e PDF, che si rifanno in un comando).
+#
+# ─────────────────────────────────────────────────────────────────────────
+# CATENA LOCALE ComfyUI (dal 2026-09-05) — convive con le righe Gemini qui
+# sotto, non le sostituisce. Le righe generate da scripts/comfyui_batch.py
+# hanno un formato diverso, e si riconoscono dal fatto che il seed c'è:
+#   <file> · <modello e versione> · <licenza dei pesi> · seed <n> · <data> · <chi>
+#
+# Pesi ammessi: SDXL (OpenRAIL++-M) · FLUX.1 [schnell] (Apache-2.0).
+# FLUX.1 [dev] è VIETATO — la sua licenza esclude anche l'uso «indirettamente
+# connesso ad attività commerciali». Lo script esce 1 da solo, prima di
+# scrivere qualsiasi cosa e prima di ogni chiamata di rete (ADR-0019).
+#
+# A mano si aggiungono solo gli asset importati; il resto lo scrive lo script,
+# che aggiorna la riga esistente invece di accodarne una seconda.
+# ─────────────────────────────────────────────────────────────────────────
+#
+# ⚠️ SynthID: ogni immagine porta un watermark invisibile e permanente. Non limita
+#    l'uso; è un fatto da conoscere. E un'immagine puramente generata con ogni
+#    probabilità NON è tutelabile da copyright: si può usare, non si può
+#    rivendicare in esclusiva.
+#
+copertina.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 1696x2496 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
+il-drappo.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 1536x2752 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
+png-attu.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 1696x2496 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
+png-nonna-grasa.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 1696x2496 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
+png-roncetti.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 1696x2496 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
+png-sfregio.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 1696x2496 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
+png-vesca.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 1696x2496 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
+ritratto-berenice.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 1696x2496 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
+ritratto-melchio.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 1696x2496 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
+ritratto-nocca.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 1696x2496 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
+ritratto-ombra.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 1696x2496 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
+ritratto-tesio.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 1696x2496 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
+ritratto-vanna.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 1696x2496 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
+spot-bilancia.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 2048x2048 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
+spot-registro.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 2048x2048 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
+tavola-la-cena.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 2816x1536 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
+tavola-la-ruota-vigilia.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 2752x1536 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
+tavola-la-ruota.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 2816x1536 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
+tavola-le-stalle.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 2752x1536 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
+tavola-tarsilia-citta.png · generata dal DM 2026-08-15 · C2PA Google (firmato) · 2752x1536 · Gemini Flash 3.6 thinking · seed non esposto dal servizio
+
+# Derivate per impaginazione: web/*.webp — rigenerabili con
+#   python3 scripts/build_image_derivatives.py STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/immagini

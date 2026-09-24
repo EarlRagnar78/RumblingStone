@@ -12,15 +12,20 @@ Obiettivo nemico: distruggere/sacrileggiare il tempio, uccidere i chierici e rub
 
 I PG sono in città a preparare difese, dormire o pianificare quando scatta l’allarme (campane del tempio, grida, tremore dalle fondamenta).
 
-> **↩ Eco del rituale P3B (T9)**: se al rituale di resurrezione di Hella
-> **Tordek ha rifiutato il respiro**, Hella è tornata **senza Timeless Body**.
-> In questa scena — il primo grande contatto coi **veleni drow** dell'arco —
-> l'eco riemerge: Hella **non gode dell'immunità/vantaggio** che Timeless Body
-> le darebbe e **tira i TS contro veleno alle CD standard 3.5** (High Priestess
-> e minion fungini usano veleno da lama/spore). Default (rituale non giocato o
-> respiro concesso): nessuna modifica, Hella con doni pieni. Fonte:
-> `07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`
-> §2-BIS «Il ramo del rifiuto» → *Tabella echi*, riga «Tordek rifiuta il respiro».
+> **↩ Eco del rituale P3B (v4-bis, DM 2026-09-12)**: se al rituale di
+> resurrezione **Tordek ha rifiutato l'Ancoraggio**, Hella è tornata **senza
+> nessuna riduzione del danno** — e non ne ha di base (l'Ibrido Treant non ne
+> dà, e la Via della Guardia non è la strada che ha scelto). Questa scena è il
+> primo grande contatto coi **drow** dell'arco, che combattono **di lama**:
+> l'eco riemerge come **danno pieno a ogni colpo**, dove la *Pelle di Adamantio*
+> le avrebbe tolto **3 per colpo**. Default (rituale non giocato o Ancoraggio
+> donato): nessuna modifica, **RD 3/adamantino attiva**.
+> ⚠️ **Se anche Thorik ha rifiutato**, in questa scena non c'è nemmeno lo
+> **Scudo del Custode**: Hella non può prendersi addosso il colpo destinato a un
+> chierico o a un compagno, e la catena dei tre doni non esiste.
+> Fonte: `../07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md` §5.
+> 🔎 **Superata** la versione precedente di questo eco, che poggiava su *Timeless
+> Body*: nessuno dona più quel dono.
 
 ---
 

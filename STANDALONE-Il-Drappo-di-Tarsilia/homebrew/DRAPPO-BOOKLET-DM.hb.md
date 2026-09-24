@@ -199,16 +199,21 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 | `06-VILLAIN-E-AGENDE.md` | le agende dei villain **ora per ora**, il giro del mondo, gli **incontri scalabili** 4/5/6/7 |
 | `07-GUIDA-DM-PASSO-PASSO.md` | **la regia**: le tre serate minuto per minuto, i rilanci, le voci dei PNG |
 | `FASCICOLO-SCHEDE-GIOCATORE.md` | i sei background da dare in mano + la matrice dei legami |
+| `09-KIT-ANTI-IMPROVVISAZIONE.md` | **quando escono dal copione**: 1d20 nomi, prezzi di bottega, tre PNG jolly con statblocco, 1d6 «la città respira» |
+| `10-DOSSIER-DELLE-PISTE.md` | **quando invece indagano**: i tre misteri come piste con nodi, la rete degli indizi, l'orologio, il falso indizio dei quattro quaranta |
 | `08-CASSETTA-DEL-DM.md` | **l'apparato d'uso**: foglio del cast, pronuncia, indice dei read-aloud, inserto per lo schermo, i suoni, il momento da fotografare, accessibilità |
 | `STATO-DEL-MODULO.md` | la memoria fra le tre serate: contatori, patti, scelte, **Echo Ledger**. Da copiare per gruppo |
 | `PLAYTEST-ALFA.md` | audit meccanico, dry-run delle tre serate, le nove correzioni applicate |
 | `PLAYTEST-SCHEDA-FEEDBACK.md` | scheda giocatore, debrief del DM, come si passa da alfa a beta |
 | `STATBLOCCHI-PF1E.md` | PNG, rivali, sicari, cavalli |
-| `ALLEGATI/mappe/` | la Ruota e le stalle: JSON, master emoji-grid, SVG (vedi il `README.md` lì dentro) |
+| `ALLEGATI/mappe/` | la Ruota, **la Ruota in versione giocatore** e le stalle: JSON, master emoji-grid, SVG |
 | `ALLEGATI/tavole/` | **tavole vettoriali**: mappa della città, il Drappo, sei ritratti (rigenerabili) |
 | `ALLEGATI/handout/` | **i quattro prop da stampare**: il contratto di Vesca, la pagina del registro, la ricevuta, il decreto |
+| `homebrew/` | **quattro booklet** impaginati (DM · Giocatori · Fascicolo schede · Prop) + i PDF, e il manifest delle **sei schede da stampa** (`DRAPPO-SCHEDE-PG`) |
 | `ALLEGATI/mappe/uvtt/` | le due mappe pronte per **Foundry / Roll20** |
 | `ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md` | art direction e prompt per l'edizione raster |
+| `PROMPT-GENERAZIONE-BOOKLET-DEFINITIVO.md` | **cosa manca per l'edizione illustrata** e il prompt pronto da passare a una sessione nuova |
+| `PROMPT-PLAYTEST-BOOKLET-E-PLAYERGUIDE.md` | **cosa resta da collaudare** sul libro illustrato (dove atterrano le figure, read-aloud spezzati, spoiler nella guida giocatori) e il prompt pronto per una sessione nuova |
 | `IP-E-LICENZE.md` | Community Use Policy Paizo, OGL, provenienza |
 
 ---
@@ -257,14 +262,25 @@ dopo, anche.
 
 **Per i giocatori** — sei fascicoli:
 
-1. la propria scheda da `PREGEN-SEI-SCHEDE-PF1E.md` (una pagina a testa);
+1. la propria **scheda**: sei pagine A4, una a testa, numeri e persona sullo stesso
+   foglio, col ritratto dipinto. Si generano in un comando —
+
+   ```bash
+   python3 scripts/export_booklet_typst.py \
+       STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-SCHEDE-PG.manifest.json
+   ```
+
+   e vengono da `PREGEN-SEI-SCHEDE-PF1E.md` + `FASCICOLO-SCHEDE-GIOCATORE.md`, che
+   restano i master: si può anche stampare direttamente quei due file, ma il PDF è
+   quello che si dà in mano;
 2. il **volantino delle otto contrade** — la tabella §1 di `CONTRADE-DI-TARSILIA.md`,
    con gli stemmi;
-3. il **retro della scheda** da `FASCICOLO-SCHEDE-GIOCATORE.md`, con il ritratto da
-   `ALLEGATI/tavole/ritratto-<nome>.svg`;
-4. la **matrice dei legami** (prima tabella del fascicolo), una copia a testa;
-5. la **mappa della Ruota** (`ALLEGATI/mappe/rendered/`) e la **mappa della città**
-   (`ALLEGATI/tavole/tarsilia-citta.svg`): una copia ciascuna, al centro del tavolo.
+3. la **matrice dei legami** (prima tabella di `FASCICOLO-SCHEDE-GIOCATORE.md`), una
+   copia a testa — sulla scheda ognuno vede **solo la propria riga**, e la matrice
+   intera al centro del tavolo è ciò che fa scattare il gruppo nei primi dieci minuti;
+4. la **mappa della Ruota** (`ALLEGATI/mappe/rendered/`, la versione giocatore) e la
+   **mappa della città** (`ALLEGATI/tavole/tarsilia-citta.svg`): una copia ciascuna,
+   al centro del tavolo.
 
 **I quattro prop** (`ALLEGATI/handout/`) si stampano e si consegnano **quando la
 fiction li consegna**, mai prima: il decreto al Giorno 1, il contratto quando Vesca lo
@@ -290,6 +306,9 @@ ordine di corsa.
 ---
 
 ## §3 · Tarsilia in dieci righe
+
+![Tarsilia](../ALLEGATI/immagini/web/tavola-tarsilia-citta.jpg)
+*Tarsilia dal tetto della Torre.*
 
 **Siamo nel 4712 AR**, ultima settimana d'estate. Le due date che compaiono nel
 modulo — il 4692 e il 4705 — stanno vent'anni e sette anni indietro.
@@ -720,6 +739,9 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 ---
 
+![Vidalia Roncetti](../ALLEGATI/immagini/web/png-roncetti.jpg)
+![Nonna Grasa](../ALLEGATI/immagini/web/png-nonna-grasa.jpg)
+
 ## §1 · Il foglio del cast
 
 **Legenda**: ✦ compare in tutte e tre le serate · ◆ una volta sola · ⚔ statblocco in
@@ -934,6 +956,532 @@ Poco lavoro, e riguarda più tavoli di quanto sembri.
 | **Udito** | i cue del §5 sono **descrizioni**, non suoni obbligatori. Il modulo si gioca identico in silenzio |
 | **Carico cognitivo** | la Corsa a nove tratti è il punto più denso: se al tavolo serve, gioca il **terzo giro in un tratto solo** — un tiro, e l'esito. Non perde niente di essenziale |
 | **Sicurezza emotiva** | il contratto del tavolo sta in `00-HUB` §6. Le due dita sul tavolo valgono **anche per il DM** |
+
+
+\page
+
+# III-bis · Kit anti-improvvisazione
+
+{{note
+##### ⚠ SOLO DM
+Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
+}}
+
+# Il kit anti-improvvisazione — quello che serve quando il tavolo esce dal copione
+
+> **A cosa serve.** Il modulo ha quindici luoghi scritti, ventotto PNG col loro tic
+> vocale, gli incontri già scalati e le contingenze per giornata. Restano **quattro
+> buchi**, e sono sempre gli stessi quattro: un nome, un prezzo, una faccia che non
+> esiste, e un dado da tirare quando non hai deciso niente. Questa pagina li chiude.
+>
+> Si stampa **una volta** e si tiene sotto il foglio del cast.
+
+---
+
+![La Ruota la vigilia](../ALLEGATI/immagini/web/tavola-la-ruota-vigilia.jpg)
+
+## §1 · I nomi — quando chiedono come si chiama il garzone
+
+Tarsilia è un porto fluviale: i nomi mescolano la valle e il fiume. Tira **1d20** e
+prendi il primo della colonna, o accoppiali a caso — **funziona anche a occhio**.
+
+| d20 | Uomo | Donna | Casato / soprannome |
+|---|---|---|---|
+| 1 | Bardo | Vanna | Corsari |
+| 2 | Tesio | Berenice | Marca |
+| 3 | Melchio | Ombra | Sallo |
+| 4 | Gerlando | Vidalia | Roncetti |
+| 5 | Nocca | Ottavia | Vesca |
+| 6 | Rico | Zoe | Barbanera |
+| 7 | Duccio | Nera | dal Ponte |
+| 8 | Ceppo | Lena | Rasca |
+| 9 | Mino | Grasa | Salle |
+| 10 | Tonio | Sesta | Pettirosso |
+| 11 | Vico | Marta | dei Salici |
+| 12 | Baldo | Rosa | Cerbo |
+| 13 | Nello | Tilde | Fontebuia |
+| 14 | Sarto | Bruna | Canale |
+| 15 | Gero | Zita | Guadi |
+| 16 | Pippo | Nanda | Scardino |
+| 17 | Iaco | Amata | Rive |
+| 18 | Marso | Petra | Stagni |
+| 19 | Cencio | Onda | Tinti |
+| 20 | Berto | Fosca | Bassi |
+
+**La regola che li rende veri**: dai a ogni PNG improvvisato **una cosa sola** —
+un mestiere, un difetto fisico, o una fretta. Non tre. Tre lo fanno sembrare
+importante, e il tavolo lo inseguirà per due ore.
+
+---
+
+## §2 · La bottega qualunque — prezzi e inventario
+
+Quando entrano in una bottega che non hai scritto. Prezzi PF1e Core, arrotondati a
+quello che un bottegaio di provincia chiede davvero.
+
+| Cosa | Prezzo | Note per il tavolo |
+|---|---|---|
+| Corda di canapa, 15 m | 1 mo | ce n'è sempre |
+| Lanterna schermata + olio | 8 mo | l'olio finisce in 6 ore |
+| Coperta, sacco, gavetta | 1 mo | |
+| Piede di porco | 2 mo | +2 alle prove di Forza per forzare |
+| Chiodi, martello, cunei | 5 ma | il pacchetto del carpentiere |
+| Grappa di vinaccia, fiasca | 2 ma | ⚠ due sorsi = −2 a Destrezza per 1 ora |
+| Resina grezza, libbra | 3 ma | **è la merce del rione**: qui la comprano, non la vendono |
+| Stoffa tinta, braccio | 2 mo | indaco 4 mo — il Bruco tiene il prezzo alto |
+| Ferratura di cavallo | 6 ma | mezz'ora di lavoro, e il maniscalco parla |
+| Pasto caldo + posto sul pagliericcio | 3 ma | |
+
+**Cosa non si trova a Tarsilia, e vale la pena dirlo in faccia**: armature pesanti,
+armi esotiche, oggetti magici sopra i 400 mo, cavalli da guerra. È una città che
+lavora, non una capitale. *«Quella roba la compri a Cassomir, e ci vogliono sei
+giorni.»*
+
+---
+
+## §3 · I tre PNG jolly — con lo statblocco già pronto
+
+Per la faccia che spunta e non c'era. Ognuno ha **un uso** dichiarato: sceglili per
+la funzione, non per il nome.
+
+### Il testimone che ha visto — *popolano 1, GS 1/3*
+
+**PS** 4 · **CA** 10 · **TS** +0/+0/+0 · **Percezione** +2
+**Uso**: sa una cosa vera e la dice male. Vuole solo tornare a lavorare.
+**Il tic**: comincia sempre da troppo lontano. *«Allora, mio nonno faceva il…»*
+
+### Il tirapiedi che non vuole menare — *guerriero 1, GS 1/2*
+
+**PS** 11 · **CA** 15 (cuoio borchiato, scudo) · **Att** mazza +3 (1d8+2)
+**TS** +3/+1/+0 · **Intimidire** +4
+**Uso**: blocca il passaggio, e **si tira indietro** se lo si spaventa (Intimidire
+CD 12) o se gli si offre di più (Diplomazia CD 13). Serve a dare una vittoria senza
+combattimento.
+**Il tic**: guarda sempre qualcun altro prima di rispondere.
+
+### Il funzionario che applica il regolamento — *esperto 2, GS 1/2*
+
+**PS** 9 · **CA** 11 · **TS** +0/+1/+3 · **Sapienza (nobiltà)** +6 · **Diplomazia** +5
+**Uso**: dice **no** con una ragione scritta. Non si corrompe con l'oro; si convince
+con **una carta** o con un favore alla sua ufficio.
+**Il tic**: cita il numero dell'articolo, e sbaglia il numero.
+
+---
+
+## §4 · Il dado quando non hai deciso niente
+
+Tira **1d6** e lascia che sia il mondo a muoversi. Ogni voce è vera in qualunque
+momento delle tre giornate e **non contraddice nessuna trama**.
+
+| d6 | Succede |
+|---|---|
+| 1 | Passa un carro di resina e blocca il vicolo per dieci minuti. Chi ha fretta perde qualcosa |
+| 2 | Un bambino corre a chiamare uno dei PG per nome. Si è sbagliato di persona — ma sa il nome |
+| 3 | Due contrade diverse cantano lo stesso motivo a due strade di distanza. Nessuno si ferma |
+| 4 | Il fiume puzza più del solito. I vecchi dicono che vuol dire pioggia, e i vecchi sbagliano spesso |
+| 5 | Un banditore legge un avviso che non riguarda i PG. Riguarda il prezzo del grano |
+| 6 | Qualcuno saluta un PG con **il nome di un altro**. È un vecchio del rione, e non si corregge |
+
+⚠️ **Nessuna di queste è un gancio**. Servono a far respirare la città quando il
+tavolo si ferma a pensare. Se una diventa una trama, è perché **i giocatori** hanno
+deciso così — e allora è meglio di qualunque cosa avessi preparato.
+
+---
+
+## §5 · Quando invece è giusto fermarsi
+
+Tre casi in cui **non** si improvvisa, e si dice al tavolo *«questo lo decidiamo la
+prossima volta»*:
+
+1. **una regola della corsa** — sono scritte, e cambiarle a metà rompe il gioco del
+   Giorno 3 (`REGOLE-DELLA-CORSA-PF1E.md`);
+2. **un segreto di un PG** — appartiene a quel giocatore, non al DM
+   (`05-INIZIAZIONE-E-EVENTI-PG.md` §4-bis);
+3. **la matematica di un incontro** — le tabelle 4/5/6/7 sono già calcolate. A
+   occhio, di sera, viene sempre troppo duro o troppo molle.
+
+
+\page
+
+# III-ter · Il dossier delle piste
+
+{{note
+##### ⚠ SOLO DM
+Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
+}}
+
+# Il dossier delle piste — i misteri come vie di soluzione, non come arredo
+
+> **A cosa serve.** Il modulo ha già tre misteri veri. Il problema è **come sono
+> scritti**: come leve del DM — *chi lo scopre e quando* — e non come **piste che il
+> tavolo può battere**. La differenza si vede alla seconda serata: un gruppo che
+> indaga, trova, e poi si accorge che l'indagine non cambiava niente, smette di
+> indagare. Quello è il binario, e non si toglie aggiungendo scelte: si toglie
+> **facendo pagare l'indagine**.
+>
+> Qui i tre misteri diventano **piste con nodi**, ognuna con la sua rete di indizi,
+> il suo orologio, e — soprattutto — **cosa produce in Peso, Ritmo, Morale o
+> finale**. Più il falso indizio che il modulo ha già senza saperlo (§7).
+>
+> ⚠️ **Non aggiunge canone.** Ogni nodo cita testo che c'è già; le tre aggiunte
+> nuove sono marcate **[NUOVO]** e sono facoltative.
+
+| § | Cosa |
+|---|---|
+| 0 | Come si leggono i nodi (e la regola che vale più di tutte) |
+| 1 | Di che famiglia è questo caso |
+| 2 | **Pista A** — la mano che paga (la ricevuta `C·S·M`) |
+| 3 | **Pista B** — la correzione senza firma (il confine del 4705) |
+| 4 | **Pista C** — i nove nomi (il Drappo di Rasca) |
+| 5 | La rete: chi porta cosa, e su quale canale |
+| 6 | L'orologio degli indizi, giornata per giornata |
+| 7 | **I quattro quaranta** — il falso indizio che c'era già |
+| 8 | Quando non trovano niente |
+| 9 | La ricomposizione: dove sta il picco di ogni pista |
+| 10 | Cosa **non** è un mistero, e va detto |
+
+---
+
+## §0 · Come si leggono i nodi
+
+Formato della skill `rumblingstone-indagine` (`references/nodi-e-sei-porte.md`), in
+tre righe:
+
+```
+FATTO    quello che c'è. Si REGALA a chi guarda. Non si tira mai.
+LETTURA  cosa vuol dire. Si paga con una prova — una qualunque delle porte.
+NOME     chi, esattamente. Gradi veri, o l'incrocio di due Letture.
+PORTE    almeno tre, almeno una fisica (Forza, Destrezza, Costituzione).
+```
+
+> **La regola che vale più di tutte, e che questo modulo rischiava di violare**: se
+> un Fatto serve per andare avanti, **non lo si tira**. Niente CD, niente prova
+> passiva, niente *«se a qualcuno viene in mente di guardare»*. Si descrive. Il gioco
+> è capire cosa vuol dire, non accorgersi che c'è.
+
+Le porte fisiche non sono un vezzo: a questo tavolo i punti abilità sono andati sul
+danno, e un caso che si apre solo con Sapienza e Percezione **esclude metà dei
+giocatori dal proprio gioco**.
+
+---
+
+## §1 · Di che famiglia è questo caso
+
+**Cospirazione**, non «chi è stato» (`famiglie-di-caso.md`). Nessuno è morto, non c'è
+un colpevole da nominare: c'è **una catena di persone che si passano un incarico** —
+Vesca dice *«che non corrano»*, Salle traduce, Sfregio esegue — e ciascuno può dire
+il vero negando.
+
+La firma degli indizi di questa famiglia è **coincidenze di tempo e di denaro**, ed è
+esattamente quello che il modulo ha già: un carico di fieno comprato tutto insieme,
+dei ferri offerti a metà prezzo, una ricevuta con un timbro, un contratto firmato in
+bianco all'alba del primo giorno.
+
+⚠️ **Il pezzo di cospirazione che rende il caso adulto**: in fondo alla catena non
+c'è un cattivo. C'è una donna che ha ragione, che non voleva morti, e che **non ha
+chiesto come**. La pista, arrivata in fondo, non consegna un mostro: consegna una
+firma mancata.
+
+---
+
+## §2 · Pista A — la mano che paga
+
+**Domanda che il tavolo si fa**: *chi sta cercando di fermarci, e chi lo paga?*
+**Se la battono fino in fondo**: prova che porta a Salle e, per suo tramite, a Vesca
+(`06-VILLAIN-E-AGENDE` §3) — con tutte le conseguenze già scritte, squalifica del
+Bruco compresa.
+
+### A1 · La ricevuta addosso a Sfregio — G2 notte
+
+```
+FATTO    Un pezzo di carta piegato in quattro, timbro a cera, tre lettere: C·S·M.
+         (già in 06-VILLAIN §2 — si trova addosso, non si cerca)
+LETTURA  Non è una ricevuta di trasporto: è la quietanza di un incarico.
+         La cera è di Cassomir — costa più della carta su cui sta.
+NOME     Corvino Salle, mediatore. Conoscenze (locali) CD 18, oppure
+         l'incrocio con A5 (Occo vende il mediatore, mai il committente).
+```
+
+| Porta | Cosa restituisce |
+|---|---|
+| **Costituzione** (fisica) | l'odore: cera e resina di banco, non di stalla. Chi l'ha scritta sta in un ufficio |
+| **Destrezza** (fisica) | la piega: quattro pieghe uguali, fatte prima di essere data. Carta d'ufficio, non di fretta |
+| Sapienza (locali) | le tre lettere sono iniziali, e a Tarsilia si usano così solo negli atti |
+| Percepire Intenzioni | su Sfregio: **crede davvero** che sia una compagnia di trasporti |
+
+> ⚠️ **Sfregio non mente e non sa.** È il punto in cui il tavolo si convince che
+> mente, e comincia a picchiare l'uomo sbagliato. Lascialo succedere: è §7.
+
+### A2 · Il fieno comprato tutto — G2 mattina
+
+```
+FATTO    Il carico di Bolsa è venduto per intero, prima dell'alba, in contanti.
+LETTURA  Nessun oste compra un carico intero: non ha dove metterlo.
+         Chi l'ha comprato non lo voleva — voleva che non l'avessimo noi.
+NOME     Il Bruco. Bolsa lo dice senza problemi: non ha fatto niente di male.
+PORTE    FOR (provare a spostare il carico: ci vogliono quattro uomini e un carro
+         che nessuno ha noleggiato quella notte) · Professione mercante ·
+         Diplomazia con Bolsa · Percezione al mercato
+```
+
+### A3 · I ferri storti a 4 monete — G2 mattina
+
+Già scritto (`06-VILLAIN` §1, Artigianato CD 15). Qui conta il **Nome**: il vecchio
+Cima li ha portati, ma non li ha fatti. Chi li ha fatti li ha fatti **apposta**, e a
+Tarsilia i maniscalchi sono tre. Mezz'ora di lavoro e il maniscalco parla
+(`09-KIT-ANTI-IMPROVVISAZIONE` §2).
+
+### A4 · Regina, e le mani — G2, in qualunque momento **[NUOVO]**
+
+La porta fisica della pista, per il PG che non ha un grado in niente di utile.
+
+```
+FATTO    Regina, la mula di ventidue anni, batte lo zoccolo contro l'asse e
+         non smette. (04-LUOGHI §1.3 — lo fa già)
+LETTURA  Non ha fame e non ha paura del buio: si comporta così da ieri
+         pomeriggio, cioè da quando qualcuno è passato in stalla.
+NOME     È passato TRE volte: mattina, pomeriggio, tramonto — ed è la stessa
+         cadenza con cui Sfregio studia la stalla (06-VILLAIN §2).
+PORTE    Addestrare Animali CD 12 · COS (dormirci accanto una notte) ·
+         SAG/Percezione CD 14 · DES (rifare il giro e vedere da dove si vede)
+```
+
+Si incastra con l'evento di Ombra al G2 (`05-INIZIAZIONE` §4: il cavallo *«ha paura
+delle mani»*): sono lo stesso fatto visto da due animali diversi.
+
+### A5 · Sirena Occo — il canale che si paga
+
+Già scritto (`04-LUOGHI` §4): vende **il mediatore, non il committente**. È vera e
+incompleta, ed è la definizione dell'indizio onesto che non chiude il caso.
+
+⚠️ **E si paga in informazioni**: quello che i PG le danno, lei lo rivende, e al G3
+torna indietro dalla bocca di un altro. Battere la pista A **costa un segreto**.
+
+---
+
+## §3 · Pista B — la correzione senza firma
+
+**Domanda**: *perché il bosco di spini è del Bruco, se il rione lo ha sempre
+lavorato?*
+**Se la battono fino in fondo**: il finale alternativo già scritto in
+`03-GIORNO-3` §7.1 — che si vince **senza correre**, e costa a Tesio il posto.
+
+È la pista dove il registro Eco lavora al massimo: qui la prova **è un'assenza**.
+
+### B1 · Il foglio del 4692 — G1
+
+```
+FATTO    Il confine è segnato cinquanta passi più a est. La correzione è del
+         4705, mano ferma, SENZA FIRMA. (05-INIZIAZIONE §4 — Tesio)
+LETTURA  Un atto senza firma non è un errore d'archivio: è qualcuno che ha
+         corretto senza volerne rispondere.
+NOME     La stessa mano compare in altri quattro atti, tutti a favore del
+         Bruco (Conoscenze locali CD 15 — già scritto).
+PORTE    Sapienza (locali) · DES (ricalcare il tratto sul vetro: la mano è la
+         stessa, e la penna è la stessa) · INT (confronto fra le date) ·
+         Diplomazia col funzionario che tiene il catasto (`09-KIT` §3)
+```
+
+> **La riga che il DM deve tenere in bocca**: *«Non manca una parola. Manca una
+> firma.»* Detta una volta, al momento giusto, fa più di tre prove riuscite.
+
+### B2 · I quattro atti, e chi ci guadagna oggi **[NUOVO]**
+
+```
+FATTO    Dei quattro atti, tre riguardano acqua e legna. Il quarto no: sposta
+         un diritto di passaggio che oggi non serve a nessuno.
+LETTURA  Non serve a nessuno ADESSO. Serviva quando la tintoria lavorava.
+NOME     Chi firmava allora l'ha fatto per far lavorare ottanta persone —
+         cioè per la stessa ragione per cui Vesca sta facendo questo.
+PORTE    Professione/Sapienza · CAR (farsi raccontare dagli anziani del Bruco) ·
+         FOR (andarci a piedi e vedere che il passaggio è murato da anni)
+```
+
+⚠️ **È la Lettura che rende il caso adulto e non un giallo**: la carta non prova che
+Vesca è cattiva. Prova che il torto ha vent'anni e che **la ragione dell'altra parte
+è vecchia quanto il torto**.
+
+### B3 · Le copie che Tesio non doveva avere
+
+Già scritto (`05-INIZIAZIONE` §4, G2: Sirena Occo lo sa). Nodo **a costo**: usarlo
+brucia il PG che lo possiede. Chi lo gioca, lo gioca sapendo cosa paga.
+
+---
+
+## §4 · Pista C — i nove nomi
+
+**Domanda**: *perché il pittore del Drappo non ritira il compenso?*
+**Se la battono fino in fondo**: non cambia la corsa. Cambia **cosa resta appeso per
+un anno nell'oratorio di chi vince** (`03-GIORNO-3` §8), e a quel punto la vittoria
+di qualcun altro diventa un problema di qualcun altro.
+
+È la pista **morale**, e va offerta senza premio meccanico. Se le si attacca un
+bonus, muore.
+
+| Nodo | Fatto (regalato) | Lettura | Dove sta già |
+|---|---|---|---|
+| **C1** | Rico tossisce come tossisce chi scalda male la resina | non è un malanno d'inverno: è il mestiere che lo ammazza | `05-INIZIAZIONE` §4 |
+| **C2** | sul registro dell'ospizio, negli ultimi due inverni, nove righe uguali | non è una moria: è la stessa causa nove volte | `03-GIORNO-3` §8 |
+| **C3** | a marzo un uomo è entrato all'ospizio dicendo che cercava **un modello** | ne ha copiati nove, non uno. Non cercava un modello | `03-GIORNO-3` §8 |
+| **C4** | Rasca non ritira il compenso, e lascia la città quella notte | ha già fatto quello per cui era venuto | `06-VILLAIN` §5 |
+| **C5** | sul retro del telo, un nome a matita, cancellato e leggibile | non è il suo (è la madre di Berenice) | `05-INIZIAZIONE` §4 |
+
+**Porte fisiche**, perché anche questa ne vuole una: **COS** — reggere il telo alto
+due metri e mezzo mentre lo si guarda da vicino, cioè accorgersi che le nove facce
+sono dipinte con una cura che il resto della folla non ha; **FOR** — girarlo, che da
+soli non si fa.
+
+> ⚠️ **E la regola di Rasca**: quando glielo chiedono, alza le spalle e dice che gli
+> servivano delle facce. **Non ammette mai.** Un mistero che si fa confermare
+> dall'autore smette di essere del tavolo.
+
+---
+
+## §5 · La rete — chi porta cosa, e su quale canale
+
+La regola della rete ridondante (`nodi-e-sei-porte.md` §4) qui ha una clausola in
+più, ed è la sola cosa che il registro Eco aggiunge: **i nodi ridondanti devono stare
+su canali diversi**. Tre documenti sono **un** canale — se il gruppo non legge, non
+legge tre volte.
+
+| Pista | Documento | Testimonianza | Cosa fisica |
+|---|---|---|---|
+| **A** — la mano che paga | la ricevuta `C·S·M` (A1) | Bolsa, il maniscalco, Occo (A2/A3/A5) | Regina e i ferri storti (A4/A3) |
+| **B** — la correzione | il foglio del 4692 e i quattro atti (B1/B2) | gli anziani del Bruco, lo scrivano | il passaggio murato (B2) |
+| **C** — i nove nomi | il registro dell'ospizio (C2) | Melchio, Berenice (C3/C5) | il telo, e il retro del telo (C5) |
+
+**Come si legge**: ogni riga ha tre celle piene. Se al tavolo una pista sta morendo,
+guarda **quale colonna il gruppo non usa mai** e sposta lì il prossimo indizio.
+
+---
+
+## §6 · L'orologio degli indizi
+
+Si scrive accanto al mistero e **non si tiene a mente**. Vale la regola d'oro: un
+indizio si consegna **per bocca di un PNG che ha una sua ragione per parlare**, mai
+per intuizione gratuita di un PG.
+
+| Quando | Se il tavolo ha in mano… | Allora |
+|---|---|---|
+| **fine G1** | niente di nessuna pista | alla Zoppa, Orsa racconta che *«dal Bruco hanno comprato il fieno di Bolsa prima ancora che lo scaricasse»*. Lo dice per lamentarsi dei prezzi, non per aiutare |
+| **G2 pomeriggio** | niente sulla pista A | Sirena Occo **regala** il nome dell'uomo con la fascia grigia (`04-LUOGHI` §4): l'ha già venduto ad Attu e vuole vedere che faccia fanno |
+| **G2 sera** | niente sulla pista B | alla Cena, il funzionario del comune — il PNG jolly di `09-KIT-ANTI-IMPROVVISAZIONE` §3, che cita gli articoli e ne sbaglia il numero — si lamenta che *«nel 4705 si correggeva senza firmare, e nessuno diceva niente»*. Si lamenta del mestiere, non aiuta nessuno |
+| **G3 alba** | niente sulla pista C | Melchio, davanti al telo, riconosce Rico e si ferma. **Non dice niente**: si ferma. Che è più forte |
+| **G3, dopo lo Stacco** | la ricevuta ma non il nome | i battellieri della Cesta Rotta la vendono per 20 mo (`06-VILLAIN` §3) |
+
+⚠️ **Ogni indizio consegnato è un eco in entrata**: il PNG che parla ha fatto un
+favore, e il mondo lo ricorda. Segnalo sul foglietto degli echi come qualunque altra
+conseguenza.
+
+---
+
+## §7 · I quattro quaranta — il falso indizio che c'era già
+
+Il modulo, senza volerlo, ha seminato **quattro volte il numero quaranta**. Ed è la
+cosa migliore che gli sia capitata, a patto di sapere cosa farne.
+
+| Dove | Cosa | Cosa vuol dire **davvero** |
+|---|---|---|
+| `04-LUOGHI` §1.1 | **quaranta bandiere** nella cantina dell'oratorio | una per ogni anno che l'Istrice ha corso senza vincere |
+| `04-LUOGHI` §1.4 | **quaranta tacche** di gesso sul muro della Zoppa | *«una per anno perso»* — la stessa contabilità, tenuta all'osteria |
+| `03-GIORNO-3` §1 | le **quaranta candele** di Nonna Grasa | il numero dei **letti d'inverno** dell'ospizio. Un'altra cosa |
+| `05-INIZIAZIONE` §4 | le **quaranta monete d'argento** di Ferrante | una bustarella pagata tre mesi fa, in un altro paese |
+
+Le prime due **sono davvero la stessa cosa**: quarant'anni senza vincere, contati due
+volte in due posti. Ed è precisamente questo che rende il resto pericoloso — perché
+il tavolo troverà un nesso vero, lo verificherà, gli tornerà, e da quel momento
+**tirerà dentro anche le candele e le monete**.
+
+**Non c'è niente da risolvere.** È il falso indizio col manuale rispettato
+(`ricomposizione.md` §6): è **vero**, la conclusione sbagliata è la più economica, e
+scoprire che è sbagliata costa qualcosa.
+
+**Come si gioca**, e sono tre righe che valgono la sezione:
+
+1. **Non confermare e non correggere.** Mai *«non è quello»*. Il DM non mente sui
+   fatti e non regala le letture. Se chiedono a Nonna Grasa perché quaranta, lei
+   risponde la verità — *«sono i letti»* — e il tavolo deciderà da sé se crederle.
+2. **Chi lo insegue trova qualcosa di vero lo stesso**, ed è l'errore fecondo in
+   pratica: sotto le bandiere c'è **la cassa con 220 mo in argento vecchio**, che è
+   la via più pulita per pagare il Peso (`04-LUOGHI` §1.1); chiedere delle candele
+   porta a **chi ha pagato di tasca propria il fieno nuovo** (`05-INIZIAZIONE` §4:
+   Nonna Grasa, che non lo dirà); chiedere delle tacche porta a **Orsa**, e a un
+   discorso ben fatto alla Zoppa che mette in piedi la squadra per la resina
+   (`04-LUOGHI` §1.4). Tre cose che servono, e nessuna è il caso.
+3. **Se il tavolo ci costruisce sopra una teoria bella**, si guarda se contraddice
+   qualcosa di scritto. Se non contraddice niente, **da adesso è vera** — e si scrive
+   in `STATO-DEL-MODULO.md`, non si tiene a mente.
+
+> ⚠️ **Uno solo per modulo.** Un secondo falso indizio non raddoppia il divertimento:
+> insegna al tavolo che i fatti non contano, e quella è l'unica cosa di cui devono
+> potersi fidare.
+
+---
+
+## §8 · Quando non trovano niente
+
+Le tre mosse, in ordine, e nessuna è «il DM spiega» (`nodi-e-sei-porte.md` §5):
+
+1. **Sposta l'indizio, non la soluzione.** Il nodo che non hanno trovato compare
+   altrove, per bocca di chi ha una ragione sua (§6).
+2. **Fai muovere l'avversario.** Se la pista A è ferma al G2, Sfregio studia la
+   stalla **la terza volta mentre i PG ci sono**. Non è un aiuto: è il piano che va
+   avanti, ed è più onesto di un indizio caduto dal cielo.
+3. **Chiedi cosa stanno cercando.** Fuori finzione, trenta secondi. Nove volte su
+   dieci il gruppo ha una teoria e non sa come verificarla: dagli il modo, non la
+   risposta.
+
+**Quello che non si fa mai**: un PNG che riassume il caso. È il modo più veloce per
+dire al tavolo che l'indagine era decorativa.
+
+---
+
+## §9 · La ricomposizione — dove sta il picco
+
+Ogni pista ha **un** momento in cui le cose smettono di essere separate. La scena la
+fa **un giocatore**, se ci arriva; il DM la tiene scritta come rete di sicurezza e la
+legge solo se il tavolo non ci arriva (`ricomposizione.md`).
+
+| Pista | Il picco | Cosa dice la scena |
+|---|---|---|
+| **A** | la ricevuta letta **davanti a Vesca**, G3 (`06-VILLAIN` §3) | non è «ti abbiamo preso»: è lei che scopre cosa è stato fatto in suo nome |
+| **B** | il registro consegnato alla Sovrintendente **davanti a tutti** (`03-GIORNO-3` §7.1) | si vince senza correre, e un PG paga il posto |
+| **C** | qualcuno **guarda il Drappo invece di portarselo via** (`03-GIORNO-3` §8) | nove facce, e il nome di chi le ha messe lì non serve più |
+
+⚠️ **Il montaggio retrospettivo non introduce mai informazioni nuove.** Se nella
+ricomposizione compare un fatto che il tavolo non ha visto, non è una deduzione: è il
+DM che si spiega.
+
+---
+
+## §10 · Cosa **non** è un mistero, e va detto
+
+L'elenco esiste per prevenire l'inventario: un tavolo che sospetta di tutto smette di
+ragionare.
+
+- **L'agenda di Vesca non è un mistero**: si compra da Occo, completa e vera. Il
+  mistero non è *cosa fa*, è *chi ha detto a Sfregio come*.
+- **Attu non nasconde niente.** La clausola è scritta piccola, ma è scritta: chi
+  legge il foglio la trova. Un uomo che ti frega alla luce del sole non è un
+  cospiratore, ed è più difficile da combattere.
+- **La piena del G3 sera** (`06-VILLAIN` §4) è un **epilogo**, non un indizio. Non
+  seminarla come mistero: nessuno può fermarla e nessuno la scoprirà per mesi.
+- **La Sorte non è truccata.** Se i PG barano, Vesca se ne accorge e non dice niente
+  (`06-VILLAIN` §1): il sospetto è loro, non del mondo.
+
+---
+
+## Materiale collegato
+
+| Cosa | Dove |
+|---|---|
+| Nodi, sei porte, rete ridondante, vicolo cieco | skill `rumblingstone-indagine` |
+| Il registro Eco: il documento e le sue assenze, l'errore fecondo | `rumblingstone-indagine/references/documento-ed-errore-fecondo.md` |
+| Le agende ora per ora, e le contromosse | `06-VILLAIN-E-AGENDE.md` |
+| I diciotto eventi personali (dove vivono C1, C5, B1, B3) | `05-INIZIAZIONE-E-EVENTI-PG.md` |
+| I luoghi, Occo e le dicerie | `04-LUOGHI-E-INTRIGO.md` |
+| Il finale alternativo e il Drappo | `03-GIORNO-3-LO-STACCO-E-LA-CORSA.md` §7.1, §8 |
+| Dove si annota una teoria del tavolo diventata vera | `STATO-DEL-MODULO.md` |
 
 
 \page
@@ -1622,6 +2170,21 @@ li porta in casa. Melchio è l'unico che li riconosce a colpo d'occhio.
 
 ---
 
+## §4-bis · Come si tratta un segreto di PG (nota di regia)
+
+> ⚠️ **Questa sezione stava per errore in fondo a `FASCICOLO-SCHEDE-GIOCATORE.md`**,
+> che è un file ✉ **da mettere in mano ai giocatori**: elencava i collegamenti fra i
+> segreti a chi non doveva ancora conoscerli. Spostata qui il 2026-08-15.
+
+Ogni «cosa che non dici» è **un segreto che il giocatore possiede**, non un colpo di
+scena che gli spetta subire. Se un giocatore decide di rivelarlo prima del previsto,
+**va premiato**: il segreto è suo e l'ha speso quando ha voluto.
+
+I collegamenti fra i segreti — Ombra e Nonna Grasa, Berenice e Rasca, i nove nomi di
+Melchio e il Drappo — sono nel §4 qui sopra.
+
+---
+
 ## §5 · Griglia di controllo — chi ha avuto la sua scena?
 
 Fotocopiala e segna. Se a fine serata una riga è vuota, quel giocatore ha guardato.
@@ -1671,7 +2234,11 @@ Ogni luogo ha:
 
 ---
 
+![Tarsilia dall'alto](../ALLEGATI/immagini/web/tavola-tarsilia-citta.jpg)
+
 ## §1 · Il rione dell'Istrice (casa vostra)
+
+![Nonna Grasa](../ALLEGATI/immagini/web/png-nonna-grasa.jpg)
 
 ### 1.1 · L'oratorio dell'Istrice
 
@@ -1788,6 +2355,8 @@ qualcuno lo guardi.
 
 ## §3 · Botteghe e servizi
 
+![La bilancia dell'Oca](../ALLEGATI/immagini/web/spot-bilancia.jpg)
+
 | # | Bottega | Chi | Cosa vende | Prezzo | Gancio |
 |---|---|---|---|---|---|
 | 3.1 | **Il maniscalco della Torre** | mastro Ovidio, 40 anni, preciso | ferri nuovi fatti bene | 12 mo | `G2` **Ritmo +1** al cavallo. Ovidio chiede in cambio che qualcuno testimoni per suo fratello in una causa |
@@ -1897,8 +2466,14 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 | 5 | Il giro del mondo: cosa succede se i PG non fanno niente |
 | 6 | Contromosse: se i giocatori smontano il piano troppo presto |
 | 7 | Incontri scalabili — 4, 5, 6, 7 giocatori |
+| 7-bis | **Quanto dura davvero uno scontro** — danno medio del gruppo, round previsti, chi rischia |
+| 7-ter | **L'audit della ricchezza** — con quanto entrano e con quanto escono |
 
 ---
+
+![Ottavia Vesca](../ALLEGATI/immagini/web/png-vesca.jpg)
+![Gerlando Attu](../ALLEGATI/immagini/web/png-attu.jpg)
+![Sfregio](../ALLEGATI/immagini/web/png-sfregio.jpg)
 
 ## §1 · Ottavia Vesca — Capitana del Bruco
 
@@ -2133,6 +2708,108 @@ Capita, se il gruppo arriva da un'altra avventura. Tre correzioni e basta:
 2. **I bravacci** diventano guerrieri 2 (GS 1): 20 pf, CA 18.
 3. **Tutte le CD non di combattimento salgono di 2**, tranne quelle del rito
    d'Investitura, che restano facili di proposito.
+
+---
+
+## §7-bis · Quanto dura davvero uno scontro — l'aritmetica
+
+> **Perché c'è.** Il §7 dice **quanto è grosso** un incontro (px e GS). Non dice la
+> cosa che il DM vuole sapere prima di sedersi: **quanti round dura**, e **chi
+> rischia di cadere**. Il formato viene dai master della campagna
+> (`07_il Portale Della Forgia Eterna/ARC07-DEF-1` §8, «Analisi DPR»), applicato qui.
+>
+> ⚠️ **Nessun numero nuovo**: tutto è calcolato dagli statblocchi di
+> `STATBLOCCHI-PF1E.md` e dalle schede di `PREGEN-SEI-SCHEDE-PF1E.md`. Sono medie
+> di tavolo, non fisica: servono a decidere il ritmo, non a sostituire i dadi.
+
+### Il gruppo — danno medio per round, contro CA 16
+
+| PG | Cosa fa davvero | Danno medio/round |
+|---|---|---|
+| **Vanna** — spada lunga +8 (1d8+3), con Attacco Poderoso +7 (1d8+5) | l'unica che regge la prima fila | **~5,5** |
+| **Nocca** — spada corta +7, due armi +5/+5 | ⚠️ **non è un picchiatore**: il suo scudiscio serve a *rallentare*, non a uccidere | ~2,5 |
+| **Ombra** — dardo acido, contatto +3 (1d6+1), **7 al giorno** | il contatto ignora l'armatura: contro i bravacci corazzati è il suo colpo migliore | ~2,7 |
+| **Tesio** — balestra +3 (1d8) | il danno è l'ultima cosa che sa fare | ~1,8 |
+| **Berenice** — spada lunga +2, **e l'esibizione** | il buff vale **più del suo attacco**: +1 a colpire e +1 ai danni su cinque persone | ~1,6 · **+2 al gruppo** |
+| **Melchio** — scimitarra +3, e 4 canalizzazioni da 2d6 | tiene in piedi gli altri: 7 punti a testa, quattro volte | ~1,8 |
+| **Gruppo intero (6)** | | **≈ 17-18/round** |
+
+### I tre momenti duri
+
+| Scontro | pf da togliere | **Round previsti** | Chi rischia |
+|---|---|---|---|
+| **La rissa alla fontana** (5 tintori, pf 6, CA 12) | 30, e sono CA 12: si colpisce quasi sempre | **2 round** | nessuno: è **danno non letale**, e si fermano appena vedono una lama vera |
+| **L'assalto alle stalle** (Sfregio 26 pf CA 18 + 4 bravacci 13 pf CA 16) | 78 | **5-6 round** — è il vero scontro del modulo | vedi sotto ⚠ |
+| **La curva nord** | — | non è un incontro: è un **hazard a costo di azioni** (§7.4) | chi resta sul transennato |
+
+### ⚠️ Le tre cose che l'aritmetica dice e la lettura no
+
+1. **Tesio è il bersaglio, ed è un bersaglio fragile**: CA 12 e 20 pf. Sfregio con
+   attacco furtivo fa in media **10,5** a colpo. **Due colpi e Tesio è a terra** — e
+   Sfregio è precisamente il tipo che sceglie il bersaglio giusto. Non è un difetto
+   da correggere: è la ragione per cui il gruppo deve **coprirlo**, e va giocata.
+2. **I bravacci fanno più danno di quanto sembri**: 4 × mazza pesante +4 (1d8+2) =
+   circa **12 punti a round** distribuiti. Il gruppo ne incassa ~18 in tutto per
+   round: al terzo round qualcuno è sotto metà, ed è lì che serve Melchio.
+3. **Sfregio non muore, se ne va.** Ha Riflessi +8, Schivare prodigioso e Furtività
+   +19 in movimento: se lo si porta sotto metà, **esce**. Un DM che lo tiene in
+   piedi fino a zero sta giocando un altro personaggio.
+
+### Se il tavolo è più piccolo o più grande
+
+Il §7 scala il **numero** dei nemici. L'aritmetica scala con lui: con **4 giocatori**
+il gruppo fa ~11-12 a round e l'assalto passa a **7 round** — troppo. **Per questo il
+§7 toglie la pasta corrosiva e un bravaccio**: non è generosità, è il conto.
+
+---
+
+## §7-ter · L'audit della ricchezza — con quanto entrano, con quanto escono
+
+> **Perché c'è.** Un modulo di tre giorni che parte da un problema di **soldi** (il
+> Peso di contrada) deve saper dire quanto denaro passa davvero per le mani del
+> gruppo — se non altro perché qualcuno continuerà a giocare quei personaggi.
+> Formato preso dagli audit della campagna (`ARC07-TESORO-WBL-AUDIT.md`), che
+> chiudono con la regola *«ricchezza d'uscita = ingresso dell'arco dopo»*.
+
+**Riferimento PF1e**: un PG di **3° livello** sta a **~3.000 mo** di equipaggiamento.
+Le sei pregenerate ci stanno dentro: **il Drappo non è un modulo che arricchisce**, ed
+è una scelta.
+
+### Quello che entra
+
+| Da dove | Quanto | Nota |
+|---|---|---|
+| La brocca del rione | **140 monete d'argento** = 14 mo | è il punto di partenza, e **non è del gruppo**: è della contrada |
+| La cassa sotto le bandiere (`04-LUOGHI` §1.1) | **220 mo in argento vecchio** | va **trovata**, non regalata. È la via più pulita al Peso |
+| Montepremi della Corsa | **500** primo · **200** secondo · **100** terzo | **alla contrada**, non ai PG |
+| La ricevuta di Sfregio venduta alla Civetta | **300 mo** | ⚠️ o vale molto di più **tenuta in tasca**: è la scelta, non il prezzo |
+| Il Drappo | **non ha prezzo e non si vende** | chi ci prova trova la città chiusa |
+
+### Quello che esce
+
+| Per cosa | Quanto |
+|---|---|
+| **Il Peso di contrada** | **100 mo** — è il muro del Giorno 1, e assorbe quasi tutto |
+| Fieno, ferri, informazioni (se li comprano prima del Bruco) | 30-50 mo |
+| Sirena Occo | ⚠️ **non si paga in monete**: si paga in informazioni, e quel prezzo torna al Giorno 3 |
+| Il corteo del Giorno 3 | se hanno svuotato la cassa, la sbandierata parte a **−2** (`06-VILLAIN` §6) |
+
+### Il conto, e la cosa che dice
+
+> **Un gruppo che gioca bene esce dal Drappo con quasi gli stessi soldi con cui è
+> entrato**, e con una contrada che non è stata accorpata.
+
+È il punto del modulo: qui **la ricchezza non è il premio**. Il premio è un rione che
+esiste ancora, un cavallo, e sei persone che nel rione hanno un nome. Se il DM
+prosegue con questi PG, li consegna **al 4° livello, con l'equipaggiamento di
+partenza** — `[INFERRED: nessuna riga del modulo assegna oggetti magici ai PG, e i
+premi sono tutti di contrada]`.
+
+⚠️ **Se invece il gruppo ha venduto la ricevuta** (300 mo) **e tenuto per sé il
+montepremi**, sono ~800 mo divisi in sei: **poco più di 130 a testa**. Non cambia il
+loro livello di potere; cambia **come li guarda il rione**, ed è quello che va
+giocato.
+
 
 
 \page
@@ -2387,7 +3064,12 @@ brutte figure per arrivarci.
 
 ---
 
+![La Ruota, il giorno prima](../ALLEGATI/immagini/web/tavola-la-ruota-vigilia.jpg)
+
 ## §5 · La Sorte dei cavalli
+
+![La Ruota il giorno della corsa](../ALLEGATI/immagini/web/tavola-la-ruota.jpg)
+*La Ruota, il giorno della corsa.*
 
 **Meccanica completa**: `REGOLE-DELLA-CORSA-PF1E.md` §2. Qui c'è solo la scena.
 
@@ -2728,6 +3410,8 @@ che passa in mezzo alle tavole perché è tradizione che passi.
 
 ---
 
+![La Cena della vigilia](../ALLEGATI/immagini/web/tavola-la-cena.jpg)
+
 ## §5 · L'uomo con la fascia grigia
 
 **Beat di Nocca.** Da giocare quando il giocatore di Nocca si allontana dalla Cena,
@@ -2754,7 +3438,11 @@ nessuno. L'unica variabile è se l'Istrice lo sanno prima.
 
 ---
 
-## §6 · Notte — l'assalto alle stalle
+![Le stalle, dopo mezzanotte](../ALLEGATI/immagini/web/tavola-le-stalle.jpg)
+
+## §6
+
+![Le stalle dopo mezzanotte](../ALLEGATI/immagini/web/tavola-le-stalle.jpg) · Notte — l'assalto alle stalle
 
 **Quando**: dopo mezzanotte, quando la Cena è finita e in giro c'è solo chi è di
 guardia. Mappa: `ALLEGATI/mappe/` → *le stalle dell'Istrice*, 21 × 15 quadretti, 1,5 m
@@ -2797,7 +3485,7 @@ veleno da contatto)*
   (B9). Il rumore è l'operazione: lui non ha nessuna intenzione di combattere.
 - **Round 2**: scende nel box del cavallo (H12) e applica la pasta. Serve **1 round
   intero** e il cavallo deve stare fermo: Addestrare Animali del cavallo... ovvero,
-  Sfregio tira **Cavalcare +9 come prova di destrezza per calmarlo, CD 15**. Se
+  Sfregio tira **Cavalcare +9 come prova di Destrezza per calmarlo, CD 15**. Se
   fallisce, il cavallo urla e sveglia tutto il vicolo.
 - **Round 3+**: se lo scoprono, **non ingaggia**. Lancia la fiaschetta d'olio nella
   paglia (fuoco, §sotto), va di soppiatto verso la finestra alta (O3) e prova a
@@ -3078,6 +3766,8 @@ Stacco venga annullato — con i fischi che ne conseguono.
 
 ---
 
+![La Ruota il giorno della corsa](../ALLEGATI/immagini/web/tavola-la-ruota.jpg)
+
 ## §5 · La Corsa — la regia dei tre giri
 
 Nove tratti: **Dritto**, **Curva Nord**, **Curva Sud**, per tre volte.
@@ -3213,6 +3903,8 @@ non le fa neanche stavolta. Ma:
 
 ---
 
+![Il Drappo](../ALLEGATI/immagini/web/il-drappo.jpg)
+
 ## §8 · Il Drappo di Lino Rasca
 
 Il telo è alto due metri e mezzo. In primo piano c'è la Ruota di Tarsilia con i
@@ -3329,6 +4021,8 @@ voci originali (pasta corrosiva, Ritmo dei cavalli) sono marcate come tali.
 ---
 
 ## §1 · Vidalia Roncetti — Sovrintendente al Drappo
+
+![Vidalia Roncetti](../ALLEGATI/immagini/web/png-roncetti.jpg)
 
 **Umana esperta 6** · LN · femmina, 61 anni · **GS 4**
 *Forestiera residente da trentotto anni. Terzo mandato. Non si compra e — cosa più
@@ -3674,7 +4368,7 @@ parto.*
 ### Attacco
 **Mischia** bastone ferrato +2 (1d6) · falcetto +2 (1d6)
 **Dardo acido** *(dominio Terra)* raggio di contatto **+3**, 1d6+1, **7 volte al giorno**
-**BAB** +2 · **CMB** +2 · **CMD** 13
+**BAB** +2 · **CMB** +2 · **CMD** 14
 
 ### Statistiche
 **For** 10 (+0) · **Des** 13 (+1) · **Cos** 13 (+1) · **Int** 12 (+1) · **Sag** 18 (+4) · **Car** 10 (+0)
@@ -3694,7 +4388,7 @@ Percezione +10, Cavalcare +6, Conoscenze (natura) +6, Sapienza Magica +6
 (6) · bastone ferrato · **bacchetta di *cura ferite leggere*, 25 cariche** (375) ·
 2 pergamene di *ritardare veleno* (300) · 2 antitossine (100) · kit dell'erborista e
 sacca del guaritore (55) · **anello di protezione +1** (2.000) *— era di sua madre,
-e non lo dice a nessuno* · **+ ~150 mo**
+e non lo dice a nessuno; la deviazione entra anche nel CMD* · **+ ~150 mo**
 
 ### Il suo problema
 *Ritardare veleno* lo prepara ogni mattina da sei anni, sempre, e non ha mai dovuto
@@ -3736,7 +4430,7 @@ CD 15 nega), **7 volte al giorno**
 slot a memorizzarle)*
 **Incantesimi preparati** (CD 14 + livello; **+1 per le illusioni**)
 - **0°** (4): *prestidigitazione* · *individuazione del magico* · *lettura del magico* · *luce*
-- **1°** (3 + 1 scuola): *armatura magica* · *charme su persone* (CD 16) · *dardo
+- **1°** (3 + 1 scuola): *armatura magica* · *charme su persone* (CD 15) · *dardo
   incantato* · **scuola**: *immagine silenziosa* (CD 16)
 - **2°** (2 + 1 scuola): *individuazione dei pensieri* (CD 16) · *tocco dell'idiota* ·
   **scuola**: *invisibilità*
@@ -4043,6 +4737,37 @@ prima sessione reale:
    volte ha tirato ciascuno. Se qualcuno sta sotto la metà della media, la scheda va
    corretta, non il giocatore.
 
+## §6 · Audit meccanico delle sei schede — 2026-08-17
+
+Passata 1 della skill `rumblingstone-playtest`, rifatta **sulle sole schede** quando
+sono diventate schede impaginate. Non è una rilettura: i numeri sono stati **ricalcolati
+a macchina** dai master (`scripts/dmcore/schede.py` + aritmetica PF1e Core), perché
+l'audit del §2 aveva guardato il modulo e non la matematica dei sei pregenerati.
+
+| # | Rilievo | Gravità | Esito |
+|---|---|---|---|
+| **A1** | **Economia** — i sei equipaggiamenti contro i 3.000 mo del 3° livello | 🟢 | verificato: 3.000,0 · 3.000,2 · 2.999 · 2.984 · 2.996 · 2.997. Scarto massimo **16 mo** (Tesio, 0,5%): è l'arrotondamento del «~200 mo in tasca», non un errore |
+| **A2** | **CA, contatto e colto alla sprovvista** contro i componenti dichiarati | 🟢 | tutte e sei coerenti |
+| **A3** | **CMB** = BAB + For + taglia | 🟢 | tutte e sei coerenti |
+| **A4** | **CMD di Ombra: 13** | 🟠 | **corretto → 14**. L'anello di protezione +1 è un bonus di *deviazione*, e la deviazione entra nel CMD [PF1e Core]. Un −1 sul CMD è invisibile finché qualcuno non prova a spingerla via dal transennato della curva nord — cioè esattamente la scena per cui esiste |
+| **A5** | **CD di *charme su persone* di Tesio: 16** | 🟠 | **corretto → 15**. Focalizzazione Incantatore (illusione) dà +1 **alle illusioni**; *charme su persone* è Ammaliamento. La CD sbagliata era **a favore** del PG e nessuno l'avrebbe segnalata |
+| **A6** | **Poteri a «3 + modificatore»** — dardo acido, raggio accecante, sfidare la morte, canalizzare, round di esibizione bardica | 🟢 | 7 · 7 · 7 · 4 · 12: tutti coerenti |
+| **A7** | **CD degli incantesimi** (10 + livello + attributo) sulle altre cinque schede | 🟢 | coerenti, illusioni di Tesio comprese |
+| **A8** | **Componenti della CA non dichiarati su Tesio** | 🟢 | non è un errore (12 = 10 + 2 Des): è l'unica scheda che non li elenca. Lasciato com'è — uniformarlo cambierebbe un master per motivi cosmetici |
+
+### Le due correzioni, nel formato del §4
+
+| | cosa cambia | perché | file |
+|---|---|---|---|
+| **J** | CMD di Ombra dei Salici: 13 → **14** | rilievo A4: la deviazione dell'anello conta nel CMD | `PREGEN-SEI-SCHEDE-PF1E.md` §3 |
+| **K** | *charme su persone* di Tesio: CD 16 → **15** | rilievo A5: la focalizzazione è sulle illusioni, non sugli ammaliamenti | `PREGEN-SEI-SCHEDE-PF1E.md` §4 |
+
+> **Cosa questa passata NON dice.** È audit a tavolino: non misura se le schede danno
+> a tutti la stessa quantità di scena. Quella è la domanda 6 del §5, e si risponde
+> **contando i tiri** alla prima serata vera.
+
+---
+
 > **Come si chiude questo file**: dopo la prima sessione vera, il DM aggiunge un §6
 > con i tempi reali e i punti morti trovati. Allora il modulo passa da alfa a beta.
 
@@ -4064,6 +4789,7 @@ master emoji-grid e l'SVG sono generati e non si modificano a mano.
 | Mappa | Sorgente | Master stampabile | SVG da tavolo |
 |---|---|---|---|
 | **La Ruota** (piazza e pista) | `tarsilia-la-ruota.json` | `tarsilia-la-ruota.md` | `rendered/tarsilia-la-ruota_map01_tarsilia-la-ruota-pista-del-drappo.svg` |
+| **La Ruota — versione giocatore** | `tarsilia-la-ruota-giocatori.json` | `tarsilia-la-ruota-giocatori.md` | `rendered/tarsilia-la-ruota-giocatori_map01_tarsilia-versione-giocatore.svg` |
 | **Le stalle dell'Istrice** | `tarsilia-stalle.json` | `tarsilia-stalle.md` | `rendered/tarsilia-stalle_map01_tarsilia-le-stalle-dell-istrice-assalto-notturno.svg` |
 
 ## Rigenerare
@@ -4080,6 +4806,25 @@ Per stampare o portarle su un VTT:
 python3 scripts/export_map_png.py rendered/<file>.svg --scale 3   # artefatto locale, non committare
 python3 scripts/export_uvtt.py <mappa>.md -o <cartella>           # Foundry / Roll20
 ```
+
+## Su Foundry / Roll20
+
+Le due mappe sono **già esportate** in `uvtt/`, con muri, porte e luci derivati dal
+JSON — si importano native, senza ridisegnare niente:
+
+| File | Muri | Porte | Luci |
+|---|:--:|:--:|:--:|
+| `uvtt/tarsilia-la-ruota_map01_*.uvtt` | 28 | 2 | 0 |
+| `uvtt/tarsilia-stalle_map01_*.uvtt` | 20 | 5 | 2 |
+
+Si rigenerano con `python3 scripts/export_uvtt.py <mappa>.md -o uvtt`.
+
+## Quale delle due Ruote si mette sul tavolo
+
+La versione **del DM** porta le posizioni di partenza, le insidie e le note tattiche:
+è quella che sta dietro lo schermo. Quella **dei giocatori** ha la stessa geometria e
+niente altro — si stampa e si mette in mezzo al tavolo senza consegnare mezza serata
+di informazioni.
 
 ## Coordinate
 
@@ -4108,7 +4853,7 @@ rendiconto di **cosa è stato staccato e cosa no**.
 
 > ⚠️ Analisi documentale, **non parere legale**. Per un uso commerciale reale serve
 > un avvocato IP, e vale ancora la posture di
-> [`plans/adr/ADR-0005`](../plans/adr/ADR-0005-confini-ip-uso-non-commerciale.md).
+> [`plans/adr/ADR-0005`](../../plans/adr/ADR-0005-confini-ip-uso-non-commerciale.md).
 
 ---
 
@@ -4221,7 +4966,7 @@ Una passata sola, e il modulo è già attrezzata per riceverla: i nomi delle con
 compaiono in **nove file** e sono sostituibili con una tabella di rimpiazzo (l'ultima
 è stata fatta nella direzione opposta il 2026-08-15). Insieme vanno cambiate almeno
 **quattro figure su otto** negli scudi, altrimenti il cumulo resta. È il **Lotto 3**
-in [`plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md`](../plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md).
+in [`plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md`](../../plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md).
 
 ## §5 · Le icone degli stemmi
 

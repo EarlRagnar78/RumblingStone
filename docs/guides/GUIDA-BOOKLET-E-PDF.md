@@ -31,6 +31,47 @@ I PDF finiscono in `<cartella del manifest>/pdf/`, con **prefisso `pg-`**
 
 ---
 
+### 0.0-bis · `dm.py volume` — la catena dei mestieri in ordine
+
+Quando il volume è **finito** e lo vuoi portare in stampa, c'è un comando solo che
+li chiama tutti nell'ordine giusto ([ADR-0031](../../plans/adr/ADR-0031-dm-volume-ordine-dei-mestieri.md)):
+
+```bash
+python3 scripts/dm.py volume MANIFEST.json                    # fino allo schermo
+python3 scripts/dm.py volume MANIFEST.json --stampa           # + l'edizione Typst
+python3 scripts/dm.py volume MANIFEST.json --stampa --imposto # + il libretto da piegare
+```
+
+    prosa → lingua → manifest → colophon → schermo → stampa → imposizione
+
+I passi **non hanno lo stesso peso**, ed è deliberato: `prosa` e `lingua`
+**misurano e non bloccano**; `manifest` e `schermo` sono **guasti duri** e fermano
+la catena (compilare da un manifest non valido produce un artefatto sbagliato con
+l'aria di essere andato bene); `stampa` e `imposizione` **degradano pulito** se
+`typst` o `pdfcpu` mancano. `--solo <passo>` e `--salta <passo>` per rifarne uno.
+
+⚠️ In coda, **comunque sia andata**, il comando ti ricorda il cancello d'uscita
+§7 di [`GUIDA-CONDIVISIONE-IP.md`](GUIDA-CONDIVISIONE-IP.md). Non è
+automatizzabile e non finge di esserlo — ma è il momento in cui un volume sta per
+uscire.
+
+---
+
+### 0.1 Le tre opzioni che si dimenticano sempre
+
+```bash
+# il volume da stampare in casa: niente fondo avorio, cioè niente cartuccia bruciata
+python3 scripts/export_booklet_typst.py MANIFEST.json --all --carta bianca
+
+# il libretto: composto in A5 a una colonna, poi imposto due pagine per foglio
+python3 scripts/export_booklet_typst.py MANIFEST.json --all --formato a5
+python3 scripts/dm.py volume MANIFEST.json --stampa --imposto
+
+# un booklet HTML leggero (57 KB invece di 460): senza caratteri incorporati,
+# ma su una macchina senza EB Garamond cambia faccia
+python3 scripts/build_booklet_html.py MANIFEST.json --no-font-embed
+```
+
 ## 1. Cosa produce la pipeline
 
 ```
@@ -153,15 +194,28 @@ qualcuno non allunga un equipaggiamento.
 |---|---|
 | il **markdown** delle schede (sezioni obbligatorie, GS dichiarato) | `validate_standalone.py` §3, in CI |
 | i **link** del modulo, immagini comprese | `validate_standalone.py` §2, in CI |
-| il **manifest** delle schede (master e ritratti risolvibili) | `export_booklet_typst.py --list` in CI + `scripts/tests/test_schede.py` |
+| il **manifest** di ogni booklet (schema, capitoli, copertina, introduzione) | `validate_booklets.py`, in CI |
+| le **immagini** citate dai master (esistono davvero?) | `validate_booklets.py`, in CI |
 | i **parametri** che l'esportatore passa al template `.typ` | `test_schede.py::TestSorgenteTypst` |
-| l'**impaginazione vera** | ⚠️ **nessuno**: `typst` non è installato in CI. Si guarda a occhio, in locale |
+| la **compilazione vera** di tutti i volumi, segnalibri compresi | `validate_booklets.py --stampa`, in CI con `typst` **a versione fissata** |
+| le sei **schede singole** | `--per-scheda` in CI (conta che siano sei) |
+| il **giudizio estetico** | ⚠️ nessuno, e nessuno potrà: si guarda a occhio, in locale |
+
+> 📌 **Dal 2026-08-22 in CI c'è `typst`.** Prima non c'era, e la conseguenza è
+> stata misurata: **due booklet della campagna non avevano mai compilato** (il
+> fascicolo del Palio e quello di Terros), e le immagini dei master non entravano
+> affatto nel volume — `![Stemma Oca](…)` usciva stampato come `!Stemma Oca`.
+> Prima di consegnare qualsiasi cosa:
+>
+> ```bash
+> python3 scripts/validate_booklets.py --stampa
+> ```
 
 Per guardarla a occhio senza aprire il PDF, le pagine si rendono in PNG:
 
 ```bash
 python3 scripts/export_booklet_typst.py MANIFEST.json --keep-typ
-typst compile --font-path scripts/typst/fonts --root . \
+typst compile --font-path scripts/fonts --root . \
     --format png --ppi 110 <nome>.typ 'pagina{n}.png'
 ```
 
@@ -229,6 +283,16 @@ capitoli**. Tutti i percorsi sono relativi alla cartella del manifest.
   "cover_image":   "../../Immagini/camera-nodo-terra.webp",
   "intro_md":      "00-INTRO-DOVE-SIAMO.md",
   "out":           "ARC07-SESSIONE-TERROS-BOOKLET.html",
+  "indice_analitico": true,
+  "colophon": {
+    "edizione":  "Edizione da tavolo",
+    "versione":  "v1",
+    "data":      "2 settembre 2026",
+    "autori":    "G. Samuele",
+    "basato_su": "SRD 3.5 e OGL 1.0a",
+    "licenza":   "Materiale del DM, uso privato e non commerciale",
+    "nota":      "avvertenze di contenuto, se servono"
+  },
   "chapters": [
     {"title": "I · Regia della Sessione", "file": "01-REGIA-SESSIONE.md", "tag": "dm"},
     {"title": "✉ Hint — Thorik",          "file": "02-HINT-THORIK.md",    "tag": "player"}
@@ -246,6 +310,8 @@ capitoli**. Tutti i percorsi sono relativi alla cartella del manifest.
 | `cover_image` | immagine di copertina (SVG inline, oppure PNG/JPG/WEBP incorporate) |
 | `intro_md` | markdown mostrato **nella stessa scheda** della copertina |
 | `out` | nome del file HTML (i `.hb.md` e i PDF derivano da questo) |
+| `colophon` | **la pagina dei crediti**, sul verso del frontespizio ([ADR-0023](../../plans/adr/ADR-0023-colophon-di-edizione.md)): chi ha fatto il volume, che versione è, su cosa si basa e cosa se ne può fare. Senza questa chiave **il volume esce anonimo**. ⚠️ La `data` si **scrive**, non si deduce dall'orologio: un PDF che prende la data dall'ora corrente cambia a ogni compilazione e smette di essere byte-identico. E `autori` **non si inventa mai** |
+| `indice_analitico` | aggiunge l'**INDICE ANALITICO** in coda al volume da stampa. Le voci **non si annotano a mano**: le marca l'esportatore prendendo i nomi canonici dal glossario, alla prima occorrenza per volume. Se in quel volume non compare nessun nome del glossario — il caso dei moduli autoconclusivi, che hanno un'ambientazione loro — la pagina **non si aggiunge**: un indice vuoto è peggio di niente. Solo catena di stampa: una pagina web ha la ricerca |
 | `chapters[]` | `title` = etichetta del tab · `file` = markdown · `tag` = `dm` (⚠ SOLO DM) / `player` (✉ HANDOUT) / assente |
 
 ---
@@ -382,6 +448,36 @@ nella solita cartella `pdf/` con i permessi del tuo utente.
 | Mappe ASCII tagliate sul lato | in stampa i blocchi `pre` si riducono da soli; se resta tagliata, la mappa è troppo larga: accorcia le righe nel master |
 | Emoji delle mappe non renderizzate nel container | manca il font emoji → l'immagine include `fonts-noto-color-emoji`; se hai personalizzato il Dockerfile, rimettilo |
 | `git status` mostra i PDF | non dovrebbe: `*.pdf` è gitignored. Se compaiono, hai un `.gitignore` modificato |
+
+---
+
+## 8-bis. La tipografia: cosa fa il tema da solo, e cosa puoi chiedergli
+
+Il tema (`scripts/typst/tema-rumblingstone.typ`) **si tocca lì**, mai nel `.typ`
+generato — quello si rifà a ogni compilazione.
+
+- **Capolettera annegato.** L'iniziale del primo paragrafo di ogni capitolo
+  scende **tre righe** dentro il testo, che le scorre attorno (pacchetto
+  `droplet`, vendorizzato: la build non scarica niente, [ADR-0026](../../plans/adr/ADR-0026-vendoring-pacchetti-typst.md)).
+  ⚠️ Vuole almeno tre righe sotto di sé: su un paragrafo corto usa
+  `capolettera-versale`, che è il ripiego e resta disponibile apposta.
+  Si spegne per capitolo con `"capolettera": false` nel manifest.
+- **Indice analitico**: `"indice_analitico": true` (vedi §3).
+- **Imposizione in libretto**: `dm.py volume --imposto`, oppure `pdfcpu` a mano.
+  ⚠️ Il PDF imposto **non si versiona e non si confronta a byte**: l'output di
+  `pdfcpu` non è byte-identico fra due esecuzioni — è l'array `/ID`, non il
+  contenuto ([ADR-0027](../../plans/adr/ADR-0027-imposizione-con-pdfcpu.md)).
+- **Formato A5** (`--formato a5`, o `"formato": "a5"` nel manifest): compone il
+  volume a **una colonna** con corpo 9.6 pt. Va **insieme** all'imposizione, non
+  al posto suo: imporre un volume A4 mette due pagine per foglio e le scala al
+  71%, cioè porta il corpo a ~7,2 pt — si stampa, non si legge al tavolo.
+  Composto in A5, dopo la piega il corpo resta quello di un tascabile.
+  In A5 anche l'indice analitico va a una colonna: due sarebbero da 5 cm.
+- **Quanto è leggibile**: `python3 scripts/validate_tipografia.py` misura i
+  **caratteri per riga** dalle metriche vere del font (oggi **62,1**, dentro la
+  finestra 45-75), la **gerarchia dei titoli** — un `h4` sotto un `h2` diventa un
+  ramo che non esiste nei segnalibri — e simula le tre dicromazie sulle tavole,
+  per trovare i colori che a chi è daltonico diventano lo stesso colore.
 
 ---
 

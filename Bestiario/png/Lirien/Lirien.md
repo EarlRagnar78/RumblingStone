@@ -1,5 +1,14 @@
 # Lirien Amaranti — «Il Giullare Spezzato»
 
+
+```statblocco
+gs: 4
+ca: 16
+ca-dettaglio: (tatto 13)
+pf: 33
+ts: Temp +2, Rifl +9, Vol +1
+```
+
 > **Lotto R5** del `plans/PIANO-REINTEGRAZIONE-PNG-AP-RHOD.md` (2026-07-20).
 > ✅ **CANONIZZATO DAL DM (2026-07-20, gate R6)** — personaggio
 > fornito dal giocatore/DM (scheda PF1e «Lirien Amaranti v2.0 — Pugnale &

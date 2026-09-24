@@ -1,0 +1,1071 @@
+{
+  "version": 1,
+  "symbols": {
+    "🌲": {
+      "label": "Foresta densa (Furtività +5, copertura)",
+      "render": {
+        "mode": "fill",
+        "pat": "t_forest",
+        "fill": "#55754d",
+        "altezza_m": 4.5,
+        "texture": "fogliame"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": true,
+        "deroga_uvtt": "il muro UVTT e' binario e il bosco no: blocca la vista ATTRAVERSO la cella, non DENTRO. Farlo muro pieno vorrebbe dire che un PG in mezzo agli alberi non vede il quadretto adiacente. Il glifo del margine e' il lotto di ADR-0051 (decisione DM del 2026-09-12).",
+        "cover": "half",
+        "obscurement": "heavy",
+        "move_cost": 4,
+        "nameable": false
+      }
+    },
+    "🌿": {
+      "label": "Vegetazione bassa",
+      "render": {
+        "mode": "fill",
+        "pat": "t_veg",
+        "fill": "#9db97b",
+        "altezza_m": 0.75,
+        "texture": "erba"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "light",
+        "move_cost": 2,
+        "nameable": false
+      }
+    },
+    "🟩": {
+      "label": "Pianura / area aperta",
+      "render": {
+        "mode": "fill",
+        "pat": "t_grass",
+        "fill": "#b3c489",
+        "altezza_m": 0.0,
+        "texture": "erba"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": false
+      }
+    },
+    "🟫": {
+      "label": "Terra battuta / sentiero",
+      "render": {
+        "mode": "fill",
+        "pat": "t_earth",
+        "fill": "#b08d68",
+        "altezza_m": 0.0,
+        "texture": "terra-battuta"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": false
+      }
+    },
+    "🟨": {
+      "label": "Sabbia / area segnalata",
+      "render": {
+        "mode": "fill",
+        "pat": "t_sand",
+        "fill": "#e4cf9c",
+        "altezza_m": 0.0,
+        "texture": "sabbia"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": false
+      }
+    },
+    "🟧": {
+      "label": "Lava raffreddata / pericolo",
+      "render": {
+        "mode": "fill",
+        "pat": "t_lava",
+        "fill": "#d59650",
+        "altezza_m": 0.0
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 2,
+        "nameable": false,
+        "hazard": {
+          "kind": "fire",
+          "severity": "minor"
+        }
+      }
+    },
+    "🟥": {
+      "label": "Zona letale",
+      "render": {
+        "mode": "fill",
+        "pat": "t_lethal",
+        "fill": "#b94a3c",
+        "altezza_m": 0.0
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": false,
+        "hazard": {
+          "kind": "magic",
+          "severity": "lethal"
+        }
+      }
+    },
+    "🟦": {
+      "label": "Acqua profonda",
+      "render": {
+        "mode": "fill",
+        "pat": "t_deep",
+        "fill": "#4c7ba3",
+        "altezza_m": -1.5,
+        "texture": "acqua"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "swim": true,
+        "nameable": false
+      }
+    },
+    "🌊": {
+      "label": "Acqua / corrente",
+      "render": {
+        "mode": "fill",
+        "pat": "t_water",
+        "fill": "#6aa5c4",
+        "altezza_m": -0.75,
+        "texture": "acqua"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 2,
+        "nameable": false
+      }
+    },
+    "⬛": {
+      "label": "Edificio / corpo di fabbrica (muratura piena: blocca vista e movimento)",
+      "render": {
+        "mode": "fill",
+        "pat": "t_struct",
+        "fill": "#6b5b47",
+        "heavy": true,
+        "altezza_m": 3.0,
+        "texture": "legno"
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": true,
+        "cover": "total",
+        "obscurement": "none",
+        "nameable": true
+      }
+    },
+    "🔳": {
+      "label": "Dais / pedana rialzata (ci si sale sopra: NON e' un muro)",
+      "render": {
+        "mode": "fill",
+        "pat": "t_dais",
+        "fill": "#b9a884"
+      }
+    },
+    "⬜": {
+      "label": "Pavimento lavorato",
+      "render": {
+        "mode": "fill",
+        "pat": "t_floor",
+        "fill": "#d8cdb4",
+        "altezza_m": 0.0,
+        "texture": "pavimento"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": false
+      }
+    },
+    "🏰": {
+      "label": "Muro / roccia solida",
+      "render": {
+        "mode": "fill",
+        "pat": "t_wall",
+        "fill": "#3f3931",
+        "heavy": true,
+        "altezza_m": 4.5,
+        "texture": "muratura"
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": true,
+        "cover": "total",
+        "obscurement": "none",
+        "nameable": false
+      }
+    },
+    "🟪": {
+      "label": "Pilastro / mithral",
+      "render": {
+        "mode": "fill",
+        "pat": "t_pillar",
+        "fill": "#8a67b5",
+        "heavy": true,
+        "altezza_m": 4.5,
+        "texture": "pietra-chiara"
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": true,
+        "cover": "total",
+        "obscurement": "none",
+        "nameable": true
+      }
+    },
+    "⛰": {
+      "label": "Montagne / creste rocciose",
+      "render": {
+        "mode": "fill",
+        "pat": "t_mountain",
+        "fill": "#8d8271",
+        "heavy": true,
+        "altezza_m": 7.5,
+        "texture": "roccia"
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": true,
+        "cover": "total",
+        "obscurement": "none",
+        "nameable": true
+      }
+    },
+    "🪨": {
+      "label": "Rocce/macerie (copertura +4 CA, terreno difficile)",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_rocks",
+        "fill": "#ced4da",
+        "altezza_m": 0.75,
+        "texture": "roccia"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "half",
+        "obscurement": "none",
+        "move_cost": 2,
+        "prone_concealment": true,
+        "destructible": true,
+        "nameable": true
+      }
+    },
+    "🔥": {
+      "label": "Fuoco (1d6 fuoco/round)",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_fire",
+        "fill": "#ffb4a2"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "light",
+        "move_cost": 1,
+        "nameable": false,
+        "hazard": {
+          "kind": "fire",
+          "severity": "major"
+        },
+        "light": {
+          "raggio_m": 7.5,
+          "colore": "ffb37a"
+        }
+      }
+    },
+    "💥": {
+      "label": "Fiamme / esplosione",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_boom",
+        "fill": "#ffb4a2"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "light",
+        "move_cost": 1,
+        "nameable": false,
+        "hazard": {
+          "kind": "fire",
+          "severity": "major"
+        }
+      }
+    },
+    "💀": {
+      "label": "Fossa / trappola",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_skull",
+        "fill": "#e9ecef"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": false,
+        "hazard": {
+          "kind": "fall",
+          "severity": "major"
+        }
+      }
+    },
+    "🕳": {
+      "label": "Voragine / buco",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_pit",
+        "fill": "#495057",
+        "altezza_m": -3.0
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "nameable": true,
+        "hazard": {
+          "kind": "fall",
+          "severity": "lethal"
+        }
+      }
+    },
+    "🔵": {
+      "label": "PG / alleati",
+      "render": {
+        "mode": "unit",
+        "fill": "#1d6fd8"
+      }
+    },
+    "🔴": {
+      "label": "Nemico standard",
+      "render": {
+        "mode": "unit",
+        "fill": "#d62828"
+      }
+    },
+    "⚫": {
+      "label": "Boss / comandante",
+      "render": {
+        "mode": "unit",
+        "fill": "#212529"
+      }
+    },
+    "🟡": {
+      "label": "Incantatore nemico",
+      "render": {
+        "mode": "unit",
+        "fill": "#f4b400"
+      }
+    },
+    "🟢": {
+      "label": "Creatura evocata / bestia",
+      "render": {
+        "mode": "unit",
+        "fill": "#2b9348"
+      }
+    },
+    "🟣": {
+      "label": "Creatura speciale",
+      "render": {
+        "mode": "unit",
+        "fill": "#9d4edd"
+      }
+    },
+    "🌳": {
+      "label": "Treant / creatura vegetale",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_tree",
+        "fill": "#b7e4c7",
+        "altezza_m": 6.0,
+        "texture": "fogliame"
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": true,
+        "deroga_uvtt": "e' una CREATURA, non terreno: un treant si muove, un muro no. Lo dice la spec stessa (§4.2 -> §7). Decisione DM del 2026-09-12.",
+        "cover": "total",
+        "obscurement": "none",
+        "nameable": true
+      }
+    },
+    "⭐": {
+      "label": "Obiettivo primario",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_star",
+        "fill": "#fff3b0",
+        "piatto": true
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": true
+      }
+    },
+    "🚪": {
+      "label": "Porta / ingresso",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_door",
+        "fill": "#e6ccb2",
+        "piatto": true
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": true,
+        "deroga_uvtt": "ha gia' la sua geometria nell'export: `door: true` produce un varco, non un segmento di muro. Chiusa e' un muro, aperta un passaggio, e lo stato non e' una proprieta' del simbolo (spec §7).",
+        "door": true,
+        "cover": "total",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": true
+      }
+    },
+    "🗼": {
+      "label": "Torre / struttura alta",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_tower",
+        "fill": "#dee2e6",
+        "altezza_m": 9.0
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": true,
+        "cover": "total",
+        "obscurement": "none",
+        "nameable": true
+      }
+    },
+    "🏺": {
+      "label": "Contenitore / bottino",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_urn",
+        "fill": "#f8f9fa",
+        "altezza_m": 0.75
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": true
+      }
+    },
+    "🔔": {
+      "label": "Allarme / trappola sonora",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_bell",
+        "fill": "#fff3b0"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": true
+      }
+    },
+    "💎": {
+      "label": "Tesoro / oggetto magico",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_gem",
+        "fill": "#caf0f8"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": true
+      }
+    },
+    "👑": {
+      "label": "Trono / Corona",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_crown",
+        "fill": "#fff3b0"
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": false,
+        "cover": "half",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": true
+      }
+    },
+    "🏮": {
+      "label": "Braciere / fonte di luce",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_brazier",
+        "fill": "#ffd166",
+        "altezza_m": 1.5
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": false,
+        "cover": "half",
+        "obscurement": "none",
+        "nameable": true,
+        "light": {
+          "raggio_m": 9.0,
+          "colore": "ffd9a0"
+        }
+      }
+    },
+    "🪓": {
+      "label": "Rastrelliera / armi",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_rack",
+        "fill": "#e9ecef",
+        "altezza_m": 1.5
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": false,
+        "cover": "half",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": true
+      }
+    },
+    "🛏": {
+      "label": "Giaciglio",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_bed",
+        "fill": "#e9ecef",
+        "altezza_m": 0.75
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": true
+      }
+    },
+    "📦": {
+      "label": "Casse / rifornimenti",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_crate",
+        "fill": "#e6ccb2",
+        "altezza_m": 1.5
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": true,
+        "cover": "total",
+        "obscurement": "none",
+        "destructible": true,
+        "nameable": true
+      }
+    },
+    "🐴": {
+      "label": "Cavalcature",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_horse",
+        "fill": "#e6ccb2"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": true
+      }
+    },
+    "🕸": {
+      "label": "Ragnatele (terreno difficile)",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_web",
+        "fill": "#dee2e6",
+        "altezza_m": 0.75
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "light",
+        "move_cost": 4,
+        "nameable": false,
+        "hazard": {
+          "kind": "magic",
+          "severity": "minor"
+        }
+      }
+    },
+    "❄": {
+      "label": "Ghiaccio",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_ice",
+        "fill": "#caf0f8",
+        "altezza_m": 0.0
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 2,
+        "nameable": false,
+        "hazard": {
+          "kind": "cold",
+          "severity": null
+        }
+      }
+    },
+    "⚡": {
+      "label": "Energia / pericolo magico",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_bolt",
+        "fill": "#fff3b0"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": false,
+        "hazard": {
+          "kind": "electric",
+          "severity": "major"
+        },
+        "light": {
+          "raggio_m": 6.0,
+          "colore": "fff0a0"
+        }
+      }
+    },
+    "🌀": {
+      "label": "Portale / vortice",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_portal",
+        "fill": "#caf0f8"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": true
+      }
+    },
+    "⬇": {
+      "label": "Discesa / pendenza",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_down",
+        "fill": "#dee2e6",
+        "piatto": true
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 2,
+        "climb": "easy",
+        "nameable": false
+      }
+    },
+    "🏛": {
+      "label": "Edificio / tempio",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_temple",
+        "fill": "#dee2e6",
+        "altezza_m": 6.0,
+        "texture": "pietra-chiara"
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": true,
+        "cover": "total",
+        "obscurement": "none",
+        "nameable": true
+      }
+    },
+    "🌋": {
+      "label": "Bocca vulcanica / fumarola",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_volcano",
+        "fill": "#ffb4a2"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "heavy",
+        "move_cost": 2,
+        "nameable": true,
+        "hazard": {
+          "kind": "fire",
+          "severity": "lethal"
+        }
+      }
+    },
+    "🗿": {
+      "label": "Statua",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_statue",
+        "fill": "#dee2e6",
+        "altezza_m": 1.5
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": true,
+        "cover": "total",
+        "obscurement": "none",
+        "destructible": true,
+        "nameable": true
+      }
+    },
+    "🌉": {
+      "label": "Ponte / passerella",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_bridge",
+        "fill": "#e6ccb2",
+        "altezza_m": 0.75
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": true
+      }
+    },
+    "🎯": {
+      "label": "Obiettivo tattico",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_target",
+        "fill": "#fff3b0",
+        "piatto": true
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": true
+      }
+    },
+    "🖼": {
+      "label": "Affresco / quadro",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_mural",
+        "fill": "#dee2e6",
+        "piatto": true
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": true
+      }
+    },
+    "✨": {
+      "label": "Effetto magico attivo",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_sparkle",
+        "fill": "#fff3b0",
+        "piatto": true
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": true,
+        "light": {
+          "raggio_m": 4.5,
+          "colore": "e6ccff"
+        }
+      }
+    },
+    "⚔": {
+      "label": "Zona di scontro",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_swords",
+        "fill": "#dee2e6",
+        "piatto": true
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": true
+      }
+    },
+    "⚰": {
+      "label": "Sarcofago / bara",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_coffin",
+        "fill": "#e6ccb2",
+        "altezza_m": 0.75
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": false,
+        "cover": "half",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": true
+      }
+    },
+    "🛢": {
+      "label": "Barile",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_barrel",
+        "fill": "#e6ccb2"
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": false,
+        "cover": "half",
+        "obscurement": "none",
+        "destructible": true,
+        "nameable": true
+      }
+    },
+    "🪜": {
+      "label": "Scale / rampa",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_stairs",
+        "fill": "#dee2e6"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 2,
+        "nameable": true
+      }
+    },
+    "🦴": {
+      "label": "Ossa / resti",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_bones",
+        "fill": "#e9ecef"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 2,
+        "nameable": true
+      }
+    },
+    "🍄": {
+      "label": "Funghi giganti",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_mushrooms",
+        "fill": "#ffb4a2"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "half",
+        "obscurement": "light",
+        "move_cost": 2,
+        "nameable": true
+      }
+    },
+    "🕯": {
+      "label": "Candele / rituale",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_candles",
+        "fill": "#fff3b0"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "move_cost": 1,
+        "nameable": true,
+        "light": {
+          "raggio_m": 4.5,
+          "colore": "ffe6b3"
+        }
+      }
+    },
+    "🌾": {
+      "label": "Erba alta / cespugli (occultamento)",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_bush",
+        "fill": "#b7e4c7"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "light",
+        "move_cost": 2,
+        "prone_concealment": true,
+        "nameable": true
+      }
+    },
+    "⛺": {
+      "label": "Tenda (telo teso: blocca la vista, si abbatte)",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_tent",
+        "fill": "#e6ccb2",
+        "altezza_m": 0.75
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": true,
+        "cover": "total",
+        "obscurement": "none",
+        "destructible": true,
+        "nameable": true
+      }
+    },
+    "🔮": {
+      "label": "Cristalli / altare magico",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_crystal",
+        "fill": "#caf0f8"
+      },
+      "function": {
+        "blocks_movement": true,
+        "blocks_sight": false,
+        "cover": "half",
+        "obscurement": "none",
+        "nameable": true,
+        "light": {
+          "raggio_m": 6.0,
+          "colore": "b3e6ff"
+        }
+      }
+    },
+    "🪑": {
+      "label": "Tavolo e sedie",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_table",
+        "fill": "#e6ccb2"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "half",
+        "obscurement": "none",
+        "move_cost": 2,
+        "nameable": true
+      }
+    },
+    "🧱": {
+      "label": "Muretto / copertura bassa (+4 CA)",
+      "render": {
+        "mode": "icon",
+        "prop": "pr_lowwall",
+        "fill": "#e6ccb2",
+        "altezza_m": 1.5
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "half",
+        "obscurement": "none",
+        "move_cost": 1,
+        "climb": "easy",
+        "nameable": true
+      }
+    }
+  }
+}

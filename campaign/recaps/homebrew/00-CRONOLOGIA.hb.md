@@ -24,7 +24,28 @@ in quest'ordine.*
 - `07_il Portale Della Forgia Eterna/homebrew/ARC07-BOOKLET-FASCICOLO-4-P3B-RESURREZIONE.hb.md`
 - `07_il Portale Della Forgia Eterna/homebrew/ARC07-BOOKLET-FASCICOLO-5-P5-MILLE-ANNI.hb.md`
 - `07_il Portale Della Forgia Eterna/homebrew/HANDOUT-1-cronache-quattro-eroi.hb.md`
+- `07_il Portale Della Forgia Eterna/homebrew/HANDOUT-2-hints-per-pg-prossima-sessione.hb.md`
+- `07_il Portale Della Forgia Eterna/homebrew/HANDOUT-3-volta-otto-affreschi.hb.md`
+- `07_il Portale Della Forgia Eterna/homebrew/HANDOUT-4-carta-visione-due-traiettorie.hb.md`
+- `07_il Portale Della Forgia Eterna/homebrew/HANDOUT-5-benedizioni-di-moradin.hb.md`
+- `07_il Portale Della Forgia Eterna/homebrew/sessione-ritorno-forgia/ARC07-RITORNO-FORGIA-BOOKLET.hb.md`
+- `07_il Portale Della Forgia Eterna/homebrew/sessione-terros/ARC07-GRUPPO-CAMMINO.hb.md`
+- `07_il Portale Della Forgia Eterna/homebrew/sessione-terros/ARC07-SESSIONE-TERROS-BOOKLET.hb.md`
+- `07_il Portale Della Forgia Eterna/homebrew/sessione-terros/ARC07-TEASER-GIOCATORI.hb.md`
+- `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/homebrew/HANDOUT-MAPPA-CHANNATHGATE.hb.md`
+- `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/homebrew/HANDOUT-PIAZZA-DEL-PALIO.hb.md`
+- `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/homebrew/PALIO-BOOKLET-FASCICOLO-P2D.hb.md`
+- `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/homebrew/PALIO-BOOKLET.hb.md`
 - `PG/Artefatti/Artefatti-Pg/Hella/00_Collana-SCHEDA-GIOCATORE-STATO-ATTUALE.hb.md`
+- `STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/handout/PROP-01-il-contratto-di-vesca.hb.md`
+- `STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/handout/PROP-02-la-pagina-del-registro.hb.md`
+- `STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/handout/PROP-03-la-ricevuta-del-mediatore.hb.md`
+- `STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/handout/PROP-04-il-decreto.hb.md`
+- `STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BENVENUTO-TAVOLO.hb.md`
+- `STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-DM.hb.md`
+- `STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-GIOCATORI.hb.md`
+- `STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-FASCICOLO-SCHEDE.hb.md`
+- `STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-PROP.hb.md`
 
 {{pageNumber,auto}}
 {{footnote CRONACHE DEI CUSTODI ETERNI · CRONOLOGIA}}

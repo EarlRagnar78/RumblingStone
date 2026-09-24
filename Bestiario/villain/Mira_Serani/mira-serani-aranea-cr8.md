@@ -2,6 +2,32 @@
 
 **Faction**: red-hand | **Role**: caster-infiltrator | **Environment**: urban | **CR**: 8 | **Source**: ricostruita da base **aranea** SRD (OGL) + livelli da Stregone; versione AP originale non presente nel repo → puntatore `[Private — Red Hand of Doom, p.44-45]` | **Status**: ACCEPTED — DM-canon 2026-07-20 (calibrata per PG 8-9)
 
+
+
+
+```statblocco
+gs: 8
+tipo: Medium magical beast (shapechanger), 9 DV (3 aranea + 6 Stregone), LE
+ca: 13
+ca-dettaglio: (10 +1 naturale +2 Des)
+pf: 47
+ts: Temp +7, Rifl +7, Vol +9
+attributi: For 11 Des 15 Cos 14 Int 14 Sag 13 Car 16
+velocita: 15 m, scalare 7,5 m (forma vera)
+iniziativa: +6
+attacchi:
+  - Mischia morso +7 (Arma Accurata) (1d6 + veleno)
+voci:
+  - Abilità: For 11, Des 15, Cos 14, Int 14, Sag 13, Car 16
+  - Talenti: Arma Accurata, Ferrea Volontà, Iniziativa Migliorata, Incantare
+```
+
+> [INFERRED — needs DM confirmation] correzione 3.5 da `scripts/conformita_statblocchi.py`: Volontà +8 → **+9**: aranea 3 DV (+1) + Stregone 6 (+5) + Sag 13 (+1) + **Ferrea Volontà** (+2). La scheda nominava il talento accanto al numero che non lo contava.
+
+> [INFERRED — needs DM confirmation] correzione 3.5 da `scripts/conformita_statblocchi.py`: Tempra +6 → **+7**: aranea 3 DV (bestia magica, Tempra buona +3) + Stregone 6 (+2) + Cos 14 (+2).
+
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
+
 > ✅ **Canon (DM 2026-07-20)**: statblock calibrato per **PG di livello 8-9**,
 > coerente col ruolo AP di **spia mutaforma senza scrupoli** della Mano Rossa
 > — la forma in cui i PG l'hanno incrociata sulla strada per Hammerfist ed è
@@ -17,8 +43,8 @@ un'adolescente Media, a seconda di cosa le conviene.
 **hp 47** (3d10 + 6d4, Cos 14); **CA 13** (10 +1 naturale +2 Des), contatto
 12, colto alla sprovvista 11 — **CA tipica in combattimento 17** (*armatura
 magica* precastata), + *immagine speculare* come vera difesa. Init +6;
-Vel 15 m, scalare 7,5 m (forma vera); scurovisione 18 m. TS **Temp +6,
-Rifl +7, Vol +8** (Ferrea Volontà). BAB +6/+1; Lotta +6.
+Vel 15 m, scalare 7,5 m (forma vera); scurovisione 18 m. TS **Temp +7,
+Rifl +7, Vol +9** (Ferrea Volontà). BAB +6/+1; Lotta +6.
 
 **Mischia** morso +7 (Arma Accurata) (1d6 + veleno). **Veleno** (Str):
 Tempra **CD 15**, 1d6 For / 1d6 For. **Ragnatela** (Str): 8/giorno, +7 a

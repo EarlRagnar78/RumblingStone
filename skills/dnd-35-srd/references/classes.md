@@ -27,34 +27,57 @@ SRD URL pattern: `https://www.d20srd.org/srd/classes/[className].htm`
 
 ## Barbarian
 
-**Special Features:** Fast movement (+10 ft), Illiteracy (starts), Rage, Uncanny Dodge (2nd), Trap Sense (3rd+), Improved Uncanny Dodge (5th), Damage Reduction (7th+), Greater Rage (11th), Indomitable Will (14th), Tireless Rage (17th), Mighty Rage (20th)
+**Special Features:** Fast movement (+10 ft), Illiteracy (starts), Rage, Uncanny Dodge (2nd), Trap Sense (3rd+), Improved Uncanny Dodge (5th), DR (7th+), Greater Rage (11th), Indomitable Will (14th), Tireless Rage (17th), Mighty Rage (20th)
 
 **Rage:** +4 STR, +4 CON, +2 Will saves, −2 AC; duration = 3 + CON mod rounds; once/day at 1st, +1/day at 4th, 8th, 12th, 16th, 20th. Fatigued for 2× rage duration after.
 
-**Damage Reduction**: DR 1/− at 7th; improves by 1 every 3 levels to DR 5/− at 19th.
+**DR**: DR 1/− at 7th; improves by 1 every 3 levels to DR 5/− at 19th.
 
 ---
 
 ## Bard
 
 **Arcane spells** (up to 6th level, CHA-based, no preparation needed)
-**Bard Spell Slots** (levels 1–20 in SRD; key: 6 spells known at 20th of each level)
+Verified anchor rows (SRD Table: The Bard / Bard Spells Known). Spells/day
+runs 0th–6th level and stops there; the bard is spontaneous, so *known* is the
+column that describes the creature.
+
+| Level | Spells/Day (0/1st/…/6th) | Spells Known (0/1st/…/6th) |
+|---|---|---|
+| 1 | 2 | 4/2 |
+| 5 | 3/3/1 | 6/4/3 |
+| 10 | 3/3/3/2/0 | 6/5/5/4/2 |
+| 15 | 4/4/3/3/3/2 | 6/6/6/5/4/4 |
+| 20 | 4/4/4/4/4/4/4 | 6/6/6/6/6/5/4 |
 
 **Special Features:** Bardic Music (Inspire Courage/Competence/Greatness/Heroics, Countersong, Fascinate, Inspire Courage, Suggestion, Song of Freedom, Inspire Heroics, Mass Suggestion), Bardic Knowledge, Countersong, Fascinate
 
-**Inspire Courage**: +1 morale bonus to attack/damage/saves vs. fear at 1st; +2 at 8th; +3 at 14th; +4 at 20th
+**Inspire Courage**: +1 morale bon to attack/damage/saves vs. fear at 1st; +2 at 8th; +3 at 14th; +4 at 20th
 
 ---
 
 ## Cleric
 
 **Divine spells** (all cleric spells known, WIS-based, prepared from prayer)
-**Turn/Rebuke Undead**: CHA-based; 3+CHA mod times/day
-**Domains**: Choose 2; gain special powers and extra domain spells per level
+**Turn/Rebuke Undead**: CHA-based; 3+CHA mod ×/day
+**Domains**: Choose 2; gain special powers and extra domain spells /lvl
 **Spontaneous Casting**: Sacrifice prepared spell for Cure (Good) or Inflict (Evil) of same level
 
+Verified anchor rows (SRD Table: The Cleric / The Druid — same grid).
+Slots shown WITHOUT the domain slot: a cleric adds **+1 per spell level** once
+the two domains are chosen. The druid has no domain slot, so the row is the
+druid's as written.
+
+| Level | Spells/Day (0/1st/2nd/…) |
+|---|---|
+| 1 | 3/1 |
+| 5 | 5/3/2/1 |
+| 10 | 6/4/4/3/3/2 |
+| 15 | 6/5/5/5/4/4/3/2/1 |
+| 20 | 6/5/5/5/5/5/4/4/4/4 |
+
 **Key Domains** (SRD):
-Air, Animal, Chaos, Death, Destruction, Earth, Evil, Fire, Good, Healing, Knowledge, Law, Luck, Magic, Plant, Protection, Strength, Sun, Travel, Trickery, War, Water
+Air, Animal, Chaos, Death, Destruction, Earth, Evil, Fire, Good, Healing, Knowledge, Law, Luck, Magic, Plant, Protection, STR, Sun, Travel, Trickery, War, Water
 
 ---
 
@@ -79,17 +102,17 @@ progression (Table: The Druid):
 | 18th | 6/day | elemental 2/day |
 | 20th | 6/day | elemental 3/day; + Huge elemental |
 
-**Animal Companion**: Bonus HD and special abilities scale with druid level
+**Animal Companion**: bon HD and special abilities scale with druid level
 **Woodland Stride, Trackless Step, Resist Nature's Lure, Venom Immunity, Timeless Body, A Thousand Faces**
 
 ---
 
 ## Fighter
 
-**Bonus Feats**: Every even level (2nd, 4th, 6th… 20th) = 11 bonus combat feats total
+**bon Feats**: Every even level (2nd, 4th, 6th… 20th) = 11 bon combat feats total
 **Class Skills**: Climb, Craft, Handle Animal, Intimidate, Jump, Ride, Swim
 
-Fighter is the feat factory. No special class features beyond bonus feats and strong BAB/saves.
+Fighter is the feat factory. No special class features beyond bon feats and strong BAB/saves.
 
 ---
 
@@ -107,9 +130,9 @@ Fighter is the feat factory. No special class features beyond bonus feats and st
 
 **Special Features:** Flurry of Blows (−2/−2 at 1st, improves), Evasion, Still Mind, Ki Strike (magic 4th, lawful 10th, adamantine 16th), Slow Fall, Purity of Body, Wholeness of Body, Diamond Body/Soul, Empty Body, Perfect Self (outsider at 20th)
 
-**AC Bonus**: +WIS mod to AC when unarmored (if WIS positive)
+**AC bon**: +WIS mod to AC when unarmored (if WIS positive)
 
-**Monk Speed Bonus**: +10 ft at 3rd and every 3 levels after (+60 ft at 18th); lost in armor or medium/heavy load
+**Monk Speed bon**: +10 ft at 3rd and every 3 levels after (+60 ft at 18th); lost in armor or medium/heavy load
 
 **Alignment**: Must be Lawful
 
@@ -118,12 +141,20 @@ Fighter is the feat factory. No special class features beyond bonus feats and st
 ## Paladin
 
 **Divine Grace**: Add CHA mod to all saving throws
-**Lay on Hands**: CHA mod × paladin level HP per day
+**Lay on Hands**: CHA mod × paladin level HP /day
 **Aura of Courage**: Immune to fear; allies within 10 ft get +4 vs. fear
 **Smite Evil**: 1/day at 1st (+1/5 levels); +CHA to attack, +paladin level to damage vs. evil
-**Turn Undead**: from 4th level; 3 + CHA mod times/day; as a cleric of (paladin level − 3)
+**Turn Undead**: from 4th level; 3 + CHA mod ×/day; as a cleric of (paladin level − 3)
 **Remove Disease**: 1/week per 3 levels (6th+)
-**Spellcasting**: Divine, 1st–4th level spells, CHA-based, prepared; starts at 4th level
+**Spellcasting**: Divine, 1st–4th level spells, **WIS-based**, prepared; starts at 4th level.
+Caster level = paladin level − 3, so a 12th-level paladin casts as a 9th-level caster.
+
+> ⚠️ **This line used to read "CHA-based", which is the PF1e rule, not 3.5.**
+> In the 3.5 SRD the paladin's spell DC is 10 + spell level + **Wisdom** modifier;
+> Charisma powers Divine Grace, Lay on Hands, Smite Evil and turning. The error
+> reached this file from a Pathfinder habit and was caught when the generator
+> started building paladins — it would have printed every paladin with the wrong
+> DC and the wrong ability first in the elite array.
 **Special Mount**: 5th level
 
 **Alignment**: Lawful Good only
@@ -135,11 +166,24 @@ Fighter is the feat factory. No special class features beyond bonus feats and st
 **Two Combat Styles** (chosen at 2nd level):
 - **Archery**: Rapid Shot at 2nd, Manyshot at 6th, Improved Precise Shot at 11th
 - **Two-Weapon Combat**: Two-Weapon Fighting at 2nd, Improved TWF at 6th, Greater TWF at 11th
-  (No prerequisites needed for these bonus feats)
+  (No prerequisites needed for these bon feats)
 
-**Favored Enemy**: +2 bonus at 1st; additional enemy every 5 levels; +2 to chosen enemy every 5 levels
+**Favored Enemy**: +2 bon at 1st; additional enemy every 5 levels; +2 to chosen enemy every 5 levels
 **Wild Empathy, Endurance (3rd), Animal Companion (4th), Woodland Stride (7th), Swift Tracker (8th), Evasion (9th), Camouflage (13th), Hide in Plain Sight (17th)**
-**Spellcasting**: Divine, 1st–4th level, WIS-based, prepared; starts at 4th level
+**Spellcasting**: Divine, 1st–4th level, WIS-based, prepared; starts at 4th level.
+Caster level = ranger level − 3.
+
+Verified anchor rows (SRD Table: The Ranger / The Paladin — same grid). There is
+no 0-level column: these two classes have no orisons, so the first number below
+is the **1st-level** slot.
+
+| Level | Spells/Day (1st/2nd/3rd/4th) |
+|---|---|
+| 4 | 0 |
+| 8 | 1/1 |
+| 12 | 2/2/1 |
+| 16 | 3/3/2/1 |
+| 20 | 4/3/3/3 |
 
 ---
 
@@ -157,7 +201,7 @@ Fighter is the feat factory. No special class features beyond bonus feats and st
 ## Sorcerer
 
 **Arcane spells** (CHA-based, no preparation — all slots flexible, known spells only)
-New spell level every 2 levels (2nd-level spells at 4th, 9th-level at 18th).
+New SL every 2 levels (2nd-level spells at 4th, 9th-level at 18th).
 
 Verified anchor rows (SRD Table: The Sorcerer / Sorcerer Spells Known):
 
@@ -177,22 +221,22 @@ Verified anchor rows (SRD Table: The Sorcerer / Sorcerer Spells Known):
 
 **HD**: d4 | **BAB**: ½ | **Good Saves**: Will
 **Weapons & Armor**: Club, dagger, heavy/light crossbow, quarterstaff. No armor or shields.
-**Bonus Languages**: Draconic.
+**bon Languages**: Draconic.
 **Skills**: 2 + INT (Craft, Decipher Script, Knowledge [all], Profession, Spellcraft).
 
 **Arcane spells** (INT-based, prepared from spellbook; any in spellbook)
 **Spellbook**: Starts with 3+INT mod spells; add 2/level
-**Specialist**: +1 spell slot per spell level, school spells only; must
+**Specialist**: +1 spell slot per SL, school spells only; must
 choose **any two** prohibited schools (no fixed opposition pairs in 3.5) —
 except a Diviner, who gives up only one; Divination itself can never be a
 prohibited school. Prohibited spells can't be cast even from scrolls/wands;
-the choice is permanent.
+the choice is perm.
 **Familiar**: At 1st level; options include cat, hawk, owl, rat, raven, tiny viper, toad, weasel
-**Bonus Feats**: Scribe Scroll (1st), metamagic/item creation feats at 5th, 10th, 15th, 20th
+**bon Feats**: Scribe Scroll (1st), metamagic/item creation feats at 5th, 10th, 15th, 20th
 
 **Schools of Magic**: Abjuration, Conjuration, Divination, Enchantment, Evocation, Illusion, Necromancy, Transmutation
 
-**Spells per Day**:
+**Spells /day**:
 | Level | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1 | 3 | 1 | - | - | - | - | - | - | - | - |
@@ -200,7 +244,7 @@ the choice is permanent.
 | 10| 4 | 4 | 4 | 3 | 3 | 2 | - | - | - | - |
 | 15| 4 | 4 | 4 | 4 | 4 | 4 | 3 | 2 | 1 | - |
 | 20| 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 | 4 |
-*(Note: Specialists get +1 spell slot of their school for every spell level they can cast)*
+*(Note: Specialists get +1 spell slot of their school for every SL they can cast)*
 
 ---
 
@@ -212,14 +256,14 @@ the choice is permanent.
 
 **Prestige Classes**: Require prerequisites; do not count as base class for multiclass penalty.
 
-**Spellcaster multiclassing**: Caster level ≠ character level; calculate separately per class.
+**Spellcaster multiclassing**: CL ≠ char_lvl; calculate separately per class.
 
 ---
 
 ## Expanded Base Classes
 
 ### Complete Arcane
-- **Warlock**: (HD d6, BAB ¾, Good Saves: Fort, Will). Eldritch Blast (at-will magical ray), Invocations (at-will spell-like abilities, no somatic failure in light armor), Damage Reduction (cold iron), Fiendish Resilience. *(FR Lore: Often draw power from fey pacts, fiends, or ancient Netherese binding rituals).*
+- **Warlock**: (HD d6, BAB ¾, Good Saves: Fort, Will). Eldritch Blast (at-will magical ray), Invocations (at-will Sp abilities, no somatic failure in light armor), DR (cold iron), Fiendish Resilience. *(FR Lore: Often draw power from fey pacts, fiends, or ancient Netherese binding rituals).*
 - **Warmage**: (HD d6, BAB ½, Good Saves: Will). Spontaneous arcane casting focused exclusively on Evocation/damage. Warmage Edge (+INT to damage). Armored Mage (light, eventually medium armor). *(FR Lore: Mainstay of Cormyr's War Wizards and Thay's elite destructive contingents).*
 - **Wu Jen**: (HD d4, BAB ½, Good Saves: Will). Arcane preparation caster with elemental focus (Earth, Fire, Metal, Water, Wood). Subject to Taboos (e.g. cannot wear a certain color, must eat specific food) to gain spell secrets. *(FR Lore: Traditional to Kara-Tur; those in Faerûn are often travelers or students of Shou expatriates).*
 
@@ -229,7 +273,7 @@ the choice is permanent.
 - **Spirit Shaman**: (HD d8, BAB ¾, Good Saves: Fort, Will). Unique casting (retrieves specific spells daily from Druid list, casts them spontaneously). Spirit Guide, abilities to see/harm/ward against incorporeal and fey creatures. *(FR Lore: Common in Rashemen (Wychlaran/Hathran allies) and among the Uthgardt barbarians).*
 
 ### Complete Warrior
-- **Hexblade**: (HD d10, BAB Full, Good Saves: Will). Arcane cursing martial class. Hexblade's Curse (lowers enemy saves/attacks), Mettle (evasion for Fort/Will), Charisma-based arcane half-casting. *(FR Lore: Often aligned with Beshaba or wandering mercenaries).*
+- **Hexblade**: (HD d10, BAB Full, Good Saves: Will). Arcane cursing martial class. Hexblade's Curse (lowers enemy saves/attacks), Mettle (evasion for Fort/Will), CHA-based arcane half-casting. *(FR Lore: Often aligned with Beshaba or wandering mercenaries).*
 - **Samurai**: (HD d10, BAB Full, Good Saves: Fort). Daisho focus (bastard sword/short sword), automatic Two-Weapon Fighting via class features, Kiai smite (+CHA to attack and damage), mass stare/intimidation. *(FR Lore: Noble warriors of Kara-Tur/Kozakura, fiercely loyal to their lord/daimyo).*
 - **Swashbuckler**: (HD d10, BAB Full, Good Saves: Fort). Finesse fighter. Weapon Finesse, Insightful Strike (+INT to damage), Acrobatic Charge, good skills. *(FR Lore: Extremely common in Waterdeep, Luskan, Baldur's Gate, and Amn).*
 
@@ -238,6 +282,6 @@ the choice is permanent.
 - **Dread Necromancer**: (HD d6, BAB ½, Good Saves: Will). CHA-based spontaneous arcane caster. Casts exclusively from a specific necromantic/evil list. Charnel Touch, Rebuke Undead, eventual transformation into a Lich. *(FR Lore: Cultists of Myrkul (remnants), Shar, or Velsharoon).*
 
 ### Complete Psionic (Faerûn / DM Allowed Only)
-- **Ardent**: (HD d6, BAB ¾, Good Saves: Will). Wisdom-based psionic manifester based on mantles (philosophical concepts/domains). Can learn higher level powers based on manifester level rather than class level. *(FR Lore: Monastic wanderers seeking universal truths, sometimes loosely tied to Oghma or Ilmater).*
+- **Ardent**: (HD d6, BAB ¾, Good Saves: Will). WIS-based psionic manifester based on mantles (philosophical concepts/domains). Can learn higher level powers based on manifester level rather than class level. *(FR Lore: Monastic wanderers seeking universal truths, sometimes loosely tied to Oghma or Ilmater).*
 - **Divine Mind**: (HD d10, BAB ¾, Good Saves: Fort, Will). Psionic paladin-equivalent focused on projecting auras to buff allies from chosen psionic mantles. *(FR Lore: Rare; usually psychic champions of specific deities).*
-- **Erudite**: (HD d4, BAB ½, Good Saves: Will). Psionic equivalent of a wizard. Learns unlimited powers like a spellbook but can only manifest a fixed number of *unique* powers per day. *(FR Lore: Deep scholars of the Invisible Art, often found in Candlekeep or hidden Underdark enclaves).*
+- **Erudite**: (HD d4, BAB ½, Good Saves: Will). Psionic equivalent of a wizard. Learns unlimited powers like a spellbook but can only manifest a fixed number of *unique* powers /day. *(FR Lore: Deep scholars of the Invisible Art, often found in Candlekeep or hidden Underdark enclaves).*

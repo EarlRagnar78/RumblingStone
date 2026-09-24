@@ -35,12 +35,13 @@ from __future__ import annotations
 import argparse
 import json
 import os
-import re
 import shutil
 import subprocess
 import sys
-import unicodedata
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from dmcore.testo import slug  # noqa: E402
 
 BROWSER_CANDIDATES = [
     os.environ.get("BOOKLET_CHROME", ""),
@@ -57,12 +58,6 @@ def find_browser() -> str | None:
         if p:
             return p
     return None
-
-
-def slug(s: str) -> str:
-    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
-    s = re.sub(r"[^A-Za-z0-9]+", "-", s).strip("-").lower()
-    return s or "scheda"
 
 
 def panes_of(mf: dict) -> list[tuple[str, str, str]]:
@@ -142,7 +137,7 @@ def main(argv: list[str] | None = None) -> int:
     ok = True
     for i, (pid, title, tag) in enumerate(selected):
         prefix = {"player": "pg-", "dm": "dm-"}.get(tag, "")
-        out = outdir / f"{i:02d}-{prefix}{slug(title)}.pdf"
+        out = outdir / f"{i:02d}-{prefix}{slug(title, ripiego='scheda')}.pdf"
         url = html.resolve().as_uri() + "#" + pid
         cmd = [browser, "--headless", "--disable-gpu", "--no-sandbox",
                "--no-pdf-header-footer", "--virtual-time-budget=4000",

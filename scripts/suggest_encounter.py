@@ -26,6 +26,9 @@ from __future__ import annotations
 import sys, argparse, random, math, re
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from dmcore.tavolo import origine_el  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 HERE = Path(__file__).resolve().parent
 CATALOG = HERE / "monster_catalog.yaml"
@@ -388,6 +391,91 @@ def find_npc(cat, query: str):
     return sorted(cands, key=lambda m: -m["cr"])[0]
 
 
+# ───────────────── Il generatore dentro il pool (ADR-0034) ─────────────────
+# Il DM: «suggest_encounter prende dal Bestiario, ma con un'opzione prende anche
+# in parte dal generatore, in modo che gli incontri siano sempre diversi».
+#
+# L'innesto è nel POOL, non nel costruttore. Aggiungere creature generate ai
+# candidati e lasciare che sia la logica di bilanciamento di sempre a sceglierle
+# significa: nessuna seconda logica da tenere allineata, il GS combinato che
+# resta quello dichiarato, e una miscela che varia da sola col seed. Se invece
+# avessi sostituito una parte del mix DOPO averlo costruito, avrei dovuto
+# ribilanciare a mano — e sarebbe stata una seconda implementazione della cosa
+# più delicata che questo script fa.
+
+#: Quanti candidati generati per ogni GS della fascia. Pochi: devono
+#: **affiancare** il catalogo, non sommergerlo. Con 306 record veri, venti
+#: generati sono il condimento; duecento sarebbero il piatto.
+GENERATI_PER_GS = 2
+
+#: I ruoli del generatore, mappati sui tipi che stanno bene in un incontro di
+#: passaggio. Un incontro fatto di soli bruti è un incontro senza domande.
+MESCOLA = [
+    ("bruto", "humanoid", "medium"), ("bruto", "giant", "large"),
+    ("schermagliatore", "humanoid", "medium"), ("tiratore", "humanoid", "medium"),
+    ("comandante", "humanoid", "medium"), ("controllore", "monstrous humanoid", "medium"),
+    ("blaster", "aberration", "medium"),
+]
+
+
+def candidati_generati(target_el: int, rng, piu_cattivi: bool,
+                       env: str, factions: list[str]) -> list[dict]:
+    """Creature che nel Bestiario non ci sono, nella forma dei record del catalogo.
+
+    Coprono la stessa fascia di GS che il costruttore cerca (da EL−5 a EL), così
+    entrano nelle stesse strategie di composizione dei mostri veri.
+    """
+    import genera_creatura as gen
+
+    fuori = []
+    for gs in range(max(1, target_el - 5), min(20, target_el) + 1):
+        for _ in range(GENERATI_PER_GS):
+            ruolo, tipo, taglia = rng.choice(MESCOLA)
+            sb, conto = gen.genera(gs, tipo=tipo, taglia=taglia, ruolo=ruolo,
+                                   piu_cattivi=piu_cattivi, rng=rng)
+            fuori.append({
+                "name": f"{ruolo} {tipo} (generato)"
+                        + (" ⚠più-cattivo" if piu_cattivi else ""),
+                "cr": float(gs),
+                # La fazione e l'ambiente del filtro, o la creatura non
+                # sopravviverebbe a `filter_pool` e il pool tornerebbe quello di
+                # prima senza che nessuno se ne accorga.
+                "faction": (factions[0] if factions else "generato"),
+                "role": ruolo,
+                "environment": (env or "any").lower(),
+                "source_file": "generato — non è nel Bestiario",
+                "generato": True,
+                "statblocco": gen.rendi(sb),
+                "conto": conto.righe + conto.rincari,
+            })
+    return fuori
+
+
+def stampa_generati(usati: list[dict]) -> None:
+    """I blocchi delle creature generate, dopo le proposte.
+
+    Vanno stampati per intero: una creatura che compare in una tabella con un
+    nome e un GS e nient'altro è una creatura che il DM non può portare al
+    tavolo. E vanno stampati **una volta sola**, anche se ricorrono in più
+    proposte.
+    """
+    if not usati:
+        return
+    print("\n---\n\n## Le creature generate\n")
+    print("> ⚠️ **Non sono nel Bestiario e non ci entrano da sole** (ADR-0034): "
+          "sono proposte. Se una serve davvero, la copia nel canone il DM, "
+          "dopo averla letta. Se nel catalogo c'è già qualcosa di simile, "
+          "meglio potenziare quella (skill `npc-villain-boosting`) che tenere "
+          "un doppione.\n")
+    for m in usati:
+        print(f"### {m['name']} — GS {m['cr']:g}\n")
+        print(m["statblocco"])
+        print("\n<details><summary>Il conto</summary>\n")
+        for riga in m["conto"]:
+            print(f"- {riga}")
+        print("\n</details>\n")
+
+
 # ───────────────────────── Encounter builder ─────────────────────────
 def build_encounter(pool, target_el, size, rng, forced: list[dict] | None = None):
     if not pool and not forced: return None
@@ -496,6 +584,15 @@ def main():
     ap.add_argument("--size", type=int, default=5)
     ap.add_argument("--count", type=int, default=4)
     ap.add_argument("--seed", type=int, default=None)
+    ap.add_argument("--con-generatore", action="store_true",
+                    help="Aggiunge al pool creature GENERATE dalle tabelle "
+                         "(genera_creatura.py), cosi' gli incontri non escono "
+                         "mai due volte uguali. Non sono nel Bestiario e non ci "
+                         "entrano da sole.")
+    ap.add_argument("--piu-cattivi", action="store_true",
+                    help="Le creature generate prendono il template Advanced di "
+                         "PF1e senza alzare il GS: piu' dure di quanto il GS "
+                         "prometta. Non tocca i mostri veri del catalogo.")
     ap.add_argument("--list-factions", action="store_true")
     ap.add_argument("--list-environments", action="store_true")
     ap.add_argument("--list-npcs", action="store_true",
@@ -547,8 +644,17 @@ def main():
                   + (" …" if len(ms) > 5 else ""))
         return 0
 
-    if args.el is None:
-        print("[suggest_encounter] --el required (e.g. --el 13).", file=sys.stderr); return 2
+    # L'EL, e da dove viene. Prima `--el` era obbligatorio e il repo sapeva gia'
+    # la risposta: `**Party APL:**` sta nell'intestazione di state.md, scritto
+    # dal DM e fuori dalle regioni auto:. Rilievo del DM del 2026-09-03.
+    fonte = origine_el(esplicito=args.el)
+    if fonte is None:
+        print("[suggest_encounter] --el richiesto: non c'e' un `**Party APL:**` "
+              "in campaign/state.md da cui partire (es. --el 13).", file=sys.stderr)
+        return 2
+    args.el = int(round(fonte.el))
+    if fonte.etichetta != "da --el":
+        print(f"[suggest_encounter] EL {args.el} — {fonte.etichetta}", file=sys.stderr)
 
     rng = random.Random(args.seed)
 
@@ -616,6 +722,11 @@ def main():
                 print(f"[suggest_encounter] NPC not found: '{q}' (skipped)", file=sys.stderr)
 
     pool = filter_pool(cat, args.env, factions, args.role)
+    generati = []
+    if args.con_generatore:
+        generati = candidati_generati(args.el, rng, args.piu_cattivi,
+                                      args.env, factions)
+        pool = pool + generati
     if not pool and not forced:
         print(f"[suggest_encounter] Empty pool. factions={factions or 'any'} env={args.env}",
               file=sys.stderr); return 3
@@ -625,13 +736,28 @@ def main():
     if args.alliance: header += f", alliance={args.alliance}"
     if forced: header += f", injected={[m['name'] for m in forced]}"
     print(header)
-    print(f"*Pool: {len(pool)} monsters matching filters (catalog total: {len(cat)}).*\n")
+    print(f"*Pool: {len(pool)} monsters matching filters (catalog total: {len(cat)}).*")
+    if generati:
+        print(f"*Di questi, {len(generati)} sono **generati** dalle tabelle e non "
+              "stanno nel Bestiario"
+              + (" — con il template Advanced di PF1e, piu' duri di quanto il GS "
+                 "prometta" if args.piu_cattivi else "") + ".*")
+    print()
     if args.narrative and alliance_info:
         print(f"> **{alliance_info.get('label','')}** — {alliance_info.get('narrative','')}\n")
 
-    seen, printed = set(), 0
+    seen, printed, usati = set(), 0, []
     for _ in range(args.count * 6):
-        enc = build_encounter(pool, args.el, args.size, rng, forced=forced)
+        # Con --con-generatore, UNA creatura generata entra per forza in ogni
+        # proposta. Metterle solo nel pool non basta: dodici candidati contro
+        # 308 record del catalogo non escono quasi mai, e l'opzione sembrerebbe
+        # accesa senza esserlo — che è il modo peggiore di sbagliare, perché non
+        # lo si vede. Il resto dell'incontro resta pescato dal Bestiario, ed è
+        # esattamente «in parte dal generatore».
+        questi = list(forced)
+        if generati:
+            questi.append(rng.choice(generati))
+        enc = build_encounter(pool, args.el, args.size, rng, forced=questi)
         if not enc: continue
         key = tuple(sorted((e["monster"]["name"], e["count"]) for e in enc["mix"]))
         if key in seen: continue
@@ -639,9 +765,13 @@ def main():
         narr = alliance_info.get("narrative") if (args.narrative and alliance_info) else None
         print(format_encounter(enc, printed, loot_tag="structured", narrative=narr))
         print()
+        for e in enc["mix"]:
+            if e["monster"].get("generato") and e["monster"] not in usati:
+                usati.append(e["monster"])
         if printed >= args.count: break
     if printed == 0:
         print("[suggest_encounter] Could not assemble any encounter.", file=sys.stderr); return 4
+    stampa_generati(usati)
     print("---\n*Pipe to suggest_loot.py: `suggest_encounter ... > /tmp/enc.md && "
           "scripts/suggest_loot.py --from-encounter /tmp/enc.md --pcs 4`*")
     return 0

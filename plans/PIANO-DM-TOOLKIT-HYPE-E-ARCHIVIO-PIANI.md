@@ -464,7 +464,9 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   Rubate», `state.md` aggiornato con 4 echi armati.
 
 - [x] **K-B23** *(2026-07-31)*: **rettifica del rito** (Opzione B, e a prenderla
-  è **Tordek**: −2 DES/+2 COS, bottino intatto) · dettagli giocati della gemma
+  è **Tordek**: −2 DES/+2 COS, bottino intatto — ⚠️ *ri-rettificato il 2026-08-06:
+  a prenderla è stato **Thorik**, il portatore; questa riga resta come record
+  storico di ciò che il lotto K-B23 scrisse allora*) · dettagli giocati della gemma
   di Varis (densità, aure Trasmutazione+Ammaliamento, visione del bazar come
   *vetrina non contratto*) · 🇮🇹 **`italiano-nativo.md`** nella skill di stile,
   **obbligatorio** per player-facing e read-aloud, nato dal rilievo dei

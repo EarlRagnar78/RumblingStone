@@ -7,7 +7,7 @@
   "header": "Ogni documento che la fiction consegna, si consegna davvero (ADR-0018). Si stampano su carta pesante, si danno quando la scena li dà, e non si ritirano più.",
   "footer": "Il Drappo di Tarsilia · prop",
   "player_footer": "Il Drappo di Tarsilia",
-  "cover_image": "../ALLEGATI/tavole/il-drappo.svg",
+  "cover_image": "../ALLEGATI/immagini/web/spot-registro.jpg",
   "out": "DRAPPO-PROP.html",
   "chapters": [
     {

@@ -75,12 +75,20 @@ vincoli*).
 - **Ego 14 (base) / 20 (risveglio)**: in disaccordo grave l'arma può tentare
   il dominio (regole oggetti intelligenti 3.5); la sua ossessione
   anti-draconica può spingere Thorik verso i draghi.
-- **↩ Eco del rituale P3B (ramo del rifiuto, T9)**: se al rituale di
-  resurrezione di Hella **Thorik ha scelto l'alternativa «Filo dell'Ascia»**
-  invece del sangue, **Aegis Fang perde la proprietà *Returning*** fino al
-  **Risveglio pieno** (Stadio 1): ogni lancio va recuperato a mano. Fonte:
-  `../../../07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`
-  §2-BIS → *Tabella echi*, riga «Alternativa Filo dell'Ascia».
+- **↩ Eco del rituale P3B (v4-bis, DM 2026-09-12)**: Aegis Fang **non viene
+  donata** — il dono di Thorik è il **+2 di deflessione della Corona**. Ma
+  l'arma è presente, è **senziente (Ego 14)** e *«serve il popolo nanico prima
+  del portatore»*, quindi **reagisce alla scelta del portatore**:
+  🟢 **dono** → smette di dubitare di Thorik: **nessuna prova di opposizione per
+  un arco intero**;
+  🔴 **rifiuto** → **lo giudica**: nelle scene che riguardano Hella o dei nani da
+  proteggere tira l'opposizione (oggetti intelligenti 3.5) invece di obbedire.
+  Finisce quando Thorik rischia qualcosa di suo per lei.
+  Fonte: `../../../07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md` §5.
+  ⚠️ **Superata**: la vecchia riga «Alternativa Filo dell'Ascia» (perdita del
+  *Returning* fino allo Stadio 1) **non è più canone** — contraddiceva il
+  profilo dello Stadio 1, che è *«+4 Holy **Returning**»*. Istantanea del testo
+  precedente in `_ARCHIVIO/doni-v1-2026-09-12/`.
 - **Oggetti spesi**: nessuno (l'arma non consuma cariche permanenti).
 
 ## Sinergie

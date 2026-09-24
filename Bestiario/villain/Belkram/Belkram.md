@@ -1,5 +1,7 @@
-# BELKRAM — il vecchio portatore, redento in punto di morte
+# BELKRAM — il vecchio portatore, redento in punto di morte [RIMANDO]
 ## Scheda PNG post-mortem (stato finale: **MORTO**, D13)
+
+**Key stats**: → `06_Stanza-corona-di-adamantio/StanzaCoronaDiAdamantio/Belkram.md` — statblock storico GS 13 con i buff *desecrate* di Urialle (hp 162, guarigione rapida 2). Questa scheda registra lo **stato finale di canone**, non i numeri.
 
 **Razza/Tipo:** (in vita) Nano, poi non-morto corrotto dai drow
 **Stato finale:** ☠️ **MORTO** (ARC-06, Stanza della Corona) — **redento**
@@ -21,8 +23,8 @@ finalmente **ucciso in via definitiva**, il dominio si spezzò e **Belkram si
 ravvide**: morì redento, libero.
 
 ## Stato di canone (D13)
-- **MORTO** — stato finale, non torna. (coherence.md r.47; campaign-history.md
-  r.26; piano ARC-07 G0.)
+- **MORTO** — stato finale, non torna. (coherence.md r.47; campaign-chronicle.md
+  r.39; piano ARC-07 G0.)
 - **Redento** nell'istante della morte definitiva (dominio drow spezzato).
 
 ## Key facts

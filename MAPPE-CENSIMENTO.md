@@ -45,13 +45,13 @@
 | `Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md` | Dirupo Mortale / Campo Hobgoblin (40×40) | Sì | Sì | **completo (T5b, s9)** | ok |
 | `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md` | Fortezza vista dall'alto (50×80) — **ARC-08 assedio** | Sì | Sì | **completo (T5b, sessione 4)** | ok |
 | `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` | MAPPA H3-1: Ingresso Passaggi Antichi (40×40) | Sì | Sì | **completo (T5b, s9)** | ok |
-| `Mappe/Hammerfist-Lotto-1-Ricognizione.md` ⚠️ DEPRECATED (A8) | Mappa #1 (20×100) — titolo grezzo intestazione colonne | Sì | Sì (titolo automatico impreciso — nota 1) | parziale (nota testuale "Copertura Roccia", "Canyon stretto" inline, non nei 3 blocchi) | ok |
-| `Mappe/Hammerfist-Lotto-1-Ricognizione.md` ⚠️ DEPRECATED (A8) | Mappa #2 (28×30) | Sì | Sì | nessuno | ok |
-| `Mappe/Hammerfist-Lotto-2-Assedio.md` | MAPPA 2A: Fortezza vista dall'alto (34×80) | Sì | Sì | nessuno | ok |
-| `Mappe/Hammerfist-Lotto-3-FINALE.md` | MAPPA 3X: Ingresso Passaggi Antichi (40×40) | Sì | Sì | nessuno | ok |
-| `Mappe/Hammerfist-Lotto-3-FINALE.md` | GRIGLIA 33×33 Caverna Intersection | Sì | Sì | nessuno | ok |
-| `Mappe/Hammerfist-Lotto-3-FINALE.md` | Golden Sphere Manifestation Round 8 (40×41) | Sì | Sì | nessuno | ok |
-| `Mappe/Hammerfist-Lotto-3-FINALE.md` | Ground Battle 120m×200m (30×71) | Sì | Sì | nessuno | ok |
+| `Mappe/_ARCHIVIO/Hammerfist-Lotto-1-Ricognizione.md` ⚠️ DEPRECATED (A8) | Mappa #1 (20×100) — titolo grezzo intestazione colonne | Sì | Sì (titolo automatico impreciso — nota 1) | parziale (nota testuale "Copertura Roccia", "Canyon stretto" inline, non nei 3 blocchi) | ok |
+| `Mappe/_ARCHIVIO/Hammerfist-Lotto-1-Ricognizione.md` ⚠️ DEPRECATED (A8) | Mappa #2 (28×30) | Sì | Sì | nessuno | ok |
+| `Mappe/_ARCHIVIO/Hammerfist-Lotto-2-Assedio.md` | MAPPA 2A: Fortezza vista dall'alto (34×80) | Sì | Sì | nessuno | ok |
+| `Mappe/_ARCHIVIO/Hammerfist-Lotto-3-FINALE.md` | MAPPA 3X: Ingresso Passaggi Antichi (40×40) | Sì | Sì | nessuno | ok |
+| `Mappe/_ARCHIVIO/Hammerfist-Lotto-3-FINALE.md` | GRIGLIA 33×33 Caverna Intersection | Sì | Sì | nessuno | ok |
+| `Mappe/_ARCHIVIO/Hammerfist-Lotto-3-FINALE.md` | Golden Sphere Manifestation Round 8 (40×41) | Sì | Sì | nessuno | ok |
+| `Mappe/_ARCHIVIO/Hammerfist-Lotto-3-FINALE.md` | Ground Battle 120m×200m (30×71) | Sì | Sì | nessuno | ok |
 | `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` | Diagrammi ASCII box-drawing (▓, ║, no griglia numerata a celle) | Parziale (in prosa) | **No** | n/a (è l'atlante-indice) | **KO — nota 3** |
 | `ARC08-14-ATLANTE-IMMAGINI.md` | — (catalogo immagini, non è un master mappa) | — | No | — | n/a |
 | `ARC08-91-DEPRECATO-atlante-visivo-v2.md` ⚠️ DEPRECATED | Diagrammi ASCII box-drawing pre-Ultra-Clear | No | **No** | n/a (superato da L1-L3 Ultra-Clear) | **KO — nota 4** |

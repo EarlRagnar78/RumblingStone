@@ -352,3 +352,16 @@ scripts/comfyui-local/ComfyUI/
 # fresco produrrebbe un PDF da quaranta megabyte senza dire niente a nessuno.
 # Come si rigenerano: STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/immagini/web/README.md
 !STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/immagini/web/*.jpg
+
+# Stessa ragione per l'ARC-07 (piano TRAVASO, lotto A3): i master dell'arco sono
+# WebP, e Typst un WebP lo DECODIFICA E RICOMPRIME mentre un JPEG lo incorpora
+# così com'è. Misurato: il booklet di Terros passa da 11,7 MB a 1,7 MB.
+# Come si rigenerano: python3 scripts/build_image_derivatives.py \
+#   "07_il Portale Della Forgia Eterna/Immagini" --max 1600
+!07_il Portale Della Forgia Eterna/Immagini/web/*.jpg
+
+# Texture per il render 3D delle mappe: CC0 riscaricabili, non master (ADR-0003).
+# La convenzione delle cartelle sta in scripts/blender/texture/README.md.
+scripts/blender/texture/*/
+# Render 3D delle mappe e loro piani di scena: presentazione, non canone.
+**/rendered/blender/

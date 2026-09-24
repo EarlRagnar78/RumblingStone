@@ -129,7 +129,7 @@ descritte così in `00_Red Hand Of Doom/Armate-*`).
 
 Coordinate: `[x, y]` con **x = colonna** (0-based, sinistra→destra) e
 **y = riga** (0-based, alto→basso). Simboli ammessi: solo quelli della legenda
-universale (`SYMBOLS` in `render_map_svg.py`) — il validatore rifiuta il resto.
+universale (`scripts/legend.yaml`, ADR-0048) — il validatore rifiuta il resto.
 
 ### Authoring in METRI (proporzioni esatte, contro il drift dimensionale)
 

@@ -8,8 +8,9 @@
   "footer": "L'Ultima Porta",
   "player_footer": "L'Ultima Porta",
   "cover_tag": "player",
-  "cover_image": "../../Immagini/Piano Terra - Caverne Cristallo con Geodi Giganti (Parte 4).webp",
+  "cover_image": "../../Immagini/web/Piano Terra - Caverne Cristallo con Geodi Giganti (Parte 4).jpg",
   "intro_md": "06-TEASER-GIOCATORI.md",
   "out": "ARC07-GRUPPO-CAMMINO.html",
-  "chapters": []
+  "chapters": [],
+  "fregio": "../../../docs/assets/fregi/fregio-arco-07-forgia.svg"
 }

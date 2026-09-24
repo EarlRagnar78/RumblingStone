@@ -1,4 +1,4 @@
-# Tyrgarun — il Terrore del Cielo di Rethmar
+# Tyrgarun — il Terrore del Cielo di Rethmar [RIMANDO]
 **Role**: villain (drago blu antico, pericolo aereo → boss di terra, ARC-09 Fase 4)
 **Status**: alive — sorvola Rethmar come hazard finché non viene forzato a terra
 **Location**: cieli di Rethmar durante l'assedio

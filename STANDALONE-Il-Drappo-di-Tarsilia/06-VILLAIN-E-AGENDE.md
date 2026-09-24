@@ -16,8 +16,14 @@
 | 5 | Il giro del mondo: cosa succede se i PG non fanno niente |
 | 6 | Contromosse: se i giocatori smontano il piano troppo presto |
 | 7 | Incontri scalabili — 4, 5, 6, 7 giocatori |
+| 7-bis | **Quanto dura davvero uno scontro** — danno medio del gruppo, round previsti, chi rischia |
+| 7-ter | **L'audit della ricchezza** — con quanto entrano e con quanto escono |
 
 ---
+
+![Ottavia Vesca](ALLEGATI/immagini/web/png-vesca.jpg)
+![Gerlando Attu](ALLEGATI/immagini/web/png-attu.jpg)
+![Sfregio](ALLEGATI/immagini/web/png-sfregio.jpg)
 
 ## §1 · Ottavia Vesca — Capitana del Bruco
 
@@ -252,3 +258,105 @@ Capita, se il gruppo arriva da un'altra avventura. Tre correzioni e basta:
 2. **I bravacci** diventano guerrieri 2 (GS 1): 20 pf, CA 18.
 3. **Tutte le CD non di combattimento salgono di 2**, tranne quelle del rito
    d'Investitura, che restano facili di proposito.
+
+---
+
+## §7-bis · Quanto dura davvero uno scontro — l'aritmetica
+
+> **Perché c'è.** Il §7 dice **quanto è grosso** un incontro (px e GS). Non dice la
+> cosa che il DM vuole sapere prima di sedersi: **quanti round dura**, e **chi
+> rischia di cadere**. Il formato viene dai master della campagna
+> (`07_il Portale Della Forgia Eterna/ARC07-DEF-1` §8, «Analisi DPR»), applicato qui.
+>
+> ⚠️ **Nessun numero nuovo**: tutto è calcolato dagli statblocchi di
+> `STATBLOCCHI-PF1E.md` e dalle schede di `PREGEN-SEI-SCHEDE-PF1E.md`. Sono medie
+> di tavolo, non fisica: servono a decidere il ritmo, non a sostituire i dadi.
+
+### Il gruppo — danno medio per round, contro CA 16
+
+| PG | Cosa fa davvero | Danno medio/round |
+|---|---|---|
+| **Vanna** — spada lunga +8 (1d8+3), con Attacco Poderoso +7 (1d8+5) | l'unica che regge la prima fila | **~5,5** |
+| **Nocca** — spada corta +7, due armi +5/+5 | ⚠️ **non è un picchiatore**: il suo scudiscio serve a *rallentare*, non a uccidere | ~2,5 |
+| **Ombra** — dardo acido, contatto +3 (1d6+1), **7 al giorno** | il contatto ignora l'armatura: contro i bravacci corazzati è il suo colpo migliore | ~2,7 |
+| **Tesio** — balestra +3 (1d8) | il danno è l'ultima cosa che sa fare | ~1,8 |
+| **Berenice** — spada lunga +2, **e l'esibizione** | il buff vale **più del suo attacco**: +1 a colpire e +1 ai danni su cinque persone | ~1,6 · **+2 al gruppo** |
+| **Melchio** — scimitarra +3, e 4 canalizzazioni da 2d6 | tiene in piedi gli altri: 7 punti a testa, quattro volte | ~1,8 |
+| **Gruppo intero (6)** | | **≈ 17-18/round** |
+
+### I tre momenti duri
+
+| Scontro | pf da togliere | **Round previsti** | Chi rischia |
+|---|---|---|---|
+| **La rissa alla fontana** (5 tintori, pf 6, CA 12) | 30, e sono CA 12: si colpisce quasi sempre | **2 round** | nessuno: è **danno non letale**, e si fermano appena vedono una lama vera |
+| **L'assalto alle stalle** (Sfregio 26 pf CA 18 + 4 bravacci 13 pf CA 16) | 78 | **5-6 round** — è il vero scontro del modulo | vedi sotto ⚠ |
+| **La curva nord** | — | non è un incontro: è un **hazard a costo di azioni** (§7.4) | chi resta sul transennato |
+
+### ⚠️ Le tre cose che l'aritmetica dice e la lettura no
+
+1. **Tesio è il bersaglio, ed è un bersaglio fragile**: CA 12 e 20 pf. Sfregio con
+   attacco furtivo fa in media **10,5** a colpo. **Due colpi e Tesio è a terra** — e
+   Sfregio è precisamente il tipo che sceglie il bersaglio giusto. Non è un difetto
+   da correggere: è la ragione per cui il gruppo deve **coprirlo**, e va giocata.
+2. **I bravacci fanno più danno di quanto sembri**: 4 × mazza pesante +4 (1d8+2) =
+   circa **12 punti a round** distribuiti. Il gruppo ne incassa ~18 in tutto per
+   round: al terzo round qualcuno è sotto metà, ed è lì che serve Melchio.
+3. **Sfregio non muore, se ne va.** Ha Riflessi +8, Schivare prodigioso e Furtività
+   +19 in movimento: se lo si porta sotto metà, **esce**. Un DM che lo tiene in
+   piedi fino a zero sta giocando un altro personaggio.
+
+### Se il tavolo è più piccolo o più grande
+
+Il §7 scala il **numero** dei nemici. L'aritmetica scala con lui: con **4 giocatori**
+il gruppo fa ~11-12 a round e l'assalto passa a **7 round** — troppo. **Per questo il
+§7 toglie la pasta corrosiva e un bravaccio**: non è generosità, è il conto.
+
+---
+
+## §7-ter · L'audit della ricchezza — con quanto entrano, con quanto escono
+
+> **Perché c'è.** Un modulo di tre giorni che parte da un problema di **soldi** (il
+> Peso di contrada) deve saper dire quanto denaro passa davvero per le mani del
+> gruppo — se non altro perché qualcuno continuerà a giocare quei personaggi.
+> Formato preso dagli audit della campagna (`ARC07-TESORO-WBL-AUDIT.md`), che
+> chiudono con la regola *«ricchezza d'uscita = ingresso dell'arco dopo»*.
+
+**Riferimento PF1e**: un PG di **3° livello** sta a **~3.000 mo** di equipaggiamento.
+Le sei pregenerate ci stanno dentro: **il Drappo non è un modulo che arricchisce**, ed
+è una scelta.
+
+### Quello che entra
+
+| Da dove | Quanto | Nota |
+|---|---|---|
+| La brocca del rione | **140 monete d'argento** = 14 mo | è il punto di partenza, e **non è del gruppo**: è della contrada |
+| La cassa sotto le bandiere (`04-LUOGHI` §1.1) | **220 mo in argento vecchio** | va **trovata**, non regalata. È la via più pulita al Peso |
+| Montepremi della Corsa | **500** primo · **200** secondo · **100** terzo | **alla contrada**, non ai PG |
+| La ricevuta di Sfregio venduta alla Civetta | **300 mo** | ⚠️ o vale molto di più **tenuta in tasca**: è la scelta, non il prezzo |
+| Il Drappo | **non ha prezzo e non si vende** | chi ci prova trova la città chiusa |
+
+### Quello che esce
+
+| Per cosa | Quanto |
+|---|---|
+| **Il Peso di contrada** | **100 mo** — è il muro del Giorno 1, e assorbe quasi tutto |
+| Fieno, ferri, informazioni (se li comprano prima del Bruco) | 30-50 mo |
+| Sirena Occo | ⚠️ **non si paga in monete**: si paga in informazioni, e quel prezzo torna al Giorno 3 |
+| Il corteo del Giorno 3 | se hanno svuotato la cassa, la sbandierata parte a **−2** (`06-VILLAIN` §6) |
+
+### Il conto, e la cosa che dice
+
+> **Un gruppo che gioca bene esce dal Drappo con quasi gli stessi soldi con cui è
+> entrato**, e con una contrada che non è stata accorpata.
+
+È il punto del modulo: qui **la ricchezza non è il premio**. Il premio è un rione che
+esiste ancora, un cavallo, e sei persone che nel rione hanno un nome. Se il DM
+prosegue con questi PG, li consegna **al 4° livello, con l'equipaggiamento di
+partenza** — `[INFERRED: nessuna riga del modulo assegna oggetti magici ai PG, e i
+premi sono tutti di contrada]`.
+
+⚠️ **Se invece il gruppo ha venduto la ricevuta** (300 mo) **e tenuto per sé il
+montepremi**, sono ~800 mo divisi in sei: **poco più di 130 a testa**. Non cambia il
+loro livello di potere; cambia **come li guarda il rione**, ed è quello che va
+giocato.
+

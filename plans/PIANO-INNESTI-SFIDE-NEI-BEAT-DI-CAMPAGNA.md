@@ -17,10 +17,10 @@
 
 Un incontro «ha senso» in questo repo se soddisfa **tre** condizioni, non una:
 
-1. **Esiste già uno slot nel canone** — una fase, una scena, una riga di
+1. **Esiste già uno slot nel canone**: una fase, una scena, una riga di
    composizione dell'orda. Non un buco che invento io.
-2. **La creatura poteva esserci** — per epoca, per fazione, per geografia.
-3. **Cambia qualcosa di tracciato** — un clock di `state.md` §3, un numero di
+2. **La creatura poteva esserci**: per epoca, per fazione, per geografia.
+3. **Cambia qualcosa di tracciato**: un clock di `state.md` §3, un numero di
    §2.4, un eco di §7.E. Se vincere o perdere non muove niente, è riempitivo.
 
 Dove una delle tre non regge, l'ho scritto invece di forzare. Le esclusioni
@@ -72,7 +72,7 @@ spedire un PG fuori dalla tenda e svegliare il campo.
 | *(opz.)* Corpo | Ogre Frantumapietra | 9 |
 
 **Lo slot esiste, ed è letteralmente scritto**: `campaign/state.md` §2.2 e
-`campaign/lore/campaign-history.md` danno alla Mano Rossa una **3ª linea di
+`campaign/lore/campaign-chronicle.md` danno alla Mano Rossa una **3ª linea di
 «45 giganti/artiglieria + maghi»**. Un gigante Enorme deforme che lancia massi
 a 55 metri **è** quella riga, non un'aggiunta.
 
@@ -260,11 +260,11 @@ innesti su sei si giocano con le sole schede SRD del repo.**
 
 ## Checklist lotti
 
-- [x] **N1** — Regola dei tre requisiti e verifica slot nel canone (§0)
-- [x] **N2** — Sei innesti con EL, slot canonico, aggancio tracciato (§1-§6)
-- [x] **N3** — Esclusioni motivate, con la verifica di epoca sui tanarukk e
+- [x] **N1**: Regola dei tre requisiti e verifica slot nel canone (§0)
+- [x] **N2**: Sei innesti con EL, slot canonico, aggancio tracciato (§1-§6)
+- [x] **N3**: Esclusioni motivate, con la verifica di epoca sui tanarukk e
       su Ghaurush (§7)
-- [x] **N4** — **Deciso dal DM il 2026-08-05**: approvati **tutti e sei** gli
+- [x] **N4**, **Deciso dal DM il 2026-08-05**: approvati **tutti e sei** gli
       innesti I1-I6. Gli attori sono entrati in `state.md` §3/§4/§5 e l'eco
       **E-08a** in §7.E. Vincolo confermato: I5 al **Giorno 1-2** del Torneo,
       mai al Giorno 3

@@ -1,4 +1,4 @@
-# Wyrmlord Karruk — comandante gigante della Mano Rossa
+# Wyrmlord Karruk — comandante gigante della Mano Rossa [RIMANDO]
 **Role**: villain (comandante da campo, gigante barbaro, ARC-08/09)
 **Status**: alive pre-battaglia; esito condizionale al campo
 **Location**: avanguardia della Mano Rossa

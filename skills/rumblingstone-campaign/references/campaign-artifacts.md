@@ -87,10 +87,10 @@ active; only Topaz gem lit (state.md §0).*
 
 ### Legacy Rituals (Sequential)
 
-1. **Forge's Defense** — ✅ COMPLETED (vision of Hammerfist battle on wearing)
-2. **Trial of the Deep Hall** — ✅ COMPLETED (Underdark profane temple quest)
-3. **Anvil of the World** — ⏳ In progress (Eternal Forge Earth/Fire Planes)
-4. **Siege of the Eternal Forge** — ⏳ Final ritual (time-travel battle, 1,000 years before ≈372 DR)
+1. **Forge's Defense**: ✅ COMPLETED (vision of Hammerfist battle on wearing)
+2. **Trial of the Deep Hall**: ✅ COMPLETED (Underdark profane temple quest)
+3. **Anvil of the World**: ⏳ In progress (Eternal Forge Earth/Fire Planes)
+4. **Siege of the Eternal Forge**: ⏳ Final ritual (time-travel battle, 1,000 years before ≈372 DR)
 
 ---
 
@@ -231,9 +231,23 @@ Created during Hella's resurrection ritual from 3 Treant seeds that germinated a
 
 ### Hella's Resurrection Gifts (Permanent, from party sacrifices)
 
-- **Pelle di Adamantio:** DR 3/- (from Thorik's blood sacrifice)
-- **Timeless Body:** Immunity to poison, disease, aging (from Tordek's Ki sacrifice)
-- **Spontaneous Rebirth (1/day):** Auto-stabilize + temp HP when reaching 0 HP (from Artemis's chaos spark)
+> ⚠️ **NOT YET PAID — the rite has not been played.** Each gift is a *transplant*:
+> the donor gives a power **of his own artifact**, which leaves it **permanently**
+> and grows in one of the Necklace's seeds (`ARC07-DEF-3` §5, DM 2026-09-12).
+> A PC who refuses leaves that seed **dormant**, and **his artifact reacts**.
+
+- **Lo Scudo del Custode** (from Thorik — he gives the Crown's **+2 deflection**,
+  keeping **−1 AC** forever): 1/day, immediate action, Hella takes the damage
+  aimed at an ally within 9 m, **halved**. 🔄 *Eco del Custode*: whenever she uses
+  it, **Thorik is hasted 3 rounds and moves toward the one she protected**.
+- **Pelle di Adamantio:** **DR 3/adamantine** (from Tordek — he gives *Ancoraggio
+  della Montagna*, which leaves the Braziers forever). This is Hella's **only**
+  DR: the Treant Hybrid grants none, and she took the Root path, not the Guard path.
+- **Il Rovo Eldritch** (from Artemis — he gives **1d6 of Eldritch Blast**,
+  7d6 → 6d6, forever): **at will**, standard action, ranged touch 18 m, **2d6**
+  (half thorns, half fire).
+- 🌱 **The seed gives back:** once per seed, ever — Hella's call, immediate action
+  — the seed returns to the donor what he gave, **for one whole scene**.
 
 ### Treant Hybrid Template (Permanent Transformation)
 

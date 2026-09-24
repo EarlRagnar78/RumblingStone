@@ -9,6 +9,8 @@
 
 ---
 
+![La Ruota la vigilia](ALLEGATI/immagini/web/tavola-la-ruota-vigilia.jpg)
+
 ## §1 · I nomi — quando chiedono come si chiama il garzone
 
 Tarsilia è un porto fluviale: i nomi mescolano la valle e il fiume. Tira **1d20** e

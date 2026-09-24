@@ -1,6 +1,17 @@
 # SALVATORE "SAL" DELLA LUNA D'ARGENTO
 ## *Il Tessitore del Tempo — Spia Planare, Ricettatore Temporale*
 
+
+```statblocco
+gs: 14
+ca: 20
+pf: 79
+ts: Temp +8, Rifl +13, Vol +11
+velocita: 9 m
+```
+
+> ⚠ `ts` ritrascritto dalla prosa di questa scheda (sezione dei tiri salvezza) il 2026-09-23. Il blocco portava «Temp +4, Rifl +6, Vol +6», derivati da `derive_statblocks --apply-ts` il 2 settembre con una matrice di caratteristiche sua, un giorno prima che il lettore imparasse questo formato (`d859a31`).
+
 **Nome nel Passato:** Vatore (il "Ladro d'Ombra" di Hammerfist, -1000 DR)
 **Nome nel Presente:** Salvatore "Sal" della Luna d'Argento
 **Razza/Tipo:** Umano (origine incerta — semi-planare sospetto)

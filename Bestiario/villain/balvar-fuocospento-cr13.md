@@ -1,6 +1,25 @@
 # Balvar Fuocospento, il Consigliere dell'Orda (CR 13) [INFERRED — creato 2026-07-31 su richiesta DM]
 **Faction**: orda-antica-372dr | **Role**: caster-divine-boss | **Environment**: mountain | **CR**: 13 | **Source**: creato per `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` (assedio di Hammerfist ≈372 DR) — richiesta DM «un incantatore memorabile e antico che possa rivaleggiare coi Rumbling Stone» | **Status**: inferred-dm-request
 
+
+```statblocco
+gs: 13
+tipo: Medium humanoid (dwarf), Chierico 9 di Abbathor / Runecaster 4, NE
+ca: 24
+ca-dettaglio: contatto 12, colto 22 (mithral +2, anello +2, DES +2)
+pf: 96
+ts: Temp +13, Rifl +8, Vol +17
+attributi: For 12 Des 14 Cos 16 Int 9 Sag 18 Car 10
+velocita: 6 m
+iniziativa: +2
+attacchi:
+  - Mischia martello da guerra runico +1 +10/+5 (1d8+2)
+```
+
+> [INFERRED — needs DM confirmation] `pf-dado` tolto da `scripts/conformita_statblocchi.py`: portava «1d8+2», che non sono i dadi vita (pf-dado «1d8+2» ha 1 dado, il testo dichiara 13 DV). I dadi non si ricostruiscono senza inventare: la composizione delle classi non e' leggibile o comprende una classe non SRD. Da completare a mano.
+
+> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.
+
 Medium humanoid (dwarf), **Chierico 9 di Abbathor / Runecaster 4**, NE. **hp 96** (13 DV); **CA 24**, contatto 12, colto 22 (mithral +2, anello +2, DES +2). Init +2; Vel 6 m. TS Temp +13, Rifl +8, **Vol +17** (+2 razziale vs magia). BAB +8; Lotta +9. For 12, Des 14, Cos 16, Int 16, **Sag 20**, Car 14.
 **Mischia** martello da guerra runico +1 +10/+5 (1d8+2). Domini **Inganno** e **Runa** `[INFERRED: dominio Runa = FRCS]`. Incantesimi da Chierico 9 (CD 15+liv): tipici *dispel magic, magic circle against good, greater magic weapon, divination, righteous might, blade barrier, slay living, silence, invisibility purge, glyph of warding, dimensional anchor*.
 **RUNE INCISE (Runecaster 4)**: incide fino a **4 rune persistenti** su superfici o creature consenzienti/legate; una runa incisa **non consuma slot al momento dell'uso** e scatta alla condizione scritta. Rune tipiche: *dimensional anchor* sulla soglia, *blade barrier* su una parete, *silence* su sé stesso, **la Catena** (sotto).

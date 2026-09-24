@@ -1,0 +1,40 @@
+{
+  "brand": "RUMBLING STONE · MODULO AUTOCONCLUSIVO",
+  "title": "L'Abbazia della Rotta Sicura",
+  "subtitle": "One-shot investigativa e d'incursione per D&D 3.5 — Vènere Bassa, il promontorio e ciò che vi si fa di notte",
+  "banner": "EDIZIONE DA TAVOLO",
+  "meta": "4 PG di 7°–8° · EL 6–11 · una sessione lunga (7–8 h) o due sedute · 48 aree su quattro livelli più il borgo · orrore gotico costiero, indagine, incursione",
+  "colophon": {
+    "edizione": "Edizione da tavolo",
+    "versione": "v1",
+    "data": "2 settembre 2026",
+    "autori": "G. Samuele",
+    "basato_su": "SRD 3.5 e OGL 1.0a. Creature, classi PNG e oggetti magici sono tutti SRD: nessun contenuto da Monster Manual II, Draconomicon o altri supplementi (vedi «Igiene di licenza» nel documento principale)",
+    "licenza": "Materiale del DM, uso privato e non commerciale. Non diffondere fuori dal tavolo senza passare il cancello d'uscita di docs/guides/GUIDA-CONDIVISIONE-IP.md",
+    "nota": "Nota di tono: la premessa riguarda un culto che uccide ragazzi e bambini. Le vittime bambine non compaiono mai in scena — il loro destino arriva solo per prove documentali. Leggi la nota completa in testa al documento principale prima di portare questo al tavolo."
+  },
+  "footer": "L'Abbazia della Rotta Sicura · edizione da tavolo",
+  "out": "abbazia-rotta-sicura.html",
+  "chapters": [
+    {
+      "title": "L'Abbazia della Rotta Sicura",
+      "file": "../abbazia_rotta_sicura.md",
+      "tag": "dm"
+    },
+    {
+      "title": "Appendice A — I corsari e il borgo",
+      "file": "../appendice_corsari_borgo.md",
+      "tag": "dm"
+    },
+    {
+      "title": "Appendice B — L'oppressione, la storia, il bestiario",
+      "file": "../appendice_b_oppressione.md",
+      "tag": "dm"
+    },
+    {
+      "title": "Indice maestro — 48 aree, riscalatura, dry-run",
+      "file": "../indice_maestro.md",
+      "tag": "dm"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+# Dependabot — PIANO-PRATICHE-DI-INGEGNERIA, lotto PI-3 (PRATICHE D2, sì del
+# DM il 2026-09-24).
+#
+# Due ecosistemi, una volta alla settimana:
+#
+# * `pip` guarda requirements.txt e requirements-dev.txt, tutti e due nella
+#   radice. Il primo è ciò che il DM esegue (ADR-0037, stdlib-only più tre
+#   eccezioni), il secondo è ciò che gira in CI.
+# * `github-actions` guarda .github/workflows/. È il primo lavoro che ci si
+#   aspetta da qui: checkout@v4, setup-python@v5 e upload-artifact@v4 girano
+#   su Node.js 20, deprecato, e GitHub li forza già su Node.js 24.
+#
+# Ogni PR di Dependabot passa dalla CI come le altre. Il limite a tre PR
+# aperte per ecosistema è voluto: sono PR piccole (PRATICHE D1), e tre alla
+# volta si leggono.
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 3
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 3

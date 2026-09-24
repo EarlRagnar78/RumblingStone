@@ -103,7 +103,7 @@ soprattutto **interamente locale**: i pesi si scaricano una volta e poi non c'è
 nessuna rete. Il problema di riservatezza dei servizi cloud — la voce dei giocatori
 caricata su un server terzo — **non si pone**: l'audio non esce dalla macchina del DM.
 
-Forma proposta: `scripts/transcribe_session.py`, che prende un file audio e produce la
+Forma proposta: `scripts/transcribe_session.py`, che prende un file audio e produce la <!-- validate-docs: futuro -->
 **bozza** del verbale nel formato che `state_apply.py` e `session_recap.py` già
 leggono, con i campi obbligatori vuoti e da riempire.
 
@@ -183,7 +183,7 @@ togliendo dalla porta.
 
 **Applicato subito** (costo: due paragrafi, nessun codice):
 
-- `skills/rumblingstone-mapmaking/references/stile-illustrazione-handout.md` — nuova
+- `skills/rumblingstone-mapmaking/references/stile-illustrazione-handout.md`: nuova
   sezione «L'ancora che invece si può usare: la scuola storica», con il confine fra
   *tecnica del periodo* (lecita) e *opera specifica* (no);
 - `ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md` §1 — il blocco d'ancoraggio per la
@@ -243,11 +243,11 @@ problema di coerenza.
 
 ### L'ordine consigliato
 
-1. **Typst** — nessuna GPU, licenza Apache, chiude tre divari su sei;
-2. **lo script di batch su ComfyUI** — piccolo, stdlib-only (urllib + json), rende la
+1. **Typst**: nessuna GPU, licenza Apache, chiude tre divari su sei;
+2. **lo script di batch su ComfyUI**: piccolo, stdlib-only (urllib + json), rende la
    serie **riproducibile** invece che irripetibile, con seed fissi e righe di
    `PROVENIENZA.txt` scritte dalla macchina;
-3. **Blender → depth → ControlNet** — il salto vero, e il più caro.
+3. **Blender → depth → ControlNet**: il salto vero, e il più caro.
 
 **Quello che nessuno dei tre risolve** resta scritto: la **direzione artistica**.
 L'ancora storica (§3-bis), il seed fisso e la luce condivisa sono tre stampelle

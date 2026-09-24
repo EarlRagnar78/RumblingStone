@@ -1,6 +1,17 @@
 # SONJAK — MATRONA CLERICALE DEL SOTTOSUOLO
 ## *Matrona dell'Oscurità, anche nota come "Matrona Sajak" nei codici di Salvatore*
 
+
+
+
+```statblocco
+gs: 13
+ca: 22
+pf: 91
+ts: Temp +10, Rifl +8, Vol +14
+velocita: 9 m
+```
+
 **Razza/Tipo:** Drow (Elfo del Sottosuolo — Umanoide Medio)
 **Classe:** Chierico 10 / Prestige (Matrona Drow, equivalente a Guerra Sacra) 3 (Livello Totale 13)
 **Grado di Sfida (GS):** 13
@@ -136,6 +147,8 @@ dominato e maledetto dai drow (morte negata) — come strumento corrotto.
 - ⚠️ **Cosa sanno i PG** `[verify con state.md §4]`: potrebbero **non sapere
   ancora** che la mandante è Sonjak — il collegamento raid→Sonjak può essere un
   "a-ha" investigativo successivo, coerente col ritardo Sal/Sajak sotto.
+
+🔴 **Chi le ha fatte half-illithid (canone DM, 2026-09-17).** Il template non si nasce con esso: glielo innesta **Zalkatar**, l'Illithid Warlock della Torre Invisibile, che ARC-04 chiama *«il Padrone delle Menti»*. Sonjak gli vende **schiavi drow** — i Grimlock Ceremorphi della Tomba di Belkram sono «ex-schiavi drow» — e lui paga in potenza. Urialle, GS 14, è il pezzo pregiato di quello scambio, ed è lei che uccide Hella. Dossier del filo: `Bestiario/villain/Zalkatar/Zalkatar.md`.
 
 Schede post-mortem: `Bestiario/villain/Belkram/Belkram.md`, `Bestiario/villain/Urialle/Urialle.md`.
 Log dell'evento: `campaign/sessions/RETROATTIVI-ARC07-INFERRED.md` (R0).

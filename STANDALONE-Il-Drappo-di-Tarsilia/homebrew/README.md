@@ -7,7 +7,8 @@ stemmi vettoriali inline, **niente dipendenze esterne**.
 | Booklet | A chi va | Cosa contiene |
 |---|---|---|
 | **`DRAPPO-BOOKLET-DM.html`** | ⚠️ solo DM | tutto: regia, luoghi, agende dei villain, le tre giornate, statblocchi, playtest, stato del modulo, feedback, IP — 18 capitoli |
-| **`DRAPPO-BOOKLET-GIOCATORI.html`** | ✉ giocatori | benvenuti a Tarsilia + i sei background. **Zero spoiler**: si può mandare prima della prima serata |
+| **`DRAPPO-BOOKLET-GIOCATORI.html`** | ✉ giocatori, **uno per uno** | benvenuti a Tarsilia + i sei background. ⚠️ **Non è zero-spoiler per il gruppo**: contiene tutte e sei «La cosa che non dici». Va bene mandato al *singolo* giocatore; girato nel gruppo brucia i sei segreti prima della prima serata |
+| **`DRAPPO-BENVENUTO-TAVOLO.html`** | ✉ **a tutti** | il solo volantino di benvenuto: questo sì che si manda al gruppo prima della serata. 2 pagine |
 | **`DRAPPO-FASCICOLO-SCHEDE.html`** | ✉ giocatori | le sei schede (numeri) + il retro (background, legami, ritratto). Da stampare fronte-retro |
 | **`DRAPPO-PROP.html`** | ✉ da consegnare | i quattro prop: il contratto, il registro, la ricevuta, il decreto. Una pagina l'uno |
 | **`DRAPPO-SCHEDE-PG.manifest.json`** | ✉ giocatori | **solo stampa**: le sei schede vere, una pagina A4 a testa, ritratto compreso — vedi più sotto |

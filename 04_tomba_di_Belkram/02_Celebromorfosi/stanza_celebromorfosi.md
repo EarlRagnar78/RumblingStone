@@ -42,6 +42,8 @@ Dal soffitto pendono *capsule trasparenti*, simili a bozzoli, che contengono **g
 
 La luce tremolante rivela improvvisi *riflessi* sui tentacoli delle celle, come lame nel buio. Un respiro gelido vi accarezza la nuca, ma quando vi voltate—nulla. Le grida dei prigionieri echeggiano *dentro* le vostre menti, non nello spazio. Una delle drow mezzo-illithid sussurra, con due voci sovrapposte: **"Moradin non vi salverà... Il Padrone delle Menti già assapora la vostra paura..."**.
 
+> 🔴 **Canone (DM, 2026-09-17): «il Padrone delle Menti» è ZALKATAR**, l'Illithid Warlock della Torre Invisibile (ARC-09 P2A). Questo laboratorio è **suo**: i Grimlock Ceremorphi sono ex-schiavi drow che gli arrivano da **Sonjak**, e le Yochlol half-illithid del raid alla Corona (ARC-06) portano il template che gli innesta qui. Dossier: `Bestiario/villain/Zalkatar/Zalkatar.md`.
+
   
 
 **Consigli Tattici per PG 11° Livello**:

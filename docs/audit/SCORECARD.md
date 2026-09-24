@@ -1,7 +1,11 @@
 <!-- Auto-generated companion doc — audit Fase 0. Aggiornare a mano solo la colonna "Azione". -->
 # Scorecard qualità script — RumblingStone
 
-> Audit del **2026-07-24** su `scripts/` (automazione DM) e `Script/` (convertitori).
+> Audit del **2026-07-24** su `scripts/`, **aggiornato il 2026-08-22** con la
+> catena editoriale e di stampa (che l'audit originale non copriva: quegli script
+> sono nati dopo).
+>
+> Audit originale su `scripts/` (automazione DM) e `Script/` (convertitori).
 > Rubrica a 12 assi, punteggio `0` = assente · `1` = parziale · `2` = pieno.
 > Metodo: lettura diretta del sorgente + smoke della CLI. Nessun punteggio "a sensazione".
 
@@ -61,6 +65,11 @@
 |---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|---|
 | `session_recap.py` | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | Taglia sempre le note private DM. Test per-PG presente |
 | `hype_homebrew.py` | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 1 | 2 | Non duplica il filtro spoiler. Ok |
+| `build_booklet_html.py` | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 1 | 2 | Tipografia OFL embedded dal 2026-08-22 (E5); `--no-font-embed` per il file leggero |
+| `export_booklet_typst.py` | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | Edizione da stampa (ADR-0020). Coperto da `test_schede.py` + `test_booklets.py` + compilazione vera in CI |
+| `export_booklet_pdf.py` | 2 | 2 | 2 | 2 | 2 | 2 | 1 | 2 | 2 | 0 | 1 | Richiede Chromium esterno |
+| `build_chapter_marks.py` | 2 | 2 | 2 | 2 | 2 | 2 | 1 | 2 | 2 | 0 | 2 | Fregi di capitolo (SVG) |
+| `validate_booklets.py` | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | Gate dei booklet: schema, immagini, parità fra catene, compilazione vera |
 | `dm_dossier.py` | **0** | 2 | 1 | 2 | 2 | 1 | 1 | 2 | 2 | 0 | 2 | **Ignora `argv`**: `--help` **esegue** e scrive `DM-DOSSIER.hb.md`. → argparse |
 
 ## E. Bestiary / Catalog
@@ -68,6 +77,7 @@
 | Script | CLI | Doc | Exit | Det | Safe | Err | Val | Out | Fx | Test | Dep | Note / Azione |
 |---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|---|
 | `build_monster_catalog.py` | **0** | 2 | 1 | 2 | 1 | 1 | 1 | 2 | 2 | 0 | 2 | **Ignora `argv`**: la CI chiama `--help` e in realtà **rigenera il catalogo** (side-effect). → argparse + `--check` |
+| `extract_statblocks.py` | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | Migrazione semi-automatica + gate `--check` (ADR-0021). Non inventa: 82/157 migrate, 75 a rapporto |
 | `validate_bestiario.py` | 1 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 1 | 2 | `--help`/`--rules` parsati a mano. → argparse. Aggiungere `--json` |
 
 ## F. Skill Build Pipeline

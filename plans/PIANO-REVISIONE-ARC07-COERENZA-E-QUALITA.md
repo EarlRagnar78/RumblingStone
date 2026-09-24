@@ -33,7 +33,7 @@
    arco): il task **A0 del piano ARC-08** lo corregge; eseguirlo per primo
    se non è già fatto. Ogni modifica di canone va **appesa al changelog**
    di state.md, mai riscritta nella storia.
-2. **Sistema D&D 3.5 SRD only** — niente 5e (no azioni bonus, no
+2. **Sistema D&D 3.5 SRD only**: niente 5e (no azioni bonus, no
    vantaggio/svantaggio meccanici), niente lore FR post-1385 DR.
    Ambientazione Faerûn 1372 DR, più il viaggio temporale a **1.000 anni
    prima (≈372 DR)** (D7).
@@ -57,7 +57,7 @@
 
 | # | Elemento | Stato |
 |---|---|---|
-| G0 | **Hella Oakenshield è MORTA nell'ARC-06** (Stanza della Corona): uccisa nello scontro con le **Yochlol half-illithid mandate da Sonjak** per prendere la Corona (Urialle CR 14, EL 17 — `06_.../villans.md`); il vecchio portatore **Belkram**, dominato e maledetto dai drow (morte negata), si è **ravveduto nel momento della sua morte definitiva**. **Belkram e Urialle sono entrambi MORTI** (D13). Già canone scritto: coherence.md r.47, campaign-history.md r.26. **L'intero ARC-07 esiste per rendere epica la resurrezione di Hella** | ✅ giocato (ARC-06) |
+| G0 | **Hella Oakenshield è MORTA nell'ARC-06** (Stanza della Corona): uccisa nello scontro con le **Yochlol half-illithid mandate da Sonjak** per prendere la Corona (Urialle CR 14, EL 17 — `06_.../villans.md`); il vecchio portatore **Belkram**, dominato e maledetto dai drow (morte negata), si è **ravveduto nel momento della sua morte definitiva**. **Belkram e Urialle sono entrambi MORTI** (D13). Già canone scritto: coherence.md r.47, campaign-history.md r.26 (dal 2026-09-24 `campaign-chronicle.md`, tabella del party). **L'intero ARC-07 esiste per rendere epica la resurrezione di Hella** | ✅ giocato (ARC-06) |
 | G1 | P1-P2: ingresso e Sala della Forgia Eterna (affreschi, prove); il corpo di Hella è custodito nella Sala da **Therysol** (history r.176) | ✅ giocato — fatti da raccogliere (B1) |
 | G2 | P3: Piano del Fuoco — **Topazio del Tempo recuperato** (unica gemma attiva oggi) | ✅ giocato |
 | G2b | **Viaggio dello spirito di Hella nell'Incudine del Mondo — GIOCATO e REGISTRATO** in `PortaleForgia-P4-PianoTerra-P3B-HELLA-IL-VIAGGIO-NELL'INCUDINE-DEL-MONDO-risultati.md`: compagno = **DURIK (maschio)**; Verità Piena / Ferita Aperta / Via della Radice; **tutti i TS e la prova Conoscenze (religioni) superati** → doni in versione piena; aspetto di Durik = "Protegge Hella" (mithral e pietra scura, occhi di topazio); riga tavola v2 §7: Resist freddo 15, Regen 1 (terra), Percepire Intenzioni +2, vuln. fuoco, Durik Riforgiato 12 DV | ✅ giocato e registrato |

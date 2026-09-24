@@ -4,7 +4,7 @@ Source: PF1e Bestiary, "Monster Advancement" + Appendix (Table 1–1).
 Verify: https://www.d20pfsrd.com/bestiary/rules-for-monsters/simple-templates/
 and https://aonprd.com/Rules.aspx?Name=Monster%20Advancement&Category=Appendix
 
-These are the **fastest legal way to boost a monster** — each template is a
+These are the **fastest legal way to boost a monster**: each template is a
 one-line change usable mid-session. They are fully compatible with 3.5 stat
 blocks. The decision of *whether* to boost lives in `npc-villain-boosting`.
 
@@ -21,7 +21,7 @@ are the table-side tool; rebuild when the monster becomes a recurring villain.
 - **Quick:** +2 on **all** rolls (including damage rolls) and all special
   ability DCs; +4 to AC and CMD; +2 hp per HD.
 - **Rebuild:** +4 to all ability scores; +2 natural armor.
-- Stackable with itself in a pinch (Advanced ×2 ≈ CR +2) — coarse but legal
+- Stackable with itself in a pinch (Advanced ×2 ≈ CR +2), coarse but legal
   at the table. `[DM guidance, not RAW]`
 
 ### Giant (CR +1) — bigger, hits harder (not applicable to Colossal)
@@ -46,15 +46,15 @@ Not for creatures that grow through age categories (dragons) or Fine ones.
 Quick and rebuild rules are the same:
 
 - Darkvision 60 ft.
-- Energy resistance — Celestial: acid/cold/electricity; Fiendish: cold/fire —
+- Energy resistance, Celestial: acid/cold/electricity; Fiendish: cold/fire;
   5 (HD 1–4), 10 (HD 5–10), 15 (HD 11+).
-- DR — none (HD 1–4), 5/evil or 5/good (HD 5–10), 10/evil or 10/good (HD 11+).
+- DR: none (HD 1–4), 5/evil or 5/good (HD 5–10), 10/evil or 10/good (HD 11+).
 - SR = new CR + 5.
 - **Smite** evil (celestial) / good (fiendish) 1/day as a swift action:
   +Cha mod to attack rolls, +HD to damage vs the smitten target; persists
   until the target is dead or the creature rests.
 - 3.5 has the same two templates with slightly different scaling
-  (see `dnd-35-srd/references/monsters.md`); either version is fine —
+  (see `dnd-35-srd/references/monsters.md`); either version is fine,
   pick one and note which. `[3.5 CR: +0 HD≤3, +1 HD 4–7, +2 HD 8+]`
 
 ### Entropic / Resolute (CR +0 for HD 1–4; CR +1 for HD 5+)
@@ -72,9 +72,9 @@ SR = new CR + 5, smite 1/day as swift action):
 ## Adding Hit Dice (PF1e)
 
 Same skeleton as 3.5: extra HD → more hp, +BAB/saves by type, feats
-(PF: 1 per 2 HD — odd HD totals), skill ranks, +1 ability every 4 HD.
+(PF: 1 per 2 HD, odd HD totals), skill ranks, +1 ability every 4 HD.
 **CR:** PF1e uses the benchmark table below instead of the 3.5 per-type
-divisor — after advancing, compare the result to Table 1–1 and *read the CR
+divisor; after advancing, compare the result to Table 1–1 and *read the CR
 off the monster's new numbers*. That is the philosophical difference:
 **PF1e assigns CR by output, not by input.** It is the sanity check to apply
 to every 3.5 advancement too.
@@ -84,7 +84,7 @@ to every 3.5 advancement too.
 - Key class (plays to the monster's strengths, e.g. barbarian on a brute):
   +1 CR per level.
 - Non-key class: +1 CR per 2 levels, until the levels added equal (or
-  exceed) the creature's **original CR** — from then on they count as key,
+  exceed) the creature's **original CR**: from then on they count as key,
   +1 CR per level. NPC classes are never key. (Note the 3.5 threshold is
   different: original racial *HD*, not CR.)
 - PC-class levels also grant +4/+4/+2/+2/+0/−2 ability adjustments assigned
@@ -101,22 +101,28 @@ hit. **Use it to price any boost, including 3.5 ones:** if your boosted
 villain's AC, hp, attack, and DCs land on the CR 13 row, it *is* CR 13 no
 matter what the additive rules said.
 
-Anchor rows for this campaign's level band (Bestiary Table 1–1 values,
-cross-checked for consistency against the official per-step Monster
-Advancement deltas below):
+Rows for this campaign's level band, **transcribed from the OGL source**
+(Bestiary, «Monster Creation», Table 1–1) on 2026-09-23. The complete table,
+CR 1/2 to 30 with all eleven columns, is versioned in
+`scripts/pf1e-statistiche-per-gs.yaml`, and the scripts read it from there.
+
+⚠️ Until 2026-09-23 this section had eight rows written from memory, and
+they were wrong on average damage, primary DC and poor save in almost every
+row (CR 12 even had CR 11's attack). The code had copied them, and the test
+comparing the two was comparing the same mistake twice.
 
 | CR | AC | hp | High attack | Avg dmg (high) | Primary DC | Good save | Poor save |
 |---|---|---|---|---|---|---|---|
-| 8 | 21 | 100 | +15 | 30 | 17 | +11 | +8 |
+| 8 | 21 | 100 | +15 | 35 | 18 | +11 | +7 |
 | 10 | 24 | 130 | +18 | 45 | 19 | +13 | +9 |
 | 11 | 25 | 145 | +19 | 50 | 20 | +14 | +10 |
-| 12 | 27 | 160 | +19 | 55 | 20 | +15 | +11 |
-| 13 | 28 | 180 | +21 | 61 | 21 | +15 | +11 |
-| 14 | 29 | 200 | +22 | 67 | 22 | +16 | +12 |
-| 15 | 30 | 220 | +23 | 74 | 23 | +17 | +12 |
-| 16 | 31 | 240 | +24 | 80 | 24 | +18 | +13 |
+| 12 | 27 | 160 | +21 | 55 | 21 | +15 | +11 |
+| 13 | 28 | 180 | +22 | 60 | 21 | +16 | +12 |
+| 14 | 29 | 200 | +23 | 65 | 22 | +17 | +12 |
+| 15 | 30 | 220 | +24 | 70 | 23 | +18 | +13 |
+| 16 | 31 | 240 | +26 | 80 | 24 | +19 | +14 |
 
-**Table: Monster Advancement — what one CR step buys** (Bestiary appendix,
+**Table: Monster Advancement, what one CR step buys** (Bestiary appendix,
 verified): when raising a monster from the lower CR to the higher one, add:
 
 | CR step (from → to) | hp | AC | Attack | Damage |
@@ -136,7 +142,7 @@ How to read the benchmarks against a 3.5 party of four level-13 PCs (APL 13):
 
 - A **boss** (EL = APL+2…+3) wants the CR 15–16 row.
 - A **hard standard fight** (EL = APL) wants the CR 13 row *split across
-  several monsters* — one CR 13 creature alone is action-economy-starved.
+  several monsters*: one CR 13 creature alone is action-economy-starved.
 - If a boosted monster beats the row on offense but misses it on defense
-  (or vice versa), its real CR is between rows — price it at the lower row
+  (or vice versa), its real CR is between rows; price it at the lower row
   and expect it to feel swingy.

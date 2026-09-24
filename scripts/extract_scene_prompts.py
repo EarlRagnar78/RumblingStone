@@ -34,20 +34,16 @@ from __future__ import annotations
 import argparse
 import re
 import sys
-import unicodedata
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from dmcore.testo import slug  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 
 READ_ALOUD = re.compile(r"^>\s*\*\*Read[- ]aloud([^*]*)\*\*\.?\s*(.*)$", re.I)
 HEADING = re.compile(r"^(#{1,4})\s+(.*)$")
 IMG_EXT = {".webp", ".png", ".jpg", ".jpeg"}
-
-
-def slug(s: str) -> str:
-    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
-    s = re.sub(r"[^A-Za-z0-9]+", "-", s).strip("-").lower()
-    return s or "scena"
 
 
 def clean(s: str) -> str:
@@ -101,7 +97,7 @@ def assign_keys(scenes: list[dict]) -> None:
     compilate quando si rigenera."""
     seen: dict[str, int] = {}
     for s in scenes:
-        base = slug(s["section"])[:60]
+        base = slug(s["section"], max_len=60, ripiego="scena")
         seen[base] = seen.get(base, 0) + 1
         s["key"] = base if seen[base] == 1 else f"{base}-{seen[base]}"
 

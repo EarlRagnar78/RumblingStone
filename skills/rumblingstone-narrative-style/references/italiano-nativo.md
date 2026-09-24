@@ -229,6 +229,71 @@ Come uscirne, quando il concetto serve ancora:
 | **Emozione etichettata** | «senti una vertigine di paura» | comportamento: *«ti accorgi che stai contando i passi»* |
 | **Sensi in ordine di lista** | vista, poi suono, poi odore, sempre in quell'ordine | parti dall'**odore** o dalla **temperatura**. O usane **uno solo** |
 
+### 9.2-bis Quattro tic che una macchina non trova (e tu sì)
+
+I sette della tabella qui sopra si contano: `validate_prosa.py` lo fa. Questi
+quattro **sono stati cercati e la ricerca automatica non li distingue dal
+linguaggio normale** — il che non li rende meno veri, li rende **tuoi**. Sono
+l'unica parte di §9 che dipende da un occhio.
+
+| Tic | Come suona | Perché la macchina non lo vede | Antidoto |
+|---|---|---|---|
+| **Rotazione dei sinonimi** | *la spada… la lama… l'arma… l'acciaio*, tutto nello stesso paragrafo | cercandolo si trovano le descrizioni delle mappe, dove `stanza` e `camera` sono due posti diversi | scegli **un** sostantivo e ripetilo. La ripetizione non è un difetto in italiano: l'alternanza forzata sì |
+| **Autocitazione** | riprendi una tua immagine di due pagine prima come se fosse un richiamo | 2.149 candidati nel repo, e sono termini di dominio ripetuti (`illithid`, `oscurità`) | se l'immagine torna, deve tornare **cambiata**. Altrimenti è vocabolario stretto sotto pressione, non un motivo |
+| **Anafora ravvicinata** | tre frasi di fila che aprono con la stessa parola | 291 finestre trovate, e i campioni erano un file di tattiche in inglese e un'etichetta `**Costo**` in un elenco | rileggi **le prime due parole** di ogni frase del paragrafo, in colonna |
+| **Gerundio d'analisi** | *«sottolineando il suo legame con la forgia»* appiccicato in coda per dare significato | 135 gerundi nel repo e sono italiano normale (*«irradiando un'aura»*, *«innescando la Sfida»*); il tic vero compare **una volta** | taglia la coda. Se il legame conta, è una frase sua |
+
+⚠️ Il gerundio d'analisi è **due problemi in uno**: è un tic dell'IA e insieme un
+calco (§1), perché l'inglese ci mette l'`-ing` con naturalezza e l'italiano no.
+
+### 9.2-ter L'elusione della copula, e l'inflazione di significato
+
+Due tic che il §9 non aveva e che colpiscono proprio dove questo repo scrive di
+più: **descrizioni di artefatti, luoghi, lignaggi**.
+
+**Il testo generato evita «è».** Lo sostituisce con verbi da relazione:
+*si configura come*, *funge da*, *si pone come*, *rappresenta*, *costituisce*.
+
+> ❌ *L'Incudine del Mondo si configura come il simbolo del patto fra i nani e
+> Moradin.*
+> ✅ *L'Incudine del Mondo è il patto, battuto in ferro perché nessuno potesse
+> dire di non averlo visto.*
+
+Antidoto in una riga: **se la frase può tornare a «è» senza perdere niente,
+torna a «è».**
+
+**E dichiara l'importanza invece di mostrarla**: *testimonianza di*, *segna un
+punto di svolta*, *simbolo eterno*, *a imperitura memoria*.
+
+> ❌ *La caduta della Torre di Channath resta una testimonianza del prezzo della
+> hybris nanica.*
+> ✅ *Della Torre resta la base. Nessuno l'ha più toccata: né per ricostruire,
+> né per finire di demolire.*
+
+Nel fantasy questo è il rischio più alto di tutta la lista, perché **il genere
+spinge in quella direzione da solo**: ogni rovina e ogni artefatto vorrebbero
+sembrare che contino. La cosa che li fa contare non è dirlo — è dire cosa è
+costato, cosa resta, chi la guarda ancora.
+
+⚠️ **Densità misurata nel repo: 20 elusioni della copula e 3 inflazioni**, e
+buona parte sono legittime (*«un tesoro che rappresenta il tuo passato»* è
+italiano corretto). Perciò stanno qui e non in un controllo automatico: servono a
+chi rilegge per sospettare una zona, non come parole vietate.
+
+### 9.2-quater La watchlist del registro narrativo italiano
+
+Le liste inglesi (*delve*, *tapestry*, *testament*) non servono a un corpus
+italiano. Questa è tarata sul registro che serve qui, con lo stesso avvertimento
+del resto di §9: **una occorrenza non prova niente, conta la densità.**
+
+> *un vero e proprio* · *nel cuore di* · *non è un caso che* · *gioca un ruolo
+> fondamentale* · *un tassello* (nel mosaico) · *connubio* · *risuona di* ·
+> *si staglia contro* · *testimonianza vivente*
+
+⚠️ Nel repo ne compaiono **22 in 292 file**, e le più frequenti sono spaziali e
+corrette (*«nel cuore della battaglia»*, *«nel cuore della terra»*). Non è una
+lista di divieti: è dove guardare quando un paragrafo suona di brochure.
+
 ### 9.3 Il paradosso della ricetta
 
 ⚠️ **Anche il §4 di questo file (periodo lungo + frase corta che stampa) è una

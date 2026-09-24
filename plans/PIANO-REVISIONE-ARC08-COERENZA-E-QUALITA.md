@@ -37,7 +37,7 @@
    canone va **appesa al changelog**, mai riscritta nella storia. (Dopo A0
    state.md distinguerà "giocato" da "preparato": la regola vale per
    entrambi i livelli.)
-2. **Sistema D&D 3.5 SRD only** — niente 5e (no azioni bonus, no
+2. **Sistema D&D 3.5 SRD only**: niente 5e (no azioni bonus, no
    vantaggio/svantaggio meccanici, no legendary actions), niente lore FR
    post-1385 DR. Ambientazione Faerûn 1372 DR.
 3. **Mai inventare** stat, poteri o conoscenze PNG: se serve un dato non
@@ -285,7 +285,7 @@ mancante che emerga si flagga `[INFERRED — needs DM confirmation]`.
   Signore Ventolesto (gufo celestiale) + Orion Pelleorsa (druido); la
   Cerimonia canonizza **Lythiel** (Sacred Forest). Due comandi elfici alla
   stessa battaglia, mai riconciliati; nessuno ha scheda PNG (`PNG/` ha
-  solo il cast ARC-09; `campaign/npcs/` non esiste).
+  solo il cast ARC-09; `campaign/npcs/` non esiste). <!-- validate-docs: ignore -->
 - **Azione**: applicare **D13** (Lunapiena = compagnia indipendente
   dell'Elsir Vale, resta a Hammerfist, NON conta per Rethmar) nei file
   dove i due comandi si sfiorano (Guida DM §PNG, Schede §2, finale,
@@ -376,7 +376,7 @@ mancante che emerga si flagga `[INFERRED — needs DM confirmation]`.
 - **Evidenza**: nessuna scheda per Re Thorek, Dana Forgiapietra, Grimjaw,
   Gorthak, Fauci di Palude, Lunapiena, Ventolesto, Orion Pelleorsa, i 4
   pregen, Khorn (D5, citato in 3+ file ARC-09). `PNG/` ha solo il cast
-  ARC-09; `campaign/npcs/` non esiste. Le stat vivono solo nelle appendici
+  ARC-09; `campaign/npcs/` non esiste. Le stat vivono solo nelle appendici <!-- validate-docs: ignore -->
   dell'arco — introvabili per gli engine che seguono AGENTS.md.
 - **Azione**: schede nel formato AGENTS.md (Role/Status/Location/
   Motivation/CR/Key stats/Notes) in `PNG/`, UNA per PNG, con Status
@@ -497,8 +497,8 @@ mancante che emerga si flagga `[INFERRED — needs DM confirmation]`.
 - **Azione**: tabella nel master visivo (A8) o nell'INDICE: file immagine
   → mappa/scena → sessione → prompt d'origine (se rintracciabile) →
   "quando mostrarla". Poi (solo poi) la rinomina A9 delle immagini
-  identificate. Non riconducibili: sezione "non classificate", decisione
-  al DM.
+  identificate. Quelle non riconducibili vanno in una sezione "non
+  classificate", con decisione al DM.
 - **Accettazione**: ≥80% delle immagini classificate; ogni mappa master
   indica la sua immagine se esiste.
 

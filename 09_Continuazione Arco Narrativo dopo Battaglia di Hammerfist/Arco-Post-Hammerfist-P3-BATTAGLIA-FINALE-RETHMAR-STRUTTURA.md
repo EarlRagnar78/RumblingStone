@@ -158,7 +158,7 @@ Non usi il Fane fisico, ma un “altare campale” nel cuore della battaglia.[we
 - Azarr Kul (mezzo‑drago hobgoblin warpriest di Tiamat, CR 15), **a terra** — combatte sempre da solo, Tyrgarun NON è sua cavalcatura (D11 v2) +  
   - 2–4 Erinni o Abishai (CR 9–11 ciascuna),  
   - **Avatar di Tiamat**: versione ridotta di Aspect of Tiamat (CR 17 base, modulato per il tuo party).
-  - **Tyrgarun** resta minaccia aerea a orologeria (non ancora affrontabile — vola ancora); se già ucciso/messo in fuga altrove, vedi tabella conseguenze in `Bestiario/villain/Azarr_Kul/Azarr_Kul.md`.
+  - **Tyrgarun** resta minaccia aerea a orologeria (non ancora affrontabile — vola ancora); se già ucciso/messo in fuga altrove, vedi tabella conseguenze in `Bestiario/villain/Azarr_Kul/Azarr_Kul/Azarr_Kul.md`.
 
 ### Opzioni di difficoltà
 

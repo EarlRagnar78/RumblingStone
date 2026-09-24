@@ -55,7 +55,7 @@ Pagina da consegnare al giocatore indicato, in privato.
 
 ---
 
-# Lunedì: L'Ultima Porta
+# Domani: L'Ultima Porta
 
 > *Il corridoio scende, e il silenzio cambia. Non è più il silenzio vuoto
 > delle caverne: è un silenzio PIENO, come una sala da concerto un attimo
@@ -75,5 +75,5 @@ Pagina da consegnare al giocatore indicato, in privato.
 - una **risposta** — perché là sotto, prima o poi, a ciascuno di voi verrà
   fatta una domanda. E le domande di Moradin non si schivano coi Riflessi.
 
-*A lunedì. Il Tempio trattiene il fiato.*
+*A domani. Il Tempio trattiene il fiato.*
 

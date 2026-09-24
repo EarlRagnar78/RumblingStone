@@ -1,6 +1,17 @@
 # XAL'THOR — COORDINATORE ILLITHID DELL'INVASIONE PLANARE
 ## *Il Collezionista di Menti, Cacciatore dei Bracieri di Moradin*
 
+
+
+
+```statblocco
+gs: 14
+ca: 24
+pf: 90
+ts: Temp +7, Rifl +6, Vol +11
+velocita: 9 m
+```
+
 **Razza/Tipo:** Illithid (Mind Flayer — Aberrazione Medio)
 **Classe:** Psion 6 (con capacità innate Illithid) — Livello effettivo 14
 **Grado di Sfida (GS):** 14

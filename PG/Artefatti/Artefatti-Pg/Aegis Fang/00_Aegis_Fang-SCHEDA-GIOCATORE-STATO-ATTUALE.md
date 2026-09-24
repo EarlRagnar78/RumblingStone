@@ -52,9 +52,21 @@ Forgia, quando il momento verrà, si sveglierà del tutto — ma non prima.
 caccia ai draghi) l'arma può opporsi (il DM decide). Serve il popolo nanico
 prima del portatore.
 
-> **⚠ Solo se al rituale di Hella (P3B) hai scelto «Filo dell'Ascia»**:
-> Aegis Fang **perde il Ritornante** finché non raggiunge il Risveglio pieno
-> — ogni lancio va recuperato a mano. Altrimenti ignora questa riga.
+> **⚒️ Al rituale di Hella (P3B), Aegis Fang guarda.** L'ascia non viene donata
+> — il dono di Thorik è il **+2 di deflessione della Corona** (`ARC07-DEF-3`
+> §5) — ma è **senziente, Ego 14**, e *«serve il popolo nanico prima del
+> portatore»*. Quindi ha un'opinione:
+> · 🟢 **se Thorik dona**: smette di dubitare di lui. **Nessuna prova di
+>   opposizione per un arco intero**;
+> · 🔴 **se rifiuta**: quando Thorik le chiede qualcosa in una scena che
+>   riguarda **Hella o dei nani da proteggere**, l'Ego **tira l'opposizione**
+>   invece di obbedire in silenzio. 🔓 Finisce la prima volta che Thorik
+>   rischia qualcosa di suo per lei.
+>
+> 🔎 **Correzione 2026-09-12**: qui c'era la riga del *«Filo dell'Ascia»*, che
+> toglieva il **Ritornante** fino al Risveglio pieno. **Quella strada non
+> esiste più** nella v4-bis dei Doni — e per di più collideva col profilo dello
+> Stadio 1, che è *«+4 Sacra **Ritornante**»*. Il Ritornante **resta**.
 
 ---
 

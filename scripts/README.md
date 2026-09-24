@@ -58,6 +58,11 @@ runs the pipeline locally.
 This was changed because committing the mirrors caused ~3MB of duplication
 and silent drift between agents.
 
+The agent matrix (format, in-repo root, user install root) lives in one place,
+`scripts/agents.conf`, sourced by both `build-skills.sh` and `sync-skills.sh`;
+`scripts/tests/test_agents_conf.py` fails if a script grows its own copy or if
+the list in `AGENTS.md` drifts from it.
+
 ## Per-Agent Format Routing
 
 | Agent | Format | Why |
@@ -82,7 +87,7 @@ It remains useful for:
 - Custom scripts that want to do their own retrieval.
 - Developers writing prompts that want to point at specific files.
 - Future agents whose loaders gain index.json support (add their name to
-  `AGENT_INDEX_AWARE` in `build-skills.sh`).
+  `AGENT_INDEX_AWARE` in `scripts/agents.conf`).
 
 ## Adding a New Skill
 

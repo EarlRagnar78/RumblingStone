@@ -125,11 +125,10 @@ Questo ADR fissa **le regole**; la guida spiega **come si eseguono**.
 
 ## Copertura skill / docs
 
-- `scripts/README-automation.md` — tool map (`extract_scene_prompts`, `dm.py prompts`).
+- `scripts/README-automation.md`: tool map (`extract_scene_prompts`, `dm.py prompts`).
 - [`docs/guides/GUIDA-MAPPE.md`](../../docs/guides/GUIDA-MAPPE.md) §4 — modalità
   cinematografica: rimando a questo flusso.
-- `skills/rumblingstone-mapmaking/references/stile-illustrazione-handout.md` —
-  il vocabolario di stile che i prompt usano.
+- `skills/rumblingstone-mapmaking/references/stile-illustrazione-handout.md`: il vocabolario di stile che i prompt usano.
 
 ## Esemplare
 

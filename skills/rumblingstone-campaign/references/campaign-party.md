@@ -7,7 +7,7 @@ Current party level: **13** | Party size: **4 PCs**
 
 ## Party Name: The Rumbling Stone
 
-**Origin of name:** The group is entirely composed of heavy-armored dwarves (and one human warlock), making them extremely un-stealthy. They "rumble" everywhere they go — heavy footsteps, clanking gear, and shouted battle cries. Stealth is not their forte; raw power and tenacity is.
+**Origin of name:** The group is entirely composed of heavy-armored dwarves (and one human warlock), making them extremely un-stealthy. They "rumble" everywhere they go: heavy footsteps, clanking gear, and shouted battle cries. Stealth is not their forte; raw power and tenacity is.
 
 ---
 
@@ -22,8 +22,8 @@ Current party level: **13** | Party size: **4 PCs**
 **Status:** ✅ Alive (died once at Drellin's Ferry; resurrected with Aegis Fang artifact)
 **Key Artifacts:**
 
-- **Aegis Fang** — Legendary dwarven axe (adapted from FR lore; originally a warhammer)
-- **Corona di Adamantio** (Crown of Adamantine) — 3-gem crown of Moradin (Topaz activated, Emerald activated after Earth ritual, Ruby activates during time-travel battle)
+- **Aegis Fang**: Legendary dwarven axe (adapted from FR lore; originally a warhammer)
+- **Corona di Adamantio** (Crown of Adamantine): 3-gem crown of Moradin (Topaz activated, Emerald activated after Earth ritual, Ruby activates during time-travel battle)
 
 **Key Events:**
 
@@ -47,11 +47,11 @@ Current party level: **13** | Party size: **4 PCs**
 **Role:** Melee DPS, mobility, trap handler (via high saves)
 **Race:** Shield Dwarf (male)
 **Alignment:** Lawful Neutral
-**Fighting Style:** Unarmed combat — **jump + charge + flying kick + Power Attack** combo for devastating single-target damage
+**Fighting Style:** Unarmed combat, with the **jump + charge + flying kick + Power Attack** combo for devastating single-target damage
 **Status:** ✅ Alive
 **Key Artifact:**
 
-- **Bracieri Gemelli di Moradin** (Twin Hearth-Gauntlets of Moradin) — Fire phase awakened (Piano del Fuoco), Earth phase completing (Piano della Terra)
+- **Bracieri Gemelli di Moradin** (Twin Hearth-Gauntlets of Moradin): Fire phase awakened (Piano del Fuoco), Earth phase completing (Piano della Terra)
 
 **Key Events:**
 
@@ -60,7 +60,7 @@ Current party level: **13** | Party size: **4 PCs**
 - Currently completing the Trial of the Deep Gallery (Earth Node, Forest of Living Crystal)
 - Sacrificed 500 XP for Hella's resurrection ritual
 - Closest companion to Hella (romantic bond implied)
-- **Upcoming — Tournament at Dauth:** Dragon Ball / Naruto-style martial arts tournament (3 days). Features the **Orbe delle Otto Porte** (Orb of Eight Gates) — a scenic artifact with chakra gate mechanics: each gate grants +2 STR/DEX morale and +2 saves for 1 round but costs cumulative 1d4 CON temporary damage + fatigued. Culminates in a **Githyanki Red Dragon aerial attack** that interrupts the finale. Tordek gains **chakra enlightenment** (7 soul gates of jujitsu combat, Naruto-inspired spiritual martial awareness).
+- **Upcoming, Tournament at Dauth:** Dragon Ball / Naruto-style martial arts tournament (3 days). Features the **Orbe delle Otto Porte** (Orb of Eight Gates), a scenic artifact with chakra gate mechanics: each gate grants +2 STR/DEX morale and +2 saves for 1 round but costs cumulative 1d4 CON temporary damage + fatigued. Culminates in a **Githyanki Red Dragon aerial attack** that interrupts the finale. Tordek gains **chakra enlightenment** (7 soul gates of jujitsu combat, Naruto-inspired spiritual martial awareness).
 - Key tournament opponents: Tetsu "Serpente di Vento" (Monk 12), Grandmaster Rihan (Monk 14), Thrain Ironfist (Dwarf Fighter 13), Grom Skullcrusher (Barbarian 14)
 
 **Combat Notes:**
@@ -78,19 +78,19 @@ Current party level: **13** | Party size: **4 PCs**
 ### Hella Oakenshield — Dream Dwarf Ranger 1 / Druid 12 (Level 13, The Healer/Caster)
 
 **Role:** Divine caster, healer ("ospedaliera"), nature magic, summoner, moral compass
-**Race:** **Dream Dwarf** (female) — *Races of Stone* subrace — now **Treant Hybrid** post-resurrection
+**Race:** **Dream Dwarf** (female), *Races of Stone* subrace, now **Treant Hybrid** post-resurrection
 **Alignment:** Neutral Good
 **Fighting Style:** Hide armor +2, scimitar + shield; primarily casts
-**Status:** ✅ Alive — DIED in Corona di Adamantio room battle → RESURRECTED at level 13 (Treant Hybrid template, -1 level from death → restored by story XP to effective level 13)
+**Status:** ✅ Alive; DIED in Corona di Adamantio room battle → RESURRECTED at level 13 (Treant Hybrid template, -1 level from death → restored by story XP to effective level 13)
 **Key Artifact:**
 
-- **Collana dei Semi Eterni** (Necklace of Eternal Seeds) — formed during resurrection ritual from 3 Treant seeds
+- **Collana dei Semi Eterni** (Necklace of Eternal Seeds): formed during resurrection ritual from 3 Treant seeds
 
 **Dream Dwarf Racial Traits** (*Races of Stone*, non-SRD):
 
 - +2 CON, −2 DEX (same as Gold Dwarf mechanically)
 - **Darkvision 90 ft** (extended, not standard 60 ft)
-- **Earth Dream**: Innate meditative connection to the collective subconscious of the earth — Dream Dwarves spend time in deep contemplation, perceiving the world as a resting giant of immense power
+- **Earth Dream**: Innate meditative connection to the collective subconscious of the earth; Dream Dwarves spend time in deep contemplation, perceiving the world as a resting giant of immense power
 - **Earth Connection**: +2 racial bonus on Diplomacy checks with creatures of the Earth subtype
 - **Intuition**: Senses approximate depth underground naturally (like sensing which way is up)
 - Stonecunning, Stability (+4 vs bull rush/trip), Weapon Familiarity (waraxe, urgrosh as martial)
@@ -99,8 +99,8 @@ Current party level: **13** | Party size: **4 PCs**
 
 **Ranger 1 Class Features:**
 
-- **Favored Enemy: Aberrations +2** — chosen after early Underdark encounters; +2 Bluff/Listen/Sense Motive/Spot/Survival and +2 weapon damage vs aberrations
-- **Track**: Bonus feat (Track) — represents her origin as a tracker before becoming a druid
+- **Favored Enemy: Aberrations +2**: chosen after early Underdark encounters; +2 Bluff/Listen/Sense Motive/Spot/Survival and +2 weapon damage vs aberrations
+- **Track**: Bonus feat (Track), representing her origin as a tracker before becoming a druid
 - **Wild Empathy**: Stacks with Druid Wild Empathy (total class levels + CHA mod)
 - **Character arc significance**: Hella started as a tracker/survivalist (Ranger) who learned to *follow* the natural world before she learned to *protect* it (Druid). The Ranger level represents her pragmatic, grounded roots.
 
@@ -109,23 +109,23 @@ Current party level: **13** | Party size: **4 PCs**
 - Died during the battle in the Crown of Adamantine chamber (arc 06)
 - Body preserved by the party; carried through the Eternal Forge portal
 - Resurrected through Moradin's divine intervention + party sacrifices
-- During resurrection: her spirit walked the **Soglia della Forgia** (Threshold of the Forge) — a liminal space that resonates with the Dream Dwarf Earth Dream. Passed three trials concurrent with P4 Earth Plane events.
-- Transformation: **Dream Dwarf / Treant Hybrid** — greenish skin, amber-gold eyes, bark-textured hair
+- During resurrection: her spirit walked the **Soglia della Forgia** (Threshold of the Forge), a liminal space that resonates with the Dream Dwarf Earth Dream. Passed three trials concurrent with P4 Earth Plane events.
+- Transformation: **Dream Dwarf / Treant Hybrid**: greenish skin, amber-gold eyes, bark-textured hair
 - Post-resurrection: Earth Dream connection is **permanently amplified** by the Soglia experience. Vulnerability to fire, Cold Resistance 10, Regeneration 1 (on natural earth)
-- Post-resurrection companion: **Durik Riforgiato** (Stone Guardian, Magical Beast 10-14 HD) — her dead riding dog reforged from Terros dust and Crystal fragments during the Emerald Ritual
+- Post-resurrection companion: **Durik Riforgiato** (Stone Guardian, Magical Beast 10-14 HD), her dead riding dog reforged from Terros dust and Crystal fragments during the Emerald Ritual
 - Currently completing the post-Hammerfist Sacred Forest druid ritual for nature avatar form
 
 **Combat Notes:**
 
 - Collana dei Semi Eterni grants: +4 WIS, +3 natural AC, Avatar of Root (Huge Treant form 1/day), summon Adamantine Treant (3/day); 3rd seed summons Durik instead of generic Treant
-- Additional resurrection gifts: DR 3/- (Pelle di Adamantio), Timeless Body, Spontaneous Rebirth (1/day auto-stabilize at 0 HP)
+- Resurrection gifts — ⚠️ **not yet paid, the rite has not been played** (`ARC07-DEF-3` §5, v4-bis DM 2026-09-12): **Scudo del Custode** (1/day immediate, takes an ally's damage halved; Thorik is then hasted 3 rounds toward the protected one), **Pelle di Adamantio** (DR 3/adamantine — her *only* DR), **Rovo Eldritch** (at-will ranged touch 18 m, 2d6). Each is a power **transplanted out of the donor's artifact, permanently**; a refused gift leaves that seed dormant
 - Viaggio Onirico gifts (variable based on trial outcomes): Marchio della Veritade, perception abilities, Via della Guardia (DR 2/—) or Via della Radice (Resist Cold 15 + Regen on sacred ground)
 - Primary healer via Cure spells and Wand of Cure Moderate Wounds
 - Augment Summoning + Natural Spell + Power of Nature for powerful summons while wild-shaped
 - **Wild Shape**: among her forms is a **living rhinoceros** (standard Druid
-  Wild Shape into an animal) — this is Hella herself transformed, NOT a
+  Wild Shape into an animal): this is Hella herself transformed, NOT a
   stone/animated creature and NOT a separate companion (DM clarified 2026-07-03)
-- **Animal companion: Durik** — male dog, **reforged** into a Stone Guardian
+- **Animal companion: Durik**: male dog, **reforged** into a Stone Guardian
   (Magical Beast, DR 5/Adamantine, Tremorsense 18m, telepathic link within
   18m) and **evoked via the 3rd seed of the Collana dei Semi Eterni**. (The
   earlier "Advanced Brown Bear" was her pre-death companion; post-resurrection
@@ -143,16 +143,16 @@ Current party level: **13** | Party size: **4 PCs**
 **Status:** ✅ Alive (survived cerebromorphosis via Ring's crisis powers)
 **Key Artifact:**
 
-- **Ring of Chaotic Illumination (Reforged)** — evolved artifact with dual Lathander/Mask divine essences, forged anew in the Eternal Forge
+- **Ring of Chaotic Illumination (Reforged)**: evolved artifact with dual Lathander/Mask divine essences, forged anew in the Eternal Forge
 
 **Key Events:**
 
 - Found the original Ring during Underdark exploration
 - Fought illithid worms → Ring's cerebromorphosis crisis powers activated (Dawn's Defiance saved him)
-- **Refused the Lord of Sun and Shadow prestige class** offered by Lathander and Mask — chose to remain a warlock, forging his own path
+- **Refused the Lord of Sun and Shadow prestige class** offered by Lathander and Mask; chose to remain a warlock, forging his own path
 - Ring absorbed essence of the Mithral Column of Unity in the Forge, evolving to Reforged form
 - Sacrificed an invocation slot for 24 hours for Hella's resurrection
-- **Upcoming — Invisible Tower quest:** Confronts **Zalkatar** (Illithid Warlock Drow, CR 13), the previous Ring owner, in a 5-level tower on the Old North Road. Tower defended by golems, arcane puzzles, and dimensional portals. Ring of Chaotic Illumination gives +4 to saves vs Zalkatar's psionics and can purify one of his spells. If Zalkatar is defeated, Ring reaches Ultimate Chaos form. If Zalkatar escapes (Greater Teleport at <10% HP), he may appear as wildcard at Battle of Rethmar.
+- **Upcoming, Invisible Tower quest:** Confronts **Zalkatar** (Illithid Warlock Drow, CR 13), the previous Ring owner, in a 5-level tower on the Old North Road. Tower defended by golems, arcane puzzles, and dimensional portals. Ring of Chaotic Illumination gives +4 to saves vs Zalkatar's psionics and can purify one of his spells. If Zalkatar is defeated, Ring reaches Ultimate Chaos form. If Zalkatar escapes (Greater Teleport at <10% HP), he may appear as wildcard at Battle of Rethmar.
 
 **Combat Notes:**
 
@@ -172,9 +172,9 @@ Current party level: **13** | Party size: **4 PCs**
 
 The Rumbling Stone has **no rogue**. They handle challenges through:
 
-- **Trap detection/bypass:** Tordek's high Monk saves (Reflex/Will) — they trigger traps and rely on saving throws rather than disabling
-- **Arcane needs:** Artemis (Warlock) — limited but effective; Ring provides utility (invisibility, vision, teleport)
-- **Divine power:** Hella (Druid) — healing, restoration, summons, utility spells
+- **Trap detection/bypass:** Tordek's high Monk saves (Reflex/Will): they trigger traps and rely on saving throws rather than disabling
+- **Arcane needs:** Artemis (Warlock), limited but effective; Ring provides utility (invisibility, vision, teleport)
+- **Divine power:** Hella (Druid): healing, restoration, summons, utility spells
 - **Tank mode:** Thorik draws aggro; Tordek flanks as skirmisher
 - **Healing emergency:** Hella serves as "ospedaliera" (field medic) of the group
 
@@ -203,7 +203,7 @@ The Rumbling Stone has **no rogue**. They handle challenges through:
 
 ### Therysol — Full Background
 
-Originally a slave (with her brother) sold by drow traders affiliated with Il Collezionista's guild to salamanders in the Fire Elemental Plane, forced to serve at the forge. Her brother died and left a crystal that fused with her, transforming her into the being she is now — an unicum. She hates salamanders and the elemental plane. Helped the PGs during the Fire Node quests. Was guarding Hella's corpse in the Sala della Forgia Eterna; after Hella's resurrection, she goes deeper underground seeking the origin of her destiny — which is Il Collezionista's drow guild — to find revenge. Can appear as an NPC ally during the Notte dei Drow assault on Rethmar (Arc 09, Phase 0), attacking drow from within.
+Originally a slave (with her brother) sold by drow traders affiliated with Il Collezionista's guild to salamanders in the Fire Elemental Plane, forced to serve at the forge. Her brother died and left a crystal that fused with her, transforming her into the being she is now, an unicum. She hates salamanders and the elemental plane. Helped the PGs during the Fire Node quests. Was guarding Hella's corpse in the Sala della Forgia Eterna; after Hella's resurrection, she goes deeper underground seeking the origin of her destiny (Il Collezionista's drow guild) to find revenge. Can appear as an NPC ally during the Notte dei Drow assault on Rethmar (Arc 09, Phase 0), attacking drow from within.
 
 ---
 
@@ -212,21 +212,21 @@ Originally a slave (with her brother) sold by drow traders affiliated with Il Co
 ### Underdark Detour (Pre-01 through 07, Levels 4–13)
 
 After the destruction of Drellin's Ferry (where Thorik died and was resurrected), the party went to Hammerfist Hills. Guided by Moradin's visions and dwarven oracles, they descended into the Underdark to find the Corona di Adamantio. This took them through:
-0. **Minotaur Lair** (Pre-Arc 01, unnumbered) — First Underdark area below Hammerfist. Maur defeated; **Il Collezionista** (Rakshasa + basilisk) **ESCAPED** (recurring villain, now allied with drow). Cristal Warriors encountered (from *Underdark* p.93).
+0. **Minotaur Lair** (Pre-Arc 01, unnumbered): First Underdark area below Hammerfist. Maur defeated; **Il Collezionista** (Rakshasa + basilisk) **ESCAPED** (recurring villain, now allied with drow). Cristal Warriors encountered (from *Underdark* p.93).
 
-1. **01_LaMiniera** — Ancient dwarven mine, Grell Necromancer/Patriarch. Cristal Warriors also encountered in early mine rooms after portal arrival.
-2. **02_scaladossa-abbattor-funghi** — Neverlight Grove adaptation (drow-modified fungi tower, aberrations, connection to Sonjak/Mother of Fungi — undiscovered by party)
-3. **03_la Cittadella** — Abandoned citadel, Moradin temple with undead beholder
-4. **04_tomba_di_Belkram** — Belkram's tomb, xorn, illithid worms, Artemis's cerebromorphosis crisis, Ring of Chaotic Illumination first major activation, Lord of Sun and Shadow PrC rejected
-5. **05_aa-stanza-runica** — Runic room puzzle
-6. **06_Stanza-corona-di-adamantio** — Crown chamber battle (Hella dies here)
-7. **07_il Portale Della Forgia Eterna** — Eternal Forge portal: Fire Plane, Earth Plane, Cuore di Moradin activation, Hella's resurrection, Time Travel to year -1000 about the Corona di adamantio
+1. **01_LaMiniera**: Ancient dwarven mine, Grell Necromancer/Patriarch. Cristal Warriors also encountered in early mine rooms after portal arrival.
+2. **02_scaladossa-abbattor-funghi**: Neverlight Grove adaptation (drow-modified fungi tower, aberrations, connection to Sonjak/Mother of Fungi, undiscovered by party)
+3. **03_la Cittadella**: Abandoned citadel, Moradin temple with undead beholder
+4. **04_tomba_di_Belkram**: Belkram's tomb, xorn, illithid worms, Artemis's cerebromorphosis crisis, Ring of Chaotic Illumination first major activation, Lord of Sun and Shadow PrC rejected
+5. **05_aa-stanza-runica**: Runic room puzzle
+6. **06_Stanza-corona-di-adamantio**: Crown chamber battle (Hella dies here)
+7. **07_il Portale Della Forgia Eterna**, Eternal Forge portal: Fire Plane, Earth Plane, Cuore di Moradin activation, Hella's resurrection, Time Travel to year -1000 about the Corona di adamantio
 
 ### Return to RHoD Mainline (Arcs 08–09, Level 13+)
 
-1. **08_La Battaglia Di Hammerfist** — Mass combat at Hammerfist (adapted RHoD battle mechanics) - Using time shift before the events of 7.5 and some other png moved by to make it more interesting and make the battle result impactful to 7.5. that is the **08_La Battaglia Di Hammerfist** will be played by png guided by players and the event and victory or defeat will be impactful to 7.5 section arrival. after the 7.5 section arrival the players will be back to the present and will have to deal with the consequences of their actions as png.  
+1. **08_La Battaglia Di Hammerfist**: Mass combat at Hammerfist (adapted RHoD battle mechanics) - Using time shift before the events of 7.5 and some other png moved by to make it more interesting and make the battle result impactful to 7.5. that is the **08_La Battaglia Di Hammerfist** will be played by png guided by players and the event and victory or defeat will be impactful to 7.5 section arrival. after the 7.5 section arrival the players will be back to the present and will have to deal with the consequences of their actions as png.  
 
-1. **09_Continuazione Arco Narrativo** — Post-Hammerfist: 3 personal quests + Battle of Rethmar (planned)
+1. **09_Continuazione Arco Narrativo**, Post-Hammerfist: 3 personal quests + Battle of Rethmar (planned)
 
 ### Current State
 
@@ -238,18 +238,18 @@ After the destruction of Drellin's Ferry (where Thorik died and was resurrected)
 
 ### Personal Quests (Arc 09, Post-Hammerfist)
 
-1. **Hella — Il Cerchio Sacro della Foresta (P1):** Druid ritual in the Sacred Forest to become Avatar della Natura. 3 phases with escalating drow attacks (EL 9→11→12). If she passes: Druid Circle offers nature power at Rethmar (animal summons, shapeshifting warriors like Beorn in The Hobbit). If she fails: Circle remains neutral.
-2. **Artemis — Torre Invisibile (P2A):** Confronts Zalkatar (Illithid Warlock Drow, CR 13) in a 5-level invisible tower. Ring of Chaotic Illumination reaches Ultimate Chaos form if victorious. Zalkatar may escape via Greater Teleport.
-3. **Tordek — Torneo Epico di Dauth (P2B):** 3-day martial arts tournament (Dragon Ball / Naruto vibes). Features the Orbe delle Otto Porte (chakra gate mechanics). Day 3 finale vs Grandmaster Rihan interrupted by **Githyanki Red Dragon aerial attack** to steal the sage monk's artifact. Tordek gains chakra enlightenment (7 soul gates). If tournament won: 150 dwarf mercenaries survivors sent to Rethmar.
+1. **Hella, Il Cerchio Sacro della Foresta (P1):** Druid ritual in the Sacred Forest to become Avatar della Natura. 3 phases with escalating drow attacks (EL 9→11→12). If she passes: Druid Circle offers nature power at Rethmar (animal summons, shapeshifting warriors like Beorn in The Hobbit). If she fails: Circle remains neutral.
+2. **Artemis, Torre Invisibile (P2A):** Confronts Zalkatar (Illithid Warlock Drow, CR 13) in a 5-level invisible tower. Ring of Chaotic Illumination reaches Ultimate Chaos form if victorious. Zalkatar may escape via Greater Teleport.
+3. **Tordek, Torneo Epico di Dauth (P2B):** 3-day martial arts tournament (Dragon Ball / Naruto vibes). Features the Orbe delle Otto Porte (chakra gate mechanics). Day 3 finale vs Grandmaster Rihan interrupted by **Githyanki Red Dragon aerial attack** to steal the sage monk's artifact. Tordek gains chakra enlightenment (7 soul gates). If tournament won: 150 dwarf mercenaries survivors sent to Rethmar.
 
 ### Battle of Rethmar (Arc 09-P3, Final Battle)
 
-- **Phase 0 — Notte dei Drow:** Drow + fungal aberrations infiltrate temple at night to steal evil artifact. Therysol may appear as ally.
-- **Phase 1 — Assedio:** Red Hand horde + Githyanki dragon-riders + drow faction
-- **Phase 2 — Ritualisti Draconici:** 10-round ritual to summon Avatar of Tiamat
-- **Phase 3 — Azarr Kul & Avatar:** Epic boss fight (CR 17–18)
-- **Phase 4 — Circolo degli Otto & Mythal:** 8 archmages create barrier + animate city statues as stone golems (Harry Potter Battle of Hogwarts style)
+- **Phase 0, Notte dei Drow:** Drow + fungal aberrations infiltrate temple at night to steal evil artifact. Therysol may appear as ally.
+- **Phase 1, Assedio:** Red Hand horde + Githyanki dragon-riders + drow faction
+- **Phase 2, Ritualisti Draconici:** 10-round ritual to summon Avatar of Tiamat
+- **Phase 3, Azarr Kul & Avatar:** Epic boss fight (CR 17–18)
+- **Phase 4, Circolo degli Otto & Mythal:** 8 archmages create barrier + animate city statues as stone golems (Harry Potter Battle of Hogwarts style)
 - **Allied reinforcements:** Hammerfist dwarves, Circle of Eight, Druid Circle (conditional), Tiri Kitor elves (conditional), Ghostlord (negotiable)
 
 For full story arc details: `references/campaign-story-arcs.md`
-For full narrative history: `campaign/lore/campaign-history.md`
+For full narrative history: `campaign/lore/campaign-chronicle.md`

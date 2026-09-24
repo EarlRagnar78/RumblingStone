@@ -92,7 +92,7 @@
 | Tripwire perimetrale | riga 04, colonne E-AJ | Osservare CD 22 per notarlo, Disattivare Congegni CD 20; se scatta: campana 🔔, TUTTI i drow in allerta, sorpresa persa |
 | Fuochi tattici | area centrale 💥 (righe 20-23) | 1d6 fuoco/round nel quadretto, luce 18 m |
 | Pattuglie | riga 06 (M06 e AI06, loop di 20 min) | Guerriero drow: Osservare +8, Ascoltare +8, scurovisione 36 m |
-| Tende | righe 08-20 e 25-32 (blocchi ⬛ 3×3) | bloccano linea di vista; dentro: −4 Ascoltare per chi dorme |
+| Tende | righe 08-20 e 25-32 (blocchi ⛺ 3×3) | bloccano linea di vista; si abbattono; dentro: −4 Ascoltare per chi dorme |
 
 ### ⚔️ TATTICHE
 

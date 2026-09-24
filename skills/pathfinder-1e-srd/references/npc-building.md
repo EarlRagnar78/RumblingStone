@@ -1,6 +1,11 @@
 # PF1e NPC Building — Classed NPCs and Villains
 
-Source: PF1e Core Rulebook (Gamemastering + NPC chapters), NPC Codex.
+Source: PF1e Core Rulebook (Gamemastering + NPC chapters).
+
+⚠️ The NPC Codex is named below as a **lookup you may consult at the table**, not
+as a source anything here is copied from — nothing in this file derives from it,
+and it therefore carries no Section 15 entry in `OGL.txt`. If you ever do lift a
+block from it, that entry has to go in, in the same commit.
 Lookup: https://www.d20pfsrd.com/gamemastering/npc-creation/
 
 Use this when a villain or named PNG needs class levels rather than a

@@ -1,6 +1,16 @@
 # CONTE VALERIUS — IL FINANZIATORE DELL'ORDA
 ## *Il Villain Intoccabile — L'Aristocratico che Non si Può Uccidere con le Spade*
 
+
+
+
+```statblocco
+gs: 6
+ca: 13
+pf: 36
+ts: Temp +3, Rifl +3, Vol +9
+```
+
 **Razza/Tipo:** Umano (Nobile di Elsir / Cannath Vale)
 **Classe:** Esperto 4 / Aristocratico 4 (Livello Totale 8)
 **Grado di Sfida (GS):** 6 (in combattimento) / **GS effettivo 14+ in contesto politico**

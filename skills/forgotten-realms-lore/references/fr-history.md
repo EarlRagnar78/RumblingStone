@@ -231,10 +231,10 @@ open experiment of Cormanthyr.
 
 These exist as in-world texts that player characters might find or study:
 
-- **The Grand History of the Realms** — comprehensive history compiled by Augathra the Mad
+- **The Grand History of the Realms**: comprehensive history compiled by Augathra the Mad
 - **Volo's Guide to...** (series) — Volo (Volothamp Geddarm) writes popular travel guides; unreliable
-- **Elminster's Ecologies** — Elminster's notebooks on Faerûnian creatures and environments
-- **Candlekeep Chronicles** — Various histories maintained at Candlekeep (the great library)
-- **The Nether Scrolls** — Legendary 100-scroll set of Netherese magic; scattered and lost
-- **The Tablets of Fate** — Ao's divine law-stones; now restored and secured by Ao
-- **The Cyrinishad** — The holy book of Cyric; reading it drives you insane (or converts you)
+- **Elminster's Ecologies**: Elminster's notebooks on Faerûnian creatures and environments
+- **Candlekeep Chronicles**: Various histories maintained at Candlekeep (the great library)
+- **The Nether Scrolls**: Legendary 100-scroll set of Netherese magic; scattered and lost
+- **The Tablets of Fate**: Ao's divine law-stones; now restored and secured by Ao
+- **The Cyrinishad**: The holy book of Cyric; reading it drives you insane (or converts you)

@@ -1,0 +1,714 @@
+# La legenda dei simboli — fonte unica (ADR-0048)
+# ============================================================================
+# Questo file e' la SOLA casa della legenda. Nessuno script puo' dichiarare un
+# proprio set di simboli: il gate `legend/single-source`
+# (scripts/tests/test_legenda_fonte_unica.py) lo boccia.
+#
+# Prima di ADR-0048 la stessa informazione viveva in cinque posti: `SYMBOLS` in
+# render_map_svg.py, `WALL_SYMS`/`DOOR_SYMS`/`LIGHT_SYMS` in export_uvtt.py e
+# `HAZARD_SYMS` in import_ultraclear.py. Non erano ancora divergenti in
+# appartenenza — ma **lo erano gia' state due volte**, e ogni volta e' costato
+# un ADR a se' (ADR-0042 e ADR-0043) per rattoppare un sintomo della stessa
+# causa.
+#
+# ⚠️ NON SI MODIFICA A MANO scripts/legend.json: si cambia QUESTO file e si
+#    rigenera con `python3 scripts/build_legend.py`. La CI confronta i due.
+#
+# ---------------------------------------------------------------------------
+# render — come si disegna. Non cambia mai col sistema di regole.
+#   mode: fill  terreno texturizzato ("pat" = pattern procedurale)
+#   mode: unit  segnalino di creatura (gradiente radiale + anello)
+#   mode: icon  prop illustrato in-house ("prop"); senza prop, ripiega
+#               sull'emoji. Il terreno sotto si eredita dalla cella vicina.
+#   heavy: true ombra portata + contorno marcato (muri, strutture, massicci)
+#   altezza_m   estrusione 3D in metri per la catena Blender (negativa = scavo).
+#               ⚠️ NON e' un numero libero: e' un MODULO DI GRIGLIA. Decisione
+#               DM del 2026-09-12 — *«muri piccoli 1.5 metri e poi multipli di
+#               1.5 o approssimazioni piu' vicine possibili»*. Il quadretto del
+#               repo e' 1,5 m (spec §3.5), quindi:
+#                 · cio' che STA IN PIEDI  -> quadretti interi (1.5 * n)
+#                 · l'ingombro che si SCAVALCA -> mezzo quadretto (0.75)
+#                 · cio' che e' PIATTO -> 0.0
+#               Oggi: 15 altezze a quadretto intero, 9 a mezzo, 7 piatte.
+#               Un'altezza fuori modulo la boccia
+#               test_legenda_fonte_unica.TestLeAltezzeSonoModuliDiGriglia.
+#   piatto: true resta a quota zero: un varco non e' un volume
+#   texture     cartella di texture per famiglia di superficie — NON uno slug
+#               di Poly Haven: la riempie il DM verificando la licenza
+#
+# function — cosa fa nello spazio. Non cambia col sistema di regole.
+#   wall:   true  blocca vista e movimento; diventa segmento di muro in UVTT
+#   door:   true  varco; geometria di porta in UVTT
+#   light:  {quadretti, colore}  sorgente luminosa
+#   hazard: true  l'import lo classifica come pericolo, non come struttura
+#
+# 🔴 QUI NON ENTRA NESSUN NUMERO DI GIOCO. «+4 CA», «20%», «x2 movimento»
+#    vivono nei profili di ADR-0039, ed e' la ragione per cui il prodotto puo'
+#    supportare 3.5, PF1e e 5e senza tre legende.
+#
+# ⚠️ LIMITE DICHIARATO, e non e' una svista. La specifica normativa
+#    (docs/guides/LEGENDA-FUNZIONALE-SPEC.md §4) descrive un `function` molto
+#    piu' ricco — cover, obscurement, move_cost, elevation_m, climb, nameable.
+#    Quei valori NON sono qui perche' quella spec e' ancora «proposta, gate DM»
+#    (sua riga 32): non sono canone, sono una proposta di luglio mai approvata.
+#    Ratificarla trasformerebbe 2.101 celle in muri (🌲 2.073, 🌳 18, 📦 10):
+#    e' la decisione D1 di plans/PIANO-VENDIBILITA.md §8, della stessa taglia di
+#    ADR-0043. Finche' non e' presa, qui c'e' solo cio' che il codice applica.
+# ============================================================================
+version: 1
+symbols:
+  "🌲":
+    label: "Foresta densa (Furtività +5, copertura)"
+    render: {mode: fill, pat: t_forest, fill: "#55754d", altezza_m: 4.5, texture: fogliame}
+    function:
+      blocks_movement: false
+      blocks_sight: true
+      # ⚠️ DEROGA DICHIARATA: il fatto neutro dice che blocca la vista,
+      #    ma l'export UVTT non ci mette un muro. Motivo obbligatorio:
+      deroga_uvtt: >-
+        il muro UVTT e' binario e il bosco no: blocca la vista ATTRAVERSO la
+        cella, non DENTRO. Farlo muro pieno vorrebbe dire che un PG in mezzo
+        agli alberi non vede il quadretto adiacente. Il glifo del margine e' il
+        lotto di ADR-0051 (decisione DM del 2026-09-12).
+      cover: half
+      obscurement: heavy
+      move_cost: 4
+      nameable: false
+  "🌿":
+    label: "Vegetazione bassa"
+    render: {mode: fill, pat: t_veg, fill: "#9db97b", altezza_m: 0.75, texture: erba}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: light
+      move_cost: 2
+      nameable: false
+  "🟩":
+    label: "Pianura / area aperta"
+    render: {mode: fill, pat: t_grass, fill: "#b3c489", altezza_m: 0.0, texture: erba}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 1
+      nameable: false
+  "🟫":
+    label: "Terra battuta / sentiero"
+    render: {mode: fill, pat: t_earth, fill: "#b08d68", altezza_m: 0.0, texture: terra-battuta}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 1
+      nameable: false
+  "🟨":
+    label: "Sabbia / area segnalata"
+    render: {mode: fill, pat: t_sand, fill: "#e4cf9c", altezza_m: 0.0, texture: sabbia}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 1
+      nameable: false
+  "🟧":
+    label: "Lava raffreddata / pericolo"
+    render: {mode: fill, pat: t_lava, fill: "#d59650", altezza_m: 0.0}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 2
+      nameable: false
+      hazard: {kind: fire, severity: minor}
+  "🟥":
+    label: "Zona letale"
+    render: {mode: fill, pat: t_lethal, fill: "#b94a3c", altezza_m: 0.0}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 1
+      nameable: false
+      hazard: {kind: magic, severity: lethal}
+  "🟦":
+    label: "Acqua profonda"
+    render: {mode: fill, pat: t_deep, fill: "#4c7ba3", altezza_m: -1.5, texture: acqua}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      swim: true
+      nameable: false
+  "🌊":
+    label: "Acqua / corrente"
+    render: {mode: fill, pat: t_water, fill: "#6aa5c4", altezza_m: -0.75, texture: acqua}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 2
+      nameable: false
+  # 🐛 ALTEZZA: 3.2 m, e fino al 2026-09-12 il commento accanto al dato nel
+  # renderer Blender diceva ancora «edificio, tenda, dais» — il significato di
+  # PRIMA di ADR-0042. ⛺ e 🔳 non hanno un'altezza propria: si estrudono
+  # entrambi al default generico di 0,6 m. E' il TERZO sintomo della stessa
+  # causa, trovato dal gate `legend/single-source` al primo uso. Non corretto
+  # qui perche' e' contenuto: decisione D2 di plans/PIANO-VENDIBILITA.md §8.
+  #
+  # ADR-0042 — i tre glifi che stavano sotto ⬛. Fino al 2026-09-04 questo
+  # simbolo valeva insieme «tenda, edificio, dais» e l'export li trattava
+  # tutti da muro pieno: 8.216 celle in 24 file. Adesso sono tre cose
+  # distinte — ⬛ edificio · ⛺ tenda · 🔳 dais — e ⬛ tiene il significato
+  # strutturalmente piu' forte, non quello statisticamente piu' comune:
+  # cosi' nessuna cella gia' disegnata si muove sotto i piedi di nessuno.
+  "⬛":
+    label: "Edificio / corpo di fabbrica (muratura piena: blocca vista e movimento)"
+    render: {mode: fill, pat: t_struct, fill: "#6b5b47", heavy: true, altezza_m: 3.0, texture: legno}
+    function:
+      blocks_movement: true
+      blocks_sight: true
+      cover: total
+      obscurement: none
+      nameable: true
+  # 🔳 NON e' un muro, ed e' il punto: su una pedana ci si sale, non ci si
+  # sbatte contro. Glifo nato con ADR-0042; e' l'unico dei 63 la cui
+  # funzione non compare nella spec §4, perche' e' nato dopo la sua
+  # riverifica — ma ADR-0042 la dichiara per esteso.
+  "🔳":
+    label: "Dais / pedana rialzata (ci si sale sopra: NON e' un muro)"
+    render: {mode: fill, pat: t_dais, fill: "#b9a884"}
+  "⬜":
+    label: "Pavimento lavorato"
+    render: {mode: fill, pat: t_floor, fill: "#d8cdb4", altezza_m: 0.0, texture: pavimento}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 1
+      nameable: false
+  "🏰":
+    label: "Muro / roccia solida"
+    render: {mode: fill, pat: t_wall, fill: "#3f3931", heavy: true, altezza_m: 4.5, texture: muratura}
+    function:
+      blocks_movement: true
+      blocks_sight: true
+      cover: total
+      obscurement: none
+      nameable: false
+  "🟪":
+    label: "Pilastro / mithral"
+    render: {mode: fill, pat: t_pillar, fill: "#8a67b5", heavy: true, altezza_m: 4.5, texture: pietra-chiara}
+    function:
+      blocks_movement: true
+      blocks_sight: true
+      cover: total
+      obscurement: none
+      nameable: true
+  # ADR-0043 — le montagne sono muri. Il renderer la disegnava solida e
+  # l'export non ci metteva un muro: in Foundry si attraversava la catena
+  # montuosa e ci si vedeva attraverso. 2.423 celle in 21 file.
+  # ⚠️ Il rovescio, dichiarato: un valico o una sella sono attraversabili
+  # nella finzione e adesso sono muro. Chi disegna un passo usi un simbolo
+  # di terreno per il passo, non ⛰.
+  "⛰":
+    label: "Montagne / creste rocciose"
+    render: {mode: fill, pat: t_mountain, fill: "#8d8271", heavy: true, altezza_m: 7.5, texture: roccia}
+    function:
+      blocks_movement: true
+      blocks_sight: true
+      cover: total
+      obscurement: none
+      nameable: true
+  # 🪨 resta FUORI dai muri ed e' corretto: copertura PARZIALE, non totale.
+  "🪨":
+    label: "Rocce/macerie (copertura +4 CA, terreno difficile)"
+    render: {mode: icon, prop: pr_rocks, fill: "#ced4da", altezza_m: 0.75, texture: roccia}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: half
+      obscurement: none
+      move_cost: 2
+      prone_concealment: true
+      destructible: true
+      nameable: true
+  "🔥":
+    label: "Fuoco (1d6 fuoco/round)"
+    render: {mode: icon, prop: pr_fire, fill: "#ffb4a2"}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: light
+      move_cost: 1
+      nameable: false
+      hazard: {kind: fire, severity: major}
+      light: {raggio_m: 7.5, colore: "ffb37a"}
+  "💥":
+    label: "Fiamme / esplosione"
+    render: {mode: icon, prop: pr_boom, fill: "#ffb4a2"}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: light
+      move_cost: 1
+      nameable: false
+      hazard: {kind: fire, severity: major}
+  "💀":
+    label: "Fossa / trappola"
+    render: {mode: icon, prop: pr_skull, fill: "#e9ecef"}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 1
+      nameable: false
+      hazard: {kind: fall, severity: major}
+  # 🕳 stava in LIGHT_SYMS con raggio 0.0 come segnaposto, e l'export lo
+  # scartava con `if rng <= 0`. Una voragine non e' una sorgente di luce:
+  # qui non c'e', e l'uscita e' identica byte per byte.
+  "🕳":
+    label: "Voragine / buco"
+    render: {mode: icon, prop: pr_pit, fill: "#495057", altezza_m: -3.0}
+    function:
+      blocks_movement: true
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      nameable: true
+      hazard: {kind: fall, severity: lethal}
+  "🔵":
+    label: "PG / alleati"
+    render: {mode: unit, fill: "#1d6fd8"}
+  "🔴":
+    label: "Nemico standard"
+    render: {mode: unit, fill: "#d62828"}
+  "⚫":
+    label: "Boss / comandante"
+    render: {mode: unit, fill: "#212529"}
+  "🟡":
+    label: "Incantatore nemico"
+    render: {mode: unit, fill: "#f4b400"}
+  "🟢":
+    label: "Creatura evocata / bestia"
+    render: {mode: unit, fill: "#2b9348"}
+  "🟣":
+    label: "Creatura speciale"
+    render: {mode: unit, fill: "#9d4edd"}
+  "🌳":
+    label: "Treant / creatura vegetale"
+    render: {mode: icon, prop: pr_tree, fill: "#b7e4c7", altezza_m: 6.0, texture: fogliame}
+    function:
+      blocks_movement: true
+      blocks_sight: true
+      # ⚠️ DEROGA DICHIARATA: il fatto neutro dice che blocca la vista,
+      #    ma l'export UVTT non ci mette un muro. Motivo obbligatorio:
+      deroga_uvtt: >-
+        e' una CREATURA, non terreno: un treant si muove, un muro no. Lo dice
+        la spec stessa (§4.2 -> §7). Decisione DM del 2026-09-12.
+      cover: total
+      obscurement: none
+      nameable: true
+  "⭐":
+    label: "Obiettivo primario"
+    render: {mode: icon, prop: pr_star, fill: "#fff3b0", piatto: true}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 1
+      nameable: true
+  "🚪":
+    label: "Porta / ingresso"
+    render: {mode: icon, prop: pr_door, fill: "#e6ccb2", piatto: true}
+    function:
+      blocks_movement: true
+      blocks_sight: true
+      # ⚠️ DEROGA DICHIARATA: il fatto neutro dice che blocca la vista,
+      #    ma l'export UVTT non ci mette un muro. Motivo obbligatorio:
+      deroga_uvtt: >-
+        ha gia' la sua geometria nell'export: `door: true` produce un varco,
+        non un segmento di muro. Chiusa e' un muro, aperta un passaggio, e lo
+        stato non e' una proprieta' del simbolo (spec §7).
+      door: true
+      cover: total
+      obscurement: none
+      move_cost: 1
+      nameable: true
+  "🗼":
+    label: "Torre / struttura alta"
+    render: {mode: icon, prop: pr_tower, fill: "#dee2e6", altezza_m: 9.0}
+    function:
+      blocks_movement: true
+      blocks_sight: true
+      cover: total
+      obscurement: none
+      nameable: true
+  "🏺":
+    label: "Contenitore / bottino"
+    render: {mode: icon, prop: pr_urn, fill: "#f8f9fa", altezza_m: 0.75}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 1
+      nameable: true
+  "🔔":
+    label: "Allarme / trappola sonora"
+    render: {mode: icon, prop: pr_bell, fill: "#fff3b0"}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 1
+      nameable: true
+  "💎":
+    label: "Tesoro / oggetto magico"
+    render: {mode: icon, prop: pr_gem, fill: "#caf0f8"}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 1
+      nameable: true
+  "👑":
+    label: "Trono / Corona"
+    render: {mode: icon, prop: pr_crown, fill: "#fff3b0"}
+    function:
+      blocks_movement: true
+      blocks_sight: false
+      cover: half
+      obscurement: none
+      move_cost: 1
+      nameable: true
+  "🏮":
+    label: "Braciere / fonte di luce"
+    render: {mode: icon, prop: pr_brazier, fill: "#ffd166", altezza_m: 1.5}
+    function:
+      blocks_movement: true
+      blocks_sight: false
+      cover: half
+      obscurement: none
+      nameable: true
+      light: {raggio_m: 9.0, colore: "ffd9a0"}
+  "🪓":
+    label: "Rastrelliera / armi"
+    render: {mode: icon, prop: pr_rack, fill: "#e9ecef", altezza_m: 1.5}
+    function:
+      blocks_movement: true
+      blocks_sight: false
+      cover: half
+      obscurement: none
+      move_cost: 1
+      nameable: true
+  "🛏":
+    label: "Giaciglio"
+    render: {mode: icon, prop: pr_bed, fill: "#e9ecef", altezza_m: 0.75}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 1
+      nameable: true
+  "📦":
+    label: "Casse / rifornimenti"
+    render: {mode: icon, prop: pr_crate, fill: "#e6ccb2", altezza_m: 1.5}
+    function:
+      blocks_movement: true
+      blocks_sight: true
+      cover: total
+      obscurement: none
+      destructible: true
+      nameable: true
+  "🐴":
+    label: "Cavalcature"
+    render: {mode: icon, prop: pr_horse, fill: "#e6ccb2"}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 1
+      nameable: true
+  "🕸":
+    label: "Ragnatele (terreno difficile)"
+    render: {mode: icon, prop: pr_web, fill: "#dee2e6", altezza_m: 0.75}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: light
+      move_cost: 4
+      nameable: false
+      hazard: {kind: magic, severity: minor}
+  "❄":
+    label: "Ghiaccio"
+    render: {mode: icon, prop: pr_ice, fill: "#caf0f8", altezza_m: 0.0}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 2
+      nameable: false
+      hazard: {kind: cold, severity: null}
+  "⚡":
+    label: "Energia / pericolo magico"
+    render: {mode: icon, prop: pr_bolt, fill: "#fff3b0"}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 1
+      nameable: false
+      hazard: {kind: electric, severity: major}
+      light: {raggio_m: 6.0, colore: "fff0a0"}
+  "🌀":
+    label: "Portale / vortice"
+    render: {mode: icon, prop: pr_portal, fill: "#caf0f8"}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 1
+      nameable: true
+  "⬇":
+    label: "Discesa / pendenza"
+    render: {mode: icon, prop: pr_down, fill: "#dee2e6", piatto: true}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 2
+      climb: easy
+      nameable: false
+  "🏛":
+    label: "Edificio / tempio"
+    render: {mode: icon, prop: pr_temple, fill: "#dee2e6", altezza_m: 6.0, texture: pietra-chiara}
+    function:
+      blocks_movement: true
+      blocks_sight: true
+      cover: total
+      obscurement: none
+      nameable: true
+  "🌋":
+    label: "Bocca vulcanica / fumarola"
+    render: {mode: icon, prop: pr_volcano, fill: "#ffb4a2"}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: heavy
+      move_cost: 2
+      nameable: true
+      hazard: {kind: fire, severity: lethal}
+  "🗿":
+    label: "Statua"
+    render: {mode: icon, prop: pr_statue, fill: "#dee2e6", altezza_m: 1.5}
+    function:
+      blocks_movement: true
+      blocks_sight: true
+      cover: total
+      obscurement: none
+      destructible: true
+      nameable: true
+  "🌉":
+    label: "Ponte / passerella"
+    render: {mode: icon, prop: pr_bridge, fill: "#e6ccb2", altezza_m: 0.75}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 1
+      nameable: true
+  "🎯":
+    label: "Obiettivo tattico"
+    render: {mode: icon, prop: pr_target, fill: "#fff3b0", piatto: true}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 1
+      nameable: true
+  "🖼":
+    label: "Affresco / quadro"
+    render: {mode: icon, prop: pr_mural, fill: "#dee2e6", piatto: true}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 1
+      nameable: true
+  "✨":
+    label: "Effetto magico attivo"
+    render: {mode: icon, prop: pr_sparkle, fill: "#fff3b0", piatto: true}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 1
+      nameable: true
+      light: {raggio_m: 4.5, colore: "e6ccff"}
+  "⚔":
+    label: "Zona di scontro"
+    render: {mode: icon, prop: pr_swords, fill: "#dee2e6", piatto: true}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 1
+      nameable: true
+  "⚰":
+    label: "Sarcofago / bara"
+    render: {mode: icon, prop: pr_coffin, fill: "#e6ccb2", altezza_m: 0.75}
+    function:
+      blocks_movement: true
+      blocks_sight: false
+      cover: half
+      obscurement: none
+      move_cost: 1
+      nameable: true
+  "🛢":
+    label: "Barile"
+    render: {mode: icon, prop: pr_barrel, fill: "#e6ccb2"}
+    function:
+      blocks_movement: true
+      blocks_sight: false
+      cover: half
+      obscurement: none
+      destructible: true
+      nameable: true
+  "🪜":
+    label: "Scale / rampa"
+    render: {mode: icon, prop: pr_stairs, fill: "#dee2e6"}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 2
+      nameable: true
+  "🦴":
+    label: "Ossa / resti"
+    render: {mode: icon, prop: pr_bones, fill: "#e9ecef"}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 2
+      nameable: true
+  "🍄":
+    label: "Funghi giganti"
+    render: {mode: icon, prop: pr_mushrooms, fill: "#ffb4a2"}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: half
+      obscurement: light
+      move_cost: 2
+      nameable: true
+  "🕯":
+    label: "Candele / rituale"
+    render: {mode: icon, prop: pr_candles, fill: "#fff3b0"}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      move_cost: 1
+      nameable: true
+      light: {raggio_m: 4.5, colore: "ffe6b3"}
+  "🌾":
+    label: "Erba alta / cespugli (occultamento)"
+    render: {mode: icon, prop: pr_bush, fill: "#b7e4c7"}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: light
+      move_cost: 2
+      prone_concealment: true
+      nameable: true
+  # ⛺ e' muro dal 2026-09-04 (ADR-0042): un telo teso blocca la vista.
+  # Prima le tende disegnate col glifo giusto non bloccavano nulla e quelle
+  # disegnate con ⬛ bloccavano tutto: i due errori si annullavano per caso.
+  # ALTEZZA 1,0 m — decisione DM del 2026-09-12: «le tende falle piu' basse».
+  # Chiude la seconda meta' del buco di ADR-0042: la tenda si estrudeva al
+  # default di 0,6 m mentre un edificio sta a 3,2.
+  #
+  # ⚠️ Incoerenza fra le due catene, dichiarata: ⛺ e' un MURO nell'export UVTT
+  # (un telo teso blocca la vista, ADR-0042) ma a 1 m nel render 3D e' piu'
+  # bassa di una creatura in piedi. Le due catene rispondono a domande diverse
+  # — la linea di vista nel VTT, il volume nella scena Blender — e la scelta e'
+  # del DM. Se un giorno stona guardando una scena renderizzata, il numero da
+  # cambiare e' questo, non il muro.
+  "⛺":
+    label: "Tenda (telo teso: blocca la vista, si abbatte)"
+    render: {mode: icon, prop: pr_tent, fill: "#e6ccb2", altezza_m: 0.75}
+    function:
+      blocks_movement: true
+      blocks_sight: true
+      cover: total
+      obscurement: none
+      destructible: true
+      nameable: true
+  "🔮":
+    label: "Cristalli / altare magico"
+    render: {mode: icon, prop: pr_crystal, fill: "#caf0f8"}
+    function:
+      blocks_movement: true
+      blocks_sight: false
+      cover: half
+      obscurement: none
+      nameable: true
+      light: {raggio_m: 6.0, colore: "b3e6ff"}
+  "🪑":
+    label: "Tavolo e sedie"
+    render: {mode: icon, prop: pr_table, fill: "#e6ccb2"}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: half
+      obscurement: none
+      move_cost: 2
+      nameable: true
+  # ALTEZZA 1,5 m — decisione DM del 2026-09-12. Era l'unico simbolo che si
+  # chiama «muro» e un'altezza non ce l'aveva: si estrudeva al default generico
+  # di 0,6 m, cioe' un gradino. A 1,5 m e' una copertura all'altezza del petto,
+  # che e' esattamente cio' che l'etichetta promette (+4 CA).
+  "🧱":
+    label: "Muretto / copertura bassa (+4 CA)"
+    render: {mode: icon, prop: pr_lowwall, fill: "#e6ccb2", altezza_m: 1.5}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: half
+      obscurement: none
+      move_cost: 1
+      climb: easy
+      nameable: true

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 210" role="img" aria-label="Scala dell'oppressione a sei stadi">
+  <defs>
+    <linearGradient id="dread" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#efe4c8"/><stop offset="1" stop-color="#3c3226"/>
+    </linearGradient>
+  </defs>
+  <rect width="880" height="210" fill="#f8f1dd"/>
+  <rect x="50" y="70" width="780" height="24" fill="url(#dread)" stroke="#241c14" stroke-width="2"/>
+  <g font-family="sans-serif">
+    <g fill="#241c14">
+      <circle cx="70" cy="82" r="15"/><circle cx="222" cy="82" r="15"/><circle cx="374" cy="82" r="15"/>
+      <circle cx="526" cy="82" r="15"/><circle cx="678" cy="82" r="15"/><circle cx="812" cy="82" r="15"/>
+    </g>
+    <g fill="#f2e8d0" font-size="14" font-weight="700" text-anchor="middle">
+      <text x="70" y="87">0</text><text x="222" y="87">1</text><text x="374" y="87">2</text>
+      <text x="526" y="87">3</text><text x="678" y="87">4</text><text x="812" y="87">5</text>
+    </g>
+    <g font-size="11" font-weight="700" fill="#241c14" text-anchor="middle">
+      <text x="70" y="52">NORMALE</text><text x="222" y="52">SOSPETTO</text><text x="374" y="52">SILENZIO</text>
+      <text x="526" y="52">SGUARDO</text><text x="678" y="52">DISCESA</text><text x="812" y="52">NOTTE</text>
+    </g>
+    <g font-size="10" fill="#5a4a36" text-anchor="middle">
+      <text x="70" y="120">nessuna</text><text x="70" y="133">scoperta</text>
+      <text x="222" y="120">prima prova</text><text x="222" y="133">o il coro</text>
+      <text x="374" y="120">il borgo sa</text><text x="374" y="133">e tace</text>
+      <text x="526" y="120">canonica</text><text x="526" y="133">visitata</text>
+      <text x="678" y="120">botola aperta</text><text x="678" y="133">o prigionieri</text>
+      <text x="812" y="120">luna nuova</text><text x="812" y="133">Atto IV</text>
+    </g>
+    <g font-size="10.5" fill="#7c2f2f" text-anchor="middle" font-style="italic">
+      <text x="526" y="166">prima discesa</text>
+      <text x="678" y="166">seconda discesa</text>
+      <text x="812" y="166">terza discesa: bussa</text>
+    </g>
+    <g stroke="#7c2f2f" stroke-width="1.6" stroke-dasharray="4 3">
+      <path d="M526,98 V152"/><path d="M678,98 V152"/><path d="M812,98 V152"/>
+    </g>
+    <text x="50" y="192" font-size="10" fill="#5a4a36" font-style="italic">
+      L'oppressione sale con le scoperte, non con le ore. Non torna mai indietro.</text>
+  </g>
+</svg>

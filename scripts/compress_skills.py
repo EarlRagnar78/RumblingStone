@@ -20,7 +20,17 @@ import sys
 import time
 from pathlib import Path
 from typing import Optional
-import yaml
+
+# PyYAML e' l'unica libreria non-stdlib del repo (ADR-0037): una dipendenza
+# dichiarata come debito, non un precedente. Finche' c'e', chi la usa deve
+# dirlo e uscire pulito quando manca, come fa validate_skills.py. Il codice 2
+# e' quello che binari.py riserva alla dipendenza assente, distinto dall'1 di
+# un fallimento vero.
+try:
+    import yaml
+except ImportError:  # pragma: no cover
+    print("ERROR: PyYAML required (pip install pyyaml)", file=sys.stderr)
+    sys.exit(2)
 
 def count_tokens(text: str) -> int:
     """Count tokens using tiktoken if available, else word-based estimate."""

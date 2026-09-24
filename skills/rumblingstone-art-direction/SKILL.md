@@ -112,7 +112,9 @@ Quattro numeri, scritti una volta e riusati per tutto il set:
 | **Formato** | non si cambia a metà set | ritratti verticali, tavole orizzontali |
 
 ⚠️ **Il seed non è un dettaglio da nerd**: è la differenza fra una serie
-**riproducibile** e una irripetibile. Un modulo che si ristampa fra un anno con
+**riproducibile** e una irripetibile. E se lo strumento **non lo espone** — è il
+caso dei servizi come Gemini — la conseguenza non è «pazienza»: è che **il file
+generato diventa il sorgente**, va versionato e non si butta mai (ADR-0019 §2-bis). Un modulo che si ristampa fra un anno con
 due immagini rifatte a occhio si vede subito.
 
 ---
@@ -131,7 +133,7 @@ Le immagini che funzionano in un modulo fanno **una** di queste cose:
 
 - **dicono un tono** che la prosa impiegherebbe un paragrafo a costruire;
 - **rendono riconoscibile** una persona o un luogo che tornerà;
-- **mostrano una relazione** — chi sta davanti a chi, chi guarda chi;
+- **mostrano una relazione**: chi sta davanti a chi, chi guarda chi;
 - **danno al DM un appiglio da descrivere** invece di leggere.
 
 Quello che **non** devono fare: illustrare un momento che i giocatori devono
@@ -150,7 +152,7 @@ rigenera** quando anche solo una di queste è vera:
 3. il personaggio **non è riconoscibile** rispetto alla sua scheda-personaggio;
 4. c'è **testo** dentro l'immagine (scritte, insegne, rune inventate): in un
    libro stampato è la cosa che tradisce prima la generazione automatica;
-5. **la simmetria è troppo perfetta** — è la firma tipica del modello, non una
+5. **la simmetria è troppo perfetta**: è la firma tipica del modello, non una
    scelta di composizione;
 6. l'immagine è **corretta e non dice niente** (§5).
 

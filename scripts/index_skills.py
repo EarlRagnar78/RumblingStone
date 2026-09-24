@@ -13,6 +13,7 @@ Usage:
 """
 
 import argparse
+import sys
 import json
 import re
 from collections import defaultdict
@@ -228,6 +229,13 @@ def main():
     build_dir = Path(args.build)
     output_path = Path(args.output)
 
+    # Senza questo controllo `rglob` su una cartella inesistente non alza
+    # niente: scriveva un indice con zero voci, che e' peggio di un errore
+    # perche' il file c'e' e sembra buono.
+    if not input_dir.is_dir():
+        print(f"ERRORE: cartella sorgente inesistente: {input_dir}", file=sys.stderr)
+        return 2
+
     print(f"  Scanning {input_dir}...", flush=True)
     entries = []
     for md_file in sorted(input_dir.rglob("*.md")):
@@ -269,7 +277,11 @@ def main():
     print(f"    Files indexed:  {len(entries)}")
     print(f"    Domains:        {len(domain_index)}")
     print(f"    Keywords:       {len(keyword_index)}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    # `main()` senza `sys.exit` buttava via il valore di ritorno: lo script
+    # usciva sempre con 0, e i codici dichiarati nel manifest erano una
+    # promessa che solo argparse manteneva.
+    sys.exit(main())

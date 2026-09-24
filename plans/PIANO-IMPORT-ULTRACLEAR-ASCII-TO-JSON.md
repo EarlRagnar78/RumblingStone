@@ -186,10 +186,10 @@ import_ultraclear.py INPUT.md [opzioni]
 ```
 
 **Exit code** (contratto stabile, script-friendly):
-- `0` — bozza compilabile, nessun `ERROR` (eventuali WARN/INFO nel report);
-- `1` — prodotti `ERROR`: la bozza NON è compilabile → va corretta (è il segnale
+- `0`: bozza compilabile, nessun `ERROR` (eventuali WARN/INFO nel report);
+- `1`: prodotti `ERROR`: la bozza NON è compilabile → va corretta (è il segnale
   di "human-in-the-loop", non un crash);
-- `2` — errore d'uso/IO (file mancante, markdown illeggibile).
+- `2`: errore d'uso/IO (file mancante, markdown illeggibile).
 
 **Schema del record conflitto** (una voce del `--json-report`):
 ```json

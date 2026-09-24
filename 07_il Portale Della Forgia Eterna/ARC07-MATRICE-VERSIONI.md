@@ -26,7 +26,16 @@
 
 ## Tabella storica delle generazioni (record di provenienza)
 
-> **Legenda stato**: **MASTER** = era la versione viva *prima* del consolidamento
+> 🔴 **Questa colonna ha ingannato uno strumento, il 2026-09-17.** Diceva
+> **MASTER** al presente su righe che la legenda dichiara storiche, e il
+> censimento del Bestiario l'ha letta alla lettera: otto file di `_ARCHIVIO/`
+> sono stati eletti «master vivi» e otto voci del Bestiario hanno puntato a
+> **generazioni superate** invece che al master DEF che si apre al tavolo. Da
+> oggi ogni riga porta *(fino al consolidamento)* **nella cella**, non solo
+> nella legenda: una nota che il lettore umano capisce e il parser no non e'
+> una dichiarazione, e' un'ambiguita'.
+>
+> **Legenda stato**: **MASTER** *(fino al consolidamento)* = era la versione viva *prima* del consolidamento
 > · *ricalibrazione* · *annesso* · ~~DEPRECATO~~ · CANONE = fatti giocati. Oggi
 > la versione viva è il **master DEF** corrispondente (tabella sopra); le righe
 > «MASTER» qui sotto sono **storiche**.
@@ -35,25 +44,25 @@
 
 | Parte | File | Ruolo | Stato |
 |---|---|---|---|
-| **P1** — Stanza della Corona | `PortaleForgia-P1-REVISED-Corretta.md` | unica versione | **MASTER** |
-| **P2** — Sala della Forgia | `PortaleForgia-P2-REVISED-Corretta-PARTE1.md` + `-PARTE2.md` | unica versione (2 parti) | **MASTER** |
-| **P3** — Piano del Fuoco | `PortaleForgia-P3-PianoFuoco-PARTE1.md` + `-PARTE2.md` | base | **MASTER** (ricalibrato ↓) |
+| **P1** — Stanza della Corona | `PortaleForgia-P1-REVISED-Corretta.md` | unica versione | **MASTER** *(fino al consolidamento)* |
+| **P2** — Sala della Forgia | `PortaleForgia-P2-REVISED-Corretta-PARTE1.md` + `-PARTE2.md` | unica versione (2 parti) | **MASTER** *(fino al consolidamento)* |
+| **P3** — Piano del Fuoco | `PortaleForgia-P3-PianoFuoco-PARTE1.md` + `-PARTE2.md` | base | **MASTER** *(fino al consolidamento)* (ricalibrato ↓) |
 | P3 — ricalibrazione scontri | `RicalibrazioneScontriPianoDelFuoco.md` | scontri ribilanciati Lv13 | *ricalibrazione* |
 | P3 — ricalibrazione finale | `La_Piramide_Ricalibrata.md` | finale P3 (Piramide) ribilanciato | *ricalibrazione* |
 | Interludio P3→P4 | `_ARCHIVIO/PortaleForgia-Interludio-Terra.md` | ponte narrativo | *annesso* |
-| **P4** — Piano della Terra | `_ARCHIVIO/PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md` | **cornice narrativa/scene** | **MASTER narrativo** (DM 2026-07-03) |
-| P4 — combat/boss | `_ARCHIVIO/PortaleForgia-P4-PianoTerra-RICALIBRATO.md` + `_ARCHIVIO/Terros.md` | **statblock potenziati (Hard)** | **MASTER di combattimento** — power-up VOLUTO (D8: artefatti unici) |
-| **Viaggio di Hella** (P4↔P3B) | `PortaleForgia-P4-PianoTerra-P3B-HELLA-...-MONDO-v2.md` | viaggio dello spirito, v2 | **MASTER del viaggio** (fonte del file risultati) |
+| **P4** — Piano della Terra | `_ARCHIVIO/PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md` | **cornice narrativa/scene** | **MASTER narrativo** *(fino al consolidamento)* (DM 2026-07-03) |
+| P4 — combat/boss | `_ARCHIVIO/PortaleForgia-P4-PianoTerra-RICALIBRATO.md` + `_ARCHIVIO/Terros.md` | **statblock potenziati (Hard)** | **MASTER di combattimento** *(fino al consolidamento)* — power-up VOLUTO (D8: artefatti unici) |
+| **Viaggio di Hella** (P4↔P3B) | `PortaleForgia-P4-PianoTerra-P3B-HELLA-...-MONDO-v2.md` | viaggio dello spirito, v2 | **MASTER del viaggio** *(fino al consolidamento)* (fonte del file risultati) |
 | Viaggio di Hella — v1 | `PortaleForgia-P4-PianoTerra-P3B-HELLA-...-MONDO.md` | viaggio dello spirito, v1 | ~~DEPRECATO~~ (sostituito da v2) |
 | Viaggio di Hella — risultati | `PortaleForgia-P4-PianoTerra-P3B-HELLA-...-MONDO-risultati.md` | esiti giocati | **CANONE** (D12) |
 | Viaggio di Hella — appunti | `PortaleForgia-P4-pianoTerra-P3b-Hella-...-risultati.md` (minuscolo) | appunti grezzi DM | ~~DEPRECATO~~ (A7) |
-| **P3B** — Resurrezione Hella | `_ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` | rituale completo | **MASTER** (eletto in B2, integra il viaggio giocato) |
+| **P3B** — Resurrezione Hella | `_ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md` | rituale completo | **MASTER** *(fino al consolidamento)* (eletto in B2, integra il viaggio giocato) |
 | P3B — merge breve | `_ARCHIVIO/PortaleForgia-P3B-ResurrezioneHella-RICALIBRATO-alternative.md` | merge sintetico | ~~DEPRECATO~~ (B2) |
-| **P5** — Viaggio 1.000 anni | `_ARCHIVIO/PortaleForgia-P5-DEFINITIVO-PARTE1.md` + `-PARTE2.md` | atto completo | **MASTER lungo** (fonte per il fast-play B3) |
+| **P5** — Viaggio 1.000 anni | `_ARCHIVIO/PortaleForgia-P5-DEFINITIVO-PARTE1.md` + `_ARCHIVIO/PortaleForgia-P5-DEFINITIVO-PARTE2.md` | atto completo | **MASTER lungo** *(fino al consolidamento)* (fonte per il fast-play B3) |
 | P5 — versione precedente | `_ARCHIVIO/PortaleForgia-FINAL-P5.md` | prima stesura completa | ~~DEPRECATO~~ (superato da DEFINITIVO) |
 | P5 — sintesi | `_ARCHIVIO/PortaleForgia-P5-RICALIBRATO.md` | sintesi "God Mode" | *ricalibrazione/sintesi* → base tono per B3 |
-| P5 — fast-play | `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md` | formato veloce D1 | **MASTER da tavolo** (creato in B3) |
-| **P6** — Integrazione | `_ARCHIVIO/PortaleForgia-P6-INTEGRAZIONE-Completa.md` | battaglia antica (viva) + finale 1372 (superato) | **MASTER parziale** (sezione 1372 deprecata in A3) |
+| P5 — fast-play | `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md` | formato veloce D1 | **MASTER da tavolo** *(fino al consolidamento)* (creato in B3) |
+| **P6** — Integrazione | `_ARCHIVIO/PortaleForgia-P6-INTEGRAZIONE-Completa.md` | battaglia antica (viva) + finale 1372 (superato) | **MASTER parziale** *(fino al consolidamento)* (sezione 1372 deprecata in A3) |
 | Boss Fauci — correzione | `CORREZIONE-Boss-Fauci.md` | statblock Fauci, doppio profilo GS15/GS12 | *ricalibrazione* (doppio profilo → A3/B5) |
 
 ## Note di elezione

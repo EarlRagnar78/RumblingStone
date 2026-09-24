@@ -19,6 +19,9 @@
 
 ---
 
+![Vidalia Roncetti](ALLEGATI/immagini/web/png-roncetti.jpg)
+![Nonna Grasa](ALLEGATI/immagini/web/png-nonna-grasa.jpg)
+
 ## §1 · Il foglio del cast
 
 **Legenda**: ✦ compare in tutte e tre le serate · ◆ una volta sola · ⚔ statblocco in

@@ -40,7 +40,7 @@
 La pipeline mappe del repo (censita in `MAPPE-CENSIMENTO.md`) è:
 
 1. **Master**: griglie emoji in fenced code block dentro i file Markdown
-   (`*Ultra-Clear*.md`, `*MAPPE*.md`, …) — leggibili, diffabili, usabili al
+   (`*Ultra-Clear*.md`, `*MAPPE*.md`, …): leggibili, diffabili, usabili al
    tavolo.
 2. **Renderer**: `scripts/render_map_svg.py` (Python puro, zero dipendenze)
    → SVG con palette piatta, griglia 1,5 m/quadretto, coordinate, legenda,
@@ -53,7 +53,7 @@ disegnate a mano, ombre, profondità) è quindi **tutto nel renderer e negli
 asset grafici**, non nel formato dati: le griglie contengono già terreno,
 strutture, unità e pericoli cella per cella. Qualsiasi soluzione che
 sostituisse il formato master romperebbe censimento, validazione
-(`validate_maps.py`), companion T3 e diffabilità — ed è da scartare a priori.
+(`validate_maps.py`), companion T3 e diffabilità, ed è da scartare a priori.
 
 ---
 
@@ -72,11 +72,11 @@ sostituisse il formato master romperebbe censimento, validazione
 | [Dungeon Scrawl](https://www.dungeonscrawl.com/) | Gratuito ma **closed** (ora Roll20) | Battle map stile inchiostro/hatching di alta qualità; importa il JSON di Watabou | ⭐⭐⭐⭐⭐ | Bassa per automazione (solo GUI) — buon passo manuale opzionale |
 
 Convertitori esistenti del JSON di One Page Dungeon (dimostrano che il formato
-è stabile e facilmente parsabile — utili come riferimento):
+è stabile e facilmente parsabile, utili come riferimento):
 
-- [TarkanAl-Kazily/one-page-parser](https://github.com/TarkanAl-Kazily/one-page-parser) — modulo FoundryVTT che costruisce scene dal JSON+PNG di Watabou.
-- [Dungeondraft Watabou Integration (GitLab)](https://gitlab.com/gull-rock-maps/dungeondraft-watabou-integration) — JSON Watabou → file mappa DungeonDraft.
-- [Import Watabou One Page Dungeon (CartographyAssets)](https://cartographyassets.com/assets/52353/import-watabou-one-page-dungeon/) — idem, tool free.
+- [TarkanAl-Kazily/one-page-parser](https://github.com/TarkanAl-Kazily/one-page-parser): modulo FoundryVTT che costruisce scene dal JSON+PNG di Watabou.
+- [Dungeondraft Watabou Integration (GitLab)](https://gitlab.com/gull-rock-maps/dungeondraft-watabou-integration): JSON Watabou → file mappa DungeonDraft.
+- [Import Watabou One Page Dungeon (CartographyAssets)](https://cartographyassets.com/assets/52353/import-watabou-one-page-dungeon/): idem, tool free.
 
 ### 2.2 Asset grafici con licenza compatibile (per alzare la qualità del renderer)
 
@@ -93,7 +93,7 @@ Convertitori esistenti del JSON di One Page Dungeon (dimostrano che il formato
   una pipeline rigenerabile da repo.
 - **Generatori AI di battle map** (tt-rpg.app e simili): output non
   deterministico, non rigenerabile, licenze d'uso incerte, nessuna coerenza
-  con la griglia tattica 1,5 m — incompatibili con la regola "il Markdown è
+  con la griglia tattica 1,5 m, incompatibili con la regola "il Markdown è
   il master".
 - **Sostituire il formato master** con qualunque formato proprietario:
   romperebbe censimento T5, validazione CI e companion T3.
@@ -103,7 +103,7 @@ Convertitori esistenti del JSON di One Page Dungeon (dimostrano che il formato
 ## 3. Raccomandazione
 
 Nessun progetto esterno, da solo, produce battle map RHoD-quality *a partire
-dalle griglie emoji esistenti* — quel pezzo non esiste su GitHub e va fatto in
+dalle griglie emoji esistenti*: quel pezzo non esiste su GitHub e va fatto in
 casa. La combinazione più efficace è **ibrida, in 3 fasi indipendenti**
 (ordinate per rapporto qualità/sforzo):
 
@@ -135,10 +135,10 @@ nascono con layout professionale ma restano nel toolchain del repo
 ### Fase 3 — Mappe di scala superiore (overland e città)
 
 - **Azgaar Fantasy-Map-Generator** (MIT) per la mappa regionale del
-  Cannath Vale / Dalelands — file `.map` committato come master +
+  Cannath Vale / Dalelands: file `.map` committato come master +
   export SVG/PNG in `rendered/`;
 - **Medieval Fantasy City Generator** (Watabou, sorgente `TownGeneratorOS`)
-  per Rethmar e le location urbane (Palio P2D) — export SVG committato con
+  per Rethmar e le location urbane (Palio P2D): export SVG committato con
   seed annotato per la rigenerazione.
 
 ### Rischi / attenzioni

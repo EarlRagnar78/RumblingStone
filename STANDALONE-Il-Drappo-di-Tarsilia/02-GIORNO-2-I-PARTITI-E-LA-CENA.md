@@ -193,6 +193,8 @@ che passa in mezzo alle tavole perché è tradizione che passi.
 
 ---
 
+![La Cena della vigilia](ALLEGATI/immagini/web/tavola-la-cena.jpg)
+
 ## §5 · L'uomo con la fascia grigia
 
 **Beat di Nocca.** Da giocare quando il giocatore di Nocca si allontana dalla Cena,
@@ -219,7 +221,11 @@ nessuno. L'unica variabile è se l'Istrice lo sanno prima.
 
 ---
 
-## §6 · Notte — l'assalto alle stalle
+![Le stalle, dopo mezzanotte](ALLEGATI/immagini/web/tavola-le-stalle.jpg)
+
+## §6
+
+![Le stalle dopo mezzanotte](ALLEGATI/immagini/web/tavola-le-stalle.jpg) · Notte — l'assalto alle stalle
 
 **Quando**: dopo mezzanotte, quando la Cena è finita e in giro c'è solo chi è di
 guardia. Mappa: `ALLEGATI/mappe/` → *le stalle dell'Istrice*, 21 × 15 quadretti, 1,5 m
@@ -262,7 +268,7 @@ veleno da contatto)*
   (B9). Il rumore è l'operazione: lui non ha nessuna intenzione di combattere.
 - **Round 2**: scende nel box del cavallo (H12) e applica la pasta. Serve **1 round
   intero** e il cavallo deve stare fermo: Addestrare Animali del cavallo... ovvero,
-  Sfregio tira **Cavalcare +9 come prova di destrezza per calmarlo, CD 15**. Se
+  Sfregio tira **Cavalcare +9 come prova di Destrezza per calmarlo, CD 15**. Se
   fallisce, il cavallo urla e sveglia tutto il vicolo.
 - **Round 3+**: se lo scoprono, **non ingaggia**. Lancia la fiaschetta d'olio nella
   paglia (fuoco, §sotto), va di soppiatto verso la finestra alta (O3) e prova a

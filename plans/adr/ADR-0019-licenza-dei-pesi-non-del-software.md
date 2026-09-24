@@ -1,10 +1,10 @@
-# ADR-0019 — Per le immagini generate, la licenza sta nei pesi e non nel software
+# ADR-0019 — Per le immagini generate, la licenza sta nei pesi (o nel contratto), non nel software
 
 **Stato**: accettata
 **Data**: 2026-08-15
-**Decisione-fonte**: domanda del DM del 2026-08-15 — *«c'è un tool per la
+**Decisione-fonte**: domanda del DM del 2026-08-15, *«c'è un tool per la
 generazione di immagini open source di qualità professionale che possa essere
-automatizzato?»* — e la verifica delle licenze che ne è seguita
+automatizzato?»*, e la verifica delle licenze che ne è seguita
 (`plans/RICERCA-TOOL-ESTERNI-DM-2026-08.md` §3-ter).
 
 ## Contesto
@@ -29,7 +29,7 @@ ComfyUI è GPL-3.0 e non pone limiti su ciò che produce. Ma i pesi:
   (use-based) che non toccano il materiale da gioco.
 
 Il rischio concreto: si generano dieci ritratti col modello più bello, si
-impaginano, e **un anno dopo** — quando il DM decide di pubblicare — bisogna
+impaginano, e **un anno dopo**, quando il DM decide di pubblicare, bisogna
 rifare tutto perché nessuno ha annotato con cosa erano stati fatti.
 
 ## Decisione
@@ -44,7 +44,7 @@ rifare tutto perché nessuno ha annotato con cosa erano stati fatti.
 
 La riga da tenere: **se un asset entra in un artefatto versionato, i suoi pesi
 devono permettere l'uso commerciale**, indipendentemente dal fatto che oggi il
-repo non venda niente. La decisione sul commerciale non è presa (ADR-0005) — e
+repo non venda niente. La decisione sul commerciale non è presa (ADR-0005), e
 proprio per questo non va **preclusa** da una scelta tecnica fatta oggi.
 
 ### 2. Ogni immagine generata porta la sua riga di provenienza
@@ -57,6 +57,34 @@ In `<cartella>/PROVENIENZA.txt`, una riga per file:
 
 Senza quella riga l'immagine **non si committa**. Non è burocrazia: è l'unica
 cosa che rende la scelta reversibile fra un anno.
+
+### 2-bis. Se l'immagine viene da un SERVIZIO, non da pesi locali
+
+Il §1 ragiona sui **pesi**, perché il caso previsto era ComfyUI in locale. Le venti
+immagini del Drappo sono arrivate invece da **Gemini**, e lì di pesi non ce ne sono:
+vale il **contratto di servizio**, che è una cosa diversa e cambia due volte.
+
+| | Pesi locali | Servizio |
+|---|---|---|
+| **Cosa governa** | la licenza dei pesi | i termini del servizio, che **cambiano nel tempo** |
+| **Riproducibilità** | seed → identica | **nessun seed esposto**: l'immagine è irripetibile |
+| **Provenienza** | la scrivi tu | **firmata C2PA** dal servizio, e verificabile |
+
+Le due regole che ne discendono, e che valgono da qui in avanti:
+
+1. **Con un servizio, il master È l'artefatto.** Senza seed non si rigenera: i PNG
+   originali vanno versionati e trattati come **sorgente**, non come output. È
+   l'unica eccezione consapevole ad ADR-0003 in tutto il repo.
+2. **I termini si rileggono prima di pubblicare, non una volta per sempre.** Al
+   2026-08-15 Google non rivendica la proprietà del generato e ne consente l'uso
+   commerciale nel rispetto delle policy, ma è una clausola contrattuale, non una
+   licenza perpetua come Apache o OFL, e nessuno garantisce che sia identica fra un
+   anno.
+
+⚠️ **E un fatto che non è una restrizione ma va saputo**: un'immagine puramente
+generata con ogni probabilità **non è tutelabile da copyright**. Si può usare e
+anche vendere; non si può impedire ad altri di riusarla. Per un modulo amatoriale
+non cambia niente; per un'edizione a pagamento è una cosa da sapere prima.
 
 ### 3. Le immagini di terzi restano sotto ADR-0005
 
@@ -79,13 +107,13 @@ segnaposto vettoriali esistenti restano validi come artefatto consegnabile.
   (FLUX.1 [dev]) per una ragione che oggi è ipotetica. **Accettato**: rifare dieci
   immagini costa più che accettare una resa leggermente inferiore adesso.
 - Da rivisitare: **quando esce una licenza nuova**, o se il DM decide
-  definitivamente per l'uso non commerciale — nel qual caso il §1 si allarga.
+  definitivamente per l'uso non commerciale, nel qual caso il §1 si allarga.
 
 ## Copertura
 
-- `skills/rumblingstone-art-direction/SKILL.md` §7 — il ciclo, con la provenienza
+- `skills/rumblingstone-art-direction/SKILL.md` §7: il ciclo, con la provenienza
   come ultimo passo
-- [`docs/guides/GUIDA-IMMAGINI.md`](../../docs/guides/GUIDA-IMMAGINI.md) §1 — la
+- [`docs/guides/GUIDA-IMMAGINI.md`](../../docs/guides/GUIDA-IMMAGINI.md) §1: la
   tabella dei generatori, con la colonna licenza
-- [ADR-0015](ADR-0015-standard-prompt-immagine.md) — cosa si può chiedere
-- [ADR-0005](ADR-0005-confini-ip-uso-non-commerciale.md) — il perimetro IP generale
+- [ADR-0015](ADR-0015-standard-prompt-immagine.md): cosa si può chiedere
+- [ADR-0005](ADR-0005-confini-ip-uso-non-commerciale.md): il perimetro IP generale

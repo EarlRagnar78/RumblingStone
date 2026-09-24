@@ -1,4 +1,4 @@
-# Ghaurush «Cenerevento» — il generale che voleva una valle
+# Ghaurush «Cenerevento» — il generale che voleva una valle [RIMANDO]
 
 > **[ACCEPTED — DM-canon]** Approvato dal DM il **2026-08-05**.
 > Statblock: `ghaurush-cenerevento-cr16.md` (GS 16, variante *Advanced* GS 17) e

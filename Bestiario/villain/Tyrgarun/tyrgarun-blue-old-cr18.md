@@ -1,6 +1,24 @@
 # Tyrgarun — Blue Old Dragon (Sky-Terror of Rethmar) [ACCEPTED — DM-canon 2026-07-02, D11 v2]
 **Faction**: red-hand | **Role**: aerial-hazard / grounded-boss | **Environment**: aerial | **CR**: 18 (aerial hazard) → **16–17** (grounded, Fase 4) | **Source**: MM p.71 Blue Dragon Old (SRD 3.5) | **Status**: accepted
 
+
+```statblocco
+gs: 18
+ca: 35
+ca-dettaglio: (-2 size, +27 natural)
+pf: 405
+pf-dado: 30d12+210
+ts: Temp +24, Rifl +19, Vol +22
+attributi: For 33 Des 10 Cos 25 Int 18 Sag 19 Car 18
+velocita: 12 m, scavare 6 m, volare 45 m (scarsa)
+iniziativa: +4
+fonte: valori approssimati nella prosa d'origine (scritti con «~»)
+```
+
+> [INFERRED — needs DM confirmation] correzione 3.5 da `scripts/conformita_statblocchi.py`: **D2, deciso dal DM il 2026-09-23: lotta +46 → +49**: BAB +30 + Enorme (+8) + For 33 (+11). La For 33 la confermano il morso +38 (2d8+11), gli artigli e le ali (+5, metà For), la coda e lo stritolamento (+16, For e mezzo): la lotta era il solo numero che non tornava.
+
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
+
 > **Nota rinomina (2026-07-02, D11 v2 / A7)**: file precedentemente
 > `tyrgarun-black-adult-cr13.md` (black adult, riserva). Corretto a **blue Old
 > CR 18** per allineamento a **state.md §2.2**, INDICE, ARMATE-SYNC §2.1 e
@@ -20,7 +38,7 @@ gioca come **pericolo ambientale con contromosse quantificate** (vedi STRUTTURA
 **Size/Type**: Huge dragon (earth) | **HD**: 30d12+210 (**~405 HP**)
 **AC**: 35 (-2 size, +27 natural), contatto 8, colto 35 | **Init**: +4
 **Speed**: 12 m, scavare 6 m, **volare 45 m (scarsa)**
-**Saves**: Fort +24, Ref +19, Will +22 | **BAB/Grapple**: +30/+46
+**Saves**: Fort +24, Ref +19, Will +22 | **BAB/Grapple**: +30/+49
 **Attack**: Morso +38 mischia (2d8+11)
 **Full**: Morso +38 (2d8+11), 2 artigli +36 (2d6+5), 2 ali +36 (1d8+5), coda +36 (2d6+16), stritolamento (Huge) 2d8+16
 **Abilities**: For 33, Des 10, Cos 25, Int 18, Sag 19, Car 18
@@ -54,4 +72,4 @@ quando scende sotto 80 pf, **non può fuggire** e va abbattuto.
 ---
 
 **Cross-ref**: state.md §2.2 · INDICE r.27/443 · ARMATE-SYNC §2.1/§4-Fase1 ·
-STRUTTURA §4/§5/§7/§9.4 · `Bestiario/villain/Azarr_Kul/Azarr_Kul.md` (Tyrgarun NON cavalcatura).
+STRUTTURA §4/§5/§7/§9.4 · `Bestiario/villain/Azarr_Kul/Azarr_Kul/Azarr_Kul.md` (Tyrgarun NON cavalcatura).

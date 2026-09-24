@@ -1,5 +1,20 @@
 # Warpriest di Tiamat (Cleric 7) [ACCEPTED — DM-canon 2026-05-05]
 **Faction**: red-hand | **Role**: divine-caster | **Environment**: any | **CR**: 7 | **Source**: PHB Cleric + FRCS Tiamat faith | **Status**: inferred
+
+```statblocco
+gs: 7
+ca: 20
+ca-dettaglio: (+7 full plate, +2 heavy shield, +1 Dex)
+pf: 44
+pf-dado: 7d8+14
+ts: Temp +7, Rifl +3, Vol +8
+attributi: For 14 Des 12 Cos 14 Int 10 Sag 17 Car 13
+velocita: 20 ft
+iniziativa: +1
+```
+
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
+
 **Size/Type**: Medium humanoid (hobgoblin usually) | **HD**: 7d8+14 (44 HP)
 **AC**: 20 (+7 full plate, +2 heavy shield, +1 Dex) | **Init**: +1 | **Speed**: 20 ft
 **Saves**: Fort +7, Ref +3, Will +8 | **BAB/Grapple**: +5/+7

@@ -1,8 +1,29 @@
 # Drow Trickster Arcano — «Dita di Ragnatela» (Ladro 3 / Mago 5 / Trickster Arcano 2) [ACCEPTED — DM-canon]
 **Faction**: drow-sonjak | **Role**: caster-subdolo/saboteur | **Environment**: underdark/urban | **CR**: 11 | **Source**: SRD drow + Ladro/Mago + CdP **Trickster Arcano** (SRD) | **Status**: accepted
 
+
+```statblocco
+gs: 11
+tipo: Medium humanoid (elf), NE
+ca: 19
+ca-dettaglio: (+4 Des, +4 *armatura magica*, +1 anello), contatto 15, colto alla sprovvista 15
+pf: 38
+pf-dado: 3d6+7d4+10
+ts: Temp +5, Rifl +11, Vol +8
+attributi: For 8 Des 18 Cos 12 Int 20 Sag 12 Car 14
+velocita: 9 m
+attacchi:
+  - Mischia stocco +5 (1d6)
+```
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «3d6», una parte sola dei dadi vita. I dadi vengono dalla formula che la scheda scrive, il bonus da Cos 12.
+
+> [INFERRED — needs DM confirmation] correzione 3.5 da `scripts/conformita_statblocchi.py`: **D4, deciso dal DM il 2026-09-23: BAB +5**, cioè Ladro 3 (+2), Mago 5 (+2), Trickster Arcano 2 (+1). Lotta +3 → **+4** (For 8, −1). Stocco +5 e balestra a mano +9 tornano già con +5.
+
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
+
 Medium humanoid (elf), NE. **DV 3d6 + 7d4**. **hp 38**. **CA 19** (+4 Des, +4 *armatura magica*, +1 anello), contatto 15, colto alla sprovvista 15. Iniziativa +4. Vel 9 m.
-**TS** Temp +5, Rifl +11, Vol +8 (+2 razziale vs incantesimi, +2 vs ammaliamenti). **BAB/Lotta** +4/+3. **RI 21**.
+**TS** Temp +5, Rifl +11, Vol +8 (+2 razziale vs incantesimi, +2 vs ammaliamenti). **BAB/Lotta** +5/+4. **RI 21**.
 **Mischia** stocco +5 (1d6). **Distanza** balestra a mano +9 (1d4 + **veleno drow**, Tempra CD 13 o incosciente 1 min/2d4 ore).
 **Attacco furtivo** +3d6.
 **Car** For 8, Des 18, Cos 12, Int 20, Sag 12, Car 14.

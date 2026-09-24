@@ -1,4 +1,8 @@
-# ondata-giganti-fanteria-cr15 [ACCEPTED — DM-canon 2026-05-05]
+# ondata-giganti-fanteria-cr15 [ACCEPTED — DM-canon 2026-05-05] [NON-CREATURA]
+
+> **Non è una creatura** (ADR-0033): è un **aggregato di combattimento di massa** (2 giganti del fuoco + 4 capitani hobgoblin): il suo «GS 15» è un EL, non il GS di una creatura. I numeri stanno nelle schede dei componenti.
+> Per questo non ha un blocco `statblocco` e non conta
+> nel debito di migrazione di ADR-0021.
 
 **Faction**: red-hand | **Role**: mass-combat-wave | **Environment**: plains,urban | **CR**: 15
 **Source**: AP RHoD + Fire Giant (CR 10) ×2 + Hobgoblin Captains (CR 8) ×4 → STATBLOCCHI-EPICI §9

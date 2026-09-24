@@ -802,10 +802,10 @@
 <text x="196" y="555" font-size="11" fill="#3b2e1e">7,5 m (5 quadretti)</text>
 <text x="46" y="584" font-size="12" font-weight="bold" fill="#3b2e1e" letter-spacing="2">LEGENDA</text>
 <path d="M120 580H718" stroke="#7a6a50" stroke-width="0.7" opacity="0.7"/>
-<rect x="46" y="590" width="19" height="15" fill="url(#t_grass)" stroke="#7a6a50" stroke-width="0.7"/>
-<text x="73" y="602" font-size="11" fill="#3b2e1e">🟩 — Pianura / area aperta</text>
-<rect x="46" y="612" width="19" height="15" fill="url(#t_struct)" stroke="#7a6a50" stroke-width="0.7"/>
-<text x="73" y="624" font-size="11" fill="#3b2e1e">⬛ — Struttura (tenda, edificio, dais)</text>
+<rect x="46" y="590" width="19" height="15" fill="url(#t_struct)" stroke="#7a6a50" stroke-width="0.7"/>
+<text x="73" y="602" font-size="11" fill="#3b2e1e">⬛ — Edificio / corpo di fabbrica (muratura piena: blocca vista e movimento)</text>
+<rect x="46" y="612" width="19" height="15" fill="url(#t_grass)" stroke="#7a6a50" stroke-width="0.7"/>
+<text x="73" y="624" font-size="11" fill="#3b2e1e">🟩 — Pianura / area aperta</text>
 <circle cx="55" cy="642" r="7.5" fill="url(#g_f4b400)" stroke="#241c10" stroke-width="1.2"/>
 <text x="73" y="646" font-size="11" fill="#3b2e1e">🟡 — Incantatore nemico</text>
 <text x="46" y="668" font-size="14">🌫</text>

@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>L'Abbazia della Rotta Sicura — One-shot D&amp;D 3.5</title>
+<style>
+  :root{--ink:#241c14;--soft:#5a4a36;--parch:#efe4c8;--hi:#f8f1dd;--rule:#a8926a;--acc:#7c2f2f;}
+  *{box-sizing:border-box}
+  body{margin:0;background:#2a2420;color:var(--ink);
+       font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;line-height:1.5}
+  .page{max-width:1180px;margin:0 auto;background:var(--parch);padding:36px 44px 60px;box-shadow:0 0 40px rgba(0,0,0,.5)}
+  h1{font-size:2.15rem;margin:0 0 2px;font-variant:small-caps;letter-spacing:.5px}
+  .sub{font-style:italic;color:var(--soft);margin:0 0 18px}
+  h2{font-variant:small-caps;letter-spacing:1px;font-size:1.4rem;border-bottom:2px solid var(--rule);
+     padding-bottom:4px;margin:40px 0 14px}
+  h3{font-size:1.08rem;margin:22px 0 6px;font-variant:small-caps;letter-spacing:.5px}
+  h4{margin:14px 0 4px;font-size:1rem;font-variant:small-caps}
+  p{margin:0 0 10px}
+  .meta{display:flex;flex-wrap:wrap;gap:8px 26px;font-size:.86rem;color:var(--soft);
+        border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:8px 0;margin-bottom:22px}
+  .meta b{color:var(--ink)}
+  figure{margin:0 0 26px}
+  figcaption{font-size:.82rem;color:var(--soft);font-style:italic;text-align:center;margin-top:6px}
+  svg{display:block;width:100%;height:auto;background:var(--hi);border:1px solid var(--rule)}
+  .cols{column-count:2;column-gap:30px;column-rule:1px solid var(--rule)}
+  @media(max-width:820px){.cols{column-count:1}.page{padding:20px}}
+  .entry{break-inside:avoid;margin-bottom:16px}
+  .entry h4 .n{display:inline-block;background:var(--ink);color:var(--hi);width:22px;height:22px;
+     border-radius:50%;text-align:center;line-height:22px;font-size:.78rem;font-family:sans-serif;
+     margin-right:6px;vertical-align:1px}
+  .ra{border-left:3px solid var(--acc);background:rgba(124,47,47,.06);padding:8px 12px;font-style:italic;
+      font-size:.92rem;margin:0 0 8px}
+  .mech{font-size:.88rem;background:rgba(0,0,0,.04);border:1px dashed var(--rule);padding:7px 10px;margin:8px 0 0}
+  .mech b{font-variant:small-caps}
+  .sb{border:1px solid var(--ink);border-left:5px solid var(--acc);background:rgba(0,0,0,.03);
+      padding:9px 12px;margin:0 0 14px;font-size:.86rem;break-inside:avoid}
+  .sb .nm{font-variant:small-caps;font-weight:700;font-size:1rem;letter-spacing:.4px;display:block;margin-bottom:3px}
+  table{width:100%;border-collapse:collapse;font-size:.87rem;margin:8px 0 18px}
+  th,td{border:1px solid var(--rule);padding:6px 8px;text-align:left;vertical-align:top}
+  th{background:rgba(0,0,0,.07);font-variant:small-caps;letter-spacing:.5px}
+  tbody tr:nth-child(even){background:rgba(0,0,0,.025)}
+  .adr{border:1px solid var(--rule);border-left:5px solid var(--soft);padding:10px 14px;margin:0 0 12px;
+       font-size:.9rem;break-inside:avoid}
+  .warn{border:1px solid var(--acc);background:rgba(124,47,47,.07);padding:10px 14px;margin:0 0 16px;font-size:.92rem}
+  ul{margin:0 0 10px;padding-left:20px}li{margin-bottom:3px}
+  @media print{body{background:#fff}.page{box-shadow:none;max-width:none;padding:0}
+    figure,.entry,.adr,table,.sb{break-inside:avoid}svg{border:1px solid #999}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <pattern id="g0" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="translate(50,60)">
+    <rect width="30" height="30" fill="#f7f1de"/><path d="M30 0 V30 H0" fill="none" stroke="#cbbb95" stroke-width=".9"/></pattern>
+  <pattern id="g0o" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="translate(50,60)">
+    <rect width="30" height="30" fill="#e9dec2"/><path d="M30 0 V30 H0" fill="none" stroke="#c2b088" stroke-width=".9"/></pattern>
+  <pattern id="g1" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="translate(50,50)">
+    <rect width="30" height="30" fill="#ece3cd"/><path d="M30 0 V30 H0" fill="none" stroke="#c0ae87" stroke-width=".9"/></pattern>
+  <pattern id="sea" width="26" height="18" patternUnits="userSpaceOnUse">
+    <rect width="26" height="18" fill="#8fb3c9"/>
+    <path d="M0 12 q6.5 -6 13 0 t13 0" fill="none" stroke="#6d97b1" stroke-width="1.6"/>
+    <path d="M0 4 q6.5 -5 13 0 t13 0" fill="none" stroke="#a5c4d6" stroke-width="1.3"/></pattern>
+  <pattern id="rock" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+    <rect width="14" height="14" fill="#d6c6a2"/><path d="M0 0 V14" stroke="#b9a67e" stroke-width="1.4"/></pattern>
+  <pattern id="strp" width="10" height="10" patternUnits="userSpaceOnUse">
+    <rect width="10" height="5" fill="#f4f0e6"/><rect y="5" width="10" height="5" fill="#3a352e"/></pattern>
+  <pattern id="wat" width="20" height="14" patternUnits="userSpaceOnUse">
+    <rect width="20" height="14" fill="#b9d3e0"/>
+    <path d="M0 9 q5 -5 10 0 t10 0" fill="none" stroke="#86aec3" stroke-width="1.4"/></pattern>
+  <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+    <path d="M0 0 L9 4.5 L0 9 z" fill="#241c14"/></marker>
+  <g id="bg"><circle r="13" fill="#241c14"/></g>
+</defs></svg>
+
+<div class="page">
+
+<h1>L'Abbazia della Rotta Sicura</h1>
+<p class="sub">One-shot investigativa e d'incursione per D&amp;D 3.5 — Vènere Bassa, il promontorio e ciò che vi si fa di notte</p>
+
+<div class="meta">
+  <span><b>Sistema:</b> D&amp;D 3.5 (it)</span>
+  <span><b>Party:</b> 4 PG di 7°–8° — guerriero, mago, ladro, chierico</span>
+  <span><b>EL:</b> 6–11</span>
+  <span><b>Durata:</b> una sessione lunga (7–8 h) o due sedute</span>
+  <span><b>Aree:</b> 29 su quattro livelli + borgo</span>
+  <span><b>Tono:</b> orrore gotico costiero, indagine, incursione</span>
+</div>
+
+<div class="warn">
+<b>Nota di tono — leggila prima di portare questo al tavolo.</b><br>
+La premessa riguarda un culto che uccide ragazzi e bambini. Il documento è costruito su una regola precisa:
+<b>le vittime bambine non compaiono mai in scena.</b> Il loro destino arriva solo tramite prove documentali
+(un registro, un inventario, un paio di scarpe), la testimonianza di un fantasma e il coro dei sommersi —
+che non ha volto, non parla e non si combatte. I prigionieri vivi, salvabili, sono giovani adulti
+(17–24 anni) e un'ancella anziana. Non è pudore: l'implicazione regge la tensione per tutta la sessione,
+la descrizione esplicita la spegne in dieci minuti e mette a disagio metà tavolo. Se un giocatore chiede
+apertamente il dettaglio, la risposta di gioco corretta è il registro, non la scena.
+</div>
+
+<!-- ================= LA VERITÀ ================= -->
+<h2>La verità</h2>
+<p>L'Abbazia della Rotta Sicura sorge sul promontorio sopra Vènere Bassa, borgo di pescatori di circa
+trecento anime. È dedicata al <b>Nocchiero</b>, divinità del mare benevola verso i naviganti, e da nove
+anni la dirige <b>Padre Anselmo Grifo</b>. L'abbazia raccoglie le <b>Ancelle della Rotta</b>: figli e figlie
+che le famiglie del borgo affidano al santuario perché siano consacrati al dio, con l'onore e il sollievo
+economico che ne derivano. Nessuna Ancella è mai tornata a casa. Le famiglie ricevono lettere.
+Le lettere le scrive l'abate.</p>
+
+<p>Sotto la copertura ci sono tre cose intrecciate:</p>
+<ul>
+<li><b>Padre Anselmo è un vampiro.</b> Lo è da sette anni. La chiesa resta chiusa di giorno perché lui non
+può attraversarla; le funzioni pubbliche sono al tramonto, e questo al borgo sembra soltanto una devozione
+austera. Serve la <b>Signora del Frangente</b>, entità marina divorante, ma il suo culto personale è
+sopravvivenza: gli serve sangue e gli serve che nessuno guardi.</li>
+<li><b>Le Tre Sorelle del Frangente</b> — un concilio di megere che vive nella grotta sotto il promontorio —
+officiano il rito vero. Ogni luna nuova un'Ancella viene gettata dalla scogliera durante l'alta marea.
+Le Sorelle in cambio garantiscono all'abate mare calmo per gli approdi, presagi e la protezione che lo tiene
+nascosto. Sono loro il partner più antico e più pericoloso.</li>
+<li><b>I corsari della <i>Zanna di Bruma</i></b>, capitanati da <b>Ghebro Malaluna</b>, comprano ogni mese le
+Ancelle che non servono al rito e le rivendono lungo la costa. Pagano in oro, argento e pietre. È da qui che
+arriva la ricchezza incongrua dell'abbazia.</li>
+</ul>
+
+<p>Il sistema regge da nove anni per una ragione sola: <b>le tre parti si tengono in ostaggio a vicenda</b>.
+L'abate teme le megere, le megere disprezzano i corsari, i corsari non sanno cosa sia davvero l'abate.
+I PG che capiscono questo possono vincere senza combatterli tutti e tre — ed è il modo previsto.</p>
+
+<h3>Perché adesso</h3>
+<p>Tre settimane fa <b>Madre Ilaria Sonda</b>, la vecchia responsabile delle Ancelle, ha capito e ha tentato
+di far fuggire due ragazzi. È morta sulla scogliera. Il suo cadavere è quello che il mare ha restituito.
+Da allora il sigillo di silenzio delle Sorelle si è incrinato: <b>di notte, dal promontorio, si sentono
+lamenti</b>, e il vento li porta esattamente su un punto del borgo — il mulino dei Cassola.</p>
+
+<!-- ================= TAVOLA I ================= -->
+<h2>Tavola I — Vènere Bassa e il promontorio</h2>
+<figure>
+<svg viewBox="0 0 760 470" role="img" aria-label="Mappa del borgo di Venere Bassa">
+  <rect width="760" height="470" fill="#e9dec2"/>
+  <path d="M0,330 Q140,300 250,335 Q380,375 520,350 Q640,330 760,362 L760,470 L0,470 Z" fill="url(#sea)"/>
+  <path d="M0,330 Q140,300 250,335 Q380,375 520,350 Q640,330 760,362" fill="none" stroke="#fff" stroke-width="2.5" opacity=".6"/>
+
+  <path d="M470,300 L500,180 L560,110 L660,80 L740,120 L760,220 L760,340 L640,330 L520,350 Z"
+        fill="url(#rock)" stroke="#7a6644" stroke-width="3"/>
+  <path d="M30,300 L60,240 L120,215 L190,240 L215,320 Q140,300 30,330 Z" fill="url(#rock)" stroke="#7a6644" stroke-width="2.5"/>
+
+  <g stroke="#241c14" stroke-width="3" fill="#f4f0e6">
+    <rect x="614" y="118" width="76" height="46"/>
+    <rect x="690" y="112" width="26" height="52"/>
+  </g>
+  <g fill="#3a352e"><rect x="614" y="126" width="76" height="6"/><rect x="614" y="140" width="76" height="6"/>
+    <rect x="690" y="120" width="26" height="6"/><rect x="690" y="134" width="26" height="6"/></g>
+  <path d="M690,112 L703,94 L716,112 Z" fill="#6b4a2e" stroke="#241c14" stroke-width="2.5"/>
+  <text x="652" y="86" font-size="12" font-family="sans-serif" font-weight="700" text-anchor="middle">ABBAZIA</text>
+
+  <path d="M600,168 L520,262 L470,300" fill="none" stroke="#8b7a5a" stroke-width="12"/>
+  <path d="M600,168 L520,262 L470,300" fill="none" stroke="#241c14" stroke-width="2" stroke-dasharray="7 6"/>
+  <text x="556" y="248" font-size="10.5" font-family="sans-serif" font-style="italic" transform="rotate(-40 556 248)">140 gradini</text>
+
+  <g stroke="#241c14" stroke-width="2.5">
+    <rect x="300" y="248" width="70" height="44" fill="#e2cfae"/>
+    <rect x="176" y="196" width="48" height="48" fill="#e2cfae"/>
+    <rect x="392" y="262" width="46" height="36" fill="#e2cfae"/>
+    <rect x="248" y="300" width="54" height="30" fill="#e2cfae"/>
+    <rect x="352" y="196" width="40" height="34" fill="#e2cfae"/>
+    <rect x="240" y="200" width="42" height="34" fill="#e2cfae"/>
+  </g>
+  <g fill="#8b5a3c" stroke="#241c14" stroke-width="2">
+    <path d="M300,248 L335,224 L370,248 Z"/><path d="M392,262 L415,244 L438,262 Z"/>
+    <path d="M352,196 L372,180 L392,196 Z"/><path d="M240,200 L261,184 L282,200 Z"/>
+  </g>
+
+  <g transform="translate(200,220)">
+    <circle r="30" fill="none" stroke="#241c14" stroke-width="2.5"/>
+    <g stroke="#241c14" stroke-width="4">
+      <path d="M0,0 L28,-11"/><path d="M0,0 L11,28"/><path d="M0,0 L-28,11"/><path d="M0,0 L-11,-28"/>
+    </g>
+  </g>
+  <path d="M500,180 Q380,168 250,196" fill="none" stroke="#6d97b1" stroke-width="2.5" stroke-dasharray="10 7" marker-end="url(#ar)"/>
+  <text x="372" y="158" font-size="10.5" font-family="sans-serif" font-style="italic" fill="#3f6f8c" text-anchor="middle">
+    il vento porta i lamenti dal promontorio al mulino</text>
+
+  <g stroke="#241c14" stroke-width="3">
+    <rect x="286" y="336" width="112" height="14" fill="#c9a87a"/>
+    <path d="M310,350 V366 M356,350 V366 M386,350 V366"/>
+  </g>
+  <ellipse cx="430" cy="372" rx="24" ry="9" fill="#c9a87a" stroke="#241c14" stroke-width="2"/>
+  <ellipse cx="252" cy="368" rx="22" ry="8" fill="#c9a87a" stroke="#241c14" stroke-width="2"/>
+
+  <path d="M496,296 l-9,7 l3,10 l10,-2 l4,-11 z" fill="#7c2f2f" stroke="#241c14" stroke-width="2"/>
+
+  <g font-family="sans-serif" font-size="14" font-weight="700" fill="#f2e8d0" text-anchor="middle">
+    <use href="#bg" x="335" y="270"/><text x="335" y="275">1</text>
+    <use href="#bg" x="200" y="220"/><text x="200" y="225">2</text>
+    <use href="#bg" x="415" y="280"/><text x="415" y="285">3</text>
+    <use href="#bg" x="342" y="343"/><text x="342" y="348">4</text>
+    <use href="#bg" x="275" y="315"/><text x="275" y="320">5</text>
+    <use href="#bg" x="372" y="213"/><text x="372" y="218">6</text>
+    <use href="#bg" x="530" y="252"/><text x="530" y="257">7</text>
+    <use href="#bg" x="496" y="278"/><text x="496" y="283">8</text>
+  </g>
+
+  <g font-family="sans-serif" font-size="10.5" fill="#5a4a36">
+    <text x="335" y="308">1 · Osteria La Gomena Rotta</text>
+    <text x="140" y="272">2 · Mulino Cassola</text>
+    <text x="392" y="316">3 · Corpo di Guardia</text>
+    <text x="300" y="392">4 · Molo e barche</text>
+    <text x="200" y="342">5 · Pozzo e piazza</text>
+    <text x="336" y="176">6 · Cappella del borgo (aperta)</text>
+    <text x="560" y="292">7 · Scalinata</text>
+    <text x="470" y="264" fill="#7c2f2f">8 · Cadavere</text>
+  </g>
+  <g transform="translate(56,60)">
+    <circle r="22" fill="#f7f1de" stroke="#241c14" stroke-width="2"/>
+    <path d="M0,-18 L5,0 L0,18 L-5,0 Z" fill="#241c14"/>
+    <text y="-26" font-size="10" text-anchor="middle" font-weight="700" font-family="sans-serif">N</text>
+  </g>
+  <text x="740" y="452" font-size="10" font-family="sans-serif" font-style="italic" text-anchor="end" fill="#3f6f8c">
+    mappa d'ambiente — non in scala di combattimento</text>
+</svg>
+<figcaption>Tavola I — Il borgo ai piedi del promontorio. La linea tratteggiata è il corridoio del vento: è l'indizio d'apertura.</figcaption>
+</figure>
+
+<!-- ================= TAVOLA II ================= -->
+<h2>Tavola II — Abbazia, livello 0 (chiesa e canonica)</h2>
+<figure>
+<svg viewBox="0 0 820 700" role="img" aria-label="Pianta del livello terra dell'abbazia">
+  <path fill="url(#sea)" fill-rule="evenodd" d="M0,0 H820 V700 H0 Z
+     M20,640 L18,470 L26,330 L34,200 L120,86 L300,26 L520,20 L640,60 L706,150 L730,300 L716,470 L742,640 L742,700 L20,700 Z"/>
+  <path fill="url(#rock)" stroke="#7a6644" stroke-width="3"
+     d="M20,640 L18,470 L26,330 L34,200 L120,86 L300,26 L520,20 L640,60 L706,150 L730,300 L716,470 L742,640 L742,700 L20,700 Z"/>
+
+  <path d="M380,120 A90,90 0 0 1 560,120 Z" fill="url(#g0)"/>
+  <rect x="380" y="120" width="180" height="120" fill="url(#g0)"/>
+  <rect x="560" y="120" width="120" height="90"  fill="url(#g0)"/>
+  <rect x="590" y="210" width="90"  height="90"  fill="url(#g0)"/>
+  <rect x="380" y="240" width="210" height="210" fill="url(#g0)"/>
+  <rect x="590" y="300" width="90"  height="180" fill="url(#g0o)"/>
+  <rect x="290" y="270" width="90"  height="180" fill="url(#g0)"/>
+  <rect x="410" y="450" width="150" height="60"  fill="url(#g0)"/>
+  <rect x="380" y="510" width="210" height="90"  fill="url(#g0o)"/>
+  <rect x="290" y="90"  width="90"  height="60"  fill="url(#g0)"/>
+  <rect x="290" y="150" width="90"  height="120" fill="url(#g0)"/>
+  <rect x="110" y="150" width="180" height="120" fill="url(#g0)"/>
+  <rect x="50"  y="150" width="60"  height="120" fill="url(#g0)"/>
+  <rect x="110" y="270" width="180" height="180" fill="url(#g0o)"/>
+  <rect x="50"  y="270" width="60"  height="120" fill="url(#g0)"/>
+  <rect x="50"  y="390" width="60"  height="60"  fill="url(#g0)"/>
+  <rect x="110" y="450" width="180" height="120" fill="url(#g0)"/>
+
+  <g fill="none" stroke="#241c14" stroke-width="6">
+    <path d="M380,120 A90,90 0 0 1 560,120"/>
+    <path d="M380,120 V240 M560,120 V210"/>
+    <rect x="560" y="120" width="120" height="90"/>
+    <rect x="590" y="210" width="90" height="90"/>
+    <path d="M380,240 H440 M500,240 H590 M380,240 V450 M590,240 V300"/>
+    <path d="M380,450 H410 M560,450 H590 M590,450 V480 M590,300 H680 M590,480 H680"/>
+    <rect x="290" y="270" width="90" height="180"/>
+    <path d="M410,450 V510 M560,450 V510 M410,510 H470 M500,510 H560"/>
+    <path d="M380,510 V600 M590,510 V600 M380,600 H450 M520,600 H590"/>
+    <rect x="290" y="90" width="90" height="60"/>
+    <path d="M290,150 V270 M380,150 V270 M290,270 H380"/>
+    <rect x="110" y="150" width="180" height="120"/>
+    <rect x="50" y="150" width="60" height="120"/>
+    <path d="M110,270 H290 M110,270 V450 M290,270 V450 M110,450 H290"/>
+    <rect x="50" y="270" width="60" height="120"/>
+    <rect x="50" y="390" width="60" height="60"/>
+    <rect x="110" y="450" width="180" height="120"/>
+  </g>
+
+  <g fill="#f7f1de">
+    <rect x="440" y="236" width="60" height="8"/><rect x="586" y="350" width="8" height="30"/>
+    <rect x="376" y="350" width="8" height="30"/><rect x="286" y="350" width="8" height="30"/>
+    <rect x="556" y="150" width="8" height="30"/><rect x="616" y="206" width="30" height="8"/>
+    <rect x="616" y="296" width="30" height="8"/><rect x="286" y="180" width="8" height="30"/>
+    <rect x="316" y="146" width="30" height="8"/><rect x="106" y="180" width="8" height="30"/>
+    <rect x="106" y="300" width="8" height="30"/><rect x="106" y="400" width="8" height="30"/>
+    <rect x="46" y="180" width="8" height="30"/>
+  </g>
+  <g fill="#e9dec2">
+    <rect x="470" y="506" width="30" height="8"/><rect x="470" y="446" width="30" height="8"/>
+    <rect x="170" y="266" width="30" height="8"/><rect x="170" y="446" width="30" height="8"/>
+  </g>
+
+  <g stroke="#241c14" stroke-width="2.4">
+    <circle cx="425" cy="300" r="12" fill="url(#strp)"/><circle cx="425" cy="360" r="12" fill="url(#strp)"/>
+    <circle cx="425" cy="420" r="12" fill="url(#strp)"/><circle cx="545" cy="300" r="12" fill="url(#strp)"/>
+    <circle cx="545" cy="360" r="12" fill="url(#strp)"/><circle cx="545" cy="420" r="12" fill="url(#strp)"/>
+  </g>
+  <g stroke="#241c14" stroke-width="2" fill="#cfc0a0">
+    <circle cx="128" cy="288" r="8"/><circle cx="200" cy="288" r="8"/><circle cx="272" cy="288" r="8"/>
+    <circle cx="128" cy="360" r="8"/><circle cx="272" cy="360" r="8"/>
+    <circle cx="128" cy="432" r="8"/><circle cx="200" cy="432" r="8"/><circle cx="272" cy="432" r="8"/>
+  </g>
+  <circle cx="200" cy="360" r="16" fill="#b9d3e0" stroke="#241c14" stroke-width="2.5"/>
+  <text x="200" y="392" font-size="9" text-anchor="middle" font-family="sans-serif" fill="#3f6f8c">pozzo</text>
+
+  <rect x="440" y="136" width="60" height="30" fill="#cfc0a0" stroke="#241c14" stroke-width="2.4"/>
+  <g fill="#c9b696" stroke="#7a6644" stroke-width="1.3">
+    <rect x="120" y="164" width="160" height="12"/><rect x="120" y="200" width="160" height="12"/>
+    <rect x="120" y="236" width="160" height="12"/>
+    <rect x="120" y="464" width="34" height="18"/><rect x="164" y="464" width="34" height="18"/>
+    <rect x="208" y="464" width="34" height="18"/><rect x="120" y="500" width="34" height="18"/>
+    <rect x="164" y="500" width="34" height="18"/><rect x="208" y="500" width="34" height="18"/>
+    <rect x="300" y="160" width="14" height="50"/><rect x="356" y="160" width="14" height="50"/>
+    <rect x="300" y="240" width="70" height="14"/>
+    <rect x="60" y="160" width="14" height="44"/><rect x="60" y="290" width="14" height="80"/>
+  </g>
+  <rect x="300" y="100" width="60" height="26" fill="#3a352e" stroke="#241c14" stroke-width="2.4"/>
+  <g stroke="#7c2f2f" stroke-width="3">
+    <path d="M292,104 L378,104"/><path d="M292,136 L378,136"/>
+  </g>
+  <text x="335" y="84" font-size="9" text-anchor="middle" font-family="sans-serif" fill="#7c2f2f" font-weight="700">finestre murate</text>
+
+  <g transform="translate(635,255)">
+    <circle r="26" fill="#e2d6b6" stroke="#241c14" stroke-width="2.4"/>
+    <g stroke="#241c14" stroke-width="1.5">
+      <path d="M0,0 L26,0"/><path d="M0,0 L18,18"/><path d="M0,0 L0,26"/><path d="M0,0 L-18,18"/>
+      <path d="M0,0 L-26,0"/><path d="M0,0 L-18,-18"/><path d="M0,0 L0,-26"/><path d="M0,0 L18,-18"/></g>
+  </g>
+  <g>
+    <rect x="304" y="310" width="52" height="100" fill="#dccfae" stroke="#241c14" stroke-width="2"/>
+    <g stroke="#241c14" stroke-width="1.4">
+      <path d="M304,326 H356"/><path d="M304,342 H356"/><path d="M304,358 H356"/>
+      <path d="M304,374 H356"/><path d="M304,390 H356"/></g>
+    <path d="M330,410 V432" stroke="#241c14" stroke-width="2.5" marker-end="url(#ar)"/>
+  </g>
+  <g transform="translate(330,296)">
+    <rect x="-9" y="-9" width="18" height="18" fill="#f7f1de" stroke="#7c2f2f" stroke-width="2" stroke-dasharray="4 3"/>
+    <text y="4" font-size="11" text-anchor="middle" font-weight="700" fill="#7c2f2f" font-family="sans-serif">S</text>
+  </g>
+  <g>
+    <rect x="58" y="398" width="44" height="44" fill="#dccfae" stroke="#241c14" stroke-width="2"/>
+    <g stroke="#241c14" stroke-width="1.4">
+      <path d="M58,410 H102"/><path d="M58,420 H102"/><path d="M58,430 H102"/></g>
+    <path d="M80,442 V462" stroke="#241c14" stroke-width="2.5" marker-end="url(#ar)"/>
+  </g>
+  <g fill="#241c14"><rect x="672" y="300" width="16" height="24"/><rect x="672" y="360" width="16" height="24"/>
+    <rect x="672" y="420" width="16" height="24"/></g>
+  <g>
+    <rect x="440" y="600" width="130" height="80" fill="url(#g0o)" stroke="#241c14" stroke-width="5"/>
+    <g stroke="#241c14" stroke-width="1.8">
+      <path d="M440,614 H570"/><path d="M440,628 H570"/><path d="M440,642 H570"/><path d="M440,656 H570"/></g>
+    <path d="M505,680 V694" stroke="#241c14" stroke-width="3" marker-end="url(#ar)"/>
+  </g>
+  <text x="584" y="656" font-size="10.5" font-family="sans-serif" font-style="italic">al borgo</text>
+
+  <g font-family="sans-serif" font-size="9.5" letter-spacing="1" fill="#5a4a36" text-anchor="middle">
+    <text x="470" y="70">ABSIDE</text><text x="470" y="214">PRESBITERIO</text><text x="620" y="176">SACRESTIA</text>
+    <text x="485" y="440">NAVATA</text><text x="635" y="466">LOGGIA</text><text x="335" y="288">CAPPELLA</text>
+    <text x="485" y="500">PORTICO</text><text x="485" y="590">SAGRATO</text><text x="200" y="332">CHIOSTRO</text>
+    <text x="200" y="146">REFETTORIO</text><text x="80" y="146">CUCINA</text><text x="335" y="266">STUDIO</text>
+    <text x="335" y="146">CELLA ABATE</text><text x="80" y="266">SCRIPTORIUM</text><text x="200" y="560">DORMITORIO ANCELLE</text>
+  </g>
+  <g font-family="sans-serif" font-size="13.5" font-weight="700" fill="#f2e8d0" text-anchor="middle">
+    <use href="#bg" x="485" y="556"/><text x="485" y="561">1</text>
+    <use href="#bg" x="440" y="480"/><text x="440" y="485">2</text>
+    <use href="#bg" x="485" y="330"/><text x="485" y="335">3</text>
+    <use href="#bg" x="470" y="196"/><text x="470" y="201">4</text>
+    <use href="#bg" x="470" y="58"/><text x="470" y="63">5</text>
+    <use href="#bg" x="655" y="152"/><text x="655" y="157">6</text>
+    <use href="#bg" x="608" y="228"/><text x="608" y="233">7</text>
+    <use href="#bg" x="612" y="440"/><text x="612" y="445">8</text>
+    <use href="#bg" x="330" y="432"/><text x="330" y="437">9</text>
+    <use href="#bg" x="248" y="330"/><text x="248" y="335">10</text>
+    <use href="#bg" x="200" y="186"/><text x="200" y="191">11</text>
+    <use href="#bg" x="80" y="186"/><text x="80" y="191">12</text>
+    <use href="#bg" x="200" y="520"/><text x="200" y="525">13</text>
+    <use href="#bg" x="335" y="222"/><text x="335" y="227">14</text>
+    <use href="#bg" x="335" y="118"/><text x="335" y="123">15</text>
+    <use href="#bg" x="80" y="330"/><text x="80" y="335">16</text>
+    <use href="#bg" x="80" y="372"/><text x="80" y="377">17</text>
+  </g>
+  <g transform="translate(770,80)">
+    <circle r="24" fill="#f7f1de" stroke="#241c14" stroke-width="2"/>
+    <path d="M0,-19 L5,0 L0,19 L-5,0 Z" fill="#241c14"/>
+    <text y="-28" font-size="10" text-anchor="middle" font-weight="700" font-family="sans-serif">N</text>
+  </g>
+  <g transform="translate(28,646)">
+    <rect x="-6" y="-16" width="144" height="44" fill="#f7f1de" stroke="#241c14" stroke-width="1.4"/>
+    <g stroke="#241c14" stroke-width="1.4">
+      <rect x="4" y="0" width="30" height="9" fill="#241c14"/><rect x="34" y="0" width="30" height="9" fill="#f7f1de"/>
+      <rect x="64" y="0" width="30" height="9" fill="#241c14"/><rect x="94" y="0" width="30" height="9" fill="#f7f1de"/></g>
+    <text x="4" y="23" font-size="9" font-family="sans-serif">0</text>
+    <text x="98" y="23" font-size="9" font-family="sans-serif">20 ft</text>
+    <text x="4" y="-4" font-size="8.5" font-family="sans-serif" font-style="italic">1 quadr. = 5 ft</text>
+  </g>
+</svg>
+<figcaption>Tavola II — La canonica (10–17) è la parte accessibile di giorno; la chiesa (1–9) resta chiusa. <b>S</b> = botola sotto la lastra tombale.</figcaption>
+</figure>
+
+<!-- ================= TAVOLA III ================= -->
+<h2>Tavola III — Livello −1: cripta e blocco delle celle</h2>
+<figure>
+<svg viewBox="0 0 760 620" role="img" aria-label="Pianta della cripta e delle celle">
+  <rect width="760" height="620" fill="url(#rock)"/>
+  <rect x="350" y="50"  width="120" height="120" fill="url(#g1)"/>
+  <rect x="290" y="170" width="240" height="240" fill="url(#g1)"/>
+  <rect x="230" y="230" width="60"  height="120" fill="url(#g1)"/>
+  <rect x="110" y="170" width="120" height="300" fill="url(#g1)"/>
+  <rect x="50"  y="170" width="60"  height="300" fill="#ddd2b6"/>
+  <rect x="110" y="470" width="120" height="90"  fill="url(#g1)"/>
+  <rect x="530" y="230" width="150" height="180" fill="url(#g1)"/>
+  <rect x="590" y="410" width="60"  height="120" fill="url(#g1)"/>
+
+  <g fill="none" stroke="#241c14" stroke-width="6">
+    <rect x="350" y="50" width="120" height="120"/>
+    <path d="M290,170 H380 M410,170 H530 M290,170 V290 M290,320 V410 M530,170 V290 M530,320 V410 M290,410 H530"/>
+    <path d="M230,230 H290 M230,350 H290 M230,230 V260 M230,290 V350"/>
+    <rect x="110" y="170" width="120" height="300"/>
+    <rect x="50" y="170" width="60" height="300"/>
+    <path d="M50,230 H110 M50,290 H110 M50,350 H110 M50,410 H110"/>
+    <rect x="110" y="470" width="120" height="90"/>
+    <rect x="530" y="230" width="150" height="180"/>
+    <path d="M590,410 V530 M650,410 V530 M590,530 H650"/>
+  </g>
+  <g fill="#ece3cd">
+    <rect x="380" y="166" width="30" height="8"/><rect x="286" y="290" width="8" height="30"/>
+    <rect x="226" y="290" width="8" height="30"/><rect x="526" y="290" width="8" height="30"/>
+    <rect x="140" y="466" width="30" height="8"/><rect x="600" y="406" width="30" height="8"/>
+  </g>
+  <g fill="#f7f1de" stroke="#241c14" stroke-width="2.5">
+    <rect x="106" y="188" width="8" height="26"/><rect x="106" y="248" width="8" height="26"/>
+    <rect x="106" y="308" width="8" height="26"/><rect x="106" y="368" width="8" height="26"/>
+    <rect x="106" y="428" width="8" height="26"/>
+  </g>
+  <g stroke="#241c14" stroke-width="2.4">
+    <circle cx="350" cy="230" r="14" fill="url(#strp)"/><circle cx="350" cy="350" r="14" fill="url(#strp)"/>
+    <circle cx="470" cy="230" r="14" fill="url(#strp)"/><circle cx="470" cy="350" r="14" fill="url(#strp)"/>
+  </g>
+  <g fill="#cfc0a0" stroke="#241c14" stroke-width="2">
+    <rect x="300" y="184" width="26" height="48"/><rect x="300" y="244" width="26" height="48"/>
+    <rect x="300" y="348" width="26" height="48"/><rect x="494" y="184" width="26" height="48"/>
+    <rect x="494" y="348" width="26" height="48"/><rect x="374" y="378" width="48" height="24"/>
+  </g>
+  <g fill="#b9d3e0" stroke="#241c14" stroke-width="2">
+    <rect x="538" y="244" width="40" height="20"/><rect x="538" y="284" width="40" height="20"/>
+    <rect x="538" y="324" width="40" height="20"/><rect x="632" y="244" width="40" height="20"/>
+    <rect x="632" y="284" width="40" height="20"/><rect x="632" y="324" width="40" height="20"/>
+  </g>
+  <rect x="386" y="72" width="48" height="28" fill="#d8c98f" stroke="#241c14" stroke-width="2.4"/>
+  <g transform="translate(410,290)">
+    <rect x="-24" y="-16" width="48" height="32" fill="none" stroke="#7c2f2f" stroke-width="2.4" stroke-dasharray="6 4"/>
+    <text y="5" font-size="12" text-anchor="middle" fill="#7c2f2f" font-weight="700" font-family="sans-serif">T</text>
+  </g>
+  <g>
+    <rect x="238" y="246" width="44" height="88" fill="#dccfae" stroke="#241c14" stroke-width="2"/>
+    <g stroke="#241c14" stroke-width="1.4"><path d="M238,262 H282"/><path d="M238,278 H282"/>
+      <path d="M238,294 H282"/><path d="M238,310 H282"/></g>
+    <text x="260" y="222" font-size="9.5" text-anchor="middle" font-weight="700" font-family="sans-serif">▲ A9</text>
+  </g>
+  <g>
+    <rect x="128" y="484" width="44" height="44" fill="#dccfae" stroke="#241c14" stroke-width="2"/>
+    <g stroke="#241c14" stroke-width="1.4"><path d="M128,496 H172"/><path d="M128,508 H172"/><path d="M128,520 H172"/></g>
+    <text x="196" y="500" font-size="9.5" font-weight="700" font-family="sans-serif">▲ A17</text>
+  </g>
+  <path d="M620,530 V576" stroke="#3f6f8c" stroke-width="4" marker-end="url(#ar)"/>
+  <text x="620" y="596" font-size="10" text-anchor="middle" font-family="sans-serif" fill="#2d5470" font-weight="700">▼ GROTTA</text>
+
+  <g font-family="sans-serif" font-size="9.5" letter-spacing="1" fill="#5a4a36" text-anchor="middle">
+    <text x="410" y="130">SACELLO DI MADRE ILARIA</text>
+    <text x="410" y="366">CRIPTA DELLE COLONNE</text>
+    <text x="605" y="396">CRIPTA DEI MARINAI</text>
+    <text x="170" y="452">CORRIDOIO DELLE CELLE</text>
+    <text x="80" y="490" font-size="9">CELLE</text>
+    <text x="170" y="552">CORPO DI GUARDIA</text>
+  </g>
+  <g font-family="sans-serif" font-size="13" font-weight="700" fill="#f2e8d0" text-anchor="middle">
+    <use href="#bg" x="260" y="330"/><text x="260" y="335">18</text>
+    <use href="#bg" x="410" y="200"/><text x="410" y="205">19</text>
+    <use href="#bg" x="410" y="106"/><text x="410" y="111">20</text>
+    <use href="#bg" x="170" y="200"/><text x="170" y="205">21</text>
+    <use href="#bg" x="80" y="200"/><text x="80" y="205">22</text>
+    <use href="#bg" x="170" y="546"/><text x="170" y="551">23</text>
+    <use href="#bg" x="605" y="266"/><text x="605" y="271">24</text>
+    <use href="#bg" x="620" y="446"/><text x="620" y="451">25</text>
+  </g>
+  <g transform="translate(28,566)">
+    <rect x="-6" y="-16" width="144" height="44" fill="#f7f1de" stroke="#241c14" stroke-width="1.4"/>
+    <g stroke="#241c14" stroke-width="1.4">
+      <rect x="4" y="0" width="30" height="9" fill="#241c14"/><rect x="34" y="0" width="30" height="9" fill="#f7f1de"/>
+      <rect x="64" y="0" width="30" height="9" fill="#241c14"/><rect x="94" y="0" width="30" height="9" fill="#f7f1de"/></g>
+    <text x="4" y="23" font-size="9" font-family="sans-serif">0</text>
+    <text x="98" y="23" font-size="9" font-family="sans-serif">20 ft</text>
+    <text x="4" y="-4" font-size="8.5" font-family="sans-serif" font-style="italic">buio totale</text>
+  </g>
+</svg>
+<figcaption>Tavola III — Le cinque celle (22) si aprono sul corridoio (21). Le grate sono in ferro, non ci sono serrature interne. <b>T</b> = fossa (scarica in 25).</figcaption>
+</figure>
+
+<!-- ================= TAVOLA IV ================= -->
+<h2>Tavola IV — Livello −2: la Grotta della Consegna</h2>
+<figure>
+<svg viewBox="0 0 760 470" role="img" aria-label="Pianta della grotta della consegna">
+  <rect width="760" height="470" fill="url(#rock)"/>
+  <path d="M92,150 C150,96 280,74 400,96 C520,72 646,104 700,168 C742,222 736,320 668,376
+           C588,438 420,442 300,414 C180,388 66,326 74,246 C78,204 74,178 92,150 Z"
+        fill="#e6dcc0" stroke="#241c14" stroke-width="7"/>
+  <path d="M300,206 C360,180 440,182 500,208 C566,236 640,246 700,232 L760,222 L760,392
+           L690,378 C620,398 520,406 440,388 C370,372 312,336 300,290 Z"
+        fill="url(#wat)" stroke="#3f6f8c" stroke-width="3"/>
+  <path d="M700,232 L760,222 M690,378 L760,392" stroke="#3f6f8c" stroke-width="3"/>
+  <text x="726" y="300" font-size="11" font-family="sans-serif" font-weight="700" fill="#2d5470"
+        transform="rotate(-90 726 300)" text-anchor="middle">MARE APERTO</text>
+
+  <rect x="120" y="224" width="176" height="120" fill="#d8cdae" stroke="#241c14" stroke-width="4"/>
+  <g stroke="#b0a184" stroke-width="1.4">
+    <path d="M120,254 H296"/><path d="M120,284 H296"/><path d="M120,314 H296"/>
+    <path d="M164,224 V344"/><path d="M208,224 V344"/><path d="M252,224 V344"/></g>
+
+  <g>
+    <rect x="128" y="112" width="56" height="56" fill="#dccfae" stroke="#241c14" stroke-width="2.4"/>
+    <g stroke="#241c14" stroke-width="1.5"><path d="M128,126 H184"/><path d="M128,140 H184"/><path d="M128,154 H184"/></g>
+    <text x="156" y="102" font-size="10" text-anchor="middle" font-weight="700" font-family="sans-serif">▲ C25</text>
+  </g>
+
+  <path d="M400,232 C444,214 494,220 520,250 C544,280 528,326 486,340 C444,354 404,336 392,304
+           C382,276 380,244 400,232 Z" fill="#cfc0a0" stroke="#241c14" stroke-width="4"/>
+  <rect x="426" y="262" width="66" height="34" fill="#3a352e" stroke="#241c14" stroke-width="2.4"/>
+  <g stroke="#7c2f2f" stroke-width="2.6">
+    <path d="M416,254 L502,254"/><path d="M416,304 L502,304"/></g>
+  <path d="M406,246 L512,246 M406,312 L512,312" stroke="none"/>
+
+  <rect x="146" y="368" width="130" height="70" fill="#ddd2b6" stroke="#241c14" stroke-width="4"/>
+  <g stroke="#241c14" stroke-width="2.6">
+    <path d="M164,368 V438"/><path d="M182,368 V438"/><path d="M200,368 V438"/>
+    <path d="M218,368 V438"/><path d="M236,368 V438"/><path d="M254,368 V438"/></g>
+
+  <g transform="translate(360,382) rotate(-14)">
+    <path d="M-60,0 q10,-20 60,-20 q50,0 60,20 q-10,18 -60,18 q-50,0 -60,-18 Z"
+          fill="#a8804e" stroke="#241c14" stroke-width="3"/>
+    <path d="M-36,-6 H36" stroke="#241c14" stroke-width="2"/>
+  </g>
+
+  <circle cx="300" cy="152" r="12" fill="#f0d98a" stroke="#241c14" stroke-width="2.5"/>
+  <text x="300" y="132" font-size="9.5" text-anchor="middle" font-family="sans-serif" font-weight="700">fanale</text>
+
+  <g font-family="sans-serif" font-size="10" letter-spacing="1" fill="#5a4a36" text-anchor="middle">
+    <text x="208" y="212">BANCHINA DELLA CONSEGNA</text>
+    <text x="456" y="368" fill="#2d5470">ALTARE DEL FRANGENTE</text>
+    <text x="211" y="458">RECINTO</text>
+  </g>
+  <g font-family="sans-serif" font-size="13" font-weight="700" fill="#f2e8d0" text-anchor="middle">
+    <use href="#bg" x="208" y="284"/><text x="208" y="289">26</text>
+    <use href="#bg" x="456" y="230"/><text x="456" y="235">27</text>
+    <use href="#bg" x="211" y="403"/><text x="211" y="408">28</text>
+    <use href="#bg" x="660" y="300"/><text x="660" y="305">29</text>
+  </g>
+  <text x="746" y="452" font-size="9.5" font-family="sans-serif" font-style="italic" text-anchor="end" fill="#2d5470">
+    con l'alta marea l'acqua sale di 8 ft: la banchina resta asciutta, l'altare no</text>
+</svg>
+<figcaption>Tavola IV — La grotta si apre sul mare aperto (29). L'altare (27) è sommerso al colmo della marea: è il fatto tattico più importante dell'avventura.</figcaption>
+</figure>
+
+<!-- ================= CAST ================= -->
+<h2>Il cast</h2>
+
+<div class="sb"><span class="nm">Padre Anselmo Grifo — Abate</span>
+Umano vampiro, chierico 7 · <b>GS 9</b> · MN Medio (non-morto, aumentato)<br>
+<b>PF</b> 45 (7d12) · <b>Iniz</b> +6 · <b>Vel</b> 9 m · <b>CA</b> 23 (contatto 12, colto alla sprovvista 21)<br>
+<b>BAB</b> +5 · <b>Att</b> schianto +9 (1d6+6 più risucchio di energia) o mazzafrusto +1 +10 (1d8+5)<br>
+<b>TS</b> Temp +5, Rifl +6, Vol +10 · <b>For</b> 18 <b>Des</b> 14 <b>Cos</b> — <b>Int</b> 15 <b>Sag</b> 20 <b>Car</b> 18<br>
+<b>Speciali</b> RD 10/argento e magia, guarigione rapida 5, resistenza a scacciare +4, resistenza al freddo
+e all'elettricità 10, forma gassosa, ragno rampicante, forma alternativa (pipistrello, nebbia),
+<i>dominare</i> (Vol CD 18), <i>figli della notte</i>, risucchio di energia (2 livelli negativi, Temp CD 18)<br>
+<b>Incantesimi</b> (chierico 7, domini Male e Acqua): <i>bane, doom, cause fear</i> / <i>hold person, silence,
+spiritual weapon</i> / <i>bestow curse, dispel magic, animate dead</i> / <i>divine power, freedom of movement,
+inflict critical wounds</i><br>
+<b>Debolezze</b> luce solare diretta (distrutto nel round successivo all'esposizione), <b>acqua corrente
+(3d6/round, distrutto dopo 3 round consecutivi)</b>, paletto di legno, respinto da simbolo sacro presentato
+(Vol CD 25), non può entrare in un'abitazione senza invito<br>
+<b>Tattica</b> Non combatte mai per primo. Parla, mente, <i>domina</i> il PG con il TS Volontà più basso,
+e se le cose si mettono male fugge in forma gassosa verso la cella (15). Non scende mai in G27 durante
+l'alta marea, e i PG possono capire perché.</div>
+
+<div class="sb"><span class="nm">Le Tre Sorelle del Frangente — concilio di megere</span>
+<b>Grinza</b> (megera acquatica, GS 4) · <b>Còlpa</b> (megera verde, GS 5) · <b>Marèa</b> (annis, GS 6)<br>
+<b>Concilio</b> (le tre entro 9 m l'una dall'altra, LI 9): <i>animate dead, bestow curse, control weather,
+dream, forcecage, mind blank, mirage arcana, veil, vision</i><br>
+<b>EL da concilio riunito: 10.</b> Contro 4 PG di 7° è quasi certamente letale.<br>
+<b>Uso previsto:</b> <b>non si presentano mai tutte e tre insieme</b> se il gruppo non ha alleati.
+La notte della consegna Marèa è in G27 e Grinza in acqua (EL 8); Còlpa arriva al terzo round
+dell'ultimo scontro <b>solo se i PG hanno ignorato tutti i segnali</b>. Se il gruppo ha liberato i
+prigionieri o ha messo abate e corsari l'uno contro l'altro, il concilio si dissolve e le megere fuggono
+in mare: è una vittoria legittima e va concessa.</div>
+
+<div class="sb"><span class="nm">Madre Ilaria Sonda — fantasma (alleata)</span>
+Umana fantasma, chierica 5 · <b>GS 7</b> · NB · <b>PF</b> 27 · <b>CA</b> 15 (contatto 15)<br>
+<b>Speciali</b> incorporea, manifestazione, <i>tocco corruttore</i> 1d6, <i>gemito spaventoso</i> (Vol CD 16),
+<i>malvolenza</i> (Vol CD 16) — <b>non usa nessuna di queste se non viene attaccata</b><br>
+<b>Vincolo</b> È morta tentando di far fuggire due Ancelle. Non può lasciare il sacello (20) finché i corpi
+delle vittime restano nella grotta o finché il rito non è spezzato.<br>
+<b>Cosa dà, e a quale prezzo:</b> parla solo a chi presenta un simbolo sacro o supera <b>Diplomazia CD 18</b>
+(CD 13 se i PG le mostrano un oggetto delle Ancelle preso dalle celle). Ogni domanda le costa: dopo tre
+risposte svanisce fino al giorno seguente. <b>Scegliete bene le domande</b> — dillo esplicitamente ai giocatori.
+<br><b>Le tre risposte migliori:</b> (a) l'abate non è vivo e teme l'acqua corrente; (b) sotto il pavimento
+della cappella c'è la botola, e dietro il corpo di guardia ci sono i vivi; (c) l'altare si sommerge al colmo
+della marea, e ciò che vi è legato sopra muore lì.</div>
+
+<div class="sb"><span class="nm">Tiberio Sarda — fantasma di corsaro (ostile-utile)</span>
+Umano fantasma, ladro 4 · <b>GS 6</b> · NM · <b>PF</b> 22 · <b>CA</b> 16 (contatto 16)<br>
+Ammutinato, gettato in mare da Malaluna due anni fa. Odia i corsari più di quanto odi i vivi.
+Attacca al primo round; si ferma se qualcuno pronuncia il nome di Ghebro Malaluna (<b>Sapienza (locali)
+CD 15</b>, o basta averlo sentito in osteria). Poi contratta: rivela il <b>segnale del fanale</b>
+(tre lampi lunghi, due corti) in cambio della promessa che Malaluna muoia. Se i PG mentono, tornerà.</div>
+
+<div class="sb"><span class="nm">Ghebro Malaluna — capitano della Zanna di Bruma</span>
+Umano guerriero 6/ladro 2 · <b>GS 8</b> · NM<br>
+<b>PF</b> 58 · <b>CA</b> 20 · <b>Att</b> sciabola +1 +13/+8 (1d6+6, 18-20) e pugnale +11 (1d4+2)<br>
+<b>TS</b> Temp +8, Rifl +8, Vol +3 · <b>Speciali</b> attacco furtivo +1d6, schivare prodigioso<br>
+<b>Seguito</b> 6 corsari (umano guerriero 3, GS 2, PF 22, CA 16, scimitarra +6 1d6+3, balestra leggera +5)
+e 2 arcieri (umano ladro 3, GS 3, arco corto +6 1d6, attacco furtivo +2d6)<br>
+<b>Il fulcro:</b> Malaluna non sa cosa sia l'abate. Crede di comprare schiavi da un prete corrotto.
+<b>Sapienza (nobiltà) o Raggirare CD 20</b> per convincerlo del contrario; se ci riescono, i corsari si
+voltano contro l'abbazia e l'EL del finale crolla di due punti. Questa è la soluzione che il documento
+vuole premiare.</div>
+
+<h3>Il borgo</h3>
+<table>
+<thead><tr><th>PNG</th><th>Ruolo</th><th>Cosa sa</th><th>Leva</th></tr></thead>
+<tbody>
+<tr><td><b>Dama Orsola Rive</b><br>guerriero 5</td><td>Capoguardia</td><td>Cinque scomparsi in due anni; l'abate le ha sempre mostrato lettere</td><td>Sua nipote <b>Cinzia</b> è nella cella 3. Non lo sa</td></tr>
+<tr><td><b>Berto Cassola</b></td><td>Mugnaio</td><td>Dal mulino si sentono i lamenti quando il vento gira a maestrale</td><td>Suo figlio <b>Merlo</b> è nella cella 1</td></tr>
+<tr><td><b>Nenno Braca</b></td><td>Oste</td><td>Tutte le dicerie; i corsari bevono da lui quando toccano terra</td><td>Vende informazioni, non lealtà</td></tr>
+<tr><td><b>Madama Vela</b><br>adepto 4</td><td>Reclutatrice delle Ancelle</td><td><b>Complice consapevole.</b> Sceglie chi va</td><td>Vigliacca: crolla con Intimidire CD 18. Se scoperta, avvisa l'abate entro 1 ora</td></tr>
+<tr><td><b>Fra' Timoteo</b><br>chierico 2</td><td>Giovane canonico</td><td><b>Innocente.</b> Sa solo che l'abate scende di notte e che le nuove Ancelle non le rivede</td><td>La via d'ingresso legittima all'abbazia. Se muore per mano dei PG, il borgo si rivolta contro di loro</td></tr>
+</tbody>
+</table>
+
+<!-- ================= ATTI ================= -->
+<h2>Atto I — Vènere Bassa</h2>
+<p><b>Obiettivo minimo dell'atto:</b> i PG devono uscirne con <i>due</i> fatti: che le Ancelle non tornano,
+e che i rumori notturni vengono dal promontorio, non dal mare.</p>
+
+<h3>Ganci d'apertura (usane uno, gli altri diventano scene)</h3>
+<ul>
+<li><b>L'ingaggio.</b> Dama Orsola paga 300 mo perché qualcuno scopra cosa tiene sveglia la famiglia Cassola.
+Motivazione dichiarata: ordine pubblico. Motivazione vera: sua nipote è entrata in abbazia sei settimane fa
+e la lettera che le è arrivata usa una parola che Cinzia non avrebbe mai scritto.</li>
+<li><b>Il cadavere.</b> Il mare ha restituito un corpo alla base della scogliera (B8 in Tavola I).
+Donna, cinquant'anni, abito da ancella. <b>Guarire CD 15:</b> le fratture sono da caduta, non da annegamento;
+è caduta viva. <b>Guarire CD 20:</b> ha segni di dita sulle caviglie. È Madre Ilaria.</li>
+<li><b>Le dicerie.</b> I PG sostano alla <i>Gomena Rotta</i> e la sala parla da sola.</li>
+</ul>
+
+<h3>Dicerie all'osteria (1d8 — due sono false, deliberatamente)</h3>
+<table>
+<thead><tr><th>d8</th><th>Diceria</th><th>Vero?</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>La chiesa non apre mai prima del tramonto, nemmeno per un funerale</td><td>Vero</td></tr>
+<tr><td>2</td><td>Le Ancelle scrivono a casa, ma la calligrafia è sempre la stessa</td><td>Vero</td></tr>
+<tr><td>3</td><td>D'inverno una nave senza fanali attracca sotto il capo, e non attracca da nessuna parte</td><td>Vero</td></tr>
+<tr><td>4</td><td>Il vecchio abate era peggio di questo</td><td>Falso — depistaggio</td></tr>
+<tr><td>5</td><td>Sotto l'abbazia c'è una grotta che il mare riempie e svuota</td><td>Vero</td></tr>
+<tr><td>6</td><td>I lamenti sono foche: capita ogni anno a questa stagione</td><td>Falso — versione ufficiale della guardia</td></tr>
+<tr><td>7</td><td>Madama Vela ha comprato una casa nuova e non fa niente per campare</td><td>Vero</td></tr>
+<tr><td>8</td><td>L'abate non mangia in pubblico da nove anni</td><td>Vero</td></tr>
+</tbody>
+</table>
+
+<h3>Il mulino (B2, Tavola I)</h3>
+<p class="ra">Il maestrale entra dalla feritoia di ponente e passa nella tramoggia, e quando passa
+porta con sé un suono che non è vento. Non sono parole. È qualcosa a metà fra un inno e un lamento,
+cantato da più voci che non respirano nei punti giusti.</p>
+<div class="mech"><b>Ascoltare CD 12</b> di notte con maestrale: il coro. <b>Ascoltare CD 20</b>: le voci
+ripetono sempre le stesse sette note. <b>Sapienza (religione) CD 18</b>: è l'inno d'ingresso del Nocchiero,
+cantato al contrario.
+<b>Uso successivo:</b> chi lo riconosce può intonarlo in G27. Il coro dei sommersi risponde,
+e per 1 round tutte le megere presenti sono <i>scosse</i> (nessun TS). Vale una volta sola.
+<b>Sopravvivenza CD 15</b> triangolando dal mulino: la sorgente è a mezza costa del promontorio, sotto
+l'abbazia — non nella chiesa.</div>
+
+<h2>Atto II — L'abbazia di giorno</h2>
+<p>Fra' Timoteo accoglie i visitatori. La canonica (10–17) è aperta e pulita. La chiesa (1–9) è chiusa
+a chiave "per lavori alla volta". L'abate riceve solo dopo il tramonto.</p>
+<div class="mech"><b>Il conto che non torna (Cercare / Osservare, uno basta):</b>
+<ul>
+<li><b>Refettorio (11), Osservare CD 14</b> — la tavola è apparecchiata per ventidue. In dormitorio (13)
+i pagliericci sono nove.</li>
+<li><b>Cucina (12), Cercare CD 12</b> — le provviste sono per pochi, ma la dispensa contiene vino e
+spezie da nave, non da borgo.</li>
+<li><b>Scriptorium (16), Cercare CD 16</b> — le lettere alle famiglie sono <i>brutte copie</i>. Tutte della
+stessa mano. <b>Falsificare CD 15</b> per confermarlo. Questa è la prova che convince Dama Orsola.</li>
+<li><b>Studio dell'Abate (14), Cercare CD 20</b> — <b>il registro</b>. Due colonne: nomi e date d'ingresso,
+nomi e date con accanto solo una lettera — <b>F</b> (frangente) o <b>Z</b> (<i>Zanna di Bruma</i>) e una cifra
+in monete. Trentuno nomi in nove anni. Undici hanno meno di dodici anni segnati accanto.
+<i>Il registro è l'unico luogo in cui questo compare. Non descrivere altro.</i></li>
+<li><b>Cella dell'Abate (15)</b> — porta sbarrata, <b>finestre murate dall'interno</b>, nessun letto,
+un cassone di terra battuta lungo sette piedi. <b>Sapienza (religione) CD 15</b>: è un giaciglio da vampiro.
+<b>Aprire il cassone di giorno significa vincere l'avventura senza combattere l'abate</b> — e va concesso,
+se i PG ci arrivano. Costa loro l'elemento sorpresa sugli altri due nemici.</li>
+</ul></div>
+
+<h2>Atto III — Sotto</h2>
+<p>Si scende dalla botola in cappella (9 → 18) o dalla scala di servizio (17 → 23, ma sbuca <i>dentro</i>
+il corpo di guardia).</p>
+
+<div class="cols">
+<div class="entry"><h4><span class="n">18</span> Vestibolo</h4>
+<p>Grata di ferro. <b>Scassinare CD 25</b>, o la chiave in sacrestia (6). <b>Ascoltare CD 13:</b> da ovest,
+qualcuno tossisce.</p></div>
+
+<div class="entry"><h4><span class="n">19</span> Cripta delle Colonne</h4>
+<p>Otto sarcofagi, quattro pilastri a fasce che ripetono la navata sopra.</p>
+<div class="mech"><b>Trappola (T):</b> fossa di 20 ft, 2d6 — Cercare CD 21, Disattivare CD 20, Rifl CD 20.
+Scarica nella scala 25: è una scorciatoia, non una condanna. Alghe secche sul bordo lo segnalano.
+<b>Incontro (EL 6):</b> 3 <i>wight</i> nei sarcofagi centrali. Un round di preavviso (i coperchi si spostano).
+Sono ex-Ancelle. Se qualcuno le chiama per nome — i nomi sono nel registro — perdono un round.</div></div>
+
+<div class="entry"><h4><span class="n">20</span> Sacello di Madre Ilaria</h4>
+<p>L'unico ambiente ancora consacrato del sotterraneo. Nessun non-morto vi entra, l'abate compreso.
+<b>È il rifugio sicuro dell'avventura</b> e i PG devono capirlo: descrivi il wight che si ferma sulla soglia.</p>
+<div class="mech">Vedi il blocco di Madre Ilaria. <b>Tre domande, poi svanisce.</b>
+Tesoro: reliquiario d'argento (800 mo), 2 <i>fiale d'acqua santa</i>.</div></div>
+
+<div class="entry"><h4><span class="n">21</span> Corridoio delle Celle</h4>
+<p>Trenta metri, cinque grate sulla parete ovest. Il pavimento è pulito: qualcuno passa ogni giorno.</p>
+<div class="mech"><b>Osservare CD 10:</b> ciotole vuote davanti a due celle, non alle altre tre.
+Chi era nelle altre tre non c'è più.</div></div>
+
+<div class="entry"><h4><span class="n">22</span> Le Celle</h4>
+<p class="ra">Cinque nicchie chiuse da sbarre. In tre non c'è nulla che valga la pena descrivere.
+Nelle altre due qualcosa si muove e si tira indietro dalla luce.</p>
+<p><b>Cella 1 — Merlo Cassola</b>, 22, figlio del mugnaio. Disidratato, −4 a For e Des, 3 pf.<br>
+<b>Cella 3 — Cinzia Rive</b>, 19, nipote della capoguardia. In condizioni migliori: lucida, furiosa,
+e ha contato i giorni. <b>Sa che stanotte c'è la consegna.</b><br>
+<b>Cella 4 — Sorella Bertrada</b>, 41, ancella anziana, rinchiusa da due settimane per aver fatto domande.
+Conosce la disposizione della canonica e il segnale del fanale.<br>
+<b>Cella 5 — Naspo</b>, 17, mozzo catturato in mare dai corsari, non del borgo. Vale 200 mo per Malaluna.</p>
+<div class="mech"><b>Grate:</b> Scassinare CD 20, Forza CD 24. Chiavi nel corpo di guardia (23).
+<b>Vincolo di scena:</b> i quattro prigionieri non possono combattere e non possono correre a lungo
+(Cos ridotta, velocità 6 m). Portarli fuori <b>è</b> il conflitto del terzo atto, non un premio automatico.
+Il percorso sicuro è 21 → 18 → 9 → chiesa → sagrato; il percorso rapido è 21 → 23 → 17, ma passa
+dal corpo di guardia.</div></div>
+
+<div class="entry"><h4><span class="n">23</span> Corpo di Guardia</h4>
+<p><b>Incontro (EL 7):</b> 4 corsari (guerriero 3) e <b>Grinza</b> la megera acquatica (GS 4),
+lasciata dalle Sorelle a sorvegliare la merce. Il suo <i>sguardo mortale</i> (Tempra CD 15) è la minaccia vera.</p>
+<div class="mech">Chiavi delle celle appese; una cassa con 400 mo in argento; un fanale schermato
+(serve per il segnale in G26).</div></div>
+
+<div class="entry"><h4><span class="n">24</span> Cripta dei Marinai</h4>
+<p>Loculi allagati. <b>Incontro (EL 5):</b> 6 <i>lacedon</i>. Facoltativo — tagliali se il gruppo è già logoro.
+<b>Tiberio Sarda</b> si manifesta qui.</p></div>
+
+<div class="entry"><h4><span class="n">25</span> Scala alla Grotta</h4>
+<p>Sessanta scalini scavati, umidi, con la marea che si sente salire. Ogni dieci scalini il rumore cambia:
+usalo come orologio narrativo.</p></div>
+</div>
+
+<h2>Atto IV — La Notte della Consegna</h2>
+<p class="ra">Il fanale sulla banchina lampeggia tre volte lunghe e due corte. Dalla bocca della grotta
+entra una lancia a remi, e dietro di essa il mare comincia a salire.</p>
+
+<h3>Orologio della notte — otto passi</h3>
+<p>Fai avanzare l'orologio di un passo ogni 10 minuti di gioco reale, <b>e di un passo extra ogni volta che
+i PG fanno rumore</b> (campana suonata, combattimento non silenziato, allarme dato da Madama Vela).</p>
+<table>
+<thead><tr><th>Passo</th><th>Ora</th><th>Marea</th><th>Evento</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>22:00</td><td>bassa</td><td>L'abate scende in 27. Le Sorelle preparano l'altare</td></tr>
+<tr><td>2</td><td>23:00</td><td>montante</td><td>I prigionieri vengono spostati dalle celle (22) al recinto (28)</td></tr>
+<tr><td>3</td><td>00:00</td><td>montante</td><td>Il fanale dà il segnale. La lancia entra da 29</td></tr>
+<tr><td>4</td><td>01:00</td><td>alta</td><td>Trattativa fra Malaluna e l'abate sulla banchina (26)</td></tr>
+<tr><td>5</td><td>02:00</td><td>alta</td><td>Pagamento e imbarco. <b>Ultimo momento utile per salvare chi va sulla nave</b></td></tr>
+<tr><td>6</td><td>02:30</td><td>colmo</td><td>Il rito sull'altare (27). L'acqua arriva alla mensa</td></tr>
+<tr><td>7</td><td>03:00</td><td>colmo</td><td><b>L'altare è sommerso.</b> Chi vi è legato annega</td></tr>
+<tr><td>8</td><td>03:30</td><td>calante</td><td>Tutti se ne vanno. L'abbazia riapre all'alba come se nulla fosse</td></tr>
+</tbody>
+</table>
+
+<h3>Il fatto tattico che decide lo scontro</h3>
+<div class="warn">
+<b>L'altare (27) è battuto da acqua corrente al colmo della marea.</b> Un vampiro immerso in acqua corrente
+subisce 3d6 per round ed è distrutto dopo tre round consecutivi. Padre Anselmo lo sa e resta sempre sulla
+banchina (26). Spingerlo, attirarlo o legarlo sull'altare al passo 6–7 <b>lo uccide senza bisogno di
+superarne la RD</b>.<br>
+Perché funzioni servono tre semine: la nota nella cella dell'abate (15), la terza risposta di Madre Ilaria (20),
+e la scala 25 dove i PG sentono l'acqua salire. Se ne hai piazzate meno di due, il tavolo non ci arriverà
+e lo scontro diventa una guerra d'attrito contro RD 10 e guarigione rapida 5 — che a 7° livello è un massacro.
+</div>
+
+<h3>Composizione dello scontro finale</h3>
+<table>
+<thead><tr><th>Scenario</th><th>Nemici presenti</th><th>EL</th><th>Come ci si arriva</th></tr></thead>
+<tbody>
+<tr><td><b>A — Frontale</b> (peggiore)</td><td>Abate + Marèa + Grinza + Malaluna + 6 corsari</td><td>12</td><td>I PG scendono senza aver liberato nessuno né parlato con nessuno. <b>Sconsigliato: TPK probabile</b></td></tr>
+<tr><td><b>B — Standard</b></td><td>Abate + Marèa + 4 corsari</td><td>10</td><td>I PG hanno liberato i prigionieri e Malaluna è già ripartito o esita</td></tr>
+<tr><td><b>C — Cuneo</b> (previsto)</td><td>Abate + Marèa; i corsari combattono <i>a fianco</i> dei PG</td><td>9</td><td>Malaluna ha scoperto cosa compra. Raggirare/Sapienza CD 20, o Tiberio come testimone</td></tr>
+<tr><td><b>D — Marea</b> (ottimale)</td><td>Marèa e Grinza soltanto</td><td>8</td><td>L'abate è stato distrutto nel cassone (15) di giorno, o spinto sull'altare al passo 7</td></tr>
+</tbody>
+</table>
+
+<h3>Tre finali progettati</h3>
+<ul>
+<li><b>Il sigillo.</b> Abate distrutto, megere in fuga in mare, prigionieri liberi. Il borgo scopre tutto.
+Dama Orsola deve decidere cosa dire a undici famiglie. <b>Non risolverlo tu: lasciala chiedere ai PG.</b></li>
+<li><b>Il patto.</b> I PG lasciano andare Malaluna in cambio dei prigionieri sulla nave. Salvano tutti i vivi,
+e un corsaro schiavista continua a navigare la costa. Aggancio perfetto se questa one-shot diventa un arco.</li>
+<li><b>Il silenzio.</b> I PG uccidono l'abate ma non trovano il registro. L'abbazia viene affidata a
+Fra' Timoteo, che non sa nulla, e Madama Vela resta libera. Il rito riprende in altra forma entro un anno.</li>
+</ul>
+
+<!-- ================= REGOLA DEI TRE INDIZI ================= -->
+<h2>Regola dei tre indizi</h2>
+<p>Ogni rivelazione necessaria ha tre canali indipendenti. Se il tavolo ne manca uno, non è un problema.
+Se ne manca tre, hai sbagliato tu.</p>
+<table>
+<thead><tr><th>Rivelazione</th><th>Canale 1</th><th>Canale 2</th><th>Canale 3</th></tr></thead>
+<tbody>
+<tr><td>Le Ancelle non tornano</td><td>Dicerie 2 e 7 in osteria</td><td>Lettere in brutta copia (16)</td><td>Berto e Orsola, indipendentemente</td></tr>
+<tr><td>Esiste un sotterraneo</td><td>Coro udibile al mulino</td><td>Botola in cappella (9)</td><td>Sorella Bertrada, se liberata prima</td></tr>
+<tr><td>L'abate è un vampiro</td><td>Cassone e finestre murate (15)</td><td>Prima risposta di Madre Ilaria (20)</td><td>Non mangia mai in pubblico (diceria 8) + non entra in C20</td></tr>
+<tr><td>Ci sono prigionieri vivi</td><td>Ciotole nel corridoio (21)</td><td>Tosse udibile dal vestibolo (18)</td><td>Registro: nomi senza lettera accanto (14)</td></tr>
+<tr><td>Stanotte c'è la consegna</td><td>Registro: cadenza mensile (14)</td><td>Cinzia lo dice appena liberata</td><td>Tiberio e il segnale del fanale (24)</td></tr>
+<tr><td>L'acqua corrente uccide l'abate</td><td>Bestiario / Sapienza (religione) CD 15</td><td>Terza risposta di Madre Ilaria</td><td>L'abate non scende mai in 27 con l'alta: osservabile</td></tr>
+</tbody>
+</table>
+
+<!-- ================= TESORO ================= -->
+<h2>Tesoro ed esperienza</h2>
+<table>
+<thead><tr><th>Dove</th><th>Contenuto</th><th>Valore</th></tr></thead>
+<tbody>
+<tr><td>Studio dell'abate (14)</td><td>Registro (prova, non tesoro), 600 mo in argento, <i>perla di potere I liv.</i></td><td>~1.600 mo</td></tr>
+<tr><td>Sacello (20)</td><td>Reliquiario d'argento, 2 acque sante, <i>mantello di resistenza +1</i></td><td>~1.800 mo</td></tr>
+<tr><td>Corpo di guardia (23)</td><td>400 mo, fanale schermato, chiavi</td><td>400 mo</td></tr>
+<tr><td>Cripta delle colonne (19)</td><td>8 stemmi d'argento, <i>anello di protezione +1</i></td><td>~2.200 mo</td></tr>
+<tr><td>Padre Anselmo</td><td><i>Camicia di maglia +1</i>, <i>mazzafrusto +1</i>, simbolo profano (400 mo)</td><td>~4.700 mo</td></tr>
+<tr><td>Malaluna (se sconfitto)</td><td><i>Sciabola +1</i>, cassa del pagamento: 2.000 mo, 4 gemme da 500</td><td>~6.300 mo</td></tr>
+<tr><td>Grotta (27)</td><td><i>Bacchetta di cura ferite leggere</i> (26 cariche) fra le offerte</td><td>~700 mo</td></tr>
+</tbody>
+</table>
+<p><b>Totale se ripuliscono tutto:</b> ~17.700 mo, in linea con la ricchezza attesa per un party di 7°–8°
+che affronta una serie di incontri EL 6–10. <b>Se scelgono il finale "il patto"</b> perdono la cassa di
+Malaluna: la scelta morale ha un prezzo numerico, ed è giusto così.</p>
+<p><b>PX indicativi</b> (4 PG di 7°): Atto I ~600 a testa in premi di ruolo e indagine (non da combattimento);
+Atto III ~1.400; Atto IV ~2.000–2.600 secondo lo scenario. Sufficiente per l'8° livello, non per il 9°.</p>
+
+<!-- ================= FAILURE MODES ================= -->
+<h2>Modi di fallimento al tavolo</h2>
+<table>
+<thead><tr><th>Modo di fallimento</th><th>Sintomo</th><th>Causa</th><th>Mitigazione</th></tr></thead>
+<tbody>
+<tr><td><b>TPK sull'abate</b></td><td>RD 10/argento e magia + guarigione rapida 5 + risucchio di energia: il party si consuma senza scalfirlo</td><td>Scenario A raggiunto senza semine</td><td>Verifica prima della sessione che almeno due delle tre semine dell'acqua corrente siano state colpite. Se no, fai scendere l'abate in 27 di sua iniziativa al passo 6</td></tr>
+<tr><td><b>Concilio completo</b></td><td>EL 10 di sole megere con <i>forcecage</i>: fine partita</td><td>Le tre Sorelle presenti insieme</td><td>Còlpa entra <b>solo</b> se i PG hanno ignorato ogni segnale. È una valvola, non un evento programmato</td></tr>
+<tr><td><b>Indagine a vuoto nell'Atto I</b></td><td>Un'ora di gioco senza progressi, il tavolo si annoia</td><td>Tutti gli indizi dietro prove di abilità</td><td>Diceria 1, 2 e 8 sono gratuite: le dice Nenno senza che nessuno tiri. Se dopo 40 minuti non c'è progresso, Berto Cassola bussa alla porta dell'osteria</td></tr>
+<tr><td><b>Il registro non viene trovato</b></td><td>Il finale "il silenzio" per omissione, non per scelta</td><td>Cercare CD 20 in un'unica stanza</td><td>Sorella Bertrada sa dov'è. Cinzia sa che esiste. Il registro è recuperabile anche dopo lo scontro finale</td></tr>
+<tr><td><b>Prigionieri usati come sacchi</b></td><td>I PG li lasciano in cella "per dopo" e li ritrovano morti al passo 7</td><td>Nessun costo percepito all'attesa</td><td>Al passo 2 li spostano nel recinto (28). Descrivi il rumore delle grate che si aprono: è il timer che diventa udibile</td></tr>
+<tr><td><b>Fra' Timoteo ucciso</b></td><td>Il borgo diventa ostile e l'Atto IV perde ogni appoggio</td><td>Party trigger-happy in casa altrui</td><td>Timoteo è disarmato, apre lui la porta e chiede scusa per l'abate. Rendi visibilmente costoso colpirlo</td></tr>
+<tr><td><b>Il materiale sensibile guasta la serata</b></td><td>Silenzio imbarazzato, un giocatore si sfila</td><td>Descrizione esplicita del destino dei bambini</td><td>Tutto passa dal registro (14) e dal coro senza volto. Se qualcuno spinge per il dettaglio, la risposta è la riga del registro, letta e basta</td></tr>
+<tr><td><b>Session overrun</b></td><td>Si arriva all'Atto IV alle due di notte, esausti</td><td>Quattro atti in una seduta</td><td>Punto di taglio previsto: fine Atto III con i prigionieri liberati. L'Atto IV è una seconda seduta autosufficiente</td></tr>
+</tbody>
+</table>
+
+<!-- ================= ADR ================= -->
+<h2>Decisioni di progettazione (ADR)</h2>
+
+<div class="adr"><b>ADR-01 — Il nemico non è uno, sono tre, e si tengono in ostaggio.</b><br>
+<i>Contesto:</i> un solo villain a GS 9 contro 4 PG di 7° è o banale o letale, senza vie di mezzo.<br>
+<i>Decisione:</i> abate, megere e corsari sono tre fazioni con interessi divergenti.<br>
+<i>Conseguenze:</i> lo scontro finale ha quattro configurazioni di EL diverso (8–12) determinate dalle scelte
+dei PG, non dal DM. In cambio devi tenere traccia di tre agende: la tabella dell'orologio serve a questo.</div>
+
+<div class="adr"><b>ADR-02 — La debolezza dell'acqua corrente è la soluzione progettata, non un trucco.</b><br>
+<i>Decisione:</i> la topografia (abbazia sul mare, grotta di marea, altare sommergibile) esiste <i>per</i>
+questa regola SRD del vampiro.<br>
+<i>Conseguenze:</i> l'avventura premia l'osservazione più della potenza di fuoco. Il prezzo è che va seminata
+in tre punti; senza semine, la geografia diventa decorazione e lo scontro degenera in attrito.</div>
+
+<div class="adr"><b>ADR-03 — Le vittime bambine restano fuori scena.</b><br>
+<i>Decisione:</i> compaiono solo in un registro, in un inventario e in un coro senza volto; i personaggi
+salvabili e interpretabili sono giovani adulti.<br>
+<i>Conseguenze:</i> l'orrore resta implicito e sostenibile per una serata intera. Perdi la scena shock;
+guadagni che il tavolo arrivi alla fine. <b>Questa decisione non è negoziabile in gioco</b> — se un giocatore
+insiste, la risposta di gioco è la riga del registro.</div>
+
+<div class="adr"><b>ADR-04 — Ogni PNG del borgo ha un parente nelle celle.</b><br>
+<i>Decisione:</i> nipote della capoguardia, figlio del mugnaio, collega di Bertrada.<br>
+<i>Conseguenze:</i> l'indagine dell'Atto I ha un ritorno emotivo nell'Atto III senza bisogno di legare i PG
+al borgo con un background. Costo: se i PG falliscono, il fallimento è nominativo. Assicurati che il tavolo
+lo voglia.</div>
+
+<div class="adr"><b>ADR-05 — Bestiario limitato all'SRD 3.5.</b><br>
+<i>Decisione:</i> vampiro, fantasma, wight, lacedon, megera acquatica, megera verde, annis, concilio,
+classi PNG — tutto SRD/OGL 1.0a.<br>
+<i>Conseguenze:</i> nessuna sostituzione necessaria in caso di pubblicazione. Vedi la sezione licenze:
+è l'unico punto in cui questo documento può ancora contaminarsi.</div>
+
+<!-- ================= LICENZE ================= -->
+<h2>Igiene di licenza — leggi prima di committare</h2>
+<p>Questo è il punto in cui l'esperienza dell'arco del Palio è direttamente rilevante. Il documento
+è <b>già pulito</b>, ma solo perché è stato scritto per esserlo:</p>
+<table>
+<thead><tr><th>Elemento</th><th>Stato</th><th>Nota</th></tr></thead>
+<tbody>
+<tr><td>Creature (vampiro, fantasma, wight, lacedon, megere, concilio)</td><td>✅ SRD 3.5 / OGL 1.0a</td><td>Nessuna creatura da Monster Manual II, Draconomicon o supplementi</td></tr>
+<tr><td>Classi PNG (chierico, guerriero, ladro, adepto)</td><td>✅ SRD</td><td>Adepto è nel SRD come classe PNG</td></tr>
+<tr><td>Oggetti magici</td><td>✅ SRD</td><td>Tutti dalla tabella oggetti SRD</td></tr>
+<tr><td><b>Divinità</b></td><td>⚠️ deliberatamente generiche</td><td><b>"Il Nocchiero"</b> e <b>"la Signora del Frangente"</b> sono invenzioni di questo documento. <b>Non usare Valkur né Umberlee nel testo committato</b>: sono Forgotten Realms non-SRD, e sono esattamente la classe di contaminazione già trovata nell'audit del modulo</td></tr>
+<tr><td>Toponimi</td><td>⚠️ da decidere</td><td>Vènere Bassa e l'Abbazia della Rotta Sicura sono inventati. <b>Non chiamarla Porto Venere nel testo pubblicato</b>: il luogo reale va bene come riferimento visivo per te, non come nome proprio nel prodotto</td></tr>
+<tr><td>Tavole SVG</td><td>✅ originali</td><td>Nessun asset di terzi, nessuna dipendenza, nessun font non di sistema. Nessuna immagine AI, quindi nessun obbligo di disclosure su DriveThruRPG</td></tr>
+</tbody>
+</table>
+<p><b>Se finisce in RumblingStone:</b> il ramo FR può usare i nomi di Faerûn ma ricade sotto il DMs Guild
+Community Content Agreement, incompatibile con MIT, GPL e CC BY. Tieni i due rami separati <b>dal primo
+commit</b>, non dopo. Per le tavole SVG isolate, CC BY 4.0 o MIT vanno bene; <b>GPL-3.0 su un'opera testuale
+resta l'errore da correggere</b>, qui come nel repo principale.</p>
+
+<!-- ================= PIANO ================= -->
+<h2>Piano di adozione in tre fasi</h2>
+
+<h3>Fase 1 — Audit / verifica pre-sessione</h3>
+<ul>
+<li>Chi ha argento o armi magiche nel party? Senza almeno due fonti di danno che superino RD 10/argento e magia,
+lo scenario A è un TPK matematico, non una sfida.</li>
+<li>Il chierico può scacciare a livello effettivo 7? L'abate ha resistenza a scacciare +4: contro un
+chierico di 7° funziona solo con un buon tiro.</li>
+<li>Fonti di luce e scurovisione: tutto il livello −1 è buio totale e nessun incontro è stato bilanciato
+assumendo visione universale.</li>
+<li>Verifica il consenso del tavolo sul tema. Una riga, prima di iniziare: <i>"c'è un culto che uccide
+ragazzi; niente sarà mostrato in scena, ma sarà chiaro cosa è successo"</i>. Se qualcuno esita, la one-shot
+funziona identica sostituendo le vittime con marinai catturati.</li>
+<li>Decidi in anticipo <b>quale finale sei disposto a concedere</b> se i PG risolvono tutto di giorno
+aprendo il cassone (15). La risposta corretta è: concederlo.</li>
+</ul>
+
+<h3>Fase 2 — Esecuzione</h3>
+<ul>
+<li><b>Atto I, 60–75 min.</b> Cancello d'uscita: il gruppo sa che le Ancelle non tornano <i>e</i> che i suoni
+vengono dal promontorio. Se a 60 minuti manca uno dei due, Berto Cassola arriva e lo dice in faccia.</li>
+<li><b>Atto II, 45–60 min.</b> Cancello: almeno una prova documentale (lettere o registro) e almeno un
+sospetto sulla natura dell'abate.</li>
+<li><b>Atto III, 90–120 min.</b> Cancello: prigionieri liberati o localizzati. Punto di taglio naturale
+per una seconda seduta.</li>
+<li><b>Atto IV, 75–90 min.</b> Avvia l'orologio della notte e dichiaralo ai giocatori: il timer va giocato
+con le carte scoperte.</li>
+</ul>
+
+<h3>Fase 3 — Validazione</h3>
+<ul>
+<li><b>Agency:</b> almeno una fazione delle tre deve essere stata aggirata, corrotta o evitata invece che
+combattuta. Se il gruppo le ha combattute tutte e tre ed è sopravvissuto, hai tirato troppo morbido; se è
+morto, non hai seminato abbastanza.</li>
+<li><b>Comprensione:</b> a fine partita chiedi perché la chiesa restasse chiusa di giorno. Se nessuno risponde
+"perché l'abate è un vampiro", i canali della Tavola dei tre indizi hanno fallito e vanno rinforzati prima
+di riproporla.</li>
+<li><b>Peso morale:</b> il finale scelto è stato una decisione discussa o un ripiego? Se nessuno ha esitato
+davanti alla proposta di Malaluna, la trattativa non è stata resa abbastanza allettante.</li>
+<li><b>Riusabilità:</b> se questa one-shot deve poter confluire in RumblingStone, verifica <i>prima</i> del
+commit che nel testo non siano rientrati nomi di Faerûn per abitudine di scrittura. È il modo più comune in
+cui la contaminazione torna dentro.</li>
+</ul>
+
+<p style="text-align:center;font-style:italic;color:#5a4a36;margin-top:32px">
+— <i>Il maestrale entra nella tramoggia del mulino e ne esce cantando. Non sono foche.</i> —
+</p>
+
+</div>
+</body>
+</html>

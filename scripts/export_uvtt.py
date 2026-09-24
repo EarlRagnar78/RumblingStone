@@ -12,7 +12,7 @@ by validate_maps.py — it is a presentation/export layer for the table.
 
 What is extracted from the grid (universal legend of the repo):
   - line_of_sight  ← cell edges between a WALL cell and a non-wall cell,
-                      greedily merged into straight runs (walls: 🏰 ⬛ 🟪 🗼 🏛).
+                      greedily merged into straight runs (walls: 🏰 ⬛ ⛺ ⛰ 🟪 🗼 🏛 🗿).
   - portals        ← door cells (🚪): a short segment across the opening.
   - lights         ← light sources (🏮 braziere, 🕯 candele, 🔥 fuoco,
                       🔮 cristalli), or the explicit `lights` of a JSON spec.
@@ -44,21 +44,26 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import render_map_svg as rms  # noqa: E402
+from dmcore import legenda  # noqa: E402
 
-# Full vision-blocking cells (line_of_sight). Low walls (🧱) give cover but do
-# not block sight, so they are intentionally excluded.
-WALL_SYMS = {"🏰", "⬛", "🟪", "🗼", "🏛", "🗿"}
-DOOR_SYMS = {"🚪"}
-# light source symbol -> (range in grid squares, hex color)
-LIGHT_SYMS = {
-    "🏮": (6.0, "ffd9a0"),   # braziere
-    "🔥": (5.0, "ffb37a"),   # fuoco
-    "🕯": (3.0, "ffe6b3"),   # candele
-    "🕳": (0.0, "000000"),   # (no light) — placeholder, filtered out
-    "🔮": (4.0, "b3e6ff"),   # cristalli / altare magico
-    "✨": (3.0, "e6ccff"),
-    "⚡": (4.0, "fff0a0"),
-}
+# I muri, le porte e le luci NON si dichiarano qui.
+#
+# ⚠️ Fino al 2026-09-12 questo file portava tre set propri — `WALL_SYMS`,
+# `DOOR_SYMS`, `LIGHT_SYMS` — accanto alla tabella `SYMBOLS` del renderer, che
+# nessuno confrontava. Erano gia' divergiti due volte, e ogni volta e' costato
+# un ADR a se': ADR-0042 (⛺ tenda che non bloccava la vista) e ADR-0043 (⛰
+# montagne attraversabili in Foundry). ADR-0048 ha tolto la causa: la fonte e'
+# `scripts/legend.yaml`, e il gate `legend/single-source` boccia chi ne
+# ridichiara uno.
+#
+# I motivi di ogni appartenenza — perche' ⛺ e' un muro e 🔳 no, perche' 🪨
+# resta fuori — stanno nei commenti di `legend.yaml`, accanto al dato.
+WALL_SYMS = set(legenda.muri())
+DOOR_SYMS = set(legenda.porte())
+# simbolo -> (raggio in quadretti, colore). ⚠️ La spec normativa lo da' in
+# METRI con quattro valori diversi su quattro: divergenza aperta, decisione D1
+# di plans/PIANO-VENDIBILITA.md §8. Qui vince il codice.
+LIGHT_SYMS = dict(legenda.luci())
 
 
 def _grid_matrix(gmap: dict) -> list[list[str]]:
@@ -262,7 +267,7 @@ def main(argv=None) -> int:
         if args.map and i != args.map:
             continue
         uvtt = build_uvtt(m, args.ppg, image_b64)
-        slug = rms.slugify(m["title"])
+        slug = rms.nome_mappa(m["title"])
         name = f"{src.stem}_map{i:02d}_{slug}.{args.ext}"
         dest = out_dir / name
         dest.write_text(json.dumps(uvtt, ensure_ascii=False, indent=1), encoding="utf-8")

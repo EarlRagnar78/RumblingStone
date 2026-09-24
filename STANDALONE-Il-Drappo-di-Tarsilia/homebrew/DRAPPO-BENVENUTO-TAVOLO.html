@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Benvenuti a Tarsilia</title>
+<style>
+  :root{
+    --chrome-bg:#efe9dd; --chrome-ink:#3a3126; --chrome-line:#d8cdb8;
+    --tab-bg:#e2d8c2; --tab-active:#58180D; --tab-active-ink:#f5edd6;
+    --sheet:#EEE5CE; --ink:#2b241c; --rubric:#58180D; --brass:#c9ad6a;
+    --note-bg:#e0e5c1; --desc-bg:#faf3e3; --banner:#B31515; --banner-ink:#f7ecd4;
+    --shadow:0 10px 26px rgba(43,36,28,.35);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --chrome-bg:#221e19; --chrome-ink:#d8cdb8; --chrome-line:#3b342b;
+           --tab-bg:#2f2921; --shadow:0 12px 30px rgba(0,0,0,.6); }
+  }
+  :root[data-theme="dark"]{ --chrome-bg:#221e19; --chrome-ink:#d8cdb8; --chrome-line:#3b342b;
+           --tab-bg:#2f2921; --shadow:0 12px 30px rgba(0,0,0,.6); }
+  :root[data-theme="light"]{ --chrome-bg:#efe9dd; --chrome-ink:#3a3126; --chrome-line:#d8cdb8;
+           --tab-bg:#e2d8c2; --shadow:0 10px 26px rgba(43,36,28,.35); }
+
+  body{ background:var(--chrome-bg); color:var(--chrome-ink);
+        font-family:Georgia,'Times New Roman',serif; margin:0; }
+  header.top{ padding:1.4rem 1rem .6rem; text-align:center; }
+  header.top h1{ font-size:1.15rem; margin:0; letter-spacing:.06em; text-transform:uppercase; }
+  header.top p{ margin:.35rem auto 0; max-width:46rem; font-size:.9rem; opacity:.8; font-style:italic; }
+
+  nav.tabs{ display:flex; gap:.5rem; justify-content:center; flex-wrap:wrap;
+            padding:.8rem 1rem 1.2rem; position:sticky; top:0;
+            background:var(--chrome-bg); border-bottom:1px solid var(--chrome-line); z-index:5;
+            max-width:64rem; margin:0 auto;}
+  nav.tabs button{ font:inherit; font-size:.72rem; letter-spacing:.05em;
+      padding:.35rem .6rem; border:1px solid var(--chrome-line);
+      background:var(--tab-bg); color:var(--chrome-ink); cursor:pointer; border-radius:2px;}
+  nav.tabs button[aria-selected="true"]{ background:var(--tab-active); color:var(--tab-active-ink);
+      border-color:var(--tab-active); }
+  nav.tabs button:focus-visible{ outline:2px solid var(--rubric); outline-offset:2px; }
+
+  main{ display:flex; flex-direction:column; align-items:center; gap:2rem; padding:2rem .8rem 4rem; }
+  section.pane{ display:none; flex-direction:column; gap:2rem; align-items:center; width:100%; }
+  section.pane.on{ display:flex; }
+
+  .sheet{ background:var(--sheet); color:var(--ink); width:min(52rem,100%);
+      box-shadow:var(--shadow); padding:2.6rem 2.8rem 3.4rem; position:relative;
+      background-image:radial-gradient(ellipse at 18% 8%, rgba(201,173,106,.16), transparent 55%),
+                       radial-gradient(ellipse at 85% 95%, rgba(88,24,13,.07), transparent 50%);
+      border:1px solid #d9ccab; }
+  .sheet, .sheet table{ font-size:.94rem; line-height:1.45; }
+
+  .cover{ text-align:center; display:flex; flex-direction:column; justify-content:center;
+          min-height:34rem; gap:1rem;}
+  .cover .brand{ letter-spacing:.35em; font-size:.8rem; color:var(--rubric); }
+  .cover h2{ font-variant:small-caps; font-size:2.6rem; margin:.1em 0; color:var(--rubric);
+             line-height:1.05; text-wrap:balance;}
+  .cover h3{ font-style:italic; font-weight:normal; font-size:1.25rem; margin:0; }
+  .rule{ border:none; height:3px; width:60%; margin:0.6rem auto;
+         background:linear-gradient(90deg,transparent,var(--rubric),transparent); }
+  .banner{ display:inline-block; margin:0 auto; background:var(--banner); color:var(--banner-ink);
+      padding:.35rem 1.6rem; letter-spacing:.25em; font-size:.85rem;
+      clip-path:polygon(4% 0,96% 0,100% 50%,96% 100%,4% 100%,0 50%); }
+  .covermeta{ font-size:.8rem; font-style:italic; opacity:.85; max-width:34rem; margin:1.6rem auto 0;
+      border-top:1px solid var(--brass); padding-top:.8rem;}
+
+  .twocol{ column-count:2; column-gap:2.2rem; }
+  @media (max-width:44rem){ .twocol{ column-count:1; } .sheet{ padding:1.6rem 1.2rem 2.4rem; } }
+  .twocol > *{ break-inside:avoid; }
+
+  .sheet h2.sec{ font-variant:small-caps; color:var(--rubric); font-size:1.5rem;
+      margin:1.1rem 0 .3rem; border-bottom:2px solid var(--brass); padding-bottom:.15rem;
+      column-span:all; text-wrap:balance;}
+  .sheet h3.sub{ font-variant:small-caps; color:var(--rubric); font-size:1.12rem; margin:.9rem 0 .25rem;}
+  .sheet h4.sub4{ font-variant:small-caps; color:var(--rubric); font-size:1rem; margin:.7rem 0 .2rem;}
+  .sheet p{ margin:.45rem 0; text-align:justify; hyphens:auto;}
+  .sheet .lede::first-letter{ font-size:3.1em; float:left; line-height:.82;
+      padding:.04em .08em 0 0; color:var(--rubric); font-family:Georgia,serif;}
+  .sheet ul{ margin:.4rem 0 .7rem 1.2rem; padding:0;}
+  .sheet ol{ margin:.4rem 0 .7rem 1.4rem; padding:0;}
+  .sheet li{ margin:.22rem 0;}
+  .atmo{ font-style:italic; text-align:center; margin:1rem 0;}
+
+  .tablewrap{ overflow-x:auto; margin:.6rem 0 1rem; column-span:all;}
+  .sheet table{ border-collapse:collapse; width:100%; min-width:34rem;}
+  .sheet th{ background:var(--rubric); color:var(--banner-ink); text-align:left;
+      padding:.3rem .55rem; font-variant:small-caps; font-weight:normal; letter-spacing:.04em;}
+  .sheet td{ padding:.3rem .55rem; vertical-align:top; border-bottom:1px solid #d6c69c;}
+  .sheet tbody tr:nth-child(odd){ background:rgba(201,173,106,.14); }
+
+  .note,.desc{ padding:.8rem 1rem; margin:.9rem 0; break-inside:avoid; }
+  .note{ background:var(--note-bg); border-top:3px solid var(--rubric);
+         border-bottom:3px solid var(--rubric); box-shadow:2px 2px 0 rgba(43,36,28,.15);}
+  .desc{ background:var(--desc-bg); border:2px solid var(--brass); position:relative;}
+  .desc::before,.desc::after{ content:"❧"; position:absolute; color:var(--brass); font-size:.9rem;}
+  .desc::before{ top:-2px; left:6px;} .desc::after{ bottom:-2px; right:6px; transform:rotate(180deg);}
+  .note h4,.desc h4{ margin:.1rem 0 .35rem; font-variant:small-caps; color:var(--rubric); font-size:1rem;}
+  .readaloud{ font-style:italic; }
+  .vague{ font-style:italic; font-size:.86rem; opacity:.9; }
+
+  pre.mono{ background:rgba(201,173,106,.18); border:1px solid var(--brass); padding:.6rem .8rem;
+      overflow-x:auto; font-size:.8rem; line-height:1.35; font-family:ui-monospace,Consolas,monospace;}
+  .figure{ margin:.8rem auto; text-align:center; }
+  .figure svg{ max-width:100%; height:auto; border:1px solid var(--brass); background:#efe6cf;}
+  .figure img{ max-width:100%; height:auto; border:1px solid var(--brass);}
+  .figure.placeholder{ border:2px dashed var(--brass); padding:1.6rem; background:rgba(201,173,106,.12);}
+
+  .pagefoot{ display:flex; justify-content:space-between; align-items:baseline;
+      margin-top:2.2rem; border-top:1px solid var(--brass); padding-top:.5rem;
+      font-size:.72rem; letter-spacing:.14em; color:var(--rubric); font-variant:small-caps;}
+  .pagefoot .n{ font-family:Georgia,serif; font-size:1rem; font-variant-numeric:tabular-nums;}
+  .dmtag{ position:absolute; top:.9rem; right:1rem; font-size:.62rem; letter-spacing:.2em;
+      color:var(--banner); border:1px solid var(--banner); padding:.15rem .5rem; }
+  .pgtag{ position:absolute; top:.9rem; right:1rem; font-size:.62rem; letter-spacing:.2em;
+      color:#2f5d31; border:1px solid #2f5d31; padding:.15rem .5rem; }
+  .caption{ font-size:.78rem; text-align:center; opacity:.75; max-width:40rem; font-style:italic;}
+  .printbtn{ position:fixed; right:1rem; bottom:1rem; z-index:9; font:inherit; font-size:.8rem;
+      padding:.5rem .9rem; border:1px solid var(--chrome-line); border-radius:4px; cursor:pointer;
+      background:var(--tab-active); color:var(--tab-active-ink); box-shadow:var(--shadow);}
+
+  /* ── Stampa / PDF A4 (ADR-0013 §5): via testata e tab, resta SOLO la
+     scheda attiva, pergamena a piena pagina, colori esatti. ───────────── */
+  @media print{
+    @page{ size:A4; margin:0; }
+    header.top, nav.tabs, .printbtn{ display:none !important; }
+    body{ background:var(--sheet); }
+    main{ display:block; padding:0; }
+    section.pane{ display:none; }
+    section.pane.on{ display:block; }
+    .sheet{ width:100%; box-sizing:border-box; min-height:calc(100vh - 2px);
+            box-shadow:none; border:none; margin:0;
+            padding:14mm 16mm 16mm; break-after:page;
+            -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    .sheet:last-child{ break-after:auto; }
+    .tablewrap{ overflow-x:visible; }
+    .sheet table{ min-width:0; }
+    /* le mappe ASCII/emoji non hanno scrollbar su carta: si riducono
+       quanto basta per stare nel foglio senza tagli */
+    pre.mono{ font-size:.6rem; line-height:1.3; overflow:visible; }
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <h1>Benvenuti a Tarsilia</h1>
+  <p></p>
+</header>
+<nav class="tabs" role="tablist"><button role="tab" aria-selected="true" data-pane="c0">Copertina</button><button role="tab" aria-selected="false" data-pane="c1">✉ Benvenuti a Tarsilia</button></nav>
+<main>
+<section class="pane on" id="c0">
+  <div class="sheet cover">
+    <div class="brand">IL DRAPPO DI TARSILIA · PF1e</div>
+    <h2>Benvenuti a Tarsilia</h2>
+    <h3>Quello che sanno tutti, prima di cominciare</h3>
+    <hr class="rule">
+    <div><span class="banner">DA DARE A TUTTI</span></div>
+    
+    <p class="covermeta">Pathfinder 1e · tre serate · sei giocatori</p>
+  </div>
+  
+</section>
+<section class="pane" id="c1">
+  <div class="sheet"><span class="pgtag">✉ HANDOUT GIOCATORE</span>
+    <div class="chapter-body"><h2 class="sec">✉ Benvenuti a Tarsilia</h2>
+<p><em>Da leggere prima della prima serata. Non c'è dentro nessuno spoiler: sono le cose che i vostri personaggi sanno da sempre.</em></p>
+<hr class="rule">
+<h2 class="sec">Dove siete</h2>
+<p><strong>Tarsilia</strong>, città-stato del Regno dei Fiumi, sul Sellen, tre giorni di barca a monte di Cassomir. Quattromila anime, cinque ponti di cui due che dondolano, e nessun re.</p>
+<p>Vive di tre cose: il pedaggio sul fiume, <strong>la resina</strong> che raccogliete voi, e i tintori che quella resina la comprano e la rivendono lavorata a valle.</p>
+<p>Non ha mura verso il fiume e ne ha di ottime verso terra, il che dice tutto su chi la assale di solito.</p>
+<h2 class="sec">Cosa si corre</h2>
+<p>Il <strong>Drappo</strong>: un telo dipinto ogni anno da un pittore diverso. Chi vince se lo porta nell'oratorio della contrada e tiene per un anno il <strong>seggio girevole</strong> in consiglio — l'unico voto che cambia mano.</p>
+<p>Si corre sulla <strong>Ruota</strong>: un anello di terra battuta intorno al vecchio mercato coperto del grano. <strong>Tre giri.</strong> Due curve: una a nord davanti al Ponte Storto, una a sud sotto le finestre del palazzo dell'Oca. È lì che si cade.</p>
+<h2 class="sec">Le otto contrade</h2>
+<div class="tablewrap"><table><thead><tr><th>#</th><th>Contrada</th><th>Dèi</th><th>Livrea</th><th>Motto</th><th>Di che campa</th></tr></thead><tbody><tr><td>1</td><td><strong>Oca</strong></td><td>Abadar</td><td>marmo e lapis, bordata d'oro</td><td><em>«Si paga tutto, anche il tempo»</em></td><td>banche, pesi e misure</td></tr><tr><td>2</td><td><strong>Torre</strong></td><td>Iomedae, Gorum</td><td>ferro rugginoso e argento</td><td><em>«Chi tiene la porta tiene la città»</em></td><td>milizia, fabbri</td></tr><tr><td>3</td><td><strong>Bruco</strong></td><td>Norgorber</td><td>argento e nero-fumo, verde veleno</td><td><em>«Il filo lo vedi quando è già cucito»</em></td><td>tintorie, tessuti</td></tr><tr><td>4</td><td><strong>★ Istrice</strong></td><td>Sarenrae, Erastil</td><td>verde legnoferro e bruno</td><td><em>«Chi non ha niente divide lo stesso»</em></td><td>resina, legname, l'ospizio</td></tr><tr><td>5</td><td><strong>Drago</strong></td><td>Nethys</td><td>nero e argento, listata di viola</td><td><em>«Due mani, e nessuna vuota»</em></td><td>scuola di magia, alchimisti</td></tr><tr><td>6</td><td><strong>Civetta</strong></td><td>Calistria</td><td>nero e giallo vespa</td><td><em>«Chi conta i debiti dorme poco»</em></td><td>prestiti, cause, informazioni</td></tr><tr><td>7</td><td><strong>Leocorno</strong></td><td>Shelyn</td><td>rosa e argento, l'oro del corno</td><td><em>«Suona finché qualcuno risponde»</em></td><td>musici, pittori, il teatro</td></tr><tr><td>8</td><td><strong>Onda</strong></td><td>Gozreh, Desna</td><td>verde fiume e argento lunare</td><td><em>«Il fiume non chiede permesso»</em></td><td>battellieri, pescatori</td></tr></tbody></table></div>
+<p><strong>Voi siete l'Istrice.</strong> Non vi piazzate da quarant'anni.</p>
+<h2 class="sec">Le tre giornate</h2>
+<div class="tablewrap"><table><thead><tr><th><strong>Giorno 1 — La Sorte</strong></th><th>si consegna il Peso di contrada, e un'urna decide quale cavallo vi tocca</th></tr></thead><tbody><tr><td><strong>Giorno 2 — I Partiti e la Cena</strong></td><td>gli otto Capitani si chiudono nel mercato del grano a fare patti. La sera, tutto il rione mangia nei vicoli</td></tr><tr><td><strong>Giorno 3 — Lo Stacco e la Corsa</strong></td><td>benedizione all'alba, corteo, e tre giri della Ruota</td></tr></tbody></table></div>
+<h2 class="sec">Le parole che sentirete</h2>
+<div class="tablewrap"><table><thead><tr><th>Parola</th><th>Cosa vuol dire</th></tr></thead><tbody><tr><td><strong>la Sorte</strong></td><td>l'estrazione pubblica che abbina i cavalli alle contrade</td></tr><tr><td><strong>il Peso di contrada</strong></td><td>cento monete d'oro <strong>di merce vostra</strong>, pesata in pubblico, per essere ammessi</td></tr><tr><td><strong>i Partiti</strong></td><td>i patti segreti fra Capitani: un favore in corsa scambiato con qualcosa fuori dalla corsa</td></tr><tr><td><strong>le funi</strong></td><td>le corde della partenza. Sette cavalli dentro, l'ottavo di rincorsa</td></tr><tr><td><strong>lo Stacco</strong></td><td>il momento della partenza. Finte, scudisciate, psicologia</td></tr><tr><td><strong>lo scudiscio</strong></td><td>la frusta. Frustare <strong>il fantino</strong> avversario è legale; frustare <strong>il cavallo</strong> no</td></tr><tr><td><strong>il cavallo scosso</strong></td><td>un cavallo che perde il fantino continua a correre, <strong>e può vincere</strong></td></tr><tr><td><strong>il Drappo</strong></td><td>il telo dipinto. Il premio</td></tr></tbody></table></div>
+<h2 class="sec">I due contatori</h2>
+<p>Il DM ne tiene due a vista sul tavolo. Sono vostri: proteggeteli.</p>
+<ul><li><strong>Morale del Rione (0-10)</strong> — quanto la contrada ci crede. Sale con canti, bandiere e gesti pubblici. In Corsa vale bonus a Cavalcare e Iniziativa.</li><li><strong>Onore del Fantino (0-10)</strong> — quanto la contrada tratta bene chi corre per lei.</li></ul>
+<h2 class="sec">Tre cose da sapere sul tavolo</h2>
+<ol><li><strong>Non è un modulo che si vince ammazzando.</strong> Tre combattimenti in tre sere, tutti brevi e tutti evitabili.</li><li><strong>Ognuno dei sei ha un posto in Corsa</strong> e un'azione per giro, anche chi non cavalca. Sceglietelo prima dello Stacco.</li><li><strong>Chiunque, in qualunque momento, può battere due dita sul tavolo.</strong> Si taglia e si riprende dieci secondi prima, senza spiegazioni.</li></ol>
+<hr class="rule">
+<p><em>Va' e torna vincitore.</em></p></div>
+    <div class="pagefoot"><span>Benvenuti a Tarsilia · ✉ Benvenuti a Tarsilia</span>
+    <span class="n">2</span></div>
+  </div>
+</section></main>
+<button class="printbtn" onclick="window.print()" title="Stampa/salva in PDF SOLO la scheda aperta (A4)">🖨 Salva PDF</button>
+<script>
+  const tabs=document.querySelectorAll('nav.tabs button');
+  function show(id){
+    tabs.forEach(x=>x.setAttribute('aria-selected',x.dataset.pane===id));
+    document.querySelectorAll('section.pane').forEach(p=>p.classList.toggle('on',p.id===id));
+    window.scrollTo({top:0});
+  }
+  tabs.forEach(b=>b.addEventListener('click',()=>{
+    show(b.dataset.pane); history.replaceState(null,'','#'+b.dataset.pane);
+  }));
+  // deep-link #cN: apre direttamente quella scheda (usato anche
+  // dall'export PDF headless — ADR-0013 §5)
+  if(location.hash && document.getElementById(location.hash.slice(1)))
+    show(location.hash.slice(1));
+</script>
+</body>
+</html>

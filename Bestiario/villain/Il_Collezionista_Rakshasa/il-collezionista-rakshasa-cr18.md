@@ -1,4 +1,6 @@
-# Il Collezionista (Maestro Varis "Seta-Argento") [POINTER — canonical file]
+# Il Collezionista [POINTER — canonical file] [RIMANDO]
+
+**Key stats**: → `Bestiario/villain/Il_Collezionista_Rakshasa/Il_Collezionista_Rakshasa.md` (il blocco sta lì).
 
 **Faction**: rakshasa | **Role**: boss-shadow-mastermind | **Environment**: urban,plane | **CR**: 18
 **Source**: `Bestiario/villain/Il_Collezionista_Rakshasa/Il_Collezionista_Rakshasa.md` (canonical scheda, GS 17-19, Rakshasa Ak'chazar Avanzato)

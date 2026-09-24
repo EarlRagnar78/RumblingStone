@@ -30,6 +30,10 @@ import sys
 from datetime import date
 from pathlib import Path
 
+import sys as _sys
+_sys.path.insert(0, str(Path(__file__).resolve().parent))
+from dmcore.testo import riscala_link  # noqa: E402
+
 REPO = Path(__file__).resolve().parent.parent
 RECAPS = REPO / "campaign" / "recaps"
 TEMPLATES = REPO / "campaign" / "templates" / "homebrew"
@@ -267,12 +271,31 @@ def extract_section(text: str, sezione: str) -> str:
     return "\n".join(lines[start:end])
 
 
+# I marcatori della regia DM dentro un file di handout. Sono blockquote che
+# parlano AL MASTER e che in un prop finirebbero in mano ai giocatori.
+#
+# ⚠️ La riga «Nota anti-spoiler» è arrivata dopo, e per un motivo preciso: la
+# nota finale di `ARC07-HANDOUTS.md` — quella che avverte di non rivelare il
+# carry-over Skullcrusher→Fauci — è finita STAMPATA dentro la carta delle
+# Benedizioni, perché apparteneva all'ultima sezione del file e il filtro non
+# la conosceva. Una guardia anti-spoiler che finisce nel prop è il difetto che
+# doveva impedire.
+_REGIA_DM = re.compile(
+    r"\*\*Quando darlo\*\*|Come si usa questa scheda|Nota anti-spoiler"
+    r"|Nota per il DM|\bSOLO DM\b|\*\*Regola d'oro\*\*",
+    re.IGNORECASE)
+
+# Un blockquote che cita un FILE del repo è contabilità interna, non finzione:
+# nessun giocatore deve leggere il nome di un master sulla propria carta.
+_CITA_FILE = re.compile(r"`[^`]+\.(md|pdf)`")
+
+
 def strip_dm_staging(text: str) -> str:
-    """Toglie i paragrafi-blockquote di regia DM ('Quando darlo', fonti)."""
+    """Toglie i paragrafi-blockquote di regia DM ('Quando darlo', note, fonti)."""
     paragraphs = re.split(r"\n\s*\n", text)
     kept = [p for p in paragraphs
-            if not (p.lstrip().startswith(">") and re.search(
-                r"\*\*Quando darlo\*\*|Come si usa questa scheda", p))]
+            if not (p.lstrip().startswith(">")
+                    and (_REGIA_DM.search(p) or _CITA_FILE.search(p)))]
     return "\n\n".join(kept)
 
 
@@ -317,6 +340,12 @@ def hype_handout(tipo: str, da: str | None, out: str | None,
 
     out_path = Path(out) if out else (Path(da).with_suffix(".hb.md") if da
                                       else REPO / f"{tipo}.hb.md")
+    # Se l'handout finisce in una cartella diversa dal sorgente, i suoi link
+    # relativi vanno riscalati o puntano al vuoto (lotto E1, 2026-09-12).
+    # Col default `--out` assente sorgente e destinazione coincidono e questa
+    # riga non fa niente.
+    if da:
+        hb = riscala_link(hb, Path(da).resolve().parent, out_path.resolve().parent)
     out_path.write_text(hb, encoding="utf-8")
     print(f"[hype] ✓ {out_path} — incolla su homebrewery.naturalcrit.com")
     return out_path

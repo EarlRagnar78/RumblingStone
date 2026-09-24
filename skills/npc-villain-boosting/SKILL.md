@@ -30,6 +30,29 @@ to use** — then hands off to the method references.
    before boosting any *named* PNG — a boost must not contradict established
    fiction (a villain the party already fought doesn't silently gain 6 HD).
 
+## Before anything: is there something to boost at all?
+
+Boosting is for a creature that **already exists**. If the catalog has nothing
+close, the tool is a different one:
+
+```bash
+python3 scripts/genera_creatura.py --gs 7 --tipo umanoide --ruolo bruto
+python3 scripts/genera_creatura.py --gs 7 --ruolo bruto --piu-cattivi
+
+# un incantatore: la lista viene dalla classe, non dal ruolo
+python3 scripts/genera_creatura.py --gs 12 --ruolo controllore \
+    --classe druido:12 --funzione controllore
+```
+
+It **builds** a creature from the SRD 3.5 tables (ADR-0034); `--piu-cattivi`
+applies the PF1e **Advanced** template *without raising the CR*, so the creature
+hits like CR+1 while being sold as CR — and says so in its own block. It never
+writes into `Bestiario/`.
+
+⚠️ Prefer boosting whenever something similar exists: a catalog creature already
+has a name, a faction and a history, and the generator gives you none of those.
+The generator's real case is a **throwaway encounter**.
+
 ## The 60-second decision
 
 ```
@@ -52,7 +75,7 @@ Is the encounter under-tuned for APL 13?
 - **Visibility rule:** every +1 CR must buy something the players *feel*
   (to-hit/DC pressure or survivability) — never boost bookkeeping-only.
 - **Coherence rule:** boosts to named PNGs/villains are permanent and must be
-  written to the PNG's file (`Bestiario/villain/`, `Bestiario/png/` or `campaign/npcs/`) with a
+  written to the PNG's file (`Bestiario/villain/` or `Bestiario/png/`) with a
   `Boost log:` line (date, method, CR before → after). No stealth retcons.
 - **No invention:** boosted stats derive from SRD/PF1e rules cited in the
   method files. Uncertain values are flagged `[INFERRED — needs DM

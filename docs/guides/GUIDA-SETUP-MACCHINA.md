@@ -26,19 +26,40 @@ generare booklet HTML, renderizzare mappe e usare il bestiario.
 
 ## 1. Cosa serve davvero (e cosa no)
 
+La tabella qui sotto è comoda da leggere, ma **non è la fonte**: quella è
+`scripts/binari.py`, e si interroga senza leggere niente.
+
+```bash
+python3 scripts/binari.py     # cosa c'è, cosa manca, e quali catene partono stasera
+```
+
+Stampa Python e la sua soglia, i binari con il loro ripiego, le due librerie e
+soprattutto l'ultima sezione, che è quella che serve davvero prima di una
+sessione: **quali catene di lavoro sono pronte** e cosa manca a quelle che non
+lo sono. `dm.py doctor` legge dallo stesso registro (lotto D di
+[PIANO-QUALITA-DEL-CODICE](../../plans/PIANO-QUALITA-DEL-CODICE.md)); prima
+teneva una lista sua e le due divergevano.
+
 | Componente | Serve per | Obbligatorio? |
 |---|---|---|
-| **Python 3.11+** | tutto: gli script sono **stdlib-only** (nessun `pip install`, nessun `requirements.txt`) | ✅ sì |
+| **Python 3.11+** | tutto. Gli script usano la sola libreria standard ([ADR-0037](../../plans/adr/ADR-0037-stdlib-only-e-le-sue-eccezioni.md)): niente `requirements.txt`, niente ambiente virtuale | ✅ sì |
 | **git** | clonare, versionare, branch di gruppo | ✅ sì |
+| **bash** | i cinque script shell. Su Windows: Git Bash o WSL | quasi: gli equivalenti Python coprono il flusso principale |
+| **pyyaml** (`pip install pyyaml`) | il frontmatter delle skill. È l'unica libreria che un gate della CI pretende, e ADR-0037 la dichiara come debito | ✅ per le skill |
 | **Chromium / Chrome** | PDF dei booklet, PNG delle mappe | solo per quegli export |
-| **Pillow** (`pip install pillow`) | ricomprimere immagini grandi nell'HTML dei booklet | opzionale |
+| **Typst** | l'edizione da stampa ([ADR-0020](../../plans/adr/ADR-0020-edizione-da-stampa-su-un-secondo-binario.md)) | solo per il volume da stampa |
+| **pdfcpu** | l'imposizione del libretto ([ADR-0027](../../plans/adr/ADR-0027-imposizione-con-pdfcpu.md)) | solo per il libretto piegato |
+| **Inkscape** | PNG delle mappe con resa SVG fedele (`--renderer inkscape`, default se installato) | opzionale: in sua assenza il PNG esce da Chromium |
+| **Pillow** (`pip install pillow`) | ricomprimere immagini grandi nell'HTML dei booklet e generare i derivati | opzionale, e degrada da sola |
 | **pandoc + xelatex** | `dm.py recap --pdf` (il recap in PDF «sobrio») | opzionale |
+| **cwebp** | convertire i master delle immagini in WebP | opzionale |
 | **Docker / Podman** | editor Homebrewery, container PDF, ComfyUI | opzionale |
 | **shellcheck** | lint degli script shell (in CI è non bloccante) | opzionale |
 
-> Nota: `doctor` segnala pandoc/xelatex assenti come **`○`** (pallino, non
-> errore). È normale: sono opzionali e non impediscono nulla del flusso
-> principale.
+> Nota: `doctor` segnala gli assenti opzionali come **`○`** (pallino, non
+> errore). È normale: hanno tutti un ripiego dichiarato e non impediscono nulla
+> del flusso principale. L'unica assenza che diventa un avviso vero è `pyyaml`,
+> perché lì un gate della CI si ferma.
 
 ---
 
@@ -50,10 +71,12 @@ cd RumblingStone
 python3 scripts/dm.py doctor
 ```
 
-`doctor` controlla, nell'ordine: versione di Python, presenza di
-`campaign/state.md`, `campaign/sessions/`, `campaign/templates/`,
-`scripts/map_templates/`, `plans/INDEX.md`, **freschezza del catalogo
-mostri**, e lo stato del flusso branch-di-gruppo.
+`doctor` controlla, nell'ordine: versione di Python (la soglia la legge da
+`binari.py`, non l'ha scritta lui), presenza di `campaign/state.md`,
+`campaign/sessions/`, `campaign/templates/`, `scripts/map_templates/`,
+`plans/INDEX.md`, **freschezza del catalogo mostri**, lo stato del flusso
+branch-di-gruppo, e infine tutte le dipendenze esterne con le catene che
+dipendono da loro.
 
 Legenda dell'output: **✓** a posto · **○** opzionale o non ancora attivato
 · **✗** da sistemare.
@@ -110,7 +133,7 @@ assente», «marker `auto:` assenti»): non è un errore — significa solo che
 il flusso automatico di chiusura sessione non è ancora attivo su questa
 copia.
 
-**Un secondo gruppo che rigioca la campagna da capo**: `scripts/new-campaign-group.sh`
+**Un secondo gruppo che rigioca la campagna da capo**: `python3 scripts/dm.py gruppo nuovo`
 (vedi `campaign/DM-CAMPAIGN-PLAYBOOK.md` §7 — «Reset per nuovo gruppo»).
 
 ---

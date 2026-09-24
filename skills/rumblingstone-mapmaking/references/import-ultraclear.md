@@ -83,13 +83,13 @@ Ogni conflitto è un record **machine-actionable** (contratto
                { "kind": "ignore",    "label": "Ignora" } ] }
 ```
 
-- **`uid`** — chiave d'istanza stabile (fingerprint deterministico): l'editor
+- **`uid`**: chiave d'istanza stabile (fingerprint deterministico): l'editor
   traccia lo stato "risolto/ignorato" fra un'esecuzione e l'altra.
-- **`where`** — ancora geometrica (celle/rect) da evidenziare, coord 0-based.
-- **`observed` / `expected`** — le due candidate (figura vs tabella) fra cui
+- **`where`**: ancora geometrica (celle/rect) da evidenziare, coord 0-based.
+- **`observed` / `expected`**: le due candidate (figura vs tabella) fra cui
   scegliere.
-- **`target`** — JSON Pointer (RFC 6901) all'elemento della bozza.
-- **`actions`** — i bottoni dell'editor; applicare un'azione cambia la bozza in
+- **`target`**: JSON Pointer (RFC 6901) all'elemento della bozza.
+- **`actions`**: i bottoni dell'editor; applicare un'azione cambia la bozza in
   modo deterministico. Vocabolario: `use_table`, `use_grid`, `replace_symbol`,
   `resize_map`, `edit_coord`, `set_quantity`, `confirm_distinct`, `rename`,
   `ignore`.

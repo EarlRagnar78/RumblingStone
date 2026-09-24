@@ -33,11 +33,48 @@ Serve saperlo, perché cambia cosa puoi fare con *quale* file.
 |---|---|---|---|
 | 1 | **Wizards of the Coast** | *Red Hand of Doom* e Forgotten Realms **non-SRD**: Channathgate/Valle del Channath, divinità FR, PNG e trama dell'avventura originale | **blocco assorbente su TUTTO il repo**: da solo basta a escludere l'uso commerciale |
 | 2 | **Palio di Siena** (Comune + Consorzio CTPS) | l'arco P2D evoca segni tutelati: titoli araldici, livree, motti, «Piazza il Campo», la geometria della piazza | peggiora **solo** lo scenario commerciale, non quello privato |
-| 3 | **Tuo** (l'autore) | testi originali, stemmi SVG, renderer, script, tutta l'automazione | l'**unica** parte che la GPL-3 del repo copre davvero |
+| 3 | **Tuo** (l'autore) | testi originali, stemmi SVG, renderer, script, tutta l'automazione | l'**unica** parte che una licenza tua può coprire davvero |
 
 Tradotto: anche se domani riscrivessi tutto il Palio da zero, resterebbe il
-blocco WotC. **Non è una questione di quanto lavoro ci metti: è di cosa
-adatta il materiale.**
+blocco WotC. **Conta di cosa adatti il materiale, non quanto lavoro
+ci metti.**
+
+### 1-bis. Le due licenze del repo, e le tre cose che NON coprono
+
+Dal 2026-09-02 il repo ha **due licenze**, perché è per tre quarti prosa e per un
+quarto strumenti, e una licenza sola ne sbagliava una
+([ADR-0029](../../plans/adr/ADR-0029-licenza-doppia-testo-e-script.md), pagina
+intera in [`LICENSES.md`](../../LICENSES.md)):
+
+| Cosa | Licenza |
+|---|---|
+| **Il testo** — avventure, canone, guide, piani, ADR, skill, tavole | **CC BY-NC-SA 4.0** ([`LICENSE`](../../LICENSE)) |
+| **Gli strumenti** — tutto `scripts/` | **MIT** ([`scripts/LICENSE`](../../scripts/LICENSE)) |
+
+Nel dubbio: **se lo legge un essere umano al tavolo è testo; se lo esegue una
+macchina è strumento.**
+
+Perché due. Il file di licenza e questa guida **si contraddicevano**: qui c'è
+scritto «uso non commerciale», e la GPL-3 che il repo aveva prima *garantisce
+espressamente* il diritto di vendere copie. In un contenzioso conta il file.
+
+⚠️ **Tre cose che quelle due licenze non coprono**, e ignorarle è il modo di
+trasformare una licenza in un problema:
+
+1. **Il contenuto SRD resta Open Game Content sotto OGL 1.0a**, non sotto CC.
+   Statblocchi, incantesimi, classi e oggetti derivati dall'SRD 3.5 sono OGC, e
+   **chi ridistribuisce materiale che ne contiene deve accompagnarlo con la
+   Sezione 15** dell'OGL. Non ti riguarda finché il repo resta privato: ti
+   riguarda **nel momento in cui qualcosa esce**, ed è entrato nella checklist §7.
+2. **I marchi altrui non si licenziano perché si nominano.** *Forgotten Realms*
+   non diventa tuo da dare mettendolo sotto CC — vedi la riga 1 della tabella qui
+   sopra, che prevale su tutto.
+3. **MIT su `scripts/` non copre `scripts/typst/packages/`**: quello è codice di
+   terzi (`droplet`, MIT · `in-dexter`, Apache-2.0) con la propria licenza.
+
+E soprattutto: **questa guida prevale sulla licenza.** Una licenza dice cosa
+possono fare gli altri con ciò che pubblichi; il §7 qui sotto dice **se e cosa**
+pubblichi. Sono due domande diverse, e la seconda viene prima.
 
 ---
 
@@ -70,8 +107,8 @@ Dettagli: [GUIDA-BOOKLET-E-PDF](GUIDA-BOOKLET-E-PDF.md) §9 (checklist di conseg
 GPL-3. La posture è **rischio basso ma non nullo**, accettabile finché
 restano vere queste tre condizioni:
 
-- [ ] **uso non commerciale dichiarato** — nessuna monetizzazione, diretta o indiretta;
-- [ ] **note IP interne mantenute** — la sezione *Licensing Information* del
+- [ ] **uso non commerciale dichiarato**: nessuna monetizzazione, diretta o indiretta;
+- [ ] **note IP interne mantenute**: la sezione *Licensing Information* del
       README, ADR-0005 e il rapporto restano nel repo e aggiornati;
 - [ ] **niente rivendicazione di paternità** su ciò che è di terzi (il
       materiale RHoD/FR resta attribuito a chi appartiene).
@@ -99,8 +136,8 @@ forum), aggiungi in calce una nota tipo:
 Non è un «forse»: la verifica ha stabilito che **non può essere confermata**
 la conformità. Due blocchi indipendenti, e basterebbe il primo:
 
-1. **WotC/Forgotten Realms non-SRD** — assorbente su tutto il repo;
-2. **Palio di Siena** — segni tutelati evocati in modo cumulativo.
+1. **WotC/Forgotten Realms non-SRD**: assorbente su tutto il repo;
+2. **Palio di Siena**: segni tutelati evocati in modo cumulativo.
 
 Perché sia anche solo discutibile servirebbero **entrambe** queste cose:
 
@@ -161,6 +198,10 @@ Regola completa: `skills/rumblingstone-mapmaking/references/stile-illustrazione-
 - [ ] Se va ai giocatori: solo file `pg-`, filtro anti-spoiler passato
 - [ ] Se va in pubblico: nota di §3 in calce, niente `pregen-pcgen/`, niente verbatim non-SRD
 - [ ] Se ci sono illustrazioni: nessun nome di artista vivente, provenienza delle tavole nota
+- [ ] Se porta con sé dell'**Open Game Content** (statblocchi, incantesimi, classi,
+      oggetti derivati dall'SRD 3.5 **o da Pathfinder 1e**): ci va il testo
+      dell'OGL 1.0a con la **Sezione 15**, e sta già scritto in
+      [`OGL.txt`](../../OGL.txt) — allegalo, non riscriverlo — §1-bis
 - [ ] Se c'è di mezzo del denaro: **fermati** e leggi §4
 
 ---

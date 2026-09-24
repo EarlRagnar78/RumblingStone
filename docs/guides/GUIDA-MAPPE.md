@@ -95,7 +95,8 @@ un simbolo fuori legenda viene disegnato male o ignorato.
 |---|---|---|---|---|---|
 | 🏰 | muro / roccia solida | 🔵 | PG / alleati | 🪨 | rocce (copertura +4 CA) |
 | ⬜ | pavimento lavorato | 🔴 | nemico standard | 🔥 | fuoco (1d6/round) |
-| ⬛ | struttura (tenda, edificio) | ⚫ | boss / comandante | 💥 | esplosione |
+| ⬛ | edificio (muratura piena) | ⚫ | boss / comandante | 💥 | esplosione |
+| ⛺ | tenda (blocca la vista, si abbatte) | 🔳 | dais / pedana (**non** è muro) | 🧱 | muretto (+4 CA) |
 | 🟪 | pilastro / mithral | 🟡 | incantatore nemico | 💀 | fossa / trappola |
 | 🟩 | pianura | 🟢 | evocazione / bestia | 🕳 | voragine |
 | 🟫 | terra battuta | 🟣 | creatura speciale | 🚪 | porta |
@@ -215,6 +216,41 @@ Due vie per generarle:
 > (posa, luce, palette, tecnica), **mai** nomi di artisti viventi, «in the
 > style of X», né immagini altrui usate come style reference.
 
+### 4.1 Far combaciare l'illustrazione con la pianta — Blender come geometria
+
+C'è un divario che nessun prompt colma. In un modulo pubblicato **la tavola
+della locanda e la pianta della locanda sono la stessa stanza**; qui erano due
+cose scollegate, perché la pianta nasce da un contratto JSON e l'illustrazione da
+una descrizione, e nessuno garantiva che la curva nord fosse a nord.
+
+```bash
+python3 scripts/render_map_blender.py mappa.json --piano-solo   # la geometria, senza Blender
+python3 scripts/render_map_blender.py mappa.json                # veduta ortografica
+python3 scripts/render_map_blender.py mappa.json --profondita   # ← il pezzo che conta
+```
+
+`render_map_blender.py` risolve la geometria con **lo stesso `paint()`** che
+alimenta l'SVG — quindi il 3D non può divergere dalla pianta —, fonde le celle
+uguali in solidi, e la fa rendere a Blender (GPL) in ortografica.
+
+Il secondo uso vale più del primo: **`--profondita`** produce il passo di
+profondità, che si dà a **ControlNet depth** in ComfyUI. L'illustrazione generata
+eredita la pianta reale invece di inventarsela.
+
+Tre cose da sapere prima di usarlo:
+
+- **Blender qui non disegna**: per un ritratto un generatore fa meglio e costa
+  meno. Serve alla geometria, che è l'unica cosa che un generatore non sa fare;
+- **il livello tattico resta fuori**: unità e insidie non sono geometria, sono
+  note del DM — la stessa ragione per cui esiste la mappa in versione giocatore.
+  Le insidie si tengono con `--con-insidie`;
+- **le texture sono opzionali e CC0**: convenzione e fonte in
+  [`scripts/blender/texture/README.md`](../../scripts/blender/texture/README.md).
+  Senza, il render esce coi colori piatti dell'SVG.
+
+Se `blender` non è installato, il tool dice come si installa, **lascia scritto il
+piano di scena** ed esce pulito: quando lo installi, il render riparte da lì.
+
 ---
 
 ## 5. Consegna: SVG, PNG, UVTT
@@ -222,12 +258,12 @@ Due vie per generarle:
 | Formato | Comando | Quando |
 |---|---|---|
 | **SVG** | `dm.py maps render` | il canone nel repo; stampa vettoriale senza perdita |
-| **PNG** | `export_map_png.py <svg> --scale 3` | stampa raster, import manuale nel VTT, input hero-map |
+| **PNG** | `export_map_png.py <svg> --scale 3` | stampa raster, import manuale nel VTT, input hero-map. Usa **Inkscape** se installato, altrimenti Chromium (`--renderer` per forzare) |
 | **UVTT / dd2vtt** | `export_uvtt.py <master.md> --ppg 140` | import **nativo** in Foundry/Roll20 |
 
 ### Cosa finisce dentro un `.uvtt` (e perché ti fa risparmiare un'ora)
 
-- **muri con blocco della vista** ← ricavati dai bordi fra celle muro (🏰 ⬛ 🟪 🗼 🏛) e non-muro;
+- **muri con blocco della vista** ← ricavati dai bordi fra celle muro (🏰 ⬛ ⛺ ⛰ 🟪 🗼 🏛 🗿) e non-muro — 🔳 dais e 🪨 macerie esclusi di proposito: sul dais ci si sale, le macerie sono copertura **parziale**;
 - **porte** ← dalle celle 🚪;
 - **luci** ← da 🏮 🕯 🔥 🔮 (o dalle `lights` dello spec JSON);
 - **griglia e risoluzione** ← da `--ppg` (pixel per quadretto);
@@ -249,9 +285,9 @@ python3 scripts/export_uvtt.py "<arco>/<MASTER>.md" --ext dd2vtt --ppg 140
 
 `validate_maps.py` (in CI a ogni PR) verifica tre cose:
 
-1. **ben formati** — ogni SVG in `rendered/` è XML valido;
-2. **provenienza** — ogni SVG ha il suo master `.md` accanto (niente orfani);
-3. **in sync** — ri-renderizzando il master si riottengono **gli stessi byte**.
+1. **ben formati**: ogni SVG in `rendered/` è XML valido;
+2. **provenienza**: ogni SVG ha il suo master `.md` accanto (niente orfani);
+3. **in sync**: ri-renderizzando il master si riottengono **gli stessi byte**.
 
 Se hai modificato la griglia e non hai rigenerato, o hai toccato l'SVG a
 mano, la CI diventa rossa. Rimedio: `dm.py maps render <master>` + commit.
@@ -267,8 +303,9 @@ mano, la CI diventa rossa. Rimedio: `dm.py maps render <master>` + commit.
 | `validate_maps` dice **missing** | il master produce una mappa senza SVG committato → rigenera e committa |
 | La griglia «slitta» di un quadretto | righe con numero di celle diverso → conta le celle; se la mappa è complessa passa alla **modalità 3** (JSON) |
 | Un simbolo non viene disegnato | è fuori legenda → usa quelli del §2.3 |
-| Nel VTT mancano i muri | quelle celle non sono simboli-muro riconosciuti (🏰 ⬛ 🟪 🗼 🏛) → correggi la griglia e riesporta |
-| `export_map_png` non parte | serve Chromium headless → vedi [GUIDA-BOOKLET-E-PDF §2](GUIDA-BOOKLET-E-PDF.md#2-prerequisiti) o passa `--browser` |
+| Nel VTT mancano i muri | quelle celle non sono simboli-muro riconosciuti (🏰 ⬛ ⛺ ⛰ 🟪 🗼 🏛 🗿) → correggi la griglia e riesporta |
+| `export_map_png` non parte | serve **uno** fra Inkscape (`dnf`/`apt install inkscape`) e Chromium headless → vedi [GUIDA-BOOKLET-E-PDF §2](GUIDA-BOOKLET-E-PDF.md#2-prerequisiti), o passa `--inkscape`/`--browser` |
+| Il PNG ha etichette storte o tratteggi sbagliati | è il browser che impagina l'SVG come pagina web → `--renderer inkscape` (rasterizzatore SVG vero) |
 | Mappa enorme illeggibile in stampa | `--scale 2/3/4` sul PNG, oppure spezza la mappa in due scene |
 
 ---

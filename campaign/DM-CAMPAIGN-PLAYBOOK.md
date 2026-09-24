@@ -197,11 +197,15 @@ Template minimale (6 campi):
 
 Quando il gruppo va a casa, esegui questi 5 passi nell'ordine.
 **Scorciatoia v2 (ADR-0007)**: sul branch del gruppo,
-`python3 scripts/dm.py session end --session <file>` fa ledger XP +
-**applica** (dopo tua conferma, diff alla mano) i cambi meccanici di
-state.md — March Clock e changelog §8 — nelle regioni marcate `auto:`,
-e committa. Il resto del 4.2 (prosa, PNG, alleanze) resta manuale e ti
-viene stampato come proposta. Prima volta: `dm.py session branch --group
+`python3 scripts/dm.py session end` apre il wizard, che scrive il log con
+in testa i **delta** della serata (March Clock, clock e stato dei villain,
+coi nomi già agganciati a `state.yaml`: se un nome non aggancia, te lo dice
+subito). Poi fa il ledger XP e **applica** (dopo tua conferma, diff alla
+mano) quei delta in `campaign/state.yaml`, rigenera le tabelle di
+`state.md` e appende allo storico in `state-changelog.md`, e committa. Con
+`--session <file>` salta il wizard; un log scritto a mano senza delta passa
+dalla vecchia regex, che conosce solo alcuni nomi. Il resto del 4.2 (prosa,
+PNG, alleanze) resta manuale e ti viene stampato come proposta. Prima volta: `dm.py session branch --group
 <nome>` + `state_apply.py --migrate --commit` (vedi
 [`DM-QUICKSTART-NUOVI-DM.md`](DM-QUICKSTART-NUOVI-DM.md)).
 **Scorciatoia v1 (sempre valida)**: `python3 scripts/dm.py post` aggiorna
@@ -211,7 +215,7 @@ stampa la checklist rimanente.
 ### 4.1 Rinomina il draft
 
 ```bash
-cd /home/jfs/00_Antigravity_workspace/RumblingStone
+cd "$(git rev-parse --show-toplevel)"
 mv campaign/sessions/_draft-in-corso.md "campaign/sessions/$(date +%Y-%m-%d)_session-N.md"
 ```
 
@@ -470,64 +474,72 @@ Riassunto operativo di `campaign-coherence.md` §5.2/§5.2.bis:
 
 Il materiale di preparazione (archi, PNG, skills, stat block, mappe) è **riutilizzabile all'infinito**. Solo lo stato vivo va resettato. Strategia: **un branch git per gruppo**.
 
-### 7.1 Backup del gruppo attuale
+### 7.1 Il gruppo di prima resta dov'è
 
-```bash
-cd /home/jfs/00_Antigravity_workspace/RumblingStone
-git checkout main
-
-# crea un branch dedicato al gruppo corrente (snapshot eterno)
-git checkout -b campaign-group-<nome-gruppo>
-git push -u origin campaign-group-<nome-gruppo>
-```
-
-**Da ora in poi** il branch `campaign-group-<nome-gruppo>` conserva per sempre la storia di quella campagna.
-
-### 7.2 Reset lo stato vivo su main (o crea nuovo branch)
-
-Opzione A — **Reset su main** (raccomandato se vuoi che main ospiti il "prossimo" gruppo):
+Se il gruppo attuale gioca già sul suo ramo `campaign-group-<nome>` (ADR-0007),
+non c'è niente da salvare: quel ramo **è** la sua storia. Se invece ha giocato
+su `main`, prima si fissa il suo ramo:
 
 ```bash
 git checkout main
-
-# resetta solo i file di stato vivo
-rm -f campaign/sessions/*.md
-cp campaign/templates/state-blank.md campaign/state.md
-
-# facoltativo: resetta status nei PNG (se li hai modificati)
-# (lo script new-campaign-group.sh lo fa automaticamente)
-
-git add -A
-git commit -m "Reset: pronti per nuovo gruppo"
-git push origin main
+git checkout -b campaign-group-<nome-gruppo-di-prima>
+git push -u origin campaign-group-<nome-gruppo-di-prima>
+git checkout main
 ```
 
-Opzione B — **Nuovo branch per nuovo gruppo** (raccomandato se vuoi main come "template pulito"):
+### 7.2 Il gruppo nuovo, con un comando
 
 ```bash
-git checkout main
-git checkout -b campaign-group-beta
-cp campaign/templates/state-blank.md campaign/state.md
-rm -f campaign/sessions/*.md
-git add -A
-git commit -m "Campaign group beta: session 0"
-git push -u origin campaign-group-beta
+python3 scripts/dm.py gruppo nuovo
 ```
 
-Poi per switchare tra gruppi: `git checkout campaign-group-alpha` ↔ `git checkout campaign-group-beta`.
+Si lancia dal ramo il cui stato fa da base, di solito `main`: lo stato del
+gruppo nuovo si **deriva** da quello, perché il prodotto (archi, villain e le
+loro agende, artefatti, anagrafica dei PNG, numeri di Rethmar) resta e la
+partita no (ADR-0050 §7). Nessun file YAML si apre a mano (decisione D19).
 
-### 7.3 Prima sessione del nuovo gruppo
+Il modulo chiede:
 
-1. Apri `campaign/state.md` (ora vuoto)
-2. Compila §1 Party con nuovi PG (nomi, classi, livello 5 partenza)
-3. Imposta §2.1 March Clock a Day 0
-4. Imposta §3 Villain Clocks a 0/N su tutti
-5. Gioca la prima sessione
-6. Applica workflow §4
+- il nome del gruppo, che diventa il ramo `campaign-group-<nome>`;
+- l'arco di partenza e il livello; gli archi precedenti restano «non giocati da
+  questo gruppo»;
+- i PG, da 1 a 6: nome, razza, classe, livello, punti ferita;
+- le righe dello stato che portano tracce del primo tavolo e chiedono un
+  giudizio, **una alla volta**, con tre scelte: *tieni*, *svuota*, *rivedi*. Oggi
+  sono dieci (cinque agende o trigger di villain, quattro condizioni dei
+  difensori di Rethmar, un waypoint). *Rivedi* lascia il testo e apre una
+  domanda nella lista `inferred`, che state.md mostra; è anche la scelta di
+  chi preme invio.
 
-### 7.4 Helper script
+Da solo, senza chiedere: toglie le conoscenze dei PNG sul party, lascia gli
+artefatti **senza portatore** (restano nel prodotto), svuota gli echi, rimette
+a zero i clock numerici e lascia i trigger, riporta il March Clock al giorno 1.
+Poi azzera la partita (sessioni, recap, storico, cronaca), valida lo stato
+**prima** di scrivere, crea il ramo e committa. Se qualcosa non va non resta
+niente: né il ramo, né mezzo reset.
 
-Esiste (o va creato): `scripts/new-campaign-group.sh` che automatizza 7.1 e 7.2 in un comando solo. Vedi `scripts/README.md`.
+Varianti utili:
+
+| Comando | A cosa serve |
+|---|---|
+| `dm.py gruppo nuovo --dry-run` | fa le domande e dice cosa farebbe, senza scrivere |
+| `dm.py gruppo nuovo --answers risposte.json` | le risposte da un file, per rifarlo uguale |
+| `dm.py gruppo nuovo --domande` | il modulo come JSON, per un'interfaccia che lo disegni |
+
+### 7.3 Dopo
+
+```bash
+git push -u origin campaign-group-<nome>
+```
+
+Si gioca la prima sessione, e alla fine `python3 scripts/dm.py session end`
+(§4). Le domande aperte dalle righe *rivedi* si chiudono quando il DM decide.
+
+### 7.4 Lo script di prima
+
+`scripts/new-campaign-group.sh` resta: crea il ramo e azzera la partita dal
+template vuoto, senza modulo e senza stato derivato. Serve a chi vuole partire
+da zero e non dal prodotto.
 
 ---
 
@@ -537,7 +549,7 @@ Esiste (o va creato): `scripts/new-campaign-group.sh` che automatizza 7.1 e 7.2 
 |---|---|
 | Modificare file di arco (`09_.../*.md`) durante la sessione | Solo appunti nel draft; modifiche scenario in PLAN MODE tra sessioni |
 | Committare senza aggiornare `state.md` | `state.md` **deve** riflettere l'ultimo stato prima del commit |
-| Modificare `00_Red Hand Of Doom/` originale (AP canon) | Se serve una variante, crea file adattamento in `campaign/lore/rhod-adaptations.md` |
+| Modificare `00_Red Hand Of Doom/` originale (AP canon) | Se serve una variante, documentala in `skills/rumblingstone-campaign/references/campaign-coherence.md` (sede canonica degli adattamenti RHoD) |
 | Tenere lo stato di campagna "nella testa" | Tutto deve stare in `state.md` — alla 20ª sessione non ricordi dettagli del Day 14 |
 | Dimenticare il changelog in §8 | Un one-liner sempre, anche per cambi piccoli |
 | Far "rivelare" a un PNG qualcosa che non ha mai imparato in-fiction | Controlla `state.md §4 Open NPC Knowledge State` prima |
@@ -550,7 +562,7 @@ Esiste (o va creato): `scripts/new-campaign-group.sh` che automatizza 7.1 e 7.2 
 ## §9 — Riferimenti veloci
 
 - **Coerenza canoniche**: `skills/rumblingstone-campaign/references/campaign-coherence.md`
-- **Regole d'adattamento RHoD**: `campaign/lore/rhod-adaptations.md` (se esiste) + `campaign/lore/house-rules.md`
+- **Regole d'adattamento RHoD**: `skills/rumblingstone-campaign/references/campaign-coherence.md` (canonico) + `campaign/lore/house-rules.md`
 - **DM strategy meta**: `skills/rumblingstone-campaign/references/campaign-dm-strategy.md`
 - **Toolkit espansione**: `skills/rumblingstone-campaign/references/dm-expansion-toolkit.md`
 - **Fazioni FR**: `skills/forgotten-realms-lore/references/fr-factions.md`
@@ -569,7 +581,8 @@ Esiste (o va creato): `scripts/new-campaign-group.sh` che automatizza 7.1 e 7.2 
 | `scripts/update_xp.py --el N --pcs N --apl N` | Post-session §4 (assegnare XP) | §4 |
 | `scripts/state_sync.py` | Post-session §4 (aggiornare dashboard §0) | §4.2 |
 | `scripts/session_recap.py --last-n N [--pdf]` | **1-2 giorni prima** della prossima sessione (recap player spoiler-safe, tono R.A. Salvatore) | **§4.6** |
-| `scripts/new-campaign-group.sh` | Reset per nuovo gruppo mantenendo tutto il resto | §7.4 |
+| `dm.py gruppo nuovo` | Gruppo nuovo da un modulo: ramo, reset, stato derivato dal prodotto | §7.2 |
+| `scripts/new-campaign-group.sh` | Reset per nuovo gruppo dal template vuoto, senza modulo | §7.4 |
 
 ---
 

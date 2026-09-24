@@ -1,6 +1,17 @@
 # AZARR KUL — ALTO WYRMLORD DI TIAMAT
 ## *Il Portatore della Mano Rossa, Servo Scelto della Regina Cromatica*
 
+
+```statblocco
+gs: 15
+ca: 28
+pf: 119
+ts: Temp +13, Rifl +7, Vol +13
+velocita: 9 m
+```
+
+> ⚠ `ts` ritrascritto dalla prosa di questa scheda (sezione dei tiri salvezza) il 2026-09-23. Il blocco portava «Temp +12, Rifl +4, Vol +8», derivati da `derive_statblocks --apply-ts` il 2 settembre con una matrice di caratteristiche sua, un giorno prima che il lettore imparasse questo formato (`d859a31`).
+
 **Razza/Tipo:** Hobgoblin Mezzo-Drago Blu (Umanoide Medio)
 **Classe:** Chierico 10 / Guerriero 4 (Livello Totale 14)
 **Grado di Sfida (GS):** 15

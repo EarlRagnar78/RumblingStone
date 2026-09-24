@@ -56,10 +56,55 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from dmcore.testo import riscala_link  # noqa: E402
+
 # ---------------------------------------------------------------------------
 # Lo stile «pergamena» canonico (identico all'anteprima visiva e all'artefatto
 # del Palio). Se lo tocchi, tocchi TUTTI i booklet futuri: fallo di proposito.
 # ---------------------------------------------------------------------------
+ROOT = Path(__file__).resolve().parent.parent
+
+# ── la tipografia ────────────────────────────────────────────────────────────
+# Fino al 2026-08-22 questi booklet usavano **Georgia**, che è un font di
+# sistema: su una macchina che non ce l'ha il PDF cambia faccia, ed è il difetto
+# [2] del capitolato del Drappo. La catena di stampa lo aveva già chiuso
+# (ADR-0020) e questa no — cioè lo stesso capitolo, dato a due giocatori,
+# usciva con due tipografie diverse.
+#
+# I `.woff2` stanno in `scripts/fonts/web/` (OFL, con la loro licenza accanto) e
+# vengono incorporati in base64: un booklet è **un file solo** che si manda per
+# posta, e un file solo non può andare a prendersi i font da qualche parte.
+FONTS_WEB = ROOT / "scripts" / "fonts" / "web"
+FACCE = (
+    ("EB Garamond", "ebgaramond.woff2", "normal", "400 700"),
+    ("EB Garamond", "ebgaramond-italic.woff2", "italic", "400 700"),
+    ("Cinzel", "cinzel.woff2", "normal", "400 700"),
+)
+
+
+INCORPORA_FONT = True
+
+
+def css_font_face() -> str:
+    """Le `@font-face` col woff2 in base64, o stringa vuota se i file non ci sono."""
+    if not INCORPORA_FONT:
+        return ""
+    fuori = []
+    for famiglia, file, stile, peso in FACCE:
+        f = FONTS_WEB / file
+        if not f.is_file():
+            print(f"  ⚠ font mancante: {f.relative_to(ROOT)} — il booklet userà i font di "
+                  f"sistema (vedi scripts/fonts/README.md)", file=sys.stderr)
+            return ""
+        b64 = base64.b64encode(f.read_bytes()).decode()
+        fuori.append(
+            "@font-face{font-family:'%s';font-style:%s;font-weight:%s;font-display:swap;"
+            "src:url(data:font/woff2;base64,%s) format('woff2');}" % (famiglia, stile, peso, b64)
+        )
+    return "\n".join(fuori)
+
+
 CSS = """
   :root{
     --chrome-bg:#efe9dd; --chrome-ink:#3a3126; --chrome-line:#d8cdb8;
@@ -78,7 +123,7 @@ CSS = """
            --tab-bg:#e2d8c2; --shadow:0 10px 26px rgba(43,36,28,.35); }
 
   body{ background:var(--chrome-bg); color:var(--chrome-ink);
-        font-family:Georgia,'Times New Roman',serif; margin:0; }
+        font-family:'EB Garamond',Georgia,'Times New Roman',serif; margin:0; }
   header.top{ padding:1.4rem 1rem .6rem; text-align:center; }
   header.top h1{ font-size:1.15rem; margin:0; letter-spacing:.06em; text-transform:uppercase; }
   header.top p{ margin:.35rem auto 0; max-width:46rem; font-size:.9rem; opacity:.8; font-style:italic; }
@@ -119,6 +164,17 @@ CSS = """
   .covermeta{ font-size:.8rem; font-style:italic; opacity:.85; max-width:34rem; margin:1.6rem auto 0;
       border-top:1px solid var(--brass); padding-top:.8rem;}
 
+  .colophon{ max-width:34rem; margin:0 auto; }
+  .colophon h4{ font-variant:small-caps; letter-spacing:.25em; color:var(--brass);
+      text-align:center; font-size:.8rem; margin:0 0 .2rem; font-weight:normal; }
+  .colophon .rule{ width:30%; margin-bottom:1.4rem; }
+  .colophon dl{ display:grid; grid-template-columns:8.5rem 1fr; gap:.45rem .9rem; margin:0; }
+  .colophon dt{ font-variant:small-caps; letter-spacing:.08em; color:var(--brass); font-size:.8rem; }
+  .colophon dd{ margin:0; font-size:.92rem; }
+  .colophon .licenza{ margin-top:1.3rem; padding-top:.8rem; border-top:1px solid var(--brass);
+      font-style:italic; font-size:.85rem; opacity:.9; }
+  .colophon .nota{ font-size:.8rem; opacity:.8; margin-top:.6rem; }
+
   .twocol{ column-count:2; column-gap:2.2rem; }
   @media (max-width:44rem){ .twocol{ column-count:1; } .sheet{ padding:1.6rem 1.2rem 2.4rem; } }
   .twocol > *{ break-inside:avoid; }
@@ -130,7 +186,7 @@ CSS = """
   .sheet h4.sub4{ font-variant:small-caps; color:var(--rubric); font-size:1rem; margin:.7rem 0 .2rem;}
   .sheet p{ margin:.45rem 0; text-align:justify; hyphens:auto;}
   .sheet .lede::first-letter{ font-size:3.1em; float:left; line-height:.82;
-      padding:.04em .08em 0 0; color:var(--rubric); font-family:Georgia,serif;}
+      padding:.04em .08em 0 0; color:var(--rubric); font-family:'Cinzel',Georgia,serif;}
   .sheet ul{ margin:.4rem 0 .7rem 1.2rem; padding:0;}
   .sheet ol{ margin:.4rem 0 .7rem 1.4rem; padding:0;}
   .sheet li{ margin:.22rem 0;}
@@ -163,7 +219,7 @@ CSS = """
   .pagefoot{ display:flex; justify-content:space-between; align-items:baseline;
       margin-top:2.2rem; border-top:1px solid var(--brass); padding-top:.5rem;
       font-size:.72rem; letter-spacing:.14em; color:var(--rubric); font-variant:small-caps;}
-  .pagefoot .n{ font-family:Georgia,serif; font-size:1rem; font-variant-numeric:tabular-nums;}
+  .pagefoot .n{ font-family:'Cinzel',Georgia,serif; font-size:1rem; font-variant-numeric:tabular-nums;}
   .dmtag{ position:absolute; top:.9rem; right:1rem; font-size:.62rem; letter-spacing:.2em;
       color:var(--banner); border:1px solid var(--banner); padding:.15rem .5rem; }
   .pgtag{ position:absolute; top:.9rem; right:1rem; font-size:.62rem; letter-spacing:.2em;
@@ -252,6 +308,36 @@ def img_html(alt: str, src: str, base: Path) -> str:
             f"<code>{html.escape(src)}</code><br>"
             f"la tavola apparirà qui appena il file sarà nel repo</p></div>")
 
+
+
+# I prop sono sorgenti HOMEBREWERY (.hb.md): la loro sintassi a blocchi va
+# tradotta o buttata, se no finisce STAMPATA LETTERALE — «{{descriptive»,
+# «{{margin-top:60px}}» in mezzo al testo del contratto.
+_HB_AUTO = re.compile(r"^\{\{[^{}\n]*\}\}\s*$")
+_HB_APRE = re.compile(r"^\{\{(descriptive|note)\b[^}]*$")
+_HB_ALTRO = re.compile(r"^\{\{\w[^}]*$")
+
+
+def spoglia_homebrewery(testo: str) -> str:
+    fuori, pila = [], []
+    for ln in testo.split("\n"):
+        s = ln.strip()
+        if _HB_AUTO.match(s):                       # riga auto-chiusa: impaginazione
+            continue
+        m = _HB_APRE.match(s)
+        if m:
+            fuori.append('<div class="hb-' + m.group(1) + '">')
+            pila.append("chiudi")
+            continue
+        if _HB_ALTRO.match(s):
+            pila.append("scarta")
+            continue
+        if s == "}}":
+            if pila and pila.pop() == "chiudi":
+                fuori.append("</div>")
+            continue
+        fuori.append(re.sub(r"\{\{[^{}\n]*\}\}", "", ln))
+    return "\n".join(fuori)
 
 def md_to_html(md: str, base: Path) -> str:
     """Convertitore markdown→HTML minimale ma fedele ai master del repo:
@@ -398,7 +484,45 @@ def md_to_html(md: str, base: Path) -> str:
     return "\n".join(out)
 
 
+# Stesse voci e stesso ordine della catena di stampa (`VOCI_COLOPHON` in
+# export_booklet_typst.py). Due catene che ordinano diversamente i crediti
+# producono due edizioni diverse dello stesso volume: e' esattamente la
+# divergenza che ADR-0020 aveva promesso di chiudere.
+VOCI_COLOPHON = (
+    ("edizione", "Edizione"),
+    ("versione", "Versione"),
+    ("data", "Data"),
+    ("autori", "A cura di"),
+    ("basato_su", "Basato su"),
+)
+
+
+def colophon_html(mf: dict, footer: str) -> str:
+    """La pagina dei crediti, o stringa vuota se il manifest non ne dichiara una.
+
+    Come in stampa: nessun valore dedotto: la data si scrive nel manifest, non
+    si prende dall'orologio.
+    """
+    col = mf.get("colophon")
+    if not isinstance(col, dict) or not col:
+        return ""
+    righe = "".join(
+        f"<dt>{html.escape(etichetta)}</dt><dd>{html.escape(str(col[chiave]))}</dd>"
+        for chiave, etichetta in VOCI_COLOPHON if col.get(chiave)
+    )
+    if not righe and not col.get("licenza") and not col.get("nota"):
+        return ""
+    licenza = (f'<p class="licenza">{html.escape(col["licenza"])}</p>'
+               if col.get("licenza") else "")
+    nota = f'<p class="nota">{html.escape(col["nota"])}</p>' if col.get("nota") else ""
+    return (f'<div class="sheet"><div class="colophon"><h4>Colophon</h4>'
+            f'<hr class="rule">'
+            f'{f"<dl>{righe}</dl>" if righe else ""}{licenza}{nota}</div>'
+            f'<div class="pagefoot"><span>{html.escape(footer)}</span></div></div>')
+
+
 def build(manifest_path: Path, out_override: Path | None = None) -> Path:
+    font_face = css_font_face()
     base = manifest_path.parent
     mf = json.loads(manifest_path.read_text(encoding="utf-8"))
     title = mf.get("title", "Booklet")
@@ -425,6 +549,7 @@ def build(manifest_path: Path, out_override: Path | None = None) -> Path:
     {cover_img}
     <p class="covermeta">{html.escape(mf.get("meta", ""))}</p>
   </div>
+  {colophon_html(mf, footer)}
   {intro_html}
 </section>"""
 
@@ -438,7 +563,7 @@ def build(manifest_path: Path, out_override: Path | None = None) -> Path:
     tabs = ['<button role="tab" aria-selected="true" data-pane="c0">Copertina</button>']
     for k, ch in enumerate(mf["chapters"], 1):
         p = base / ch["file"]
-        body = md_to_html(p.read_text(encoding="utf-8"), p.parent)
+        body = md_to_html(spoglia_homebrewery(p.read_text(encoding="utf-8")), p.parent)
         tag = TAGS.get(ch.get("tag", ""), "")
         foot = player_footer if ch.get("tag") == "player" else footer
         tabs.append(f'<button role="tab" aria-selected="false" data-pane="c{k}">'
@@ -458,7 +583,7 @@ def build(manifest_path: Path, out_override: Path | None = None) -> Path:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(title)}</title>
-<style>{CSS}</style>
+<style>{font_face}{CSS}</style>
 </head>
 <body>
 <header class="top">
@@ -515,18 +640,30 @@ def build_hb(manifest_path: Path, out_override: Path | None = None) -> Path:
         f"{{{{banner {mf.get('banner', 'BOOKLET')}}}}}\n",
         f"{{{{footnote\n  {mf.get('meta', '')}\n}}}}\n",
     ]
+    # La destinazione si calcola PRIMA di incorporare i capitoli: serve a
+    # riscalare i loro link relativi. Un capitolo in `07_arco/X.md` che linka
+    # `../plans/adr/Y.md` punta alla radice del repo; incorporato alla lettera
+    # in `07_arco/homebrew/sessione/BOOKLET.hb.md` — due livelli piu' in basso —
+    # lo stesso link finisce su `07_arco/homebrew/plans/adr/Y.md`, che non
+    # esiste. Erano **41 link rotti su 44** in otto booklet (lotto E1).
+    html_out = out_override or (base / mf.get("out", manifest_path.stem.replace(".manifest", "") + ".html"))
+    stem = html_out.name[:-5] if html_out.name.endswith(".html") else html_out.name
+    out = html_out.parent / (stem + ".hb.md")
+    dest = out.resolve().parent
+
+    def _incorpora(sorgente: Path) -> str:
+        return riscala_link(sorgente.read_text(encoding="utf-8"),
+                            sorgente.resolve().parent, dest)
+
     if mf.get("intro_md"):
-        parts += ["\\page\n", (base / mf["intro_md"]).read_text(encoding="utf-8")]
+        parts += ["\\page\n", _incorpora(base / mf["intro_md"])]
     for ch in mf["chapters"]:
         parts.append("\n\\page\n")
         parts.append(f"# {ch['title']}\n")
         tag = HB_TAGS.get(ch.get("tag", ""))
         if tag:
             parts.append(tag + "\n")
-        parts.append((base / ch["file"]).read_text(encoding="utf-8"))
-    html_out = out_override or (base / mf.get("out", manifest_path.stem.replace(".manifest", "") + ".html"))
-    stem = html_out.name[:-5] if html_out.name.endswith(".html") else html_out.name
-    out = html_out.parent / (stem + ".hb.md")
+        parts.append(_incorpora(base / ch["file"]))
     out.write_text("\n".join(parts) + "\n", encoding="utf-8")
     return out
 
@@ -535,11 +672,16 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("manifest", help="manifest JSON del booklet (vedi docstring)")
     ap.add_argument("--out", help="file HTML di output (default: dal manifest)")
+    ap.add_argument("--no-font-embed", action="store_true",
+                    help="non incorporare i caratteri: file molto più leggero, ma il "
+                         "booklet cambia faccia dove EB Garamond non è installato")
     ap.add_argument("--format", choices=["html", "hb", "both"], default="html",
                     help="html = pagina autonoma con immagini incorporate; "
                          "hb = sorgente Homebrewery V3 (.hb.md) per il self-hosted/Docker; "
                          "both = entrambi (ADR-0013)")
     args = ap.parse_args(argv)
+    global INCORPORA_FONT
+    INCORPORA_FONT = not args.no_font_embed
     mp = Path(args.manifest)
     if not mp.exists():
         print(f"ERRORE: manifest non trovato: {mp}", file=sys.stderr)

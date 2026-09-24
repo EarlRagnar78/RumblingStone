@@ -166,7 +166,7 @@ parto.*
 ### Attacco
 **Mischia** bastone ferrato +2 (1d6) · falcetto +2 (1d6)
 **Dardo acido** *(dominio Terra)* raggio di contatto **+3**, 1d6+1, **7 volte al giorno**
-**BAB** +2 · **CMB** +2 · **CMD** 13
+**BAB** +2 · **CMB** +2 · **CMD** 14
 
 ### Statistiche
 **For** 10 (+0) · **Des** 13 (+1) · **Cos** 13 (+1) · **Int** 12 (+1) · **Sag** 18 (+4) · **Car** 10 (+0)
@@ -186,7 +186,7 @@ Percezione +10, Cavalcare +6, Conoscenze (natura) +6, Sapienza Magica +6
 (6) · bastone ferrato · **bacchetta di *cura ferite leggere*, 25 cariche** (375) ·
 2 pergamene di *ritardare veleno* (300) · 2 antitossine (100) · kit dell'erborista e
 sacca del guaritore (55) · **anello di protezione +1** (2.000) *— era di sua madre,
-e non lo dice a nessuno* · **+ ~150 mo**
+e non lo dice a nessuno; la deviazione entra anche nel CMD* · **+ ~150 mo**
 
 ### Il suo problema
 *Ritardare veleno* lo prepara ogni mattina da sei anni, sempre, e non ha mai dovuto
@@ -228,7 +228,7 @@ CD 15 nega), **7 volte al giorno**
 slot a memorizzarle)*
 **Incantesimi preparati** (CD 14 + livello; **+1 per le illusioni**)
 - **0°** (4): *prestidigitazione* · *individuazione del magico* · *lettura del magico* · *luce*
-- **1°** (3 + 1 scuola): *armatura magica* · *charme su persone* (CD 16) · *dardo
+- **1°** (3 + 1 scuola): *armatura magica* · *charme su persone* (CD 15) · *dardo
   incantato* · **scuola**: *immagine silenziosa* (CD 16)
 - **2°** (2 + 1 scuola): *individuazione dei pensieri* (CD 16) · *tocco dell'idiota* ·
   **scuola**: *invisibilità*
@@ -399,7 +399,7 @@ Pagina da consegnare al giocatore indicato, in privato.
 > (`PREGEN-SEI-SCHEDE-PF1E.md`), dietro questa pagina — chi sei, come parli, cosa
 > vuoi, e cosa pensi degli altri cinque.
 >
-> Il **ritratto** è in `ALLEGATI/tavole/ritratto-<nome>.svg`: si stampa in alto a
+> Il **ritratto** è in `ALLEGATI/immagini/ritratto-<nome>.png` (master) e `web/*.jpg` per l’impaginazione: si stampa in alto a
 > destra del retro, o si sostituisce con l'immagine generata.
 >
 > **Da leggere prima di cominciare**: il tuo paragrafo in corsivo, ad alta voce, al
@@ -425,6 +425,8 @@ tutti: è il pezzo che fa scattare il tavolo nei primi dieci minuti.
 
 ## 1 · VANNA CORSARI — il Capitano
 
+![Ritratto](../ALLEGATI/immagini/web/ritratto-vanna.jpg)
+
 *Ritratto: `ALLEGATI/tavole/ritratto-vanna.svg`*
 
 > **Da leggere ad alta voce.** *«Ho fatto sei anni di milizia sul fiume e me ne sono
@@ -447,6 +449,8 @@ porta, dove ci sono i pollici di quarant'anni di Capitani.
 ---
 
 ## 2 · NOCCA PETTIROSSO — il Fantino
+
+![Ritratto](../ALLEGATI/immagini/web/ritratto-nocca.jpg)
 
 *Ritratto: `ALLEGATI/tavole/ritratto-nocca.svg`*
 
@@ -472,6 +476,8 @@ le riprendi fino a dopo la Corsa.
 
 ## 3 · OMBRA DEI SALICI — lo Stalliere
 
+![Ritratto](../ALLEGATI/immagini/web/ritratto-ombra.jpg)
+
 *Ritratto: `ALLEGATI/tavole/ritratto-ombra.svg`*
 
 > **Da leggere ad alta voce.** *«Non è il mio nome. Il mio nome non lo usa più nessuno
@@ -493,6 +499,8 @@ c'è, e speri che non tintinni.
 ---
 
 ## 4 · TESIO MARCA — il Tenente
+
+![Ritratto](../ALLEGATI/immagini/web/ritratto-tesio.jpg)
 
 *Ritratto: `ALLEGATI/tavole/ritratto-tesio.svg`*
 
@@ -516,6 +524,8 @@ sai e che gli altri non sanno. **La scegli tu**, adesso.
 
 ## 5 · BERENICE «BRUMA» SALLO — l'Alfiere
 
+![Ritratto](../ALLEGATI/immagini/web/ritratto-berenice.jpg)
+
 *Ritratto: `ALLEGATI/tavole/ritratto-berenice.svg`*
 
 > **Da leggere ad alta voce.** *«Mia madre era del Leocorno e mi ha portata alla
@@ -538,6 +548,8 @@ stanza che è troppo piccola per farla girare.
 ---
 
 ## 6 · FRA' MELCHIO VANZI — il Vicario
+
+![Ritratto](../ALLEGATI/immagini/web/ritratto-melchio.jpg)
 
 *Ritratto: `ALLEGATI/tavole/ritratto-melchio.svg`*
 
@@ -571,15 +583,4 @@ decreto. È l'ultima cosa che succede prima che comincino i guai.
 4. **Tesio**: *«Il confine del bosco è sbagliato di cinquanta passi. Ho le carte.»*
 5. **Ombra**: *«Quando ci danno il cavallo, dormo in stalla. Da subito.»*
 6. **Nocca**: *«…io devo dire una cosa. Ma dopo.»*
-
----
-
-## Nota per il DM
-
-Ogni «cosa che non dici» è **un segreto che il giocatore possiede**, non un colpo di
-scena che gli spetta subire. Se un giocatore decide di rivelarlo prima del previsto,
-**va premiato**: il segreto è suo e l'ha speso quando ha voluto.
-
-I collegamenti fra i segreti — Ombra e Nonna Grasa, Berenice e Rasca, i nove nomi di
-Melchio e il Drappo — sono in `05-INIZIAZIONE-E-EVENTI-PG.md` §4.
 

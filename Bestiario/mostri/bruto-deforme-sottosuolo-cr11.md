@@ -1,8 +1,30 @@
 # Bruto Deforme del Sottosuolo (Gigante di Pietra deforme, Barbaro 2) [ACCEPTED — DM-canon]
 **Faction**: mano-rossa / drow-sonjak (mercenario) | **Role**: melee-heavy/artiglieria-corta | **Environment**: underdark | **CR**: 11 | **Source**: SRD *Stone Giant* (GS 8) + template semplice PF1e **Giant** (GS +1) + Barbaro 2 (classe associata, GS +1/liv) | **Status**: accepted
 
+
+```statblocco
+gs: 11
+tipo: Huge giant (earth), CE
+ca: 26
+ca-dettaglio: (−2 taglia, +1 Des, +14 naturale, +3 pelle), contatto 9, colto alla sprovvista 25
+pf: 172
+pf-dado: 14d8+2d12+99
+ts: Temp +18, Rifl +5, Vol +7
+attributi: For 31 Des 13 Cos 23 Int 10 Sag 12 Car 11
+velocita: 15 m (movimento veloce)
+attacchi:
+  - Mischia randello enorme +20/+15 (3d8+15)
+  - Distanza lancio di massi +11 (3d8+15, incremento di gittata 55 m)
+```
+
+> [INFERRED — needs DM confirmation] correzione 3.5 da `scripts/conformita_statblocchi.py`: lotta +30 → **+34**: BAB 12 + For 31 (+10) + Enorme (+8) + **Lottare Migliorato** (+4), talento che la scheda elenca e la lotta non contava. La For 31 è confermata dall'attacco +20.
+
+> [INFERRED — needs DM confirmation] `pf-dado` corretto da `scripts/conformita_statblocchi.py`: era «14d8», una parte sola dei dadi vita. I dadi vengono dalla formula che la scheda scrive, il bonus da Cos 23 e Robustezza.
+
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
+
 Huge giant (earth), CE. **DV 14d8 + 2d12**. **hp 172**. **CA 26** (−2 taglia, +1 Des, +14 naturale, +3 pelle), contatto 9, colto alla sprovvista 25. Iniziativa +1. Vel **15 m** (movimento veloce). Spazio/portata **4,5 m / 4,5 m**.
-**TS** Temp +18, Rifl +5, Vol +7. **BAB/Lotta** +12/**+30**.
+**TS** Temp +18, Rifl +5, Vol +7. **BAB/Lotta** +12/**+34**.
 **Mischia** randello enorme +20/+15 (**3d8+15**).
 **Distanza** lancio di massi +11 (**3d8+15**, incremento di gittata 55 m).
 **Car** For 31, Des 13, Cos 23, Int 10, Sag 12, Car 11.

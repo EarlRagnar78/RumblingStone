@@ -18,7 +18,7 @@
 1. **`campaign/state.md` vince** su qualunque altro file in caso di conflitto
    (regola del repo, vedi intestazione di state.md). Non riscrivere la storia:
    ogni modifica di canone va **appesa al changelog** di state.md.
-2. **Sistema D&D 3.5 SRD only** — niente 5e (no azioni bonus, no vantaggio/
+2. **Sistema D&D 3.5 SRD only**: niente 5e (no azioni bonus, no vantaggio/
    svantaggio, no legendary actions), niente lore FR post-1385 DR. Ambientazione
    Faerûn 1372 DR.
 3. **Mai inventare** stat, poteri di artefatti o conoscenze PNG: se serve un
@@ -37,7 +37,7 @@
 | D1 | Il drago nero di Rhest si scrive **Regiarix** | RHoD originale + file RHEST |
 | D2 | La città finale è **Rethmar** (mai "Rethman", mai "Damarath") | state.md |
 | D3 | La PG druida è **Hella** (usare "Hella"; "Hellas" ammesso solo come nome-quest storico nei titoli file) | state.md §1 |
-| D4 | Il PG monaco è **Tordek Durinheart** | campaign-history.md |
+| D4 | Il PG monaco è **Tordek Durinheart** | campaign-history.md (oggi `campaign-chronicle.md`, tabella del party) |
 | D5 | Xal'thor = comandante **Illithid** (vuole i Bracieri); Vaereth = Githyanki liberi (vogliono l'Orbe); Sethrax = emissario di Zalkatar | state.md changelog 2026-05-03 |
 | D6 | March Clock: Day 19 = sync Hammerfist/Terrelton; **Day 40 = Notte dei Drow (Fase 0); Day 42 = assalto a Rethmar (Fasi 1-4)** | state.md §2.1 (vince per regola 1) |
 | D7 | Ghostlord: ostile default = +2.400 non morti; neutralizzato = +400; redento = +600 pro-difensori | state.md §2.3 |
@@ -132,7 +132,7 @@ di §4 senza ulteriori input dal DM.
   scalini, inchiodato a terra dal Mythal in Fase 4, NON cavalcatura):
   correggere INDICE r.27/443, ARMATE-SYNC §2.1, STRUTTURA §6 (aggiungere
   Tyrgarun alle Fasi 1/2-3/4 secondo lo script D11) e la scheda
-  `Bestiario/villain/Azarr_Kul/Azarr_Kul.md` (rimuovere "monta Tyrgarun"). Le meccaniche
+  `Bestiario/villain/Azarr_Kul/Azarr_Kul/Azarr_Kul.md` (rimuovere "monta Tyrgarun"). Le meccaniche
   dettagliate del set-piece (hazard di bombardamento, contromosse, statistiche
   del drago a terra) si scrivono nel lotto **C1 punto (d)** — qui solo la
   coerenza dei riferimenti. Applicare anche **D12** nello stesso lotto:
@@ -222,7 +222,7 @@ di §4 senza ulteriori input dal DM.
 ### B1. Rhest è scheletrico (il gap più grande dell'arco)
 - **Evidenza**: i 5 file FASE sono da 1,0-2,4 KB l'uno contro i 18-25 KB del
   Palio o della Torre. Rhest in RHoD originale è mezzo capitolo (pp. 54-80).
-- **Azione** — portare ogni fase allo standard, in 5 mini-lotti (uno per file):
+- **Azione**: portare ogni fase allo standard, in 5 mini-lotti (uno per file):
   1. FASE1 Blackfens: tabella incontri palude d12 (già solo citata), viaggio
      esagoni, read-aloud arrivo, aggancio Tiri Kitor (se Starsong già fatta:
      guide elfiche = vantaggio meccanico esplicito).

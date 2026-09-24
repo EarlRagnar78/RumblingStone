@@ -30,6 +30,7 @@ python3 scripts/dm.py doctor --ci
 | | `dm.py session` · `state_apply` · `session_recap` | chiude la serata: canone, recap per il gruppo e per PG |
 | **Mappe** | `compile_map_json` → `render_map_svg` → `export_map_png` / `export_uvtt` | dal contratto JSON alla pergamena, al PNG, al VTT |
 | | `import_watabou` · `suggest_map` | parti da un generatore esterno, o fatti proporre una pianta |
+| | `render_map_blender` | la stessa pianta in volume, e il passo di profondità per ControlNet |
 | **Materiali** | `build_booklet_html` · `export_booklet_pdf` · `export_booklet_typst` | i booklet: schermo, pagine sciolte, volume da stampa |
 | | `build_chapter_marks` · `hype_homebrew` · `dm_dossier` | fregi di capitolo, recap impaginati, dossier PNG |
 | **Controlli** | `validate_maps` · `validate_modules` · `validate_standalone` · `validate_bestiario` · `validate_skills` · `check_plans_discipline` | i gate che girano anche in CI |
@@ -92,7 +93,7 @@ Dal **2026-08-15** ci sono due strade, e non sono in concorrenza
 | **Comando** | `build_booklet_html.py MANIFEST.json --format both` | `export_booklet_typst.py MANIFEST.json --all` |
 | **Motore** | Chromium (per i PDF sciolti) | `typst` |
 | **Produce** | `.html` + `.hb.md`, e con `export_booklet_pdf.py` un PDF **per capitolo** | **un volume** `-STAMPA.pdf` |
-| **Tipografia** | Georgia, font di sistema | **EB Garamond + Cinzel embeddati** (OFL, in `scripts/typst/fonts/`) |
+| **Tipografia** | Georgia, font di sistema | **EB Garamond + Cinzel embeddati** (OFL, in `scripts/fonts/`) |
 | **Indice** | l'HTML ha i tab | **segnalibri PDF veri** + indice cliccabile |
 | **Quando** | mandare una pagina a un giocatore, impaginare altrove | il libro |
 
@@ -125,16 +126,25 @@ python3 scripts/build_chapter_marks.py --all
 
 L'ordine conta, e il primo passo non è il prompt:
 
-1. **direzione artistica** — le sei leve della skill
+1. **direzione artistica**: le sei leve della skill
    [`rumblingstone-art-direction`](../../skills/rumblingstone-art-direction/SKILL.md):
    ancora storica, schede-personaggio, lock di seed e luce, gate di rifiuto;
-2. **i prompt** — `dm.py prompts <arco>` estrae lo scheletro dalle scene
+2. **i prompt**: `dm.py prompts <arco>` estrae lo scheletro dalle scene
    (ADR-0015); i prompt li scrive una persona, non una regex;
-3. **la generazione** — ComfyUI in locale (`scripts/comfyui-local/`), con il
+3. **la generazione**: ComfyUI in locale (`scripts/comfyui-local/`), con il
    modello scelto **per licenza** e non per gusto
-   ([ADR-0019](../../plans/adr/ADR-0019-licenza-dei-pesi-non-del-software.md));
+   ([ADR-0019](../../plans/adr/ADR-0019-licenza-dei-pesi-non-del-software.md)).
+   Una **serie** si genera con `scripts/comfyui_batch.py`, non a mano dalla GUI:
+   legge i prompt annotati dal markdown, fissa i seed e scrive la provenienza —
+   è la differenza fra una serie riproducibile e una irripetibile;
 4. **il gate di rifiuto**, il giorno dopo;
-5. **la provenienza** — una riga per immagine, o non si committa.
+5. **la provenienza**: una riga per immagine, o non si committa.
+
+Quando l'immagine deve **combaciare con una mappa** — la tavola della locanda e
+la pianta della locanda sono la stessa stanza — in mezzo si infila
+`render_map_blender.py --profondita`: la geometria esce dal JSON della mappa e
+diventa l'input di ControlNet depth, così l'illustrazione eredita la pianta vera.
+Blender qui fa il geometra, non l'illustratore.
 
 Il dettaglio operativo sta in [`GUIDA-IMMAGINI.md`](GUIDA-IMMAGINI.md).
 

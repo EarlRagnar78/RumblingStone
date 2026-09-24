@@ -133,6 +133,20 @@ def validate(manifest: dict, schema: dict) -> list[str]:
         for b in ("stdlib_only", "idempotent"):
             if b in t and not isinstance(t[b], bool):
                 errors.append(f"{tid}: '{b}' deve essere booleano")
+        # use_case: la domanda a cui il tool risponde (lotto C di
+        # PIANO-QUALITA-DEL-CODICE). Un campo obbligatorio che si puo' riempire
+        # copiando il summary non serve a niente, quindi qui si controlla che
+        # sia una domanda e che non sia il summary.
+        uc = t.get("use_case")
+        if isinstance(uc, str):
+            if "?" not in uc:
+                errors.append(f"{tid}: use_case non e' una domanda (manca il punto interrogativo)")
+            if len(uc.strip()) < 20:
+                errors.append(f"{tid}: use_case troppo corto per dire qualcosa")
+            if uc.strip() == (t.get("summary") or "").strip():
+                errors.append(f"{tid}: use_case e' una copia del summary")
+        elif "use_case" in t:
+            errors.append(f"{tid}: use_case deve essere una stringa")
         # args
         for a in t.get("args", []):
             if a.get("type") not in arg_type_enum:
@@ -238,6 +252,39 @@ def emit_registry(manifest: dict) -> str:
     return json.dumps(reg, indent=2, ensure_ascii=False, sort_keys=False) + "\n"
 
 
+#: Categorie che non escono mai come tool MCP: librerie e dati non si «eseguono».
+MCP_ESCLUSE = ("lib", "tests", "J-data-assets")
+
+#: I linguaggi che sappiamo lanciare. `mixed` non e' un linguaggio: e' una
+#: cartella con dentro un README che spiega cosa fare a mano.
+MCP_LINGUAGGI = ("python", "bash")
+
+
+def mcp_eseguibile(t: dict, root: Path | None = None) -> bool:
+    """Vero se questo tool si puo' davvero **lanciare**.
+
+    Serve perche' il manifest descrive anche cose che non sono programmi:
+    `converters/html-to-markdown` e `converters/pdf-to-md-engine` sono
+    **cartelle** con un README, e la loro «invocazione» e' letteralmente
+    *«(vedi converters/…/README)»*. Annunciarle a un client come tool
+    eseguibili significa prometterle e poi fallire al primo tentativo.
+    """
+    if t["category"] in MCP_ESCLUSE or t["language"] not in MCP_LINGUAGGI:
+        return False
+    return ((root or REPO) / t["path"]).is_file()
+
+
+def mcp_key(nome_arg: str) -> str:
+    """Il nome che un argomento CLI prende dentro l'`inputSchema` MCP.
+
+    Sta qui, e non in due copie, perche' lo usano **due** consumatori: chi genera
+    `docs/tools/mcp-tools.json` e il server che poi ricostruisce la riga di
+    comando (`scripts/mcp_server.py`). Con due regole per lo stesso nome, una
+    delle due invecchia e il server chiama i tool con flag che non esistono.
+    """
+    return nome_arg.split("/")[0].lstrip("-").replace(" ", "_") or nome_arg
+
+
 def emit_mcp(manifest: dict) -> str:
     """Vista in stile MCP tool-definitions (name/description/inputSchema)."""
     _TMAP = {"int": "integer", "float": "number", "bool": "boolean",
@@ -245,11 +292,11 @@ def emit_mcp(manifest: dict) -> str:
              "subcommand": "string"}
     tools = []
     for t in _sorted_tools(manifest):
-        if t["category"] in ("lib", "tests", "J-data-assets"):
+        if not mcp_eseguibile(t):
             continue
         props, required = {}, []
         for a in t.get("args", []):
-            key = a["name"].split("/")[0].lstrip("-").replace(" ", "_") or a["name"]
+            key = mcp_key(a["name"])
             schema = {"type": _TMAP.get(a["type"], "string"), "description": a["desc"]}
             if a.get("choices"):
                 schema["enum"] = a["choices"]
@@ -258,7 +305,10 @@ def emit_mcp(manifest: dict) -> str:
                 required.append(key)
         tools.append({
             "name": t["id"].replace("/", "_").replace("-", "_"),
-            "description": t["summary"],
+            # Il caso d'uso viene prima: chi sceglie fra 46 tool ha bisogno di
+            # sapere a quale domanda rispondono, non di come sono fatti.
+            "description": f'{t["use_case"]}\n\n{t["summary"]}',
+            "use_case": t["use_case"],
             "invocation": t["invocation"],
             "inputSchema": {
                 "type": "object",
@@ -296,7 +346,16 @@ def emit_markdown(manifest: dict) -> str:
              "[`registry.json`](registry.json). "
              "Fonte di verita': `scripts/tools.manifest.json`.", "",
              f"**{len(manifest['tools'])} tool** · convenzione exit code "
-             "`0=ok · 1=errore-dominio · 2=errore-uso`.", ""]
+             "`0=ok · 1=errore-dominio · 2=errore-uso`.", "",
+             "**Da un client MCP** ([`mcp-tools.json`](mcp-tools.json), "
+             "[ADR-0030](../../plans/adr/ADR-0030-server-mcp-sui-tool.md)): "
+             "`python3 scripts/mcp_server.py` — JSON-RPC su stdio, catalogo preso "
+             "da questo stesso manifest. È **read-only per difetto**: i tool "
+             "marcati «Canone» qui sotto sono elencati ma non partono senza "
+             "`--allow-write`, perché il canone si scrive su un branch di gruppo "
+             "con l'occhio del DM sopra (ADR-0007). Le voci esposte sono "
+             f"{sum(1 for x in manifest['tools'] if mcp_eseguibile(x))}: le "
+             "cartelle di `converters/` non sono programmi e non compaiono.", ""]
     by_cat: dict[str, list] = {}
     for t in _sorted_tools(manifest):
         by_cat.setdefault(t["category"], []).append(t)
@@ -314,7 +373,7 @@ def emit_markdown(manifest: dict) -> str:
             git = _md_bool(t.get("side_effects", {}).get("git_commit"))
             exits = " · ".join(f"`{k}`" for k in sorted(t.get("exit_codes", {}), key=int))
             lines.append(
-                f"| `{t['path'].split('/')[-1] or t['id']}` | {t['summary']} "
+                f"| `{t['path'].split('/')[-1] or t['id']}` | {t['use_case']}<br>{t['summary']} "
                 f"| {_md_flags(t)} | {det} | {canon} | {git} | {exits or '—'} |"
             )
         lines.append("")

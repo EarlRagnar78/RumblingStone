@@ -1,4 +1,4 @@
-# Khorn
+# Khorn [RIMANDO]
 **Role**: ally (ufficiale nanico di Hammerfist, Arco 08 → 09)
 **Status**: alive; designato a guidare le **150 lance di Re Thorek** verso Rethmar (D5, solo se gli hook politici riescono — D4)
 **Location**: Hammerfist Holds

@@ -1,6 +1,20 @@
 # ARCANO ZETH IL MURATO — IL GHOSTLORD
 ## *Lich Druidico del Thornwaste — Il Custode Tradito*
 
+
+
+
+```statblocco
+gs: 13
+ca: 24
+pf: 58
+ts: Temp +7, Rifl +7, Vol +13
+velocita: 9 m
+voci:
+  - ⚠ Forbice del DM: punti ferita 58–90 (adattare al livello del gruppo)
+  - ⚠ Forbice del DM: CA 24–26 (adattare al livello del gruppo)
+```
+
 **Vero Nome:** Zeth (cognome perduto — si identifica solo come "Il Murato")
 **Titolo:** Ghostlord, Signore degli Spettri del Thornwaste
 **Razza/Tipo:** Mezz'Elfo (trasformato in Lich — Non Morto Medio)

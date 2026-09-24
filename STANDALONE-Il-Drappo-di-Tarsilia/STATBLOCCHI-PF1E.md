@@ -17,6 +17,8 @@ voci originali (pasta corrosiva, Ritmo dei cavalli) sono marcate come tali.
 
 ## §1 · Vidalia Roncetti — Sovrintendente al Drappo
 
+![Vidalia Roncetti](ALLEGATI/immagini/web/png-roncetti.jpg)
+
 **Umana esperta 6** · LN · femmina, 61 anni · **GS 4**
 *Forestiera residente da trentotto anni. Terzo mandato. Non si compra e — cosa più
 scomoda — non si convince.*

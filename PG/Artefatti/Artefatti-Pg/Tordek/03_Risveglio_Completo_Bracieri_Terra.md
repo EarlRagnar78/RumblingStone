@@ -2,7 +2,7 @@
 *(Scena Narrativa e Interattiva per il DM)*
 
 > **NAVIGAZIONE:**
-> *   [← Torna a PortaleForgia P4 (Sezione Tempio)](file:///home/jfs/Scrivania/00-Giochi_di_ruolo/00_dnd_3.5/00_Red_hand_of_Doom_GitHub/RumblingStone/07_il%20Portale%20Della%20Forgia%20Eterna/PortaleForgia-P4-PianoTerra-COMPLETO.md)
+> *   [← Torna a PortaleForgia P4 (Sezione Tempio)](../../../../07_il%20Portale%20Della%20Forgia%20Eterna/_ARCHIVIO/PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md)
 > *   *Questa scena avviene DOPO il Puzzle Gravitazionale e PRIMA dell'ingresso nella Camera dell'Altare Centrale.*
 
 **Contesto:** Il PG si trova nel **Tempio Mithral**. I corridoi a gravità variabile convergono in un'anticamera esagonale progettata come ultima difesa. Non è solo una stanza; è una trappola selettiva.
@@ -126,12 +126,12 @@ Quando il Golem arriva a 0 PF, non cade semplicemente. Si ferma. Il petto si apr
 >
 > *"Il fuoco brucia in fretta e muore,"* tuona Moradin, la sua voce come pietre che macinano. *"La roccia attende. La roccia sostiene. La roccia vince perché non ha fretta."*
 >
-> La visione cambia. Vedi ere geologiche passare in secondi.
-> *   Vedi montagne nascere dallo scontro di continenti, spinte verso il cielo dalla pura volontà della terra.
-> *   Vedi il magma del Piano del Fuoco raffreddarsi e diventare granito indistruttibile.
-> *   Vedi un nano solitario, grande come una catena montuosa, che colpisce l'incudine del mondo, e ogni colpo crea una valle, ogni scintilla un filone di mithral.
+> La visione cambia: ere geologiche passano in secondi.
+> *   Montagne nascono dallo scontro di continenti, spinte verso il cielo dalla pura volontà della terra.
+> *   Il magma del Piano del Fuoco si raffredda e diventa granito indistruttibile.
+> *   Un nano solitario, grande come una catena montuosa, colpisce l'incudine del mondo, e ogni colpo crea una valle, ogni scintilla un filone di mithral.
 >
-> *"Hai il fuoco, figlio mio,"* continua la voce, e senti il topazio sul guanto destro bruciare. *"Ma il fuoco senza controllo è solo distruzione. Serve il peso per dare forma. Serve l'incudine per dare scopo."*
+> *"Hai il fuoco, figlio mio,"* continua la voce, e il topazio sul guanto destro brucia. *"Ma il fuoco senza controllo è solo distruzione. Serve il peso per dare forma. Serve l'incudine per dare scopo."*
 
 **La Fusione:**
 > Il Geode tocca il guanto sinistro.
@@ -171,5 +171,5 @@ I guanti sono ora i **Bracieri Gemelli di Moradin (Completi/Awakened)**.
 Ora che il gruppo è riunito e l'artefatto è completo, la porta verso la Camera dell'Altare Centrale si apre. Il Boss Finale vi attende, ma ora siete pronti.
 
 > **PROSEGUIRE:**
-> *   [→ Vai a PortaleForgia P4 (Boss Fight: Elementale Anziano)](file:///home/jfs/Scrivania/00-Giochi_di_ruolo/00_dnd_3.5/00_Red_hand_of_Doom_GitHub/RumblingStone/07_il%20Portale%20Della%20Forgia%20Eterna/PortaleForgia-P4-PianoTerra-COMPLETO.md#8-boss-fight-elementale-della-terra-anziano-cr-13)
+> *   [→ Vai a PortaleForgia P4 (Boss Fight: Elementale Anziano)](../../../../07_il%20Portale%20Della%20Forgia%20Eterna/_ARCHIVIO/PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md#8-boss-fight-elementale-della-terra-anziano-cr-13)
 

@@ -161,7 +161,8 @@ concreto sporco, e poi una riga che si alza. L'effetto è tutto nello scarto.
 | Cosa | Dove |
 |---|---|
 | La **lingua** (calchi, ritmo, tic dell'IA) | `italiano-nativo.md` |
-| La **voce** (gli otto pilastri, il mix per scena) | `style-pillars.md` |
+| La **voce** (i nove pilastri, il mix per scena) | `style-pillars.md` |
+| Il **mistero** (indizi, documenti, errore fecondo) | skill `rumblingstone-indagine` |
 | La **pagina** (blockquote, grassetti, terminologia) | `editorial-standards.md` |
 | L'**obbligo di regia** (nessuna sequenza a battute senza box) | ADR-0014 |
 | **Questo file** | il *pubblico*: cosa regge e cosa stacca un adulto che il fantasy lo conosce |

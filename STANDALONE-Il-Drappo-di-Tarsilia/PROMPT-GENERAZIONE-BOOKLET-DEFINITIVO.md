@@ -28,14 +28,17 @@
 
 Onestamente, e in ordine di impatto visivo:
 
-| # | Manca | Perché conta | Difficoltà |
+> 🔄 **Aggiornato il 2026-08-22.** Tre divari su sei sono chiusi, e non solo per
+> questo modulo: valgono per tutti i booklet del repo, campagna compresa.
+
+| # | Stato | Cosa manca(va) | Chiuso da |
 |---|---|---|---|
-| **1** | **Illustrazioni raster** — zero. Un'avventura pubblicata ha una tavola a piena pagina, 6-10 spot e i ritratti dei pregen | è la differenza fra un documento e un libro | media (serve una GPU o un servizio) |
-| **2** | **Tipografia embedded** — i booklet usano **Georgia**, che è un font di sistema: su una macchina che non ce l'ha, il PDF cambia faccia | un libro si riconosce dal carattere prima che dal testo | bassa |
-| **3** | **Mappa in versione giocatore** — la Ruota mostra token, hazard e note tattiche: è la versione del DM. Manca quella pulita da mettere in mano | standard di ogni AP | bassa |
-| **4** | **PDF unico con segnalibri** — oggi è un file per capitolo | un lettore vuole **un** file con l'indice cliccabile | bassa |
-| **5** | **Copertina vera** — oggi è la tavola del Drappo | — | media |
-| **6** | **Carte da tavolo** — segnaposto contrada, ordine di corsa | rende visibile lo stato della gara | bassa |
+| **1** | ⬜ aperto | **Illustrazioni raster** — un'avventura pubblicata ha una tavola a piena pagina, 6-10 spot e i ritratti dei pregen | gated sulla GPU del DM. I prompt e la bibbia visiva ci sono; ⚠️ ora però le immagini **entrano davvero** nel volume: fino al 2026-08-22 il convertitore le stampava come testo |
+| **2** | ✅ chiuso | **Tipografia embedded** — i booklet usavano Georgia, font di sistema | ADR-0020 per la stampa; il **2026-08-22 anche per la catena HTML** (`scripts/fonts/web/*.woff2` in base64). Le due catene ora hanno la stessa faccia |
+| **3** | ⬜ aperto | **Mappa in versione giocatore** — la Ruota mostra token e note tattiche: è la versione del DM | è una passata del renderer coi livelli tattici spenti, non un disegno nuovo |
+| **4** | ✅ chiuso | **PDF unico con segnalibri** — era un file per capitolo | ADR-0020. Dal 2026-08-22 la CI **compila davvero** ogni volume e controlla che i segnalibri ci siano |
+| **5** | ✅ chiuso | **Copertina vera** — era la tavola del Drappo | `cover_image` del manifest ora vale anche in stampa (prima la leggeva solo la catena HTML, in silenzio) |
+| **6** | ⬜ aperto | **Carte da tavolo** — segnaposto contrada, ordine di corsa | — |
 
 ## §3 · Il prompt — da incollare in una sessione nuova
 

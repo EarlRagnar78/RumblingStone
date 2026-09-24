@@ -1,0 +1,13 @@
+{
+  "brand": "IL DRAPPO DI TARSILIA · PF1e",
+  "title": "Benvenuti a Tarsilia",
+  "subtitle": "Quello che sanno tutti, prima di cominciare",
+  "banner": "DA DARE A TUTTI",
+  "meta": "Pathfinder 1e · tre serate · sei giocatori",
+  "footer": "Benvenuti a Tarsilia",
+  "player_footer": "Benvenuti a Tarsilia",
+  "front_matter": false,
+  "chapters": [
+    {"title": "✉ Benvenuti a Tarsilia", "file": "DRAPPO-VOLANTINO-GIOCATORI.md", "tag": "player"}
+  ]
+}

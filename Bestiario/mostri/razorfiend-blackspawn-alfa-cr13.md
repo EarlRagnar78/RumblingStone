@@ -2,6 +2,26 @@
 
 **Faction**: red-hand | **Role**: elite-brute | **Environment**: any | **CR**: 13 | **Source**: boost della base **Razorfiend (Draconic Spawn)** del repo (`razorfiend-red/blue/green/white-cr8-9.md`) via `skills/npc-villain-boosting/` (advancement HD + taglia) | **Status**: ACCEPTED — DM-canon 2026-07-20 (tier élite per l'orda ingrandita)
 
+
+```statblocco
+gs: 13
+tipo: Huge dragon (earth), 16 DV, LE
+ca: 25
+ca-dettaglio: (−2 taglia, +0 Des, +17 naturale)
+pf: 215
+ts: Temp +17, Rifl +10, Vol +11
+attributi: For 30 Des 10 Cos 24 Int 8 Sag 13 Car 12
+velocita: 12 m, scavare
+iniziativa: +4
+attacchi:
+  - Mischia morso +24 (3d6+10 + 1d6 acido)
+voci:
+  - Talenti: Iniziativa Migliorata, Attacco Poderoso, Multiattacco, Armatura
+fonte: valori approssimati nella prosa d'origine (scritti con «~»)
+```
+
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
+
 > **Perché esiste (DM 2026-07-20):** l'orda di RumblingStone è **molto più
 > grande** dell'AP originale (~10.000 vs ~6.000), quindi servono **elementi
 > speciali** all'altezza di un party APL 13. I razorfiend "truppa" (CR 8-9)

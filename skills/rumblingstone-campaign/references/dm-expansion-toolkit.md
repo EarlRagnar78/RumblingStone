@@ -463,7 +463,7 @@ Allied factions provide active military or logistical support in the Battle of R
 
 ### How to Add a New Quest
 
-Copy this template into `campaign/encounters/` or `campaign/sessions/` as `quest-[name].md`:
+Copy this template into the arc module that uses it (next to its tactical map) or into `campaign/sessions/` as `quest-[name].md`:
 
 ```markdown
 # QUEST: [Name]

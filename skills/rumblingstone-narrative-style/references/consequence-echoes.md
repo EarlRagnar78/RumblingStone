@@ -1,7 +1,7 @@
 # The Echo Ledger — BG3-Style Long-Range Consequences
 
 Principle (pillar 7): **the world remembers**. Every meaningful PC
-choice writes an *echo* — a recorded consequence with a fuse — that
+choice writes an *echo*, a recorded consequence with a fuse, that
 returns later, *transformed*. The power of the technique is the delay:
 instant karma is a reaction; an echo three arcs later is a world.
 
@@ -31,10 +31,10 @@ Threads**, so no existing section is renumbered:
 - **Fuse**: `short` (1–2 sessions), `medium` (3–5), `long` (next arc or
   later), or an in-world-day count tied to a §2/§3 clock.
 - **Status**: `armed` → `fired (S<N>)` → move a one-line record to the
-  session log; or `expired` (fiction closed the path — note why).
+  session log; or `expired` (fiction closed the path; note why).
 
 Existing structures keep their jobs: promises/debts stay in §5, villain
-clocks in §2–§3. An echo is for *unstructured* consequence — the world's
+clocks in §2–§3. An echo is for *unstructured* consequence: the world's
 memory of a choice, good or evil, big or small.
 
 ## 2. Writing echoes (arming)
@@ -48,18 +48,18 @@ After every session (session wizard / recap flow), scan the log's
    Small echoes produce the best "it remembered THAT?" table moments.
 2. **Both good and evil.** Kindness compounds and cruelty compounds;
    over time the ledger must show both tones for every PC. Protagonism
-   in the evil gets echoes too — as story, never as DM revenge.
+   in the evil gets echoes too, as story and never as DM revenge.
 3. **Absence is a choice.** When the party ignores a viable thread
    (coherence §5.1's three open paths), arm an echo for how it resolves
    *without* them; the world shows the outcome later.
 4. Every echo names **at least one PC** as its author. Party-wide
    echoes exist but are the minority.
 
-**Fuse selection — the transformation law**: the longer the fuse, the
+**Fuse selection, the transformation law**: the longer the fuse, the
 more the consequence must be *transformed* when it returns. Short fuse
 = direct reaction (the guard you bribed talks). Medium = changed actor
 (the spared scout is now a deserter). Long = changed world (the village
-you saved is now a fortified town that flies your colors — or the cult
+you saved is now a fortified town that flies your colors, or the cult
 you humiliated has rebuilt around hating you specifically).
 
 ## 3. Firing echoes (payoff)
@@ -67,11 +67,11 @@ you humiliated has rebuilt around hating you specifically).
 When generating any session, quest, or scene content:
 
 1. Read §7.E first. **Prefer firing an armed echo over inventing a new
-   NPC or hook** — if the scene needs a courier, a traitor, a patron, or
+   NPC or hook**: if the scene needs a courier, a traitor, a patron, or
    a complication, check whether an echo can be that thing.
 2. Quota: each session fires **≥1** armed echo when fiction allows;
    arc climaxes fire ≥2 (convergence: old choices stack into the
-   finale — the BG3 act-three pattern).
+   finale, the BG3 act-three pattern).
 3. **Legibility rule**: when an echo fires, players must be able to
    reconstruct the causal chain in one conversation. If the chain needs
    a DM lecture, simplify the payoff.
@@ -84,31 +84,80 @@ When generating any session, quest, or scene content:
 ## 3-bis. Graded outcomes — the "regola pieno/ridotto" (Palio pattern)
 
 For **arc-scale set pieces** (tournaments, battles, councils, festivals),
-don't emit a single echo — build a **one-page consequence matrix**, as
+don't emit a single echo; build a **one-page consequence matrix**, as
 pioneered by `...P2D-PALIO-CONSEGUENZE-ECHI.md` (the repo's worked
 exemplar):
 
 1. **Outcome axis**: every possible winner/result gets a row (including
-   the disaster row — see below).
+   the disaster row, see below).
 2. **Conduct modulation**: the *magnitude* of each row is graded by how
-   the PCs got there — **full effect** if they won it or backed the
+   the PCs got there: **full effect** if they won it or backed the
    winner; **reduced (−1 step)** if the winner was hostile to them;
    **+1 step** for exceptional conduct (side objectives completed).
    Outcome says *what* happens; PC conduct says *how much*.
 3. **Campaign wiring row**: each outcome lists its effect on clocks,
-   allies, and the next arc's difficulty (VP, GS, reinforcements) —
+   allies, and the next arc's difficulty (VP, GS, reinforcements),
    numbers, not vibes.
 4. **The bittersweet row**: losing while achieving the strategic goal
    (making the rival lose, preventing the worst) is a *distinct* result
-   with its own rewards and its own echoes — never collapse it into
+   with its own rewards and its own echoes; never collapse it into
    "defeat".
 5. **The disaster row is playable**: the worst outcome opens a
    desperate branch (the Palio's "Fase 0-bis"), never a game over.
 6. **Per-PC echo row**: each institutional role/PC gets one personal
    echo line from the set piece (debts of honor, secrets that weigh,
-   a ballad that becomes an anthem — or an accusation).
+   a ballad that becomes an anthem, or an accusation).
 
 Matrix rows that fire become ledger entries (§1) as usual.
+
+## 3-ter. L'eco per un PG assente: due ancore obbligatorie
+
+Nasce da un rilievo del tavolo (2026-09-02): la giocatrice di **Hella** ha detto
+di **non capirci niente** degli echi ricevuti prima dello scontro con Terros.
+Non era prosa tradotta: `validate_prosa` su quel file è pulito. Era un difetto
+di **progetto**, e si misura.
+
+Contati i nomi del canone dentro la prosa dei quattro testi per-PG della stessa
+sessione:
+
+| | Ancore nominate |
+|---|---|
+| Tordek | **8** — Sentinella, Thorik, Artemis, Bracieri, Corona… |
+| Thorik | **5** — Aegis Fang, Topazio, Corona… |
+| Artemis | **4** — l'Anello, la Sentinella… |
+| **Hella** | **0** dentro gli echi (le due fuori stanno nel titolo e nella nota del DM) |
+
+Hella riceve *«una testa grande, ossuta»* (è **Durik**, e non lo dice), *«spalle
+larghe, oneste»* (è **Thorik**, e non lo dice), *«qualcosa prepara un guscio»*.
+Quattro immagini non attribuite di fila **non sono mistero: sono rumore.**
+
+🤖 **E ora si controlla da solo**: `python3 scripts/validate_prosa.py FILE`
+segnala un testo per i giocatori che non contiene **una sola** ancora nominata.
+Su 333 file di contenuto ne trova uno, questo. Il controllo confronta i nomi
+**con la maiuscola**, perché metà delle forme brevi del canone sono anche nomi
+comuni: *«batteva il cuore»* non è il **Cuore di Moradin**.
+
+### Le due regole
+
+**1. Almeno un'ancora nominata.** Un frammento evocativo si regge se chi legge
+può attaccarne **uno** a qualcosa che conosce: un nome, un oggetto, un
+compagno, e da lì tira il resto. `module-standard` §5 vuole che un PG assente
+percepisca «solo echi»: vuole che siano **oscuri**, non **senza appigli**.
+
+**2. Anche il frammento oscuro porta una riga di lettura.** Non una spiegazione:
+una **direzione**. Il confronto è netto, e sta nella stessa sessione:
+
+> ✅ **Tordek** — il frammento è dichiarato oscuro (*«non lo capirai — non
+> devi»*) **e** chiude con: *«qualcosa di caro sta cercando la strada di
+> casa»*. Il giocatore non sa cosa, ma sa **verso dove**.
+>
+> ❌ **Hella** — *«non capisci le parole, ma il senso è inequivocabile»*.
+> La riga **afferma** che un senso c'è e non lo consegna. Al tavolo diventa:
+> «non ci ho capito niente».
+
+⚠️ E la nota in testa, *«Nessuno va spiegato. Nessuno va interpretato»*,
+toglie al giocatore anche l'ultima via, che era chiedere. Va bene per proteggere
+il mistero **quando le ancore ci sono**; senza, chiude la porta e basta.
 
 ## 4. Anti-patterns (do not)
 

@@ -1,0 +1,194 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://rumblingstone/schemas/booklet_manifest.schema.json",
+  "title": "RumblingStone booklet manifest",
+  "description": "Il manifest di un booklet. Lo leggono DUE catene: build_booklet_html.py (schermo/Homebrewery, ADR-0013) e export_booklet_typst.py (stampa, ADR-0020). Una chiave che una catena consuma e l'altra ignora in silenzio produce due edizioni diverse dello stesso capitolo: per questo ogni chiave dichiara qui chi la consuma, e scripts/validate_booklets.py lo verifica.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "chapters"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Titolo del volume. Catene: html, stampa."
+    },
+    "subtitle": {
+      "type": "string",
+      "description": "Sottotitolo del frontespizio. Catene: html, stampa."
+    },
+    "brand": {
+      "type": "string",
+      "description": "Riga di testata sopra il titolo. Catene: html, stampa."
+    },
+    "banner": {
+      "type": "string",
+      "description": "Riga di metadati del frontespizio. Catene: html, stampa."
+    },
+    "meta": {
+      "type": "string",
+      "description": "Riga piccola in fondo al frontespizio (data, versione). Catene: html, stampa."
+    },
+    "colophon": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "La pagina dei crediti, subito dopo il frontespizio: chi ha fatto il volume, su cosa si basa, che versione e' e cosa se ne puo' fare. Senza questa chiave il volume esce come prima, anonimo. Catene: html, stampa.",
+      "properties": {
+        "edizione": {
+          "type": "string",
+          "description": "Come si chiama questa uscita (es. «Edizione da tavolo»)."
+        },
+        "versione": {
+          "type": "string",
+          "description": "Versione del volume (es. «v3»). E' cio' che distingue la copia stampata il mese scorso da quella di ieri."
+        },
+        "data": {
+          "type": "string",
+          "description": "Data dell'edizione, in chiaro. Si scrive QUI e mai si genera: un PDF che prende la data dall'orologio cambia a ogni compilazione e smette di essere byte-identico."
+        },
+        "autori": {
+          "type": "string",
+          "description": "Chi ha scritto e curato il volume."
+        },
+        "basato_su": {
+          "type": "string",
+          "description": "Su cosa poggia: SRD 3.5, OGL 1.0a, l'avventura originale. E' la riga che ADR-0005 chiede e che finora viveva solo nelle guide."
+        },
+        "licenza": {
+          "type": "string",
+          "description": "Regime d'uso di QUESTO volume (es. «materiale del DM, uso privato, non diffondere»)."
+        },
+        "nota": {
+          "type": "string",
+          "description": "Una riga libera in fondo: ringraziamenti, dedica, avvertenza."
+        }
+      }
+    },
+    "header": {
+      "type": "string",
+      "description": "Testatina fissa. Catene: html. In stampa la testatina segue il CAPITOLO corrente, che e' cio' che rende sfogliabile un volume."
+    },
+    "footer": {
+      "type": "string",
+      "description": "Piede. Catene: html, stampa (come capitolo di ripiego in testatina)."
+    },
+    "player_footer": {
+      "type": "string",
+      "description": "Piede delle sole pagine giocatore. Catene: html."
+    },
+    "front_matter": {
+      "type": "boolean",
+      "description": "false toglie frontespizio e indice (fascicoli di schede). Catene: stampa.",
+      "default": true
+    },
+    "cover_image": {
+      "type": "string",
+      "description": "Immagine di copertina, percorso relativo AL MANIFEST. Catene: html, stampa."
+    },
+    "cover_tag": {
+      "type": "string",
+      "description": "Tag dei capitoli da cui prendere la copertina. Catene: html."
+    },
+    "intro_md": {
+      "type": "string",
+      "description": "Master markdown della pagina d'introduzione, relativo AL MANIFEST. Catene: html, stampa."
+    },
+    "carta": {
+      "type": "string",
+      "enum": [
+        "avorio",
+        "bianca"
+      ],
+      "description": "Fondo pagina. Catene: stampa. La riga di comando (--carta) vince su questa."
+    },
+    "capolettera": {
+      "type": "boolean",
+      "description": "Versale d'apertura sul primo paragrafo di ogni capitolo. Catene: stampa.",
+      "default": true
+    },
+    "out": {
+      "type": "string",
+      "description": "Nome del file di uscita. Catene: html."
+    },
+    "fregio": {
+      "type": "string",
+      "description": "Fregio di ripiego per i capitoli del volume, relativo al MANIFEST. Catene: stampa. Serve ai booklet della CAMPAGNA, dove il medaglione e' dell'arco e non del singolo capitolo: nel modulo il fregio si trova dal nome del file (fregio-<slug>.svg), qui non esiste un fregio per capitolo. Il fregio per nome, se c'e', vince su questo."
+    },
+    "indice_analitico": {
+      "type": "boolean",
+      "description": "Aggiunge l'INDICE ANALITICO in coda al volume (in-dexter, ADR-0026): le voci sono i nomi canonici del glossario, marcate automaticamente alla loro prima occorrenza per volume — non si annotano a mano. Catene: stampa (la catena HTML la ignora: una pagina web ha la ricerca)."
+    },
+    "formato": {
+      "type": "string",
+      "enum": [
+        "a4",
+        "a5"
+      ],
+      "description": "Formato di composizione. 'a5' e' il libretto a una colonna (corpo 9.6 pt), da imporre poi due pagine per foglio A4 con 'dm volume --imposto' (ADR-0027): comporre in A5 tiene il corpo leggibile, imporre un volume A4 lo scala al 71%. Catene: stampa. La riga di comando (--formato) vince su questa."
+    },
+    "chapters": {
+      "type": "array",
+      "minItems": 1,
+      "description": "I capitoli, nell'ordine di lettura. Catene: html, stampa.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "file"
+        ],
+        "properties": {
+          "file": {
+            "type": "string",
+            "description": "Master markdown, percorso relativo AL MANIFEST."
+          },
+          "title": {
+            "type": "string",
+            "description": "Titolo del capitolo; se manca si usa il nome del file."
+          },
+          "tag": {
+            "type": "string",
+            "enum": [
+              "player",
+              "dm"
+            ],
+            "description": "Senza --all esce solo cio' che e' 'player'."
+          },
+          "layout": {
+            "type": "string",
+            "enum": [
+              "schede"
+            ],
+            "description": "'schede': una pagina A4 per personaggio invece di un capitolo a colonne. Catene: stampa."
+          },
+          "retro": {
+            "type": "string",
+            "description": "Master del retro scheda (legami, ad alta voce). Solo layout 'schede'."
+          },
+          "ritratti": {
+            "description": "Cartella/e dei ritratti delle schede. Solo layout 'schede'.",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            ]
+          },
+          "footer": {
+            "type": "string",
+            "description": "Piede della scheda. Solo layout 'schede'."
+          },
+          "capolettera": {
+            "type": "boolean",
+            "description": "Sovrascrive il valore del volume per questo capitolo."
+          }
+        }
+      }
+    }
+  }
+}

@@ -29,8 +29,10 @@ import argparse
 import json
 import math
 import sys
-import unicodedata
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from dmcore.testo import slug  # noqa: E402
 
 ROCK, FLOOR, DOOR, PILLAR, WATER, NOTE = "🏰", "⬜", "🚪", "🟪", "🟦", "⭐"
 
@@ -42,13 +44,6 @@ def col_label(i: int) -> str:
         i, rem = divmod(i - 1, 26)
         label = chr(ord("A") + rem) + label
     return label
-
-
-def slugify(title: str) -> str:
-    t = unicodedata.normalize("NFKD", title).encode("ascii", "ignore").decode()
-    import re
-    t = re.sub(r"[^A-Za-z0-9]+", "-", t).strip("-").lower()
-    return t[:48] or "mappa"
 
 
 def _cells_of_rect(rect: dict) -> list[tuple[int, int]]:
@@ -209,10 +204,20 @@ def main() -> int:
     if not src.exists():
         print(f"ERRORE: {src} non esiste", file=sys.stderr)
         return 1
-    data = json.loads(src.read_text(encoding="utf-8"))
+    # Un export sbagliato e' il caso normale, non l'eccezione: si scarica il
+    # file da un sito e non si guarda dentro. Dirlo in una riga vale piu' di
+    # venti righe di traceback che finiscono su `json.decoder`.
+    try:
+        data = json.loads(src.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        print(f"ERRORE: {src} non e' JSON valido (riga {exc.lineno}, colonna "
+              f"{exc.colno}): {exc.msg}.\n"
+              f"Atteso l'export 'JSON' del One Page Dungeon di Watabou.",
+              file=sys.stderr)
+        return 1
     title, rows, notes_md = convert(data, pad=max(0, args.pad))
 
-    out = Path(args.out) if args.out else src.with_name(f"{slugify(title)}.md")
+    out = Path(args.out) if args.out else src.with_name(f"{slug(title, max_len=48, ripiego='mappa')}.md")
     md = build_markdown(title, rows, notes_md, data.get("story", ""), out.stem)
     out.write_text(md, encoding="utf-8")
     n_rows, n_cols = len(rows), len(rows[0])

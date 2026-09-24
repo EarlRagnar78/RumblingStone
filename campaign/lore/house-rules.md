@@ -6,7 +6,7 @@ Last updated: 1372 DR, Flamerule 1 (in-world) / 2026-03-30 (real world)
 
 ## SETTING: CANNATH VALE (Forgotten Realms — Elsir Vale Adaptation)
 
-The RumblingStone campaign uses *Red Hand of Doom* (Jacobs & Wyatt, 2006) as its adventure
+The RumblingStone campaign uses *Red Hand of Doom* (Jacobs & Baker, 2006) as its adventure
 path, adapted wholesale into the **Forgotten Realms, 1372 DR**. The original Elsir Vale has
 been remapped to **Cannath Vale** in the Eastern Dalelands. For the complete location mapping,
 NPC adaptation, faction notes, and regional encounter tables, see:
@@ -88,7 +88,7 @@ Tiamat crusade, coordinating with the Cult of the Dragon for a beachhead in the 
 - **Contested items**: Roll-off (d20 + relevant ability mod); winner gets +1 priority on next
   contested roll, so no one always wins
 - **Crafting**: Allowed between sessions at standard time/cost; must have downtime narrative
-- **NPC shops in Rethmar**: See `campaign/lore/rethmar-shops.md` when created
+- **NPC shops in Rethmar**: See `campaign/lore/rethmar-shops.md` when created <!-- validate-docs: futuro -->
 
 ---
 

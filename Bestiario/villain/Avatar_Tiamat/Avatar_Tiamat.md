@@ -1,4 +1,4 @@
-# Avatar di Tiamat — Regina Cromatica (manifestazione)
+# Avatar di Tiamat — Regina Cromatica (manifestazione) [RIMANDO]
 **Role**: villain (climax epico, ARC-09 Fase 3 / finale Rethmar)
 **Status**: latente — si manifesta solo se il rituale della Mano Rossa culmina
 **Location**: sopra Rethmar, all'apice dell'invasione planare (evocazione)

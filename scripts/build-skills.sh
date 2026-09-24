@@ -57,31 +57,19 @@ echo "║      RumblingStone — Skill Optimization Pipeline            ║"
 echo "╚══════════════════════════════════════════════════════════════╝"
 echo "  Skills to build: ${SKILLS[*]}"
 
-# ── Per-agent format preference. Drop entry to skip an agent.
-# The legacy index.json is no longer copied into per-agent packages — no
-# mainstream agent loader (Claude, Cursor, Windsurf, ChatGPT, Gemini) reads
-# it. The index is still produced under build/<skill>/index.json for use by
-# scripts and humans. See scripts/README.md for rationale.
-declare -A AGENT_FORMAT=(
-  ["claude"]="compact.md"
-  ["gemini"]="structured.yaml"
-  ["codex"]="machine.json"
-  ["chatgpt"]="compact.md"
-  ["cursor"]="machine.json"
-  ["windsurf"]="compact.md"
-  ["copilot"]="compact.md"
-)
-
-declare -A AGENT_INSTALL_PATHS=(
-  ["claude"]="${HOME}/.claude/skills"
-  ["codex"]="${HOME}/.codex/skills"
-  ["cursor"]="${HOME}/.cursor/skills"
-  ["windsurf"]="${HOME}/.windsurf/skills"
-)
-
-# Agents that genuinely consume index.json (currently none — leave empty).
-# Add an agent name here if/when its loader is documented to read index.json.
-declare -A AGENT_INDEX_AWARE=()
+# ── La matrice degli agenti sta in scripts/agents.conf, letta anche da
+# sync-skills.sh: una copia sola, cosi' build e sync non divergono.
+# shellcheck source=agents.conf
+source "${SCRIPT_DIR}/agents.conf"
+for agent in "${!AGENT_FORMAT[@]}"; do
+  case "${AGENT_FORMAT[$agent]}" in
+    compact.md|structured.yaml|machine.json) ;;
+    *) echo "ERROR: agents.conf: formato sconosciuto '${AGENT_FORMAT[$agent]}' per ${agent}" >&2; exit 1 ;;
+  esac
+done
+# L'index.json non si copia piu' nei pacchetti per agente: nessun loader
+# diffuso lo legge (vedi AGENT_INDEX_AWARE in agents.conf). Resta in
+# build/<skill>/index.json per gli script e per chi legge.
 
 # ── Build each skill ────────────────────────────────────────────────────────
 for SKILL_NAME in "${SKILLS[@]}"; do

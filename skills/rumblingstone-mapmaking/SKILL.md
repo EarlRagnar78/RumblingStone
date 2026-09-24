@@ -38,7 +38,8 @@ are **generated artifacts — never hand-edit them**. CI
    `python3 scripts/render_map_svg.py <file.md>`
 2. Scale is **1,5 m/quadretto**, declared in the file header.
 3. Use ONLY the universal legend symbols (`references/legenda-universale.md`);
-   the `SYMBOLS` table in `scripts/render_map_svg.py` is the source of truth.
+   `scripts/legend.yaml` is the source of truth (ADR-0048): renderer, UVTT
+   export, importer and the Blender chain all derive from it.
    Local extra symbols render as raw emoji and must be declared in the file.
 4. Every map ships with the three companion blocks (Ambiente / Tattiche /
    Evoluzione) per `campaign/templates/mappa-tattica-template.md`.
@@ -61,16 +62,45 @@ are **generated artifacts — never hand-edit them**. CI
 
 Tutte usano lo stesso formato MASTER (griglia emoji); cambia la *sorgente*:
 
-1. **Tattica standard** — griglia scritta a mano o dungeon importato
+1. **Tattica standard**: griglia scritta a mano o dungeon importato
    (`import_watabou.py`) → `render_map_svg.py`.
-2. **Cinematografica / scenica** — l'LLM fa il *prompt engineer*; immagine
+2. **Cinematografica / scenica**: l'LLM fa il *prompt engineer*; immagine
    d'atmosfera con ComfyUI locale (`scripts/comfyui-local/`,
    `references/hero-map-comfyui.md`), banca prompt in `campaign/ai-media-prompts/`.
-3. **Tattica con strutture ed eserciti** — l'LLM emette **solo JSON rigido**
+3. **Tattica con strutture ed eserciti**: l'LLM emette **solo JSON rigido**
    (`scripts/schemas/tactical_map.schema.json`), `compile_map_json.py` valida e
    dipinge la griglia. Un LLM non disegna MAI arte ASCII di mappe.
 
 Dettaglio e "system prompt" per l'LLM: `references/tre-modalita-mappe.md`.
+
+### Le tavole di supporto: quando dall'alto non basta
+
+Le tre modalità sono tutte **zenitali**: si guarda il luogo da sopra. È la vista
+giusta per muovere miniature, ed è quella sbagliata per tre domande che al tavolo
+arrivano sempre:
+
+| Domanda | Vista che risponde |
+|---|---|
+| «Cosa vediamo arrivando?» | **veduta** — prospettica, dal punto da cui i PG arrivano davvero (dal mare, dalla strada, dal crinale) |
+| «Quanto è alto? Si può scendere di lì?» | **profilo laterale** — sezione con **quote**, e le vie verticali segnate |
+| «Quanto ci mettiamo?» | il profilo con i **tempi di percorrenza** annotati sui tratti, non solo le distanze |
+
+**La regola**: una tavola di supporto si aggiunge **quando risponde a una domanda
+che la griglia non può**, non per completezza. Tre viste dello stesso cortile sono
+tre file da tenere allineati; una veduta di un promontorio che i PG raggiungono in
+barca fa risparmiare cinque minuti di descrizione a ogni gruppo.
+
+Si numerano insieme alle altre nella stessa serie, con una lettera: `Tavola I`
+(zenitale), `Tavola I-a` (veduta), `Tavola I-b` (profilo). Così restano
+riconoscibili come **lo stesso luogo visto in un altro modo**, e non come mappe
+diverse.
+
+⚠️ **Non sostituiscono la griglia** e non hanno coordinate tattiche: nessuno ci
+muove sopra una miniatura, quindi niente quadretti e niente legenda tattica.
+Restano SVG originali come il resto (ADR-0005).
+Esemplare: `10-stand-alone/L'abbazia Della Rotta Sicura/` — Tavola I-a «il
+promontorio, veduta dal mare» e Tavola I-b «profilo laterale: quote, distanze e
+tempi».
 
 ## Domain → File
 

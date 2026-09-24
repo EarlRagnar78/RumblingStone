@@ -1,0 +1,218 @@
+# specifiche-qualita.yaml — le specifiche di qualità dichiarate, fuori dal codice.
+#
+# ⚠️ Questo file è una decisione di prodotto, non un dettaglio di implementazione:
+# il DM deve poter cambiare una soglia senza toccare Python. Lo legge
+# `scripts/punteggio_mqm.py` (ADR-0059), che senza di esso non parte.
+#
+# Il modello è MQM adattato (ISO 5060): un errore è il **mancato rispetto di una
+# specifica dichiarata**, non «una cosa brutta». Le specifiche sono le norme già
+# registrate in `skills/REGISTRO-NORME-EDITORIALI.md`; qui ognuna prende un peso.
+#
+# Fonte del disegno: plans/PIANO-MISURA-EDITORIALE-STANDARD.md §3-§4.
+
+versione: 1
+
+# ── Le severità, con i moltiplicatori canonici MQM ───────────────────────
+severita:
+  critico:
+    peso: 25
+    # ⛔ Pass/fail ASSOLUTO: un solo critico boccia il documento qualunque sia
+    # il punteggio. È la differenza principale rispetto a `misura_craft`, dove
+    # oggi tutto pesa uguale.
+    pass_fail: true
+    cos_e: "rende il documento ingiocabile, o viola il canone (AGENTS.md regola 8)"
+  maggiore:
+    peso: 5
+    pass_fail: false
+    cos_e: "viola una norma prescrittiva registrata"
+  minore:
+    peso: 1
+    pass_fail: false
+    cos_e: "un congegno assente dove sarebbe servito, o una prassi disattesa"
+
+# ── Le norme, e chi le rileva ────────────────────────────────────────────
+#
+# 🔴 **Una norma entra qui solo se un rilevatore che esiste già la misura.**
+# È il criterio «una norma, un rilevatore»: questo strumento non ne scrive di
+# nuovi, riusa quelli del repo. Le norme registrate senza rilevatore restano
+# fuori, e `punteggio_mqm.py --norme` le elenca invece di fingere che valgano 0.
+norme:
+  box_oltre_12_righe:
+    severita: maggiore
+    rilevatore: "misura_craft.difetti_dei_box"
+    norma: "read-aloud-adulti.md §2 — box ≤ 12 righe"
+  box_con_parentesi:
+    severita: minore
+    rilevatore: "misura_craft.difetti_dei_box"
+    norma: "read-aloud-adulti.md §1 — niente parentesi né incisi lunghi"
+  box_piu_di_un_nome_proprio:
+    severita: minore
+    rilevatore: "misura_craft.difetti_dei_box"
+    norma: "read-aloud-adulti.md §1 — un solo nome proprio nuovo per box"
+  caratteristica_minuscola:
+    severita: minore
+    rilevatore: "validate_prosa.controlla_caratteristiche"
+    norma: "ADR-0060 — caratteristiche e abilità maiuscole nelle quattro forme"
+
+  # ── Le sei che esistevano e nessuno pesava (2026-09-21) ────────────────
+  #
+  # 🔎 Non mancava il rilevatore: `validate_prosa` misura tutte e sei da
+  # settembre. Mancava il **nome** — `controlla()` restituiva stringhe già
+  # formattate, e contarle per norma avrebbe voluto dire riconoscere la frase
+  # italiana con cui erano scritte. Con `rilievi()` ogni rilievo dichiara la
+  # sua chiave, e il ponte si può costruire.
+  terminologia_non_canonica:
+    severita: maggiore
+    rilevatore: "validate_prosa.rilievi"
+    norma: "editorial-standards.md — terminologia canonica (CD non DC, 5e bandito, metri)"
+  calco_dall_inglese:
+    severita: minore
+    rilevatore: "validate_prosa.rilievi"
+    norma: "italiano-nativo.md §9 — i calchi e i tic dell'IA"
+  antitesi_ripetuta:
+    severita: minore
+    rilevatore: "validate_prosa.rilievi"
+    norma: "passate-redazionali.md — massimo una chiusa a effetto, un tricolon"
+  maiuscole_di_enfasi:
+    severita: minore
+    rilevatore: "validate_prosa.rilievi"
+    norma: "editorial-standards.md — max 1-2 MAIUSCOLE per read-aloud"
+  trattino_come_respiro:
+    severita: minore
+    rilevatore: "validate_prosa.rilievi"
+    norma: "italiano-nativo.md §9.2 — il trattino lungo come respiro è un tic"
+  testo_giocatori_senza_ancore:
+    severita: maggiore
+    rilevatore: "validate_prosa.rilievi"
+    norma: "module-standard §5 — un testo per i giocatori senza una sola ancora nominata"
+  read_aloud_presuppone:
+    severita: minore
+    rilevatore: "misura_craft.box_con_p1"
+    norma: "read-aloud-adulti.md + linee guida Dungeon — il read-aloud non presuppone un'azione né un senso"
+  metratura_nella_voce_narrante:
+    severita: minore
+    rilevatore: "misura_craft.metrature_nei_box"
+    norma: "ADR-0014 §2 — occhio da avventuriero: scala per paragone, le metrature nel blocco dati"
+    # Falsi positivi contati a mano il 2026-09-21: **1 su 28**, ed è un PNG che
+    # dice «8-15 km» in un dialogo. Precisione 96%.
+
+# ── I tre casi critici, e quale dei tre è decidibile ─────────────────────
+#
+# Il DM, il 2026-09-21: *«non sarebbe opportuno creare questo verificatore? Ci
+# sono le regole 3.5 e PF1e come skill nel repo, non si possono usare per farlo
+# in maniera deterministica?»*. Misurato, la risposta è **uno su tre**, e la
+# ragione degli altri due va scritta invece di lasciarli vuoti.
+#
+#   ⛔ EL oltre APL+4 senza `Boost log:`
+#      → DECIDIBILE, ed è aritmetica: APL da `campaign/state.md` (ADR-0038),
+#        EL dal file, tetto da `skills/npc-villain-boosting/`, deroga
+#        dichiarata. Rilevatore: `validate_modules.py --tetto-el`.
+#      🔴 **E non entra ancora nel punteggio**, per un motivo misurato: la
+#        forma che `AGENTS.md` prescrive per gli incontri — `**EL**: [N]` — ha
+#        **ZERO occorrenze** nel repo. I 150 «EL N» esistenti sono in forma
+#        nuda e mescolano dichiarazioni («Boss Fight - EL 14») con menzioni
+#        («Standard Treasure for EL 16»). Il controllo esiste, gira, e dice
+#        che non ha superficie: marcare gli incontri è un lotto, e il giorno
+#        in cui è fatto questa norma si accende da sola.
+#
+#   🟡 contraddizione con `state.md`
+#      → decidibile solo in forme strette (un punteggio permanente di un PG
+#        che contraddice la scheda — il difetto «−2 COS» del 2026-09-19), non
+#        in generale. Mezzo rilevatore che si spaccia per intero è peggio di
+#        nessuno.
+#
+#   🔴 statblocco inventato
+#      → NON decidibile. Le skill SRD dicono cosa **esiste**, non se i numeri
+#        di un PNG originale sono coerenti; un rilevatore lo confonderebbe con
+#        «PNG non nel Bestiario», che è un'altra cosa e ha già il suo gate.
+#
+# Quindi oggi il meccanismo pass/fail è **cablato e non scatta mai**: pronto,
+# non attivo. Il test lo prova su una specifica di prova (ADR-0059).
+
+# ── Le classi di documento ───────────────────────────────────────────────
+#
+# Un master DEF da 1.300 righe e un handout da 40 non si confrontano: il
+# punteggio è normalizzato per 1.000 righe e la soglia è per classe.
+classi:
+  master_def:
+    descrizione: "i cinque master definitivi dell'arco"
+    modelli: ["*/ARC*-DEF-*.md", "ARC*-DEF-*.md"]
+  arco:
+    descrizione: "tutto il resto del contenuto di gioco"
+    modelli: ["0*/*", "1*/*", "STANDALONE-*/*", "PG/*", "Bestiario/*",
+              "0*/*/*", "1*/*/*", "STANDALONE-*/*/*", "PG/*/*", "Bestiario/*/*",
+              "0*/*/*/*", "1*/*/*/*", "PG/*/*/*", "Bestiario/*/*/*",
+              "0*/*/*/*/*", "PG/*/*/*/*", "PG/*/*/*/*/*"]
+  documento:
+    descrizione: "guide, ADR, piani, skill — norme diverse (ADR-0035)"
+    modelli: ["plans/*", "plans/*/*", "docs/*", "docs/*/*", "skills/*", "skills/*/*", "skills/*/*/*"]
+  campagna:
+    # 31 file: playbook, stato, log di sessione, recap, prompt. Sono un misto —
+    # il playbook parla al DM, un recap parla ai giocatori — e finche' non sono
+    # separati non hanno una soglia sensata. Si misurano e non si bocciano:
+    # dichiararlo e' meglio che lasciarli «fuori classe» senza che si sappia.
+    descrizione: "campaign/ — playbook, stato, sessioni, recap (classe mista)"
+    modelli: ["campaign/*", "campaign/*/*", "campaign/*/*/*"]
+
+# ── Le soglie ────────────────────────────────────────────────────────────
+#
+# 🔎 **Nascono dal repo, non da un manuale.** La regola di taratura del piano
+# (§4) è: la soglia iniziale è il valore che il repo ha già, arrotondato in
+# basso, così il cancello **nasce verde** e non butta via niente. Da lì si
+# stringe per gradi, e ogni stretta porta la sua ragione scritta (ADR-0036).
+#
+# I numeri sotto vengono da `punteggio_mqm.py --distribuzione`, eseguito il
+# 2026-09-21 (lotto F1.4). Rimisurarli con lo stesso comando prima di cambiarli.
+# 🔴 **Le prime soglie che ho scritto qui erano inventate** — «P25 99,7»,
+# «P10 97,8» — messe prima di eseguire F1.4, cioe' esattamente il difetto che
+# questo piano esiste per non ripetere. I numeri veri sono sotto, e il comando
+# che li produce e' nella riga di ogni voce.
+soglie:
+  # ⚠️ **RITARATE il 2026-09-21, e il numero SCENDE perche' il metro e' SALITO.**
+  #
+  # Le soglie qui sotto erano calibrate su **4 norme pesate**. Oggi ne pesano
+  # **11**: sono entrate le sei che `validate_prosa` misurava gia' senza che
+  # nessuno le contasse, piu' P1. Lo stesso identico documento prende quindi un
+  # punteggio piu' basso di ieri — non perche' sia peggiorato, ma perche' prima
+  # sette dei suoi difetti non venivano visti.
+  #
+  # 🔴 **Abbassare una soglia e' normalmente un allentamento, e qui non lo e'.**
+  # Il metro ha piu' denti: a parita' di soglia il cancello boccerebbe documenti
+  # che ieri passavano, per difetti che ieri non contava. La regola §4 del piano
+  # — *la soglia nasce dal valore che il repo ha gia', arrotondato in basso,
+  # cosi' il cancello nasce verde* — e' esattamente la regola per questo caso, e
+  # chiede di ri-basare. Da qui si stringe per gradi (ADR-0036: si misura il
+  # miglioramento, non lo stato), e la stretta successiva e' dichiarata sotto.
+  master_def:
+    # F1.4 rieseguito (2026-09-21, 11 norme, 5 file): P10 97,31 · P25 97,90 ·
+    # P50 98,26 · P75 98,92 · min **96,92**.  Soglia = min arrotondato in basso.
+    # A 97,0 cadrebbe ARC07-DEF-2 (96,92) per 3 box oltre le 12 righe e 8 con
+    # piu' di un nome proprio: difetti veri, ma correggerli e' lavoro
+    # editoriale, non taratura — e una soglia non si tiene alta sperando che
+    # qualcuno faccia il lavoro.
+    punteggio_minimo: 96.0
+    critici_ammessi: 0
+    prossima_stretta: 97.0   # torna al valore di ieri quando DEF-2 e' sistemato
+  arco:
+    # F1.4 rieseguito (2026-09-21, 11 norme, 479 file): P10 **99,31** · P25
+    # 100,00 · P50 100,00 · P75 100,00 · min **87,44**.
+    # 🔎 **E qui il metro nuovo ha fatto una cosa che quello vecchio non
+    # faceva: ha smesso di dire che va tutto bene.** Con 4 norme il P10 era
+    # 100,00 — un decile intero a punteggio pieno, cioe' una distribuzione che
+    # non separava niente. Con 11 il P10 scende a 99,31 e **41 documenti su 479
+    # stanno sotto il 99**: la coda esiste, e prima era invisibile.
+    # ⚠️ La regola «soglia = P10» resta inapplicabile (boccerebbe 41 file di
+    # colpo). La soglia nasce dal **minimo** arrotondato in basso, verde per
+    # costruzione, e la stretta e' dichiarata.
+    punteggio_minimo: 87.0
+    critici_ammessi: 0
+    prossima_stretta: 95.0   # boccerebbe oggi 14 file su 479: si stringe quando sono 0
+  campagna:
+    # Classe mista, nessuna soglia finche' non e' separata. Solo il pass/fail.
+    punteggio_minimo: null
+    critici_ammessi: 0
+  documento:
+    # Le norme dei documenti sono altre (ADR-0035) e le misura
+    # `validate_prosa --documenti`. Qui vale solo il pass/fail sui critici.
+    punteggio_minimo: null
+    critici_ammessi: 0

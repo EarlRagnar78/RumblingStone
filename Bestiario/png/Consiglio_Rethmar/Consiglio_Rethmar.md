@@ -1,11 +1,15 @@
-# IL CONSIGLIO DI RETHMAR
+# IL CONSIGLIO DI RETHMAR [NON-CREATURA]
+
+> **Non è una creatura** (ADR-0033): è un **organo collegiale di sette seggi**, non una creatura. Gli statblocchi dei singoli consiglieri stanno nelle loro schede.
+> Per questo non ha un blocco `statblocco` e non conta
+> nel debito di migrazione di ADR-0021.
 ## *Il Campo di Battaglia Politico — Sette Voci, Sette Agende, Una Città*
 
 **Tipo:** Organo Collegiale — 7 membri votanti (6 ufficiali + 1 voce di campo non ufficiale)
 **File correlati:**
-- `Bestiario/villain/Conte_Valerius/Conte_Valerius.md` — il finanziatore esterno che mina il consiglio dall'esterno
+- `Bestiario/villain/Conte_Valerius/Conte_Valerius/Conte_Valerius.md` — il finanziatore esterno che mina il consiglio dall'esterno
 - `Bestiario/villain/Sonjak/Sonjak.md` — la minaccia che il consiglio non vede
-- `Bestiario/png/Lorana/Lorana.md` — la voce di campo non ufficiale
+- `Bestiario/png/Lorana/Lorana/Lorana.md` — la voce di campo non ufficiale
 - `RUMBLINGSTONE — ESPANSIONE NARRATIVA POST-HAMMERFIST.md` — Part VI (Lady Kaal)
 - `09_.../Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md` — il **Palio di Channathgate** (P2D, opzionale): le **8 contrade** sono lo specchio dei seggi del Consiglio; l'esito del Palio **muove il voto** (default RESA → DIFESA se i PG si alleano le contrade giuste) e sblocca +150 truppe + il Drappellone (Matrice del Mythal, Fase 4). Vedi §2 di quel file.
 
@@ -109,7 +113,7 @@ Ha comprato una statua "per la moglie" senza sapere nulla. Non è malvagio, è i
 ---
 
 ### 7. CAPITANA LORANA — La Voce di Campo *(non ufficiale)*
-Vedi `Bestiario/png/Lorana/Lorana.md` per scheda completa.
+Vedi `Bestiario/png/Lorana/Lorana/Lorana.md` per scheda completa.
 
 Il suo voto non è formalmente vincolante ma ha peso morale. Quando parla nelle sedute, nessuno la interrompe. Ha un effetto diretto su Jarmaath (lo riporta al pensiero militare) e su Thornwall (i rifugiati che rappresenta sono potenziali consumatori della ricostruzione — argomento economico inatteso).
 
@@ -238,7 +242,7 @@ campana della battaglia.
 
 - **Sedute del Consiglio**: gli esiti di Seduta 1/2/3 (sopra) sono i principali
   motori d'apertura del Morale prima della battaglia.
-- **Riserva di Lorana** (`Bestiario/png/Lorana/Lorana.md`): a Morale 7+ i 150 volontari si
+- **Riserva di Lorana** (`Bestiario/png/Lorana/Lorana/Lorana.md`): a Morale 7+ i 150 volontari si
   **aggiungono** ai rifugiati che Lorana può mobilitare (state.md §7, thread
   Lorana); a Morale 3- una parte dei rifugiati **fugge** invece di combattere.
 - **Fronte militare** (STRUTTURA §9.1): il Morale Cittadino è uno degli input del

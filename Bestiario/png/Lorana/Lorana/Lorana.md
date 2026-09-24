@@ -1,6 +1,17 @@
 # CAPITANA LORANA — LA SOPRAVVISSUTA
 ## *La Guida dei Rifugiati, Voce del Costo Umano della Guerra*
 
+
+```statblocco
+gs: 7
+ca: 18
+pf: 62
+ts: Temp +7, Rifl +4, Vol +5
+velocita: 9 m
+```
+
+> ⚠ `ts` ritrascritto dalla prosa di questa scheda (sezione dei tiri salvezza) il 2026-09-23. Il blocco portava «Temp +6, Rifl +2, Vol +5», derivati da `derive_statblocks --apply-ts` il 2 settembre con una matrice di caratteristiche sua, un giorno prima che il lettore imparasse questo formato (`d859a31`).
+
 **Razza/Tipo:** Umana (Umanoide Medio)
 **Classe:** Guerriero 6 / Esperto 2 (Livello Totale 8)
 **Grado di Sfida (GS):** 7

@@ -1,6 +1,23 @@
 # Ushgar «Occhio Reso» — Capo-guerra degli ausiliari orcheschi (Orco, Barbaro 13) [ACCEPTED — DM-canon]
 **Faction**: mano-rossa (ausiliari orcheschi) | **Role**: mini-boss melee/politico | **Environment**: hills/underground | **CR**: 13 | **Source**: SRD *Orc* + Barbaro 13 (SRD PHB); culto di Gruumsh da `skills/forgotten-realms-lore/references/fr-deities-complete.md` | **Status**: accepted
 
+
+```statblocco
+gs: 13
+tipo: Medium humanoid (orc), CE
+ca: 21
+ca-dettaglio: (+7 giaco di maglia +2, +2 Des, +1 anello, +1 armatura naturale), contatto 13, colto alla sprovvista 19
+pf: 140
+pf-dado: 13d12
+ts: Temp +14, Rifl +8, Vol +8
+attributi: For 22 Des 14 Cos 18 Int 6 Sag 10 Car 6
+velocita: 12 m (movimento veloce)
+attacchi:
+  - Mischia ascia bipenne +1 +20/+15/+10 (1d12+10/×3)
+```
+
+> [INFERRED — needs DM confirmation] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
+
 Medium humanoid (orc), CE. **DV 13d12**. **hp 140**. **CA 21** (+7 giaco di maglia +2, +2 Des, +1 anello, +1 armatura naturale), contatto 13, colto alla sprovvista 19. Iniziativa +6. Vel 12 m (movimento veloce).
 **TS** Temp +14, Rifl +8, Vol +8 (mantello di resistenza +2 incluso). **BAB/Lotta** +13/+19.
 **Mischia** ascia bipenne +1 **+20/+15/+10** (1d12+10/×3).

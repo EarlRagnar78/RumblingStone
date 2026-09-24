@@ -3,7 +3,7 @@
 ## MAP ATTRIBUTION
 
 **Map by**: Arne Haschen (<antariuk@gmail.com>)
-**Based on**: Elsir Vale map by Mike Schley, *Red Hand of Doom* (Jacobs & Wyatt, 2006)
+**Based on**: Elsir Vale map by Mike Schley, *Red Hand of Doom* (Jacobs & Baker, 2006)
 **Tools**: Adobe Photoshop CS3; notebook; pencils
 **Source**: <https://cdna.artstation.com/p/assets/images/images/001/044/588/large/arne-haschen-red-hand-of-doom-cannath-vale-map-gm.jpg>
 **Parchment texture**: coyotemax.deviantart.com
@@ -212,8 +212,8 @@ The party descended through these locations in order, connected by passages and 
         ↓
 [Minotaur Lair — Pre-Arc 01, unnumbered]
   └── First Underdark area below Hammerfist
-  └── Maur (Underdark native, CR ~10, defeated)
-  └── Il Collezionista (Rakshasa + basilisk, ESCAPED)
+  └── Maur (Underdark native, CR 11, defeated)
+  └── Il Collezionista (Rakshasa + basilisk, ESCAPED → Plane of Fire)
   └── Cristal Warriors (from Underdark p.93)
   └── Adapted from Expedition to Undermountain (p.165) and Underdark sourcebook
         ↓
@@ -299,7 +299,7 @@ The Neverlight Grove content is adapted from **Out of the Abyss** (D&D 5e) conve
 | Villain | Race/Type | CR | Status | Location |
 |---|---|---|---|---|
 | Grell Patriarch | Aberration | ~8 | Defeated | 01_LaMiniera |
-| Il Collezionista | Rakshasa | ~12 | **ESCAPED** | Unknown — allied with drow, provides evil artifacts (Pre-01) |
+| Il Collezionista | Rakshasa | ~12 | **ESCAPED** | Fled to the Plane of Fire (temporarily, `[DM 2026-09-24]`); now allied with drow, provides evil artifacts (Pre-01) |
 | Maur | Underdark native | ~10 | Defeated | Minotaur Lair (Pre-Arc 01) |
 | Cristal Warriors | Construct/Elemental | ~7 | Defeated | Minotaur Lair + 01_LaMiniera (from *Underdark* p.93) |
 | Sonjak | Drow Cleric Matrona | ~14 | Active | Underdark/Surface ops |

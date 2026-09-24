@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://rumblingstone/schemas/statblock.schema.json",
+  "title": "RumblingStone statblocco",
+  "description": "I campi meccanici di una scheda del Bestiario (ADR-0021). NON e' un file JSON: e' la forma canonica del blocco recintato ```statblocco che vive IN TESTA al master markdown della scheda, scritto come 'chiave: valore' e liste con '- '. Questo schema esiste per dichiarare il contratto una volta sola: lo implementa scripts/dmcore/statblock.py e lo verifica scripts/extract_statblocks.py --check.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["gs", "ca", "pf", "ts"],
+  "properties": {
+    "nome": { "type": "string", "description": "Nome del mostro/PNG. Se manca, in stampa si usa il titolo della sezione." },
+    "gs": { "type": "string", "description": "Grado di sfida. Ammesse le frazioni ('1/2') e i decimali ('0.5'): sono lo stesso grado. Deve coincidere col CR del nome del file (-crN.md)." },
+    "tipo": { "type": "string", "description": "Taglia, tipo e dadi vita, come li scrive il manuale: 'Small plant, 4d8+16'." },
+    "ca": { "type": "string", "description": "Classe Armatura, solo il numero." },
+    "ca-dettaglio": { "type": "string", "description": "Contatto, colto alla sprovvista, e da dove viene la CA." },
+    "pf": { "type": "string", "description": "Punti ferita." },
+    "pf-dado": { "type": "string", "description": "I DADI VITA (4d8+16), non i dadi di danno." },
+    "ts": { "type": "string", "description": "Tiri salvezza, forma 'Temp +6, Rifl +1, Vol +2'." },
+    "velocita": { "type": "string", "description": "Velocita', nell'unita' della scheda (6 m / 30 ft)." },
+    "iniziativa": { "type": "string", "description": "Modificatore di iniziativa." },
+    "sensi": { "type": "string", "description": "Scurovisione, fiuto, percezione cieca, e i modificatori di Ascoltare/Osservare." },
+    "attributi": { "type": "string", "description": "Sei attributi separati da virgola: 'For 20, Des 12, Cos 18, Int 14, Sag 13, Car 16'." },
+    "attacchi": { "type": "array", "items": { "type": "string" }, "description": "Una riga per attacco: 'Mischia schianto +5 (1d4+1)'. La prima parola diventa l'etichetta in grassetto." },
+    "voci": { "type": "array", "items": { "type": "string" }, "description": "Voci 'Etichetta: contenuto' — Talenti, Abilita', Speciali, Incantesimi." },
+    "tattica": { "type": "string", "description": "Come combatte: la riga che serve al DM al primo round." },
+    "fonte": { "type": "string", "description": "Manuale e pagina, o la scheda da cui deriva." }
+  }
+}

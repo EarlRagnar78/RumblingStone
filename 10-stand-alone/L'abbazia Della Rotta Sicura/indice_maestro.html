@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Indice Maestro — L'Abbazia della Rotta Sicura</title>
+<style>
+  :root{--ink:#241c14;--soft:#5a4a36;--parch:#efe4c8;--hi:#f8f1dd;--rule:#a8926a;--acc:#7c2f2f;--mar:#2d5470}
+  *{box-sizing:border-box}
+  body{margin:0;background:#2a2420;color:var(--ink);
+       font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;line-height:1.45}
+  .page{max-width:1180px;margin:0 auto;background:var(--parch);padding:32px 40px 60px;box-shadow:0 0 40px rgba(0,0,0,.5)}
+  h1{font-size:1.95rem;margin:0 0 2px;font-variant:small-caps;letter-spacing:.5px}
+  .sub{font-style:italic;color:var(--soft);margin:0 0 16px}
+  h2{font-variant:small-caps;letter-spacing:1px;font-size:1.35rem;border-bottom:2px solid var(--rule);
+     padding-bottom:4px;margin:36px 0 12px}
+  h3{font-size:1.05rem;margin:20px 0 6px;font-variant:small-caps;letter-spacing:.5px}
+  p{margin:0 0 10px}
+  table{width:100%;border-collapse:collapse;font-size:.84rem;margin:6px 0 16px}
+  th,td{border:1px solid var(--rule);padding:5px 7px;text-align:left;vertical-align:top}
+  th{background:rgba(0,0,0,.07);font-variant:small-caps;letter-spacing:.5px;position:sticky;top:0}
+  tbody tr:nth-child(even){background:rgba(0,0,0,.025)}
+  code{font-family:"SF Mono",Consolas,monospace;font-size:.9em;background:rgba(0,0,0,.07);padding:1px 4px;
+       border-radius:2px;font-weight:700}
+  .cod{white-space:nowrap;font-family:"SF Mono",Consolas,monospace;font-weight:700;font-size:.85rem}
+  .doc{white-space:nowrap;font-size:.78rem;color:var(--soft)}
+  .warn{border:1px solid var(--acc);background:rgba(124,47,47,.07);padding:10px 14px;margin:0 0 16px;font-size:.92rem}
+  .note{border:1px solid var(--mar);background:rgba(45,84,112,.07);padding:10px 14px;margin:0 0 16px;font-size:.92rem}
+  .sev{font-family:sans-serif;font-size:.7rem;font-weight:700;padding:2px 6px;border-radius:3px;color:#fff;
+       letter-spacing:.5px;white-space:nowrap}
+  .s1{background:#8c1c1c}.s2{background:#a85a1a}.s3{background:#6b6320}
+  .find{border:1px solid var(--rule);border-left:5px solid var(--acc);padding:9px 12px;margin:0 0 12px;
+        font-size:.88rem;break-inside:avoid;background:rgba(0,0,0,.02)}
+  .find b.k{font-variant:small-caps;color:var(--acc)}
+  #q{width:100%;padding:9px 12px;font-size:1rem;font-family:inherit;border:2px solid var(--ink);
+     background:var(--hi);color:var(--ink);margin-bottom:4px}
+  #cnt{font-size:.8rem;color:var(--soft);font-style:italic;margin-bottom:8px}
+  .chips{margin-bottom:10px}
+  .chip{display:inline-block;font-family:sans-serif;font-size:.75rem;font-weight:700;padding:4px 10px;
+        margin:2px 3px 2px 0;border:1.5px solid var(--ink);background:var(--hi);cursor:pointer;border-radius:3px}
+  .chip:hover{background:var(--ink);color:var(--hi)}
+  .wrap{max-height:640px;overflow-y:auto;border:1px solid var(--rule)}
+  .wrap table{margin:0}
+  ul{margin:0 0 10px;padding-left:20px}li{margin-bottom:3px}
+  @media print{body{background:#fff}.page{box-shadow:none;max-width:none;padding:0}
+    .wrap{max-height:none;overflow:visible}#q,.chips,#cnt{display:none}
+    table,.find{break-inside:avoid}th{position:static}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<h1>Indice Maestro</h1>
+<p class="sub">L'Abbazia della Rotta Sicura — 48 aree su tre documenti, tabella di riscalatura, dry-run simulato</p>
+
+<!-- ============ NUMERAZIONE ============ -->
+<h2>Prima cosa: la numerazione era rotta</h2>
+<div class="warn">
+<b>Difetto critico trovato nel dry-run.</b> I numeri <b>16, 17 e 18</b> erano usati tre volte su tre documenti:
+16/17/18 come livelli del campanile nel documento principale, 16/17 come Scriptorium e Scala di servizio
+nell'Appendice A, e 18 come Vestibolo della cripta. Al tavolo &laquo;area 17&raquo; era ambiguo fra tre stanze diverse.
+<br><br>
+<b>Correzione minima:</b> i numeri restano, si aggiunge un prefisso di livello. Nulla da ristampare
+tranne le tre righe della tabella qui sotto.
+</div>
+
+<table>
+<thead><tr><th>Prefisso</th><th>Livello</th><th>Intervallo</th><th>Note</th></tr></thead>
+<tbody>
+<tr><td><code>B</code></td><td>Il borgo di Vènere Bassa</td><td>B1–B10</td><td>Appendice A</td></tr>
+<tr><td><code>A</code></td><td>Abbazia, livello 0</td><td>A1–A17</td><td>Appendice A</td></tr>
+<tr><td><code>T</code></td><td>Campanile, livelli superiori</td><td>T2–T4</td><td><b>Rinumerate:</b> ex 16→T2, ex 17→T3, ex 18→T4. T1 = A7</td></tr>
+<tr><td><code>C</code></td><td>Cripta e celle, livello −1</td><td>C18–C25</td><td>Documento principale, numeri invariati</td></tr>
+<tr><td><code>G</code></td><td>Grotta, livello −2</td><td>G26–G29</td><td>Documento principale, numeri invariati</td></tr>
+<tr><td><code>X</code></td><td>Il contado</td><td>X1–X6</td><td>Appendice B</td></tr>
+</tbody>
+</table>
+
+<!-- ============ INDICE ============ -->
+<h2>Indice navigabile delle 48 aree</h2>
+<p>Scrivi un codice, un nome, un PNG o una parola chiave. La tabella filtra mentre digiti.</p>
+
+<input id="q" type="text" placeholder="cerca: registro, Malaluna, marea, C22, chiave, prigionieri…" autocomplete="off">
+<div class="chips">
+  <span class="chip" data-f="">tutto</span>
+  <span class="chip" data-f="B">borgo</span>
+  <span class="chip" data-f="A">abbazia</span>
+  <span class="chip" data-f="T">campanile</span>
+  <span class="chip" data-f="C">cripta</span>
+  <span class="chip" data-f="G">grotta</span>
+  <span class="chip" data-f="X">contado</span>
+  <span class="chip" data-f="INCONTRO">incontri</span>
+  <span class="chip" data-f="PROVA">prove documentali</span>
+  <span class="chip" data-f="LEVA">leve</span>
+</div>
+<div id="cnt"></div>
+
+<div class="wrap">
+<table id="idx">
+<thead><tr><th>Cod.</th><th>Area</th><th>Doc.</th><th>Cosa c'è</th><th>Perché ci si torna</th></tr></thead>
+<tbody>
+<tr><td class="cod">B1</td><td>Osteria La Gomena Rotta</td><td class="doc">App. A</td><td>Nenno Braca. Dicerie 1–8 e 1d6 corsari. Letto a 5 mo</td><td>Unico hub sociale. Le voci 1, 2 e 8 sono gratis</td></tr>
+<tr><td class="cod">B2</td><td>Mulino Cassola</td><td class="doc">App. A</td><td>Berto e Nadia. Il coro nel maestrale. La mappa dei venti</td><td>Gancio d'apertura; le sette note; la cadenza di luna nuova</td></tr>
+<tr><td class="cod">B3</td><td>Corpo di Guardia</td><td class="doc">App. A</td><td>Dama Orsola Rive + 4 guardie. 300 mo d'ingaggio</td><td>LEVA: con una prova documentale dà 4 guardie</td></tr>
+<tr><td class="cod">B4</td><td>Moli e barche</td><td class="doc">App. A</td><td>Vecchio Scàbbio. Lancia a noleggio 20–200 mo</td><td>Via di mare verso B10. Le barche a secco di luna nuova</td></tr>
+<tr><td class="cod">B5</td><td>Pozzo e piazza</td><td class="doc">App. A</td><td>Le ventidue croci di marinaio</td><td>Mistero M2. Fa salire l'oppressione allo stadio 2</td></tr>
+<tr><td class="cod">B6</td><td>Cappella del borgo</td><td class="doc">App. A</td><td>Fra' Timoteo tre volte a settimana. Sempre aperta</td><td>Il contrasto con l'abbazia chiusa. Accesso legittimo ad A</td></tr>
+<tr><td class="cod">B7</td><td>Scalinata dei 140 gradini</td><td class="doc">App. A</td><td>Tre pianerottoli, nessun parapetto a mare</td><td>Scheggiatura e lembo di stoffa: Ilaria è stata spinta</td></tr>
+<tr><td class="cod">B8</td><td>Punto del ritrovamento</td><td class="doc">App. A</td><td>Il cadavere di Madre Ilaria</td><td>Gancio d'apertura. PROVA: la chiave della sacrestia fra gli scogli</td></tr>
+<tr><td class="cod">B9</td><td>Casa di Madama Vela</td><td class="doc">App. A</td><td>Vela, adepto 4, complice. 280 mo</td><td>PROVA: nove ricevute firmate dall'abate. Se lasciata libera, avvisa</td></tr>
+<tr><td class="cod">B10</td><td>Bocca della grotta</td><td class="doc">App. A</td><td>Arco alla base della scogliera. Il fanale di segnalazione</td><td>LEVA: convoca la lancia dei corsari. Seconda via a G26</td></tr>
+
+<tr><td class="cod">A1</td><td>Sagrato e terrazza</td><td class="doc">App. A</td><td>Area aperta 40×15, parapetto 3 ft, 90 ft di vuoto</td><td>INCONTRO I7 nello scenario A. I due solchi nel selciato</td></tr>
+<tr><td class="cod">A2</td><td>Portico d'ingresso</td><td class="doc">App. A</td><td>Portale CD 22. Acquasantiera asciutta</td><td>L'acqua è di mare. Graffi dall'interno verso l'esterno</td></tr>
+<tr><td class="cod">A3</td><td>Navata gotica</td><td class="doc">App. A</td><td>Sei colonne a fasce. Panche. La sedia dallo schienale alto</td><td>INCONTRO I1: 6 scheletri di notte. Aggirabile via A8</td></tr>
+<tr><td class="cod">A4</td><td>Presbiterio e altare</td><td class="doc">App. A</td><td>Area profanata. Statua corrosa dal sale sul solo volto</td><td>Riconsacrare qui depotenzia tutti i non-morti dell'abbazia</td></tr>
+<tr><td class="cod">A5</td><td>Abside</td><td class="doc">App. A</td><td>Trifora a 90 ft. Bassorilievo sotto l'intonaco</td><td>Il tempio antico. Di notte: la Zanna di Bruma alla fonda</td></tr>
+<tr><td class="cod">A6</td><td>Sacrestia</td><td class="doc">App. A</td><td>Quattro sai umidi di acqua salata. Registro dei defunti</td><td>Chiave della grata C18 e del portale A2</td></tr>
+<tr><td class="cod">A7</td><td>Campanile, base (T1)</td><td class="doc">App. A</td><td>Scala a chiocciola. <b>La fune è tagliata</b></td><td>Ripristinarla chiama Orsola in 12 min e costa 2 passi d'orologio</td></tr>
+<tr><td class="cod">A8</td><td>Loggia sul mare</td><td class="doc">App. A</td><td>Arcata aperta sul precipizio. Vento −4 a distanza</td><td>Fiancheggia A3. La scarpa sotto il terzo pilastro</td></tr>
+<tr><td class="cod">A9</td><td>Cappella e botola</td><td class="doc">App. A</td><td>Lastra tombale senza nome. Tre indizi ridondanti</td><td>Via principale a C18. <b>Unico varco canonica↔chiesa</b></td></tr>
+<tr><td class="cod">A10</td><td>Chiostro</td><td class="doc">App. A</td><td>Le nove Ancelle vive. Il pozzo salmastro</td><td>Mistero M3: terza via di discesa a C19 (Scalare CD 15)</td></tr>
+<tr><td class="cod">A11</td><td>Refettorio</td><td class="doc">App. A</td><td>Ventidue coperti, nove pagliericci</td><td>Il conto che non torna. Timoteo diventa utilizzabile qui</td></tr>
+<tr><td class="cod">A12</td><td>Cucina e dispensa</td><td class="doc">App. A</td><td>Merce da nave. Paiolo annerito all'esterno</td><td>Quarto canale sul commercio marittimo</td></tr>
+<tr><td class="cod">A13</td><td>Dormitorio delle Ancelle</td><td class="doc">App. A</td><td>Tredici cassette mai svuotate. Un coltello nascosto</td><td>Un oggetto da qui abbassa a CD 13 la prova con Ilaria (C20)</td></tr>
+<tr><td class="cod">A14</td><td>Studio dell'Abate</td><td class="doc">App. A</td><td><b>Il registro.</b> La cartella dei contratti falsi</td><td>PROVA principale. LEVA: +4 alla reazione di Malaluna</td></tr>
+<tr><td class="cod">A15</td><td>Cella dell'Abate</td><td class="doc">App. A</td><td>Finestre murate, chiavistello esterno, cassone di terra</td><td>INCONTRO I5: aprirlo di giorno vince l'avventura</td></tr>
+<tr><td class="cod">A16</td><td>Scriptorium</td><td class="doc">App. A</td><td>Trentuno lettere in brutta copia, stessa mano</td><td>PROVA che convince Orsola. Le sette note al rovescio</td></tr>
+<tr><td class="cod">A17</td><td>Scala di servizio</td><td class="doc">App. A</td><td>Porta rinforzata CD 22. Una voce che conta fino a cinque</td><td>Via rapida a C23 — ma sbuca <i>dentro</i> il corpo di guardia</td></tr>
+
+<tr><td class="cod">T2</td><td>Alloggio del custode <span class="doc">(ex 16)</span></td><td class="doc">Principale</td><td>Il diario del custode, stessa riga ripetuta</td><td>Prima lettura ad alta voce: Vol CD 13</td></tr>
+<tr><td class="cod">T3</td><td>Archivio <span class="doc">(ex 17)</span></td><td class="doc">Principale</td><td>Cronaca della fondazione. 2 pergamene</td><td>Canale ridondante rispetto a C20. Il rito delle quattro campane</td></tr>
+<tr><td class="cod">T4</td><td>Cella campanaria <span class="doc">(ex 18)</span></td><td class="doc">Principale</td><td>Quattro campane. Vista su tutte le aree esterne</td><td>LEVA: soluzione non-combattiva dello scontro finale</td></tr>
+
+<tr><td class="cod">C18</td><td>Vestibolo della cripta</td><td class="doc">Principale</td><td>Grata di ferro CD 25. Qualcuno tossisce a ponente</td><td>Snodo fra A9, C19 e C21</td></tr>
+<tr><td class="cod">C19</td><td>Cripta delle Colonne</td><td class="doc">Principale</td><td>Otto sarcofagi, quattro pilastri, la fossa</td><td>INCONTRO I2: 3 wight. Mistero M1: il sarcofago di Corradino</td></tr>
+<tr><td class="cod">C20</td><td>Sacello di Madre Ilaria</td><td class="doc">Principale</td><td>Consacrato. Nessun non-morto entra</td><td>Rifugio sicuro. Tre domande, poi svanisce</td></tr>
+<tr><td class="cod">C21</td><td>Corridoio delle Celle</td><td class="doc">Principale</td><td>Cinque grate. Pavimento pulito. Le ciotole</td><td>Due ciotole su cinque: gli altri tre non ci sono più</td></tr>
+<tr><td class="cod">C22</td><td>Le Celle</td><td class="doc">Principale</td><td>Merlo, Cinzia, Bertrada, Naspo</td><td>LEVA: Naspo vivo spacca la ciurma. Prova P1</td></tr>
+<tr><td class="cod">C23</td><td>Corpo di Guardia</td><td class="doc">Principale</td><td>Chiavi delle celle. Cassa con 400 mo</td><td>INCONTRO I3: 4 corsari + Grinza</td></tr>
+<tr><td class="cod">C24</td><td>Cripta dei Marinai</td><td class="doc">Principale</td><td>Dodici loculi allagati</td><td>INCONTRO I4 (facoltativo). LEVA: il fantasma Tiberio</td></tr>
+<tr><td class="cod">C25</td><td>Scala alla grotta</td><td class="doc">Principale</td><td>Sessanta gradini. Il rumore dell'acqua cambia ogni dieci</td><td>Orologio narrativo naturale verso G26</td></tr>
+
+<tr><td class="cod">G26</td><td>Banchina della Consegna</td><td class="doc">Principale</td><td>Fanale schermato, bitte, la lancia dei corsari</td><td>Trattativa P2. Nessun corsaro va oltre il bordo</td></tr>
+<tr><td class="cod">G27</td><td>Altare del Frangente</td><td class="doc">Principale</td><td>Mensa di pietra nera su uno sperone</td><td><b>Sommerso al colmo: uccide il vampiro.</b> Prova P3</td></tr>
+<tr><td class="cod">G28</td><td>Recinto</td><td class="doc">Principale</td><td>Pali, sbarre, un cancello</td><td>Al passo 2 i prigionieri vengono spostati qui</td></tr>
+<tr><td class="cod">G29</td><td>Bocca di mare</td><td class="doc">Principale</td><td>Apertura sul mare aperto</td><td>Ingresso della lancia. Via di fuga verso B4</td></tr>
+
+<tr><td class="cod">X1</td><td>Càlmara</td><td class="doc">App. B</td><td>Città portuale, 40 mi. Magia fino al 3° livello</td><td>Quattro giorni a/r: non arriva in tempo per stanotte</td></tr>
+<tr><td class="cod">X2</td><td>Torre del Guado</td><td class="doc">App. B</td><td>Ser Aldemaro Fusco e sei soldati, 8 mi</td><td>Con A16 manda i sei uomini <i>domani</i></td></tr>
+<tr><td class="cod">X3</td><td>Saline di Mezzo</td><td class="doc">App. B</td><td>Il salinaio. L'abbazia compra sale in quantità assurde</td><td>Quarto canale sul commercio</td></tr>
+<tr><td class="cod">X4</td><td>Bosco di Salicorno</td><td class="doc">App. B</td><td>Vecchia Nuta, druida 3 esiliata</td><td>LEVA: tre corone di salicornia contro il concilio</td></tr>
+<tr><td class="cod">X5</td><td>Lo Scoglio Nero</td><td class="doc">App. B</td><td>Il paiolo del concilio, 1 mi al largo</td><td>Mistero M6: distruggerlo esclude il concilio per una settimana</td></tr>
+<tr><td class="cod">X6</td><td>La strada costiera</td><td class="doc">App. B</td><td>Unica via di terra, franosa</td><td>Se piove, il borgo è isolato e X2 non arriva</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ============ QUICK REF ============ -->
+<h2>Riferimento rapido</h2>
+
+<h3>I due contatori — non confonderli</h3>
+<table>
+<thead><tr><th>Contatore</th><th>Avanza con</th><th>Parte</th><th>Effetto</th></tr></thead>
+<tbody>
+<tr><td><b>Scala dell'Oppressione</b> (0–5)</td><td>Le <i>scoperte</i> dei PG</td><td>Subito, a 0</td><td>Atmosfera, comportamento dei PNG, le tre discese</td></tr>
+<tr><td><b>Orologio della Notte</b> (1–8)</td><td>Il <i>tempo</i>, +1 per ogni azione rumorosa</td><td>Solo allo stadio 5</td><td>Posizione dei nemici e dei prigionieri, marea</td></tr>
+</tbody>
+</table>
+
+<h3>Scenari finali</h3>
+<table>
+<thead><tr><th>Sc.</th><th>Nemici</th><th>EL</th><th>Come ci si arriva</th></tr></thead>
+<tbody>
+<tr><td><b>A</b></td><td>Abate + Marèa + Grinza + Malaluna + 6 corsari</td><td>12</td><td>Nessuna leva tirata. <b>TPK probabile</b></td></tr>
+<tr><td><b>B</b></td><td>Abate + Marèa + 4 corsari</td><td>10</td><td>Prigionieri liberati, Malaluna esita</td></tr>
+<tr><td><b>C</b></td><td>Abate + Marèa; corsari alleati</td><td>9</td><td>Reazione Malaluna ≥ 19, o Sedda persuasa</td></tr>
+<tr><td><b>D</b></td><td>Marèa + Grinza</td><td>8</td><td>Abate distrutto in A15 di giorno, o su G27 al passo 7</td></tr>
+</tbody>
+</table>
+
+<h3>Le quattro prove documentali (una basta per B3)</h3>
+<table>
+<thead><tr><th>Prova</th><th>Dove</th><th>CD</th><th>Cosa sblocca</th></tr></thead>
+<tbody>
+<tr><td>Il registro dell'abate</td><td>A14</td><td>Cercare 20</td><td>Orsola + Rufa + reazione Malaluna +4</td></tr>
+<tr><td>Le brutte copie delle lettere</td><td>A16</td><td>Cercare 16</td><td>Orsola. La prova più facile da trovare</td></tr>
+<tr><td>Le nove ricevute</td><td>B9</td><td>Cercare 15</td><td>Orsola. Richiede di interrogare Vela</td></tr>
+<tr><td>Il secondo registro di Sedda</td><td>G26</td><td>Diplomazia 15</td><td>Orsola + i corsari si schierano</td></tr>
+</tbody>
+</table>
+
+<!-- ============ RISCALATURA ============ -->
+<h2>Riscalatura dell'avventura</h2>
+
+<h3>Per livello del party (base: 4 PG di 7°–8°)</h3>
+<table>
+<thead><tr><th>Elemento</th><th>4°–5°</th><th>5°–6°</th><th><b>7°–8° (base)</b></th><th>9°–10°</th><th>11°–12°</th></tr></thead>
+<tbody>
+<tr><td><b>Padre Anselmo</b></td><td>Vampiro chierico 3 · GS 5</td><td>Vampiro chierico 5 · GS 7</td><td><b>Vampiro chierico 7 · GS 9</b></td><td>Vampiro chierico 9 · GS 11, con 2 wight servi</td><td>Vampiro chierico 11 · GS 13, con 4 wight</td></tr>
+<tr><td><b>Le Sorelle</b></td><td>Solo Grinza (GS 4)</td><td>Grinza + Còlpa, <b>mai concilio</b></td><td><b>Marèa in G27, Grinza in C23; concilio solo come valvola</b></td><td>Concilio possibile in G27</td><td>Concilio sempre presente + 2 chuul (GS 7) in G29</td></tr>
+<tr><td><b>Malaluna</b></td><td>Guerriero 4 · GS 4</td><td>Guerriero 5/ladro 1 · GS 6</td><td><b>Guerriero 6/ladro 2 · GS 8</b></td><td>Guerriero 8/ladro 3 · GS 10</td><td>Guerriero 10/ladro 4 · GS 12</td></tr>
+<tr><td><b>Corsari a terra</b></td><td>4 corsari</td><td>5 corsari + 1 arciere</td><td><b>6 corsari + 2 arcieri</b></td><td>8 corsari + 3 arcieri</td><td>10 corsari + 4 arcieri, Ostro barbaro 8</td></tr>
+<tr><td><b>I1</b> scheletri (A3)</td><td>4</td><td>5</td><td><b>6</b></td><td>8 + 1 wight</td><td>10 + 2 wight</td></tr>
+<tr><td><b>I2</b> wight (C19)</td><td>2</td><td>2</td><td><b>3</b></td><td>4</td><td>5 + 1 ombra</td></tr>
+<tr><td><b>I4</b> lacedon (C24)</td><td><i>tagliare</i></td><td>4</td><td><b>6</b></td><td>8</td><td>10 + 1 ghast</td></tr>
+<tr><td><b>Skum</b> (G27)</td><td>—</td><td>2</td><td><b>4</b></td><td>6</td><td>8</td></tr>
+<tr><td><b>CD delle prove</b></td><td>−3</td><td>−2</td><td><b>come scritto</b></td><td>+2</td><td>+4</td></tr>
+<tr><td><b>Tesoro totale</b></td><td>×0,4 (~7.000 mo)</td><td>×0,7 (~12.400)</td><td><b>×1 (~17.700)</b></td><td>×1,6 (~28.300)</td><td>×2,5 (~44.000)</td></tr>
+<tr><td><b>EL scenario B</b></td><td>7</td><td>8</td><td><b>10</b></td><td>12</td><td>14</td></tr>
+<tr><td><b>Cosa si perde</b></td><td>L'acqua corrente diventa quasi obbligatoria: un GS 5 con RD 10 è ancora duro a 4°</td><td>Niente di essenziale</td><td>—</td><td>Nulla: il concilio smette di essere una valvola e diventa un incontro</td><td>La trattativa perde peso: a 12° i PG possono permettersi lo scenario A</td></tr>
+</tbody>
+</table>
+
+<h3>Per numero di giocatori</h3>
+<table>
+<thead><tr><th>PG</th><th>Nemici comuni</th><th>Capi</th><th>Aggiustamenti strutturali</th></tr></thead>
+<tbody>
+<tr><td><b>3</b></td><td>−1 per incontro</td><td>Anselmo −2 livelli di chierico; Marèa perde lo stritolare</td><td>Aggiungi un PNG alleato: Fra' Timoteo dopo A11, o due guardie di Orsola. La prova P1 passa a 2 successi su 4</td></tr>
+<tr><td><b>4</b></td><td colspan="3"><b>Base. Nessun aggiustamento.</b></td></tr>
+<tr><td><b>5</b></td><td>+1 per incontro</td><td>+2 pf per DV ai capi; Malaluna +1 arciere di scorta</td><td>P1 passa a 4 successi su 6. Nessun'altra modifica</td></tr>
+<tr><td><b>6</b></td><td>+2 per incontro</td><td>Capi con pf massimizzati e +2 CA. Anselmo +1 livello</td><td>Sdoppia I3: 4 corsari in C23 e altri 3 che arrivano dal corridoio C21 al terzo round. Con 6 PG un'unica stanza non basta più</td></tr>
+</tbody>
+</table>
+
+<h3>Per durata disponibile</h3>
+<table>
+<thead><tr><th>Formato</th><th>Aree in gioco</th><th>Cosa si taglia</th><th>Cosa si perde davvero</th></tr></thead>
+<tbody>
+<tr><td><b>3–4 h</b><br>one-shot compressa</td><td>B1, B8, A1–A9, C18–C23, G26–G29</td><td>Tutto il contado, T2–T4, I4, i sei misteri, l'Atto II diurno. Un solo gancio: il cadavere</td><td>La scala d'oppressione non supera lo stadio 3 e le tre discese saltano. Diventa un'incursione, non un orrore</td></tr>
+<tr><td><b>7–8 h</b><br>sessione lunga</td><td>Tutto tranne X1–X6 e I4</td><td>Contado e cripta dei marinai</td><td>Vecchia Nuta e il paiolo: il concilio resta una minaccia reale</td></tr>
+<tr><td><b>2 sedute</b><br>consigliato</td><td>Tutto tranne X1</td><td>Solo Càlmara</td><td>Niente. È il formato per cui è scritta</td></tr>
+<tr><td><b>3 sedute</b><br>estesa</td><td>Tutto</td><td>—</td><td>Rischio opposto: l'orologio della notte perde tensione se ci si arriva stanchi. Metti il taglio a fine C22, non prima</td></tr>
+</tbody>
+</table>
+
+<!-- ============ DRY RUN ============ -->
+<h2>Dry-run simulato — dodici difetti</h2>
+<div class="warn">
+<b>Cos'è e cosa non è.</b> Ho percorso la struttura in modo avversariale — cercando i punti in cui un gruppo
+può bloccarsi, un'informazione non arriva, due regole si contraddicono. <b>Non è un playtest.</b> Trova difetti
+strutturali; non dice se l'avventura è divertente, se il ritmo regge o se i giocatori si affezionano a Cinzia.
+Quello lo dice solo un tavolo.
+</div>
+
+<div class="find"><span class="sev s1">CRITICO</span> <b>D1 · Collisione di numerazione</b><br>
+<b class="k">Difetto:</b> 16, 17, 18 usati tre volte su tre documenti.
+<b class="k">Effetto:</b> &laquo;area 17&raquo; è ambiguo fra Archivio, Scriptorium e Scala di servizio.
+<b class="k">Correzione:</b> prefissi di livello, tabella in cima a questo documento. <b>Già applicata qui.</b></div>
+
+<div class="find"><span class="sev s1">CRITICO</span> <b>D2 · Dipendenza quasi circolare sulla chiave</b><br>
+<b class="k">Difetto:</b> il portale A2 è CD 22 e la sua chiave è in A6, che sta <i>dentro</i> la chiesa chiusa.
+L'unico varco fra canonica e chiesa è la porta A10→A9→A3.
+<b class="k">Effetto:</b> se quella porta è chiusa, l'intera chiesa è inaccessibile e l'Atto II si blocca.
+Il documento non dice mai se è aperta.
+<b class="k">Correzione — ruling da adottare:</b> <b>la porta fra chiostro (A10) e cappella (A9) è sempre aperta
+di giorno.</b> È il passaggio di servizio delle Ancelle. Di notte è sbarrata dall'interno.
+In alternativa, la chiave sugli scogli (B8) diventa obbligatoria, non facoltativa.</div>
+
+<div class="find"><span class="sev s2">ALTO</span> <b>D3 · Grinza è in due posti</b><br>
+<b class="k">Difetto:</b> Grinza è l'incontro I3 in C23 <i>e</i> una delle tre Sorelle nello scenario finale.
+<b class="k">Effetto:</b> se muore in C23 — cosa probabile — il concilio è già impossibile, e nessuno lo dice.
+<b class="k">Correzione:</b> esplicitare che <b>la morte di Grinza esclude il concilio per il resto della notte</b>,
+e che nello scenario D è sostituita da 2 skum. È coerente e trasforma un buco in una ricompensa.</div>
+
+<div class="find"><span class="sev s2">ALTO</span> <b>D4 · Tiberio e Malaluna si escludono</b><br>
+<b class="k">Difetto:</b> la leva di Tiberio (C24) richiede la promessa che Malaluna muoia. Lo scenario C richiede
+Malaluna vivo e alleato.
+<b class="k">Effetto:</b> le due leve migliori sono in conflitto diretto e il documento non lo dichiara mai.
+<b class="k">Correzione:</b> <b>dichiararlo, non risolverlo.</b> È il dilemma migliore dell'avventura:
+il fantasma che vuole giustizia contro il vivo che può salvare quattro persone. Metti la scelta davanti
+ai PG in modo esplicito al passo 3 e non offrire una terza via.</div>
+
+<div class="find"><span class="sev s2">ALTO</span> <b>D5 · I due contatori si sovrappongono male</b><br>
+<b class="k">Difetto:</b> la prova P1 dice &laquo;orologio +1&raquo;, ma l'orologio della notte parte solo allo stadio 5.
+Se P1 avviene di giorno, il costo non esiste.
+<b class="k">Correzione — regola di conversione:</b> prima dello stadio 5, ogni &laquo;orologio +1&raquo; si legge
+come <b>&laquo;l'abbazia se ne accorge&raquo;</b>: al secondo, l'oppressione sale di uno stadio;
+al terzo, Anselmo si sveglia in anticipo e la consegna è anticipata di un'ora.</div>
+
+<div class="find"><span class="sev s2">ALTO</span> <b>D6 · Le nove Ancelle vive non hanno condizione di vittoria</b><br>
+<b class="k">Difetto:</b> A10 le presenta, l'Atto IV minaccia di usarle come ostaggi, e in nessun punto è scritto
+cosa conti come averle salvate.
+<b class="k">Correzione:</b> condizione dichiarata — <b>le nove sono salve se al passo 5 si trovano fuori
+dall'abbazia o dentro il sacello C20</b> (l'unico luogo consacrato). Portarle giù dalla scalinata costa
+la prova P1 una seconda volta, con nove persone invece di quattro.</div>
+
+<div class="find"><span class="sev s3">MEDIO</span> <b>D7 · Nessuna economia della luce</b><br>
+<b class="k">Difetto:</b> tutto il livello −1 è buio totale, ma i corsari in C23 hanno bisogno di luce per giocare
+a dadi. Ne consegue che i PG li vedono a 60 ft prima di essere visti — e il documento non lo sfrutta.
+<b class="k">Correzione:</b> dichiara che C23 è l'unica stanza illuminata del livello e che la luce filtra sotto
+la porta lungo tutto C21. Premia chi avanza al buio; punisce chi porta una torcia con l'iniziativa
+del nemico.</div>
+
+<div class="find"><span class="sev s3">MEDIO</span> <b>D8 · M6 resta squilibrante</b><br>
+<b class="k">Difetto:</b> distruggere il paiolo (X5) esclude il concilio a priori.
+<b class="k">Correzione minima:</b> una delle Sorelle è sullo scoglio a sorvegliarlo. Incontro EL 5 in barca,
+di notte, sull'acqua — che è il terreno peggiore per il party. Il premio resta, il prezzo diventa reale.</div>
+
+<div class="find"><span class="sev s3">MEDIO</span> <b>D9 · Statistiche derivate, non verificate</b><br>
+<b class="k">Difetto:</b> Anselmo (template vampiro su chierico 7) e Marèa (annis) hanno numeri ricavati,
+non copiati dal Manuale.
+<b class="k">Rischio concreto:</b> lo stritolare di Marèa fa in media 17 danni per round contro un PG di 7°.
+<b class="k">Correzione:</b> checkpoint 7 e 8 del dry-run in Appendice B. Va fatto prima del tavolo,
+non durante.</div>
+
+<div class="find"><span class="sev s3">MEDIO</span> <b>D10 · Il tesoro ignora il mago</b><br>
+<b class="k">Difetto:</b> su ~17.700 mo, al mago vanno due pergamene e una perla di potere di 1° livello.
+Tutto il resto è marziale o divino.
+<b class="k">Correzione:</b> nel relitto in G27, aggiungi un <i>libro degli incantesimi</i> di un mago annegato
+(4 incantesimi di 2°–3° a tua scelta) e una <i>bacchetta di dardo incantato</i> (LI 5, 20 cariche).
+Costo circa 2.000 mo, rientra nel budget riducendo le gemme di Malaluna da quattro a tre.</div>
+
+<div class="find"><span class="sev s3">MEDIO</span> <b>D11 · Fra' Timoteo non ha statistiche</b><br>
+<b class="k">Difetto:</b> è il PNG più usato dell'Atto II e non ha un blocco.
+<b class="k">Correzione:</b> umano chierico 2 · PF 11 · CA 13 · TS Temp +4, Rifl +0, Vol +6 ·
+Diplomazia +6, Sapienza (religione) +5 · scaccia non-morti 4/giorno (livello effettivo 2, inutile qui
+ed è il punto) · incantesimi 3/2+1. <b>Non combatte mai per primo.</b></div>
+
+<div class="find"><span class="sev s3">MEDIO</span> <b>D12 · La durata dichiarata non regge</b><br>
+<b class="k">Difetto:</b> 48 aree, quattro atti e sette incontri in &laquo;7–8 ore&raquo; è ottimistico.
+<b class="k">Correzione:</b> è già nella tabella di riscalatura per durata. Il formato per cui l'avventura
+è realmente scritta è <b>due sedute</b>, con il taglio a fine C22.</div>
+
+<h3>Cosa il dry-run non ha potuto verificare</h3>
+<ul>
+<li>Se il ritmo dell'Atto I regge o annoia. È la cosa che si rompe più spesso e non è simulabile.</li>
+<li>Se i giocatori arrivano da soli al trucco dell'acqua corrente, o se le tre semine bastano.</li>
+<li>Se la terza discesa spaventa o fa ridere. Dipende interamente da come la interpreti tu.</li>
+<li>Se le vittime bambine restano sostenibili al tavolo, o se il gruppo si chiude.</li>
+<li>Il tempo reale di ogni scena. Solo un cronometro può dirtelo, ed è per questo che la scheda di
+raccolta in Appendice B ha una colonna &laquo;ora reale&raquo;.</li>
+</ul>
+
+<p style="text-align:center;font-style:italic;color:#5a4a36;margin-top:30px">
+— <i>Dodici difetti su tre documenti. Nessuno di questi è emerso scrivendoli: sono emersi rileggendoli
+come se qualcun altro dovesse usarli.</i> —
+</p>
+
+</div>
+
+<script>
+(function(){
+  var q=document.getElementById('q'),tb=document.querySelector('#idx tbody'),
+      rows=Array.prototype.slice.call(tb.rows),cnt=document.getElementById('cnt');
+  function upd(){
+    var v=q.value.trim().toLowerCase(),n=0;
+    rows.forEach(function(r){
+      var hit=!v||r.textContent.toLowerCase().indexOf(v)>-1;
+      r.style.display=hit?'':'none'; if(hit)n++;
+    });
+    cnt.textContent=n+' aree su '+rows.length;
+  }
+  q.addEventListener('input',upd);
+  Array.prototype.forEach.call(document.querySelectorAll('.chip'),function(c){
+    c.addEventListener('click',function(){ q.value=c.getAttribute('data-f'); upd(); q.focus(); });
+  });
+  upd();
+})();
+</script>
+</body>
+</html>

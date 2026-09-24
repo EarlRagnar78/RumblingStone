@@ -1,7 +1,7 @@
 # Boost Methods — D&D 3.5 SRD (Improving Monsters)
 
 Source: https://www.d20srd.org/srd/improvingMonsters.htm (DMG ch. 5).
-This is the RAW path — full fidelity, produces a legal 3.5 stat block.
+This is the RAW path: full fidelity, produces a legal 3.5 stat block.
 All tables verified against the official WotC 3.5 SRD distribution
 (`ImprovingMonsters`, 2026-07-03).
 
@@ -53,10 +53,10 @@ per category (1d2→1d3→1d4→1d6→1d8→2d6→3d6; 1d10→2d8→3d8).
 
 **Other RAW CR modifiers** (SRD, Table: Improved Monster CR Increase):
 size increased to Large or larger **+1 CR**; elite array instead of
-standard **+1 CR** (not if advanced by class levels — those already assume
+standard **+1 CR** (not if advanced by class levels, which already assume
 it); added special attacks/qualities that significantly improve combat
 **+2 CR**, minor ones **+1 CR**. The added-HD CR increase does **not**
-stack with a class-level CR increase — use one or the other.
+stack with a class-level CR increase; use one or the other.
 
 ## 2. Templates (SRD, with CR adjustment)
 
@@ -71,14 +71,14 @@ stack with a class-level CR increase — use one or the other.
 | Skeleton / Zombie | rebuild | replaces abilities wholesale; CR from new HD |
 
 Templates buy **gimmicks** (immunities, auras, modes of attack) more than raw
-numbers — ideal for making a returning villain *feel different*, not just
+numbers, ideal for making a returning villain *feel different*, not just
 bigger. Full template text: d20srd.org/srd/monsters/[templateName].htm.
 
 ## 3. Class levels (villains and named PNGs)
 
-- **Associated class** (amplifies what the monster already does — barbarian/
+- **Associated class** (amplifies what the monster already does, barbarian/
   fighter on a brute, sorcerer on a Cha-caster with SLAs): **CR +1 per level**.
-- **Nonassociated class** (works against the chassis — wizard on an ogre):
+- **Nonassociated class** (works against the chassis, wizard on an ogre):
   **CR +1 per 2 levels**, until the nonassociated class levels equal the
   creature's original HD; from that point each additional level of the same
   (or a similar) class is associated, +1 CR each. NPC classes (warrior,
@@ -86,7 +86,7 @@ bigger. Full template text: d20srd.org/srd/monsters/[templateName].htm.
 - A humanoid with 1 racial HD drops it when taking its first class level
   (build as a classed character: PC classes CR = level; NPC classes
   CR = level − 1).
-- Class levels are the *only* boost that scales spellcasting DCs — for caster
+- Class levels are the *only* boost that scales spellcasting DCs; for caster
   villains at APL 13 they are usually the correct knob.
 
 ## 4. Elite array & equipment (humanoid PNGs, 5 minutes)
@@ -95,10 +95,10 @@ bigger. Full template text: d20srd.org/srd/monsters/[templateName].htm.
   on a monster; PC-classed NPCs use it by default). Nonelite array is
   13/12/11/10/9/8. This alone turns a "warrior 1" into a credible sergeant.
 - NPC gear budget: DMG Table 4–23 (non-SRD; verify in your copy). The
-  verified PF1e equivalent — Core Rulebook, Table: NPC Gear — prices a
+  verified PF1e equivalent (Core Rulebook, Table: NPC Gear) prices a
   heroic level-13 NPC at 27,000 gp and works fine at a 3.5 table (see
   `pathfinder-1e-srd/references/npc-building.md`). A +2 weapon and +1
-  to-hit is often a better boost than 4 HD, and the party can loot it —
+  to-hit is often a better boost than 4 HD, and the party can loot it,
   self-balancing.
 - Potions/scrolls/wands on the villain = spike power *during* the fight
   without permanent wealth inflation.

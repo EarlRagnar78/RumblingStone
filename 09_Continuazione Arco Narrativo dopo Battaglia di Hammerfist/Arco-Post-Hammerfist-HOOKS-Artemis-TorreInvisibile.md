@@ -42,7 +42,7 @@ Durante la **Cerimonia delle 100 Asce** (Giorno 21, vedi `08_La Battaglia Di Ham
 
 > *Mentre Re Thorek ti porge la runa di pietra, **l'Anello al tuo dito si surriscalda improvvisamente**. Non è dolore — è una **pressione**, come quando qualcuno ti chiama in una stanza affollata e ancora non capisci da dove arrivi la voce.*
 >
-> *Senti — non con le orecchie, ma in un piano laterale della tua mente — **una voce maschile** che non è la tua. Non è Lathander. Non è Mask. È una **voce di esperimento**, secca, paziente, leggermente curiosa. Parla in una lingua che riconosci come **drow antico**, ma comprendi le tre parole essenziali:*
+> *Arriva — non con le orecchie, ma in un piano laterale della tua mente — **una voce maschile** che non è la tua. Non è Lathander. Non è Mask. È una **voce di esperimento**, secca, paziente, leggermente curiosa. Parla in una lingua che riconosci come **drow antico**, ma comprendi le tre parole essenziali:*
 >
 > *"**Lui sta camminando. Vieni.**"*
 >
@@ -123,7 +123,7 @@ Per ogni notte di viaggio, Artemis ha un sogno **leggermente più nitido**:
 
 #### Cornice retroattiva (canon richiamato)
 
-Artemis a Belkram (Arco 04) **rifiutò la prestige class Lord of Sun and Shadow** offerta congiuntamente da **Lathander** (sole, alba, rinascita) e **Mask** (ombra, segreto, ladroneria). Il rifiuto fu esplicito; l'Anello evolse per assorbire le essenze divine **diversamente** (vedi `campaign/lore/campaign-history.md` §Phase C — Belkram + Eternal Forge sub-quests, e `PG/Artefatti/Artefatti-Pg/PrestigeClass/lord_sun_shadow/`).
+Artemis a Belkram (Arco 04) **rifiutò la prestige class Lord of Sun and Shadow** offerta congiuntamente da **Lathander** (sole, alba, rinascita) e **Mask** (ombra, segreto, ladroneria). Il rifiuto fu esplicito; l'Anello evolse per assorbire le essenze divine **diversamente** (vedi `campaign/lore/campaign-chronicle.md` §Phase C — Belkram + Eternal Forge sub-quests, e `PG/Artefatti/Artefatti-Pg/PrestigeClass/lord_sun_shadow/`).
 
 Le due divinità **non hanno preso bene** il rifiuto, ma **non l'hanno punito**. Lathander è una divinità di pazienza generativa; Mask è una divinità di pazienza venatoria. Entrambi hanno aspettato.
 

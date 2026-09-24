@@ -57,15 +57,18 @@ Hammerfist preme sul riposo. Nessun nemico, nessun combattimento.
   (Terra), forgiato contro Terros**. Manca solo il Rubino.
 - **Bottino intatto** `[canone giocato]`: al rito **nessuno si è spogliato**.
   Geode Titanico, **Cuore di Terros** e geodi sono ancora del party.
-- **TORDEK ha accettato il Peso nel corpo**: **−2 DES / +2 COS permanenti**.
-  Per un monaco è una piccola morte — CA senz'armatura, Riflessi e iniziativa
-  scendono di 1 — e per il portatore dei Bracieri è la cosa più coerente che
-  potesse succedere. **I Bracieri non l'hanno lodato**: un vecchio fabbro dà
-  per scontata la cosa giusta. Terros è caduto, quindi la condizione del potere
-  «Diventare una Collina» è **sbloccata** `[TODO aperto sulla sua scheda]`.
-  Porta inoltre nello zaino il **Seme-Mercato di Varis**, e **non sa cosa sia**.
-- **Thorik ha guardato**. Quello che regge sempre, stavolta non ha retto lui:
-  vale una riga nella catarsi davanti ad A3.
+- **THORIK ha accettato il Peso nel corpo**: **−2 DES / +2 COS permanenti**
+  *(corretto 2026-08-06: il pegno è del portatore, non di Tordek)*.
+  Per chi fa già l'ancora è diventare ancora più immobile — CA, Riflessi e
+  iniziativa scendono di 1, i pf salgono. **Attenzione a come lo giochi**: la
+  DES era già la sua statistica povera, quindi il malus **non si vede** e il
+  bonus sì. Ha pagato dove nessuno guarda. E **non sa** che la presenza verde
+  che gli ha tenuto le spalle era Hella (eco E-07f — non spiegarlo prima del
+  rito).
+- **TORDEK**: **nessun malus dal rito**, non è mai stato suo. Terros è caduto,
+  quindi la condizione del potere dei Bracieri **«Diventare una Collina»** è
+  **sbloccata** `[TODO aperto sulla sua scheda]`. Porta nello zaino il
+  **Seme-Mercato di Varis**, e **non sa cosa sia**.
 - **Artemis**: Anello riforgiato. Ha preso il Seme **senza toccarlo** e l'ha
   fatto portare a Tordek: **nessun Marchio attivo**, Varis non localizza
   nessuno — ma la gemma è nel gruppo, tiepida, e l'offerta non scade.
@@ -853,40 +856,39 @@ scene brevi, una per giocatore, giocate **una alla volta e in privato se
 puoi** — o almeno lette a turno mentre gli altri ascoltano senza commentare.
 Chiudi ogni scena e passa oltre: **non spiegare nulla**.
 
-### 🛡️ THORIK — quello che stavolta non ha retto lui
+### 🛡️ THORIK — le mani fredde sotto la trave
 
-> *Sogni una cosa banale e insopportabile: una trave che scende, e le tue mani
-> che non arrivano in tempo. Non perché sei lento. Perché **qualcun altro ci è
-> arrivato prima**, e adesso è lui che è sotto, e tu sei quello in piedi, con
-> le mani libere e niente da fare.*
->
-> *Nel sogno provi a dire che tocca a te. Ti esce la voce di quando eri
-> giovane, e nessuno ti sente.*
-
-È il rovescio esatto dell'immagine che la Corona gli aveva mostrato alla
-vigilia — *due mani sotto un architrave che scende* — e adesso quelle mani non
-sono le sue. Al rito il Peso l'ha preso **Tordek**. Thorik ha guardato.
-⚠️ **Non trasformarlo in senso di colpa**: è più sottile e più duro. È un uomo
-la cui identità è *reggere*, che ha scoperto di poter essere risparmiato. Se il
-giocatore ne parla, ascolta e non risolvere.
-
-### ⚒️ TORDEK — le mani fredde, e poi lo zaino
-
-Ha avuto la notte più piena del gruppo: si è preso il Peso e porta il Seme.
-Sono **due scene**, giocale di seguito con una pausa in mezzo.
-
-> *Prima. Sogni di essere ancora inginocchiato sull'Altare, e il peso c'è
-> ancora — ma non lo porti da solo. C'è un secondo paio di mani sotto la trave.
-> Non le vedi: le **senti**, e sono più piccole delle tue, e sono fredde come
-> pietra all'ombra, e non tremano.*
+> *Sogni di essere ancora inginocchiato sull'Altare, e il peso c'è ancora — ma
+> non lo porti da solo. C'è un secondo paio di mani sotto la trave. Non le
+> vedi: le **senti**, e sono più piccole delle tue, e sono fredde come pietra
+> all'ombra, e non tremano.*
 >
 > *Provi a girare la testa per vedere chi è. E il sogno, con la gentilezza
 > ottusa dei sogni, ti gira la testa **dall'altra parte**.*
 
-⚠️ La presenza verde è **Hella**, e Tordek **non lo sa**. Non confermarlo fino
-al #3. Se il giocatore indovina: *«non lo sai.»*
+È il compimento dell'immagine che la Corona gli aveva mostrato alla vigilia —
+*due mani sotto un architrave che scende*. Al rito quelle mani erano le sue, e
+non erano sole.
+⚠️ La presenza verde è **Hella**, e Thorik **non lo sa**: la crede Moradin, o
+non se lo chiede. **Non confermarlo fino al #3.** Se il giocatore indovina:
+*«non lo sai.»* È l'eco **E-07f** (`state.md` §7.E).
+⚠️ **Non trasformarlo in orgoglio né in senso di colpa.** Il punto è più
+sottile: è un uomo la cui identità è *reggere*, e che per la prima volta ha
+scoperto di **non aver retto da solo** — e la cosa non lo ha diminuito. Se il
+giocatore ne parla, ascolta e non risolvere.
 
-> *Poi. Sogni una fiera. Non una fiera nanica: banchi bassi, teli chiari, una
+*(Nota di canone, 2026-08-06: fino a questa data la scena di Thorik era il suo
+rovescio — «qualcun altro ci è arrivato prima, tu sei quello in piedi» — scritta
+quando il pegno era attribuito per errore a Tordek, e questa scena stava sotto
+il suo nome. Il pegno è del portatore: la scena torna a lui, insieme alle mani
+fredde.)*
+
+### ⚒️ TORDEK — lo zaino
+
+Al rito **non gli è stato chiesto niente**, e non ha pagato niente: il Peso era
+del portatore. La sua notte è **una scena sola**, e non parla dell'Altare.
+
+> *Sogni una fiera. Non una fiera nanica: banchi bassi, teli chiari, una
 > lingua che non conosci ma che capisci lo stesso, e un odore di spezie che non
 > crescono in nessun posto in cui sei stato. Nessuno ti guarda. Sei un cliente
 > come un altro, e la cosa che ti mette a disagio è **proprio quella**.*

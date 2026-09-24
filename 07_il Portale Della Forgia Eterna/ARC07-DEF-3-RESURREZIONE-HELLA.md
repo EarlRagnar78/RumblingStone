@@ -96,16 +96,21 @@ a 1.000 anni fa** (Hella è il 4° PG, APL 13 pieno).
 | 5 — Richiamo dello spirito | **tutti e 3** | Volontà | 18 | ≥2 successi su 3 (3 su 3 se Thorik ha rifiutato il Dono) |
 | 6 — Fusione | (Moradin manifesto) | automatico | — | — |
 
-### I Tre Doni (scelta-costo di ogni PG — §5)
-| PG | Dono (base) | Costo | Effetto su Hella |
-|---|---|---|---|
-| **Thorik** | Il Sangue della Stirpe | **−2 COS permanente** (mai ripristinata) | **Pelle di Adamantio** (RD 3/−) |
-| **Tordek** | Il Respiro / Ki | **−500 PE** | **Timeless Body** (immune veleni/malattie/età) |
-| **Artemis** | La Scintilla | 1 slot invocazione alto (o uso oggetto) 24 h | **Rinascita Spontanea** (1/g auto-stabilizza a 0 pf) |
+### I Tre Doni — il trapianto (§5)
+| PG | Dona, **per sempre** | 🌱 Hella riceve |
+|---|---|---|
+| 🛡️ **Thorik** | il **+2 di deflessione** della Corona → **−1 CA permanente** | **Lo Scudo del Custode** — 1/g, immediata: prende il danno di un alleato entro 9 m, **dimezzato**. 🔄 E Thorik è **accelerato 3 round, verso chi è stato protetto** |
+| ⚒️ **Tordek** | **Ancoraggio della Montagna** (2/g), che lascia i Bracieri | **Pelle di Adamantio — RD 3/adamantino** (la sua **unica** RD) |
+| 🔮 **Artemis** | **1d6 di Eldritch Blast**, per sempre (7d6 → 6d6) | **Il Rovo Eldritch** — **a volontà**, contatto a distanza 18 m, **2d6** |
 
-> Ognuno ha **alternativa equivalente** e **rifiuto** (§5). La resurrezione NON
-> è in ostaggio: il Cuore basta da solo — i sacrifici comprano i **Doni**, non
-> la vita.
+> **Un Dono è un trapianto, non una tassa**: il potere **esce dall'artefatto del
+> donatore** e **germoglia in un seme della Collana**. Il party non perde la
+> capacità — cambia mano e forma.
+> 🔗 **I tre si moltiplicano**: colpo da 40 → dimezzato (20) → meno la RD (17) →
+> Thorik scatta → e Hella ha il Rovo a volontà, quindi non perde il turno.
+> **Chi rifiuta** lascia il **seme dormiente**, e il suo **artefatto reagisce**
+> (§5, tabella delle reazioni). La resurrezione NON è in ostaggio: il Cuore
+> basta da solo — i doni comprano la **qualità** del ritorno, non la vita.
 
 ### 🐾 Supporto Pathfinder 1e (dove il 3.5 è vago) — opzionale, dichiarato
 > - **Il costo della resurrezione**: il 3.5 (*raise dead*) impone un **livello
@@ -127,9 +132,13 @@ a 1.000 anni fa** (Hella è il 4° PG, APL 13 pieno).
 > solo la sua metà.
 
 ### 🛡️ THORIK — l'unto che paga il prezzo del re (Casa di Davide lead)
-- Porta il peso della Corona **e** il costo più alto (−2 COS): il DM lo dica
-  chiaro — Thorik paga di più *perché* ha di più (D8). È la sua natura di
-  leader-che-si-sacrifica, non un'ingiustizia.
+- Porta il peso della Corona **e** dona la protezione che la Corona dà a lui:
+  il DM lo dica chiaro — Thorik **non le regala un potere, le passa il suo
+  mestiere**, e resta con **−1 alla CA** per il resto della campagna. È la sua
+  natura di leader-che-si-sacrifica, non un'ingiustizia.
+- 🔄 **E il suo dono gli torna addosso**: ogni volta che Hella scuda qualcuno,
+  lui **scatta verso quella persona**. Il DM lo narri come un riflesso, non come
+  un bonus — *«ti muovi prima di decidere di muoverti»*.
 - **Non sa** che la "presenza verde" che gli alleviò le spalle al Piano della
   Terra (master #1 §9) era lei. Lo scoprirà al §8, e sarà uno dei momenti più
   forti della campagna: *ha già portato peso per Hella, senza saperlo.*
@@ -138,14 +147,19 @@ a 1.000 anni fa** (Hella è il 4° PG, APL 13 pieno).
 - È **il suo** beat emotivo: è la voce che Hella ha sentito nel buio, il legame
   che l'ha tenuta ancorata. Al richiamo (Step 5) **dà al giocatore la scena**:
   lascialo chiamare Hella con parole sue.
-- Paga poco in meccanica (500 PE) perché **ha già pagato in narrativa**. I
-  Bracieri (coscienza) tacciono, per una volta: questo è un momento suo, non
-  loro.
+- Dona **l'Ancoraggio della Montagna**: il potere che lo tiene piantato passa a
+  lei. È coerente con quel che è stato per Hella nel buio — **l'ancora** — e i
+  Bracieri lo dicono in una riga sola e poi tacciono: questo è un momento suo,
+  non loro.
 
 ### 🔮 ARTEMIS — la scintilla, non il serbatoio (Andor support)
-- Il suo Dono è il più leggero (una scintilla d'innesco): il DM non lo faccia
-  sentire di serie B — la **rinascita spontanea** che dona è la rete che
-  salverà Hella a Hammerfist. Il suo vero prezzo arriverà alla Torre (Ring).
+- Il suo Dono **non è il più leggero, ed è il DM a doverlo dire**: cede **un
+  dado dell'*Eldritch Blast*, per sempre**, cioè un pezzo di quel che fa a ogni
+  singolo turno per il resto della campagna. Un warlock non è forte perché
+  colpisce duro: è forte perché **può farlo tutto il giorno** — e quella è
+  esattamente la cosa che regala.
+- 🌱 Al tavolo la nota da far cadere una volta sola: Hella ha **vulnerabilità al
+  fuoco ×1,5**, prezzo della Via della Radice, e adesso **porta il fuoco**.
 - Se porta il **Marchio di Varis** (#1 §6-bis, CANONE): l'Anello, durante la
   stabilizzazione (Step 3), «pizzica» — il caos vitale e il marchio del mercato
   risuonano. Gancio muto (conseguenza canonica del Marchio, DM 2026-07-23).
@@ -177,14 +191,14 @@ Ibrido Treant, Empatia vegetale +4, Fotosintesi, Earth Dream amplificato (1/g
 
 > **Read-aloud (LotR lead + liturgia).** *La Sala della Forgia si è fatta
 > silenziosa in un modo nuovo. Non il silenzio del vuoto: il silenzio di una
-> sala che trattiene il fiato. Gli otto affreschi vi guardano dalle pareti —
+> sala che trattiene il fiato. Gli otto affreschi guardano dalle pareti —
 > Moradin che forgia, i Quattro Eroi che prendono contorno, Hammerfist che
-> brucia nel suo riquadro. Al centro, l'Altare del Cuore di Moradin arde della
-> sua fiamma dorata che non consuma. E lì, sulla pietra di mithral, giace il
-> corpo di Hella: le mani incrociate sul petto, la pelle color cera, i tre semi
-> di treant posati — uno su ciascuna mano, uno sulla fronte — che pulsano piano,
-> come se già sapessero. Therysol si scosta dalla veglia, e per la prima volta
-> in giorni non ha più bisogno di montare la guardia. Tocca a voi, adesso.*
+> brucia nel suo riquadro. Al centro, l'Altare arde di una fiamma dorata che
+> non consuma. E lì, sulla pietra di mithral, giace il corpo di Hella: le mani
+> incrociate sul petto, la pelle color cera, i tre semi di treant posati, uno
+> su ciascuna mano e uno sulla fronte, che pulsano piano come se già sapessero.
+> Therysol si scosta dalla veglia. Per la prima volta in giorni non ha più
+> bisogno di montare la guardia, e non sa dove mettere le mani.*
 
 **Terreno (callout):** l'Altare 2×2 m al centro dell'ottagono (MAPPA S-1 del
 master #2); attorno, un **cerchio rituale di 3 m di raggio** — Thorik a Nord,
@@ -193,6 +207,73 @@ l'energia). I tre semi sul corpo formano un **triangolo** inscritto nel cerchio
 dei tre officianti. Vedi **MAPPA R-1**. Zona **sacra e sicura** — ma non
 "comoda": chi partecipa al rito non può fare altro (nessuna azione esterna
 durante gli step).
+
+### La Sala per sensi — e cosa non dire *(ADR-0057)*
+
+| 👁 Occhi | 👂 Orecchie | ✋ Pelle e naso | 🚫 **Cosa NON dire** |
+|---|---|---|---|
+| l'oro dell'Altare non proietta ombre: le cose vicine sembrano **ritagliate** | il silenzio ha un **fondo basso**, come una nota tenuta troppo a lungo da qualcuno che non respira | il pavimento è **tiepido sotto le suole**, più caldo dell'aria | ❌ che il fondo basso **è il Cuore che batte dentro l'Altare**: è la rivelazione di §3, e detta qui §3 diventa una conferma |
+| i semi sul corpo hanno una **venatura che si muove**, lenta, come linfa in un tronco tagliato | quando qualcuno parla, la voce **non ha eco**: la sala se la prende | odore di **ferro caldo e di terra piovuta**, due cose che non stanno insieme | ❌ che la terra piovuta **è Hella**: che il corpo stia già cambiando è ciò che i PG devono **notare da soli** |
+| la Corona sulla fronte di Thorik ha **due gemme accese e un incasso vuoto** | | il metallo dell'Altare **non è freddo**, e un nano lo trova sbagliato | ❌ che l'incasso vuoto **è il Rubino e si apre col viaggio**: vedi §2-bis, si guadagna |
+
+### Le sei porte — interagire con la Sala *(prove grezze, ADR-0022)*
+
+Nessuna richiede un grado speso. Sono **opzionali**: chi non le tocca non perde
+niente, chi le tocca entra nel rito già dentro la scena.
+
+| Prova | CD | Cosa dà |
+|---|---:|---|
+| **SAG** grezza — ascoltare il fondo basso | 14 | il ritmo è **sessanta al minuto**: un cuore a riposo. Non dice di chi |
+| **INT** grezza — leggere l'affresco A6 | 16 | la scena del portale ha **tre punti di luce**, non due: qualcuno, mille anni fa, aveva tutte e tre le gemme |
+| **COS** grezza — restare a mani nude sul mithral | 12 | il metallo **restituisce** calore invece di prenderlo: +1 al primo tiro del rito, e la sensazione che la pietra sia d'accordo |
+| **CAR** grezza — parlare a Therysol mentre si scosta | 13 | dice a bassa voce la cosa che non ha detto in sei giorni: *«Ho contato i respiri che non faceva. Sono arrivata a undicimila e ho smesso.»* → eco |
+| **FOR** grezza — spostare l'Altare per allineare il Sud | 18 | non si muove di un dito. **Il fallimento è l'informazione**: l'Altare è ancorato alla montagna, non appoggiato |
+| **DES** grezza — posare i semi in un triangolo perfetto | 15 | +1 allo Step 4. ⚠️ **Thorik ha −2 a DES** per il prezzo delle gemme: se prova lui, è la statistica che ha venduto |
+
+---
+
+## §2-bis — LE DUE GEMME ACCESE, E LA TERZA CHE MANCA `[CANONE — state.md §5]`
+
+> **Perché sta qui.** I PG hanno speso due archi a cercare quelle pietre. Se il
+> rito le ignora, quelle sessioni diventano un corridoio verso questa. Questa
+> sezione è **breve apposta**: non è una scena, è la riga che fa pesare il
+> passato dentro il presente.
+
+| Gemma | Come è entrata nella Corona | Cosa si vede **adesso**, nel rito |
+|---|---|---|
+| **Topazio** | recuperato nel **Piano del Fuoco** (P3) | quando l'Altare arde allo Step 1, il topazio **arde insieme** e prende lo stesso ritmo. È l'unica gemma che *risponde* al fuoco della forgia |
+| **Smeraldo della Forza** | forgiato dopo Terros l'Antico, al rito in cui **Thorik ha versato un pezzo di sé** | allo Step 5 lo smeraldo **si raffredda**, e Thorik lo sente. La Terra riconosce chi le ha già pagato una volta |
+| **Rubino** | ❌ **manca** | l'incasso vuoto sulla Corona, per tutta la scena, **non riflette la luce dorata**. È un buco nero piccolo come un'unghia in mezzo all'oro |
+
+### La riga che nessuno ha ancora detto a Thorik
+
+`state.md` §7.E lo registra come eco **E-07c**: al rito dello Smeraldo gli è
+stato chiesto *«un pezzo di te stesso»*, e non l'ha delegato. Ha pagato
+**−2 DES e +2 COS**, che sommati ai −2 DES della Corona fanno **−4 al
+punteggio** — un punto solo di CA, Riflessi e iniziativa al tavolo.
+
+> 🎭 **Grigio politico — il Want di Thorik che non riguarda i PG.** Nessuno al
+> tavolo se n'è accorto, e lui **non corregge nessuno**. Lo elogiano per quanto
+> sa incassare, cioè per il +2 COS: per la metà che si vede. Fra un attimo
+> §5 gli chiederà di pagare **di nuovo**, e il DM che conosce questa riga sa
+> perché Thorik si muove per primo — non per generosità, ma perché adesso
+> conosce il cambio e non si fida a lasciarlo accettare a un altro.
+
+> **Read-aloud (Casa di Davide lead) — solo se un PG guarda la Corona.** *La
+> corona sulla fronte di Thorik ha due pietre vive e un vuoto. Il topazio tiene
+> il calore della sala, lo smeraldo lo respinge, e in mezzo l'incasso scoperto
+> resta scuro: l'oro gli arriva addosso e non ne torna indietro niente. È un
+> difetto di un'unghia su un oggetto che ha attraversato due ere, e chiunque lo
+> guardi abbastanza a lungo finisce per guardare solo quello.*
+
+⚠️ **Non dire** che l'incasso si riempie col viaggio a −1.000: **è la posta di
+§12**. Qui è un difetto che si nota, non una promessa che si annuncia.
+
+> **Assorbi e rilancia.** Se un giocatore inventa una spiegazione per il vuoto
+> — «l'ha persa qualcuno», «è stata rubata», «non è mai esistita» — **prendila
+> nel canone** e dalle un prezzo: quella diventa la versione che i nani di
+> Hammerfist raccontano, e sarà **sbagliata** in un modo che a −1.000 costerà
+> mezz'ora di diffidenza a chi la ripete.
 
 ---
 
@@ -204,15 +285,15 @@ durante gli step).
 > cristallizzata. Si usa solo per le emergenze supreme. Riportare una druida
 > dalla morte… si qualifica.»*
 
-> **Read-aloud (Salvatore — il sacro che si sente nel corpo).** *Thorik, posi
-> le mani sulla superficie di mithral, e l'Altare SI APRE. Non c'erano cuciture,
+> **Read-aloud (Salvatore — il sacro che si sente nel corpo).** *Sotto le mani
+> di Thorik il mithral SI APRE. Non c'erano cuciture,
 > un istante fa: ora una camera interna di trenta centimetri si schiude come un
 > fiore di metallo. Dentro, sospeso nella luce dorata, un cristallo di rubino
 > sanguigno grande come il tuo pugno — e ha la forma ESATTA di un cuore nanico:
 > quattro camere, i vasi visibili, tutto scolpito in rubino divino trasparente.
-> E pulsa. Sessanta battiti al minuto. Il ritmo di un cuore a riposo. Quando lo
-> sfiori, senti calore. Vita. Creazione pura. E capisci, senza che nessuno te
-> lo dica, che questo si spenderà UNA volta sola.*
+> E pulsa. Sessanta battiti al minuto. Il ritmo di un cuore a riposo. Da vicino
+> arriva il calore. Vita. Creazione pura. E la sua luce non promette un secondo
+> battito: una cosa così si spende UNA volta sola.*
 
 > **⚠️ Canone (state.md §6):** il Cuore di Moradin è **single-use**. Dopo il
 > rito è **SPESO** — NON torna nell'Altare. Se un file/engine lo "riusa" dopo
@@ -227,16 +308,59 @@ durante gli step).
 > suo cuore (allineamento preciso). I tre semi (mani + fronte). I tre officianti
 > ai punti cardinali, il Sud vuoto. Moradin guida telepaticamente.
 
+### ⚙️ Come si gioca questo rito — la regia `(ADR-0014)`
+
+> **Il difetto che questa sezione chiude.** Sei step con sei CD sono una lista
+> di tiri. Un rito è una **scena a turni**: ha un'apertura, un giro in cui
+> ciascuno fa la sua cosa, un esito detto per la riuscita **e** uno per il
+> fallimento, e una chiusura. Senza, il tavolo tira dadi e aspetta.
+
+**Ordine di gioco fisso**: Thorik → Tordek → Artemis → Moradin. Non è
+iniziativa: è **liturgia**, e l'ordine è parte del rito. Chi salta il turno lo
+salta davanti agli altri tre.
+
+**Apertura di round**, una per step — una riga, non di più:
+
+| Step | Apertura di round da leggere |
+|---|---|
+| 1 | *L'oro dell'Altare si alza di un dito.* |
+| 2 | *Il battito rallenta, e chiede a qualcuno di seguirlo.* |
+| 3 | *La pelle di Hella ha ancora il colore della cera.* |
+| 4 | *I semi smettono di pulsare. Stanno decidendo.* |
+| 5 | *Il Sud del cerchio è vuoto, e qualcosa lo sta guardando da lì.* |
+| 6 | *La sala prende fiato al posto vostro.* |
+
+**Esito, in due righe già scritte.** Una per la riuscita, una per il fallimento.
+Il DM le legge senza inventare, e la scena non si spegne mai sul numero:
+
+| Step | ✅ Riuscita | ❌ Fallimento *(mai «non succede niente»)* |
+|---|---|---|
+| **1** | l'oro sale fino alla volta e **gli otto affreschi si illuminano in fila**, da Moradin fino a Hammerfist | la preghiera esce **storta** — una sillaba antica sbagliata. Therysol alza la testa: lo ha sentito. Ritenta, ma adesso c'è un testimone |
+| **2** | i due battiti si sovrappongono e per un istante **non si distingue quale sia di chi** | Tordek prende **2d6 non letali** e la cosa peggiore: per un secondo ha sentito il buio in cui lei era, e adesso lo sa |
+| **3** | le ferite si chiudono **al contrario**, dall'interno, e il colore torna dal petto alle dita | l'Anello sputa **un colore solo**. Il corpo si stabilizza a metà: ha colore ma non calore |
+| **4** | le radici entrano **senza sangue**, e il corpo le accetta come se le avesse sempre avute | un seme **non germoglia**. Resta un seme. Da qualche parte, più avanti, mancherà qualcosa |
+| **5** | tre voci diventano **una voce**, e la sala la restituisce più forte di come è entrata | il richiamo torna indietro **vuoto**, come una corda che non ha preso. Si può ritentare: ma ogni tentativo la porta più lontano |
+| **6** | → §7 | → §9, tabella dei modi di fallimento |
+
+> **Chiusura di round, ogni volta.** Il DM chiude lo step guardando i giocatori
+> e chiedendo: **«Che fate?»** — anche quando la risposta giusta è «il prossimo
+> tira». Un rito in cui non si può scegliere niente è un filmato.
+
+> **`[HDYWTDT]`** Allo **Step 5**, se il richiamo riesce, il colpo finale della
+> scena **non lo descrive il DM**: si chiede al giocatore di Tordek — o a chi ha
+> tirato meglio — *«Hella torna. Com'è la tua voce, l'ultima volta che la
+> chiami?»* La frase che dice diventa canone, e Hella la ricorderà al risveglio.
+
 **STEP 1 — Invocazione (Thorik · Conoscenze religioni CD 15).** La preghiera
 nanica antica (handout §12): *«Khazâd ai-mênu, Moradin Uzbad… Hella Vala-mara,
 azaghâl núr!»* (*Nano è caduto, Moradin Re… Hella Potere-casa, ritorna vita!*).
 Successo: l'Altare arde d'oro, il Cuore accelera a 90 bpm.
 
 **STEP 2 — Canalizzazione (Tordek · Concentrazione CD 20).**
-> *Tordek, chiudi gli occhi. I respiri rallentano. Senti un battito — il Cuore
-> di Moradin — e il tuo ki batte allo stesso ritmo. L'energia della vita fluisce
-> dal Cuore, attraverso te, verso Hella. Ma senti una lotta: il suo spirito VUOLE
-> tornare, e la morte resiste. Tira. Contrasta. Devi tirarla indietro.*
+> *Tordek, il respiro rallenta da sé. C'è un battito — il Cuore di Moradin — e
+> il tuo ki lo prende come misura. L'energia della vita fluisce dal Cuore,
+> attraverso te, verso Hella. Dall'altra parte c'è una lotta: il suo spirito
+> VUOLE tornare, e la morte non molla la presa. La corda è tesa fra le due.*
 Fallimento: 2d6 non letali, riprova.
 
 **STEP 3 — Stabilizzazione (Artemis · Utilizzare Oggetti Magici CD 18).** L'Anello
@@ -264,59 +388,184 @@ Tordek se la vuole.)*
 
 ---
 
-## §5 — I TRE DONI (la scelta-costo di ogni PG)
+## §5 — I TRE DONI (il trapianto) `[CANONE — DM 2026-09-12]`
 
 > **La regola d'oro.** La resurrezione **non è in ostaggio**: col Cuore, Hella
-> torna comunque. I sacrifici comprano la **qualità del ritorno** — i tre Doni.
-> Moradin **chiede, non impone**: *«Chi dona cosa? Nessuno è obbligato. Ma ogni
-> dono mancato, la carne lo ricorderà.»* Ogni PG ha **tre strade**: il dono,
-> un'alternativa equivalente, il rifiuto. Leggi le alternative SOLO se il
-> giocatore esita.
+> torna comunque. I doni comprano la **qualità del ritorno**. Moradin **chiede,
+> non impone**: *«Chi dona cosa? Nessuno è obbligato. Ma ogni dono mancato, la
+> carne lo ricorderà.»*
 
-### DONO 1 — THORIK: «La Forza»
-Thorik versa il proprio sangue sulla fronte di Hella. → **Hella ottiene Pelle di
-Adamantio (RD 3/−).**
-| Strada | Costo | Nota |
+> **🌱 Che cos'è un Dono, in questo rito.** Non è una tassa: è un **trapianto**.
+> Il donatore dà **un potere del proprio artefatto**. Quel potere **lascia il suo
+> artefatto per sempre** e **germoglia in un seme della Collana dei Semi Eterni**,
+> dove diventa druidico. **Il party non perde la capacità: cambia mano e cambia
+> forma.** È il potere **#6** della Collana che si accende — i tre semi
+> *«custodiscono i sacrifici che i compagni offrirono al rituale»*, e da oggi si
+> sa **quali**.
+
+### I tre doni, in una tabella
+
+| Chi | Dona — **esce dal suo artefatto per sempre** | 🌱 Nel seme germoglia | Seme |
+|---|---|---|---|
+| 🛡️ **Thorik** | **Il +2 di deflessione** della Corona di Adamantio | **Lo Scudo del Custode** | I |
+| ⚒️ **Tordek** | **Ancoraggio della Montagna** (2/giorno) dei Bracieri | **Pelle di Adamantio** | II |
+| 🔮 **Artemis** | **1d6 di Eldritch Blast**, per sempre (7d6 → 6d6) | **Il Rovo Eldritch** | III |
+
+---
+
+### DONO 1 — THORIK: «La Forza» → **Lo Scudo del Custode**
+
+> *Thorik si toglie la Corona — l'unica altra volta è stato per incastonare lo
+> Smeraldo — e la posa sul petto di Hella. Non prega. Dice soltanto:* **«Io so
+> come si sta davanti. Adesso lo sai anche tu.»**
+
+**Cosa dona.** Il **+2 di deflessione alla CA** che la Corona dà **a lui**.
+**Thorik non le dà un potere: le dà il suo mestiere.**
+
+**Costo permanente**: **−1 alla CA**. La Corona non lo protegge più come prima.
+
+🌱 **Hella riceve — Lo Scudo del Custode.**
+**1/giorno**, azione immediata: quando un alleato entro **9 m** sta per subire
+danno, Hella lo prende **su di sé, dimezzato**.
+
+🔄 **L'Eco del Custode** *(si attiva ogni volta che lei usa lo Scudo)*
+Nel momento in cui Hella incassa per qualcun altro, **qualcosa in Thorik
+scatta**: è **accelerato** (*haste*) per **3 round**, e in quei round **si muove
+verso chi lei ha appena protetto** — almeno un'azione di movimento per round che
+riduca la distanza, o l'accelerazione si spegne.
+
+> 🎲 **Al tavolo si gioca in una frase**: *«Sei accelerato. E vai da lui.»*
+> Nient'altro da ricordare: la direzione è già sul tavolo.
+> ⚠️ **Si taglia il costo da sola**: in 3.5 non si fa attacco completo dopo un
+> movimento, quindi se chi è stato protetto è **lontano** l'attacco extra **non
+> scatta** e restano velocità, +1 CA, +1 Riflessi, +1 al colpire.
+> ⚠️ **I 3 round sono una taratura, non un dogma**: se domina la scena, **1
+> round**; se non si nota, **1 round ogni 10 danni assorbiti** (massimo 3).
+
+---
+
+### DONO 2 — TORDEK: «Il Respiro» → **Pelle di Adamantio**
+
+> *Tordek non parla. Preme i palmi sulla terra ai due lati del corpo di Hella, e
+> i Bracieri si spengono di un tono. Quando li rialza, il calore è passato in lei.*
+
+**Cosa dona.** **Ancoraggio della Montagna** (2/giorno, azione immediata: nega
+lo spostamento forzato), **che lascia i Bracieri per sempre**.
+
+**Costo permanente**: nel P5 e nell'ARC-08, dove i giganti spingono e i draghi
+afferrano, quel bottone **non c'è più**.
+
+🌱 **Hella riceve — Pelle di Adamantio: RD 3/adamantino.**
+🔎 **Non si somma a niente**, ed è verificato: l'Ibrido Treant le dà Resistenza
+al Freddo 15, Rigenerazione e Radicamento, **nessuna riduzione del danno**; e la
+**Via della Guardia** — l'unica strada del Viaggio che le avrebbe dato RD 2/− —
+**non è quella che ha scelto**. Questa è la **sua unica RD**.
+
+> 🎲 **Perché «/adamantino» e non «/−»**: *solo l'adamantio taglia l'adamantio*.
+> È il motivo del nome, ed è quel che la rende una riduzione **inferiore** a
+> quella che Tordek aveva addosso.
+
+---
+
+### DONO 3 — ARTEMIS: «La Scintilla» → **Il Rovo Eldritch**
+
+> *Artemis apre la mano sopra il cuore fermo e lascia andare una scheggia della
+> propria fiamma — non un incantesimo: un pezzo di quello che è. L'Anello, per
+> la prima volta da quando lo porta, **non commenta**.*
+
+**Cosa dona.** **1d6 di Eldritch Blast, per sempre**: da **7d6** a **6d6**.
+
+**Costo permanente**: l'*Eldritch Blast* è quel che Artemis fa **a ogni turno**.
+È ~11% del suo colpo, sentito **ogni round della campagna**.
+
+🌱 **Hella riceve — Il Rovo Eldritch.**
+**A volontà**, azione standard, **contatto a distanza**, gittata 18 m:
+**2d6 danni**, metà da rovi che si avvitano fuori dal terreno, metà **fuoco**.
+Non si prepara, non si consuma, **non finisce mai**.
+
+> 🎲 **Perché pochi danni sono la cosa giusta.** 2d6 al 13° livello non spostano
+> uno scontro, e non devono: il valore è che **c'è sempre**, anche a slot finiti,
+> anche in forma selvatica. È la cosa più warlock che esista — un warlock non è
+> forte perché colpisce duro, è forte perché **può farlo tutto il giorno** — ed è
+> l'unica casella che né Thorik né Tordek potevano riempire.
+> 🌱 **E l'ironia va detta al tavolo, una volta sola**: Hella ha **vulnerabilità
+> al fuoco ×1,5** — è il prezzo della Via della Radice — e adesso **porta il
+> fuoco**.
+
+---
+
+### 🔗 I tre doni sono una catena, non tre regali
+
+Un colpo da **40** che arriverebbe su Artemis:
+
+| | Di chi | Cosa succede |
 |---|---|---|
-| **Il Sangue della Stirpe** (base) | **−2 COS permanente** (mai ripristinata) | il più pesante dei tre — cade sul PG più carico di artefatti (D8) |
-| **La Memoria della Battaglia** | **−3.000 PE** (non sotto l'inizio del 13°) | Moradin «beve» i ricordi di una vittoria (stile componente-PE 3.5) |
-| **Il Filo dell'Ascia** | Aegis Fang **perde Returning** fino al pieno risveglio (ARC-08/09) | l'ascia «dona il suo richiamo» a Hella |
-| **Rifiuto** | — | Hella **senza RD 3/−**; allo Step 5 servono **3 successi su 3** |
+| **1** | 🛡️ Thorik | Hella se lo prende addosso, **dimezzato** → **20** |
+| **2** | ⚒️ Tordek | passa attraverso la sua **RD 3/adamantino** → **17** |
+| **3** | 🔄 l'Eco | **Thorik scatta verso Artemis**, accelerato: arriva dove il pericolo si è appena manifestato |
+| **4** | 🔮 Artemis | e Hella, che ha speso l'azione immediata, **non resta ferma nel suo turno**: il **Rovo** è a volontà |
 
-### DONO 2 — TORDEK: «Il Respiro / Ki»
-Tordek soffia il proprio ki nei polmoni immobili di Hella. → **Hella ottiene
-Timeless Body (immune a veleni, malattie, invecchiamento).**
-| Strada | Costo | Nota |
+**Quaranta danni diventano diciassette, il bersaglio è ancora in piedi, il
+guardiano è arrivato e la druida non ha perso il turno.** Nessuno dei tre doni,
+da solo, fa questo.
+
+---
+
+### ⚒️ Le reazioni degli artefatti — al dono e al rifiuto
+
+Non serve inventare premi né punizioni: **tutti e quattro gli artefatti hanno
+già una personalità in scheda**, e reagiscono da soli. Il DM le gioca come
+personaggi, non come effetti.
+
+| Artefatto | 🟢 **Se il portatore dona** | 🔴 **Se rifiuta** |
 |---|---|---|
-| **Il Respiro Donato** (base) | **−500 PE** | leggero: ha già pagato in narrativa (il faro nel buio) |
-| **Il Pugno Fermato** | 1 uso/giorno di **Pugno Stordente** per 1 settimana | variante mirata al Monaco |
-| **Il Voto del Silenzio del Ki** | niente punti ki/metamagia-ki per 48 h | per sentirlo nel P5 imminente |
-| **Rifiuto** | — | Hella **senza Timeless Body**; al portale del #4: TS Tempra CD 15 o **affaticata** la 1ª scena |
+| **Corona di Adamantio** *(Thorik)* | La Corona **non protesta**: la pietra accetta di essere spesa, è quello che fa la pietra. E da qui in poi, quando Thorik scatta per l'Eco, **la Corona si scalda** — l'unico segno che dà. Al **Rituale 4** la sua Senzienza si sveglierà avendo **già una cosa da dire su di lui** | La Corona **tace**, ma il **−2 DES** che gli ha preso resta: si è pagata la gemma e non si è pagato lei. ⚠️ Al Rituale 4 la Senzienza arriva **fredda** — i poteri sì, il tono no |
+| **Aegis Fang** *(Thorik)* | L'ascia è **senziente, Ego 14**, *«serve il popolo nanico prima del portatore»*, e ha visto. 🟢 **Non chiede più prove di opposizione a Thorik per un arco intero**: ha smesso di dubitare di lui | 🔴 **Lo giudica.** Quando Thorik le chiede qualcosa in una scena che riguarda **Hella o dei nani da proteggere**, l'Ego **tira l'opposizione** invece di obbedire in silenzio (regole oggetti intelligenti 3.5 — la scheda lo prevede già: *«in disaccordo grave l'arma può opporsi»*). 🔓 **Finisce** la prima volta che Thorik rischia qualcosa di suo per lei |
+| **Bracieri Gemelli** *(Tordek)* | La **Voce nella Forgia** commenta una volta sola, e poi non ci torna più: *«Bene. Un'ancora serve a chi affonda, non a chi sta a riva.»* 🟢 E da lì in avanti **avvertono Tordek un round prima** quando lui sta per essere spostato con la forza — non lo impediscono più, ma lo **vedono arrivare** | 🔴 **Tacciono una settimana.** Niente avvertimenti, niente commenti, niente battute. Al settimo giorno riparlano, e **la prima frase è sul rifiuto** |
+| **Anello dell'Illuminazione Caotica** *(Artemis)* | L'Anello **non commenta** — e per un oggetto nato dal *caos ordinato* della Forgia il silenzio è assenso. 🟢 Poi, la prima volta che Hella usa il **Rovo** davanti ad Artemis, **l'Anello si illumina di riflesso**: riconosce la propria fiamma | 🔴 **Si spegne 24 ore**, tutto compreso — Ali d'Ombra, Passo d'Ombra, i quattro 1/giorno, la Doppia Fiamma. Non è Moradin: è l'Anello, **nato dalla Colonna di Mithral della Forgia**, che ha visto il portatore dire di no **alla Forgia**. Dopo, tutto come prima. ⚠️ E il DM segna in privato che **«ciò che dorme nell'Anello» ha visto** |
 
-### DONO 3 — ARTEMIS: «La Scintilla»
-Artemis tocca il cuore con l'Anello, riavvia il ritmo con una scarica di caos
-controllato. → **Hella ottiene Rinascita Spontanea (1/g auto-stabilizza + pf
-temporanei a 0 pf).**
-| Strada | Costo | Nota |
-|---|---|---|
-| **La Scintilla** (base) | 1 slot invocazione alto (o uso oggetto) per 24 h | il più leggero: un innesco, non un serbatoio |
-| **Il Silenzio dell'Anello** | il Ring **tace 24 h** (tutte le proprietà) | simmetria di peso; l'Anello «presta» la sua armonia |
-| **Rifiuto** | — | Hella **senza Rinascita Spontanea**: la 1ª volta che va a 0 pf in ARC-08/09, nessun paracadute |
+⚠️ **Le reazioni al rifiuto sono relazionali e reversibili, per costruzione**:
+l'ascia smette di giudicare, i Bracieri riparlano, l'Anello si riaccende.
+Nessuna è un malus permanente, e **nessuna tocca il seme**: quello ha la sua
+conseguenza qui sotto.
 
-**Rifiuto totale (nessuno paga).** Il Cuore basta: Hella torna, ma **senza i tre
-Doni** (conserva i doni del viaggio, vinti da sola). La Collana nasce comunque; i
-**3 slot-dono restano vuoti** e ciascun PG potrà colmarli **in gioco** più avanti
-(quest personali ARC-09 — quando uno slot si riempie con un atto di sacrificio, il
-Dono si attiva retroattivamente). *Il rifiuto diventa una quest, non una punizione.*
+---
 
-**Reazioni di Moradin (senza giudizio):** ad un'alternativa: *«Non è il dono che
-chiedevo. È il dono che DAI. La Forgia piega il metallo che riceve.»* — ad un
-rifiuto: *«Lo ricorderò. E lo ricorderà anche lei. Ma la paura del prezzo è già
-il prezzo.»* — al rifiuto totale: *«Allora la riporto io. Ma torna come la morte
-la lasciò, e ciò che non le avete dato oggi, glielo dovrete domani.»*
+### 🚪 Il rifiuto — e cosa succede alla Collana
 
-**Al risveglio (§7):** Hella nomina **solo chi ha donato** (*«Il tuo sangue,
-Thorik. Il tuo respiro, Tordek. La tua fiamma, Artemis.»*). Per chi ha rifiutato:
+**Il Cuore basta**: Hella torna comunque, ma **senza i doni mancanti**. La
+Collana nasce lo stesso; il **seme resta dormiente** — evoca il suo guardiano
+come da scheda, ma **non germoglia niente sopra**.
+
+| Chi rifiuta | 🌱 Conseguenza sul seme e su Hella |
+|---|---|
+| 🛡️ **Thorik** | Seme I dormiente: **niente Scudo del Custode**, e 🔗 **la catena non esiste** — senza il dimezzamento, la RD di Tordek lavora su danno pieno. Nessun Eco: Thorik non scatterà mai |
+| ⚒️ **Tordek** | Seme II dormiente: **Hella resta senza nessuna RD**, e non ne ha di base. Si sente la prima volta che un commando drow le arriva addosso di lama |
+| 🔮 **Artemis** | Seme III dormiente: **niente Rovo**. A slot finiti, o in forma selvatica, Hella **non ha un'opzione a distanza** |
+
+**Il riempimento retroattivo resta** *(canone v1, invariato)*: ciascun PG può
+colmare il proprio slot **in gioco** più avanti — quest personali ARC-09 — e
+quando uno slot si riempie con un atto di sacrificio, **il Dono si attiva
+all'indietro**. *Il rifiuto è una quest, non una punizione.*
+
+🌱 **E la Collana restituisce — il potere #6, finalmente definito.**
+*Una volta sola, per sempre, per ciascun seme germogliato*: nel momento del
+bisogno **Hella decide**, azione immediata, e il seme **rende al donatore ciò
+che aveva dato, per una scena intera** — la Corona torna a proteggere Thorik,
+l'Ancoraggio torna nei Bracieri, l'*Eldritch Blast* di Artemis torna a 7d6. Il
+seme resta germogliato, ma **non restituirà mai più**.
+> È la riga che rende il dono un **deposito** invece che una perdita — e chi lo
+> rende è **la resuscitata**.
+
+### Reazioni di Moradin (senza giudizio)
+
+Al dono: *«La Forgia piega il metallo che riceve.»* — Al rifiuto: *«Lo ricorderò.
+E lo ricorderà anche lei. Ma la paura del prezzo è già il prezzo.»* — Al rifiuto
+totale: *«Allora la riporto io. Ma torna come la morte la lasciò, e ciò che non
+le avete dato oggi, glielo dovrete domani.»*
+
+**Al risveglio (§7):** Hella nomina **solo chi ha donato** (*«Il tuo scudo,
+Thorik. La tua ancora, Tordek. La tua fiamma, Artemis.»*). Per chi ha rifiutato:
 lo guarda un istante più a lungo del necessario, e non dice nulla. *Lo sente.*
 
 ---
@@ -452,8 +701,14 @@ CAPACITÀ IBRIDO TREANT (dal viaggio + rito)
 • Radice Silenziosa (Prova II): +2 Percepire Intenzioni; 1/g empatia immediata
 • Radici del Mondo (Prova III): rigenera su suolo sacro/druidico; 1/g
   Radicamento corale (+1 morale TS agli alleati entro 9 m, 5 round, lei immobile)
-DONI DEL PARTY (§5, solo se donati): Pelle di Adamantio (RD 3/−) · Timeless
-  Body · Rinascita Spontanea (1/g)
+DONI DEL PARTY (§5, solo se donati — segna quelli veri dopo il rito):
+  [ ] Scudo del Custode (Thorik) - 1/g immediata, prende il danno di un alleato
+      entro 9 m DIMEZZATO; Thorik accelerato 3 round verso il protetto
+  [ ] Pelle di Adamantio (Tordek) - RD 3/adamantino (la sua UNICA RD)
+  [ ] Rovo Eldritch (Artemis) - A VOLONTA', standard, contatto a distanza 18 m,
+      2d6 (meta' rovi, meta' fuoco)
+  RESTITUZIONE (Collana #6): 1 volta sola per seme, immediata, Hella rende al
+  donatore cio' che aveva dato per una scena intera. Poi mai piu'.
 ------------------------------------------------------------
 INCANTESIMI DRUIDA (CL 12) — slot: 6/5+1/5+1/4+1/4+1/3+1/2+1/1+1
 Preparati tipici pre-battaglia: Entangle, Faerie Fire, Produce Flame · Barkskin,
@@ -546,7 +801,27 @@ cerchio del lutto si chiude.
 | **Chiedono a Moradin di resuscitarla senza costi** | *«La magia non basta. Serve la vita. Io do il Cuore; voi date il resto — o lei torna monca di ciò che potevate donarle.»* (rifiuto totale, §5). |
 | **Attaccano/scacciano la Custode delle Radici** (§6) | Non combatte: si ritira (ramo B). Nessun scontro — ma il vuoto si colmerà da sé, peggio. |
 | **Un PG vuole sacrificare la PROPRIA vita** (oltre il richiesto) | Moradin **rifiuta**: *«Non chiedo una morte per una vita. Chiedo un dono, non un baratto di anime. Rimetti via quel coraggio: ti servirà domani.»* (evita il martirio gratuito). |
-| **FALLIMENTO — lo Step 5 va male** (meno di 2 successi, o 3/3 mancati se Thorik ha rifiutato) | Il rito **non fallisce del tutto** (il Cuore regge), ma il ritorno è **duro**: Hella torna con **1 livello negativo** (PF1e, svanisce in 7 giorni) e il primo risveglio è **doloroso** (non ricorda subito i nomi dei compagni — 1d4 minuti di smarrimento). Nessun «game over»: un ritorno faticoso, non una morte definitiva. Registra l'eco. |
+| **FALLIMENTO — lo Step 5 va male** (meno di 2 successi; **3 successi su 3** se i doni versati sono **uno o nessuno**) | Il rito **non fallisce del tutto** (il Cuore regge), ma il ritorno è **duro**: Hella torna con **1 livello negativo** (PF1e, svanisce in 7 giorni) e il primo risveglio è **doloroso** (non ricorda subito i nomi dei compagni — 1d4 minuti di smarrimento). Nessun «game over»: un ritorno faticoso, non una morte definitiva. Registra l'eco. |
+
+---
+
+### I modi di fallimento — zero successi apre gioco, non lo chiude
+
+> **Il principio.** Un rito che può solo riuscire non è una prova. Un rito che
+> può solo fallire è una punizione. Qui **ogni esito produce una scena
+> successiva**, e la peggiore è anche la più giocabile.
+
+| Successi allo Step 5 | Cosa torna | Cosa apre |
+|---:|---|---|
+| **3 su 3** | Hella intera, i tre doni attecchiscono | il ponte di §12 parte pulito |
+| **2 su 3** | Hella intera, un dono **attecchisce a metà** | il PG che ha fallito lo scopre **a −1.000**, nel momento peggiore: il suo dono non risponde al primo tentativo |
+| **1 su 3** | Hella torna con **1 livello negativo** e non ricorda i nomi per 1d4 minuti | una scena vera al risveglio: **chi le dice il proprio nome per primo** conta, e Hella lo ricorderà per tutto l'arco |
+| **0 su 3** | Hella **non torna adesso** | 🔎 **Questo non è un game over.** Il Cuore regge per **un'ora**, e Moradin lo dice: *«Il canale è aperto. Non è lei a non voler tornare.»* La sala diventa un'indagine di un'ora — cosa manca al cerchio? Il Sud vuoto. Il seme non germogliato. La gemma mancante. La risposta esiste ed è nei §2, §2-bis e §6, e il tavolo la ricompone da sé |
+
+⚠️ **Il vicolo cieco ha una porta**: se l'ora scade senza che il tavolo trovi
+niente, **Therysol** parla — e dice la cosa che ha visto in sei giorni di
+veglia, non una soluzione ma un fatto: *«Il corpo si gira verso sud. L'ho
+rimesso dritto undici volte.»* Da lì si riparte.
 
 ---
 
@@ -554,13 +829,16 @@ cerchio del lutto si chiude.
 
 | Evento (qui) | Eco | Quando riemerge | Dove si gestisce |
 |---|---|---|---|
-| **Thorik dona il sangue** (−2 COS) | costo permanente; Hella gli deve un debito morale (state.md §5) | sempre / discussioni etiche | state.md §1/§5 |
-| **Chi rifiuta un Dono** (§5) | Hella senza RD 3/− / Timeless Body / Rinascita Spontanea; «la carne ricorda» | ARC-08 (1ª ferita critica / 0 pf / veleni drow) | `ARC08-REGISTRO-PERDITE` / HOOKS ARC-09 |
+| 🛡️ **Thorik dona il +2 di deflessione** | −1 CA permanente; e ogni volta che lei scuda qualcuno **lui scatta** (Eco del Custode). Hella gli deve un debito morale | **ogni scontro** in cui lo Scudo si accende | state.md §1/§7 |
+| ⚒️ **Tordek dona l'Ancoraggio** | i Bracieri non lo hanno più; in cambio **avvertono un round prima** dello spostamento forzato | P5, ARC-08 (giganti, draghi che afferrano) | `PG/Artefatti/.../Tordek/` |
+| 🔮 **Artemis dona 1d6 di EB** | l'*Eldritch Blast* resta a **6d6** per il resto della campagna | **ogni round in cui spara** | `PG/Artefatti/.../ringOfChaoticIllumination/` |
+| **Chi rifiuta un Dono** (§5) | **seme dormiente** (niente Scudo / niente RD / niente Rovo) **e l'artefatto reagisce**: Aegis Fang giudica, i Bracieri tacciono 7 giorni, l'Anello si spegne 24 h | ARC-08 (1ª ferita critica / 0 pf / lame drow) | `ARC08-REGISTRO-PERDITE` / HOOKS ARC-09 |
+| 🌱 **La Collana restituisce** (potere #6) | **una volta sola per seme**: Hella rende al donatore ciò che aveva dato, per una scena | quando lei decide | `PG/Artefatti/.../Hella/01_Collana…` |
 | **Rifiuto totale** | 3 slot-dono vuoti sulla Collana | quest personali ARC-09 (un atto di sacrificio per slot) | HOOKS-INTEGRATION-MASTER |
 | **Il Debito della Radice** (§6) | pegno al Sogno della Terra (A: quest / B: vuoto che risale / C: Durik ponte) | ARC-09 (Cerchio Sacro / Ghostlord / corruzione fungina) | **state.md §7** + questo file |
 | **Thorik scopre "la presenza verde"** (§8) | il legame Thorik-Hella si approfondisce (fama/anointing) | ARC-08/09 (bond, Cerimonia 100 Asce) | state.md §7.R |
 | **Cuore di Moradin SPESO** | catalizzatore consumato per sempre | tutto l'arco a valle | state.md §6 |
-| **Aegis Fang senza Returning** (se «Filo dell'Ascia») | ogni lancio dell'ascia fino al risveglio pieno | ARC-08/09 | `PG/Artefatti/.../Aegis Fang/` |
+| **Aegis Fang, se Thorik ha donato** | l'arma **smette di dubitare di lui**: nessuna prova di opposizione per un arco intero | ARC-08 | `PG/Artefatti/.../Aegis Fang/` |
 
 ---
 
@@ -628,6 +906,47 @@ ora aprire il **portale del Tempo** (affresco A6). Al di là c'è Hammerfist com
 era **mille anni fa**, e una battaglia che deciderà — nel passato — le sorti del
 presente. → **master #4: il Viaggio a 1.000 anni fa** (duello con Skullcrusher;
 Hella è il 4° PG).
+
+### La soglia — come si gioca l'apertura, invece di annunciarla
+
+> **Il difetto che questa sotto-sezione chiude.** «Poi si apre il portale» è una
+> didascalia. L'ultima scena di un arco è il posto dove **la scelta costa**, e
+> qui ce n'è una vera: la Corona può aprire il portale **con due gemme su tre**,
+> e nessuno sa cosa vuol dire attraversare un varco tenuto aperto da un oggetto
+> incompleto.
+
+> **Read-aloud (Andor lead — la tensione che non alza la voce).** *L'affresco
+> A6 non è cambiato in mille anni, ma adesso ha tre punti di luce e due sono
+> accesi. Il terzo resta un cerchio inciso e vuoto, alto sulla parete, alla
+> stessa altezza dell'incasso scoperto sulla corona. Nessuno lo ha fatto
+> notare. Lo hanno visto tutti.*
+
+**Il fatto da mettere sul tavolo, con parole da DM e non da manuale**: Moradin
+non promette. Dice quello che sa, e non di più.
+
+> **MORADIN (piano, senza enfasi):** *«Con due pietre il varco si apre. Con due
+> pietre il varco si richiude quando decide lui, non quando decidete voi. La
+> terza non ve la posso dare: è di là.»*
+
+| La scelta | Cosa costa | Cosa apre |
+|---|---|---|
+| **Attraversare adesso** | il ritorno non è garantito dal lato di qua: si torna **solo** trovando il Rubino a −1.000 | il master #4 parte con una posta reale invece che con un viaggio turistico |
+| **Cercare prima un'alternativa** | l'orologio di Hammerfist scorre (**3g 16h** in `state.md`), e i PG lo sanno | una sessione in più, e un arrivo a Hammerfist con meno tempo |
+| **Mandare avanti uno solo** | Moradin rifiuta: *«Il varco conta quattro. Ne ha contati quattro anche mille anni fa.»* | niente — ma la battuta dice al tavolo **che di là li aspettano in quattro** |
+
+> 🎭 **Grigio politico.** Therysol non vuole che vadano. Il suo *Want* non
+> riguarda i PG: ha vegliato un corpo per sei giorni e non ha nessuna
+> intenzione di rifarlo. Se qualcuno glielo chiede, lo dice. Se nessuno glielo
+> chiede, **resta zitta e se ne ricorda**.
+
+> **Chiusura della scena, e dell'arco.** Il portale è chiuso. La Corona è
+> pronta. Quattro persone sono in piedi davanti a un affresco, e una di loro
+> respira da tre ore. **«Che fate?»**
+
+⚠️ **Non dire** che il Rubino sta *dentro* la battaglia di −1.000 e si spende
+lì: è la posta del master #4, e `state.md` la registra come **single-use SPENT
+at the ancient battle**. Qui il tavolo deve solo sapere che di là c'è una
+pietra, non cosa le succederà.
 
 ### Handout giocatore
 1. **La Preghiera della Resurrezione** (nanico + traduzione) — da leggere/far

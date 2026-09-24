@@ -23,8 +23,8 @@ Tre cause concorrenti, tutte documentabili:
    dell'AP (Guado di Drellin, Brindol) sono stati compressi: i PNG con una
    funzione al tavolo sono stati adattati o rinominati (Soranna Anitah →
    **Capitana Lorana**; Brindol → **Rethmar** col suo Consiglio, dove
-   Jarmaath e Lady Kaal sopravvivono con nome originale), gli altri —
-   i PNG "di colore civico" — semplicemente non sono mai emersi in gioco
+   Jarmaath e Lady Kaal sopravvivono con nome originale), gli altri,
+   i PNG "di colore civico", semplicemente non sono mai emersi in gioco
    e non hanno mai ricevuto una scheda.
 2. **La standardizzazione del Bestiario (lotti L0-L5, 2026-07) trascriveva
    solo ciò che esisteva già nel repo** (sorgenti `pregen-pcgen/`, statblock
@@ -32,7 +32,7 @@ Tre cause concorrenti, tutte documentabili:
    sorgente, quindi il censimento non li ha mai contati: debito invisibile.
 3. **Il March Clock è già passato oltre le loro località.** Guado di
    Drellin è bruciato (Day 12-13), Terrelton è appena caduta (Day 19). La
-   finestra in cui quei PNG vivevano "a casa loro" è chiusa — ma è
+   finestra in cui quei PNG vivevano "a casa loro" è chiusa, ma è
    un'opportunità, non una perdita: **~1.500 profughi del Guado sono in
    marcia/arrivati a Rethmar** (`campaign/state.md` §2.5). I PNG civici
    dell'AP rientrano come **volti dell'onda profughi** negli Archi 09
@@ -41,7 +41,7 @@ Tre cause concorrenti, tutte documentabili:
 **Regola di reintegrazione (vale per tutti i lotti):** nessun destino viene
 bloccato. Ogni PNG reintegrato nasce con flag
 `[INFERRED — needs DM confirmation]` e una sezione *Esiti possibili* (regola
-D13 — mai copioni); diventa canone solo alla canonizzazione DM del suo
+D13, mai copioni); diventa canone solo alla canonizzazione DM del suo
 lotto. **R1+R5 sono stati canonizzati il 2026-07-20** (vedi R6).
 
 ---
@@ -82,7 +82,7 @@ il dossier.
 Nota R2: il Consiglio di Rethmar ha già 7 seggi definiti (Sorvane, Pyriel,
 Thornwall sono *sostituti funzionali* di alcuni ruoli AP). R2 reintegra i 4
 sopra come **secondo anello** (tempio, torre di magia, caserma) senza
-toccare i seggi — servono alle Fasi 0-4 della battaglia (guarigione di
+toccare i seggi: servono alle Fasi 0-4 della battaglia (guarigione di
 massa, controspionaggio arcano, sortite).
 
 ### §2.3 Starsong Hill / Witchwood / Wyrmlord (villain)
@@ -105,25 +105,25 @@ massa, controspionaggio arcano, sortite).
 
 ## §3 — Lotti
 
-- [x] **R1 — Profughi del Guado di Drellin** (questa PR): dossier collettivo
-  `Bestiario/png/Guado_di_Drellin/Profughi_Guado_di_Drellin.md` — 6 PNG
+- [x] **R1, Profughi del Guado di Drellin** (questa PR): dossier collettivo
+  `Bestiario/png/Guado_di_Drellin/Profughi_Guado_di_Drellin.md` con 6 PNG
   civici come volti dell'onda profughi Day 12→25, con agganci ai thread
   esistenti (mulino dei bambini, infiltratori §2.5, Morale Cittadino,
   Sertieren già citato dal dm-expansion-toolkit). Tutti `[INFERRED]`.
-- [x] **R2 — Secondo anello di Rethmar** (✅ preparato 2026-07-20): dossier
-  collettivo `Bestiario/png/Secondo_Anello_Rethmar/` — Tredora Occhidoro
+- [x] **R2, Secondo anello di Rethmar** (✅ preparato 2026-07-20): dossier
+  collettivo `Bestiario/png/Secondo_Anello_Rethmar/` con Tredora Occhidoro
   (Lathander, decisione VP chierici + gancio Derny), Immerstal il Rosso (mago
   d'assalto anti-alate), Capitano Ulverth (Guardia del Leone sotto Sorvane +
   caccia infiltrati), Teyani Sura (gancio verso Rhest/P2). Tutti `[INFERRED]`,
   esiti aperti; `state.md` non toccato (canonizzazione a valle, in gioco).
-- [x] **R3 — Witchwood & Tiri Kitor** (✅ preparato 2026-07-20): dossier
-  collettivo `Bestiario/png/Witchwood_Tiri_Kitor/` — Sellyria Starsinger
+- [x] **R3, Witchwood & Tiri Kitor** (✅ preparato 2026-07-20): dossier
+  collettivo `Bestiario/png/Witchwood_Tiri_Kitor/` con Sellyria Starsinger
   (perno alleanza), Killiar Arrowswift (**cross-link** allo statblock d'arco
   CR 11-12 esistente), Illian Snowmantle (dissenso interno), Trellara
   Nightshadow (barda in lutto, specchio di Lirien), Vecchio Warklegnaw
   (gigante del Witchwood). `[INFERRED]`; statblock mancanti da generare via
   npc-villain-boosting al gioco. Gate: prima di P3-Starsong (Day 30-35).
-- [x] **R4 — Wyrmlord + Blackspawn** (✅ deciso dal DM 2026-07-20):
+- [x] **R4, Wyrmlord + Blackspawn** (✅ deciso dal DM 2026-07-20):
   - **Hravek Kharn → FUSO in Wyrmlord Karruk** (no scheda separata; stats AP
     solo come seme di variante). Nota nel dossier `villain/Wyrmlord_Karruk/`.
   - **Ulwai Stormcaller → NON reintegrata 1:1**: nicchia coperta da Mira
@@ -134,20 +134,20 @@ massa, controspionaggio arcano, sortite).
     Wyrmlord; i CR 8-9 restano truppa. `state.md` §2.2 + §8 aggiornati.
   Principio DM: Wyrmlord AP non 1:1; l'orda ingrandita (>> AP) richiede
   elementi speciali all'altezza dell'APL 13.
-- [x] **R5 — Lirien Amaranti, "Il Giullare Spezzato"** (questa PR): dossier
-  `Bestiario/png/Lirien/Lirien.md` — PNG caotico neutrale ricorrente,
+- [x] **R5, Lirien Amaranti, "Il Giullare Spezzato"** (questa PR): dossier
+  `Bestiario/png/Lirien/Lirien.md`, PNG caotico neutrale ricorrente,
   proposta completa `[INFERRED — needs DM confirmation]`: adattamento FR
   del background, aggancio all'onda profughi, 3 intrecci con PNG esistenti
   (rete-statue di Varis/Sal, Tempestas, infiltratori §2.5), meccanica
   "scompiglio" a esiti aperti, guardia di protagonismo PG. Possibile
   promozione a PG in un futuro branch di gruppo.
-- [x] **R6 — Canonizzazione DM di R1+R5** (✅ 2026-07-20): il DM ha
+- [x] **R6, Canonizzazione DM di R1+R5** (✅ 2026-07-20): il DM ha
   approvato («inseriscile come Canon»). Flag `[INFERRED]` sciolti nei due
   dossier; righe applicate a `state.md` §1 (Lirien companion ricorrente),
   §3 (Norro, Sertieren, Lirien), §7 ([PROFUGHI], [LIRIEN]) e §8 (changelog).
   I lotti futuri R2-R4 avranno ciascuno la propria canonizzazione a valle.
 
-- [x] **R7 — Mira Serani «l'Aranea»** (✅ canonizzato 2026-07-20; ricalibrato
+- [x] **R7, Mira Serani «l'Aranea»** (✅ canonizzato 2026-07-20; ricalibrato
   2026-07-20b): villain AP (aranea spia della Mano Rossa, `[Private — RHoD
   p.44-45]`) assente dal repo → ricostruita da base aranea SRD (OGL). **Twist
   DM canonizzato**: ha ucciso la figlia di Lorana e ne ha rubato la faccia;
@@ -168,7 +168,7 @@ massa, controspionaggio arcano, sortite).
 
 1. **IP-safe (ADR-0005):** ruolo e funzione, mai testo AP; stats solo come
    stima `[INFERRED]` o puntatore `[Private — Red Hand of Doom]`.
-2. **Coerenza timeline:** nessun PNG può "essere ancora al Guado" — il
+2. **Coerenza timeline:** nessun PNG può "essere ancora al Guado": il
    paese è bruciato (Day 12-13, locked). Ogni scheda dichiara dove il PNG
    è *ora* rispetto al March Clock, con esiti alternativi (morto/disperso)
    lasciati al DM.

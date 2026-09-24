@@ -43,10 +43,10 @@ python3 scripts/state_apply.py --migrate --commit
 #   → inserisce i marker `auto:` in state.md (una volta sola)
 ```
 
-Poi apri `campaign/state.md` §1 e metti i TUOI PG (o parti dallo stato
-del gruppo di esempio per continuare la campagna dal punto attuale).
-Per un reset completo da template c'è `scripts/new-campaign-group.sh`
-(Playbook §7).
+Per giocare con i TUOI PG: `python3 scripts/dm.py gruppo nuovo`. Ti fa
+le domande (gruppo, arco di partenza, PG) e prepara ramo e stato; nessun file
+da modificare a mano (Playbook §7). Se invece vuoi continuare la campagna del
+gruppo di esempio dal punto attuale, non serve niente.
 
 ## 3. Prima della sessione (15 min)
 

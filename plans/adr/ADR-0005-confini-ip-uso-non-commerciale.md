@@ -9,10 +9,10 @@
 Il repo mescola tre corpi di proprietà intellettuale di terzi che nessuna
 licenza dell'autore può sanare:
 
-1. **Wizards of the Coast** — materiale *Red Hand of Doom* e *Forgotten
+1. **Wizards of the Coast**: materiale *Red Hand of Doom* e *Forgotten
    Realms* non-SRD (Channathgate/Channath Vale, divinità FR, PNG e trama
    dell'avventura originale). È un blocco **assorbente per tutto il repo**.
-2. **Palio di Siena** — l'arco P2D evoca in modo cumulativo i segni tutelati
+2. **Palio di Siena**: l'arco P2D evoca in modo cumulativo i segni tutelati
    dal Regolamento comunale e dal Consorzio per la Tutela del Palio (CTPS):
    titoli araldici ufficiali riprodotti alla lettera, 8/8 livree identiche,
    motti dichiarati "originali" ma in realtà parafrasi riconoscibili, il

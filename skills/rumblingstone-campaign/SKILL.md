@@ -19,14 +19,14 @@ mechanics load `dnd-35-srd`. For Forgotten Realms canon load
 
 **Critical loading order for any campaign question:**
 
-1. `references/campaign-coherence.md` — what must stay consistent
-2. `../../campaign/state.md` — current world state (changes per session)
+1. `references/campaign-coherence.md`: what must stay consistent
+2. `../../campaign/state.md`: current world state (changes per session)
 3. The specific reference for the domain
 
 If `state.md` and a reference disagree, **state.md wins** (it is the most
-recent truth). If a reference and `campaign/lore/campaign-history.md`
-disagree, the reference wins (history is prose narration; references are
-structured truth).
+recent truth). If a reference and `campaign/lore/campaign-chronicle.md` (or
+`campaign-premise.md`) disagree, the reference wins (they are prose
+narration; references are structured truth).
 
 ## Domain → File
 
@@ -39,7 +39,8 @@ structured truth).
 | Story arcs — timeline, current state, villain/ally tracker | `references/campaign-story-arcs.md` |
 | DM toolkit — branching quests, monster art, faction expansion | `references/dm-expansion-toolkit.md` |
 | Living world state (per-session) | `../../campaign/state.md` |
-| Full prose history | `../../campaign/lore/campaign-history.md` |
+| Prose chronicle of this table (per group: a new group resets it) | `../../campaign/lore/campaign-chronicle.md` |
+| Campaign premise: AP, setting, villain graph (shared by every group) | `../../campaign/lore/campaign-premise.md` |
 | House rules | `../../campaign/lore/house-rules.md` |
 
 ## Decision Logic
@@ -66,7 +67,7 @@ Before generating any new campaign content, the agent must:
    to the DM** — do not silently retcon.
 4. Default tone: R.A. Salvatore — slow build, sensory detail, internal stakes,
    moral cost. Avoid camp, anachronism, modern jargon. The Salvatore voice is
-   the prose layer of the full eight-pillar mix defined in
+   the prose layer of the full nine-pillar mix defined in
    `../rumblingstone-narrative-style/` — load that skill for any generation.
 
 ## Adult Group Conventions

@@ -364,6 +364,16 @@ lontani.
   gravità tira, sempre (2× ridotta a "solo" opprimente dalla Benedizione);
   i cristalli sono freddi al tocco, mai ghiacciati — il freddo educato
   della pietra che non ha fretta.
+- 🚫 **Cosa NON dire** *(vincolante quanto le quattro righe sopra —
+  [ADR-0057](../plans/adr/ADR-0057-la-quarta-colonna-e-di-tutto-il-repo.md))*:
+  - **che il BOOM sono i cristalli *vivi*.** È la rivelazione dell'**Incontro
+    2** (§6, Campo Cristalli Viventi): qui si sente solo una campana sepolta
+    che nessuno ha suonato. Se lo dici adesso, §6 diventa una conferma.
+  - **che il *pull* laterale indica la strada.** La bussola è **Aegis Fang che
+    vibra**, e si guadagna orientandosi. Il pull è una stranezza del posto: se
+    lo trasformi in un'indicazione, togli l'unica prova di orientamento del §4.
+  - **«magia elementale».** I PG sentono **ozono**. La categoria sta nello
+    statblock, non nel naso di chi cammina (ADR-0014 §2, il mostro spiegato).
 
 > **Read-aloud (orizzonte).** *Davanti, nella direzione che indica Aegis Fang:
 > a portata di mano, piattaforme di cristallo unite da ponti di pietra
@@ -433,8 +443,8 @@ gravità: strisciate); linee di vista spezzate ogni 6-9 m (agguati facili);
 > triangoli, esagoni, cerchi concentrici — la geometria di una mente, non del
 > caso. E si MUOVONO: si inclinano verso di voi come girasoli verso un sole che
 > non c'è, e cantano. Non è metafora: ogni cristallo tiene una nota, e le
-> migliaia di note insieme formano un accordo così vasto che lo sentite nello
-> sterno prima che nelle orecchie. Al centro del giardino, alta come tre nani,
+> migliaia di note insieme formano un accordo così vasto che arriva allo
+> sterno prima che alle orecchie. Al centro del giardino, alta come tre nani,
 > una madre di luce: sfaccettature a migliaia, e dietro ognuna, un pensiero.*
 
 **Terreno (callout):** corridoio libero centrale (riga 06 della MAPPA T-3);
@@ -449,7 +459,7 @@ la zona si può **aggirare** da sud (+30 min).
 > esiste, si stende un oceano di roccia grigia — onde lente come pensieri di
 > montagna, creste che impiegano un'ora a rompersi, correnti di granito
 > liquido che scorrono senza suono. Toccarlo è come toccare il fianco di un
-> toro: cede, e sotto senti il muscolo. E là, sospeso a cinquanta metri sopra
+> toro: cede, e sotto c'è il muscolo. E là, sospeso a cinquanta metri sopra
 > le onde, RUOTA il Tempio: un cubo d'argento di cento metri di lato, perfetto
 > come un dado lanciato da un dio e mai atterrato. Aegis Fang, nella mano di
 > Thorik, vibra così forte che il braccio duole. Siete arrivati. Manca solo
@@ -1032,15 +1042,15 @@ gravità normale, con Terros dormiente all'altro capo della piattaforma.
 > troppo tempo. Non si muove. Non ha respiro. Occupa un terzo della
 > piattaforma. **Che fate?***
 
-> **Read-aloud (il risveglio del guardiano — LotR + Salvatore).** *All'inizio
-> lo scambiate per una formazione della caverna: una collina di roccia
+> **Read-aloud (il risveglio del guardiano — LotR + Salvatore).** *A prima
+> vista è una formazione della caverna: una collina di roccia
 > stratificata, ere sovrapposte come pagine di un libro di pietra. Poi la
-> collina RESPIRA. Una fenditura si apre lungo quella che credevate una parete
+> collina RESPIRA. Una fenditura si apre lungo quella che sembrava una parete
 > — è una palpebra. Due occhi di cristallo grezzo si accendono di una luce
 > minerale, fredda, priva di odio e priva di pietà, come lo sguarderebbe una
 > montagna. Non c'è collera: c'è PESO. Terros si erge, e ogni suo movimento è
-> il suono di una faglia che si assesta, un boato basso che sentite nei denti
-> prima che nelle orecchie. La gravità della sala si inclina verso di lui,
+> il suono di una faglia che si assesta, un boato basso che arriva ai denti
+> prima che alle orecchie. La gravità della sala si inclina verso di lui,
 > come se il piano stesso lo riconoscesse padrone. Aegis Fang, nella mano di
 > Thorik, tace di colpo: davanti all'Incudine del Mondo, anche una voce antica
 > abbassa il capo.*
@@ -1263,12 +1273,12 @@ R4+: alterna Earth Glide mordi-e-fuggi, Onda e Scudo. Sotto il
 > **Read-aloud — il primo scambio (coreografia, Salvatore).** *Terros non
 > carica: si LASCIA CADERE in avanti, e la camera intera cade con lui — l'Onda
 > Gravitazionale vi strappa l'Altare da sotto i piedi come una tovaglia. Thorik,
-> tu senti l'armatura diventare àncora e bandiera insieme: Aegis Fang morde il
-> bordo dell'Altare, il braccio urla, ma tieni. Tordek, il mondo ruota e tu
+> l'armatura è àncora e bandiera insieme: Aegis Fang morde il
+> bordo dell'Altare, il braccio urla, e il morso tiene. Tordek, il mondo ruota e tu
 > ruoti con lui — i Bracieri sussurrano una parola sola, «peso», e i tuoi piedi
 > trovano il muro come fosse pavimento. Artemis, tu sei l'unico per cui nulla è
-> cambiato: le Ali d'Ombra non obbediscono alla terra. Da lassù vedi tutto —
-> il boss, l'Altare, i tuoi compagni aggrappati al mondo capovolto. La sua
+> cambiato: le Ali d'Ombra non obbediscono alla terra. Da lassù restano sotto
+> di te il boss, l'Altare, i tuoi compagni aggrappati al mondo capovolto. La sua
 > testa di roccia si volta lenta verso di te, l'unico che non è caduto. Che
 > fate?*
 
@@ -1628,44 +1638,52 @@ L'Altare porta la gravità a livelli intollerabili. Thorik si inginocchia.
 > la giocatrice di Hella è uno dei suoi echi (§1). **Non spiegarlo finché non
 > torna Hella (#3).**
 
-> ### ✅ CANONE GIOCATO (DM 2026-07-31, rettifica) — scelta B: il PESO NEL CORPO, e lo prende TORDEK
+> ### ✅ CANONE GIOCATO (DM 2026-07-31, rettifica) — scelta B: il PESO NEL CORPO, e lo prende THORIK
 >
 > **Nessun sacrificio materiale.** Il bottino dell'arco è **intatto**: Geode
 > Titanico, **Cuore di Terros**, residuo golem e geodi restano al party, e
 > nessuno si è spogliato dell'equipaggiamento. Il party **non** entra povero a
 > Hammerfist.
 >
-> ⚠️ **Deviazione dal modulo, voluta: il Peso l'ha accettato TORDEK, non
-> Thorik.** La Fase 1 era scritta per il portatore della Corona; al tavolo si è
-> inginocchiato il monaco. *(Se al tavolo era invece Thorik, questa è l'unica
-> riga da correggere, insieme a `state.md` §1.)*
+> ✅ **Esito giocato: il Peso l'ha accettato THORIK, il portatore** — come
+> scrive l'Opzione B qui sopra.
+>
+> 🔁 **Correzione del 2026-08-06.** Dal 2026-07-31 al 2026-08-06 questo blocco
+> diceva l'opposto — «deviazione voluta: si è inginocchiato il monaco» — e
+> attribuiva il pegno a **Tordek**. Era un refuso, segnalato dal DM. La riga che
+> il blocco stesso indicava come «l'unica da correggere» non era l'unica: la
+> lettura sbagliata si era propagata a `state.md` (intestazione e **due echi**,
+> E-07c ed E-07e), alla scheda della Corona e ai booklet. Tutto riportato al
+> portatore.
 >
 > | | Effetto permanente |
 > |---|---|
-> | **TORDEK** | **−2 DES** e **+2 COS**, permanenti. Le articolazioni hanno fatto lega con la pietra |
-> | **Thorik** | nessun cambiamento nuovo (resta il **−2 COS** più vecchio, di un'altra scena) |
+> | **THORIK** | **−2 DES** e **+2 COS**, permanenti. Le articolazioni hanno fatto lega con la pietra |
+> | **Tordek** | nessun cambiamento: il malus non è mai stato suo |
 > | **Bottino** | ✅ **integro**, Cuore di Terros compreso |
 >
-> **Perché funziona meglio così, e come giocarlo.** Tordek è il monaco: la DES
-> è la sua statistica di mestiere (CA senz'armatura, Riflessi, Raffica). Perdere
-> 2 DES per guadagnare 2 COS significa che **ha barattato la propria agilità
-> con la capacità di reggere** — cioè ha smesso di essere quello che schiva ed è
-> diventato quello che sta. Per un monaco è una piccola morte, e per il
-> portatore dei **Bracieri Gemelli** è la cosa più coerente che potesse
-> succedere: *«Incudine e Martello»*, e l'incudine non schiva.
+> **Come giocarlo.** Thorik è il portatore: la Corona gli ha chiesto *«un pezzo
+> di te stesso»* e lui l'ha dato, senza delegarlo. Perdere 2 DES per guadagnare
+> 2 COS è, per chi già fa l'ancora, **diventare ancora più immobile**: più duro
+> da spostare, più lento a schivare. *«Incudine e Martello»*, e l'incudine non
+> schiva — ma qui l'incudine è quella che porta la Corona.
 >
-> - **Ricalcola sulla scheda**: CA senz'armatura, Riflessi, iniziativa, prove di
+> - **Ricalcola sulla scheda di Thorik**: CA, Riflessi, iniziativa, prove di
 >   DES — tutti **−1**. Pf massimi **+1/DV** e Tempra **+1**.
-> - **I Bracieri non lo lodano.** Un vecchio fabbro non fa complimenti a chi ha
->   fatto la cosa giusta: la dà per scontata. Al massimo, molto dopo, una riga
->   secca — *«Adesso pesi.»*
-> - **La presenza verde** (§9 Fase 1) si è stretta alle spalle di **Tordek**:
->   è Hella, e lui **non lo sa**. Per la sua giocatrice è un eco. Non spiegarlo
->   fino al #3 — e quando lo spiegherai, ricordati che è **lui** che ha sentito
->   quelle mani, non Thorik.
-> - **Thorik ha guardato senza poter fare niente.** Il portatore della Corona,
->   quello che regge sempre, questa volta **non ha retto lui**. Vale una riga
->   nella catarsi davanti ad A3 (master #2, §4).
+> - **La presenza verde** (§9 Fase 1) si è stretta alle spalle di **Thorik**:
+>   è Hella, e lui **non lo sa** — l'asimmetria originale del modulo, intatta.
+>   Per la giocatrice di Hella è un eco. Non spiegarlo fino al #3. È l'eco
+>   **E-07f** in `state.md` §7.E, ed è la più forte che esca da questa scena.
+> - **Che cosa cambia davvero per Thorik.** La DES era già la sua statistica
+>   povera — **10 di base**, e la Corona gliene aveva già tolti 2 quando se
+>   l'è messa in testa (`PortaleForgia-P1-REVISED-Corretta.md`, «Limitazioni»:
+>   *DES 10 → 8*). Questi altri due lo portano a **6**: **un punto solo** di CA,
+>   Riflessi e iniziativa in più. Il tavolo non lo vedrà. Il +2 COS invece lo
+>   rende *migliore* nell'unica cosa per cui lo misurano. **Ha pagato dove non
+>   si vede e lo elogeranno per la metà che si vede** — è l'eco **E-07c**.
+> - **Nessuna eco per Tordek da questa scena.** L'eco E-07e è **annullata**:
+>   registrava una scelta che non c'è stata. Le righe vive di Tordek restano
+>   quelle del Seme di Varis (E-07a/E-07b).
 
 ### FASE 2 — Forgiare la Connessione (3 round, TUTTI insieme) ⭐
 > **QUESTO è il cuore meccanico ed emotivo che era andato perso nella
@@ -2023,8 +2041,8 @@ futuro). *Lista completa degli 8 affreschi e del gancio → master #2.*
 
 ## §12 — RITORNO ALLA SALA (ponte al master #2)
 
-> **Read-aloud.** *Attraversate il portale a ritroso. La Sala della Forgia vi
-> accoglie con la sua luce dorata immutabile — ma qualcosa È mutato. L'affresco
+> **Read-aloud.** *Dall'altra parte del portale, la Sala della Forgia: la stessa
+> luce dorata immutabile — ma qualcosa È mutato. L'affresco
 > di Est si è chiuso come una porta; quello del Tempo brucia nitido; e nella
 > nebbia della parete di Nord-Ovest, la quarta figura ha ora un contorno. La
 > Corona di Thorik pesa di una gemma in più.*

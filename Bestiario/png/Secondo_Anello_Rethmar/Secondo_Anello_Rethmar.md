@@ -1,4 +1,8 @@
-# Il Secondo Anello di Rethmar — tempio, torre, guardia, esploratori
+# Il Secondo Anello di Rethmar — tempio, torre, guardia, esploratori [NON-CREATURA]
+
+> **Non è una creatura** (ADR-0033): è un **dossier di quattro PNG** civici e militari (tempio, torre, guardia, esploratori), non una creatura sola.
+> Per questo non ha un blocco `statblocco` e non conta
+> nel debito di migrazione di ADR-0021.
 
 > **Lotto R2** del `plans/PIANO-REINTEGRAZIONE-PNG-AP-RHOD.md` (2026-07-20).
 > Quattro PNG civici/militari dell'AP originale (Brindol → **Rethmar**),

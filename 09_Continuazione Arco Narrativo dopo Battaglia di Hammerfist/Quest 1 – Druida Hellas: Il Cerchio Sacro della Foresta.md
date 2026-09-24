@@ -78,7 +78,7 @@ Gentili spiriti naturali inviano visionarie richieste di aiuto al gruppo e in pa
 
 - Lancio del rituale con prove di Saggezza (Natura/Religione) DC 20  
 - Durata rituale: 1 ora reale di gioco con step ogni 20 minuti (progresso indicato da zone rituali illuminate)  
-- Ogni attacco nemico o interruzione richiede prova di concentrazione DC 18 per proseguire  
+- Ogni attacco nemico o interruzione richiede prova di Concentrazione CD 18 per proseguire  
 - Successo: barriera riesce a bloccare gli incendi imminenti
 
 ### Incontri chiave  

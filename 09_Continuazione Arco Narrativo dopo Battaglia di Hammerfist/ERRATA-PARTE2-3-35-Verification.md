@@ -168,7 +168,7 @@ formazione, poi carica il buffer/guaritore del party sotto *divine power*; usa
 
 ### 3.1 Xal'thor (Illithid + Psion 6, CR 14) — **POINTER, non duplicare**
 `...P2B-Torneo-STATBLOCCHI-COMPLETO.md` e catalogo rimandano a
-`Bestiario/villain/Xal_thor/Xal_thor.md` (fonte unica). ✅ Corretto tenerlo come pointer.
+`Bestiario/villain/Xal_thor/Xal_thor/Xal_thor.md` (fonte unica). ✅ Corretto tenerlo come pointer.
 - Verifica sulla scheda PNG: **RI 25** presente? **CA contatto/colto**? **azione
   psionica** espressa come azioni 3.5 (standard/mossa/veloce/immediata), non 5e?
 
@@ -269,8 +269,8 @@ place quando si tocca il file, o si tengono come **checklist di verifica al tavo
 
 - **Errata gemella P1:** `ERRATA-PARTE1-Quest-Hellas-35-Verification.md`
 - **Boss finale (in place):** `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md` §1
-- **Canone Tyrgarun/Azarr Kul (D11 v2):** `campaign/state.md` §2, `Bestiario/villain/Azarr_Kul/Azarr_Kul.md`
-- **Schede PNG (fonti uniche):** `Bestiario/villain/Xal_thor/Xal_thor.md` · `Bestiario/villain/Sethrax_il_Velato/Sethrax.md`
+- **Canone Tyrgarun/Azarr Kul (D11 v2):** `campaign/state.md` §2, `Bestiario/villain/Azarr_Kul/Azarr_Kul/Azarr_Kul.md`
+- **Schede PNG (fonti uniche):** `Bestiario/villain/Xal_thor/Xal_thor/Xal_thor.md` · `Bestiario/villain/Sethrax_il_Velato/Sethrax.md`
 - **Regole 3.5:** `skills/dnd-35-srd/` · `skills/dnd-35-rules/`
 
 **Status:** ✅ **Errata prodotta; boss finale upscalato in place; catch Tyrgarun corretto.**

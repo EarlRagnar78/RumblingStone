@@ -26,6 +26,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from suggest_encounter import load_yaml  # noqa: E402
+from dmcore.tavolo import origine_el  # noqa: E402
 
 LOOT_TABLES = HERE / "loot_tables.yaml"
 MAGIC_ITEMS = HERE / "magic_items_srd.yaml"
@@ -319,7 +320,14 @@ def main():
             print("[suggest_loot] no proposals found in file.", file=sys.stderr); return 3
 
     if args.wild:
-        el = args.el if args.el is not None else 10.0
+        fonte = origine_el(esplicito=args.el)
+        if fonte is None:
+            print("[suggest_loot] nessun EL: passa --el, oppure dichiara un "
+                  "`**Party APL:**` in campaign/state.md.", file=sys.stderr)
+            return 3
+        el = fonte.el
+        if fonte.etichetta != "da --el":
+            print(f"[suggest_loot] EL {el:g} — {fonte.etichetta}", file=sys.stderr)
         factions = []
         print(render_loot(el, factions, "none", args.pcs, density, args.seed, rng,
                           args.no_magic, args.include_fr_themed))
@@ -328,7 +336,19 @@ def main():
     if proposals:
         targets = proposals if args.all_proposals else [proposals[min(args.proposal-1, len(proposals)-1)]]
         for i, pr in enumerate(targets, 1):
-            el = pr["el"] if pr["el"] is not None else (args.el or 10.0)
+            # Prima qui c'era un EL scritto nel codice, che scattava muto
+            # quando il file non portava un `**Combined EL**`. Ora la gerarchia
+            # e' dichiarata (--el, il file, il Party APL, il rifiuto) e
+            # l'origine del numero si stampa.
+            fonte = origine_el(esplicito=args.el, dal_file=pr["el"])
+            if fonte is None:
+                print("[suggest_loot] nessun EL: non c'e' nel file, non l'hai "
+                      "passato con --el, e campaign/state.md non dichiara un "
+                      "`**Party APL:**`.", file=sys.stderr)
+                return 3
+            el = fonte.el
+            if fonte.etichetta != "dal file di incontro":
+                print(f"[suggest_loot] EL {el:g} — {fonte.etichetta}", file=sys.stderr)
             factions = pr["factions"] or (args.factions.split(",") if args.factions else [])
             factions = [f.strip() for f in factions if f.strip()]
             loot_tag = pr["loot"] or "structured"
@@ -339,10 +359,15 @@ def main():
         return 0
 
     # direct mode
-    if args.el is None:
-        print("[suggest_loot] --el required (or --from-encounter).", file=sys.stderr); return 2
+    fonte = origine_el(esplicito=args.el)
+    if fonte is None:
+        print("[suggest_loot] --el richiesto (oppure --from-encounter, oppure un "
+              "`**Party APL:**` in campaign/state.md).", file=sys.stderr)
+        return 2
+    if fonte.etichetta != "da --el":
+        print(f"[suggest_loot] EL {fonte.el:g} — {fonte.etichetta}", file=sys.stderr)
     factions = [f.strip() for f in (args.factions or "").split(",") if f.strip()]
-    print(render_loot(args.el, factions, "structured", args.pcs, density, args.seed,
+    print(render_loot(fonte.el, factions, "structured", args.pcs, density, args.seed,
                       rng, args.no_magic, args.include_fr_themed))
     return 0
 

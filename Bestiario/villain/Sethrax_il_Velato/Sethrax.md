@@ -1,6 +1,18 @@
 # SETHRAX IL VELATO — EMISSARIO ILLITHID DELLA TORRE INVISIBILE
 ## *Il Concorrente Mascherato del Torneo di Dauth, agente di Zalkatar*
 
+
+```statblocco
+gs: 12
+ca: 22
+ca-dettaglio: (10 base, +5 Des “simulato”, +3 Sag, +1 Dodge, +4 bonus monaco, +1 Mental Barrier passivo)
+pf: 70
+ts: Temp +5, Rifl +5, Vol +11
+velocita: 9 m
+```
+
+> ⚠ `ts` ritrascritto dalla prosa di questa scheda (sezione dei tiri salvezza) il 2026-09-23. Il blocco portava «Temp +9, Rifl +7, Vol +7», derivati da `derive_statblocks --apply-ts` il 2 settembre con una matrice di caratteristiche sua, un giorno prima che il lettore imparasse questo formato (`d859a31`).
+
 **Razza/Tipo:** Illithid (Mind Flayer — Aberrazione Medio)
 **Classe:** Psion 5 (Telepath) — DV totali 8d8 + 5d4 + 26 → CR 12
 **Allineamento:** Legale Malvagio (servizio metodico, non zelo)
@@ -8,7 +20,7 @@
 **Patrono:** **Zalkatar**, Illithid Warlock Drow della **Torre Invisibile** (vedi `Arco-Post-Hammerfist-P2A-Torre-PARTE4-FINALE-Boss-Zalkatar.md`).
 **Ruolo:** Emissario covert al Torneo di Dauth (Arco 09 P2B). Missione: estrarre un “seme di Porta” dall’Orbe delle Otto Porte per gli esperimenti planari di Zalkatar.
 **Countdown Clock:** Sincronizzato con il Torneo (eventi automatici Giorni 1–3). Esito finale impatta il clock di Zalkatar (P2A).
-**File correlati:** `09_Continuazione.../Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE2-Giorno2-Semifinali.md`, `…-PARTE3-Giorno3-Finale-e-Invasione.md`, `…-STATBLOCCHI-COMPLETO.md` voce **10**, `…-OTTO-PORTE-e-ORBE.md` §2.1.1, `Bestiario/villain/Xal_thor/Xal_thor.md` (fazione rivale).
+**File correlati:** `09_Continuazione.../Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE2-Giorno2-Semifinali.md`, `…-PARTE3-Giorno3-Finale-e-Invasione.md`, `…-STATBLOCCHI-COMPLETO.md` voce **10**, `…-OTTO-PORTE-e-ORBE.md` §2.1.1, `Bestiario/villain/Xal_thor/Xal_thor/Xal_thor.md` (fazione rivale).
 
 > **Questo file è la FONTE AUTORITATIVA per:**
 > - tutti i **trigger di smascheramento** (vedi sezione *Disguise Self psionico*),

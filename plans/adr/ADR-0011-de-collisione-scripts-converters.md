@@ -27,9 +27,9 @@ Rinominare la cartella dei convertitori da `Script/` a **`converters/`**
 
 Si aggiornano **solo i riferimenti che puntano alla cartella del repo**:
 
-- `.github/workflows/ci.yml` — `compileall -q scripts Script` → `scripts converters`;
-- `scripts/check_plans_discipline.py` — `STRUCTURAL_PREFIXES` include `converters/`;
-- `.gitignore` — pattern `Script/...` → `converters/...`;
+- `.github/workflows/ci.yml`: `compileall -q scripts Script` → `scripts converters`;
+- `scripts/check_plans_discipline.py`: `STRUCTURAL_PREFIXES` include `converters/`;
+- `.gitignore`: pattern `Script/...` → `converters/...`;
 - `scripts/tools.manifest.json` + artefatti generati (`docs/tools/*`);
 - `AGENTS.md`, `scripts/README*.md`, `skills/rumblingstone-plans/SKILL.md`,
   `converters/README.md`, `converters/pdf-to-md-engine/PROJECT_STATUS.md`;

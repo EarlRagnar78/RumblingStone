@@ -130,11 +130,15 @@ La presenza della Terra stabilizza la furia del Fuoco, mentre il Fuoco infonde e
     *   Il tuo **danno senz'armi sale di un dado** (taglia Grande).
     *   **−4** a Nascondersi. L'armatura e i vestiti si adattano; il resto no.
 
-> ⚠️ **Attenzione al conto della DES.** Fra il **−2 permanente** del rito dello
-> Smeraldo e il **−2** dell'ingrandimento, da Grande hai **4 punti di DES in
-> meno** rispetto a prima del Piano della Terra: CA senz'armatura, Riflessi e
-> iniziativa scendono di conseguenza. Diventare una collina ti rende più forte
-> e **più facile da colpire**. È il punto.
+> ⚠️ **Attenzione al conto della DES.** Il **−2** dell'ingrandimento è l'unico
+> che paghi: da Grande hai **2 punti di DES in meno**, e CA senz'armatura,
+> Riflessi e iniziativa scendono di conseguenza. Diventare una collina ti rende
+> più forte e **più facile da colpire**. È il punto.
+>
+> *(Correzione del 2026-08-06: questa nota sommava anche un «−2 permanente del
+> rito dello Smeraldo» che **non è tuo**. Il Peso del Mondo l'ha accettato
+> **Thorik**, il portatore della Corona — vedi `ARC07-DEF-1` §9 e `state.md`
+> §7.E. Tordek esce dal Piano della Terra senza malus permanenti.)*
 
 **Come si attiva — non lo decidi tu.**
 

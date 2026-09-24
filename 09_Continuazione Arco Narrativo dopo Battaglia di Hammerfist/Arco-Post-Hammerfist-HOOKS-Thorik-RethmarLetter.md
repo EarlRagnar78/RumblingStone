@@ -215,7 +215,7 @@ Brenna scrive *"vi ringrazia ogni notte, in silenzio, per essere sopravvissuti t
 
 - Mandare un messaggio personale a Lorana via Tempestas (1 carica di Polvere di Tonante) → Lorana risponde con due righe brevi: *"Ti ringrazio. Ho i miei. Vieni quando puoi. Lorana."*
 - **Eco RP:** quando i PG arrivano a Rethmar, la prima scena con Lorana è **calda**, non glaciale. Lei li riceve come **vecchi compagni d'armi** invece di come "rinforzi tardivi del Consiglio".
-- **Eco a Phase 1:** Lorana **mobilita** i 150 volontari rifugiati (da `Bestiario/png/Lorana/Lorana.md` §LA RISERVA DEI RIFUGIATI) **prima** del CD usuale di Diplomazia 18, perché ha già fiducia.
+- **Eco a Phase 1:** Lorana **mobilita** i 150 volontari rifugiati (da `Bestiario/png/Lorana/Lorana/Lorana.md` §LA RISERVA DEI RIFUGIATI) **prima** del CD usuale di Diplomazia 18, perché ha già fiducia.
 
 ---
 
@@ -248,9 +248,9 @@ Brenna scrive *"vi ringrazia ogni notte, in silenzio, per essere sopravvissuti t
 - **Master reference**: `Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md`
 - **Tempestas PNG**: `Bestiario/png/Tempestas/Tempestas.md`
 - **Brenna Sorvane (Consiglio di Rethmar)**: `Bestiario/png/Consiglio_Rethmar/Consiglio_Rethmar.md`
-- **Capitana Lorana**: `Bestiario/png/Lorana/Lorana.md`
-- **Conte Valerius (corruzione di Halveth)**: `Bestiario/villain/Conte_Valerius/Conte_Valerius.md`
-- **Re Thorek + Hammerfist**: `campaign/lore/campaign-history.md` Arco 08
+- **Capitana Lorana**: `Bestiario/png/Lorana/Lorana/Lorana.md`
+- **Conte Valerius (corruzione di Halveth)**: `Bestiario/villain/Conte_Valerius/Conte_Valerius/Conte_Valerius.md`
+- **Re Thorek + Hammerfist**: `campaign/lore/campaign-chronicle.md` Arco 08
 - **Sister hook (Tournament — Thorik's 150 lances and political weight)**: `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Thorik.md` (aggancio in `Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md` §4)
 - **Phase 0 Notte dei Drow**: `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE0-NOTTE-DEI-DROW-TESTO.md`
 - **Phase 1 Assedio**: `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE1-ASSEDIO-TESTO.md`

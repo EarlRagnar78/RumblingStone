@@ -31,6 +31,7 @@
 | `07-GUIDA-DM-PASSO-PASSO.md` | **la regia**: le tre serate minuto per minuto, i rilanci, le voci dei PNG |
 | `FASCICOLO-SCHEDE-GIOCATORE.md` | i sei background da dare in mano + la matrice dei legami |
 | `09-KIT-ANTI-IMPROVVISAZIONE.md` | **quando escono dal copione**: 1d20 nomi, prezzi di bottega, tre PNG jolly con statblocco, 1d6 «la città respira» |
+| `10-DOSSIER-DELLE-PISTE.md` | **quando invece indagano**: i tre misteri come piste con nodi, la rete degli indizi, l'orologio, il falso indizio dei quattro quaranta |
 | `08-CASSETTA-DEL-DM.md` | **l'apparato d'uso**: foglio del cast, pronuncia, indice dei read-aloud, inserto per lo schermo, i suoni, il momento da fotografare, accessibilità |
 | `STATO-DEL-MODULO.md` | la memoria fra le tre serate: contatori, patti, scelte, **Echo Ledger**. Da copiare per gruppo |
 | `PLAYTEST-ALFA.md` | audit meccanico, dry-run delle tre serate, le nove correzioni applicate |
@@ -43,6 +44,7 @@
 | `ALLEGATI/mappe/uvtt/` | le due mappe pronte per **Foundry / Roll20** |
 | `ALLEGATI/immagini/PROMPT-RITRATTI-E-TAVOLE.md` | art direction e prompt per l'edizione raster |
 | `PROMPT-GENERAZIONE-BOOKLET-DEFINITIVO.md` | **cosa manca per l'edizione illustrata** e il prompt pronto da passare a una sessione nuova |
+| `PROMPT-PLAYTEST-BOOKLET-E-PLAYERGUIDE.md` | **cosa resta da collaudare** sul libro illustrato (dove atterrano le figure, read-aloud spezzati, spoiler nella guida giocatori) e il prompt pronto per una sessione nuova |
 | `IP-E-LICENZE.md` | Community Use Policy Paizo, OGL, provenienza |
 
 ---
@@ -135,6 +137,9 @@ ordine di corsa.
 ---
 
 ## §3 · Tarsilia in dieci righe
+
+![Tarsilia](ALLEGATI/immagini/web/tavola-tarsilia-citta.jpg)
+*Tarsilia dal tetto della Torre.*
 
 **Siamo nel 4712 AR**, ultima settimana d'estate. Le due date che compaiono nel
 modulo — il 4692 e il 4705 — stanno vent'anni e sette anni indietro.

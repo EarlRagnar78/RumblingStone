@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Appendice A — Corsari, borgo e chiave del livello 0</title>
+<style>
+  :root{--ink:#241c14;--soft:#5a4a36;--parch:#efe4c8;--hi:#f8f1dd;--rule:#a8926a;--acc:#7c2f2f;--mar:#2d5470}
+  *{box-sizing:border-box}
+  body{margin:0;background:#2a2420;color:var(--ink);
+       font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;line-height:1.5}
+  .page{max-width:1180px;margin:0 auto;background:var(--parch);padding:36px 44px 60px;box-shadow:0 0 40px rgba(0,0,0,.5)}
+  h1{font-size:2rem;margin:0 0 2px;font-variant:small-caps;letter-spacing:.5px}
+  .sub{font-style:italic;color:var(--soft);margin:0 0 18px}
+  h2{font-variant:small-caps;letter-spacing:1px;font-size:1.4rem;border-bottom:2px solid var(--rule);
+     padding-bottom:4px;margin:40px 0 14px}
+  h3{font-size:1.08rem;margin:22px 0 6px;font-variant:small-caps;letter-spacing:.5px}
+  h4{margin:14px 0 4px;font-size:1rem;font-variant:small-caps}
+  p{margin:0 0 10px}
+  .meta{display:flex;flex-wrap:wrap;gap:8px 26px;font-size:.86rem;color:var(--soft);
+        border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:8px 0;margin-bottom:22px}
+  .meta b{color:var(--ink)}
+  figure{margin:0 0 26px}
+  figcaption{font-size:.82rem;color:var(--soft);font-style:italic;text-align:center;margin-top:6px}
+  svg{display:block;width:100%;height:auto;background:var(--hi);border:1px solid var(--rule)}
+  .cols{column-count:2;column-gap:30px;column-rule:1px solid var(--rule)}
+  @media(max-width:820px){.cols{column-count:1}.page{padding:20px}}
+  .entry{break-inside:avoid;margin-bottom:16px}
+  .entry h4 .n{display:inline-block;background:var(--ink);color:var(--hi);width:22px;height:22px;
+     border-radius:50%;text-align:center;line-height:22px;font-size:.78rem;font-family:sans-serif;
+     margin-right:6px;vertical-align:1px}
+  .entry h4 .b{background:var(--mar)}
+  .ra{border-left:3px solid var(--acc);background:rgba(124,47,47,.06);padding:8px 12px;font-style:italic;
+      font-size:.92rem;margin:0 0 8px}
+  .mech{font-size:.88rem;background:rgba(0,0,0,.04);border:1px dashed var(--rule);padding:7px 10px;margin:8px 0 0}
+  .mech b{font-variant:small-caps}
+  .sb{border:1px solid var(--ink);border-left:5px solid var(--acc);background:rgba(0,0,0,.03);
+      padding:9px 12px;margin:0 0 14px;font-size:.86rem;break-inside:avoid}
+  .sb .nm{font-variant:small-caps;font-weight:700;font-size:1rem;letter-spacing:.4px;display:block;margin-bottom:3px}
+  table{width:100%;border-collapse:collapse;font-size:.87rem;margin:8px 0 18px}
+  th,td{border:1px solid var(--rule);padding:6px 8px;text-align:left;vertical-align:top}
+  th{background:rgba(0,0,0,.07);font-variant:small-caps;letter-spacing:.5px}
+  tbody tr:nth-child(even){background:rgba(0,0,0,.025)}
+  .adr{border:1px solid var(--rule);border-left:5px solid var(--soft);padding:10px 14px;margin:0 0 12px;
+       font-size:.9rem;break-inside:avoid}
+  .warn{border:1px solid var(--acc);background:rgba(124,47,47,.07);padding:10px 14px;margin:0 0 16px;font-size:.92rem}
+  .note{border:1px solid var(--mar);background:rgba(45,84,112,.07);padding:10px 14px;margin:0 0 16px;font-size:.92rem}
+  ul{margin:0 0 10px;padding-left:20px}li{margin-bottom:3px}
+  @media print{body{background:#fff}.page{box-shadow:none;max-width:none;padding:0}
+    figure,.entry,.adr,table,.sb{break-inside:avoid}svg{border:1px solid #999}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <pattern id="sea" width="26" height="18" patternUnits="userSpaceOnUse">
+    <rect width="26" height="18" fill="#8fb3c9"/>
+    <path d="M0 12 q6.5 -6 13 0 t13 0" fill="none" stroke="#6d97b1" stroke-width="1.6"/>
+    <path d="M0 4 q6.5 -5 13 0 t13 0" fill="none" stroke="#a5c4d6" stroke-width="1.3"/></pattern>
+  <pattern id="rock" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+    <rect width="14" height="14" fill="#d6c6a2"/><path d="M0 0 V14" stroke="#b9a67e" stroke-width="1.4"/></pattern>
+  <pattern id="strp" width="9" height="9" patternUnits="userSpaceOnUse">
+    <rect width="9" height="4.5" fill="#f4f0e6"/><rect y="4.5" width="9" height="4.5" fill="#3a352e"/></pattern>
+  <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+    <path d="M0 0 L9 4.5 L0 9 z" fill="#241c14"/></marker>
+  <marker id="arb" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+    <path d="M0 0 L9 4.5 L0 9 z" fill="#2d5470"/></marker>
+  <g id="bg"><circle r="12.5" fill="#241c14"/></g>
+  <g id="bgb"><circle r="12.5" fill="#2d5470"/></g>
+</defs></svg>
+
+<div class="page">
+
+<h1>Appendice A — I corsari, il borgo e il livello 0</h1>
+<p class="sub">Complemento a <i>L'Abbazia della Rotta Sicura</i> — fazione corsara espansa, due nuove tavole del promontorio, chiave completa delle aree 1–17</p>
+
+<div class="meta">
+  <span><b>Da usare con:</b> il documento principale</span>
+  <span><b>Aggiunge:</b> 17 aree descritte, 10 luoghi del borgo, 4 PNG corsari</span>
+  <span><b>Sostituisce:</b> Tavola I e blocco &laquo;Il conto che non torna&raquo;</span>
+</div>
+
+<div class="warn">
+<b>Errata sul documento principale.</b> Due correzioni che cambiano il gioco, non solo il testo:
+<ul>
+<li><b>Naspo (cella 5) non è un prigioniero neutro.</b> Nel testo originale era &laquo;un mozzo catturato in mare&raquo;.
+Da qui in avanti è un <b>mozzo della <i>Zanna di Bruma</i></b>, venduto all'abate da Ostro il Muto
+all'insaputa del capitano. È l'ordigno che spacca la ciurma. Se hai già giocato l'Atto III con la versione
+vecchia, Naspo può semplicemente <i>riconoscere</i> i corsari quando arrivano in G26: funziona uguale.</li>
+<li><b>La fune delle campane (A7) è tagliata.</b> Il documento principale dava per scontato che si potesse
+suonare. Non si può, e il perché è un indizio (vedi A7).</li>
+</ul>
+</div>
+
+<!-- =================== TAVOLA I-a =================== -->
+<h2>Tavola I-a — Il promontorio, veduta dal mare</h2>
+<figure>
+<svg viewBox="0 0 860 530" role="img" aria-label="Veduta a volo d'uccello del promontorio e del borgo">
+  <rect width="860" height="86" fill="#dce6ec"/>
+  <rect x="0" y="86" width="860" height="74" fill="url(#sea)"/>
+  <path d="M0,160 L860,160" stroke="#7f9fb2" stroke-width="2"/>
+
+  <path d="M0,300 L60,244 L180,200 L340,182 L470,152 L620,134 L780,152 L860,182
+           L860,470 L700,500 L520,472 L430,432 L300,456 L140,472 L0,432 Z"
+        fill="#cdbb96" stroke="#7a6644" stroke-width="2.5"/>
+  <path d="M0,432 L140,472 L300,456 L430,432 L520,472 L700,500 L860,470 L860,530 L0,530 Z"
+        fill="url(#sea)"/>
+  <path d="M0,432 L140,472 L300,456 L430,432 L520,472 L700,500 L860,470"
+        fill="none" stroke="#ffffff" stroke-width="2.5" opacity=".6"/>
+
+  <path d="M480,302 L560,222 L700,172 L830,202 L860,300 L860,432 L700,462 L540,422 Z"
+        fill="#c4b18b" stroke="#7a6644" stroke-width="2"/>
+  <path d="M512,292 L578,230 L700,188 L818,216 L840,300 L840,414 L700,440 L560,406 Z"
+        fill="#cdbb96" stroke="#8b7a5a" stroke-width="1.5"/>
+  <path d="M544,280 L598,238 L700,204 L806,230 L820,300 L820,396 L700,418 L582,390 Z"
+        fill="#d6c5a2" stroke="#8b7a5a" stroke-width="1.5"/>
+  <path d="M578,270 L618,246 L700,220 L792,244 L800,300 L800,378 L700,398 L606,374 Z"
+        fill="#dfd0b0" stroke="#8b7a5a" stroke-width="1.5"/>
+
+  <g stroke="#7a6644" stroke-width="1.6" opacity=".8">
+    <path d="M840,414 L852,452"/><path d="M800,428 L806,458"/><path d="M760,440 L762,470"/>
+    <path d="M720,450 L716,478"/><path d="M676,452 L666,480"/><path d="M632,444 L618,472"/>
+  </g>
+
+  <g stroke="#241c14" stroke-width="2.5">
+    <rect x="640" y="274" width="104" height="44" fill="#f4f0e6"/>
+    <rect x="744" y="252" width="30" height="66" fill="#f4f0e6"/>
+  </g>
+  <g fill="#3a352e">
+    <rect x="640" y="282" width="104" height="6"/><rect x="640" y="296" width="104" height="6"/>
+    <rect x="640" y="310" width="104" height="6"/>
+    <rect x="744" y="260" width="30" height="6"/><rect x="744" y="276" width="30" height="6"/>
+    <rect x="744" y="292" width="30" height="6"/></g>
+  <path d="M744,252 L759,234 L774,252 Z" fill="#6b4a2e" stroke="#241c14" stroke-width="2.5"/>
+  <path d="M640,274 L692,254 L744,274" fill="#8b5a3c" stroke="#241c14" stroke-width="2.5"/>
+  <text x="700" y="228" font-size="12" font-family="sans-serif" font-weight="700" text-anchor="middle">ABBAZIA</text>
+
+  <path d="M470,404 L512,378 L554,352 L592,326 L624,306" fill="none" stroke="#e0d3b2" stroke-width="13"/>
+  <path d="M470,404 L512,378 L554,352 L592,326 L624,306" fill="none" stroke="#241c14" stroke-width="1.8" stroke-dasharray="5 5"/>
+
+  <g stroke="#241c14" stroke-width="2">
+    <rect x="196" y="352" width="44" height="26" fill="#e2cfae"/>
+    <rect x="262" y="368" width="48" height="28" fill="#e2cfae"/>
+    <rect x="148" y="392" width="52" height="30" fill="#e2cfae"/>
+    <rect x="232" y="410" width="56" height="32" fill="#e2cfae"/>
+    <rect x="322" y="392" width="50" height="30" fill="#e2cfae"/>
+    <rect x="90" y="358" width="40" height="24" fill="#e2cfae"/>
+    <rect x="330" y="334" width="42" height="24" fill="#e2cfae"/>
+    <rect x="392" y="356" width="44" height="26" fill="#e2cfae"/>
+    <rect x="64" y="416" width="54" height="30" fill="#e2cfae"/>
+  </g>
+  <g fill="#8b5a3c" stroke="#241c14" stroke-width="1.8">
+    <path d="M196,352 L218,336 L240,352 Z"/><path d="M262,368 L286,350 L310,368 Z"/>
+    <path d="M148,392 L174,372 L200,392 Z"/><path d="M232,410 L260,388 L288,410 Z"/>
+    <path d="M322,392 L347,372 L372,392 Z"/><path d="M90,358 L110,344 L130,358 Z"/>
+    <path d="M330,334 L351,320 L372,334 Z"/><path d="M392,356 L414,340 L436,356 Z"/>
+    <path d="M64,416 L91,394 L118,416 Z"/></g>
+
+  <g transform="translate(150,278)">
+    <rect x="-18" y="0" width="36" height="42" fill="#e2cfae" stroke="#241c14" stroke-width="2"/>
+    <path d="M-18,0 L0,-14 L18,0 Z" fill="#8b5a3c" stroke="#241c14" stroke-width="2"/>
+    <circle cx="0" cy="-30" r="26" fill="none" stroke="#241c14" stroke-width="2"/>
+    <g stroke="#241c14" stroke-width="4">
+      <path d="M0,-30 L24,-40"/><path d="M0,-30 L10,-6"/><path d="M0,-30 L-24,-20"/><path d="M0,-30 L-10,-54"/></g>
+  </g>
+  <path d="M600,242 Q400,214 210,252" fill="none" stroke="#3f6f8c" stroke-width="2.4"
+        stroke-dasharray="10 7" marker-end="url(#arb)"/>
+  <text x="404" y="206" font-size="10.5" font-family="sans-serif" font-style="italic"
+        fill="#2d5470" text-anchor="middle">maestrale: dal promontorio al mulino</text>
+
+  <g stroke="#241c14" stroke-width="2.5" fill="#c9a87a">
+    <path d="M150,452 L268,468 L262,480 L146,464 Z"/>
+    <path d="M296,462 L392,448 L394,460 L298,474 Z"/></g>
+  <g fill="#c9a87a" stroke="#241c14" stroke-width="2">
+    <ellipse cx="206" cy="494" rx="26" ry="9"/><ellipse cx="286" cy="500" rx="22" ry="8"/>
+    <ellipse cx="350" cy="486" rx="20" ry="7"/></g>
+
+  <path d="M742,470 q18,-16 38,0 q-4,18 -38,16 z" fill="#3a352e" stroke="#241c14" stroke-width="2.5"/>
+  <text x="760" y="504" font-size="10" font-family="sans-serif" font-weight="700" fill="#2d5470" text-anchor="middle">bocca della grotta</text>
+
+  <path d="M596,452 l-9,7 l3,10 l10,-2 l4,-11 z" fill="#7c2f2f" stroke="#241c14" stroke-width="2"/>
+
+  <g font-family="sans-serif" font-size="13" font-weight="700" fill="#f2e8d0" text-anchor="middle">
+    <use href="#bg" x="286" y="382"/><text x="286" y="387">1</text>
+    <use href="#bg" x="150" y="308"/><text x="150" y="313">2</text>
+    <use href="#bg" x="347" y="404"/><text x="347" y="409">3</text>
+    <use href="#bg" x="208" y="460"/><text x="208" y="465">4</text>
+    <use href="#bg" x="174" y="384"/><text x="174" y="389">5</text>
+    <use href="#bg" x="351" y="346"/><text x="351" y="351">6</text>
+    <use href="#bg" x="548" y="352"/><text x="548" y="357">7</text>
+    <use href="#bg" x="596" y="440"/><text x="596" y="445">8</text>
+    <use href="#bg" x="91" y="406"/><text x="91" y="411">9</text>
+    <use href="#bgb" x="760" y="452"/><text x="760" y="457">10</text>
+  </g>
+
+  <g font-family="sans-serif" font-size="10" fill="#5a4a36">
+    <text x="14" y="182">1 Osteria · 2 Mulino · 3 Corpo di guardia · 4 Moli · 5 Pozzo e piazza</text>
+    <text x="14" y="196">6 Cappella del borgo · 7 Scalinata (140 gradini) · 8 Cadavere · 9 Casa di Madama Vela</text>
+    <text x="14" y="210" fill="#2d5470">10 Bocca della grotta — raggiungibile solo dal mare</text>
+  </g>
+  <g transform="translate(812,58)">
+    <circle r="22" fill="#f7f1de" stroke="#241c14" stroke-width="2"/>
+    <path d="M0,-18 L5,0 L0,18 L-5,0 Z" fill="#241c14"/>
+    <text y="-26" font-size="10" text-anchor="middle" font-weight="700" font-family="sans-serif">N</text>
+  </g>
+  <text x="846" y="522" font-size="9.5" font-family="sans-serif" font-style="italic" text-anchor="end" fill="#2d5470">
+    veduta dal mare, non in scala</text>
+</svg>
+<figcaption>Tavola I-a — Il promontorio visto dal mare aperto. La bocca della grotta (10) è visibile solo da qui: chi resta a terra non sa che esiste una seconda via.</figcaption>
+</figure>
+
+<!-- =================== TAVOLA I-b =================== -->
+<h2>Tavola I-b — Profilo laterale: quote, distanze e tempi</h2>
+<figure>
+<svg viewBox="0 0 880 420" role="img" aria-label="Profilo altimetrico dal molo all'abbazia">
+  <rect width="880" height="420" fill="#f8f1dd"/>
+
+  <g stroke="#d8cbae" stroke-width="1">
+    <path d="M70,310 H840"/><path d="M70,243 H840"/><path d="M70,175 H840"/><path d="M70,108 H840"/></g>
+  <g font-family="sans-serif" font-size="9.5" fill="#8b7a5a" text-anchor="end">
+    <text x="64" y="314">0 ft</text><text x="64" y="247">100</text><text x="64" y="179">200</text><text x="64" y="111">300</text></g>
+
+  <rect x="30" y="310" width="42" height="46" fill="url(#sea)"/>
+  <rect x="818" y="310" width="52" height="46" fill="url(#sea)"/>
+
+  <path d="M70,310 L108,303 L180,280 L258,262 L336,246 L414,256 L508,236 L618,141 L664,114 L742,111 L790,108 L818,108 L818,310 L818,356 L70,356 Z"
+        fill="url(#rock)" stroke="#7a6644" stroke-width="2.5"/>
+
+  <path d="M690,150 H790 V182 H690 Z" fill="#ece3cd" stroke="#241c14" stroke-width="3"/>
+  <path d="M652,150 H690 V182 H652 Z" fill="#ddd2b6" stroke="#241c14" stroke-width="3"/>
+  <g stroke="#241c14" stroke-width="1.4"><path d="M662,150 V182"/><path d="M672,150 V182"/><path d="M682,150 V182"/></g>
+  <text x="740" y="170" font-size="9.5" font-family="sans-serif" text-anchor="middle">cripta (19)</text>
+  <text x="640" y="200" font-size="9.5" font-family="sans-serif" text-anchor="middle">celle (22)</text>
+
+  <path d="M790,182 L790,268 L818,268" fill="none" stroke="#241c14" stroke-width="3"/>
+  <path d="M770,268 C790,250 818,254 818,286 L818,306 L770,306 Z" fill="#b9d3e0" stroke="#241c14" stroke-width="3"/>
+  <text x="762" y="292" font-size="9.5" font-family="sans-serif" text-anchor="end">grotta (26–29)</text>
+
+  <g stroke="#7c2f2f" stroke-width="1.8" stroke-dasharray="7 5"><path d="M760,305 H870"/></g>
+  <g stroke="#2d5470" stroke-width="1.8" stroke-dasharray="7 5"><path d="M760,313 H870"/></g>
+  <text x="868" y="299" font-size="9" font-family="sans-serif" fill="#7c2f2f" text-anchor="end" font-weight="700">alta marea +8 ft</text>
+  <text x="868" y="327" font-size="9" font-family="sans-serif" fill="#2d5470" text-anchor="end" font-weight="700">bassa marea</text>
+
+  <g stroke="#241c14" stroke-width="2" fill="#c9a87a"><rect x="72" y="300" width="42" height="8"/></g>
+  <g stroke="#241c14" stroke-width="1.8" fill="#e2cfae">
+    <rect x="176" y="264" width="26" height="16"/><rect x="248" y="246" width="28" height="16"/>
+    <rect x="402" y="240" width="26" height="16"/></g>
+  <g fill="#8b5a3c" stroke="#241c14" stroke-width="1.6">
+    <path d="M176,264 L189,254 L202,264 Z"/><path d="M248,246 L262,236 L276,246 Z"/>
+    <path d="M402,240 L415,230 L428,240 Z"/></g>
+  <g transform="translate(336,232)">
+    <rect x="-13" y="0" width="26" height="18" fill="#e2cfae" stroke="#241c14" stroke-width="1.8"/>
+    <path d="M-13,0 L0,-9 L13,0 Z" fill="#8b5a3c" stroke="#241c14" stroke-width="1.6"/>
+    <circle cx="0" cy="-20" r="15" fill="none" stroke="#241c14" stroke-width="1.8"/>
+    <g stroke="#241c14" stroke-width="3">
+      <path d="M0,-20 L14,-26"/><path d="M0,-20 L6,-6"/><path d="M0,-20 L-14,-14"/><path d="M0,-20 L-6,-34"/></g>
+  </g>
+
+  <path d="M508,236 L618,141" fill="none" stroke="#e0d3b2" stroke-width="11"/>
+  <path d="M508,236 L618,141" fill="none" stroke="#241c14" stroke-width="1.6" stroke-dasharray="4 4"/>
+
+  <g stroke="#241c14" stroke-width="2.5">
+    <rect x="676" y="80" width="76" height="30" fill="#f4f0e6"/>
+    <rect x="752" y="62" width="24" height="48" fill="#f4f0e6"/></g>
+  <g fill="#3a352e"><rect x="676" y="86" width="76" height="5"/><rect x="676" y="98" width="76" height="5"/>
+    <rect x="752" y="70" width="24" height="5"/><rect x="752" y="84" width="24" height="5"/></g>
+  <path d="M752,62 L764,48 L776,62 Z" fill="#6b4a2e" stroke="#241c14" stroke-width="2"/>
+  <path d="M676,80 L714,64 L752,80" fill="#8b5a3c" stroke="#241c14" stroke-width="2"/>
+
+  <g stroke="#5a4a36" stroke-width="1.2" font-family="sans-serif" font-size="9.5" fill="#5a4a36">
+    <path d="M70,376 H840" stroke-width="1.6"/>
+    <path d="M70,372 V380"/><path d="M164,372 V380"/><path d="M258,372 V380"/><path d="M352,372 V380"/>
+    <path d="M446,372 V380"/><path d="M540,372 V380"/><path d="M634,372 V380"/><path d="M728,372 V380"/>
+    <path d="M822,372 V380"/>
+    <text x="70" y="393" text-anchor="middle">0</text><text x="258" y="393" text-anchor="middle">600</text>
+    <text x="446" y="393" text-anchor="middle">1.200</text><text x="634" y="393" text-anchor="middle">1.800</text>
+    <text x="822" y="393" text-anchor="middle">2.400 ft</text>
+  </g>
+
+  <g font-family="sans-serif" font-size="9.5" fill="#241c14">
+    <text x="93" y="292" text-anchor="middle">4 · molo</text>
+    <text x="262" y="230" text-anchor="middle">1 · osteria</text>
+    <text x="336" y="196" text-anchor="middle">2 · mulino</text>
+    <text x="415" y="224" text-anchor="middle">5 · piazza</text>
+    <text x="500" y="252" text-anchor="end">7 · piede scala</text>
+    <text x="714" y="42" text-anchor="middle">abbazia · +290 ft</text>
+  </g>
+
+  <g font-family="sans-serif" font-size="9.5" fill="#2d5470">
+    <path d="M76,340 H500" stroke="#2d5470" stroke-width="1.4" marker-end="url(#arb)"/>
+    <text x="288" y="336" text-anchor="middle">molo → piede della scalinata: 1.400 ft · 7 min a passo normale</text>
+    <path d="M512,128 H612" stroke="#2d5470" stroke-width="1.4" marker-end="url(#arb)"/>
+    <text x="562" y="122" text-anchor="middle">140 gradini · +230 ft</text>
+    <text x="562" y="110" text-anchor="middle">4 min · Cos CD 10 in armatura pesante</text>
+    <text x="838" y="234" text-anchor="end">sagrato → grotta per la scala interna: 6 min</text>
+    <text x="838" y="248" text-anchor="end">bocca della grotta → banchina in barca: 3 min</text>
+  </g>
+</svg>
+<figcaption>Tavola I-b — Profilo ovest-est. I tempi di percorrenza servono all'orologio della notte: ogni spostamento fra borgo e abbazia costa almeno un passo dell'orologio.</figcaption>
+</figure>
+
+<div class="note">
+<b>Perché due tavole e non una.</b> La I-a serve ai giocatori: si mostra, si guarda, comunica il colpo d'occhio
+e rivela che esiste una bocca di grotta sul mare. La I-b serve a te: quote, distanze e tempi sono gli unici
+numeri che ti permettono di dire <i>no, non ci arrivate in tempo</i> senza inventare. <b>Tieni la I-b coperta.</b>
+</div>
+
+<!-- =================== CHIAVE DEL BORGO =================== -->
+<h2>Chiave dei luoghi del borgo</h2>
+<div class="cols">
+
+<div class="entry"><h4><span class="n">1</span> Osteria La Gomena Rotta</h4>
+<p class="ra">Sala bassa, travi incatramate, e sopra il bancone una gomena spezzata inchiodata al muro
+come un trofeo. Nenno Braca non chiede mai chi siete. Chiede quanto restate.</p>
+<p><b>Nenno Braca</b>, oste, umano esperto 4. Non è amico di nessuno e per questo sa tutto.
+Vende dicerie a 5 mo l'una e non ha mai mentito a un cliente pagante — è il suo unico principio.</p>
+<div class="mech"><b>Dicerie:</b> Nenno regala le voci 1, 2 e 8 senza tiri. Per le altre serve
+<b>Raccogliere Informazioni CD 12</b> (2 ore, 5 mo) o pagarlo direttamente.
+<b>Osservare CD 14:</b> in un angolo ci sono tre boccali capovolti su un tavolo che nessuno occupa.
+Nenno li tiene lì per i corsari. Chiedendoglielo, mente male: <b>Percepire Intenzioni CD 10</b>.
+<b>Il letto:</b> 5 mo a notte. Chi dorme qui con vento di maestrale sente il coro (Ascoltare CD 16,
++4 se una finestra è aperta a ponente).</div></div>
+
+<div class="entry"><h4><span class="n">2</span> Mulino Cassola</h4>
+<p><b>Berto Cassola</b>, mugnaio, e sua moglie <b>Nadia</b>. Non dormono da tre settimane. Berto è oltre la
+paura: è arrivato alla rabbia, e chiederà ai PG di portarlo con loro. <b>Lasciaglielo chiedere e lasciaglielo
+negare</b> — è il modo più rapido per far capire al tavolo che il borgo non può risolversi da solo.</p>
+<div class="mech">Vedi il documento principale per la meccanica del coro e delle sette note.
+<b>Aggiunta:</b> Berto ha una <b>mappa dei venti</b> disegnata a carbone su una tavola, con nove anni di
+annotazioni. <b>Sopravvivenza CD 12</b> incrociando le date: i lamenti si sentono <b>solo nelle notti di
+luna nuova</b>. È il modo più pulito per far capire al tavolo che c'è una cadenza mensile, e stanotte è
+luna nuova.</div></div>
+
+<div class="entry"><h4><span class="n">3</span> Corpo di Guardia</h4>
+<p><b>Dama Orsola Rive</b>, capoguardia, umana guerriero 5, e quattro guardie (guerriero 1). Il presidio
+copre un borgo che non ha mai avuto problemi: le guardie sono pescatori con una lancia.</p>
+<div class="mech"><b>Cosa può darti Orsola:</b> 300 mo d'ingaggio, l'uso del corpo di guardia come base,
+e — <b>solo dopo aver visto le brutte copie delle lettere (A16)</b> — due guardie in appoggio.
+Non salirà mai all'abbazia senza una prova che possa mostrare a un magistrato: è una funzionaria, non un'eroina.
+<b>Se i PG le portano Cinzia viva</b>, li segue ovunque e chiede di essere presente all'arresto.
+<b>Se le portano il registro con undici nomi sotto i dodici anni</b>, smette di essere una funzionaria.</div></div>
+
+<div class="entry"><h4><span class="n">4</span> Moli e barche</h4>
+<p><b>Vecchio Scàbbio</b>, barcaiolo, umano esperto 3, sordo da un orecchio e furbo da entrambi.</p>
+<div class="mech"><b>La via di mare.</b> Scàbbio noleggia una lancia a 20 mo, 50 se capisce che si va verso
+il capo, e <b>non ci va di notte a nessun prezzo</b> — a meno di Diplomazia CD 22 o 200 mo.
+Da lì la <b>bocca della grotta (10)</b> è a tre minuti di voga.
+<b>Questa è la seconda via d'ingresso al livello −2</b> e taglia fuori l'intera abbazia:
+il gruppo può arrivare in G26 senza mai entrare in chiesa. Costo: nessun prigioniero liberato,
+niente registro, e lo scenario finale peggiore. <b>Non impedirla. Falla costare.</b>
+<b>Sapienza (locali) o Professione (marinaio) CD 13:</b> le barche del borgo sono tutte tirate a secco
+nelle notti di luna nuova. Nessuno lo ha deciso: si fa e basta.</div></div>
+
+<div class="entry"><h4><span class="n">5</span> Pozzo e piazza</h4>
+<p>Il cuore del borgo. Di giorno mercato, di sera vuota. Sul muro del pozzo, incise da mani diverse
+in anni diversi, ci sono ventidue croci di marinaio.</p>
+<div class="mech"><b>Osservare CD 12:</b> le ultime tre croci sono recenti e più piccole delle altre.
+<b>Chiedendo in giro (gratis):</b> le fanno le madri delle Ancelle. Nessuna sa dire perché lo fa.
+È il gesto che il borgo compie al posto di un funerale che nessuno gli ha concesso.</div></div>
+
+<div class="entry"><h4><span class="n">6</span> Cappella del borgo</h4>
+<p>Una stanza sola, con una barca rovesciata al posto dell'altare. <b>Sempre aperta.</b> Ci scende
+<b>Fra' Timoteo</b> tre volte a settimana a dire messa, perché l'abbazia — dice — è troppo faticosa
+per i vecchi.</p>
+<div class="mech"><b>Il contrasto è l'indizio.</b> La cappella del borgo non chiude mai; la chiesa
+dell'abbazia non apre mai. Se il tavolo non lo nota, fallo dire a una vecchia sui gradini.
+Timoteo qui è disponibile, cordiale e completamente all'oscuro. Da lui si ottiene gratis:
+il nome dell'abate, l'orario delle funzioni (sempre dopo il tramonto), e l'ammissione che
+&laquo;le Ancelle nuove restano in clausura il primo anno&raquo;.
+<b>Percepire Intenzioni CD 5:</b> ci crede davvero.</div></div>
+
+<div class="entry"><h4><span class="n">7</span> La Scalinata</h4>
+<p>Centoquaranta gradini scavati nella roccia, senza parapetto sul lato mare, con tre pianerottoli.</p>
+<div class="mech">Salita: 4 minuti a passo normale; <b>Costituzione CD 10</b> per chi porta armatura pesante,
+altrimenti <i>affaticato</i> in cima. Scendere portando un prigioniero indebolito: velocità dimezzata,
+<b>Equilibrio CD 12</b> ai pianerottoli se piove.
+<b>Come zona d'inseguimento</b> (prove contrapposte di Corsa/Equilibrio), mai come arena d'iniziativa.
+<b>Osservare CD 15</b> sul secondo pianerottolo: la pietra è scheggiata e c'è un lembo di stoffa
+incastrato. È il punto da cui è caduta Madre Ilaria — e le schegge sono orientate verso l'alto:
+è stata spinta.</div></div>
+
+<div class="entry"><h4><span class="n">8</span> Il punto del ritrovamento</h4>
+<p>Base della scogliera, raggiungibile a piedi con la bassa marea (<b>Scalare CD 10</b>) o in barca.</p>
+<div class="mech"><b>Guarire CD 15:</b> fratture da caduta, non da annegamento — è caduta viva.
+<b>Guarire CD 20:</b> segni di dita sulle caviglie, troppo lunghe per una mano umana. Sono di Marèa.
+<b>Cercare CD 18</b> fra gli scogli: la chiave della sacrestia (A6), che Madre Ilaria aveva sottratto.
+Chi la trova entra in chiesa senza scassinare.</div></div>
+
+<div class="entry"><h4><span class="n">9</span> Casa di Madama Vela</h4>
+<p>Nuova, con le imposte dipinte, in un borgo dove nessun altro ha imposte dipinte.
+<b>Madama Vela</b>, reclutatrice, umana adepto 4.</p>
+<div class="mech"><b>Intimidire CD 18</b> o <b>Raggirare CD 20</b>: crolla e confessa di essere pagata
+a testa. Non sa cosa succede alle Ancelle e non ha mai voluto saperlo.
+<b>Conseguenza obbligatoria:</b> se viene interrogata e lasciata libera, <b>avvisa l'abbazia entro un'ora</b>
+e l'orologio della notte avanza di due passi. Se viene consegnata a Orsola, non avvisa nessuno ma
+il borgo saprà entro sera che i PG stanno indagando — e l'abate ha orecchie al borgo.
+<b>Cercare CD 15</b> in casa: 280 mo, e una borsa con nove ricevute firmate dall'abate,
+una per ogni Ancella. <b>Sono la prova documentale alternativa al registro.</b></div></div>
+
+<div class="entry"><h4><span class="b n">10</span> La bocca della grotta</h4>
+<p>Un arco nero alla base della scogliera, sul versante di levante. Visibile solo dal mare.</p>
+<div class="mech">Con l'alta marea l'apertura si riduce a due piedi sopra il pelo dell'acqua:
+passa una lancia a remi con gli uomini sdraiati, non una barca a vela. Con la bassa è larga dodici piedi.
+<b>Professione (marinaio) CD 15</b> per entrare senza urtare; fallendo, 1d6 alla barca e rumore
+(l'orologio avanza di un passo).
+<b>Il fanale di segnalazione</b> è issato su un palo appena dentro l'imboccatura. Chi conosce il codice
+— tre lampi lunghi, due corti — può <b>convocare la lancia dei corsari quando vuole</b>. È una delle tre
+leve sulla fazione corsara.</div></div>
+
+</div>
+
+<h3>Dicerie aggiuntive sui corsari (1d6, alla Gomena Rotta)</h3>
+<table>
+<thead><tr><th>d6</th><th>Diceria</th><th>Vero?</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Il capitano aveva una patente regolare, e gliel'hanno tolta per una nave che non doveva affondare</td><td>Vero — è il perno del personaggio</td></tr>
+<tr><td>2</td><td>La sua ciurma non scende mai a terra tutta insieme: sei restano sempre a bordo</td><td>Vero</td></tr>
+<tr><td>3</td><td>Ne ha buttato uno in mare due anni fa, davanti a tutti, e da allora nessuno gli parla dietro</td><td>Vero — è Tiberio</td></tr>
+<tr><td>4</td><td>Paga in argento vecchio, di conio che non si vede da cinquant'anni</td><td>Falso — paga in oro nuovo, ed è questo che dovrebbe insospettire</td></tr>
+<tr><td>5</td><td>Ha una donna a bordo che sa leggere e tiene i conti meglio di un banchiere</td><td>Vero — è Sedda</td></tr>
+<tr><td>6</td><td>I suoi uomini non entrano nella grotta oltre la banchina. Nemmeno lui</td><td>Vero — e vale come regola meccanica</td></tr>
+</tbody>
+</table>
+
+<!-- =================== FAZIONE CORSARA =================== -->
+<h2>La fazione corsara — <i>Zanna di Bruma</i></h2>
+
+<p>Nel documento principale i corsari avevano una funzione (il cuneo dello scenario C) e nessuna vita.
+Qui hanno tre cose che li rendono giocabili: <b>un debito</b>, <b>una frattura interna</b> e
+<b>una superstizione con effetto meccanico</b>.</p>
+
+<h3>Cosa vuole davvero Malaluna</h3>
+<p>Non l'oro. La <b>patente corsara</b>. Ghebro Malaluna era un corsaro regolare al servizio di una città
+costiera; nove anni fa affondò una nave che secondo il suo mandato non doveva affondare, e la patente
+gli fu revocata. Da allora è un pirata, cioè un uomo che può essere impiccato invece che processato.
+Ha quarantasei anni, una nave che ha bisogno di carenaggio, ventisei uomini da sfamare e nessun porto
+in cui entrare alla luce del sole.</p>
+<p>Il commercio con l'abbazia è l'unica linea che rende abbastanza da tenere la <i>Zanna</i> in mare.
+E Malaluna si è raccontato una storia per poterlo fare: <b>l'abate gli mostra ogni mese dei contratti
+firmati</b>. Consacrati che si vendono per debito, indenturati, gente che ha scelto. Malaluna sa leggere
+poco e firma tutto. È un uomo che ha bisogno che le carte siano vere, e per questo <b>ha smesso di
+scendere sottocoperta a guardare il carico</b>.</p>
+
+<div class="warn"><b>La leva psicologica, in una riga:</b> Malaluna non va convinto che l'abate sia un mostro.
+Va costretto a guardare. Ogni approccio che gli mette davanti una <i>persona</i> invece di un argomento
+funziona meglio di venti punti di Diplomazia.</div>
+
+<h3>Il cast della ciurma</h3>
+
+<div class="sb"><span class="nm">Ghebro Malaluna — capitano</span>
+Umano guerriero 6/ladro 2 · <b>GS 8</b> · NM · 46 anni<br>
+<b>PF</b> 58 · <b>CA</b> 20 · <b>Att</b> sciabola +1 +13/+8 (1d6+6, 18-20) e pugnale +11 (1d4+2)<br>
+<b>TS</b> Temp +8, Rifl +8, <b>Vol +3</b> · attacco furtivo +1d6, schivare prodigioso<br>
+<b>Abilità</b> Professione (marinaio) +12, Intimidire +11, Percepire Intenzioni +6, Raggirare +5<br>
+<b>Legame:</b> la <i>Zanna di Bruma</i> e i ventisei uomini che ci stanno sopra.<br>
+<b>Difetto:</b> ha bisogno che i documenti siano in regola per continuare a dormire.<br>
+<b>Non sa:</b> che l'abate è un non-morto; che Ostro ha venduto Naspo; che ciò che paga finisce
+in parte sull'altare e non sulla sua nave.<br>
+<b>Tattica:</b> combatte solo se accerchiato o tradito. Preferisce ritirarsi sulla lancia: ha già perso
+una nave, non ne perde un'altra per una rissa in una grotta. <b>Volontà +3 è il suo punto debole</b>
+in ogni senso.</div>
+
+<div class="sb"><span class="nm">Sedda Corvara — quartiermastro e navigatrice</span>
+Umana ladro 6 · <b>GS 6</b> · NN · 34 anni<br>
+<b>PF</b> 31 · <b>CA</b> 18 · <b>Att</b> stocco +7 (1d6+1, 18-20), balestra a mano +8 (1d4)<br>
+<b>Abilità</b> Cercare +11, Percepire Intenzioni +10, Diplomazia +9, Professione (marinaio) +11,
+Decifrare Scritture +8 · attacco furtivo +3d6<br>
+<b>La frattura.</b> Sedda tiene i conti della nave e, da otto mesi, <b>una seconda contabilità privata</b>:
+date, teste, cifre. Non per ricatto — per poter dimostrare un giorno di non aver voluto.
+Vuole scendere a terra e non sa come si fa a smettere di essere una pirata.<br>
+<b>Come ingaggiarla:</b> è l'unica della ciurma che parla per prima. Se i PG sbarcano in G26 senza
+attaccare, è lei che avanza. <b>Diplomazia CD 15</b>, o CD 10 se qualcuno le dice che il carico
+comprende bambini: lei lo sospetta già e sta aspettando che glielo dica qualcun altro.<br>
+<b>Cosa dà:</b> il suo registro (prova documentale n. 3, indipendente da abate e Vela), l'ora esatta
+della consegna, e — se convinta — <b>testimonia davanti alla ciurma</b>, che è ciò che conta davvero.</div>
+
+<div class="sb"><span class="nm">Ostro il Muto — nostromo</span>
+Umano barbaro 5 · <b>GS 5</b> · CM · muto per una ferita alla gola, non per nascita<br>
+<b>PF</b> 52 · <b>CA</b> 17 · <b>Att</b> ascia bipenne +11 (1d12+7, ×3) · ira 2/giorno<br>
+<b>TS</b> Temp +8, Rifl +2, Vol +2 · movimento veloce, schivare prodigioso<br>
+<b>Il problema.</b> Ostro pensa che Malaluna sia diventato debole e che la patente sia una fantasia da
+vecchio. Vuole la nave. Otto mesi fa ha <b>venduto Naspo all'abate di sua iniziativa</b>, incassando 200 mo
+e dicendo alla ciurma che il ragazzo era caduto in mare.<br>
+<b>Cosa succede se Naspo compare vivo davanti alla ciurma:</b> per il codice della <i>Zanna</i>, vendere
+uno dei propri è la sola cosa che si paga con la corda. Ostro attacca — non i PG: <b>Malaluna</b>, perché
+è l'unico modo che ha di arrivare vivo a domattina. La ciurma si divide in due metà uguali.
+<b>Questo è il singolo evento più potente che i PG possano innescare in tutta l'avventura.</b></div>
+
+<div class="sb"><span class="nm">La ciurma</span>
+<b>A terra la notte della consegna:</b> Malaluna, Sedda, Ostro, 6 corsari (guerriero 3, GS 2) e
+2 arcieri (ladro 3, GS 3).<br>
+<b>A bordo:</b> 16 marinai (esperto 1–2), non combattenti significativi. Non intervengono mai in grotta.<br>
+<b>Codice della Zanna</b> (Sapienza (locali) CD 12, o gratis da Nenno): tre regole sole —
+si divide in parti uguali, non si ruba a un compagno, <b>non si vende uno dei propri</b>.
+Il codice è l'unica cosa che questi uomini rispettino, e i PG possono usarlo come un'arma.</div>
+
+<h3>La superstizione, e la sua regola</h3>
+<div class="note">
+<b>Nessun corsaro oltrepassa la banchina (26).</b> Non si avvicinano all'altare (27), non guardano l'acqua
+più a lungo del necessario, e se una delle Sorelle si mostra, la ciurma arretra verso la lancia senza
+ordine. Meccanicamente: <b>ogni corsaro che si trovi entro 6 metri da una megera è <i>scosso</i></b>
+(−2 a tiri per colpire, TS e prove) finché non si allontana. Malaluna e Ostro sono esenti;
+Sedda no, e lo sa.<br>
+<b>Uso tattico per i PG:</b> attirare le megere sulla banchina neutralizza metà della forza corsara
+senza colpire nessuno. Un ladro con Sapienza (locali) può dedurlo osservando come si dispongono gli uomini.
+</div>
+
+<h3>La nave</h3>
+<table>
+<thead><tr><th>Voce</th><th>Dato</th><th>Uso in gioco</th></tr></thead>
+<tbody>
+<tr><td>Tipo</td><td>Brigantino a due alberi, 90 ft</td><td>Troppo grande per la grotta: entra solo la lancia</td></tr>
+<tr><td>Equipaggio</td><td>26 (10 a terra la notte della consegna)</td><td>Il grosso della forza non partecipa mai</td></tr>
+<tr><td>Ancoraggio</td><td>Cala a mezzo miglio a nord del capo, senza fanali</td><td>Osservare CD 18 dalla loggia (A8) di notte: una sagoma senza luci</td></tr>
+<tr><td>Armamento</td><td>2 baliste leggere</td><td>Irrilevanti in grotta. Rilevanti se i PG tentano un abbordaggio: non farlo, non è questa avventura</td></tr>
+<tr><td>Stato</td><td>Scafo che ha bisogno di carenaggio da due anni</td><td>Ragione economica del commercio con l'abbazia; argomento di trattativa</td></tr>
+<tr><td>Lancia</td><td>A remi, 8 posti</td><td>Unico mezzo che entra in G29</td></tr>
+</tbody>
+</table>
+
+<h3>Le tre leve — e cosa serve per tirarle</h3>
+<table>
+<thead><tr><th>Leva</th><th>Cosa serve</th><th>Effetto</th></tr></thead>
+<tbody>
+<tr><td><b>Naspo vivo</b></td><td>Liberarlo dalla cella 5 e portarlo dove la ciurma lo veda</td><td>Ostro si ammutina contro Malaluna. La forza corsara si divide 5/5 e smette di essere un problema dei PG</td></tr>
+<tr><td><b>Sedda persuasa</b></td><td>Diplomazia CD 15 (CD 10 se le si parla dei bambini), oppure mostrarle il registro dell'abate</td><td>Testimonia davanti alla ciurma. Malaluna perde la copertura documentale su cui regge la sua storia. Scenario C</td></tr>
+<tr><td><b>Tiberio manifestato</b></td><td>Convincere il fantasma (C24) a salire in G26</td><td>La ciurma vede l'uomo che Malaluna ha ucciso. −4 al morale, i corsari non attaccano per 1d3 round. <b>Ma Tiberio pretende che Malaluna muoia:</b> se i PG lo tradiscono, lo scenario C si chiude</td></tr>
+</tbody>
+</table>
+
+<h3>Reazione di Malaluna (tira 1d20 + modificatori)</h3>
+<table>
+<thead><tr><th>Modificatore</th><th>Valore</th></tr></thead>
+<tbody>
+<tr><td>I PG hanno attaccato per primi</td><td>−10</td></tr>
+<tr><td>I PG mostrano il registro dell'abate o le ricevute di Vela</td><td>+4</td></tr>
+<tr><td>Sedda ha già parlato</td><td>+6</td></tr>
+<tr><td>Naspo è presente e vivo</td><td>+8</td></tr>
+<tr><td>I PG offrono di testimoniare per il ripristino della patente</td><td>+5</td></tr>
+<tr><td>I PG offrono solo oro</td><td>−2 (lo insulta)</td></tr>
+<tr><td>Un prigioniero è già a bordo della lancia</td><td>−3</td></tr>
+</tbody>
+</table>
+<table>
+<thead><tr><th>Risultato</th><th>Reazione</th></tr></thead>
+<tbody>
+<tr><td>≤ 5</td><td><b>Ostile.</b> Attacca per coprire la ritirata verso la lancia. Scenario A o B</td></tr>
+<tr><td>6–12</td><td><b>Esita.</b> Ordina di non attaccare e chiede una prova. Concede un round di parole. Se i PG non hanno niente, torna ostile</td></tr>
+<tr><td>13–18</td><td><b>Guarda.</b> Scende sottocoperta della lancia e apre il carico. Da questo momento non lavora più per l'abate. Neutrale</td></tr>
+<tr><td>≥ 19</td><td><b>Si volta.</b> Scenario C: i corsari combattono a fianco dei PG contro l'abate e le megere</td></tr>
+</tbody>
+</table>
+
+<h3>Cosa fanno i corsari negli altri finali</h3>
+<ul>
+<li><b>Se l'abate è già morto quando arrivano:</b> Malaluna capisce che la fonte è finita. Non combatte,
+tratta. Vuole i prigionieri come merce o un compenso per il viaggio a vuoto. È qui che nasce il finale
+&laquo;il patto&raquo;.</li>
+<li><b>Se i PG hanno ucciso Ostro prima:</b> la ciurma è più compatta e più leale a Malaluna. Reazione −3
+a tutti i tiri, ma nessun ammutinamento.</li>
+<li><b>Se i PG non li incontrano affatto</b> (via mare, tempi sbagliati, abate distrutto di giorno):
+la <i>Zanna di Bruma</i> arriva, non trova nessuno, riparte. Nella coda dell'avventura, tre settimane dopo,
+c'è una nave che risale la costa cercando chi le ha chiuso la linea di rifornimento.</li>
+</ul>
+
+<!-- =================== CHIAVE LIVELLO 0 =================== -->
+<h2>Chiave delle aree — Tavola II, livello 0</h2>
+<p><b>La chiesa (1–9) è chiusa a chiave dall'alba al tramonto. La canonica (10–17) è aperta.</b>
+Questa è la separazione che struttura l'Atto II: i PG possono girare mezza abbazia legalmente e
+si sbatteranno contro una porta chiusa a metà indagine.</p>
+
+<div class="cols">
+
+<div class="entry"><h4><span class="n">1</span> Sagrato</h4>
+<p class="ra">La scalinata finisce su una piattaforma di pietra battuta. Da tre lati non c'è niente:
+solo il vuoto e novanta piedi d'aria salata. La chiesa vi si posa sopra a fasce bianche e nere,
+e le porte sono chiuse.</p>
+<p>Area aperta, 40×15 ft, parapetto alto 3 ft sul lato mare.</p>
+<div class="mech"><b>Vento:</b> −2 Ascoltare, −2 attacchi a distanza oltre 30 ft.
+<b>Parapetto:</b> copertura +4 CA. <b>Caduta:</b> 90 ft, 4d6 non letali in acqua più Nuotare CD 15.
+<b>Osservare CD 14:</b> il selciato davanti alle porte è consumato in due solchi paralleli larghi tre piedi.
+Qui si trascina qualcosa di pesante, regolarmente, e non verso l'interno.
+<b>È l'arena dello scontro finale nello scenario A.</b> Se i PG ci arrivano di notte, la fuga è solo
+verso il basso.</div></div>
+
+<div class="entry"><h4><span class="n">2</span> Portico</h4>
+<p>Vano voltato di 30×10 ft davanti al portale.</p>
+<div class="mech"><b>Portale:</b> due battenti borchiati. Chiuso di giorno. Scassinare CD 22,
+durezza 5, 20 pf, Rompere CD 23. La chiave è in sacrestia (6) o fra gli scogli (borgo, B8).
+<b>Acquasantiera:</b> asciutta e incrostata di sale. <b>Sapienza (religione) CD 12:</b> non è evaporata,
+è stata svuotata e riempita d'acqua di mare. Chi ci intinge le dita si sporca soltanto.
+<b>Osservare CD 18:</b> l'architrave ha graffi profondi e paralleli, tutti diretti dall'interno verso
+l'esterno.</div></div>
+
+<div class="entry"><h4><span class="n">3</span> Navata</h4>
+<p class="ra">Sei colonne a fasce alterne di marmo bianco e ardesia nera. Le panche sono lucide d'uso,
+la polvere sul pavimento è zero, e non c'è una sola candela accesa.</p>
+<p>40×35 ft, volta a 30 ft, sei colonne.</p>
+<div class="mech"><b>Colonne:</b> copertura +4 CA, interrompono la linea di vista.
+<b>Vetrata sud:</b> durezza 1, 3 pf; frantumarla apre un varco sulla loggia (8) e fa 1d4 a chi
+la attraversa in movimento.
+<b>Osservare CD 13:</b> c'è una sola sedia con schienale alto, addossata alla colonna più lontana
+dall'ingresso, orientata verso il portale e non verso l'altare. Chi ci siede guarda chi entra.
+<b>Incontro notturno (EL 5):</b> 6 scheletri fra le panche, immobili finché qualcuno oltrepassa
+la terza coppia di colonne. Di giorno la navata è vuota e sicura.</div></div>
+
+<div class="entry"><h4><span class="n">4</span> Presbiterio</h4>
+<p>Il nucleo antico. L'altare poggia sulla roccia viva. Alle spalle, una statua del Nocchiero
+alta sette piedi, con la mano tesa verso il mare.</p>
+<div class="mech"><b>Area profanata</b> (effetto permanente di <i>profanare</i>): non-morti +1 a
+attacchi, danni e TS, +2 pf per DV; scacciare a −3 al livello effettivo. <b>Comunicalo al chierico
+appena entra</b> — un chierico che scopre di essere depotenziato solo tirando è un chierico frustrato.
+<b>La statua, Osservare CD 12:</b> il volto e la mano tesa sono corrosi dal sale come se stessero
+in mezzo alle onde, mentre il resto è intatto. Qualcuno ci versa sopra acqua di mare, spesso.
+<b>Cercare CD 20 sotto la mensa:</b> una spirale concentrica incisa nella roccia viva, molto più
+antica dell'altare che la copre.
+<b>Riconsacrare</b> l'area richiede <i>consacrare</i> o un rito di 10 minuti con acqua santa e
+Sapienza (religione) CD 20. <b>Vale la pena farlo prima di scendere:</b> annulla i bonus dei non-morti
+in tutta la chiesa.</div></div>
+
+<div class="entry"><h4><span class="n">5</span> Abside</h4>
+<p>Una trifora gotica aperta sul vuoto, novanta piedi sopra l'acqua.</p>
+<div class="mech"><b>Osservare CD 22</b> (CD 18 con luce radente): sotto l'intonaco affiora un
+bassorilievo che non è del Nocchiero — una figura femminile che emerge dalle onde, il volto
+scalpellato via.
+<b>Sapienza (storia) o (religione) CD 20:</b> l'abbazia è stata costruita <i>sopra</i> qualcosa,
+non <i>per</i> qualcosa.
+<b>Osservare CD 18 di notte verso nord:</b> a mezzo miglio, una sagoma senza fanali. È la
+<i>Zanna di Bruma</i> alla fonda.</div></div>
+
+<div class="entry"><h4><span class="n">6</span> Sacrestia</h4>
+<p>20×15 ft. Armadi, un leggio, il registro dei defunti.</p>
+<div class="mech"><b>Cercare CD 16:</b> nell'armadio di fondo ci sono <b>quattro sai da ancella
+ancora umidi di acqua salata</b>, piegati con cura. Non piove da nove giorni.
+<b>Cercare CD 20:</b> la chiave della grata del vestibolo (C18) e quella del portale.
+<b>Registro dei defunti:</b> 10 minuti di lettura. Conferma l'esistenza della cripta. L'ultima pagina
+elenca trentaquattro nomi con una sola data — il naufragio della <i>Santa Croce</i>, sessant'anni fa.
+<b>Trappola se il culto è allertato:</b> ago avvelenato sull'armadio, Cercare CD 21, Disattivare CD 20,
+1d6 For / 1d6 For, Tempra CD 12.</div></div>
+
+<div class="entry"><h4><span class="n">7</span> Campanile, base</h4>
+<p>15×15 ft, muri spessi 3 ft, scala a chiocciola.</p>
+<div class="mech"><b>La fune delle campane è tagliata a dieci piedi d'altezza</b>, e il taglio è netto
+e recente. <b>Osservare CD 10</b> per notarlo, gratis se qualcuno prova a suonare.
+<b>Perché conta:</b> le campane erano l'allarme del borgo. Qualcuno ha deciso che l'abbazia non
+potesse più chiamare aiuto — o che nessuno potesse chiamarlo <i>da dentro</i>.
+Madre Ilaria ha tentato di suonarle la notte in cui è morta.
+<b>Ripristinarla:</b> Salire CD 15 e un'azione di round completo. Suonate, le campane si sentono
+al borgo: Orsola sale con quattro guardie in 12 minuti (vedi Tavola I-b). <b>E l'orologio della notte
+avanza di due passi.</b> È una scelta, non un pulsante gratuito.
+<b>Livelli superiori:</b> alloggio del custode, archivio, cella campanaria — vedi la Tavola III
+del documento principale.</div></div>
+
+<div class="entry"><h4><span class="n">8</span> Loggia sul Mare</h4>
+<p>15×30 ft, coperta, aperta sul precipizio fra quattro pilastri.</p>
+<div class="mech"><b>Vento forte:</b> −4 agli attacchi a distanza; effetti di fuoco a distanza deviati
+al 50%. <b>Pilastri:</b> copertura +4.
+<b>Percorso di fiancheggiamento:</b> collega il campanile alla navata senza passare dal portico.
+Permette di aggirare l'incontro in A3. Lascia che funzioni.
+<b>Osservare CD 15 verso il mare con l'alta marea:</b> luci fredde si muovono <i>sotto</i> la superficie,
+in formazione. Sono skum al servizio delle Sorelle.
+<b>Sotto il terzo pilastro, Cercare CD 14:</b> una scarpa da bambino, di quelle che si portano da fermi,
+mai da camminare. È infilata nella fessura fra il pilastro e il parapetto, come se qualcuno l'avesse
+nascosta lì. <i>Descrivi l'oggetto e fermati. Non aggiungere niente.</i></div></div>
+
+<div class="entry"><h4><span class="n">9</span> Cappella laterale</h4>
+<p>10×20 ft, una lastra tombale liscia al centro del pavimento, senza nome.</p>
+<div class="mech"><b>Tre indizi ridondanti per la botola:</b> Osservare CD 12 (corrente d'aria fredda,
+le candele piegano tutte nello stesso verso); Cercare CD 15 (usura circolare attorno alla lastra);
+il registro dei defunti in B6. Senza nessun indizio: Cercare CD 25.
+<b>Aprire:</b> Forza CD 18, o CD 13 in due. Rumoroso: Ascoltare CD 5 in tutta la chiesa,
+e l'orologio avanza di un passo se qualcuno è sveglio.</div></div>
+
+<div class="entry"><h4><span class="n">10</span> Chiostro</h4>
+<p class="ra">Un cortile quadrato con un pozzo al centro e un portico su tutti e quattro i lati.
+È l'unico posto dell'abbazia in cui si veda il cielo e in cui qualcuno sorrida.</p>
+<p>30×30 ft a cielo aperto, colonnato perimetrale. Qui i PG incontrano Fra' Timoteo e le
+<b>nove Ancelle attuali</b> (adepto 1 e popolani 1, età 15–24).</p>
+<div class="mech"><b>Le nove Ancelle sono vive, ignare e in pericolo.</b> Non sanno nulla,
+non hanno mai visto la chiesa aperta e credono che le altre siano partite per un altro santuario.
+<b>Diplomazia CD 14</b> con una di loro: &laquo;le nuove arrivano sempre di luna nuova, e la mattina dopo
+Madre Ilaria non c'era&raquo;.
+<b>Il pozzo, Cercare CD 15:</b> l'acqua è salmastra. Un pozzo a 290 piedi sul livello del mare non
+dovrebbe esserlo. <b>Sapienza (dungeon) CD 16:</b> comunica con una cavità sottostante — e il fondo
+è a soli 40 piedi, non 290.
+<b>Uso tattico:</b> il pozzo è una via di discesa alternativa verso C19 (Scalare CD 15, corda
+necessaria). Stretta, silenziosa, e i PG possono trovarla da soli.</div></div>
+
+<div class="entry"><h4><span class="n">11</span> Refettorio</h4>
+<p>30×20 ft, tre tavole lunghe.</p>
+<div class="mech"><b>Osservare CD 14:</b> la tavola è apparecchiata per <b>ventidue</b>.
+Nel dormitorio (13) i pagliericci sono <b>nove</b>. Se qualcuno lo fa notare a Fra' Timoteo,
+lui risponde con assoluta sincerità che si è sempre fatto così, e per la prima volta si sente
+dire una cosa che non sa spiegare. <b>È il momento in cui Timoteo diventa un alleato utilizzabile.</b>
+<b>Cercare CD 12:</b> sotto una panca, iniziali graffiate nel legno da mani diverse. Ventidue serie.
+Quattordici sono anche nel registro dell'abate, in colonna F o Z.</div></div>
+
+<div class="entry"><h4><span class="n">12</span> Cucina e dispensa</h4>
+<p>10×20 ft.</p>
+<div class="mech"><b>Cercare CD 12:</b> le provviste ordinarie bastano per nove persone.
+Ma la dispensa contiene vino forte, spezie e zucchero di canna — merce da nave, non da borgo.
+<b>Sapienza (locali) o Valutare CD 14:</b> roba che si trova solo in porti che stanno a sei giorni
+di navigazione. Qualcuno riceve regali da chi viene dal mare.
+<b>Osservare CD 16:</b> il paiolo grande è annerito all'esterno in modo irregolare — è stato usato
+per portare acqua di mare, non per cucinare.</div></div>
+
+<div class="entry"><h4><span class="n">13</span> Dormitorio delle Ancelle</h4>
+<p>30×20 ft, nove pagliericci, ventidue cassette personali.</p>
+<div class="mech"><b>Tredici cassette appartengono a persone che non ci sono più</b> e nessuno le ha
+svuotate. <b>Cercare CD 10</b> per aprirne una: un pettine, un nastro, una lettera cominciata e mai finita.
+<b>Prendere un oggetto da una di queste cassette abbassa a CD 13 la prova di Diplomazia per parlare con
+Madre Ilaria in C20.</b> Dillo per suggerimento, non per regola: descrivi la cassetta con il nome
+inciso e lascia che sia un giocatore a raccoglierla.
+<b>Cercare CD 18 sotto il quarto pagliericcio:</b> un coltello da cucina affilato su un lato solo,
+nascosto da qualcuno che aveva capito e non ha fatto in tempo.</div></div>
+
+<div class="entry"><h4><span class="n">14</span> Studio dell'Abate</h4>
+<p>10×20 ft. Uno scrittoio, due scaffali, una finestra che dà sul chiostro. <b>Chiusa a chiave</b>
+(Scassinare CD 20); Timoteo non ha la chiave e lo dice senza malizia.</p>
+<div class="mech"><b>Cercare CD 20 — il registro.</b> Due colonne. Nomi e date d'ingresso; nomi, date
+e accanto una sola lettera: <b>F</b> o <b>Z</b>, con una cifra in monete. Trentuno nomi in nove anni.
+Undici righe riportano un'età sotto i dodici anni.
+<i>Questo è l'unico punto dell'avventura in cui compare questa informazione. Leggila come è scritta
+e passa oltre.</i>
+<b>Cercare CD 24 (o dopo aver trovato il registro, CD 15):</b> una cartella di contratti firmati
+con una croce. Sono i documenti che Malaluna riceve ogni mese. <b>Falsificare CD 12</b> per capire
+che sono tutti della stessa mano — la stessa delle lettere in A16.
+<b>Questa cartella è l'oggetto più prezioso dell'avventura</b>, e non vale una moneta:
+mostrarla a Malaluna vale +4 alla reazione.</div></div>
+
+<div class="entry"><h4><span class="n">15</span> Cella dell'Abate</h4>
+<p class="ra">La porta è sbarrata dall'esterno con un chiavistello, il che è strano perché di solito
+i chiavistelli servono a tenere qualcosa fuori. Dentro non c'è un letto. Le finestre sono murate,
+e la malta è stata stesa dall'interno.</p>
+<div class="mech"><b>Contenuto:</b> un cassone di legno lungo sette piedi, pieno di terra battuta
+mescolata a sabbia di mare. Nessun letto, nessuna candela, nessuno specchio.
+<b>Sapienza (religione) CD 15:</b> è un giaciglio da vampiro.
+<b>Aprirlo di giorno</b> significa trovare Padre Anselmo <i>inerte</i>: paletto di legno nel cuore
+(azione di round completo, tocco automatico), o trascinare il cassone al sole sul sagrato.
+<b>Questa è una vittoria legittima e va concessa senza penalità narrative.</b> Il costo lo paga
+il gruppo dopo: senza l'abate, le Sorelle e i corsari non si annullano a vicenda, e lo scontro
+in grotta diventa scenario D.
+<b>Se i PG ci arrivano di notte, il cassone è vuoto</b> — e questo, da solo, dice loro dov'è.</div></div>
+
+<div class="entry"><h4><span class="n">16</span> Scriptorium</h4>
+<p>10×20 ft, due scrittoi, calamai, risme.</p>
+<div class="mech"><b>Cercare CD 16 — le brutte copie.</b> Trentuno lettere alle famiglie, in bella
+e in brutta, tutte della stessa mano. Alcune sono <b>datate prima</b> del giorno in cui l'Ancella
+sarebbe partita.
+<b>Falsificare CD 15</b> per confermarlo tecnicamente. <b>È la prova che convince Dama Orsola</b>,
+e quindi la prova che dà ai PG quattro guardie e una legittimità.
+<b>Cercare CD 20:</b> un foglio scartato con sette note musicali scritte in caratteri liturgici.
+Sono le stesse sette note del coro udibile al mulino, trascritte al rovescio.</div></div>
+
+<div class="entry"><h4><span class="n">17</span> Scala di servizio</h4>
+<p>Chiocciola stretta che scende al corpo di guardia (C23).</p>
+<div class="mech"><b>Chiusa da una porta rinforzata</b>, Scassinare CD 22, chiave addosso all'abate.
+<b>Ascoltare CD 15</b> con l'orecchio alla porta: passi regolari, due volte al giorno, e una voce
+che conta ad alta voce fino a cinque.
+<b>Attenzione:</b> è la via <i>rapida</i> al livello −1, ma sbuca <b>dentro</b> il corpo di guardia,
+in mezzo a quattro corsari e a Grinza. La botola in cappella (9) è più lenta e infinitamente più
+sicura. Se il gruppo sceglie questa, non avvertirlo: l'informazione c'è ed è in C21 (le ciotole)
+e in A6 (la chiave della grata). Chi non indaga paga.</div></div>
+
+</div>
+
+<!-- =================== FAILURE MODES =================== -->
+<h2>Modi di fallimento — fazione corsara e livello 0</h2>
+<table>
+<thead><tr><th>Modo di fallimento</th><th>Sintomo</th><th>Causa</th><th>Mitigazione</th></tr></thead>
+<tbody>
+<tr><td><b>I corsari restano comparse</b></td><td>Otto sagome che tirano d'iniziativa e muoiono</td><td>Nessuna leva tirata prima dell'Atto IV</td><td>Sedda avanza per prima e parla, sempre, in ogni scenario tranne A. Un round di dialogo è garantito</td></tr>
+<tr><td><b>Naspo mai liberato</b></td><td>La leva più forte non si attiva</td><td>Cella 5 in fondo al corridoio, liberata per ultima o mai</td><td>Naspo è l'unico che urla quando sente aprirsi la grata: Ascoltare CD 5 dal vestibolo. Sorella Bertrada lo nomina se liberata prima</td></tr>
+<tr><td><b>Malaluna ucciso al primo round</b></td><td>Sparisce l'intera trattativa, resta uno scontro</td><td>Party che apre il fuoco su un pirata a vista</td><td>Malaluna entra in scena <b>disarmato, con le carte in mano</b>, al passo 4. Chi spara a un uomo che tiene dei documenti lo fa consapevolmente</td></tr>
+<tr><td><b>La via di mare bypassa metà avventura</b></td><td>Il gruppo noleggia una barca e salta all'Atto IV</td><td>La bocca della grotta è troppo comoda</td><td>Scàbbio non ci va di notte sotto CD 22 / 200 mo. Chi ci arriva comunque trova lo scenario A: nessun prigioniero, nessuna prova, nessun alleato. È una scelta, e ha un prezzo visibile</td></tr>
+<tr><td><b>La chiesa chiusa blocca l'Atto II</b></td><td>Il gruppo sbatte contro il portale e si ferma</td><td>Un'unica serratura CD 22</td><td>Tre vie: chiave in sacrestia via canonica, chiave fra gli scogli (borgo 8), pozzo del chiostro (Scalare CD 15). Timoteo, se convinto, apre lui</td></tr>
+<tr><td><b>Le nove Ancelle vive vengono dimenticate</b></td><td>Muoiono fuori campo o restano un dettaglio</td><td>Non sono un obiettivo dichiarato</td><td>Se lo scontro finale si accende, l'abate manda a prenderle. Chi non le ha messe al sicuro se le ritrova come ostaggi</td></tr>
+<tr><td><b>Timoteo usato come chiave e poi scartato</b></td><td>PNG interessante consumato in due minuti</td><td>Serve solo ad aprire porte</td><td>Al passo 5 dell'orologio Timoteo capisce da solo, e la sua reazione — restare o denunciare — è una scena. Non risolverla tu</td></tr>
+<tr><td><b>La scarpa in B8 diventa una scena</b></td><td>Il tavolo si raggela</td><td>Descrizione insistita</td><td>Una frase, l'oggetto, silenzio. Se nessuno reagisce, si va avanti: non è un indizio necessario</td></tr>
+</tbody>
+</table>
+
+<!-- =================== ADR =================== -->
+<h2>Decisioni di progettazione (aggiunte)</h2>
+
+<div class="adr"><b>ADR-06 — I corsari sono la fazione recuperabile, non la fazione debole.</b><br>
+<i>Contesto:</i> tre nemici tutti irriducibili producono una sola linea di gioco, il combattimento.<br>
+<i>Decisione:</i> Malaluna ha un movente (la patente), una copertura psicologica (i contratti falsi)
+e una frattura interna (Ostro). Le megere e il vampiro restano irriducibili.<br>
+<i>Conseguenze:</i> il tavolo ha una fazione con cui si può parlare, e la trattativa diventa
+una via al successo tanto quanto l'acqua corrente. Il prezzo è che devi tenere traccia della
+tabella di reazione e non decidere in anticipo da che parte starà.</div>
+
+<div class="adr"><b>ADR-07 — La superstizione della ciurma come regola, non come colore.</b><br>
+<i>Decisione:</i> nessun corsaro supera la banchina; ogni corsaro entro 6 m da una megera è <i>scosso</i>.<br>
+<i>Conseguenze:</i> i PG possono neutralizzare metà della forza nemica manovrando invece che combattendo,
+e possono <i>dedurlo osservando</i>. In cambio, G27 diventa uno spazio in cui restano solo
+i mostri e i PG: la geometria dello scontro finale è fissata da questa regola.</div>
+
+<div class="adr"><b>ADR-08 — Due tavole del promontorio con destinatari diversi.</b><br>
+<i>Decisione:</i> I-a per i giocatori (colpo d'occhio, rivela la bocca della grotta),
+I-b per il DM (quote, distanze, tempi).<br>
+<i>Conseguenze:</i> l'orologio della notte diventa arbitrabile con dei numeri invece che a occhio.
+Costo: due tavole da mantenere allineate se cambi la topografia.</div>
+
+<div class="adr"><b>ADR-09 — La cella dell'abate resta una scorciatoia vincente.</b><br>
+<i>Contesto:</i> aprire il cassone di giorno salta l'intero scontro finale con il GS 9.<br>
+<i>Decisione:</i> la scorciatoia resta, senza penalità narrative, ma cambia lo scenario finale
+in D e toglie l'abate come contrappeso alle megere.<br>
+<i>Conseguenze:</i> l'indagine viene premiata in modo tangibile. Se ti sembra che &laquo;rovini l'avventura&raquo;,
+è il segnale che l'avventura si reggeva sul boss e non sull'indagine — e non è così.</div>
+
+<h3>Licenze — nessuna variazione</h3>
+<p>Tutto il materiale aggiunto è SRD 3.5 / OGL 1.0a: guerriero, ladro, barbaro, esperto, popolano, adepto.
+Nessuna creatura nuova. Le due tavole sono SVG originali, nessun asset di terzi.
+<b>Restano fuori</b>, come nel documento principale, ogni nome di divinità o toponimo di Faerûn:
+il Nocchiero, la Signora del Frangente, Vènere Bassa e la <i>Zanna di Bruma</i> sono invenzioni di
+questo testo e non hanno vincoli.</p>
+
+<p style="text-align:center;font-style:italic;color:#5a4a36;margin-top:32px">
+— <i>Malaluna non chiede mai cosa c'è nelle casse. Chiede se le carte sono in ordine, e le carte
+sono sempre in ordine.</i> —
+</p>
+
+</div>
+</body>
+</html>

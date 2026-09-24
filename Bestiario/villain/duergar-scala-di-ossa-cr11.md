@@ -1,4 +1,6 @@
-# Duergar della Scala di Ossa (set d'incontro epico) [TRANSCRIBED — testo, L1 2026-07-08]
+# Duergar della Scala di Ossa (set d'incontro epico) [TRANSCRIBED — testo, L1 2026-07-08] [NON-CREATURA]
+
+> **Non è una creatura**: è un **set d'incontro** di quattro PNG nominati (Adrick Garthun GS 11, Daxavalt e Kerg GS 6 ciascuno, Zenith GS 10), tenuti insieme perché si giocano insieme. Il «GS 11» in testa è il livello dell'incontro, non di una creatura: forzarci sopra un blocco solo vorrebbe dire inventare un mostro che non esiste. Ognuno dei quattro ha i suoi numeri qui sotto.
 **Faction**: duergar-abbathor | **Role**: boss | **Environment**: underdark | **CR**: 11 | **Source**: testo statblock `Bestiario/pregen-pcgen/00_scaladossa-abbattor-funghi/00_nani_dwergar_abaddor_scala_di_ossa.txt` | **Status**: transcribed
 
 Set d'incontro (piattaforma di ossa e tendini, Underdark). Statblock nel sorgente:

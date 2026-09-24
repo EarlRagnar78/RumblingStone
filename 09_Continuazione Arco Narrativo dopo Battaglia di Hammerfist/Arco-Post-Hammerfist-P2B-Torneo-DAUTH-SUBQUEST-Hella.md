@@ -81,9 +81,9 @@ per le aberrazioni sulla strada del Ghostlord.
 > *Il boschetto ti accoglie con un profumo sbagliato: dolciastro, come frutta lasciata
 > a marcire in una stanza chiusa. Le querce hanno le foglie nere ai bordi, arricciate.
 > A terra, dove dovrebbe esserci muschio, cresce un tappeto di funghi pallidi che
-> emanano una luce lattiginosa, fredda. Quando ci cammini in mezzo, i funghi più vicini
+> emanano una luce lattiginosa, fredda. I funghi più vicini
 > **si girano** verso di te — piano, come volti ciechi. Da qualche parte, sotto le
-> radici, senti una pulsazione lenta. Come un respiro che non è il tuo.*
+> radici, c'è una pulsazione lenta. Come un respiro che non è il tuo.*
 
 **Prove e informazioni (Atto 1):**
 

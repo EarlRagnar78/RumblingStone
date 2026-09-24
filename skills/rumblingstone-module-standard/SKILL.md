@@ -28,6 +28,30 @@ riassunto.** Prima di scrivere, scansionare TUTTI i file dell'arco (anche
 deprecati e `_ARCHIVIO/`) e recuperare ogni contenuto valido: prove, esempi
 numerici, read-aloud, ambienti dinamici, hook. Ciò che si scarta va motivato.
 
+## L'architettura: corpo e appendici
+
+Prima dell'elenco, la forma. Un master si divide in **due metà con due usi
+diversi**, e tenerle mescolate è ciò che costringe il DM a cercare mentre il
+tavolo aspetta:
+
+| | Cosa contiene | Quando si legge |
+|---|---|---|
+| **Corpo** | atti, scene, incontri **nell'ordine in cui si giocano**, read-aloud, contingenze, boss | durante la sessione, in avanti |
+| **Appendici** | bestiario, gazetteer del luogo e della sua storia, cast dei PNG, riepilogo degli scontri e delle prove | **a salto**, quando serve un dato |
+
+Le appendici si numerano con **lettere** (`Appendice A`, `B`…) e si citano per
+lettera dal corpo. Nel corpo un mostro si nomina; i suoi numeri stanno
+nell'appendice, una volta sola.
+
+⚠️ Non è una riorganizzazione dei contenuti obbligatori qui sotto: sono gli
+**stessi** contenuti, disposti secondo come si usano. I cinque master esistenti
+non si riscrivono — vale sui **nuovi** consolidamenti.
+
+**Esemplare**: `10-stand-alone/L'abbazia Della Rotta Sicura/` — corpo (i quattro
+atti) + Appendice A (fazione corsara, borgo, livello 0), Appendice B
+(oppressione, storia, cronologia, bestiario), Appendici I-III (bestiario,
+incontri e prove, misteri).
+
 ## Struttura obbligatoria del master (nell'ordine)
 
 1. **Header canone**: cosa sostituisce/fonde (elenco file-fonte), stato al
@@ -101,7 +125,33 @@ numerici, read-aloud, ambienti dinamici, hook. Ciò che si scarta va motivato.
     come titoli di brani, **il momento da fotografare** (uno per sessione,
     dichiarato) e una **nota di accessibilità**. Vale sui **nuovi**
     consolidamenti: i cinque master esistenti non si riscrivono.
-16. **Prop fisici**: ogni documento che la fiction consegna **si consegna
+16. **Riscalatura a tre assi**: la stessa avventura, per tavoli diversi. Una
+    tabella per **livello del party**, una per **numero di giocatori**, una per
+    **durata disponibile** — e ognuna con la colonna che nessuno scrive mai:
+    **«cosa si perde davvero»**. Non «è più facile»: *quale pezzo dell'avventura
+    smette di esistere*. Senza quella colonna la riscalatura è aritmetica, e il
+    DM non sa cosa sta buttando via.
+    Esemplare: l'indice maestro dell'Abbazia — cinque fasce di livello per dodici
+    righe, quattro formati di durata, e righe come *«diventa un'incursione, non
+    un orrore»*.
+17. **Avvertenza di contenuto e consenso del tavolo**: la riga da dire **prima**
+    di cominciare, in una frase, e **la sostituzione già pronta** per chi esita.
+    Non un disclaimer legale: una battuta da leggere a voce, più il ricambio.
+    Esemplare: *«c'è un culto che uccide ragazzi; niente sarà mostrato in scena,
+    ma sarà chiaro cosa è successo»* — e le vittime sostituibili con marinai
+    catturati, senza toccare nient'altro.
+18. **Cancelli d'uscita a tempo**, per atto: quanto dura, **qual è il segnale che
+    dice che si può passare oltre**, e **chi entra in scena a dirlo** se il
+    segnale non è arrivato. Un tempo senza rimedio è un rimprovero al DM; un
+    tempo col rimedio è regia. Esemplare: *«Atto I, 60-75 min. Se a 60 minuti
+    manca uno dei due segnali, Berto Cassola arriva e lo dice in faccia»*.
+19. **Decisioni di progettazione del modulo** (ADR di modulo): tre-cinque
+    decisioni **locali** — perché il nemico è uno o tre, perché una cosa resta
+    fuori scena, cosa si guadagna e **cosa si paga**. Vivono nel modulo, non in
+    `plans/adr/`: lì stanno le decisioni che valgono per il repo, qui quelle che
+    valgono per questa avventura. La differenza operativa: se cambiando modulo la
+    decisione decade, è di modulo.
+20. **Prop fisici**: ogni documento che la fiction consegna **si consegna
     davvero**, con i template di `campaign/templates/homebrew/`, e porta in coda
     una nota per il DM che non si stampa (come si usa, cosa nessuno nota, cosa
     succede se lo firmano o lo stracciano).

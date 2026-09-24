@@ -40,11 +40,23 @@ appoggiata sul petto» (l'Impronta di Durik). Non si toglie per caso.*
 | **Avatar della Radice** (Sop) | standard · 1/giorno | Hella diventa **Ibrido Treant/Nano Enorme** per 10 round (+8 Forza, portata estesa, schianto — profilo in P3B); ricarica all'alba |
 | **Evocazione dei Guardiani** (Sop) | standard · 3/giorno (un seme per evocazione) | Seme I/II → **Treant di Adamantio** (statblock in P3B); Seme III → **Durik Riforgiato, Guardiano di Pietra** (12 DV, scheda in `...IL-VIAGGIO...-v2.md` §10). I semi rigermogliano all'alba `[INFERRED — ritmo di ricarica da confermare]` |
 
-**I Doni dei Semi (3 slot — NON SPESI):** ogni seme custodisce il sacrificio
-che un compagno offrì al rituale e può, **una volta sola**, restituirlo come
-**dono** a quel compagno nel momento del bisogno.
-`[Meccanica esatta da definire col DM — INFERRED: azione immediata di Hella;
-spendere un dono NON consuma l'evocazione del seme]`.
+**I Doni dei Semi (3 slot)** `[CANONE — DM 2026-09-12]` — al rito ogni compagno
+dona **un potere del proprio artefatto**, che lo lascia **per sempre** e
+**germoglia** in un seme (`ARC07-DEF-3` §5):
+
+| Seme | Da chi | 🌱 Cosa fa |
+|---|---|---|
+| **I** | 🛡️ Thorik *(il +2 di deflessione della Corona)* | **Scudo del Custode** — 1/giorno, **azione immediata**: prendi su di te il danno destinato a un alleato entro **9 m**, **dimezzato**. 🔄 Thorik viene **accelerato 3 round** e si muove **verso chi hai protetto** |
+| **II** | ⚒️ Tordek *(Ancoraggio della Montagna)* | **Pelle di Adamantio — RD 3/adamantino.** È la **tua unica** riduzione del danno |
+| **III** | 🔮 Artemis *(1d6 del suo Eldritch Blast)* | **Rovo Eldritch** — **a volontà**, azione standard, contatto a distanza **18 m**, **2d6** (metà rovi, metà fuoco) |
+
+🌱 **La restituzione.** *Una volta sola per seme, per sempre*: **azione
+immediata**, **decidi tu**, e il seme **rende al donatore ciò che aveva dato per
+una scena intera**. Poi quel seme non restituirà mai più.
+**Spendere la restituzione NON consuma l'evocazione del seme.**
+
+⚠️ **Un seme non donato resta dormiente**: evoca il suo guardiano, ma non
+germoglia niente.
 
 > **↩ Se al rituale P3B c'è stato un «rifiuto totale» (T9)**: la Collana è
 > nata con i **3 slot-dono vuoti** — diventano 3 **quest personali** in ARC-09

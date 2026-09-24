@@ -264,12 +264,12 @@ These factions are unique to the RumblingStone campaign and do not appear in pub
 
 **Alignment**: CE/NE
 **Leaders**:
-- **Sonjak** — Drow Cleric Matrona of Lolth. Obsessed with mixing and creating new forms of
+- **Sonjak**: Drow Cleric Matrona of Lolth. Obsessed with mixing and creating new forms of
   aberrations. Her current research focus is on **fungal aberrations**: hybridizing myconid
   creatures with drow fleshcrafting. Has made a **pact with the Mother of Fungi** (a daemon
   aberration) in Lolth's name, creating an unholy alliance between drow religious authority
   and demonic fungal corruption.
-- **Il Collezionista** — A **Rakshasa** that delights in turning living enemies into macabre
+- **Il Collezionista**: A **Rakshasa** that delights in turning living enemies into macabre
   statues (using a bonded basilisk) and **selling them to evil villains** as trophies and
   decorations. Escaped from the minotaur lair encounter in the Underdark. **Recurring villain**
   who has not yet been caught or killed.
@@ -292,7 +292,7 @@ These factions are unique to the RumblingStone campaign and do not appear in pub
   possibly the same artifacts the drow seek during the Notte dei Drow temple assault at Rethmar
 - **Expedition to the Demonweb Pits** (p.67) creatures used by the drow researchers in the
   fungi tower experiments
-- **NPC Therysol** — Originally a slave sold by drow traders affiliated with Il Collezionista's
+- **NPC Therysol**: Originally a slave sold by drow traders affiliated with Il Collezionista's
   guild to salamanders in the Fire Elemental Plane. After helping the party in the Fire Node
   (Arc 07), she goes underground seeking revenge against Il Collezionista's drow guild. May
   appear as an **NPC ally during the Notte dei Drow** at Rethmar, attacking the drow from within.

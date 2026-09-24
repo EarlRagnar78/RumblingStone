@@ -22,9 +22,17 @@ Checks (hard errors, exit 1):
      is a "missing" error (regenerate + commit).
   4. Determinism — rendering a master twice yields identical bytes.
 
-Only markdown files that already have at least one committed SVG are
-re-rendered, so map masters that were intentionally left un-rendered (KO rows
-of `MAPPE-CENSIMENTO.md`) never trip a false "missing" error.
+  5. No master falls out of the check (ADR-0043). Checks 2-3 only look at
+     markdown files that ALREADY have a committed SVG, so deleting *every* SVG
+     of a master made that master disappear from validation entirely — green,
+     and nobody looking at those maps again. A master that generates maps and
+     has zero committed SVGs is now an error, unless it opts out in its own
+     text with:
+
+         <!-- validate_maps: non-renderizzato — <motivo> -->
+
+     which is how a master intentionally left un-rendered (KO rows of
+     `MAPPE-CENSIMENTO.md`) declares itself instead of being guessed at.
 
 Usage:  python3 scripts/validate_maps.py [--repo-root PATH]
 """
@@ -45,12 +53,52 @@ import render_map_svg as R  # noqa: E402
 SVG_NAME_RE = re.compile(r"^(?P<stem>.+)_map\d{2}_.+\.svg$")
 
 
+# ADR-0043: come un master dichiara di NON voler essere renderizzato. Deve stare
+# nel testo del master, non in una lista altrove: una lista in un altro file si
+# stacca dalla realta' esattamente come si e' staccato l'elenco delle skill.
+OPT_OUT_RE = re.compile(r"<!--\s*validate_maps:\s*non-renderizzato\b", re.IGNORECASE)
+
+
+def check_masters_senza_svg(root: Path, rendered_dirs: list[Path]) -> list[str]:
+    """Un master che genera mappe e non ha NESSUN SVG committato (ADR-0043).
+
+    E' il punto cieco che questo controllo chiude: i controlli 2-3 guardano solo
+    i markdown che hanno gia' almeno un SVG, quindi cancellandoli TUTTI il master
+    usciva dalla validazione e la CI restava verde. «Verde» li' voleva dire
+    «nessuno guarda piu' quelle mappe».
+    """
+    errors: list[str] = []
+    for rdir in rendered_dirs:
+        parent = rdir.parent
+        con_svg = {m.group("stem") for m in
+                   (SVG_NAME_RE.match(p.name) for p in rdir.glob("*.svg")) if m}
+        for md in sorted(parent.glob("*.md")):
+            if md.stem in con_svg:
+                continue
+            testo = md.read_text(encoding="utf-8")
+            if OPT_OUT_RE.search(testo):
+                continue
+            try:
+                generate = render_master(md)
+            except Exception as exc:  # un master illeggibile e' gia' un errore altrove
+                errors.append(f"{md.relative_to(root)}: non renderizzabile: {exc}")
+                continue
+            if generate:
+                errors.append(
+                    f"master fuori controllo: {md.relative_to(root)} genera "
+                    f"{len(generate)} mappe e non ha NESSUN SVG committato — "
+                    f"rigenera con render_map_svg.py, oppure dichiaralo con "
+                    f"<!-- validate_maps: non-renderizzato — motivo --> nel master stesso"
+                )
+    return errors
+
+
 def render_master(md: Path) -> dict[str, str]:
     """Return {expected_svg_filename: svg_text} for every map in a master."""
     maps = R.extract_maps(md.read_text(encoding="utf-8"))
     out: dict[str, str] = {}
     for i, g in enumerate(maps, 1):
-        name = f"{md.stem}_map{i:02d}_{R.slugify(g['title'])}.svg"
+        name = f"{md.stem}_map{i:02d}_{R.nome_mappa(g['title'])}.svg"
         out[name] = R.render_svg(g, md.name)
     return out
 
@@ -128,6 +176,9 @@ def validate(repo_root: Path, as_json: bool = False) -> int:
             if expected[name] != committed[name].read_text(encoding="utf-8"):
                 errors.append(f"SVG NON allineato al master (rigenera o non modificare a mano): "
                               f"{rdir / name}")
+
+    # 5. nessun master esce dal controllo perche' gli hanno tolto tutti gli SVG
+    errors.extend(check_masters_senza_svg(repo_root, rendered_dirs))
 
     if as_json:
         print(json.dumps({

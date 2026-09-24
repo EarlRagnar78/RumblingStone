@@ -7,25 +7,25 @@ boosted block is complete, legal, and logged.
 
 ## Rebuild checklist (in order — later steps depend on earlier ones)
 
-1. **Abilities** — apply HD-milestone increases, size changes, template
+1. **Abilities**: apply HD-milestone increases, size changes, template
    adjustments. Everything downstream reads from these.
-2. **HD / hp** — new dice + Con mod per die. Bosses: consider max hp on the
+2. **HD / hp**, new dice + Con mod per die. Bosses: consider max hp on the
    first HD (3.5 monster convention is average; max-first-die is a legal DM
    call — note it).
-3. **BAB / grapple** — type progression at new HD; grapple = BAB + Str mod +
+3. **BAB / grapple**: type progression at new HD; grapple = BAB + Str mod +
    special size mod.
-4. **Attacks** — recompute to-hit (BAB + Str/Dex + size), damage
+4. **Attacks**: recompute to-hit (BAB + Str/Dex + size), damage
    (new dice size + new Str mod; ×1.5 two-handed/sole natural weapon).
-5. **AC** — new natural armor, new size mod, new Dex.
-6. **Saves** — type progression + new ability mods.
-7. **Skills / feats** — new totals (feat at every 3rd HD, 3.5). Pick feats
+5. **AC**: new natural armor, new size mod, new Dex.
+6. **Saves**: type progression + new ability mods.
+7. **Skills / feats**: new totals (feat at every 3rd HD, 3.5). Pick feats
    that serve the tactic; don't optimize beyond the table's fun.
-8. **Special attack DCs** — 10 + ½ HD + ability mod: recompute, these shift
+8. **Special attack DCs**, 10 + ½ HD + ability mod: recompute, these shift
    with HD and abilities and are easy to miss.
-9. **CR** — additive rules first, then **benchmark vs PF Table 1–1**
+9. **CR**: additive rules first, then **benchmark vs PF Table 1–1**
    (`pathfinder-1e-srd/references/monster-advancement.md`); final CR = what
    the numbers earn.
-10. **Log it** — update the PNG/monster file: `Boost log:` line + new block.
+10. **Log it**, update the PNG/monster file: `Boost log:` line + new block.
 
 ## Output format
 

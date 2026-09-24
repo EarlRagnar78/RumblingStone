@@ -1,4 +1,8 @@
-# I Profughi del Guado di Drellin — sei volti dell'onda che cammina
+# I Profughi del Guado di Drellin — sei volti dell'onda che cammina [NON-CREATURA]
+
+> **Non è una creatura** (ADR-0033): è una **popolazione** (~1.500 anime) più sei volti civici. La scheda dichiara già di non portare statistiche — *«ruoli + stime dichiarate + puntatore [Private — Red Hand of Doom]»* — ed è una scelta di IP, non una dimenticanza.
+> Per questo non ha un blocco `statblocco` e non conta
+> nel debito di migrazione di ADR-0021.
 
 > **Lotto R1** del `plans/PIANO-REINTEGRAZIONE-PNG-AP-RHOD.md` (2026-07-20).
 > Sei PNG civici dell'AP originale, reintegrati come volti dell'onda

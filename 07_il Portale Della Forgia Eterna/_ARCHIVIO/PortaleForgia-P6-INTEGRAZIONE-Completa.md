@@ -22,7 +22,12 @@
 **Forze:**
 - **Difensori:** 800 guerrieri nanici + Re Thorek I (Grr 16)  
 - **Attaccanti:** Orda di Zogtar Deatheye (10.000 orchi/goblin/hobgoblin)  
-- **Boss Nemici:** Zogtar (Barb 14) + **Skullcrusher il Nero** (Adult Black Dragon CR 11)
+- **Boss Nemici:** Zogtar (Barb 14) + **Skullcrusher il Nero** (Adult Black Dragon **GS 12**)
+
+> 🔧 **Errata (DM, 2026-09-17): GS 12, non CR 11.** Questa riga diceva `CR 11`
+> mentre `Mappe/ARC07-MAPPE-DEFINITIVO.md` r.558 dichiarava **GS 12** per la
+> mappa tattica BOSS 24×18 dello stesso scontro. Il DM ha deciso **GS 12**, ed
+> è il valore che vale al tavolo. Scheda: `Bestiario/villain/skullcrusher-il-nero-cr12.md`.
 
 ---
 

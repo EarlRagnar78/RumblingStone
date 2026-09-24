@@ -2,7 +2,7 @@
 
 **Stato**: accettata
 **Data**: 2026-08-01
-**Decisione-fonte**: domanda DM 2026-08-01 — *«se un domani volessi pubblicare
+**Decisione-fonte**: domanda DM 2026-08-01, *«se un domani volessi pubblicare
 qualcosa, renderlo davvero in inglese e non tradurlo sarebbe un vantaggio?»*,
 nata dal rilievo dei giocatori: gli handout erano scritti *«così male in
 italiano che per loro era quasi meglio averlo in inglese»*.
@@ -16,7 +16,7 @@ sul modello di come un libro esce in più lingue.
 Tre fatti hanno deciso la questione:
 
 1. **Il tavolo gioca in italiano.** Il testo che viene letto ad alta voce a
-   quattro persone è testo collaudato dalla realtà — vale più di qualsiasi
+   quattro persone è testo collaudato dalla realtà: vale più di qualsiasi
    passata editoriale, e lo si ottiene solo se la sorgente è la lingua del
    tavolo.
 2. **L'adattamento non sposta le ossa.** La struttura si sceglie in stesura:
@@ -29,7 +29,7 @@ Tre fatti hanno deciso la questione:
    scelgono componendo, non retroattivamente.
 
 Nel modello editoriale reale, del resto, un libro in dieci lingue ha **una
-sola lingua sorgente — quella in cui l'autore pensa** — e poi edizioni affidate
+sola lingua sorgente, quella in cui l'autore pensa**, e poi edizioni affidate
 a traduttori letterari madrelingua con licenza di ri-creare. Nessun editore fa
 scrivere l'autore in una seconda lingua per poi riportarlo nella sua.
 
@@ -37,7 +37,7 @@ scrivere l'autore in una seconda lingua per poi riportarlo nella sua.
 
 **L'italiano è la lingua sorgente di tutto il contenuto narrativo. L'inglese,
 se e quando servirà, è un'edizione derivata prodotta per transcreation
-dall'italiano finito — mai il contrario.**
+dall'italiano finito, mai il contrario.**
 
 ### 1. Cosa è sorgente e cosa no
 
@@ -63,7 +63,7 @@ lunghi, subordinate accumulate, nominalizzazioni, connettivi ridondanti).
   Doom adattato ai Forgotten Realms: pubblicazione gratuita 🟡 con condizioni,
   **vendita ❌** (`docs/guides/GUIDA-CONDIVISIONE-IP.md`). L'unico materiale
   realmente pubblicabile è quello **originale** (Terros, i Bracieri, la Cronaca
-  Vivente, Balvar, il sistema del Palio) **riambientato fuori da Faerûn** — e
+  Vivente, Balvar, il sistema del Palio) **riambientato fuori da Faerûn**, e
   quello sì, un giorno, in inglese nativo.
 
 ### 3. Cosa si costruisce invece adesso: il loc kit
@@ -80,22 +80,22 @@ parallele diventa un problema se non è deciso una volta sola.
 - Più facile: la qualità si concentra dove viene collaudata; una sola
   sorgente da mantenere; il glossario esiste prima di servire.
 - Più difficile / rinunce: **niente uscita inglese immediata**. Se domani
-  servisse un estratto in inglese, va prodotto a mano dall'italiano — accettato.
+  servisse un estratto in inglese, va prodotto a mano dall'italiano, ed è accettato.
 - Da rivisitare: **quando esisterà una cosa concreta e IP-pulita da
   pubblicare**. Allora si scrive `inglese-nativo.md` e si apre l'edizione.
 
 ## Il vero rimedio al rilievo dei giocatori
 
 Non era la lingua: era la qualità. La risposta sta in tre riferimenti della
-skill di stile — `italiano-nativo.md` (§1-8 traduttese, §9 tic dell'IA),
+skill di stile: `italiano-nativo.md` (§1-8 traduttese, §9 tic dell'IA),
 `read-aloud-adulti.md` (il pubblico: adulti che il fantasy lo conoscono) e le
 passate editoriali. **Banco di prova**: i prossimi handout. Se i giocatori
 diranno ancora che sembra tradotto, il problema non è la lingua e non è la
-pipeline — e questa ADR va riaperta.
+pipeline, e questa ADR va riaperta.
 
 ## Copertura skill / docs
 
-- `skills/rumblingstone-narrative-style/SKILL.md` — load order.
+- `skills/rumblingstone-narrative-style/SKILL.md`: load order.
 - `references/italiano-nativo.md` · `references/read-aloud-adulti.md`.
-- `campaign/GLOSSARIO-E-LOCALIZZAZIONE.md` — glossario e DNT.
-- [`docs/guides/GUIDA-CONDIVISIONE-IP.md`](../../docs/guides/GUIDA-CONDIVISIONE-IP.md) — il tetto di pubblicazione.
+- `campaign/GLOSSARIO-E-LOCALIZZAZIONE.md`: glossario e DNT.
+- [`docs/guides/GUIDA-CONDIVISIONE-IP.md`](../../docs/guides/GUIDA-CONDIVISIONE-IP.md): il tetto di pubblicazione.

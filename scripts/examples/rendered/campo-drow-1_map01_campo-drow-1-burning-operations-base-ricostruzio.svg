@@ -353,12 +353,12 @@
 <text x="68" y="1556" font-size="11" fill="#3b2e1e">M20–U22 — Incinerator (Col N-T, righe 20-22)</text>
 <text x="46" y="1590" font-size="12" font-weight="bold" fill="#3b2e1e" letter-spacing="2">LEGENDA</text>
 <path d="M120 1586H1530" stroke="#7a6a50" stroke-width="0.7" opacity="0.7"/>
-<rect x="46" y="1596" width="19" height="15" fill="url(#t_forest)" stroke="#7a6a50" stroke-width="0.7"/>
-<text x="73" y="1608" font-size="11" fill="#3b2e1e">🌲 — Foresta densa (Furtività +5, copertura)</text>
-<rect x="46" y="1618" width="19" height="15" fill="url(#t_grass)" stroke="#7a6a50" stroke-width="0.7"/>
-<text x="73" y="1630" font-size="11" fill="#3b2e1e">🟩 — Pianura / area aperta</text>
-<rect x="46" y="1640" width="19" height="15" fill="url(#t_struct)" stroke="#7a6a50" stroke-width="0.7"/>
-<text x="73" y="1652" font-size="11" fill="#3b2e1e">⬛ — Struttura (tenda, edificio, dais)</text>
+<rect x="46" y="1596" width="19" height="15" fill="url(#t_struct)" stroke="#7a6a50" stroke-width="0.7"/>
+<text x="73" y="1608" font-size="11" fill="#3b2e1e">⬛ — Edificio / corpo di fabbrica (muratura piena: blocca vista e movimento)</text>
+<rect x="46" y="1618" width="19" height="15" fill="url(#t_forest)" stroke="#7a6a50" stroke-width="0.7"/>
+<text x="73" y="1630" font-size="11" fill="#3b2e1e">🌲 — Foresta densa (Furtività +5, copertura)</text>
+<rect x="46" y="1640" width="19" height="15" fill="url(#t_grass)" stroke="#7a6a50" stroke-width="0.7"/>
+<text x="73" y="1652" font-size="11" fill="#3b2e1e">🟩 — Pianura / area aperta</text>
 <circle cx="55" cy="1670" r="7.5" fill="url(#g_212529)" stroke="#241c10" stroke-width="1.2"/>
 <text x="73" y="1674" font-size="11" fill="#3b2e1e">⚫ — Boss / comandante</text>
 <circle cx="55" cy="1692" r="7.5" fill="url(#g_f4b400)" stroke="#241c10" stroke-width="1.2"/>

@@ -353,21 +353,21 @@ della Luna), fazione Zhentarim, ganci di trama. Solo creature e ruoli.
 
 ## Checklist lotti
 
-- [x] **S1** — Principio di composizione e vincoli misurati (§1)
-- [x] **S2** — Sei sfide combinate con EL, apertura, pressione e uscita (§2-§4)
-- [x] **S3** — Ghaurush «Cenerevento» GS 18 (*muro di forza*), con condizioni
+- [x] **S1**: Principio di composizione e vincoli misurati (§1)
+- [x] **S2**: Sei sfide combinate con EL, apertura, pressione e uscita (§2-§4)
+- [x] **S3**: Ghaurush «Cenerevento» GS 18 (*muro di forza*), con condizioni
       d'uso sopra il tetto dichiarate
-- [x] **S4** — **Deciso dal DM il 2026-08-05**: approvate **tutte** le sfide;
+- [x] **S4**, **Deciso dal DM il 2026-08-05**: approvate **tutte** le sfide;
       la scelta operativa passa dagli innesti I1-I6 del piano INNESTI-SFIDE.
       Due decisioni collegate: la **sfida E** (EL 18) **non** si gioca come
       primo incontro — si usa la variante *Advanced* GS 17, dentro il tetto;
       la **faglia della sfida G si apre** (Ushgar senza «Adattamento alla
       Luce», Controllo delle Fiamme che attiva la cecità)
-- [x] **S5** — Sfida **G** «Il Sangue Sbagliato» sui tanarukk (scheda fornita
+- [x] **S5**: Sfida **G** «Il Sangue Sbagliato» sui tanarukk (scheda fornita
       dal DM 2026-08-05): GS base 2 → **Barbaro 4 = GS 6**, ondata da otto con
       resistenza al fuoco 10 e RI 18; §2-bis dell'indice fonte privata, con la
       correzione della mia deduzione «GS 6» dichiarata
-- [x] **S6** — **Orchi montani** (*Races of Faerûn*, scheda fornita dal DM
+- [x] **S6**: **Orchi montani** (*Races of Faerûn*, scheda fornita dal DM
       2026-08-05): **nessun nemico nuovo** — tratti identici all'orco SRD, le
       schede orchesche del repo *sono già* orchi montani. Indicizzato in
       §2-ter con le tre cose che il volume aggiunge davvero, fra cui il

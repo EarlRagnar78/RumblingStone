@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "title": "Foresta in Fiamme — I Piromanti Drow (quest di Hella, P1B)",
+  "scale_m_per_square": 1.5,
+  "map_size": [34, 24],
+  "base_terrain": "🌲",
+  "north": "N",
+  "regions": [
+    { "terrain": "🟩", "rect": [7, 6, 20, 12], "label": "Radura sacra" },
+    { "terrain": "🟫", "rect": [0, 10, 34, 2], "label": "Sentiero est-ovest" }
+  ],
+  "structures": [
+    { "type": "🌳", "at": [11, 7] }, { "type": "🌳", "at": [15, 16] }, { "type": "🌳", "at": [18, 8] },
+    { "type": "🧱", "rect": [12, 11, 3, 1], "label": "Tagliafuoco improvvisato (copertura bassa)" }
+  ],
+  "hazards": [
+    { "type": "🔥", "rect": [22, 7, 4, 10], "label": "Fronte del rogo (i drow bruciano la radura)", "effect": "2d6 fuoco entro 3 m; occultamento fumo 20%; Tempra CD 15 o nauseato" },
+    { "type": "🔥", "at": [20, 8] }, { "type": "🔥", "at": [20, 15] }, { "type": "🔥", "at": [24, 12] },
+    { "type": "🟫", "rect": [26, 6, 7, 12], "label": "Foresta già bruciata (terreno difficile, 1d4 fuoco residuo)" }
+  ],
+  "units": [
+    { "faction": "PG", "name": "Hella + Compagnia", "token": "🔵", "at": [5, 10], "cr": "EL 13" },
+    { "faction": "PG", "name": "PG", "token": "🔵", "at": [5, 11] },
+    { "faction": "PG", "name": "PG", "token": "🔵", "at": [6, 9] },
+    { "faction": "PG", "name": "PG", "token": "🔵", "at": [6, 12] },
+    { "faction": "Alleati", "name": "Treant alleato di Hella (soffoca le fiamme)", "token": "🟢", "at": [9, 14], "cr": "GS 8" },
+    { "faction": "Drow (piromanti)", "name": "Piromante drow", "token": "🟡", "at": [23, 8], "cr": "Wizard 8" },
+    { "faction": "Drow (piromanti)", "name": "Piromante drow", "token": "🟡", "at": [23, 15], "cr": "Wizard 8" },
+    { "faction": "Drow (piromanti)", "name": "Piromante drow", "token": "🟡", "at": [25, 11], "cr": "Wizard 8" },
+    { "faction": "Drow (piromanti)", "name": "Guerriero drow (scorta)", "token": "🔴", "at": [27, 9], "cr": "Fighter 7" },
+    { "faction": "Drow (piromanti)", "name": "Guerriero drow (scorta)", "token": "🔴", "at": [27, 14], "cr": "Fighter 7" },
+    { "faction": "Drow (piromanti)", "name": "Sovrintendente drow", "token": "⚫", "at": [29, 11], "cr": "GS 10" }
+  ],
+  "movements": [
+    { "name": "Fronte del fuoco (vento da est)", "path": [[24, 11], [20, 11], [16, 11]], "color": "#e85d04" },
+    { "name": "Avanzata PG", "path": [[5, 11], [11, 11], [16, 11]], "color": "#2b9348" },
+    { "name": "Treant → soffoca le fiamme", "path": [[9, 14], [15, 13], [20, 12]], "color": "#6a4c93" },
+    { "name": "Ritirata drow", "path": [[25, 11], [29, 11], [33, 11]], "color": "#d62828" }
+  ],
+  "notes": [
+    "Round 2-3: se il fronte non è contrastato avanza di 2 quadretti verso ovest (aggiungi 🔥 sulle celle raggiunte); la radura sacra inizia a bruciare.",
+    "Se i PG uccidono i piromanti E creano un tagliafuoco (o Hella lancia Controllo del Fuoco / Muro di Vento): il fronte si arresta e la radura è salva.",
+    "Se il fronte raggiunge il bordo ovest: la foresta sacra è persa (terreno letale 🟥); conseguenza narrativa sulla quest di Hella e sul Cerchio Sacro."
+  ]
+}

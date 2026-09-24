@@ -40,6 +40,124 @@ sparse nelle PR mergiate e la storia si frammenta. Fonte delle regole:
    gate) e la sua sezione "Prossimi passaggi";
 3. **una riga in `plans/CHANGELOG.md`**:
    `| data | piano | lotto | riferimento (PR #N / commit) | esito |`.
+4. se il lotto **chiude o apre una decisione del DM**: la riga nella tabella
+   marcata `<!-- decisioni-dm: … -->` **dentro il piano**, poi
+   `python3 scripts/decisioni_dm.py --emit` per rigenerare l'aggregato di
+   `STATO-E-ORDINE` §4 (ADR-0047). Chiusa = identificatore **barrato**:
+   `~~D1~~`. Si tocca il piano, mai l'aggregato.
+
+## 🔍 Regola di apertura (obbligatoria — ADR-0044)
+
+**Prima di aprire un piano nuovo, si guardano quelli che ci sono.** Nell'ordine:
+
+1. **Leggi `plans/INDEX.md`.** È l'unico posto dove sta scritto cosa esiste e a
+   che punto è. Sono trentaquattro documenti: nessuno se li ricorda a memoria, e
+   chi non guarda riscrive.
+2. **Cerca per argomento, non per titolo.** Un piano che copre la tua richiesta
+   può chiamarsi in un altro modo:
+   `grep -ril "<parola chiave>" plans/*.md`.
+3. **Guarda anche le PR aperte, e quelle chiuse.** Un piano può esistere e non
+   essere ancora su `main` — è successo con la #72, che stava in bozza da sei
+   settimane con dentro tre piani commerciali poi riscritti da zero da chi non
+   l'aveva letta. `python3 scripts/contenuti_nei_rami.py --fetch` elenca i file
+   di ogni ramo e PR mai arrivati su `main`, ognuno col suo posto in
+   `plans/contenuti-nei-rami.json`; `fase1.py` mostra quelli ancora aperti
+   accanto al file che stai per toccare.
+4. **Poi decidi, e scrivi quale delle tre è**:
+
+| Se… | Allora |
+|---|---|
+| esiste un piano che copre l'argomento e il lavoro è **dentro il suo perimetro** | **espandi quel piano** con un lotto nuovo. Niente documento nuovo |
+| esiste un piano **vicino** ma il tuo lavoro è un difetto suo | **fix nel piano esistente**, e una riga nel CHANGELOG |
+| non esiste niente che copra l'argomento | **apri**, e nel documento nuovo scrivi **cosa hai guardato prima** e perché non bastava |
+
+⚠️ **Il §1 di un piano nuovo dice sempre cosa NON rifà.** Un piano che non
+dichiara i suoi confini contro i piani vicini si sovrappone entro un mese: è
+successo cinque volte, e le cinque sovrapposizioni sono finite in
+`PIANO-VENDIBILITA`.
+
+**PIANO o RICERCA?** Una **RICERCA** misura un divario e propone; un **PIANO**
+esegue. Se non sai ancora cosa fare, è una ricerca — e la ricerca può poi
+aprire un piano, citandosi.
+
+## 🧭 Come si tagliano i lotti (obbligatoria — ADR-0045)
+
+Ogni lotto **ancora da fare** dichiara tre cose in intestazione:
+
+```
+[engine: <chi lo esegue> · effort: <basso|medio|alto|xhigh|max> · qualità: <come si sa che è finito>]
+```
+
+| Classe | Che cos'è | Engine | Effort | Qualità |
+|---|---|---|---|---|
+| **M · Meccanico** | trasformazione verificabile: **un gate dice** se è giusta | inline, o `Haiku 4.5` in subagente | basso | il gate passa |
+| **R · Ricognizione** | leggere molto, riferire poco, **non decidere** | subagente `Explore`, `Sonnet 5` | basso-medio | i numeri si **riproducono** |
+| **C · Costruzione** | codice con contratto chiaro e test | `Sonnet 5` | medio-alto | test che provano il gate **mordere** |
+| **G · Giudizio** | decidere cosa è vero, cosa si butta, cosa si sovrappone | **`Opus 5`, sessione principale** | alto-xhigh | il DM riconosce il proprio problema |
+| **K · Canone** | tocca la verità della campagna | **`Opus 5`, mai delegato** | xhigh-max | conferma esplicita del DM |
+
+## Prima di **creare** un ADR o un piano — il numero si guarda, non si indovina
+
+```bash
+python3 scripts/validate_docs.py --prossimo-adr
+```
+
+🐛 **`ADR-0049` è stato assegnato due volte in due giorni** (PR #138 e #141),
+perché chi scriveva il secondo non ha guardato la cartella. Nessun controllo
+poteva vederlo: nessun link era rotto e nessun ADR mancava dall'indice, che
+mostrava due righe con lo stesso numero.
+
+Il numero di un ADR è la sua **identità** — si cita nei commit, nei piani, nel
+codice e nei changelog — e due decisioni che lo condividono rendono ambigua ogni
+citazione **già scritta**. Il comando stampa l'ultimo numero sul disco e il
+primo libero, contandoli da `plans/adr/` e non dall'indice.
+
+Per un **piano** nuovo vale la stessa cosa in altra forma: si legge
+`plans/INDEX.md` prima di aprirlo (ADR-0044). Un piano duplicato non rompe le
+citazioni, ma divide il lavoro in due posti che divergono.
+
+⚠️ Il gate in CI (`validate_docs --sorgenti`) prende la collisione **dopo** che
+il file esiste. Questo comando è la metà preventiva, e funziona solo se lo
+esegui.
+
+**Come si sceglie la classe — la tabella illustra, queste domande decidono.**
+Si risponde nell'ordine; la prima che scatta assegna la classe.
+
+| | Domanda | Se sì |
+|---|---|---|
+| 1 | **Se sbaglio, se ne accorge il DM al tavolo?** | **K** — nessun gate difende il canone |
+| 2 | Devo decidere qualcosa che **una macchina non può contare**? | **G** |
+| 3 | Il risultato è definito da un **contratto verificabile**? | **C** se il contratto va scritto, **M** se esiste già |
+| 4 | *(nessuna)* Sto solo **leggendo per riferire**? | **R** |
+
+⚠️ **Nessuna delle quattro chiede quanto è grande il lotto.** La dimensione non
+entra nella classificazione, ed è dove l'istinto sbaglia più spesso: *«sostituisci
+Tordek con Thorik in dodici file»* sembra un `sed` ed è la riscrittura di un eco.
+
+**A lotto chiuso, una riga in [`plans/REGISTRO-LOTTI.md`](../../plans/REGISTRO-LOTTI.md)**
+— classe prevista, engine usato, **ha retto?**. È come la tabella smette di
+essere tarata a occhio. Se il lotto è **salito di classe** a metà strada, quella
+riga vale doppio.
+
+**Tre regole che governano la tabella:**
+
+1. **L'effort si abbassa prima dell'engine.** Un modello capace a effort basso
+   spesso batte un modello inferiore a effort alto, e **non spezza la cache** —
+   le cache sono legate al modello, quindi ogni salto di engine la butta.
+2. **Un lotto sale di classe, mai scende.** Nel dubbio fra M e C scegli C; fra G
+   e K scegli K. Un lotto sovradimensionato costa token; uno sottodimensionato
+   costa un errore che arriva al tavolo.
+3. **La colonna «qualità» non è una leva: è il collaudo.** Se non riesci a
+   scriverla, il lotto è **tagliato male** — ritaglialo prima di eseguirlo.
+
+**Dove si taglia**: sulla **classe**, non sulla dimensione. Un lotto che mescola
+classi si divide — la parte **G** decide, la parte **M** esegue.
+
+⚠️ **Non si riclassificano i lotti già chiusi**: instradare un lavoro finito è
+spreco puro.
+
+⚠️ **`Haiku 4.5` non è un Opus più piccolo**: 200K di contesto contro 1M, e
+**non accetta `effort`**. Per lavoro corto e meccanico, non «per risparmiare».
 
 ## ✅ Rituale di chiusura PR (checklist per l'agente)
 
@@ -56,6 +174,11 @@ Prima di aprire (o dichiarare pronta) una PR che completa lavoro pianificato:
 - [ ] Se la PR introduce/tocca una skill: `./scripts/build-skills.sh
       --no-deploy` e `python3 scripts/validate_skills.py` verdi.
 - [ ] Nuova convenzione o scelta strutturale? → ADR in `plans/adr/`.
+- [ ] La PR si chiude **senza merge**, o sul suo ramo restano commit dopo il
+      merge? I file che non arrivano su `main` prendono una riga in
+      `plans/contenuti-nei-rami.json`, con lo stato e chi ne risponde
+      (`contenuti_nei_rami.py --check` verde). È così che si sono persi
+      `validate_skill_paths.py` (PR #1) e il soggetto della discesa (#72).
 
 ## 🤖 Enforcement automatico (ADR-0009)
 
@@ -66,6 +189,13 @@ gira in CI su ogni PR e come hook `pre-push` locale
 - **Blocca** (rosso in CI, push rifiutato) modifiche a file strutturali
   (`scripts/`, `skills/`, `converters/`, `.github/`, `plans/adr/`) senza una
   riga in `plans/CHANGELOG.md` nello stesso range di commit.
+- **Blocca** l'aggregato di `STATO-E-ORDINE` §4 che non combacia con le tabelle
+  dei piani (`scripts/decisioni_dm.py --check`, ADR-0047). Era la quarta cosa
+  della regola d'oro, l'unica non controllata: il 2026-09-06 dava una decisione
+  aperta il giorno dopo che era stata presa, ne ometteva un'altra e ne elencava
+  quattro **inesistenti in ogni piano**.
+  ⚠️ `D<n>` **non è globale**: otto piani hanno il loro `D1..Dn` con significati
+  diversi, quindi conta solo ciò che porta il marker, e l'identità è `piano#Dn`.
 - **Promemoria ADR** (warning non bloccante): nuova skill, nuovo script
   top-level o modifica ai workflow CI senza alcun tocco a `plans/adr/` →
   invito esplicito a valutare un ADR. Non bloccante di proposito: «serve

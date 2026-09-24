@@ -1,4 +1,4 @@
-# Zarim — luogotenente illithid
+# Zarim — luogotenente illithid [RIMANDO]
 **Role**: villain (psi-caster élite, luogotenente dell'invasione planare, ARC-09)
 **Status**: alive — agente di coordinamento sotto Xal'thor
 **Location**: urbano/dungeon, retrovie dell'invasione

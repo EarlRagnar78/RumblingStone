@@ -1,7 +1,7 @@
 # Rumbling Stone
 
 **RumblingStone** is a custom D&D 3.5 campaign set in the Forgotten Realms (Faerûn, 1372 DR).
-It is heavily based on *Red Hand of Doom* (Jacobs & Wyatt, 2006) and adapted from the Elsir Vale to the Dalelands region.
+It is heavily based on *Red Hand of Doom* (Jacobs & Baker, 2006) and adapted from the Elsir Vale to the Dalelands region.
 This repository contains session logs, NPC data, encounters, lore, and custom mechanics tailored for an adult gaming group (emphasizing "Premium Design" and "Shine Time" mechanics).
 
 > 📚 **Documentation index**: start at [`docs/INDEX.md`](docs/INDEX.md) — the
@@ -32,7 +32,7 @@ none of its setting: [`STANDALONE-Il-Drappo-di-Tarsilia/`](STANDALONE-Il-Drappo-
 Three sessions of 3–4 hours for **six players**, **six pregenerated 3rd-level
 characters**, **Pathfinder 1st Edition** (Core Rulebook only), set in an original
 river city of Golarion's River Kingdoms. It reuses the *system* of the Channathgate
-race arc — the author's own material — and nothing else: no Faerûn, no *Red Hand of
+race arc (the author's own material) and nothing else: no Faerûn, no *Red Hand of
 Doom*, no campaign PCs. Start at
 [`00-HUB-E-QUICKSTART-DM.md`](STANDALONE-Il-Drappo-di-Tarsilia/00-HUB-E-QUICKSTART-DM.md);
 the IP rundown is in
@@ -51,15 +51,15 @@ The core heroes of the campaign (Detailed in `PG/`):
 
 ### PNG (NPCs & Villains)
 
-Important non-player characters and antagonists (Detailed in `Bestiario/villain/`, `Bestiario/png/` and `campaign/npcs/`):
+Important non-player characters and antagonists (Detailed in `Bestiario/villain/` and `Bestiario/png/`):
 
 - **Maestro Varis "Seta-Argento"**: Opportunistic planar merchant, urban broker in Rethmar, CR 6.
 - **Conte Valerius**: Nobility entangled in funding the enemy, demanding social/political finesse to defeat.
 - **Il Collezionista (Rakshasa)**: A deadly collector of rare artifacts and secrets, the shadow mastermind, GS 17–19.
 - **Salvatore "Sal" della Luna d'Argento** (`Bestiario/villain/Salvatore/`): Temporal spy and soul-harvester. Flamboyant desert merchant, secretly "Vatore" who witnessed the PCs at Hammerfist -1000 DR. Bard 8/Sublime Chord 1/Spy 5, GS 14. Supplies living statues to Varis. Introduced Day 28–32, Arc 09 P2C.
-- **Azarr Kul** (`Bestiario/villain/Azarr_Kul/`): High Wyrmlord of Tiamat. Half-Blue-Dragon Hobgoblin, Cleric 10/Fighter 4, GS 15. Commands the Red Hand horde and fights on foot — Tyrgarun (Old Blue Dragon, CR 18) is a separate sky-terror encounter, not his mount. Boss of Rethmar Phase 3.
-- **Sonjak / Matrona Sajak** (`Bestiario/villain/Sonjak/`): Drow Cleric Matrona. Cleric 10/Matrona 3, GS 13. Commands underground Drow forces in Cannath Vale; Sal's employer on the surface. Clock 4/8 — triggers Phase 0 Night of the Drow.
-- **Conte Valerius** (`Bestiario/villain/Conte_Valerius/`): Political villain. Expert 4/Aristocrat 4. Legally finances the Red Hand horde through "patriotic emergency loans." Cannot be defeated in combat — requires political/investigative approach. Clock 2/8.
+- **Azarr Kul** (`Bestiario/villain/Azarr_Kul/`): High Wyrmlord of Tiamat. Half-Blue-Dragon Hobgoblin, Cleric 10/Fighter 4, GS 15. Commands the Red Hand horde and fights on foot; Tyrgarun (Old Blue Dragon, CR 18) is a separate sky-terror encounter, not his mount. Boss of Rethmar Phase 3.
+- **Sonjak / Matrona Sajak** (`Bestiario/villain/Sonjak/`): Drow Cleric Matrona. Cleric 10/Matrona 3, GS 13. Commands underground Drow forces in Cannath Vale; Sal's employer on the surface. Clock 4/8, triggering Phase 0 Night of the Drow.
+- **Conte Valerius** (`Bestiario/villain/Conte_Valerius/`): Political villain. Expert 4/Aristocrat 4. Legally finances the Red Hand horde through "patriotic emergency loans." Cannot be defeated in combat; requires a political or investigative approach. Clock 2/8.
 - **Maestro Varis "Seta-Argento"** (`Bestiario/png/Varis_Seta_Argento/`): Urban broker in Rethmar. Rogue 4/Expert 4, CR 6. Knowingly sells petrified living creatures as artwork. Potential ally for Artemis; key link in the statue supply chain. Distinct from Sal (who is the field agent/supplier).
 - **Ghostlord / Arcano Zeth il Murato** (`Bestiario/villain/Ghostlord/`): Druidic Lich of the Thornwaste. Druid 13/Lich, GS 13. Ancient master builder of Hammerfist, tricked into lichdom. Ally or enemy depending on party choices; Hella's key NPC. Holds 20 spectral lions as potential reinforcements at Rethmar.
 - **Xal'thor** (`Bestiario/villain/Xal_thor/`): Illithid Githyanki Commander. Psion 6 (effective GS 14). Targets Tordek's Bracieri as planar keys to the Eternal Forge. Fixed trigger: attacks Dauth Tournament Day 3 regardless of party action. Potential wildcard at Rethmar if not stopped.
@@ -74,17 +74,22 @@ Important non-player characters and antagonists (Detailed in `Bestiario/villain/
   - `npcs/` & `locations/`: Key figures and environment descriptions.
   - `encounters/`: Custom encounter design and tactics.
   - `lore/`: House rules, setting details, and DM strategy (e.g., `csmpaign players.md`).
-- **`skills/`**: Nine focused AI-agent skills + a legacy router. Rules are sourced from the d20 SRD (D&D 3.5) and the Pathfinder 1e SRD:
-  - `dnd-35-srd/` — pure 3.5 mechanics (d20srd.org)
-  - `forgotten-realms-lore/` — Faerûn 1372 DR canon
-  - `rumblingstone-campaign/` — this campaign (PCs, artifacts, arcs, coherence)
-  - `rumblingstone-narrative-style/` — eight-pillar style engine, mandatory for all content generation
-  - `rumblingstone-mapmaking/` — battle-map pipeline (3 modes, JSON contract, UVTT export)
-  - `rumblingstone-automation/` — `dm.py` CLI + session-state pipeline on group branches (ADR-0007)
-  - `rumblingstone-plans/` — work-plan archive discipline (INDEX, CHANGELOG, ADRs)
-  - `pathfinder-1e-srd/` — PF1e rules, simple templates, CR benchmarks, 3.5↔PF conversion
-  - `npc-villain-boosting/` — when/whether/how to boost PNGs, villains, and monsters
-  - `dnd-35-rules/` — legacy meta-router pointing at the nine above
+- **`skills/`**: Fourteen focused AI-agent skills + a legacy router. Rules are sourced from the d20 SRD (D&D 3.5) and the Pathfinder 1e SRD:
+  - `dnd-35-srd/`: pure 3.5 mechanics (d20srd.org)
+  - `forgotten-realms-lore/`: Faerûn 1372 DR canon
+  - `rumblingstone-campaign/`: this campaign (PCs, artifacts, arcs, coherence)
+  - `rumblingstone-narrative-style/`: nine-pillar style engine, mandatory for all content generation
+  - `rumblingstone-mapmaking/`: battle-map pipeline (3 modes, JSON contract, UVTT export)
+  - `rumblingstone-automation/`: `dm.py` CLI + session-state pipeline on group branches (ADR-0007)
+  - `rumblingstone-plans/`: work-plan archive discipline (INDEX, CHANGELOG, ADRs)
+  - `pathfinder-1e-srd/`: PF1e rules, simple templates, CR benchmarks, 3.5↔PF conversion
+  - `npc-villain-boosting/`: when/whether/how to boost PNGs, villains, and monsters
+  - `rumblingstone-art-direction/`: visual bible, character sheets, the rejection gate
+  - `rumblingstone-editoria/`: layout & typography of the printed volumes (ADR-0020/0021)
+  - `rumblingstone-module-standard/`: the depth an AP-quality module master must reach
+  - `rumblingstone-playtest/`: how a module is tested before and after the table
+  - `rumblingstone-debugging/`: root-cause debugging of the repo's own infrastructure
+  - `dnd-35-rules/`: legacy meta-router pointing at the ones above
 - **`.github/workflows/ci.yml`**: CI validates skill frontmatter/links/data YAML and builds all per-agent skill packages on every PR.
 
 ## Design Philosophy (Mastering for Adults)
@@ -104,7 +109,7 @@ It covers:
 - `§0 Campaign Status At-a-Glance` dashboard template (see top of `campaign/state.md`)
 - Dual-clock reference (March Clock + Ritual Clock)
 - **Reset procedure** to start the campaign with a new group (branch-per-group,
-  via `scripts/new-campaign-group.sh`)
+  via `python3 scripts/dm.py gruppo nuovo`, a question form; no YAML by hand)
 
 Blank templates for a fresh group live in `campaign/templates/`.
 
@@ -134,7 +139,7 @@ Indice unico dei documenti "di sviluppo" del repo (roadmap, script, container):
 > Qui sotto il minimo indispensabile.
 
 1. Clone the repository to your local machine.
-2. If using AI Agents (Claude Code, Cursor, Windsurf), run `./scripts/build-skills.sh` to build per-agent skill packages and deploy them to your user-level paths. Per-agent mirrors are not committed to git — regenerate them locally.
+2. If using AI Agents (Claude Code, Cursor, Windsurf), run `./scripts/build-skills.sh` to build per-agent skill packages and deploy them to your user-level paths. Per-agent mirrors are not committed to git: regenerate them locally.
 3. Review `AGENTS.md` to understand campaign conventions and agent instructions.
 
 ## Licensing Information
@@ -144,5 +149,13 @@ Indice unico dei documenti "di sviluppo" del repo (roadmap, script, container):
 > ADR-0005 tradotta in procedura, caso per caso.
 
 This project contains private lore adaptations based on *Red Hand of Doom*. Mechanical content belongs to the respective owners of the D&D 3.5 OGL/SRD.
+
+**Licenze, due e col taglio dichiarato** ([`LICENSES.md`](LICENSES.md), [ADR-0029](plans/adr/ADR-0029-licenza-doppia-testo-e-script.md)):
+il **testo** (avventure, canone, guide, skill) è **CC BY-NC-SA 4.0**; gli **strumenti** in `scripts/`
+sono **MIT**. La regola per i casi di confine: se lo legge un essere umano al tavolo è testo, se lo
+esegue una macchina è strumento. ⚠️ Il contenuto derivato dall'**SRD 3.5 e da Pathfinder 1e resta
+Open Game Content sotto OGL 1.0a**: chi lo ridistribuisce si porta dietro la Sezione 15, che con il
+testo della licenza sta in [`OGL.txt`](OGL.txt). E i componenti di terzi vendorizzati
+(`droplet`, `in-dexter`, `systematic-debugging`) tengono la loro.
 
 Il repo è a **uso privato / non commerciale**: contiene IP di terzi (Wizards of the Coast / Forgotten Realms non-SRD) che nessuna licenza dell'autore può sanare, e l'arco "Palio di Channathgate" evoca segni tutelati del Palio di Siena. La posture per scenario d'uso (privato OK · pubblicazione gratuita a rischio basso · commerciale non conforme senza bonifiche) e la relativa checklist sono in [`plans/adr/ADR-0005`](plans/adr/ADR-0005-confini-ip-uso-non-commerciale.md) e nel rapporto `09_.../Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md`.

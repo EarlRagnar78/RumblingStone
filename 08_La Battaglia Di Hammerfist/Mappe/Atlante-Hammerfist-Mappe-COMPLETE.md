@@ -24,73 +24,83 @@ Quattro generazioni di atlante e due generazioni di mappe tattiche
 sono confluite qui. Questo file è il **master visivo** (narrativo,
 descrizioni, prompt immagine, dettagli tattici da tavolo) per
 **tutte** le mappe dell'arco. I tre file `Hammerfist-L{1,2,3}-REVISED-
-Ultra-Clear.md` restano **master tattici** ma **solo** per le tre
-mappe ad altissima densità di coordinate che coprono (griglia
-numerata, viste multiple) — per tutto il resto, e per la lettura
-narrativa, questo file è la fonte.
+Ultra-Clear.md` sono i **master tattici** e — dal lotto **MAPPE-UC
+2026-07-23** — coprono in griglia ultra-clear **TUTTE le 17 mappe**
+(griglia numerata, coordinate, companion Ambiente/Tattiche/Evoluzione):
+per giocare a quadretti si usa SEMPRE il file L della sessione; per la
+lettura narrativa, le immagini e i prompt, questo file è la fonte.
 
-| # | Mappa | Generazioni 00_ (a/b/c) | Lotto-N | Tattico dedicato | Master |
+| # | Mappa | Generazioni 00_ (a/b/c) | Lotto-N | Tattico dedicato (griglia ultra-clear) | Master |
 |---|---|---|---|---|---|
-| 1 | 1A-1 Il Sentiero Nascosto | a✅ b✅ c✅ (DEPRECATED) | Lotto-1 ✅ (DEPRECATED) | — | **questo file** |
+| 1 | 1A-1 Il Sentiero Nascosto | a✅ b✅ c✅ (DEPRECATED) | Lotto-1 ✅ (DEPRECATED) | `Hammerfist-L1-REVISED-Ultra-Clear.md` → MAPPA 1A-1 REVISED | **questo file** (narrativo) + L1-REVISED (griglia) |
 | 2 | 1A-2 Il Torrione di Vedetta | a✅ b✅ c✅ (DEPRECATED) | Lotto-1 ✅ (DEPRECATED) | `Hammerfist-L1-REVISED-Ultra-Clear.md` (griglia) | **questo file** (narrativo) + L1-REVISED (griglia) |
-| 3 | 1A-3 Campo della Mano Rossa | — | Lotto-1 ✅ (DEPRECATED) | — | **questo file** |
-| 4 | MAPPA 1 Disposizione Generale G1 | a✅ b✅ c✅ (DEPRECATED) | — | — | **questo file** |
-| 5 | MAPPA 2A/2B/2C Fortezza (top-down/frontale/laterale) | a/b/c avevano un'unica "MAPPA 2 Unificata" (DEPRECATED) — qui riorganizzata in 3 viste | Lotto-2 ✅ (2A/2B/2C, DEPRECATED) | `Hammerfist-L2-REVISED-Ultra-Clear.md` (griglia, solo 2A) | **questo file** (narrativo) + L2-REVISED (griglia 2A) |
-| 6 | MAPPA 2 Schieramento Difensivo Truppe | — | — | — | **questo file** |
-| 7 | MAPPA 3 Movimenti e Fasi Assalto | — | Lotto-2 ✅ (DEPRECATED) | — | **questo file** |
-| 8 | MAPPA 4 Evoluzione Danni (Giorni 1-3) | c✅ (DEPRECATED) | Lotto-2 ✅ (DEPRECATED) | — | **questo file** |
-| 9 | MAPPA 2B-Corretta Attacco del Drago | a✅ b✅ c✅ (DEPRECATED) | Lotto-2 ✅ (DEPRECATED) | — | **questo file** |
+| 3 | 1A-3 Campo della Mano Rossa | — | Lotto-1 ✅ (DEPRECATED) | `Hammerfist-L1-REVISED-Ultra-Clear.md` → MAPPA 1A-3 REVISED (strategica, 6 m/q) | **questo file** (narrativo) + L1-REVISED (griglia) |
+| 4 | MAPPA 1 Disposizione Generale G1 | a✅ b✅ c✅ (DEPRECATED) | — | `Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 1 REVISED (regia, 3 m/q) | **questo file** (narrativo) + L2-REVISED (griglia) |
+| 5 | MAPPA 2A/2B/2C Fortezza (top-down/frontale/laterale) | a/b/c avevano un'unica "MAPPA 2 Unificata" (DEPRECATED) — qui riorganizzata in 3 viste | Lotto-2 ✅ (2A/2B/2C, DEPRECATED) | `Hammerfist-L2-REVISED-Ultra-Clear.md` (griglia 2A; 2B = VISTA 4, 2C = VISTA 3) | **questo file** (narrativo) + L2-REVISED (griglia 2A + viste) |
+| 6 | MAPPA 2 Schieramento Difensivo Truppe | — | — | `Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 2 REVISED (tabella su coordinate 2A) | **questo file** (narrativo) + L2-REVISED (coordinate) |
+| 7 | MAPPA 3 Movimenti e Fasi Assalto | — | Lotto-2 ✅ (DEPRECATED) | `Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 3 REVISED (overlay su MAPPA 1 REVISED) | **questo file** (narrativo) + L2-REVISED (griglia+rotte) |
+| 8 | MAPPA 4 Evoluzione Danni (Giorni 1-3) | c✅ (DEPRECATED) | Lotto-2 ✅ (DEPRECATED) | `Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 4 REVISED (stati della griglia 2A) | **questo file** (narrativo) + L2-REVISED (stati) |
+| 9 | MAPPA 2B-Corretta Attacco del Drago | a✅ b✅ c✅ (DEPRECATED) | Lotto-2 ✅ (DEPRECATED) | `Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 2B-CORRETTA REVISED (40×26) | **questo file** (narrativo) + L2-REVISED (griglia) |
 | 10 | MAPPA 3X Ingresso Passaggi Antichi | a✅ b✅ c✅ (DEPRECATED) | Lotto-3 ✅ (DEPRECATED) | `Hammerfist-L3-REVISED-Ultra-Clear.md` (griglia, come H3-1) | **questo file** (narrativo) + L3-REVISED (griglia) |
-| 11 | MAPPA 3Y Il Ponte Sospeso | b✅ c✅ (DEPRECATED) — **mancava qui, migrata in A8** | — | — | **questo file** |
-| 12 | MAPPA 3Z Incrocio Silenzioso | b✅ c✅ (DEPRECATED; a❌ mancante) | Lotto-3 ✅ (DEPRECATED) | — | **questo file** |
-| 13 | MAPPA 5 Cuore della Montagna | a✅ b✅ c✅ (DEPRECATED) | Lotto-3 ✅ (DEPRECATED) | — | **questo file** |
-| 14 | MAPPA 4X Campo Battaglia Finale (laterale) | c✅ (DEPRECATED) | Lotto-3 ✅ (DEPRECATED) | — | **questo file** |
-| 15 | MAPPA 4 Battaglia Finale Aerea e Terrestre | a✅ b✅ c✅ (DEPRECATED) | Lotto-3 ✅ (DEPRECATED) | — | **questo file** |
+| 11 | MAPPA 3Y Il Ponte Sospeso | b✅ c✅ (DEPRECATED) — **mancava qui, migrata in A8** | — | `Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 3Y REVISED (33×27) | **questo file** (narrativo) + L3-REVISED (griglia) |
+| 12 | MAPPA 3Z Incrocio Silenzioso | b✅ c✅ (DEPRECATED; a❌ mancante) | Lotto-3 ✅ (DEPRECATED) | `Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 3Z REVISED (33×33) | **questo file** (narrativo) + L3-REVISED (griglia) |
+| 13 | MAPPA 5 Cuore della Montagna | a✅ b✅ c✅ (DEPRECATED) | Lotto-3 ✅ (DEPRECATED) | `Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 5 REVISED (67×53) | **questo file** (narrativo) + L3-REVISED (griglia) |
+| 14 | MAPPA 4X Campo Battaglia Finale (laterale) | c✅ (DEPRECATED) | Lotto-3 ✅ (DEPRECATED) | `Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 4X REVISED (tabella quote) | **questo file** (narrativo/illustrazione) + L3-REVISED (quote) |
+| 15 | MAPPA 4 Battaglia Finale Aerea e Terrestre | a✅ b✅ c✅ (DEPRECATED) | Lotto-3 ✅ (DEPRECATED) | `Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 4 REVISED (60×68 + vista altitudini) | **questo file** (narrativo) + L3-REVISED (griglia) |
 
 **File deprecati da questa matrice** (banner DEPRECATED aggiunto, D12 — puntano tutti qui):
 `ARC08-90-DEPRECATO-battle-stats-maps.md` (a), `ARC08-91-DEPRECATO-atlante-visivo-v2.md` (b),
 `ARC08-92-DEPRECATO-atlante-visivo-v3-complete.md` (c),
-`Mappe/Hammerfist-Lotto-1-Ricognizione.md`, `Mappe/Hammerfist-Lotto-2-Assedio.md`, `Mappe/Hammerfist-Lotto-3-FINALE.md`.
+`Mappe/_ARCHIVIO/Hammerfist-Lotto-1-Ricognizione.md`, `Mappe/_ARCHIVIO/Hammerfist-Lotto-2-Assedio.md`, `Mappe/_ARCHIVIO/Hammerfist-Lotto-3-FINALE.md`.
 
-**File NON deprecati** (master tattici di categoria diversa, non sovrapposti):
-`Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md`, `Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md`,
-`Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` — coprono in griglia-precisa solo 1A-2, 2A e 3X/H3-1;
-per tutte le altre mappe (e per la lettura narrativa) restare su questo file.
+**File NON deprecati** (master tattici, lotto MAPPE-UC 2026-07-23 — copertura griglia COMPLETA):
+`Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md` (Sessione 1: 1A-1, 1A-2, 1A-3),
+`Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md` (Sessione 2: 2A+2B+2C, MAPPA 1/2A-1, 2, 3, 4, 2B-Corretta),
+`Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` (Sessioni 3-4: 3X/H3-1, 3Y, 3Z, 5, 4X, 4-finale) —
+**ogni mappa dell'arco ha ora una griglia ultra-clear canonica in questi tre file**;
+questo file resta il master narrativo (descrizioni, immagini, prompt).
 
 ---
 
 ## 📚 INDICE COMPLETO MAPPE (17 TOTALI)
 
+> **Griglie ultra-clear (lotto MAPPE-UC 2026-07-23):** TUTTE le mappe qui
+> sotto hanno una griglia di precisione canonica nei tre master tattici —
+> Sessione 1 → `Hammerfist-L1-REVISED-Ultra-Clear.md`, Sessione 2 →
+> `Hammerfist-L2-REVISED-Ultra-Clear.md`, Sessioni 3-4 →
+> `Hammerfist-L3-REVISED-Ultra-Clear.md`.
+
 ### 🔍 SESSIONE 1: L'OMBRA SULLA MONTAGNA - Ricognizione (3 mappe)
-1. Mappa 1A-1 - Il Sentiero Nascosto
-2. Mappa 1A-2 - Il Torrione di Vedetta (griglia precisa: `Hammerfist-L1-REVISED-Ultra-Clear.md`)
-3. Mappa 1A-3 - Campo della Mano Rossa (Vista Aerea)
+1. Mappa 1A-1 - Il Sentiero Nascosto (griglia: L1-REVISED → MAPPA 1A-1 REVISED)
+2. Mappa 1A-2 - Il Torrione di Vedetta (griglia: L1-REVISED)
+3. Mappa 1A-3 - Campo della Mano Rossa (griglia strategica: L1-REVISED → MAPPA 1A-3 REVISED)
 
 ### ⚔️ SESSIONE 2: TRE GIORNI DI SANGUE E FERRO - Assedio (7 mappe)
-4. Mappa 1 - Disposizione Generale Battaglia Giorno 1
-5. Mappa 2A - Fortezza Hammerfist Vista dall'Alto (griglia precisa: `Hammerfist-L2-REVISED-Ultra-Clear.md`)
-6. Mappa 2B - Fortezza Vista Frontale (Prospettiva Attaccante)
-7. Mappa 2C - Fortezza Sezione Laterale
-8. Mappa 2 - Schieramento Difensivo Truppe
-9. Mappa 3 - Movimenti e Fasi Assalto
-10. Mappa 4 - Evoluzione Danni (Giorni 1-3)
-11. Mappa 2B-Corretta - Attacco del Drago
+4. Mappa 1 - Disposizione Generale Battaglia Giorno 1 (griglia di regia: L2-REVISED → MAPPA 1 REVISED)
+5. Mappa 2A - Fortezza Hammerfist Vista dall'Alto (griglia precisa: L2-REVISED)
+6. Mappa 2B - Fortezza Vista Frontale (= L2-REVISED VISTA 4)
+7. Mappa 2C - Fortezza Sezione Laterale (= L2-REVISED VISTA 3)
+8. Mappa 2 - Schieramento Difensivo Truppe (tabella su coordinate 2A: L2-REVISED → MAPPA 2 REVISED)
+9. Mappa 3 - Movimenti e Fasi Assalto (overlay: L2-REVISED → MAPPA 3 REVISED)
+10. Mappa 4 - Evoluzione Danni (Giorni 1-3) (stati griglia 2A: L2-REVISED → MAPPA 4 REVISED)
+11. Mappa 2B-Corretta - Attacco del Drago (griglia: L2-REVISED → MAPPA 2B-CORRETTA REVISED)
 
 ### 🏃 SESSIONE 3: DALLE PROFONDITÀ DELLA TERRA - Fuga (4 mappe)
-12. Mappa 3X - Ingresso Passaggi Antichi (griglia precisa: `Hammerfist-L3-REVISED-Ultra-Clear.md`)
-13. Mappa 3Y - Il Ponte Sospeso
-14. Mappa 3Z - Incrocio Silenzioso
-15. Mappa 5 - Cuore della Montagna
+12. Mappa 3X - Ingresso Passaggi Antichi (griglia precisa: L3-REVISED, come H3-1)
+13. Mappa 3Y - Il Ponte Sospeso (griglia: L3-REVISED → MAPPA 3Y REVISED)
+14. Mappa 3Z - Incrocio Silenzioso (griglia: L3-REVISED → MAPPA 3Z REVISED)
+15. Mappa 5 - Cuore della Montagna (griglia: L3-REVISED → MAPPA 5 REVISED)
 
 ### 🏆 SESSIONE 4: LA TEMPESTA E LA VITTORIA FINALE (2 mappe)
-16. Mappa 4X - Campo Battaglia Finale (Vista Laterale)
-17. Mappa 4 - Battaglia Finale Aerea e Terrestre
+16. Mappa 4X - Campo Battaglia Finale (Vista Laterale) (quote: L3-REVISED → MAPPA 4X REVISED)
+17. Mappa 4 - Battaglia Finale Aerea e Terrestre (griglia di regia: L3-REVISED → MAPPA 4 REVISED)
 
 ---
 
 ## 🔍 SESSIONE 1: L'OMBRA SULLA MONTAGNA
 
 ### MAPPA 1A-1: IL SENTIERO NASCOSTO
+**Griglia ultra-clear:** `Hammerfist-L1-REVISED-Ultra-Clear.md` → MAPPA 1A-1 REVISED (20×100, 1,5 m)
 **Immagine:** [148] `hammerfist-1a1.png` — **reale (C3)**: `immagini/13.webp` (mappa tattica), `immagini/sentieroNascosto.webp` + `immagini/00_PM.webp` (arte)
 
 **Tipo:** Infiltrazione tattica  
@@ -131,6 +141,7 @@ SUD ↓
 ---
 
 ### MAPPA 1A-2: IL TORRIONE DI VEDETTA
+**Griglia ultra-clear:** `Hammerfist-L1-REVISED-Ultra-Clear.md` → MAPPA 1A-2 REVISED (40×40, 1,5 m)
 **Immagine:** [149] `hammerfist-1a2.png` — **reale (C3)**: `immagini/torreVedetta.webp` + `immagini/01.webp` (arte), `immagini/Generated Image October 03, 2025 - 6_09PM.webp` (mappa tattica)
 
 **Tipo:** Osservazione tattica  
@@ -186,6 +197,7 @@ Antica torre di guardia in pietra (rovina) si erge sul bordo di un dirupo scosce
 ---
 
 ### MAPPA 1A-3: CAMPO DELLA MANO ROSSA
+**Griglia ultra-clear:** `Hammerfist-L1-REVISED-Ultra-Clear.md` → MAPPA 1A-3 REVISED (strategica, 6 m/q)
 **Immagine:** [150] `hammerfist-1a3.png` — **reale (C3)**: `immagini/03.webp` (orda schierata)
 
 **Tipo:** Vista strategica narrativa  
@@ -237,6 +249,7 @@ Rappresentazione visiva di ciò che Dara vede con cannocchiale masterwork. Non �
 ## ⚔️ SESSIONE 2: TRE GIORNI DI SANGUE E FERRO
 
 ### MAPPA 1: DISPOSIZIONE GENERALE BATTAGLIA GIORNO 1
+**Griglia ultra-clear:** `Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 1 REVISED (regia 60×108, 3 m/q, con fasi)
 **Immagine:** [151] `hammerfist-map1.png`
 
 **Tipo:** Overview strategico  
@@ -294,6 +307,7 @@ Reference quick distanze e formazioni. Aggiorna posizioni mentre battaglia proce
 ---
 
 ### MAPPA 2A: FORTEZZA HAMMERFIST VISTA DALL'ALTO
+**Griglia ultra-clear:** `Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 2A REVISED (120×80, 1,5 m)
 **Immagine:** [152] `hammerfist-map2a.png` — **reale (C3)**: `immagini/04.webp`, `immagini/Generated Image October 03, 2025 - 5_44PM.webp`, `immagini/new_maps/Generated Image October 03, 2025 - 6_14PM.webp` (mappe iso); `immagini/05.webp` (arte)
 
 **Tipo:** Mappa tattica isometrica top-down  
@@ -361,6 +375,7 @@ Vista dall'alto completa fortezza nanica Hammerfist. Mostra layout strategico da
 ---
 
 ### MAPPA 2B: FORTEZZA VISTA FRONTALE
+**Griglia ultra-clear:** `Hammerfist-L2-REVISED-Ultra-Clear.md` → VISTA 4 della MAPPA 2A REVISED
 **Immagine:** [153] `hammerfist-map2b.png`
 
 **Tipo:** Vista prospettica dal basso  
@@ -422,6 +437,7 @@ Vista from below rende fortezza appear **INESPUGNABILE**. Attaccanti devono:
 ---
 
 ### MAPPA 2C: FORTEZZA SEZIONE LATERALE
+**Griglia ultra-clear:** `Hammerfist-L2-REVISED-Ultra-Clear.md` → VISTA 3 della MAPPA 2A REVISED
 **Immagine:** [154] `hammerfist-map2c.png`
 
 **Tipo:** Cutaway cross-section  
@@ -483,6 +499,7 @@ Linee vista verticali:
 ---
 
 ### MAPPA 2: SCHIERAMENTO DIFENSIVO TRUPPE
+**Griglia ultra-clear:** `Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 2 REVISED (tabella su coordinate 2A)
 **Immagine:** [162] `hammerfist-deploy.png`
 
 **Tipo:** Schema posizioni unità  
@@ -551,6 +568,7 @@ DM aggiorna posizioni quando:
 ---
 
 ### MAPPA 3: MOVIMENTI E FASI ASSALTO
+**Griglia ultra-clear:** `Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 3 REVISED (overlay con rotte sulla MAPPA 1 REVISED)
 **Immagine:** [163] `hammerfist-phases.png`
 
 **Tipo:** Diagramma tattico fasi  
@@ -659,6 +677,7 @@ Timeline Fase helps DM trackare:
 ---
 
 ### MAPPA 4: EVOLUZIONE DANNI (GIORNI 1-3)
+**Griglia ultra-clear:** `Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 4 REVISED (stati A-C con coordinate 2A)
 **Immagine:** [155] `hammerfist-map4.png`
 
 **Tipo:** Three-panel progression  
@@ -749,6 +768,7 @@ Visual aid helps players understand stakes without calculating PF numericamente.
 ---
 
 ### MAPPA 2B-CORRETTA: ATTACCO DEL DRAGO
+**Griglia ultra-clear:** `Hammerfist-L2-REVISED-Ultra-Clear.md` → MAPPA 2B-CORRETTA REVISED (40×26, 1,5 m, cono del soffio)
 **Immagine:** [156] `hammerfist-dragon.png` — **reale (C3)**: `immagini/07.webp` + `immagini/fauciDiPalude.webp` + `immagini/new_maps/Generated Image October 03, 2025 - 6_22PM.webp`
 
 **Tipo:** Moment cinematico  
@@ -822,6 +842,7 @@ Questo è **TURNING POINT** Giorno 2. Soffio drago devastates leadership nanico,
 ## 🏃 SESSIONE 3: DALLE PROFONDITÀ DELLA TERRA
 
 ### MAPPA 3X: INGRESSO PASSAGGI ANTICHI
+**Griglia ultra-clear:** `Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA H3-1 (40×40, 1,5 m)
 **Immagine:** [157] `hammerfist-3x.png` — **reale (C3)**: `immagini/08.webp` (mappa evacuazione)
 
 **Tipo:** Escape tactical  
@@ -904,6 +925,7 @@ Cortile Interno ridotto inferno fumante. Pozze acido verde corrosivo steam ovunq
 ---
 
 ### MAPPA 3Y: IL PONTE SOSPESO
+**Griglia ultra-clear:** `Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 3Y REVISED (33×27, 1,5 m)
 **Immagine:** [157b] `hammerfist-3y.png` — **reale (C3)**: `immagini/09.webp` (Borin al ponte) — `[INFERRED — numero immagine non
 ancora assegnato, migrato da 00_ATLANTE VISIVO...-complete.md — A8]`
 
@@ -939,6 +961,7 @@ MAPPA 5.
 ---
 
 ### MAPPA 3Z: INCROCIO SILENZIOSO
+**Griglia ultra-clear:** `Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 3Z REVISED (33×33, 1,5 m)
 **Immagine:** [158] `hammerfist-3z.png`
 
 **Guida narrativa:** `../ARC08-01-GUIDA-DM.md` → Incontro 2F "L'Incrocio Silenzioso"
@@ -1025,6 +1048,7 @@ Multi-threat simultaneous:
 ---
 
 ### MAPPA 5: CUORE DELLA MONTAGNA
+**Griglia ultra-clear:** `Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 5 REVISED (67×53, 1,5 m)
 **Immagine:** [159] `hammerfist-map5.png` — **reale (C3)**: `immagini/sala-interna-hammerfist.webp`
 
 **Tipo:** Sanctuary + Epic reveal  
@@ -1132,6 +1156,7 @@ Caverna naturale bellezza mozzafiato, cathedral-like grandezza. Soffitto 40m alt
 ## 🏆 SESSIONE 4: LA TEMPESTA E LA VITTORIA FINALE
 
 ### MAPPA 4X: CAMPO BATTAGLIA FINALE - VISTA LATERALE
+**Griglia ultra-clear:** `Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 4X REVISED (tabella quote/vantaggi)
 **Immagine:** [160] `hammerfist-4x.png`
 
 **Tipo:** Pre-charge elevation diagram  
@@ -1194,6 +1219,7 @@ This map shows MOMENT BEFORE. Next map (4 Unified) shows DURING charge + aerial 
 ---
 
 ### MAPPA 4: BATTAGLIA FINALE AEREA E TERRESTRE
+**Griglia ultra-clear:** `Hammerfist-L3-REVISED-Ultra-Clear.md` → MAPPA 4 REVISED (regia 60×68, 3 m/q + vista altitudini)
 **Immagine:** [161] `hammerfist-final.png` — **reale (C3)**: `immagini/10.webp` + `immagini/scontro-finale.webp` (arte), `immagini/11.webp` (mappa 4A) + `immagini/12.webp` (vista aerea)
 
 **Tipo:** Epic cinematic dual-front  

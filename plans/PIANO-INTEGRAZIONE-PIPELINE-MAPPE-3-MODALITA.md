@@ -87,9 +87,9 @@ realizzata di fatto.
 ## 3. Implementazione (questa PR)
 
 ### Lotto M1 — Contratto JSON + compilatore (G1, G2) ✅
-- `scripts/schemas/tactical_map.schema.json` — schema draft-07 del contratto
+- `scripts/schemas/tactical_map.schema.json`: schema draft-07 del contratto
   (map_size, regions, structures, hazards, lights, units, notes).
-- `scripts/compile_map_json.py` — validatore **stdlib** (coordinate in bounds,
+- `scripts/compile_map_json.py`: validatore **stdlib** (coordinate in bounds,
   simboli nella legenda universale, geometria) + compilatore JSON → master
   griglia-emoji con i 3 blocchi companion e tabella **FORZE** (astrazione per
   unità: `area` + `quantity`, non un token per soldato). `--validate-only`
@@ -98,7 +98,7 @@ realizzata di fatto.
   giocabile della campagna (accampamento Mano Rossa).
 
 ### Lotto M2 — Export UVTT/dd2vtt (G3) ✅
-- `scripts/export_uvtt.py` — dal master emoji estrae **muri** (edge-tracing
+- `scripts/export_uvtt.py`: dal master emoji estrae **muri** (edge-tracing
   cella-per-cella + merge di run collineari → `line_of_sight`), **porte**
   (`portals`), **luci** (da bracieri/candele/fuochi o dalle `lights` esplicite),
   `resolution` con `pixels_per_grid`. Riusa il parser di `render_map_svg.py`.
@@ -128,11 +128,10 @@ realizzata di fatto.
 - Tutti i 16 SVG committati rigenerati (bussola globale); `validate_maps` verde.
 
 ### Lotto M4 — Documentazione e modello mentale (G5, G6) ✅
-- `skills/rumblingstone-mapmaking/references/tre-modalita-mappe.md` — le 3
+- `skills/rumblingstone-mapmaking/references/tre-modalita-mappe.md`: le 3
   modalità, il contratto JSON, il **system prompt per l'LLM**, i formati di
   consegna (SVG/PNG/UVTT).
-- `skills/rumblingstone-mapmaking/references/stile-illustrazione-handout.md` —
-  direzione artistica per convenzioni + **box confini IP** (no clone di artisti
+- `skills/rumblingstone-mapmaking/references/stile-illustrazione-handout.md`: direzione artistica per convenzioni + **box confini IP** (no clone di artisti
   viventi; coerente con ADR-0005 e hero-map §"Cosa NON fare").
 - Aggiornati `SKILL.md` (3 modalità, tool, trigger), `scripts/README-automation.md`
   (righe tabella), `.gitignore` (clone ComfyUI + export vtt/png), `ci.yml`
@@ -162,7 +161,7 @@ realizzata di fatto.
 
 ## 5. Rischi / attenzioni
 
-- **UVTT è un export, non il master** — non committarlo, non validarlo in CI
+- **UVTT è un export, non il master**: non committarlo, non validarlo in CI
   (gitignorato). Il master resta la griglia emoji.
 - **`pixels_per_grid`**: default 100 nel `.uvtt`; se si incorpora un PNG di
   sfondo, esportarlo alla stessa risoluzione (`export_map_png.py --scale`) e

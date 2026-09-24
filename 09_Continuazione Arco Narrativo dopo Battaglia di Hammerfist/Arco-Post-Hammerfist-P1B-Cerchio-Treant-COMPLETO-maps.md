@@ -165,6 +165,18 @@ DISTANZE CHIAVE:
 - Centro Altare → Qualsiasi Menhir: 12m (8 quadrati)
 - Raggio Zona Verde: 15m (10 quadrati) dal centro
 - Raggio Fumo/Cenere: 18m (12 quadrati) dal centro
+
+--- ANNOTAZIONI (overlay professionale reso da render_map_svg.py) ---
+@north N
+@mark 1 ; O2 ; Ingresso PG (sentiero naturale 4,5 m)
+@mark 2 ; O20 ; Altare centrale (focus rituale)
+@mark 3 ; W24 ; Menhir SE — il Treant corrotto emerge qui
+@mark 4 ; J14 ; Cerchio dei menhir (8 pietre, 4,5 m)
+@path Squadra incendiaria drow (ovest) ; A16 D18 F20 ; #d62828
+@path Squadra incendiaria drow (est) ; AO16 AL18 AA20 ; #d62828
+@path Avanzata PG (dal sentiero nord) ; O2 O9 O18 ; #2b9348
+@zone F10-X30 ; Zona verde protetta (raggio 15 m, +2 PF/round)
+@zone C7-AB33 ; Anello di fumo, cenere e terra bruciata (i drow bruciano la foresta)
 ```
 
 ---

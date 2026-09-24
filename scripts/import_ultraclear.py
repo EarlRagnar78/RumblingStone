@@ -63,13 +63,17 @@ SCHEMA_VERSION = "1.0"
 DEFAULT_BASE_TERRAIN = "🟩"
 DEFAULT_SCALE = 1.5
 
+from dmcore import legenda  # noqa: E402
+
 SYMBOLS = rms.SYMBOLS
 FILL_SYMS = {s for s, d in SYMBOLS.items() if d.get("mode") == "fill"}
 UNIT_SYMS = {s for s, d in SYMBOLS.items() if d.get("mode") == "unit"}
 ICON_SYMS = {s for s, d in SYMBOLS.items() if d.get("mode") == "icon"}
 
 # icons that read as environmental hazards rather than built structures
-HAZARD_SYMS = {"🔥", "💥", "💀", "🕳", "⚡", "❄", "🕸"}
+# ⚠️ Non si dichiara qui: dal 2026-09-12 la fonte e' `scripts/legend.yaml`
+# (ADR-0048), e il gate `legend/single-source` boccia chi ridichiara un set.
+HAZARD_SYMS = set(legenda.pericoli())
 
 # keyword → (role, symbol) for reconstructing geometry from a coordinate table
 # (used only when the grid is unusable and the table is authoritative). Ordered:
@@ -87,6 +91,14 @@ STRUCT_KEYWORDS: list[tuple[str, str, str]] = [
     ("ponte", "structure", "🌉"),
     ("balista", "structure", "🎯"),
     ("balestra", "structure", "🎯"),
+    # ADR-0042: le tre cose che stavano sotto ⬛ hanno un simbolo ciascuna.
+    ("tenda", "structure", "⛺"),
+    ("tende", "structure", "⛺"),
+    ("padiglione", "structure", "⛺"),
+    ("accampamento", "structure", "⛺"),
+    ("dais", "structure", "🔳"),
+    ("pedana", "structure", "🔳"),
+    ("piattaforma", "structure", "🔳"),
 ]
 
 # keyword (matched on WORD boundaries, so "re" ≠ "torre") → unit token.
@@ -595,7 +607,8 @@ def _emit_from_tables(pmap: ParsedMap, map_size: list[int]) -> tuple[dict, list[
             entry["label"] = e.name + (f" — {e.note}" if e.note else "")
             structures.append(entry)
             target = f"/structures/{len(structures) - 1}"
-        # a fallback default (⬛, no keyword matched) is the most uncertain guess
+        # a fallback default (⬛ = edificio, no keyword matched) is the most
+        # uncertain guess: dopo ADR-0042 ⬛ non e' piu' un jolly per tenda e dais
         _assume(e.name, role, sym, target,
                 extra_expected=None if matched else {"note": "nessuna keyword: default generico"})
         if count is not None:
@@ -1178,7 +1191,7 @@ def main(argv=None) -> int:
     if args.emit_md and not multi:
         outdir = Path(args.emit_md)
         outdir.mkdir(parents=True, exist_ok=True)
-        stem = rms.slugify(maps[0].title)
+        stem = rms.nome_mappa(maps[0].title)
         json_tmp = outdir / f"{stem}.draft.json"
         json_tmp.write_text(_dumps(drafts[0]) + "\n", encoding="utf-8")
         rc = cmj.main([str(json_tmp), "-o", str(outdir / f"{stem}.md")])

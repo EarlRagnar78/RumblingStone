@@ -16,10 +16,10 @@ Poi è nato un modulo che **non presuppone niente di tutto questo**: sei PG
 pregenerati, Golarion, Pathfinder 1e, tre serate, nessuna continuità con la campagna.
 Trattarlo come un arco avrebbe prodotto due danni simmetrici:
 
-1. **assorbirlo nella campagna** — e allora avrebbe ereditato `state.md`, ADR-0007,
+1. **assorbirlo nella campagna**: e allora avrebbe ereditato `state.md`, ADR-0007,
    il branch di gruppo e il canone dei Reami, cioè esattamente ciò che il modulo
    esiste per non avere;
-2. **lasciarlo fuori da ogni regola** — ed è quello che è successo per un giorno:
+2. **lasciarlo fuori da ogni regola**: ed è quello che è successo per un giorno:
    `validate_modules.py` copre solo i master `ARC*-DEF-*.md`, quindi il modulo nuovo
    ha vissuto senza **nessun gate**, e un file rinominato non l'avrebbe scoperto
    nessuno fino al tavolo.
@@ -94,7 +94,7 @@ quattro condizioni — tutte controllate da `validate_standalone.py`:
 2. **docstring di modulo** che dica cosa produce e con quale comando si rigenera;
 3. **citato in un `.md` del modulo**, così esiste anche per chi non fruga nelle
    cartelle;
-4. **compila** — smoke minimo, in CI insieme al resto del gate.
+4. **compila**: smoke minimo, in CI insieme al resto del gate.
 
 Restano invece **fuori discussione** in un generatore locale: scrivere fuori dalla
 propria cartella, toccare canone, chiamare la rete. Un tool che fa una di queste cose
@@ -115,9 +115,9 @@ non è locale al modulo: va in `scripts/` e segue ADR-0012 per intero.
 
 ## Copertura
 
-- `scripts/validate_standalone.py` — il gate, in CI a ogni PR (incluse le quattro
+- `scripts/validate_standalone.py`: il gate, in CI a ogni PR (incluse le quattro
   condizioni del §4)
-- `scripts/build_monster_catalog.py` — l'esclusione
-- `STANDALONE-Il-Drappo-di-Tarsilia/` — l'implementazione di riferimento
+- `scripts/build_monster_catalog.py`: l'esclusione
+- `STANDALONE-Il-Drappo-di-Tarsilia/`: l'implementazione di riferimento
 - [ADR-0018](ADR-0018-apparato-uso-obbligatorio.md) — cosa deve contenere la guida
   del DM

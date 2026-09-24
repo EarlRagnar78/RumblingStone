@@ -1,4 +1,4 @@
-# Mira Serani, «l'Aranea» — la faccia rubata
+# Mira Serani, «l'Aranea» — la faccia rubata [RIMANDO]
 
 > **Lotto R7** del `plans/PIANO-REINTEGRAZIONE-PNG-AP-RHOD.md` (2026-07-20).
 > Reintegrazione della villain AP **Mira Serani** (aranea spia della Mano
@@ -17,7 +17,7 @@ smascherarla con un solo sguardo.
 **CR**: 8 (canon, calibrata PG 8-9) | **Race/Class**: aranea (mutaforma)
 Stregone 6 — statblock: `mira-serani-aranea-cr8.md` in questa cartella.
 Per il **ritorno ad APL 13** → ramo boost §5 (CR 11 skirmisher / CR 13-14 boss).
-**Key stats**: vedi statblock. Sintesi: mutaforma (bimba Piccola / adolescente
+**Key stats**: → `mira-serani-aranea-cr8.md`. Sintesi: mutaforma (bimba Piccola / adolescente
 Media), incantatrice-controllore, veleno, fuga via *invisibilità*/mutare forma, CD chiave 14-16.
 **Token**: — (da assegnare)
 

@@ -93,10 +93,10 @@ settimana: `validate_modules.py` resta com'è, e l'asticella vive nella skill.
 ## Copertura
 
 - `skills/rumblingstone-module-standard/SKILL.md` §15 — l'obbligo, nella checklist
-- `skills/rumblingstone-playtest/SKILL.md` — come si misura se funziona
-- `STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md` — implementazione di
+- `skills/rumblingstone-playtest/SKILL.md`: come si misura se funziona
+- `STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md`: implementazione di
   riferimento dei punti 1-6 e 8
-- `STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/handout/` — i prop (punto 7)
-- `STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md` — la memoria (punto 9)
+- `STANDALONE-Il-Drappo-di-Tarsilia/ALLEGATI/handout/`: i prop (punto 7)
+- `STANDALONE-Il-Drappo-di-Tarsilia/STATO-DEL-MODULO.md`: la memoria (punto 9)
 - [ADR-0014](ADR-0014-regia-sensoriale-obbligatoria.md) — la regia delle sequenze a
   battute, di cui questo ADR è il completamento fuori dalla scena

@@ -34,8 +34,8 @@ A typical campaign-prep question loads, in this order:
 
 1. `rumblingstone-campaign/SKILL.md` (and its `references/campaign-coherence.md`
    plus `campaign/state.md`) — establishes what is currently true.
-2. `forgotten-realms-lore/SKILL.md` — establishes the setting frame.
-3. `dnd-35-srd/SKILL.md` — establishes the rules frame.
+2. `forgotten-realms-lore/SKILL.md`: establishes the setting frame.
+3. `dnd-35-srd/SKILL.md`: establishes the rules frame.
 
 Any *generation* request additionally loads `rumblingstone-narrative-style`
 (mandatory style engine — AGENTS.md rule 11).

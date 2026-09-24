@@ -1,4 +1,4 @@
-# Zin'thara Vel'Ryn — «la Voce di Ragnatela»
+# Zin'thara Vel'Ryn — «la Voce di Ragnatela» [RIMANDO]
 
 > **[ACCEPTED — DM-canon]** Approvata dal DM il **2026-08-05**.
 > Statblock: `zin-thara-vel-ryn-cr12.md` (questa cartella).

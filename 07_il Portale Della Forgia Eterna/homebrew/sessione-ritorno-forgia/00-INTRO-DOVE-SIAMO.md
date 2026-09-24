@@ -34,15 +34,18 @@ Hammerfist preme sul riposo. Nessun nemico, nessun combattimento.
   (Terra), forgiato contro Terros**. Manca solo il Rubino.
 - **Bottino intatto** `[canone giocato]`: al rito **nessuno si è spogliato**.
   Geode Titanico, **Cuore di Terros** e geodi sono ancora del party.
-- **TORDEK ha accettato il Peso nel corpo**: **−2 DES / +2 COS permanenti**.
-  Per un monaco è una piccola morte — CA senz'armatura, Riflessi e iniziativa
-  scendono di 1 — e per il portatore dei Bracieri è la cosa più coerente che
-  potesse succedere. **I Bracieri non l'hanno lodato**: un vecchio fabbro dà
-  per scontata la cosa giusta. Terros è caduto, quindi la condizione del potere
-  «Diventare una Collina» è **sbloccata** `[TODO aperto sulla sua scheda]`.
-  Porta inoltre nello zaino il **Seme-Mercato di Varis**, e **non sa cosa sia**.
-- **Thorik ha guardato**. Quello che regge sempre, stavolta non ha retto lui:
-  vale una riga nella catarsi davanti ad A3.
+- **THORIK ha accettato il Peso nel corpo**: **−2 DES / +2 COS permanenti**
+  *(corretto 2026-08-06: il pegno è del portatore, non di Tordek)*.
+  Per chi fa già l'ancora è diventare ancora più immobile — CA, Riflessi e
+  iniziativa scendono di 1, i pf salgono. **Attenzione a come lo giochi**: la
+  DES era già la sua statistica povera, quindi il malus **non si vede** e il
+  bonus sì. Ha pagato dove nessuno guarda. E **non sa** che la presenza verde
+  che gli ha tenuto le spalle era Hella (eco E-07f — non spiegarlo prima del
+  rito).
+- **TORDEK**: **nessun malus dal rito**, non è mai stato suo. Terros è caduto,
+  quindi la condizione del potere dei Bracieri **«Diventare una Collina»** è
+  **sbloccata** `[TODO aperto sulla sua scheda]`. Porta nello zaino il
+  **Seme-Mercato di Varis**, e **non sa cosa sia**.
 - **Artemis**: Anello riforgiato. Ha preso il Seme **senza toccarlo** e l'ha
   fatto portare a Tordek: **nessun Marchio attivo**, Varis non localizza
   nessuno — ma la gemma è nel gruppo, tiepida, e l'offerta non scade.

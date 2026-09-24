@@ -8,7 +8,8 @@ niente indice cliccabile degno, e i font restano quelli di sistema.
 
 Questo esportatore affianca quella catena **senza sostituirla**: legge lo stesso
 manifest, converte i master markdown in sorgente Typst e produce **un volume
-unico** con tipografia embedded (EB Garamond + Cinzel, OFL, in `typst/fonts/`),
+unico** con tipografia embedded (EB Garamond, Cinzel e Inconsolata — OFL, in
+`scripts/fonts/`),
 due colonne, fregi di capitolo e segnalibri PDF generati dagli heading.
 
     schermo  →  build_booklet_html.py  →  .html + .hb.md      (invariato)
@@ -28,6 +29,7 @@ Uso:
     python3 scripts/export_booklet_typst.py MANIFEST.json --all      # tutto, DM incluso
     python3 scripts/export_booklet_typst.py MANIFEST.json --keep-typ # conserva il sorgente .typ
     python3 scripts/export_booklet_typst.py MANIFEST.json --list     # elenca i capitoli
+    python3 scripts/export_booklet_typst.py MANIFEST.json --carta bianca  # senza fondo
 
 Dipendenze: stdlib + il binario `typst` (https://github.com/typst/typst,
 Apache 2.0). Se manca, lo script **dice come installarlo ed esce pulito**, senza
@@ -44,33 +46,26 @@ from __future__ import annotations
 import argparse
 import json
 import re
-import shutil
 import subprocess
 import sys
-import unicodedata
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from dmcore.testo import slug  # noqa: E402
 from dmcore.schede import Scheda, SchedaError, leggi_schede  # noqa: E402
+from dmcore.statblock import StatblockError, leggi as leggi_statblocco  # noqa: E402
+
+import binari  # noqa: E402  (accanto a questo file)
 
 ROOT = Path(__file__).resolve().parent.parent
 TEMA = ROOT / "scripts" / "typst" / "tema-rumblingstone.typ"
 SCHEDA_PG = ROOT / "scripts" / "typst" / "scheda-pg.typ"
-FONTS = ROOT / "scripts" / "typst" / "fonts"
+# Pacchetti Typst vendorizzati (ADR-0026): la build non scarica niente. Senza
+# questo percorso `@preview/...` andrebbe a packages.typst.org, e una build che
+# dipende dalla rete non e' riproducibile — ne' compilabile offline.
+PACCHETTI = ROOT / "scripts" / "typst" / "packages"
+FONTS = ROOT / "scripts" / "fonts"
 
-INSTALLA = """\
-Il binario «typst» non è nel PATH. È un singolo eseguibile, Apache 2.0:
-
-  Linux/macOS   curl -sSL https://github.com/typst/typst/releases/latest/download/\\
-                  typst-x86_64-unknown-linux-musl.tar.xz | tar xJ
-                  sudo install typst-*/typst /usr/local/bin/
-  Fedora/Bazzite  brew install typst        (oppure il tarball qui sopra)
-  Arch            pacman -S typst
-  Windows         winget install --id Typst.Typst
-
-Niente panico se non lo installi: `export_booklet_pdf.py` continua a produrre i
-PDF per capitolo con Chromium. Questo esportatore serve al volume da stampa.
-"""
 
 
 def typ_path(p: Path) -> str:
@@ -82,9 +77,79 @@ def typ_path(p: Path) -> str:
     return "/" + p.resolve().relative_to(ROOT).as_posix()
 
 
-def slug(s: str) -> str:
-    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
-    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", s.lower())).strip("-") or "capitolo"
+# ── immagini ─────────────────────────────────────────────────────────────────
+# Un'immagine larga dentro una colonna da 8 cm non è un'immagine: è un
+# francobollo. La regola è la stessa delle tabelle larghe — se è orizzontale
+# scavalca le due colonne — e per applicarla serve sapere quanto è larga
+# davvero. Si legge dall'intestazione del file, senza dipendenze.
+
+def dimensioni(f: Path) -> tuple[int, int] | None:
+    """(larghezza, altezza) in pixel per PNG/JPEG, in unità utente per SVG."""
+    try:
+        testa = f.read_bytes()[:4096]
+    except OSError:
+        return None
+    if testa[:8] == b"\x89PNG\r\n\x1a\n" and testa[12:16] == b"IHDR":
+        return int.from_bytes(testa[16:20], "big"), int.from_bytes(testa[20:24], "big")
+    if testa[:2] == b"\xff\xd8":
+        dati = f.read_bytes()
+        i = 2
+        while i < len(dati) - 9:
+            if dati[i] != 0xFF:
+                i += 1
+                continue
+            marcatore = dati[i + 1]
+            if 0xC0 <= marcatore <= 0xCF and marcatore not in (0xC4, 0xC8, 0xCC):
+                return (int.from_bytes(dati[i + 7:i + 9], "big"),
+                        int.from_bytes(dati[i + 5:i + 7], "big"))
+            i += 2 + int.from_bytes(dati[i + 2:i + 4], "big")
+        return None
+    if b"<svg" in testa:
+        vb = re.search(rb'viewBox\s*=\s*"([-\d.\s]+)"', testa)
+        if vb:
+            n = vb.group(1).split()
+            if len(n) == 4:
+                return int(float(n[2])), int(float(n[3]))
+        w = re.search(rb'width\s*=\s*"(\d+)', testa)
+        h = re.search(rb'height\s*=\s*"(\d+)', testa)
+        if w and h:
+            return int(w.group(1)), int(h.group(1))
+    return None
+
+
+def figura(alt: str, src: str, base: Path) -> str:
+    """`![alt](src)` → `#figura(...)`, con l'avviso se il file non c'è.
+
+    Prima di questa funzione la sintassi cadeva nella regola dei link e
+    l'immagine finiva stampata come **il testo dell'alt preceduto da `!`**:
+    nel booklet del Palio erano tredici righe («!Stemma Oca», «!Piazza del
+    Palio»…). Un buco silenzioso in un volume da stampa è peggio di un errore.
+    """
+    if re.match(r"^[a-z]+://", src):
+        print(f"  ⚠ immagine remota ignorata (serve un file nel repo): {src}", file=sys.stderr)
+        return ""
+    f = (base / src).resolve()
+    if not f.is_file():
+        print(f"  ⚠ immagine mancante: {src}", file=sys.stderr)
+        return ("#block(width: 100%, inset: 8pt, stroke: (dash: \"dashed\", paint: rgb(\"#b9a789\")))"
+                f"[#align(center)[#text(size: 8pt, fill: rgb(\"#7d2b1f\"))[immagine mancante: {inline(src)}]]]")
+    try:
+        dentro = typ_path(f)
+    except ValueError:
+        # Con `--root`, Typst vede SOLO ciò che sta sotto la radice: un master
+        # che punta fuori dal repo non è un caso da gestire, è un master da
+        # correggere.
+        print(f"  ⚠ immagine fuori dalla radice del repo, non stampabile: {src}", file=sys.stderr)
+        return ""
+    d = dimensioni(f)
+    larga = bool(d) and d[0] >= d[1] * 1.25
+    voci = [json.dumps(dentro, ensure_ascii=False)]
+    if alt.strip():
+        voci.append(f"didascalia: [{inline(alt)}]")
+        voci.append(f"alt: {json.dumps(alt, ensure_ascii=False)}")
+    if larga:
+        voci.append("larga: true")
+    return "#figura(" + ", ".join(voci) + ")"
 
 
 # ── markdown → Typst ─────────────────────────────────────────────────────────
@@ -107,41 +172,104 @@ def _unesc(s: str) -> str:
     return re.sub(r"\x00(\d+)\x00", lambda m: "\\" + chr(int(m.group(1))), s)
 
 
-# L'ordine delle alternative è la regola: `**a *b***` chiude grassetto e corsivo
-# sullo stesso asterisco, quindi la variante che finisce con `***` va provata
-# PRIMA di quella che finisce con `**` — altrimenti la chiusura si mangia due
-# asterischi su tre e il terzo resta stampato sulla pagina.
-_ENFASI = re.compile(r"(`[^`]+`|\*\*\*.+?\*\*\*|\*\*.+?\*\*\*|\*\*.+?\*\*|\*[^*]+\*)")
+# L'enfasi non si fa con una regex: si fa con una pila.
+#
+# Due difetti veri, tutti e due trovati compilando i booklet della campagna:
+#
+#   * `**Seggio**/Deputazione` — grassetto attaccato a una barra — usciva come
+#     `*Seggio*/Deputazione` e Typst rispondeva «unclosed delimiter»: la
+#     chiusura abbreviata dipende dal carattere che segue. Perciò l'enfasi
+#     esce come `#strong[...]` / `#emph[...]`, che non ha delimitatori da
+#     indovinare;
+#   * `*testo **(nota.)***` — corsivo che contiene un grassetto e chiude tutto
+#     insieme — la regex lo spezzava lasciando un asterisco orfano DENTRO il
+#     grassetto, e l'errore usciva trecento righe più in basso.
+#
+# La pila regge la nidificazione perché è la stessa cosa che fa un parser
+# markdown: un marcatore chiude se quel tipo è già aperto, altrimenti apre.
+# Un asterisco che non può fare né l'uno né l'altro (spazio da entrambi i
+# lati, «3 * 4») resta un asterisco.
+
+_APRE = {"strong": "#strong[", "emph": "#emph["}
+
+
+def _marcatore(n: int, pila: list[str]) -> str:
+    voluti = {1: ["emph"], 2: ["strong"], 3: ["strong", "emph"]}[n]
+    if all(v in pila for v in voluti):
+        limite = min(pila.index(v) for v in voluti)
+        quante = len(pila) - limite
+        del pila[limite:]
+        return "]" * quante
+    fuori = []
+    for v in voluti:
+        if v not in pila:
+            pila.append(v)
+            fuori.append(_APRE[v])
+    return "".join(fuori)
 
 
 def _inline(s: str) -> str:
-    """Il corpo ricorsivo di `inline`: ricorsivo perché l'enfasi si annida.
-
-    `**bacchetta di *cura ferite leggere*, 25 cariche**` è grassetto **con
-    dentro** un corsivo: trattandolo a un livello solo, il corsivo interno
-    faceva chiudere il grassetto nel punto sbagliato e il resto della riga —
-    tutto l'equipaggiamento — usciva in corsivo con un asterisco orfano in coda.
-    """
-    fuori = []
-    for p in _ENFASI.split(s):
-        if not p:
+    fuori: list[str] = []
+    pila: list[str] = []
+    i = 0
+    while i < len(s):
+        c = s[i]
+        if c == "`":
+            j = s.find("`", i + 1)
+            if j != -1:
+                testo = s[i + 1:j].replace("\\", "\\\\").replace('"', '\\"')
+                fuori.append(f'#raw("{testo}")')
+                i = j + 1
+                continue
+        if c == "*":
+            n = 0
+            while i + n < len(s) and s[i + n] == "*":
+                n += 1
+            n = min(n, 3)
+            voluti = {1: ["emph"], 2: ["strong"], 3: ["strong", "emph"]}[n]
+            prec = s[i - 1] if i else " "
+            succ = s[i + n] if i + n < len(s) else " "
+            if prec not in " \t" and any(v in pila for v in voluti):
+                fuori.append(_marcatore(n, pila))
+            elif succ not in " \t":
+                fuori.append(_marcatore(n, pila))
+            else:
+                fuori.append(_esc("*" * n))
+            i += n
             continue
-        if p.startswith("`") and p.endswith("`") and len(p) > 1:
-            fuori.append('#raw("' + p[1:-1].replace('"', '\\"') + '")')
-        elif p.startswith("***") and p.endswith("***") and len(p) > 6:
-            fuori.append("*_" + _inline(p[3:-3]) + "_*")
-        elif p.startswith("**") and p.endswith("**") and len(p) > 4:
-            fuori.append("*" + _inline(p[2:-2]) + "*")     # in Typst * = grassetto
-        elif p.startswith("*") and p.endswith("*") and len(p) > 2:
-            fuori.append("_" + _esc(p[1:-1]) + "_")        # in Typst _ = corsivo
-        else:
-            fuori.append(_esc(p))
+        fuori.append(_esc(c))
+        i += 1
+    fuori.append("]" * len(pila))
     return "".join(fuori)
+
+
+# basename del master → etichetta Typst del suo capitolo. Lo riempie
+# `sorgente()` prima di convertire: serve a trasformare un rimando fra due
+# capitoli DELLO STESSO volume in un salto cliccabile. In un PDF di sessanta
+# pagine un rimando che non si clicca è un rimando che nessuno segue.
+RIMANDI: dict[str, str] = {}
+
+
+def _link(testo: str, bersaglio: str) -> str:
+    """Un `[testo](bersaglio)`: link interno se il bersaglio è nel volume."""
+    file = bersaglio.split("#")[0].split("/")[-1]
+    et = RIMANDI.get(file)
+    if et:
+        return f"#link(<{et}>)[{_unesc(_inline(testo))}]"
+    return _inline(testo)
+
+
+_ENTITA = {"&nbsp;": "\u00a0", "&amp;": "&", "&lt;": "<", "&gt;": ">",
+           "&quot;": '"', "&#39;": "'", "&mdash;": "\u2014", "&ndash;": "\u2013"}
 
 
 def inline(s: str) -> str:
     """Grassetto, corsivo, codice e link, nell'ordine che evita le collisioni."""
-    s = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", s)  # link → solo il testo
+    # I master usano qualche entità HTML (il &nbsp; per non spezzare «+7 (1d8)»):
+    # in HTML si risolvono da sole, in Typst finirebbero STAMPATE LETTERALI.
+    for ent, ch in _ENTITA.items():
+        s = s.replace(ent, ch)
+    s = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", lambda m: _link(m.group(1), m.group(2)), s)
     return _unesc(_inline(s))
 
 
@@ -149,23 +277,86 @@ def _celle(riga: str) -> list[str]:
     return [c.strip() for c in riga.strip().strip("|").split("|")]
 
 
-_BLOCCO = re.compile(r"^(#{1,4}\s|>|---+\s*$|\s*[-*]\s+|\s*\d+\.\s+|\s*\||```)")
+_BLOCCO = re.compile(r"^(#{1,4}\s|>|---+\s*$|\s*[-*]\s+|\s*\d+\.\s+|\s*\||```|!\[|§§HB-)")
 
 
-def md_to_typ(md: str) -> str:
-    righe = md.split("\n")
+_IMG = re.compile(r"!\[([^\]]*)\]\(([^)]+)\)")
+
+
+# I prop sono sorgenti HOMEBREWERY (.hb.md): usano una sintassi a blocchi che il
+# loro editor interpreta e che qui finirebbe STAMPATA LETTERALE — «{{descriptive»,
+# «{{note», «{{margin-top:60px}}» in mezzo al testo del contratto. Si traduce nei
+# due blocchi del tema che hanno un senso, e si butta quando è solo impaginazione
+# di quell'editor.
+_HB_APRE = re.compile(r"^\{\{(descriptive|note|footnote|pageNumber|margin-top|wide|column)\b([^}]*)\}?\s*$")
+_HB_INLINE = re.compile(r"\{\{[^{}\n]*\}\}")
+
+
+def _spoglia_homebrewery(righe: list[str]) -> list[str]:
+    """Toglie l'impaginazione dell'editor e converte i due blocchi che hanno senso."""
+    fuori, pila = [], []
+    for ln in righe:
+        s = ln.strip()
+        # ⚠️ Le righe AUTO-CHIUSE — «{{margin-top:60px}}», «{{pageNumber,auto}}» —
+        # non aprono niente: sono impaginazione dell'editor e si buttano. Metterle
+        # sulla pila lascia un blocco aperto e Typst muore con «unclosed delimiter».
+        if s.startswith("{{") and s.endswith("}}"):
+            continue
+        m = _HB_APRE.match(s)
+        if m:
+            tipo = m.group(1)
+            if tipo in ("descriptive", "note"):
+                fuori.append("§§HB-APRE§§" + tipo)
+                pila.append(tipo)
+            else:
+                pila.append("scarta")        # margin-top, pageNumber, footnote…
+            continue
+        if s == "}}":
+            if pila:
+                t = pila.pop()
+                if t in ("descriptive", "note"):
+                    fuori.append("§§HB-CHIUDE§§")
+            continue
+        fuori.append(_HB_INLINE.sub("", ln))
+    return fuori
+
+
+def md_to_typ(md: str, base: Path | None = None, capolettera: bool = False) -> str:
+    """Il sottoinsieme di markdown che i master usano davvero → sorgente Typst.
+
+    `base` accende le immagini (senza, restano testo: è il caso delle schede,
+    dove il ritratto arriva per un'altra strada). `capolettera` mette il
+    versale d'apertura sul primo paragrafo vero del capitolo.
+    """
+    # Un'immagine in mezzo a una riga di testo diventa una riga sua: il resto
+    # del convertitore lavora per blocchi, e una figura non è un blocco inline.
+    if base is not None:
+        md = "\n".join(
+            _IMG.sub(lambda m: "\n" + m.group(0) + "\n", ln) if _IMG.search(ln) else ln
+            for ln in md.split("\n")
+        )
+    righe = _spoglia_homebrewery(md.split("\n"))
+    primo_paragrafo = None
+    ultimo_titolo = ""
     out: list[str] = []
     i = 0
     while i < len(righe):
         ln = righe[i]
 
-        if ln.startswith("```"):                       # blocco di codice
+        if ln.strip().startswith("```"):               # blocco di codice
+            recinto = ln.strip()
             i += 1
             blocco = []
-            while i < len(righe) and not righe[i].startswith("```"):
+            while i < len(righe) and not righe[i].strip().startswith("```"):
                 blocco.append(righe[i])
                 i += 1
             i += 1
+            if recinto == "```statblocco":
+                # Il blocco statistiche non è codice: è un riquadro (ADR-0021).
+                # Stamparlo come `raw` vorrebbe dire mettere in un manuale la
+                # forma-dato invece del mostro.
+                out.append(statblocco_typ("\n".join(blocco), ultimo_titolo))
+                continue
             testo = "\n".join(blocco).replace("`", "\u0060")
             out.append("#block(breakable: true)[#raw(\"" + testo.replace('"', '\\"').replace("\n", "\\n") + "\", block: true)]")
             continue
@@ -199,8 +390,28 @@ def md_to_typ(md: str) -> str:
             out.append(("#leggi[" if aloud else "#nota[") + inline(testo) + "]")
             continue
 
+        # I due blocchi Homebrewery sopravvissuti allo spogliatore diventano i
+        # box del tema: `{{descriptive}}` è un read-aloud, `{{note}}` una nota.
+        if ln.startswith("§§HB-APRE§§"):
+            out.append("#leggi[" if ln.endswith("descriptive") else "#nota[")
+            i += 1
+            continue
+        if ln.startswith("§§HB-CHIUDE§§"):
+            out.append("]")
+            i += 1
+            continue
+
+        m_img = _IMG.fullmatch(ln.strip())
+        if m_img is not None and base is not None:
+            fig = figura(m_img.group(1), m_img.group(2), base)
+            if fig:
+                out.append(fig)
+            i += 1
+            continue
+
         if re.match(r"^#{1,4}\s", ln):
             lvl = len(ln) - len(ln.lstrip("#"))
+            ultimo_titolo = re.sub(r"\s*\[[^\]]*\]\s*$", "", ln[lvl:].strip())
             out.append("=" * lvl + " " + inline(ln[lvl:].strip()))
         elif re.match(r"^---+\s*$", ln):
             out.append("#fregio()")
@@ -224,9 +435,66 @@ def md_to_typ(md: str) -> str:
             while i + 1 < len(righe) and righe[i + 1].strip() and not _BLOCCO.match(righe[i + 1]):
                 i += 1
                 para.append(righe[i])
+            if primo_paragrafo is None:
+                primo_paragrafo = len(out)
             out.append(inline(" ".join(x.strip() for x in para)))
         i += 1
+
+    # Il versale d'apertura va sul primo paragrafo VERO del capitolo, e solo se
+    # è abbastanza lungo da reggerlo: su due righe di cappello starebbe storto.
+    if capolettera and primo_paragrafo is not None:
+        testo = out[primo_paragrafo]
+        if len(testo) >= 120 and testo[:1].isalpha():
+            out[primo_paragrafo] = (
+                "#capolettera(" + json.dumps(testo[0], ensure_ascii=False)
+                + ", [" + testo[1:] + "])"
+            )
     return "\n".join(out)
+
+
+def statblocco_typ(corpo: str, titolo_corrente: str = "") -> str:
+    """Un blocco ```statblocco → una chiamata a `#statblocco()` del tema.
+
+    Se il blocco non si legge, il volume NON si costruisce a metà: si dice
+    quale scheda è rotta. Un riquadro con dentro dei buchi al tavolo è peggio
+    di un errore in compilazione.
+    """
+    try:
+        sb = leggi_statblocco("```statblocco\n" + corpo + "\n```")
+    except StatblockError as e:
+        raise SchedaError(f"blocco statistiche non valido: {e}") from e
+    if sb is None:
+        return ""
+    nome = sb.nome or titolo_corrente
+    voci = [f"nome: {json.dumps(nome, ensure_ascii=False)}"]
+    for chiave, valore in (
+        ("tipo", sb.tipo), ("gs", sb.gs), ("iniziativa", sb.iniziativa),
+        ("sensi", sb.sensi), ("pf", (sb.pf + (f" ({sb.pf_dado})" if sb.pf_dado else "")).strip()),
+        ("velocita", sb.velocita), ("tattica", sb.tattica), ("fonte", sb.fonte),
+    ):
+        if valore:
+            voci.append(f"{chiave}: [{inline(valore)}]")
+    ca = sb.ca + (f", {sb.ca_dettaglio}" if sb.ca_dettaglio else "")
+    if ca.strip():
+        voci.append(f"ca: [{inline(ca)}]")
+    if sb.ts:
+        voci.append(f"ts: [{inline(sb.ts)}]")
+    if sb.attributi:
+        coppie = [c.strip().split(None, 1) for c in sb.attributi.split(",") if c.strip()]
+        voci.append("attributi: (" + "".join(
+            f"({json.dumps(k, ensure_ascii=False)}, {json.dumps(v, ensure_ascii=False)}), "
+            for k, v in (c for c in coppie if len(c) == 2)) + ")")
+    if sb.attacchi:
+        voci.append("attacchi: (" + "".join(
+            "(" + json.dumps(a.split(None, 1)[0], ensure_ascii=False) + ", ["
+            + inline(a.split(None, 1)[1] if len(a.split(None, 1)) > 1 else "") + "]), "
+            for a in sb.attacchi) + ")")
+    if sb.voci:
+        voci.append("voci: (" + "".join(
+            "(" + json.dumps(v.split(":", 1)[0].strip(), ensure_ascii=False) + ", ["
+            + inline(v.split(":", 1)[1].strip() if ":" in v else "") + "]), "
+            for v in sb.voci) + ")")
+    return "#statblocco(\n  " + ",\n  ".join(voci) + ",\n)"
 
 
 # ── le schede pregenerate ────────────────────────────────────────────────────
@@ -327,7 +595,7 @@ def schede_di(cap: dict, base: Path, f: Path) -> list[tuple[str, str]]:
         print(f"  ⚠ schede senza ritratto: {', '.join(mancanti)}", file=sys.stderr)
     piede = cap.get("footer", "")
     return [
-        (f"{s.numero or i}-{slug(s.nome)}", _scheda_typ(s, i, len(elenco), piede))
+        (f"{s.numero or i}-{slug(s.nome, ripiego='capitolo')}", _scheda_typ(s, i, len(elenco), piede))
         for i, s in enumerate(elenco, 1)
     ]
 
@@ -352,23 +620,122 @@ def capitoli(man: dict, base: Path, tutti: bool) -> list[tuple[dict, str, Path]]
     return fuori
 
 
-def fregio_per(titolo: str, file: Path, base: Path) -> str | None:
-    """Il fregio del capitolo, se la sua cartella ne ha uno con un nome affine."""
+def fregio_per(titolo: str, file: Path, base: Path, ripiego: str | None = None) -> str | None:
+    """Il fregio del capitolo, se la sua cartella ne ha uno con un nome affine.
+
+    `ripiego` è il fregio dichiarato dal manifest (chiave `fregio`) e vale per
+    TUTTI i capitoli del volume: serve ai booklet della campagna, dove il
+    medaglione è dell'arco e non del capitolo. Il fregio trovato per nome vince,
+    perché è più specifico.
+    """
     for d in (base.parent / "ALLEGATI" / "tavole" / "fregi", ROOT / "docs" / "assets" / "fregi"):
         if not d.is_dir():
             continue
-        chiave = slug(file.stem)
+        chiave = slug(file.stem, ripiego="capitolo")
         for svg in sorted(d.glob("fregio-*.svg")):
             nome = svg.stem[len("fregio-"):]
             if nome and (nome in chiave or chiave.startswith(nome)):
                 return typ_path(svg)
+    if ripiego:
+        f = (base / ripiego).resolve()
+        if f.is_file():
+            return typ_path(f)
+        print(f"  ⚠ fregio di ripiego mancante: {ripiego}", file=sys.stderr)
     return None
 
 
-def intestazione(man: dict, apparato: bool | None = None) -> list[str]:
+# Le chiavi che questa catena consuma davvero. Tutto ciò che sta in un
+# manifest e non è qui viene DICHIARATO a video invece che ignorato in
+# silenzio: era la promessa di ADR-0020 («la divergenza diventa un controllo
+# automatico, non una promessa») rimasta tale.
+CHIAVI_NOTE = {
+    "title", "subtitle", "brand", "banner", "meta", "footer", "header",
+    "player_footer", "front_matter", "cover_image", "cover_tag", "intro_md",
+    "out", "chapters", "carta", "capolettera", "fregio", "colophon", "formato",
+}
+CHIAVI_SOLO_HTML = {"player_footer", "header", "cover_tag", "out"}
+
+
+# L'ordine in cui le voci compaiono sulla pagina. E' fisso di proposito: un
+# colophon che cambia ordine da un volume all'altro non si legge a colpo d'occhio.
+VOCI_COLOPHON = (
+    ("edizione", "Edizione"),
+    ("versione", "Versione"),
+    ("data", "Data"),
+    ("autori", "A cura di"),
+    ("basato_su", "Basato su"),
+)
+
+
+def crediti_typ(man: dict) -> str | None:
+    """Il `#colophon(...)` da passare a `libro`, o None se il manifest non ne ha uno.
+
+    Nessun valore inventato: se il manifest non dichiara la data, la pagina non
+    la stampa. Dedurla dall'orologio renderebbe il PDF diverso a ogni
+    compilazione — e il gate di stampa in CI verifica proprio il contrario.
+    """
+    col = man.get("colophon")
+    if not isinstance(col, dict) or not col:
+        return None
+    voci = [(etichetta, str(col[chiave]))
+            for chiave, etichetta in VOCI_COLOPHON
+            if col.get(chiave)]
+    if not voci and not col.get("licenza") and not col.get("nota"):
+        return None
+    righe = ", ".join(
+        f'({json.dumps(e, ensure_ascii=False)}, {json.dumps(v, ensure_ascii=False)})'
+        for e, v in voci
+    )
+    return (f'colophon(voci: ({righe}{"," if len(voci) == 1 else ""}), '
+            f'licenza: {json.dumps(col.get("licenza", ""), ensure_ascii=False)}, '
+            f'nota: {json.dumps(col.get("nota", ""), ensure_ascii=False)})')
+
+
+def avvisa_chiavi(man: dict) -> None:
+    ignote = sorted(set(man) - CHIAVI_NOTE)
+    if ignote:
+        print(f"  ⚠ chiavi di manifest sconosciute a entrambe le catene: {', '.join(ignote)}",
+              file=sys.stderr)
+    solo_html = sorted(set(man) & CHIAVI_SOLO_HTML)
+    if solo_html:
+        print(f"  · chiavi che valgono solo per la catena HTML, qui inattive: "
+              f"{', '.join(solo_html)}", file=sys.stderr)
+
+
+def intestazione(man: dict, apparato: bool | None = None, base: Path | None = None,
+                 carta: str = "avorio", formato: str = "a4") -> list[str]:
     """Import e `#show: libro.with(...)`: la testa di ogni sorgente generato."""
     if apparato is None:
         apparato = bool(man.get("front_matter", True))
+    extra: list[str] = []
+    if apparato and base is not None:
+        # `cover_image` e `intro_md` sono relative al MANIFEST, come nella
+        # catena HTML: due catene che risolvono lo stesso percorso in due modi
+        # diversi sono un bug che si scopre in stampa.
+        cop = man.get("cover_image")
+        if cop:
+            f = (base / cop).resolve()
+            if f.is_file():
+                extra.append(f'  copertina: {json.dumps(typ_path(f), ensure_ascii=False)},')
+            else:
+                print(f"  ⚠ cover_image mancante: {cop}", file=sys.stderr)
+        intro = man.get("intro_md")
+        if intro:
+            f = (base / intro).resolve()
+            if f.is_file():
+                extra.append("  intro: [\n"
+                             + md_to_typ(f.read_text(encoding="utf-8"), f.parent)
+                             + "\n  ],")
+            else:
+                print(f"  ⚠ intro_md mancante: {intro}", file=sys.stderr)
+    if apparato:
+        crediti = crediti_typ(man)
+        if crediti:
+            extra.append(f"  crediti: {crediti},")
+    if carta != "avorio":
+        extra.append(f'  carta: {json.dumps(carta, ensure_ascii=False)},')
+    if formato != "a4":
+        extra.append(f'  formato: {json.dumps(formato, ensure_ascii=False)},')
     return [
         f'#import "{typ_path(TEMA)}": *',
         f'#import "{typ_path(SCHEDA_PG)}": scheda',
@@ -376,29 +743,115 @@ def intestazione(man: dict, apparato: bool | None = None) -> list[str]:
         f'  titolo: {json.dumps(man.get("title", ""), ensure_ascii=False)},',
         f'  sottotitolo: {json.dumps(man.get("subtitle", ""), ensure_ascii=False)},',
         f'  brand: {json.dumps(man.get("brand", ""), ensure_ascii=False)},',
-        f'  meta: {json.dumps(man.get("banner", ""), ensure_ascii=False)},',
+        f'  banner: {json.dumps(man.get("banner", ""), ensure_ascii=False)},',
+        f'  meta: {json.dumps(man.get("meta", ""), ensure_ascii=False)},',
         f'  capitolo: {json.dumps(man.get("footer", ""), ensure_ascii=False)},',
         f'  apparato: {"true" if apparato else "false"},',
+        *extra,
         ")",
         "",
     ]
 
 
-def sorgente(man: dict, base: Path, tutti: bool) -> str:
-    parti = intestazione(man)
-    for cap, titolo, f in capitoli(man, base, tutti):
+#: Voci del glossario gia' caricate (il file si legge una volta sola).
+_VOCI_INDICE: list[str] | None = None
+
+
+def voci_indice() -> list[str]:
+    """I nomi canonici del glossario, dal piu' lungo al piu' corto.
+
+    Dal piu' lungo perche' «Corona di Adamantio» va marcata prima di «Corona»:
+    al contrario resterebbe «#voce-indice[Corona] di Adamantio», che nell'indice
+    diventa una voce sbagliata.
+    """
+    global _VOCI_INDICE
+    if _VOCI_INDICE is None:
+        try:
+            sys.path.insert(0, str(ROOT / "scripts"))
+            from validate_prosa import coppie_glossario
+            _VOCI_INDICE = sorted(
+                (it for it, _ in coppie_glossario()
+                 if len(it) > 6 and it not in ("Categoria",)),
+                key=len, reverse=True)
+        except Exception:
+            _VOCI_INDICE = []
+    return _VOCI_INDICE
+
+
+def marca_indice(typ: str) -> str:
+    """Marca la PRIMA occorrenza di ogni voce del glossario, per capitolo.
+
+    ⚠️ Solo su righe di prosa: una riga che comincia per `#` e' un comando Typst
+    e infilarci dentro una funzione romperebbe l'impaginazione. Solo la prima
+    occorrenza: un indice che rimanda a dodici pagine per lo stesso termine non
+    aiuta nessuno a trovarlo.
+    """
+    voci = voci_indice()
+    if not voci:
+        return typ
+    gia: set[str] = set()
+    fuori = []
+    for riga in typ.split("\n"):
+        s = riga.lstrip()
+        if s.startswith("#") or s.startswith("//") or "voce-indice" in riga:
+            fuori.append(riga)
+            continue
+        for v in voci:
+            if v in gia:
+                continue
+            m = re.search(r"(?<![\w#\[])" + re.escape(v) + r"(?![\w\]])", riga)
+            if m:
+                riga = (riga[:m.start()] + "#voce-indice[" + v + "]" + riga[m.end():])
+                gia.add(v)
+        fuori.append(riga)
+    return "\n".join(fuori)
+
+
+def sorgente(man: dict, base: Path, tutti: bool, carta: str = "avorio",
+             formato: str = "a4") -> str:
+    elenco = capitoli(man, base, tutti)
+
+    # Prima le etichette di TUTTI i capitoli, poi la conversione: un rimando in
+    # avanti («vedi il capitolo 12») deve trovare il suo bersaglio anche se il
+    # capitolo 12 non è ancora stato convertito.
+    RIMANDI.clear()
+    for cap, titolo, f in elenco:
+        RIMANDI[f.name] = "cap-" + slug(f.stem, ripiego="capitolo")
+
+    avvisa_chiavi(man)
+    parti = intestazione(man, base=base, carta=carta, formato=formato)
+    predefinito = bool(man.get("capolettera", True))
+    for cap, titolo, f in elenco:
         if cap.get("layout") == "schede":
             parti.append(schede(cap, base, f))
             parti.append("")
             continue
-        fr = fregio_per(titolo, f, base)
+        fr = fregio_per(titolo, f, base, man.get("fregio"))
         parti.append(f"#capitolo-aperto({json.dumps(titolo, ensure_ascii=False)}, "
                      f"{'none' if not fr else json.dumps(fr, ensure_ascii=False)})")
-        corpo = md_to_typ(f.read_text(encoding="utf-8"))
+        parti.append(f"#metadata(\"capitolo\") <{RIMANDI[f.name]}>")
+        corpo = md_to_typ(f.read_text(encoding="utf-8"), f.parent,
+                          capolettera=bool(cap.get("capolettera", predefinito)))
         corpo = re.sub(r"\A\s*=\s[^\n]*\n", "", corpo)   # il titolo lo dà il manifest
         parti.append(corpo)
         parti.append("")
-    return "\n".join(parti)
+    testo = "\n".join(parti)
+    # L'indice analitico e' opt-in dal manifest: non tutti i volumi lo vogliono
+    # (un teaser di due pagine con un indice analitico e' una presa in giro).
+    if man.get("indice_analitico"):
+        marcato = marca_indice(testo)
+        n = marcato.count("#voce-indice[")
+        if n:
+            testo = marcato + ("\n#indice-analitico(colonne: 1)\n"
+                               if formato == "a5" else "\n#indice-analitico()\n")
+        else:
+            # Nessuna voce del glossario in questo volume: e' il caso dei moduli
+            # autoconclusivi, che hanno un'ambientazione loro. Una pagina
+            # «INDICE ANALITICO» vuota in coda e' peggio di nessun indice.
+            print("  · indice analitico chiesto ma nessun nome del glossario "
+                  "compare in questo volume: la pagina non si aggiunge",
+                  file=sys.stderr)
+    return testo
 
 
 def compila(binario: str, typ: Path, pdf: Path) -> tuple[subprocess.CompletedProcess, bool]:
@@ -410,7 +863,8 @@ def compila(binario: str, typ: Path, pdf: Path) -> tuple[subprocess.CompletedPro
     riprova senza — e lo si DICE, invece di consegnare un PDF diverso da quello
     che il comando promette.
     """
-    cmd = [binario, "compile", "--font-path", str(FONTS), "--root", str(ROOT)]
+    cmd = [binario, "compile", "--font-path", str(FONTS), "--root", str(ROOT),
+           "--package-path", str(PACCHETTI)]
     esito = subprocess.run(cmd + [str(typ), str(pdf)], capture_output=True, text=True)
     if esito.returncode != 0 and "internal error" in esito.stderr and "tags" in esito.stderr:
         return subprocess.run(cmd + ["--no-pdf-tags", str(typ), str(pdf)],
@@ -419,7 +873,7 @@ def compila(binario: str, typ: Path, pdf: Path) -> tuple[subprocess.CompletedPro
 
 
 def per_scheda(man: dict, base: Path, tutti: bool, binario: str, nome: str,
-               tieni_typ: bool) -> int:
+               tieni_typ: bool, carta: str = "avorio") -> int:
     """Un PDF per scheda in `<manifest>/schede/`, da mandare a un giocatore solo.
 
     Non è una comodità: sulla scheda c'è «la cosa che non dici». Girare il
@@ -440,7 +894,7 @@ def per_scheda(man: dict, base: Path, tutti: bool, binario: str, nome: str,
         return 2
 
     fuori.mkdir(exist_ok=True)
-    testa = intestazione(man, apparato=False)
+    testa = intestazione(man, apparato=False, base=base, carta=carta)
     for etichetta, corpo in trovate:
         typ = fuori / f"{nome}-{etichetta}.typ"
         pdf = typ.with_suffix(".pdf")
@@ -463,6 +917,13 @@ def main() -> int:
     ap.add_argument("--all", action="store_true", help="tutti i capitoli, ⚠ DM inclusi")
     ap.add_argument("--keep-typ", action="store_true", help="conserva il sorgente .typ generato")
     ap.add_argument("--list", action="store_true", help="elenca i capitoli e esci")
+    ap.add_argument("--carta", choices=("avorio", "bianca"), default="avorio",
+                    help="«bianca» toglie il fondo avorio: sessanta pagine di fondo pieno "
+                         "su una stampante di casa sono una cartuccia")
+    ap.add_argument("--formato", choices=("a4", "a5"), default=None,
+                    help="«a5» compone il libretto a una colonna (9.6 pt): si impone poi "
+                         "due pagine per foglio A4 con «dm volume --imposto», e il corpo "
+                         "resta leggibile invece di scendere al 71%%")
     ap.add_argument("--per-scheda", action="store_true",
                     help="in più, un PDF per ogni scheda in schede/ (da mandare a un giocatore solo)")
     args = ap.parse_args()
@@ -480,15 +941,15 @@ def main() -> int:
             print(f"  {t}{marchio}  ←  {f.relative_to(ROOT) if ROOT in f.parents else f}")
         return 0
 
-    binario = shutil.which("typst")
-    if not binario:
-        print(INSTALLA, file=sys.stderr)
-        return 1
+    # La regola di degradazione pulita sta in `binari.py` (ADR-0027): se manca,
+    # dice come installarlo ed esce con 2 — prima di aprire qualunque file.
+    binario = binari.esigi(binari.TYPST)
 
     typ = base / f"{mp.stem.replace('.manifest', '')}.typ"
     pdf = base / f"{mp.stem.replace('.manifest', '')}-STAMPA.pdf"
     try:
-        src = sorgente(man, base, args.all)
+        src = sorgente(man, base, args.all, args.carta,
+                       args.formato or man.get("formato", "a4"))
     except SchedaError as e:
         print(f"✗ export_booklet_typst: {e}", file=sys.stderr)
         return 1
@@ -515,7 +976,7 @@ def main() -> int:
 
     if args.per_scheda:
         return per_scheda(man, base, args.all, binario,
-                          mp.stem.replace(".manifest", ""), args.keep_typ)
+                          mp.stem.replace(".manifest", ""), args.keep_typ, args.carta)
     return 0
 
 

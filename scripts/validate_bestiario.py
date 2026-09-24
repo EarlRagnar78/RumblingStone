@@ -63,14 +63,22 @@ def warn(msg: str):
 # PF1e Monster-Statistics-by-CR benchmark (semplificato: hp medio e AC media
 # per CR, tolleranze larghe). Fonte: skills/pathfinder-1e-srd (monster-advancement).
 # Solo per il warning di --rules: un GS palesemente fuori scala va rivisto.
-PF_BENCH = {  # cr: (hp_min, hp_max, ac_min, ac_max)
-    1: (10, 25, 11, 16), 2: (16, 40, 12, 17), 3: (22, 55, 13, 18),
-    4: (28, 70, 14, 19), 5: (34, 85, 15, 20), 6: (40, 100, 16, 21),
-    7: (46, 120, 17, 22), 8: (52, 140, 18, 23), 9: (60, 160, 18, 24),
-    10: (68, 185, 19, 25), 11: (76, 210, 20, 26), 12: (84, 240, 21, 27),
-    13: (94, 270, 22, 28), 14: (104, 300, 22, 29), 15: (116, 340, 23, 30),
-    16: (128, 380, 24, 31), 17: (140, 420, 25, 32), 18: (152, 470, 26, 33),
-}
+#: Il benchmark PF1e per GS. Fino al 2026-09-23 era una tabella di fasce
+#: scritta qui, senza fonte dichiarata, e diversa da quella di `dmcore`. Ora
+#: le fasce si ricavano dalla Tabella 1–1 in `pf1e-statistiche-per-gs.yaml`
+#: con la tolleranza scritta nello stesso file: un dato, un posto.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from dmcore.tabelle import TABELLA_1_1, TOLLERANZA_PER_GS  # noqa: E402
+
+
+def banda(cr: float):
+    """(pf minimo, pf massimo, CA minima, CA massima) per un GS, o None."""
+    riga = TABELLA_1_1.get(int(cr)) if cr >= 1 else TABELLA_1_1.get(0.5)
+    if not riga:
+        return None
+    t = TOLLERANZA_PER_GS
+    return (riga["pf"] * t["pf_rapporto_min"], riga["pf"] * t["pf_rapporto_max"],
+            riga["ca"] - t["ca_sotto"], riga["ca"] + t["ca_sopra"], riga["pf"], riga["ca"])
 
 
 def filename_cr(name: str):
@@ -121,6 +129,23 @@ def check_dossier(path: Path):
         err(f"{rel}: dossier senza titolo H1")
 
 
+ARCHIVI = {"_ARCHIVIO", "Old"}
+
+
+def in_archivio(path) -> bool:
+    """Vero se il file sta in una cartella d'archivio.
+
+    Gli archivi contengono **copie** di file vivi. Chi *indicizza* deve
+    saltarle, o ogni copia diventa un record doppio: e' successo il 2026-09-12,
+    quando dodici istantanee fecero passare il catalogo da 305 a 311 record e
+    resero rosso questo gate con un doppione di «Battaglia Finale - Fase 0».
+    ⚠️ La regola vale per chi indicizza, **non** per chi sorveglia: la
+    decisione **D1** tiene apposta `_ARCHIVIO/` dentro il raggio di
+    `validate_maps`, perche' li' lo scopo e' che nessun master sfugga.
+    """
+    return bool(ARCHIVI.intersection(path.parts))
+
+
 def is_statblock(path: Path) -> bool:
     return bool(HAS_CR_RE.search(path.name.lower())) and path.suffix == ".md" \
         and path.name == path.name.lower()
@@ -129,25 +154,80 @@ def is_statblock(path: Path) -> bool:
 CATALOG_IDS: dict = {}
 
 
+#: 🔴 **I campi che il repo usa davvero.** Il blocco ```statblocco``` scrive
+#: `pf:` e `ca:` in italiano — `gs`, `ca`, `pf` e `ts` sono presenti nel **98%**
+#: dei 110 statblocchi veri. Le due regex che stavano qui cercavano `hp N` e
+#: `ac N`: leggevano il **49%** e il **58%**, e il loro «zero avvisi» era meta'
+#: libreria mai guardata.
+#:
+#: ⚠️ **Non leggevano spazzatura, e va detto**: sui 53 file dove entrambe le
+#: forme comparivano il numero estratto coincideva **sempre** col `pf:`
+#: canonico, 53 su 53. Il difetto era **copertura**, non correttezza.
+#: Ventunesimo caso della famiglia «un criterio che non pesca si traveste da
+#: repo pulito» — RICERCA-CONFORMITA-MECCANICA-STATBLOCCHI §4.
+PF_CAMPO = {
+    "pf": re.compile(r"^pf:\s*(\d+)", re.M),
+    "ca": re.compile(r"^ca:\s*(\d+)", re.M),
+}
+#: La forma vecchia resta come ripiego per i pochi file che non hanno il blocco.
+PF_RIPIEGO = {
+    "pf": re.compile(r"\bhp\s*(\d+)"),
+    "ca": re.compile(r"\bac\s*(\d+)"),
+}
+CA_DETTAGLIO = re.compile(r"^ca-dettaglio:\s*(.+)$", re.M)
+CA_VOCI = re.compile(r"(touch|contatto|flat-?footed|colto alla sprovvista)\s*(\d+)", re.I)
+
+
+def valore(text: str, campo: str):
+    """Il valore canonico, col ripiego sulla forma vecchia. Deterministico."""
+    m = PF_CAMPO[campo].search(text)
+    if m:
+        return int(m.group(1))
+    m = PF_RIPIEGO[campo].search(text.lower())
+    return int(m.group(1)) if m else None
+
+
 def check_rules(path: Path):
     """Controlli di aderenza alle regole (--rules, solo warning)."""
     rel = str(path.relative_to(ROOT))
     text = path.read_text(encoding="utf-8", errors="replace")
     low = text.lower()
-    # (1) benchmark GS vs hp/AC (tolleranza larga: segnala solo fuori scala)
+    # I puntatori NON portano numeri per progetto (ADR-0021): i loro valori
+    # stanno nel file d'arco, e cercarli qui darebbe avvisi su un'assenza voluta.
+    if "[POINTER" in text or "[RIMANDO]" in text:
+        return
+    # (1) benchmark GS vs pf/CA (tolleranza larga: segnala solo fuori scala)
     cr = header_cr(text)
-    if cr is not None and int(cr) in PF_BENCH:
-        hp_min, hp_max, ac_min, ac_max = PF_BENCH[int(cr)]
-        m_hp = re.search(r"\bhp\s*(\d+)", low)
-        if m_hp:
-            hp = int(m_hp.group(1))
-            if hp < hp_min * 0.5 or hp > hp_max * 1.5:
-                warn(f"{rel}: hp {hp} fuori scala per CR {cr:g} (atteso ~{hp_min}-{hp_max})")
-        m_ac = re.search(r"\bac\s*(\d+)", low)
-        if m_ac:
-            ac = int(m_ac.group(1))
-            if ac < ac_min - 4 or ac > ac_max + 4:
-                warn(f"{rel}: AC {ac} fuori scala per CR {cr:g} (atteso ~{ac_min}-{ac_max})")
+    b = banda(cr) if cr is not None else None
+    if b:
+        pf_min, pf_max, ca_min, ca_max, pf_t, ca_t = b
+        hp = valore(text, "pf")
+        if hp is not None and not (pf_min <= hp <= pf_max):
+            warn(f"{rel}: pf {hp} fuori scala per GS {cr:g} (Tabella 1–1: {pf_t}, "
+                 f"fascia {pf_min:.0f}-{pf_max:.0f})")
+        ac = valore(text, "ca")
+        if ac is not None and not (ca_min <= ac <= ca_max):
+            warn(f"{rel}: CA {ac} fuori scala per GS {cr:g} (Tabella 1–1: {ca_t}, "
+                 f"fascia {ca_min:.0f}-{ca_max:.0f})")
+    # (1-bis) coerenza INTERNA della CA: in 3.5 la CA di contatto e quella da
+    # colto alla sprovvista sono la CA piena meno alcuni bonus, quindi non
+    # possono superarla. E' un'identita', non un benchmark: non ha tolleranza.
+    ac = valore(text, "ca")
+    d = CA_DETTAGLIO.search(text)
+    if ac is not None and d:
+        for etichetta, val in CA_VOCI.findall(d.group(1)):
+            if int(val) > ac:
+                warn(f"{rel}: CA {ac} ma «{etichetta} {val}» — in 3.5 contatto e "
+                     "sprovvista tolgono bonus, non ne aggiungono")
+    # (1-ter) `pf-dado` deve registrare i dadi vita. Il 2026-09-23 non lo
+    # faceva in 46 statblocchi su 95: 26 portavano il danno di un'arma, 20 una
+    # parte sola dei dadi. Corretti da conformita_statblocchi.py, che ora ne fa
+    # un cancello; qui resta l'avviso con la ragione. Il controllo vive nel
+    # lettore delle creature (ADR-0066): una norma, un rilevatore.
+    from dmcore.lettura_creatura import pf_dado_sospetto
+    motivo = pf_dado_sospetto(text, cr)
+    if motivo:
+        warn(f"{rel}: {motivo} — `pf-dado` non registra i dadi vita")
     # (2) policy flag: Status inferred ⇒ deve esserci un marcatore [INFERRED]
     m_status = re.search(r"\*\*Status\*\*[:\s]*([a-z\-]+)", low)
     if m_status and m_status.group(1).startswith("inferred") and "[inferred" not in low:
@@ -185,7 +265,7 @@ def main(argv=None):
         if not d.is_dir():
             continue
         for path in sorted(d.rglob("*.md")):
-            if path.name.startswith("README"):
+            if path.name.startswith("README") or in_archivio(path):
                 continue
             if is_statblock(path):
                 check_statblock(path)
@@ -219,7 +299,8 @@ def main(argv=None):
 
     n_stat = sum(1 for s in ("mostri", "villain", "png")
                  for p in (BEST / s).rglob("*.md")
-                 if not p.name.startswith("README") and is_statblock(p))
+                 if not p.name.startswith("README") and not in_archivio(p)
+                 and is_statblock(p))
 
     if args.json:
         report = {

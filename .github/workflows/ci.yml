@@ -12,7 +12,10 @@ permissions:
 jobs:
   validate:
     name: Validate skills & scripts
-    runs-on: ubuntu-latest
+    # Fissato, come typst piu' sotto: dal 19 ottobre 2026 `ubuntu-latest`
+    # diventa Ubuntu 26 (avviso di GitHub). Si passa a 26.04 con una PR che
+    # la prova, non perche' e' cambiata l'etichetta (PRATICHE PI-3).
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
         with:
@@ -23,7 +26,20 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install pyyaml
+        # ADR-0037, emendamento 2026-09-21: due piani. requirements.txt e' cio'
+        # che il DM esegue (stdlib + tre eccezioni dichiarate); il file -dev
+        # aggiunge pytest, che gira solo qui e in locale.
+        run: pip install -r requirements-dev.txt
+
+      # PRATICHE PI-3 (D2): le vulnerabilita' note nelle dipendenze dichiarate.
+      # `-r requirements-dev.txt` include requirements.txt, quindi guarda sia
+      # cio' che esegue il DM sia cio' che gira qui. Non bloccante fino al
+      # 2026-10-24, poi si decide cosa blocca: pip-audit non filtra per
+      # gravita', e «bloccante sulle alte» va tradotto in `--ignore-vuln`
+      # dichiarati uno per uno.
+      - name: Dipendenze — vulnerabilita' note (pip-audit, non bloccante)
+        continue-on-error: true
+        run: pip-audit -r requirements-dev.txt
 
       - name: Python scripts compile
         run: python -m compileall -q scripts converters
@@ -38,9 +54,36 @@ jobs:
       - name: Validate skill trees (frontmatter, links, data YAML)
         run: python scripts/validate_skills.py
 
+      # La quarta cosa della regola d'oro. Le prime tre le controlla il gate qui
+      # sotto; questa no, ed era «una debolezza dichiarata» — finche' il
+      # 2026-09-06 la tabella non si e' trovata sfasata di due righe su otto,
+      # con quattro identificatori che non esistevano in nessun piano. ADR-0047.
+      # Finding T4 dell'audit 2026-08-05: AGENTS.md documentava campaign/npcs/,
+      # locations/ ed encounters/ — nessuna delle tre e' mai esistita, e la riga
+      # 225 mandava gli agenti a cercarle. Un documento d'ingresso che descrive
+      # una struttura che non c'e' non e' un refuso: e' un'istruzione sbagliata.
+      - name: Documentazione contro filesystem — i percorsi citati esistono
+        run: python scripts/validate_docs.py
+
+      - name: Link e percorsi locali — su tutti i sorgenti scritti a mano
+        run: python scripts/validate_docs.py --sorgenti
+
+      - name: Decisioni aperte al DM — l'aggregato combacia coi piani
+        run: python scripts/decisioni_dm.py --check
+
       - name: Plans discipline gate — CHANGELOG obbligatorio + promemoria ADR (ADR-0009)
         if: github.event_name == 'pull_request'
         run: python scripts/check_plans_discipline.py --base "origin/${{ github.base_ref }}"
+
+      - name: Legenda — la fonte e' una sola (ADR-0048)
+        run: |
+          python scripts/build_legend.py --check
+          python scripts/build_legenda_skill.py --check
+
+      - name: Stato di campagna — dati validi e state.md rigenerato identico (ADR-0050)
+        run: |
+          python scripts/validate_state.py
+          python scripts/render_state.py --check
 
       - name: Validate generated maps (well-formed, in-sync SVGs)
         run: python scripts/validate_maps.py
@@ -52,11 +95,79 @@ jobs:
         continue-on-error: true
         run: python scripts/validate_bestiario.py --rules
 
+      - name: Statblocchi machine-readable — blocchi validi e GS coerente (ADR-0021)
+        run: python scripts/extract_statblocks.py --check
+
+      # Gli `attributi` generati (94 file, 2026-09-23) devono restare quelli
+      # che la regola produce: se qualcuno ritocca a mano un blocco marcato
+      # come generato, o il generatore cambia, qui si vede. Un blocco che il
+      # DM conferma perde la marca [INFERRED] e il cancello smette di
+      # guardarlo: e' il modo previsto di uscirne.
+      - name: Attributi generati — riproducibili, nei limiti, non duplicati
+        run: python scripts/genera_attributi.py --check
+
+      # `pf-dado` deve registrare i dadi vita. Il 2026-09-23 in 46 statblocchi
+      # su 95 portava il danno di un'arma o una parte sola dei dadi, e nessun
+      # cancello lo vedeva: il lettore di settembre rifiutava i nuovi, i
+      # vecchi restavano. Le correzioni devono restare riproducibili (ADR-0065).
+      - name: pf-dado registra i dadi vita, e le correzioni sono riproducibili
+        run: python scripts/conformita_statblocchi.py --check
+
       - name: Validate DEF module masters (module-standard checklist, token-free review)
         run: python scripts/validate_modules.py
 
-      - name: Moduli standalone (STANDALONE-*)
+      - name: Moduli standalone (STANDALONE-* e 10-stand-alone/*)
         run: python scripts/validate_standalone.py
+
+      # Non bloccante alla prima passata: la convenzione nasce oggi e il
+      # contenuto esistente la rispetta a meta'. Diventa bloccante (--strict)
+      # il giorno in cui il rumore e' a zero — non prima, o il gate viene
+      # disattivato e allora non trova piu' nemmeno i refusi veri.
+      - name: Lingua italiana — refusi meccanici (non bloccante)
+        continue-on-error: true
+        run: python scripts/validate_lingua.py
+
+      # Idem: misura la norma di italiano-nativo.md (calchi, tic a densita',
+      # nomi inglesi dove il glossario vuole l'italiano). ADR-0025.
+      - name: Prosa — traduttese e tic dell'IA (non bloccante)
+        continue-on-error: true
+        run: python scripts/validate_prosa.py
+
+      # 🔴 BLOCCANTE, e la ragione sta in ADR-0056: una norma editoriale che
+      # nessuno misura non fa rumore quando viene ignorata. «read-aloud-adulti»
+      # prescriveva box <= 12 righe da agosto e nessuno guardava; ADR-0014 era
+      # stato applicato a UN documento su cento. Questo passo non controlla che
+      # le norme siano rispettate — controlla che esista scritto CHI le guarda,
+      # e boccia un rimando a uno strumento che non esiste.
+      - name: Norme editoriali — ogni norma ha un misuratore o una ragione
+        run: python scripts/validate_norme_editoriali.py
+
+      # Il gemello del passo sopra, dall'altro lato: quello controlla che ogni
+      # norma dica CHI la guarda, questo che ogni «nessuno la guarda» dica
+      # COSA MANCA — e lo rimisura invece di fidarsi della prosa. La ragione
+      # scritta a mano invecchia in silenzio: e' successo ai «27 ADR mancanti»,
+      # che erano zero e non erano mai stati ventisette. ADR-0062.
+      #
+      # ⚠️ Una superficie vuota NON e' un difetto e non boccia: boccia una riga
+      # che ha smesso di dire il vero, cioe' una norma diventata misurabile che
+      # il registro dichiara ancora 🔴.
+      - name: Superficie delle norme scoperte — manca il codice o manca il dato?
+        run: python scripts/superficie_norme.py --check
+
+      # ⚠️ Gira in un passo SUO e per ultimo fra i cancelli editoriali, perche'
+      # esegue davvero i comandi che §6.2 cita — e sono i piu' lenti del repo.
+      # Il difetto che presidia: i «27 ADR mancanti» erano zero, con il comando
+      # che lo smentiva citato accanto alla riga, verde in CI. ADR-0063.
+      - name: §6.2 — i comandi citati si eseguono, non si credono
+        run: python scripts/verifica_sezione6.py --check
+
+      # Terzo della stessa famiglia: misura la LEGGIBILITA' dell'artefatto, che
+      # nessun exit code vede. Gerarchia dei titoli (i segnalibri del PDF),
+      # caratteri per riga dalle metriche vere del font, e le coppie di colori
+      # che sotto una dicromia diventano lo stesso colore. ADR-0032.
+      - name: Tipografia — titoli, caratteri per riga, daltonismo (non bloccante)
+        continue-on-error: true
+        run: python scripts/validate_tipografia.py
 
       - name: DM tool smoke tests
         run: |
@@ -76,6 +187,8 @@ jobs:
           python scripts/dm_dossier.py --help > /dev/null
           python scripts/validate_modules.py --help > /dev/null
           python scripts/tools_manifest.py --help > /dev/null
+          python scripts/decisioni_dm.py --help > /dev/null
+          python scripts/validate_docs.py --help > /dev/null
           # Catena editoriale e da stampa: questi sette dichiaravano `ci_smoke`
           # nel manifest e non venivano eseguiti da nessuno — il contratto
           # prometteva una verifica che non esisteva (ADR-0012).
@@ -86,14 +199,77 @@ jobs:
           python scripts/extract_scene_prompts.py --help > /dev/null
           python scripts/import_watabou.py --help > /dev/null
           python scripts/campaign_branch.py --help > /dev/null
+          python scripts/build_image_derivatives.py --help > /dev/null
+          python scripts/validate_booklets.py --help > /dev/null
+          python scripts/extract_statblocks.py --help > /dev/null
+          # Catena raster e 3D (F3 della ripresa PR). Qui non c'e' GPU, non c'e'
+          # Blender e ComfyUI non e' in ascolto: si prova tutto cio' che si puo'
+          # provare SENZA — la risoluzione della serie, la composizione dei
+          # prompt, la geometria del piano di scena. Il resto e' sulla macchina
+          # del DM, e la CI non finge di coprirlo.
+          python scripts/comfyui_batch.py --help > /dev/null
+          # --lista tiene i «diciotto» a diciotto: le due tavole in piu' sono
+          # serie=extra, e al diciannovesimo di serie=base la CI si fa rossa.
+          # Non e' un divieto, e' un modo di obbligare a decidere.
+          python scripts/comfyui_batch.py --lista > /dev/null
+          python scripts/comfyui_batch.py --dry-run > /dev/null
+          python scripts/render_map_blender.py --help > /dev/null
 
-      - name: Schede pregenerate — manifest risolvibile senza typst
+      # Tre cose che un --help non prova: che i cancelli MORDANO. Un gate che
+      # esiste e non si verifica e' un gate che un giorno smette di funzionare
+      # senza dirlo — la stessa classe di difetto di ADR-0043.
+      - name: Catena raster — i cancelli mordono
         run: |
-          # typst non è installato in CI: si verifica ciò che si può verificare
-          # senza, cioè che il manifest delle schede risolva i suoi master e i
-          # suoi ritratti. La compilazione vera resta locale.
+          # 1. pesi non commerciali: exit 1 PRIMA di scrivere o chiamare la rete
+          if python scripts/comfyui_batch.py --checkpoint flux1-dev.safetensors --dry-run > /dev/null 2>&1; then
+            echo "✗ FLUX.1 [dev] e' passato: il cancello di ADR-0019 non morde piu'"; exit 1
+          fi
+          # 2. un reroll senza motivo non passa: e' il sesto requisito (SCARTI.txt)
+          if python scripts/comfyui_batch.py --reroll 1 > /dev/null 2>&1; then
+            echo "✗ --reroll senza --motivo e' passato: gli scarti tornano senza traccia"; exit 1
+          fi
+          echo "✓ pesi vietati rifiutati, reroll senza motivo rifiutato"
+
+      - name: Piano di scena 3D — deterministico
+        run: |
+          # La geometria si risolve senza Blender e senza GPU, e due giri devono
+          # dare lo stesso file: se il piano non e' riproducibile, non lo e'
+          # nemmeno l'immagine che ne esce.
+          python scripts/render_map_blender.py scripts/examples/esempio-accampamento-mano-rossa.json \
+            -o "$RUNNER_TEMP/ci-3d/x.png" --piano-solo
+          cp "$RUNNER_TEMP"/ci-3d/*.piano.json "$RUNNER_TEMP/piano-1.json"
+          python scripts/render_map_blender.py scripts/examples/esempio-accampamento-mano-rossa.json \
+            -o "$RUNNER_TEMP/ci-3d/x.png" --piano-solo
+          cmp "$RUNNER_TEMP/piano-1.json" "$RUNNER_TEMP"/ci-3d/*.piano.json
+          echo "✓ piano 3D byte-identico su due giri"
+
+      - name: Manifest dei booklet (schema, file, immagini, parità fra le catene)
+        run: python scripts/validate_booklets.py --spiega
+
+      - name: Install typst (versione FISSATA, mai «latest»)
+        # Un compilatore che si aggiorna da solo è una CI che diventa rossa di
+        # notte per una riga che nessuno ha scritto. La versione si alza a mano,
+        # in un commit che si vede. ADR-0020 §3.
+        env:
+          TYPST_VERSION: "0.15.1"
+        run: |
+          curl -fsSL "https://github.com/typst/typst/releases/download/v${TYPST_VERSION}/typst-x86_64-unknown-linux-musl.tar.xz" -o /tmp/typst.tar.xz
+          tar -xJf /tmp/typst.tar.xz -C /tmp
+          sudo install /tmp/typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
+          typst --version
+
+      - name: Edizione da stampa — i volumi compilano DAVVERO (ADR-0020)
+        # Il gate che mancava: senza typst in CI, due booklet della campagna non
+        # avevano mai compilato e nessuno poteva accorgersene. Ora ogni manifest
+        # del repo produce un PDF vero, con i segnalibri.
+        run: python scripts/validate_booklets.py --stampa
+
+      - name: Schede pregenerate — un PDF per giocatore
+        run: |
           python scripts/export_booklet_typst.py \
-            STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-SCHEDE-PG.manifest.json --list
+            STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-SCHEDE-PG.manifest.json \
+            --per-scheda
+          test "$(ls STANDALONE-Il-Drappo-di-Tarsilia/homebrew/schede/*.pdf | wc -l)" -eq 6
 
       - name: Map JSON contract + UVTT export round-trip (M1/M2)
         run: |
@@ -110,17 +286,60 @@ jobs:
           python scripts/compile_map_json.py /tmp/ci-uc.draft.json --validate-only
           python -c "import json; r=json.load(open('/tmp/ci-uc.conflicts.json')); assert r['report_version'] and 'conflicts' in r, 'report malformato'; print('import_ultraclear OK')"
 
-      - name: Unit tests — dmcore / state_apply / next_session (ADR-0007)
+      # 🔴 Entrambi i corridori, e non e' ridondanza. Il 2026-09-21 tre file di
+      # test giravano in locale sotto pytest e NON in CI sotto unittest: due non
+      # si importavano, uno era fatto di funzioni nude che `unittest` importa
+      # senza eseguire — 966 prove viste, 942 eseguite. Con pytest ammesso
+      # (emendamento ad ADR-0037) il buco si riapre al contrario, quindi si
+      # girano tutti e due e `test_i_test_girano_in_ci.py` verifica che vedano
+      # lo stesso numero.
+      # ADR-0059: il punteggio pesato. Nasce verde per costruzione (la soglia
+      # viene dalla distribuzione misurata del repo), quindi un rosso qui e' un
+      # documento che e' peggiorato, non una soglia importata da un manuale.
+      - name: Punteggio di qualita' editoriale (MQM, ADR-0059)
+        run: |
+          python scripts/punteggio_mqm.py --soglia
+          python scripts/validate_modules.py --tetto-el
+
+      - name: Unit tests — unittest (il corridore storico, ADR-0007)
         run: python -m unittest discover -s scripts/tests -v
+
+      - name: Unit tests — pytest (il secondo corridore, ADR-0037 em. 2026-09-21)
+        run: python -m pytest scripts/tests -q
 
       - name: dm.py unified CLI smoke test (K-C3)
         run: |
           python scripts/dm.py --help > /dev/null
           python scripts/dm.py doctor --ci
 
+      # Il server MCP (ADR-0030) e' una superficie d'esecuzione: il gate verifica
+      # che ogni tool del catalogo costruisca una riga di comando valida e senza
+      # metacaratteri di shell, e poi lo fa parlare davvero sul suo trasporto.
+      # Un server che passa i test interni ma non risponde a `tools/list` non
+      # serve a niente.
+      - name: Server MCP — catalogo, difese e protocollo
+        run: |
+          python scripts/mcp_server.py --self-check
+          printf '%s\n' \
+            '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{}}' \
+            '{"jsonrpc":"2.0","id":2,"method":"tools/list"}' \
+            '{"jsonrpc":"2.0","id":3,"method":"tools/call","params":{"name":"state_apply","arguments":{}}}' \
+            | python scripts/mcp_server.py > /tmp/mcp-out.jsonl
+          python - <<'EOF'
+          import json
+          r = [json.loads(x) for x in open("/tmp/mcp-out.jsonl")]
+          assert r[0]["result"]["protocolVersion"], "initialize senza versione"
+          n = len(r[1]["result"]["tools"])
+          assert n >= 40, f"tools/list ne espone solo {n}"
+          assert all("annotations" in t for t in r[1]["result"]["tools"]), "annotazioni mancanti"
+          # in sola lettura, chi scrive canone deve essere RIFIUTATO (S-5)
+          assert "error" in r[2], "state_apply è partito in sola lettura"
+          print(f"server MCP OK — {n} tool, annotazioni presenti, S-5 attiva")
+          EOF
+
   build:
     name: Build skill packages
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: validate
     steps:
       - uses: actions/checkout@v4
@@ -130,7 +349,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install pyyaml
+        run: pip install -r requirements.txt
 
       - name: Build all per-agent skill packages
         run: ./scripts/build-skills.sh --no-deploy

@@ -1,6 +1,17 @@
 # MAESTRO VARIS "SETA-ARGENTO"
 ## *Il Broker Inconsapevole — Mercante Planare, Intermediario del Collezionista a Rethmar*
 
+
+```statblocco
+gs: 6
+ca: 14
+pf: 44
+ts: Temp +3, Rifl +9, Vol +5
+velocita: 9 m
+```
+
+> ⚠ `ts` ritrascritto dalla prosa di questa scheda (sezione dei tiri salvezza) il 2026-09-23. Il blocco portava «Temp +3, Rifl +5, Vol +5», derivati da `derive_statblocks --apply-ts` il 2 settembre con una matrice di caratteristiche sua, un giorno prima che il lettore imparasse questo formato (`d859a31`).
+
 **Razza/Tipo:** Umano (Origine Calimshan / Sembia — Umanoide Medio)
 **Classe:** Ladro 4 / Esperto 4 (Livello Totale 8)
 **Grado di Sfida (GS):** 6

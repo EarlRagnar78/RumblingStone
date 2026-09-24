@@ -202,17 +202,30 @@ class TestDrappo(unittest.TestCase):
 
 class TestInline(unittest.TestCase):
 
+    # L'enfasi esce in forma di FUNZIONE (`#strong[...]`, `#emph[...]`) e non
+    # con gli asterischi: la chiusura abbreviata di Typst dipende dal carattere
+    # che segue, e su `**Seggio**/Deputazione` produceva «unclosed delimiter».
     CASI = [
         # enfasi annidata: il caso che stampava mezza riga in corsivo
         ("**bacchetta di *cura ferite leggere*, 25 cariche**",
-         "*bacchetta di _cura ferite leggere_, 25 cariche*"),
+         "#strong[bacchetta di #emph[cura ferite leggere], 25 cariche]"),
         # grassetto e corsivo che chiudono sullo stesso asterisco
-        ("**2 pozioni di *cura ferite leggere***", "*2 pozioni di _cura ferite leggere_*"),
-        ("***tutto insieme***", "*_tutto insieme_*"),
+        ("**2 pozioni di *cura ferite leggere***",
+         "#strong[2 pozioni di #emph[cura ferite leggere]]"),
+        ("***tutto insieme***", "#strong[#emph[tutto insieme]]"),
         # `~` in Typst è uno spazio unificatore: non deve sparire dal prezzo
-        ("**+ ~212 mo**", "*+ \\~212 mo*"),
+        ("**+ ~212 mo**", "#strong[+ \\~212 mo]"),
         # due grassetti di fila non si fondono in uno
-        ("**Cavalcare +10**, **Furtività +19**", "*Cavalcare +10*, *Furtività +19*"),
+        ("**Cavalcare +10**, **Furtività +19**",
+         "#strong[Cavalcare +10], #strong[Furtività +19]"),
+        # ⚠️ il difetto per cui il booklet del Palio non compilava: grassetto
+        # attaccato a una barra
+        ("(il **Seggio**/Deputazione)", "(il #strong[Seggio]/Deputazione)"),
+        # ⚠️ e quello per cui non compilava il fascicolo di Terros: corsivo che
+        # contiene un grassetto e chiude tutto sullo stesso gruppo
+        ("*Il peso **(nota.)***", "#emph[Il peso #strong[(nota.)]]"),
+        # un asterisco che non è enfasi resta un asterisco
+        ("3 * 4 caselle", "3 \\* 4 caselle"),
     ]
 
     def test_enfasi_e_caratteri_speciali(self):

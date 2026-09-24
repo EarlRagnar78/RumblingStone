@@ -616,7 +616,7 @@
 <rect x="46" y="842" width="19" height="15" fill="url(#t_deep)" stroke="#7a6a50" stroke-width="0.7"/>
 <text x="73" y="854" font-size="11" fill="#3b2e1e">🟦 — Acqua profonda</text>
 <rect x="46" y="864" width="19" height="15" fill="url(#t_struct)" stroke="#7a6a50" stroke-width="0.7"/>
-<text x="73" y="876" font-size="11" fill="#3b2e1e">⬛ — Struttura (tenda, edificio, dais)</text>
+<text x="73" y="876" font-size="11" fill="#3b2e1e">⬛ — Edificio / corpo di fabbrica (muratura piena: blocca vista e movimento)</text>
 <rect x="46" y="886" width="19" height="15" fill="url(#t_earth)" stroke="#7a6a50" stroke-width="0.7"/>
 <text x="73" y="898" font-size="11" fill="#3b2e1e">🟫 — Terra battuta / sentiero</text>
 <circle cx="55" cy="916" r="7.5" fill="url(#g_1d6fd8)" stroke="#241c10" stroke-width="1.2"/>

@@ -109,7 +109,7 @@ It covers:
 - `§0 Campaign Status At-a-Glance` dashboard template (see top of `campaign/state.md`)
 - Dual-clock reference (March Clock + Ritual Clock)
 - **Reset procedure** to start the campaign with a new group (branch-per-group,
-  via `scripts/new-campaign-group.sh`)
+  via `python3 scripts/dm.py gruppo nuovo`, a question form; no YAML by hand)
 
 Blank templates for a fresh group live in `campaign/templates/`.
 

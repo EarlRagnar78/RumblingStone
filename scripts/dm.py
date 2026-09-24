@@ -15,6 +15,7 @@ Sottocomandi (fase del Playbook tra parentesi):
     maps      (prep) render SVG / valida le griglie emoji
     post      (§4)   ledger XP → proposta diff state.md → checklist §4
     session   (§4+§7) ciclo su branch-per-gruppo (ADR-0007): end/next/status/branch
+    gruppo    (§7)   gruppo nuovo da un modulo: ramo, reset, stato derivato (4f-4)
     recap     (§4.6) recap spoiler-safe per i player (+ --hype → Homebrewery)
     handout   (prep) handout giocatori in markdown Homebrewery V3
     bestiario (prep) i cinque script delle creature: estrai, deriva, attributi,
@@ -63,7 +64,9 @@ def run(script: str, *args: str, check: bool = True) -> int:
         cmd = ["bash", str(path), *args]
     else:
         cmd = [sys.executable, str(path), *args]
-    print(f"[dm] → {' '.join(cmd[1:] if cmd[0] != 'bash' else cmd)}")
+    # Su stderr: stdout e' dello script, e chi legge dati (JSON, lotto 4f-4 e
+    # il menu del piano CICLO-DI-SESSIONE) non deve trovarci righe del tramite.
+    print(f"[dm] → {' '.join(cmd[1:] if cmd[0] != 'bash' else cmd)}", file=sys.stderr)
     rc = subprocess.call(cmd, cwd=REPO)
     if check and rc != 0:
         print(f"[dm] ✗ {script} è uscito con codice {rc}", file=sys.stderr)
@@ -414,6 +417,18 @@ def cmd_session(args: argparse.Namespace, extra: list[str]) -> int:
     return rc
 
 
+def cmd_gruppo(args: argparse.Namespace, extra: list[str]) -> int:
+    # Playbook §7, lotto 4f-4: il DM risponde a un modulo, lo script scrive
+    opts = []
+    if args.answers:
+        opts += ["--answers", args.answers]
+    if args.domande:
+        opts += ["--domande"]
+    if args.dry_run:
+        opts += ["--dry-run"]
+    return run("gruppo_nuovo.py", *opts, *extra, check=False)
+
+
 def cmd_skills(args: argparse.Namespace, extra: list[str]) -> int:
     if args.action == "sync":
         return run("sync-skills.sh", *extra)
@@ -629,6 +644,16 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--pg", help="(recap) recap personale per questo PG (blocchi Split)")
     p.add_argument("--group", help="(branch) nome gruppo la prima volta")
 
+    p = sub.add_parser("gruppo",
+                       help="gruppo nuovo da un modulo a domande: ramo, reset della "
+                            "partita, stato derivato da quello di oggi (Playbook §7)")
+    p.add_argument("action", choices=["nuovo"])
+    p.add_argument("--answers", help="risposte in JSON invece del modulo in terminale")
+    p.add_argument("--domande", action="store_true",
+                   help="stampa il modulo come JSON (per un'interfaccia) ed esce")
+    p.add_argument("--dry-run", action="store_true", dest="dry_run",
+                   help="dice cosa farebbe, non scrive")
+
     p = sub.add_parser("skills", help="pipeline skill multi-agente")
     p.add_argument("action", choices=["build", "sync"])
     p.add_argument("--no-deploy", action="store_true")
@@ -642,6 +667,7 @@ def main(argv: list[str] | None = None) -> int:
         "handout": cmd_handout, "hype": cmd_hype, "dossier": cmd_dossier,
         "booklet": cmd_booklet, "prompts": cmd_prompts, "bestiario": cmd_bestiario,
         "session": cmd_session, "volume": cmd_volume, "skills": cmd_skills, "doctor": cmd_doctor,
+        "gruppo": cmd_gruppo,
     }[args.cmd](args, extra)
 
 

@@ -2104,6 +2104,42 @@
       "deterministic": true
     },
     {
+      "name": "gruppo_nuovo",
+      "description": "«Un altro gruppo rigioca la campagna: come parto dal materiale che c'e' senza aprire un file YAML?»\n\nIl gruppo nuovo da un modulo a domande, senza YAML a mano (D19, lotto 4f-4): deriva lo stato dal prodotto di oggi, chiede gruppo, arco, PG e le righe con tracce del primo tavolo una alla volta (tieni/svuota/rivedi), valida prima di scrivere, crea il ramo campaign-group-<nome>, azzera la partita e committa.",
+      "use_case": "«Un altro gruppo rigioca la campagna: come parto dal materiale che c'e' senza aprire un file YAML?»",
+      "invocation": "python3 scripts/dm.py gruppo nuovo",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "answers": {
+            "type": "string",
+            "description": "Risposte in JSON invece del modulo in terminale."
+          },
+          "domande": {
+            "type": "boolean",
+            "description": "Stampa il modulo come JSON (per un'interfaccia) ed esce."
+          },
+          "dry-run": {
+            "type": "boolean",
+            "description": "Fa le domande e dice cosa farebbe, senza scrivere."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "campaign/state.yaml",
+        "campaign/state.md",
+        "campaign/group.yaml"
+      ],
+      "exit_codes": {
+        "0": "fatto, o dry-run / domande",
+        "1": "risposte non valide, albero sporco, ramo gia' esistente o reset fallito (niente resta scritto)",
+        "2": "uso errato"
+      },
+      "deterministic": true
+    },
+    {
       "name": "install_git_hooks",
       "description": "«Come faccio a non scoprire in CI quello che il repo poteva dirmi prima del push?»\n\nInstalla gli hook git locali: post-merge (resync mirror skill) e pre-push (gate ADR-0009).",
       "use_case": "«Come faccio a non scoprire in CI quello che il repo poteva dirmi prima del push?»",

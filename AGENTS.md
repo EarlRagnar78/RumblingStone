@@ -62,7 +62,7 @@ regenerate via `dm.py recap --hype` / `dm.py handout`, never edit by hand.
 > **DMs: start with `campaign/DM-CAMPAIGN-PLAYBOOK.md`.** It contains the
 > pre/during/post-session workflow, worked examples for session files and
 > `state.md` diffs, the `§0 Campaign Status At-a-Glance` dashboard, and the
-> branch-per-group reset procedure (`scripts/new-campaign-group.sh`) for
+> branch-per-group reset procedure (`python3 scripts/dm.py gruppo nuovo`) for
 > running this campaign with a new group.
 
 ---

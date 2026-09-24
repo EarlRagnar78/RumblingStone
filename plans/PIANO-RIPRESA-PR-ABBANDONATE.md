@@ -1148,7 +1148,7 @@ Vale per **ogni** commit di **ogni** fase.
 | ~~D17~~ | F4 · 4d-4 | ✅ **CHIUSA il 2026-09-17 — e la domanda aveva una premessa falsa, trovata dal DM.** Era posta come «i due villain senza scheda: si scrivono, si contano o escono da §3?». 🐛 **Tre delle quattro voci che avevo dichiarato senza scheda ce l'avevano.** Il DM: *«controlla bene negli archi o nel bestiario se c'è qualcosa magari annegato come prosa»*. **Zalkatar** ha uno statblocco a **GS 13** (14d4+70, CA 24) in `09_…/P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md`; **Saarvith + Regiarix** ne hanno uno a **GS 13** in `09_…/P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`, e il file `FASE4` accanto dichiara esplicitamente *«le statistiche sono lì; questo è la regia dello scontro»*; il **Cerchio Druidico** ne ha uno in `Bestiario/mostri/cerchio-druid7-cr7.md`, marcato [ACCEPTED — DM-canon 2026-05-05]. L'errore non è stato non trovarle: ho cercato **solo dentro `Bestiario/`**, e allargando la ricerca ho **troncato l'output a sei righe** concludendo da una lista tagliata. ✅ Non c'era niente da scrivere né da togliere: c'era da **cercare meglio**. Resta **un** buco su 28 (`lathander-mask`), ed è corretto. ⚠️ **Conseguenza di progetto**: una scheda non vive per forza nel `Bestiario/`, e un cancello tarato lì avrebbe continuato a dare per mancanti due boss da GS 13. Nasce **R13**, che mette alla prova ogni buco dichiarato contro tutto il repo. Vedi **§4.8.10** e [ADR-0053](adr/ADR-0053-la-chiave-verso-il-bestiario-si-dichiara.md) |\n| ~~D6~~ | F1 | ✅ **decisa 2026-09-04: ridisegnata.** `…P1C` mappa 3 dichiarava 40×40 e aveva righe da 24 a 26 celle: rifatta **26×29**, nessuna coordinata del testo cambiata |
 | ~~D18~~ | F4 · 4d-6 | ✅ **DECISA E ATTUATA il 2026-09-17, nello stesso commit.** Il DM: *«spezzarli per intestazione verificando che non esistano già»*. Il catalogo portava **19 record intitolati al documento** invece che alla creatura, perché `build_monster_catalog.py` faceva **un record per file** e prendeva il primo GS: «Parte 2A – Torre Invisibile», GS 10. **19 → 8**, pool **372 → 397**. 🔎 Quel che ne è uscito non sono comparse: gli **otto fantini del Palio**, i **Sicari di Sonjak**, il Gonfaloniere Aldemar Vosk, la Drow Chierica di Lolth, gli esempi d'onda di Rethmar — tutti chiusi dentro un record solo. ⚠️ **La deduplica è ancorata a un fatto dichiarato**: si confrontano i nomi **solo** dentro l'insieme delle voci del Bestiario che citano *quel* documento come `Source`. È il modo di rispettare ADR-0053 (un matcher permissivo traveste l'ignoranza) senza rinunciare a dedurre: il legame documento↔voce l'ha scritto qualcuno, la somiglianza sceglie solo *quale* voce sta per *quale* intestazione. 🔴 **E il rischio opposto ha il suo presidio**: il record di file sparisce solo quando **ogni** creatura che il documento nomina ha già la sua voce — gli otto che restano sono quelli dove non è vero, e toglierli significherebbe meno rumore e **meno creature**. 🐛 Due difetti nei nomi generati, trovati misurando: la numerazione del Palio è **multi-livello** (`### 3.2 Drow Chierica`) e lasciava nomi che cominciavano per cifra, e la coda tagliata lasciava parentesi mai chiuse («Aldemar Vosk (LN»). 🔎 **E il cancello nuovo ha trovato un errore mio al primo giro**: contava **due** «Skullcrusher il Nero», perché la voce che avevo appena scritto puntava al file che il drago lo *nomina* soltanto — i numeri stanno in `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md`. Correggendo il puntamento è poi caduto fuori che `P6-INTEGRAZIONE` restava scoperto, e dentro c'erano **Re Thorek I** (Grr 16, il re di mille anni prima che si inginocchia davanti alla Corona) e **Durin Hammerfist**, l'antenato di Othrek: due PNG di canone che non aveva nessuno. Vedi **§4.8.12** e [ADR-0054](adr/ADR-0054-un-archivio-non-e-una-copia.md) |
 | ~~D19~~ | F4 · 4f | ✅ **Risposta del DM il 2026-09-24, ed è un principio più largo della domanda**: *«la procedura dovrebbe essere quanto più automatizzata possibile: un DM normalmente non tocca affatto i file yml, al massimo se ha un'interfaccia scrive dei campi o seleziona i valori da un form già impostato»*. Quindi né lo scheletro da compilare né il derivato da rivedere a mano: il template è **derivato in automatico** dal prodotto, e ciò che resta di giudizio passa da un **modulo** a scelte. Procedura in §4.10.6, il via è **D21** |
-| D21 | F4 · 4f | **Si procede come in §4.10.6?** Il gruppo nuovo parte con un comando solo e un modulo a campi e scelte. Le proposte di fine sessione che oggi dicono «scrivi in `state.yaml`» diventano domande dello stesso modulo. Le risposte stanno in un JSON, e il modulo è solo la sua faccia: oggi il terminale, domani una pagina, senza toccare la logica. 🔵 Proposta: sì, con prima 4f-4 (il gruppo nuovo) e poi 4f-5 (le proposte di fine sessione), ognuno col suo commit |
+| ~~D21~~ | F4 · 4f | ✅ **Risposta del DM il 2026-09-24.** Sulla procedura di §4.10.6: sì al comando `dm.py gruppo nuovo`; sì a togliere da sole le conoscenze sul party e a chiedere una riga alla volta solo dove serve un giudizio; **gli artefatti restano nel prodotto**, senza portatore; arco e livello di partenza a scelta; PG con nome, razza, classe, livello e PF, al massimo sei; clock a zero e trigger lasciati. Attuato in **4f-4**, §4.10.7. Sulle proposte di fine sessione (4f-5) il DM ha chiesto di più: *«non c'è un tool chiamato dal DM a fine sessione che prende le domande e genera lo state.md e la parte relativa di state.yaml in maniera automatica?»*, con il ciclo intero preparazione → tavolo → chiusura e un **menu testuale** che chiami `dm.py` e che un'interfaccia grafica possa avvolgere. 4f-5 passa a quel piano, commit successivo |
 | D22 | F4 · 4i | **Cosa si fa dei file rimasti nei rami senza un posto?** Misurati in §4.11.2. Per ognuno si può **portarlo** su `main` com'era, datato; **dichiararlo superato**, scrivendo da cosa; **lasciarlo** nel ramo, scrivendo perché. Il caso che pesa è il `SOGGETTO-DISCESA-UNDERDARK-ARCHI-01-05` della #72: 773 righe sulla catena degli archi 01-05, sei revisioni con risposte del DM, e nessun documento su `main` lo nomina. La proposta è portarlo com'era in `campaign/lore/`, come per l'audit di level design. Per `agents.conf` la proposta è rifarlo sul codice di oggi, perché la matrice duplicata c'è ancora |
 | D23 | F4 · 4i | **Si attiva su `main` la protezione «Require branches to be up to date before merging»?** È l'unico pezzo della regola che hai chiesto di valutare (§4.11.4) che non sta nel repo: la CI di una PR gira sul `main` del momento del push, e se `main` cambia dopo la PR resta verde su una base che non c'è più. Con la protezione, prima del merge GitHub chiede di riallineare la PR e la CI rigira. Costo: un clic su «Update branch» prima di ogni merge, e un giro di CI in più. Si attiva in *Settings → Branches* del repository; da qui non si può né attivare né verificare |
 | ~~D20~~ | F4 · 4f-2 | ✅ **DECISA E ATTUATA il 2026-09-24, nello stesso commit.** Il DM: *«D20 ok ma non tralasciare nulla»*. Split per sezione come in §4.10.4: **528 righe su 528** ritrovate nelle due metà (controllate contro git da un test), nessuna duplicata, una sola parola spostata («ESCAPED», che la cronaca racconta già tre volte). Tredici rimandi aggiornati in undici file; restano sul nome vecchio i documenti datati (`plans/`, l'audit IP, la baseline del 21 settembre), come registro di quando sono stati scritti |
@@ -2345,7 +2345,7 @@ dovrà conoscere `state.yaml`, `state-changelog.md` e adesso anche il
 front-matter), **4g** (schede PG a dati), **4h** (`groups/<slug>/`, PR
 dedicata).
 
-### 4.10 · Lotto **4f** — prodotto e partita `[4f-0 ✅ audit · 4f-1 ✅ · 4f-2 ✅ · 4f-3 ⬜ · 4f-4 e 4f-5 attendono D21]`
+### 4.10 · Lotto **4f** — prodotto e partita `[4f-0 ✅ audit · 4f-1 ✅ · 4f-2 ✅ · 4f-4 ✅ · 4f-3 ⬜ · 4f-5 passa al piano del ciclo di sessione (D21)]`
 
 > `[C costruzione, con un sotto-lotto K (4f-2) · Opus, sessione principale ·
 > alto · un test che esegue il reset su una copia dei file veri e dimostra che
@@ -2544,6 +2544,52 @@ rende tutto testabile senza tastiera.
 del DM. Il modulo gli risparmia di aprire un file e di scrivere YAML, non di
 decidere se l'agenda di Xal'thor, *«to seize Tordek's Bracieri Gemelli»*, vale
 anche per un tavolo dove Tordek non c'è.
+
+#### 4.10.7 · Com'è andato 4f-4 (2026-09-24) — il gruppo nuovo da un modulo
+
+**Il comando.** `python3 scripts/dm.py gruppo nuovo`. La logica sta in
+`dmcore/gruppo_nuovo.py`, senza terminale; `gruppo_nuovo.py` ha il modulo e i
+passi su disco e su git. Ordine: si deriva, si risponde, si **valida**, e solo
+dopo si crea il ramo. Se il reset fallisce si torna al ramo di partenza e il
+ramo nuovo si cancella.
+
+**Rimisurato prima di scrivere il codice**, perché la stima di §4.10.6 («9 agende
+villain su 13», «3 archi su 22») veniva da un conto euristico. Due correzioni:
+
+- «party» nelle agende è un falso positivo. *«Profile party's artifacts»* è
+  un'agenda preparata e vale per qualunque gruppo. Nelle conoscenze invece è
+  una traccia vera (*«The party visited Hammerfist»*), e quelle righe si tolgono
+  da sole, come hai deciso.
+- Con i nomi dei PG presi dal `party` dello stato e la parola «PG», le righe
+  da decidere una alla volta sono **10**: 5 fra agende e trigger di villain, 4
+  condizioni dei difensori, 1 waypoint (*«crossed intact (PG did NOT
+  sabotage)»*). Le conoscenze che si tolgono da sole sono **19 su 31**.
+
+**Il contratto per un'interfaccia.** `--domande` stampa il modulo come JSON,
+`--answers` prende le risposte in JSON: il modulo in terminale produce lo
+stesso oggetto. 🐛 Per farlo passare anche attraverso `dm.py` è servita una
+correzione: `dm.py` scriveva la riga `[dm] → script …` su **stdout**, e il JSON
+non era più JSON. Ora va su stderr; l'unico test che la leggeva la filtrava già.
+
+**Una riga senza risposta vale «rivedi».** Niente passa in silenzio e niente
+si cancella in silenzio: sono i due modi di sbagliare qui.
+
+**Documenti riallineati.** Il Playbook §7 faceva copiare `state-blank.md` a
+mano e compilare §1 nel markdown, contro D19 e contro le tabelle generate:
+riscritto attorno al comando. Rimandi aggiornati in `AGENTS.md`, `README.md`,
+quickstart, guida di setup, README-automation, skill `rumblingstone-automation`.
+`new-campaign-group.sh` non dice più «Fill campaign/state.yaml» e rimanda al
+modulo: la prima delle tre violazioni di D19 elencate in §4.10.6 è chiusa. Le
+altre due (`dmcore/masters.py` e la tabella dei tre master nella skill) sono
+il lavoro di 4f-5, che passa al piano del ciclo di sessione.
+
+**Validazione.** 19 test nuovi, fra cui il comando da capo a fondo su una copia
+del repo sotto git (ramo, reset, `group.yaml`, `render_state --check` verde),
+il modulo in terminale con le risposte su stdin, Ctrl-D a metà, l'albero sporco
+che non fa partire niente. **10 mutazioni su 10** rosse. 🐛 La copia di prova
+collegava `.gitignore` come link simbolico, che git non segue: i `__pycache__`
+sporcavano l'albero e il comando si rifiutava di partire, giustamente. Il test
+ora copia il file.
 
 ### 4.11 · Lotto **4i** — i rimandi fra backtick, e il contenuto rimasto nei rami `[✅ chiuso il 2026-09-24 · 4i-1 · 4i-2 · il destino dei file è D22, la protezione del ramo è D23]`
 

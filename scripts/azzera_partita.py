@@ -2,7 +2,9 @@
 """
 azzera_partita.py — azzera la PARTITA per un gruppo nuovo, e il prodotto resta.
 
-Lo chiama `scripts/new-campaign-group.sh` sul branch del gruppo nuovo. L'elenco
+Lo chiamano `scripts/gruppo_nuovo.py` (`dm.py gruppo nuovo`, con lo stato
+derivato dalle risposte del DM) e `scripts/new-campaign-group.sh` (col template
+vuoto), sul branch del gruppo nuovo. L'elenco
 di cosa e' partita non sta qui: sta in `dmcore/partita.py`, che e' anche quello
 che `test_new_group.py` confronta con i file scritti dagli script (ADR-0050 §7,
 lotto 4f).
@@ -20,7 +22,7 @@ Uso:
     python3 scripts/azzera_partita.py            # esegue
     python3 scripts/azzera_partita.py --check    # dice cosa farebbe, non scrive
 
-Non fa niente con git: il branch e il commit sono di `new-campaign-group.sh`.
+Non fa niente con git: il branch e il commit sono di chi lo chiama.
 """
 from __future__ import annotations
 
@@ -73,8 +75,14 @@ def piano(radice: Path) -> "list[tuple[str, Path]]":
     return out
 
 
-def azzera(radice: Path) -> "list[str]":
-    """Esegue il reset sotto `radice` e ritorna il resoconto; `ResetError` se no."""
+def azzera(radice: Path, testo_stato: "str | None" = None) -> "list[str]":
+    """Esegue il reset sotto `radice` e ritorna il resoconto; `ResetError` se no.
+
+    `testo_stato` e' lo `state.yaml` gia' pronto del gruppo nuovo, quando lo
+    costruisce `gruppo_nuovo.py` dalle risposte del DM (lotto 4f-4). Senza, si
+    parte dal template vuoto piu' l'anagrafica `png`, come prima. In entrambi i
+    casi si valida PRIMA di scrivere.
+    """
     yaml = _yaml()
     import render_state
     import validate_state
@@ -89,9 +97,10 @@ def azzera(radice: Path) -> "list[str]":
     # mezza partita vecchia e mezza nuova, che e' peggio di non averlo fatto.
     (voce_stato,) = [v for v in PARTITA if v.azione == "stato"]
     dest_stato = radice / voce_stato.percorso
-    testo_stato = stato_nuovo(
-        (radice / voce_stato.sorgente).read_text(encoding="utf-8"),
-        dest_stato.read_text(encoding="utf-8") if dest_stato.exists() else None)
+    if testo_stato is None:
+        testo_stato = stato_nuovo(
+            (radice / voce_stato.sorgente).read_text(encoding="utf-8"),
+            dest_stato.read_text(encoding="utf-8") if dest_stato.exists() else None)
     dati = yaml.safe_load(testo_stato)
     errori = validate_state.errori(dati, radice)
     if errori:

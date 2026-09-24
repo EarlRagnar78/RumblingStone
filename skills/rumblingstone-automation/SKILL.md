@@ -26,6 +26,7 @@ Gli script sottostanti restano usabili direttamente e usano solo stdlib.
 | Tool map completa (tutti gli script: scopo, parametri, I/O) | `scripts/README-automation.md` |
 | Guida operativa per nuovi DM (~15 min) | `campaign/DM-QUICKSTART-NUOVI-DM.md` |
 | Workflow manuale pre/durante/post sessione | `campaign/DM-CAMPAIGN-PLAYBOOK.md` (§2, §4, §7) |
+| Gruppo nuovo che rigioca la campagna | `python3 scripts/dm.py gruppo nuovo`: un modulo a domande, nessun YAML a mano (Playbook §7.2) |
 | Perché il CLI è orchestrazione-only | `plans/adr/ADR-0002-cli-unica-dm-orchestratore.md` |
 | Perché i layout `.hb.md` sono generati, mai editati | `plans/adr/ADR-0003-markdown-master-layout-generati.md` |
 | Quando gli script possono scrivere canone | `plans/adr/ADR-0007-scritture-canone-triplo-vincolo.md` |

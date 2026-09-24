@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 75,
+  "tool_count": 76,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -5130,6 +5130,106 @@
       ],
       "docs": [
         "plans/PIANO-QUATTRO-ORDINI-2026-09-20.md"
+      ]
+    },
+    {
+      "id": "gruppo_nuovo",
+      "path": "scripts/gruppo_nuovo.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/dm.py gruppo nuovo",
+      "summary": "Il gruppo nuovo da un modulo a domande, senza YAML a mano (D19, lotto 4f-4): deriva lo stato dal prodotto di oggi, chiede gruppo, arco, PG e le righe con tracce del primo tavolo una alla volta (tieni/svuota/rivedi), valida prima di scrivere, crea il ramo campaign-group-<nome>, azzera la partita e committa.",
+      "use_case": "«Un altro gruppo rigioca la campagna: come parto dal materiale che c'e' senza aprire un file YAML?»",
+      "stability": "stable",
+      "stdlib_only": false,
+      "external_bins": [
+        "git"
+      ],
+      "args": [
+        {
+          "name": "--answers",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Risposte in JSON invece del modulo in terminale."
+        },
+        {
+          "name": "--domande",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Stampa il modulo come JSON (per un'interfaccia) ed esce."
+        },
+        {
+          "name": "--dry-run",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Fa le domande e dice cosa farebbe, senza scrivere."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "campaign/state.yaml",
+          "kind": "yaml",
+          "required": true,
+          "schema": "scripts/schemas/campaign_state.schema.json"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "campaign/state.yaml",
+          "kind": "yaml",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": "scripts/schemas/campaign_state.schema.json"
+        },
+        {
+          "path": "campaign/state.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "campaign/group.yaml",
+          "kind": "yaml",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "fatto, o dry-run / domande",
+        "1": "risposte non valide, albero sporco, ramo gia' esistente o reset fallito (niente resta scritto)",
+        "2": "uso errato"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "A parita' di state.yaml e risposte lo stato nuovo e' identico; cambia solo la data delle voci inferred."
+      },
+      "side_effects": {
+        "writes_canon": true,
+        "git_commit": true,
+        "network": false
+      },
+      "idempotent": false,
+      "consumes_schema": "scripts/schemas/campaign_state.schema.json",
+      "produces_schema": "scripts/schemas/campaign_state.schema.json",
+      "ci_smoke": "python scripts/gruppo_nuovo.py --help",
+      "tests": [
+        "scripts/tests/test_gruppo_nuovo.py"
+      ],
+      "docs": [
+        "scripts/README-automation.md",
+        "campaign/DM-CAMPAIGN-PLAYBOOK.md"
       ]
     },
     {

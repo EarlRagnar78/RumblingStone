@@ -1146,7 +1146,8 @@ Vale per **ogni** commit di **ogni** fase.
 | ~~D16~~ | F4 · 4d-2 | ✅ **CHIUSA E ATTUATA il 2026-09-16, nello stesso commit.** Il DM ha scelto l'enumerazione **con il compagno**: `attivo · latitante · neutralizzato · morto · ignoto`, più `reversibile`. ⚒️ `neutralizzato` copre il caso più frequente al tavolo — sconfitto ma non morto — e senza di lui il DM dovrebbe scrivere `morto` per non scrivere `attivo`. 🔴 **E `reversibile` è la metà che conta**: in questa campagna un morto torna (il Ghostlord nasce da un morto, Sal è protetto da un paradosso auto-consistente, Hella è morta in attesa del rito), quindi registrare «morto» senza dire se è definitivo è registrare **meno di quel che il canone sa**. La regola **R9** lo pretende. ⚠️ `state_apply` scrive `stato` ma **non** `reversibile`: il primo è la lettura letterale del log, il secondo è una decisione narrativa, e R9 la chiede al DM alla prima esecuzione — provato sul canone vero. 🔎 **§4 conoscenze è stata esclusa dopo averla misurata**, benché il DM avesse chiesto di includerla: tre righe non sono persone e tre persone compaiono sotto due nomi, quindi `stato` lì vorrebbe dire un valore privo di senso in tre casi e due copie divergenti in altri tre. Va nell'anagrafica del lotto della chiave. Vedi **§4.8.9** |
 | ~~D17~~ | F4 · 4d-4 | ✅ **CHIUSA il 2026-09-17 — e la domanda aveva una premessa falsa, trovata dal DM.** Era posta come «i due villain senza scheda: si scrivono, si contano o escono da §3?». 🐛 **Tre delle quattro voci che avevo dichiarato senza scheda ce l'avevano.** Il DM: *«controlla bene negli archi o nel bestiario se c'è qualcosa magari annegato come prosa»*. **Zalkatar** ha uno statblocco a **GS 13** (14d4+70, CA 24) in `09_…/P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md`; **Saarvith + Regiarix** ne hanno uno a **GS 13** in `09_…/P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`, e il file `FASE4` accanto dichiara esplicitamente *«le statistiche sono lì; questo è la regia dello scontro»*; il **Cerchio Druidico** ne ha uno in `Bestiario/mostri/cerchio-druid7-cr7.md`, marcato [ACCEPTED — DM-canon 2026-05-05]. L'errore non è stato non trovarle: ho cercato **solo dentro `Bestiario/`**, e allargando la ricerca ho **troncato l'output a sei righe** concludendo da una lista tagliata. ✅ Non c'era niente da scrivere né da togliere: c'era da **cercare meglio**. Resta **un** buco su 28 (`lathander-mask`), ed è corretto. ⚠️ **Conseguenza di progetto**: una scheda non vive per forza nel `Bestiario/`, e un cancello tarato lì avrebbe continuato a dare per mancanti due boss da GS 13. Nasce **R13**, che mette alla prova ogni buco dichiarato contro tutto il repo. Vedi **§4.8.10** e [ADR-0053](adr/ADR-0053-la-chiave-verso-il-bestiario-si-dichiara.md) |\n| ~~D6~~ | F1 | ✅ **decisa 2026-09-04: ridisegnata.** `…P1C` mappa 3 dichiarava 40×40 e aveva righe da 24 a 26 celle: rifatta **26×29**, nessuna coordinata del testo cambiata |
 | ~~D18~~ | F4 · 4d-6 | ✅ **DECISA E ATTUATA il 2026-09-17, nello stesso commit.** Il DM: *«spezzarli per intestazione verificando che non esistano già»*. Il catalogo portava **19 record intitolati al documento** invece che alla creatura, perché `build_monster_catalog.py` faceva **un record per file** e prendeva il primo GS: «Parte 2A – Torre Invisibile», GS 10. **19 → 8**, pool **372 → 397**. 🔎 Quel che ne è uscito non sono comparse: gli **otto fantini del Palio**, i **Sicari di Sonjak**, il Gonfaloniere Aldemar Vosk, la Drow Chierica di Lolth, gli esempi d'onda di Rethmar — tutti chiusi dentro un record solo. ⚠️ **La deduplica è ancorata a un fatto dichiarato**: si confrontano i nomi **solo** dentro l'insieme delle voci del Bestiario che citano *quel* documento come `Source`. È il modo di rispettare ADR-0053 (un matcher permissivo traveste l'ignoranza) senza rinunciare a dedurre: il legame documento↔voce l'ha scritto qualcuno, la somiglianza sceglie solo *quale* voce sta per *quale* intestazione. 🔴 **E il rischio opposto ha il suo presidio**: il record di file sparisce solo quando **ogni** creatura che il documento nomina ha già la sua voce — gli otto che restano sono quelli dove non è vero, e toglierli significherebbe meno rumore e **meno creature**. 🐛 Due difetti nei nomi generati, trovati misurando: la numerazione del Palio è **multi-livello** (`### 3.2 Drow Chierica`) e lasciava nomi che cominciavano per cifra, e la coda tagliata lasciava parentesi mai chiuse («Aldemar Vosk (LN»). 🔎 **E il cancello nuovo ha trovato un errore mio al primo giro**: contava **due** «Skullcrusher il Nero», perché la voce che avevo appena scritto puntava al file che il drago lo *nomina* soltanto — i numeri stanno in `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md`. Correggendo il puntamento è poi caduto fuori che `P6-INTEGRAZIONE` restava scoperto, e dentro c'erano **Re Thorek I** (Grr 16, il re di mille anni prima che si inginocchia davanti alla Corona) e **Durin Hammerfist**, l'antenato di Othrek: due PNG di canone che non aveva nessuno. Vedi **§4.8.12** e [ADR-0054](adr/ADR-0054-un-archivio-non-e-una-copia.md) |
-| D19 | F4 · 4f | **Il template di `state.yaml` per un gruppo nuovo: scheletro o derivato?** Oggi il reset non tocca `state.yaml` e il gruppo nuovo eredita 750 righe del primo tavolo (§4.10.0). 4f-1 applica lo **scheletro** della #99: `png` resta (è prodotto: 28 voci con la chiave del Bestiario), ogni altra sezione riparte da un segnaposto dichiarato, March Day 1. L'alternativa è un template **derivato** che tenga le agende preparate dei 13 villain coi clock a zero e gli archi tutti «da giocare»: è più utile a chi riparte, ma ogni agenda porta scritto ciò che il primo tavolo ha già cambiato, quindi è una revisione riga per riga (classe **K**). 🔵 Proposta: lo scheletro adesso, il derivato solo se un secondo tavolo parte davvero |
+| ~~D19~~ | F4 · 4f | ✅ **Risposta del DM il 2026-09-24, ed è un principio più largo della domanda**: *«la procedura dovrebbe essere quanto più automatizzata possibile: un DM normalmente non tocca affatto i file yml, al massimo se ha un'interfaccia scrive dei campi o seleziona i valori da un form già impostato»*. Quindi né lo scheletro da compilare né il derivato da rivedere a mano: il template è **derivato in automatico** dal prodotto, e ciò che resta di giudizio passa da un **modulo** a scelte. Procedura in §4.10.6, il via è **D21** |
+| D21 | F4 · 4f | **Si procede come in §4.10.6?** Il gruppo nuovo parte con un comando solo e un modulo a campi e scelte. Le proposte di fine sessione che oggi dicono «scrivi in `state.yaml`» diventano domande dello stesso modulo. Le risposte stanno in un JSON, e il modulo è solo la sua faccia: oggi il terminale, domani una pagina, senza toccare la logica. 🔵 Proposta: sì, con prima 4f-4 (il gruppo nuovo) e poi 4f-5 (le proposte di fine sessione), ognuno col suo commit |
 | ~~D20~~ | F4 · 4f-2 | ✅ **DECISA E ATTUATA il 2026-09-24, nello stesso commit.** Il DM: *«D20 ok ma non tralasciare nulla»*. Split per sezione come in §4.10.4: **528 righe su 528** ritrovate nelle due metà (controllate contro git da un test), nessuna duplicata, una sola parola spostata («ESCAPED», che la cronaca racconta già tre volte). Tredici rimandi aggiornati in undici file; restano sul nome vecchio i documenti datati (`plans/`, l'audit IP, la baseline del 21 settembre), come registro di quando sono stati scritti |
 
 ---
@@ -2341,7 +2342,7 @@ dovrà conoscere `state.yaml`, `state-changelog.md` e adesso anche il
 front-matter), **4g** (schede PG a dati), **4h** (`groups/<slug>/`, PR
 dedicata).
 
-### 4.10 · Lotto **4f** — prodotto e partita `[4f-0 ✅ audit · 4f-1 ✅ · 4f-2 ✅ · 4f-3 ⬜ · D19 ⬜]`
+### 4.10 · Lotto **4f** — prodotto e partita `[4f-0 ✅ audit · 4f-1 ✅ · 4f-2 ✅ · 4f-3 ⬜ · 4f-4 e 4f-5 attendono D21]`
 
 > `[C costruzione, con un sotto-lotto K (4f-2) · Opus, sessione principale ·
 > alto · un test che esegue il reset su una copia dei file veri e dimostra che
@@ -2502,6 +2503,44 @@ riga si corregge nel lotto del canone, non qui.
 | il reset | ✅ la cronaca si azzera dal suo template, la premessa resta identica; `PENDENTI` è vuoto |
 | 🔴 i cancelli mordono | ✅ **3 mutazioni su 3** rosse: una riga persa, «ESCAPED» di nuovo nel grafo (la prima prova la metteva nell'intestazione, che il test esclude: era la mutazione a sbagliare), la cronaca tolta dall'elenco della partita |
 | non-regressione | ✅ **1.248** test; `validate_skills` dopo il build, `validate_docs` e `--sorgenti`, `validate_modules`, `validate_bestiario`, `validate_state`, `render_state --check` |
+
+#### 4.10.6 · D19, dopo la risposta del DM: nessun YAML a mano
+
+**Il principio** (DM, 2026-09-24): il DM non scrive YAML. Al massimo compila
+campi o sceglie valori da un modulo già impostato.
+
+**Dove il repo lo viola oggi**, misurato:
+
+| Posto | Cosa dice al DM |
+|---|---|
+| `new-campaign-group.sh` (scritto in 4f-1) | «Fill `campaign/state.yaml`: party, first villains» |
+| `dmcore/masters.py`, nota di `DATI` | ogni proposta non meccanica di fine sessione va scritta in `state.yaml`, poi `render_state` |
+| skill `rumblingstone-automation`, tabella dei tre master | `state.yaml`: «**qui**, poi `render_state.py`» |
+
+**Perché il template non può essere derivato del tutto in automatico.** Nello
+`state.yaml` di oggi, cercando i nomi dei PG, i giorni di marcia e i verbi di
+esito, portano tracce del primo tavolo **9 agende villain su 13**, **4 righe di
+difensori su 9**, **4 artefatti su 8** e **3 archi su 22** (conto euristico,
+con falsi positivi possibili). Quelle righe hanno bisogno di un giudizio, e il
+giudizio resta del DM. Si può però ridurlo a una scelta.
+
+**La procedura proposta:**
+
+| | Sotto-lotto | Cosa fa | Il DM |
+|---|---|---|---|
+| **4f-4** | il gruppo nuovo da un modulo | `dm.py gruppo nuovo` fa il branch, il reset e il modulo della sessione 0. Il template è **derivato**: villain con agenda, trigger e `png_id` preparati, clock a zero, `stato: attivo`; archi tutti da giocare; numeri di Rethmar come preparati; artefatti senza portatore. Le righe con tracce del primo tavolo si presentano **una alla volta**, con tre scelte: tieni, svuota il campo, segna da rivedere. «Da rivedere» diventa una voce `inferred`, il meccanismo che il repo usa già per le domande aperte | scrive il nome del gruppo e i PG (nome, classe, livello); **sceglie** arco di partenza e risposte |
+| **4f-5** | le proposte diventano domande | le proposte non meccaniche di `state_apply` (alleanze, party, conoscenze) non dicono più «scrivi in `state.yaml`»: diventano domande dello stesso modulo, con i valori possibili già elencati e la scrittura validata come quella del delta | sceglie |
+| — | documenti | le tre righe della tabella qui sopra | — |
+
+**Il contratto è il JSON delle risposte, non il modulo.** È la forma che
+`session_wizard --answers` usa già: il modulo in terminale lo produce oggi, e
+una pagina locale potrà produrlo domani senza toccare la logica. È anche ciò che
+rende tutto testabile senza tastiera.
+
+⚠️ **Quello che l'automazione non toglie**: le nove agende restano un giudizio
+del DM. Il modulo gli risparmia di aprire un file e di scrivere YAML, non di
+decidere se l'agenda di Xal'thor, *«to seize Tordek's Bracieri Gemelli»*, vale
+anche per un tavolo dove Tordek non c'è.
 
 ## Come si misura che il piano è finito
 

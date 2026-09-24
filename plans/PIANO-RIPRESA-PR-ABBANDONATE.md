@@ -2159,6 +2159,109 @@ doppi ridotti a uno: **tredici record in meno, zero creature in meno**.
 | **Nessuna perdita** | ogni riga tabellare delle sei sezioni coperte ha un record in `state.yaml`, contata nei **due sensi** |
 | **Non-regressione** | i **20 file** che toccano `state.md` — 737 test verdi, `dm.py doctor --ci`, `next_session`, `session_recap` |
 
+### 4.9 · Lotto **4e** — una sola via di scrittura `[4e-0 ✅ audit · 4e-1 ⬜ · 4e-2 ⬜ · 4e-3 ⬜]`
+
+> `[C costruzione · Opus 5, sessione principale (il piano diceva Sonnet 5) · alto ·
+> un test **sui file veri** (§4.4): i tredici villain di `campaign/state.yaml`
+> si raggiungono tutti dal log di sessione, e un delta vecchio o un `png_id`
+> inesistente **non scrive niente**]`
+
+#### 4.9.0 · FASE 1 · 4d è chiuso davvero? (2026-09-24, in sola lettura)
+
+Richiesta DM: *«verifica con fase1.py che 4d sia davvero chiuso (il piano
+dichiara 46 righe di tabelle non modellate come residuo)»*. `fase1.py --check`
+sui sette file della via di scrittura: nessun archivio, uscita 0.
+
+| Prova del contratto di 4d | Esito oggi |
+|---|---|
+| `render_state.py --check` | ✅ `state.md` allineato a `state.yaml` |
+| `validate_state.py` | ✅ valido; R7 conta **58** righe senza tempo, R12 **1** voce senza scheda (`lathander-mask`), come dichiarato |
+| i test di §4.8.6 (byte-identità, gate che morde, nessuna perdita nei due sensi, schema che morde) | ✅ esistono in `test_state_data.py`; i 75 test di stato passano |
+
+**Le 46 righe, rimisurate** sulle tabelle fuori dalle regioni `gen:state:`:
+
+| Tabella | Righe | Chi la dichiara |
+|---|---:|---|
+| §2.2 composizione dell'orda | 13 | `dmcore/masters.py`: §2 «waypoint e orda» è **prosa**, e *«modellarle è un lotto suo»* |
+| §2.3 additivi condizionali | 11 | idem |
+| §2.5 infiltrati e profughi | 8 | idem (è sotto §2) |
+| §5 promesse | 9 | §4.8.4: **resta prosa, scelta dichiarata** |
+| §7.R reputazione | 5 | §4.8.4: §7 resta prosa |
+| **totale** | **46** | |
+
+**Verdetto: 4d è chiuso sul suo contratto.** Le 46 righe non sono un residuo di
+4d: stanno fuori dalle otto regioni che 4d aveva promesso, e il repo le dichiara
+prosa in due posti. Il difetto era nel piano, che le elencava come ⬜ in due
+tabelle «Cosa resta» senza dire di chi fossero. Da qui non sono un lotto di
+questo piano. Modellarle sarebbe un lotto **K** e una decisione del DM: la
+colonna «Status (Day 19 sync)» di §2.5 è la stessa forma dei due tempi che 4c ha
+dovuto separare.
+
+#### 4.9.1 · FASE 1 · Cosa resta di 4e sul codice di oggi
+
+La #99 definiva 4e (commit `df9d74b`, 2026-08-06) in due parti:
+
+1. **i dati**: clock dei villain, «chi sa cosa», numeri di Rethmar. ✅ **Già su
+   `main`**, portati da 4d-1…4d-3: `villain.clock`, `villain.stato`, la regione
+   `conoscenze`, `difensori_rethmar` e `scenari_rethmar`, `march_clock`.
+2. **la via**: il log di sessione porta in testa un **front-matter coi delta**,
+   emesso dal wizard, e `state_apply` legge quello invece di cercare con regex
+   nella prosa. ⬜ **Non esiste.**
+
+La seconda parte non è estetica. Misurato oggi, prendendo ogni villain di
+`state.yaml` col nome breve che un DM scriverebbe nel log:
+
+| Trigger di `state_sync` | Villain che vede | Chi manca |
+|---|---:|---|
+| `villain_clock` (9 clock numerici, il rituale a parte) | **3 su 9** | Zalkatar, Saarvith, Valerius, **Ghaurush, Zin'thara, Ushgar**. Il Collezionista si vede solo se il log scrive «Rakshasa» |
+| `npc_killed` | **5 su 13** | Sal, il Collezionista, Xal'thor, Valerius, Mira Serani, **Ghaurush, Zin'thara, Ushgar** |
+| `npc_escaped` | 13 su 13 | nessuno, perché accetta **qualunque** parola maiuscola. Lo salva `_stato_villain`, che scarta i nomi non univoci |
+
+I nomi stanno **scritti nel sorgente** della regex. I tre villain canonizzati il
+2026-08-05 non ci sono mai entrati: un loro clock o una loro morte a fine
+sessione **non produce nemmeno la proposta a mano**, perché la riga non viene
+riconosciuta. È il difetto che la #99 aveva previsto per Ghaurush.
+
+La chiave c'è già, ed è di 4d-4: ogni record `villain` ha un `png_id`
+obbligatorio. Il front-matter nomina il villain per `png_id`, non per somiglianza
+di stringa.
+
+**Fuori da 4e, dichiarato:** le tre righe di §4 che fanno sapere dei «Custodi
+Eterni» a Ghaurush, Zin'thara e Ushgar prima che l'arco 08 sia giocato (la
+domanda nuova della #99). Sono canone, non via di scrittura, e R7 le conta già
+fra le 31 conoscenze senza tempo.
+
+#### 4.9.2 · FASE 2 · Sviluppo, in tre sotto-lotti
+
+| | Sotto-lotto | Cosa produce | Qualità |
+|---|---|---|---|
+| **4e-1** | il delta come dato | `dmcore/delta_sessione.py`: legge il front-matter, lo valida contro `state.yaml` (`png_id` esistente, `da` uguale al valore di oggi, `stato` nell'enumerazione dello schema) e lo emette in forma deterministica. `state_apply` lo usa **al posto** della regex per le quattro scritture meccaniche; senza front-matter si ricade sulla regex di oggi | test sui file veri: i 13 villain raggiungibili, un delta vecchio e un `png_id` ignoto **non scrivono**, un log con front-matter **e** righe di prosa non applica due volte |
+| **4e-2** | il wizard lo scrive | `session_wizard` risolve i nomi contro `state.yaml` **mentre il DM risponde**, gli mostra a chi ha agganciato cosa e scrive il front-matter. Il DM non scrive YAML | un nome che non si risolve lo dice subito e resta prosa; il file del wizard è letto da `state_apply` senza regex |
+| **4e-3** | documenti e chiusura | template di sessione, skill `rumblingstone-automation`, `README-automation`, docstring di `state_sync`, tracciatura | `validate_docs --sorgenti`, `validate_skills`, `tools_manifest --check` |
+
+**Assunzioni dichiarate.**
+
+1. **La regex resta** per i log senza front-matter. L'unico log in
+   `campaign/sessions/` è scritto in anticipo e non ne ha; toglierla romperebbe
+   la lettura dei log vecchi per guadagnare niente.
+2. **Il front-matter porta solo ciò che `state_apply` sa scrivere**: March
+   Clock, clock dei villain (rituale compreso), `stato`. Alleanze e prosa
+   restano nella sezione *World events triggered*, come proposta a mano.
+3. **`reversibile` non si scrive**, come oggi: lo dice il DM, e R9 glielo chiede.
+4. **pyyaml** resta il debito dichiarato di ADR-0037: `state_apply` lo importa
+   già. Il wizard lo usa solo per risolvere i nomi, e senza pyyaml scrive il log
+   senza front-matter e lo dice.
+
+#### 4.9.3 · FASE 3 · Validazione
+
+| Prova | Criterio |
+|---|---|
+| **sui file veri** | `state.md`, `state.yaml` e `state-changelog.md` del repo copiati in un repo temporaneo; `state_apply` con un log a front-matter scrive il campo giusto, rigenera la vista e `render_state --check` resta verde |
+| **i tredici** | ogni `png_id` di `villain` è raggiungibile dal front-matter; la regex resta com'è e un test dice quanti ne vede |
+| **i cancelli mordono** | `da` diverso dal valore di oggi, `png_id` inesistente, `stato` fuori enumerazione: nessuna scrittura, uscita non zero, e il motivo a video |
+| **una via sola** | front-matter più la stessa riga in prosa: una scrittura, non due |
+| **non-regressione** | pytest completo, `dm.py doctor --ci`, `check_plans_discipline`, `validate_docs --sorgenti` |
+
 ## Come si misura che il piano è finito
 
 Non «quattro PR chiuse». Queste:

@@ -72,4 +72,4 @@ quando scende sotto 80 pf, **non può fuggire** e va abbattuto.
 ---
 
 **Cross-ref**: state.md §2.2 · INDICE r.27/443 · ARMATE-SYNC §2.1/§4-Fase1 ·
-STRUTTURA §4/§5/§7/§9.4 · `Bestiario/villain/Azarr_Kul/Azarr_Kul.md` (Tyrgarun NON cavalcatura).
+STRUTTURA §4/§5/§7/§9.4 · `Bestiario/villain/Azarr_Kul/Azarr_Kul/Azarr_Kul.md` (Tyrgarun NON cavalcatura).

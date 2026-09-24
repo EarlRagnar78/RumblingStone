@@ -1,0 +1,116 @@
+# campaign/state.yaml — TEMPLATE per un gruppo nuovo (lotto 4f, ADR-0050 §7)
+#
+# Lo copia `scripts/azzera_partita.py`, chiamato da `new-campaign-group.sh`.
+# Qui c'e' solo lo SCHELETRO della partita: ogni record e' un segnaposto
+# dichiarato, e il gruppo nuovo lo sostituisce in sessione 0.
+#
+# ⚠️ Manca `png` di proposito: l'anagrafica dei PNG e' PRODOTTO (id, nome, scheda
+# nel Bestiario) e il reset la prende dallo `state.yaml` del gruppo di prima,
+# cosi' non diverge da quello che il repo sa del Bestiario.
+#
+# Nessun valore qui e' inventato: i dieci archi e il Ritual Clock a 0/18 sono
+# quelli di `templates/state-blank.md`, il giorno d'arrivo a Rethmar e' quello
+# dell'AP. Il template derivato, con le agende preparate dei villain, e' la
+# decisione D19 di PIANO-RIPRESA-PR-ABBANDONATE.
+#
+# Dopo aver compilato:
+#   python3 scripts/validate_state.py     # schema + coerenza
+#   python3 scripts/render_state.py       # rigenera le tabelle in state.md
+
+schema_version: 1
+
+archi:
+- arco: 00 Setup RHoD
+  tempo: in_corso
+  stato: da iniziare
+  march_clock: Day 1
+  pg_livello: '5'
+  note: sessione 0 del gruppo nuovo
+- arco: 01 Miniera
+  tempo: preparato
+  stato: non iniziato
+- arco: 02 Scaladossa
+  tempo: preparato
+  stato: non iniziato
+- arco: 03 Cittadella
+  tempo: preparato
+  stato: non iniziato
+- arco: 04 Tomba Belkram
+  tempo: preparato
+  stato: non iniziato
+- arco: 05 Stanza Runica
+  tempo: preparato
+  stato: non iniziato
+- arco: 06 Corona Adamantio
+  tempo: preparato
+  stato: non iniziato
+- arco: 07 Portale Forgia
+  tempo: preparato
+  stato: non iniziato
+- arco: 08 Hammerfist
+  tempo: preparato
+  stato: non iniziato
+- arco: 09 Post-Hammerfist
+  tempo: preparato
+  stato: non iniziato
+
+party:
+- pg: (PG 1)
+  classe: (classe e livello)
+  oggi: Da compilare in sessione 0.
+  stato: attivo
+- pg: (PG 2)
+  classe: (classe e livello)
+  oggi: Da compilare in sessione 0.
+  stato: attivo
+- pg: (PG 3)
+  classe: (classe e livello)
+  oggi: Da compilare in sessione 0.
+  stato: attivo
+- pg: (PG 4)
+  classe: (classe e livello)
+  oggi: Da compilare in sessione 0.
+  stato: attivo
+
+artefatti:
+- artefatto: (nessuno all'inizio)
+  portatore: —
+  oggi: Il gruppo non porta ancora artefatti.
+
+villain:
+- villain: Azarr Kul (High Wyrmlord) — Ritual Clock, see §2.0
+  png_id: azarr-kul
+  tempo: preparato
+  agenda: Il rituale al Fane di Tiamat. Non avanza coi giorni di marcia, solo coi trigger rituali.
+  clock: 0/18
+  stato: attivo
+
+conoscenze:
+- png: Azarr Kul
+  png_id: azarr-kul
+  tempo: preparato
+  sa_che: Niente del gruppo. Si compila quando un PNG impara qualcosa in scena.
+
+difensori_rethmar:
+- contingente: (da compilare all'Arco 09)
+  tempo: preparato
+  conteggio: '0'
+
+scenari_rethmar:
+- scenario: (da compilare all'Arco 09)
+  tempo: preparato
+  orda: '0'
+  difensori: '0'
+  rapporto: '—'
+
+march_clock:
+  giorno_corrente: 1
+  giorno_arrivo: 42
+  waypoints:
+  - giorno: '42'
+    waypoint: Horde arrives at Rethmar and encamps
+    stato: ⏳ Pending
+
+echi: []
+
+inferred: []

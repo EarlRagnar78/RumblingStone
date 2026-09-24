@@ -3495,6 +3495,91 @@
       ]
     },
     {
+      "id": "azzera_partita",
+      "path": "scripts/azzera_partita.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/azzera_partita.py",
+      "summary": "Azzera la PARTITA per un gruppo nuovo (stato, storico, sessioni, recap) e lascia il prodotto; l'elenco e' dmcore/partita.py. Valida il nuovo state.yaml prima di scrivere e rigenera state.md (ADR-0050 §7).",
+      "use_case": "«Un gruppo nuovo riparte da zero: cosa si azzera, cosa resta, e la sua CI e' verde?»",
+      "stability": "stable",
+      "stdlib_only": false,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Elenca cosa verrebbe azzerato, senza scrivere."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "campaign/templates/",
+          "kind": "directory",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "campaign/state.yaml",
+          "kind": "yaml",
+          "required": true,
+          "schema": "scripts/schemas/campaign_state.schema.json"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "campaign/state.yaml",
+          "kind": "yaml",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": "scripts/schemas/campaign_state.schema.json"
+        },
+        {
+          "path": "campaign/state.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "campaign/state-changelog.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "il nuovo stato non passerebbe validate_state, o manca un template: niente scritto"
+      },
+      "determinism": {
+        "deterministic": false,
+        "seed_flag": null,
+        "notes": "La prima data segnaposto dei template diventa la data di oggi."
+      },
+      "side_effects": {
+        "writes_canon": true,
+        "git_commit": false,
+        "network": false,
+        "notes": "Cancella sessioni, recap, brief e i file generati dallo stato vecchio. Lo chiama new-campaign-group.sh sul branch del gruppo nuovo."
+      },
+      "idempotent": true,
+      "consumes_schema": "scripts/schemas/campaign_state.schema.json",
+      "produces_schema": "scripts/schemas/campaign_state.schema.json",
+      "ci_smoke": "python scripts/azzera_partita.py --help",
+      "tests": [
+        "scripts/tests/test_new_group.py"
+      ],
+      "docs": [
+        "scripts/README-automation.md"
+      ]
+    },
+    {
       "id": "next_session",
       "path": "scripts/next_session.py",
       "category": "C-post-session-canon",

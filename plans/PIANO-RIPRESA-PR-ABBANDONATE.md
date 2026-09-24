@@ -2340,7 +2340,7 @@ dovrà conoscere `state.yaml`, `state-changelog.md` e adesso anche il
 front-matter), **4g** (schede PG a dati), **4h** (`groups/<slug>/`, PR
 dedicata).
 
-### 4.10 · Lotto **4f** — prodotto e partita `[4f-0 ✅ audit · 4f-1 ⬜ · 4f-2 ⬜ · 4f-3 ⬜]`
+### 4.10 · Lotto **4f** — prodotto e partita `[4f-0 ✅ audit · 4f-1 ✅ · 4f-2 ⬜ · 4f-3 ⬜]`
 
 > `[C costruzione, con un sotto-lotto K (4f-2) · Opus, sessione principale ·
 > alto · un test che esegue il reset su una copia dei file veri e dimostra che
@@ -2400,6 +2400,36 @@ primo tavolo**: «Skull Gorge bridge, crossed intact (PG did NOT sabotage)».
   dei 13 villain coi clock a zero, e gli archi tutti «da giocare»? Costa una
   revisione riga per riga (classe **K**), perché ogni agenda va ripulita da ciò
   che il primo tavolo ha già cambiato.
+
+#### 4.10.3 · Com'è andato 4f-1 (2026-09-24) — la partita come dato
+
+L'elenco di cosa è partita sta in `scripts/dmcore/partita.py`: tre master da
+template, cinque modelli di file da svuotare (sessioni, recap di gruppo e per
+PG, `.hb.md`, brief), tre file generati da togliere (`xp-ledger`, dossier,
+`group.yaml`, che porta il nome del gruppo di prima). `campaign-history.md` sta
+in un elenco a parte, `PENDENTI`, e il reset lo stampa a ogni esecuzione finché
+4f-2 non lo chiude. Lo esegue `scripts/azzera_partita.py`, che
+`new-campaign-group.sh` chiama al posto del suo `cp` e del suo `rm`.
+
+**L'ordine conta.** Il reset costruisce il nuovo `state.yaml` e lo passa a
+`validate_state` **prima di scrivere qualunque file**: se non torna, non tocca
+niente e il branch non si committa. Per poterlo fare, i controlli di
+`validate_state` sono diventati una funzione, `errori()`: con due elenchi, il
+giorno che se ne aggiunge uno il reset lo salterebbe.
+
+Il template di `state.yaml` è lo scheletro (D19 resta aperta per il derivato):
+i dieci archi e il Ritual Clock a 0/18 vengono da `state-blank.md`, il Day 42
+dall'AP, e `png` dallo `state.yaml` di prima perché è prodotto. Il template di
+`state.md` ora ha i 10 marcatori; diceva ancora «Day 40» per l'arrivo a
+Rethmar, e il canone è 42.
+
+| Prova | Esito |
+|---|---|
+| lo script vero, in un clone con git | ✅ branch, reset, commit: 10 file, 3.056 righe tolte; `render_state --check`, `validate_state`, `validate_docs --sorgenti` verdi sul gruppo nuovo |
+| sui file veri (`test_new_group.py`, 10 test) | ✅ CI verde; nessun nome dei quattro PG nei tre master; `png` identico; `house-rules.md` intatto; il primo `session end` del gruppo nuovo scrive e la vista segue; rifarlo dà lo stesso risultato |
+| l'elenco copre ogni uscita | ✅ ogni file che il manifest dichiara scritto sotto `campaign/` è in `PARTITA` o in `PENDENTI` |
+| 🔴 i cancelli mordono | ✅ **5 mutazioni su 5** rosse. 🐛 La prima (una voce tolta dall'elenco) **passava**: il test confrontava i percorsi con `fnmatch`, dove `*` attraversa le cartelle e `recaps/*.md` copriva anche `recaps/homebrew/`. Ora confronta come `Path.glob`, e conta i recap direttamente |
+| non-regressione | ✅ **1.244** test, `dm.py doctor --ci`, `tools_manifest --check` (74 tool) |
 
 ## Come si misura che il piano è finito
 

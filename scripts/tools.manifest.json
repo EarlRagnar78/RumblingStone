@@ -5562,6 +5562,89 @@
       ]
     },
     {
+      "id": "copertura_scene",
+      "path": "scripts/copertura_scene.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/copertura_scene.py [--check] [--file X.md [--contratto]]",
+      "summary": "Metà deterministica dello strumento lettore e playtester (ADR-0073): in ogni master DEF e stand-alone controlla che ogni scena abbia un box read-aloud (C1) e che chi ha un'etichetta di battuta abbia una scheda d'entrata o una riga nel foglio del cast (C2). Nei moduli che adottano il contratto «In scena — Dove: … — Chi: …» controlla che ogni luogo abbia un box con quel luogo nell'etichetta e ogni persona una scheda o una riga fra le Comparse (C3), e che nessuna scheda o battuta stia fuori dall'elenco (C4). Profili e residui dichiarati in plans/copertura-scene.json; un master DEF non dichiarato prende il profilo severo.",
+      "use_case": "«Stasera porto questo modulo al tavolo: c'è scritto com'è ogni posto in cui i PG entrano e chi ci trovano, o dovrò inventarlo?»",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cancello CI: esce 1 sui rilievi non dichiarati e sui residui scaduti."
+        },
+        {
+          "name": "--file",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Analizza un file qualunque, senza residui (calibrazione su versioni vecchie)."
+        },
+        {
+          "name": "--contratto",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con --file: applica anche il contratto In scena (C3, C4)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/copertura-scene.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "**/ARC*-DEF-*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "rilievi non dichiarati o residui scaduti (--check)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Solo testo e regex; il rilevatore dei box è quello di misura_craft."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/copertura_scene.py --check",
+      "tests": [
+        "scripts/tests/test_copertura_scene.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0073-chi-e-dove-sta-scritto-nella-scena.md",
+        "skills/rumblingstone-playtest/references/lettore-a-freddo.md",
+        "skills/rumblingstone-playtest/references/playtester-a-freddo.md"
+      ]
+    },
+    {
       "id": "validate_docs",
       "path": "scripts/validate_docs.py",
       "category": "G-orchestration-governance",

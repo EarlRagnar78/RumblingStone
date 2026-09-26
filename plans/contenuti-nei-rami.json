@@ -109,6 +109,22 @@
     },
     {
       "ref": [
+        "pr/180",
+        "origin/claude/lettore-playtester"
+      ],
+      "stato": "in-volo",
+      "dove": "PR #180 aperta: PIANO-LETTORE-E-PLAYTESTER F1-F3 (ADR-0073, copertura_scene.py, DEF-4 prima dell'infiltrazione)"
+    },
+    {
+      "ref": [
+        "pr/179",
+        "origin/claude/fucina-di-notte-e-immagini"
+      ],
+      "stato": "portato",
+      "dove": "PR #179 fusa il 2026-09-26 (9d892da): l'immagine dentro le schede degli artefatti (ADR-0072), la fucina di notte e la variante dall'alto in DEF-4 (CHIUSURA-DEI-MILLE-ANNI M5-M7.5), le date di fr-history"
+    },
+    {
+      "ref": [
         "pr/178",
         "origin/claude/artefatti-audit-corona-2gemme"
       ],

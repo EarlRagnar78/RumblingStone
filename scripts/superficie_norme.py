@@ -205,6 +205,52 @@ NORME_SCOPERTE = (
         "sblocca": None,
     },
     {
+        "chiave": "nessun_pg_senza_niente_da_fare",
+        "norma": "sviluppo-degli-incontri.md §1 · §7 — nessun PG senza niente da "
+                 "fare negli scontri chiave; negli stand-alone, ogni modo di stare "
+                 "al tavolo ha una scena",
+        "prerequisito": "esiste una scheda personaggio leggibile per i quattro PG",
+        "forma": None,
+        "oggetto": "PG/*Scheda*.md",
+        "dove": "chi vola, chi ha gittata, chi non ha niente contro un drago in "
+                "quota lo dicono le schede dei PG, e in `PG/` non ci sono",
+        "rilevatore_pronto": None,
+        "sblocca": "le schede A4 dei quattro PG — gated sul DM",
+    },
+    {
+        "chiave": "volo_invisibilita_allarme",
+        "norma": "sviluppo-degli-incontri.md §2 · §4 — ogni luogo sorvegliato "
+                 "risponde a volo, invisibilità e «chi sente il rumore»",
+        "prerequisito": "i luoghi sorvegliati sono marcati come tali",
+        "forma": None,
+        "dove": "il contratto «In scena» (ADR-0073) dice dove e chi, non chi "
+                "sorveglia: manca un campo, per esempio `Allarme:`",
+        "rilevatore_pronto": None,
+        "sblocca": "un campo in più nel contratto «In scena», poi copertura_scene.py",
+    },
+    {
+        "chiave": "tre_tiri_salvezza",
+        "norma": "sviluppo-degli-incontri.md §3 — Tempra, Riflessi e Volontà negli "
+                 "scontri di un master",
+        "prerequisito": "gli scontri sono distinguibili dai riti e dai dialoghi",
+        "forma": None,
+        "dove": "le CD con un TS si contano (RICERCA-MANUALE-DEL-MASTER §2), ma "
+                "nessuna forma dice quali stanno in uno scontro",
+        "rilevatore_pronto": None,
+        "sblocca": "PIANO-MARCATURA-DEGLI-INCONTRI: un incontro marcato col suo EL",
+    },
+    {
+        "chiave": "boss_a_soglia_e_skill_challenge",
+        "norma": "sviluppo-degli-incontri.md §5 · §6 — il boss ha una soglia in cui "
+                 "cambia; lo skill challenge è scritto per intero, in un posto solo",
+        "prerequisito": "boss e skill challenge sono marcati come tali",
+        "forma": None,
+        "dove": "nessuna forma prescritta: «Skill Challenge» compare come titolo "
+                "libero, e la soglia di un boss sta in prosa",
+        "rilevatore_pronto": None,
+        "sblocca": "una forma di marcatura, poi le letture a freddo come verifica",
+    },
+    {
         "chiave": "due_livelli_di_subordinate",
         "norma": "read-aloud-adulti.md — max due livelli di subordinate",
         "prerequisito": None,

@@ -119,6 +119,12 @@ jobs:
       - name: Moduli standalone (STANDALONE-* e 10-stand-alone/*)
         run: python scripts/validate_standalone.py
 
+      # La scheda d'entrata sta nella scena, e ogni scena ha il suo box
+      # (ADR-0073). Il DM, il 2026-09-25, ha inventato al tavolo sette cose
+      # che DEF-4 non diceva, con tutti i cancelli verdi.
+      - name: Copertura delle scene — chi e dove incontrano i PG
+        run: python scripts/copertura_scene.py --check
+
       # Bloccante sugli ERRORI dal 2026-09-24: i refusi sono a zero (11 corretti
       # nella #167, 13 falsi positivi tolti dalla regola). Gli AVVISI (virgolette
       # dritte, «E'») restano ~2.450 e non bloccano: --strict li alzerebbe a

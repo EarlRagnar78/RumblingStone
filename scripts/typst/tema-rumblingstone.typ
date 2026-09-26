@@ -272,7 +272,13 @@
     ..celle
   )
   let corpo = block(breakable: true, griglia)
-  let scavalca = place(auto, float: true, scope: "parent", clearance: 10pt, block(width: 100%)[
+  // `clearance` 18pt, non 10: con 10 la riga della `sezione` di un float in
+  // fondo alla pagina finiva sulla stessa linea della didascalia di un
+  // ritratto nella colonna sopra, 7 pt dentro lo spazio riservato (booklet
+  // della serata del −1000, p. 65 e p. 72, 2026-09-26). Il flusso a due colonne
+  // di Typst 0.15 sbaglia di quel tanto l'altezza lasciata al float: è una
+  // mitigazione misurata, non la cura. `validate_booklets --stampa` la tiene.
+  let scavalca = place(auto, float: true, scope: "parent", clearance: 18pt, block(width: 100%)[
     #if sezione != none [
       #text(font: TITOLI, size: 7.5pt, fill: seppia, tracking: 0.3pt)[#upper(sezione)]
       #v(-4pt)

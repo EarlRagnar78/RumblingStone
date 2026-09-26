@@ -2074,6 +2074,37 @@
       "deterministic": true
     },
     {
+      "name": "copertura_scene",
+      "description": "«Stasera porto questo modulo al tavolo: c'è scritto com'è ogni posto in cui i PG entrano e chi ci trovano, o dovrò inventarlo?»\n\nMetà deterministica dello strumento lettore e playtester (ADR-0073): in ogni master DEF e stand-alone controlla che ogni scena abbia un box read-aloud (C1) e che chi ha un'etichetta di battuta abbia una scheda d'entrata o una riga nel foglio del cast (C2). Nei moduli che adottano il contratto «In scena — Dove: … — Chi: …» controlla che ogni luogo abbia un box con quel luogo nell'etichetta e ogni persona una scheda o una riga fra le Comparse (C3), e che nessuna scheda o battuta stia fuori dall'elenco (C4). Profili e residui dichiarati in plans/copertura-scene.json; un master DEF non dichiarato prende il profilo severo.",
+      "use_case": "«Stasera porto questo modulo al tavolo: c'è scritto com'è ogni posto in cui i PG entrano e chi ci trovano, o dovrò inventarlo?»",
+      "invocation": "python3 scripts/copertura_scene.py [--check] [--file X.md [--contratto]]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Cancello CI: esce 1 sui rilievi non dichiarati e sui residui scaduti."
+          },
+          "file": {
+            "type": "string",
+            "description": "Analizza un file qualunque, senza residui (calibrazione su versioni vecchie)."
+          },
+          "contratto": {
+            "type": "boolean",
+            "description": "Con --file: applica anche il contratto In scena (C3, C4)."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "rilievi non dichiarati o residui scaduti (--check)"
+      },
+      "deterministic": true
+    },
+    {
       "name": "decisioni_dm",
       "description": "«Che cosa sta aspettando da me, oggi? E come faccio a fidarmi che quell'elenco sia aggiornato?»\n\nLe decisioni aperte al DM: la fonte sono le tabelle marcate dentro i piani, l'aggregato di STATO-E-ORDINE §4 e' generato, e il drift fra le due cose e' rosso in CI.",
       "use_case": "«Che cosa sta aspettando da me, oggi? E come faccio a fidarmi che quell'elenco sia aggiornato?»",

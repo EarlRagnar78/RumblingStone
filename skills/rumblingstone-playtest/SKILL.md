@@ -75,6 +75,34 @@ lette come «il modulo è pronto», che è la conclusione sbagliata.
 Esemplare: il dry-run dell'Abbazia (`10-stand-alone/`), che apre dichiarando
 *«Cos'è e cosa non è»* prima di elencare i dodici difetti.
 
+## 2-bis. Il lettore e il playtester a freddo — prima del dry-run
+
+Chi ha scritto un modulo non vede le sue lacune: sa com'è la stanza e chi ci
+sta, e non si accorge che sulla pagina non c'è. Il 2026-09-25 il DM ha
+inventato al tavolo sette cose che `ARC07-DEF-4` non diceva, con tutti i
+cancelli verdi ([ADR-0073](../../plans/adr/ADR-0073-chi-e-dove-sta-scritto-nella-scena.md)).
+
+Due letture, fatte da un agente che riceve **solo il modulo**, con una rubrica
+fissa. Leggi le rubriche, non questo riassunto:
+
+| Ruolo | Domanda | Rubrica |
+|---|---|---|
+| **lettore** | *capisco cosa c'è, senza inventare?* (leggibilità) | [`references/lettore-a-freddo.md`](references/lettore-a-freddo.md) |
+| **playtester** | *quando i giocatori fanno quello che vogliono, il modulo risponde?* (giocabilità) | [`references/playtester-a-freddo.md`](references/playtester-a-freddo.md) |
+
+- **Quando**: su ogni master nuovo o riscritto, **prima** del dry-run e prima
+  che vada al tavolo. Il dry-run misura il ritmo, le letture misurano i buchi.
+- **Il cancello**: `python3 scripts/copertura_scene.py --check` gira in CI su
+  ogni modifica di canone. Controlla il box di ogni scena, la scheda di chi
+  parla e il contratto `**In scena** — Dove: … — Chi: …`. Le letture trovano
+  un difetto la prima volta, e il cancello impedisce che torni.
+- **Le letture non sono un cancello.** Due letture non danno lo stesso elenco.
+  Un tipo di rilievo che torna in due moduli diversi diventa una regola dello
+  script, con i falsi positivi contati a mano.
+- **Gli esempi delle rubriche non vengono mai dai casi di calibrazione**,
+  altrimenti la lettura trova quello che le si è detto di trovare.
+  Calibrazione: `plans/esperimenti/lettore-playtester-def4/`.
+
 ## 3. Il dry-run — come si simula un tavolo
 
 - **Composizione**: dichiara chi immagini al tavolo (quanti esperti, quanti no). Un

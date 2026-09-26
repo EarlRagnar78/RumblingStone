@@ -6,7 +6,7 @@
 > due letture a freddo fatte da un agente con una rubrica fissa
 > (`skills/rumblingstone-playtest/references/`).
 >
-> **Stato**: 🟡 F1-F3, F7 e F8 chiusi; restano al DM le statistiche di Skullcrusher, l'origine del Rubino e l'approvazione della chiave del quiz · **Decisore**: DM ·
+> **Stato**: 🟡 F1-F3 e F7-F9 chiusi; restano al DM le statistiche di Skullcrusher, l'origine del Rubino e l'approvazione della chiave del quiz · **Decisore**: DM ·
 > **Decisione**: [ADR-0073](adr/ADR-0073-chi-e-dove-sta-scritto-nella-scena.md)
 > **Gate**: `copertura_scene.py --check` verde; su `ARC07-DEF-4` la lettura a
 > freddo ripetuta dopo F3 non trova più rilievi 🔴 nelle Scene 5-9
@@ -204,11 +204,32 @@ ARC-08. Decisione in [ADR-0074](adr/ADR-0074-il-master-come-componenti.md).
       perdeva 13); l'apparato è escluso da `misura_craft` e marcato in `fase1`
 - [ ] i master nuovi di ARC-08 (F6) nascono con l'apparato generato
 
+### F9 · Le domande del developer, misurate ✅ (2026-09-26)
+
+Il DM: *«fai anche lo strumento di analisi scaturito dalle cose decenti dei due
+manuali, così può misurare e segnare il problema, se esiste nell'avventura»*.
+
+- [x] `scripts/domande_developer.py`: sei delle sette domande di
+      `sviluppo-degli-incontri.md` (D1 nemico in volo, D2 volo e invisibilità,
+      D3 i tre TS, D4 chi sente il rumore, D5 la soglia del boss, D6 lo skill
+      challenge per intero, D6-5E abilità estranee al sistema); la §7 resta un
+      giudizio del playtester
+- [x] calibrato sul DEF-4 del tavolo (`esperimenti/domande-developer-def4/`):
+      **5 difetti noti su 5**, precisione 5 su 9; due forme corrette dalla
+      calibrazione (la risposta per chi non vola, il sistema PF1e del Drappo)
+- [x] 12 rilievi sui 9 moduli, ognuno dichiarato con la ragione in
+      `plans/domande-developer.json`; `--check` in CI
+- [ ] **DM**: DEF-4 Scena 11, cosa fa chi non vola nei tre round di regia
+      (playtester #42, aperto)
+- [ ] F4: la Tempra di DEF-5 · F5: l'invisibilità al corpo di guardia
+      dell'Abbazia, Riflessi e Volontà nell'Abbazia e nel Drappo
+
 ## 5 · Validazione
 
 - `python3 scripts/copertura_scene.py --check` verde in CI.
 - `python3 scripts/componenti.py --check` e `python3 scripts/quiz_lettura.py --check`
   verdi in CI (F7, F8).
+- `python3 scripts/domande_developer.py --check` verde in CI (F9).
 - Ogni residuo ha la ragione, e un residuo che smette di verificarsi fa fallire
   il cancello finché non lo si toglie.
 - Un tipo di rilievo che le letture trovano in **due moduli diversi** diventa una

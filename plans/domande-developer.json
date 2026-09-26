@@ -1,0 +1,116 @@
+{
+  "_cos_e": "Profili e residui di scripts/domande_developer.py (le domande del developer, sviluppo-degli-incontri.md). Un residuo e' un rilievo che resta, con la ragione: falso positivo spiegato, risposta scritta altrove, o difetto aperto con chi lo chiude. Un residuo che smette di verificarsi fa fallire --check finche' non lo si toglie.",
+  "profili": {
+    "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md": {
+      "ts_voluti": [
+        "Volontà"
+      ],
+      "perche": "beat di rito e di visione: sviluppo-degli-incontri.md §3 esclude le scene di rito, e DEF-2 chiede solo Volontà apposta"
+    },
+    "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md": {
+      "ts_voluti": [
+        "Volontà"
+      ],
+      "perche": "il rito della resurrezione: stessa esclusione della §3"
+    },
+    "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md": {
+      "sistema": "pf1e",
+      "modulo": "drappo",
+      "perche": "modulo PF1e in tre file (AGENTS.md): Percezione e Furtivita' esistono, e i TS si contano sull'insieme"
+    },
+    "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md": {
+      "sistema": "pf1e",
+      "modulo": "drappo"
+    },
+    "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md": {
+      "sistema": "pf1e",
+      "modulo": "drappo"
+    }
+  },
+  "residui": [
+    {
+      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+      "regola": "D2",
+      "scena": "SCENA 2",
+      "dettaglio": "luogo sorvegliato: nessuna risposta a «e se volano?»",
+      "ragione": "falso positivo: la pattuglia di Durin viene incontro ai PG per farli entrare, non è un luogo da superare"
+    },
+    {
+      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+      "regola": "D2",
+      "scena": "SCENA 2",
+      "dettaglio": "luogo sorvegliato: nessuna risposta a «e se sono invisibili?»",
+      "ragione": "falso positivo: stessa ragione, la pattuglia cerca i PG"
+    },
+    {
+      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+      "regola": "D2",
+      "scena": "SCENA 7",
+      "dettaglio": "luogo sorvegliato: nessuna risposta a «e se volano?»",
+      "ragione": "risposta scritta altrove: la variante dall'alto della Scena 6 dice cosa succede quando la pietra atterra vicino alla tenda («La bolla alla tenda»)"
+    },
+    {
+      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+      "regola": "D1",
+      "scena": "SCENA 8",
+      "dettaglio": "scontro con un nemico in volo: niente per chi resta a terra",
+      "ragione": "falso positivo: il drago non combatte nella Scena 8, la «picchiata» è come comincia la Scena 11"
+    },
+    {
+      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+      "regola": "D1",
+      "scena": "SCENA 11",
+      "dettaglio": "scontro con un nemico in volo: niente per chi resta a terra",
+      "ragione": "🔴 APERTO: il playtester a freddo (prima lettura, #42 🟠) ha trovato Tordek senza mezzi scritti contro un drago in quota, e il testo di oggi non ha ancora la risposta. Al DM: cosa fa chi non vola nei tre round di regia"
+    },
+    {
+      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+      "regola": "D3",
+      "scena": "—",
+      "dettaglio": "nessun effetto chiede un TS su Tempra",
+      "ragione": "🔴 APERTO: già contato in RICERCA-MANUALE-DEL-MASTER §2; si chiude col lotto F4 di PIANO-LETTORE-E-PLAYTESTER, quando DEF-5 prende il contratto"
+    },
+    {
+      "file": "10-stand-alone/L'abbazia Della Rotta Sicura/abbazia_rotta_sicura.md",
+      "regola": "D2",
+      "scena": "Atto III — Sotto",
+      "dettaglio": "luogo sorvegliato: nessuna risposta a «e se volano?»",
+      "ragione": "non si applica: l'Atto III è un sotterraneo sotto la cappella, e il volo non scavalca niente"
+    },
+    {
+      "file": "10-stand-alone/L'abbazia Della Rotta Sicura/abbazia_rotta_sicura.md",
+      "regola": "D2",
+      "scena": "Atto III — Sotto",
+      "dettaglio": "luogo sorvegliato: nessuna risposta a «e se sono invisibili?»",
+      "ragione": "🔴 APERTO: il corpo di guardia (C23, EL 7) non dice chi vede un PG invisibile; si chiude col lotto F5"
+    },
+    {
+      "file": "10-stand-alone/L'abbazia Della Rotta Sicura/abbazia_rotta_sicura.md",
+      "regola": "D3",
+      "scena": "—",
+      "dettaglio": "nessun effetto chiede un TS su Riflessi",
+      "ragione": "🔴 APERTO: lotto F5 (la megera e le trappole sono i posti naturali)"
+    },
+    {
+      "file": "10-stand-alone/L'abbazia Della Rotta Sicura/abbazia_rotta_sicura.md",
+      "regola": "D3",
+      "scena": "—",
+      "dettaglio": "nessun effetto chiede un TS su Volontà",
+      "ragione": "🔴 APERTO: lotto F5"
+    },
+    {
+      "file": "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+      "regola": "D3",
+      "scena": "—",
+      "dettaglio": "nessun effetto chiede un TS su Riflessi (sull'intero modulo)",
+      "ragione": "🔴 APERTO: una corsa di cavalli senza un Riflessi (la caduta, la curva); lotto F5"
+    },
+    {
+      "file": "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+      "regola": "D3",
+      "scena": "—",
+      "dettaglio": "nessun effetto chiede un TS su Volontà (sull'intero modulo)",
+      "ragione": "🔴 APERTO: lotto F5; da decidere col DM se un modulo di intrigo lo vuole"
+    }
+  ]
+}

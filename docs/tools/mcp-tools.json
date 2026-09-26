@@ -2220,6 +2220,37 @@
       "deterministic": true
     },
     {
+      "name": "domande_developer",
+      "description": "«Se i PG volano, si rendono invisibili o fanno rumore, il modulo lo dice, o dovrò inventarlo al tavolo?»\n\nLe domande del developer di sviluppo-degli-incontri.md (dai due manuali del DM) misurate sulla forma del testo: D1 nemico in volo e chi resta a terra, D2 volo e invisibilità nei luoghi sorvegliati, D3 Tempra/Riflessi/Volontà, D4 chi sente il rumore, D5 la soglia del boss, D6 lo skill challenge scritto per intero, D6-5E abilità estranee al sistema. Indicatori: profili e residui con la ragione in plans/domande-developer.json.",
+      "use_case": "«Se i PG volano, si rendono invisibili o fanno rumore, il modulo lo dice, o dovrò inventarlo al tavolo?»",
+      "invocation": "python3 scripts/domande_developer.py [--check] [--file X.md] [--json]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Cancello CI: esce 1 sui rilievi non dichiarati e sui residui scaduti."
+          },
+          "file": {
+            "type": "string",
+            "description": "Un file qualunque, senza residui (calibrazione su versioni vecchie)."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Uscita in JSON."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "rilievi non dichiarati o residui scaduti (--check)"
+      },
+      "deterministic": true
+    },
+    {
       "name": "fase1",
       "description": "«Sto per toccare questi file: cosa il repo mi sta gia' dicendo, prima che io scriva un rilevatore che se lo inventa?»\n\nL'analisi in sola lettura che precede ogni modifica: mette in fila cio' che il repo gia' sa sul bersaglio — quali norme del registro lo coprono, quali skill apre l'algoritmo a strati, quali dati di stato lo dichiarano (snapshot storico, archivio, DEPRECATO, matrice delle versioni), i 322 nomi propri del Bestiario e le misure di oggi. Una regex nuova viene dopo, mai prima.",
       "use_case": "«Sto per toccare questi file: cosa il repo mi sta gia' dicendo, prima che io scriva un rilevatore che se lo inventa?»",

@@ -248,6 +248,12 @@ scala, read-aloud minimi). Gira in CI a ogni PR: l'agente NON deve
 ri-verificare a mano ciò che lo script copre — spende i token solo su
 prosa, coerenza e design (ciò che una regex non vede).
 
+`python scripts/domande_developer.py --check` fa le domande del developer
+([`references/sviluppo-degli-incontri.md`](references/sviluppo-degli-incontri.md))
+sulla forma del testo: e se volano, e se sono invisibili, chi sente il rumore,
+i tre TS, la soglia del boss, lo skill challenge per intero. Un master nuovo
+nasce senza rilievi, o con la ragione di ognuno in `plans/domande-developer.json`.
+
 `python scripts/componenti.py --check` (ADR-0074) verifica l'apparato generato
 e le **copie sincronizzate**: un blocco scritto una volta in un file e copiato
 in un altro fra `<!-- include: fonte#blocco -->` e `<!-- /include -->`. È il

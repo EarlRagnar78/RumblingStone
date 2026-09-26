@@ -7289,6 +7289,94 @@
         "skills/rumblingstone-playtest/references/quiz-a-due-agenti.md",
         "plans/esperimenti/quiz-def4/RISULTATI.md"
       ]
+    },
+    {
+      "id": "domande_developer",
+      "path": "scripts/domande_developer.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/domande_developer.py [--check] [--file X.md] [--json]",
+      "summary": "Le domande del developer di sviluppo-degli-incontri.md (dai due manuali del DM) misurate sulla forma del testo: D1 nemico in volo e chi resta a terra, D2 volo e invisibilità nei luoghi sorvegliati, D3 Tempra/Riflessi/Volontà, D4 chi sente il rumore, D5 la soglia del boss, D6 lo skill challenge scritto per intero, D6-5E abilità estranee al sistema. Indicatori: profili e residui con la ragione in plans/domande-developer.json.",
+      "use_case": "«Se i PG volano, si rendono invisibili o fanno rumore, il modulo lo dice, o dovrò inventarlo al tavolo?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cancello CI: esce 1 sui rilievi non dichiarati e sui residui scaduti."
+        },
+        {
+          "name": "--file",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Un file qualunque, senza residui (calibrazione su versioni vecchie)."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Uscita in JSON."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/domande-developer.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "plans/copertura-scene.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "**/ARC*-DEF-*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "rilievi non dichiarati o residui scaduti (--check)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Solo testo e regex; scene da copertura_scene, CD da componenti."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/domande_developer.py --check",
+      "tests": [
+        "scripts/tests/test_domande_developer.py"
+      ],
+      "docs": [
+        "skills/rumblingstone-module-standard/references/sviluppo-degli-incontri.md",
+        "plans/esperimenti/domande-developer-def4/CALIBRAZIONE.md"
+      ]
     }
   ]
 }

@@ -134,6 +134,13 @@ jobs:
       - name: Chiavi del quiz a due agenti ben formate
         run: python scripts/quiz_lettura.py --check
 
+      # Le domande del developer (sviluppo-degli-incontri.md, dai due manuali
+      # del DM): volo e invisibilità, chi sente il rumore, i tre TS, la soglia
+      # del boss, lo skill challenge per intero. Indicatori: i rilievi che non
+      # sono difetti stanno in plans/domande-developer.json con la ragione.
+      - name: Domande del developer — si gioca?
+        run: python scripts/domande_developer.py --check
+
       # Bloccante sugli ERRORI dal 2026-09-24: i refusi sono a zero (11 corretti
       # nella #167, 13 falsi positivi tolti dalla regola). Gli AVVISI (virgolette
       # dritte, «E'») restano ~2.450 e non bloccano: --strict li alzerebbe a

@@ -101,6 +101,9 @@
 | `sviluppo-degli-incontri.md` §2 · §4 | ogni luogo sorvegliato risponde a **«e se volano, e se sono invisibili?»** e a **«chi sente il rumore, in quanti round arriva, cosa lo ferma»** | **maggiore** | 🔴 non misurato — un rilevatore non sa quali luoghi sono sorvegliati; lo chiede il playtester a freddo. 🔎 Nasce da `DEF-4`: la variante dall'alto che mancava, e il corno durante lo scontro (seconda lettura, playtester #24 🔴) |
 | `sviluppo-degli-incontri.md` §3 | gli effetti con un TS negli scontri di un master toccano **Tempra, Riflessi e Volontà** | **minore** | 🔴 non misurato in CI — il conteggio a mano è in `RICERCA-MANUALE-DEL-MASTER-2026-09` §2 (`DEF-1` ha una Volontà sola, `DEF-5` nessuna Tempra); una regex non separa uno scontro da un rito |
 | `sviluppo-degli-incontri.md` §5 · §6 | il boss ha **una soglia in cui cambia**, dentro l'SRD e col tetto EL; lo skill challenge dice **chi tira, cosa, quanto vale un successo, quanti ne servono e cosa costa un fallimento**, in un posto solo | **maggiore** | 🔴 non misurato — lo trovano le letture a freddo (`DEF-4`, lettore #21 🔴: due regole incompatibili per lo stesso skill challenge) |
+| `ADR-0074` | l'**apparato d'uso** di un master col contratto (cast, CD, read-aloud) **si genera** in `APPARATO-<master>.md` e non si scrive a mano; una **copia sincronizzata** fra `<!-- include: fonte#blocco -->` e `<!-- /include -->` è identica alla sua fonte | **maggiore** | 🟢 `componenti.py --check` (in CI) — il 2026-09-26: un apparato (DEF-4) e una copia (lo statblocco di Balvar dal Bestiario). ⚠️ L'inserto delle CD prende **tutte** le CD (43 su 43 in DEF-4), ma l'etichetta è la coda di testo prima della CD, non un nome di prova interpretato |
+| `quiz-a-due-agenti.md` | la **chiave del quiz** di un modulo ha **da 10 a 15 domande**, alternative non vuote, e uno **stato** «bozza» o «approvata»: la approva il DM, perché dice cosa il modulo deve far sapere | **minore** | 🟡 `quiz_lettura.py --check` (in CI) — controlla la forma e che lo stato ci sia; **non** può controllare che ad approvare sia stato il DM |
+| `quiz-a-due-agenti.md` | gli **appunti** del lettore stanno in **400 parole**, contate da chi orchestra prima di passare avanti; oltre si rifà la lettura, non si taglia | **minore** | 🔴 non misurato in CI — è un passo della procedura, e gli appunti esistono solo durante l'esperimento; i due del 2026-09-26 sono in `plans/esperimenti/quiz-def4/` (400 e 386 parole). 🔎 Nella prova pilota, con il tetto detto una volta sola, erano 654 e 574 |
 | `ADR-0059` (MQM) | il **punteggio di qualità pesato**: severità 1 / 5 / **25**, soglia per classe, critico pass-fail | — è il metro, non una norma che un documento possa violare | 🟢 `punteggio_mqm.py --soglia` — 515 documenti, soglie da `specifiche-qualita.yaml` misurate con `--distribuzione`. ⚠️ Copre **4 norme su 40**: entra solo ciò che ha già un rilevatore |
 | `npc-villain-boosting` | **EL ≤ APL+4**, e oltre il tetto serve un `Boost log:` | **critico** | 🔴 non misurato — il controllo **esiste** (`validate_modules.py --tetto-el`, APL letto da `state.md`) ma **non ha superficie**: la forma `**EL**: [N]` che `AGENTS.md` prescrive ha **zero occorrenze**, e i 150 «EL N» nudi mescolano dichiarazioni e menzioni. Prerequisito: marcare gli incontri |
 | `ADR-0060` (norma WotC/Paizo) | le **sigle** di caratteristica — `For 25`, `Des 14`, 688 occorrenze | — non applicabile: le sigle sono maiuscole per costruzione | ⚪ non applicabile — sono maiuscole per costruzione, non c'è niente da controllare |
@@ -111,9 +114,9 @@
 
 | | Norme registrate |
 |---|---:|
-| 🟢 misurate | 32 |
-| 🟡 misurate in parte, con il limite scritto | 10 |
-| 🔴 **non misurate, con la ragione scritta** | 15 |
+| 🟢 misurate | 33 |
+| 🟡 misurate in parte, con il limite scritto | 11 |
+| 🔴 **non misurate, con la ragione scritta** | 16 |
 | ⚪ non applicabili | 2 |
 
 > 🐛 **Questi quattro numeri erano sbagliati tutti e quattro**, e nessuno se

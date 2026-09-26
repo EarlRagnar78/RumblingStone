@@ -2308,13 +2308,25 @@ delle 100 Asce (ARC-08) può portarne il nome — eco commovente.*
 
 ### A.4 · Balvar Fuocospento (Scena 7)
 
-Nano dello scudo, **Chierico 9 di Abbathor / Runecaster 4**, NE · **pf 96**
-(13 DV) · **CA 24**, contatto 12, colto 22 · Iniz +2 · Vel 6 m · TS Temp +13,
-Rifl +8, **Vol +17** · BAB +8, Lotta +9 · For 12, Des 14, Cos 16, Int 16,
-**Sag 20**, Car 14 · martello da guerra runico +1 +10/+5 (1d8+2) ·
-scurovisione 18 m, immune alla paura. **Leggere il Fuori-Posto** (Su,
-3/giorno): come *individuazione del magico*, ma sulle anomalie del tempo;
-percepisce chi non appartiene a questo secolo.
+<!-- include: Bestiario/villain/balvar-fuocospento-cr13.md#statblocco -->
+```statblocco
+gs: 13
+tipo: Medium humanoid (dwarf), Chierico 9 di Abbathor / Runecaster 4, NE
+ca: 24
+ca-dettaglio: contatto 12, colto 22 (mithral +2, anello +2, DES +2)
+pf: 96
+ts: Temp +13, Rifl +8, Vol +17
+attributi: For 12 Des 14 Cos 16 Int 16 Sag 20 Car 14
+velocita: 6 m
+iniziativa: +2
+attacchi:
+  - Mischia martello da guerra runico +1 +10/+5 (1d8+2)
+```
+<!-- /include -->
+
+**13 DV** · BAB +8, Lotta +9 · scurovisione 18 m, immune alla paura. **Leggere il
+Fuori-Posto** (Su, 3/giorno): come *individuazione del magico*, ma sulle
+anomalie del tempo; percepisce chi non appartiene a questo secolo.
 
 **Incantesimi** da chierico di 13° livello, **CD 15 + livello**: *dispel magic,
 magic circle against good, greater magic weapon, divination, righteous might,
@@ -2325,9 +2337,12 @@ invisibility purge, glyph of warding, dimensional anchor*.
 uno slot. Qui: la soglia, il palo centrale, sé stesso, e la Catena (Scena 7).
 
 <!-- apparato -->
-Copia della scheda del Bestiario (`Bestiario/villain/balvar-fuocospento-cr13.md`),
-messa qui perché il DM la vuole al tavolo senza aprire un altro file. Se ne
-cambi una, cambia l'altra: `test_copertura_scene.py` confronta i numeri.
+Il blocco statistiche è una copia sincronizzata della scheda del Bestiario
+(`Bestiario/villain/balvar-fuocospento-cr13.md`), messa qui perché il DM la
+vuole al tavolo senza aprire un altro file. Non si corregge qui: si corregge
+nel Bestiario e si lancia `python3 scripts/componenti.py --includi`; il
+cancello `--check` boccia una copia rimasta indietro (ADR-0074). BAB e Lotta
+non sono nel blocco, e `test_copertura_scene.py` li confronta a parte.
 <!-- /apparato -->
 
 ### A.5 · Re Thorek I e Thorgrim Barbadiferro (Scena 4)

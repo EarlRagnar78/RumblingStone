@@ -25,6 +25,34 @@ stesura ne citava tre, ed è stata fermata prima di dare un numero.
   scene dopo il punto in cui serviva è un rilievo.
 - Scrive un rilievo per ogni buco, anche piccolo. Il conteggio si fa dopo.
 
+## Le domande, sempre le stesse
+
+Un lettore vero non cerca «difetti»: si fa domande, e il buco è la domanda
+che resta senza risposta. Le domande sono fisse, così due letture di due moduli
+diversi si possono confrontare. Vengono dalla pratica di chi prepara un modulo
+pubblicato: *The Alexandrian*, «How to Prep a Module», chiede di leggerlo tutto
+immaginando di condurlo; Sly Flourish, di leggerlo tutto per sapere quali
+segreti mettere davanti ai giocatori.
+
+**Per ogni scena**, nell'ordine:
+
+| Domanda | Se resta senza risposta |
+|---|---|
+| Dove siamo, e cosa si percepisce appena si entra? | `L-LUOGO` |
+| Chi c'è? Com'è, come parla, cosa vuole? | `L-PNG` |
+| Perché chi agisce agisce così, e perché proprio adesso? | `L-AMBIGUO` o `L-RIFERIMENTO` |
+| Cosa sanno i PG a questo punto, e da chi l'hanno saputo? | `L-ORDINE` |
+| Cosa possono fare qui, e cosa succede se falliscono? | `L-AMBIGUO` (e il playtester) |
+| Quanto costa: tempo, risorse, tacche? | `L-NUMERO` |
+| Da qui dove si va? | `L-ORDINE` |
+
+**Per il modulo intero**, alla fine: *in tre frasi, di cosa parla?* · *chi è il
+cattivo, e cosa vuole?* · *cosa ho dovuto rileggere, e perché?* L'ultima è la
+più utile: un passo che si rilegge è un passo che al tavolo fa perdere tempo.
+
+Quanto di tutto questo **resta** dopo una lettura sola lo misura il quiz a due
+agenti: `quiz-a-due-agenti.md`.
+
 ## I sei codici
 
 | Codice | La domanda che fa scattare il rilievo |

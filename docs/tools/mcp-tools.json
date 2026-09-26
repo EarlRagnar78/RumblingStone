@@ -2034,6 +2034,48 @@
       "deterministic": true
     },
     {
+      "name": "componenti",
+      "description": "«Mi dai il foglio del cast e tutte le CD di questo modulo su un foglio, con i numeri di Balvar uguali a quelli del Bestiario?»\n\nIl master DEF letto come componenti tipizzati (ADR-0074): scena, contratto In scena, box read-aloud, scheda d'entrata, comparse, battute, prove con CD. Ne ricava l'indice, genera l'apparato d'uso APPARATO-<master>.md (foglio del cast, inserto delle CD, indice dei read-aloud) e tiene allineate le copie sincronizzate fra <!-- include: fonte#blocco --> e <!-- /include --> (#statblocco prende il recinto della scheda del Bestiario).",
+      "use_case": "«Mi dai il foglio del cast e tutte le CD di questo modulo su un foglio, con i numeri di Balvar uguali a quelli del Bestiario?»",
+      "invocation": "python3 scripts/componenti.py [MASTER.md [--json]] [--apparato] [--includi] [--check]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "master": {
+            "type": "string",
+            "description": "Un master: stampa l'apparato (o l'indice con --json) senza scrivere."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Con un master: l'indice dei componenti in JSON."
+          },
+          "apparato": {
+            "type": "boolean",
+            "description": "Rigenera APPARATO-<master>.md per ogni master col contratto In scena."
+          },
+          "includi": {
+            "type": "boolean",
+            "description": "Riscrive ogni copia sincronizzata dalla sua fonte."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Cancello CI: esce 1 se un apparato o una copia non combaciano con la fonte; nessuna scrittura."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<arco>/APPARATO-<master>.md",
+        "file con <!-- include: -->"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "apparato o copia non allineati (--check)"
+      },
+      "deterministic": true
+    },
+    {
       "name": "contenuti_nei_rami",
       "description": "«Si e' perso qualcosa nelle PR chiuse o nei commit spinti dopo un merge, che su main non e' mai arrivato?»\n\nI file che esistono in un ramo o in una PR, chiuse comprese, e mai su main ne' per nome ne' per contenuto. Ogni riga deve avere un posto nel registro plans/contenuti-nei-rami.json; quelle senza posto sono il lavoro perso che si cerca (lotto 4i-2). Con --righe confronta riga per riga i rami nominati: vede le correzioni a file che main ha gia', che il controllo sui file non vede (lotto 4j-5).",
       "use_case": "«Si e' perso qualcosa nelle PR chiuse o nei commit spinti dopo un merge, che su main non e' mai arrivato?»",
@@ -2434,6 +2476,45 @@
         "0": "rapporto stampato, o --soglia superata",
         "1": "--soglia: un documento sotto soglia o con un critico",
         "2": "manca pyyaml"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "quiz_lettura",
+      "description": "«Si capisce questo modulo alla prima lettura, o bisogna rileggerlo?»\n\nPunteggio del quiz a due agenti: confronta le risposte date con i soli appunti di una lettura (e a libro aperto) con la chiave plans/quiz/<modulo>.json, e divide le domande in giusta dagli appunti / giusta solo a libro aperto / sbagliata anche a libro aperto.",
+      "use_case": "«Si capisce questo modulo alla prima lettura, o bisogna rileggerlo?»",
+      "invocation": "python3 scripts/quiz_lettura.py --chiave K.json --appunti A.json [--aperto B.json] [--json] | --check",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "chiave": {
+            "type": "string",
+            "description": "La chiave del modulo."
+          },
+          "appunti": {
+            "type": "string",
+            "description": "Risposte date con i soli appunti (JSON {id: testo})."
+          },
+          "aperto": {
+            "type": "string",
+            "description": "Risposte date a libro aperto."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Uscita in JSON."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Cancello CI: le chiavi in plans/quiz/ sono ben formate."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "chiave o risposte malformate"
       },
       "deterministic": true
     },

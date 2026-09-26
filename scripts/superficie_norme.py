@@ -251,6 +251,16 @@ NORME_SCOPERTE = (
         "sblocca": "una forma di marcatura, poi le letture a freddo come verifica",
     },
     {
+        "chiave": "appunti_quattrocento_parole",
+        "norma": "quiz-a-due-agenti.md — gli appunti del lettore stanno in 400 parole",
+        "prerequisito": "gli appunti di ogni esecuzione del quiz stanno in un posto fisso del repo",
+        "forma": None,
+        "dove": "oggi gli appunti vivono nello scratchpad di chi orchestra; i due del "
+                "2026-09-26 sono stati copiati a mano in plans/esperimenti/quiz-def4/",
+        "rilevatore_pronto": None,
+        "sblocca": "una cartella per esecuzione, poi quiz_lettura.py --check conta le parole",
+    },
+    {
         "chiave": "due_livelli_di_subordinate",
         "norma": "read-aloud-adulti.md — max due livelli di subordinate",
         "prerequisito": None,

@@ -100,8 +100,10 @@ class TestIlRepo(unittest.TestCase):
 
 class TestLaCopiaDiBalvar(unittest.TestCase):
     """Il DM vuole i numeri di Balvar nel modulo, non solo nel Bestiario
-    (2026-09-26). Una seconda copia diverge alla prima errata: questo test è
-    il prezzo della ripetizione, e la rende sicura."""
+    (2026-09-26). Una seconda copia diverge alla prima errata. Da ADR-0074 il
+    blocco statistiche è una copia sincronizzata (`componenti.py --check`);
+    questo test resta per BAB e Lotta, che nel blocco non ci sono, e come
+    seconda rete sugli altri numeri."""
 
     #: I numeri, non le etichette: il Bestiario scrive «hp 96», il modulo «pf 96».
     NUMERI = (r"(?:pf|hp):? 96", r"ca:? 24", r"vol \+17", r"sag 20", r"bab \+8",

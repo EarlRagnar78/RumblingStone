@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 79,
+  "tool_count": 81,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -5059,6 +5059,121 @@
       ]
     },
     {
+      "id": "componenti",
+      "path": "scripts/componenti.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/componenti.py [MASTER.md [--json]] [--apparato] [--includi] [--check]",
+      "summary": "Il master DEF letto come componenti tipizzati (ADR-0074): scena, contratto In scena, box read-aloud, scheda d'entrata, comparse, battute, prove con CD. Ne ricava l'indice, genera l'apparato d'uso APPARATO-<master>.md (foglio del cast, inserto delle CD, indice dei read-aloud) e tiene allineate le copie sincronizzate fra <!-- include: fonte#blocco --> e <!-- /include --> (#statblocco prende il recinto della scheda del Bestiario).",
+      "use_case": "«Mi dai il foglio del cast e tutte le CD di questo modulo su un foglio, con i numeri di Balvar uguali a quelli del Bestiario?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "master",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Un master: stampa l'apparato (o l'indice con --json) senza scrivere."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con un master: l'indice dei componenti in JSON."
+        },
+        {
+          "name": "--apparato",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Rigenera APPARATO-<master>.md per ogni master col contratto In scena."
+        },
+        {
+          "name": "--includi",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Riscrive ogni copia sincronizzata dalla sua fonte."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cancello CI: esce 1 se un apparato o una copia non combaciano con la fonte; nessuna scrittura."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/copertura-scene.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "**/ARC*-DEF-*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<arco>/APPARATO-<master>.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        },
+        {
+          "path": "file con <!-- include: -->",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "apparato o copia non allineati (--check)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Solo testo e regex; scene, schede e box letti con copertura_scene e misura_craft."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/componenti.py --check",
+      "tests": [
+        "scripts/tests/test_componenti.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0074-il-master-come-componenti.md",
+        "skills/rumblingstone-module-standard/SKILL.md"
+      ]
+    },
+    {
       "id": "contenuti_nei_rami",
       "path": "scripts/contenuti_nei_rami.py",
       "category": "G-orchestration-governance",
@@ -6005,6 +6120,100 @@
       "docs": [
         "plans/adr/ADR-0059-il-punteggio-di-qualita-e-mqm-adattato.md",
         "plans/PIANO-MISURA-EDITORIALE-STANDARD.md"
+      ]
+    },
+    {
+      "id": "quiz_lettura",
+      "path": "scripts/quiz_lettura.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/quiz_lettura.py --chiave K.json --appunti A.json [--aperto B.json] [--json] | --check",
+      "summary": "Punteggio del quiz a due agenti: confronta le risposte date con i soli appunti di una lettura (e a libro aperto) con la chiave plans/quiz/<modulo>.json, e divide le domande in giusta dagli appunti / giusta solo a libro aperto / sbagliata anche a libro aperto.",
+      "use_case": "«Si capisce questo modulo alla prima lettura, o bisogna rileggerlo?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--chiave",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La chiave del modulo."
+        },
+        {
+          "name": "--appunti",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Risposte date con i soli appunti (JSON {id: testo})."
+        },
+        {
+          "name": "--aperto",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Risposte date a libro aperto."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Uscita in JSON."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cancello CI: le chiavi in plans/quiz/ sono ben formate."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/quiz/*.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "chiave o risposte malformate"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Confronto per radici, numeri esatti. Non deterministico e' chi scrive le risposte, non il punteggio."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/quiz_lettura.py --check",
+      "tests": [
+        "scripts/tests/test_quiz_lettura.py"
+      ],
+      "docs": [
+        "skills/rumblingstone-playtest/references/quiz-a-due-agenti.md",
+        "plans/esperimenti/quiz-def4/RISULTATI.md"
       ]
     },
     {

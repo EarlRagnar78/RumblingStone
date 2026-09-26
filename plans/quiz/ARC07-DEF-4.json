@@ -1,0 +1,232 @@
+{
+  "_leggimi": "Chiave del quiz a due agenti per ARC07-DEF-4 (skills/rumblingstone-playtest/references/quiz-a-due-agenti.md). Ogni alternativa è una lista di radici: la risposta è giusta se le contiene tutte. Le domande chiedono i fatti che servono al tavolo, non i numeri che il DM cerca sulla pagina. È canone: la approva il DM.",
+  "modulo": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "stato": "bozza",
+  "domande": [
+    {
+      "id": "q1",
+      "domanda": "Dove li lascia il portale, rispetto alla fortezza?",
+      "accettate": [
+        [
+          "bosco"
+        ],
+        [
+          "est",
+          "mura"
+        ],
+        [
+          "fuori",
+          "mura"
+        ]
+      ]
+    },
+    {
+      "id": "q2",
+      "domanda": "Chi ferma per primo i PG, e chi è?",
+      "accettate": [
+        [
+          "durin"
+        ]
+      ]
+    },
+    {
+      "id": "q3",
+      "domanda": "Chi comanda la fortezza?",
+      "accettate": [
+        [
+          "thorek"
+        ]
+      ]
+    },
+    {
+      "id": "q4",
+      "domanda": "Cosa chiede il re ai PG, e quando?",
+      "accettate": [
+        [
+          "zog",
+          "notte"
+        ],
+        [
+          "generale",
+          "notte"
+        ],
+        [
+          "zog",
+          "uccid"
+        ],
+        [
+          "generale",
+          "uccid"
+        ]
+      ]
+    },
+    {
+      "id": "q5",
+      "domanda": "Quante tacche ha l'orologio della notte, e cosa succede quando finiscono?",
+      "accettate": [
+        [
+          "8",
+          "alba"
+        ],
+        [
+          "otto",
+          "alba"
+        ],
+        [
+          "8",
+          "sole"
+        ],
+        [
+          "otto",
+          "sole"
+        ]
+      ]
+    },
+    {
+      "id": "q6",
+      "domanda": "Dove si comprano pozioni e incantesimi nella fortezza, e da chi?",
+      "accettate": [
+        [
+          "brynja"
+        ],
+        [
+          "cappella"
+        ],
+        [
+          "gunnvor"
+        ],
+        [
+          "fucina"
+        ]
+      ]
+    },
+    {
+      "id": "q7",
+      "domanda": "Quanto dura la pozione d'invisibilità che il re dà ai PG?",
+      "accettate": [
+        [
+          "12",
+          "minut"
+        ],
+        [
+          "dodici",
+          "minut"
+        ]
+      ]
+    },
+    {
+      "id": "q8",
+      "domanda": "Chi è Balvar, e cosa vuole?",
+      "accettate": [
+        [
+          "runaio",
+          "fretta"
+        ],
+        [
+          "nano",
+          "fretta"
+        ],
+        [
+          "runaio",
+          "cada"
+        ],
+        [
+          "esiliat",
+          "cada"
+        ],
+        [
+          "esiliat",
+          "fretta"
+        ]
+      ]
+    },
+    {
+      "id": "q9",
+      "domanda": "Perché il drago combatte per l'orda?",
+      "accettate": [
+        [
+          "runa",
+          "vincol"
+        ],
+        [
+          "runa",
+          "scaglia"
+        ],
+        [
+          "catena"
+        ]
+      ]
+    },
+    {
+      "id": "q10",
+      "domanda": "Come viene richiamato il drago al campo?",
+      "accettate": [
+        [
+          "corno"
+        ]
+      ]
+    },
+    {
+      "id": "q11",
+      "domanda": "Cosa succede se un nano del gruppo entra nella tenda dalla soglia, invisibile?",
+      "accettate": [
+        [
+          "visibil"
+        ],
+        [
+          "epurare"
+        ],
+        [
+          "smaschera"
+        ]
+      ]
+    },
+    {
+      "id": "q12",
+      "domanda": "Chi è l'uomo incappucciato fra le tende, e chi diventerà?",
+      "accettate": [
+        [
+          "vatore",
+          "sal"
+        ],
+        [
+          "sal"
+        ]
+      ]
+    },
+    {
+      "id": "q13",
+      "domanda": "Come si chiama il capitano delle mura, e com'è?",
+      "accettate": [
+        [
+          "hrodgar"
+        ]
+      ]
+    },
+    {
+      "id": "q14",
+      "domanda": "Cosa succede se il duello col drago va malissimo?",
+      "accettate": [
+        [
+          "antenat"
+        ],
+        [
+          "thorgrim",
+          "interven"
+        ],
+        [
+          "thorgrim",
+          "ricacci"
+        ],
+        [
+          "avi",
+          "interven"
+        ],
+        [
+          "avi",
+          "salv"
+        ]
+      ]
+    }
+  ]
+}

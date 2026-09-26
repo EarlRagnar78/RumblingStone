@@ -34,6 +34,24 @@ from build_booklet_html import VOCI_COLOPHON as VOCI_HTML  # noqa: E402
 from validate_booklets import carica_schema, controlla_manifest, manifest_del_repo  # noqa: E402
 
 
+class TestAttributiDelloStatblocco(unittest.TestCase):
+    """Le schede scrivono «For 12 Des 14 …» senza virgole: 94 su 99. Diviso
+    sulle virgole, il riquadro stampava una coppia sola («For», «12 Des 14 …»):
+    lo si è visto quando DEF-4 A.4 ha incluso lo statblocco di Balvar (ADR-0074)."""
+
+    def test_senza_virgole(self):
+        from export_booklet_typst import statblocco_typ
+        typ = statblocco_typ("gs: 13\nca: 24\npf: 96\nts: Vol +17\n"
+                             "attributi: For 12 Des 14 Cos — Int 16 Sag 20 Car 14")
+        self.assertIn('("For", "12"), ("Des", "14"), ("Cos", "—"), ("Int", "16"), '
+                      '("Sag", "20"), ("Car", "14")', typ)
+
+    def test_con_le_virgole(self):
+        from export_booklet_typst import statblocco_typ
+        typ = statblocco_typ("gs: 1\nca: 10\npf: 5\nts: x\nattributi: For 12, Des 14")
+        self.assertIn('("For", "12"), ("Des", "14")', typ)
+
+
 class TestImmagini(unittest.TestCase):
     """`![alt](src)` deve diventare una figura, non il testo dell'alt."""
 

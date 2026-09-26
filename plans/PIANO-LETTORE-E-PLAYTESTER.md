@@ -6,7 +6,7 @@
 > due letture a freddo fatte da un agente con una rubrica fissa
 > (`skills/rumblingstone-playtest/references/`).
 >
-> **Stato**: 🟡 F1-F3 chiusi; restano al DM le statistiche di Skullcrusher e l'origine del Rubino · **Decisore**: DM ·
+> **Stato**: 🟡 F1-F3, F7 e F8 chiusi; restano al DM le statistiche di Skullcrusher, l'origine del Rubino e l'approvazione della chiave del quiz · **Decisore**: DM ·
 > **Decisione**: [ADR-0073](adr/ADR-0073-chi-e-dove-sta-scritto-nella-scena.md)
 > **Gate**: `copertura_scene.py --check` verde; su `ARC07-DEF-4` la lettura a
 > freddo ripetuta dopo F3 non trova più rilievi 🔴 nelle Scene 5-9
@@ -167,9 +167,48 @@ un modulo che la rubrica non ha mai visto.
 Nascono sotto il cancello: un `ARC*-DEF-*` che `copertura-scene.json` non
 elenca prende il profilo severo, contratto compreso. Si pianificano a parte.
 
+### F7 · Il quiz a due agenti ✅ (2026-09-26)
+
+Il DM: *«capisco qualcosa se leggo, o devo rileggere il modulo più volte?»*.
+Le letture a freddo trovano i buchi; il quiz misura quanto resta dopo una
+lettura sola.
+
+- [x] la rubrica del lettore prende **le domande, sempre le stesse**: sette per
+      scena, ognuna col suo codice, e tre di modulo
+- [x] procedura in `rumblingstone-playtest/references/quiz-a-due-agenti.md`,
+      punteggio in `scripts/quiz_lettura.py` (`--check` in CI sulle chiavi)
+- [x] chiave di DEF-4, 14 domande, **stato bozza**
+- [x] prima esecuzione, DEF-4 prima e dopo F3 (`esperimenti/quiz-def4/`): a libro
+      aperto i buchi scendono **da 4 a 0**, dagli appunti la quota sale solo
+      **da 5 a 6**, e la missione della serata (q4) manca negli appunti di
+      tutti e due i lettori
+- [ ] **DM**: approvare la chiave (e decidere la q8: che cosa vuole Balvar)
+- [ ] **DM**: il riquadro *La serata in tre frasi* in testa a DEF-4, poi un
+      secondo quiz
+
+### F8 · Il master come componenti ✅ (2026-09-26)
+
+Il DM: *«i DEF sono divisibili in oggetti che vengono rimessi insieme […] come
+gli editor di publishing tipo Scribus»*, e *«sì»* a farlo prima dei DEF di
+ARC-08. Decisione in [ADR-0074](adr/ADR-0074-il-master-come-componenti.md).
+
+- [x] `scripts/componenti.py`: indice dei componenti, apparato generato
+      (`APPARATO-<master>.md`: cast, CD, read-aloud), copie sincronizzate
+      (`<!-- include: fonte#blocco -->`, e `#statblocco` per il Bestiario);
+      `--check` in CI
+- [x] misurato prima di decidere: nessuna copia alla lettera fra master vivi, e
+      la copia di Balvar era una riscrittura. Si include il **blocco
+      statistiche**, non la prosa
+- [x] primo uso: DEF-4 A.4 include lo statblocco di Balvar dal Bestiario
+- [x] l'inserto delle CD prende 43 CD su 43 in DEF-4 (il primo estrattore ne
+      perdeva 13); l'apparato è escluso da `misura_craft` e marcato in `fase1`
+- [ ] i master nuovi di ARC-08 (F6) nascono con l'apparato generato
+
 ## 5 · Validazione
 
 - `python3 scripts/copertura_scene.py --check` verde in CI.
+- `python3 scripts/componenti.py --check` e `python3 scripts/quiz_lettura.py --check`
+  verdi in CI (F7, F8).
 - Ogni residuo ha la ragione, e un residuo che smette di verificarsi fa fallire
   il cancello finché non lo si toglie.
 - Un tipo di rilievo che le letture trovano in **due moduli diversi** diventa una

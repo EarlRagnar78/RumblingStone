@@ -535,9 +535,11 @@ def box_con_p1(testo: str) -> "list[tuple[str, str]]":
 
 
 #: Fuori misura, con la ragione scritta: una versione superata o una errata
-#: corrige non dice niente sul mestiere del documento vivo.
+#: corrige non dice niente sul mestiere del documento vivo, e l'apparato
+#: generato da `componenti.py` (ADR-0074) ripete il master in tabelle: misurarlo
+#: conterebbe due volte le stesse scene.
 ESCLUSI = ("_ARCHIVIO", "homebrew", "build")
-ESCLUSI_NOME = ("DEPRECATO", "ERRATA-")
+ESCLUSI_NOME = ("DEPRECATO", "ERRATA-", "APPARATO-")
 
 
 def espandi(modelli: "list[str]") -> "list[Path]":

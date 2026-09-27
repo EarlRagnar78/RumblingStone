@@ -6,7 +6,7 @@
 > Tarsilia, l'Abbazia della Rotta Sicura). L'ordine l'ha dato il DM il
 > 2026-09-25: *«poi i DEF di ARC-08, poi ARC-09 e tutti gli stand-alone»*.
 >
-> **Stato**: ⬜ aperto il 2026-09-27, niente eseguito · **Decisore**: DM ·
+> **Stato**: 🟡 D1-D3 decise il 2026-09-27; A1 scritto come proposta, attende l'OK del DM · **Decisore**: DM ·
 > **Standard**: [`rumblingstone-module-standard`](../skills/rumblingstone-module-standard/SKILL.md)
 > **Gate**: ogni master nuovo passa `validate_modules`, `copertura_scene`
 > (profilo severo, contratto «In scena»), `componenti --check`,
@@ -27,10 +27,13 @@ Nessuno di questi fonde un arco in master. Questo piano sì.
 
 ## 1 · Cosa NON rifà
 
-- **Non riscrive i congegni** che MESTIERE-BANCHI porta in ARC-08 e ARC-09. Se
-  D2 si chiude con «rifinire», le onde S4-S6 confluiscono qui e MESTIERE-BANCHI
-  le segna come portate. Se si chiude con «solo operativo», restano là e
-  questo piano si ferma al consolidamento strutturale.
+- **I congegni di MESTIERE-BANCHI su ARC-08 e ARC-09 si fanno qui, dentro i
+  master** (D2 decisa: rifinire). Confluiscono **S5** (la Torre parla) e **S6**
+  (i read-aloud della Battaglia Finale). ⚠️ **S4 no**: nonostante la dicitura
+  «S4-S6» usata finora, S4 sono i read-aloud di ARC07-DEF-4 e DEF-5, e ARC-07
+  qui non si tocca. Resta a MESTIERE-BANCHI. La sidebar «Scalare lo scontro»
+  (S1) è obbligatoria dello standard, quindi i master nascono con lei: S1 si
+  chiude per ARC-08/09 quando i master esistono.
 - **Non tocca i quattro master di ARC-07** (`DEF-1`…`DEF-5`): sono F4 di
   PIANO-LETTORE.
 - **Non marca gli incontri** con `**EL**:`: è MARCATURA-DEGLI-INCONTRI. Un
@@ -73,6 +76,92 @@ Fauci), dal Registro delle Perdite e dagli esiti di DEF-4. Si elencano i punti
 in cui il testo di ARC-08 presuppone un esito che al tavolo non è ancora
 successo.
 
+## A1 · La divisione in master — proposta del 2026-09-27, attende l'OK del DM
+
+Costruita dagli indici e dalle intestazioni dei file, senza leggere la prosa:
+`ARC08-00-INDICE` §2-§3, `ARC08-12-CRONOLOGIA`, i titoli di `ARC08-01-GUIDA-DM`
+e di `hammerfist_encounters-…-final`, e per ARC-09 `INDICE-GENERALE-COMPLETO-CAMPAGNA`
+con le sue durate. Le righe sono contate con `wc -l` sui file fonte.
+
+### ARC-08 · quattro master, uno per sessione
+
+⚠️ **Il taglio proposto nelle domande era sbagliato, e le fonti lo correggono.**
+Avevo detto «DEF-3 il Giorno 3 dei pregen, DEF-4 il finale dei PG col ponte».
+Ma la cronologia (§2) mette il passaggio di testimone **dentro** la Sessione 3:
+l'incontro 3A lo giocano i pregen, il 3B i Rumbling Stones. Tagliare lì vorrebbe
+dire chiudere un master a metà serata. I master restano quattro, come deciso, e
+si tagliano sulle sessioni che la guida e gli scontri già usano.
+
+| Master | Serata | Chi gioca | Fonti |
+|---|---|---|---|
+| `ARC08-DEF-1-OMBRA-SULLA-MONTAGNA` | Sessione 1 · Day ~12-16 | pregen | Guida DM §1-§3 e «PNG giocabili» (righe 103-634), scontri 1A-1B, `ARC08-04-MARCIA`, `Mappe/…L1` |
+| `ARC08-DEF-2-TRE-GIORNI-DI-SANGUE` | Sessione 2 · Day 16-18 | pregen | Guida DM «Giorno 1-3» (1180-1901), scontri 2A-2B, `Mappe/…L2`, `mass_combat_guide_Dm` |
+| `ARC08-DEF-3-DALLE-PROFONDITA` | Sessione 3 · Day 18-19 | pregen → PG | Guida DM «Il Ritorno degli Eroi» (1902-2447), scontri 3A-3B, `ARC08-11-PONTE-ARRIVO`, `Mappe/…L3` (Mappa 5) |
+| `ARC08-DEF-4-TEMPESTA-E-VITTORIA` | Sessione 4 · Day 19-21 | PG | Guida DM «Sessione 4» (2448-3007), scontro 4A ed epilogo, `ARC08-10-ESITI`, `Cerimonia-delle-100-Asce`, `Mappe/…L3` |
+
+**Materiale comune dell'arco**, che resta nei suoi file e i master richiamano:
+`ARC08-02` schede e regolamento di massa, `ARC08-03` registro delle perdite,
+`ARC08-12` cronologia, `ARC08-13` tesoro, `ARC08-14` atlante, `ARC08-15`
+handout, `ARC08-16` cue, e gli eserciti della Guida DM (righe 635-942). Gli
+`APPARATO-ARC08-DEF-*` li genera `componenti.py` (ADR-0074), non si scrivono.
+
+**Fuori dai master**: `ARC08-90…93` (deprecati), i due `ERRATA-ARC08-*` (si
+verifica che siano applicati e basta), `combat_prompts_guide` (prompt d'immagine,
+casa in `campaign/ai-media-prompts/`), lo stub `PIANO-REVISIONE-ARC08`.
+
+⚠️ **La Cerimonia delle 100 Asce** è canone fissato da non riscrivere (D3 di
+REVISIONE-ARC08). Entra in DEF-4 come **inclusione**, non come prosa rifatta:
+la regia e i read-aloud nuovi le stanno intorno.
+
+### ARC-09 · tredici master, uno per beat
+
+Le durate sono quelle dichiarate da `INDICE-GENERALE`; dove l'indice non ne
+dichiara una, lo scrivo.
+
+| Master | Beat | Serate (INDICE) | File · righe | Fonti principali |
+|---|---|---|---:|---|
+| `ARC09-DEF-01-CERCHIO-DEL-TREANT` | P1A-P1B · Hella | non dichiarate | 4 · 919 | P1A, P1B (testo, mappe, Foresta in fiamme), `HOOKS-Hella` |
+| `ARC09-DEF-02-IL-RITUALE` | P1C · Hella | non dichiarate | 7 · 2.381 | P1C (testo, fight), `SUPPLEMENTO-P1C-*`, `P1-MAPPE` |
+| `ARC09-DEF-03-TORRE-INVISIBILE` | P2A · Artemis | 2-3 | 12 · 1.182 | le quattro parti con mappe e statblocchi, `HOOKS-Artemis` |
+| `ARC09-DEF-04-TORNEO-GIORNI-1-2` | P2B · Tordek | 2-3 in tutto | ~11 · ~2.400 | PARTE1, PARTE2, Otto Porte e Orbe, cheat sheet, `HOOKS-Tordek` |
+| `ARC09-DEF-05-TORNEO-FINALE-E-INVASIONE` | P2B · Tordek | *(stesse)* | ~10 · ~2.400 | PARTE3, DAY3-CITY-SIEGE, le tre subquest, conseguenze ed echi |
+| `ARC09-DEF-06-IL-MERCANTE-DEL-TEMPO` | P2C · Salvatore | 1 | 1 · 154 | P2C |
+| `ARC09-DEF-07-PALIO-DI-CHANNATHGATE` | P2D | 3-4 | 15 · 3.066 | P2D, allegati, booklet in `homebrew/` |
+| `ARC09-DEF-08-RHEST` | Rhest | 2-3 | 8 · 1.144 | P2-RHEST fasi 1-4, nido, esiti |
+| `ARC09-DEF-09-STARSONG-HILL` | P3 · alleanza | 1-2 | 3 · 352 | Starsong testo, mappe, statblocchi |
+| `ARC09-DEF-10-GHOSTLORD` | P3 · alleanza | 2 | 3 · 412 | Ghostlord testo, mappe, statblocchi, `HOOKS-Ghostlord` |
+| `ARC09-DEF-11-SABOTAGGIO-E-MISSIONI` | P3 · secondarie | 1 per missione | 6 · 597 | Sabotaggio (con Upscale CR12), Missioni brevi |
+| `ARC09-DEF-12-BATTAGLIA-FINALE-I` | P3 · Fasi 0-1 | 4-6 in tutto | ~6 · ~1.400 | Rethmar struttura, Armate sync, Fase 0 e 1, `HOOKS-Thorik` |
+| `ARC09-DEF-13-BATTAGLIA-FINALE-II` | P3 · Fasi 2-4 | *(stesse)* | ~10 · ~1.800 | Fasi 2-4, Mythal e scena eroica, event deck, statblocchi epici, esiti |
+
+La colonna «File · righe» conta i file del beat, senza gli `HOOKS-*` (fra 194 e 294 righe l'uno) e senza la bozza deprecata del Torneo. Le righe con `~` sono stime: la divisione file per file dei due beat spezzati
+(Torneo, Battaglia Finale) la fa A2, perché dipende da cosa c'è dentro i file
+comuni come `STATBLOCCHI-COMPLETO` o `DM-MASTER-REFERENCE`.
+
+**Materiale comune dell'arco**: `HOOKS-INTEGRATION-MASTER` (la cronologia fine
+§1.1), `INCONTRI-VIAGGIO-CANNATH-VALE`, `TESORO-WBL-AUDIT`, `HANDOUTS`,
+`INDICE-GENERALE`, `ESPANSIONE NARRATIVA`.
+
+**Fuori dai master**: `inizio.md`, `Quest 1 – Druida Hellas…` e
+`P2B-Torneo-Tordek-PARTE1-to-Be_integrated` (deprecati dal loro stesso
+banner), i due `ERRATA-*` (da verificare applicati).
+
+### Cosa ho trovato guardando, e va deciso prima di S2
+
+1. 🐛 `P2B-Torneo-MAPPE-COMPLETO.md` (88 righe) e `…-COMPLETO-2.md` (240)
+   hanno lo stesso titolo e **differiscono in 304 righe di diff**. Una delle
+   due è una versione vecchia, o sono complementari: lo dice A2 leggendole.
+2. **Il Palio ha già un booklet** (`homebrew/PALIO-BOOKLET.*`) e condivide il
+   sistema di gara col Drappo. Il master DEF-07 non può cambiare le regole
+   della corsa senza toccare lo stand-alone: si consolida la prosa, il
+   sistema resta com'è.
+3. **P2C è un master da 154 righe.** Lo tengo separato perché è una serata a
+   sé nell'indice; se il DM preferisce, entra come intermezzo in DEF-08 Rhest.
+4. **Tredici master sono più dei «~12» della domanda**, e la differenza sono i
+   due tagli del Torneo e della Battaglia Finale. Un master sopra le 2.500
+   righe fonte, rifinito nello stile, supera quello che DEF-1 di ARC-07 regge
+   al tavolo (2.277 righe).
+
 ## FASE 2 — Sviluppo / attuazione
 
 Un lotto per master, nell'ordine dato dal DM. Ogni lotto è **K** per la parte
@@ -94,7 +183,7 @@ PIANO-LETTORE) e i quattro rilievi aperti di `domande_developer` (Riflessi e
 Volontà sull'intero modulo). **Non** diventa un `ARC*-DEF-*`: resta uno
 stand-alone ADR-0017.
 
-**S4 · L'Abbazia** `[engine: Opus · effort: medio · qualità: validate_standalone]` — solo se il DM dice sì a D3
+**S4 · L'Abbazia** `[engine: Opus · effort: medio · qualità: validate_standalone]` — confermato dal DM (D3, 2026-09-27)
 Solo forma: il contratto «In scena», e i rilievi di `domande_developer`
 (l'invisibilità al corpo di guardia, Riflessi e Volontà), come note del DM e non
 come prosa riscritta.
@@ -119,14 +208,15 @@ Per ogni master, prima di chiudere il lotto:
 
 | # | Fase | Domanda |
 |---|---|---|
-| D1 | A1 | **Quanti master per ARC-08 e ARC-09, e con che confini?** Proposta: uno per serata, come ARC-07. La tabella la prepara A1 |
-| D2 | S1-S2 | **Si chiude qui la D2 di MESTIERE-BANCHI?** L'ordine di fare i DEF presuppone «rifinire», ma la domanda non è mai stata posta così. Proposta: sì, rifinire, e le onde S4-S6 confluiscono in questo piano |
-| D3 | S4 | **L'Abbazia entra nel piano?** Il DM ha detto che non si tocca. Proposta: solo il contratto e le note del DM, niente prosa |
+| ~~D1~~ | A1 | ✅ **Decisa il 2026-09-27.** ARC-08: **quattro master**; ARC-09: **uno per beat**, circa dodici. Le fonti hanno spostato il taglio di ARC-08 rispetto alla proposta (il passaggio pregen → PG cade a metà della Sessione 3, non fra due master): la tabella in «A1» taglia per sessione, e attende l'OK |
+| ~~D2~~ | S1-S2 | ✅ **Decisa il 2026-09-27: rifinire.** I master nascono completi di read-aloud, battute, contingenze e vie non combattive. Chiude anche la D2 di MESTIERE-BANCHI: confluiscono qui S5 e S6. S4 resta là perché riguarda ARC-07 (vedi §1) |
+| ~~D3~~ | S4 | ✅ **Decisa il 2026-09-27: sì, solo forma.** Il contratto «In scena» e i rilievi di `domande_developer` come note del DM; nessuna riga di prosa cambiata, coerente con la D1 di MESTIERE-BANCHI |
 
 ## Come si riparte in una chat nuova
 
 1. `python3 scripts/fase1.py "08_La Battaglia Di Hammerfist/ARC08-00-INDICE.md"`
 2. leggere questo piano e `plans/STATO-E-ORDINE-DEI-PIANI.md` §4 (le decisioni
    aperte al DM);
-3. chiedere al DM D1-D3 di questo piano;
-4. cominciare da A1.
+3. D1-D3 sono decise (2026-09-27). Se il DM ha approvato la tabella «A1»,
+   si prosegue con A2 sui file fonte della tabella; se no, si corregge la
+   tabella prima di tutto il resto.

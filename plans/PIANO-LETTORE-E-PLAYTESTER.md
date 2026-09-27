@@ -165,8 +165,49 @@ developer e del playtester; la misura del miglioramento.
 - [x] due controlli nuovi: `copertura_scene` C5 (la scheda sta nella scena del
       primo incontro) e C0 (un modulo senza scene), `domande_developer` D2 col
       silenzio
-- [ ] le decisioni del DM (D11-D19 qui sotto)
-- [ ] le letture a freddo dopo, e la tabella prima/dopo
+- [ ] le decisioni del DM (D5, D11-D23 qui sotto)
+- [x] le letture a freddo dopo, e la tabella prima/dopo
+- [x] un secondo giro di correzioni sui rilievi delle letture dopo che non
+      toccano il canone
+
+**La misura, prima e dopo** (letture cieche, agenti diversi a ogni giro,
+stesse rubriche ripulite; rapporti in `esperimenti/def4-seconda-serata/`):
+
+| | Lettore prima | Lettore dopo | Playtester prima | Playtester dopo |
+|---|---:|---:|---:|---:|
+| rilievi | 36 | 46 | 23 | 34 |
+| 🔴 | 2 | 2 | 2 | **1** |
+| 🟠 | 13 | 18 | 7 | 9 |
+| 🟡 | 21 | 26 | 14 | 24 |
+
+**Il numero è salito, e va letto così.** Due letture non danno mai lo stesso
+elenco (lo dice la rubrica), e le seconde sono state più lunghe e più fini: molti
+🟡 nuovi sono cose che c'erano anche prima e nessuno aveva segnato (i PX di
+Skullcrusher, la mappa del campo senza effetto). Quello che si confronta è la
+classe grave e dove cade:
+
+- **il 🔴 comune alle due letture di prima**, i PG visibili alla tenda, **non
+  compare più in nessuna delle due**;
+- **il 🔴 rimasto al playtester** sono le statistiche di Skullcrusher (D5), che
+  solo il DM può chiudere;
+- **il nuovo 🔴 del lettore** è la provenienza del Rubino, che è la D6 aperta da
+  settimane: la seconda lettura di luglio l'aveva già segnato;
+- **una parte dei 🟠 nuovi li ho introdotti io**: regole che citavano numeri che
+  il modulo non ha (l'Osservare del drago, il Percepire Intenzioni di Balvar,
+  l'Ascoltare di Vatore) e il rapporto degli esploratori messo dopo lo skill
+  challenge. Il secondo giro li ha corretti.
+
+**Il secondo giro, dopo le letture**, ha chiuso senza toccare il canone sette
+rilievi 🟠 (l'ordine della Scena 6, il blocco fallito, la caccia notturna del
+drago, Vatore che sente i PG e le prove fallite con lui, le complicazioni 3 e 4,
+il Registro delle Perdite ancora citato nella Scena 5). Questi non sono stati
+rimisurati alla cieca: la terza lettura si fa dopo le risposte del DM, sul testo
+che andrà al tavolo.
+
+Restano aperti senza una decisione: la durata di una tacca nel mondo, il
+Cronolito, la tabella B4 e le ferite ancestrali, il momento in cui Balvar usa il
+Fuori-Posto, e gli oggetti del cortile che la mappa M7-B non ha (è un lotto di
+mappe, non di testo).
 
 ### F4 · Gli altri master di ARC-07 — ⬜ · allargato il 2026-09-27 (ADR-0075)
 
@@ -305,15 +346,19 @@ manuali, così può misurare e segnare il problema, se esiste nell'avventura»*.
 | D8 | F5 | **Il Drappo vuole un Riflessi e una Volontà?** `domande_developer` non ne trova nessuno sull'intero modulo. Proposta: il Riflessi sì (la caduta nella curva), la Volontà solo se il DM la vuole in un modulo d'intrigo |
 | D9 | F4 | **Nei master già giocati (DEF-1, DEF-2, DEF-3) i box oltre 12 righe si spezzano?** Il passo 5 del ciclo li vuole ≤ 12; DEF-1 ne ha 6, DEF-2 uno. Spezzarli in battute non cambia una parola, ma tocca prosa già letta ai giocatori, ed è la D3 ancora aperta di MESTIERE-BANCHI. Proposta: sì, solo spezzare, come il box di Balvar in DEF-4; mai riscrivere cosa dicono |
 | D10 | F4 | **Il quiz a due agenti (passo 7) va fatto su ogni master?** Ogni quiz chiede una chiave approvata dal DM: con ARC-07, ARC-08, ARC-09 e gli stand-alone sono una ventina di chiavi. Proposta: sì sui master nuovi e su quelli riscritti nella prosa; no sulle conversioni di sola forma dei master già giocati (DEF-1, 2, 3), dove bastano lettore e playtester. Saltarlo lì è una decisione del DM, e va scritta (ADR-0075) |
-| D11 | F3-bis | **I numeri delle guardie di Zog'tar e della pattuglia dei tre fallimenti.** Alle guardie mancavano TS, iniziativa, velocità, Ascoltare e Osservare, che la Scena 7 ora usa. Proposta scritta in A.2 come `[INFERRED]`: guerriero 8 SRD sulle caratteristiche dell'hobgoblin (Temp +8, Rifl +3, Vol +1, Iniz +1, Vel 6 m, Ascoltare e Osservare +1). La pattuglia (otto hobgoblin guerrieri 4) non ha numeri: proposta, lo stesso calcolo a 4° livello |
+| D11 | F3-bis | **I numeri delle guardie di Zog'tar e della pattuglia dei tre fallimenti.** Alle guardie mancavano TS, iniziativa, velocità, Ascoltare e Osservare, che la Scena 7 ora usa. Proposta scritta in A.2 come `[INFERRED]`: guerriero 8 SRD sulle caratteristiche dell'hobgoblin (Temp +8, Rifl +3, Vol +1, Iniz +1, Vel 6 m, Ascoltare e Osservare +1). La pattuglia (otto hobgoblin guerrieri 4) non ha numeri: proposta, lo stesso calcolo a 4° livello. *(Dopo le letture del 2026-09-27)* Due cose nello stesso giro: Zog'tar non torna con l'SRD (un Barbaro 10 ha l'Ira normale e RD 2/—, l'Ira Superiore arriva all'11°; i danni in Ira farebbero 3d6+19, non +15), e Balvar non ha abilità nello statblocco, mentre la Scena 7 ora usa il suo Percepire Intenzioni |
 | D12 | F3-bis | **La pietra del silenzio della variante dall'alto: chi la dà, e quanto dura?** Nessuno la vende. Proposta: Brynja, alla cappella, lancia *silenzio* su un sasso; dura un round per il suo livello, quindi basta per l'atterraggio e la tenda, non per il volo intero. Serve il livello di Brynja |
 | D13 | F3-bis | **Il corno di Grask: al polso o nella custodia col glifo?** Il modulo dice tutte e due le cose. E dopo un allarme di notte il drago dove va? Il testo ora dice «se ne va», senza scegliere fra le colline e il campo |
-| D14 | F3-bis | **Due esiti del duello senza casella.** Se Balvar è morto il drago fugge a metà pf: conta come FERITO GRAVE o FUGGITO? E la Catena spezzata dà «FUGGITO garantito», che per il carry-over B4 è l'esito più debole: è voluto? Proposta: fuga a metà pf = FERITO GRAVE; la Catena spezzata vale FERITO GRAVE se il drago aveva già perso almeno un terzo dei pf |
+| D14 | F3-bis | **Due esiti del duello senza casella.** Se Balvar è morto il drago fugge a metà pf: conta come FERITO GRAVE o FUGGITO? E la Catena spezzata dà «FUGGITO garantito», che per il carry-over B4 è l'esito più debole: è voluto? Proposta: fuga a metà pf = FERITO GRAVE; la Catena spezzata vale FERITO GRAVE se il drago aveva già perso almeno un terzo dei pf. E la fuga a ⅓ dipende da «se i PG premono o allentano», che non è una regola. Proposta: a ⅓ dei pf fugge al suo turno, a meno che nel round prima abbia subito almeno due colpi |
 | D15 | F3-bis | **Quando il duello «crolla» e intervengono gli avi (§6)?** Non c'è una soglia. Proposta: due PG a terra nello stesso round, oppure il gruppo che si ritira dal cortile |
 | D16 | F3-bis | **Il tono del Rubino è deciso in quattro posti** (la targa nella Scena 3, come muore Zog'tar nella Scena 8, l'esito del duello in §7, il «vinto sporco» in §6). Quale vince? Proposta: vince l'esito del duello; gli altri tre colorano la prima frase della Corona |
 | D17 | F3-bis | **L'Aura della Forgia «dura fino all'alba», ma il rito si fa già all'alba.** Proposta: fino all'alba del giorno dopo, e quindi i PG arrivano a DEF-5 con *Possenza Divina* e *Protezione dal Male* ancora addosso, oppure fino al ritorno col Rubino |
-| D18 | F3-bis | **Le corde degli arieti non funzionano coi numeri**: una Lotta con +4 contro il +39 del drago non riesce quasi mai. Proposta: non è una Lotta ma una prova di Forza cooperativa, CD 25, con gli aiuti SRD di chi tira insieme; l'effetto resta l'ala inchiodata per un round |
+| D18 | F3-bis | **Le corde degli arieti non funzionano coi numeri**: una Lotta con +4 contro il +39 del drago non riesce quasi mai. Proposta: non è una Lotta ma una prova di Forza cooperativa, CD 25, con gli aiuti SRD di chi tira insieme; l'effetto resta l'ala inchiodata per un round. E le corde stanno nel cortile interno, mentre gli arieti sono fuori dalle mura: sono corde di un altro attrezzo (le gru delle mura?) o si tolgono |
 | D19 | F3-bis | **Chi del gruppo capisce il nanico antico?** Balvar parla solo quello, e la trattativa della Scena 7 si regge su chi lo capisce. Oggi il modulo nomina solo Thorik come lettore. Proposta: i nani lo capiscono a fatica (tutto il senso, non le sfumature), Thorik lo legge |
+| D20 | F3-bis | **Il riposo lungo della Scena 5 e il «campo di corsa».** Consiglio 1 + riposo lungo 5 + campo 2 fanno 8 tacche: l'alba arriva prima della tenda. «Il campo si attraversa di corsa» non ha una regola. ⚠️ La Scena 5 è già giocata: **cosa ha scelto il tavolo il 25 settembre, e quante tacche sono segnate?** Se è stato il riposo lungo, proposta: di corsa il campo costa 1 tacca invece di 2, e ogni blocco si tira a CD +5 |
+| D21 | F3-bis | **Con 8 tacche o più, la Scena 10 si gioca?** Il modulo fa cominciare il duello fuori dalle mura, ma non dice se la prova delle mura salta né quale esito vale. Proposta: la Scena 10 non si gioca, le mura valgono «a stento» (2-3 successi), e un fallimento della prova di Muoversi Silenziosamente CD 20 fa partire il duello con il drago che ha già scelto il suo bersaglio |
+| D22 | F3-bis | **Il ritorno a piedi non ha un costo di base in tacche**: l'andata ne costa 2, il ritorno 0 più una per blocco fallito. È voluto (al ritorno si sa la strada)? Proposta: 1 tacca di base |
+| D23 | F3-bis | **Un Balvar recuperato può sciogliere lui la Catena?** È la prima cosa che un tavolo gli chiede. Oggi il modulo dice solo che spiega dove sta la runa e come si spezza. Proposta: può, ma solo toccando la scaglia, cioè nel cortile durante il duello, e lo sa |
 
 ## 5 · Validazione
 

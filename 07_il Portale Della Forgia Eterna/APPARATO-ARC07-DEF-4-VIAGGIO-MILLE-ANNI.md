@@ -58,6 +58,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 6 | Cercare | 28 |
 | SCENA 6 | toglierli con Disattivare Congegni | 28 |
 | SCENA 6 | dissolvi magie contro il 13° livello | 24 |
+| SCENA 6 | piedi della Scena 8 a Nascondersi | 26 |
 | SCENA 6 | nanico antico o Sapienza Magica | 22 |
 | SCENA 7 | cosa sta incidendo sull'ardesia (Osservare | 20 |
 | SCENA 7 | Diplomazia | 18 |
@@ -71,6 +72,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 8 | è finita, quindi si tira Nascondersi | 22 |
 | SCENA 9 | Percepire Intenzioni o Diplomazia | 18 |
 | SCENA 9 | Rapidità di Mano | 22 |
+| SCENA 9 | fallisce una prova di Muoversi Silenziosamente | 20 |
 | SCENA 10 | Forza o attacco | 18 |
 | SCENA 10 | Diplomazia o Guarire | 18 |
 | SCENA 10 | Disattivare o Artigianato | 20 |

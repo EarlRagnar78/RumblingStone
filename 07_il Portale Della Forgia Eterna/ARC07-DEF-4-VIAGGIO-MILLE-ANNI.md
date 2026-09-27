@@ -977,8 +977,8 @@ di contare in braccia.
 bonus equivalente, 8.330 mo), finita ieri per la guardia del re, e sulla lama
 ha lo stesso disegno di brina dell'ascia di Re Thorek. È del re: la vende solo
 lui, e solo con la fiducia piena. Se la prendono i PG, una
-guardia reale fa l'alba con un'ascia comune: tira sul *Registro delle Perdite*
-alla Scena 10. Nel 1372 nessun fabbro sa fare quel disegno
+guardia reale fa l'alba con un'ascia comune, e alla Scena 10 è lei il nano con
+un nome che muore sulle mura (Cerimonia delle 100 Asce). Nel 1372 nessun fabbro sa fare quel disegno
 `[INFERRED — needs DM confirmation]`.
 
 **Quello che nel 372 non esiste ancora.** Il DM non deve sapere quando è nato
@@ -1002,8 +1002,8 @@ qui. Quello che hanno **venduto** resta qui, e ritorna come **reliquia** (§7).
   un nome che non è il loro, il loro mithral nei cardini di una porta, una
   pergamena diventata «la preghiera dei quattro». Una riga per oggetto, alla
   Cerimonia delle 100 Asce o quando serve al DM;
-- **l'ascia del gelo**, se la comprano: la guardia che l'ha ceduta è sul
-  *Registro delle Perdite*, e in ARC-08, davanti a un'arma nanica antica, la
+- **l'ascia del gelo**, se la comprano: la guardia che l'ha ceduta è fra i
+  nomi della Cerimonia delle 100 Asce, e in ARC-08, davanti a un'arma nanica antica, la
   brina sulla lama è quella che nessuno sa più fare.
 
 ### SCENA 6 — Il mare di tende
@@ -1021,6 +1021,25 @@ qui. Quello che hanno **venduto** resta qui, e ritorna come **reliquia** (§7).
 **Prima di uscire**, se la fiducia al consiglio è stata piena: ognuno beve la
 **Pozione di Invisibilità** (CL 12, 12 minuti: l'SRD dà 1 minuto per livello), e le **Benedizioni di Moradin**
 sono già addosso (+2 morale al colpire e ai danni, 12 ore).
+
+**Cosa sanno gli esploratori nanici, e cosa non è esatto.** Hanno guardato il
+campo dalle mura da quando è arrivato, senza mai entrarci. Durin lo dice alla
+postierla, prima di aprire, anche se nessuno glielo chiede: manda fuori quattro
+persone e vuole che sappiano quello che sa lui. Non sa quali cose sono esatte.
+Se al tavolo i giocatori l'hanno già saputo prima (dal re, o da te), non lo
+ripete: conferma soltanto la prima riga, *«il drago va sulle colline al
+tramonto»*, perché è quella su cui si decide se uscire stanotte.
+
+| Cosa dicono | Com'è davvero |
+|---|---|
+| «Il drago va sulle colline al tramonto e torna all'alba» | vero a metà: torna quando il corno lo chiama. Il sesto giorno il corno ha suonato tardi e il drago è arrivato tardi. L'hanno notato, e l'hanno preso per caccia |
+| «Ogni mattina gli orchi suonano la sveglia» | è il corno che chiama il drago, e loro non l'hanno collegato |
+| «Nel campo c'è un nano prigioniero, lo fanno lavorare a una forgia» | non esatto: il nano è Balvar, e nessuno lo sorveglia. All'alba gira fra le tende con uno scalpello: sono le sue rune |
+| «La tenda nera al centro è del generale» | vero |
+
+La terza riga è un **errore fecondo**: un tavolo che va a «salvare il nano
+prigioniero» trova Balvar lo stesso, e la trattativa della Scena 7 comincia con
+un equivoco che gli conviene.
 
 > **Read-aloud (Salvatore lead) — il campo.** *Fuori dalle mura, il buio è
 > vivo. Diecimila nemici dormono attorno a mille fuochi — orchetti, hobgoblin,
@@ -1048,8 +1067,9 @@ blocchi** da 200 m.
   armatura, a passo furtivo, fa 3 m a round: 12 minuti coprono circa **360 m**,
   i primi **due blocchi**. Dal terzo si tira Nascondersi, a meno che qualcuno
   abbia altra invisibilità da spendere.
-- **Cinque blocchi riusciti**: si arriva alla tenda. **Tre blocchi falliti**
-  prima dei cinque: **la pattuglia**. Ogni blocco fallito costa anche una
+- **Cinque blocchi riusciti**: si arriva alla tenda. Un blocco fallito non fa
+  avanzare: si ritenta lo stesso tratto. **Tre blocchi falliti** prima dei
+  cinque: **la pattuglia**. Ogni blocco fallito costa anche una
   tacca, come dice l'orologio.
 - **La pattuglia** `[INFERRED — needs DM confirmation]`: otto hobgoblin guerrieri
   di 4° livello, EL 10. Non serve vincerla, serve che nessuno scappi. A ogni
@@ -1062,8 +1082,8 @@ blocchi** da 200 m.
 | d6 | Complicazione |
 |---|---|
 | 1-2 | Nessun evento. |
-| 3 | **Pattuglia di 4 orchi** (Guerriero 3) passa a 6 m: restare immobili. Chi è invisibile non tira; chi è solo nascosto tira Nascondersi **CD 18**. |
-| 4 | **Lupo da guerra** (Olfatto acuto, Ascoltare/Osservare +8): se il blocco fallisce, abbaia, e la pattuglia si ferma. |
+| 3 | **Pattuglia di 4 orchi** (Guerriero 3) passa a 6 m: restare immobili. Chi è invisibile non tira; chi è solo nascosto tira Nascondersi **CD 18**. Se la metà del gruppo fallisce, gli orchi li vedono: il blocco conta come fallito e gli orchi gridano, quindi è un fallimento in più verso la pattuglia `[INFERRED — needs DM confirmation]`. |
+| 4 | **Lupo da guerra** (Olfatto acuto, Ascoltare/Osservare +8): se il blocco fallisce, abbaia: la ronda più vicina si ferma a guardare, e il blocco dopo si tira a CD +2 `[INFERRED — needs DM confirmation]`. |
 | 5 | **Falò vicino**: luce intensa, Nascondersi **CD +4** per quel blocco. Chi è invisibile non se ne accorge nemmeno. |
 | 6 | **Squadrone hobgoblin (6)** a 24 m: se il blocco fallisce, mandano un **corridore** alla tenda di comando (Zog'tar sarà pre-allertato). |
 
@@ -1198,33 +1218,15 @@ e il drago arriva sull'assalto.
   suono non chiama nessuno.
 - **Se il corno suona di notte**, per un allarme, il drago arriva mentre i PG
   sono ancora nel campo, a piedi e visibili, perché volo e invisibilità sono
-  finiti. Gira sul campo e li cerca: li trova se il suo Osservare batte il loro
-  Nascondersi, e chi gli passa entro 18 m lo sente anche invisibile. Se li
-  trova, soffia una volta e se ne va. All'alba il duello si fa lo stesso, ma **senza sorpresa**: il drago
+  finiti. Gira sul campo e li cerca: si gioca il ritorno a piedi della Scena 8 a
+  Nascondersi **CD 26** (22, più 4 per il corno), e al primo blocco fallito li
+  trova; chi gli passa entro 18 m lo sente anche invisibile. Se li trova, soffia
+  una volta e se ne va. All'alba il duello si fa lo stesso, ma **senza sorpresa**: il drago
   parte già in quota e conosce il loro odore.
 - **Se rubano o rompono il corno**, all'alba nessuno chiama il drago. Arriva
   tardi, a metà mattina e da solo, furioso: le mura hanno un'ora di respiro, e
   il duello comincia con il drago già in collera. Il corno è **scritto**, quindi
   si legge: nanico antico o Sapienza Magica CD 22 rivelano a cosa serve.
-
-**Cosa sanno gli esploratori nanici, e cosa non è esatto.** Hanno guardato il
-campo dalle mura da quando è arrivato, senza mai entrarci. Durin lo dice alla
-postierla, prima di aprire, anche se nessuno glielo chiede: manda fuori quattro
-persone e vuole che sappiano quello che sa lui. Non sa quali cose sono esatte.
-Se al tavolo i giocatori l'hanno già saputo prima (dal re, o da te), non lo
-ripete: conferma soltanto la prima riga, *«il drago va sulle colline al
-tramonto»*, perché è quella su cui si decide se uscire stanotte.
-
-| Cosa dicono | Com'è davvero |
-|---|---|
-| «Il drago va sulle colline al tramonto e torna all'alba» | vero a metà: torna quando il corno lo chiama. Il sesto giorno il corno ha suonato tardi e il drago è arrivato tardi. L'hanno notato, e l'hanno preso per caccia |
-| «Ogni mattina gli orchi suonano la sveglia» | è il corno che chiama il drago, e loro non l'hanno collegato |
-| «Nel campo c'è un nano prigioniero, lo fanno lavorare a una forgia» | non esatto: il nano è Balvar, e nessuno lo sorveglia. All'alba gira fra le tende con uno scalpello: sono le sue rune |
-| «La tenda nera al centro è del generale» | vero |
-
-La terza riga è un **errore fecondo**: un tavolo che va a «salvare il nano
-prigioniero» trova Balvar lo stesso, e la trattativa della Scena 7 comincia con
-un equivoco che gli conviene.
 
 ### SCENA 7 — La tenda del comando
 
@@ -1685,8 +1687,8 @@ con un **terrore reverenziale mal mascherato**.
 | Approccio | Prova | Cosa succede | Eco su Sal nel 1372 (ARC-09) |
 |---|---|---|---|
 | **Lo ignorano / lo lasciano andare** | — | Vatore svanisce nell'ombra col Sigillo. | Sal esiste "intatto" in ARC-09 — nessun vantaggio, ma nessun sospetto reciproco. |
-| **Gli parlano** (Percepire Intenzioni o Diplomazia CD 18) | 18 | Vatore, terrorizzato, lascia sfuggire un frammento: *«Voi non morite. L'ho letto. Nelle cronache che non sono ancora scritte.»* Poi fugge. | In ARC-09 Sal **esita** un istante di fronte a loro (li ha già temuti mille anni fa): +2 dei PG a Percepire Intenzioni e Diplomazia contro Sal la prima volta. |
-| **Lo derubano** (Rapidità di Mano CD 22) | 22 | Gli sfilano il **Sigillo di Ossidiana** (o parte del bottino). | In ARC-09 Sal si presenta **senza** un asso che avrebbe avuto (il DM toglie a Sal un oggetto/piano — es. l'Olio di Sabotaggio parte scarico). |
+| **Gli parlano** (Percepire Intenzioni o Diplomazia CD 18; se fallisce, vale la riga di sopra: se ne va) | 18 | Vatore, terrorizzato, lascia sfuggire un frammento: *«Voi non morite. L'ho letto. Nelle cronache che non sono ancora scritte.»* Poi fugge. | In ARC-09 Sal **esita** un istante di fronte a loro (li ha già temuti mille anni fa): +2 dei PG a Percepire Intenzioni e Diplomazia contro Sal la prima volta. |
+| **Lo derubano** (Rapidità di Mano CD 22) | 22 | Gli sfilano il **Sigillo di Ossidiana** (o parte del bottino). Se la prova fallisce, se ne accorge: niente ferita, ma il **Cronolito** lo porta via come nella riga «Lo feriscono», e il Sigillo va con lui | In ARC-09 Sal si presenta **senza** un asso che avrebbe avuto (il DM toglie a Sal un oggetto/piano — es. l'Olio di Sabotaggio parte scarico). |
 | **Lo feriscono** (attacco riuscito) | — | Vatore urla, sanguina, attiva il **Cronolito** e sparisce nel tempo. | **Sincronizzazione**: nel 1372 **Sal sanguina nello stesso punto**, all'improvviso, davanti a chi lo osserva (la maschera vacilla) — i PG lo **riconoscono** come "l'uomo del passato" se collegano i punti. |
 | **Cercano di ucciderlo** | scontro breve | Non muore qui (il Cronolito lo salva a 1 pf: *deve* sopravvivere per esistere nel 1372 — paradosso auto-consistente). | Sal in ARC-09 porta una **cicatrice antica** e un odio personale: sa che loro ci hanno provato. Nemico più cattivo, ma più fragile emotivamente. |
 
@@ -1711,9 +1713,8 @@ mano.
 
 **Se passano invisibili.** Vatore non li vede: nessuno dei suoi sensi li
 coglie, e il Sigillo non glieli mostra. Li **sente**, se fanno rumore
-(Ascoltare contro il loro Muoversi Silenziosamente; lui prende 10, e il suo
-modificatore lo decidi tu, perché non ha statistiche). Se non lo sentono e non
-si fanno vedere, la scena la aprono loro: vedono un uomo incappucciato che si
+(se qualcuno fallisce una prova di Muoversi Silenziosamente **CD 20**, la
+stessa del campo). Se non li sente e non si fanno vedere, la scena la aprono loro: vedono un uomo incappucciato che si
 ferma fra due tende, si guarda alle spalle e stringe un fagotto. L'Anello di
 Artemis diventa gelido lo stesso. Se lo lasciano passare, vale la riga «Lo
 ignorano» della tabella; se si mostrano, il box comincia da *«Tra due tende, un

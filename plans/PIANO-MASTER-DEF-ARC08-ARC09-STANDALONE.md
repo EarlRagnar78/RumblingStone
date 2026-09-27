@@ -113,7 +113,7 @@ casa in `campaign/ai-media-prompts/`), lo stub `PIANO-REVISIONE-ARC08`.
 REVISIONE-ARC08). Entra in DEF-4 come **inclusione**, non come prosa rifatta:
 la regia e i read-aloud nuovi le stanno intorno.
 
-### ARC-09 · tredici master, uno per beat
+### ARC-09 · dodici master, uno per beat
 
 Le durate sono quelle dichiarate da `INDICE-GENERALE`; dove l'indice non ne
 dichiara una, lo scrivo.
@@ -125,14 +125,13 @@ dichiara una, lo scrivo.
 | `ARC09-DEF-03-TORRE-INVISIBILE` | P2A · Artemis | 2-3 | 12 · 1.182 | le quattro parti con mappe e statblocchi, `HOOKS-Artemis` |
 | `ARC09-DEF-04-TORNEO-GIORNI-1-2` | P2B · Tordek | 2-3 in tutto | ~11 · ~2.400 | PARTE1, PARTE2, Otto Porte e Orbe, cheat sheet, `HOOKS-Tordek` |
 | `ARC09-DEF-05-TORNEO-FINALE-E-INVASIONE` | P2B · Tordek | *(stesse)* | ~10 · ~2.400 | PARTE3, DAY3-CITY-SIEGE, le tre subquest, conseguenze ed echi |
-| `ARC09-DEF-06-IL-MERCANTE-DEL-TEMPO` | P2C · Salvatore | 1 | 1 · 154 | P2C |
-| `ARC09-DEF-07-PALIO-DI-CHANNATHGATE` | P2D | 3-4 | 15 · 3.066 | P2D, allegati, booklet in `homebrew/` |
-| `ARC09-DEF-08-RHEST` | Rhest | 2-3 | 8 · 1.144 | P2-RHEST fasi 1-4, nido, esiti |
-| `ARC09-DEF-09-STARSONG-HILL` | P3 · alleanza | 1-2 | 3 · 352 | Starsong testo, mappe, statblocchi |
-| `ARC09-DEF-10-GHOSTLORD` | P3 · alleanza | 2 | 3 · 412 | Ghostlord testo, mappe, statblocchi, `HOOKS-Ghostlord` |
-| `ARC09-DEF-11-SABOTAGGIO-E-MISSIONI` | P3 · secondarie | 1 per missione | 6 · 597 | Sabotaggio (con Upscale CR12), Missioni brevi |
-| `ARC09-DEF-12-BATTAGLIA-FINALE-I` | P3 · Fasi 0-1 | 4-6 in tutto | ~6 · ~1.400 | Rethmar struttura, Armate sync, Fase 0 e 1, `HOOKS-Thorik` |
-| `ARC09-DEF-13-BATTAGLIA-FINALE-II` | P3 · Fasi 2-4 | *(stesse)* | ~10 · ~1.800 | Fasi 2-4, Mythal e scena eroica, event deck, statblocchi epici, esiti |
+| `ARC09-DEF-06-PALIO-DI-CHANNATHGATE` | P2D | 3-4 | 15 · 3.066 | P2D, allegati, booklet in `homebrew/` |
+| `ARC09-DEF-07-RHEST` | Rhest | 2-3 | 8 · 1.144 | P2-RHEST fasi 1-4, nido, esiti |
+| `ARC09-DEF-08-STARSONG-HILL` | P3 · alleanza | 1-2 | 3 · 352 | Starsong testo, mappe, statblocchi |
+| `ARC09-DEF-09-GHOSTLORD` | P3 · alleanza | 2 | 3 · 412 | Ghostlord testo, mappe, statblocchi, `HOOKS-Ghostlord` |
+| `ARC09-DEF-10-SABOTAGGIO-E-MISSIONI` | P3 · secondarie | 1 per missione | 6 · 597 | Sabotaggio (con Upscale CR12), Missioni brevi |
+| `ARC09-DEF-11-BATTAGLIA-FINALE-I` | P2C + P3 · Fasi 0-1 | 1 (P2C) + 4-6 in tutto | ~7 · ~1.550 | **P2C Salvatore** come apertura (la strada per Rethmar), Rethmar struttura, Armate sync, Fase 0 e 1, `HOOKS-Thorik` |
+| `ARC09-DEF-12-BATTAGLIA-FINALE-II` | P3 · Fasi 2-4 | *(stesse)* | ~10 · ~1.800 | Fasi 2-4, Mythal e scena eroica, event deck, statblocchi epici, esiti |
 
 La colonna «File · righe» conta i file del beat, senza gli `HOOKS-*` (fra 194 e 294 righe l'uno) e senza la bozza deprecata del Torneo. Le righe con `~` sono stime: la divisione file per file dei due beat spezzati
 (Torneo, Battaglia Finale) la fa A2, perché dipende da cosa c'è dentro i file
@@ -155,10 +154,16 @@ banner), i due `ERRATA-*` (da verificare applicati).
    sistema di gara col Drappo. Il master DEF-07 non può cambiare le regole
    della corsa senza toccare lo stand-alone: si consolida la prosa, il
    sistema resta com'è.
-3. **P2C è un master da 154 righe.** Lo tengo separato perché è una serata a
-   sé nell'indice; se il DM preferisce, entra come intermezzo in DEF-08 Rhest.
-4. **Tredici master sono più dei «~12» della domanda**, e la differenza sono i
-   due tagli del Torneo e della Battaglia Finale. Un master sopra le 2.500
+3. **P2C entra in `ARC09-DEF-11`, non in Rhest** (DM, 2026-09-27: *«se è
+   integrato col resto ci entra, altrimenti rimane un master a parte»*).
+   Integrato lo è, ma con Rethmar: Sal attiva il Circolo delle Statue nella
+   Fase 4, il suo olio è la carta 4 dell'event deck, il suo clock sta in
+   `state.md` §3, e la scena ha una tabella «Conseguenze per Rethmar». Con
+   Rhest non ha legami: l'unico «Salvatore» nei file di Rhest è lo stile di
+   R.A. Salvatore. Apre il master come la strada per Rethmar (Day 28-32),
+   prima della fase politica al Consiglio (Day 30-35).
+4. **I master sono dodici** perché Torneo e Battaglia Finale si tagliano in due
+   e P2C entra nella Battaglia Finale. Un master sopra le 2.500
    righe fonte, rifinito nello stile, supera quello che DEF-1 di ARC-07 regge
    al tavolo (2.277 righe).
 

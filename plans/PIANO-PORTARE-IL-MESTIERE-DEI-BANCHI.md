@@ -429,7 +429,7 @@ prima e blocca poi**, ed è l'errore che il repo ha già evitato una volta
 | ⬜ | **S4 · I read-aloud di DEF-4 e DEF-5** | DEF-4 ne ha 5 in 955 righe, DEF-5 **zero** in 513. Banco: il Palio (41) e ARC-08 (90). ⚠️ Si scrivono **al metro di `read-aloud-adulti.md`**, non a occhio: ≤12 righe, un nome proprio nuovo, niente parentesi |
 | ⬜ | **S4-bis · ADR-0014 esce da DEF-1** | la regia di round, la chiusura su «Che fate?» e il dialogo `**NOME (registro):**` esistono **solo** in DEF-1 (e 3 battute sparse). Sono prescritti per **ogni** modulo dal 2026-07-30 |
 | ➡️ | **S5 · La Torre parla** → PIANO-MASTER-DEF, `ARC09-DEF-03` (D2, 2026-09-27) | 12 file, **zero dialogo**. Zalkatar, i grimlock ceremorfi, i drow psionici: nessuno ha una battuta |
-| ➡️ | **S6 · I read-aloud della Battaglia Finale** → PIANO-MASTER-DEF, `ARC09-DEF-12/13` (D2, 2026-09-27) | 16 file, zero letture. È il climax della campagna |
+| ➡️ | **S6 · I read-aloud della Battaglia Finale** → PIANO-MASTER-DEF, `ARC09-DEF-11/12` (D2, 2026-09-27) | 16 file, zero letture. È il climax della campagna |
 
 ### Onda P — le pratiche da AP che mancano *(da §1.3-ter)*
 

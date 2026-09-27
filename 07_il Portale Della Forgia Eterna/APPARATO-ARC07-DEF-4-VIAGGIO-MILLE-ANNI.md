@@ -47,6 +47,8 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 4 | Diplomazia/Intimidire, alternativa | 16 |
 | SCENA 5 | palla di fuoco da 5d6, Riflessi | 14 |
 | SCENA 5 | lei, Artigianato (fabbricare armi) o Valutare | 15 |
+| SCENA 5 | la legge con Usare Oggetti Magici | 21 |
+| SCENA 5 | identifica una pozione con Sapienza Magica | 25 |
 | SCENA 6 | Finché dura l'invisibilità, Muoversi Silenziosamente | 20 |
 | SCENA 6 | Quando l'invisibilità finisce, Nascondersi | 22 |
 | SCENA 6 | sono due per quattro) tira Nascondersi | 22 |
@@ -76,9 +78,10 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 10 | Forza o attacco | 18 |
 | SCENA 10 | Diplomazia o Guarire | 18 |
 | SCENA 10 | Disattivare o Artigianato | 20 |
-| SCENA 11 | Cala dall'alto (Presenza Terrificante | 22 |
-| SCENA 11 | sul gruppo più fitto (Riflessi | 24 |
-| SCENA 11 | PF 300, soffio 14d4 | 26 |
+| SCENA 11 | Cala dall'alto (Presenza Terrificante | 23 |
+| SCENA 11 | sul gruppo più fitto (Riflessi | 26 |
+| SCENA 11 | 25d12+125 (287 pf), soffio 16d4 | 27 |
+| SCENA 11 | Presenza | 24 |
 | SCENA 12 | Volontà | 20 |
 
 ## L'indice dei read-aloud, in ordine di gioco

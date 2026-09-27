@@ -127,12 +127,12 @@ Cuore della Montagna, Giorno 3 dell'assedio del 1372).
 | 10 — le mura | Forza / Diplomazia-Guarire / Disattivare (scelta collettiva) | 18 / 18 / 20 |
 
 ### Il giro di Skullcrusher (boss, Scena 11) — 3.5, niente 5e
-- **Soffio acido** in **linea** di 30 m, 12d4, Riflessi CD 24 ½, **ricarica 1/1d4 round**.
-- **Full-attack** (se a terra/quota bassa): morso +26, 2 artigli +21, 2 ali +21,
-  coda +21.
+- **Soffio acido** in **linea** di 30 m, 14d4, Riflessi CD 26 ½, **ricarica 1/1d4 round**.
+- **Full-attack** (se a terra/quota bassa): morso +28, 2 artigli +23, 2 ali +23,
+  coda +23.
 - **Volo**: resta in quota, picchia e risale (Attacco in Volo) — punisce chi non
   ha gittata/volo.
-- **Presenza Terrificante** CD 22 all'ingresso (Volontà o scossi).
+- **Presenza Terrificante** CD 23 all'ingresso (Volontà o scossi), raggio 63 m.
 - **«La Forgia ricorda»**: CONTA i colpi a segno (ferite ancestrali, N≤3) e
   l'esito → tabella B4 (§7). La Cintura di Tordek **rifiuta** di attivarsi qui.
 
@@ -668,6 +668,13 @@ preso la prima tacca.
 > mano.<!-- storico --> Questo è il congegno che i due banchi del repo — il Palio e l'Abbazia —
 > usano per reggere la tensione, e questo master ne aveva **una menzione sola**.<!-- /storico -->
 
+**Dove si riprende** `[CANONE — DM 2026-09-27]`. Al tavolo del 25 settembre
+il gruppo ha fatto il consiglio e poi il giro della fortezza: la fucina,
+l'alchimista, la cappella e le rune di Zeth. Sul foglio ci sono quindi **2
+tacche**, o **3** se per le rune sono scesi a cercare Zeth nelle gallerie
+invece di trovarlo alla fucina. Restano 5 o 6 tacche: il campo e il ritorno ci
+stanno, le otto ore di sonno no.
+
 **Si segna su un foglio, in vista.** Dal tramonto all'alba ci sono **8 tacche**,
 e quando il foglio arriva sul tavolo la prima è già segnata: il consiglio. Ogni
 tacca è mezz'ora scarsa di gioco reale.
@@ -675,7 +682,7 @@ tacca è mezz'ora scarsa di gioco reale.
 | Cosa | Tacche |
 |---|---:|
 | Il consiglio di guerra (Scena 4), già segnato | **1** |
-| Fermarsi **tre ore** · dormire **otto ore** (Scena 5) | **2** · **5** `[INFERRED — 5 tacche sono sette ore e mezza, non otto: needs DM confirmation]` |
+| Fermarsi **tre ore** · dormire **otto ore** (Scena 5) | **2** · **6** `[CANONE — DM 2026-09-27: «forse 6»]` |
 | Banchetto e benedizioni (Scena 5, facoltativo, +1 morale 12 h) | **1** |
 | Hella veglia i semi della Collana: i Treant dell'alba (Scena 5) | **1** |
 | Cercare il Mastro Costruttore Zeth (Scena 5) | **1** |
@@ -691,7 +698,7 @@ che comincia, con i PG dove sono in quel momento.
 
 | Tacche spese all'arrivo alle mura (il ritorno compreso) | Come si arriva alle mura |
 |---|---|
-| ≤ 6 | in tempo. Si rientra, si schiera, le mura e il duello vanno come scritto. Le tacche che restano prima dell'8 si spendono con la tabella qui sopra, come nella Scena 5: tre ore di sosta (2) ci stanno, otto ore di sonno (5) no. La fucina, la cappella e la bottega sono aperte come nella Scena 5 |
+| ≤ 6 | in tempo. Si rientra, si schiera, le mura e il duello vanno come scritto. Le tacche che restano prima dell'8 si spendono con la tabella qui sopra, come nella Scena 5: tre ore di sosta (2) ci stanno, otto ore di sonno (6) no. La fucina, la cappella e la bottega sono aperte come nella Scena 5 |
 | 7 | 🟡 si rientra **correndo**: nessun riposo prima del drago, −1 a tutti i TS del primo round del duello (Scena 11) |
 | 8 o più | 🔴 **l'alba vi coglie fuori dalle mura.** Non morite: attraversate un campo che si sta svegliando. Prova di gruppo Muoversi Silenziosamente **CD 20**, poi il duello (Scena 11) comincia con i PG **fuori**, e Skullcrusher li vede per primo |
 
@@ -815,7 +822,7 @@ gallerie sotto la fucina; cercarlo costa una tacca)*
 - **Le rune di Zeth, se gliele chiedono** `[CANONE — DM 2026-09-26]`. Zeth incide rune
   da un colpo solo: ***resistere all'energia*, acido 20** (7° livello
   dell'incantatore), **70 minuti** dall'attivazione, come vuole l'SRD. Attivarla
-  è un'azione standard. Contro il soffio di Skullcrusher (12d4) toglie 20 danni a
+  è un'azione standard. Contro il soffio di Skullcrusher (14d4) toglie 20 danni a
   ogni soffio. Se la attivano uscendo dalla postierla, all'alba è scaduta: va
   attivata quando il drago compare. Prezzo di pergamena SRD, 350 mo. Per
   **Durik** vale di più: la sua scheda gli dà +50% di danni dall'acido.
@@ -824,8 +831,9 @@ gallerie sotto la fucina; cercarlo costa una tacca)*
   tacche) non ridanno incantesimi, perché l'SRD li restituisce solo dopo otto
   ore di riposo (il chierico prega alla sua ora e non ha bisogno di dormire);
   servono a curarsi con quello che resta, a smaltire i danni non letali e a
-  far tornare *affaticato* chi era *esausto*. **Dormire otto ore** (5 tacche,
-  e poi il campo si attraversa di corsa) ridà gli incantesimi e le capacità al
+  far tornare *affaticato* chi era *esausto*. **Dormire otto ore** (6 tacche:
+  con il consiglio già segnato, prima dell'alba non resta il tempo per il
+  campo) ridà gli incantesimi e le capacità al
   giorno, toglie l'affaticamento e rende 1 pf per livello, la guarigione
   naturale dell'SRD: non i pf pieni. Il momentum spinge alla sosta. ⚠️ La guarigione del passaggio (Scena 1) li ha già rimessi in
   piedi: il riposo serve solo a chi ha speso qualcosa da allora.
@@ -978,6 +986,73 @@ di contare in braccia.
 - **Non vende** l'ascia di Thorgrim, né il Torque del re, né le armi delle
   quindici guardie. Se i PG le chiedono, la risposta è una sola, e la dà senza
   guardarli.
+
+##### La notte già giocata: cosa hanno chiesto, e quanto c'era `[CANONE — DM 2026-09-27]`
+
+Al tavolo del 25 settembre i PG hanno chiesto pergamene di *silenzio*,
+*identificare*, *rimuovi maledizione* e *rimuovi paralisi*, hanno fatto
+identificare le pozioni e hanno venduto parecchio. I numeri non si sono tirati:
+era il primo posto da mesi dove si poteva contrattare davvero. Questi sono
+quelli che l'SRD permette, con la mano larga che il DM ha chiesto: quello che
+esiste si trova, niente arriva in regalo.
+
+**Le pergamene.** Prezzo SRD: livello dell'incantesimo × livello
+dell'incantatore × 25 mo, più le componenti costose. Brynja non ne può
+scrivere di nuove stanotte (una pergamena chiede un giorno di lavoro), quindi
+sono quelle che la cappella ha già.
+
+| Pergamena | Prezzo | Quante | Da chi, e perché |
+|---|---:|---:|---|
+| *Silenzio* (chierico 2°, incantatore di 3°) | 150 mo | 2 | Brynja. Dura 3 round: basta per l'ingresso nella tenda, non per il volo |
+| *Rimuovi paralisi* (chierico 2°, incantatore di 3°) | 150 mo | 3 | Brynja. Sono quelle che tiene per le mura |
+| *Rimuovi maledizione* (chierico 3°, incantatore di 5°) | 375 mo | 1 | Brynja, l'ultima. Se la compra un PG, all'alba sulle mura non ce n'è |
+| *Identificare* (mago 1°, incantatore di 1°) | 125 mo | 1 | dal forziere del re, presa anni fa a un mercante. Nessuno in fortezza la sa lanciare: Moradin non dà il dominio della Magia, e Zeth è un druido. Si lancia in un'ora e brucia una perla da 100 mo, già nel prezzo. Artemis la legge con Usare Oggetti Magici CD 21 |
+
+Come servizio, Brynja lancia lei gli stessi incantesimi al 9° livello (prezzo
+SRD: livello × 9 × 10 mo): *silenzio* su un sasso 180 mo, e dura 9 round;
+*rimuovi paralisi* 180 mo; *rimuovi maledizione* 270 mo. Ogni slot di 3°
+che spende stanotte manca all'alba, come dice la sua scheda.
+
+**Identificare le pozioni.** Kettra e Brynja ci hanno dedicato **35 minuti**,
+poi sono tornate alle fiasche e alle armi per le mura. L'SRD identifica una
+pozione con **Sapienza Magica CD 25**, un minuto, senza ritentare. Kettra ha
+**+15** `[INFERRED — needs DM confirmation]` e prende 10: in 35 minuti
+identifica **fino a 35 pozioni**, senza sbagliarne una. Brynja, nello stesso
+tempo, lancia *individuazione del magico* sugli altri oggetti e dice di ognuno
+la **scuola** (Sapienza Magica 15 + livello dell'incantesimo): la scuola, non
+cosa fa. Per sapere cosa fa un'arma o un anello serve la pergamena qui sopra.
+
+**Quanto hanno potuto vendere.** I nani sono ricchi di gemme e avari, ma
+l'assedio li frena. Il conto della notte, qualunque cosa il gruppo abbia
+venduto:
+
+- ciò che serve all'alba (cure, fuoco dell'alchimista, frecce, armi e armature
+  magiche per le guardie) lo paga il **forziere del re**, fino a **10.000 mo**
+  in tutto, con le regole della tabella qui sopra;
+- il resto (gioielli, oggetti d'arte, magia che non combatte) lo compra il
+  pesatore **a metà prezzo, in gemme**, fino a **15.000 mo** in tutto
+  `[INFERRED — needs DM confirmation]`: le gemme i nani le hanno, le monete no;
+- nessun oggetto oltre il **limite d'acquisto di 2.500 mo**, da nessuno dei due.
+
+**Cosa hanno venduto davvero** `[CANONE — DM 2026-09-27]`: armi e armature
+**naniche**, anche d'adamantio, asce e balestre. Lame e picche degli orchi le
+hanno lasciate, e hanno fatto bene. Con i prezzi dell'SRD viene così:
+
+| Cosa | Chi paga | Quanto | Perché |
+|---|---|---|---|
+| Asce e balestre naniche comuni o perfette | Gunnvor | **prezzo pieno** SRD | ognuna arma un ragazzo che salirebbe con la vanga. È l'unica merce per cui alza gli occhi dalla lama |
+| Armature naniche comuni o perfette | Gunnvor | **prezzo pieno** | come sopra |
+| Armi e armature naniche **d'adamantio** | il forziere del re | **metà** del prezzo SRD, anche **oltre** il limite d'acquisto, finché il forziere ha monete `[INFERRED — needs DM confirmation]` | le vuole il re per la guardia reale. Sono l'unica eccezione al limite: una piastra completa d'adamantio vale 16.500 mo e ne frutta 8.250, cioè quasi tutto il forziere. Un'ascia d'adamantio (3.330) ne frutta 1.665 |
+| Armi e armature magiche | il forziere del re | **metà**, entro il limite | la tabella qui sopra |
+| Lame, picche, scudi degli orchi | nessuno | — | hanno il segno della Mano Rossa, o l'odore delle tende là fuori |
+
+⚠️ Il forziere è **uno solo**, 10.000 mo: le armi d'adamantio e le cure pagate
+a ×1,5 se lo dividono. Il gruppo che vende una piastra d'adamantio e poi
+chiede il premio sulle pozioni trova il forziere quasi vuoto, e Brynja lo dice.
+
+Oltre quei tetti la risposta è la stessa di Gunnvor: *«Tenetevelo. Non ho tempo
+di pesarlo.»* Per chiudere il conto, il DM somma quello che ricorda di aver
+venduto al tavolo, dimezza, e taglia ai tetti.
 
 **L'ascia nel panno.** È un'**ascia da guerra nanica +1 del gelo** (SRD: +2 di
 bonus equivalente, 8.330 mo), finita ieri per la guardia del re, e sulla lama
@@ -1828,7 +1903,7 @@ Appendice A)*
 
 | | |
 |---|---|
-| **Aspetto** | drago nero adulto, snello e arrogante: collo lungo, cranio stretto e cornuto, scaglie nere opache con un riflesso verde d'olio. L'acido gli cola dalle fauci chiuse |
+| **Aspetto** | drago nero adulto maturo, snello e arrogante: collo lungo, cranio stretto e cornuto, scaglie nere opache con un riflesso verde d'olio. L'acido gli cola dalle fauci chiuse |
 | **Vuole** | vincere **davanti all'orda**, perché per lui il potere è quello che gli altri hanno visto |
 | **Suona** | dice **il nome** dell'avversario prima di colpire, ogni volta |
 | **Eco** | la tabella B4 (§7): ogni ferita che gli fate, la Forgia la ricorderà contro **Fauci di Palude** nel 1372 |
@@ -1923,10 +1998,10 @@ cambia davvero.
 > arroganza**: non ha mai perso, non sa ancora aver paura. È questo che i PG gli
 > insegnano — ed è questo che il suo sangue ricorderà.
 
-- **Round 1 — la Presenza.** Cala dall'alto (Presenza Terrificante CD 22:
+- **Round 1 — la Presenza.** Cala dall'alto (Presenza Terrificante CD 23:
   chi fallisce è scosso). Se Zog'tar è morto in modo «spettacolare» (Scena 8), arriva **già
   in picchiata** e i PG perdono la prima azione. Apre col **Soffio acido** sul
-  gruppo più fitto (Riflessi CD 24). *Non atterra: vuole restare in cielo, dove
+  gruppo più fitto (Riflessi CD 26). *Non atterra: vuole restare in cielo, dove
   si sente un dio.*
 - **Round 2-3 — il predatore aereo.** Resta in **quota**, picchia con Attacco in
   Volo e risale: un attacco solo durante il movimento, il morso o la coda, come dice l'SRD — punisce chi non ha gittata o volo. Bersaglio
@@ -1938,7 +2013,7 @@ cambia davvero.
   sulla scaglia è un'azione di movimento entro 9 m, e colpirla è un attacco
   alla CA **+4**: il primo colpo a segno la spezza, e il drago se ne va. Se
   Balvar è morto prima dell'alba, il drago combatte a **−2** e fugge a metà pf.
-- **Soglia ~⅓ pf (~80) — la prima paura.** Per la prima volta nella sua vita,
+- **Soglia ~⅓ pf (~85) — la prima paura.** Per la prima volta nella sua vita,
   Skullcrusher **esita**. È il momento dei tre esiti (sotto). Se i PG premono,
   può essere ucciso; se allentano, fugge nelle paludi. *«Qualcosa in lui — nel
   sangue — capisce che questi quattro non sarebbero dovuti esistere.»*
@@ -2020,7 +2095,7 @@ aspetta. È il momento più grosso della campagna finora: non riempirlo tu.]`
 #### Sidebar — Scalare lo scontro (stile RHoD)
 | Situazione | Aggiustamento |
 |---|---|
-| Party **straripante** (4 PG L14, tutti gli artefatti, aiuti pieni al consiglio) | Skullcrusher **avanzato a Vecchio (GS 14)**: PF 300, soffio 14d4 CD 26, +2 a tutti gli attacchi; oppure 2 **wyvern** scortano il drago dai round 2 |
+| Party **straripante** (4 PG L14, tutti gli artefatti, aiuti pieni al consiglio) | Skullcrusher **Vecchio** dell'SRD (GS 16, EL = APL+3, sotto il tetto): 25d12+125 (287 pf), soffio 16d4 CD 27, Presenza CD 24, morso +32, RI 22, incantatore di 7°; oppure 2 **wyvern** scortano il drago dal round 2 |
 | Party **logorato** (il campo e le mura andati male, risorse spese, Hella ancora fragile) | Skullcrusher NON usa il soffio 2 volte di fila; a ⅓ pf **fugge subito** (esito FUGGITO garantito) invece di premere |
 | **Hella appena risorta** — vuoi proteggerla | Il drago la ignora finché non lo ferisce (predatore: va per la minaccia, non per la novità) — dà alla giocatrice spazio per il suo primo scontro |
 | Un PG **abbattuto** | Skullcrusher lo ignora (caccia chi è in piedi e lo minaccia): finestra per stabilizzarlo |
@@ -2227,9 +2302,9 @@ due»), e la pietra entra solo al Rituale della Scena 12.*
 | Scene 6-8: il campo, Balvar, Zog'tar (GS 14) | combattimento veloce | 2.400 |
 | Scena 10: le mura | montaggio/eroico | 600 |
 | Scena 9: Vatore (scena grigia, qualunque esito) | roleplay grigio | 500 |
-| **Scena 11: Skullcrusher (GS 12)** | boss | **2.700** (party 4, APL 13) |
+| **Scena 11: Skullcrusher (GS 14)** | boss | **5.400** (party 4, APL 13) `[INFERRED — due GS in più raddoppiano i PX: needs DM confirmation]` |
 | Scene 12-13: il Rituale e il Rubino | premio di storia maggiore | 800 |
-| **TOTALE beat** | | **~7.600/PG** |
+| **TOTALE beat** | | **~10.300/PG** |
 
 > Sommato a Terra (~11.600) + Affreschi (~1.900) + Resurrezione (~1.900), il
 > party **matura il 14° verso Hammerfist**. Le parti giocate non si ritoccano.
@@ -2333,30 +2408,79 @@ resta vivo (Vatore/Sal).
 
 ### A.1 · Skullcrusher il Nero (Scena 11)
 
+`[CANONE — DM 2026-09-27]`: un **drago nero adulto maturo** dell'SRD, con la
+resistenza agli incantesimi e la lista degli incantesimi. I numeri sono quelli
+della tabella del drago nero (d20srd.org, *Dragon, True*); talenti, abilità e
+incantesimi conosciuti li sceglie l'SRD al DM, e qui sono una proposta
+`[INFERRED — needs DM confirmation]`.
+
 ```
 ============================================================
-   SKULLCRUSHER IL NERO — il Primo Nero (GS 12) [verifica B5]
-   Drago Nero Adulto potenziato · capostipite di Fauci di Palude
+   SKULLCRUSHER IL NERO — il Primo Nero (GS 14)
+   Drago nero adulto maturo · capostipite di Fauci di Palude
 ============================================================
-Taglia: Enorme (Huge, 4,5 m) · Tipo: Drago (Terra, acido)
-PF: 240 · CA 27 (−2 taglia, +19 nat) · tocco 8 · impreparato 25 · Iniz +4
-BAB/Lotta: +22 / +39 (Enorme) · FOR 27 · DES 10 · COS 21 · SAG 15 · CAR 14
-Velocità: Terra 12 m · Volare 36 m (scarsa)
-Attacchi: Morso +26 (2d6+9) · 2 Artigli +21 (1d8+4) ·
-          2 Ali +21 (1d6+4) · Coda +21 (1d8+13)
-Full-attack (a terra): morso + 2 artigli + 2 ali + coda
-Soffio ACIDO: linea 30 m, 12d4, Riflessi CD 24 ½, ricarica 1/1d4
-Presenza Terrificante: CD 22 (Volontà o scossi), all'ingresso
-Incantesimi da stregone (5°-6°) · Immune acido, sonno, paralisi
-DA DECIDERE (DM): TS, DV, RI e lista degli incantesimi non ci
-sono. Il drago nero dell'SRD soffia in LINEA (qui corretto);
-un Adulto è Grande, questo è Enorme perché avanzato.
+Drago Enorme (acqua) · caotico malvagio
+DV 22d12+110 (253 pf) · Iniz +4 · Sensi: percezione
+  cieca 18 m, scurovisione 36 m, visione crepuscolare ×4;
+  Ascoltare +27, Osservare +27
+Velocità: 18 m, volare 45 m (scarsa), nuotare 18 m
+CA 29 (−2 taglia, +21 naturale), contatto 8, impreparato 29
+  (33 con armatura magica, lanciata prima: dura 5 ore)
+RD 10/magia · RI 21 · immune acido, sonno, paralisi
+TS Temp +18, Rifl +15, Vol +17
+BAB +22 · Lotta +38
+Spazio/portata 4,5 m / 3 m (morso 4,5 m)
+Mischia: morso +28 (2d8+8) · 2 artigli +23 (2d6+4) ·
+  2 ali +23 (1d8+4) · colpo di coda +23 (2d6+12)
+Schiacciare (in volo o saltando, azione standard): 2d8+12,
+  Riflessi CD 26 o immobilizzati. Solo contro creature
+  Piccole o minori: i nani e i PG Medi non li schiaccia
+Soffio ACIDO (Sop): linea di 30 m, 14d4, Riflessi CD 26 ½,
+  di nuovo dopo 1d4 round
+Presenza Terrificante (Str): raggio 63 m, Volontà CD 23,
+  chi ha meno di 22 DV è scosso per 4d6 round (4 DV o meno:
+  in preda al panico); chi supera il TS è immune per 24 ore
+Capacità magiche: 3/giorno oscurità (raggio 21 m);
+  1/giorno corrompere l'acqua (CD 23: rovina anche le
+  pozioni che un PG ha addosso, se falliscono il TS)
+Respirare sott'acqua (Str)
+Incantesimi da stregone (incantatore di 5°; CD 12 + livello):
+  0 (6/giorno) individuazione del magico, lettura del magico,
+    mano magica, resistenza, suono fantasma, frastornare
+  1° (7/giorno) armatura magica, scudo, colpo accurato,
+    dardo incantato
+  2° (5/giorno) vedere invisibilità, immagine speculare
+FOR 27 · DES 10 · COS 21 · INT 14 · SAG 15 · CAR 14
+Talenti: Attacco in Volo, Attacco Poderoso, Fluttuare,
+  Ghermire, Iniziativa Migliorata, Riflessi Fulminei,
+  Virata, Volontà di Ferro
+Abilità: Ascoltare +27, Cercare +27, Concentrazione +30,
+  Intimidire +27, Muoversi Silenziosamente +25,
+  Nascondersi +17, Osservare +27, Sapienza Magica +27,
+  Nuotare +16
 ------------------------------------------------------------
-NOTA D8 (party APL 13, 4 PG con artefatti): GS 12 è VOLUTO
-"medio" — il duello dev'essere epico ma vincibile, perché il
-vero climax è Fauci nel 1372. Non gonfiarlo: qui si SEMINA.
+PERCHÉ GS 14 (scelta del DM): la nota D8 lo voleva GS 12,
+un Adulto "potenziato" senza numeri. Adesso è un drago
+dell'SRD intero. EL 14 = APL+1, sotto il tetto di APL+4.
+Il vero climax resta Fauci nel 1372: qui si semina.
 ============================================================
 ```
+
+**Cosa cambia al tavolo, rispetto ai numeri di prima**
+
+- **I PG invisibili non gli sfuggono da vicino.** La percezione cieca vede
+  tutto entro 18 m, e *vedere invisibilità* dura 50 minuti: se lo lancia al
+  primo allarme, i PG invisibili sono visibili per tutto il duello. Di notte
+  sulle colline non l'ha lanciato, perché non si aspetta nessuno.
+- **Il soffio fa più male**: 14d4 (in media 35) invece di 12d4. La runa di Zeth
+  (*resistere all'energia* 20) ne toglie ancora più della metà.
+- **La RI 21**: un incantatore di 12°-13° livello la supera con 8 o 9 sul d20
+  (d20 + livello contro 21), quindi un incantesimo su tre circa si spegne. Le
+  invocazioni di Artemis la subiscono come gli incantesimi.
+- **RD 10/magia**: le armi dei PG sono magiche; le balestre delle mura, no.
+- ***Corrompere l'acqua*** può rovinare le pozioni in tasca a un PG (TS
+  dell'oggetto sulla Volontà del portatore). Lo usa al primo round se vede
+  qualcuno bere.
 
 ### A.2 · Zog'tar Deatheye e le sue quattro guardie (Scena 8)
 

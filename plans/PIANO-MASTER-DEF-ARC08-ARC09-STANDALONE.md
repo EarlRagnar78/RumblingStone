@@ -6,7 +6,7 @@
 > Tarsilia, l'Abbazia della Rotta Sicura). L'ordine l'ha dato il DM il
 > 2026-09-25: *«poi i DEF di ARC-08, poi ARC-09 e tutti gli stand-alone»*.
 >
-> **Stato**: 🟡 D1-D3 decise il 2026-09-27; A1 scritto come proposta, attende l'OK del DM · **Decisore**: DM ·
+> **Stato**: 🟡 D1-D3 decise e A1 approvato il 2026-09-27; prossimo A2 · **Decisore**: DM ·
 > **Standard**: [`rumblingstone-module-standard`](../skills/rumblingstone-module-standard/SKILL.md)
 > **Gate**: ogni master nuovo passa `validate_modules`, `copertura_scene`
 > (profilo severo, contratto «In scena»), `componenti --check`,
@@ -76,7 +76,20 @@ Fauci), dal Registro delle Perdite e dagli esiti di DEF-4. Si elencano i punti
 in cui il testo di ARC-08 presuppone un esito che al tavolo non è ancora
 successo.
 
-## A1 · La divisione in master — proposta del 2026-09-27, attende l'OK del DM
+## A1 · La divisione in master — ✅ approvata dal DM il 2026-09-27
+
+**Le risposte del DM** alle sette domande della pagina di revisione:
+
+| # | Domanda | Risposta |
+|---|---|---|
+| Q1 | ARC-08 in quattro master, uno per sessione | ✅ ok |
+| Q2 | la Cerimonia delle 100 Asce entra in DEF-4 senza riscriverla | *«controlla prima e se serve la riscrivi»*: in S1 si misura contro lo standard, e si riscrive solo dove non lo regge |
+| Q3 | ARC-09 in dodici master, uno per beat | ✅ sì |
+| Q4 | il Torneo in due: Giorni 1-2, poi Giorno 3 e invasione | ✅ ok |
+| Q5 | la Battaglia Finale in due: P2C con le Fasi 0-1, poi le Fasi 2-4 | ✅ ok |
+| Q6 | il Palio consolida la prosa, il sistema di gara resta com'è | ✅ ok |
+| Q7 | quante serate per la quest di Hella | *«spezzato in due se troppo lungo»*: restano i due master DEF-01 e DEF-02; le serate si misurano al tavolo |
+
 
 Costruita dagli indici e dalle intestazioni dei file, senza leggere la prosa:
 `ARC08-00-INDICE` §2-§3, `ARC08-12-CRONOLOGIA`, i titoli di `ARC08-01-GUIDA-DM`
@@ -109,9 +122,12 @@ handout, `ARC08-16` cue, e gli eserciti della Guida DM (righe 635-942). Gli
 verifica che siano applicati e basta), `combat_prompts_guide` (prompt d'immagine,
 casa in `campaign/ai-media-prompts/`), lo stub `PIANO-REVISIONE-ARC08`.
 
-⚠️ **La Cerimonia delle 100 Asce** è canone fissato da non riscrivere (D3 di
-REVISIONE-ARC08). Entra in DEF-4 come **inclusione**, non come prosa rifatta:
-la regia e i read-aloud nuovi le stanno intorno.
+⚠️ **La Cerimonia delle 100 Asce** era canone fissato da non riscrivere (D3 di
+REVISIONE-ARC08). Il DM il 2026-09-27 (Q2): *«controlla prima e se serve la
+riscrivi»*. In S1 la si misura (`misura_craft --box`, contratto «In scena»);
+dove regge entra com'è, dove non regge si riscrive. Gli **eventi** della
+Cerimonia (Day 21, il riconoscimento dei Custodi Eterni, l'hook di ARC-09)
+restano canone: si riscrive la forma, non cosa succede.
 
 ### ARC-09 · dodici master, uno per beat
 

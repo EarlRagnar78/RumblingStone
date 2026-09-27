@@ -6,7 +6,7 @@
 > Tarsilia, l'Abbazia della Rotta Sicura). L'ordine l'ha dato il DM il
 > 2026-09-25: *«poi i DEF di ARC-08, poi ARC-09 e tutti gli stand-alone»*.
 >
-> **Stato**: 🟡 D1-D3 decise e A1 approvato il 2026-09-27; prossimo A2 · **Decisore**: DM ·
+> **Stato**: 🟡 D1-D3 decise, A1 approvato e A2 misurato il 2026-09-27; prossimo A3 · **Decisore**: DM ·
 > **Standard**: [`rumblingstone-module-standard`](../skills/rumblingstone-module-standard/SKILL.md)
 > **Gate**: ogni master nuovo passa `validate_modules`, `copertura_scene`
 > (profilo severo, contratto «In scena»), `componenti --check`,
@@ -107,8 +107,8 @@ si tagliano sulle sessioni che la guida e gli scontri già usano.
 
 | Master | Serata | Chi gioca | Fonti |
 |---|---|---|---|
-| `ARC08-DEF-1-OMBRA-SULLA-MONTAGNA` | Sessione 1 · Day ~12-16 | pregen | Guida DM §1-§3 e «PNG giocabili» (righe 103-634), scontri 1A-1B, `ARC08-04-MARCIA`, `Mappe/…L1` |
-| `ARC08-DEF-2-TRE-GIORNI-DI-SANGUE` | Sessione 2 · Day 16-18 | pregen | Guida DM «Giorno 1-3» (1180-1901), scontri 2A-2B, `Mappe/…L2`, `mass_combat_guide_Dm` |
+| `ARC08-DEF-1-OMBRA-SULLA-MONTAGNA` | Sessione 1 · Day ~12-16 | pregen | Guida DM §1-§3 e «PNG giocabili» (righe 103-634) più la Sessione 1 (943-1178), scontri 1A-1B, `ARC08-04-MARCIA`, `Mappe/…L1` |
+| `ARC08-DEF-2-TRE-GIORNI-DI-SANGUE` | Sessione 2 · Day 16-18 | pregen | Guida DM, Sessione 2 e Giorni 1-3 (1179-1901), scontri 2A-2B, `Mappe/…L2`, `mass_combat_guide_Dm` |
 | `ARC08-DEF-3-DALLE-PROFONDITA` | Sessione 3 · Day 18-19 | pregen → PG | Guida DM «Il Ritorno degli Eroi» (1902-2447), scontri 3A-3B, `ARC08-11-PONTE-ARRIVO`, `Mappe/…L3` (Mappa 5) |
 | `ARC08-DEF-4-TEMPESTA-E-VITTORIA` | Sessione 4 · Day 19-21 | PG | Guida DM «Sessione 4» (2448-3007), scontro 4A ed epilogo, `ARC08-10-ESITI`, `Cerimonia-delle-100-Asce`, `Mappe/…L3` |
 
@@ -183,6 +183,78 @@ banner), i due `ERRATA-*` (da verificare applicati).
    righe fonte, rifinito nello stile, supera quello che DEF-1 di ARC-07 regge
    al tavolo (2.277 righe).
 
+## A2 · Le misure di partenza — ✅ 2026-09-27
+
+Misurato sulle fonti di ogni master della tabella A1, con i rilevatori del
+repo importati da uno script di sola lettura (`misura_craft.misura`,
+`box_read_aloud`, `difetti_dei_box`, `domande_developer.analizza`). Nessuna
+regex nuova. Per ARC-08 le fonti sono le fasce di righe della Guida DM e
+degli scontri scritte in A1.
+
+🐛 **Una fascia di A1 era sbagliata, e la misura l'ha trovata.** La Sessione 1
+della Guida DM sta alle righe 943-1178, e DEF-1 non la prendeva. Corretto nella
+tabella di A1: DEF-1 prende 103-634 e 943-1178, DEF-2 parte da 1179.
+
+| Master | File | Righe | Congegni | Box | Read-aloud | Battute | Vie non comb. | Contingenze |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| ARC08-DEF-1 | 5 | 1.748 | 9/23 | 19 | 20 | 17 | 7 | 1 |
+| ARC08-DEF-2 | 4 | 2.471 | 7/23 | 19 | 19 | 19 | 3 | 3 |
+| ARC08-DEF-3 | 3 | 1.024 | 7/23 | 12 | 13 | 11 | 0 | 0 |
+| ARC08-DEF-4 | 5 | 2.122 | 10/23 | 32 | 35 | 44 | 0 | 5 |
+| ↳ Cerimonia da sola | 1 | 208 | 6/23 | 1 | — | — | — | — |
+| ARC09-DEF-01 | 5 | 1.154 | 8/23 | 4 | 8 | 32 | 0 | 4 |
+| ARC09-DEF-02 | 5 | 1.886 | 7/23 | **0** | **0** | 14 | 0 | 3 |
+| ARC09-DEF-03 | 13 | 1.501 | 14/23 | 8 | 18 | 11 | 4 | 6 |
+| ARC09-DEF-04 | 13 | 2.619 | 10/23 | 1 | 5 | 8 | 1 | 4 |
+| ARC09-DEF-05 | 9 | 2.420 | 13/23 | 7 | 9 | 25 | 1 | 5 |
+| ARC09-DEF-06 | 15 | 3.095 | 11/23 | 40 | 41 | 26 | 1 | 27 |
+| ARC09-DEF-07 | 8 | 1.159 | 10/23 | 8 | 8 | **0** | 5 | 11 |
+| ARC09-DEF-08 | 3 | 357 | 8/23 | 2 | 2 | 2 | 4 | 4 |
+| ARC09-DEF-09 | 4 | 650 | 9/23 | 2 | 6 | 6 | 1 | 17 |
+| ARC09-DEF-10 | 6 | 608 | 3/23 | **0** | **0** | **0** | 0 | 2 |
+| ARC09-DEF-11 | 8 | 1.488 | 9/23 | 2 | 5 | 13 | 6 | 12 |
+| ARC09-DEF-12 | 10 | 2.160 | 7/23 | **0** | **0** | 15 | 0 | 7 |
+
+Nessun box supera le 12 righe, in nessun master.
+
+⚠️ **Gli hook gonfiano i numeri di ARC-09.** Senza gli `HOOKS-*`, la **Torre**
+(DEF-03) ha zero box, zero read-aloud e zero battute, come diceva
+MESTIERE-BANCHI; tutto quello che la tabella le dà viene dall'hook di Artemis.
+Lo stesso per il **Torneo, Giorni 1-2** (DEF-04: zero, zero, zero) e il
+**Cerchio del Treant** (DEF-01: zero box, zero read-aloud). Il Ghostlord e la
+Battaglia Finale I scendono a un box ciascuno. Fra le fonti di ARC-09 i box
+veri stanno nel Palio, a Rhest e negli hook.
+
+**Otto congegni sono a zero in tutti e sedici i master**: scalare lo scontro,
+PILASTRO dichiarato, chiusura su decision point, regia di round, `[HDYWTDT]`,
+assorbi e rilancia, ADR interni, quarta colonna sensoriale. Sono le cose che
+lo standard DEF chiede e che nessuna fonte porta: si scrivono da zero in S1-S2.
+
+**Cosa dicono gli altri due strumenti, e cosa non possono dire.**
+`copertura_scene` e la parte per scene di `domande_developer` riconoscono una
+scena solo dal titolo `### SCENA`, che nessuna fonte usa: su di loro danno zero
+rilievi perché non vedono scene, non perché le scene sono a posto. Il
+controllo che vale sull'intero testo trova due cose:
+
+- **nomi di abilità della 5ª edizione** in 7 master su 16, 13 rilievi:
+  «Intuizione» 8, «Furtività» 3, «Percezione» 2. Il Palio, che è uno dei due banchi
+  dello stile, ne ha quattro. In 3.5 sono Percepire Intenzioni, Muoversi
+  Silenziosamente o Nascondersi, Osservare o Ascoltare;
+- **tiri salvezza mai chiesti** su Tempra, Riflessi o Volontà in 7 master. Su
+  un master parziale non è per forza un difetto; lo diventa se manca ancora a
+  master scritto.
+
+**La Cerimonia delle 100 Asce** (per la Q2 del DM): 208 righe, un solo box
+read-aloud, con più di un nome proprio nuovo, e 6 congegni su 23. Sotto lo
+standard di read-aloud: in S1 se ne riscrive la forma.
+
+**Le due mappe del Torneo si completano.** `-2` è la versione estesa
+(terreno, coperture, trofeo, città, fuga dei civili); la regola del fuori ring
+coincide in tutti i file. L'unica differenza è la fascia di partenza dei
+duellanti: colonne 16-20 nella prima, 18-22 nella seconda. Solo la seconda è
+centrata sulla griglia 40×40, e in DEF-04 si tiene quella. Nessuna delle due è
+una griglia (`MAPPE-CENSIMENTO`, nota 8).
+
 ## FASE 2 — Sviluppo / attuazione
 
 Un lotto per master, nell'ordine dato dal DM. Ogni lotto è **K** per la parte
@@ -238,6 +310,6 @@ Per ogni master, prima di chiudere il lotto:
 1. `python3 scripts/fase1.py "08_La Battaglia Di Hammerfist/ARC08-00-INDICE.md"`
 2. leggere questo piano e `plans/STATO-E-ORDINE-DEI-PIANI.md` §4 (le decisioni
    aperte al DM);
-3. D1-D3 sono decise (2026-09-27). Se il DM ha approvato la tabella «A1»,
-   si prosegue con A2 sui file fonte della tabella; se no, si corregge la
-   tabella prima di tutto il resto.
+3. D1-D3 sono decise, la tabella A1 è approvata e A2 è misurato
+   (2026-09-27). Si prosegue con A3, il canone di ARC-08 contro lo stato del
+   tavolo, poi S1.

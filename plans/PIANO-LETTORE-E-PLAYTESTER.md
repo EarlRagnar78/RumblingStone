@@ -180,7 +180,20 @@ developer e del playtester; la misura del miglioramento.
       con prezzi e quantità SRD, l'identificazione delle pozioni in 35 minuti
       (Sapienza Magica CD 25, un minuto l'una), e il tetto di quello che i nani
       comprano, con le armi e armature naniche d'adamantio vendute al tavolo
-- [ ] le decisioni del DM ancora aperte (D11-D19, D21-D23, D24-b, D25-D27)
+- [x] **il banco**, perché i prossimi moduli non siano carenti (il DM:
+      *«organizza il tutto in modo che i prossimi moduli non siano carenti,
+      mettendo un po' di diffidenza e preferenze dei mercanti […] come un
+      pizzico di spezie»*). Le decisioni prese al volo nelle serate del 25-27
+      settembre stavano già in DEF-4 come `[CANONE — DM …]` (22 punti); da lì
+      la norma `module-standard/references/il-banco.md` (cosa vende e quante,
+      servizi, chi identifica e in quanto tempo, cosa compra e fino a quale
+      tetto; la spezia facoltativa). Misure: `copertura_scene` C6 (chi vende
+      senza un prezzo) e C7 (Chi si trova qui senza le sei righe), con i test;
+      `P-ABITATO` chiede quantità, tetti e identificazione. La rete al tavolo:
+      §2-bis del kit anti-improvvisazione, una spezia a d8 per luogo. Prima
+      applicazione: la tabella **Chi si trova qui** della Scena 5 di DEF-4, che
+      ADR-0075 chiedeva e il master non aveva ancora
+- [ ] le decisioni del DM ancora aperte (D11-D19, D21-D23, D24-b, D25-D28)
 - [x] le letture a freddo dopo, e la tabella prima/dopo
 - [x] un secondo giro di correzioni sui rilievi delle letture dopo che non
       toccano il canone
@@ -375,6 +388,7 @@ manuali, così può misurare e segnare il problema, se esiste nell'avventura»*.
 | D25 | F3-bis | **Tre rilievi di regole della prima lettura a freddo (2026-09-25) mai chiusi**, trovati rileggendo i rapporti vecchi. Il riposo breve era il quarto, e il playtester l'aveva già visto (#13). **(a)** Scena 1: «confusi 1d4 round (−2…)» è la condizione *confuso* dell'SRD o un −2? Proposta: *frastornato* non basta, quindi un −2 a attacchi e prove, scritto senza la parola «confusi». **(b)** Il +1 morale del banchetto e il +2 morale delle Benedizioni **non si sommano** in 3.5 (stesso tipo): proposta, il banchetto dà il +1 ai TS, dove le Benedizioni non arrivano. **(c)** Scena 11: «togliere al drago il vantaggio del suono in picchiata» non ha un numero. Proposta: con le campane suonate il drago perde il round di sorpresa della picchiata (ascoltare CD 20 per sentirlo arrivare) |
 | D26 | F3-bis | **Il giro lettore, playtester e developer in automatico.** Oggi è obbligatorio (ADR-0075) ma lo ricorda solo il piano, e il riposo breve dimostra che un rilievo 🟡 può restare nel testo per giorni. Proposta: un registro in `plans/`, le letture a freddo in JSON, con per ogni master DEF, l'impronta del testo letto e i rilievi con il loro stato (corretto, residuo con ragione, domanda al DM); un cancello in CI che fallisce se il master è cambiato dopo l'ultima lettura, o se un rilievo 🔴 o 🟠 non ha uno stato. La lettura la fa un agente, non la CI: il cancello dice solo *quando* va rifatta. Costo: ogni modifica a un DEF, anche un refuso, chiede una lettura prima del merge, salvo una dichiarazione «modifica di sola forma» |
 | D27 | — | **Il messaggio del 2026-09-27 si interrompe a «considera che i…».** Cosa andava considerato? |
+| D28 | F3-bis | **La mappa di Hammerfist nel 372, dall'alto in basso.** Il DM, 2026-09-27: *«in ogni regno nanico, più si scende e più le stanze sono ampie, soprattutto le fucine grandi, come Erebor sotto la Montagna. Magari una mappa, anche con i camminamenti e le gallerie che le rune di Zeth riempiono come difesa contro un assalto interno, e il contorno delle mura esterne»*. Tre cose da decidere prima di disegnare: **(a)** che tipo di mappa (una sezione verticale a livelli, da consultare, o una griglia tattica da 1,5 m per giocarci sopra); **(b)** le rune di Zeth nelle gallerie sono già in gioco la prossima serata, con un effetto meccanico (per esempio un *glifo di interdizione* per corridoio), o solo colore; **(c)** la Scena 5 già giocata descrive tre forge e gallerie strette puntellate da poco: la fucina grande sta **sotto** quella giocata, oppure si riscrive il box. Proposta: (a) una sezione a livelli per il DM, più la griglia del solo cortile e delle mura, che c'è già (M7-B); (b) colore fino al 1372, dove Zeth è il Ghostlord; (c) la fucina grande sta sotto, e la si vede scendendo da Zeth |
 
 | D21 | F3-bis | **Con 8 tacche o più, la Scena 10 si gioca?** Il modulo fa cominciare il duello fuori dalle mura, ma non dice se la prova delle mura salta né quale esito vale. Proposta: la Scena 10 non si gioca, le mura valgono «a stento» (2-3 successi), e un fallimento della prova di Muoversi Silenziosamente CD 20 fa partire il duello con il drago che ha già scelto il suo bersaglio |
 | D22 | F3-bis | **Il ritorno a piedi non ha un costo di base in tacche**: l'andata ne costa 2, il ritorno 0 più una per blocco fallito. È voluto (al ritorno si sa la strada)? Proposta: 1 tacca di base |

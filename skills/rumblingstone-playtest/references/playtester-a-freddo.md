@@ -36,7 +36,7 @@ nell'ordine di gioco, nessuna storia di git.
 | `P-VICOLO` | Un fallimento ferma l'avventura invece di portarla altrove? |
 | `P-OROLOGIO` | Un'azione dovrebbe costare tempo (tacche, round, ore) e il modulo non dice quanto? |
 | `P-SPOTLIGHT` | Un PG passa la scena senza niente da fare? |
-| `P-ABITATO` | I PG hanno tempo libero in un luogo abitato (una fortezza, una città, un campo) e il modulo non dice chi trovano per **comandare o dare udienza**, **curare e benedire**, **rimedi e alchimia**, **armi e riparazioni**, **messaggi e annunci**, **guardia**? Un ruolo che lì non c'è va scritto come assente |
+| `P-ABITATO` | I PG hanno tempo libero in un luogo abitato (una fortezza, una città, un campo) e il modulo non dice chi trovano per **comandare o dare udienza**, **curare e benedire**, **rimedi e alchimia**, **armi e riparazioni**, **messaggi e annunci**, **guardia**? Un ruolo che lì non c'è va scritto come assente. E chi vende: ci sono le **quantità**, **quanto paga e fino a che tetto** quando i PG vendono, e **chi identifica** una pozione o un oggetto, in quanto tempo? |
 
 Da dove viene `P-ABITATO`, e perché si prova solo su un modulo che non l'ha
 generata: ADR-0075, «La prova contro il tavolo». Qui non si racconta, per la

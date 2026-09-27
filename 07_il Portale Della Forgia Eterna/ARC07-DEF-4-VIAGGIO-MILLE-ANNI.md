@@ -717,6 +717,17 @@ il bivio, ed è **vero** — non una finta scelta con una risposta giusta.
 
 **In scena** — Dove: i quartieri ospiti · la cappella · la bottega · le gallerie · la fucina — Chi: Durin · Sorella Brynja · Kettra · Zeth · Gunnvor · il pesatore
 
+**Chi si trova qui** *(di notte, mentre la fortezza si prepara all'alba)*
+
+| Ruolo | Chi, e dove |
+|---|---|
+| comando | Re Thorek è ancora col consiglio; per i PG chi decide è **Durin**, che li accompagna |
+| culto | **Sorella Brynja**, nella cappella due porte più in là |
+| rimedi | **Kettra**, la bottega dell'alchimista in fondo al corridoio della fucina |
+| bottega | **Gunnvor** alla fucina, e il **pesatore** con la sua bilancia; prezzi e tetti nel banco qui sotto |
+| messaggi | nessuno: stanotte gli ordini li porta Durin a voce |
+| guardia | sulle mura, agli ordini di **Hrodgar**, il capitano (scheda nella Scena 10) |
+
 **I quartieri ospiti.** Durin li accompagna, e da qui all'uscita decidono
 loro: ogni cosa costa tacche. Nei quartieri ci sono il banchetto (+1 morale 12 h se
 mangiano), fabbri che affilano le armi, chierici che benedicono.

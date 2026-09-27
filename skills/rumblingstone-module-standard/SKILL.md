@@ -236,8 +236,12 @@ vengono, e cosa è stato scartato:
 ### Il ciclo completo: quando un master si chiama DEF
 
 Un master è definitivo quando ha fatto **tutti** questi passi, in quest'ordine.
-Vale per ogni master nuovo e per ogni master esistente che un lotto riscrive o
-rifinisce nello stile. Un piano che tocca un master li cita per numero, non li
+Vale per **ogni arco** (da `00_` a `09_`) quando viene diviso in master DEF, per
+**ogni stand-alone** (ADR-0017: il Drappo, l'Abbazia, quelli che verranno) e per
+ogni master esistente che un lotto riscrive o rifinisce nello stile. Il
+developer (passo 4) e il playtester (passi 6-7) sono **obbligatori**: un passo
+si salta solo con una decisione del DM scritta nel piano, come per l'Abbazia,
+dove la prosa non cambia. Un piano che tocca un master li cita per numero, non li
 ricopia ([ADR-0075](../../plans/adr/ADR-0075-il-ciclo-del-master-vale-per-ogni-piano.md)).
 
 | # | Passo | Come si sa che è fatto |

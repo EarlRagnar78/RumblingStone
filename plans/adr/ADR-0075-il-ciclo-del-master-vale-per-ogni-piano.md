@@ -49,7 +49,12 @@ stati scritti prima, o le citavano una alla volta.
 1. **Una sequenza sola.** `rumblingstone-module-standard` porta il **ciclo
    completo** in sette passi: scene riconoscibili, contratto, componenti,
    developer, box al metro, lettore e playtester a freddo, quiz. Un master è DEF
-   quando li ha fatti tutti; con i soli cancelli è alfa.
+   quando li ha fatti tutti; con i soli cancelli è alfa. Vale per ogni arco
+   diviso in DEF e per ogni stand-alone (ADR-0017). Il developer e il
+   playtester sono obbligatori: un passo si salta solo con una decisione del DM
+   scritta nel piano. Il DM, lo stesso giorno: *«nelle skill e l'ADR ci va come
+   giro obbligatorio la parte del developer e del playtester, sia per tutti gli
+   archi e gli stand-alone che vengono divisi in DEF»*.
 2. **I piani la citano, non la copiano.** Un lotto che scrive, riscrive o
    rifinisce nello stile un master, un modulo o uno stand-alone dichiara nella
    colonna «qualità» i passi del ciclo, per numero, e quali salta e perché. La

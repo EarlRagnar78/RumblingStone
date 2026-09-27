@@ -12,9 +12,14 @@ ts: Temp +13, Rifl +8, Vol +17
 attributi: For 12 Des 14 Cos 16 Int 16 Sag 20 Car 14
 velocita: 6 m
 iniziativa: +2
+sensi: scurovisione 18 m; Ascoltare +5, Osservare +5
 attacchi:
   - Mischia martello da guerra runico +1 +10/+5 (1d8+2)
+voci:
+  - Abilità: Percepire Intenzioni +13, Concentrazione +19, Sapienza Magica +19, Conoscenze (storia) +19, Artigianato (incidere rune) +19
 ```
+
+> [INFERRED — needs DM confirmation] **Abilità**: il DM ha approvato i gradi di Percepire Intenzioni che la Scena 7 usa. Sono 80 punti: chierico 9 a (2 + INT 3) per livello, quadruplo al 1°, più il Runecaster 4 allo stesso ritmo (il ritmo del Runecaster è del FRCS, `[Private source]`). Percepire Intenzioni non è di classe per un chierico d'Inganno: 8 gradi fuori classe (16 punti) + SAG 5 = **+13**. Gli altri 64 punti: 16 gradi ciascuno in Concentrazione (+COS 3), Sapienza Magica, Conoscenze (storia) e Artigianato (incidere rune), tutti a +INT 3. Ascoltare e Osservare senza gradi: la sola SAG.
 
 > [INFERRED — needs DM confirmation] `pf-dado` tolto da `scripts/conformita_statblocchi.py`: portava «1d8+2», che non sono i dadi vita (pf-dado «1d8+2» ha 1 dado, il testo dichiara 13 DV). I dadi non si ricostruiscono senza inventare: la composizione delle classi non e' leggibile o comprende una classe non SRD. Da completare a mano.
 

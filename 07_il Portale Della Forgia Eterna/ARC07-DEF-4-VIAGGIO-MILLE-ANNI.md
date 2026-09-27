@@ -1481,7 +1481,7 @@ Zog'tar sa uccidere diecimila uomini, Balvar sa **dove** vanno colpite le mura.
 | **Vuole** | che Hammerfist **cada in fretta**. Non per odio: perché un assedio lungo significa fame dentro le mura, e lui l'ha già vista una volta |
 | **Crede** | che i re nanici mentano ai loro, e che le sue rune abbiano protetto per trent'anni una fortezza che l'ha esiliato **senza processo** |
 | **La leva** | = suo nipote. È dentro le mura, ha diciannove anni, e Balvar sa esattamente su quale camminamento monta la guardia |
-| **Ricattabile** | sì, e da nessuno che non gliene parli **per primo**. Se i PG lo minacciano, si chiude; se gli dicono che il ragazzo è vivo, no. Non l'hanno mai visto, quindi è una promessa o una bugia: Raggirare contro il suo Percepire Intenzioni (Saggezza 20). Se ci crede, conta come recuperato |
+| **Ricattabile** | sì, e da nessuno che non gliene parli **per primo**. Se i PG lo minacciano, si chiude; se gli dicono che il ragazzo è vivo, no. Non l'hanno mai visto, quindi è una promessa o una bugia: Raggirare contro il suo Percepire Intenzioni **+13** (statblocco in Appendice A). Se ci crede, conta come recuperato |
 | **Non è un mostro** | e questo è il punto: se il tavolo lo tratta da mostro, lo scontro funziona lo stesso. Se lo tratta da nano, il master cambia forma |
 
 ⚠️ **È una fazione recuperabile, non una fazione debole.** Balvar in combattimento
@@ -2617,8 +2617,11 @@ ts: Temp +13, Rifl +8, Vol +17
 attributi: For 12 Des 14 Cos 16 Int 16 Sag 20 Car 14
 velocita: 6 m
 iniziativa: +2
+sensi: scurovisione 18 m; Ascoltare +5, Osservare +5
 attacchi:
   - Mischia martello da guerra runico +1 +10/+5 (1d8+2)
+voci:
+  - Abilità: Percepire Intenzioni +13, Concentrazione +19, Sapienza Magica +19, Conoscenze (storia) +19, Artigianato (incidere rune) +19
 ```
 <!-- /include -->
 

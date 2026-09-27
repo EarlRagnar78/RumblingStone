@@ -177,6 +177,10 @@ PIANO-MASTER-DEF**, perché ARC-08 comincia dove finisce DEF-5.
       metro) e non in cosa succede, che per questo gruppo è già canone
 - [ ] per ognuno, alla fine: lettore e playtester a freddo senza 🔴, quiz con la
       chiave approvata dal DM, e la riga tolta da `plans/copertura-scene.json`
+- [ ] **DEF-5 è la prova cieca di `P-ABITATO`** (ADR-0075, «La prova contro il
+      tavolo»): il playtester legge DEF-5 **prima** che gli si aggiunga la
+      tabella *Chi si trova qui*, e si conta se trova da solo i ruoli che
+      mancano. Se non li trova, la domanda va riscritta
 
 ### F5 · Gli stand-alone — ⬜
 
@@ -200,7 +204,7 @@ aperto il 2026-09-27.
       master di prova senza quel titolo, con un PNG che parla senza scheda e
       nessun box, ha avuto **zero rilievi**. «I master nuovi nascono sotto il
       cancello» era vero solo per chi usava il titolo giusto. Rimedio: una
-      regola `C0 · nessuna scena` per ogni file col profilo severo. **Va prima
+      regola `C0 · nessuna scena` per ogni file sotto cancello, che usa il titolo di scena del suo profilo (`### SCENA` per i master, `## §N` per DEF-5 e gli stand-alone). **Va prima
       di S1 di PIANO-MASTER-DEF** (ADR-0075)
 
 ### F7 · Il quiz a due agenti ✅ (2026-09-26)
@@ -278,6 +282,8 @@ manuali, così può misurare e segnare il problema, se esiste nell'avventura»*.
 | D6 | F3 | **Da dove viene il Rubino, e chi lo custodisce nel 372?** (lettore a freddo, seconda lettura, L #34 🔴). Il modulo lo fa comparire sull'incudine senza dire da dove |
 | D7 | F3 | **La fortezza «giovane, appena eretta» e Balvar che ne è stato il runaio** prima dei bisnonni dei nani di oggi: una delle due cose va cambiata. È aperta anche in `PIANO-CHIUSURA-DEI-MILLE-ANNI` M7 |
 | D8 | F5 | **Il Drappo vuole un Riflessi e una Volontà?** `domande_developer` non ne trova nessuno sull'intero modulo. Proposta: il Riflessi sì (la caduta nella curva), la Volontà solo se il DM la vuole in un modulo d'intrigo |
+| D9 | F4 | **Nei master già giocati (DEF-1, DEF-2, DEF-3) i box oltre 12 righe si spezzano?** Il passo 5 del ciclo li vuole ≤ 12; DEF-1 ne ha 6, DEF-2 uno. Spezzarli in battute non cambia una parola, ma tocca prosa già letta ai giocatori, ed è la D3 ancora aperta di MESTIERE-BANCHI. Proposta: sì, solo spezzare, come il box di Balvar in DEF-4; mai riscrivere cosa dicono |
+| D10 | F4 | **Il quiz a due agenti (passo 7) va fatto su ogni master?** Ogni quiz chiede una chiave approvata dal DM: con ARC-07, ARC-08, ARC-09 e gli stand-alone sono una ventina di chiavi. Proposta: sì sui master nuovi e su quelli riscritti nella prosa; no sulle conversioni di sola forma dei master già giocati (DEF-1, 2, 3), dove bastano lettore e playtester. Saltarlo lì è una decisione del DM, e va scritta (ADR-0075) |
 
 ## 5 · Validazione
 

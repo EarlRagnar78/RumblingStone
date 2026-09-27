@@ -246,8 +246,8 @@ ricopia ([ADR-0075](../../plans/adr/ADR-0075-il-ciclo-del-master-vale-per-ogni-p
 
 | # | Passo | Come si sa che è fatto |
 |---|---|---|
-| 1 | **Scene riconoscibili**: ogni scena apre con un titolo `### SCENA …` | i cancelli contano le scene; ⚠️ un master senza quel titolo ha **zero** scene per `copertura_scene` e `domande_developer`, e passa senza essere guardato |
-| 2 | **Contratto «In scena»** in ogni scena, schede d'entrata, Comparse (ADR-0073) | `copertura_scene.py --check`, profilo severo |
+| 1 | **Scene riconoscibili**: in un master `ARC*-DEF-*` ogni scena apre con `### SCENA …`; uno stand-alone con struttura sua dichiara il suo titolo di scena nel profilo di `plans/copertura-scene.json` | i cancelli contano le scene; ⚠️ un modulo con zero scene riconosciute passa senza essere guardato |
+| 2 | **Contratto «In scena»** in ogni scena, schede d'entrata, Comparse (ADR-0073). Dove i PG hanno tempo libero in un luogo abitato, una tabella **Chi si trova qui** con sei righe: comando, culto, rimedi, bottega, messaggi, guardia; una riga vuota si scrive «nessuno» | `copertura_scene.py --check`, profilo severo; la tabella la chiede il playtester (`P-ABITATO`), non ancora un cancello |
 | 3 | **Componenti** nella forma fissa, apparato generato, statblocchi inclusi dal Bestiario (ADR-0074) | `componenti.py --check` |
 | 4 | **Le domande del developer** ([`references/sviluppo-degli-incontri.md`](references/sviluppo-degli-incontri.md)) | `domande_developer.py --check`, più la lettura delle domande che lo script non vede |
 | 5 | **I box al metro** di `read-aloud-adulti.md`: ≤ 12 righe, un nome proprio nuovo, niente parentesi | `misura_craft.py --box` (non blocca in CI: si esegue) |

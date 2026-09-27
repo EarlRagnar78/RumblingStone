@@ -31,7 +31,7 @@ La domanda del DM era se questo bastasse. Misurato il 2026-09-27:
 | DEF-4 | 13 | sì | sì | 0 | sì, con quiz |
 | DEF-5 | 0 | no | no | 1 | no |
 
-I cancelli in CI sono verdi su tutti e cinque, per due ragioni diverse. Su
+I cancelli in CI sono verdi su tutti e cinque, e non per la stessa ragione. Su
 DEF-1, 2, 3 e 5 il contratto è spento da un profilo dichiarato in
 `plans/copertura-scene.json`, con la ragione scritta (lotto F4 di
 PIANO-LETTORE). Questa è onestà. La seconda ragione no: `copertura_scene` e la
@@ -67,6 +67,52 @@ stati scritti prima, o le citavano una alla volta.
 4. **Il buco del cancello diventa un lotto**, non una nota: un master
    `ARC*-DEF-*` con zero scene riconosciute deve essere un rilievo (F6 di
    PIANO-LETTORE).
+
+## La prova contro il tavolo
+
+Il DM ha chiesto se il ciclo fa venire fuori i problemi che il tavolo ha già
+trovato. Il banco è `ARC07-DEF-4` al commit `ddd683c`, il testo giocato il
+2026-09-25, e le cose che il DM ha dovuto inventare (ADR-0073).
+
+| Problema al tavolo | Il testo lo nominava? | Cancelli, passi 1-2 | Letture a freddo, passo 6 (calibrazione in PIANO-LETTORE §2) |
+|---|---|---|---|
+| i quartieri ospiti | sì, Scena 5, senza box | ✅ C1 «Scena 5 senza box», e il contratto (*Dove*) | — |
+| le gallerie sotto la fucina | sì, fra parentesi | ✅ contratto (*Dove*) | ✅ lettore #18 |
+| il capitano delle mura | sì, nella tabella delle scene | ✅ contratto (*Chi*) | ✅ lettore #40 |
+| le guardie della tenda, senza volto | sì, con i soli numeri | ✅ contratto (*Chi* chiede scheda o Comparse) | ◐ lettore #33, #55 |
+| la cappella con la sua chierica | **no** | — | ◐ playtester #14: «mancano prezzi, venditori» |
+| l'alchimista | **no** | — | ◐ playtester #14, generico |
+| l'araldo | **no** | — | ◐ lettore #33, che parla di un'altra guardia: legame debole |
+
+Sulla versione giocata i cancelli dei passi 1-2 danno **16 rilievi** e
+coprono i problemi che il testo nominava. Per quelli che non nominava
+le letture danno solo segnali generici: nessun rilievo dice «manca una
+cappella», «manca un alchimista» o «manca un araldo». Un DM che avesse letto
+quei rapporti avrebbe corretto il mercato della Scena 5, non aggiunto quelle
+tre persone. È il limite di ADR-0073: *uno script non vede quello che il testo
+non nomina*.
+
+I tre hanno una cosa in comune: sono i ruoli che un luogo abitato ha sempre,
+e che i giocatori vanno a cercare quando hanno tempo libero. Da qui la
+correzione, con lo stesso principio del contratto (non si misura un'assenza,
+ma si chiede di fare l'elenco):
+
+- il passo 2 chiede, nelle scene di tempo libero in un luogo abitato, una
+  tabella **Chi si trova qui** con sei righe fisse (comando, culto, rimedi,
+  bottega, messaggi, guardia) e «nessuno» dove manca;
+- il playtester ha un codice nuovo, `P-ABITATO`, che fa quella domanda.
+- al tavolo resta la rete sotto, il kit anti-improvvisazione di `campaign/` (un nome, un prezzo, una faccia): serve quando la tabella non è stata scritta, non al suo posto.
+
+⚠️ La correzione è costruita sui tre casi che deve trovare, quindi su DEF-4 li
+trova per forza. La prova vera è un modulo che non l'ha generata: **DEF-5**, il
+ritorno a Hammerfist, che è di nuovo una fortezza abitata e il primo master di
+F4.
+
+**Il ciclo introduceva un problema, corretto nello stesso giorno.** Il passo 1
+chiedeva `### SCENA` a tutti, ma gli stand-alone e DEF-5 hanno una struttura
+loro (`## §N`), già dichiarata nei profili di `copertura-scene.json`. Il passo
+vale ora così: `### SCENA` nei master `ARC*-DEF-*`, il titolo dichiarato nel
+profilo per chi ha una struttura sua.
 
 ## Le conseguenze
 

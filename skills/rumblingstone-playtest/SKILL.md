@@ -102,6 +102,15 @@ fissa. Leggi le rubriche, non questo riassunto:
 - **Gli esempi delle rubriche non vengono mai dai casi di calibrazione**,
   altrimenti la lettura trova quello che le si è detto di trovare.
   Calibrazione: `plans/esperimenti/lettore-playtester-def4/`.
+- **Il quiz a due agenti** misura un'altra cosa: non i buchi, ma **quanto
+  resta dopo una lettura sola**. Un agente legge e scrive 400 parole di
+  appunti, un secondo risponde a una chiave di 10-15 domande con i soli
+  appunti, e `quiz_lettura.py` divide le risposte in *giusta dagli appunti* /
+  *solo a libro aperto* / *sbagliata anche a libro aperto*. Procedura:
+  [`references/quiz-a-due-agenti.md`](references/quiz-a-due-agenti.md). Prima
+  esecuzione, su DEF-4 prima e dopo la riscrittura:
+  `plans/esperimenti/quiz-def4/` (i buchi a libro aperto da 4 a 0, quello che
+  resta dagli appunti da 5 a 6).
 
 ## 3. Il dry-run — come si simula un tavolo
 

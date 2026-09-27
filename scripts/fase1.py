@@ -88,6 +88,7 @@ MARCHE = {
     "_ARCHIVIO": "archivio (ADR-0054: un archivio non e' una copia)",
     "DEPRECATO": "deprecato (`misura_craft.ESCLUSI_NOME`)",
     "ERRATA-": "errata corrige (`misura_craft.ESCLUSI_NOME`)",
+    "APPARATO-": "generato dal master (`componenti.py --apparato`, ADR-0074): si cambia il master",
 }
 
 
@@ -103,7 +104,7 @@ def stato_del_file(f: Path, snapshot: "set[Path]") -> "list[str]":
         detto.append(MARCHE["_SNAPSHOT-STORICO.md"])
     if "_ARCHIVIO" in f.parts:
         detto.append(MARCHE["_ARCHIVIO"])
-    for marca in ("DEPRECATO", "ERRATA-"):
+    for marca in ("DEPRECATO", "ERRATA-", "APPARATO-"):
         if marca in f.name:
             detto.append(MARCHE[marca])
     return detto

@@ -129,6 +129,7 @@ Il **perché** delle scelte strutturali. Indice completo in [`plans/adr/`](../pl
 | [ADR-0071](../plans/adr/ADR-0071-gli-artefatti-crescono-per-stadi-e-ogni-pagina-ha-una-versione.md) | **Gli artefatti crescono per stadi, e ogni pagina ha una versione**: un rituale o una quest per stadio sul modello di *Weapons of Legacy*, una pagina giocatore e una DM per stadio, la versione nella meta `versione-artefatto` e nel registro della matrice §0; `test_versioni_artefatti.py` li tiene allineati |
 | [ADR-0072](../plans/adr/ADR-0072-la-scheda-porta-la-sua-immagine-dentro.md) | **La scheda di un artefatto porta la sua immagine dentro**: webp 480 px come `data:` URI sotto la testata, scelto da `PG/Artefatti/immagini-artefatti.json`, scritto da `incorpora_immagini_artefatti.py`; `test_immagini_artefatti.py` boccia immagini collegate, pagine oltre 300 KB e mancanti non dichiarate |
 | [ADR-0073](../plans/adr/ADR-0073-chi-e-dove-sta-scritto-nella-scena.md) | **Chi e dove sta scritto nella scena**: due letture a freddo (lettore, playtester) che trovano, e `copertura_scene.py` in CI che impedisce di ripetere: box per scena, scheda di chi parla, contratto `**In scena** — Dove: … — Chi: …` |
+| [ADR-0074](../plans/adr/ADR-0074-il-master-come-componenti.md) | **Il master come componenti**: `componenti.py` legge i blocchi tipizzati del DEF (scena, In scena, box, scheda, comparse, prove), genera `APPARATO-<master>.md` (cast, CD, read-aloud) e tiene allineate le copie `<!-- include: fonte#blocco -->`; primo uso: lo statblocco di Balvar in DEF-4 |
 
 ## 5. Archivio piani
 

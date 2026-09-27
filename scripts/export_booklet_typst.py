@@ -681,7 +681,13 @@ def statblocco_typ(corpo: str, titolo_corrente: str = "") -> str:
     if sb.ts:
         voci.append(f"ts: [{inline(sb.ts)}]")
     if sb.attributi:
-        coppie = [c.strip().split(None, 1) for c in sb.attributi.split(",") if c.strip()]
+        # Le schede scrivono «For 12 Des 14 Cos 16 …» senza virgole (94 su 99
+        # il 2026-09-26): dividere sulle virgole dava una coppia sola,
+        # («For», «12 Des 14 Cos 16 …»). Si prende sigla + valore, in
+        # qualunque ordine, con «—» per la caratteristica che non c'è.
+        coppie = [list(m) for m in re.findall(r"\b(For|Des|Cos|Int|Sag|Car)\b\.?\s*([+-]?\d+|—|-)",
+                                              sb.attributi)] \
+            or [c.strip().split(None, 1) for c in sb.attributi.split(",") if c.strip()]
         voci.append("attributi: (" + "".join(
             f"({json.dumps(k, ensure_ascii=False)}, {json.dumps(v, ensure_ascii=False)}), "
             for k, v in (c for c in coppie if len(c) == 2)) + ")")

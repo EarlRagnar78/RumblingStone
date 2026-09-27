@@ -112,8 +112,8 @@
         "pr/180",
         "origin/claude/lettore-playtester"
       ],
-      "stato": "in-volo",
-      "dove": "PR #180 aperta: PIANO-LETTORE-E-PLAYTESTER F1-F3 (ADR-0073, copertura_scene.py, DEF-4 prima dell'infiltrazione)"
+      "stato": "portato",
+      "dove": "PR #180 fusa in main (a15ba5e): PIANO-LETTORE-E-PLAYTESTER F1-F3, ADR-0073, copertura_scene.py, DEF-4 prima dell'infiltrazione"
     },
     {
       "ref": [
@@ -138,6 +138,14 @@
       ],
       "stato": "portato",
       "dove": "PR #177 fusa il 2026-09-25 (7c08996): le pagine stampabili della Collana dei Semi Eterni e di Durik"
+    },
+    {
+      "ref": [
+        "pr/181",
+        "origin/claude/lettore-quiz-e-componenti"
+      ],
+      "stato": "portato",
+      "dove": "PR #181 fusa in main il 2026-09-27: PIANO-LETTORE-E-PLAYTESTER F7-F9 (quiz_lettura.py, componenti.py con ADR-0074, domande_developer.py) e il piano nuovo PIANO-MASTER-DEF-ARC08-ARC09-STANDALONE"
     }
   ],
   "file": [

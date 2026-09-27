@@ -159,6 +159,15 @@ incontri e prove, misteri).
     come titoli di brani, **il momento da fotografare** (uno per sessione,
     dichiarato) e una **nota di accessibilità**. Vale sui **nuovi**
     consolidamenti: i cinque master esistenti non si riscrivono.
+    ⚙️ **Foglio del cast, inserto delle CD e indice dei read-aloud non si
+    scrivono a mano** in un master col contratto «In scena»:
+    `python3 scripts/componenti.py --apparato` li genera in
+    `APPARATO-<master>.md` dai componenti del master (scheda d'entrata,
+    comparse, box, prove), e la CI boccia un apparato rimasto indietro
+    ([ADR-0074](../../plans/adr/ADR-0074-il-master-come-componenti.md)). Si
+    scrivono i componenti **nella forma fissa**, e l'apparato esce da sé. Il
+    resto del punto (pronuncia, cue sonori, momento da fotografare,
+    accessibilità) resta a mano.
 16. **Riscalatura a tre assi**: la stessa avventura, per tavoli diversi. Una
     tabella per **livello del party**, una per **numero di giocatori**, una per
     **durata disponibile** — e ognuna con la colonna che nessuno scrive mai:
@@ -238,6 +247,21 @@ vengono, e cosa è stato scartato:
 scala, read-aloud minimi). Gira in CI a ogni PR: l'agente NON deve
 ri-verificare a mano ciò che lo script copre — spende i token solo su
 prosa, coerenza e design (ciò che una regex non vede).
+
+`python scripts/domande_developer.py --check` fa le domande del developer
+([`references/sviluppo-degli-incontri.md`](references/sviluppo-degli-incontri.md))
+sulla forma del testo: e se volano, e se sono invisibili, chi sente il rumore,
+i tre TS, la soglia del boss, lo skill challenge per intero. Un master nuovo
+nasce senza rilievi, o con la ragione di ognuno in `plans/domande-developer.json`.
+
+`python scripts/componenti.py --check` (ADR-0074) verifica l'apparato generato
+e le **copie sincronizzate**: un blocco scritto una volta in un file e copiato
+in un altro fra `<!-- include: fonte#blocco -->` e `<!-- /include -->`. È il
+modo di mettere nel master lo statblocco di un PNG del Bestiario senza tenerne
+due versioni: `…/scheda.md#statblocco` copia il recinto ```` ```statblocco ````
+della scheda, e un'errata si fa nel Bestiario e si porta con
+`componenti.py --includi`. **Non** si include la prosa del Bestiario: quella si
+riscrive per il tavolo.
 
 ## Self-check finale (prima di consegnare)
 

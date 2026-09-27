@@ -14,6 +14,13 @@ superato il controllo, riscritto per la 3.5.
 Si applica a ogni master nuovo o riscritto, **dopo** la checklist del
 `SKILL.md` e **prima** della lettura a freddo (`rumblingstone-playtest` §2-bis).
 
+**Chi le misura.** `python3 scripts/domande_developer.py` guarda la forma del
+testo per le domande 1-6 e dice in quale scena la risposta manca; `--check`
+gira in CI, e un rilievo che non è un difetto si dichiara con la ragione in
+`plans/domande-developer.json`. È un indicatore: vede che la parola c'è («se
+volano», «l'allarme arriva in 2 round»), non che la risposta regga. La 7 non la
+misura nessuno. Calibrazione: `plans/esperimenti/domande-developer-def4/`.
+
 ## 1 · La lente dei Tier: chi resta senza niente da fare
 
 In 3.5 le classi non valgono uguale. La classificazione di JaronK (Giant in the
@@ -30,7 +37,7 @@ multiclasse. La campagna compensa già con gli artefatti.
 > che solo lui può fare**? Se il nemico vola, chi non vola e non ha gittata cosa
 > fa nei round in quota?
 
-Esempio vero: la seconda lettura di `ARC07-DEF-4` (playtester #35) ha trovato
+Esempio vero: la prima lettura di `ARC07-DEF-4` (playtester #42) ha trovato
 Tordek senza azioni per tre round contro un drago che resta in quota, e con la
 Cintura che rifiuta di attivarsi.
 

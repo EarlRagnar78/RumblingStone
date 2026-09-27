@@ -67,6 +67,14 @@
 
 ## §0 — QUICKSTART DM
 
+> 🧭 **La serata in tre frasi.** Il portale posa i PG in un bosco a est delle
+> mura di Hammerfist, al tramonto: la fortezza è giovane e un'orda la assedia
+> sotto le ali di un drago nero. Al consiglio di guerra **Re Thorek I chiede di
+> uccidere nella notte il generale Zog'tar**, dentro il campo nemico, e di
+> affrontare **all'alba il drago Skullcrusher**. Se falliscono, la fortezza
+> regge lo stesso, perché la profezia è già incisa: la salvano gli avi, e il
+> prezzo lo pagano loro.
+
 **Dove siete.** La Corona (Topazio + Smeraldo) ha aperto il portale del Tempo
 (affresco A6). I **quattro** Custodi — Hella di nuovo tra loro — precipitano
 attraverso mille anni e atterrano a **Hammerfist ≈372 DR**: la fortezza è
@@ -1906,6 +1914,27 @@ cambia davvero.
 | **Le campane della torre nord** | il suono nell'aria fredda copre il battito d'ali: chi le suona toglie al drago il vantaggio del suono in picchiata (e si fa **bersagliare**) |
 | **Ottocento nani che guardano** | chiamarli è gratis. Arrivano, **e muoiono**: tira sul Registro delle Perdite di ARC-08. Il drago fa un attacco pieno su di loro invece che sui PG. Nessuno lo dice al tavolo prima |
 
+#### 🪂 Chi non vola — cosa fa nei round in quota
+
+Il drago resta in cielo dai round 2-3, e la domanda del tavolo arriverà: *«e io
+che non volo?»*. La risposta non è «aspetti». Tre cose, tutte SRD:
+
+- **Preparare un'azione.** L'Attacco in Volo porta Skullcrusher a portata ogni
+  volta che morde o sferza. Chi prepara l'azione *«colpisco quando scende»*
+  colpisce **prima** che risalga. È il gioco di Thorik e di Tordek, e il colpo
+  preparato di Tordek può essere il suo Pugno Stordente.
+- **Le corde degli arieti** (la tabella qui sotto). Chi resta a terra è chi le
+  tira: una Lotta con +4 per la leva, e un'ala inchiodata per un round. È il
+  momento in cui il drago smette di essere in cielo per tutti.
+- **Le balestre delle mura.** Sul camminamento ci sono le balestre pesanti dei
+  difensori `[INFERRED — needs DM confirmation]`: 1d10, incremento 36 m, un
+  round intero per ricaricarle. Non fanno molto male. Fanno sì che chi non ha
+  gittata non stia fermo, e il drago punisce chi lo punge (*«bersaglio preferito:
+  chi lo ha ferito di più»*): chi tira, attira.
+
+Il DM non deve inventare niente di più. Se il giocatore trova una quarta via, è
+§0-ter.
+
 🚫 **Cosa NON dire.** Che la fucina funziona contro di lui. Se lo dici, la
 tabella diventa un elenco di mosse; se aspetti, resta un cortile. Il DM **non
 legge questa tabella ai giocatori**: la tiene sotto gli occhi e risponde.
@@ -2308,13 +2337,25 @@ delle 100 Asce (ARC-08) può portarne il nome — eco commovente.*
 
 ### A.4 · Balvar Fuocospento (Scena 7)
 
-Nano dello scudo, **Chierico 9 di Abbathor / Runecaster 4**, NE · **pf 96**
-(13 DV) · **CA 24**, contatto 12, colto 22 · Iniz +2 · Vel 6 m · TS Temp +13,
-Rifl +8, **Vol +17** · BAB +8, Lotta +9 · For 12, Des 14, Cos 16, Int 16,
-**Sag 20**, Car 14 · martello da guerra runico +1 +10/+5 (1d8+2) ·
-scurovisione 18 m, immune alla paura. **Leggere il Fuori-Posto** (Su,
-3/giorno): come *individuazione del magico*, ma sulle anomalie del tempo;
-percepisce chi non appartiene a questo secolo.
+<!-- include: Bestiario/villain/balvar-fuocospento-cr13.md#statblocco -->
+```statblocco
+gs: 13
+tipo: Medium humanoid (dwarf), Chierico 9 di Abbathor / Runecaster 4, NE
+ca: 24
+ca-dettaglio: contatto 12, colto 22 (mithral +2, anello +2, DES +2)
+pf: 96
+ts: Temp +13, Rifl +8, Vol +17
+attributi: For 12 Des 14 Cos 16 Int 16 Sag 20 Car 14
+velocita: 6 m
+iniziativa: +2
+attacchi:
+  - Mischia martello da guerra runico +1 +10/+5 (1d8+2)
+```
+<!-- /include -->
+
+**13 DV** · BAB +8, Lotta +9 · scurovisione 18 m, immune alla paura. **Leggere il
+Fuori-Posto** (Su, 3/giorno): come *individuazione del magico*, ma sulle
+anomalie del tempo; percepisce chi non appartiene a questo secolo.
 
 **Incantesimi** da chierico di 13° livello, **CD 15 + livello**: *dispel magic,
 magic circle against good, greater magic weapon, divination, righteous might,
@@ -2325,9 +2366,12 @@ invisibility purge, glyph of warding, dimensional anchor*.
 uno slot. Qui: la soglia, il palo centrale, sé stesso, e la Catena (Scena 7).
 
 <!-- apparato -->
-Copia della scheda del Bestiario (`Bestiario/villain/balvar-fuocospento-cr13.md`),
-messa qui perché il DM la vuole al tavolo senza aprire un altro file. Se ne
-cambi una, cambia l'altra: `test_copertura_scene.py` confronta i numeri.
+Il blocco statistiche è una copia sincronizzata della scheda del Bestiario
+(`Bestiario/villain/balvar-fuocospento-cr13.md`), messa qui perché il DM la
+vuole al tavolo senza aprire un altro file. Non si corregge qui: si corregge
+nel Bestiario e si lancia `python3 scripts/componenti.py --includi`; il
+cancello `--check` boccia una copia rimasta indietro (ADR-0074). BAB e Lotta
+non sono nel blocco, e `test_copertura_scene.py` li confronta a parte.
 <!-- /apparato -->
 
 ### A.5 · Re Thorek I e Thorgrim Barbadiferro (Scena 4)

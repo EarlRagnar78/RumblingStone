@@ -1100,7 +1100,7 @@ qui. Quello che hanno **venduto** resta qui, e ritorna come **reliquia** (§7).
 
 ### SCENA 6 — Il mare di tende
 
-**In scena** — Dove: la postierla · il campo — Chi: Durin · Grask · la pattuglia di quattro orchi · il lupo da guerra · lo squadrone hobgoblin · il corridore
+**In scena** — Dove: la postierla · il campo — Chi: Durin · Grask · i cavalieri dei lupi · la pattuglia di quattro orchi · le vedette goblin · lo squadrone hobgoblin · il corridore
 
 > **Read-aloud (Andor lead) — la postierla.** *Nel cuore della notte si apre
 > una porta che non è la porta: una feritoia bassa nella roccia viva, di quelle
@@ -1169,13 +1169,43 @@ blocchi** da 200 m.
   il corridore della Via B, qui sotto. Se arriva, Zog'tar è pre-allertato.
   Dopo lo scontro si riparte dal blocco in cui si era, e lo scontro costa una
   tacca in più `[INFERRED — needs DM confirmation]`.
+**Come si sorveglia un campo di diecimila** `[CANONE — DM 2026-09-27: i lupi
+girano fuori, dentro niente lupi]`. I numeri sono una proposta costruita sulle
+organizzazioni dell'SRD (una tribù goblin ha da 10 a 24 worg)
+`[INFERRED — needs DM confirmation]`.
+
+| Chi | Quanti | Dove | Cosa sente |
+|---|---|---|---|
+| **i cavalieri dei lupi**, goblin su worg | 6 squadre da 10 in giro alla volta: 60 worg sui circa 120 del campo | l'anello **fuori** dal campo, circa 6 km di giro. Ogni squadra tiene un chilometro e ripassa dallo stesso punto ogni quarto d'ora | il worg: Ascoltare e Osservare **+6**, olfatto a **9 m** (18 m col vento a favore, 4,5 m contro), scurovisione 18 m. Il goblin in sella: +1 |
+| **le ronde degli orchi** | quattro orchi e un sergente di 3°, una ogni 200 m circa | dentro, fra i fuochi | Ascoltare e Osservare **+1** |
+| **gli squadroni hobgoblin** | sei in fila, uno per quartiere | dentro, verso il centro | Ascoltare e Osservare **+2**. Sono i soli che marciano al passo |
+| **le vedette goblin** | due per carro, sui carri dei viveri | dentro, ai margini dei fuochi | Ascoltare e Osservare **+2**, scurovisione 18 m. Strillano prima di pensare |
+
+- **Il primo blocco è l'anello dei lupi**, e al ritorno lo è l'ultimo. Prima
+  della prova si tira 1d6: con **1-2** una squadra passa entro fiuto. Contro il
+  naso l'invisibilità non serve: il worg sente che qualcuno c'è, e la squadra
+  si ferma a cercare. La CD del blocco sale di **+2**; se il blocco fallisce,
+  il fallimento conta doppio verso la pattuglia. Chi vola sopra i 20 m resta
+  fuori dal fiuto.
+- **Gli sciamani.** Gli esploratori di Durin non li hanno visti, e non vuol dire
+  che non ci siano: uno sciamano non esce dal campo, e di giorno dorme. Nel 3.5
+  lo sciamano di una tribù è un **adepto** (classe da PNG dell'SRD). Settemila
+  orchi fanno una quindicina di bande, e ognuna ha il suo: **circa quindici
+  adepti orchi di 5° livello**, più qualche goblin (un adepto lancia incantesimi
+  di 2° livello solo dal 5°). Dormono vicino al fuoco
+  della loro banda; uno su tre veglia e canta. Nello skill challenge si
+  sentono e basta, finché non suona il corno: **dopo il corno**, ogni sciamano
+  sveglio lancia *vedere invisibilità* (2° livello, lista dell'adepto) e va
+  verso il rumore. Al ritorno a piedi, allora, nei blocchi in cui esce il
+  **5** (il falò) l'invisibilità non protegge: c'è uno sciamano che la vede.
+
 - **Complicazioni (tira 1d6 per blocco):**
 
 | d6 | Complicazione |
 |---|---|
 | 1-2 | Nessun evento. |
 | 3 | **Pattuglia di 4 orchi** (Guerriero 3) passa a 6 m: restare immobili. Chi è invisibile non tira; chi è solo nascosto tira Nascondersi **CD 18**. Se la metà del gruppo fallisce, gli orchi li vedono: il blocco conta come fallito e gli orchi gridano, quindi è un fallimento in più verso la pattuglia `[INFERRED — needs DM confirmation]`. |
-| 4 | **Lupo da guerra** (Olfatto acuto, Ascoltare/Osservare +8): se il blocco fallisce, abbaia: la ronda più vicina si ferma a guardare, e il blocco dopo si tira a CD +2 `[INFERRED — needs DM confirmation]`. |
+| 4 | **Vedette goblin** su un carro dei viveri (Ascoltare e Osservare +2): se il blocco fallisce, strillano; la ronda più vicina si ferma a guardare, e il blocco dopo si tira a CD +2 `[INFERRED — needs DM confirmation]`. |
 | 5 | **Falò vicino**: luce intensa, Nascondersi **CD +4** per quel blocco. Chi è invisibile non se ne accorge nemmeno. |
 | 6 | **Squadrone hobgoblin (6)** a 24 m: se il blocco fallisce, mandano un **corridore** alla tenda di comando (Zog'tar sarà pre-allertato). |
 
@@ -1299,7 +1329,8 @@ e il drago arriva sull'assalto.
 |---|---|---|
 | **Grask, l'araldo** `[CANONE — DM 2026-09-26]` | hobgoblin di quindici anni, magro, con il corno legato al polso da una cinghia perché una volta l'ha perso e l'hanno frustato. Dorme seduto, fuori dalla tenda, e si sveglia al primo grido. Vuole una cosa sola: non perderlo più | non parla: soffia |
 | la pattuglia di quattro orchi | quattro orchi con le lance in spalla e una torcia sola, che tengono bassa per non abbagliarsi | litigano in orchesco su chi ha rubato il rancio |
-| il lupo da guerra | grigio, col collare di cuoio chiodato e una cicatrice sul muso. Annusa il vento prima di camminare | non abbaia finché non è sicuro. Poi non smette |
+| i cavalieri dei lupi | goblin piccoli e magri, legati alla sella con una cinghia. I worg sono grigi, col collare di cuoio chiodato, e annusano il vento prima di camminare | il worg non ringhia finché non è sicuro. Poi non smette, e il goblin ride |
+| le vedette goblin | due per carro, seduti sui sacchi di farina, avvolti nella stessa coperta | si danno di gomito a ogni rumore, e il secondo strilla sempre prima del primo |
 | lo squadrone hobgoblin | sei, in fila, gli scudi tutti con lo stesso segno rosso. Marciano al passo anche di notte | ordini di una sillaba, e nessuno risponde |
 | il corridore | un hobgoblin ragazzo, senza armatura per correre più forte | ripete il messaggio a mezza voce per non dimenticarlo |
 
@@ -1611,7 +1642,7 @@ Balvar è morto da mille anni comunque vada. Ma:
 
 ### SCENA 8 — Zog'tar
 
-**In scena** — Dove: la tenda — Chi: Zog'tar · le quattro guardie · Balvar
+**In scena** — Dove: la tenda — Chi: Zog'tar · le quattro guardie · Balvar · il sacerdote della Mano
 
 *La scheda d'entrata di Zog'tar è nella Scena 7, dove i PG lo vedono per la prima volta.*
 
@@ -1647,6 +1678,19 @@ motivo per cui la Scena 7 viene prima.
   è sveglio fuori dalla tenda col corno pronto. Niente round di sorpresa, e
   l'Ira comincia al suo primo turno. Balvar parla lo stesso, se i PG ci
   arrivano: lui non ha fretta.
+- **Il sacerdote della Mano** `[INFERRED — needs DM confirmation]`. Dorme nella
+  tenda accanto, a dieci passi. Al primo grido o al corno arriva dopo **1d4+1
+  round**, con *vedere invisibilità* già addosso se ha sentito il corno. Dalla
+  soglia lancia *comando* («Giù!», Volontà CD 13) sul PG più vicino a Zog'tar,
+  poi *benedizione* sulle guardie, poi *oscurità* per coprire la ritirata del
+  generale. È un adepto: con Balvar e Zog'tar nella tenda l'EL resta 16, sotto
+  il tetto di 17. Statistiche in A.2.
+
+**Comparse**
+
+| Chi | Com'è | Come parla |
+|---|---|---|
+| il sacerdote della Mano | hobgoblin secco, dagli occhi gialli, la mano sinistra dipinta di rosso fino al polso, un bastone ferrato con appese ossa di dita | canta invece di parlare, sempre la stessa cantilena, e la interrompe solo per dare ordini |
 - **Sviluppi.** Zog'tar **esce dalla storia in questa scena**: morto, oppure
   umiliato e cacciato dal suo stesso campo (Via A, qui sotto). Il COME conta
   (► Esito, in fondo alla scena). `[HDYWTDT — il finisher a chi lo abbatte: «com'è che
@@ -2527,6 +2571,21 @@ GUARDIE (4): Hobgoblin Guerriero 8 · CA 20 · PF 60 · spadone +14 (2d6+6)
 ============================================================
 ```
 
+**Il sacerdote della Mano** (Scena 8) `[INFERRED — needs DM confirmation:
+adepto 7 dell'SRD sulle caratteristiche dell'hobgoblin, schieramento d'élite]`
+
+```
+SACERDOTE DELLA MANO — hobgoblin adepto 7 (GS 6)
+PF 38 (7d6+14) · CA 12 (+2 DES) · Iniz +2 · Vel 9 m
+Bastone ferrato +3 mischia (1d6) · TS Temp +4, Rifl +4, Vol +7
+FOR 10 · DES 14 · COS 15 · INT 14 · SAG 15 · CAR 8
+Ascoltare +2 · Osservare +2 · Concentrazione +12
+Incantesimi (3/4/3; CD 12 + livello):
+  0 guida, individuazione del magico, luce
+  1° benedizione, causare paura, comando, protezione dal bene
+  2° vedere invisibilità, oscurità, forza del toro
+```
+
 ### A.3 · Durin Rocciadura (Scena 2)
 
 Nano Guerriero 6 · PF 52 · CA 22 (arm. completa +1, scudo) · BAB/Lotta +6/+10 ·
@@ -2588,9 +2647,11 @@ standard dell'SRD: nessuna ha una scheda sua nel repo.
 | Creatura | Da dove viene | Cosa conta |
 |---|---|---|
 | **Pattuglia di 4 orchi** | complicazione 3 | Guerriero 3; passano a 6 m |
-| **Lupo da guerra** | complicazione 4 | olfatto acuto, Ascoltare e Osservare +8 |
+| **Cavalieri dei lupi** | il primo e l'ultimo blocco | worg SRD (GS 2): 30 pf, CA 14, morso +7 (1d6+4) e sbilanciare, Ascoltare e Osservare +6, olfatto 9 m. Goblin in sella: combattente 1, Ascoltare e Osservare +1 |
+| **Vedette goblin** | complicazione 4 | goblin SRD (GS 1/3): Ascoltare e Osservare +2, scurovisione 18 m |
 | **Squadrone di 6 hobgoblin** | complicazione 6 | a 24 m; manda il corridore |
-| **La pattuglia dei tre fallimenti** | skill challenge | otto hobgoblin guerrieri di 4° livello, EL 10 `[INFERRED — needs DM confirmation]`; ogni round 1d6, con 1 uno corre alla tenda |
+| **La pattuglia dei tre fallimenti** | skill challenge | otto hobgoblin guerrieri di 4° livello, EL 10: 30 pf, CA 15, spada lunga +6 (1d8+3/19-20), TS Temp +6 Rifl +2 Vol +0, Iniz +1, Vel 9 m, Ascoltare e Osservare −1 `[INFERRED — needs DM confirmation: calcolati sull'SRD, guerriero 4 con Arma Focalizzata e Specializzata]`; ogni round 1d6, con 1 uno corre alla tenda |
+| **Gli sciamani del campo** | dopo il corno | adepti orchi di 5° livello (GS 4), circa quindici: incantesimi 3/2/1, con *vedere invisibilità* fra quelli di 2° |
 
 <!-- nuova-pagina -->
 

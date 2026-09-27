@@ -20,12 +20,14 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | il pesatore | SCENA 5 | — | dice il peso ad alta voce, sempre in once, e aspetta che qualcuno protesti |
 | Grask, l'araldo | SCENA 6 | — | non parla: soffia |
 | la pattuglia di quattro orchi | SCENA 6 | — | litigano in orchesco su chi ha rubato il rancio |
-| il lupo da guerra | SCENA 6 | — | non abbaia finché non è sicuro. Poi non smette |
+| i cavalieri dei lupi | SCENA 6 | — | il worg non ringhia finché non è sicuro. Poi non smette, e il goblin ride |
+| le vedette goblin | SCENA 6 | — | si danno di gomito a ogni rumore, e il secondo strilla sempre prima del primo |
 | lo squadrone hobgoblin | SCENA 6 | — | ordini di una sillaba, e nessuno risponde |
 | il corridore | SCENA 6 | — | ripete il messaggio a mezza voce per non dimenticarlo |
 | **Zog'tar Deatheye** | SCENA 7 | Hammerfist. Sa uccidere diecimila uomini, non sa dove colpire le mura: per quello c'è Balvar | conta, sempre: *«due file», «tre ore», «cento»*. In ira: *«A ME, CANI! ABBATTETE LE OMBRE!»* |
 | **Balvar Fuocospento** | SCENA 7 | che Hammerfist cada **in fretta**, perché un assedio lungo è fame, e lui l'ha già vista. E che qualcuno dica che c'era | non smette di incidere mentre parla. La punta sull'ardesia continua sotto le frasi |
 | le quattro guardie | SCENA 7 | — | non parlano: al generale rispondono battendo l'asta per terra, una volta sì, due no |
+| il sacerdote della Mano | SCENA 8 | — | canta invece di parlare, sempre la stessa cantilena, e la interrompe solo per dare ordini |
 | **Vatore** | SCENA 9 | la stessa cosa che vorrà Sal: potere, e il conto lo pagano altri | il tono del collega, non del nemico. Monosillabi. Terrore reverenziale mal nascosto |
 | Hrodgar, il capitano delle mura | SCENA 10 | — | dà gli ordini con una parola sola |
 | **Skullcrusher il Nero** | SCENA 11 | vincere **davanti all'orda**, perché per lui il potere è quello che gli altri hanno visto | dice **il nome** dell'avversario prima di colpire, ogni volta |
@@ -68,6 +70,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 7 | Conoscenze storia | 22 |
 | SCENA 7 | 13d6, Riflessi | 21 |
 | SCENA 7 | round 1 e slay living (Tempra | 20 |
+| SCENA 8 | Dalla soglia lancia comando («Giù!», Volontà | 13 |
 | SCENA 8 | Sapienza Magica | 20 |
 | SCENA 8 | Intimidire | 22 |
 | SCENA 8 | dovrà superare Volontà | 18 |

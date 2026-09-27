@@ -71,6 +71,11 @@
 | ⬜ | **RIPRESA-PR 4g e 4h**; PR aperte #99 e #106 | | RIPRESA-PR | `python3 scripts/contenuti_nei_rami.py --fetch` |
 | ⬜ | **🧲 e 🤖**, e la nota locale di una mappa che non arriva nella legenda | | [RENDER-MAPPE-FEDELTA](PIANO-RENDER-MAPPE-FEDELTA-DETTAGLI.md) §1 · §9.3 | prima si legge che cosa vuol dire il simbolo in ogni mappa che lo usa |
 | 🙋 | **Al DM**: cancellare i sei rami di §9.2 (le sessioni d'agente non possono) | | §9.2 | il comando è lì, e tocca un ramo solo se la testa è ancora quella misurata |
+| ✅ | **I master DEF di ARC-08 e ARC-09, le decisioni e la divisione**: D1-D3 decise, 4 master per ARC-08 e 12 per ARC-09 approvati (A1), misure di partenza (A2). *(2026-09-27)* | G + R | [MASTER-DEF](PIANO-MASTER-DEF-ARC08-ARC09-STANDALONE.md) A1-A2 · PR #182 | fatto |
+| ✅ | **Il ciclo del master vale per ogni piano** ([ADR-0075](adr/ADR-0075-il-ciclo-del-master-vale-per-ogni-piano.md)): sette passi in `module-standard`, e ogni piano che riscrive contenuto li cita. *(2026-09-27)* | G3 | MASTER-DEF §1-bis · PR #182 | fatto |
+| ▶ | **ARC-07 al ciclo completo**: le regole nuove erano applicate a DEF-4 soltanto. DEF-5 per primo, poi DEF-1, 2, 3 nella forma | K / C | [LETTORE](PIANO-LETTORE-E-PLAYTESTER.md) F4 | agente: `fase1.py` su DEF-5, poi i sette passi |
+| ⬜ | **Il cancello che non vede un master senza `### SCENA`** (zero scene = zero rilievi) | C | LETTORE F6-a | agente: la regola C0 e il test che la fa mordere; prima di S1 di MASTER-DEF |
+| ⬜ | **A3 di MASTER-DEF**: il canone di ARC-08 contro lo stato del tavolo, dopo F4 | K | MASTER-DEF A3 | agente, poi conferma del DM |
 
 Le decisioni aperte al DM sono in §4, generata da `decisioni_dm.py`.
 

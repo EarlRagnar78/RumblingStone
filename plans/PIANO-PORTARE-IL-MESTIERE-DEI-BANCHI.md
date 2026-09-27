@@ -398,6 +398,18 @@ master di 1.200 righe si sfoglia più lentamente di uno da 955.
 Sette lotti, **in ordine di rapporto fra danno al tavolo e costo**. Ogni lotto è
 un commit, e ogni commit porta la sua misura prima/dopo (ADR-0036).
 
+⚠️ **Dal 2026-09-27 ogni lotto che scrive in un master segue il ciclo del
+master** (ADR-0075): i sette passi di `rumblingstone-module-standard`, citati
+per numero nella colonna «qualità». Conseguenze qui:
+- S5 e S6 sono passati a PIANO-MASTER-DEF (D2);
+- **S4 su DEF-5 si fa dentro F4 di PIANO-LETTORE**, che porta DEF-5 al ciclo
+  completo: due lotti sullo stesso master in due piani avrebbero riscritto due
+  volte gli stessi box. S4 su DEF-4 resta qui;
+- S1-S3 e S4-bis, quando toccano DEF-1, DEF-2 o DEF-3, aspettano che F4 li
+  abbia convertiti nella forma (titoli `### SCENA`, contratto, componenti):
+  aggiungere una sidebar a un master che poi si riordina vuol dire scriverla
+  due volte.
+
 ### Onda 0 — il cancello, prima della prosa *(nuova, da §1.3)*
 
 🔴 **Va per prima perché senza di lei ogni lotto di prosa è reversibile in

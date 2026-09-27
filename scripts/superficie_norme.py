@@ -226,6 +226,17 @@ NORME_SCOPERTE = (
         "sblocca": "una cartella per esecuzione, poi quiz_lettura.py --check conta le parole",
     },
     {
+        "chiave": "lettura_a_freddo_prima_del_def",
+        "norma": "rumblingstone-module-standard, ciclo completo passi 6-7 — un master e' DEF "
+                 "solo dopo lettore e playtester a freddo senza 🔴 e il quiz a due agenti",
+        "prerequisito": None,
+        "forma": None,
+        "dove": "sono letture di un agente: un cancello su un giudizio sarebbe rumore "
+                "(ADR-0073). Li chiede il piano che tocca il master (ADR-0075)",
+        "rilevatore_pronto": None,
+        "sblocca": None,
+    },
+    {
         "chiave": "due_livelli_di_subordinate",
         "norma": "read-aloud-adulti.md — max due livelli di subordinate",
         "prerequisito": None,

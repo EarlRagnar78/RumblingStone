@@ -6,11 +6,12 @@
 > Tarsilia, l'Abbazia della Rotta Sicura). L'ordine l'ha dato il DM il
 > 2026-09-25: *«poi i DEF di ARC-08, poi ARC-09 e tutti gli stand-alone»*.
 >
-> **Stato**: 🟡 D1-D3 decise, A1 approvato e A2 misurato il 2026-09-27; prossimo A3 · **Decisore**: DM ·
+> **Stato**: 🟡 D1-D3 decise, A1 approvato e A2 misurato il 2026-09-27; prima di A3 va chiuso F4 di PIANO-LETTORE (ARC-07 al ciclo completo) · **Decisore**: DM ·
 > **Standard**: [`rumblingstone-module-standard`](../skills/rumblingstone-module-standard/SKILL.md)
-> **Gate**: ogni master nuovo passa `validate_modules`, `copertura_scene`
-> (profilo severo, contratto «In scena»), `componenti --check`,
-> `domande_developer --check`, e una lettura a freddo senza 🔴
+> **Gate**: ogni master fa i **sette passi del ciclo completo** di
+> `rumblingstone-module-standard` (scene `### SCENA`, contratto «In scena»,
+> componenti, developer, box al metro, lettore e playtester a freddo, quiz),
+> [ADR-0075](adr/ADR-0075-il-ciclo-del-master-vale-per-ogni-piano.md)
 
 ---
 
@@ -56,6 +57,28 @@ Misurato il 2026-09-27 con `find … -name "*.md"`, esclusi i file `DEPRECATO`:
 Una sola coppia di file vivi ha paragrafi copiati alla lettera:
 `ARC08-01-GUIDA-DM` ⟷ `hammerfist_encounters-…-final`, 37 paragrafi (misura di
 ADR-0074). Il master la fonde.
+
+## 1-bis · Cosa deve essere chiuso prima, fuori da questo piano (ADR-0075)
+
+Il DM, il 2026-09-27, prima di A3: *«l'arco 07 è davvero completo anche con le
+nuove regole?»*. Misurato: no. Le regole nuove sul master sono state applicate
+a DEF-4 soltanto (tabella in F4 di PIANO-LETTORE). Da qui due prerequisiti, che
+restano nei loro piani e qui si citano:
+
+| Prima di | Serve | Dove sta | Perché |
+|---|---|---|---|
+| **A3** | ARC-07 al ciclo completo, DEF-5 per primo | PIANO-LETTORE **F4** | ARC-08 comincia dove finisce DEF-5, e il canone che A3 confronta sta nei master di ARC-07 |
+| **S1** | il cancello che segnala un master senza scene | PIANO-LETTORE **F6-a** | senza, un master di ARC-08 scritto con titoli diversi da `### SCENA` passerebbe i cancelli senza essere guardato |
+
+**Gli altri piani, controllati lo stesso giorno.** Il ciclo è entrato dove un
+lotto aperto scrive o rifinisce contenuto di gioco: PIANO-LETTORE (F4 allargato,
+F6-a nuovo), MESTIERE-BANCHI (S4 su DEF-5 passa a F4; S1-S3 aspettano la
+conversione di F4), INDAGINE (I5), MARCATURA (M2, solo passo 3), DRAPPO (Lotto
+3). Esclusi perché i loro lotti aperti non toccano la prosa dei moduli:
+REVISIONE-ARC07 (B1, i log), TRASVERSALE (artefatti e `state.md`), CICLO-DI-SESSIONE,
+LEVEL-DESIGN, EDITOR-VISUALE, PIPELINE-IBRIDE e MESTIERE-CARTOGRAFO (mappe),
+MISURA-EDITORIALE (misura), RIPRESA-PR, RICONCILIAZIONE-PR e PRATICHE-DI-INGEGNERIA
+(infrastruttura), VENDIBILITA (non autorizzato).
 
 ## FASE 1 — Audit / accertamento
 
@@ -261,22 +284,24 @@ Un lotto per master, nell'ordine dato dal DM. Ogni lotto è **K** per la parte
 di canone e **C** per la struttura, e si chiude in un commit suo con piano,
 INDEX e CHANGELOG.
 
-**S1 · ARC-08, i master della Battaglia** `[engine: Opus · effort: xhigh · qualità: tutti i gate + lettura a freddo senza 🔴]`
-Fonti: `ARC08-00…16` e `hammerfist_encounters-…-final`. Contratto «In scena» su
-ogni scena, schede d'entrata, apparato generato da `componenti.py`, statblocchi
-inclusi dal Bestiario con `#statblocco` (ADR-0074).
+**S1 · ARC-08, i master della Battaglia** `[engine: Opus · effort: xhigh · qualità: ciclo del master, passi 1-7, su ognuno dei quattro]`
+Un sotto-lotto per master (S1a-S1d), nell'ordine delle sessioni. Fonti nella
+tabella A1. Statblocchi inclusi dal Bestiario con `#statblocco` (ADR-0074). In
+S1d la Cerimonia delle 100 Asce si misura prima (Q2 del DM) e si riscrive solo
+nella forma.
 
-**S2 · ARC-09, i master del seguito** `[engine: Opus · effort: xhigh · qualità: come S1]`
-Fonti: i beat P1-P3. È il lavoro più grande (111 file): se A1 dice più di
-quattro master, si spezza in S2a, S2b…
+**S2 · ARC-09, i master del seguito** `[engine: Opus · effort: xhigh · qualità: ciclo del master, passi 1-7, su ognuno dei dodici]`
+Fonti nella tabella A1. Un sotto-lotto per master (S2a-S2l). Qui confluiscono S5
+(la Torre) e S6 (la Battaglia Finale) di MESTIERE-BANCHI. I nomi di abilità
+della 5ª edizione trovati in A2 si correggono nel master che li contiene.
 
-**S3 · Il Drappo** `[engine: Opus · effort: alto · qualità: validate_standalone + contratto]` — PF1e
+**S3 · Il Drappo** `[engine: Opus · effort: alto · qualità: validate_standalone + ciclo del master, passi 1-2 e 4-7]` — PF1e
 È già vicino allo standard. Il lotto porta il contratto «In scena» (F5 di
 PIANO-LETTORE) e i quattro rilievi aperti di `domande_developer` (Riflessi e
 Volontà sull'intero modulo). **Non** diventa un `ARC*-DEF-*`: resta uno
 stand-alone ADR-0017.
 
-**S4 · L'Abbazia** `[engine: Opus · effort: medio · qualità: validate_standalone]` — confermato dal DM (D3, 2026-09-27)
+**S4 · L'Abbazia** `[engine: Opus · effort: medio · qualità: validate_standalone + ciclo del master, passi 1, 2 e 4 come note]` — confermato dal DM (D3, 2026-09-27). Salta i passi 3 e 5-7: la prosa non cambia, e quei passi misurano la prosa
 Solo forma: il contratto «In scena», e i rilievi di `domande_developer`
 (l'invisibilità al corpo di guardia, Riflessi e Volontà), come note del DM e non
 come prosa riscritta.
@@ -285,15 +310,12 @@ come prosa riscritta.
 
 Per ogni master, prima di chiudere il lotto:
 
-1. i gate in CI verdi: `validate_modules`, `copertura_scene --check` (profilo
-   severo), `componenti --check`, `domande_developer --check`, `misura_craft
-   --box` senza box oltre le 12 righe;
-2. una lettura a freddo (lettore e playtester, `rumblingstone-playtest` §2-bis)
-   **su un modulo che la rubrica non ha mai visto**: nessun 🔴;
-3. il quiz a due agenti, con la chiave approvata dal DM, leggendo il limite
-   scritto nel protocollo (le domande di storia non distinguono il modulo dal
-   lettore);
-4. per ARC-08, il confronto con lo stato del tavolo (A3) prima della serata.
+1. i sette passi del **ciclo completo** di `rumblingstone-module-standard`
+   (ADR-0075). I passi 1-5 hanno un comando; i passi 6-7 (lettore e
+   playtester a freddo su un modulo che la rubrica non ha visto, quiz con la
+   chiave approvata dal DM) sono letture di un agente e non si saltano;
+2. `validate_modules` verde, come per ogni `ARC*-DEF-*`;
+3. per ARC-08, il confronto con lo stato del tavolo (A3) prima della serata.
 
 ## Decisioni aperte al DM
 
@@ -311,5 +333,6 @@ Per ogni master, prima di chiudere il lotto:
 2. leggere questo piano e `plans/STATO-E-ORDINE-DEI-PIANI.md` §4 (le decisioni
    aperte al DM);
 3. D1-D3 sono decise, la tabella A1 è approvata e A2 è misurato
-   (2026-09-27). Si prosegue con A3, il canone di ARC-08 contro lo stato del
-   tavolo, poi S1.
+   (2026-09-27). Prima di A3 va chiuso **F4 di PIANO-LETTORE** (ARC-07 al
+   ciclo del master, DEF-5 per primo), e prima di S1 **F6-a** (il cancello che
+   vede un master senza scene). Vedi §1-bis.

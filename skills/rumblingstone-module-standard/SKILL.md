@@ -233,6 +233,26 @@ skill challenge scritto per intero, e chi si diverte in ogni scena. Da dove
 vengono, e cosa è stato scartato:
 `plans/RICERCA-MANUALE-DEL-MASTER-2026-09.md`.
 
+### Il ciclo completo: quando un master si chiama DEF
+
+Un master è definitivo quando ha fatto **tutti** questi passi, in quest'ordine.
+Vale per ogni master nuovo e per ogni master esistente che un lotto riscrive o
+rifinisce nello stile. Un piano che tocca un master li cita per numero, non li
+ricopia ([ADR-0075](../../plans/adr/ADR-0075-il-ciclo-del-master-vale-per-ogni-piano.md)).
+
+| # | Passo | Come si sa che è fatto |
+|---|---|---|
+| 1 | **Scene riconoscibili**: ogni scena apre con un titolo `### SCENA …` | i cancelli contano le scene; ⚠️ un master senza quel titolo ha **zero** scene per `copertura_scene` e `domande_developer`, e passa senza essere guardato |
+| 2 | **Contratto «In scena»** in ogni scena, schede d'entrata, Comparse (ADR-0073) | `copertura_scene.py --check`, profilo severo |
+| 3 | **Componenti** nella forma fissa, apparato generato, statblocchi inclusi dal Bestiario (ADR-0074) | `componenti.py --check` |
+| 4 | **Le domande del developer** ([`references/sviluppo-degli-incontri.md`](references/sviluppo-degli-incontri.md)) | `domande_developer.py --check`, più la lettura delle domande che lo script non vede |
+| 5 | **I box al metro** di `read-aloud-adulti.md`: ≤ 12 righe, un nome proprio nuovo, niente parentesi | `misura_craft.py --box` (non blocca in CI: si esegue) |
+| 6 | **Lettore e playtester a freddo**, su un modulo che la rubrica non ha visto | [`lettore-a-freddo.md`](../rumblingstone-playtest/references/lettore-a-freddo.md) e [`playtester-a-freddo.md`](../rumblingstone-playtest/references/playtester-a-freddo.md): nessun 🔴 |
+| 7 | **Il quiz a due agenti**, con la chiave approvata dal DM | [`quiz-a-due-agenti.md`](../rumblingstone-playtest/references/quiz-a-due-agenti.md); `quiz_lettura.py --check` controlla solo la forma della chiave |
+
+I passi 6 e 7 non sono cancelli: li fa un agente, e li chiede il piano. Un
+master che ha passato i cancelli e non i passi 6-7 è **alfa**.
+
 ## Verifica automatica (CI, zero token)
 
 > ⚠️ I punti **15-16** non sono controllati da `validate_modules.py`: un gate a

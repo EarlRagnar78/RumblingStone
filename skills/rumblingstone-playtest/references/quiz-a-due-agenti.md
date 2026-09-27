@@ -54,6 +54,20 @@ comanda, cosa vuole il cattivo, quanto dura una cosa, cosa succede se si
 fallisce. Non chiedono dettagli che un DM cercherebbe comunque sulla pagina,
 come una CD o un punteggio.
 
+## Il limite osservato
+
+Il 2026-09-27, su tre versioni di `ARC07-DEF-4`, tre lettori su tre hanno preso
+appunti **procedurali** (CD, tacche, punti ferita) e hanno lasciato fuori la
+missione della serata, anche quando il modulo la diceva in tre frasi nelle
+prime righe del §0 (`plans/esperimenti/quiz-def4/RISULTATI.md`).
+
+Per le domande di **procedura** il quiz distingue le versioni. Per le domande di
+**storia** (dove si arriva, chi comanda, cosa chiede chi) non distingue un
+modulo che le seppellisce da un lettore che le salta. Un risultato basso su
+quelle domande, da solo, non è un rilievo sul modulo: va confermato dal lettore
+a freddo, che le domande di modulo («in tre frasi, che cosa succede?») le fa
+esplicitamente.
+
 ## Quando si usa
 
 - Su un master nuovo, dopo il lettore e il playtester: il quiz non trova

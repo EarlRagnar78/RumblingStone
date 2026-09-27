@@ -55,6 +55,8 @@ errore bloccante.
 
 ## Sul testo di oggi
 
-Degli stessi nove, restano i quattro falsi positivi e **uno vero: D1 · Scena
-11**. Il rilievo #42 del playtester non è mai stato chiuso. Scene 6 e 7,
-l'abilità 5e e la Tempra sono state corrette nei lotti M5-M7 e F3.
+Degli stessi nove, restano i quattro falsi positivi. Scene 6 e 7, l'abilità 5e
+e la Tempra erano state corrette nei lotti M5-M7 e F3. Il quinto, **D1 · Scena
+11**, lo strumento l'ha trovato ancora aperto il 2026-09-26: il rilievo #42 del
+playtester non era mai stato chiuso. Il 2026-09-27, col sì del DM, la Scena 11
+ha preso la sezione «Chi non vola», e il residuo è stato tolto.

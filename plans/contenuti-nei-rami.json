@@ -144,8 +144,8 @@
         "pr/181",
         "origin/claude/lettore-quiz-e-componenti"
       ],
-      "stato": "in-volo",
-      "dove": "PR #181 aperta: PIANO-LETTORE-E-PLAYTESTER F7-F9: quiz a due agenti (quiz_lettura.py), il master come componenti (ADR-0074, componenti.py) e le domande del developer misurate (domande_developer.py)"
+      "stato": "portato",
+      "dove": "PR #181 fusa in main il 2026-09-27: PIANO-LETTORE-E-PLAYTESTER F7-F9 (quiz_lettura.py, componenti.py con ADR-0074, domande_developer.py) e il piano nuovo PIANO-MASTER-DEF-ARC08-ARC09-STANDALONE"
     }
   ],
   "file": [

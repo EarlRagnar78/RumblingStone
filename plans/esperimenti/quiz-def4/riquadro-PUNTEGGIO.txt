@@ -1,0 +1,17 @@
+    q1  giusta solo a libro aperto        Dove li lascia il portale, rispetto alla fortezza?
+    q2  giusta dagli appunti              Chi ferma per primo i PG, e chi è?
+    q3  giusta solo a libro aperto        Chi comanda la fortezza?
+    q4  giusta solo a libro aperto        Cosa chiede il re ai PG, e quando?
+    q5  giusta dagli appunti              Quante tacche ha l'orologio della notte, e cosa succede quando finiscono?
+    q6  giusta solo a libro aperto        Dove si comprano pozioni e incantesimi nella fortezza, e da chi?
+    q7  giusta dagli appunti              Quanto dura la pozione d'invisibilità che il re dà ai PG?
+    q8  giusta solo a libro aperto        Chi è Balvar, e cosa vuole?
+    q9  giusta solo a libro aperto        Perché il drago combatte per l'orda?
+   q10  giusta solo a libro aperto        Come viene richiamato il drago al campo?
+   q11  giusta dagli appunti              Cosa succede se un nano del gruppo entra nella tenda dalla soglia, invisibile?
+   q12  giusta dagli appunti              Chi è l'uomo incappucciato fra le tende, e chi diventerà?
+   q13  giusta solo a libro aperto        Come si chiama il capitano delle mura, e com'è?
+   q14  giusta dagli appunti              Cosa succede se il duello col drago va malissimo?
+
+  giusta dagli appunti: 6 · giusta solo a libro aperto: 8
+  chiaro alla prima lettura: 6 su 14

@@ -67,6 +67,14 @@
 
 ## §0 — QUICKSTART DM
 
+> 🧭 **La serata in tre frasi.** Il portale posa i PG in un bosco a est delle
+> mura di Hammerfist, al tramonto: la fortezza è giovane e un'orda la assedia
+> sotto le ali di un drago nero. Al consiglio di guerra **Re Thorek I chiede di
+> uccidere nella notte il generale Zog'tar**, dentro il campo nemico, e di
+> affrontare **all'alba il drago Skullcrusher**. Se falliscono, la fortezza
+> regge lo stesso, perché la profezia è già incisa: la salvano gli avi, e il
+> prezzo lo pagano loro.
+
 **Dove siete.** La Corona (Topazio + Smeraldo) ha aperto il portale del Tempo
 (affresco A6). I **quattro** Custodi — Hella di nuovo tra loro — precipitano
 attraverso mille anni e atterrano a **Hammerfist ≈372 DR**: la fortezza è
@@ -1905,6 +1913,27 @@ cambia davvero.
 | **La cisterna sotto il pozzo** | l'acido colpisce l'acqua e **ribolle**: nuvola che oscura, −4 agli attacchi di tutti. Danneggia i PG quanto lui. È una **scelta**, non un trucco |
 | **Le campane della torre nord** | il suono nell'aria fredda copre il battito d'ali: chi le suona toglie al drago il vantaggio del suono in picchiata (e si fa **bersagliare**) |
 | **Ottocento nani che guardano** | chiamarli è gratis. Arrivano, **e muoiono**: tira sul Registro delle Perdite di ARC-08. Il drago fa un attacco pieno su di loro invece che sui PG. Nessuno lo dice al tavolo prima |
+
+#### 🪂 Chi non vola — cosa fa nei round in quota
+
+Il drago resta in cielo dai round 2-3, e la domanda del tavolo arriverà: *«e io
+che non volo?»*. La risposta non è «aspetti». Tre cose, tutte SRD:
+
+- **Preparare un'azione.** L'Attacco in Volo porta Skullcrusher a portata ogni
+  volta che morde o sferza. Chi prepara l'azione *«colpisco quando scende»*
+  colpisce **prima** che risalga. È il gioco di Thorik e di Tordek, e il colpo
+  preparato di Tordek può essere il suo Pugno Stordente.
+- **Le corde degli arieti** (la tabella qui sotto). Chi resta a terra è chi le
+  tira: una Lotta con +4 per la leva, e un'ala inchiodata per un round. È il
+  momento in cui il drago smette di essere in cielo per tutti.
+- **Le balestre delle mura.** Sul camminamento ci sono le balestre pesanti dei
+  difensori `[INFERRED — needs DM confirmation]`: 1d10, incremento 36 m, un
+  round intero per ricaricarle. Non fanno molto male. Fanno sì che chi non ha
+  gittata non stia fermo, e il drago punisce chi lo punge (*«bersaglio preferito:
+  chi lo ha ferito di più»*): chi tira, attira.
+
+Il DM non deve inventare niente di più. Se il giocatore trova una quarta via, è
+§0-ter.
 
 🚫 **Cosa NON dire.** Che la fucina funziona contro di lui. Se lo dici, la
 tabella diventa un elenco di mosse; se aspetti, resta un cortile. Il DM **non

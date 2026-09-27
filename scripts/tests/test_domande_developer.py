@@ -123,11 +123,15 @@ class TestIlRepo(unittest.TestCase):
         for r in dd.carica_config()["residui"]:
             self.assertTrue(r.get("ragione"), r)
 
-    def test_il_difetto_aperto_di_def4_resta_visibile(self):
-        """Il playtester #42 (Tordek contro il drago in quota) è aperto: finché
-        il testo non risponde, il residuo lo dice come APERTO, non come falso positivo."""
-        r = [x for x in dd.carica_config()["residui"] if x["regola"] == "D1" and x["scena"] == "SCENA 11"]
-        self.assertTrue(r and "APERTO" in r[0]["ragione"])
+    def test_il_difetto_di_def4_e_chiuso_nel_testo(self):
+        """Il playtester #42 (Tordek contro il drago in quota) era aperto fino al
+        2026-09-27: la Scena 11 adesso dice cosa fa chi non vola, e nessun
+        residuo deve più coprirlo."""
+        master = ROOT / "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md"
+        rilievi = dd.analizza(master.read_text(encoding="utf-8"))
+        self.assertNotIn(("D1", "SCENA 11"), [(r, s) for r, s, _ in rilievi])
+        self.assertFalse([x for x in dd.carica_config()["residui"]
+                          if x["regola"] == "D1" and x["scena"] == "SCENA 11"])
 
 
 if __name__ == "__main__":

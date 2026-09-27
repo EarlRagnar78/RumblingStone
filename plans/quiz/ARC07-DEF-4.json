@@ -1,7 +1,7 @@
 {
   "_leggimi": "Chiave del quiz a due agenti per ARC07-DEF-4 (skills/rumblingstone-playtest/references/quiz-a-due-agenti.md). Ogni alternativa è una lista di radici: la risposta è giusta se le contiene tutte. Le domande chiedono i fatti che servono al tavolo, non i numeri che il DM cerca sulla pagina. È canone: la approva il DM.",
   "modulo": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
-  "stato": "bozza",
+  "stato": "approvata",
   "domande": [
     {
       "id": "q1",
@@ -137,6 +137,30 @@
         [
           "esiliat",
           "fretta"
+        ],
+        [
+          "runaio",
+          "ricord"
+        ],
+        [
+          "esiliat",
+          "ricord"
+        ],
+        [
+          "runaio",
+          "c'era"
+        ],
+        [
+          "esiliat",
+          "c'era"
+        ],
+        [
+          "runaio",
+          "c'ero"
+        ],
+        [
+          "esiliat",
+          "c'ero"
         ]
       ]
     },
@@ -178,6 +202,10 @@
         ],
         [
           "smaschera"
+        ],
+        [
+          "anti",
+          "invisibil"
         ]
       ]
     },
@@ -228,5 +256,6 @@
         ]
       ]
     }
-  ]
+  ],
+  "approvazione": "DM, 2026-09-27: chiave approvata; q8 accetta tutti e due i desideri di Balvar (Hammerfist che cade in fretta, e qualcuno che dica che c'era)"
 }

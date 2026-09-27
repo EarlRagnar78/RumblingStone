@@ -105,18 +105,24 @@ class TestIlRepo(unittest.TestCase):
         self.assertEqual(ql.main(["--check"]), 0)
 
     def test_l_esperimento_di_def4_si_rigenera(self):
-        """I numeri di plans/esperimenti/quiz-def4/RISULTATI.md escono dai file."""
+        """I numeri di plans/esperimenti/quiz-def4/RISULTATI.md escono dai file.
+        La versione «riquadro» usa le risposte a libro aperto di «dopo»."""
         d = ROOT / "plans" / "esperimenti" / "quiz-def4"
         import json
         k = json.loads((ROOT / "plans" / "quiz" / "ARC07-DEF-4.json").read_text(encoding="utf-8"))
         conti = {}
-        for v in ("prima", "dopo"):
+        for v, aperto in (("prima", "prima"), ("dopo", "dopo"), ("riquadro", "dopo")):
             app = json.loads((d / f"{v}-RISPOSTE-APPUNTI.json").read_text(encoding="utf-8"))
-            ape = json.loads((d / f"{v}-RISPOSTE-APERTO.json").read_text(encoding="utf-8"))
+            ape = json.loads((d / f"{aperto}-RISPOSTE-APERTO.json").read_text(encoding="utf-8"))
             righe = ql.classifica(k, app, ape)
             conti[v] = tuple(sum(r["esito"] == e for r in righe)
                              for e in (ql.GIUSTA_APPUNTI, ql.SOLO_APERTO, ql.SBAGLIATA))
-        self.assertEqual(conti, {"prima": (5, 5, 4), "dopo": (6, 8, 0)})
+        self.assertEqual(conti, {"prima": (6, 4, 4), "dopo": (6, 8, 0), "riquadro": (6, 8, 0)})
+
+    def test_la_chiave_di_def4_e_approvata(self):
+        import json
+        k = json.loads((ROOT / "plans" / "quiz" / "ARC07-DEF-4.json").read_text(encoding="utf-8"))
+        self.assertEqual(k["stato"], "approvata")
 
 
 if __name__ == "__main__":

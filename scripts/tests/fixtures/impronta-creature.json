@@ -37844,25 +37844,42 @@
     "DV o livelli di classe"
    ]
   },
-  "Bestiario/villain/zog-tar-deatheye-cr14.md": {
+  "Bestiario/villain/zog-tar-deatheye-cr15.md": {
    "blocco": null,
-   "conti": [],
+   "conti": [
+    "caratteristiche: matrice standard (13, 12, 11, 10, 9, 8) + 3 da DV/4 → For 15, Cos 13, Des 11",
+    "pf: 11d12 + 4d10 media 93.5 + Cos +1×15 = 108",
+    "TS: somma dei TS base di ogni classe (SRD: multiclasse si sommano) → Temp +12, Rifl +4, Vol +4"
+   ],
    "lettura": {
     "armatura": null,
-    "base_ts": {},
-    "classi": [],
+    "base_ts": {
+     "rifl": 4,
+     "temp": 11,
+     "vol": 4
+    },
+    "classi": [
+     [
+      "barbaro",
+      11
+     ],
+     [
+      "guerriero",
+      4
+     ]
+    ],
     "dado": null,
     "dv": null,
     "elite": false,
-    "gs": 14,
+    "gs": 15,
     "manca": [],
-    "nome": "zog-tar-deatheye-cr14",
+    "nome": "zog-tar-deatheye-cr15",
     "scudo": 0,
     "taglia": "medium",
     "tipo": null
    },
    "manca": [
-    "DV o livelli di classe"
+    "ca (nessuna armatura nominata e nessuna armatura naturale dalla taglia: il numero sarebbe inventato)"
    ]
   }
  },

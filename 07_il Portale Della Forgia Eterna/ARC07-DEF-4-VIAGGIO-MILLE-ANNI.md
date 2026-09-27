@@ -1497,9 +1497,9 @@ sui corsari — il banco l'aveva già capito.)*
 | **Trattativa aperta**, nessuno l'ha minacciato | il primo round guarda. Dal secondo sta con chi sta vincendo |
 | **Minacciato, o attaccato** | combatte con Zog'tar: vedi «Come si combatte» più sotto |
 
-**Quanto pesa lo scontro.** Zog'tar (GS 14), Balvar (GS 13) e le quattro
-guardie (Guerriero 8) insieme fanno **EL circa 16**, sotto il tetto di
-APL + 4 = 17. Senza Balvar, **EL circa 15**. Il conto è fatto a mano con le
+**Quanto pesa lo scontro.** Zog'tar (GS 15), Balvar (GS 13), le quattro
+guardie (Guerriero 8) e il sacerdote della Mano (GS 6) insieme fanno **EL
+17**, cioè il tetto di APL + 4: più su non si va. Senza Balvar, **EL 16**. Il conto è fatto a mano con le
 regole di combinazione della DMG, ed è un'approssimazione `[INFERRED — needs DM confirmation]`.
 
 🚫 **Cosa NON dire.** Che il nipote esiste. Balvar non lo nomina mai per primo:
@@ -1664,8 +1664,10 @@ motivo per cui la Scena 7 viene prima.
 > non gli entra nelle ossa. Non sa che la Morte è già nella tenda.
 
 - **Round di sorpresa** (se nessuno li ha visti né sentiti): un'azione
-  standard o di movimento a testa. *È qui che si vince o si complica.* Un colpo coordinato può
-  portarlo subito sotto metà.
+  standard o di movimento a testa. *È qui che si vince o si complica.* Un
+  colpo coordinato gli fa male ma non lo abbatte: fuori dall'Ira ha 253 pf,
+  e non perde la Destrezza alla CA nemmeno colto di sorpresa (Schivare
+  Prodigioso Migliorato). È voluto: il DM lo vuole in piedi al secondo round.
 - **Round 1** (se reagisce): **Ira Barbarica** (*«A ME, CANI! ABBATTETE LE
   OMBRE!»*) + **Occhio di Ossidiana** su Thorik (la minaccia). Le 4 guardie
   ingaggiano i PG più esposti.
@@ -2354,7 +2356,7 @@ due»), e la pietra entra solo al Rituale della Scena 12.*
 | Scena | Tipo | PX/PG `[verif. ✓ ERRATA/TESORO-WBL 2026-07-23]` |
 |---|---|---|
 | Scene 1-4: l'arrivo, Durin, la targa, il consiglio | storia/social | 600 |
-| Scene 6-8: il campo, Balvar, Zog'tar (GS 14) | combattimento veloce | 2.400 |
+| Scene 6-8: il campo, Balvar, Zog'tar (GS 15) | combattimento veloce | 2.400 |
 | Scena 10: le mura | montaggio/eroico | 600 |
 | Scena 9: Vatore (scena grigia, qualunque esito) | roleplay grigio | 500 |
 | **Scena 11: Skullcrusher (GS 14)** | boss | **5.400** (party 4, APL 13) `[INFERRED — due GS in più raddoppiano i PX: needs DM confirmation]` |
@@ -2541,28 +2543,36 @@ Il vero climax resta Fauci nel 1372: qui si semina.
 
 ```
 ============================================================
-   ZOG'TAR DEATHEYE — generale della Mano Rossa (GS 14)
-   Mezzo-Ogre/Orco · Barbaro 10 / Guerriero 4 · Grande · CM
+   ZOG'TAR DEATHEYE — generale della Mano Rossa (GS 15)
+   Mezzo-Ogre/Orco · Barbaro 11 / Guerriero 4 · Grande · CM
 ============================================================
-PF: 230 (14 DV) · CA 24 (−1 taglia, +10 arm. completa, +3 DES, +2 nat)
-   tocco 12 · impreparato 21 · Iniz +3
-BAB/Lotta: +14 / +26 · Velocità 12 m
-FOR 26 (32 in Ira) · DES 16 · COS 20 · INT 12 · SAG 12 · CAR 14
-Attacco: Ascia a due mani +1 +26 mischia (3d6+15, 19-20/×3) in Ira
-Full-attack: +26/+21/+16 (3d6+15)
-Fuori dall'Ira (round di sorpresa): +23/+18/+13 (3d6+11)
-   [derivato: FOR 26 invece di 32, cioè −3 al colpire e −4 ai danni a due mani]
-TS: Tempra +16 · Riflessi +8 · Volontà +7 (+2 in Ira)
+PF: 253 (15 DV, massimi per dado) · 298 in Ira Superiore
+CA 24 (−1 taglia, +10 arm. completa, +3 DES, +2 nat) · 22 in Ira
+   tocco 12 · impreparato 24 (Schivare Prodigioso Migliorato)
+Iniz +7 · Velocità 12 m
+BAB/Lotta: +15 / +27 (+30 in Ira)
+FOR 26 (32 in Ira) · DES 16 · COS 20 (26 in Ira) · INT 12 · SAG 12 · CAR 14
+In Ira: ascia a due mani +1 +27/+22/+17 (3d6+19, 19-20/×3)
+Fuori dall'Ira (round di sorpresa): +24/+19/+14 (3d6+15)
+TS: Tempra +16 (+19 in Ira) · Riflessi +7 · Volontà +7 (+10 in Ira)
 ------------------------------------------------------------
-• Ira Barbarica Superiore (3/g): +6 FOR, +6 COS, +3 Vol, −2 CA, 10 round
-• RD 5/— · Presenza Minacciosa: entro 9 m, Vol CD 20 o scosso 1d4 round
-• Colpo Possente: fino a −10 TxC per +20 danni (Attacco Poderoso migliorato)
+• Ira Barbarica Superiore (5/g, con Ira Extra): +6 FOR, +6 COS,
+  +3 Volontà, −2 CA, 11 round. Dopo l'Ira è affaticato
+  (l'Ira Instancabile arriva al 17°)
+• RD 2/— (barbaro 10-12) · Schivare Prodigioso Migliorato ·
+  Percepire Trappole +3
+• Presenza Minacciosa: entro 9 m, Vol CD 20 o scosso 1d4 round
+• Attacco Poderoso a due mani: fino a −15 al colpire per +30 ai danni
 • OCCHIO DI OSSIDIANA (artefatto minore maledetto, incastonato al posto
-  dell'occhio destro — decisione DM 2026-09-24): 3/g azione di movimento,
+  dell'occhio destro, canone del DM): 3/g azione di movimento,
   marca un bersaglio → −2 CA contro Zog'tar e +2 danni subiti da lui, 5 round.
   Prezzo: Zog'tar è VULNERABILE alla luce divina (Luce di Lathander/Corona).
-Talenti: Attacco Poderoso, Ira Extra, Critico Migl. (ascia), Arma Focalizzata
-   & Specializzata (ascia), Robustezza, Iniziativa Migliorata.
+Talenti (9): Attacco Poderoso, Ira Extra, Critico Migliorato (ascia),
+   Arma Focalizzata e Arma Specializzata (ascia), Robustezza ×2,
+   Iniziativa Migliorata, Volontà di Ferro
+Boost log: 2026-09-27 — un livello di barbaro (SRD, classe associata)
+   — GS 14 → 15 — il DM lo vuole con l'Ira Superiore e duro abbastanza
+   da reggere più di un round. PF massimi per dado: scelta del DM.
 GUARDIE (4): Hobgoblin Guerriero 8 · CA 20 · PF 60 · spadone +14 (2d6+6)
    TS Temp +8, Rifl +3, Vol +1 · Iniz +1 · Vel 6 m (armatura pesante)
    Ascoltare +1 · Osservare +1   [INFERRED — needs DM confirmation:
@@ -2715,7 +2725,7 @@ La pattuglia si riassume in tre righe: Durin vede la Corona e cade in ginocchio
 
 - **Infiltrazione (3 tiri)**: Muoversi Silenz./Nascondersi/Osservare **CD 20**
   (−2 se aiuti dimezzati). Metà successi = raggiungete la tenda non visti.
-- **Zog'tar (risoluzione veloce, GS 14)**: un **assalto coordinato** (sorpresa +
+- **Zog'tar (risoluzione veloce, GS 15)**: un **assalto coordinato** (sorpresa +
   il colpo più forte del party) lo abbatte se dichiarano tattica sensata e
   vincono **un** tiro contrapposto. Se l'infiltrazione è fallita, è sveglio: −4
   alla sorpresa, un solo scambio.

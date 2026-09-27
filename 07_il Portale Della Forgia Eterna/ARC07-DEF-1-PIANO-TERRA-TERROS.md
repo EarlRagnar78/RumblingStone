@@ -255,7 +255,7 @@ Diapason, niente +2 TS → Terros a piena forza, nessun round di nausea.
 
 ## §2 — INGRESSO E BENEDIZIONE (Gravità 2× «Iraconda»)
 
-**Nella Sala della Forgia Eterna, dopo il riposo lungo.** Il corpo di Hella
+**Nella Sala della Forgia Eterna, dopo la notte di sonno.** Il corpo di Hella
 riposa accanto all'Altare del Cuore di Moradin, vegliato da Therysol; la luce
 verde sotto la pelle pulsa piano — lo spirito è ancora legato, ancora in
 attesa. Al risveglio, controllate l'**Affresco A7** (Battaglia di Hammerfist):
@@ -2053,7 +2053,7 @@ futuro). *Lista completa degli 8 affreschi e del gancio → `DEF-2`.*
 
 Countdown Hammerfist: **~3g 20h**, o **~3g 08h** se hanno dormito prima di
 Terros (registro completo: `ARC07-DEF-2` §0-bis). Il party è esausto: Moradin
-consiglia un riposo lungo — **nella Sala costa solo −4 h**, e loro non sanno
+consiglia di dormire otto ore — **nella Sala costano solo −4 h**, e loro non sanno
 perché. **Poi**: gli affreschi e la Stanza della
 Corona (`DEF-2`), quindi la **resurrezione di Hella** (`DEF-3`).
 

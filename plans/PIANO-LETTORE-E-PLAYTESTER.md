@@ -6,7 +6,7 @@
 > due letture a freddo fatte da un agente con una rubrica fissa
 > (`skills/rumblingstone-playtest/references/`).
 >
-> **Stato**: 🟡 F1-F3 e F7-F9 chiusi; restano F4 (allargato al ciclo del master, ADR-0075), F5, F6-a e le decisioni D5-D8 qui sotto · **Decisore**: DM ·
+> **Stato**: 🟡 F1-F3 e F7-F9 chiusi; restano F4 (allargato al ciclo del master, ADR-0075), F5 e le decisioni qui sotto · **Decisore**: DM ·
 > **Decisione**: [ADR-0073](adr/ADR-0073-chi-e-dove-sta-scritto-nella-scena.md)
 > **Gate**: `copertura_scene.py --check` verde; su `ARC07-DEF-4` la lettura a
 > freddo ripetuta dopo F3 non trova più rilievi 🔴 nelle Scene 5-9
@@ -165,7 +165,15 @@ developer e del playtester; la misura del miglioramento.
 - [x] due controlli nuovi: `copertura_scene` C5 (la scheda sta nella scena del
       primo incontro) e C0 (un modulo senza scene), `domande_developer` D2 col
       silenzio
-- [ ] le decisioni del DM (D5, D11-D23 qui sotto)
+- [x] niente riposo breve o lungo (il DM, 2026-09-27: *«non esistono riposi
+      lunghi e corti in D&D 3.5 e PF1e»*): sei righe corrette in DEF-1, DEF-2 e
+      DEF-4, il controllo in `validate_modules` e `validate_standalone` con la
+      stessa regex, la tabella del riposo SRD in `dnd-35-srd` (dove la
+      guarigione a letto diceva ×1,5 invece di ×2). Il playtester della prima
+      lettura l'aveva già visto (#13 🟡) e il testo era andato al tavolo lo
+      stesso: rileggendo quei rapporti, altri tre rilievi di regole erano
+      rimasti aperti (D25)
+- [ ] le decisioni del DM (D5, D11-D27 qui sotto)
 - [x] le letture a freddo dopo, e la tabella prima/dopo
 - [x] un secondo giro di correzioni sui rilievi delle letture dopo che non
       toccano il canone
@@ -259,7 +267,7 @@ elenca prende il profilo severo, contratto compreso. Si pianificano in
 [PIANO-MASTER-DEF-ARC08-ARC09-STANDALONE](PIANO-MASTER-DEF-ARC08-ARC09-STANDALONE.md),
 aperto il 2026-09-27.
 
-- [ ] 🐛 **F6-a · il cancello che non vede un master senza scene**
+- [x] 🐛 **F6-a · il cancello che non vede un master senza scene** ✅ (2026-09-27, con F3-bis: `copertura_scene` C0 e il suo test)
       `[engine: Sonnet · effort: medio · qualità: un test in cui un ARC*-DEF-* senza «### SCENA» fa uscire 1 --check]` — **C**.
       Trovato il 2026-09-27: `copertura_scene` e la parte per scene di
       `domande_developer` riconoscono una scena solo dal titolo `### SCENA`. Un
@@ -355,7 +363,12 @@ manuali, così può misurare e segnare il problema, se esiste nell'avventura»*.
 | D17 | F3-bis | **L'Aura della Forgia «dura fino all'alba», ma il rito si fa già all'alba.** Proposta: fino all'alba del giorno dopo, e quindi i PG arrivano a DEF-5 con *Possenza Divina* e *Protezione dal Male* ancora addosso, oppure fino al ritorno col Rubino |
 | D18 | F3-bis | **Le corde degli arieti non funzionano coi numeri**: una Lotta con +4 contro il +39 del drago non riesce quasi mai. Proposta: non è una Lotta ma una prova di Forza cooperativa, CD 25, con gli aiuti SRD di chi tira insieme; l'effetto resta l'ala inchiodata per un round. E le corde stanno nel cortile interno, mentre gli arieti sono fuori dalle mura: sono corde di un altro attrezzo (le gru delle mura?) o si tolgono |
 | D19 | F3-bis | **Chi del gruppo capisce il nanico antico?** Balvar parla solo quello, e la trattativa della Scena 7 si regge su chi lo capisce. Oggi il modulo nomina solo Thorik come lettore. Proposta: i nani lo capiscono a fatica (tutto il senso, non le sfumature), Thorik lo legge |
-| D20 | F3-bis | **Il riposo lungo della Scena 5 e il «campo di corsa».** Consiglio 1 + riposo lungo 5 + campo 2 fanno 8 tacche: l'alba arriva prima della tenda. «Il campo si attraversa di corsa» non ha una regola. ⚠️ La Scena 5 è già giocata: **cosa ha scelto il tavolo il 25 settembre, e quante tacche sono segnate?** Se è stato il riposo lungo, proposta: di corsa il campo costa 1 tacca invece di 2, e ogni blocco si tira a CD +5 |
+| D20 | F3-bis | **Le otto ore di sonno della Scena 5 e il «campo di corsa».** Consiglio 1 + sonno 5 + campo 2 fanno 8 tacche: l'alba arriva prima della tenda. «Il campo si attraversa di corsa» non ha una regola. ⚠️ La Scena 5 è già giocata: **cosa ha scelto il tavolo il 25 settembre, e quante tacche sono segnate?** Se hanno dormito, proposta: di corsa il campo costa 1 tacca invece di 2, e ogni blocco si tira a CD +5 |
+| D24 | F3-bis | **Il riposo, in 3.5.** Il DM, 2026-09-27: *«non esistono riposi lunghi e corti in D&D 3.5 e PF1e»*. Corretti DEF-1, DEF-2 e DEF-4 (sei righe) e aggiunto il controllo (`validate_modules`, `validate_standalone`). Restano due scelte: **(a)** le otto ore di sonno valgono **5 tacche** (sette ore e mezza, a una tacca ogni ora e mezza) o **6** (e allora dormire vuol dire alba prima della tenda)? **(b)** DEF-2 §7-bis diceva che dormire nella Sala ridà *tutti* i pf: in 3.5 sono 1 pf per livello. Al tavolo del 31 luglio è andata così? Se sì, diventa una regola della Sala, scritta come tale. Proposta: (a) 5 tacche, con la nota che sono otto ore scarse; (b) SRD, salvo che il tavolo non abbia già giocato i pf pieni |
+| D25 | F3-bis | **Tre rilievi di regole della prima lettura a freddo (2026-09-25) mai chiusi**, trovati rileggendo i rapporti vecchi. Il riposo breve era il quarto, e il playtester l'aveva già visto (#13). **(a)** Scena 1: «confusi 1d4 round (−2…)» è la condizione *confuso* dell'SRD o un −2? Proposta: *frastornato* non basta, quindi un −2 a attacchi e prove, scritto senza la parola «confusi». **(b)** Il +1 morale del banchetto e il +2 morale delle Benedizioni **non si sommano** in 3.5 (stesso tipo): proposta, il banchetto dà il +1 ai TS, dove le Benedizioni non arrivano. **(c)** Scena 11: «togliere al drago il vantaggio del suono in picchiata» non ha un numero. Proposta: con le campane suonate il drago perde il round di sorpresa della picchiata (ascoltare CD 20 per sentirlo arrivare) |
+| D26 | F3-bis | **Il giro lettore, playtester e developer in automatico.** Oggi è obbligatorio (ADR-0075) ma lo ricorda solo il piano, e il riposo breve dimostra che un rilievo 🟡 può restare nel testo per giorni. Proposta: un registro in `plans/`, le letture a freddo in JSON, con per ogni master DEF, l'impronta del testo letto e i rilievi con il loro stato (corretto, residuo con ragione, domanda al DM); un cancello in CI che fallisce se il master è cambiato dopo l'ultima lettura, o se un rilievo 🔴 o 🟠 non ha uno stato. La lettura la fa un agente, non la CI: il cancello dice solo *quando* va rifatta. Costo: ogni modifica a un DEF, anche un refuso, chiede una lettura prima del merge, salvo una dichiarazione «modifica di sola forma» |
+| D27 | — | **Il messaggio del 2026-09-27 si interrompe a «considera che i…».** Cosa andava considerato? |
+
 | D21 | F3-bis | **Con 8 tacche o più, la Scena 10 si gioca?** Il modulo fa cominciare il duello fuori dalle mura, ma non dice se la prova delle mura salta né quale esito vale. Proposta: la Scena 10 non si gioca, le mura valgono «a stento» (2-3 successi), e un fallimento della prova di Muoversi Silenziosamente CD 20 fa partire il duello con il drago che ha già scelto il suo bersaglio |
 | D22 | F3-bis | **Il ritorno a piedi non ha un costo di base in tacche**: l'andata ne costa 2, il ritorno 0 più una per blocco fallito. È voluto (al ritorno si sa la strada)? Proposta: 1 tacca di base |
 | D23 | F3-bis | **Un Balvar recuperato può sciogliere lui la Catena?** È la prima cosa che un tavolo gli chiede. Oggi il modulo dice solo che spiega dove sta la runa e come si spezza. Proposta: può, ma solo toccando la scaglia, cioè nel cortile durante il duello, e lo sa |

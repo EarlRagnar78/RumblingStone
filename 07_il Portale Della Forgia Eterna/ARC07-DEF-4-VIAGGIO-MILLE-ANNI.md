@@ -675,7 +675,7 @@ tacca è mezz'ora scarsa di gioco reale.
 | Cosa | Tacche |
 |---|---:|
 | Il consiglio di guerra (Scena 4), già segnato | **1** |
-| Riposo **breve** · riposo **lungo** (Scena 5) | **2** · **5** |
+| Fermarsi **tre ore** · dormire **otto ore** (Scena 5) | **2** · **5** `[INFERRED — 5 tacche sono sette ore e mezza, non otto: needs DM confirmation]` |
 | Banchetto e benedizioni (Scena 5, facoltativo, +1 morale 12 h) | **1** |
 | Hella veglia i semi della Collana: i Treant dell'alba (Scena 5) | **1** |
 | Cercare il Mastro Costruttore Zeth (Scena 5) | **1** |
@@ -691,7 +691,7 @@ che comincia, con i PG dove sono in quel momento.
 
 | Tacche spese all'arrivo alle mura (il ritorno compreso) | Come si arriva alle mura |
 |---|---|
-| ≤ 6 | in tempo. Si rientra, si schiera, le mura e il duello vanno come scritto. Le tacche che restano prima dell'8 si spendono con la tabella qui sopra, come nella Scena 5: un riposo **breve** (2) ci sta, uno **lungo** (5) no. La fucina, la cappella e la bottega sono aperte come nella Scena 5 |
+| ≤ 6 | in tempo. Si rientra, si schiera, le mura e il duello vanno come scritto. Le tacche che restano prima dell'8 si spendono con la tabella qui sopra, come nella Scena 5: tre ore di sosta (2) ci stanno, otto ore di sonno (5) no. La fucina, la cappella e la bottega sono aperte come nella Scena 5 |
 | 7 | 🟡 si rientra **correndo**: nessun riposo prima del drago, −1 a tutti i TS del primo round del duello (Scena 11) |
 | 8 o più | 🔴 **l'alba vi coglie fuori dalle mura.** Non morite: attraversate un campo che si sta svegliando. Prova di gruppo Muoversi Silenziosamente **CD 20**, poi il duello (Scena 11) comincia con i PG **fuori**, e Skullcrusher li vede per primo |
 
@@ -819,9 +819,15 @@ gallerie sotto la fucina; cercarlo costa una tacca)*
   ogni soffio. Se la attivano uscendo dalla postierla, all'alba è scaduta: va
   attivata quando il drago compare. Prezzo di pergamena SRD, 350 mo. Per
   **Durik** vale di più: la sua scheda gli dà +50% di danni dall'acido.
-- **Riposo — scelta**: **breve** (2 tacche: metà slot e pf) o **lungo** (5
-  tacche: recupero pieno, e poi il campo si attraversa di corsa). Il momentum
-  spinge al breve. ⚠️ La guarigione del passaggio (Scena 1) li ha già rimessi in
+- **Fermarsi o dormire — scelta.** In 3.5 ci sono solo le otto ore di sonno
+  e il tempo che passa. **Tre ore di sosta** (2
+  tacche) non ridanno incantesimi, perché l'SRD li restituisce solo dopo otto
+  ore di riposo (il chierico prega alla sua ora e non ha bisogno di dormire);
+  servono a curarsi con quello che resta, a smaltire i danni non letali e a
+  far tornare *affaticato* chi era *esausto*. **Dormire otto ore** (5 tacche,
+  e poi il campo si attraversa di corsa) ridà gli incantesimi e le capacità al
+  giorno, toglie l'affaticamento e rende 1 pf per livello, la guarigione
+  naturale dell'SRD: non i pf pieni. Il momentum spinge alla sosta. ⚠️ La guarigione del passaggio (Scena 1) li ha già rimessi in
   piedi: il riposo serve solo a chi ha speso qualcosa da allora.
 
 ![Mastro Costruttore Zeth, il seme del Ghostlord](Immagini/ritratti/zeth-mastro-costruttore.jpg)

@@ -173,6 +173,20 @@ class ModuliBoccia(unittest.TestCase):
                 problemi = self._controlla(MASTER_SANO + veleno + "\n")
                 self.assertTrue(any(atteso in p for p in problemi), problemi)
 
+    def test_boccia_il_riposo_breve_e_lungo(self):
+        """In 3.5 e PF1e non esistono: il playtester l'aveva visto su DEF-4 e
+        il testo era arrivato lo stesso al tavolo (DM, 2026-09-27)."""
+        for veleno in ("Un riposo breve ridà metà slot.", "Riposo **lungo** (5 tacche).",
+                       "Dopo un long rest il mago prepara.", "Il riposo — scelta: **breve**."):
+            with self.subTest(riga=veleno):
+                problemi = self._controlla(MASTER_SANO + veleno + "\n")
+                self.assertTrue(any("riposo breve/lungo" in p for p in problemi), problemi)
+
+    def test_lungo_il_muro_non_e_un_riposo(self):
+        problemi = self._controlla(MASTER_SANO + "Il riposo lungo il muro è scomodo. "
+                                   "Dormono otto ore.\n")
+        self.assertEqual(problemi, [])
+
     def test_boccia_il_canone_deprecato(self):
         problemi = self._controlla(MASTER_SANO + "Nymeria abbaia.\n")
         self.assertTrue(any("DURIK" in p for p in problemi), problemi)

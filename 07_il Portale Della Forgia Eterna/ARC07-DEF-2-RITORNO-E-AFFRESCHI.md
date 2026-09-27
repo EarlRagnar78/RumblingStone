@@ -590,8 +590,10 @@ rinnovabili 1/giorno tornando alla Sala.
 
 ### Prima la regola, perché è la domanda che nasce sempre
 
-**Dormire nella Sala sono otto ore vere.** Riposo lungo pieno: pf, slot,
-poteri giornalieri, condizioni rimosse — **tutto**, come ovunque. Lo sconto
+**Dormire nella Sala sono otto ore vere**, e valgono **come ovunque**:
+incantesimi preparati di nuovo, capacità al giorno ricaricate, affaticamento
+tolto, e la guarigione naturale dell'SRD (1 pf per livello, 1 punto per ogni
+caratteristica danneggiata). Lo sconto
 è **solo sull'orologio del mondo**: fuori ne passano **quattro**.
 
 > Non è un mezzo riposo. È un riposo intero **che costa metà**.

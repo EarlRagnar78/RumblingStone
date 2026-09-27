@@ -12,6 +12,7 @@ token): l'agente non la ri-verifica a mano.
 |---|---|
 | **CD** (Classe Difficoltà) | DC |
 | azione **veloce** / **immediata** / preparata (3.5) | bonus action, reaction, lair action, vantaggio/svantaggio (5e) |
+| **otto ore di sonno** (incantesimi, capacità al giorno, 1 pf per livello), una **sosta** di N ore (3.5 e PF1e) | riposo breve, riposo lungo, short/long rest (5e) |
 | **Lotta** (grapple 3.5); CMB/CMD solo in box PF1e dichiarati | CMB/CMD fuori dai box |
 | Skill in italiano 3.5: Osservare, Nascondersi, Raggirare, Sapienza Magica… | Spot, Hide, Bluff, Spellcraft nel testo da tavolo |
 | **Durik** (maschio) · **Skullcrusher** · **Terros** | Nymeria · Skulldark/Infernotooth · doppioni di boss |

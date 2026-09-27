@@ -63,12 +63,16 @@ SESSION_RE = re.compile(r"^0[1-3]-GIORNO-.*\.md$")
 # ⚠ Solo le forme che sono DAVVERO la meccanica 5e. In italiano «una Lunghezza di
 # vantaggio» è lingua normale: bandirla sarebbe un falso positivo, e un validatore
 # che grida al lupo viene disattivato entro una settimana.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from validate_modules import RIPOSO_5E  # noqa: E402
+
 BANNED = {
     r"\bazione bonus\b": "azione bonus (5e) → azione veloce",
     r"\bcon (?:un )?vantaggio\b": "tirare «con vantaggio» (5e) → nessun equivalente",
     r"\bcon (?:uno )?svantaggio\b": "tirare «con svantaggio» (5e) → nessun equivalente",
     r"\blair action": "lair action (5e)",
     r"(?<![A-Za-z])DC\s+\d": "DC → CD (Classe Difficoltà)",
+    RIPOSO_5E: "riposo breve/lungo (5e) → otto ore di sonno, guarigione naturale",
 }
 
 PREGEN_SECTIONS = ("Difesa", "Attacco", "Statistiche", "Equipaggiamento")

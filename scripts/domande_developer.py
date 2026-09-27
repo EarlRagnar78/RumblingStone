@@ -11,7 +11,7 @@ sulla forma del testo, e dice **dove** il problema c'è.
 | Regola | La domanda (§ del file di norma) | Unità che si guarda |
 |---|---|---|
 | D1 | il nemico vola: chi resta a terra cosa fa? (§1) | scena di scontro con un nemico in volo |
-| D2 | e se volano? e se sono invisibili? (§2) | luogo sorvegliato |
+| D2 | e se volano? e se sono invisibili? e se sono silenziosi? (§2) | luogo sorvegliato |
 | D3 | Tempra, Riflessi e Volontà negli scontri (§3) | il modulo intero |
 | D4 | chi sente il rumore, e arriva? (§4) | luogo sorvegliato |
 | D5 | il boss ha una soglia in cui cambia (§5) | scena del boss |
@@ -67,6 +67,9 @@ SORVEGLIATO = re.compile(
     r"|\bdi (?:guardia|ronda)\b|\bsorvegliat\w*")
 VOLO = re.compile(r"(?i)\b(?:vol(?:a|ano|are|ando)|in volo|dall'alto|sorvol\w+|in quota|levitaz\w+)\b")
 INVISIBILE = re.compile(r"(?i)\binvisibil\w*")
+#: «e se sono silenziosi?»: il terzo modo di passare, con *silenzio* o Muoversi
+#: Silenziosamente (DM, 2026-09-27: volo, invisibilità e silenzio insieme).
+SILENZIO = re.compile(r"(?i)\bsilenzi\w*|muoversi silenziosamente|senza (?:un )?rumore|non fa(?:nno)? rumore")
 RUMORE = re.compile(r"(?i)\b(?:allarme|sentono|sente\b|rumore|rinforzi|accorr\w+|corno|"
                     r"(?:entro|in) \w+ round|dà l'allarme|grida)")
 SCONTRO = re.compile(r"\bIniziativa\b|\bEL\s*[≈~]?\s*\d|round di sorpresa|\bGS\s*\d+|\bCR\s*\d+")
@@ -141,6 +144,8 @@ def analizza(testo: str, profilo: "dict | None" = None,
                 fuori.append(("D2", k, "luogo sorvegliato: nessuna risposta a «e se volano?»"))
             if not INVISIBILE.search(corpo):
                 fuori.append(("D2", k, "luogo sorvegliato: nessuna risposta a «e se sono invisibili?»"))
+            if not SILENZIO.search(corpo):
+                fuori.append(("D2", k, "luogo sorvegliato: nessuna risposta a «e se sono silenziosi?»"))
             if not RUMORE.search(corpo):
                 fuori.append(("D4", k, "luogo sorvegliato: non dice chi sente il rumore e arriva"))
         if SCONTRO.search(corpo) and NEMICO_IN_VOLO.search(corpo) and not DA_TERRA.search(corpo):

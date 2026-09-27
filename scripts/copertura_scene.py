@@ -25,6 +25,11 @@ Le regole, e cosa controllano:
        scheda d'entrata o una riga nella tabella **Comparse** della scena.
   C4 · fuori dal contratto — una scheda d'entrata o un'etichetta di battuta in
        una scena, per qualcuno che il suo *Chi* non elenca.
+  C5 · scheda dopo il primo incontro — la persona è nel *Chi* di una scena, e
+       la sua scheda d'entrata o la sua riga fra le Comparse sta in una scena
+       che viene dopo (ADR-0075).
+  C0 · nessuna scena — il titolo di scena del profilo non trova niente nel
+       modulo, e senza scene nessuna regola guarda niente (ADR-0075).
 
 Quello che lo script **non** vede, dichiarato: una persona o un luogo che il
 testo non nomina affatto. Un capitano che nessuno ha scritto non ha
@@ -182,7 +187,17 @@ def analizza(testo: str, profilo: dict, schede_extra: "list[str]") -> "list[tupl
     cast = righe_cast(schede_extra) if profilo.get("cast") else []
     elenco = schede + cast
 
-    for titolo, corpo in scene(testo, profilo.get("scena", SCENA_DEF), profilo.get("escludi")):
+    elenco_scene = scene(testo, profilo.get("scena", SCENA_DEF), profilo.get("escludi"))
+    # C0 · un modulo sotto cancello senza scene riconosciute passava con zero
+    # rilievi senza essere guardato (ADR-0075, PIANO-LETTORE F6-a).
+    if not elenco_scene:
+        return [("C0", "—", "nessuna scena riconosciuta: il titolo di scena del profilo non trova niente")]
+    # C5 · la scheda d'entrata sta nella scena in cui i PG incontrano la persona,
+    # non in una dopo (module-standard; Zog'tar in DEF-4, 2026-09-27).
+    locali = [nomi_schede([c]) + comparse(c) for _, c in elenco_scene]
+    visti: "list[str]" = []
+
+    for i, (titolo, corpo) in enumerate(elenco_scene):
         k = chiave_scena(titolo)
         if "C1" in profilo["regole"] and not mc.box_read_aloud(corpo):
             rilievi.append(("C1", k, "nessun box read-aloud"))
@@ -207,6 +222,14 @@ def analizza(testo: str, profilo: dict, schede_extra: "list[str]") -> "list[tupl
         for persona in chi:
             if not coperto(persona, elenco + compar):
                 rilievi.append(("C3", k, f"Chi: {persona} — né scheda d'entrata né riga fra le Comparse"))
+        for persona in chi:
+            if coperto(persona, visti):
+                continue
+            visti.append(norm(persona))
+            dove = [j for j, loc in enumerate(locali) if coperto(persona, loc)]
+            if dove and dove[0] > i:
+                rilievi.append(("C5", k, f"{persona} — la scheda sta più avanti, in "
+                                          f"{chiave_scena(elenco_scene[dove[0]][0])}"))
         chi_n = [norm(c) for c in chi]
         for s in nomi_schede([corpo]) + [norm(p) for p in parlanti]:
             if not coperto(s, chi_n):

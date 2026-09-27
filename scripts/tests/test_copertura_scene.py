@@ -76,6 +76,26 @@ class TestLeRegoleMordono(unittest.TestCase):
         t = BUONA.replace("Chi: Sorella Brynja · la guardia della porta", "Chi: la guardia della porta")
         self.assertTrue(any(r[0] == "C4" and "brynja" in r[2] for r in regole(t, SEVERO)))
 
+    def test_C5_scheda_dopo_il_primo_incontro(self):
+        # Brynja è nel Chi della Scena 1, ma la sua scheda sta nella Scena 2.
+        t = BUONA.replace("**Scheda d'entrata — Sorella Brynja, la chierica**", "").replace(
+            "### SCENA 2 — Il campo",
+            "### SCENA 2 — Il campo\n\n**Scheda d'entrata — Sorella Brynja, la chierica**\n")
+        self.assertIn(("C5", "SCENA 1", "Sorella Brynja — la scheda sta più avanti, in SCENA 2"),
+                      regole(t, SEVERO))
+
+    def test_C5_tace_se_la_scheda_e_nella_scena_giusta(self):
+        self.assertFalse(any(r[0] == "C5" for r in regole(BUONA, SEVERO)))
+
+    def test_C0_modulo_senza_scene(self):
+        t = BUONA.replace("### SCENA 1", "### Parte 1").replace("### SCENA 2", "### Parte 2")
+        self.assertEqual(regole(t, LEGGERO)[0][0], "C0")
+
+    def test_C0_tace_col_titolo_del_profilo(self):
+        t = BUONA.replace("### SCENA 1", "## §1 —").replace("### SCENA 2", "## §2 —")
+        prof = dict(LEGGERO, scena=r"^## §\d+")
+        self.assertFalse(any(r[0] == "C0" for r in regole(t, prof)))
+
     def test_lo_storico_non_conta(self):
         t = BUONA.replace("**BRYNJA:**", "<!-- storico -->\n**GUNNVOR:** *«x»*\n<!-- /storico -->\n**BRYNJA:**")
         self.assertNotIn(("C2", "SCENA 1", "GUNNVOR"), regole(t, LEGGERO))

@@ -147,6 +147,27 @@ rubrica del playtester ha preso le domande del developer
 sente il rumore?») sono nate dai suoi difetti. Una calibrazione nuova si fa su
 un modulo che la rubrica non ha mai visto.
 
+### F3-bis · DEF-4 prima della prossima serata — 🟡 (2026-09-27)
+
+`[engine: Opus, sessione principale; letture a freddo in subagenti ciechi · effort: xhigh · qualità: ciclo del master passi 1-6 sulle Scene 6-13, misura prima e dopo]` — **K** dove tocca il canone, **C** per il resto
+
+Il DM, il 2026-09-27: *«prima di DEF-5 andiamo bene con DEF-4»*. Al tavolo si
+riprende dall'infiltrazione nel campo nemico (Scena 6). Richieste esplicite:
+Skullcrusher che secondo gli esploratori va via al tramonto; cosa cambia se i
+PG volano, sono invisibili e silenziosi; scene, PNG e villain descritti quando
+i PG li incontrano, con i controlli automatici dove vale la pena; un giro del
+developer e del playtester; la misura del miglioramento.
+
+- [x] misura di partenza e due letture a freddo cieche sul testo di prima
+      (`esperimenti/def4-seconda-serata/`)
+- [x] giro del developer sulle Scene 6-13
+- [x] correzioni che non toccano il canone, nel modulo
+- [x] due controlli nuovi: `copertura_scene` C5 (la scheda sta nella scena del
+      primo incontro) e C0 (un modulo senza scene), `domande_developer` D2 col
+      silenzio
+- [ ] le decisioni del DM (D11-D19 qui sotto)
+- [ ] le letture a freddo dopo, e la tabella prima/dopo
+
 ### F4 · Gli altri master di ARC-07 — ⬜ · allargato il 2026-09-27 (ADR-0075)
 
 `[engine: Opus, sessione principale · effort: xhigh · qualità: i sette passi del ciclo del master, per ogni DEF]` — **K** per DEF-5 (si gioca subito), **C** per gli altri
@@ -278,12 +299,21 @@ manuali, così può misurare e segnare il problema, se esiste nell'avventura»*.
 | ~~D2~~ | F7 | ✅ **Decisa il 2026-09-27**: alla q8 valgono tutti e due i desideri di Balvar (Hammerfist che cade in fretta, e qualcuno che dica che c'era) |
 | ~~D3~~ | F7 | ✅ **Decisa il 2026-09-27**: il riquadro *La serata in tre frasi* entra in testa a DEF-4 |
 | ~~D4~~ | F9 | ✅ **Decisa il 2026-09-27**: DEF-4 Scena 11 dice cosa fa chi non vola (preparare un'azione, le corde, le balestre delle mura `[INFERRED]`) |
-| D5 | F3 | **TS, DV, RI e incantesimi di Skullcrusher** (DEF-4 A.1) non ci sono. Proposta: ricavarli dal drago nero adulto dell'SRD, avanzato a Enorme, e marcarli come derivati |
+| D5 | F3 · F3-bis | **TS, DV, RI e incantesimi di Skullcrusher** (DEF-4 A.1) non ci sono. Proposta: ricavarli dal drago nero adulto dell'SRD, avanzato a Enorme, e marcarli come derivati. ⚠️ *(2026-09-27)* È il 🔴 di tutte e due le letture a freddo, e serve alla prossima serata. Da qui l'SRD non si raggiunge (d20srd.org bloccato dal proxy) e la tabella dei draghi della skill `dnd-35-srd` è incoerente: i numeri li dai tu, o si ricavano in una sessione che vede l'SRD. Nello stesso giro va controllata la scalatura della Scena 11, che chiama «Vecchio» un drago a GS 14 |
 | D6 | F3 | **Da dove viene il Rubino, e chi lo custodisce nel 372?** (lettore a freddo, seconda lettura, L #34 🔴). Il modulo lo fa comparire sull'incudine senza dire da dove |
 | D7 | F3 | **La fortezza «giovane, appena eretta» e Balvar che ne è stato il runaio** prima dei bisnonni dei nani di oggi: una delle due cose va cambiata. È aperta anche in `PIANO-CHIUSURA-DEI-MILLE-ANNI` M7 |
 | D8 | F5 | **Il Drappo vuole un Riflessi e una Volontà?** `domande_developer` non ne trova nessuno sull'intero modulo. Proposta: il Riflessi sì (la caduta nella curva), la Volontà solo se il DM la vuole in un modulo d'intrigo |
 | D9 | F4 | **Nei master già giocati (DEF-1, DEF-2, DEF-3) i box oltre 12 righe si spezzano?** Il passo 5 del ciclo li vuole ≤ 12; DEF-1 ne ha 6, DEF-2 uno. Spezzarli in battute non cambia una parola, ma tocca prosa già letta ai giocatori, ed è la D3 ancora aperta di MESTIERE-BANCHI. Proposta: sì, solo spezzare, come il box di Balvar in DEF-4; mai riscrivere cosa dicono |
 | D10 | F4 | **Il quiz a due agenti (passo 7) va fatto su ogni master?** Ogni quiz chiede una chiave approvata dal DM: con ARC-07, ARC-08, ARC-09 e gli stand-alone sono una ventina di chiavi. Proposta: sì sui master nuovi e su quelli riscritti nella prosa; no sulle conversioni di sola forma dei master già giocati (DEF-1, 2, 3), dove bastano lettore e playtester. Saltarlo lì è una decisione del DM, e va scritta (ADR-0075) |
+| D11 | F3-bis | **I numeri delle guardie di Zog'tar e della pattuglia dei tre fallimenti.** Alle guardie mancavano TS, iniziativa, velocità, Ascoltare e Osservare, che la Scena 7 ora usa. Proposta scritta in A.2 come `[INFERRED]`: guerriero 8 SRD sulle caratteristiche dell'hobgoblin (Temp +8, Rifl +3, Vol +1, Iniz +1, Vel 6 m, Ascoltare e Osservare +1). La pattuglia (otto hobgoblin guerrieri 4) non ha numeri: proposta, lo stesso calcolo a 4° livello |
+| D12 | F3-bis | **La pietra del silenzio della variante dall'alto: chi la dà, e quanto dura?** Nessuno la vende. Proposta: Brynja, alla cappella, lancia *silenzio* su un sasso; dura un round per il suo livello, quindi basta per l'atterraggio e la tenda, non per il volo intero. Serve il livello di Brynja |
+| D13 | F3-bis | **Il corno di Grask: al polso o nella custodia col glifo?** Il modulo dice tutte e due le cose. E dopo un allarme di notte il drago dove va? Il testo ora dice «se ne va», senza scegliere fra le colline e il campo |
+| D14 | F3-bis | **Due esiti del duello senza casella.** Se Balvar è morto il drago fugge a metà pf: conta come FERITO GRAVE o FUGGITO? E la Catena spezzata dà «FUGGITO garantito», che per il carry-over B4 è l'esito più debole: è voluto? Proposta: fuga a metà pf = FERITO GRAVE; la Catena spezzata vale FERITO GRAVE se il drago aveva già perso almeno un terzo dei pf |
+| D15 | F3-bis | **Quando il duello «crolla» e intervengono gli avi (§6)?** Non c'è una soglia. Proposta: due PG a terra nello stesso round, oppure il gruppo che si ritira dal cortile |
+| D16 | F3-bis | **Il tono del Rubino è deciso in quattro posti** (la targa nella Scena 3, come muore Zog'tar nella Scena 8, l'esito del duello in §7, il «vinto sporco» in §6). Quale vince? Proposta: vince l'esito del duello; gli altri tre colorano la prima frase della Corona |
+| D17 | F3-bis | **L'Aura della Forgia «dura fino all'alba», ma il rito si fa già all'alba.** Proposta: fino all'alba del giorno dopo, e quindi i PG arrivano a DEF-5 con *Possenza Divina* e *Protezione dal Male* ancora addosso, oppure fino al ritorno col Rubino |
+| D18 | F3-bis | **Le corde degli arieti non funzionano coi numeri**: una Lotta con +4 contro il +39 del drago non riesce quasi mai. Proposta: non è una Lotta ma una prova di Forza cooperativa, CD 25, con gli aiuti SRD di chi tira insieme; l'effetto resta l'ala inchiodata per un round |
+| D19 | F3-bis | **Chi del gruppo capisce il nanico antico?** Balvar parla solo quello, e la trattativa della Scena 7 si regge su chi lo capisce. Oggi il modulo nomina solo Thorik come lettore. Proposta: i nani lo capiscono a fatica (tutto il senso, non le sfumature), Thorik lo legge |
 
 ## 5 · Validazione
 

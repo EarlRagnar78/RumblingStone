@@ -47,7 +47,9 @@ Dal 5° livello un gruppo vola e si rende invisibile. Un luogo che non ha una
 risposta per questo non esiste più: lo si sorvola.
 
 > **La domanda.** Per ogni luogo sorvegliato: *e se volano? e se sono
-> invisibili?* La risposta non annulla il piano. Lo **premia e sposta il
+> invisibili? e se sono silenziosi?* (*silenzio*, o Muoversi Silenziosamente
+> che non si sente). Le tre cose un gruppo le fa **insieme**, e la risposta
+> deve reggere anche alla somma. La risposta non annulla il piano. Lo **premia e sposta il
 > rischio**: chi vede l'invisibile, chi fiuta, cosa scatta sulla soglia, quanto
 > dura la pozione, cosa succede all'atterraggio.
 

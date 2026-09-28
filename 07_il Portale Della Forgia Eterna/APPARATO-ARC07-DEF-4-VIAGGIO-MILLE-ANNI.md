@@ -49,6 +49,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 4 | Diplomazia/Intimidire, alternativa | 16 |
 | SCENA 5 | palla di fuoco da 5d6, Riflessi | 14 |
 | SCENA 5 | lei, Artigianato (fabbricare armi) o Valutare | 15 |
+| SCENA 5 | druido), Artemis con Usare Oggetti Magici | 23 |
 | SCENA 5 | la legge con Usare Oggetti Magici | 21 |
 | SCENA 5 | identifica una pozione con Sapienza Magica | 25 |
 | SCENA 6 | Finché dura l'invisibilità, Muoversi Silenziosamente | 20 |

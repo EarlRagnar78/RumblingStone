@@ -120,8 +120,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 11 | il cortile | Salvatore lead | 11 |
 | SCENA 11 | «SANGUE ANTICO. ARTEFICE DI LACRIME.»* — *e per un istante la Corona t | — | 3 |
 | SCENA 12 | l'incudine | LotR lead | 6 |
-| SCENA 12 | l'incasso che si chiude | Salvatore | 5 |
-| SCENA 12 | Want* è la montagna, non il portatore: ha accettato tre gemme e un peg | — | 2 |
+| SCENA 12 | l'incasso che si chiude | Salvatore | 4 |
 | SCENA 12 | l'ascia prende la parola | Mercer lead | 4 |
 | SCENA 12 | l'aura | LotR lead | 7 |
 | SCENA 13 | l'incudine, la profezia compiuta | Casa di Davide lead | 6 |

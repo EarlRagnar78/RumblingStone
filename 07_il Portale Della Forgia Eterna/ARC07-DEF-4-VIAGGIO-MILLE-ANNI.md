@@ -2176,7 +2176,7 @@ aspetta. È il momento più grosso della campagna finora: non riempirlo tu.]`
 
 > **Cos'è.** Questo viaggio **è** il
 > **Rituale Legacy 4**, che la matrice degli artefatti chiama *«Siege of the
-> Eternal Forge»*: **Corona +3, Senzienza e Rubino si sbloccano qui**. Fino a oggi il master consegnava il duello e basta: il DM
+> Eternal Forge»*: **qui si sblocca il Rubino**; la **Corona +3** e la **Senzienza** arrivano **dopo che il Rubino è stato speso**, cioè all'arrivo nel 1372 (`DEF-5` §3) `[CANONE — DM, D6]`. Fino a oggi il master consegnava il duello e basta: il DM
 > tornava dal tavolo a segnare un avanzamento che nel modulo non era successo.
 >
 > ⏱️ **Quando** *(decisione DM)*: **dopo il combattimento**, sull'esito
@@ -2216,25 +2216,22 @@ che l'incontro ha appena scelto.
 
 **Momento 1 — la pietra entra.** Il Rubino trova il suo incasso, quello che per
 tutto l'arco non rifletteva la luce. Non serve un tiro: **la Corona lo prende da
-sé**, come una serratura che riconosce la chiave. La Corona passa a **+3**.
+sé**, come una serratura che riconosce la chiave. Ma **la Corona non cambia
+ancora** `[CANONE — DM, D6]`: il Rubino si usa **una volta sola**, e quella volta
+è il viaggio di casa. Finché non è speso resta un motore acceso nell'incasso, e
+la Corona resta a **+2**, muta come prima. Si completa **dopo l'uso**: il +3 e la
+Senzienza sono in `DEF-5` §3, all'arrivo.
 
 > **Read-aloud (Salvatore) — l'incasso che si chiude.** *Il vuoto sulla corona
-> si riempie e smette di essere un vuoto. Per la prima volta da quando Thorik
-> l'ha in testa, l'oro torna indietro da tutte e tre le pietre, e la luce che ne
-> esce non è di nessuna delle tre: è di quello che adesso sono insieme. Il metallo
-> gli si scalda contro la fronte, poi si raffredda, e resta caldo come una mano.*
+> si riempie. La pietra nuova non si mescola alle altre due: batte da sola, come
+> un secondo cuore, e tira verso un punto che nessuno nel cortile vede. Il metallo
+> gli si scalda contro la fronte, e non si raffredda.*
 
-**Momento 2 — la Corona parla, o non lo fa.** Qui **si incassa la promessa di
-`ARC07-DEF-3` §5**, e i due rami sono già canone:
-
-| Al rito di DEF-3, Thorik… | La Senzienza arriva | E la prima cosa che dice |
-|---|---|---|
-| **ha donato** il +2 di deflessione | **sveglia**, e con qualcosa da dire su di lui | *«Tre volte hai pagato tu. La terza non te l'ho chiesta io.»* |
-| **ha rifiutato** | **fredda**: i poteri sì, il tono no | una voce corretta e senza calore, che dà informazioni e non commenti. ⚠️ **Reversibile**: si scalda in ARC-09, quando lui rischia qualcosa di suo |
-
-> 🎭 **Grigio politico.** La Corona **non è dalla parte di Thorik**. Il suo
-> *Want* è la montagna, non il portatore: ha accettato tre gemme e un pegno
-> perché le servivano, e lo dirà con la stessa calma con cui dice tutto il resto.
+**Momento 2 — la Corona tace.** Se Thorik le parla, non risponde, e non è
+freddezza: non è ancora intera. Se il tavolo insiste, basta una riga del DM:
+*«la pietra nuova ha un lavoro da fare, prima»*. La promessa di `ARC07-DEF-3` §5
+(la Senzienza calda o fredda) si incassa in `DEF-5` §3, quando il Rubino ha
+finito di bruciare.
 
 **Momento 3 — Aegis Fang si sveglia**<!-- storico --> *(decisione DM: è una scena, non una riga
 di scheda)*<!-- /storico -->. È una scena, non una riga di scheda: l'ascia resta com'è finché l'Assedio non
@@ -2261,11 +2258,11 @@ di scheda)*<!-- /storico -->. È una scena, non una riga di scheda: l'ascia rest
 
 #### ⚠️ Due cose per il DM, e una da decidere
 
-- **Il Rubino si spende nel ritorno, ma non se ne va** `[CANONE — DM, D6]`
-  (`DEF-5` §3). Come **motore del viaggio** è a uso singolo: riporta i PG al
-  1372, poi per quella funzione è spento. Come **pietra della Corona** resta
-  nell'incasso ed è accesa: è la terza gemma, quella che porta la Corona a +3 e
-  la sveglia. Non è un potere nuovo in tasca, e non è un buco che si riapre.
+- **Il Rubino si usa una volta sola, e la Corona si completa dopo l'uso**
+  `[CANONE — DM, D6]` (`DEF-5` §3). Come **motore del viaggio** riporta i PG al
+  1372, e quel fuoco non torna. Speso, resta nell'incasso come **terza pietra**:
+  da lì la Corona è intera, a **+3** e con la **Senzienza**. Non è un potere
+  nuovo in tasca, e non è un buco che si riapre.
 - **Non ci sono altri costi qui** — né TS, né pegni, né punti caratteristica.
 
 #### Momento 4 — l'Aura della Forgia Eterna `[CANONE — DM 2026-09-20]`
@@ -2357,7 +2354,7 @@ due»), e la pietra entra solo al Rituale della Scena 12.*
 | **Seme del Ghostlord** (Scena 5, incontro con Zeth) | i PG assistono all'inizio della Lichificazione di Zeth (mano del Collezionista attraverso il tempo) | ARC-09 (dilemma etico di Hella su Zeth il Murato) | registro di fine serata + scheda del Ghostlord |
 | **Scelte-costo vs Zog'tar** (Scena 8) | Thorik affaticato / Cintura di Tordek «assaggiata» o disciplinata / tono del Rubino | ARC-08 (vs Fauci) | Scena 8 + B4 |
 | **Tono del Rubino** (esito duello) | «nessuna pietà» (UCCISO) / «dovere» (FERITO) / «vigile» (FUGGITO) → colore della Corona in ARC-08 | ARC-08 ingresso | registro delle conseguenze dell'arco |
-| **La Senzienza arriva calda o fredda** (Scena 12) | il ramo lo ha deciso `DEF-3` §5: se Thorik ha donato il +2 di deflessione la Corona **commenta**, se ha rifiutato **informa e basta**. ⚠️ Il freddo e' **reversibile** | ARC-08 e ARC-09, ogni volta che la Corona parla | stato degli artefatti · registro delle conseguenze |
+| **La Senzienza arriva calda o fredda** (`DEF-5` §3, dopo il Rubino) | il ramo lo ha deciso `DEF-3` §5: se Thorik ha donato il +2 di deflessione la Corona **commenta**, se ha rifiutato **informa e basta**. ⚠️ Il freddo e' **reversibile** | ARC-08 e ARC-09, ogni volta che la Corona parla | stato degli artefatti · registro delle conseguenze |
 | **Aegis Fang allo Stage 1** (Scena 12) | l'ascia ha smesso di interrogare Thorik — **oppure** lo giudica, e il giudizio finisce la prima volta che lui rischia qualcosa di suo per Hella | ARC-08, alla prima scena che riguarda Hella o nani da proteggere | scheda di Aegis Fang + stato degli artefatti |
 | **La prima frase dell'ascia, detta dal giocatore** (`[HDYWTDT]`, Scena 12) | quella frase e' canone: ottocento nani l'hanno sentita, e a Hammerfist qualcuno la **ripetera' storta** | ARC-08, arrivo al Cuore della Montagna | registro delle conseguenze |
 | **La fucina** (Scena 5): monete, oggetti venduti, l'ascia del gelo | monete di re non ancora nati murate nella fortezza; le cose vendute tornano come reliquie `[INFERRED — needs DM confirmation]` | ARC-08, a Hammerfist | registro delle conseguenze |

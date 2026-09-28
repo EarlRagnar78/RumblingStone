@@ -76,7 +76,7 @@ Forged by Moradin from a shard of creation — not merely a crown of power but "
 - **Alignment:** Lawful Good
 - **Prerequisites:** Dwarf or Half-Dwarf, BAB +5, True Faith in Moradin OR bonded with Aegis Fang
 - **Costs paid by the bearer:** −2 DEX and +4 CHA on wearing it, and it cannot be removed voluntarily (opened only to set the Emerald) — DM 2026-09-04; −2 DEX / +2 CON from the Ritual 3 pledge. DEX 10 → 8 → 6
-- **Four stages** (player + DM page each): S0 worn · S1 Topaz · S2 Emerald (**today**) · S3 Ruby (at Ritual 4)
+- **Four stages** (player + DM page each): S0 worn · S1 Topaz · S2 Emerald (**today**) · S3 Ruby (enters at Ritual 4; the Crown completes after its single use, on arrival in 1372)
 
 ### Active Powers (Currently Available)
 
@@ -85,7 +85,7 @@ Defense + Trial of the Deep Hall), so the Ritual-2 powers below are now
 active; only Topaz gem lit (state.md §0).*
 
 1. **Stone's Awareness (Su, CL 5):** On natural ground: +1 morale to attack/damage, **+2 insight bonus to AC**; detect secret doors, detect traps AND comprehend languages, all at will *(DM ruling 2026-07-04: both the master's and the HTML's lists apply)*
-2. **Crown of Protection (Ex, CL 6):** +2 deflection bonus to AC while worn (rises to +3 after Ritual 4)
+2. **Crown of Protection (Ex, CL 6):** +2 deflection bonus to AC while worn (rises to +3 once the Ruby is spent, on arrival in 1372 — DM, DEF-4 D6)
 3. **Moradin's Insight (Su):** True Seeing 1/day (10 min); +4 insight to Craft (Blacksmith). *Unlocked by: Trial of the Deep Hall (Ritual 2, ✅ completed)*
 
 ### Powers To Awaken (Via Legacy Rituals)
@@ -93,7 +93,7 @@ active; only Topaz gem lit (state.md §0).*
 1. **Adamantine Will (Su):** Immunity to charm/compulsion + +4 racial vs mental effects, on natural ground. *Unlocked by: Anvil of the World (Ritual 3, in progress)*
 2. **Mantle of Stone and Spirit (Su):** Continuous Mind Blank (immune to **all** mind-affecting effects and to divination, anywhere; this makes Adamantine Will redundant while the Mantle works); **DR 5/epic and evil** (DM 2026-09-25, D7); Commune 1/month in an Earth Node. *Unlocked by: Anvil of the World (Ritual 3) — ✅ active*
 3. **Aura of the Eternal Forge (Su):** after the duel, not on arrival; lasts until dawn the first time, then **1/week**: *divine power* + *protection from evil* to the four; to every dwarf within 30 m also *bless* and one *stone shape*; +4 morale to attacks and saves for dwarves who see Thorik; enemies Will DC 20 or shaken 1 min. The healing half is the portal's healing (Scene 1) and does not stack. *Unlocked by: Ritual 4* (DM 2026-09-20)
-4. **Crown of Protection +3** (**+2** if Thorik gave the deflection at Hella's rite, DM D5) and **Sentience** (warm or cold, by the Gift choice). *Unlocked by: Ritual 4*
+4. **Crown of Protection +3** (**+2** if Thorik gave the deflection at Hella's rite, DM D5) and **Sentience** (warm or cold, by the Gift choice). *Unlocked by: the Ruby's single use — the Crown completes after it, on arrival in 1372 (`ARC07-DEF-5` §3; DM, DEF-4 D6)*
 
 **Canon from the played modules (DM answers of 2026-09-25, audit §7-bis):**
 - **Resonance with Aegis Fang** (both carried by Thorik, as printed on the table's quick reference of 16/01/2026): +2 sacred to all saves; the axe deals +1d6 sacred vs chaotic or evil; *Ancestral Recall* 1/day (disarmed, the axe flies back from 30 m). **No** *Echo of Heroes* (struck from that printout). Vs dragons only the A7 bane on Fauci.
@@ -109,7 +109,7 @@ active; only Topaz gem lit (state.md §0).*
 |---|---|---|---|---|
 | **Immutable Time** | Topaz | Fire Plane ritual | ✅ ACTIVATED | Time travel 1/month from Earth Node; activation = 1 hour of concentration (DM ruling 2026-07-04); costs 1d10 years aging |
 | **True Earth** | Emerald | Earth Plane ritual (Ritual 3, played 2026-07-31) | ✅ ACTIVATED | Wall of Stone / Heal Earth / Controlled Earthquake 1/week (costs 1,000 gp); with the Topaz it steadies the time journey |
-| **Dwarven Might** | Ruby | Ritual 4, after the duel at ≈372 DR | ⬜ enters at Ritual 4, **single use as the travel engine: spent on the return to 1372** (D16); it **stays in the socket, lit, as the Crown's third gem** (DM, DEF-4 D6: it appears on the anvil at the victory, nobody brings it) | none as a power: it is the engine of the journey home. The old «1/week buff, −2 STR» is superseded |
+| **Dwarven Might** | Ruby | Ritual 4, after the duel at ≈372 DR | ⬜ enters at Ritual 4, **single use as the travel engine: spent on the return to 1372** (D16); it **stays in the socket as the Crown's third gem, and the Crown completes after the use** (+3, Sentience) (DM, DEF-4 D6: it appears on the anvil at the victory, nobody brings it) | none as a power: it is the engine of the journey home. The old «1/week buff, −2 STR» is superseded |
 
 ### Legacy Rituals (Sequential)
 

@@ -226,6 +226,30 @@ NORME_SCOPERTE = (
         "sblocca": "una cartella per esecuzione, poi quiz_lettura.py --check conta le parole",
     },
     {
+        "chiave": "chi_si_trova_qui",
+        "norma": "rumblingstone-module-standard, ciclo passo 2 — nelle scene di tempo libero in "
+                 "un luogo abitato, la tabella Chi si trova qui (comando, culto, rimedi, bottega, "
+                 "messaggi, guardia)",
+        "prerequisito": "le scene in un luogo abitato sono marcate come tali",
+        "forma": r"\*\*Chi si trova qui\*\*",
+        "dove": "la forma e' prescritta in module-standard dal 2026-09-27 (ADR-0075); oggi la "
+                "chiede il playtester con P-ABITATO",
+        "rilevatore_pronto": None,
+        "sblocca": "una marca di scena (per esempio `Dove: … (abitato)` nel contratto), poi un "
+                   "controllo C5 in copertura_scene",
+    },
+    {
+        "chiave": "lettura_a_freddo_prima_del_def",
+        "norma": "rumblingstone-module-standard, ciclo completo passi 6-7 — un master e' DEF "
+                 "solo dopo lettore e playtester a freddo senza 🔴 e il quiz a due agenti",
+        "prerequisito": None,
+        "forma": None,
+        "dove": "sono letture di un agente: un cancello su un giudizio sarebbe rumore "
+                "(ADR-0073). Li chiede il piano che tocca il master (ADR-0075)",
+        "rilevatore_pronto": None,
+        "sblocca": None,
+    },
+    {
         "chiave": "due_livelli_di_subordinate",
         "norma": "read-aloud-adulti.md — max due livelli di subordinate",
         "prerequisito": None,

@@ -92,6 +92,11 @@ fissa. Leggi le rubriche, non questo riassunto:
 
 - **Quando**: su ogni master nuovo o riscritto, **prima** del dry-run e prima
   che vada al tavolo. Il dry-run misura il ritmo, le letture misurano i buchi.
+- **Sono obbligatorie per chiamare un master DEF**, in ogni arco e in ogni
+  stand-alone: sono i passi 6 e 7 del ciclo completo di
+  `rumblingstone-module-standard`, dopo le domande del developer (passo 4).
+  Un master che ha passato i cancelli e non le letture è alfa
+  ([ADR-0075](../../plans/adr/ADR-0075-il-ciclo-del-master-vale-per-ogni-piano.md)).
 - **Il cancello**: `python3 scripts/copertura_scene.py --check` gira in CI su
   ogni modifica di canone. Controlla il box di ogni scena, la scheda di chi
   parla e il contratto `**In scena** — Dove: … — Chi: …`. Le letture trovano

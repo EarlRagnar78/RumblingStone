@@ -135,6 +135,11 @@ al Lotto 3, non prima.
 
 ### Lotto 3 — Collaudo al tavolo ⬜ *(gated: serve una sessione vera)*
 
+⚠️ *(2026-09-27, ADR-0075)* Prima del tavolo il Drappo passa i passi 1-2 e 4-7
+del ciclo del master (lotto S3 di PIANO-MASTER-DEF e F5 di PIANO-LETTORE): la
+lettura a freddo e il quiz trovano quello che il DM dovrebbe inventare, il
+tavolo trova il resto. Il passo 3 (componenti) vale se il contratto è attivo.
+
 - [ ] Giocare il Giorno 1 e annotare durata reale, punti morti, prove mai usate
 - [ ] Rispondere alle sei domande aperte di `PLAYTEST-ALFA.md` §5
 - [ ] Ritratti raster: il DM passa i prompt a ComfyUI locale

@@ -159,7 +159,10 @@ caso l'informazione è sparsa e il climax è **cognitivo**.
 ## 5. Coda (gated sul tavolo)
 
 - ⬜ **I5 — Un caso vero**, scritto con la skill, giocato, e i suoi tempi
-  reali riportati in `rumblingstone-playtest`. Senza una sessione vera non
+  reali riportati in `rumblingstone-playtest`. Se il caso sta in un master, lo
+  scrive dentro il ciclo del master di `rumblingstone-module-standard`
+  (ADR-0075): i nodi d'indizio stanno nelle scene col loro contratto, e la
+  lettura a freddo viene prima del tavolo. Senza una sessione vera non
   si sa se un caso da tre strati sta in una serata: **il tetto di Perizia e
   il numero di nodi per caso sono i due numeri da tarare al collaudo.**
 - ⬜ **I6 — `validate_modules.py`**: gate meccanico sui nodi (tre porte

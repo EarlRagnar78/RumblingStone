@@ -96,6 +96,19 @@ Ogni lotto **ancora da fare** dichiara tre cose in intestazione:
 | **G · Giudizio** | decidere cosa è vero, cosa si butta, cosa si sovrappone | **`Opus 5`, sessione principale** | alto-xhigh | il DM riconosce il proprio problema |
 | **K · Canone** | tocca la verità della campagna | **`Opus 5`, mai delegato** | xhigh-max | conferma esplicita del DM |
 
+## 🎭 Un lotto che riscrive contenuto di gioco segue il ciclo del master (ADR-0075)
+
+Se un lotto **scrive, riscrive o rifinisce nello stile** un master, un modulo o
+uno stand-alone, la sua colonna «qualità» non si inventa: sono i sette passi del
+**ciclo completo** di
+[`rumblingstone-module-standard`](../rumblingstone-module-standard/SKILL.md)
+(scene riconoscibili, contratto «In scena», componenti, developer, box al metro,
+lettore e playtester a freddo, quiz). Il lotto li cita per numero e dice quali
+salta, e perché.
+
+Vale per i piani nuovi e per quelli aperti. Un lotto che tocca solo dati
+(`state.md`, statblocchi, mappe) non ci rientra.
+
 ## Prima di **creare** un ADR o un piano — il numero si guarda, non si indovina
 
 ```bash

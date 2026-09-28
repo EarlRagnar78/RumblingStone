@@ -6,7 +6,7 @@
 > due letture a freddo fatte da un agente con una rubrica fissa
 > (`skills/rumblingstone-playtest/references/`).
 >
-> **Stato**: 🟡 F1-F3 e F7-F9 chiusi; restano F4-F5 e le decisioni D5-D8 qui sotto · **Decisore**: DM ·
+> **Stato**: 🟡 F1-F3 e F7-F9 chiusi; restano F4 (allargato al ciclo del master, ADR-0075), F5, F6-a e le decisioni D5-D8 qui sotto · **Decisore**: DM ·
 > **Decisione**: [ADR-0073](adr/ADR-0073-chi-e-dove-sta-scritto-nella-scena.md)
 > **Gate**: `copertura_scene.py --check` verde; su `ARC07-DEF-4` la lettura a
 > freddo ripetuta dopo F3 non trova più rilievi 🔴 nelle Scene 5-9
@@ -147,12 +147,40 @@ rubrica del playtester ha preso le domande del developer
 sente il rumore?») sono nate dai suoi difetti. Una calibrazione nuova si fa su
 un modulo che la rubrica non ha mai visto.
 
-### F4 · Gli altri master di ARC-07 — ⬜
+### F4 · Gli altri master di ARC-07 — ⬜ · allargato il 2026-09-27 (ADR-0075)
+
+`[engine: Opus, sessione principale · effort: xhigh · qualità: i sette passi del ciclo del master, per ogni DEF]` — **K** per DEF-5 (si gioca subito), **C** per gli altri
+
+Il DM, il 2026-09-27: *«l'arco 07 è davvero completo anche con le nuove
+regole? ci hai fatto una passata anche con developer e playtester?»*. No.
+Le quattro regole nuove (contratto, componenti, developer, lettura a freddo)
+sono state applicate a **DEF-4 soltanto**. Misura dello stesso giorno:
+
+| Master | Righe | Scene `### SCENA` | Contratto | Apparato | Box > 12 | Developer | Lettura a freddo |
+|---|---:|---:|---|---|---:|---:|---|
+| DEF-1 | 2.293 | 0 | no | no | 6 | 0 (non vede scene) | no |
+| DEF-2 | 939 | 0 | no | no | 1 | 2 | no |
+| DEF-3 | 1.306 | 0 | no | no | 0 | 2 | no |
+| DEF-5 | 516 | 0 | no | no | 1 | 1 | no |
+
+Il lotto è quindi il **ciclo completo** di `rumblingstone-module-standard`
+(sette passi) su ognuno dei quattro, non il solo contratto. **Va prima di A3 di
+PIANO-MASTER-DEF**, perché ARC-08 comincia dove finisce DEF-5.
 
 - [ ] DEF-5 per primo, perché si gioca subito dopo DEF-4: Madre Dana, Re Thorek,
-      §5 senza box, contratto
+      §5 senza box, la Tempra; qui confluiscono anche i read-aloud di S4 di
+      MESTIERE-BANCHI (DEF-5 ne ha quattro in 516 righe). ⚠️ Una scena già
+      letta al tavolo non si riscrive (D3 di MESTIERE-BANCHI)
 - [ ] DEF-1 (Varis), DEF-2, DEF-3: i residui dichiarati, prima che un gruppo
-      nuovo li riprenda
+      nuovo li riprenda. Sono **già giocati** (`copertura-scene.json`): si
+      convertono nella forma (titoli `### SCENA`, contratto, componenti, box al
+      metro) e non in cosa succede, che per questo gruppo è già canone
+- [ ] per ognuno, alla fine: lettore e playtester a freddo senza 🔴, quiz con la
+      chiave approvata dal DM, e la riga tolta da `plans/copertura-scene.json`
+- [ ] **DEF-5 è la prova cieca di `P-ABITATO`** (ADR-0075, «La prova contro il
+      tavolo»): il playtester legge DEF-5 **prima** che gli si aggiunga la
+      tabella *Chi si trova qui*, e si conta se trova da solo i ruoli che
+      mancano. Se non li trova, la domanda va riscritta
 
 ### F5 · Gli stand-alone — ⬜
 
@@ -168,6 +196,16 @@ Nascono sotto il cancello: un `ARC*-DEF-*` che `copertura-scene.json` non
 elenca prende il profilo severo, contratto compreso. Si pianificano in
 [PIANO-MASTER-DEF-ARC08-ARC09-STANDALONE](PIANO-MASTER-DEF-ARC08-ARC09-STANDALONE.md),
 aperto il 2026-09-27.
+
+- [ ] 🐛 **F6-a · il cancello che non vede un master senza scene**
+      `[engine: Sonnet · effort: medio · qualità: un test in cui un ARC*-DEF-* senza «### SCENA» fa uscire 1 --check]` — **C**.
+      Trovato il 2026-09-27: `copertura_scene` e la parte per scene di
+      `domande_developer` riconoscono una scena solo dal titolo `### SCENA`. Un
+      master di prova senza quel titolo, con un PNG che parla senza scheda e
+      nessun box, ha avuto **zero rilievi**. «I master nuovi nascono sotto il
+      cancello» era vero solo per chi usava il titolo giusto. Rimedio: una
+      regola `C0 · nessuna scena` per ogni file sotto cancello, che usa il titolo di scena del suo profilo (`### SCENA` per i master, `## §N` per DEF-5 e gli stand-alone). **Va prima
+      di S1 di PIANO-MASTER-DEF** (ADR-0075)
 
 ### F7 · Il quiz a due agenti ✅ (2026-09-26)
 
@@ -244,6 +282,8 @@ manuali, così può misurare e segnare il problema, se esiste nell'avventura»*.
 | D6 | F3 | **Da dove viene il Rubino, e chi lo custodisce nel 372?** (lettore a freddo, seconda lettura, L #34 🔴). Il modulo lo fa comparire sull'incudine senza dire da dove |
 | D7 | F3 | **La fortezza «giovane, appena eretta» e Balvar che ne è stato il runaio** prima dei bisnonni dei nani di oggi: una delle due cose va cambiata. È aperta anche in `PIANO-CHIUSURA-DEI-MILLE-ANNI` M7 |
 | D8 | F5 | **Il Drappo vuole un Riflessi e una Volontà?** `domande_developer` non ne trova nessuno sull'intero modulo. Proposta: il Riflessi sì (la caduta nella curva), la Volontà solo se il DM la vuole in un modulo d'intrigo |
+| D9 | F4 | **Nei master già giocati (DEF-1, DEF-2, DEF-3) i box oltre 12 righe si spezzano?** Il passo 5 del ciclo li vuole ≤ 12; DEF-1 ne ha 6, DEF-2 uno. Spezzarli in battute non cambia una parola, ma tocca prosa già letta ai giocatori, ed è la D3 ancora aperta di MESTIERE-BANCHI. Proposta: sì, solo spezzare, come il box di Balvar in DEF-4; mai riscrivere cosa dicono |
+| D10 | F4 | **Il quiz a due agenti (passo 7) va fatto su ogni master?** Ogni quiz chiede una chiave approvata dal DM: con ARC-07, ARC-08, ARC-09 e gli stand-alone sono una ventina di chiavi. Proposta: sì sui master nuovi e su quelli riscritti nella prosa; no sulle conversioni di sola forma dei master già giocati (DEF-1, 2, 3), dove bastano lettore e playtester. Saltarlo lì è una decisione del DM, e va scritta (ADR-0075) |
 
 ## 5 · Validazione
 

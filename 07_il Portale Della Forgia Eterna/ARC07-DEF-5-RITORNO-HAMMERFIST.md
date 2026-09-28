@@ -87,7 +87,7 @@ stato d'arco); la mappa **CM-1**; l'handout **«Lo Stato dei Custodi»** (§9).
 | Nemici nella caverna (~30 orchi) | **Volontà CD 25** vs Aura Corona+Cuore o **scossi 1d6 round**; ~⅔ vanno in **panico** e fuggono |
 
 ### Lo stato dell'ARC-07 in uscita (canone — `state.md §1/§6`)
-- **Corona di Adamantio**: **3 gemme accese** (Topazio/Tempo, Smeraldo/Terra, Rubino/Leggenda). Il Rubino è ora **single-use SPESO** (motore del ritorno).
+- **Corona di Adamantio**: **3 gemme accese** (Topazio/Tempo, Smeraldo/Terra, Rubino/Leggenda). Il Rubino è **speso come motore del ritorno** (uso singolo), ma **resta nell'incasso, acceso, come terza gemma della Corona** (DM, DEF-4 D6).
 - **Cuore di Moradin**: **SPESO** (resurrezione).
 - **Thorik**: **−4 DES / +2 COS / +4 CAR** permanenti; **−1 CA** se ha donato il +2 di deflessione al rito. **Hella**: viva (Ibrido Treant, Collana, Durik). **Bracieri** completi. **Ring** riforgiato.
 - **Carry-over B4** verso Fauci: registrato al `DEF-4` (esito Skullcrusher + N ferite).

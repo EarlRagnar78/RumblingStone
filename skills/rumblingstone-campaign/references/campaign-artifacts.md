@@ -109,7 +109,7 @@ active; only Topaz gem lit (state.md §0).*
 |---|---|---|---|---|
 | **Immutable Time** | Topaz | Fire Plane ritual | ✅ ACTIVATED | Time travel 1/month from Earth Node; activation = 1 hour of concentration (DM ruling 2026-07-04); costs 1d10 years aging |
 | **True Earth** | Emerald | Earth Plane ritual (Ritual 3, played 2026-07-31) | ✅ ACTIVATED | Wall of Stone / Heal Earth / Controlled Earthquake 1/week (costs 1,000 gp); with the Topaz it steadies the time journey |
-| **Dwarven Might** | Ruby | Ritual 4, after the duel at ≈372 DR | ⬜ enters at Ritual 4, **single use: spent on the return to 1372** (D16) | none as a power: it is the engine of the journey home. The old «1/week buff, −2 STR» is superseded |
+| **Dwarven Might** | Ruby | Ritual 4, after the duel at ≈372 DR | ⬜ enters at Ritual 4, **single use as the travel engine: spent on the return to 1372** (D16); it **stays in the socket, lit, as the Crown's third gem** (DM, DEF-4 D6: it appears on the anvil at the victory, nobody brings it) | none as a power: it is the engine of the journey home. The old «1/week buff, −2 STR» is superseded |
 
 ### Legacy Rituals (Sequential)
 

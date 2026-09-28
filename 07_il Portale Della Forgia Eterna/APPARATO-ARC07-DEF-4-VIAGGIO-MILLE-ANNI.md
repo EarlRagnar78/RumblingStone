@@ -84,6 +84,9 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 10 | Disattivare o Artigianato | 20 |
 | SCENA 11 | Cala dall'alto (Presenza Terrificante | 23 |
 | SCENA 11 | sul gruppo più fitto (Riflessi | 26 |
+| SCENA 11 | prova di Forza | 25 |
+| SCENA 11 | Forza | 10 |
+| SCENA 11 | Forza | 25 |
 | SCENA 11 | 25d12+125 (287 pf), soffio 16d4 | 27 |
 | SCENA 11 | Presenza | 24 |
 | SCENA 12 | Volontà | 20 |
@@ -116,7 +119,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 10 | Il camminamento è largo quanto un tavolo da | Salvatore lead | 7 |
 | SCENA 11 | il cortile | Salvatore lead | 11 |
 | SCENA 11 | «SANGUE ANTICO. ARTEFICE DI LACRIME.»* — *e per un istante la Corona t | — | 3 |
-| SCENA 12 | l'incudine | LotR lead | 5 |
+| SCENA 12 | l'incudine | LotR lead | 6 |
 | SCENA 12 | l'incasso che si chiude | Salvatore | 5 |
 | SCENA 12 | Want* è la montagna, non il portatore: ha accettato tre gemme e un peg | — | 2 |
 | SCENA 12 | l'ascia prende la parola | Mercer lead | 4 |

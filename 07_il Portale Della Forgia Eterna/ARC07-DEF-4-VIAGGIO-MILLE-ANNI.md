@@ -690,7 +690,8 @@ tacca è mezz'ora scarsa di gioco reale.
 | Attraversare il mare di tende (Scena 6, skill challenge) | **2** |
 | Ogni **fallimento** nello skill challenge | **+1** |
 | Parlare con Balvar invece di colpire subito (Scena 7) | **1** |
-| Tornare a piedi dalla tenda alle mura: ogni blocco **fallito** (Scena 8) | **+1** |
+| Tornare a piedi dalla tenda alle mura (Scena 8) `[CANONE — DM, D22]` | **1** |
+| … e ogni blocco **fallito** del ritorno | **+1** |
 
 **Quando le tacche finiscono, sorge il sole.** Non è una punizione: è la Scena 10
 che comincia, con i PG dove sono in quel momento.
@@ -1300,7 +1301,7 @@ usa due cose diverse, e tutte e due si possono fare:
 |---|---|---|
 | **La soglia** | *epurare invisibilità*: chiunque sia invisibile entro 19,5 m diventa visibile, per 13 minuti. **Non fa rumore** | una delle sue **quattro rune incise** (scheda nel Bestiario, `[Private source]`); la quarta è la Catena del drago |
 | **Il telo sopra il seggio** | scoppio **sonoro**, 5d8, Riflessi CD 18 dimezza. Il boato sveglia la tenda ed è l'allarme | *glifo di interdizione*, SRD |
-| **La custodia del corno** | lo stesso, per chi prova a rubarlo | *glifo di interdizione*, SRD |
+| **La custodia del corno** `[CANONE — DM, D13]` | il corno sta in una custodia di cuoio e ferro, chiusa da un glifo e **incatenata al polso di Grask**. Chi la apre senza la parola fa scattare lo stesso scoppio; chi la tira, sveglia Grask | *glifo di interdizione*, SRD |
 
 - **Perché la soglia è una runa e non un glifo.** Il glifo dell'SRD accetta solo
   incantesimi che fanno danno, ed *epurare* non ne fa. Le rune incise di Balvar
@@ -1338,7 +1339,7 @@ e il drago arriva sull'assalto.
 
 | Chi | Com'è | Come parla |
 |---|---|---|
-| **Grask, l'araldo** `[CANONE — DM 2026-09-26]` | hobgoblin di quindici anni, magro, con il corno legato al polso da una cinghia perché una volta l'ha perso e l'hanno frustato. Dorme seduto, fuori dalla tenda, e si sveglia al primo grido. Vuole una cosa sola: non perderlo più. Statistiche: hobgoblin combattente 1 dell'SRD, 6 pf, CA 15, Ascoltare e Osservare +2, e −10 ad Ascoltare finché dorme (SRD). Avvicinarlo: Muoversi Silenziosamente contro il suo Ascoltare | non parla: soffia |
+| **Grask, l'araldo** `[CANONE — DM 2026-09-26]` | hobgoblin di quindici anni, magro. Il corno sta nella custodia col glifo, e la custodia è **incatenata al suo polso** da quando una volta l'ha perso e l'hanno frustato `[CANONE — DM, D13]`. Dorme seduto, fuori dalla tenda, col braccio sopra la custodia, e si sveglia al primo grido. **Se qualcuno tocca la custodia o la catena si sveglia comunque**, anche se dorme: niente prova, è la catena che tira. Veglia nella prima metà della notte e dorme nella seconda `[INFERRED — needs DM confirmation]`: prima del cambio è sveglio, dopo è a −10. Vuole una cosa sola: non perderlo più. Statistiche: hobgoblin combattente 1 dell'SRD, 6 pf, CA 15, Ascoltare e Osservare +2, e −10 ad Ascoltare finché dorme (SRD). Avvicinarlo: Muoversi Silenziosamente contro il suo Ascoltare | non parla: soffia |
 | la pattuglia di quattro orchi | quattro orchi con le lance in spalla e una torcia sola, che tengono bassa per non abbagliarsi | litigano in orchesco su chi ha rubato il rancio |
 | i cavalieri dei lupi | goblin piccoli e magri, legati alla sella con una cinghia. I worg sono grigi, col collare di cuoio chiodato, e annusano il vento prima di camminare | il worg non ringhia finché non è sicuro. Poi non smette, e il goblin ride |
 | le vedette goblin | due per carro, seduti sui sacchi di farina, avvolti nella stessa coperta | si danno di gomito a ogni rumore, e il secondo strilla sempre prima del primo |
@@ -1767,7 +1768,8 @@ giusta» e il tavolo la cerca invece di giocare. Due che costano in modi diversi
 **Il ritorno a piedi** `[INFERRED — needs DM confirmation]`. Dalla tenda alle
 mura si rigiocano i **cinque blocchi** della Scena 6, con le stesse regole.
 L'invisibilità del re a questo punto è finita, quindi si tira **Nascondersi
-CD 22**. Ogni blocco fallito aggiunge una tacca all'orologio. Se il corno ha
+CD 22**. Il ritorno costa **una tacca** di suo `[CANONE — DM, D22]`, e ogni
+blocco fallito ne aggiunge un'altra. Se il corno ha
 suonato, la CD sale di **+4** e il drago è in aria (Scena 6). Chi torna in volo
 segue «Il ritorno» della variante dall'alto. Vatore (Scena 9) si incontra a
 metà strada.
@@ -1989,7 +1991,8 @@ dal campo, PG liberati dopo la cattura) `[INFERRED — needs DM confirmation]`.
 M7-B non serve: si gioca sulla spianata davanti alla porta, aperta e senza
 copertura, con le carcasse degli arieti come unico riparo. I nani sono sulle
 mura, a 18 m, e le balestre tirano da lì. La fucina, la cisterna e le campane
-della tabella del cortile qui sotto non ci sono; le corde degli arieti sì.
+della tabella del cortile qui sotto non ci sono; le corde sì, quelle degli arieti
+rovesciati, con la stessa prova.
 
 > **Read-aloud (Salvatore lead) — il cortile.** *Prima arriva il freddo. L'ombra passa e
 > l'aria del cortile perde dieci gradi in un respiro, e la pelle lo sa prima
@@ -2112,7 +2115,7 @@ cambia davvero.
 
 | Nel cortile c'è | Se qualcuno lo usa |
 |---|---|
-| **Le corde degli arieti**, tese e bagnate | tirarle mentre è basso: Lotta contrapposta con **+4** per la leva. Non lo atterra: gli **inchioda un'ala a terra per un round**, ed è tutto quello che serve |
+| **Le corde delle gru sulle mura**, tese e bagnate `[INFERRED — needs DM confirmation]` | tirarle mentre è basso: prova di **Forza CD 25**, e chi aiuta dà **+2** a testa (aiutare, SRD: Forza CD 10). Non lo atterra: gli **inchioda un'ala a terra per un round**, ed è tutto quello che serve `[CANONE — DM, D18]` |
 | **La fucina originale**, accesa da stanotte | ci si può spingere dentro qualcosa. Il drago è **immune all'acido, non al calore della forgia**: 4d6 e — più utile — il fumo gli toglie l'olfatto per 1d4 round |
 | **La cisterna sotto il pozzo** | l'acido colpisce l'acqua e **ribolle**: nuvola che oscura, −4 agli attacchi di tutti. Danneggia i PG quanto lui. È una **scelta**, non un trucco |
 | **Le campane della torre nord** | il suono nell'aria fredda copre il battito d'ali: chi le suona toglie al drago il vantaggio del suono in picchiata (e si fa **bersagliare**) |
@@ -2127,8 +2130,8 @@ che non volo?»*. La risposta non è «aspetti». Tre cose, tutte SRD:
   volta che morde o sferza. Chi prepara l'azione *«colpisco quando scende»*
   colpisce **prima** che risalga. È il gioco di Thorik e di Tordek, e il colpo
   preparato di Tordek può essere il suo Pugno Stordente.
-- **Le corde degli arieti** (la tabella qui sopra). Chi resta a terra è chi le
-  tira: una Lotta con +4 per la leva, e un'ala inchiodata per un round. È il
+- **Le corde delle gru** (la tabella qui sopra). Chi resta a terra è chi le
+  tira: Forza CD 25, gli altri aiutano, e un'ala inchiodata per un round. È il
   momento in cui il drago smette di essere in cielo per tutti.
 - **Le balestre delle mura.** Sul camminamento ci sono le balestre pesanti dei
   difensori `[INFERRED — needs DM confirmation]`: 1d10, incremento 36 m, un
@@ -2198,19 +2201,18 @@ che l'incontro ha appena scelto.
 
 #### La scena, in tre momenti
 
-> ✏️ *Il nano molto vecchio del box qui sotto è **Thorgrim**: è l'unico vecchio
-> che i PG conoscono qui, e ha appena tenuto in mano la loro ascia. Il box non lo
-> nomina: se il tavolo chiede chi è, il nome lo dà il DM.*
->
-> ✏️ *Se il tavolo **non ha incontrato Thorgrim** al consiglio, il vecchio è
-> **Re Thorek**. E se i giocatori si sono convinti che Thorgrim sia uno di loro,
-> nessuno qui li smentisce. `[INFERRED — needs DM confirmation]`*
+> ✏️ *Da dove viene il Rubino `[CANONE — DM, D6]`: **nessuno lo porta**. Appare
+> sull'incudine nel momento della vittoria, come se la Forgia l'avesse battuto da
+> sola. Nessun nano del 372 sa spiegarlo, e nessuno ci prova: Thorgrim e Re
+> Thorek guardano come tutti gli altri. Se il tavolo chiede «chi l'ha messo lì?»,
+> la risposta vera è «nessuno», e il silenzio del cortile la conferma.*
 
 > **Read-aloud (LotR lead) — l'incudine.** *Quello che chiamano altare è
 > un'incudine, e si vede: il piano è segnato da mille anni di martelli. Intorno
-> non c'è un tempio, c'è un cortile pieno di feriti. Un nano molto vecchio
-> appoggia sull'incudine una pietra rossa grande come una noce, e si tira
-> indietro di un passo. Nessuno spiega niente. Tutti guardano la corona.*
+> non c'è un tempio, c'è un cortile pieno di feriti. Nessuno l'ha toccata. Eppure
+> sul ferro, dove un attimo fa non c'era niente, adesso c'è una pietra rossa
+> grande come una noce, ancora calda come appena uscita dal fuoco. I nani più
+> vicini fanno un passo indietro. Nessuno spiega niente. Tutti guardano la corona.*
 
 **Momento 1 — la pietra entra.** Il Rubino trova il suo incasso, quello che per
 tutto l'arco non rifletteva la luce. Non serve un tiro: **la Corona lo prende da
@@ -2259,8 +2261,11 @@ di scheda)*<!-- /storico -->. È una scena, non una riga di scheda: l'ascia rest
 
 #### ⚠️ Due cose per il DM, e una da decidere
 
-- **Il Rubino è a uso singolo e si spende nel ritorno** (`DEF-5` §3). Non
-  è un potere nuovo in tasca: è il motore del viaggio di casa.
+- **Il Rubino si spende nel ritorno, ma non se ne va** `[CANONE — DM, D6]`
+  (`DEF-5` §3). Come **motore del viaggio** è a uso singolo: riporta i PG al
+  1372, poi per quella funzione è spento. Come **pietra della Corona** resta
+  nell'incasso ed è accesa: è la terza gemma, quella che porta la Corona a +3 e
+  la sveglia. Non è un potere nuovo in tasca, e non è un buco che si riapre.
 - **Non ci sono altri costi qui** — né TS, né pegni, né punti caratteristica.
 
 #### Momento 4 — l'Aura della Forgia Eterna `[CANONE — DM 2026-09-20]`

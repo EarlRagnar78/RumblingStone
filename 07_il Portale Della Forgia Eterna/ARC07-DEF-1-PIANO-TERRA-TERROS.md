@@ -26,8 +26,8 @@
 >
 > **Stato al tavolo**: ✅ **GIOCATO** dal gruppo di oggi, fino al rito dello
 > Smeraldo compreso (luglio 2026): cosa è successo lo dicono i blocchi
-> «✅ CANONE GIOCATO» di ogni scena. Un **gruppo nuovo** (`dm.py gruppo nuovo`)
-> parte dalla Scena 1, e per lui quei blocchi non valgono: le scelte sono aperte.
+> «✅ CANONE GIOCATO» di ogni scena. Un **gruppo nuovo** parte dalla
+> Scena 1, e per lui quei blocchi non valgono: le scelte sono aperte.
 > **Ordine di gioco**: Terra (questo) → Resurrezione di Hella (`DEF-3`) →
 > Viaggio a 1.000 anni fa (`DEF-4`) → Ritorno a Hammerfist (`DEF-5`).
 > **Canone a monte**: il viaggio dello spirito di Hella è **concluso e
@@ -817,7 +817,7 @@ mercato di Varis "Seta-Argento", piantata lungo la linea di forza che porta al
 Tempio — dove passano cose preziose, prima o poi passa un compratore. È un
 **Seme-Mercato**.
 
-**Scheda d'entrata — Varis «Seta-Argento», la voce nella gemma** *(statistiche: `Bestiario/png/Varis_Seta_Argento/`)*
+**Scheda d'entrata — Varis «Seta-Argento», la voce nella gemma** *(statistiche: la sua scheda nel Bestiario)*
 
 | | |
 |---|---|

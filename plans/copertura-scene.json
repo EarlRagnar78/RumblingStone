@@ -45,14 +45,12 @@
     },
     {
       "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
-      "perche": "prossimo master al tavolo dopo DEF-4: il contratto entra nel lotto F4",
+      "perche": "contratto applicato il 2026-09-30 (PIANO-LETTORE-E-PLAYTESTER F4): tre scene",
       "regole": [
         "C1",
         "C2"
       ],
-      "contratto": false,
-      "scena": "^## §\\d+(?:-\\w+)?\\s+—",
-      "escludi": "(?i)QUICK|HIGHLIGHT|ZONE|Atlante|REGOLE|sistema definitivo|CONTINGENZE|ECHO|ECHI|AVANZAMENTO|PONTE|HANDOUT|LA FORGIA RICORDA"
+      "contratto": true
     },
     {
       "file": "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
@@ -172,34 +170,6 @@
       "perche": "🔴 da verificare nel lotto dei master ARC-07 (F4): sezione giocabile senza read-aloud"
     },
     {
-      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
-      "regola": "C1",
-      "scena": "§5 — LA PULIZIA (opzionale) → PASSAGGIO ALL'ARC-08 `[FAST-PLAY / COMBATTIMENTO COMPLETO]`",
-      "voce": "nessun box read-aloud",
-      "perche": "🔴 da verificare nel lotto dei master ARC-07 (F4): sezione giocabile senza read-aloud"
-    },
-    {
-      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
-      "regola": "C2",
-      "scena": "§5 — LA PULIZIA (opzionale) → PASSAGGIO ALL'ARC-08 `[FAST-PLAY / COMBATTIMENTO COMPLETO]`",
-      "voce": "AEGIS FANG",
-      "perche": "artefatto che parla: la voce sta nella sua pagina in PG/Artefatti"
-    },
-    {
-      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
-      "regola": "C2",
-      "scena": "§5 — LA PULIZIA (opzionale) → PASSAGGIO ALL'ARC-08 `[FAST-PLAY / COMBATTIMENTO COMPLETO]`",
-      "voce": "MADRE DANA",
-      "perche": "🔴 lacuna vera: Madre Dana ha la voce in Bestiario/png ma non la scheda d'entrata in DEF-5. Lotto dei master ARC-07 (PIANO-LETTORE-E-PLAYTESTER F4)"
-    },
-    {
-      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
-      "regola": "C2",
-      "scena": "§5 — LA PULIZIA (opzionale) → PASSAGGIO ALL'ARC-08 `[FAST-PLAY / COMBATTIMENTO COMPLETO]`",
-      "voce": "RE THOREK",
-      "perche": "🔴 da decidere: in DEF-5 parla un Re Thorek del 1372; la scheda di Thorek I sta in DEF-4 Scena 4. Lotto F4"
-    },
-    {
       "file": "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
       "regola": "C1",
       "scena": "§2 · Il rione al mattino — sei micro-scene",
@@ -268,6 +238,13 @@
       "scena": "Atto II — L'abbazia di giorno",
       "voce": "nessun box read-aloud",
       "perche": "l'Atto II è una visita a stanze numerate, descritte nella Tavola II e nelle note: il box per stanza entra col lotto degli stand-alone (F5)"
+    },
+    {
+      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+      "regola": "C2",
+      "scena": "SCENA 3",
+      "voce": "AEGIS FANG",
+      "perche": "artefatto che parla: la voce sta nella sua pagina in PG/Artefatti, e la riga fra le Comparse della scena"
     }
   ]
 }

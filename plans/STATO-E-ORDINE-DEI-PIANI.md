@@ -21,7 +21,7 @@
 > diventa ▶. Le sezioni §6-§10 restano come diario (il perché di ogni scelta)
 > e non si aggiornano più.
 
-**Ultimo aggiornamento**: 2026-09-28, sul ramo `claude/def4-prossima-serata` (PR #183): DEF-4 pronto per la prossima serata, che riprende dalla Scena 6. Cosa è fatto e cosa resta sta nelle righe marcate *(PR #183)* qui sotto; il dettaglio è in [LETTORE-PLAYTESTER](PIANO-LETTORE-E-PLAYTESTER.md) F3-bis. Prima: il 2026-09-25, dopo il merge delle #170-#174 (`eef36a9`) e della #176, e i lotti 2f e 2g di CICLO-SESSIONE. Cosa ha chiuso la #169 e cosa ha lasciato aperto: §11. La storia delle scelte fuori stampa e il conto delle marcature aperte: §12.
+**Ultimo aggiornamento**: 2026-09-30, dopo il merge della #182 (`c80af16`), della #183 (`ac97197`) e della #184. **La fotografia della tornata, con i numeri, i piani aperti e le decisioni per piano, è il §14.** DEF-4 pronto per la prossima serata, ARC-07 al ciclo del master con DEF-5 ai passi 1-6, e la prova cieca di `P-ABITATO` riuscita. Le righe marcate *(PR #183)* e *(30 settembre)* qui sotto dicono cosa è fatto e cosa resta; il dettaglio è in [LETTORE-PLAYTESTER](PIANO-LETTORE-E-PLAYTESTER.md) F3-bis e F4. Prima: il 2026-09-25, dopo il merge delle #170-#174 (`eef36a9`) e della #176, e i lotti 2f e 2g di CICLO-SESSIONE. Cosa ha chiuso la #169 e cosa ha lasciato aperto: §11. La storia delle scelte fuori stampa e il conto delle marcature aperte: §12.
 
 | | Cosa | Classe | Dove sta il dettaglio | Da dove si parte |
 |---|---|---|---|---|
@@ -73,8 +73,8 @@
 | 🙋 | **Al DM**: cancellare i sei rami di §9.2 (le sessioni d'agente non possono) | | §9.2 | il comando è lì, e tocca un ramo solo se la testa è ancora quella misurata |
 | ✅ | **I master DEF di ARC-08 e ARC-09, le decisioni e la divisione**: D1-D3 decise, 4 master per ARC-08 e 12 per ARC-09 approvati (A1), misure di partenza (A2). *(2026-09-27)* | G + R | [MASTER-DEF](PIANO-MASTER-DEF-ARC08-ARC09-STANDALONE.md) A1-A2 · PR #182 | fatto |
 | ✅ | **Il ciclo del master vale per ogni piano** ([ADR-0075](adr/ADR-0075-il-ciclo-del-master-vale-per-ogni-piano.md)): sette passi in `module-standard`, e ogni piano che riscrive contenuto li cita. *(2026-09-27)* | G3 | MASTER-DEF §1-bis · PR #182 | fatto |
-| ▶ | **ARC-07 al ciclo completo**: le regole nuove erano applicate a DEF-4 soltanto. DEF-5 per primo, poi DEF-1, 2, 3 nella forma | K / C | [LETTORE](PIANO-LETTORE-E-PLAYTESTER.md) F4 | agente: `fase1.py` su DEF-5, poi i sette passi |
-| ⬜ | **Il cancello che non vede un master senza `### SCENA`** (zero scene = zero rilievi) | C | LETTORE F6-a | agente: la regola C0 e il test che la fa mordere; prima di S1 di MASTER-DEF |
+| ▶ | **ARC-07 al ciclo completo** *(30 settembre)*: DEF-5 ai passi 1-6 (tre scene col contratto, schede di Re Thorek e Madre Dana, box al metro, letture a freddo prima e dopo). Restano il passo 7 di DEF-5 (il quiz, D10) e DEF-1, 2, 3 nella forma | K / C | [LETTORE](PIANO-LETTORE-E-PLAYTESTER.md) F4 | agente: DEF-1 (Varis), poi DEF-2 e DEF-3, `fase1.py` prima di ognuno; una scena già letta al tavolo si converte nella forma, non si riscrive |
+| ✅ | **Il cancello che non vede un master senza `### SCENA`** (zero scene = zero rilievi): la regola C0 di `copertura_scene` | C | LETTORE F6-a · #183 | fatto |
 | ⬜ | **A3 di MASTER-DEF**: il canone di ARC-08 contro lo stato del tavolo, dopo F4 | K | MASTER-DEF A3 | agente, poi conferma del DM |
 | ✅ | **DEF-4 pronto per la prossima serata** *(PR #183)*: Skullcrusher adulto maturo SRD; Zog'tar Barbaro 11 / Guerriero 4 con l'Ira Superiore e il `Boost log:`; il campo sorvegliato con i numeri SRD; Balvar con le sue abilità; il banco della Scena 5 e la notte già giocata messa in conto; le rune di Zeth; le tacche (3 segnate, il sonno a 6, il ritorno a piedi a 1); il Rubino che appare sull'incudine, si usa una volta sola per il ritorno, e dopo l'uso completa la Corona (+3 e Senzienza in DEF-5 §3); il corno nella custodia incatenata a Grask; le corde a Forza CD 25 | K | LETTORE F3-bis · D5, D6, D11, D13, D18, D20, D22, D24 | fatto: terza lettura cieca lettore 36 → 33 rilievi (🔴 2 → 1, poi chiuso con D22), playtester 23 → 26 (🔴 2 → 0) |
 | ✅ | **Niente riposi brevi e lunghi** in 3.5 e PF1e *(PR #183)*: sei righe corrette in DEF-1, 2, 4; il controllo `RIPOSO_5E` in `validate_modules` e `validate_standalone`; la tabella del riposo SRD in `dnd-35-srd` | C + G3 | LETTORE F3-bis | fatto |
@@ -83,7 +83,9 @@
 | 🙋 | **Al DM: le 44 marcature `[INFERRED]` di DEF-4**, fra cui il livello e il prezzo delle rune di Zeth, il +15 di Kettra, i tetti del forziere e delle gemme, le ore di sonno di Grask, le gru delle mura, i talenti e gli incantesimi di Skullcrusher | K | `ARC07-DEF-4` (cercare `INFERRED`) | DM: confermare in blocco o correggere; l'agente toglie la marcatura |
 | 🙋 | **Al DM: D26 e D27** *(PR #183)*: il giro lettore, playtester e developer come cancello in CI (proposta scritta), e il messaggio del 27 settembre rimasto a metà | G | §4 | DM: sì o no a D26; il resto di D27 |
 | ⬜ | **Il lotto mappe D28**: sezione a livelli di Hammerfist nel 372 (più si scende, più le sale sono ampie, come Erebor) e griglie da 1,5 m di fucina, gallerie, alchimista, cappella e armeria, coerenti con le Scene 4-5 già giocate, con le varianti del 1372 | C | LETTORE F3-bis | agente con `rumblingstone-mapmaking`; prima `fase1.py` sulle mappe M7 di ARC-07 |
-| ⬜ | **La quarta lettura cieca di DEF-4**, sul testo con le risposte del 28 settembre | C | LETTORE F3-bis · `esperimenti/def4-seconda-serata/` | agente, dal 30 settembre (limite degli agenti): stessa rubrica, agenti nuovi, tabella prima/dopo |
+| ✅ | **La quarta lettura cieca di DEF-4** *(30 settembre)*: lettore 45 rilievi (🔴 1, nuovo: la profezia, D33), playtester 29 (🔴 0). Sei 🟠 corretti subito, tre dei quali lasciati dalla D6 | C | LETTORE F3-bis · `esperimenti/def4-seconda-serata/lettura-quarta-*` | fatto |
+| ✅ | **La prova cieca di `P-ABITATO`** *(30 settembre)*: il playtester, su DEF-5 senza la tabella *Chi si trova qui*, trova da solo il buco. La domanda funziona e resta com'è | C | LETTORE F4 · `esperimenti/def5-ciclo/` | fatto |
+| 🙋 | **Al DM: D31, D32, D33** *(30 settembre)*: l'orologio di DEF-5 che si contraddice (🔴 di tutte e due le letture), il Cuore di Moradin speso e usato come ancora, la profezia che le Cronache dicono già (🔴 della quarta lettura di DEF-4). Ognuna ha la sua proposta | K | §4 · LETTORE «Decisioni aperte» | DM: rispondere col numero |
 | 🙋 | **Al DM: `state.md` e il Rubino**: §6 lo dà «speso»; ora si usa una volta sola, resta nell'incasso, e dopo l'uso la Corona è intera, +3 e Senzienza (D6). E il log delle serate del 25-27 settembre | K | `campaign/state.md` §6 · `campaign/sessions/` | `dm.py session end` sul ramo del gruppo, mai su `main` (ADR-0007) |
 
 Le decisioni aperte al DM sono in §4, generata da `decisioni_dm.py`.
@@ -294,7 +296,7 @@ riuscita non si sa descrivere è un lotto tagliato male.
 
 <!-- auto:begin key=decisioni-dm -->
 
-**31 aperte** · 80 chiuse — generato da `scripts/decisioni_dm.py --emit`, non si scrive a mano.
+**34 aperte** · 80 chiuse — generato da `scripts/decisioni_dm.py --emit`, non si scrive a mano.
 
 | # | Piano | Ambito | Domanda |
 |---|---|---|---|
@@ -321,6 +323,9 @@ riuscita non si sa descrivere è un lotto tagliato male.
 | **D23** | `LETTORE-PLAYTESTER` | F3-bis | **Un Balvar recuperato può sciogliere lui la Catena?** È la prima cosa che un tavolo gli chiede. Oggi il modulo dice solo che spiega dove sta la runa e come si spezza. Proposta: può, ma solo toccando la scaglia, cioè nel cortile durante il duello, e lo sa |
 | **D29** | `LETTORE-PLAYTESTER` | F3-bis | **Dopo un allarme di notte, il drago dove va?** È la metà di D13 rimasta aperta: il testo dice «se ne va», senza scegliere fra le colline e il campo. Proposta: sulle colline, come ogni notte, e torna solo al corno successivo; così un allarme brucia il corno e non porta il drago sopra la tenda |
 | **D30** | `LETTORE-PLAYTESTER` | F3-bis | **Le rune di Zeth sui camminamenti e nelle gallerie hanno un effetto meccanico la prossima serata, o sono colore?** È la (b) di D28, che la forma della mappa non chiude. Proposta: colore nel 372 (Zeth scrive in fretta e da un uso, e quelle le ha date ai PG), e nel 1372 sono le difese del Ghostlord |
+| **D31** | `LETTORE-PLAYTESTER` | F4 | **L'orologio di DEF-5 si contraddice** (🔴 del lettore e del playtester a freddo). Il modulo dice che il Rubino riporta i PG «all'istante di partenza» e che il viaggio non consuma orologio; dice anche che li deposita nell'istante in cui le porte del Cuore della Montagna cedono e la fortezza sta per cadere; e la tabella dei rami dice che con 3g 15h le mura sono intatte e c'è tempo per la Fase 0. Tre cose che non stanno insieme. Proposta: il **Cuore della Montagna è fisso** (è il «punto più nero» che il Rubino sceglie, e la cucitura con ARC08-11), e il ramo dell'orologio decide **cosa c'è sopra**: le mura intatte e la Fase 0 piena, o la prima ondata già passata. Si toglie «all'istante di partenza» |
+| **D32** | `LETTORE-PLAYTESTER` | F4 | **Il Cuore di Moradin è speso o fa da ancora?** DEF-5 lo dà SPESO per la resurrezione di Hella, e nello stesso §3 lo fa agganciare gli spiriti dei PG «nella Forgia del 1372». Proposta: l'ancora è la **Forgia** (il luogo), non l'artefatto speso; si toglie il Cuore dalla meccanica del ritorno |
+| **D33** | `LETTORE-PLAYTESTER` | F3-bis | **La profezia: le Cronache in mano ai giocatori dicono già «eroi dal futuro»** (🔴 della quarta lettura di DEF-4). Il nodo della targa vieta di dire che la profezia parla di loro, la porta *Sapere* dice che è stata cancellata dalle cronache del 1372, e il testo della targa ha tre versioni («dal futuro», «dal fuoco e dalla pietra», e quella lunga del re). Proposta: la targa dice **«quattro eroi dal fuoco e dalla pietra»** in tutti e tre i punti; le Cronache che i giocatori hanno parlano di «quattro eroi» senza «dal futuro», e il «dal futuro» lo capisce il tavolo |
 | **D1** | `PIPELINE-IBRIDE` | Lotto A | **Cosa fa il grounding quando trova un difetto in una mappa di canone già giocata?** 🔎 **Non è più una domanda astratta: la misura del 2026-09-16 c'è.** 97 sacche isolate su 40 griglie, di cui **58 con dentro un segnalino di creatura**, 15 porte cieche, 12 griglie che una creatura Grande non attraversa. Una sola sacca è stata verificata a mano fino in fondo, ed **era un difetto vero**: i tre box delle stalle di Tarsilia, chiusi da `🏰` senza `🚪`, con dentro il cavallo che la tattica scritta dice di raggiungere. Le altre 57 **non sono state triangolate**, e il conto grezzo non dice quante siano difetti. Le tre risposte restano: (a) **segnala e basta**, gate non bloccante, canone invariato; (b) **segnala e si correggono le mappe**, cioè toccare griglie approvate; (c) **si esenta il canone esistente**, col rischio dell'esenzione silenziosa che ADR-0032 §1 ha già evitato una volta. 🔵 La proposta resta **(a)**, e adesso con un motivo misurato: 58 segnali non triangolati non possono bloccare una CI. Ma Tarsilia va corretta comunque, perché è un modulo standalone destinato a uscire. ✅ **Tarsilia corretta il 2026-09-24** (variante B: `🧱` e una porta per box); la domanda di D1 resta aperta per le altre 57 |
 | **D2** | `PIPELINE-IBRIDE` | Lotto B · B1 | **Dove vive il contratto d'estrazione dalla prosa?** Dentro `skills/rumblingstone-mapmaking/SKILL.md`, dove ogni agente lo vede sempre e paga i token a ogni conversazione, oppure in un file di riferimento caricato solo quando la skill instrada là. `measure_tokens.py` sa dare il costo delle due strade sullo stesso testo: la domanda si può decidere con un numero invece che a occhio |
 | **D3** | `PIPELINE-IBRIDE` | Lotto E | **Il ponte `llm_bridge.py` si costruisce, o ADR-0067 resta scritta e il codice aspetta?** La proposta è aspettare: con A e B chiusi il ciclo funziona a mano, e allora si vedrà se il ponte fa risparmiare davvero. Serve una risposta solo quando A e B sono chiusi |
@@ -1097,3 +1102,106 @@ tema. Le 20 tabelle a due o più pagine dal loro testo si possono avvicinare
 solo spezzando le sequenze di tabelle nei master, o forzandone qualcuna in
 colonna col marcatore: è una scelta di chi scrive, caso per caso.
 
+
+---
+
+## 14 · Il punto al 30 settembre: cosa si è mosso, cosa resta, cosa aspetta il DM
+
+Il DM, il 2026-09-30: *«fai un piano che segna il progresso e cosa rimane da
+fare, aggiornando tutto l'elenco dei piani»*. La lista viva resta il §0; questa
+sezione è la fotografia della tornata 27-30 settembre, con i numeri, per chi
+riparte da una chat nuova.
+
+### 14.1 · I piani, contati da `INDEX.md`
+
+| Stato | Quanti |
+|---|---:|
+| ✅ o 🟢 chiusi o eseguiti | 32 |
+| 🟡 in corso | 11 |
+| 🔵 pianificati o proposti, non partiti | 8 |
+| **In tutto** | **51** |
+
+### 14.2 · Cosa si è mosso in questa tornata
+
+| Piano | Prima | Adesso | Con cosa |
+|---|---:|---:|---|
+| LETTORE-E-PLAYTESTER | ~75% | **~85%** | DEF-4 pronto per la serata (#183); DEF-5 ai passi 1-6 del ciclo; quattro letture cieche su DEF-4, due su DEF-5; la prova cieca di `P-ABITATO` riuscita; il banco e la regola dei riposi (#183) |
+| MASTER-DEF-ARC08-ARC09 | 0%, aperto il 27 | **~15%** | D1-D3 decise, A1 approvato, A2 misurato, ADR-0075 (#182) |
+| Le decisioni del DM | 67 chiuse, 22 aperte | **80 chiuse**, 34 aperte | chiuse D1-D6, D11, D13, D18, D20, D22, D24 di LETTORE e la forma di D28; aperte le nuove che le letture hanno trovato (D12-D33) |
+
+Le misure della prosa, sulle letture cieche (agenti diversi a ogni giro):
+
+| Master | Lettore, 🔴 | Playtester, 🔴 |
+|---|---|---|
+| DEF-4 | 2 → 2 → 1 → 1 | 2 → 1 → 0 → 0 |
+| DEF-5 | 3 → **1** | 1 → **1** |
+
+Il 🔴 che resta in DEF-4 è nuovo (D33, la profezia); quello di DEF-5 è l'orologio
+(D31). Tutti e due sono canone.
+
+### 14.3 · I piani aperti, e da dove riparte ognuno
+
+| Piano | % | Il prossimo passo | Chi |
+|---|---:|---|---|
+| LETTORE-E-PLAYTESTER | ~85 | F4: DEF-1, 2, 3 nella forma del ciclo; il quiz di DEF-5 dopo D10; F5 gli stand-alone | agente |
+| MASTER-DEF-ARC08-ARC09 | ~15 | A3: il canone di ARC-08 contro lo stato del tavolo, dopo F4 | agente, poi DM |
+| REVISIONE-ARC07 | ~95 | le sessioni giocate al tavolo | tavolo |
+| REVISIONE-TRASVERSALE | ~90 | T8 e T9, legati al tavolo | tavolo |
+| DRAPPO-DI-TARSILIA | ~90 | L6 e il collaudo | DM |
+| MISURA-EDITORIALE-STANDARD | ~90 | la soglia κ ≥ 0,6 prima di entrare in CI | agente |
+| INTEGRAZIONE-PIPELINE-MAPPE | ~92 | collaudo al tavolo | DM |
+| RIPRESA-PR-ABBANDONATE | ~88 | 3d (D2, il collaudo SDXL) e 4d-4h, uno alla volta | DM, poi agente |
+| PORTARE-IL-MESTIERE-DEI-BANCHI | ~25 | S2-S4 sui master, dopo D3 | agente |
+| PRATICHE-DI-INGEGNERIA | 25 | PI-6, PI-2, PI-5, PI-4 | agente |
+| CICLO-DI-SESSIONE-E-MENU | ~12 | la Fase 0, dopo D1-D6 | DM, poi agente |
+| RICONCILIAZIONE-PR-APERTE | 3/7 | le due decisioni sul simbolo ⬛ | DM |
+| PIPELINE-IBRIDE | 10 | D1-D4 | DM |
+| EDITOR-VISUALE-MAPPE | ~9 | E0 | agente |
+| MARCATURA-DEGLI-INCONTRI | 0 | il primo lotto con `validate_modules --tetto-el` | agente |
+| LEVEL-DESIGN-E-INQUADRATURA | 0 | C2, dopo il linter di VENDIBILITA | agente |
+| RICERCA-MESTIERE-CARTOGRAFO | 0 | le quattro domande al DM, una bloccante | DM |
+| VENDIBILITA | 7 | **non autorizzato**: si parte solo su richiesta del DM | DM |
+| **Il lotto mappe D28** (dentro LETTORE) | 0 | sezione a livelli di Hammerfist 372 e griglie di fucina, gallerie, alchimista, cappella, armeria | agente, con `rumblingstone-mapmaking` |
+
+### 14.4 · Le PR aperte che non sono su `main`
+
+Il DM ha chiesto di fondere prima le PR con piani aperti. Misurato il
+2026-09-30, con la storia intera (`git merge-tree`):
+
+| PR | Indietro rispetto a `main` | Conflitti se si fonde | Cosa contiene che non è già su `main` |
+|---|---:|---:|---|
+| **#99** (audit, dati di campagna) | 394 commit | **52 file** | solo i lotti 4d-4h di RIPRESA-PR, da portare uno alla volta; il resto è già stato portato |
+| **#106** (catena raster, Blender) | 379 commit | **12 file** | solo 3d, che aspetta la D2 del DM (il collaudo SDXL); il resto è su `main` |
+
+**Non si fondono.** Fonderle riporterebbe su `main` versioni di agosto di file
+riscritti dopo (i master DEF, la CI, la guida delle immagini), e due ADR con
+numeri già presi. RIPRESA-PR le tiene aperte apposta come segnaposto
+(§4.12, tabella delle PR): si chiudono quando l'ultimo lotto che ne viene è su
+`main`. La terza PR aperta, la #184, è quella di questa tornata.
+
+### 14.5 · Le decisioni al DM, per piano
+
+Sono **34**, in §4 con la proposta di ognuna. Contate per piano:
+
+| Piano | Aperte | Le più urgenti |
+|---|---:|---|
+| LETTORE-PLAYTESTER | 20 | **D31** (l'orologio di DEF-5) e **D33** (la profezia), perché toccano la prossima serata; poi D12, D14-D17, D19, D21, D23, D29, D30 su DEF-4 |
+| CICLO-SESSIONE | 6 | D1-D6, che sbloccano la Fase 0 |
+| PIPELINE-IBRIDE | 4 | D1-D4 |
+| RIPRESA-PR | 2 | D2 (Gemini o SDXL), D11 (il perimetro dell'edizione) |
+| MESTIERE-BANCHI | 1 | D3 (si spezzano i box dei master già giocati?), che è anche la D9 di LETTORE |
+| RICERCA-MESTIERE | 1 | D12 (la riga 17 duplicata di una mappa) |
+
+E fuori da §4, perché sono marcature e non decisioni: le **44 `[INFERRED]` di
+DEF-4** e le nuove di DEF-5, e `state.md` sul ramo del gruppo (il Rubino che
+completa la Corona, i log delle serate del 25-27 settembre).
+
+### 14.6 · Il primo comando di una chat nuova
+
+```bash
+git fetch --prune origin
+python3 scripts/decisioni_dm.py --check      # le decisioni aperte, allineate
+python3 scripts/fase1.py <il file che tocchi> # sempre, prima di toccare
+```
+
+Poi si legge il §0 di questo file, e la riga ▶ dice da dove si parte.

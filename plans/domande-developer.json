@@ -57,13 +57,6 @@
       "ragione": "falso positivo: il drago non combatte nella Scena 8, la «picchiata» è come comincia la Scena 11"
     },
     {
-      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
-      "regola": "D3",
-      "scena": "—",
-      "dettaglio": "nessun effetto chiede un TS su Tempra",
-      "ragione": "🔴 APERTO: già contato in RICERCA-MANUALE-DEL-MASTER §2; si chiude col lotto F4 di PIANO-LETTORE-E-PLAYTESTER, quando DEF-5 prende il contratto"
-    },
-    {
       "file": "10-stand-alone/L'abbazia Della Rotta Sicura/abbazia_rotta_sicura.md",
       "regola": "D2",
       "scena": "Atto III — Sotto",

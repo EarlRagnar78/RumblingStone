@@ -122,7 +122,7 @@ Cuore della Montagna, Giorno 3 dell'assedio del 1372).
 |---|---|---|
 | 3 — la targa | Conoscenze (storia)/Sapienza, o una delle sei porte | 18 |
 | 4 — il consiglio | Diplomazia/Intimidire | 20 (16 se hanno il Nome) |
-| 6 — il campo | una prova di gruppo per blocco, cinque blocchi: Muoversi Silenziosamente, poi Nascondersi quando l'invisibilità finisce | 20 · 22 (−2 se gli aiuti sono dimezzati) |
+| 6 — il campo | una prova di gruppo per blocco, cinque blocchi: Muoversi Silenziosamente, poi Nascondersi quando l'invisibilità finisce | 20 · 22; con gli aiuti dimezzati, −2 alle prove (la CD non cambia) |
 | 9 — Vatore | Percepire Intenzioni o Diplomazia · Rapidità di Mano (a seconda dell'approccio) | 18 · 22 |
 | 10 — le mura | Forza / Diplomazia-Guarire / Disattivare (scelta collettiva) | 18 / 18 / 20 |
 
@@ -782,7 +782,7 @@ l'odore di zolfo copre quello del carbone.
 | **Aspetto** | nana di mezza età senza sopracciglia, bruciate da anni. Un grembiule pieno di buchi rotondi, ognuno di una goccia diversa |
 | **Vuole** | finire le fiasche per le mura prima dell'alba. Ogni fiasca che vende è una fiasca in meno sulle scale |
 | **Suona** | ride quando qualcosa sta quasi per andare storto, e solo allora |
-| **Vende** | il fuoco dell'alchimista è finito, è tutto alle mura. Ha poche **bombe di fuoco** sue: una fiasca da lanciare che fa una *palla di fuoco* da 5d6, Riflessi CD 14, raggio 6 m, a 750 mo, prezzata come una pozione di 3° livello al 5° dell'incantatore |
+| **Vende** | il fuoco dell'alchimista è finito, è tutto alle mura. Ha **tre bombe di fuoco** sue `[INFERRED — needs DM confirmation]`, e poi più niente: una fiasca da lanciare che fa una *palla di fuoco* da 5d6, Riflessi CD 14, raggio 6 m, a 750 mo, prezzata come una pozione di 3° livello al 5° dell'incantatore |
 | **Eco** | le bombe sono una sua invenzione, e nel 1372 nessuno sa più farle così |
 
 - **HELLA — i Treant dell'alba.**<!-- storico --> *(Allineato al rito il 2026-09-24: la prima
@@ -902,9 +902,10 @@ tenetevelo. Non ho tempo di pesarlo.»*
   col simbolo della **Mano Rossa**, preso nel 1372, parte *ostile*: è lo stesso
   segno delle tende là fuori.
 - **Chi aiuta a smistare.** Un PG che si mette al banco con lei, **Artigianato
-  (fabbricare armi) o Valutare CD 15**, le fa guadagnare un'ora: il premio di
-  guerra qui sotto scende da ×1,5 a ×1,25 su quello che il gruppo compra.
-  `[INFERRED — needs DM confirmation]`. È un posto per chi, nel gruppo, ha le
+  (fabbricare armi) o Valutare CD 15**, le fa guadagnare un'ora, e lei lo ricambia con lo sconto del mestiere: **−10%**
+  sul prezzo SRD delle armi e armature che il gruppo compra da lei. Il premio di
+  guerra qui sotto è un'altra cosa: è quello che la fortezza paga quando il
+  gruppo **vende** `[INFERRED — needs DM confirmation]`. È un posto per chi, nel gruppo, ha le
   mani da fabbro: Gunnvor lo guarda lavorare per un minuto, poi gli passa il
   mucchio buono.
 - **La tacca.** Tutta la trattativa costa **una** tacca, anche se il gruppo
@@ -1888,7 +1889,7 @@ L'artefatto che stringe al petto è in **Appendice B**.
 |---|---|---|---|
 | **10** · Le mura all'alba | il camminamento est | il capitano delle mura | prova collettiva, una via su tre |
 | **11** · Il duello | il cortile interno | **Skullcrusher il Nero** | combattimento su **M7-B** |
-| **12** · Il Rituale della Forgia Eterna | l'incudine, nel cortile | un nano molto vecchio | nessuna |
+| **12** · Il Rituale della Forgia Eterna | l'incudine, nel cortile | Thorgrim · Re Thorek I | nessuna |
 | **13** · Il Rubino e il ritorno | il cortile | — | nessuna |
 
 ### SCENA 10 — Le mura all'alba
@@ -2280,9 +2281,10 @@ alla vittoria nella battaglia antica**. È adesso.
 
 ⏱️ **Durata e cadenza**: dura **fino all'alba** la prima volta, e da allora
 resta alla Corona come potere **1/settimana**. Non è una ricarica: è la cosa
-che la Corona sa fare da quando è intera.
+che la Corona sa fare da quando ha preso la terza pietra: l'Aura viene dal rito,
+non dal ritorno, e non aspetta che la Corona sia completa.
 
-> **Read-aloud (LotR lead) — l'aura.** *Il vecchio che ha posato la pietra
+> **Read-aloud (LotR lead) — l'aura.** *Il vecchio seduto accanto all'incudine
 > alza la testa, e non guarda Thorik: guarda dietro di lui. In tutto il
 > cortile i feriti stanno smettendo di essere feriti. Un fabbro con una
 > gamba sola si tira su appoggiandosi al muro, e il muro gli si apre sotto
@@ -2310,12 +2312,33 @@ che la Corona sa fare da quando è intera.
 
 **In scena** — Dove: l'incudine — Chi: nessuno
 
-> **Read-aloud (Casa di Davide lead) — l'incudine, la profezia compiuta.** *L'orda, senza
-> generale e senza drago a spronarla, si sfalda come sabbia. Hammerfist regge.
-> Sulla fronte di Thorik il Rubino, che all'incudine la luce l'ha presa, adesso
-> la dà: calda come sangue, e non si abbassa. Un nano vicino alla forgia si
-> toglie l'elmo e non sa perché. Poi la luce comincia a tirare,
-> e vi porta via, verso casa, verso una fortezza che brucia mille anni più in là.*
+L'accensione si legge in tre battute, di fila, senza fermarsi per i tiri.
+
+> **Read-aloud (Casa di Davide lead) — l'incudine, 1 di 3: la profezia compiuta.**
+> *L'orda, senza generale e senza drago a spronarla, si sfalda come sabbia.
+> Hammerfist regge. Sulla fronte di Thorik il Rubino, che all'incudine la luce
+> l'ha presa, adesso la dà: calda come sangue, e non si abbassa. Un nano vicino
+> alla forgia si toglie l'elmo e non sa perché.*
+
+> **Read-aloud (Salvatore) — l'incudine, 2 di 3: il canto.** *Poi la pietra
+> prende fuoco. È un fuoco rosso e oro che non brucia: canta, una nota sola,
+> lunga, che vi risuona nel cranio. Thorik sente nelle ossa una forza che non è
+> sua, e davanti agli occhi gli passano dei lampi: il generale che cade nella
+> tenda, due alberi in marcia che travolgono una fila di nemici, il momento in cui
+> ognuno di voi ha scelto. La pietra li tiene tutti, uno per uno, come si tiene
+> una cosa che servirà.*
+
+> **Read-aloud (LotR lead) — l'incudine, 3 di 3: la voce.** *Poi una voce, e
+> non è un sussurro: è una campana che batte una volta sola. «Ben fatto, figli
+> miei. Avete salvato la fortezza come doveva accadere. Avete chiuso il
+> cerchio.» Nessuno ha visto muoversi una bocca: l'avete sentita nei denti. Poi
+> la luce comincia a tirare, e vi porta via, verso casa, verso una fortezza che
+> brucia mille anni più in là.*
+
+✏️ *I lampi della battuta 2 si adattano a quello che il tavolo ha fatto davvero:
+gli alberi in marcia sono i Treant di Hella; se non hanno caricato, il lampo è
+un'altra scelta sua. Il resto non
+si tocca.*
 
 ⚠️ *Il box di prima chiamava il Rubino «la terza gemma, muta da sempre»; ma
 l'incasso è vuoto per tutto l'arco (e Balvar lo dice: «Tu ne hai

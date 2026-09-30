@@ -210,8 +210,8 @@ developer e del playtester; la misura del miglioramento.
       scende, più le sale sono ampie) e le griglie da 1,5 m di fucina, gallerie,
       alchimista, cappella e armeria, coerenti con le Scene 4-5 già giocate e
       con le varianti del 1372. Si apre con `rumblingstone-mapmaking`
-- [ ] la **quarta lettura cieca** di DEF-4 dopo queste risposte (gli agenti
-      tornano disponibili il 30 settembre)
+- [x] la **quarta lettura cieca** di DEF-4 (2026-09-30), sul testo fuso con la
+      #183: tabella qui sotto, rapporti `lettura-quarta-*`
 - [x] le letture a freddo dopo, e la tabella prima/dopo
 - [x] un secondo giro di correzioni sui rilievi delle letture dopo che non
       toccano il canone
@@ -219,12 +219,27 @@ developer e del playtester; la misura del miglioramento.
 **La misura, prima e dopo** (letture cieche, agenti diversi a ogni giro,
 stesse rubriche ripulite; rapporti in `esperimenti/def4-seconda-serata/`):
 
-| | Lettore prima | Lettore dopo | Lettore terza | Playtester prima | Playtester dopo | Playtester terza |
-|---|---:|---:|---:|---:|---:|---:|
-| rilievi | 36 | 46 | **33** | 23 | 34 | **26** |
-| 🔴 | 2 | 2 | **1** | 2 | 1 | **0** |
-| 🟠 | 13 | 18 | **9** | 7 | 9 | 11 |
-| 🟡 | 21 | 26 | 23 | 14 | 24 | 15 |
+| | Lettore prima | Lettore dopo | Lettore terza | Lettore quarta | Playtester prima | Playtester dopo | Playtester terza | Playtester quarta |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| rilievi | 36 | 46 | 33 | **45** | 23 | 34 | 26 | **29** |
+| 🔴 | 2 | 2 | 1 | **1** | 2 | 1 | 0 | **0** |
+| 🟠 | 13 | 18 | 9 | **13** | 7 | 9 | 11 | **10** |
+| 🟡 | 21 | 26 | 23 | **31** | 14 | 24 | 15 | **19** |
+
+**La quarta lettura** (2026-09-30). Il playtester resta a zero 🔴. Il lettore ne
+trova uno **nuovo**, che nessuna delle tre letture prima aveva visto: le
+*Cronache dei Quattro Eroi* che i giocatori hanno in mano dicono già «eroi dal
+futuro», mentre il nodo della targa vieta di dirlo e la porta *Sapere* dice che
+la profezia è stata cancellata dalle cronache. È canone, e va al DM (D33). Il
+totale del lettore risale perché questa lettura è stata la più fine (31 🟡).
+Tre dei 🟠 li avevo lasciati io con la D6: il «vecchio che posa la pietra»
+rimasto in due punti, e l'Aura «della Corona intera» che arriva prima che la
+Corona sia intera. Corretti subito, con altri tre rilievi che non toccano il
+canone: il −2 degli aiuti scritto accanto alla CD, la quantità delle bombe di
+Kettra (tre, `[INFERRED]`) e il premio di Gunnvor applicato agli acquisti invece
+che alle vendite. Gli altri 🟠 sono decisioni già in lista (D12, D16, D17, D19,
+D21, D23), il lotto mappe (D28) o materiale fuori dal modulo (la tabella B4, il
+piano di battaglia, il Registro delle Perdite).
 
 **La terza lettura** (2026-09-27, sul testo dopo le risposte del DM a D5, D11,
 D20, D24): il playtester non trova più un 🔴, il lettore uno solo, e il totale
@@ -289,20 +304,37 @@ Il lotto è quindi il **ciclo completo** di `rumblingstone-module-standard`
 (sette passi) su ognuno dei quattro, non il solo contratto. **Va prima di A3 di
 PIANO-MASTER-DEF**, perché ARC-08 comincia dove finisce DEF-5.
 
-- [ ] DEF-5 per primo, perché si gioca subito dopo DEF-4: Madre Dana, Re Thorek,
-      §5 senza box, la Tempra; qui confluiscono anche i read-aloud di S4 di
-      MESTIERE-BANCHI (DEF-5 ne ha quattro in 516 righe). ⚠️ Una scena già
-      letta al tavolo non si riscrive (D3 di MESTIERE-BANCHI)
+- [x] DEF-5 per primo, passi 1-6 (2026-09-30). Tre scene `### SCENA` col
+      contratto «In scena»; schede d'entrata di Re Thorek e Madre Dana (da
+      `ARC08-01-GUIDA-DM` e dal Bestiario, niente di inventato); i box riscritti
+      al metro; l'accensione del Rubino, che DEF-5 metteva «sulle mura», torna
+      su richiesta del DM in DEF-4 Scena 13, in tre battute con la voce di
+      Moradin, e DEF-5 parte dal filo; la Tempra (il contraccolpo del salto, `[INFERRED]`);
+      l'orco dell'SRD per la pulizia; il gesto a testa nel round di sorpresa.
+      Letture a freddo prima di toccare (`esperimenti/def5-ciclo/`): lettore 46
+      rilievi (🔴 3), playtester 18 (🔴 1). Due 🔴 su tre del lettore erano la
+      stessa contraddizione dell'orologio, che è canone (D31); il terzo, l'ordine
+      dei box, è corretto. **Dopo** le correzioni, agenti nuovi: lettore 46 → **35**
+      (🔴 3 → **1**), playtester 18 → **17** (🔴 1 → **1**). L'unico 🔴 rimasto,
+      in tutte e due, è l'orologio: la D31, che è canone. Quattro 🟠 della
+      seconda lettura li avevo introdotti io (il bonus del re che si somma, la
+      scala dei re in una caverna con un solo ingresso, l'*Aura di Comando* su
+      più bersagli, il capo degli orchi senza statistiche) e sono corretti.
+      Resta il **passo 7** (il quiz, D10)
 - [ ] DEF-1 (Varis), DEF-2, DEF-3: i residui dichiarati, prima che un gruppo
       nuovo li riprenda. Sono **già giocati** (`copertura-scene.json`): si
       convertono nella forma (titoli `### SCENA`, contratto, componenti, box al
       metro) e non in cosa succede, che per questo gruppo è già canone
 - [ ] per ognuno, alla fine: lettore e playtester a freddo senza 🔴, quiz con la
       chiave approvata dal DM, e la riga tolta da `plans/copertura-scene.json`
-- [ ] **DEF-5 è la prova cieca di `P-ABITATO`** (ADR-0075, «La prova contro il
-      tavolo»): il playtester legge DEF-5 **prima** che gli si aggiunga la
-      tabella *Chi si trova qui*, e si conta se trova da solo i ruoli che
-      mancano. Se non li trova, la domanda va riscritta
+- [x] **DEF-5 è la prova cieca di `P-ABITATO`** (ADR-0075, «La prova contro il
+      tavolo»), **riuscita** il 2026-09-30: il playtester, senza la tabella, ha
+      trovato da solo il buco (#13): dopo la pulizia i PG sono in una fortezza
+      abitata, e il modulo dà solo chi comanda e chi cura; mancano rimedi,
+      armi, messaggi, guardia, chi compra il bottino e chi identifica. La
+      domanda resta com'è. La tabella in DEF-5 però **non** l'ho aggiunta: la
+      fortezza del 1372 è quella dell'ARC-08, e cosa c'è a Hammerfist lo decide
+      la Fase 0 (D31)
 
 ### F5 · Gli stand-alone — ⬜
 
@@ -426,6 +458,9 @@ manuali, così può misurare e segnare il problema, se esiste nell'avventura»*.
 | D23 | F3-bis | **Un Balvar recuperato può sciogliere lui la Catena?** È la prima cosa che un tavolo gli chiede. Oggi il modulo dice solo che spiega dove sta la runa e come si spezza. Proposta: può, ma solo toccando la scaglia, cioè nel cortile durante il duello, e lo sa |
 | D29 | F3-bis | **Dopo un allarme di notte, il drago dove va?** È la metà di D13 rimasta aperta: il testo dice «se ne va», senza scegliere fra le colline e il campo. Proposta: sulle colline, come ogni notte, e torna solo al corno successivo; così un allarme brucia il corno e non porta il drago sopra la tenda |
 | D30 | F3-bis | **Le rune di Zeth sui camminamenti e nelle gallerie hanno un effetto meccanico la prossima serata, o sono colore?** È la (b) di D28, che la forma della mappa non chiude. Proposta: colore nel 372 (Zeth scrive in fretta e da un uso, e quelle le ha date ai PG), e nel 1372 sono le difese del Ghostlord |
+| D31 | F4 | **L'orologio di DEF-5 si contraddice** (🔴 del lettore e del playtester a freddo). Il modulo dice che il Rubino riporta i PG «all'istante di partenza» e che il viaggio non consuma orologio; dice anche che li deposita nell'istante in cui le porte del Cuore della Montagna cedono e la fortezza sta per cadere; e la tabella dei rami dice che con 3g 15h le mura sono intatte e c'è tempo per la Fase 0. Tre cose che non stanno insieme. Proposta: il **Cuore della Montagna è fisso** (è il «punto più nero» che il Rubino sceglie, e la cucitura con ARC08-11), e il ramo dell'orologio decide **cosa c'è sopra**: le mura intatte e la Fase 0 piena, o la prima ondata già passata. Si toglie «all'istante di partenza» |
+| D32 | F4 | **Il Cuore di Moradin è speso o fa da ancora?** DEF-5 lo dà SPESO per la resurrezione di Hella, e nello stesso §3 lo fa agganciare gli spiriti dei PG «nella Forgia del 1372». Proposta: l'ancora è la **Forgia** (il luogo), non l'artefatto speso; si toglie il Cuore dalla meccanica del ritorno |
+| D33 | F3-bis | **La profezia: le Cronache in mano ai giocatori dicono già «eroi dal futuro»** (🔴 della quarta lettura di DEF-4). Il nodo della targa vieta di dire che la profezia parla di loro, la porta *Sapere* dice che è stata cancellata dalle cronache del 1372, e il testo della targa ha tre versioni («dal futuro», «dal fuoco e dalla pietra», e quella lunga del re). Proposta: la targa dice **«quattro eroi dal fuoco e dalla pietra»** in tutti e tre i punti; le Cronache che i giocatori hanno parlano di «quattro eroi» senza «dal futuro», e il «dal futuro» lo capisce il tavolo |
 
 ## 5 · Validazione
 

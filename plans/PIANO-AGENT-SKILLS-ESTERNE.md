@@ -87,7 +87,7 @@ visibile nei file modificati, le note di copyright e attribuzione conservate.
 Nel repo gli script stanno sotto MIT e il testo sotto CC BY-NC-SA
 (`LICENSES.md`, ADR-0029). Un file adattato da codice Apache resta Apache 2.0
 **per la parte che viene da lì**: `LICENSES.md` guadagna una terza riga con
-l'elenco dei file, e il testo della licenza entra in `scripts/LICENSE-APACHE-2.0`.
+l'elenco dei file, e il testo della licenza entra in `scripts/LICENSE-APACHE-2.0`. <!-- validate-docs: futuro -->
 Le rubriche in italiano prendono **idee** (la lettura a passaggi, il diario, il
 ricordo dal diario), che non sono coperte da diritto d'autore: si citano per
 correttezza, senza cambiare licenza al testo.
@@ -137,20 +137,20 @@ prerequisito di L2, L4 e L5.
 - [ ] ADR-0076, *adozione da awesome-llm-apps*: fonte, commit `4bf51ab`, autori
       per skill, la licenza non dichiarata di `first-reader`, cosa si prende e
       cosa si scarta (la tabella §3 in forma breve), come si aggiorna
-- [ ] `scripts/LICENSE-APACHE-2.0` e la terza riga di `LICENSES.md`
+- [ ] `scripts/LICENSE-APACHE-2.0` e la terza riga di `LICENSES.md` <!-- validate-docs: futuro -->
 - [ ] ogni file adattato apre con: origine, commit, autore, licenza, «modificato»
 
 ### L1 · La lettura a scene, senza guardare avanti — ⬜
 
 `[engine: Opus per la calibrazione, Sonnet per lo script · effort: alto · qualità: test che provano il cancello mordere + calibrazione su DEF-4 contata a mano]` — **C** + **G**
 
-- [ ] `scripts/lettura_a_scene.py`, adattato da `feed.py`: servito su
+- [ ] `scripts/lettura_a_scene.py`, adattato da `feed.py`: servito su <!-- validate-docs: futuro -->
       `127.0.0.1`, un passaggio per scena col riconoscimento di
       `copertura_scene.py`, diario per scena con campi fissi: `ago` (−2…+2),
       `mi aspettavo`, `ho trovato`, **`so adesso`** (cosa sanno i PG e da chi),
       e i codici `L-`/`P-` al momento in cui scattano. Chiude scrivendo titolo e
       impronta di ogni scena, mai il testo
-- [ ] test (`scripts/tests/test_lettura_a_scene.py`): il testo non è su disco
+- [ ] test (`scripts/tests/test_lettura_a_scene.py`): il testo non è su disco <!-- validate-docs: futuro -->
       prima della chiusura; il passaggio dopo non arriva senza diario né prima
       del tempo minimo; un diario sotto i 25 caratteri è rifiutato; le scene
       sono quelle di `copertura_scene`
@@ -174,10 +174,10 @@ guardato avanti cita cose delle scene successive, e la calibrazione lo guarda.
 
 `[engine: Sonnet · effort: medio · qualità: test + una prova su DEF-5 confrontata con il quiz di DEF-4]` — **C**
 
-- [ ] `scripts/ricordo_lettura.py` (da `recall.py`): dal solo diario, sette
+- [ ] `scripts/ricordo_lettura.py` (da `recall.py`): dal solo diario, sette <!-- validate-docs: futuro -->
       domande da DM, giudicate contro *La serata in tre frasi* o il §0 del
       master. Nessuna chiave nuova da approvare
-- [ ] `scripts/chiedi_al_lettore.py` (da `ask.py`): persona, diario, domanda;
+- [ ] `scripts/chiedi_al_lettore.py` (da `ask.py`): persona, diario, domanda; <!-- validate-docs: futuro -->
       `tutti` per ogni lettore della corsa
 - [ ] `quiz-a-due-agenti.md`: quando basta il ricordo e quando serve il quiz (D1)
 - [ ] prova: DEF-4, dove la chiave c'è, ricordo e quiz sullo stesso diario, per
@@ -196,7 +196,7 @@ stesso formato del ricordo: una PR sola.
 
 `[engine: Opus per le regole del cancello, Sonnet per lo script · effort: alto · qualità: il cancello morde in un test su master cambiato e su 🔴 senza stato]` — **C** + **G**
 
-- [ ] `plans/letture-a-freddo.json`: per ogni master DEF e ogni lettura, ruolo
+- [ ] `plans/letture-a-freddo.json`: per ogni master DEF e ogni lettura, ruolo <!-- validate-docs: futuro -->
       (lettore, playtester, DM a freddo), data, cartella della corsa, impronta
       del testo intero e di ogni scena, rilievi 🔴 e 🟠 con lo stato
       (`corretto` · `residuo` + ragione · `domanda al DM` + D-n)
@@ -247,7 +247,7 @@ mirror di `build-skills.sh` finiscono in agenti diversi.
 
 `[engine: Sonnet · effort: basso · qualità: lo scanner gira in CI su skills/, zero CRITICI]` — **M** + **G** per la riga di `resources.md`
 
-- [ ] `scripts/terzi/skill_scanner.py`, intero, con l'intestazione di origine
+- [ ] `scripts/terzi/skill_scanner.py`, intero, con l'intestazione di origine <!-- validate-docs: futuro -->
 - [ ] passo in CI, e `validate_skills.py` che lo chiama
 - [ ] `dnd-35-srd/references/resources.md:250`: la riga `curl … | sh` diventa il
       rimando alla pagina d'installazione ufficiale, senza il comando da incollare

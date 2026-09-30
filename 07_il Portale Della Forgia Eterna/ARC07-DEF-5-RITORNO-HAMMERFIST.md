@@ -23,7 +23,7 @@
 > **Stato al tavolo**: si gioca **subito dopo** la vittoria del −1000 (
 > `DEF-4`). Chiude l'ARC-07 e apre l'**ARC-08** (Battaglia di Hammerfist).
 > **Canone in uscita** (fonte stabile `state.md §1/§6`, D8): Corona **3 gemme
-> accese**; **Cuore di Moradin SPESO**; **Thorik −4 DES / +2 COS / +4 CAR** permanenti (**−1 CA** in più se ha donato al rito); **Hella
+> accese**; **Cuore di Moradin SPESO**; **Thorik −4 DES / +2 COS / +4 CAR** permanenti (la Corona gli dà **+3** di deviazione alla CA, **+2** se al rito di Hella ha donato: è lo stesso punto, non un malus in più); **Hella
 > viva** (Ibrido Treant, Collana, Durik); party **APL 13**.
 
 ---
@@ -89,8 +89,8 @@ stato d'arco); la mappa **CM-1**; l'handout **«Lo Stato dei Custodi»** (§9).
 ### Lo stato dell'ARC-07 in uscita (canone — `state.md §1/§6`)
 - **Corona di Adamantio**: **3 gemme accese** (Topazio/Tempo, Smeraldo/Terra, Rubino/Leggenda). Il Rubino si è usato **una volta sola**, come motore del ritorno; speso, **resta nell'incasso** e **la Corona si completa**: +3 e Senzienza dall'arrivo (DM, DEF-4 D6; §3).
 - **Cuore di Moradin**: **SPESO** (resurrezione).
-- **L'Aura della Forgia** (`DEF-4` Scena 12): attiva fino all'alba del giorno dopo, quindi i PG arrivano con *Possenza Divina* e *Protezione dal Male* ancora addosso `[CANONE — DM 2026-09-30, D17]`.
-- **Thorik**: **−4 DES / +2 COS / +4 CAR** permanenti; **−1 CA** se ha donato il +2 di deflessione al rito. **Hella**: viva (Ibrido Treant, Collana, Durik). **Bracieri** completi. **Ring** riforgiato.
+- **L'Aura della Forgia** (`DEF-4` Scena 12): attiva fino all'alba del giorno dopo, quindi i PG arrivano con *Possenza Divina* e *Protezione dal Male* ancora addosso `[CANONE — DM 2026-09-30, D17]`. L'alba è quella del 1372: il salto non ne consuma la durata `[INFERRED — needs DM confirmation]`.
+- **Thorik**: **−4 DES / +2 COS / +4 CAR** permanenti; la Corona gli dà **+3** di deviazione alla CA, **+2** se al rito di Hella ha donato la deflessione (`DEF-3` §5): lo stesso punto, contato una volta. **Hella**: viva (Ibrido Treant, Collana, Durik). **Bracieri** completi. **Ring** riforgiato.
 - **Carry-over B4** verso Fauci: registrato al `DEF-4` (esito Skullcrusher + N ferite).
 - **Countdown**: siete arrivati al **Giorno 3** (≈ March Clock Day 18-19): il **sync** con l'ARC-08. Valore preciso in consegna, secondo il registro dei riposi (`ARC07-DEF-2` §0-bis): **≈ 3g 03h** se hanno dormito prima di Terros, **≈ 3g 15h** se no. Il viaggio a −1.000 **non consuma orologio**. Il Rubino li deposita **sempre** nel Cuore della Montagna (§3): l'arrivo è fisso, e l'orologio decide cosa è successo sopra `[CANONE — DM 2026-09-30, D31]`.
 
@@ -100,7 +100,7 @@ Il ramo cambia **come si apre** la Battaglia di Hammerfist, non se si vince.
 
 | Orologio in consegna | Cosa trovano arrivando | Effetto sull'ARC-08 |
 |---|---|---|
-| **≈ 3g 15h** (nessun riposo prima di Terros: è il ramo del gruppo di oggi) | la **prima ondata è già passata** `[CANONE — DM 2026-09-30, D31]`: le mura hanno retto, i primi caduti sui camminamenti, le torri d'assedio pronte per la seconda | **Fase 0 piena**: l'orologio è ancora alto, c'è tempo per il consiglio di guerra, i preparativi e la scelta delle posizioni. L'ARC-08 parte come scritto |
+| **≈ 3g 15h** (nessun riposo prima di Terros: è il ramo del gruppo di oggi) | la **prima ondata è già passata** `[CANONE — DM 2026-09-30, D31]`. Sotto, nel Cuore della Montagna, è l'ultima resistenza della Scena 2, e sopra il drago è sulle mura | quando si gioca la **Fase 0** dell'ARC-08, con i PG arrivati nel mezzo della caduta, è la **D38** (proposta: dopo il drago ai bastioni, non prima) |
 | **≈ 3g 03h** (riposo prima di Terros — ramo probabile) | la **prima ondata è già passata**: una torre in posizione a est, i primi caduti sui camminamenti, il fumo che piega col vento | **Fase 0 accorciata**: un solo giro di preparativi invece di due. I nani hanno già dei feriti da curare, e il consiglio di guerra si tiene **in piedi**, non seduti |
 | **sotto 2 giorni** (solo con altri due riposi ordinari — improbabile) | **breccia aperta**, combattimento dentro le mura | pannello velato su A8 e **Fase 0 dura** (`ARC07-DEF-2` §8) |
 
@@ -224,6 +224,9 @@ in `DEF-4`, Scena 13, dove succedono.*
 
 **In scena** — Dove: la caverna — Chi: Re Thorek · Madre Superiora Dana · i novanta nani · gli orchi
 
+**Stasera si gioca la regia breve**, quella dell'ARC-07: i PG arrivano quando le
+porte cedono, e la scena finisce con la Scena 3. La regia lunga è dell'ARC-08.
+
 **Trigger:** fine del Round 2 dell'ultima resistenza; le porte di mithral cedono.
 Sul lato ARC-07 quei due round **non si giocano**: li racconta il box del
 mattatoio qui sotto. Si giocano solo nella regia lunga dell'ARC-08 (Incontro 3B,
@@ -253,15 +256,26 @@ MAPPA CM-1), dove i PG arrivano al Round 8.
 I PG hanno un **round di sorpresa** (MAPPA CM-1). Chi ha fallito la Tempra
 della Scena 1 è frastornato e lo perde: arriva, ma non agisce ancora.
 
+**L'ordine** `[INFERRED — needs DM confirmation]`: l'aura scatta con l'apparizione, e i TS degli orchi si
+risolvono subito (§0-bis, «Effetti immediati»); poi il round di sorpresa dei PG,
+un gesto a testa; poi l'iniziativa, e si passa alla Scena 3.
+
+**Le distanze** (MAPPA CM-1, quadretti da 3 m): i PG compaiono sull'altare, alto
+3 m; la porta è a **36 m**, oltre l'anello dei novanta nani. Nel round di
+sorpresa chi combatte in mischia non ci arriva.
+
+**Se il tavolo ha giocato male il −1000** (§6), leggi prima la riga «meno
+luminosa» delle contingenze: cambia gli effetti qui sotto.
+
 **Il round di sorpresa, un gesto a testa.** Nessuno qui deve tirare, ma ognuno
 può scegliere. Sono proposte, e ogni scelta si ricorda (§7):
 
 | PG | Cosa ha a portata di mano |
 |---|---|
-| **Thorik** | la Corona si è appena completata: la sua *Aura di Comando* (1/giorno, *comando* CD 15, dalla pagina della Corona) colpisce **una** creatura, come l'incantesimo dell'SRD. Sul capo degli orchi, «Fuggi!», vuol dire che il terzo rimasto non ha più nessuno che lo tenga, e scappa anche lui `[INFERRED — needs DM confirmation]` |
-| **Tordek** | il re è a tre metri, e gli orchi stanno arrivando: prenderlo, o piantarsi sulla porta |
+| **Thorik** | la Corona si è appena completata: la sua *Aura di Comando* (1/giorno, *comando* CD 15, dalla pagina della Corona) colpisce **una** creatura, come l'incantesimo dell'SRD, a gittata vicina: il capo degli orchi, alla porta a 36 m, è fuori portata finché non passa l'anello. Sul capo degli orchi, quando è a tiro, «Fuggi!», vuol dire che il terzo rimasto non ha più nessuno che lo tenga, e scappa anche lui `[INFERRED — needs DM confirmation]` |
+| **Tordek** | il re è a tre metri, e gli orchi stanno arrivando: prenderlo, o scendere dall'altare e mettersi fra il re e l'anello. Scendere è un salto di 3 m: 1d6, o nessun danno con Saltare CD 15 (SRD) |
 | **Artemis** | vede tutta la caverna dall'altare: chi scappa, chi resta, e il capo degli orchi che ha smesso di urlare. Il capo è l'orco più grosso, con un elmo nanico preso sulle mura; ha le statistiche dell'orco dell'SRD (Scena 3) e 8 pf invece di 5 `[INFERRED — needs DM confirmation]`. Se cade, i suoi scappano |
-| **Hella** | le radici che le crescono intorno sono sue: può chiuderle intorno al re, o lanciarle contro la porta. I suoi Treant sono sulla pagina della Collana |
+| **Hella** | le radici che le crescono intorno sono sue: può chiuderle intorno al re (copertura totale per un round) o lanciarle verso la porta, dove fanno da *intralciare* dell'SRD su un'area di 6 m di raggio (Riflessi CD 15) `[INFERRED — needs DM confirmation]`. I due Treant di Adamantio si chiamano con la Collana: statistiche in `DEF-3` Appendice A.2 |
 
 
 **Effetti immediati** (§0-bis): gli orchi nella caverna tirano **Volontà CD 25**
@@ -408,6 +422,10 @@ l'ascia lo sente.)*
 > **AEGIS FANG (canta):** *«Sangue Skullcrusher chiama! Fauci ci SENTE! Verrà. E
 > finiremo ciò che abbiamo cominciato mille anni fa.»*
 
+**Prima del portale**: i PX (§8) e l'handout «Lo Stato dei Custodi» (§9), uno
+per giocatore. Se qualcuno chiede perché Dana non cura il re: la *guarigione* l'ha
+spesa nei due giorni d'assedio `[INFERRED — needs DM confirmation]`.
+
 → **Dana apre il portale. Fine dell'ARC-07. Inizia l'ARC-08** (la Battaglia di
 Hammerfist): continua in `08_.../ARC08-11-PONTE-ARRIVO.md` e nella Guida DM.
 
@@ -461,8 +479,8 @@ Hammerfist): continua in `08_.../ARC08-11-PONTE-ARRIVO.md` e nella Guida DM.
 
 > **Somma d'arco (ARC-07)**: Terra ~11.600 + Affreschi ~1.900 + Resurrezione
 > ~1.900 + Viaggio ~7.600 + Ritorno ~3.300 = **~26.300/PG**. Con il Fuoco (P3)
-> già alle spalle, i PG entrano nell'ARC-08 al **14°** (D8: il 14° si consolida a
-> Hammerfist). Le parti giocate non si ritoccano.
+> già alle spalle, i PG hanno i PX del **14°** già all'arrivo, e il livello si prende al
+> primo riposo, cioè dopo la battaglia di Hammerfist (D8) `[INFERRED — needs DM confirmation]`. Le parti giocate non si ritoccano.
 
 ### B. Tesoro pregenerato (in uscita — handoff agli audit a valle)
 > Questo beat **non genera loot ordinario nuovo** (è un arrivo in battaglia): il
@@ -495,10 +513,25 @@ Hammerfist** (`08_.../ARC08-11-PONTE-ARRIVO.md` + Guida DM). *Là, tutto ciò ch
 avete fatto nel passato presenterà il conto.*
 
 ### Handout giocatore
-1. **«Lo Stato dei Custodi»** — riepilogo di cosa portano nell'ARC-08: Corona 3
-   gemme (poteri), artefatti al massimo stato, i costi pagati (Thorik **−4 DES**, e **−1 CA** se ha
-   donato al rito), il
-   carry-over vs Fauci. Da consegnare a chiusura d'arco.
+1. **«Lo Stato dei Custodi»**, da consegnare a chiusura d'arco, uno per
+   giocatore. Sono due cose: la **pagina giocatore del suo artefatto** allo
+   stadio di oggi (Corona S3, Bracieri, Anello, Collana), che esiste già fra
+   le pagine degli artefatti, e questa copertina, con le righe da riempire al tavolo:
+
+   > **Lo Stato dei Custodi** — *il giorno in cui siete tornati*
+   >
+   > Siete partiti in quattro dalla Sala della Forgia, e in quattro siete
+   > tornati, mille anni più tardi, nel Cuore della Montagna.
+   >
+   > **Quello che avete pagato.** Thorik: la Destrezza (−4), per sempre. Chi ha
+   > donato al rito di Hella porta il dono nel suo seme, e il seme ricorda.
+   >
+   > **Quello che vi aspetta.** Sopra di voi c'è un drago che ha il sangue di
+   > Skullcrusher. Il duello del −1000 è finito così: ______________.
+   > Le ferite che gli avete lasciato: ______________.
+   >
+   > **Quello che vi portate.** La Corona ha tre gemme accese. Il resto sta
+   > nelle vostre pagine.
 2. **La tavola dell'Affresco A8** (`DEF-2`) al 60→80%: la leggenda quasi
    completa, che l'ARC-08 porterà al 100%.
 

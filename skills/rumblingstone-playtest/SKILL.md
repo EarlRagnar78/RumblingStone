@@ -82,13 +82,18 @@ sta, e non si accorge che sulla pagina non c'è. Il 2026-09-25 il DM ha
 inventato al tavolo sette cose che `ARC07-DEF-4` non diceva, con tutti i
 cancelli verdi ([ADR-0073](../../plans/adr/ADR-0073-chi-e-dove-sta-scritto-nella-scena.md)).
 
-Due letture, fatte da un agente che riceve **solo il modulo**, con una rubrica
-fissa. Leggi le rubriche, non questo riassunto:
+Quattro letture, ognuna fatta da un agente nuovo che riceve **solo il modulo**
+e la sua rubrica fissa. Leggi le rubriche, non questo riassunto:
 
 | Ruolo | Domanda | Rubrica |
 |---|---|---|
 | **lettore** | *capisco cosa c'è, senza inventare?* (leggibilità) | [`references/lettore-a-freddo.md`](references/lettore-a-freddo.md) |
 | **playtester** | *quando i giocatori fanno quello che vogliono, il modulo risponde?* (giocabilità) | [`references/playtester-a-freddo.md`](references/playtester-a-freddo.md) |
+| **developer** | *si gioca? i numeri reggono l'SRD, e nessuno resta senza niente da fare?* | [`sviluppo-degli-incontri.md`](../rumblingstone-module-standard/references/sviluppo-degli-incontri.md), letto da un agente con i codici `V-` |
+| **DM a freddo** | *stasera riesco a condurla, con questo file aperto?* (conduzione, e cosa resta il giorno dopo) | [`references/dm-a-freddo.md`](references/dm-a-freddo.md) |
+
+Cosa si fa dei rilievi, e quando si rifà il giro: `rumblingstone-module-standard`,
+«Il giro».
 
 - **Quando**: su ogni master nuovo o riscritto, **prima** del dry-run e prima
   che vada al tavolo. Il dry-run misura il ritmo, le letture misurano i buchi.

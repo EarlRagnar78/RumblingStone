@@ -135,7 +135,7 @@ ri-sottrarli: sono dentro. Da lì in poi il registro è additivo.
 | **R3** | Piano della Terra, prima della camera di Terros | ❌ **NON fatto** — sono entrati da Terros senza dormire `[CANONE GIOCATO 2026-07-31]` | 0 | **3g 20h** |
 | **R4** | **Sala della Forgia**, dopo Terros e prima del rito | ✅ **giocato: dormono nella Sala** `[CANONE GIOCATO]` | **−4 h** | **3g 16h** |
 | — | il rito di resurrezione | prossimo | ~1 h | 3g 15h |
-| — | viaggio a −1.000 (`DEF-4`) | previsto | **0 h** — il Rubino riporta all'istante di partenza | 3g 15h |
+| — | viaggio a −1.000 (`DEF-4`) | previsto | **0 h** — il viaggio non consuma orologio; il Rubino li riporta nel Cuore della Montagna (`DEF-5` §3) | 3g 15h |
 | — | **consegna all'ARC-08** | | | **≈ 3g 15h** |
 
 > ✅ **RAMO RISOLTO AL TAVOLO.** Hanno tirato dritto su Terros senza riposare e

@@ -80,8 +80,8 @@
 attraverso mille anni e atterrano a **Hammerfist ≈372 DR**: la fortezza è
 giovane, le mura nuove, e un'orda primitiva la assedia sotto le ali di un drago
 nero. Su una targa di bronzo alle porte, una profezia già incisa parla di
-**«Quattro Eroi dal futuro»**. Quei Quattro siete voi: la leggenda che avete
-sempre creduto passato è il vostro presente. **Paradosso bootstrap.**
+**«quattro eroi dal fuoco e dalla pietra»** `[CANONE — DM 2026-09-30, D33]`. Quei Quattro sono loro, e il tavolo deve capirlo da sé (il nodo della targa, Scena 3): la leggenda che hanno
+sempre creduto passato è il loro presente. **Paradosso bootstrap.**
 
 **Come si gioca** *(decisione DM 2026-09-25)*. Il corpo di questo master è
 scritto **a scene complete**, nell'ordine in cui si giocano. Gli scontri si
@@ -351,10 +351,11 @@ dove, alla fine, Skullcrusher cala. Vedi M7-B (arena del duello).
     vi RIFÀ. Per un istante lunghissimo siete scomposti nei vostri mille anni —
     e quando vi ricomponete dall'altra parte, le ferite che avevate non ci sono
     più, perché in questo momento della storia non le avete ancora ricevute.»*
-  - Il **costo sull'orologio di Hammerfist è zero**: il Rubino riporta i PG
-    all'istante esatto della partenza (`ARC07-DEF-5` §Supporto PF1e).
-- **Shock temporale (all'arrivo)**: TS Volontà **CD 20** o **confusi 1d4 round**
-  (−2 concentrazione/percezione), poi chiarezza. *(È l'unico prezzo del
+  - Il **costo sull'orologio di Hammerfist è zero**: il viaggio non consuma
+    orologio, e il Rubino li riporta sempre nel Cuore della Montagna
+    (`DEF-5` §3) `[CANONE — DM 2026-09-30, D31]`.
+- **Shock temporale (all'arrivo)**: TS Volontà **CD 20** o, per 1d4 round,
+  **−2 agli attacchi e alle prove** `[CANONE — DM 2026-09-30, D25]`, poi chiarezza. *(È l'unico prezzo del
   passaggio: il corpo torna intero, la testa no.)*
 - **Le Cronache dei Quattro Eroi** i giocatori le hanno in mano da prima di
   partire (`DEF-3` §8-ter): non si consegnano qui.
@@ -700,7 +701,7 @@ che comincia, con i PG dove sono in quel momento.
 |---|---|
 | ≤ 6 | in tempo. Si rientra, si schiera, le mura e il duello vanno come scritto. Le tacche che restano prima dell'8 si spendono con la tabella qui sopra, come nella Scena 5: tre ore di sosta (2) ci stanno, otto ore di sonno (6) no. La fucina, la cappella e la bottega sono aperte come nella Scena 5 |
 | 7 | 🟡 si rientra **correndo**: nessun riposo prima del drago, −1 a tutti i TS del primo round del duello (Scena 11) |
-| 8 o più | 🔴 **l'alba vi coglie fuori dalle mura.** Non morite: attraversate un campo che si sta svegliando. Prova di gruppo Muoversi Silenziosamente **CD 20**, poi il duello (Scena 11) comincia con i PG **fuori**, e Skullcrusher li vede per primo |
+| 8 o più | 🔴 **l'alba vi coglie fuori dalle mura.** Non morite: attraversate un campo che si sta svegliando. Prova di gruppo Muoversi Silenziosamente **CD 20**, poi il duello (Scena 11) comincia con i PG **fuori**. La Scena 10 **non si gioca**: le mura valgono «a stento» (2-3 successi). Se la prova fallisce, il drago ha già scelto il suo bersaglio `[CANONE — DM 2026-09-30, D21]` |
 
 ⚠️ **L'orologio corre sulle SCELTE, non sul tempo reale.** Un tavolo che discute
 mezz'ora su cosa fare non spende una tacca; un tavolo che decide di andare a
@@ -729,8 +730,9 @@ il bivio, ed è **vero** — non una finta scelta con una risposta giusta.
 | guardia | sulle mura, agli ordini di **Hrodgar**, il capitano (scheda nella Scena 10) |
 
 **I quartieri ospiti.** Durin li accompagna, e da qui all'uscita decidono
-loro: ogni cosa costa tacche. Nei quartieri ci sono il banchetto (+1 morale 12 h se
-mangiano), fabbri che affilano le armi, chierici che benedicono.
+loro: ogni cosa costa tacche. Nei quartieri ci sono il banchetto (+1 morale ai TS per 12 h se
+mangiano: il +2 morale delle Benedizioni non vale sui TS, quindi i due non si
+sommano sullo stesso tiro `[CANONE — DM 2026-09-30, D25]`), fabbri che affilano le armi, chierici che benedicono.
 
 > **Read-aloud (LotR lead) — i quartieri ospiti.** *Una sala bassa, scavata e
 > non costruita: il soffitto porta ancora i colpi dello scalpello, dritti e
@@ -830,6 +832,9 @@ gallerie sotto la fucina; cercarlo costa una tacca)*
   dalla fazione del **Collezionista** che viaggia tra i piani e le epoche. I PG
   seminano (senza saperlo) il dilemma etico di Hella su Zeth in ARC-09. Registra
   nell'Echo Ledger (§7) e nel registro di fine serata.
+  Le rune che traccia stanotte sui tunnel e sui camminamenti sono **colore**:
+  nel 372 non hanno effetto (scrive in fretta, e quelle d'uso le ha date ai
+  PG). Nel 1372 sono le difese del Ghostlord `[CANONE — DM 2026-09-30, D30]`.
 - **Le rune di Zeth, se gliele chiedono** `[CANONE — DM 2026-09-26 e 2026-09-27]`.
   Zeth sa incidere rune di tre famiglie: **d'abiurazione e di protezione**;
   **d'annullamento**, come quelle della miniera di Belkram, che spengono la
@@ -1030,8 +1035,10 @@ sono quelle che la cappella ha già.
 | *Identificare* (mago 1°, incantatore di 1°) | 125 mo | 1 | dal forziere del re, presa anni fa a un mercante. Nessuno in fortezza la sa lanciare: Moradin non dà il dominio della Magia, e Zeth è un druido. Si lancia in un'ora e brucia una perla da 100 mo, già nel prezzo. Artemis la legge con Usare Oggetti Magici CD 21 |
 
 Come servizio, Brynja lancia lei gli stessi incantesimi al 9° livello (prezzo
-SRD: livello × 9 × 10 mo): *silenzio* su un sasso 180 mo, e dura 9 round, quindi va lanciato alla
-postierla, non in cappella: 9 round sono meno di un minuto;
+SRD: livello × livello dell'incantatore × 10 mo). La pietra di *silenzio*: la
+lancia su un sasso all'8° livello `[CANONE — DM 2026-09-30, D12]`, 160 mo, e
+dura 8 round (la durata SRD, 1 round per livello): basta per l'atterraggio e la
+tenda, non per il volo, quindi va lanciata alla postierla, non in cappella;
 *rimuovi paralisi* 180 mo; *rimuovi maledizione* 270 mo. Ogni slot di 3°
 che spende stanotte manca all'alba, come dice la sua scheda.
 
@@ -1258,7 +1265,7 @@ Il rischio non sparisce, si sposta alla tenda e sull'orologio del drago.
 |---|---|---|
 | *Volare*, pozione (5° livello) | 5 minuti | 18 m di velocità, circa 1.800 m in tutto: basta per l'andata, **non** per il ritorno |
 | *Invisibilità*, pozione comprata (3°) | 3 minuti | 1 km lo copre appena. Quelle del re durano 12 minuti |
-| *Silenzio* sulla pietra | quanto dice la pietra: un *silenzio* SRD dura 1 round per livello `[DM: la pietra è quella che il tavolo ha comprato]` | sopra i 6 m di quota nessuno a terra è nella bolla. Dentro: niente incantesimi con componente verbale, niente voce |
+| *Silenzio* sulla pietra | 8 round: la lancia Brynja all'8° livello, 1 round per livello come nell'SRD `[CANONE — DM 2026-09-30, D12]` | sopra i 6 m di quota nessuno a terra è nella bolla. Dentro: niente incantesimi con componente verbale, niente voce |
 
 - **Le tacche** `[CANONE — DM 2026-09-26]`. Il volo costa **1 tacca** invece
   delle 2 dello skill challenge.
@@ -1357,7 +1364,8 @@ e il drago arriva sull'assalto.
   finiti. Gira sul campo e li cerca: si gioca il ritorno a piedi della Scena 8 a
   Nascondersi **CD 26** (22, più 4 per il corno), e al primo blocco fallito li
   trova; chi gli passa entro 18 m lo sente anche invisibile. Se li trova, soffia
-  una volta e se ne va. All'alba il duello si fa lo stesso, ma **senza sorpresa**: il drago
+  una volta e se ne va **sulle colline**, come ogni notte, e torna solo al corno
+  successivo `[CANONE — DM 2026-09-30, D29]`. All'alba il duello si fa lo stesso, ma **senza sorpresa**: il drago
   parte già in quota e conosce il loro odore.
 - **Se rubano o rompono il corno**, all'alba nessuno chiama il drago. Arriva
   tardi, a metà mattina e da solo, furioso: le mura hanno un'ora di respiro, e
@@ -1432,8 +1440,10 @@ guardie; **Balvar** è nell'angolo in fondo, dove i bracieri non arrivano. I PG
 sono invisibili, o nascosti nel buio del fondo, ma Balvar li **legge**: il suo *Leggere il Fuori-Posto*
 percepisce chi non appartiene a questo secolo. Parla in **nanico antico**, a
 voce bassa, e nessuno nella tenda capisce: Zog'tar crede che borbotti sulle sue
-rune, come fa sempre. La conversazione con Balvar si fa **a tre passi dal
-generale**, ed è questa la tensione della scena. Quando finisce, o quando
+rune, come fa sempre. Fra i PG, i nani lo capiscono **a fatica**: tutto il senso,
+non le sfumature. Thorik lo **legge** `[CANONE — DM 2026-09-30, D19]`. La
+conversazione con Balvar si fa **a tre passi dal generale**, ed è questa la
+tensione della scena. Quando finisce, o quando
 qualcuno colpisce, comincia la Scena 8.
 
 **Se sono ancora invisibili, Balvar non vede la Corona: la sente.** *Leggere il
@@ -1471,9 +1481,9 @@ Appendice A)*
 #### Chi è
 
 Un **nano dello scudo**, vecchio, esiliato da Hammerfist prima che i PG
-nascessero — anzi: prima che nascessero i bisnonni dei nani che i PG hanno
-appena conosciuto. Era il **runaio della fortezza**, quello che incideva le
-protezioni sulle porte. Adesso incide per Zog'tar, e Abbathor gli tiene la
+nascessero. Era già un mastro runaio, di altre fortezze, quando Hammerfist fu
+eretta: ci arrivò per la sua abilità, e ne divenne il **runaio**, quello che
+incideva le protezioni sulle porte `[CANONE — DM 2026-09-30, D7]`. Adesso incide per Zog'tar, e Abbathor gli tiene la
 mano ferma.
 
 Non comanda l'orda. **Consiglia**, e per questo è più pericoloso del generale:
@@ -1606,7 +1616,8 @@ e lo odia. Questo aggancia direttamente il duello (Scena 11):
 | **Non se ne accorgono** | il duello va come scritto |
 | **Individuano la runa** (Sapienza Magica **CD 24**, o Conoscenze storia CD 22 per riconoscere il nanico antico — **è scritta, quindi si legge**) | sanno dove colpire. **Quando**: di notte il drago è sulle colline, quindi la runa si vede all'alba, nel duello, con un'azione di movimento entro 9 m. Nella tenda si legge la **gemella** sul corno (Scena 6), che dice dove sta l'altra; e Balvar, se è recuperato, lo dice lui |
 | **Colpiscono la scaglia** | **regola della casa** `[INFERRED — needs DM confirmation]`: il 3.5 non ha colpi mirati. Si attacca la CA del drago **+4**, perché il bersaglio è piccolo, e il primo colpo che va a segno **spezza la Catena** |
-| **Spezzano la Catena** | Skullcrusher **smette di combattere per l'orda**. Non diventa alleato — è un drago nero — ma se ne va, e l'assalto alle mura perde le ali. *Esito «FUGGITO» garantito, senza doverlo ridurre a ⅓ pf* |
+| **Balvar la scioglie** (solo se è recuperato) | può farlo, e lo sa, ma **solo toccando la scaglia**: cioè nel cortile, durante il duello `[CANONE — DM 2026-09-30, D23]`. Vale come spezzarla (riga sotto) |
+| **Spezzano la Catena** | Skullcrusher **smette di combattere per l'orda**. Non diventa alleato — è un drago nero — ma se ne va, e l'assalto alle mura perde le ali. Vale **FERITO GRAVE** se il drago aveva già perso almeno un terzo dei pf, altrimenti **FUGGITO** `[CANONE — DM 2026-09-30, D14]` |
 | **Uccidono Balvar prima dell'alba** | la runa resta (è incisa, non sostenuta), **ma** senza chi la rinnova si indebolisce: Skullcrusher parte con **−2 a tutto** e fugge a **metà** pf invece che a ⅓ |
 
 ⚠️ **È qui che il gruppo diventa un gruppo.** Artemis vede l'aura, Thorik legge
@@ -2119,7 +2130,7 @@ cambia davvero.
 | **Le corde delle gru sulle mura**, tese e bagnate `[INFERRED — needs DM confirmation]` | tirarle mentre è basso: prova di **Forza CD 25**, e chi aiuta dà **+2** a testa (aiutare, SRD: Forza CD 10). Non lo atterra: gli **inchioda un'ala a terra per un round**, ed è tutto quello che serve `[CANONE — DM, D18]` |
 | **La fucina originale**, accesa da stanotte | ci si può spingere dentro qualcosa. Il drago è **immune all'acido, non al calore della forgia**: 4d6 e — più utile — il fumo gli toglie l'olfatto per 1d4 round |
 | **La cisterna sotto il pozzo** | l'acido colpisce l'acqua e **ribolle**: nuvola che oscura, −4 agli attacchi di tutti. Danneggia i PG quanto lui. È una **scelta**, non un trucco |
-| **Le campane della torre nord** | il suono nell'aria fredda copre il battito d'ali: chi le suona toglie al drago il vantaggio del suono in picchiata (e si fa **bersagliare**) |
+| **Le campane della torre nord** | il suono nell'aria fredda copre il battito d'ali: con le campane suonate il drago **perde il round di sorpresa** della picchiata: Ascoltare CD 20 per sentirlo arrivare `[CANONE — DM 2026-09-30, D25]` (e chi le suona si fa **bersagliare**) |
 | **Ottocento nani che guardano** | chiamarli è gratis. Arrivano, **e muoiono**: il DM ne annota i nomi fra i caduti del 372. Il drago fa un attacco pieno su di loro invece che sui PG. Nessuno lo dice al tavolo prima |
 
 #### 🪂 Chi non vola — cosa fa nei round in quota
@@ -2163,6 +2174,9 @@ aspetta. È il momento più grosso della campagna finora: non riempirlo tu.]`
 3. **FUGGITO** (i PG scelgono la sopravvivenza / non lo intaccano): quasi illeso,
    ma **vi ha visti e riconosciuti**. → Fauci **+2 iniziativa** ma morale
    fragile (fugge sotto 75 pf invece di 50) (B4).
+**Le soglie** `[CANONE — DM 2026-09-30, D14]`: a ⅓ dei pf fugge al suo turno, a meno che nel round
+prima abbia subito almeno due colpi (allora resta un round ancora). Se Balvar è
+morto e il drago fugge a **metà** pf, l'esito è **FERITO GRAVE**.
 *Registra esito + N ferite + se Aegis Fang colpì in volo.*
 
 #### Sidebar — Scalare lo scontro (stile RHoD)
@@ -2279,7 +2293,7 @@ alla vittoria nella battaglia antica**. È adesso.
 | **Thorik** | irradia **+4 di morale** ad attacchi e tiri salvezza per ogni nano che lo veda |
 | **I nemici dei nani** | **Volontà CD 20** o **scossi** per 1 minuto |
 
-⏱️ **Durata e cadenza**: dura **fino all'alba** la prima volta, e da allora
+⏱️ **Durata e cadenza**: dura **fino all'alba del giorno dopo** la prima volta, quindi i PG arrivano a `DEF-5` con *Possenza Divina* e *Protezione dal Male* ancora addosso `[CANONE — DM 2026-09-30, D17]`; e da allora
 resta alla Corona come potere **1/settimana**. Non è una ricarica: è la cosa
 che la Corona sa fare da quando ha preso la terza pietra: l'Aura viene dal rito,
 non dal ritorno, e non aspetta che la Corona sia completa.
@@ -2362,7 +2376,7 @@ due»), e la pietra entra solo al Rituale della Scena 12.*
 | **Vogliono reclutare Thorgrim / portarlo nel futuro** | Impossibile (non è "loro"): Thorgrim resta, e la sua eco è l'affresco A3 della Sala della Forgia. Commovente: si separano da un fratello che è già polvere da mille anni. |
 | **Vogliono attaccare il drago di notte, sulle colline** | `[INFERRED — needs DM confirmation]` Si può. Le colline sono a qualche chilometro, e il drago vede al buio e sente chi è invisibile entro 18 m. Di notte non combatte per l'orda: combatte due round per orgoglio, poi vola via, perché la Catena lo lega al campo e non alle colline. Il danno che ha preso **resta** all'alba, ma il duello comincia **senza sorpresa**: li conosce. Costa **2 tacche**, e la Scena 7 resta da fare |
 | **Evitano del tutto il duello con Skullcrusher** | Difficile ma possibile (montaggio): allora il Rubino si accende comunque (la fortezza regge), ma **senza ferite ancestrali** → nessun carry-over B4 (Fauci al 1372 a piena forza). La scelta ha un prezzo futuro. |
-| **FALLIMENTO — il duello va malissimo / un PG cade / fuggono sconfitti** | Non c'è TPK: la timeline **esige** che vincano (la profezia È incisa). Se il combattimento crolla, Thorgrim e gli antenati **intervengono** e ricacciano il drago (a caro prezzo: molti nani antichi muoiono — pathos, e il DM ne annota i nomi fra i caduti del 372). I PG vincono "sporco": **nessuna ferita ancestrale** registrata, il Rubino si accende col tono «misericordia/dovere», e portano il peso di essere stati salvati dagli avi che erano venuti a salvare. |
+| **FALLIMENTO — il duello va malissimo / un PG cade / fuggono sconfitti** | Non c'è TPK: la timeline **esige** che vincano (la profezia È incisa). Se il combattimento crolla (**due PG a terra nello stesso round**, o il gruppo che **si ritira dal cortile** `[CANONE — DM 2026-09-30, D15]`), Thorgrim e gli antenati **intervengono** e ricacciano il drago (a caro prezzo: molti nani antichi muoiono — pathos, e il DM ne annota i nomi fra i caduti del 372). I PG vincono "sporco": **nessuna ferita ancestrale** registrata, il Rubino si accende col tono «misericordia/dovere», e portano il peso di essere stati salvati dagli avi che erano venuti a salvare. |
 
 ---
 
@@ -2376,13 +2390,17 @@ due»), e la pietra entra solo al Rituale della Scena 12.*
 | **Vatore segnato/derubato/ferito** (Scena 9) | sincronizzazione su Sal nel 1372 (sanguina / manca un asso / vi teme) | ARC-09 (Sal mercante-spia) | registro di fine serata + scheda di Sal |
 | **Seme del Ghostlord** (Scena 5, incontro con Zeth) | i PG assistono all'inizio della Lichificazione di Zeth (mano del Collezionista attraverso il tempo) | ARC-09 (dilemma etico di Hella su Zeth il Murato) | registro di fine serata + scheda del Ghostlord |
 | **Scelte-costo vs Zog'tar** (Scena 8) | Thorik affaticato / Cintura di Tordek «assaggiata» o disciplinata / tono del Rubino | ARC-08 (vs Fauci) | Scena 8 + B4 |
-| **Tono del Rubino** (esito duello) | «nessuna pietà» (UCCISO) / «dovere» (FERITO) / «vigile» (FUGGITO) → colore della Corona in ARC-08 | ARC-08 ingresso | registro delle conseguenze dell'arco |
+| **Tono del Rubino** (esito duello) | «nessuna pietà» (UCCISO) / «dovere» (FERITO) / «vigile» (FUGGITO) → colore della Corona in ARC-08 (vedi sotto) | ARC-08 ingresso | registro delle conseguenze dell'arco |
 | **La Senzienza arriva calda o fredda** (`DEF-5` §3, dopo il Rubino) | il ramo lo ha deciso `DEF-3` §5: se Thorik ha donato il +2 di deflessione la Corona **commenta**, se ha rifiutato **informa e basta**. ⚠️ Il freddo e' **reversibile** | ARC-08 e ARC-09, ogni volta che la Corona parla | stato degli artefatti · registro delle conseguenze |
 | **Aegis Fang allo Stage 1** (Scena 12) | l'ascia ha smesso di interrogare Thorik — **oppure** lo giudica, e il giudizio finisce la prima volta che lui rischia qualcosa di suo per Hella | ARC-08, alla prima scena che riguarda Hella o nani da proteggere | scheda di Aegis Fang + stato degli artefatti |
 | **La prima frase dell'ascia, detta dal giocatore** (`[HDYWTDT]`, Scena 12) | quella frase e' canone: ottocento nani l'hanno sentita, e a Hammerfist qualcuno la **ripetera' storta** | ARC-08, arrivo al Cuore della Montagna | registro delle conseguenze |
 | **La fucina** (Scena 5): monete, oggetti venduti, l'ascia del gelo | monete di re non ancora nati murate nella fortezza; le cose vendute tornano come reliquie `[INFERRED — needs DM confirmation]` | ARC-08, a Hammerfist | registro delle conseguenze |
 | **Cronache dei Quattro Eroi compiute** | fama crescente presso i nani → Custodi Eterni | ARC-08 E5 / Cerimonia 100 Asce | ARC-08 |
 | **Sigillo di Ossidiana** (se rubato a Vatore) | artefatto di Shar (anti-luce / furto d'ombra, divora anime) — vedi Appendice B; contrasta l'Anello di Artemis | ARC-09 | filo «[SIGILLO DI OSSIDIANA]» + scheda di Sal |
+
+**Il tono del Rubino, se i segni non concordano**: vince l'esito del duello. La
+targa, la morte di Zog'tar e il «vinto sporco» colorano solo la prima frase
+della Corona `[CANONE — DM 2026-09-30, D16]`.
 
 ---
 
@@ -2429,8 +2447,9 @@ Hammerfist** (`DEF-5`, il raccordo all'ARC-08).
 
 ### Handout giocatore
 1. **Le Cronache dei Quattro Eroi** — la pagina di profezia, consegnata alla
-   soglia prima di partire (`DEF-3` §8-ter): *«Quattro Eroi dal futuro salveranno la fortezza dalla
-   Mano Rossa e dal drago Skullcrusher il Nero»*. I giocatori scoprono di
+   soglia prima di partire (`DEF-3` §8-ter): *«Quattro Eroi salveranno la fortezza dalla
+   Mano Rossa e dal drago Skullcrusher il Nero»*, senza «dal futuro»: quello lo
+   capisce il tavolo `[CANONE — DM 2026-09-30, D33]`. I giocatori scoprono di
    **essere** la profezia (il momento più forte dell'arco).
 2. **La tabella di carry-over B4** (per il DM): esito del duello → effetto su
    Fauci nel 1372.

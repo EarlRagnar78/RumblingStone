@@ -44,6 +44,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 6 | Osservare | 20 |
 | SCENA 6 | Se un tiro va storto, FOR | 20 |
 | SCENA 6 | balza tra i detriti fluttuanti (Saltare | 25 |
+| SCENA 6 | Intrattenere (Canto) | 18 |
 | SCENA 6 | Conoscenze (religioni) | 15 |
 | SCENA 6 | trabocchetti di gravità (Riflessi | 15 |
 | SCENA 6 | 1d6), rune (Arcane | 18 |

@@ -86,6 +86,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 11 | sul gruppo più fitto (Riflessi | 26 |
 | SCENA 11 | prova di Forza | 25 |
 | SCENA 11 | Forza | 10 |
+| SCENA 11 | Ascoltare | 20 |
 | SCENA 11 | Forza | 25 |
 | SCENA 11 | 25d12+125 (287 pf), soffio 16d4 | 27 |
 | SCENA 11 | Presenza | 24 |

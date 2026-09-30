@@ -986,6 +986,16 @@ combinato che valorizza ognuno (vedi **MAPPA T-4**):
   Take 10 = 26 ✓) fino al cubo e colpisce le **Rune di Attracco** esterne,
   stabilizzando l'ingresso per far attraccare Artemis e trainare Thorik.
 
+**Da dove si salta, e quanto è lontano** `[CANONE — DM 2026-09-30, D34]`. Il
+Tempio è a **40 m**. La strada non c'è: la si crea suonando il **Diapason** e
+tenendo la musica. Ogni prova riuscita solleva dall'oceano un blocco di pietra,
+e i blocchi fanno una scala; **Tordek salta da un detrito sopra l'oceano, a
+metà strada**, e da lì al portale. La prova è quella della Frequenza (§8):
+Intrattenere (Canto) **CD 18**, l'Anello di Artemis dà +4
+`[INFERRED — needs DM confirmation: quante prove servono, e cosa costa quella
+fallita]`. Senza il Diapason (il gruppo ha saltato i Cristalli, §6) la scala non
+si alza, e restano i tre ruoli qui sopra.
+
 > **✅ CANONE GIOCATO (DM 2026-07-24) — «la salita cantata».** Al tavolo
 > l'attraversamento è stato risolto in variante: il party ha **cantato la
 > Frequenza della Confusione** e la risonanza ha **sollevato blocchi di

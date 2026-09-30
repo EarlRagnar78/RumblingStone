@@ -78,7 +78,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 
 | Scena | Luogo o momento | Pilastro | Righe |
 |---|---|---|---:|
-| SCENA 1 | la Sala | LotR + Salvatore | 13 |
+| SCENA 1 | la Sala | LotR + Salvatore | 5 |
 | SCENA 1 | l'affresco A5 | Salvatore + LotR | 9 |
 | SCENA 1 | «Il Fuoco ha purificato lo Spirito. | — | 5 |
 | SCENA 2 | le piattaforme, l'orizzonte | — | 7 |
@@ -87,17 +87,21 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 3 | Calibrazione rapida: Blast di Artemis ~28/colpo automatico; Thorik col | — | 3 |
 | SCENA 4 | il giardino dei cristalli | — | 8 |
 | SCENA 5 | (Posizione precedente — la riva dell'Oceano di Roccia, §7a — superata: | — | 2 |
-| SCENA 5 | il corridoio | Salvatore, solo per Artemis | 15 |
+| SCENA 5 | il corridoio, 1 di 3 | Salvatore, solo per Artemis | 4 |
+| SCENA 5 | il corridoio, 2 di 3 | — | 5 |
+| SCENA 5 | il corridoio, 3 di 3 | — | 4 |
 | SCENA 5 | «Bravo. Solo tu potevi vederla. Consideralo un pegno di fiducia tra fu | — | 4 |
-| SCENA 5 | (Aggiorna così la nota su Vatore al #4: non riconosce la firma di un | — | 24 |
 | SCENA 6 | l'oceano di roccia | — | 10 |
 | SCENA 6 | Sotto le dita, il mithral non è freddo: vibra appena, come un'incudine | — | 7 |
 | SCENA 7 | La stanza svanisce: sei sepolto vivo nella roccia. Panico primordiale, | — | 9 |
 | SCENA 7 | «Incudine e Martello. Ora sei completo.» | — | 1 |
-| SCENA 8 | I SEI SECONDI DELLA SOGLIA (LotR + Salvatore) | — | 24 |
+| SCENA 8 | I SEI SECONDI DELLA SOGLIA (LotR + Salvatore), 1 di 3 | — | 9 |
+| SCENA 8 | la soglia, 2 di 3 | — | 8 |
+| SCENA 8 | la soglia, 3 di 3 | — | 5 |
 | SCENA 8 | A prima | il risveglio del guardiano — LotR + Salvatore | 12 |
-| SCENA 8 | IL DISTACCO, l'Altare (Salvatore) | — | 14 |
+| SCENA 8 | IL DISTACCO, l'Altare (Salvatore), 1 di 2 | — | 5 |
+| SCENA 8 | l'Altare, 2 di 2 | — | 8 |
 | SCENA 8 | il primo scambio (coreografia, Salvatore) | — | 11 |
 | SCENA 8 | allontana*. Lottare *avvicina*, ed è l'opposto del voto (liberare l'Al | — | 5 |
-| SCENA 9 | l'Altare, Durik prende forma | Salvatore | 17 |
+| SCENA 9 | l'Altare, Durik prende forma | Salvatore | 12 |
 | SCENA 10 | la Sala | — | 5 |

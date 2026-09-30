@@ -1029,7 +1029,7 @@ sono quelle che la cappella ha già.
 
 | Pergamena | Prezzo | Quante | Da chi, e perché |
 |---|---:|---:|---|
-| *Silenzio* (chierico 2°, incantatore di 3°) | 150 mo | 2 | Brynja. Dura 3 round: basta per l'ingresso nella tenda, non per il volo. La legge un chierico o un bardo; Hella no (non è sulla lista del druido), Artemis con Usare Oggetti Magici CD 23 |
+| *Silenzio* (chierico 2°, incantatore di 3°) | 150 mo | 2 | Brynja. Dura 3 minuti (1 minuto per livello, SRD): copre l'ultimo tratto del volo e l'ingresso nella tenda, non il volo intero. La legge un chierico o un bardo; Hella no (non è sulla lista del druido), Artemis con Usare Oggetti Magici CD 23 |
 | *Rimuovi paralisi* (chierico 2°, incantatore di 3°) | 150 mo | 3 | Brynja. Sono quelle che tiene per le mura |
 | *Rimuovi maledizione* (chierico 3°, incantatore di 5°) | 375 mo | 1 | Brynja, l'ultima. Se la compra un PG, all'alba sulle mura non ce n'è |
 | *Identificare* (mago 1°, incantatore di 1°) | 125 mo | 1 | dal forziere del re, presa anni fa a un mercante. Nessuno in fortezza la sa lanciare: Moradin non dà il dominio della Magia, e Zeth è un druido. Si lancia in un'ora e brucia una perla da 100 mo, già nel prezzo. Artemis la legge con Usare Oggetti Magici CD 21 |
@@ -1037,8 +1037,10 @@ sono quelle che la cappella ha già.
 Come servizio, Brynja lancia lei gli stessi incantesimi al 9° livello (prezzo
 SRD: livello × livello dell'incantatore × 10 mo). La pietra di *silenzio*: la
 lancia su un sasso all'8° livello `[CANONE — DM 2026-09-30, D12]`, 160 mo, e
-dura 8 round (la durata SRD, 1 round per livello): basta per l'atterraggio e la
-tenda, non per il volo, quindi va lanciata alla postierla, non in cappella;
+dura **8 minuti** (la durata SRD, 1 minuto per livello): copre il volo di
+andata, che con le pozioni di *volare* dura al massimo 5 minuti, e l'ingresso
+nella tenda. Conviene lanciarla alla postierla, non in cappella, perché ogni
+minuto speso a camminare è un minuto tolto sopra il campo;
 *rimuovi paralisi* 180 mo; *rimuovi maledizione* 270 mo. Ogni slot di 3°
 che spende stanotte manca all'alba, come dice la sua scheda.
 
@@ -1265,7 +1267,7 @@ Il rischio non sparisce, si sposta alla tenda e sull'orologio del drago.
 |---|---|---|
 | *Volare*, pozione (5° livello) | 5 minuti | 18 m di velocità, circa 1.800 m in tutto: basta per l'andata, **non** per il ritorno |
 | *Invisibilità*, pozione comprata (3°) | 3 minuti | 1 km lo copre appena. Quelle del re durano 12 minuti |
-| *Silenzio* sulla pietra | 8 round: la lancia Brynja all'8° livello, 1 round per livello come nell'SRD `[CANONE — DM 2026-09-30, D12]` | sopra i 6 m di quota nessuno a terra è nella bolla. Dentro: niente incantesimi con componente verbale, niente voce |
+| *Silenzio* sulla pietra | 8 minuti: la lancia Brynja all'8° livello, 1 minuto per livello come nell'SRD `[CANONE — DM 2026-09-30, D12]`. Copre l'andata e la tenda; il ritorno no | sopra i 6 m di quota nessuno a terra è nella bolla. Dentro: niente incantesimi con componente verbale, niente voce |
 
 - **Le tacche** `[CANONE — DM 2026-09-26]`. Il volo costa **1 tacca** invece
   delle 2 dello skill challenge.

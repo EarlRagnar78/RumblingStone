@@ -286,7 +286,7 @@ il countdown è sceso.
 > in un mondo che frana. Pregate dieci minuti all'Altare e le Benedizioni si
 > riaccendono come brace ravvivata. Poi Moradin parla — non con le orecchie,
 > ma con le ossa.*
->
+
 > **MORADIN (attraverso Corona/Aegis):** *«Figli. Il Piano della Terra non vi
 > odierà col calore, come il Fuoco. Vi opprimerà col PESO. È portare una
 > montagna sulle spalle. Ma ho preparato: la vostra Pelle di Pietra diventerà
@@ -794,18 +794,18 @@ la Sentinella** (Scena 7), sul corridoio che scende verso Terros.
 > per secoli era rimasto sepolto nel muro. *Nessuno l'ha portato qui a mano:
 > è il mercato che cresce dove passa la ricchezza.*
 
-> **Read-aloud (Salvatore, solo per Artemis) — il corridoio.** *Il corridoio riprende a
+> **Read-aloud (Salvatore, solo per Artemis) — il corridoio, 1 di 3.** *Il corridoio riprende a
 > scendere, e i tuoi compagni sono già avanti: il nano coi guanti nuovi
 > cammina come se il pavimento gli dovesse dei soldi. Tu resti mezzo passo
 > indietro — e l'Anello ti morde il dito. Quel morso lì.*
->
-> *Nella parete, dove il duello ha aperto una crepa nel mithral, qualcosa
+
+> **Read-aloud — il corridoio, 2 di 3.** *Nella parete, dove il duello ha aperto una crepa nel mithral, qualcosa
 > cattura la luce in un modo che il metallo non fa: un **cabochon violetto**,
 > grande come l'unghia del pollice, incastonato nella pietra come una zecca
 > nel cuoio. È **caldo**. In un piano dove tutto è freddo educato, quella
 > cosa è tiepida come una mano appena tolta da una tasca.*
->
-> *E tu sai leggere i tagli delle gemme come altri leggono le insegne delle
+
+> **Read-aloud — il corridoio, 3 di 3.** *E tu sai leggere i tagli delle gemme come altri leggono le insegne delle
 > locande: quello non l'ha fatto la terra. Quello è stato **tagliato**, da
 > mani civili, in un posto dove esistono i banchi e i registri. Qualcuno
 > l'ha lasciata qui. Non per qualcuno: per **qualcuno come te**.*
@@ -921,8 +921,8 @@ finora la propria avidità nell'arco:
 > deciso di decidere dopo**. Il Seme resta un'offerta aperta a tempo
 > indeterminato, e Varis, quando se ne accorgerà, la leggerà come una
 > **contro-mossa**: non un pollo, non uno sfuggito, ma **qualcuno che tratta**.
-> *(Aggiorna così la nota su Vatore al #4: non riconosce la firma di un
-> debitore, riconosce quella di un collega.)*
+> Aggiorna così la nota su Vatore al #4: non riconosce la firma di un
+> debitore, riconosce quella di un collega.
 >
 > **Il dettaglio che vale la campagna: è nello zaino di TORDEK.** Artemis non
 > ha resistito alla tentazione — l'ha **rimandata**, e nel farlo l'ha
@@ -992,8 +992,7 @@ tenendo la musica. Ogni prova riuscita solleva dall'oceano un blocco di pietra,
 e i blocchi fanno una scala; **Tordek salta da un detrito sopra l'oceano, a
 metà strada**, e da lì al portale. La prova è quella della Frequenza (§8):
 Intrattenere (Canto) **CD 18**, l'Anello di Artemis dà +4
-`[INFERRED — needs DM confirmation: quante prove servono, e cosa costa quella
-fallita]`. Senza il Diapason (il gruppo ha saltato i Cristalli, §6) la scala non
+`[CANONE — DM 2026-09-30]`. Senza il Diapason (il gruppo ha saltato i Cristalli, §6) la scala non
 si alza, e restano i tre ruoli qui sopra.
 
 > **✅ CANONE GIOCATO (DM 2026-07-24) — «la salita cantata».** Al tavolo
@@ -1162,7 +1161,7 @@ gravità normale, con Terros dormiente all'altro capo della piattaforma.
 > è l'Altare stesso a fare da approdo. Il rischio «ritirata tagliata» resta,
 > in forma migliore — vedi il distacco qui sotto.
 
-> **Read-aloud — I SEI SECONDI DELLA SOGLIA (LotR + Salvatore).** *La soglia
+> **Read-aloud — I SEI SECONDI DELLA SOGLIA (LotR + Salvatore), 1 di 3.** *La soglia
 > si apre come una pupilla, e il mondo si apre con lei.*
 >
 > *Siete dentro una **bolla**. Una sfera di cristallo grande come la piazza
@@ -1171,8 +1170,8 @@ gravità normale, con Terros dormiente all'altro capo della piattaforma.
 > passano lentissime le sagome dei geodi giganti, come pesci troppo grandi
 > intorno a una lanterna. L'aria qui dentro è **pulita** — la prima aria
 > pulita da ore. Le narici se ne accorgono prima della testa.*
->
-> *Sotto gli stivali avete una lastra d'argento vivo, larga quanto la sala
+
+> **Read-aloud — la soglia, 2 di 3.** *Sotto gli stivali avete una lastra d'argento vivo, larga quanto la sala
 > comune di una locanda, incisa di rune verdi che pulsano piano. Oltre il
 > suo bordo non c'è un pavimento: c'è **niente**. Non un burrone — niente.
 > Il vostro «sotto» finisce dove finisce la lastra.*
@@ -1180,8 +1179,8 @@ gravità normale, con Terros dormiente all'altro capo della piattaforma.
 > *Sopra il centro della lastra, a un'altezza da spallate, pende una **luce
 > verde** senza catena e senza sostegno: una gemma grande come un pugno di
 > nano che gira lentissima su sé stessa e vi tinge le mani del suo colore.*
->
-> *E all'altro capo della lastra c'è una **collina**. Roccia a strati —
+
+> **Read-aloud — la soglia, 3 di 3.** *E all'altro capo della lastra c'è una **collina**. Roccia a strati —
 > basalto, granito, marmo, e una vena scura che a occhio esperto ha il
 > lucore dell'adamantio — accatastati come pagine di un libro chiuso da
 > troppo tempo. Non si muove. Non ha respiro. Occupa un terzo della
@@ -1223,13 +1222,13 @@ in linea retta a metà velocità — §0-bis). **La ritirata non viene tagliata
 da una trappola: se la tagliano da soli**, ed è molto più bello. Da qui in
 poi vale la **MAPPA T-6**.
 
-> **Read-aloud — IL DISTACCO, l'Altare (Salvatore).** *Non è la collina a muoversi per
+> **Read-aloud — IL DISTACCO, l'Altare (Salvatore), 1 di 2.** *Non è la collina a muoversi per
 > prima: è il **bordo**. Con un suono di ghiaccio che si stacca da un tetto,
 > la lastra si scolla dalla soglia — e la soglia comincia ad allontanarsi.
 > Piano. Con la calma con cui una chiatta lascia il molo mentre tu sei ancora
 > mezzo sul molo e mezzo sulla chiatta.*
->
-> *Le rune verdi sotto i vostri stivali si accendono tutte insieme, e per un
+
+> **Read-aloud — l'Altare, 2 di 2.** *Le rune verdi sotto i vostri stivali si accendono tutte insieme, e per un
 > istante avete la sensazione insopportabile che il mondo abbia deciso **dove
 > deve stare il suo centro** — e che il centro sia il posto dove state voi.
 > L'Altare si ferma. È esattamente in mezzo alla bolla, sospeso in un nulla
@@ -2041,11 +2040,11 @@ gravitazionale accanto all'Altare.
 > una faglia lontana. E la prima cosa che fa, prima ancora di guardarvi, è
 > mettersi tra il corpo che non c'è e il pericolo che non c'è più. Protegge
 > qualcuno. Anche adesso. Anche qui.*
->
-> *(Comportamento canonico — risposta di Hella alla domanda di Moradin,
+
+> Comportamento canonico — risposta di Hella alla domanda di Moradin,
 > «Protegge Hella»: Durik **si muove sempre tra Hella e la fonte di pericolo
 > percepita**. Finché lei non torna, orbita il suo corpo nella Sala; i PG lo
-> vedranno chiaramente al #3.)*
+> vedranno chiaramente al #3.
 
 > **CORREZIONE DI CANONE (importante).** I file-fonte lo chiamavano «Cane da
 > Guerra **COSTRUTTO/animato**». **Errato**, e lo stato della campagna lo segna

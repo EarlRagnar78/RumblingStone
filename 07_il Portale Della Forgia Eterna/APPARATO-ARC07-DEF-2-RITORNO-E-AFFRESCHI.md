@@ -31,7 +31,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 1 | la Sala | LotR lead + Salvatore | 9 |
 | SCENA 2 | gli affreschi, A1, 1 di 2 | LotR lead, deep time | 7 |
 | SCENA 2 | Quando siete partiti, | Casa di Davide — l'anointing dipinto | 11 |
-| SCENA 2 | Questo affresco mostra | Salvatore — la memoria che sanguina | 12 |
+| SCENA 2 | Questo affresco mostra | Salvatore — la memoria che sanguina | 11 |
 | SCENA 2 | L'affresco di Est, che era una finestra di gravità e | — | 5 |
 | SCENA 2 | 1 di 2 | Andor lead — il tempo incerto | 10 |
 | SCENA 2 | Quando posate il corpo di Hella davanti alla tela, la luce | — | 7 |

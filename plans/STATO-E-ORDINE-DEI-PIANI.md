@@ -299,10 +299,17 @@ riuscita non si sa descrivere è un lotto tagliato male.
 
 <!-- auto:begin key=decisioni-dm -->
 
-**7 aperte** · 111 chiuse — generato da `scripts/decisioni_dm.py --emit`, non si scrive a mano.
+**14 aperte** · 111 chiuse — generato da `scripts/decisioni_dm.py --emit`, non si scrive a mano.
 
 | # | Piano | Ambito | Domanda |
 |---|---|---|---|
+| **D1** | `AGENT-SKILLS` | L2 | **Il ricordo del giorno dopo sostituisce il quiz?** Proposta: il ricordo diventa il passo 7 del ciclo per tutti i master (non chiede una chiave), e il quiz resta dove una chiave approvata c'è già, oggi solo DEF-4. Cambia ADR-0075: va scritto |
+| **D2** | `AGENT-SKILLS` | L5 | **Dov'è la bozza del DM a freddo** usata il 30 settembre? Non è nel repo, né nei rami, né nelle PR aperte. Se c'è un testo, L5 parte da quello; se no, la scrivo dal piano e il DM la corregge |
+| **D3** | `AGENT-SKILLS` | L1 | **Il passaggio è la scena intera?** Nei cinque master di ARC-07 ci sono 39 scene `### SCENA`, e 4 superano le 150 righe; la più lunga, DEF-4 Scena 5, ne ha 404 (contate fino al titolo successivo di livello 1-3, quindi per difetto). Proposta: sì, la scena; una scena troppo lunga per una lettura è già un rilievo |
+| **D4** | `AGENT-SKILLS` | L4 | **Il cancello del registro parte bloccante o in avviso?** Proposta: in avviso finché le letture già fatte hanno un'impronta, poi bloccante |
+| **D5** | `AGENT-SKILLS` | L7 | **La riga `curl … \ |
+| **D6** | `AGENT-SKILLS` | L8, L9 | Partono, o restano proposte? |
+| **D7** | `AGENT-SKILLS` | — | `commit-archaeologist` resta fuori? Proposta: sì, finché la storia nel sorgente (ADR-0069) risponde |
 | **D27** | `LETTORE-PLAYTESTER` | — | **Il messaggio del 2026-09-27 si interrompe a «considera che i…».** Cosa andava considerato? |
 | **D35** | `LETTORE-PLAYTESTER` | F4 | **DEF-3, il rito quando va male** (i due 🔴 del playtester a freddo). **(a)** Gli Step 1-3 falliti dicono solo «riprova» (−2 cumulativo, 2d6 non letali, −10 min), senza tetto né uscita, e Conoscenze e Utilizzare Oggetti Magici senza gradi non si tirano oltre CD 10. Proposta: ogni step si ritenta al massimo tre volte, ognuna costa 10 minuti; al terzo fallimento lo step riesce lo stesso e il suo esito ❌ della regia resta come prezzo. Chi non ha gradi può usare la prova grezza della caratteristica (SAG per l'Invocazione, CAR per la Stabilizzazione) con −4. **(b)** Con 0 successi allo Step 5 il modulo apre «un'indagine di un'ora» ma non dice cosa fanno i PG trovata la risposta. Proposta: la risposta è occupare il Sud vuoto (un PG, o Therysol); fatto questo lo Step 5 si ritira una volta, con 2 successi su 3 |
 | **D36** | `LETTORE-PLAYTESTER` | F4 | **I 🟠 di regole di DEF-1, DEF-2 e DEF-3 che chiedono canone**, raccolti dalle letture a freddo del 2026-09-30 (`esperimenti/f4-def1-def3/`). **(a)** DEF-1: la Benedizione «ignora le penalità» ma la tabella della gravità le applica ridotte (−25%, −5): vale la tabella? **(b)** DEF-1: polvere ogni 10 minuti e stalattiti ogni 15 per tutto il viaggio, o solo come evento del d6? Proposta: solo come evento del d6, più la prova di gruppo per zona. **(c)** DEF-1: la via B contro gli Xorn non ha CD. Proposta: Intimidire o Diplomazia CD 18, come la via C; fallita, gli Xorn non sono accerchiati e si combatte senza il bonus. **(d)** DEF-1: al terzo fallimento di Thorik nel rito lo Smeraldo si incastona comunque? Proposta: sì, e il prezzo sono i malus già scritti. **(e)** DEF-2: il +1 sacro al rito viene dal toccare l'incisione o dal dormire nella Stanza? **(f)** DEF-3: la soglia dei 3 su 3 è «se Thorik rifiuta» nella Quick-Reference e «uno o nessun dono» nel §5: vale il §5? |

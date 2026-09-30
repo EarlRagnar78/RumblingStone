@@ -345,7 +345,7 @@ PIANO-MASTER-DEF**, perché ARC-08 comincia dove finisce DEF-5.
       di 9° livello; la pietra di *silenzio* è incantata all'8° (8 minuti, 160
       mo: la prima stesura diceva 8 round, ed era sbagliato). D8 (il Riflessi del Drappo) entra con F5. D10 e D26 sono metodo: il
       quiz non si fa sulle conversioni di sola forma, il cancello del registro
-      delle letture è un lotto da aprire. **D9, passo 5**: il DM ha confermato «spezzali»;
+      delle letture è un lotto da aprire (proposto come L4 di [PIANO-AGENT-SKILLS-ESTERNE](PIANO-AGENT-SKILLS-ESTERNE.md), in attesa del DM). **D9, passo 5**: il DM ha confermato «spezzali»;
       DEF-1 e DEF-2 hanno zero box oltre 12 righe, nessuna parola cambiata
 - [ ] DEF-1 (Varis), DEF-2, DEF-3: i residui dichiarati, prima che un gruppo
       nuovo li riprenda. Sono **già giocati** (`copertura-scene.json`): si

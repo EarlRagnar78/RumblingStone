@@ -234,10 +234,14 @@ Ibrido Treant, Empatia vegetale +4, Fotosintesi, Earth Dream amplificato (1/g
 
 ## §2 — LA SCENA: L'ALTARE DEL CUORE (Atlante)
 
+### SCENA 1 — L'Altare del Cuore
+
+**In scena** — Dove: l'Altare — Chi: Therysol
+
 > Il beat vive in un solo luogo — l'Altare al centro della Sala — ma è il luogo
 > più sacro dell'arco. Trattalo come un tempio, non come una stanza.
 
-> **Read-aloud (LotR lead + liturgia).** *La Sala della Forgia si è fatta
+> **Read-aloud (LotR lead + liturgia) — l'Altare.** *La Sala della Forgia si è fatta
 > silenziosa in un modo nuovo. Non il silenzio del vuoto: il silenzio di una
 > sala che trattiene il fiato. Gli otto affreschi guardano dalle pareti —
 > Moradin che forgia, i Quattro Eroi che prendono contorno, Hammerfist che
@@ -352,13 +356,17 @@ della soglia, §8-ter**. Qui è un difetto che si nota, non una promessa che si 
 
 ## §3 — IL CUORE DI MORADIN (rivelazione del reliquiario)
 
+### SCENA 2 — Il Cuore di Moradin
+
+**In scena** — Dove: l'Altare — Chi: Moradin
+
 > **MORADIN (voce dalla Corona/Aegis):** *«L'Altare al centro della Sala non è
 > solo un altare. È un RELIQUIARIO. Dentro, custodito da millenni, riposa il
 > Cuore di Moradin. Non un cuore letterale: un frammento di essenza divina
 > cristallizzata. Si usa solo per le emergenze supreme. Riportare una druida
 > dalla morte… si qualifica.»*
 
-> **Read-aloud (Salvatore — il sacro che si sente nel corpo).** *Sotto le mani
+> **Read-aloud (Salvatore, il sacro che si sente nel corpo) — l'Altare, il reliquiario.** *Sotto le mani
 > di Thorik il mithral SI APRE. Non c'erano cuciture,
 > un istante fa: ora una camera interna di trenta centimetri si schiude come un
 > fiore di metallo. Dentro, sospeso nella luce dorata, un cristallo di rubino
@@ -390,6 +398,10 @@ fiore di metallo; al rito si posa sul petto di Hella.
 ---
 
 ## §4 — IL RITO CORALE (Step 1-4, e l'apertura dello Step 5)
+
+### SCENA 3 — Il rito corale
+
+**In scena** — Dove: il cerchio — Chi: Moradin · Therysol
 
 > **Setup.** Corpo di Hella al centro, il Cuore di Moradin posato **sopra** il
 > suo cuore (allineamento preciso). I tre semi (mani + fronte). I tre officianti
@@ -457,7 +469,7 @@ Successo: l'Altare arde d'oro, il Cuore accelera a 90 bpm.
 erre battuta e le vocali brevi.
 
 **STEP 2 — Canalizzazione (Tordek · Concentrazione CD 20).**
-> *Tordek, il respiro rallenta da sé. C'è un battito — il Cuore di Moradin — e
+> **Read-aloud — il cerchio, lo Step 2.** *Tordek, il respiro rallenta da sé. C'è un battito — il Cuore di Moradin — e
 > il tuo ki lo prende come misura. L'energia della vita fluisce dal Cuore,
 > attraverso te, verso Hella. Dall'altra parte c'è una lotta: il suo spirito
 > VUOLE tornare, e la morte non molla la presa. La corda è tesa fra le due.*
@@ -484,6 +496,10 @@ Step 5 (*«Il Sud del cerchio è vuoto…»*) e passa al §5.
 
 ## §5 — I TRE DONI (il trapianto) `[CANONE — DM 2026-09-12]`
 
+### SCENA 4 — I tre Doni
+
+**In scena** — Dove: il cerchio — Chi: Moradin
+
 > **La regola d'oro.** La resurrezione **non è in ostaggio**: col Cuore, Hella
 > torna comunque. I doni comprano la **qualità del ritorno**. Moradin **chiede,
 > non impone**, e prima di chiedere dice **perché** e **a cosa serve**: il
@@ -504,7 +520,7 @@ Step 5 (*«Il Sud del cerchio è vuoto…»*) e passa al §5.
 **prima** dei tiri di Volontà. La voce di Moradin è lenta e bassa, e non
 alza mai il tono: il peso ce l'hanno le parole.
 
-> *Sul petto di Hella il Cuore batte una volta, più forte degli altri. La voce
+> **Read-aloud — il cerchio, battuta 1 di 4.** *Sul petto di Hella il Cuore batte una volta, più forte degli altri. La voce
 > che segue non passa dall'aria: arriva nello sterno, come arriva il colpo di
 > un maglio dall'altra parte della montagna.*
 >
@@ -761,6 +777,10 @@ momento entra la Custode: §6.
 
 ## §6 — IL DEBITO DELLA RADICE (il filo grigio del piano spirituale) `[CANONE — DM 2026-07-23; il ramo (A/B/C) si gioca]`
 
+### SCENA 5 — La Custode delle Radici
+
+**In scena** — Dove: la Sala — Chi: la Custode delle Radici
+
 > **Cosa fa questo filo (richiesta DM).** Riportare Hella è giusto — ma non è
 > **gratis per il mondo**. Nel viaggio, Hella scelse la **Via della Radice** e
 > fece il Voto *«io li tengo ancorati»*: la sua anima affondò radici nel **Sogno
@@ -771,7 +791,7 @@ momento entra la Custode: §6.
 > «stile Andor / non bianco né nero».
 
 **La manifestazione (allo Step 5, quando lo spirito attraversa la soglia).**
-> **Read-aloud (GoT lead — la creditrice paziente).** *Nel momento in cui lo
+> **Read-aloud (GoT lead, la creditrice paziente) — la Sala, la soglia fra i mondi.** *Nel momento in cui lo
 > spirito di Hella varca la soglia tra i mondi, la luce dorata dell'Altare
 > vacilla — e qualcos'altro è nella Sala con voi. Non un mostro: una PRESENZA.
 > Ha la forma di una donna di radici e pietra, alta come Therysol, gli occhi due
@@ -825,6 +845,10 @@ malizia (Andor: la macchina non odia, esegue).
 
 ## §7 — STEP 6 E IL RISVEGLIO (Hella torna, Durik si lega, la Collana nasce)
 
+### SCENA 6 — Il risveglio
+
+**In scena** — Dove: l'Altare — Chi: Moradin · Durik
+
 **STEP 6 — La Fusione (Moradin manifesto, 3 secondi).**
 > *Luce divina esplode dall'Altare. Per tre secondi la forma di Moradin —
 > traslucida, tre metri — appare sopra Hella, e parla con VOCE FISICA VERA, che
@@ -832,7 +856,7 @@ malizia (Andor: la macchina non odia, esegue).
 > servizio reso, per il sacrificio compiuto, per l'amicizia che vi lega.
 > Ritorna. VIVI. CRESCI. COMBATTI. In nome di Moradin, Forgiatore di Anime… RESURREZIONE!»**
 
-> **Read-aloud (Salvatore — il ritorno).** *Silenzio. Cinque secondi. Dieci. Il
+> **Read-aloud (Salvatore, il ritorno) — l'Altare.** *Silenzio. Cinque secondi. Dieci. Il
 > Cuore di Moradin, sopra il petto di Hella, rallenta: novanta battiti… sessanta…
 > si ferma. E poi — lei INSPIRA. Netto. Improvviso. Profondo, come chi riemerge
 > dall'acqua un istante prima di annegare. Il petto si alza. Ricade. RESPIRA. E
@@ -908,6 +932,10 @@ completa per il DM è in Appendice A.
 
 ## §8 — IL RACCONTO DELLE PROVE (l'asimmetria si scioglie) — spotlight di Hella
 
+### SCENA 7 — Il racconto delle prove
+
+**In scena** — Dove: la Sala — Chi: nessuno
+
 > Il momento in cui i due mondi si toccano: i PG hanno agito nel Piano della
 > Terra **senza sapere** cosa attraversava lei; lei ha viaggiato **senza sapere**
 > cosa facevano loro. Ora si raccontano. **Da' la scena alla giocatrice di Hella.**
@@ -926,7 +954,7 @@ Quando è pronta a parlare, Hella racconta le **tre prove** dell'Incudine del Mo
 **Le rivelazioni incrociate (i momenti forti):**
 - **Thorik scopre** che la presenza verde che gli alleviò il peso al Piano della
   Terra (`DEF-1` §9) **era lei**: *ha già portato peso per lui, dall'aldilà.*
-> **Read-aloud (Casa di Davide — il debito che si scioglie).** *Hella si volta
+> **Read-aloud (Casa di Davide, il debito che si scioglie) — la Sala.** *Hella si volta
 > verso Thorik, e c'è qualcosa nei suoi occhi ambra che lui non sa ancora
 > leggere.* *«Quando eri nel Piano della Terra, sotto la montagna che ti
 > schiacciava le spalle — ti sei sentito una mano fredda, una luce verde, che ti
@@ -973,6 +1001,10 @@ Proteggili. Proteggi il focolare.»*) — le tre del PDF (`DEF-2` §7) **+**:
 
 ## §8-ter — LA SOGLIA
 
+### SCENA 8 — La soglia
+
+**In scena** — Dove: l'affresco A6 — Chi: Moradin · Therysol
+
 > Riposato e riformato il cerchio, resta l'ultima soglia dell'arco: la Corona,
 > con Topazio e Smeraldo, può aprire il **portale del Tempo** (affresco A6).
 
@@ -982,7 +1014,7 @@ Proteggili. Proteggi il focolare.»*) — le tre del PDF (`DEF-2` §7) **+**:
 > e nessuno sa cosa vuol dire attraversare un varco tenuto aperto da un oggetto
 > incompleto.
 
-> **Read-aloud (Andor lead — la tensione che non alza la voce).** *L'affresco
+> **Read-aloud (Andor lead, la tensione che non alza la voce) — l'affresco A6.** *L'affresco
 > A6 non è cambiato in mille anni, ma adesso ha tre punti di luce e due sono
 > accesi. Il terzo resta un cerchio inciso e vuoto, alto sulla parete, alla
 > stessa altezza dell'incasso scoperto sulla corona. Nessuno lo ha fatto

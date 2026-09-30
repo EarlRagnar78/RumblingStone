@@ -89,9 +89,10 @@ stato d'arco); la mappa **CM-1**; l'handout **«Lo Stato dei Custodi»** (§9).
 ### Lo stato dell'ARC-07 in uscita (canone — `state.md §1/§6`)
 - **Corona di Adamantio**: **3 gemme accese** (Topazio/Tempo, Smeraldo/Terra, Rubino/Leggenda). Il Rubino si è usato **una volta sola**, come motore del ritorno; speso, **resta nell'incasso** e **la Corona si completa**: +3 e Senzienza dall'arrivo (DM, DEF-4 D6; §3).
 - **Cuore di Moradin**: **SPESO** (resurrezione).
+- **L'Aura della Forgia** (`DEF-4` Scena 12): attiva fino all'alba del giorno dopo, quindi i PG arrivano con *Possenza Divina* e *Protezione dal Male* ancora addosso `[CANONE — DM 2026-09-30, D17]`.
 - **Thorik**: **−4 DES / +2 COS / +4 CAR** permanenti; **−1 CA** se ha donato il +2 di deflessione al rito. **Hella**: viva (Ibrido Treant, Collana, Durik). **Bracieri** completi. **Ring** riforgiato.
 - **Carry-over B4** verso Fauci: registrato al `DEF-4` (esito Skullcrusher + N ferite).
-- **Countdown**: siete arrivati al **Giorno 3** (≈ March Clock Day 18-19): il **sync** con l'ARC-08. Valore preciso in consegna, secondo il registro dei riposi (`ARC07-DEF-2` §0-bis): **≈ 3g 03h** se hanno dormito prima di Terros, **≈ 3g 15h** se no. Il viaggio a −1.000 **non consuma orologio** (il Rubino riporta all'istante di partenza).
+- **Countdown**: siete arrivati al **Giorno 3** (≈ March Clock Day 18-19): il **sync** con l'ARC-08. Valore preciso in consegna, secondo il registro dei riposi (`ARC07-DEF-2` §0-bis): **≈ 3g 03h** se hanno dormito prima di Terros, **≈ 3g 15h** se no. Il viaggio a −1.000 **non consuma orologio**. Il Rubino li deposita **sempre** nel Cuore della Montagna (§3): l'arrivo è fisso, e l'orologio decide cosa è successo sopra `[CANONE — DM 2026-09-30, D31]`.
 
 ### In che stato consegni il party all'ARC-08 (per ramo)
 
@@ -99,7 +100,7 @@ Il ramo cambia **come si apre** la Battaglia di Hammerfist, non se si vince.
 
 | Orologio in consegna | Cosa trovano arrivando | Effetto sull'ARC-08 |
 |---|---|---|
-| **≈ 3g 15h** (nessun riposo prima di Terros) | l'orda è accampata, torri d'assedio quasi pronte, mura **intatte**. C'è ancora tempo per schierarsi | **Fase 0 piena**: consiglio di guerra, preparativi, scelta delle posizioni. L'ARC-08 parte come scritto |
+| **≈ 3g 15h** (nessun riposo prima di Terros: è il ramo del gruppo di oggi) | la **prima ondata è già passata** `[CANONE — DM 2026-09-30, D31]`: le mura hanno retto, i primi caduti sui camminamenti, le torri d'assedio pronte per la seconda | **Fase 0 piena**: l'orologio è ancora alto, c'è tempo per il consiglio di guerra, i preparativi e la scelta delle posizioni. L'ARC-08 parte come scritto |
 | **≈ 3g 03h** (riposo prima di Terros — ramo probabile) | la **prima ondata è già passata**: una torre in posizione a est, i primi caduti sui camminamenti, il fumo che piega col vento | **Fase 0 accorciata**: un solo giro di preparativi invece di due. I nani hanno già dei feriti da curare, e il consiglio di guerra si tiene **in piedi**, non seduti |
 | **sotto 2 giorni** (solo con altri due riposi ordinari — improbabile) | **breccia aperta**, combattimento dentro le mura | pannello velato su A8 e **Fase 0 dura** (`ARC07-DEF-2` §8) |
 
@@ -181,8 +182,10 @@ paura per i difensori — CANONE DM 2026-07-23). Vedi CM-1.
 > sola**, e dopo l'uso **la Corona si completa** (qui sotto, `[CANONE — DM, D6]`).
 
 **Meccanica.** Alla vittoria, il potere del Rubino, il *Cuore della Leggenda*
-(`PG/Artefatti/LaCorona_di_Adamantio-DM.md`), e il **Cuore di Moradin** (nella
-Forgia del 1372) agganciano i loro spiriti e li tirano attraverso le ere. **Non
+(`PG/Artefatti/LaCorona_di_Adamantio-DM.md`), e la **Forgia del 1372**, che
+fa da ancora, agganciano i loro spiriti e li tirano attraverso le ere. Il Cuore
+di Moradin è speso nella resurrezione e fa parte della Forgia: non entra in
+questa meccanica `[CANONE — DM 2026-09-30, D32]`. **Non
 atterrano nella Sala della Forgia deserta** (correzione D16 su P5-DEF §4.3): il
 Rubino li deposita nel **punto più nero della battaglia presente** — il Cuore
 della Montagna (§4).

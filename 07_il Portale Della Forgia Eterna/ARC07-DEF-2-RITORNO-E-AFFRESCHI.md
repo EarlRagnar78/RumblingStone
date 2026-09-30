@@ -23,6 +23,10 @@
 > Forgia Ricorda»**: gli otto affreschi, le Benedizioni, la Stanza della Corona.
 > Non è un dungeon di combattimento: vive di atmosfera, scelte e conseguenze.
 >
+> **Stato al tavolo**: ✅ **GIOCATO** dal gruppo di oggi: hanno dormito nella
+> Sala (R4, §0-bis) e hanno fatto il rito. Un **gruppo nuovo** trova aperte le
+> scelte che qui sono scritte come giocate (dove dormire, cosa guardare).
+>
 > **Quando si gioca**: **al ritorno dal Piano della Terra**, **prima** della
 > resurrezione di Hella (`DEF-3`). **Com'è il mondo a quel punto**: Topazio (Fuoco) e Smeraldo (Terra) presi; corpo di Hella
 > vegliato da Therysol nella Sala; il suo spirito ha già viaggiato (i PG **non
@@ -120,7 +124,8 @@ uomini»* — non è una concessione del DM.
 #### Il registro dei riposi (giocato + previsto)
 
 **Convenzione di calcolo:** il valore pubblicato **~3g 18h al rientro dal Piano
-della Terra** è l'**ancora**, e comprende già i riposi **R1 e R2**. Non
+della Terra**, calcolato con la tariffa vecchia della Sala (−6 h), è l'**ancora**;
+col ri-prezzo di R2 diventa **3g 20h**, il numero da leggere su A7 all'arrivo, e comprende già i riposi **R1 e R2**. Non
 ri-sottrarli: sono dentro. Da lì in poi il registro è additivo.
 
 | # | Dove | Stato | Effetto | Orologio |
@@ -130,7 +135,7 @@ ri-sottrarli: sono dentro. Da lì in poi il registro è additivo.
 | **R3** | Piano della Terra, prima della camera di Terros | ❌ **NON fatto** — sono entrati da Terros senza dormire `[CANONE GIOCATO 2026-07-31]` | 0 | **3g 20h** |
 | **R4** | **Sala della Forgia**, dopo Terros e prima del rito | ✅ **giocato: dormono nella Sala** `[CANONE GIOCATO]` | **−4 h** | **3g 16h** |
 | — | il rito di resurrezione | prossimo | ~1 h | 3g 15h |
-| — | viaggio a −1.000 (`DEF-4`) | previsto | **0 h** — il Rubino riporta all'istante di partenza | 3g 15h |
+| — | viaggio a −1.000 (`DEF-4`) | previsto | **0 h** — il viaggio non consuma orologio; il Rubino li riporta nel Cuore della Montagna (`DEF-5` §3) | 3g 15h |
 | — | **consegna all'ARC-08** | | | **≈ 3g 15h** |
 
 > ✅ **RAMO RISOLTO AL TAVOLO.** Hanno tirato dritto su Terros senza riposare e
@@ -236,8 +241,21 @@ davanti a un pannello completato = **Benedizione della Cronaca** (§3).
 
 ## §2 — LE DUE ZONE (Atlante)
 
+### SCENA 1 — Il ritorno nella Sala
+
+**In scena** — Dove: la Sala — Chi: Therysol
+
+**Comparse**
+
+| Chi | Com'è | Come parla |
+|---|---|---|
+| Therysol | una tiefling mezzodrago: veglia il corpo di Hella accanto all'Altare da giorni, e ora è presente (§0) | in silenzio. Se le chiedono di risvegliare Hella, spiega che serve il Cuore di Moradin e il dono di ognuno (§8) |
+
+La scena è l'arrivo nella Sala (Zona A). La Stanza della Corona (Zona B) ha la
+sua scena, la 4 (§6).
+
 ### ZONA A — La Sala della Forgia Eterna (l'ottagono divino)
-> **Read-aloud (LotR lead + Salvatore).** *Il portale vi deposita sul pavimento
+> **Read-aloud (LotR lead + Salvatore) — la Sala.** *Il portale vi deposita sul pavimento
 > di adamantio fresco, e la Sala vi accoglie come una madre accoglie i figli
 > tornati dalla guerra: senza una parola, solo con la sua immutabile luce
 > dorata. Otto pareti, otto affreschi grandi come porte di titani, e al centro
@@ -263,16 +281,7 @@ Zona **sicura**: nessun nemico. Vedi **MAPPA S-1**.
   riposo (§0-bis). Mura più segnate, orda accampata, torri ancora in costruzione.
 
 ### ZONA B — La Stanza della Corona (il luogo della morte)
-> **Read-aloud (Salvatore + Casa di Davide).** *Il Portale P1 è sempre aperto,
-> e oltre di esso c'è il posto da cui tutto è cominciato: la Stanza della
-> Corona, nel cuore del Sottosuolo, dove Hella è morta. Ma non è più la stanza
-> che avete lasciato. L'aura corrotta del santuario di Karrn il Senza-Volto —
-> il gelo, i muschi viola, le ragnatele dei drow — si sta ritirando come marea.
-> La luce sacra che scorre dal Portale sta agendo come candeggina sull'anima
-> della pietra: dove c'era muffa, ora c'è polvere di roccia pulita che brilla.
-> E sull'arco di pietra, la runa del Fuoco arde di un arancione permanente —
-> un faro. Avete riconquistato una testa di ponte. E sulla parete dietro il
-> trono, dove il sangue di Hella si è asciugato, qualcosa si sta incidendo.*
+**Read-aloud**: si legge in apertura della Scena 4 (§6), quando il gruppo passa il Portale P1.
 
 **Terreno (callout):** arena rettangolare 30×20 m (vedi **MAPPA S-2**); trono
 centrale su dais +1,5 m (ora vuoto: la Corona è di Thorik); 4 pilastri di
@@ -318,6 +327,18 @@ non un binario.
 
 ## §4 — GLI OTTO AFFRESCHI (stato dopo la Terra, interazione, cosa incidono)
 
+### SCENA 2 — Gli otto affreschi
+
+**In scena** — Dove: gli affreschi — Chi: Moradin · Aegis Fang · Hella
+
+**Comparse**
+
+| Chi | Com'è | Come parla |
+|---|---|---|
+| Moradin | la figura dipinta di A1, alta dieci metri, che batte sull'incudine. Al tocco della Corona gira la testa verso Thorik | una frase sola, per Thorik, poi sorride e torna a battere (A1). In A3 parla dopo il pianto |
+| Aegis Fang | l'ascia di Thorik, appoggiata alla cornice di A7 | vibra e parla, ed è un evento rarissimo: nomina Skullcrusher e Thorgrim (A7) |
+| Hella | la sua manifestazione in A8, per dieci battiti: semitrasparente, serena | non parla. Preme una mano sul vetro dall'interno e lascia inciso il suo simbolo |
+
 > **Proprietà comuni.** 8×5 m; cornice oro+adamantio (irremovibile, Durezza 20);
 > superficie di **vetro liquido** che si muove quando non osservata; **vetro
 > indistruttibile** (divinamente protetto). Reagiscono al tocco del portatore
@@ -325,7 +346,7 @@ non un binario.
 > CD 20.*
 
 ### A1 — «L'Alba del Mondo» (NORD · statico)
-> **Read-aloud (LotR lead — deep time) — 1 di 2.** *Il primo affresco mostra un'era in
+> **Read-aloud (LotR lead, deep time) — gli affreschi, A1, 1 di 2.** *Il primo affresco mostra un'era in
 > cui il mondo era ancora caos. Al centro, alto dieci metri, MORADIN: muscoli
 > di granito, barba intrecciata d'oro, mithral e adamantio, e negli occhi le
 > fiamme della creazione. Davanti a lui un'incudine titanica, grande quanto una
@@ -388,12 +409,13 @@ tornare — presagio della resurrezione, non garanzia.*
 > la Corona non è più posata: è FUSA alla fronte, parte di chi la porta. L'affresco si
 > ferma esattamente dove comincia il presente. Come se la Sala avesse aspettato
 > te per finire di dipingerlo.*
-> <!-- storico -->
-> ✏️ *Allineato il 2026-09-24 su decisione del DM: il box diceva «portatore
-> della Corona otto secoli fa, il Frostcleaver in pugno». Frostcleaver è di Re
-> Thorek I, suo cugino (`DEF-4` Scena 4); Thorgrim è l'antico portatore
-> di **Aegis Fang**, e il viaggio è a mille anni fa.*
-> <!-- /storico -->
+
+<!-- storico -->
+✏️ *Allineato il 2026-09-24 su decisione del DM: il box diceva «portatore
+della Corona otto secoli fa, il Frostcleaver in pugno». Frostcleaver è di Re
+Thorek I, suo cugino (`DEF-4` Scena 4); Thorgrim è l'antico portatore
+di **Aegis Fang**, e il viaggio è a mille anni fa.*
+<!-- /storico -->
 
 - **Interazione (Thorik osserva 1 min, TS Volontà CD 17 — il fallimento è il
   dono).** *Fallimento:* rivive tutto — paura, speranza, la **perdita di Hella**
@@ -441,7 +463,10 @@ occhi e diventa il pannello-conseguenza del Piano della Terra.
 > E la Corona di Thorik, con due gemme accese, risponde al suo battito.*
 
 **Attivazione:** il portale del Tempo si apre con **Topazio +
-Smeraldo** (che i PG ora hanno); il **Rubino NON apre il portale** — si
+Smeraldo** (che i PG ora hanno), ma **non adesso**: se provano ad attraversarlo
+prima del rito, il varco non si apre. Conta quattro (`DEF-3` §8-ter), e Hella è
+ancora morta `[CANONE — DM 2026-09-30]`. Lo apre la Corona alla soglia
+del `DEF-3`; il **Rubino NON apre il portale** — si
 accende **solo alla vittoria antica** e riporta i PG al 1372 (cucitura al
 Cuore della Montagna → `DEF-5`).<!-- apparato --> Coerente con `LaCorona_di_Adamantio-DM.md`,
 state.md §6, `campaign-artifacts.md`.<!-- /apparato -->
@@ -495,11 +520,15 @@ dipingendo con le loro scelte.
 
 ## §5 — LA VISIONE CONDIVISA (rito corale dei Quattro Eroi — A2)
 
+### SCENA 3 — La Visione Condivisa
+
+**In scena** — Dove: l'affresco A2 — Chi: nessuno
+
 > Il momento corale del beat: i tre vivi + il corpo di Hella davanti ad A2.
 
 **Procedura.** Thorik tocca A2 con la Corona; **tutti e 3 TS Volontà CD 18**;
 con **≥2 successi** la visione si apre per tutti.
-> **Read-aloud.** *Per dieci secondi l'affresco esplode di chiarezza su un
+> **Read-aloud — l'affresco A2, la visione.** *Per dieci secondi l'affresco esplode di chiarezza su un
 > futuro POSSIBILE, non promesso: Hammerfist salva, le bandiere naniche al
 > vento; voi quattro — **Hella viva** — davanti a Re Thorek; la mano di lei
 > nella mano di Thorik; Artemis con le ali d'ombra spiegate; Tordek in
@@ -523,6 +552,21 @@ con **≥2 successi** la visione si apre per tutti.
 
 ## §6 — LA STANZA DELLA CORONA (le incisioni-specchio)
 
+### SCENA 4 — La Stanza della Corona
+
+**In scena** — Dove: la Stanza della Corona — Chi: nessuno
+
+> **Read-aloud (Salvatore + Casa di Davide) — la Stanza della Corona.** *Il Portale P1 è sempre aperto,
+> e oltre di esso c'è il posto da cui tutto è cominciato: la Stanza della
+> Corona, nel cuore del Sottosuolo, dove Hella è morta. Ma non è più la stanza
+> che avete lasciato. L'aura corrotta del santuario di Karrn il Senza-Volto —
+> il gelo, i muschi viola, le ragnatele dei drow — si sta ritirando come marea.
+> La luce sacra che scorre dal Portale sta agendo come candeggina sull'anima
+> della pietra: dove c'era muffa, ora c'è polvere di roccia pulita che brilla.
+> E sull'arco di pietra, la runa del Fuoco arde di un arancione permanente —
+> un faro. Avete riconquistato una testa di ponte. E sulla parete dietro il
+> trono, dove il sangue di Hella si è asciugato, qualcosa si sta incidendo.*
+
 > La Sala e la Stanza sono **una sola cronaca**: ciò che la Sala dipinge, la
 > Stanza incide nella pietra dove Hella è morta. Il DM le mostri **insieme** —
 > è il cuore della richiesta «conseguenze in entrambe le stanze».
@@ -537,7 +581,7 @@ dopo lettera, la **Cronaca dei Custodi** in rune naniche:
   giorno della morte) e ora è **meno cava** — la pietra si sta *riempiendo*,
   come A2. Presagio della resurrezione, scolpito nel luogo della morte.
 
-> **Read-aloud (posando lo sguardo sull'incisione).** *Thorik, tu ricordi
+> **Read-aloud — la Stanza della Corona, l'incisione.** *Thorik, tu ricordi
 > questa parete coperta del sangue di Hella. Ora il sangue non c'è più: al suo
 > posto, la pietra si sta scolpendo da sola. C'è la Corona incisa, due gemme
 > che ardono. E c'è lei — o l'ombra di lei — scavata nel granito il giorno in
@@ -560,6 +604,9 @@ qualunque altro posto (§0-bis), la scelta è diventata un vero scambio:
 |---|---|---|
 | **Sala della Forgia** | **−4 h** | niente bonus, e A7 ticchetta sotto gli occhi |
 | **Stanza della Corona** | **−12 h** | il **+1 sacro** al primo TS del ritual-master (l'interazione qui sopra) e la scena giusta |
+
+**Per il gruppo di oggi la scelta è già fatta**: hanno dormito nella Sala (R4,
+§0-bis). La tabella vale per un gruppo nuovo.
 
 **Non suggerire tu la Sala.** Se scelgono la Stanza pagando otto ore in più per
 un +1 e per il senso della cosa, quella è esattamente la decisione che questo
@@ -588,6 +635,10 @@ rinnovabili 1/giorno tornando alla Sala.
 
 ## §7-bis — «LE QUATTRO ORE RUBATE»: cosa si sogna dormendo nella Forgia `[CANONE — DM 2026-07-31]`
 
+### SCENA 5 — Le quattro ore rubate
+
+**In scena** — Dove: la Sala — Chi: nessuno
+
 ### Prima la regola, perché è la domanda che nasce sempre
 
 **Dormire nella Sala sono otto ore vere**, e valgono **come ovunque**:
@@ -603,7 +654,7 @@ scena**: se dormono otto ore e il mondo ne conta quattro, **quattro ore devono
 stare da qualche parte**. Stanno nel sogno. Il tempo che la Forgia non spende
 fuori, lo spende **dentro di loro**.
 
-> **Read-aloud — l'addormentarsi (Salvatore + LotR).** *Il basalto è tiepido
+> **Read-aloud — la Sala, l'addormentarsi (Salvatore + LotR).** *Il basalto è tiepido
 > sotto la schiena, e la Sala fa una cosa che nessuna locanda ha mai fatto: **si abbassa
 > di tono**. La luce dorata non si spegne — si ritira, come una brace coperta
 > per la notte. L'ultima cosa prima di andare giù è un rumore
@@ -618,6 +669,8 @@ fuori, lo spende **dentro di loro**.
 pannello nuovo.** Cioè, adesso: la vittoria contro Terros è appena entrata
 nella parete. Non è ripetibile a comando — se dormono di nuovo senza aver
 compiuto nulla, la Sala tace, e quel silenzio è a sua volta un'informazione.
+Se dormono nella **Stanza della Corona** (−12 h, §6) il sogno non c'è: senza lo
+sconto non ci sono ore rubate `[CANONE — DM 2026-09-30]`.
 
 **Niente tiri. Niente CD. Nessun effetto meccanico.** È regia pura: quattro
 scene brevi, una per giocatore, giocate **una alla volta e in privato se
@@ -736,7 +789,7 @@ che lo notino, la riga sopra serve a questo — la risposta è dentro il mondo:
 | **Attaccano/danneggiano un affresco** | Il vetro è indistruttibile. Ma A1 **smette di girare la testa** a Thorik finché non c'è un atto di contrizione (una preghiera sincera, o un gesto verso Hella). La Cronaca registra anche gli affronti. |
 | **Vogliono riposare all'infinito nella Sala** | A7 **ticchetta**: mostra il countdown scendere, le mura di Hammerfist cedere. Ogni riposo extra **nella Sala** = **−4 h** (tariffa divina), **fuori** dalla Sala = **−12 h**, e in entrambi i casi un cambiamento visibile sull'affresco. Non c'è un cancello, c'è un **prezzo**. |
 | **Saltano del tutto gli affreschi** (fretta verso il rito) | Legittimo: nessun affresco è obbligatorio. Perdono le Benedizioni della Cronaca, il Bane di Aegis Fang vs Fauci (A7) e la catarsi di Thorik (A3). La resurrezione del #3 resta possibile, ma **più fredda**: nessuno ha visto la promessa. |
-| **Chiedono a Therysol di risvegliare Hella subito** | Therysol non può (non è quello il rito): spiega che serve il Cuore di Moradin e i sacrifici del party (`DEF-3`). Ma la sua veglia è **canone vivo**: raccontala (un tiefling mezzodrago che monta la guardia a una druida morta, in silenzio, da giorni). |
+| **Chiedono a Therysol di risvegliare Hella subito** | Therysol non può (non è quello il rito): spiega che serve il Cuore di Moradin e i sacrifici del party (`DEF-3`). Ma la sua veglia è **canone vivo**: raccontala (una tiefling mezzodrago che monta la guardia a una druida morta, in silenzio, da giorni). |
 | **FALLIMENTO — sprecano l'orologio** (riposi ripetuti, indugio) | Nessun «game over»: ma se il countdown A7 scende sotto **2 giorni** prima del rito, la Cronaca incide un **pannello velato** su A8 (un'ombra sul finale trionfale) e il DM apre l'ARC-08 con Hammerfist **già in breccia** (Fase 0 più dura). Il tempo è la vera risorsa di questo beat: si perde in silenzio, come in Andor. |
 
 ---
@@ -862,7 +915,7 @@ sistema «La Forgia Ricorda» promosso qui dal `DEF-1` §10.
             │                 🔲 col.adam. (sud)                 │
       [ A6 ]╲                                                    ╱[ A7 ]
    «Tempo»   ╲   († corpo di Hella — vegliato da Therysol)      ╱ «Hammerfist»
-   (→80%,    ╲                                                 ╱  LIVE ⏳3g18h
+   (→80%,    ╲                                                 ╱  LIVE ⏳3g20h
    portale)   └───────────[ A8 «Ritorno Trionfale» ]──────────┘  +Aegis Bane
                           SUD  ▲   (vuoto → 60%)
 ────────────────────────────────────────────────────────────────────────
@@ -872,7 +925,7 @@ LEGENDA · A1-A8 affreschi 8×5 m (vetro indistruttibile) · 🔲 colonne sacre
 sempre aperto. Distanze: spawn→Altare 6 m; Altare→parete 15 m; Ø 40 m.
 STATO DOPO LA TERRA: A4 chiuso · A5 si chiude («Forza Sostenuta») · A2 80%
 (4ª figura = Hella prende contorno) · A6 80% (portale del Tempo pulsa) ·
-A8 60% · A7 ⏳~3g18h. La Sala HA REGISTRATO la vittoria: mostralo.
+A8 60% · A7 ⏳~3g20h. La Sala HA REGISTRATO la vittoria: mostralo.
 ════════════════════════════════════════════════════════════════════════
 ```
 

@@ -3,36 +3,30 @@
   "moduli": [
     {
       "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
-      "perche": "master già giocato dal gruppo; il contratto entra nel lotto F4, prima che un gruppo nuovo lo riprenda (dm.py gruppo nuovo)",
+      "perche": "contratto applicato il 2026-09-30 (PIANO-LETTORE-E-PLAYTESTER F4): dieci scene, conversione di sola forma di un master già giocato",
       "regole": [
         "C1",
         "C2"
       ],
-      "contratto": false,
-      "scena": "^## §\\d+(?:-\\w+)?\\s+—",
-      "escludi": "(?i)QUICK|HIGHLIGHT|ZONE|Atlante|REGOLE|sistema definitivo|CONTINGENZE|ECHO|ECHI|AVANZAMENTO|PONTE|HANDOUT|LA FORGIA RICORDA"
+      "contratto": true
     },
     {
       "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
-      "perche": "master già giocato dal gruppo; il contratto entra nel lotto F4, prima che un gruppo nuovo lo riprenda (dm.py gruppo nuovo)",
+      "perche": "contratto applicato il 2026-09-30 (PIANO-LETTORE-E-PLAYTESTER F4): cinque scene, conversione di sola forma di un master già giocato. Il §7 (le Benedizioni) è una tabella di consultazione, non una scena: la preghiera si fa nella Sala",
       "regole": [
         "C1",
         "C2"
       ],
-      "contratto": false,
-      "scena": "^## §\\d+(?:-\\w+)?\\s+—",
-      "escludi": "(?i)QUICK|HIGHLIGHT|ZONE|Atlante|REGOLE|sistema definitivo|CONTINGENZE|ECHO|ECHI|AVANZAMENTO|PONTE|HANDOUT|LA FORGIA RICORDA"
+      "contratto": true
     },
     {
       "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
-      "perche": "master già giocato dal gruppo; il contratto entra nel lotto F4, prima che un gruppo nuovo lo riprenda (dm.py gruppo nuovo)",
+      "perche": "contratto applicato il 2026-09-30 (PIANO-LETTORE-E-PLAYTESTER F4): otto scene, conversione di sola forma di un master già giocato. Il §2-bis e il §8-bis sono intermezzi e restano fuori dalle scene: il primo lo dice il modulo («non è una scena»), il secondo è gioco di ruolo libero per scelta, senza nulla da leggere",
       "regole": [
         "C1",
         "C2"
       ],
-      "contratto": false,
-      "scena": "^## §\\d+(?:-\\w+)?\\s+—",
-      "escludi": "(?i)QUICK|HIGHLIGHT|ZONE|Atlante|REGOLE|sistema definitivo|CONTINGENZE|ECHO|ECHI|AVANZAMENTO|PONTE|HANDOUT|LA FORGIA RICORDA"
+      "contratto": true
     },
     {
       "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
@@ -116,58 +110,30 @@
     {
       "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
       "regola": "C2",
-      "scena": "§2 — INGRESSO E BENEDIZIONE (Gravità 2× «Iraconda»)",
+      "scena": "SCENA 1",
       "voce": "MORADIN",
-      "perche": "è il dio che parla attraverso il rito: una voce, non una persona da descrivere"
-    },
-    {
-      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
-      "regola": "C1",
-      "scena": "§6 — INCONTRO 2 (OPZIONALE): I CRISTALLI VIVENTI — Skill Challenge",
-      "voce": "nessun box read-aloud",
-      "perche": "🔴 da verificare nel lotto dei master ARC-07 (F4): sezione giocabile senza read-aloud"
+      "perche": "è il dio che parla attraverso la Corona e Aegis Fang: una voce, non una persona da descrivere; la sua riga sta fra le Comparse della scena"
     },
     {
       "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
       "regola": "C2",
-      "scena": "§6 — INCONTRO 2 (OPZIONALE): I CRISTALLI VIVENTI — Skill Challenge",
-      "voce": "MADRE CRISTALLO",
-      "perche": "entità del campo di cristalli, parla per un'eco: statistiche in §6"
-    },
-    {
-      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
-      "regola": "C2",
-      "scena": "§6-bis — IL SEME-MERCATO DI VARIS (quest personale di Artemis, NEL TEMPIO) `[CANONE — DM 2026-07-23; posizione aggiornata DM 2026-07-30; l'esito (accetta/rifiuta) si gioca]`",
-      "voce": "VARIS",
-      "perche": "🔴 lacuna vera: Varis ha la voce in Bestiario/png ma non la scheda d'entrata in §6/§6-bis. DEF-1 è anteriore alla norma della #169; entra col lotto dei master ARC-07 (PIANO-LETTORE-E-PLAYTESTER F4)"
-    },
-    {
-      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
-      "regola": "C2",
-      "scena": "§7 — IL TEMPIO DI MITHRAL: PUZZLE GRAVITAZIONALE + SENTINELLA",
+      "scena": "SCENA 7",
       "voce": "I BRACIERI",
-      "perche": "artefatti che parlano: la voce sta nelle loro pagine in PG/Artefatti"
+      "perche": "artefatti che parlano: la voce sta nelle loro pagine in PG/Artefatti, e la riga fra le Comparse della scena"
+    },
+    {
+      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+      "regola": "C3",
+      "scena": "SCENA 7",
+      "voce": "Dove: l'anticamera — nessun box con quel luogo nell'etichetta",
+      "perche": "il box dell'isolamento c'è e porta il luogo nell'etichetta, ma apre con i nomi dei PG in grassetto (`> **THORIK** — …`) e il rilevatore non lo riconosce come box: è il difetto noto del rilevatore dei box in STATO §0; non si riscrive la forma di un box già letto al tavolo"
     },
     {
       "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
       "regola": "C2",
-      "scena": "§9 — IL RITUALE DELLO SMERALDO: «L'Incudine del Mondo» (volontà + poteri di TUTTI)",
+      "scena": "SCENA 9",
       "voce": "MORADIN",
-      "perche": "è il dio che parla attraverso il rito: una voce, non una persona da descrivere"
-    },
-    {
-      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
-      "regola": "C1",
-      "scena": "§7 — LE BENEDIZIONI DI MORADIN (rinnovo all'Altare)",
-      "voce": "nessun box read-aloud",
-      "perche": "🔴 da verificare nel lotto dei master ARC-07 (F4): sezione giocabile senza read-aloud"
-    },
-    {
-      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
-      "regola": "C1",
-      "scena": "§8-bis — LA PRIMA ORA DOPO IL RITO",
-      "voce": "nessun box read-aloud",
-      "perche": "🔴 da verificare nel lotto dei master ARC-07 (F4): sezione giocabile senza read-aloud"
+      "perche": "è il dio che parla attraverso il rito: una voce, non una persona da descrivere; la sua riga sta fra le Comparse della Scena 1"
     },
     {
       "file": "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",

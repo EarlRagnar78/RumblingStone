@@ -321,6 +321,24 @@ PIANO-MASTER-DEF**, perché ARC-08 comincia dove finisce DEF-5.
       scala dei re in una caverna con un solo ingresso, l'*Aura di Comando* su
       più bersagli, il capo degli orchi senza statistiche) e sono corretti.
       Resta il **passo 7** (il quiz, D10)
+- [~] **DEF-1, DEF-2, DEF-3 nella forma, passi 1-4 (2026-09-30).** Scene
+      `### SCENA` (10, 5 e 8), contratto «In scena», Comparse, schede
+      d'entrata di Fauci di Diamante, la Madre Cristallo, Varis e Terros
+      (solo da testo e Bestiario), apparati generati, i tre profili in
+      `copertura-scene.json` a contratto. Nessuna parola dei box letti al
+      tavolo è cambiata: quattro box d'ingresso sono spostati nella scena in
+      cui si entra nel luogo. Il §2-bis e il §8-bis di DEF-3 e il §7 di DEF-2
+      restano fuori dalle scene, con la ragione nel profilo. **Passo 5 fermo
+      su D9** (6 box di DEF-1 e 1 di DEF-2 oltre 12 righe). **Passo 6 in
+      corso**: letture cieche in `esperimenti/f4-def1-def3/`, DEF-1 lettore
+      40 rilievi (🔴 2), DEF-2 lettore 37 (🔴 2), DEF-2 playtester 27 (🔴 2);
+      mancano il playtester di DEF-1 e le due di DEF-3, fermate dal limite di
+      sessione e rilanciate. Corretti i 🔴 che il testo risolve (stato al
+      tavolo, riposo già giocato, orologio 3g 20h, portale A6 prima del rito
+      `[INFERRED]`) e sei 🟠 (Radice a Terra, rifugio di Fauci, runa di Varis,
+      Volare di PF1e, Therysol donna, il sogno nella Stanza `[INFERRED]`).
+      Resta aperto il 🔴 del salto verso il Tempio (DEF-1 Scena 6): serve una
+      distanza dal DM
 - [ ] DEF-1 (Varis), DEF-2, DEF-3: i residui dichiarati, prima che un gruppo
       nuovo li riprenda. Sono **già giocati** (`copertura-scene.json`): si
       convertono nella forma (titoli `### SCENA`, contratto, componenti, box al

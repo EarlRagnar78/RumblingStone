@@ -464,7 +464,7 @@ occhi e diventa il pannello-conseguenza del Piano della Terra.
 **Attivazione:** il portale del Tempo si apre con **Topazio +
 Smeraldo** (che i PG ora hanno), ma **non adesso**: se provano ad attraversarlo
 prima del rito, il varco non si apre. Conta quattro (`DEF-3` §8-ter), e Hella è
-ancora morta `[INFERRED — needs DM confirmation]`. Lo apre la Corona alla soglia
+ancora morta `[CANONE — DM 2026-09-30]`. Lo apre la Corona alla soglia
 del `DEF-3`; il **Rubino NON apre il portale** — si
 accende **solo alla vittoria antica** e riporta i PG al 1372 (cucitura al
 Cuore della Montagna → `DEF-5`).<!-- apparato --> Coerente con `LaCorona_di_Adamantio-DM.md`,
@@ -669,7 +669,7 @@ pannello nuovo.** Cioè, adesso: la vittoria contro Terros è appena entrata
 nella parete. Non è ripetibile a comando — se dormono di nuovo senza aver
 compiuto nulla, la Sala tace, e quel silenzio è a sua volta un'informazione.
 Se dormono nella **Stanza della Corona** (−12 h, §6) il sogno non c'è: senza lo
-sconto non ci sono ore rubate `[INFERRED — needs DM confirmation]`.
+sconto non ci sono ore rubate `[CANONE — DM 2026-09-30]`.
 
 **Niente tiri. Niente CD. Nessun effetto meccanico.** È regia pura: quattro
 scene brevi, una per giocatore, giocate **una alla volta e in privato se

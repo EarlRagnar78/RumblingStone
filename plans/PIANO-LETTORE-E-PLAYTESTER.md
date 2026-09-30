@@ -331,14 +331,14 @@ PIANO-MASTER-DEF**, perché ARC-08 comincia dove finisce DEF-5.
       restano fuori dalle scene, con la ragione nel profilo. **Passo 5 fermo
       su D9** (6 box di DEF-1 e 1 di DEF-2 oltre 12 righe). **Passo 6 in
       corso**: letture cieche in `esperimenti/f4-def1-def3/`, DEF-1 lettore
-      40 rilievi (🔴 2), DEF-2 lettore 37 (🔴 2), DEF-2 playtester 27 (🔴 2);
-      mancano il playtester di DEF-1 e le due di DEF-3, fermate dal limite di
-      sessione e rilanciate. Corretti i 🔴 che il testo risolve (stato al
-      tavolo, riposo già giocato, orologio 3g 20h, portale A6 prima del rito
-      `[INFERRED]`) e sei 🟠 (Radice a Terra, rifugio di Fauci, runa di Varis,
-      Volare di PF1e, Therysol donna, il sogno nella Stanza `[INFERRED]`).
-      Resta aperto il 🔴 del salto verso il Tempio (DEF-1 Scena 6): serve una
-      distanza dal DM
+      40 rilievi (🔴 2), DEF-2 lettore 37 (🔴 2), DEF-2 playtester 27 (🔴 2),
+      DEF-3 lettore 46 (🔴 1) e playtester 34 (🔴 2), DEF-1 playtester 40
+      (🔴 1: Tordek solo contro la Sentinella, D37). I tre 🔴 di DEF-3 sono il rito quando va male: canone, D35. Corretti i 🔴 che il testo risolve (stato al
+      tavolo, riposo già giocato, orologio 3g 20h, portale A6 prima del rito,
+      canone del DM il 2026-09-30) e sei 🟠 (Radice a Terra, rifugio di Fauci, runa di Varis,
+      Volare di PF1e, Therysol donna, il sogno nella Stanza, canone del DM).
+      Resta aperto il 🔴 del salto verso il Tempio (DEF-1 Scena 6): D34. I 🟠
+      di regole che chiedono canone sono D36
 - [ ] DEF-1 (Varis), DEF-2, DEF-3: i residui dichiarati, prima che un gruppo
       nuovo li riprenda. Sono **già giocati** (`copertura-scene.json`): si
       convertono nella forma (titoli `### SCENA`, contratto, componenti, box al
@@ -479,6 +479,10 @@ manuali, così può misurare e segnare il problema, se esiste nell'avventura»*.
 | D31 | F4 | **L'orologio di DEF-5 si contraddice** (🔴 del lettore e del playtester a freddo). Il modulo dice che il Rubino riporta i PG «all'istante di partenza» e che il viaggio non consuma orologio; dice anche che li deposita nell'istante in cui le porte del Cuore della Montagna cedono e la fortezza sta per cadere; e la tabella dei rami dice che con 3g 15h le mura sono intatte e c'è tempo per la Fase 0. Tre cose che non stanno insieme. Proposta: il **Cuore della Montagna è fisso** (è il «punto più nero» che il Rubino sceglie, e la cucitura con ARC08-11), e il ramo dell'orologio decide **cosa c'è sopra**: le mura intatte e la Fase 0 piena, o la prima ondata già passata. Si toglie «all'istante di partenza» |
 | D32 | F4 | **Il Cuore di Moradin è speso o fa da ancora?** DEF-5 lo dà SPESO per la resurrezione di Hella, e nello stesso §3 lo fa agganciare gli spiriti dei PG «nella Forgia del 1372». Proposta: l'ancora è la **Forgia** (il luogo), non l'artefatto speso; si toglie il Cuore dalla meccanica del ritorno |
 | D33 | F3-bis | **La profezia: le Cronache in mano ai giocatori dicono già «eroi dal futuro»** (🔴 della quarta lettura di DEF-4). Il nodo della targa vieta di dire che la profezia parla di loro, la porta *Sapere* dice che è stata cancellata dalle cronache del 1372, e il testo della targa ha tre versioni («dal futuro», «dal fuoco e dalla pietra», e quella lunga del re). Proposta: la targa dice **«quattro eroi dal fuoco e dalla pietra»** in tutti e tre i punti; le Cronache che i giocatori hanno parlano di «quattro eroi» senza «dal futuro», e il «dal futuro» lo capisce il tavolo |
+| D34 | F4 | **DEF-1 Scena 6: da dove parte il salto verso il Tempio, e quanto è lontano?** (🔴 del lettore a freddo). Il modulo dice il portale a 50 m sopra l'oceano e i detriti fluttuanti, ma non la distanza dalla riva né da dove salta Tordek; la mappa T-4 lo fa partire dal pelo dell'oceano. Proposta: una catena di detriti parte dalla riva e sale fino al portale; ogni balzo è Saltare CD 25 (circa 7,5 m in 3.5), a ~20 m dal portale la gravità del Tempio cattura chi salta; il Tempio ruota sopra l'oceano a circa 40 m dalla riva, cioè sei-sette balzi |
+| D35 | F4 | **DEF-3, il rito quando va male** (i due 🔴 del playtester a freddo). **(a)** Gli Step 1-3 falliti dicono solo «riprova» (−2 cumulativo, 2d6 non letali, −10 min), senza tetto né uscita, e Conoscenze e Utilizzare Oggetti Magici senza gradi non si tirano oltre CD 10. Proposta: ogni step si ritenta al massimo tre volte, ognuna costa 10 minuti; al terzo fallimento lo step riesce lo stesso e il suo esito ❌ della regia resta come prezzo. Chi non ha gradi può usare la prova grezza della caratteristica (SAG per l'Invocazione, CAR per la Stabilizzazione) con −4. **(b)** Con 0 successi allo Step 5 il modulo apre «un'indagine di un'ora» ma non dice cosa fanno i PG trovata la risposta. Proposta: la risposta è occupare il Sud vuoto (un PG, o Therysol); fatto questo lo Step 5 si ritira una volta, con 2 successi su 3 |
+| D36 | F4 | **I 🟠 di regole di DEF-1, DEF-2 e DEF-3 che chiedono canone**, raccolti dalle letture a freddo del 2026-09-30 (`esperimenti/f4-def1-def3/`). **(a)** DEF-1: la Benedizione «ignora le penalità» ma la tabella della gravità le applica ridotte (−25%, −5): vale la tabella? **(b)** DEF-1: polvere ogni 10 minuti e stalattiti ogni 15 per tutto il viaggio, o solo come evento del d6? Proposta: solo come evento del d6, più la prova di gruppo per zona. **(c)** DEF-1: la via B contro gli Xorn non ha CD. Proposta: Intimidire o Diplomazia CD 18, come la via C; fallita, gli Xorn non sono accerchiati e si combatte senza il bonus. **(d)** DEF-1: al terzo fallimento di Thorik nel rito lo Smeraldo si incastona comunque? Proposta: sì, e il prezzo sono i malus già scritti. **(e)** DEF-2: il +1 sacro al rito viene dal toccare l'incisione o dal dormire nella Stanza? **(f)** DEF-3: la soglia dei 3 su 3 è «se Thorik rifiuta» nella Quick-Reference e «uno o nessun dono» nel §5: vale il §5? |
+| D37 | F4 | **DEF-1 Scena 7: Tordek da solo contro la Sentinella, e se cade?** (🔴 del playtester a freddo). L'anticamera immobilizza Thorik (Forza CD 28, che lui al massimo fa 27) e lascia Artemis prono e indifeso: se Tordek va a 0 pf il modulo non dice cosa succede, e gli altri due passano la scena senza agire. Proposta: la Sentinella è una prova, come Terros è un voto: quando Tordek cade la Magnetite si spegne, la Sentinella torna immobile, e si può ritentare dopo un riposo (−12 h). E per gli altri due un'azione possibile: Thorik può liberarsi con la CD 28 grazie all'aiuto di Artemis (+2), Artemis può parlare, e un suo incantesimo senza componenti somatiche passa |
 
 ## 5 · Validazione
 

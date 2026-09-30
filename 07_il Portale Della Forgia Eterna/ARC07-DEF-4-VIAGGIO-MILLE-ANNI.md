@@ -2282,7 +2282,7 @@ alla vittoria nella battaglia antica**. È adesso.
 ⏱️ **Durata e cadenza**: dura **fino all'alba** la prima volta, e da allora
 resta alla Corona come potere **1/settimana**. Non è una ricarica: è la cosa
 che la Corona sa fare da quando ha preso la terza pietra: l'Aura viene dal rito,
-non dal ritorno, e non aspetta che la Corona sia completa (D6).
+non dal ritorno, e non aspetta che la Corona sia completa.
 
 > **Read-aloud (LotR lead) — l'aura.** *Il vecchio seduto accanto all'incudine
 > alza la testa, e non guarda Thorik: guarda dietro di lui. In tutto il

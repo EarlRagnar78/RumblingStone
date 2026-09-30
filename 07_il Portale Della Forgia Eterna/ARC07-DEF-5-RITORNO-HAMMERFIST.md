@@ -192,15 +192,10 @@ della Montagna (§4).
 **In scena** — Dove: lo strappo — Chi: nessuno
 
 Si legge subito dopo l'ultimo box di `DEF-4`, quello in cui la luce comincia a
-tirare. Due battute, e nessuna azione in mezzo.
+tirare: l'accensione del Rubino e la voce di Moradin stanno là, nelle tre
+battute della Scena 13. Qui c'è solo il filo, e nessuna azione.
 
-> **Read-aloud (Casa di Davide lead) — lo strappo, 1 di 2: la voce.** *Il cortile si stacca
-> da voi come una crosta. Resta la luce rossa, e dentro la luce un suono: un
-> martello che batte una volta sola su un'incudine grande quanto il mondo. Poi il
-> martello parla. «Ben fatto, figli miei. Avete chiuso il cerchio.» Nessuno ha
-> visto muoversi una bocca. L'avete sentito nei denti.*
-
-> **Read-aloud (Salvatore) — lo strappo, 2 di 2: il filo.** *Il rosso vi allunga e vi
+> **Read-aloud (Salvatore) — lo strappo, il filo.** *Il rosso vi allunga e vi
 > stringe in un filo tirato attraverso mille anni. Non fa male: è una vertigine,
 > e davanti agli occhi le cose accadono al contrario. Il drago risale in cielo, il
 > generale si rialza dalla polvere, le mura anneriscono di secoli in pochi
@@ -212,8 +207,8 @@ All'arrivo, **Tempra CD 15** o frastornati 1 round (§2, Zona 1).
 
 ⚠️ *Il box di prima faceva accendere il Rubino «sulle mura, all'alba», e da
 «nero come ossidiana». Dopo la D6 il Rubino compare sull'incudine alla vittoria e
-si accende nel cortile, e lo racconta già l'ultimo box di `DEF-4`: qui si parte
-da dopo. La frase di Moradin resta, senza nome e più corta.*
+si accende nel cortile: l'accensione, il canto e la voce di Moradin sono tornati
+in `DEF-4`, Scena 13, dove succedono.*
 
 ---
 

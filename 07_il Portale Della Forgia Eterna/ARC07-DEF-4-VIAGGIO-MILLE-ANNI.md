@@ -2312,12 +2312,33 @@ non dal ritorno, e non aspetta che la Corona sia completa.
 
 **In scena** — Dove: l'incudine — Chi: nessuno
 
-> **Read-aloud (Casa di Davide lead) — l'incudine, la profezia compiuta.** *L'orda, senza
-> generale e senza drago a spronarla, si sfalda come sabbia. Hammerfist regge.
-> Sulla fronte di Thorik il Rubino, che all'incudine la luce l'ha presa, adesso
-> la dà: calda come sangue, e non si abbassa. Un nano vicino alla forgia si
-> toglie l'elmo e non sa perché. Poi la luce comincia a tirare,
-> e vi porta via, verso casa, verso una fortezza che brucia mille anni più in là.*
+L'accensione si legge in tre battute, di fila, senza fermarsi per i tiri.
+
+> **Read-aloud (Casa di Davide lead) — l'incudine, 1 di 3: la profezia compiuta.**
+> *L'orda, senza generale e senza drago a spronarla, si sfalda come sabbia.
+> Hammerfist regge. Sulla fronte di Thorik il Rubino, che all'incudine la luce
+> l'ha presa, adesso la dà: calda come sangue, e non si abbassa. Un nano vicino
+> alla forgia si toglie l'elmo e non sa perché.*
+
+> **Read-aloud (Salvatore) — l'incudine, 2 di 3: il canto.** *Poi la pietra
+> prende fuoco. È un fuoco rosso e oro che non brucia: canta, una nota sola,
+> lunga, che vi risuona nel cranio. Thorik sente nelle ossa una forza che non è
+> sua, e davanti agli occhi gli passano dei lampi: il generale che cade nella
+> tenda, due alberi in marcia che travolgono una fila di nemici, il momento in cui
+> ognuno di voi ha scelto. La pietra li tiene tutti, uno per uno, come si tiene
+> una cosa che servirà.*
+
+> **Read-aloud (LotR lead) — l'incudine, 3 di 3: la voce.** *Poi una voce, e
+> non è un sussurro: è una campana che batte una volta sola. «Ben fatto, figli
+> miei. Avete salvato la fortezza come doveva accadere. Avete chiuso il
+> cerchio.» Nessuno ha visto muoversi una bocca: l'avete sentita nei denti. Poi
+> la luce comincia a tirare, e vi porta via, verso casa, verso una fortezza che
+> brucia mille anni più in là.*
+
+✏️ *I lampi della battuta 2 si adattano a quello che il tavolo ha fatto davvero:
+gli alberi in marcia sono i Treant di Hella; se non hanno caricato, il lampo è
+un'altra scelta sua. Il resto non
+si tocca.*
 
 ⚠️ *Il box di prima chiamava il Rubino «la terza gemma, muta da sempre»; ma
 l'incasso è vuoto per tutto l'arco (e Balvar lo dice: «Tu ne hai

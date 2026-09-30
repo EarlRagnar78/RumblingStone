@@ -307,8 +307,9 @@ PIANO-MASTER-DEF**, perché ARC-08 comincia dove finisce DEF-5.
 - [x] DEF-5 per primo, passi 1-6 (2026-09-30). Tre scene `### SCENA` col
       contratto «In scena»; schede d'entrata di Re Thorek e Madre Dana (da
       `ARC08-01-GUIDA-DM` e dal Bestiario, niente di inventato); i box riscritti
-      al metro, e quello del Rubino «sulle mura» tolto perché dopo la D6 lo
-      racconta già DEF-4; la Tempra (il contraccolpo del salto, `[INFERRED]`);
+      al metro; l'accensione del Rubino, che DEF-5 metteva «sulle mura», torna
+      su richiesta del DM in DEF-4 Scena 13, in tre battute con la voce di
+      Moradin, e DEF-5 parte dal filo; la Tempra (il contraccolpo del salto, `[INFERRED]`);
       l'orco dell'SRD per la pulizia; il gesto a testa nel round di sorpresa.
       Letture a freddo prima di toccare (`esperimenti/def5-ciclo/`): lettore 46
       rilievi (🔴 3), playtester 18 (🔴 1). Due 🔴 su tre del lettore erano la

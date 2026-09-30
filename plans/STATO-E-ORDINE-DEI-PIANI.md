@@ -21,7 +21,7 @@
 > diventa ▶. Le sezioni §6-§10 restano come diario (il perché di ogni scelta)
 > e non si aggiornano più.
 
-**Ultimo aggiornamento**: 2026-09-30, dopo il merge della #182 (`c80af16`) e della #183 (`ac97197`): DEF-4 pronto per la prossima serata, ARC-07 al ciclo del master con DEF-5 ai passi 1-6, e la prova cieca di `P-ABITATO` riuscita. Le righe marcate *(PR #183)* e *(30 settembre)* qui sotto dicono cosa è fatto e cosa resta; il dettaglio è in [LETTORE-PLAYTESTER](PIANO-LETTORE-E-PLAYTESTER.md) F3-bis e F4. Prima: il 2026-09-25, dopo il merge delle #170-#174 (`eef36a9`) e della #176, e i lotti 2f e 2g di CICLO-SESSIONE. Cosa ha chiuso la #169 e cosa ha lasciato aperto: §11. La storia delle scelte fuori stampa e il conto delle marcature aperte: §12.
+**Ultimo aggiornamento**: 2026-09-30, dopo il merge della #182 (`c80af16`), della #183 (`ac97197`) e della #184. **La fotografia della tornata, con i numeri, i piani aperti e le decisioni per piano, è il §14.** DEF-4 pronto per la prossima serata, ARC-07 al ciclo del master con DEF-5 ai passi 1-6, e la prova cieca di `P-ABITATO` riuscita. Le righe marcate *(PR #183)* e *(30 settembre)* qui sotto dicono cosa è fatto e cosa resta; il dettaglio è in [LETTORE-PLAYTESTER](PIANO-LETTORE-E-PLAYTESTER.md) F3-bis e F4. Prima: il 2026-09-25, dopo il merge delle #170-#174 (`eef36a9`) e della #176, e i lotti 2f e 2g di CICLO-SESSIONE. Cosa ha chiuso la #169 e cosa ha lasciato aperto: §11. La storia delle scelte fuori stampa e il conto delle marcature aperte: §12.
 
 | | Cosa | Classe | Dove sta il dettaglio | Da dove si parte |
 |---|---|---|---|---|
@@ -1102,3 +1102,106 @@ tema. Le 20 tabelle a due o più pagine dal loro testo si possono avvicinare
 solo spezzando le sequenze di tabelle nei master, o forzandone qualcuna in
 colonna col marcatore: è una scelta di chi scrive, caso per caso.
 
+
+---
+
+## 14 · Il punto al 30 settembre: cosa si è mosso, cosa resta, cosa aspetta il DM
+
+Il DM, il 2026-09-30: *«fai un piano che segna il progresso e cosa rimane da
+fare, aggiornando tutto l'elenco dei piani»*. La lista viva resta il §0; questa
+sezione è la fotografia della tornata 27-30 settembre, con i numeri, per chi
+riparte da una chat nuova.
+
+### 14.1 · I piani, contati da `INDEX.md`
+
+| Stato | Quanti |
+|---|---:|
+| ✅ o 🟢 chiusi o eseguiti | 32 |
+| 🟡 in corso | 11 |
+| 🔵 pianificati o proposti, non partiti | 8 |
+| **In tutto** | **51** |
+
+### 14.2 · Cosa si è mosso in questa tornata
+
+| Piano | Prima | Adesso | Con cosa |
+|---|---:|---:|---|
+| LETTORE-E-PLAYTESTER | ~75% | **~85%** | DEF-4 pronto per la serata (#183); DEF-5 ai passi 1-6 del ciclo; quattro letture cieche su DEF-4, due su DEF-5; la prova cieca di `P-ABITATO` riuscita; il banco e la regola dei riposi (#183) |
+| MASTER-DEF-ARC08-ARC09 | 0%, aperto il 27 | **~15%** | D1-D3 decise, A1 approvato, A2 misurato, ADR-0075 (#182) |
+| Le decisioni del DM | 67 chiuse, 22 aperte | **80 chiuse**, 34 aperte | chiuse D1-D6, D11, D13, D18, D20, D22, D24 di LETTORE e la forma di D28; aperte le nuove che le letture hanno trovato (D12-D33) |
+
+Le misure della prosa, sulle letture cieche (agenti diversi a ogni giro):
+
+| Master | Lettore, 🔴 | Playtester, 🔴 |
+|---|---|---|
+| DEF-4 | 2 → 2 → 1 → 1 | 2 → 1 → 0 → 0 |
+| DEF-5 | 3 → **1** | 1 → **1** |
+
+Il 🔴 che resta in DEF-4 è nuovo (D33, la profezia); quello di DEF-5 è l'orologio
+(D31). Tutti e due sono canone.
+
+### 14.3 · I piani aperti, e da dove riparte ognuno
+
+| Piano | % | Il prossimo passo | Chi |
+|---|---:|---|---|
+| LETTORE-E-PLAYTESTER | ~85 | F4: DEF-1, 2, 3 nella forma del ciclo; il quiz di DEF-5 dopo D10; F5 gli stand-alone | agente |
+| MASTER-DEF-ARC08-ARC09 | ~15 | A3: il canone di ARC-08 contro lo stato del tavolo, dopo F4 | agente, poi DM |
+| REVISIONE-ARC07 | ~95 | le sessioni giocate al tavolo | tavolo |
+| REVISIONE-TRASVERSALE | ~90 | T8 e T9, legati al tavolo | tavolo |
+| DRAPPO-DI-TARSILIA | ~90 | L6 e il collaudo | DM |
+| MISURA-EDITORIALE-STANDARD | ~90 | la soglia κ ≥ 0,6 prima di entrare in CI | agente |
+| INTEGRAZIONE-PIPELINE-MAPPE | ~92 | collaudo al tavolo | DM |
+| RIPRESA-PR-ABBANDONATE | ~88 | 3d (D2, il collaudo SDXL) e 4d-4h, uno alla volta | DM, poi agente |
+| PORTARE-IL-MESTIERE-DEI-BANCHI | ~25 | S2-S4 sui master, dopo D3 | agente |
+| PRATICHE-DI-INGEGNERIA | 25 | PI-6, PI-2, PI-5, PI-4 | agente |
+| CICLO-DI-SESSIONE-E-MENU | ~12 | la Fase 0, dopo D1-D6 | DM, poi agente |
+| RICONCILIAZIONE-PR-APERTE | 3/7 | le due decisioni sul simbolo ⬛ | DM |
+| PIPELINE-IBRIDE | 10 | D1-D4 | DM |
+| EDITOR-VISUALE-MAPPE | ~9 | E0 | agente |
+| MARCATURA-DEGLI-INCONTRI | 0 | il primo lotto con `validate_modules --tetto-el` | agente |
+| LEVEL-DESIGN-E-INQUADRATURA | 0 | C2, dopo il linter di VENDIBILITA | agente |
+| RICERCA-MESTIERE-CARTOGRAFO | 0 | le quattro domande al DM, una bloccante | DM |
+| VENDIBILITA | 7 | **non autorizzato**: si parte solo su richiesta del DM | DM |
+| **Il lotto mappe D28** (dentro LETTORE) | 0 | sezione a livelli di Hammerfist 372 e griglie di fucina, gallerie, alchimista, cappella, armeria | agente, con `rumblingstone-mapmaking` |
+
+### 14.4 · Le PR aperte che non sono su `main`
+
+Il DM ha chiesto di fondere prima le PR con piani aperti. Misurato il
+2026-09-30, con la storia intera (`git merge-tree`):
+
+| PR | Indietro rispetto a `main` | Conflitti se si fonde | Cosa contiene che non è già su `main` |
+|---|---:|---:|---|
+| **#99** (audit, dati di campagna) | 394 commit | **52 file** | solo i lotti 4d-4h di RIPRESA-PR, da portare uno alla volta; il resto è già stato portato |
+| **#106** (catena raster, Blender) | 379 commit | **12 file** | solo 3d, che aspetta la D2 del DM (il collaudo SDXL); il resto è su `main` |
+
+**Non si fondono.** Fonderle riporterebbe su `main` versioni di agosto di file
+riscritti dopo (i master DEF, la CI, la guida delle immagini), e due ADR con
+numeri già presi. RIPRESA-PR le tiene aperte apposta come segnaposto
+(§4.12, tabella delle PR): si chiudono quando l'ultimo lotto che ne viene è su
+`main`. La terza PR aperta, la #184, è quella di questa tornata.
+
+### 14.5 · Le decisioni al DM, per piano
+
+Sono **34**, in §4 con la proposta di ognuna. Contate per piano:
+
+| Piano | Aperte | Le più urgenti |
+|---|---:|---|
+| LETTORE-PLAYTESTER | 20 | **D31** (l'orologio di DEF-5) e **D33** (la profezia), perché toccano la prossima serata; poi D12, D14-D17, D19, D21, D23, D29, D30 su DEF-4 |
+| CICLO-SESSIONE | 6 | D1-D6, che sbloccano la Fase 0 |
+| PIPELINE-IBRIDE | 4 | D1-D4 |
+| RIPRESA-PR | 2 | D2 (Gemini o SDXL), D11 (il perimetro dell'edizione) |
+| MESTIERE-BANCHI | 1 | D3 (si spezzano i box dei master già giocati?), che è anche la D9 di LETTORE |
+| RICERCA-MESTIERE | 1 | D12 (la riga 17 duplicata di una mappa) |
+
+E fuori da §4, perché sono marcature e non decisioni: le **44 `[INFERRED]` di
+DEF-4** e le nuove di DEF-5, e `state.md` sul ramo del gruppo (il Rubino che
+completa la Corona, i log delle serate del 25-27 settembre).
+
+### 14.6 · Il primo comando di una chat nuova
+
+```bash
+git fetch --prune origin
+python3 scripts/decisioni_dm.py --check      # le decisioni aperte, allineate
+python3 scripts/fase1.py <il file che tocchi> # sempre, prima di toccare
+```
+
+Poi si legge il §0 di questo file, e la riga ▶ dice da dove si parte.

@@ -123,4 +123,6 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 12 | l'incasso che si chiude | Salvatore | 4 |
 | SCENA 12 | l'ascia prende la parola | Mercer lead | 4 |
 | SCENA 12 | l'aura | LotR lead | 7 |
-| SCENA 13 | l'incudine, la profezia compiuta | Casa di Davide lead | 6 |
+| SCENA 13 | L'orda, senza generale e senza drago a spronarla, si sfalda come sabbi | — | 4 |
+| SCENA 13 | l'incudine, 2 di 3: il canto | Salvatore | 7 |
+| SCENA 13 | l'incudine, 3 di 3: la voce | LotR lead | 6 |

@@ -26,8 +26,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 
 | Scena | Luogo o momento | Pilastro | Righe |
 |---|---|---|---:|
-| SCENA 1 | lo strappo, 1 di 2: la voce | Casa di Davide lead | 5 |
-| SCENA 1 | lo strappo, 2 di 2: il filo | Salvatore | 7 |
+| SCENA 1 | lo strappo, il filo | Salvatore | 7 |
 | SCENA 2 | la caverna, il mattatoio | LotR lead | 8 |
 | SCENA 2 | la caverna, 1 di 2: le porte | Salvatore | 5 |
 | SCENA 2 | la caverna, 2 di 2: voi | Mercer lead | 5 |

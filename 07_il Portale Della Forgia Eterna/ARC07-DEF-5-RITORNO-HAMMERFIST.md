@@ -87,7 +87,7 @@ stato d'arco); la mappa **CM-1**; l'handout **«Lo Stato dei Custodi»** (§9).
 | Nemici nella caverna (~30 orchi) | **Volontà CD 25** vs Aura Corona+Cuore o **scossi 1d6 round**; ~⅔ vanno in **panico** e fuggono |
 
 ### Lo stato dell'ARC-07 in uscita (canone — `state.md §1/§6`)
-- **Corona di Adamantio**: **3 gemme accese** (Topazio/Tempo, Smeraldo/Terra, Rubino/Leggenda). Il Rubino è ora **single-use SPESO** (motore del ritorno).
+- **Corona di Adamantio**: **3 gemme accese** (Topazio/Tempo, Smeraldo/Terra, Rubino/Leggenda). Il Rubino si è usato **una volta sola**, come motore del ritorno; speso, **resta nell'incasso** e **la Corona si completa**: +3 e Senzienza dall'arrivo (DM, DEF-4 D6; §3).
 - **Cuore di Moradin**: **SPESO** (resurrezione).
 - **Thorik**: **−4 DES / +2 COS / +4 CAR** permanenti; **−1 CA** se ha donato il +2 di deflessione al rito. **Hella**: viva (Ibrido Treant, Collana, Durik). **Bracieri** completi. **Ring** riforgiato.
 - **Carry-over B4** verso Fauci: registrato al `DEF-4` (esito Skullcrusher + N ferite).
@@ -190,8 +190,8 @@ paura per i difensori — CANONE DM 2026-07-23). Vedi CM-1.
 ## §3 — L'ACCENSIONE DEL RUBINO & IL RITORNO (la regia del salto)
 
 > Riusa la regia di P5-DEFINITIVO §4.2-4.3. Il Rubino si accende **alla vittoria
-> antica** (`DEF-4` Scena 6): è il **motore del ritorno**, e resta poi
-> **speso** (single-use, `campaign-artifacts.md`).
+> antica** (`DEF-4` Scene 12-13): è il **motore del ritorno**, si usa **una volta
+> sola**, e dopo l'uso **la Corona si completa** (qui sotto, `[CANONE — DM, D6]`).
 
 > **Read-aloud (Casa di Davide — la leggenda registrata).** *Sulle mura di
 > Hammerfist antica, all'alba, il sole colpisce la Corona. Topazio. Smeraldo. E
@@ -210,6 +210,36 @@ Forgia del 1372) agganciano i loro spiriti e li tirano attraverso le ere. **Non
 atterrano nella Sala della Forgia deserta** (correzione D16 su P5-DEF §4.3): il
 Rubino li deposita nel **punto più nero della battaglia presente** — il Cuore
 della Montagna (§4).
+
+### La Corona si completa, dopo l'uso `[CANONE — DM, D6]`
+
+Il Rubino è arrivato sull'incudine del 372 da solo, alla vittoria, e la Corona
+l'ha preso; ma finché non era speso era soltanto il motore del viaggio, e la
+Corona restava a +2 e muta (`DEF-4` Scena 12). Il viaggio lo spende: quel fuoco
+non torna. La pietra però resta nell'incasso, e **da quel momento la Corona è
+intera**.
+
+- **Corona di Protezione +3** (o **+2** se al rito di Hella Thorik ha donato la
+  deflessione), attiva **dall'arrivo**: vale già nella
+  manifestazione del §4.
+- **La Senzienza** si sveglia all'arrivo, e parla la prima volta che Thorik ha
+  un respiro: al più tardi quando il §4 si chiude. I due rami sono canone
+  (`ARC07-DEF-3` §5):
+
+| Al rito di DEF-3, Thorik… | La Senzienza arriva | E la prima cosa che dice |
+|---|---|---|
+| **ha donato** il +2 di deflessione | **sveglia**, e con qualcosa da dire su di lui | *«Tre volte hai pagato tu. La terza non te l'ho chiesta io.»* |
+| **ha rifiutato** | **fredda**: i poteri sì, il tono no | una voce corretta e senza calore, che dà informazioni e non commenti. ⚠️ **Reversibile**: si scalda in ARC-09, quando lui rischia qualcosa di suo |
+
+> 🎭 **Grigio politico.** La Corona **non è dalla parte di Thorik**. Il suo
+> *Want* è la montagna, non il portatore: ha accettato tre gemme e un pegno
+> perché le servivano, e lo dirà con la stessa calma con cui dice tutto il resto.
+
+> **Read-aloud (Salvatore) — la corona intera.** *La pietra nuova ha smesso di
+> battere da sola. Per la prima volta da quando Thorik l'ha in testa, l'oro torna
+> indietro da tutte e tre le pietre, e la luce che ne esce non è di nessuna delle
+> tre: è di quello che adesso sono insieme. Il metallo gli si raffredda contro la
+> fronte, e resta caldo come una mano.*
 
 ---
 

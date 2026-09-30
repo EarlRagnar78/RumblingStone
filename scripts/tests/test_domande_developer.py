@@ -29,12 +29,12 @@ class TestD2D4IlLuogoSorvegliato(unittest.TestCase):
 
     def test_senza_risposte_scattano_tutte_e_tre(self):
         r = [x[0] for x in regole(self.CAMPO)]
-        self.assertEqual(r.count("D2"), 2)
+        self.assertEqual(r.count("D2"), 3)
         self.assertIn("D4", r)
 
     def test_con_le_risposte_tace(self):
         testo = self.CAMPO + ("Se volano, i lupi fiutano a 9 m. Chi è invisibile passa, ma "
-                              "l'allarme arriva in 2 round.\n")
+                              "l'allarme arriva in 2 round. Col silenzio, li sente solo il lupo.\n")
         self.assertEqual(regole(testo), [])
 
     def test_sentinella_maiuscola_e_un_nome(self):

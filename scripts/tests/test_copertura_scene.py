@@ -76,6 +76,55 @@ class TestLeRegoleMordono(unittest.TestCase):
         t = BUONA.replace("Chi: Sorella Brynja · la guardia della porta", "Chi: la guardia della porta")
         self.assertTrue(any(r[0] == "C4" and "brynja" in r[2] for r in regole(t, SEVERO)))
 
+    def test_C5_scheda_dopo_il_primo_incontro(self):
+        # Brynja è nel Chi della Scena 1, ma la sua scheda sta nella Scena 2.
+        t = BUONA.replace("**Scheda d'entrata — Sorella Brynja, la chierica**", "").replace(
+            "### SCENA 2 — Il campo",
+            "### SCENA 2 — Il campo\n\n**Scheda d'entrata — Sorella Brynja, la chierica**\n")
+        self.assertIn(("C5", "SCENA 1", "Sorella Brynja — la scheda sta più avanti, in SCENA 2"),
+                      regole(t, SEVERO))
+
+    def test_C5_tace_se_la_scheda_e_nella_scena_giusta(self):
+        self.assertFalse(any(r[0] == "C5" for r in regole(BUONA, SEVERO)))
+
+    def test_C6_vende_senza_prezzo(self):
+        t = BUONA.replace("| **Aspetto** | nana giovane |",
+                          "| **Aspetto** | nana giovane |\n| **Vende** | pergamene e pozioni |")
+        self.assertIn(("C6", "SCENA 1", "qualcuno vende, e la scena non ha un prezzo in mo"),
+                      regole(t, SEVERO))
+
+    def test_C6_la_bottega_di_chi_si_trova_qui(self):
+        t = BUONA + "\n| bottega | Gunnvor, la fucina |\n"
+        t = t.replace("### SCENA 2 — Il campo\n", "")
+        self.assertTrue(any(r[0] == "C6" for r in regole(t, SEVERO)))
+
+    def test_C6_tace_col_prezzo_o_con_nessuno(self):
+        con_prezzo = BUONA.replace("| **Aspetto** | nana giovane |",
+                                   "| **Aspetto** | nana giovane |\n| **Vende** | *silenzio*, 150 mo |")
+        self.assertFalse(any(r[0] == "C6" for r in regole(con_prezzo, SEVERO)))
+        vuota = BUONA + "\n| bottega | nessuno: la fucina è chiusa |\n"
+        self.assertFalse(any(r[0] == "C6" for r in regole(vuota, SEVERO)))
+
+    def test_C7_chi_si_trova_qui_incompleto(self):
+        t = BUONA + "\n**Chi si trova qui**\n\n| Ruolo | Chi |\n|---|---|\n| comando | Durin |\n| culto | Brynja |\n"
+        t = t.replace("### SCENA 2 — Il campo\n", "")
+        r = [x for x in regole(t, SEVERO) if x[0] == "C7"]
+        self.assertEqual(r, [("C7", "SCENA 1", "Chi si trova qui senza: rimedi, bottega, messaggi, guardia")])
+
+    def test_C7_tace_con_le_sei_righe(self):
+        righe = "".join(f"| {r} | nessuno |\n" for r in cs.RUOLI_QUI)
+        t = BUONA + "\n**Chi si trova qui**\n\n| Ruolo | Chi |\n|---|---|\n" + righe
+        self.assertFalse(any(x[0] == "C7" for x in regole(t, SEVERO)))
+
+    def test_C0_modulo_senza_scene(self):
+        t = BUONA.replace("### SCENA 1", "### Parte 1").replace("### SCENA 2", "### Parte 2")
+        self.assertEqual(regole(t, LEGGERO)[0][0], "C0")
+
+    def test_C0_tace_col_titolo_del_profilo(self):
+        t = BUONA.replace("### SCENA 1", "## §1 —").replace("### SCENA 2", "## §2 —")
+        prof = dict(LEGGERO, scena=r"^## §\d+")
+        self.assertFalse(any(r[0] == "C0" for r in regole(t, prof)))
+
     def test_lo_storico_non_conta(self):
         t = BUONA.replace("**BRYNJA:**", "<!-- storico -->\n**GUNNVOR:** *«x»*\n<!-- /storico -->\n**BRYNJA:**")
         self.assertNotIn(("C2", "SCENA 1", "GUNNVOR"), regole(t, LEGGERO))

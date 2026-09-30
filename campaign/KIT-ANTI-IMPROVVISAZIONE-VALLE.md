@@ -115,6 +115,23 @@ convenzione di questo tavolo, non una regola del manuale.*
 
 ---
 
+## §2-bis · La spezia del mercante, quando il modulo non ne ha una
+
+Un modulo scritto dopo il 2026-09-27 porta il suo banco
+(`skills/rumblingstone-module-standard/references/il-banco.md`). Questa tabella
+è la rete sotto, per il bottegaio che il modulo non ha previsto. Si tira **una
+volta per luogo**, non per ogni mercante: è un pizzico, non il piatto.
+
+| d8 | Il mercante… | Cosa cambia |
+|---:|---|---|
+| 1 | ha perso qualcuno per mano della Mano Rossa | a chi porta la prova di averli combattuti fa un decimo di sconto; chi ha il loro segno addosso non lo serve |
+| 2 | ha paura di tutto quello che viene da un drago | squame, denti, pelli: non le tocca, nemmeno gratis |
+| 3 | paga volentieri in merce, a malincuore in monete | un baratto vale il prezzo pieno, le monete la metà |
+| 4 | vuole sapere da dove venite prima di vendervi qualcosa di pericoloso | Diplomazia CD 15, altrimenti vende solo a chi gli ha risposto |
+| 5 | preferisce un favore all'oro | il servizio costa un favore: un messaggio, una scorta, una parola buona con qualcuno |
+| 6 | ha appena subito un furto | chi gli porta notizie del ladro ha il suo atteggiamento un passo più in alto |
+| 7-8 | vende e basta | nessuna spezia: il piatto va bene così |
+
 ## §3 · I tre PNG jolly — con lo statblocco già pronto
 
 Per la faccia che spunta e non c'era. **Nessuno dei tre ha un'agenda**: se ce

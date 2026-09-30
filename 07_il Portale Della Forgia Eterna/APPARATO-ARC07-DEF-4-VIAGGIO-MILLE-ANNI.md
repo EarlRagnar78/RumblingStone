@@ -20,12 +20,14 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | il pesatore | SCENA 5 | — | dice il peso ad alta voce, sempre in once, e aspetta che qualcuno protesti |
 | Grask, l'araldo | SCENA 6 | — | non parla: soffia |
 | la pattuglia di quattro orchi | SCENA 6 | — | litigano in orchesco su chi ha rubato il rancio |
-| il lupo da guerra | SCENA 6 | — | non abbaia finché non è sicuro. Poi non smette |
+| i cavalieri dei lupi | SCENA 6 | — | il worg non ringhia finché non è sicuro. Poi non smette, e il goblin ride |
+| le vedette goblin | SCENA 6 | — | si danno di gomito a ogni rumore, e il secondo strilla sempre prima del primo |
 | lo squadrone hobgoblin | SCENA 6 | — | ordini di una sillaba, e nessuno risponde |
 | il corridore | SCENA 6 | — | ripete il messaggio a mezza voce per non dimenticarlo |
+| **Zog'tar Deatheye** | SCENA 7 | Hammerfist. Sa uccidere diecimila uomini, non sa dove colpire le mura: per quello c'è Balvar | conta, sempre: *«due file», «tre ore», «cento»*. In ira: *«A ME, CANI! ABBATTETE LE OMBRE!»* |
 | **Balvar Fuocospento** | SCENA 7 | che Hammerfist cada **in fretta**, perché un assedio lungo è fame, e lui l'ha già vista. E che qualcuno dica che c'era | non smette di incidere mentre parla. La punta sull'ardesia continua sotto le frasi |
 | le quattro guardie | SCENA 7 | — | non parlano: al generale rispondono battendo l'asta per terra, una volta sì, due no |
-| **Zog'tar Deatheye** | SCENA 8 | Hammerfist. Sa uccidere diecimila uomini, non sa dove colpire le mura: per quello c'è Balvar | conta, sempre: *«due file», «tre ore», «cento»*. In ira: *«A ME, CANI! ABBATTETE LE OMBRE!»* |
+| il sacerdote della Mano | SCENA 8 | — | canta invece di parlare, sempre la stessa cantilena, e la interrompe solo per dare ordini |
 | **Vatore** | SCENA 9 | la stessa cosa che vorrà Sal: potere, e il conto lo pagano altri | il tono del collega, non del nemico. Monosillabi. Terrore reverenziale mal nascosto |
 | Hrodgar, il capitano delle mura | SCENA 10 | — | dà gli ordini con una parola sola |
 | **Skullcrusher il Nero** | SCENA 11 | vincere **davanti all'orda**, perché per lui il potere è quello che gli altri hanno visto | dice **il nome** dell'avversario prima di colpire, ogni volta |
@@ -47,9 +49,13 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 4 | Diplomazia/Intimidire, alternativa | 16 |
 | SCENA 5 | palla di fuoco da 5d6, Riflessi | 14 |
 | SCENA 5 | lei, Artigianato (fabbricare armi) o Valutare | 15 |
+| SCENA 5 | druido), Artemis con Usare Oggetti Magici | 23 |
+| SCENA 5 | la legge con Usare Oggetti Magici | 21 |
+| SCENA 5 | identifica una pozione con Sapienza Magica | 25 |
 | SCENA 6 | Finché dura l'invisibilità, Muoversi Silenziosamente | 20 |
 | SCENA 6 | Quando l'invisibilità finisce, Nascondersi | 22 |
-| SCENA 6 | restare immobili, Muoversi Silenz. | 18 |
+| SCENA 6 | sono due per quattro) tira Nascondersi | 22 |
+| SCENA 6 | chi è solo nascosto tira Nascondersi | 18 |
 | SCENA 6 | DES grezza | 14 |
 | SCENA 6 | Raggirare | 16 |
 | SCENA 6 | FOR grezza | 16 |
@@ -57,25 +63,32 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 6 | Cercare | 28 |
 | SCENA 6 | toglierli con Disattivare Congegni | 28 |
 | SCENA 6 | dissolvi magie contro il 13° livello | 24 |
+| SCENA 6 | piedi della Scena 8 a Nascondersi | 26 |
 | SCENA 6 | nanico antico o Sapienza Magica | 22 |
 | SCENA 7 | cosa sta incidendo sull'ardesia (Osservare | 20 |
 | SCENA 7 | Diplomazia | 18 |
 | SCENA 7 | Sapienza Magica | 24 |
 | SCENA 7 | Conoscenze storia | 22 |
 | SCENA 7 | 13d6, Riflessi | 21 |
-| SCENA 7 | blade barrier e slay living (Tempra | 20 |
+| SCENA 7 | round 1 e slay living (Tempra | 20 |
+| SCENA 8 | Dalla soglia lancia comando («Giù!», Volontà | 13 |
 | SCENA 8 | Sapienza Magica | 20 |
 | SCENA 8 | Intimidire | 22 |
 | SCENA 8 | dovrà superare Volontà | 18 |
 | SCENA 8 | è finita, quindi si tira Nascondersi | 22 |
 | SCENA 9 | Percepire Intenzioni o Diplomazia | 18 |
 | SCENA 9 | Rapidità di Mano | 22 |
+| SCENA 9 | fallisce una prova di Muoversi Silenziosamente | 20 |
 | SCENA 10 | Forza o attacco | 18 |
 | SCENA 10 | Diplomazia o Guarire | 18 |
 | SCENA 10 | Disattivare o Artigianato | 20 |
-| SCENA 11 | Cala dall'alto (Presenza Terrificante | 22 |
-| SCENA 11 | sul gruppo più fitto (Riflessi | 24 |
-| SCENA 11 | PF 300, soffio 14d4 | 26 |
+| SCENA 11 | Cala dall'alto (Presenza Terrificante | 23 |
+| SCENA 11 | sul gruppo più fitto (Riflessi | 26 |
+| SCENA 11 | prova di Forza | 25 |
+| SCENA 11 | Forza | 10 |
+| SCENA 11 | Forza | 25 |
+| SCENA 11 | 25d12+125 (287 pf), soffio 16d4 | 27 |
+| SCENA 11 | Presenza | 24 |
 | SCENA 12 | Volontà | 20 |
 
 ## L'indice dei read-aloud, in ordine di gioco
@@ -106,9 +119,8 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 10 | Il camminamento è largo quanto un tavolo da | Salvatore lead | 7 |
 | SCENA 11 | il cortile | Salvatore lead | 11 |
 | SCENA 11 | «SANGUE ANTICO. ARTEFICE DI LACRIME.»* — *e per un istante la Corona t | — | 3 |
-| SCENA 12 | l'incudine | LotR lead | 5 |
-| SCENA 12 | l'incasso che si chiude | Salvatore | 5 |
-| SCENA 12 | Want* è la montagna, non il portatore: ha accettato tre gemme e un peg | — | 2 |
+| SCENA 12 | l'incudine | LotR lead | 6 |
+| SCENA 12 | l'incasso che si chiude | Salvatore | 4 |
 | SCENA 12 | l'ascia prende la parola | Mercer lead | 4 |
 | SCENA 12 | l'aura | LotR lead | 7 |
-| SCENA 13 | l'incudine, la profezia compiuta | Casa di Davide lead | 7 |
+| SCENA 13 | l'incudine, la profezia compiuta | Casa di Davide lead | 6 |

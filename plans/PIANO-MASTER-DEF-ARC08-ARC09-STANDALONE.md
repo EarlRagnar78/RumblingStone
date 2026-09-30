@@ -70,6 +70,13 @@ restano nei loro piani e qui si citano:
 | **A3** | ARC-07 al ciclo completo, DEF-5 per primo | PIANO-LETTORE **F4** | ARC-08 comincia dove finisce DEF-5, e il canone che A3 confronta sta nei master di ARC-07 |
 | **S1** | il cancello che segnala un master senza scene | PIANO-LETTORE **F6-a** | senza, un master di ARC-08 scritto con titoli diversi da `### SCENA` passerebbe i cancelli senza essere guardato |
 
+⚠️ **Il riposo, nei sorgenti.** Dal 2026-09-27 `validate_modules` boccia
+«riposo breve/lungo» nei master DEF. Nei sorgenti di ARC-09 compare ancora
+(l'event deck della battaglia finale, il Cerchio dei Treant, il Rituale, il
+Torneo, i ganci): il lotto che li porta in un master scrive al suo posto quante
+ore e cosa danno, con la tabella di `dnd-35-srd` (combat.md, *Rest and
+recovery*). Il cancello lo ricorda da solo, al primo DEF.
+
 **Gli altri piani, controllati lo stesso giorno.** Il ciclo è entrato dove un
 lotto aperto scrive o rifinisce contenuto di gioco: PIANO-LETTORE (F4 allargato,
 F6-a nuovo), MESTIERE-BANCHI (S4 su DEF-5 passa a F4; S1-S3 aspettano la

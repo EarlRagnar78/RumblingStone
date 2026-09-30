@@ -1494,13 +1494,13 @@ monsters:
     role: caster-divine-boss
     environment: mountain
     source_file: "Bestiario/villain/balvar-fuocospento-cr13.md"
-  - id: zog-tar-deatheye-mezzo-ogre-barbaro-441f03
+  - id: zog-tar-deatheye-mezzo-ogre-barbaro-8cf8fa
     name: "Zog'tar Deatheye — mezzo-ogre barbaro"
-    cr: 14.0
+    cr: 15.0
     faction: orda-antica-372dr
     role: melee-heavy
     environment: mountain
-    source_file: "Bestiario/villain/zog-tar-deatheye-cr14.md"
+    source_file: "Bestiario/villain/zog-tar-deatheye-cr15.md"
   - id: cultista-rakshasa-rog-3-72a1a5
     name: "Cultista Rakshasa (Rog 3)"
     cr: 3.0

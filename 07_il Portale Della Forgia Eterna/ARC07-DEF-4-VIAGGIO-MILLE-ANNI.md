@@ -127,12 +127,12 @@ Cuore della Montagna, Giorno 3 dell'assedio del 1372).
 | 10 — le mura | Forza / Diplomazia-Guarire / Disattivare (scelta collettiva) | 18 / 18 / 20 |
 
 ### Il giro di Skullcrusher (boss, Scena 11) — 3.5, niente 5e
-- **Soffio acido** in **linea** di 30 m, 12d4, Riflessi CD 24 ½, **ricarica 1/1d4 round**.
-- **Full-attack** (se a terra/quota bassa): morso +26, 2 artigli +21, 2 ali +21,
-  coda +21.
+- **Soffio acido** in **linea** di 30 m, 14d4, Riflessi CD 26 ½, **ricarica 1/1d4 round**.
+- **Full-attack** (se a terra/quota bassa): morso +28, 2 artigli +23, 2 ali +23,
+  coda +23.
 - **Volo**: resta in quota, picchia e risale (Attacco in Volo) — punisce chi non
   ha gittata/volo.
-- **Presenza Terrificante** CD 22 all'ingresso (Volontà o scossi).
+- **Presenza Terrificante** CD 23 all'ingresso (Volontà o scossi), raggio 63 m.
 - **«La Forgia ricorda»**: CONTA i colpi a segno (ferite ancestrali, N≤3) e
   l'esito → tabella B4 (§7). La Cintura di Tordek **rifiuta** di attivarsi qui.
 
@@ -402,7 +402,7 @@ bianche, nessun cavaliere sul drago.)*<!-- /apparato -->
 | **Suona** | la voce gli scappa in alto quando è teso. Ride un attimo prima di dire una cosa seria |
 | **Sa** | il bosco a est delle mura, il campo dell'orda visto da lontano |
 | **Non sa** | chi siano i PG, finché non vede la Corona o sente il tuono |
-| **Eco** | è l'**antenato di Othrek**, a Hammerfist nel 1372. Se muore alle mura, la Cerimonia delle 100 Asce può portarne il nome |
+| **Eco** | è l'**antenato di Othrek**, a Hammerfist nel 1372 |
 | **Ritratto** | qui sotto. Ai giocatori si mostra dopo l'incontro, non prima |
 
 ![Durin Rocciadura, la pattuglia](Immagini/ritratti/durin-rocciadura.jpg)
@@ -556,7 +556,7 @@ la gente smette di parlare.
 | **Vuole** | che l'ascia torni in una mano che sa perché la tiene |
 | **Suona** | la voce non trema, gli occhi sì. Nomina il sangue, mai la persona: *«il sangue riconosce il sangue»* |
 | **Non combatte** | è una non-creatura: nessuno statblocco esiste, e non va inventato |
-| **Eco** | l'affresco A3 (*«Portala bene, fratello. Ora è tua.»*) e la Cerimonia delle 100 Asce in ARC-08 |
+| **Eco** | l'affresco A3 (*«Portala bene, fratello. Ora è tua.»*) |
 | **Ritratto** | qui sotto. Ai giocatori si mostra dopo l'incontro, non prima |
 
 ![Thorgrim Barbadiferro, l'antenato](Immagini/ritratti/thorgrim-barbadiferro.jpg)
@@ -636,7 +636,7 @@ l'orda, e **affrontare Skullcrusher** all'alba.
 Le mura reggono **due ore** dall'inizio dell'assalto. Il piano del re è quello
 della prova qui sopra: Zog'tar di notte, il drago all'alba.
 
-- **Gancio**: Thorgrim riecheggerà nella Cerimonia delle 100 Asce (ARC-08).
+- **Gancio**: Thorgrim riecheggia nell'affresco A3 della Sala della Forgia.
 - **I doni del re** se la fiducia è piena: le pozioni di cura e il **Torque di
   Thorek I** (§8 B).
 - ► **Esito**: *aiuti pieni / dimezzati*.
@@ -668,6 +668,12 @@ preso la prima tacca.
 > mano.<!-- storico --> Questo è il congegno che i due banchi del repo — il Palio e l'Abbazia —
 > usano per reggere la tensione, e questo master ne aveva **una menzione sola**.<!-- /storico -->
 
+**Dove si riprende** `[CANONE — DM 2026-09-27]`. Al tavolo del 25 settembre
+il gruppo ha fatto il consiglio e poi il giro della fortezza: la fucina,
+l'alchimista, la cappella, e sono scesi nelle gallerie a cercare Zeth. Sul
+foglio ci sono quindi **3 tacche**. Ne restano 5: il campo e il ritorno ci
+stanno, le otto ore di sonno no.
+
 **Si segna su un foglio, in vista.** Dal tramonto all'alba ci sono **8 tacche**,
 e quando il foglio arriva sul tavolo la prima è già segnata: il consiglio. Ogni
 tacca è mezz'ora scarsa di gioco reale.
@@ -675,7 +681,7 @@ tacca è mezz'ora scarsa di gioco reale.
 | Cosa | Tacche |
 |---|---:|
 | Il consiglio di guerra (Scena 4), già segnato | **1** |
-| Riposo **breve** · riposo **lungo** (Scena 5) | **2** · **5** |
+| Fermarsi **tre ore** · dormire **otto ore** (Scena 5) | **2** · **6** `[CANONE — DM 2026-09-27: «forse 6»]` |
 | Banchetto e benedizioni (Scena 5, facoltativo, +1 morale 12 h) | **1** |
 | Hella veglia i semi della Collana: i Treant dell'alba (Scena 5) | **1** |
 | Cercare il Mastro Costruttore Zeth (Scena 5) | **1** |
@@ -684,16 +690,17 @@ tacca è mezz'ora scarsa di gioco reale.
 | Attraversare il mare di tende (Scena 6, skill challenge) | **2** |
 | Ogni **fallimento** nello skill challenge | **+1** |
 | Parlare con Balvar invece di colpire subito (Scena 7) | **1** |
-| Tornare a piedi dalla tenda alle mura: ogni blocco **fallito** (Scena 8) | **+1** |
+| Tornare a piedi dalla tenda alle mura (Scena 8) `[CANONE — DM, D22]` | **1** |
+| … e ogni blocco **fallito** del ritorno | **+1** |
 
 **Quando le tacche finiscono, sorge il sole.** Non è una punizione: è la Scena 10
 che comincia, con i PG dove sono in quel momento.
 
-| Tacche spese all'uscita dalla tenda | Come si arriva alle mura |
+| Tacche spese all'arrivo alle mura (il ritorno compreso) | Come si arriva alle mura |
 |---|---|
-| ≤ 6 | in tempo. Si rientra, si schiera, le mura e il duello vanno come scritto |
+| ≤ 6 | in tempo. Si rientra, si schiera, le mura e il duello vanno come scritto. Le tacche che restano prima dell'8 si spendono con la tabella qui sopra, come nella Scena 5: tre ore di sosta (2) ci stanno, otto ore di sonno (6) no. La fucina, la cappella e la bottega sono aperte come nella Scena 5 |
 | 7 | 🟡 si rientra **correndo**: nessun riposo prima del drago, −1 a tutti i TS del primo round del duello (Scena 11) |
-| 8 | 🔴 **l'alba vi coglie fuori dalle mura.** Non morite: attraversate un campo che si sta svegliando. Prova di gruppo Muoversi Silenziosamente **CD 20**, poi il duello (Scena 11) comincia con i PG **fuori**, e Skullcrusher li vede per primo |
+| 8 o più | 🔴 **l'alba vi coglie fuori dalle mura.** Non morite: attraversate un campo che si sta svegliando. Prova di gruppo Muoversi Silenziosamente **CD 20**, poi il duello (Scena 11) comincia con i PG **fuori**, e Skullcrusher li vede per primo |
 
 ⚠️ **L'orologio corre sulle SCELTE, non sul tempo reale.** Un tavolo che discute
 mezz'ora su cosa fare non spende una tacca; un tavolo che decide di andare a
@@ -709,6 +716,17 @@ il bivio, ed è **vero** — non una finta scelta con una risposta giusta.
 ### SCENA 5 — La notte nella fortezza
 
 **In scena** — Dove: i quartieri ospiti · la cappella · la bottega · le gallerie · la fucina — Chi: Durin · Sorella Brynja · Kettra · Zeth · Gunnvor · il pesatore
+
+**Chi si trova qui** *(di notte, mentre la fortezza si prepara all'alba)*
+
+| Ruolo | Chi, e dove |
+|---|---|
+| comando | Re Thorek è ancora col consiglio; per i PG chi decide è **Durin**, che li accompagna |
+| culto | **Sorella Brynja**, nella cappella due porte più in là |
+| rimedi | **Kettra**, la bottega dell'alchimista in fondo al corridoio della fucina |
+| bottega | **Gunnvor** alla fucina, e il **pesatore** con la sua bilancia; prezzi e tetti nel banco qui sotto |
+| messaggi | nessuno: stanotte gli ordini li porta Durin a voce |
+| guardia | sulle mura, agli ordini di **Hrodgar**, il capitano (scheda nella Scena 10) |
 
 **I quartieri ospiti.** Durin li accompagna, e da qui all'uscita decidono
 loro: ogni cosa costa tacche. Nei quartieri ci sono il banchetto (+1 morale 12 h se
@@ -812,16 +830,32 @@ gallerie sotto la fucina; cercarlo costa una tacca)*
   dalla fazione del **Collezionista** che viaggia tra i piani e le epoche. I PG
   seminano (senza saperlo) il dilemma etico di Hella su Zeth in ARC-09. Registra
   nell'Echo Ledger (§7) e nel registro di fine serata.
-- **Le rune di Zeth, se gliele chiedono** `[CANONE — DM 2026-09-26]`. Zeth incide rune
+- **Le rune di Zeth, se gliele chiedono** `[CANONE — DM 2026-09-26 e 2026-09-27]`.
+  Zeth sa incidere rune di tre famiglie: **d'abiurazione e di protezione**;
+  **d'annullamento**, come quelle della miniera di Belkram, che spengono la
+  magia dove sono scritte; e rune che **spengono un incantesimo solo**, quello
+  che il PG gli nomina. Ma stanotte non ha il tempo di forgiarle come si deve:
+  le scrive in fretta, col gesso e col pollice, e ognuna **vale una volta**.
+  Per quelle d'annullamento e per quelle che spengono un incantesimo solo, il
+  modello SRD è *dissolvi magie* (ad area o mirato) al livello dell'incantatore
+  di Zeth `[INFERRED — needs DM confirmation: livello di Zeth nel 372, prezzo]`.
+  Quella che il tavolo ha comprato di sicuro è una runa di protezione
   da un colpo solo: ***resistere all'energia*, acido 20** (7° livello
   dell'incantatore), **70 minuti** dall'attivazione, come vuole l'SRD. Attivarla
-  è un'azione standard. Contro il soffio di Skullcrusher (12d4) toglie 20 danni a
+  è un'azione standard. Contro il soffio di Skullcrusher (14d4) toglie 20 danni a
   ogni soffio. Se la attivano uscendo dalla postierla, all'alba è scaduta: va
   attivata quando il drago compare. Prezzo di pergamena SRD, 350 mo. Per
   **Durik** vale di più: la sua scheda gli dà +50% di danni dall'acido.
-- **Riposo — scelta**: **breve** (2 tacche: metà slot e pf) o **lungo** (5
-  tacche: recupero pieno, e poi il campo si attraversa di corsa). Il momentum
-  spinge al breve. ⚠️ La guarigione del passaggio (Scena 1) li ha già rimessi in
+- **Fermarsi o dormire — scelta.** In 3.5 ci sono solo le otto ore di sonno
+  e il tempo che passa. **Tre ore di sosta** (2
+  tacche) non ridanno incantesimi, perché l'SRD li restituisce solo dopo otto
+  ore di riposo (il chierico prega alla sua ora e non ha bisogno di dormire);
+  servono a curarsi con quello che resta, a smaltire i danni non letali e a
+  far tornare *affaticato* chi era *esausto*. **Dormire otto ore** (6 tacche:
+  con il consiglio già segnato, prima dell'alba non resta il tempo per il
+  campo) ridà gli incantesimi e le capacità al
+  giorno, toglie l'affaticamento e rende 1 pf per livello, la guarigione
+  naturale dell'SRD: non i pf pieni. Il momentum spinge alla sosta. ⚠️ La guarigione del passaggio (Scena 1) li ha già rimessi in
   piedi: il riposo serve solo a chi ha speso qualcosa da allora.
 
 ![Mastro Costruttore Zeth, il seme del Ghostlord](Immagini/ritratti/zeth-mastro-costruttore.jpg)
@@ -973,12 +1007,80 @@ di contare in braccia.
   quindici guardie. Se i PG le chiedono, la risposta è una sola, e la dà senza
   guardarli.
 
+##### La notte già giocata: cosa hanno chiesto, e quanto c'era `[CANONE — DM 2026-09-27]`
+
+Al tavolo del 25 settembre i PG hanno chiesto pergamene di *silenzio*,
+*identificare*, *rimuovi maledizione* e *rimuovi paralisi*, hanno fatto
+identificare le pozioni e hanno venduto parecchio. I numeri non si sono tirati:
+era il primo posto da mesi dove si poteva contrattare davvero. Questi sono
+quelli che l'SRD permette, con la mano larga che il DM ha chiesto: quello che
+esiste si trova, niente arriva in regalo.
+
+**Le pergamene.** Prezzo SRD: livello dell'incantesimo × livello
+dell'incantatore × 25 mo, più le componenti costose. Brynja non ne può
+scrivere di nuove stanotte (una pergamena chiede un giorno di lavoro), quindi
+sono quelle che la cappella ha già.
+
+| Pergamena | Prezzo | Quante | Da chi, e perché |
+|---|---:|---:|---|
+| *Silenzio* (chierico 2°, incantatore di 3°) | 150 mo | 2 | Brynja. Dura 3 round: basta per l'ingresso nella tenda, non per il volo. La legge un chierico o un bardo; Hella no (non è sulla lista del druido), Artemis con Usare Oggetti Magici CD 23 |
+| *Rimuovi paralisi* (chierico 2°, incantatore di 3°) | 150 mo | 3 | Brynja. Sono quelle che tiene per le mura |
+| *Rimuovi maledizione* (chierico 3°, incantatore di 5°) | 375 mo | 1 | Brynja, l'ultima. Se la compra un PG, all'alba sulle mura non ce n'è |
+| *Identificare* (mago 1°, incantatore di 1°) | 125 mo | 1 | dal forziere del re, presa anni fa a un mercante. Nessuno in fortezza la sa lanciare: Moradin non dà il dominio della Magia, e Zeth è un druido. Si lancia in un'ora e brucia una perla da 100 mo, già nel prezzo. Artemis la legge con Usare Oggetti Magici CD 21 |
+
+Come servizio, Brynja lancia lei gli stessi incantesimi al 9° livello (prezzo
+SRD: livello × 9 × 10 mo): *silenzio* su un sasso 180 mo, e dura 9 round, quindi va lanciato alla
+postierla, non in cappella: 9 round sono meno di un minuto;
+*rimuovi paralisi* 180 mo; *rimuovi maledizione* 270 mo. Ogni slot di 3°
+che spende stanotte manca all'alba, come dice la sua scheda.
+
+**Identificare le pozioni.** Kettra e Brynja ci hanno dedicato **35 minuti**,
+poi sono tornate alle fiasche e alle armi per le mura. L'SRD identifica una
+pozione con **Sapienza Magica CD 25**, un minuto, senza ritentare. Kettra ha
+**+15** `[INFERRED — needs DM confirmation]` e prende 10: in 35 minuti
+identifica **fino a 35 pozioni**, senza sbagliarne una. Brynja, nello stesso
+tempo, lancia *individuazione del magico* sugli altri oggetti e dice di ognuno
+la **scuola** (Sapienza Magica 15 + livello dell'incantesimo): la scuola, non
+cosa fa. Per sapere cosa fa un'arma o un anello serve la pergamena qui sopra.
+
+**Quanto hanno potuto vendere.** I nani sono ricchi di gemme e avari, ma
+l'assedio li frena. Il conto della notte, qualunque cosa il gruppo abbia
+venduto:
+
+- ciò che serve all'alba (cure, fuoco dell'alchimista, frecce, armi e armature
+  magiche per le guardie) lo paga il **forziere del re**, fino a **10.000 mo**
+  in tutto, con le regole della tabella qui sopra;
+- il resto (gioielli, oggetti d'arte, magia che non combatte) lo compra il
+  pesatore **a metà prezzo, in gemme**, fino a **15.000 mo** in tutto
+  `[INFERRED — needs DM confirmation]`: le gemme i nani le hanno, le monete no;
+- nessun oggetto oltre il **limite d'acquisto di 2.500 mo**, da nessuno dei due.
+
+**Cosa hanno venduto davvero** `[CANONE — DM 2026-09-27]`: armi e armature
+**naniche**, anche d'adamantio, asce e balestre. Lame e picche degli orchi le
+hanno lasciate, e hanno fatto bene. Con i prezzi dell'SRD viene così:
+
+| Cosa | Chi paga | Quanto | Perché |
+|---|---|---|---|
+| Asce e balestre naniche comuni o perfette | Gunnvor | **prezzo pieno** SRD | ognuna arma un ragazzo che salirebbe con la vanga. È l'unica merce per cui alza gli occhi dalla lama |
+| Armature naniche comuni o perfette | Gunnvor | **prezzo pieno** | come sopra |
+| Armi e armature naniche **d'adamantio** | il forziere del re | **metà** del prezzo SRD, anche **oltre** il limite d'acquisto, finché il forziere ha monete `[INFERRED — needs DM confirmation]` | le vuole il re per la guardia reale. Sono l'unica eccezione al limite: una piastra completa d'adamantio vale 16.500 mo e ne frutta 8.250, cioè quasi tutto il forziere. Un'ascia d'adamantio (3.330) ne frutta 1.665 |
+| Armi e armature magiche | il forziere del re | **metà**, entro il limite | la tabella qui sopra |
+| Lame, picche, scudi degli orchi | nessuno | — | hanno il segno della Mano Rossa, o l'odore delle tende là fuori |
+
+⚠️ Il forziere è **uno solo**, 10.000 mo: le armi d'adamantio e le cure pagate
+a ×1,5 se lo dividono. Il gruppo che vende una piastra d'adamantio e poi
+chiede il premio sulle pozioni trova il forziere quasi vuoto, e Brynja lo dice.
+
+Oltre quei tetti la risposta è la stessa di Gunnvor: *«Tenetevelo. Non ho tempo
+di pesarlo.»* Per chiudere il conto, il DM somma quello che ricorda di aver
+venduto al tavolo, dimezza, e taglia ai tetti.
+
 **L'ascia nel panno.** È un'**ascia da guerra nanica +1 del gelo** (SRD: +2 di
 bonus equivalente, 8.330 mo), finita ieri per la guardia del re, e sulla lama
 ha lo stesso disegno di brina dell'ascia di Re Thorek. È del re: la vende solo
 lui, e solo con la fiducia piena. Se la prendono i PG, una
-guardia reale fa l'alba con un'ascia comune: tira sul *Registro delle Perdite*
-alla Scena 10. Nel 1372 nessun fabbro sa fare quel disegno
+guardia reale fa l'alba con un'ascia comune, e alla Scena 10 è lei il nano con
+un nome che muore sulle mura. Nel 1372 nessun fabbro sa fare quel disegno
 `[INFERRED — needs DM confirmation]`.
 
 **Quello che nel 372 non esiste ancora.** Il DM non deve sapere quando è nato
@@ -1000,15 +1102,15 @@ qui. Quello che hanno **venduto** resta qui, e ritorna come **reliquia** (§7).
   spiegano; i PG sì;
 - **gli oggetti venduti**: un'arma dei PG appesa nella sala degli antenati con
   un nome che non è il loro, il loro mithral nei cardini di una porta, una
-  pergamena diventata «la preghiera dei quattro». Una riga per oggetto, alla
-  Cerimonia delle 100 Asce o quando serve al DM;
-- **l'ascia del gelo**, se la comprano: la guardia che l'ha ceduta è sul
-  *Registro delle Perdite*, e in ARC-08, davanti a un'arma nanica antica, la
+  pergamena diventata «la preghiera dei quattro». Una riga per oggetto, quando
+  serve al DM;
+- **l'ascia del gelo**, se la comprano: la guardia che l'ha ceduta è fra i
+  caduti del 372, e in ARC-08, davanti a un'arma nanica antica, la
   brina sulla lama è quella che nessuno sa più fare.
 
 ### SCENA 6 — Il mare di tende
 
-**In scena** — Dove: la postierla · il campo — Chi: Durin · Grask · la pattuglia di quattro orchi · il lupo da guerra · lo squadrone hobgoblin · il corridore
+**In scena** — Dove: la postierla · il campo — Chi: Durin · Grask · i cavalieri dei lupi · la pattuglia di quattro orchi · le vedette goblin · lo squadrone hobgoblin · il corridore
 
 > **Read-aloud (Andor lead) — la postierla.** *Nel cuore della notte si apre
 > una porta che non è la porta: una feritoia bassa nella roccia viva, di quelle
@@ -1021,6 +1123,25 @@ qui. Quello che hanno **venduto** resta qui, e ritorna come **reliquia** (§7).
 **Prima di uscire**, se la fiducia al consiglio è stata piena: ognuno beve la
 **Pozione di Invisibilità** (CL 12, 12 minuti: l'SRD dà 1 minuto per livello), e le **Benedizioni di Moradin**
 sono già addosso (+2 morale al colpire e ai danni, 12 ore).
+
+**Cosa sanno gli esploratori nanici, e cosa non è esatto.** Hanno guardato il
+campo dalle mura da quando è arrivato, senza mai entrarci. Durin lo dice alla
+postierla, prima di aprire, anche se nessuno glielo chiede: manda fuori quattro
+persone e vuole che sappiano quello che sa lui. Non sa quali cose sono esatte.
+Se al tavolo i giocatori l'hanno già saputo prima (dal re, o da te), non lo
+ripete: conferma soltanto la prima riga, *«il drago va sulle colline al
+tramonto»*, perché è quella su cui si decide se uscire stanotte.
+
+| Cosa dicono | Com'è davvero |
+|---|---|
+| «Il drago va sulle colline al tramonto e torna all'alba» | vero a metà: torna quando il corno lo chiama. Il sesto giorno il corno ha suonato tardi e il drago è arrivato tardi. L'hanno notato, e l'hanno preso per caccia |
+| «Ogni mattina gli orchi suonano la sveglia» | è il corno che chiama il drago, e loro non l'hanno collegato |
+| «Nel campo c'è un nano prigioniero, lo fanno lavorare a una forgia» | non esatto: il nano è Balvar, e nessuno lo sorveglia. All'alba gira fra le tende con uno scalpello: sono le sue rune |
+| «La tenda nera al centro è del generale» | vero |
+
+La terza riga è un **errore fecondo**: un tavolo che va a «salvare il nano
+prigioniero» trova Balvar lo stesso, e la trattativa della Scena 7 comincia con
+un equivoco che gli conviene.
 
 > **Read-aloud (Salvatore lead) — il campo.** *Fuori dalle mura, il buio è
 > vivo. Diecimila nemici dormono attorno a mille fuochi — orchetti, hobgoblin,
@@ -1040,26 +1161,64 @@ blocchi** da 200 m.
   o nel seme.
 - **Cosa si tira.** Finché dura l'invisibilità, **Muoversi Silenziosamente
   CD 20**: Nascondersi non serve, perché il +20 dell'invisibilità lo supera da
-  solo. Quando l'invisibilità finisce, **Nascondersi CD 22**.
+  solo. Quando l'invisibilità finisce, **Nascondersi CD 22**. Chi non ha
+  una pozione (con gli aiuti dimezzati sono due per quattro) tira Nascondersi
+  CD 22 fin dal primo blocco: ognuno tira la sua prova, e il blocco riesce se
+  riesce almeno la metà del gruppo.
 - **Quanto dura l'invisibilità.** Le pozioni del re durano 12 minuti. Un nano in
   armatura, a passo furtivo, fa 3 m a round: 12 minuti coprono circa **360 m**,
   i primi **due blocchi**. Dal terzo si tira Nascondersi, a meno che qualcuno
-  abbia altra invisibilità da spendere.
-- **Cinque blocchi riusciti**: si arriva alla tenda. **Tre blocchi falliti**
-  prima dei cinque: **la pattuglia**. Ogni blocco fallito costa anche una
+  abbia altra invisibilità da spendere. Una pozione comprata alla fucina dura
+  3 minuti, circa 90 m: mezzo blocco. Non ne toglie uno, e il blocco in cui
+  finisce si tira a Nascondersi.
+- **Cinque blocchi riusciti**: si arriva alla tenda. Un blocco fallito non fa
+  avanzare: si ritenta lo stesso tratto. **Tre blocchi falliti** prima dei
+  cinque: **la pattuglia**. Ogni blocco fallito costa anche una
   tacca, come dice l'orologio.
 - **La pattuglia** `[INFERRED — needs DM confirmation]`: otto hobgoblin guerrieri
   di 4° livello, EL 10. Non serve vincerla, serve che nessuno scappi. A ogni
   round di scontro si tira 1d6: con 1 un hobgoblin corre verso la tenda, ed è
   il corridore della Via B, qui sotto. Se arriva, Zog'tar è pre-allertato.
+  Dopo lo scontro si riparte dal blocco in cui si era, e lo scontro costa una
+  tacca in più `[INFERRED — needs DM confirmation]`.
+**Come si sorveglia un campo di diecimila** `[CANONE — DM 2026-09-27: i lupi
+girano fuori, dentro niente lupi]`. I numeri sono una proposta costruita sulle
+organizzazioni dell'SRD (una tribù goblin ha da 10 a 24 worg)
+`[INFERRED — needs DM confirmation]`.
+
+| Chi | Quanti | Dove | Cosa sente |
+|---|---|---|---|
+| **i cavalieri dei lupi**, goblin su worg | 6 squadre da 10 in giro alla volta: 60 worg sui circa 120 del campo | l'anello **fuori** dal campo, circa 6 km di giro. Ogni squadra tiene un chilometro e ripassa dallo stesso punto ogni quarto d'ora | il worg: Ascoltare e Osservare **+6**, olfatto a **9 m** (18 m col vento a favore, 4,5 m contro), scurovisione 18 m. Il goblin in sella: +1 |
+| **le ronde degli orchi** | quattro orchi e un sergente di 3°, una ogni 200 m circa | dentro, fra i fuochi | Ascoltare e Osservare **+1** |
+| **gli squadroni hobgoblin** | sei in fila, uno per quartiere | dentro, verso il centro | Ascoltare e Osservare **+2**. Sono i soli che marciano al passo |
+| **le vedette goblin** | due per carro, sui carri dei viveri | dentro, ai margini dei fuochi | Ascoltare e Osservare **+2**, scurovisione 18 m. Strillano prima di pensare |
+
+- **Il primo blocco è l'anello dei lupi**, e al ritorno lo è l'ultimo. Prima
+  della prova si tira 1d6: con **1-2** una squadra passa entro fiuto. Contro il
+  naso l'invisibilità non serve: il worg sente che qualcuno c'è, e la squadra
+  si ferma a cercare. La CD del blocco sale di **+2**; se il blocco fallisce,
+  il fallimento conta doppio verso la pattuglia. Chi vola sopra i 20 m resta
+  fuori dal fiuto.
+- **Gli sciamani.** Gli esploratori di Durin non li hanno visti, e non vuol dire
+  che non ci siano: uno sciamano non esce dal campo, e di giorno dorme. Nel 3.5
+  lo sciamano di una tribù è un **adepto** (classe da PNG dell'SRD). Settemila
+  orchi fanno una quindicina di bande, e ognuna ha il suo: **circa quindici
+  adepti orchi di 5° livello**, più qualche goblin (un adepto lancia incantesimi
+  di 2° livello solo dal 5°). Dormono vicino al fuoco
+  della loro banda; uno su tre veglia e canta. Nello skill challenge si
+  sentono e basta, finché non suona il corno: **dopo il corno**, ogni sciamano
+  sveglio lancia *vedere invisibilità* (2° livello, lista dell'adepto) e va
+  verso il rumore. Al ritorno a piedi, allora, nei blocchi in cui esce il
+  **5** (il falò) l'invisibilità non protegge: c'è uno sciamano che la vede.
+
 - **Complicazioni (tira 1d6 per blocco):**
 
 | d6 | Complicazione |
 |---|---|
 | 1-2 | Nessun evento. |
-| 3 | **Pattuglia di 4 orchi** (Guerriero 3) passa a 6 m: restare immobili, Muoversi Silenz. **CD 18**. |
-| 4 | **Lupo da guerra** (Olfatto acuto, Ascoltare/Osservare +8): se il blocco fallisce, abbaia, e la pattuglia si ferma. |
-| 5 | **Falò vicino**: luce intensa, Nascondersi **CD +4** per quel blocco. |
+| 3 | **Pattuglia di 4 orchi** (Guerriero 3) passa a 6 m: restare immobili. Chi è invisibile non tira; chi è solo nascosto tira Nascondersi **CD 18**. Se la metà del gruppo fallisce, gli orchi li vedono: il blocco conta come fallito e gli orchi gridano, quindi è un fallimento in più verso la pattuglia `[INFERRED — needs DM confirmation]`. |
+| 4 | **Vedette goblin** su un carro dei viveri (Ascoltare e Osservare +2): se il blocco fallisce, strillano; la ronda più vicina si ferma a guardare, e il blocco dopo si tira a CD +2 `[INFERRED — needs DM confirmation]`. |
+| 5 | **Falò vicino**: luce intensa, Nascondersi **CD +4** per quel blocco. Chi è invisibile non se ne accorge nemmeno. |
 | 6 | **Squadrone hobgoblin (6)** a 24 m: se il blocco fallisce, mandano un **corridore** alla tenda di comando (Zog'tar sarà pre-allertato). |
 
 **Via B — il corridore che non parte** *(chiunque, e non serve nessun grado)*.
@@ -1142,7 +1301,7 @@ usa due cose diverse, e tutte e due si possono fare:
 |---|---|---|
 | **La soglia** | *epurare invisibilità*: chiunque sia invisibile entro 19,5 m diventa visibile, per 13 minuti. **Non fa rumore** | una delle sue **quattro rune incise** (scheda nel Bestiario, `[Private source]`); la quarta è la Catena del drago |
 | **Il telo sopra il seggio** | scoppio **sonoro**, 5d8, Riflessi CD 18 dimezza. Il boato sveglia la tenda ed è l'allarme | *glifo di interdizione*, SRD |
-| **La custodia del corno** | lo stesso, per chi prova a rubarlo | *glifo di interdizione*, SRD |
+| **La custodia del corno** `[CANONE — DM, D13]` | il corno sta in una custodia di cuoio e ferro, chiusa da un glifo e **incatenata al polso di Grask**. Chi la apre senza la parola fa scattare lo stesso scoppio; chi la tira, sveglia Grask | *glifo di interdizione*, SRD |
 
 - **Perché la soglia è una runa e non un glifo.** Il glifo dell'SRD accetta solo
   incantesimi che fanno danno, ed *epurare* non ne fa. Le rune incise di Balvar
@@ -1162,10 +1321,11 @@ usa due cose diverse, e tutte e due si possono fare:
   il 13° livello (CD 24). Ma sono **scritti**, come tutte le sue rune: chi li vede e
   legge il nanico antico sa che sono legati ai nani.
 - **Balvar non vuole che scattino.** Il boato sveglia Zog'tar e rovina la
-  trattativa della Scena 7. Se li legge prima della soglia, dice in nanico
-  antico, piano, attraverso la pelle della tenda: *«Non la soglia. Il telo a
-  sinistra.»* È il telo del fianco sinistro, non quello sopra il seggio che
-  porta il glifo. Il consiglio non gli
+  trattativa della Scena 7. Se Balvar legge i PG con il Fuori-Posto prima che
+  arrivino alla soglia, dice in nanico antico, piano, attraverso la pelle
+  della tenda: *«Non la soglia. Il telo a sinistra.»* È il telo del fianco
+  sinistro per chi arriva da nord, cioè il fianco est, non quello sopra il
+  seggio che porta il glifo. Il consiglio non gli
   costa niente, e d'ora in poi i PG gli devono qualcosa.
 
 **Come torna il drago** `[CANONE — DM 2026-09-26]`. Il **corno da
@@ -1179,9 +1339,10 @@ e il drago arriva sull'assalto.
 
 | Chi | Com'è | Come parla |
 |---|---|---|
-| **Grask, l'araldo** `[CANONE — DM 2026-09-26]` | hobgoblin di quindici anni, magro, con il corno legato al polso da una cinghia perché una volta l'ha perso e l'hanno frustato. Dorme seduto, fuori dalla tenda, e si sveglia al primo grido. Vuole una cosa sola: non perderlo più | non parla: soffia |
+| **Grask, l'araldo** `[CANONE — DM 2026-09-26]` | hobgoblin di quindici anni, magro. Il corno sta nella custodia col glifo, e la custodia è **incatenata al suo polso** da quando una volta l'ha perso e l'hanno frustato `[CANONE — DM, D13]`. Dorme seduto, fuori dalla tenda, col braccio sopra la custodia, e si sveglia al primo grido. **Se qualcuno tocca la custodia o la catena si sveglia comunque**, anche se dorme: niente prova, è la catena che tira. Veglia nella prima metà della notte e dorme nella seconda `[INFERRED — needs DM confirmation]`: prima del cambio è sveglio, dopo è a −10. Vuole una cosa sola: non perderlo più. Statistiche: hobgoblin combattente 1 dell'SRD, 6 pf, CA 15, Ascoltare e Osservare +2, e −10 ad Ascoltare finché dorme (SRD). Avvicinarlo: Muoversi Silenziosamente contro il suo Ascoltare | non parla: soffia |
 | la pattuglia di quattro orchi | quattro orchi con le lance in spalla e una torcia sola, che tengono bassa per non abbagliarsi | litigano in orchesco su chi ha rubato il rancio |
-| il lupo da guerra | grigio, col collare di cuoio chiodato e una cicatrice sul muso. Annusa il vento prima di camminare | non abbaia finché non è sicuro. Poi non smette |
+| i cavalieri dei lupi | goblin piccoli e magri, legati alla sella con una cinghia. I worg sono grigi, col collare di cuoio chiodato, e annusano il vento prima di camminare | il worg non ringhia finché non è sicuro. Poi non smette, e il goblin ride |
+| le vedette goblin | due per carro, seduti sui sacchi di farina, avvolti nella stessa coperta | si danno di gomito a ogni rumore, e il secondo strilla sempre prima del primo |
 | lo squadrone hobgoblin | sei, in fila, gli scudi tutti con lo stesso segno rosso. Marciano al passo anche di notte | ordini di una sillaba, e nessuno risponde |
 | il corridore | un hobgoblin ragazzo, senza armatura per correre più forte | ripete il messaggio a mezza voce per non dimenticarlo |
 
@@ -1192,28 +1353,15 @@ e il drago arriva sull'assalto.
   suono non chiama nessuno.
 - **Se il corno suona di notte**, per un allarme, il drago arriva mentre i PG
   sono ancora nel campo, a piedi e visibili, perché volo e invisibilità sono
-  finiti. Gira sul campo e li cerca. Se li trova, soffia una volta e torna al
-  campo. All'alba il duello si fa lo stesso, ma **senza sorpresa**: il drago
+  finiti. Gira sul campo e li cerca: si gioca il ritorno a piedi della Scena 8 a
+  Nascondersi **CD 26** (22, più 4 per il corno), e al primo blocco fallito li
+  trova; chi gli passa entro 18 m lo sente anche invisibile. Se li trova, soffia
+  una volta e se ne va. All'alba il duello si fa lo stesso, ma **senza sorpresa**: il drago
   parte già in quota e conosce il loro odore.
 - **Se rubano o rompono il corno**, all'alba nessuno chiama il drago. Arriva
   tardi, a metà mattina e da solo, furioso: le mura hanno un'ora di respiro, e
   il duello comincia con il drago già in collera. Il corno è **scritto**, quindi
   si legge: nanico antico o Sapienza Magica CD 22 rivelano a cosa serve.
-
-**Cosa sanno gli esploratori nanici, e cosa non è esatto.** Hanno guardato il
-campo per dieci giorni dalle mura, senza mai entrarci. Durin lo racconta se
-glielo chiedono, e non sa quali cose sono esatte.
-
-| Cosa dicono | Com'è davvero |
-|---|---|
-| «Il drago va sulle colline al tramonto e torna all'alba» | vero a metà: torna quando il corno lo chiama. Il sesto giorno il corno ha suonato tardi e il drago è arrivato tardi. L'hanno notato, e l'hanno preso per caccia |
-| «Ogni mattina gli orchi suonano la sveglia» | è il corno che chiama il drago, e loro non l'hanno collegato |
-| «Nel campo c'è un nano prigioniero, lo fanno lavorare a una forgia» | non esatto: il nano è Balvar, e nessuno lo sorveglia. All'alba gira fra le tende con uno scalpello: sono le sue rune |
-| «La tenda nera al centro è del generale» | vero |
-
-La terza riga è un **errore fecondo**: un tavolo che va a «salvare il nano
-prigioniero» trova Balvar lo stesso, e la trattativa della Scena 7 comincia con
-un equivoco che gli conviene.
 
 ### SCENA 7 — La tenda del comando
 
@@ -1231,6 +1379,19 @@ un equivoco che gli conviene.
 > bastione più alto, e ride da solo. Quattro hobgoblin in armatura nera stanno
 > di guardia, le mani sulle armi, e ascoltano.*
 
+**Scheda d'entrata — Zog'tar Deatheye, il generale** *(statistiche: Appendice A)*
+
+| | |
+|---|---|
+| **Aspetto** | mezzo-ogre, grande quanto una porta di stalla, armatura completa di piastre annerite. L'ascia a due mani appoggiata alla spalla. Al posto dell'occhio destro, una pietra nera levigata: l'**Occhio di Ossidiana**, un occhio vero *(decisione DM 2026-09-24)* |
+| **Vuole** | Hammerfist. Sa uccidere diecimila uomini, non sa dove colpire le mura: per quello c'è Balvar |
+| **Suona** | conta, sempre: *«due file», «tre ore», «cento»*. In ira: *«A ME, CANI! ABBATTETE LE OMBRE!»* |
+| **Sa** | niente dei PG, a meno che il corridore non sia arrivato |
+| **Eco** | come muore decide come comincia il duello. Se viene **umiliato e non ucciso**, la Mano Rossa ha un generale in più nella sua storia |
+| **Ritratto** | qui sotto. Ai giocatori si mostra dopo l'incontro, non prima |
+
+![Zog'tar Deatheye, il generale](Immagini/web/zogtar-deatheye.jpg)
+
 **Mappa M7-C** (Appendice D). I PG entrano da nord, dalla parte della fortezza.
 La soglia è illuminata, il fondo no.
 
@@ -1239,6 +1400,21 @@ La soglia è illuminata, il fondo no.
 | Chi | Com'è | Come parla |
 |---|---|---|
 | le quattro guardie | hobgoblin in armatura nera laccata, tutti uguali di proposito. Vogliono che Zog'tar non li veda mai esitare, perché l'ultimo che ha esitato è sul seggio, fra i teschi | non parlano: al generale rispondono battendo l'asta per terra, una volta sì, due no |
+
+**Se arrivano visibili.** A piedi l'invisibilità del re finisce al secondo
+blocco, quindi il caso più probabile è che arrivino **nascosti**, non
+invisibili. Vale tutto quello che segue, con tre differenze:
+
+- la runa della soglia non ha niente da rivelare: chi entra da lì con un nano
+  la fa scattare, ma resta com'era;
+- le guardie dentro la tenda si evitano con **Nascondersi** contro il loro
+  **Osservare** (Appendice A.2): una prova entrando, un'altra se qualcuno si
+  muove. Il fondo è buio e dà occultamento, la soglia è illuminata e non ne dà;
+- se una guardia li vede, si passa alla **Scena 8** senza round di sorpresa.
+
+Balvar li legge comunque. Finché gli parlano sottovoce in nanico antico nessuno
+tira niente: nella tenda si ride e si grida. Chi alza la voce, o risponde in
+comune, si fa sentire, e si passa alla Scena 8.
 
 **Da dove entrano decide come comincia.** Le rune della soglia sono nella
 Scena 6.
@@ -1252,7 +1428,7 @@ Scena 6.
 **Come va la scena, in ordine.** Nella tenda ci sono due persone che contano, e
 **parla prima quella che non dovrebbe**. Zog'tar è sul seggio con le sue
 guardie; **Balvar** è nell'angolo in fondo, dove i bracieri non arrivano. I PG
-sono invisibili, ma Balvar li **legge**: il suo *Leggere il Fuori-Posto*
+sono invisibili, o nascosti nel buio del fondo, ma Balvar li **legge**: il suo *Leggere il Fuori-Posto*
 percepisce chi non appartiene a questo secolo. Parla in **nanico antico**, a
 voce bassa, e nessuno nella tenda capisce: Zog'tar crede che borbotti sulle sue
 rune, come fa sempre. La conversazione con Balvar si fa **a tre passi dal
@@ -1317,7 +1493,7 @@ Zog'tar sa uccidere diecimila uomini, Balvar sa **dove** vanno colpite le mura.
 | **Vuole** | che Hammerfist **cada in fretta**. Non per odio: perché un assedio lungo significa fame dentro le mura, e lui l'ha già vista una volta |
 | **Crede** | che i re nanici mentano ai loro, e che le sue rune abbiano protetto per trent'anni una fortezza che l'ha esiliato **senza processo** |
 | **La leva** | = suo nipote. È dentro le mura, ha diciannove anni, e Balvar sa esattamente su quale camminamento monta la guardia |
-| **Ricattabile** | sì, e da nessuno che non gliene parli **per primo**. Se i PG lo minacciano, si chiude; se gli dicono che il ragazzo è vivo, no |
+| **Ricattabile** | sì, e da nessuno che non gliene parli **per primo**. Se i PG lo minacciano, si chiude; se gli dicono che il ragazzo è vivo, no. Non l'hanno mai visto, quindi è una promessa o una bugia: Raggirare contro il suo Percepire Intenzioni **+13** (statblocco in Appendice A). Se ci crede, conta come recuperato |
 | **Non è un mostro** | e questo è il punto: se il tavolo lo tratta da mostro, lo scontro funziona lo stesso. Se lo tratta da nano, il master cambia forma |
 
 ⚠️ **È una fazione recuperabile, non una fazione debole.** Balvar in combattimento
@@ -1333,9 +1509,9 @@ sui corsari — il banco l'aveva già capito.)*
 | **Trattativa aperta**, nessuno l'ha minacciato | il primo round guarda. Dal secondo sta con chi sta vincendo |
 | **Minacciato, o attaccato** | combatte con Zog'tar: vedi «Come si combatte» più sotto |
 
-**Quanto pesa lo scontro.** Zog'tar (GS 14), Balvar (GS 13) e le quattro
-guardie (Guerriero 8) insieme fanno **EL circa 16**, sotto il tetto di
-APL + 4 = 17. Senza Balvar, **EL circa 15**. Il conto è fatto a mano con le
+**Quanto pesa lo scontro.** Zog'tar (GS 15), Balvar (GS 13), le quattro
+guardie (Guerriero 8) e il sacerdote della Mano (GS 6) insieme fanno **EL
+17**, cioè il tetto di APL + 4: più su non si va. Senza Balvar, **EL 16**. Il conto è fatto a mano con le
 regole di combinazione della DMG, ed è un'approssimazione `[INFERRED — needs DM confirmation]`.
 
 🚫 **Cosa NON dire.** Che il nipote esiste. Balvar non lo nomina mai per primo:
@@ -1454,8 +1630,11 @@ la reggerebbe, ma lui **continua a incidere mentre combattete**. Falla vedere:
 è l'immagine che li terrorizza. *Àncora dimensionale* è fra i suoi
 incantesimi: se qualcuno prova a teletrasportarsi fuori, la lancia.
 
-**Tattica**: *righteous might* al round 1, poi *blade barrier* e *slay living*
-(Tempra CD 20) sul più fragile. Numeri in Appendice A.4. Se scende
+**Tattica**: *righteous might* al round 1 e *slay living* (Tempra CD 20) sul
+più fragile al round 2, **prima** del silenzio, perché tutti e due hanno la
+componente verbale. Dal round 3 attiva la runa del *silenzio* su di sé e usa
+solo quello che non parla: la *blade barrier* del palo, che è una runa, e il
+martello. Numeri in Appendice A.4. Se scende
 sotto **30 pf** non fugge e non implora: **finisce di incidere la lastra** e la
 lascia lì. `[DM: decidi tu cosa c'è scritto — è un gancio bianco per ARC-09.]`
 
@@ -1475,20 +1654,9 @@ Balvar è morto da mille anni comunque vada. Ma:
 
 ### SCENA 8 — Zog'tar
 
-**In scena** — Dove: la tenda — Chi: Zog'tar · le quattro guardie · Balvar
+**In scena** — Dove: la tenda — Chi: Zog'tar · le quattro guardie · Balvar · il sacerdote della Mano
 
-**Scheda d'entrata — Zog'tar Deatheye, il generale** *(statistiche: Appendice A)*
-
-| | |
-|---|---|
-| **Aspetto** | mezzo-ogre, grande quanto una porta di stalla, armatura completa di piastre annerite. L'ascia a due mani appoggiata alla spalla. Al posto dell'occhio destro, una pietra nera levigata: l'**Occhio di Ossidiana**, un occhio vero *(decisione DM 2026-09-24)* |
-| **Vuole** | Hammerfist. Sa uccidere diecimila uomini, non sa dove colpire le mura: per quello c'è Balvar |
-| **Suona** | conta, sempre: *«due file», «tre ore», «cento»*. In ira: *«A ME, CANI! ABBATTETE LE OMBRE!»* |
-| **Sa** | niente dei PG, a meno che il corridore non sia arrivato |
-| **Eco** | come muore decide come comincia il duello. Se viene **umiliato e non ucciso**, la Mano Rossa ha un generale in più nella sua storia |
-| **Ritratto** | qui sotto. Ai giocatori si mostra dopo l'incontro, non prima |
-
-![Zog'tar Deatheye, il generale](Immagini/web/zogtar-deatheye.jpg)
+*La scheda d'entrata di Zog'tar è nella Scena 7, dove i PG lo vedono per la prima volta.*
 
 > **Read-aloud (Salvatore lead) — la tenda, il seggio.** *Il mezzo-ogre si alza
 > dal seggio, e i teschi inchiodati sbattono fra loro come nacchere. Non urla
@@ -1497,7 +1665,7 @@ Balvar è morto da mille anni comunque vada. Ma:
 >
 > **Che fate?**
 
-**Il round di sorpresa.** I PG invisibili hanno il **round di sorpresa**, cioè
+**Il round di sorpresa.** I PG che nessuno ha visto, invisibili o nascosti, hanno il **round di sorpresa**, cioè
 per l'SRD un'azione standard o di movimento a testa, se
 nessuno ha parlato ad alta voce o lanciato incantesimi che li rivelano. Parlare
 con Balvar in nanico, a bassa voce, **non** conta come parlare ad alta voce: è il
@@ -1507,9 +1675,11 @@ motivo per cui la Scena 7 viene prima.
 > È un macellaio arrogante che si crede immortale: non conosce la paura finché
 > non gli entra nelle ossa. Non sa che la Morte è già nella tenda.
 
-- **Round di sorpresa** (se i PG sono invisibili e silenziosi): un'azione
-  standard o di movimento a testa. *È qui che si vince o si complica.* Un colpo coordinato può
-  portarlo subito sotto metà.
+- **Round di sorpresa** (se nessuno li ha visti né sentiti): un'azione
+  standard o di movimento a testa. *È qui che si vince o si complica.* Un
+  colpo coordinato gli fa male ma non lo abbatte: fuori dall'Ira ha 253 pf,
+  e non perde la Destrezza alla CA nemmeno colto di sorpresa (Schivare
+  Prodigioso Migliorato). È voluto: il DM lo vuole in piedi al secondo round.
 - **Round 1** (se reagisce): **Ira Barbarica** (*«A ME, CANI! ABBATTETE LE
   OMBRE!»*) + **Occhio di Ossidiana** su Thorik (la minaccia). Le 4 guardie
   ingaggiano i PG più esposti.
@@ -1517,6 +1687,24 @@ motivo per cui la Scena 7 viene prima.
   moderato (−5/+10) se ha colpito bene. Se Artemis lo martella, si gira su di lui.
 - **Soglia 30% pf**: combatte disperato, cerca di **portare un PG con sé** nella
   morte (un ultimo Colpo Possente pieno −10/+20).
+- **Se è pre-allertato** (il corridore è arrivato, o c'è stato un allarme):
+  è in piedi con l'ascia in mano, le quattro guardie davanti al seggio, e Grask
+  è sveglio fuori dalla tenda col corno pronto. Niente round di sorpresa, e
+  l'Ira comincia al suo primo turno. Balvar parla lo stesso, se i PG ci
+  arrivano: lui non ha fretta.
+- **Il sacerdote della Mano** `[INFERRED — needs DM confirmation]`. Dorme nella
+  tenda accanto, a dieci passi. Al primo grido o al corno arriva dopo **1d4+1
+  round**, con *vedere invisibilità* già addosso se ha sentito il corno. Dalla
+  soglia lancia *comando* («Giù!», Volontà CD 13) sul PG più vicino a Zog'tar,
+  poi *benedizione* sulle guardie, poi *oscurità* per coprire la ritirata del
+  generale. È un adepto: con Balvar, Zog'tar e le guardie la tenda arriva a EL
+  17, il tetto. Statistiche in A.2.
+
+**Comparse**
+
+| Chi | Com'è | Come parla |
+|---|---|---|
+| il sacerdote della Mano | hobgoblin secco, dagli occhi gialli, la mano sinistra dipinta di rosso fino al polso, un bastone ferrato con appese ossa di dita | canta invece di parlare, sempre la stessa cantilena, e la interrompe solo per dare ordini |
 - **Sviluppi.** Zog'tar **esce dalla storia in questa scena**: morto, oppure
   umiliato e cacciato dal suo stesso campo (Via A, qui sotto). Il COME conta
   (► Esito, in fondo alla scena). `[HDYWTDT — il finisher a chi lo abbatte: «com'è che
@@ -1549,7 +1737,7 @@ giusta» e il tavolo la cerca invece di giocare. Due che costano in modi diversi
 > ⚠️ **Niente tentazione Lathander/Mask per Artemis** (mai giocata, §1). Le sue
 > scelte qui sono **tattiche e morali**, non divine.
 - **THORIK — Benedizione della Forgia**: può chiedere a Moradin +2 sacro ai
-  danni vs Zog'tar e guardie, al **costo di 1 livello di affaticamento** dopo la
+  danni vs Zog'tar e guardie, al **costo di essere affaticato** (la condizione SRD) dopo la
   battaglia (peserà su Skullcrusher). *Scelta: potenza ora vs freschezza al drago.*
 - **THORIK — finire o interrogare Zog'tar**: colpo finale spettacolare → il
   Rubino registra «nessuna pietà» (tono §7); interrogarlo → «saggezza pragmatica».
@@ -1566,7 +1754,8 @@ giusta» e il tavolo la cerca invece di giocare. Due che costano in modi diversi
   rinforzi (controllo); fulmini/spine (distruzione). Nessun effetto meccanico
   immediato, ma orienta come gli spiriti/Moradin la giudicheranno alla battaglia
   di Rethmar (ARC-09): bonus a controllo-campo o a danni elementali.
-- **PX Zog'tar**: ~5.000 totali (~1.250/PG).
+- **PX Zog'tar**: sono dentro le 2.400/PG delle Scene 6-8 (Appendice A,
+  budget PX), con il campo e Balvar. Non si sommano.
 
 - ► **Esito**: *ucciso in silenzio / spettacolare / umiliato e vivo* (Via A). Se
   **spettacolare** (esplosione, decapitazione davanti alle guardie), il terrore
@@ -1579,7 +1768,8 @@ giusta» e il tavolo la cerca invece di giocare. Due che costano in modi diversi
 **Il ritorno a piedi** `[INFERRED — needs DM confirmation]`. Dalla tenda alle
 mura si rigiocano i **cinque blocchi** della Scena 6, con le stesse regole.
 L'invisibilità del re a questo punto è finita, quindi si tira **Nascondersi
-CD 22**. Ogni blocco fallito aggiunge una tacca all'orologio. Se il corno ha
+CD 22**. Il ritorno costa **una tacca** di suo `[CANONE — DM, D22]`, e ogni
+blocco fallito ne aggiunge un'altra. Se il corno ha
 suonato, la CD sale di **+4** e il drago è in aria (Scena 6). Chi torna in volo
 segue «Il ritorno» della variante dall'alto. Vatore (Scena 9) si incontra a
 metà strada.
@@ -1649,8 +1839,8 @@ con un **terrore reverenziale mal mascherato**.
 | Approccio | Prova | Cosa succede | Eco su Sal nel 1372 (ARC-09) |
 |---|---|---|---|
 | **Lo ignorano / lo lasciano andare** | — | Vatore svanisce nell'ombra col Sigillo. | Sal esiste "intatto" in ARC-09 — nessun vantaggio, ma nessun sospetto reciproco. |
-| **Gli parlano** (Percepire Intenzioni o Diplomazia CD 18) | 18 | Vatore, terrorizzato, lascia sfuggire un frammento: *«Voi non morite. L'ho letto. Nelle cronache che non sono ancora scritte.»* Poi fugge. | In ARC-09 Sal **esita** un istante di fronte a loro (li ha già temuti mille anni fa): +2 dei PG a Percepire Intenzioni e Diplomazia contro Sal la prima volta. |
-| **Lo derubano** (Rapidità di Mano CD 22) | 22 | Gli sfilano il **Sigillo di Ossidiana** (o parte del bottino). | In ARC-09 Sal si presenta **senza** un asso che avrebbe avuto (il DM toglie a Sal un oggetto/piano — es. l'Olio di Sabotaggio parte scarico). |
+| **Gli parlano** (Percepire Intenzioni o Diplomazia CD 18; se fallisce, vale la riga di sopra: se ne va) | 18 | Vatore, terrorizzato, lascia sfuggire un frammento: *«Voi non morite. L'ho letto. Nelle cronache che non sono ancora scritte.»* Poi fugge. | In ARC-09 Sal **esita** un istante di fronte a loro (li ha già temuti mille anni fa): +2 dei PG a Percepire Intenzioni e Diplomazia contro Sal la prima volta. |
+| **Lo derubano** (Rapidità di Mano CD 22) | 22 | Gli sfilano il **Sigillo di Ossidiana** (o parte del bottino). Se la prova fallisce, se ne accorge: niente ferita, ma il **Cronolito** lo porta via come nella riga «Lo feriscono», e il Sigillo va con lui | In ARC-09 Sal si presenta **senza** un asso che avrebbe avuto (il DM toglie a Sal un oggetto/piano — es. l'Olio di Sabotaggio parte scarico). |
 | **Lo feriscono** (attacco riuscito) | — | Vatore urla, sanguina, attiva il **Cronolito** e sparisce nel tempo. | **Sincronizzazione**: nel 1372 **Sal sanguina nello stesso punto**, all'improvviso, davanti a chi lo osserva (la maschera vacilla) — i PG lo **riconoscono** come "l'uomo del passato" se collegano i punti. |
 | **Cercano di ucciderlo** | scontro breve | Non muore qui (il Cronolito lo salva a 1 pf: *deve* sopravvivere per esistere nel 1372 — paradosso auto-consistente). | Sal in ARC-09 porta una **cicatrice antica** e un odio personale: sa che loro ci hanno provato. Nemico più cattivo, ma più fragile emotivamente. |
 
@@ -1672,6 +1862,15 @@ Non combatte. Se lo attaccano, il primo colpo che va a segno lo ferisce (riga
 Cronolito sposta nel tempo, non nello spazio: *àncora dimensionale* non lo
 ferma, e nemmeno una lotta. Chi lo teneva si ritrova con il suo mantello in
 mano.
+
+**Se passano invisibili.** Vatore non li vede: nessuno dei suoi sensi li
+coglie, e il Sigillo non glieli mostra. Li **sente**, se fanno rumore
+(se qualcuno fallisce una prova di Muoversi Silenziosamente **CD 20**, la
+stessa del campo). Se non li sente e non si fanno vedere, la scena la aprono loro: vedono un uomo incappucciato che si
+ferma fra due tende, si guarda alle spalle e stringe un fagotto. L'Anello di
+Artemis diventa gelido lo stesso. Se lo lasciano passare, vale la riga «Lo
+ignorano» della tabella; se si mostrano, il box comincia da *«Tra due tende, un
+uomo»* e Vatore dice la sua frase dopo averli visti.
 
 L'artefatto che stringe al petto è in **Appendice B**.
 
@@ -1746,7 +1945,7 @@ quella che costa meno a *questo* gruppo.
 | Via | Prova | Se riesce | Il costo, anche riuscendo |
 |---|---|---|---|
 | **Tenere la breccia** | Forza o attacco, **CD 18** | la falla regge; i nani vi vedono farlo | ci si arriva al duello **stanchi**: −2 al primo tiro d'iniziativa del duello (Scena 11) |
-| **Rincuorare i difensori** | Diplomazia o Guarire, **CD 18** | +2 morale a tutta la linea per l'assalto | la breccia la tiene qualcun altro, e **qualcuno muore**: tira sul *Registro delle Perdite* di ARC-08 |
+| **Rincuorare i difensori** | Diplomazia o Guarire, **CD 18** | +2 morale a tutta la linea per l'assalto | la breccia la tiene qualcun altro, e **qualcuno muore**: un nano con un nome, che il DM annota fra i caduti del 372 |
 | **Sabotare gli arieti** | Disattivare o Artigianato, **CD 20** | due arieti fuori uso, l'assalto rallenta di mezz'ora | siete **fuori** dalle mura quando il drago arriva: il duello comincia con i PG separati di 18 m |
 
 **🚫 Modi di fallimento — il fallimento è un costo, mai uno stop.** Nessuna
@@ -1775,7 +1974,7 @@ Appendice A)*
 
 | | |
 |---|---|
-| **Aspetto** | drago nero adulto, snello e arrogante: collo lungo, cranio stretto e cornuto, scaglie nere opache con un riflesso verde d'olio. L'acido gli cola dalle fauci chiuse |
+| **Aspetto** | drago nero adulto maturo, snello e arrogante: collo lungo, cranio stretto e cornuto, scaglie nere opache con un riflesso verde d'olio. L'acido gli cola dalle fauci chiuse |
 | **Vuole** | vincere **davanti all'orda**, perché per lui il potere è quello che gli altri hanno visto |
 | **Suona** | dice **il nome** dell'avversario prima di colpire, ogni volta |
 | **Eco** | la tabella B4 (§7): ogni ferita che gli fate, la Forgia la ricorderà contro **Fauci di Palude** nel 1372 |
@@ -1787,6 +1986,14 @@ Appendice A)*
 > interno. È il capostipite della stirpe di **Fauci di Palude**: ogni ferita che
 > gli infliggete qui, la Forgia la ricorderà mille anni dopo (§7, carry-over B4).
 
+**Se il duello comincia fuori dalle mura** (arieti sabotati, alba colta fuori
+dal campo, PG liberati dopo la cattura) `[INFERRED — needs DM confirmation]`.
+M7-B non serve: si gioca sulla spianata davanti alla porta, aperta e senza
+copertura, con le carcasse degli arieti come unico riparo. I nani sono sulle
+mura, a 18 m, e le balestre tirano da lì. La fucina, la cisterna e le campane
+della tabella del cortile qui sotto non ci sono; le corde sì, quelle degli arieti
+rovesciati, con la stessa prova.
+
 > **Read-aloud (Salvatore lead) — il cortile.** *Prima arriva il freddo. L'ombra passa e
 > l'aria del cortile perde dieci gradi in un respiro, e la pelle lo sa prima
 > che lo sappiate voi. Poi il rumore: non un ruggito — un **risucchio**, come
@@ -1794,7 +2001,7 @@ Appendice A)*
 > piegano tutte nella stessa direzione. Un nano vicino a voi lascia cadere lo
 > scudo e non si china a raccoglierlo.*
 >
-> *Dove atterra, la pietra fuma. L'acido gli cola dalle fauci chiuse e si
+> *Dove passa basso, la pietra fuma. L'acido gli cola dalle fauci chiuse e si
 > mangia il selciato come acqua nella neve.*
 >
 > **Che fate?**
@@ -1863,13 +2070,13 @@ cambia davvero.
 > arroganza**: non ha mai perso, non sa ancora aver paura. È questo che i PG gli
 > insegnano — ed è questo che il suo sangue ricorderà.
 
-- **Round 1 — la Presenza.** Cala dall'alto (Presenza Terrificante CD 22:
+- **Round 1 — la Presenza.** Cala dall'alto (Presenza Terrificante CD 23:
   chi fallisce è scosso). Se Zog'tar è morto in modo «spettacolare» (Scena 8), arriva **già
   in picchiata** e i PG perdono la prima azione. Apre col **Soffio acido** sul
-  gruppo più fitto (Riflessi CD 24). *Non atterra: vuole restare in cielo, dove
+  gruppo più fitto (Riflessi CD 26). *Non atterra: vuole restare in cielo, dove
   si sente un dio.*
 - **Round 2-3 — il predatore aereo.** Resta in **quota**, picchia con Attacco in
-  Volo (morso + coda) e risale — punisce chi non ha gittata o volo. Bersaglio
+  Volo e risale: un attacco solo durante il movimento, il morso o la coda, come dice l'SRD — punisce chi non ha gittata o volo. Bersaglio
   preferito: chi lo ha ferito di più (l'arroganza non perdona l'insulto).
   *Momento Artemis*: in volo (Ali d'Ombra) è l'unico che lo raggiunge alla pari.
   *Momento Aegis Fang*: Thorik la **scaglia** — se colpisce in volo, incide la
@@ -1878,7 +2085,7 @@ cambia davvero.
   sulla scaglia è un'azione di movimento entro 9 m, e colpirla è un attacco
   alla CA **+4**: il primo colpo a segno la spezza, e il drago se ne va. Se
   Balvar è morto prima dell'alba, il drago combatte a **−2** e fugge a metà pf.
-- **Soglia ~⅓ pf (~80) — la prima paura.** Per la prima volta nella sua vita,
+- **Soglia ~⅓ pf (~85) — la prima paura.** Per la prima volta nella sua vita,
   Skullcrusher **esita**. È il momento dei tre esiti (sotto). Se i PG premono,
   può essere ucciso; se allentano, fugge nelle paludi. *«Qualcosa in lui — nel
   sangue — capisce che questi quattro non sarebbero dovuti esistere.»*
@@ -1908,11 +2115,11 @@ cambia davvero.
 
 | Nel cortile c'è | Se qualcuno lo usa |
 |---|---|
-| **Le corde degli arieti**, tese e bagnate | tirarle mentre è basso: Lotta contrapposta con **+4** per la leva. Non lo atterra: gli **inchioda un'ala a terra per un round**, ed è tutto quello che serve |
+| **Le corde delle gru sulle mura**, tese e bagnate `[INFERRED — needs DM confirmation]` | tirarle mentre è basso: prova di **Forza CD 25**, e chi aiuta dà **+2** a testa (aiutare, SRD: Forza CD 10). Non lo atterra: gli **inchioda un'ala a terra per un round**, ed è tutto quello che serve `[CANONE — DM, D18]` |
 | **La fucina originale**, accesa da stanotte | ci si può spingere dentro qualcosa. Il drago è **immune all'acido, non al calore della forgia**: 4d6 e — più utile — il fumo gli toglie l'olfatto per 1d4 round |
 | **La cisterna sotto il pozzo** | l'acido colpisce l'acqua e **ribolle**: nuvola che oscura, −4 agli attacchi di tutti. Danneggia i PG quanto lui. È una **scelta**, non un trucco |
 | **Le campane della torre nord** | il suono nell'aria fredda copre il battito d'ali: chi le suona toglie al drago il vantaggio del suono in picchiata (e si fa **bersagliare**) |
-| **Ottocento nani che guardano** | chiamarli è gratis. Arrivano, **e muoiono**: tira sul Registro delle Perdite di ARC-08. Il drago fa un attacco pieno su di loro invece che sui PG. Nessuno lo dice al tavolo prima |
+| **Ottocento nani che guardano** | chiamarli è gratis. Arrivano, **e muoiono**: il DM ne annota i nomi fra i caduti del 372. Il drago fa un attacco pieno su di loro invece che sui PG. Nessuno lo dice al tavolo prima |
 
 #### 🪂 Chi non vola — cosa fa nei round in quota
 
@@ -1923,8 +2130,8 @@ che non volo?»*. La risposta non è «aspetti». Tre cose, tutte SRD:
   volta che morde o sferza. Chi prepara l'azione *«colpisco quando scende»*
   colpisce **prima** che risalga. È il gioco di Thorik e di Tordek, e il colpo
   preparato di Tordek può essere il suo Pugno Stordente.
-- **Le corde degli arieti** (la tabella qui sotto). Chi resta a terra è chi le
-  tira: una Lotta con +4 per la leva, e un'ala inchiodata per un round. È il
+- **Le corde delle gru** (la tabella qui sopra). Chi resta a terra è chi le
+  tira: Forza CD 25, gli altri aiutano, e un'ala inchiodata per un round. È il
   momento in cui il drago smette di essere in cielo per tutti.
 - **Le balestre delle mura.** Sul camminamento ci sono le balestre pesanti dei
   difensori `[INFERRED — needs DM confirmation]`: 1d10, incremento 36 m, un
@@ -1960,7 +2167,7 @@ aspetta. È il momento più grosso della campagna finora: non riempirlo tu.]`
 #### Sidebar — Scalare lo scontro (stile RHoD)
 | Situazione | Aggiustamento |
 |---|---|
-| Party **straripante** (4 PG L14, tutti gli artefatti, aiuti pieni al consiglio) | Skullcrusher **avanzato a Vecchio (GS 14)**: PF 300, soffio 14d4 CD 26, +2 a tutti gli attacchi; oppure 2 **wyvern** scortano il drago dai round 2 |
+| Party **straripante** (4 PG L14, tutti gli artefatti, aiuti pieni al consiglio) | Skullcrusher **Vecchio** dell'SRD (GS 16, EL = APL+3, sotto il tetto): 25d12+125 (287 pf), soffio 16d4 CD 27, Presenza CD 24, morso +32, RI 22, incantatore di 7°; oppure 2 **wyvern** scortano il drago dal round 2 |
 | Party **logorato** (il campo e le mura andati male, risorse spese, Hella ancora fragile) | Skullcrusher NON usa il soffio 2 volte di fila; a ⅓ pf **fugge subito** (esito FUGGITO garantito) invece di premere |
 | **Hella appena risorta** — vuoi proteggerla | Il drago la ignora finché non lo ferisce (predatore: va per la minaccia, non per la novità) — dà alla giocatrice spazio per il suo primo scontro |
 | Un PG **abbattuto** | Skullcrusher lo ignora (caccia chi è in piedi e lo minaccia): finestra per stabilizzarlo |
@@ -1969,7 +2176,7 @@ aspetta. È il momento più grosso della campagna finora: non riempirlo tu.]`
 
 > **Cos'è.** Questo viaggio **è** il
 > **Rituale Legacy 4**, che la matrice degli artefatti chiama *«Siege of the
-> Eternal Forge»*: **Corona +3, Senzienza e Rubino si sbloccano qui**. Fino a oggi il master consegnava il duello e basta: il DM
+> Eternal Forge»*: **qui si sblocca il Rubino**; la **Corona +3** e la **Senzienza** arrivano **dopo che il Rubino è stato speso**, cioè all'arrivo nel 1372 (`DEF-5` §3) `[CANONE — DM, D6]`. Fino a oggi il master consegnava il duello e basta: il DM
 > tornava dal tavolo a segnare un avanzamento che nel modulo non era successo.
 >
 > ⏱️ **Quando** *(decisione DM)*: **dopo il combattimento**, sull'esito
@@ -1994,42 +2201,37 @@ che l'incontro ha appena scelto.
 
 #### La scena, in tre momenti
 
-> ✏️ *Il nano molto vecchio del box qui sotto è **Thorgrim**: è l'unico vecchio
-> che i PG conoscono qui, e ha appena tenuto in mano la loro ascia. Il box non lo
-> nomina: se il tavolo chiede chi è, il nome lo dà il DM.*
->
-> ✏️ *Se il tavolo **non ha incontrato Thorgrim** al consiglio, il vecchio è
-> **Re Thorek**. E se i giocatori si sono convinti che Thorgrim sia uno di loro,
-> nessuno qui li smentisce: la Cerimonia delle 100 Asce, in ARC-08, dirà il nome
-> giusto. `[INFERRED — needs DM confirmation]`*
+> ✏️ *Da dove viene il Rubino `[CANONE — DM, D6]`: **nessuno lo porta**. Appare
+> sull'incudine nel momento della vittoria, come se la Forgia l'avesse battuto da
+> sola. Nessun nano del 372 sa spiegarlo, e nessuno ci prova: Thorgrim e Re
+> Thorek guardano come tutti gli altri. Se il tavolo chiede «chi l'ha messo lì?»,
+> la risposta vera è «nessuno», e il silenzio del cortile la conferma.*
 
 > **Read-aloud (LotR lead) — l'incudine.** *Quello che chiamano altare è
 > un'incudine, e si vede: il piano è segnato da mille anni di martelli. Intorno
-> non c'è un tempio, c'è un cortile pieno di feriti. Un nano molto vecchio
-> appoggia sull'incudine una pietra rossa grande come una noce, e si tira
-> indietro di un passo. Nessuno spiega niente. Tutti guardano la corona.*
+> non c'è un tempio, c'è un cortile pieno di feriti. Nessuno l'ha toccata. Eppure
+> sul ferro, dove un attimo fa non c'era niente, adesso c'è una pietra rossa
+> grande come una noce, ancora calda come appena uscita dal fuoco. I nani più
+> vicini fanno un passo indietro. Nessuno spiega niente. Tutti guardano la corona.*
 
 **Momento 1 — la pietra entra.** Il Rubino trova il suo incasso, quello che per
 tutto l'arco non rifletteva la luce. Non serve un tiro: **la Corona lo prende da
-sé**, come una serratura che riconosce la chiave. La Corona passa a **+3**.
+sé**, come una serratura che riconosce la chiave. Ma **la Corona non cambia
+ancora** `[CANONE — DM, D6]`: il Rubino si usa **una volta sola**, e quella volta
+è il viaggio di casa. Finché non è speso resta un motore acceso nell'incasso, e
+la Corona resta a **+2**, muta come prima. Si completa **dopo l'uso**: il +3 e la
+Senzienza sono in `DEF-5` §3, all'arrivo.
 
 > **Read-aloud (Salvatore) — l'incasso che si chiude.** *Il vuoto sulla corona
-> si riempie e smette di essere un vuoto. Per la prima volta da quando Thorik
-> l'ha in testa, l'oro torna indietro da tutte e tre le pietre, e la luce che ne
-> esce non è di nessuna delle tre: è di quello che adesso sono insieme. Il metallo
-> gli si scalda contro la fronte, poi si raffredda, e resta caldo come una mano.*
+> si riempie. La pietra nuova non si mescola alle altre due: batte da sola, come
+> un secondo cuore, e tira verso un punto che nessuno nel cortile vede. Il metallo
+> gli si scalda contro la fronte, e non si raffredda.*
 
-**Momento 2 — la Corona parla, o non lo fa.** Qui **si incassa la promessa di
-`ARC07-DEF-3` §5**, e i due rami sono già canone:
-
-| Al rito di DEF-3, Thorik… | La Senzienza arriva | E la prima cosa che dice |
-|---|---|---|
-| **ha donato** il +2 di deflessione | **sveglia**, e con qualcosa da dire su di lui | *«Tre volte hai pagato tu. La terza non te l'ho chiesta io.»* |
-| **ha rifiutato** | **fredda**: i poteri sì, il tono no | una voce corretta e senza calore, che dà informazioni e non commenti. ⚠️ **Reversibile**: si scalda in ARC-09, quando lui rischia qualcosa di suo |
-
-> 🎭 **Grigio politico.** La Corona **non è dalla parte di Thorik**. Il suo
-> *Want* è la montagna, non il portatore: ha accettato tre gemme e un pegno
-> perché le servivano, e lo dirà con la stessa calma con cui dice tutto il resto.
+**Momento 2 — la Corona tace.** Se Thorik le parla, non risponde, e non è
+freddezza: non è ancora intera. Se il tavolo insiste, basta una riga del DM:
+*«la pietra nuova ha un lavoro da fare, prima»*. La promessa di `ARC07-DEF-3` §5
+(la Senzienza calda o fredda) si incassa in `DEF-5` §3, quando il Rubino ha
+finito di bruciare.
 
 **Momento 3 — Aegis Fang si sveglia**<!-- storico --> *(decisione DM: è una scena, non una riga
 di scheda)*<!-- /storico -->. È una scena, non una riga di scheda: l'ascia resta com'è finché l'Assedio non
@@ -2056,8 +2258,11 @@ di scheda)*<!-- /storico -->. È una scena, non una riga di scheda: l'ascia rest
 
 #### ⚠️ Due cose per il DM, e una da decidere
 
-- **Il Rubino è a uso singolo e si spende nel ritorno** (`DEF-5` §3). Non
-  è un potere nuovo in tasca: è il motore del viaggio di casa.
+- **Il Rubino si usa una volta sola, e la Corona si completa dopo l'uso**
+  `[CANONE — DM, D6]` (`DEF-5` §3). Come **motore del viaggio** riporta i PG al
+  1372, e quel fuoco non torna. Speso, resta nell'incasso come **terza pietra**:
+  da lì la Corona è intera, a **+3** e con la **Senzienza**. Non è un potere
+  nuovo in tasca, e non è un buco che si riapre.
 - **Non ci sono altri costi qui** — né TS, né pegni, né punti caratteristica.
 
 #### Momento 4 — l'Aura della Forgia Eterna `[CANONE — DM 2026-09-20]`
@@ -2107,11 +2312,10 @@ che la Corona sa fare da quando è intera.
 
 > **Read-aloud (Casa di Davide lead) — l'incudine, la profezia compiuta.** *L'orda, senza
 > generale e senza drago a spronarla, si sfalda come sabbia. Hammerfist regge.
-> Sulla fronte di Thorik il Rubino, che all'incudine era soltanto una pietra, si
-> accende per la prima volta, e la sua luce è calda come sangue e antica come
-> la roccia. La vittoria che credevate storia era la vostra, adesso, con le
-> vostre mani. Il passato ha sempre avuto il vostro volto. La luce vi avvolge e
-> vi strappa via, verso casa, verso una fortezza che brucia mille anni più in là.*
+> Sulla fronte di Thorik il Rubino, che all'incudine la luce l'ha presa, adesso
+> la dà: calda come sangue, e non si abbassa. Un nano vicino alla forgia si
+> toglie l'elmo e non sa perché. Poi la luce comincia a tirare,
+> e vi porta via, verso casa, verso una fortezza che brucia mille anni più in là.*
 
 ⚠️ *Il box di prima chiamava il Rubino «la terza gemma, muta da sempre»; ma
 l'incasso è vuoto per tutto l'arco (e Balvar lo dice: «Tu ne hai
@@ -2131,11 +2335,11 @@ due»), e la pietra entra solo al Rituale della Scena 12.*
 |---|---|
 | **Vogliono cambiare il passato** (salvare qualcuno destinato a morire, avvisare i nani di eventi futuri) | Timeline auto-consistente: ci **provano**, ma "va sempre come doveva". Il nano che vogliono salvare muore comunque, in un altro modo. Non è fato crudele: è che **è già successo**. Ottimo pathos, zero paradossi. |
 | **Cercano tesori/conoscenze da riportare nel futuro** | Possono. Torna ciò che **portano addosso** quando il Rubino si accende, anche se l'hanno comprato alla fucina (Scena 5); le conoscenze tornano con chi le sa `[CANONE — DM 2026-09-25]`. Resta qui ciò che consumano, vendono o lasciano, e ritorna come reliquia (§7). Il **Sigillo di Ossidiana** rubato a Vatore (Appendice B) torna come il resto, e con lui il Cronolito che lo lega a Vatore: è il gancio ARC-09. |
-| **Attaccano la pattuglia di Durin** (Scena 2) | `[INFERRED — needs DM confirmation]` Durin è un Guerriero 6 con sei veterani: contro PG di 13° livello non regge un round, e lo sa. Alla prima ferita grave getta l'ascia e grida *«Se siete dei nostri, dimostratelo!»*. I PG arrivano alla porta lo stesso, con Durin ferito, e al consiglio (Scena 4) la CD della prova sale di **+4**. Se Durin muore, un veterano senza nome prende il suo posto, e la Cerimonia delle 100 Asce porta il nome di Durin |
-| **Vogliono reclutare Thorgrim / portarlo nel futuro** | Impossibile (non è "loro"): Thorgrim resta, e la sua eco è la Cerimonia delle 100 Asce (ARC-08). Commovente: si separano da un fratello che è già polvere da mille anni. |
+| **Attaccano la pattuglia di Durin** (Scena 2) | `[INFERRED — needs DM confirmation]` Durin è un Guerriero 6 con sei veterani: contro PG di 13° livello non regge un round, e lo sa. Alla prima ferita grave getta l'ascia e grida *«Se siete dei nostri, dimostratelo!»*. I PG arrivano alla porta lo stesso, con Durin ferito, e al consiglio (Scena 4) la CD della prova sale di **+4**. Se Durin muore, un veterano senza nome prende il suo posto, e il DM annota Durin fra i caduti del 372 |
+| **Vogliono reclutare Thorgrim / portarlo nel futuro** | Impossibile (non è "loro"): Thorgrim resta, e la sua eco è l'affresco A3 della Sala della Forgia. Commovente: si separano da un fratello che è già polvere da mille anni. |
 | **Vogliono attaccare il drago di notte, sulle colline** | `[INFERRED — needs DM confirmation]` Si può. Le colline sono a qualche chilometro, e il drago vede al buio e sente chi è invisibile entro 18 m. Di notte non combatte per l'orda: combatte due round per orgoglio, poi vola via, perché la Catena lo lega al campo e non alle colline. Il danno che ha preso **resta** all'alba, ma il duello comincia **senza sorpresa**: li conosce. Costa **2 tacche**, e la Scena 7 resta da fare |
 | **Evitano del tutto il duello con Skullcrusher** | Difficile ma possibile (montaggio): allora il Rubino si accende comunque (la fortezza regge), ma **senza ferite ancestrali** → nessun carry-over B4 (Fauci al 1372 a piena forza). La scelta ha un prezzo futuro. |
-| **FALLIMENTO — il duello va malissimo / un PG cade / fuggono sconfitti** | Non c'è TPK: la timeline **esige** che vincano (la profezia È incisa). Se il combattimento crolla, Thorgrim e gli antenati **intervengono** e ricacciano il drago (a caro prezzo: molti nani antichi muoiono — pathos, e la Cerimonia delle 100 Asce ne porterà i nomi). I PG vincono "sporco": **nessuna ferita ancestrale** registrata, il Rubino si accende col tono «misericordia/dovere», e portano il peso di essere stati salvati dagli avi che erano venuti a salvare. |
+| **FALLIMENTO — il duello va malissimo / un PG cade / fuggono sconfitti** | Non c'è TPK: la timeline **esige** che vincano (la profezia È incisa). Se il combattimento crolla, Thorgrim e gli antenati **intervengono** e ricacciano il drago (a caro prezzo: molti nani antichi muoiono — pathos, e il DM ne annota i nomi fra i caduti del 372). I PG vincono "sporco": **nessuna ferita ancestrale** registrata, il Rubino si accende col tono «misericordia/dovere», e portano il peso di essere stati salvati dagli avi che erano venuti a salvare. |
 
 ---
 
@@ -2150,7 +2354,7 @@ due»), e la pietra entra solo al Rituale della Scena 12.*
 | **Seme del Ghostlord** (Scena 5, incontro con Zeth) | i PG assistono all'inizio della Lichificazione di Zeth (mano del Collezionista attraverso il tempo) | ARC-09 (dilemma etico di Hella su Zeth il Murato) | registro di fine serata + scheda del Ghostlord |
 | **Scelte-costo vs Zog'tar** (Scena 8) | Thorik affaticato / Cintura di Tordek «assaggiata» o disciplinata / tono del Rubino | ARC-08 (vs Fauci) | Scena 8 + B4 |
 | **Tono del Rubino** (esito duello) | «nessuna pietà» (UCCISO) / «dovere» (FERITO) / «vigile» (FUGGITO) → colore della Corona in ARC-08 | ARC-08 ingresso | registro delle conseguenze dell'arco |
-| **La Senzienza arriva calda o fredda** (Scena 12) | il ramo lo ha deciso `DEF-3` §5: se Thorik ha donato il +2 di deflessione la Corona **commenta**, se ha rifiutato **informa e basta**. ⚠️ Il freddo e' **reversibile** | ARC-08 e ARC-09, ogni volta che la Corona parla | stato degli artefatti · registro delle conseguenze |
+| **La Senzienza arriva calda o fredda** (`DEF-5` §3, dopo il Rubino) | il ramo lo ha deciso `DEF-3` §5: se Thorik ha donato il +2 di deflessione la Corona **commenta**, se ha rifiutato **informa e basta**. ⚠️ Il freddo e' **reversibile** | ARC-08 e ARC-09, ogni volta che la Corona parla | stato degli artefatti · registro delle conseguenze |
 | **Aegis Fang allo Stage 1** (Scena 12) | l'ascia ha smesso di interrogare Thorik — **oppure** lo giudica, e il giudizio finisce la prima volta che lui rischia qualcosa di suo per Hella | ARC-08, alla prima scena che riguarda Hella o nani da proteggere | scheda di Aegis Fang + stato degli artefatti |
 | **La prima frase dell'ascia, detta dal giocatore** (`[HDYWTDT]`, Scena 12) | quella frase e' canone: ottocento nani l'hanno sentita, e a Hammerfist qualcuno la **ripetera' storta** | ARC-08, arrivo al Cuore della Montagna | registro delle conseguenze |
 | **La fucina** (Scena 5): monete, oggetti venduti, l'ascia del gelo | monete di re non ancora nati murate nella fortezza; le cose vendute tornano come reliquie `[INFERRED — needs DM confirmation]` | ARC-08, a Hammerfist | registro delle conseguenze |
@@ -2165,12 +2369,12 @@ due»), e la pietra entra solo al Rituale della Scena 12.*
 | Scena | Tipo | PX/PG `[verif. ✓ ERRATA/TESORO-WBL 2026-07-23]` |
 |---|---|---|
 | Scene 1-4: l'arrivo, Durin, la targa, il consiglio | storia/social | 600 |
-| Scene 6-8: il campo, Balvar, Zog'tar (GS 14) | combattimento veloce | 2.400 |
+| Scene 6-8: il campo, Balvar, Zog'tar (GS 15) | combattimento veloce | 2.400 |
 | Scena 10: le mura | montaggio/eroico | 600 |
 | Scena 9: Vatore (scena grigia, qualunque esito) | roleplay grigio | 500 |
-| **Scena 11: Skullcrusher (GS 12)** | boss | **2.700** (party 4, APL 13) |
+| **Scena 11: Skullcrusher (GS 14)** | boss | **5.400** (party 4, APL 13) `[INFERRED — rispetto al GS 12 di prima, due GS in più raddoppiano i PX: needs DM confirmation]` |
 | Scene 12-13: il Rituale e il Rubino | premio di storia maggiore | 800 |
-| **TOTALE beat** | | **~7.600/PG** |
+| **TOTALE beat** | | **~10.300/PG** |
 
 > Sommato a Terra (~11.600) + Affreschi (~1.900) + Resurrezione (~1.900), il
 > party **matura il 14° verso Hammerfist**. Le parti giocate non si ritoccano.
@@ -2274,57 +2478,137 @@ resta vivo (Vatore/Sal).
 
 ### A.1 · Skullcrusher il Nero (Scena 11)
 
+`[CANONE — DM 2026-09-27]`: un **drago nero adulto maturo** dell'SRD, con la
+resistenza agli incantesimi e la lista degli incantesimi. I numeri sono quelli
+della tabella del drago nero (d20srd.org, *Dragon, True*); talenti, abilità e
+incantesimi conosciuti li sceglie l'SRD al DM, e qui sono una proposta
+`[INFERRED — needs DM confirmation]`.
+
 ```
 ============================================================
-   SKULLCRUSHER IL NERO — il Primo Nero (GS 12) [verifica B5]
-   Drago Nero Adulto potenziato · capostipite di Fauci di Palude
+   SKULLCRUSHER IL NERO — il Primo Nero (GS 14)
+   Drago nero adulto maturo · capostipite di Fauci di Palude
 ============================================================
-Taglia: Enorme (Huge, 4,5 m) · Tipo: Drago (Terra, acido)
-PF: 240 · CA 27 (−2 taglia, +19 nat) · tocco 8 · impreparato 25 · Iniz +4
-BAB/Lotta: +22 / +39 (Enorme) · FOR 27 · DES 10 · COS 21 · SAG 15 · CAR 14
-Velocità: Terra 12 m · Volare 36 m (scarsa)
-Attacchi: Morso +26 (2d6+9) · 2 Artigli +21 (1d8+4) ·
-          2 Ali +21 (1d6+4) · Coda +21 (1d8+13)
-Full-attack (a terra): morso + 2 artigli + 2 ali + coda
-Soffio ACIDO: linea 30 m, 12d4, Riflessi CD 24 ½, ricarica 1/1d4
-Presenza Terrificante: CD 22 (Volontà o scossi), all'ingresso
-Incantesimi da stregone (5°-6°) · Immune acido, sonno, paralisi
-DA DECIDERE (DM): TS, DV, RI e lista degli incantesimi non ci
-sono. Il drago nero dell'SRD soffia in LINEA (qui corretto);
-un Adulto è Grande, questo è Enorme perché avanzato.
+Drago Enorme (acqua) · caotico malvagio
+DV 22d12+110 (253 pf) · Iniz +4 · Sensi: percezione
+  cieca 18 m, scurovisione 36 m, visione crepuscolare ×4;
+  Ascoltare +27, Osservare +27
+Velocità: 18 m, volare 45 m (scarsa), nuotare 18 m
+CA 29 (−2 taglia, +21 naturale), contatto 8, impreparato 29
+  (33 con armatura magica, lanciata prima: dura 5 ore)
+RD 10/magia · RI 21 · immune acido, sonno, paralisi
+TS Temp +18, Rifl +15, Vol +17
+BAB +22 · Lotta +38
+Spazio/portata 4,5 m / 3 m (morso 4,5 m)
+Mischia: morso +28 (2d8+8) · 2 artigli +23 (2d6+4) ·
+  2 ali +23 (1d8+4) · colpo di coda +23 (2d6+12)
+Schiacciare (in volo o saltando, azione standard): 2d8+12,
+  Riflessi CD 26 o immobilizzati. Solo contro creature
+  Piccole o minori: i nani e i PG Medi non li schiaccia
+Soffio ACIDO (Sop): linea di 30 m, 14d4, Riflessi CD 26 ½,
+  di nuovo dopo 1d4 round
+Presenza Terrificante (Str): raggio 63 m, Volontà CD 23,
+  chi ha meno di 22 DV è scosso per 4d6 round (4 DV o meno:
+  in preda al panico); chi supera il TS è immune per 24 ore
+Capacità magiche: 3/giorno oscurità (raggio 21 m);
+  1/giorno corrompere l'acqua (CD 23: rovina anche le
+  pozioni che un PG ha addosso, se falliscono il TS)
+Respirare sott'acqua (Str)
+Incantesimi da stregone (incantatore di 5°; CD 12 + livello):
+  0 (6/giorno) individuazione del magico, lettura del magico,
+    mano magica, resistenza, suono fantasma, frastornare
+  1° (7/giorno) armatura magica, scudo, colpo accurato,
+    dardo incantato
+  2° (5/giorno) vedere invisibilità, immagine speculare
+FOR 27 · DES 10 · COS 21 · INT 14 · SAG 15 · CAR 14
+Talenti: Attacco in Volo, Attacco Poderoso, Fluttuare,
+  Ghermire, Iniziativa Migliorata, Riflessi Fulminei,
+  Virata, Volontà di Ferro
+Abilità: Ascoltare +27, Cercare +27, Concentrazione +30,
+  Intimidire +27, Muoversi Silenziosamente +25,
+  Nascondersi +17, Osservare +27, Sapienza Magica +27,
+  Nuotare +16
 ------------------------------------------------------------
-NOTA D8 (party APL 13, 4 PG con artefatti): GS 12 è VOLUTO
-"medio" — il duello dev'essere epico ma vincibile, perché il
-vero climax è Fauci nel 1372. Non gonfiarlo: qui si SEMINA.
+PERCHÉ GS 14 (scelta del DM): la nota D8 lo voleva GS 12,
+un Adulto "potenziato" senza numeri. Adesso è un drago
+dell'SRD intero. EL 14 = APL+1, sotto il tetto di APL+4.
+Il vero climax resta Fauci nel 1372: qui si semina.
 ============================================================
 ```
+
+**Cosa cambia al tavolo, rispetto ai numeri di prima**
+
+- **I PG invisibili non gli sfuggono da vicino.** La percezione cieca vede
+  tutto entro 18 m, e *vedere invisibilità* dura 50 minuti: se lo lancia al
+  primo allarme, i PG invisibili sono visibili per tutto il duello. Di notte
+  sulle colline non l'ha lanciato, perché non si aspetta nessuno.
+- **Il soffio fa più male**: 14d4 (in media 35) invece di 12d4. La runa di Zeth
+  (*resistere all'energia* 20) ne toglie ancora più della metà.
+- **La RI 21**: un incantatore di 12°-13° livello la supera con 8 o 9 sul d20
+  (d20 + livello contro 21), quindi un incantesimo su tre circa si spegne. Le
+  invocazioni di Artemis la subiscono come gli incantesimi.
+- **RD 10/magia**: le armi dei PG sono magiche; le balestre delle mura, no.
+- ***Corrompere l'acqua*** può rovinare le pozioni in tasca a un PG (TS
+  dell'oggetto sulla Volontà del portatore). Lo usa al primo round se vede
+  qualcuno bere.
 
 ### A.2 · Zog'tar Deatheye e le sue quattro guardie (Scena 8)
 
 ```
 ============================================================
-   ZOG'TAR DEATHEYE — generale della Mano Rossa (GS 14)
-   Mezzo-Ogre/Orco · Barbaro 10 / Guerriero 4 · Grande · CM
+   ZOG'TAR DEATHEYE — generale della Mano Rossa (GS 15)
+   Mezzo-Ogre/Orco · Barbaro 11 / Guerriero 4 · Grande · CM
 ============================================================
-PF: 230 (14 DV) · CA 24 (−1 taglia, +10 arm. completa, +3 DES, +2 nat)
-   tocco 12 · impreparato 21 · Iniz +3
-BAB/Lotta: +14 / +26 · Velocità 12 m
-FOR 26 (32 in Ira) · DES 16 · COS 20 · INT 12 · SAG 12 · CAR 14
-Attacco: Ascia a due mani +1 +26 mischia (3d6+15, 19-20/×3) in Ira
-Full-attack: +26/+21/+16 (3d6+15)
-TS: Tempra +16 · Riflessi +8 · Volontà +7 (+2 in Ira)
+PF: 253 (15 DV, massimi per dado) · 298 in Ira Superiore
+CA 24 (−1 taglia, +10 arm. completa, +3 DES, +2 nat) · 22 in Ira
+   tocco 12 · impreparato 24 (Schivare Prodigioso Migliorato)
+Iniz +7 · Velocità 12 m
+BAB/Lotta: +15 / +27 (+30 in Ira)
+FOR 26 (32 in Ira) · DES 16 · COS 20 (26 in Ira) · INT 12 · SAG 12 · CAR 14
+Ascoltare +9 · Osservare +1 · Intimidire +12   [INFERRED: 8 gradi
+   in Ascoltare, 10 in Intimidire, nessuno in Osservare]
+In Ira: ascia a due mani +1 +27/+22/+17 (3d6+19, 19-20/×3)
+Fuori dall'Ira (round di sorpresa): +24/+19/+14 (3d6+15)
+TS: Tempra +16 (+19 in Ira) · Riflessi +7 · Volontà +7 (+10 in Ira)
 ------------------------------------------------------------
-• Ira Barbarica Superiore (3/g): +6 FOR, +6 COS, +3 Vol, −2 CA, 10 round
-• RD 5/— · Presenza Minacciosa: entro 9 m, Vol CD 20 o scosso 1d4 round
-• Colpo Possente: fino a −10 TxC per +20 danni (Attacco Poderoso migliorato)
+• Ira Barbarica Superiore (5/g, con Ira Extra): +6 FOR, +6 COS,
+  +3 Volontà, −2 CA, 11 round. Dopo l'Ira è affaticato
+  (l'Ira Instancabile arriva al 17°)
+• RD 2/— (barbaro 10-12) · Schivare Prodigioso Migliorato ·
+  Percepire Trappole +3
+• Presenza Minacciosa: entro 9 m, Vol CD 20 o scosso 1d4 round
+• Attacco Poderoso a due mani: fino a −15 al colpire per +30 ai danni
 • OCCHIO DI OSSIDIANA (artefatto minore maledetto, incastonato al posto
-  dell'occhio destro — decisione DM 2026-09-24): 3/g azione di movimento,
+  dell'occhio destro, canone del DM): 3/g azione di movimento,
   marca un bersaglio → −2 CA contro Zog'tar e +2 danni subiti da lui, 5 round.
   Prezzo: Zog'tar è VULNERABILE alla luce divina (Luce di Lathander/Corona).
-Talenti: Attacco Poderoso, Ira Extra, Critico Migl. (ascia), Arma Focalizzata
-   & Specializzata (ascia), Robustezza, Iniziativa Migliorata.
+Talenti (9): Attacco Poderoso, Ira Extra, Critico Migliorato (ascia),
+   Arma Focalizzata e Arma Specializzata (ascia), Robustezza ×2,
+   Iniziativa Migliorata, Volontà di Ferro
+Boost log: 2026-09-27 — un livello di barbaro (SRD, classe associata)
+   — GS 14 → 15 — il DM lo vuole con l'Ira Superiore e duro abbastanza
+   da reggere più di un round. PF massimi per dado: scelta del DM.
 GUARDIE (4): Hobgoblin Guerriero 8 · CA 20 · PF 60 · spadone +14 (2d6+6)
+   TS Temp +8, Rifl +3, Vol +1 · Iniz +1 · Vel 6 m (armatura pesante)
+   Ascoltare +1 · Osservare +1   [INFERRED — needs DM confirmation:
+   guerriero 8 SRD sulle caratteristiche dell'hobgoblin, senza gradi
+   nelle due abilità]
 ============================================================
+```
+
+**Il sacerdote della Mano** (Scena 8) `[INFERRED — needs DM confirmation:
+adepto 7 dell'SRD sulle caratteristiche dell'hobgoblin, schieramento d'élite]`
+
+```
+SACERDOTE DELLA MANO — hobgoblin adepto 7 (GS 6)
+PF 38 (7d6+14) · CA 12 (+2 DES) · Iniz +2 · Vel 9 m
+Bastone ferrato +3 mischia (1d6) · TS Temp +4, Rifl +4, Vol +7
+FOR 10 · DES 14 · COS 15 · INT 14 · SAG 15 · CAR 8
+Ascoltare +2 · Osservare +2 · Concentrazione +12
+Incantesimi (3/4/3; CD 12 + livello):
+  0 guida, individuazione del magico, luce
+  1° benedizione, causare paura, comando, protezione dal bene
+  2° vedere invisibilità, oscurità, forza del toro
 ```
 
 ### A.3 · Durin Rocciadura (Scena 2)
@@ -2332,8 +2616,7 @@ GUARDIE (4): Hobgoblin Guerriero 8 · CA 20 · PF 60 · spadone +14 (2d6+6)
 Nano Guerriero 6 · PF 52 · CA 22 (arm. completa +1, scudo) · BAB/Lotta +6/+10 ·
 Ascia Doppia +1 +9 (per lato, 1d8+5, 19-20/×3) · TS Temp +8, Rifl +2, Vol +3 ·
 FOR 18, COS 16, SAG 14. **Onesto e leale fino alla morte** una volta convinto;
-antenato di Othrek (Hammerfist 1372). *Se muore alle mura (Scena 10), la Cerimonia
-delle 100 Asce (ARC-08) può portarne il nome — eco commovente.*
+antenato di Othrek (Hammerfist 1372).
 
 ### A.4 · Balvar Fuocospento (Scena 7)
 
@@ -2348,8 +2631,11 @@ ts: Temp +13, Rifl +8, Vol +17
 attributi: For 12 Des 14 Cos 16 Int 16 Sag 20 Car 14
 velocita: 6 m
 iniziativa: +2
+sensi: scurovisione 18 m; Ascoltare +5, Osservare +5
 attacchi:
   - Mischia martello da guerra runico +1 +10/+5 (1d8+2)
+voci:
+  - Abilità: Percepire Intenzioni +13, Concentrazione +19, Sapienza Magica +19, Conoscenze (storia) +19, Artigianato (incidere rune) +19
 ```
 <!-- /include -->
 
@@ -2388,9 +2674,11 @@ standard dell'SRD: nessuna ha una scheda sua nel repo.
 | Creatura | Da dove viene | Cosa conta |
 |---|---|---|
 | **Pattuglia di 4 orchi** | complicazione 3 | Guerriero 3; passano a 6 m |
-| **Lupo da guerra** | complicazione 4 | olfatto acuto, Ascoltare e Osservare +8 |
+| **Cavalieri dei lupi** | il primo e l'ultimo blocco | worg SRD (GS 2): 30 pf, CA 14, morso +7 (1d6+4) e sbilanciare, Ascoltare e Osservare +6, olfatto 9 m. Goblin in sella: combattente 1, Ascoltare e Osservare +1 |
+| **Vedette goblin** | complicazione 4 | goblin SRD (GS 1/3): Ascoltare e Osservare +2, scurovisione 18 m |
 | **Squadrone di 6 hobgoblin** | complicazione 6 | a 24 m; manda il corridore |
-| **La pattuglia dei tre fallimenti** | skill challenge | otto hobgoblin guerrieri di 4° livello, EL 10 `[INFERRED — needs DM confirmation]`; ogni round 1d6, con 1 uno corre alla tenda |
+| **La pattuglia dei tre fallimenti** | skill challenge | otto hobgoblin guerrieri di 4° livello, EL 10: 30 pf, CA 15, spada lunga +6 (1d8+3/19-20), TS Temp +6 Rifl +2 Vol +0, Iniz +1, Vel 9 m, Ascoltare e Osservare −1 `[INFERRED — needs DM confirmation: calcolati sull'SRD, guerriero 4 con Arma Focalizzata e Specializzata]`; ogni round 1d6, con 1 uno corre alla tenda |
+| **Gli sciamani del campo** | dopo il corno | adepti orchi di 5° livello (GS 4), circa quindici: incantesimi 3/2/1, con *vedere invisibilità* fra quelli di 2° |
 
 <!-- nuova-pagina -->
 
@@ -2454,7 +2742,7 @@ La pattuglia si riassume in tre righe: Durin vede la Corona e cade in ginocchio
 
 - **Infiltrazione (3 tiri)**: Muoversi Silenz./Nascondersi/Osservare **CD 20**
   (−2 se aiuti dimezzati). Metà successi = raggiungete la tenda non visti.
-- **Zog'tar (risoluzione veloce, GS 14)**: un **assalto coordinato** (sorpresa +
+- **Zog'tar (risoluzione veloce, GS 15)**: un **assalto coordinato** (sorpresa +
   il colpo più forte del party) lo abbatte se dichiarano tattica sensata e
   vincono **un** tiro contrapposto. Se l'infiltrazione è fallita, è sveglio: −4
   alla sorpresa, un solo scambio.

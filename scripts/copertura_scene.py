@@ -25,6 +25,19 @@ Le regole, e cosa controllano:
        scheda d'entrata o una riga nella tabella **Comparse** della scena.
   C4 · fuori dal contratto — una scheda d'entrata o un'etichetta di battuta in
        una scena, per qualcuno che il suo *Chi* non elenca.
+  C5 · scheda dopo il primo incontro — la persona è nel *Chi* di una scena, e
+       la sua scheda d'entrata o la sua riga fra le Comparse sta in una scena
+       che viene dopo (ADR-0075).
+  C0 · nessuna scena — il titolo di scena del profilo non trova niente nel
+       modulo, e senza scene nessuna regola guarda niente (ADR-0075).
+  C6 · vende senza prezzo — nella scena qualcuno vende (una riga **Vende**
+       in una scheda d'entrata, o la riga *bottega* di **Chi si trova qui**
+       che non dice «nessuno») e la scena non porta un solo prezzo in mo.
+       È il banco di `module-standard/references/il-banco.md`: al tavolo
+       del 2026-09-25 il DM ha inventato pergamene, prezzi e quantità.
+  C7 · Chi si trova qui incompleto — dove la tabella c'è, ha le sei righe
+       (comando, culto, rimedi, bottega, messaggi, guardia), anche «nessuno».
+       Non sa quali scene la vogliono: quello lo chiede il playtester.
 
 Quello che lo script **non** vede, dichiarato: una persona o un luogo che il
 testo non nomina affatto. Un capitano che nessuno ha scritto non ha
@@ -68,6 +81,16 @@ _SCHEDA = re.compile(r"^\*\*Scheda d'entrata\s+—\s+([^*\n]+)", re.M)
 _CONTRATTO = re.compile(r"^\*\*In scena\*\*\s*—\s*Dove:\s*(?P<dove>.*?)\s*—\s*Chi:\s*(?P<chi>.*)$", re.M)
 _ETICHETTA_BOX = re.compile(r"\*\*Read-aloud[^*\n]*?—\s*([^*\n]+?)\.?\*\*", re.I)
 _ARTICOLI = re.compile(r"^(?:il|lo|la|i|gli|le|l'|un|una|uno)\s*", re.I)
+
+
+#: C6 · il banco. Una scheda che vende, o la riga «bottega» di Chi si trova
+#: qui che non è vuota, chiede almeno un prezzo nella stessa scena.
+_VENDE = re.compile(r"^\|\s*\*\*Vende\*\*\s*\|", re.M)
+_BOTTEGA = re.compile(r"^\|\s*\**bottega\**\s*\|(?!\s*nessuno)", re.M | re.I)
+_PREZZO = re.compile(r"\b\d[\d.]*\s*mo\b")
+#: C7 · le sei righe fisse della tabella del passo 2 (ADR-0075).
+_CHI_QUI = re.compile(r"\*\*Chi si trova qui\*\*")
+RUOLI_QUI = ("comando", "culto", "rimedi", "bottega", "messaggi", "guardia")
 
 
 def norm(s: str) -> str:
@@ -182,7 +205,17 @@ def analizza(testo: str, profilo: dict, schede_extra: "list[str]") -> "list[tupl
     cast = righe_cast(schede_extra) if profilo.get("cast") else []
     elenco = schede + cast
 
-    for titolo, corpo in scene(testo, profilo.get("scena", SCENA_DEF), profilo.get("escludi")):
+    elenco_scene = scene(testo, profilo.get("scena", SCENA_DEF), profilo.get("escludi"))
+    # C0 · un modulo sotto cancello senza scene riconosciute passava con zero
+    # rilievi senza essere guardato (ADR-0075, PIANO-LETTORE F6-a).
+    if not elenco_scene:
+        return [("C0", "—", "nessuna scena riconosciuta: il titolo di scena del profilo non trova niente")]
+    # C5 · la scheda d'entrata sta nella scena in cui i PG incontrano la persona,
+    # non in una dopo (module-standard; Zog'tar in DEF-4, 2026-09-27).
+    locali = [nomi_schede([c]) + comparse(c) for _, c in elenco_scene]
+    visti: "list[str]" = []
+
+    for i, (titolo, corpo) in enumerate(elenco_scene):
         k = chiave_scena(titolo)
         if "C1" in profilo["regole"] and not mc.box_read_aloud(corpo):
             rilievi.append(("C1", k, "nessun box read-aloud"))
@@ -207,6 +240,21 @@ def analizza(testo: str, profilo: dict, schede_extra: "list[str]") -> "list[tupl
         for persona in chi:
             if not coperto(persona, elenco + compar):
                 rilievi.append(("C3", k, f"Chi: {persona} — né scheda d'entrata né riga fra le Comparse"))
+        for persona in chi:
+            if coperto(persona, visti):
+                continue
+            visti.append(norm(persona))
+            dove = [j for j, loc in enumerate(locali) if coperto(persona, loc)]
+            if dove and dove[0] > i:
+                rilievi.append(("C5", k, f"{persona} — la scheda sta più avanti, in "
+                                          f"{chiave_scena(elenco_scene[dove[0]][0])}"))
+        if _CHI_QUI.search(corpo):
+            mancano = [r for r in RUOLI_QUI
+                       if not re.search(rf"^\|\s*\**{r}\**\s*\|", corpo, re.M | re.I)]
+            if mancano:
+                rilievi.append(("C7", k, "Chi si trova qui senza: " + ", ".join(mancano)))
+        if (_VENDE.search(corpo) or _BOTTEGA.search(corpo)) and not _PREZZO.search(corpo):
+            rilievi.append(("C6", k, "qualcuno vende, e la scena non ha un prezzo in mo"))
         chi_n = [norm(c) for c in chi]
         for s in nomi_schede([corpo]) + [norm(p) for p in parlanti]:
             if not coperto(s, chi_n):

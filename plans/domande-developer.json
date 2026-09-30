@@ -104,6 +104,20 @@
       "scena": "—",
       "dettaglio": "nessun effetto chiede un TS su Volontà (sull'intero modulo)",
       "ragione": "🔴 APERTO: lotto F5; da decidere col DM se un modulo di intrigo lo vuole"
+    },
+    {
+      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+      "regola": "D2",
+      "scena": "SCENA 2",
+      "dettaglio": "luogo sorvegliato: nessuna risposta a «e se sono silenziosi?»",
+      "ragione": "falso positivo: stessa ragione delle altre due righe D2 della Scena 2, la pattuglia di Durin cerca i PG"
+    },
+    {
+      "file": "10-stand-alone/L'abbazia Della Rotta Sicura/abbazia_rotta_sicura.md",
+      "regola": "D2",
+      "scena": "Atto III — Sotto",
+      "dettaglio": "luogo sorvegliato: nessuna risposta a «e se sono silenziosi?»",
+      "ragione": "rilievo vero, ma l'Abbazia non si riscrive (MESTIERE-BANCHI D1): la risposta entra come nota del DM nel lotto S4 di PIANO-MASTER-DEF, con gli altri rilievi di domande_developer"
     }
   ]
 }

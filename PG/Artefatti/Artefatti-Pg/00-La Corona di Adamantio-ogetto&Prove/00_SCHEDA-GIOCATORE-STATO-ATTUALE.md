@@ -144,7 +144,8 @@ strappare, la Corona non collabora; se la si apre sull'incudine per incastonare,
 si apre.
 
 **Non ancora sbloccati** (Rituale 4, «Assedio della Forgia Eterna» = il viaggio
-a −1.000): **Corona di Protezione +3**, **Senzienza**, **Rubino**.
+a −1.000): il **Rubino**, e dopo il suo uso, al ritorno nel 1372, la
+**Corona di Protezione +3** e la **Senzienza**.
 
 ## 📄 PAGINA 2 — SNAPSHOT "INGRESSO ARC-09" (⚠️ NON stampare prima del raccordo D16)
 
@@ -164,9 +165,11 @@ Tutto quanto sopra, PIÙ:
 **Gemma RUBINO, la Possanza Nanica — SPESA:**
 
 > Il Rubino si è acceso alla vittoria della battaglia di 1.000 anni fa
-> (≈372 DR) e **si è consumato** per riportarvi al 1372. L'incastonatura
-> ora è vetro scuro. *"Nessuna pietà"* — la Corona ricorda. **Non è
-> riattivabile**: chiunque dica il contrario, è un'incoerenza da segnalare.
+> (≈372 DR) e **si è consumato** per riportarvi al 1372: si usa una volta
+> sola. La pietra però resta nell'incasso, e dopo l'uso **la Corona è
+> intera**: +3 e la Senzienza. *"Nessuna pietà"* — la Corona ricorda. **Il
+> viaggio non è riattivabile**: chiunque dica il contrario, è un'incoerenza da
+> segnalare.
 
 **Poteri dei Rituali Legacy 3-4.** ✅ **Confermati dal DM il 2026-09-20**, e la
 riga «da confermare» che stava qui contraddiceva la tabella di PAGINA 1, dove
@@ -176,7 +179,8 @@ marcati **Rit. 3**.
 | Potere | Da quale rituale | Stato |
 |---|---|---|
 | **Volontà d'Adamantio** · **Manto di Pietra e Spirito** | **Rituale 3**, l'Incudine del Mondo | ✅ **già tuoi** — vedi PAGINA 1 |
-| **Corona +3** · **Senzienza** · **Rubino** | **Rituale 4**, l'Assedio della Forgia Eterna | ⬜ al viaggio a −1.000 |
+| **Rubino** | **Rituale 4**, l'Assedio della Forgia Eterna | ⬜ al viaggio a −1.000: si usa una volta sola, per tornare |
+| **Corona +3** · **Senzienza** | dopo l'uso del Rubino | ⬜ al ritorno nel 1372: la Corona si completa |
 | ⭐ ***Aura della Forgia Eterna*** **1/settimana** | **Rituale 4**, alla vittoria | ⬜ *Possenza Divina* e *Protezione dal Male* a te e ai tuoi; a ogni nano entro 30 m anche *Benedizione* e uno *Scolpire Pietra*; **+4 di morale** ad attacchi e TS per ogni nano che ti veda; i nemici dei nani **Volontà CD 20** o **scossi** 1 minuto |
 
 ---

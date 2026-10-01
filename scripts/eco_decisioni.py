@@ -70,15 +70,33 @@ def blocchi(radice: Path) -> "dict[tuple[str, str], list[str]]":
     return out
 
 
-def eco_presente(testo: str, etichetta: str, data: str) -> "list[str]":
-    """[] se l'eco c'e' ed e' completa; altrimenti i campi mancanti (o ['marker'])."""
+_IDENT = re.compile(r"\bD\d+\b")
+
+
+def eco_presente(testo: str, etichetta: str, data: str) -> "tuple[list[str], set[str]]":
+    """(campi mancanti, decisioni nominate nelle righe **Decise**).
+
+    Nello stesso giorno le eco possono essere piu' d'una: il DM puo' chiudere un
+    blocco la mattina e un altro la sera. Ognuna deve avere i quattro campi, e
+    insieme devono nominare ogni decisione chiusa quel giorno. ['marker'] se non
+    ce n'e' nessuna.
+    """
     righe = testo.split("\n")
+    mancanti: "list[str]" = []
+    nominate: "set[str]" = set()
+    trovate = 0
     for i, r in enumerate(righe):
         m = _ECO.match(r.strip())
-        if m and m.group("etichetta") == etichetta and m.group("data") == data:
-            corpo = "\n".join(righe[i + 1:i + 1 + RIGHE_DEL_BLOCCO])
-            return [c for c in CAMPI if f"**{c}**" not in corpo]
-    return ["marker"]
+        if not (m and m.group("etichetta") == etichetta and m.group("data") == data):
+            continue
+        trovate += 1
+        blocco = righe[i + 1:i + 1 + RIGHE_DEL_BLOCCO]
+        corpo = "\n".join(blocco)
+        mancanti += [c for c in CAMPI if f"**{c}**" not in corpo and c not in mancanti]
+        for b in blocco:
+            if "**Decise**" in b:
+                nominate |= set(_IDENT.findall(b.replace("~", "")))
+    return (["marker"] if not trovate else mancanti), nominate
 
 
 def esamina(radice: Path = RADICE) -> "tuple[list[str], list[str], int]":
@@ -92,13 +110,16 @@ def esamina(radice: Path = RADICE) -> "tuple[list[str], list[str], int]":
             prima += 1
             continue
         f = files.get(etichetta)
-        mancano = eco_presente(f.read_text(encoding="utf-8"), etichetta, data) if f else ["file"]
+        mancano, nominate = eco_presente(f.read_text(encoding="utf-8"), etichetta, data) if f else (["file"], set())
         nome = f.name if f else etichetta
         chi = f"{nome} · {etichetta} {data} ({', '.join(idents)})"
+        tacite = [x for x in idents if x not in nominate]
         if mancano == ["marker"]:
             problemi.append(f"{chi}: manca «<!-- eco: {etichetta} {data} -->»")
         elif mancano:
             problemi.append(f"{chi}: l'eco non ha {', '.join('**' + c + '**' for c in mancano)}")
+        elif tacite:
+            problemi.append(f"{chi}: nessuna eco nomina fra le **Decise** {', '.join(tacite)}")
         else:
             a_posto.append(chi)
     return problemi, a_posto, prima

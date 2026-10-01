@@ -32,13 +32,19 @@ dopo arriva solo quando il lettore ha scritto il diario di quella appena letta.
 Serve quando occorre il **diario**: il ricordo del passo 7 e le domande ai
 lettori dopo la lettura lavorano su quello, e il DM a freddo legge così.
 
-⚠️ **Per trovare i buchi non è dimostrato che sia meglio.** Calibrato il
-2026-10-01 sul DEF-4 del tavolo, con due agenti nuovi e la stessa rubrica
-(`plans/esperimenti/lettura-a-scene-def4/`): intera 69 rilievi e 7 `L-ORDINE`,
-a scene 55 e 7, tre in comune. Il guadagno su `L-ORDINE` rispetto a settembre
-(3) viene dalle domande fisse di questa rubrica, non dal modo di leggere. Quale
-modo usa il lettore per i buchi lo decide il DM (D8 di
-PIANO-AGENT-SKILLS-ESTERNE).
+**Il lettore legge due volte (D8, deciso il 2026-10-01).** Prima a scene, con
+il diario: è quello che capisce un DM la prima volta, ed è il diario su cui
+lavora il ricordo del passo 7. Poi il modulo intero, da capo, per i buchi che
+si vedono solo con tutto davanti. Nella tabella dei rilievi una colonna
+**Lettura** dice in quale delle due è nato ognuno (`scene` o `intera`); un
+rilievo trovato in tutte e due si scrive una volta, con `scene`.
+
+Perché due e non una: nella calibrazione sul DEF-4 del tavolo
+(`plans/esperimenti/lettura-a-scene-def4/`) le due letture avevano trovato 7
+`L-ORDINE` ciascuna e solo tre in comune; insieme sono 11. ⚠️ Quella misura
+viene da **due agenti diversi**; con lo stesso lettore che rilegge, la seconda
+lettura può trovare meno, perché ha già capito. Va misurato alla prima corsa
+vera.
 
 Il diario, una riga per passaggio:
 
@@ -71,8 +77,9 @@ CRITERI (l'uscita fallisce se uno manca):
 1. non apri il modulo per altre vie: niente grep, niente cat, niente git;
 2. ogni passaggio ha la sua riga di diario, con tutti i campi;
 3. la tabella finale ha una prova citata per ogni rilievo.
-USCITA: la tabella | # | Scena | Codice | Cosa manca | Gravità | Prova |, e in
-coda cosa la lettura non ha potuto verificare.
+USCITA: dopo l'ultima scena, rileggi il modulo intero da capo; poi la tabella
+| # | Lettura | Scena | Codice | Cosa manca | Gravità | Prova |, e in coda cosa
+la lettura non ha potuto verificare.
 Se un input manca o si contraddice, scrivi INPUT GAP in testa, con una riga.
 ```
 
@@ -125,9 +132,10 @@ agenti: `quiz-a-due-agenti.md`.
 Una tabella, niente prosa intorno:
 
 ```
-| # | Scena | Codice | Cosa manca | Gravità | Prova |
+| # | Lettura | Scena | Codice | Cosa manca | Gravità | Prova |
 ```
 
+- **Lettura**: `scene` o `intera`, la lettura in cui il rilievo è nato (D8).
 - **Gravità**: 🔴 *il DM deve inventare qualcosa di strutturale* · 🟠 *il DM
   perde più di 30 secondi a cercare* · 🟡 *se ne accorge un giocatore attento*.
   Sono le due metriche del debrief (`SKILL.md` §5), usate come soglie.

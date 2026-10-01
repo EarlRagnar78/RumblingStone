@@ -22,8 +22,9 @@ Per ogni master, l'ultima lettura di ogni ruolo e':
 
 **Avviso, poi bloccante da solo** (D4, il DM: *«dopo se c'e' l'avviso vogliono
 siano bloccati cosi' si modificano davvero»*). Si decide **master per master**:
-finche' un master non ha una lettura con impronta del lettore **e** del
-playtester, i suoi problemi sono avvisi. Appena le ha, il master e' sotto
+finche' un master non ha una lettura con impronta del lettore, del
+playtester **e** del DM a freddo (D9: almeno la vista di chi scorre), i suoi
+problemi sono avvisi. Appena le ha, il master e' sotto
 cancello e `--check` esce 1 su una sua lettura scaduta o su un suo 🔴/🟠 senza
 stato. Non torna piu' in avviso, e un master nuovo senza letture non ci
 rimette gli altri. Nessun interruttore a mano.
@@ -53,7 +54,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REGISTRO = ROOT / "plans" / "letture-a-freddo.json"
 GLOB_MASTER = "ARC*-DEF-*.md"
 FUORI = ("_ARCHIVIO/", "build/", ".claude/", "homebrew/")
-RUOLI_OBBLIGATORI = ("lettore", "playtester")
+RUOLI_OBBLIGATORI = ("lettore", "playtester", "dm")  # dm: D9 del 2026-10-01
 STATI = ("corretto", "residuo", "domanda")
 _RIGA_RILIEVO = re.compile(r"^\|\s*(\d+)\s*\|.*?(🔴|🟠)", re.M)
 
@@ -229,7 +230,7 @@ def main(argv=None) -> int:
         print(f"{segno} {rel.split('/')[-1][:44]:44} " + " · ".join(f"{r}: {s}" for r, s in sorted(stati.items())))
     if avvisi or any(not sotto_cancello(voci.get(r, {})) for r in masters()):
         print("\n⚠️  i master senza 🔒 sono in AVVISO: diventano bloccanti da soli quando hanno una lettura "
-              "con impronta di lettore e playtester (D4).")
+              "con impronta di lettore, playtester e DM a freddo (D4, D9).")
         for p in avvisi:
             print(f"   avviso: {p}")
     for p in bloccanti:

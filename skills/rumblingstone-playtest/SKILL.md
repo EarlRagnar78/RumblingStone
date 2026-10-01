@@ -89,13 +89,13 @@ fissa. Leggi le rubriche, non questo riassunto:
 |---|---|---|
 | **lettore** | *capisco cosa c'è, senza inventare?* (leggibilità) | [`references/lettore-a-freddo.md`](references/lettore-a-freddo.md) |
 | **playtester** | *quando i giocatori fanno quello che vogliono, il modulo risponde?* (giocabilità) | [`references/playtester-a-freddo.md`](references/playtester-a-freddo.md) |
-| **DM a freddo** *(in prova, D9)* | *un DM che non l'ha scritto lo conduce stasera, con il tempo che ha?* (preparazione) | [`references/dm-a-freddo.md`](references/dm-a-freddo.md) |
+| **DM a freddo** *(primo passo obbligatorio, D9)* | *un DM che non l'ha scritto lo conduce stasera, con il tempo che ha?* (preparazione) | [`references/dm-a-freddo.md`](references/dm-a-freddo.md) |
 
-- **Come**: il modulo si può leggere **una scena alla volta**, servito da
-  `scripts/lettura_a_scene.py`, con un diario per scena. Il diario è quello su
-  cui lavorano il ricordo del passo 7 e le domande ai lettori. Per trovare i
-  buchi la calibrazione del 2026-10-01 non ha mostrato un vantaggio sulla
-  lettura intera (`lettore-a-freddo.md`, «La lettura a scene»; D8).
+- **Come**: il lettore legge **due volte** (D8): prima una scena alla volta,
+  servito da `scripts/lettura_a_scene.py`, con un diario per scena; poi il
+  modulo intero. Il diario serve al ricordo del passo 7 e alle domande ai
+  lettori; la seconda lettura ai buchi che si vedono solo col modulo intero
+  (`lettore-a-freddo.md`, «La lettura a scene»).
 - **Quando**: su ogni master nuovo o riscritto, **prima** del dry-run e prima
   che vada al tavolo. Il dry-run misura il ritmo, le letture misurano i buchi.
 - **Sono obbligatorie per chiamare un master DEF**, in ogni arco e in ogni

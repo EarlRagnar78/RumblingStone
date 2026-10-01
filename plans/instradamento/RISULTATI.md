@@ -60,3 +60,78 @@ della skill: «se le carte si danno prima, i PG sanno tutto» è narrativa e
 canone senza una parola chiave. Per quelle un controllo lessicale non basta,
 e il tetto non va spinto a zero aggiungendo trigger su misura delle frasi:
 sarebbe imparare la prova a memoria.
+
+## D10 · il campione verificato e confrontato (2026-10-01, sera)
+
+Il DM ha chiesto di non confermare gli insiemi a mano, ma di verificarli con
+dei test e di confrontarli con quello che fa la comunità.
+
+### Cosa hanno trovato i test sul campione
+
+- **Una frase non era del DM.** «scorrendo il master, so cosa succede
+  stasera?» l'avevo scritta io nel piano, dopo le parole «il DM a freddo:», e
+  la regex di raccolta l'aveva presa per una citazione. Tolta. Ora un test
+  controlla che ogni frase sia letterale nella sua fonte e che, poco prima, ci
+  sia il DM e non «il DM a freddo».
+- **Una frase era composta da due citazioni.** Ridotta alla prima.
+- **Le fonti** erano scritte a memoria («plans/»): ora ognuna è il file esatto.
+- **I nomi propri**: ogni frase che nomina uno dei 322 nomi della campagna
+  (`misura_craft._registro_dei_nomi`, lo stesso di `fase1.py`) ha `campaign`
+  fra le attese. Il test passa senza correzioni.
+
+### Il confronto
+
+Tre riferimenti, letti per intero:
+[agentskills.io, «Optimizing skill descriptions»](https://agentskills.io/skill-creation/optimizing-descriptions),
+la skill `skill-creator` di Anthropic (Apache 2.0: `run_eval.py`,
+`run_loop.py`, `improve_description.py`) e `evals/tools/run_trigger_evals.py`
+di awesome-llm-apps (Apache 2.0, ADR-0076), che a sua volta riprende il modello
+a livelli di addyosmani/agent-skills. Nessun codice copiato: si adottano le
+idee.
+
+| Pratica | agentskills.io | skill-creator | run_trigger_evals | qui, prima | qui, ora |
+|---|---|---|---|---|---|
+| casi negativi vicini («near-miss») | sì, 8-10 su 20 | sì | sì, con margine 1,15 | no | **10 quasi-casi** e il campo «escluse» |
+| due metà, una sola per tarare | 60/40 | holdout stratificato | no | 50/50 | 50/50, ognuna con casi e quasi-casi (test) |
+| più corse, tasso di attivazione | 3, soglia 0,5 | in parallelo | no | no | **3 agenti, maggioranza** (`--comportamentale`) |
+| controllo lessicale in CI | no | no | sì | sì | sì, con le escluse e un secondo tetto |
+| collisioni fra descrizioni | no | no | oltre il 50% del vocabolario | no | **sì**: nessuna; la più vicina `forgotten-realms-lore` ↔ `campaign` al 32% |
+| la skill giusta per prima | — | — | sì | — | **non adottato**: qui una frase vuole un *insieme*, le righe si sommano |
+| riscrittura automatica della descrizione | — | sì, con un LLM | — | — | **non adottato**: chiede `claude -p` in CI e una chiave; la riscrittura resta a mano |
+
+### La prova comportamentale
+
+Tre agenti nuovi ricevono solo nome e descrizione delle diciotto skill, come
+all'avvio di una sessione, e le 39 frasi senza etichette. Una skill è
+«caricata» se la sceglie la maggioranza.
+
+| | lessicale | agenti, prima | agenti, dopo il confine |
+|---|---:|---:|---:|
+| obbligatorie caricate | 32 su 47 | 40 su 47 | 40 su 47 |
+| escluse caricate | 1 | 1 | **0** |
+
+«Prima» sono le corse in `comportamentale/`, «dopo» quelle in
+`comportamentale-v2/`. Fra le due è cambiata una frase della descrizione di
+`narrative-style` («Non per gli script che controllano la prosa»), scelta su un
+fallimento della metà di taratura, come chiede agentskills.io: non si
+aggiungono parole delle frasi sbagliate, si dice cosa la skill non fa. Con tre
+corse la differenza su una sola frase è debole.
+
+⚠️ **Due etichette sono state corrette guardando le corse**, e quindi il «41»
+che si leggerebbe con le etichette nuove sulle corse vecchie non è
+indipendente: la frase su Umberto Eco vuole anche `indagine` (AGENTS.md regola
+11), e la domanda sui passi per il PDF non chiede di scrivere niente. Le altre
+sei differenze fra agenti ed etichette restano aperte, nel campo dei casi:
+
+| # | Frase | Agenti | Etichetta |
+|---|---|---|---|
+| 1 | il PDF della parte DM | `editoria` | `campaign` (nomina la Forgia) |
+| 6 | i misteri della mini campagna | `indagine` sola | anche `narrative-style`, che resta il fondo (C3) |
+| 12 | le statistiche di D5 | consultazione SRD e PF1e | anche `campaign` |
+| 17 | stanze e PNG inventati al tavolo | `module-standard`, `narrative-style` | anche `campaign` |
+| 18 | eventi e osterie del Drappo | `campaign` (due su tre) | il Drappo **non** è la campagna |
+| 22 | il gruppo d'incontro contro incantatori | `automation`, SRD | `module-standard` |
+
+La #18 è la più istruttiva: la descrizione di `campaign` non dice che il Drappo
+ne è fuori, e gli agenti ci cascano. È nella metà di verifica: non l'ho usata
+per tarare.

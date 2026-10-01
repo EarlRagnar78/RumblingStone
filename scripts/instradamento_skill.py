@@ -119,10 +119,81 @@ def misura(casi: "list[dict]", skill: "dict[str, list[str]]") -> "list[dict]":
             "omesse": [s for s in attese if s not in r],
             "insieme": c.get("insieme", ""),
             "in_piu": [s for s in sorted(r) if s in OBBLIGATORIE and s not in attese],
+            "violazioni": [s for s in c.get("escluse", []) if s in r],
             "conflitto_l1": all(x in r for x in L1),
             "perche": {k: v for k, v in r.items() if k in attese},
         })
     return righe
+
+
+_PAROLA = re.compile(r"[a-z0-9]+")
+_VUOTE = set("""il lo la i gli le un una di da in con su per tra fra e o a al del della dei delle
+che non si come quando cosa chi use the and for when on of to or with this skill trigger any
+""".split())
+
+
+def vocabolario(desc: str) -> "set[str]":
+    """Le parole della descrizione, come le conta run_trigger_evals.py (ADR-0076)."""
+    return {w for w in _PAROLA.findall(normalizza(desc)) if len(w) >= 4 and w not in _VUOTE}
+
+
+def collisioni(skill_trigger: "dict[str, list[str]]", soglia: float = 0.5,
+               radice: Path = RADICE) -> "list[tuple[str, str, float]]":
+    """Coppie di descrizioni che condividono piu' della soglia del vocabolario minore.
+
+    E' il controllo «near-collide» di run_trigger_evals.py di awesome-llm-apps:
+    due descrizioni troppo simili si rubano le frasi a vicenda.
+    """
+    voc = {n: vocabolario(descrizione(radice / "skills" / n / "SKILL.md")) for n in skill_trigger}
+    nomi, out = sorted(voc), []
+    for i, a in enumerate(nomi):
+        for b in nomi[i + 1:]:
+            if voc[a] and voc[b]:
+                q = len(voc[a] & voc[b]) / min(len(voc[a]), len(voc[b]))
+                if q > soglia:
+                    out.append((a, b, round(q, 2)))
+    return out
+
+
+def suggerisci(frase: str) -> str:
+    """Le skill obbligatorie che i trigger suggeriscono per una frase, in ordine di strato."""
+    r = raggiunte(frase, tutte_le_skill())
+    obb = [s for s in sorted(r) if s in OBBLIGATORIE]
+    righe = [f"frase: {frase}"]
+    if all(x in r for x in L1):
+        righe.append("⚠️  tutte e due le L1: decide chi legge (ORCHESTRAZIONE, domanda 2)")
+    for s in obb:
+        righe.append(f"  {s:34} ← {', '.join(r[s][:3])}")
+    altre = [s for s in sorted(r) if s not in OBBLIGATORIE]
+    if altre:
+        righe.append("  (L3, L4, LR suggerite: " + ", ".join(altre) + ")")
+    if not obb:
+        righe.append("  nessuna skill obbligatoria raggiunta dai trigger: applica le cinque domande a mano")
+    return "\n".join(righe)
+
+
+def comportamentale(cartella: Path, casi: "list[dict]", soglia: float = 0.5) -> dict:
+    """La prova con agenti veri: ogni `run*.json` della cartella e' una corsa.
+
+    Il formato e' {"1": [skill…], "2": […]} con i numeri dei casi nell'ordine di
+    casi.json. Una skill e' «caricata» se il suo tasso fra le corse supera la
+    soglia: e' il trigger rate di agentskills.io, con tre corse come base.
+    """
+    corse = [json.loads(f.read_text(encoding="utf-8")) for f in sorted(cartella.glob("run*.json"))]
+    out = {"corse": len(corse), "attese_caricate": 0, "attese_saltate": 0, "in_piu": 0,
+           "violazioni": 0, "disaccordi": []}
+    for i, c in enumerate(casi, 1):
+        scelte = {s for s in OBBLIGATORIE
+                  if sum(s in r.get(str(i), []) for r in corse) / max(1, len(corse)) > soglia}
+        attese, escluse = set(c["attese"]), set(c.get("escluse", []))
+        out["attese_caricate"] += len(attese & scelte)
+        out["attese_saltate"] += len(attese - scelte)
+        out["in_piu"] += len(scelte - attese)
+        out["violazioni"] += len(escluse & scelte)
+        if scelte != attese:
+            out["disaccordi"].append({"n": i, "frase": c["frase"], "saltate": sorted(attese - scelte),
+                                      "in_piu": sorted(scelte - attese)})
+    return out
 
 
 def main(argv=None) -> int:
@@ -130,17 +201,31 @@ def main(argv=None) -> int:
     ap.add_argument("--check", action="store_true")
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--casi", type=Path, default=CASI)
+    ap.add_argument("--frase", help="suggerisce le skill per una frase sola, ed esce")
+    ap.add_argument("--comportamentale", type=Path, help="cartella con le corse run*.json degli agenti")
     a = ap.parse_args(argv)
+    if a.frase:
+        print(suggerisci(a.frase))
+        return 0
+    if a.comportamentale:
+        r = comportamentale(a.comportamentale, json.loads(a.casi.read_text(encoding="utf-8"))["casi"])
+        print(json.dumps(r, ensure_ascii=False, indent=2) if a.json else
+              f"{r['corse']} corse · attese caricate {r['attese_caricate']}, saltate {r['attese_saltate']} · "
+              f"in più {r['in_piu']} · escluse caricate {r['violazioni']} · disaccordi {len(r['disaccordi'])}")
+        return 0
     dati = json.loads(a.casi.read_text(encoding="utf-8"))
     righe = misura(dati["casi"], tutte_le_skill())
     omesse = sum(len(r["omesse"]) for r in righe)
     attese = sum(len(r["attese"]) for r in righe)
     conflitti = sum(r["conflitto_l1"] for r in righe)
     in_piu = sum(len(r["in_piu"]) for r in righe)
+    violazioni = sum(len(r["violazioni"]) for r in righe)
+    tetto_v = dati.get("tetto_violazioni")
     tetto = dati.get("tetto_omissioni")
 
     if a.json:
-        print(json.dumps({"omesse": omesse, "attese": attese, "in_piu": in_piu, "conflitti_l1": conflitti,
+        print(json.dumps({"omesse": omesse, "attese": attese, "in_piu": in_piu, "violazioni": violazioni,
+                          "collisioni": collisioni(tutte_le_skill()), "conflitti_l1": conflitti,
                           "tetto": tetto, "casi": righe}, ensure_ascii=False, indent=2))
     elif not a.check:
         for r in righe:
@@ -148,25 +233,34 @@ def main(argv=None) -> int:
             print(f"{segno} {r['frase'][:70]}")
             if r["omesse"]:
                 print(f"     omesse: {', '.join(r['omesse'])}")
+            if r["violazioni"]:
+                print(f"     ⛔ raggiunge un'esclusa: {', '.join(r['violazioni'])}")
             if r["in_piu"]:
                 print(f"     in più: {', '.join(r['in_piu'])}")
             if r["conflitto_l1"]:
                 print("     ⚠️ conflitto: tutte e due le L1")
-        print(f"\nomissioni {omesse} su {attese} skill obbligatorie, in {len(righe)} frasi · in più {in_piu} · conflitti L1 {conflitti}")
+        print(f"\nomissioni {omesse} su {attese} skill obbligatorie, in {len(righe)} frasi · in più {in_piu} · violazioni {violazioni} · conflitti L1 {conflitti}")
         for ins in ("taratura", "verifica"):
             sub = [r for r in righe if r["insieme"] == ins]
             if sub:
-                print(f"  {ins}: {sum(len(r['omesse']) for r in sub)} su {sum(len(r['attese']) for r in sub)}")
+                print(f"  {ins}: {sum(len(r['omesse']) for r in sub)} su {sum(len(r['attese']) for r in sub)}"
+                      f" omesse · {sum(len(r['violazioni']) for r in sub)} violazioni")
+        coll = collisioni(tutte_le_skill())
+        print(f"collisioni fra descrizioni (oltre il 50% del vocabolario): {len(coll)}")
+        for a_, b_, q in coll:
+            print(f"  {a_} ↔ {b_}: {q:.0%}")
 
     if a.check:
         if tetto is None:
             print(f"✗ instradamento_skill: manca «tetto_omissioni» in {a.casi.name} (oggi {omesse})")
             return 1
-        if omesse > tetto or conflitti:
-            print(f"✗ instradamento_skill: {omesse} omissioni (tetto {tetto}), {conflitti} conflitti L1")
+        if omesse > tetto or conflitti or (tetto_v is not None and violazioni > tetto_v):
+            print(f"✗ instradamento_skill: {omesse} omissioni (tetto {tetto}), "
+                  f"{violazioni} violazioni (tetto {tetto_v}), {conflitti} conflitti L1")
             return 1
         piu_basso = f" — il tetto si può abbassare a {omesse}" if omesse < tetto else ""
-        print(f"✓ instradamento_skill: {omesse} omissioni su {attese}, tetto {tetto}{piu_basso}")
+        print(f"✓ instradamento_skill: {omesse} omissioni su {attese}, tetto {tetto}{piu_basso}; "
+              f"{violazioni} violazioni, tetto {tetto_v}")
     return 0
 
 

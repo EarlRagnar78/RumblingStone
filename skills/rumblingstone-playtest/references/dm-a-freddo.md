@@ -18,9 +18,14 @@ DM (D2 di PIANO-AGENT-SKILLS-ESTERNE).
 ⚠️ **Stato: in prova.** Il primo passo è stato provato sui cinque DEF di ARC-07
 il 2026-10-01 (`plans/esperimenti/dm-a-freddo/`); il secondo e il terzo hanno
 una corsa intera su DEF-5 (`corsa-def5/`): 13 rilievi, 2 nuovi rispetto a
-lettore e playtester, e un peso diverso su quelli già noti. Finché il DM non
-decide (D9 di PIANO-AGENT-SKILLS-ESTERNE), il DM a freddo **non** è un passo
-obbligatorio del ciclo del master.
+lettore e playtester, e un peso diverso su quelli già noti.
+
+**Cosa è obbligatorio (D9, deciso il 2026-10-01).** Il **primo passo** è
+obbligatorio al passo 6 del ciclo del master, accanto a lettore e playtester:
+`registro_letture.py` non mette un master sotto cancello finché non ha anche la
+lettura `dm` con l'impronta del testo. Il secondo e il terzo passo restano **in
+prova** finché il DM non dice se la preparazione di
+`plans/esperimenti/dm-a-freddo/corsa-def5/PREPARAZIONE.md` somiglia alla sua.
 
 ## Primo passo · la vista di chi scorre
 

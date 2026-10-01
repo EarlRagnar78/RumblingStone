@@ -2425,9 +2425,9 @@
     },
     {
       "name": "instradamento_skill",
-      "description": "«Se il DM dice questa frase, un agente che instrada sulle descrizioni carica le skill che deve?»\n\nL8 (D6 del 2026-10-01): per ogni frase vera del DM in plans/instradamento/casi.json, quali skill obbligatorie (ORCHESTRAZIONE §4) raggiungono i trigger fra virgolette delle descrizioni. Conta omissioni, skill in più e conflitti fra le due L1. Il gate è a cricchetto sul tetto del file.",
+      "description": "«Se il DM dice questa frase, un agente che instrada sulle descrizioni carica le skill che deve?»\n\nL8 (D6 del 2026-10-01): per ogni frase vera del DM in plans/instradamento/casi.json, quali skill obbligatorie (ORCHESTRAZIONE §4) raggiungono i trigger fra virgolette delle descrizioni. Conta omissioni, skill in più e conflitti fra le due L1. Il gate è a cricchetto sul tetto del file. Dal 2026-10-01 (D10): casi esclusi e quasi-casi, collisioni fra descrizioni, il suggerimento per una frase (--frase) e la prova con agenti veri (--comportamentale), come chiedono agentskills.io e skill-creator.",
       "use_case": "«Se il DM dice questa frase, un agente che instrada sulle descrizioni carica le skill che deve?»",
-      "invocation": "python3 scripts/instradamento_skill.py [--check] [--json]",
+      "invocation": "python3 scripts/instradamento_skill.py [--check] [--json] [--frase \"<richiesta>\"] [--comportamentale <cartella>]",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -2442,6 +2442,14 @@
           "casi": {
             "type": "string",
             "description": "Il file dei casi."
+          },
+          "frase": {
+            "type": "string",
+            "description": "Suggerisce le skill per una frase sola."
+          },
+          "comportamentale": {
+            "type": "string",
+            "description": "Cartella con le corse run*.json degli agenti."
           }
         },
         "required": [],

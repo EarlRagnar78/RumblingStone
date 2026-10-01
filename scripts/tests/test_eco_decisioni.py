@@ -76,6 +76,19 @@ class TestEco(unittest.TestCase):
         self.assertEqual(len(problemi), 1)
 
 
+class TestPiuEcoNelloStessoGiorno(TestEco):
+    def test_una_decisione_non_nominata_si_vede(self):
+        eco = ECO.replace("- **Decise**: D1, D2", "- **Decise**: D1")
+        problemi, _, _ = E.esamina(self._radice(eco=eco))
+        self.assertIn("D2", problemi[0])
+
+    def test_due_eco_insieme_coprono_il_giorno(self):
+        prima = ECO.replace("- **Decise**: D1, D2", "- **Decise**: D1")
+        dopo = ECO.replace("- **Decise**: D1, D2", "- **Decise**: D2")
+        problemi, a_posto, _ = E.esamina(self._radice(eco=prima + "\n" + dopo))
+        self.assertEqual((problemi, len(a_posto)), ([], 1))
+
+
 class TestRepo(unittest.TestCase):
     def test_il_repo_ha_le_sue_eco(self):
         self.assertEqual(E.main(["--check"]), 0)

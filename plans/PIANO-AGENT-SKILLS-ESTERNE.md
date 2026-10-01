@@ -335,6 +335,28 @@ mirror di `build-skills.sh` finiscono in agenti diversi.
       prima del 2026-10-01 si contano e non bloccano: scriverne l'eco oggi
       sarebbe inventarla
 
+### L8-bis · Il campione verificato e confrontato con la comunità — ✅ (2026-10-01) · D10
+
+- [x] test sul campione (`test_instradamento_skill.py`, `TestIlCampione`): ogni
+      frase letterale nella sua fonte e attribuita al DM; etichette coerenti
+      con ORCHESTRAZIONE (una L1, attese ed escluse disgiunte); chi nomina uno
+      dei 322 nomi della campagna vuole `campaign`; le due metà hanno casi e
+      quasi-casi. **Trovati e corretti**: una frase che era mia e non del DM, una
+      composta da due citazioni, le fonti scritte a memoria
+- [x] il confronto con agentskills.io, `skill-creator` di Anthropic e
+      `run_trigger_evals.py` di awesome-llm-apps (`instradamento/RISULTATI.md`,
+      D10). Adottati: i quasi-casi e il campo «escluse» con un secondo tetto,
+      le collisioni fra descrizioni, la prova con agenti veri a tre corse.
+      Non adottati, col perché: la skill giusta per prima (qui le skill si
+      sommano), la riscrittura automatica (chiede `claude -p` in CI)
+- [x] la prova comportamentale: tre agenti caricano 40 obbligatorie su 47,
+      contro le 32 dei soli trigger. Un confine nella descrizione di
+      `narrative-style`, scelto sulla metà di taratura, porta le escluse
+      caricate da 1 a 0. Due etichette corrette sulle prove, sei disaccordi
+      lasciati scritti
+- [x] `--frase` per avere un primo suggerimento da una richiesta del DM,
+      citato in ORCHESTRAZIONE §2
+
 ### L10 · `commit-archaeologist`, quando la condizione scatta — ⬜ · in attesa
 
 `[engine: Opus · effort: medio · qualità: ADR-0010 rispettato, la voce del registro passa a «da adottare»]` — **G**
@@ -356,9 +378,10 @@ storia nel sorgente. Fonte, commit, licenza e URL dei file stanno nel registro.
 | ~~D5~~ | L7 | ✅ **Decisa il 2026-10-01**: si toglie il comando, resta il rimando; e il controllo resta in CI con un test che lo fa mordere. Era: **La riga `curl … \| sh` in `dnd-35-srd`** |
 | ~~D6~~ | L8, L9 | ✅ **Decisa il 2026-10-01**: partono tutti e due. L8: misure sulle frasi vere del DM e un rilevatore; L9: si prova, poi si applica, *«altrimenti non servono a niente»*. Era: **Partono, o restano proposte?** |
 | ~~D7~~ | L10 | ✅ **Decisa il 2026-10-01**: resta fuori per ora, ma citato e messo in un registro di adozioni in attesa con gli URL e una condizione che, quando si accende, fa partire l'adozione (`plans/adozioni-in-attesa.json`, ADR-0076). Era: **`commit-archaeologist` resta fuori?** |
-| D8 | L1 | **Il lettore a freddo legge intero o a scene?** Calibrato il 2026-10-01 sul DEF-4 del tavolo: intero 69 rilievi e 7 `L-ORDINE`, a scene 55 e 7, tre in comune; il diario della lettura a scene però porta il ricordo (8 domande del quiz su 14 contro 6 degli appunti, e la missione che gli appunti perdevano sempre). Proposta: **il lettore legge intero** (trova di più); **il playtester e il DM a freddo leggono a scene**, e il loro diario fa il passo 7. Così ogni master ha tutte e due le letture, senza costi in più |
-| D9 | L5 | **Il DM a freddo entra nel ciclo del master?** Il primo passo, provato sui cinque DEF, ha trovato due rilievi veri (cosa vuole Terros in DEF-1, chi guida gli orchi in DEF-5) che lettore e playtester non avevano in rosso, e costa cinque minuti di agente per master. Dopo la corsa intera su DEF-5 (2026-10-01) il secondo e il terzo passo hanno trovato due rilievi nuovi su tredici e un peso diverso sull'handout, a fronte di un'ora di agente. Proposta: **il primo passo diventa obbligatorio al passo 6** da subito, perché costa poco e trova cose diverse; il secondo e il terzo restano in prova finché tu non dici se la preparazione di `corsa-def5/PREPARAZIONE.md` somiglia alla tua |
-| D10 | L8 | **Gli insiemi attesi delle trenta frasi sono giusti?** Li ho scritti io leggendo ORCHESTRAZIONE: il gate misura contro quelli, e un insieme sbagliato rende il numero falso. In particolare: le frasi sul repo («documentazione completa… nel plan») vogliono `prosa-documenti` come L1; le frasi sul Drappo non vogliono `campaign`. Proposta: **li confermi o correggi in `casi.json`**, e da lì ogni frase nuova che il DM scrive nei piani può entrare come caso, così il campione cresce con l'uso |
+| ~~D8~~ | L1 | ✅ **Decisa il 2026-10-01**: due letture: prima a scene, con il diario, poi il modulo intero; la tabella dice in quale è nato ogni rilievo. Il DM: *«leggere la scena la prima volta per capire cosa capisce della scena e poi una seconda lettura che legge tutto intero»*. Era: **Il lettore a freddo legge intero o a scene? |
+| ~~D9~~ | L5 | ✅ **Decisa il 2026-10-01**: proposta accettata: il primo passo obbligatorio al passo 6, il secondo e il terzo in prova finché il DM non giudica `corsa-def5/PREPARAZIONE.md`. Il registro delle letture chiede ora anche la lettura `dm`. Era: **Il DM a freddo entra nel ciclo del master? |
+| ~~D10~~ | L8 | ✅ **Decisa il 2026-10-01**: non si confermano a mano: si verificano con test di correttezza e coerenza, e si confrontano con le pratiche di agentskills.io, `skill-creator` di Anthropic e `run_trigger_evals.py` di awesome-llm-apps (L8-bis). Era: **Gli insiemi attesi delle trenta frasi sono giusti? |
+| D11 | L8-bis | **Il Drappo fuori dalla campagna, nella descrizione di `campaign`?** Due agenti su tre caricano `campaign` per una domanda sul Drappo di Tarsilia, che con la campagna non c'entra; la descrizione non lo dice. La frase sta nella metà di verifica, e tararci sopra guasterebbe la misura. Proposta: **aggiungo il confine** («non per il Drappo di Tarsilia, che ha il suo sistema») **e insieme cinque frasi nuove del DM come seconda metà di verifica**, raccolte dai piani dopo oggi, così il guadagno si legge su frasi che nessuno ha visto |
 
 ### L'eco del 2026-10-01
 
@@ -370,6 +393,15 @@ Il DM ha chiuso D1-D7 in un messaggio solo. L'eco, scritta dopo e non prima
 - **Aperte**: nessuna di quelle sette; restano D8, D9, D10, nate dopo dai lotti
 - **Cambiate**: D4, dalla proposta «parte in avviso» a «avviso, poi bloccante da solo, master per master»; D7, da «resta fuori» a «fuori con una condizione che la fa entrare»
 - **Dedotto da me**: che «bloccante da solo» valga master per master e non per il registro intero (L4: un master nuovo senza letture avrebbe rimesso tutto in avviso); che la domanda su D5, «quel test non è perso giusto?», chiedesse un test che fa mordere lo scanner, e non solo il controllo in CI; che per L8 «misurazioni» volesse dire frasi vere del DM e non frasi scritte da me
+
+Seconda eco dello stesso giorno, per D8-D10. Scritta dopo aver applicato D8 e
+D9, che toccavano solo rubriche, e prima del lavoro di D10.
+
+<!-- eco: AGENT-SKILLS 2026-10-01 -->
+- **Decise**: D8 il lettore legge due volte, prima a scene e poi intero · D9 il primo passo del DM a freddo obbligatorio, gli altri due in prova · D10 gli insiemi attesi si verificano con test e col confronto con le pratiche della comunità
+- **Aperte**: il giudizio del DM su `corsa-def5/PREPARAZIONE.md`, che fa uscire dalla prova i passi 2 e 3 del DM a freddo
+- **Cambiate**: D8, dalla proposta «intero il lettore, a scene playtester e DM» a «tutti e due i modi, nello stesso lettore»; D10, da «li confermi tu» a «li verificano i test»
+- **Dedotto da me**: che per D8 il lettore sia **lo stesso** nelle due letture (il DM dice «una seconda lettura», non «un secondo lettore»), e che quindi il guadagno misurato con due agenti diversi vada rimisurato; che per D9 «obbligatorio» voglia dire un cancello, e che il cancello giusto sia il registro delle letture col ruolo `dm` accanto a lettore e playtester; che per D10 le «skill in rete» da confrontare siano gli strumenti di valutazione dell'attivazione, non altre skill di contenuto
 
 ## 6 · Validazione
 

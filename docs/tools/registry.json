@@ -6012,8 +6012,8 @@
       "path": "scripts/instradamento_skill.py",
       "category": "G-orchestration-governance",
       "language": "python",
-      "invocation": "python3 scripts/instradamento_skill.py [--check] [--json]",
-      "summary": "L8 (D6 del 2026-10-01): per ogni frase vera del DM in plans/instradamento/casi.json, quali skill obbligatorie (ORCHESTRAZIONE §4) raggiungono i trigger fra virgolette delle descrizioni. Conta omissioni, skill in più e conflitti fra le due L1. Il gate è a cricchetto sul tetto del file.",
+      "invocation": "python3 scripts/instradamento_skill.py [--check] [--json] [--frase \"<richiesta>\"] [--comportamentale <cartella>]",
+      "summary": "L8 (D6 del 2026-10-01): per ogni frase vera del DM in plans/instradamento/casi.json, quali skill obbligatorie (ORCHESTRAZIONE §4) raggiungono i trigger fra virgolette delle descrizioni. Conta omissioni, skill in più e conflitti fra le due L1. Il gate è a cricchetto sul tetto del file. Dal 2026-10-01 (D10): casi esclusi e quasi-casi, collisioni fra descrizioni, il suggerimento per una frase (--frase) e la prova con agenti veri (--comportamentale), come chiedono agentskills.io e skill-creator.",
       "use_case": "«Se il DM dice questa frase, un agente che instrada sulle descrizioni carica le skill che deve?»",
       "stability": "beta",
       "stdlib_only": true,
@@ -6046,6 +6046,24 @@
           "choices": null,
           "repeatable": false,
           "desc": "Il file dei casi."
+        },
+        {
+          "name": "--frase",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Suggerisce le skill per una frase sola."
+        },
+        {
+          "name": "--comportamentale",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cartella con le corse run*.json degli agenti."
         }
       ],
       "inputs": [

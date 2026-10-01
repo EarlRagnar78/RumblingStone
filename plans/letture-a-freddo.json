@@ -42,6 +42,26 @@
           "nota": "il commit che ha aggiunto il rapporto ha cambiato anche il master: la versione letta non si ricostruisce",
           "rilievi_rossi_e_arancio": 11,
           "rilievi": []
+        },
+        {
+          "ruolo": "dm",
+          "data": "2026-10-01",
+          "rapporto": "plans/esperimenti/dm-a-freddo/RISULTATI.md",
+          "commit_del_rapporto": null,
+          "impronta": "45f666c4d88bfff96adcd1ea708fdfa5015a80cbcf108adb9b4e0eb56589eecb",
+          "nota": "primo passo, la vista di chi scorre (serata ✓, orchi senza capo); master identico a quello del commit 10127b7 da cui è stata fatta la vista",
+          "rilievi_rossi_e_arancio": 0,
+          "rilievi": []
+        },
+        {
+          "ruolo": "dm",
+          "data": "2026-10-01",
+          "rapporto": "plans/esperimenti/dm-a-freddo/corsa-def5/PREPARAZIONE.md",
+          "commit_del_rapporto": null,
+          "impronta": "45f666c4d88bfff96adcd1ea708fdfa5015a80cbcf108adb9b4e0eb56589eecb",
+          "nota": "corsa intera: vista, preparazione a scene e giorno dopo",
+          "rilievi_rossi_e_arancio": 8,
+          "rilievi": []
         }
       ],
       "sola_forma": []
@@ -66,6 +86,16 @@
           "impronta": null,
           "nota": "il commit che ha aggiunto il rapporto ha cambiato anche il master: la versione letta non si ricostruisce",
           "rilievi_rossi_e_arancio": 13,
+          "rilievi": []
+        },
+        {
+          "ruolo": "dm",
+          "data": "2026-10-01",
+          "rapporto": "plans/esperimenti/dm-a-freddo/RISULTATI.md",
+          "commit_del_rapporto": null,
+          "impronta": "7aa727e5d207eb4d09d9fc250cb3da4bed7c5c0172abf1e46338a752d0945d35",
+          "nota": "primo passo, la vista di chi scorre (serata ✓, chi si oppone: Terros sì, cosa vuole no); master identico a quello del commit 10127b7 da cui è stata fatta la vista",
+          "rilievi_rossi_e_arancio": 0,
           "rilievi": []
         }
       ],
@@ -92,6 +122,16 @@
           "nota": "il commit che ha aggiunto il rapporto ha cambiato anche il master: la versione letta non si ricostruisce",
           "rilievi_rossi_e_arancio": 12,
           "rilievi": []
+        },
+        {
+          "ruolo": "dm",
+          "data": "2026-10-01",
+          "rapporto": "plans/esperimenti/dm-a-freddo/RISULTATI.md",
+          "commit_del_rapporto": null,
+          "impronta": "df458ca2a20c8995a2a4c363f5d576412ec507ce551fa44cdef3bfcd2903bb3c",
+          "nota": "primo passo, la vista di chi scorre (serata ✓, nessun avversario in scena); master identico a quello del commit 10127b7 da cui è stata fatta la vista",
+          "rilievi_rossi_e_arancio": 0,
+          "rilievi": []
         }
       ],
       "sola_forma": []
@@ -116,6 +156,16 @@
           "impronta": null,
           "nota": "il commit che ha aggiunto il rapporto ha cambiato anche il master: la versione letta non si ricostruisce",
           "rilievi_rossi_e_arancio": 15,
+          "rilievi": []
+        },
+        {
+          "ruolo": "dm",
+          "data": "2026-10-01",
+          "rapporto": "plans/esperimenti/dm-a-freddo/RISULTATI.md",
+          "commit_del_rapporto": null,
+          "impronta": "399a49d7487f695d63ca4c59067bb7255428eae9021ddc81950c1501b8083353",
+          "nota": "primo passo, la vista di chi scorre (serata ✓, nessun nemico); master identico a quello del commit 10127b7 da cui è stata fatta la vista",
+          "rilievi_rossi_e_arancio": 0,
           "rilievi": []
         }
       ],
@@ -231,6 +281,16 @@
           "impronta": null,
           "nota": "il commit che ha aggiunto il rapporto ha cambiato anche il master: la versione letta non si ricostruisce",
           "rilievi_rossi_e_arancio": 10,
+          "rilievi": []
+        },
+        {
+          "ruolo": "dm",
+          "data": "2026-10-01",
+          "rapporto": "plans/esperimenti/dm-a-freddo/RISULTATI.md",
+          "commit_del_rapporto": null,
+          "impronta": "77ebec92e6a8bab5a48c79225955115ae2df0d6709575e9b3dd6284e3475b0da",
+          "nota": "primo passo, la vista di chi scorre (serata ✓ (riquadro), chi si oppone ✓); master identico a quello del commit 10127b7 da cui è stata fatta la vista",
+          "rilievi_rossi_e_arancio": 0,
           "rilievi": []
         }
       ],

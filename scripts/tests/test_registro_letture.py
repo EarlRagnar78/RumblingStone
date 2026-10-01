@@ -50,12 +50,18 @@ class TestCancello(unittest.TestCase):
     def tearDown(self):
         self.tmp.cleanup()
 
-    def _registro(self, rilievi=None, sola_forma=None, impronta="ok"):
+    def _registro(self, rilievi=None, sola_forma=None, impronta="ok", ruoli=("lettore", "playtester", "dm")):
         imp = _sha(self.TESTO) if impronta == "ok" else impronta
         letture = [{"ruolo": r, "data": "2026-10-01", "impronta": imp, "rilievi": rilievi or []}
-                   for r in ("lettore", "playtester")]
+                   for r in ruoli]
         dati = {"master": {self.rel: {"letture": letture, "sola_forma": sola_forma or []}}}
         self.RL.REGISTRO.write_text(json.dumps(dati), encoding="utf-8")
+
+    def test_senza_il_dm_a_freddo_resta_in_avviso(self):
+        # D9 del 2026-10-01: il DM a freddo e' il terzo ruolo obbligatorio
+        self._registro(ruoli=("lettore", "playtester"))
+        (self.root / self.rel).write_text(self.TESTO + "Un refuso corretto.\n", encoding="utf-8")
+        self.assertEqual(self.RL.main(["--check"]), 0)
 
     def test_allineato_passa(self):
         self._registro()

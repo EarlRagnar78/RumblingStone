@@ -1,0 +1,524 @@
+{
+  "A-con-1": {
+    "S01": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S02": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": false,
+      "chiude_che_fate": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S03": {
+      "dialogo_forma": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S04": {
+      "ancore": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S05": {
+      "doc_senza_box": true,
+      "doc_trattini": true,
+      "doc_conteggi": true,
+      "doc_antitesi": true,
+      "calchi": true
+    },
+    "S06": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": false,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S07": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": false,
+      "chiude_che_fate": true,
+      "hdywtdt": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S08": {
+      "ancore": true,
+      "calchi": false,
+      "tic_gioco": true
+    },
+    "S09": {
+      "dialogo_forma": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S10": {
+      "doc_senza_box": true,
+      "doc_trattini": true,
+      "doc_conteggi": true,
+      "doc_antitesi": true,
+      "calchi": true
+    }
+  },
+  "A-con-2": {
+    "S01": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S02": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": true,
+      "chiude_che_fate": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S03": {
+      "dialogo_forma": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S04": {
+      "ancore": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S05": {
+      "doc_senza_box": true,
+      "doc_trattini": true,
+      "doc_conteggi": true,
+      "doc_antitesi": true,
+      "calchi": true
+    },
+    "S06": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S07": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": true,
+      "chiude_che_fate": true,
+      "hdywtdt": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S08": {
+      "ancore": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S09": {
+      "dialogo_forma": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S10": {
+      "doc_senza_box": true,
+      "doc_trattini": true,
+      "doc_conteggi": true,
+      "doc_antitesi": true,
+      "calchi": true
+    }
+  },
+  "A-con-3": {
+    "S01": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": false,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S02": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": true,
+      "chiude_che_fate": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S03": {
+      "dialogo_forma": false,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S04": {
+      "ancore": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S05": {
+      "doc_senza_box": true,
+      "doc_trattini": true,
+      "doc_conteggi": true,
+      "doc_antitesi": true,
+      "calchi": true
+    },
+    "S06": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": false,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S07": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": false,
+      "chiude_che_fate": true,
+      "hdywtdt": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S08": {
+      "ancore": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S09": {
+      "dialogo_forma": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S10": {
+      "doc_senza_box": true,
+      "doc_trattini": true,
+      "doc_conteggi": true,
+      "doc_antitesi": true,
+      "calchi": true
+    }
+  },
+  "A-senza-1": {
+    "S01": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": false,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S02": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": false,
+      "chiude_che_fate": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S03": {
+      "dialogo_forma": false,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S04": {
+      "ancore": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S05": {
+      "doc_senza_box": true,
+      "doc_trattini": true,
+      "doc_conteggi": true,
+      "doc_antitesi": true,
+      "calchi": true
+    },
+    "S06": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": false,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": false,
+      "box_senza_metrature": true,
+      "box_etichettato": false,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S07": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": false,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": false,
+      "chiude_che_fate": true,
+      "hdywtdt": false,
+      "calchi": true,
+      "tic_gioco": false
+    },
+    "S08": {
+      "ancore": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S09": {
+      "dialogo_forma": false,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S10": {
+      "doc_senza_box": true,
+      "doc_trattini": true,
+      "doc_conteggi": true,
+      "doc_antitesi": true,
+      "calchi": true
+    }
+  },
+  "A-senza-3": {
+    "S01": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": false,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S02": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": false,
+      "chiude_che_fate": false,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S03": {
+      "dialogo_forma": false,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S04": {
+      "ancore": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S05": {
+      "doc_senza_box": true,
+      "doc_trattini": true,
+      "doc_conteggi": true,
+      "doc_antitesi": true,
+      "calchi": true
+    },
+    "S06": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": false,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S07": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": false,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": false,
+      "chiude_che_fate": true,
+      "hdywtdt": false,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S08": {
+      "ancore": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S09": {
+      "dialogo_forma": false,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S10": {
+      "doc_senza_box": true,
+      "doc_trattini": true,
+      "doc_conteggi": true,
+      "doc_antitesi": true,
+      "calchi": true
+    }
+  },
+  "A-senza-4": {
+    "S01": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": false,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S02": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": false,
+      "chiude_che_fate": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S03": {
+      "dialogo_forma": false,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S04": {
+      "ancore": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S05": {
+      "doc_senza_box": true,
+      "doc_trattini": true,
+      "doc_conteggi": true,
+      "doc_antitesi": true,
+      "calchi": true
+    },
+    "S06": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": false,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": false,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S07": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": false,
+      "chiude_che_fate": true,
+      "hdywtdt": false,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S08": {
+      "ancore": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S09": {
+      "dialogo_forma": false,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S10": {
+      "doc_senza_box": true,
+      "doc_trattini": true,
+      "doc_conteggi": true,
+      "doc_antitesi": true,
+      "calchi": true
+    }
+  }
+}

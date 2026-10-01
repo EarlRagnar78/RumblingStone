@@ -396,11 +396,21 @@ dall'instradamento all'**uscita**: cosa scrive un agente con la skill e senza.
       e `validate_prosa`, nessuna regex nuova nel punteggio; i casi
       (`plans/scrittura/casi.json`) nello schema di `skill-creator`, dieci, a
       metà fra taratura e verifica, stratificati per genere
-- [ ] tornata A: tre corse con le skill e tre senza, sui dieci casi (una
-      completa; le altre cinque fermate dal limite di sessione dell'API)
-- [ ] le correzioni, solo sui fallimenti di taratura: P1 in
-      `read-aloud-adulti.md` e i tre esempi; la lettura completa dei box in
-      `validate_prosa.py`
+- [x] tornata A: tre corse con le skill e tre senza. Una senza skill
+      scartata perché aveva letto il voto (`plans/scrittura/scartate/`) e
+      rifatta. Con le skill **96%** in taratura e **94%** in verifica, senza
+      **89%** e **81%**
+- [x] le correzioni al metro, che non sono stile: `validate_prosa` legge
+      tutti i box con il rilevatore di `misura_craft` (i rilievi del repo da 180
+      a 229); le sigle DES, COS, CAR e ARC non sono più «maiuscole di enfasi»
+      (tre handout su tre puniti per aver riportato bene il canone)
+- [x] le correzioni alle skill, solo sui fallimenti di taratura delle corse
+      con le skill: l'etichetta su **ogni** box, il tono del dialogo in poche
+      parole (`editorial-standards` §2); D14, P1 scritta in
+      `read-aloud-adulti.md` §1 e l'esempio della reticenza rifatto; D13, la
+      norma su «sembra» nella skill, nel registro e nel voto. I due esempi
+      dei testi per un solo giocatore restano: lì la seconda persona è lecita
+- [ ] il lotto dei 34 box con «sembra» o «pare» (D13)
 - [ ] tornata B con le skill corrette, e il confronto sulla verifica
 - [ ] `RISULTATI.md`, i test del voto, la voce nel manifest
 

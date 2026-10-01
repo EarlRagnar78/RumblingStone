@@ -50,9 +50,15 @@ token): l'agente non la ri-verifica a mano.
   domanda**. ⚠️ Non è un obbligo su ogni read-aloud: vale dove il sensoriale
   è **strutturato in scheda**.
 - Etichettare la regia: `**Read-aloud (pilastro lead).**`, così il prossimo
-  agente sa quale voce continuare.
+  agente sa quale voce continuare. **Ogni box** la porta, anche il micro-box di
+  un attore e la riga d'esito di un tiro: un box senza etichetta, a metà di una
+  sequenza, non dice più a chi appartiene la voce (L11, 2026-10-01: nelle prove
+  è il difetto più frequente con la skill caricata).
 - I dialoghi dei PNG: `**NOME (registro/tono):** *«battuta»*`: il tono
-  dichiarato è parte del canone del personaggio.
+  dichiarato è parte del canone del personaggio. Fra parentesi **il tono in
+  poche parole** (*sottovoce*, *senza alzare gli occhi*); il gesto lungo va
+  fuori, come didascalia in corsivo dopo la battuta. Una parentesi da quindici
+  parole non è più un tono, ed è quella che il prossimo agente non riconosce.
 
 ## 3. Gerarchia e struttura della pagina
 

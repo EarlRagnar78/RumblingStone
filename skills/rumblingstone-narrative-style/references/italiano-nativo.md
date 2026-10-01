@@ -226,7 +226,7 @@ Come uscirne, quando il concetto serve ancora:
 | **Trattino lungo come respiro** | «la roccia — e sai già cosa — si muove» | punto e virgola, due punti, o niente |
 | **Maiuscole di portento** | PESO, TUMP, VERA | **una per documento**. Se sono due, non funzionano più |
 | **Tutto è significativo** | ogni dettaglio descritto è un indizio o un simbolo | metti **una cosa che non c'entra niente**: una macchia, un rumore che era il vento |
-| **Emozione etichettata** | «senti una vertigine di paura» | comportamento: *«ti accorgi che stai contando i passi»* |
+| **Emozione etichettata** | «senti una vertigine di paura» | comportamento, di qualcun altro: *«Durin conta i passi a mezza voce»*. Quello del PG lo decide il giocatore (`read-aloud-adulti.md` §1, punto 6) |
 | **Sensi in ordine di lista** | vista, poi suono, poi odore, sempre in quell'ordine | parti dall'**odore** o dalla **temperatura**. O usane **uno solo** |
 
 ### 9.2-bis Quattro tic che una macchina non trova (e tu sì)

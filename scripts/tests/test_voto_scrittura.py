@@ -73,13 +73,15 @@ class TestIlVoto(unittest.TestCase):
         assert vs.condizione("A-con-2") == "A-con"
         assert vs.condizione("B-con-10") == "B-con"
 
-    def test_sembra_e_un_indizio_non_un_controllo(self):
-        testo = "> **Read-aloud (LotR lead).** *La sala sembra vuota.*\n"
-        assert vs.indizi(testo)["box con sembra/pare"] == 1
-        assert "sembra" not in " ".join(vs.controlli(testo, "apertura"))
+    def test_sembra_nel_box_fallisce(self):
+        # D13: da indizio a controllo.
+        assert not _controlli("> **Read-aloud (LotR lead).** *La sala sembra vuota.*\n")["box_senza_sembra"]
 
     def test_come_se_non_e_sembra(self):
-        assert vs.indizi("> *Batte come se fosse vivo.*\n")["box con sembra/pare"] == 0
+        assert _controlli("> *Batte come se fosse vivo.*\n")["box_senza_sembra"]
+
+    def test_sembra_fuori_dal_box_non_conta(self):
+        assert _controlli("Al DM sembra lungo.\n> *Una sala vuota.*\n")["box_senza_sembra"]
 
 
 class TestICasi(unittest.TestCase):

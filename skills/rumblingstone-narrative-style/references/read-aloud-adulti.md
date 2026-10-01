@@ -22,7 +22,7 @@ Questo cambia tre cose in modo non negoziabile:
 ## 1. La cosa che cambia tutto: **si ascolta, non si legge**
 
 Un read-aloud non è prosa: è **testo parlato**. Il lettore di un libro può
-tornare indietro; chi ascolta no. Da qui cinque vincoli che la pagina non ha:
+tornare indietro; chi ascolta no. Da qui i vincoli che la pagina non ha:
 
 1. **Un solo nome proprio nuovo per box.** Chi ascolta non può rileggere.
    Se in un box compaiono *Skullcrusher*, *Thorgrim* e *Barbadiferro*, la
@@ -35,6 +35,17 @@ tornare indietro; chi ascolta no. Da qui cinque vincoli che la pagina non ha:
    Ripeti il nome: nel parlato la ripetizione è chiarezza, non povertà.
 5. **L'ultima cosa detta è quella che resta.** Metti in fondo ciò che vuoi
    che ricordino, e **non aggiungere niente dopo**.
+6. **Il box non decide per il giocatore** (P1, dalle linee guida di
+   *Dungeon*). Niente *«entrate»*, *«vedete»*, *«ti accorgi»*, *«senti»*: il box
+   dice cosa c'è, il giocatore dice cosa fa e cosa prova. Restano fuori i
+   dialoghi, le visioni d'artefatto e i testi per **un solo** giocatore (echi,
+   hint), dove la seconda persona è la scelta giusta. Misura:
+   `misura_craft --p1` (D14 di PIANO-AGENT-SKILLS-ESTERNE).
+7. **Niente *«sembra»* né *«pare»*.** Il narratore che esita toglie al tavolo
+   la certezza su ciò che vede: se la sala è vuota, è vuota; se non lo è, la
+   cosa che non torna si descrive. *«Come se»* resta, perché è un paragone.
+   Viene da Shawn Merwin (*D&D Beyond*); misura: `voto_scrittura.py`,
+   controllo `box_senza_sembra` (D13).
 
 **Prova pratica, dieci secondi**: leggi il box **ad alta voce**. Se ti manca il
 fiato, se devi rileggere una riga, se inciampi su un nome — il testo è
@@ -93,9 +104,12 @@ qualcuno che ha le mani sporche di grasso. Non paga in trama. Paga in mondo.
 ### La reticenza sull'emozione
 
 > ❌ *«Provi una tristezza profonda e inaspettata.»*
-> ✅ *«Ti accorgi che hai smesso di camminare.»*
+> ✅ *«Durin si ferma. Si toglie l'elmo, e non dice niente.»*
 
-Il comportamento al posto dell'etichetta. Sempre.
+Il comportamento al posto dell'etichetta. Sempre. E il comportamento è di
+**qualcun altro**, o del mondo: quello del PG lo decide il giocatore (punto 6).
+Fino al 2026-10-01 l'esempio qui sopra era *«Ti accorgi che hai smesso di
+camminare»*, che decideva proprio questo (D14).
 
 ---
 
@@ -147,6 +161,8 @@ concreto sporco, e poi una riga che si alza. L'effetto è tutto nello scarto.
 - [ ] Sta **sotto le 12 righe** (2-4 se è un round)?
 - [ ] C'è **al massimo un nome proprio nuovo**?
 - [ ] Nessuna subordinata di terzo livello, nessuna parentesi?
+- [ ] Nessun *«vedete»*, *«entrate»*, *«ti accorgi»*, che decidono al posto del giocatore?
+- [ ] Nessun *«sembra»* o *«pare»*?
 - [ ] C'è **una cosa concreta e competente** (materiale, mestiere, tempo)?
 - [ ] C'è **un dettaglio che non serve a niente**?
 - [ ] Ho tolto **la frase che spiega** l'ultima immagine?

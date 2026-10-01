@@ -152,6 +152,12 @@ SIGLE = {
     "DR", "PF1E", "RHOD", "NPC", "HP", "DV", "MO", "PP", "MA", "CR", "UVTT", "YAML",
     "CSS", "URL", "API", "MIT", "GPL", "IP", "FR", "SW", "NE", "NO", "SE", "II", "III",
     "IV", "VI", "VII", "VIII", "IX", "XI", "XII", "XIII", "XIV", "XV", "XX",
+    # Le sei caratteristiche 3.5 in sigla maiuscola (`−4 DES / +2 COS`, come le
+    # scrive `state.md`) e il prefisso degli archi (`ARC-08`). Trovate in L11
+    # di PIANO-AGENT-SKILLS-ESTERNE: tre handout su tre che riportavano bene il
+    # canone risultavano «con quattro maiuscole di enfasi», e quelli che lo
+    # tacevano no. Un controllo che premia chi omette il canone si spegne.
+    "FOR", "DES", "COS", "INT", "SAG", "CAR", "ARC",
 }
 SOGLIE = {"antitesi": 1, "maiuscole": 1}
 
@@ -412,7 +418,15 @@ def prosa_e_readaloud(testo: str) -> tuple[list[tuple[int, str]], str]:
         if fence or riga.lstrip().startswith("|") or riga.startswith(("    ", "\t")):
             continue
         righe.append((n, INLINE.sub(lambda m: "x" * len(m.group(0)), riga)))
-    return righe, "\n".join(READ_ALOUD.findall(testo))
+    # 🔴 Fino al 2026-10-01 il read-aloud era `READ_ALOUD.findall`: la sola PRIMA
+    # riga dei soli box NUDI. I box nella forma che `editorial-standards` §2
+    # prescrive (`> **Read-aloud (X).** *…*`) e le righe di continuazione non
+    # si leggevano: 32.765 parole su 55.680 (59%), misurato in L11 di
+    # PIANO-AGENT-SKILLS-ESTERNE. Lo stesso difetto `misura_craft` l'aveva
+    # corretto per se' a settembre; qui si riusa il suo rilevatore, una norma
+    # un rilevatore. L'etichetta di regia resta fuori: e' rivolta al DM.
+    from misura_craft import _ETICHETTA, box_read_aloud
+    return righe, "\n".join(_ETICHETTA.sub("", "\n".join(b)) for b in box_read_aloud(testo))
 
 
 # ===========================================================================

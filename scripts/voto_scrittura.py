@@ -15,9 +15,9 @@ CONTROLLI, e ognuno chiama un rilevatore che esiste gia'
     validate_prosa rilievi (calchi, antitesi, maiuscole, trattino, ancore) ·
                    prosa_documento · conteggi_annunciati · ANTITESI · TRATTINO
 
-Nessuna regex nuova entra nel voto. Quelle che servono per una norma CANDIDATA
-(«sembra», «pare» nei box, da Shawn Merwin) stanno negli INDIZI: si stampano e
-non pesano, finche' il DM non decide se la norma entra (D12).
+Una sola regex e' nuova, ed e' di una norma nuova: «sembra» e «pare» nei box
+(Shawn Merwin, D13 del 2026-10-01). Fino alla decisione era un indizio che si
+stampava e non pesava; ora e' il controllo `box_senza_sembra`, registrato.
 
 Un controllo dice se una norma registrata e' rispettata, non se il testo e'
 bello. Il giudizio sulla voce resta alla lettura ad alta voce
@@ -54,9 +54,9 @@ _DECISIONE = _CONGEGNI["chiusura su decision point"]
 _DIALOGO = _CONGEGNI["dialogo nella forma dichiarata"]
 _HDYWTDT = _CONGEGNI["[HDYWTDT] il finisher al giocatore"]
 
-#: Indizio, non controllo: la norma candidata di Merwin, «evitare sembra e
-#: pare». «Come se» resta fuori: e' un paragone, non un'esitazione. Misurata
-#: sui 501 box dei file di gioco il 2026-10-01: 34 box con una di queste forme.
+#: La norma di Merwin, «evitare sembra e pare» (D13). «Come se» resta fuori: e'
+#: un paragone, non un'esitazione. Misurata sui 501 box dei file di gioco il
+#: 2026-10-01: 34 box con una di queste forme.
 SEMBRA = re.compile(r"\b(sembr(?:a|ano|ava|avano|are)|pa(?:re|iono|reva|revano)|"
                     r"appa(?:re|iono|riva|rivano))\b", re.I)
 
@@ -104,6 +104,9 @@ def controlli(testo: str, genere: str) -> "dict[str, tuple[bool, str]]":
         "box_tetto_righe": (difetti["oltre 12 righe"] == 0, f"{difetti['oltre 12 righe']} oltre 12 righe"),
         "box_un_nome": (difetti[">1 nome proprio"] == 0, f"{difetti['>1 nome proprio']} con piu' nomi"),
         "box_senza_parentesi": (difetti["con parentesi"] == 0, f"{difetti['con parentesi']} con parentesi"),
+        "box_senza_sembra": (not any(SEMBRA.search(c) for c in corpi),
+                             ", ".join(sorted({m.group(0).lower() for c in corpi
+                                               for m in SEMBRA.finditer(c)})) or "-"),
         "box_p1": (not p1, ", ".join(v for v, _ in p1) or "-"),
         "box_senza_metrature": (not metr, ", ".join(m for m, _ in metr) or "-"),
         "box_etichettato": (bool(box) and senza_etichetta == 0, f"{senza_etichetta} senza etichetta"),
@@ -128,7 +131,6 @@ def indizi(testo: str) -> "dict[str, int]":
     """Numeri che si stampano e non pesano."""
     corpi = _corpi(testo)
     return {
-        "box con sembra/pare": sum(1 for c in corpi if SEMBRA.search(c)),
         "box senza c'e'/dislocazione": len(mc.box_senza_costrutto_italiano(testo)),
         "parole nei box": sum(len(c.split()) for c in corpi),
     }

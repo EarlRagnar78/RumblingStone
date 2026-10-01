@@ -88,7 +88,7 @@ di voler far restare, cioè il riquadro *La serata in tre frasi*, o in mancanza
 il primo paragrafo del Quickstart. L'idea viene da `first-reader` di
 awesome-llm-apps (ADR-0076).
 
-1. **La lettura.** Il lettore a freddo legge a scene con `lettura_a_scene.py`
+1. **La lettura.** Chi legge, legge a scene con `lettura_a_scene.py`
    (`lettore-a-freddo.md`, «La lettura a scene»). Il suo diario è la sua
    memoria: non ci sono appunti a parte, e quindi niente tetto di parole da
    contare.
@@ -111,3 +111,11 @@ awesome-llm-apps (ADR-0076).
 giudica chi orchestra. Costa meno (niente chiave da approvare per ogni master)
 e si ripete peggio: due giudizi sulle stesse risposte possono non coincidere.
 Per questo, dove la chiave c'è, il quiz resta.
+
+📏 **La prova del 2026-10-01** (`plans/esperimenti/lettura-a-scene-def4/`).
+Sul DEF-4 del tavolo, il quiz dato a chi ha solo il diario fa 8 su 14 contro
+i 6 degli appunti, e la missione (q4), persa da tre lettori su tre a
+settembre, c'è. Ma il diario è lungo nove volte gli appunti, e il confronto non
+è pari. Sul primo paragrafo del Quickstart di quella versione il giudizio non
+regge: dice dove sono i PG, non cosa devono fare. Senza riquadro il ricordo
+trova i buchi e non ha un metro.

@@ -171,7 +171,7 @@ prerequisito di L2, L4 e L5.
 - [ ] la scena di controllo per le invenzioni: nessuna scena di questo DEF-4 è
       senza difetti noti, quindi non c'è. Resta da fare su un master che ne abbia una
 
-### L2 · Il ricordo del giorno dopo e le domande ai lettori — ⬜
+### L2 · Il ricordo del giorno dopo e le domande ai lettori — ✅ (2026-10-01)
 
 `[engine: Sonnet · effort: medio · qualità: test + una prova su DEF-5 confrontata con il quiz di DEF-4]` — **C**
 
@@ -185,9 +185,14 @@ prerequisito di L2, L4 e L5.
 - [x] `quiz-a-due-agenti.md` «Il ricordo dal diario», il passo 7 in
       `module-standard`, la riga in `playtest` §2-bis, l'aggiornamento di
       ADR-0075 (D1); una norma nel registro (il master dichiara la sua serata)
-- [ ] prova: DEF-4, dove la chiave c'è, ricordo e quiz sullo stesso diario, per
-      vedere se il ricordo trova quello che il quiz trova (la missione mancante
-      di q4 in `esperimenti/quiz-def4/`)
+- [x] prova (`esperimenti/lettura-a-scene-def4/RISULTATI.md`): DEF-4 del
+      tavolo, quiz e ricordo sullo stesso diario della lettura a scene. Quiz
+      **8 su 14** contro i 6 degli appunti di settembre, e q4 (la missione)
+      giusta per la prima volta. Il confronto non è pari: 3.582 parole di
+      diario contro 400 di appunti. Il ricordo ritrova quattro rilievi delle
+      letture. L'intenzione di `ddd683c` è il primo paragrafo del Quickstart e
+      non dice la missione: senza riquadro il giudizio non ha metro, che è
+      quello che la norma del registro chiede
 
 ⚠️ Il quiz ha un punteggio deterministico, il ricordo no: lo giudica un agente.
 È più economico e meno ripetibile, e il lotto lo scrive.

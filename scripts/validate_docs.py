@@ -104,6 +104,12 @@ ESCLUSI_PREFISSO = (
     "build/",
     "homebrew/",
     "scripts/typst/packages/",   # pacchetti vendored, ADR-0026: non sono nostri
+    # Le uscite degli agenti nelle corse di L11 (PIANO-AGENT-SKILLS-ESTERNE):
+    # sono il dato della prova, scritto da chi non sa cosa c'e' nel repo. Un
+    # corpo di PR scritto da un agente che cita un file da venire e' un
+    # risultato da misurare, non un documento da correggere.
+    "plans/scrittura/corse/",
+    "plans/scrittura/scartate/",
 )
 ESCLUSI_FRAMMENTO = ("/homebrew/",)
 ESCLUSI_SUFFISSO = (".hb.md",)

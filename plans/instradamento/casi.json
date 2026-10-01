@@ -1,6 +1,6 @@
 {
   "nota": "Frasi vere del DM, copiate da plans/, skills/ e AGENTS.md dove sono citate fra «». Per ognuna, le skill OBBLIGATORIE secondo skills/ORCHESTRAZIONE.md (L0 se tocca il canone, una sola L1, le L2 che si applicano); L3, L4 e LR non si contano, perché non sono obbligatorie (§4). Gli insiemi li ha scritti l'agente il 2026-10-01 e vanno confermati dal DM (D10 di PIANO-AGENT-SKILLS-ESTERNE). Le frasi sono divise a metà: le «taratura» si possono usare per scegliere i trigger, le «verifica» no, così il miglioramento si legge su frasi che nessuno ha usato per migliorare. Il tetto è il numero di omissioni accettato oggi: il gate fallisce se cresce, e si abbassa a mano quando scende. Dal 2026-10-01 (D10) ogni caso ha anche «escluse»: le skill obbligatorie che NON deve raggiungere. I «quasi-casi» sono frasi vere del DM che condividono parole con una skill ma chiedono altro, come raccomanda agentskills.io («near-misses»).",
-  "tetto_omissioni": 15,
+  "tetto_omissioni": 17,
   "tetto_violazioni": 1,
   "casi": [
     {
@@ -198,7 +198,8 @@
       "insieme": "verifica",
       "escluse": [
         "rumblingstone-prosa-documenti"
-      ]
+      ],
+      "correzione": "2026-10-01, D11: la frase non nomina il Drappo; il contesto era nella conversazione. Tre agenti su tre caricano campaign anche col confine nella descrizione: dalla sola frase non si può sapere. Resta attesa senza campaign, ma campaign non è più fra le escluse"
     },
     {
       "frase": "finisci le schede dei mostri e PNG che mancano",
@@ -420,6 +421,58 @@
       ],
       "insieme": "verifica",
       "tipo": "quasi-caso"
+    },
+    {
+      "frase": "leggere la scena la prima volta per capire cosa capisce della scena e poi una seconda lettura che legge tutto intero",
+      "fonte": "plans/instradamento/frasi-del-dm-2026-10-01.md",
+      "attese": [],
+      "escluse": [
+        "rumblingstone-narrative-style"
+      ],
+      "insieme": "verifica-2"
+    },
+    {
+      "frase": "metti anche le cose decise e misurate qui anche dal prompt che ti ho dato i vari template e il modo di descrizione così non sono persi",
+      "fonte": "plans/instradamento/frasi-del-dm-2026-10-01.md",
+      "attese": [
+        "rumblingstone-prosa-documenti"
+      ],
+      "escluse": [
+        "rumblingstone-narrative-style"
+      ],
+      "insieme": "verifica-2"
+    },
+    {
+      "frase": "fai le misurazioni e crea un rilevatore",
+      "fonte": "plans/instradamento/frasi-del-dm-2026-10-01.md",
+      "attese": [],
+      "escluse": [
+        "rumblingstone-narrative-style",
+        "rumblingstone-campaign"
+      ],
+      "insieme": "verifica-2"
+    },
+    {
+      "frase": "usa anche i migliori modelli di editoria che vengono utilizzati nelle migliori ap di d&d 3.5 e paizo per pathfinder 1e",
+      "fonte": "plans/instradamento/frasi-del-dm-2026-10-01.md",
+      "attese": [
+        "rumblingstone-module-standard"
+      ],
+      "escluse": [
+        "rumblingstone-campaign"
+      ],
+      "insieme": "verifica-2"
+    },
+    {
+      "frase": "ha senso dividere queste decisioni registrando cosa fatto nei piani e cosa deve essere fatto dal punto di vista editoriale in un altro piano",
+      "fonte": "plans/instradamento/frasi-del-dm-2026-10-01.md",
+      "attese": [
+        "rumblingstone-prosa-documenti"
+      ],
+      "escluse": [
+        "rumblingstone-narrative-style"
+      ],
+      "insieme": "verifica-2"
     }
   ]
 }

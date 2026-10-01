@@ -11,6 +11,7 @@ description: >
   ("Thorik", "Tordek", "Hella", "Artemis"), "canone", "coerenza", "arco",
   "Bestiario", "PNG", "Hammerfist", "Forgia", "errata", "what arc",
   "what's next session", "Shine Time", "State Machine", "RumblingStone".
+  Not for the standalone Drappo di Tarsilia, which is outside this campaign.
 ---
 
 # RumblingStone — Campaign Reference

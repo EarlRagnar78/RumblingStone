@@ -240,7 +240,7 @@ def main(argv=None) -> int:
             if r["conflitto_l1"]:
                 print("     ⚠️ conflitto: tutte e due le L1")
         print(f"\nomissioni {omesse} su {attese} skill obbligatorie, in {len(righe)} frasi · in più {in_piu} · violazioni {violazioni} · conflitti L1 {conflitti}")
-        for ins in ("taratura", "verifica"):
+        for ins in ("taratura", "verifica", "verifica-2"):
             sub = [r for r in righe if r["insieme"] == ins]
             if sub:
                 print(f"  {ins}: {sum(len(r['omesse']) for r in sub)} su {sum(len(r['attese']) for r in sub)}"

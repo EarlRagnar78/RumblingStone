@@ -135,3 +135,30 @@ sei differenze fra agenti ed etichette restano aperte, nel campo dei casi:
 La #18 è la più istruttiva: la descrizione di `campaign` non dice che il Drappo
 ne è fuori, e gli agenti ci cascano. È nella metà di verifica: non l'ho usata
 per tarare.
+
+## D11 · il confine sul Drappo, e cinque frasi nuove (2026-10-01, notte)
+
+Il DM ha approvato D11. Due cose fatte insieme:
+
+- **Cinque frasi nuove** del DM, prese dai suoi messaggi di oggi e mai usate
+  per tarare (`frasi-del-dm-2026-10-01.md`, `"insieme": "verifica-2"`).
+- **Il confine** nella descrizione di `campaign`: «Not for the standalone
+  Drappo di Tarsilia, which is outside this campaign».
+
+Tre agenti nuovi, sulle 44 frasi (`comportamentale-v3/`):
+
+| | v2 | v3 |
+|---|---:|---:|
+| obbligatorie caricate | 40 su 47 | 45 su 50 |
+| escluse caricate | 0 | 0 |
+| frasi nuove (verifica-2): obbligatorie caricate | — | 3 su 3 |
+
+**Il confine non ha avuto effetto**, e la ragione è nella frase: «ci sono
+eventi per i personaggi? come entrano nelle contrade? ci sono osterie e
+botteghe?…» non nomina il Drappo. Il contesto era nella conversazione con il
+DM, non nella frase, e nessuna descrizione lo può indovinare: tre agenti su tre
+caricano `campaign`. Era l'etichetta a chiedere troppo, non la descrizione a
+dire troppo poco; agentskills.io lo prevede («the issue may be with the
+queries … poorly labeled»). La frase resta nel campione con `campaign` tolta
+dalle escluse e la correzione scritta nel caso. Il confine resta nella
+descrizione: è vero, e servirà a una frase che il Drappo lo nomina.

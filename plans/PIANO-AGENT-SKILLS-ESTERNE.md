@@ -381,7 +381,7 @@ storia nel sorgente. Fonte, commit, licenza e URL dei file stanno nel registro.
 | ~~D8~~ | L1 | ✅ **Decisa il 2026-10-01**: due letture: prima a scene, con il diario, poi il modulo intero; la tabella dice in quale è nato ogni rilievo. Il DM: *«leggere la scena la prima volta per capire cosa capisce della scena e poi una seconda lettura che legge tutto intero»*. Era: **Il lettore a freddo legge intero o a scene? |
 | ~~D9~~ | L5 | ✅ **Decisa il 2026-10-01**: proposta accettata: il primo passo obbligatorio al passo 6, il secondo e il terzo in prova finché il DM non giudica `corsa-def5/PREPARAZIONE.md`. Il registro delle letture chiede ora anche la lettura `dm`. Era: **Il DM a freddo entra nel ciclo del master? |
 | ~~D10~~ | L8 | ✅ **Decisa il 2026-10-01**: non si confermano a mano: si verificano con test di correttezza e coerenza, e si confrontano con le pratiche di agentskills.io, `skill-creator` di Anthropic e `run_trigger_evals.py` di awesome-llm-apps (L8-bis). Era: **Gli insiemi attesi delle trenta frasi sono giusti? |
-| D11 | L8-bis | **Il Drappo fuori dalla campagna, nella descrizione di `campaign`?** Due agenti su tre caricano `campaign` per una domanda sul Drappo di Tarsilia, che con la campagna non c'entra; la descrizione non lo dice. La frase sta nella metà di verifica, e tararci sopra guasterebbe la misura. Proposta: **aggiungo il confine** («non per il Drappo di Tarsilia, che ha il suo sistema») **e insieme cinque frasi nuove del DM come seconda metà di verifica**, raccolte dai piani dopo oggi, così il guadagno si legge su frasi che nessuno ha visto |
+| ~~D11~~ | L8-bis | ✅ **Decisa il 2026-10-01**: sì. Confine aggiunto e cinque frasi nuove di verifica: le obbligatorie caricate dagli agenti salgono a 45 su 50, le nuove 3 su 3. Il confine non ha avuto effetto sulla frase del Drappo, che il Drappo non lo nomina: corretta l'etichetta. Era: **Il Drappo fuori dalla campagna, nella descrizione di `campaign`?** |
 
 ### L'eco del 2026-10-01
 
@@ -402,6 +402,15 @@ D9, che toccavano solo rubriche, e prima del lavoro di D10.
 - **Aperte**: il giudizio del DM su `corsa-def5/PREPARAZIONE.md`, che fa uscire dalla prova i passi 2 e 3 del DM a freddo
 - **Cambiate**: D8, dalla proposta «intero il lettore, a scene playtester e DM» a «tutti e due i modi, nello stesso lettore»; D10, da «li confermi tu» a «li verificano i test»
 - **Dedotto da me**: che per D8 il lettore sia **lo stesso** nelle due letture (il DM dice «una seconda lettura», non «un secondo lettore»), e che quindi il guadagno misurato con due agenti diversi vada rimisurato; che per D9 «obbligatorio» voglia dire un cancello, e che il cancello giusto sia il registro delle letture col ruolo `dm` accanto a lettore e playtester; che per D10 le «skill in rete» da confrontare siano gli strumenti di valutazione dell'attivazione, non altre skill di contenuto
+
+Terza eco dello stesso giorno, per D11. Il DM l'ha chiusa insieme a una
+richiesta nuova (il giro sulle skill di scrittura, L11).
+
+<!-- eco: AGENT-SKILLS 2026-10-01 -->
+- **Decise**: D11, il confine sul Drappo in `campaign` e cinque frasi nuove come seconda verifica
+- **Aperte**: il giudizio del DM su `corsa-def5/PREPARAZIONE.md`, che ha chiesto di leggere per approvarla o modificarla
+- **Cambiate**: nessuna
+- **Dedotto da me**: che le «cinque frasi nuove» potessero venire dai suoi messaggi di oggi, trascritti nel repo, perché frasi scritte nei piani dopo oggi ancora non ce ne sono; che «includi nel giro anche le skill che scrivono con lo stile» chieda per quelle skill la prova sull'**uscita** (cosa scrive un agente con e senza la skill), e non solo l'instradamento
 
 ## 6 · Validazione
 

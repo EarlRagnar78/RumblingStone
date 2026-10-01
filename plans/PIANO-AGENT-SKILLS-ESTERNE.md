@@ -205,29 +205,29 @@ guardato avanti cita cose delle scene successive, e la calibrazione lo guarda.
 Il DM aveva le domande ai lettori come idea a sé. Usano lo stesso diario e lo
 stesso formato del ricordo: una PR sola.
 
-### L4 · L'ancora: il registro delle letture a freddo (D26) — ⬜
+### L4 · L'ancora: il registro delle letture a freddo (D26) — ✅ (2026-10-01)
 
-`[engine: Opus per le regole del cancello, Sonnet per lo script · effort: alto · qualità: il cancello morde in un test su master cambiato e su 🔴 senza stato]` — **C** + **G**
-
-- [ ] `plans/letture-a-freddo.json`: per ogni master DEF e ogni lettura, ruolo <!-- validate-docs: futuro -->
-      (lettore, playtester, DM a freddo), data, cartella della corsa, impronta
-      del testo intero e di ogni scena, rilievi 🔴 e 🟠 con lo stato
-      (`corretto` · `residuo` + ragione · `domanda al DM` + D-n)
-- [ ] `scripts/registro_letture.py --check` in CI: rosso se il master è cambiato
-      dopo l'ultima lettura (salvo una voce «sola forma» con la ragione), o se
-      un 🔴 o un 🟠 non ha stato. `--confronta A B`: scena per scena, l'ago
-      prima e dopo, dove il lettore si è fermato o ha riletto
-- [ ] le letture già fatte (`def5-ciclo/`, `f4-def1-def3/`,
-      `def4-seconda-serata/`) entrano con l'impronta del commit che hanno letto,
-      dove la storia git lo dice; dove non lo dice, la voce lo scrive e il
-      cancello chiede una lettura nuova
-- [ ] PIANO-LETTORE: D26 passa da «lotto da aprire» a questo lotto
-
-⚠️ **Il costo, già detto nella D26**: ogni modifica a un DEF, anche un refuso,
-chiede una lettura prima del merge o una voce «sola forma». Il primo giorno il
-cancello è rosso su ogni master la cui lettura non ha un'impronta
-ricostruibile. Proposta: parte in avviso (stampa, esce 0) finché il registro è
-popolato, poi blocca (D4).
+- [x] `plans/letture-a-freddo.json`: per ogni master DEF le letture, con
+      ruolo, data, rapporto, impronta del testo letto e i rilievi 🔴/🟠 con lo
+      stato (`corretto` · `residuo` + ragione · `domanda` + decisione)
+- [x] `scripts/registro_letture.py --check` in CI, dieci test: blocca una
+      lettura scaduta, salvo una catena di voci «sola forma» con la ragione, e un
+      🔴/🟠 senza stato. `--registra` aggiunge la lettura di una corsa di
+      `lettura_a_scene.py` e rifiuta quella di un testo diverso da quello di
+      oggi; `--confronta A B` mette due letture affiancate, scena per scena
+- [x] **D4, avviso e poi bloccante da solo, master per master**: un master è
+      sotto cancello quando l'ultima lettura del lettore e del playtester ha
+      l'impronta. Da lì non torna in avviso, e un master nuovo senza letture
+      non ci rimette gli altri. Diverso dalla prima stesura, che contava il
+      registro intero: col primo master di ARC-08 tutto sarebbe tornato in avviso
+- [x] le letture già fatte sono entrate così come sono: **21 letture, nessuna
+      con un'impronta ricostruibile** fra le diciotto di settembre (ogni commit
+      che ha aggiunto un rapporto ha cambiato anche il master), più le tre della
+      calibrazione F2, che dichiarano il commit letto (`ddd683c`) e quindi
+      l'impronta ce l'hanno. Oggi tutti e cinque i master sono in avviso: si
+      chiudono con la prima lettura a scene di lettore e playtester
+- [x] PIANO-LETTORE: D26 rimanda a questo lotto; `playtest` §2-bis dice quando
+      si rifà una lettura; una norma **maggiore** nel registro, 🟡
 
 ### L5 · Il DM a freddo, la quarta rubrica — ⬜ · si parte dalla vista di chi scorre (D2)
 

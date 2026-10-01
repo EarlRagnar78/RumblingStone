@@ -64,6 +64,12 @@ jobs:
       - name: Pending adoptions (adozioni_in_attesa.py --check)
         run: python scripts/adozioni_in_attesa.py --check
 
+      # Le letture a freddo dei master (D26): in avviso finche' un master non ha
+      # le letture con impronta di lettore e playtester, poi bloccante da solo
+      # su una lettura scaduta o su un rilievo 🔴/🟠 senza stato (D4, ADR-0076).
+      - name: Cold-read registry (registro_letture.py --check)
+        run: python scripts/registro_letture.py --check
+
       # La quarta cosa della regola d'oro. Le prime tre le controlla il gate qui
       # sotto; questa no, ed era «una debolezza dichiarata» — finche' il
       # 2026-09-06 la tabella non si e' trovata sfasata di due righe su otto,

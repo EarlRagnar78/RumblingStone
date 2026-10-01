@@ -7648,6 +7648,98 @@
         "skills/rumblingstone-playtest/references/quiz-a-due-agenti.md",
         "plans/adr/ADR-0075-il-ciclo-del-master-vale-per-ogni-piano.md"
       ]
+    },
+    {
+      "id": "registro_letture",
+      "path": "scripts/registro_letture.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/registro_letture.py [--check] | --registra <master> --ruolo lettore|playtester|dm --corsa DIR [--rapporto R.md] | --sola-forma <master> --ragione … | --confronta A B",
+      "summary": "Il registro delle letture a freddo dei master DEF (D26): impronta del testo letto e stato di ogni rilievo 🔴/🟠. Il cancello e' in avviso finche' un master non ha le letture con impronta di lettore e playtester, poi blocca da solo una lettura scaduta o un rilievo senza stato (D4). --confronta mette due letture affiancate, scena per scena.",
+      "use_case": "«Questo master e' cambiato dopo l'ultima lettura a freddo? Ogni rilievo grave ha avuto una risposta?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il cancello: avviso, poi bloccante master per master."
+        },
+        {
+          "name": "--registra",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Aggiunge la lettura di una corsa di lettura_a_scene.py."
+        },
+        {
+          "name": "--sola-forma",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Dichiara un cambio di sola forma, con la ragione."
+        },
+        {
+          "name": "--confronta",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Due cartelle di lettura, affiancate."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/letture-a-freddo.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "plans/letture-a-freddo.json",
+          "kind": "json",
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok o avviso",
+        "1": "un master sotto cancello ha una lettura da rifare",
+        "2": "registro malformato"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Impronte SHA-256 e conteggi; la data di registrazione e' quella del giorno."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/registro_letture.py --check",
+      "tests": [
+        "scripts/tests/test_registro_letture.py"
+      ],
+      "docs": [
+        "plans/PIANO-AGENT-SKILLS-ESTERNE.md",
+        "plans/PIANO-LETTORE-E-PLAYTESTER.md"
+      ]
     }
   ]
 }

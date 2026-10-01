@@ -105,6 +105,11 @@ fissa. Leggi le rubriche, non questo riassunto:
   ogni modifica di canone. Controlla il box di ogni scena, la scheda di chi
   parla e il contratto `**In scena** — Dove: … — Chi: …`. Le letture trovano
   un difetto la prima volta, e il cancello impedisce che torni.
+- **Quando si rifanno**: lo dice `registro_letture.py --check`, che tiene in
+  `plans/letture-a-freddo.json` l'impronta del testo letto e lo stato di ogni
+  rilievo grave. Un master che cambia dopo la lettura chiede una lettura nuova,
+  o una voce «sola forma» con la ragione (D26). Il cancello è in avviso finché
+  un master non ha le letture con impronta, poi blocca da solo.
 - **Le letture non sono un cancello.** Due letture non danno lo stesso elenco.
   Un tipo di rilievo che torna in due moduli diversi diventa una regola dello
   script, con i falsi positivi contati a mano.

@@ -2643,6 +2643,44 @@
       "deterministic": true
     },
     {
+      "name": "registro_letture",
+      "description": "«Questo master e' cambiato dopo l'ultima lettura a freddo? Ogni rilievo grave ha avuto una risposta?»\n\nIl registro delle letture a freddo dei master DEF (D26): impronta del testo letto e stato di ogni rilievo 🔴/🟠. Il cancello e' in avviso finche' un master non ha le letture con impronta di lettore e playtester, poi blocca da solo una lettura scaduta o un rilievo senza stato (D4). --confronta mette due letture affiancate, scena per scena.",
+      "use_case": "«Questo master e' cambiato dopo l'ultima lettura a freddo? Ogni rilievo grave ha avuto una risposta?»",
+      "invocation": "python3 scripts/registro_letture.py [--check] | --registra <master> --ruolo lettore|playtester|dm --corsa DIR [--rapporto R.md] | --sola-forma <master> --ragione … | --confronta A B",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Il cancello: avviso, poi bloccante master per master."
+          },
+          "registra": {
+            "type": "string",
+            "description": "Aggiunge la lettura di una corsa di lettura_a_scene.py."
+          },
+          "sola-forma": {
+            "type": "string",
+            "description": "Dichiara un cambio di sola forma, con la ragione."
+          },
+          "confronta": {
+            "type": "string",
+            "description": "Due cartelle di lettura, affiancate."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "plans/letture-a-freddo.json"
+      ],
+      "exit_codes": {
+        "0": "ok o avviso",
+        "1": "un master sotto cancello ha una lettura da rifare",
+        "2": "registro malformato"
+      },
+      "deterministic": true
+    },
+    {
       "name": "ricordo_lettura",
       "description": "«Cosa resta di questo modulo a chi l'ha letto una volta, e perché il lettore si è fermato alla Scena 7?»\n\nIl ricordo del giorno dopo (passo 7 del ciclo, D1 del 2026-10-01): il pacchetto per un agente nuovo con il solo diario della lettura a scene e sette domande da DM; le domande ai lettori dopo la lettura; l'intenzione dichiarata dal master contro cui si giudica. Adattato da first-reader/recall.py e ask.py (Apache 2.0, ADR-0076).",
       "use_case": "«Cosa resta di questo modulo a chi l'ha letto una volta, e perché il lettore si è fermato alla Scena 7?»",

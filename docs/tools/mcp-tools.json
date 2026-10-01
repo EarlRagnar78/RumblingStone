@@ -1880,6 +1880,40 @@
       "deterministic": true
     },
     {
+      "name": "skill_scanner",
+      "description": "«Una skill di questo repo contiene qualcosa che un agente non dovrebbe eseguire?»\n\nScanner statico di sicurezza delle skill (script scaricati e dati alla shell, rete non dichiarata, credenziali, codice offuscato), copiato identico da awesome-llm-apps (Apache 2.0, ADR-0076). Esce 1 se trova un CRITICO.",
+      "use_case": "«Una skill di questo repo contiene qualcosa che un agente non dovrebbe eseguire?»",
+      "invocation": "python3 scripts/terzi/skill_scanner.py skills [--json]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "description": "La skill o la cartella di skill da scansionare."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Uscita in JSON."
+          },
+          "include-fixtures": {
+            "type": "boolean",
+            "description": "Scansiona anche le fixture di prova (opzione dell'originale)."
+          }
+        },
+        "required": [
+          "path"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "nessun CRITICO",
+        "1": "almeno un CRITICO",
+        "2": "errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
       "name": "sync_skills",
       "description": "«Ho modificato una skill: come la vedono Claude e Cursor dentro questo repo, subito?»\n\nBuild + popola i mirror in-repo delle skill (.claude/, .cursor/, ...), tutti gitignorati.",
       "use_case": "«Ho modificato una skill: come la vedono Claude e Cursor dentro questo repo, subito?»",
@@ -1935,6 +1969,30 @@
         "0": "ok",
         "1": "errori di validazione",
         "2": "pyyaml non installato"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "adozioni_in_attesa",
+      "description": "«Quella skill che avevamo rimandato: e' arrivato il momento di adottarla?»\n\nLe adozioni di codice o skill esterni rimandate, in plans/adozioni-in-attesa.json, ognuna con una condizione misurabile; --check esce 1 quando una condizione e' attiva e la voce dice ancora «in attesa» (ADR-0076).",
+      "use_case": "«Quella skill che avevamo rimandato: e' arrivato il momento di adottarla?»",
+      "invocation": "python3 scripts/adozioni_in_attesa.py [--check]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Cancello CI: esce 1 se una condizione e' attiva su una voce ancora in attesa."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "condizione attiva su una voce ancora in attesa",
+        "2": "registro malformato"
       },
       "deterministic": true
     },

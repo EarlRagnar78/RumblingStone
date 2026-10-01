@@ -5,9 +5,9 @@
 
 > Vista umana del contratto machine-readable [`registry.json`](registry.json). Fonte di verita': `scripts/tools.manifest.json`.
 
-**82 tool** · convenzione exit code `0=ok · 1=errore-dominio · 2=errore-uso`.
+**84 tool** · convenzione exit code `0=ok · 1=errore-dominio · 2=errore-uso`.
 
-**Da un client MCP** ([`mcp-tools.json`](mcp-tools.json), [ADR-0030](../../plans/adr/ADR-0030-server-mcp-sui-tool.md)): `python3 scripts/mcp_server.py` — JSON-RPC su stdio, catalogo preso da questo stesso manifest. È **read-only per difetto**: i tool marcati «Canone» qui sotto sono elencati ma non partono senza `--allow-write`, perché il canone si scrive su un branch di gruppo con l'occhio del DM sopra (ADR-0007). Le voci esposte sono 77: le cartelle di `converters/` non sono programmi e non compaiono.
+**Da un client MCP** ([`mcp-tools.json`](mcp-tools.json), [ADR-0030](../../plans/adr/ADR-0030-server-mcp-sui-tool.md)): `python3 scripts/mcp_server.py` — JSON-RPC su stdio, catalogo preso da questo stesso manifest. È **read-only per difetto**: i tool marcati «Canone» qui sotto sono elencati ma non partono senza `--allow-write`, perché il canone si scrive su un branch di gruppo con l'occhio del DM sopra (ADR-0007). Le voci esposte sono 79: le cartelle di `converters/` non sono programmi e non compaiono.
 
 ## A · Session Prep (incontri · mappe · tesoro)
 
@@ -85,6 +85,7 @@
 | `compress_skills.py` | «Questa skill è lunga e mangia contesto: quanto si stringe senza perdere quello che dice?»<br>Comprime le skill per gli agenti (riduzione token), producendo compact.md/structured.yaml/machine.json. | **--input/-i** · **--output/-o** · --measure/-m | ✔ | — | — | `0` · `1` |
 | `index_skills.py` | «L'agente deve pescare solo il pezzo di skill che gli serve: come glielo indicizzo?»<br>Genera index.json per una skill compressa (per retrieval selettivo). | **--input/-i** · **--build/-b** · **--output/-o** | ✔ | — | — | `0` · `2` |
 | `measure_tokens.py` | «Quanto contesto costano le skill oggi, in numeri e non a occhio?»<br>Misura la dimensione in token delle skill (tiktoken se disponibile, altrimenti chars/4), contando per ogni domanda anche il preload obbligatorio dichiarato nel «load order» del SKILL.md (lotto 4j-3). | --tokenizer · --json | ✔ | — | — | `0` |
+| `skill_scanner.py` | «Una skill di questo repo contiene qualcosa che un agente non dovrebbe eseguire?»<br>Scanner statico di sicurezza delle skill (script scaricati e dati alla shell, rete non dichiarata, credenziali, codice offuscato), copiato identico da awesome-llm-apps (Apache 2.0, ADR-0076). Esce 1 se trova un CRITICO. | **path** · --json · --include-fixtures | ✔ | — | — | `0` · `1` · `2` |
 | `sync-skills.sh` | «Ho modificato una skill: come la vedono Claude e Cursor dentro questo repo, subito?»<br>Build + popola i mirror in-repo delle skill (.claude/, .cursor/, ...), tutti gitignorati. | --dry-run · --no-build | ✔ | — | — | `0` · `1` |
 | `validate_skills.py` | «Le skill sono ben formate, o ho rotto un frontmatter o un link mentre le scrivevo?»<br>Gate CI skill: SKILL.md valido (frontmatter), link e dati YAML coerenti. | --repo-root · --json | ✔ | — | — | `0` · `1` · `2` |
 
@@ -92,6 +93,7 @@
 
 | Tool | Scopo | Parametri | Determ. | Canone | Git | Exit |
 |---|---|---|:--:|:--:|:--:|---|
+| `adozioni_in_attesa.py` | «Quella skill che avevamo rimandato: e' arrivato il momento di adottarla?»<br>Le adozioni di codice o skill esterni rimandate, in plans/adozioni-in-attesa.json, ognuna con una condizione misurabile; --check esce 1 quando una condizione e' attiva e la voce dice ancora «in attesa» (ADR-0076). | --check | ✔ | — | — | `0` · `1` · `2` |
 | `azzera_partita.py` | «Un gruppo nuovo riparte da zero: cosa si azzera, cosa resta, e la sua CI e' verde?»<br>Azzera la PARTITA per un gruppo nuovo (stato, storico, sessioni, recap) e lascia il prodotto; l'elenco e' dmcore/partita.py. Valida il nuovo state.yaml prima di scrivere e rigenera state.md (ADR-0050 §7). | --check | — | ✔ | — | `0` · `1` |
 | `campioni_kappa.py` | «Il punteggio dice 97,9: il DM sarebbe d'accordo?» Se non lo e', il numero misura il suo autore.<br>Estrae i due campioni disgiunti (20+20, stratificati per classe, seme fisso) e calcola il kappa di Cohen fra il giudizio di un valutatore e quello della macchina. Sotto kappa 0,60 la metrica si dichiara NON affidabile e non entra in CI: e' la regola del piano, e il 2026-09-21 ha detto di no (kappa 0,0 con accordo osservato e atteso entrambi a 0,95). | --estrai · --scheda · --kappa | ✔ | — | — | `0` · `1` |
 | `check_plans_discipline.py` | «Ho toccato scripts/ o un ADR: ho lasciato la riga di tracciatura che la regola d'oro chiede?»<br>Gate ADR-0009: modifiche strutturali (scripts/, skills/, converters/, .github/, plans/adr/) senza riga in plans/CHANGELOG.md -> exit 1. | --base · --head · --json | ✔ | — | — | `0` · `1` |

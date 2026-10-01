@@ -54,6 +54,16 @@ jobs:
       - name: Validate skill trees (frontmatter, links, data YAML)
         run: python scripts/validate_skills.py
 
+      # Lo scanner di sicurezza delle skill, copiato da awesome-llm-apps
+      # (Apache 2.0, ADR-0076): esce 1 su un CRITICO, come `curl ... | sh`.
+      - name: Skill security scan (scripts/terzi/skill_scanner.py)
+        run: python scripts/terzi/skill_scanner.py skills
+
+      # Le adozioni rimandate: esce 1 quando la condizione di una voce si
+      # accende e la voce dice ancora «in attesa» (ADR-0076).
+      - name: Pending adoptions (adozioni_in_attesa.py --check)
+        run: python scripts/adozioni_in_attesa.py --check
+
       # La quarta cosa della regola d'oro. Le prime tre le controlla il gate qui
       # sotto; questa no, ed era «una debolezza dichiarata» — finche' il
       # 2026-09-06 la tabella non si e' trovata sfasata di due righe su otto,

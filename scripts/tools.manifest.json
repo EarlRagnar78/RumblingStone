@@ -7377,6 +7377,141 @@
         "skills/rumblingstone-module-standard/references/sviluppo-degli-incontri.md",
         "plans/esperimenti/domande-developer-def4/CALIBRAZIONE.md"
       ]
+    },
+    {
+      "language": "python",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "outputs": [],
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "id": "skill_scanner",
+      "path": "scripts/terzi/skill_scanner.py",
+      "category": "F-skill-pipeline",
+      "invocation": "python3 scripts/terzi/skill_scanner.py skills [--json]",
+      "summary": "Scanner statico di sicurezza delle skill (script scaricati e dati alla shell, rete non dichiarata, credenziali, codice offuscato), copiato identico da awesome-llm-apps (Apache 2.0, ADR-0076). Esce 1 se trova un CRITICO.",
+      "use_case": "«Una skill di questo repo contiene qualcosa che un agente non dovrebbe eseguire?»",
+      "args": [
+        {
+          "name": "path",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La skill o la cartella di skill da scansionare."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Uscita in JSON."
+        },
+        {
+          "name": "--include-fixtures",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scansiona anche le fixture di prova (opzione dell'originale)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "skills/**/*",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "nessun CRITICO",
+        "1": "almeno un CRITICO",
+        "2": "errore d'uso"
+      },
+      "ci_smoke": "python scripts/terzi/skill_scanner.py skills",
+      "tests": [
+        "scripts/tests/test_skill_scanner.py"
+      ],
+      "docs": [
+        "scripts/terzi/README.md",
+        "plans/adr/ADR-0076-adozione-da-awesome-llm-apps.md"
+      ]
+    },
+    {
+      "language": "python",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "outputs": [],
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "id": "adozioni_in_attesa",
+      "path": "scripts/adozioni_in_attesa.py",
+      "category": "G-orchestration-governance",
+      "invocation": "python3 scripts/adozioni_in_attesa.py [--check]",
+      "summary": "Le adozioni di codice o skill esterni rimandate, in plans/adozioni-in-attesa.json, ognuna con una condizione misurabile; --check esce 1 quando una condizione e' attiva e la voce dice ancora «in attesa» (ADR-0076).",
+      "use_case": "«Quella skill che avevamo rimandato: e' arrivato il momento di adottarla?»",
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cancello CI: esce 1 se una condizione e' attiva su una voce ancora in attesa."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/adozioni-in-attesa.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "condizione attiva su una voce ancora in attesa",
+        "2": "registro malformato"
+      },
+      "ci_smoke": "python scripts/adozioni_in_attesa.py --check",
+      "tests": [
+        "scripts/tests/test_adozioni_in_attesa.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0076-adozione-da-awesome-llm-apps.md"
+      ]
     }
   ]
 }

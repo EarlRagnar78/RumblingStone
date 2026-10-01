@@ -6,7 +6,7 @@
 > lotti per adottare il poco che serve. Letto al commit upstream
 > `4bf51ab` (2026-09-28).
 >
-> **Stato**: 🟡 L6 ✅ (2026-10-01); gli altri lotti aspettano D1-D7 · **Decisore**: DM, che sceglie
+> **Stato**: 🟡 L6, L0, L7 ✅ (2026-10-01); D1-D7 decise il 2026-10-01, i lotti partono in fila · **Decisore**: DM, che sceglie
 > quali lotti partono (D1…D7 qui sotto) · **Regola**:
 > [ADR-0010](adr/ADR-0010-vendoring-skill-terzi.md), cherry-pick e mai
 > collezioni; l'ADR di adozione (ADR-0076) nasce con il primo lotto che porta
@@ -130,15 +130,24 @@ dallo scanner (L7): nessuna skill esterna tocca il loro contenuto.
 Nessuno parte senza il sì del DM. L'ordine è quello consigliato; L1 è il
 prerequisito di L2, L4 e L5.
 
-### L0 · L'ADR di adozione e la licenza — ⬜
+### L0 · L'ADR di adozione e la licenza — ✅ (2026-10-01, con L7)
 
-`[engine: Opus, sessione principale · effort: medio · qualità: validate_docs verde, LICENSES.md elenca ogni file Apache]` — **G**. Viaggia con il primo lotto che porta codice.
-
-- [ ] ADR-0076, *adozione da awesome-llm-apps*: fonte, commit `4bf51ab`, autori
-      per skill, la licenza non dichiarata di `first-reader`, cosa si prende e
-      cosa si scarta (la tabella §3 in forma breve), come si aggiorna
-- [ ] `scripts/LICENSE-APACHE-2.0` e la terza riga di `LICENSES.md` <!-- validate-docs: futuro -->
-- [ ] ogni file adattato apre con: origine, commit, autore, licenza, «modificato»
+- [x] [ADR-0076](adr/ADR-0076-adozione-da-awesome-llm-apps.md): fonte, commit
+      `4bf51ab`, autori, la licenza non dichiarata di `first-reader`, cosa entra
+      e cosa no, come si aggiorna; riga in `docs/INDEX.md`
+- [x] la licenza sta accanto al codice: `scripts/terzi/LICENSE-APACHE-2.0` e
+      `scripts/terzi/README.md` (fonte, commit, «modificato: no»), più la terza
+      riga di `LICENSES.md`. Diverso dal piano, che la voleva in `scripts/`:
+      tenerla nella cartella dei file di terzi dice a chi copia che lì non vale MIT
+- [ ] ogni file **adattato** apre con origine, commit, autore, licenza,
+      «modificato»: vale dai lotti L1, L2, L5, che sono i primi ad adattare
+- [x] **D7 · le adozioni rimandate non si perdono**:
+      `plans/adozioni-in-attesa.json` con fonte, commit, licenza, autore, URL
+      dei file e una condizione misurabile; `scripts/adozioni_in_attesa.py
+      --check` in CI, con cinque test. Prima voce `commit-archaeologist`: scatta
+      quando almeno 3 file di gioco cambiano 10 o più volte in 60 giorni senza
+      una riga di storia nel sorgente. Misurato il 2026-10-01: 0 file, la
+      condizione è spenta. In un clone parziale lo script dice «non misurabile»
 
 ### L1 · La lettura a scene, senza guardare avanti — ⬜
 
@@ -216,7 +225,7 @@ cancello è rosso su ogni master la cui lettura non ha un'impronta
 ricostruibile. Proposta: parte in avviso (stampa, esce 0) finché il registro è
 popolato, poi blocca (D4).
 
-### L5 · Il DM a freddo, la quarta rubrica — ⬜ · ⛔ su D2
+### L5 · Il DM a freddo, la quarta rubrica — ⬜ · si parte dalla vista di chi scorre (D2)
 
 `[engine: Opus, sessione principale · effort: alto · qualità: una corsa su DEF-5 con L1 e L2, e il DM che riconosce la sua preparazione]` — **G**
 
@@ -249,16 +258,20 @@ Cosa fa ciascun agente con una descrizione oltre il limite (la tronca, la
 scarta, la tiene) **non l'ho verificato**: il limite è della specifica, e i
 mirror di `build-skills.sh` finiscono in agenti diversi.
 
-### L7 · Lo scanner di sicurezza delle skill — ⬜
+### L7 · Lo scanner di sicurezza delle skill — ✅ (2026-10-01)
 
-`[engine: Sonnet · effort: basso · qualità: lo scanner gira in CI su skills/, zero CRITICI]` — **M** + **G** per la riga di `resources.md`
+- [x] `scripts/terzi/skill_scanner.py`, **identico** all'originale (nessuna
+      intestazione aggiunta: un file toccato non è più copiato); la provenienza
+      sta in `scripts/terzi/README.md`
+- [x] un passo suo in CI, accanto a `validate_skills.py` invece che chiamato da
+      lui: un cancello di terzi resta riconoscibile come tale; voce nel manifest
+- [x] `dnd-35-srd/references/resources.md`: tolto `curl … | sh`, resta il
+      rimando alla pagina ufficiale (D5). Scanner su `skills/`: 0 CRITICI
+- [x] **il controllo non si perde** (la domanda del DM su D5):
+      `test_skill_scanner.py` rimette la riga in una skill finta e verifica che
+      lo scanner esca 1; fissa anche l'impronta SHA-256 del file
 
-- [ ] `scripts/terzi/skill_scanner.py`, intero, con l'intestazione di origine <!-- validate-docs: futuro -->
-- [ ] passo in CI, e `validate_skills.py` che lo chiama
-- [ ] `dnd-35-srd/references/resources.md:250`: la riga `curl … | sh` diventa il
-      rimando alla pagina d'installazione ufficiale, senza il comando da incollare
-
-### L8 · Prove d'instradamento delle skill — ⬜ · proposta: rimandare
+### L8 · Prove d'instradamento delle skill — ⬜ · parte (D6)
 
 `[engine: Sonnet · effort: medio · qualità: da definire con il DM]` — **R** prima di **C**
 
@@ -269,7 +282,7 @@ Lo strumento esterno misura la cosa sbagliata (una skill prima, non un insieme),
 e un controllo lessicale su descrizioni lunghe dà poco: prima una ricognizione
 su 20 frasi vere del DM, poi si decide se vale un cancello.
 
-### L9 · L'eco prima di applicare un blocco di decisioni — ⬜ · facoltativo
+### L9 · L'eco prima di applicare un blocco di decisioni — ⬜ · parte (D6)
 
 `[engine: Opus · effort: basso · qualità: la norma ha una riga nel registro, misurata o col perché]` — **G**
 
@@ -278,19 +291,27 @@ messaggio, prima di toccare i file si rimanda l'eco (decise, aperte, cambiate
 di posizione, e **a parte** quello che l'agente ha dedotto). Nessuno la misura:
 si registra con il perché.
 
+### L10 · `commit-archaeologist`, quando la condizione scatta — ⬜ · in attesa
+
+`[engine: Opus · effort: medio · qualità: ADR-0010 rispettato, la voce del registro passa a «da adottare»]` — **G**
+
+Si apre da solo: `adozioni_in_attesa.py --check` esce 1 in CI quando almeno tre
+file di gioco cambiano dieci o più volte in sessanta giorni senza una riga di
+storia nel sorgente. Fonte, commit, licenza e URL dei file stanno nel registro.
+
 ## 5 · Decisioni aperte al DM
 
 <!-- decisioni-dm: AGENT-SKILLS -->
 
 | # | Lotto | Domanda |
 |---|---|---|
-| D1 | L2 | **Il ricordo del giorno dopo sostituisce il quiz?** Proposta: il ricordo diventa il passo 7 del ciclo per tutti i master (non chiede una chiave), e il quiz resta dove una chiave approvata c'è già, oggi solo DEF-4. Cambia ADR-0075: va scritto |
-| D2 | L5 | **Dov'è la bozza del DM a freddo** usata il 30 settembre? Non è nel repo, né nei rami, né nelle PR aperte. Se c'è un testo, L5 parte da quello; se no, la scrivo dal piano e il DM la corregge |
-| D3 | L1 | **Il passaggio è la scena intera?** Nei cinque master di ARC-07 ci sono 39 scene `### SCENA`, e 4 superano le 150 righe; la più lunga, DEF-4 Scena 5, ne ha 404 (contate fino al titolo successivo di livello 1-3, quindi per difetto). Proposta: sì, la scena; una scena troppo lunga per una lettura è già un rilievo |
-| D4 | L4 | **Il cancello del registro parte bloccante o in avviso?** Proposta: in avviso finché le letture già fatte hanno un'impronta, poi bloccante |
-| D5 | L7 | **La riga `curl … \| sh` in `dnd-35-srd`**: si toglie il comando e resta il rimando, o si toglie tutta la sezione sull'IA locale? |
-| D6 | L8, L9 | Partono, o restano proposte? |
-| D7 | — | `commit-archaeologist` resta fuori? Proposta: sì, finché la storia nel sorgente (ADR-0069) risponde |
+| ~~D1~~ | L2 | ✅ **Decisa il 2026-10-01**: sì. Il ricordo dal diario diventa il passo 7 del ciclo per tutti i master; il quiz resta dove una chiave approvata c'è già (DEF-4). ADR-0075 va aggiornato in L2. Era: **Il ricordo del giorno dopo sostituisce il quiz?** |
+| ~~D2~~ | L5 | ✅ **Decisa il 2026-10-01**: la bozza non c'è; L5 parte dalla vista di chi scorre (`skim.py`), poi il DM la rivede. Era: **Dov'è la bozza del DM a freddo?** |
+| ~~D3~~ | L1 | ✅ **Decisa il 2026-10-01**: sì, il passaggio è la scena intera; una scena troppo lunga per una lettura è un rilievo. Era: **Il passaggio è la scena intera?** |
+| ~~D4~~ | L4 | ✅ **Decisa il 2026-10-01**: in avviso finché le letture già fatte hanno l'impronta, poi **bloccante, da solo**: il DM, *«dopo se c'è l'avviso vogliono siano bloccati così si modificano davvero»*. Il cancello passa a bloccante appena il registro è popolato, senza un intervento a mano. Era: **Il cancello del registro parte bloccante o in avviso?** |
+| ~~D5~~ | L7 | ✅ **Decisa il 2026-10-01**: si toglie il comando, resta il rimando; e il controllo resta in CI con un test che lo fa mordere. Era: **La riga `curl … \| sh` in `dnd-35-srd`** |
+| ~~D6~~ | L8, L9 | ✅ **Decisa il 2026-10-01**: partono tutti e due. L8: misure sulle frasi vere del DM e un rilevatore; L9: si prova, poi si applica, *«altrimenti non servono a niente»*. Era: **Partono, o restano proposte?** |
+| ~~D7~~ | L10 | ✅ **Decisa il 2026-10-01**: resta fuori per ora, ma citato e messo in un registro di adozioni in attesa con gli URL e una condizione che, quando si accende, fa partire l'adozione (`plans/adozioni-in-attesa.json`, ADR-0076). Era: **`commit-archaeologist` resta fuori?** |
 
 ## 6 · Validazione
 

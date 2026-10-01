@@ -120,8 +120,8 @@ incontri e prove, misteri).
    **Read-aloud** (il box di luogo di `read-aloud-adulti.md` §2-bis, senza
    creature) → **Dati per il DM** (luce, scopo della stanza se il box non lo
    dice, le misure, e ogni oggetto che si può rompere nella riga SRD
-   *«porta di legno robusta, chiusa a chiave: 5 cm; Durezza 5; pf 20; prova di
-   Forza per sfondarla CD 25»*, i valori della tabella delle porte SRD) →
+   *«porta di legno robusta, bloccata: 5 cm; Durezza 5; pf 20; prova di Forza
+   per sfondarla CD 23»*, i valori della tabella delle porte SRD) →
    **Creature** → **Tattiche** → **Trappole** → **Tesoro** → **Sviluppo** (chi
    sente lo scontro e in quanti round arriva, quando i nemici si arrendono o
    fuggono, cosa cambia se i PG ripassano) → **PX ad hoc** se il terreno dà un

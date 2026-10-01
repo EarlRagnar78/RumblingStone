@@ -99,8 +99,7 @@ spiegazione.
 
 ⚙️ `python3 scripts/misura_craft.py --box` conta i box oltre le **quattro
 frasi** e oltre i **500 caratteri**. Sono indicatori, non soglie: il tetto del
-repo resta quello delle righe, finché il DM non decide (PIANO-MISURA-EDITORIALE
-§7-bis, D1).
+repo resta quello delle righe, finché il DM non decide (PIANO-BOX-DI-LUOGO-E-AREA-CHIAVE, D1).
 
 ---
 

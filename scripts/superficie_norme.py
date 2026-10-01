@@ -142,7 +142,7 @@ NORME_SCOPERTE = (
                 "dice la voce, non il tipo del box; senza il tipo, i 322 nomi del "
                 "registro pescano 315 box su 501 (dei, PG, artefatti)",
         "rilevatore_pronto": None,
-        "sblocca": "PIANO-MISURA-EDITORIALE-STANDARD §7-bis, D3",
+        "sblocca": "PIANO-BOX-DI-LUOGO-E-AREA-CHIAVE B2, D3",
     },
     {
         "chiave": "fatto_da_due_nodi",

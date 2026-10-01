@@ -73,12 +73,12 @@ e uno statblock d'esempio. Verificato punto per punto:
 | Affermazione | Esito | Dove va |
 |---|---|---|
 | box di stanza in **3-4 frasi** | 🟢 coerente con *Dungeon* («poche frasi») | `read-aloud-adulti.md` §2-bis; misurato da `misura_craft --box`, colonna `>4 frasi` |
-| box di stanza in **300-500 caratteri** | ⚠️ **nessuna fonte**: *Dungeon* conta frasi, non caratteri | indicatore `>500 car`, decisione del DM (PIANO-MISURA §7-bis, D1) |
+| box di stanza in **300-500 caratteri** | ⚠️ **nessuna fonte**: *Dungeon* conta frasi, non caratteri | indicatore `>500 car`, decisione del DM (PIANO-BOX-DI-LUOGO-E-AREA-CHIAVE, D1) |
 | introduzione di sezione in **800-1.200 caratteri**, letta una volta | ⚠️ nessuna fonte; *Dungeon* mette illuminazione e porte in un testo **per il DM** | il repo ce l'ha già: è l'**apertura di scena** di 8-12 righe (`read-aloud-adulti.md` §2) |
 | niente reazioni o emozioni presunte dei PG | 🟢 è il §1.1, già norma | P1, `misura_craft --p1` |
 | il box si ferma prima dell'azione | 🟢 il repo ce l'ha già | congegno «chiusura su decision point», «Che fate?» |
 | ordine: spazio e luce → arredo → dettaglio strano | 🟡 nessuna fonte primaria, è pratica di mestiere | `read-aloud-adulti.md` §2-bis, come forma consigliata |
-| la **prima frase dà le dimensioni** («quaranta piedi») | 🔴 **in conflitto con ADR-0014** (niente metrature nella voce narrante) | decisione del DM (D2); nel frattempo vale ADR-0014, e le misure vanno nei Dati per il DM |
+| la **prima frase dà le dimensioni** («quaranta piedi») | 🔴 **in conflitto con ADR-0014** (niente metrature nella voce narrante) | decisione del DM (PIANO-BOX-DI-LUOGO-E-AREA-CHIAVE, D2); nel frattempo vale ADR-0014, e le misure vanno nei Dati per il DM |
 | caratteristiche della stanza fuori dal box (lato, pareti, porta con CD, Durezza, pf) | 🟢 è la «descrizione generale» di *Dungeon* | `module-standard` §7, l'area chiave |
 | lo statblock delle **ombre** | 🔴 **sbagliato in tutti e due i sistemi**, vedi sotto | non si usa: gli statblocchi vengono dal Bestiario |
 | «usa il template 3.5 o quello PF1e» | ⚪ già deciso | la campagna gira su 3.5; il Drappo su PF1e |

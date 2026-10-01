@@ -111,6 +111,13 @@ fissa. Leggi le rubriche, non questo riassunto:
 - **Gli esempi delle rubriche non vengono mai dai casi di calibrazione**,
   altrimenti la lettura trova quello che le si è detto di trovare.
   Calibrazione: `plans/esperimenti/lettore-playtester-def4/`.
+- **Il ricordo del giorno dopo** misura quanto resta dopo una lettura sola, ed
+  è il passo 7 del ciclo dal 2026-10-01: un agente nuovo risponde dal solo
+  diario della lettura a scene, e le risposte si confrontano con la serata che
+  il master dichiara (`ricordo_lettura.py`, procedura in
+  [`references/quiz-a-due-agenti.md`](references/quiz-a-due-agenti.md), «Il
+  ricordo dal diario»). Con lo stesso diario il DM può fare domande ai lettori
+  dopo la lettura, e loro rispondono senza rivedere il testo.
 - **Il quiz a due agenti** misura un'altra cosa: non i buchi, ma **quanto
   resta dopo una lettura sola**. Un agente legge e scrive 400 parole di
   appunti, un secondo risponde a una chiave di 10-15 domande con i soli

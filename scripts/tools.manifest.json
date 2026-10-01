@@ -7585,6 +7585,69 @@
         "skills/rumblingstone-playtest/references/lettore-a-freddo.md",
         "plans/PIANO-AGENT-SKILLS-ESTERNE.md"
       ]
+    },
+    {
+      "id": "ricordo_lettura",
+      "path": "scripts/ricordo_lettura.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/ricordo_lettura.py domande <corsa>/<lettore> | chiedi <corsa> <lettore|tutti> \"<domanda>\" | intenzione <master>",
+      "summary": "Il ricordo del giorno dopo (passo 7 del ciclo, D1 del 2026-10-01): il pacchetto per un agente nuovo con il solo diario della lettura a scene e sette domande da DM; le domande ai lettori dopo la lettura; l'intenzione dichiarata dal master contro cui si giudica. Adattato da first-reader/recall.py e ask.py (Apache 2.0, ADR-0076).",
+      "use_case": "«Cosa resta di questo modulo a chi l'ha letto una volta, e perché il lettore si è fermato alla Scena 7?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "cmd",
+          "type": "str",
+          "required": true,
+          "default": null,
+          "choices": [
+            "domande",
+            "chiedi",
+            "intenzione"
+          ],
+          "repeatable": false,
+          "desc": "Sottocomando."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "07_il Portale Della Forgia Eterna/ARC07-DEF-*.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "lettura non chiusa, o master senza intenzione dichiarata",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "I pacchetti sono deterministici; le risposte le scrive un agente."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/ricordo_lettura.py --help",
+      "tests": [
+        "scripts/tests/test_ricordo_lettura.py"
+      ],
+      "docs": [
+        "skills/rumblingstone-playtest/references/quiz-a-due-agenti.md",
+        "plans/adr/ADR-0075-il-ciclo-del-master-vale-per-ogni-piano.md"
+      ]
     }
   ]
 }

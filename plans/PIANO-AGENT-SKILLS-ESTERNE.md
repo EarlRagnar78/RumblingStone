@@ -183,12 +183,16 @@ guardato avanti cita cose delle scene successive, e la calibrazione lo guarda.
 
 `[engine: Sonnet · effort: medio · qualità: test + una prova su DEF-5 confrontata con il quiz di DEF-4]` — **C**
 
-- [ ] `scripts/ricordo_lettura.py` (da `recall.py`): dal solo diario, sette <!-- validate-docs: futuro -->
-      domande da DM, giudicate contro *La serata in tre frasi* o il §0 del
-      master. Nessuna chiave nuova da approvare
-- [ ] `scripts/chiedi_al_lettore.py` (da `ask.py`): persona, diario, domanda; <!-- validate-docs: futuro -->
-      `tutti` per ogni lettore della corsa
-- [ ] `quiz-a-due-agenti.md`: quando basta il ricordo e quando serve il quiz (D1)
+- [x] `scripts/ricordo_lettura.py` (da `recall.py` e `ask.py`, un file solo
+      invece di due: leggono lo stesso diario): `domande` dà il pacchetto per
+      un agente nuovo, sette domande da DM; `chiedi <corsa> <lettore|tutti>`
+      le domande dopo la lettura; `intenzione <master>` la serata dichiarata,
+      dal riquadro o dal Quickstart, ed esce 1 se il master non la dichiara.
+      Sette test; uno è nato rosso: il pacchetto nominava solo la prima chiave
+      del JSON di risposta
+- [x] `quiz-a-due-agenti.md` «Il ricordo dal diario», il passo 7 in
+      `module-standard`, la riga in `playtest` §2-bis, l'aggiornamento di
+      ADR-0075 (D1); una norma nel registro (il master dichiara la sua serata)
 - [ ] prova: DEF-4, dove la chiave c'è, ricordo e quiz sullo stesso diario, per
       vedere se il ricordo trova quello che il quiz trova (la missione mancante
       di q4 in `esperimenti/quiz-def4/`)

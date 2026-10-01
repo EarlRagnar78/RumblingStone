@@ -129,3 +129,12 @@ profilo per chi ha una struttura sua.
   esistenti non ci stanno: oggi sarebbe rosso su tre master di ARC-07 su
   cinque, e un cancello sempre rosso viene spento. È la lezione di
   `validate_modules.py` sui punti 15-16.
+
+## Aggiornamento del 2026-10-01 — il passo 7
+
+Il DM, D1 di [PIANO-AGENT-SKILLS-ESTERNE](../PIANO-AGENT-SKILLS-ESTERNE.md):
+il passo 7 è il **ricordo dal diario** della lettura a scene
+(`ricordo_lettura.py`, ADR-0076), che non chiede una chiave approvata. Il quiz a
+due agenti resta dove una chiave approvata esiste già (oggi DEF-4). Il resto
+della decisione non cambia: i passi 6 e 7 li fa un agente, non sono cancelli,
+e un master che non li ha fatti è alfa.

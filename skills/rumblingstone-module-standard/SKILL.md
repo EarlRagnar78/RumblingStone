@@ -252,7 +252,7 @@ ricopia ([ADR-0075](../../plans/adr/ADR-0075-il-ciclo-del-master-vale-per-ogni-p
 | 4 | **Le domande del developer** ([`references/sviluppo-degli-incontri.md`](references/sviluppo-degli-incontri.md)) | `domande_developer.py --check`, più la lettura delle domande che lo script non vede |
 | 5 | **I box al metro** di `read-aloud-adulti.md`: ≤ 12 righe, un nome proprio nuovo, niente parentesi | `misura_craft.py --box` (non blocca in CI: si esegue) |
 | 6 | **Lettore e playtester a freddo**, su un modulo che la rubrica non ha visto | [`lettore-a-freddo.md`](../rumblingstone-playtest/references/lettore-a-freddo.md) e [`playtester-a-freddo.md`](../rumblingstone-playtest/references/playtester-a-freddo.md): nessun 🔴 |
-| 7 | **Il quiz a due agenti**, con la chiave approvata dal DM | [`quiz-a-due-agenti.md`](../rumblingstone-playtest/references/quiz-a-due-agenti.md); `quiz_lettura.py --check` controlla solo la forma della chiave |
+| 7 | **Il ricordo del giorno dopo**: un agente nuovo risponde dal solo diario della lettura a scene, e le risposte si mettono accanto alla serata che il master dichiara. Dove c'è già una chiave approvata dal DM, anche il **quiz a due agenti** (D1 di PIANO-AGENT-SKILLS-ESTERNE, 2026-10-01) | `ricordo_lettura.py domande` e `intenzione`; [`quiz-a-due-agenti.md`](../rumblingstone-playtest/references/quiz-a-due-agenti.md) per il quiz, con `quiz_lettura.py --check` che controlla solo la forma della chiave. Un master che non dichiara la sua serata è un rilievo |
 
 I passi 6 e 7 non sono cancelli: li fa un agente, e li chiede il piano. Un
 master che ha passato i cancelli e non i passi 6-7 è **alfa**.

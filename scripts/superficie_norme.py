@@ -134,6 +134,17 @@ NORME_SCOPERTE = (
         "sblocca": "PIANO-INDAGINE-E-DEDUZIONE I6, gated su I5",
     },
     {
+        "chiave": "box_di_luogo_senza_creature",
+        "norma": "read-aloud-adulti.md §2-bis — il box di luogo non descrive le creature (Dungeon)",
+        "prerequisito": "ogni box dichiara il suo tipo: di luogo, d'ingresso, di round",
+        "forma": None,
+        "dove": "nessuna forma prescritta: l'etichetta `**Read-aloud (pilastro).**` "
+                "dice la voce, non il tipo del box; senza il tipo, i 322 nomi del "
+                "registro pescano 315 box su 501 (dei, PG, artefatti)",
+        "rilevatore_pronto": None,
+        "sblocca": "PIANO-MISURA-EDITORIALE-STANDARD §7-bis, D3",
+    },
+    {
         "chiave": "fatto_da_due_nodi",
         "norma": "nodi-e-sei-porte.md — ogni fatto raggiungibile da >=2 nodi",
         "prerequisito": "i nodi d'indagine sono marcati",

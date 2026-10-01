@@ -58,6 +58,52 @@ supera le 12 righe: o è due box, o metà è ridondante.
 
 ---
 
+## 2-bis. Il box di luogo: poche frasi, un ordine, niente creature
+
+Le linee guida per gli autori di *Dungeon* (Paizo, era 3.5) dicono che il
+read-aloud di un'area **solo di rado supera poche frasi**, e che i testi lunghi
+stanno meglio in un handout. Dicono anche una cosa che il repo non aveva
+scritto: **il box di un luogo non descrive le creature che ci sono**, perché
+dove stanno e cosa fanno dipende da come arrivano i PG (se li hanno sentiti,
+se è giorno o notte). Fonte e misure: `RICERCA-STANDARD-PROSA-WOTC-PAIZO` §1.4.
+
+**Il box di luogo** (una stanza, una radura, un cortile) segue un ordine che
+funziona quasi sempre:
+
+1. **com'è lo spazio e com'è la luce**, per paragone con cose già viste
+   (ADR-0014: le misure vanno nei **Dati per il DM**, non nella voce);
+2. **cosa lo occupa**: poco, e solo ciò con cui i giocatori vorranno fare
+   qualcosa;
+3. **per ultima, la cosa strana o pericolosa**, quella che chiama un'azione.
+   È il punto 5 del §1 applicato al luogo: l'ultima cosa detta è quella che
+   resta.
+
+Poi **il box si ferma**: prima dell'iniziativa e prima di qualunque azione dei
+PG. Chi c'è entra con la sua **scheda d'entrata** o con un box suo
+(ADR-0073), non dentro la descrizione della stanza.
+
+> *La volta è crollata a metà, e dalla breccia scende la luce della luna.
+> Fra i blocchi di marmo caduti, una fontana a forma di drago getta un liquido
+> rosso e denso che non fa schiuma. Tre porte di legno marcio, una per parete.
+> L'aria sa di zolfo.*
+
+Quattro frasi, e nessuna misura: la stanza si capisce dal paragone, e i nove
+metri di lato stanno nei Dati per il DM.
+
+**Il box d'area** (un livello intero del dungeon, una città, una valle) è
+l'**apertura di scena** della tabella del §2: 8-12 righe, letta una volta,
+quando il tavolo sa che comincia una parte nuova. Lì vanno il clima, la luce
+e la forma del luogo intero. La storia del luogo ci entra solo come cosa che
+si vede (un'iscrizione consumata, un muro rifatto due volte), mai come
+spiegazione.
+
+⚙️ `python3 scripts/misura_craft.py --box` conta i box oltre le **quattro
+frasi** e oltre i **500 caratteri**. Sono indicatori, non soglie: il tetto del
+repo resta quello delle righe, finché il DM non decide (PIANO-MISURA-EDITORIALE
+§7-bis, D1).
+
+---
+
 ## 3. Cosa premia questo pubblico
 
 ### La competenza concreta
@@ -145,6 +191,8 @@ concreto sporco, e poi una riga che si alza. L'effetto è tutto nello scarto.
 
 - [ ] L'ho **letto ad alta voce** almeno una volta?
 - [ ] Sta **sotto le 12 righe** (2-4 se è un round)?
+- [ ] Se è un box di luogo: spazio e luce, poi cosa lo occupa, per ultima la
+      cosa strana; **nessuna creatura** dentro, e si ferma prima dell'azione?
 - [ ] C'è **al massimo un nome proprio nuovo**?
 - [ ] Nessuna subordinata di terzo livello, nessuna parentesi?
 - [ ] C'è **una cosa concreta e competente** (materiale, mestiere, tempo)?

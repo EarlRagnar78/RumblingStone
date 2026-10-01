@@ -115,6 +115,19 @@ incontri e prove, misteri).
    scritte dal punto di vista del MOSTRO, agganciate alle coordinate della
    mappa, con **soglie pf/morale**, debolezze caratteriali, e riga
    **Sviluppi**; nota di calibrazione numerica + tabella DPR per i boss.
+   **L'area chiave** (una stanza o un luogo con un incontro) tiene le voci
+   delle linee guida di *Dungeon*, in quest'ordine, e salta quelle che non ha:
+   **Read-aloud** (il box di luogo di `read-aloud-adulti.md` §2-bis, senza
+   creature) → **Dati per il DM** (luce, scopo della stanza se il box non lo
+   dice, le misure, e ogni oggetto che si può rompere nella riga SRD
+   *«porta di legno robusta, chiusa a chiave: 5 cm; Durezza 5; pf 20; prova di
+   Forza per sfondarla CD 25»*, i valori della tabella delle porte SRD) →
+   **Creature** → **Tattiche** → **Trappole** → **Tesoro** → **Sviluppo** (chi
+   sente lo scontro e in quanti round arriva, quando i nemici si arrendono o
+   fuggono, cosa cambia se i PG ripassano) → **PX ad hoc** se il terreno dà un
+   vantaggio a una parte. Fonte: `RICERCA-STANDARD-PROSA-WOTC-PAIZO` §1.4. Vale
+   per i master nuovi e per quelli che un lotto riscrive; i cinque master di
+   ARC-07 già giocati non si rifanno per questo.
 8. **Boss**: **come ci si entra** (porta/soglia/varco: chi la apre, dove
    sbucano i PG, che gravità c'è appena messo piede dentro — mai lasciare
    il DM a improvvisare l'ingresso), read-aloud **dei sei secondi** della

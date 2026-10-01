@@ -337,13 +337,128 @@ def nomi_propri(corpo: str) -> "set[str]":
             if w.strip("«»\"'()[],;:.!?—-") in _REGISTRO}
 
 
+#: Due indicatori di lunghezza, accanto al tetto delle righe e non al suo posto
+#: (`read-aloud-adulti.md` §2-bis). Le linee guida di *Dungeon* dicono che il
+#: read-aloud di un'area «solo di rado» supera **poche frasi**; il testo portato
+#: dal DM il 2026-10-01 propone 3-4 frasi e 300-500 caratteri per il box di una
+#: stanza. Nessuno dei due e' una norma del repo finche' il DM non decide
+#: (PIANO-MISURA-EDITORIALE-STANDARD §7-bis, D1): si contano, e non pesano.
+TETTO_FRASI = 4
+TETTO_CARATTERI = 500
+
+#: La fine di una frase: punto, esclamativo, interrogativo o puntini, anche
+#: dentro una battuta chiusa (`.»`), seguiti da spazio e da una maiuscola o da
+#: un'apertura di battuta. Un numero decimale non chiude la frase. ⚠️ Un'
+#: abbreviazione seguita da un nome proprio («Sig. Rossi») la chiude: nei box
+#: del repo non se ne trovano, e l'errore sposta il conto di una frase, non di
+#: un box. La chiusura su `.»` e' nata da un test rosso: la prima versione
+#: guardava solo il punto.
+_FINE_FRASE = re.compile(r"(?<=[.!?…»])\s+")
+
+
+def _registro_dei_nomi() -> "set[str]":
+    """I nomi propri della campagna, **presi dai dati del repo**.
+
+    🔴 **Perche' non una regex, e perche' non una lista scritta a mano.** Per
+    tre giri ho provato a distinguere un nome proprio da una maiuscola di
+    frase con la posizione: escludere la prima parola, poi recuperarla se il
+    documento la usa anche a meta' frase. Ogni patch spostava l'errore —
+    «Quei», «Nessun», «Silenzio» passavano perche' in italiano una maiuscola
+    segue anche un trattino, i due punti e l'apertura di un dialogo.
+
+    Una regex **non puo'** fare questa distinzione, e una lista che scrivo io
+    sarebbe il metro tarato sul campione per la decima volta. Ma il repo un
+    registro ce l'ha gia': i nomi dei file del **Bestiario** e la prima colonna
+    delle tabelle di **`state.md`** — attori, artefatti, luoghi. Si legge da li'.
+
+    ⚠️ **Tre limiti, dichiarati.**
+
+    1. Un nome che non sta ne' nel Bestiario ne' in `state.md` non si vede. E'
+       il prezzo giusto: quel nome, al tavolo, non e' ancora canone.
+    2. Un nome di **piu' parole** si conta a pezzi — «Mano Rossa» e «Cuore
+       della Leggenda» valgono due. Il conteggio e' quindi **prudente al
+       rialzo**: segnala piu' di quanto serva, mai meno.
+    3. 🔴 **Il piu' importante.** La norma di `read-aloud-adulti.md` §1 dice
+       «un solo nome proprio **NUOVO** per box», e *nuovo* dipende da cosa il
+       tavolo ha gia' incontrato, cioe' dall'ordine di lettura. Questo metro
+       conta i nomi **distinti**, non i nuovi: e' un **indizio**, non il
+       verdetto. Un box con tre nomi tutti noti da sei sessioni non viola
+       niente, e il giudizio resta di chi scrive.
+    """
+    nomi: "set[str]" = set()
+    bestiario = ROOT / "Bestiario"
+    if bestiario.exists():
+        for f in bestiario.rglob("*"):
+            for parte in re.split(r"[/_\-. ]", f.stem):
+                if _PAROLA_MAIUSCOLA.fullmatch(parte):
+                    nomi.add(parte)
+    stato = ROOT / "campaign" / "state.md"
+    if stato.exists():
+        for riga in stato.read_text(encoding="utf-8").splitlines():
+            if not riga.startswith("|"):
+                continue
+            prima = riga.strip("|").split("|")[0].strip().strip("*[]`")
+            for parte in prima.split():
+                if _PAROLA_MAIUSCOLA.fullmatch(parte):
+                    nomi.add(parte)
+    return nomi
+
+
+_PAROLA_MAIUSCOLA = re.compile(r"[A-ZÀ-Ù][a-zà-ù']{2,}")
+_REGISTRO: "set[str] | None" = None
+
+
+def nomi_propri(corpo: str) -> "set[str]":
+    """I nomi propri di un box: le parole che stanno nel registro del repo."""
+    global _REGISTRO
+    if _REGISTRO is None:
+        _REGISTRO = _registro_dei_nomi()
+    piano = _APERTURE.sub("", _ETICHETTA.sub("", corpo))
+    return {w.strip("«»\"'()[],;:.!?—-") for w in piano.split()
+            if w.strip("«»\"'()[],;:.!?—-") in _REGISTRO}
+
+
+#: Due indicatori di lunghezza, accanto al tetto delle righe e non al suo posto
+#: (`read-aloud-adulti.md` §2-bis). Le linee guida di *Dungeon* dicono che il
+#: read-aloud di un'area «solo di rado» supera **poche frasi**; il testo portato
+#: dal DM il 2026-10-01 propone 3-4 frasi e 300-500 caratteri per il box di una
+#: stanza. Nessuno dei due e' una norma del repo finche' il DM non decide
+#: (PIANO-MISURA-EDITORIALE-STANDARD §7-bis, D1): si contano, e non pesano.
+TETTO_FRASI = 4
+TETTO_CARATTERI = 500
+
+#: La fine di una frase: punto, esclamativo, interrogativo o puntini, seguiti
+#: da spazio e da una maiuscola o da un'apertura di battuta. «Sig. Rossi» e i
+#: numeri decimali non chiudono una frase perche' dopo non c'e' la maiuscola
+#: giusta. Una battuta chiusa (`.»`) la chiude: il test che lo fissa e' nato
+#: rosso, perche' la prima versione guardava solo il punto.
+#: Resta che
+#: giusta, e un errore residuo sposta il conto di una frase, non di un box.
+_FINE_FRASE = re.compile(r"(?:(?<=[.!?…])|(?<=[.!?…][»”\"]))\s+(?=[«\"“A-ZÀ-Ù])")
+
+
+def corpo_del_box(box: "list[str]") -> str:
+    """Il testo che si legge ad alta voce: senza `>`, etichetta e marcatura."""
+    righe = " ".join(r.lstrip(">").strip() for r in box)
+    piano = re.sub(r"[*_`]", "", _ETICHETTA.sub("", righe))
+    return re.sub(r"\s+", " ", piano).strip()
+
+
+def frasi_del_box(corpo: str) -> int:
+    """Quante frasi ha un box. Un frammento di una parola sola non conta."""
+    return len([f for f in _FINE_FRASE.split(corpo) if len(f.split()) >= 2])
+
+
 def difetti_dei_box(testo: str) -> "dict[str, int]":
     """Quante volte i box violano le soglie dichiarate.
 
     🔴 Nessuna di queste e' controllata da `validate_modules.py`, che conta
     le **occorrenze della parola** «read-aloud» e si ferma a cinque.
+
+    Le ultime due chiavi sono indicatori (`TETTO_FRASI`, `TETTO_CARATTERI`):
+    dicono quanto costerebbe una soglia proposta, e non entrano nel punteggio.
     """
-    lunghi = parentesi = nomi = 0
+    lunghi = parentesi = nomi = molte_frasi = molti_caratteri = 0
     for b in box_read_aloud(testo):
         if len(b) > TETTO_RIGHE:
             lunghi += 1
@@ -357,8 +472,14 @@ def difetti_dei_box(testo: str) -> "dict[str, int]":
             parentesi += 1
         if len(nomi_propri(corpo)) > 1:
             nomi += 1
+        letto = corpo_del_box(b)
+        if frasi_del_box(letto) > TETTO_FRASI:
+            molte_frasi += 1
+        if len(letto) > TETTO_CARATTERI:
+            molti_caratteri += 1
     return {"box": len(box_read_aloud(testo)), "oltre 12 righe": lunghi,
-            "con parentesi": parentesi, ">1 nome proprio": nomi}
+            "con parentesi": parentesi, ">1 nome proprio": nomi,
+            "oltre 4 frasi": molte_frasi, "oltre 500 caratteri": molti_caratteri}
 
 
 # ─────────────────────────────────────────────────────────────────────────
@@ -786,12 +907,16 @@ def main() -> int:
         print("🔴 Nessuna di queste soglie e' sotto cancello: `validate_modules`")
         print("   conta le occorrenze della PAROLA «read-aloud» e si ferma a 5.\n")
         print(f"{'bersaglio':30} {'box':>5} {'>12 righe':>10} "
-              f"{'parentesi':>10} {'>1 nome':>8}")
+              f"{'parentesi':>10} {'>1 nome':>8} {'>4 frasi':>9} {'>500 car':>9}")
         for nome, modelli in BERSAGLI.items():
             testo, _, _ = carica(modelli)
             d = difetti_dei_box(testo)
             print(f"{nome:30} {d['box']:>5} {d['oltre 12 righe']:>10} "
-                  f"{d['con parentesi']:>10} {d['>1 nome proprio']:>8}")
+                  f"{d['con parentesi']:>10} {d['>1 nome proprio']:>8} "
+                  f"{d['oltre 4 frasi']:>9} {d['oltre 500 caratteri']:>9}")
+        print("\n   >4 frasi e >500 car sono INDICATORI, non soglie del repo: la")
+        print("   prima viene da *Dungeon* («poche frasi»), la seconda dalla proposta")
+        print("   del 2026-10-01. Decide il DM (PIANO-MISURA-EDITORIALE §7-bis, D1).")
         print()
 
     if args.metrature:

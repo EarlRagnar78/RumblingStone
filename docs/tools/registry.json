@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 89,
+  "tool_count": 90,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -5708,6 +5708,73 @@
       "docs": [
         "skills/rumblingstone-module-standard/references/sviluppo-degli-incontri.md",
         "plans/esperimenti/domande-developer-def4/CALIBRAZIONE.md"
+      ]
+    },
+    {
+      "id": "eco_decisioni",
+      "path": "scripts/eco_decisioni.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/eco_decisioni.py [--check]",
+      "summary": "L9 (D6 del 2026-10-01): due o più decisioni chiuse nella stessa data, nello stesso piano, vogliono il blocco d'eco <!-- eco: ETICHETTA DATA --> con Decise, Aperte, Cambiate e Dedotto da me. Legge le tabelle di decisioni_dm.py.",
+      "use_case": "«Il DM ha chiuso sette decisioni in un messaggio: ho scritto cosa ho capito, e cosa ho aggiunto io?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se un'eco manca o è incompleta."
+        },
+        {
+          "name": "--radice",
+          "type": "path",
+          "required": false,
+          "default": ".",
+          "choices": null,
+          "repeatable": false,
+          "desc": "La radice del repo (per i test)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "eco mancante o incompleta (con --check)",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/eco_decisioni.py --check",
+      "tests": [
+        "scripts/tests/test_eco_decisioni.py"
+      ],
+      "docs": [
+        "skills/rumblingstone-plans/SKILL.md"
       ]
     },
     {

@@ -111,6 +111,7 @@
 | `quiz-a-due-agenti.md` | la **chiave del quiz** di un modulo ha **da 10 a 15 domande**, alternative non vuote, e uno **stato** «bozza» o «approvata»: la approva il DM, perché dice cosa il modulo deve far sapere | **minore** | 🟡 `quiz_lettura.py --check` (in CI) — controlla la forma e che lo stato ci sia; **non** può controllare che ad approvare sia stato il DM |
 | `quiz-a-due-agenti.md` | gli **appunti** del lettore stanno in **400 parole**, contate da chi orchestra prima di passare avanti; oltre si rifà la lettura, non si taglia | **minore** | 🔴 non misurato in CI — è un passo della procedura, e gli appunti esistono solo durante l'esperimento; i due del 2026-09-26 sono in `plans/esperimenti/quiz-def4/` (400 e 386 parole). 🔎 Nella prova pilota, con il tetto detto una volta sola, erano 654 e 574 |
 | `lettore-a-freddo.md` «La lettura a scene» | quando si legge **a scene**, ogni passaggio ha la sua riga di diario con **ago, mi aspettavo, ho trovato, so adesso** | **minore** | 🟢 `lettura_a_scene.py` — rifiuta il diario incompleto e la scena chiesta prima del tempo, e alla chiusura scrive le impronte e non il testo (`test_lettura_a_scene.py`). ⚠️ Non vede un agente che apre il master per altre vie: quello si controlla sul diario, a mano |
+| `rumblingstone-plans` «L'eco prima di applicare» | due o più decisioni chiuse nello stesso giorno hanno l'**eco** nel piano: decise, aperte, cambiate, e **a parte** quello che l'agente ha dedotto | **maggiore** | 🟢 `eco_decisioni.py --check` in CI, sulle tabelle di `decisioni_dm.py`. ⚠️ Controlla che l'eco ci sia e abbia i quattro campi, non che dica il vero; le chiusure di prima del 2026-10-01 non si misurano |
 | `ORCHESTRAZIONE.md` §4 | **zero omissioni** delle skill obbligatorie (L0, una L1, le L2) sulle frasi vere del DM | **maggiore** | 🟡 `instradamento_skill.py --check` in CI, a cricchetto: 30 frasi, 13 omissioni su 46 il 2026-10-01 (erano 38). ⚠️ Lessicale: misura i trigger fra virgolette delle descrizioni, non quello che un agente capisce leggendole tutte; gli insiemi attesi li ha scritti l'agente (D10) |
 | `dm-a-freddo.md` | un master **si capisce sfogliando**: dalla vista di chi scorre si dicono la serata e chi si oppone ai PG | **minore** | 🟡 `vista_di_chi_scorre.py` stampa la vista in modo deterministico; la risposta la dà un agente nuovo, e il giudizio chi orchestra. Prova del 2026-10-01: serata 5 su 5, chi si oppone 1 su 5 (`plans/esperimenti/dm-a-freddo/`) |
 | `quiz-a-due-agenti.md` «Il ricordo dal diario» | ogni master **dichiara la sua serata** (il riquadro *La serata in tre frasi*, o il primo paragrafo del Quickstart), perché il ricordo del passo 7 abbia contro cosa giudicarsi | **minore** | 🟢 `ricordo_lettura.py intenzione` — esce 1 su un master che non la dichiara. Oggi i cinque DEF di ARC-07 la dichiarano: DEF-4 col riquadro, gli altri col Quickstart. ⚠️ Il giudizio sulle risposte non lo misura nessuno: lo dà chi orchestra |
@@ -125,7 +126,7 @@
 
 | | Norme registrate |
 |---|---:|
-| 🟢 misurate | 35 |
+| 🟢 misurate | 36 |
 | 🟡 misurate in parte, con il limite scritto | 21 |
 | 🔴 **non misurate, con la ragione scritta** | 14 |
 | ⚪ non applicabili | 3 |

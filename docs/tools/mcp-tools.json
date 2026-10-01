@@ -2309,6 +2309,34 @@
       "deterministic": true
     },
     {
+      "name": "eco_decisioni",
+      "description": "«Il DM ha chiuso sette decisioni in un messaggio: ho scritto cosa ho capito, e cosa ho aggiunto io?»\n\nL9 (D6 del 2026-10-01): due o più decisioni chiuse nella stessa data, nello stesso piano, vogliono il blocco d'eco <!-- eco: ETICHETTA DATA --> con Decise, Aperte, Cambiate e Dedotto da me. Legge le tabelle di decisioni_dm.py.",
+      "use_case": "«Il DM ha chiuso sette decisioni in un messaggio: ho scritto cosa ho capito, e cosa ho aggiunto io?»",
+      "invocation": "python3 scripts/eco_decisioni.py [--check]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Esce 1 se un'eco manca o è incompleta."
+          },
+          "radice": {
+            "type": "string",
+            "description": "La radice del repo (per i test)."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "eco mancante o incompleta (con --check)",
+        "2": "errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
       "name": "fase1",
       "description": "«Sto per toccare questi file: cosa il repo mi sta gia' dicendo, prima che io scriva un rilevatore che se lo inventa?»\n\nL'analisi in sola lettura che precede ogni modifica: mette in fila cio' che il repo gia' sa sul bersaglio — quali norme del registro lo coprono, quali skill apre l'algoritmo a strati, quali dati di stato lo dichiarano (snapshot storico, archivio, DEPRECATO, matrice delle versioni), i 322 nomi propri del Bestiario e le misure di oggi. Una regex nuova viene dopo, mai prima.",
       "use_case": "«Sto per toccare questi file: cosa il repo mi sta gia' dicendo, prima che io scriva un rilevatore che se lo inventa?»",

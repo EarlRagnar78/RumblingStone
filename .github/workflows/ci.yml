@@ -69,6 +69,10 @@ jobs:
       - name: Skill routing (instradamento_skill.py --check)
         run: python scripts/instradamento_skill.py --check
 
+      # Due o piu' decisioni chiuse nella stessa data vogliono l'eco nel piano (L9)
+      - name: Decision echo (eco_decisioni.py --check)
+        run: python scripts/eco_decisioni.py --check
+
       # Le letture a freddo dei master (D26): in avviso finche' un master non ha
       # le letture con impronta di lettore e playtester, poi bloccante da solo
       # su una lettura scaduta o su un rilievo 🔴/🟠 senza stato (D4, ADR-0076).

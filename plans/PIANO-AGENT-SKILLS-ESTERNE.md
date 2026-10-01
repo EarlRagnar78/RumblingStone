@@ -307,14 +307,26 @@ mirror di `build-skills.sh` finiscono in agenti diversi.
       alla L1 sbagliata. Tutte sotto i 1024 caratteri
 - [x] una norma nel registro (maggiore, 🟡)
 
-### L9 · L'eco prima di applicare un blocco di decisioni — ⬜ · parte (D6)
+### L9 · L'eco prima di applicare un blocco di decisioni — ✅ (2026-10-01) · D6
 
 `[engine: Opus · effort: basso · qualità: la norma ha una riga nel registro, misurata o col perché]` — **G**
 
-Una sezione in `rumblingstone-plans`: quando il DM chiude più decisioni in un
-messaggio, prima di toccare i file si rimanda l'eco (decise, aperte, cambiate
-di posizione, e **a parte** quello che l'agente ha dedotto). Nessuno la misura:
-si registra con il perché.
+- [x] la norma in `rumblingstone-plans`, «L'eco prima di applicare»: due o
+      più decisioni chiuse in un messaggio vogliono nel piano il blocco
+      `<!-- eco: ETICHETTA DATA -->` con **Decise**, **Aperte**, **Cambiate** e
+      **Dedotto da me**
+- [x] il piano diceva «nessuno la misura»: la misura invece c'è, perché le
+      tabelle le legge già `decisioni_dm.py`. `scripts/eco_decisioni.py` le
+      raggruppa per data di chiusura, e da due in su chiede l'eco di quella
+      data. Sette test, uno sul repo. In CI
+- [x] **provata prima di applicare**: sul repo il rilevatore ha bocciato
+      l'unico blocco dal 2026-10-01, D1-D7 di questo piano, che l'eco non
+      l'aveva. **Applicata**: l'eco scritta nel piano, con quello che ho
+      dedotto io a parte (D4 per master, il test di D5, le frasi vere di L8).
+      Ora il gate è verde
+- [x] una norma nel registro, maggiore, 🟢. Le sei chiusure a blocchi di
+      prima del 2026-10-01 si contano e non bloccano: scriverne l'eco oggi
+      sarebbe inventarla
 
 ### L10 · `commit-archaeologist`, quando la condizione scatta — ⬜ · in attesa
 
@@ -340,6 +352,17 @@ storia nel sorgente. Fonte, commit, licenza e URL dei file stanno nel registro.
 | D8 | L1 | **Il lettore a freddo legge intero o a scene?** Calibrato il 2026-10-01 sul DEF-4 del tavolo: intero 69 rilievi e 7 `L-ORDINE`, a scene 55 e 7, tre in comune; il diario della lettura a scene però porta il ricordo (8 domande del quiz su 14 contro 6 degli appunti, e la missione che gli appunti perdevano sempre). Proposta: **il lettore legge intero** (trova di più); **il playtester e il DM a freddo leggono a scene**, e il loro diario fa il passo 7. Così ogni master ha tutte e due le letture, senza costi in più |
 | D9 | L5 | **Il DM a freddo entra nel ciclo del master?** Il primo passo, provato sui cinque DEF, ha trovato due rilievi veri (cosa vuole Terros in DEF-1, chi guida gli orchi in DEF-5) che lettore e playtester non avevano in rosso, e costa cinque minuti di agente per master. Il secondo e il terzo passo non sono provati. Proposta: **il primo passo diventa obbligatorio al passo 6** da subito, perché costa poco e trova cose diverse; il secondo e il terzo restano in prova finché una corsa intera non c'è, e tu dici se la preparazione che ne esce è la tua |
 | D10 | L8 | **Gli insiemi attesi delle trenta frasi sono giusti?** Li ho scritti io leggendo ORCHESTRAZIONE: il gate misura contro quelli, e un insieme sbagliato rende il numero falso. In particolare: le frasi sul repo («documentazione completa… nel plan») vogliono `prosa-documenti` come L1; le frasi sul Drappo non vogliono `campaign`. Proposta: **li confermi o correggi in `casi.json`**, e da lì ogni frase nuova che il DM scrive nei piani può entrare come caso, così il campione cresce con l'uso |
+
+### L'eco del 2026-10-01
+
+Il DM ha chiuso D1-D7 in un messaggio solo. L'eco, scritta dopo e non prima
+(la norma è nata da questo lotto, L9): è il caso da cui viene.
+
+<!-- eco: AGENT-SKILLS 2026-10-01 -->
+- **Decise**: D1 il ricordo dal diario fa il passo 7, il quiz resta dove la chiave c'è · D2 il DM a freddo parte da `skim`, «e poi vediamo» · D3 il passaggio è la scena intera · D4 il registro in avviso, poi bloccante da solo · D5 via il `curl … | sh`, il controllo resta · D6 partono L8 e L9 · D7 `commit-archaeologist` fuori, in un registro d'attesa con la condizione
+- **Aperte**: nessuna di quelle sette; restano D8, D9, D10, nate dopo dai lotti
+- **Cambiate**: D4, dalla proposta «parte in avviso» a «avviso, poi bloccante da solo, master per master»; D7, da «resta fuori» a «fuori con una condizione che la fa entrare»
+- **Dedotto da me**: che «bloccante da solo» valga master per master e non per il registro intero (L4: un master nuovo senza letture avrebbe rimesso tutto in avviso); che la domanda su D5, «quel test non è perso giusto?», chiedesse un test che fa mordere lo scanner, e non solo il controllo in CI; che per L8 «misurazioni» volesse dire frasi vere del DM e non frasi scritte da me
 
 ## 6 · Validazione
 

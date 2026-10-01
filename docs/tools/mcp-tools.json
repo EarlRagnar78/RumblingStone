@@ -2396,6 +2396,41 @@
       "deterministic": true
     },
     {
+      "name": "lettura_a_scene",
+      "description": "«Il lettore a freddo ha trovato davvero quello che arriva tardi, o l'ha visto perché aveva già letto la scena dopo?»\n\nServe un master ai lettori a freddo una scena alla volta da 127.0.0.1: la scena dopo arriva solo dopo una riga di diario (ago, mi aspettavo, ho trovato, so adesso) e dopo il tempo per leggerla; alla chiusura scrive impronte, mai il testo. Adattato da first-reader/feed.py (Apache 2.0, ADR-0076).",
+      "use_case": "«Il lettore a freddo ha trovato davvero quello che arriva tardi, o l'ha visto perché aveva già letto la scena dopo?»",
+      "invocation": "python3 scripts/lettura_a_scene.py servi <master> --corsa DIR --lettori lettore,playtester | inizia | avanti --diario … | smetti --diario … | progresso/chiudi --admin URL | diario DIR/lettore",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "cmd": {
+            "type": "string",
+            "description": "Sottocomando.",
+            "enum": [
+              "servi",
+              "inizia",
+              "avanti",
+              "smetti",
+              "progresso",
+              "chiudi",
+              "diario"
+            ]
+          }
+        },
+        "required": [
+          "cmd"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "diario rifiutato o lettura chiusa",
+        "2": "errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
       "name": "mcp_server",
       "description": "«Voglio che l'agente chiami gli strumenti del repo da solo: come glieli espongo?»\n\nEspone i tool del repo a un client MCP: JSON-RPC su stdio, stdlib, catalogo preso da questo stesso manifest (ADR-0012, ADR-0030). E' una superficie d'esecuzione e si difende come tale: solo allowlist, mai una shell, argomenti validati sullo schema prima di partire, percorsi confinati sotto la radice del repo, timeout e tetto all'output. I tool che scrivono contenuto o fanno commit sono ELENCATI ma non partono senza --allow-write, perche' il canone si scrive su un branch di gruppo con l'occhio del DM sopra (ADR-0007). Un'uscita diversa da zero e' un risultato tradotto con gli exit_codes del manifest, non un errore di protocollo.",
       "use_case": "«Voglio che l'agente chiami gli strumenti del repo da solo: come glieli espongo?»",

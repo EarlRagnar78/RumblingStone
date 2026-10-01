@@ -90,6 +90,10 @@ fissa. Leggi le rubriche, non questo riassunto:
 | **lettore** | *capisco cosa c'è, senza inventare?* (leggibilità) | [`references/lettore-a-freddo.md`](references/lettore-a-freddo.md) |
 | **playtester** | *quando i giocatori fanno quello che vogliono, il modulo risponde?* (giocabilità) | [`references/playtester-a-freddo.md`](references/playtester-a-freddo.md) |
 
+- **Come**: il modulo si legge **una scena alla volta**, servito da
+  `scripts/lettura_a_scene.py`, con un diario per scena; il lettore non vede la
+  scena dopo finché non ha scritto cosa sa adesso. Così `L-ORDINE` si trova
+  davvero (`lettore-a-freddo.md`, «La lettura a scene»).
 - **Quando**: su ogni master nuovo o riscritto, **prima** del dry-run e prima
   che vada al tavolo. Il dry-run misura il ritmo, le letture misurano i buchi.
 - **Sono obbligatorie per chiamare un master DEF**, in ogni arco e in ogni

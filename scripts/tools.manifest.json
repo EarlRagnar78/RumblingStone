@@ -7512,6 +7512,79 @@
       "docs": [
         "plans/adr/ADR-0076-adozione-da-awesome-llm-apps.md"
       ]
+    },
+    {
+      "id": "lettura_a_scene",
+      "path": "scripts/lettura_a_scene.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/lettura_a_scene.py servi <master> --corsa DIR --lettori lettore,playtester | inizia | avanti --diario … | smetti --diario … | progresso/chiudi --admin URL | diario DIR/lettore",
+      "summary": "Serve un master ai lettori a freddo una scena alla volta da 127.0.0.1: la scena dopo arriva solo dopo una riga di diario (ago, mi aspettavo, ho trovato, so adesso) e dopo il tempo per leggerla; alla chiusura scrive impronte, mai il testo. Adattato da first-reader/feed.py (Apache 2.0, ADR-0076).",
+      "use_case": "«Il lettore a freddo ha trovato davvero quello che arriva tardi, o l'ha visto perché aveva già letto la scena dopo?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "cmd",
+          "type": "str",
+          "required": true,
+          "default": null,
+          "choices": [
+            "servi",
+            "inizia",
+            "avanti",
+            "smetti",
+            "progresso",
+            "chiudi",
+            "diario"
+          ],
+          "repeatable": false,
+          "desc": "Sottocomando."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "07_il Portale Della Forgia Eterna/ARC07-DEF-*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "plans/copertura-scene.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "diario rifiutato o lettura chiusa",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "I passaggi e le impronte sono deterministici; il diario lo scrive un agente."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": false,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/lettura_a_scene.py --help",
+      "tests": [
+        "scripts/tests/test_lettura_a_scene.py"
+      ],
+      "docs": [
+        "skills/rumblingstone-playtest/references/lettore-a-freddo.md",
+        "plans/PIANO-AGENT-SKILLS-ESTERNE.md"
+      ]
     }
   ]
 }

@@ -25,6 +25,56 @@ stesura ne citava tre, ed è stata fermata prima di dare un numero.
   scene dopo il punto in cui serviva è un rilievo.
 - Scrive un rilievo per ogni buco, anche piccolo. Il conteggio si fa dopo.
 
+## La lettura a scene
+
+Dal 2026-10-01 il modulo non si consegna intero: lo serve
+`scripts/lettura_a_scene.py`, **una scena alla volta**, e la scena dopo arriva
+solo quando il lettore ha scritto il diario di quella appena letta, e non prima
+del tempo che serve a leggerla. È il modo in cui un DM incontra il modulo la
+prima volta, e l'unico in cui `L-ORDINE` si vede davvero: un lettore che ha già
+letto la scena dopo non sa più che cosa mancava prima.
+
+Il diario, una riga per passaggio:
+
+```
+ago=<-2..+2> | mi aspettavo: … | ho trovato: … | so adesso: … | codici: L-…
+```
+
+- **ago** è come va la lettura: +2 dentro, 0 neutro, −1 la perdo, −2 smetto.
+  Smettere è permesso, e il punto in cui si smette è un rilievo;
+- **so adesso** è cosa sanno i PG a questo punto, e da chi l'hanno saputo. Una
+  cosa che il diario dice di non sapere e che compare tre scene dopo è un
+  `L-ORDINE`, con la prova già scritta;
+- i **codici** si annotano nel momento in cui scattano; la tabella dei rilievi
+  si compila alla fine, dal diario.
+
+Chi orchestra avvia la lettura e dà a ogni agente **solo il suo indirizzo**, mai
+il percorso del file, con questo messaggio d'invio (forma presa da
+`advisor-orchestrator-worker` di awesome-llm-apps, ADR-0076):
+
+```
+Sei il lettore a freddo di un modulo. Questo messaggio è tutto quello che hai.
+COMPITO: leggere il modulo una scena alla volta e trovare dove il DM dovrebbe
+inventare o cercare.
+INPUT: export READER_FEED=<indirizzo>; poi
+  python3 scripts/lettura_a_scene.py inizia
+  python3 scripts/lettura_a_scene.py avanti --diario "ago=… | mi aspettavo: … | ho trovato: … | so adesso: …"
+  python3 scripts/lettura_a_scene.py smetti --diario "…"   (se ti fermi)
+  e la rubrica skills/rumblingstone-playtest/references/lettore-a-freddo.md
+CRITERI (l'uscita fallisce se uno manca):
+1. non apri il modulo per altre vie: niente grep, niente cat, niente git;
+2. ogni passaggio ha la sua riga di diario, con tutti i campi;
+3. la tabella finale ha una prova citata per ogni rilievo.
+USCITA: la tabella | # | Scena | Codice | Cosa manca | Gravità | Prova |, e in
+coda cosa la lettura non ha potuto verificare.
+Se un input manca o si contraddice, scrivi INPUT GAP in testa, con una riga.
+```
+
+⚠️ **Il limite.** L'agente ha il repo davanti: se cerca il master con `grep`, lo
+trova. Il meccanismo gli toglie il percorso, non la possibilità. Si controlla
+dopo: un diario che cita cose delle scene successive ha guardato avanti, e la
+lettura si rifà.
+
 ## Le domande, sempre le stesse
 
 Un lettore vero non cerca «difetti»: si fa domande, e il buco è la domanda

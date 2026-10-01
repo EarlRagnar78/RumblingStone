@@ -149,35 +149,27 @@ prerequisito di L2, L4 e L5.
       una riga di storia nel sorgente. Misurato il 2026-10-01: 0 file, la
       condizione è spenta. In un clone parziale lo script dice «non misurabile»
 
-### L1 · La lettura a scene, senza guardare avanti — ⬜
+### L1 · La lettura a scene, senza guardare avanti — ✅ (2026-10-01)
 
-`[engine: Opus per la calibrazione, Sonnet per lo script · effort: alto · qualità: test che provano il cancello mordere + calibrazione su DEF-4 contata a mano]` — **C** + **G**
-
-- [ ] `scripts/lettura_a_scene.py`, adattato da `feed.py`: servito su <!-- validate-docs: futuro -->
-      `127.0.0.1`, un passaggio per scena col riconoscimento di
-      `copertura_scene.py`, diario per scena con campi fissi: `ago` (−2…+2),
-      `mi aspettavo`, `ho trovato`, **`so adesso`** (cosa sanno i PG e da chi),
-      e i codici `L-`/`P-` al momento in cui scattano. Chiude scrivendo titolo e
-      impronta di ogni scena, mai il testo
-- [ ] test (`scripts/tests/test_lettura_a_scene.py`): il testo non è su disco <!-- validate-docs: futuro -->
-      prima della chiusura; il passaggio dopo non arriva senza diario né prima
-      del tempo minimo; un diario sotto i 25 caratteri è rifiutato; le scene
-      sono quelle di `copertura_scene`
-- [ ] le rubriche del lettore e del playtester: un paragrafo «La lettura a
-      scene», e il brief d'invio (formato di `advisor-orchestrator-worker`:
-      input interi, criteri numerati, `INPUT GAP`)
-- [ ] **calibrazione**: DEF-4 al commit del tavolo (`ddd683c`, come F2), letto
-      intero e letto a scene, da agenti nuovi. Si contano a mano i rilievi
-      `L-ORDINE` delle due letture, più **una scena di controllo** senza difetti
-      noti, per vedere se la lettura ne inventa
-- [ ] voce nel manifest, riga nel registro delle norme («il lettore legge a
-      scene»: misurata dal cancello del registro L4, o dichiarata non misurata)
-
-⚠️ **Il limite, da scrivere nella rubrica.** L'agente che legge ha il repo
-davanti: se cerca il master con `grep`, lo trova. Il meccanismo gli toglie il
-percorso, non la possibilità. `first-reader` ha lo stesso limite e lo tiene
-con l'istruzione. Da noi si controlla dopo: il diario di un lettore che ha
-guardato avanti cita cose delle scene successive, e la calibrazione lo guarda.
+- [x] `scripts/lettura_a_scene.py`, adattato da `feed.py`: servito su
+      127.0.0.1, un passaggio per scena col riconoscitore di `copertura_scene`
+      (premessa, scene, tratti fra le scene, coda: i cinque DEF si ricompongono
+      identici), diario con i campi fissi, alla chiusura impronte e titoli e mai
+      il testo. Il tempo minimo è 0,08 s per parola, e per gli agenti si mette a
+      0: un agente legge in un istante, la barriera vera è il diario
+- [x] nove test (`test_lettura_a_scene.py`), voce nel manifest
+- [x] la rubrica del lettore («La lettura a scene») e il messaggio d'invio nella
+      forma di `advisor-orchestrator-worker`; una norma nel registro
+- [x] **calibrazione** (`esperimenti/lettura-a-scene-def4/`): DEF-4 del tavolo
+      (`ddd683c`), due agenti nuovi, stessa rubrica. Intera **69** rilievi, **7**
+      `L-ORDINE`; a scene **55** e **7**, **3 in comune**, contati a mano; delle
+      lacune inventate al tavolo **3** contro **2**. Il diario non ha guardato
+      avanti. **L'ipotesi del piano non regge su questo caso**: la lettura a scene
+      non trova più `L-ORDINE`, ne trova di diversi. Il salto da 3 (settembre) a
+      7 viene dalla rubrica. La rubrica è stata riscritta per dirlo, prima del
+      merge; la scelta del modo è D8
+- [ ] la scena di controllo per le invenzioni: nessuna scena di questo DEF-4 è
+      senza difetti noti, quindi non c'è. Resta da fare su un master che ne abbia una
 
 ### L2 · Il ricordo del giorno dopo e le domande ai lettori — ⬜
 
@@ -312,6 +304,7 @@ storia nel sorgente. Fonte, commit, licenza e URL dei file stanno nel registro.
 | ~~D5~~ | L7 | ✅ **Decisa il 2026-10-01**: si toglie il comando, resta il rimando; e il controllo resta in CI con un test che lo fa mordere. Era: **La riga `curl … \| sh` in `dnd-35-srd`** |
 | ~~D6~~ | L8, L9 | ✅ **Decisa il 2026-10-01**: partono tutti e due. L8: misure sulle frasi vere del DM e un rilevatore; L9: si prova, poi si applica, *«altrimenti non servono a niente»*. Era: **Partono, o restano proposte?** |
 | ~~D7~~ | L10 | ✅ **Decisa il 2026-10-01**: resta fuori per ora, ma citato e messo in un registro di adozioni in attesa con gli URL e una condizione che, quando si accende, fa partire l'adozione (`plans/adozioni-in-attesa.json`, ADR-0076). Era: **`commit-archaeologist` resta fuori?** |
+| D8 | L1 | **Il lettore a freddo legge intero o a scene?** Calibrato il 2026-10-01 sul DEF-4 del tavolo: intero 69 rilievi e 7 `L-ORDINE`, a scene 55 e 7, tre in comune; il diario della lettura a scene però porta il ricordo (8 domande del quiz su 14 contro 6 degli appunti, e la missione che gli appunti perdevano sempre). Proposta: **il lettore legge intero** (trova di più); **il playtester e il DM a freddo leggono a scene**, e il loro diario fa il passo 7. Così ogni master ha tutte e due le letture, senza costi in più |
 
 ## 6 · Validazione
 

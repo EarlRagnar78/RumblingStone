@@ -27,12 +27,18 @@ stesura ne citava tre, ed è stata fermata prima di dare un numero.
 
 ## La lettura a scene
 
-Dal 2026-10-01 il modulo non si consegna intero: lo serve
-`scripts/lettura_a_scene.py`, **una scena alla volta**, e la scena dopo arriva
-solo quando il lettore ha scritto il diario di quella appena letta, e non prima
-del tempo che serve a leggerla. È il modo in cui un DM incontra il modulo la
-prima volta, e l'unico in cui `L-ORDINE` si vede davvero: un lettore che ha già
-letto la scena dopo non sa più che cosa mancava prima.
+`scripts/lettura_a_scene.py` serve il modulo **una scena alla volta**: la scena
+dopo arriva solo quando il lettore ha scritto il diario di quella appena letta.
+Serve quando occorre il **diario**: il ricordo del passo 7 e le domande ai
+lettori dopo la lettura lavorano su quello, e il DM a freddo legge così.
+
+⚠️ **Per trovare i buchi non è dimostrato che sia meglio.** Calibrato il
+2026-10-01 sul DEF-4 del tavolo, con due agenti nuovi e la stessa rubrica
+(`plans/esperimenti/lettura-a-scene-def4/`): intera 69 rilievi e 7 `L-ORDINE`,
+a scene 55 e 7, tre in comune. Il guadagno su `L-ORDINE` rispetto a settembre
+(3) viene dalle domande fisse di questa rubrica, non dal modo di leggere. Quale
+modo usa il lettore per i buchi lo decide il DM (D8 di
+PIANO-AGENT-SKILLS-ESTERNE).
 
 Il diario, una riga per passaggio:
 

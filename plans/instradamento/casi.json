@@ -1,0 +1,262 @@
+{
+  "nota": "Frasi vere del DM, copiate da plans/, skills/ e AGENTS.md dove sono citate fra «». Per ognuna, le skill OBBLIGATORIE secondo skills/ORCHESTRAZIONE.md (L0 se tocca il canone, una sola L1, le L2 che si applicano); L3, L4 e LR non si contano, perché non sono obbligatorie (§4). Gli insiemi li ha scritti l'agente il 2026-10-01 e vanno confermati dal DM (D10 di PIANO-AGENT-SKILLS-ESTERNE). Le frasi sono divise a metà: le «taratura» si possono usare per scegliere i trigger, le «verifica» no, così il miglioramento si legge su frasi che nessuno ha usato per migliorare. Il tetto è il numero di omissioni accettato oggi: il gate fallisce se cresce, e si abbassa a mano quando scende.",
+  "tetto_omissioni": 13,
+  "casi": [
+    {
+      "frase": "dammi la parte DM completa in PDF sia per Terros che per il rientro nella Forgia pre-resurrezione",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-campaign"
+      ],
+      "insieme": "taratura"
+    },
+    {
+      "frase": "cosa manca davvero perché un modulo sia memorabile per i giocatori e bello da masterizzare, e cosa di questo diventa canone della campagna?",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-campaign",
+        "rumblingstone-module-standard"
+      ],
+      "insieme": "verifica"
+    },
+    {
+      "frase": "nelle skill per la generazione di avventure c'è spazio per un'indagine in cui gli indizi si compongono nel disegno finale? oppure per le faide del Trono di Spade?",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-indagine",
+        "rumblingstone-narrative-style"
+      ],
+      "insieme": "taratura"
+    },
+    {
+      "frase": "ma questa skill aggiunge anche misteri non banali da risolvere, non solo congegni?",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-indagine"
+      ],
+      "insieme": "verifica"
+    },
+    {
+      "frase": "ha senso aggiungere alle skill di scrittura lo stile e la prosa di Umberto Eco e del Nome della rosa?",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-narrative-style"
+      ],
+      "insieme": "taratura"
+    },
+    {
+      "frase": "verifica se nella mini campagna c'è un mistero o più d'uno, tipo le avventure di Sherlock Holmes, e se possono essere aggiunti come altre piste",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-indagine",
+        "rumblingstone-narrative-style"
+      ],
+      "insieme": "verifica"
+    },
+    {
+      "frase": "incoerenza e prosa inglese tradotta male, anche negli echi",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-campaign",
+        "rumblingstone-narrative-style"
+      ],
+      "insieme": "taratura"
+    },
+    {
+      "frase": "controlla bene negli archi o nel bestiario se c'e' qualcosa magari annegato come prosa",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-campaign"
+      ],
+      "insieme": "verifica"
+    },
+    {
+      "frase": "verifica se in tutta la prosa degli archi ci sono altri PNG, villain e mostri che non sono presenti nel bestiario png e villain, e aggiungili",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-campaign"
+      ],
+      "insieme": "taratura"
+    },
+    {
+      "frase": "testiamo con una riscrittura della resurrezione di Hella, le interazioni con la stanza e l'apertura per la battaglia a −1000, con le conseguenze della stanza",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-campaign",
+        "rumblingstone-narrative-style",
+        "rumblingstone-module-standard"
+      ],
+      "insieme": "verifica"
+    },
+    {
+      "frase": "generare coerentemente gli stat block nei 96 che non li hanno, con gli array elite e std, regole deterministiche con una percentuale di random",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-campaign",
+        "npc-villain-boosting"
+      ],
+      "insieme": "taratura"
+    },
+    {
+      "frase": "verifica se le statistiche di D5 sono coerenti con 3.5 o PF1e, scegli la versione più forte, e modifica statblocco, riferimento e link",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-campaign",
+        "npc-villain-boosting"
+      ],
+      "insieme": "verifica"
+    },
+    {
+      "frase": "l'avventura a −1000 è completa delle aggiunte successive con le correzioni? rigenerala completa",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-campaign",
+        "rumblingstone-module-standard",
+        "rumblingstone-narrative-style"
+      ],
+      "insieme": "taratura"
+    },
+    {
+      "frase": "se le carte si danno prima, i PG sanno tutto e non doneranno nulla",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-campaign",
+        "rumblingstone-narrative-style"
+      ],
+      "insieme": "verifica"
+    },
+    {
+      "frase": "la scheda di Thorik non è aggiornata correttamente",
+      "fonte": "PG/",
+      "attese": [
+        "rumblingstone-campaign"
+      ],
+      "insieme": "taratura"
+    },
+    {
+      "frase": "il gruppo arriva a −1000 e vuole commerciare nonostante l'assedio: cosa gli posso far commerciare, con che limite, cosa è disponibile mille anni prima",
+      "fonte": "skills/",
+      "attese": [
+        "rumblingstone-campaign",
+        "rumblingstone-module-standard"
+      ],
+      "insieme": "verifica"
+    },
+    {
+      "frase": "nell'avventura così come è scritta mancano davvero le descrizioni delle stanze e dei PNG che incontrano, li ho dovuti inventare sul momento",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-campaign",
+        "rumblingstone-module-standard",
+        "rumblingstone-narrative-style"
+      ],
+      "insieme": "taratura"
+    },
+    {
+      "frase": "ci sono eventi per i personaggi? come entrano nelle contrade? ci sono osterie e botteghe? un master ha tutto sotto controllo o ha bisogno di un'AI?",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-module-standard",
+        "rumblingstone-narrative-style"
+      ],
+      "insieme": "verifica"
+    },
+    {
+      "frase": "finisci le schede dei mostri e PNG che mancano",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-campaign"
+      ],
+      "insieme": "taratura"
+    },
+    {
+      "frase": "se il DM vuole per la generazione la versione più potente mantenendo il GS si possano usare gli incantesimi di Pathfinder 1e se più potenti",
+      "fonte": "plans/",
+      "attese": [
+        "npc-villain-boosting"
+      ],
+      "insieme": "verifica"
+    },
+    {
+      "frase": "ha senso inserire i template (archetipi) di Pathfinder 1e per versioni potenziate dei PNG e mostri della 3.5?",
+      "fonte": "plans/",
+      "attese": [
+        "npc-villain-boosting"
+      ],
+      "insieme": "taratura"
+    },
+    {
+      "frase": "il generatore ha qualcosa per generare il gruppo di incontro che lavora meglio contro un gruppo di incantatori o guerrieri o misti?",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-module-standard"
+      ],
+      "insieme": "verifica"
+    },
+    {
+      "frase": "garantire equilibrio, novità, misteri e congegni in modo che ogni arco abbia variabilità e unicità, non lineare",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-narrative-style",
+        "rumblingstone-indagine"
+      ],
+      "insieme": "taratura"
+    },
+    {
+      "frase": "documentazione completa su cosa fatto, cosa apre, cosa introduce di nuovo, cosa fixa e cosa rimane da fare nel plan",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-prosa-documenti"
+      ],
+      "insieme": "verifica"
+    },
+    {
+      "frase": "aggiungi una gold rule valida per ogni nuovo plan e adr: verifica nell'index e nei file quale e' l'ultimo adr prima di aggiungerlo",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-prosa-documenti"
+      ],
+      "insieme": "taratura"
+    },
+    {
+      "frase": "deep audit del documento e crea un PRD pulito, con la prospettiva di un data scientist, di un architetto senior e di uno sviluppatore",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-prosa-documenti"
+      ],
+      "insieme": "verifica"
+    },
+    {
+      "frase": "scorrendo il master, so cosa succede stasera?",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-module-standard"
+      ],
+      "insieme": "taratura"
+    },
+    {
+      "frase": "nel repo ci sono i passi completi per generare i PDF? c'è una guida anche per questa parte?",
+      "fonte": "AGENTS.md",
+      "attese": [
+        "rumblingstone-prosa-documenti"
+      ],
+      "insieme": "verifica"
+    },
+    {
+      "frase": "se ci sono parti da aggiungere nel repo utilizzando anche l'errata aggiungilo nelle parti del canone",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-campaign"
+      ],
+      "insieme": "taratura"
+    },
+    {
+      "frase": "controlla cosa c'è nella parte scritta a maggio che ha senso recuperare e reintegrare nel torneo presente nel main",
+      "fonte": "plans/",
+      "attese": [
+        "rumblingstone-campaign"
+      ],
+      "insieme": "verifica"
+    }
+  ]
+}

@@ -283,16 +283,29 @@ mirror di `build-skills.sh` finiscono in agenti diversi.
       `test_skill_scanner.py` rimette la riga in una skill finta e verifica che
       lo scanner esca 1; fissa anche l'impronta SHA-256 del file
 
-### L8 · Prove d'instradamento delle skill — ⬜ · parte (D6)
+### L8 · Prove d'instradamento delle skill — ✅ (2026-10-01) · D6
 
 `[engine: Sonnet · effort: medio · qualità: da definire con il DM]` — **R** prima di **C**
 
-Frasi italiane del DM («prepara la serata», «il modulo è pronto?») con
-l'insieme di skill che ORCHESTRAZIONE vuole per ciascuna, controllate contro le
-descrizioni. Sarebbe la misura di «zero omissioni di ciò che è obbligatorio».
-Lo strumento esterno misura la cosa sbagliata (una skill prima, non un insieme),
-e un controllo lessicale su descrizioni lunghe dà poco: prima una ricognizione
-su 20 frasi vere del DM, poi si decide se vale un cancello.
+- [x] trenta frasi vere del DM, da `plans/`, `skills/` e `AGENTS.md`, con le
+      skill obbligatorie di ORCHESTRAZIONE §4 (`instradamento/casi.json`),
+      metà per tarare e metà per verificare
+- [x] `scripts/instradamento_skill.py`: per ogni frase, quali skill
+      obbligatorie raggiungono i trigger fra virgolette delle descrizioni;
+      omissioni, skill in più, conflitti fra le due L1. Dieci test. In CI, a
+      cricchetto sul tetto del file
+- [x] **la misura** (`instradamento/RISULTATI.md`): 38 omissioni su 46 prima,
+      **13** dopo; sulle frasi di verifica, mai usate per tarare, da 19 a 8.
+      Le skill in più salgono da 2 a 7, ed è scritto
+- [x] **applicate**: trigger italiani nelle descrizioni di `campaign` (i nomi
+      dei PG, «canone», «arco», «Bestiario», «PNG»…), `module-standard`
+      («modulo», «master», «avventura», «stanze»…), `npc-villain-boosting`
+      («statblocco», «più forte», «archetipi»…), `prosa-documenti`
+      («documentazione», «piano», «ADR», «PRD») e `narrative-style` («prosa»,
+      «stile», «echi», «faide»). Tolto il trigger «documento» da
+      `narrative-style`, che avrebbe mandato una frase sui documenti del repo
+      alla L1 sbagliata. Tutte sotto i 1024 caratteri
+- [x] una norma nel registro (maggiore, 🟡)
 
 ### L9 · L'eco prima di applicare un blocco di decisioni — ⬜ · parte (D6)
 
@@ -326,6 +339,7 @@ storia nel sorgente. Fonte, commit, licenza e URL dei file stanno nel registro.
 | ~~D7~~ | L10 | ✅ **Decisa il 2026-10-01**: resta fuori per ora, ma citato e messo in un registro di adozioni in attesa con gli URL e una condizione che, quando si accende, fa partire l'adozione (`plans/adozioni-in-attesa.json`, ADR-0076). Era: **`commit-archaeologist` resta fuori?** |
 | D8 | L1 | **Il lettore a freddo legge intero o a scene?** Calibrato il 2026-10-01 sul DEF-4 del tavolo: intero 69 rilievi e 7 `L-ORDINE`, a scene 55 e 7, tre in comune; il diario della lettura a scene però porta il ricordo (8 domande del quiz su 14 contro 6 degli appunti, e la missione che gli appunti perdevano sempre). Proposta: **il lettore legge intero** (trova di più); **il playtester e il DM a freddo leggono a scene**, e il loro diario fa il passo 7. Così ogni master ha tutte e due le letture, senza costi in più |
 | D9 | L5 | **Il DM a freddo entra nel ciclo del master?** Il primo passo, provato sui cinque DEF, ha trovato due rilievi veri (cosa vuole Terros in DEF-1, chi guida gli orchi in DEF-5) che lettore e playtester non avevano in rosso, e costa cinque minuti di agente per master. Il secondo e il terzo passo non sono provati. Proposta: **il primo passo diventa obbligatorio al passo 6** da subito, perché costa poco e trova cose diverse; il secondo e il terzo restano in prova finché una corsa intera non c'è, e tu dici se la preparazione che ne esce è la tua |
+| D10 | L8 | **Gli insiemi attesi delle trenta frasi sono giusti?** Li ho scritti io leggendo ORCHESTRAZIONE: il gate misura contro quelli, e un insieme sbagliato rende il numero falso. In particolare: le frasi sul repo («documentazione completa… nel plan») vogliono `prosa-documenti` come L1; le frasi sul Drappo non vogliono `campaign`. Proposta: **li confermi o correggi in `casi.json`**, e da lì ogni frase nuova che il DM scrive nei piani può entrare come caso, così il campione cresce con l'uso |
 
 ## 6 · Validazione
 

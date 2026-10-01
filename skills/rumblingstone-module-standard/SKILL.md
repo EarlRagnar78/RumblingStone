@@ -8,7 +8,8 @@ description: >
   "master definitivo", consolidating multiple file generations into one,
   auditing an arc for a final version, or when asked for "qualità AP",
   "modulo definitivo", "consolidamento", "versione finale", "audit dell'arco",
-  "ARC*-DEF-*". Encodes the DM-approved checklist (2026-07-22, PR #61) so
+  "ARC*-DEF-*", and on the DM's words for one: "modulo", "master",
+  "avventura", "stanze", "incontro", "bottega". Encodes the DM-approved checklist (2026-07-22, PR #61) so
   agents know exactly how deep to go — sections, prose level, tactics format,
   budget accounting — without re-deriving it. Reference implementation:
   07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md.

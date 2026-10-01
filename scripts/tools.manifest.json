@@ -7716,6 +7716,88 @@
       ]
     },
     {
+      "id": "instradamento_skill",
+      "path": "scripts/instradamento_skill.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/instradamento_skill.py [--check] [--json]",
+      "summary": "L8 (D6 del 2026-10-01): per ogni frase vera del DM in plans/instradamento/casi.json, quali skill obbligatorie (ORCHESTRAZIONE §4) raggiungono i trigger fra virgolette delle descrizioni. Conta omissioni, skill in più e conflitti fra le due L1. Il gate è a cricchetto sul tetto del file.",
+      "use_case": "«Se il DM dice questa frase, un agente che instrada sulle descrizioni carica le skill che deve?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il gate: esce 1 sopra il tetto o con un conflitto L1."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La misura come dati."
+        },
+        {
+          "name": "--casi",
+          "type": "path",
+          "required": false,
+          "default": "plans/instradamento/casi.json",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il file dei casi."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/instradamento/casi.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "skills/*/SKILL.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "sotto il tetto",
+        "1": "sopra il tetto, conflitto L1 o tetto mancante",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Puramente lessicale."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/instradamento_skill.py --check",
+      "tests": [
+        "scripts/tests/test_instradamento_skill.py"
+      ],
+      "docs": [
+        "skills/ORCHESTRAZIONE.md"
+      ]
+    },
+    {
       "id": "registro_letture",
       "path": "scripts/registro_letture.py",
       "category": "G-orchestration-governance",

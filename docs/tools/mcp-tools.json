@@ -2396,6 +2396,38 @@
       "deterministic": true
     },
     {
+      "name": "instradamento_skill",
+      "description": "«Se il DM dice questa frase, un agente che instrada sulle descrizioni carica le skill che deve?»\n\nL8 (D6 del 2026-10-01): per ogni frase vera del DM in plans/instradamento/casi.json, quali skill obbligatorie (ORCHESTRAZIONE §4) raggiungono i trigger fra virgolette delle descrizioni. Conta omissioni, skill in più e conflitti fra le due L1. Il gate è a cricchetto sul tetto del file.",
+      "use_case": "«Se il DM dice questa frase, un agente che instrada sulle descrizioni carica le skill che deve?»",
+      "invocation": "python3 scripts/instradamento_skill.py [--check] [--json]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Il gate: esce 1 sopra il tetto o con un conflitto L1."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "La misura come dati."
+          },
+          "casi": {
+            "type": "string",
+            "description": "Il file dei casi."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "sotto il tetto",
+        "1": "sopra il tetto, conflitto L1 o tetto mancante",
+        "2": "errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
       "name": "lettura_a_scene",
       "description": "«Il lettore a freddo ha trovato davvero quello che arriva tardi, o l'ha visto perché aveva già letto la scena dopo?»\n\nServe un master ai lettori a freddo una scena alla volta da 127.0.0.1: la scena dopo arriva solo dopo una riga di diario (ago, mi aspettavo, ho trovato, so adesso) e dopo il tempo per leggerla; alla chiusura scrive impronte, mai il testo. Adattato da first-reader/feed.py (Apache 2.0, ADR-0076).",
       "use_case": "«Il lettore a freddo ha trovato davvero quello che arriva tardi, o l'ha visto perché aveva già letto la scena dopo?»",

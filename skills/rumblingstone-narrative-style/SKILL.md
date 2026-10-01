@@ -10,11 +10,11 @@ description: >
   1–2 complex quest design, il caso ricomposto (deduction as climax) —
   with the PCs always protagonists, in good and in evil. Trigger on any content-generation request: "genera", "scrivi",
   "crea la quest", "prepara la sessione", "read-aloud", "boxed text",
-  "recap", "hook", "descrivi la scena", "session prep", "new quest",
+  "recap", "hook", "descrivi la scena", "prosa", "stile", "echi", "faide",
   "dialogo", "conseguenze", "stile narrativo", "mondo vivo", "living
   world", "world turn", "cosa fanno i PNG", "agenda dei villain",
   "indagine", "mistero", "indizio", "ricomposizione",
-  "handout", "documento", "chi è stato", "pista falsa", "railroad".
+  "handout", "documento in gioco", "chi è stato", "pista falsa", "railroad".
 ---
 
 # RumblingStone — Narrative Style Engine (Nine Pillars)

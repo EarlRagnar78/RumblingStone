@@ -64,6 +64,11 @@ jobs:
       - name: Pending adoptions (adozioni_in_attesa.py --check)
         run: python scripts/adozioni_in_attesa.py --check
 
+      # Le frasi vere del DM raggiungono le skill obbligatorie (L8, ORCHESTRAZIONE §4):
+      # a cricchetto, fallisce se le omissioni superano il tetto di casi.json
+      - name: Skill routing (instradamento_skill.py --check)
+        run: python scripts/instradamento_skill.py --check
+
       # Le letture a freddo dei master (D26): in avviso finche' un master non ha
       # le letture con impronta di lettore e playtester, poi bloccante da solo
       # su una lettura scaduta o su un rilievo 🔴/🟠 senza stato (D4, ADR-0076).

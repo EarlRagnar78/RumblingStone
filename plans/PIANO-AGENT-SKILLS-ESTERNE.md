@@ -223,6 +223,9 @@ stesso formato del ricordo: una PR sola.
       calibrazione F2, che dichiarano il commit letto (`ddd683c`) e quindi
       l'impronta ce l'hanno. Oggi tutti e cinque i master sono in avviso: si
       chiudono con la prima lettura a scene di lettore e playtester
+- [x] le due letture della calibrazione di L1 **non** entrano: leggono
+      `ddd683c`, un testo già superato, e servono a confrontare due modi di
+      leggere, non a dire se il master di oggi regge
 - [x] PIANO-LETTORE: D26 rimanda a questo lotto; `playtest` §2-bis dice quando
       si rifà una lettura; una norma **maggiore** nel registro, 🟡
 

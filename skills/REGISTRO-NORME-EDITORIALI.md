@@ -111,6 +111,7 @@
 | `quiz-a-due-agenti.md` | la **chiave del quiz** di un modulo ha **da 10 a 15 domande**, alternative non vuote, e uno **stato** «bozza» o «approvata»: la approva il DM, perché dice cosa il modulo deve far sapere | **minore** | 🟡 `quiz_lettura.py --check` (in CI) — controlla la forma e che lo stato ci sia; **non** può controllare che ad approvare sia stato il DM |
 | `quiz-a-due-agenti.md` | gli **appunti** del lettore stanno in **400 parole**, contate da chi orchestra prima di passare avanti; oltre si rifà la lettura, non si taglia | **minore** | 🔴 non misurato in CI — è un passo della procedura, e gli appunti esistono solo durante l'esperimento; i due del 2026-09-26 sono in `plans/esperimenti/quiz-def4/` (400 e 386 parole). 🔎 Nella prova pilota, con il tetto detto una volta sola, erano 654 e 574 |
 | `lettore-a-freddo.md` «La lettura a scene» | quando si legge **a scene**, ogni passaggio ha la sua riga di diario con **ago, mi aspettavo, ho trovato, so adesso** | **minore** | 🟢 `lettura_a_scene.py` — rifiuta il diario incompleto e la scena chiesta prima del tempo, e alla chiusura scrive le impronte e non il testo (`test_lettura_a_scene.py`). ⚠️ Non vede un agente che apre il master per altre vie: quello si controlla sul diario, a mano |
+| `dm-a-freddo.md` | un master **si capisce sfogliando**: dalla vista di chi scorre si dicono la serata e chi si oppone ai PG | **minore** | 🟡 `vista_di_chi_scorre.py` stampa la vista in modo deterministico; la risposta la dà un agente nuovo, e il giudizio chi orchestra. Prova del 2026-10-01: serata 5 su 5, chi si oppone 1 su 5 (`plans/esperimenti/dm-a-freddo/`) |
 | `quiz-a-due-agenti.md` «Il ricordo dal diario» | ogni master **dichiara la sua serata** (il riquadro *La serata in tre frasi*, o il primo paragrafo del Quickstart), perché il ricordo del passo 7 abbia contro cosa giudicarsi | **minore** | 🟢 `ricordo_lettura.py intenzione` — esce 1 su un master che non la dichiara. Oggi i cinque DEF di ARC-07 la dichiarano: DEF-4 col riquadro, gli altri col Quickstart. ⚠️ Il giudizio sulle risposte non lo misura nessuno: lo dà chi orchestra |
 | `rumblingstone-playtest` §2-bis · D26 | un master **cambiato dopo l'ultima lettura a freddo** chiede una lettura nuova, o una voce «sola forma» con la ragione; ogni rilievo 🔴/🟠 dell'ultima lettura ha uno **stato** (corretto, residuo con ragione, domanda con la decisione) | **maggiore** | 🟡 `registro_letture.py --check` (in CI) — blocca solo i master **sotto cancello**, quelli la cui ultima lettura di lettore e playtester ha l'impronta del testo letto. Il 2026-10-01 nessuno lo è: le diciotto letture fatte prima non hanno impronta ricostruibile, e il cancello è in avviso finché non arrivano letture nuove (D4) |
 | `ADR-0059` (MQM) | il **punteggio di qualità pesato**: severità 1 / 5 / **25**, soglia per classe, critico pass-fail | — è il metro, non una norma che un documento possa violare | 🟢 `punteggio_mqm.py --soglia` — 515 documenti, soglie da `specifiche-qualita.yaml` misurate con `--distribuzione`. ⚠️ Copre **4 norme su 40**: entra solo ciò che ha già un rilevatore |
@@ -124,7 +125,7 @@
 | | Norme registrate |
 |---|---:|
 | 🟢 misurate | 35 |
-| 🟡 misurate in parte, con il limite scritto | 19 |
+| 🟡 misurate in parte, con il limite scritto | 20 |
 | 🔴 **non misurate, con la ragione scritta** | 14 |
 | ⚪ non applicabili | 3 |
 

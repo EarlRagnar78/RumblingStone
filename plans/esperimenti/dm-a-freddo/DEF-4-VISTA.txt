@@ -1,0 +1,118 @@
+VISTA DI CHI SCORRE — il testo intero non c'è, di proposito
+07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md · 32002 parole · circa 160 minuti per leggerlo tutto
+------------------------------------------------------------
+LA SERATA (riquadro «La serata in tre frasi»):
+  Il portale posa i PG in un bosco a est delle mura di Hammerfist, al tramonto: la fortezza è giovane e un'orda la assedia sotto le ali di un drago nero. Al consiglio di guerra **Re Thorek I chiede di uccidere nella notte il generale Zog'tar**, dentro il campo nemico, e di affrontare **all'alba il drago Skullcrusher**. Se falliscono, la fortezza regge lo stesso, perché la profezia è già incisa: la salvano gli avi, e il prezzo lo pagano loro.
+
+TITOLI:
+  ARC-07 · DEFINITIVO #4 — IL VIAGGIO A 1.000 ANNI FA
+    Il Portale della Forgia Eterna — Hammerfist ≈372 DR, il duello con Skullcrusher, il Rubino
+    INDICE DEL MODULO
+    §0 — QUICKSTART DM
+    §0-bis — QUICK-REFERENCE DM (una pagina)
+      Le prove di gruppo delle scene a montaggio (party 4, ≥2 successi)
+      Il giro di Skullcrusher (boss, Scena 11) — 3.5, niente 5e
+      🐾 Supporto Pathfinder 1e (dove il 3.5 è vago) — opzionale, dichiarato
+    §0-ter — QUANDO UN GIOCATORE HA UN'IDEA CHE NON È SCRITTA QUI
+      La regola, dalla skill dello stile: **assorbi, poi rilancia**
+      Tre cose da non fare, che costano il tavolo
+      🎁 Il finisher va al giocatore — `[HDYWTDT]`
+    §1 — HIGHLIGHT ASIMMETRICI PER PG (i QUATTRO, Hella è tornata)
+      🛡️ THORIK — la profezia fatta carne (Casa di Davide lead)
+      🌙 HELLA — la seconda vita alla prova (BG3 lead — il ritorno che conta)
+      ⚒️ TORDEK — il pugno che deve trattenersi (Andor support)
+      🔮 ARTEMIS — il predone davanti al ladro (Andor lead)
+    §2 — LE ZONE DI HAMMERFIST ≈372 DR (Atlante)
+      🎚️ Scheda sensoriale delle tre zone — e cosa NON dire
+      ZONA 1 — La Fortezza Giovane (Hammerfist appena eretta)
+      ZONA 2 — Il Mare di Tende (l'orda, di notte)
+      ZONA 3 — Le Mura all'Alba (l'assalto)
+    §3 — ATTO I · IL TRAMONTO
+      SCENA 1 — Il portale e il bosco al tramonto
+      SCENA 2 — La pattuglia di Durin
+      SCENA 3 — La porta e la targa di bronzo
+      SCENA 4 — Il consiglio di guerra di Re Thorek I
+    §4 — ATTO II · LA NOTTE
+      ⏳ L'OROLOGIO DELLA NOTTE — otto ore, e ogni cosa ne costa
+      SCENA 5 — La notte nella fortezza
+      SCENA 6 — Il mare di tende
+      SCENA 7 — La tenda del comando
+      SCENA 8 — Zog'tar
+      SCENA 9 — Vatore, fra le tende
+    §5 — ATTO III · L'ALBA
+      SCENA 10 — Le mura all'alba
+      SCENA 11 — Il duello con Skullcrusher
+      SCENA 12 — Il Rituale della Forgia Eterna
+      SCENA 13 — Il Rubino e il ritorno
+    §6 — CONTINGENZE & SCONFITTA
+    §7 — ECHO LEDGER (le conseguenze che attraversano gli archi)
+    §8 — AVANZAMENTO (budget PX per scena + tesoro pregenerato)
+      A. Budget PX del beat (party 4 PG, APL 13)
+      B. Tesoro PREGENERATO (i doni di Re Thorek I + il bottino del passato)
+    §9 — PONTE verso il ritorno a Hammerfist + HANDOUT & ASSET
+      Handout giocatore
+      Immagini (atlante C1 — momenti d'uso)
+      Musica
+      Cosa è cambiato nel riordino del 2026-09-25
+      FILE-FONTE ASSORBITI DA QUESTO MASTER (→ `_ARCHIVIO/` a consolidamento chiuso)
+    APPENDICE A — STATISTICHE
+      A.1 · Skullcrusher il Nero (Scena 11)
+      A.2 · Zog'tar Deatheye e le sue quattro guardie (Scena 8)
+      A.3 · Durin Rocciadura (Scena 2)
+      A.4 · Balvar Fuocospento (Scena 7)
+      A.5 · Re Thorek I e Thorgrim Barbadiferro (Scena 4)
+      A.6 · Le creature del campo (Scena 6)
+    APPENDICE B — IL SIGILLO DI OSSIDIANA
+    APPENDICE C — LE VERSIONI VELOCI
+      C.1 · Atto I in quindici minuti (Scene 2-4)
+      C.2 · La tenda in dieci minuti (Scene 6-8)
+      C.3 · Il duello in tre scambi (Scena 11)
+    APPENDICE D — MAPPE
+      Le mappe a pergamena
+      Le griglie ASCII ultra-clear (scala 1,5 m/quadretto)
+
+LE SCENE, la prima frase:
+  SCENA 1 — Il portale e il bosco al tramonto
+      In scena — Dove: il passaggio · la fortezza — Chi: nessuno
+      ![Il portale del Tempo](Immagini/tavola-portale-del-tempo.jpg)
+  SCENA 2 — La pattuglia di Durin
+      In scena — Dove: il bosco — Chi: Durin · i sei veterani
+      **Scheda d'entrata — Durin Rocciadura, la pattuglia** *(statistiche: Appendice A)*
+  SCENA 3 — La porta e la targa di bronzo
+      In scena — Dove: la porta — Chi: Durin · le guardie della porta
+      Durin li porta alla porta principale.
+  SCENA 4 — Il consiglio di guerra di Re Thorek I
+      In scena — Dove: la sala del consiglio — Chi: Re Thorek I · Thorgrim · Durin
+      Durin li porta dentro per il corridoio principale.
+  SCENA 5 — La notte nella fortezza
+      In scena — Dove: i quartieri ospiti · la cappella · la bottega · le gallerie · la fucina — Chi: Durin · Sorella Brynja · Kettra · Zeth · Gunnvor · il pesatore
+      **Chi si trova qui** *(di notte, mentre la fortezza si prepara all'alba)*
+  SCENA 6 — Il mare di tende
+      In scena — Dove: la postierla · il campo — Chi: Durin · Grask · i cavalieri dei lupi · la pattuglia di quattro orchi · le vedette goblin · lo squadrone hobgoblin · il corridore
+      **Prima di uscire**, se la fiducia al consiglio è stata piena: ognuno beve la **Pozione di Invisibilità** (CL 12, 12 minuti: l'SRD dà 1 minuto per livello), e le **Benedizioni di Moradin** sono già addosso (+2 …
+  SCENA 7 — La tenda del comando
+      In scena — Dove: la tenda — Chi: Zog'tar · Balvar · le quattro guardie
+      **Scheda d'entrata — Zog'tar Deatheye, il generale** *(statistiche: Appendice A)*
+  SCENA 8 — Zog'tar
+      In scena — Dove: la tenda — Chi: Zog'tar · le quattro guardie · Balvar · il sacerdote della Mano
+      *La scheda d'entrata di Zog'tar è nella Scena 7, dove i PG lo vedono per la prima volta.*
+  SCENA 9 — Vatore, fra le tende
+      In scena — Dove: fra le tende — Chi: Vatore
+      **Scheda d'entrata — Vatore, il ladro che diventerà Sal**
+  SCENA 10 — Le mura all'alba
+      In scena — Dove: le mura — Chi: Hrodgar · Re Thorek I
+      Si arriva qui **dove le tacche hanno lasciato i PG** (tabella di uscita dell'orologio, §4).
+  SCENA 11 — Il duello con Skullcrusher
+      In scena — Dove: il cortile — Chi: Skullcrusher · Re Thorek I
+      **Scheda d'entrata — Skullcrusher il Nero, il capostipite** *(statistiche: Appendice A)*
+  SCENA 12 — Il Rituale della Forgia Eterna
+      In scena — Dove: l'incudine — Chi: Thorgrim · Re Thorek I
+      Il canone di §6 è esplicito: la fortezza regge perché **la profezia è incisa**.
+  SCENA 13 — Il Rubino e il ritorno
+      In scena — Dove: l'incudine — Chi: nessuno
+      L'accensione si legge in tre battute, di fila, senza fermarsi per i tiri.
+
+GRASSETTI (15 su 968): MASTER DEFINITIVO — fast-play cinematografico (D1: una sessi · sessione-leggenda · Palio di Channathgate · Sostituisce e fonde · Vatore · Sistema: D&D 3.5 SRD · CD · 1.000 anni prima ≈372 DR · 1,5 m/quadretto · Una sessione-leggenda a montaggio · un solo scontro tattico · 1.000 anni prima, ≈372 DR · Quando si gioca · dopo · 4 PG
+CD: 26, 23, 18, 20, 20, 20, 20, 18, 18, 15, 12, 14, 12, 15, 16, 20, 16, 20, 14, 15
+------------------------------------------------------------
+DOMANDA: Da questa vista soltanto: (1) cosa succede stasera, in tre frasi; (2) chi si oppone ai PG e cosa vuole; (3) cosa devi preparare prima di sederti al tavolo; (4) l'elemento della vista che ti ha fatto rispondere. «Non lo so» e' una risposta lecita, e vale un rilievo sul master.

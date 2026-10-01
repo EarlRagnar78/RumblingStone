@@ -3018,6 +3018,35 @@
       "deterministic": true
     },
     {
+      "name": "vista_di_chi_scorre",
+      "description": "«Un DM che sfoglia questo master capisce cosa succede stasera e chi si oppone?»\n\nIl primo passo del DM a freddo (L5, D2 del 2026-10-01): il master come lo vede chi lo sfoglia, cioè la serata dichiarata, i titoli, la riga «In scena» e la prima frase di ogni scena, i grassetti, le CD con le parole prima. Il resto è tolto di proposito. Adattato da first-reader/skim.py (Apache 2.0, ADR-0076).",
+      "use_case": "«Un DM che sfoglia questo master capisce cosa succede stasera e chi si oppone?»",
+      "invocation": "python3 scripts/vista_di_chi_scorre.py <master> [--json]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "master": {
+            "type": "string",
+            "description": "Il master da sfogliare."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "La vista come dati."
+          }
+        },
+        "required": [
+          "master"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "2": "master non trovato"
+      },
+      "deterministic": true
+    },
+    {
       "name": "import_html_module",
       "description": "«Questo modulo scritto a mano in HTML come entra nelle catene del repo, senza riscriverlo?»\n\nTravasa un modulo scritto a mano in HTML (10-stand-alone/*/) nel master markdown che ADR-0003 vuole: le classi del vocabolario diventano blockquote (read-aloud), cornici {{note}} e chiavi d'area, e le tavole SVG in linea escono in file separati e autonomi (i <defs> condivisi vengono copiati dentro ogni tavola, e le maiuscole degli attributi SVG ripristinate — XML e' case-sensitive, html.parser no). E' un'operazione UNA VOLTA SOLA: se i master esistono gia' si ferma, perche' da quel momento il markdown e' il master e rilanciare butterebbe via le correzioni. Davanti a un tag che non conosce lascia passare il contenuto e lo dichiara.",
       "use_case": "«Questo modulo scritto a mano in HTML come entra nelle catene del repo, senza riscriverlo?»",

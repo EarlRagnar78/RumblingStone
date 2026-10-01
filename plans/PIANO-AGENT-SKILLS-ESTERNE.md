@@ -229,19 +229,27 @@ stesso formato del ricordo: una PR sola.
 - [x] PIANO-LETTORE: D26 rimanda a questo lotto; `playtest` §2-bis dice quando
       si rifà una lettura; una norma **maggiore** nel registro, 🟡
 
-### L5 · Il DM a freddo, la quarta rubrica — ⬜ · si parte dalla vista di chi scorre (D2)
+### L5 · Il DM a freddo, la quarta rubrica — 🟡 primo passo provato (2026-10-01) · si parte dalla vista di chi scorre (D2)
 
 `[engine: Opus, sessione principale · effort: alto · qualità: una corsa su DEF-5 con L1 e L2, e il DM che riconosce la sua preparazione]` — **G**
 
-- [ ] `rumblingstone-playtest/references/dm-a-freddo.md`: il DM che conduce
-      stasera. Prima la vista di chi scorre (da `skim.py`: titoli, grassetti,
-      prima riga di ogni scena, il riquadro): *so cosa succede stasera?*. Poi la
-      lettura a scene (L1) con un tempo di preparazione dichiarato. Poi il
-      ricordo del giorno dopo (L2) con le domande di chi conduce: *chi entra per
-      primo*, *cosa dico se chiedono X*, *dove ho dovuto tornare indietro*
-- [ ] `rumblingstone-playtest` §2-bis: la terza riga della tabella dei ruoli;
-      `module-standard` ciclo, passo 6
-- [ ] riga nel registro delle norme
+- [x] `scripts/vista_di_chi_scorre.py`, adattato da `skim.py`: la serata
+      dichiarata, i titoli, la riga «In scena» e la prima frase di ogni scena,
+      i grassetti, le CD con le quattro parole prima. Sette test, voce nel
+      manifest
+- [x] `rumblingstone-playtest/references/dm-a-freddo.md`: tre passi (la vista,
+      la preparazione a scene con un tempo dichiarato, il giorno dopo con le
+      domande di chi conduce) e quattro codici `D-*`. Marcata **in prova**
+- [x] **la prova del primo passo** (`esperimenti/dm-a-freddo/`): cinque agenti
+      nuovi, uno per DEF, con la sola vista. La serata 5 su 5; chi si oppone
+      **1 su 5**, ed è DEF-4, l'unico col riquadro. In DEF-2 e 3 un avversario
+      non c'è e l'agente lo dice bene; in DEF-1 (cosa vuole Terros) e DEF-5 (gli
+      orchi senza capo) sono rilievi veri. Tre agenti su cinque non sapevano a
+      cosa servissero le CD: era la vista, corretta dopo la prova
+- [x] `playtest` §2-bis: la terza riga dei ruoli, «in prova»; `module-standard`
+      passo 6 lo nomina come non obbligatorio; una riga nel registro (🟡)
+- [ ] il secondo e il terzo passo su un master, e il DM che dice se la
+      preparazione che ne esce somiglia alla sua. Dopo D9
 
 ### L6 · Le descrizioni delle skill entro i 1024 caratteri — ✅ (2026-10-01)
 
@@ -317,6 +325,7 @@ storia nel sorgente. Fonte, commit, licenza e URL dei file stanno nel registro.
 | ~~D6~~ | L8, L9 | ✅ **Decisa il 2026-10-01**: partono tutti e due. L8: misure sulle frasi vere del DM e un rilevatore; L9: si prova, poi si applica, *«altrimenti non servono a niente»*. Era: **Partono, o restano proposte?** |
 | ~~D7~~ | L10 | ✅ **Decisa il 2026-10-01**: resta fuori per ora, ma citato e messo in un registro di adozioni in attesa con gli URL e una condizione che, quando si accende, fa partire l'adozione (`plans/adozioni-in-attesa.json`, ADR-0076). Era: **`commit-archaeologist` resta fuori?** |
 | D8 | L1 | **Il lettore a freddo legge intero o a scene?** Calibrato il 2026-10-01 sul DEF-4 del tavolo: intero 69 rilievi e 7 `L-ORDINE`, a scene 55 e 7, tre in comune; il diario della lettura a scene però porta il ricordo (8 domande del quiz su 14 contro 6 degli appunti, e la missione che gli appunti perdevano sempre). Proposta: **il lettore legge intero** (trova di più); **il playtester e il DM a freddo leggono a scene**, e il loro diario fa il passo 7. Così ogni master ha tutte e due le letture, senza costi in più |
+| D9 | L5 | **Il DM a freddo entra nel ciclo del master?** Il primo passo, provato sui cinque DEF, ha trovato due rilievi veri (cosa vuole Terros in DEF-1, chi guida gli orchi in DEF-5) che lettore e playtester non avevano in rosso, e costa cinque minuti di agente per master. Il secondo e il terzo passo non sono provati. Proposta: **il primo passo diventa obbligatorio al passo 6** da subito, perché costa poco e trova cose diverse; il secondo e il terzo restano in prova finché una corsa intera non c'è, e tu dici se la preparazione che ne esce è la tua |
 
 ## 6 · Validazione
 

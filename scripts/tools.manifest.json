@@ -7650,6 +7650,72 @@
       ]
     },
     {
+      "id": "vista_di_chi_scorre",
+      "path": "scripts/vista_di_chi_scorre.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/vista_di_chi_scorre.py <master> [--json]",
+      "summary": "Il primo passo del DM a freddo (L5, D2 del 2026-10-01): il master come lo vede chi lo sfoglia, cioè la serata dichiarata, i titoli, la riga «In scena» e la prima frase di ogni scena, i grassetti, le CD con le parole prima. Il resto è tolto di proposito. Adattato da first-reader/skim.py (Apache 2.0, ADR-0076).",
+      "use_case": "«Un DM che sfoglia questo master capisce cosa succede stasera e chi si oppone?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "master",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il master da sfogliare."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La vista come dati."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "07_il Portale Della Forgia Eterna/ARC07-DEF-*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "2": "master non trovato"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "La vista è deterministica; le risposte le scrive un agente."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/vista_di_chi_scorre.py --help",
+      "tests": [
+        "scripts/tests/test_vista_di_chi_scorre.py"
+      ],
+      "docs": [
+        "skills/rumblingstone-playtest/references/dm-a-freddo.md"
+      ]
+    },
+    {
       "id": "registro_letture",
       "path": "scripts/registro_letture.py",
       "category": "G-orchestration-governance",

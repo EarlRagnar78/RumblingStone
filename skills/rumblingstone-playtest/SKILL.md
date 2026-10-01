@@ -89,6 +89,7 @@ fissa. Leggi le rubriche, non questo riassunto:
 |---|---|---|
 | **lettore** | *capisco cosa c'è, senza inventare?* (leggibilità) | [`references/lettore-a-freddo.md`](references/lettore-a-freddo.md) |
 | **playtester** | *quando i giocatori fanno quello che vogliono, il modulo risponde?* (giocabilità) | [`references/playtester-a-freddo.md`](references/playtester-a-freddo.md) |
+| **DM a freddo** *(in prova, D9)* | *un DM che non l'ha scritto lo conduce stasera, con il tempo che ha?* (preparazione) | [`references/dm-a-freddo.md`](references/dm-a-freddo.md) |
 
 - **Come**: il modulo si può leggere **una scena alla volta**, servito da
   `scripts/lettura_a_scene.py`, con un diario per scena. Il diario è quello su

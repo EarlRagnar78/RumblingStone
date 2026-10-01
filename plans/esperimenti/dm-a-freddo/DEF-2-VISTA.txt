@@ -1,0 +1,85 @@
+VISTA DI CHI SCORRE — il testo intero non c'è, di proposito
+07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md · 9913 parole · circa 50 minuti per leggerlo tutto
+------------------------------------------------------------
+LA SERATA (primo paragrafo di «§0 — QUICKSTART DM»):
+  **Dove siete.** Attraversato a ritroso il portale della Terra, i tre Custodi (Thorik, Tordek, Artemis) rientrano nella **Sala della Forgia Eterna** — l'hub divino dell'arco: un ottagono di basalto e oro, l'Altare del **Cuore di Moradin** al centro, **otto affreschi** viventi alle pareti, il corpo di Hella vegliato da Therysol. La Corona porta ora **due gemme** (Topazio + Smeraldo).
+
+TITOLI:
+  ARC-07 · DEFINITIVO #2 — IL RITORNO E GLI AFFRESCHI (La Cronaca Vivente)
+    Il Portale della Forgia Eterna — la Sala, gli Otto Affreschi, la Stanza della Corona
+    INDICE DEL MODULO
+    §0 — QUICKSTART DM
+    §0-bis — QUICK-REFERENCE DM (una pagina)
+      CD delle interazioni (tutte opzionali — nessuna obbligatoria)
+      Countdown di Hammerfist (A7) — l'orologio che non si ferma
+      La Cronaca, in tre righe
+      🐾 Supporto Pathfinder 1e (dove il 3.5 è vago) — opzionale, dichiarato
+    §1 — HIGHLIGHT ASIMMETRICI PER PG
+      🛡️ THORIK — l'unto che ancora non porta la corona (Casa di Davide lead)
+      ⚒️ TORDEK — il testimone (Mercer support)
+      🔮 ARTEMIS — il predone davanti alla porta del Tempo (Andor support)
+      🌙 HELLA — la promessa dipinta (solo manifestazione, mai dialogo)
+    §2 — LE DUE ZONE (Atlante)
+      SCENA 1 — Il ritorno nella Sala
+      ZONA A — La Sala della Forgia Eterna (l'ottagono divino)
+      ZONA B — La Stanza della Corona (il luogo della morte)
+    §3 — «LA FORGIA RICORDA»: il sistema definitivo della Cronaca Vivente
+    §4 — GLI OTTO AFFRESCHI (stato dopo la Terra, interazione, cosa incidono)
+      SCENA 2 — Gli otto affreschi
+      A1 — «L'Alba del Mondo» (NORD · statico)
+      A2 — «I Quattro Eroi Predestinati» (NORD-OVEST · progressivo → 80%)
+      A3 — «La Visione del Risveglio» (NORD-EST · personale Thorik)
+      A4 — «Il Portale del Fuoco» (OVEST · portale CHIUSO)
+      A5 — «Il Portale della Terra» (EST · portale che si CHIUDE ORA) → «La Forza Sostenuta»
+      A6 — «Il Viaggio Attraverso il Tempo» (SUD-OVEST · temporale → 80%)
+      A7 — «La Battaglia di Hammerfist» (SUD-EST · LIVE)
+      A8 — «Il Ritorno Trionfale» (SUD · vuoto → 60%)
+    §5 — LA VISIONE CONDIVISA (rito corale dei Quattro Eroi — A2)
+      SCENA 3 — La Visione Condivisa
+    §6 — LA STANZA DELLA CORONA (le incisioni-specchio)
+      SCENA 4 — La Stanza della Corona
+    §7 — LE BENEDIZIONI DI MORADIN (rinnovo all'Altare)
+    §7-bis — «LE QUATTRO ORE RUBATE»: cosa si sogna dormendo nella Forgia `[CANONE — DM 2026-07-31]`
+      SCENA 5 — Le quattro ore rubate
+      Prima la regola, perché è la domanda che nasce sempre
+      Quando si attiva
+      🛡️ THORIK — le mani fredde sotto la trave
+      ⚒️ TORDEK — lo zaino
+      🔮 ARTEMIS — la porta, dopo che hai già visto il negozio
+      🌙 HELLA — dall'altra parte `[handout per la sua giocatrice]`
+      Al risveglio
+    §8 — CONTINGENZE & FALLIMENTO («Se i PG fanno X…»)
+    §9 — ECHO LEDGER (conseguenze a lungo termine)
+    §10 — AVANZAMENTO (budget PX per scena + tesoro/benedizioni pregenerate)
+      A. Budget PX del beat (party 3 PG, APL eff. 12 · PG di 13°)
+      B. Tesoro pregenerato & benedizioni
+    §11 — PONTE verso la resurrezione di Hella + HANDOUT & ASSET
+      Handout giocatore
+      Immagini (atlante C1 — momenti d'uso)
+      Musica
+      FILE-FONTE ASSORBITI DA QUESTO MASTER (→ `_ARCHIVIO/` a consolidamento chiuso)
+    APPENDICE — MAPPE (scala 1,5 m/quadretto)
+      MAPPA S-1 — LA SALA DELLA FORGIA ETERNA (ottagono, 8 affreschi)
+      MAPPA S-2 — LA STANZA DELLA CORONA DI ADAMANTIO (santuario in purificazione)
+
+LE SCENE, la prima frase:
+  SCENA 1 — Il ritorno nella Sala
+      In scena — Dove: la Sala — Chi: Therysol
+      **Comparse**
+  SCENA 2 — Gli otto affreschi
+      In scena — Dove: gli affreschi — Chi: Moradin · Aegis Fang · Hella
+      **Comparse**
+  SCENA 3 — La Visione Condivisa
+      In scena — Dove: l'affresco A2 — Chi: nessuno
+      **Procedura.** Thorik tocca A2 con la Corona; **tutti e 3 TS Volontà CD 18**; con **≥2 successi** la visione si apre per tutti.
+  SCENA 4 — La Stanza della Corona
+      In scena — Dove: la Stanza della Corona — Chi: nessuno
+      **Stato (dopo la Terra).** Il santuario si sta purificando (Zona B, §2).
+  SCENA 5 — Le quattro ore rubate
+      In scena — Dove: la Sala — Chi: nessuno
+      **Dormire nella Sala sono otto ore vere**, e valgono **come ovunque**: incantesimi preparati di nuovo, capacità al giorno ricaricate, affaticamento tolto, e la guarigione naturale dell'SRD (1 pf per livello, 1 punto per ogni caratteristica danneggiata).
+
+GRASSETTI (15 su 350): Sostituisce e fonde · «La Forgia Ricorda» · casa definitiva · Sistema: D&D 3.5 SRD · CD · 1,5 m/quadretto · Il capitolo della Sala e della sua memoria. · Stato al tavolo · GIOCATO · gruppo nuovo · Quando si gioca · al ritorno dal Piano della Terra · prima · Com'è il mondo a quel punto · ). Countdown Hammerfist all'arrivo:
+CD: 18, 15, 20, 20, 17, 18, 22, 18, 12, 22, 35, 22
+------------------------------------------------------------
+DOMANDA: Da questa vista soltanto: (1) cosa succede stasera, in tre frasi; (2) chi si oppone ai PG e cosa vuole; (3) cosa devi preparare prima di sederti al tavolo; (4) l'elemento della vista che ti ha fatto rispondere. «Non lo so» e' una risposta lecita, e vale un rilievo sul master.

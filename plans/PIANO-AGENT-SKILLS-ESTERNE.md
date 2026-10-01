@@ -422,8 +422,8 @@ dall'instradamento all'**uscita**: cosa scrive un agente con la skill e senza.
 | ~~D10~~ | L8 | ✅ **Decisa il 2026-10-01**: non si confermano a mano: si verificano con test di correttezza e coerenza, e si confrontano con le pratiche di agentskills.io, `skill-creator` di Anthropic e `run_trigger_evals.py` di awesome-llm-apps (L8-bis). Era: **Gli insiemi attesi delle trenta frasi sono giusti? |
 | ~~D11~~ | L8-bis | ✅ **Decisa il 2026-10-01**: sì. Confine aggiunto e cinque frasi nuove di verifica: le obbligatorie caricate dagli agenti salgono a 45 su 50, le nuove 3 su 3. Il confine non ha avuto effetto sulla frase del Drappo, che il Drappo non lo nomina: corretta l'etichetta. Era: **Il Drappo fuori dalla campagna, nella descrizione di `campaign`?** |
 | ~~D12~~ | L5 | ✅ **Decisa il 2026-10-01**: la preparazione dell'agente non basta. Il DM elenca la sua: risolvere i problemi oltre a vederli, lo stato del gruppo e del mondo, cosa si muove senza i PG, lo stile e le immagini già fatte, le immagini e gli handout mancanti, il flusso, le domande dei PG, i congegni descritti col read-aloud senza anticipare, le interazioni con artefatti e mondo, e il confine fra ciò che sanno i PG e ciò che sa il master. Diventano le undici voci `P-*` di `dm-a-freddo.md`. Era: **La preparazione di `corsa-def5/PREPARAZIONE.md` somiglia alla tua?** |
-| D13 | L11 | **«Sembra» e «pare» nei box: norma nuova?** Shawn Merwin (D&D Beyond) li sconsiglia nel boxed text: il narratore che esita toglie al tavolo la certezza su ciò che vede. Misurato: 34 box su 501 ne hanno uno. *Proposta*: entra come norma **minore**, con il suo rilevatore già scritto in `voto_scrittura.py` (oggi un indizio che non pesa) e un lotto che corregge i 34. «Come se» resta fuori: è un paragone |
-| D14 | L11 | **P1 contro la reticenza sull'emozione.** `read-aloud-adulti.md` insegna *«Ti accorgi che hai smesso di camminare»* al posto di *«Provi una tristezza profonda»*. P1, in vigore, vieta proprio di decidere cosa il PG fa o sente. *Proposta*: vince P1, che è registrata e applicata a 477 box; il comportamento passa a qualcun altro o al mondo (*«Durin si ferma. Si toglie l'elmo, e non dice niente.»*). La norma P1 si scrive in `read-aloud-adulti.md` §1, dove il registro dice già che sta |
+| ~~D13~~ | L11 | ✅ **Decisa il 2026-10-01**: sì. «Sembra» e «pare» nei box diventano una norma **minore**, con il rilevatore di `voto_scrittura.py` che passa da indizio a controllo e un lotto che corregge i 34 box; «come se» resta fuori. Era: **«Sembra» e «pare» nei box: norma nuova?** |
+| ~~D14~~ | L11 | ✅ **Decisa il 2026-10-01**: vince P1. Il gesto passa a un PNG o al mondo; P1 si scrive in `read-aloud-adulti.md` §1 e i tre esempi ✅ si correggono. Era: **P1 contro la reticenza sull'emozione** |
 
 ### L'eco del 2026-10-01
 
@@ -462,6 +462,14 @@ Quarta eco dello stesso giorno, per D12: la risposta del DM su
 - **Aperte**: una corsa su DEF-5 con le undici voci, che fa uscire dalla prova i passi 2 e 3
 - **Cambiate**: il passo 2, da «leggi a scene e annota dove inventeresti» a «prepara la serata»; i passi restano in prova, ma per un motivo diverso
 - **Dedotto da me**: che in una corsa d'agente «generare le immagini mancanti» valga come **elencarle** quando la corsa non può generarle, e che gli handout invece si scrivano; che «risolvere tutti questi problemi» chieda una risposta da dare al tavolo per ogni rilievo, non una correzione del master, che resta un lavoro a parte con le sue letture; che il confine PG/master sia una regola trasversale e non una dodicesima voce
+
+Quinta eco dello stesso giorno, per D13 e D14, arrivate a tornata A ferma.
+
+<!-- eco: AGENT-SKILLS 2026-10-01 -->
+- **Decise**: D13 «sembra» e «pare» nei box sono una norma minore, con rilevatore e correzione dei 34 box · D14 vince P1, il gesto passa a un PNG o al mondo
+- **Aperte**: nessuna delle due; restano la tornata A e la corsa DEF-5 con le undici voci di D12
+- **Cambiate**: nessuna, tutte e due come proposte. D14 è stata chiarita con una domanda, perché il messaggio si fermava a «d14»
+- **Dedotto da me**: che le due decisioni si applichino **dopo** la tornata A, perché le corse di base devono girare sulle skill com'erano, altrimenti il prima e dopo non si legge; che il lotto dei 34 box segua la FASE 1 sui file d'arco e non tocchi gli archivi dichiarati
 
 ## 6 · Validazione
 

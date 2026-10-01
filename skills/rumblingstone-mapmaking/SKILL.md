@@ -1,21 +1,19 @@
 ---
 name: rumblingstone-mapmaking
 description: >
-  RumblingStone tactical map pipeline — create, edit, and render the campaign's
-  battle maps at professional AP quality (Red Hand of Doom / Paizo benchmark).
-  Use for "mappa", "battle map", "griglia tattica", "battlemap", "render SVG",
-  "nuova mappa", "import watabou", "hero map", "mappa regionale", "mappa città",
-  "mappa esercito", "assedio", "accampamento", "coordinate", "JSON mappa",
-  "contratto JSON", "compile_map_json", "export UVTT", "uvtt", "dd2vtt",
-  "Foundry", "Roll20", "muri e luci", "mappa cinematografica", "handout",
-  "audit mappe", "atlante mappe", "mappe definitive", "parity pass mappe",
-  "consolidamento mappe", "MAPPE-DEFINITIVO", "posizionamenti canonici",
-  or whenever creating/editing files matching *MAPPE*, *Ultra-Clear*, or
-  running scripts/render_map_svg.py, scripts/import_watabou.py,
-  scripts/compile_map_json.py, scripts/export_uvtt.py, scripts/validate_maps.py.
-  Covers the 3 map modes, the emoji-grid master format, the rigid JSON contract,
-  the universal legend, the parchment renderer, VTT export, and the optional
-  local ComfyUI "hero map" pass.
+  RumblingStone tactical map pipeline: create, edit, and render battle maps at
+  AP quality (Red Hand of Doom / Paizo benchmark). Use for "mappa", "battle
+  map", "griglia tattica", "battlemap", "render SVG", "nuova mappa", "import
+  watabou", "hero map", "mappa regionale", "mappa città", "mappa esercito",
+  "assedio", "accampamento", "coordinate", "JSON mappa", "contratto JSON",
+  "compile_map_json", "export UVTT", "uvtt", "dd2vtt", "Foundry", "Roll20",
+  "muri e luci", "mappa cinematografica", "handout", "audit mappe", "atlante
+  mappe", "mappe definitive", "parity pass mappe", "consolidamento mappe",
+  "MAPPE-DEFINITIVO", "posizionamenti canonici", files *MAPPE* or
+  *Ultra-Clear*, and render_map_svg, import_watabou, compile_map_json,
+  export_uvtt, validate_maps. Covers the 3 map modes, the emoji-grid master,
+  the JSON contract, the legend, the parchment renderer, VTT export and the
+  optional ComfyUI hero map.
 ---
 
 # RumblingStone — Mapmaking Pipeline

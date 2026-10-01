@@ -1,21 +1,19 @@
 ---
 name: rumblingstone-edizione
 description: >
-  Il mestiere dell'editore applicato a RumblingStone: chi risponde di **cosa esce
-  dal repo**. Il colophon (crediti, licenza, versione, data), le dichiarazioni
-  Product Identity / Open Content, il **gate d'uscita** — la checklist IP che va
-  passata *prima* di consegnare, non dopo — e l'edizione come oggetto: versione,
-  ristampa, errata. Use WHENEVER si sta per far uscire qualcosa dal repo o si
-  parla di crediti, licenza o versione: "posso pubblicare", "posso condividere",
-  "mando ai giocatori", "lo metto su GitHub", "consegno l'handout", "colophon",
-  "crediti", "licenza", "OGL", "Product Identity", "Open Content", "diritti",
-  "IP", "versione del volume", "ristampa", "errata", "che edizione è", "questo
-  PDF è vecchio", "si può vendere", "posso monetizzare". ⚠️ Trigger ANCHE quando
-  la licenza riguarda uno **strumento o un materiale che si vorrebbe adottare**,
-  non solo ciò che esce: "è open source?", "che licenza ha", "MIT", "GPL",
-  "Creative Commons", "posso usare questo tool", "posso includere questo
-  font/asset/modello", "i pesi di questo modello sono liberi?" — valutare se una
-  cosa può ENTRARE è lo stesso mestiere di valutare se può uscire.
+  Il mestiere dell'editore in RumblingStone: chi risponde di **cosa esce dal
+  repo**. Colophon (crediti, licenza, versione, data), Product Identity / Open
+  Content, il **gate d'uscita** (la checklist IP da passare *prima* di
+  consegnare), versione, ristampa, errata. Use WHENEVER qualcosa esce dal repo
+  o si parla di crediti, licenza o versione: "posso pubblicare", "posso
+  condividere", "mando ai giocatori", "lo metto su GitHub", "consegno
+  l'handout", "colophon", "crediti", "licenza", "OGL", "Product Identity",
+  "Open Content", "diritti", "IP", "versione del volume", "ristampa", "errata",
+  "che edizione è", "questo PDF è vecchio", "si può vendere", "posso
+  monetizzare". ⚠️ ANCHE per la licenza di ciò che si vorrebbe **adottare**:
+  "è open source?", "che licenza ha", "MIT", "GPL", "Creative Commons", "posso
+  usare questo tool", "posso includere questo font/asset/modello", "i pesi di
+  questo modello sono liberi?". Far entrare e far uscire è lo stesso mestiere.
 ---
 
 # RumblingStone — Edizione

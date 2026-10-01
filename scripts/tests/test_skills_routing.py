@@ -65,5 +65,29 @@ class TestInstradamentoSkill(unittest.TestCase):
             self.assertNotEqual(validate_skills.check_agents_routing(finto), [])
 
 
+class TestTettoDescrizione(unittest.TestCase):
+    """L6 di PIANO-AGENT-SKILLS-ESTERNE: la descrizione entro 1024 caratteri."""
+
+    def _repo(self, tmp: str, lunghezza: int) -> Path:
+        finto = Path(tmp) / "repo"
+        (finto / "skills" / "zz-lunga").mkdir(parents=True)
+        (finto / "skills" / "zz-lunga" / "SKILL.md").write_text(
+            f"---\nname: zz-lunga\ndescription: {'a' * lunghezza}\n---\n",
+            encoding="utf-8")
+        return finto
+
+    def test_il_repo_reale_sta_sotto_il_tetto(self):
+        errori, _ = validate_skills.check_skills(ROOT)
+        self.assertEqual([e for e in errori if "1024" in e], [])
+
+    def test_oltre_il_tetto_morde_e_al_tetto_no(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            errori, _ = validate_skills.check_skills(self._repo(tmp, 1025))
+            self.assertTrue(any("1025 caratteri" in e for e in errori), errori)
+        with tempfile.TemporaryDirectory() as tmp:
+            errori, _ = validate_skills.check_skills(self._repo(tmp, 1024))
+            self.assertEqual(errori, [])
+
+
 if __name__ == "__main__":
     unittest.main()

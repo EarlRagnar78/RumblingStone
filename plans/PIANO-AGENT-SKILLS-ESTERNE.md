@@ -6,7 +6,7 @@
 > lotti per adottare il poco che serve. Letto al commit upstream
 > `4bf51ab` (2026-09-28).
 >
-> **Stato**: ⬜ proposta, nessun lotto partito · **Decisore**: DM, che sceglie
+> **Stato**: 🟡 L6 ✅ (2026-10-01); gli altri lotti aspettano D1-D7 · **Decisore**: DM, che sceglie
 > quali lotti partono (D1…D7 qui sotto) · **Regola**:
 > [ADR-0010](adr/ADR-0010-vendoring-skill-terzi.md), cherry-pick e mai
 > collezioni; l'ADR di adozione (ADR-0076) nasce con il primo lotto che porta
@@ -230,14 +230,20 @@ popolato, poi blocca (D4).
       `module-standard` ciclo, passo 6
 - [ ] riga nel registro delle norme
 
-### L6 · Le descrizioni delle skill entro i 1024 caratteri — ⬜
+### L6 · Le descrizioni delle skill entro i 1024 caratteri — ✅ (2026-10-01)
 
 `[engine: Sonnet · effort: basso · qualità: validate_skills verde con il controllo nuovo, e un test che lo fa mordere]` — **M**
 
-- [ ] `validate_skills.py`: descrizione ≤ 1024 caratteri, errore
-- [ ] accorciare `indagine` (1.195), `edizione` (1.147), `mapmaking` (1.068)
-      senza perdere i trigger che ORCHESTRAZIONE usa
-- [ ] riga nel registro delle norme
+- [x] `validate_skills.py`: descrizione ≤ 1024 caratteri, errore; due test in
+      `test_skills_routing.py` (il repo sta sotto, e 1025 morde mentre 1024 no).
+      Provato sul difetto vero: con le descrizioni di prima, 3 errori
+- [x] accorciate `indagine` (1.195 → 989), `edizione` (1.147 → 959),
+      `mapmaking` (1.068 → 904), con un controllo a macchina che **nessun
+      trigger fra virgolette** è andato perso; `indagine` ne aveva due ripetuti
+      («cospirazione», «sparizione»)
+- [x] ~~riga nel registro delle norme~~: non serve. Il registro tiene le norme
+      **editoriali**; le regole sulla forma delle skill (ADR-0041, ADR-0058)
+      vivono nel gate `validate_skills.py`, e questa sta con loro
 
 Cosa fa ciascun agente con una descrizione oltre il limite (la tronca, la
 scarta, la tiene) **non l'ho verificato**: il limite è della specifica, e i

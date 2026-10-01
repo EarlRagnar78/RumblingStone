@@ -1,0 +1,44 @@
+{
+  "master": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+  "impronta_master": "45f666c4d88bfff96adcd1ea708fdfa5015a80cbcf108adb9b4e0eb56589eecb",
+  "persona": "dm",
+  "finito": true,
+  "smesso_a": null,
+  "passaggi": [
+    {
+      "titolo": "premessa",
+      "impronta": "1f5598ed9286c34f2b35fed6837aa2966ffdededb75b467aad794b512a944b3c",
+      "parole": 2064
+    },
+    {
+      "titolo": "SCENA 1 — Lo strappo fra le ere",
+      "impronta": "95ac925112fadf14a5f0607a313fdeed6b5d1703f214bfc7023a6d7b28d6b191",
+      "parole": 213
+    },
+    {
+      "titolo": "fra le scene",
+      "impronta": "ea4b0bfc0aba45efa2d54b7721ee53260867b78ce61e1c02f2d1c06d11517a6a",
+      "parole": 41
+    },
+    {
+      "titolo": "SCENA 2 — L'apparizione",
+      "impronta": "a1b1bc0e7793a064f0f8e30f8b86c08a1dc2ac92b24be40b37e2d8e10e60604d",
+      "parole": 1432
+    },
+    {
+      "titolo": "fra le scene",
+      "impronta": "d8c04ec863e8ac0825a01b7e029ae833178be686da65259146761aee3e908cd1",
+      "parole": 13
+    },
+    {
+      "titolo": "SCENA 3 — La pulizia e il passaggio",
+      "impronta": "80240abc7bbf65e14ff6e93c885f360742f26f6cbc8b60d48a6179c6910608e1",
+      "parole": 675
+    },
+    {
+      "titolo": "coda",
+      "impronta": "5dc0f531a95aaca14b2efce5c62e662338911adfcdf357680e50107098b9b6a6",
+      "parole": 2136
+    }
+  ]
+}

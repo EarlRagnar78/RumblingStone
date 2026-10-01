@@ -16,8 +16,9 @@ il giorno dopo. Qui le tre letture sono le tre fasi della preparazione di un
 DM (D2 di PIANO-AGENT-SKILLS-ESTERNE).
 
 ⚠️ **Stato: in prova.** Il primo passo è stato provato sui cinque DEF di ARC-07
-il 2026-10-01 (`plans/esperimenti/dm-a-freddo/`); il secondo e il terzo usano
-gli strumenti di L1 e L2 e non hanno ancora una corsa completa. Finché il DM non
+il 2026-10-01 (`plans/esperimenti/dm-a-freddo/`); il secondo e il terzo hanno
+una corsa intera su DEF-5 (`corsa-def5/`): 13 rilievi, 2 nuovi rispetto a
+lettore e playtester, e un peso diverso su quelli già noti. Finché il DM non
 decide (D9 di PIANO-AGENT-SKILLS-ESTERNE), il DM a freddo **non** è un passo
 obbligatorio del ciclo del master.
 
@@ -56,7 +57,10 @@ lettura a scene»), con il messaggio d'invio del lettore e due differenze:
 - dichiara in testa il **tempo di preparazione** che ha: un'ora è il caso
   normale. Se finisce il tempo, smette, e il punto in cui smette è un rilievo;
 - nel campo `so adesso` scrive **cosa ha preparato**, non cosa sanno i PG: un
-  appunto, una pagina segnata, un incontro da tenere aperto.
+  appunto, una pagina segnata, un incontro da tenere aperto, e **chi parla per
+  primo, con la prima battuta**. La corsa su DEF-5 senza quest'ultima riga ha
+  lasciato il giorno dopo a «non è rimasto niente» su chi entra in scena,
+  anche se il master le schede d'entrata le aveva.
 
 ## Terzo passo · il giorno dopo, al tavolo
 

@@ -248,8 +248,15 @@ stesso formato del ricordo: una PR sola.
       cosa servissero le CD: era la vista, corretta dopo la prova
 - [x] `playtest` §2-bis: la terza riga dei ruoli, «in prova»; `module-standard`
       passo 6 lo nomina come non obbligatorio; una riga nel registro (🟡)
-- [ ] il secondo e il terzo passo su un master, e il DM che dice se la
-      preparazione che ne esce somiglia alla sua. Dopo D9
+- [x] **la corsa intera su DEF-5** (`esperimenti/dm-a-freddo/corsa-def5/`):
+      preparazione a scene con un'ora dichiarata, 13 rilievi (🔴 2), circa 40
+      minuti «bastati in parte». Sette verificati a mano: sei veri, uno falso
+      (Re Thorek si rialza solo se curato). Rispetto alle letture del 30
+      settembre i nuovi sono due (Cantitrici e PNG giocabili senza scheda);
+      cambia il peso, l'handout da 🟠 a 🔴. Il giorno dopo il diario non tiene
+      chi parla per primo: la rubrica ora lo chiede. I rilievi del 30 settembre
+      su handout e portale sono ancora aperti nel master
+- [ ] il DM che dice se la preparazione che ne esce somiglia alla sua (D9)
 
 ### L6 · Le descrizioni delle skill entro i 1024 caratteri — ✅ (2026-10-01)
 
@@ -350,7 +357,7 @@ storia nel sorgente. Fonte, commit, licenza e URL dei file stanno nel registro.
 | ~~D6~~ | L8, L9 | ✅ **Decisa il 2026-10-01**: partono tutti e due. L8: misure sulle frasi vere del DM e un rilevatore; L9: si prova, poi si applica, *«altrimenti non servono a niente»*. Era: **Partono, o restano proposte?** |
 | ~~D7~~ | L10 | ✅ **Decisa il 2026-10-01**: resta fuori per ora, ma citato e messo in un registro di adozioni in attesa con gli URL e una condizione che, quando si accende, fa partire l'adozione (`plans/adozioni-in-attesa.json`, ADR-0076). Era: **`commit-archaeologist` resta fuori?** |
 | D8 | L1 | **Il lettore a freddo legge intero o a scene?** Calibrato il 2026-10-01 sul DEF-4 del tavolo: intero 69 rilievi e 7 `L-ORDINE`, a scene 55 e 7, tre in comune; il diario della lettura a scene però porta il ricordo (8 domande del quiz su 14 contro 6 degli appunti, e la missione che gli appunti perdevano sempre). Proposta: **il lettore legge intero** (trova di più); **il playtester e il DM a freddo leggono a scene**, e il loro diario fa il passo 7. Così ogni master ha tutte e due le letture, senza costi in più |
-| D9 | L5 | **Il DM a freddo entra nel ciclo del master?** Il primo passo, provato sui cinque DEF, ha trovato due rilievi veri (cosa vuole Terros in DEF-1, chi guida gli orchi in DEF-5) che lettore e playtester non avevano in rosso, e costa cinque minuti di agente per master. Il secondo e il terzo passo non sono provati. Proposta: **il primo passo diventa obbligatorio al passo 6** da subito, perché costa poco e trova cose diverse; il secondo e il terzo restano in prova finché una corsa intera non c'è, e tu dici se la preparazione che ne esce è la tua |
+| D9 | L5 | **Il DM a freddo entra nel ciclo del master?** Il primo passo, provato sui cinque DEF, ha trovato due rilievi veri (cosa vuole Terros in DEF-1, chi guida gli orchi in DEF-5) che lettore e playtester non avevano in rosso, e costa cinque minuti di agente per master. Dopo la corsa intera su DEF-5 (2026-10-01) il secondo e il terzo passo hanno trovato due rilievi nuovi su tredici e un peso diverso sull'handout, a fronte di un'ora di agente. Proposta: **il primo passo diventa obbligatorio al passo 6** da subito, perché costa poco e trova cose diverse; il secondo e il terzo restano in prova finché tu non dici se la preparazione di `corsa-def5/PREPARAZIONE.md` somiglia alla tua |
 | D10 | L8 | **Gli insiemi attesi delle trenta frasi sono giusti?** Li ho scritti io leggendo ORCHESTRAZIONE: il gate misura contro quelli, e un insieme sbagliato rende il numero falso. In particolare: le frasi sul repo («documentazione completa… nel plan») vogliono `prosa-documenti` come L1; le frasi sul Drappo non vogliono `campaign`. Proposta: **li confermi o correggi in `casi.json`**, e da lì ogni frase nuova che il DM scrive nei piani può entrare come caso, così il campione cresce con l'uso |
 
 ### L'eco del 2026-10-01

@@ -7973,6 +7973,112 @@
         "plans/PIANO-AGENT-SKILLS-ESTERNE.md",
         "plans/PIANO-LETTORE-E-PLAYTESTER.md"
       ]
+    },
+    {
+      "id": "voto_scrittura",
+      "path": "scripts/voto_scrittura.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/voto_scrittura.py [FILE --caso SNN] [--corse] [--emit] [--check]",
+      "summary": "L11 (D11 del 2026-10-01): il voto deterministico sui testi scritti con e senza le skill di scrittura. Ogni controllo chiama un rilevatore che esiste (misura_craft, validate_prosa) e una norma registrata; i casi in plans/scrittura/casi.json seguono lo schema di evals.json di skill-creator, a metà fra taratura e verifica. «Sembra/pare» è un indizio stampato, non un voto, finché il DM non decide (D13).",
+      "use_case": "«Un agente che carica la skill di scrittura rispetta le norme registrate più di uno che non la carica?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "file",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Un testo da votare."
+        },
+        {
+          "name": "--caso",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "L'id del caso per il file (S01…)."
+        },
+        {
+          "name": "--corse",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La tabella delle corse."
+        },
+        {
+          "name": "--emit",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scrive plans/scrittura/voti.json."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se voti.json non corrisponde alle corse."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/scrittura/casi.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "plans/scrittura/corse/*/*.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "plans/scrittura/voti.json",
+          "kind": "json",
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "voti.json non allineato (--check)",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Dipende solo dai testi delle corse e dai rilevatori."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/voto_scrittura.py --check",
+      "tests": [
+        "scripts/tests/test_voto_scrittura.py"
+      ],
+      "docs": [
+        "plans/PIANO-AGENT-SKILLS-ESTERNE.md"
+      ]
     }
   ]
 }

@@ -256,7 +256,11 @@ stesso formato del ricordo: una PR sola.
       cambia il peso, l'handout da 🟠 a 🔴. Il giorno dopo il diario non tiene
       chi parla per primo: la rubrica ora lo chiede. I rilievi del 30 settembre
       su handout e portale sono ancora aperti nel master
-- [ ] il DM che dice se la preparazione che ne esce somiglia alla sua (D9)
+- [x] il DM che dice se la preparazione che ne esce somiglia alla sua (D9):
+      **no, la sua copre molto di più** (D12). La rubrica ha ora undici voci
+      `P-*` e la regola del confine fra ciò che sanno i PG e ciò che sa il master
+- [ ] una corsa su DEF-5 che esegue le undici voci; i passi 2 e 3 escono dalla
+      prova dopo quella
 
 ### L6 · Le descrizioni delle skill entro i 1024 caratteri — ✅ (2026-10-01)
 
@@ -365,6 +369,41 @@ Si apre da solo: `adozioni_in_attesa.py --check` esce 1 in CI quando almeno tre
 file di gioco cambiano dieci o più volte in sessanta giorni senza una riga di
 storia nel sorgente. Fonte, commit, licenza e URL dei file stanno nel registro.
 
+### L11 · Il giro sulle skill di scrittura — 🟡 in corso (2026-10-01) · D11
+
+`[engine: Opus, sessione principale + agenti di corsa · effort: alto · qualità: la verifica migliora dopo correzioni fatte sulla sola taratura]` — **G**
+
+Il DM: *«includi nel giro anche le skilsl che si occupano di scrivere con lo
+stile i costrains tipiche specificate nel repo […] Usa lo stesso metodo ricerca
+e affinamento usato per le altre skills»*. Il metodo di L8 e L8-bis, portato
+dall'instradamento all'**uscita**: cosa scrive un agente con la skill e senza.
+
+- [x] FASE 1 sulle skill di scrittura, e i `references/` letti per intero (G1):
+      i quattro obbligatori di `narrative-style`, `passate-redazionali`,
+      `pc-protagonism`, `prosa-documenti`, `sviluppo-degli-incontri`
+- [x] la ricerca editoriale (`RICERCA-STANDARD-PROSA-WOTC-PAIZO-2026-09` §6): il
+      formato degli incontri Paizo e i consigli sul boxed text di Shawn Merwin
+      (D&D Beyond), confrontati con le norme già registrate. Quasi tutto c'è
+      già; l'unica norma candidata nuova è «niente *sembra* e *pare* nei box»
+      (D13)
+- [x] **due difetti trovati leggendo, prima di ogni corsa**: P1 («il box non
+      presuppone un'azione o un senso del giocatore», 🟢 nel registro) non è
+      scritta in `read-aloud-adulti.md`, che il registro cita come fonte, e tre
+      esempi ✅ della skill la violano (*«Ti accorgi che hai smesso di
+      camminare»*); `validate_prosa.py` legge 32.765 delle 55.680 parole di
+      read-aloud (59%), perché riconosce solo i box nudi e solo la prima riga
+- [x] `scripts/voto_scrittura.py`: il voto riusa i rilevatori di `misura_craft`
+      e `validate_prosa`, nessuna regex nuova nel punteggio; i casi
+      (`plans/scrittura/casi.json`) nello schema di `skill-creator`, dieci, a
+      metà fra taratura e verifica, stratificati per genere
+- [ ] tornata A: tre corse con le skill e tre senza, sui dieci casi (una
+      completa; le altre cinque fermate dal limite di sessione dell'API)
+- [ ] le correzioni, solo sui fallimenti di taratura: P1 in
+      `read-aloud-adulti.md` e i tre esempi; la lettura completa dei box in
+      `validate_prosa.py`
+- [ ] tornata B con le skill corrette, e il confronto sulla verifica
+- [ ] `RISULTATI.md`, i test del voto, la voce nel manifest
+
 ## 5 · Decisioni aperte al DM
 
 <!-- decisioni-dm: AGENT-SKILLS -->
@@ -382,6 +421,9 @@ storia nel sorgente. Fonte, commit, licenza e URL dei file stanno nel registro.
 | ~~D9~~ | L5 | ✅ **Decisa il 2026-10-01**: proposta accettata: il primo passo obbligatorio al passo 6, il secondo e il terzo in prova finché il DM non giudica `corsa-def5/PREPARAZIONE.md`. Il registro delle letture chiede ora anche la lettura `dm`. Era: **Il DM a freddo entra nel ciclo del master? |
 | ~~D10~~ | L8 | ✅ **Decisa il 2026-10-01**: non si confermano a mano: si verificano con test di correttezza e coerenza, e si confrontano con le pratiche di agentskills.io, `skill-creator` di Anthropic e `run_trigger_evals.py` di awesome-llm-apps (L8-bis). Era: **Gli insiemi attesi delle trenta frasi sono giusti? |
 | ~~D11~~ | L8-bis | ✅ **Decisa il 2026-10-01**: sì. Confine aggiunto e cinque frasi nuove di verifica: le obbligatorie caricate dagli agenti salgono a 45 su 50, le nuove 3 su 3. Il confine non ha avuto effetto sulla frase del Drappo, che il Drappo non lo nomina: corretta l'etichetta. Era: **Il Drappo fuori dalla campagna, nella descrizione di `campaign`?** |
+| ~~D12~~ | L5 | ✅ **Decisa il 2026-10-01**: la preparazione dell'agente non basta. Il DM elenca la sua: risolvere i problemi oltre a vederli, lo stato del gruppo e del mondo, cosa si muove senza i PG, lo stile e le immagini già fatte, le immagini e gli handout mancanti, il flusso, le domande dei PG, i congegni descritti col read-aloud senza anticipare, le interazioni con artefatti e mondo, e il confine fra ciò che sanno i PG e ciò che sa il master. Diventano le undici voci `P-*` di `dm-a-freddo.md`. Era: **La preparazione di `corsa-def5/PREPARAZIONE.md` somiglia alla tua?** |
+| D13 | L11 | **«Sembra» e «pare» nei box: norma nuova?** Shawn Merwin (D&D Beyond) li sconsiglia nel boxed text: il narratore che esita toglie al tavolo la certezza su ciò che vede. Misurato: 34 box su 501 ne hanno uno. *Proposta*: entra come norma **minore**, con il suo rilevatore già scritto in `voto_scrittura.py` (oggi un indizio che non pesa) e un lotto che corregge i 34. «Come se» resta fuori: è un paragone |
+| D14 | L11 | **P1 contro la reticenza sull'emozione.** `read-aloud-adulti.md` insegna *«Ti accorgi che hai smesso di camminare»* al posto di *«Provi una tristezza profonda»*. P1, in vigore, vieta proprio di decidere cosa il PG fa o sente. *Proposta*: vince P1, che è registrata e applicata a 477 box; il comportamento passa a qualcun altro o al mondo (*«Durin si ferma. Si toglie l'elmo, e non dice niente.»*). La norma P1 si scrive in `read-aloud-adulti.md` §1, dove il registro dice già che sta |
 
 ### L'eco del 2026-10-01
 
@@ -411,6 +453,15 @@ richiesta nuova (il giro sulle skill di scrittura, L11).
 - **Aperte**: il giudizio del DM su `corsa-def5/PREPARAZIONE.md`, che ha chiesto di leggere per approvarla o modificarla
 - **Cambiate**: nessuna
 - **Dedotto da me**: che le «cinque frasi nuove» potessero venire dai suoi messaggi di oggi, trascritti nel repo, perché frasi scritte nei piani dopo oggi ancora non ce ne sono; che «includi nel giro anche le skill che scrivono con lo stile» chieda per quelle skill la prova sull'**uscita** (cosa scrive un agente con e senza la skill), e non solo l'instradamento
+
+Quarta eco dello stesso giorno, per D12: la risposta del DM su
+`PREPARAZIONE.md`, arrivata mentre L11 era a metà.
+
+<!-- eco: AGENT-SKILLS 2026-10-01 -->
+- **Decise**: D12, la preparazione del DM a freddo non è una lettura: sono undici lavori, più il confine fra ciò che sanno i PG e ciò che sa il master
+- **Aperte**: una corsa su DEF-5 con le undici voci, che fa uscire dalla prova i passi 2 e 3
+- **Cambiate**: il passo 2, da «leggi a scene e annota dove inventeresti» a «prepara la serata»; i passi restano in prova, ma per un motivo diverso
+- **Dedotto da me**: che in una corsa d'agente «generare le immagini mancanti» valga come **elencarle** quando la corsa non può generarle, e che gli handout invece si scrivano; che «risolvere tutti questi problemi» chieda una risposta da dare al tavolo per ogni rilievo, non una correzione del master, che resta un lavoro a parte con le sue letture; che il confine PG/master sia una regola trasversale e non una dodicesima voce
 
 ## 6 · Validazione
 

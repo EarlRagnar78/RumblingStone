@@ -3115,6 +3115,48 @@
       "deterministic": true
     },
     {
+      "name": "voto_scrittura",
+      "description": "«Un agente che carica la skill di scrittura rispetta le norme registrate più di uno che non la carica?»\n\nL11 (D11 del 2026-10-01): il voto deterministico sui testi scritti con e senza le skill di scrittura. Ogni controllo chiama un rilevatore che esiste (misura_craft, validate_prosa) e una norma registrata; i casi in plans/scrittura/casi.json seguono lo schema di evals.json di skill-creator, a metà fra taratura e verifica. «Sembra/pare» è un indizio stampato, non un voto, finché il DM non decide (D13).",
+      "use_case": "«Un agente che carica la skill di scrittura rispetta le norme registrate più di uno che non la carica?»",
+      "invocation": "python3 scripts/voto_scrittura.py [FILE --caso SNN] [--corse] [--emit] [--check]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "string",
+            "description": "Un testo da votare."
+          },
+          "caso": {
+            "type": "string",
+            "description": "L'id del caso per il file (S01…)."
+          },
+          "corse": {
+            "type": "boolean",
+            "description": "La tabella delle corse."
+          },
+          "emit": {
+            "type": "boolean",
+            "description": "Scrive plans/scrittura/voti.json."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Esce 1 se voti.json non corrisponde alle corse."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "plans/scrittura/voti.json"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "voti.json non allineato (--check)",
+        "2": "errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
       "name": "import_html_module",
       "description": "«Questo modulo scritto a mano in HTML come entra nelle catene del repo, senza riscriverlo?»\n\nTravasa un modulo scritto a mano in HTML (10-stand-alone/*/) nel master markdown che ADR-0003 vuole: le classi del vocabolario diventano blockquote (read-aloud), cornici {{note}} e chiavi d'area, e le tavole SVG in linea escono in file separati e autonomi (i <defs> condivisi vengono copiati dentro ogni tavola, e le maiuscole degli attributi SVG ripristinate — XML e' case-sensitive, html.parser no). E' un'operazione UNA VOLTA SOLA: se i master esistono gia' si ferma, perche' da quel momento il markdown e' il master e rilanciare butterebbe via le correzioni. Davanti a un tag che non conosce lascia passare il contenuto e lo dichiara.",
       "use_case": "«Questo modulo scritto a mano in HTML come entra nelle catene del repo, senza riscriverlo?»",

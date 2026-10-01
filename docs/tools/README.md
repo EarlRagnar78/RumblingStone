@@ -5,9 +5,9 @@
 
 > Vista umana del contratto machine-readable [`registry.json`](registry.json). Fonte di verita': `scripts/tools.manifest.json`.
 
-**90 tool** · convenzione exit code `0=ok · 1=errore-dominio · 2=errore-uso`.
+**91 tool** · convenzione exit code `0=ok · 1=errore-dominio · 2=errore-uso`.
 
-**Da un client MCP** ([`mcp-tools.json`](mcp-tools.json), [ADR-0030](../../plans/adr/ADR-0030-server-mcp-sui-tool.md)): `python3 scripts/mcp_server.py` — JSON-RPC su stdio, catalogo preso da questo stesso manifest. È **read-only per difetto**: i tool marcati «Canone» qui sotto sono elencati ma non partono senza `--allow-write`, perché il canone si scrive su un branch di gruppo con l'occhio del DM sopra (ADR-0007). Le voci esposte sono 85: le cartelle di `converters/` non sono programmi e non compaiono.
+**Da un client MCP** ([`mcp-tools.json`](mcp-tools.json), [ADR-0030](../../plans/adr/ADR-0030-server-mcp-sui-tool.md)): `python3 scripts/mcp_server.py` — JSON-RPC su stdio, catalogo preso da questo stesso manifest. È **read-only per difetto**: i tool marcati «Canone» qui sotto sono elencati ma non partono senza `--allow-write`, perché il canone si scrive su un branch di gruppo con l'occhio del DM sopra (ADR-0007). Le voci esposte sono 86: le cartelle di `converters/` non sono programmi e non compaiono.
 
 ## A · Session Prep (incontri · mappe · tesoro)
 
@@ -127,6 +127,7 @@
 | `validate_tipografia.py` | «L'artefatto si legge, o ha titoli che saltano un livello e righe troppo lunghe?»<br>Tre misure sulla LEGGIBILITA' dell'artefatto, che nessun exit code vede (ADR-0032). 1) gerarchia dei titoli nei capitoli dichiarati da un manifest: un h4 sotto un h2 diventa un ramo che non esiste nei segnalibri del PDF. 2) caratteri per riga, calcolati dalla larghezza di colonna del tema e dalle avanzate REALI dei glifi lette dalla tabella hmtx del font incorporato, confrontati con la finestra 45-75. 3) daltonismo: simula protanopia, deuteranopia e tritanopia sulle tavole SVG e trova le coppie di colori distinte in visione normale che sotto una dicromia diventano lo stesso colore. Non bloccante finche' il rumore non e' a zero; --strict alza a errore. | --solo · --strict | ✔ | — | — | `0` · `1` |
 | `verifica_sezione6.py` | «La tabella dice che restano 27 ADR da indicizzare: e' ancora vero?» Nel caso vero era gia' zero, e nessuno l'aveva eseguito.<br>Esegue davvero i comandi che le righe di STATO-E-ORDINE §6.2 citano, e boccia una riga che il comando smentisce. Distingue i CANCELLI (stampano un verdetto: un ✓ senza avvisi accanto a una riga ⬜ e' una bugia) dalle MISURE (stampano numeri: la riga deve dichiarare il numero atteso in <!-- attesa: N -->). Esegue testo scritto a mano, quindi forma rigida, allowlist di script e shell=False. | --check | ✔ | — | — | `0` · `1` |
 | `vista_di_chi_scorre.py` | «Un DM che sfoglia questo master capisce cosa succede stasera e chi si oppone?»<br>Il primo passo del DM a freddo (L5, D2 del 2026-10-01): il master come lo vede chi lo sfoglia, cioè la serata dichiarata, i titoli, la riga «In scena» e la prima frase di ogni scena, i grassetti, le CD con le parole prima. Il resto è tolto di proposito. Adattato da first-reader/skim.py (Apache 2.0, ADR-0076). | **master** · --json | ✔ | — | — | `0` · `2` |
+| `voto_scrittura.py` | «Un agente che carica la skill di scrittura rispetta le norme registrate più di uno che non la carica?»<br>L11 (D11 del 2026-10-01): il voto deterministico sui testi scritti con e senza le skill di scrittura. Ogni controllo chiama un rilevatore che esiste (misura_craft, validate_prosa) e una norma registrata; i casi in plans/scrittura/casi.json seguono lo schema di evals.json di skill-creator, a metà fra taratura e verifica. «Sembra/pare» è un indizio stampato, non un voto, finché il DM non decide (D13). | file · --caso · --corse · --emit · --check | ✔ | — | — | `0` · `1` · `2` |
 
 ## I · Convertitori di contenuto
 

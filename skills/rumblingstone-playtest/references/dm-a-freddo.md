@@ -24,8 +24,10 @@ lettore e playtester, e un peso diverso su quelli già noti.
 obbligatorio al passo 6 del ciclo del master, accanto a lettore e playtester:
 `registro_letture.py` non mette un master sotto cancello finché non ha anche la
 lettura `dm` con l'impronta del testo. Il secondo e il terzo passo restano **in
-prova** finché il DM non dice se la preparazione di
-`plans/esperimenti/dm-a-freddo/corsa-def5/PREPARAZIONE.md` somiglia alla sua.
+prova**: il DM ha letto la preparazione di
+`plans/esperimenti/dm-a-freddo/corsa-def5/PREPARAZIONE.md` e ha detto che la
+sua ne copre molto di più (D12, 2026-10-01). Le undici voci qui sotto vengono
+da quella risposta, ed escono dalla prova dopo una corsa che le esegue tutte.
 
 ## Primo passo · la vista di chi scorre
 
@@ -66,6 +68,41 @@ lettura a scene»), con il messaggio d'invio del lettore e due differenze:
   primo, con la prima battuta**. La corsa su DEF-5 senza quest'ultima riga ha
   lasciato il giorno dopo a «non è rimasto niente» su chi entra in scena,
   anche se il master le schede d'entrata le aveva.
+
+### La preparazione del DM, voce per voce (D12)
+
+La prima corsa su DEF-5 ha fatto una cosa sola: leggere il master e annotare
+dove il DM dovrebbe inventare. Il DM, leggendola:
+
+> *«Nella preparazione che avrei fatto io oltre a vedere e risolvere tutti
+> questi problemi ,avrei visto lo stato del gruppo  cosa sanno e cosa no e
+> dell avventura cosa il mondo sa o cosa si muove anche senza i pg da solo
+> […] stando bene attento a dividere quello che I pg sanno da wuellonche sa
+> il master»* (2026-10-01, trascritto com'è arrivato)
+
+Quindi la preparazione non è una lettura: sono undici lavori, e ognuno chiude
+con un esito nella tabella d'uscita (fatto · manca nel repo · rilievo sul
+master). Il tempo dichiarato resta, e una voce che non entra nell'ora è un
+rilievo, non un salto.
+
+| Codice | La voce | Dove si guarda |
+|---|---|---|
+| `P-RILIEVI` | vedere **e risolvere** i problemi del master, non solo elencarli: per ognuno, la risposta che si darebbe al tavolo | la lettura a scene qui sopra |
+| `P-GRUPPO` | lo stato del gruppo: cosa sanno i PG e cosa **non** sanno | `campaign/state.md`, gli echi, i DEF precedenti |
+| `P-MONDO` | cosa sa il mondo, e cosa si muove **senza i PG** | orologi del master, agenda dei villain, `living-world.md` |
+| `P-STATO` | in che stato sono PG, PNG, villain e luoghi all'inizio della serata | `state.md`, `Bestiario/`, la coda del DEF precedente |
+| `P-STILE` | le descrizioni e lo stile già fissati, comprese le immagini già generate (Canva AI, quelle del Drappo) | `rumblingstone-art-direction`, le schede-personaggio |
+| `P-IMMAGINI` | le immagini che servono e non ci sono nel repo: si generano, o si elencano se la corsa non può | il master (§ immagini) contro i file presenti |
+| `P-HANDOUT` | gli handout da dare ai PG che non ci sono: si scrivono | il master (§ handout) contro i file presenti |
+| `P-FLUSSO` | rileggere il DEF per il flusso e per le opzioni che lascia aperte | il master intero, dopo la lettura a scene |
+| `P-DOMANDE` | provare a rispondere alle domande più disparate dei PG, e annotare dove si trova la risposta | la lettura intera; il giorno dopo le rimette alla prova |
+| `P-CONGEGNI` | ogni orologio e meccanismo: saperlo condurre e **descriverlo col read-aloud** senza anticipare, lasciando posto alle soluzioni non previste | i box delle scene e degli ambienti |
+| `P-INTERAZIONI` | cosa interagisce con i PG, con gli artefatti e col mondo, e come deve muoversi | `campaign-coherence.md`, le pagine degli artefatti |
+
+🔒 **Su tutte le voci, una regola che le attraversa**: separare ciò che sanno i
+PG da ciò che sa il master. Una preparazione che lo mescola è un rilievo
+(`P-CONFINE`) anche se ogni voce è fatta, perché è il modo in cui un DM
+anticipa senza accorgersene.
 
 ## Terzo passo · il giorno dopo, al tavolo
 

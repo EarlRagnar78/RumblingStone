@@ -155,6 +155,43 @@ cifre decimali.**
 
 ---
 
+## 4-bis · Il giro del 2026-10-01: il formato Paizo e i consigli di Merwin
+
+Il DM ha chiesto di passare anche le skill che scrivono «usando i migliori
+modelli di editoria […] delle migliori AP di D&D 3.5 e Paizo per Pathfinder 1e»
+(L11 di `PIANO-AGENT-SKILLS-ESTERNE`). Due fonti nuove, e per ogni loro
+prescrizione dove sta già nel repo, misurata sui file di gioco.
+
+**Il formato dell'incontro Paizo** (Loot The Room, *Form and Structure*): titolo
+e minaccia; il read-aloud con i sensi e la panoramica; lo sfondo per il GM; le
+creature o i pericoli con le tattiche; lo statblock o il rimando; il dopo
+(tesoro, ricompense, sviluppi). Il formato è lo stesso da vent'anni, da
+*Dungeon* in poi.
+
+| Pezzo Paizo | Nel repo | Misura |
+|---|---|---|
+| read-aloud dei sensi e della panoramica | `editorial-standards.md` §2, ADR-0014 (sei secondi), la quarta colonna | `misura_craft --box`, `--p1`, metrature |
+| tattiche prima, durante, morale | `module-standard` §7, «dal punto di vista del MOSTRO», con soglie di morale | `Morale` in 46 file d'arco; «Prima del combattimento» e «Durante» in uno solo, perché il repo scrive le tattiche per round |
+| sviluppi | `module-standard` §7, la riga **Sviluppi** | 11 file |
+| tesoro e ricompense | `module-standard` §12, budget e tesoro pregenerato per sezione | `validate_modules.py` |
+
+Niente da importare: il repo ha già ogni pezzo, scritto più a fondo.
+
+**I consigli di Shawn Merwin sul boxed text** ([D&D Beyond, *Let's Design an
+Adventure: Boxed Text*](https://www.dndbeyond.com/posts/625-lets-design-an-adventure-boxed-text)):
+
+| Consiglio | Nel repo | Esito |
+|---|---|---|
+| terza persona, non la seconda | è **P1** (§1.1, *Dungeon*), 🟢 nel registro | c'è già. ⚠️ Ma `read-aloud-adulti.md`, che il registro cita come fonte di P1, non la contiene, e tre esempi ✅ delle skill la violano: D14 |
+| niente romanzo: dettagli superflui, monologo del villain, azione già in corso da guardare | il monologo è nell'*Avoid* di Salvatore (`style-pillars.md`); l'azione da guardare è il test di protagonismo (`pc-protagonism.md` §1) | c'è già. «Dettagli superflui» va **contro** il «dettaglio che non serve a niente» di `read-aloud-adulti.md` §3, e qui vince il repo: è scritto per un pubblico di lettori adulti, Merwin per un DM qualunque |
+| descrivere ciò che si percepisce, lasciare il resto a mappe e immagini | ADR-0014, le metrature fuori dal box | c'è già |
+| evitare «sembra», «pare» | nessuna norma | **candidata**: 34 box su 501. D13 |
+| leggere ad alta voce | `passate-redazionali.md`, la 2ª passata | c'è già |
+| niente termini di regola in senso comune («stordito» detto per dire «confuso») | nessuna norma | **non entra come controllo**. Sette box usano il nome di una condizione 3.5, guardati uno per uno: **tre** sono il caso di Merwin (*«il tuo spirito è affaticato»*, *«Party esausto»*, *«Sei… affascinato»*, tutti in file `PortaleForgia-*` e nella guida degli oggetti rituali), **quattro** sono italiano corretto (*«alberi pietrificati»*, *«ti guardano confusi»*, *«non si è mai spaventata di niente»*). Una regex sbaglierebbe una volta su due. Resta un giudizio per la 2ª passata; i tre si correggono nei rispettivi file quando si riaprono |
+| quattro frasi, meno di cento parole | i tetti in righe di `read-aloud-adulti.md` §2 | **non entra**: importare il numero di un altro formato è l'errore già scritto in §3 per il conteggio delle parole |
+
+---
+
 ## 5 · Cosa alimenta
 
 | Va in | Cosa |

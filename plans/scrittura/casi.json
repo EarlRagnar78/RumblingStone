@@ -1,0 +1,89 @@
+{
+  "nota": "L11 di PIANO-AGENT-SKILLS-ESTERNE: il giro sulle skill di scrittura. Lo schema e' quello di evals.json di skill-creator (Anthropic, Apache 2.0): ogni caso ha un prompt, l'uscita attesa a parole e le aspettative. Qui le aspettative sono i CONTROLLI di scripts/voto_scrittura.py, ognuno legato a una norma gia' registrata in skills/REGISTRO-NORME-EDITORIALI.md e a un rilevatore che esiste (una norma, un rilevatore): nessuna regola nuova entra nel voto. I prompt li ho scritti io il 2026-10-01 e NON sono frasi del DM: ognuno chiede una cosa che un DM chiede davvero, su scene vere dei master di ARC-07, e tre chiedono buchi veri trovati dal DM a freddo su DEF-5. I prompt non nominano le norme, altrimenti la corsa senza skill le imparerebbe dal prompt. Le meta' sono stratificate per genere (apertura, combattimento, dialogo, testo per un giocatore, documento): la taratura si puo' usare per correggere le skill, la verifica no.",
+  "skill": [
+    "rumblingstone-narrative-style",
+    "rumblingstone-prosa-documenti"
+  ],
+  "casi": [
+    {
+      "id": "S01",
+      "insieme": "taratura",
+      "genere": "apertura",
+      "prompt": "Mi scrivi il testo da leggere ai giocatori quando arrivano nel Cuore della Montagna, la caverna sacra sotto Hammerfist? È la Zona 2 di «07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md». Solo il testo d'apertura della zona.",
+      "uscita_attesa": "un box da leggere al tavolo, nella forma del repo, che descrive la caverna in un'occhiata",
+      "controlli": ["box_presente", "box_tetto_righe", "box_un_nome", "box_senza_parentesi", "box_p1", "box_senza_metrature", "box_etichettato", "calchi", "tic_gioco"]
+    },
+    {
+      "id": "S02",
+      "insieme": "taratura",
+      "genere": "combattimento",
+      "prompt": "Scrivimi la descrizione del primo round del duello con Skullcrusher (Scena 11 di «07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md»): cosa leggo al tavolo dopo aver tirato l'iniziativa.",
+      "uscita_attesa": "un box breve di combattimento che lascia la mossa ai giocatori",
+      "controlli": ["box_presente", "box_tetto_righe", "box_un_nome", "box_senza_parentesi", "box_p1", "box_senza_metrature", "box_etichettato", "chiude_che_fate", "calchi", "tic_gioco"]
+    },
+    {
+      "id": "S03",
+      "insieme": "taratura",
+      "genere": "dialogo",
+      "prompt": "Balvar Fuocospento, nella tenda del comando (Scena 7 di «07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md»): se Artemis gli chiede del Rubino, cosa risponde? Dammi le sue battute.",
+      "uscita_attesa": "le battute di Balvar con la sua voce, pronte da recitare",
+      "controlli": ["dialogo_forma", "calchi", "tic_gioco"]
+    },
+    {
+      "id": "S04",
+      "insieme": "taratura",
+      "genere": "per un giocatore",
+      "prompt": "Mi scrivi l'eco per la giocatrice di Hella, da leggerle in privato all'inizio dell'ARC-08, su quello che ha vissuto nel ritorno dal −1000? Il modulo è «07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md».",
+      "uscita_attesa": "un testo breve per una sola giocatrice, che si regge su qualcosa che lei riconosce",
+      "controlli": ["ancore", "calchi", "tic_gioco"]
+    },
+    {
+      "id": "S05",
+      "insieme": "taratura",
+      "genere": "documento",
+      "prompt": "Scrivi la sezione «Contesto» di un ADR che spiega perché il voto delle skill di scrittura riusa misura_craft.py e validate_prosa.py invece di scrivere regole nuove.",
+      "uscita_attesa": "prosa da documento del repo, senza box da leggere",
+      "controlli": ["doc_senza_box", "doc_trattini", "doc_conteggi", "doc_antitesi", "calchi"]
+    },
+    {
+      "id": "S06",
+      "insieme": "verifica",
+      "genere": "apertura",
+      "prompt": "Nella Scena 3 di «07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md» c'è solo «Dana apre il portale. Fine dell'ARC-07.» Mi scrivi il testo da leggere quando Madre Dana apre il portale verso i bastioni?",
+      "uscita_attesa": "un box da leggere al tavolo per l'apertura del portale",
+      "controlli": ["box_presente", "box_tetto_righe", "box_un_nome", "box_senza_parentesi", "box_p1", "box_senza_metrature", "box_etichettato", "calchi", "tic_gioco"]
+    },
+    {
+      "id": "S07",
+      "insieme": "verifica",
+      "genere": "combattimento",
+      "prompt": "Mi prepari l'ingresso di Skullcrusher nel duello (Scena 11 di «07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md»)? Il testo per la soglia e per il primo scambio, e cosa faccio quando cade.",
+      "uscita_attesa": "i box della soglia e del primo scambio, e l'indicazione per la sua morte",
+      "controlli": ["box_presente", "box_tetto_righe", "box_un_nome", "box_senza_parentesi", "box_p1", "box_senza_metrature", "box_etichettato", "chiude_che_fate", "hdywtdt", "calchi", "tic_gioco"]
+    },
+    {
+      "id": "S08",
+      "insieme": "verifica",
+      "genere": "per un giocatore",
+      "prompt": "L'handout «Lo Stato dei Custodi» del §9 di «07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md» è solo elencato: scrivimelo, da stampare e dare ai giocatori.",
+      "uscita_attesa": "un handout per i giocatori, con un autore nella finzione",
+      "controlli": ["ancore", "calchi", "tic_gioco"]
+    },
+    {
+      "id": "S09",
+      "insieme": "verifica",
+      "genere": "dialogo",
+      "prompt": "Al consiglio di guerra di Re Thorek I (Scena 4 di «07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md»), se Thorik contraddice il re davanti a tutti, come reagisce Thorek? Dammi le sue battute.",
+      "uscita_attesa": "le battute di Re Thorek I con la sua voce, pronte da recitare",
+      "controlli": ["dialogo_forma", "calchi", "tic_gioco"]
+    },
+    {
+      "id": "S10",
+      "insieme": "verifica",
+      "genere": "documento",
+      "prompt": "Scrivi il corpo della PR che porta il giro delle skill di scrittura: un voto deterministico sui testi, dieci casi, corse con e senza skill.",
+      "uscita_attesa": "prosa da documento del repo, senza box da leggere",
+      "controlli": ["doc_senza_box", "doc_trattini", "doc_conteggi", "doc_antitesi", "calchi"]
+    }
+  ]
+}

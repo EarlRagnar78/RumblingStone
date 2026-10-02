@@ -1,5 +1,16 @@
 # Il nodo d'indizio e le sei porte
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- 1. Il nodo a tre strati
+- 2. Le sei porte, per esteso
+- 3. Le CD, e il rapporto con le abilità normali
+- 4. La mappa dei nodi — come si tengono insieme
+- 5. Il vicolo cieco — cosa fa il DM quando non trovano niente
+- 6. Errori che questo file esiste per prevenire
+<!-- /indice -->
+
 Il pezzo di meccanica che regge tutto il resto. Se salti questo file e scrivi
 indizi come «Cercare CD 20 per trovare la lettera», hai scritto un caso che
 si apre con una sola chiave e che tre giocatori su quattro guarderanno da

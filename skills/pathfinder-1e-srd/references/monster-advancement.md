@@ -1,5 +1,14 @@
 # PF1e Monster Advancement — Simple Templates & Benchmarks
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- Simple Templates (apply in minutes)
+- Adding Hit Dice (PF1e)
+- Adding class levels (PF1e)
+- Monster Statistics by CR — benchmark targets
+<!-- /indice -->
+
 Source: PF1e Bestiary, "Monster Advancement" + Appendix (Table 1–1).
 Verify: https://www.d20pfsrd.com/bestiary/rules-for-monsters/simple-templates/
 and https://aonprd.com/Rules.aspx?Name=Monster%20Advancement&Category=Appendix

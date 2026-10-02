@@ -1,5 +1,20 @@
 # The Nine Pillars — Full Profiles
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- 1. R.A. Salvatore — the prose voice
+- 2. Tolkien / The Lord of the Rings — epic depth and moral gravity
+- 3. La Casa di Davide (House of David) — destiny, dynasty, faith
+- 4. Andor — slow-burn intrigue and the cost of resistance
+- 5. Game of Thrones — political gray and real mortality
+- 6. Matt Mercer (Critical Role) — the table technique layer
+- 7. Baldur's Gate 3 — consequences across great distances of time
+- 8. Baldur's Gate 1 & 2 — complex quest architecture
+- 9. Il caso ricomposto — deduction as the climax
+- Fusion discipline — how nine become one
+<!-- /indice -->
+
 Each pillar is distilled into: **Take** (the craft techniques to absorb),
 **Avoid** (the failure mode of imitating it badly), and **In play**
 (concrete moves for RumblingStone content). The goal is an *unicum*: one

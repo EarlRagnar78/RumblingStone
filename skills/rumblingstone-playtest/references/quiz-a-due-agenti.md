@@ -1,5 +1,16 @@
 # Il quiz a due agenti — quanto resta dopo una lettura sola
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- Il limite, prima del resto
+- Il procedimento
+- La chiave
+- Il limite osservato
+- Quando si usa
+- Il ricordo dal diario — il passo 7, senza chiave
+<!-- /indice -->
+
 > **Dal 2026-10-01 il passo 7 del ciclo è il ricordo dal diario** (D1 di
 > PIANO-AGENT-SKILLS-ESTERNE), e il quiz resta dove una chiave approvata c'è
 > già (oggi DEF-4). La procedura del ricordo è in fondo, «Il ricordo dal

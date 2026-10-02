@@ -1,5 +1,17 @@
 # PC Protagonism — Protagonists in Good and in Evil
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- 1. The Protagonism Test (every generated scene)
+- 2. Spotlight rotation (Mercer layer, formalized)
+- 3. Protagonists in the good — fame
+- 4. Protagonists in the evil — infamy and the ripple
+- 5. Anointing threads (destiny without railroad)
+- 6. Villains must have a personal claim
+- 7. Output requirements
+<!-- /indice -->
+
 The campaign's contract: **the four PCs are the protagonists of every
 scene that matters**: when they are heroic, when they fail, and when
 they choose evil. The world is reactive (State Machine, coherence §5),

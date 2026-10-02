@@ -1,5 +1,17 @@
 # Lo sviluppo degli incontri — le domande del developer
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- 1 · La lente dei Tier: chi resta senza niente da fare
+- 2 · Volo e invisibilità, dal 5° livello
+- 3 · I tre tiri salvezza
+- 4 · Chi sente il rumore
+- 5 · Il boss cambia, non si allunga
+- 6 · Lo skill challenge si scrive per intero
+- 7 · Chi si diverte in questa scena
+<!-- /indice -->
+
 Nei colophon di Paizo e WotC il testo passa da due mani: l'editor chiede *«si
 capisce?»*, il developer chiede *«si gioca?»*. Il repo ha già l'editor
 (`rumblingstone-prosa-documenti`, il lettore a freddo) e i numeri dei mostri

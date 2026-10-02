@@ -1,5 +1,18 @@
 # Core Mechanics — D&D 3.5 SRD Reference
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- The d20 Roll
+- Armor Class
+- Size Modifiers
+- Skills (Complete SRD List)
+- Feats: Key Categories
+- Ability Score Increases
+- Experience Points and Level Progression
+- Carrying Capacity (Medium Creature, STR-based)
+<!-- /indice -->
+
 Source: d20srd.org/srd/theBasics.htm and related pages
 
 ---

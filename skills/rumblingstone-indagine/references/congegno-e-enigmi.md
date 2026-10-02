@@ -1,5 +1,20 @@
 # Il congegno e gli enigmi — il disegno che spiegava tutto
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- 1. La struttura in quattro pezzi
+- 2. La regola dell'innocenza (di nuovo, perché è qui che si applica)
+- 3. Le tre famiglie di congegno
+- 4. La regia del prestigiatore — si mostra una parte, mai il tutto
+- 5. L'innesco in piena vista
+- 6. Il congegno nell'agenda dei villain
+- 7. Gli enigmi — e perché non sono lucchetti
+- 8. Il congegno in combattimento — il terzo attore
+- 9. Il dosaggio — perché lo stupore è una risorsa che si consuma
+- 10. La porta chiusa
+<!-- /indice -->
+
 La domanda a cui risponde un caso RumblingStone non è sempre *«chi è
 stato?»*. Quella si esaurisce con l'arresto. La domanda che regge tre
 sessioni e finisce in uno scontro è:

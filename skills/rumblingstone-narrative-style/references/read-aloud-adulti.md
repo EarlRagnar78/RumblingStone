@@ -1,5 +1,18 @@
 # Read-aloud per adulti che leggono fantasy
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- 1. La cosa che cambia tutto: **si ascolta, non si legge**
+- 2. Lunghezza: la finestra reale è più corta di quanto sembri
+- 3. Cosa premia questo pubblico
+- 4. Cosa li fa staccare (e sono tutti errori di genere, non di lingua)
+- 5. Il registro alto senza il ridicolo
+- 6. Il dialogo dei PNG davanti a questo pubblico
+- 7. La checklist prima di leggere ad alta voce
+- 8. Rapporto con gli altri riferimenti
+<!-- /indice -->
+
 **Il pubblico di questo tavolo**: adulti acculturati, lettori di fantasy da
 vent'anni. Hanno letto Tolkien, Martin, Le Guin, Wolfe, Salvatore,
 Abercrombie. Conoscono i cliché del genere **meglio di chi scrive**, e li sentono

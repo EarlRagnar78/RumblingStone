@@ -1,5 +1,17 @@
 # La ricomposizione — la scena in cui il disegno appare
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- 1. La regola che rende la scena onesta
+- 2. Chi la fa
+- 3. Come si scrive la catena
+- 4. I tre modi di sbagliarla
+- 5. Le schegge — come si posa un indizio che non sembra un indizio
+- 6. Il falso indizio, progettato
+- 7. Autocontrollo della scena
+<!-- /indice -->
+
 È il momento per cui esiste tutto il resto: sei cose viste in tre serate
 diverse smettono di essere sei cose. Questo file è **artigianato di scena**,
 non meccanica.

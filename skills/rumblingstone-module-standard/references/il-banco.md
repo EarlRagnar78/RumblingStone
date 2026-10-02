@@ -1,5 +1,14 @@
 # Il banco: cosa si compra, cosa si vende, e chi storce il naso
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- Quando serve
+- Le quattro parti del banco
+- La spezia: preferenze e diffidenze
+- La misura
+<!-- /indice -->
+
 Norma per chi scrive un master. Nasce dal tavolo di `ARC07-DEF-4`, fra il 25 e
 il 27 settembre 2026: nella fortezza i giocatori hanno chiesto pergamene di
 *silenzio*, *identificare*, *rimuovi maledizione* e *rimuovi paralisi*, hanno

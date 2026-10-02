@@ -440,11 +440,15 @@ indice; `style-pillars.md` rimanda a 4 references, `documento-ed-errore-fecondo.
 a 5; `italiano-nativo.md` ha 6 coppie ❌/✅ su più di trenta regole, e nessuna
 sui tic del §9.
 
-- [ ] `italiano-nativo.md` e gli altri references di scrittura: tre coppie
-      ❌/✅ per ogni regola misurata dal voto, prese da testi veri (le corse, i
-      master); i tic per forza; l'indice in testa
-- [ ] i rimandi riportati a un livello dallo `SKILL.md`; la self-check come
-      ciclo «misura → correggi → rimisura»
+- [x] `italiano-nativo.md` §1-bis: per i sei calchi misurati, due casi veri
+      dai file di gioco (lo sbagliato con la riscrittura, e quello giusto che
+      il rilevatore prende per sbaglio, cioè il confine) accanto al terzo
+      della tabella. Per *assumere* il repo non ha un caso sbagliato
+- [x] l'indice in testa ai references oltre le 100 righe, in tutte le skill:
+      `indice_references.py`, in CI, 51 su 59. I rimandi a un livello:
+      misurati, zero references raggiungibili solo passando da un altro
+- [x] la self-check come ciclo: domanda 8 in `narrative-style` e in G4 di
+      `AGENTS.md`, con `ciclo_prosa.py`. 78 norme
 - [x] `scripts/ciclo_prosa.py` (stdlib), tre comandi come fra revisore e
       autore (D15): `segnala`, `revisione` (il documento con le modifiche in
       CriticMarkup, numerate, ognuna con la sua norma e una casella, e le due

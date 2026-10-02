@@ -1,5 +1,21 @@
 # Combat — D&D 3.5 SRD Reference
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- Combat Sequence
+- Action Types per Round
+- The Full Attack
+- Attack Bonus Calculation
+- Damage
+- Conditions Quick Reference
+- Attacks of Opportunity (AoO)
+- Grapple
+- Movement and Terrain
+- Cover and Concealment
+- Damage, Death, and Dying
+<!-- /indice -->
+
 Source: d20srd.org/srd/combat/
 
 ---

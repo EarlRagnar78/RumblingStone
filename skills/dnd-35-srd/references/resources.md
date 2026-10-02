@@ -1,5 +1,21 @@
 # Free & Open Resources for D&D 3.5 — 2026 Reference
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- SOURCE PRIORITY HIERARCHY
+- SOURCE 1 — d20srd.org (System Reference Document 3.5)
+- SOURCE 2 — dndtools.one (The Comprehensive D&D 3.5 Database)
+- SOURCE 3 — Forgotten Realms Helps (realmshelps.net)
+- SOURCE 4 — Forgotten Realms Wiki (fandom)
+- SOURCE 5 — orbitalflower + web.archive.org (WotC D&D 3.5 Archive)
+- SOURCE 6 — IMarvinTPA Spell Database
+- LOCAL AI RAG SETUP (Self-Hosted, Free)
+- FREE VIRTUAL TABLETOP TOOLS
+- LEGAL NOTES
+- SOURCE 7 — Dripping Quill RHoD Archive
+<!-- /indice -->
+
 ---
 
 ## SOURCE PRIORITY HIERARCHY

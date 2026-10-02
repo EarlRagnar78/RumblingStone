@@ -1,5 +1,20 @@
 # Forgotten Realms — Races & Subraces Complete (D&D 3.5)
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- HUMANS OF FAERÛN
+- ELVES
+- DWARVES
+- GNOMES
+- HALFLINGS
+- HALF-RACES
+- PLANETOUCHED RACES
+- MONSTROUS / EXOTIC PLAYABLE RACES
+- UNIQUE FAERÛNIAN BEINGS
+- RACIAL ABILITY SCORE SUMMARY TABLE
+<!-- /indice -->
+
 Sources: Races of Faerûn (2003), FRCS (2001), Player's Guide to Faerûn (2004),
 Underdark (2003), Serpent Kingdoms (2004)
 

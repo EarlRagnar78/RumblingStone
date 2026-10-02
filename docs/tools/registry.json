@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 92,
+  "tool_count": 93,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -6075,6 +6075,78 @@
       "docs": [
         "scripts/README-automation.md",
         "campaign/DM-CAMPAIGN-PLAYBOOK.md"
+      ]
+    },
+    {
+      "id": "indice_references",
+      "path": "scripts/indice_references.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/indice_references.py {--emit | --check}",
+      "summary": "L12 (ADR-0077 §9): l'indice in testa a ogni reference delle skill oltre le 100 righe, generato dai titoli fra due marcatori, come chiede la guida di Anthropic sulle skill. Un agente che legge solo l'inizio vede cosa c'è e apre la sezione che serve. Esclusa la skill vendorizzata rumblingstone-debugging.",
+      "use_case": "«Un agente che legge le prime righe di un reference sa cosa contiene il resto?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--emit",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scrive o aggiorna gli indici."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se un indice manca o è vecchio."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "skills/*/references/*.md",
+          "kind": "markdown",
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "skills/*/references/*.md",
+          "kind": "markdown",
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "un indice manca o è vecchio (--check)",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Dipende solo dai titoli dei references."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/indice_references.py --check",
+      "tests": [
+        "scripts/tests/test_indice_references.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0077-revisione-a-due-giri.md"
       ]
     },
     {

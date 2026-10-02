@@ -95,6 +95,15 @@ cui una correzione di norma peggiora un testo senza che nessun controllo se ne
 accorga. Sulla prima prova la lettura ha fermato una modifica giusta per P1 che
 fondeva due frasi in una.
 
+**9. Le skill si leggono a pezzi, e devono dirlo in testa.** La guida di
+Anthropic sulle skill chiede un indice in testa a ogni reference oltre le 100
+righe, perché un agente spesso ne legge solo l'inizio. Il 2026-10-02 erano 51
+su 59 senza (la skill vendorizzata `rumblingstone-debugging` resta fuori).
+`scripts/indice_references.py` genera l'indice dai titoli, fra due marcatori, e
+`--check` gira in CI. La stessa guida chiede che ogni reference sia a un solo
+livello dallo `SKILL.md`: misurato, nessun reference è raggiungibile solo
+passando da un altro, e lì non c'era niente da cambiare.
+
 ## Che cosa si prende dalla comunità, e con che licenza
 
 Nessuna riga di codice di terzi entra nel repo. Si prendono una sintassi e due
@@ -105,6 +114,7 @@ idee, riscritte con la sola stdlib (`difflib`, `hashlib`).
 | **CriticMarkup**, Gabe Weatherhead ed Erik Hess ([criticmarkup.com](https://criticmarkup.com), `CriticMarkup/CriticMarkup-toolkit`) | Apache 2.0 | la sintassi di revisione: `{~~vecchio~>nuovo~~}`, `{++aggiunto++}`, `{--tolto--}`, `{>>commento<<}` | il testo marcato del documento di revisione |
 | **Humanizer**, blader (`blader/humanizer`) | MIT | la regola «weak alone»: un segnale minore da solo non prova niente, conta il gruppo; e il divieto di inventare fatti mentre si riscrive | il controllo «tic minori in gruppo» e la garanzia sui fatti |
 | ***Wikipedia: Signs of AI writing*** | CC BY-SA 4.0 | la stessa regola, nella forma di una guida per i revisori | citata, nessun testo copiato |
+| Anthropic, ***Skill authoring best practices*** | documentazione pubblica | l'indice in testa ai references lunghi, i references a un livello, il ciclo «validatore → correggi → ripeti», gli esempi input/output | `indice_references.py`, la domanda 8 della self-check, `italiano-nativo.md` §1-bis |
 | Anthropic, ***Building effective agents*** | documentazione pubblica | il modello *evaluator-optimizer*: chi scrive e chi valuta sono due ruoli, e si gira finché il valutatore non ha più niente | l'ordine dei tre comandi |
 | **Indice Gulpease**, GULP (Lucisano e Piemontese, 1988) | formula pubblicata, nessuna licenza | la leggibilità tarata sull'italiano, in lettere e non in sillabe | la lettura prima e dopo, e la tolleranza dell'automatico |
 | **LanguageTool** (`languagetool-org/languagetool`) | LGPL 2.1 | il controllo grammaticale italiano, usato come **servizio** (`--languagetool URL`, per esempio un server locale): nessun suo file entra nel repo, quindi la LGPL non lo tocca | `segnala`, facoltativo e fuori dalla CI |

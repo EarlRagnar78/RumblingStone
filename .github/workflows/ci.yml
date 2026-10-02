@@ -188,6 +188,12 @@ jobs:
       - name: Norme editoriali — ogni norma ha un misuratore o una ragione
         run: python scripts/validate_norme_editoriali.py
 
+      # La guida di Anthropic sulle skill: un reference oltre le 100 righe apre
+      # con il suo indice, cosi' un agente che ne legge solo l'inizio sa cosa
+      # c'e' e apre la sezione che serve. Generato, mai a mano. ADR-0077 §9.
+      - name: Skill — l'indice in testa ai references lunghi
+        run: python scripts/indice_references.py --check
+
       # Il gemello del passo sopra, dall'altro lato: quello controlla che ogni
       # norma dica CHI la guarda, questo che ogni «nessuno la guarda» dica
       # COSA MANCA — e lo rimisura invece di fidarsi della prosa. La ragione

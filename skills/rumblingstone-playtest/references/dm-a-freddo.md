@@ -1,5 +1,14 @@
 # Il DM a freddo — rubrica fissa
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- Primo passo · la vista di chi scorre
+- Secondo passo · la preparazione a scene
+- Terzo passo · il giorno dopo, al tavolo
+- L'uscita
+<!-- /indice -->
+
 Il lettore cerca dove il DM dovrebbe inventare, il playtester cosa succede
 quando i giocatori fanno quello che vogliono. Il DM a freddo è la terza
 domanda: **un DM che non ha scritto il modulo riesce a condurlo stasera, con il

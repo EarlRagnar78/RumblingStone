@@ -2454,6 +2454,36 @@
       "deterministic": true
     },
     {
+      "name": "indice_references",
+      "description": "«Un agente che legge le prime righe di un reference sa cosa contiene il resto?»\n\nL12 (ADR-0077 §9): l'indice in testa a ogni reference delle skill oltre le 100 righe, generato dai titoli fra due marcatori, come chiede la guida di Anthropic sulle skill. Un agente che legge solo l'inizio vede cosa c'è e apre la sezione che serve. Esclusa la skill vendorizzata rumblingstone-debugging.",
+      "use_case": "«Un agente che legge le prime righe di un reference sa cosa contiene il resto?»",
+      "invocation": "python3 scripts/indice_references.py {--emit | --check}",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "emit": {
+            "type": "boolean",
+            "description": "Scrive o aggiorna gli indici."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Esce 1 se un indice manca o è vecchio."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "skills/*/references/*.md"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "un indice manca o è vecchio (--check)",
+        "2": "errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
       "name": "install_git_hooks",
       "description": "«Come faccio a non scoprire in CI quello che il repo poteva dirmi prima del push?»\n\nInstalla gli hook git locali: post-merge (resync mirror skill) e pre-push (gate ADR-0009).",
       "use_case": "«Come faccio a non scoprire in CI quello che il repo poteva dirmi prima del push?»",

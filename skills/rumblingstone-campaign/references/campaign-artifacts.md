@@ -1,5 +1,20 @@
 # RumblingStone Campaign — Artifacts Reference (D&D 3.5)
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- ARTIFACT 1: AEGIS FANG (Thorik's Axe)
+- ARTIFACT 2: CORONA DI ADAMANTIO (Crown of Adamantine)
+- ARTIFACT 3: RING OF CHAOTIC ILLUMINATION (Reforged)
+- ARTIFACT 4: BRACIERI GEMELLI DI MORADIN (Twin Hearth-Gauntlets)
+- ARTIFACT 5: COLLANA DEI SEMI ETERNI (Necklace of Eternal Seeds)
+- ARTIFACT 6: CUORE DI MORADIN (Heart of Moradin)
+- NARRATIVE CONNECTIONS
+- ARTIFACT 7: ORBE DELLE OTTO PORTE (Orb of Eight Gates)
+- ARTIFACT SYNERGY CHART
+- REJECTED/ALTERNATE PATHS
+<!-- /indice -->
+
 This file documents all **campaign-specific artifacts** created for the RumblingStone campaign.
 These are custom items not found in any published sourcebook. For canonical FR artifacts, see `fr-artifacts.md`.
 

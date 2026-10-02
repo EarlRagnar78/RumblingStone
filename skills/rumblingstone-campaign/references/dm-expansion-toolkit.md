@@ -1,5 +1,16 @@
 # DM Expansion Toolkit — RumblingStone Campaign
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- PART 1 — MONSTER ART GENERATION
+- PART 2 — BRANCHING QUEST TREES
+- PART 3 — VILLAIN EXPANSION TEMPLATES
+- PART 4 — FACTION ALLIANCE / OPPOSITION TRACKER
+- PART 5 — DM "ADD YOUR OWN" SECTION
+- NOTES ON USING THE ORBITALFLOWER ARCHIVE FOR MAPS
+<!-- /indice -->
+
 This file is the **DM's scratchpad and expansion layer**. It contains:
 1. Monster art generation prompts (PNG upscale-ready)
 2. Branching quest trees for artifacts, villains, and factions

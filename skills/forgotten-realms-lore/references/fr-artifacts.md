@@ -1,5 +1,17 @@
 # Forgotten Realms — Artifacts & Unique Magic Items (D&D 3.5)
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- MAJOR ARTIFACTS OF FAERÛN
+- ARTIFACTS ASSOCIATED WITH FR DEITIES
+- LEGENDARY WEAPONS OF FAERÛN
+- LEGENDARY ARMOR AND SHIELDS
+- SIGNIFICANT FR MAGIC ITEMS (Non-Artifact)
+- CREATING FR-APPROPRIATE MAGIC ITEMS
+- CAMPAIGN-SPECIFIC ARTIFACTS (RumblingStone)
+<!-- /indice -->
+
 Sources: FRCS (2001), Faiths & Pantheons (2002), various FR sourcebooks
 
 Note: Artifacts cannot be created by mortal means and cannot be destroyed by normal means.

@@ -1,5 +1,18 @@
 # Campaign Coherence Constraints
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- 0. Source Ranking (when sources disagree)
+- 1. History Reference Constraints
+- 2. Artifact Constraints
+- 3. PG Interaction Constraints
+- 4. Tone Constraints (R.A. Salvatore profile)
+- 5. Sandbox / "Andor-like" Constraints
+- 6. Agent Self-Check Protocol
+- 7. Changelog (append-only)
+<!-- /indice -->
+
 Hard rules an agent (and DM) must respect when generating new content for
 RumblingStone. The point is to keep a long, sandbox-style campaign coherent
 across many sessions without losing the R.A. Salvatore tone of slow

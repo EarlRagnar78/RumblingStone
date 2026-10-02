@@ -1,5 +1,18 @@
 # Le sei famiglie di caso
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- 1. Chi è stato — omicidio, furto, sabotaggio
+- 2. L'impostore — qualcuno non è chi dice
+- 3. La cospirazione — molte persone, uno scopo
+- 4. La sparizione — qualcuno o qualcosa non c'è più
+- 5. L'accusa falsa — qualcuno (magari un PG) è incolpato
+- 6. Il congegno — cosa si sta costruendo
+- Lo scheletro, generico
+- Scegliere in trenta secondi
+<!-- /indice -->
+
 Il congegno è **una** delle risposte possibili, non la struttura. Tutto
 l'impianto (nodi a tre strati, sei porte, ricomposizione, falsi indizi,
 vicolo cieco, Acume e Perizia) è identico in tutte e sei le famiglie: cambia

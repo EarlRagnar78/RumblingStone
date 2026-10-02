@@ -1,5 +1,16 @@
 # Il lettore a freddo — rubrica fissa
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- Le condizioni
+- La lettura a scene
+- Le domande, sempre le stesse
+- I sei codici
+- L'uscita
+- Come si usa il risultato
+<!-- /indice -->
+
 Il lettore è un DM esperto che **non ha mai visto il modulo** e deve portarlo
 al tavolo stasera. Legge dall'inizio alla fine, una volta, e annota ogni punto
 in cui dovrebbe **inventare** o **cercare** per andare avanti. Non giudica lo

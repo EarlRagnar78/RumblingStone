@@ -184,6 +184,13 @@ Run the coherence self-check (`campaign-coherence.md` §6) first, then:
    `rumblingstone-indagine/references/documento-ed-errore-fecondo.md` §4-5.)
 7. Did any box grow past the read-aloud ceiling because the prose got
    interesting? (If yes → cut; the ceiling wins.)
+8. **Misura, correggi, rimisura** (ADR-0077). `python3 scripts/ciclo_prosa.py
+   segnala FILE` risponde con un comando alle domande 7 e 2 e ai calchi di
+   `italiano-nativo` §1; si corregge e si rimisura finché non resta niente o
+   resta solo quello che si sa difendere. Se il file **c'era già** (un master,
+   un handout consegnato), non si sovrascrive: si scrive la versione nuova
+   accanto e `ciclo_prosa.py revisione ORIGINALE NUOVO -o REVISIONE-….md`
+   produce il documento che il DM approva modifica per modifica.
 
 ---
 

@@ -1,5 +1,21 @@
 # Forgotten Realms — Regions Complete Reference (D&D 3.5)
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- THE SWORD COAST AND THE NORTH
+- THE HEARTLANDS
+- THE MOONSEA AND SURROUNDS
+- THE FAR NORTH
+- THE UNDERDARK (UNDER-FAERÛN)
+- THE SOUTH AND WEST
+- THE EASTERN HEARTLANDS AND BEYOND
+- THE INNER SEA COAST
+- ISLAND REALMS AND ISOLATED NATIONS
+- THE UNDERDARK REGIONS (Summary)
+- REGIONAL FEATS (Player's Guide to Faerûn)
+<!-- /indice -->
+
 Sources: FRCS (2001), Silver Marches (2002), Unapproachable East (2003), Shining South (2004),
 Serpent Kingdoms (2004), Lands of Intrigue (1997)
 Live: https://forgottenrealms.fandom.com/wiki/[Region_Name]

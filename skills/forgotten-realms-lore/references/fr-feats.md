@@ -1,5 +1,17 @@
 # Forgotten Realms — Feats Complete Reference (D&D 3.5)
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- REGIONAL FEATS (Player's Guide to Faerûn)
+- DIVINE FEATS (Faiths & Pantheons / Complete Divine)
+- FR-SPECIFIC GENERAL FEATS
+- METAMAGIC FEATS (Core SRD — recap for cross-reference)
+- ITEM CREATION FEATS (Core — recap)
+- FIGHTER BONUS FEATS (Standard but heavily used in FR)
+- FEAT INTERACTION NOTES (FR-Specific)
+<!-- /indice -->
+
 Sources: Player's Guide to Faerûn (2004), Faiths & Pantheons (2002), FRCS (2001),
 Champions of Valor (2005), Champions of Ruin (2005), Races of Faerûn (2003)
 

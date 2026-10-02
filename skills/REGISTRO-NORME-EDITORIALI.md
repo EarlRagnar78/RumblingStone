@@ -40,6 +40,9 @@
 | `read-aloud-adulti.md` | **niente parentesi né incisi** lunghi | **minore** · `box_con_parentesi` | 🟢 `misura_craft --box` |
 | `read-aloud-adulti.md` | max **due livelli** di subordinate | **minore** | 🔴 non misurato — servirebbe un parser sintattico dell'italiano; il segnale povero (contare le virgole) darebbe falsi positivi come i 64/64 di `PIANO-PROSA-CHE-NON-SEMBRI-GENERATA` |
 | `read-aloud-adulti.md` | box di combattimento chiude su **«Che fate?»** | **maggiore** | 🟢 congegno `chiusura su decision point` |
+| `read-aloud-adulti.md` §2-bis | il box di luogo sta in **poche frasi** (*Dungeon*) | **minore** | 🟡 `misura_craft --box`, colonna `>4 frasi` — **indicatore senza peso**: 61 box su 104 nei master DEF di ARC-07, uno su 11 nell'Abbazia. Accanto, la colonna `>500 car` misura la proposta del 2026-10-01, che **non è** una norma finché il DM non decide (PIANO-BOX-DI-LUOGO-E-AREA-CHIAVE, D1) |
+| `read-aloud-adulti.md` §2-bis | il box di luogo **non descrive le creature** (*Dungeon*): entrano con la scheda d'entrata o con un box loro | **minore** | 🔴 non misurato — i box non dichiarano il loro tipo (di luogo, d'ingresso, di round), e senza quel dato il registro dei 322 nomi pesca **315 box su 501**, quasi tutti dei, PG e artefatti nominati a ragione. È una convenzione che manca, non un codice (`superficie_norme.py`) |
+| `read-aloud-adulti.md` §2-bis | l'**ordine** del box di luogo: spazio e luce, cosa lo occupa, per ultima la cosa strana | — è una forma consigliata, non un divieto: un box che apre sulla cosa strana può essere la scelta giusta | ⚪ non applicabile |
 | `editorial-standards.md` | `**Read-aloud (pilastro lead).**` etichettato | **maggiore** | 🟢 congegno `regia etichettata **Read-aloud (X)**` |
 | `editorial-standards.md` | `**NOME (registro/tono):** *«battuta»*` | **maggiore** | 🟢 congegno `dialogo nella forma dichiarata` |
 | `editorial-standards.md` | **la quarta colonna**: un blocco sensoriale chiude con «Cosa NON dire» (ADR-0057) | **minore** | 🟡 congegno `quarta colonna sensoriale` — conta **chi ce l'ha**, non accusa chi non ce l'ha: non esiste modo automatico di sapere se un blocco *avrebbe dovuto* averla |
@@ -80,6 +83,7 @@
 | `consequence-echoes.md` §3-ter, regola 3 | un eco per un PG **non anticipa**: niente numeri o meccaniche, niente scelte che il tavolo deve ancora fare, nessuna spiegazione del frammento | **maggiore** | 🔴 non misurato — «anticipare una scelta» dipende da cosa succede **dopo** nel modulo, e un rilevatore dovrebbe leggere il master insieme all'eco. Il segnale povero (cifre e «CD» dentro un testo per i giocatori) prenderebbe anche le schede, che i numeri li devono avere. 🔎 Nasce da un rilievo del DM il 2026-09-24, sui fogli della serata della resurrezione |
 | `rumblingstone-module-standard` | le 16 sezioni obbligatorie della checklist | **maggiore** | 🟡 `validate_modules.py` — **solo su `ARC*-DEF-*.md`**: 96 file su 100 non sono mai guardati |
 | `rumblingstone-module-standard` §8 | sidebar **«Scalare lo scontro»** obbligatoria per i boss | **maggiore** | 🟢 congegno `scalare lo scontro` — e dice **zero** in tutti i 71 file di ARC-08 e ARC-09 |
+| `rumblingstone-module-standard` §7 · l'area chiave | le voci di *Dungeon* nell'ordine (read-aloud senza creature, Dati per il DM con la riga SRD degli oggetti, creature, tattiche, trappole, tesoro, sviluppo) | **minore** | 🟡 `domande_developer.py --check` ne guarda una parte: lo **Sviluppo** che dice chi sente lo scontro e in quanti round arriva (D4). L'ordine delle voci e la riga degli oggetti non li guarda nessuno: vale per i master nuovi, e i nuovi nascono sotto `componenti.py`, dove una forma fissa è il passo naturale |
 | `rumblingstone-prosa-documenti` | norme sui **documenti** del repo (non sul contenuto di gioco) | **minore** | 🟢 `validate_prosa.py --documenti` |
 | `rumblingstone-editoria` | impaginazione, riquadri, statblocchi in stampa | **maggiore** | 🟢 `validate_booklets.py --stampa` |
 | `rumblingstone-editoria` §2 · §4.4 | una **mappa** in un booklet **entra in colonna (≤ 48 celle) o va su una pagina A4** a una colonna, e non va mai a capo; oltre 110 celle scende sotto i 9 pt | **maggiore** | 🟢 `validate_booklets.py --stampa` — compila ogni volume con l'esportatore che applica la regola da sé (`CELLE_COLONNA`, `#griglia`), e `TestMappeCheNonEntranoInColonna` ne tiene i casi. La soglia delle 110 celle è un **avviso** dell'esportatore, non un rosso: la mappa resta leggibile, solo più piccola. 🔎 Nasce dalle mappe di `DEF-2` uscite a brandelli nel volume della serata, 2026-09-25 |
@@ -131,9 +135,9 @@
 | | Norme registrate |
 |---|---:|
 | 🟢 misurate | 37 |
-| 🟡 misurate in parte, con il limite scritto | 24 |
-| 🔴 **non misurate, con la ragione scritta** | 14 |
-| ⚪ non applicabili | 3 |
+| 🟡 misurate in parte, con il limite scritto | 26 |
+| 🔴 **non misurate, con la ragione scritta** | 15 |
+| ⚪ non applicabili | 4 |
 
 > 🐛 **Questi quattro numeri erano sbagliati tutti e quattro**, e nessuno se
 > n'era accorto perché erano scritti a mano: dicevano **16+9+12+3 = 40** su

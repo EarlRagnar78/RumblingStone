@@ -42,6 +42,80 @@ conclusione che vuoi che i PG raggiungano, metti almeno tre indizi**. Il
 motivo è dichiarato e riguarda il tavolo, non l'eleganza: con meno di tre, è
 del tutto possibile che il gruppo ne manchi uno e che il gioco si fermi.
 
+### 1.4 · Il box e l'area chiave — *Dungeon*, riletto il 2026-10-01
+
+Riletto sulla fonte per verificare il testo del §1.5. Le linee guida dicono,
+oltre al §1.1:
+
+1. il read-aloud *«should only rarely run more than a few sentences»*; i testi
+   lunghi vanno in un **handout**;
+2. il read-aloud **non descrive le creature** presenti, perché posizione e
+   attività dipendono da come arrivano i PG;
+3. un incontro ha queste voci, tutte facoltative salvo l'EL nell'intestazione:
+   **Read-aloud**, **Descrizione generale** (effetti, scopo della stanza, le
+   statistiche degli oggetti che probabilmente si romperanno), **Creature**,
+   **Tattiche**, **Trappole**, **Tesoro**, **Sviluppo** (chi sente lo scontro,
+   quando i nemici si arrendono o fuggono, come l'incontro cambia dopo),
+   **Aggiustamento PX ad hoc**;
+4. gli oggetti hanno una riga fissa: spessore, Durezza, pf, CD per rompere;
+5. nella descrizione generale di un'avventura si dice come sono illuminati i
+   luoghi e che porte prevalgono: è testo **per il DM**, non un box.
+
+Applicato in `read-aloud-adulti.md` §2-bis (1, 2) e in
+`rumblingstone-module-standard` §7 (3, 4).
+
+### 1.5 · Il testo portato dal DM il 2026-10-01: cosa ha una fonte
+
+Il DM ha portato un testo che descrive *«gli standard editoriali»* di WotC e
+Paizo per il boxed text e l'introduzione di sezione, con un modello di stanza
+e uno statblock d'esempio. Verificato punto per punto:
+
+| Affermazione | Esito | Dove va |
+|---|---|---|
+| box di stanza in **3-4 frasi** | 🟢 coerente con *Dungeon* («poche frasi») | `read-aloud-adulti.md` §2-bis; misurato da `misura_craft --box`, colonna `>4 frasi` |
+| box di stanza in **300-500 caratteri** | ⚠️ **nessuna fonte**: *Dungeon* conta frasi, non caratteri | indicatore `>500 car`, decisione del DM (PIANO-BOX-DI-LUOGO-E-AREA-CHIAVE, D1) |
+| introduzione di sezione in **800-1.200 caratteri**, letta una volta | ⚠️ nessuna fonte; *Dungeon* mette illuminazione e porte in un testo **per il DM** | il repo ce l'ha già: è l'**apertura di scena** di 8-12 righe (`read-aloud-adulti.md` §2) |
+| niente reazioni o emozioni presunte dei PG | 🟢 è il §1.1, già norma | P1, `misura_craft --p1` |
+| il box si ferma prima dell'azione | 🟢 il repo ce l'ha già | congegno «chiusura su decision point», «Che fate?» |
+| ordine: spazio e luce → arredo → dettaglio strano | 🟡 nessuna fonte primaria, è pratica di mestiere | `read-aloud-adulti.md` §2-bis, come forma consigliata |
+| la **prima frase dà le dimensioni** («quaranta piedi») | 🔴 **in conflitto con ADR-0014** (niente metrature nella voce narrante) | decisione del DM (PIANO-BOX-DI-LUOGO-E-AREA-CHIAVE, D2); nel frattempo vale ADR-0014, e le misure vanno nei Dati per il DM |
+| caratteristiche della stanza fuori dal box (lato, pareti, porta con CD, Durezza, pf) | 🟢 è la «descrizione generale» di *Dungeon* | `module-standard` §7, l'area chiave |
+| lo statblock delle **ombre** | 🔴 **sbagliato in tutti e due i sistemi**, vedi sotto | non si usa: gli statblocchi vengono dal Bestiario |
+| «usa il template 3.5 o quello PF1e» | ⚪ già deciso | la campagna gira su 3.5; il Drappo su PF1e |
+
+🔴 **Lo statblock d'esempio mescola 3.5 e PF1e e sbaglia in entrambi.**
+Confrontato con [d20srd.org](https://www.d20srd.org/srd/monsters/shadow.htm) e
+[Archives of Nethys](https://aonprd.com/MonsterDisplay.aspx?ItemName=Shadow):
+
+| Voce | Nel testo | SRD 3.5 | PF1e (Bestiary p. 245) |
+|---|---|---|---|
+| GS | 2 | 3 | 3 |
+| pagina | 218 | — | 245 |
+| CA | 15, contatto 15, impreparato 12 (+3 deviazione, +2 Des) | 13, contatto 13, impreparato 11 (+2 Des, +1 deviazione) | 15, contatto 15, impreparato 12 (+2 deviazione, +2 Des, +1 schivare) |
+| TS | Tem +1, Rif +3, Vol +4 | **Tem +1, Rif +3, Vol +4** | Tem +3, Rif +3, Vol +4 |
+| DMC / BMC | 15 / — | (non esiste) | 17 / +4 |
+| tocco | +4 | +3 | +4 |
+| talenti | «Furtività Rapida» | Allerta, Schivare | Schivare, Abilità Focalizzata (Percezione) |
+
+I tiri salvezza sono quelli della 3.5, il resto è PF1e con errori. È il motivo
+per cui `AGENTS.md` dice *«non inventare mai blocchi statistiche»*: uno
+statblock scritto a memoria sembra giusto e non lo è. Anche le abilità del
+modello (Percezione, Furtività, Conoscenze (Nobiltà)) sono PF1e: in un master
+3.5 le segnala già `domande_developer.py` (D6-5E).
+
+**Misurato sui box del repo** (estrattore `box_read_aloud`, 501 box nei file di
+gioco): mediana **347 caratteri**; **122 (24%) oltre i 500**, 28 oltre gli 800.
+Sui master DEF di ARC-07: 104 box, mediana fra 315 e 466 caratteri per master,
+**27 oltre i 500** e **61 oltre le quattro frasi**. Lo stand-alone
+dell'Abbazia, che è il banco del repo, ha 11 box: **zero** oltre i 500, uno
+oltre le quattro frasi.
+
+**Creature nel box di luogo: nessun rilevatore affidabile.** Con i 322 nomi del
+registro, **315 box su 501 (63%)** contengono almeno un nome, ma il registro
+comprende dei, PG, artefatti e parole come «Eterna»: il numero misura il
+registro, non la norma. Per misurarla davvero ogni box dovrebbe dichiarare il
+suo tipo (di luogo, d'ingresso, di round), e oggi nessuno lo fa.
+
 ---
 
 ## 2 · Quali diventano un controllo, e a che punto siamo

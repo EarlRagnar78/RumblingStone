@@ -134,7 +134,12 @@ si leggono da soli, senza la voce del DM a coprirli. Tre errori ricorrenti:
 **a) La seconda persona meccanica.** «Tu senti», «tu vedi», «tu sai» ripetuti
 sono inglese. L'italiano lascia cadere il pronome e varia l'attacco.
 > ❌ *Tu senti il peso. Tu sai che qualcosa non va.*
-> ✅ *Il peso lo senti nello sterno, non nelle spalle. E qualcosa non torna.*
+> ✅ *Il peso, la Corona lo mette nello sterno e non nelle spalle. E qualcosa non torna.*
+
+Anche il «senti» senza pronome decide al posto del giocatore cosa prova: lo
+dice P1 (`read-aloud-adulti.md` §1, punto 6). La dislocazione resta, ma il
+soggetto è l'oggetto, non il PG. Fino al 2026-10-02 l'esempio era *«Il peso lo
+senti nello sterno»* (D14).
 
 **b) La spiegazione appiccicata.** L'inglese chiude spiegando; l'italiano
 letterario **si ferma prima**.
@@ -164,14 +169,18 @@ unico blocco senza colpo finale.
 **Dopo:**
 
 > *Da quando si è aperto l'affresco della Terra, la Corona non ti lascia stare.
-> Il Topazio batte, e Aegis Fang batte con lui — non canta più, l'ascia:
-> **vibra**, e vibra più forte a ogni passo che scendi. L'hai già visto fare a
-> un cane, questo. Mai a un'ascia.*
+> Il Topazio batte, e Aegis Fang batte con lui. Non canta più, l'ascia:
+> **vibra**, e vibra più forte a ogni gradino verso il centro. Un cane lo fa.
+> Un'ascia, mai.*
 
-Cosa è cambiato: «non ti lascia stare» (idioma, non calco) · «batte» due volte
-per fare il ritmo che il testo descrive · la dislocazione *«non canta più,
-l'ascia»* · il paragone **rovesciato in fondo** e non spiegato, con la frase
-corta che stampa.
+Cosa è cambiato: «non ti lascia stare» (idioma, non calco; e a muoversi è la
+Corona, non il PG) · «batte» due volte per fare il ritmo che il testo descrive ·
+la dislocazione *«non canta più, l'ascia»* · il paragone **rovesciato in fondo**
+e non spiegato, con la frase corta che stampa.
+
+Fino al 2026-10-02 il «dopo» diceva *«a ogni passo che scendi»* e *«L'hai già
+visto fare a un cane»*: due cose che decidono il giocatore, se scende e cosa
+ricorda (P1, D14). Il trattino lungo dopo «lui» è caduto con loro.
 
 ---
 

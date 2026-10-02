@@ -408,8 +408,10 @@ dall'instradamento all'**uscita**: cosa scrive un agente con la skill e senza.
       con le skill: l'etichetta su **ogni** box, il tono del dialogo in poche
       parole (`editorial-standards` §2); D14, P1 scritta in
       `read-aloud-adulti.md` §1 e l'esempio della reticenza rifatto; D13, la
-      norma su «sembra» nella skill, nel registro e nel voto. I due esempi
-      dei testi per un solo giocatore restano: lì la seconda persona è lecita
+      norma su «sembra» nella skill, nel registro e nel voto. Il 2026-10-02,
+      su richiesta del DM, anche i due esempi di `italiano-nativo.md` §6 e §7
+      (testi per un solo giocatore, dove P1 lascia la seconda persona): ora
+      a muoversi è l'oggetto, non il PG
 - [ ] il lotto dei 34 box con «sembra» o «pare» (D13)
 - [ ] tornata B con le skill corrette, e il confronto sulla verifica
 - [ ] `RISULTATI.md`, i test del voto, la voce nel manifest

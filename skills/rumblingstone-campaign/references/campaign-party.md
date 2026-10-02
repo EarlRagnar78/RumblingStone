@@ -1,5 +1,15 @@
 # The Rumbling Stone — Party Reference (D&D 3.5)
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- Party Name: The Rumbling Stone
+- Party Composition
+- Party Tactics
+- Key NPCs Bonded to Party
+- Campaign Progression Summary
+<!-- /indice -->
+
 Campaign: RumblingStone (Red Hand of Doom adaptation, Cannath Vale / Forgotten Realms 1372 DR)
 Current party level: **13** | Party size: **4 PCs**
 

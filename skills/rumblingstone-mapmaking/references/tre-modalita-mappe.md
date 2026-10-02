@@ -1,5 +1,16 @@
 # Le 3 modalità di mappa — quale pipeline usare e perché
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- Colpo d'occhio
+- Modalità 1 — Tattica standard
+- Modalità 2 — Cinematografica / scenica
+- Modalità 3 — Tattica con strutture ed eserciti (il pezzo nuovo)
+- Formati di consegna (tutte le modalità)
+- Migrare un ultra-clear esistente (Modalità 3 "al contrario")
+<!-- /indice -->
+
 > **A cosa serve**: dare un modello mentale unico alle mappe della campagna.
 > Tutte e tre le modalità **esistono già** nel repo con strumenti diversi;
 > questo file dice *quale* usare, *quando*, e *come far agire un LLM* senza che

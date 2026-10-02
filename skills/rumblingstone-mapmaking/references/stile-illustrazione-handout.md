@@ -1,5 +1,14 @@
 # Direzione artistica per handout e splash (Modalità 2)
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- ⚖️ Confine IP — leggere prima (importante)
+- Vocabolario del look "eroico classico da manuale" (convenzioni, non autori)
+- Coerenza con la banca prompt esistente
+- Dove NON usare questo look
+<!-- /indice -->
+
 > **A cosa serve**: dare un vocabolario di prompt per ottenere immagini
 > d'atmosfera nel look "manuale fantasy classico anni 2000" (l'idioma visivo
 > dei manuali Pathfinder 1E / D&D 3.5 dell'epoca), da usare con l'infra ComfyUI

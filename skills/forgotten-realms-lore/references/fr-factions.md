@@ -1,5 +1,24 @@
 # Forgotten Realms — Factions & Organizations (D&D 3.5)
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- THE HARPERS
+- THE ZHENTARIM (The Black Network)
+- THE RED WIZARDS OF THAY
+- THE LORDS' ALLIANCE
+- THE EMERALD ENCLAVE
+- THE CULT OF THE DRAGON
+- THE MOONSTARS (Telkiira)
+- BREGAN D'AERTHE
+- THE ORDER OF THE GAUNTLET (Historical Precursor)
+- CITY-SPECIFIC FACTIONS
+- CRIMINAL AND UNDERGROUND ORGANIZATIONS
+- MILITARY AND KNIGHTLY ORDERS
+- ARCANE ORGANIZATIONS
+- CAMPAIGN-SPECIFIC FACTIONS (RumblingStone)
+<!-- /indice -->
+
 Sources: FRCS (2001), Lords of Darkness (2003), Power of Faerûn (2006), various sourcebooks
 
 ---

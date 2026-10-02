@@ -1,5 +1,19 @@
 # Read-aloud per adulti che leggono fantasy
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- 1. La cosa che cambia tutto: **si ascolta, non si legge**
+- 2. Lunghezza: la finestra reale è più corta di quanto sembri
+- 2-bis. Il box di luogo: poche frasi, un ordine, niente creature
+- 3. Cosa premia questo pubblico
+- 4. Cosa li fa staccare (e sono tutti errori di genere, non di lingua)
+- 5. Il registro alto senza il ridicolo
+- 6. Il dialogo dei PNG davanti a questo pubblico
+- 7. La checklist prima di leggere ad alta voce
+- 8. Rapporto con gli altri riferimenti
+<!-- /indice -->
+
 **Il pubblico di questo tavolo**: adulti acculturati, lettori di fantasy da
 vent'anni. Hanno letto Tolkien, Martin, Le Guin, Wolfe, Salvatore,
 Abercrombie. Conoscono i cliché del genere **meglio di chi scrive**, e li sentono
@@ -22,7 +36,7 @@ Questo cambia tre cose in modo non negoziabile:
 ## 1. La cosa che cambia tutto: **si ascolta, non si legge**
 
 Un read-aloud non è prosa: è **testo parlato**. Il lettore di un libro può
-tornare indietro; chi ascolta no. Da qui cinque vincoli che la pagina non ha:
+tornare indietro; chi ascolta no. Da qui i vincoli che la pagina non ha:
 
 1. **Un solo nome proprio nuovo per box.** Chi ascolta non può rileggere.
    Se in un box compaiono *Skullcrusher*, *Thorgrim* e *Barbadiferro*, la
@@ -35,6 +49,17 @@ tornare indietro; chi ascolta no. Da qui cinque vincoli che la pagina non ha:
    Ripeti il nome: nel parlato la ripetizione è chiarezza, non povertà.
 5. **L'ultima cosa detta è quella che resta.** Metti in fondo ciò che vuoi
    che ricordino, e **non aggiungere niente dopo**.
+6. **Il box non decide per il giocatore** (P1, dalle linee guida di
+   *Dungeon*). Niente *«entrate»*, *«vedete»*, *«ti accorgi»*, *«senti»*: il box
+   dice cosa c'è, il giocatore dice cosa fa e cosa prova. Restano fuori i
+   dialoghi, le visioni d'artefatto e i testi per **un solo** giocatore (echi,
+   hint), dove la seconda persona è la scelta giusta. Misura:
+   `misura_craft --p1` (D14 di PIANO-AGENT-SKILLS-ESTERNE).
+7. **Niente *«sembra»* né *«pare»*.** Il narratore che esita toglie al tavolo
+   la certezza su ciò che vede: se la sala è vuota, è vuota; se non lo è, la
+   cosa che non torna si descrive. *«Come se»* resta, perché è un paragone.
+   Viene da Shawn Merwin (*D&D Beyond*); misura: `voto_scrittura.py`,
+   controllo `box_senza_sembra` (D13).
 
 **Prova pratica, dieci secondi**: leggi il box **ad alta voce**. Se ti manca il
 fiato, se devi rileggere una riga, se inciampi su un nome — il testo è
@@ -55,6 +80,51 @@ sbagliato. Non è il tuo respiro: è la frase.
 ⚠️ **Oltre le 12 righe l'attenzione cade, e con adulti cade in silenzio** —
 non ti interrompono, smettono di ascoltare e tu non te ne accorgi. Se un box
 supera le 12 righe: o è due box, o metà è ridondante.
+
+---
+
+## 2-bis. Il box di luogo: poche frasi, un ordine, niente creature
+
+Le linee guida per gli autori di *Dungeon* (Paizo, era 3.5) dicono che il
+read-aloud di un'area **solo di rado supera poche frasi**, e che i testi lunghi
+stanno meglio in un handout. Dicono anche una cosa che il repo non aveva
+scritto: **il box di un luogo non descrive le creature che ci sono**, perché
+dove stanno e cosa fanno dipende da come arrivano i PG (se li hanno sentiti,
+se è giorno o notte). Fonte e misure: `RICERCA-STANDARD-PROSA-WOTC-PAIZO` §1.4.
+
+**Il box di luogo** (una stanza, una radura, un cortile) segue un ordine che
+funziona quasi sempre:
+
+1. **com'è lo spazio e com'è la luce**, per paragone con cose già viste
+   (ADR-0014: le misure vanno nei **Dati per il DM**, non nella voce);
+2. **cosa lo occupa**: poco, e solo ciò con cui i giocatori vorranno fare
+   qualcosa;
+3. **per ultima, la cosa strana o pericolosa**, quella che chiama un'azione.
+   È il punto 5 del §1 applicato al luogo: l'ultima cosa detta è quella che
+   resta.
+
+Poi **il box si ferma**: prima dell'iniziativa e prima di qualunque azione dei
+PG. Chi c'è entra con la sua **scheda d'entrata** o con un box suo
+(ADR-0073), non dentro la descrizione della stanza.
+
+> *La volta è crollata a metà, e dalla breccia scende la luce della luna.
+> Fra i blocchi di marmo caduti, una fontana a forma di drago getta un liquido
+> rosso e denso che non fa schiuma. Tre porte di legno marcio, una per parete.
+> L'aria sa di zolfo.*
+
+Quattro frasi, e nessuna misura: la stanza si capisce dal paragone, e i nove
+metri di lato stanno nei Dati per il DM.
+
+**Il box d'area** (un livello intero del dungeon, una città, una valle) è
+l'**apertura di scena** della tabella del §2: 8-12 righe, letta una volta,
+quando il tavolo sa che comincia una parte nuova. Lì vanno il clima, la luce
+e la forma del luogo intero. La storia del luogo ci entra solo come cosa che
+si vede (un'iscrizione consumata, un muro rifatto due volte), mai come
+spiegazione.
+
+⚙️ `python3 scripts/misura_craft.py --box` conta i box oltre le **quattro
+frasi** e oltre i **500 caratteri**. Sono indicatori, non soglie: il tetto del
+repo resta quello delle righe, finché il DM non decide (PIANO-BOX-DI-LUOGO-E-AREA-CHIAVE, D1).
 
 ---
 
@@ -93,9 +163,12 @@ qualcuno che ha le mani sporche di grasso. Non paga in trama. Paga in mondo.
 ### La reticenza sull'emozione
 
 > ❌ *«Provi una tristezza profonda e inaspettata.»*
-> ✅ *«Ti accorgi che hai smesso di camminare.»*
+> ✅ *«Durin si ferma. Si toglie l'elmo, e non dice niente.»*
 
-Il comportamento al posto dell'etichetta. Sempre.
+Il comportamento al posto dell'etichetta. Sempre. E il comportamento è di
+**qualcun altro**, o del mondo: quello del PG lo decide il giocatore (punto 6).
+Fino al 2026-10-01 l'esempio qui sopra era *«Ti accorgi che hai smesso di
+camminare»*, che decideva proprio questo (D14).
 
 ---
 
@@ -145,8 +218,12 @@ concreto sporco, e poi una riga che si alza. L'effetto è tutto nello scarto.
 
 - [ ] L'ho **letto ad alta voce** almeno una volta?
 - [ ] Sta **sotto le 12 righe** (2-4 se è un round)?
+- [ ] Se è un box di luogo: spazio e luce, poi cosa lo occupa, per ultima la
+      cosa strana; **nessuna creatura** dentro, e si ferma prima dell'azione?
 - [ ] C'è **al massimo un nome proprio nuovo**?
 - [ ] Nessuna subordinata di terzo livello, nessuna parentesi?
+- [ ] Nessun *«vedete»*, *«entrate»*, *«ti accorgi»*, che decidono al posto del giocatore?
+- [ ] Nessun *«sembra»* o *«pare»*?
 - [ ] C'è **una cosa concreta e competente** (materiale, mestiere, tempo)?
 - [ ] C'è **un dettaglio che non serve a niente**?
 - [ ] Ho tolto **la frase che spiega** l'ultima immagine?

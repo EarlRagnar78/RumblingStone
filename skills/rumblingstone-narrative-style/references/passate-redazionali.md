@@ -1,5 +1,14 @@
 # Le passate redazionali — il giro, non la norma
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- Le tre passate, in quest'ordine, e mai insieme
+- Quando un testo è **chiuso**
+- Come si **riapre**
+- Chi fa cosa (per non sprecare token)
+<!-- /indice -->
+
 La **norma** sta in `editorial-standards.md` (come si scrive) e in
 `italiano-nativo.md` (come non si scrive tradotto). Qui c'è il **giro**: quante
 passate, cosa si guarda in ciascuna, quando un testo è chiuso e come si riapre.

@@ -61,6 +61,14 @@ Non è una tabella da consultare: è una **procedura**, e l'ordine conta.
    (LR si consulta quando serve un fatto, mai per decidere)
 ```
 
+🔎 **Un primo suggerimento dalla frase del DM**:
+`python3 scripts/instradamento_skill.py --frase "<la richiesta>"` dice quali
+skill obbligatorie raggiungono i trigger delle descrizioni, e avvisa se le
+raggiungono tutte e due le L1. È il pavimento lessicale (PIANO-AGENT-SKILLS-
+ESTERNE L8): non sostituisce le cinque domande, le precede. Su trenta frasi
+vere del DM i trigger raggiungono 32 skill obbligatorie su 47; un agente che
+legge le descrizioni intere ne carica 41 (`plans/instradamento/`).
+
 ⚠️ **La 2 è l'unica con una risposta sola.** Tutte le altre possono
 sommare — è la regola «le righe si sommano» di `AGENTS.md`, resa esplicita.
 

@@ -1,5 +1,18 @@
 # RumblingStone Campaign — Story Arc Reference (Agent Navigation)
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- CURRENT STATE (as of last update)
+- ARC INDEX (Sequential)
+- VILLAIN STATUS TRACKER
+- ALLY STATUS TRACKER
+- ARTIFACT STATUS
+- FUTURE ARC SUMMARY (What's Next)
+- BRANCHING DECISIONS (DM Reference)
+- CROSS-REFERENCES
+<!-- /indice -->
+
 Quick-lookup reference for AI agents needing campaign state, arc progression, and narrative context.
 For full narrative details, see `campaign/lore/campaign-chronicle.md` (this table) and `campaign/lore/campaign-premise.md` (shared premise).
 

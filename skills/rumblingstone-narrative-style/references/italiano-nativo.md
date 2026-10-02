@@ -1,5 +1,20 @@
 # Italiano nativo — come non scrivere in traduttese, e come non farsi riconoscere
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- 1. I dieci calchi che tradiscono subito
+- 2. Gli strumenti che l'inglese non ha (usali: sono la firma)
+- 3. I tempi verbali: la scelta che fa il tono
+- 4. Il ritmo: l'italiano respira più lungo
+- 5. Il registro nanico (e perché non è «fantasy generico»)
+- 6. Handout per i giocatori: la trappola specifica
+- 7. Esempio smontato — da traduttese a italiano
+- 8. Checklist di revisione (30 secondi a handout)
+- 9. I tic dell'IA — un problema diverso dal traduttese
+- 10. Chi fa cosa
+<!-- /indice -->
+
 Riferimento nato da un **rilievo dei giocatori al tavolo** (2026-07-31): gli
 handout *«sembrano traduzioni maldestre dall'inglese»*. Avevano ragione, e il
 difetto è doppio:
@@ -36,6 +51,29 @@ in `editorial-standards.md`. Qui sta la **lingua**.
 | «senti il PESO, e la paura, e il freddo» | «senti il peso. E la paura. Poi il freddo.» | la lista con virgole all'inglese è piatta: l'italiano **spezza** o usa l'asindeto |
 | «**mentre** la porta si apriva, tu entravi» | «Si aprì la porta, ed entrasti» | il *while*-gerundio inglese è una stampella: l'italiano coordina |
 | «la **sensazione di cadere**», «un **senso di** vuoto» | «cadi», «sotto non c'è niente» | l'inglese nominalizza, l'italiano **verbalizza** |
+
+### 1-bis. Dal repo, e il confine di ogni regola
+
+Le sei regole di questa tabella che `validate_prosa.py` misura, ognuna con due
+casi **veri**, presi dai file di gioco il 2026-10-02 con `ciclo_prosa.py
+segnala`: uno sbagliato con la sua riscrittura, e uno che il rilevatore prende
+ma è italiano giusto. Il secondo serve quanto il primo: una regola applicata
+senza il suo confine rovina la frase che voleva salvare.
+
+| Regola | ❌ trovato nel repo → ✅ riscritto | ✅ trovato nel repo, ed è giusto |
+|---|---|---|
+| *eventualmente* | «La magia ha una durata, **finirà eventualmente**» (`moradin_divine_guidance_italian.md`) → «La magia ha una durata: prima o poi finisce» | «Tunnel d'arrivo (inseguitori orchi, **eventualmente**)» (`Atlante-Hammerfist-Mappe-COMPLETE.md`): qui vuol dire *casomai*, ed è il suo senso italiano |
+| *realizzare* | «guarda il corpo di Hella nella visione: **realizzi che** lei è QUI» (`PortaleForgia-P1-REVISED-Corretta.md`) → «Hella è qui, in piedi accanto a te, trasparente come fumo» | «Il fabbro **realizza** l'ascia in tre notti»: *portare a compimento*, nessun calco |
+| progressivo | «**State attraversando** il ponte naturale quando Tordek si ferma» (`PortaleForgia-P3-PianoFuoco-PARTE1.md`) → «A metà del ponte naturale Tordek si ferma. "Movimento. Là."» | «I semi smettono di pulsare. **Stanno decidendo.**» (`ARC07-DEF-3`): il progressivo isola un attimo che dura, ed è voluto |
+| possessivo sul corpo | «Il nano Belkram, **la sua** pelle pallida e tesa sulle ossa […] **La sua** mano destra poggia sul pomo» (`Descrizioni.md`, ARC-06) → «Belkram ha la pelle tesa sulle ossa. La destra posa sul pomo del maglio» | «combatte accanto a voi **con le sue mani**» (`ARC07-DEF-3`, Moradin): il possessivo dice *di chi*, perché le mani sono di un altro, ed è enfasi |
+| nominalizzazione | «Dà ai PG **la sensazione** di non essere soli» (`…FASE3-AZARRKUL-AVATAR-TESTO.md`) → «I PG non si sentono più soli» | «Il freddo arriva prima del rumore»: il nome concreto non è una nominalizzazione |
+| *assumere* | nessun caso nei file di gioco, 2026-10-02 | «Thorik **assume** il comando della breccia»: *prendere su di sé*, il senso italiano |
+
+⚠️ Il terzo caso di ogni riga è nella tabella sopra, ed è inventato: questi due
+sono veri, e le riscritture rispettano anche P1 (`read-aloud-adulti.md` §1.6).
+Nessuno dei file ❌ è un master DEF: vengono da generazioni vecchie, ancora sul
+disco. Per correggerli si passa da `ciclo_prosa.py revisione` (ADR-0077), non
+da questa tabella.
 
 ---
 
@@ -134,7 +172,12 @@ si leggono da soli, senza la voce del DM a coprirli. Tre errori ricorrenti:
 **a) La seconda persona meccanica.** «Tu senti», «tu vedi», «tu sai» ripetuti
 sono inglese. L'italiano lascia cadere il pronome e varia l'attacco.
 > ❌ *Tu senti il peso. Tu sai che qualcosa non va.*
-> ✅ *Il peso lo senti nello sterno, non nelle spalle. E qualcosa non torna.*
+> ✅ *Il peso, la Corona lo mette nello sterno e non nelle spalle. E qualcosa non torna.*
+
+Anche il «senti» senza pronome decide al posto del giocatore cosa prova: lo
+dice P1 (`read-aloud-adulti.md` §1, punto 6). La dislocazione resta, ma il
+soggetto è l'oggetto, non il PG. Fino al 2026-10-02 l'esempio era *«Il peso lo
+senti nello sterno»* (D14).
 
 **b) La spiegazione appiccicata.** L'inglese chiude spiegando; l'italiano
 letterario **si ferma prima**.
@@ -164,14 +207,18 @@ unico blocco senza colpo finale.
 **Dopo:**
 
 > *Da quando si è aperto l'affresco della Terra, la Corona non ti lascia stare.
-> Il Topazio batte, e Aegis Fang batte con lui — non canta più, l'ascia:
-> **vibra**, e vibra più forte a ogni passo che scendi. L'hai già visto fare a
-> un cane, questo. Mai a un'ascia.*
+> Il Topazio batte, e Aegis Fang batte con lui. Non canta più, l'ascia:
+> **vibra**, e vibra più forte a ogni gradino verso il centro. Un cane lo fa.
+> Un'ascia, mai.*
 
-Cosa è cambiato: «non ti lascia stare» (idioma, non calco) · «batte» due volte
-per fare il ritmo che il testo descrive · la dislocazione *«non canta più,
-l'ascia»* · il paragone **rovesciato in fondo** e non spiegato, con la frase
-corta che stampa.
+Cosa è cambiato: «non ti lascia stare» (idioma, non calco; e a muoversi è la
+Corona, non il PG) · «batte» due volte per fare il ritmo che il testo descrive ·
+la dislocazione *«non canta più, l'ascia»* · il paragone **rovesciato in fondo**
+e non spiegato, con la frase corta che stampa.
+
+Fino al 2026-10-02 il «dopo» diceva *«a ogni passo che scendi»* e *«L'hai già
+visto fare a un cane»*: due cose che decidono il giocatore, se scende e cosa
+ricorda (P1, D14). Il trattino lungo dopo «lui» è caduto con loro.
 
 ---
 
@@ -226,7 +273,7 @@ Come uscirne, quando il concetto serve ancora:
 | **Trattino lungo come respiro** | «la roccia — e sai già cosa — si muove» | punto e virgola, due punti, o niente |
 | **Maiuscole di portento** | PESO, TUMP, VERA | **una per documento**. Se sono due, non funzionano più |
 | **Tutto è significativo** | ogni dettaglio descritto è un indizio o un simbolo | metti **una cosa che non c'entra niente**: una macchia, un rumore che era il vento |
-| **Emozione etichettata** | «senti una vertigine di paura» | comportamento: *«ti accorgi che stai contando i passi»* |
+| **Emozione etichettata** | «senti una vertigine di paura» | comportamento, di qualcun altro: *«Durin conta i passi a mezza voce»*. Quello del PG lo decide il giocatore (`read-aloud-adulti.md` §1, punto 6) |
 | **Sensi in ordine di lista** | vista, poi suono, poi odore, sempre in quell'ordine | parti dall'**odore** o dalla **temperatura**. O usane **uno solo** |
 
 ### 9.2-bis Quattro tic che una macchina non trova (e tu sì)

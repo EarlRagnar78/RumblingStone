@@ -54,6 +54,31 @@ jobs:
       - name: Validate skill trees (frontmatter, links, data YAML)
         run: python scripts/validate_skills.py
 
+      # Lo scanner di sicurezza delle skill, copiato da awesome-llm-apps
+      # (Apache 2.0, ADR-0076): esce 1 su un CRITICO, come `curl ... | sh`.
+      - name: Skill security scan (scripts/terzi/skill_scanner.py)
+        run: python scripts/terzi/skill_scanner.py skills
+
+      # Le adozioni rimandate: esce 1 quando la condizione di una voce si
+      # accende e la voce dice ancora «in attesa» (ADR-0076).
+      - name: Pending adoptions (adozioni_in_attesa.py --check)
+        run: python scripts/adozioni_in_attesa.py --check
+
+      # Le frasi vere del DM raggiungono le skill obbligatorie (L8, ORCHESTRAZIONE §4):
+      # a cricchetto, fallisce se le omissioni superano il tetto di casi.json
+      - name: Skill routing (instradamento_skill.py --check)
+        run: python scripts/instradamento_skill.py --check
+
+      # Due o piu' decisioni chiuse nella stessa data vogliono l'eco nel piano (L9)
+      - name: Decision echo (eco_decisioni.py --check)
+        run: python scripts/eco_decisioni.py --check
+
+      # Le letture a freddo dei master (D26): in avviso finche' un master non ha
+      # le letture con impronta di lettore e playtester, poi bloccante da solo
+      # su una lettura scaduta o su un rilievo 🔴/🟠 senza stato (D4, ADR-0076).
+      - name: Cold-read registry (registro_letture.py --check)
+        run: python scripts/registro_letture.py --check
+
       # La quarta cosa della regola d'oro. Le prime tre le controlla il gate qui
       # sotto; questa no, ed era «una debolezza dichiarata» — finche' il
       # 2026-09-06 la tabella non si e' trovata sfasata di due righe su otto,
@@ -162,6 +187,12 @@ jobs:
       # e boccia un rimando a uno strumento che non esiste.
       - name: Norme editoriali — ogni norma ha un misuratore o una ragione
         run: python scripts/validate_norme_editoriali.py
+
+      # La guida di Anthropic sulle skill: un reference oltre le 100 righe apre
+      # con il suo indice, cosi' un agente che ne legge solo l'inizio sa cosa
+      # c'e' e apre la sezione che serve. Generato, mai a mano. ADR-0077 §9.
+      - name: Skill — l'indice in testa ai references lunghi
+        run: python scripts/indice_references.py --check
 
       # Il gemello del passo sopra, dall'altro lato: quello controlla che ogni
       # norma dica CHI la guarda, questo che ogni «nessuno la guarda» dica

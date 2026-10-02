@@ -345,8 +345,27 @@ PIANO-MASTER-DEF**, perché ARC-08 comincia dove finisce DEF-5.
       di 9° livello; la pietra di *silenzio* è incantata all'8° (8 minuti, 160
       mo: la prima stesura diceva 8 round, ed era sbagliato). D8 (il Riflessi del Drappo) entra con F5. D10 e D26 sono metodo: il
       quiz non si fa sulle conversioni di sola forma, il cancello del registro
-      delle letture è un lotto da aprire. **D9, passo 5**: il DM ha confermato «spezzali»;
+      delle letture è L4 di [PIANO-AGENT-SKILLS-ESTERNE](PIANO-AGENT-SKILLS-ESTERNE.md), fatto il 2026-10-01: `plans/letture-a-freddo.json` e `registro_letture.py --check` in CI, in avviso finché un master non ha le letture con impronta, poi bloccante. **D9, passo 5**: il DM ha confermato «spezzali»;
       DEF-1 e DEF-2 hanno zero box oltre 12 righe, nessuna parola cambiata
+- [~] **Il giro delle quattro letture su DEF-4 e DEF-5, e la procedura (2026-09-30).**
+      Su richiesta del DM: lettore, playtester, developer e un **DM a freddo**
+      (rubrica nuova, `rumblingstone-playtest/references/dm-a-freddo.md`: legge
+      scena per scena senza guardare avanti, e il giorno dopo scrive cosa
+      ricorda, un'idea presa da *first-reader*, Apache 2.0). Il giro diventa il
+      passo 6 del ciclo in `module-standard`, «Il giro»: triage in testo,
+      prosa con `narrative-style`, canone al DM, e di nuovo il giro finché non
+      restano 🔴. Primo giro in `esperimenti/giro-def4-def5/`: DEF-5 lettore 0
+      🔴, playtester 1, developer 1, DM 0; DEF-4 lettore 2, DM 1 (playtester e
+      developer rilanciati dopo il limite di sessione). Corretto quello che il
+      testo risolve; scritta la prosa che mancava (l'handout «Lo Stato dei
+      Custodi», il chierico incappucciato, Hald); l'assedio di DEF-5 è D38.
+      Dai report di DEF-4 arrivati dopo: il 🔴 del developer era vero (il morso
+      ha portata 4,5 m, e l'azione preparata «quando scende» non scatta mai per
+      un nano) e ora l'azione si prepara sul round in cui le corde lo
+      inchiodano. Il 🔴 del playtester sull'orologio è D39, i PX sopra la
+      tabella SRD sono D40, le mappe M7-B e M7-C sono il lotto D28. **Resta da
+      fare il giro 2**, dopo D39 e il lotto mappe: finché quelli sono aperti, i
+      due 🔴 tornerebbero identici
 - [ ] DEF-1 (Varis), DEF-2, DEF-3: i residui dichiarati, prima che un gruppo
       nuovo li riprenda. Sono **già giocati** (`copertura-scene.json`): si
       convertono nella forma (titoli `### SCENA`, contratto, componenti, box al
@@ -491,6 +510,9 @@ manuali, così può misurare e segnare il problema, se esiste nell'avventura»*.
 | D35 | F4 | **DEF-3, il rito quando va male** (i due 🔴 del playtester a freddo). **(a)** Gli Step 1-3 falliti dicono solo «riprova» (−2 cumulativo, 2d6 non letali, −10 min), senza tetto né uscita, e Conoscenze e Utilizzare Oggetti Magici senza gradi non si tirano oltre CD 10. Proposta: ogni step si ritenta al massimo tre volte, ognuna costa 10 minuti; al terzo fallimento lo step riesce lo stesso e il suo esito ❌ della regia resta come prezzo. Chi non ha gradi può usare la prova grezza della caratteristica (SAG per l'Invocazione, CAR per la Stabilizzazione) con −4. **(b)** Con 0 successi allo Step 5 il modulo apre «un'indagine di un'ora» ma non dice cosa fanno i PG trovata la risposta. Proposta: la risposta è occupare il Sud vuoto (un PG, o Therysol); fatto questo lo Step 5 si ritira una volta, con 2 successi su 3 |
 | D36 | F4 | **I 🟠 di regole di DEF-1, DEF-2 e DEF-3 che chiedono canone**, raccolti dalle letture a freddo del 2026-09-30 (`esperimenti/f4-def1-def3/`). **(a)** DEF-1: la Benedizione «ignora le penalità» ma la tabella della gravità le applica ridotte (−25%, −5): vale la tabella? **(b)** DEF-1: polvere ogni 10 minuti e stalattiti ogni 15 per tutto il viaggio, o solo come evento del d6? Proposta: solo come evento del d6, più la prova di gruppo per zona. **(c)** DEF-1: la via B contro gli Xorn non ha CD. Proposta: Intimidire o Diplomazia CD 18, come la via C; fallita, gli Xorn non sono accerchiati e si combatte senza il bonus. **(d)** DEF-1: al terzo fallimento di Thorik nel rito lo Smeraldo si incastona comunque? Proposta: sì, e il prezzo sono i malus già scritti. **(e)** DEF-2: il +1 sacro al rito viene dal toccare l'incisione o dal dormire nella Stanza? **(f)** DEF-3: la soglia dei 3 su 3 è «se Thorik rifiuta» nella Quick-Reference e «uno o nessun dono» nel §5: vale il §5? |
 | D37 | F4 | **DEF-1 Scena 7: Tordek da solo contro la Sentinella, e se cade?** (🔴 del playtester a freddo). L'anticamera immobilizza Thorik (Forza CD 28, che lui al massimo fa 27) e lascia Artemis prono e indifeso: se Tordek va a 0 pf il modulo non dice cosa succede, e gli altri due passano la scena senza agire. Proposta: la Sentinella è una prova, come Terros è un voto: quando Tordek cade la Magnetite si spegne, la Sentinella torna immobile, e si può ritentare dopo un riposo (−12 h). E per gli altri due un'azione possibile: Thorik può liberarsi con la CD 28 grazie all'aiuto di Artemis (+2), Artemis può parlare, e un suo incantesimo senza componenti somatiche passa |
+| D38 | F4 | **DEF-5: quando si gioca la Fase 0 dell'ARC-08?** (🔴 del playtester e del developer a freddo, 30 settembre). DEF-5 fa arrivare i PG nel Cuore della Montagna nell'ultima resistenza, col drago sulle mura e il riposo impossibile; la tabella dei rami prometteva una Fase 0 (consiglio di guerra, preparativi) prima della battaglia. Dopo D31 «sopra la prima ondata è già passata» le due cose non stanno insieme. Proposta: la Fase 0 si gioca **dopo** il drago ai bastioni: prima il Cuore, poi Fauci, poi il consiglio di guerra per le ondate che restano. E l'aura dell'Apparizione segue l'SRD della presenza terrificante: ogni orco tira, chi fallisce (quasi tutti, con Volontà −2 contro CD 25) è in panico, chi fa 20 è scosso; la Scena 3 si gioca con i pochi che restano e con i nemici che arrivano dopo (CM-1) |
+| D39 | F4 | **L'orologio di DEF-4 non ha margine.** Con le 3 tacche già spese dal gruppo di oggi, parlare con Balvar (1) o fallire un solo blocco del campo porta a 8 tacche: l'alba fuori dalle mura, e la Scena 10 non si gioca. Lo dicono sia il playtester sia il developer del giro 1. Proposta: **(a)** la soglia 🔴 passa a 9 tacche; **(b)** parlare con Balvar costa 0 se lo si fa durante lo scontro nella tenda; **(c)** si lascia così: l'alba fuori è l'esito più probabile, ed è voluto |
+| D40 | F4 | **I PX del beat sono circa tre volte la tabella SRD** (Skullcrusher: 5.400 a testa scritti, ~1.460 da tabella). Il 14° livello di DEF-5 poggia su quella cifra. Proposta: **(a)** si tiene la cifra come premio di storia, detto apertamente; **(b)** si scende al conto SRD, e il 14° arriva dopo DEF-5 |
 
 ## 5 · Validazione
 

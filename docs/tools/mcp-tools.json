@@ -1880,6 +1880,40 @@
       "deterministic": true
     },
     {
+      "name": "skill_scanner",
+      "description": "«Una skill di questo repo contiene qualcosa che un agente non dovrebbe eseguire?»\n\nScanner statico di sicurezza delle skill (script scaricati e dati alla shell, rete non dichiarata, credenziali, codice offuscato), copiato identico da awesome-llm-apps (Apache 2.0, ADR-0076). Esce 1 se trova un CRITICO.",
+      "use_case": "«Una skill di questo repo contiene qualcosa che un agente non dovrebbe eseguire?»",
+      "invocation": "python3 scripts/terzi/skill_scanner.py skills [--json]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "description": "La skill o la cartella di skill da scansionare."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Uscita in JSON."
+          },
+          "include-fixtures": {
+            "type": "boolean",
+            "description": "Scansiona anche le fixture di prova (opzione dell'originale)."
+          }
+        },
+        "required": [
+          "path"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "nessun CRITICO",
+        "1": "almeno un CRITICO",
+        "2": "errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
       "name": "sync_skills",
       "description": "«Ho modificato una skill: come la vedono Claude e Cursor dentro questo repo, subito?»\n\nBuild + popola i mirror in-repo delle skill (.claude/, .cursor/, ...), tutti gitignorati.",
       "use_case": "«Ho modificato una skill: come la vedono Claude e Cursor dentro questo repo, subito?»",
@@ -1935,6 +1969,30 @@
         "0": "ok",
         "1": "errori di validazione",
         "2": "pyyaml non installato"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "adozioni_in_attesa",
+      "description": "«Quella skill che avevamo rimandato: e' arrivato il momento di adottarla?»\n\nLe adozioni di codice o skill esterni rimandate, in plans/adozioni-in-attesa.json, ognuna con una condizione misurabile; --check esce 1 quando una condizione e' attiva e la voce dice ancora «in attesa» (ADR-0076).",
+      "use_case": "«Quella skill che avevamo rimandato: e' arrivato il momento di adottarla?»",
+      "invocation": "python3 scripts/adozioni_in_attesa.py [--check]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Cancello CI: esce 1 se una condizione e' attiva su una voce ancora in attesa."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "condizione attiva su una voce ancora in attesa",
+        "2": "registro malformato"
       },
       "deterministic": true
     },
@@ -2030,6 +2088,56 @@
       "exit_codes": {
         "0": "ok",
         "1": "CHANGELOG mancante per modifica strutturale"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "ciclo_prosa",
+      "description": "«Cosa è cambiato rispetto all'originale, perché, e cosa resta da correggere dopo che ho approvato?»\n\nL12 (D15 e D16 del 2026-10-02, ADR-0077): dal segnalare al correggere, con una revisione a due giri come fra revisore e autore. `segnala` riusa i rilevatori registrati e aggiunge la regola «debole da solo» di Humanizer (tic minori diversi nello stesso paragrafo); `revisione` scrive il documento da approvare, con ogni modifica in CriticMarkup, numerata, motivata da una norma, e le due garanzie (nessun controllo peggiora, nessun fatto cambia); `applica` porta nell'originale solo le modifiche spuntate, mai su main, e alza la riga `revisione-testo: rN`. Il documento riporta anche la lettura prima e dopo (indice Gulpease e ritmo delle frasi); con `--auto` si applicano senza lettore le modifiche motivate che, da sole, non cambiano un fatto, non peggiorano un controllo e non peggiorano la lettura, e il documento le segna `[x] auto`. LanguageTool (LGPL) è un servizio facoltativo, mai in CI.",
+      "use_case": "«Cosa è cambiato rispetto all'originale, perché, e cosa resta da correggere dopo che ho approvato?»",
+      "invocation": "python3 scripts/ciclo_prosa.py {segnala FILE [--languagetool URL] | revisione ORIGINALE RISCRITTO [-o REVISIONE.md] | applica REVISIONE.md --data AAAA-MM-GG [--auto]}",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "segnala_FILE": {
+            "type": "string",
+            "description": "Primo giro: i passaggi da correggere, con la norma e il rimedio."
+          },
+          "revisione_ORIGINALE_RISCRITTO": {
+            "type": "string",
+            "description": "Il documento di revisione da approvare modifica per modifica."
+          },
+          "o": {
+            "type": "string",
+            "description": "Dove scrivere il documento di revisione (altrimenti a schermo)."
+          },
+          "applica_REVISIONE": {
+            "type": "string",
+            "description": "Secondo giro: applica le modifiche spuntate e rimisura."
+          },
+          "data": {
+            "type": "string",
+            "description": "La data della riga di revisione: non si deduce (ADR-0023)."
+          },
+          "languagetool": {
+            "type": "string",
+            "description": "URL di un server LanguageTool: aggiunge le segnalazioni grammaticali (facoltativo)."
+          },
+          "auto": {
+            "type": "boolean",
+            "description": "Applica anche le modifiche segnate «auto» e lo scrive nel documento di revisione."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "REVISIONE-*.md"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "la revisione peggiora un controllo o cambia un fatto; applica rifiutata (main, impronta, fatti)",
+        "2": "errore d'uso"
       },
       "deterministic": true
     },
@@ -2251,6 +2359,34 @@
       "deterministic": true
     },
     {
+      "name": "eco_decisioni",
+      "description": "«Il DM ha chiuso sette decisioni in un messaggio: ho scritto cosa ho capito, e cosa ho aggiunto io?»\n\nL9 (D6 del 2026-10-01): due o più decisioni chiuse nella stessa data, nello stesso piano, vogliono il blocco d'eco <!-- eco: ETICHETTA DATA --> con Decise, Aperte, Cambiate e Dedotto da me. Legge le tabelle di decisioni_dm.py.",
+      "use_case": "«Il DM ha chiuso sette decisioni in un messaggio: ho scritto cosa ho capito, e cosa ho aggiunto io?»",
+      "invocation": "python3 scripts/eco_decisioni.py [--check]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Esce 1 se un'eco manca o è incompleta."
+          },
+          "radice": {
+            "type": "string",
+            "description": "La radice del repo (per i test)."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "eco mancante o incompleta (con --check)",
+        "2": "errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
       "name": "fase1",
       "description": "«Sto per toccare questi file: cosa il repo mi sta gia' dicendo, prima che io scriva un rilevatore che se lo inventa?»\n\nL'analisi in sola lettura che precede ogni modifica: mette in fila cio' che il repo gia' sa sul bersaglio — quali norme del registro lo coprono, quali skill apre l'algoritmo a strati, quali dati di stato lo dichiarano (snapshot storico, archivio, DEPRECATO, matrice delle versioni), i 322 nomi propri del Bestiario e le misure di oggi. Una regex nuova viene dopo, mai prima.",
       "use_case": "«Sto per toccare questi file: cosa il repo mi sta gia' dicendo, prima che io scriva un rilevatore che se lo inventa?»",
@@ -2318,6 +2454,36 @@
       "deterministic": true
     },
     {
+      "name": "indice_references",
+      "description": "«Un agente che legge le prime righe di un reference sa cosa contiene il resto?»\n\nL12 (ADR-0077 §9): l'indice in testa a ogni reference delle skill oltre le 100 righe, generato dai titoli fra due marcatori, come chiede la guida di Anthropic sulle skill. Un agente che legge solo l'inizio vede cosa c'è e apre la sezione che serve. Esclusa la skill vendorizzata rumblingstone-debugging.",
+      "use_case": "«Un agente che legge le prime righe di un reference sa cosa contiene il resto?»",
+      "invocation": "python3 scripts/indice_references.py {--emit | --check}",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "emit": {
+            "type": "boolean",
+            "description": "Scrive o aggiorna gli indici."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Esce 1 se un indice manca o è vecchio."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "skills/*/references/*.md"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "un indice manca o è vecchio (--check)",
+        "2": "errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
       "name": "install_git_hooks",
       "description": "«Come faccio a non scoprire in CI quello che il repo poteva dirmi prima del push?»\n\nInstalla gli hook git locali: post-merge (resync mirror skill) e pre-push (gate ADR-0009).",
       "use_case": "«Come faccio a non scoprire in CI quello che il repo poteva dirmi prima del push?»",
@@ -2334,6 +2500,81 @@
       "exit_codes": {
         "0": "ok",
         "1": "errore"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "instradamento_skill",
+      "description": "«Se il DM dice questa frase, un agente che instrada sulle descrizioni carica le skill che deve?»\n\nL8 (D6 del 2026-10-01): per ogni frase vera del DM in plans/instradamento/casi.json, quali skill obbligatorie (ORCHESTRAZIONE §4) raggiungono i trigger fra virgolette delle descrizioni. Conta omissioni, skill in più e conflitti fra le due L1. Il gate è a cricchetto sul tetto del file. Dal 2026-10-01 (D10): casi esclusi e quasi-casi, collisioni fra descrizioni, il suggerimento per una frase (--frase) e la prova con agenti veri (--comportamentale), come chiedono agentskills.io e skill-creator.",
+      "use_case": "«Se il DM dice questa frase, un agente che instrada sulle descrizioni carica le skill che deve?»",
+      "invocation": "python3 scripts/instradamento_skill.py [--check] [--json] [--frase \"<richiesta>\"] [--comportamentale <cartella>]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Il gate: esce 1 sopra il tetto o con un conflitto L1."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "La misura come dati."
+          },
+          "casi": {
+            "type": "string",
+            "description": "Il file dei casi."
+          },
+          "frase": {
+            "type": "string",
+            "description": "Suggerisce le skill per una frase sola."
+          },
+          "comportamentale": {
+            "type": "string",
+            "description": "Cartella con le corse run*.json degli agenti."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "sotto il tetto",
+        "1": "sopra il tetto, conflitto L1 o tetto mancante",
+        "2": "errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "lettura_a_scene",
+      "description": "«Il lettore a freddo ha trovato davvero quello che arriva tardi, o l'ha visto perché aveva già letto la scena dopo?»\n\nServe un master ai lettori a freddo una scena alla volta da 127.0.0.1: la scena dopo arriva solo dopo una riga di diario (ago, mi aspettavo, ho trovato, so adesso) e dopo il tempo per leggerla; alla chiusura scrive impronte, mai il testo. Adattato da first-reader/feed.py (Apache 2.0, ADR-0076).",
+      "use_case": "«Il lettore a freddo ha trovato davvero quello che arriva tardi, o l'ha visto perché aveva già letto la scena dopo?»",
+      "invocation": "python3 scripts/lettura_a_scene.py servi <master> --corsa DIR --lettori lettore,playtester | inizia | avanti --diario … | smetti --diario … | progresso/chiudi --admin URL | diario DIR/lettore",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "cmd": {
+            "type": "string",
+            "description": "Sottocomando.",
+            "enum": [
+              "servi",
+              "inizia",
+              "avanti",
+              "smetti",
+              "progresso",
+              "chiudi",
+              "diario"
+            ]
+          }
+        },
+        "required": [
+          "cmd"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "diario rifiutato o lettura chiusa",
+        "2": "errore d'uso"
       },
       "deterministic": true
     },
@@ -2546,6 +2787,75 @@
       "exit_codes": {
         "0": "ok",
         "1": "chiave o risposte malformate"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "registro_letture",
+      "description": "«Questo master e' cambiato dopo l'ultima lettura a freddo? Ogni rilievo grave ha avuto una risposta?»\n\nIl registro delle letture a freddo dei master DEF (D26): impronta del testo letto e stato di ogni rilievo 🔴/🟠. Il cancello e' in avviso finche' un master non ha le letture con impronta di lettore e playtester, poi blocca da solo una lettura scaduta o un rilievo senza stato (D4). --confronta mette due letture affiancate, scena per scena.",
+      "use_case": "«Questo master e' cambiato dopo l'ultima lettura a freddo? Ogni rilievo grave ha avuto una risposta?»",
+      "invocation": "python3 scripts/registro_letture.py [--check] | --registra <master> --ruolo lettore|playtester|dm --corsa DIR [--rapporto R.md] | --sola-forma <master> --ragione … | --confronta A B",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Il cancello: avviso, poi bloccante master per master."
+          },
+          "registra": {
+            "type": "string",
+            "description": "Aggiunge la lettura di una corsa di lettura_a_scene.py."
+          },
+          "sola-forma": {
+            "type": "string",
+            "description": "Dichiara un cambio di sola forma, con la ragione."
+          },
+          "confronta": {
+            "type": "string",
+            "description": "Due cartelle di lettura, affiancate."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "plans/letture-a-freddo.json"
+      ],
+      "exit_codes": {
+        "0": "ok o avviso",
+        "1": "un master sotto cancello ha una lettura da rifare",
+        "2": "registro malformato"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "ricordo_lettura",
+      "description": "«Cosa resta di questo modulo a chi l'ha letto una volta, e perché il lettore si è fermato alla Scena 7?»\n\nIl ricordo del giorno dopo (passo 7 del ciclo, D1 del 2026-10-01): il pacchetto per un agente nuovo con il solo diario della lettura a scene e sette domande da DM; le domande ai lettori dopo la lettura; l'intenzione dichiarata dal master contro cui si giudica. Adattato da first-reader/recall.py e ask.py (Apache 2.0, ADR-0076).",
+      "use_case": "«Cosa resta di questo modulo a chi l'ha letto una volta, e perché il lettore si è fermato alla Scena 7?»",
+      "invocation": "python3 scripts/ricordo_lettura.py domande <corsa>/<lettore> | chiedi <corsa> <lettore|tutti> \"<domanda>\" | intenzione <master>",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "cmd": {
+            "type": "string",
+            "description": "Sottocomando.",
+            "enum": [
+              "domande",
+              "chiedi",
+              "intenzione"
+            ]
+          }
+        },
+        "required": [
+          "cmd"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "lettura non chiusa, o master senza intenzione dichiarata",
+        "2": "errore d'uso"
       },
       "deterministic": true
     },
@@ -2852,6 +3162,77 @@
       "exit_codes": {
         "0": "ok",
         "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "vista_di_chi_scorre",
+      "description": "«Un DM che sfoglia questo master capisce cosa succede stasera e chi si oppone?»\n\nIl primo passo del DM a freddo (L5, D2 del 2026-10-01): il master come lo vede chi lo sfoglia, cioè la serata dichiarata, i titoli, la riga «In scena» e la prima frase di ogni scena, i grassetti, le CD con le parole prima. Il resto è tolto di proposito. Adattato da first-reader/skim.py (Apache 2.0, ADR-0076).",
+      "use_case": "«Un DM che sfoglia questo master capisce cosa succede stasera e chi si oppone?»",
+      "invocation": "python3 scripts/vista_di_chi_scorre.py <master> [--json]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "master": {
+            "type": "string",
+            "description": "Il master da sfogliare."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "La vista come dati."
+          }
+        },
+        "required": [
+          "master"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "2": "master non trovato"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "voto_scrittura",
+      "description": "«Un agente che carica la skill di scrittura rispetta le norme registrate più di uno che non la carica?»\n\nL11 (D11 del 2026-10-01): il voto deterministico sui testi scritti con e senza le skill di scrittura. Ogni controllo chiama un rilevatore che esiste (misura_craft, validate_prosa) e una norma registrata; i casi in plans/scrittura/casi.json seguono lo schema di evals.json di skill-creator, a metà fra taratura e verifica. «Sembra/pare» è un controllo dal 2026-10-01 (D13); dal 2026-10-02 comprende participio e passato remoto.",
+      "use_case": "«Un agente che carica la skill di scrittura rispetta le norme registrate più di uno che non la carica?»",
+      "invocation": "python3 scripts/voto_scrittura.py [FILE --caso SNN] [--corse] [--emit] [--check]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "string",
+            "description": "Un testo da votare."
+          },
+          "caso": {
+            "type": "string",
+            "description": "L'id del caso per il file (S01…)."
+          },
+          "corse": {
+            "type": "boolean",
+            "description": "La tabella delle corse."
+          },
+          "emit": {
+            "type": "boolean",
+            "description": "Scrive plans/scrittura/voti.json."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Esce 1 se voti.json non corrisponde alle corse."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "plans/scrittura/voti.json"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "voti.json non allineato (--check)",
+        "2": "errore d'uso"
       },
       "deterministic": true
     },

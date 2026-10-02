@@ -1,5 +1,18 @@
 # Forgotten Realms — History & Timeline (D&D 3.5)
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- THE AGES OF FAERÛN
+- HUMAN EMPIRES AND THE RISE OF CIVILIZATION
+- THE DALE RECKONING CALENDAR
+- THE TIME OF TROUBLES (1358 DR)
+- THE STATE OF THE REALMS (1372 DR — Campaign Start Point)
+- ANCIENT EMPIRES (Lost Empires of Faerûn)
+- THE CALENDAR OF HARPTOS (Expanded)
+- NOTABLE CHRONICLES AND LORE BOOKS (In-World)
+<!-- /indice -->
+
 Sources: FRCS (2001), Lost Empires of Faerûn (2005), Player's Guide to Faerûn (2004),
 The Grand History of the Realms (2007)
 

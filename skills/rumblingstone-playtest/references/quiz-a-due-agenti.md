@@ -1,5 +1,21 @@
 # Il quiz a due agenti — quanto resta dopo una lettura sola
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- Il limite, prima del resto
+- Il procedimento
+- La chiave
+- Il limite osservato
+- Quando si usa
+- Il ricordo dal diario — il passo 7, senza chiave
+<!-- /indice -->
+
+> **Dal 2026-10-01 il passo 7 del ciclo è il ricordo dal diario** (D1 di
+> PIANO-AGENT-SKILLS-ESTERNE), e il quiz resta dove una chiave approvata c'è
+> già (oggi DEF-4). La procedura del ricordo è in fondo, «Il ricordo dal
+> diario»; il quiz è descritto qui com'era.
+
 Il DM, il 2026-09-26: *«capisco qualcosa se leggo, o devo rileggere il modulo
 più volte perché non è proprio chiaro?»*. Il lettore a freddo trova i buchi, ma
 non dice quanto di un modulo **resta in testa** a chi lo ha letto una volta. Il
@@ -74,3 +90,43 @@ esplicitamente.
   buchi, misura se il testo si ricorda.
 - **Prima e dopo** una riscrittura: se la riscrittura ha reso il modulo più
   chiaro, la quota «giusta dagli appunti» sale.
+
+## Il ricordo dal diario — il passo 7, senza chiave
+
+Il quiz misura bene, e chiede ogni volta una chiave che il DM deve approvare.
+Il ricordo non la chiede: si giudica contro quello che il master **dichiara**
+di voler far restare, cioè il riquadro *La serata in tre frasi*, o in mancanza
+il primo paragrafo del Quickstart. L'idea viene da `first-reader` di
+awesome-llm-apps (ADR-0076).
+
+1. **La lettura.** Chi legge, legge a scene con `lettura_a_scene.py`
+   (`lettore-a-freddo.md`, «La lettura a scene»). Il suo diario è la sua
+   memoria: non ci sono appunti a parte, e quindi niente tetto di parole da
+   contare.
+2. **Il ricordo.** `python3 scripts/ricordo_lettura.py domande <corsa>/<lettore>`
+   stampa il pacchetto: il diario e sette domande da DM (la serata in tre frasi,
+   chi si oppone e cosa vuole, da dove a dove, cosa succede se si fallisce, il
+   momento più forte, come finisce, cosa si è dovuto rileggere). Lo riceve un
+   agente **nuovo**, che non ha visto il modulo; «non è rimasto niente» è una
+   risposta lecita.
+3. **Il giudizio.** `python3 scripts/ricordo_lettura.py intenzione <master>`
+   stampa l'intenzione; chi orchestra la mette accanto alle risposte. Una
+   risposta che manca la missione o il cattivo è un rilievo sul modulo, da
+   confermare col lettore a freddo come per il quiz («Il limite osservato»). Un
+   master senza intenzione dichiarata è un rilievo da solo.
+4. **Le domande dopo.** `python3 scripts/ricordo_lettura.py chiedi <corsa>
+   <lettore|tutti> "perché ti sei fermato alla Scena 7?"`: il lettore risponde
+   dal suo diario, senza rivedere il testo, e se non l'ha annotato lo dice.
+
+⚠️ **Cosa si paga.** Il quiz ha un punteggio deterministico; il ricordo lo
+giudica chi orchestra. Costa meno (niente chiave da approvare per ogni master)
+e si ripete peggio: due giudizi sulle stesse risposte possono non coincidere.
+Per questo, dove la chiave c'è, il quiz resta.
+
+📏 **La prova del 2026-10-01** (`plans/esperimenti/lettura-a-scene-def4/`).
+Sul DEF-4 del tavolo, il quiz dato a chi ha solo il diario fa 8 su 14 contro
+i 6 degli appunti, e la missione (q4), persa da tre lettori su tre a
+settembre, c'è. Ma il diario è lungo nove volte gli appunti, e il confronto non
+è pari. Sul primo paragrafo del Quickstart di quella versione il giudizio non
+regge: dice dove sono i PG, non cosa devono fare. Senza riquadro il ricordo
+trova i buchi e non ha un metro.

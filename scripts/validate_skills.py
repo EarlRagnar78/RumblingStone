@@ -5,7 +5,7 @@ validate_skills.py — CI gate for the RumblingStone skill trees.
 Checks (hard errors, exit 1):
   1. Every skills/<name>/SKILL.md has YAML frontmatter with:
      - name  == directory name
-     - description (non-empty)
+     - description (non-empty, at most 1024 characters: agentskills.io spec)
   2. Every markdown link [text](path) in skills/**/*.md that points to a
      relative path resolves to an existing file/dir (repo-relative fallback).
   3. Every data YAML in scripts/ (catalogs, alliances, loot, map templates)
@@ -55,6 +55,10 @@ def parse_frontmatter(text: str) -> dict | None:
     return data if isinstance(data, dict) else None
 
 
+#: Il tetto della specifica agentskills.io per il campo `description`.
+TETTO_DESCRIZIONE = 1024
+
+
 def check_skills(root: Path) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     warnings: list[str] = []
@@ -78,8 +82,18 @@ def check_skills(root: Path) -> tuple[list[str], list[str]]:
             errors.append(
                 f"{rel}: frontmatter name {fm.get('name')!r} != directory name {skill.name!r}"
             )
-        if not str(fm.get("description") or "").strip():
+        descrizione = str(fm.get("description") or "")
+        if not descrizione.strip():
             errors.append(f"{rel}: frontmatter description missing/empty")
+        # La specifica agentskills.io fissa la descrizione a 1024 caratteri.
+        # Misurato il 2026-09-30 con lo `skill_lint.py` di awesome-llm-apps
+        # (PIANO-AGENT-SKILLS-ESTERNE L6): tre skill oltre, 1.068-1.195.
+        # Cosa fa ogni agente con una descrizione piu' lunga non e' verificato:
+        # il limite si rispetta perche' i mirror vanno in agenti diversi.
+        elif len(descrizione) > TETTO_DESCRIZIONE:
+            errors.append(
+                f"{rel}: description di {len(descrizione)} caratteri, oltre i "
+                f"{TETTO_DESCRIZIONE} della specifica agentskills.io")
 
         # Orphaned reference files (warning only)
         refs_dir = skill / "references"

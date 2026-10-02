@@ -1,5 +1,20 @@
 # Magic Items — D&D 3.5 SRD Reference
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- Caster Level Requirements for Item Creation
+- Item Creation Rules
+- Pricing Formula (Guideline)
+- Armor and Shield Bonuses
+- Weapon Bonuses and Properties
+- Common Wondrous Items (SRD)
+- Scrolls
+- Wands
+- Intelligent Items
+- Expanded Splatbook Items (Cannath Vale Setting)
+<!-- /indice -->
+
 Source: d20srd.org/srd/magicItems/
 
 ---

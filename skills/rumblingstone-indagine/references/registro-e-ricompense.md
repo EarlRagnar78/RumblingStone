@@ -1,5 +1,15 @@
 # Il registro dell'indagine — Acume, Perizia, Metodo
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- 1. Acume — la moneta della serata
+- 2. Perizia — la moneta che resta
+- 3. Il Metodo — la moneta del gruppo
+- 4. Il registro — dove si scrive, e perché non si può non scriverlo
+- 5. Regola opzionale — la lettura del combattimento
+<!-- /indice -->
+
 Decisione di riferimento: [ADR-0022](../../../plans/adr/ADR-0022-competenza-guadagnata-sul-campo.md).
 Qui c'è l'uso pratico. Il principio in una riga:
 

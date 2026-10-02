@@ -311,6 +311,7 @@ box sotto 40. Entra come **minore**, e solo quando il box è fuori dalla fascia
 | ✅ | **F2.7** *(nuovo, ordine DM 2026-09-21)* **Richiamare i rilevatori che esistono e nessuno chiamava** | da **4 norme pesate a 11**, e da **1 maggiore a 3**. Nessun rilevatore nuovo: `validate_prosa` misurava sei di quelle norme da settembre, e mancava il **nome** — `controlla()` restituiva stringhe già formattate. Ora `rilievi()` emette record `(chiave, messaggio)` e `controlla()` ne è la proiezione, **identica byte per byte** su tutto il repo |
 | ✅ | **F2.8** *(nuovo, ordine DM 2026-09-21)* **I due rilevatori che mancavano davvero** | `--metrature` (ADR-0014 §2, **28 box su 477**, 1 falso positivo su 28 contato a mano) **entra nel punteggio**; `--costrutto-italiano` (`italiano-nativo.md` §8, **281 su 477**) **misura e non pesa**, perché la dislocazione a sinistra è rilevata a metà e una norma positiva rilevata a metà produce penalità false |
 | ✅ | **F2.9** *(nuovo, ordine DM 2026-09-21)* **La superficie delle norme scoperte** | `superficie_norme.py` + [ADR-0062](adr/ADR-0062-una-norma-senza-superficie-lo-dichiara.md): per ognuna delle **9** norme che nessuno misura, **manca il codice o manca il dato?** Misurato: per **otto su nove non manca il codice**. Quattro stati — superficie vuota (2) · convenzione assente (4) · oggetto assente (1) · fuori dominio (2) — e un gate in CI che boccia una riga che ha smesso di dire il vero |
+| ✅ | **F2.10** *(nuovo, ordine DM 2026-10-01)* **Il box di luogo e l'area chiave nella forma di *Dungeon*** | il testo sul boxed text di WotC e Paizo portato dal DM, verificato sulla fonte (`RICERCA-STANDARD-PROSA-WOTC-PAIZO` §1.4-1.5): **3-4 frasi** ha una fonte, **300-500 caratteri** no, le **dimensioni nella prima frase** contraddicono ADR-0014, e lo **statblock d'esempio è sbagliato in 3.5 e in PF1e**. Entrano `read-aloud-adulti.md` §2-bis (poche frasi, un ordine, niente creature), l'area chiave in `module-standard` §7, due colonne-indicatore in `misura_craft --box` (`>4 frasi`, `>500 car`, senza peso) con i loro test, tre righe nel registro e una in `superficie_norme`. Misurato: 501 box, mediana **347** caratteri, **122 (24%)** oltre i 500; nei DEF di ARC-07 **61 su 104** oltre le quattro frasi, nell'Abbazia **1 su 11**. Decisioni e applicazione in [PIANO-BOX-DI-LUOGO-E-AREA-CHIAVE](PIANO-BOX-DI-LUOGO-E-AREA-CHIAVE.md) |
 | ✅ | **F3.4** Stabilità | ✅ **misurata, non dichiarata**: `test_tutti_i_rilevatori.py` esegue **ogni** rilevatore due volte e il punteggio di un documento **tre**, su un campione deterministico — **460 sotto-prove**. Più le due proprietà che nessuno verifica mai: nessun rilevatore restituisce un `set` (l'ordine di iterazione non è garantito, e romperebbe ogni confronto prima/dopo) e **nessuno tocca il disco mentre misura**, provato con un'impronta SHA-256 prima e dopo |
 | ⬜ | **F2.3** Il rilevatore della regola Paizo | la norma di §1.5, con l'esenzione «visione d'artefatto» dichiarata nel registro |
 | ⬜ | **F2.4** Gulpease come guard rail | `--leggibilita`, severità minore, esente sopra 100 |
@@ -371,6 +372,13 @@ caso ha torto la metrica.
 | 🔵 | **Le soglie iniziali** (§4) | F1.4 le propone dalla distribuzione, ma «quanto stringiamo» è prodotto, non tecnica |
 | 🔵 | **Il tempo del campione A** | 20 documenti da annotare. Senza, il κ non esiste e va dichiarato |
 | 🔵 | **La regola Paizo: 104 box** *(era «229», cifra corretta in §1.5)* | si correggono, si esentano per classe, o si lascia il rilevatore solo come avviso? |
+
+### 7-bis · Il box di luogo
+
+Le decisioni sul box di luogo e sull'area chiave (D1-D6) stanno in
+[PIANO-BOX-DI-LUOGO-E-AREA-CHIAVE](PIANO-BOX-DI-LUOGO-E-AREA-CHIAVE.md) §5,
+insieme al materiale del 2026-10-01 e ai lotti di applicazione. Qui resta la
+misura (F2.10).
 
 ---
 

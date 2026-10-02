@@ -1,5 +1,17 @@
 # Audit & consolidamento mappe di un arco — workflow codificato
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- STEP 1 — Censimento (prima di scrivere qualunque griglia)
+- STEP 2 — Fonti canoniche: la regola d'oro dei posizionamenti
+- STEP 3 — L'Atlante di arco (il documento definitivo delle mappe)
+- STEP 4 — Contratto di fedeltà (golden rule 6 di SKILL.md)
+- STEP 5 — Render & verifica (il loop che NON si salta)
+- STEP 6 — Tracciatura
+- Tool esterni valutati (2026-07) — verdetto onesto
+<!-- /indice -->
+
 > **Perché esiste**: codifica il lavoro fatto sull'ARC-07 (2026-07-23, PR #61)
 > così ogni agente lo ripete con la stessa precisione **senza rifarlo a mano**:
 > audit → fonti canoniche → atlante definitivo con add-on DM → contratto di

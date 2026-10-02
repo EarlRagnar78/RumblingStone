@@ -1,5 +1,15 @@
 # Hero map — passata pittorica locale (OPZIONALE)
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- Perché funziona (e perché è legalmente pulito)
+- Setup (una tantum, sulla propria macchina)
+- Flusso per una hero map
+- Cosa NON fare
+- Finché ComfyUI non è collaudato: la hero map con Canva AI
+<!-- /indice -->
+
 > Questa è l'unica parte della pipeline che richiede installazione locale
 > (PC con GPU NVIDIA, ~8 GB+ VRAM). Va usata SOLO per le 2-3 mappe chiave
 > ("hero maps": battaglia finale, boss fight) e SOLO se il risultato è

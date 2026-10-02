@@ -1,5 +1,17 @@
 # The Echo Ledger — BG3-Style Long-Range Consequences
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- 1. Where echoes live
+- 2. Writing echoes (arming)
+- 3. Firing echoes (payoff)
+- 3-bis. Graded outcomes — the "regola pieno/ridotto" (Palio pattern)
+- 3-ter. L'eco per un PG: due ancore obbligatorie, e niente anticipazioni
+- 4. Anti-patterns (do not)
+- 5. Integration hooks
+<!-- /indice -->
+
 Principle (pillar 7): **the world remembers**. Every meaningful PC
 choice writes an *echo*, a recorded consequence with a fuse, that
 returns later, *transformed*. The power of the technique is the delay:

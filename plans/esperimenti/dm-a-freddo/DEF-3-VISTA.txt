@@ -1,0 +1,102 @@
+VISTA DI CHI SCORRE — il testo intero non c'è, di proposito
+07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md · 14118 parole · circa 71 minuti per leggerlo tutto
+------------------------------------------------------------
+LA SERATA (primo paragrafo di «§0 — QUICKSTART DM»):
+  **Dove siete.** Nella **Sala della Forgia Eterna**, davanti all'Altare del Cuore di Moradin. La Corona porta due gemme; gli affreschi hanno registrato la vittoria della Terra (`DEF-2`); il corpo di Hella riposa, vegliato da Therysol. Resta un solo atto prima di lasciare la Forgia: **riportarla indietro.**
+
+TITOLI:
+  ARC-07 · DEFINITIVO #3 — LA RESURREZIONE DI HELLA
+    Il Portale della Forgia Eterna — il Cuore di Moradin, i Doni, il Debito della Radice
+    INDICE DEL MODULO
+    §0 — QUICKSTART DM
+      ✉ Cosa si consegna, e quando
+    §0-bis — QUICK-REFERENCE DM (una pagina)
+      Il Rito, in sei passi (CD esplicite)
+      I Tre Doni — il trapianto (§5)
+      🐾 Supporto Pathfinder 1e (dove il 3.5 è vago) — opzionale, dichiarato
+    §1 — HIGHLIGHT ASIMMETRICI PER PG
+      🛡️ THORIK — l'unto che paga il prezzo del re (Casa di Davide lead)
+      ⚒️ TORDEK — il faro nel buio (Mercer lead qui)
+      🔮 ARTEMIS — la scintilla, non il serbatoio (Andor support)
+      🌙 HELLA — il ritorno (da qui, PG a pieno titolo)
+    §2 — LA SCENA: L'ALTARE DEL CUORE (Atlante)
+      SCENA 1 — L'Altare del Cuore
+      La Sala per sensi — e cosa non dire *(ADR-0057)*
+      Le sei porte — interagire con la Sala *(prove grezze, ADR-0022)*
+    §2-bis — LE DUE GEMME ACCESE, E LA TERZA CHE MANCA
+      La riga che nessuno ha ancora detto a Thorik
+    §3 — IL CUORE DI MORADIN (rivelazione del reliquiario)
+      SCENA 2 — Il Cuore di Moradin
+    §4 — IL RITO CORALE (Step 1-4, e l'apertura dello Step 5)
+      SCENA 3 — Il rito corale
+      ⚙️ Come si gioca questo rito — la regia `(ADR-0014)`
+    §5 — I TRE DONI (il trapianto) `[CANONE — DM 2026-09-12]`
+      SCENA 4 — I tre Doni
+      🔨 Come lo chiede Moradin: il perché, lo scopo, il prezzo `[riscritto 2026-09-25 su richiesta del DM]`
+      I tre doni, in una tabella
+      DONO 1 — THORIK: «La Forza» → **Lo Scudo del Custode**
+      DONO 2 — TORDEK: «Il Respiro» → **Pelle di Adamantio**
+      DONO 3 — ARTEMIS: «La Scintilla» → **Il Rovo Eldritch**
+      🔗 I tre doni sono una catena, non tre regali
+      ⚒️ Le reazioni degli artefatti — al dono e al rifiuto
+      🚪 Il rifiuto — e cosa succede alla Collana
+      Reazioni di Moradin (senza giudizio)
+      Il richiamo — lo Step 5 si tira adesso
+    §6 — IL DEBITO DELLA RADICE (il filo grigio del piano spirituale) `[CANONE — DM 2026-07-23; il ramo (A/B/C) si gioca]`
+      SCENA 5 — La Custode delle Radici
+    §7 — STEP 6 E IL RISVEGLIO (Hella torna, Durik si lega, la Collana nasce)
+      SCENA 6 — Il risveglio
+    §8 — IL RACCONTO DELLE PROVE (l'asimmetria si scioglie) — spotlight di Hella
+      SCENA 7 — Il racconto delle prove
+    §8-bis — LA PRIMA ORA DOPO IL RITO
+    §8-ter — LA SOGLIA
+      SCENA 8 — La soglia
+    §9 — CONTINGENZE & FALLIMENTO
+      I modi di fallimento — zero successi apre gioco, non lo chiude
+    §10 — ECHO LEDGER (conseguenze a lungo termine)
+    §11 — AVANZAMENTO (budget PX + artefatti)
+      A. Budget PX del beat (party 3→4 PG, APL eff. 12-13 · PG di 13°)
+      B. Artefatti & tesoro (ricchezza speciale, conteggio separato)
+      C. Tesoro PREGENERATO — il ritorno del corredo di Hella
+    §12 — PONTE verso il viaggio a mille anni fa + HANDOUT & ASSET
+      Handout giocatore
+      Immagini (atlante C1 — momenti d'uso)
+      Musica
+      FILE-FONTE ASSORBITI DA QUESTO MASTER (→ `_ARCHIVIO/` a consolidamento chiuso)
+    APPENDICE A — STATISTICHE
+      A.1 · Hella Oakenshield, risorta (§7)
+      A.2 · Treant di Adamantio, evocato dalla Collana (§7)
+    APPENDICE B — MAPPE
+      La Sala della Forgia Eterna, a pergamena
+      Il cerchio del rito, in griglia (scala 1,5 m/quadretto)
+
+LE SCENE, la prima frase:
+  SCENA 1 — L'Altare del Cuore
+      In scena — Dove: l'Altare — Chi: Therysol
+      **Terreno (callout):** l'Altare 2×2 m al centro dell'ottagono (MAPPA S-1 del `DEF-2`); attorno, un **cerchio rituale di 3 m di raggio** — Thorik a Nord, Tordek a Est, Artemis a Ovest, il Sud lasciato **vuoto** (da …
+  SCENA 2 — Il Cuore di Moradin
+      In scena — Dove: l'Altare — Chi: Moradin
+      **Scheda d'entrata — Moradin, tre secondi di voce vera**
+  SCENA 3 — Il rito corale
+      In scena — Dove: il cerchio — Chi: Moradin · Therysol
+      **Ordine di gioco fisso**: Thorik → Tordek → Artemis → Moradin.
+  SCENA 4 — I tre Doni
+      In scena — Dove: il cerchio — Chi: Moradin
+      **Battuta 1 · il perché.** Si legge appena i tre sono in cerchio per lo Step 5, **prima** dei tiri di Volontà.
+  SCENA 5 — La Custode delle Radici
+      In scena — Dove: la Sala — Chi: la Custode delle Radici
+      **La manifestazione (allo Step 5, quando lo spirito attraversa la soglia).** > **Read-aloud (GoT lead, la creditrice paziente) — la Sala, la soglia fra i mondi.** *Nel momento in cui lo > spirito di Hella varca …
+  SCENA 6 — Il risveglio
+      In scena — Dove: l'Altare — Chi: Moradin · Durik
+      **STEP 6 — La Fusione (Moradin manifesto, 3 secondi).** > *Luce divina esplode dall'Altare.
+  SCENA 7 — Il racconto delle prove
+      In scena — Dove: la Sala — Chi: nessuno
+      Quando è pronta a parlare, Hella racconta le **tre prove** dell'Incudine del Mondo (canone giocato): - **Il Fuoco della Verità** — ha dichiarato ad alta voce una verità scomoda (verità piena): *«Ho dovuto dire una cosa …
+  SCENA 8 — La soglia
+      In scena — Dove: l'affresco A6 — Chi: Moradin · Therysol
+      **Il fatto da mettere sul tavolo, con parole da DM e non da manuale**: Moradin non promette.
+
+GRASSETTI (15 su 539): MASTER DEFINITIVO — beat HUB rituale (il cuore emotivo dell' · rito corale · prezzo che il mondo esige · Sostituisce e fonde · Sistema: D&D 3.5 SRD · CD · 1,5 m/quadretto · Il cuore emotivo dell'arco. · Quando si gioca · dopo · prima · : lo spirito di Hella · non lo sanno ancora · ~3g 16h · riposato
+CD: 17, 15, 20, 18, 18, 20, 17, 15
+------------------------------------------------------------
+DOMANDA: Da questa vista soltanto: (1) cosa succede stasera, in tre frasi; (2) chi si oppone ai PG e cosa vuole; (3) cosa devi preparare prima di sederti al tavolo; (4) l'elemento della vista che ti ha fatto rispondere. «Non lo so» e' una risposta lecita, e vale un rilievo sul master.

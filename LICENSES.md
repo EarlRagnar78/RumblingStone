@@ -13,6 +13,7 @@
 |---|---|---|
 | **Il testo** — avventure, moduli, canone, guide, piani, ADR, skill, tavole e immagini prodotte qui | **CC BY-NC-SA 4.0** | [`LICENSE`](LICENSE) |
 | **Gli strumenti** — tutto ciò che sta in `scripts/` (Python, Typst, CI) | **MIT** | [`scripts/LICENSE`](scripts/LICENSE) |
+| **Gli strumenti di terzi** — `scripts/terzi/`, copiati da fuori com'erano | **la licenza del loro autore** (oggi solo Apache 2.0) | [`scripts/terzi/README.md`](scripts/terzi/README.md) · [ADR-0076](plans/adr/ADR-0076-adozione-da-awesome-llm-apps.md) |
 
 In caso di dubbio su un file: **se lo legge un essere umano al tavolo è testo; se
 lo esegue una macchina è strumento.**

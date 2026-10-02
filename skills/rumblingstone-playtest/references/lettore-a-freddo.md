@@ -1,5 +1,16 @@
 # Il lettore a freddo — rubrica fissa
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- Le condizioni
+- La lettura a scene
+- Le domande, sempre le stesse
+- I sei codici
+- L'uscita
+- Come si usa il risultato
+<!-- /indice -->
+
 Il lettore è un DM esperto che **non ha mai visto il modulo** e deve portarlo
 al tavolo stasera. Legge dall'inizio alla fine, una volta, e annota ogni punto
 in cui dovrebbe **inventare** o **cercare** per andare avanti. Non giudica lo
@@ -24,6 +35,69 @@ stesura ne citava tre, ed è stata fermata prima di dare un numero.
 - Legge **nell'ordine di gioco**, non a salti. Un'informazione che arriva tre
   scene dopo il punto in cui serviva è un rilievo.
 - Scrive un rilievo per ogni buco, anche piccolo. Il conteggio si fa dopo.
+
+## La lettura a scene
+
+`scripts/lettura_a_scene.py` serve il modulo **una scena alla volta**: la scena
+dopo arriva solo quando il lettore ha scritto il diario di quella appena letta.
+Serve quando occorre il **diario**: il ricordo del passo 7 e le domande ai
+lettori dopo la lettura lavorano su quello, e il DM a freddo legge così.
+
+**Il lettore legge due volte (D8, deciso il 2026-10-01).** Prima a scene, con
+il diario: è quello che capisce un DM la prima volta, ed è il diario su cui
+lavora il ricordo del passo 7. Poi il modulo intero, da capo, per i buchi che
+si vedono solo con tutto davanti. Nella tabella dei rilievi una colonna
+**Lettura** dice in quale delle due è nato ognuno (`scene` o `intera`); un
+rilievo trovato in tutte e due si scrive una volta, con `scene`.
+
+Perché due e non una: nella calibrazione sul DEF-4 del tavolo
+(`plans/esperimenti/lettura-a-scene-def4/`) le due letture avevano trovato 7
+`L-ORDINE` ciascuna e solo tre in comune; insieme sono 11. ⚠️ Quella misura
+viene da **due agenti diversi**; con lo stesso lettore che rilegge, la seconda
+lettura può trovare meno, perché ha già capito. Va misurato alla prima corsa
+vera.
+
+Il diario, una riga per passaggio:
+
+```
+ago=<-2..+2> | mi aspettavo: … | ho trovato: … | so adesso: … | codici: L-…
+```
+
+- **ago** è come va la lettura: +2 dentro, 0 neutro, −1 la perdo, −2 smetto.
+  Smettere è permesso, e il punto in cui si smette è un rilievo;
+- **so adesso** è cosa sanno i PG a questo punto, e da chi l'hanno saputo. Una
+  cosa che il diario dice di non sapere e che compare tre scene dopo è un
+  `L-ORDINE`, con la prova già scritta;
+- i **codici** si annotano nel momento in cui scattano; la tabella dei rilievi
+  si compila alla fine, dal diario.
+
+Chi orchestra avvia la lettura e dà a ogni agente **solo il suo indirizzo**, mai
+il percorso del file, con questo messaggio d'invio (forma presa da
+`advisor-orchestrator-worker` di awesome-llm-apps, ADR-0076):
+
+```
+Sei il lettore a freddo di un modulo. Questo messaggio è tutto quello che hai.
+COMPITO: leggere il modulo una scena alla volta e trovare dove il DM dovrebbe
+inventare o cercare.
+INPUT: export READER_FEED=<indirizzo>; poi
+  python3 scripts/lettura_a_scene.py inizia
+  python3 scripts/lettura_a_scene.py avanti --diario "ago=… | mi aspettavo: … | ho trovato: … | so adesso: …"
+  python3 scripts/lettura_a_scene.py smetti --diario "…"   (se ti fermi)
+  e la rubrica skills/rumblingstone-playtest/references/lettore-a-freddo.md
+CRITERI (l'uscita fallisce se uno manca):
+1. non apri il modulo per altre vie: niente grep, niente cat, niente git;
+2. ogni passaggio ha la sua riga di diario, con tutti i campi;
+3. la tabella finale ha una prova citata per ogni rilievo.
+USCITA: dopo l'ultima scena, rileggi il modulo intero da capo; poi la tabella
+| # | Lettura | Scena | Codice | Cosa manca | Gravità | Prova |, e in coda cosa
+la lettura non ha potuto verificare.
+Se un input manca o si contraddice, scrivi INPUT GAP in testa, con una riga.
+```
+
+⚠️ **Il limite.** L'agente ha il repo davanti: se cerca il master con `grep`, lo
+trova. Il meccanismo gli toglie il percorso, non la possibilità. Si controlla
+dopo: un diario che cita cose delle scene successive ha guardato avanti, e la
+lettura si rifà.
 
 ## Le domande, sempre le stesse
 
@@ -69,9 +143,10 @@ agenti: `quiz-a-due-agenti.md`.
 Una tabella, niente prosa intorno:
 
 ```
-| # | Scena | Codice | Cosa manca | Gravità | Prova |
+| # | Lettura | Scena | Codice | Cosa manca | Gravità | Prova |
 ```
 
+- **Lettura**: `scene` o `intera`, la lettura in cui il rilievo è nato (D8).
 - **Gravità**: 🔴 *il DM deve inventare qualcosa di strutturale* · 🟠 *il DM
   perde più di 30 secondi a cercare* · 🟡 *se ne accorge un giocatore attento*.
   Sono le due metriche del debrief (`SKILL.md` §5), usate come soglie.

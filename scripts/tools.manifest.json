@@ -7377,6 +7377,898 @@
         "skills/rumblingstone-module-standard/references/sviluppo-degli-incontri.md",
         "plans/esperimenti/domande-developer-def4/CALIBRAZIONE.md"
       ]
+    },
+    {
+      "language": "python",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "outputs": [],
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "id": "skill_scanner",
+      "path": "scripts/terzi/skill_scanner.py",
+      "category": "F-skill-pipeline",
+      "invocation": "python3 scripts/terzi/skill_scanner.py skills [--json]",
+      "summary": "Scanner statico di sicurezza delle skill (script scaricati e dati alla shell, rete non dichiarata, credenziali, codice offuscato), copiato identico da awesome-llm-apps (Apache 2.0, ADR-0076). Esce 1 se trova un CRITICO.",
+      "use_case": "«Una skill di questo repo contiene qualcosa che un agente non dovrebbe eseguire?»",
+      "args": [
+        {
+          "name": "path",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La skill o la cartella di skill da scansionare."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Uscita in JSON."
+        },
+        {
+          "name": "--include-fixtures",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scansiona anche le fixture di prova (opzione dell'originale)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "skills/**/*",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "nessun CRITICO",
+        "1": "almeno un CRITICO",
+        "2": "errore d'uso"
+      },
+      "ci_smoke": "python scripts/terzi/skill_scanner.py skills",
+      "tests": [
+        "scripts/tests/test_skill_scanner.py"
+      ],
+      "docs": [
+        "scripts/terzi/README.md",
+        "plans/adr/ADR-0076-adozione-da-awesome-llm-apps.md"
+      ]
+    },
+    {
+      "language": "python",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "outputs": [],
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "id": "adozioni_in_attesa",
+      "path": "scripts/adozioni_in_attesa.py",
+      "category": "G-orchestration-governance",
+      "invocation": "python3 scripts/adozioni_in_attesa.py [--check]",
+      "summary": "Le adozioni di codice o skill esterni rimandate, in plans/adozioni-in-attesa.json, ognuna con una condizione misurabile; --check esce 1 quando una condizione e' attiva e la voce dice ancora «in attesa» (ADR-0076).",
+      "use_case": "«Quella skill che avevamo rimandato: e' arrivato il momento di adottarla?»",
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cancello CI: esce 1 se una condizione e' attiva su una voce ancora in attesa."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/adozioni-in-attesa.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "condizione attiva su una voce ancora in attesa",
+        "2": "registro malformato"
+      },
+      "ci_smoke": "python scripts/adozioni_in_attesa.py --check",
+      "tests": [
+        "scripts/tests/test_adozioni_in_attesa.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0076-adozione-da-awesome-llm-apps.md"
+      ]
+    },
+    {
+      "id": "lettura_a_scene",
+      "path": "scripts/lettura_a_scene.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/lettura_a_scene.py servi <master> --corsa DIR --lettori lettore,playtester | inizia | avanti --diario … | smetti --diario … | progresso/chiudi --admin URL | diario DIR/lettore",
+      "summary": "Serve un master ai lettori a freddo una scena alla volta da 127.0.0.1: la scena dopo arriva solo dopo una riga di diario (ago, mi aspettavo, ho trovato, so adesso) e dopo il tempo per leggerla; alla chiusura scrive impronte, mai il testo. Adattato da first-reader/feed.py (Apache 2.0, ADR-0076).",
+      "use_case": "«Il lettore a freddo ha trovato davvero quello che arriva tardi, o l'ha visto perché aveva già letto la scena dopo?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "cmd",
+          "type": "str",
+          "required": true,
+          "default": null,
+          "choices": [
+            "servi",
+            "inizia",
+            "avanti",
+            "smetti",
+            "progresso",
+            "chiudi",
+            "diario"
+          ],
+          "repeatable": false,
+          "desc": "Sottocomando."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "07_il Portale Della Forgia Eterna/ARC07-DEF-*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "plans/copertura-scene.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "diario rifiutato o lettura chiusa",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "I passaggi e le impronte sono deterministici; il diario lo scrive un agente."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": false,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/lettura_a_scene.py --help",
+      "tests": [
+        "scripts/tests/test_lettura_a_scene.py"
+      ],
+      "docs": [
+        "skills/rumblingstone-playtest/references/lettore-a-freddo.md",
+        "plans/PIANO-AGENT-SKILLS-ESTERNE.md"
+      ]
+    },
+    {
+      "id": "ricordo_lettura",
+      "path": "scripts/ricordo_lettura.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/ricordo_lettura.py domande <corsa>/<lettore> | chiedi <corsa> <lettore|tutti> \"<domanda>\" | intenzione <master>",
+      "summary": "Il ricordo del giorno dopo (passo 7 del ciclo, D1 del 2026-10-01): il pacchetto per un agente nuovo con il solo diario della lettura a scene e sette domande da DM; le domande ai lettori dopo la lettura; l'intenzione dichiarata dal master contro cui si giudica. Adattato da first-reader/recall.py e ask.py (Apache 2.0, ADR-0076).",
+      "use_case": "«Cosa resta di questo modulo a chi l'ha letto una volta, e perché il lettore si è fermato alla Scena 7?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "cmd",
+          "type": "str",
+          "required": true,
+          "default": null,
+          "choices": [
+            "domande",
+            "chiedi",
+            "intenzione"
+          ],
+          "repeatable": false,
+          "desc": "Sottocomando."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "07_il Portale Della Forgia Eterna/ARC07-DEF-*.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "lettura non chiusa, o master senza intenzione dichiarata",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "I pacchetti sono deterministici; le risposte le scrive un agente."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/ricordo_lettura.py --help",
+      "tests": [
+        "scripts/tests/test_ricordo_lettura.py"
+      ],
+      "docs": [
+        "skills/rumblingstone-playtest/references/quiz-a-due-agenti.md",
+        "plans/adr/ADR-0075-il-ciclo-del-master-vale-per-ogni-piano.md"
+      ]
+    },
+    {
+      "id": "vista_di_chi_scorre",
+      "path": "scripts/vista_di_chi_scorre.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/vista_di_chi_scorre.py <master> [--json]",
+      "summary": "Il primo passo del DM a freddo (L5, D2 del 2026-10-01): il master come lo vede chi lo sfoglia, cioè la serata dichiarata, i titoli, la riga «In scena» e la prima frase di ogni scena, i grassetti, le CD con le parole prima. Il resto è tolto di proposito. Adattato da first-reader/skim.py (Apache 2.0, ADR-0076).",
+      "use_case": "«Un DM che sfoglia questo master capisce cosa succede stasera e chi si oppone?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "master",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il master da sfogliare."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La vista come dati."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "07_il Portale Della Forgia Eterna/ARC07-DEF-*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "2": "master non trovato"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "La vista è deterministica; le risposte le scrive un agente."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/vista_di_chi_scorre.py --help",
+      "tests": [
+        "scripts/tests/test_vista_di_chi_scorre.py"
+      ],
+      "docs": [
+        "skills/rumblingstone-playtest/references/dm-a-freddo.md"
+      ]
+    },
+    {
+      "id": "instradamento_skill",
+      "path": "scripts/instradamento_skill.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/instradamento_skill.py [--check] [--json] [--frase \"<richiesta>\"] [--comportamentale <cartella>]",
+      "summary": "L8 (D6 del 2026-10-01): per ogni frase vera del DM in plans/instradamento/casi.json, quali skill obbligatorie (ORCHESTRAZIONE §4) raggiungono i trigger fra virgolette delle descrizioni. Conta omissioni, skill in più e conflitti fra le due L1. Il gate è a cricchetto sul tetto del file. Dal 2026-10-01 (D10): casi esclusi e quasi-casi, collisioni fra descrizioni, il suggerimento per una frase (--frase) e la prova con agenti veri (--comportamentale), come chiedono agentskills.io e skill-creator.",
+      "use_case": "«Se il DM dice questa frase, un agente che instrada sulle descrizioni carica le skill che deve?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il gate: esce 1 sopra il tetto o con un conflitto L1."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La misura come dati."
+        },
+        {
+          "name": "--casi",
+          "type": "path",
+          "required": false,
+          "default": "plans/instradamento/casi.json",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il file dei casi."
+        },
+        {
+          "name": "--frase",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Suggerisce le skill per una frase sola."
+        },
+        {
+          "name": "--comportamentale",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cartella con le corse run*.json degli agenti."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/instradamento/casi.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "skills/*/SKILL.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "sotto il tetto",
+        "1": "sopra il tetto, conflitto L1 o tetto mancante",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Puramente lessicale."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/instradamento_skill.py --check",
+      "tests": [
+        "scripts/tests/test_instradamento_skill.py"
+      ],
+      "docs": [
+        "skills/ORCHESTRAZIONE.md"
+      ]
+    },
+    {
+      "id": "eco_decisioni",
+      "path": "scripts/eco_decisioni.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/eco_decisioni.py [--check]",
+      "summary": "L9 (D6 del 2026-10-01): due o più decisioni chiuse nella stessa data, nello stesso piano, vogliono il blocco d'eco <!-- eco: ETICHETTA DATA --> con Decise, Aperte, Cambiate e Dedotto da me. Legge le tabelle di decisioni_dm.py.",
+      "use_case": "«Il DM ha chiuso sette decisioni in un messaggio: ho scritto cosa ho capito, e cosa ho aggiunto io?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se un'eco manca o è incompleta."
+        },
+        {
+          "name": "--radice",
+          "type": "path",
+          "required": false,
+          "default": ".",
+          "choices": null,
+          "repeatable": false,
+          "desc": "La radice del repo (per i test)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "eco mancante o incompleta (con --check)",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/eco_decisioni.py --check",
+      "tests": [
+        "scripts/tests/test_eco_decisioni.py"
+      ],
+      "docs": [
+        "skills/rumblingstone-plans/SKILL.md"
+      ]
+    },
+    {
+      "id": "registro_letture",
+      "path": "scripts/registro_letture.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/registro_letture.py [--check] | --registra <master> --ruolo lettore|playtester|dm --corsa DIR [--rapporto R.md] | --sola-forma <master> --ragione … | --confronta A B",
+      "summary": "Il registro delle letture a freddo dei master DEF (D26): impronta del testo letto e stato di ogni rilievo 🔴/🟠. Il cancello e' in avviso finche' un master non ha le letture con impronta di lettore e playtester, poi blocca da solo una lettura scaduta o un rilievo senza stato (D4). --confronta mette due letture affiancate, scena per scena.",
+      "use_case": "«Questo master e' cambiato dopo l'ultima lettura a freddo? Ogni rilievo grave ha avuto una risposta?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il cancello: avviso, poi bloccante master per master."
+        },
+        {
+          "name": "--registra",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Aggiunge la lettura di una corsa di lettura_a_scene.py."
+        },
+        {
+          "name": "--sola-forma",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Dichiara un cambio di sola forma, con la ragione."
+        },
+        {
+          "name": "--confronta",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Due cartelle di lettura, affiancate."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/letture-a-freddo.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "plans/letture-a-freddo.json",
+          "kind": "json",
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok o avviso",
+        "1": "un master sotto cancello ha una lettura da rifare",
+        "2": "registro malformato"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Impronte SHA-256 e conteggi; la data di registrazione e' quella del giorno."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/registro_letture.py --check",
+      "tests": [
+        "scripts/tests/test_registro_letture.py"
+      ],
+      "docs": [
+        "plans/PIANO-AGENT-SKILLS-ESTERNE.md",
+        "plans/PIANO-LETTORE-E-PLAYTESTER.md"
+      ]
+    },
+    {
+      "id": "voto_scrittura",
+      "path": "scripts/voto_scrittura.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/voto_scrittura.py [FILE --caso SNN] [--corse] [--emit] [--check]",
+      "summary": "L11 (D11 del 2026-10-01): il voto deterministico sui testi scritti con e senza le skill di scrittura. Ogni controllo chiama un rilevatore che esiste (misura_craft, validate_prosa) e una norma registrata; i casi in plans/scrittura/casi.json seguono lo schema di evals.json di skill-creator, a metà fra taratura e verifica. «Sembra/pare» è un controllo dal 2026-10-01 (D13); dal 2026-10-02 comprende participio e passato remoto.",
+      "use_case": "«Un agente che carica la skill di scrittura rispetta le norme registrate più di uno che non la carica?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "file",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Un testo da votare."
+        },
+        {
+          "name": "--caso",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "L'id del caso per il file (S01…)."
+        },
+        {
+          "name": "--corse",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La tabella delle corse."
+        },
+        {
+          "name": "--emit",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scrive plans/scrittura/voti.json."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se voti.json non corrisponde alle corse."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/scrittura/casi.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "plans/scrittura/corse/*/*.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "plans/scrittura/voti.json",
+          "kind": "json",
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "voti.json non allineato (--check)",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Dipende solo dai testi delle corse e dai rilevatori."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/voto_scrittura.py --check",
+      "tests": [
+        "scripts/tests/test_voto_scrittura.py"
+      ],
+      "docs": [
+        "plans/PIANO-AGENT-SKILLS-ESTERNE.md"
+      ]
+    },
+    {
+      "id": "ciclo_prosa",
+      "path": "scripts/ciclo_prosa.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/ciclo_prosa.py {segnala FILE [--languagetool URL] | revisione ORIGINALE RISCRITTO [-o REVISIONE.md] | applica REVISIONE.md --data AAAA-MM-GG [--auto]}",
+      "summary": "L12 (D15 e D16 del 2026-10-02, ADR-0077): dal segnalare al correggere, con una revisione a due giri come fra revisore e autore. `segnala` riusa i rilevatori registrati e aggiunge la regola «debole da solo» di Humanizer (tic minori diversi nello stesso paragrafo); `revisione` scrive il documento da approvare, con ogni modifica in CriticMarkup, numerata, motivata da una norma, e le due garanzie (nessun controllo peggiora, nessun fatto cambia); `applica` porta nell'originale solo le modifiche spuntate, mai su main, e alza la riga `revisione-testo: rN`. Il documento riporta anche la lettura prima e dopo (indice Gulpease e ritmo delle frasi); con `--auto` si applicano senza lettore le modifiche motivate che, da sole, non cambiano un fatto, non peggiorano un controllo e non peggiorano la lettura, e il documento le segna `[x] auto`. LanguageTool (LGPL) è un servizio facoltativo, mai in CI.",
+      "use_case": "«Cosa è cambiato rispetto all'originale, perché, e cosa resta da correggere dopo che ho approvato?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "segnala FILE",
+          "type": "subcommand",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Primo giro: i passaggi da correggere, con la norma e il rimedio."
+        },
+        {
+          "name": "revisione ORIGINALE RISCRITTO",
+          "type": "subcommand",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il documento di revisione da approvare modifica per modifica."
+        },
+        {
+          "name": "-o",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Dove scrivere il documento di revisione (altrimenti a schermo)."
+        },
+        {
+          "name": "applica REVISIONE",
+          "type": "subcommand",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Secondo giro: applica le modifiche spuntate e rimisura."
+        },
+        {
+          "name": "--data",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La data della riga di revisione: non si deduce (ADR-0023)."
+        },
+        {
+          "name": "--languagetool",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "URL di un server LanguageTool: aggiunge le segnalazioni grammaticali (facoltativo)."
+        },
+        {
+          "name": "--auto",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Applica anche le modifiche segnate «auto» e lo scrive nel documento di revisione."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "*.md",
+          "kind": "markdown",
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "REVISIONE-*.md",
+          "kind": "markdown",
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "la revisione peggiora un controllo o cambia un fatto; applica rifiutata (main, impronta, fatti)",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Dipende solo dai testi in ingresso, dai rilevatori e dal registro dei nomi; applica legge il ramo git."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/ciclo_prosa.py --help",
+      "tests": [
+        "scripts/tests/test_ciclo_prosa.py"
+      ],
+      "docs": [
+        "plans/PIANO-AGENT-SKILLS-ESTERNE.md",
+        "plans/adr/ADR-0077-revisione-a-due-giri.md"
+      ]
+    },
+    {
+      "id": "indice_references",
+      "path": "scripts/indice_references.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/indice_references.py {--emit | --check}",
+      "summary": "L12 (ADR-0077 §9): l'indice in testa a ogni reference delle skill oltre le 100 righe, generato dai titoli fra due marcatori, come chiede la guida di Anthropic sulle skill. Un agente che legge solo l'inizio vede cosa c'è e apre la sezione che serve. Esclusa la skill vendorizzata rumblingstone-debugging.",
+      "use_case": "«Un agente che legge le prime righe di un reference sa cosa contiene il resto?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--emit",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scrive o aggiorna gli indici."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se un indice manca o è vecchio."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "skills/*/references/*.md",
+          "kind": "markdown",
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "skills/*/references/*.md",
+          "kind": "markdown",
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "un indice manca o è vecchio (--check)",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Dipende solo dai titoli dei references."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/indice_references.py --check",
+      "tests": [
+        "scripts/tests/test_indice_references.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0077-revisione-a-due-giri.md"
+      ]
     }
   ]
 }

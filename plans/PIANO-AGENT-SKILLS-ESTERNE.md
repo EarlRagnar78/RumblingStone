@@ -369,7 +369,7 @@ Si apre da solo: `adozioni_in_attesa.py --check` esce 1 in CI quando almeno tre
 file di gioco cambiano dieci o più volte in sessanta giorni senza una riga di
 storia nel sorgente. Fonte, commit, licenza e URL dei file stanno nel registro.
 
-### L11 · Il giro sulle skill di scrittura — 🟡 in corso (2026-10-01) · D11
+### L11 · Il giro sulle skill di scrittura — ✅ (2026-10-02) · D11
 
 `[engine: Opus, sessione principale + agenti di corsa · effort: alto · qualità: la verifica migliora dopo correzioni fatte sulla sola taratura]` — **G**
 
@@ -413,8 +413,44 @@ dall'instradamento all'**uscita**: cosa scrive un agente con la skill e senza.
       (testi per un solo giocatore, dove P1 lascia la seconda persona): ora
       a muoversi è l'oggetto, non il PG
 - [ ] il lotto dei 34 box con «sembra» o «pare» (D13)
-- [ ] tornata B con le skill corrette, e il confronto sulla verifica
-- [ ] `RISULTATI.md`, i test del voto, la voce nel manifest
+- [x] tornata B con le skill corrette: verifica da 96% a **100%**, taratura
+      100%. Le ultime bocciature erano del metro (etichetta su una riga sua),
+      corretto e riapplicato a tutte le corse
+- [x] `plans/scrittura/RISULTATI.md`, 22 test del voto, la voce nel manifest
+
+### L12 · Dal segnalare al correggere, e le skill secondo la guida — ⬜ (2026-10-02) · D15, D16
+
+`[engine: Opus, sessione principale + agenti di corsa · effort: alto · qualità: tornata C ≥ B sulla verifica, e la correzione non cambia un fatto]` — **G**
+
+Il DM: *«Il valore delle skills e poi non solo segnalare ma migliorare cosa
+segnalano […] si fa riferimento alle migliori soluzioni indicate dalla
+community»*. Due fonti, lette il 2026-10-02:
+
+- **Anthropic, *Skill authoring best practices***: tre esempi input/output per
+  comportamento, valutazioni prima della documentazione, il ciclo «validatore →
+  correggi → ripeti», un indice nei references oltre le 100 righe, references a
+  un solo livello dallo `SKILL.md`.
+- **Humanizer** (blader, MIT, su *Signs of AI writing* di Wikipedia): segnala
+  **e** riscrive; tic ordinati per forza, i «deboli da soli» contano in gruppo;
+  non inventa fatti; prima bozza, critica, versione finale. Si adottano le idee,
+  non il codice.
+
+Misure di partenza: 20 references di scrittura su 21 oltre le 100 righe senza
+indice; `style-pillars.md` rimanda a 4 references, `documento-ed-errore-fecondo.md`
+a 5; `italiano-nativo.md` ha 6 coppie ❌/✅ su più di trenta regole, e nessuna
+sui tic del §9.
+
+- [ ] `italiano-nativo.md` e gli altri references di scrittura: tre coppie
+      ❌/✅ per ogni regola misurata dal voto, prese da testi veri (le corse, i
+      master); i tic per forza; l'indice in testa
+- [ ] i rimandi riportati a un livello dallo `SKILL.md`; la self-check come
+      ciclo «misura → correggi → rimisura»
+- [ ] `scripts/ciclo_prosa.py` (stdlib): estrae i passaggi segnalati con la <!-- validate-docs: futuro -->
+      norma e il rimedio; dopo la riscrittura dell'agente confronta le due
+      versioni e la accetta solo se nessun controllo peggiora e restano uguali
+      nomi propri, numeri e CD
+- [ ] l'ADR del passaggio dal segnalare al correggere, con l'attribuzione
+- [ ] tornata C sulla verifica, e il ciclo provato sui testi delle corse
 
 ## 5 · Decisioni aperte al DM
 
@@ -436,6 +472,8 @@ dall'instradamento all'**uscita**: cosa scrive un agente con la skill e senza.
 | ~~D12~~ | L5 | ✅ **Decisa il 2026-10-01**: la preparazione dell'agente non basta. Il DM elenca la sua: risolvere i problemi oltre a vederli, lo stato del gruppo e del mondo, cosa si muove senza i PG, lo stile e le immagini già fatte, le immagini e gli handout mancanti, il flusso, le domande dei PG, i congegni descritti col read-aloud senza anticipare, le interazioni con artefatti e mondo, e il confine fra ciò che sanno i PG e ciò che sa il master. Diventano le undici voci `P-*` di `dm-a-freddo.md`. Era: **La preparazione di `corsa-def5/PREPARAZIONE.md` somiglia alla tua?** |
 | ~~D13~~ | L11 | ✅ **Decisa il 2026-10-01**: sì. «Sembra» e «pare» nei box diventano una norma **minore**, con il rilevatore di `voto_scrittura.py` che passa da indizio a controllo e un lotto che corregge i 34 box; «come se» resta fuori. Era: **«Sembra» e «pare» nei box: norma nuova?** |
 | ~~D14~~ | L11 | ✅ **Decisa il 2026-10-01**: vince P1. Il gesto passa a un PNG o al mondo; P1 si scrive in `read-aloud-adulti.md` §1 e i tre esempi ✅ si correggono. Era: **P1 contro la reticenza sull'emozione** |
+| D15 | L12 | **Fin dove arriva la correzione automatica?** *Proposta*: lo script non scrive mai nei file d'arco; propone la riscrittura, la verifica (nessun controllo peggiora, nessun nome, numero o CD cambiato) e chi lavora la applica sul ramo. Un'applicazione automatica sui master farebbe passare un errore di fatto senza che nessuno lo legga |
+| D16 | L12 | **Quale «documento migliorato» si migliora con le misure?** *Proposta*: le skill corrette devono superare le proprie misure (`italiano-nativo.md` riscritto passa il voto) e il ciclo si prova sui testi delle corse. Se il DM intende un master preciso, quale |
 
 ### L'eco del 2026-10-01
 

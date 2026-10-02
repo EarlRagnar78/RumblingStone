@@ -46,6 +46,16 @@ class TestIControlliDeiBox(unittest.TestCase):
     def test_il_box_nudo_non_e_etichettato(self):
         assert not _controlli("> *Un altare al centro.*\n")["box_etichettato"]
 
+    def test_etichetta_sulla_riga_sopra(self):
+        dentro = "> **Read-aloud (LotR lead).**\n> *Un altare al centro.*\n"
+        fuori = "**Read-aloud (LotR lead).**\n\n> *Un altare al centro.*\n"
+        assert _controlli(dentro)["box_etichettato"]
+        assert _controlli(fuori)["box_etichettato"]
+
+    def test_etichetta_lontana_non_vale(self):
+        testo = "**Read-aloud (LotR lead).**\n\nPer il DM.\n\n> *Un altare.*\n"
+        assert not _controlli(testo)["box_etichettato"]
+
     def test_senza_box_nessuna_etichetta_vale(self):
         assert not _controlli("Solo prosa per il DM.\n")["box_etichettato"]
 

@@ -77,6 +77,36 @@ def _corpi(testo: str) -> "list[str]":
     return [mc._ETICHETTA.sub("", " ".join(b)) for b in mc.box_read_aloud(testo)]
 
 
+def _box_etichettati(testo: str) -> int:
+    """Quanti box hanno l'etichetta di regia sulla prima riga o subito sopra.
+
+    `editorial-standards` §2 prescrive `**Read-aloud (pilastro lead).**` e non
+    dice su che riga stia. `misura_craft.box_read_aloud` riconosce il box solo
+    dalla riga in corsivo, quindi un'etichetta su una riga sua (dentro la
+    citazione o appena fuori) restava esclusa dal box e il box risultava
+    senza. Trovato sulla tornata B di L11: tre bocciature su tre erano questa
+    forma, e la norma la ammette.
+    """
+    righe = testo.splitlines()
+    inizi = []
+    for b in mc.box_read_aloud(testo):
+        # l'indice della prima riga del box nel testo: si cerca in avanti,
+        # dopo l'inizio precedente, perche' due box possono avere righe uguali
+        da = inizi[-1] + 1 if inizi else 0
+        inizi.append(next(i for i in range(da, len(righe)) if righe[i] == b[0]))
+    n = 0
+    for i in inizi:
+        if mc._ETICHETTA.search(righe[i]):
+            n += 1
+            continue
+        j = i - 1
+        while j >= 0 and righe[j].strip().lstrip(">").strip() == "":
+            j -= 1
+        if j >= 0 and mc._ETICHETTA.search(righe[j]):
+            n += 1
+    return n
+
+
 def _doc_trattini(testo: str) -> "tuple[bool, str]":
     # La soglia per mille di validate_prosa --documenti, senza il pavimento delle
     # quaranta righe: un corpo di PR ne ha quindici, e li' la densita' si legge
@@ -98,7 +128,7 @@ def controlli(testo: str, genere: str) -> "dict[str, tuple[bool, str]]":
     prosa_doc = "\n".join(vp.prosa_documento(testo))
     p1 = mc.box_con_p1(testo)
     metr = mc.metrature_nei_box(testo)
-    senza_etichetta = sum(1 for b in box if not mc._ETICHETTA.search(b[0]))
+    senza_etichetta = len(box) - _box_etichettati(testo)
     return {
         "box_presente": (bool(box), f"{len(box)} box"),
         "box_tetto_righe": (difetti["oltre 12 righe"] == 0, f"{difetti['oltre 12 righe']} oltre 12 righe"),

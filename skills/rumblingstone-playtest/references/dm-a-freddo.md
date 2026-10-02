@@ -7,6 +7,7 @@
 - Secondo passo · la preparazione a scene
 - Terzo passo · il giorno dopo, al tavolo
 - L'uscita
+- I codici del primo giro (30 settembre)
 <!-- /indice -->
 
 Il lettore cerca dove il DM dovrebbe inventare, il playtester cosa succede
@@ -137,3 +138,20 @@ La stessa tabella delle altre due rubriche:
 Gravità: 🔴 *la serata non si capisce senza leggere tutto* · 🟠 *il DM perde più
 di 30 secondi a cercare* · 🟡 *se ne accorge un DM attento*. La prova è la riga
 della vista, del diario o della risposta che rende evidente il buco.
+
+## I codici del primo giro (30 settembre)
+
+Il primo giro delle quattro letture su DEF-4 e DEF-5
+(`plans/esperimenti/giro-def4-def5/`, ramo della PR #187) ha usato una bozza di
+questa rubrica, scritta prima delle decisioni D2, D9 e D12. I suoi rapporti
+portano questi codici; vale la rubrica qui sopra, e la tabella dice dove è
+finito ognuno.
+
+| Codice di allora | La domanda | Oggi |
+|---|---|---|
+| `D-PREP` | devo preparare qualcosa e il modulo non lo dice, o lo dice dopo | `D-PREPARA` (primo passo), `P-HANDOUT`, `P-IMMAGINI` |
+| `D-VOCE` | devo dire qualcosa ad alta voce e non c'è, o c'è in una forma che non si legge | `P-CONGEGNI` |
+| `D-SALTO` | mentre conduco devo saltare altrove nel file | resta valido nel secondo passo: nessun codice nuovo lo copre |
+| `D-FLUSSO` | finita la scena non so qual è la prossima | `P-FLUSSO` |
+| `D-TEMPO` | la scena non dice quanto dura, o cosa tagliare | resta valido nel secondo passo: nessun codice nuovo lo copre |
+| `D-RICORDO` | il giorno dopo ho dimenticato una cosa che mi serviva | il terzo passo |

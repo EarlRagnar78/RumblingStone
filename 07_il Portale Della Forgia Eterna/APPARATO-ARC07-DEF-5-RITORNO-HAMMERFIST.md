@@ -20,6 +20,8 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 |---|---|---:|
 | SCENA 1 | All'arrivo, Tempra | 15 |
 | SCENA 2 | sua Aura di Comando (1/giorno, comando | 15 |
+| SCENA 2 | 1d6, o nessun danno con Saltare | 15 |
+| SCENA 2 | di 6 m di raggio (Riflessi | 15 |
 | SCENA 2 | gli orchi nella caverna tirano Volontà | 25 |
 
 ## L'indice dei read-aloud, in ordine di gioco

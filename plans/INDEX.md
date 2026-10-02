@@ -94,6 +94,7 @@
 - ⬜ _(2026-09-30: letta tutta la cartella `agent_skills/` contro le diciotto skill. Misure sul repo: 3 descrizioni oltre i 1024 caratteri, 1 riga `curl … | sh` in `dnd-35-srd`, 24 errori su 24 falsi positivi dal lint dei percorsi. La bozza del DM a freddo non è nel repo né nei rami: D2. Il DM sceglie quali lotti partono)_
 
 ### PIANO-LETTORE-E-PLAYTESTER
+- ▶ _(2026-09-30, notte: il giro delle quattro letture su DEF-4 e DEF-5, con la rubrica nuova del DM a freddo; la procedura scritta nel ciclo del master. Aperta D38)_
 - ▶ _(2026-09-30, sera: D9 chiusa, box spezzati; *silenzio* a 1 minuto per livello. Aperte D27, D35-D37)_
 - 🟡 _(2026-09-30, sera: il DM risponde a D7-D34 salvo D9 e D27; applicate a DEF-1, 4, 5, al registro di DEF-2 e all'handout delle Cronache. Aperte: D9, D27, D35-D37)_
 - ▶ _(2026-09-30, F4: DEF-1, 2, 3 nella forma del ciclo, passi 1-4; le prime letture cieche trovano buchi vecchi, non della conversione: DEF-1 lettore 🔴 2, DEF-2 🔴 2+2. Corretti quelli che il testo risolve; il salto verso il Tempio aspetta il DM; passo 5 fermo su D9)_

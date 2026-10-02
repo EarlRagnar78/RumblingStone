@@ -1228,7 +1228,7 @@ numeri già presi. RIPRESA-PR le tiene aperte apposta come segnaposto
 
 Il DM: *«se verde mergia anche le PR precedenti aggiornando i piani con quello
 fatto e da fare, perché il main è indietro di molte PR»*. Le PR aperte erano
-diciotto. Si fondono tutte con la #200, che le contiene:
+diciassette. Si fondono tutte con la #200, che le contiene:
 
 | PR | Come entra | Cosa porta |
 |---|---|---|

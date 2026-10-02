@@ -21,7 +21,7 @@
 > diventa ▶. Le sezioni §6-§10 restano come diario (il perché di ogni scelta)
 > e non si aggiornano più.
 
-**Ultimo aggiornamento**: 2026-09-30 notte, il giro delle quattro letture su DEF-4 e DEF-5 (riga ▶ qui sotto). Prima: 2026-09-30, dopo il merge della #182 (`c80af16`), della #183 (`ac97197`) e della #184. **La fotografia della tornata, con i numeri, i piani aperti e le decisioni per piano, è il §14.** DEF-4 pronto per la prossima serata, ARC-07 al ciclo del master con DEF-5 ai passi 1-6, e la prova cieca di `P-ABITATO` riuscita. Le righe marcate *(PR #183)* e *(30 settembre)* qui sotto dicono cosa è fatto e cosa resta; il dettaglio è in [LETTORE-PLAYTESTER](PIANO-LETTORE-E-PLAYTESTER.md) F3-bis e F4. Prima: il 2026-09-25, dopo il merge delle #170-#174 (`eef36a9`) e della #176, e i lotti 2f e 2g di CICLO-SESSIONE. Cosa ha chiuso la #169 e cosa ha lasciato aperto: §11. La storia delle scelte fuori stampa e il conto delle marcature aperte: §12.
+**Ultimo aggiornamento**: 2026-10-02, dopo il merge della #200 (`5f3cb520`), che ha portato su `main` anche #186-#199, #187 e #188: le sole PR aperte sono #99 e #106, e il da fare è in §14.4-bis. Prima: 2026-09-30 notte, il giro delle quattro letture su DEF-4 e DEF-5 (riga ▶ qui sotto). Prima: 2026-09-30, dopo il merge della #182 (`c80af16`), della #183 (`ac97197`) e della #184. **La fotografia della tornata, con i numeri, i piani aperti e le decisioni per piano, è il §14.** DEF-4 pronto per la prossima serata, ARC-07 al ciclo del master con DEF-5 ai passi 1-6, e la prova cieca di `P-ABITATO` riuscita. Le righe marcate *(PR #183)* e *(30 settembre)* qui sotto dicono cosa è fatto e cosa resta; il dettaglio è in [LETTORE-PLAYTESTER](PIANO-LETTORE-E-PLAYTESTER.md) F3-bis e F4. Prima: il 2026-09-25, dopo il merge delle #170-#174 (`eef36a9`) e della #176, e i lotti 2f e 2g di CICLO-SESSIONE. Cosa ha chiuso la #169 e cosa ha lasciato aperto: §11. La storia delle scelte fuori stampa e il conto delle marcature aperte: §12.
 
 | | Cosa | Classe | Dove sta il dettaglio | Da dove si parte |
 |---|---|---|---|---|
@@ -36,6 +36,7 @@
 | ✅ | **La storia delle scelte non va in stampa**: blocchi `<!-- storico -->` nei sorgenti e attribuzioni di forma fissa tolte dalle due catene con la stessa funzione; la tecnica per fare un booklet, con le regole della #169, scritta come canone | C + G3 | §12.2 · ADR-0069 · `rumblingstone-editoria` §2-bis e §4.6 | fatto: righe con un segnale di storia nei PDF da 257 a 67, storia vera in stampa da 161 righe a 15 dichiarate |
 | ✅ | **Le tabelle che in colonna vanno a capo in ogni cella scavalcano le due colonne**, misurate dal tema; marcatore `<!-- tabella: larga -->` / `colonna` per l'autore; i PDF della #169 rifatti con tutte le regole nuove | C + G3 | §13 · `rumblingstone-editoria` §2 e §4.7 | fatto: nei volumi della #169 100 tabelle su 125 erano alte il doppio in colonna; ora 330 tabelle larghe su tutti i volumi, 60% nella stessa pagina |
 | ✅ | **Le `[PROPOSTA]` e gli `[INFERRED]` di ARC-07 chiusi**: il DM ha deciso il 2026-09-25, tutto canone; l'equipaggiamento di Hella è quello della sua scheda | K | §12.1 | fatto: 32 marcature dei sorgenti chiuse, 5 restano (tre descrivono una convenzione, due sono i tratti del volto nei prompt) |
+| ✅ | **Il giro di merge del 2026-10-02**: la serie AGENT-SKILLS (#186, #189-#199), #187, #188 e la #200 su `main`; restano aperte solo #99 e #106 | C | §14.4-bis · #200 | fatto: il da fare in ordine è in §14.4-bis, a partire dal lotto D13 da approvare |
 | ▶ | **Le `[PROPOSTA]` e gli `[INFERRED]` degli altri archi**, un lotto alla volta: 568 in tutto il repo, circa 400 nel contenuto | K | §12.1 | agente: il prossimo lotto è ARC-08 (32), poi ARC-09 (53), `campaign/` (50), `PG/` (22), il Bestiario (212) per ultimo perché è il più grande |
 | ✅ | **Le pagine stampabili della Collana dei Semi Eterni e di Durik**, giocatrice e DM, nella famiglia della Corona a 2 gemme; **le sinergie della Collana (F1-F4, la Quaternità) canone** e scritte in ogni pagina di artefatto | K | `PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md` §5 · `SINERGIE-ARTEFATTI-MASTER.md` | fatto: decisioni del DM su Treant, tipi dei poteri, scheda tecnica e sinergie applicate a pagine, master, skill di campagna. Chiusi anche gli ultimi tre punti (forma selvatica, ricarica all'alba, momenti degli stati futuri); i poteri degli stati futuri si scrivono in ARC-09. `state.md` §6 non toccato: il canone si scrive sul ramo del gruppo (ADR-0007) |
 | ✅ | **I fogli ✉ della serata non portano più l'istruzione di consegna per il DM**: undici fogli la stampavano in testa. Chiusa fra `<!-- consegna -->`; la regia e `DEF-3` ora dicono tutto quello che diceva (la preghiera letta in piedi con la mano sull'Altare, le caselle dei Doni che segna il DM, la seconda metà dell'eco di Hella) | C + G3 | ADR-0069, «Estensione» · `rumblingstone-editoria` §4.5 punto 6 | fatto: `TestIFogliDeiGiocatori` verde su 26 fogli `player` |
@@ -1222,13 +1223,14 @@ Il DM ha chiesto di fondere prima le PR con piani aperti. Misurato il
 riscritti dopo (i master DEF, la CI, la guida delle immagini), e due ADR con
 numeri già presi. RIPRESA-PR le tiene aperte apposta come segnaposto
 (§4.12, tabella delle PR): si chiudono quando l'ultimo lotto che ne viene è su
-`main`. La terza PR aperta, la #184, è quella di questa tornata.
+`main`. Dal 2026-10-02 sono le sole due PR aperte (§14.4-bis); la #184 è fusa.
 
 ### 14.4-bis · Il giro di merge del 2026-10-02
 
 Il DM: *«se verde mergia anche le PR precedenti aggiornando i piani con quello
 fatto e da fare, perché il main è indietro di molte PR»*. Le PR aperte erano
-diciassette. Si fondono tutte con la #200, che le contiene:
+diciassette. Sono entrate tutte con la #200, fusa il 2026-10-02 (`5f3cb520`),
+che le conteneva; GitHub le ha chiuse come fuse:
 
 | PR | Come entra | Cosa porta |
 |---|---|---|

@@ -1,0 +1,122 @@
+# .claudeignore — RumblingStone
+#
+# Sintassi .gitignore. Toglie dal contesto dell'agente ciò che è generato,
+# vendorizzato o binario; tutto ciò che è canone o sorgente resta leggibile.
+# Quello che è già in .gitignore non sta su disco in un clone fresco, ma sta
+# sulla macchina del DM: per questo alcune voci si ripetono qui.
+#
+# Resta leggibile apposta: skills/ (canonico), campaign/, plans/, Bestiario/
+# (schede), i master d'arco .md, scripts/, i JSON delle mappe, i .jpg e i .webp
+# (servono alla direzione artistica per confrontare un ritratto con la scheda).
+
+# --- Git e indici degli strumenti ------------------------------------------
+.git/
+.codegraph/
+.serena/cache/
+.kilo/
+.pr-body.md
+rami-cancellati.log
+
+# --- Specchi delle skill, generati da scripts/build-skills.sh ---------------
+# La fonte è skills/; gli specchi sono sei copie in formati diversi.
+.claude/skills/
+.agents/skills/
+.cursor/skills/
+.windsurf/skills/
+.chatgpt/skills/
+.gemini/skills/
+.github/copilot/skills/
+.claude/.skills-sync-status
+build/
+
+# --- Uscite generate (si rigenerano, non si leggono né si toccano) ---------
+# Layout Homebrewery (ADR-0003): si rifanno con dm.py recap --hype / handout.
+*.hb.md
+# Booklet HTML e sorgenti Typst generati dai manifest (fino a 8 MB l'uno).
+**/homebrew/**/*.html
+**/homebrew/**/*.typ
+# Render delle mappe: il canone è il JSON, l'SVG si rifà con render_map_svg.py.
+**/rendered/
+
+# --- Codice di terzi, vendorizzato o clonato -------------------------------
+scripts/typst/packages/
+scripts/homebrew-local/homebrewery/
+scripts/comfyui-local/ComfyUI/
+scripts/blender/texture/*/
+converters/pdf-to-md-engine/data/
+converters/Pdf_To_extract/
+converters/SoundTrack/
+converters/avventura_con_modifiche/
+converters/ImageBackup/
+node_modules/
+
+# --- Fonti storiche salvate dal web ----------------------------------------
+# Pagine salvate dal browser: le cartelle *_files sono asset (js, css, svg).
+# Le pagine .htm e i .pcg di Bestiario/pregen-pcgen restano leggibili.
+**/*_files/
+Bestiario/pregen-pcgen/**/*.js
+Bestiario/pregen-pcgen/**/*.css
+
+# --- Python, ambienti, cache -----------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+htmlcov/
+*.egg-info/
+
+# --- Binari che non si leggono come testo ----------------------------------
+# PNG master da 5-7 MB: le derivate leggere stanno in */web/*.jpg.
+*.png
+*.gif
+*.bmp
+*.tif
+*.tiff
+*.psd
+*.ico
+# Scansioni e impaginati (anche coperti da copyright, vedi .gitignore).
+*.pdf
+*.PDF
+# Fogli di calcolo e documenti office.
+*.ods
+*.odt
+*.xlsx
+*.xls
+*.docx
+# Font, audio, video, archivi.
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.mp3
+*.wav
+*.ogg
+*.flac
+*.mp4
+*.mkv
+*.webm
+*.mov
+*.zip
+*.tar
+*.gz
+*.7z
+*.rar
+*.blend
+*.blend1
+
+# --- Sistema e editor ------------------------------------------------------
+.DS_Store
+Thumbs.db
+*~
+*.tmp
+*.bak
+*.log
+.vscode/
+.idea/
+.env

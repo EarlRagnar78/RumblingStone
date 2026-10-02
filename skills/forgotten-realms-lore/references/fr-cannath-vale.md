@@ -1,5 +1,18 @@
 # Cannath Vale — Campaign Setting Reference
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- MAP ATTRIBUTION
+- COMPLETE MAP LABEL EXTRACTION (canonical, image-verified)
+- CORRECTIONS FROM PREVIOUS VERSION (IMPORTANT)
+- CHAPTER-BY-CHAPTER LOCATION GUIDE
+- GEOGRAPHIC NOTES FOR DM USE
+- WEATHER IN CANNATH VALE
+- TRAVEL DISTANCES (approximate, from map scale: 0–10–40–80 miles)
+- UNDERDARK ACCESS & DEEP LOCATIONS
+<!-- /indice -->
+
 ## MAP ATTRIBUTION
 
 **Map by**: Arne Haschen (<antariuk@gmail.com>)

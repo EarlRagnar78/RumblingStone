@@ -209,6 +209,9 @@ Gli scoperti erano **14**, non 18: il lotto B e il lotto A ne avevano già
 coperti quattro. Dodici decidono e ora hanno un test (`test_tool_decidono.py`,
 35 test); i due che restano fuori sono `measure_tokens` e `compress_skills`, che
 misurano, e un test scritto lì lo dice per iscritto perché non sembri una svista.
+*(2026-09-24: `measure_tokens` ha adesso `test_measure_tokens.py`, che collauda
+il lettore del preload aggiunto da RIPRESA-PR 4j-3 e non la misura. La regola
+qui sopra resta vera.)*
 
 ⭐ **Il lotto è servito a più dei test.** I difetti che ha trovato sono tutti
 dello stesso tipo: uno strumento che *dichiara* una decisione e poi non la

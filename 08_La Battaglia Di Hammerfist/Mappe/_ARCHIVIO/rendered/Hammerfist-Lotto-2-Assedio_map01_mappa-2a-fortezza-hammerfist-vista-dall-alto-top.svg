@@ -1381,5 +1381,5 @@
 <text x="549.0" y="2460" font-size="11" fill="#3b2e1e">🚪 — Porta / ingresso</text>
 <use href="#pr_tower" x="522.0" y="2469" width="18" height="18"/>
 <text x="549.0" y="2482" font-size="11" fill="#3b2e1e">🗼 — Torre / struttura alta</text>
-<text x="46" y="2536" font-size="9" font-style="italic" fill="#7a6a50">fonte: Hammerfist-Lotto-2-Assedio.md · SVG generato da scripts/render_map_svg.py (stile pergamena) — non modificare a mano</text>
+<!-- fonte: Hammerfist-Lotto-2-Assedio.md · SVG generato da scripts/render_map_svg.py (stile pergamena) · non modificare a mano -->
 </svg>

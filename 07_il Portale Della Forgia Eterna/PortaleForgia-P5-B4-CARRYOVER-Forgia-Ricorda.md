@@ -4,14 +4,14 @@
 > **Stato (B4)**: ⭐ deliverable cross-arc più importante dell'arco. Traduce
 > l'**esito del duello con Skullcrusher** (P5 fast-play, Scena 5) in un
 > **effetto quantificato** sullo statblock di **Fauci di Palude** nell'ARC-08
-> (`08_.../00_Schede_dei_Personaggi_Unità_e_Regolamento_di_Battaglia.md`, GS
-> 15, 312 PF). Chiude il task **ARC-08 A12**.
+> (GS 15, 312 PF)<!-- apparato -->, `08_.../00_Schede_dei_Personaggi_Unità_e_Regolamento_di_Battaglia.md`.
+> Chiude il task **ARC-08 A12**<!-- /apparato -->.
 >
 > **Fonte narrativa**: Moradin, P5-DEFINITIVO-PARTE2 r.290 — *«Ogni ferita che
 > infliggi ora all'antenato, la mia Forgia la ricorderà quando affronterai il
 > discendente.»* + Aegis Fang, P6 r.746 (*"sangue Skullcrusher chiama"*).
 >
-> ✅ **Valori APPROVATI dal DM (2026-07-03)** — canone di carry-over. Sistema
+> ✅ <!-- storico -->**Valori APPROVATI dal DM (2026-07-03)** — <!-- /storico -->**Canone di carry-over.** Sistema
 > **D&D 3.5** — solo bonus tipizzati (competenza/circostanza/morale), **niente
 > vantaggio/svantaggio 5e**. (Il DM può sempre ritoccare in corsa, ma questi
 > sono i valori di riferimento su cui l'ARC-08 può contare.)
@@ -20,7 +20,7 @@
 
 ## 1. INPUT DAL P5 (cosa registra il fast-play)
 
-Dalla **Scena 5** del `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md` si registrano due dati:
+Dalla **Scena 5** del duello si registrano due dati:
 
 1. **Esito del duello**: `UCCISO` / `FERITO GRAVE` / `FUGGITO`.
 2. **Ferite ancestrali segnate** (`N`): numero di colpi andati a segno su
@@ -66,6 +66,7 @@ Indipendente dall'esito (si somma), riflette P5-DEF-P2 r.294:
 - È l'eco meccanica del legame ancestrale: l'arma che uccise il capostipite
   riconosce il discendente.
 
+<!-- storico -->
 ---
 
 ## 5. PROPAGAZIONE (checklist)
@@ -77,3 +78,4 @@ Indipendente dall'esito (si somma), riflette P5-DEF-P2 r.294:
 - [x] **P5 fast-play** rimanda qui (Scena 5 + sezione carry-over).
 - [x] **Valori validati dal DM (2026-07-03)** → l'ARC-08 A12 può integrarli
   come canone (riga matrice esiti + read-aloud del primo avvistamento).
+<!-- /storico -->

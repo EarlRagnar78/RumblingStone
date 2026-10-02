@@ -1,11 +1,11 @@
 # Durin Rocciadura — antenato di Othrek [POINTER — statblocco nell'arco] [RIMANDO]
-**Key stats**: → `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` §4-bis (i numeri stanno li'; duplicarli qui creerebbe una seconda copia che diverge alla prima errata — ADR-0021).
+**Key stats**: → `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` Appendice A.3 (i numeri stanno li'; duplicarli qui creerebbe una seconda copia che diverge alla prima errata — ADR-0021).
 
 **Faction**: hammerfist-372dr | **Role**: melee-heavy | **Environment**: mountain | **CR**: 6
 > 🕰️ **Fazione d'epoca**, simmetrica a `orda-antica-372dr`: i difensori di
 > Hammerfist nel **~372 DR**. Distinti da `hammerfist-hero`, che sono gli eroi
 > del **1372** — mescolarli metterebbe due ere nello stesso incontro.
-**Source**: `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` §4-bis (statblocco nel master DEFINITIVO — Nano Guerriero 6, PF 52, CA 22, Ascia Doppia +1; la guida alla porta di Hammerfist a ~372 DR)
+**Source**: `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` Appendice A.3 (statblocco nel master DEFINITIVO — Nano Guerriero 6, PF 52, CA 22, Ascia Doppia +1; la guida alla porta di Hammerfist a ~372 DR)
 **Status**: POINTER — NON duplicare lo statblock qui. Usare sempre il file d'arco.
 
 ## Summary
@@ -25,7 +25,7 @@ Guardia alla porta durante l'assedio notturno; combatte con la guarnigione all'a
 
 | | Cognome | Livello | Dove |
 |---|---|---|---|
-| master **vivo** | **Rocciadura** | Guerriero **6** (PF 52, CA 22) | `ARC07-DEF-4` §4-bis |
+| master **vivo** | **Rocciadura** | Guerriero **6** (PF 52, CA 22) | `ARC07-DEF-4` Appendice A.3 |
 | archivio | **Hammerfist** | Guerriero **8** | `_ARCHIVIO/PortaleForgia-P6-INTEGRAZIONE-Completa.md` r.60 |
 
 Entrambi lo dicono **antenato di Othrek**, entrambi lo mettono alla porta con

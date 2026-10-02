@@ -152,6 +152,21 @@
         "nameable": false
       }
     },
+    "🌫": {
+      "label": "Vuoto / aria (niente pavimento, gravita' alterata: vale la nota della mappa)",
+      "render": {
+        "mode": "fill",
+        "pat": "t_void",
+        "fill": "#c9d2ce"
+      },
+      "function": {
+        "blocks_movement": false,
+        "blocks_sight": false,
+        "cover": "none",
+        "obscurement": "none",
+        "nameable": false
+      }
+    },
     "🌊": {
       "label": "Acqua / corrente",
       "render": {

@@ -29,6 +29,11 @@
 // Apertura di capitolo: il medaglione + il titolo, su tutta la larghezza delle
 // due colonne. È il segno che dice al lettore dov'è prima che legga il titolo.
 #let capitolo-aperto(titolo, fregio) = {
+  // Un capitolo si apre su una pagina sua. Il titolo è un float in cima alla
+  // pagina: se il capitolo di prima finiva a metà pagina, il titolo nuovo
+  // saliva SOPRA la coda di quello (volume del −1000, 2026-09-25: le note del
+  // carry-over B4 stampate sotto il titolo delle Cronache).
+  pagebreak(weak: true)
   // L'heading (voce d'indice + segnalibro PDF) va emesso PRIMA del float:
   // altrimenti la testatina della pagina d'apertura mostra ancora il capitolo
   // precedente, perché la query si risolve prima che il float atterri.
@@ -180,9 +185,24 @@
 // Una figura. In due colonne un'immagine più larga della colonna va in float a
 // piena larghezza, esattamente come le tabelle larghe: dentro la colonna
 // verrebbe scalata fino a non vedersi più.
-#let figura(percorso, didascalia: none, larga: false, alt: none) = {
+#let figura(percorso, didascalia: none, larga: false, pagina: false, alt: none) = {
+  // `pagina`: l'immagine sta su un foglio a una colonna (appendici, mappe) e
+  // non deve superarne l'altezza, didascalia compresa.
+  // Fuori da una pagina dedicata, un'immagine non supera i 16 cm: un ritratto
+  // verticale a tutta larghezza su una colonna sola è più alto del foglio,
+  // scivola alla pagina dopo e lascia il suo titolo da solo in fondo a quella
+  // prima (la scheda di Hella nel fascicolo dei giocatori, 2026-09-25).
+  // Il tetto si applica misurando, mai con un'altezza fissa adattata a
+  // «contain»: la cornice sarebbe alta 21 cm anche per una mappa da 16, e
+  // la coda della pagina scivolerebbe alla successiva (il Palio, 2026-09-25:
+  // una riga sola a pagina 4, un fregio solo a pagina 62).
+  let tetto = if pagina { 21cm } else { 16cm }
   let corpo = figure(
-    image(percorso, width: 100%, alt: alt),
+    layout(spazio => {
+      let alta = measure(image(percorso, width: spazio.width)).height
+      if alta > tetto { align(center, image(percorso, height: tetto, alt: alt)) }
+      else { image(percorso, width: 100%, alt: alt) }
+    }),
     caption: if didascalia == none { none } else {
       text(size: 8.4pt, style: "italic", fill: seppia)[#didascalia]
     },
@@ -193,12 +213,57 @@
   else { block(width: 100%, above: 0.8em, below: 0.8em, corpo) }
 }
 
-// Una tabella da 4+ colonne in una colonna da 8 cm diventa illeggibile: si
-// spezzano perfino le parole del titolo. Sopra quella soglia scavalca le due
-// colonne, che è quello che fa un manuale stampato.
-#let tabella(n, ..celle) = {
-  let corpo = block(breakable: true)[
-  #table(
+// Una griglia a spaziatura fissa (mappa ASCII, schema, statblocco
+// preformattato) non va mai a capo: una mappa che va a capo è una fila di
+// simboli. Se è più larga dello spazio, il corpo scende finché ci sta, non
+// sotto i 5,5 pt. Che la griglia stia in colonna o su una pagina A4 lo decide
+// l'esportatore (`CELLE_COLONNA`); qui si garantisce solo che non si spezzi.
+// `larga`: uno schema che non è una mappa e non entra in colonna nemmeno a
+// 5,5 pt scavalca le due colonne, come una tabella larga.
+#let griglia(testo, corpo: 9pt, minimo: 5.5pt, larga: false) = {
+  let dentro = layout(spazio => {
+    let fatto(dim) = { show raw: set text(size: dim); raw(testo, block: true) }
+    let naturale = measure(fatto(corpo)).width
+    let dim = if naturale > spazio.width {
+      calc.max(minimo, corpo * (spazio.width / naturale) * 0.98)
+    } else { corpo }
+    block(breakable: not larga, width: 100%, fatto(dim))
+  })
+  if larga { place(top, float: true, scope: "parent", clearance: 12pt, dentro) }
+  else { dentro }
+}
+
+// Una tabella che in una colonna da 8 cm va a capo in ogni cella non si legge:
+// si spezzano perfino le parole del titolo. Allora scavalca le due colonne, in
+// cima o in fondo alla pagina dove è citata (`auto`), che è quello che fa un
+// manuale stampato. Nel punto esatto non si può: Typst 0.15 non bilancia le
+// colonne, e un blocco a due colonne interrotto a metà pagina riempie solo
+// quella di sinistra (provato il 2026-09-25).
+//
+// Chi decide:
+// - `larga: true` / `false`: l'autore, con `<!-- tabella: larga -->` o
+//   `<!-- tabella: colonna -->` sopra la tabella nel master;
+// - `auto`: la misura. Da quattro colonne in su scavalca sempre; sotto,
+//   scavalca se in colonna diventa più alta di `TABELLA-SOGLIA` volte quanto
+//   sarebbe a tutta pagina. Misurato sui tre volumi della #169: 125 tabelle in
+//   colonna, e 100 erano alte il doppio o quasi, cioè andavano a capo in ogni
+//   cella.
+// - una tabella da due o tre colonne più alta di `TABELLA-FLOAT-MAX` a tutta
+//   pagina resta in colonna, dove scorre: un float non si spezza. Da quattro
+//   colonne in su scavalca comunque, perché in colonna le celle si
+//   sovrappongono (l'Abbazia, pagina 26, provato il 2026-09-25); oltre le 30
+//   righe l'esportatore la manda su una pagina A4.
+// `pagina`: la tabella sta già su un foglio a una colonna, e lì non scavalca
+// niente (l'indice delle 48 aree dell'Abbazia si stampava sopra se stesso).
+#let TABELLA-SOGLIA = 1.8
+#let TABELLA-FLOAT-MAX = 20cm
+#let TABELLA-COLONNA = 8.1cm
+#let TABELLA-PAGINA = 17.5cm
+// `sezione`: il titolo della sezione in cui la tabella è citata. Un float sale
+// in cima alla pagina e può finire sopra il suo titolo, o nella pagina dopo;
+// scavalcando porta con sé una riga che dice a quale sezione appartiene.
+#let tabella(n, pagina: false, larga: auto, sezione: none, ..celle) = {
+  let griglia = table(
     columns: n,
     stroke: none,
     inset: (x: 6pt, y: 4.5pt),
@@ -206,9 +271,34 @@
                       else if calc.odd(row) { boxLato } else { none },
     ..celle
   )
-]
-  if n >= 4 { place(top, float: true, scope: "parent", clearance: 10pt, corpo) }
-  else { corpo }
+  let corpo = block(breakable: true, griglia)
+  // `clearance` 18pt, non 10: con 10 la riga della `sezione` di un float in
+  // fondo alla pagina finiva sulla stessa linea della didascalia di un
+  // ritratto nella colonna sopra, 7 pt dentro lo spazio riservato (booklet
+  // della serata del −1000, p. 65 e p. 72, 2026-09-26). Il flusso a due colonne
+  // di Typst 0.15 sbaglia di quel tanto l'altezza lasciata al float: è una
+  // mitigazione misurata, non la cura. `validate_booklets --stampa` la tiene.
+  let scavalca = place(auto, float: true, scope: "parent", clearance: 18pt, block(width: 100%)[
+    #if sezione != none [
+      #text(font: TITOLI, size: 7.5pt, fill: seppia, tracking: 0.3pt)[#upper(sezione)]
+      #v(-4pt)
+    ]
+    #griglia
+  ])
+  if pagina or larga == false { corpo }
+  else if larga == true { context if page.columns < 2 { corpo } else { scavalca } }
+  else {
+    context {
+      // una pagina a una colonna (A5, appendici A4) non ha niente da scavalcare
+      if page.columns < 2 { return corpo }
+      let alta = measure(griglia, width: TABELLA-PAGINA).height
+      let stretta = measure(griglia, width: TABELLA-COLONNA).height
+      if n >= 4 { scavalca }
+      else if alta > TABELLA-FLOAT-MAX { corpo }
+      else if stretta > TABELLA-SOGLIA * alta { scavalca }
+      else { corpo }
+    }
+  }
 }
 
 // Blocco statistiche: il riquadro del mostro/PNG, coi numeri dove il DM li
@@ -391,6 +481,15 @@
   }
   show strong: set text(fill: rgb("#4a2c12"), weight: 600)
   show raw: set text(font: MONO, size: 9pt)
+  // Un percorso in `codice` è una parola sola: senza punti di rottura esce
+  // dalla colonna e si stampa sopra quella accanto (il volume del −1000 e la
+  // sessione di Terros, 2026-09-25). Si spezza dopo / _ . - e fra una
+  // minuscola e una maiuscola (`PortaleDellaForgiaEterna`), e non altrove.
+  show raw.where(block: false): it => {
+    show regex("[/_.\-]"): c => c + sym.zws
+    show regex("\p{Ll}\p{Lu}"): c => c.text.first() + sym.zws + c.text.last()
+    it
+  }
 
   if not apparato {
     corpo

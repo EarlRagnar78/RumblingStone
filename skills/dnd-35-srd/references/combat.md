@@ -1,5 +1,21 @@
 # Combat — D&D 3.5 SRD Reference
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- Combat Sequence
+- Action Types per Round
+- The Full Attack
+- Attack Bonus Calculation
+- Damage
+- Conditions Quick Reference
+- Attacks of Opportunity (AoO)
+- Grapple
+- Movement and Terrain
+- Cover and Concealment
+- Damage, Death, and Dying
+<!-- /indice -->
+
 Source: d20srd.org/srd/combat/
 
 ---
@@ -193,4 +209,21 @@ A character who has multiple attacks from high BAB MUST take a Full-Round Action
 
 **Natural Stabilization**: 10% chance per round to stabilize naturally.
 
-**Recovery (stable, unaided)**: each hour, 10% chance to regain consciousness (disabled at negative HP); on a failed roll, lose 1 HP. With help/rest: natural healing 1 HP/level per day (×1.5 with complete bed rest).
+**Recovery (stable, unaided)**: each hour, 10% chance to regain consciousness (disabled at negative HP); on a failed roll, lose 1 HP. With help/rest: natural healing 1 HP/level per 8 hours of rest (×2 with complete bed rest for a full day and night).
+
+### Rest and recovery — there is no short or long rest
+
+3.5 and PF1e have **no short rest and no long rest** (those are 5e). What exists:
+
+| Time | What comes back (SRD) |
+|---|---|
+| **8 hours of rest** (sleep or equivalent) | natural healing **1 HP per character level**; **1 point** of each temporarily damaged ability; *fatigued* removed; arcane casters (wizard 1 h of study, sorcerer/bard 15 min) regain spells after the rest; "per day" abilities refresh |
+| **complete bed rest, a full day and night** | **2 HP per level**, 2 ability points |
+| **each hour** | nonlethal damage heals **1 HP per character level**; *exhausted* becomes *fatigued* after 1 hour of complete rest |
+| **divine casters** | prepare at a fixed time of day (1 hour of prayer); they need no rest, only that the time comes round |
+| anything shorter | nothing comes back by itself: a pause is time to use wands, potions and spare spells |
+
+A module that offers the party "a short rest" must say instead **how many hours**
+and **what those hours give** under the rows above. `validate_modules.py` and
+`validate_standalone.py` reject "riposo breve/lungo" and "short/long rest".
+

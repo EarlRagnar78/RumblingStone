@@ -1,5 +1,24 @@
 # Base Classes — D&D 3.5 SRD Reference
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- Class Summary Table
+- Barbarian
+- Bard
+- Cleric
+- Druid
+- Fighter
+- Monk
+- Paladin
+- Ranger
+- Rogue
+- Sorcerer
+- Wizard
+- Multiclassing
+- Expanded Base Classes
+<!-- /indice -->
+
 Source: d20srd.org/srd/classes/
 
 All 11 SRD base classes listed. For full class tables, fetch the SRD page.

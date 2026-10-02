@@ -41,7 +41,7 @@ ___
 > al suo cuore, dorme il Guardiano.*
 
 **Questa è la sessione dello scontro con Terros l'Antico** — il culmine del
-Piano della Terra (master `ARC07-DEF-1-PIANO-TERRA-TERROS.md`, ARC-07 #1).
+Piano della Terra (cap. II).
 
 **Stato al tavolo (aggiornato alla vigilia):**
 
@@ -136,20 +136,11 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 > scritti bene e sono profondi, ma **al tavolo non si consultano**: nessuno cerca
 > un PNG in mezzo a milleseicento righe mentre quattro persone aspettano.
 >
-> Questa è la fetta che mancava — l'**apparato d'uso** di
-> [ADR-0018](../../../plans/adr/ADR-0018-apparato-uso-obbligatorio.md), che l'arco
-> aveva **una voce su nove** (il quick-reference dentro ogni master). Sei pagine
-> che nessuno legge per piacere, e che si aprono ogni volta che si gioca.
->
-> **Modello**: `STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md` e
-> `08_La Battaglia Di Hammerfist/ARC08-16-CUE-SONORI.md`.
-> **Stato**: apparato d'uso (non canone narrativo). **Data**: 2026-08-31.
 
 ⚠️ **Cosa questo file NON fa.** Non riscrive niente, non aggiunge fatti e non
 decide nulla: **rimanda**. Dove i master tacciono — ed è il caso di qualche tic
-vocale — la voce proposta è marcata **[PROPOSTA]** e il DM la cambia senza
-chiedere il permesso a nessuno. I master restano la fonte di verità
-(ADR-0018: i cinque `ARC*-DEF-*` non si riscrivono retroattivamente).
+vocale — la voce è stata scelta qui ed è canone, e il DM la cambia senza
+chiedere il permesso a nessuno. I master restano la fonte di verità.
 
 | § | Cosa |
 |---|---|
@@ -159,7 +150,6 @@ chiedere il permesso a nessuno. I master restano la fonte di verità
 | 4 | I suoni dell'arco |
 | 5 | Il momento da fotografare, uno per master |
 | 6 | Accessibilità |
-| 7 | Cosa resta scoperto, dichiarato |
 
 ---
 
@@ -173,26 +163,26 @@ prima.
 
 | Chi | Cosa vuole | Il tic | Dove |
 |---|---|---|---|
-| **Terros l'Antico** — guardiano del Nodo di Terra, GS 15 | che nessuno tocchi lo Smeraldo. Non odia: **custodisce** | parla **lentissimo**, come chi non ha mai avuto fretta in diecimila anni. Non alza mai la voce, nemmeno quando colpisce | `#1` §8 |
-| **La Sentinella di Mithral** — l'anticamera | verificare chi entra. Non uccide chi supera la prova | **non parla**: risponde battendo. Un colpo = no, due = passa. *[PROPOSTA]* | `#1` §7b |
-| **Skullcrusher il Nero** — il duello a −1000 | vincere davanti all'orda, perché il potere è ciò che gli altri hanno visto | dice **il nome** dell'avversario prima di colpire, ogni volta | `#4` §4 |
-| **Zog'tar** — il generale dell'orda | prendere Hammerfist. Sa uccidere diecimila uomini | parla ai suoi **contando**: «due file», «tre ore», «cento» | `#4` scena 3 *[PROPOSTA]* |
-| **Balvar Fuocospento** — il runaio esiliato, consigliere | incidere di nuovo, per chi glielo lascia fare | **non smette di lavorare mentre ti parla**. La punta sull'ardesia continua sotto le sue frasi | `#4` §4-ter |
-| **Vatore** (Sal a −1000) | la stessa cosa che vuole Sal oggi, mille anni prima | il tono del **collega**, non del nemico. Riconosce una firma, non un debito | `#4` §5 |
+| **Terros l'Antico** — guardiano del Nodo di Terra, GS 15 | che nessuno tocchi lo Smeraldo. Non odia: **custodisce** | parla **lentissimo**, come chi non ha mai avuto fretta in diecimila anni. Non alza mai la voce, nemmeno quando colpisce | cap. II §8 |
+| **La Sentinella di Mithral** — l'anticamera | verificare chi entra. Non uccide chi supera la prova | **non parla**: risponde battendo. Un colpo = no, due = passa. | cap. II §7b |
+| **Skullcrusher il Nero** — il duello a −1000 | vincere davanti all'orda, perché il potere è ciò che gli altri hanno visto | dice **il nome** dell'avversario prima di colpire, ogni volta | «Il Viaggio a 1.000 Anni fa» Scena 11 |
+| **Zog'tar** — il generale dell'orda | prendere Hammerfist. Sa uccidere diecimila uomini | parla ai suoi **contando**: «due file», «tre ore», «cento» | «Il Viaggio a 1.000 Anni fa» Scena 8 |
+| **Balvar Fuocospento** — il runaio esiliato, consigliere | incidere di nuovo, per chi glielo lascia fare | **non smette di lavorare mentre ti parla**. La punta sull'ardesia continua sotto le sue frasi | «Il Viaggio a 1.000 Anni fa» Scena 7 |
+| **Vatore** (Sal a −1000) | la stessa cosa che vuole Sal oggi, mille anni prima | il tono del **collega**, non del nemico. Riconosce una firma, non un debito | «Il Viaggio a 1.000 Anni fa» Scena 9 |
 
 ### Chi sta dalla vostra
 
 | Chi | Cosa vuole | Il tic | Dove |
 |---|---|---|---|
-| **Durik** — il nano che emerge dal Rituale | tornare, e non essere un debito per nessuno | dice le cose **due volte**, la seconda più piano *[PROPOSTA]* | `#1` §9 fase 3 · `#3` §7 |
-| **Therysol** — veglia il corpo di Hella | che qualcuno resti col morto. Non scende: veglia | frasi **corte e complete**. Non chiede mai niente | `#2`, `#3` |
-| **Re Thorek I** — Hammerfist ≈372 DR | reggere le mura fino all'alba | parla **al plurale** anche quando parla di sé: «la fortezza pensa» *[PROPOSTA]* | `#4` scena 1-bis |
-| **Durin** — la pattuglia, di notte | portare a casa i suoi | ride **prima** di dire una cosa seria *[PROPOSTA]* | `#4` scena 1-bis, §4-bis |
-| **Thorgrim Barbadiferro** — l'antenato | che il martello torni in una mano che sa perché | nomina **il sangue**, mai la persona: «il sangue riconosce il sangue» | `#4` scena 2 |
-| **Il Custode** (ruolo, non persona) | leggere i pannelli e ricordare un fatto vero | — (è una funzione: la assume un PG) | `#2` §3-4 |
+| **Durik** — il cane di pietra di Hella, nato dalla polvere di Terros al rito dello Smeraldo | stare fra Hella e il pericolo («Protegge Hella», la risposta data a Moradin nel viaggio) | **non parla e non abbaia**: suoni di pietra, un click, uno strofinio, una faglia lontana. Il click vuol dire che qualcosa si muove sotto i piedi | cap. II §9 fase 3 · «La Resurrezione di Hella» §7 |
+| **Therysol** — veglia il corpo di Hella | che qualcuno resti col morto. Non scende: veglia | frasi **corte e complete**. Non chiede mai niente | «Il Ritorno e gli Affreschi», «La Resurrezione di Hella» |
+| **Re Thorek I** — Hammerfist ≈372 DR | reggere le mura fino all'alba | parla **al plurale** anche quando parla di sé: «la fortezza pensa» | «Il Viaggio a 1.000 Anni fa» Scena 4 |
+| **Durin** — la pattuglia, di notte | portare a casa i suoi | ride **prima** di dire una cosa seria | «Il Viaggio a 1.000 Anni fa» Scena 2, Appendice A |
+| **Thorgrim Barbadiferro** — l'antenato | che il martello torni in una mano che sa perché | nomina **il sangue**, mai la persona: «il sangue riconosce il sangue» | «Il Viaggio a 1.000 Anni fa» Scena 4 |
+| **Il Custode** (ruolo, non persona) | leggere i pannelli e ricordare un fatto vero | — (è una funzione: la assume un PG) | «Il Ritorno e gli Affreschi» §3-4 |
 
 ⚠️ **Fauci** e **Skullcrusher** arrivano da prima di quest'arco e tornano dopo:
-la loro voce sta dove è nata (`08_La Battaglia Di Hammerfist`, `Bestiario/villain/`).
+la loro voce sta dove è nata, nella Battaglia di Hammerfist.
 Non rifarla qui — **due versioni di una stessa voce sono peggio di nessuna**.
 
 ---
@@ -226,7 +216,7 @@ non torna, e il PNG resta senza etichetta.
 **Come si usa**: la sera prima, apri le tre righe più dense della sessione che
 giocherai e leggile a voce. Tre. Non trenta.
 
-### `#1` PIANO TERRA & TERROS — **130 blocchi**
+### Il Piano della Terra & Terros — **130 blocchi**
 
 | N. | Dove |
 |---|---|
@@ -241,7 +231,7 @@ giocherai e leggile a voce. Tre. Non trenta.
 | 3 | §7a il salto co-op · Skill Challenge · Round 2 · fase 3 |
 | ≤2 | §1 highlight · §2 ingresso · §3 gravità · §4 viaggio · le 4 zone · eventi · §5 Xorn · §10 · §11-bis · §12 |
 
-### `#2` RITORNO E AFFRESCHI — **39 blocchi**
+### Il Ritorno e gli Affreschi — **39 blocchi**
 
 | N. | Dove |
 |---|---|
@@ -251,7 +241,7 @@ giocherai e leggile a voce. Tre. Non trenta.
 | 2 | Artemis davanti alla porta del Tempo · 🛡️ Thorik · «prima la regola» |
 | 1 | gli otto affreschi (A1-A8), zone A e B, §3 Cronaca, §5 Visione Condivisa, §6 Stanza della Corona, mappa S-2 |
 
-### `#3` RESURREZIONE DI HELLA — **30 blocchi**
+### La Resurrezione di Hella — **30 blocchi**
 
 | N. | Dove |
 |---|---|
@@ -261,16 +251,16 @@ giocherai e leggile a voce. Tre. Non trenta.
 | 3 | §3 Il Cuore di Moradin |
 | ≤2 | §2 l'altare · §5 i tre doni · §8 il racconto delle prove · tesoro |
 
-### `#4` VIAGGIO A MILLE ANNI FA — **43 blocchi**
+### Il Viaggio a Mille Anni fa — **43 blocchi**
 
 | N. | Dove |
 |---|---|
-| 7 | §5 Vatore · 7 il Sigillo di Ossidiana |
-| 6 | §4-ter «Chi è» (Balvar) |
-| 4 | testata · §4 Skullcrusher |
-| ≤2 | §0 quickstart · le 3 zone · le 6 scene · supporto PF1e |
+| 7 | Scena 9 Vatore · 7 il Sigillo di Ossidiana (Appendice B) |
+| 6 | Scena 7, Balvar |
+| 4 | testata · Scena 11 Skullcrusher |
+| ≤2 | §0 quickstart · le 3 zone · le altre scene · supporto PF1e |
 
-### `#5` RITORNO A HAMMERFIST — **18 blocchi**
+### Il Ritorno a Hammerfist — **18 blocchi**
 
 | N. | Dove |
 |---|---|
@@ -279,24 +269,6 @@ giocherai e leggile a voce. Tre. Non trenta.
 | 2 | §3 L'accensione del Rubino · §4 La manifestazione · mappa CM-1 |
 | 1 | stato di consegna all'ARC-08 · zone 1-2 · budget PX |
 
-> **Come si rigenera** quando i master cambiano — l'indice cita **file e §**, mai
-> i numeri di riga, proprio per invecchiare piano:
->
-> ```bash
-> cd "07_il Portale Della Forgia Eterna"
-> python3 - <<'PY'
-> import re, pathlib
-> for f in sorted(pathlib.Path('.').glob('ARC07-DEF-*.md')):
->     sez, gruppi = '(testata)', {}
->     for ln in f.read_text(encoding='utf-8').split('\n'):
->         m = re.match(r'^##+\s+(.*)', ln)
->         if m: sez = m.group(1).strip()[:58]
->         if re.match(r'^>\s*\*', ln): gruppi.setdefault(sez, []).append(ln)
->     print(f"\n{f.name} — {sum(len(v) for v in gruppi.values())}")
->     for s, v in sorted(gruppi.items(), key=lambda k: -len(k[1])):
->         print(f"  {len(v):>3}× {s}")
-> PY
-> ```
 
 ---
 
@@ -313,18 +285,18 @@ invecchia con le piattaforme (ADR-0018 «regola dei suoni»).
 
 | Momento | Che suono |
 |---|---|
-| **L'ingresso nel Piano** (`#1` §2) | il **cambio di gravità si sente**: un tonfo sordo sotto lo sterno, una volta sola. Poi niente, e il niente dura |
-| **Il viaggio, zone 1-4** (`#1` §4) | il passo sul cristallo, che cambia timbro a ogni zona: vetro, poi legno, poi pietra bagnata. **È l'unico cue del viaggio** |
-| **Il campo dei Cristalli Viventi** (`#1` §6) | un accordo lunghissimo, appena udibile, che **c'era già da prima** che entrassero. Se il tavolo se ne accorge tardi, è perfetto |
-| **La Sentinella** (`#1` §7b) | metallo su metallo, **due colpi**, e poi il silenzio che aspetta una risposta |
-| **Terros — l'arrivo** (`#1` §8a) | ⚠️ **taglia tutto.** Il boss entra nel vuoto: nessuna musica sotto i primi sei secondi. La roccia che si muove è l'unico suono, e arriva **da sotto** |
-| **Il Rituale dello Smeraldo** (`#1` §9) | qui, e **solo qui**, un tono che cresce per tre round e si chiude di colpo sull'incastonatura |
-| **La Sala e gli Affreschi** (`#2`) | eco lunga di stanza vuota. Le voci dei PG tornano indietro: falle tornare anche quando parlano piano |
-| **Il Cuore di Moradin** (`#3` §3-4) | **un battito.** Uno solo, lento, che si sente col corpo più che con l'orecchio. Smette quando Hella apre gli occhi |
-| **Hammerfist ≈372 DR, di notte** (`#4` zona 2) | diecimila tende: cuoio, ferro, e voci in una lingua che non si capisce. **Mai grida**: è un accampamento che dorme |
-| **Le mura all'alba** (`#4` scena 4) | tamburi, e sotto i tamburi **il drago che non si vede ancora** |
-| **Il duello con Skullcrusher** (`#4` §4) | il pubblico. Non i colpi: **la folla che reagisce ai colpi** |
-| **Il ritorno e la manifestazione** (`#5` §4) | silenzio pieno, poi **una voce sola** che riconosce chi è arrivato |
+| **L'ingresso nel Piano** (cap. II §2) | il **cambio di gravità si sente**: un tonfo sordo sotto lo sterno, una volta sola. Poi niente, e il niente dura |
+| **Il viaggio, zone 1-4** (cap. II §4) | il passo sul cristallo, che cambia timbro a ogni zona: vetro, poi legno, poi pietra bagnata. **È l'unico cue del viaggio** |
+| **Il campo dei Cristalli Viventi** (cap. II §6) | un accordo lunghissimo, appena udibile, che **c'era già da prima** che entrassero. Se il tavolo se ne accorge tardi, è perfetto |
+| **La Sentinella** (cap. II §7b) | metallo su metallo, **due colpi**, e poi il silenzio che aspetta una risposta |
+| **Terros — l'arrivo** (cap. II §8a) | ⚠️ **taglia tutto.** Il boss entra nel vuoto: nessuna musica sotto i primi sei secondi. La roccia che si muove è l'unico suono, e arriva **da sotto** |
+| **Il Rituale dello Smeraldo** (cap. II §9) | qui, e **solo qui**, un tono che cresce per tre round e si chiude di colpo sull'incastonatura |
+| **La Sala e gli Affreschi** («Il Ritorno e gli Affreschi») | eco lunga di stanza vuota. Le voci dei PG tornano indietro: falle tornare anche quando parlano piano |
+| **Il Cuore di Moradin** («La Resurrezione di Hella» §3-4) | **un battito.** Uno solo, lento, che si sente col corpo più che con l'orecchio. Smette quando Hella apre gli occhi |
+| **Hammerfist ≈372 DR, di notte** («Il Viaggio a 1.000 Anni fa» zona 2) | diecimila tende: cuoio, ferro, e voci in una lingua che non si capisce. **Mai grida**: è un accampamento che dorme |
+| **Le mura all'alba** («Il Viaggio a 1.000 Anni fa» scena 4) | tamburi, e sotto i tamburi **il drago che non si vede ancora** |
+| **Il duello con Skullcrusher** («Il Viaggio a 1.000 Anni fa» §4) | il pubblico. Non i colpi: **la folla che reagisce ai colpi** |
+| **Il ritorno e la manifestazione** («Il Ritorno a Hammerfist» §4) | silenzio pieno, poi **una voce sola** che riconosce chi è arrivato |
 
 ---
 
@@ -334,11 +306,11 @@ Uno per master: il picco che il DM sa in anticipo, e che non manda di fretta.
 
 | Master | Il momento | Perché è quello |
 |---|---|---|
-| `#1` | **Il Distacco** — l'Altare si centra sul guardiano (§8b) | è il round in cui il tavolo capisce che la stanza combatte con loro, non contro |
-| `#2` | **La Visione Condivisa** dei Quattro Eroi (§5) | l'unico momento dell'arco in cui i quattro vedono **la stessa cosa** |
-| `#3` | **Hella apre gli occhi** (§7) | tre sessioni di lutto si chiudono in una riga. Non aggiungere niente dopo |
-| `#4` | **Thorgrim consegna il martello** (scena 2) | mille anni di eredità in un gesto solo |
-| `#5` | **La manifestazione** (§4) | la disfatta che si ribalta davanti a chi l'aveva già data per persa |
+| cap. II | **Il Distacco** — l'Altare si centra sul guardiano (§8b) | è il round in cui il tavolo capisce che la stanza combatte con loro, non contro |
+| «Il Ritorno e gli Affreschi» | **La Visione Condivisa** dei Quattro Eroi (§5) | l'unico momento dell'arco in cui i quattro vedono **la stessa cosa** |
+| «La Resurrezione di Hella» | **Hella apre gli occhi** (§7) | tre sessioni di lutto si chiudono in una riga. Non aggiungere niente dopo |
+| «Il Viaggio a 1.000 Anni fa» | **Thorgrim consegna il martello** (scena 2) | mille anni di eredità in un gesto solo |
+| «Il Ritorno a Hammerfist» | **La manifestazione** (§4) | la disfatta che si ribalta davanti a chi l'aveva già data per persa |
 
 ⚠️ **La regola**: un beat che non sa qual è il suo picco lo brucia correndo. Se la
 serata è in ritardo, **si taglia altro** — non questo.
@@ -351,45 +323,17 @@ serata è in ritardo, **si taglia altro** — non questo.
   un'informazione — le zone hanno anche un simbolo e un numero. Se descrivi a
   voce, di' *«la piattaforma tre»*, non *«quella verde»*.
 - **Dislessia e carico di lettura**: nessun giocatore deve leggere handout in
-  silenzio al tavolo. Gli affreschi (`#2` §4) **si raccontano**, non si passano.
-- **Carico cognitivo**: la gravità 2× (`#1` §3) è la regola che affatica di più.
+  silenzio al tavolo. Gli affreschi («Il Ritorno e gli Affreschi» §4) **si raccontano**, non si passano.
+- **Carico cognitivo**: la gravità 2× (cap. II §3) è la regola che affatica di più.
   Tienila su **un foglietto solo**, e ripetila a voce ogni volta che qualcuno
   dichiara un movimento invece di aspettare che se la ricordino.
 - **Sicurezza emotiva**: quest'arco contiene una **resurrezione** e il lutto che
   la precede. È il tipo di scena che tocca cose vere: se qualcuno al tavolo ha
   perso qualcuno di recente, si chiede prima, in privato, e si è pronti a
   giocarla più corta.
-- **Ritmo**: il master `#1` è lungo il doppio degli altri. Se la sessione è di
+- **Ritmo**: il master cap. II è lungo il doppio degli altri. Se la sessione è di
   tre ore, **arriva fino alla Sentinella e fermati lì**: è una soglia naturale.
 
----
-
-## §7 · Cosa resta scoperto — dichiarato
-
-Perché nessuno creda che l'arco sia a norma quando non lo è ancora (è la stessa
-onestà di `ARC08-16-CUE-SONORI.md`).
-
-| Voce ADR-0018 | Stato |
-|---|---|
-| 1 · foglio del cast | ✅ §1 |
-| 2 · pronuncia | ✅ §2 |
-| 3 · indice read-aloud | ✅ §3 |
-| 4 · inserto per lo schermo | ✅ **già esistente**: il §0-bis quick-reference dentro ogni master |
-| 5 · cue sonori | ✅ §4 |
-| 6 · momento da fotografare | ✅ §5 |
-| 7 · **prop fisici** | ✅ `homebrew/HANDOUT-*.hb.md` — **cinque fogli** da consegnare. ⚠️ *Correzione: quando ho scritto questa riga la prima volta dicevo che mancavano tutti. Non era vero: le Cronache dei Quattro Eroi avevano già il loro prop dal 2026-07-10. Ne mancavano tre, e ora ci sono.* La **nota per il DM che non si stampa** resta in `ARC07-HANDOUTS.md` («Quando darlo», le fonti, l'avviso anti-spoiler B4): il generatore la toglie dal prop apposta |
-| 8 · accessibilità | ✅ §6 |
-| 9 · memoria fra le sessioni | ✅ coperta da `campaign/state.md` + ADR-0007 — **non si duplica** |
-
----
-
-## Materiale collegato
-
-- [ADR-0018](../../../plans/adr/ADR-0018-apparato-uso-obbligatorio.md) — perché l'apparato è parte del contenuto
-- [`PIANO-TRAVASO-DRAPPO-CAMPAGNA`](../../../plans/PIANO-TRAVASO-DRAPPO-CAMPAGNA.md) — il lotto A1 è questo file
-- `ARC07-00-INDICE.md` — l'indice dell'arco (file → parte → stato)
-- `STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md` — il modello
-- `08_La Battaglia Di Hammerfist/ARC08-16-CUE-SONORI.md` — il modello dei suoni
 
 
 \page
@@ -404,8 +348,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 # Regia della Sessione — Lo Scontro con Terros l'Antico
 
 > **Cos'è questa pagina.** Il piano della serata, in ordine di gioco, con i
-> puntatori esatti al master (`ARC07-DEF-1-PIANO-TERRA-TERROS.md`, capitolo
-> II di questo booklet). **Zero numeri nuovi**: ogni CD, pf e PX vive nel
+> puntatori esatti al master, il capitolo II di questo booklet. **Zero numeri nuovi**: ogni CD, pf e PX vive nel
 > master; qui c'è solo la regia. Stampa la **Quick-Reference §0-bis** del
 > master: è tutta la sessione in una pagina.
 
@@ -413,17 +356,17 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 | Fatto | Stato | Fonte |
 |---|---|---|
-| Viaggio spirituale di Hella | ✅ **CONCLUSO E GIOCATO** (2026-07-02) — i PG NON lo sanno | `_ARCHIVIO/...IL-VIAGGIO-NELL'INCUDINE-DEL-MONDO-risultati.md` |
+| Viaggio spirituale di Hella | ✅ **CONCLUSO E GIOCATO** (2026-07-02) — i PG NON lo sanno | il viaggio dello spirito, già giocato |
 | Sentinella Silenziosa | ✅ sconfitta da Tordek nell'Anticamera della Magnetite | master §7b |
-| Bracieri Gemelli | ✅ **COMPLETI** (Fuoco+Terra), coscienza attiva, voce da vecchio fabbro | master §7b + scheda `05_Bracieri_Gemelli_Scheda_PG_Completa.md` |
+| Bracieri Gemelli | ✅ **COMPLETI** (Fuoco+Terra), coscienza attiva, voce da vecchio fabbro | master §7b + scheda dei Bracieri |
 | Corona di Adamantio | Topazio solo (1/3) — lo Smeraldo si forgia STASERA | master §9 |
 | Cristalli Viventi | ✅ **skill challenge SUPERATO**: Frequenza della Confusione + Diapason Armonico ottenuti; +2 TS contro Terros attivo | master §6 (canone giocato 2026-07-24) |
 | Salita al Tempio | ✅ giocata in variante «salita cantata»: la Frequenza sollevava blocchi dall'oceano fino a metà strada (poi crollati 🙂), resto co-op | master §7a (canone giocato) |
 | Diapason Armonico | ⚠️ **SPESO sulla Sentinella** (Grido Superiore innescato dalla Frequenza): niente stun anti-arrocco contro Terros | master §7b/§8 (canone giocato) |
 | Frequenza della Confusione | ✅ ancora disponibile (è conoscenza): **il malus round 1 su Terros si attiva con la SOLA Frequenza** — nauseato, −4 att/CA | master §8 |
 | Posizione del party | dentro il Tempio di Mithral, oltre l'Anticamera, verso la camera sferica | master §7→§8 |
-| Riposi già fatti (Piano del Fuoco prima della piramide · Sala dopo il Fuoco) | ✅ **a canone e già conteggiati** | `ARC07-DEF-2` §0-bis |
-| Countdown Hammerfist | **~3g 20h** entrando nella camera · **~3g 08h** se dormono prima | `ARC07-DEF-2` §0-bis (registro completo) |
+| Riposi già fatti (Piano del Fuoco prima della piramide · Sala dopo il Fuoco) | ✅ **a canone e già conteggiati** | «Il Ritorno e gli Affreschi» §0-bis |
+| Countdown Hammerfist | **~3g 20h** entrando nella camera · **~3g 08h** se dormono prima | «Il Ritorno e gli Affreschi» §0-bis (registro completo) |
 | Riposo prima della camera del boss | possibile e **probabile**: −12 h, ma il prezzo vero è che **Terros va scalato a 34 DV** (arrivano a risorse piene) | master §8c-4 + §4 qui sotto |
 
 ### I risultati del viaggio di Hella (SOLO DM — servono al #3, non stasera)
@@ -442,14 +385,14 @@ esistono solo come echi.
 
 1. **Alla vigilia (il giorno prima): file del gruppo + hint.** Ai giocatori
    si invia il **file unico del gruppo «L'Ultima Porta»**
-   (`ARC07-GRUPPO-CAMMINO.*` — copertina evocativa + «il cammino fin qui»,
+   (copertina evocativa + «il cammino fin qui»,
    un solo PDF spoiler-free: recap veloce + hype, MAI il nome del boss —
    regola ADR-0013 per tutte le sessioni) e a ciascuno la SUA pagina ✉
    hint, in privato (un PDF `pg-hint-<PG>` a testa). Al tavolo: leggi il
    read-aloud «Dove Siamo» (copertina del booklet DM). Questo booklet col
    titolo vero resta SOLO al DM.
 2. **La scena privata di Artemis — il Seme-Mercato di Varis** (master
-   **§6-bis**, integrale). 📍 **Posizione a canone (DM 2026-07-30): dentro
+   **§6-bis**, integrale). 📍 **Posizione a canone: dentro
    il Tempio, DOPO la Sentinella**, lungo il corridoio che scende verso la
    camera del guardiano — l'ultimo tratto prima di Terros. Il cabochon è
    affiorato **nella crepa aperta dal duello** (il master spiega perché il
@@ -465,7 +408,7 @@ esistono solo come echi.
 3. **L'ingresso nella camera e il risveglio** (master **§8a-8b**, nuovi):
    niente porta da forzare — la **soglia di mithral si apre da sé** e i PG
    **escono direttamente sull'Altare**, che è **attraccato** al bordo come
-   una chiatta al molo (canone DM 2026-07-30). Leggi il read-aloud **«i sei
+   una chiatta al molo. Leggi il read-aloud **«i sei
    secondi della soglia»** (cosa colgono in un'occhiata), poi il risveglio
    del Guardiano, poi il **distacco**: l'Altare molla l'ormeggio e si
    **centra nella sfera**. Chi è sopra viaggia con lui; chi è rimasto sulla
@@ -518,7 +461,7 @@ esistono solo come echi.
      alleggerirgli le spalle e **NON sa** che è Hella; la giocatrice di
      Hella ha lo stesso momento dal suo lato (handout ✉ Echi, secondo eco).
 6. **Epilogo**: «La Forgia Ricorda» (§10 — i pannelli nuovi si SCOPRONO al
-   ritorno in Sala, master #2), Echo Ledger (§11), PX e tesoro (§11-bis),
+   ritorno in Sala, «Il Ritorno e gli Affreschi»), Echo Ledger (§11), PX e tesoro (§11-bis),
    countdown aggiornato (§12).
 
 ## 2. Cosa stampare stasera
@@ -549,7 +492,7 @@ esistono solo come echi.
   sconfitta del party: espulsi, affaticati, −12 ore di countdown (§8
   Contingenze).
 
-## 4. Canone nuovo di stasera (decisioni DM 2026-07-31)
+## 4. Canone nuovo di stasera
 
 Cinque cose sono cambiate rispetto alla stampa precedente. Se hai il master
 vecchio in mano, **butta quelle pagine**.
@@ -617,7 +560,7 @@ L'orologio **non** è la leva: costa −12 h, ma la soglia critica resta lontana
 (sotto). **Non recitare un'urgenza che i numeri non sostengono**: mostra
 l'affresco, non minacciare la scadenza.
 
-### L'orologio di Hammerfist — registro dei riposi `[CANONE 2026-07-31]`
+### L'orologio di Hammerfist — registro dei riposi
 
 Due tariffe, e una è un regalo che **i giocatori non devono sapere**:
 
@@ -641,8 +584,8 @@ del Fuoco) sono **a canone e già conteggiati**. Da stasera in poi:
 La soglia critica dei **2 giorni** (pannello velato su A8 + ARC-08 in Fase 0
 dura) è **fuori portata in entrambi i rami**: servirebbero altri due riposi
 ordinari. Registro completo, progressione dell'affresco A7 valore per valore e
-stato di consegna all'ARC-08: **`ARC07-DEF-2` §0-bis** (è il file che possiede
-l'orologio) e `ARC07-DEF-5`.
+stato di consegna all'ARC-08: **«Il Ritorno e gli Affreschi» §0-bis** (è il file che possiede
+l'orologio) e «Il Ritorno a Hammerfist».
 
 
 \page
@@ -657,29 +600,15 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 # ARC-07 · DEFINITIVO #1 — IL PIANO DELLA TERRA & TERROS L'ANTICO
 ## Il Portale della Forgia Eterna — Seconda Gemma (Smeraldo della Forza)
 
-> ⭐ **MASTER DEFINITIVO — versione unica, piena e autosufficiente.**
-> **Sostituisce e fonde** in una sola lettura giocabile — **senza tagliare
-> nulla** — i seguenti file (che restano nel repo con banner e, a
-> consolidamento chiuso, migrano in `_ARCHIVIO/`):
-> `_ARCHIVIO/PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md` (cornice, prove,
-> viaggio), `_ARCHIVIO/PortaleForgia-P4-PianoTerra-RICALIBRATO.md` (combattimento
-> "Hard" + rituale a volontà combinata), `_ARCHIVIO/Terros.md` (statblock boss),
-> `La_Piramide_Ricalibrata.md` (metodo del rituale forgiatura),
-> `PG/Artefatti/Artefatti-Pg/Tordek/03_Risveglio_Completo_Bracieri_Terra.md`
-> (Sentinella di Mithral / risveglio Bracieri).
->
-> **Sistema: D&D 3.5 SRD** (al massimo Pathfinder 1e per gli avanzamenti) —
-> **MAI 5e**: niente "azioni del covo a iniziativa 20", niente
-> vantaggio/svantaggio, niente "reazioni". I poteri del boss sono attacchi
-> speciali 3.5 con ricarica, usati nel suo turno; i contro-momenti dei PG
-> sono **azioni preparate** o **prove contrapposte**. Italiano, **CD** non DC.
-> Faerûn 1372 DR. Scala mappe **1,5 m/quadretto**.
+
+> **Il Piano della Terra e Terros l'Antico**: la seconda gemma, lo Smeraldo
+> della Forza.
 >
 > **Stato al tavolo**: 🟡 **IN CORSO** (è la parte che state giocando).
-> **Ordine di gioco (D2)**: Terra (questo) → Resurrezione di Hella (#3) →
-> Viaggio a 1.000 anni fa (#4) → Ritorno a Hammerfist (#5).
+> **Ordine di gioco**: Terra (questo) → Resurrezione di Hella («La Resurrezione di Hella») →
+> Viaggio a 1.000 anni fa («Il Viaggio a 1.000 Anni fa») → Ritorno a Hammerfist («Il Ritorno a Hammerfist»).
 > **Canone a monte**: il viaggio dello spirito di Hella è **concluso e
-> superato** (`...IL-VIAGGIO-NELL'INCUDINE-DEL-MONDO-risultati.md`); i PG
+> superato**; i PG
 > **non lo sanno**, vedono solo Durik prendere forma (§9).
 
 ---
@@ -705,7 +634,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 | §10 | **La Forgia Ricorda** | pannelli-conseguenza negli affreschi (Sala + Stanza della Corona) |
 | §11 | **Echo Ledger** | conseguenze a lungo termine del beat |
 | §11-bis | **Avanzamento** | PX, tesoro ordinario, valore artefatti |
-| §12 | **Ritorno alla Sala** | ponte al master #2 |
+| §12 | **Ritorno alla Sala** | ponte al «Il Ritorno e gli Affreschi» |
 | §13 | **Handout & Asset** | stampabili, immagini per momento, musica |
 | MAPPE | **T-1…T-6** | ASCII ultra-clear 1,5 m/quadretto |
 
@@ -731,22 +660,21 @@ sarà una passeggiata: la fisica stessa del piano è un nemico.
 | ~~Therysol~~ | — | — | ❌ **NON scende** (veglia il corpo) |
 
 APL effettivo **12** (3 PG, **niente guaritore**). Gli scontri sono **duri di
-proposito** (D8): gli artefatti unici compensano l'assenza di Hella.
+proposito**: gli artefatti unici compensano l'assenza di Hella.
 
 **Cosa stampare.** La **Quick-Reference §0-bis** (una pagina, tutto lo
 scontro); gli **handout del §13**; le 6 mappe (§MAPPE); gli statblock di
 **Terros** (§8), della **Sentinella di Mithral** (§7b), degli **Xorn** (§5);
-la scheda Bracieri completa
-(`PG/Artefatti/Artefatti-Pg/Tordek/05_Bracieri_Gemelli_Scheda_PG_Completa.md`);
+la scheda Bracieri completa di Tordek;
 il PDF **Benedizioni di Moradin**.
 
 **Come finisce.** Smeraldo forgiato nella Corona con la **volontà e i poteri
 combinati di tutti e tre** (§9) → gli affreschi della Sala **e** della Stanza
 della Corona incidono un nuovo pannello (§10, "La Forgia Ricorda") → si apre
-la strada alla resurrezione di Hella (#3). Countdown Hammerfist a fine parte:
+la strada alla resurrezione di Hella («La Resurrezione di Hella»). Countdown Hammerfist a fine parte:
 **~3g 20h** — o **~3g 08h** se hanno dormito prima di Terros. Le due tariffe
 del riposo (ordinario **−12 h**, Sala della Forgia **−4 h**) e il registro
-completo stanno in `ARC07-DEF-2` §0-bis.
+completo stanno in «Il Ritorno e gli Affreschi» §0-bis.
 
 ---
 
@@ -829,7 +757,7 @@ Diapason, niente +2 TS → Terros a piena forza, nessun round di nausea.
 - I Bracieri **hanno coscienza propria**: non parlano di continuo, ma danno
   **suggerimenti in nanico, tono da vecchio fabbro**; possono **rifiutare i
   poteri** se Tordek tradisce gli ideali nanici
-  (`01_Bracieri_Gemelli_di_Moradin.md` r.83). Falli parlare al completamento
+. Falli parlare al completamento
   («*Incudine e Martello. Ora sei completo.*») e almeno un'altra volta.
 - Il suo beat è **terreno, geologico**: la pietra, l'incudine, il martello.
   (Le visioni di Fauci di Palude sono di **Thorik**, non sue — vedi sotto.)
@@ -850,15 +778,14 @@ Diapason, niente +2 TS → Terros a piena forza, nessun round di nausea.
   bersagliarlo o danneggiarlo direttamente»* — **Fauci non poteva vederlo** —
   ma ogni round vicino a un comandante nemico gli costava **1d8 di
   contraccolpo spirituale**. Thorik **ha già incrociato Fauci senza corpo.**
-  *(Fonte: `PG/Artefatti/.../00-La Corona di Adamantio-ogetto&Prove/000_Guida_Dm_ogetto_prove_rituali_sfide.md`
-  §Scena C + `..._momento_risveglio_1_prova_scheda_giocatore.md`.)* È il
+ È il
   **seme** che il #4 (duello con **Skullcrusher**, capostipite di Fauci) fa
   fruttare col carry-over «La Forgia ricorda le ferite» e che pagherà a
   Hammerfist (ARC-08). Falla riaffiorare come **peso/premonizione**, non come
   informazione tattica.
 
 ### 🔮 ARTEMIS — il predone avido (NIENTE tentazioni divine)
-> **Correzione canone (DM).** Le tentazioni di Lathander/Mask **NON sono mai
+> Le tentazioni di Lathander/Mask **non sono mai
 > state giocate**: Artemis **non sa nemmeno che esistono**. Sono materiale
 > aggiunto a valle. **In questo master non compaiono** (né qui, né come
 > «Occhio di Lathander» nello scontro con Terros). Il beat di Artemis nasce
@@ -900,7 +827,7 @@ Diapason, niente +2 TS → Terros a piena forza, nessun round di nausea.
   l'asimmetria** che hai chiesto. **Default qui**: non un dialogo, ma un
   **frammento onirico a senso unico** — Tordek, sfiorando la Corona, riceve
   **tre parole nel nanico dei sogni**, senza voce (*«stabilità… germogli…
-  tornare»*) e nient'altro. **✅ CANONE (DM 2026-07-21): frammento onirico** —
+  tornare»*) e nient'altro. **✅ CANONE: frammento onirico** —
   il contatto telepatico pieno dell'Interludio è superato.
 
 ---
@@ -939,7 +866,7 @@ il countdown è sceso.
 > Prima di attraversare, la Sala **si prepara da sola**. (Gli altri affreschi
 > sono già cambiati dopo il Fuoco — A4 chiuso, A7-Hammerfist peggiorato, A8 che
 > registra le vostre gesta: quella è la **Cronaca Vivente**, dettaglio nel
-> master #2. Qui conta l'apertura della Terra.)
+> «Il Ritorno e gli Affreschi». Qui conta l'apertura della Terra.)
 
 > **Read-aloud (Salvatore + LotR).** *Un rombo basso, profondo. Non viene dai
 > muri: viene dalle OSSA. Le colonne tremano — non di paura, di risonanza.
@@ -1020,6 +947,16 @@ lontani.
   gravità tira, sempre (2× ridotta a "solo" opprimente dalla Benedizione);
   i cristalli sono freddi al tocco, mai ghiacciati — il freddo educato
   della pietra che non ha fretta.
+- 🚫 **Cosa NON dire** *(vincolante quanto le quattro righe sopra —
+  [ADR-0057](../../../plans/adr/ADR-0057-la-quarta-colonna-e-di-tutto-il-repo.md))*:
+  - **che il BOOM sono i cristalli *vivi*.** È la rivelazione dell'**Incontro
+    2** (§6, Campo Cristalli Viventi): qui si sente solo una campana sepolta
+    che nessuno ha suonato. Se lo dici adesso, §6 diventa una conferma.
+  - **che il *pull* laterale indica la strada.** La bussola è **Aegis Fang che
+    vibra**, e si guadagna orientandosi. Il pull è una stranezza del posto: se
+    lo trasformi in un'indicazione, togli l'unica prova di orientamento del §4.
+  - **«magia elementale».** I PG sentono **ozono**. La categoria sta nello
+    statblock, non nel naso di chi cammina (ADR-0014 §2, il mostro spiegato).
 
 > **Read-aloud (orizzonte).** *Davanti, nella direzione che indica Aegis Fang:
 > a portata di mano, piattaforme di cristallo unite da ponti di pietra
@@ -1089,8 +1026,8 @@ gravità: strisciate); linee di vista spezzate ogni 6-9 m (agguati facili);
 > triangoli, esagoni, cerchi concentrici — la geometria di una mente, non del
 > caso. E si MUOVONO: si inclinano verso di voi come girasoli verso un sole che
 > non c'è, e cantano. Non è metafora: ogni cristallo tiene una nota, e le
-> migliaia di note insieme formano un accordo così vasto che lo sentite nello
-> sterno prima che nelle orecchie. Al centro del giardino, alta come tre nani,
+> migliaia di note insieme formano un accordo così vasto che arriva allo
+> sterno prima che alle orecchie. Al centro del giardino, alta come tre nani,
 > una madre di luce: sfaccettature a migliaia, e dietro ognuna, un pensiero.*
 
 **Terreno (callout):** corridoio libero centrale (riga 06 della MAPPA T-3);
@@ -1105,7 +1042,7 @@ la zona si può **aggirare** da sud (+30 min).
 > esiste, si stende un oceano di roccia grigia — onde lente come pensieri di
 > montagna, creste che impiegano un'ora a rompersi, correnti di granito
 > liquido che scorrono senza suono. Toccarlo è come toccare il fianco di un
-> toro: cede, e sotto senti il muscolo. E là, sospeso a cinquanta metri sopra
+> toro: cede, e sotto c'è il muscolo. E là, sospeso a cinquanta metri sopra
 > le onde, RUOTA il Tempio: un cubo d'argento di cento metri di lato, perfetto
 > come un dado lanciato da un dio e mai atterrato. Aegis Fang, nella mano di
 > Thorik, vibra così forte che il braccio duole. Siete arrivati. Manca solo
@@ -1251,7 +1188,7 @@ Scavare 6 m · Percezione tremorica 18 m · onnidirezionale · TS Temp +8, Rifl
 > con 5+; la Raffica di Tordek aggira la RD 5/contundente. Scontro atteso 4-5
 > round, Artemis a ~2/3 pf in uscita.*
 
-**XP**: ~4.800 (Fauci di Diamante CR 11 + 2 Xorn CR 6) `verif. ✓ ERRATA/TESORO-WBL 2026-07-23`. **Loot** (se uccisi): vene di **mithral grezzo** (~2.000 mo, se non
+**XP**: ~4.800 (Fauci di Diamante CR 11 + 2 Xorn CR 6). **Loot** (se uccisi): vene di **mithral grezzo** (~2.000 mo, se non
 crollate col pilastro) + 2 geodi d'ametista (400 mo l'uno).
 
 ---
@@ -1263,13 +1200,13 @@ crollate col pilastro) + 2 geodi d'ametista (400 mo l'uno).
 > La Madre Cristallo **rileva** il suo spirito e ne riferisce un moto **senza
 > parole tattiche** (§1 Hella). Mantieni l'atmosfera, togli il "consiglio".
 >
-> **Canone di questa run (DM 2026-07-21).** La **runa parassita di Varis alla
+> **Canone di questa run.** La **runa parassita di Varis alla
 > Madre Cristallo NON è mai stata giocata**: Artemis **non è mai stato tentato
 > qui** — quella scena è rimossa dal canone di questo incontro. La quest
 > personale di Artemis è **il Seme-Mercato lungo la strada** (§6-bis), che
 > funziona **anche se il party salta del tutto questo incontro**.
 >
-> **✅ CANONE GIOCATO (DM 2026-07-24).** Il party HA affrontato i Cristalli
+> **✅ CANONE GIOCATO.** Il party HA affrontato i Cristalli
 > Viventi e ha **superato lo skill challenge**: ha ottenuto la **Frequenza
 > della Confusione** E il **Diapason Armonico** (successo critico). ⚠️ Il
 > **Diapason è stato poi SPESO** contro la Sentinella (§7b): al boss non è
@@ -1334,9 +1271,9 @@ come **Successo Critico**, il **Diapason Armonico** (frammento: **stun Terros
 
 ---
 
-## §6-bis — IL SEME-MERCATO DI VARIS (quest personale di Artemis, NEL TEMPIO) `[CANONE — DM 2026-07-23; posizione aggiornata DM 2026-07-30; l'esito (accetta/rifiuta) si gioca]`
+## §6-bis — IL SEME-MERCATO DI VARIS (quest personale di Artemis, NEL TEMPIO)
 
-> **Dove e quando (canone DM 2026-07-30).** **Dentro il Tempio di Mithral,
+> **Dove e quando.** **Dentro il Tempio di Mithral,
 > DOPO la Sentinella** (§7b), lungo il corridoio che scende verso la camera
 > del guardiano — l'ultimo tratto di strada prima di Terros. La scena resta
 > **indipendente** da tutto il resto (funziona anche se il party ha saltato
@@ -1430,7 +1367,7 @@ finora la propria avidità nell'arco:
 > pagarlo caro (se è avido) — e in entrambi i casi la scelta **torna** più
 > avanti. Registra l'esito nell'**Echo Ledger** (§11).
 
-> ### ✅ CANONE GIOCATO (DM 2026-07-31) — la terza strada: PRESO, MAI TOCCATO
+> ### ✅ CANONE GIOCATO — la terza strada: PRESO, MAI TOCCATO
 >
 > **Cos'è successo davvero.** La gemma **è caduta da sola** dalla parete e,
 > pesantissima per la sua taglia, si è **conficcata nel pavimento** come una
@@ -1500,7 +1437,7 @@ finora la propria avidità nell'arco:
 > (Viaggio a 1.000 anni fa), dove **Sal è presente come "Vatore"**: se Artemis
 > porta il Marchio di Varis, il DM può far riconoscere a Vatore la "firma" del
 > mercato — un filo che lega passato e presente della rete di **Varis ↔ Il
-> Collezionista** (CANONE DM 2026-07-23: le due reti sono collegate).
+> Collezionista** (le due reti sono collegate).
 
 ---
 
@@ -1521,7 +1458,7 @@ combinato che valorizza ognuno (vedi **MAPPA T-4**):
   Take 10 = 26 ✓) fino al cubo e colpisce le **Rune di Attracco** esterne,
   stabilizzando l'ingresso per far attraccare Artemis e trainare Thorik.
 
-> **✅ CANONE GIOCATO (DM 2026-07-24) — «la salita cantata».** Al tavolo
+> **✅ CANONE GIOCATO — «la salita cantata».** Al tavolo
 > l'attraversamento è stato risolto in variante: il party ha **cantato la
 > Frequenza della Confusione** e la risonanza ha **sollevato blocchi di
 > pietra dall'oceano sottostante**, impilandoli in una scala ascendente
@@ -1609,7 +1546,7 @@ Al risveglio i guanti sono striati d'argento e smeraldo; unisci i pugni —
 > **I BRACIERI (voce da vecchio fabbro, nella mente di Tordek):**
 > *«Incudine e Martello. Ora sei completo.»*
 
-> **✅ CANONE GIOCATO (DM 2026-07-24) — il Diapason è stato SPESO qui.**
+> **✅ CANONE GIOCATO — il Diapason è stato SPESO qui.**
 > Durante il duello con la Sentinella il party ha attivato il **Diapason
 > Armonico** innescandolo con la **Frequenza della Confusione**: il
 > frammento ha scatenato un **Grido Superiore** (*greater shout*) contro il
@@ -1620,9 +1557,8 @@ Al risveglio i guanti sono striati d'argento e smeraldo; unisci i pugni —
 
 **Bracieri Gemelli — COMPLETI (Fuoco + Terra):** RD 5/adamantio; **Pugno
 Frana** (atterra i giganti); **Tremore del Forgiatore**; + i poteri Fuoco già
-attivi. *(Scheda piena:
-`PG/Artefatti/Artefatti-Pg/Tordek/05_Bracieri_Gemelli_Scheda_PG_Completa.md`.)*
-**XP Sentinella**: ~2.400 (CR ~11) `[verif. ✓ ERRATA/TESORO-WBL 2026-07-23]`. **Loot**: residuo del
+attivi. *(Scheda piena: la scheda dei Bracieri di Tordek.)*
+**XP Sentinella**: ~2.400 (CR ~11). **Loot**: residuo del
 golem (~5.000 mo di frammenti di mithral).
 
 ---
@@ -1642,15 +1578,13 @@ golem (~5.000 mo di frammenti di mithral).
 **Dati per il DM (non da leggere).** Camera **sferica**, Ø **60 m**, a
 **gravità zero** ovunque tranne l'**Altare della Forza** (piattaforma di
 mithral, **13,5 × 9 m** = **9 × 6 quadretti** da 1,5 m con gli angoli
-smussati, gravità normale, rune verde smeraldo) `[CANONE — DM 2026-07-31;
-ERRATA: le vecchie stesure dicevano «Ø 6 m», misura in cui Terros da solo
-occupava 9 quadretti su 16]`. Dormiente sull'Altare, **Terros**: **10 m**
+smussati, gravità normale, rune verde smeraldo). Dormiente sull'Altare, **Terros**: **10 m**
 di mole stratificata (basalto, granito, marmo, adamantio), geologia
 vivente — ma sulla griglia **occupa 3×3 quadretti** (Enorme, spazio 4,5 m):
 i 10 m sono l'altezza che vedono i PG, non l'impronta. Vedi **MAPPA T-6**
 (che ritrae la situazione **dal round 2 in poi**, ad Altare centrato).
 
-**Come ci si entra (canone DM 2026-07-30).** Nessuna porta da forzare,
+**Come ci si entra.** Nessuna porta da forzare,
 nessun enigma: il corridoio finisce in una **soglia circolare** di mithral
 che **si apre da sola** al passaggio della Corona e dei Bracieri — il Tempio
 riconosce i suoi. Non c'è un ponte da attraversare e non si «sbuca nel
@@ -1688,20 +1622,20 @@ gravità normale, con Terros dormiente all'altro capo della piattaforma.
 > troppo tempo. Non si muove. Non ha respiro. Occupa un terzo della
 > piattaforma. **Che fate?***
 
-> **Read-aloud (il risveglio del guardiano — LotR + Salvatore).** *All'inizio
-> lo scambiate per una formazione della caverna: una collina di roccia
+> **Read-aloud (il risveglio del guardiano — LotR + Salvatore).** *A prima
+> vista è una formazione della caverna: una collina di roccia
 > stratificata, ere sovrapposte come pagine di un libro di pietra. Poi la
-> collina RESPIRA. Una fenditura si apre lungo quella che credevate una parete
+> collina RESPIRA. Una fenditura si apre lungo quella che sembrava una parete
 > — è una palpebra. Due occhi di cristallo grezzo si accendono di una luce
 > minerale, fredda, priva di odio e priva di pietà, come lo sguarderebbe una
 > montagna. Non c'è collera: c'è PESO. Terros si erge, e ogni suo movimento è
-> il suono di una faglia che si assesta, un boato basso che sentite nei denti
-> prima che nelle orecchie. La gravità della sala si inclina verso di lui,
+> il suono di una faglia che si assesta, un boato basso che arriva ai denti
+> prima che alle orecchie. La gravità della sala si inclina verso di lui,
 > come se il piano stesso lo riconoscesse padrone. Aegis Fang, nella mano di
 > Thorik, tace di colpo: davanti all'Incudine del Mondo, anche una voce antica
 > abbassa il capo.*
 
-### 8b. IL DISTACCO — l'Altare si centra sul guardiano `[CANONE — DM 2026-07-30]`
+### 8b. IL DISTACCO — l'Altare si centra sul guardiano
 
 **Cosa succede.** Nel **round del risveglio** (round 1), l'Altare **molla
 l'ormeggio** e scivola fino al **centro esatto della sfera**, come se il
@@ -1761,7 +1695,7 @@ una sfera nuda:
 - **Acustica drammatica**: i passi di Terros rimbombano; un suo colpo pieno è un
   **tuono** che (nel Piano) si sente a un chilometro.
 
-> **✅ CANONE RISOLTO (DM 2026-07-21): il boss è TERROS, l'Elementale della
+> **✅ CANONE RISOLTO: il boss è TERROS, l'Elementale della
 > Terra (CR 15).** Le vecchie mappe/immagini "Boss Mithral Golem" (MAP 6,
 > `Camera Nodo Terra - Boss Mithral Golem…webp`) appartengono a una
 > generazione superata del design: **il Golem delle immagini È la Sentinella
@@ -1778,7 +1712,7 @@ hanno **saltato** l'incontro non la possiedono, e se hanno fatto **fallimento
 critico** l'urlo ha già svegliato e preparato Terros. In entrambi i casi: boss
 a piena forza — la scelta al campo dei Cristalli SI SENTE qui.
 
-> **✅ CANONE GIOCATO (DM 2026-07-24) — stato delle armi soniche al boss.**
+> **✅ CANONE GIOCATO — stato delle armi soniche al boss.**
 > Il party **possiede la Frequenza** (skill challenge superato, §6) → il
 > **malus round 1 si attiva con la SOLA Frequenza**: il Diapason non serve
 > per questo (è — era — l'arma separata anti-arrocco: stun 1 round senza TS,
@@ -1819,7 +1753,7 @@ QUALITÀ / ATTACCHI SPECIALI (tutti 3.5, nel turno di Terros)
    terra/pietra (l'Altare CONTA come terra); −4 att/danno vs
    chi è in aria/volo. → dilemma per i PG: stabilità (Altare)
    vs evitare il bonus del boss (zero-G).
-2) PUSH / SPINGERE (Ex) `[CANONE — DM 2026-07-31]`: UNA VOLTA PER
+2) PUSH / SPINGERE (Ex): UNA VOLTA PER
    ROUND, a scelta di Terros, uno degli schianti andati a segno
    porta con sé la spinta. NON costa nulla: cavalca l'attacco (nei
    round in cui usa Onda/Stalattiti/Scudo non ci sono schianti,
@@ -1919,12 +1853,12 @@ R4+: alterna Earth Glide mordi-e-fuggi, Onda e Scudo. Sotto il
 > **Read-aloud — il primo scambio (coreografia, Salvatore).** *Terros non
 > carica: si LASCIA CADERE in avanti, e la camera intera cade con lui — l'Onda
 > Gravitazionale vi strappa l'Altare da sotto i piedi come una tovaglia. Thorik,
-> tu senti l'armatura diventare àncora e bandiera insieme: Aegis Fang morde il
-> bordo dell'Altare, il braccio urla, ma tieni. Tordek, il mondo ruota e tu
+> l'armatura è àncora e bandiera insieme: Aegis Fang morde il
+> bordo dell'Altare, il braccio urla, e il morso tiene. Tordek, il mondo ruota e tu
 > ruoti con lui — i Bracieri sussurrano una parola sola, «peso», e i tuoi piedi
 > trovano il muro come fosse pavimento. Artemis, tu sei l'unico per cui nulla è
-> cambiato: le Ali d'Ombra non obbediscono alla terra. Da lassù vedi tutto —
-> il boss, l'Altare, i tuoi compagni aggrappati al mondo capovolto. La sua
+> cambiato: le Ali d'Ombra non obbediscono alla terra. Da lassù restano sotto
+> di te il boss, l'Altare, i tuoi compagni aggrappati al mondo capovolto. La sua
 > testa di roccia si volta lenta verso di te, l'unico che non è caduto. Che
 > fate?*
 
@@ -1941,7 +1875,7 @@ R4+: alterna Earth Glide mordi-e-fuggi, Onda e Scudo. Sotto il
   superficie (contro-momento "Radice a Terra"), assorbendo gli schianti dietro
   Aegis Fang + Corona.
 
-### Analisi DPR (guida di bilanciamento DM — ripristinata da _ARCHIVIO/Terros.md)
+### Analisi DPR (guida di bilanciamento DM)
 
 | PG | Danno medio/round vs CA 26 | Nota |
 |---|---|---|
@@ -2018,17 +1952,17 @@ R4+: alterna Earth Glide mordi-e-fuggi, Onda e Scudo. Sotto il
 | **Fuggono a metà scontro** | Terros NON insegue oltre la camera (è vincolato all'Altare). Ma la Forgia registra: al ritorno lo trovano **guarito del tutto** e lo Scudo di Geodi parte già attivo. Il countdown di Hammerfist, intanto, è sceso. |
 | **Distruggono/danneggiano l'Altare** | Impossibile scalfirlo (mithral consacrato, Durezza 20, autoriparante) — ma il TENTATIVO è sacrilegio: Terros entra in **furia** (+2 att/danni, −2 CA) e i Bracieri di Tordek **si raffreddano** di disapprovazione (nessun malus meccanico: solo il gelo del vecchio fabbro nella mente). |
 | **Qualcuno precipita nell'oceano di roccia (fuori dal Tempio)** | Non è lava: è **roccia semi-liquida**. Affonda lentamente (3 round per sommersione): Nuotare CD 20 (faticoso) o corda dei compagni; sommerso = soffocamento + 2d6 schiacciamento/round. Drammatico, non istantaneamente letale. |
-| **Vogliono riposare dentro il Tempio prima del boss** | Possibile (l'Anticamera post-Sentinella è sicura), e **probabile**. Costa **−12 h** di orologio (tariffa ordinaria, `ARC07-DEF-2` §0-bis) — ma il prezzo vero **non è il timer**: è che **Terros ti arriva a risorse piene**, quindi scatta il ramo «party straripante di risorse» del riquadro *Scalare lo scontro* (**§8c-4**). Mostra l'affresco A7, non minacciare la scadenza: a 3g 08h la soglia critica è ancora lontana. |
+| **Vogliono riposare dentro il Tempio prima del boss** | Possibile (l'Anticamera post-Sentinella è sicura), e **probabile**. Costa **−12 h** di orologio (tariffa ordinaria, «Il Ritorno e gli Affreschi» §0-bis) — ma il prezzo vero **non è il timer**: è che **Terros ti arriva a risorse piene**, quindi scatta il ramo «party straripante di risorse» del riquadro *Scalare lo scontro* (**§8c-4**). Mostra l'affresco A7, non minacciare la scadenza: a 3g 08h la soglia critica è ancora lontana. |
 | **I PG CADONO (sconfitta contro Terros)** | Niente TPK gratuito: il voto di Terros è **custodire**, non massacrare. I caduti vengono **espulsi** — la gravità del Nodo li sputa fuori e si risvegliano sulla riva dell'Oceano di Roccia, interi ma **segnati**: 1 livello di affaticamento che nessun riposo qui rimuove, e il countdown di Hammerfist è sceso di **−12 ore** (tariffa ordinaria). Nella Sala, l'affresco A5 mostra ora un **pannello velato** (la Forgia registra anche le sconfitte). Possono ritentare: Terros li aspetta, guarito. *La sconfitta costa tempo e orgoglio, non la campagna.* |
 
-**Durata attesa 4–6 round. XP** ~5.400/PG (CR 15, 3 PG) `[verif. ✓ ERRATA/TESORO-WBL 2026-07-23]`.
+**Durata attesa 4–6 round. XP** ~5.400/PG (CR 15, 3 PG).
 **Loot**: **Geode Titanico** (5.000 mo, cristalli d'adamantio) + **Cuore di
 Terros** (oggetto meraviglioso: componente da **20.000 mo**, o base per un
 *Amuleto di Armatura Naturale +5*) — l'occhio di Artemis ci si posa subito.
 
 ---
 
-### 8c. QUANDO ARRIVA ADDOSSO A TERROS — manuale d'uso del guardiano `[CANONE — DM 2026-07-31]`
+### 8c. QUANDO ARRIVA ADDOSSO A TERROS — manuale d'uso del guardiano
 
 > **Cos'è questa sezione e cosa NON è.** Non è un prontuario di combo per i
 > giocatori: è la **lista delle cose che il party può tirare fuori e cosa fa
@@ -2070,7 +2004,7 @@ mostro ha.
 **Chilling Tentacles (i «tentacoli neri»).** Invocazione *Greater*: *black
 tentacles* a **CL 13** + **2d6 freddo/round** a chiunque sia dentro. Area
 **raggio 6 m** (cerchio da 12 m). Presa dei tentacoli **+21**. I tentacoli
-sono **immuni a ogni danno**. `[INFERRED: durata 1 round/livello]`
+sono **immuni a ogni danno**. Durata 1 round per livello.
 
 | Interazione | Verdetto per il DM |
 |---|---|
@@ -2106,7 +2040,7 @@ lo sono guadagnati.
 I Bracieri completi hanno **Ancoraggio della Montagna (Su), 2/giorno, azione
 IMMEDIATA**: *«quando verresti spinto/mosso contro volontà, diventi
 inamovibile — ignori il movimento forzato, +4 al TS contro l'effetto
-scatenante»* (`05_Bracieri_Gemelli_Scheda_PG_Completa.md` §5).
+scatenante»*.
 
 **È il contro esatto della Spinta**, e arriva **dopo** che hai annunciato il
 risultato — azione immediata, quindi il giocatore può bruciarlo a colpo già
@@ -2170,7 +2104,7 @@ Neutrale, e la sua RD è 10/—.**
 | Sinergia | Effetto reale su Terros |
 |---|---|
 | **S1 — Paradox Blessing** (Corona+Anello): +1 CA schivare vs **Legali** entro 3 m | ❌ **inerte**: Terros è Neutrale |
-| **S2 — Corona+Anello attiva**: Visione Planare + dissolvi illusioni | ⚠️ nessuna illusione. Ma concedi che la **Visione Planare** mostri Terros **dentro la pietra** durante l'Earth Glide, negandogli l'agguato per un round `[INFERRED — ruling]` |
+| **S2 — Corona+Anello attiva**: Visione Planare + dissolvi illusioni | ⚠️ nessuna illusione. Ma concedi che la **Visione Planare** mostri Terros **dentro la pietra** durante l'Earth Glide, negandogli l'agguato per un round |
 | **S3 — Colpo dell'Alba Oscura** (Aegis Fang+Anello, 1/giorno) | ✅ +2 attacco, +2d6 sacro. I sacri stanno **sopra** l'unica sottrazione della RD → entrano interi (+7). Vale il massimo **quando è alzato lo Scudo di Geodi** (CA 30) |
 | **S4 — Trinità Divina** (i tre portatori entro 9 m, una azione di movimento a testa) | vedi la scomposizione qui sotto |
 
@@ -2210,9 +2144,9 @@ lo scontro sui 4-6 round invece che su 3. E ti regala l'immagine giusta —
 guardiano è **già in piedi, già schermato, già in attesa**. Il prezzo del
 sonno lo vedono in faccia prima che sull'affresco.
 
-**Orologio, estratto** `[CANONE — DM 2026-07-31]`. Il registro completo dei
+**Orologio, estratto**. Il registro completo dei
 riposi, con le tariffe e la progressione dell'affresco A7, vive in
-**`ARC07-DEF-2` §0-bis**, che è il file che possiede l'orologio: se i numeri
+**«Il Ritorno e gli Affreschi» §0-bis**, che è il file che possiede l'orologio: se i numeri
 divergono, vale quello.
 
 Le due tariffe: **riposo ordinario −12 h** (Faerûn, Sottosuolo, Piano del Fuoco,
@@ -2224,7 +2158,7 @@ un luogo divino, il tempo vi scorre più lento — i giocatori **non lo sanno**)
 | **Entrano senza dormire** | 3g 20h | **3g 16h** | ≈ 3g 15h |
 | **Dormono prima di Terros** (probabile) | **−12 h** | **3g 04h** | ≈ 3g 03h |
 
-La soglia dei **2 giorni** (`ARC07-DEF-2` §8, pannello velato su A8 + ARC-08 in
+La soglia dei **2 giorni** («Il Ritorno e gli Affreschi» §8, pannello velato su A8 + ARC-08 in
 Fase 0 dura) resta **lontana in entrambi i rami**: servirebbero altri due riposi
 ordinari per avvicinarla. **Quindi non recitare un'urgenza che i numeri non
 sostengono.** Il prezzo del riposo qui **non è il timer: è Terros**, che ti
@@ -2232,7 +2166,7 @@ arriva a risorse piene. Mostra l'affresco, non minacciare l'orologio.
 
 ---
 
-> ### ✅ CANONE GIOCATO (DM 2026-07-31) — TERROS È CADUTO
+> ### ✅ CANONE GIOCATO — TERROS È CADUTO
 >
 > Il party è entrato nella camera **senza aver riposato** (niente ramo «34 DV»:
 > Terros è stato affrontato al profilo pieno standard) e **ha vinto**. Il
@@ -2244,7 +2178,7 @@ arriva a risorse piene. Mostra l'affresco, non minacciare l'orologio.
 > - **Loot dell'arco disponibile**: Geode Titanico (5.000 mo) + **Cuore di
 >   Terros** (20.000 mo) + residuo golem + geodi.
 > - Sbloccata la condizione del **TODO «Diventare una Collina»** sui Bracieri
->   Gemelli (`PG/Artefatti/Artefatti-Pg/Tordek/05_Bracieri_Gemelli_Scheda_PG_Completa.md`):
+>   Gemelli:
 >   Tordek ha dimostrato il proprio valore contro il guardiano. **Il potere va
 >   ora scritto sulla scheda** — finché il TODO è aperto non esiste al tavolo.
 > - L'ultimo suono di Terros è stato di **assenso**, non d'odio (il party aveva
@@ -2255,7 +2189,7 @@ arriva a risorse piene. Mostra l'affresco, non minacciare l'orologio.
 > Sconfitto Terros, si sbriciola e dal torace, tenuto a galla dal magnetismo
 > sul centro dell'Altare, emerge un nucleo di luce verde così denso da
 > **piegare la gravità**: lo **Smeraldo della Forza**. Il rituale segue le
-> regole della Corona (`00_corona_di_adamantio...md`, Rituale 3). È uno **skill
+> regole della Corona (Rituale 3). È uno **skill
 > challenge ad alta tensione** in **tre fasi**: prendere la Forza — e presto
 > riportare un morto — **ha un prezzo, e ogni compagno deve volerlo e donare
 > qualcosa.**
@@ -2282,9 +2216,9 @@ L'Altare porta la gravità a livelli intollerabili. Thorik si inginocchia.
 
 > **Regia (asimmetria).** Thorik **non sa** che la presenza verde è Hella; per
 > la giocatrice di Hella è uno dei suoi echi (§1). **Non spiegarlo finché non
-> torna Hella (#3).**
+> torna Hella («La Resurrezione di Hella»).**
 
-> ### ✅ CANONE GIOCATO (DM 2026-07-31, rettifica) — scelta B: il PESO NEL CORPO, e lo prende THORIK
+> ### ✅ CANONE GIOCATO — scelta B: il PESO NEL CORPO, e lo prende THORIK
 >
 > **Nessun sacrificio materiale.** Il bottino dell'arco è **intatto**: Geode
 > Titanico, **Cuore di Terros**, residuo golem e geodi restano al party, e
@@ -2294,13 +2228,6 @@ L'Altare porta la gravità a livelli intollerabili. Thorik si inginocchia.
 > ✅ **Esito giocato: il Peso l'ha accettato THORIK, il portatore** — come
 > scrive l'Opzione B qui sopra.
 >
-> 🔁 **Correzione del 2026-08-06.** Dal 2026-07-31 al 2026-08-06 questo blocco
-> diceva l'opposto — «deviazione voluta: si è inginocchiato il monaco» — e
-> attribuiva il pegno a **Tordek**. Era un refuso, segnalato dal DM. La riga che
-> il blocco stesso indicava come «l'unica da correggere» non era l'unica: la
-> lettura sbagliata si era propagata a `state.md` (intestazione e **due echi**,
-> E-07c ed E-07e), alla scheda della Corona e ai booklet. Tutto riportato al
-> portatore.
 >
 > | | Effetto permanente |
 > |---|---|
@@ -2319,11 +2246,10 @@ L'Altare porta la gravità a livelli intollerabili. Thorik si inginocchia.
 > - **La presenza verde** (§9 Fase 1) si è stretta alle spalle di **Thorik**:
 >   è Hella, e lui **non lo sa** — l'asimmetria originale del modulo, intatta.
 >   Per la giocatrice di Hella è un eco. Non spiegarlo fino al #3. È l'eco
->   **E-07f** in `state.md` §7.E, ed è la più forte che esca da questa scena.
+>   **E-07f** nel registro degli echi, ed è la più forte che esca da questa scena.
 > - **Che cosa cambia davvero per Thorik.** La DES era già la sua statistica
 >   povera — **10 di base**, e la Corona gliene aveva già tolti 2 quando se
->   l'è messa in testa (`PortaleForgia-P1-REVISED-Corretta.md`, «Limitazioni»:
->   *DES 10 → 8*). Questi altri due lo portano a **6**: **un punto solo** di CA,
+>   l'è messa in testa (le «Limitazioni» della Corona: *DES 10 → 8*). Questi altri due lo portano a **6**: **un punto solo** di CA,
 >   Riflessi e iniziativa in più. Il tavolo non lo vedrà. Il +2 COS invece lo
 >   rende *migliore* nell'unica cosa per cui lo misurano. **Ha pagato dove non
 >   si vede e lo elogeranno per la metà che si vede** — è l'eco **E-07c**.
@@ -2538,16 +2464,15 @@ gravitazionale accanto all'Altare.
 > vedranno chiaramente al #3.)*
 
 > **CORREZIONE DI CANONE (importante).** I file-fonte lo chiamavano «Cane da
-> Guerra **COSTRUTTO/animato**». **Errato** — e `state.md §1` lo segna come
-> confusione. È **DURIK RIFORGIATO, il Guardiano di Pietra**: il **compagno
+> Guerra **COSTRUTTO/animato**». **Errato**, e lo stato della campagna lo segna
+> come confusione. È **DURIK RIFORGIATO, il Guardiano di Pietra**: il **compagno
 > animale vivente** di Hella, riforgiato (12 DV, mithral intrecciato a pietra
 > scura, occhi di topazio, aspetto «Protegge Hella»), non un golem generico.
 > Qui, nel Piano della Terra, **prende forma** grazie allo spirito di Hella e
 > all'Impronta caduta nel Sogno della Terra (Prova II del suo viaggio);
-> diventa **suo compagno a pieno titolo** solo alla resurrezione (#3), evocato
+> diventa **suo compagno a pieno titolo** solo alla resurrezione («La Resurrezione di Hella»), evocato
 > dal **terzo seme della Collana**. Non parla: i suoi versi sono suoni di
-> pietra — click, faglie lontane. *(Fonti: `...IL-VIAGGIO...-risultati.md`
-> §0/§5; `01_Collana_dei_Semi_Eterni.md`.)*
+> pietra — click, faglie lontane.
 
 **Poteri sbloccati dallo Smeraldo (Corona 2/3):**
 - **Volontà Adamantina** (passiva): immunità totale a *charme/compulsione* quando
@@ -2556,21 +2481,21 @@ gravitazionale accanto all'Altare.
   di terreno corrotto o *Terremoto* controllato; ogni uso richiede preghiera e
   offerta (1.000 mo per Moradin).
 - **Chiave del Tempo**: assieme al Topazio, lo Smeraldo **stabilizza la matrice
-  temporale** → rende sicuro il Viaggio a 1.000 anni fa (#4).
+  temporale** → rende sicuro il Viaggio a 1.000 anni fa («Il Viaggio a 1.000 Anni fa»).
 
 **Aspetto Corona**: gemma oro-arancio (fronte, Tempo) + gemma verde profondo
 (tempia sinistra, Solidità). Manca solo il **Rubino** (si accenderà alla
-vittoria del -1000, #4).
+vittoria del -1000, «Il Viaggio a 1.000 Anni fa»).
 
 ---
 
 ## §10 — «LA FORGIA RICORDA»: CONSEGUENZE NEGLI AFFRESCHI (Cronaca Vivente)
 
-> **Sistema definitivo** (progettato qui, sviluppato a pieno nel master #2).
+> **Sistema definitivo** (progettato qui, sviluppato a pieno nel «Il Ritorno e gli Affreschi»).
 > Gli affreschi della **Sala della Forgia** e le incisioni della **Stanza della
 > Corona** non sono arte statica: sono la **cronaca vivente di Moradin**. Ogni
 > gesta dei Custodi vi **incide un pannello nuovo**. Al ritorno alla Sala
-> (master #2) i PG troveranno i cambiamenti qui elencati — in **entrambe** le
+> («Il Ritorno e gli Affreschi») i PG troveranno i cambiamenti qui elencati — in **entrambe** le
 > stanze.
 
 | Luogo | Pannello che appare | Dettaglio |
@@ -2586,7 +2511,7 @@ davanti a un pannello **completato**: **1/giorno per pannello**, **+1 morale
 di FOR o un TS Tempra), non cumulabile con sé stesso. In più, un Custode può
 **"leggere" un pannello completato** per rammentare un **fatto vero** già
 vissuto (aiuto-memoria diegetico su gesta/nemici passati, non divinazione sul
-futuro). *Lista completa degli 8 affreschi e del gancio → master #2.*
+futuro). *Lista completa degli 8 affreschi e del gancio → «Il Ritorno e gli Affreschi».*
 
 ---
 
@@ -2594,14 +2519,14 @@ futuro). *Lista completa degli 8 affreschi e del gancio → master #2.*
 
 | Evento (qui) | Eco | Quando riemerge | Dove si gestisce |
 |---|---|---|---|
-| **Scelta di Varis** (avidità/giustizia, §6) | Varis socio-che-sa-troppo **o** nemico permanente | ARC-09 (rete Varis/Il Collezionista) | state.md §3/§5 |
+| **Scelta di Varis** (avidità/giustizia, §6) | Varis socio-che-sa-troppo **o** nemico permanente | ARC-09 (rete Varis/Il Collezionista) | fili di Varis e del Collezionista |
 | **Avidità di Artemis** (§5/§9) | Se dà via il bottino al Rituale: rinuncia dolorosa; se lo trattiene: party sceglie il sacrificio personale di Thorik | ARC-08 (WBL) / RP continuo | Echo Ledger |
-| **Seme-Mercato di Varis** (§6-bis) | Preso → **Marchio di Varis** (localizza Artemis, riscuote una volta); Rifiutato → Varis lo rispetta come "sfuggito" | ARC-09 (Varis/Il Collezionista); eco possibile già al #4 con Vatore | §6-bis + state.md §3/§5 |
-| **Scelta-costo di Thorik** (§9 Fase 1) | Materiale → party povero a Hammerfist; Personale → −2 DES/+2 COS **permanenti** | ARC-08 ingresso / sempre | state.md §1/§6 |
-| **Bracieri completi + coscienza** (§7b) | Possono **rifiutare i poteri** se Tordek tradisce gli ideali nanici | ogni scelta morale dura | `01_Bracieri_Gemelli_di_Moradin.md` |
-| **Thorik ha già visto Fauci in forma spirituale** (Corona/Topazio, §1) | Il "sangue Skullcrusher" che riconosce; premonizione di Hammerfist | #4 (Skullcrusher) → ARC-08 | carry-over «La Forgia ricorda le ferite» + `.../Corona.../000_Guida_Dm...md` |
-| **Durik prende forma** (§9) | Il seme III della Collana lo evocherà; carta emotiva a Hammerfist | #3 → ARC-08 | `01_Collana_dei_Semi_Eterni.md` |
-| **Pannelli della Cronaca** (§10) | La quarta figura di Hella si "riempie" → presagio resurrezione | #2 e #3 | master #2 |
+| **Seme-Mercato di Varis** (§6-bis) | Preso → **Marchio di Varis** (localizza Artemis, riscuote una volta); Rifiutato → Varis lo rispetta come "sfuggito" | ARC-09 (Varis/Il Collezionista); eco possibile già al #4 con Vatore | §6-bis + fili di Varis e del Collezionista |
+| **Scelta-costo di Thorik** (§9 Fase 1) | Materiale → party povero a Hammerfist; Personale → −2 DES/+2 COS **permanenti** | ARC-08 ingresso / sempre | stato del party e degli artefatti |
+| **Bracieri completi + coscienza** (§7b) | Possono **rifiutare i poteri** se Tordek tradisce gli ideali nanici | ogni scelta morale dura | scheda dei Bracieri |
+| **Thorik ha già visto Fauci in forma spirituale** (Corona/Topazio, §1) | Il "sangue Skullcrusher" che riconosce; premonizione di Hammerfist | #4 (Skullcrusher) → ARC-08 | carry-over «La Forgia ricorda le ferite» + guida della Corona |
+| **Durik prende forma** (§9) | Il seme III della Collana lo evocherà; carta emotiva a Hammerfist | #3 → ARC-08 | scheda della Collana |
+| **Pannelli della Cronaca** (§10) | La quarta figura di Hella si "riempie" → presagio resurrezione | #2 e #3 | «Il Ritorno e gli Affreschi» |
 
 ---
 
@@ -2610,14 +2535,11 @@ futuro). *Lista completa degli 8 affreschi e del gancio → master #2.*
 > **A cosa serve.** Per valutare la progressione al tavolo servono **tre**
 > numeri, non uno: i **PX** guadagnati, il **tesoro ordinario** (conta verso il
 > WBL) e la **ricchezza speciale/artefatti** (conta verso il *potere* effettivo,
-> anche se non verso il WBL). Il precedente accounting a fasi era andato perso:
-> qui è ripristinato. Cifre PX dall'`ERRATA-ARC07-35-Verification.md` (APL 12/D15) e
-> `ARC07-TESORO-WBL-AUDIT.md`; **cross-check completato 2026-07-23** (i tag
-> `[verif. ✓ …]` sono stati riscontrati, nessuna divergenza residua).
+> anche se non verso il WBL).
 
 ### A. Budget PX del modulo, sezione per sezione (party 3 PG, APL eff. 12 · PG di 13°)
 
-| § | Incontro / prova | GS / tipo | PX/PG `[verif. ✓ ERRATA/TESORO-WBL 2026-07-23]` |
+| § | Incontro / prova | GS / tipo | PX/PG |
 |---|---|---|---|
 | §4 | Ambiente dinamico superato (polvere, stalattiti, fenditure — se attraversato senza scorciatoie) | premio di storia | 300 |
 | §5 | Xorn: «Fauci di Diamante» (CR 11) + 2 Xorn (CR 6) — **qualunque via** (combattuta, demolita o negoziata) | EL ~13 | 1.700 |
@@ -2663,14 +2585,14 @@ futuro). *Lista completa degli 8 affreschi e del gancio → master #2.*
 
 ### C. Ricchezza speciale / artefatti acquisiti qui (conteggio SEPARATO)
 
-> Metodo `ARC07-TESORO-WBL-AUDIT.md`: gli artefatti sono **ricchezza
+> Metodo dell'audit del tesoro dell'arco: gli artefatti sono **ricchezza
 > campagna-definente**, contati a parte, **non** colmano il WBL ordinario. Ma
 > il loro **valore di mercato** è la misura del *potere* dei PG — ecco perché va
 > registrato per valutare l'avanzamento.
 
 | PG | Artefatto toccato in questo beat | Valore di riferimento | Stato dopo il beat |
 |---|---|---|---|
-| **Thorik** | **Corona di Adamantio** — +**Smeraldo** (2ª gemma) | (artefatto maggiore, non a listino) | 2/3 gemme (Topazio+Smeraldo); manca il Rubino (#4) |
+| **Thorik** | **Corona di Adamantio** — +**Smeraldo** (2ª gemma) | (artefatto maggiore, non a listino) | 2/3 gemme (Topazio+Smeraldo); manca il Rubino («Il Viaggio a 1.000 Anni fa») |
 | **Tordek** | **Bracieri Gemelli di Moradin** — **completati** (Fuoco+Terra) | (artefatto maggiore) | pieni poteri + coscienza attiva |
 | **Tordek** | Cintura della Devastazione (già posseduta) | ~18.000 mo (MIC) | invariata |
 | **Artemis** | **Ring of Chaotic Illumination** (Reforged) | **163.400 mo** (unico) | invariato; +eventuale **Frammento di Mercato** se prende il Seme (§6-bis) |
@@ -2685,19 +2607,19 @@ futuro). *Lista completa degli 8 affreschi e del gancio → master #2.*
 
 ---
 
-## §12 — RITORNO ALLA SALA (ponte al master #2)
+## §12 — RITORNO ALLA SALA (ponte al «Il Ritorno e gli Affreschi»)
 
-> **Read-aloud.** *Attraversate il portale a ritroso. La Sala della Forgia vi
-> accoglie con la sua luce dorata immutabile — ma qualcosa È mutato. L'affresco
+> **Read-aloud.** *Dall'altra parte del portale, la Sala della Forgia: la stessa
+> luce dorata immutabile — ma qualcosa È mutato. L'affresco
 > di Est si è chiuso come una porta; quello del Tempo brucia nitido; e nella
 > nebbia della parete di Nord-Ovest, la quarta figura ha ora un contorno. La
 > Corona di Thorik pesa di una gemma in più.*
 
 Countdown Hammerfist: **~3g 20h**, o **~3g 08h** se hanno dormito prima di
-Terros (registro completo: `ARC07-DEF-2` §0-bis). Il party è esausto: Moradin
+Terros (registro completo: «Il Ritorno e gli Affreschi» §0-bis). Il party è esausto: Moradin
 consiglia un riposo lungo — **nella Sala costa solo −4 h**, e loro non sanno
 perché. **Poi**: gli affreschi e la Stanza della
-Corona (master #2), quindi la **resurrezione di Hella** (master #3).
+Corona («Il Ritorno e gli Affreschi»), quindi la **resurrezione di Hella** («La Resurrezione di Hella»).
 
 **Tesori ordinari della parte**: mithral grezzo + geodi (~5.200 mo) + Geode
 Titanico (5.000) + Cuore di Terros (20.000, spesso sacrificato al Rituale) +
@@ -2736,22 +2658,10 @@ contata a parte (audit WBL).
 - **`Musica/LaCanzoneDellePietre.mp3`** — qui ha UN momento: la **Fase 2 del
   Rituale** (§9), quando Tordek batte i pugni sull'Altare al ritmo del cuore di
   Thorik. Falla partire al primo colpo: il tema pietra/forgia È quel ritmo.
-  (Il suo momento principale resta la resurrezione, master #3.)
+  (Il suo momento principale resta la resurrezione, «La Resurrezione di Hella».)
 
 ---
 
-### FILE-FONTE ASSORBITI DA QUESTO MASTER (→ `_ARCHIVIO/` a consolidamento chiuso)
-`_ARCHIVIO/PortaleForgia-P4-PianoTerra-COMPLETO-alternative.md` ·
-`_ARCHIVIO/PortaleForgia-P4-PianoTerra-RICALIBRATO.md` · `_ARCHIVIO/Terros.md` ·
-`_ARCHIVIO/PortaleForgia-Interludio-Terra.md` (apertura A5 + iscrizione + eco di Hella —
-assorbiti in §1/§2; le variazioni degli affreschi A4/A7/A8 vanno al master #2) ·
-`Mappe/_ARCHIVIO/TACTICAL-GRIDS-COMPLETE.md` MAP 5 (ambiente dinamico → §4) e MAP 6
-(scenografia della camera → §8; **canone risolto**: il "Golem di Mithral"
-delle immagini/MAP 6 è la **Sentinella** del §7b, il boss è **Terros**) ·
-`La_Piramide_Ricalibrata.md` (metodo forgiatura — il file resta come master del
-finale del Fuoco/P3) ·
-`PG/Artefatti/Artefatti-Pg/Tordek/03_Risveglio_Completo_Bracieri_Terra.md`
-*(le schede Bracieri e Collana restano vive in `PG/Artefatti/`).*
 
 ---
 
@@ -2759,7 +2669,7 @@ finale del Fuoco/P3) ·
 
 > 📗 **Versione a piena scheda tattica** (posizioni PG/PNG/villain, terreno &
 > altitudini, tattiche di villain/mostri, evoluzione) nell'**Atlante Mappe
-> Definitivo**: `Mappe/ARC07-MAPPE-DEFINITIVO.md`. Le griglie qui sotto sono
+> Definitivo**. Le griglie qui sotto sono
 > identiche; là hanno gli add-on DM. **I booklet includono l'Atlante.**
 
 ### MAPPA T-1 — PIANO DELLA TERRA: orizzonte & percorso (schematica)

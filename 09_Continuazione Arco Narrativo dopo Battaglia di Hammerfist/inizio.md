@@ -224,7 +224,7 @@ Ecco una proposta dettagliata per ciascuna missione personale con mappe, incontr
 
 ***
 
-# Gran Finale ad Damarath
+# Gran Finale a Damarath
 
 - Esito missioni impatta forze e risorse disponibili alla difesa  
 - Assedio imponente con truppe drow, aberrazioni, draghi, circolo degli otto con magheggi mythal-like  

@@ -1,21 +1,19 @@
 ---
 name: rumblingstone-mapmaking
 description: >
-  RumblingStone tactical map pipeline — create, edit, and render the campaign's
-  battle maps at professional AP quality (Red Hand of Doom / Paizo benchmark).
-  Use for "mappa", "battle map", "griglia tattica", "battlemap", "render SVG",
-  "nuova mappa", "import watabou", "hero map", "mappa regionale", "mappa città",
-  "mappa esercito", "assedio", "accampamento", "coordinate", "JSON mappa",
-  "contratto JSON", "compile_map_json", "export UVTT", "uvtt", "dd2vtt",
-  "Foundry", "Roll20", "muri e luci", "mappa cinematografica", "handout",
-  "audit mappe", "atlante mappe", "mappe definitive", "parity pass mappe",
-  "consolidamento mappe", "MAPPE-DEFINITIVO", "posizionamenti canonici",
-  or whenever creating/editing files matching *MAPPE*, *Ultra-Clear*, or
-  running scripts/render_map_svg.py, scripts/import_watabou.py,
-  scripts/compile_map_json.py, scripts/export_uvtt.py, scripts/validate_maps.py.
-  Covers the 3 map modes, the emoji-grid master format, the rigid JSON contract,
-  the universal legend, the parchment renderer, VTT export, and the optional
-  local ComfyUI "hero map" pass.
+  RumblingStone tactical map pipeline: create, edit, and render battle maps at
+  AP quality (Red Hand of Doom / Paizo benchmark). Use for "mappa", "battle
+  map", "griglia tattica", "battlemap", "render SVG", "nuova mappa", "import
+  watabou", "hero map", "mappa regionale", "mappa città", "mappa esercito",
+  "assedio", "accampamento", "coordinate", "JSON mappa", "contratto JSON",
+  "compile_map_json", "export UVTT", "uvtt", "dd2vtt", "Foundry", "Roll20",
+  "muri e luci", "mappa cinematografica", "handout", "audit mappe", "atlante
+  mappe", "mappe definitive", "parity pass mappe", "consolidamento mappe",
+  "MAPPE-DEFINITIVO", "posizionamenti canonici", files *MAPPE* or
+  *Ultra-Clear*, and render_map_svg, import_watabou, compile_map_json,
+  export_uvtt, validate_maps. Covers the 3 map modes, the emoji-grid master,
+  the JSON contract, the legend, the parchment renderer, VTT export and the
+  optional ComfyUI hero map.
 ---
 
 # RumblingStone — Mapmaking Pipeline
@@ -55,6 +53,24 @@ are **generated artifacts — never hand-edit them**. CI
    be rendered. The in-fence `LEGENDA · 🧲 descrizione · …` line is parsed
    automatically: local symbols get their real description in the SVG legend
    (universal SYMBOLS keep their canonical text).
+7. **A map inside a booklet either fits a column or gets an A4 page**
+   (DM, 2026-09-25). A column holds 48 cells, an A4 one-column page 110
+   (an emoji counts 2.5). Put map sections in an appendix between
+   `<!-- pagina: una-colonna -->` and `<!-- /pagina -->`; keep every grid
+   line, side annotation and `LEGENDA` line within 110 cells so it prints at
+   full 9 pt. The typst exporter enforces the column/A4 split on its own
+   (`rumblingstone-editoria` §4, point 4), but a 180-cell legend line still
+   shrinks the whole map: shorten the annotation, never the grid.
+8. **Hero map from a service (Canva AI), until the local ComfyUI pass is
+   tested** (DM, 2026-09-25). Canva AI paints **only** the player-facing hero
+   map. The prompt is written **from the map's JSON** (the Mode 3 contract, or
+   the UVTT export for an emoji master): size ratio, terrain, rooms, doors and
+   accesses in words, north up. The tactical truth stays the grid master, its
+   JSON, the SVG, `validate_maps` and the UVTT. A hero map that moves a door, a
+   room or an access against the SVG is **discarded**, not kept because it
+   looks good. **No AI generator draws the grid**: if the table needs one, it
+   is laid over from the SVG. Procedure: `references/hero-map-comfyui.md`,
+   «Finché ComfyUI non è collaudato».
 
 ## Domain → File
 
@@ -112,7 +128,7 @@ tempi».
 | Full workflow: new map, edit, render, validate, dungeon import, overland/city | `references/workflow-mappe.md` |
 | Universal legend: every terrain/unit/prop symbol with meaning | `references/legenda-universale.md` |
 | Direzione artistica handout/splash (convenzioni + confini IP) | `references/stile-illustrazione-handout.md` |
-| Optional local "hero map" painterly pass (ComfyUI + ControlNet + MCP) | `references/hero-map-comfyui.md` |
+| Optional local "hero map" painterly pass (ComfyUI + ControlNet + MCP), and the Canva AI hero map until ComfyUI is tested | `references/hero-map-comfyui.md` |
 
 ## Quick commands
 

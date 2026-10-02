@@ -1,5 +1,19 @@
 # Complex Quest Architecture — BG1/BG2 Patterns
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- 1. The Stage Rule — each stage changes the question
+- 2. The Mirrored Factions pattern
+- 3. Quests within quests
+- 4. Personal quests (the stronghold pattern)
+- 5. The villain's personal claim
+- 6. The rival party
+- 6-bis. The set-piece arc (Palio pattern — worked exemplar in repo)
+- 7. Side-quest discipline
+- 8. Generation checklist
+<!-- /indice -->
+
 Principle (pillar 8): a quest is a **dramatic machine with stages**, not
 a checklist. These patterns extend the quest-tree format of
 `rumblingstone-campaign/references/dm-expansion-toolkit.md` PART 2 —

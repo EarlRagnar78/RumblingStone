@@ -86,8 +86,8 @@ Obiettivo: ridurre o distruggere la “fabbrica” di non morti dell’Orda.
 > entra la luce gialla del Thornwaste, e in quella luce galleggiano — lenti,
 > immensi — due, tre **leoni fatti di nebbia argentea**, che vi girano intorno
 > senza fretta né fame. Sul trono di ossa fossili, una figura avvolta in cuoio
-> secolare non si alza. "Ottocento anni," dice, e la voce è quella di qualcuno che
-> ha dimenticato come si urla. "In ottocento anni siete i primi a **entrare** invece
+> secolare non si alza. "Mille anni," dice, e la voce è quella di qualcuno che
+> ha dimenticato come si urla. "In mille anni siete i primi a **entrare** invece
 > di **mandare** qualcuno a morire. Ditemi perché non dovrei rimandarvi indietro
 > come li ho rimandati tutti."*
 

@@ -1,5 +1,16 @@
 # Converting Between D&D 3.5 and Pathfinder 1e
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- PF1e monster → 3.5 table (checklist)
+- 3.5 monster → PF1e (rarely needed here)
+- XP, wealth, and progression — never mix
+- Spell compatibility
+- PF1e spells for `--piu-cattivi` — what actually gets you more, and what doesn't
+- PF1e spell lists — the anchor for `--incantesimi pf1e`
+<!-- /indice -->
+
 Source: Paizo's official *Pathfinder RPG Conversion Guide* (free PDF,
 paizo.com) summarizes 3.5→PF1e; this file covers both directions for the
 needs of a 3.5 campaign that borrows PF1e material.

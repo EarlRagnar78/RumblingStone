@@ -1,0 +1,94 @@
+{
+  "brand": "RUMBLING STONE · ARC-07 · IL PORTALE DELLA FORGIA ETERNA",
+  "title": "Il Cuore e la Porta",
+  "subtitle": "Le pagine da consegnare: echi, preghiera, doni, Hella tornata, Durik, le Cronache",
+  "banner": "HANDOUT GIOCATORI",
+  "meta": "Da stampare e tagliare. Ogni pagina si consegna quando lo dice la regia del DM: non tutte insieme, non prima",
+  "header": "Le pagine ✉ della serata. Il DM le consegna una alla volta.",
+  "footer": "Il Cuore e la Porta",
+  "player_footer": "Il Cuore e la Porta",
+  "colophon": {
+    "edizione": "Volume dei giocatori",
+    "versione": "v1",
+    "data": "2026-09-25",
+    "autori": "Il DM di RumblingStone, con l'agente di scrittura del repo",
+    "basato_su": "D&D 3.5 SRD (OGL 1.0a); adattamento privato di Red Hand of Doom (Wizards of the Coast, 2006)",
+    "licenza": "materiale del tavolo, da consegnare ai giocatori quando lo dice la regia"
+  },
+  "front_matter": false,
+  "cover_image": "../../Immagini/web/Sala Forgia Eterna - Camera Ottagono con 8 Affreschi Divini (Parte 2).jpg",
+  "out": "ARC07-SERATA-GIOCATORI.html",
+  "chapters": [
+    {
+      "title": "✉ Echi — Thorik",
+      "file": "03-ECHI-THORIK.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ Echi — Tordek",
+      "file": "04-ECHI-TORDEK.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ Echi — Artemis",
+      "file": "05-ECHI-ARTEMIS.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ Echi — Hella",
+      "file": "06-ECHI-HELLA.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ Il Cuore di Moradin",
+      "file": "11-TAVOLA-CUORE-DI-MORADIN.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ La preghiera della resurrezione",
+      "file": "10-HANDOUT-PREGHIERA.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ La carta del Dono — Thorik",
+      "file": "07a-CARTA-DONO-THORIK.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ La carta del Dono — Tordek",
+      "file": "07b-CARTA-DONO-TORDEK.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ La carta del Dono — Artemis",
+      "file": "07c-CARTA-DONO-ARTEMIS.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ Hella, tornata",
+      "file": "09-SCHEDA-HELLA-RISORTA.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ Durik, il guardiano di pietra",
+      "file": "08-SCHEDA-DURIK.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ Le Cronache dei Quattro Eroi",
+      "file": "../HANDOUT-1-cronache-quattro-eroi.hb.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ Il piano di battaglia di Re Thorek I",
+      "file": "../volume-mille-anni/03-HANDOUT-PIANO-DI-BATTAGLIA.md",
+      "tag": "player"
+    },
+    {
+      "title": "✉ Il banco della fucina",
+      "file": "../volume-mille-anni/04-HANDOUT-BANCO-DI-GUNNVOR.md",
+      "tag": "player"
+    }
+  ],
+  "fregio": "../../../docs/assets/fregi/fregio-arco-07-forgia.svg"
+}

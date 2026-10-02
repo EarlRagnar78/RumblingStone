@@ -1,8 +1,7 @@
 # Regia del Ritorno — La Sala della Forgia Eterna
 
 > **Cos'è questa pagina.** Il piano del beat, in ordine di gioco, coi puntatori
-> esatti al master (`ARC07-DEF-2-RITORNO-E-AFFRESCHI.md`, capitolo II di questo
-> booklet). **Zero numeri nuovi**: ogni CD e PX vive nel master. Stampa la
+> esatti al master, il capitolo II di questo booklet. **Zero numeri nuovi**: ogni CD e PX vive nel master. Stampa la
 > **Quick-Reference §0-bis** del master — c'è dentro il registro dei riposi.
 
 ## 0. Che tipo di serata è questa
@@ -96,7 +95,7 @@ sacrificabile.
    prima volta da quando è morta. Niente tiri, niente CD: è il ponte diretto
    alla resurrezione. **Non spiegare nulla, chiudi ogni scena e passa oltre.**
 
-9. **Ponte al master #3.** Resta un solo atto prima di lasciare la Forgia:
+9. **Ponte verso la resurrezione di Hella.** Resta un solo atto prima di lasciare la Forgia:
    **riportare indietro Hella**. Il corpo è pronto davanti all'Altare, il Cuore
    di Moradin attende di essere speso, e ogni PG dovrà **volerlo e donare
    qualcosa**.
@@ -137,8 +136,8 @@ prendere**. Non spingerli verso la Sala perché «costa meno».
 - **A6 non mostra nessuna tentazione divina ad Artemis.** I poteri «Luce di
   Lathander / Ombra di Mask» li ha **dall'Anello** (riforgiato alla Forgia),
   non da un dono. Quella visione non è mai stata giocata.
-- **La resurrezione NON è qui**: Altare, Cuore di Moradin e rito sono il
-  master #3. Questo beat prepara il cuore, non lo esegue.
+- **La resurrezione NON è qui**: Altare, Cuore di Moradin e rito sono
+  la resurrezione di Hella (`DEF-3`). Questo beat prepara il cuore, non lo esegue.
 - **Nessun nemico, nessun tiro d'iniziativa.** Se il tavolo cerca lo scontro,
   la risposta è che la Forgia non ne offre: è l'unico posto dell'arco dove si
   può respirare, e vale la pena difenderlo come tale.

@@ -1,0 +1,216 @@
+{
+  "_leggimi": "Profili e residui di scripts/copertura_scene.py (ADR-0073). Un residuo è un rilievo noto, con la ragione; se smette di verificarsi il cancello chiede di toglierlo.",
+  "moduli": [
+    {
+      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+      "perche": "contratto applicato il 2026-09-30 (PIANO-LETTORE-E-PLAYTESTER F4): dieci scene, conversione di sola forma di un master già giocato",
+      "regole": [
+        "C1",
+        "C2"
+      ],
+      "contratto": true
+    },
+    {
+      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+      "perche": "contratto applicato il 2026-09-30 (PIANO-LETTORE-E-PLAYTESTER F4): cinque scene, conversione di sola forma di un master già giocato. Il §7 (le Benedizioni) è una tabella di consultazione, non una scena: la preghiera si fa nella Sala",
+      "regole": [
+        "C1",
+        "C2"
+      ],
+      "contratto": true
+    },
+    {
+      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+      "perche": "contratto applicato il 2026-09-30 (PIANO-LETTORE-E-PLAYTESTER F4): otto scene, conversione di sola forma di un master già giocato. Il §2-bis e il §8-bis sono intermezzi e restano fuori dalle scene: il primo lo dice il modulo («non è una scena»), il secondo è gioco di ruolo libero per scelta, senza nulla da leggere",
+      "regole": [
+        "C1",
+        "C2"
+      ],
+      "contratto": true
+    },
+    {
+      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+      "perche": "contratto applicato il 2026-09-26 (PIANO-LETTORE-E-PLAYTESTER F3): tutte e tredici le scene",
+      "regole": [
+        "C1",
+        "C2"
+      ],
+      "contratto": true
+    },
+    {
+      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+      "perche": "contratto applicato il 2026-09-30 (PIANO-LETTORE-E-PLAYTESTER F4): tre scene",
+      "regole": [
+        "C1",
+        "C2"
+      ],
+      "contratto": true
+    },
+    {
+      "file": "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+      "perche": "stand-alone con struttura sua (ADR-0017): il cast sta nel foglio del cast, e il contratto entra nel lotto F5",
+      "regole": [
+        "C1",
+        "C2"
+      ],
+      "contratto": false,
+      "scena": "^## §[1-9]",
+      "escludi": "(?i)chiusura|contingenze",
+      "schede_in": [
+        "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md"
+      ],
+      "cast": true
+    },
+    {
+      "file": "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+      "perche": "stand-alone con struttura sua (ADR-0017): il cast sta nel foglio del cast, e il contratto entra nel lotto F5",
+      "regole": [
+        "C1",
+        "C2"
+      ],
+      "contratto": false,
+      "scena": "^## §[1-9]",
+      "escludi": "(?i)chiusura|contingenze",
+      "schede_in": [
+        "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md"
+      ],
+      "cast": true
+    },
+    {
+      "file": "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+      "perche": "stand-alone con struttura sua (ADR-0017): il cast sta nel foglio del cast, e il contratto entra nel lotto F5",
+      "regole": [
+        "C1",
+        "C2"
+      ],
+      "contratto": false,
+      "scena": "^## §[1-9]",
+      "escludi": "(?i)chiusura|contingenze",
+      "schede_in": [
+        "STANDALONE-Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md"
+      ],
+      "cast": true
+    },
+    {
+      "file": "10-stand-alone/L'abbazia Della Rotta Sicura/abbazia_rotta_sicura.md",
+      "perche": "stand-alone con struttura sua (ADR-0017): il cast sta nel foglio del cast, e il contratto entra nel lotto F5",
+      "regole": [
+        "C1",
+        "C2"
+      ],
+      "contratto": false,
+      "scena": "^## Atto",
+      "cast": true,
+      "schede_in": [
+        "10-stand-alone/L'abbazia Della Rotta Sicura/abbazia_rotta_sicura.md"
+      ]
+    }
+  ],
+  "residui": [
+    {
+      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+      "regola": "C2",
+      "scena": "SCENA 1",
+      "voce": "MORADIN",
+      "perche": "è il dio che parla attraverso la Corona e Aegis Fang: una voce, non una persona da descrivere; la sua riga sta fra le Comparse della scena"
+    },
+    {
+      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+      "regola": "C2",
+      "scena": "SCENA 7",
+      "voce": "I BRACIERI",
+      "perche": "artefatti che parlano: la voce sta nelle loro pagine in PG/Artefatti, e la riga fra le Comparse della scena"
+    },
+    {
+      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+      "regola": "C3",
+      "scena": "SCENA 7",
+      "voce": "Dove: l'anticamera — nessun box con quel luogo nell'etichetta",
+      "perche": "il box dell'isolamento c'è e porta il luogo nell'etichetta, ma apre con i nomi dei PG in grassetto (`> **THORIK** — …`) e il rilevatore non lo riconosce come box: è il difetto noto del rilevatore dei box in STATO §0; non si riscrive la forma di un box già letto al tavolo"
+    },
+    {
+      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+      "regola": "C2",
+      "scena": "SCENA 9",
+      "voce": "MORADIN",
+      "perche": "è il dio che parla attraverso il rito: una voce, non una persona da descrivere; la sua riga sta fra le Comparse della Scena 1"
+    },
+    {
+      "file": "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+      "regola": "C1",
+      "scena": "§2 · Il rione al mattino — sei micro-scene",
+      "voce": "nessun box read-aloud",
+      "perche": "🔴 lacuna vera: la scena è scritta come prosa per il DM, senza niente da leggere al tavolo (ADR-0014). Lotto degli stand-alone (PIANO-LETTORE-E-PLAYTESTER F5)"
+    },
+    {
+      "file": "STANDALONE-Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md",
+      "regola": "C1",
+      "scena": "§6 · Sera — la rissa alla fontana",
+      "voce": "nessun box read-aloud",
+      "perche": "🔴 lacuna vera: la scena è scritta come prosa per il DM, senza niente da leggere al tavolo (ADR-0014). Lotto degli stand-alone (PIANO-LETTORE-E-PLAYTESTER F5)"
+    },
+    {
+      "file": "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+      "regola": "C1",
+      "scena": "§1 · Mattino — le prove in pista",
+      "voce": "nessun box read-aloud",
+      "perche": "🔴 lacuna vera: la scena è scritta come prosa per il DM, senza niente da leggere al tavolo (ADR-0014). Lotto degli stand-alone (PIANO-LETTORE-E-PLAYTESTER F5)"
+    },
+    {
+      "file": "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+      "regola": "C1",
+      "scena": "§3 · Il duello dei canti",
+      "voce": "nessun box read-aloud",
+      "perche": "🔴 lacuna vera: la scena è scritta come prosa per il DM, senza niente da leggere al tavolo (ADR-0014). Lotto degli stand-alone (PIANO-LETTORE-E-PLAYTESTER F5)"
+    },
+    {
+      "file": "STANDALONE-Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md",
+      "regola": "C1",
+      "scena": "§5 · L'uomo con la fascia grigia",
+      "voce": "nessun box read-aloud",
+      "perche": "🔴 lacuna vera: la scena è scritta come prosa per il DM, senza niente da leggere al tavolo (ADR-0014). Lotto degli stand-alone (PIANO-LETTORE-E-PLAYTESTER F5)"
+    },
+    {
+      "file": "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+      "regola": "C1",
+      "scena": "§2 · Il corteo e la sbandierata",
+      "voce": "nessun box read-aloud",
+      "perche": "🔴 lacuna vera: la scena è scritta come prosa per il DM, senza niente da leggere al tavolo (ADR-0014). Lotto degli stand-alone (PIANO-LETTORE-E-PLAYTESTER F5)"
+    },
+    {
+      "file": "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+      "regola": "C1",
+      "scena": "§3 · L'ultima offerta",
+      "voce": "nessun box read-aloud",
+      "perche": "🔴 lacuna vera: la scena è scritta come prosa per il DM, senza niente da leggere al tavolo (ADR-0014). Lotto degli stand-alone (PIANO-LETTORE-E-PLAYTESTER F5)"
+    },
+    {
+      "file": "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+      "regola": "C1",
+      "scena": "§5 · La Corsa — la regia dei tre giri",
+      "voce": "nessun box read-aloud",
+      "perche": "🔴 lacuna vera: la scena è scritta come prosa per il DM, senza niente da leggere al tavolo (ADR-0014). Lotto degli stand-alone (PIANO-LETTORE-E-PLAYTESTER F5)"
+    },
+    {
+      "file": "STANDALONE-Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md",
+      "regola": "C1",
+      "scena": "§8 · Il Drappo di Lino Rasca",
+      "voce": "nessun box read-aloud",
+      "perche": "🔴 lacuna vera: la scena è scritta come prosa per il DM, senza niente da leggere al tavolo (ADR-0014). Lotto degli stand-alone (PIANO-LETTORE-E-PLAYTESTER F5)"
+    },
+    {
+      "file": "10-stand-alone/L'abbazia Della Rotta Sicura/abbazia_rotta_sicura.md",
+      "regola": "C1",
+      "scena": "Atto II — L'abbazia di giorno",
+      "voce": "nessun box read-aloud",
+      "perche": "l'Atto II è una visita a stanze numerate, descritte nella Tavola II e nelle note: il box per stanza entra col lotto degli stand-alone (F5)"
+    },
+    {
+      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+      "regola": "C2",
+      "scena": "SCENA 3",
+      "voce": "AEGIS FANG",
+      "perche": "artefatto che parla: la voce sta nella sua pagina in PG/Artefatti, e la riga fra le Comparse della scena"
+    }
+  ]
+}

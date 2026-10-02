@@ -77,6 +77,12 @@ incontri ha**. Sa quante volte compare la stringa «EL», che è un'altra cosa.
 
 ## FASE 2 — Sviluppo
 
+⚠️ *(2026-09-27, ADR-0075)* La marcatura non riscrive prosa, quindi non segue
+il ciclo del master per intero. Due passi però la toccano: nei master col
+contratto l'`**EL**` sta dentro la scena, e dopo averlo aggiunto si rigenera
+l'apparato (`componenti.py --apparato`, passo 3); un master che F4 di
+PIANO-LETTORE sta convertendo si marca dopo, non prima.
+
 | | Lotto | Cosa |
 |---|---|---|
 | ⬜ | **M2.1** Marcare gli incontri dei **5 master DEF** | il campione più curato e più piccolo: si impara lì la forma, e `validate_modules` già li guarda |

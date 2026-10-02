@@ -154,7 +154,148 @@ Il Torneo è la scena di Tordek, ma gli altri PG hanno agganci propri. Stato att
 
 ---
 
-## 6. Checklist di sessione (DM)
+> **Recupero del 2026-09-24 (RIPRESA-PR 4j-1).** Le sezioni §6-§10 vengono dalla
+> prima stesura del Torneo, scritta a maggio sul ramo
+> `claude/review-tournament-integration-yYlwv` e mai arrivata su `main`: il file
+> di luglio l'ha rifatta da zero come indice, senza gli strumenti di regia. Il DM
+> ha scelto cosa recuperare. Tutto è adattato al canone di oggi: calendario del
+> Day 28-33, 150 lance che marciano da Hammerfist (D10), assedio a carte-crisi
+> (D13), **Karruk riservato a Rethmar**. `HOOKS-Tordek-DauthInvitation` §3.3
+> rimandava già al §7 di questo file per le regole del gruppo diviso: da oggi il
+> rimando torna a puntare a qualcosa.
+
+## 6. La griglia dei milestone
+
+I milestone sono **fissati sull'asse del tempo**, non sulle azioni dei PG: accadono
+comunque, anche se il party è altrove. Il DM li annuncia con l'ora del giorno e i
+giocatori decidono dove trovarsi. Fra un milestone e l'altro ci sono gli **slot
+liberi** per le sotto-quest di §5. Il Palio di Channathgate usa la stessa forma
+(P2D §4.1), e al suo §5 dice di aver preso da questo master il tracciatore delle
+Voci.
+
+| Quando | Milestone (accade comunque) | Aggancio PG |
+|---|---|---|
+| **Day 29, sera** | Presentazione dei concorrenti in piazza | Tordek davanti alla folla per la prima volta |
+| **Day 30, alba** | Cerimonia d'apertura. Un vecchio cantastorie canta di «un'arma caduta dal cielo»: è il primo seme della storia githyanki dell'Orbe (`...OTTO-PORTE-e-ORBE.md`). Nessuno sa ancora cosa voglia dire | Chi ha orecchio se lo ricorderà al Round 7 |
+| **Day 30, mattina** | Il Mercato Basso apre; il boschetto a ovest ingiallisce | Artemis, Atto 1 · Hella, Atto 1 |
+| **Day 30, mezzogiorno** | Preliminari: Round 1-3 di Tordek. Alla prima Porta, la Visione «Eco delle Fenditure» | PARTE1 |
+| **Day 30, tramonto** | **La cena delle fazioni** alla Lega Mercantile (§8) | Tutti e quattro, ospiti d'onore di Hammerfist |
+| **Day 30, notte** | I sogni (§9.1) | Thorik, Hella |
+| **Day 31, alba** | Iscrizione tardiva di «Kethran Mano di Pietra» (= Sethrax) | Indizi per tutta la giornata (PARTE2) |
+| **Day 31, mezzogiorno** | Semifinali: Round 4-5 | PARTE2 |
+| **Day 31, tramonto** | **Il Consiglio di crisi**: gli esploratori avvistano la Vanguard a un giorno dalla città | Thorik (`...SUBQUEST-Thorik.md` §4-bis) |
+| **Day 31, notte** | Agguato degli esploratori (§9.2); l'incursione di Thorik se ha scelto di salvare Velda | Chi è sveglio |
+| **Day 32, mattina alta** | Prima campana: la Vanguard alle mura | `...DAY3-CITY-SIEGE.md` |
+| **Day 32, mezzogiorno** | La finale: Tordek contro Rihan | PARTE3 |
+| **Day 32, pomeriggio** | Round 7 in arena, seconda campana alle mura: i due fronti insieme (§7) | Tutti |
+| **Day 32, notte** | La conta dei caduti; si decide dei prigionieri (Sethrax, i sabotatori) | `...CONSEGUENZE-ECHI-LUNGO-PERIODO.md` |
+| **Day 33, alba** | Parte il convoglio per Rethmar | Lance e mercenari, se ci sono |
+
+---
+
+## 7. Il gruppo diviso (regole di tavolo)
+
+Il Day 32 ha due fronti e il party quasi certamente si divide: Tordek (più
+chi lo segue) in arena, gli altri alle mura.
+
+- **Alterna scene di cinque minuti reali**, non round per round. Ogni scena si
+  chiude su un fronte in sospeso.
+- **Un fronte che va male mentre i PG sono altrove si vede.** Le conseguenze sono
+  narrate, e i PG devono accorgersene: nessun PNG muore fuori scena senza che il
+  tavolo lo sappia.
+- **Cambiare fronte costa.** In combattimento, due round di azioni (l'*Abundant
+  Step* di Tordek, le *Ali d'Ombra* di Artemis, una cavalcatura). Fuori dal
+  combattimento, una campana di `...DAY3-CITY-SIEGE.md` §3. Nessuno si teletrasporta
+  gratis.
+- **Calibrare per fronte** (APL 13 diviso):
+  - **Arena con uno o due PG**: Xal'thor completo, Sethrax in fuga, quattro schiavi
+    psionici. Vaereth entra solo se i PG in arena sono almeno due.
+  - **Mura con uno o due PG**: una carta per campana invece di due; le altre si
+    risolvono con la tabella di `...DAY3-CITY-SIEGE.md` §5.
+  - **Fronti riuniti** (se i PG si ricongiungono): difficoltà piena.
+
+---
+
+## 8. Le fazioni di Dauth e la cena del primo giorno
+
+**Day 30, tramonto, Salone della Lega Mercantile.** Tutti e quattro i PG sono
+invitati come ospiti d'onore di Hammerfist. È la prima scena politica del Torneo:
+le fazioni della città cercano di influenzare il Torneo e, soprattutto, di
+decidere chi pagherà la difesa se la Mano Rossa arriva. Pilastro guida **Game of
+Thrones** (la tavola come campo di battaglia), di supporto **Andor**.
+
+A capotavola siedono il **Sovrintendente di Dauth** e il **Magister Veylan**, che
+firmano gli inviti del Torneo (`Bestiario/png/Maewen/Maewen.md`). Ai lati:
+
+| Fazione | Chi parla | Crede che… | Vuole | Teme | Dei PG pensa |
+|---|---|---|---|---|---|
+| **Lega Mercantile** | Lord Dauthim «Mano-di-Carta» | una città viva di carovane, e le carovane non amano la paura | che il Torneo finisca in tempo, e che la difesa la paghi qualcun altro | il panico che ferma i commerci | clienti utili, da non lasciar parlare troppo |
+| **Casa Vargen** | Lord Vargen | la sua casa abbia difeso Dauth quando i nani di Hammerfist non c'erano | il comando delle mura, sotto la sua bandiera | diventare ospite in casa propria | nani utili, ma ospiti |
+| **Tempio di Tyr** | Alta Sacerdotessa Lyala Berthand | l'arena sia una barbarie che Dauth pagherà | chiudere l'arena al Day 32 e bandire le ultime Porte | l'Orbe | Tordek gioca con cose che non capisce |
+| **Volti Coperti** | Vashet, mediatore | la cellula del Mascherato si nasconda meglio dietro una gilda di mediatori | Artemis (`...SUBQUEST-Artemis.md`) | la guardia, e la luce | l'Anello di Artemis è una reliquia del loro dio |
+
+> 🔒 **Segreto del DM**: Lord Dauthim prende denaro dal **Conte Valerius**, che
+> vuole legalizzare i prestiti di guerra (clock in `campaign/state.md` §3). Non
+> emerge qui: si scopre nell'arco P3. Thorik può notarlo al Consiglio (§4-bis di
+> `...SUBQUEST-Thorik.md`).
+
+La cena non si vince. Si esce sapendo chi voterà cosa al Consiglio del giorno
+dopo, e Artemis esce con un invito dei Volti Coperti. Chi prova a saltarla perde
+la possibilità di influenzare la Decisione 1 del Consiglio.
+
+> I nomi di questa sezione (Dauthim, Vargen, Lyala Berthand, il cognome Sornvar di
+> Veylan) vengono dalla stesura di maggio; il DM li ha confermati il 2026-09-24.
+
+---
+
+## 9. Le notti
+
+### 9.1 La prima notte: due sogni
+
+Due PG sognano, ciascuno per conto suo e con un tono diverso:
+
+- **Thorik**: re Thorek, invecchiato, su un trono di ferro colato. *«Le
+  centocinquanta lance non sono un dono. Sono una prova.»*
+- **Hella**: una radice le cresce attraverso la mano e canta in una lingua che lei
+  non ricorda di aver imparato.
+
+⚠️ **Gli altri due sogni di maggio non si usano.** Quello di Tordek (un cavaliere
+githyanki che lo chiama «nipote») gli darebbe una discendenza che il canone non
+ha. Quello di Artemis farebbe un doppione del **Sogno della Doppia Maschera**
+(`HOOKS-Artemis-TorreInvisibile` §3.4), che è già suo.
+
+### 9.2 La seconda notte: l'agguato degli esploratori
+
+Un gruppetto di esploratori hobgoblin entra in città per piazzare **segnali
+fumogeni** che guideranno l'attacco dell'alba. Quattro
+`Bestiario/mostri/hobgoblin-regular-warrior4-cr3.md` e un
+`Bestiario/mostri/hobgoblin-sergente-cr5.md`: un incontro breve, per chi è sveglio.
+
+- **Sventato**: la prima ondata del Day 32 arriva alla cieca → **+1 al Fronte di
+  Dauth** (`...DAY3-CITY-SIEGE.md` §2).
+- **Ignorato o fallito**: la prima ondata sa dove colpire → **–1 al Fronte**.
+
+---
+
+## 10. Le scelte grigie del Torneo
+
+Per ogni momento, GRAY-A e GRAY-B sono entrambe ragionevoli; DARK si usa con
+cautela. Non si presenta mai una delle due come quella giusta: l'etica la
+decidono i giocatori.
+
+| Momento | GRAY-A | GRAY-B | DARK |
+|---|---|---|---|
+| Il sergente Verric (Thorik) | Denunciarlo: la legge regge, sua sorella muore | Coprirlo come doppio agente: Dauth è più forte, Thorik ha aggirato la legge nanica | Costringerlo a guidare un'incursione per salvarla |
+| La fonte del rito (Hella, se la variante è in gioco) | Toppi offre la vita, il bosco vive | Dodici esploratori prigionieri sull'altare | Nessuna fonte: il rito a metà, pagato col proprio corpo |
+| La Maschera (Artemis) | Il patto e il suo favore | Rifiutare e tenere la faccia | Uccidere l'emissario in pubblico |
+| La Porta 4 (Tordek) | Aprirla per salvare il pubblico | Rifiutarla, e accettare che qualcuno sugli spalti non si salvi | Aprirla per vincere, non per il pubblico |
+| Il comando delle mura (Consiglio) | Thorik comanda, Vargen umiliato | Vargen comanda, Thorik sotto di lui | La sacerdotessa comanda: morale alto, tattica scarsa |
+
+Il costo della Porta 4 sta in `...OTTO-PORTE-e-ORBE.md`, non qui.
+
+---
+
+## 11. Checklist di sessione (DM)
 
 - [ ] Tordek è arrivato entro il **Day 29**? (altrimenti squalifica, D12)
 - [ ] Messaggero per le **150 lance** partito in tempo? (SUBQUEST-Thorik)
@@ -163,4 +304,6 @@ Il Torneo è la scena di Tordek, ma gli altri PG hanno agganci propri. Stato att
 - [ ] Costi in **CON** delle Porte tracciati onestamente (no ability drain permanente)?
 - [ ] Al Giorno 3: fissato l'ordine Rihan → Round 7 reveal → Xal'thor → Vaereth?
 - [ ] Deciso e registrato l'**esito di Sethrax** (impatta P2A di Artemis)?
+- [ ] Giocati la **cena delle fazioni** (§8) e il **Consiglio di crisi**?
+- [ ] Deciso chi comanda le mura, e se l'arena resta aperta al Day 32?
 - [ ] Aggiornati gli **echi** in CONSEGUENZE-ECHI e i rinforzi in `campaign/state.md`?

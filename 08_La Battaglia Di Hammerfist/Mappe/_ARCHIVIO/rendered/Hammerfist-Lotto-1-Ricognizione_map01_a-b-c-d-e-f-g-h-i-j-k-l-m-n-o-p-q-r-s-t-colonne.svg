@@ -200,5 +200,5 @@
 <text x="73" y="3042" font-size="11" fill="#3b2e1e">🔴 — Nemico standard</text>
 <circle cx="55" cy="3060" r="7.5" fill="url(#g_1d6fd8)" stroke="#241c10" stroke-width="1.2"/>
 <text x="73" y="3064" font-size="11" fill="#3b2e1e">🔵 — PG / alleati</text>
-<text x="46" y="3096" font-size="9" font-style="italic" fill="#7a6a50">fonte: Hammerfist-Lotto-1-Ricognizione.md · SVG generato da scripts/render_map_svg.py (stile pergamena) — non modificare a mano</text>
+<!-- fonte: Hammerfist-Lotto-1-Ricognizione.md · SVG generato da scripts/render_map_svg.py (stile pergamena) · non modificare a mano -->
 </svg>

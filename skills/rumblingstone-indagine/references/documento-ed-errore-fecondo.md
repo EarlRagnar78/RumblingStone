@@ -1,5 +1,18 @@
 # Il documento e l'errore fecondo — il registro Eco del caso
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- 1. Le quattro operazioni
+- 2. Operazione 1 — il documento è l'indizio, e conta ciò che manca
+- 3. Operazione 2 — la comunità chiusa e il suo regolamento
+- 4. Operazione 3 — l'errore fecondo (il pezzo anti-binario)
+- 5. Dove appoggia: la rete ridondante, già scritta
+- 6. Operazione 4 — il dettaglio erudito che è anche il meccanismo
+- 7. La clausola di salvaguardia — dove Eco NON entra
+- 8. Rapporto con gli altri riferimenti
+<!-- /indice -->
+
 **Perché esiste questo file.** Il resto della skill dice **come si struttura un
 caso**: i nodi a tre strati, le sei porte, la rete ridondante, la
 ricomposizione. Restano fuori due mestieri che *Il nome della rosa* ha già

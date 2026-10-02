@@ -1,0 +1,59 @@
+VISTA DI CHI SCORRE — il testo intero non c'è, di proposito
+07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md · 6574 parole · circa 33 minuti per leggerlo tutto
+------------------------------------------------------------
+LA SERATA (primo paragrafo di «§0 — QUICKSTART DM»):
+  **Dove siete.** Avete vinto la battaglia antica (`DEF-4`). Sulla fronte di Thorik il **Rubino** si è acceso — «Cuore della Leggenda» — e la sua luce vi sta strappando via dal −1000. Ma non tornerete in un interludio tranquillo: il Rubino vi deposita **dove serve**, al **Cuore della Montagna**, la caverna sacra sotto Hammerfist, il **Giorno 3 dell'assedio del 1372** — nell'istante in cui le porte di mithral cedono e la fortezza sta per cadere.
+
+TITOLI:
+  ARC-07 · DEFINITIVO #5 — IL RITORNO A HAMMERFIST (la cucitura del Rubino)
+    Il Portale della Forgia Eterna — dal −1000 al Cuore della Montagna, Giorno 3 del 1372
+    INDICE DEL MODULO
+    §0 — QUICKSTART DM
+    §0-bis — QUICK-REFERENCE DM (una pagina)
+      Effetti immediati dell'Apparizione (§4, automatici, no TS per gli alleati)
+      Lo stato dell'ARC-07 in uscita (canone — `state.md §1/§6`)
+      In che stato consegni il party all'ARC-08 (per ramo)
+      🐾 Supporto Pathfinder 1e (dove il 3.5 è vago) — opzionale, dichiarato
+    §1 — HIGHLIGHT ASIMMETRICI PER PG (cosa riportate a casa)
+      🛡️ THORIK — la profezia chiusa (Casa di Davide lead)
+      🌙 HELLA — la casa che è natura (BG3 lead)
+      ⚒️ TORDEK — il pugno che ha imparato a trattenersi (Mercer support)
+      🔮 ARTEMIS — il predone che ha visto il futuro del suo nemico (Andor support)
+    §2 — LE DUE ZONE (Atlante)
+      ZONA 1 — Lo Strappo fra le Ere (il ritorno)
+      ZONA 2 — Il Cuore della Montagna (la caverna sacra sotto Hammerfist, 1372)
+    §3 — L'ACCENSIONE DEL RUBINO & IL RITORNO (la regia del salto)
+      SCENA 1 — Lo strappo fra le ere
+    §4 — LA MANIFESTAZIONE (l'arrivo che ribalta la disfatta) — il momento corale
+      SCENA 2 — L'apparizione
+    §5 — LA PULIZIA (opzionale) → PASSAGGIO ALL'ARC-08 `[FAST-PLAY / COMBATTIMENTO COMPLETO]`
+      SCENA 3 — La pulizia e il passaggio
+    §6 — CONTINGENZE & FALLIMENTO
+    §7 — ECHO LEDGER — CHIUSURA D'ARCO (tutti gli echi armati per ARC-08/09)
+    §8 — AVANZAMENTO (premio di completamento arco + ricchezza in uscita)
+      A. Budget PX
+      B. Tesoro pregenerato (in uscita — handoff agli audit a valle)
+    §9 — PONTE all'ARC-08 + HANDOUT & ASSET
+      Handout giocatore
+      Immagini (atlante C1 — momenti d'uso)
+      Musica
+      FILE-FONTE ASSORBITI DA QUESTO MASTER (→ `_ARCHIVIO/` a consolidamento chiuso)
+    MAPPE ASCII ULTRA-CLEAR (scala 1,5 m/quadretto; CM-1 è a 3 m, vedi sotto)
+      MAPPA CM-1 — IL CUORE DELLA MONTAGNA (arrivo & apparizione · Incontro 3B)
+      ⏫ EVENTO CLIMAX — L'APPARIZIONE (la sfera dorata)
+
+LE SCENE, la prima frase:
+  SCENA 1 — Lo strappo fra le ere
+      In scena — Dove: lo strappo — Chi: nessuno
+      Si legge subito dopo l'ultimo box di `DEF-4`, quello in cui la luce comincia a tirare: l'accensione del Rubino e la voce di Moradin stanno là, nelle tre battute della Scena 13.
+  SCENA 2 — L'apparizione
+      In scena — Dove: la caverna — Chi: Re Thorek · Madre Superiora Dana · i novanta nani · gli orchi
+      **Trigger:** fine del Round 2 dell'ultima resistenza; le porte di mithral cedono.
+  SCENA 3 — La pulizia e il passaggio
+      In scena — Dove: la caverna — Chi: Re Thorek · Madre Superiora Dana · gli orchi · Aegis Fang
+      - **🎚️ [FAST-PLAY]**: i PG + Treant + 90 nani potenziati travolgono gli orchi disorganizzati in **2 round** (massacro, zero perdite naniche — sono troppo potenziati dall'Apparizione).
+
+GRASSETTI (15 su 265): MASTER DEFINITIVO — beat HUB di CHIUSURA D'ARCO (la cucitura · transizione epica · Sostituisce e fonde · Incontro 3B · NON riscrive la battaglia · rimanda · Sistema: D&D 3.5 SRD · CD · 1,5 m/quadretto · scala 3 m · Stato al tavolo · subito dopo · ARC-08 · Canone in uscita · ;
+CD: 25, 25, 25, 15, 15, 15, 25, 18, 25
+------------------------------------------------------------
+DOMANDA: Da questa vista soltanto: (1) cosa succede stasera, in tre frasi; (2) chi si oppone ai PG e cosa vuole; (3) cosa devi preparare prima di sederti al tavolo; (4) l'elemento della vista che ti ha fatto rispondere. «Non lo so» e' una risposta lecita, e vale un rilievo sul master.

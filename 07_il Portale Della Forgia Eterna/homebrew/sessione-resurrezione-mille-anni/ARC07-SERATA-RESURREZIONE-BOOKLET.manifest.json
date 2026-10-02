@@ -1,0 +1,55 @@
+{
+  "brand": "RUMBLING STONE · ARC-07 · IL PORTALE DELLA FORGIA ETERNA",
+  "title": "La Resurrezione e i Mille Anni",
+  "subtitle": "Il risveglio nella Forgia · il rito del Cuore di Moradin · Hammerfist mille anni fa, fino all'alba",
+  "banner": "BOOKLET DI SESSIONE",
+  "meta": "Sessione lunga D&D 3.5 per 4 personaggi di 13° livello (Hella torna al rito) · Faerûn, Flamerule 1372 DR e ≈372 DR · Campagna privata RumblingStone · regia della serata, cast e voci, il ritorno, la resurrezione e il viaggio a mille anni fa in ordine di gioco. Le pagine ✉ sono nel volume dei giocatori",
+  "header": "La serata del 2026-09-25: la regia, la cassetta del DM, il ritorno, la resurrezione e il viaggio a mille anni fa, in ordine di gioco, con le loro appendici A4 di statistiche e mappe. Le pagine ✉ sono nel volume dei giocatori, e la regia dice quando consegnarle.",
+  "footer": "La Resurrezione e i Mille Anni",
+  "player_footer": "Il Cuore e la Porta",
+  "colophon": {
+    "edizione": "Booklet di sessione",
+    "versione": "v3",
+    "data": "2026-09-25",
+    "autori": "Il DM di RumblingStone, con l'agente di scrittura del repo",
+    "basato_su": "D&D 3.5 SRD (OGL 1.0a); adattamento privato di Red Hand of Doom (Wizards of the Coast, 2006)",
+    "licenza": "materiale del DM, uso privato del tavolo, non diffondere",
+    "nota": "v3: una pagina si stampa una volta. Le pagine ✉ sono solo nel volume dei giocatori"
+  },
+  "cover_image": "../../Immagini/web/ilCuoreDiMoradin.jpg",
+  "intro_md": "00-INTRO-DOVE-SIAMO.md",
+  "out": "ARC07-SERATA-RESURREZIONE-BOOKLET.html",
+  "chapters": [
+    {
+      "title": "I · Regia della serata",
+      "file": "01-REGIA-SERATA.md",
+      "tag": "dm"
+    },
+    {
+      "title": "II · La cassetta del DM: cast, pronuncia, read-aloud, suoni",
+      "file": "../../ARC07-CASSETTA-DEL-DM.md",
+      "tag": "dm"
+    },
+    {
+      "title": "III · Il Ritorno e gli Affreschi",
+      "file": "../../ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+      "tag": "dm"
+    },
+    {
+      "title": "IV · La Resurrezione di Hella",
+      "file": "../../ARC07-DEF-3-RESURREZIONE-HELLA.md",
+      "tag": "dm"
+    },
+    {
+      "title": "V · Il Viaggio a Mille Anni fa",
+      "file": "../../ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+      "tag": "dm"
+    },
+    {
+      "title": "VI · La Collana dei Semi Eterni",
+      "file": "../../../PG/Artefatti/Artefatti-Pg/Hella/01_Collana_dei_Semi_Eterni.md",
+      "tag": "dm"
+    }
+  ],
+  "fregio": "../../../docs/assets/fregi/fregio-arco-07-forgia.svg"
+}

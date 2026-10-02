@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Il corredo di una serata",
+  "description": "Tutto ciò che esce quando il DM dice «genera il booklet»: i volumi, le pagine da consegnare, gli echi per PG, le carte, gli handout, i prompt delle immagini col loro confronto. La norma è in skills/rumblingstone-automation/SKILL.md, «Il corredo della serata»; il controllo è scripts/validate_corredo.py. I percorsi sono relativi al file del corredo. Contratto versionato e solo additivo (PIANO-CICLO-DI-SESSIONE-E-MENU §5.0).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["versione", "serata", "titolo", "pg", "booklet_dm", "fogli_giocatori", "echi", "carte_e_handout", "immagini"],
+  "properties": {
+    "versione": {"type": "integer", "enum": [1], "description": "la versione del contratto"},
+    "serata": {"type": "string", "description": "la data della serata, AAAA-MM-GG, scritta e non dedotta"},
+    "titolo": {"type": "string"},
+    "arco": {"type": "string"},
+    "pg": {"type": "array", "description": "i PG al tavolo quella sera: ognuno ha i suoi echi"},
+    "booklet_dm": {"type": "string", "description": "il manifest del booklet del DM"},
+    "fogli_giocatori": {"type": "string", "description": "il manifest del volume dei fogli ✉ da consegnare: solo capitoli player"},
+    "approfondimento": {"type": "array", "description": "manifest dei volumi di approfondimento (facoltativi)"},
+    "echi": {"type": "object", "description": "PG → file dei suoi echi; ogni PG di «pg» ne ha uno"},
+    "carte_e_handout": {"type": "array", "description": "carte dei doni, schede, handout, tavole da consegnare: ognuno sta nel volume dei fogli"},
+    "immagini": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["prompt"],
+      "properties": {
+        "prompt": {"type": "array", "description": "i file dei prompt: ogni blocco img ha la sua immagine e la sua riga nel confronto immagine-scheda"},
+        "note": {"type": "string"}
+      }
+    },
+    "note": {"type": "string"}
+  }
+}

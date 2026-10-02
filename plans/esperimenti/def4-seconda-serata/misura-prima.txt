@@ -1,0 +1,8 @@
+righe 2571
+congegni attivi 22 / 23
+a zero ['ADR interni al documento']
+conteggi {"read-aloud narrativo": 34, "contingenze «se i PG…»": 13, "scalare lo scontro": 1, "spotlight per PG": 112, "tattiche round-per-round": 11, "vie non combattive": 3, "eco / conseguenze a distanza": 18, "orologio / countdown": 14, "prove grezze di caratteristica": 3, "nodo d'indizio": 4, "modi di fallimento dichiarati": 2, "ADR interni al documento": 0, "quarta colonna sensoriale": 5, "battute di dialogo": 149, "esiti etichettati": 3, "PILASTRO dichiarato (lead/support)": 29, "regia etichettata **Read-aloud (X)**": 26, "dialogo nella forma dichiarata": 5, "chiusura su decision point": 8, "regia di round (una battuta per attore)": 4, "[HDYWTDT] il finisher al giocatore": 8, "assorbi e rilancia (yes-and with teeth)": 6, "grigio politico": 5}
+box {'box': 31, 'oltre 12 righe': 0, 'con parentesi': 2, '>1 nome proprio': 2}
+p1 0 metrature 0
+scene 13
+developer [('D2', 'SCENA 2', 'luogo sorvegliato: nessuna risposta a «e se volano?»'), ('D2', 'SCENA 2', 'luogo sorvegliato: nessuna risposta a «e se sono invisibili?»'), ('D2', 'SCENA 7', 'luogo sorvegliato: nessuna risposta a «e se volano?»'), ('D1', 'SCENA 8', 'scontro con un nemico in volo: niente per chi resta a terra')]

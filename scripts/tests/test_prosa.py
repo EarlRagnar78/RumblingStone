@@ -134,6 +134,13 @@ class TestFilePerIGiocatori(unittest.TestCase):
                   "PALIO-STATBLOCCHI.md"):
             self.assertFalse(e_per_i_giocatori(Path(n)), n)
 
+    def test_il_registro_delle_conseguenze_e_del_dm_anche_con_echi_nel_nome(self):
+        # §10.2: il falso positivo del Torneo di Dauth. L'eco di Hella resta
+        # dei giocatori; il registro degli esiti no.
+        self.assertFalse(e_per_i_giocatori(
+            Path("Arco-Post-Hammerfist-P2B-Torneo-DAUTH-CONSEGUENZE-ECHI-LUNGO-PERIODO.md")))
+        self.assertTrue(e_per_i_giocatori(Path("05-ECHI-HELLA.md")))
+
     def test_in_un_file_dei_giocatori_conta_tutta_la_prosa(self):
         testo = "# Hint\n\nSenti il PESO. Poi senti il TUMP.\n"
         self.assertTrue(any("maiuscolo" in x for x in _f(testo, "02-HINT-X.md")))

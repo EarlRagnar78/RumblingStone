@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="versione-artefatto" content="aegis · S1 · r4 · 2026-09-25">
+    <title>Aegis Fang — Stadio 1 (risveglio pieno) (VERSIONE DM)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @page { size: A4; margin: 0.5in; }
+        body { font-family: 'Times New Roman', serif; font-size: 11pt; line-height: 1.4; color: #2c1810; margin: 0; padding: 20px; background: linear-gradient(135deg, #f8f6f0 0%, #ede8dc 100%); }
+        .header { text-align: center; border-bottom: 3px solid #b8860b; padding-bottom: 10px; margin-bottom: 20px; }
+        .class-title { font-size: 24pt; font-weight: bold; color: #4b5320; margin: 0; text-transform: uppercase; letter-spacing: 2px; }
+        .subtitle { font-size: 14pt; font-style: italic; color: #5d4e37; margin: 5px 0; }
+        .quote { font-style: italic; text-align: center; color: #5d4e37; font-size: 11pt; margin: 15px 0; padding: 10px; border-left: 3px solid #daa520; background: rgba(218, 165, 32, 0.1); }
+        .dwarven { font-family: 'Cinzel Decorative', cursive; font-size: 12pt; color: #8B4513; text-shadow: 0 0 2px #daa520; font-weight: bold; letter-spacing: 1px; text-align: center; margin-top: 5px; }
+        h2 { color: #4b5320; font-size: 14pt; font-weight: bold; border-bottom: 2px solid #daa520; padding-bottom: 3px; margin: 15px 0 10px 0; text-transform: uppercase; }
+        .power-block { background: rgba(255, 255, 255, 0.6); border: 1px solid #daa520; margin-bottom: 10px; padding: 10px; border-radius: 5px; }
+        .power-header { font-weight: bold; font-size: 12pt; color: #8B0000; border-bottom: 1px dashed #daa520; padding-bottom: 4px; margin-bottom: 8px; display: flex; justify-content: space-between; }
+        .mechanic { font-family: "Courier New", monospace; font-size: 9.5pt; color: #333; background: #e9e9e9; padding: 2px 4px; border-radius: 3px; border: 1px solid #ccc; margin-bottom: 5px; display: inline-block; }
+        .desc-text { padding-top: 5px; }
+        .requirements { background: rgba(139, 69, 19, 0.05); border: 2px solid #8B4513; padding: 10px; margin: 15px 0; border-radius: 5px; font-size: 10pt;}
+        ul { margin-top: 5px; margin-bottom: 5px; } li { margin-bottom: 4px; }
+        .spento { background: rgba(120, 120, 120, 0.12); border: 1px dashed #999; color: #555; }
+        .spento .power-header { color: #777; }
+        .dmbox { background: rgba(139,0,0,0.05); border: 2px solid #8B0000; padding: 12px; margin: 14px 0; border-radius: 5px; }
+        .dmbox h3 { color: #8B0000; font-size: 12.5pt; margin: 0 0 8px 0; text-transform: uppercase; letter-spacing: 1px; }
+        table.led { width: 100%; border-collapse: collapse; font-size: 9.5pt; margin: 8px 0; }
+        table.led th, table.led td { border: 1px solid #b8860b; padding: 4px 7px; text-align: left; }
+        table.led th { background: rgba(184,134,11,0.18); }
+            .attesa { border: 2px dashed #8B0000; background: rgba(139, 0, 0, 0.03); }
+        .conferma { font-family: "Courier New", monospace; font-size: 8.5pt; color: #8B0000; background: #f6e6e6; border: 1px solid #d9b0b0; padding: 1px 4px; border-radius: 3px; white-space: nowrap; }
+        @media print { .power-block, .requirements, .dmbox, table, .quote { break-inside: avoid; page-break-inside: avoid; } h2 { break-after: avoid; } }
+    </style>
+</head>
+<body>
+
+    <div class="quote" style="border-left-color:#8B0000;background:rgba(139,0,0,0.10);">
+        <strong>Copia DM &mdash; non darla al giocatore.</strong> La pagina da consegnare a Thorik è <em>01_Aegis_Fang_Stadio1.html</em>, <strong>dopo</strong> la scena del risveglio (Rituale 4, <em>ARC07-DEF-4</em> Scena 12, Momento 3). Non prima.
+    </div>
+
+    <div class="header">
+        <h1 class="class-title">Aegis Fang</h1>
+        <div class="subtitle">Stadio 1 — risveglio pieno</div>
+        <div class="dwarven">«Là dove cadrà questa lama, non germoglierà mai il Caos.»</div>
+    </div>
+
+    <div class="quote">
+        Nel cortile della Forgia, con l'Assedio appena vinto e la Corona finalmente sveglia, l'ascia si è scaldata nella tua mano e ha parlato senza che nessuno la interrogasse. Adesso non dorme più.
+    </div>
+
+    <div class="requirements">
+        <strong>Tipo:</strong> ascia da guerra nanica <strong>+4 Sacra Ritornante</strong> · 1d10 taglienti · 20/×3<br>
+        <strong>Allineamento:</strong> Legale Neutrale · <strong>Legata a:</strong> Thorik · <strong>Int 16 · Sag 17 · Car 18 · Ego 20</strong>
+    </div>
+
+    <h2>La lore dell'arma sacra</h2>
+    <div class="quote" style="text-align:left;">
+        Con l'Assedio della Forgia vinto e la Corona finalmente senziente, Aegis Fang raggiunge l'apogeo che aveva in sé da sempre. Non è più acciaio sacro lasciato nella polvere: è un reliquiario vivente, l'incubo di ogni infamia caotica, capace di aprirsi la strada in prima linea senza mai piegare l'identità di chi la porta. È l'arma della caccia perfetta.
+    </div>
+
+    <h2>L'arma</h2>
+
+    <div class="power-block">
+        <div class="power-header">Proprietà</div>
+        <div class="desc-text">
+            <strong>+4</strong> al tiro per colpire e ai danni (potenziamento).<br><strong>Sacra</strong> — <strong>+2d6 danni sacri</strong> contro le creature malvagie.<br><strong>Ritornante inesorabile</strong> — se la lanci, torna in mano all'inizio del tuo turno successivo. Non perde mai la strada, e nessuno riesce a portartela via con l'inganno.
+        </div>
+    </div>
+
+    <div class="power-block">
+        <div class="power-header">Taglio del Cacciatore <span>costante</span></div>
+        <div class="mechanic">Sacra estesa</div>
+        <div class="desc-text">
+            I <strong>+2d6 danni sacri</strong> valgono anche contro <strong>aberrazioni, non morti e draghi</strong>, malvagi o no.
+        </div>
+    </div>
+
+    <div class="power-block">
+        <div class="power-header">Condotto Divino di Moradin <span>1/giorno</span></div>
+        <div class="mechanic">Magico (Mag) | Azione standard | raggio 9 m | LI 15°</div>
+        <div class="desc-text">
+            Martelli il suolo con l'ascia e dallo schianto parte <em>Guarigione</em> (<em>Heal</em>) su <strong>tutti i nani alleati</strong> entro 9 m. Solo i nani, e tutti.
+        </div>
+    </div>
+
+    <div class="power-block">
+        <div class="power-header">Telepatia nanica e Presenza Impavida <span>sempre</span></div>
+        <div class="mechanic">Passivo</div>
+        <div class="desc-text">
+            <strong>Telepatia con tutti i nani entro 90 m</strong>: coordini un assalto senza dire una parola.<br>I <strong>nani entro 18 m</strong> da te sono <strong>immuni alla paura</strong>.
+        </div>
+    </div>
+
+    <div class="power-block">
+        <div class="power-header">Dragondoom <span>3/giorno</span></div>
+        <div class="mechanic">Azione veloce (parola di comando) | prima del tiro d'attacco</div>
+        <div class="desc-text">
+            Contro una creatura del tipo <strong>drago</strong> di taglia Grande o più dichiari la punizione: <strong>+1d6</strong> danni se Grande, <strong>+2d6</strong> Enorme, <strong>+3d6</strong> Mastodontica, <strong>+4d6</strong> Colossale. Se manchi, o il bersaglio non è un drago, l'uso è perso. Si somma al Taglio del Cacciatore.
+        </div>
+    </div>
+
+    <div class="power-block">
+        <div class="power-header">Quello che l'ascia aveva già <span>sempre</span></div>
+        <div class="desc-text">
+            <em>Cura ferite moderate</em> 3/giorno · <em>resistere all'energia</em> 1/giorno · parla, telepatia, scurovisione 18 m, udito. Il risveglio aggiunge: non toglie niente.
+        </div>
+    </div>
+
+    <h2>Chi c'è dentro</h2>
+
+    <div class="power-block">
+        <div class="power-header">Arma senziente <span>Ego 20</span></div>
+        <div class="mechanic">Int 16 · Sag 17 · Car 18</div>
+        <div class="desc-text">
+            Aegis Fang non si fa più interrogare: parla quando vuole. Serve il popolo nanico prima del portatore, e con Ego 20 un disaccordo grave con Thorik è una partita vera.
+        </div>
+    </div>
+
+    <div class="power-block">
+        <div class="power-header">☐ Quello che ha visto al rito di Hella</div>
+        <div class="desc-text">
+            ☐ <strong>Hai donato</strong> — «Ho visto. Non chiedo più.» Non tira l'opposizione contro di te per un arco intero.<br>☐ <strong>Hai rifiutato</strong> — «Ho visto anche cosa non hai dato.» Nelle scene che riguardano Hella, o dei nani da proteggere, si oppone invece di obbedire in silenzio, finché non rischierai qualcosa di tuo per lei.
+        </div>
+    </div>
+
+    <h2>Valore</h2>
+    <div class="requirements" style="font-size:10pt;">
+        <strong>Inestimabile, e non si vende</strong>: è legata alla Corona e fedele a Thorik. Per il bilancio di ricchezza della scheda: ascia da guerra nanica perfetta (330 mo) più un bonus equivalente <strong>+8</strong> (+4, Sacra, Ritornante, Dragondoom) = <strong>128.330 mo</strong>, a cui si aggiungono i poteri che la tabella non sa contare: il Condotto su tutti i nani, la telepatia, la presenza impavida, i poteri inferiori e la senzienza.
+    </div>
+
+    <h2>Quando gli artefatti si parlano</h2>
+    <div class="requirements" style="font-size:10pt;">
+        <strong>Con la Corona</strong>, la <strong>Risonanza</strong> resta: +2 sacro a tutti i TS, +1d6 danni sacri contro caotici o malvagi, e <em>Richiamo Ancestrale</em> 1/giorno.<br>
+        <strong>Con l'Anello</strong> di Artemis: il <strong>Colpo dell'Alba Oscura</strong>, 1/giorno, +2 e +2d6 sacri.<br>
+    </div>
+
+    <h2 style="color:#8B0000;border-bottom-color:#8B0000;">⚠️ Solo DM — da qui in poi</h2>
+
+    <div class="dmbox">
+        <h3>Da dove viene ogni riga</h3>
+        <table class="led">
+            <tr><th>Potere</th><th>Fonte</th></tr>
+            <tr><td>+4 Sacra Ritornante; Int 16, Sag 17, Car 18, Ego 20; Ritornante inesorabile; Taglio del Cacciatore; Condotto Divino; telepatia 90 m e immunità alla paura dei nani entro 18 m</td><td><em>05_Aegis_Fang_Final_Awakening.html</em>; i due PDF della Corona («+4 Ascia da Guerra Nanica Sacra Ritornante, +2d6 vs aberrazioni, non morti, draghi»); master <em>00_Aegis_Fang-MASTER-DM.md</em></td></tr>
+            <tr><td>Quando: al Rituale 4, come scena, con la prima frase detta dal giocatore <code>[HDYWTDT]</code></td><td><em>ARC07-DEF-4</em> Scena 12, Momento 3; il PDF del giocatore della Corona del 22/10/2025</td></tr>
+            <tr><td>Il giudizio sul Dono</td><td><em>ARC07-DEF-3</em> §5; <em>DEF-4</em> Scena 12</td></tr>
+        </table>
+        <p><strong>D15 · deciso dal DM il 2026-09-25: restano.</strong> La fonte dello stadio 1 non nomina né la <em>Dragondoom</em> né i poteri inferiori dello stadio 0, e il suo calcolo del valore si ferma all'equivalente +7 (98.000 mo). Uno stadio aggiunge e non toglie, come per la Corona, e la caccia ai draghi è il motore dell'ascia: con la Dragondoom l'equivalente è +8 (128.000 mo). Contro un drago si sommano Taglio del Cacciatore (+2d6 sacri, sempre) e Dragondoom (da +1d6 a +4d6 per taglia, 3/giorno); contro Fauci anche il bane di A7.</p>
+        <p><strong>L'aspetto.</strong> La fonte dello stadio 1 descrive «un'asta pervasa di rubini celestiali incassati»; la scheda originale dà l'asta di <strong>adamantio</strong> con diamanti, ametiste e smeraldi. La pagina del giocatore non descrive l'asta: se il risveglio cambia le gemme, è una scelta di scena.</p>
+        <p><strong>Il valore.</strong> 98.000 mo sono esatti per la tabella SRD (equivalente +7). Le «85.000 mo» in più della fonte sono una stima a parole: il conto voce per voce è nell'audit, §10.</p>
+        <p><strong>Ego 20.</strong> Allo stadio 0 era 14. Con 20 l'opposizione dell'ascia (oggetti intelligenti 3.5) diventa difficile da vincere per Thorik: il giudizio sul Dono pesa di più, non di meno.</p>
+        <p><strong>La Sacra e un'ascia Legale Neutrale.</strong> Per la SRD una qualità <em>sacra</em> rende l'arma di allineamento buono e dà un livello negativo a chi la impugna se è malvagio. Thorik non lo è, e l'allineamento dichiarato dell'ascia resta quello della scheda originale: nessuna fonte lo cambia.</p>
+    </div>
+
+    <div class="power-block" style="background: rgba(220, 220, 220, 0.4); border-color: #888;">
+        <div class="power-header" style="color:#666;font-size:11pt;">Registro (compila a penna)</div>
+        <div style="font-size:9.5pt;color:#444;">
+            Risveglio pieno il ______________ · prima frase dell'ascia (del giocatore): ______________________<br>
+            Dragondoom e poteri inferiori: restano (D15)
+        </div>
+    </div>
+
+
+    <p style="font-size:8.5pt;color:#777;text-align:right;margin-top:14px;">Versione aegis · S1 · r4 · 2026-09-25 · registro: <em>PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md</em> §0</p>
+</body>
+</html>

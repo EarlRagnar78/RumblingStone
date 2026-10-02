@@ -21,8 +21,9 @@ Cosa controlla, in ordine di quanto fa male se salta:
    inattive da una parte (avviso, non errore: `header` in stampa *deve* restare
    inattiva, perché lì la testatina segue il capitolo);
 5. **la stampa** (`--stampa`, richiede il binario `typst`) — compila ogni
-   manifest e verifica che il PDF esista, non sia un guscio vuoto e **abbia i
-   segnalibri**. È il gate che in CI trasforma «compilava sul portatile del DM»
+   manifest e verifica che il PDF esista, non sia un guscio vuoto, **abbia i
+   segnalibri** e non stampi **apparato di lavoro** oltre il tetto del volume
+   in `apparato-residui.json` (ADR-0070, con PyMuPDF). È il gate che in CI trasforma «compilava sul portatile del DM»
    in un fatto verificato.
 
 Uso:
@@ -178,6 +179,12 @@ def prova_stampa(mp: Path) -> list[str]:
         if man.get("front_matter", True) and b"/Outlines" not in dati:
             problemi.append(f"{rel}: PDF senza segnalibri — l'indice del volume è la "
                             f"ragione per cui esiste questa catena")
+        # L'apparato di lavoro stampato (ADR-0070): contro il tetto del volume.
+        # Senza PyMuPDF non si misura, e `main` lo dice una volta.
+        import validate_corredo as vc  # noqa: PLC0415 (importa questo modulo)
+        pagine = vc.testo_del_pdf(pdf)
+        if pagine is not None:
+            problemi += vc.controlla_apparato(mp, pagine)
         return problemi
     finally:
         if not cera_prima:
@@ -225,6 +232,11 @@ def main() -> int:
             saltata = ("il binario «typst» non è nel PATH: controllo di stampa SALTATO "
                        "(vedi docs/guides/GUIDA-BOOKLET-E-PDF.md §4)")
         elif not errori:
+            try:
+                import pymupdf  # noqa: F401, PLC0415
+            except ImportError:
+                saltata = ("PyMuPDF assente: l'apparato stampato NON è misurato "
+                           "(pip install -r requirements-dev.txt, ADR-0070)")
             for m in elenco:
                 errori += prova_stampa(m)
                 stampati += 1

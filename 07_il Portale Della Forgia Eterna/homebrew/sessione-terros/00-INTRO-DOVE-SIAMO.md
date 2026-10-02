@@ -18,7 +18,7 @@
 > al suo cuore, dorme il Guardiano.*
 
 **Questa è la sessione dello scontro con Terros l'Antico** — il culmine del
-Piano della Terra (master `ARC07-DEF-1-PIANO-TERRA-TERROS.md`, ARC-07 #1).
+Piano della Terra (`DEF-1`).
 
 **Stato al tavolo (aggiornato alla vigilia):**
 

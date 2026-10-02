@@ -1,5 +1,20 @@
 # Forgotten Realms — D&D 3.5 Lore Reference
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- The World of Faerûn
+- Major Regions of Faerûn
+- The Deities of Faerûn (Key Entries)
+- Races of Faerûn (FRCS + Races of Faerûn)
+- Organizations
+- The Weave and the Shadow Weave
+- Key Prestige Classes (FRCS / OGL)
+- Notable Locations
+- The Spellplague Warning (4e retcon — ignore for 3.5 play)
+- Calendar of Harptos (Faerûn)
+<!-- /indice -->
+
 Source: Forgotten Realms Campaign Setting 3.5 (FRCS, 2001), Player's Guide to Faerûn (2004),
 Faiths & Pantheons (2002), Races of Faerûn (2003), Unapproachable East (2003)
 Live lookup: https://forgottenrealms.fandom.com/wiki/

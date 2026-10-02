@@ -147,5 +147,81 @@ class TestRegistro(unittest.TestCase):
             self.assertIn(f"| {d.group()} |", piano, f"{d.group()} non e' aperta nel piano")
 
 
+
+def _repo_righe(radice: Path) -> None:
+    """main con `canone.md`; tre rami che toccano un file che main ha GIA'.
+
+    E' il caso che il controllo sui file non vede (RIPRESA-PR 4j-5): il ramo
+    Salvatore del 2026-09-24 correggeva tre righe di file esistenti.
+    """
+    _git(radice, "init", "-q", "-b", "main")
+    _git(radice, "config", "user.email", "t@t")
+    _git(radice, "config", "user.name", "t")
+    (radice / "canone.md").write_text(
+        "# Sal\nI punti ferita di Sal sono settantanove.\nLa pietra si scioglie col fuoco.\n",
+        encoding="utf-8")
+    _git(radice, "add", ".")
+    _git(radice, "commit", "-q", "-m", "base")
+    base = _git(radice, "rev-parse", "HEAD").strip()
+
+    def ramo(nome: str, riga: str) -> None:
+        _git(radice, "checkout", "-q", "-b", nome, base)
+        with (radice / "canone.md").open("a", encoding="utf-8") as f:
+            f.write(riga + "\n")
+        _git(radice, "commit", "-q", "-am", nome)
+        _git(radice, "update-ref", f"refs/remotes/origin/{nome}", "HEAD")
+
+    ramo("corregge", "La maledizione non cura la pietrificazione.")
+    ramo("arrivato", "Il sergente si chiama Verric.")
+    ramo("ritoccato", "Il mercante vende frutta secca al mercato basso.")
+    _git(radice, "checkout", "-q", "main")
+    with (radice / "canone.md").open("a", encoding="utf-8") as f:
+        f.write("Il sergente si chiama Verric.\n")
+        f.write("Il mercante vende frutta secca al mercato basso!\n")
+    _git(radice, "commit", "-q", "-am", "portato su main")
+    _git(radice, "update-ref", "refs/remotes/origin/main", "HEAD")
+
+
+class TestLeRigheNonIFile(unittest.TestCase):
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.radice = Path(self._tmp.name)
+        _repo_righe(self.radice)
+        self._patch = mock.patch.object(C, "ROOT", self.radice)
+        self._patch.start()
+        self.indice = C.indice_righe("origin/main")
+
+    def tearDown(self):
+        self._patch.stop()
+        self._tmp.cleanup()
+
+    def test_il_controllo_sui_file_non_vede_la_correzione(self):
+        """Il punto cieco, misurato: nessun file nuovo, quindi niente da dire."""
+        self.assertEqual(C.mai_arrivati("origin/main", ["origin/corregge"]), {})
+
+    def test_le_righe_la_vedono(self):
+        e = C.righe_mai_arrivate("origin/corregge", "origin/main", self.indice)
+        self.assertEqual(len(e["mancanti"]), 1)
+        self.assertIn("pietrificazione", e["mancanti"][0]["riga"])
+
+    def test_una_riga_gia_su_main_non_manca(self):
+        e = C.righe_mai_arrivate("origin/arrivato", "origin/main", self.indice)
+        self.assertEqual((e["identiche"], e["mancanti"]), (1, []))
+
+    def test_una_riga_ritoccata_e_quasi_non_mancante(self):
+        e = C.righe_mai_arrivate("origin/ritoccato", "origin/main", self.indice)
+        self.assertEqual((e["quasi"], e["mancanti"]), (1, []))
+
+    def test_l_uscita_e_rossa_solo_se_qualcosa_manca(self):
+        with mock.patch("sys.stdout"):
+            self.assertEqual(C.main(["--righe", "corregge"]), 1)
+            self.assertEqual(C.main(["--righe", "arrivato", "ritoccato"]), 0)
+
+    def test_un_ramo_che_non_esiste_e_un_errore_d_uso(self):
+        """Un nome sbagliato non e' un ramo verde, e nemmeno un traceback."""
+        with mock.patch("sys.stdout"), mock.patch("sys.stderr"):
+            self.assertEqual(C.main(["--righe", "non-esiste"]), 2)
+
+
 if __name__ == "__main__":
     unittest.main()

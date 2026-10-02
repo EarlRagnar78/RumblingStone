@@ -91,9 +91,9 @@ giocatori possono usarlo a loro favore tirando per le lunghe.
 
 Il Capitano dei PG (Vanna) è dentro; gli altri cinque sono fuori — e **fuori
 succedono cose adesso, non dopo**: il duello dei canti del §3 comincia **in
-parallelo**, nelle osterie, mentre la trattativa è in corso. *(Playtest alfa, serata
+parallelo**, nelle osterie, mentre la trattativa è in corso.<!-- storico --> *(Playtest alfa, serata
 2: con i Partiti giocati in blocco, cinque giocatori sono rimasti fuori scena per
-settantadue minuti.)*
+settantadue minuti.)*<!-- /storico -->
 
 > ⚠️ Se il tavolo ha sei giocatori e ne isoli uno per un'ora, hai perso la serata.
 > Taglia ogni cinque minuti: dentro / fuori / dentro. Tesio può ascoltare da fuori

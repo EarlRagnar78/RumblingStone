@@ -146,7 +146,7 @@ sale da **+1d6 a +2d6** al primo attacco/round della Fase 3 (canone).
 ### 2.3 ATTO 3 — La scelta della Maschera (entro Day 31 sera)
 
 Artemis ha ora **due voci**: il banco che offre potere con un debito, la cieca che
-avverte del prezzo. La scelta è sua. Quattro rami.
+avverte del prezzo. La scelta è sua. Cinque rami.
 
 #### Ramo GRAY-A — *Indossa la Maschera e accetta il debito*
 Artemis mette la Maschera di Beriah una volta.
@@ -166,6 +166,22 @@ Artemis mette la Maschera di Beriah una volta.
   aggancio all'EVENT-DECK C7 e a `HOOKS-Artemis` §3.4 variante maschera).
 - **Costo tematico**: Artemis, che aveva tenuto la **propria faccia** rifiutando le
   divinità, ora ne porta una prestata. Zalkatar, nel finale, lo noterà.
+- **Il favore, quando lo riscuotono** `[recupero della stesura di maggio, RIPRESA-PR
+  4j-1; confermato dal DM il 2026-09-24]`: la cellula non lo dice alla firma. Lo
+  dice quando Artemis è sulla strada della Torre, con un biglietto o una voce nel
+  sonno. Nella **Alcova del Libro della Verità Nascosta** (Torre, Livello 2,
+  `...P2A-Torre-PARTE2-Livelli2-3.md` §6) c'è un grimorio che un fratello della
+  cellula mandò a Zalkatar quasi un secolo fa, quando Zalkatar era ancora un
+  chierico del Mascherato. La cellula lo rivuole. Artemis deve portarlo fuori e
+  lasciarlo in un punto che gli diranno. Il libro serve anche ad aprire la salita al
+  Livello 3: prima si usa, poi si consegna, o no.
+  - Con Sapienza Religiosa **CD 26**, prima di consegnarlo, Artemis capisce che il
+    grimorio è un'**arma rituale**: permette un rito di trasformazione, e la cellula
+    lo vuole per farlo su qualcuno. Su chi, non lo sa ancora nessuno.
+  - **Consegnato**: il debito è pagato, e a Rethmar la cellula esegue il rito su un
+    nobile (la wildcard di §5 prende questa forma).
+  - **Tenuto**: il debito resta aperto e diventa ostilità. Dopo la Torre la cellula
+    manda i suoi a riprenderselo.
 
 #### Ramo GRAY-B — *Rifiuta con cortesia, tieni la faccia*
 Artemis restituisce la scatola. Vashet non insiste (*"Il Signore aspetta. Sempre."*).
@@ -210,6 +226,28 @@ Vashet, o forza il retrobottega.
   suoi siano stati massacrati senza il suo assenso → nel Sogno della Torre la voce di
   Mask è **più fredda** (nessun bonus dalla variante maschera).
 
+#### Ramo DARK-B — *Uccidere l'emissario in pubblico* `[recupero della stesura di maggio, RIPRESA-PR 4j-1]`
+Diverso dal ramo DARK: niente retrobottega, niente cellula spenta. Artemis colpisce
+Vashet **davanti a tutti**, di solito alla cena delle fazioni
+(`...DM-MASTER-REFERENCE.md` §8), dove Vashet siede per i Volti Coperti. Vashet non
+si difende davvero: tenta la fuga con una pergamena di *santuario* e cade in due
+round se Artemis lo insegue.
+
+- **Beneficio immediato**: nessuno. Vashet portava tutto in testa, niente per
+  iscritto.
+- **Costo immediato**: la Lega Mercantile e il Tempio di Tyr hanno visto. Artemis è
+  **espulso da Dauth** entro dodici ore, e deve uscire prima dell'alba del Day 31. Può
+  rientrare solo il Day 32, sotto copertura, per l'assedio.
+- **Eco**: la cellula del Mascherato giura vendetta personale. Entro trenta giorni
+  manda **tre sicari** (Ladro 10 / Assassino 5 `[INFERRED — statblock da scrivere se
+  il ramo si gioca]`), non con un attacco eroico: un agguato silenzioso, di solito
+  durante un riposo lungo. Il Conte Valerius usa l'episodio per accusare i Custodi di
+  violenza politica: **+1** al suo clock (`campaign/state.md` §3). Nel Sogno della
+  Torre la voce di Mask non c'è proprio.
+- **Il rovescio**: dentro il culto non tutti erano d'accordo con la cellula di
+  Dauth. Dopo la campagna, un Mascherato dissidente può cercare Artemis come «il
+  warlock che li ha sfidati».
+
 ---
 
 ## 3. Tabella dei rami (colpo d'occhio)
@@ -220,6 +258,7 @@ Vashet, o forza il retrobottega.
 | **GRAY-B** (rifiuta) | Tiene la faccia | Nessuno meccanico; integrità tematica | Cellula neutra; possibile favore-informazione |
 | **GRAY-C** (prende, non impegna) | Sospende la scelta | Differito | **Maschera rotta senza eco** nel Sogno Torre; cellula disattivata |
 | **DARK** (smaschera) | Distrugge la cellula (EL 12) | Loot dei ladri; chiude la minaccia | –2 reputazione; Mask freddo (no bonus variante) |
+| **DARK-B** (uccide l'emissario) | Uccide Vashet in pubblico | Nessuno | Espulso da Dauth fino al Day 32; tre sicari entro trenta giorni; Valerius **+1**; Mask assente nel Sogno |
 
 > **Interazione con l'Atto 2 (ortogonale ai rami)**: aver **riconosciuto la donna
 > cieca** aggiunge, in *qualunque* ramo, il salto **+1d6 → +2d6** al primo attacco/

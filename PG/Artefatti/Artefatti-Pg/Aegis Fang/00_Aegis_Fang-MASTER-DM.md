@@ -34,7 +34,7 @@ vincoli*).
 | Stadio | Trigger di sblocco | Poteri che sblocca | Stato | Documentato in |
 |---|---|---|---|---|
 | **0 — Base (legame attuale)** | Legame con Thorik (portatore nanico degno) | +2 Returning Dwarven Waraxe *Dragondoom*; senziente Ego 14; poteri inferiori | ✅ ORA (state.md §6: *pre-full-awakening*) | `Aegis Fang.docx`/`.pdf` |
-| **1 — Risveglio pieno** | **Apoteosi del portatore nell'Assedio della Forgia** + allineamento cosmico con la **Corona d'Adamantio pienamente Senziente** | +4 Holy Returning Dwarven Waraxe; Ego 20; *Ritornante inesorabile*; *Taglio del Cacciatore*; *Condotto Divino di Moradin*; aura telepatica razziale | ⬜ non ancora raggiunto (evento post-Siege ARC-07 P5) | `05_Aegis_Fang_Final_Awakening.html` |
+| **1 — Risveglio pieno** | **Apoteosi del portatore nell'Assedio della Forgia** + allineamento cosmico con la **Corona d'Adamantio pienamente Senziente** | +4 Holy Returning Dwarven Waraxe; Ego 20; *Ritornante inesorabile*; *Taglio del Cacciatore*; *Condotto Divino di Moradin*; aura telepatica razziale (telepatia 90 m, nani vicini immuni alla paura) | ⬜ non ancora raggiunto (evento post-Siege ARC-07 P5) | `05_Aegis_Fang_Final_Awakening.html` |
 
 ---
 
@@ -49,10 +49,27 @@ vincoli*).
 - **Poteri inferiori**: *cura ferite moderate* 3/giorno; *resistere
   all'energia* (resist energy) 1/giorno.
 
+- **Dragondoom** (DM 2026-09-25, D14: è **questo** il potere dell'ascia
+  contro i draghi; allo stadio 0 non c'è nessun *bane* contro non morti o
+  aberrazioni, che arrivano solo con lo stadio 1)
+  [Private — Magic Item Compendium, p. 33, mostrato dal DM il 2026-09-25]:
+  proprietà da arma da mischia, **equivalente +1**, LI 7°, aura moderata di
+  trasmutazione; lama incisa con un drago decapitato. **3/giorno**, **azione
+  veloce** (comando), dichiarata **prima** del tiro d'attacco, contro una
+  creatura del tipo drago di taglia Grande o più: **+1d6** per ogni taglia
+  sopra Media (+1d6 Grande, +2d6 Enorme, +3d6 Mastodontica, +4d6 Colossale).
+  Se l'attacco manca, o il bersaglio non è un drago, l'uso è perso.
+  Sull'attacco lanciato il testo tace: decide il DM al tavolo.
+  Per il prezzo (T10-f), solo la parte d'arma: +2, Ritornante (+1) e
+  Dragondoom (+1) fanno un bonus equivalente **+4** (32.000 mo più l'ascia
+  perfetta); senzienza e poteri inferiori si contano a parte.
+
 ### Stadio 1 — Risveglio pieno (dall'HTML, post-Assedio — ⬜ futuro)
 - **Potenziamento**: diviene **+4 Ascia da Guerra Nanica Sacra (Holy)
   Ritornante**; taglio 1d10, 20/×3; senziente **Int 16, Sag 17, Car 18,
   Ego 20**.
+- **Tiene tutto lo stadio 0** (DM 2026-09-25, D15): la *Dragondoom* e i poteri
+  inferiori restano; uno stadio aggiunge e non toglie. Equivalente +8.
 - **Ritornante inesorabile** (costante): in combinazione col portatore, non
   smarrisce mai l'orientamento e **non può essere sottratta con l'inganno**
   (oltre al Ritornante di base).
@@ -66,8 +83,11 @@ vincoli*).
   **Guarigione (Heal), LI 15°**, selettivamente su **tutti i nani alleati**
   entro 9 m dallo schianto.
 - **Aura di sinergia razziale** (passiva): presenza telepatica coi
-  comandanti nanici in campo (buff di comando/morale). [INFERRED: effetto
-  numerico non quantificato nell'HTML — da fissare col DM se serve un bonus.]
+  comandanti nanici in campo: **telepatia coi nani entro 90 m**, e i **nani
+  vicini (18 m) sono immuni alla paura**. *(Era `[INFERRED — effetto non
+  quantificato]`; risolto dalla fonte il 2026-09-25: l'HTML li quantifica
+  entrambi, il raggio di 18 m sta nel suo calcolo del valore. Audit:
+  `../../ARTEFATTI-AUDIT-POTERI-2026-09-25.md` §2.)*
 
 ---
 

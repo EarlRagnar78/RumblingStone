@@ -50,6 +50,9 @@ emersi 4 difetti di **fedeltà** (non di estetica — la pergamena è bella):
 4. **Etichette/token semantici persi.** I simboli locali (🧲 magnetite, 🌫️
    zero-G, 🤖 Sentinella) rendono come emoji grezzi «simbolo locale», senza la
    loro **funzione tattica** (copertura, terreno difficile, letale).
+   ✅ *Chiuso per 🌫 il 2026-09-24* (RIPRESA-PR 4j-4): è nella legenda come
+   `t_void`, e le due mappe di `ARC07-MAPPE-DEFINITIVO` che lo usavano sono
+   rigenerate. 🧲 e 🤖 restano simboli locali.
 
 **Causa comune**: il renderer tratta la griglia come *solo* matrice di celle e
 non ha un canale per **annotazioni/token semantici** separati dalla matrice.

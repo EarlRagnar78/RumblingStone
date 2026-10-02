@@ -75,9 +75,9 @@ Quando il PG tocca la gemma (o se la gemma tocca lui):
 
 ## 4. Il Risveglio
 
-> La pressione svanisce. Il calore, che un attimo fa minacciava di incenerirti, ora ti pesa sulle ossa in modo familiare : è velocità, è slancio, è la promessa di un'esplosione cinetica.
+> La pressione svanisce. Il calore, che un attimo fa minacciava di incenerirti, ora ti pesa sulle ossa in modo familiare: è velocità, è slancio, è la promessa di un'esplosione cinetica.
 >
-> Guardi le tue mani. Rune di fuoco liquido fiammeggiano attorno alle tue nocche, formando per un istante il simbolo dell'Incudine e del Martello, poi si fissano in un disegno stabile. Un anello di rune naniche ora abbraccia la nuova gemma, incastonata profondamente nel dorso del guanto sinistro, pulsante come una piccola fornace portatile. Nel guanto destro si apre un incavo vuoto  pronto ad accogliere forse una altra gemma del potere.
+> Guardi le tue mani. Rune di fuoco liquido fiammeggiano attorno alle tue nocche, formando per un istante il simbolo dell'Incudine e del Martello, poi si fissano in un disegno stabile. Un anello di rune naniche ora abbraccia la nuova gemma, incastonata profondamente nel dorso del guanto sinistro, pulsante come una piccola fornace portatile. Nel guanto destro si apre un incavo vuoto, pronto ad accogliere forse un'altra gemma del potere.
 >
 > Poi il mondo torna.
 > L'odore di zolfo. Il calore della lava sotto la catwalk di mithral. Il ruggito lontano del fiume di magma del Corridoio del Fuoco. Il sudore che cola sulla tua fronte.

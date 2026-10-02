@@ -179,9 +179,9 @@ Ogni tratto, ogni fantino tira **Cavalcare** contro la CD del tratto. Somma il
 > standard di PF1e penalizza chi monta senza sella; **un fantino del Drappo a pelo ci
 > è nato**, ed è esattamente il motivo per cui la contrada lo tiene invece di mandare
 > un cavaliere in armatura. Vale per tutti e otto i fantini, PG e PNG. Chiunque
-> **non** sia un fantino di contrada e provi a montare in corsa si becca il −5 pieno.
+> **non** sia un fantino di contrada e provi a montare in corsa si becca il −5 pieno.<!-- storico -->
 > *(Correzione del playtest alfa, rilievo 1: con il malus pieno e una Rozza, il
-> fantino falliva la Curva Nord due volte su tre e cadeva.)*
+> fantino falliva la Curva Nord due volte su tre e cadeva.)*<!-- /storico -->
 
 **Le Lunghezze** — il punteggio della Corsa. Tutte le contrade **partono da 0**; lo
 Stacco assegna ±1 (§5). Non c'è un tetto: si segnano su un foglio a vista, una riga

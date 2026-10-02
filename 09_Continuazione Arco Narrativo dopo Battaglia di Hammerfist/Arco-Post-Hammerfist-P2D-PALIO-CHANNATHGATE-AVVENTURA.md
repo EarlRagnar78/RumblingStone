@@ -1,6 +1,6 @@
 # Parte 2D — Il Palio di Channathgate (Avventura Urbana Sandbox)
 
-> **Versione**: v1 (2026-07-01). Modulo doppio-uso: **(a)** avventura autoconclusiva
+> <!-- storico -->**Versione**: v1 (2026-07-01). <!-- /storico -->Modulo doppio-uso: **(a)** avventura autoconclusiva
 > giocabile in D&D 3.5 / Pathfinder 1e (sandbox urbano di 3 giorni, APL 12–13);
 > **(b)** snodo geopolitico della campagna RumblingStone — vedi il file gemello
 > `Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md` per sync assedio,
@@ -49,10 +49,12 @@ Ogni contrada ha una struttura di governo (il **Seggio**/Deputazione). Assegna i
 
 ---
 
+> <!-- storico -->
 > **⚠️ ESPANSIONE v2 (2026-07-01)**: questo file resta valido come *regole-base*, ma
 > l'arco è stato espanso a **8 contrade** (aggiunta **l'Onda**), **3–4 sessioni**, mappe e
 > stemmi. Punto d'ingresso aggiornato: **`Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md`**.
 > Contrade complete (con stemmi/canti): `...P2D-PALIO-CONTRADE-STEMMI-CANTI.md`.
+> <!-- /storico -->
 
 ## 1. Le Contrade (8 fazioni + rivalità)
 
@@ -65,9 +67,9 @@ e confraternite laiche: non erano mai atee, ma di una religiosità **civica e fe
 > **Nota di conversione (Golarion → Faerûn)**: la campagna è ambientata nei Reami.
 > Le divinità sono state riconvertite dal pantheon di Golarion a quello faerûniano.
 >
-> **Nota patrimonio/IP** *(aggiornata 2026-08-10)*: il Palio di Siena e le sue contrade
+> **Nota patrimonio/IP**<!-- storico --> *(aggiornata 2026-08-10)*<!-- /storico -->: il Palio di Siena e le sue contrade
 > sono citati come **ispirazione storico-culturale** (fatti di pubblico dominio). Scudi,
-> **livree** e simboli divini sono **originali** di questa campagna, e dal 2026-08-09 le
+> **livree** e simboli divini sono **originali** di questa campagna, e <!-- storico -->dal 2026-08-09 <!-- /storico -->le
 > livree **non coincidono più** con quelle reali (vedi VERIFICA-LEGALE-IP §3.2). I **motti**
 > sono riscritti ma restano **parafrasi riconoscibili** di quelli reali: non dichiararli
 > "originali" (VERIFICA-LEGALE-IP §3.3). Le **figure** degli stemmi **non sono nostre**:

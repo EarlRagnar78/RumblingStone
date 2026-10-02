@@ -9,7 +9,7 @@ Tutti i valori sono pensati per un party di livello 11–12. Adatta leggermente 
 
 ---
 
-## 1. Tordek Stonefist – Monk 13 (PG/alleato)
+## 1. Tordek Durinheart – Monk 13 (PG/alleato)
 
 - Taglia/Tipo: Umanoide (nano, se preferisci continuità) Medio.
 - DV: 13d8+39 (pf medi 97, suggeriti 110 per maggiore tenuta).

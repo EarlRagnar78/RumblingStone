@@ -21772,7 +21772,7 @@
      ]
     },
     "file": "Bestiario/villain/balvar-fuocospento-cr13.md",
-    "provenienza": "generate",
+    "provenienza": "a mano",
     "scarti": {},
     "template": null,
     "template_dichiarati": [],
@@ -21806,8 +21806,8 @@
     "numeri_della_fonte": {},
     "pf_dado_sospetto": null,
     "pf_dado_sospetto_col_gs": null,
-    "provenienza": "generate",
-    "senza_note": 2711,
+    "provenienza": "a mano",
+    "senza_note": 3052,
     "sestine_citate": [],
     "taglia": 0,
     "talenti": {},
@@ -21830,12 +21830,12 @@
    "pf_dado_corretto_forzato": null,
    "scheda": {
     "attributi": {
-     "Car": 10,
+     "Car": 14,
      "Cos": 16,
      "Des": 14,
      "For": 12,
-     "Int": 9,
-     "Sag": 18
+     "Int": 16,
+     "Sag": 20
     },
     "bab": 8,
     "composizione_nota": false,
@@ -21855,7 +21855,7 @@
     "lotta": 9,
     "mischia": "martello da guerra runico +1 +10/+5 (1d8+2)",
     "pf": 96,
-    "provenienza": "generate",
+    "provenienza": "a mano",
     "tipo": "Medium humanoid (dwarf), Chierico 9 di Abbathor / Runecaster 4, NE",
     "ts": [
      13,
@@ -37844,25 +37844,42 @@
     "DV o livelli di classe"
    ]
   },
-  "Bestiario/villain/zog-tar-deatheye-cr14.md": {
+  "Bestiario/villain/zog-tar-deatheye-cr15.md": {
    "blocco": null,
-   "conti": [],
+   "conti": [
+    "caratteristiche: matrice standard (13, 12, 11, 10, 9, 8) + 3 da DV/4 → For 15, Cos 13, Des 11",
+    "pf: 11d12 + 4d10 media 93.5 + Cos +1×15 = 108",
+    "TS: somma dei TS base di ogni classe (SRD: multiclasse si sommano) → Temp +12, Rifl +4, Vol +4"
+   ],
    "lettura": {
     "armatura": null,
-    "base_ts": {},
-    "classi": [],
+    "base_ts": {
+     "rifl": 4,
+     "temp": 11,
+     "vol": 4
+    },
+    "classi": [
+     [
+      "barbaro",
+      11
+     ],
+     [
+      "guerriero",
+      4
+     ]
+    ],
     "dado": null,
     "dv": null,
     "elite": false,
-    "gs": 14,
+    "gs": 15,
     "manca": [],
-    "nome": "zog-tar-deatheye-cr14",
+    "nome": "zog-tar-deatheye-cr15",
     "scudo": 0,
     "taglia": "medium",
     "tipo": null
    },
    "manca": [
-    "DV o livelli di classe"
+    "ca (nessuna armatura nominata e nessuna armatura naturale dalla taglia: il numero sarebbe inventato)"
    ]
   }
  },
@@ -38660,20 +38677,6 @@
     ],
     "riga": "attributi: For 31 Des 10 Cos 21 Int 14 Sag 15 Car 14",
     "scritta": "attributi: For 31 Des 10 Cos 21 Int 14 Sag 15 Car 14"
-   },
-   {
-    "file": "Bestiario/villain/balvar-fuocospento-cr13.md",
-    "marca": "> [INFERRED — needs DM confirmation] `attributi` generati da `scripts/genera_attributi.py`: array del Manuale del DM con taglia e razza SRD, vincolati da CA e pf dove il file li dichiara. Confermali o correggili.",
-    "note": [
-     "array elite del Manuale del DM (PNG con classe)",
-     "variazione a seme fisso: Int +1, For −1",
-     "un avanzamento ogni 4 livelli, contati sul GS 13 — surrogato dichiarato: i DV totali stanno nel campo `tipo` solo nell'8% dei file",
-     "modificatori razziali SRD: dwarf Cos +2 Car -2",
-     "Des 14 **derivata dalla CA di contatto** — il vincolo batte l'array",
-     "For 12 **ricavata da BAB e lotta** — il vincolo batte l'array"
-    ],
-    "riga": "attributi: For 12 Des 14 Cos 16 Int 9 Sag 18 Car 10",
-    "scritta": "attributi: For 12 Des 14 Cos 16 Int 9 Sag 18 Car 10"
    },
    {
     "file": "Bestiario/villain/bebilith-guardiano-cr10.md",

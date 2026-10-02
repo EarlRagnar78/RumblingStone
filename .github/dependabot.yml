@@ -10,6 +10,12 @@
 #   aspetta da qui: checkout@v4, setup-python@v5 e upload-artifact@v4 girano
 #   su Node.js 20, deprecato, e GitHub li forza già su Node.js 24.
 #
+# ⚠️ `converters/` NON è qui, per decisione (PRATICHE D9, 2026-09-24).
+# `converters/Html_to_markdown` e `converters/pdf-to-md-engine` hanno i loro
+# requirements.txt, e il grafo delle dipendenze di GitHub li legge già: gli
+# avvisi di sicurezza arrivano comunque. Le PR di aggiornamento settimanali no,
+# finché nessuno usa quei convertitori con regolarità.
+#
 # Ogni PR di Dependabot passa dalla CI come le altre. Il limite a tre PR
 # aperte per ecosistema è voluto: sono PR piccole (PRATICHE D1), e tre alla
 # volta si leggono.

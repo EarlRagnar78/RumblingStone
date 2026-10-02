@@ -1,6 +1,6 @@
 # Parte 2D — Il Palio di Channathgate: INTEGRAZIONE con RumblingStone
 
-> **Versione**: v1 (2026-07-01). File gemello di
+> <!-- storico -->**Versione**: v1 (2026-07-01). <!-- /storico -->File gemello di
 > `Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md` (regole del Palio).
 > Questo documento sincronizza il Palio con: **March Clock / Ritual Clock**, i
 > **clock dei villain**, il **Consiglio di Rethmar**, i **difensori** e le

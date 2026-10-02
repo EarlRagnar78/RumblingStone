@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="versione-artefatto" content="collana · S0 · r3 · 2026-09-25">
+    <title>Collana dei Semi Eterni — i semi — prima del rito (VERSIONE DM)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @page { size: A4; margin: 12mm; }
+        html { background: #f3f1e8; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        body { font-family: 'Times New Roman', serif; font-size: 11pt; line-height: 1.4; color: #2c1810; margin: 0; padding: 20px; background: linear-gradient(135deg, #f8f6f0 0%, #ede8dc 100%); }
+        .header { text-align: center; border-bottom: 3px solid #8a9a6a; padding-bottom: 10px; margin-bottom: 20px; }
+        .class-title { font-size: 24pt; font-weight: bold; color: #3d5a2a; margin: 0; text-transform: uppercase; letter-spacing: 2px; }
+        .subtitle { font-size: 14pt; font-style: italic; color: #5d4e37; margin: 5px 0; }
+        .motto { font-family: 'Cinzel Decorative', cursive; font-size: 12pt; color: #4a6a2a; text-shadow: 0 0 2px #9acd32; font-weight: bold; letter-spacing: 1px; text-align: center; margin-top: 5px; }
+        .dm-tag { display: inline-block; background: #8B0000; color: #f8f6f0; font-size: 9pt; font-weight: bold; letter-spacing: 2px; padding: 2px 10px; border-radius: 3px; margin: 6px 0 2px 0; }
+        .quote { font-style: italic; text-align: center; color: #5d4e37; font-size: 11pt; margin: 15px 0; padding: 10px; border-left: 3px solid #8a9a6a; background: rgba(122, 154, 60, 0.09); }
+        .quote.cambiato { border-left-color: #3d5a2a; background: rgba(75, 83, 32, 0.07); }
+        h2 { color: #3d5a2a; font-size: 14pt; font-weight: bold; border-bottom: 2px solid #8a9a6a; padding-bottom: 3px; margin: 16px 0 10px 0; text-transform: uppercase; }
+        .ritratto { display: block; margin: 0 auto 10px auto; max-width: 34%; height: auto; border: 2px solid #3d5a2a; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
+        .power-block { background: rgba(255, 255, 255, 0.6); border: 1px solid #8a9a6a; margin-bottom: 10px; padding: 10px; border-radius: 5px; }
+        .power-header { font-weight: bold; font-size: 12pt; color: #5b3a1a; border-bottom: 1px dashed #8a9a6a; padding-bottom: 4px; margin-bottom: 8px; display: flex; justify-content: space-between; }
+        .mechanic { font-family: "Courier New", monospace; font-size: 9.5pt; color: #333; background: #e9e9e9; padding: 2px 4px; border-radius: 3px; border: 1px solid #ccc; margin-bottom: 5px; display: inline-block; }
+        .desc-text { padding-top: 5px; }
+        .requirements { background: rgba(139, 69, 19, 0.05); border: 2px solid #5b4a2e; padding: 10px; margin: 15px 0; border-radius: 5px; font-size: 10pt; }
+        .tag { background: #3d5a2a; color: #f8f6f0; font-size: 8.5pt; font-weight: bold; letter-spacing: 1px; padding: 2px 7px; border-radius: 3px; text-transform: uppercase; }
+        .block-acceso { border: 2px solid #3d5a2a; background: rgba(122, 154, 60, 0.09); }
+        .spento { background: rgba(120, 120, 120, 0.12); border: 1px dashed #999; color: #555; }
+        .spento .power-header { color: #777; }
+        .incisione { text-align: center; font-family: 'Cinzel Decorative', cursive; color: #4a6a2a; font-size: 10.5pt; margin: 18px 0 6px 0; letter-spacing: 1px; }
+        table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 10pt; }
+        th { background: linear-gradient(135deg, #3d5a2a, #5b4a2e); color: white; padding: 5px 4px; border: 1px solid #654321; }
+        td { padding: 4px 6px; border: 1px solid #8a9a6a; background: rgba(248, 246, 240, 0.8); vertical-align: top; }
+        tr:nth-child(even) td { background: rgba(237, 232, 220, 0.8); }
+        td.c { text-align: center; }
+        ul { margin-top: 5px; margin-bottom: 5px; }
+        li { margin-bottom: 4px; }
+        .grigio { background: rgba(220, 220, 220, 0.4); border-color: #888; margin-top: 12px; }
+        .grigio .power-header { color: #666; font-size: 11pt; }
+        .grigio .corpo { font-size: 9.5pt; color: #444; }
+        .dm { background: rgba(139, 0, 0, 0.04); border: 2px solid #8B0000; padding: 12px 14px; margin: 14px 0; border-radius: 5px; }
+        .dm h3 { color: #8B0000; margin: 0 0 8px 0; text-transform: uppercase; letter-spacing: 1px; font-size: 12pt; }
+        .conferma { font-family: "Courier New", monospace; font-size: 9pt; color: #8B0000; background: #f6e6e6; border: 1px solid #d9b0b0; padding: 1px 4px; border-radius: 3px; }
+        @media print {
+            body { padding: 0; background: none; }
+            .power-block, .requirements, .dm, table, .quote { break-inside: avoid; page-break-inside: avoid; }
+            h2 { break-after: avoid; page-break-after: avoid; }
+            .solo-dm { break-before: page; page-break-before: always; }
+        }
+        .bozza { border: 2px dashed #8B0000 !important; background: rgba(139, 0, 0, 0.03) !important; }
+        .tagbozza { font-family: "Courier New", monospace; font-size: 8.5pt; color: #8B0000; background: #f6e6e6; border: 1px solid #d9b0b0; padding: 1px 4px; border-radius: 3px; white-space: nowrap; }
+    </style>
+</head>
+
+<body>
+<div class="quote" style="border-left-color:#8B0000;background:rgba(139,0,0,0.06);font-style:normal;"><strong>Copia DM — questa pagina non ha una controparte per la giocatrice.</strong> Allo stadio 0 la Collana non esiste, e Hella è morta: ci sono tre semi. La pagina dice cosa c'era, e cosa diventerà.</div>
+    <div class="header">
+        <h1 class="class-title">Collana dei Semi Eterni</h1>
+        <div class="subtitle">Stato: i semi — prima del rito</div>
+        <div class="dm-tag">VERSIONE DM · NON DARE ALLA GIOCATRICE</div>
+        <div class="motto">«Non un muro davanti a voi: una radice sotto di voi.»</div>
+    </div>
+
+
+    <div class="quote">
+        <strong>La Leggenda della Radice</strong> <em>(quello che il rito farà dei semi)</em><br>
+        «Le altre le ha fatte il Forgiatore, col fuoco e col martello. Questa no. Quando il Cuore di Moradin si spese sul petto di Hella, la sua mano trovò tre semi che non sapeva aprire, e disse che alla forgia serve il metallo, e che un dono strappato è ferro freddo. I semi li aprirono i compagni, ciascuno con qualcosa di suo. La Collana non fu forgiata: germogliò. Per questo non è un oggetto di Hella. È la memoria del perché è tornata.»
+    </div>
+
+    <div class="quote cambiato">
+        <strong>Com'erano.</strong><br>
+        Tre semi di treant posati sul corpo di Hella: uno per mano, uno sulla fronte. Due verdi e lucidi; il terzo, dopo il viaggio dello spirito, grigio-verde e ruvido come corteccia. Non si aprono da soli, e chi li guarda non sa ancora che sono l'inizio di un torc.
+    </div>
+
+    <div class="requirements">
+        <strong>Slot:</strong> nessuno · <strong>Poteri:</strong> nessuno · <strong>Dove:</strong> sul corpo di Hella, nella Sala della Forgia Eterna, fino al rito
+    </div>
+
+    <h2 class="solo-dm" style="color:#8B0000;border-bottom-color:#8B0000;">⚠️ Solo DM — da qui in poi</h2>
+
+    <div class="dm">
+        <h3>La progressione della Collana</h3>
+        <table>
+        <tr><th>Stadio</th><th>Innesco</th><th>Poteri</th><th>Pagina</th><th>Stato</th></tr>
+        <tr><td><strong>0</strong> · i semi</td><td>—</td><td>tre semi di treant, nessun potere</td><td><code>00_Collana_S0_I_Semi_DM</code> (solo DM)</td><td>✅ passato</td></tr>
+        <tr><td><strong>1</strong> · Radicata</td><td>il rito di resurrezione (<em>ARC07-DEF-3</em>)</td><td>Saggezza della Terra · Corteccia del Guardiano · Avatar della Radice · Evocazione dei Guardiani · i tre semi e i doni · la restituzione</td><td><code>01_Collana_Radicata</code> e <code>_DM</code></td><td>▶ dopo il rito</td></tr>
+        <tr><td><strong>2</strong> · Fiorita</td><td><strong>canone</strong>: il Rituale del Cerchio Sacro (ARC-09 P1, la Foresta Sacra)</td><td>+ Radici che Sentono · il Muro dei Guardiani · l'Avatar in Fiore · l'eco di Dauth — D17</td><td><code>03_Collana_S2_Fiorita</code> e <code>_DM</code></td><td>⬜ ARC-09</td></tr>
+        <tr><td><strong>3</strong> · Foresta che Cammina</td><td><strong>canone</strong>: la Battaglia di Rethmar, il Circolo (ARC-09 P3)</td><td>+ la Foresta che Cammina · Radici nel Mythal — D17</td><td><code>04_Collana_S3_Foresta_che_Cammina</code> e <code>_DM</code></td><td>⬜ ARC-09</td></tr>
+    </table>
+    <p><em>01_Collana_dei_Semi_Eterni.md</em>, «Stati futuri»: «I momenti sono canone […] I poteri no: […] si scrivono quando si prepara ARC-09, con la conferma del DM». I poteri degli stadi 2 e 3 li ha decisi il DM il 2026-09-25 (D17), approvando le proposte fatte da quella materia.</p>
+    <p>⚠️ <strong>Damarath</strong> è il vecchio nome di <strong>Rethmar</strong> nel brainstorm di ARC-09: la città finale è Rethmar.</p>
+    </div>
+
+    <div class="dm">
+        <h3>Cosa c'era prima del rito</h3>
+        <ul>
+            <li><strong>Tre semi di treant</strong>, sulle mani e sulla fronte di Hella (<em>ARC07-DEF-3</em>, il rito). Nessun potere.</li>
+            <li><strong>L'Impronta di Durik</strong> entra nel terzo seme durante il viaggio dello spirito, nella Prova II, il Sogno della Terra.</li>
+            <li>Il rito non si può anticipare: «i semi di treant e il viaggio dello spirito non sono ancora avvenuti» (<em>DEF-3</em>, tabella delle risposte).</li>
+        </ul><p>⚠️ <strong>Quattro semi o tre.</strong> P1B e P1C sono stati scritti prima del rito e parlano di una «Collana dei Semi Treant» con <strong>quattro</strong> semi che Hella avrebbe già al collo. Il canone è quello del rito: <strong>tre</strong> semi, e la Collana nasce lì. Queste pagine riportano quella materia a tre semi; i due moduli vanno corretti allo stesso modo quando si preparano.</p>
+    </div>
+
+    <div class="dm">
+        <h3>Il lore, da rivelare piano</h3>
+        Le altre tre sono uscite dalla Forgia: la Corona dall'Incudine del Mondo, i Bracieri dal fuoco e dalla pietra del Padre, l'Anello riforgiato dalla Colonna di Mithral. La Collana è nata nello stesso luogo e per mano dello stesso dio, ma è l'unica <strong>germogliata</strong>: Moradin lo dice al rito (<em>«alla forgia serve il metallo»</em>, <code>ARC07-DEF-3</code> §5). Il contrasto è voluto, e si tiene.
+        <ul>
+            <li>I tre semi di treant erano posati sul corpo (mani e fronte). Allo Step 4 germogliano ed entrano in Hella senza sangue: è lì che diventa ibrida.</li>
+            <li>Ogni seme porta il dono di un compagno. Il terzo porta <strong>anche</strong> l'Impronta di Durik, caduta nel Sogno della Terra nella Prova II del viaggio.</li>
+            <li>I nani che conoscono il lore della Forgia la chiamano <em>il Torc dei Tre Semi</em>, e si scoprono il capo davanti al terzo seme.</li>
+        </ul>
+    </div>
+
+    <div class="dm">
+        <h3>Se qualcuno ha rifiutato il dono</h3>
+        <table>
+            <tr><th>Chi rifiuta</th><th>Il seme</th><th>L'artefatto di chi rifiuta</th></tr>
+            <tr><td>Thorik</td><td>I dormiente: niente Scudo, e la catena con la RD di Tordek non c'è</td><td>Aegis Fang giudica</td></tr>
+            <tr><td>Tordek</td><td>II dormiente: Hella senza nessuna RD</td><td>i Bracieri tacciono 7 giorni</td></tr>
+            <tr><td>Artemis</td><td>III dormiente: niente attacco a distanza a slot finiti</td><td>l'Anello si spegne 24 ore</td></tr>
+        </table>
+        Uno slot vuoto si riempie <strong>in gioco</strong>, con un atto di sacrificio (quest personali di ARC-09), e il dono si attiva all'indietro. Il rifiuto di tutti e tre dà tre quest, non una punizione.
+    </div>
+
+    <div class="dm">
+        <h3>Scheda tecnica</h3>
+        <table>
+            <tr><th style="width:30%">Campo</th><th>Valore</th></tr>
+            <tr><td>Categoria</td><td>artefatto minore: non si crea, non si compra</td></tr>
+            <tr><td>Tipi dei poteri</td><td>Sop: Saggezza, Corteccia, Avatar, Evocazione, restituzione · Str: Scudo del Custode, Pelle di Adamantio (sono germogliati nel corpo, reggono anche in un campo anti-magia) · Mag: Rovo Eldritch, come l'<em>Eldritch Blast</em> da cui viene</td></tr>
+            <tr><td>Forma selvatica, polimorfia</td><td>la Collana funziona sempre: non si fonde nel nuovo corpo</td></tr>
+            <tr><td>Ricarica</td><td>i semi usati tornano all'alba, come l'Avatar e come Durik</td></tr>
+            <tr><td>Livello dell'incantatore</td><td>20°</td></tr>
+            <tr><td>Dissolvere</td><td>non dissolvibile; <em>disgiunzione</em> la sopprime 1d4 round</td></tr>
+            <tr><td>Treant di Adamantio</td><td>al massimo 2, uno per seme, 1 ora ciascuno. Tutti e due insieme: l'Evocazione si spegne per un mese (Durik distrutto non si richiama subito: torna all'alba); il resto della Collana no. L'unica eccezione è la notte a −1000, quando Hella ne evoca due all'alba</td></tr>
+            <tr><td>Valore</td><td>fuori dal WBL ordinario, come gli altri artefatti legati</td></tr>
+            <tr><td>Distruzione</td><td>solo con i tre semi spesi e bruciati in un fuoco che la portatrice non può percepire</td></tr>
+            <tr><td>Se Hella tradisce il Voto</td><td>i semi smettono di germogliare finché non lo riafferma con un atto</td></tr>
+        </table>
+    </div>
+
+    <div class="dm">
+        <h3>La Quaternità — il cerchio completo</h3>
+        <table>
+            <tr><th style="width:26%">Voce</th><th>Valore</th></tr>
+            <tr><td>Si sblocca</td><td>quando sono vere tutte e tre: la Trinità è già sbloccata, Radici della Memoria è sveglia (la Ghianda piantata), la quest della Foresta Sacra è superata (ARC-09)</td></tr>
+            <tr><td>Attivazione</td><td>i quattro portatori entro 9 m, ognuno spende un'azione di movimento</td></tr>
+            <tr><td>Effetto</td><td>quello della Trinità (immuni a paura e charme, +4 sacro ai TS, +2 sacro alla CA, i colpi superano la RD come Buoni e Legali, Aura di Soggezione CD 20), per <strong>7 round</strong>. In più <strong>l'Ancoraggio torna</strong>: finché non si muovono, i quattro portatori non si sbilanciano e non si spingono</td></tr>
+            <tr><td>Frequenza</td><td>1/giorno. <strong>Sostituisce la Trinità</strong>: se c'è Hella si fa la Quaternità, e le due non si sommano</td></tr>
+        </table>
+        L'Ancoraggio è il dono che Tordek ha dato alla Collana: nel cerchio completo torna, per tutti e quattro.
+    </div>
+
+    <div class="dm">
+        <h3>Gli stati che verranno</h3>
+        I due momenti sono canone, e dal 2026-09-25 anche i poteri (D17).
+        <table>
+            <tr><th>Stato</th><th>Quando</th><th>Cosa aggiunge</th></tr>
+            <tr><td><strong>Radicata</strong> (oggi)</td><td>il rito di resurrezione</td><td>questa pagina</td></tr>
+            <tr><td>Fiorita</td><td>il Rituale del Cerchio Sacro (ARC-09)</td><td>Radici che Sentono · il Muro dei Guardiani · l'Avatar 2/giorno · l'eco di Dauth</td></tr>
+            <tr><td>Foresta che Cammina</td><td>la Battaglia di Rethmar, il Circolo urbano (ARC-09)</td><td>la Foresta che Cammina (i due Treant senza il mese di silenzio) · Radici nel Mythal</td></tr>
+        </table>
+        Le sinergie future con gli altri artefatti (F1-F4) sono canone dal 2026-09-25 (F1 e F4 chiuse finché non si gioca la loro condizione): <code>PG/Artefatti/SINERGIE-ARTEFATTI-MASTER.md</code> §1. Gli stati futuri hanno le loro pagine, giocatrice e DM, coi poteri decisi dal DM il 2026-09-25 (D17): <code>03_Collana_S2_Fiorita</code> e <code>04_Collana_S3_Foresta_che_Cammina</code>. Riportano a tre semi la materia di <code>Arco-Post-Hammerfist-P1B-Cerchio-Treant</code> (connessione empatica) e <code>-P1C-Rituale</code> (il Muro dei Guardiani).
+    </div>
+
+    <div class="dm">
+        <h3>Da tenere a mente al tavolo</h3>
+        <ul style="margin:0;">
+            <li>La Collana <strong>non</strong> mitiga la vulnerabilità al fuoco di Hella (+50%). Enorme, in Avatar della Radice, diventa il bersaglio di ogni incendiario della Mano Rossa.</li>
+            <li>Il Cuore di Moradin è <strong>speso</strong>. Nessun potere della Collana lo riattiva.</li>
+            <li>Il giorno in cui Durik viene distrutto per la prima volta e torna polvere nel seme merita una scena, con un read-aloud.</li>
+            <li>Fotosintesi ed empatia vegetale vengono dall'ibrido treant, non dalla Collana: sulla scheda restano separate.</li>
+        </ul>
+    </div>
+
+
+    <p style="font-size:8.5pt;color:#777;text-align:right;margin-top:14px;">Versione collana · S0 · r3 · 2026-09-25 · registro: <em>PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md</em> §0</p>
+</body>
+</html>

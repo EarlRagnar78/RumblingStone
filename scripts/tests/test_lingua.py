@@ -52,6 +52,16 @@ class TestRefusiVeri(unittest.TestCase):
         errori, _ = _testo("Il totale e' 5.8 : la soglia.")
         self.assertTrue(errori)
 
+    def test_spazio_prima_dei_due_punti_dopo_una_parola(self):
+        # Il refuso vero del box di Tordek (#167): le eccezioni per la cella
+        # «?» e per il rapporto «5.8 : 1» non devono spegnerlo.
+        errori, _ = _testo("Il gatto familiare : è sparito.")
+        self.assertTrue(errori)
+
+    def test_due_punti_fra_un_numero_e_una_parola(self):
+        errori, _ = _testo("Il totale è 5 : poi si vede.")
+        self.assertTrue(errori)
+
     def test_doppio_spazio_fra_parole(self):
         errori, _ = _testo("Due  spazi fra le parole.")
         self.assertTrue(errori)
@@ -91,6 +101,24 @@ class TestFalsiPositivi(unittest.TestCase):
     def test_un_link_markdown_non_e_prosa(self):
         errori, _ = _testo("Vedi [la guida](docs/guides/GUIDA-MAPPE.md) e prosegui.")
         self.assertEqual(errori, [])
+
+    def test_i_due_spazi_prima_di_unancora_non_sono_un_refuso(self):
+        # PROMPT-IMMAGINI-07ILP.md, 7 titoli: mascherato con la «x», il codice
+        # diventava una parola e i due spazi un «doppio spazio fra parole».
+        errori, _ = _testo("### 10 · L'ARRIVO — i primi sei secondi  `[8a-l-arrivo]`")
+        self.assertEqual(errori, [])
+
+    def test_un_segno_solo_in_una_cella_di_tabella(self):
+        # ARC07-TESORO-WBL-AUDIT.md:44 — la cella dice «non lo sappiamo».
+        errori, _ = _testo("| P3 Piano Fuoco | bottino | ? | `P3` |")
+        self.assertEqual(errori, [])
+
+    def test_il_rapporto_fra_due_numeri(self):
+        # ARMATE-SYNC.md, 5 righe: «5.8 : 1» è un rapporto, non un refuso.
+        for rapporto in ("**5.8 : 1**", "1.46 : 1", "3 : 2"):
+            with self.subTest(rapporto=rapporto):
+                errori, _ = _testo(f"| A | rapporto {rapporto} | CR |")
+                self.assertEqual(errori, [])
 
     def test_ad_davanti_a_vocale_e_corretto(self):
         errori, _ = _testo("Va ad Anfiteatro ed entra.")

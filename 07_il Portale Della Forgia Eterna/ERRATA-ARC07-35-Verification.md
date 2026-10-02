@@ -6,8 +6,8 @@
 > (APL 13/D15), statblock dei boss, CD delle prove, action economy, poteri
 > della Corona (vs `campaign-artifacts.md`) e della **Cintura della
 > Devastazione** (D17). **Le parti GIOCATE non si ritoccano**: dove serve si
-> annota "giocato con i valori vecchi" senza retcon. Valori proposti
-> `[INFERRED — needs DM confirmation]` dove non attestati.
+> annota "giocato con i valori vecchi" senza retcon. Dove un valore
+> non era attestato, quello proposto qui è stato confermato dal DM.
 
 ---
 
@@ -27,7 +27,7 @@
 
 | Incontro | GS | XP/PG (party 3 PG, APL eff. 12) | Note |
 |---|---|---|---|
-| Elder Fire Elemental (P3) | 14 | ~4.200/PG `[INFERRED]` | GS = APL+2, "impegnativo" |
+| Elder Fire Elemental (P3) | 14 | ~4.200/PG | GS = APL+2, "impegnativo" |
 | Terros / Golem di Mithral (P4) | **CR 15+ "Hard"** (power-up voluto, D8) | ~4.800-6.000/PG | tienilo duro (§2.2) |
 | Zog'tar (P5) | 14 | ~4.200/PG | risoluzione veloce (fast-play) |
 | Skullcrusher (P5) | 12 | ~2.700-2.925/PG (party 4, APL 13) | Hella è tornata → 4 PG |
@@ -110,5 +110,5 @@
 
 P1-P3, il viaggio dello spirito e il P4 in corso **sono stati giocati con i
 valori dei file dell'epoca**: questa errata **non li retconna**. Vale da qui in
-avanti (P3B/P5) e come riferimento per il DM. Ogni cifra non attestata è
-`[INFERRED — needs DM confirmation]`.
+avanti (P3B/P5) e come riferimento per il DM. Le cifre non attestate sono
+state confermate dal DM.

@@ -1,0 +1,5 @@
+anello-antico.webp
+  Estratta il 2026-09-25 dalla seconda immagine incorporata (PNG 885 x 885)
+  in Old/Ring_of_chaotic_illumination_pg.html, la scheda dell'Anello data al
+  giocatore prima della Forgia. Stessa immagine, ricompressa in webp (q 90).
+  Serve alle pagine degli stadi 0 e 1 (ADR-0072, PG/Artefatti/immagini-artefatti.json).

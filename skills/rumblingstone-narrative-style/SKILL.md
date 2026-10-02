@@ -9,12 +9,11 @@ description: >
   table technique, Baldur's Gate 3 long-range consequences, Baldur's Gate
   1–2 complex quest design, il caso ricomposto (deduction as climax) —
   with the PCs always protagonists, in good and in evil. Trigger on any content-generation request: "genera", "scrivi",
-  "crea la quest", "prepara la sessione", "read-aloud", "boxed text",
-  "recap", "hook", "descrivi la scena", "session prep", "new quest",
-  "dialogo", "conseguenze", "stile narrativo", "mondo vivo", "living
-  world", "world turn", "cosa fanno i PNG", "agenda dei villain",
+  "crea la quest", "prepara la sessione", "read-aloud",
+  "recap", "hook", "descrivi la scena", "prosa", "stile", "echi", "faide",
+  "dialogo", "conseguenze", "stile narrativo", "mondo vivo", "cosa fanno i PNG", "agenda dei villain",
   "indagine", "mistero", "indizio", "ricomposizione",
-  "handout", "documento", "chi è stato", "pista falsa", "railroad".
+  "handout", "documento in gioco", "chi è stato", "pista falsa", "railroad". Non per gli script che controllano la prosa.
 ---
 
 # RumblingStone — Narrative Style Engine (Nine Pillars)
@@ -185,6 +184,13 @@ Run the coherence self-check (`campaign-coherence.md` §6) first, then:
    `rumblingstone-indagine/references/documento-ed-errore-fecondo.md` §4-5.)
 7. Did any box grow past the read-aloud ceiling because the prose got
    interesting? (If yes → cut; the ceiling wins.)
+8. **Misura, correggi, rimisura** (ADR-0077). `python3 scripts/ciclo_prosa.py
+   segnala FILE` risponde con un comando alle domande 7 e 2 e ai calchi di
+   `italiano-nativo` §1; si corregge e si rimisura finché non resta niente o
+   resta solo quello che si sa difendere. Se il file **c'era già** (un master,
+   un handout consegnato), non si sovrascrive: si scrive la versione nuova
+   accanto e `ciclo_prosa.py revisione ORIGINALE NUOVO -o REVISIONE-….md`
+   produce il documento che il DM approva modifica per modifica.
 
 ---
 

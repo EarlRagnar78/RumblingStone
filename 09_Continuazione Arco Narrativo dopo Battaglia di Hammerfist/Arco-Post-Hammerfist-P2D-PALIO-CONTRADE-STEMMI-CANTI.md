@@ -192,10 +192,10 @@ spesso più efficace che offrirgli di vincere.
 
 ## Livree di Channathgate (palette canonica)
 
-Dal 2026-08-09 gli scudi **non usano più le livree di Siena**: ogni distretto ha una
+<!-- storico -->Dal 2026-08-09 gli scudi **non usano più le livree di Siena**:<!-- /storico -->Gli scudi **non usano le livree di Siena**: ogni distretto ha una
 livrea propria, derivata dalla **divinità patrona** e dal **nome faerûniano del
-quartiere**. Nessuna combinazione coincide con quelle delle 17 contrade reali (chiude il
-punto 3 della checklist di bonifica in `...P2D-PALIO-VERIFICA-LEGALE-IP.md` §7).
+quartiere**. Nessuna combinazione coincide con quelle delle 17 contrade reali<!-- storico --> (chiude il
+punto 3 della checklist di bonifica in `...P2D-PALIO-VERIFICA-LEGALE-IP.md` §7)<!-- /storico -->.
 
 | Contrada · Distretto | Livrea | Campo | Secondario | Bordo / liste | Metallo figura |
 |---|---|---|---|---|---|
@@ -226,7 +226,7 @@ sono in `#8d9aa6`, cioè un argento più scuro di quello della torre — la rego
 
 ## Nota grafica — le figure degli stemmi
 
-Dal 2026-08-10 le **figure** degli otto scudi sono icone di **game-icons.net**, ricolorate
+<!-- storico -->Dal 2026-08-10 le<!-- /storico -->Le **figure** degli otto scudi sono icone di **game-icons.net**, ricolorate
 nella livrea del distretto e inserite negli scudi originali della campagna. Attribuzione
 completa e testi di licenza: **`P2D-Palio-Allegati/stemmi/CREDITS.md`**.
 
@@ -270,9 +270,13 @@ Nethys, Calistria, Shelyn, Gozreh/Desna. Stesse figure, **stesse meccaniche 3.5*
 solo divinità, livrea e simbolo in campo. Mappatura, livree e note di licenza Paizo:
 `golarion/README.md`. Rigenerabile con `golarion/build_golarion_shields.py`.
 
+<!-- storico -->
 Serve a due cose: girare l'arco in un tavolo Pathfinder senza riscrivere nulla, e — visto che
 AVVENTURA §1 dichiara le divinità faerûniane «riconvertite da Golarion» — **documentare il
 pantheon di partenza**, che non era scritto da nessuna parte.
+<!-- /storico -->
+Serve a girare l'arco in un tavolo Pathfinder senza riscrivere nulla, e dice da quale
+pantheon sono state riconvertite le divinità faerûniane di AVVENTURA §1.
 
 ## Nota IP (ripetuta qui per chiarezza)
 Nomi delle contrade e riferimenti al Palio = **fatti storico-culturali** citati come

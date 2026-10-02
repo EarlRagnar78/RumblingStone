@@ -337,13 +337,47 @@ def nomi_propri(corpo: str) -> "set[str]":
             if w.strip("«»\"'()[],;:.!?—-") in _REGISTRO}
 
 
+#: Due indicatori di lunghezza, accanto al tetto delle righe e non al suo posto
+#: (`read-aloud-adulti.md` §2-bis). Le linee guida di *Dungeon* dicono che il
+#: read-aloud di un'area «solo di rado» supera **poche frasi**; il testo portato
+#: dal DM il 2026-10-01 propone 3-4 frasi e 300-500 caratteri per il box di una
+#: stanza. Nessuno dei due e' una norma del repo finche' il DM non decide
+#: (PIANO-BOX-DI-LUOGO-E-AREA-CHIAVE, D1): si contano, e non pesano.
+TETTO_FRASI = 4
+TETTO_CARATTERI = 500
+
+#: La fine di una frase **dentro un box**: punto, esclamativo, interrogativo o
+#: puntini, anche dentro una battuta chiusa (`.»`), seguiti da spazio e da una
+#: maiuscola o da un'apertura di battuta. Un numero decimale non chiude la
+#: frase. ⚠️ Un'abbreviazione seguita da un nome proprio («Sig. Rossi») la
+#: chiude: nei box del repo non se ne trovano, e l'errore sposta il conto di una
+#: frase, non di un box. E' un nome distinto da `_FINE_FRASE` qui sopra, che
+#: serve un altro rilevatore e resta com'e'.
+_FINE_FRASE_BOX = re.compile(r"(?:(?<=[.!?…])|(?<=[.!?…][»”\"]))\s+(?=[«\"“A-ZÀ-Ù])")
+
+
+def corpo_del_box(box: "list[str]") -> str:
+    """Il testo che si legge ad alta voce: senza `>`, etichetta e marcatura."""
+    righe = " ".join(r.lstrip(">").strip() for r in box)
+    piano = re.sub(r"[*_`]", "", _ETICHETTA.sub("", righe))
+    return re.sub(r"\s+", " ", piano).strip()
+
+
+def frasi_del_box(corpo: str) -> int:
+    """Quante frasi ha un box. Un frammento di una parola sola non conta."""
+    return len([f for f in _FINE_FRASE_BOX.split(corpo) if len(f.split()) >= 2])
+
+
 def difetti_dei_box(testo: str) -> "dict[str, int]":
     """Quante volte i box violano le soglie dichiarate.
 
     🔴 Nessuna di queste e' controllata da `validate_modules.py`, che conta
     le **occorrenze della parola** «read-aloud» e si ferma a cinque.
+
+    Le ultime due chiavi sono indicatori (`TETTO_FRASI`, `TETTO_CARATTERI`):
+    dicono quanto costerebbe una soglia proposta, e non entrano nel punteggio.
     """
-    lunghi = parentesi = nomi = 0
+    lunghi = parentesi = nomi = molte_frasi = molti_caratteri = 0
     for b in box_read_aloud(testo):
         if len(b) > TETTO_RIGHE:
             lunghi += 1
@@ -357,8 +391,14 @@ def difetti_dei_box(testo: str) -> "dict[str, int]":
             parentesi += 1
         if len(nomi_propri(corpo)) > 1:
             nomi += 1
+        letto = corpo_del_box(b)
+        if frasi_del_box(letto) > TETTO_FRASI:
+            molte_frasi += 1
+        if len(letto) > TETTO_CARATTERI:
+            molti_caratteri += 1
     return {"box": len(box_read_aloud(testo)), "oltre 12 righe": lunghi,
-            "con parentesi": parentesi, ">1 nome proprio": nomi}
+            "con parentesi": parentesi, ">1 nome proprio": nomi,
+            "oltre 4 frasi": molte_frasi, "oltre 500 caratteri": molti_caratteri}
 
 
 # ─────────────────────────────────────────────────────────────────────────
@@ -535,9 +575,11 @@ def box_con_p1(testo: str) -> "list[tuple[str, str]]":
 
 
 #: Fuori misura, con la ragione scritta: una versione superata o una errata
-#: corrige non dice niente sul mestiere del documento vivo.
+#: corrige non dice niente sul mestiere del documento vivo, e l'apparato
+#: generato da `componenti.py` (ADR-0074) ripete il master in tabelle: misurarlo
+#: conterebbe due volte le stesse scene.
 ESCLUSI = ("_ARCHIVIO", "homebrew", "build")
-ESCLUSI_NOME = ("DEPRECATO", "ERRATA-")
+ESCLUSI_NOME = ("DEPRECATO", "ERRATA-", "APPARATO-")
 
 
 def espandi(modelli: "list[str]") -> "list[Path]":
@@ -784,12 +826,16 @@ def main() -> int:
         print("🔴 Nessuna di queste soglie e' sotto cancello: `validate_modules`")
         print("   conta le occorrenze della PAROLA «read-aloud» e si ferma a 5.\n")
         print(f"{'bersaglio':30} {'box':>5} {'>12 righe':>10} "
-              f"{'parentesi':>10} {'>1 nome':>8}")
+              f"{'parentesi':>10} {'>1 nome':>8} {'>4 frasi':>9} {'>500 car':>9}")
         for nome, modelli in BERSAGLI.items():
             testo, _, _ = carica(modelli)
             d = difetti_dei_box(testo)
             print(f"{nome:30} {d['box']:>5} {d['oltre 12 righe']:>10} "
-                  f"{d['con parentesi']:>10} {d['>1 nome proprio']:>8}")
+                  f"{d['con parentesi']:>10} {d['>1 nome proprio']:>8} "
+                  f"{d['oltre 4 frasi']:>9} {d['oltre 500 caratteri']:>9}")
+        print("\n   >4 frasi e >500 car sono INDICATORI, non soglie del repo: la")
+        print("   prima viene da *Dungeon* («poche frasi»), la seconda dalla proposta")
+        print("   del 2026-10-01. Decide il DM (PIANO-BOX-DI-LUOGO-E-AREA-CHIAVE, D1).")
         print()
 
     if args.metrature:

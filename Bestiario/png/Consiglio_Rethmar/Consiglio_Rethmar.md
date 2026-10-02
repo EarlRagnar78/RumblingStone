@@ -91,7 +91,7 @@ Se le statue vengono rivelate DURANTE la Fase 0 o dopo: Sorvane combatte con fur
 
 Non è coraggioso. Sa che qualcosa non va nelle statue da mesi ma ha scelto deliberatamente di non agire ("problema di classificazione giuridica"). Ha però due risorse uniche:
 
-**Risorsa 1 — Mappe Sotterranee:** Pyriel ha in archivio le mappe complete della rete di tunnel sotto Rethmar — compilate da un mastro costruttore ottocento anni fa (Zeth il Murato, anche se Pyriel non sa il nome). Sono parzialmente cifrate ma decifrabili con Decifrare Scritture CD 18 o Conoscenze (Storia) CD 22. Queste mappe sono le stesse informazioni che Zeth darebbe se il party lo aiuta.
+**Risorsa 1 — Mappe Sotterranee:** Pyriel ha in archivio le mappe complete della rete di tunnel sotto Rethmar — compilate da un mastro costruttore mille anni fa (Zeth il Murato, anche se Pyriel non sa il nome). Sono parzialmente cifrate ma decifrabili con Decifrare Scritture CD 18 o Conoscenze (Storia) CD 22. Queste mappe sono le stesse informazioni che Zeth darebbe se il party lo aiuta.
 
 **Risorsa 2 — Archivio delle Transazioni:** Ha tenuto registro di tutti i "lavori d'arte" acquistati dai nobili di Rethmar negli ultimi due anni. Questo registro è la mappa completa della rete di Varis in città.
 

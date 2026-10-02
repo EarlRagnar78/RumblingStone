@@ -23,6 +23,20 @@
 > è superato). Il resto (deviazione +2→+3, Moradin's Insight, Adamantine
 > Will, gemme) è coerente tra master e HTML.
 
+> **Audit dei poteri (2026-09-25).** Quattro punti di questo master sono
+> **superati** da decisioni successive, e non vanno riportati in una scheda:
+> (1) al Rituale 4 **non** si distrugge la Gemma del Tempo: si spende il
+> **Rubino**, nel ritorno al 1372 (D16, `ARC07-DEF-4` Scene 12-13);
+> (2) il **Rubino** non è un potere settimanale: entra al Rituale 4 ed è
+> monouso; (3) l'**Aura della Forgia Eterna** non è automatica all'arrivo né
+> un evento unico: viene dopo il duello, dura fino all'alba la prima volta e
+> poi resta **1/settimana** (DM 2026-09-20); (4) la **Senzienza** e il
+> completamento con Aegis Fang arrivano al **Rituale 4**, non «dopo il
+> Rituale 1» (lo diceva già il PDF del giocatore del 22/10/2025). Inoltre la
+> scheda finale qui sotto chiede fra i prerequisiti «almeno un incantesimo
+> divino»: tutte le altre fonti no, e Thorik è guerriero. Le pagine a stadi e le
+> domande aperte: `PG/Artefatti/ARTEFATTI-AUDIT-POTERI-2026-09-25.md`.
+
 ## Capitolo 1: L'Anima dell'Artefatto
 
 Lore per il Giocatore (Da Rivelare tramite Leggende o Scritte Antiche)
@@ -768,7 +782,7 @@ visibile mostra un nano che scopre la corona. Il resto è sbiadito.
 ◦ Individuazione del Magico: Rivela un'aura di divinazione forte su tutta la parete.
 ◦ Vedere Invisibilità: Non rivela nulla di nuovo... per ora.
 
-• Dopo  Forge’s Defense : L'aﬀresco si anima, mostrando la scena del sogno. Un nuovo
+• Dopo Forge’s Defense: L'aﬀresco si anima, mostrando la scena del sogno. Un nuovo
 
 pannello si rivela magicamente.
 
@@ -794,7 +808,7 @@ compongono un indovinello: "Dove l'onore è in catene e la fede è perduta, la c
 
 tempo attende di essere trovata."
 
-• Dopo  Trial of the Deep Hall : L'aﬀresco si aggiorna, mostrando il nano liberato. Un nuovo
+• Dopo Trial of the Deep Hall: L'aﬀresco si aggiorna, mostrando il nano liberato. Un nuovo
 
 pannello appare.
 
@@ -808,7 +822,7 @@ che ha la forma perfetta di un'incudine. Sopra di essa, ﬂuttua la sagoma spiri
 
 Moradin, con un martello in mano, in attesa."
 
-• Dopo  Anvil of the World : L'ultimo pannello si svela.
+• Dopo Anvil of the World: L'ultimo pannello si svela.
 
 ◦ Descrizione dell'Aﬀresco (da leggere al giocatore): "L'intero ciclo è ora completo.
 

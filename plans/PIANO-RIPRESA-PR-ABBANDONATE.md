@@ -2893,6 +2893,224 @@ disabilitato finché non si riallinea. Poi due righe: il passo «Update branch
 prima del merge» nella checklist di chiusura della skill `rumblingstone-plans`,
 e una nel Playbook dove si parla di rami.
 
+### 4.12 · Lotto **4j** — il lavoro rimasto nei rami, misurato riga per riga `[✅ chiuso il 2026-09-24 · 4j-1 ✅ · 4j-2 ✅ · 4j-3 ✅ · 4j-4 ✅ · 4j-5 ✅]`
+
+Nasce dalla pulizia dei rami di PRATICHE (D5, D7, D8). Il DM: *«per D7 e D8
+prima misura davvero se non c'è niente, non ti fidare»*, e dopo la misura:
+*«D7 no, D8 no solo se è previsto davvero il recupero, altrimenti mantieni;
+ci sono delle varianti che si possono estrarre e integrare nel main»*.
+
+**FASE 1 · Audit (fatta il 2026-09-24).** `plans/esperimenti/misura-rami/misura_rami.py`
+prende le righe che un ramo aggiunge e le cerca su `main`, identiche o quasi
+(≥ 0,9). La tabella completa, con SHA e lettura delle righe mancanti, è in
+[PRATICHE §7.2](PIANO-PRATICHE-DI-INGEGNERIA.md). Quello che conta qui è la
+parte che **non** è su `main`:
+
+| Ramo | Righe mancanti | Che cosa |
+|---|---:|---|
+| `claude/review-tournament-integration-yYlwv` (nessuna PR) | 813 su 834 | il Torneo di Dauth di maggio, riscritto a luglio da chi lo credeva inesistente (PIANO-REVISIONE-ARC09, voce A8) |
+| `claude/salvatore-character-art-wSjuH` (nessuna PR) | 3 su 3 | due correzioni al villain Salvatore e una di regole nel testo P2C |
+| `claude/optimize-skills-agent-folders-dwJC4` (nessuna PR) | 182 su 281 | per lo più infrastruttura rifatta; ma la correzione di `measure_tokens.py` sui file di caricamento obbligatorio non c'è |
+| `claude/dnd-map-generation-research-55pzry` (#42, rifiutata) | 245 su 264 | un master del Portale (L3 Ultra-Clear) e 11 righe di `render_map_svg.py` |
+| `claude/golarion-pregen-character-sheets-cstheq` (#109, superata) | 130 su 134 | ADR-0021 sul caricamento esplicito delle skill, superato da ADR-0041 |
+| `claude/terros-battle-hints-booklet-hfvbef` (#67, superata) | 308 su 364 | il booklet HTML degli hint di Terros, superato da quello da manifest |
+
+Gli altri otto rami del gruppo B hanno su `main` tutto quello che aggiungono,
+salvo scarti letti uno per uno in PRATICHE §7.2.
+
+**La regola del lotto: nessuno di questi rami si cancella prima che il suo
+sotto-lotto sia chiuso.** Chiuso vuol dire: la variante è entrata su `main`,
+oppure il DM ha scritto perché non entra. Per i tre con una PR il contenuto
+resta anche in `refs/pull/<N>/head`, ma il DM ha deciso di tenerli (D7 = no),
+e il ramo è il modo più semplice di ritrovarli.
+
+**FASE 2 · Sviluppo, un ramo e una PR per sotto-lotto (PRATICHE D6).**
+
+#### 4j-1 · Il Torneo di Dauth di maggio ✅
+`[engine: Opus 5.5, sessione principale · effort: xhigh · qualità: per ognuno dei sei file una tabella «cosa entra, dove, perché no», confermata dal DM prima di scrivere; zero contraddizioni col canone di oggi (Karruk)]`
+
+Classe **K**. Il confronto è file per file, fra la versione di maggio e quella
+di luglio o settembre: master del DM (290 righe contro 166), echi a lungo
+periodo (229 contro 93), sotto-quest di Thorik (170 contro 107), di Artemis e
+di Hella (dove `main` è più lungo), il Giorno 3 (superato nel registro, perché
+fa di Karruk un hobgoblin chierico GS 12 a Dauth). La domanda non è quale
+versione vince: è quali **varianti** di maggio mancano a quella di oggi.
+
+**Com'è andato (2026-09-24).** Letti tutti e sei i file di maggio contro le
+versioni di luglio. Il master di luglio era un indice; quello di maggio era uno
+strumento di regia. Le sotto-quest di Hella e Artemis avevano la stessa premessa
+nelle due stesure, quella di Thorik no: a luglio era solo la logistica delle
+lance. Il DM ha scelto cosa entra con due giri di domande; tutto è adattato al
+canone di oggi (calendario Day 28-33, lance da Hammerfist, D10, D13, Karruk a
+Rethmar).
+
+| Entra | Dove | Adattamento |
+|---|---|---|
+| Griglia dei milestone, gruppo diviso, fazioni e cena, notti, scelte grigie | master §6-§10 (checklist spostata a §11) | 🔎 `HOOKS-Tordek-DauthInvitation` §3.3 rimandava già al «§7 split-party» del master: era la sezione di maggio, e il rimando era rotto da luglio. Esclusi due sogni su quattro: quello di Tordek gli dava una discendenza githyanki, quello di Artemis doppiava il Sogno della Doppia Maschera |
+| Il sergente Verric, le tre vie, il Consiglio di crisi, le prove sulle mura | SUBQUEST-Thorik §3-bis, §4.1, §4-bis | la staffetta la manda Khorn in marcia; gli effetti vanno sul Fronte di Dauth e sulla Carta D. **Non recuperati** i «volontari di Dauth»: romperebbero D10 |
+| Sylith, la variante della fonte vitale, il cucciolo, la Freccia della Promessa | SUBQUEST-Hella §2-bis | Sylith c'è solo se al Day 24 non è rimasta al Sacred Forest (DauthInvitation §3.3); la fonte vale solo per la via PURIFICA; il cucciolo non diventa compagno (Hella ha Durik); tolto l'effetto della freccia sul rito del Sacred Forest, che nel calendario viene prima |
+| Il grimorio come favore della cellula, il ramo DARK-B | SUBQUEST-Artemis §2.3 | il grimorio è il Libro della Verità Nascosta che la Torre ha già (Livello 2); l'emissario è Vashet |
+| 10 righe di echi | CONSEGUENZE-ECHI §3 | — |
+
+**Non entra**: il Giorno 3 di maggio (Karruk comandante a Dauth, contro il
+canone), il «Tordek Stonefist» di maggio. Il cognome giusto, Durinheart, è stato
+corretto anche dove maggio l'aveva lasciato su `main`: la scheda di Maewen e gli
+statblock del Torneo (decisione del DM in 4j-4).
+
+🔎 **Un falso positivo trovato strada facendo**: `validate_prosa` tratta
+`…DAUTH-CONSEGUENZE-ECHI-LUNGO-PERIODO.md` come testo per i giocatori perché il
+nome contiene «ECHI-», e conta come enfasi le sigle delle intestazioni (10 su
+`main`, 9 dopo questo lotto). Il file è per il DM. Si corregge nel misuratore, in
+un lotto suo.
+
+Il ramo `claude/review-tournament-integration-yYlwv` si può cancellare dopo il
+merge.
+#### 4j-2 · Le correzioni di Salvatore ✅
+`[engine: Opus 5.5 · effort: alto · qualità: le tre righe su main, la regola verificata su una fonte del repo, il DM conferma]`
+
+Classe **K**. Il DM ha dato il via il 2026-09-24. La de-pietrificazione è
+verificata sulle schede PCGen del repo (PRATICHE §7.2).
+
+**Com'è andato (2026-09-24).** Due righe su tre sono entrate nella sostanza che il ramo
+proponeva, la terza no:
+
+- testo P2C: *Pietra in Carne* o *Spezzare Incantamento*, con accanto il nome
+  inglese, la pagina del PHB e il livello, perché il repo non usava ancora un
+  nome italiano per *Break Enchantment* (il ramo scriveva «Sciogliere
+  Incantesimo»). E una frase che dice perché *Rimuovere Maledizione* non basta;
+- `Salvatore.md`: PF «79 (14d6+28)». I 14 DV sono tutti d6 (Bardo, Accordo
+  Sublime, Spia), e 6 + 13 × 3,5 + 28 dà 79;
+- `Salvatore.md`, datori di lavoro: 🔴 **la riga del ramo era sbagliata per la
+  scheda di Sonjak.** Il ramo scriveva «Sonjak (Drow Matrona) — *Matrona
+  Sajak* nel codice operativo di Sal», come se Sal conoscesse il nome Sonjak.
+  La scheda di Sonjak dice il contrario: catturato, Sal rivela di lavorare per
+  «Matrona Sajak» e **non** sa il nome di campagna, ed è da lì che nasce il
+  momento «a-ha» dei PG. La riga di `main` («Matrona Sajak») era già giusta
+  dal punto di vista di Sal; si aggiunge solo una nota per il DM che dice chi è.
+
+🔎 **Trovato, e corretto su richiesta del DM**: `00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md`
+§8 scriveva «Matrona Sajak, Sonjak (enforcer)» e aveva in tabella «Sonjak
+(enforcer)» con GS 12: due persone, e un GS diverso dalla scheda. Canone e
+scheda dicono una persona sola, la Matrona, con GS 13. Il DM: *«correggi
+anche questo con l'analisi fatta»*. Ora il §8 dice che Sonjak comanda, che
+Salvatore la conosce solo come «Matrona Sajak», e la tabella porta GS 13 e il
+percorso della scheda. Le note «Sajak rituali» ed «Élite Sajak» restano: usano
+il nome come alias, e l'alias è canone.
+
+Il ramo `claude/salvatore-character-art-wSjuH` si può cancellare quando questo
+sotto-lotto è su `main`.
+
+#### 4j-3 · `measure_tokens.py` e i file di caricamento obbligatorio ✅
+`[engine: Sonnet 5 · effort: medio · qualità: un test che fa rosso se una query di campagna non conta i file che la skill obbliga a caricare]`
+
+Classe **C**. Rifatta sul codice di oggi, non portata: il ramo è di maggio,
+quando le skill erano quattro.
+
+**Com'è andato (2026-09-24).** Il ramo cablava nello script i file da
+precaricare. Oggi li legge dal `SKILL.md`: la lista numerata che segue la riga
+«load order» è il preload, risolto rispetto alla skill, a `skills/` o alla
+radice. Un file che non esiste si dice (MISSING in tabella, avviso su stderr)
+invece di contare zero.
+
+| Domanda | Prima | Dopo | di cui preload |
+|---|---:|---:|---:|
+| Campaign: what's Thorik's status? | 5.564 | 22.938 | 17.374 |
+| Campaign: current arc state? | 3.521 | 20.895 | 17.374 |
+| Campaign: can artifact X be used again? | 4.430 | 18.480 | 17.374 |
+
+«Prima» è lo script di `main` rilanciato sulle skill di oggi. La terza cresce
+meno delle altre perché la sua reference è `campaign-coherence.md`, che adesso
+sta nel preload e si conta una volta. Il risparmio rispetto a caricare tutto
+`skills/` scende dal 97-98% all'88-90% per le domande di campagna; per regole e lore non cambia niente, perché quelle skill non
+dichiarano un preload. `test_tool_decidono.py` tiene fuori `measure_tokens`
+apposta (una misura non decide); `test_measure_tokens.py` collauda il lettore
+del preload, non la misura, e lo dice nel docstring. Tre dei sei test vanno
+rossi se il lettore si rompe.
+
+Il ramo `claude/optimize-skills-agent-folders-dwJC4` si può cancellare: le altre
+righe che porta sono infrastruttura di maggio rifatta dopo (PRATICHE §7.2).
+
+#### 4j-4 · Le varianti dei tre rami giudicati ✅
+`[engine: Opus 5.5 · effort: alto · qualità: per ogni ramo un elenco di varianti con la proposta entra/non entra, e il DM che decide riga per riga]`
+
+Classe **G**. #42, #109, #67: il giudizio del DM di allora riguardava la PR
+intera. Qui si guarda se dentro c'è qualcosa che vale da solo, per esempio le
+11 righe di `render_map_svg.py` della #42. Ne esce un elenco, non codice.
+
+
+**Decisioni del DM (2026-09-24).**
+
+| Ramo | Cosa c'è che su `main` manca | Decisione |
+|---|---|---|
+| #42 | le quattro griglie sono già in `ARC07-MAPPE-DEFINITIVO.md` (T-2, T-3, T-5, T-6); resta il simbolo 🌫 «vuoto / aria» con il suo motivo nel renderer | **entra**: nella legenda (ADR-0048), con un test. È codice: va nella PR della parte di codice di 4j |
+| #109 | una riga «Caricami quando…» in testa a ogni `SKILL.md` | **no**: AGENTS.md e `skills/ORCHESTRAZIONE.md` lo dicono già, con un gate |
+| #67 | il booklet HTML di hint per Terros | **no**: c'è quello da manifest, e questo detta tattica e anticipa l'esito |
+| — | «Tordek Stonefist» in `Bestiario/png/Maewen/Maewen.md` e negli statblock del Torneo | **corretto** in Durinheart, nella PR di 4j-1 |
+
+**Com'è andato (2026-09-24).** 🌫 è in `scripts/legend.yaml` come riempimento
+`t_void`, senza altezza, senza copertura e senza pericolo: si attraversa e si
+vede attraverso. Il motivo viene dal ramo della #42, con due correnti e due
+punti di luce, e si dipinge per primo. Legenda rigenerata a 64 simboli, 57 con
+una funzione; i due numeri congelati in `test_legenda_fonte_unica.py` sono
+aggiornati con la nota del perché. `test_glifo_vuoto.py` controlla che 🌫 non
+sia un muro né un pericolo e che una griglia lo disegni.
+
+🔎 Il piano diceva che nessuna mappa esistente cambiava. Due cambiano:
+`ARC07-MAPPE-DEFINITIVO` usava già 🌫 come simbolo locale, in 346 celle (20 in
+map02, 326 in map03), che fino a oggi uscivano come emoji grezzo. È il difetto 4
+di [RENDER-MAPPE-FEDELTA](PIANO-RENDER-MAPPE-FEDELTA-DETTAGLI.md) §1, chiuso
+per 🌫; 🧲 e 🤖 restano.
+
+🔴 **E le due mappe gli davano due regole.** In map02 è la gravità laterale, «non
+attraversare»; in map03 è lo zero-G dove Artemis vola e Terros perde la
+rigenerazione. L'etichetta del ramo #42, «abisso da attraversare», era sbagliata
+per map02. Quella nuova dice solo ciò che hanno in comune (niente pavimento,
+gravità alterata) e rimanda alla nota della mappa, che nel master c'è. Il prezzo:
+nella legenda dell'SVG la nota locale di map03 («ZERO-G DILEMMA…») è sostituita
+dall'etichetta universale, come per ogni simbolo della legenda. Resta nel master.
+
+Dopo il 🌫, i rami #42, #109 e #67 si possono cancellare.
+
+#### 4j-5 · Il punto cieco del registro ✅
+`[engine: Sonnet 5 · effort: medio · qualità: contenuti_nei_rami --righe fa rosso sul ramo Salvatore e verde su documento-stemmi-alternativi]`
+
+Classe **C**. `contenuti_nei_rami.py` conta i file nuovi e non vede le
+modifiche a file esistenti. Il prototipo è `misura_rami.py`; entra nello
+script come opzione `--righe`, con i due rami qui sopra come casi di test.
+
+**Com'è andato (2026-09-24).** `contenuti_nei_rami.py --righe RAMO…` indicizza
+le righe di `main` con `git archive`, prende le righe che il ramo aggiunge dal
+punto d'incontro e le divide in identiche, quasi (difflib ≥ 0,9 sullo stesso
+file o su uno con lo stesso nome) e mai arrivate. Esce 1 se un ramo ne ha, 2 se
+il ramo non esiste. Il criterio di qualità regge: rosso su Salvatore, verde su
+`documento-stemmi-alternativi-ehgi9m` (31 righe su 31 già su `main`).
+
+I test girano in un repository temporaneo con tre rami che toccano un file che
+`main` ha già: il controllo sui file non vede niente, quello sulle righe vede la
+correzione. Tre test vanno rossi se ogni riga conta come identica.
+`misura_rami.py` resta in `plans/esperimenti/` come prototipo superato, perché
+PRATICHE §7.2 cita i suoi numeri.
+
+**FASE 3 · Validazione.** `misura_rami.py` rilanciato sui sei rami della
+tabella: ogni riga mancante è su `main` oppure ha il suo «perché no» scritto
+dal DM. Poi, e solo poi, il ramo si cancella con lo stesso registro dei 38.
+
+**Fatta il 2026-09-24**, con `contenuti_nei_rami.py --righe` al posto del
+prototipo, contro `main` prima del merge della parte di codice:
+
+| Ramo | Mai arrivate | Perché si può cancellare |
+|---|---:|---|
+| `review-tournament-integration-yYlwv` | 812 su 834 | il recupero è adattato, non copiato: le righe non tornano uguali. Cosa entra e cosa no è la tabella di 4j-1 |
+| `salvatore-character-art-wSjuH` | 2 su 3 | entrambe adattate (4j-2) |
+| `optimize-skills-agent-folders-dwJC4` | 182 su 281 | `measure_tokens` rifatto (4j-3); il resto è infrastruttura di maggio rifatta dopo |
+| `dnd-map-generation-research-55pzry` (#42) | 245 su 264 | le griglie sono già in `ARC07-MAPPE-DEFINITIVO.md`; le 11 righe del renderer entrano con questa PR |
+| `golarion-pregen-character-sheets-cstheq` (#109) | 130 su 134 | il DM: no (4j-4) |
+| `terros-battle-hints-booklet-hfvbef` (#67) | 308 su 364 | il DM: no (4j-4) |
+
+Un numero alto qui non vuol dire lavoro perso: dice dove leggere, e la lettura
+è scritta nel sotto-lotto. I sei rami si possono cancellare quando la PR della
+parte di codice di 4j è su `main`; la cancellazione la fa il DM.
+
 ## Come si misura che il piano è finito
 
 Non «quattro PR chiuse». Queste:

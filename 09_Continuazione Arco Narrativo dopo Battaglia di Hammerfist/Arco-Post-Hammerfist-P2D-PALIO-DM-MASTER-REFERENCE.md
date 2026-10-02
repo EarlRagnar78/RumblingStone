@@ -1,7 +1,9 @@
 # Parte 2D — IL PALIO DI CHANNATHGATE · DM MASTER REFERENCE
 
+> <!-- storico -->
 > **Versione**: v2 (2026-07-01) — arco espanso a **8 contrade**, **3–4 sessioni**,
 > mappe e stemmi allegati.
+> <!-- /storico -->
 > **Doppia natura**: (a) **avventura autoconclusiva** giocabile in D&D 3.5 / PF1e
 > (sandbox urbano-politico, APL 12–13); (b) **snodo geopolitico massivo** della campagna
 > RumblingStone che decide rinforzi, Meraviglie e voto del Consiglio per l'assedio di

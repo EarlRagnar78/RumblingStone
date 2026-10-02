@@ -10,5 +10,48 @@
         ]
       }
     ]
-  }
+  },
+  "enabledPlugins": {
+    "pdf-viewer@synced": true,
+    "review@synced": true,
+    "tdd@synced": true
+  },
+  "skillOverrides": {
+    "anthropic-skills:dnd-35-rules": "off",
+    "docs:write-concisely": "name-only",
+    "docs:update-docs": "name-only",
+    "engineering:architecture": "name-only",
+    "engineering:code-review": "name-only",
+    "engineering:debug": "name-only",
+    "engineering:deploy-checklist": "name-only",
+    "engineering:documentation": "name-only",
+    "engineering:incident-response": "name-only",
+    "engineering:standup": "name-only",
+    "engineering:system-design": "name-only",
+    "engineering:tech-debt": "name-only",
+    "engineering:testing-strategy": "name-only",
+    "reflexion:critique": "name-only",
+    "reflexion:memorize": "name-only",
+    "reflexion:reflect": "name-only",
+    "anthropic-skills:algorithmic-art": "name-only",
+    "anthropic-skills:brand-guidelines": "name-only",
+    "anthropic-skills:canvas-design": "name-only",
+    "anthropic-skills:doc-coauthoring": "name-only",
+    "anthropic-skills:docs": "name-only",
+    "anthropic-skills:docx": "name-only",
+    "anthropic-skills:google-workspace": "name-only",
+    "anthropic-skills:internal-comms": "name-only",
+    "anthropic-skills:mcp-builder": "name-only",
+    "anthropic-skills:morning": "name-only",
+    "anthropic-skills:pdf": "name-only",
+    "anthropic-skills:pptx": "name-only",
+    "anthropic-skills:skill-creator": "name-only",
+    "anthropic-skills:slack-gif-creator": "name-only",
+    "anthropic-skills:theme-factory": "name-only",
+    "anthropic-skills:web-artifacts-builder": "name-only",
+    "anthropic-skills:xlsx": "name-only"
+  },
+  "enabledMcpjsonServers": [
+    "rumblingstone-tools"
+  ]
 }

@@ -1,5 +1,13 @@
 # Legenda universale delle mappe
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- Terreni (fill — regioni organiche texturizzate)
+- Unità (token con gradiente e anello)
+- Oggetti (prop vettoriali illustrati, originali in-house)
+<!-- /indice -->
+
 > **Fonte di verità**: `scripts/legend.yaml` (ADR-0048). Le tabelle qui sotto
 > sono **generate** da lì con `python3 scripts/build_legenda_skill.py`, e la CI
 > le confronta: se divergono, la build fallisce. Non si correggono a mano.
@@ -20,6 +28,7 @@
 | 🟧 | Lava raffreddata / pericolo | — |
 | 🟥 | Zona letale | — |
 | 🟦 | Acqua profonda | — |
+| 🌫 | Vuoto / aria (niente pavimento, gravita' alterata: vale la nota della mappa) | — |
 | 🌊 | Acqua / corrente | — |
 | ⬛ | Edificio / corpo di fabbrica (muratura piena: blocca vista e movimento) | **sì** |
 | 🔳 | Dais / pedana rialzata (ci si sale sopra: NON e' un muro) | — |

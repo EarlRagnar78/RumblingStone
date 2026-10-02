@@ -134,6 +134,17 @@ NORME_SCOPERTE = (
         "sblocca": "PIANO-INDAGINE-E-DEDUZIONE I6, gated su I5",
     },
     {
+        "chiave": "box_di_luogo_senza_creature",
+        "norma": "read-aloud-adulti.md §2-bis — il box di luogo non descrive le creature (Dungeon)",
+        "prerequisito": "ogni box dichiara il suo tipo: di luogo, d'ingresso, di round",
+        "forma": None,
+        "dove": "nessuna forma prescritta: l'etichetta `**Read-aloud (pilastro).**` "
+                "dice la voce, non il tipo del box; senza il tipo, i 322 nomi del "
+                "registro pescano 315 box su 501 (dei, PG, artefatti)",
+        "rilevatore_pronto": None,
+        "sblocca": "PIANO-BOX-DI-LUOGO-E-AREA-CHIAVE B2, D3",
+    },
+    {
         "chiave": "fatto_da_due_nodi",
         "norma": "nodi-e-sei-porte.md — ogni fatto raggiungibile da >=2 nodi",
         "prerequisito": "i nodi d'indagine sono marcati",
@@ -179,6 +190,60 @@ NORME_SCOPERTE = (
         "forma": None,
         "dove": "e' un fatto di **gioco**: nessun file lo porta, e nessun "
                 "rilevatore potra' mai saperlo",
+        "rilevatore_pronto": None,
+        "sblocca": None,
+    },
+    {
+        "chiave": "eco_che_anticipa",
+        "norma": "consequence-echoes.md §3-ter regola 3 — un eco per un PG non anticipa",
+        "prerequisito": "ogni eco per un PG dichiara quale scena del master prepara",
+        "forma": None,
+        "dove": "nessuna forma prescritta: i fogli-eco non dicono a quale scena "
+                "portano, e senza quel legame nessuno sa cosa sarebbe un'anticipazione",
+        "rilevatore_pronto": None,
+        "sblocca": "una convenzione di marcatura eco → scena, poi il confronto col master",
+    },
+    {
+        "chiave": "hero_map_fedele_all_svg",
+        "norma": "rumblingstone-mapmaking regola 8 — una hero map di Canva AI che "
+                 "sposta porte, stanze o accessi rispetto all'SVG si butta",
+        "prerequisito": None,
+        "forma": None,
+        "dove": "il fatto sta in un raster dipinto, non in un testo: confrontarlo "
+                "con l'SVG chiede visione artificiale. Resta il gate di rifiuto di "
+                "chi guarda le due immagini sovrapposte",
+        "rilevatore_pronto": None,
+        "sblocca": None,
+    },
+    {
+        "chiave": "sette_modi_di_stare_al_tavolo",
+        "norma": "sviluppo-degli-incontri.md §7 — negli stand-alone, ogni modo di stare "
+                 "al tavolo di Robin Laws ha una scena",
+        "prerequisito": "le scene dichiarano per chi sono fatte",
+        "forma": None,
+        "dove": "nessuna forma prescritta; la §1 (chi resta a terra contro un nemico in "
+                "volo) si misura da domande_developer.py D1, questa no",
+        "rilevatore_pronto": None,
+        "sblocca": "un campo nel contratto «In scena» (per esempio `Per chi:`), poi un conteggio",
+    },
+    {
+        "chiave": "appunti_quattrocento_parole",
+        "norma": "quiz-a-due-agenti.md — gli appunti del lettore stanno in 400 parole",
+        "prerequisito": "gli appunti di ogni esecuzione del quiz stanno in un posto fisso del repo",
+        "forma": None,
+        "dove": "oggi gli appunti vivono nello scratchpad di chi orchestra; i due del "
+                "2026-09-26 sono stati copiati a mano in plans/esperimenti/quiz-def4/",
+        "rilevatore_pronto": None,
+        "sblocca": "una cartella per esecuzione, poi quiz_lettura.py --check conta le parole",
+    },
+    {
+        "chiave": "lettura_a_freddo_prima_del_def",
+        "norma": "rumblingstone-module-standard, ciclo completo passi 6-7 — un master e' DEF "
+                 "solo dopo lettore e playtester a freddo senza 🔴 e il quiz a due agenti",
+        "prerequisito": None,
+        "forma": None,
+        "dove": "sono letture di un agente: un cancello su un giudizio sarebbe rumore "
+                "(ADR-0073). Li chiede il piano che tocca il master (ADR-0075)",
         "rilevatore_pronto": None,
         "sblocca": None,
     },

@@ -119,7 +119,7 @@ Sal non combatte se può evitarlo. Sequenza di ritiro:
 
 ### Se i PG Liberano le Statue dal Carro
 
-Le statue pietrificate possono essere de-pietrificate con *Rimuovere Maledizione* (CD 22) o *Pietra in Carne*. Se vengono liberate davanti a Sal, lui perde immediatamente la calma — questo è il primo momento in cui cade la maschera: fissa le creature liberate con un'espressione di panico puro, poi tenta di recuperare i "beni di valore".
+Le statue pietrificate possono essere de-pietrificate con *Pietra in Carne* o *Spezzare Incantamento* (*Break Enchantment*, PHB p. 207, 5° livello da chierico). *Rimuovere Maledizione* non basta: la pietrificazione non è una maledizione. Se vengono liberate davanti a Sal, lui perde immediatamente la calma — questo è il primo momento in cui cade la maschera: fissa le creature liberate con un'espressione di panico puro, poi tenta di recuperare i "beni di valore".
 
 Le creature liberate sono: un nano di Hammerfist (testimone diretto degli eventi di -1000 DR, ricorda Vatore), uno gnomo mercante di Sigil, un giovane soldato umano di Rethmar scomparso 3 mesi fa. Il nano riconosce Vatore — e quindi Sal — immediatamente.
 

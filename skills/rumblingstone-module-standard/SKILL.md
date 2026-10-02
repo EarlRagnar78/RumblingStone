@@ -8,7 +8,8 @@ description: >
   "master definitivo", consolidating multiple file generations into one,
   auditing an arc for a final version, or when asked for "qualità AP",
   "modulo definitivo", "consolidamento", "versione finale", "audit dell'arco",
-  "ARC*-DEF-*". Encodes the DM-approved checklist (2026-07-22, PR #61) so
+  "ARC*-DEF-*", and on the DM's words for one: "modulo", "master",
+  "avventura", "stanze", "incontro", "bottega". Encodes the DM-approved checklist (2026-07-22, PR #61) so
   agents know exactly how deep to go — sections, prose level, tactics format,
   budget accounting — without re-deriving it. Reference implementation:
   07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md.
@@ -44,8 +45,42 @@ lettera dal corpo. Nel corpo un mostro si nomina; i suoi numeri stanno
 nell'appendice, una volta sola.
 
 ⚠️ Non è una riorganizzazione dei contenuti obbligatori qui sotto: sono gli
-**stessi** contenuti, disposti secondo come si usano. I cinque master esistenti
-non si riscrivono — vale sui **nuovi** consolidamenti.
+**stessi** contenuti, disposti secondo come si usano. I master esistenti si
+riordinano solo quando il DM lo chiede, come è successo con `ARC07-DEF-3` e
+`ARC07-DEF-4` il 2026-09-25 (#169): quei due sono ora l'**esemplare** del
+riordino.
+
+Quello che la #169 ha reso canone, e che vale per ogni master nuovo o
+riordinato:
+
+- **La scheda d'entrata del PNG sta nella scena** in cui i PG lo incontrano
+  (aspetto, come suona, cosa vuole, cosa sa); i suoi numeri stanno in
+  appendice.
+- **Ogni scena apre con il suo contratto**: `**In scena** — Dove: luogo ·
+  luogo — Chi: persona · persona`. Ogni luogo ha un box che lo nomina
+  nell'etichetta; ogni persona ha la scheda d'entrata, oppure, se è una
+  comparsa, una riga in una tabella **Comparse**
+  (`| Chi | Com'è | Come parla |`) nella scena in cui la si incontra la prima
+  volta. Anche chi non ha un nome: la guardia, il
+  capitano, l'araldo. Lo misura `copertura_scene.py` in CI
+  ([ADR-0073](../../plans/adr/ADR-0073-chi-e-dove-sta-scritto-nella-scena.md));
+  un master nuovo nasce sotto il cancello.
+- **Statistiche e mappe in appendici A4** fra `<!-- pagina: una-colonna -->` e
+  `<!-- /pagina -->`: una pagina da tenere aperta durante lo scontro.
+- **«✉ Si consegna qui»** nel punto esatto in cui un foglio passa ai giocatori,
+  e una tabella in §0 che li mette in fila.
+- **La storia del master non sta nel corpo.** Una nota «riordinato il…», «il box
+  di prima diceva…» o «cosa è cambiato» si avvolge in `<!-- storico -->`: nel
+  repo si legge, in stampa no
+  ([ADR-0069](../../plans/adr/ADR-0069-la-storia-delle-scelte-resta-nel-sorgente.md);
+  la tecnica completa è in `rumblingstone-editoria` §2-bis).
+- **L'intestazione di lavorazione non va in stampa.** «MASTER DEFINITIVO»,
+  «Sostituisce e fonde», i file-fonte, «MAI 5e / CD non DC» stanno in un solo
+  blocco `<!-- apparato -->` in testa al file; sotto, lo stato al tavolo
+  scritto come fatto («Quando si gioca», «Com'è il mondo a quel punto»). Un
+  altro master si cita `DEF-N §x`, e l'esportatore lo traduce nel capitolo del
+  volume o nel titolo del master; mai «master #N», mai il nome di un file
+  ([ADR-0070](../../plans/adr/ADR-0070-l-apparato-di-lavoro-non-va-in-stampa-e-ogni-pagina-si-stampa-una-volta.md)).
 
 **Esemplare**: `10-stand-alone/L'abbazia Della Rotta Sicura/` — corpo (i quattro
 atti) + Appendice A (fazione corsara, borgo, livello 0), Appendice B
@@ -81,6 +116,19 @@ incontri e prove, misteri).
    scritte dal punto di vista del MOSTRO, agganciate alle coordinate della
    mappa, con **soglie pf/morale**, debolezze caratteriali, e riga
    **Sviluppi**; nota di calibrazione numerica + tabella DPR per i boss.
+   **L'area chiave** (una stanza o un luogo con un incontro) tiene le voci
+   delle linee guida di *Dungeon*, in quest'ordine, e salta quelle che non ha:
+   **Read-aloud** (il box di luogo di `read-aloud-adulti.md` §2-bis, senza
+   creature) → **Dati per il DM** (luce, scopo della stanza se il box non lo
+   dice, le misure, e ogni oggetto che si può rompere nella riga SRD
+   *«porta di legno robusta, bloccata: 5 cm; Durezza 5; pf 20; prova di Forza
+   per sfondarla CD 23»*, i valori della tabella delle porte SRD) →
+   **Creature** → **Tattiche** → **Trappole** → **Tesoro** → **Sviluppo** (chi
+   sente lo scontro e in quanti round arriva, quando i nemici si arrendono o
+   fuggono, cosa cambia se i PG ripassano) → **PX ad hoc** se il terreno dà un
+   vantaggio a una parte. Fonte: `RICERCA-STANDARD-PROSA-WOTC-PAIZO` §1.4. Vale
+   per i master nuovi e per quelli che un lotto riscrive; i cinque master di
+   ARC-07 già giocati non si rifanno per questo.
 8. **Boss**: **come ci si entra** (porta/soglia/varco: chi la apre, dove
    sbucano i PG, che gravità c'è appena messo piede dentro — mai lasciare
    il DM a improvvisare l'ingresso), read-aloud **dei sei secondi** della
@@ -125,6 +173,15 @@ incontri e prove, misteri).
     come titoli di brani, **il momento da fotografare** (uno per sessione,
     dichiarato) e una **nota di accessibilità**. Vale sui **nuovi**
     consolidamenti: i cinque master esistenti non si riscrivono.
+    ⚙️ **Foglio del cast, inserto delle CD e indice dei read-aloud non si
+    scrivono a mano** in un master col contratto «In scena»:
+    `python3 scripts/componenti.py --apparato` li genera in
+    `APPARATO-<master>.md` dai componenti del master (scheda d'entrata,
+    comparse, box, prove), e la CI boccia un apparato rimasto indietro
+    ([ADR-0074](../../plans/adr/ADR-0074-il-master-come-componenti.md)). Si
+    scrivono i componenti **nella forma fissa**, e l'apparato esce da sé. Il
+    resto del punto (pronuncia, cue sonori, momento da fotografare,
+    accessibilità) resta a mano.
 16. **Riscalatura a tre assi**: la stessa avventura, per tavoli diversi. Una
     tabella per **livello del party**, una per **numero di giocatori**, una per
     **durata disponibile** — e ognuna con la colonna che nessuno scrive mai:
@@ -181,6 +238,74 @@ regga davanti a delle persone lo dice **`rumblingstone-playtest`**: audit meccan
 dry-run cronometrato, schede di feedback, e il ciclo **alfa → beta → collaudato**.
 Un master che ha passato `validate_modules.py` è **alfa**, non finito.
 
+**Prima** della lettura a freddo, le domande del **developer**:
+[`references/sviluppo-degli-incontri.md`](references/sviluppo-degli-incontri.md).
+Sono sette, e ognuna viene da un difetto vero: chi resta senza niente da fare
+(la lente dei Tier), cosa succede se volano o sono invisibili, i tre tiri
+salvezza, chi sente il rumore, il boss che cambia invece di allungarsi, lo
+skill challenge scritto per intero, e chi si diverte in ogni scena. Da dove
+vengono, e cosa è stato scartato:
+`plans/RICERCA-MANUALE-DEL-MASTER-2026-09.md`.
+
+### Il ciclo completo: quando un master si chiama DEF
+
+Un master è definitivo quando ha fatto **tutti** questi passi, in quest'ordine.
+Vale per **ogni arco** (da `00_` a `09_`) quando viene diviso in master DEF, per
+**ogni stand-alone** (ADR-0017: il Drappo, l'Abbazia, quelli che verranno) e per
+ogni master esistente che un lotto riscrive o rifinisce nello stile. Il
+developer (passo 4) e il playtester (passi 6-7) sono **obbligatori**: un passo
+si salta solo con una decisione del DM scritta nel piano, come per l'Abbazia,
+dove la prosa non cambia. Un piano che tocca un master li cita per numero, non li
+ricopia ([ADR-0075](../../plans/adr/ADR-0075-il-ciclo-del-master-vale-per-ogni-piano.md)).
+
+| # | Passo | Come si sa che è fatto |
+|---|---|---|
+| 1 | **Scene riconoscibili**: in un master `ARC*-DEF-*` ogni scena apre con `### SCENA …`; uno stand-alone con struttura sua dichiara il suo titolo di scena nel profilo di `plans/copertura-scene.json` | i cancelli contano le scene; ⚠️ un modulo con zero scene riconosciute passa senza essere guardato |
+| 2 | **Contratto «In scena»** in ogni scena, schede d'entrata, Comparse (ADR-0073). Dove i PG hanno tempo libero in un luogo abitato, una tabella **Chi si trova qui** con sei righe: comando, culto, rimedi, bottega, messaggi, guardia; una riga vuota si scrive «nessuno». Dove qualcuno vende, **il banco** ([`references/il-banco.md`](references/il-banco.md)): cosa vende e quante, i servizi, chi identifica e in quanto tempo, cosa compra e fino a quale tetto; la spezia dei mercanti è facoltativa | `copertura_scene.py --check`, profilo severo, con C6 (chi vende senza un prezzo); la tabella e il banco completo li chiede il playtester (`P-ABITATO`), non ancora un cancello |
+| 3 | **Componenti** nella forma fissa, apparato generato, statblocchi inclusi dal Bestiario (ADR-0074) | `componenti.py --check` |
+| 4 | **Le domande del developer** ([`references/sviluppo-degli-incontri.md`](references/sviluppo-degli-incontri.md)) | `domande_developer.py --check`, più la lettura delle domande che lo script non vede |
+| 5 | **I box al metro** di `read-aloud-adulti.md`: ≤ 12 righe, un nome proprio nuovo, niente parentesi | `misura_craft.py --box` (non blocca in CI: si esegue) |
+| 6 | **Il giro delle quattro letture a freddo**: lettore, playtester, developer e DM, su un modulo che la rubrica non ha visto, e poi quello che dicono (qui sotto, «Il giro») | [`lettore-a-freddo.md`](../rumblingstone-playtest/references/lettore-a-freddo.md) e [`playtester-a-freddo.md`](../rumblingstone-playtest/references/playtester-a-freddo.md): nessun 🔴; [`sviluppo-degli-incontri.md`](references/sviluppo-degli-incontri.md) letto da un agente. Il DM a freddo ([`dm-a-freddo.md`](../rumblingstone-playtest/references/dm-a-freddo.md)): il primo passo, la vista di chi scorre, è obbligatorio (D9); senza la sua lettura `registro_letture.py` lascia il master in avviso |
+| 7 | **Il ricordo del giorno dopo**: un agente nuovo risponde dal solo diario della lettura a scene, e le risposte si mettono accanto alla serata che il master dichiara. Dove c'è già una chiave approvata dal DM, anche il **quiz a due agenti** (D1 di PIANO-AGENT-SKILLS-ESTERNE, 2026-10-01) | `ricordo_lettura.py domande` e `intenzione`; [`quiz-a-due-agenti.md`](../rumblingstone-playtest/references/quiz-a-due-agenti.md) per il quiz, con `quiz_lettura.py --check` che controlla solo la forma della chiave. Un master che non dichiara la sua serata è un rilievo |
+
+I passi 6 e 7 non sono cancelli: li fa un agente, e li chiede il piano. Un
+master che ha passato i cancelli e non i passi 6-7 è **alfa**.
+
+#### Il giro: le quattro letture, e cosa si fa dopo
+
+È la procedura nata su `ARC07-DEF-4` fra il 25 e il 30 settembre (quattro
+giri, da 2 🔴 a 0 al playtester), scritta perché valga per ogni DEF.
+
+1. **Una copia a freddo**: il master senza i blocchi `storico` e `apparato`,
+   che non vanno in stampa, in una cartella con le quattro rubriche e nient'altro.
+2. **Quattro agenti nuovi, uno per rubrica**, in parallelo. Ognuno legge solo
+   la sua rubrica e il modulo. Il DM a freddo legge scena per scena senza
+   guardare avanti, e il giorno dopo scrive cosa ricorda prima di riaprire.
+3. **Il triage di chi orchestra**, rilievo per rilievo, in quest'ordine:
+   - **il testo lo risolve già** (due regole per la stessa cosa, un numero
+     diverso in due punti): si corregge sul posto, e la versione che vince è
+     quella che il master dichiara canone;
+   - **manca prosa** (un luogo senza box, un PNG senza scheda, una cosa da dire
+     a voce che non c'è, un handout promesso e non scritto): la domanda 2 di
+     `ORCHESTRAZIONE.md` risponde da sé, il giocatore la sentirà, quindi si
+     scrive con `rumblingstone-narrative-style` e i suoi `references/`, al
+     metro dei box (passo 5), e dentro la scena giusta: un'informazione che
+     serve in una scena sta in quella scena, non tre scene dopo. In un master
+     **già giocato** la prosa nuova è solo aggiunta, mai riscritta (DEF-1, D3
+     di MESTIERE-BANCHI);
+   - **manca canone** (una regola che il modulo non ha, un fatto che nessuno
+     ha deciso): una decisione nel piano, con la sua proposta, e nel frattempo
+     la marcatura `[INFERRED — needs DM confirmation]`. Non si inventa.
+4. **Di nuovo il giro**, con agenti nuovi, finché nessuna delle quattro
+   letture ha un 🔴. I 🟠 rimasti hanno ognuno una riga: corretto, residuo con
+   la ragione, o decisione del DM.
+5. **L'archivio**: i rapporti di ogni giro in `plans/esperimenti/<master>-giro-N/`,
+   i conteggi nel piano. È la storia da cui si vede se il master migliora.
+
+Le letture trovano, i cancelli impediscono che torni: un tipo di rilievo che
+ricompare in due master diversi diventa una regola di `copertura_scene.py` o
+di `domande_developer.py`, con i falsi positivi contati a mano.
+
 ## Verifica automatica (CI, zero token)
 
 > ⚠️ I punti **15-16** non sono controllati da `validate_modules.py`: un gate a
@@ -195,6 +320,21 @@ Un master che ha passato `validate_modules.py` è **alfa**, non finito.
 scala, read-aloud minimi). Gira in CI a ogni PR: l'agente NON deve
 ri-verificare a mano ciò che lo script copre — spende i token solo su
 prosa, coerenza e design (ciò che una regex non vede).
+
+`python scripts/domande_developer.py --check` fa le domande del developer
+([`references/sviluppo-degli-incontri.md`](references/sviluppo-degli-incontri.md))
+sulla forma del testo: e se volano, e se sono invisibili, chi sente il rumore,
+i tre TS, la soglia del boss, lo skill challenge per intero. Un master nuovo
+nasce senza rilievi, o con la ragione di ognuno in `plans/domande-developer.json`.
+
+`python scripts/componenti.py --check` (ADR-0074) verifica l'apparato generato
+e le **copie sincronizzate**: un blocco scritto una volta in un file e copiato
+in un altro fra `<!-- include: fonte#blocco -->` e `<!-- /include -->`. È il
+modo di mettere nel master lo statblocco di un PNG del Bestiario senza tenerne
+due versioni: `…/scheda.md#statblocco` copia il recinto ```` ```statblocco ````
+della scheda, e un'errata si fa nel Bestiario e si porta con
+`componenti.py --includi`. **Non** si include la prosa del Bestiario: quella si
+riscrive per il tavolo.
 
 ## Self-check finale (prima di consegnare)
 

@@ -198,5 +198,5 @@
 <text x="73" y="678" font-size="11" fill="#3b2e1e">🚪 — Porta / ingresso</text>
 <use href="#pr_crown" x="46" y="687" width="18" height="18"/>
 <text x="73" y="700" font-size="11" fill="#3b2e1e">👑 — Trono / Corona</text>
-<text x="46" y="732" font-size="9" font-style="italic" fill="#7a6a50">fonte: Portale-Forgia-L1-REVISED-UltraClear.md · SVG generato da scripts/render_map_svg.py (stile pergamena) — non modificare a mano</text>
+<!-- fonte: Portale-Forgia-L1-REVISED-UltraClear.md · SVG generato da scripts/render_map_svg.py (stile pergamena) · non modificare a mano -->
 </svg>

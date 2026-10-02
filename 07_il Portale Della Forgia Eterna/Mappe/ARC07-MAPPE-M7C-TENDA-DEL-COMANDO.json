@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "title": "M7-C — La tenda del comando di Zog'tar (notte, ≈372 DR)",
+  "scale_m_per_square": 1.5,
+  "map_size": [26, 20],
+  "base_terrain": "🟩",
+  "north": "N",
+  "regions": [
+    { "terrain": "🟫", "rect": [8, 4, 10, 9], "label": "Dentro la tenda: terra battuta coperta di pelli" }
+  ],
+  "structures": [
+    { "type": "⛺", "line": [[7, 3], [18, 3]], "label": "Telo nord della tenda (pelle nera: si taglia in un round)" },
+    { "type": "⛺", "line": [[7, 13], [18, 13]], "label": "Telo sud della tenda" },
+    { "type": "⛺", "line": [[7, 3], [7, 13]], "label": "Telo ovest della tenda" },
+    { "type": "⛺", "line": [[18, 3], [18, 13]], "label": "Telo est della tenda" },
+    { "type": "🚪", "at": [12, 3], "label": "La soglia (runa 1: niente teletrasporti)" },
+    { "type": "🟪", "at": [12, 8], "label": "Palo centrale (runa 2: barriera di lame)" },
+    { "type": "🪑", "at": [9, 7], "label": "Tavola con la mappa di Hammerfist" },
+    { "type": "👑", "at": [12, 12], "label": "Seggio di ossa di Zog'tar" },
+    { "type": "🏮", "at": [9, 10], "label": "Braciere del seggio" },
+    { "type": "🏮", "at": [14, 5], "label": "Braciere della soglia" },
+    { "type": "🪓", "at": [17, 4], "label": "Rastrelliera delle guardie" },
+    { "type": "🦴", "at": [8, 4], "label": "Ossa di nani appese ai tiranti" },
+    { "type": "🦴", "at": [17, 8], "label": "Ossa di nani appese ai tiranti" },
+    { "type": "⛺", "center": [3, 3], "radius": 1, "label": "Tende dell'orda" },
+    { "type": "⛺", "center": [3, 9], "radius": 1, "label": "Tende dell'orda" },
+    { "type": "⛺", "center": [3, 16], "radius": 1, "label": "Tende dell'orda" },
+    { "type": "⛺", "center": [22, 10], "radius": 1, "label": "Tende dell'orda" },
+    { "type": "⛺", "center": [22, 16], "radius": 1, "label": "Tende dell'orda" },
+    { "type": "⛺", "center": [9, 17], "radius": 1, "label": "Tende dell'orda" },
+    { "type": "⛺", "center": [16, 17], "radius": 1, "label": "Tende dell'orda" }
+  ],
+  "hazards": [
+    { "type": "🔥", "at": [5, 13], "label": "Falò", "effect": "luce fioca a 3 m: Nascondersi CD +4 nei quadretti vicini" },
+    { "type": "🔥", "at": [21, 13], "label": "Falò", "effect": "luce fioca a 3 m: Nascondersi CD +4 nei quadretti vicini" }
+  ],
+  "units": [
+    { "faction": "PG", "name": "I quattro, invisibili (Scena 6)", "token": "🔵", "area": { "rect": [11, 1, 4, 1] }, "quantity": 4 },
+    { "faction": "PG", "name": "Durik", "token": "🟢", "at": [10, 1] },
+    { "faction": "Orda", "name": "Zog'tar Deatheye (Grande)", "token": "⚫", "area": { "rect": [12, 10, 2, 2] }, "cr": "GS 14" },
+    { "faction": "Orda", "name": "Balvar Fuocospento, nell'angolo buio", "token": "🟡", "at": [17, 12], "cr": "GS 13" },
+    { "faction": "Orda", "name": "Guardia hobgoblin", "token": "🔴", "at": [10, 11], "cr": "Guerriero 8" },
+    { "faction": "Orda", "name": "Guardia hobgoblin", "token": "🔴", "at": [15, 11], "cr": "Guerriero 8" },
+    { "faction": "Orda", "name": "Guardia hobgoblin", "token": "🔴", "at": [11, 4], "cr": "Guerriero 8" },
+    { "faction": "Orda", "name": "Guardia hobgoblin", "token": "🔴", "at": [13, 4], "cr": "Guerriero 8" }
+  ],
+  "movements": [
+    { "name": "Il corridore hobgoblin (complicazione 6 della Scena 6)", "path": [[25, 6], [20, 2], [13, 2]], "color": "#d62828" }
+  ],
+  "notes": [
+    "La tenda e' 18 m x 16,5 m, di pelle nera e ossa di nani; la geometria si cambia qui e si ricompila.",
+    "I PG arrivano da nord, dalla fortezza. La soglia e' illuminata, il fondo no: Balvar siede dove i bracieri non arrivano (Scena 7).",
+    "Runa 3: su Balvar (silenzio a comando). Runa 4: vuota, la incide durante lo scontro."
+  ]
+}

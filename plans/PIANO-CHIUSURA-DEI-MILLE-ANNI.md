@@ -238,8 +238,83 @@ l'apparato è fermo permette di misurare **solo** l'effetto della prosa.
 | ✅ | **D-B** — Il Rituale 4 si gioca **DOPO il combattimento**, all'esito dell'incontro, e **senza ulteriori costi** | **decisa dal DM 2026-09-19** |
 | ✅ | **D-C** — verificato: **non si riscrivono** | i nove erano **tre**, e i tre sono nomi noti o un nome spezzato in due parole. Il difetto stava nel metro, ed è corretto |
 | ✅ | **D-D** — allineare i tre master a `state.md` (**niente −2 COS**) | **confermata dal DM 2026-09-19** → M2.0 chiuso |
+| ✅ | **D-E** — a −1.000 il gruppo può **commerciare** con la fortezza assediata: una scena alla fucina, una tabella per i giocatori, una per il DM con gli echi | **decisa dal DM 2026-09-25**: le monete del 1372 **valgono a peso**; torna nel 1372 **ciò che i PG portano addosso**, resta qui ciò che consumano o vendono, e ritorna come reliquia → lotto **M5** |
+| ✅ | **D-F** — le rune di Zeth sono *resistere all'energia* acido **20**, durata SRD (70 minuti); di notte il drago va sulle colline, e come torni lo decide il modulo | **decisa dal DM 2026-09-26** → lotto **M6** |
 
 ---
+
+## 5-bis · Lotto M5 — la fucina di notte *(2026-09-25, dopo la chiusura)*
+
+Il DM: *«il gruppo arriva a −1000 e vuole commerciare nonostante l'assedio:
+cosa gli posso far commerciare, con che limite, cosa è disponibile mille anni
+prima […] e cosa sarebbero disposti a comprare gli armaioli di Hammerfist?»*
+
+- [x] **M5.1** `ARC07-DEF-4` Scena 5: la **fucina di notte** (1 tacca, riga
+  nell'orologio): un box, la scheda d'entrata di Gunnvor, il profilo della
+  fortezza come mercato (insediamenti PF1e, dichiarati come supporto), il
+  banco con i prezzi SRD, cosa compra e cosa rifiuta, l'ascia del gelo, la
+  regola di quello che nel 372 non esiste ancora
+- [x] **M5.2** la decisione D-E scritta dove si usa: §6, §7 (una riga
+  d'eco; il dettaglio in Scena 5, perché la tabella larga in stampa non sfori la pagina), §8 B; e nell'audit del tesoro, che diceva il contrario
+- [x] **M5.3** il foglio per i giocatori, `volume-mille-anni/04-HANDOUT-BANCO-DI-GUNNVOR.md`,
+  nel volume dei giocatori e nel corredo della serata; stampato, sta in una
+  pagina
+- **Misure**: box di DEF-4 da 23 a 24, nessuno oltre 12 righe, parentesi e
+  nomi propri invariati (2 e 2, preesistenti). Otto voci marcate
+  `[INFERRED — needs DM confirmation]`: il forziere del re da 10.000 mo, il
+  pesatore (la trattenuta e il suo +8), lo sconto di chi aiuta al banco, le gemme a
+  metà, il costo sulle mura degli incantesimi di 4°-5°, l'ascia del gelo nel
+  1372, le reliquie
+- ⚠️ **Cosa non si è potuto misurare**: le monete che i PG hanno in tasca. Il
+  repo non le registra, né in `state.md` né altrove; il limite di spesa
+  quindi viene dalla fortezza, non dalla loro borsa
+
+## 5-ter · Lotto M6 — dall'alto *(2026-09-26)*
+
+Il DM: il gruppo vuole **infiltrarsi volando invisibile, con una pietra del
+silenzio**; il campo è largo circa 2 km; gli esploratori hanno visto il drago
+andare sulle colline di notte, ma non sanno come e quando torna.
+
+- [x] **M6.1** Scena 6, «Variante dall'alto»: i numeri SRD (*volare* 5 minuti,
+  *invisibilità* 3 e 12, *silenzio* 6 m), 1 tacca invece di 2, le tattiche
+  probabili per ognuno nel campo, e l'allarme che nasce dalla bolla di silenzio
+  alla tenda
+- [x] **M6.2** Come torna il drago: il **corno di ferro nero** del §8 B, che già
+  esisteva come curiosità, diventa il richiamo della Catena; cosa succede se
+  suona di notte e se lo rubano. Marcato `[INFERRED]`
+- [x] **M6.3** Cosa sanno gli esploratori e cosa sbagliano, con un errore
+  fecondo (il «nano prigioniero» è Balvar)
+- [x] **M6.5** *(stesso giorno, domanda del DM)* le **rune di Balvar alla tenda**: tre *glifi di interdizione* legati ai nani, scoppio sonoro che fa da allarme, spenti dalla bolla di silenzio; la tabella degli esploratori dice «non esatto» invece di «falso». Marcato `[INFERRED]`
+- [x] **M6.6** *(stesso giorno)* chi vola: Artemis a volontà, tre pozioni per gli altri; Durik resta alla postierla o torna nel seme della Collana fino all'alba (decisione del DM)
+- [x] **M6.7** *(stesso giorno)* il DM conferma rune, corno e tacche: tolte le marche `[INFERRED]`. Le rune di Balvar al 13° livello (chierico 9 + Runecaster 4), scoppio 5d8. Il ritorno: pozioni e pergamene delle avventure di prima, poi a piedi o portati da Artemis
+- [x] **M6.4** Scena 5: le rune di Zeth (D-F). Correzione: le pozioni del re
+  duravano «120 minuti», e per l'SRD sono 12
+- **Misure**: box di DEF-4 da 24 a 25, nessuno oltre 12 righe; stampa del
+  corredo e dei 15 volumi pulita
+
+## 5-quater · Lotto M7 — chi si incontra e dove *(2026-09-26)*
+
+Il DM: *«nell'avventura così come è scritta mancano davvero le descrizioni delle
+stanze e dei PNG che incontrano, li ho dovuti inventare sul momento»*. Misurato:
+le schede d'entrata dei PNG principali c'erano; mancavano i luoghi della notte e
+le persone con cui il gruppo ha trattato davvero.
+
+- [x] **M7.1** Scena 5: i quartieri ospiti, la cappella con **Sorella Brynja**,
+  la bottega di **Kettra** l'alchimista (le bombe di fuoco, prezzate come una
+  pozione), le gallerie di Zeth. Tre box nuovi
+- [x] **M7.2** Scena 6: le rune della tenda rese possibili. Soglia: *epurare
+  invisibilità* come runa incisa di Balvar (la regola sta nella sua scheda, non
+  nell'SRD); telo e corno: *glifo di interdizione* SRD. L'araldo **Grask**
+- [x] **M7.3** Scena 7: le quattro guardie; perché Balvar è con l'orda e perché
+  Zog'tar si fida; come Balvar sa dei PG, dalla **Corona** e non dall'ascia
+- [x] **M7.4** Scena 10: il capitano delle mura **Hrodgar**. Scena 12: il
+  vecchio del rito è Re Thorek se il tavolo non ha incontrato Thorgrim
+- Tutto marcato `[INFERRED — needs DM confirmation]`. Box di DEF-4 da 25 a 28,
+  nessuno oltre 12 righe
+- [x] **M7.5** il DM conferma i nomi (Brynja, Kettra, Grask, Hrodgar) e Balvar **chierico di 13° livello** (9 + Runecaster 4), anche nella sua scheda del Bestiario
+- ⚠️ **Resta aperto**: il modulo chiama Hammerfist «fortezza giovane,
+  appena eretta» mentre Balvar ne è stato il runaio prima che nascessero i
+  bisnonni dei nani di oggi
 
 ## 6 · Il numero ADR
 

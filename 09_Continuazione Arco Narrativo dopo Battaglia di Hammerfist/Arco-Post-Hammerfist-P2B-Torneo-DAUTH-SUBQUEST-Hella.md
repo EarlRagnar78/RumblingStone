@@ -187,6 +187,99 @@ immune a veleno; **rigenera 10 pf/round** finché è connessa alle radici). Non 
 
 ---
 
+## 2-bis. Dalla stesura di maggio: Sylith, la fonte del rito, il cucciolo, la freccia
+
+> **Recupero del 2026-09-24 (RIPRESA-PR 4j-1).** La prima stesura di questa
+> sotto-quest, scritta a maggio e mai arrivata su `main`, aveva la stessa premessa
+> (un boschetto che muore per una spora dei drow di Sonjak) e quattro cose che
+> questa versione non ha. Il DM le ha volute tutte. Sono adattate: il boschetto è a
+> ovest, il compagno di Hella è **Durik**, e il rito del Sacred Forest viene prima di
+> Dauth.
+
+### Sylith dei Faggi-grigi, la custode
+
+Un'elfa dei boschi, ranger, che custodisce il boschetto da sola. **Ranger 8**
+(nemico prescelto: aberrazioni), pf 60, CA 19, arco lungo composito +13/+8 (1d8+2,
+×3), spada corta +9/+4; una vecchia lince, **Brusa** `[statblock veloce della
+stesura di maggio]`. Ha 247 anni, parla per frasi di tre parole e non si fida della
+gente di Dauth: *non ascoltano gli alberi*. Di Hella si fida a vista. Aspetta da
+mesi un druido che dia al boschetto il rito di cui ha bisogno; da tre giorni sa
+anche perché.
+
+**SYLITH (asciutta, senza metafore):** *«Senti il dolore? Bene. Non sei sorda come
+loro. Vieni.»*
+
+⚠️ **Dov'è Sylith dipende dal Day 24.** Se Hella le ha affidato il rito del Sacred
+Forest per poter partire (`HOOKS-Tordek-DauthInvitation` §3.3), Sylith è rimasta là
+e il boschetto è senza custode: la sua parte in Atto 1 la fa Madre Ondil, e le righe
+qui sotto su di lei non valgono.
+
+Nella sotto-quest:
+- **Atto 1**: è il quarto aggancio. Trova Hella alla porta ovest e la porta al
+  boschetto.
+- **Atto 2**: conosce i sentieri. Il primo passo del percorso nel folto riesce
+  automaticamente.
+- **Atto 3**: combatte al fianco di Hella. È uno degli alleati che il DM può usare
+  per non lasciarla sola contro l'EL 13.
+- **Esito**: se il boschetto vive, Sylith è un'**arciera alleata a Rethmar, Fase 1**.
+  Se Hella lo brucia, se ne va senza salutare. Se il boschetto cade, muore
+  difendendolo, e i PG lo sanno.
+
+### La fonte del rito (variante, per i tavoli che reggono il tono)
+
+Il DM la sceglie **in preparazione**, non al tavolo. Se è in gioco, la via
+**PURIFICA** di §2.3 non basta più come rito di Concentrazione: serve una **fonte
+vitale donata**, e la sua forza decide il rito. **BRUCIARE** resta possibile e non
+chiede niente a nessuno: diventa la via per chi non vuole che qualcuno paghi con la
+vita.
+
+| Fonte | Esito del rito | Il costo |
+|---|---|---|
+| **Toppi**, un fey antico legato alla quercia madre, che offre la propria vita | Pieno: Spora-Madre distrutta, boschetto vivo | Toppi muore, sorridendo e ringraziando. Il cerchio del Sacred Forest lo verrà a sapere: Saraah tratterà Hella con più durezza |
+| **Dodici esploratori hobgoblin** catturati vivi e legati all'altare | Pieno | Sono nemici e sono uomini, e si arrendono. Hella deve guidare la lama. Sylith le giura fedeltà; Toppi vive e non le rivolgerà più la parola. Hella non dorme per quattordici notti: **–1 alle prove di Saggezza** in quel periodo |
+| **Nessuna fonte**: il rito solo col corpo di Hella | A metà: il boschetto regge e le cisterne restano pulite fino al Day 32, ma la Spora-Madre è **addormentata**, non distrutta. Si schiuderà dopo Rethmar | Hella perde **1 punto di Costituzione** (risucchio, recuperabile con *ristorare*). Il cerchio druidico approva |
+
+La cattura degli esploratori è un incontro a sé: dodici
+`Bestiario/mostri/hobgoblin-regular-warrior3-cr2.md`, un
+`Bestiario/mostri/hobgoblin-sergente-cr5.md` e un
+`Bestiario/mostri/worg-cavalcatura-cr2.md`, **EL ~10**. Sono gli stessi che la notte
+del Day 31 porterebbero i segnali fumogeni (`...DM-MASTER-REFERENCE.md` §9.2):
+catturarli qui vale anche come agguato sventato.
+
+> **Nota di regia.** La via dei prigionieri è fatta per disturbare: un hobgoblin
+> giovane che piange, il tempo che rallenta. Si gioca solo se il tavolo lo regge.
+> Toppi non è un aiutante buffo: è una mente molto vecchia in un corpo di bambino, e
+> le sue canzonette sono il modo in cui si protegge dal peso.
+
+### Il cucciolo (Day 31, slot libero, opzionale)
+
+Ai margini del boschetto Hella sente (Sopravvivenza **CD 16**) un **giovane
+rinoceronte** ferito, fuggito verso sud davanti alla Vanguard `[INFERRED —
+*Rinoceronte* SRD, esemplare giovane]`. Tre **ogre** (SRD, EL 6) lo braccano per
+portarlo come carne al campo della Mano Rossa.
+
+Si gioca calma e triste: il cucciolo non capisce, e Hella deve calmarlo con
+*empatia selvatica*. Durik, che è di pietra, gli si mette accanto e non si muove.
+
+Il cucciolo **non diventa un compagno**: Hella ha già Durik, e un druido ne ha uno
+solo. Resta al boschetto con Sylith (o con Madre Ondil). Nella bisaccia di uno degli
+ogre c'è una tacca del furiere della Vanguard: la colonna è corta di viveri, e al
+Day 32 l'ultima ondata ha **+1** al check di morale dei difensori.
+
+### La Freccia della Promessa (Day 32, alba)
+
+Solo se Sylith è viva e ha accettato Hella. Prima delle campane le porta una
+freccia, ricavata da un ramo del faggio più vecchio.
+
+**SYLITH:** *«Non la userai per te. La userai per qualcuno che ami. Così il bosco
+saprà che hai capito.»*
+
+Una volta sola: quando un alleato sta per scendere a 0 pf per un attacco, Hella può
+scagliarla (azione immediata) e l'attacco va a vuoto. La freccia si disfa in foglie.
+`[INFERRED — oggetto di trama, non SRD; confermato dal DM il 2026-09-24]`
+
+---
+
 ## 3. Tabella dei rami (colpo d'occhio)
 
 | Ramo | Cosa fa Hella | Esito boschetto / Dauth | Eco |
@@ -251,6 +344,8 @@ La Fase 0 di Rethmar (`...P3-BATTAGLIA-FINALE-FASE0-NOTTE-DEI-DROW-TESTO.md`) ve
 - [ ] Registrata la **scelta** (PURIFICA / BRUCIA / NON RISOLTO) e la sorte di **Yssaria**?
 - [ ] Segnato che Hella ha **il pattern** (→ Sacred Forest, Ghostlord, Rethmar Fase 0)?
 - [ ] Propagato lo stato delle **cisterne** all'assedio Day 3 (`...DAY3-CITY-SIEGE.md`)?
+- [ ] Deciso **in preparazione** se la variante della fonte vitale è in gioco (§2-bis)?
+- [ ] Dov'è Sylith: a Dauth, o rimasta al Sacred Forest (Day 24)?
 
 ---
 

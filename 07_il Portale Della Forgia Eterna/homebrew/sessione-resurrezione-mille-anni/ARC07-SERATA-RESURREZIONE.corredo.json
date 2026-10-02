@@ -1,0 +1,39 @@
+{
+  "versione": 1,
+  "serata": "2026-09-25",
+  "titolo": "La resurrezione di Hella e il viaggio a mille anni fa",
+  "arco": "ARC-07",
+  "pg": [
+    "Thorik",
+    "Tordek",
+    "Artemis",
+    "Hella"
+  ],
+  "booklet_dm": "ARC07-SERATA-RESURREZIONE-BOOKLET.manifest.json",
+  "fogli_giocatori": "ARC07-SERATA-GIOCATORI.manifest.json",
+  "echi": {
+    "Thorik": "03-ECHI-THORIK.md",
+    "Tordek": "04-ECHI-TORDEK.md",
+    "Artemis": "05-ECHI-ARTEMIS.md",
+    "Hella": "06-ECHI-HELLA.md"
+  },
+  "carte_e_handout": [
+    "07a-CARTA-DONO-THORIK.md",
+    "07b-CARTA-DONO-TORDEK.md",
+    "07c-CARTA-DONO-ARTEMIS.md",
+    "08-SCHEDA-DURIK.md",
+    "09-SCHEDA-HELLA-RISORTA.md",
+    "10-HANDOUT-PREGHIERA.md",
+    "11-TAVOLA-CUORE-DI-MORADIN.md",
+    "../HANDOUT-1-cronache-quattro-eroi.hb.md",
+    "../volume-mille-anni/03-HANDOUT-PIANO-DI-BATTAGLIA.md",
+    "../volume-mille-anni/04-HANDOUT-BANCO-DI-GUNNVOR.md"
+  ],
+  "immagini": {
+    "prompt": [
+      "../../Immagini/PROMPT-RITRATTI-E-TAVOLE-ARC07.md"
+    ],
+    "note": "Le immagini più vecchie dell'arco (PROMPT-IMMAGINI-07ILP.md) non sono della serata: hanno la loro provenienza in Immagini/PROVENIENZA.txt."
+  },
+  "note": "Sessione lunga: il booklet del DM stampa DEF-2, DEF-3 e DEF-4. Il volume del −1000 (volume-mille-anni/) è un libro a sé e non fa parte di questo corredo, perché ristamperebbe DEF-4."
+}

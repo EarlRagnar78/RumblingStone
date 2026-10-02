@@ -1,0 +1,25 @@
+{
+  "_cos_e": "I rilievi d'apparato che un volume stampa ancora, dichiarati uno per uno col perché (ADR-0070). Il bersaglio è zero. Il controllo è validate_corredo.controlla_apparato, chiamato da validate_booklets --stampa per ogni volume e da validate_corredo per il corredo: un rilievo in più è rosso, e un tetto più alto del vero è rosso anche lui, perché il tetto si deriva e non si ricorda. Un volume che non sta qui ha tetto zero.",
+  "misura": {
+    "data": "2026-09-25",
+    "come": "python3 scripts/validate_booklets.py --stampa, con PyMuPDF"
+  },
+  "volumi": {
+    "07_il Portale Della Forgia Eterna/homebrew/volume-mille-anni/ARC07-MILLE-ANNI-VOLUME.manifest.json": {
+      "tetto": 2,
+      "perche": "l'[INFERRED] di Balvar sul pf-dado tolto da conformita_statblocchi.py: è una decisione aperta al DM, e si chiude col lotto del Bestiario delle marcature (STATO-E-ORDINE §12.1)"
+    },
+    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/homebrew/PALIO-BOOKLET.manifest.json": {
+      "tetto": 26,
+      "perche": "3 sono l'attribuzione di licenza delle icone (CREDITS.md), che deve restare stampata; 1 è il rimando al gate d'uscita IP nel colophon; il resto (le «patch a state.md», la procedura di rigenerazione degli stemmi, i rimandi a schede del Bestiario) chiede un giudizio dentro il modulo: lotto successivo di CICLO-SESSIONE 2g"
+    },
+    "10-stand-alone/L'abbazia Della Rotta Sicura/homebrew/abbazia-rotta-sicura.manifest.json": {
+      "tetto": 1,
+      "perche": "il rimando al gate d'uscita IP (GUIDA-CONDIVISIONE-IP.md) nelle note d'edizione: è voluto, dice al lettore dove sta la regola per condividere il modulo"
+    },
+    "STANDALONE-Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-DM.manifest.json": {
+      "tetto": 43,
+      "perche": "la mappa dei file del modulo nell'hub (un modulo autonomo la dà al DM che lo scarica), i comandi per rigenerare le mappe, lo STATO-DEL-MODULO da stampare a parte: cosa sia apparato in un modulo autonomo lo decide il DM, lotto successivo di CICLO-SESSIONE 2g"
+    }
+  }
+}

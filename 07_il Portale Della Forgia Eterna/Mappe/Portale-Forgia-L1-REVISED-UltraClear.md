@@ -254,7 +254,7 @@ VISTA INGRESSO (PG Guardano Sud) ↓
 > i Yochlol perdono il teleport-ombra affidabile; se **Xanathira è
 > individuata presto** (Osservare vs Nascondersi +12) la Death Attack può
 > essere prevenuta. Trigger ai dadi e alle scelte dei PG, mai copione.
-> `[INFERRED — soglie/percentuali esatte a discrezione del DM]`
+> Soglie e percentuali esatte sono a discrezione del DM.
 
 ---
 
@@ -404,7 +404,7 @@ NOTA: A6 🕐 TIME PORTAL, A7, A8 altri affreschi non mostrati per brevità (SW,
 |---|---|---|---|
 | A — Hub attivo (attuale) | arrivo dalla Stanza della Corona | A3 Fuoco, A5 Terra, A6 Tempo **attivi**; A1/A2/A4/A7/A8 inattivi | i 3 portali guidano ai Piani (P3/P4/P5) |
 | B — Rituale del Cuore in corso | P3B (resurrezione Hella) | l'Altare pulsa; energia convergente dai 3 portali | la scena del rituale (vedi `PortaleForgia-P3B-...`) |
-| C — Ritorno | completamento dell'Assedio (P5) | **A8 «Ritorno Trionfale» si attiva** (profezia adempiuta) | soglia di uscita/epilogo `[INFERRED — needs DM confirmation]` |
+| C — Ritorno | completamento dell'Assedio (P5) | **A8 «Ritorno Trionfale» si attiva** (profezia adempiuta) | soglia di uscita/epilogo |
 
 > Esiti aperti (D13): quali portali il party attraversa e in che ordine è una
 > scelta dei PG; l'attivazione di A8 è legata all'esito dell'Assedio, non a un

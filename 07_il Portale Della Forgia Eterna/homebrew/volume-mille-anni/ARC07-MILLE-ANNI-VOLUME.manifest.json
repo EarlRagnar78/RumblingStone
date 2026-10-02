@@ -1,0 +1,40 @@
+{
+  "brand": "RUMBLING STONE · ARC-07 · IL PORTALE DELLA FORGIA ETERNA",
+  "title": "Il Viaggio a Mille Anni fa",
+  "subtitle": "Hammerfist ≈372 DR · la notte dell'orda · il duello con Skullcrusher · il Rituale della Forgia Eterna",
+  "banner": "VOLUME DEL DM",
+  "meta": "Avventura D&D 3.5 per 4 personaggi di 13° livello · Faerûn, ≈372 DR (mille anni prima del 1372) · Campagna privata RumblingStone · il viaggio in ordine di gioco, con le appendici di statistiche e mappe, Balvar, la Forgia che ricorda le ferite",
+  "header": "Il secondo libro della serata: il viaggio a mille anni fa in ordine di gioco, dal tramonto all'alba, con le appendici di statistiche e mappe su pagine A4. Le pagine ✉ sono nel volume dei giocatori.",
+  "footer": "Il Viaggio a Mille Anni fa",
+  "player_footer": "Le Cronache dei Quattro Eroi",
+  "colophon": {
+    "edizione": "Volume del DM",
+    "versione": "v3",
+    "data": "2026-09-25",
+    "autori": "Il DM di RumblingStone, con l'agente di scrittura del repo",
+    "basato_su": "D&D 3.5 SRD (OGL 1.0a); adattamento privato di Red Hand of Doom (Wizards of the Coast, 2006)",
+    "licenza": "materiale del DM, uso privato del tavolo, non diffondere",
+    "nota": "Sostituisce il Fascicolo V di luglio. v3: le due pagine ✉ passano al volume dei giocatori, dove stanno una volta sola"
+  },
+  "cover_image": "../../Immagini/web/Sala Forgia Eterna - Camera Ottagono con 8 Affreschi Divini (Parte 2).jpg",
+  "intro_md": "00-INTRO-VOLUME.md",
+  "out": "ARC07-MILLE-ANNI-VOLUME.html",
+  "chapters": [
+    {
+      "title": "I · Il Viaggio a Mille Anni fa",
+      "file": "../../ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+      "tag": "dm"
+    },
+    {
+      "title": "II · Balvar Fuocospento",
+      "file": "../../../Bestiario/villain/balvar-fuocospento-cr13.md",
+      "tag": "dm"
+    },
+    {
+      "title": "III · La Forgia ricorda le ferite",
+      "file": "../../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md",
+      "tag": "dm"
+    }
+  ],
+  "fregio": "../../../docs/assets/fregi/fregio-arco-07-forgia.svg"
+}

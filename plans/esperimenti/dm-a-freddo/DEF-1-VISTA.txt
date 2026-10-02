@@ -1,0 +1,120 @@
+VISTA DI CHI SCORRE — il testo intero non c'è, di proposito
+07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md · 25162 parole · circa 126 minuti per leggerlo tutto
+------------------------------------------------------------
+LA SERATA (primo paragrafo di «§0 — QUICKSTART DM (una pagina)»):
+  **Dove siete.** I Custodi Eterni sono entrati nel Portale della Forgia Eterna per recuperare le tre gemme della Corona di Adamantio e riportare in vita **Hella Oakenshield**, morta nella Stanza della Corona (ARC-06). Il **Topazio del Tempo** è già stato forgiato nel Piano del Fuoco. Ora si scende nel **Piano Elementale della Terra** per lo **Smeraldo della Forza** — e non sarà una passeggiata: la fisica stessa del piano è un nemico.
+
+TITOLI:
+  ARC-07 · DEFINITIVO #1 — IL PIANO DELLA TERRA & TERROS L'ANTICO
+    Il Portale della Forgia Eterna — Seconda Gemma (Smeraldo della Forza)
+    INDICE DEL MODULO
+    §0 — QUICKSTART DM (una pagina)
+    §0-bis — QUICK-REFERENCE DM (da stampare: tutto lo scontro in una pagina)
+      CD chiave della parte
+      Iniziativa tipo & pf da tracciare
+      Il giro di Terros, in breve (3.5: UNA azione per round)
+      🐾 Supporto Pathfinder 1e (dove il 3.5 è vago) — opzionale, dichiarato
+    §1 — HIGHLIGHT ASIMMETRICI PER PG (conoscenza divisa)
+      ⚒️ TORDEK — «Incudine e Martello» (il beat centrale della parte)
+      🛡️ THORIK — il peso della Corona, e la ferita che si porta dentro
+      🔮 ARTEMIS — il predone avido (NIENTE tentazioni divine)
+      🌙 HELLA — solo echi (nano dei sogni, morta)
+    §2 — INGRESSO E BENEDIZIONE (Gravità 2× «Iraconda»)
+      SCENA 1 — Il risveglio nella Sala, e l'affresco che si apre
+      L'apertura dell'Affresco A5 (recuperato dall'Interludio — non tagliare)
+    §3 — GRAVITÀ AUMENTATA: REGOLE 3.5 COMPLETE (movimento lento)
+    §4 — IL VIAGGIO VERSO IL TEMPIO (~2,5 ore, movimento rallentato)
+      SCENA 2 — Le piattaforme di cristallo
+      Atlante delle Zone (guida-struttura del viaggio — prosa e crunch per ogni ambiente)
+      Eventi di viaggio (d6 — uno per zona attraversata, a discrezione)
+      Ambiente dinamico del piano (recuperato da TACTICAL-GRIDS MAP 5 — non tagliare)
+    §5 — INCONTRO 1: GLI XORN DELLA FORESTA (grigio, ma DURO)
+      SCENA 3 — La foresta, e gli Xorn al pilastro
+      Se si combatte — e sarà DURO (EL ~13-14)
+      Tattiche degli Xorn — regia round per round (stile RHoD, agganciata a MAPPA T-2)
+    §6 — INCONTRO 2 (OPZIONALE): I CRISTALLI VIVENTI — Skill Challenge
+      SCENA 4 — Il giardino che canta
+      L'incontro si può SALTARE (e come)
+      Se invece entrano — il giardino che canta
+      Skill Challenge — Guadagnare la fiducia dei Cristalli
+    §6-bis — IL SEME-MERCATO DI VARIS (quest personale di Artemis, NEL TEMPIO) `[CANONE — DM 2026-07-23; posizione aggiornata DM 2026-07-30; l'esito (accetta/rifiuta) si gioca]`
+      SCENA 5 — Il Seme-Mercato (si gioca dopo la Scena 7)
+      La reazione dell'Anello — coerente col suo carattere (Caotico Buono)
+      Meccanica sintetica (3.5)
+    §7 — IL TEMPIO DI MITHRAL: PUZZLE GRAVITAZIONALE + SENTINELLA
+      SCENA 6 — L'oceano di roccia, e il salto verso il Tempio
+      7a. Raggiungere il Tempio (co-op: Ancora, Traghettatore, Navigatore)
+      SCENA 7 — L'anticamera della Magnetite
+      7b. ⚒️ ANTICAMERA DELLA MAGNETITE — La Sentinella (risveglio pieno dei Bracieri)
+    §8 — BOSS: TERROS L'ANTICO (CR 15 · «Hard Mode» voluto) — economia d'azione 3.5
+      SCENA 8 — Terros l'Antico
+      8a. L'ARRIVO — la soglia, l'attracco e i primi sei secondi
+      8b. IL DISTACCO — l'Altare si centra sul guardiano `[CANONE — DM 2026-07-30]`
+      Analisi DPR (guida di bilanciamento DM)
+      Scalare lo scontro (sidebar stile RHoD)
+      Tattiche di Terros — regia round per round (stile RHoD, agganciata a MAPPA T-6)
+      Contingenze — «Se i PG fanno X…» (risposte pronte, niente panico)
+      8c. QUANDO ARRIVA ADDOSSO A TERROS — manuale d'uso del guardiano `[CANONE — DM 2026-07-31]`
+    §9 — IL RITUALE DELLO SMERALDO: «L'Incudine del Mondo» (volontà + poteri di TUTTI)
+      SCENA 9 — Il rituale dello Smeraldo
+      FASE 1 — Il Peso del Mondo (la scelta di Thorik, e l'avidità di Artemis)
+      FASE 2 — Forgiare la Connessione (3 round, TUTTI insieme) ⭐
+      FASE 2 — LA REGIA DEI TRE ROUND (descrizioni da leggere)
+      FASE 3 — L'Incastonatura e il Ritorno di Durik
+    §10 — «LA FORGIA RICORDA»: CONSEGUENZE NEGLI AFFRESCHI (Cronaca Vivente)
+    §11 — ECHI E CONSEGUENZE A LUNGO TERMINE (Echo Ledger di questa parte)
+    §11-bis — AVANZAMENTO DEI PG: PX, TESORO E VALORE ARTEFATTI
+      A. Budget PX del modulo, sezione per sezione (party 3 PG, APL eff. 12 · PG di 13°)
+      B. Tesoro PREGENERATO, sezione per sezione (conta verso il WBL ~110.000 mo/PG)
+      C. Ricchezza speciale / artefatti acquisiti qui (conteggio SEPARATO)
+    §12 — RITORNO ALLA SALA (ponte al `DEF-2`)
+      SCENA 10 — Il ritorno alla Sala
+    §13 — HANDOUT & ASSET DEL BEAT (cosa mostrare, cosa suonare, quando)
+      Handout giocatore (stampabili da questo master)
+      Immagini (da `Immagini/`, momenti d'uso — atlante C1)
+      Musica
+      FILE-FONTE ASSORBITI DA QUESTO MASTER (→ `_ARCHIVIO/` a consolidamento chiuso)
+    MAPPE ASCII ULTRA-CLEAR (scala 1,5 m/quadretto)
+      MAPPA T-1 — PIANO DELLA TERRA: orizzonte & percorso (schematica)
+      MAPPA T-2 — FORESTA DI CRISTALLI: agguato degli Xorn (§5, tattica)
+      MAPPA T-3 — CAMPO DEI CRISTALLI VIVENTI (skill challenge, §6)
+      MAPPA T-4 — TEMPIO DI MITHRAL: approccio & salto gravitazionale (§7a)
+      MAPPA T-5 — ANTICAMERA DELLA MAGNETITE: la Sentinella (§7b, tattica)
+      MAPPA T-6 — CAMERA DELL'ALTARE: TERROS L'ANTICO (§8, tattica)
+
+LE SCENE, la prima frase:
+  SCENA 1 — Il risveglio nella Sala, e l'affresco che si apre
+      In scena — Dove: la Sala · l'affresco A5 — Chi: Moradin · Therysol
+      **Comparse**
+  SCENA 2 — Le piattaforme di cristallo
+      In scena — Dove: le piattaforme — Chi: nessuno
+      La scena copre l'arrivo e la Zona 1.
+  SCENA 3 — La foresta, e gli Xorn al pilastro
+      In scena — Dove: la foresta — Chi: Fauci di Diamante · gli Xorn
+      **La scena (il momento di Tordek & Thorik).** Un pilastro di cristallo gigante è corroso alla base: gli Xorn ne stanno **divorando le vene di mithral** — per loro il metallo è cibo, e il party …
+  SCENA 4 — Il giardino che canta
+      In scena — Dove: il giardino dei cristalli — Chi: la Madre Cristallo · i Cristalli Viventi
+      All'uscita dalla foresta, anche se il gruppo non ha intenzione di fermarsi:
+  SCENA 5 — Il Seme-Mercato (si gioca dopo la Scena 7)
+      In scena — Dove: il corridoio — Chi: Varis
+      La scena sta qui perché è nata come seguito del §6; al tavolo si gioca **dopo la Sentinella** (Scena 7), sul corridoio che scende verso Terros.
+  SCENA 6 — L'oceano di roccia, e il salto verso il Tempio
+      In scena — Dove: l'oceano di roccia — Chi: nessuno
+      **Da dove si salta, e quanto è lontano** `[CANONE — DM 2026-09-30, D34]`.
+  SCENA 7 — L'anticamera della Magnetite
+      In scena — Dove: l'anticamera — Chi: la Sentinella · i Bracieri · Moradin
+      **Comparse**
+  SCENA 8 — Terros l'Antico
+      In scena — Dove: la soglia · l'Altare — Chi: Terros
+      **Scheda d'entrata — Terros l'Antico, l'Incudine del Mondo** *(statistiche: qui sotto, dopo 8b)*
+  SCENA 9 — Il rituale dello Smeraldo
+      In scena — Dove: l'Altare — Chi: Moradin · Durik
+      **Comparse**
+  SCENA 10 — Il ritorno alla Sala
+      In scena — Dove: la Sala — Chi: nessuno
+      Countdown Hammerfist: **~3g 20h**, o **~3g 08h** se hanno dormito prima di Terros (registro completo: `ARC07-DEF-2` §0-bis).
+
+GRASSETTI (15 su 964): MASTER DEFINITIVO — versione unica, piena e autosufficiente. · Sostituisce e fonde · Sistema: D&D 3.5 SRD · MAI 5e · azioni preparate · prove contrapposte · CD · 1,5 m/quadretto · Il Piano della Terra e Terros l'Antico · Stato al tavolo · GIOCATO · gruppo nuovo · Ordine di gioco · Canone a monte · non lo sanno
+CD: 25, 25, 20, 15, 16, 20, 10, 15, 20, 12, 18, 16, 12, 18, 16, 20, 18, 20, 22, 18
+------------------------------------------------------------
+DOMANDA: Da questa vista soltanto: (1) cosa succede stasera, in tre frasi; (2) chi si oppone ai PG e cosa vuole; (3) cosa devi preparare prima di sederti al tavolo; (4) l'elemento della vista che ti ha fatto rispondere. «Non lo so» e' una risposta lecita, e vale un rilievo sul master.

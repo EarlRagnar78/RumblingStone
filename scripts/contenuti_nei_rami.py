@@ -19,8 +19,14 @@ solo, con uno stato e il documento che ne risponde. Una riga senza posto e' il
 caso che si cerca.
 
 ⚠️ Limiti dichiarati:
-  * vede i FILE, non le modifiche: un commit dopo il merge che corregge un file
-    gia' su `main` non compare;
+  * senza `--righe` vede i FILE, non le modifiche: un commit che corregge un
+    file gia' su `main` non compare. 🐛 Il 2026-09-24 un ramo con tre
+    correzioni di canone mai arrivate (Salvatore) sembrava cancellabile per
+    questo. `--righe RAMO` guarda le righe (RIPRESA-PR 4j-5): ogni riga che il
+    ramo aggiunge si cerca su `main`, identica o quasi (somiglianza >= 0,9 nello
+    stesso file o in un file con lo stesso nome). Una riga mancante non vuol
+    dire lavoro perso: puo' essere tolta apposta o riscritta. Vuol dire che va
+    letta prima di cancellare il ramo;
   * vede i rami che il clone conosce. `--fetch` scarica le teste di tutte le
     PR, chiuse comprese, e i rami di `origin`;
   * non e' un gate di CI e non deve diventarlo: i rami cambiano per conto
@@ -31,17 +37,24 @@ Uso:
     python3 scripts/contenuti_nei_rami.py             # misura su cio' che c'e'
     python3 scripts/contenuti_nei_rami.py --check     # esce 1 se una riga non ha posto
     python3 scripts/contenuti_nei_rami.py --json
+    python3 scripts/contenuti_nei_rami.py --righe claude/un-ramo [altri...]
 
 Exit code: 0 = ogni riga ha un posto · 1 = righe senza posto (solo con
---check) o registro malformato · 2 = uso errato.
+--check), registro malformato, o un ramo con righe mai arrivate (con
+--righe) · 2 = uso errato.
 """
 from __future__ import annotations
 
 import argparse
+import difflib
 import fnmatch
+import io
 import json
+import os
+import re
 import subprocess
 import sys
+import tarfile
 from collections import defaultdict
 from pathlib import Path
 
@@ -69,6 +82,13 @@ def _git(*args: str) -> str:
     return r.stdout
 
 
+def _git_bytes(*args: str) -> bytes:
+    r = subprocess.run(["git", *args], cwd=ROOT, capture_output=True)
+    if r.returncode:
+        raise RuntimeError(f"git {' '.join(args)}: {r.stderr.decode('utf-8', 'replace').strip()}")
+    return r.stdout
+
+
 def fetch() -> None:
     _git("fetch", "--quiet", "origin",
          "+refs/heads/*:refs/remotes/origin/*",
@@ -78,6 +98,14 @@ def fetch() -> None:
 def riferimenti(base: str) -> "list[str]":
     refs = _git("for-each-ref", "--format=%(refname:short)", "refs/remotes/").split()
     return sorted(r for r in refs if not r.endswith("/HEAD") and r != base)
+
+
+def _ref_esiste(ref: str) -> bool:
+    try:
+        _git("rev-parse", "--verify", "--quiet", ref)
+        return True
+    except RuntimeError:
+        return False
 
 
 def mai_arrivati(base: str, refs: "list[str]") -> "dict[str, list[str]]":
@@ -95,6 +123,67 @@ def mai_arrivati(base: str, refs: "list[str]") -> "dict[str, list[str]]":
                 continue
             trovati[percorso].add(ref)
     return {p: sorted(r) for p, r in sorted(trovati.items())}
+
+
+# --- le righe, non i file (RIPRESA-PR 4j-5) ----------------------------------
+
+#: Immagini e SVG generati non si confrontano riga per riga.
+NON_TESTO = re.compile(r"\.(svg|png|jpe?g|webp|pdf|gif|pcg|zip|typ)$", re.I)
+SIMILE = 0.9
+
+
+def _norm(riga: str) -> str:
+    return re.sub(r"\s+", " ", riga.strip())
+
+
+def indice_righe(base: str) -> tuple[set, dict, dict]:
+    """(tutte le righe di `base`, righe per file, file per nome)."""
+    tutte: set = set()
+    per_file: dict = {}
+    per_nome: dict = defaultdict(list)
+    tar = tarfile.open(fileobj=io.BytesIO(_git_bytes("archive", base)))
+    for m in tar.getmembers():
+        if not m.isfile() or NON_TESTO.search(m.name):
+            continue
+        try:
+            testo = tar.extractfile(m).read().decode("utf-8")
+        except UnicodeDecodeError:
+            continue
+        righe = [_norm(r) for r in testo.splitlines() if _norm(r)]
+        tutte.update(righe)
+        per_file[m.name] = righe
+        per_nome[os.path.basename(m.name)].append(m.name)
+    return tutte, per_file, per_nome
+
+
+def righe_mai_arrivate(ref: str, base: str, indice) -> dict:
+    """Le righe che `ref` aggiunge dal punto d'incontro con `base`, classificate."""
+    tutte, per_file, per_nome = indice
+    punto = _git("merge-base", base, ref).strip()
+    cur, tot, identiche, quasi, mancanti = None, 0, 0, 0, []
+    for riga in _git("diff", "--no-renames", "-U0", punto, ref).splitlines():
+        if riga.startswith("+++ "):
+            cur = riga[6:].rstrip("\t").strip('"') if riga.startswith("+++ b/") else None
+            if cur and NON_TESTO.search(cur):
+                cur = None
+            continue
+        if cur is None or not riga.startswith("+"):
+            continue
+        s = _norm(riga[1:])
+        if len(s) < 4 or re.fullmatch(r"[-|:=*#`>_ .~]+", s):
+            continue
+        tot += 1
+        if s in tutte:
+            identiche += 1
+            continue
+        cand = per_file.get(cur) or [
+            x for f in per_nome.get(os.path.basename(cur), []) for x in per_file[f]]
+        vicine = [c for c in cand if difflib.SequenceMatcher(None, s, c).quick_ratio() >= SIMILE]
+        if any(difflib.SequenceMatcher(None, s, c).ratio() >= SIMILE for c in vicine):
+            quasi += 1
+        else:
+            mancanti.append({"file": cur, "riga": s[:200]})
+    return {"righe": tot, "identiche": identiche, "quasi": quasi, "mancanti": mancanti}
 
 
 def leggi_registro(percorso: "Path | None" = None) -> dict:
@@ -154,7 +243,36 @@ def main(argv: "list[str] | None" = None) -> int:
                     help="esce 1 se un file mai arrivato non ha un posto nel registro")
     ap.add_argument("--base", default="origin/main", help="il ramo di riferimento")
     ap.add_argument("--json", action="store_true", help="report in JSON")
+    ap.add_argument("--righe", nargs="+", metavar="RAMO",
+                    help="per ogni ramo, le righe che aggiunge e che su --base non ci "
+                         "sono; esce 1 se ce n'e' anche una")
     args = ap.parse_args(argv)
+
+    if args.righe:
+        if args.fetch:
+            fetch()
+        indice = indice_righe(args.base)
+        esiti = {}
+        for ramo in args.righe:
+            ref = ramo if _ref_esiste(ramo) else f"origin/{ramo}"
+            if not _ref_esiste(ref):
+                print(f"✗ contenuti_nei_rami: il clone non conosce il ramo {ramo} "
+                      "(nome sbagliato, o serve --fetch)", file=sys.stderr)
+                return 2
+            esiti[ramo] = righe_mai_arrivate(ref, args.base, indice)
+        if args.json:
+            print(json.dumps(esiti, ensure_ascii=False, indent=2))
+        else:
+            for ramo, e in esiti.items():
+                segno = "✗" if e["mancanti"] else "✓"
+                print(f"{segno} {ramo}: {e['righe']} righe aggiunte · {e['identiche']} "
+                      f"identiche · {e['quasi']} quasi · {len(e['mancanti'])} mai arrivate")
+                per = defaultdict(int)
+                for m in e["mancanti"]:
+                    per[m["file"]] += 1
+                for f, n in sorted(per.items(), key=lambda x: -x[1])[:5]:
+                    print(f"      {n:5d}  {f}")
+        return 1 if any(e["mancanti"] for e in esiti.values()) else 0
 
     try:
         registro = leggi_registro()

@@ -19,7 +19,7 @@ velocita: 9 m
 **Grado di Sfida (GS):** 14
 **Allineamento:** Neutrale Malvagio (schermato come Legale Buono)
 **Era d'Origine:** -1000 DR (Epoca di Hammerfist)
-**Datori di Lavoro:** Il Collezionista (Rakshasa) + Matrona Sajak (Drow, sottosuolo Cannath)
+**Datori di Lavoro:** Il Collezionista (Rakshasa) + Matrona Sajak (Drow, sottosuolo Cannath). *Per il DM:* è **Sonjak** (`Bestiario/villain/Sonjak/Sonjak.md`); Sal non conosce quel nome
 
 ---
 
@@ -52,7 +52,7 @@ Stesso volto, ma irriconoscibile nel portamento. Abiti semplici: vesti di seta g
 | **Saggezza** | 12 | +1 |
 | **Carisma** | 22 | +6 |
 
-**Punti Ferita:** 79 (14 DV: 13d6+28)
+**Punti Ferita:** 79 (14d6+28)
 **Iniziativa:** +8 (+4 Des, +4 Talento)
 **Velocità:** 9 m
 
@@ -237,7 +237,7 @@ Se i PG scelgono di combatterlo, il primo punto di danno che riceve è la svolta
 
 ## Il Sigillo di Ossidiana — l'artefatto che lo ha reso Sal `[CANONE — DM 2026-07-23]`
 
-> Cross-source: scheda completa in `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` §5 (Artefatto); thread `campaign/state.md §7 [SIGILLO DI OSSIDIANA]`.
+> Cross-source: scheda completa in `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` Appendice B; thread `campaign/state.md §7 [SIGILLO DI OSSIDIANA]`.
 
 Ciò che Vatore ha rubato al −1000 e con cui è diventato **Sal**. Sigillo di
 **ossidiana nera** allineato a **Shar** (Signora della Notte — perdita,

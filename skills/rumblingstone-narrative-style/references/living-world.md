@@ -1,5 +1,18 @@
 # The Living World — NPC/Villain Agency and World Reaction
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- 1. NPC agency — Want / Fear / Leverage / Next step
+- 2. The World Turn (between sessions)
+- 3. SRD mechanics — attitude as the reaction engine (D&D 3.5)
+- 4. PF1e OGL tools — settlements and reactions
+- 5. Encounter tables as world sensors
+- 5-bis. Session-level living world — the milestone grid (Palio pattern)
+- 6. The world initiates
+- 7. Self-check additions (run with the SKILL.md self-check)
+<!-- /indice -->
+
 Principle: **the world does not orbit the PCs**. NPCs, villains, and
 factions move for their own interests and their own reasons, whether or
 not anyone is watching. PC protagonism (`pc-protagonism.md`) governs the

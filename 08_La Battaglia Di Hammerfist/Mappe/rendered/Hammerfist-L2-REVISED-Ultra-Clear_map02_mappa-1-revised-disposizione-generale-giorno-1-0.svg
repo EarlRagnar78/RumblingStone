@@ -1733,5 +1733,5 @@
 <text x="913.0" y="3585" font-size="11" fill="#3b2e1e">⛺ — Tenda (telo teso: blocca la vista, si abbatte)</text>
 <use href="#pr_tower" x="886.0" y="3594" width="18" height="18"/>
 <text x="913.0" y="3607" font-size="11" fill="#3b2e1e">🗼 — Torre / struttura alta</text>
-<text x="46" y="3661" font-size="9" font-style="italic" fill="#7a6a50">fonte: Hammerfist-L2-REVISED-Ultra-Clear.md · SVG generato da scripts/render_map_svg.py (stile pergamena) — non modificare a mano</text>
+<!-- fonte: Hammerfist-L2-REVISED-Ultra-Clear.md · SVG generato da scripts/render_map_svg.py (stile pergamena) · non modificare a mano -->
 </svg>

@@ -1,5 +1,15 @@
 # Boost Methods — D&D 3.5 SRD (Improving Monsters)
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- 1. Advancing Hit Dice
+- 2. Templates (SRD, with CR adjustment)
+- 3. Class levels (villains and named PNGs)
+- 4. Elite array & equipment (humanoid PNGs, 5 minutes)
+- Always finish: benchmark
+<!-- /indice -->
+
 Source: https://www.d20srd.org/srd/improvingMonsters.htm (DMG ch. 5).
 This is the RAW path: full fidelity, produces a legal 3.5 stat block.
 All tables verified against the official WotC 3.5 SRD distribution

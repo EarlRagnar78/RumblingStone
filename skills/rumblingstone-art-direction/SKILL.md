@@ -11,7 +11,8 @@ description: >
   "coerenza fra le immagini", "le immagini non si somigliano", "ritratti",
   "tavola", "copertina", "che seed", "quale modello", "rigenero o tengo?",
   "l'immagine è brutta ma non so perché", "set di immagini", "bibbia visiva",
-  "scheda personaggio", "continuity".
+  "scheda personaggio", "continuity", "Canva", "Canva AI", "genera le immagini",
+  "confronto immagine-scheda", "il ritratto non somiglia alla scheda".
 ---
 
 # RumblingStone — Direzione artistica
@@ -179,13 +180,42 @@ alla fine della sessione di generazione.
 5. brief d'inquadratura          §5  ← una riga per immagine
 6. scrittura dei prompt          ADR-0015 §2 (anatomia della scheda)
 7. generazione                   GUIDA-IMMAGINI.md
-8. gate di rifiuto               §6  ← IL GIORNO DOPO
-9. provenienza                   ADR-0019: modello, licenza, seed, data
+8. confronto immagine-scheda     §7-bis passo 4 ← una riga per id
+9. gate di rifiuto               §6  ← IL GIORNO DOPO
+10. provenienza                  ADR-0019: modello, licenza, seed, data
 ```
 
 I passi 1-5 costano **mezza giornata per progetto** e si fanno una volta sola. È
 il rapporto valore/costo più alto di tutta la produzione delle immagini: senza,
 il passo 7 si ripete all'infinito.
+
+---
+
+## §7-bis · La procedura con un servizio (Canva AI), come per ARC-07
+
+Seguita il 2026-09-25 per i sette ritratti e le otto tavole della serata della
+resurrezione (#172), ed è quella da ripetere finché la pipeline locale di
+ComfyUI non è collaudata. Quando il DM dice «genera le immagini» o «genera i
+prompt», si fa questa, in quest'ordine; è la parte immagini del corredo della
+serata (`rumblingstone-automation`, «Il corredo della serata»).
+
+| # | Passo | Cosa si produce | Dove resta scritto |
+|---|---|---|---|
+| 1 | **La scheda-personaggio si prende dal master**, non si inventa: ruolo, abiti, armi e segno vengono dal master d'arco e dallo statblocco del Bestiario; per i volti già canone vale il ritratto che c'è | cinque righe per PNG (§3) | il file delle schede-scena dell'arco (per ARC-07 `PROMPT-IMMAGINI-07ILP.md`) |
+| 2 | **Il prompt** si scrive dalla scheda copiata parola per parola, col look comune, l'ancora storica e i negativi del set (ADR-0015) | un blocco `<!-- img id=… -->` per immagine | il file dei prompt eseguibili (per ARC-07 `PROMPT-RITRATTI-E-TAVOLE-ARC07.md`) |
+| 3 | **Canva AI**: un testo solo, nell'ordine look + ancora + soggetto + negativi scritti in coda come «no text, no watermark…», perché il servizio non ha il campo. Rapporto 2:3 per i ritratti, 16:9 per le tavole. Un riferimento 3D (un ritratto di PG) si chiede «reso a olio», o lo stile del riferimento vince sul set | il file esportato col nome dell'`id` | la tabella dell'esecuzione nel file dei prompt, con l'identificativo del media Canva; la riga in `PROVENIENZA.txt` con seme «—» (ADR-0019 §2-bis: il file è il sorgente e non si butta) |
+| 4 | **Confronto PNG per PNG con la scheda**, a piena risoluzione e mai sulla miniatura. **Sui tratti del volto vince il ritratto**, e la scheda si allinea; **l'arma resta quella dello statblocco** anche quando il ritratto la disegna diversa (Durin: ascia doppia nel master, a una lama nel ritratto) | una riga per `id` | la sezione «Confronto immagine-scheda» del file dei prompt: id, con che cosa si è confrontata, cosa non coincideva, esito |
+| 5 | **Il gate di rifiuto** (§6), il giorno dopo: si butta anche quando «è già venuta». Con un servizio non c'è seme da cambiare: si corregge **il prompt**, perché la correzione vale per qualunque modello | l'immagine rigenerata, o tenuta con la riserva scritta | il motivo in `SCARTI.txt`, la correzione nel blocco `img` |
+
+`validate_corredo.py` boccia un blocco `img` che non ha il suo file o la sua
+riga nel confronto. Che il confronto sia giusto lo decide il passo 4, cioè chi
+guarda l'immagine accanto alla scheda, con il DM per i volti.
+
+⚠️ **Quello che la #172 ha insegnato, e che la procedura tiene.** Tre
+immagini scartate sulla miniatura di 200 pixel erano buone a piena vista, e
+una ripescata è finita in un'altra scena (la porta di Hammerfist). I termini
+di Canva si rileggono prima di pubblicare, non una volta per sempre (ADR-0019
+§2-bis), e il modello del servizio non è dichiarato.
 
 ---
 

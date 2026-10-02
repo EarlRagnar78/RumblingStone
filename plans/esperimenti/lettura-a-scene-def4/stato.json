@@ -1,0 +1,94 @@
+{
+  "master": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md al commit ddd683c (il DEF-4 del tavolo)",
+  "impronta_master": "38f3d85160b903fe5f99204eb984371a78d89b4ca5a6748a9833a7dd7199973f",
+  "persona": "DM esperto che non ha mai visto il modulo e deve condurlo stasera",
+  "finito": true,
+  "smesso_a": null,
+  "passaggi": [
+    {
+      "titolo": "premessa",
+      "impronta": "87e4a86871a31680aac9f6ef470ad565f29eb7a2b0fff531ec0f6f3480a495bc",
+      "parole": 3161
+    },
+    {
+      "titolo": "SCENA 1 — Il portale e il bosco al tramonto",
+      "impronta": "4d60e9d11a5944de685b1f26f4f3f3fa4feb2ebc12f308e363f68f2b7530f3ac",
+      "parole": 603
+    },
+    {
+      "titolo": "SCENA 2 — La pattuglia di Durin",
+      "impronta": "6b98bcebdfc4bf957a7e95a2e78c0a1c2cb29e6f0c17d153af38cd627e026336",
+      "parole": 446
+    },
+    {
+      "titolo": "SCENA 3 — La porta e la targa di bronzo",
+      "impronta": "adddceed2cfc9f1200edf0441f647af8aa1406e4da05544d33499abc8ac60599",
+      "parole": 637
+    },
+    {
+      "titolo": "SCENA 4 — Il consiglio di guerra di Re Thorek I",
+      "impronta": "469994f8c2a837dcb1f457f0af23a805f90c3798f93b83b9ee6b037460c5059b",
+      "parole": 1216
+    },
+    {
+      "titolo": "fra le scene",
+      "impronta": "dc345b65de1b4c5f346e78e6b7307836da8aa4cc6758ad0b85ed29f17ce79e3f",
+      "parole": 637
+    },
+    {
+      "titolo": "SCENA 5 — La notte nella fortezza",
+      "impronta": "0ed965326e48aa300e0759f223f38a1e279c556964d7d7a8aba5b22d74e24c22",
+      "parole": 542
+    },
+    {
+      "titolo": "SCENA 6 — Il mare di tende",
+      "impronta": "d5c3b7bf9f5d85cc554222f18b6a86dfb1ef6057d1b4c4e37207633c93dcbb1a",
+      "parole": 538
+    },
+    {
+      "titolo": "SCENA 7 — La tenda del comando",
+      "impronta": "ea2eb0f297223eba487b7d60808bcb916f1e5b077a345065fa9fd90e2fce8f92",
+      "parole": 1944
+    },
+    {
+      "titolo": "SCENA 8 — Zog'tar",
+      "impronta": "6c3e2dc4916c55f9484ea9752fe19ef6f7cdd37c2ad03449a4d28d40177293c5",
+      "parole": 957
+    },
+    {
+      "titolo": "SCENA 9 — Vatore, fra le tende",
+      "impronta": "4f3740ddf4f533a257e1f68b4f3cc8572a5be22ede77fa307a8fb05d692184b4",
+      "parole": 908
+    },
+    {
+      "titolo": "fra le scene",
+      "impronta": "ec37828ab390e5ce4811062522d9f2ee2356e28d71d98a4789602e6ec58c5734",
+      "parole": 150
+    },
+    {
+      "titolo": "SCENA 10 — Le mura all'alba",
+      "impronta": "73fe523c90952aa8c416483d06ab8b1689509ddc1914eb0af7a2ec6de6203ad1",
+      "parole": 707
+    },
+    {
+      "titolo": "SCENA 11 — Il duello con Skullcrusher",
+      "impronta": "102a10530c9381f2a9199f7e57767ac72ffd70070a64856be2bd7341109dfc26",
+      "parole": 2040
+    },
+    {
+      "titolo": "SCENA 12 — Il Rituale della Forgia Eterna",
+      "impronta": "3f43930a653864942e9d3c6d6992a78790fef0a65acd18790e89ec1d4d962cd4",
+      "parole": 1392
+    },
+    {
+      "titolo": "SCENA 13 — Il Rubino e il ritorno",
+      "impronta": "360dd79a0ce5e9f2fdf68fc10080701a46d1ee9d62a6934715482be7bfcd7b91",
+      "parole": 210
+    },
+    {
+      "titolo": "coda",
+      "impronta": "a25b0f884cd8b00171b5b0c0ba31ce69e8230853d699cb7d2a06f964c9484a39",
+      "parole": 3993
+    }
+  ]
+}

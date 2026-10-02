@@ -12,7 +12,7 @@
 
 | File | Quando suonarla |
 |---|---|
-| `Musica/LaCanzoneDellePietre.mp3` | **Alla resurrezione di Hella** (P3B, momento del risveglio) e/o durante la **cantillazione** nanica nella Sala della Forgia `[INFERRED]`. È il tema "pietra/forgia" dell'arco: usarla nei momenti sacri (Cuore di Moradin, radicamento di Hella). |
+| `Musica/LaCanzoneDellePietre.mp3` | **Alla resurrezione di Hella** (P3B, momento del risveglio) e/o durante la **cantillazione** nanica nella Sala della Forgia. È il tema "pietra/forgia" dell'arco: usarla nei momenti sacri (Cuore di Moradin, radicamento di Hella). |
 
 ## 🖼️ IMMAGINI (`Immagini/`)
 
@@ -29,7 +29,7 @@
 | `Camera Nodo Terra - Boss Mithral Golem e Altare Smeraldo Levitante (Parte 4).webp`, `MitralGolem.webp`, `Mithral Golem Rooms e altare di smeraldo.webp` | Boss Terra (P4) | scontro con **Terros/Golem di Mithral** / Smeraldo |
 
 > ⚠️ Refuso residuo minore: `MitralGolem.webp` (manca la "h" di *Mithral*) — non
-> rinominato per non rompere eventuali riferimenti; segnalato al DM `[INFERRED]`.
+> rinominato per non rompere eventuali riferimenti; il DM ha deciso di lasciarlo così.
 
 ## 📄 PDF
 

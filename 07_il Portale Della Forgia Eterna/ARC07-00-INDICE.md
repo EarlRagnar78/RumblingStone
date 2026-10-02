@@ -115,7 +115,8 @@ point è il Day 19** (`state.md §2.1`):
 - Carry-over B4 (vivo): `PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`
 - Ponte d'arrivo ARC-08: `08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md`
 - Fili aperti in uscita (Echo Ledger): `ARC07-DEF-5-RITORNO-HAMMERFIST.md §7`
-- Fascicoli da stampa: `homebrew/ARC07-BOOKLET-FASCICOLO-*.hb.md`
+- **Volumi da stampa, pipeline di oggi** (`dm.py volume <manifest> --stampa`): `homebrew/volume-mille-anni/` (il viaggio a −1000 completo: master, cast, Balvar, mappa del cortile, B4, Cronache) · `homebrew/sessione-resurrezione-mille-anni/` (la serata del 2026-09-25: regia, cast, DEF-2/3/4, pagine per i giocatori)
+- Fascicoli di luglio, scritti a mano: `homebrew/ARC07-BOOKLET-FASCICOLO-*.hb.md`. ⚠️ **Il V è superato** dal volume del −1000: non conosce Balvar, l'orologio della notte, Zeth, il Rituale 4
 - Asset (immagini/musica/PDF): `ARC07-ATLANTE-ASSET.md`; handout: `ARC07-HANDOUTS.md`
 - **Prop da stampare e consegnare** (generati dal file sopra, senza la regia DM):
   `homebrew/HANDOUT-1-cronache-quattro-eroi.hb.md` · `HANDOUT-3-volta-otto-affreschi` ·

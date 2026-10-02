@@ -1,5 +1,15 @@
 # Import ultra-clear → bozza JSON + report conflitti (`import_ultraclear.py`)
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- Perché serve: l'ultra-clear fonde due cose
+- Uso
+- I 4 difetti-tipo (dal caso pilota Hammerfist L2)
+- Il report `--json-report` è input per l'editor visuale
+- Cosa NON fa (per scelta)
+<!-- /indice -->
+
 > **Contratto I/O completo** (input parsati, forma esatta della bozza e del
 > report, tipi di record, metadati, come consumarli da un altro tool):
 > `scripts/README-import-ultraclear.md`. Questa pagina è la guida operativa.

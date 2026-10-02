@@ -1,16 +1,18 @@
 # Parte 2D — I Distretti di Channathgate (guida alla città, stile "Volo")
 
-> **Versione**: v1 (2026-07-17) — **canone fornito dal DM** (file "Fazioni",
+> <!-- storico -->**Versione**: v1 (2026-07-17) — **canone fornito dal DM** (file "Fazioni",
 > corrispondenze contrade ↔ nomi FR dei quartieri) integrato col canone
 > esistente di `...P2D-PALIO-CONTRADE-STEMMI-CANTI.md` (divinità, patroni e
-> Meraviglie combaciano ✓). Mappa master della città:
+> Meraviglie combaciano ✓). <!-- /storico -->Mappa master della città:
 > `P2D-Palio-Allegati/immagini/channathgate-mappa.png` (pianta illustrata coi
 > nomi FR dei quartieri; schema vettoriale di servizio: `mappe/channathgate-citta.svg`).
 > Vista cinematografica della Piazza (aerea + livello strada verso The Seat):
 > `P2D-Palio-Allegati/immagini/piazza-del-palio-panorama.png`.
+> <!-- storico -->
 > ⚠️ I due PNG sono forniti dal DM (chat 2026-07-17) e vanno caricati in
 > `P2D-Palio-Allegati/immagini/` — le immagini incollate in chat non
 > arrivano come file all'engine.
+> <!-- /storico -->
 
 ---
 

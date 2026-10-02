@@ -20,7 +20,7 @@ import re
 import sys
 import tempfile
 import unittest
-from contextlib import redirect_stdout
+from contextlib import redirect_stderr, redirect_stdout
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
@@ -338,8 +338,10 @@ class LaRigaDiComando(unittest.TestCase):
         """Nel lotto H `--apply` passava come abbreviazione di `--apply-ts`.
         `--piu-cattivi` non deve poter essere invocato per sbaglio."""
         p = G.costruisci_parser()
-        with self.assertRaises(SystemExit):
+        err = io.StringIO()
+        with self.assertRaises(SystemExit), redirect_stderr(err):
             p.parse_args(["--gs", "5", "--piu"])
+        self.assertIn("unrecognized arguments: --piu", err.getvalue())
 
     def test_il_gs_sta_fra_uno_e_venti(self):
         with self.assertRaises(SystemExit):

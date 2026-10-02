@@ -149,6 +149,7 @@ e una riscrittura è esattamente il momento in cui serve.
 | 5 · Ogni PNG nominato ha un *Want* che non riguarda i PG? | congegno `grigio politico` |
 | 6 · La rete d'indizi è ridondante, e la risposta sbagliata porta comunque da qualche parte? | congegni `nodo d'indizio` + `modi di fallimento` |
 | 7 · **Qualche box è cresciuto oltre il tetto perché la prosa era venuta bene?** *(→ taglia; vince il tetto)* | `misura_craft --box`, colonna `>12 righe` |
+| 8 · Ho corretto quello che la misura segnala, e rimisurato? Su un file che c'era già, il DM può approvare le modifiche una per una? | `ciclo_prosa.py segnala` → `revisione` → `applica [--auto]` ([ADR-0077](plans/adr/ADR-0077-revisione-a-due-giri.md)) |
 
 🔎 **La settima non è un esempio scelto a caso: è quella che ho fallito.** La
 riscrittura di `ARC07-DEF-4` del 2026-09-18 ha lasciato un box da **15 righe**
@@ -242,7 +243,7 @@ archivio che il repo dichiara tale.
 | Scrivere prosa che un **giocatore** leggerà o sentirà — read-aloud, handout, dialoghi, teaser, recap, echi | **`rumblingstone-narrative-style`** e i suoi `references/` — **obbligatori e da leggere**, non da elencare: `italiano-nativo.md` (la lingua), `read-aloud-adulti.md` (le soglie: ≤12 righe, un nome proprio, niente parentesi), `editorial-standards.md` (le due forme prescritte), `style-pillars.md` (la *fusion rule*) |
 | Scrivere un **documento del repo** — guida, ADR, piano, README, corpo di PR, messaggio di commit | **`rumblingstone-prosa-documenti`** ⚠️ regole opposte alla riga sopra: non mescolarle |
 | Costruire o giocare un **caso**: mistero, indizi, enigma, ricomposizione, vicolo cieco | **`rumblingstone-indagine`** (sopra `narrative-style`, che resta il fondo) |
-| Consolidare un beat d'arco in un **master definitivo** di qualità AP | **`rumblingstone-module-standard`** |
+| Consolidare un beat d'arco in un **master definitivo** di qualità AP, o riscrivere e rifinire nello stile un master che c'è | **`rumblingstone-module-standard`** e i suoi `references/sviluppo-degli-incontri.md` (il developer) e `references/il-banco.md` (dove i PG comprano e vendono). Il master è DEF solo dopo i sette passi del suo «ciclo completo», compresi lettore e playtester a freddo di `rumblingstone-playtest` ([ADR-0075](plans/adr/ADR-0075-il-ciclo-del-master-vale-per-ogni-piano.md)) |
 | **Impaginare**: booklet, manifest, PDF, tabella che si spezza, font, copertina, edizione da stampa | **`rumblingstone-editoria`** |
 | **Far uscire qualcosa dal repo**: pubblicare, condividere, consegnare, colophon, licenza, OGL, Product Identity, «si può vendere» | **`rumblingstone-edizione`** — il gate d'uscita si passa *prima* di consegnare |
 | Generare o correggere **immagini**: prompt, set coerente, seed/luce/camera, quando un'immagine si butta | **`rumblingstone-art-direction`** |
@@ -385,6 +386,37 @@ non hanno alcun meccanismo di scoperta. È questa sezione a instradarli.
 | Close/prep sessions via `dm.py session` (ADR-0007) | Hand-edit `state.md` `auto:` regions or write canon on `main` |
 | Flag 4e/5e Forgotten Realms lore as post-1372 DR | Present Spellplague as canon for this campaign |
 | Preserve 3.5-era Faerûn canon (1372 DR) | Mix in FR lore from after 1385 DR |
+
+---
+
+## Strumenti esterni: server MCP e skill dei plugin
+
+La configurazione di Claude Code per questo repo sta in `.claude/settings.json`
+e `.mcp.json`. L'audit del 2026-10-02 ha cercato nel repo, in 974 commit e
+nelle PR quali strumenti esterni servono davvero; il resto è spento o caricato
+solo su richiesta.
+
+**Caricati su richiesta, senza chiedere al DM.** I tool MCP sono differiti
+(`ENABLE_TOOL_SEARCH`): un agente che ne ha bisogno li carica con `ToolSearch`
+e li usa. Le skill generiche (`engineering:*`, `docs:*`, `reflexion:*`,
+`anthropic-skills:*`) compaiono solo per nome: si invocano con `Skill` quando
+il compito lo chiede, e le skill `rumblingstone-*` hanno sempre la precedenza.
+
+| Server MCP | Quando si usa |
+|---|---|
+| `rumblingstone-tools` | i 77 tool di `scripts/tools.manifest.json` ([ADR-0030](plans/adr/ADR-0030-server-mcp-sui-tool.md)). Gira in sola lettura: i tool che scrivono canone restano bloccati (ADR-0007) |
+| Canva, Fonts | immagini e tipografia (`rumblingstone-art-direction`, `rumblingstone-editoria`) |
+| Context7 | documentazione di librerie e di Typst |
+| Firecrawl | ricerche di lore e regole sul web |
+| Unstructured Transform | conversione da PDF a markdown, in alternativa a `converters/` |
+| Hugging Face | modelli e licenze dei pesi per la hero map ([ADR-0019](plans/adr/ADR-0019-licenza-dei-pesi-non-del-software.md)) |
+| draw.io, tldraw | diagrammi |
+| Serena | navigazione del codice |
+
+**Spenti in questo progetto**: Gmail, Google Drive, Tavily, arxiv, bioRxiv,
+r-btw. Se un compito ne richiede uno, l'agente lo dice al DM, che lo riaccende
+con `/mcp`. Lo stesso vale per i plugin spenti a livello globale: un agente non
+può accenderli da solo.
 
 ---
 

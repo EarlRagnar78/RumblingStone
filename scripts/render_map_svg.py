@@ -102,7 +102,7 @@ DEFAULT_TERRAIN = {"mode": "fill", "fill": PAPER, "it": ""}
 HEAVY_PATS = set(legenda.pattern_pesanti())
 
 # paint order: backgrounds first, solids last (small overlaps hide seams)
-Z_ORDER = ["t_grass", "t_veg", "t_sand", "t_earth", "t_floor", "t_lava",
+Z_ORDER = ["t_void", "t_grass", "t_veg", "t_sand", "t_earth", "t_floor", "t_lava",
            "t_lethal", "t_deep", "t_water", "t_forest", "t_mountain",
            "t_struct", "t_pillar", "t_wall"]
 
@@ -208,6 +208,16 @@ PATTERNS: dict[str, str] = {
         '<rect width="28" height="28" fill="#8a67b5"/>'
         '<path d="M9 0v28" stroke="#b697dd" stroke-width="3" stroke-opacity="0.7"/>'
         '<path d="M20 0v28" stroke="#6d4c96" stroke-width="3" stroke-opacity="0.5"/>'),
+    # 🌫 l'aria dove non c'e' pavimento (RIPRESA-PR 4j-4, dal ramo della PR #42):
+    # grigio-verde chiaro, due correnti e due punti di luce. Si dipinge per primo.
+    "t_void": _pattern("t_void", 42,
+        '<rect width="42" height="42" fill="#c9d2ce"/>'
+        '<path d="M4 12q8-5 16 0t16 0" stroke="#dde5e1" stroke-width="2.2" fill="none" '
+        'stroke-linecap="round" opacity="0.8"/>'
+        '<path d="M-4 30q8-5 16 0t16 0t16 0" stroke="#b6c1bc" stroke-width="1.8" fill="none" '
+        'stroke-linecap="round" opacity="0.7"/>'
+        '<circle cx="33" cy="20" r="1" fill="#e8eeeb"/>'
+        '<circle cx="9" cy="38" r="0.9" fill="#e8eeeb"/>'),
     "t_mountain": _pattern("t_mountain", 42,
         '<rect width="42" height="42" fill="#8d8271"/>'
         '<path d="M2 22L11 6l9 16z" fill="#a49a87"/>'
@@ -1408,11 +1418,13 @@ def render_svg(grid: dict, source_name: str) -> str:
             out.append(f'<text x="{lx}" y="{y}" font-size="14">{emoji}</text>')
         out.append(f'<text x="{lx + 27}" y="{y}" font-size="11" fill="{INK}">{emoji} — {label}</text>')
 
-    # --- footer ---------------------------------------------------------------------
+    # --- provenienza -----------------------------------------------------------------
+    # Un commento e non un testo: chi apre il file la legge, la stampa no. Era
+    # una riga in corsivo in fondo a ogni mappa, e in un volume diceva al tavolo
+    # il nome di un file del repo (ADR-0070, classe A).
     out.append(
-        f'<text x="{ox}" y="{height - 16}" font-size="9" font-style="italic" '
-        f'fill="{INK_SOFT}">fonte: {_esc(source_name)} · SVG generato da '
-        f'scripts/render_map_svg.py (stile pergamena) — non modificare a mano</text>'
+        f'<!-- fonte: {_esc(source_name)} · SVG generato da '
+        f'scripts/render_map_svg.py (stile pergamena) · non modificare a mano -->'
     )
 
     out.append("</svg>")

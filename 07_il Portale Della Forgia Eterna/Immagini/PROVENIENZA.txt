@@ -65,3 +65,30 @@ Sono ~4,5 MB di byte ripetuti. NON sono stati cancellati di proposito: i nomi
 lunghi sono citati dai master dell'arco, e il piano di travaso vieta di
 toccare il testo già giocato (PIANO-TRAVASO §0.2). La deduplicazione è una
 decisione del DM, e vale la pena farla quando l'arco si chiude al tavolo.
+
+GENERATE CON CANVA AI — 2026-09-25 — I FILE NON SONO ANCORA QUI
+---------------------------------------------------------------
+Prompt: PROMPT-RITRATTI-E-TAVOLE-ARC07.md §4 (come si sono composti, prima
+lettura di ciascuna). Il servizio non espone il seme: il PNG esportato da Canva
+È il sorgente e non si rifà (ADR-0019 §2-bis). Il modello sottostante non è
+dichiarato da Canva. I termini d'uso vanno riletti prima di pubblicare.
+Le righe precedono i file perché la sessione che ha generato non raggiungeva
+canva.com; chi esporta salva il PNG col nome indicato e toglie questa nota.
+Riferimenti usati per le due tavole di Hella: PG/Immagini/web/Hella4.jpg,
+PG/Immagini/web/durik2.jpg (caricati in Canva come MAHWLxN6giU, MAHWL1xURrU).
+
+ritratti/balvar-fuocospento.jpg · Canva AI generate-image, media MAHWLw8QnOo · termini di servizio Canva · seed — · 2026-09-25 · Claude per il DM · NEL REPO, JPEG 533×800 ricevuto dal DM in chat (copia ridotta, da sostituire con l'originale)
+ritratti/zogtar-deatheye.webp · strumento DA CONFERMARE (terza versione, non generata da questa sessione; stile coerente col set) · licenza DA CONFERMARE · seed — · 2026-09-25 · DM · NEL REPO, WebP 1033×1523 ricevuto dal DM in chat; derivata web/zogtar-deatheye.jpg (Pillow, lato lungo 1400, JPEG q88). Sostituisce la seconda versione Canva MAHWL_YsfgQ, che era specchiata
+ritratti/re-thorek-i.jpg · Canva AI generate-image, media MAHWLyU_oPo · termini di servizio Canva · seed — · 2026-09-25 · Claude per il DM · NEL REPO, JPEG 533×800 ricevuto dal DM in chat (copia ridotta, da sostituire con l'originale)
+ritratti/thorgrim-barbadiferro.jpg · Canva AI generate-image, media MAHWMYEg1KY · termini di servizio Canva · seed — · 2026-09-25 · Claude per il DM · NEL REPO, JPEG 533×800 ricevuto dal DM in chat (copia ridotta, da sostituire con l'originale). Media id dedotto: stesso prompt di MAHWLyX0Wa0, che il DM non trovava. Rigenerata: la precedente MAHWLyX0Wa0 il DM non la trovava in Canva; la prima, MAHWL-NDQRs, è scartata
+ritratti/durin-rocciadura.jpg · Canva AI generate-image, media MAHWLxfub5Q · termini di servizio Canva · seed — · 2026-09-25 · Claude per il DM · NEL REPO, JPEG 533×800 ricevuto dal DM in chat (copia ridotta, da sostituire con l'originale)
+ritratti/zeth-mastro-costruttore.jpg · Canva AI generate-image, media MAHWLzJWJXI · termini di servizio Canva · seed — · 2026-09-25 · Claude per il DM · NEL REPO, JPEG 533×800 ricevuto dal DM in chat (copia ridotta, da sostituire con l'originale)
+ritratti/vatore.jpg · Canva AI generate-image, media MAHWL25-bj4 · termini di servizio Canva · seed — · 2026-09-25 · Claude per il DM · NEL REPO, JPEG 533×800 ricevuto dal DM in chat (copia ridotta, da sostituire con l'originale)
+tavola-portale-del-tempo.jpg · Canva AI generate-image, media MAHWLyz44U8 · termini di servizio Canva · seed — · 2026-09-25 · Claude per il DM · NEL REPO, JPEG 1600×899 ricevuto dal DM in chat
+tavola-custode-delle-radici.jpg · Canva AI generate-image, media MAHWL6WcCpw · termini di servizio Canva · seed — · 2026-09-25 · Claude per il DM · NEL REPO, JPEG 533×800 ricevuto dal DM in chat (copia ridotta, da sostituire con l'originale)
+tavola-cuore-di-moradin.jpg · Canva AI generate-image, media MAHWLy0nGm4 · termini di servizio Canva · seed — · 2026-09-25 · Claude per il DM · NEL REPO, JPEG 1600×899 ricevuto dal DM in chat
+tavola-risveglio-di-hella.jpg · Canva AI generate-image, media MAHWL21y19U · termini di servizio Canva · seed — · 2026-09-25 · Claude per il DM · NEL REPO, JPEG 1600×899 ricevuto dal DM in chat
+tavola-durik-e-hella.jpg · Canva AI generate-image, media MAHWL6svafI · termini di servizio Canva · seed — · 2026-09-25 · Claude per il DM · NEL REPO, JPEG 533×800 ricevuto dal DM in chat (copia ridotta, da sostituire con l'originale)
+tavola-hammerfist-giovane.jpg · Canva AI generate-image, media MAHWLwYjXcE · termini di servizio Canva · seed — · 2026-09-25 · Claude per il DM · NEL REPO, JPEG 1600×899 ricevuto dal DM in chat
+tavola-hammerfist-giovane-porta.jpg · Canva AI generate-image, media MAHWL9hrJvc · termini di servizio Canva · seed — · 2026-09-25 · Claude per il DM · NEL REPO, JPEG 1600×899 ricevuto dal DM in chat; prima versione, ripescata per la Scena 3
+tavola-skullcrusher-nel-cortile.webp · Canva AI generate-image, media MAHWL-laBHk · termini di servizio Canva · seed — · 2026-09-25 · Claude per il DM · NEL REPO, WebP 1600×899 ricevuto dal DM in chat; derivata web/tavola-skullcrusher-nel-cortile.jpg (Pillow, JPEG q88 progressivo, come build_image_derivatives.py)

@@ -34,8 +34,8 @@
 | `10-DOSSIER-DELLE-PISTE.md` | **quando invece indagano**: i tre misteri come piste con nodi, la rete degli indizi, l'orologio, il falso indizio dei quattro quaranta |
 | `08-CASSETTA-DEL-DM.md` | **l'apparato d'uso**: foglio del cast, pronuncia, indice dei read-aloud, inserto per lo schermo, i suoni, il momento da fotografare, accessibilità |
 | `STATO-DEL-MODULO.md` | la memoria fra le tre serate: contatori, patti, scelte, **Echo Ledger**. Da copiare per gruppo |
-| `PLAYTEST-ALFA.md` | audit meccanico, dry-run delle tre serate, le nove correzioni applicate |
-| `PLAYTEST-SCHEDA-FEEDBACK.md` | scheda giocatore, debrief del DM, come si passa da alfa a beta |
+| `PLAYTEST-ALFA.md` | audit meccanico, dry-run delle tre serate, le nove correzioni applicate <!-- storico: riga --> |
+| `PLAYTEST-SCHEDA-FEEDBACK.md` | scheda giocatore, debrief del DM, come si passa da alfa a beta <!-- storico: riga --> |
 | `STATBLOCCHI-PF1E.md` | PNG, rivali, sicari, cavalli |
 | `ALLEGATI/mappe/` | la Ruota, **la Ruota in versione giocatore** e le stalle: JSON, master emoji-grid, SVG |
 | `ALLEGATI/tavole/` | **tavole vettoriali**: mappa della città, il Drappo, sei ritratti (rigenerabili) |

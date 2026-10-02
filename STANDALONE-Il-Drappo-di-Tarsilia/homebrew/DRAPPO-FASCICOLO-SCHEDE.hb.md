@@ -396,7 +396,7 @@ Pagina da consegnare al giocatore indicato, in privato.
 # Fascicolo dei personaggi — da stampare e dare in mano
 
 > **Come si usa.** Una scheda a testa, **fronte e retro**: davanti i numeri
-> (`PREGEN-SEI-SCHEDE-PF1E.md`), dietro questa pagina — chi sei, come parli, cosa
+> («✉ I numeri — le sei schede»), dietro questa pagina — chi sei, come parli, cosa
 > vuoi, e cosa pensi degli altri cinque.
 >
 > Il **ritratto** è in `ALLEGATI/immagini/ritratto-<nome>.png` (master) e `web/*.jpg` per l’impaginazione: si stampa in alto a

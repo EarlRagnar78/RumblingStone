@@ -20,7 +20,7 @@
 >
 > *Abbatterono il drago nero e spezzarono l'orda. Poi svanirono, come erano
 > venuti, lasciando solo il loro nome nella roccia.»*
->
+
 > — Moradin, nella mente di Thorik: *«Le Cronache dicono che 'Quattro Eroi'
 > salvarono Hammerfist. Siete VOI. Siete sempre stati voi. Andate. Chiudete il
 > cerchio.»*

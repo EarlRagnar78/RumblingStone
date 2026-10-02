@@ -392,5 +392,43 @@ class TestIBersagliNonSiCampionanoInSilenzio(unittest.TestCase):
             self.assertNotIn("ERRATA-", nome)
 
 
+class TestIndicatoriDungeon(unittest.TestCase):
+    """Le due colonne-indicatore del 2026-10-01: frasi e caratteri.
+
+    Contano, non pesano: una soglia proposta si misura prima di diventare
+    norma, così il DM decide guardando quanto costa (G2).
+    """
+
+    STANZA = ("> *Un soffitto a volta crollato si apre sul cielo notturno. Al "
+              "centro, fra macerie di marmo, una fontana a forma di drago getta "
+              "un liquido cremisi. Tre porte di legno marcio danno sulle pareti, "
+              "e l'aria sa di zolfo.*\n")
+
+    def test_la_stanza_esemplare_resta_sotto_tutti_e_due(self):
+        d = MC.difetti_dei_box(self.STANZA)
+        self.assertEqual(d["box"], 1)
+        self.assertEqual(d["oltre 4 frasi"], 0)
+        self.assertEqual(d["oltre 500 caratteri"], 0)
+
+    def test_le_frasi_mordono_alla_quinta(self):
+        quattro = "> *" + " ".join(["La pietra suda piano."] * 4) + "*\n"
+        cinque = "> *" + " ".join(["La pietra suda piano."] * 5) + "*\n"
+        self.assertEqual(MC.difetti_dei_box(quattro)["oltre 4 frasi"], 0)
+        self.assertEqual(MC.difetti_dei_box(cinque)["oltre 4 frasi"], 1)
+
+    def test_i_caratteri_si_contano_sul_corpo_non_sulla_marcatura(self):
+        """L'etichetta di regia e gli asterischi non si leggono ad alta voce."""
+        corpo = "a" * 490
+        box = f"> **Read-aloud (Salvatore lead).** *{corpo}.*\n"
+        self.assertEqual(len(MC.corpo_del_box(MC.box_read_aloud(box)[0])), 491)
+        self.assertEqual(MC.difetti_dei_box(box)["oltre 500 caratteri"], 0)
+        lungo = f"> *{'a' * 520}.*\n"
+        self.assertEqual(MC.difetti_dei_box(lungo)["oltre 500 caratteri"], 1)
+
+    def test_decimali_e_battute_chiuse(self):
+        self.assertEqual(MC.frasi_del_box("La lama pesa 2.5 libbre. Poi tace."), 2)
+        self.assertEqual(MC.frasi_del_box("«Fermi tutti.» Nessuno si muove."), 2)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -87,17 +87,11 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # Parte 2D — I Distretti di Channathgate (guida alla città, stile "Volo")
 
-> **Versione**: v1 (2026-07-17) — **canone fornito dal DM** (file "Fazioni",
-> corrispondenze contrade ↔ nomi FR dei quartieri) integrato col canone
-> esistente di `...P2D-PALIO-CONTRADE-STEMMI-CANTI.md` (divinità, patroni e
-> Meraviglie combaciano ✓). Mappa master della città:
+> Mappa master della città:
 > `P2D-Palio-Allegati/immagini/channathgate-mappa.png` (pianta illustrata coi
 > nomi FR dei quartieri; schema vettoriale di servizio: `mappe/channathgate-citta.svg`).
 > Vista cinematografica della Piazza (aerea + livello strada verso The Seat):
 > `P2D-Palio-Allegati/immagini/piazza-del-palio-panorama.png`.
-> ⚠️ I due PNG sono forniti dal DM (chat 2026-07-17) e vanno caricati in
-> `P2D-Palio-Allegati/immagini/` — le immagini incollate in chat non
-> arrivano come file all'engine.
 
 ---
 
@@ -177,7 +171,7 @@ Il cuore **neutrale** di Channathgate: nessuna delle otto fazioni possiede
 questa terra. Un ventaglio in pendenza dove la città si incontra per
 commerci, processi — e per la corsa leggendaria in cui i distretti si
 giocano il predominio politico. *(Nei file di gioco: la **Piazza del
-Guado**, pista del Palio — `...GIORNO3-4-CORSA-ESITI.md` §4.)*
+Guado**, pista del Palio — cap. IX §4.)*
 
 ---
 
@@ -198,7 +192,7 @@ cerimoniali possibili `[PROPOSTA — needs DM choice]`:
 ## Nota di coerenza
 
 Le corrispondenze combaciano punto-per-punto con la tavola sinottica di
-`...CONTRADE-STEMMI-CANTI.md` (stesse divinità, patroni e Meraviglie).
+cap. III (stesse divinità, patroni e Meraviglie).
 Unica estensione: i **nomi FR dei quartieri** e il lore urbano qui sopra.
 In caso di conflitto futuro: **questo file vale per la città**, la tavola
 CONTRADE per **canti, rivalità e meccaniche** del Palio.
@@ -215,10 +209,10 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # Parte 2D — Il Palio di Channathgate (Avventura Urbana Sandbox)
 
-> **Versione**: v1 (2026-07-01). Modulo doppio-uso: **(a)** avventura autoconclusiva
+> Modulo doppio-uso: **(a)** avventura autoconclusiva
 > giocabile in D&D 3.5 / Pathfinder 1e (sandbox urbano di 3 giorni, APL 12–13);
 > **(b)** snodo geopolitico della campagna RumblingStone — vedi il file gemello
-> `Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md` per sync assedio,
+> cap. XI per sync assedio,
 > clock, Consiglio e Meraviglie.
 > **Ispirazione**: Palio di Siena (contrade, tratta, partiti, mossa, nerbo) +
 > "Bard's Tale" (guerra delle ballate) + *War for the Crown* (sandbox politico a tempo).
@@ -264,10 +258,6 @@ Ogni contrada ha una struttura di governo (il **Seggio**/Deputazione). Assegna i
 
 ---
 
-> **⚠️ ESPANSIONE v2 (2026-07-01)**: questo file resta valido come *regole-base*, ma
-> l'arco è stato espanso a **8 contrade** (aggiunta **l'Onda**), **3–4 sessioni**, mappe e
-> stemmi. Punto d'ingresso aggiornato: **`Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md`**.
-> Contrade complete (con stemmi/canti): `...P2D-PALIO-CONTRADE-STEMMI-CANTI.md`.
 
 ## 1. Le Contrade (8 fazioni + rivalità)
 
@@ -280,9 +270,9 @@ e confraternite laiche: non erano mai atee, ma di una religiosità **civica e fe
 > **Nota di conversione (Golarion → Faerûn)**: la campagna è ambientata nei Reami.
 > Le divinità sono state riconvertite dal pantheon di Golarion a quello faerûniano.
 >
-> **Nota patrimonio/IP** *(aggiornata 2026-08-10)*: il Palio di Siena e le sue contrade
+> **Nota patrimonio/IP**: il Palio di Siena e le sue contrade
 > sono citati come **ispirazione storico-culturale** (fatti di pubblico dominio). Scudi,
-> **livree** e simboli divini sono **originali** di questa campagna, e dal 2026-08-09 le
+> **livree** e simboli divini sono **originali** di questa campagna, e le
 > livree **non coincidono più** con quelle reali (vedi VERIFICA-LEGALE-IP §3.2). I **motti**
 > sono riscritti ma restano **parafrasi riconoscibili** di quelli reali: non dichiararli
 > "originali" (VERIFICA-LEGALE-IP §3.3). Le **figure** degli stemmi **non sono nostre**:
@@ -338,8 +328,8 @@ sul Drappellone per attivare la Meraviglia (vedi INTEGRAZIONE §4–§5).
   che traghettarono i profughi: **alleanza segreta con l'Istrice**. Corre per l'**onore del
   porto**. **Rivale**: nessuna storica (disprezza l'Oca per i dazi).
 - **Meraviglia a Rethmar**: **La Marea Montante** (flotta fluviale + allagamento delle vie
-  d'approccio + evacuazione civili). Dettaglio in `...P2D-PALIO-CONTRADE-STEMMI-CANTI.md` §8
-  e `...P2D-PALIO-CONSEGUENZE-ECHI.md` §2.4.
+  d'approccio + evacuazione civili). Dettaglio in cap. III §8
+  e cap. XII §2.4.
 
 ---
 
@@ -494,7 +484,7 @@ Il fantino è un **mercenario strapagato**, corruttibile. Deve saper **spingere*
   perseguitano, bandiscono, tassano. I PG pianificano fuga o colpo di stato d'ombra.
 
 *(Per gli epiloghi legati all'assedio di Rethmar e alle Meraviglie, vedi il file*
-*`Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md` §5–§6.)*
+*cap. XI §5–§6.)*
 
 ---
 
@@ -531,7 +521,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # Parte 2D — Le 8 Contrade: Stemmi, Motti, Canti, Rivalità
 
-> Allegato di `...P2D-PALIO-DM-MASTER-REFERENCE.md`. Gli **stemmi** sono **originali**
+> Allegato di cap. X. Gli **stemmi** sono **originali**
 > (`P2D-Palio-Allegati/stemmi/`) e **non riproducono** quelli reali di Siena: scudi,
 > livree e simboli faerûniani sono propri della campagna; le **figure** sono icone
 > game-icons.net in CC BY 3.0, ricolorate (attribuzione in `stemmi/CREDITS.md`). I **motti** qui usati sono **originali**, *ispirati* alla
@@ -723,10 +713,9 @@ spesso più efficace che offrirgli di vincere.
 
 ## Livree di Channathgate (palette canonica)
 
-Dal 2026-08-09 gli scudi **non usano più le livree di Siena**: ogni distretto ha una
+Gli scudi **non usano le livree di Siena**: ogni distretto ha una
 livrea propria, derivata dalla **divinità patrona** e dal **nome faerûniano del
-quartiere**. Nessuna combinazione coincide con quelle delle 17 contrade reali (chiude il
-punto 3 della checklist di bonifica in `...P2D-PALIO-VERIFICA-LEGALE-IP.md` §7).
+quartiere**. Nessuna combinazione coincide con quelle delle 17 contrade reali.
 
 | Contrada · Distretto | Livrea | Campo | Secondario | Bordo / liste | Metallo figura |
 |---|---|---|---|---|---|
@@ -757,7 +746,7 @@ sono in `#8d9aa6`, cioè un argento più scuro di quello della torre — la rego
 
 ## Nota grafica — le figure degli stemmi
 
-Dal 2026-08-10 le **figure** degli otto scudi sono icone di **game-icons.net**, ricolorate
+Le **figure** degli otto scudi sono icone di **game-icons.net**, ricolorate
 nella livrea del distretto e inserite negli scudi originali della campagna. Attribuzione
 completa e testi di licenza: **`P2D-Palio-Allegati/stemmi/CREDITS.md`**.
 
@@ -801,9 +790,8 @@ Nethys, Calistria, Shelyn, Gozreh/Desna. Stesse figure, **stesse meccaniche 3.5*
 solo divinità, livrea e simbolo in campo. Mappatura, livree e note di licenza Paizo:
 `golarion/README.md`. Rigenerabile con `golarion/build_golarion_shields.py`.
 
-Serve a due cose: girare l'arco in un tavolo Pathfinder senza riscrivere nulla, e — visto che
-AVVENTURA §1 dichiara le divinità faerûniane «riconvertite da Golarion» — **documentare il
-pantheon di partenza**, che non era scritto da nessuna parte.
+Serve a girare l'arco in un tavolo Pathfinder senza riscrivere nulla, e dice da quale
+pantheon sono state riconvertite le divinità faerûniane di AVVENTURA §1.
 
 ## Nota IP (ripetuta qui per chiarezza)
 Nomi delle contrade e riferimenti al Palio = **fatti storico-culturali** citati come
@@ -823,7 +811,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # Parte 2D — Le 8 Ballate delle Contrade (testi giocabili)
 
-> Allegato di `...P2D-PALIO-DM-MASTER-REFERENCE.md` §3 e `...CONTRADE-STEMMI-CANTI.md`.
+> Allegato di cap. X §3 e cap. III.
 > Testi **originali** pensati per essere **cantati/recitati al tavolo** durante la Guerra
 > delle Ballate (Giorno 2, la Cena). Ogni ballata ha: **ritornello** (che tutta la piazza
 > può ripetere), **strofa d'attacco** (per il duello di Intrattenere), **tema** (bonus/malus
@@ -1008,7 +996,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # Parte 2D — Le 8 Prove d'Ammissione (scena per scena)
 
-> Allegato di `...P2D-PALIO-DM-MASTER-REFERENCE.md` (§2) e `...GIORNO1-TRATTA.md` (§2.1).
+> Allegato di cap. X (§2) e cap. VI (§2.1).
 > Ogni contrada mette i PG alla prova **prima** di consegnare il **Fazzoletto** (l'oggetto
 > sacro che li fa Protettori del rione). Qui ciascuna prova è **giocata scena per scena**:
 > setup, cast, beat con **tiri e DC (APL 13)**, complicazione, esiti **Successo / Parziale /
@@ -1345,7 +1333,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # Parte 2D — GIORNO 1: Il Mercato dei Sottobanco e la Tratta
 
-> Allegato di `...P2D-PALIO-DM-MASTER-REFERENCE.md`. Copre Sessione 1 e l'inizio della 2.
+> Allegato di cap. X. Copre Sessione 1 e l'inizio della 2.
 > Stile: apertura cinematografica (Critical Role), interiorità (Salvatore).
 
 ---
@@ -1394,7 +1382,7 @@ di campagna**. È il momento in cui i giocatori **scelgono la loro bandiera**.
 >
 > **▶ Le 8 Prove sono giocate scena per scena** (setup, beat con DC, complicazioni, esiti
 > Successo/Parziale/Fallimento, aggancio di campagna) in
-> **`Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md`**. La tabella qui sotto è il riepilogo.
+> **cap. V**. La tabella qui sotto è il riepilogo.
 
 ### 1.2 Il rito del Fazzoletto (tutte le contrade)
 Superata la Prova, la Dirigenza consegna ai PG il fazzoletto e chiede il **Giuramento sul
@@ -1473,7 +1461,7 @@ Ogni truffa/rischio alza il **Sospetto** della contrada dei PG. Effetti:
 - **Sal** (se P2C attivo) compare come **bookmaker** delle scommesse: offre "una pozione
   della fortuna" (in realtà **Olio del Sabotaggio**) al fantino dei PG.
 
-**→ Prosegui con `...P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md`.**
+**→ Prosegui con cap. VIII.**
 
 
 \page
@@ -1487,7 +1475,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # Parte 2D — Le Prove Ufficiali "di Batteria" (opzionali)
 
-> Allegato di `...P2D-PALIO-DM-MASTER-REFERENCE.md`. Tra la **Tratta** (Giorno 1) e la
+> Allegato di cap. X. Tra la **Tratta** (Giorno 1) e la
 > **Corsa** (Giorno 3–4) si corrono le **prove di batteria**: brevi carriere ufficiali,
 > mattina e sera, sulla pista della Piazza del Guado. **Sono opzionali**: alzano
 > informazioni e vantaggi, ma **saltarle non blocca nulla** (ci si presenta "a freddo").
@@ -1609,7 +1597,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # Parte 2D — GIORNO 2: I Partiti, la Cena della Prova, le Ombre
 
-> Allegato di `...P2D-PALIO-DM-MASTER-REFERENCE.md`. Copre Sessione 2 (fine) e Sessione 3.
+> Allegato di cap. X. Copre Sessione 2 (fine) e Sessione 3.
 > È il cuore RP dell'arco: diplomazia, propaganda, sabotaggio, e il primo sangue.
 
 ---
@@ -1785,7 +1773,7 @@ invia **sicari drow** a Channathgate per **avvelenare** il cavallo dell'Istrice/
 - **Sospetto** (dal Giorno 1).
 - **Clock Sonjak / Collezionista / Sal** toccati.
 
-**→ Prosegui con `...P2D-PALIO-GIORNO3-4-CORSA-ESITI.md`.**
+**→ Prosegui con cap. IX.**
 
 
 \page
@@ -1799,7 +1787,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # Parte 2D — GIORNI 3–4: Benedizione, la Mossa, la Corsa, gli Esiti
 
-> Allegato di `...P2D-PALIO-DM-MASTER-REFERENCE.md`. Il climax. Mappa: `mappe/piazza-del-palio.svg`.
+> Allegato di cap. X. Il climax. Mappa: `mappe/piazza-del-palio.svg`.
 > Stile: set-piece cinematografico (Critical Role) con esito **realmente aperto**.
 
 ---
@@ -1964,7 +1952,7 @@ degli Otto** a Rethmar (INTEGRAZIONE §4).
 > il fumo e sussurra il nome di chi ha perso a Drellin's Ferry. Il Palio finisce; la guerra
 > comincia.
 
-**→ Esiti dettagliati e echi: `...P2D-PALIO-CONSEGUENZE-ECHI.md`.**
+**→ Esiti dettagliati e echi: cap. XII.**
 
 ---
 
@@ -2015,12 +2003,10 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # Parte 2D — IL PALIO DI CHANNATHGATE · DM MASTER REFERENCE
 
-> **Versione**: v2 (2026-07-01) — arco espanso a **8 contrade**, **3–4 sessioni**,
-> mappe e stemmi allegati.
 > **Doppia natura**: (a) **avventura autoconclusiva** giocabile in D&D 3.5 / PF1e
 > (sandbox urbano-politico, APL 12–13); (b) **snodo geopolitico massivo** della campagna
 > RumblingStone che decide rinforzi, Meraviglie e voto del Consiglio per l'assedio di
-> Rethmar. Vedi `...P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md`.
+> Rethmar. Vedi cap. XI.
 > **Tono**: prosa **R.A. Salvatore** (interiorità, onore, ferite morali) diretta da un
 > **DM stile Critical Role** (scene cinematografiche, spotlight a rotazione, esito
 > **realmente aperto**: i PG sono protagonisti, non spettatori).
@@ -2029,18 +2015,18 @@ Questo file è l'**HUB**. I contenuti di dettaglio sono negli allegati:
 
 | File | Contenuto |
 |---|---|
-| `...P2D-PALIO-CONTRADE-STEMMI-CANTI.md` | Le **8 contrade**, stemmi (SVG), motti, canti con **bonus/malus**, rivalità, upgrade grafico |
-| `...P2D-PALIO-BALLATE.md` | **Testi completi delle 8 ballate** giocabili (ritornello, strofa d'attacco, scherno, effetti) |
-| `...P2D-PALIO-GIORNO1-TRATTA.md` | Giorno 1: mercato degli emissari, Prove d'Ammissione, la **Tratta** truccabile |
-| `...P2D-PALIO-PROVE-AMMISSIONE.md` | **Le 8 Prove d'Ammissione giocate scena per scena** (beat, DC, complicazioni, esiti, agganci) |
-| `...P2D-PALIO-PROVE-BATTERIA.md` | **Le prove ufficiali di batteria** (opzionali): 6 prove + Prova Generale + Provaccia, bonus alla Corsa |
-| `...P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md` | Giorno 2: i **Partiti**, la **Cena della Prova**, guerra delle ballate, stalla/fantino, drow |
-| `...P2D-PALIO-GIORNO3-4-CORSA-ESITI.md` | Giorni 3–4: benedizione, **Mossa**, la **Corsa** (Chase), esiti e cavalcata di soccorso |
-| `...P2D-PALIO-STATBLOCCHI.md` | Fantino Cavaliere/Ladro, sicari drow, PNG chiave, cavalli (bombolone/brenna) |
-| `...P2D-PALIO-MAPPE.md` | Le mappe (piazza, città, rotta di soccorso) + note tattiche |
-| `...P2D-PALIO-CONSEGUENZE-ECHI.md` | Esiti per contrada **×** scelte PG; echi a Rethmar e post-campagna (stile BG3) |
+| cap. III | Le **8 contrade**, stemmi (SVG), motti, canti con **bonus/malus**, rivalità, upgrade grafico |
+| cap. IV | **Testi completi delle 8 ballate** giocabili (ritornello, strofa d'attacco, scherno, effetti) |
+| cap. VI | Giorno 1: mercato degli emissari, Prove d'Ammissione, la **Tratta** truccabile |
+| cap. V | **Le 8 Prove d'Ammissione giocate scena per scena** (beat, DC, complicazioni, esiti, agganci) |
+| cap. VII | **Le prove ufficiali di batteria** (opzionali): 6 prove + Prova Generale + Provaccia, bonus alla Corsa |
+| cap. VIII | Giorno 2: i **Partiti**, la **Cena della Prova**, guerra delle ballate, stalla/fantino, drow |
+| cap. IX | Giorni 3–4: benedizione, **Mossa**, la **Corsa** (Chase), esiti e cavalcata di soccorso |
+| cap. XIII | Fantino Cavaliere/Ladro, sicari drow, PNG chiave, cavalli (bombolone/brenna) |
+| cap. XIV | Le mappe (piazza, città, rotta di soccorso) + note tattiche |
+| cap. XII | Esiti per contrada **×** scelte PG; echi a Rethmar e post-campagna (stile BG3) |
 | `P2D-Palio-Allegati/stemmi/*.svg` · `P2D-Palio-Allegati/mappe/*.svg` | Allegati grafici originali (non-infringement) |
-| `...P2D-PALIO-CHANNATHGATE-AVVENTURA.md` · `...-INTEGRAZIONE.md` | Regole-base e wiring di campagna (v1, ancora validi) |
+| cap. II · cap. XI | Regole-base e wiring di campagna (v1, ancora validi) |
 
 ---
 
@@ -2223,8 +2209,8 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # Parte 2D — Il Palio di Channathgate: INTEGRAZIONE con RumblingStone
 
-> **Versione**: v1 (2026-07-01). File gemello di
-> `Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md` (regole del Palio).
+> File gemello di
+> cap. II (regole del Palio).
 > Questo documento sincronizza il Palio con: **March Clock / Ritual Clock**, i
 > **clock dei villain**, il **Consiglio di Rethmar**, i **difensori** e le
 > **Fasi 0–4 dell'assedio**. Progettato per **ampliare senza stravolgere**.
@@ -2313,7 +2299,7 @@ diventano *patroni di contrada*. Mappatura definitiva:
 
 > **Halveth (LE, corrotto)** non ha contrada propria: **finanzia in segreto l'Oca**
 > (fazione resa) col medesimo denaro del Collezionista. Smascherarlo al Palio (§3)
-> ha lo stesso effetto della sua rimozione dal Consiglio (`Consiglio_Rethmar.md`):
+> ha lo stesso effetto della sua rimozione dal Consiglio:
 > **−1 GS Fase 0** e sblocco del voto Difesa.
 
 **Conseguenza politica chiave**: la contrada vincente **inclina il voto del Consiglio**.
@@ -2335,7 +2321,7 @@ schierarsi a Rethmar entro il **Day 42** (Fase 1). Se i PG vincono **dopo** il D
 i rinforzi **arrivano a Fase 2–3** (metà effetto) invece che a Fase 1.
 
 **⚠️ Calendario consigliato (per non perdere le Sedute del Consiglio).** Le sedute
-canoniche del Consiglio di Rethmar cadono **Day 30 / 33 / 35** (`Consiglio_Rethmar.md`),
+canoniche del Consiglio di Rethmar cadono **Day 30 / 33 / 35**,
 e Channathgate dista **1,5 giorni**. Il calendario che tiene insieme tutto:
 
 ```
@@ -2619,7 +2605,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # Parte 2D — Conseguenze ed Echi (stile BG3)
 
-> Allegato di `...P2D-PALIO-DM-MASTER-REFERENCE.md`. Fonte autoritativa degli **esiti**:
+> Allegato di cap. X. Fonte autoritativa degli **esiti**:
 > contrada vincente **×** scelte dei PG → effetti sull'assedio di Rethmar (INTEGRAZIONE §5–6),
 > voto del Consiglio, echi RP e post-campagna. Aggiorna `campaign/state.md` di conseguenza.
 
@@ -2812,7 +2798,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # Parte 2D — Statblocchi e Comprimari (D&D 3.5, APL 13)
 
-> Allegato di `...P2D-PALIO-DM-MASTER-REFERENCE.md`. Valori indicativi per gruppo di 4 PG
+> Allegato di cap. X. Valori indicativi per gruppo di 4 PG
 > di livello 13. Adatta ±2 GS al tuo tavolo. I fantini e i cavalli sono progettati per la
 > **Corsa (Chase)**, non per il combattimento campale.
 
@@ -2954,7 +2940,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 # Parte 2D — Mappe e Note Tattiche
 
-> Allegato di `...P2D-PALIO-DM-MASTER-REFERENCE.md`. Le mappe sono file **SVG** originali in
+> Allegato di cap. X. Le mappe sono file **SVG** originali in
 > `P2D-Palio-Allegati/mappe/` (apribili nel browser, stampabili, scalabili senza perdita).
 
 ---
@@ -2988,7 +2974,7 @@ che ci finisce è "salvo" ma fuori gara; un PG a piedi può muoversi nella ressa
 ## 2. Channathgate — la città e gli otto rioni
 **File**: `P2D-Palio-Allegati/immagini/channathgate-mappa.png` (pianta
 illustrata coi nomi FR dei quartieri — **master visivo della città**, DM
-2026-07-17; corrispondenze in `...P2D-PALIO-DISTRETTI-CHANNATHGATE.md`).
+2026-07-17; corrispondenze in cap. I).
 Schema vettoriale di servizio: `P2D-Palio-Allegati/mappe/channathgate-citta.svg`
 
 ![Channathgate](../P2D-Palio-Allegati/mappe/channathgate-citta.svg)
@@ -3018,7 +3004,7 @@ La **sincronizzazione** col fronte (INTEGRAZIONE §3): due vie per i rinforzi vi
 
 ![Stalla — assalto drow](../P2D-Palio-Allegati/mappe/stalla-assalto-drow.svg)
 
-Griglia **1 quadretto = 5 ft**, GS 11–12 (statblocchi in `...P2D-PALIO-STATBLOCCHI.md` §3).
+Griglia **1 quadretto = 5 ft**, GS 11–12 (statblocchi in cap. XIII §3).
 - I drow entrano dalla **botola/fogna** (angolo SO) con *Oscurità*; puntano al **BOX** del
   cavallo (obiettivo: avvelenarlo), usano *Silenzio* per soffocare gli allarmi.
 - Il **Barbaresco (B)** è accanto al cavallo; la **scorta PG (P)** copre la porta principale.
@@ -3046,7 +3032,7 @@ per mappa. Companion di raccordo:*
 
 - **Corsa (skill-challenge/chase)**: le 6 Zone con DC crescenti (sorpassi/nerbate; la folla lancia oggetti ai fantini odiati in Zona 4; il Ladro colpisce alla Curva del Boia). Un fantino disarcionato nel catino è "salvo" ma fuori gara.
 - **Assalto alla stalla (tattico, notte Giorno 2)**: i drow puntano al **BOX** del cavallo (avvelenarlo); Barbaresco accanto, scorta PG alla porta; **Scurovisione/luce cruciale** (buio totale); sorpresa se non di guardia (Ascoltare DC 20). **Catturare un drow vivo → −1 clock Sonjak** (Fase 0 Rethmar).
-- Statblocchi: `...P2D-PALIO-STATBLOCCHI.md`.
+- Statblocchi: cap. XIII.
 
 ### 🔄 EVOLUZIONE (companion T5c — Palio → rinforzi al fronte)
 

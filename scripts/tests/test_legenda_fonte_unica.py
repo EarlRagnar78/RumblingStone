@@ -161,7 +161,8 @@ class TestLaFonteEUnaSola(unittest.TestCase):
                     self.assertIn(f[campo], valori, f"{sim}.{campo}")
 
     def test_la_spec_funzionale_e_ratificata_per_intero(self):
-        """56 simboli su 56 che una funzione ce l'hanno (DM, 2026-09-12).
+        """57 simboli su 57 che una funzione ce l'hanno (DM, 2026-09-12; il 57° e'
+        🌫, RIPRESA-PR 4j-4 del 2026-09-24, che la sua funzione la dichiara).
 
         I 7 restanti non sono un buco: 6 sono token di creatura, e la spec
         §4.5 dice che le unita' `function` non ce l'hanno — hanno `unit`.
@@ -171,7 +172,7 @@ class TestLaFonteEUnaSola(unittest.TestCase):
         con = [s for s, v in legenda.simboli().items()
                if json.loads((ROOT / "scripts" / "legend.json")
                              .read_text(encoding="utf-8"))["symbols"][s].get("function")]
-        self.assertEqual(len(con), 56)
+        self.assertEqual(len(con), 57)
         unita = [s for s, v in legenda.simboli().items() if v["mode"] == "unit"]
         self.assertEqual(len(unita), 6)
         for u in unita:
@@ -332,9 +333,10 @@ class TestLaMigrazioneNonHaCambiatoNiente(unittest.TestCase):
         self.assertLess(a["🧱"], a["🏰"], "il muretto e' piu' basso del muro")
         self.assertLess(a["🏰"], a["🗼"], "e la torre svetta su tutto")
 
-    def test_i_63_simboli_ci_sono_tutti(self):
-        """62 era il numero della spec di luglio; 🔳 e' entrato con ADR-0042."""
-        self.assertEqual(len(legenda.simboli()), 63)
+    def test_i_64_simboli_ci_sono_tutti(self):
+        """62 era il numero della spec di luglio; 🔳 e' entrato con ADR-0042, 🌫
+        con RIPRESA-PR 4j-4 (2026-09-24, dal ramo della PR #42)."""
+        self.assertEqual(len(legenda.simboli()), 64)
 
     def test_i_consumatori_vedono_gli_stessi_valori(self):
         import export_uvtt as eu

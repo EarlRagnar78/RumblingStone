@@ -18,6 +18,42 @@
 - **Coerenza**: genera prima la scena-madre, poi le altre chiedendo
   *«same world, same palette and lighting as the previous image»*.
 
+## Schede-personaggio (skill `rumblingstone-art-direction` §3)
+
+> Aggiunte il 2026-09-24. Si copiano **parola per parola** in ogni prompt in
+> cui il personaggio compare.
+
+```
+HELLA — nana adulta · bassa, spalle larghe, proporzioni naniche
+VOLTO      viso tondo · occhi ambra dorata · pelle con un sottotono verde muschio ·
+           orecchie A PUNTA, come foglie giovani (Ibrido Treant)
+CAPELLI    biondi, mossi, con foglie e una venatura sottile di corteccia
+INDOSSA    armatura di pietra grigia screpolata e foglie di quercia · colore: verde muschio
+SEGNO      il torc vivo di legno e metallo con tre semi; Durik al fianco
+```
+
+✅ **Decisione del DM, 2026-09-24**: l'aspetto di Hella è **quello dei ritratti
+esistenti** (`PG/Immagini/Hella*.webp|png`, dal prompt master
+`campaign/ai-media-prompts/11_PG_E_VILLAIN_PROMPTS.md` §2.3): bionda, orecchie a
+punta. `ARC07-DEF-3` §7 è stato allineato. I ritratti entrano nei booklet
+(`PG/Immagini/web/Hella.jpg` apre la sua scheda); `Hella_elementale.png` mostra
+l'Avatar della Radice.
+
+```
+DURIK — cane da galoppo, maschio · levriero da caccia, non un mastino
+CORPO      pietra scura porosa intrecciata a vene di mithral, come muscolo su osso
+OCCHI      topazio, oro-arancio: l'unica nota calda
+INDOSSA    niente: nessun collare, nessuna bardatura
+SEGNO      si mette sempre FRA qualcuno e il pericolo
+```
+
+✅ `PG/Immagini/durik2.png` e `DurikFront2.png` rispettano la scheda (occhi di
+topazio accesi) e sono quelle del booklet. `Durik1.png`/`Duric.png` (lo
+stesso file due volte) e `duricFront.png` sono varianti della stessa serie,
+con gli occhi spenti.
+
+---
+
 ## Copertura attuale
 
 - Scene con read-aloud trovate: **46**
@@ -555,20 +591,13 @@ artisti viventi]
 
 - **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — A6 — «Il Viaggio Attraverso il Tempo» (SUD-OVEST · temporale → 80%)
 - **Etichetta regia**: Andor lead — il tempo incerto).
-- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
-- **Stato**: ⬜ prompt da scrivere
+- **Destinatario**: `pg` · **Formato**: `16:9 splash` (sostituisce `PortaleDellaForgiaEterna.webp`, che è un'immagine di testo)
+- **Stato**: ✅ generata con Canva AI il 2026-09-25, nel repo come `Immagini/tavola-portale-del-tempo.jpg` (1600 × 899) e in `DEF-4` Scena 1
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
 > Questo affresco è doloroso da guardare a lungo. Mostra due scene SOVRAPPOSTE, come una doppia esposizione che il cervello si rifiuta di separare. Nella prima — Anno −1000 — Hammerfist è giovane, le mura appena erette e ancora lucide; i nani combattono un'orda primitiva di orchetti, e un drago nero GIOVANE si tuffa sulle fortificazioni: il capostipite di una stirpe che riconoscerete. Nella seconda — Anno 1372, ADESSO — Hammerfist è assediata, le mura segnate, l'esercito della Mano Rossa schierato sotto, e Fauci di Palude — lo stesso sangue, mille anni più vecchio e più grande — circola sopra co
 
-**Prompt (EN)**
-```text
-[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
-artistica; scala per paragone, materiali, luce, mood; niente nomi di
-artisti viventi]
-```
-
-**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=tavola-portale-del-tempo` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
 ### 23 · A8 — «Il Ritorno Trionfale» (SUD · vuoto → 60%)  `[a8-il-ritorno-trionfale-sud-vuoto-60]`
@@ -655,60 +684,39 @@ artisti viventi]
 
 - **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — §3 — IL CUORE DI MORADIN (rivelazione del reliquiario)
 - **Etichetta regia**: Salvatore — il sacro che si sente nel corpo).
-- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
-- **Stato**: ⬜ prompt da scrivere
+- **Destinatario**: `pg` **dopo** il box del §3 · **Formato**: `16:9 splash`
+- **Stato**: ✅ generata con Canva AI il 2026-09-25, nel repo come `Immagini/tavola-cuore-di-moradin.jpg` (1600 × 899). **Sostituisce `ilCuoreDiMoradin.png` al §3**: il box dice che il Cuore sta *dentro* l'Altare che si apre, e la vecchia immagine lo mette sopra. La vecchia resta per la copertina del booklet e per `DEF-2` e `DEF-5`
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
 > Thorik, posi le mani sulla superficie di mithral, e l'Altare SI APRE. Non c'erano cuciture, un istante fa: ora una camera interna di trenta centimetri si schiude come un fiore di metallo. Dentro, sospeso nella luce dorata, un cristallo di rubino sanguigno grande come il tuo pugno — e ha la forma ESATTA di un cuore nanico: quattro camere, i vasi visibili, tutto scolpito in rubino divino trasparente. E pulsa. Sessanta battiti al minuto. Il ritmo di un cuore a riposo. Quando lo sfiori, senti calore. Vita. Creazione pura. E capisci, senza che nessuno te lo dica, che questo si spenderà UNA volta so
 
-**Prompt (EN)**
-```text
-[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
-artistica; scala per paragone, materiali, luce, mood; niente nomi di
-artisti viventi]
-```
-
-**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=tavola-cuore-di-moradin` (`serie=extra`) — stile del Drappo. Esiste già `ilCuoreDiMoradin.png`, che lo mostra sull'Altare; questa è la versione del reliquiario che si apre, fedele a `DEF-3` §3.
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
 ### 28 · §6 — IL DEBITO DELLA RADICE (il filo grigio del piano spirituale) [CANONE — DM 2026-07-23; il ramo (A/B/C) si gioca]  `[6-il-debito-della-radice-il-filo-grigio-del-piano-spirituale]`
 
 - **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — §6 — IL DEBITO DELLA RADICE (il filo grigio del piano spirituale) [CANONE — DM 2026-07-23; il ramo (A/B/C) si gioca]
 - **Etichetta regia**: GoT lead — la creditrice paziente).
-- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
-- **Stato**: ⬜ prompt da scrivere
+- **Destinatario**: `dm` (la Custode non si mostra prima dello Step 5) · **Formato**: `3:4 handout`
+- **Stato**: ✅ generata con Canva AI il 2026-09-25, nel repo come `Immagini/tavola-custode-delle-radici.jpg` e in `DEF-3` §6, a 533 × 800: è la copia arrivata dalla chat, non l'originale Canva. Da sostituire con l'esportazione a piena risoluzione
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
 > Nel momento in cui lo spirito di Hella varca la soglia tra i mondi, la luce dorata dell'Altare vacilla — e qualcos'altro è nella Sala con voi. Non un mostro: una PRESENZA. Ha la forma di una donna di radici e pietra, alta come Therysol, gli occhi due nodi di legno antico. Non è ostile. Non è gentile. È come la montagna: c'è, e aspetta. Parla, e la sua voce è il rumore di una faglia che si assesta: LA CUSTODE DELLE RADICI: «Una radice strappata lascia un vuoto. Il vuoto va colmato — è legge, non capriccio. Non oggi. Non con lei: il Forgiatore la protegge, e io non discuto col Forgiatore. Ma il 
 
-**Prompt (EN)**
-```text
-[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
-artistica; scala per paragone, materiali, luce, mood; niente nomi di
-artisti viventi]
-```
-
-**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=tavola-custode-delle-radici` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
 ### 29 · §7 — IL RISVEGLIO (Hella torna, Durik si lega, la Collana nasce)  `[7-il-risveglio-hella-torna-durik-si-lega-la-collana-nasce]`
 
 - **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — §7 — IL RISVEGLIO (Hella torna, Durik si lega, la Collana nasce)
 - **Etichetta regia**: Salvatore — il ritorno).
-- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
-- **Stato**: ⬜ prompt da scrivere
+- **Destinatario**: `pg` **dopo** la scena (è il ritorno: mostrarla prima lo brucia) · **Formato**: `16:9 splash`
+- **Stato**: ✅ generata con Canva AI il 2026-09-25, **seconda versione** (`MAHWL21y19U`); nel repo come `Immagini/tavola-risveglio-di-hella.jpg` (1600 × 899), in `DEF-3` §7
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
 > Silenzio. Cinque secondi. Dieci. Il Cuore di Moradin, sopra il petto di Hella, rallenta: novanta battiti… sessanta… si ferma. E poi — lei INSPIRA. Netto. Improvviso. Profondo, come chi riemerge dall'acqua un istante prima di annegare. Il petto si alza. Ricade. RESPIRA. E gli occhi si aprono — non più marroni: ambra dorata. La pelle ha un sottotono di muschio pallido; tra i capelli rossi corre una venatura di corteccia sottile; e attorno a lei l'aria sa di terra bagnata e di linfa. È Hella. È cambiata. È VIVA.
 
-**Prompt (EN)**
-```text
-[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
-artistica; scala per paragone, materiali, luce, mood; niente nomi di
-artisti viventi]
-```
-
-**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=tavola-risveglio-di-hella` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
 ### 30 · §7 — IL RISVEGLIO (Hella torna, Durik si lega, la Collana nasce)  `[7-il-risveglio-hella-torna-durik-si-lega-la-collana-nasce-2]`
@@ -735,20 +743,13 @@ artisti viventi]
 
 - **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — §7 — IL RISVEGLIO (Hella torna, Durik si lega, la Collana nasce)
 - **Etichetta regia**: Salvatore — il ritorno del fedele).
-- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
-- **Stato**: ⬜ prompt da scrivere
+- **Destinatario**: `pg` dopo il risveglio · **Formato**: `3:4 handout` (è la copertina della scheda di Durik)
+- **Stato**: ✅ generata con Canva AI il 2026-09-25, **seconda versione** (`MAHWL6svafI`): Durik levriero in piedi, lo stesso di `durik2`. Nel repo come `Immagini/tavola-durik-e-hella.jpg` (533 × 800, copia della chat), copertina di `08-SCHEDA-DURIK`
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
 > Prima che qualcuno possa rispondere, un rumore di pietra su pietra: il grande cane di mithral e roccia scura — quello che ha preso forma nel Piano della Terra e da allora non si è mai allontanato dal corpo — si fa avanti. Non abbaia: non sa più farlo. Appoggia la testa massiccia sul petto di Hella, gli occhi di topazio socchiusi, e resta così. Lei alza una mano tremante e la posa tra le sue orecchie di granito. «…Durik?» Il cane emette un suono che non è un verso: è il click lontano di una faglia che si assesta. È tornato anche lui. Non l'aveva mai davvero lasciata.
 
-**Prompt (EN)**
-```text
-[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
-artistica; scala per paragone, materiali, luce, mood; niente nomi di
-artisti viventi]
-```
-
-**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=tavola-durik-e-hella` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
 ### 32 · §8 — IL RACCONTO DELLE PROVE (l'asimmetria si scioglie) — spotlight di Hella  `[8-il-racconto-delle-prove-l-asimmetria-si-scioglie-spotlight]`
@@ -775,20 +776,13 @@ artisti viventi]
 
 - **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — ZONA 1 — La Fortezza Giovane (Hammerfist appena eretta)
 - **Etichetta regia**: LotR lead — deep time al contrario).
-- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
-- **Stato**: ⬜ prompt da scrivere
+- **Destinatario**: `pg` all'arrivo · **Formato**: `16:9 splash`
+- **Stato**: ✅ generata con Canva AI il 2026-09-25, in due immagini: `Immagini/tavola-hammerfist-giovane.jpg` per l'arrivo (Scena 1, i fuochi dell'orda) e `Immagini/tavola-hammerfist-giovane-porta.jpg` per la porta e la targa (Scena 3)
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
 > Conoscete Hammerfist: le sue sale annerite dai secoli, le statue consumate, i nomi dei re incisi e riincisi. Ma QUESTA Hammerfist non ha ancora storia. Le mura sono bianche di pietra appena tagliata, gli spigoli ancora vivi. Le statue dei re sono una sola. E sulla porta, la targa di bronzo con la profezia dei Quattro Eroi è stata incisa OGGI, l'inchiostro del cesello ancora fresco. Camminate dentro la vostra stessa leggenda mentre viene scritta. È vertiginoso: ogni pietra che toccate, tra mille anni, la toccherete di nuovo — vecchia di un millennio.
 
-**Prompt (EN)**
-```text
-[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
-artistica; scala per paragone, materiali, luce, mood; niente nomi di
-artisti viventi]
-```
-
-**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=tavola-hammerfist-giovane` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
 ### 34 · ZONA 2 — Il Mare di Tende (l'orda, di notte)  `[zona-2-il-mare-di-tende-l-orda-di-notte]`
@@ -833,7 +827,7 @@ artisti viventi]
 
 ### 36 · SCENA 1 — L'Arrivo e le Cronache dei Quattro Eroi  `[scena-1-l-arrivo-e-le-cronache-dei-quattro-eroi]`
 
-- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 1 — L'Arrivo e le Cronache dei Quattro Eroi
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 1 — Il portale e il bosco al tramonto
 - **Etichetta regia**: .
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
@@ -853,7 +847,7 @@ artisti viventi]
 
 ### 37 · SCENA 2 — Thorgrim Barbadiferro e gli Antenati [FAST-PLAY — assorbita in 1-bis se giochi le scene complete]  `[scena-2-thorgrim-barbadiferro-e-gli-antenati-fast-play-assor]`
 
-- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 2 — Thorgrim Barbadiferro e gli Antenati [FAST-PLAY — assorbita in 1-bis se giochi le scene complete]
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 4 — Il consiglio di guerra di Re Thorek I
 - **Etichetta regia**: .
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
@@ -873,7 +867,7 @@ artisti viventi]
 
 ### 38 · SCENA 3 — Infiltrazione e Zog'tar [FAST-PLAY / COMBATTIMENTO COMPLETO]  `[scena-3-infiltrazione-e-zog-tar-fast-play-combattimento-comp]`
 
-- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 3 — Infiltrazione e Zog'tar [FAST-PLAY / COMBATTIMENTO COMPLETO]
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENE 7-8 — La tenda del comando, Zog'tar
 - **Etichetta regia**: .
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
@@ -893,7 +887,7 @@ artisti viventi]
 
 ### 39 · SCENA 4 — Le Mura sotto Assalto (alba)  `[scena-4-le-mura-sotto-assalto-alba]`
 
-- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 4 — Le Mura sotto Assalto (alba)
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 10 — Le mura all'alba
 - **Etichetta regia**: .
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
@@ -913,7 +907,7 @@ artisti viventi]
 
 ### 40 · SCENA 6 — Il Rubino e il Ritorno  `[scena-6-il-rubino-e-il-ritorno]`
 
-- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 6 — Il Rubino e il Ritorno
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 13 — Il Rubino e il ritorno
 - **Etichetta regia**: Casa di Davide — la profezia compiuta).
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
@@ -935,20 +929,13 @@ artisti viventi]
 
 - **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — §4 — BOSS: SKULLCRUSHER IL NERO (il duello — unico scontro tattico)
 - **Etichetta regia**: Salvatore — l'ingresso del mostro).
-- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
-- **Stato**: ⬜ prompt da scrivere
+- **Destinatario**: `dm` fino al duello, poi `pg` · **Formato**: `16:9 splash`
+- **Stato**: 🟡 generata con Canva AI il 2026-09-25, nel repo come `Immagini/tavola-skullcrusher-nel-cortile.webp` (1600 × 899) con la derivata in `web/`. **Difetto noto**: il cane di Hella è una bestia massiccia di pietra, non il levriero Durik. Si vede di spalle e piccolo; da rigenerare se il DM lo vuole fedele
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
 > Il cielo si spezza. Skullcrusher il Nero cala come una montagna alata, e l'acido gli sfrigola dalle fauci prima ancora che apra la bocca. Dove atterra, la pietra fuma. Aegis Fang urla nella mente di Thorik — non canta, URLA: «SANGUE ANTICO. ARTEFICE DI LACRIME. IL PRIMO NERO.» E la Corona vi mostra due immagini sovrapposte, tremanti l'una sull'altra: questo drago, adesso — e Fauci di Palude, mille anni nel futuro, sopra le mura di una Hammerfist che brucia. Sono lo stesso sangue. E voi state per insegnare a quel sangue, per la prima volta, che cosa vuol dire aver paura.
 
-**Prompt (EN)**
-```text
-[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
-artistica; scala per paragone, materiali, luce, mood; niente nomi di
-artisti viventi]
-```
-
-**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=tavola-skullcrusher-nel-cortile` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
 ### 42 · §5 — VATORE (Sal a −1000: la scena grigia + la sincronizzazione)  `[5-vatore-sal-a-1000-la-scena-grigia-la-sincronizzazione]`
@@ -1089,3 +1076,123 @@ human hands, faceted gemstone cut like a jewel, cartoon, neon glow, bokeh hearts
 
 **Note di coerenza d'arco**: generala **dopo** la scheda `10`, chiedendo
 *«same world, same palette and lighting as the previous image»*.
+
+---
+
+## Ritratti del cast di mille anni fa
+
+> Aggiunti il 2026-09-24 per il volume `homebrew/volume-mille-anni/`. Qui
+> stanno le **schede-personaggio**; i prompt eseguibili, nello **stile del
+> Drappo di Tarsilia** (832 × 1216, look comune e ancora fiamminga), stanno in
+> `PROMPT-RITRATTI-E-TAVOLE-ARC07.md`. Si genera prima **R5 Balvar** (è il volto che conta di più) e gli
+> altri chiedendo *«same painting style, same lighting as the previous
+> image»*. Il file si salva in `Immagini/ritratti/<nome>.jpg`, poi nella scheda
+> d'entrata di `ARC07-DEF-4` la riga «Ritratto» diventa
+> l'immagine. **Gate di rifiuto** (skill `rumblingstone-art-direction` §6): le
+> mani, la luce da sinistra, il segno del personaggio ben visibile, nessuna
+> scritta. Skullcrusher ha già la scheda **41**, la Custode la **28**.
+>
+> ⚠️ **Cosa è canone.** Ruolo, abiti, armi e segno vengono dai master e dal
+> Bestiario. **I tratti del volto** sono canone anche loro, e li fissano i sette
+> ritratti in `Immagini/ritratti/`: dove una scheda e il ritratto non
+> coincidevano ha vinto il ritratto. Un ritratto nuovo si fa su queste schede.
+> L'arma resta quella dello statblocco anche quando il ritratto la disegna
+> diversa (Durin: ascia doppia nel master, a una lama nel ritratto).
+
+### R1 · Durin Rocciadura  `[ritratto-durin-rocciadura]`
+
+- **Destinatario**: `pg` dopo l'incontro · **Formato**: `3:4 ritratto` · **File**: `Immagini/ritratti/durin-rocciadura.jpg`
+- **Stato**: ✅ generato con Canva AI il 2026-09-25 e nel repo, a 533 × 800: è la copia arrivata dalla chat, non l'originale Canva. Da sostituire con l'esportazione a piena risoluzione
+
+```
+DURIN — nano adulto, veterano · largo, non alto
+VOLTO      barba castana lunga, raccolta in una treccia sola · sguardo che non si ferma
+INDOSSA    armatura completa ammaccata, cappuccio verde, scudo tondo · colore: ferro scuro, lo scudo blu di Hammerfist
+SEGNO      l'ascia doppia, tenuta troppo stretta
+```
+
+**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=ritratto-durin-rocciadura` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
+
+### R2 · Re Thorek I  `[ritratto-re-thorek-i]`
+
+- **Destinatario**: `pg` dopo l'incontro · **Formato**: `3:4 ritratto` · **File**: `Immagini/ritratti/re-thorek-i.jpg`
+- **Stato**: ✅ generato con Canva AI il 2026-09-25 e nel repo, a 533 × 800: è la copia arrivata dalla chat, non l'originale Canva. Da sostituire con l'esportazione a piena risoluzione
+
+```
+RE THOREK I — nano di 182 anni · massiccio, eretto
+VOLTO      barba bianca lunghissima, divisa in quattro trecce · occhi grigi pesanti
+INDOSSA    armatura di mithral · colore: argento e blu scuro · corona semplice senza gemme
+SEGNO      l'ascia Frostcleaver, sempre in pugno
+```
+
+**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=ritratto-re-thorek-i` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
+
+### R3 · Thorgrim Barbadiferro  `[ritratto-thorgrim-barbadiferro]`
+
+- **Destinatario**: `pg` dopo l'incontro · **Formato**: `3:4 ritratto` · **File**: `Immagini/ritratti/thorgrim-barbadiferro.jpg`
+- **Stato**: ✅ generato con Canva AI il 2026-09-25 e nel repo, a 533 × 800: è la copia arrivata dalla chat, non l'originale Canva. Versione a mani vuote e palmi in vista, come chiede `DEF-4`; la prima, con la reliquia in mano, è scartata. La seconda (`MAHWLyX0Wa0`) il DM non la trovava in Canva ed è stata rigenerata come `MAHWMYEg1KY`
+
+```
+THORGRIM — nano vecchio · seduto, non si alza
+VOLTO      barba grigio ferro · occhi lucidi che non se ne accorgono
+MANI       grandi, aperte verso la luce con i palmi in su, e il callo della presa d'ascia
+SEGNO      Aegis Fang, l'ascia da guerra nanica, appoggiata al fianco
+```
+
+**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=ritratto-thorgrim-barbadiferro` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
+
+### R4 · Mastro Costruttore Zeth  `[ritratto-zeth-mastro-costruttore]`
+
+- **Destinatario**: `pg` dopo l'incontro · **Formato**: `3:4 ritratto` · **File**: `Immagini/ritratti/zeth-mastro-costruttore.jpg`
+- **Stato**: ✅ generato con Canva AI il 2026-09-25 e nel repo, a 533 × 800: è la copia arrivata dalla chat, non l'originale Canva. Da sostituire con l'esportazione a piena risoluzione
+
+```
+ZETH (≈372 DR) — mezz'elfo adulto, magro
+VOLTO      zigomi alti, occhi febbrili, barba di qualche giorno
+INDOSSA    tunica da capomastro impolverata fino ai gomiti · colore: ocra
+SEGNO      traccia rune col gesso sulle pareti dei tunnel
+```
+
+**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=ritratto-zeth-mastro-costruttore` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
+
+### R5 · Balvar Fuocospento  `[ritratto-balvar-fuocospento]`
+
+- **Destinatario**: `pg` dopo l'incontro · **Formato**: `3:4 ritratto` · **File**: `Immagini/ritratti/balvar-fuocospento.jpg`
+- **Stato**: ✅ generato con Canva AI il 2026-09-25 e nel repo, a 533 × 800: è la copia arrivata dalla chat, non l'originale Canva. Da sostituire con l'esportazione a piena risoluzione
+
+```
+BALVAR — nano dello scudo, vecchio · curvo sul lavoro
+VOLTO      barba bianca sporca di polvere d'ardesia · occhi calmi
+INDOSSA    grembiule di cuoio da bottega su una casacca trapuntata · colore: verde scuro e cuoio
+SEGNO      la lastra d'ardesia sulle ginocchia e la punta di ferro in mano
+```
+
+**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=ritratto-balvar-fuocospento` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
+
+### R6 · Zog'tar Deatheye  `[ritratto-zogtar-deatheye]`
+
+- **Destinatario**: `pg` dopo l'incontro · **Formato**: `3:4 ritratto` · **File**: `Immagini/ritratti/zogtar-deatheye.jpg`
+- **Stato**: ✅ nel repo la **terza versione**, mandata dal DM il 2026-09-25: `Immagini/ritratti/zogtar-deatheye.webp` (1033 × 1523), derivata di stampa in `web/`. Ha la pietra nell'occhio destro senza specchiare. Strumento da confermare
+
+```
+ZOG'TAR — mezzo-ogre · grande quanto una porta di stalla
+VOLTO      zanne corte, cicatrici · al posto dell'occhio destro una pietra nera levigata
+INDOSSA    armatura completa di piastre annerite · colore: nero e rosso ruggine
+SEGNO      l'ascia a due mani appoggiata alla spalla
+```
+
+**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=ritratto-zogtar-deatheye` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
+
+### R7 · Vatore  `[ritratto-vatore]`
+
+- **Destinatario**: `pg` dopo l'incontro · **Formato**: `3:4 ritratto` · **File**: `Immagini/ritratti/vatore.jpg`
+- **Stato**: ✅ generato con Canva AI il 2026-09-25 e nel repo, a 533 × 800: è la copia arrivata dalla chat, non l'originale Canva. Da sostituire con l'esportazione a piena risoluzione
+
+```
+VATORE — umano sulla quarantina · asciutto, silenzioso
+VOLTO      lo stesso volto di Sal, ma senza sorriso · occhi freddi e calcolatori
+INDOSSA    vesti di seta grigia di taglio drow, cappuccio · nessun ornamento
+SEGNO      un fagotto stretto al petto (il Sigillo di Ossidiana)
+```
+
+**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=ritratto-vatore` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.

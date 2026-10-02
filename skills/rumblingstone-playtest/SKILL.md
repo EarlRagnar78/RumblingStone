@@ -75,6 +75,70 @@ lette come «il modulo è pronto», che è la conclusione sbagliata.
 Esemplare: il dry-run dell'Abbazia (`10-stand-alone/`), che apre dichiarando
 *«Cos'è e cosa non è»* prima di elencare i dodici difetti.
 
+## 2-bis. Il lettore e il playtester a freddo — prima del dry-run
+
+Chi ha scritto un modulo non vede le sue lacune: sa com'è la stanza e chi ci
+sta, e non si accorge che sulla pagina non c'è. Il 2026-09-25 il DM ha
+inventato al tavolo sette cose che `ARC07-DEF-4` non diceva, con tutti i
+cancelli verdi ([ADR-0073](../../plans/adr/ADR-0073-chi-e-dove-sta-scritto-nella-scena.md)).
+
+Quattro letture, ognuna fatta da un agente nuovo che riceve **solo il modulo**
+e la sua rubrica fissa. Leggi le rubriche, non questo riassunto:
+
+| Ruolo | Domanda | Rubrica |
+|---|---|---|
+| **lettore** | *capisco cosa c'è, senza inventare?* (leggibilità) | [`references/lettore-a-freddo.md`](references/lettore-a-freddo.md) |
+| **playtester** | *quando i giocatori fanno quello che vogliono, il modulo risponde?* (giocabilità) | [`references/playtester-a-freddo.md`](references/playtester-a-freddo.md) |
+| **developer** | *si gioca? i numeri reggono l'SRD, e nessuno resta senza niente da fare?* | [`sviluppo-degli-incontri.md`](../rumblingstone-module-standard/references/sviluppo-degli-incontri.md), letto da un agente con i codici `V-` |
+| **DM a freddo** *(primo passo obbligatorio, D9)* | *un DM che non l'ha scritto lo conduce stasera, con il tempo che ha?* (preparazione) | [`references/dm-a-freddo.md`](references/dm-a-freddo.md) |
+
+Cosa si fa dei rilievi, e quando si rifà il giro: `rumblingstone-module-standard`,
+«Il giro».
+
+- **Come**: il lettore legge **due volte** (D8): prima una scena alla volta,
+  servito da `scripts/lettura_a_scene.py`, con un diario per scena; poi il
+  modulo intero. Il diario serve al ricordo del passo 7 e alle domande ai
+  lettori; la seconda lettura ai buchi che si vedono solo col modulo intero
+  (`lettore-a-freddo.md`, «La lettura a scene»).
+- **Quando**: su ogni master nuovo o riscritto, **prima** del dry-run e prima
+  che vada al tavolo. Il dry-run misura il ritmo, le letture misurano i buchi.
+- **Sono obbligatorie per chiamare un master DEF**, in ogni arco e in ogni
+  stand-alone: sono i passi 6 e 7 del ciclo completo di
+  `rumblingstone-module-standard`, dopo le domande del developer (passo 4).
+  Un master che ha passato i cancelli e non le letture è alfa
+  ([ADR-0075](../../plans/adr/ADR-0075-il-ciclo-del-master-vale-per-ogni-piano.md)).
+- **Il cancello**: `python3 scripts/copertura_scene.py --check` gira in CI su
+  ogni modifica di canone. Controlla il box di ogni scena, la scheda di chi
+  parla e il contratto `**In scena** — Dove: … — Chi: …`. Le letture trovano
+  un difetto la prima volta, e il cancello impedisce che torni.
+- **Quando si rifanno**: lo dice `registro_letture.py --check`, che tiene in
+  `plans/letture-a-freddo.json` l'impronta del testo letto e lo stato di ogni
+  rilievo grave. Un master che cambia dopo la lettura chiede una lettura nuova,
+  o una voce «sola forma» con la ragione (D26). Il cancello è in avviso finché
+  un master non ha le letture con impronta, poi blocca da solo.
+- **Le letture non sono un cancello.** Due letture non danno lo stesso elenco.
+  Un tipo di rilievo che torna in due moduli diversi diventa una regola dello
+  script, con i falsi positivi contati a mano.
+- **Gli esempi delle rubriche non vengono mai dai casi di calibrazione**,
+  altrimenti la lettura trova quello che le si è detto di trovare.
+  Calibrazione: `plans/esperimenti/lettore-playtester-def4/`.
+- **Il ricordo del giorno dopo** misura quanto resta dopo una lettura sola, ed
+  è il passo 7 del ciclo dal 2026-10-01: un agente nuovo risponde dal solo
+  diario della lettura a scene, e le risposte si confrontano con la serata che
+  il master dichiara (`ricordo_lettura.py`, procedura in
+  [`references/quiz-a-due-agenti.md`](references/quiz-a-due-agenti.md), «Il
+  ricordo dal diario»). Con lo stesso diario il DM può fare domande ai lettori
+  dopo la lettura, e loro rispondono senza rivedere il testo.
+- **Il quiz a due agenti** misura un'altra cosa: non i buchi, ma **quanto
+  resta dopo una lettura sola**. Un agente legge e scrive 400 parole di
+  appunti, un secondo risponde a una chiave di 10-15 domande con i soli
+  appunti, e `quiz_lettura.py` divide le risposte in *giusta dagli appunti* /
+  *solo a libro aperto* / *sbagliata anche a libro aperto*. Procedura:
+  [`references/quiz-a-due-agenti.md`](references/quiz-a-due-agenti.md). Prima
+  esecuzione, su DEF-4 prima e dopo la riscrittura:
+  `plans/esperimenti/quiz-def4/` (i buchi a libro aperto da 4 a 0, quello che
+  resta dagli appunti da 5 a 6).
+
 ## 3. Il dry-run — come si simula un tavolo
 
 - **Composizione**: dichiara chi immagini al tavolo (quanti esperti, quanti no). Un

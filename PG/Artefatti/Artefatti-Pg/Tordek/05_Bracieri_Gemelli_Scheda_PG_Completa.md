@@ -193,6 +193,18 @@ Una volta per round, quando metti a segno un **Critico Confermato** usando Attac
 
 ---
 
+## Quando gli artefatti si parlano
+
+- **Con Corona e Anello — la Trinità Divina.** 1/giorno per cinque round, tutti
+  e tre entro 9 m, un'azione di movimento a testa: immuni a paura e charme, +4
+  sacro ai TS, +2 sacro alla CA, i colpi superano la RD come Buoni e Legali,
+  Aura di Soggezione CD 20.
+- **Con Hella — Il Bosco e la Fucina.** Se hai donato l'**Ancoraggio della
+  Montagna** al rito, i Treant di Adamantio di Hella hanno **resistenza al fuoco
+  10**. Una volta sola, lei può renderti l'Ancoraggio per una scena. Quando la
+  Foresta Sacra vi avrà accolti, con la Collana la Trinità diventerà la
+  **Quaternità**: nel cerchio completo l'Ancoraggio torna, a tutti e quattro.
+
 ## Benedizione della Forgia Eterna (Moradin)
 
 Dopo il **contatto con l'Altare del Cuore di Moradin** nella Sala della Forgia

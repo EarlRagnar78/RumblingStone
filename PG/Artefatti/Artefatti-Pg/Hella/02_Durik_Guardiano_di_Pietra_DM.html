@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="versione-artefatto" content="durik · S1 · r3 · 2026-09-25">
+    <title>Durik Riforgiato — il Guardiano di Pietra (DM)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @page { size: A4; margin: 12mm; }
+        html { background: #f3f1e8; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        body { font-family: 'Times New Roman', serif; font-size: 11pt; line-height: 1.4; color: #2c1810; margin: 0; padding: 20px; background: linear-gradient(135deg, #f8f6f0 0%, #ede8dc 100%); }
+        .header { text-align: center; border-bottom: 3px solid #8f9a96; padding-bottom: 10px; margin-bottom: 20px; }
+        .class-title { font-size: 24pt; font-weight: bold; color: #34403d; margin: 0; text-transform: uppercase; letter-spacing: 2px; }
+        .subtitle { font-size: 14pt; font-style: italic; color: #5d4e37; margin: 5px 0; }
+        .motto { font-family: 'Cinzel Decorative', cursive; font-size: 12pt; color: #9a6a12; text-shadow: 0 0 2px #e0a030; font-weight: bold; letter-spacing: 1px; text-align: center; margin-top: 5px; }
+        .dm-tag { display: inline-block; background: #8B0000; color: #f8f6f0; font-size: 9pt; font-weight: bold; letter-spacing: 2px; padding: 2px 10px; border-radius: 3px; margin: 6px 0 2px 0; }
+        .quote { font-style: italic; text-align: center; color: #5d4e37; font-size: 11pt; margin: 15px 0; padding: 10px; border-left: 3px solid #8f9a96; background: rgba(46, 139, 122, 0.08); }
+        .quote.cambiato { border-left-color: #34403d; background: rgba(75, 83, 32, 0.07); }
+        h2 { color: #34403d; font-size: 14pt; font-weight: bold; border-bottom: 2px solid #8f9a96; padding-bottom: 3px; margin: 16px 0 10px 0; text-transform: uppercase; }
+        .ritratto { display: block; margin: 0 auto 10px auto; max-width: 62%; height: auto; border: 2px solid #34403d; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
+        .power-block { background: rgba(255, 255, 255, 0.6); border: 1px solid #8f9a96; margin-bottom: 10px; padding: 10px; border-radius: 5px; }
+        .power-header { font-weight: bold; font-size: 12pt; color: #1f5f55; border-bottom: 1px dashed #8f9a96; padding-bottom: 4px; margin-bottom: 8px; display: flex; justify-content: space-between; }
+        .mechanic { font-family: "Courier New", monospace; font-size: 9.5pt; color: #333; background: #e9e9e9; padding: 2px 4px; border-radius: 3px; border: 1px solid #ccc; margin-bottom: 5px; display: inline-block; }
+        .desc-text { padding-top: 5px; }
+        .requirements { background: rgba(139, 69, 19, 0.05); border: 2px solid #5a5a50; padding: 10px; margin: 15px 0; border-radius: 5px; font-size: 10pt; }
+        .tag { background: #34403d; color: #f8f6f0; font-size: 8.5pt; font-weight: bold; letter-spacing: 1px; padding: 2px 7px; border-radius: 3px; text-transform: uppercase; }
+        .block-acceso { border: 2px solid #34403d; background: rgba(46, 139, 122, 0.08); }
+        .spento { background: rgba(120, 120, 120, 0.12); border: 1px dashed #999; color: #555; }
+        .spento .power-header { color: #777; }
+        .incisione { text-align: center; font-family: 'Cinzel Decorative', cursive; color: #9a6a12; font-size: 10.5pt; margin: 18px 0 6px 0; letter-spacing: 1px; }
+        table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 10pt; }
+        th { background: linear-gradient(135deg, #34403d, #5a5a50); color: white; padding: 5px 4px; border: 1px solid #654321; }
+        td { padding: 4px 6px; border: 1px solid #8f9a96; background: rgba(248, 246, 240, 0.8); vertical-align: top; }
+        tr:nth-child(even) td { background: rgba(237, 232, 220, 0.8); }
+        td.c { text-align: center; }
+        ul { margin-top: 5px; margin-bottom: 5px; }
+        li { margin-bottom: 4px; }
+        .grigio { background: rgba(220, 220, 220, 0.4); border-color: #888; margin-top: 12px; }
+        .grigio .power-header { color: #666; font-size: 11pt; }
+        .grigio .corpo { font-size: 9.5pt; color: #444; }
+        .dm { background: rgba(139, 0, 0, 0.04); border: 2px solid #8B0000; padding: 12px 14px; margin: 14px 0; border-radius: 5px; }
+        .dm h3 { color: #8B0000; margin: 0 0 8px 0; text-transform: uppercase; letter-spacing: 1px; font-size: 12pt; }
+        .conferma { font-family: "Courier New", monospace; font-size: 9pt; color: #8B0000; background: #f6e6e6; border: 1px solid #d9b0b0; padding: 1px 4px; border-radius: 3px; }
+        @media print {
+            body { padding: 0; background: none; }
+            .power-block, .requirements, .dm, table, .quote { break-inside: avoid; page-break-inside: avoid; }
+            h2 { break-after: avoid; page-break-after: avoid; }
+            .solo-dm { break-before: page; page-break-before: always; }
+        }
+    </style>
+</head>
+
+<body>
+<div class="quote" style="border-left-color:#8B0000;background:rgba(139,0,0,0.06);font-style:normal;"><strong>Copia DM — non darla alla giocatrice.</strong> Contiene quando assegnare le Prove di Risonanza, perché ha questo aspetto e come non usarlo. La versione da consegnare è <em>02_Durik_Guardiano_di_Pietra.html</em>.</div>
+    <div class="header">
+        <h1 class="class-title">Durik Riforgiato</h1>
+        <div class="subtitle">Il Guardiano di Pietra — compagno di Hella, nel terzo seme della Collana</div>
+        <div class="dm-tag">VERSIONE DM · NON DARE ALLA GIOCATRICE</div>
+        <div class="motto">«Si mette sempre fra te e quello che ti vuole male.»</div>
+    </div>
+
+    <img data-immagine-artefatto="durik" src="data:image/webp;base64,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" alt="Durik, il guardiano di pietra" style="display:block;margin:10px auto 16px auto;width:230px;max-width:60%;height:auto;border:2px solid #8B4513;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,0.3);">
+
+    <div class="quote">
+        <strong>La Leggenda del Fedele</strong><br>
+        «Era il tuo cane da galoppo, ed è morto prima di te. Nel tuo viaggio fra i morti il suo ricordo è caduto nella pietra, e la pietra se l'è tenuto. Quando la montagna ha ceduto lo Smeraldo, la polvere del guardiano sconfitto ha preso la sua forma. A Moradin avevi risposto che doveva proteggere te. Lo fa. Non gliel'hai mai insegnato.»
+    </div>
+
+    <div class="quote cambiato">
+        <strong>Com'è fatto.</strong><br>
+        Un cane da galoppo di mithral intrecciato a roccia scura, come muscolo a osso, con vene di luce verde fra le placche. Occhi di topazio. Non abbaia più: quando vuole dirti qualcosa fa un click, come una pietra che si assesta in un muro a secco.
+    </div>
+
+    <div class="requirements">
+        <strong>Tipo:</strong> bestia magica (animale potenziato, sottotipo Terra) · <strong>Taglia:</strong> Media · <strong>Allineamento:</strong> Neutrale Buono<br>
+        <strong>Legato a:</strong> Hella, e al terzo seme della Collana · <strong>Prove di Risonanza:</strong> 1<br>
+        <strong>Dadi Vita:</strong> 12d10+36 · <strong>102 pf</strong> · <strong>Iniziativa</strong> +2 · <strong>Velocità</strong> 12 m, scavare 3 m in terra morbida
+    </div>
+
+    <h2>Le statistiche</h2>
+
+    <table>
+        <tr><th style="width:30%">Voce</th><th>Valore</th></tr>
+        <tr><td><strong>CA</strong></td><td><strong>21</strong> (+2 DES, +9 naturale) · contatto 12 · colto alla sprovvista 19</td></tr>
+        <tr><td><strong>Attacco base / Lotta</strong></td><td>+9 / +15</td></tr>
+        <tr><td><strong>Attacco</strong></td><td>morso <strong>+15</strong> mischia (<strong>2d6+6</strong>, 19-20/×2)</td></tr>
+        <tr><td><strong>Attacco completo</strong></td><td>morso <strong>+15</strong> (2d6+6) e 2 artigli <strong>+13</strong> (1d4+3)</td></tr>
+        <tr><td><strong>Spazio / portata</strong></td><td>1,5 m / 1,5 m</td></tr>
+        <tr><td><strong>Tiri salvezza</strong></td><td>Tempra <strong>+11</strong> · Riflessi <strong>+10</strong> · Volontà <strong>+6</strong></td></tr>
+        <tr><td><strong>Caratteristiche</strong></td><td>FOR 22 · DES 15 · COS 17 · INT 4 · SAG 14 · CAR 8</td></tr>
+    </table>
+
+    <h2>Quello che è</h2>
+
+    <div class="power-block">
+        <div class="power-header">Corteccia di granito e mithral <span>sempre</span></div>
+        <div class="mechanic">Straordinario (Str) | RD 5/adamantio | Resistenza al freddo 10</div>
+        <div class="desc-text">Regge a tutto tranne l'adamantio.</div>
+    </div>
+
+    <div class="power-block">
+        <div class="power-header">Colpi magici <span>sempre</span></div>
+        <div class="mechanic">Soprannaturale (Sop) | Sempre attivo</div>
+        <div class="desc-text">I suoi attacchi superano la RD come armi magiche, e il <strong>morso conta come adamantio</strong>.</div>
+    </div>
+
+    <div class="power-block">
+        <div class="power-header">Percezione tellurica <span>18 m</span></div>
+        <div class="mechanic">Straordinario (Str) | Sempre attivo | Solo a terra</div>
+        <div class="desc-text">Sente chi si muove a terra entro 18 m, anche al buio, anche invisibile. Non chi vola. <strong>Il click vuol dire: sotto.</strong></div>
+    </div>
+
+    <div class="power-block">
+        <div class="power-header">Immunità, e il suo punto debole <span>sempre</span></div>
+        <div class="mechanic">Straordinario (Str) | Charme · compulsione · paralisi · sonno · pietrificazione · veleno</div>
+        <div class="desc-text">L'<strong>acido</strong> gli fa <strong>+50%</strong>: la pietra si corrode.</div>
+    </div>
+
+    <div class="incisione">◆ Il legame ◆</div>
+
+    <div class="power-block block-acceso">
+        <div class="power-header">Fedeltà assoluta <span class="tag">tuo</span></div>
+        <div class="mechanic">Straordinario (Str) | Volontà CD 18</div>
+        <div class="desc-text">Nessuna magia lo mette contro di te. Chi prova a charmarlo o dominarlo deve superare <strong>Volontà CD 18</strong>, o perde l'incantesimo.</div>
+    </div>
+
+    <div class="power-block block-acceso">
+        <div class="power-header">Legame <span class="tag">18 m</span></div>
+        <div class="mechanic">Soprannaturale (Sop) | Ordini col pensiero</div>
+        <div class="desc-text">Gli dai ordini col pensiero entro <strong>18 m</strong>, senza parlare. Oltre, fa l'ultima cosa che gli hai chiesto, o ti protegge.</div>
+    </div>
+
+    <div class="power-block block-acceso">
+        <div class="power-header">Empatia della pietra <span class="tag">qualunque distanza</span></div>
+        <div class="mechanic">Soprannaturale (Sop) | Finché uno dei due ha pietra sotto i piedi</div>
+        <div class="desc-text">Sente il tuo umore, e ti manda il suo: pericolo, calma, fretta. Viaggia nel Sogno della Terra.</div>
+    </div>
+
+    <h2>Come si gioca</h2>
+
+    <div class="requirements">
+        <strong>Sta sempre con te.</strong> Non serve evocarlo.<br>
+        <strong>Se non gli dai ordini, ti protegge</strong>: si mette fra te e il pericolo, e chi vuole arrivarti addosso deve passare da lui o girargli intorno.<br>
+        <strong>Non è fatto per combattere da solo.</strong> È uno scudo che morde: rende a fianco di Thorik o di Tordek, per prendere un nemico ai fianchi, o quando afferra e tiene fermo qualcuno mentre gli altri lavorano.<br>
+        <strong>Se viene distrutto</strong> torna polvere, e la polvere torna nel terzo seme. Con una carica dell'Evocazione dei Guardiani lo richiami subito, per un'ora. All'alba è di nuovo intero, e resta. Se l'Evocazione è spenta, perché hai chiamato i due Treant insieme, non puoi richiamarlo subito: torna all'alba.
+    </div>
+
+    <h2>Come cresce</h2>
+
+    <table>
+        <tr><th style="width:12%">Prove</th><th>Cosa cambia</th></tr>
+        <tr><td class="c"><strong>1</strong> ✓</td><td>12 DV, il morso passa a 2d6+6. <em>È già successa: è il motivo per cui è così.</em></td></tr>
+        <tr><td class="c">2 ☐</td><td>RD <strong>8</strong>/adamantio · percezione tellurica <strong>27 m</strong></td></tr>
+        <tr><td class="c">3 ☐</td><td>diventa <strong>Grande</strong>: +4 FOR, −2 DES, +4 armatura naturale; nuovo attacco, schianto 2d6+9</td></tr>
+        <tr><td class="c">4 ☐</td><td><strong>immune all'acido</strong>; il morso conta anche come ferro freddo</td></tr>
+        <tr><td class="c">5 ☐</td><td>immune a tutti i danni da energia; +2 SAG, e capisce le tue parole senza ambiguità</td></tr>
+    </table>
+    <div class="quote" style="font-size:10pt;">Durik non cresce con i tuoi livelli. Cresce quando il legame fra voi si mette alla prova. Il DM te lo dice quando succede, di solito dopo.</div>
+
+    <div class="power-block grigio">
+        <div class="power-header">Registro (compila a penna)</div>
+        <div class="corpo">
+            Legato ad Hella al risveglio · data: ______________________<br>
+            Distrutto e richiamato: ______________________<br>
+            _______________________________________________
+        </div>
+    </div>
+
+    <h2 class="solo-dm" style="color:#8B0000;border-bottom-color:#8B0000;">⚠️ Solo DM — da qui in poi</h2>
+
+    <div class="dm">
+        <h3>Quando assegnare una Prova di Risonanza</h3>
+        Una Prova ogni volta che:
+        <ul>
+            <li>Hella e Durik combattono fianco a fianco in uno scontro di GS almeno pari al livello del gruppo;</li>
+            <li>Hella usa Durik apposta per proteggere un alleato che non è lei;</li>
+            <li>il legame viene messo alla prova: qualcuno prova a corrompere Durik, o Hella lo usa in una scelta morale difficile.</li>
+        </ul>
+        La prima si può incassare già stasera, se combatte con Hella contro Zog'tar (<code>ARC07-DEF-3</code> §7, scheda d'entrata).
+    </div>
+
+    <div class="dm">
+        <h3>Perché ha questo aspetto</h3>
+        La forma dipende da come Hella ha risposto all'ultima domanda della Prova III del viaggio. Ha risposto <strong>«protegge Hella»</strong>: mithral intrecciato alla pietra scura, occhi di topazio, sempre fra lei e il pericolo. Le altre tre forme (granito e smeraldo, cristallo e occhi bianchi, ossidiana e occhi rosso-ambra) non si sono avverate.
+    </div>
+
+    <div class="dm">
+        <h3>Come usarlo, e come no</h3>
+        <ul style="margin:0;">
+            <li><strong>Lotta</strong>: con FOR 22 afferra e tiene; è il suo lavoro migliore.</li>
+            <li><strong>Fianco</strong>: il +2 ai tiri per colpire di Thorik o Tordek vale più del suo morso.</li>
+            <li><strong>Sensore</strong>: il click dà la direzione di chi è invisibile a terra. Rispondi sempre, quando la giocatrice chiede «dove».</li>
+            <li><strong>Mai</strong> usarlo come esca sacrificabile: la giocatrice lo sentirebbe come un tradimento del personaggio. Se lo distruggi, dev'essere una scena, con il suo read-aloud, e la polvere che torna nel seme.</li>
+        </ul>
+    </div>
+
+    <div class="dm">
+        <h3>Il Debito della Radice, ramo C</h3>
+        Se al rito il gruppo ha scelto di <strong>offrire Durik</strong> come pegno vivente al Sogno della Terra (<code>DEF-3</code> §6, ramo C), Durik è il ponte del debito, e in ARC-09 il Sogno lo richiamerà. Controlla in <code>state.md</code> §7 quale ramo si è giocato.
+    </div>
+
+    <div class="dm">
+        <h3>Da dove vengono i numeri</h3>
+        <code>08-SCHEDA-DURIK.md</code> della serata (canone al tavolo, 102 pf decisi dal DM) · le Prove di Risonanza e le forme dal viaggio dello spirito v2 §6 e §10, in <code>07_…/_ARCHIVIO/</code>.
+    </div>
+
+
+    <p style="font-size:8.5pt;color:#777;text-align:right;margin-top:14px;">Versione durik · S1 · r3 · 2026-09-25 · registro: <em>PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md</em> §0</p>
+</body>
+</html>

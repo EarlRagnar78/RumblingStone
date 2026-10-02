@@ -1,8 +1,8 @@
 {
   "_cos_e": "Il registro dei file che esistono in un ramo o in una PR e mai su main: a ognuno un posto. Lo legge scripts/contenuti_nei_rami.py (PIANO-RIPRESA-PR-ABBANDONATE §4.11, lotto 4i-2). Stati ammessi e significato: nello script, STATI.",
   "misura": {
-    "data": "2026-09-24",
-    "riferimenti": 216,
+    "data": "2026-09-25",
+    "riferimenti": 192,
     "file_mai_arrivati": 50
   },
   "rami": [
@@ -58,6 +58,94 @@
       "ref": "origin/campaign-group-*",
       "stato": "partita",
       "dove": "ADR-0007: i rami di gruppo portano la partita, che su main non va"
+    },
+    {
+      "ref": [
+        "pr/170",
+        "origin/claude/stato-dopo-169"
+      ],
+      "stato": "portato",
+      "dove": "PR #170 fusa il 2026-09-25 (02fb825): STATO-E-ORDINE dopo la #169 e il controllo a vista dei volumi; il ramo e' stato tolto dopo il merge"
+    },
+    {
+      "ref": [
+        "pr/171",
+        "origin/claude/storico-fuori-stampa"
+      ],
+      "stato": "portato",
+      "dove": "PR #171 fusa il 2026-09-25 (6975da2): la storia delle scelte fuori stampa (ADR-0069); il ramo e' stato tolto dopo il merge"
+    },
+    {
+      "ref": [
+        "pr/173",
+        "origin/claude/tabelle-larghe"
+      ],
+      "stato": "portato",
+      "dove": "PR #173 fusa il 2026-09-25 (444499e): le tabelle che in colonna vanno a capo scavalcano le due colonne (STATO-E-ORDINE §13); il ramo e' stato tolto dopo il merge"
+    },
+    {
+      "ref": [
+        "pr/172",
+        "origin/claude/canva-ai-image-generation-odi153"
+      ],
+      "stato": "portato",
+      "dove": "PR #172 portata su main il 2026-09-25 dentro la catena #170-#174 (2526100, poi eef36a9): i ritratti e le tavole di ARC-07; il ramo e' stato tolto dopo il merge"
+    },
+    {
+      "ref": [
+        "pr/174",
+        "origin/claude/drappo-fuori-beta"
+      ],
+      "stato": "portato",
+      "dove": "PR #174 fusa il 2026-09-25 (eef36a9): il Drappo esce dalla beta e le marcature di ARC-07 chiuse col DM; il ramo e' stato tolto dopo il merge"
+    },
+    {
+      "ref": [
+        "pr/175",
+        "origin/claude/corredo-della-serata"
+      ],
+      "stato": "portato",
+      "dove": "PR #175 fusa il 2026-09-25 (bc8d15f): il corredo della serata (CICLO-SESSIONE 2f) e l'apparato fuori dalla stampa (2g, ADR-0070)"
+    },
+    {
+      "ref": [
+        "pr/180",
+        "origin/claude/lettore-playtester"
+      ],
+      "stato": "portato",
+      "dove": "PR #180 fusa in main (a15ba5e): PIANO-LETTORE-E-PLAYTESTER F1-F3, ADR-0073, copertura_scene.py, DEF-4 prima dell'infiltrazione"
+    },
+    {
+      "ref": [
+        "pr/179",
+        "origin/claude/fucina-di-notte-e-immagini"
+      ],
+      "stato": "portato",
+      "dove": "PR #179 fusa il 2026-09-26 (9d892da): l'immagine dentro le schede degli artefatti (ADR-0072), la fucina di notte e la variante dall'alto in DEF-4 (CHIUSURA-DEI-MILLE-ANNI M5-M7.5), le date di fr-history"
+    },
+    {
+      "ref": [
+        "pr/178",
+        "origin/claude/artefatti-audit-corona-2gemme"
+      ],
+      "stato": "portato",
+      "dove": "PR #178 fusa il 2026-09-25 (93fda02): audit dei poteri, tutti gli artefatti a stadi, una versione per pagina (ADR-0071, TRASVERSALE T10)"
+    },
+    {
+      "ref": [
+        "pr/177",
+        "origin/claude/pagina-collana"
+      ],
+      "stato": "portato",
+      "dove": "PR #177 fusa il 2026-09-25 (7c08996): le pagine stampabili della Collana dei Semi Eterni e di Durik"
+    },
+    {
+      "ref": [
+        "pr/181",
+        "origin/claude/lettore-quiz-e-componenti"
+      ],
+      "stato": "portato",
+      "dove": "PR #181 fusa in main il 2026-09-27: PIANO-LETTORE-E-PLAYTESTER F7-F9 (quiz_lettura.py, componenti.py con ADR-0074, domande_developer.py) e il piano nuovo PIANO-MASTER-DEF-ARC08-ARC09-STANDALONE"
     }
   ],
   "file": [

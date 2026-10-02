@@ -180,9 +180,11 @@ li porta in casa. Melchio è l'unico che li riconosce a colpo d'occhio.
 
 ## §4-bis · Come si tratta un segreto di PG (nota di regia)
 
+> <!-- storico -->
 > ⚠️ **Questa sezione stava per errore in fondo a `FASCICOLO-SCHEDE-GIOCATORE.md`**,
 > che è un file ✉ **da mettere in mano ai giocatori**: elencava i collegamenti fra i
 > segreti a chi non doveva ancora conoscerli. Spostata qui il 2026-08-15.
+> <!-- /storico -->
 
 Ogni «cosa che non dici» è **un segreto che il giocatore possiede**, non un colpo di
 scena che gli spetta subire. Se un giocatore decide di rivelarlo prima del previsto,

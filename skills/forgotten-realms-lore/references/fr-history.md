@@ -1,5 +1,18 @@
 # Forgotten Realms — History & Timeline (D&D 3.5)
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- THE AGES OF FAERÛN
+- HUMAN EMPIRES AND THE RISE OF CIVILIZATION
+- THE DALE RECKONING CALENDAR
+- THE TIME OF TROUBLES (1358 DR)
+- THE STATE OF THE REALMS (1372 DR — Campaign Start Point)
+- ANCIENT EMPIRES (Lost Empires of Faerûn)
+- THE CALENDAR OF HARPTOS (Expanded)
+- NOTABLE CHRONICLES AND LORE BOOKS (In-World)
+<!-- /indice -->
+
 Sources: FRCS (2001), Lost Empires of Faerûn (2005), Player's Guide to Faerûn (2004),
 The Grand History of the Realms (2007)
 
@@ -43,7 +56,7 @@ Key events:
 - **−3,859 DR**: Founding of Netheril; early city-states develop
 - **−2,954 DR**: Netherese discover the Nether Scrolls; explosive magical development begins
 - High Netheril period: Netherese archwizards create flying cities (mythallar-powered)
-- **−3 DR (approx)**: Karsus attempts to steal godhood by casting the 12th-level spell Karsus's Avatar.
+- **−339 DR**: Karsus attempts to steal godhood by casting the 12th-level spell Karsus's Avatar.
   He briefly replaces Mystryl (original Mystra). The system overloads; Mystryl dies; all magic fails.
   Most flying cities crash; the empire collapses. The phaerimm beneath Anauroch begin draining
   the land. One city, Shade Enclave, flees to the Shadowfell and survives.
@@ -58,30 +71,38 @@ forms. The original Calishite Shoon Imperium existed as a powerful slave empire.
 portions of it for centuries. Now (1372 DR) it persists as a weakened remnant of past glory,
 still the largest city in Faerûn (Calimport) but politically fragmented.
 
-### The Kingdom of Cormyr (~276 DR onwards)
+### The Kingdom of Cormyr (26 DR onwards)
 
 Founded by Ondeth Obarskyr and the Wyvernwater charter. House Obarskyr has ruled unbroken.
-The Forest Country has maintained stability unusual for Faerûn. Azoun IV (1307–1371 DR) was one
-of its most capable kings; his death against the Tuigan Horde (1360 DR battle) and again in 1371 DR
-(against the Dracorage) has left the throne to his infant son.
+The Forest Country has maintained stability unusual for Faerûn. Azoun IV (king 1336–1371 DR) was one
+of its most capable kings: he led the alliance that defeated the Tuigan Horde in 1360 DR, and died in
+1371 DR at the end of the Goblin War, fighting the dragon Nalavarauthatoryl.
 
 ---
 
 ## THE DALE RECKONING CALENDAR
 
-Dale Reckoning (DR) begins at year 1 DR = the year Dalereckoning was adopted by the Dalelands.
-Named for the Dale folk's compact with the Cormanthor elves.
+Dale Reckoning (DR) counts from the raising of the **Standing Stone**, which celebrated the Dales
+Compact between the humans of the Dalelands and the elves of Cormanthyr.
 
 ### Key Historical Events (Selected)
 
+> ⚠️ **Verified 2026-09-25** (Forgotten Realms Wiki: *Karsus*, *Myth Drannor*, *Standing Stone*,
+> *Cormyr*, *Azoun Obarskyr IV*): Karsus's Folly −339 · the Standing Stone at 1 DR · Cormyr 26 ·
+> Myth Drannor's mythal 261 and fall 714 · Azoun IV 1371. Before that date this file had Karsus at
+> −3 DR, Cormyr at 276, the Standing Stone at 714 and Myth Drannor falling in 661: a campaign
+> that travels to ≈372 DR lands in Myth Drannor's golden age, not after its fall.
+> **Not yet verified, and suspect**: 394 (Mulhorand is far older), 1344 (the Tuigan invasion is
+> usually dated 1359–1360), the 1358/1360 ordering, the Battle «of the Golden Way». Check them
+> before quoting them at the table.
+
 | Year DR | Event |
 |---|---|
-| 1 | Establishment of Dale Reckoning; the Dalelands compact with the Elven Court |
-| 261 | Fall of the kingdom of Anauria (Netherese survivor state) |
-| 276 | Cormyr founded by House Obarskyr |
+| 1 | The Standing Stone is raised (Dales Compact with the elves of Cormanthyr); Dale Reckoning begins |
+| 26 | Cormyr founded by House Obarskyr (Year of Opening Doors) |
+| 261 | Myth Drannor raises its mythal; the Opening lets other races into the city. Its golden age begins |
 | 394 | Netherese survivor states established (proto-Halruaa, proto-Mulhorand) |
-| 661 | The Fall of Myth Drannor; the Weeping War; demons overwhelm the elven city |
-| 714 | The Standing Stone erected; formal beginning of current Dalelands political structure |
+| 711–714 | The Weeping War: the Army of Darkness besieges Cormanthyr; Myth Drannor falls in 714 |
 | 880 | The Night Masks (thieves' guild) rise in Westgate |
 | 900 | Sammaster founds the Cult of the Dragon |
 | 922 | Thay formally established as a nation by Red Wizard rebels against Mulhorand |
@@ -96,7 +117,7 @@ Named for the Dale folk's compact with the Cormanthor elves.
 | 1369 | Retreat of the Red Wizards from the Dalelands after a failed invasion |
 | 1369 | Waukeen returns from imprisonment |
 | 1370 | Khelben Arunsun breaks from the Harpers; forms the Moonstars |
-| 1371 | King Azoun IV of Cormyr dies fighting the Dracorage |
+| 1371 | King Azoun IV of Cormyr dies in the Goblin War, fighting the dragon Nalavarauthatoryl |
 | 1372 | **CURRENT DATE (D&D 3.5 baseline)** — see "State of the Realms" below |
 
 ---
@@ -147,8 +168,10 @@ are gaining economic dependency. Szass Tam is planning something larger than any
 
 **The Dracorage**
 A magical phenomenon linked to the King-Killer Star (a comet) that drives dragons into a frenzy.
-King Azoun IV of Cormyr died fighting one of these frenzied dragons (1371 DR).
-The Dracorage has ended but its effects linger.
+⚠️ Azoun IV did **not** die in the Dracorage: he fell in 1371 DR in the Goblin War, fighting the
+dragon Nalavarauthatoryl (see the table above). The Dracorage itself is usually dated **1373 DR**,
+after this campaign's baseline: *not verified here*, and if confirmed it does not belong in the
+1372 state of the Realms.
 
 **Myth Drannor's Reclamation**
 The Army of Darkness that plagued Myth Drannor for centuries was defeated. Elves have

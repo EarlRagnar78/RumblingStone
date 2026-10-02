@@ -54,6 +54,31 @@ jobs:
       - name: Validate skill trees (frontmatter, links, data YAML)
         run: python scripts/validate_skills.py
 
+      # Lo scanner di sicurezza delle skill, copiato da awesome-llm-apps
+      # (Apache 2.0, ADR-0076): esce 1 su un CRITICO, come `curl ... | sh`.
+      - name: Skill security scan (scripts/terzi/skill_scanner.py)
+        run: python scripts/terzi/skill_scanner.py skills
+
+      # Le adozioni rimandate: esce 1 quando la condizione di una voce si
+      # accende e la voce dice ancora «in attesa» (ADR-0076).
+      - name: Pending adoptions (adozioni_in_attesa.py --check)
+        run: python scripts/adozioni_in_attesa.py --check
+
+      # Le frasi vere del DM raggiungono le skill obbligatorie (L8, ORCHESTRAZIONE §4):
+      # a cricchetto, fallisce se le omissioni superano il tetto di casi.json
+      - name: Skill routing (instradamento_skill.py --check)
+        run: python scripts/instradamento_skill.py --check
+
+      # Due o piu' decisioni chiuse nella stessa data vogliono l'eco nel piano (L9)
+      - name: Decision echo (eco_decisioni.py --check)
+        run: python scripts/eco_decisioni.py --check
+
+      # Le letture a freddo dei master (D26): in avviso finche' un master non ha
+      # le letture con impronta di lettore e playtester, poi bloccante da solo
+      # su una lettura scaduta o su un rilievo 🔴/🟠 senza stato (D4, ADR-0076).
+      - name: Cold-read registry (registro_letture.py --check)
+        run: python scripts/registro_letture.py --check
+
       # La quarta cosa della regola d'oro. Le prime tre le controlla il gate qui
       # sotto; questa no, ed era «una debolezza dichiarata» — finche' il
       # 2026-09-06 la tabella non si e' trovata sfasata di due righe su otto,
@@ -119,12 +144,33 @@ jobs:
       - name: Moduli standalone (STANDALONE-* e 10-stand-alone/*)
         run: python scripts/validate_standalone.py
 
-      # Non bloccante alla prima passata: la convenzione nasce oggi e il
-      # contenuto esistente la rispetta a meta'. Diventa bloccante (--strict)
-      # il giorno in cui il rumore e' a zero — non prima, o il gate viene
-      # disattivato e allora non trova piu' nemmeno i refusi veri.
-      - name: Lingua italiana — refusi meccanici (non bloccante)
-        continue-on-error: true
+      # La scheda d'entrata sta nella scena, e ogni scena ha il suo box
+      # (ADR-0073). Il DM, il 2026-09-25, ha inventato al tavolo sette cose
+      # che DEF-4 non diceva, con tutti i cancelli verdi.
+      - name: Copertura delle scene — chi e dove incontrano i PG
+        run: python scripts/copertura_scene.py --check
+
+      # Il master come componenti (ADR-0074): l'apparato d'uso si genera dal
+      # master, e una copia sincronizzata (i numeri di Balvar in DEF-4) non
+      # resta indietro rispetto alla sua fonte nel Bestiario.
+      - name: Componenti — apparato generato e copie sincronizzate
+        run: python scripts/componenti.py --check
+
+      - name: Chiavi del quiz a due agenti ben formate
+        run: python scripts/quiz_lettura.py --check
+
+      # Le domande del developer (sviluppo-degli-incontri.md, dai due manuali
+      # del DM): volo e invisibilità, chi sente il rumore, i tre TS, la soglia
+      # del boss, lo skill challenge per intero. Indicatori: i rilievi che non
+      # sono difetti stanno in plans/domande-developer.json con la ragione.
+      - name: Domande del developer — si gioca?
+        run: python scripts/domande_developer.py --check
+
+      # Bloccante sugli ERRORI dal 2026-09-24: i refusi sono a zero (11 corretti
+      # nella #167, 13 falsi positivi tolti dalla regola). Gli AVVISI (virgolette
+      # dritte, «E'») restano ~2.450 e non bloccano: --strict li alzerebbe a
+      # errori, e si mette il giorno in cui anche quelli sono a zero.
+      - name: Lingua italiana — refusi meccanici
         run: python scripts/validate_lingua.py
 
       # Idem: misura la norma di italiano-nativo.md (calchi, tic a densita',
@@ -141,6 +187,12 @@ jobs:
       # e boccia un rimando a uno strumento che non esiste.
       - name: Norme editoriali — ogni norma ha un misuratore o una ragione
         run: python scripts/validate_norme_editoriali.py
+
+      # La guida di Anthropic sulle skill: un reference oltre le 100 righe apre
+      # con il suo indice, cosi' un agente che ne legge solo l'inizio sa cosa
+      # c'e' e apre la sezione che serve. Generato, mai a mano. ADR-0077 §9.
+      - name: Skill — l'indice in testa ai references lunghi
+        run: python scripts/indice_references.py --check
 
       # Il gemello del passo sopra, dall'altro lato: quello controlla che ogni
       # norma dica CHI la guarda, questo che ogni «nessuno la guarda» dica
@@ -246,6 +298,7 @@ jobs:
       - name: Manifest dei booklet (schema, file, immagini, parità fra le catene)
         run: python scripts/validate_booklets.py --spiega
 
+
       - name: Install typst (versione FISSATA, mai «latest»)
         # Un compilatore che si aggiorna da solo è una CI che diventa rossa di
         # notte per una riga che nessuno ha scritto. La versione si alza a mano,
@@ -263,6 +316,13 @@ jobs:
         # avevano mai compilato e nessuno poteva accorgersene. Ora ogni manifest
         # del repo produce un PDF vero, con i segnalibri.
         run: python scripts/validate_booklets.py --stampa
+
+      - name: Il corredo della serata (pezzi, doppioni, box, e i suoi PDF misurati)
+        # rumblingstone-automation, «Il corredo della serata»; ADR-0070. Con
+        # --stampa compila i volumi del corredo e li misura con PyMuPDF
+        # (requirements-dev.txt, D7 di CICLO-SESSIONE): righe sovrapposte, testo
+        # sul bordo, apparato di lavoro. --rigoroso: una misura saltata è rossa.
+        run: python scripts/validate_corredo.py --stampa --rigoroso
 
       - name: Schede pregenerate — un PDF per giocatore
         run: |

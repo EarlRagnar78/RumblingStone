@@ -1,5 +1,17 @@
 # The Echo Ledger — BG3-Style Long-Range Consequences
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- 1. Where echoes live
+- 2. Writing echoes (arming)
+- 3. Firing echoes (payoff)
+- 3-bis. Graded outcomes — the "regola pieno/ridotto" (Palio pattern)
+- 3-ter. L'eco per un PG: due ancore obbligatorie, e niente anticipazioni
+- 4. Anti-patterns (do not)
+- 5. Integration hooks
+<!-- /indice -->
+
 Principle (pillar 7): **the world remembers**. Every meaningful PC
 choice writes an *echo*, a recorded consequence with a fuse, that
 returns later, *transformed*. The power of the technique is the delay:
@@ -110,7 +122,7 @@ exemplar):
 
 Matrix rows that fire become ledger entries (§1) as usual.
 
-## 3-ter. L'eco per un PG assente: due ancore obbligatorie
+## 3-ter. L'eco per un PG: due ancore obbligatorie, e niente anticipazioni
 
 Nasce da un rilievo del tavolo (2026-09-02): la giocatrice di **Hella** ha detto
 di **non capirci niente** degli echi ricevuti prima dello scontro con Terros.
@@ -158,6 +170,37 @@ una **direzione**. Il confronto è netto, e sta nella stessa sessione:
 ⚠️ E la nota in testa, *«Nessuno va spiegato. Nessuno va interpretato»*,
 toglie al giocatore anche l'ultima via, che era chiedere. Va bene per proteggere
 il mistero **quando le ancore ci sono**; senza, chiude la porta e basta.
+
+**3. Un eco non anticipa.** *(aggiunta il 2026-09-24)* Le due regole sopra
+curano l'eco che **non si capisce**. Il DM, preparando la serata della
+resurrezione, ha segnalato il difetto opposto: *«gli echi dei PG non si
+capiscono o danno troppe informazioni»*. Il secondo caso non aveva una regola, e
+i fogli preparati per quella serata ci cadevano dentro: una pagina contava per
+Thorik i punti di DES già pagati, e fra poco avrebbe dovuto pagare di nuovo;
+un'altra contava per Artemis i sette dadi del suo colpo, e fra poco gliene
+avrebbero chiesto uno. **Erano i Doni del rito, annunciati prima che Moradin li
+chiedesse.**
+
+Un eco per un PG porta quindi **un frammento solo** e **una riga di direzione**,
+e niente di questo:
+
+- **numeri o meccaniche**: punteggi, dadi, CD, bonus. Stanno sulle schede;
+- **una scelta che il tavolo deve ancora fare**: se l'eco la prepara, il
+  giocatore arriva alla scena con la risposta già pronta, e la scena si svuota;
+- **la spiegazione del frammento**: la riga di direzione dice *chi* o *cosa* e
+  *verso dove*, mai *perché*.
+
+> ✅ *«Al rito dello Smeraldo qualcuno ha retto il Peso insieme a te, e aveva
+> le mani più piccole delle tue. Stanotte, prima di lasciare la Sala, saprai chi
+> era.»* Nome del luogo, direzione e tempo. Il nome della persona no: quello lo
+> dà la scena.
+>
+> ❌ *«Il conto lo sai fare. Due punti alla Corona, altri due alla montagna.
+> Fra poco qualcuno chiederà di nuovo.»* Numeri, e la scelta del rito
+> annunciata.
+
+Se il giocatore vuole sapere di più, **chiede al DM**, e il DM risponde a voce:
+il foglio non fa il lavoro del DM.
 
 ## 4. Anti-patterns (do not)
 

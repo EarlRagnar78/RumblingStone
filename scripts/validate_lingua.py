@@ -46,7 +46,11 @@ ERRORI: list[tuple[str, str]] = [
     (r"\bdaccordo\b", "«daccordo» → d'accordo"),
     (r"\bad\s+(?=[bcdfglmnpqrstvz])", "«ad» davanti a consonante → a"),
     (r"\bed\s+(?=[bcdfglmnpqrstvz])", "«ed» davanti a consonante → e"),
-    (r"\s+[,;:!?](?:\s|$)", "spazio prima della punteggiatura"),
+    # Il segno che occupa da solo una cella di tabella («| ? |») e il rapporto
+    # fra due numeri («5.8 : 1») hanno lo spazio davanti di diritto: la corsa di
+    # spazi deve partire da una parola, e i due punti fra cifre non contano.
+    (r"(?<![|\s])(?:(?<=\d)(?!\s+:\s*\d)|(?<!\d))\s+[,;:!?](?:\s|$)",
+     "spazio prima della punteggiatura"),
     (r"[a-zàèéìòù]{2}  +[a-zàèéìòù]", "doppio spazio fra parole"),
 ]
 
@@ -55,6 +59,10 @@ AVVISI: list[tuple[str, str]] = [
     (r'(?<![=(])"[A-Za-zÀ-ù]', 'virgolette dritte → «» (o " " tipografiche)'),
     (r"(?<![A-Za-z])E'\s", "«E'» → È (maiuscola accentata)"),
 ]
+
+# Né spazio, né lettera, né punteggiatura: il codice mascherato non deve
+# somigliare a niente che le regole qui sopra cerchino.
+MASCHERA = "¤"
 
 CODE_FENCE = re.compile(r"^\s*```")
 # Da mascherare: codice inline, tag, URL, link, nomi di file — e le **guide
@@ -86,8 +94,10 @@ def righe_da_controllare(testo: str):
             continue
         # Il mascheramento conserva la LUNGHEZZA: sostituire con uno spazio
         # creerebbe i doppi spazi che poi segnaleremmo come refuso — ed è
-        # successo alla prima passata, su 423 falsi positivi.
-        yield n, INLINE.sub(lambda m: "x" * len(m.group(0)), riga)
+        # successo alla prima passata, su 423 falsi positivi. E non usa una
+        # lettera: con la «x» il codice diventava una parola, e i due spazi
+        # prima di un'ancora `[…]` in un titolo sembravano un refuso (7 casi).
+        yield n, INLINE.sub(lambda m: MASCHERA * len(m.group(0)), riga)
 
 
 def controlla(f: Path) -> tuple[list[str], list[str]]:

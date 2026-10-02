@@ -860,7 +860,7 @@ Tutti PG:
 > - *Tocca Corona*
 > - *FLASH luce dorata - transizione spirituale*
 > - *Thorik combatte fianco a fianco EROI LEGGENDARI PASSATO*
-> - *Uno riconoscibile: THORGRIM BARBADIFERRO (Anno 800) con Frostcleaver*
+> - *Uno riconoscibile: THORGRIM BARBADIFERRO (mille anni fa) con Aegis Fang* ✏️ *(allineato 2026-09-24: era «Anno 800, con Frostcleaver»)*
 > - *Thorgrim dice (leggendo labbra): "Portala bene, fratello. Ora è tua."*
 > - *Battaglia caotica: non-morti, demoni, aberrazioni*
 > - *All'alba, luce dorata inonda campo*

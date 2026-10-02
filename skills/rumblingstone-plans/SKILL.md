@@ -96,6 +96,42 @@ Ogni lotto **ancora da fare** dichiara tre cose in intestazione:
 | **G · Giudizio** | decidere cosa è vero, cosa si butta, cosa si sovrappone | **`Opus 5`, sessione principale** | alto-xhigh | il DM riconosce il proprio problema |
 | **K · Canone** | tocca la verità della campagna | **`Opus 5`, mai delegato** | xhigh-max | conferma esplicita del DM |
 
+## 🎭 Un lotto che riscrive contenuto di gioco segue il ciclo del master (ADR-0075)
+
+Se un lotto **scrive, riscrive o rifinisce nello stile** un master, un modulo o
+uno stand-alone, la sua colonna «qualità» non si inventa: sono i sette passi del
+**ciclo completo** di
+[`rumblingstone-module-standard`](../rumblingstone-module-standard/SKILL.md)
+(scene riconoscibili, contratto «In scena», componenti, developer, box al metro,
+lettore e playtester a freddo, quiz). Il lotto li cita per numero e dice quali
+salta, e perché.
+
+Vale per i piani nuovi e per quelli aperti. Un lotto che tocca solo dati
+(`state.md`, statblocchi, mappe) non ci rientra.
+
+## 🔁 L'eco prima di applicare un blocco di decisioni (PIANO-AGENT-SKILLS-ESTERNE L9)
+
+Quando il DM chiude **due o più decisioni in un messaggio solo** («D1 ok, d2 ok,
+d4 ok ma dopo…»), prima di toccare i file si rimanda l'eco, e la si scrive nel
+piano accanto alla tabella:
+
+```
+<!-- eco: <ETICHETTA> <AAAA-MM-GG> -->
+- **Decise**: cosa, in una riga per decisione
+- **Aperte**: cosa resta, comprese quelle nate dal messaggio
+- **Cambiate**: dove la decisione si è spostata dalla proposta
+- **Dedotto da me**: quello che il DM non ha scritto e io ho letto fra le righe
+```
+
+L'ultima riga è il motivo della norma. Un «ok» con un «ma» dentro è il punto in
+cui l'agente aggiunge del suo, e se l'aggiunta non sta **a parte** il DM non può
+vederla né smentirla.
+
+`python3 scripts/eco_decisioni.py --check`, in CI: legge le tabelle che
+`decisioni_dm.py` già legge e boccia un piano con due o più decisioni chiuse
+nella stessa data senza l'eco di quella data, o con un campo mancante. Le
+chiusure di prima del 2026-10-01 si contano e non bloccano.
+
 ## Prima di **creare** un ADR o un piano — il numero si guarda, non si indovina
 
 ```bash

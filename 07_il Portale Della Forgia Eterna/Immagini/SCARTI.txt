@@ -1,0 +1,26 @@
+# Scarti della serie — il registro di cosa NON si e' tenuto, e perche'
+#
+# Una riga per tentativo buttato, nel formato:
+#   <id> · seed <n> · reroll <k> · <motivo>
+#
+# PROVENIENZA.txt registra la scelta; questo registra il giudizio che l'ha
+# preceduta, che e' il lavoro vero e l'unico che altrimenti non lascia traccia.
+# Il gate di rifiuto (skills/rumblingstone-art-direction/SKILL.md §6) dice
+# quando un'immagine si butta invece di tenerla perche' «e' gia' venuta»: senza
+# questo file, chi rifa' la serie fra un anno ripercorre gli stessi vicoli
+# ciechi uno per uno.
+#
+# Il motivo e' testo libero e OBBLIGATORIO: --reroll senza --motivo esce 2.
+# Scrivere «brutta» non serve a nessuno; «tre dita alla mano sinistra e la
+# posa non regge l'inquadratura del capitolo» si.
+# Qui il seme e' «—»: le immagini vengono da Canva AI, che non lo espone.
+# Scarti decisi dal DM il 2026-09-25 (prima passata) e dall'agente (reroll 1).
+#
+ritratto-zogtar-deatheye · seed — · reroll 0 · Canva MAHWL9gzPGg: la pietra nera nell'occhio destro non si distingue
+ritratto-thorgrim-barbadiferro · seed — · reroll 0 · Canva MAHWL-NDQRs: tiene la reliquia in mano invece di guardarla, callo non visibile
+tavola-risveglio-di-hella · seed — · reroll 0 · Canva MAHWL0hctuk: Durik sembra un lupo, non un levriero
+tavola-durik-e-hella · seed — · reroll 0 · Canva MAHWLxqQ-Ns: Durik lupesco, Hella si legge elfa piu' che nana
+tavola-hammerfist-giovane · seed — · reroll 0 · Canva MAHWL9hrJvc: i fuochi del campo sulla piana non si vedono. RIPESCATA il 2026-09-25 per la Scena 3 (tavola-hammerfist-giovane-porta.jpg): è il box della porta e della targa
+tavola-hammerfist-giovane · seed — · reroll 1 · Canva MAHWL7ajay0: render 3D fotografico, fuori dall'ancora a olio del set. (Il motivo scritto prima, «citta' moderna», era un errore di lettura della miniatura: a piena risoluzione e' una fortezza medievale)
+ritratto-zogtar-deatheye · seed — · reroll 1 · Canva MAHWL_YsfgQ: sostituita dalla terza versione del DM (occhio destro senza specchiare, 1033×1523)
+tavola-durik-e-hella · seed — · reroll 1 · Canva MAHWLxqQ-Ns a piena vista (DM, 2026-09-25): Durik sdraiato e massiccio; vince la seconda, levriero in piedi come durik2

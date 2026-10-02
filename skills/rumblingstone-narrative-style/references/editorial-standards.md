@@ -12,6 +12,7 @@ token): l'agente non la ri-verifica a mano.
 |---|---|
 | **CD** (Classe Difficoltà) | DC |
 | azione **veloce** / **immediata** / preparata (3.5) | bonus action, reaction, lair action, vantaggio/svantaggio (5e) |
+| **otto ore di sonno** (incantesimi, capacità al giorno, 1 pf per livello), una **sosta** di N ore (3.5 e PF1e) | riposo breve, riposo lungo, short/long rest (5e) |
 | **Lotta** (grapple 3.5); CMB/CMD solo in box PF1e dichiarati | CMB/CMD fuori dai box |
 | Skill in italiano 3.5: Osservare, Nascondersi, Raggirare, Sapienza Magica… | Spot, Hide, Bluff, Spellcraft nel testo da tavolo |
 | **Durik** (maschio) · **Skullcrusher** · **Terros** | Nymeria · Skulldark/Infernotooth · doppioni di boss |
@@ -49,9 +50,15 @@ token): l'agente non la ri-verifica a mano.
   domanda**. ⚠️ Non è un obbligo su ogni read-aloud: vale dove il sensoriale
   è **strutturato in scheda**.
 - Etichettare la regia: `**Read-aloud (pilastro lead).**`, così il prossimo
-  agente sa quale voce continuare.
+  agente sa quale voce continuare. **Ogni box** la porta, anche il micro-box di
+  un attore e la riga d'esito di un tiro: un box senza etichetta, a metà di una
+  sequenza, non dice più a chi appartiene la voce (L11, 2026-10-01: nelle prove
+  è il difetto più frequente con la skill caricata).
 - I dialoghi dei PNG: `**NOME (registro/tono):** *«battuta»*`: il tono
-  dichiarato è parte del canone del personaggio.
+  dichiarato è parte del canone del personaggio. Fra parentesi **il tono in
+  poche parole** (*sottovoce*, *senza alzare gli occhi*); il gesto lungo va
+  fuori, come didascalia in corsivo dopo la battuta. Una parentesi da quindici
+  parole non è più un tono, ed è quella che il prossimo agente non riconosce.
 
 ## 3. Gerarchia e struttura della pagina
 

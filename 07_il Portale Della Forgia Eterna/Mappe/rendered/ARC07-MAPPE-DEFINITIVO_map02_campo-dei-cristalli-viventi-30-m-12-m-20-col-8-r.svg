@@ -9,6 +9,7 @@
 <clipPath id="clipgrid"><rect x="46" y="80" width="560" height="224"/></clipPath>
 <pattern id="t_earth" width="28" height="28" patternUnits="userSpaceOnUse"><rect width="28" height="28" fill="#b08d68"/><circle cx="6" cy="6" r="1.1" fill="#93714e"/><circle cx="18" cy="11" r="0.9" fill="#93714e"/><circle cx="24" cy="22" r="1.2" fill="#93714e"/><circle cx="9" cy="20" r="1" fill="#c8a87f"/><circle cx="22" cy="4" r="0.8" fill="#c8a87f"/><path d="M3 15q4-1.5 8 0" stroke="#a17d59" stroke-width="0.8" fill="none"/></pattern>
 <pattern id="t_floor" width="28" height="28" patternUnits="userSpaceOnUse"><rect width="28" height="28" fill="#d8cdb4"/><path d="M0 0.5h28M0 14.5h28M7 0.5v14M21 14.5v14" stroke="#b4a789" stroke-width="1"/><circle cx="15" cy="8" r="2.4" fill="#cfc3a9" fill-opacity="0.6"/><circle cx="6" cy="22" r="2" fill="#cfc3a9" fill-opacity="0.5"/></pattern>
+<pattern id="t_void" width="42" height="42" patternUnits="userSpaceOnUse"><rect width="42" height="42" fill="#c9d2ce"/><path d="M4 12q8-5 16 0t16 0" stroke="#dde5e1" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.8"/><path d="M-4 30q8-5 16 0t16 0t16 0" stroke="#b6c1bc" stroke-width="1.8" fill="none" stroke-linecap="round" opacity="0.7"/><circle cx="33" cy="20" r="1" fill="#e8eeeb"/><circle cx="9" cy="38" r="0.9" fill="#e8eeeb"/></pattern>
 <symbol id="pr_door" viewBox="0 0 28 28"><rect x="5" y="9.5" width="18" height="9" rx="1.4" fill="#8a6032" stroke="#2f2415" stroke-width="1.2"/><path d="M9.5 9.5v9M14 9.5v9M18.5 9.5v9" stroke="#6e4b26" stroke-width="1"/><circle cx="7.2" cy="14" r="0.9" fill="#2f2415"/><circle cx="20.8" cy="14" r="0.9" fill="#2f2415"/></symbol>
 <symbol id="pr_gem" viewBox="0 0 28 28"><path d="M9 8h10l4 5-9 11-9-11z" fill="#7fc4d8" stroke="#245a70" stroke-width="1.1"/><path d="M9 8l5 5 5-5M4.9 13h18.2M14 13v11" stroke="#d9f0f7" stroke-width="0.9" fill="none"/></symbol>
 <radialGradient id="g_d62828" cx="0.35" cy="0.3" r="0.8"><stop offset="0" stop-color="#e88989"/><stop offset="0.55" stop-color="#d62828"/><stop offset="1" stop-color="#8b1a1a"/></radialGradient>
@@ -21,54 +22,16 @@
 <text x="46" y="51" font-size="11" font-style="italic" fill="#7a6a50">20×8 quadretti · scala 1,5 m/quadretto</text>
 <rect x="41" y="75" width="570" height="234" fill="#e6d9b8" stroke="#3b2e1e" stroke-width="1.6"/>
 <g clip-path="url(#clipgrid)">
+<path d="M46 93.58L49.81 85.99L51.99 83.81L61.19 80L590.81 80L600.01 83.81L602.19 85.99L606 93.58L606 94.42L602.19 102.01L600.01 104.19L590.81 108L61.19 108L51.99 104.19L49.81 102.01L46 94.42Z" fill="url(#t_void)" fill-rule="evenodd" stroke="url(#t_void)" stroke-width="2.4" stroke-linejoin="round"/>
 <path d="M46 123.19L49.81 113.99L51.99 111.81L61.19 108L590.81 108L600.01 111.81L602.19 113.99L606 123.19L606 204.81L602.19 214.01L600.01 216.19L590.81 220L61.19 220L51.99 216.19L49.81 214.01L46 204.81ZM46 263.19L49.81 253.99L51.99 251.81L61.19 248L590.81 248L600.01 251.81L602.19 253.99L606 263.19L606 288.81L602.19 298.01L600.01 300.19L590.81 304L61.19 304L51.99 300.19L49.81 298.01L46 288.81Z" fill="url(#t_earth)" fill-rule="evenodd" stroke="url(#t_earth)" stroke-width="2.4" stroke-linejoin="round"/>
 <path d="M46 233.58L49.81 225.99L51.99 223.81L61.19 220L590.81 220L600.01 223.81L602.19 225.99L606 233.58L606 234.42L602.19 242.01L600.01 244.19L590.81 248L61.19 248L51.99 244.19L49.81 242.01L46 234.42Z" fill="url(#t_floor)" fill-rule="evenodd" stroke="url(#t_floor)" stroke-width="2.4" stroke-linejoin="round"/>
 <rect x="46" y="80" width="560" height="224" filter="url(#mottle)" opacity="0.35"/>
+<path d="M46 93.58L49.81 85.99L51.99 83.81L61.19 80L590.81 80L600.01 83.81L602.19 85.99L606 93.58L606 94.42L602.19 102.01L600.01 104.19L590.81 108L61.19 108L51.99 104.19L49.81 102.01L46 94.42Z" fill="none" stroke="#7a6a50" stroke-width="0.9" opacity="0.5" stroke-linejoin="round" filter="url(#rough)"/>
 <path d="M46 123.19L49.81 113.99L51.99 111.81L61.19 108L590.81 108L600.01 111.81L602.19 113.99L606 123.19L606 204.81L602.19 214.01L600.01 216.19L590.81 220L61.19 220L51.99 216.19L49.81 214.01L46 204.81ZM46 263.19L49.81 253.99L51.99 251.81L61.19 248L590.81 248L600.01 251.81L602.19 253.99L606 263.19L606 288.81L602.19 298.01L600.01 300.19L590.81 304L61.19 304L51.99 300.19L49.81 298.01L46 288.81Z" fill="none" stroke="#7a6a50" stroke-width="0.9" opacity="0.5" stroke-linejoin="round" filter="url(#rough)"/>
 <path d="M46 233.58L49.81 225.99L51.99 223.81L61.19 220L590.81 220L600.01 223.81L602.19 225.99L606 233.58L606 234.42L602.19 242.01L600.01 244.19L590.81 248L61.19 248L51.99 244.19L49.81 242.01L46 234.42Z" fill="none" stroke="#7a6a50" stroke-width="0.9" opacity="0.5" stroke-linejoin="round" filter="url(#rough)"/>
 </g>
 <path d="M74 80v224M102 80v224M130 80v224M158 80v224M214 80v224M242 80v224M270 80v224M298 80v224M354 80v224M382 80v224M410 80v224M438 80v224M494 80v224M522 80v224M550 80v224M578 80v224M46 108h560M46 136h560M46 164h560M46 192h560M46 248h560M46 276h560M46 304h560" stroke="#2e2313" stroke-width="0.6" opacity="0.3" fill="none"/>
 <path d="M46 80v224M186 80v224M326 80v224M466 80v224M606 80v224M46 80h560M46 220h560" stroke="#2e2313" stroke-width="1.4" opacity="0.48" fill="none"/>
-<ellipse cx="60.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="60.0" y="100.0" font-size="17" text-anchor="middle">🌫</text>
-<ellipse cx="88.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="88.0" y="100.0" font-size="17" text-anchor="middle">🌫</text>
-<ellipse cx="116.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="116.0" y="100.0" font-size="17" text-anchor="middle">🌫</text>
-<ellipse cx="144.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="144.0" y="100.0" font-size="17" text-anchor="middle">🌫</text>
-<ellipse cx="172.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="172.0" y="100.0" font-size="17" text-anchor="middle">🌫</text>
-<ellipse cx="200.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="200.0" y="100.0" font-size="17" text-anchor="middle">🌫</text>
-<ellipse cx="228.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="228.0" y="100.0" font-size="17" text-anchor="middle">🌫</text>
-<ellipse cx="256.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="256.0" y="100.0" font-size="17" text-anchor="middle">🌫</text>
-<ellipse cx="284.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="284.0" y="100.0" font-size="17" text-anchor="middle">🌫</text>
-<ellipse cx="312.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="312.0" y="100.0" font-size="17" text-anchor="middle">🌫</text>
-<ellipse cx="340.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="340.0" y="100.0" font-size="17" text-anchor="middle">🌫</text>
-<ellipse cx="368.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="368.0" y="100.0" font-size="17" text-anchor="middle">🌫</text>
-<ellipse cx="396.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="396.0" y="100.0" font-size="17" text-anchor="middle">🌫</text>
-<ellipse cx="424.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="424.0" y="100.0" font-size="17" text-anchor="middle">🌫</text>
-<ellipse cx="452.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="452.0" y="100.0" font-size="17" text-anchor="middle">🌫</text>
-<ellipse cx="480.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="480.0" y="100.0" font-size="17" text-anchor="middle">🌫</text>
-<ellipse cx="508.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="508.0" y="100.0" font-size="17" text-anchor="middle">🌫</text>
-<ellipse cx="536.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="536.0" y="100.0" font-size="17" text-anchor="middle">🌫</text>
-<ellipse cx="564.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="564.0" y="100.0" font-size="17" text-anchor="middle">🌫</text>
-<ellipse cx="592.0" cy="100.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
-<text x="592.0" y="100.0" font-size="17" text-anchor="middle">🌫</text>
 <ellipse cx="116.0" cy="128.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
 <text x="116.0" y="128.0" font-size="17" text-anchor="middle">💠</text>
 <ellipse cx="172.0" cy="128.0" rx="7.5" ry="2.8" fill="#241c10" opacity="0.14"/>
@@ -219,17 +182,17 @@
 <text x="73" y="378" font-size="11" fill="#3b2e1e">⬜ — Pavimento lavorato</text>
 <rect x="46" y="388" width="19" height="15" fill="url(#t_earth)" stroke="#7a6a50" stroke-width="0.7"/>
 <text x="73" y="400" font-size="11" fill="#3b2e1e">🟫 — Terra battuta / sentiero</text>
-<circle cx="55" cy="418" r="7.5" fill="url(#g_d62828)" stroke="#241c10" stroke-width="1.2"/>
-<text x="73" y="422" font-size="11" fill="#3b2e1e">🔴 — Nemico standard</text>
-<use href="#pr_door" x="46" y="431" width="18" height="18"/>
-<text x="73" y="444" font-size="11" fill="#3b2e1e">🚪 — Porta / ingresso</text>
-<use href="#pr_gem" x="46" y="453" width="18" height="18"/>
-<text x="73" y="466" font-size="11" fill="#3b2e1e">💎 — Tesoro / oggetto magico</text>
-<text x="46" y="488" font-size="14">🌫</text>
-<text x="73" y="488" font-size="11" fill="#3b2e1e">🌫 — vuoto/gravità laterale (non attraversare)</text>
+<rect x="46" y="410" width="19" height="15" fill="url(#t_void)" stroke="#7a6a50" stroke-width="0.7"/>
+<text x="73" y="422" font-size="11" fill="#3b2e1e">🌫 — Vuoto / aria (niente pavimento, gravita' alterata: vale la nota della mappa)</text>
+<circle cx="55" cy="440" r="7.5" fill="url(#g_d62828)" stroke="#241c10" stroke-width="1.2"/>
+<text x="73" y="444" font-size="11" fill="#3b2e1e">🔴 — Nemico standard</text>
+<use href="#pr_door" x="46" y="453" width="18" height="18"/>
+<text x="73" y="466" font-size="11" fill="#3b2e1e">🚪 — Porta / ingresso</text>
+<use href="#pr_gem" x="46" y="475" width="18" height="18"/>
+<text x="73" y="488" font-size="11" fill="#3b2e1e">💎 — Tesoro / oggetto magico</text>
 <text x="46" y="510" font-size="14">💚</text>
 <text x="73" y="510" font-size="11" fill="#3b2e1e">💚 — crepato (riforgiabile → +2, E02 e O07)</text>
 <text x="46" y="532" font-size="14">💠</text>
 <text x="73" y="532" font-size="11" fill="#3b2e1e">💠 — Cristallo Vivente (canta)</text>
-<text x="46" y="564" font-size="9" font-style="italic" fill="#7a6a50">fonte: ARC07-MAPPE-DEFINITIVO.md · SVG generato da scripts/render_map_svg.py (stile pergamena) — non modificare a mano</text>
+<!-- fonte: ARC07-MAPPE-DEFINITIVO.md · SVG generato da scripts/render_map_svg.py (stile pergamena) · non modificare a mano -->
 </svg>

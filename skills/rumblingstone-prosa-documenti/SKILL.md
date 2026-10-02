@@ -9,7 +9,8 @@ description: >
   tropi inglesi NON vanno importati in italiano. Use WHENEVER si scrive o si
   revisiona un documento del repo: "scrivi la guida", "apri un piano", "scrivi
   l'ADR", "aggiorna il README", "corpo della PR", "messaggio di commit",
-  "documenta questo", "rivedi il documento", "questo testo sembra scritto
+  "documenta questo", "rivedi il documento", "documentazione", "piano",
+  "plan", "ADR", "PRD", "questo testo sembra scritto
   dall'IA". ⚠️ NON è per la prosa di gioco: read-aloud, handout, dialoghi ed
   echi seguono `rumblingstone-narrative-style` e `italiano-nativo.md`, dove
   alcune di queste regole sarebbero sbagliate.

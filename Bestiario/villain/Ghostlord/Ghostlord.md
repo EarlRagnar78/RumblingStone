@@ -28,7 +28,9 @@ voci:
 
 ## STORIA: IL TRADIMENTO CHE L'HA CREATO
 
-Ottocento anni fa, Zeth era il **mastro costruttore** delle prime gallerie sotterranee di Hammerfist — un mezz'elfo umano che aveva legato la sua anima alla montagna per proteggere il suo popolo da un'invasione phaerimm. Credeva di eseguire un rituale di *Consacrazione* a Silvanus. Fu ingannato da un cultista di Shar che sostituì i componenti del rito con quelli di una Lichificazione.
+Mille anni fa (≈372 DR), Zeth era il **mastro costruttore** delle prime gallerie sotterranee di Hammerfist — un mezz'elfo che aveva legato la sua anima alla montagna per proteggere il suo popolo dall'orda di Zog'tar Deatheye, che assediava la fortezza giovane. Credeva di eseguire un rituale di *Consacrazione* a Silvanus. Fu ingannato da un chierico incappucciato di Shar, **mano del Collezionista attraverso il tempo**, che gli diede i componenti di una Lichificazione (`ARC07-DEF-4` Scena 5, «Seme del Ghostlord»: i PG sono lì quella notte).
+
+> *Allineato il 2026-09-24 su decisione del DM: la scheda diceva «ottocento anni fa» e «un'invasione phaerimm», `ARC07-DEF-4` (canone DM del 2026-07-23) mille anni fa e l'orda. Vale il secondo; il cultista di Shar e la mano del Collezionista sono la stessa persona.*
 
 Il risultato: Zeth diventò un lich senza averlo scelto, legato alla montagna che aveva giurato di proteggere. Le sue guardie — le anime dei soldati di Hammerfist morti nel corridoio del rito — sono rimaste volontariamente, ora come leoni spettrali, scegliendo di continuare a servire chi amavano.
 
@@ -36,7 +38,7 @@ Il risultato: Zeth diventò un lich senza averlo scelto, legato alla montagna ch
 
 **La domanda che solo Hella può porre:** *"Cosa vuoi, davvero?"*
 **Risposta di Zeth** (dopo Diplomazia CD 25 o dopo aver visto la trascrizione delle rune):
-> *"Voglio dormire. Ho difeso la montagna per ottocento anni. Voglio che qualcuno sappia che l'ho fatto senza tradire nessuno. E poi voglio non esistere più."*
+> *"Voglio dormire. Ho difeso la montagna per mille anni. Voglio che qualcuno sappia che l'ho fatto senza tradire nessuno. E poi voglio non esistere più."*
 
 ---
 
@@ -44,7 +46,7 @@ Il risultato: Zeth diventò un lich senza averlo scelto, legato alla montagna ch
 
 Appare come un lich druidico: scheletro avvolto in resti di vesti verdi scurite dal tempo, con ramoscelli di legno fossile intrecciati alle costole come un'armatura naturale. Gli occhi sono due punti di luce verde-bluastra. Intorno a lui fluttuano sempre uno o due leoni spettrali — non come guardie del corpo aggressive, ma come cani fedeli che non hanno nessun posto dove andare.
 
-Non usa un tono da villain. Parla con la stanchezza di qualcuno che ha avuto troppe conversazioni simili in ottocento anni. Il cinismo non è arroganza — è solo l'accumulo di chi ha visto ogni tipo di ingannatore e sa riconoscerli al terzo paragrafo.
+Non usa un tono da villain. Parla con la stanchezza di qualcuno che ha avuto troppe conversazioni simili in mille anni. Il cinismo non è arroganza — è solo l'accumulo di chi ha visto ogni tipo di ingannatore e sa riconoscerli al terzo paragrafo.
 
 ---
 
@@ -139,9 +141,9 @@ Zeth sente tutto ciò che accade nel Leone di Pietra attraverso i suoi sensi mag
 
 ## DIALOGO
 
-- *"Ottocento anni. Sai quanto sono ottocento anni per qualcuno che non può dormire? Ogni giorno uguale al precedente, ogni stagione percepita ma mai vissuta."*
+- *"Mille anni. Sai quanto sono mille anni per qualcuno che non può dormire? Ogni giorno uguale al precedente, ogni stagione percepita ma mai vissuta."*
 - *"Non sono un mostro. Sono un custode che ha dimenticato cosa stava custodendo."*
-- *"(se gli viene mostrata la trascrizione delle rune) Qualcuno le ha lette. Dopo ottocento anni, qualcuno le ha finalmente lette."* (questo è il momento in cui la sua difensività scompare)
+- *"(se gli viene mostrata la trascrizione delle rune) Qualcuno le ha lette. Dopo mille anni, qualcuno le ha finalmente lette."* (questo è il momento in cui la sua difensività scompare)
 - *"Dite al vostro Re che Hammerfist è stata costruita sulla mia promessa. Non sulla mia maledizione."*
 - A Hella specificamente: *"Tu senti la pietra. Sai cosa dice quando vuole riposare. Allora capisci già cosa ti sto chiedendo."*
 

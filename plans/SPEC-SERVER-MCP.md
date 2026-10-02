@@ -97,7 +97,7 @@ distingueva un validatore da uno script che scrive il canone.
 
 > **Un tool che esce diverso da zero non è un errore di protocollo.**
 
-`validate_lingua` esce **1** per progetto e in CI è `continue-on-error`; il suo
+`validate_lingua` esce **1** quando trova un refuso, per progetto; il suo
 codice 1 è un **risultato**. Se il server lo trasformasse in un errore JSON-RPC,
 il client vedrebbe un guasto dove c'è un referto.
 

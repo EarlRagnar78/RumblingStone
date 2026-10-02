@@ -60,7 +60,8 @@ mercato di Dauth (donna cieca = avatar di Lathander) dà i bonus già canonici
 descritti in `Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md` (+2 TS Vol
 vs psionici di Zalkatar; +1d6, o +2d6 se incontrata la donna cieca, al primo
 attacco/round della Fase 3 della Torre). Il pieno svolgimento di quella sub-quest
-è ancora da scrivere `[INFERRED — Lotto B]` (vedi DM-MASTER-REFERENCE §5).
+è scritto in `...DAUTH-SUBQUEST-Artemis.md` (Lotto B, 2026-07-02; il grimorio e il
+ramo in cui Artemis uccide l'emissario, recuperati dalla stesura di maggio il 2026-09-24).
 
 ### 2.3 Tordek: le 150 lance di Re Thorek
 
@@ -80,6 +81,20 @@ Wyrmlord di Fase 1.
 | Sethrax fugge col seme | Torre di Artemis più dura → se Artemis fallisce, Zalkatar wildcard a Rethmar (<10% pf) |
 | Alleanza/accordo coi Githyanki di Vaereth | Possibile wildcard aereo non ostile ai difensori |
 | Orbe tenuta dal party | Tordek dispone di Porta 4 come "asso" nella Fase 3/4 di Rethmar |
+| Thorik ha salvato Velda (via C) | Velda PNG ricorrente; Verric fedele a vita con 11+ su 1d20 |
+| Thorik ha coperto Verric (via B) | Un informatore nella milizia di Dauth, in debito di vita; re Thorek, se lo scopre, fa pagare di più i suoi favori |
+| Thorik ha tenuto la breccia con le lance | A Rethmar arrivano **75** lance invece di 150; Khorn ferito gravemente |
+| Il Consiglio ha dato il comando a Thorik | Casa Vargen avversaria politica nell'arco P3 |
+| Nessun messaggero a Rethmar (Consiglio) | Conte Valerius **+1** al clock: «movimento di truppe non autorizzato» |
+| Sylith viva e alleata (boschetto salvato) | Un'arciera in più in Fase 1 |
+| La fonte del rito è stata Toppi | Saraah e il cerchio del Sacred Forest trattano Hella con più durezza |
+| Il rito è stato solo di Hella | La Spora-Madre di Dauth si schiude **dopo** Rethmar: minaccia post-campagna |
+| Artemis ha consegnato il grimorio della Torre | La cellula del Mascherato esegue un rito di trasformazione su un nobile a Rethmar |
+| Artemis ha ucciso Vashet in pubblico | Tre sicari del Mascherato entro trenta giorni; Valerius **+1** al clock |
+
+Le righe da «Thorik ha salvato Velda» in giù vengono dal recupero della stesura di
+maggio (RIPRESA-PR 4j-1, 2026-09-24): il dettaglio è nelle sotto-quest e nel master
+§6-§10.
 
 ---
 

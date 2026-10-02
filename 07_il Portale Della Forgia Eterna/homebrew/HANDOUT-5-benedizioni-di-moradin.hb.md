@@ -5,14 +5,14 @@
 
 # Le Benedizioni di Moradin (carte singole per PG)
 
-| Benedizione | Effetto (sintesi) |
+| Benedizione | Effetto |
 |---|---|
-| Pelle di Pietra | RD 3/adamantio |
-| Cuore Incrollabile | immunità affaticamento, +2 Tempra |
-| Mantello della Fiamma | Resist Fuoco 20 |
-| Vigore della Forgia | 3 cariche, 3d8+10 cure |
-| Occhio dell'Artefice | +2 Osservare/Cercare/Artigianato |
-| Eco degli Eroi | +2 morale attacco, +1d6 danni, 5 round, 1/combattimento |
+| Pelle di Pietra | passiva, 24 h: resistenza al fuoco 10 e al freddo 5 |
+| Cuore Incrollabile | passiva, 24 h: immunità al caldo e al freddo ambientali non letali, +2 ai TS su Tempra contro gli effetti ambientali |
+| Vigore della Forgia | 3 cariche al giorno, tornano all'alba: 3d8+5 a sé (azione standard), 2d8+2 a un alleato a contatto |
 
-{{footnote SCHEDA GIOCATORE — STATO ATTUALE · 2026-09-01 · Rumbling Stone}}
+> Si rinnovano pregando 10 minuti all'Altare del Cuore di Moradin, una volta al
+> giorno. Vale il PDF, per decisione del DM del 2026-09-25.
+
+{{footnote SCHEDA GIOCATORE — STATO ATTUALE · 2026-09-25 · Rumbling Stone}}
 {{pageNumber,auto}}

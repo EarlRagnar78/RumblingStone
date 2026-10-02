@@ -150,7 +150,7 @@ class TestLaDeduplicaNonProduceDoppioni(unittest.TestCase):
 
 class TestIlPoolNonSiRestringe(unittest.TestCase):
     def test_il_pool_e_cresciuto_spezzando(self):
-        """305 → 352 (4d-5) → 372 (4d-6) → 397 (D18) → 384 (4d-8) → 381 → **380** (L7).
+        """305 → 352 (4d-5) → 372 (4d-6) → 397 (D18) → 384 (4d-8) → 381 → 380 (L7) → **379**.
 
         🔴 **La soglia scende per la seconda volta, e ogni unita' ha un nome.**
         Il primo calo (397 → 384) furono i **13 soggetti con due record** — una
@@ -165,6 +165,7 @@ class TestIlPoolNonSiRestringe(unittest.TestCase):
         | 2 | **Thorgrim Barbadiferro GS 13** | **non ha uno statblocco in tutto il repo**: nel modulo e' una prova sociale CD 20. Il GS 13 l'avevo inventato io |
         | 3 | **Skullcrusher, secondo record** | riaffiorato per un attimo togliendo l'ERRATA dalle fonti dichiarate della voce, e richiuso rimettendocela |
         | 4 | **Ushgar «Occhio Reso», secondo record** *(2026-09-23)* | il dossier portava un suo blocco con TS diversi dallo statblocco `ushgar-occhio-reso-cr13.md`; ora e' `[RIMANDO]`, e Ushgar resta **una** voce, quella dello statblocco |
+        | 5 | **«ARC-07 · DEFINITIVO #4 — IL VIAGGIO A 1.000 ANNI FA», GS 10** *(2026-09-25)* | **non era una creatura**: era il titolo del master, letto come mostro per la riga «scontro CR 10» dello skill challenge. Riordinando `DEF-4` la riga dice «GS 10», come il resto del repo, e la voce falsa sparisce |
 
         ⚠️ **Zero creature giocabili in meno nel pool.** Una era doppia, una
         non era una creatura, una era un artefatto della deduplica.
@@ -173,7 +174,7 @@ class TestIlPoolNonSiRestringe(unittest.TestCase):
         numero scende ancora senza che nessuno abbia scritto perche', il
         cancello deve tornare rosso.
         """
-        self.assertGreaterEqual(len(CATALOGO), 380)
+        self.assertGreaterEqual(len(CATALOGO), 379)
 
     def test_ogni_record_ha_una_fonte_che_esiste(self):
         for m in CATALOGO:

@@ -1,8 +1,7 @@
 # Regia della Sessione — Lo Scontro con Terros l'Antico
 
 > **Cos'è questa pagina.** Il piano della serata, in ordine di gioco, con i
-> puntatori esatti al master (`ARC07-DEF-1-PIANO-TERRA-TERROS.md`, capitolo
-> II di questo booklet). **Zero numeri nuovi**: ogni CD, pf e PX vive nel
+> puntatori esatti al master, il capitolo II di questo booklet. **Zero numeri nuovi**: ogni CD, pf e PX vive nel
 > master; qui c'è solo la regia. Stampa la **Quick-Reference §0-bis** del
 > master: è tutta la sessione in una pagina.
 
@@ -10,9 +9,9 @@
 
 | Fatto | Stato | Fonte |
 |---|---|---|
-| Viaggio spirituale di Hella | ✅ **CONCLUSO E GIOCATO** (2026-07-02) — i PG NON lo sanno | `_ARCHIVIO/...IL-VIAGGIO-NELL'INCUDINE-DEL-MONDO-risultati.md` |
+| Viaggio spirituale di Hella | ✅ **CONCLUSO E GIOCATO** (2026-07-02) — i PG NON lo sanno | il viaggio dello spirito, già giocato |
 | Sentinella Silenziosa | ✅ sconfitta da Tordek nell'Anticamera della Magnetite | master §7b |
-| Bracieri Gemelli | ✅ **COMPLETI** (Fuoco+Terra), coscienza attiva, voce da vecchio fabbro | master §7b + scheda `05_Bracieri_Gemelli_Scheda_PG_Completa.md` |
+| Bracieri Gemelli | ✅ **COMPLETI** (Fuoco+Terra), coscienza attiva, voce da vecchio fabbro | master §7b + scheda dei Bracieri |
 | Corona di Adamantio | Topazio solo (1/3) — lo Smeraldo si forgia STASERA | master §9 |
 | Cristalli Viventi | ✅ **skill challenge SUPERATO**: Frequenza della Confusione + Diapason Armonico ottenuti; +2 TS contro Terros attivo | master §6 (canone giocato 2026-07-24) |
 | Salita al Tempio | ✅ giocata in variante «salita cantata»: la Frequenza sollevava blocchi dall'oceano fino a metà strada (poi crollati 🙂), resto co-op | master §7a (canone giocato) |
@@ -39,7 +38,7 @@ esistono solo come echi.
 
 1. **Alla vigilia (il giorno prima): file del gruppo + hint.** Ai giocatori
    si invia il **file unico del gruppo «L'Ultima Porta»**
-   (`ARC07-GRUPPO-CAMMINO.*` — copertina evocativa + «il cammino fin qui»,
+   (copertina evocativa + «il cammino fin qui»,
    un solo PDF spoiler-free: recap veloce + hype, MAI il nome del boss —
    regola ADR-0013 per tutte le sessioni) e a ciascuno la SUA pagina ✉
    hint, in privato (un PDF `pg-hint-<PG>` a testa). Al tavolo: leggi il
@@ -115,7 +114,7 @@ esistono solo come echi.
      alleggerirgli le spalle e **NON sa** che è Hella; la giocatrice di
      Hella ha lo stesso momento dal suo lato (handout ✉ Echi, secondo eco).
 6. **Epilogo**: «La Forgia Ricorda» (§10 — i pannelli nuovi si SCOPRONO al
-   ritorno in Sala, master #2), Echo Ledger (§11), PX e tesoro (§11-bis),
+   ritorno in Sala, `DEF-2`), Echo Ledger (§11), PX e tesoro (§11-bis),
    countdown aggiornato (§12).
 
 ## 2. Cosa stampare stasera

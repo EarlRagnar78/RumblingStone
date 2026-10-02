@@ -12,9 +12,12 @@
 
 ## 📄 PAGINA 1 — OGGI AL TAVOLO `[aggiornata 2026-07-31]`
 
-*Stampare questa pagina ADESSO. Canone: **Topazio + Smeraldo accesi**,
-**Rituale 3 «Incudine del Mondo» completato**. La versione impaginata da dare
-al giocatore è `02_Corona_2_Gemme.html`.*
+*Canone: **Topazio + Smeraldo accesi**, **Rituale 3 «Incudine del Mondo»
+completato**. Le pagine da stampare sono quelle a stadi (ADR-0071): oggi
+`02_Corona_2_Gemme.html` per il giocatore e `02_Corona_2_Gemme_DM.html` per il
+DM; le versioni vive sono nel registro di `PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md`
+§0. Questa scheda markdown resta la fonte di lavoro, e le pagine a stadi sono
+più complete: portano anche i poteri dei moduli giocati in attesa del DM.*
 
 ### Corona di Adamantio *(artefatto maggiore — legata a Thorik)*
 
@@ -32,7 +35,7 @@ d'oro, una di verde. La terza è fredda.*
 | **Consapevolezza della Pietra** (Sop) | su terra/pietra naturale **+1 morale** att./danni e **+2 intuizione CA**; **porte segrete**, **trappole** e **Comprendere Linguaggi** a volontà *(DM 2026-07-04)* | Rit. 1 |
 | **Intuito di Moradin** (Sop) | **Vista del Vero** 1/giorno; **+4 intuizione** Artigianato (fabbro) | Rit. 2 |
 | ⭐ **Volontà Adamantina** (Sop) | su terra/pietra: **immune a charme e compulsione**, **+4 razziale ai TS** vs altri effetti mentali | **Rit. 3** |
-| ⭐ **Manto di Pietra e Spirito** (Sop) | **Mente Vuota** permanente (immune al mentale **e** alla divinazione, **ovunque, anche staccato da terra**); **RD 5/epico** `[verificare: la fonte scrive «5/epic and evil»]`; in un Nodo Terrestre **1/mese Comunione** (LI 20°, 1 round) | **Rit. 3** |
+| ⭐ **Manto di Pietra e Spirito** (Sop) | **Mente Vuota** permanente (immune al mentale **e** alla divinazione, **ovunque, anche staccato da terra**); **RD 5/epico e male**: la supera solo un'arma insieme epica e malvagia; in un Nodo Terrestre **1/mese Comunione** (LI 20°, 1 round) | **Rit. 3** |
 
 **Gemme accese:**
 
@@ -117,12 +120,11 @@ modulo e come parla il testo di Moradin, che si rivolge al portatore.
 rito celebrato** dopo la Prova della Sala Profonda; il modulo lo numera
 **Rituale 3** perché conta anche il Risveglio. Stesso evento.
 
-**3-ter. Il −2 COS non c'è ancora.** ⚠️ Oggi Thorik ha **+2 COS** da questo
-rito e **nessun −2 COS**: quel malus è il prezzo del Dono «Il Sangue della
-Stirpe» al rito di Hella (`ARC07-DEF-3` §5), **scena non ancora giocata**.
-Quando arriverà, i due si **sommano a zero** — due pegni permanenti per tornare
-al punto di partenza. Vale la pena guardarlo prima di proporglielo: vedi «Il
-bilancio di Thorik» sulla versione DM della scheda.
+**3-ter. Nessun −2 COS.** Oggi Thorik ha **+2 COS** da questo rito e nessun
+malus di Costituzione. Il «Sangue della Stirpe» (−2 COS) era un Dono della
+prima stesura, **superato il 2026-09-12**: al rito di Hella Thorik dona il **+2
+di deflessione** della Corona (sezione in fondo a questa scheda). *(Corretto
+nell'audit del 2026-09-25: questa nota era rimasta alla stesura v1.)*
 
 **3-quater. Il −2 DES «di quando l'ha indossata» esiste, e s'era perso.**
 `PortaleForgia-P1-REVISED-Corretta.md` — il beat in cui Thorik prende la Corona
@@ -142,7 +144,8 @@ strappare, la Corona non collabora; se la si apre sull'incudine per incastonare,
 si apre.
 
 **Non ancora sbloccati** (Rituale 4, «Assedio della Forgia Eterna» = il viaggio
-a −1.000): **Corona di Protezione +3**, **Senzienza**, **Rubino**.
+a −1.000): il **Rubino**, e dopo il suo uso, al ritorno nel 1372, la
+**Corona di Protezione +3** e la **Senzienza**.
 
 ## 📄 PAGINA 2 — SNAPSHOT "INGRESSO ARC-09" (⚠️ NON stampare prima del raccordo D16)
 
@@ -162,9 +165,11 @@ Tutto quanto sopra, PIÙ:
 **Gemma RUBINO, la Possanza Nanica — SPESA:**
 
 > Il Rubino si è acceso alla vittoria della battaglia di 1.000 anni fa
-> (≈372 DR) e **si è consumato** per riportarvi al 1372. L'incastonatura
-> ora è vetro scuro. *"Nessuna pietà"* — la Corona ricorda. **Non è
-> riattivabile**: chiunque dica il contrario, è un'incoerenza da segnalare.
+> (≈372 DR) e **si è consumato** per riportarvi al 1372: si usa una volta
+> sola. La pietra però resta nell'incasso, e dopo l'uso **la Corona è
+> intera**: +3 e la Senzienza. *"Nessuna pietà"* — la Corona ricorda. **Il
+> viaggio non è riattivabile**: chiunque dica il contrario, è un'incoerenza da
+> segnalare.
 
 **Poteri dei Rituali Legacy 3-4.** ✅ **Confermati dal DM il 2026-09-20**, e la
 riga «da confermare» che stava qui contraddiceva la tabella di PAGINA 1, dove
@@ -174,7 +179,8 @@ marcati **Rit. 3**.
 | Potere | Da quale rituale | Stato |
 |---|---|---|
 | **Volontà d'Adamantio** · **Manto di Pietra e Spirito** | **Rituale 3**, l'Incudine del Mondo | ✅ **già tuoi** — vedi PAGINA 1 |
-| **Corona +3** · **Senzienza** · **Rubino** | **Rituale 4**, l'Assedio della Forgia Eterna | ⬜ al viaggio a −1.000 |
+| **Rubino** | **Rituale 4**, l'Assedio della Forgia Eterna | ⬜ al viaggio a −1.000: si usa una volta sola, per tornare |
+| **Corona +3** · **Senzienza** | dopo l'uso del Rubino | ⬜ al ritorno nel 1372: la Corona si completa |
 | ⭐ ***Aura della Forgia Eterna*** **1/settimana** | **Rituale 4**, alla vittoria | ⬜ *Possenza Divina* e *Protezione dal Male* a te e ai tuoi; a ogni nano entro 30 m anche *Benedizione* e uno *Scolpire Pietra*; **+4 di morale** ad attacchi e TS per ogni nano che ti veda; i nemici dei nani **Volontà CD 20** o **scossi** 1 minuto |
 
 ---

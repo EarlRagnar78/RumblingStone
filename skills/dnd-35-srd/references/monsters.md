@@ -1,5 +1,19 @@
 # Monsters — D&D 3.5 SRD Reference
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- Stat Block Format (Standard)
+- Creature Types and Key Immunities
+- Common Monster Special Abilities
+- CR Quick Reference (Common Monsters)
+- Dragons — Age Categories and CR
+- Improving Monsters (Advancement)
+- Templates
+- Encounter Distance (Surprise Rules)
+- Expanded Splatbook Monsters (Cannath Vale Setting)
+<!-- /indice -->
+
 Source: d20srd.org/srd/monsters/
 Monster URL: https://www.d20srd.org/srd/monsters/[monsterName].htm
 

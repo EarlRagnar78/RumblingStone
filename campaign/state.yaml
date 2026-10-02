@@ -195,17 +195,17 @@ party:
   classe: Human Warlock 13
   oggi: Sala della Forgia Eterna, dopo il riposo
   preparato: → Torre Invisibile (regione di Dauth)
-  hp: 'Full; Ring of Chaotic Illumination active, **Eldritch Blast 7d6**. ⚠️ Il costo del rito è **non ancora versato**: dona **1d6 di Eldritch Blast** (7d6 → **6d6**, per sempre) → Hella ottiene **il Rovo Eldritch**, a volontà. Se rifiuta, l''Anello **si spegne 24 ore**'
+  hp: 'Full; Ring of Chaotic Illumination active, **Eldritch Blast 7d6**. ⚠️ Il costo del rito è **non ancora versato**: dona **1d6 di Eldritch Blast** (7d6 → **6d6**, per sempre) → Hella ottiene **il Rovo Eldritch**, a volontà. Se rifiuta, l''Anello **si spegne 24 ore**. **Fortezza Mentale** (dal Rifiuto di Lord of Sun and Shadow, Opzione C; DM 2026-09-25, D12): +2 permanente ai TS contro l''influenza divina'
   stato: attivo
   filoni: Confront Zalkatar (CR 13 illithid warlock); Ring evolution at stake
 artefatti:
 - artefatto: Aegis Fang
   portatore: Thorik
-  oggi: 'Pre-full-awakening: +2 Returning Dwarven Waraxe; bonded'
-  preparato: Unchanged until the Siege (P5) is won → then Stage 1 full awakening (see Aegis master)
+  oggi: 'Pre-full-awakening: +2 Returning **Dragondoom** Dwarven Waraxe (Dragondoom, MIC: 3/day smite vs Large+ dragons, +1d6 per size above Medium; DM 2026-09-25, D14); bonded'
+  preparato: Unchanged until the Siege (P5) is won → then Stage 1 full awakening (see Aegis master); Stage 1 keeps Dragondoom and the lesser powers (DM 2026-09-25, D15)
 - artefatto: Corona di Adamantio
   portatore: Thorik
-  oggi: '✅ **Topazio + SMERALDO accesi** e **Rituale Legacy 3 «Incudine del Mondo» COMPLETATO** (giocato 2026-07-31). Poteri attivi: Stone''s Awareness (incl. traps + comprehend languages), +2 deflection AC, Moradin''s Insight, Topazio 1/mese (attivazione 1 ora), **Smeraldo/Terra 1/settimana**, e i due sbloccati dal Rituale 3 — **Adamantine Will** (immune charme/compulsione + 4 razziale vs mentale su pietra) e **Mantle of Stone and Spirit** (**Mind Blank permanente**, RD 5/epico, Comunione 1/mese da un Nodo). ✅ Il pegno del Rituale 3 l''ha versato **Thorik**, il portatore (−2 DES / +2 COS permanenti) — correzione DM 2026-08-06: fino a quella data era attribuito a Tordek per errore. ⚠️ Si somma al **−2 DES** che la Corona gli aveva già preso quando l''ha indossata (`PortaleForgia-P1-REVISED-Corretta.md`, «Limitazioni»). **Totale: −4 al punteggio** (DES 10 → 8 → 6), che sono **−2 al modificatore** (da +0 a −2): −2 a CA, Riflessi, iniziativa e prove di DES. In cambio **+4 CAR** (8 → 12) e **+2 COS**. 🔒 **Non rimovibile volontariamente** finché mancano gemme (DM 2026-09-04): l''unica volta che è uscita dalla testa è stato **per incastonare lo Smeraldo**. Mancano Corona +3, Senzienza e il Rubino: si sbloccano col **Rituale 4** = viaggio a −1.000'
+  oggi: '✅ **Topazio + SMERALDO accesi** e **Rituale Legacy 3 «Incudine del Mondo» COMPLETATO** (giocato 2026-07-31). Poteri attivi: Stone''s Awareness (incl. traps + comprehend languages), +2 deflection AC, Moradin''s Insight, Topazio 1/mese (attivazione 1 ora), **Smeraldo/Terra 1/settimana**, e i due sbloccati dal Rituale 3 — **Adamantine Will** (immune charme/compulsione + 4 razziale vs mentale su pietra) e **Mantle of Stone and Spirit** (**Mind Blank permanente**, **RD 5/epico e male** (DM 2026-09-25, D7), Comunione 1/mese da un Nodo). ✅ Il pegno del Rituale 3 l''ha versato **Thorik**, il portatore (−2 DES / +2 COS permanenti) — correzione DM 2026-08-06: fino a quella data era attribuito a Tordek per errore. ⚠️ Si somma al **−2 DES** che la Corona gli aveva già preso quando l''ha indossata (`PortaleForgia-P1-REVISED-Corretta.md`, «Limitazioni»). **Totale: −4 al punteggio** (DES 10 → 8 → 6), che sono **−2 al modificatore** (da +0 a −2): −2 a CA, Riflessi, iniziativa e prove di DES. In cambio **+4 CAR** (8 → 12) e **+2 COS**. 🔒 **Non rimovibile volontariamente** finché mancano gemme (DM 2026-09-04): l''unica volta che è uscita dalla testa è stato **per incastonare lo Smeraldo**. Mancano Corona +3, Senzienza e il Rubino: si sbloccano col **Rituale 4** = viaggio a −1.000'
   preparato: 'All 3 gems lit: + Emerald earthquake 1/week; Ruby single-use SPENT at the ancient battle (≈372 DR)'
 - artefatto: Ring of Chaotic Illumination
   portatore: Artemis

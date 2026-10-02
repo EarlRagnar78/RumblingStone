@@ -1535,7 +1535,7 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/dm.py",
-      "summary": "Entrypoint unico: orchestra tutti gli script per fase del Playbook (prep/post/session/recap/handout/maps/hype/dossier/skills/doctor/bestiario). ADR-0002. Il sottocomando «volume» (ADR-0031) esegue la catena editoriale in ordine da un manifest a un volume, e chiude ricordando il cancello d'uscita IP: non e' automatizzabile, ma e' il momento in cui va detto.",
+      "summary": "Entrypoint unico: orchestra tutti gli script per fase del Playbook (prep/post/session/recap/handout/maps/hype/dossier/skills/doctor/bestiario). ADR-0002. Il sottocomando «volume» (ADR-0031) esegue la catena editoriale in ordine da un manifest a un volume, e chiude ricordando il cancello d'uscita IP: non e' automatizzabile, ma e' il momento in cui va detto. «corredo» fa lo stesso per tutti i volumi e i fogli di una serata.",
       "use_case": "«Devo fare una cosa con il repo e non ricordo quale script: da dove passo?»",
       "stability": "stable",
       "stdlib_only": true,
@@ -1544,7 +1544,7 @@
       ],
       "args": [
         {
-          "name": "prep|post|session|recap|handout|maps|hype|dossier|skills|doctor|volume|bestiario",
+          "name": "prep|post|session|recap|handout|maps|hype|dossier|skills|doctor|volume|corredo|bestiario",
           "type": "subcommand",
           "required": true,
           "default": null,
@@ -1560,10 +1560,11 @@
             "skills",
             "doctor",
             "volume",
+            "corredo",
             "bestiario"
           ],
           "repeatable": false,
-          "desc": "Sottocomando di fase; i flag sono inoltrati allo script sottostante. «volume» e' la catena dei mestieri in ordine (prosa, lingua, manifest, colophon, schermo, stampa, imposizione) e assorbe il «dm.py stampa» mai fatto. «bestiario» passa i flag a uno dei cinque script delle creature (estrai, deriva, attributi, creatura, conformita)."
+          "desc": "Sottocomando di fase; i flag sono inoltrati allo script sottostante. «volume» e' la catena dei mestieri in ordine (prosa, lingua, manifest, colophon, schermo, stampa, imposizione) e assorbe il «dm.py stampa» mai fatto. «bestiario» passa i flag a uno dei cinque script delle creature (estrai, deriva, attributi, creatura, conformita). «corredo» fa l'intero corredo della serata da un *.corredo.json: controlla i pezzi, fa ogni volume con la catena di «volume» e misura i PDF."
         }
       ],
       "inputs": [
@@ -3227,7 +3228,7 @@
       "category": "F-skill-pipeline",
       "language": "python",
       "invocation": "python3 scripts/measure_tokens.py",
-      "summary": "Misura la dimensione in token delle skill (tiktoken se disponibile, altrimenti chars/4).",
+      "summary": "Misura la dimensione in token delle skill (tiktoken se disponibile, altrimenti chars/4), contando per ogni domanda anche il preload obbligatorio dichiarato nel «load order» del SKILL.md (lotto 4j-3).",
       "use_case": "«Quanto contesto costano le skill oggi, in numeri e non a occhio?»",
       "stability": "stable",
       "stdlib_only": true,
@@ -3292,7 +3293,9 @@
       "consumes_schema": null,
       "produces_schema": null,
       "ci_smoke": null,
-      "tests": [],
+      "tests": [
+        "scripts/tests/test_measure_tokens.py"
+      ],
       "docs": [
         "scripts/README.md"
       ]
@@ -5267,7 +5270,7 @@
       "category": "D-materials",
       "language": "python",
       "invocation": "python3 scripts/validate_booklets.py --stampa",
-      "summary": "Gate dei booklet: valida ogni *.manifest.json contro schemas/booklet_manifest.schema.json, verifica che capitoli, copertina, introduzione e IMMAGINI dei master esistano, dichiara quali chiavi consuma ciascuna delle due catene (HTML e stampa) e — con --stampa — compila davvero ogni volume con typst controllando che il PDF abbia i segnalibri. È il controllo che mancava: due booklet della campagna non avevano mai compilato e tredici immagini del Palio uscivano in stampa come testo.",
+      "summary": "Gate dei booklet: valida ogni *.manifest.json contro schemas/booklet_manifest.schema.json, verifica che capitoli, copertina, introduzione e IMMAGINI dei master esistano, dichiara quali chiavi consuma ciascuna delle due catene (HTML e stampa) e — con --stampa — compila davvero ogni volume con typst controllando che il PDF abbia i segnalibri e non stampi apparato di lavoro oltre il tetto del volume (ADR-0070, con PyMuPDF). È il controllo che mancava: due booklet della campagna non avevano mai compilato e tredici immagini del Palio uscivano in stampa come testo.",
       "use_case": "«I manifest dei booklet puntano tutti a file che esistono, o ne ho rinominato uno?»",
       "stability": "stable",
       "stdlib_only": true,
@@ -5324,6 +5327,12 @@
           "kind": "markdown",
           "required": true,
           "schema": null
+        },
+        {
+          "path": "scripts/apparato-residui.json",
+          "kind": "json",
+          "required": false,
+          "schema": null
         }
       ],
       "outputs": [
@@ -5361,6 +5370,278 @@
         "docs/guides/GUIDA-BOOKLET-E-PDF.md",
         "plans/adr/ADR-0020-edizione-da-stampa-su-un-secondo-binario.md",
         "scripts/README-automation.md"
+      ]
+    },
+    {
+      "id": "validate_corredo",
+      "path": "scripts/validate_corredo.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/validate_corredo.py C.corredo.json --stampa",
+      "summary": "Il controllo del corredo della serata (norma in rumblingstone-automation, «Il corredo della serata»): da un *.corredo.json verifica che ci siano il booklet del DM, il volume dei fogli da consegnare, gli eventuali volumi di approfondimento, gli echi di ogni PG, le carte e gli handout, e che i fogli ✉ stiano solo nel volume dei giocatori e che nessun capitolo si stampi in due volumi del corredo (ADR-0070); che ogni blocco img dei prompt abbia la sua immagine e la sua riga nel confronto immagine-scheda; che nessun box read-aloud superi le 12 righe nel testo che va in stampa. Con --stampa compila ogni volume e misura il PDF: righe di testo sovrapposte e testo a meno di 30 pt dal bordo (PyMuPDF, facoltativo: senza, la misura si dichiara saltata).",
+      "use_case": "«Ho detto genera il booklet: è uscito tutto quello che serve alla serata, e i PDF sono buoni?»",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [
+        "typst"
+      ],
+      "args": [
+        {
+          "name": "corredo",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "I file *.corredo.json (default: tutti quelli del repo)."
+        },
+        {
+          "name": "--stampa",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Compila ogni volume con typst e misura il PDF; toglie i PDF che prima non c'erano."
+        },
+        {
+          "name": "--pdf",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Misura i PDF -STAMPA.pdf già compilati, senza ricompilarli: è il passo finale di dm.py corredo --stampa."
+        },
+        {
+          "name": "--rigoroso",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Una misura saltata (typst o PyMuPDF assente) è rossa."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esito machine-readable su stdout."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "**/*.corredo.json",
+          "kind": "json",
+          "required": true,
+          "schema": "scripts/schemas/corredo_serata.schema.json"
+        },
+        {
+          "path": "i manifest, i master e i file dei prompt citati dal corredo",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "scripts/apparato-residui.json",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "stdout (o JSON con --json)",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "corredo completo",
+        "1": "un pezzo mancante o difettoso",
+        "2": "uso errato"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "I corredi in ordine alfabetico; nessun wallclock nell'output."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": "scripts/schemas/corredo_serata.schema.json",
+      "produces_schema": null,
+      "ci_smoke": "python scripts/validate_corredo.py --help",
+      "tests": [
+        "scripts/tests/test_corredo.py"
+      ],
+      "docs": [
+        "skills/rumblingstone-automation/SKILL.md",
+        "scripts/README-automation.md"
+      ]
+    },
+    {
+      "id": "incorpora_immagini_artefatti",
+      "path": "scripts/incorpora_immagini_artefatti.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/incorpora_immagini_artefatti.py [--check]",
+      "summary": "Mette l'immagine di ogni artefatto dentro la sua pagina viva (ADR-0072): legge PG/Artefatti/immagini-artefatti.json e il registro delle pagine vive di ARTEFATTI-MATRICE-VERSIONI.md §0, riduce il master a 480 px, lo ricomprime in webp qualità 72 e lo inserisce come data: URI sotto la testata, marcato data-immagine-artefatto. Rilanciato sostituisce e non duplica; un <img> relativo senza voce nel JSON lo incorpora allo stesso modo. I master restano file e non li tocca.",
+      "use_case": "«Ho rigenerato una scheda di un artefatto: l'immagine c'è ancora, e la pagina si passa a un giocatore come un file solo?»",
+      "stability": "stable",
+      "stdlib_only": false,
+      "external_bins": [],
+      "external_deps": [
+        "pillow"
+      ],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Non scrive; esce 1 se una pagina va rifatta. Non serve Pillow."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "PG/Artefatti/immagini-artefatti.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "PG/Artefatti/Artefatti-Pg/**/*.html",
+          "kind": "html",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "pagine da rifare (--check) o Pillow assente"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Stessa versione di Pillow, stessi byte."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/incorpora_immagini_artefatti.py --check",
+      "tests": [
+        "scripts/tests/test_immagini_artefatti.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0072-la-scheda-porta-la-sua-immagine-dentro.md"
+      ]
+    },
+    {
+      "id": "copertura_scene",
+      "path": "scripts/copertura_scene.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/copertura_scene.py [--check] [--file X.md [--contratto]]",
+      "summary": "Metà deterministica dello strumento lettore e playtester (ADR-0073): in ogni master DEF e stand-alone controlla che ogni scena abbia un box read-aloud (C1) e che chi ha un'etichetta di battuta abbia una scheda d'entrata o una riga nel foglio del cast (C2). Nei moduli che adottano il contratto «In scena — Dove: … — Chi: …» controlla che ogni luogo abbia un box con quel luogo nell'etichetta e ogni persona una scheda o una riga fra le Comparse (C3), e che nessuna scheda o battuta stia fuori dall'elenco (C4). Profili e residui dichiarati in plans/copertura-scene.json; un master DEF non dichiarato prende il profilo severo.",
+      "use_case": "«Stasera porto questo modulo al tavolo: c'è scritto com'è ogni posto in cui i PG entrano e chi ci trovano, o dovrò inventarlo?»",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cancello CI: esce 1 sui rilievi non dichiarati e sui residui scaduti."
+        },
+        {
+          "name": "--file",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Analizza un file qualunque, senza residui (calibrazione su versioni vecchie)."
+        },
+        {
+          "name": "--contratto",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con --file: applica anche il contratto In scena (C3, C4)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/copertura-scene.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "**/ARC*-DEF-*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "rilievi non dichiarati o residui scaduti (--check)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Solo testo e regex; il rilevatore dei box è quello di misura_craft."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/copertura_scene.py --check",
+      "tests": [
+        "scripts/tests/test_copertura_scene.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0073-chi-e-dove-sta-scritto-nella-scena.md",
+        "skills/rumblingstone-playtest/references/lettore-a-freddo.md",
+        "skills/rumblingstone-playtest/references/playtester-a-freddo.md"
       ]
     },
     {
@@ -5456,7 +5737,7 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/validate_lingua.py",
-      "summary": "Refusi meccanici dell'italiano nel contenuto: accenti (perche' -> perche acuto, ne', se stesso), po' con apostrofo, qual e', d eufonica davanti a consonante, spazio prima della punteggiatura, doppi spazi. Salta blocchi di codice, inline, URL, front-matter e guide alla pronuncia. Non bloccante in CI finche' il rumore non e' a zero; --strict alza gli avvisi a errori.",
+      "summary": "Refusi meccanici dell'italiano nel contenuto: accenti (perche' -> perche acuto, ne', se stesso), po' con apostrofo, qual e', d eufonica davanti a consonante, spazio prima della punteggiatura, doppi spazi. Salta blocchi di codice, inline, URL, front-matter e guide alla pronuncia. Bloccante in CI sugli errori dal 2026-09-24; gli avvisi no, e --strict li alza a errori.",
       "use_case": "«Ci sono refusi meccanici di italiano, del tipo che una macchina trova meglio di me?»",
       "stability": "stable",
       "stdlib_only": true,
@@ -6620,7 +6901,7 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/contenuti_nei_rami.py --fetch",
-      "summary": "I file che esistono in un ramo o in una PR, chiuse comprese, e mai su main ne' per nome ne' per contenuto. Ogni riga deve avere un posto nel registro plans/contenuti-nei-rami.json; quelle senza posto sono il lavoro perso che si cerca (lotto 4i-2).",
+      "summary": "I file che esistono in un ramo o in una PR, chiuse comprese, e mai su main ne' per nome ne' per contenuto. Ogni riga deve avere un posto nel registro plans/contenuti-nei-rami.json; quelle senza posto sono il lavoro perso che si cerca (lotto 4i-2). Con --righe confronta riga per riga i rami nominati: vede le correzioni a file che main ha gia', che il controllo sui file non vede (lotto 4j-5).",
       "use_case": "«Si e' perso qualcosa nelle PR chiuse o nei commit spinti dopo un merge, che su main non e' mai arrivato?»",
       "stability": "stable",
       "stdlib_only": true,
@@ -6663,6 +6944,15 @@
           "choices": null,
           "repeatable": false,
           "desc": "Report in JSON."
+        },
+        {
+          "name": "--righe",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Uno o piu' rami (senza origin/): conta le righe di testo mai arrivate su main, ne' identiche ne' quasi identiche (difflib >= 0.9)."
         }
       ],
       "inputs": [
@@ -6676,7 +6966,7 @@
       "outputs": [],
       "exit_codes": {
         "0": "ogni file mai arrivato ha un posto (o nessun ramo da misurare)",
-        "1": "righe senza posto (solo con --check) o registro malformato",
+        "1": "righe senza posto (solo con --check), un ramo con righe mai arrivate (solo con --righe) o registro malformato",
         "2": "uso errato"
       },
       "determinism": {
@@ -6789,6 +7079,1195 @@
       "docs": [
         "scripts/README-automation.md",
         "campaign/DM-CAMPAIGN-PLAYBOOK.md"
+      ]
+    },
+    {
+      "id": "componenti",
+      "path": "scripts/componenti.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/componenti.py [MASTER.md [--json]] [--apparato] [--includi] [--check]",
+      "summary": "Il master DEF letto come componenti tipizzati (ADR-0074): scena, contratto In scena, box read-aloud, scheda d'entrata, comparse, battute, prove con CD. Ne ricava l'indice, genera l'apparato d'uso APPARATO-<master>.md (foglio del cast, inserto delle CD, indice dei read-aloud) e tiene allineate le copie sincronizzate fra <!-- include: fonte#blocco --> e <!-- /include --> (#statblocco prende il recinto della scheda del Bestiario).",
+      "use_case": "«Mi dai il foglio del cast e tutte le CD di questo modulo su un foglio, con i numeri di Balvar uguali a quelli del Bestiario?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "master",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Un master: stampa l'apparato (o l'indice con --json) senza scrivere."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con un master: l'indice dei componenti in JSON."
+        },
+        {
+          "name": "--apparato",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Rigenera APPARATO-<master>.md per ogni master col contratto In scena."
+        },
+        {
+          "name": "--includi",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Riscrive ogni copia sincronizzata dalla sua fonte."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cancello CI: esce 1 se un apparato o una copia non combaciano con la fonte; nessuna scrittura."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/copertura-scene.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "**/ARC*-DEF-*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<arco>/APPARATO-<master>.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        },
+        {
+          "path": "file con <!-- include: -->",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "apparato o copia non allineati (--check)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Solo testo e regex; scene, schede e box letti con copertura_scene e misura_craft."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/componenti.py --check",
+      "tests": [
+        "scripts/tests/test_componenti.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0074-il-master-come-componenti.md",
+        "skills/rumblingstone-module-standard/SKILL.md"
+      ]
+    },
+    {
+      "id": "quiz_lettura",
+      "path": "scripts/quiz_lettura.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/quiz_lettura.py --chiave K.json --appunti A.json [--aperto B.json] [--json] | --check",
+      "summary": "Punteggio del quiz a due agenti: confronta le risposte date con i soli appunti di una lettura (e a libro aperto) con la chiave plans/quiz/<modulo>.json, e divide le domande in giusta dagli appunti / giusta solo a libro aperto / sbagliata anche a libro aperto.",
+      "use_case": "«Si capisce questo modulo alla prima lettura, o bisogna rileggerlo?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--chiave",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La chiave del modulo."
+        },
+        {
+          "name": "--appunti",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Risposte date con i soli appunti (JSON {id: testo})."
+        },
+        {
+          "name": "--aperto",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Risposte date a libro aperto."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Uscita in JSON."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cancello CI: le chiavi in plans/quiz/ sono ben formate."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/quiz/*.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "chiave o risposte malformate"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Confronto per radici, numeri esatti. Non deterministico e' chi scrive le risposte, non il punteggio."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/quiz_lettura.py --check",
+      "tests": [
+        "scripts/tests/test_quiz_lettura.py"
+      ],
+      "docs": [
+        "skills/rumblingstone-playtest/references/quiz-a-due-agenti.md",
+        "plans/esperimenti/quiz-def4/RISULTATI.md"
+      ]
+    },
+    {
+      "id": "domande_developer",
+      "path": "scripts/domande_developer.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/domande_developer.py [--check] [--file X.md] [--json]",
+      "summary": "Le domande del developer di sviluppo-degli-incontri.md (dai due manuali del DM) misurate sulla forma del testo: D1 nemico in volo e chi resta a terra, D2 volo e invisibilità nei luoghi sorvegliati, D3 Tempra/Riflessi/Volontà, D4 chi sente il rumore, D5 la soglia del boss, D6 lo skill challenge scritto per intero, D6-5E abilità estranee al sistema. Indicatori: profili e residui con la ragione in plans/domande-developer.json.",
+      "use_case": "«Se i PG volano, si rendono invisibili o fanno rumore, il modulo lo dice, o dovrò inventarlo al tavolo?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cancello CI: esce 1 sui rilievi non dichiarati e sui residui scaduti."
+        },
+        {
+          "name": "--file",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Un file qualunque, senza residui (calibrazione su versioni vecchie)."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Uscita in JSON."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/domande-developer.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "plans/copertura-scene.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "**/ARC*-DEF-*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "rilievi non dichiarati o residui scaduti (--check)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Solo testo e regex; scene da copertura_scene, CD da componenti."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/domande_developer.py --check",
+      "tests": [
+        "scripts/tests/test_domande_developer.py"
+      ],
+      "docs": [
+        "skills/rumblingstone-module-standard/references/sviluppo-degli-incontri.md",
+        "plans/esperimenti/domande-developer-def4/CALIBRAZIONE.md"
+      ]
+    },
+    {
+      "language": "python",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "outputs": [],
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "id": "skill_scanner",
+      "path": "scripts/terzi/skill_scanner.py",
+      "category": "F-skill-pipeline",
+      "invocation": "python3 scripts/terzi/skill_scanner.py skills [--json]",
+      "summary": "Scanner statico di sicurezza delle skill (script scaricati e dati alla shell, rete non dichiarata, credenziali, codice offuscato), copiato identico da awesome-llm-apps (Apache 2.0, ADR-0076). Esce 1 se trova un CRITICO.",
+      "use_case": "«Una skill di questo repo contiene qualcosa che un agente non dovrebbe eseguire?»",
+      "args": [
+        {
+          "name": "path",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La skill o la cartella di skill da scansionare."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Uscita in JSON."
+        },
+        {
+          "name": "--include-fixtures",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scansiona anche le fixture di prova (opzione dell'originale)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "skills/**/*",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "nessun CRITICO",
+        "1": "almeno un CRITICO",
+        "2": "errore d'uso"
+      },
+      "ci_smoke": "python scripts/terzi/skill_scanner.py skills",
+      "tests": [
+        "scripts/tests/test_skill_scanner.py"
+      ],
+      "docs": [
+        "scripts/terzi/README.md",
+        "plans/adr/ADR-0076-adozione-da-awesome-llm-apps.md"
+      ]
+    },
+    {
+      "language": "python",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "outputs": [],
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "id": "adozioni_in_attesa",
+      "path": "scripts/adozioni_in_attesa.py",
+      "category": "G-orchestration-governance",
+      "invocation": "python3 scripts/adozioni_in_attesa.py [--check]",
+      "summary": "Le adozioni di codice o skill esterni rimandate, in plans/adozioni-in-attesa.json, ognuna con una condizione misurabile; --check esce 1 quando una condizione e' attiva e la voce dice ancora «in attesa» (ADR-0076).",
+      "use_case": "«Quella skill che avevamo rimandato: e' arrivato il momento di adottarla?»",
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cancello CI: esce 1 se una condizione e' attiva su una voce ancora in attesa."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/adozioni-in-attesa.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "condizione attiva su una voce ancora in attesa",
+        "2": "registro malformato"
+      },
+      "ci_smoke": "python scripts/adozioni_in_attesa.py --check",
+      "tests": [
+        "scripts/tests/test_adozioni_in_attesa.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0076-adozione-da-awesome-llm-apps.md"
+      ]
+    },
+    {
+      "id": "lettura_a_scene",
+      "path": "scripts/lettura_a_scene.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/lettura_a_scene.py servi <master> --corsa DIR --lettori lettore,playtester | inizia | avanti --diario … | smetti --diario … | progresso/chiudi --admin URL | diario DIR/lettore",
+      "summary": "Serve un master ai lettori a freddo una scena alla volta da 127.0.0.1: la scena dopo arriva solo dopo una riga di diario (ago, mi aspettavo, ho trovato, so adesso) e dopo il tempo per leggerla; alla chiusura scrive impronte, mai il testo. Adattato da first-reader/feed.py (Apache 2.0, ADR-0076).",
+      "use_case": "«Il lettore a freddo ha trovato davvero quello che arriva tardi, o l'ha visto perché aveva già letto la scena dopo?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "cmd",
+          "type": "str",
+          "required": true,
+          "default": null,
+          "choices": [
+            "servi",
+            "inizia",
+            "avanti",
+            "smetti",
+            "progresso",
+            "chiudi",
+            "diario"
+          ],
+          "repeatable": false,
+          "desc": "Sottocomando."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "07_il Portale Della Forgia Eterna/ARC07-DEF-*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "plans/copertura-scene.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "diario rifiutato o lettura chiusa",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "I passaggi e le impronte sono deterministici; il diario lo scrive un agente."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": false,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/lettura_a_scene.py --help",
+      "tests": [
+        "scripts/tests/test_lettura_a_scene.py"
+      ],
+      "docs": [
+        "skills/rumblingstone-playtest/references/lettore-a-freddo.md",
+        "plans/PIANO-AGENT-SKILLS-ESTERNE.md"
+      ]
+    },
+    {
+      "id": "ricordo_lettura",
+      "path": "scripts/ricordo_lettura.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/ricordo_lettura.py domande <corsa>/<lettore> | chiedi <corsa> <lettore|tutti> \"<domanda>\" | intenzione <master>",
+      "summary": "Il ricordo del giorno dopo (passo 7 del ciclo, D1 del 2026-10-01): il pacchetto per un agente nuovo con il solo diario della lettura a scene e sette domande da DM; le domande ai lettori dopo la lettura; l'intenzione dichiarata dal master contro cui si giudica. Adattato da first-reader/recall.py e ask.py (Apache 2.0, ADR-0076).",
+      "use_case": "«Cosa resta di questo modulo a chi l'ha letto una volta, e perché il lettore si è fermato alla Scena 7?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "cmd",
+          "type": "str",
+          "required": true,
+          "default": null,
+          "choices": [
+            "domande",
+            "chiedi",
+            "intenzione"
+          ],
+          "repeatable": false,
+          "desc": "Sottocomando."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "07_il Portale Della Forgia Eterna/ARC07-DEF-*.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "lettura non chiusa, o master senza intenzione dichiarata",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "I pacchetti sono deterministici; le risposte le scrive un agente."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/ricordo_lettura.py --help",
+      "tests": [
+        "scripts/tests/test_ricordo_lettura.py"
+      ],
+      "docs": [
+        "skills/rumblingstone-playtest/references/quiz-a-due-agenti.md",
+        "plans/adr/ADR-0075-il-ciclo-del-master-vale-per-ogni-piano.md"
+      ]
+    },
+    {
+      "id": "vista_di_chi_scorre",
+      "path": "scripts/vista_di_chi_scorre.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/vista_di_chi_scorre.py <master> [--json]",
+      "summary": "Il primo passo del DM a freddo (L5, D2 del 2026-10-01): il master come lo vede chi lo sfoglia, cioè la serata dichiarata, i titoli, la riga «In scena» e la prima frase di ogni scena, i grassetti, le CD con le parole prima. Il resto è tolto di proposito. Adattato da first-reader/skim.py (Apache 2.0, ADR-0076).",
+      "use_case": "«Un DM che sfoglia questo master capisce cosa succede stasera e chi si oppone?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "master",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il master da sfogliare."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La vista come dati."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "07_il Portale Della Forgia Eterna/ARC07-DEF-*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "2": "master non trovato"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "La vista è deterministica; le risposte le scrive un agente."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/vista_di_chi_scorre.py --help",
+      "tests": [
+        "scripts/tests/test_vista_di_chi_scorre.py"
+      ],
+      "docs": [
+        "skills/rumblingstone-playtest/references/dm-a-freddo.md"
+      ]
+    },
+    {
+      "id": "instradamento_skill",
+      "path": "scripts/instradamento_skill.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/instradamento_skill.py [--check] [--json] [--frase \"<richiesta>\"] [--comportamentale <cartella>]",
+      "summary": "L8 (D6 del 2026-10-01): per ogni frase vera del DM in plans/instradamento/casi.json, quali skill obbligatorie (ORCHESTRAZIONE §4) raggiungono i trigger fra virgolette delle descrizioni. Conta omissioni, skill in più e conflitti fra le due L1. Il gate è a cricchetto sul tetto del file. Dal 2026-10-01 (D10): casi esclusi e quasi-casi, collisioni fra descrizioni, il suggerimento per una frase (--frase) e la prova con agenti veri (--comportamentale), come chiedono agentskills.io e skill-creator.",
+      "use_case": "«Se il DM dice questa frase, un agente che instrada sulle descrizioni carica le skill che deve?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il gate: esce 1 sopra il tetto o con un conflitto L1."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La misura come dati."
+        },
+        {
+          "name": "--casi",
+          "type": "path",
+          "required": false,
+          "default": "plans/instradamento/casi.json",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il file dei casi."
+        },
+        {
+          "name": "--frase",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Suggerisce le skill per una frase sola."
+        },
+        {
+          "name": "--comportamentale",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cartella con le corse run*.json degli agenti."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/instradamento/casi.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "skills/*/SKILL.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "sotto il tetto",
+        "1": "sopra il tetto, conflitto L1 o tetto mancante",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Puramente lessicale."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/instradamento_skill.py --check",
+      "tests": [
+        "scripts/tests/test_instradamento_skill.py"
+      ],
+      "docs": [
+        "skills/ORCHESTRAZIONE.md"
+      ]
+    },
+    {
+      "id": "eco_decisioni",
+      "path": "scripts/eco_decisioni.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/eco_decisioni.py [--check]",
+      "summary": "L9 (D6 del 2026-10-01): due o più decisioni chiuse nella stessa data, nello stesso piano, vogliono il blocco d'eco <!-- eco: ETICHETTA DATA --> con Decise, Aperte, Cambiate e Dedotto da me. Legge le tabelle di decisioni_dm.py.",
+      "use_case": "«Il DM ha chiuso sette decisioni in un messaggio: ho scritto cosa ho capito, e cosa ho aggiunto io?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se un'eco manca o è incompleta."
+        },
+        {
+          "name": "--radice",
+          "type": "path",
+          "required": false,
+          "default": ".",
+          "choices": null,
+          "repeatable": false,
+          "desc": "La radice del repo (per i test)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "eco mancante o incompleta (con --check)",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/eco_decisioni.py --check",
+      "tests": [
+        "scripts/tests/test_eco_decisioni.py"
+      ],
+      "docs": [
+        "skills/rumblingstone-plans/SKILL.md"
+      ]
+    },
+    {
+      "id": "registro_letture",
+      "path": "scripts/registro_letture.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/registro_letture.py [--check] | --registra <master> --ruolo lettore|playtester|dm --corsa DIR [--rapporto R.md] | --sola-forma <master> --ragione … | --confronta A B",
+      "summary": "Il registro delle letture a freddo dei master DEF (D26): impronta del testo letto e stato di ogni rilievo 🔴/🟠. Il cancello e' in avviso finche' un master non ha le letture con impronta di lettore e playtester, poi blocca da solo una lettura scaduta o un rilievo senza stato (D4). --confronta mette due letture affiancate, scena per scena.",
+      "use_case": "«Questo master e' cambiato dopo l'ultima lettura a freddo? Ogni rilievo grave ha avuto una risposta?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il cancello: avviso, poi bloccante master per master."
+        },
+        {
+          "name": "--registra",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Aggiunge la lettura di una corsa di lettura_a_scene.py."
+        },
+        {
+          "name": "--sola-forma",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Dichiara un cambio di sola forma, con la ragione."
+        },
+        {
+          "name": "--confronta",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Due cartelle di lettura, affiancate."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/letture-a-freddo.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "plans/letture-a-freddo.json",
+          "kind": "json",
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok o avviso",
+        "1": "un master sotto cancello ha una lettura da rifare",
+        "2": "registro malformato"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Impronte SHA-256 e conteggi; la data di registrazione e' quella del giorno."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/registro_letture.py --check",
+      "tests": [
+        "scripts/tests/test_registro_letture.py"
+      ],
+      "docs": [
+        "plans/PIANO-AGENT-SKILLS-ESTERNE.md",
+        "plans/PIANO-LETTORE-E-PLAYTESTER.md"
+      ]
+    },
+    {
+      "id": "voto_scrittura",
+      "path": "scripts/voto_scrittura.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/voto_scrittura.py [FILE --caso SNN] [--corse] [--emit] [--check]",
+      "summary": "L11 (D11 del 2026-10-01): il voto deterministico sui testi scritti con e senza le skill di scrittura. Ogni controllo chiama un rilevatore che esiste (misura_craft, validate_prosa) e una norma registrata; i casi in plans/scrittura/casi.json seguono lo schema di evals.json di skill-creator, a metà fra taratura e verifica. «Sembra/pare» è un controllo dal 2026-10-01 (D13); dal 2026-10-02 comprende participio e passato remoto.",
+      "use_case": "«Un agente che carica la skill di scrittura rispetta le norme registrate più di uno che non la carica?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "file",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Un testo da votare."
+        },
+        {
+          "name": "--caso",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "L'id del caso per il file (S01…)."
+        },
+        {
+          "name": "--corse",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La tabella delle corse."
+        },
+        {
+          "name": "--emit",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scrive plans/scrittura/voti.json."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se voti.json non corrisponde alle corse."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/scrittura/casi.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "plans/scrittura/corse/*/*.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "plans/scrittura/voti.json",
+          "kind": "json",
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "voti.json non allineato (--check)",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Dipende solo dai testi delle corse e dai rilevatori."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/voto_scrittura.py --check",
+      "tests": [
+        "scripts/tests/test_voto_scrittura.py"
+      ],
+      "docs": [
+        "plans/PIANO-AGENT-SKILLS-ESTERNE.md"
+      ]
+    },
+    {
+      "id": "ciclo_prosa",
+      "path": "scripts/ciclo_prosa.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/ciclo_prosa.py {segnala FILE [--languagetool URL] | revisione ORIGINALE RISCRITTO [-o REVISIONE.md] | applica REVISIONE.md --data AAAA-MM-GG [--auto]}",
+      "summary": "L12 (D15 e D16 del 2026-10-02, ADR-0077): dal segnalare al correggere, con una revisione a due giri come fra revisore e autore. `segnala` riusa i rilevatori registrati e aggiunge la regola «debole da solo» di Humanizer (tic minori diversi nello stesso paragrafo); `revisione` scrive il documento da approvare, con ogni modifica in CriticMarkup, numerata, motivata da una norma, e le due garanzie (nessun controllo peggiora, nessun fatto cambia); `applica` porta nell'originale solo le modifiche spuntate, mai su main, e alza la riga `revisione-testo: rN`. Il documento riporta anche la lettura prima e dopo (indice Gulpease e ritmo delle frasi); con `--auto` si applicano senza lettore le modifiche motivate che, da sole, non cambiano un fatto, non peggiorano un controllo e non peggiorano la lettura, e il documento le segna `[x] auto`. LanguageTool (LGPL) è un servizio facoltativo, mai in CI.",
+      "use_case": "«Cosa è cambiato rispetto all'originale, perché, e cosa resta da correggere dopo che ho approvato?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "segnala FILE",
+          "type": "subcommand",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Primo giro: i passaggi da correggere, con la norma e il rimedio."
+        },
+        {
+          "name": "revisione ORIGINALE RISCRITTO",
+          "type": "subcommand",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il documento di revisione da approvare modifica per modifica."
+        },
+        {
+          "name": "-o",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Dove scrivere il documento di revisione (altrimenti a schermo)."
+        },
+        {
+          "name": "applica REVISIONE",
+          "type": "subcommand",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Secondo giro: applica le modifiche spuntate e rimisura."
+        },
+        {
+          "name": "--data",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La data della riga di revisione: non si deduce (ADR-0023)."
+        },
+        {
+          "name": "--languagetool",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "URL di un server LanguageTool: aggiunge le segnalazioni grammaticali (facoltativo)."
+        },
+        {
+          "name": "--auto",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Applica anche le modifiche segnate «auto» e lo scrive nel documento di revisione."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "*.md",
+          "kind": "markdown",
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "REVISIONE-*.md",
+          "kind": "markdown",
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "la revisione peggiora un controllo o cambia un fatto; applica rifiutata (main, impronta, fatti)",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Dipende solo dai testi in ingresso, dai rilevatori e dal registro dei nomi; applica legge il ramo git."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/ciclo_prosa.py --help",
+      "tests": [
+        "scripts/tests/test_ciclo_prosa.py"
+      ],
+      "docs": [
+        "plans/PIANO-AGENT-SKILLS-ESTERNE.md",
+        "plans/adr/ADR-0077-revisione-a-due-giri.md"
+      ]
+    },
+    {
+      "id": "indice_references",
+      "path": "scripts/indice_references.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/indice_references.py {--emit | --check}",
+      "summary": "L12 (ADR-0077 §9): l'indice in testa a ogni reference delle skill oltre le 100 righe, generato dai titoli fra due marcatori, come chiede la guida di Anthropic sulle skill. Un agente che legge solo l'inizio vede cosa c'è e apre la sezione che serve. Esclusa la skill vendorizzata rumblingstone-debugging.",
+      "use_case": "«Un agente che legge le prime righe di un reference sa cosa contiene il resto?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--emit",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scrive o aggiorna gli indici."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se un indice manca o è vecchio."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "skills/*/references/*.md",
+          "kind": "markdown",
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "skills/*/references/*.md",
+          "kind": "markdown",
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "un indice manca o è vecchio (--check)",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Dipende solo dai titoli dei references."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/indice_references.py --check",
+      "tests": [
+        "scripts/tests/test_indice_references.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0077-revisione-a-due-giri.md"
       ]
     }
   ]

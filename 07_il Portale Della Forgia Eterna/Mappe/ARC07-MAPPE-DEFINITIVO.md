@@ -382,8 +382,8 @@ LEGENDA · A1-A8 affreschi 8×5 m (vetro indistruttibile) · 🔲 colonne sacre
 ════════════════════════════════════════════════════════════════════════
 @north S
 COL →   A  B  C  D  E  F  G  H  I  J
-13     ⬛ 🗿 🗿 📜 🌀 📜 🗿 🗿 ⬛ ⬛   NORD · 📜 muro→PARETE della CRONACA · 🌀 portale drow SIGILLATO (dietro)
-12     🔲 ⬛ 🔲 ⬛ 👑 👑 ⬛ 🔲 ⬛ 🖼️   👑 TRONO (E-F12, VUOTO: la Corona è di Thorik) · 🖼️ Dipinti Invisibili
+13     ⬛ 🗿 🗿 📜 🌀 📜 🗿 🗿 ⬛ ⬛   NORD · 📜 PARETE della CRONACA · 🌀 portale, dietro
+12     🔲 ⬛ 🔲 ⬛ 👑 👑 ⬛ 🔲 ⬛ 🖼️   👑 TRONO E-F12, vuoto · 🖼️ Dipinti Invisibili
 11     🔲 ⬛ 🔲 ⬛ ✝️ ⬛ ⬛ 🔲 🪨 🖼️   ✝️ E11 = dove sedeva Belkram (ARC-06) · 🪨 macerie
 10     🔲 ⬛ 🔲 ⬛ ⬛ ⬛ ⬛ 🔲 ⬛ ⬛   B10 = ex nascondiglio Yochlol 2
 09     ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛   H09 = ex nascondiglio Yochlol 1
@@ -393,16 +393,18 @@ COL →   A  B  C  D  E  F  G  H  I  J
 05     ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
 04     ⬛ ⬛ 🔲 ⬛ ⬛ ⬛ 🔲 ⬛ ⬛ ⬛
 03     ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
-02     ⬛ ⬛ ⬛ 🚪 🚪 🚪 ⬛ ⬛ ⬛ ⬛   🚪 INGRESSO (D-F02, sud · collegamento P1 ↔ Sala della Forgia)
+02     ⬛ ⬛ ⬛ 🚪 🚪 🚪 ⬛ ⬛ ⬛ ⬛   🚪 INGRESSO sud D-F02, verso la Sala della Forgia
 01     ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛   SUD
 ════════════════════════════════════════════════════════════════════════
 LEGENDA · ⬛ pavimento (ora pulito) · 🔲 colonne parallele (copertura +4 CA,
 spezzano la linea di vista) · 🗿 statue di Moradin (deturpate in ARC-06 → in
-restauro) · 🗿 in B13/H13/A08/I08 = alcove-nicchie (statue del culto deturpate, in restauro); in C13/G13/A06/I06 = statue dei re · 🪨 macerie (terreno difficile) · 📜 muro dietro il
-trono = ora PARETE della CRONACA (incisioni-specchio, DEF-2 §6) · 🌀 portale
-drow SIGILLATO (dietro il muro; inerte dalla caduta di Urialle) · 👑 trono
-vuoto · 🖼️ Dipinti Invisibili (J11-J12, come in ARC-06) · ✝️ postazione di
-Belkram (ARC-06) · 🚪 ingresso sud.
+restauro) · 🗿 in B13/H13/A08/I08 = alcove-nicchie (statue del culto
+deturpate, in restauro); in C13/G13/A06/I06 = statue dei re · 🪨 macerie
+(terreno difficile) · 📜 muro dietro il trono = ora PARETE della CRONACA
+(incisioni-specchio, DEF-2 §6) · 🌀 portale drow SIGILLATO (dietro il muro;
+inerte dalla caduta di Urialle) · 👑 trono vuoto: la Corona è di Thorik ·
+🖼️ Dipinti Invisibili (J11-J12, come in ARC-06) · ✝️ postazione di Belkram
+(ARC-06) · 🚪 ingresso sud, collegamento P1 ↔ Sala della Forgia.
 ```
 - **Tipo / scala**: hub scenico specchio, 10×13 (15×19,5 m), 1,5 m/quadretto.
   Ora **santuario sicuro** (Consacrare) — il *desecrate* di ARC-06 è dissolto.
@@ -519,47 +521,53 @@ veloce · SKULLCRUSHER entra dall'alto sul cortile interno → M7-B.
   Sala del Trono (Zona 1).
 - **Tattiche PG (infiltrazione, skill challenge «Mare di Nemici»)**: muoversi di
   copertura in copertura (tende), evitare/neutralizzare i GP; tabella d6 di
-  complicazioni (pattuglie, lupi, hobgoblin) in DEF-4 §3. Fallire → allarme
-  (l'orda si sveglia). Scelta se affrontare Zog'tar (§4-bis) o aggirarlo.
+  complicazioni (pattuglie, lupi, hobgoblin) in DEF-4 Scena 6. Fallire → allarme
+  (l'orda si sveglia). Scelta se affrontare Zog'tar (Scena 8, mappa M7-C) o aggirarlo.
 - **Evoluzione**: raggiunto il cortile all'alba → **Skullcrusher** entra dall'alto → M7-B.
-- **Riferimento**: DEF-4 §1-bis, §3, §4-bis, §5.
+- **Riferimento**: DEF-4 Scene 2-9; la tenda del comando è la mappa M7-C (`ARC07-MAPPE-M7C-TENDA-DEL-COMANDO.md`).
 
 ## MAPPA M7-B — L'ARENA DEL DUELLO: SKULLCRUSHER IL NERO (tattica BOSS · GS 12)
 
 ```
 ════════════════════════════════════════════════════════════════════════
  CORTILE INTERNO — 36 m × 27 m (24 col × 18 righe · 1,5 m) · cielo aperto
- Skullcrusher entra da V1 (quota ~45 m) e picchia. PG partono da riga 16-17.
+ Skullcrusher entra da V1 (quota ~45 m) e picchia. PG partono dalla riga 16.
 ════════════════════════════════════════════════════════════════════════
 COL →  A B C D E F G H I J K L M N O P Q R S T U V W X
-01    ☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️🐉☁️☁️  ← 🐉 Skullcrusher (quota ~45 m, V1)
-02    ☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️     ZONA AEREA (solo volo/gittata)
+01    ☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️⚫☁️☁️   Skullcrusher in quota, circa 45 m (V1)
+02    ☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️   zona aerea: serve volo o gittata
 03    ☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️☁️
-04    🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰  ← camminamenti +4,5 m (arcieri nani)
+04    🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰   camminamenti +4,5 m, arcieri
 05    🏰🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🏰
-06    🏰🟫🟫🟫▓▓🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫▓▓🟫🟫🟫🟫🟫🏰  ← ▓ macerie (copertura +4 CA)
+06    🏰🟫🟫🟫🪨🪨🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🪨🪨🟫🟫🟫🟫🏰   macerie: copertura +4 CA
 07    🏰🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🏰
 08    🏰🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🏰
-09    🏰🟫🟫🟫🟫🟫🟫🟫🟫🟫⬛⬛⬛🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🏰  ← ⬛ impronta d'atterraggio (4,5 m)
-10    🏰🟫🟫🟫🟫🟫🟫🟫🟫🟫⬛⬛⬛🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🏰
-11    🏰🟫🟫🟫🟫🟫🟫🟫🟫🟫⬛⬛⬛🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🏰
-12    🏰🟫🟫🟫▓▓🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫▓▓🟫🟫🟫🟫🟫🏰
+09    🏰🟫🟫🟫🟫🟫🟫🟫🟫🟫⚔⚔⚔🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🏰   impronta del drago, 4,5 m
+10    🏰🟫🟫🟫🟫🟫🟫🟫🟫🟫⚔⚔⚔🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🏰
+11    🏰🟫🟫🟫🟫🟫🟫🟫🟫🟫⚔⚔⚔🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🏰
+12    🏰🟫🟫🟫🪨🪨🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🪨🪨🟫🟫🟫🟫🏰
 13    🏰🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🏰
 14    🏰🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🏰
 15    🏰🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🏰
-16    🏰🟫🟫🛡️🟫🟫🥋🟫🟫🟫🟫👑🟫🟫🟫🟫🔮🟫🟫🌙🟫🟫🟫🏰  ← 🛡️Thorik 🥋Tordek 🔮Artemis 🌙Hella
-17    🏰🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🏰    👑 Re Thorek I (alle spalle; 8 pf se Sc.4 fallita)
+16    🏰🟫🟫🔵🟫🟫🔵🟫🟫🟫🟫🔵🟫🟫🟫🟫🔵🟫🟫🔵🟫🟫🟫🏰   i 4 PG e Re Thorek I
+17    🏰🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🏰
 18    🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰🏰
 ════════════════════════════════════════════════════════════════════════
-LEGENDA · ☁️ zona aerea (serve volo o gittata) · 🐉 Skullcrusher (quota) ·
-⬛ impronta d'atterraggio (Enorme) · 🟫 cortile · ▓ macerie (copertura +4) ·
-🏰 mura/camminamenti (+4,5 m, arcieri nani) · 👑 Re Thorek I · 🛡️🥋🔮🌙 i 4 PG.
+LEGENDA · ☁️ zona aerea (serve volo o gittata) · ⚫ Skullcrusher · ⚔ impronta
+d'atterraggio del drago (Enorme) · 🟫 cortile · 🪨 macerie (copertura +4) ·
+🏰 mura e camminamenti (+4,5 m, arcieri nani) · 🔵 PG e Re Thorek I.
+@mark 1 ; V1 ; Skullcrusher (quota ~45 m)
+@mark 2 ; D16 ; Thorik
+@mark 3 ; G16 ; Tordek
+@mark 4 ; L16 ; Re Thorek I (8 pf se la Scena 10 è andata male)
+@mark 5 ; Q16 ; Artemis
+@mark 6 ; T16 ; Hella, con Durik accanto
 ```
 - **Tipo / scala**: tattica BOSS, 24×18. **Skullcrusher il Nero, GS 12** (capostipite
   di Fauci di Palude). Cielo aperto.
 - **Terreno & altitudini**: **zona aerea** ☁️ (righe 01-03, quota; il drago vi resta:
   serve **volo o gittata**); **camminamenti +4,5 m** 🏰 (arcieri nani, copertura e
-  altezza); **macerie** ▓ (copertura +4 CA) al suolo; **impronta d'atterraggio** ⬛
+  altezza); **macerie** 🪨 (copertura +4 CA) al suolo; **impronta d'atterraggio** ⚔
   (dove il drago Enorme si posa se scende).
 - **Posizioni iniziali**: PG a riga 16 (Thorik D16, Tordek G16, Artemis Q16, Hella
   T16); **Re Thorek I** dietro (riga 17). Skullcrusher a V1, quota ~45 m.
@@ -571,7 +579,7 @@ LEGENDA · ☁️ zona aerea (serve volo o gittata) · 🐉 Skullcrusher (quota)
   scagliata** (cicatrice d'ala → B4), tiri dai camminamenti; oppure colpirlo
   dall'alto. Proteggere Re Thorek I (se Sc.4 fallita, è a 8 pf). 3 esiti aperti.
 - **Evoluzione**: alla vittoria il **Rubino si accende** (D5/D16) → ritorno (CM-1/DEF-5).
-- **Riferimento**: DEF-4 §5 (+ carry-over B4).
+- **Riferimento**: DEF-4 Scena 11 (+ carry-over B4).
 
 ---
 

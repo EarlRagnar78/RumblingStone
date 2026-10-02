@@ -57,7 +57,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from dmcore.testo import riscala_link  # noqa: E402
+from dmcore.testo import capitoli_del_volume, leggi_per_la_stampa, riscala_link, togli_storico  # noqa: E402
 
 # ---------------------------------------------------------------------------
 # Lo stile «pergamena» canonico (identico all'anteprima visiva e all'artefatto
@@ -343,6 +343,8 @@ def md_to_html(md: str, base: Path) -> str:
     """Convertitore markdown→HTML minimale ma fedele ai master del repo:
     heading, tabelle, citazioni (→ cornice .desc), liste, code fence
     (→ blocco mono per le mappe ASCII), immagini (SVG inline / data-URI)."""
+    # La storia delle scelte non va in stampa (stessa funzione della catena Typst).
+    md = togli_storico(md)
     md = re.sub(r"<!--.*?-->", "", md, flags=re.S)
     lines = md.splitlines()
     out: list[str] = []
@@ -531,10 +533,12 @@ def build(manifest_path: Path, out_override: Path | None = None) -> Path:
     cover_img = ""
     if mf.get("cover_image"):
         cover_img = img_html(title, mf["cover_image"], base)
+    # I rimandi a un master diventano il suo capitolo in questo volume (ADR-0070).
+    capitoli = capitoli_del_volume(base, mf)
     intro_html = ""
     if mf.get("intro_md"):
         p = base / mf["intro_md"]
-        intro_html = f'<div class="sheet">{md_to_html(p.read_text(encoding="utf-8"), p.parent)}' \
+        intro_html = f'<div class="sheet">{md_to_html(leggi_per_la_stampa(p, capitoli), p.parent)}' \
                      f'<div class="pagefoot"><span>{html.escape(footer)}</span>' \
                      f'<span class="n">1</span></div></div>'
 
@@ -563,7 +567,7 @@ def build(manifest_path: Path, out_override: Path | None = None) -> Path:
     tabs = ['<button role="tab" aria-selected="true" data-pane="c0">Copertina</button>']
     for k, ch in enumerate(mf["chapters"], 1):
         p = base / ch["file"]
-        body = md_to_html(spoglia_homebrewery(p.read_text(encoding="utf-8")), p.parent)
+        body = md_to_html(spoglia_homebrewery(leggi_per_la_stampa(p, capitoli)), p.parent)
         tag = TAGS.get(ch.get("tag", ""), "")
         foot = player_footer if ch.get("tag") == "player" else footer
         tabs.append(f'<button role="tab" aria-selected="false" data-pane="c{k}">'
@@ -651,8 +655,10 @@ def build_hb(manifest_path: Path, out_override: Path | None = None) -> Path:
     out = html_out.parent / (stem + ".hb.md")
     dest = out.resolve().parent
 
+    capitoli = capitoli_del_volume(base, mf)
+
     def _incorpora(sorgente: Path) -> str:
-        return riscala_link(sorgente.read_text(encoding="utf-8"),
+        return riscala_link(togli_storico(leggi_per_la_stampa(sorgente, capitoli)),
                             sorgente.resolve().parent, dest)
 
     if mf.get("intro_md"):

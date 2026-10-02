@@ -14,7 +14,7 @@ velocita: 15 m (Monk fast movement)
 **Classe:** Monk 9 / Cleric 2 (di Ilmater) — GS 10
 **Allineamento:** Legale Buono
 **Età:** 64 (giovane-matura per mezz'elfa)
-**Ruolo:** PNG di passaggio. Messaggera ufficiale della **Confraternita Monastica di Dauth** + **Sovrintendente Tordek di Dauth**. Inviata al **Sacred Forest** per cercare un **famoso guerriero elfico** (vedi §3) e invitarlo al Torneo delle Otto Porte. Si imbatte in **Tordek Stonefist** (PG) per coincidenza fortuita.
+**Ruolo:** PNG di passaggio. Messaggera ufficiale della **Confraternita Monastica di Dauth** + **Sovrintendente Tordek di Dauth**. Inviata al **Sacred Forest** per cercare un **famoso guerriero elfico** (vedi §3) e invitarlo al Torneo delle Otto Porte. Si imbatte in **Tordek Durinheart** (PG) per coincidenza fortuita.
 **File correlati:** `Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md`; `Bestiario/png/Lythiel/Lythiel.md`; `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md`.
 
 ---
@@ -98,7 +98,7 @@ Diplomazia +12, Sapienza Religione +9, Concentrazione +12, Ascoltare +14, Percep
 1. **Aeleth Verdebronzo** (Elf Ranger 11) — guerriero leggendario del **Sacred Forest**. Si dice che combatta "danzando con le ombre". Vive presso il Cerchio della Quercia Vecchia. **PRIMA TAPPA di Maewen.**
 2. **Maestro Brand di Talar** (Human Fighter 9) — campione di pugilato. Talar è stata saccheggiata 2 giorni fa (Day 21) — Maewen non lo sa ancora. Quando arriverà, troverà ceneri.
 3. **Suora Voryn dei Nove Sogni** (Tiefling Monk 8) — eremita nelle colline ovest di Dauth. Maewen la cercherà dopo Talar.
-4. **"Il Pugno di Pietra del Nord"** (descrizione anonima — un guerriero monaco di Hammerfist riconosciuto in cerimonia). **Questo nome corrisponde a Tordek Stonefist (PG)**. La Confraternita lo conosce di fama dalla notizia di Hammerfist arrivata 4 giorni fa. **Maewen NON sa il nome esatto** e non sa dove cercarlo — la sua mappa dice solo "Hammerfist o dove va".
+4. **"Il Pugno di Pietra del Nord"** (descrizione anonima — un guerriero monaco di Hammerfist riconosciuto in cerimonia). **Questo nome corrisponde a Tordek Durinheart (PG)**. La Confraternita lo conosce di fama dalla notizia di Hammerfist arrivata 4 giorni fa. **Maewen NON sa il nome esatto** e non sa dove cercarlo — la sua mappa dice solo "Hammerfist o dove va".
 5. **Capitano Rhydan di Brindol** (Human Fighter 10) — comandante della guardia urbana. Brindol è ancora in piedi (Maewen lo riconfermerà di passaggio) ma sta per essere assediata.
 
 ### Perché atterra al Sacred Forest
@@ -129,7 +129,7 @@ Maewen si avvicina, presenta sé stessa, chiede conferma del nome, e **offre l'i
 >
 > *"Il Torneo è **aperto a tutti i guerrieri valorosi** che superano le prove preliminari. Le prove sono **disegnate per testare le abilità tipiche di un monaco** — equilibrio, resistenza alla fatigue, agilità su piattaforme rotanti, riflessi sotto pressione, grappling. **Chi non è monaco può partecipare, ma sarà svantaggiato** in queste prove specifiche."*
 >
-> *"Il Sovrintendente Tordek e il Magister Veylan invitano formalmente i guerrieri di valore comprovato. Il Custode Eterno Tordek Stonefist [se Tordek è presente] è uno di loro."*
+> *"Il Sovrintendente Tordek e il Magister Veylan invitano formalmente i guerrieri di valore comprovato. Il Custode Eterno Tordek Durinheart [se Tordek è presente] è uno di loro."*
 >
 > *"Da qui a Dauth, a cavallo veloce, sono **3 giorni**. Più 1 giorno di assestamento. Vi consiglio di partire entro 24 ore, se intendete partecipare."*
 

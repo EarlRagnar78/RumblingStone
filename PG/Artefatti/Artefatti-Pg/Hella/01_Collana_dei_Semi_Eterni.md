@@ -6,21 +6,25 @@
 > **Stato attuale**: ⏳ **forgiatura imminente** — la Collana nasce DURANTE
 > il rituale di resurrezione P3B (prossima sessione), dai tre semi e dai
 > sacrifici del party. Questa scheda è pronta per quel momento.
+> <!-- apparato -->
 > **Fonti**: `07_.../PortaleForgia-P3B-ResurrezioneHella-COMPLETO.md`
 > (creazione e poteri base), `...HELLA-IL-VIAGGIO...-v2.md` §8-§10 (Durik
 > e integrazione), `...IL-VIAGGIO...-risultati.md` (esiti giocati del
 > viaggio dello spirito), `campaign/state.md` §6.
 > **Formato**: gemello di `../Tordek/01_Bracieri_Gemelli_di_Moradin.md`.
+> <!-- /apparato -->
 
 ---
 
 ## SCHEDA GIOCATORE – VERSIONE 1
 ### "La Collana dei Tre Semi"
 
+> <!-- storico -->
 > **📄 Handout separato (T7, 2026-07-04)**: la scheda da **dare al giocatore**
 > è ora `00_Collana-SCHEDA-GIOCATORE-STATO-ATTUALE.md` (solo poteri sbloccati,
 > 2 snapshot). Questa sezione resta nel master DM come riferimento — **non
 > consegnare questo file al giocatore** (contiene la SCHEDA COMPLETA DM sotto).
+> <!-- /storico -->
 
 ---
 
@@ -45,9 +49,9 @@ incidente.
 - Essere **Hella** (l'artefatto è nato dal SUO rituale di resurrezione:
   i semi hanno assorbito i sacrifici dei suoi compagni e il suo viaggio
   nella Soglia — non riconosce altri portatori).
-- Tipo **Ibrido Treant** attivo (se il template venisse mai soppresso o
-  rimosso, i poteri della Collana si sospendono con esso
-  `[INFERRED — needs DM confirmation]`).
+- La Collana **funziona sempre**: in forma selvatica, polimorfata, o se la
+  forma ibrida venisse soppressa. Ha le radici sotto la pelle, e non si fonde
+  nel nuovo corpo come l'equipaggiamento.
 
 ### Poteri Conosciuti (Stato: Radicata)
 
@@ -64,32 +68,33 @@ Enorme** per 10 round: +8 Forza, portata estesa, attacchi di schianto
 campagna — spesa la carica, torna disponibile all'alba.
 
 #### 4. Evocazione dei Guardiani (3/giorno – Sop, un seme per evocazione)
-Azione standard. Ogni seme attivato evoca un difensore vegetale che serve
-Hella per la durata indicata in P3B:
+Azione standard.
 
-- **Seme I e Seme II** → un **Treant di Adamantio** (statblock in P3B
-  COMPLETO — usare quello, non ricrearlo).
-- **Seme III** → **DURIK RIFORGIATO, il Guardiano di Pietra** (12 DV —
-  scheda completa in `...IL-VIAGGIO...-v2.md` §10 con la rinomina
-  Nymeria→Durik). Non è un'evocazione generica: è LUI. Non parla; i suoi
-  versi sono suoni di pietra — click, strofinio di roccia, il movimento
-  lontano di una faglia.
+- **Seme I e Seme II** → un **Treant di Adamantio** (statblocco in `DEF-3`,
+  Appendice A.2), per **1 ora**. Al massimo **due**, uno per seme.
+- **Seme III** → **Durik**, ma solo **se è stato distrutto**: Durik è sempre
+  presente (decisione S3 della serata), e il seme lo richiama subito, per un'ora.
+  All'alba è di nuovo intero, e resta.
 
-I semi spesi si "richiudono" e rigermogliano all'alba successiva
-`[INFERRED — needs DM confirmation sul ritmo di ricarica]`.
+**Due Treant insieme.** Evocarli tutti e due nello stesso momento spegne
+l'Evocazione per **un mese**: niente Treant, e Durik distrutto non si richiama
+subito (torna all'alba). Il resto della Collana non si spegne. L'unica eccezione
+è la notte a −1000, quando Hella ne evoca due all'alba.
 
-#### 5. Legame del Sogno (Continuo — solo Durik)
-Hella sente Durik nel **Sogno della Terra** come un peso familiare —
-un'impronta che è tornata a riempirsi. Finché Durik è evocato ed entro
-1,5 km, Hella conosce la sua direzione e il suo stato generale (illeso /
-ferito / distrutto). Non è telepatia: è la connessione razziale Dream
-Dwarf amplificata dal viaggio `[INFERRED — needs DM confirmation]`.
+I semi spesi si "richiudono" e rigermogliano **all'alba** successiva, come
+l'Avatar della Radice e come Durik.
+
+#### 5. Legame del Sogno → l'Empatia della pietra di Durik
+Il legame fra Hella e Durik nel **Sogno della Terra** è sulla scheda di Durik:
+*Empatia della pietra* (sente il suo umore a qualunque distanza e le manda il
+proprio, finché uno dei due ha pietra sotto i piedi) e *Legame* (ordini col
+pensiero entro 18 m).<!-- apparato --> Vedi `02_Durik_Guardiano_di_Pietra.html`.<!-- /apparato -->
 
 #### 6. I Doni dei Semi (3 slot) `[CANONE — DM 2026-09-12]`
 I tre semi custodiscono i **sacrifici che i compagni offrirono al
 rituale**, e da oggi si sa **quali**: al rito ogni PG dona **un potere del
 proprio artefatto**, che lascia quell'artefatto **per sempre** e
-**germoglia qui** (`ARC07-DEF-3` §5 — il trapianto).
+**germoglia qui**: è il trapianto, al §5 del rito di resurrezione.
 
 | Seme | Chi ha donato, e cosa | 🌱 Cosa germoglia |
 |---|---|---|
@@ -116,8 +121,9 @@ torna a 7d6. Il seme **resta germogliato**, ma non restituirà mai più.
 ## STATI FUTURI (non ancora sbloccati)
 
 Come i Bracieri di Tordek, la Collana cresce con la storia, non coi
-livelli. Percorsi previsti dal canone preparato
-`[INFERRED — si sbloccano in ARC-09, needs DM confirmation]`:
+livelli. **I momenti sono canone**: la Collana cresce al Rituale del Cerchio
+Sacro e alla Battaglia di Rethmar. **I poteri no**: le righe qui sotto sono
+direzioni, e si scrivono quando si prepara ARC-09, con la conferma del DM.
 
 | Stato | Trigger previsto | Semi di potere |
 |---|---|---|
@@ -133,12 +139,13 @@ livelli. Percorsi previsti dal canone preparato
 
 #### Lore (da rivelare gradualmente)
 
-La Collana non fu forgiata: **germogliò**. Quando il party depose i tre
-semi sull'altare della Forgia Eterna e vi aggiunse i propri sacrifici,
-il Cuore di Moradin — spendendosi per riportare Hella — non si limitò a
-riannodare un'anima a un corpo. Passò attraverso il Sogno della Terra,
-e il Sogno restituì ciò che vi era stato affidato: i sacrifici dei
-compagni (nei primi due semi) e l'Impronta di Durik (nel terzo).
+La Collana non fu forgiata: **germogliò**. I tre semi di treant erano
+posati sul corpo di Hella, sulle mani e sulla fronte (`DEF-3` §4).
+Il Cuore di Moradin, spendendosi per riportarla, non si limitò a
+riannodare un'anima a un corpo: allo Step 4 i semi germogliarono ed
+entrarono in lei. Poi ogni compagno aprì un seme con un dono del proprio
+artefatto (`DEF-3` §5), e il terzo seme prese anche l'Impronta di Durik,
+che il Sogno della Terra custodiva dalla Prova II del viaggio.
 
 Per questo la Collana non è un oggetto di Hella: è **la memoria del
 motivo per cui Hella è tornata**. I nani che conoscono il lore della
@@ -151,7 +158,7 @@ attraversato la morte una volta, per fedeltà.
 Non è senziente come i Bracieri (nessuna "voce"). Ma **ricorda**: se
 Hella tradisse il voto della Via della Radice ("io li tengo ancorati"),
 i semi smetterebbero di germogliare finché il voto non viene riaffermato
-con un atto `[INFERRED — leva narrativa per il DM, non meccanica]`.
+con un atto.
 
 ### Capitolo 2 – Scheda tecnica (DM)
 
@@ -159,10 +166,10 @@ con un atto `[INFERRED — leva narrativa per il DM, non meccanica]`.
 |---|---|
 | Categoria | Artefatto minore (non creabile, non acquistabile) |
 | Slot | Collo |
-| LI (CL) | 20° `[INFERRED]`; effetti non dissolvibili con *dispel magic*; *mordenkainen's disjunction* li sopprime 1d4 round `[INFERRED — needs DM confirmation]` |
+| LI (CL) | 20°; effetti non dissolvibili con *dispel magic*; *mordenkainen's disjunction* li sopprime 1d4 round |
 | Peso | Trascurabile (vivo: si adatta) |
 | Valore | Non quantificato ai fini WBL (ricchezza "speciale", come da audit TESORO-WBL ARC-09: gli artefatti legacy non colmano il WBL ordinario) |
-| Distruzione | Solo se tutti e tre i semi vengono spesi e poi bruciati in un fuoco che la portatrice non può percepire `[INFERRED — hook, needs DM confirmation]` |
+| Distruzione | Solo se tutti e tre i semi vengono spesi e poi bruciati in un fuoco che la portatrice non può percepire |
 
 ### Capitolo 3 – Sinergie e vincoli (per il DM, ai tavoli ARC-08/09)
 
@@ -172,14 +179,13 @@ con un atto `[INFERRED — leva narrativa per il DM, non meccanica]`.
   Hammerfist c'è un drago nero (acido, non fuoco), ma la Mano Rossa ha
   incendiari: il DM lo tenga in conto.
 - **Durik in battaglia campale (ARC-08)**: il seme III è la carta
-  emotiva della battaglia — se Durik viene distrutto in forma evocata,
-  torna nel seme e rigermoglia (non muore di nuovo)
-  `[INFERRED — needs DM confirmation]`; la scena della sua prima
-  evocazione pubblica merita un read-aloud.
+  emotiva della battaglia — se Durik viene distrutto torna polvere nel
+  seme, e all'alba è di nuovo intero (non muore di nuovo); la prima volta
+  che succede merita una scena, con un read-aloud.
 - **Fotosintesi/Empatia vegetale** sono del TIPO Ibrido Treant (P3B), non
   della Collana: se si scrive la scheda differenziale di Hella, tenerli
   separati (fonte: v2 §7 "Bonus Fisso").
-- **Regola di coerenza** (state.md §6): il Cuore di Moradin è SPESO.
+- **Regola di coerenza**: il Cuore di Moradin è SPESO.
   Nessun potere della Collana può "riattivarlo" — se un engine lo
   propone, è una violazione da segnalare.
 

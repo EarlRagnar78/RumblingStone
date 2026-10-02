@@ -346,6 +346,46 @@ def cmd_volume(args: argparse.Namespace, extra: list[str]) -> int:
     return duro
 
 
+def cmd_corredo(args: argparse.Namespace, extra: list[str]) -> int:
+    """«Genera il booklet» vuol dire il corredo intero della serata.
+
+    La norma e' `rumblingstone-automation`, «Il corredo della serata». Prima si
+    controlla che il corredo sia completo, poi si fa ogni volume con la catena
+    di `volume`, poi si misurano i PDF. Un corredo con un pezzo mancante non si
+    compila: un volume fatto senza i suoi fogli e' un volume sbagliato con
+    l'aria di essere andato bene.
+    """
+    cp = Path(args.corredo)
+    if not cp.is_absolute():
+        cp = REPO / cp
+    if not cp.is_file():
+        print(f"[dm] \u2717 corredo inesistente: {args.corredo}", file=sys.stderr)
+        return 2
+    print(f"[dm] corredo \u2014 {cp.name}: prima i pezzi")
+    if run("validate_corredo.py", str(cp), check=False):
+        print("[dm] \u2717 corredo incompleto: nessun volume compilato", file=sys.stderr)
+        return 1
+    dato = json.loads(cp.read_text(encoding="utf-8"))
+    manifest = [dato["booklet_dm"], dato["fogli_giocatori"], *dato.get("approfondimento", [])]
+    duro = 0
+    for m in manifest:
+        ns = argparse.Namespace(manifest=str(cp.parent / m), stampa=args.stampa,
+                                imposto=False, solo=None, salta=None)
+        rc = cmd_volume(ns, [])
+        # La catena Homebrewery legge lo stesso manifest: si rifà insieme, o il
+        # .hb.md racconta la versione di prima (ADR-0003).
+        rc = rc or run("build_booklet_html.py", str(cp.parent / m), "--format", "hb",
+                       check=False)
+        duro = duro or rc
+        print()
+    if duro:
+        return duro
+    if args.stampa:
+        print(f"[dm] corredo \u2014 {cp.name}: i PDF, misurati")
+        return run("validate_corredo.py", str(cp), "--pdf", check=False)
+    return 0
+
+
 def _imponi(mp: Path) -> tuple[str, str, str]:
     """Il libretto da piegare (ADR-0027). Degrada pulito: dichiara e non fallisce."""
     sys.path.insert(0, str(SCRIPTS))
@@ -632,6 +672,13 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--salta", action="append", choices=PASSI_VOLUME,
                    help="salta questi passi (ripetibile)")
 
+    p = sub.add_parser("corredo",
+                       help="il corredo intero della serata da un *.corredo.json: "
+                            "controlla i pezzi, fa ogni volume, misura i PDF")
+    p.add_argument("corredo", help="il file del corredo (.corredo.json)")
+    p.add_argument("--stampa", action="store_true",
+                   help="fai anche i PDF da stampa e misurali (sovrapposizioni, margini)")
+
     p = sub.add_parser("session",
                        help="ciclo sessione su branch-per-gruppo (ADR-0007): "
                             "end / next / status / branch")
@@ -666,7 +713,7 @@ def main(argv: list[str] | None = None) -> int:
         "prep": cmd_prep, "maps": cmd_maps, "post": cmd_post, "recap": cmd_recap,
         "handout": cmd_handout, "hype": cmd_hype, "dossier": cmd_dossier,
         "booklet": cmd_booklet, "prompts": cmd_prompts, "bestiario": cmd_bestiario,
-        "session": cmd_session, "volume": cmd_volume, "skills": cmd_skills, "doctor": cmd_doctor,
+        "session": cmd_session, "volume": cmd_volume, "corredo": cmd_corredo, "skills": cmd_skills, "doctor": cmd_doctor,
         "gruppo": cmd_gruppo,
     }[args.cmd](args, extra)
 

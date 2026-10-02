@@ -1,0 +1,35 @@
+{
+  "_nota": "Quale immagine porta ogni pagina viva degli artefatti (ADR-0072). La legge scripts/incorpora_immagini_artefatti.py, che la converte in webp e la mette DENTRO la pagina. Una pagina senza voce qui e senza <img> resta senza immagine, e il test lo segnala solo se non e' fra le mancanti dichiarate.",
+  "immagini": {
+    "corona-spenta": {"file": "PG/Artefatti/Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/Generated Image October 14, 2025 - 11_06AM.webp", "alt": "La Corona di Adamantio, con le incastonature ancora spente"},
+    "corona-accesa": {"file": "PG/Artefatti/Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/Generated Image October 14, 2025 - 11_06AM (1).webp", "alt": "La Corona di Adamantio con le tre gemme accese"},
+    "anello-antico": {"file": "PG/Artefatti/Artefatti-Pg/ringOfChaoticIllumination/anello-antico.webp", "alt": "L'Anello dell'Illuminazione Caotica com'era prima della Forgia"},
+    "anello-riforgiato": {"file": "PG/Artefatti/Artefatti-Pg/ringOfChaoticIllumination/ring-chaotic-illumination-evolved.png", "alt": "L'Anello dell'Illuminazione Caotica, riforgiato"},
+    "bracieri-fuoco": {"file": "PG/Artefatti/Artefatti-Pg/Tordek/bracieri_fuoco_v2.png", "alt": "I Bracieri Gemelli di Moradin col solo Topazio acceso"},
+    "bracieri-completi": {"file": "PG/Artefatti/Artefatti-Pg/Tordek/bracieri_completi_v2.png", "alt": "I Bracieri Gemelli di Moradin col Topazio e lo Smeraldo"},
+    "collana": {"file": "PG/Artefatti/Artefatti-Pg/Hella/collana-dei-semi-eterni.jpg", "alt": "La Collana dei Semi Eterni"},
+    "durik": {"file": "PG/Immagini/web/DurikFront2.jpg", "alt": "Durik, il guardiano di pietra"}
+  },
+  "pagine": {
+    "00-La Corona di Adamantio-ogetto&Prove/00_Corona_0_Gemme": "corona-spenta",
+    "00-La Corona di Adamantio-ogetto&Prove/01_Corona_1_Gemma": "corona-spenta",
+    "00-La Corona di Adamantio-ogetto&Prove/02_Corona_2_Gemme": "corona-spenta",
+    "00-La Corona di Adamantio-ogetto&Prove/03_Corona_3_Gemme": "corona-accesa",
+    "ringOfChaoticIllumination/01_Anello_S0_Originale": "anello-antico",
+    "ringOfChaoticIllumination/02_Anello_S1_Due_Divinita": "anello-antico",
+    "ringOfChaoticIllumination/00_Ring_Riforgiato": "anello-riforgiato",
+    "ringOfChaoticIllumination/04_Anello_S3_Caos_Ultimo": "anello-riforgiato",
+    "Tordek/04_Bracieri_Gemelli_Scheda_PG_Fuoco": "bracieri-fuoco",
+    "Tordek/06_Bracieri_S3_Chiavi_della_Forgia": "bracieri-completi",
+    "Hella/01_Collana_Radicata": "collana",
+    "Hella/03_Collana_S2_Fiorita": "collana",
+    "Hella/04_Collana_S3_Foresta_che_Cammina": "collana",
+    "Hella/02_Durik_Guardiano_di_Pietra": "durik"
+  },
+  "mancanti": {
+    "Aegis Fang/00_Aegis_Fang_Stadio0": "nessuna immagine di Aegis Fang nel repo: va commissionata (rumblingstone-art-direction)",
+    "Aegis Fang/01_Aegis_Fang_Stadio1": "come sopra",
+    "Tordek/00_Bracieri_S0_Dormienti": "nessuna immagine dei guanti dormienti: le due che ci sono hanno le gemme accese",
+    "Hella/00_Collana_S0_I_Semi": "allo stadio 0 la Collana non esiste: niente immagine, di proposito"
+  }
+}

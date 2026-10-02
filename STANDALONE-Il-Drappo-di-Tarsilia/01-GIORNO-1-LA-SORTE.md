@@ -73,8 +73,8 @@ il Bruco nel consiglio di marzo, e non l'ha nascosto a nessuno.
 ## §2 · Il rione al mattino — sei micro-scene
 
 **Tre in scena adesso, tre da distribuire dopo.** Sei micro-scene consecutive
-lasciano gli ultimi due giocatori ad aspettare venti minuti *(playtest alfa, serata
-1)*. Quindi: gioca **A, C, F** qui, e tieni **B, D, E** per i buchi del §4, quando
+lasciano gli ultimi due giocatori ad aspettare venti minuti<!-- storico --> *(playtest alfa, serata
+1)*<!-- /storico -->. Quindi: gioca **A, C, F** qui, e tieni **B, D, E** per i buchi del §4, quando
 gli altri stanno contrattando.
 
 Ognuna dà a **un** PG una cosa che gli altri non hanno. Non richiedono prove: si
@@ -171,8 +171,8 @@ combinarle.
 > bilancia dell'Oca lo verifica in pubblico: resina, legname, tessuto, grano. Un
 > giocatore che apre la borsa e offre contanti si sente rispondere, con cortesia, che
 > *«il Peso si pesa, non si conta»*. Dillo la prima volta che qualcuno ci prova, e
-> nessuno se la prenderà. *(Correzione del playtest alfa, rilievo 3: pagando in
-> contanti l'intera serata evaporava.)*
+> nessuno se la prenderà.<!-- storico --> *(Correzione del playtest alfa, rilievo 3: pagando in
+> contanti l'intera serata evaporava.)*<!-- /storico -->
 
 ### Via 1 — La resina (onesta, lenta)
 

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corona di Adamantio — VERSIONE DM (2 Gemme + Rituale 3)</title>
+    <meta name="versione-artefatto" content="corona · S2 · r6 · 2026-09-25">
+    <title>Corona di Adamantio — Stadio 2, Topazio e Smeraldo (VERSIONE DM)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
@@ -28,12 +29,26 @@
         .block-nuovo { border: 2px solid #4b5320; background: rgba(75, 83, 32, 0.07); }
         .spento { background: rgba(120, 120, 120, 0.12); border: 1px dashed #999; color: #555; }
         .spento .power-header { color: #777; }
-        .dmbox { background: rgba(139,0,0,0.05); border: 2px solid #8B0000; padding: 12px; margin: 14px 0; border-radius: 5px; }
-        .dmbox h3 { color: #8B0000; font-size: 12.5pt; margin: 0 0 8px 0; text-transform: uppercase; letter-spacing: 1px; }
-        table.led { width: 100%; border-collapse: collapse; font-size: 9.5pt; margin: 8px 0; }
-        table.led th, table.led td { border: 1px solid #b8860b; padding: 4px 7px; text-align: left; }
-        table.led th { background: rgba(184,134,11,0.18); }
+        .attesa { border: 2px dashed #8B0000; background: rgba(139, 0, 0, 0.03); }
         .incisione { text-align: center; font-family: 'Cinzel Decorative', cursive; color: #8B4513; font-size: 10.5pt; margin: 18px 0 6px 0; letter-spacing: 1px; }
+        table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 10pt; }
+        th { background: linear-gradient(135deg, #4b5320, #6b4a2e); color: white; padding: 5px 4px; border: 1px solid #654321; }
+        td { padding: 4px 6px; border: 1px solid #c9a55a; background: rgba(248, 246, 240, 0.8); vertical-align: top; }
+        tr:nth-child(even) td { background: rgba(237, 232, 220, 0.8); }
+        td.c { text-align: center; }
+        .grigio { background: rgba(220, 220, 220, 0.4); border-color: #888; margin-top: 12px; }
+        .grigio .power-header { color: #666; font-size: 11pt; }
+        .grigio .corpo { font-size: 9.5pt; color: #444; }
+        .conferma { font-family: "Courier New", monospace; font-size: 8.5pt; color: #8B0000; background: #f6e6e6; border: 1px solid #d9b0b0; padding: 1px 4px; border-radius: 3px; font-style: normal; white-space: nowrap; }
+        .dm { background: rgba(139, 0, 0, 0.04); border: 2px solid #8B0000; padding: 12px 14px; margin: 14px 0; border-radius: 5px; }
+        .dm h3 { color: #8B0000; margin: 0 0 8px 0; text-transform: uppercase; letter-spacing: 1px; font-size: 12pt; }
+        .banner { margin-top: 8px; display: inline-block; background: #8B0000; color: #f8f6f0; font-size: 9pt; font-weight: bold; letter-spacing: 2px; padding: 3px 14px; border-radius: 3px; }
+        @media print {
+            body { padding: 0; background: none; }
+            .power-block, .requirements, .dm, table, .quote { break-inside: avoid; page-break-inside: avoid; }
+            h2, .incisione { break-after: avoid; page-break-after: avoid; }
+            .solo-dm { break-before: page; page-break-before: always; }
+        }
     </style>
 </head>
 
@@ -41,14 +56,16 @@
 
     <div class="header">
         <h1 class="class-title">Corona di Adamantio</h1>
-        <div class="subtitle">Stato di Risveglio: 2 Gemme — Topazio &amp; Smeraldo</div>
-        <div style="margin-top:8px;display:inline-block;background:#8B0000;color:#f8f6f0;font-size:9pt;font-weight:bold;letter-spacing:2px;padding:3px 14px;border-radius:3px;">VERSIONE DM · NON DARE AL GIOCATORE</div>
+        <div class="subtitle">Stadio 2 — due gemme: Topazio e Smeraldo</div>
+        <div class="banner">VERSIONE DM · NON DARE AL GIOCATORE</div>
         <div class="dwarven">"La Montagna non trema, il Tempo scorre, ma la base regge."</div>
     </div>
 
+    <img data-immagine-artefatto="corona-spenta" src="data:image/webp;base64,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" alt="La Corona di Adamantio, con le incastonature ancora spente" style="display:block;margin:10px auto 16px auto;width:230px;max-width:60%;height:auto;border:2px solid #8B4513;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,0.3);">
+
     <div class="quote">
-        <strong>La Leggenda Divina</strong><br>
-        «Prima che i nani scrivessero la loro prima runa, Moradin prese un frammento del cuore del mondo. Sulla sua incudine lo forgiò non con il fuoco vivo, ma con il potere della memoria assoluta incastonata nella Pietra. Quando sia il costrutto inalterato del Tempo che il cuore della Terra Vera pulsano insieme per la prima volta nella corona, la mente del nano muta irrevocabilmente incatenandosi al suolo granitico. Egli diviene una fortezza ambulante di granitica dedizione e un immutabile pilastro per la sua gente.»
+        <strong>La Leggenda</strong><br>
+        «Prima che i nani scrivessero la loro prima runa, prima che la montagna stessa avesse un nome, Moradin prese un frammento del cuore del mondo. Sulla sua Incudine del Mondo lo forgiò non con il fuoco, ma con la memoria e con la possibilità, e ci mise dentro l'eco di ogni martello che avrebbe mai battuto. Non fece un oggetto di potere: fece un'ancora per la storia dei nani. Non è stata fatta per i re. È stata fatta per forgiarli, quando la storia rischia di finire.»
     </div>
 
     <div class="quote" style="border-left-color: #4b5320; background: rgba(75, 83, 32, 0.08);">
@@ -57,9 +74,9 @@
     </div>
 
     <div class="requirements">
-        <strong>Slot:</strong> testa (artefatto maggiore) · <strong>Peso:</strong> 1,5 kg · <strong>Legata a:</strong> Thorik<br>
-        <strong>Aura:</strong> Invocazione, Divinazione e Abiurazione travolgente [Legale, Buono]<br>
-        <strong>Livello incantatore:</strong> 20°<br>
+        <strong>Prerequisiti del portatore:</strong> nano o mezzonano · bonus di attacco base +5 · fede vera in Moradin <strong>oppure</strong> legame accertato con <em>Aegis Fang</em>.<br>
+        <strong>Slot:</strong> testa (artefatto maggiore) · <strong>Peso:</strong> 1,5 kg · <strong>Legata a:</strong> Thorik · <strong>Allineamento:</strong> Legale Buono<br>
+        <strong>Aura:</strong> Invocazione, Divinazione e Abiurazione travolgente · <strong>Livello incantatore:</strong> 20°<br>
         <strong>Rituali Leggendari completati:</strong> 1 (Difesa della Forgia) · 2 (Prova della Sala Profonda) · <strong>3 (Incudine del Mondo)</strong>
     </div>
 
@@ -69,25 +86,15 @@
         <div class="power-header">Corona di Protezione +2 <span>Rituale 1</span></div>
         <div class="mechanic">Straordinario (Str) | Sempre attivo | LI 20°</div>
         <div class="desc-text">
-            <strong>+2 di deviazione alla CA</strong>, finché la porti.
+            <strong>+2 di deviazione alla CA</strong>, finché la porti.<br>☐ <em>Se al rito di Hella hai donato la deflessione: <strong>+1</strong>, per sempre.</em>
         </div>
     </div>
 
     <div class="power-block">
         <div class="power-header">Consapevolezza della Pietra <span>Rituale 1</span></div>
-        <div class="mechanic">Soprannaturale (Sop) | Sempre attivo | Su terra o pietra naturale | LI 20°</div>
+        <div class="mechanic">Soprannaturale (Sop) | Sempre attivo | LI 20°</div>
         <div class="desc-text">
-            <em>Individuare porte segrete</em>, <em>scoprire trappole</em> e <strong>Comprendere Linguaggi</strong>, a volontà.<br>
-            Coi piedi su terra o pietra naturale: <strong>+1 morale</strong> ad attacco e danni, <strong>+2 intuizione alla CA</strong>.
-        </div>
-    </div>
-
-    <div class="power-block">
-        <div class="power-header">Intuito di Moradin <span>Rituale 2</span></div>
-        <div class="mechanic">Magico (Mag) | 1/giorno | Azione standard | Durata 10 minuti | LI 20°</div>
-        <div class="desc-text">
-            <strong>+4 intuizione</strong> alle prove di Artigianato (fabbro), sempre.<br>
-            Una volta al giorno: <em>Vista del Vero</em> per dieci minuti.
+            <em>Individuare porte segrete</em>, <em>scoprire trappole</em> e <em>comprendere linguaggi</em>, a volontà.<br>Coi piedi su terra o pietra naturale: <strong>+1 morale</strong> ad attacco e danni, <strong>+2 intuizione alla CA</strong>.
         </div>
     </div>
 
@@ -105,147 +112,199 @@
         <div class="power-header">Manto di Pietra e Spirito <span class="nuovo">nuovo</span></div>
         <div class="mechanic">Soprannaturale (Sop) | Sempre attivo | LI 20°</div>
         <div class="desc-text">
-            <strong>Mente Vuota</strong> permanente, come l'incantesimo ma soprannaturale: immune a ogni effetto mentale e alla divinazione che ti cerca. Questo vale ovunque, anche staccato da terra.<br>
-            <strong>Riduzione del danno 5/epico</strong> <span class="mechanic">[da confermare col DM: la fonte scrive «5/epic and evil»]</span><br>
-            In un <strong>Nodo Terrestre</strong>, <strong>1/mese</strong>: <em>Comunione</em> (LI 20°, azione di 1 round). Domande a Moradin; risposte sì o no.
+            <strong>Mente Vuota</strong> permanente, come l'incantesimo ma soprannaturale: sei <strong>immune a tutti gli effetti mentali</strong>, niente legge i tuoi pensieri e niente ti trova con la divinazione. Vale ovunque, anche staccato da terra.<br><strong>Riduzione del danno 5/epico e male</strong>: la supera solo un'arma che sia insieme epica e malvagia.<br>In un <strong>Nodo Terrestre</strong>, <strong>1/mese</strong>: <em>Comunione</em> con Moradin (LI 20°, un round). Risponde sì o no.
+        </div>
+    </div>
+
+    <div class="power-block">
+        <div class="power-header">Quello che ti ha dato quando l'hai messa <span>dal primo giorno</span></div>
+        <div class="mechanic">Dal momento in cui l'hai indossata | LI 13°-20°</div>
+        <div class="desc-text">
+            Insieme al +4 di Carisma, dal giorno in cui te la sei messa in testa:<ul><li><strong>Immunità alla paura</strong>, magica e naturale.</li><li><strong>Scurovisione 36 m</strong>, il doppio di quella di un nano.</li><li><strong>Aura di Comando</strong>, 1/giorno: <em>Comando</em> CD 15, soprannaturale, LI 13°.</li><li><strong>Guida di Moradin</strong>, 1/giorno: senti da che parte sta quello che la Corona cerca. Finché manca una gemma, è quella.</li></ul>
+        </div>
+    </div>
+
+    <h2>Poteri da attivare</h2>
+
+    <div class="power-block">
+        <div class="power-header">Intuito di Moradin <span>Rituale 2</span></div>
+        <div class="mechanic">Magico (Mag) | 1/giorno | Azione standard | 10 minuti | LI 20°</div>
+        <div class="desc-text">
+            <strong>+4 intuizione</strong> alle prove di Artigianato (fabbro), sempre.<br>Una volta al giorno: <em>Vista del Vero</em> per dieci minuti.
+        </div>
+    </div>
+
+    <h2>Con Aegis Fang</h2>
+
+    <div class="power-block">
+        <div class="power-header">Con Aegis Fang in mano — la Risonanza <span>sempre</span></div>
+        <div class="mechanic">Sempre attiva finché porti entrambe | Thorik solo</div>
+        <div class="desc-text">
+            La Corona e l'ascia vengono dalla stessa mano, e da quando le porti insieme lo sanno:<ul><li><strong>+2 sacro a tutti i tiri salvezza.</strong></li><li>L'ascia fa <strong>+1d6 danni sacri</strong> contro le creature caotiche o malvagie.</li><li><strong>Richiamo Ancestrale</strong>, 1/giorno, azione gratuita: se sei disarmato e l'ascia è entro 30 m, ti torna in mano subito, senza attacchi d'opportunità.</li></ul>
         </div>
     </div>
 
     <h2>Le gemme</h2>
 
     <div class="power-block">
-        <div class="power-header">◆ Topazio — il Tempo Immutabile <span>accesa</span></div>
+        <div class="power-header">◆ Topazio — il Tempo Immutabile <span>acceso</span></div>
         <div class="mechanic">Soprannaturale (Sop) | 1/mese | Rituale di 1 ora | Solo da un Nodo Terrestre | LI 20°</div>
         <div class="desc-text">
-            Riavvolge tempo e spazio, e porta te e fino a <strong>8 creature consenzienti</strong> in un punto di forgiatura del passato.<br><br>
-            <strong>Per chi non è nano né fedele di Moradin</strong> il dio esige un pegno, a scelta del gruppo:
-            <ul>
-                <li>un punto permanente di Costituzione;</li>
-                <li>un tesoro da almeno 5.000 mo;</li>
-                <li>un servizio futuro e vincolante.</li>
-            </ul>
-            <strong>Se rifiutate</strong>: chi non è benedetto tira <strong>Tempra CD 25</strong>, o resta parzialmente pietrificato finché non lo curano.<br>
-            <strong>Il prezzo del portatore</strong>: <strong>1d10 anni</strong> di vita, permanenti, a ogni viaggio.
+            Riavvolge tempo e spazio, e porta te e fino a <strong>8 creature consenzienti</strong> in un punto di forgiatura del passato.<br><br><strong>Per chi non è nano né fedele di Moradin</strong> il dio chiede un pegno, a scelta del gruppo: un punto permanente di Costituzione, un tesoro da almeno 5.000 mo, oppure un servizio futuro e vincolante.<br><strong>Se il pegno non si paga</strong>: chi non è benedetto tira <strong>Tempra CD 25</strong>, o resta in parte pietrificato (−3 m di velocità, −2 DES) finché non lo curano.<br><strong>Il prezzo del portatore</strong>: <strong>1d10 anni</strong> di vita, permanenti, a ogni viaggio.
+        </div>
+    </div>
+
+    <div class="power-block">
+        <div class="power-header">◆ Quello che il Topazio ti ha dato oltre al viaggio <span>sempre</span></div>
+        <div class="mechanic">Dal rituale della Piramide di Fuoco</div>
+        <div class="desc-text">
+            <ul><li><strong>Percezione del Tempo</strong> (sempre): sai sempre quanto tempo passa, e quanti giorni e ore mancano a Hammerfist.</li><li><strong>Visione Temporale</strong> (quando capita): nei luoghi dove è successo qualcosa di grosso, a volte lo rivedi.</li></ul>
         </div>
     </div>
 
     <div class="power-block block-nuovo">
-        <div class="power-header">◆ Smeraldo — la Vera Terra <span class="nuovo">accesa ora</span></div>
+        <div class="power-header">◆ Smeraldo — la Vera Terra <span class="nuovo">acceso ora</span></div>
         <div class="mechanic">Magico (Mag) | 1/settimana | Azione standard | LI 20°</div>
         <div class="desc-text">
-            <strong>Costo</strong>: seppellire nel terreno una gemma o un'arma perfetta da <strong>1.000 mo</strong>. Non è un pagamento: è un tributo, e la terra la differenza la sente.<br>
-            Scegli uno dei tre:
-            <ul>
-                <li><strong>Bastione della Terra</strong> — un muro di pietra spesso 9 metri, fino a 140 metri cubi. Non si perfora.</li>
-                <li><strong>Forgia della Vita</strong> — la terra torna fertile per 30 metri di raggio, e resta <em>consacrata</em> per sempre.</li>
-                <li><strong>Giudizio della Montagna</strong> — terremoto in un raggio di 15 metri, <strong>Riflessi CD 22</strong>. Risparmia i nani che designi, e le loro opere.</li>
-            </ul>
+            <strong>Costo</strong>: seppellire una gemma o un'arma perfetta da <strong>1.000 mo</strong>. La terra la differenza la sente.<br>Scegli uno dei tre:<ul><li><strong>Bastione della Terra</strong>: un muro di pietra spesso 9 metri, fino a 140 metri cubi.</li><li><strong>Forgia della Vita</strong>: la terra torna fertile per 30 metri di raggio, e resta <em>consacrata</em>.</li><li><strong>Giudizio della Montagna</strong>: terremoto in un raggio di 15 metri, <strong>Riflessi CD 22</strong>. Risparmia i nani che designi, e le loro opere.</li></ul>E insieme al Topazio tiene ferma la strada del tempo: con due pietre il viaggio non si sfalda.
         </div>
     </div>
 
     <div class="power-block spento">
-        <div class="power-header">◆ La terza incastonatura <span>vuota</span></div>
+        <div class="power-header">◆ Quel che resta vuoto <span>fredda</span></div>
+        <div class="desc-text">È fredda, e da quando lo Smeraldo si è acceso lo è di più. Le altre due, se le sfiori, rispondono. Questa aspetta qualcosa che non è ancora successo.</div>
+    </div>
+
+    <h2>Quello che la Corona ti è costato</h2>
+    <table>
+        <tr><th>Quando</th><th>Effetto permanente</th></tr>
+        <tr><td><strong>Quando l'hai indossata</strong></td><td><strong>−2 DES</strong> (il peso, e la testa che non gira più libera) · <strong>+4 CAR</strong> · non te la togli: si è aperta <strong>solo</strong> per incastonare una gemma</td></tr>
+            <tr><td><strong>Al rito dello Smeraldo</strong></td><td><strong>−2 DES</strong> e <strong>+2 COS</strong>: il Peso del Mondo, accettato nel corpo</td></tr>
+            <tr><td>☐ <strong>Al rito di Hella</strong>, se doni</td><td>la deflessione scende di uno, per sempre</td></tr>
+    </table>
+        <p style="font-size:10pt;margin:6px 0 0 0;">DES: 10 di partenza, 8 con la Corona addosso, 6 dopo il rito. Sono <strong>−4 al punteggio</strong> e <strong>−2 al modificatore</strong>: −2 a CA, Riflessi, iniziativa e prove di DES, non −6. In cambio <strong>+4 CAR</strong> e <strong>+2 COS</strong>.</p>
+
+    <h2>Il sentiero dei rituali</h2>
+    <table>
+        <tr><th></th><th>Rituale</th><th>Dove, o come</th><th>Il prezzo</th><th>Sblocca</th></tr>
+        <tr><td class="c">✅</td><td><strong>1 · Difesa della Forgia</strong></td><td>indossarla: la visione della battaglia di Hammerfist</td><td>2.500 mo in armi o argento</td><td>Consapevolezza della Pietra · Corona di Protezione +2</td></tr>
+        <tr><td class="c">✅</td><td><strong>2 · Prova della Sala Profonda</strong></td><td>la Piramide di Fuoco, e il Topazio</td><td>12.500 mo in gemme</td><td>Intuito di Moradin · il Topazio</td></tr>
+        <tr><td class="c">✅</td><td><strong>3 · Incudine del Mondo</strong></td><td>il Nodo della Terra, dopo Terros</td><td>un pezzo di te: il Peso del Mondo</td><td>Volontà Adamantina · Manto di Pietra e Spirito · lo Smeraldo</td></tr>
+        <tr><td class="c">⬜</td><td><strong>4 · Assedio della Forgia Eterna</strong></td><td>l'atto finale, in cui userai il potere della Corona per riscrivere la storia</td><td>—</td><td>la Corona di Protezione cresce · la Corona parla · la terza pietra · un potere che la Corona non ha mai avuto: l'<strong>Aura della Forgia Eterna</strong></td></tr>
+    </table>
+    <p style="font-size:10pt;margin:4px 0 0 0;">E quando la Corona sarà intera, non sarà la sola a svegliarsi.</p>
+
+    <h2>Il dono al rito di Hella</h2>
+    <div class="power-block">
+        <div class="power-header">☐ Il +2 di deflessione <span>da segnare al rito</span></div>
         <div class="desc-text">
-            È fredda, e da quando lo Smeraldo si è acceso lo è di più. Le altre due, se le sfiori, rispondono. Questa aspetta qualcosa che non è ancora successo.
+            Al rito di resurrezione puoi dare a Hella <strong>la protezione che la Corona dà a te</strong>. Esce dalla Corona <strong>per sempre</strong>: la deflessione scende a <strong>+1</strong>.<br>
+            Nel suo seme diventa lo <strong>Scudo del Custode</strong>: una volta al giorno, azione immediata, lei prende su di sé il danno destinato a un alleato entro 9 m, <strong>dimezzato</strong>.<br>
+            E ti torna addosso: ogni volta che lei usa lo Scudo sei <strong>accelerato per 3 round</strong>, e in quei round ti muovi <strong>verso chi lei ha protetto</strong>, almeno un'azione di movimento per round che accorci la distanza, o l'accelerazione si spegne.<br>
+            <strong>Una volta sola</strong>, nel momento del bisogno, lei potrà rendertela per una scena intera.<br><br>
+            ☐ <strong>Dono</strong> &nbsp;&nbsp; ☐ <strong>Rifiuto</strong>: la deflessione resta +2, e il seme di Hella resta dormiente.
         </div>
     </div>
 
     <h2>Quando gli artefatti si parlano</h2>
-
     <div class="requirements" style="font-size: 10pt;">
-        La Corona non lavora da sola. Con l'<strong>Anello</strong> di Artemis e i <strong>Bracieri</strong> di Tordek fa quattro cose: <strong>+1 schivare</strong> contro i Legali vicini · <strong>Visione Planare</strong> 1/giorno · <strong>Colpo dell'Alba Oscura</strong> 1/giorno insieme ad Aegis Fang · e la <strong>Trinità Divina</strong>, 1/giorno per cinque round, quando siete tutti e tre entro 9 metri.<br>
-        Condizioni e numeri esatti: <em>PG/Artefatti/SINERGIE-ARTEFATTI-MASTER.md</em>. Si dichiarano prima, e costano un'azione a testa.
+        Con l'<strong>Anello</strong> di Artemis: entro 3 metri <strong>+1 schivare</strong> alla CA contro i Legali, e 1/giorno <strong>Visione Planare</strong> più <em>dissolvi illusioni</em> in 9 metri. Con <strong>Aegis Fang</strong> e l'Anello: il <strong>Colpo dell'Alba Oscura</strong>, 1/giorno: Artemis lancia la Luce di Lathander, tu colpisci lo stesso bersaglio con +2 e +2d6 sacri. Con Anello e <strong>Bracieri</strong>: la <strong>Trinità Divina</strong>, 1/giorno per cinque round, quando siete tutti e tre entro 9 metri e ognuno spende un'azione di movimento.<br><strong>Con Hella.</strong> ☐ Se hai donato: quando lei usa lo <strong>Scudo del Custode</strong> sei accelerato 3 round e scatti verso chi ha protetto. <strong>Radici della Memoria</strong> si sveglierà quando lei pianterà la Ghianda al Cerchio della Quercia Vecchia: da allora, su terreno naturale, la tua Consapevolezza della Pietra vale anche per lei. E quando la Foresta Sacra vi avrà accolti, con la Collana la Trinità diventerà la <strong>Quaternità</strong>.<br>
+        Si dichiarano prima, e costano un'azione a testa.
+    </div>
+
+    <div class="quote">
+        <strong>Il giuramento del portatore</strong><br>
+        «Io sono la pietra che ricorda,<br>la forgia che sopporta,<br>il martello che ricostruisce.<br>Dalla luce di Moradin io difendo,<br>e dalla sua incudine io sono riforgiato.»
     </div>
 
     <div class="quote" style="margin-top: 18px;">
         <strong>Vincolo.</strong> La Corona serve la memoria dei nani, non chi la porta. Il giorno in cui Thorik tradisse Moradin o la stirpe, i poteri non si spegnerebbero con un lampo. Semplicemente, la mattina dopo, non risponderebbero.
     </div>
 
-    <h2 style="color:#8B0000;border-bottom-color:#8B0000;">⚠️ Solo DM — da qui in poi</h2>
-
-    <div class="dmbox">
-        <h3>Cosa manca, e da dove arriva</h3>
-        <table class="led">
-            <tr><th>Non ancora sbloccato</th><th>Si sblocca con</th></tr>
-            <tr><td><strong>Corona di Protezione +3</strong> (da +2)</td><td rowspan="3"><strong>Rituale 4 — «Assedio della Forgia Eterna»</strong>, cioè il <strong>viaggio a −1.000</strong> (master #4): usare il Topazio per tornare all'inizio della battaglia antica e guidare i nani alla vittoria</td></tr>
-            <tr><td><strong>Senzienza</strong> della Corona</td></tr>
-            <tr><td><strong>RUBINO</strong> — la Possanza Nanica</td></tr>
-        </table>
-        Il Rubino è <strong>monouso</strong>: si accende alla vittoria antica e <strong>si consuma</strong> per riportare i PG al 1372. Dopo, l'incastonatura è vetro scuro e <strong>non è riattivabile</strong> — chiunque dica il contrario è un'incoerenza da segnalare.
+    <div class="power-block grigio">
+        <div class="power-header">Valore teorico (stadio 2)</div>
+        <div class="corpo">Come artefatto maggiore è inestimabile, e non si vende. Per il bilancio di ricchezza della scheda: <strong>~190.000 mo</strong>, dalla pagina a due gemme del 2026-08-01 <span class="mechanic">stima, non prezzo</span></div>
     </div>
 
-    <div class="dmbox">
-        <h3>Audit del rituale (2026-08-01) — tre cose</h3>
-        <p><strong>1. «Anvil of the World» è il Rituale Legacy 3, ed è il rito del §9 di <em>ARC07-DEF-1</em>.</strong> Sono lo stesso evento: entrambi chiedono un Nodo Terrestre primordiale, entrambi citano <strong>40.500 mo</strong>. Sblocca <strong>due</strong> poteri: <em>Volontà Adamantina</em> <strong>e</strong> <em>Manto di Pietra e Spirito</em>. Le vecchie schede avevano solo il primo.</p>
-        <p><strong>2. Il costo — discrepanza chiusa.</strong> <em>LaCorona_di_Adamantio-DM.md</em> r.628 chiede 40.500 mo <strong>e</strong> un sacrificio personale; il modulo ARC-07 lo presentava come <strong>alternativa</strong>, e al tavolo è stata pagata la sola metà personale. <strong>✅ DECISIONE DM 2026-08-01: il rito è completo.</strong> Il pegno personale versato è alto abbastanza. Non riaprire il conto.</p>
-        <p><strong>3. A pagare è stato il portatore.</strong> Il pegno l'ha versato <strong>Thorik</strong> (−2 DES / +2 COS permanenti), come scrive l'Opzione B del §9 di <em>ARC07-DEF-1</em> e come chiede il testo di Moradin, che parla al <em>portatore</em>. <em>Rettifica del 2026-08-06:</em> dal 31/07 al 06/08 questa riga attribuiva il pegno a <strong>Tordek</strong> e la chiamava «deviazione voluta». Era un refuso. L'eco viva è <strong>E-07c</strong> in <em>state.md</em> §7.E; <strong>E-07e</strong> (nata dall'errore) è <strong>annullata</strong>, e la presenza verde al rito è l'eco <strong>E-07f</strong>.</p>
-        <p><strong>3-bis. Come contare i riti.</strong> Al tavolo l'Incudine del Mondo è il <strong>secondo rito celebrato</strong> (il primo è la Prova della Sala Profonda); nella numerazione del modulo è il <strong>Rituale 3</strong>, che conta anche il Risveglio. Sono lo stesso evento — se il giocatore dice «il secondo rito», intende questo.</p>
-        <p><strong>3-bis. Come contare i riti.</strong> Al tavolo l'Incudine del Mondo è il <strong>secondo rito celebrato</strong> (il primo è la Prova della Sala Profonda); nella numerazione del modulo è il <strong>Rituale 3</strong>, che conta anche il Risveglio. Sono lo stesso evento — se il giocatore dice «il secondo rito», intende questo.</p>
-    </div>
-
-    <div class="dmbox" style="border-width:3px;">
-        <h3>🩸 Il bilancio di Thorik — leggere prima del rito di Hella</h3>
-        <p><em>Rilievo del DM: il giocatore sente di sacrificare molto per quello che riceve, e potrebbe essere stanco di pagare in nome di Moradin.</em> <strong>Ha ragione, e i numeri lo dicono.</strong></p>
-
-        <table class="led">
-            <tr><th>Ha pagato</th><th>Quando</th></tr>
-            <tr><td>è <strong>morto</strong> ed è stato riportato indietro</td><td>Guado di Drellin, Arco 00</td></tr>
-            <tr><td>porta la Corona — che è un <strong>dovere</strong>, non un premio</td><td>da ARC-06</td></tr>
-            <tr><td><strong>ha versato di persona il pegno del rito</strong>: −2 DES / +2 COS permanenti, senza delegarlo e senza svuotare il bottino del party</td><td>rito dello Smeraldo, 2026-07-31</td></tr>
-            <tr><th>Gli sarà chiesto</th><th>Fra quanto</th></tr>
-            <tr><td><strong>−2 COS permanenti</strong> — il modulo stesso lo chiama <em>«il più pesante dei tre»</em></td><td><strong>prossima sessione</strong> (rito di Hella, §5 Dono 1)</td></tr>
-            <tr><td colspan="2">⚠️ <strong>Guarda la somma prima di proporglielo.</strong> Il rito dello Smeraldo gli ha dato <strong>+2 COS</strong>; il Sangue della Stirpe gliene toglie <strong>2</strong>. Netto sulla COS: <strong>zero</strong>. Cioè <em>due pegni permanenti per tornare esattamente dov'era</em> — e il giocatore che ha già fatto il conto lo vedrà. Questo non è un argomento per togliere il Dono 1: è l'argomento più forte a favore delle alternative del §5, e in particolare del <strong>Filo dell'Ascia</strong>. <strong>Decisione da prendere al tavolo, non d'ufficio.</strong></td></tr>
-            <tr><td><strong>−2 DES solo per averla indossata</strong>, più la clausola — <strong>✅ confermata dal DM il 2026-09-04</strong> — che <strong>non è rimovibile volontariamente</strong> finché mancano gemme (si è aperta <em>solo</em> per incastonare lo Smeraldo) — <em>«peso e restrizione movimenti testa»</em>. Il modulo scrive perfino il ricalcolo: <strong>DES 10 → 8</strong>, CA 22 → 21 (in cambio CAR 8 → 12)</td><td>quando l'ha presa dal trono, <code>PortaleForgia-P1</code> — <strong>reintegrato</strong>: era sparito da tutte le schede successive</td></tr>
-            <tr><td colspan="2">📐 <strong>Il conto della DES, per intero — e come non leggerlo male.</strong> Punteggio: 10 di base → <strong>8</strong> con la Corona addosso → <strong>6</strong> dopo il rito. Sono <strong>due</strong> pegni da −2, quindi <strong>−4 al punteggio</strong> e <strong>−2 al modificatore</strong> (da +0 a −2) rispetto alla scheda di partenza. <em>Il 6 è quel che gli resta, non quanto ha perso.</em> Da tenere presente quando il giocatore dice di aver pagato troppo: <strong>ha ragione anche su questo</strong>, e nessuna scheda glielo stava più riconoscendo.</td></tr>
-            <tr><td><strong>1d10 anni di vita</strong>, permanenti</td><td>la sessione dopo (Rituale 4 / viaggio a −1.000)</td></tr>
-            <tr><td>guidare di persona la difesa di Rethmar</td><td>ARC-09</td></tr>
-        </table>
-
-        <p><strong>Due colpi permanenti in due sessioni consecutive.</strong> Se il giocatore lo dice adesso, è perché ha fatto il conto prima di te.</p>
-
-        <p><strong>La diagnosi non è che riceve poco — è che non lo sente.</strong> Guarda cosa gli ha dato la Corona: +2 CA, +4 ai TS, immunità, riduzione del danno, Vista del Vero, Mente Vuota. <strong>Sono tutte difese passive.</strong> Nessuna fa un momento al tavolo. I costi invece sono <em>tutti</em> scene narrate. Il rapporto meccanico è generoso; quello percepito è pessimo, e il percepito è l'unico che conta.</p>
-
-        <h3 style="margin-top:14px;">Le quattro mosse, in ordine di efficacia</h3>
-        <p><strong>1. Fai vedere una difesa mentre salva.</strong> È il rimedio più rapido e costa zero. Un incantatore prova a dominarlo e <strong>rimbalza</strong> su <em>Mente Vuota</em> — e lo capisce il tavolo, non solo lui. Hai due occasioni già scritte: <strong>Balvar</strong> al #4 e <strong>Zalkatar</strong> in ARC-09. Una difesa invisibile che si vede una volta smette di essere invisibile per sempre.</p>
-
-        <p><strong>2. Al rito di Hella, offri le alternative SUBITO.</strong> Il §5 di <em>ARC07-DEF-3</em> dà a Thorik <strong>tre strade oltre al rifiuto</strong>, e dice di leggerle «solo se il giocatore esita». <strong>Sta già esitando, con una sessione di anticipo.</strong> Mettile sul tavolo tutte e tre:</p>
-        <table class="led">
-            <tr><th>Strada</th><th>Costo</th><th>Come la sente il giocatore</th></tr>
-            <tr><td>Il Sangue della Stirpe</td><td>−2 COS permanente</td><td>il terzo pezzo di sé in tre archi</td></tr>
-            <tr><td>La Memoria della Battaglia</td><td>−3.000 PE</td><td>doloroso ma <strong>recuperabile</strong></td></tr>
-            <tr><td><strong>Il Filo dell'Ascia</strong> ⭐</td><td>Aegis Fang perde <em>Returning</em> fino al pieno risveglio</td><td><strong>paga l'artefatto, non il corpo</strong>, ed è temporaneo</td></tr>
-        </table>
-        <p>⭐ <strong>Il Filo dell'Ascia è la strada giusta per questo giocatore</strong>: stesso peso drammatico, ma il prezzo lo mette l'ascia. Ed è più bello — l'arma «dona il proprio richiamo» a una morta perché torni. <strong>Non spingerlo: mettila in fila con le altre e lascialo scegliere.</strong></p>
-
-        <p><strong>3. Moradin deve dare una volta senza chiedere niente.</strong> Finora ogni scambio è stato una transazione, e un dio che manda solo fatture diventa un padrone di casa. Serve <strong>un dono non richiesto e non pagato</strong>, e lo slot esiste già: <strong>l'affresco A3</strong> (master #2), dove <em>il fallimento del TS è il dono</em>. Giocalo lì, e non spiegarlo.</p>
-
-        <p><strong>4. Lascia che lo dica in faccia.</strong> La scena più forte disponibile è Thorik che dice a Moradin di essere stanco — e <strong>Moradin che non si difende</strong>. Niente sermoni, niente giustificazioni: registro nanico, meno parole del necessario.</p>
-        <div class="quote" style="margin:10px 0;">
-            <strong>THORIK:</strong> <em>«Quanto ancora.»</em> — non è una domanda, e non mettere il punto interrogativo.<br><br>
-            <strong>MORADIN</strong> (dopo un silenzio lungo abbastanza da diventare scomodo): <em>«Finché non ne resta niente, se lo lascio fare a te. Per questo non lo lascio fare a te.»</em>
-        </div>
-        <p>E poi <strong>chiudi la scena</strong>. Nessuna concessione meccanica, nessuna promessa. Un dio che ammette di star chiedendo troppo vale più di uno sconto.</p>
-
-        <p><strong>Il ritorno esiste, ed è vicino:</strong> il Rituale 4 dà <strong>Corona +3</strong> e soprattutto la <strong>Senzienza</strong>. Da lì la Corona <em>parla</em>, e Thorik smette di essere solo a portarla. Puoi anticipargliene la <strong>forma</strong> senza i dettagli — un giocatore che sa che un ritorno arriva regge un costo; uno che non lo sa, smette di pagare.</p>
-    </div>
-
-    <div class="power-block" style="background: rgba(220, 220, 220, 0.4); border-color: #888; margin-top: 20px;">
-        <div class="power-header" style="color: #666; font-size: 11pt;">Valore magico e costruttivo teorico (2 gemme + Rituale 3)</div>
-        <div style="font-size: 9.5pt; color: #444;">
-            Come <strong>artefatto maggiore</strong> il valore complessivo è ovviamente <em>Inestimabile</em>. Al netto delle pure metriche dei manuali, però: protezioni base più protezioni mentali inamovibili (immunità assoluta e +4 razziale forzati su LI 20), <strong>Mente Vuota permanente</strong> e <strong>riduzione del danno</strong>, potenziamenti tellurici distruttivi (terremoti estesi e muri di montagna che da soli superano le decine di migliaia di monete a utilizzo isolato), più la rarità del componente originario della forgia divina. Stima lorda per il bilancio di scheda a questo stadio: <strong>~190.000 mo</strong> <span class="mechanic">stima, non prezzo: l'artefatto non è vendibile né replicabile</span>
-        </div>
-    </div>
-
-    <div class="power-block" style="background: rgba(220, 220, 220, 0.4); border-color: #888; margin-top: 10px;">
-        <div class="power-header" style="color: #666; font-size: 11pt;">Registro sblocchi (compila a penna)</div>
-        <div style="font-size: 9.5pt; color: #444;">
+    <div class="power-block grigio">
+        <div class="power-header">Registro sblocchi (compila a penna)</div>
+        <div class="corpo">
             Rituale 1 — Difesa della Forgia · <em>giocato</em><br>
             Rituale 2 — Prova della Sala Profonda · <em>giocato</em><br>
-            <strong>Rituale 3 — Incudine del Mondo · giocato 2026-07-31</strong> (Nodo della Terra, guardiano abbattuto, pegno personale versato)<br>
+            <strong>Rituale 3 — Incudine del Mondo · giocato 2026-07-31</strong> (Nodo della Terra, Terros abbattuto, pegno personale versato)<br>
             <strong>Smeraldo · acceso 2026-07-31</strong><br>
+            ☐ Dono al rito di Hella · ______________<br>
+            ☐ Rituale 4 · ______________<br>
             _______________________________________________
         </div>
     </div>
+
+    <div class="solo-dm"></div>
+    <h2 style="color:#8B0000;border-bottom-color:#8B0000;">⚠️ Solo DM — da qui in poi</h2>
+
+    <div class="dm">
+        <h3>La progressione intera, in una tabella</h3>
+        <table>
+            <tr><th>Stadio</th><th>Rituale e dove</th><th>Costo</th><th>Poteri</th><th>Pagina</th><th>Stato</th></tr>
+            <tr><td><strong>0</strong> · indossata</td><td>1 · Difesa della Forgia, al primo contatto (<code>PortaleForgia-P1</code> §5)</td><td>2.500 mo · −2 Volontà per 24 h dopo la visione · −2 DES, +4 CAR, non rimovibile</td><td>Consapevolezza, Protezione +2 · i quattro doni di P1 · la Risonanza con Aegis</td><td><code>00_Corona_0_Gemme</code></td><td>✅ passato</td></tr>
+            <tr><td><strong>1</strong> · Topazio</td><td>2 · Prova della Sala Profonda, alla Piramide di Fuoco (<code>P3</code> §10)</td><td>12.500 mo in gemme (pagati)</td><td>Intuito di Moradin · Topazio · Percezione e Visione del Tempo</td><td><code>01_Corona_1_Gemma</code></td><td>✅ passato</td></tr>
+            <tr><td><strong>2</strong> · Smeraldo</td><td>3 · Incudine del Mondo, nel Nodo della Terra (<code>ARC07-DEF-1</code> §9)</td><td>il pegno di Thorik: −2 DES, +2 COS (la metà materiale non è stata pagata, rito completo per decisione DM 2026-08-01)</td><td>Volontà Adamantina · Manto · Smeraldo · Chiave del Tempo</td><td><code>02_Corona_2_Gemme</code></td><td>▶ <strong>oggi</strong></td></tr>
+            <tr><td><strong>3</strong> · Rubino</td><td>4 · Assedio della Forgia Eterna, dopo il duello con Skullcrusher (<code>ARC07-DEF-4</code> Scena 12)</td><td>nessuno per il rito; il viaggio col Topazio costa 1d10 anni a Thorik e il pegno ad Artemis</td><td>Corona +3 (+2 se ha donato) · Senzienza · Aura della Forgia Eterna 1/settimana · Rubino, che si spende nel ritorno · Aegis Fang Stadio 1</td><td><code>03_Corona_3_Gemme</code></td><td>⬜ la sessione dopo la serata</td></tr>
+        </table>
+        <p>Le schede degli stadi passati servono al tavolo per due cose: ricostruire cosa Thorik aveva in una scena passata, e mostrare al giocatore quanto è cresciuta. Non si ristampano a ogni sessione.</p>
+        <p><strong>Il prezzo come controllo.</strong> Le stime di valore delle fonti non contano poteri che le schede non abbiano, quindi non nascondono niente. Si contraddicono però fra loro: la pagina a tre gemme del 2026-04 dà alla sola <em>Mente Vuota</em> permanente ~240.000 mo, e la pagina a due gemme, che la <em>Mente Vuota</em> ce l'ha già, dice ~190.000 in tutto. Sono stime a parole. Il conto voce per voce con la tabella della SRD sta nell'audit, §10 (lotto T10-f): la sola <em>Mente Vuota</em> continua vale 120.000 mo, non 240.000, perché l'incantesimo dura 24 ore e la SRD dimezza il prezzo; la parte della Corona che la tabella sa contare arriva a circa <strong>208.600 mo</strong> allo stadio 2, e Topazio, Smeraldo, RD e Comunione restano fuori tabella.</p>
+        <p><strong>Weapons of Legacy.</strong> La struttura è quella: un rituale per stadio, un prezzo pagato dal portatore, un livello minimo per potere. Il libro è <code>[Private — Weapons of Legacy, WotC 2005]</code>, e di quel libro qui c'è solo la forma.</p>
+    </div>
+
+    <div class="dm">
+        <h3>La serata del 2026-09-25, per la Corona</h3>
+        <table>
+            <tr><th>Momento</th><th>Cosa succede alla Corona</th><th>Fonte</th></tr>
+            <tr><td>Atto I, la Sala</td><td>nessun effetto. Se un PG guarda la Corona: l'incasso vuoto che non riflette la luce. <strong>Non dire</strong> che si riempie a −1.000</td><td><code>DEF-3</code> §2-bis</td></tr>
+            <tr><td>Atto II, il rito · <strong>il Dono</strong></td><td>Thorik si toglie la Corona (la seconda volta in assoluto) e la posa sul petto di Hella. <strong>Dona</strong>: deflessione +1, Scudo del Custode a Hella, la Corona non protesta e da allora si scalda quando l'Eco lo fa scattare. <strong>Rifiuta</strong>: la Corona tace, il seme I resta dormiente, e al Rituale 4 la Senzienza arriverà fredda</td><td><code>DEF-3</code> §5</td></tr>
+            <tr><td>Atto III, la soglia</td><td>la Corona apre il portale con due pietre su tre. <strong>Non dire</strong> che il Rubino si spende di là</td><td><code>DEF-3</code> §8-ter</td></tr>
+            <tr><td>Atto IV, il portale</td><td>Guarigione del passaggio: non tocca il −4 DES né il −1 CA del Dono. Il prezzo del Topazio si paga (D6): Thorik tira <strong>1d10 anni</strong>; Artemis sceglie il pegno (1 COS permanente, 5.000 mo o un servizio) o tira <strong>Tempra CD 25</strong></td><td><code>DEF-4</code> Scena 1</td></tr>
+            <tr><td>Fine serata</td><td>si chiude al <strong>primo ariete</strong> (decisione S1). <strong>Il Rituale 4 è la sessione dopo</strong></td><td>regia della serata §5</td></tr>
+        </table>
+        <p>Da annotare a fine serata: dono o rifiuto (serve alla voce della Corona al Rituale 4) e l'anno di invecchiamento se lo si tira.</p>
+    </div>
+
+    <div class="dm">
+        <h3>Aegis Fang, stasera</h3>
+        <p><strong>A7</strong> (Atto I): se Thorik appoggia l'ascia alla cornice, l'ascia parla e nasce il <strong>Bane contro Fauci di Palude</strong>: +2 competenza all'attacco, +3d6 danni, critico ×4, e 1 per incontro <em>scosso</em> 1d4 round (Volontà CD 22). Solo contro Fauci. <strong>Reazione al Dono</strong>: se Thorik dona, per un arco intero non tira più l'opposizione dell'Ego; se rifiuta, lo giudica nelle scene che riguardano Hella o dei nani da proteggere, finché lui non rischia qualcosa di suo per lei. Dettagli nella pagina DM di Aegis Fang.</p>
+    </div>
+
+    <div class="dm">
+        <h3>🩸 Il bilancio di Thorik, con i Doni di oggi</h3>
+        <table>
+            <tr><th>Ha pagato</th><th>Quando</th></tr>
+            <tr><td>è <strong>morto</strong> ed è stato riportato indietro</td><td>Guado di Drellin</td></tr>
+            <tr><td>−2 DES per averla indossata, e non se la toglie</td><td>dal P1</td></tr>
+            <tr><td><strong>il pegno del rito, di persona</strong>: −2 DES, +2 COS</td><td>rito dello Smeraldo, 2026-07-31</td></tr>
+            <tr><th>Gli sarà chiesto</th><th>Quando</th></tr>
+            <tr><td><strong>−1 CA per sempre</strong>, se dona la deflessione. Il vecchio «−2 COS» del Sangue della Stirpe è superato dal 2026-09-12, come il Filo dell'Ascia</td><td>stasera</td></tr>
+            <tr><td><strong>1d10 anni</strong> col Topazio</td><td>stasera, al portale</td></tr>
+            <tr><td>guidare di persona la difesa di Rethmar</td><td>ARC-09</td></tr>
+        </table>
+        <p>Il Dono di oggi è il più leggero dei tre sulla carta, e il giocatore lo vedrà: <strong>−1 CA, e in cambio si muove</strong> ogni volta che Hella para per qualcuno. È la prima volta che la Corona gli toglie una difesa e gli dà un momento al tavolo. Diglielo con quelle parole, se esita.</p>
+        <p><strong>Le difese che salvano si mostrano.</strong> Mente Vuota, Volontà Adamantina e immunità sono tutte passive: fai rimbalzare una dominazione davanti al tavolo almeno una volta (Balvar a −1.000, Zalkatar in ARC-09).</p>
+        <p><strong>Il ritorno è vicino.</strong> Al Rituale 4 la Corona parla. Anticipargliene la forma, senza i dettagli, gli fa reggere il costo.</p>
+        <p style="font-size:10pt;"><strong>MORADIN</strong>, se Thorik gli dice che è stanco (dopo un silenzio lungo abbastanza da diventare scomodo): <em>«Finché non ne resta niente, se lo lascio fare a te. Per questo non lo lascio fare a te.»</em> Poi chiudi la scena.</p>
+    </div>
+
+    <div class="dm">
+        <h3>Il Rituale 3, già deciso</h3>
+        <p><strong>L'Incudine del Mondo è il rito del §9 di <code>ARC07-DEF-1</code></strong>: stesso evento, stesso Nodo. Sblocca due poteri, Volontà Adamantina e Manto. Il master chiede 40.500 mo <strong>e</strong> un sacrificio personale; il modulo li offriva come alternativa; al tavolo si è pagata la sola metà personale, e <strong>il rito è completo</strong> (DM 2026-08-01). A pagare è stato <strong>Thorik</strong> (rettifica DM 2026-08-06). ⚠️ La voce del 2026-07-31 di <code>state-changelog.md</code> scrive «scelta A, sacrificio materiale»: è il log di quel giorno, append-only; vale la rettifica in <code>DEF-1</code> §9, bottino intatto.</p>
+        <p>Al tavolo è il <strong>secondo rito celebrato</strong>; il modulo lo numera 3 perché conta anche il Risveglio.</p>
+    </div>
+
+    <div class="dm">
+        <h3>Le decisioni del DM che toccano questo stadio (2026-09-25)</h3>
+        <table><tr><th>#</th><th>Decisione</th></tr><tr><td><strong>D1</strong></td><td><strong>Risonanza</strong> con Aegis Fang: vale la stampa del 16/01/2026. +2 sacro ai TS, +1d6 sacro contro caotici o malvagi, <em>Richiamo Ancestrale</em> 1/giorno. Niente <em>Eco degli Eroi</em>; contro i draghi solo il Bane di A7 su Fauci.</td></tr><tr><td><strong>D3</strong></td><td>i quattro doni di quando l'ha indossata sono <strong>canone</strong>: immunità alla paura, scurovisione 36 m, <em>Aura di Comando</em>, <em>Guida di Moradin</em>.</td></tr><tr><td><strong>D4</strong></td><td>del Topazio restano <strong>Percezione del Tempo</strong> e <strong>Visione Temporale</strong>. Tolti <em>Rallentare il Tempo</em> e il «+1 a tutti i poteri».</td></tr><tr><td><strong>D5</strong></td><td>dopo il Rituale 4 la deflessione è <strong>+3</strong>, o <strong>+2</strong> se ha donato.</td></tr><tr><td><strong>D6</strong></td><td>al portale si pagano <strong>entrambi</strong>: 1d10 anni a Thorik, pegno o Tempra CD 25 ad Artemis. La Guarigione del passaggio non li toglie.</td></tr><tr><td><strong>D7</strong></td><td>RD del Manto <strong>5/epico e male</strong>, come nel PDF del giocatore del 2025.</td></tr><tr><td><strong>D10</strong></td><td>i livelli minimi del libro sono <strong>indicativi</strong>: decide il rituale.</td></tr></table>
+        <p>Domande, fonti e alternative scartate: <code>PG/Artefatti/ARTEFATTI-AUDIT-POTERI-2026-09-25.md</code> §7.</p>
+    </div>
+
+    <p style="font-size:8.5pt;color:#777;text-align:right;margin-top:14px;">Versione corona · S2 · r6 · 2026-09-25 · registro: <em>PG/Artefatti/ARTEFATTI-MATRICE-VERSIONI.md</em> §0</p>
 
 </body>
 </html>

@@ -29,8 +29,8 @@
 | **Cronache dei Quattro Eroi** | La profezia compiuta diventa **fama crescente presso i nani** | **ARC-08 E5** (Custodi Eterni) e Cerimonia delle 100 Asce | ARC-08 E5 / handout C2 |
 | **Thorgrim Barbadiferro** | L'antico portatore di Aegis Fang **riecheggia** nel presente | **Cerimonia delle 100 Asce** (ARC-08) | `08_.../Cerimonia-delle-100-Asce.md` |
 | ⭐ **Il dono della deflessione** (`DEF-3` §5, rito di Hella) | Se Thorik dona il **+2 di deflessione**: la Corona resta a **+1**, Hella ha lo **Scudo del Custode**, e ogni volta che lei lo usa **lui scatta verso chi è stato protetto** | Ogni scena in cui Hella prende un colpo per qualcuno, **da subito** | `ARC07-DEF-3` §5 + scheda Corona §«Il dono al rito di Hella» |
-| ⭐ **Il bivio della Senzienza** (`DEF-4` §4-quater) | La Corona si sveglia **calda** o **fredda** secondo quel dono, e il tono **non è cosmetico**: decide come parla per tutto ARC-09 | **Rituale 4**, alla vittoria a −1.000; poi ogni uso della Corona | §2-bis qui sotto |
-| ⭐ **Aegis Fang Stage 1** | L'Assedio vinto sveglia l'ascia, che smette di dubitare **o** comincia a giudicare | **Rituale 4**, subito dopo la Senzienza | `ARC07-DEF-4` §4-quater, Momento 3 |
+| ⭐ **Il bivio della Senzienza** (`DEF-4` Scena 12) | La Corona si sveglia **calda** o **fredda** secondo quel dono, e il tono **non è cosmetico**: decide come parla per tutto ARC-09 | **Rituale 4**, alla vittoria a −1.000; poi ogni uso della Corona | §2-bis qui sotto |
+| ⭐ **Aegis Fang Stage 1** | L'Assedio vinto sveglia l'ascia, che smette di dubitare **o** comincia a giudicare | **Rituale 4**, subito dopo la Senzienza | `ARC07-DEF-4` Scena 12, Momento 3 |
 
 ---
 
@@ -43,7 +43,7 @@
 > non è un eco: è una nota in un master.
 
 La scelta si fa a `DEF-3` §5, al rito di resurrezione, e **si incassa a
-`DEF-4` §4-quater**, un beat dopo. Fra le due cose il giocatore non deve
+`DEF-4` Scena 12**, un beat dopo. Fra le due cose il giocatore non deve
 sentire niente: è l'intervallo che la rende una scelta e non una transazione.
 
 | Al rito di `DEF-3`, Thorik… | La Corona al Rituale 4 | La prima cosa che dice | Cosa cambia in ARC-09 |
@@ -63,7 +63,7 @@ momento in cui si scalda la Corona. I due artefatti si sciolgono insieme,
 perché guardano la stessa cosa.
 
 ⚠️ **Da segnare appena il rito di `DEF-3` è giocato**, qui e in `state.md` §7:
-finché la casella è vuota, `DEF-4` §4-quater ha due rami e il DM non sa quale
+finché la casella è vuota, `DEF-4` Scena 12 ha due rami e il DM non sa quale
 leggere.
 
 | | Scelta di Thorik | Data | Segnato in `state.md` |

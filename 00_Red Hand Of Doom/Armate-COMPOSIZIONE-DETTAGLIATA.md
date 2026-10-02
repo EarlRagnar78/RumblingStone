@@ -169,7 +169,7 @@ Varianti colore Tiamat. Base template + delta per colore.
 
 ## 8. Drow — Casata Sonjak
 
-Matrona Sajak, Sonjak (enforcer). ~305 unità + élite.
+Comanda **Sonjak**, la Matrona: una persona sola, che Salvatore conosce soltanto come «Matrona Sajak» (`Bestiario/villain/Sonjak/Sonjak.md`). ~305 unità + élite.
 
 | Unità | CR | File | Note |
 |---|---|---|---|
@@ -182,7 +182,7 @@ Matrona Sajak, Sonjak (enforcer). ~305 unità + élite.
 | Drow Priestess 9 of Lolth | 11 | [ACCEPTED] `Bestiario/mostri/drow-priestess9-cr11.md` | Sajak rituali Fase 0 |
 | Drow Wizard 7 | 8 | [ACCEPTED] `Bestiario/mostri/drow-wizard7-cr8.md` | Supporto mago |
 | Drow Noble House Guard | 5 | [ACCEPTED] `Bestiario/mostri/drow-noble-guard-cr5.md` | Élite Sajak |
-| Sonjak (enforcer) | 12 | `Bestiario/villain/Sonjak/` (link dir) | NPC nominato |
+| Sonjak, la Matrona (per Sal «Matrona Sajak») | 13 | `Bestiario/villain/Sonjak/Sonjak.md` | Villain nominato; GS dalla scheda |
 
 Statblocchi già presenti per drow in P3 Fase 0:
 

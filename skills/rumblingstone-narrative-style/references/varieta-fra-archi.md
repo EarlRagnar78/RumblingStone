@@ -1,5 +1,19 @@
 # Varietà fra gli archi — la tavolozza e il governo del ritmo
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- 1. La tavolozza d'arco — cinque dichiarazioni
+- 2. Le sei tinte
+- 3. Le regole di rotazione — il governo
+- 4. La prova del recap — la diagnosi in trenta secondi
+- 5. Il registro — dove vive
+- 6. La quota di modulo — quando un arco ha molti moduli
+- 7. L'orchestrazione dinamica — perché la quota non si assegna in anticipo
+- 8. Applicazione proposta agli archi in corso
+- 9. Autocontrollo, prima di dichiarare un arco pronto
+<!-- /indice -->
+
 Il mixer di `SKILL.md` decide **quale pilastro guida una scena**. Non dice
 niente su **di che colore è un arco intero**, né se quel colore è già stato
 usato nell'arco precedente. Questo file copre quel piano — ed è il piano su

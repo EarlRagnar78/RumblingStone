@@ -1,0 +1,29 @@
+{
+  "descrizione": "Codice o skill esterni valutati e rimandati, ognuno con la condizione misurabile che ne fa partire l'adozione. Lo legge scripts/adozioni_in_attesa.py; --check esce 1 quando una condizione e' attiva e la voce e' ancora 'in attesa' (ADR-0076).",
+  "adozioni": [
+    {
+      "id": "commit-archaeologist",
+      "fonte": "https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/agent_skills/commit-archaeologist",
+      "commit_upstream": "4bf51ab704fb2c5b3803cd5191b30d7dcdb51dc2",
+      "licenza": "Apache-2.0",
+      "autore": "Matt Van Horn",
+      "file": [
+        "https://github.com/Shubhamsaboo/awesome-llm-apps/blob/4bf51ab704fb2c5b3803cd5191b30d7dcdb51dc2/agent_skills/commit-archaeologist/SKILL.md",
+        "https://github.com/Shubhamsaboo/awesome-llm-apps/blob/4bf51ab704fb2c5b3803cd5191b30d7dcdb51dc2/agent_skills/commit-archaeologist/scripts/archaeologist.py",
+        "https://github.com/Shubhamsaboo/awesome-llm-apps/blob/4bf51ab704fb2c5b3803cd5191b30d7dcdb51dc2/agent_skills/commit-archaeologist/references/reading-git-history.md"
+      ],
+      "cosa_porterebbe": "perche' una riga esiste, dalla storia git: commit che l'ha introdotta, file che cambiano con lei, segnali d'intento nei messaggi, tre livelli di confidenza",
+      "dove_andrebbe": "fase1.py, passo 3 («cosa e' archivio, cosa e' superato»), e la domanda «perche' questa regola e' cosi'» di rumblingstone-playtest §7",
+      "perche_non_ora": "ADR-0069 tiene la storia delle scelte nel sorgente (<!-- storico -->, «correzione del playtest, rilievo N»): finche' i file che cambiano spesso la portano scritta, leggere git non aggiunge niente",
+      "stato": "in attesa",
+      "condizione": {
+        "misura": "file_rimaneggiati_senza_storia",
+        "giorni": 60,
+        "commit_minimi": 10,
+        "soglia_file": 3,
+        "descrizione": "almeno 3 file di gioco (master, stand-alone, Drappo) con 10 o piu' commit negli ultimi 60 giorni e nessuna riga di storia nel sorgente"
+      },
+      "quando_scatta": "si apre il lotto L10 di PIANO-AGENT-SKILLS-ESTERNE: adozione con ADR-0010, licenza e attribuzione come per lo scanner, e la voce passa a 'da adottare'"
+    }
+  ]
+}

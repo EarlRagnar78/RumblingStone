@@ -28,3 +28,12 @@ pytest>=8.0
 # dei due file. Gira in CI, non bloccante per il primo mese. Licenza
 # Apache-2.0. In locale: `pip-audit -r requirements-dev.txt`.
 pip-audit>=2.10
+
+# D7 di PIANO-CICLO-DI-SESSIONE-E-MENU (DM, 2026-09-25: sì). Legge il PDF dei
+# volumi per misurare righe sovrapposte, testo sul bordo e apparato di lavoro
+# rimasto in stampa (`validate_corredo.py`, `validate_booklets.py --stampa`).
+# Licenza AGPL-3.0 (o commerciale Artifex): si usa senza modifiche, solo per
+# verificare, in locale e in CI. Non si distribuisce col repo e non gira come
+# servizio di rete, quindi l'AGPL non chiede niente al repo. Per questo sta
+# qui e non in requirements.txt: al DM non serve per stampare.
+pymupdf>=1.24

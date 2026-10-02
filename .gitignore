@@ -343,8 +343,9 @@ scripts/comfyui-local/ComfyUI/
 # Export VTT: artefatti locali di export_uvtt.py (import nativo Foundry/Roll20)
 **/rendered/vtt/
 
-# Sorgenti Typst generati dai manifest dei booklet (--keep-typ): artefatti
-**/homebrew/*.typ
+# Sorgenti Typst generati dai manifest dei booklet (--keep-typ): artefatti.
+# Anche nelle sottocartelle: i volumi di ARC-07 stanno in homebrew/<sessione>/.
+**/homebrew/**/*.typ
 
 # Eccezione al blocco «*.jpg» qui sopra, che serve a tenere fuori foto e scansioni.
 # Queste sei sono le derivate leggere dei ritratti dipinti (~100 KB l'una): le
@@ -359,6 +360,21 @@ scripts/comfyui-local/ComfyUI/
 # Come si rigenerano: python3 scripts/build_image_derivatives.py \
 #   "07_il Portale Della Forgia Eterna/Immagini" --max 1600
 !07_il Portale Della Forgia Eterna/Immagini/web/*.jpg
+
+# Stessa ragione per i ritratti dei PG (serata della resurrezione, 2026-09-24):
+# i PNG di Durik pesano 7,5 MB l'uno e le schede da stampa li userebbero così.
+# Come si rigenerano: python3 scripts/build_image_derivatives.py PG/Immagini
+!PG/Immagini/web/*.jpg
+
+# I ritratti dell'ARC-07 generati con un servizio (Canva, 2026-09-25): senza seme
+# non si rifanno, quindi il file È il sorgente e va versionato (ADR-0019 §2-bis).
+# Il percorso è quello dell'atlante, PROMPT-IMMAGINI-07ILP.md, schede R1-R7.
+!07_il Portale Della Forgia Eterna/Immagini/ritratti/*.jpg
+!07_il Portale Della Forgia Eterna/Immagini/ritratti/*.webp
+# Le tavole stanno accanto al file dei prompt, col nome dell'id (§3 di
+# PROMPT-RITRATTI-E-TAVOLE-ARC07.md), per la stessa ragione.
+!07_il Portale Della Forgia Eterna/Immagini/tavola-*.jpg
+!07_il Portale Della Forgia Eterna/Immagini/tavola-*.webp
 
 # Texture per il render 3D delle mappe: CC0 riscaricabili, non master (ADR-0003).
 # La convenzione delle cartelle sta in scripts/blender/texture/README.md.

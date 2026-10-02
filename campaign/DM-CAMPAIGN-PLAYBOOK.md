@@ -90,7 +90,7 @@ il problema non è inventarli, è **usarli**:
    furtività del monaco, la Corona che comprende le lingue. Costruisci
    infiltrazioni dove **il fallimento è l'esposizione, non la morte** — così
    possono provarci senza rischiare un TPK. Esemplare già scritto:
-   `ARC07-DEF-4` SCENA 3, «Infiltrazione e Zog'tar».
+   `ARC07-DEF-4` Scene 6-8, dal mare di tende a Zog'tar.
 
 ### Dove metterlo, in ordine di calendario
 

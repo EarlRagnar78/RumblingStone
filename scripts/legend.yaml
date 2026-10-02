@@ -146,6 +146,23 @@ symbols:
       obscurement: none
       swim: true
       nameable: false
+  # 🌫 RIPRESA-PR 4j-4 (2026-09-24), dal ramo della PR #42 (luglio): l'aria
+  # dove non c'e' pavimento e la gravita' non e' quella normale. ARC07-MAPPE-
+  # DEFINITIVO lo usava gia' come simbolo locale con due regole diverse: in
+  # map02 e' la gravita' laterale da non attraversare, in map03 lo zero-G dove
+  # si fluttua. L'etichetta dice solo cio' che hanno in comune e rimanda alla
+  # nota della mappa. Terreno, non muro e non pericolo: la voragine da cui si
+  # cade ha gia' il suo glifo (🕳). Niente altezza per la catena 3D, come 🔳
+  # (ADR-0042).
+  "🌫":
+    label: "Vuoto / aria (niente pavimento, gravita' alterata: vale la nota della mappa)"
+    render: {mode: fill, pat: t_void, fill: "#c9d2ce"}
+    function:
+      blocks_movement: false
+      blocks_sight: false
+      cover: none
+      obscurement: none
+      nameable: false
   "🌊":
     label: "Acqua / corrente"
     render: {mode: fill, pat: t_water, fill: "#6aa5c4", altezza_m: -0.75, texture: acqua}

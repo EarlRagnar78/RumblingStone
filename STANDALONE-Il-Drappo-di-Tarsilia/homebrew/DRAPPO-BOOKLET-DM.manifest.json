@@ -92,28 +92,8 @@
       "tag": "dm"
     },
     {
-      "title": "XIV · Playtest alfa",
-      "file": "../PLAYTEST-ALFA.md",
-      "tag": "dm"
-    },
-    {
-      "title": "XV · Le mappe",
+      "title": "XIV · Le mappe",
       "file": "../ALLEGATI/mappe/README.md",
-      "tag": "dm"
-    },
-    {
-      "title": "XVI · IP e licenze",
-      "file": "../IP-E-LICENZE.md",
-      "tag": "dm"
-    },
-    {
-      "title": "XVII · Stato del modulo (da copiare per gruppo)",
-      "file": "../STATO-DEL-MODULO.md",
-      "tag": "dm"
-    },
-    {
-      "title": "XVIII · Schede di feedback — da alfa a beta",
-      "file": "../PLAYTEST-SCHEDA-FEEDBACK.md",
       "tag": "dm"
     }
   ]

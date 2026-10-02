@@ -114,7 +114,7 @@ Therysol, che ha cercato il Collezionista per vendetta, lo trova prima del party
 
 ## 2.1 — La Revisione del Ghostlord
 
-Nella continuità della Cannath Vale, il **Signore dei Fantasmi** (adattato per la localizzazione FR) è **Arcano Zeth il Murato**, un lich Netherese-era che non ha scelto la sua condizione. Era il **mastro costruttore** delle prime gallerie di Hammerfist — un nanico umano (mezz'elfo in realtà) che aveva legato la sua anima alla montagna per proteggere il suo popolo da un'invasione phaerimm, credendo di eseguire un rituale di *Consecration* di Silvanus. Fu ingannato da un cultista di Shar che sostituì i componenti del rituale con quelli di una Lichificazione.
+Nella continuità della Cannath Vale, il **Signore dei Fantasmi** (adattato per la localizzazione FR) è **Arcano Zeth il Murato**, un lich che non ha scelto la sua condizione, fatto mille anni fa (≈372 DR). Era il **mastro costruttore** delle prime gallerie di Hammerfist — un nanico umano (mezz'elfo in realtà) che aveva legato la sua anima alla montagna per proteggere il suo popolo dall'orda di Zog'tar che assediava Hammerfist, credendo di eseguire un rituale di *Consecration* di Silvanus. Fu ingannato da un cultista di Shar che sostituì i componenti del rituale con quelli di una Lichificazione.
 
 **La connessione con la Corona**: Le rune incise nella Stanza Runica (Arc 05) non sono casuali — sono il *testamento* di Zeth, che descrive come fu tradito. Hella, con le sue capacità druidiche e la nuova affinità per la pietra come Treant Hybrid, è **l'unica che può leggere correttamente** quelle rune quando le trascrizioni vengono mostrate alla luce della luna (Spellcraft DC 15 + bardic knowledge equivalent per Druidi, o Survival DC 20 per "sentire" la pietra che parla).
 
@@ -130,7 +130,7 @@ I suoi spettri e leoni fantasma sono le *anime perdute* delle guardie di Hammerf
 *"Cosa vuoi, davvero?"*
 
 Risposta di Zeth (dopo Diplomacy DC 25 o dopo che Hella mostra la trascrizione delle rune):  
-*"Voglio dormire. Ho difeso la montagna per ottocento anni. Voglio che qualcuno sappia che l'ho fatto senza tradire nessuno. E poi voglio non esistere più."*
+*"Voglio dormire. Ho difeso la montagna per mille anni. Voglio che qualcuno sappia che l'ho fatto senza tradire nessuno. E poi voglio non esistere più."*
 
 **Il Problema**: Distruggere un lich richiede distruggere il filogactery. Zeth sa dove si trova (una cripta sotto la Bandit Wastes). Ma portare il party lì richiede 3 giorni di viaggio — durante i quali Rethmar perde la difesa soprannaturale che i leoni fantasma di Zeth potrebbero fornire nella Notte dei Drow.
 
@@ -550,11 +550,11 @@ La terza opzione richiede 6 ore di Tordek (che ha altre priorità) e produce un 
 - Spell DC: 10 + spell level + 5 (INT)
 - Aura Fear: 60 ft, Will DC 18 o Panicked
 
-**La cosa importante**: Zeth non vuole combattere. Non ha combattuto in 800 anni e non vuole farlo adesso. Se il party lo attacca, si difende solo abbastanza da fuggire — non vuole uccidere. Ha abbastanza magia difensiva da rendere la fuga garantita.
+**La cosa importante**: Zeth non vuole combattere. Non ha combattuto in mille anni e non vuole farlo adesso. Se il party lo attacca, si difende solo abbastanza da fuggire — non vuole uccidere. Ha abbastanza magia difensiva da rendere la fuga garantita.
 
 **Informazioni che può fornire**:
 
-- Mappa completa dei tunnel sotterranei sotto e attorno a Rethmar (li ha costruiti lui, 800 anni fa)
+- Mappa completa dei tunnel sotterranei sotto e attorno a Rethmar (li ha costruiti lui, mille anni fa)
 - La storia vera delle Rune della Stanza Runica (Arc 05) — include implicazioni sulla Corona di Adamantio che il party non ha ancora capito
 - La posizione del phylactery (se il party guadagna la sua fiducia con Diplomacy DC 25+)
 

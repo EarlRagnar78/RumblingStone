@@ -133,8 +133,10 @@ mano dal primo giorno.
 
 **Effetto**: **Morale −2** invece di −3, e **Onore invariato** — il colpo va su Vanna,
 non sul fantino. Le contro-mosse del giocatore di Vanna valgono uguale.
+<!-- storico -->
 *(Correzione del playtest alfa, rilievo I: con la confessione al Giorno 2, la scena
 evaporava in sei minuti e il Giorno 3 perdeva il suo unico colpo basso.)*
+<!-- /storico -->
 
 ---
 

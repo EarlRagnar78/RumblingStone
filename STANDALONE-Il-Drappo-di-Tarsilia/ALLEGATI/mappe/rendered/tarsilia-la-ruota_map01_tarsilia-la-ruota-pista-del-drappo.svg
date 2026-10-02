@@ -311,5 +311,5 @@
 <text x="969.0" y="1789" font-size="11" fill="#3b2e1e">🌉 — Ponte / passerella</text>
 <use href="#pr_door" x="942.0" y="1798" width="18" height="18"/>
 <text x="969.0" y="1811" font-size="11" fill="#3b2e1e">🚪 — Porta / ingresso</text>
-<text x="46" y="1865" font-size="9" font-style="italic" fill="#7a6a50">fonte: tarsilia-la-ruota.md · SVG generato da scripts/render_map_svg.py (stile pergamena) — non modificare a mano</text>
+<!-- fonte: tarsilia-la-ruota.md · SVG generato da scripts/render_map_svg.py (stile pergamena) · non modificare a mano -->
 </svg>

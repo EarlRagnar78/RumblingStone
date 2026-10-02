@@ -1,5 +1,17 @@
 # Spells — D&D 3.5 SRD Reference
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- Spell Mechanics
+- Spell Descriptors
+- Schools of Magic
+- Key Spells by Level (SRD Core)
+- Metamagic Reference
+- Spell Interaction Rules
+- Liste di classe — l'ancora delle liste del generatore
+<!-- /indice -->
+
 Source: d20srd.org/srd/spells/ and d20srd.org/srd/magicOverview.htm
 
 Live spell lookup: https://www.imarvintpa.com/dndLive/spells.php

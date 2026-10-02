@@ -1,5 +1,18 @@
 # Forgotten Realms — Prestige Classes (D&D 3.5)
 
+<!-- indice: generato da scripts/indice_references.py, non scriverlo a mano -->
+**In questo file**
+
+- FRCS Core Prestige Classes
+- Champions of Valor / Valor-Aligned PrCs
+- Races of Faerûn PrCs
+- Unapproachable East PrCs
+- Shining South PrCs
+- Other Notable PrCs
+- Initiate Feats (Deity-Specific, FRCS)
+- Expanded Sourcebooks — Prestige Classes (FR Context)
+<!-- /indice -->
+
 Sources: FRCS (2001), Player's Guide to Faerûn (2004), Champions of Valor (2005),
 Champions of Ruin (2005), Races of Faerûn (2003), various FR splatbooks.
 

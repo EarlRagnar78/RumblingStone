@@ -237,7 +237,7 @@ HEAT ZONES (Overlay):
 
 - **4 Elementali del Fuoco (Grande)**: **FE1** pattuglia la piattaforma Ovest (carica i PG); **FE2** è **nella lava sotto il Ponte Centro** ed emerge di sorpresa all'attraversamento; **FE3** pattuglia la piattaforma Est (imboscata); **FE4** vaga libero nella lava (attacchi in emersione, globi di lava).
 - **Tre modi di attraversare** (scelta dei PG): **A — Ponti** (più sicuro ma sorvegliato: FE2 sotto, FE3 a Est); **B — dritti sulla Ovest** (evita FE2 ma FE1 blocca ed è "caldo": 1d6/round); **C — saltare la lava** (*Salto* 9 m ci arriva a malapena sui 10,5 m; *Volare* banalizza; *Levitazione* lenta ma sicura — ⚠ *dissolvi* a mezz'aria = morte).
-- **Morale**: elementali evocati/territoriali, combattono senza resa `[INFERRED]`.
+- **Morale**: elementali evocati/territoriali, combattono senza resa.
 
 ### 🔄 EVOLUZIONE (companion T5b — rotta e calore)
 

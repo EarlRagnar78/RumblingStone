@@ -7,8 +7,11 @@ description: >
   di Adamantio, Ring of Chaotic Illumination, Bracieri Gemelli, Collana dei
   Semi Eterni, Cuore di Moradin), campaign villains/allies (Il Collezionista,
   Sonjak, Therysol), arc progression, DM strategy (Shine Time, State Machine,
-  Triangolo di Rischio), and coherence constraints. Trigger on PC names, "what
-  arc", "what's next session", "Shine Time", "State Machine", "RumblingStone".
+  Triangolo di Rischio), and coherence constraints. Trigger on PC names
+  ("Thorik", "Tordek", "Hella", "Artemis"), "canone", "coerenza", "arco",
+  "Bestiario", "PNG", "Hammerfist", "Forgia", "errata", "what arc",
+  "what's next session", "Shine Time", "State Machine", "RumblingStone".
+  Not for the standalone Drappo di Tarsilia, which is outside this campaign.
 ---
 
 # RumblingStone — Campaign Reference

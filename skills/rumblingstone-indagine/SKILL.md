@@ -1,23 +1,20 @@
 ---
 name: rumblingstone-indagine
 description: >
-  Come si costruisce e si gioca un CASO in RumblingStone: misteri, enigmi,
-  indizi che sembrano slegati e che si ricompongono nel disegno finale, e il
-  congegno arcano o aberrante che li spiega tutti insieme. Copre il nodo
-  d'indizio a tre strati (Fatto/Lettura/Nome), le SEI PORTE che fanno entrare
-  nell'indagine anche i PG senza un solo grado speso in abilità (prove grezze
-  di FOR/DES/COS/INT/SAG/CAR), il registro delle ricompense (Acume, Perizia,
-  Metodo — ADR-0022), la scena di ricomposizione e la gestione del vicolo
-  cieco. Use WHENEVER si scrive, si prepara o si gioca un'indagine: "indagine",
-  "caso", "mistero", "giallo", "enigma", "indizio", "indizi", "chi è stato",
-  "omicidio", "sparizione", "investigazione", "deduzione", "ricomposizione",
-  "vicolo cieco", "i giocatori non trovano niente", "il gruppo non ha un
-  ladro", "prova grezza", "punti Acume", "Perizia", "congegno", "macchina
-  arcana", "rituale da fermare", "cospirazione", "innesco in piena vista",
-  "trappola scenografica", "cosa stanno costruendo i villain",
-  "chi è l'assassino", "impostore", "non è chi dice di essere",
-  "cospirazione", "sparizione", "è scomparso", "accusa falsa",
-  "hanno incastrato il PG", "che tipo di mistero".
+  Come si costruisce e si gioca un CASO in RumblingStone: indizi slegati che si
+  ricompongono nel disegno finale, e il congegno arcano o aberrante che li
+  spiega. Copre il nodo d'indizio a tre strati, le SEI PORTE (prove grezze di
+  caratteristica per i PG senza gradi), il registro Acume, Perizia, Metodo
+  (ADR-0022), la ricomposizione e il vicolo cieco. Use WHENEVER si scrive, si
+  prepara o si gioca un'indagine: "indagine", "caso", "mistero", "giallo",
+  "enigma", "indizio", "indizi", "chi è stato", "omicidio", "sparizione",
+  "investigazione", "deduzione", "ricomposizione", "vicolo cieco", "i giocatori
+  non trovano niente", "il gruppo non ha un ladro", "prova grezza", "punti
+  Acume", "Perizia", "congegno", "macchina arcana", "rituale da fermare",
+  "cospirazione", "innesco in piena vista", "trappola scenografica", "cosa
+  stanno costruendo i villain", "chi è l'assassino", "impostore", "non è chi
+  dice di essere", "è scomparso", "accusa falsa", "hanno incastrato il PG",
+  "che tipo di mistero".
 ---
 
 # RumblingStone — Il caso: indagine, enigmi, ricomposizione

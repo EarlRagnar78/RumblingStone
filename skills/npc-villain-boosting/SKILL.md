@@ -6,7 +6,8 @@ description: >
   advancement (HD, templates, class levels) with Pathfinder 1e simple templates
   and CR benchmarks. Trigger on "boost", "potenziare", "buff the villain",
   "too easy", "too hard", "upscale", "the party is level 13 and the monster is
-  CR 9", "make this boss survive", "advance this monster", "add class levels".
+  CR 9", "make this boss survive", "advance this monster", "add class levels", "potenziato", "più forte",
+  "più potente", "statblocco", "stat block", "template", "archetipi", "GS".
 ---
 
 # NPC / Villain / Monster Boosting — When, Whether, How

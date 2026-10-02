@@ -194,8 +194,10 @@ diventerebbe subito una copia vecchia.
 | 7 | Leocorno | `golarion/07-unicorno.svg` |
 | 8 | Onda | `golarion/08-onda.svg` |
 
+<!-- storico -->
 ⚠️ **I nomi dei file sono quelli della serie di origine** e non corrispondono ai nomi
 di Tarsilia: il file `04-istrice.svg` è lo scudo del'**Istrice**. Il cartiglio
 dipinto dentro lo scudo porta ancora il motto della serie di origine — per l'uso a
 questo tavolo va bene, per una stampa pulita vanno rigenerati coi motti del §1. È
 tracciato come Lotto 3 in `plans/PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md`.
+<!-- /storico -->

@@ -781,5 +781,140 @@
       "doc_antitesi": true,
       "calchi": true
     }
+  },
+  "C-con-1": {
+    "S06": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S07": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": true,
+      "chiude_che_fate": true,
+      "hdywtdt": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S08": {
+      "ancore": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S09": {
+      "dialogo_forma": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S10": {
+      "doc_senza_box": true,
+      "doc_trattini": true,
+      "doc_conteggi": true,
+      "doc_antitesi": true,
+      "calchi": true
+    }
+  },
+  "C-con-2": {
+    "S06": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S07": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": true,
+      "chiude_che_fate": true,
+      "hdywtdt": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S08": {
+      "ancore": true,
+      "calchi": false,
+      "tic_gioco": true
+    },
+    "S09": {
+      "dialogo_forma": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S10": {
+      "doc_senza_box": true,
+      "doc_trattini": true,
+      "doc_conteggi": true,
+      "doc_antitesi": true,
+      "calchi": true
+    }
+  },
+  "C-con-3": {
+    "S06": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S07": {
+      "box_presente": true,
+      "box_tetto_righe": true,
+      "box_un_nome": true,
+      "box_senza_parentesi": true,
+      "box_p1": true,
+      "box_senza_sembra": true,
+      "box_senza_metrature": true,
+      "box_etichettato": true,
+      "chiude_che_fate": true,
+      "hdywtdt": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S08": {
+      "ancore": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S09": {
+      "dialogo_forma": true,
+      "calchi": true,
+      "tic_gioco": true
+    },
+    "S10": {
+      "doc_senza_box": true,
+      "doc_trattini": true,
+      "doc_conteggi": true,
+      "doc_antitesi": true,
+      "calchi": true
+    }
   }
 }

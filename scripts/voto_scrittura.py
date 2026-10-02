@@ -109,7 +109,14 @@ def _box_etichettati(testo: str) -> int:
         j = i - 1
         while j >= 0 and righe[j].strip().lstrip(">").strip() == "":
             j -= 1
-        if j >= 0 and mc._ETICHETTA.search(righe[j]):
+        # Il paragrafo subito sopra, non la sua ultima riga: l'etichetta va a
+        # capo quando porta una condizione («**Read-aloud (X).** *Da leggere
+        # solo se…*»). Trovato sulla tornata C, due bocciature su tre.
+        paragrafo = []
+        while j >= 0 and righe[j].strip().lstrip(">").strip() != "":
+            paragrafo.append(righe[j])
+            j -= 1
+        if any(mc._ETICHETTA.search(r) for r in paragrafo):
             n += 1
     return n
 
@@ -200,7 +207,13 @@ def voti_delle_corse(corse: Path = CORSE, casi: "list[dict] | None" = None) -> d
         if corse.is_dir() else []
     for d in cartelle:
         out[d.name] = {}
+        # Una tornata puo' girare su un insieme solo (la C, sulla sola
+        # verifica): l'insieme di cui la corsa non ha scritto nemmeno un caso
+        # non e' stato chiesto, e non vale zero.
+        scritti = {c["insieme"] for c in casi if (d / f"{c['id']}.md").is_file()}
         for caso in casi:
+            if caso["insieme"] not in scritti:
+                continue
             f = d / f"{caso['id']}.md"
             testo = f.read_text(encoding="utf-8") if f.is_file() else None
             out[d.name][caso["id"]] = vota(testo, caso)
@@ -241,7 +254,7 @@ def stampa(voti: dict, casi: "list[dict]") -> None:
         celle = []
         for ins in ("taratura", "verifica"):
             ok, tot = rie[cond].get(ins, [0, 0])
-            celle.append(f"{ok}/{tot} ({100 * ok // max(tot, 1)}%)")
+            celle.append(f"{ok}/{tot} ({100 * ok // tot}%)" if tot else "—")
         print(f"| {cond} | {celle[0]} | {celle[1]} |")
     for ins in ("taratura", "verifica"):
         print(f"\nFallimenti in {ins}:")

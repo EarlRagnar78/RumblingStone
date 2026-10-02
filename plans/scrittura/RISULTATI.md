@@ -14,6 +14,7 @@ allineati ai testi.
 | A-senza | tre agenti senza le skill (una corsa rifatta, vedi sotto) | 86/96 (89%) | 81/99 (81%) |
 | A-con | tre agenti con le skill com'erano il 2026-10-01 | 94/96 (97%) | 96/99 (96%) |
 | B-con | tre agenti con le skill corrette sui fallimenti di taratura | 96/96 (100%) | 99/99 (100%) |
+| C-con | tre agenti con le skill di L12 (indici, §1-bis, domanda 8 con `ciclo_prosa`), solo verifica | — | 98/99 (98%) |
 
 Casi superati per intero (tutti i controlli), su tre corse:
 
@@ -88,3 +89,31 @@ incoerenze nel canone. Sono per il DM, non per le skill:
 - DEF-5 §0-bis fa svanire all'alba le pozioni antiche; DEF-4 §6 (canone del
   2026-09-25) dice che torna tutto ciò che i PG portano. `ARC08-11-PONTE-ARRIVO.md`
   dà ancora a Thorik «−2 COS», contro «−4 DES / +2 COS / +4 CAR» di `state.md`.
+
+## La tornata C (L12, 2026-10-02)
+
+Tre agenti sui soli casi di verifica, con le skill come le ha lasciate L12:
+l'indice in testa ai references, i casi veri di `italiano-nativo` §1-bis, la
+domanda 8 della self-check. **Tutti e tre hanno eseguito `ciclo_prosa.py
+segnala` sui loro testi prima di consegnarli**, senza che il prompt lo
+nominasse; uno ha trovato un'antitesi con trattino, l'ha corretta e ha
+rimisurato. È la prima prova che la domanda 8 arriva da sola.
+
+98 su 99, contro il 100% della tornata B. La sola bocciatura è un falso
+positivo del rilevatore dei calchi: «la **sua** voce nella tua testa», detto
+della voce di Durik, cioè di un altro. È il confine che §1-bis scrive per il
+possessivo (dice *di chi*), e il rilevatore non può vederlo. Contato a mano, C
+vale quanto B.
+
+Due correzioni al metro, tutte e due più severe della norma, rimisurate su
+tutte le corse senza che A o B cambino di un voto:
+
+- l'etichetta che va a capo («**Read-aloud (BG3 lead).** *Da leggere solo
+  se…*») non contava, perché si guardava l'ultima riga sopra il box e non il
+  paragrafo. Due bocciature su tre della tornata C;
+- una tornata che gira su un insieme solo valeva zero sull'altro. Ora un
+  insieme che la corsa non ha scritto vale «—».
+
+Le corse segnalano di nuovo le tre incoerenze di canone della tornata B, e una
+quarta: il Rubino ha tre descrizioni diverse («Cuore della Leggenda» in
+`DEF-4` e `DEF-5`, altre due altrove). Sono per il DM.

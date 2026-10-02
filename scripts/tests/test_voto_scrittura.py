@@ -52,6 +52,11 @@ class TestIControlliDeiBox(unittest.TestCase):
         assert _controlli(dentro)["box_etichettato"]
         assert _controlli(fuori)["box_etichettato"]
 
+    def test_etichetta_che_va_a_capo(self):
+        testo = ("**Read-aloud (BG3 lead).** *Da leggere solo se il gruppo\n"
+                 "ha scelto la porta.*\n\n> *Un altare al centro.*\n")
+        assert _controlli(testo)["box_etichettato"]
+
     def test_etichetta_lontana_non_vale(self):
         testo = "**Read-aloud (LotR lead).**\n\nPer il DM.\n\n> *Un altare.*\n"
         assert not _controlli(testo)["box_etichettato"]
@@ -78,6 +83,17 @@ class TestIlVoto(unittest.TestCase):
     def test_un_testo_che_manca_fallisce_tutto(self):
         caso = {"id": "X", "genere": "apertura", "controlli": ["box_presente", "calchi"]}
         assert vs.vota(None, caso) == {"box_presente": False, "calchi": False}
+
+    def test_un_insieme_non_chiesto_non_vale_zero(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            corsa = Path(d) / "C-con-1"
+            corsa.mkdir()
+            (corsa / "S06.md").write_text("> *x*\n", encoding="utf-8")
+            casi = [{"id": "S01", "insieme": "taratura", "genere": "apertura", "controlli": ["box_presente"]},
+                    {"id": "S06", "insieme": "verifica", "genere": "apertura", "controlli": ["box_presente"]}]
+            voti = vs.voti_delle_corse(Path(d), casi)
+            assert set(voti["C-con-1"]) == {"S06"}
 
     def test_le_ripetizioni_si_sommano(self):
         assert vs.condizione("A-con-2") == "A-con"

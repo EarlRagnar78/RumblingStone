@@ -422,7 +422,7 @@ dall'instradamento all'**uscita**: cosa scrive un agente con la skill e senza.
       corretto e riapplicato a tutte le corse
 - [x] `plans/scrittura/RISULTATI.md`, 22 test del voto, la voce nel manifest
 
-### L12 · Dal segnalare al correggere, e le skill secondo la guida — 🟡 (2026-10-02) · D15, D16 chiuse
+### L12 · Dal segnalare al correggere, e le skill secondo la guida — ✅ (2026-10-02) · D15, D16 chiuse; D17 al DM
 
 `[engine: Opus, sessione principale + agenti di corsa · effort: alto · qualità: tornata C ≥ B sulla verifica, e la correzione non cambia un fatto]` — **G**
 
@@ -474,7 +474,12 @@ sui tic del §9.
       `[x] auto` nel documento. LanguageTool come servizio facoltativo
       (`--languagetool URL`, LGPL fuori dal repo); dal container è bloccato
       dalla rete. ADR-0077 §7-8, 77 norme, 26 test
-- [ ] tornata C sulla verifica, e il ciclo provato sui testi delle corse
+- [x] tornata C sulla verifica: 98/99, e l'unica bocciatura è un falso
+      positivo sul confine di §1-bis (contata a mano, C = B). Tutti e tre gli
+      agenti hanno usato `ciclo_prosa.py segnala` da soli. Due correzioni al
+      metro (l'etichetta che va a capo, l'insieme non chiesto), A e B
+      invariati. Il ciclo provato sui testi delle corse (A-senza-4/S04) e sui
+      master (lotto D13)
 
 ## 5 · Decisioni aperte al DM
 

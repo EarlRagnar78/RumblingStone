@@ -129,5 +129,79 @@ class TestLaRigaDiRevisione(unittest.TestCase):
         self.assertTrue(cp.alza_revisione(t, "2026-10-02").startswith("---\ntitolo: x\n---\n<!-- revisione"))
 
 
+class TestLaLettura(unittest.TestCase):
+    def test_gulpease_sulla_formula(self):
+        # 1 frase, 7 parole, 48 lettere: 89 + (300 - 480) / 7 = 63,3
+        self.assertEqual(cp.lettura("Il guardiano attraversa lentamente la sala abbandonata.\n")["gulpease"], 63.3)
+
+    def test_la_scala_si_ferma_a_cento(self):
+        self.assertEqual(cp.lettura("Il cane dorme. Il gatto no.\n")["gulpease"], 100.0)
+
+    def test_frasi_tutte_uguali_hanno_ritmo_zero(self):
+        self.assertEqual(cp.lettura("Il cane dorme. Il gatto beve. Il topo corre.\n")["ritmo"], 0.0)
+
+    def test_si_legge_il_box_se_c_e(self):
+        testo = "Una nota lunghissima per il DM, che non si legge.\n\n> *Il cane dorme.*\n"
+        self.assertEqual(cp.lettura(testo)["frasi"], 1)
+
+
+class TestLApplicazioneAutomatica(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        d = Path(self.tmp.name)
+        self.orig, self.risc = d / "orig.md", d / "risc.md"
+        self.orig.write_text("> *La sala sembra vuota. Un altare.*\n\nNota per il DM.\n", encoding="utf-8")
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def _mods(self, dopo):
+        self.risc.write_text(dopo, encoding="utf-8")
+        prima = self.orig.read_text()
+        mods, _ = cp._modifiche(prima, dopo, cp.segnala(prima))
+        return prima, mods
+
+    def test_motivata_e_innocua_va_da_sola(self):
+        prima, mods = self._mods("> *La sala è vuota. Un altare.*\n\nNota per il DM.\n")
+        self.assertEqual(cp.automatiche(prima, self.risc.read_text(), mods), {1})
+
+    def test_non_motivata_resta_al_lettore(self):
+        prima, mods = self._mods("> *La sala sembra vuota. Un altare.*\n\nNota per il master.\n")
+        self.assertEqual(cp.automatiche(prima, self.risc.read_text(), mods), set())
+
+    def test_se_cambia_un_fatto_resta_al_lettore(self):
+        self.orig.write_text("> *La sala sembra vuota. Un altare.*\n\nCD 15.\n", encoding="utf-8")
+        prima, mods = self._mods("> *La sala è vuota, CD 18. Un altare.*\n\nCD 15.\n")
+        self.assertEqual(cp.automatiche(prima, self.risc.read_text(), mods), set())
+
+    def test_applica_auto_lo_scrive_nel_documento(self):
+        self.risc.write_text("> *La sala è vuota. Un altare.*\n\nNota per il DM.\n", encoding="utf-8")
+        testo, _ = cp.revisione(self.orig, self.risc)
+        rev = Path(self.tmp.name) / "REVISIONE.md"
+        rev.write_text(testo, encoding="utf-8")
+        with mock.patch.object(cp, "_ramo", return_value="claude/prova"):
+            self.assertEqual(cp.applica(rev, "2026-10-02", auto=True), 0)
+        self.assertIn("| [x] auto | 1 |", rev.read_text())
+        self.assertIn("è vuota", self.orig.read_text())
+
+
+class TestLanguageTool(unittest.TestCase):
+    def test_senza_server_non_segnala_niente(self):
+        with mock.patch.object(cp.urllib.request, "urlopen", side_effect=OSError("rete")):
+            self.assertEqual(cp.languagetool("Testo.", "http://localhost:8081"), [])
+
+    def test_le_risposte_diventano_segnalazioni(self):
+        import io
+        import json as _json
+        risposta = {"matches": [{"offset": 7, "message": "Concordanza",
+                                 "replacements": [{"value": "le case"}]}]}
+        finto = mock.MagicMock()
+        finto.__enter__.return_value = io.StringIO(_json.dumps(risposta))
+        with mock.patch.object(cp.urllib.request, "urlopen", return_value=finto):
+            seg = cp.languagetool("Riga.\nla case", "http://localhost:8081")
+        self.assertEqual((seg[0].riga, seg[0].norma), (2, "grammatica"))
+        self.assertIn("le case", seg[0].dettaglio)
+
+
 if __name__ == "__main__":
     unittest.main()

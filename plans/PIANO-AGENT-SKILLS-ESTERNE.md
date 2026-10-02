@@ -459,6 +459,13 @@ sui tic del §9.
       una parola diventati tre modifiche; il secondo giro riporta il residuo
       della modifica non spuntata. La prova ha trovato un buco di D13 (il
       participio «sembrato»), corretto alla fonte
+- [x] l'applicazione automatica di quello che migliora (richiesta del DM del
+      2026-10-02): `applica --auto` applica le modifiche motivate che, da
+      sole, non cambiano un fatto, non peggiorano un controllo e non
+      abbassano la lettura (Gulpease, ritmo delle frasi), e le segna
+      `[x] auto` nel documento. LanguageTool come servizio facoltativo
+      (`--languagetool URL`, LGPL fuori dal repo); dal container è bloccato
+      dalla rete. ADR-0077 §7-8, 77 norme, 26 test
 - [ ] tornata C sulla verifica, e il ciclo provato sui testi delle corse
 
 ## 5 · Decisioni aperte al DM

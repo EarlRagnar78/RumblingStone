@@ -75,6 +75,26 @@ dei due testi sta nella testata del documento, perché i numeri delle modifiche
 valgono solo su quel diff. E non applica se le modifiche spuntate cambiano un
 fatto.
 
+**7. Quello che è migliorativo si applica da solo, e il documento lo dice.**
+Aggiunto lo stesso giorno, su richiesta del DM (*«se migliorative applicarle
+anche in modo automatico»*). Una modifica è segnata «auto» se, presa da sola,
+soddisfa quattro condizioni: è motivata da una segnalazione; non cambia un
+fatto; non fa crescere il conto di nessuna norma e ne fa scendere almeno uno;
+non abbassa la lettura oltre la tolleranza (un punto di Gulpease, 0,05 di
+ritmo). `applica --auto` le applica e riscrive la loro riga come `[x] auto`,
+così chi legge il documento dopo vede cosa ha deciso la macchina. Le altre
+restano al lettore, e le non motivate restano sempre al lettore.
+
+**8. La lettura, prima e dopo.** Il documento riporta l'**indice Gulpease**
+(GULP, Università La Sapienza, 1988: `89 + (300 × frasi − 10 × lettere) /
+parole`, tarato sull'italiano) e il **ritmo**, cioè quanto varia la lunghezza
+delle frasi. Tutti e due si misurano sui box quando ci sono, perché sono quelli
+che si leggono ad alta voce. Non dicono se la prosa è bella. Dicono se una
+riscrittura l'ha resa più dura da seguire a voce o più piatta, che è il modo in
+cui una correzione di norma peggiora un testo senza che nessun controllo se ne
+accorga. Sulla prima prova la lettura ha fermato una modifica giusta per P1 che
+fondeva due frasi in una.
+
 ## Che cosa si prende dalla comunità, e con che licenza
 
 Nessuna riga di codice di terzi entra nel repo. Si prendono una sintassi e due
@@ -86,6 +106,8 @@ idee, riscritte con la sola stdlib (`difflib`, `hashlib`).
 | **Humanizer**, blader (`blader/humanizer`) | MIT | la regola «weak alone»: un segnale minore da solo non prova niente, conta il gruppo; e il divieto di inventare fatti mentre si riscrive | il controllo «tic minori in gruppo» e la garanzia sui fatti |
 | ***Wikipedia: Signs of AI writing*** | CC BY-SA 4.0 | la stessa regola, nella forma di una guida per i revisori | citata, nessun testo copiato |
 | Anthropic, ***Building effective agents*** | documentazione pubblica | il modello *evaluator-optimizer*: chi scrive e chi valuta sono due ruoli, e si gira finché il valutatore non ha più niente | l'ordine dei tre comandi |
+| **Indice Gulpease**, GULP (Lucisano e Piemontese, 1988) | formula pubblicata, nessuna licenza | la leggibilità tarata sull'italiano, in lettere e non in sillabe | la lettura prima e dopo, e la tolleranza dell'automatico |
+| **LanguageTool** (`languagetool-org/languagetool`) | LGPL 2.1 | il controllo grammaticale italiano, usato come **servizio** (`--languagetool URL`, per esempio un server locale): nessun suo file entra nel repo, quindi la LGPL non lo tocca | `segnala`, facoltativo e fuori dalla CI |
 
 I tic minori sono quelli che `italiano-nativo.md` §9.2-ter e §9.2-quater elenca
 già e lascia fuori da ogni controllo, con la ragione scritta: da soli sono
@@ -97,9 +119,13 @@ dell'etichetta di regia non conta, perché il giocatore non lo sente.
 
 - **Vale** e **proselint**: le regole sono in inglese, e tradurle vorrebbe dire
   scrivere un altro rilevatore senza la loro taratura.
-- **LanguageTool**, le regole italiane di `grammar.xml`: LGPL, e si appoggiano
-  alle etichette morfologiche del suo motore, che il repo non ha. Restano
-  un'idea per quando servirà un'analisi grammaticale vera.
+- **Le regole di LanguageTool copiate nel repo** (`grammar.xml` italiano):
+  LGPL, e si appoggiano alle etichette morfologiche del suo motore, che il repo
+  non ha. Il servizio sì, come sopra. Da questo container
+  `api.languagetool.org` è bloccato dalla politica di rete, ed è un motivo in più
+  per tenerlo facoltativo.
+- **Hunspell** con il dizionario italiano: vuole un binario fuori dalla stdlib,
+  e i nomi della campagna (322 nel registro) darebbero più rumore che errori.
 
 ## Conseguenze
 

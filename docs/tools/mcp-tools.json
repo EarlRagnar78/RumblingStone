@@ -2093,9 +2093,9 @@
     },
     {
       "name": "ciclo_prosa",
-      "description": "«Cosa è cambiato rispetto all'originale, perché, e cosa resta da correggere dopo che ho approvato?»\n\nL12 (D15 e D16 del 2026-10-02, ADR-0077): dal segnalare al correggere, con una revisione a due giri come fra revisore e autore. `segnala` riusa i rilevatori registrati e aggiunge la regola «debole da solo» di Humanizer (tic minori diversi nello stesso paragrafo); `revisione` scrive il documento da approvare, con ogni modifica in CriticMarkup, numerata, motivata da una norma, e le due garanzie (nessun controllo peggiora, nessun fatto cambia); `applica` porta nell'originale solo le modifiche spuntate, mai su main, e alza la riga `revisione-testo: rN`.",
+      "description": "«Cosa è cambiato rispetto all'originale, perché, e cosa resta da correggere dopo che ho approvato?»\n\nL12 (D15 e D16 del 2026-10-02, ADR-0077): dal segnalare al correggere, con una revisione a due giri come fra revisore e autore. `segnala` riusa i rilevatori registrati e aggiunge la regola «debole da solo» di Humanizer (tic minori diversi nello stesso paragrafo); `revisione` scrive il documento da approvare, con ogni modifica in CriticMarkup, numerata, motivata da una norma, e le due garanzie (nessun controllo peggiora, nessun fatto cambia); `applica` porta nell'originale solo le modifiche spuntate, mai su main, e alza la riga `revisione-testo: rN`. Il documento riporta anche la lettura prima e dopo (indice Gulpease e ritmo delle frasi); con `--auto` si applicano senza lettore le modifiche motivate che, da sole, non cambiano un fatto, non peggiorano un controllo e non peggiorano la lettura, e il documento le segna `[x] auto`. LanguageTool (LGPL) è un servizio facoltativo, mai in CI.",
       "use_case": "«Cosa è cambiato rispetto all'originale, perché, e cosa resta da correggere dopo che ho approvato?»",
-      "invocation": "python3 scripts/ciclo_prosa.py {segnala FILE | revisione ORIGINALE RISCRITTO [-o REVISIONE.md] | applica REVISIONE.md --data AAAA-MM-GG}",
+      "invocation": "python3 scripts/ciclo_prosa.py {segnala FILE [--languagetool URL] | revisione ORIGINALE RISCRITTO [-o REVISIONE.md] | applica REVISIONE.md --data AAAA-MM-GG [--auto]}",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -2118,6 +2118,14 @@
           "data": {
             "type": "string",
             "description": "La data della riga di revisione: non si deduce (ADR-0023)."
+          },
+          "languagetool": {
+            "type": "string",
+            "description": "URL di un server LanguageTool: aggiunge le segnalazioni grammaticali (facoltativo)."
+          },
+          "auto": {
+            "type": "boolean",
+            "description": "Applica anche le modifiche segnate «auto» e lo scrive nel documento di revisione."
           }
         },
         "required": [],

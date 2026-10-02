@@ -39,6 +39,10 @@ Solo stdlib. Deterministico: lo stesso input dà la stessa uscita.
 from __future__ import annotations
 
 import argparse
+import json
+import statistics
+import urllib.parse
+import urllib.request
 import difflib
 import hashlib
 import re
@@ -246,6 +250,64 @@ def confronta_fatti(prima: str, dopo: str) -> "list[str]":
     return out
 
 
+# ── la lettura: misure che non giudicano, ma si confrontano ─────────────────
+_FRASE = re.compile(r"[^.!?…]+[.!?…]+[»\"]?|[^.!?…]+$")
+
+
+def _testo_da_leggere(testo: str) -> str:
+    """I box, se ce ne sono (si leggono ad alta voce); altrimenti la prosa senza tabelle né codice."""
+    box = mc.box_read_aloud(testo)
+    if box:
+        return " ".join(mc._APERTURE.sub("", mc._ETICHETTA.sub("", " ".join(b))) for b in box)
+    righe = testo.splitlines()
+    return " ".join(mc._APERTURE.sub("", " ".join(righe[a:b + 1])) for a, b in _paragrafi(righe))
+
+
+def lettura(testo: str) -> "dict[str, float]":
+    """Indice Gulpease (GULP, Sapienza 1988: 89 + (300·frasi − 10·lettere)/parole) e ritmo.
+
+    Il **ritmo** è il coefficiente di variazione della lunghezza delle frasi:
+    vicino a zero, tutte le frasi sono lunghe uguali (il ritmo piatto che
+    Humanizer elenca fra i segni del testo generato); `italiano-nativo` §4 vuole
+    l'alternanza. Nessuna delle due misure dice se la prosa è bella: dicono se
+    la riscrittura l'ha resa più difficile da seguire a voce o più monotona.
+    """
+    t = _testo_da_leggere(testo)
+    parole = re.findall(r"[A-Za-zÀ-ÿ'’]+", t)
+    frasi = [f for f in _FRASE.findall(t) if re.search(r"\w", f)]
+    if not parole or not frasi:
+        return {"gulpease": 0.0, "ritmo": 0.0, "frasi": 0}
+    lettere = sum(len(w.replace("'", "").replace("’", "")) for w in parole)
+    lunghe = [len(re.findall(r"[A-Za-zÀ-ÿ'’]+", f)) for f in frasi]
+    cv = statistics.pstdev(lunghe) / statistics.mean(lunghe) if len(lunghe) > 1 else 0.0
+    g = 89 + (300 * len(frasi) - 10 * lettere) / len(parole)
+    return {"gulpease": round(min(100.0, max(0.0, g)), 1),     # la scala è 0-100
+            "ritmo": round(cv, 2), "frasi": len(frasi)}
+
+
+def languagetool(testo: str, url: str) -> "list[Segnalazione]":
+    """Le segnalazioni grammaticali di un server LanguageTool (LGPL), se ce n'è uno.
+
+    Facoltativo e fuori dalla CI: si usa come servizio, quindi la sua licenza
+    non entra nel repo (ADR-0077). Senza rete, o con un server che non
+    risponde, avvisa e non segnala niente.
+    """
+    dati = urllib.parse.urlencode({"text": testo, "language": "it"}).encode()
+    try:
+        with urllib.request.urlopen(url.rstrip("/") + "/v2/check", dati, timeout=30) as r:
+            risposta = json.load(r)
+    except (OSError, ValueError) as e:
+        print(f"⚠️ LanguageTool non raggiungibile ({e}): nessuna segnalazione grammaticale")
+        return []
+    fuori = []
+    for m in risposta.get("matches", []):
+        riga = testo.count("\n", 0, m.get("offset", 0)) + 1
+        proposta = ", ".join(x["value"] for x in m.get("replacements", [])[:3])
+        fuori.append(Segnalazione(riga, riga, "grammatica",
+                                  f"{m.get('message', '')}" + (f" → {proposta}" if proposta else "")))
+    return fuori
+
+
 # ── la revisione in CriticMarkup ─────────────────────────────────────────────
 _PAROLA = re.compile(r"\s+|[^\s]+")
 _PONTE = 3   # parole uguali al massimo fra due modifiche che si leggono come una
@@ -328,6 +390,38 @@ def _impronta(prima: str, dopo: str) -> str:
     return hashlib.sha256((prima + "\0" + dopo).encode("utf-8")).hexdigest()[:16]
 
 
+#: Quanto può scendere la lettura per una modifica applicata senza lettore. Un
+#: punto Gulpease è una parola lunga in più in un box; 0,05 di ritmo è una
+#: frase che si allunga. Oltre, la modifica va guardata da qualcuno.
+TOLLERANZA_GULPEASE = 1.0
+TOLLERANZA_RITMO = 0.05
+
+
+def automatiche(prima: str, dopo: str, mods: "list[Modifica]") -> "set[int]":
+    """Le modifiche che si possono applicare senza un lettore.
+
+    Quattro condizioni, ognuna sulla modifica **presa da sola**: è motivata da
+    una segnalazione; non cambia un fatto (nomi propri, numeri, CD); non fa
+    crescere il conto di nessuna norma, e ne fa scendere almeno uno; non rende
+    la lettura più dura né più piatta oltre la tolleranza. Le altre restano al DM.
+    """
+    m0, l0 = misure(prima), lettura(prima)
+    ok = set()
+    for m in mods:
+        if not m.norme:
+            continue
+        solo = applica_testo(prima, dopo, {m.numero})
+        if confronta_fatti(prima, solo):
+            continue
+        m1 = misure(solo)
+        l1 = lettura(solo)
+        lettura_ok = (l1["gulpease"] >= l0["gulpease"] - TOLLERANZA_GULPEASE
+                      and l1["ritmo"] >= l0["ritmo"] - TOLLERANZA_RITMO)
+        if all(m1[k] <= m0[k] for k in m1) and sum(m1.values()) < sum(m0.values()) and lettura_ok:
+            ok.add(m.numero)
+    return ok
+
+
 def revisione(originale: Path, riscritto: Path) -> "tuple[str, bool]":
     prima = originale.read_text(encoding="utf-8")
     dopo = riscritto.read_text(encoding="utf-8")
@@ -337,6 +431,8 @@ def revisione(originale: Path, riscritto: Path) -> "tuple[str, bool]":
     peggiorate = sorted(k for k in m1 if m1[k] > m0[k])
     fatti_cambiati = confronta_fatti(prima, dopo)
     non_motivate = [m.numero for m in mods if not m.norme]
+    auto = automatiche(prima, dopo, mods)
+    l0, l1 = lettura(prima), lettura(dopo)
     ok = not peggiorate and not fatti_cambiati
 
     r = [f"# Revisione · {originale.name}", "",
@@ -344,7 +440,9 @@ def revisione(originale: Path, riscritto: Path) -> "tuple[str, bool]":
          f'impronta="{_impronta(prima, dopo)}" -->', "",
          "Si approva modifica per modifica: spuntare `[x]` nella colonna «ok», poi",
          f"`python3 scripts/ciclo_prosa.py applica {{questo file}}`. Le modifiche non spuntate",
-         "restano come nell'originale.", "",
+         "restano come nell'originale. Con `--auto` si applicano anche quelle che la",
+         "colonna «auto» segna: motivate, e che da sole non cambiano un fatto né",
+         "peggiorano un controllo.", "",
          "## Le garanzie", "",
          f"- **Nessun controllo peggiora**: {'sì' if not peggiorate else 'NO, peggiorano ' + ', '.join(peggiorate)}",
          f"- **Nessun fatto cambia** (nomi propri, numeri, CD): {'sì' if not fatti_cambiati else 'NO'}"]
@@ -352,8 +450,16 @@ def revisione(originale: Path, riscritto: Path) -> "tuple[str, bool]":
     r += [f"- **Segnalazioni**: {sum(m0.values())} prima, {sum(m1.values())} dopo",
           f"- **Modifiche non motivate da una segnalazione**: {len(non_motivate)}"
           + (f" (#{', #'.join(map(str, non_motivate))}): vanno guardate per prime" if non_motivate else ""),
+          f"- **Applicabili senza lettore**: {len(auto)} su {len(mods)}",
+          "", "## La lettura, prima e dopo", "",
+          "Non dicono se la prosa è bella: dicono se la riscrittura l'ha resa più dura",
+          "da seguire a voce o più monotona. Il giudizio resta di chi legge ad alta voce.", "",
+          "| misura | prima | dopo | si vuole |", "|---|---:|---:|---|",
+          f"| Gulpease (0-100) | {l0['gulpease']} | {l1['gulpease']} | non scendere: un box si capisce al primo ascolto |",
+          f"| ritmo (variazione delle frasi) | {l0['ritmo']} | {l1['ritmo']} | non scendere: frasi tutte uguali sono un ritmo piatto |",
+          f"| frasi | {l0['frasi']} | {l1['frasi']} | |",
           "", "## Le modifiche", "",
-          "| ok | # | riga | prima | dopo | norma |", "|---|---:|---:|---|---|---|"]
+          "| ok | # | riga | prima | dopo | norma | auto |", "|---|---:|---:|---|---|---|:---:|"]
 
     def cella(s: str) -> str:
         if s and not s.strip(" >\n"):          # solo a capo: si mostra com'è
@@ -363,7 +469,7 @@ def revisione(originale: Path, riscritto: Path) -> "tuple[str, bool]":
 
     for m in mods:
         r.append(f"| [ ] | {m.numero} | {m.riga} | {cella(m.vecchio)} | {cella(m.nuovo)} | "
-                 f"{', '.join(m.norme) or '⚠️ non motivata'} |")
+                 f"{', '.join(m.norme) or '⚠️ non motivata'} | {'✓' if m.numero in auto else '—'} |")
     r += ["", "## Il testo con le modifiche (CriticMarkup)", "", "````markdown", marcato, "````", ""]
     return "\n".join(r), ok
 
@@ -371,7 +477,7 @@ def revisione(originale: Path, riscritto: Path) -> "tuple[str, bool]":
 # ── l'applicazione ───────────────────────────────────────────────────────────
 _TESTA = re.compile(r'<!-- revisione: originale="(?P<o>[^"]+)" riscritto="(?P<r>[^"]+)" '
                     r'impronta="(?P<h>[0-9a-f]+)" -->')
-_SPUNTA = re.compile(r"^\|\s*\[(?P<x>[ xX])\]\s*\|\s*(?P<n>\d+)\s*\|")
+_SPUNTA = re.compile(r"^\|\s*\[(?P<x>[ xX])\](?: auto)?\s*\|\s*(?P<n>\d+)\s*\|")
 _REV = re.compile(r"<!-- revisione-testo: r(?P<n>\d+) · (?P<data>\d{4}-\d{2}-\d{2}) -->")
 
 
@@ -409,7 +515,7 @@ def _ramo() -> str:
     return r.stdout.strip()
 
 
-def applica(percorso_rev: Path, data: str, forza_ramo: bool = False) -> int:
+def applica(percorso_rev: Path, data: str, forza_ramo: bool = False, auto: bool = False) -> int:
     rev = percorso_rev.read_text(encoding="utf-8")
     m = _TESTA.search(rev)
     if not m:
@@ -425,6 +531,15 @@ def applica(percorso_rev: Path, data: str, forza_ramo: bool = False) -> int:
         print("✗ l'originale o il riscritto sono cambiati dopo la revisione: rigenerarla")
         return 1
     sì = accettate(rev)
+    if auto:
+        mods, _ = _modifiche(prima, dopo, segnala(prima))
+        nuove = automatiche(prima, dopo, mods) - sì
+        sì |= nuove
+        # Il documento dice chi ha spuntato cosa: il lettore vede le automatiche.
+        rev = "\n".join(re.sub(r"^\|\s*\[ \]\s*\|", "| [x] auto |", r)
+                        if (m2 := _SPUNTA.match(r)) and int(m2.group("n")) in nuove else r
+                        for r in rev.splitlines()) + "\n"
+        percorso_rev.write_text(rev, encoding="utf-8")
     corretto = applica_testo(prima, dopo, sì)
     cambiati = confronta_fatti(prima, corretto)     # prima della riga di revisione, che ha una data
     if cambiati:
@@ -447,6 +562,7 @@ def main(argv=None) -> int:
     sub = ap.add_subparsers(dest="cmd", required=True)
     s1 = sub.add_parser("segnala", help="primo giro: i passaggi da correggere")
     s1.add_argument("file", type=Path)
+    s1.add_argument("--languagetool", metavar="URL", help="un server LanguageTool (facoltativo)")
     s2 = sub.add_parser("revisione", help="il documento da approvare")
     s2.add_argument("originale", type=Path)
     s2.add_argument("riscritto", type=Path)
@@ -454,10 +570,13 @@ def main(argv=None) -> int:
     s3 = sub.add_parser("applica", help="secondo giro: applica le modifiche spuntate")
     s3.add_argument("revisione", type=Path)
     s3.add_argument("--data", required=True, help="AAAA-MM-GG: la data non si deduce (ADR-0023)")
+    s3.add_argument("--auto", action="store_true",
+                    help="applica anche le modifiche segnate «auto», e lo scrive nel documento")
     a = ap.parse_args(argv)
 
     if a.cmd == "segnala":
-        seg = segnala(a.file.read_text(encoding="utf-8"))
+        testo = a.file.read_text(encoding="utf-8")
+        seg = segnala(testo) + (languagetool(testo, a.languagetool) if a.languagetool else [])
         for s in seg:
             print(f"r.{s.riga}-{s.fine} · {s.norma} · {s.dettaglio}\n    → {s.rimedio}")
         print(f"{len(seg)} segnalazioni in {a.file}")
@@ -470,7 +589,7 @@ def main(argv=None) -> int:
         else:
             print(testo)
         return 0 if ok else 1
-    return applica(a.revisione, a.data)
+    return applica(a.revisione, a.data, auto=a.auto)
 
 
 if __name__ == "__main__":

@@ -418,7 +418,7 @@ dall'instradamento all'**uscita**: cosa scrive un agente con la skill e senza.
       corretto e riapplicato a tutte le corse
 - [x] `plans/scrittura/RISULTATI.md`, 22 test del voto, la voce nel manifest
 
-### L12 · Dal segnalare al correggere, e le skill secondo la guida — ⬜ (2026-10-02) · D15, D16
+### L12 · Dal segnalare al correggere, e le skill secondo la guida — 🟡 (2026-10-02) · D15, D16 chiuse
 
 `[engine: Opus, sessione principale + agenti di corsa · effort: alto · qualità: tornata C ≥ B sulla verifica, e la correzione non cambia un fatto]` — **G**
 
@@ -445,11 +445,20 @@ sui tic del §9.
       master); i tic per forza; l'indice in testa
 - [ ] i rimandi riportati a un livello dallo `SKILL.md`; la self-check come
       ciclo «misura → correggi → rimisura»
-- [ ] `scripts/ciclo_prosa.py` (stdlib): estrae i passaggi segnalati con la <!-- validate-docs: futuro -->
-      norma e il rimedio; dopo la riscrittura dell'agente confronta le due
-      versioni e la accetta solo se nessun controllo peggiora e restano uguali
-      nomi propri, numeri e CD
-- [ ] l'ADR del passaggio dal segnalare al correggere, con l'attribuzione
+- [x] `scripts/ciclo_prosa.py` (stdlib), tre comandi come fra revisore e
+      autore (D15): `segnala`, `revisione` (il documento con le modifiche in
+      CriticMarkup, numerate, ognuna con la sua norma e una casella, e le due
+      garanzie: nessun controllo peggiora, nessun fatto cambia), `applica` (le
+      sole spuntate, mai su `main`, con la riga `revisione-testo: rN`). 16 test
+- [x] ADR-0077, con l'attribuzione: CriticMarkup (Apache 2.0), Humanizer (MIT),
+      *Signs of AI writing* (CC BY-SA 4.0), evaluator-optimizer di Anthropic.
+      Nessun codice di terzi; scartati Vale, proselint e LanguageTool
+- [x] la norma nuova nel registro (G3): i tic minori in gruppo, 🟡 e fuori dal
+      punteggio finché la soglia non è tarata. 76 norme
+- [x] il ciclo provato su un testo di corsa (A-senza-4/S04): undici cambi di
+      una parola diventati tre modifiche; il secondo giro riporta il residuo
+      della modifica non spuntata. La prova ha trovato un buco di D13 (il
+      participio «sembrato»), corretto alla fonte
 - [ ] tornata C sulla verifica, e il ciclo provato sui testi delle corse
 
 ## 5 · Decisioni aperte al DM
@@ -472,8 +481,8 @@ sui tic del §9.
 | ~~D12~~ | L5 | ✅ **Decisa il 2026-10-01**: la preparazione dell'agente non basta. Il DM elenca la sua: risolvere i problemi oltre a vederli, lo stato del gruppo e del mondo, cosa si muove senza i PG, lo stile e le immagini già fatte, le immagini e gli handout mancanti, il flusso, le domande dei PG, i congegni descritti col read-aloud senza anticipare, le interazioni con artefatti e mondo, e il confine fra ciò che sanno i PG e ciò che sa il master. Diventano le undici voci `P-*` di `dm-a-freddo.md`. Era: **La preparazione di `corsa-def5/PREPARAZIONE.md` somiglia alla tua?** |
 | ~~D13~~ | L11 | ✅ **Decisa il 2026-10-01**: sì. «Sembra» e «pare» nei box diventano una norma **minore**, con il rilevatore di `voto_scrittura.py` che passa da indizio a controllo e un lotto che corregge i 34 box; «come se» resta fuori. Era: **«Sembra» e «pare» nei box: norma nuova?** |
 | ~~D14~~ | L11 | ✅ **Decisa il 2026-10-01**: vince P1. Il gesto passa a un PNG o al mondo; P1 si scrive in `read-aloud-adulti.md` §1 e i tre esempi ✅ si correggono. Era: **P1 contro la reticenza sull'emozione** |
-| D15 | L12 | **Fin dove arriva la correzione automatica?** *Proposta*: lo script non scrive mai nei file d'arco; propone la riscrittura, la verifica (nessun controllo peggiora, nessun nome, numero o CD cambiato) e chi lavora la applica sul ramo. Un'applicazione automatica sui master farebbe passare un errore di fatto senza che nessuno lo legga |
-| D16 | L12 | **Quale «documento migliorato» si migliora con le misure?** *Proposta*: le skill corrette devono superare le proprie misure (`italiano-nativo.md` riscritto passa il voto) e il ciclo si prova sui testi delle corse. Se il DM intende un master preciso, quale |
+| ~~D15~~ | L12 | ✅ **Decisa il 2026-10-02**: sì, con un documento di revisione in mezzo. Il DM: *«deve proporre un documento che faccia leggere cosa e cambiato rispetto all originale così si possono approvare le modifiche»*, come fra revisore e autore. Le modifiche si approvano una per una, e il testo approvato porta la riga di revisione (ADR-0077). Era: **Fin dove arriva la correzione automatica?** |
+| ~~D16~~ | L12 | ✅ **Decisa il 2026-10-02**: si cercano le soluzioni della comunità con una licenza compatibile e si applicano: CriticMarkup, Humanizer, *Signs of AI writing*, la guida di Anthropic sulle skill (ADR-0077). Era: **Quale «documento migliorato» si migliora con le misure?** |
 
 ### L'eco del 2026-10-01
 
@@ -520,6 +529,15 @@ Quinta eco dello stesso giorno, per D13 e D14, arrivate a tornata A ferma.
 - **Aperte**: nessuna delle due; restano la tornata A e la corsa DEF-5 con le undici voci di D12
 - **Cambiate**: nessuna, tutte e due come proposte. D14 è stata chiarita con una domanda, perché il messaggio si fermava a «d14»
 - **Dedotto da me**: che le due decisioni si applichino **dopo** la tornata A, perché le corse di base devono girare sulle skill com'erano, altrimenti il prima e dopo non si legge; che il lotto dei 34 box segua la FASE 1 sui file d'arco e non tocchi gli archivi dichiarati
+
+Sesta eco, del 2026-10-02, per D15 e D16. Il DM ha risposto insieme, e su
+`ciclo_prosa.py` ha aggiunto una richiesta: non solo gli stili del repo.
+
+<!-- eco: AGENT-SKILLS 2026-10-02 -->
+- **Decise**: D15 la correzione passa per un documento di revisione da approvare modifica per modifica, poi torna al revisore per i residui · D16 si applicano le soluzioni della comunità con licenza compatibile
+- **Aperte**: il resto di L12 (le skill di scrittura con tre esempi per regola e l'indice, i rimandi a un livello, la tornata C); il lotto dei 34 box di D13, che ora passa per `ciclo_prosa`
+- **Cambiate**: D15, dalla proposta «chi lavora la applica sul ramo» a «il DM approva le modifiche una per una su un documento che mostra cosa è cambiato»; D16, da «quale documento» a «quali soluzioni della comunità»
+- **Dedotto da me**: che il «meccanismo di versioning del DEF» sia una riga di revisione nel testo e non un sistema nuovo, perché la storia sta già in git e ADR-0071 fa lo stesso sulle pagine degli artefatti; che «non usare solo stili» chieda regole prese fuori dal repo **e** adattate all'italiano, perché quelle inglesi (Vale, proselint) non si applicano; che lo script debba fare il revisore e non l'autore, perché la riscrittura sicura resta di un modello o di una persona
 
 ## 6 · Validazione
 

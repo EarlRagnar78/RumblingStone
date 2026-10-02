@@ -2092,6 +2092,48 @@
       "deterministic": true
     },
     {
+      "name": "ciclo_prosa",
+      "description": "«Cosa è cambiato rispetto all'originale, perché, e cosa resta da correggere dopo che ho approvato?»\n\nL12 (D15 e D16 del 2026-10-02, ADR-0077): dal segnalare al correggere, con una revisione a due giri come fra revisore e autore. `segnala` riusa i rilevatori registrati e aggiunge la regola «debole da solo» di Humanizer (tic minori diversi nello stesso paragrafo); `revisione` scrive il documento da approvare, con ogni modifica in CriticMarkup, numerata, motivata da una norma, e le due garanzie (nessun controllo peggiora, nessun fatto cambia); `applica` porta nell'originale solo le modifiche spuntate, mai su main, e alza la riga `revisione-testo: rN`.",
+      "use_case": "«Cosa è cambiato rispetto all'originale, perché, e cosa resta da correggere dopo che ho approvato?»",
+      "invocation": "python3 scripts/ciclo_prosa.py {segnala FILE | revisione ORIGINALE RISCRITTO [-o REVISIONE.md] | applica REVISIONE.md --data AAAA-MM-GG}",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "segnala_FILE": {
+            "type": "string",
+            "description": "Primo giro: i passaggi da correggere, con la norma e il rimedio."
+          },
+          "revisione_ORIGINALE_RISCRITTO": {
+            "type": "string",
+            "description": "Il documento di revisione da approvare modifica per modifica."
+          },
+          "o": {
+            "type": "string",
+            "description": "Dove scrivere il documento di revisione (altrimenti a schermo)."
+          },
+          "applica_REVISIONE": {
+            "type": "string",
+            "description": "Secondo giro: applica le modifiche spuntate e rimisura."
+          },
+          "data": {
+            "type": "string",
+            "description": "La data della riga di revisione: non si deduce (ADR-0023)."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "REVISIONE-*.md"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "la revisione peggiora un controllo o cambia un fatto; applica rifiutata (main, impronta, fatti)",
+        "2": "errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
       "name": "componenti",
       "description": "«Mi dai il foglio del cast e tutte le CD di questo modulo su un foglio, con i numeri di Balvar uguali a quelli del Bestiario?»\n\nIl master DEF letto come componenti tipizzati (ADR-0074): scena, contratto In scena, box read-aloud, scheda d'entrata, comparse, battute, prove con CD. Ne ricava l'indice, genera l'apparato d'uso APPARATO-<master>.md (foglio del cast, inserto delle CD, indice dei read-aloud) e tiene allineate le copie sincronizzate fra <!-- include: fonte#blocco --> e <!-- /include --> (#statblocco prende il recinto della scheda del Bestiario).",
       "use_case": "«Mi dai il foglio del cast e tutte le CD di questo modulo su un foglio, con i numeri di Balvar uguali a quelli del Bestiario?»",
@@ -3116,7 +3158,7 @@
     },
     {
       "name": "voto_scrittura",
-      "description": "«Un agente che carica la skill di scrittura rispetta le norme registrate più di uno che non la carica?»\n\nL11 (D11 del 2026-10-01): il voto deterministico sui testi scritti con e senza le skill di scrittura. Ogni controllo chiama un rilevatore che esiste (misura_craft, validate_prosa) e una norma registrata; i casi in plans/scrittura/casi.json seguono lo schema di evals.json di skill-creator, a metà fra taratura e verifica. «Sembra/pare» è un indizio stampato, non un voto, finché il DM non decide (D13).",
+      "description": "«Un agente che carica la skill di scrittura rispetta le norme registrate più di uno che non la carica?»\n\nL11 (D11 del 2026-10-01): il voto deterministico sui testi scritti con e senza le skill di scrittura. Ogni controllo chiama un rilevatore che esiste (misura_craft, validate_prosa) e una norma registrata; i casi in plans/scrittura/casi.json seguono lo schema di evals.json di skill-creator, a metà fra taratura e verifica. «Sembra/pare» è un controllo dal 2026-10-01 (D13); dal 2026-10-02 comprende participio e passato remoto.",
       "use_case": "«Un agente che carica la skill di scrittura rispetta le norme registrate più di uno che non la carica?»",
       "invocation": "python3 scripts/voto_scrittura.py [FILE --caso SNN] [--corse] [--emit] [--check]",
       "inputSchema": {

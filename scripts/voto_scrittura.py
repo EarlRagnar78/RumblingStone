@@ -57,7 +57,11 @@ _HDYWTDT = _CONGEGNI["[HDYWTDT] il finisher al giocatore"]
 #: La norma di Merwin, «evitare sembra e pare» (D13). «Come se» resta fuori: e'
 #: un paragone, non un'esitazione. Misurata sui 501 box dei file di gioco il
 #: 2026-10-01: 34 box con una di queste forme.
-SEMBRA = re.compile(r"\b(sembr(?:a|ano|ava|avano|are)|pa(?:re|iono|reva|revano)|"
+#: ⚠️ Il 2026-10-02 la prima prova di `ciclo_prosa` ha trovato «ti è sembrato»
+#: in un box che il metro dava pulito: mancavano il participio e il passato
+#: remoto, che nella prosa al passato sono le forme più comuni.
+SEMBRA = re.compile(r"\b(sembr(?:a|ano|ava|avano|are|ato|ata|ati|ate|ò|arono)|"
+                    r"pa(?:re|iono|reva|revano|rso|rsa|rsi|rse|rve|rvero)|"
                     r"appa(?:re|iono|riva|rivano))\b", re.I)
 
 

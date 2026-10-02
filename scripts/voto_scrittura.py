@@ -60,9 +60,12 @@ _HDYWTDT = _CONGEGNI["[HDYWTDT] il finisher al giocatore"]
 #: ⚠️ Il 2026-10-02 la prima prova di `ciclo_prosa` ha trovato «ti è sembrato»
 #: in un box che il metro dava pulito: mancavano il participio e il passato
 #: remoto, che nella prosa al passato sono le forme più comuni.
+#: ⚠️ Lo stesso giorno, leggendo i 34 box uno per uno per il lotto: «appare» era
+#: nel rilevatore ma non nella norma, che dice «sembra» e «pare». E nei file di
+#: gioco vuol dire quasi sempre «diventa visibile» («Hella appare
+#: nell'affresco»): quattro box su quattro. Tolto, e il conto scende da 34 a 30.
 SEMBRA = re.compile(r"\b(sembr(?:a|ano|ava|avano|are|ato|ata|ati|ate|ò|arono)|"
-                    r"pa(?:re|iono|reva|revano|rso|rsa|rsi|rse|rve|rvero)|"
-                    r"appa(?:re|iono|riva|rivano))\b", re.I)
+                    r"pa(?:re|iono|reva|revano|rso|rsa|rsi|rse|rve|rvero))\b", re.I)
 
 
 def _rilievi(testo: str, per_i_giocatori: bool) -> "set[str]":

@@ -147,7 +147,14 @@ dell'etichetta di regia non conta, perché il giocatore non lo sente.
   ancora tarata su questo repo.
 - La prima prova ha trovato un buco nel metro di D13: `SEMBRA` non vedeva il
   participio («ti è sembrato») né il passato remoto. Corretto in
-  `voto_scrittura.py`; i conti di L11 non cambiano (34 box sui file di gioco,
-  stessi voti sulle corse).
+  `voto_scrittura.py`; i conti di L11 non cambiano (stessi voti sulle corse).
+  Leggendo i box uno per uno per il lotto, un secondo buco dall'altro lato:
+  «appare» stava nel rilevatore ma non nella norma. Tolto, i box sono 30 su
+  501, e il lotto che li corregge è il primo uso vero del ciclo
+  (`plans/scrittura/revisioni-D13/`).
+- Il lotto ha chiesto due cambi allo script: il documento di revisione basta a
+  se stesso (`applica` ricostruisce le due versioni dal CriticMarkup, senza
+  una seconda copia del master), e il diff si fa a due livelli, per righe e
+  poi per parole, perché per parole su un master di 2.600 righe costava minuti.
 - Lo script non riscrive. Se un giorno lo farà, la riscrittura passerà dagli
   stessi tre comandi.

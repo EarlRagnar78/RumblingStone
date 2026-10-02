@@ -203,5 +203,34 @@ class TestLanguageTool(unittest.TestCase):
         self.assertIn("le case", seg[0].dettaglio)
 
 
+class TestIlDocumentoBastaASeStesso(unittest.TestCase):
+    def test_andata_e_ritorno(self):
+        prima = "Uno due tre.\n\n> *La sala sembra vuota.*\n\nFine.\n"
+        dopo = "Uno tre quattro.\n\n> *La sala è vuota.*\n\nFine, davvero.\n"
+        _, marcato = cp._modifiche(prima, dopo, cp.segnala(prima))
+        self.assertEqual(cp.dal_markup(marcato), (prima, dopo))
+
+    def test_applica_senza_il_riscritto(self):
+        with tempfile.TemporaryDirectory() as d:
+            orig, risc = Path(d) / "o.md", Path(d) / "r.md"
+            orig.write_text("> *La sala sembra vuota.*\n", encoding="utf-8")
+            risc.write_text("> *La sala è vuota.*\n", encoding="utf-8")
+            testo, _ = cp.revisione(orig, risc)
+            risc.unlink()
+            rev = Path(d) / "R.md"
+            rev.write_text(testo.replace("| [ ] | 1 |", "| [x] | 1 |"), encoding="utf-8")
+            with mock.patch.object(cp, "_ramo", return_value="claude/prova"):
+                self.assertEqual(cp.applica(rev, "2026-10-02"), 0)
+            self.assertIn("è vuota", orig.read_text())
+
+    def test_un_testo_con_segni_di_revisione_non_si_rivede(self):
+        with tempfile.TemporaryDirectory() as d:
+            orig, risc = Path(d) / "o.md", Path(d) / "r.md"
+            orig.write_text("Un {++segno++} vecchio.\n", encoding="utf-8")
+            risc.write_text("Un segno.\n", encoding="utf-8")
+            with self.assertRaises(ValueError):
+                cp.revisione(orig, risc)
+
+
 if __name__ == "__main__":
     unittest.main()

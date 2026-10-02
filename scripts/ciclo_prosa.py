@@ -355,20 +355,37 @@ class Modifica:
 
 
 def _modifiche(prima: str, dopo: str, segnalazioni: "list[Segnalazione]") -> "tuple[list[Modifica], str]":
-    """Le modifiche, parola per parola, e il testo con i segni CriticMarkup."""
-    a, b = _PAROLA.findall(prima), _PAROLA.findall(dopo)
-    mods, pezzi = [], []
-    for cambiato, i1, i2, j1, j2 in _gruppi(a, b):
+    """Le modifiche, fuse in frasi, e il testo con i segni CriticMarkup.
+
+    La norma di una modifica è quella che **risolve**: il conto che scende
+    quando la si applica da sola. Se non ne risolve nessuna, è la norma
+    segnalata sulla sua stessa riga; altrimenti la modifica non è motivata.
+    Attribuire tutte le norme del box sarebbe rumore: un «sembra» corretto non
+    toglie la parentesi tre righe sotto.
+    """
+    diff = _diff_di(prima, dopo)
+    a, b, gruppi = diff
+    m0 = misure(prima)
+    mods, pezzi, riga = [], [], 1
+    for cambiato, i1, i2, j1, j2 in gruppi:
         if not cambiato:
-            pezzi.append("".join(a[i1:i2]))
+            uguale = "".join(a[i1:i2])
+            pezzi.append(uguale)
+            riga += uguale.count("\n")
             continue
         vecchio, nuovo = "".join(a[i1:i2]), "".join(b[j1:j2])
-        riga = "".join(a[:i1]).count("\n") + 1
         fine = riga + vecchio.count("\n")
-        norme = sorted({s.norma for s in segnalazioni if s.riga <= fine and riga <= s.fine})
-        m = Modifica(len(mods) + 1, riga, vecchio, nuovo, norme)
+        m = Modifica(len(mods) + 1, riga, vecchio, nuovo, [])
         mods.append(m)
         pezzi.append(m.critic() + "{>>#" + str(m.numero) + "<<}")
+        riga = fine
+    for m in mods:
+        m1 = misure(applica_testo(prima, dopo, {m.numero}, diff))
+        risolte = sorted(k for k in m0 if m1[k] < m0[k])
+        fine = m.riga + m.vecchio.count("\n")
+        sulla_riga = sorted({s.norma for s in segnalazioni
+                             if s.riga == s.fine and m.riga <= s.riga <= fine})
+        m.norme = risolte or sulla_riga
     return mods, "".join(pezzi)
 
 
@@ -378,6 +395,12 @@ def _rel(p: Path) -> str:
         return p.relative_to(RADICE).as_posix()
     except ValueError:
         return p.as_posix()
+
+
+def _nel_repo(p: Path) -> str:
+    """Il riscritto serve solo a fare il documento: fuori dal repo non si nomina."""
+    r = _rel(p)
+    return r if not Path(r).is_absolute() else "nel documento"
 
 
 def _assoluto(s: str) -> Path:
@@ -406,11 +429,12 @@ def automatiche(prima: str, dopo: str, mods: "list[Modifica]") -> "set[int]":
     la lettura più dura né più piatta oltre la tolleranza. Le altre restano al DM.
     """
     m0, l0 = misure(prima), lettura(prima)
+    diff = _diff_di(prima, dopo)          # una volta: su un master di 2.600 righe costa minuti
     ok = set()
     for m in mods:
         if not m.norme:
             continue
-        solo = applica_testo(prima, dopo, {m.numero})
+        solo = applica_testo(prima, dopo, {m.numero}, diff)
         if confronta_fatti(prima, solo):
             continue
         m1 = misure(solo)
@@ -422,9 +446,47 @@ def automatiche(prima: str, dopo: str, mods: "list[Modifica]") -> "set[int]":
     return ok
 
 
+_SEGNI = re.compile(r"\{(?:~~|\+\+|--|>>|==)")
+_MARCA = re.compile(r"\{~~(?P<v>.*?)~>(?P<n>.*?)~~\}\{>>#\d+<<\}|"
+                    r"\{\+\+(?P<a>.*?)\+\+\}\{>>#\d+<<\}|"
+                    r"\{--(?P<t>.*?)--\}\{>>#\d+<<\}", re.S)
+
+
+def dal_markup(marcato: str) -> "tuple[str, str]":
+    """Le due versioni, ricostruite dal testo in CriticMarkup del documento.
+
+    Il documento di revisione basta a se stesso: chi lo approva non deve
+    tenere accanto una seconda copia del master.
+    """
+    prima, dopo, da = [], [], 0
+    for m in _MARCA.finditer(marcato):
+        uguale = marcato[da:m.start()]
+        prima.append(uguale)
+        dopo.append(uguale)
+        if m.group("v") is not None:
+            prima.append(m.group("v"))
+            dopo.append(m.group("n"))
+        elif m.group("a") is not None:
+            dopo.append(m.group("a"))
+        else:
+            prima.append(m.group("t"))
+        da = m.end()
+    prima.append(marcato[da:])
+    dopo.append(marcato[da:])
+    return "".join(prima), "".join(dopo)
+
+
+def _marcato_del_documento(rev: str) -> str:
+    i = rev.index("````markdown\n") + len("````markdown\n")
+    j = rev.rindex("\n````")
+    return rev[i:j]
+
+
 def revisione(originale: Path, riscritto: Path) -> "tuple[str, bool]":
     prima = originale.read_text(encoding="utf-8")
     dopo = riscritto.read_text(encoding="utf-8")
+    if _SEGNI.search(prima) or _SEGNI.search(dopo):
+        raise ValueError("il testo contiene già segni CriticMarkup: la revisione non sarebbe reversibile")
     seg = segnala(prima)
     mods, marcato = _modifiche(prima, dopo, seg)
     m0, m1 = misure(prima), misure(dopo)
@@ -436,7 +498,7 @@ def revisione(originale: Path, riscritto: Path) -> "tuple[str, bool]":
     ok = not peggiorate and not fatti_cambiati
 
     r = [f"# Revisione · {originale.name}", "",
-         f'<!-- revisione: originale="{_rel(originale)}" riscritto="{_rel(riscritto)}" '
+         f'<!-- revisione: originale="{_rel(originale)}" riscritto="{_nel_repo(riscritto)}" '
          f'impronta="{_impronta(prima, dopo)}" -->', "",
          "Si approva modifica per modifica: spuntare `[x]` nella colonna «ok», poi",
          f"`python3 scripts/ciclo_prosa.py applica {{questo file}}`. Le modifiche non spuntate",
@@ -470,7 +532,10 @@ def revisione(originale: Path, riscritto: Path) -> "tuple[str, bool]":
     for m in mods:
         r.append(f"| [ ] | {m.numero} | {m.riga} | {cella(m.vecchio)} | {cella(m.nuovo)} | "
                  f"{', '.join(m.norme) or '⚠️ non motivata'} | {'✓' if m.numero in auto else '—'} |")
-    r += ["", "## Il testo con le modifiche (CriticMarkup)", "", "````markdown", marcato, "````", ""]
+    r += ["", "## Il testo con le modifiche (CriticMarkup)", "",
+          "Il testo intero, con le due versioni dentro: `applica` le ricostruisce da qui.", "",
+          "<details><summary>apri il testo marcato</summary>", "",
+          "````markdown", marcato, "````", "", "</details>", ""]
     return "\n".join(r), ok
 
 
@@ -486,16 +551,41 @@ def accettate(revisione_md: str) -> "set[int]":
             if (m := _SPUNTA.match(r)) and m.group("x").lower() == "x"}
 
 
-def applica_testo(prima: str, dopo: str, numeri: "set[int]") -> str:
-    a, b = _PAROLA.findall(prima), _PAROLA.findall(dopo)
+def applica_testo(prima: str, dopo: str, numeri: "set[int]", _diff=None) -> str:
+    """L'originale con le sole modifiche `numeri`. `_diff` riusa un diff già fatto."""
+    a, b, gruppi = _diff or _diff_di(prima, dopo)
     out, n = [], 0
-    for cambiato, i1, i2, j1, j2 in _gruppi(a, b):
+    for cambiato, i1, i2, j1, j2 in gruppi:
         if not cambiato:
             out.append("".join(a[i1:i2]))
             continue
         n += 1
         out.append("".join(b[j1:j2]) if n in numeri else "".join(a[i1:i2]))
     return "".join(out)
+
+
+def _diff_di(prima: str, dopo: str):
+    """Il diff a due livelli: per righe, poi per parole dentro i blocchi cambiati.
+
+    Un diff per parole su un master intero (40.000 parole) costa minuti; per
+    righe costa un attimo, e le parole si confrontano solo dove serve.
+    Restituisce (parole di prima, parole di dopo, gruppi di `_gruppi`).
+    """
+    la, lb = prima.splitlines(keepends=True), dopo.splitlines(keepends=True)
+    a: "list[str]" = []
+    b: "list[str]" = []
+    gruppi: "list[tuple[bool, int, int, int, int]]" = []
+    for op, i1, i2, j1, j2 in difflib.SequenceMatcher(None, la, lb, autojunk=False).get_opcodes():
+        ta = [t for r in la[i1:i2] for t in _PAROLA.findall(r)]
+        tb = [t for r in lb[j1:j2] for t in _PAROLA.findall(r)]
+        da, db = len(a), len(b)
+        a += ta
+        b += tb
+        if op == "equal":
+            gruppi.append((False, da, da + len(ta), db, db + len(tb)))
+        else:
+            gruppi += [(c, da + x1, da + x2, db + y1, db + y2) for c, x1, x2, y1, y2 in _gruppi(ta, tb)]
+    return a, b, gruppi
 
 
 def alza_revisione(testo: str, data: str) -> str:
@@ -524,11 +614,11 @@ def applica(percorso_rev: Path, data: str, forza_ramo: bool = False, auto: bool 
     if _ramo() in ("main", "master") and not forza_ramo:
         print("✗ sul ramo principale non si applica (D15): passare su un ramo di lavoro")
         return 1
-    originale, riscritto = _assoluto(m.group("o")), _assoluto(m.group("r"))
+    originale = _assoluto(m.group("o"))
     prima = originale.read_text(encoding="utf-8")
-    dopo = riscritto.read_text(encoding="utf-8")
-    if _impronta(prima, dopo) != m.group("h"):
-        print("✗ l'originale o il riscritto sono cambiati dopo la revisione: rigenerarla")
+    vecchio, dopo = dal_markup(_marcato_del_documento(rev))
+    if vecchio != prima or _impronta(prima, dopo) != m.group("h"):
+        print("✗ l'originale è cambiato dopo la revisione, o il documento è stato toccato: rigenerarla")
         return 1
     sì = accettate(rev)
     if auto:

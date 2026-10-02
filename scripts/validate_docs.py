@@ -110,6 +110,10 @@ ESCLUSI_PREFISSO = (
     # risultato da misurare, non un documento da correggere.
     "plans/scrittura/corse/",
     "plans/scrittura/scartate/",
+    # I documenti di revisione di ciclo_prosa (ADR-0077) portano dentro il
+    # master intero, con i suoi link relativi alla cartella del master: letti
+    # da qui puntano tutti nel vuoto. Il master vero e' controllato al suo posto.
+    "plans/scrittura/revisioni-",
 )
 ESCLUSI_FRAMMENTO = ("/homebrew/",)
 ESCLUSI_SUFFISSO = (".hb.md",)
